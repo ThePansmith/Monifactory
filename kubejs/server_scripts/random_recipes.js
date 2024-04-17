@@ -265,19 +265,6 @@ ServerEvents.recipes(event => {
         .EUt(320)
         .cleanroom(CleanroomType.CLEANROOM)
 
-    // Drawer templates lower yield
-    event.remove({ id: "storagedrawers:upgrade_template" })
-    event.shaped(
-        "2x storagedrawers:upgrade_template", [
-            'SSS',
-            'SDS',
-            'SSS'
-        ], {
-            S: "#forge:rods/wood",
-            D: "#storagedrawers:drawers"
-        }
-    )
-
     // NC cobble gen replaced with thermal for now, make buckets empty but indicate how it must be placed, also remove easy auto deepslate and friends
     event.remove({ type: "thermal:rock_gen", not: { output: "minecraft:cobblestone" } })
     event.shaped(
