@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'expatternprovider:fishbig' })
 
     event.recipes.gtceu.bender('kubejs:fishbig_lmao')
-        .itemInputs('64x avaritia:infinity_block')
+        .itemInputs('64x kubejs:infinity_block')
         .circuit(6)
         .itemOutputs('expatternprovider:fishbig')
         .duration(1728000)

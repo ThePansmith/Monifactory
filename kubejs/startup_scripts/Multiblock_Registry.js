@@ -276,7 +276,7 @@ event.create('draconic_reactor', 'multiblock')
     .or(Predicates.autoAbilities(definition.getRecipeTypes())))
 .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
 .where('I', Predicates.blocks('gtceu:nether_star_block'))
-.where('F', Predicates.blocks('avaritia:crystal_matrix_block'))
+.where('F', Predicates.blocks('kubejs:crystal_matrix_block'))
 .where('#', Predicates.air())
     .build())
 .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_clean_stainless_steel",

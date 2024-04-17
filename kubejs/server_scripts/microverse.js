@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
             N: 'gtceu:double_neutronium_plate',
             U: 'kubejs:universal_navigator',
             C: 'draconicevolution:reactor_core', // TODO: REPLACE WITH THE REAL DE COMPONENT
-            P: 'solarflux:sp_avaritia.neutronium',
+            P: 'kubejs:sp_endgame.neutronium',
             R: 'draconicevolution:energy_core_stabilizer', // TODO: REPLACE WITH THE REAL DE COMPONENT
             A: 'gtceu:iv_quantum_chest',
             W: 'kubejs:warp_engine'
