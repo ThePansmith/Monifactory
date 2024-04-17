@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
 
 	// infinity ingot
 	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:infinity_ingot', [
+		'gtceu:infinity_ingot', [
             '         ',
             '     BAAA',
             '  BAAADCA',
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
 			K: 'gtceu:rhodium_plated_palladium_ingot',
 			L: 'gtceu:electrum_flux_ingot',
 			M: 'gtceu:dark_soularium_ingot',
-			N: 'kubejs:crystal_matrix_ingot',
+			N: 'gtceu:crystal_matrix_ingot',
 			O: 'gtceu:end_steel_ingot',
 			P: 'gtceu:electrical_steel_ingot',
 			Q: 'gtceu:signalum_ingot',

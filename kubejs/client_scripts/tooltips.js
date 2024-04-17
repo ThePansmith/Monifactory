@@ -68,5 +68,5 @@ ItemEvents.tooltip(tooltip => {
 	tooltip.add('kubejs:glitch_infused_ingot', Text.translatable('item.kubejs.glitch_infused_ingot.desc'))
 
     // Placeholder Blocks
-    event.add(['kubejs:crystal_matrix_block', 'kubejs:infinity_block'], 'Placeholder block following Avaritia removal. Mine with Iron Pickaxe.')
+    event.add(['gtceu:crystal_matrix_block', 'kubejs:infinity_block'], 'Placeholder block following Avaritia removal. Mine with Iron Pickaxe.')
 })
