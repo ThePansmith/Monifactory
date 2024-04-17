@@ -1,0 +1,30 @@
+{
+    "entity": "minecraft:ghast",
+    "subtypes": [
+        "twilightforest:carminite_ghastguard",
+        "twilightforest:carminite_ghastling"
+    ],
+    "name": "entity.minecraft.ghast",
+    "name_color": "#00FFFFFF",
+    "gui_scale": 0.25,
+    "gui_x_offset": 0,
+    "gui_y_offset": 4,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.ghast",
+    "fabricator_drops": [{
+            "item": "minecraft:ghast_tear",
+            "count": 2
+        },
+        {
+            "item": "gtceu:silver_ingot",
+            "count": 12
+        }
+    ]
+}

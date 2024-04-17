@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "aliases": {
+    "cloth_config": "cloth-config2",
+    "playeranimator": "player-animator"
+  }
+}

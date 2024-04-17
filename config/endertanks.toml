@@ -1,0 +1,90 @@
+#With this disabled tanks are essentially locked to the crafted color as dyes will no longer work
+enable_in_world_coloring = true
+
+#Items used to upgrade the EnderTanks
+[upgrade_items]
+	#Items used to make the tanks personal
+	personal = ["tag|forge:gems/diamond"]
+	#Items used to make the tanks team tanks
+	team = ["tag|forge:gems/emerald"]
+	#Items that apply a small storage capacity upgrade
+	small_capacity = ["minecraft:ender_pearl"]
+	#Items that apply a large storage capacity upgrade
+	large_capacity = ["minecraft:ender_eye"]
+	#Items that are used to increase the tanks internal transfer pump
+	pump = ["minecraft:piston"]
+	#Items that apply a small storage capacity upgrade
+	#Each item can only be use once per tank
+	small_capacity_singleuse = []
+	#Items that apply a large storage capacity upgrade
+	#Each item can only be use once per tank
+	large_capacity_singleuse = []
+	#Items that are used to increase the tanks internal transfer pump
+	#Each item can only be use once per tank
+	pump_singleuse = []
+
+#Set the number of buckets a tank holds, how many pump upgrades can be applied, and the value of a storage upgrade
+[capacity_settings]
+	#How many internal transfer pump upgrades can a tank have?
+	# default is only 1/4 bucket, upgrades make it a bucket per upgrade
+	#Range: 0 ~ 8
+	tank_pump_max = 4
+	#Minimum capacity an EnderTank holds
+	#Range: 4 ~ 128
+	tank_size_min = 32
+	#Maximum capacity an EnderTank holds
+	#Range: 4 ~ 512
+	tank_size_max = 256
+	#Capacity increased by small capacity upgrade items
+	#Range: 2 ~ 16
+	small_capacity_upgrade = 8
+	#Capacity increased by large capacity upgrade items
+	#Range: 4 ~ 32
+	large_capacity_upgrade = 16
+
+[access_settings]
+	#Enables the usage of public tanks, if disabled tanks must be upgraded before use
+	public_tanks = true
+	#Enables the creation of personal tanks, if disabled tanks can not set personal.
+	#Does not effect tanks that are already set as personal
+	personal_tanks = true
+	#Enables the creation of team tanks, if disabled tanks can not be set team.
+	#Does not effect tanks that are already set as team
+	team_tanks = true
+	#Enables the usage of public buckets, if disabled buckets must be linked to an upgraded tank before use
+	public_buckets = true
+	#Enables the linking of buckets to personal tanks.
+	#Does not effect buckets that are already linked to personal tanks
+	personal_buckets = true
+	#Enables the linking of buckets to team tanks.
+	#Does not effect buckets that are already linked to team tanks
+	team_buckets = true
+	#Public tanks can be used with automation.
+	#The internal pump is unaffected by this setting
+	public_automation = true
+	#Personal tanks can be used with automation.
+	#The internal pump is unaffected by this setting
+	personal_automation = true
+	#Team tanks can be used with automation.
+	#The internal pump is unaffected by this setting
+	team_automation = true
+	#While true a Personal tank can only be edited (upgrade, move, etc) by the owner
+	personal_edit_lock = true
+	#While true a Team tank can only be edited (upgrade, move, etc) by a team member
+	team_edit_lock = true
+	#While true only the owner can link a bucket to their tanks
+	personal_link_lock = true
+	#While true only a team member can link a bucket to team tanks
+	team_link_lock = true
+	#While true only the owner can use the tank
+	personal_use_lock = false
+	#While true only a team member can use the tank
+	team_use_lock = false
+
+#Mod integration can be disabled to solve compatibility issues, remove unwanted/unneeded features, etc.
+[integration]
+	store_mekanism_gas = true
+	store_mekanism_infusion = true
+	store_mekanism_pigment = true
+	store_mekanism_slurry = true
+

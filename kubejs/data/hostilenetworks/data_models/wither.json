@@ -1,0 +1,26 @@
+{
+    "entity": "minecraft:wither",
+    "name": "entity.minecraft.wither",
+    "name_color": "#00FFFFFF",
+    "gui_scale": 0.5,
+    "gui_x_offset": 0,
+    "gui_y_offset": -0.33,
+    "gui_z_offset": 0,
+    "sim_cost": 6666,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.wither",
+    "fabricator_drops": [{
+            "item": "kubejs:wither_realm_data",
+            "count": 1
+        },
+        {
+            "item": "armorplus:wither_bone",
+            "count": 1
+        }
+    ]
+}

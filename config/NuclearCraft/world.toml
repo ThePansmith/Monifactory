@@ -1,0 +1,7 @@
+
+[Dimension]
+	#Register Wasteland Dimension
+	wasteland = true
+	#Dimension ID for Wasteland
+	wastelandID = -4848
+

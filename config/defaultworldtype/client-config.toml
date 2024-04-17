@@ -1,0 +1,8 @@
+
+[world-preset]
+	#Type in the name from the world type which should be selected by default.
+	world-preset = "lostcities:lostcity"
+	#Type in a valid generation setting for flat world type.
+	#Only works if world-type if 'minecraft:flat'.
+	flat-settings = "minecraft:bedrock,2*minecraft:dirt,minecraft:grass_block;minecraft:plains"
+

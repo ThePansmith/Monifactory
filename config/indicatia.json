@@ -1,0 +1,8 @@
+{
+  "enableAlternateChatKey": true,
+  "timeOnVanillaPotionHUD": true,
+  "confirmationOnDisconnect": true,
+  "enableEnchantedRenderingOnSkull": true,
+  "reloadResourcesButton": true,
+  "savedLastSearchInRecipeBook": true
+}

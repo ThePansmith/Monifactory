@@ -1,0 +1,30 @@
+
+#World Stripper - Settings File
+[SETTINGS]
+	#Strip Radius: X
+	#Range: 0 ~ 256
+	stripRadiusX = 48
+	#Strip Radius: Z
+	#Range: 0 ~ 256
+	stripRadiusZ = 48
+	#Strip Start: Y
+	#Range: -10240 ~ 10240
+	stripStartY = 256
+	#Strip Stop: Y
+	#Range: -10240 ~ 10240
+	stripStopY = -64
+	#Replacement Block
+	replacementBlock = "minecraft:air"
+
+	[SETTINGS.Block-Update-Settings]
+		#Call Neighbors
+		notifyNeighbors = true
+		#Update Block
+		blockUpdate = false
+		#Don't Update Renderer
+		noRender = true
+		#Do Update Renderer
+		renderMainThread = true
+		#Block Update Neighbors
+		updateNeighbors = false
+

@@ -1,0 +1,7 @@
+#Use the client implementation even on servers that have the mod installed - only useful for development purposes.
+forceClientImplementation = false
+#Should space-clicking move all items even if an empty slot was clicked?
+allowBulkTransferAllOnEmptySlot = false
+#You can now go into your Controls and unbind the respective Inventory Essentials keys instead!
+whereDidTheConfigsGo = true
+

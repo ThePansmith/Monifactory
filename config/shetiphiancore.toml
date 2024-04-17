@@ -1,0 +1,15 @@
+
+#Core Edits
+[core_edits]
+	#Modifies entity collision checks to work with thinner blocks
+	#Unmodified ignores blocks bellow 1/5 (slightly thicker then a lower trap door)
+	#Modified processes blocks down to 3/32 (slightly thicker then carpets)
+	#
+	#If you need to disable this to solve a compatibility issue, please report it to me
+	#Non-living entities and thinner blocks are already exempt to avoid compatibility issues
+	enable_thin_block_handler = true
+	#When enabled carpets on top of scaffolding can be passed through just like snow
+	enable_carpet_passthrough = true
+	#When enabled using bonemeal on a stripped log restores the bark
+	bonemeal_restores_bark = true
+

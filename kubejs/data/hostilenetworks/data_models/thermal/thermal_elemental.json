@@ -1,0 +1,65 @@
+{
+    "conditions": [{
+        "modid": "thermal",
+        "type": "forge:mod_loaded"
+    }],
+    "entity": "thermal:blitz",
+    "subtypes": [
+        "thermal:blizz",
+        "thermal:basalz"
+    ],
+    "name": "hostilenetworks.name.thermal_elemental",
+    "name_color": "#00FFFFFF",
+    "gui_scale": 1.0,
+    "gui_x_offset": 0.0,
+    "gui_y_offset": 0.0,
+    "gui_z_offset": 0.0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.thermal_elemental",
+    "fabricator_drops": [{
+            "item": "gtceu:saltpeter_dust",
+            "count": 16
+        },
+        {
+            "item": "gtceu:obsidian_dust",
+            "count": 16
+        },
+        {
+            "item": "minecraft:snowball",
+            "count": 64
+        },
+        {
+            "item": "thermal:blitz_rod",
+            "count": 8
+        },
+        {
+            "item": "thermal:basalz_rod",
+            "count": 8
+        },
+        {
+            "item": "thermal:blizz_rod",
+            "count": 8
+        }
+    ],
+    "tier_data": [
+        6,
+        54,
+        354,
+        1254
+    ],
+
+    "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+    ]
+}

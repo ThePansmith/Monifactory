@@ -1,0 +1,166 @@
+ServerEvents.recipes(event => {
+
+    //Solidified to Gas again
+    event.recipes.gtceu.extractor('neon')
+        .itemInputs(['kubejs:solidified_neon'])
+        .outputFluids(['gtceu:neon 1000'])
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.extractor('krypton')
+        .itemInputs(['kubejs:solidified_krypton'])
+        .outputFluids(['gtceu:krypton 1000'])
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.extractor('xenon')
+        .itemInputs(['kubejs:solidified_xenon'])
+        .outputFluids(['gtceu:xenon 1000'])
+        .duration(200)
+        .EUt(30)
+
+    //Extract Nuclearcraft Isotopes
+    event.recipes.gtceu.extractor('thorium_230')
+        .itemInputs(['nuclearcraft:thorium_230'])
+        .outputFluids(['gtceu:thorium 144'])
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.extractor('thorium_232')
+        .itemInputs(['nuclearcraft:thorium_232'])
+        .outputFluids(['gtceu:thorium 144'])
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.extractor('uranium_233') 
+        .itemInputs(['nuclearcraft:uranium_233'])
+        .outputFluids(['gtceu:uranium_235 144']) //TODO: Add Uranium 233 element
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('uranium_235')
+        .itemInputs(['nuclearcraft:uranium_235'])
+        .outputFluids(['gtceu:uranium_235 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('uranium_238')
+        .itemInputs(['nuclearcraft:uranium_238'])
+        .outputFluids(['gtceu:uranium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('neptunium_237')
+        .itemInputs(['nuclearcraft:neptunium_237'])
+        .outputFluids(['gtceu:neptunium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('neptunium_236')
+        .itemInputs(['nuclearcraft:neptunium_236'])
+        .outputFluids(['gtceu:neptunium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('plutonium_241')
+        .itemInputs(['nuclearcraft:plutonium_241'])
+        .outputFluids(['gtceu:plutonium_241 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('plutonium_242')
+        .itemInputs(['nuclearcraft:plutonium_242'])
+        .outputFluids(['gtceu:plutonium_241 144']) // a mate of mine is a chemist who plays moni, he's going to hate me for this -ciggy
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('plutonium_238')
+        .itemInputs(['nuclearcraft:plutonium_238'])
+        .outputFluids(['gtceu:plutonium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('plutonium_239')
+        .itemInputs(['nuclearcraft:plutonium_239'])
+        .outputFluids(['gtceu:plutonium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('curium_243')
+        .itemInputs(['nuclearcraft:curium_243'])
+        .outputFluids(['gtceu:curium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('curium_245')
+        .itemInputs(['nuclearcraft:curium_245'])
+        .outputFluids(['gtceu:curium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('curium_246')
+        .itemInputs(['nuclearcraft:curium_246'])
+        .outputFluids(['gtceu:curium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('curium_247')
+        .itemInputs(['nuclearcraft:curium_247'])
+        .outputFluids(['gtceu:curium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('americium_241')
+        .itemInputs(['nuclearcraft:americium_241'])
+        .outputFluids(['gtceu:americium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('americium_242')
+        .itemInputs(['nuclearcraft:americium_242'])
+        .outputFluids(['gtceu:americium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('americium_243')
+        .itemInputs(['nuclearcraft:americium_243'])
+        .outputFluids(['gtceu:americium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('berkelium_247')
+        .itemInputs(['nuclearcraft:berkelium_247'])
+        .outputFluids(['gtceu:berkelium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('berkelium_248')
+        .itemInputs(['nuclearcraft:berkelium_248'])
+        .outputFluids(['gtceu:berkelium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('californium_249')
+        .itemInputs(['nuclearcraft:californium_249'])
+        .outputFluids(['gtceu:californium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('californium_250')
+        .itemInputs(['nuclearcraft:californium_250'])
+        .outputFluids(['gtceu:californium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('californium_251')
+        .itemInputs(['nuclearcraft:californium_251'])
+        .outputFluids(['gtceu:californium 144'])
+        .duration(180)
+        .EUt(6)
+
+    event.recipes.gtceu.extractor('californium_252')
+        .itemInputs(['nuclearcraft:californium_252'])
+        .outputFluids(['gtceu:californium 144'])
+        .duration(180)
+        .EUt(6)
+})

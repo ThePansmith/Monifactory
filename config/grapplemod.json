@@ -1,0 +1,289 @@
+{
+  "options": {
+    "grapplinghook": {
+      "custom": {
+        "rope": {
+          "maxlen": {
+            "default_value": 30.0,
+            "enabled": 0,
+            "max": 60.0,
+            "max_upgraded": 200.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "phaserope": {
+            "default_value": false,
+            "enabled": 0
+          },
+          "sticky": {
+            "default_value": false,
+            "enabled": 0
+          }
+        },
+        "hookthrower": {
+          "hookgravity": {
+            "default_value": 1.0,
+            "enabled": 0,
+            "max": 100.0,
+            "max_upgraded": 100.0,
+            "min": 1.0,
+            "min_upgraded": 0.0
+          },
+          "throwspeed": {
+            "default_value": 2.0,
+            "enabled": 0,
+            "max": 5.0,
+            "max_upgraded": 20.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "reelin": {
+            "default_value": true,
+            "enabled": 0
+          },
+          "verticalthrowangle": {
+            "default_value": 0.0,
+            "enabled": 0,
+            "max": 45.0,
+            "max_upgraded": 90.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "sneakingverticalthrowangle": {
+            "default_value": 0.0,
+            "enabled": 0,
+            "max": 45.0,
+            "max_upgraded": 90.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "detachonkeyrelease": {
+            "default_value": false,
+            "enabled": 0
+          }
+        },
+        "motor": {
+          "motor": {
+            "default_value": false,
+            "enabled": 0
+          },
+          "motormaxspeed": {
+            "default_value": 4.0,
+            "enabled": 0,
+            "max": 4.0,
+            "max_upgraded": 10.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "motoracceleration": {
+            "default_value": 0.2,
+            "enabled": 0,
+            "max": 0.2,
+            "max_upgraded": 1.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "motorwhencrouching": {
+            "default_value": false,
+            "enabled": 0
+          },
+          "motorwhennotcrouching": {
+            "default_value": true,
+            "enabled": 0
+          },
+          "smartmotor": {
+            "default_value": false,
+            "enabled": 0
+          },
+          "motordampener": {
+            "default_value": false,
+            "enabled": 1
+          },
+          "pullbackwards": {
+            "default_value": true,
+            "enabled": 0
+          }
+        },
+        "swing": {
+          "playermovementmult": {
+            "default_value": 1.0,
+            "enabled": 0,
+            "max": 2.0,
+            "max_upgraded": 5.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          }
+        },
+        "enderstaff": {
+          "enderstaff": {
+            "default_value": false,
+            "enabled": 0
+          }
+        },
+        "forcefield": {
+          "repel": {
+            "default_value": false,
+            "enabled": 0
+          },
+          "repelforce": {
+            "default_value": 1.0,
+            "enabled": 0,
+            "max": 1.0,
+            "max_upgraded": 5.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          }
+        },
+        "magnet": {
+          "attract": {
+            "default_value": false,
+            "enabled": 0
+          },
+          "attractradius": {
+            "default_value": 3.0,
+            "enabled": 0,
+            "max": 3.0,
+            "max_upgraded": 10.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          }
+        },
+        "doublehook": {
+          "doublehook": {
+            "default_value": false,
+            "enabled": 0
+          },
+          "smartdoublemotor": {
+            "default_value": true,
+            "enabled": 0
+          },
+          "angle": {
+            "default_value": 20.0,
+            "enabled": 0,
+            "max": 45.0,
+            "max_upgraded": 90.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "sneakingangle": {
+            "default_value": 10.0,
+            "enabled": 0,
+            "max": 45.0,
+            "max_upgraded": 90.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "oneropepull": {
+            "default_value": false,
+            "enabled": 0
+          }
+        },
+        "rocket": {
+          "rocketenabled": {
+            "default_value": false,
+            "enabled": 0
+          },
+          "rocket_force": {
+            "default_value": 1.0,
+            "enabled": 0,
+            "max": 1.0,
+            "max_upgraded": 5.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "rocket_active_time": {
+            "default_value": 0.5,
+            "enabled": 0,
+            "max": 0.5,
+            "max_upgraded": 20.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          },
+          "rocket_refuel_ratio": {
+            "default_value": 15.0,
+            "enabled": 0,
+            "max": 30.0,
+            "max_upgraded": 30.0,
+            "min": 15.0,
+            "min_upgraded": 1.0
+          },
+          "rocket_vertical_angle": {
+            "default_value": 0.0,
+            "enabled": 0,
+            "max": 90.0,
+            "max_upgraded": 90.0,
+            "min": 0.0,
+            "min_upgraded": 0.0
+          }
+        }
+      },
+      "blocks": {
+        "grapplingBlocks": "any",
+        "grapplingNonBlocks": "none",
+        "grappleBreakBlocks": "none"
+      },
+      "other": {
+        "hookaffectsentities": true,
+        "rope_snap_buffer": 5.0,
+        "default_durability": 500,
+        "rope_jump_power": 1.0,
+        "rope_jump_at_angle": false,
+        "rope_jump_cooldown_s": 0.0,
+        "climb_speed": 0.3
+      }
+    },
+    "longfallboots": {
+      "longfallbootsrecipe": true
+    },
+    "enderstaff": {
+      "ender_staff_strength": 1.5,
+      "ender_staff_recharge": 100
+    },
+    "enchantments": {
+      "wallrun": {
+        "wall_jump_up": 0.7,
+        "wall_jump_side": 0.4,
+        "max_wallrun_time": 3.0,
+        "wallrun_speed": 0.1,
+        "wallrun_max_speed": 0.7,
+        "wallrun_drag": 0.01,
+        "wallrun_min_speed": 0.0,
+        "enchant_rarity_wallrun": 0
+      },
+      "doublejump": {
+        "doublejumpforce": 0.8,
+        "doublejump_relative_to_falling": false,
+        "dont_doublejump_if_falling_faster_than": 9.9999999E7,
+        "enchant_rarity_double_jump": 0
+      },
+      "slide": {
+        "slidingjumpforce": 0.6,
+        "sliding_friction": 0.006666666828095913,
+        "sliding_min_speed": 0.15,
+        "sliding_end_min_speed": 0.01,
+        "enchant_rarity_sliding": 0
+      }
+    },
+    "other": {
+      "override_allowflight": true,
+      "airstrafe_max_speed": 0.7,
+      "airstrafe_acceleration": 0.015,
+      "dont_override_movement_in_air": false
+    }
+  },
+  "clientOptions": {
+    "camera": {
+      "wallrun_camera_tilt_degrees": 10.0,
+      "wallrun_camera_animation_s": 0.5
+    },
+    "sounds": {
+      "wallrun_sound_effect_time_s": 0.35,
+      "wallrun_sound_volume": 1.0,
+      "doublejump_sound_volume": 1.0,
+      "slide_sound_volume": 1.0,
+      "wallrunjump_sound_volume": 1.0,
+      "rocket_sound_volume": 1.0,
+      "enderstaff_sound_volume": 1.0
+    }
+  }
+}

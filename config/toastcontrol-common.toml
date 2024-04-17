@@ -1,0 +1,50 @@
+
+#Client Configuration
+[client]
+
+	[client.blocked_toasts]
+		#If advancement toasts are blocked.
+		advancements = true
+		#If recipe toasts are blocked.
+		recipes = true
+		#If system toasts are blocked.
+		system = false
+		#If tutorial toasts are blocked.
+		tutorial = true
+		#If all vanilla toasts are blocked.
+		global_vanilla = false
+		#If all non-vanilla toasts are blocked.
+		global_modded = false
+		#If all toasts are blocked.
+		global = false
+		#Toast Classes that are blocked from being shown.
+		blocked_classes = []
+
+	[client.visual_options]
+		#How long a toast must be on the screen for, in ticks.  Use 0 to use the default time.
+		#Range: 0 ~ 4000
+		force_time = 0
+		#If toasts are translucent.
+		translucent = true
+		#If toasts are transparent.  Overrides translucency.
+		transparent = false
+		#How many toasts will be displayed on screen at once.
+		#Range: 1 ~ 7
+		toast_count = 3
+		#The X offset for toasts to be drawn at.
+		#Range: -8192 ~ 8192
+		x_offset = 0
+		#The Y offset for toasts to be drawn at.
+		#Range: -8192 ~ 8192
+		y_offset = 0
+		#If toasts automatically pop into the screen without animations.
+		no_slide = false
+		#If toasts show on the left of the screen.
+		start_left = false
+		#If toasts will come in from the top of the screen, rather than the side.
+		top_down = false
+
+	[client.debug]
+		#If toast classes are printed when they are shown.
+		print_classes = false
+

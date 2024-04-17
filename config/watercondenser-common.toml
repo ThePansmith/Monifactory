@@ -1,0 +1,17 @@
+
+["Configs for WaterCondenser"]
+	#The fluid to generate. If not valid, will revert to minecraft:water. Existing worlds will retroactively change their fluid type on change (but keep the same amount).
+	"Output fluid" = "minecraft:water"
+	#Tank capacity in mB
+	"Condenser capacity" = 1000
+	#The length of a fill cycle, in ticks
+	"Ticks between cycles" = 1
+	#How much mB to generate per fill cycle
+	"Fluid per cycle" = 8
+	#For random variance, the minimum multiplier for each fill cycle
+	"Fluid multiplier chance min" = 0.0
+	#For random variance, the maximum multiplier for each fill cycle
+	"Fluid multiplier chance max" = 1.0
+	#Bottle consumption per bottle, in mB
+	"Fluid amount in mB" = 250
+

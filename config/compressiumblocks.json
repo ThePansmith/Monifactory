@@ -1,0 +1,226 @@
+[{
+        "name": "cobblestone",
+        "nestedDepth": 4,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:cobblestone",
+        "particlePath": "minecraft:block/cobblestone",
+        "baseBlockModel": "minecraft:block/cobblestone",
+        "type": "block"
+    },
+    {
+        "name": "stone",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:stone",
+        "particlePath": "minecraft:block/stone",
+        "baseBlockModel": "minecraft:block/stone",
+        "type": "block"
+    },
+    {
+        "name": "sand",
+        "nestedDepth": 2,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:sand",
+        "particlePath": "minecraft:block/sand",
+        "baseBlockModel": "minecraft:block/sand",
+        "type": "falling"
+    },
+    {
+        "name": "gravel",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:gravel",
+        "particlePath": "minecraft:block/gravel",
+        "baseBlockModel": "minecraft:block/gravel",
+        "type": "falling"
+    },
+    {
+        "name": "netherrack",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:netherrack",
+        "particlePath": "minecraft:block/netherrack",
+        "baseBlockModel": "minecraft:block/netherrack",
+        "type": "nether_rack"
+    },
+    {
+        "name": "snow",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:snow_block",
+        "particlePath": "minecraft:block/snow",
+        "baseBlockModel": "minecraft:block/snow_block",
+        "type": "powered"
+    },
+    {
+        "name": "soulsand",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:soul_sand",
+        "particlePath": "minecraft:block/soul_sand",
+        "baseBlockModel": "minecraft:block/soul_sand",
+        "type": "soul_sand"
+    },
+    {
+        "name": "iron",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:iron_block",
+        "particlePath": "minecraft:block/iron_block",
+        "baseBlockModel": "minecraft:block/iron_block",
+        "type": "block"
+    },
+    {
+        "name": "gold",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:gold_block",
+        "particlePath": "minecraft:block/gold_block",
+        "baseBlockModel": "minecraft:block/gold_block",
+        "type": "block"
+    },
+    {
+        "name": "diamond",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:diamond_block",
+        "particlePath": "minecraft:block/diamond_block",
+        "baseBlockModel": "minecraft:block/diamond_block",
+        "type": "block"
+    },
+    {
+        "name": "emerald",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:emerald_block",
+        "particlePath": "minecraft:block/emerald_block",
+        "baseBlockModel": "minecraft:block/emerald_block",
+        "type": "block"
+    },
+    {
+        "name": "clay",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:clay",
+        "particlePath": "minecraft:block/clay",
+        "baseBlockModel": "minecraft:block/clay",
+        "type": "block"
+    },
+    {
+        "name": "netherite",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:netherite_block",
+        "particlePath": "minecraft:block/netherite_block",
+        "baseBlockModel": "minecraft:block/netherite_block",
+        "type": "block"
+    },
+    {
+        "name": "dirt",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:dirt",
+        "particlePath": "minecraft:block/dirt",
+        "baseBlockModel": "minecraft:block/dirt",
+        "type": "block"
+    },
+    {
+        "name": "coal",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:coal_block",
+        "particlePath": "minecraft:block/coal_block",
+        "baseBlockModel": "minecraft:block/coal_block",
+        "type": "block"
+    },
+    {
+        "name": "redsand",
+        "nestedDepth": 2,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:red_sand",
+        "particlePath": "minecraft:block/red_sand",
+        "baseBlockModel": "minecraft:block/red_sand",
+        "type": "falling"
+    },
+    {
+        "name": "endstone",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:end_stone",
+        "particlePath": "minecraft:block/end_stone",
+        "baseBlockModel": "minecraft:block/end_stone",
+        "type": "block"
+    },
+    {
+        "name": "obsidian",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:obsidian",
+        "particlePath": "minecraft:block/obsidian",
+        "baseBlockModel": "minecraft:block/obsidian",
+        "type": "block"
+    },
+    {
+        "name": "lapis",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:lapis_block",
+        "particlePath": "minecraft:block/lapis_block",
+        "baseBlockModel": "minecraft:block/lapis_block",
+        "type": "block"
+    },
+    {
+        "name": "quartz",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:quartz_block",
+        "particlePath": "minecraft:block/quartz_block_side",
+        "baseBlockModel": "minecraft:block/quartz_block",
+        "type": "block"
+    },
+    {
+        "name": "redstone",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:redstone_block",
+        "particlePath": "minecraft:block/redstone_block",
+        "baseBlockModel": "minecraft:block/redstone_block",
+        "type": "powered"
+    },
+    {
+        "name": "andesite",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:andesite",
+        "particlePath": "minecraft:block/andesite",
+        "baseBlockModel": "minecraft:block/andesite",
+        "type": "block"
+    },
+    {
+        "name": "diorite",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:diorite",
+        "particlePath": "minecraft:block/diorite",
+        "baseBlockModel": "minecraft:block/diorite",
+        "type": "block"
+    },
+    {
+        "name": "copper",
+        "nestedDepth": 1,
+        "isBlockOf": false,
+        "baseResourceLocation": "minecraft:copper_block",
+        "particlePath": "minecraft:block/copper_block",
+        "baseBlockModel": "minecraft:block/copper_block",
+        "type": "block"
+    },
+    {
+        "name": "granite",
+        "nestedDepth": 1,
+        "isBlockOf": true,
+        "baseResourceLocation": "minecraft:granite",
+        "particlePath": "minecraft:block/granite",
+        "baseBlockModel": "minecraft:block/granite",
+        "type": "block"
+    }
+]

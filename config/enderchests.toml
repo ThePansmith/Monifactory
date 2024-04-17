@@ -1,0 +1,67 @@
+#With this disabled chests are essentially locked to the crafted color as dyes will no longer work
+enable_in_world_coloring = true
+
+#Item used to upgrade the EnderChests
+[upgrade_item_tags]
+	#Items used to make the chests personal
+	personal = ["tag|forge:gems/diamond"]
+	#Items used to make the chests team chests
+	team = ["tag|forge:gems/emerald"]
+	#Items that upgrade storage capacity by 3
+	small_capacity = ["minecraft:ender_pearl"]
+	#Items that upgrade storage capacity by 9
+	large_capacity = ["minecraft:ender_eye"]
+	#Items that upgrade storage capacity by 3
+	#Each item can only be use once per chest
+	small_capacity_singleuse = []
+	#Items that upgrade storage capacity by 9
+	#Each item can only be use once per chest
+	large_capacity_singleuse = []
+
+#Adjust how many inventory slots are available
+[capacity_settings]
+	#Minimum capacity an EnderChest holds
+	#Range: 9 ~ 27
+	chest_size_min = 9
+	#Maximum capacity an EnderChest holds
+	#Range: 9 ~ 54
+	chest_size_max = 27
+
+[access_settings]
+	#When enabled these bags access a players vanilla EnderChest, if disabled they will only be a crafting ingredient
+	ender_pouch = true
+	#Enables the usage of public chests, if disabled chests must be upgraded before use
+	public_chests = true
+	#Enables the creation of personal chests, if disabled chests can not set personal.
+	#Does not effect chests that are already set as personal
+	personal_chests = true
+	#Enables the creation of team chests, if disabled chests can not be set team.
+	#Does not effect chests that are already set as team
+	team_chests = true
+	#Enables the usage of public bags, if disabled bags must be linked to an upgraded chest before use
+	public_bags = true
+	#Enables the linking of bags to personal chests.
+	#Does not effect bags that are already linked to personal chests
+	personal_bags = true
+	#Enables the linking of bags to team chests.
+	#Does not effect bags that are already linked to team chests
+	team_bags = true
+	#Public chests can be used with automation.
+	public_automation = true
+	#Personal chests can be used with automation.
+	personal_automation = true
+	#Team chests can be used with automation.
+	team_automation = true
+	#While true a Personal chest can only be edited (upgrade, move, etc) by the owner
+	personal_edit_lock = true
+	#While true a Team chest can only be edited (upgrade, move, etc) by a team member
+	team_edit_lock = true
+	#While true only the owner can link a bag to their chests
+	personal_link_lock = true
+	#While true only a team member can link a bag to team chests
+	team_link_lock = true
+	#While true only the owner can use the chest
+	personal_use_lock = false
+	#While true only a team member can use the chest
+	team_use_lock = false
+

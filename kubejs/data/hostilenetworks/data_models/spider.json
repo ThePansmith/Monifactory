@@ -1,0 +1,37 @@
+{
+    "entity": "minecraft:spider",
+    "subtypes": [
+        "minecraft:cave_spider",
+        "twilightforest:hedge_spider",
+        "twilightforest:king_spider",
+        "twilightforest:swarm_spider",
+        "twilightforest:carminite_broodling"
+    ],
+    "name": "entity.minecraft.spider",
+    "name_color": "#00FFFFFF",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.spider",
+    "fabricator_drops": [{
+            "item": "minecraft:string",
+            "count": 32
+        },
+        {
+            "item": "minecraft:spider_eye",
+            "count": 16
+        },
+        {
+            "item": "minecraft:copper_ingot",
+            "count": 12
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+
+[energy_generation]
+	#Allow rtg registration: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
+	register_panel = [true, true, true, true]
+	#Panel power generation: du, elite, advanced, basic
+	panel_power = [400, 1500, 100, 25]
+	#rtg generation: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
+	rtg_power = [20, 200, 800, 4000]
+	#rtg radiation: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
+	rtg_radiation = [56, 57800, 200000, 1900000]
+	#Steam turbine (one block) base power gen
+	steam_turbine_power_gen = 50
+
+[energy_storage]
+	#Allow block registration: basic_voltaic_pile, elite_voltaic_pile, advanced_voltaic_pile, basic_lithium_ion_battery, elite_lithium_ion_battery, du_lithium_ion_battery, du_voltaic_pile, advanced_lithium_ion_battery
+	energy_block_registration = [true, true, true, true, true, true, true, true]
+	#Storage: basic_voltaic_pile, elite_voltaic_pile, advanced_voltaic_pile, basic_lithium_ion_battery, elite_lithium_ion_battery, du_lithium_ion_battery, du_voltaic_pile, advanced_lithium_ion_battery
+	energy_block_storage = [1600000, 102400000, 6400000, 32000000, 2048000000, 512000000, 25600000, 128000000]
+	lithium_ion_battery_storage = 1000000
+	qnp_energy_storage = 2000000
+	qnp_energy_per_block = 200
+
+[storage_blocks]
+	#Blocks to store items, fluids, etc...
+	#Allow barrel registration: advanced_barrel, basic_barrel, elite_barrel, du_barrel
+	energy_block_registration = [true, true, true, true]
+	#Barrel capacity in Buckets: advanced_barrel, basic_barrel, elite_barrel, du_barrel
+	barrel_capacity = [512000, 128000, 8192000, 2048000]
+

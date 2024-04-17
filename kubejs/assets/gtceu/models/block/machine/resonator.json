@@ -1,0 +1,4 @@
+blockstates / resonator.json
+variants = {
+    normal
+}

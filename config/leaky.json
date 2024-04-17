@@ -1,0 +1,22 @@
+{
+    "reportInterval": {
+        "desc:": "Set the amount of seconds between repeated notifications: default: 180",
+        "reportInterval": 180
+    },
+    "chatnotification": {
+        "desc:": "Set the chat notification type, one of these: PLAYER(closest player), EVERYONE(all players), NONE. default: PLAYER",
+        "chatnotification": "PLAYER"
+    },
+    "highlightitems": {
+        "desc:": "Choose if leaking item entity should be glowing, default: true",
+        "highlightitems": true
+    },
+    "reportThreshold": {
+        "desc:": "Set the min amount of stacked items being reported, default: 80",
+        "reportThreshold": 80
+    },
+    "autoremovethreshold": {
+        "desc:": "Set the amount of stacked items being automatically removed, default: 120",
+        "autoremovethreshold": 20000
+    }
+}

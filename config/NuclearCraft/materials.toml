@@ -1,0 +1,349 @@
+
+[slurries]
+	#List of available slurries (dissolved ores in acid)
+	#Color for slurry will be calculate from average texture color
+	#Texture location has to be: nuclearcraft:textures/block/ore/(slurry_name)_ore.png
+	#If no texture found it will generate random color
+	register_slurries = ["uranium", "iron", "gold", "aluminum", "thorium", "boron", "silver", "lead", "tin", "copper", "zinc", "cobalt", "platinum", "lithium", "magnesium"]
+
+[raw_chunks]
+	lithium = true
+	platinum = true
+	thorium = true
+	tin = true
+	magnesium = true
+	silver = true
+	cobalt = true
+	uranium = true
+	zinc = true
+	boron = true
+	lead = true
+
+[ingots]
+	manganese_oxide = true
+	niobium_tin = true
+	graphite = true
+	lithium = true
+	platinum = true
+	tungsten = true
+	zircaloy = true
+	yttrium = true
+	thermoconducting = true
+	thorium = true
+	zirconium_molybdenum = true
+	tin = true
+	palladium = true
+	beryllium = true
+	silicon_carbide = true
+	zinc = true
+	carbon_manganese = true
+	extreme = true
+	shibuichi = true
+	tungsten_carbide = true
+	stainless_steel = true
+	magnesium = true
+	bronze = true
+	sodium = true
+	tin_silver = true
+	pyrolitic_carbon = true
+	manganese_dioxide = true
+	silver = true
+	uranium = true
+	niobium_titanium = true
+	tough_alloy = true
+	steel = true
+	potassium = true
+	ferroboron = true
+	titanium = true
+	super_alloy = true
+	cobalt = true
+	aluminum = true
+	manganese = true
+	sic_sic_cmc = true
+	hard_carbon = true
+	niobium = true
+	zirconium = true
+	electrum = true
+	chromium = true
+	calcium = true
+	strontium = true
+	osmium = true
+	lithium_manganese_dioxide = true
+	lead = true
+	osmiridium = true
+	lead_platinum = true
+	hsla_steel = true
+	nichrome = true
+	boron = true
+	magnesium_diboride = true
+	hafnium = true
+
+[plates]
+	tough_alloy = true
+	steel = true
+	ferroboron = true
+	cobalt = true
+	aluminum = true
+	graphite = true
+	manganese = true
+	sic_sic_cmc = true
+	netherite = true
+	lithium = true
+	platinum = true
+	thermoconducting = true
+	thorium = true
+	hard_carbon = true
+	tin = true
+	palladium = true
+	copper = true
+	beryllium = true
+	zirconium = true
+	zinc = true
+	extreme = true
+	electrum = true
+	magnesium = true
+	lithium_manganese_dioxide = true
+	lead = true
+	bronze = true
+	iron = true
+	silver = true
+	hsla_steel = true
+	uranium = true
+	boron = true
+
+[dusts]
+	barium = true
+	germanium = true
+	tungsten = true
+	zircaloy = true
+	yttrium = true
+	thermoconducting = true
+	thorium = true
+	zirconium_molybdenum = true
+	palladium = true
+	sulfur = true
+	fluorite = true
+	lapis = true
+	silicon_carbide = true
+	zinc = true
+	carbon_manganese = true
+	molybdenum = true
+	purpur = true
+	borax = true
+	magnesium = true
+	bronze = true
+	manganese_dioxide = true
+	silver = true
+	boron_nitride = true
+	gadolinium = true
+	tough_alloy = true
+	steel = true
+	ferroboron = true
+	cobalt = true
+	strontium_90 = true
+	potassium_hydroxide = true
+	alugentum = true
+	aluminum = true
+	manganese = true
+	sic_sic_cmc = true
+	protactinium_233 = true
+	gold = true
+	europium_155 = true
+	hard_carbon = true
+	end_stone = true
+	niobium = true
+	yellowcake = true
+	copper = true
+	iodine = true
+	zirconium = true
+	electrum = true
+	caesium_137 = true
+	strontium = true
+	rhodochrosite = true
+	lead = true
+	boron_arsenide = true
+	neodymium = true
+	lead_platinum = true
+	crystal_binder = true
+	charcoal = true
+	hafnium = true
+	sodium_hydroxide = true
+	manganese_oxide = true
+	samarium = true
+	erbium = true
+	radium = true
+	bscco = true
+	graphite = true
+	netherite = true
+	lithium = true
+	platinum = true
+	carobbiite = true
+	tin = true
+	beryllium = true
+	ruthenium_106 = true
+	extreme = true
+	shibuichi = true
+	obsidian = true
+	polonium = true
+	arsenic = true
+	energetic_blend = true
+	sodium = true
+	tin_silver = true
+	pyrolitic_carbon = true
+	potassium_fluoride = true
+	coal = true
+	uranium = true
+	emerald = true
+	c_mn_blend = true
+	potassium = true
+	tbp = true
+	ytterbium = true
+	titanium = true
+	dimensional_blend = true
+	thallium = true
+	enderium = true
+	sodium_fluoride = true
+	irradiated_borax = true
+	terbium = true
+	calcium_sulfate = true
+	chromium = true
+	promethium_147 = true
+	calcium = true
+	potassium_iodide = true
+	villiaumite = true
+	osmium = true
+	lithium_manganese_dioxide = true
+	quartz = true
+	diamond = true
+	iron = true
+	hsla_steel = true
+	boron = true
+	bismuth = true
+
+[blocks]
+	steel = true
+	electrum = true
+	supercold_ice = true
+	magnesium = true
+	cobalt = true
+	aluminum = true
+	graphite = true
+	lead = true
+	bronze = true
+	californium250 = true
+	lithium = true
+	platinum = true
+	thorium = true
+	americium241 = true
+	plutonium238 = true
+	tin = true
+	beryllium = true
+	uranium238 = true
+	silver = true
+	uranium = true
+	zirconium = true
+	zinc = true
+	boron = true
+
+[gems]
+	boron_arsenide = true
+	carobbiite = true
+	silicon = true
+	villiaumite = true
+	fluorite = true
+	rhodochrosite = true
+	boron_nitride = true
+
+#Forge Tag priority
+[forge_tag_priority]
+	#Priority of mods to resolve forge tags to itemstack and fluidstack.
+	mods_priority = ["gtceu", "nuclearcraft"]
+
+[lithium]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = -60
+	max_height = 60
+
+[platinum]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = -60
+	max_height = 0
+
+[thorium]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = -60
+	max_height = 60
+
+[tin]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = 4
+	max_height = 60
+
+[magnesium]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = -60
+	max_height = 60
+
+[silver]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = -60
+	max_height = 60
+
+[cobalt]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = -60
+	max_height = 60
+
+[uranium]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = -60
+	max_height = 60
+
+[zinc]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = 4
+	max_height = 60
+
+[boron]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = -60
+	max_height = 60
+
+[lead]
+	register = true
+	dimensions = [0, -4848]
+	vein_size = 7
+	veins_in_chunk = 3
+	min_height = 4
+	max_height = 60
+

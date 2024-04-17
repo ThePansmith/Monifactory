@@ -1,0 +1,9 @@
+
+[general]
+	#The amount of FE (Forge Energy) converted from 1 E (Team Reborn Energy). Setting the value to 0 disables this conversion.
+	#Range: > 0
+	fabricToForgeEnergy = 10
+	#The amount of FE (Forge Energy) required for 1 E (Team Reborn Energy). Setting the value to 0 disables this conversion.
+	#Range: > 0
+	forgeToFabricEnergy = 10
+

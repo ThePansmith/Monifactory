@@ -1,0 +1,96 @@
+{
+  "core": {
+    "base": 1,
+    "scale": 6,
+    "exponent": 2
+  },
+  "general": {
+    "allowFlowingWater": true,
+    "allowFlowingLava": true,
+    "storagePerPixel": 1.0,
+    "enableBed": true,
+    "enableAnimationCollision": true,
+    "enableCollisionMotion": true,
+    "dyeVolume": 2.0,
+    "maxAllowedDensity": 2048,
+    "maxDoorDistance": 512,
+    "defaultSelectedGrid": 16
+  },
+  "build": {
+    "default": {
+      "harvestLevelBlock": "WOOD",
+      "editUnbreakable": false,
+      "minimumTransparency": 255,
+      "affectedBlockLimit": {
+        "enabled": true,
+        "content": 2
+      },
+      "editBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "placeBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "blueprintSizeLimit": {
+        "enabled": false,
+        "content": 16
+      },
+      "gridLimit": {
+        "enabled": false,
+        "content": 32
+      }
+    },
+    "survival": {
+      "harvestLevelBlock": "STONE",
+      "editUnbreakable": false,
+      "minimumTransparency": 255,
+      "affectedBlockLimit": {
+        "enabled": true,
+        "content": 2
+      },
+      "editBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "placeBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "blueprintSizeLimit": {
+        "enabled": false,
+        "content": 16
+      },
+      "gridLimit": {
+        "enabled": false,
+        "content": 32
+      }
+    },
+    "creative": {
+      "harvestLevelBlock": "DIAMOND",
+      "editUnbreakable": true,
+      "minimumTransparency": 0,
+      "affectedBlockLimit": {
+        "enabled": true,
+        "content": 2
+      },
+      "editBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "placeBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "blueprintSizeLimit": {
+        "enabled": false,
+        "content": 16
+      },
+      "gridLimit": {
+        "enabled": false,
+        "content": 32
+      }
+    }
+  }
+}

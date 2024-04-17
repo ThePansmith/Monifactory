@@ -1,0 +1,71 @@
+
+["General Settings"]
+	#Should Cursed Earth be Obtainable?
+	"Obtain Cursed" = true
+	#Should Blessed Earth be Obtainable?
+	"Obtain Blessed" = true
+	#Should Blursed Earth be Obtainable?
+	"Obtain Blursed" = true
+	#What Should the Max Multiplier of Kikoku Enchant be?
+	#Range: 1 ~ 5000
+	"Kikoku Max" = 2
+	#What should the Unstable Ingot do when the time limit is reached?
+	#NO_DAMAGE: Slowness while holding
+	#DAMAGE: After 10 seconds, slowly ramps up the damage
+	#EXPLOSION: Explodes after 10 seconds
+	#Allowed Values: NO_DAMAGE, DAMAGE, EXPLOSION
+	"Reaction Type" = "DAMAGE"
+	#How much EXP should base experience pearls give?
+	#Range: 1 ~ 128
+	"EXP Given from EXP Pearls" = 10
+	#Should Ender Lilies Generate?
+	"Ender Lily Generation" = true
+	#Should Flame Lilies Generate?
+	"Flame Lily Generation" = true
+	#How much FE should the Solar Panel Generate?
+	#Range: 0 ~ 1000000
+	"Solar Panel Generation" = 4
+	#How much FE should the Lunar Panel Generate?
+	#Range: 0 ~ 1000000
+	"Lunar Panel Generation" = 4
+	#How many Panels should it take to increase the multiplier by 1?
+	#Range: 1 ~ 1000000
+	"Panel Multiplier Amount" = 50
+
+["World Generation"]
+	#Should Ender Ore Generate?
+	"Ender Ore Generation" = true
+
+["Blessed Earth Settings"]
+	#How long should it minimum wait before trying to spawn
+	#Range: 1 ~ 2000
+	"Minimum Waiting Time" = 200
+	#How big of an area should the block check for mobs, 2 would be 2x1x2 area
+	#Range: 1 ~ 5
+	"Area Size for entity count" = 2
+	#At what amount of entities in the area should mob spawning be halted
+	#Range: 1 ~ 10
+	"Mob cap for Area" = 3
+
+["Blursed Earth Settings"]
+	#How long should it minimum wait before trying to spawn
+	#Range: 1 ~ 2000
+	"Minimum Waiting Time" = 200
+	#How big of an area should the block check for mobs, 2 would be 2x1x2 area
+	#Range: 1 ~ 5
+	"Area Size for entity count" = 2
+	#At what amount of entities in the area should mob spawning be halted
+	#Range: 1 ~ 10
+	"Mob cap for Area" = 3
+
+["Cursed Earth Settings"]
+	#How long should it minimum wait before trying to spawn
+	#Range: 1 ~ 2000
+	"Minimum Waiting Time" = 200
+	#How big of an area should the block check for mobs, 2 would be 2x1x2 area
+	#Range: 1 ~ 5
+	"Area Size for entity count" = 2
+	#At what amount of entities in the area should mob spawning be halted
+	#Range: 1 ~ 10
+	"Mob cap for Area" = 3
+

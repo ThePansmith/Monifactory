@@ -1,0 +1,53 @@
+#Systeams Config
+#---------------
+#The amount of steam 1mb of water makes.
+#Range: 0.1 ~ 512.0
+water_to_steam_ratio = 256.0
+#The multiplier on the steam dynamo's RF/t
+#Range: 0.05 ~ 512.0
+steam_dynamo_output_multiplier = 4.0
+
+["Steam Values"]
+	#The number of mb of steam produced per RF of energy usually produced by the same fuel in a dynamo
+	#Note that this does not affect the steam dynamo's rates. That needs to be adjusted with a datapack
+	#Range: 0.05 ~ 100.0
+	stirling = 1.15
+	#Range: 0.05 ~ 100.0
+	magmatic = 0.5
+	#Range: 0.05 ~ 100.0
+	compression = 0.5
+	#Range: 0.05 ~ 100.0
+	numismatic = 0.5
+	#Range: 0.05 ~ 100.0
+	lapidary = 0.5
+	#Range: 0.05 ~ 100.0
+	disenchantment = 0.5
+	#Range: 0.05 ~ 100.0
+	gourmand = 0.5
+	#Range: 0.05 ~ 100.0
+	pneumatic = 0.5
+
+["Boiler Speed Multipliers"]
+	#The speed multiplier on each boiler's mB/t
+	#Range: 0.05 ~ 20.0
+	stirling = 8.0
+	#Range: 0.05 ~ 20.0
+	magmatic = 2.0
+	#Range: 0.05 ~ 20.0
+	compression = 2.0
+	#Range: 0.05 ~ 20.0
+	numismatic = 2.0
+	#Range: 0.05 ~ 20.0
+	lapidary = 2.0
+	#Range: 0.05 ~ 20.0
+	disenchantment = 2.0
+	#Range: 0.05 ~ 20.0
+	gourmand = 2.0
+	#Range: 0.05 ~ 20.0
+	pneumatic = 2.0
+
+["Integration settings"]
+	#If you can shift right click a Pneumatic Boiler with an Advanced Pneumatic Tube to convert it to a Pneumatic Dynamo
+	#This can get annoying when trying to place Advanced Pneumatic Tubes next to boilers
+	pneumatic_boiler_conversion_to_dynamo = true
+

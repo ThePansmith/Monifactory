@@ -1,0 +1,1780 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "progression"
+	group: ""
+	icon: "minecraft:writable_book"
+	id: "395B849AC6294153"
+	order_index: 11
+	quest_links: [
+		{
+			id: "024D7CDF9E2DAD93"
+			linked_quest: "58F9A5310D43A2B0"
+			shape: "hexagon"
+			x: -6.5d
+			y: -8.5d
+		}
+		{
+			id: "54CA5F73E5D24EE5"
+			linked_quest: "7358461DB0D9A9AF"
+			shape: "hexagon"
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			id: "0229F661DE68B506"
+			linked_quest: "3A4FA18FB90A0BDA"
+			shape: "hexagon"
+			x: -5.0d
+			y: -8.5d
+		}
+		{
+			id: "5DE0C78043674864"
+			linked_quest: "1D95AC7CAC7D5121"
+			shape: "hexagon"
+			x: -6.5d
+			y: -4.0d
+		}
+		{
+			id: "02006A4E920FFB93"
+			linked_quest: "2DDCA4800EFB303E"
+			shape: "hexagon"
+			x: -5.0d
+			y: -7.0d
+		}
+		{
+			id: "02ACDE72AA8D4756"
+			linked_quest: "27913342423025C3"
+			shape: "hexagon"
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			id: "3B1BB489C39CB742"
+			linked_quest: "61D57691991183FF"
+			shape: "hexagon"
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			id: "52A69A309952D584"
+			linked_quest: "41D3154853B9F90C"
+			shape: "hexagon"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			id: "6F6E0B5BF73F74B3"
+			linked_quest: "3907A69C91726479"
+			shape: "hexagon"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			id: "642F106D9CE13E2A"
+			linked_quest: "5156ABA00FA3C6BF"
+			shape: "hexagon"
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			id: "73B54C6EC926F63D"
+			linked_quest: "1E85D834A61B60F8"
+			shape: "hexagon"
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			id: "60A6D6F946CB3E7B"
+			linked_quest: "2230386A91502CC0"
+			shape: "hexagon"
+			x: -3.5d
+			y: -8.5d
+		}
+		{
+			id: "7CF4923D1D4CA098"
+			linked_quest: "710E8D6E22C487C4"
+			shape: "hexagon"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			id: "3E85587E0E1B03F4"
+			linked_quest: "23A82A95709C324A"
+			shape: "hexagon"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "2466FEB2F91C0EFC"
+			linked_quest: "21B32BA716CE8CD3"
+			shape: "hexagon"
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			id: "5C7A87687E9C9C9E"
+			linked_quest: "3F216049FBBB4E36"
+			shape: "hexagon"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			id: "4A0C49F03F0E6EA6"
+			linked_quest: "2F8B802869825E02"
+			shape: "hexagon"
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			id: "0878BEEEBF1C29E6"
+			linked_quest: "0F140E480826AA81"
+			shape: "hexagon"
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			id: "78D9F5ABC383AD97"
+			linked_quest: "2412924535FC751E"
+			shape: "hexagon"
+			x: -0.5d
+			y: -8.5d
+		}
+		{
+			id: "22BC8F8C57834702"
+			linked_quest: "4D38653541F76928"
+			shape: "hexagon"
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			id: "07AEECB65C6F4823"
+			linked_quest: "00041F4B8EB603DB"
+			shape: "hexagon"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			id: "564C9C231270444F"
+			linked_quest: "383AF0F983B15CA1"
+			shape: "hexagon"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			id: "00091820091043F7"
+			linked_quest: "2D757C34B8CC82D4"
+			shape: "hexagon"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			id: "62521786A2D932F3"
+			linked_quest: "747261209378726B"
+			shape: "hexagon"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			id: "1A8E10562380FCCA"
+			linked_quest: "35567AC1074FB2C0"
+			shape: "hexagon"
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			id: "6E86AFA3E2C3AF37"
+			linked_quest: "12D33BA9CF1DBE54"
+			shape: "hexagon"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			id: "0F68369ACF454D3C"
+			linked_quest: "605B92FDF74E3140"
+			shape: "hexagon"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			id: "30A42EB179F54994"
+			linked_quest: "6F3D0400845E43F9"
+			shape: "hexagon"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			id: "0E61F5CDF81DC17C"
+			linked_quest: "7A103C8708F3B716"
+			shape: "hexagon"
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			id: "36D761C199F9D093"
+			linked_quest: "13E85F25A122FF1F"
+			shape: "hexagon"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			id: "6F02B5EF9173F3D9"
+			linked_quest: "4BFE00ABA1FF6678"
+			shape: "hexagon"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			id: "6D384E98C78FF11D"
+			linked_quest: "064DBD0DFB04B320"
+			shape: "hexagon"
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			id: "541207AA094CF0E3"
+			linked_quest: "5C5842E524934F55"
+			shape: "hexagon"
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			id: "50028AAA8DF84495"
+			linked_quest: "16139ABAE30BF117"
+			shape: "hexagon"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			id: "3F0F07AA8A215DE5"
+			linked_quest: "6588C68DE6973BCC"
+			shape: "hexagon"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			id: "080872B64C40C793"
+			linked_quest: "13C5F3A7E86D468F"
+			shape: "hexagon"
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			id: "57778B08ADACB62D"
+			linked_quest: "4AC51394FB5152E5"
+			shape: "hexagon"
+			x: 3.5d
+			y: -9.25d
+		}
+		{
+			id: "697D790E02EFC25A"
+			linked_quest: "6B851C550A0C6C4A"
+			shape: "hexagon"
+			x: 4.0d
+			y: -8.5d
+		}
+		{
+			id: "623E7DC6738D6F0B"
+			linked_quest: "1E121286E4EFBB97"
+			shape: "hexagon"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			id: "1630E491EA2BA654"
+			linked_quest: "0F612EAA83D23F9B"
+			shape: "hexagon"
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			id: "3811A5DC9BE86529"
+			linked_quest: "5EE23A29090BD374"
+			shape: "hexagon"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			id: "5AA8AA482AFAA5FE"
+			linked_quest: "619D94FE1D9834FA"
+			shape: "hexagon"
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			id: "7D217833035647CD"
+			linked_quest: "04A0863937695AC4"
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			id: "4CA98E8FC9082FA2"
+			linked_quest: "5F9C7FB40AD2640B"
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			id: "6E8F35B6CC447F93"
+			linked_quest: "1BC6DDC2D50F9C46"
+			shape: "hexagon"
+			x: 13.5d
+			y: -8.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"7358461DB0D9A9AF"
+				"27913342423025C3"
+				"5156ABA00FA3C6BF"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Circuits along this line are LV, and can all be substituted in recipes."
+				""
+				"&2Electronic Circuits&r are the worst in terms of cost and effort required to produce, but you have to start with something."
+				""
+				"&2Integrated Circuits&r are the middle layer between &2Electronic Circuits and Microprocessors.&r"
+				""
+				"And finally, &2Microprocessors&r, which take the lowest effort."
+			]
+			icon: "gtceu:lv_machine_hull"
+			id: "5B6811964444497F"
+			rewards: [{
+				id: "5CC360480ECB69E3"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "6DFE042FD9FCC8D1"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/lv"
+					}
+				}
+				title: "Any #gtceu:circuits/lv"
+				type: "item"
+			}]
+			title: "LV Circuits"
+			x: -8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"1D95AC7CAC7D5121"
+				"61D57691991183FF"
+				"1E85D834A61B60F8"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Circuits along this line are MV, and can all be substituted in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+			]
+			icon: "gtceu:mv_machine_hull"
+			id: "1510DC51CDC3F609"
+			rewards: [{
+				id: "19D2362986C4A604"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "51CD461474675310"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/mv"
+					}
+				}
+				title: "Any #gtceu:circuits/mv"
+				type: "item"
+			}]
+			title: "MV Circuits"
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"41D3154853B9F90C"
+				"710E8D6E22C487C4"
+				"4D38653541F76928"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Circuits along this line are HV, and can all be substituted in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+			]
+			icon: "gtceu:hv_machine_hull"
+			id: "01CC71429CFCAE0B"
+			rewards: [{
+				id: "5B1E3663222FD07B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "75DC170D1A2B3236"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/hv"
+					}
+				}
+				title: "Any #gtceu:circuits/hv"
+				type: "item"
+			}]
+			title: "HV Circuits"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"23A82A95709C324A"
+				"00041F4B8EB603DB"
+				"12D33BA9CF1DBE54"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Circuits along this line are EV, and can all be substituted in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+			]
+			icon: "gtceu:ev_machine_hull"
+			id: "22B3F2351CB4B7D8"
+			rewards: [{
+				id: "08C1BE8B4DB28C99"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "53B9C726DD479B51"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/ev"
+					}
+				}
+				title: "Any #gtceu:circuits/ev"
+				type: "item"
+			}]
+			title: "EV Circuits"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3F216049FBBB4E36"
+				"383AF0F983B15CA1"
+				"605B92FDF74E3140"
+				"13E85F25A122FF1F"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Circuits along this line are IV, and can all be substituted in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+			]
+			icon: "gtceu:iv_machine_hull"
+			id: "2179B83440CEF343"
+			tasks: [{
+				id: "4FBA73EEA5437DC6"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/iv"
+					}
+				}
+				title: "Any #gtceu:circuits/iv"
+				type: "item"
+			}]
+			title: "IV Circuits"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2D757C34B8CC82D4"
+				"6F3D0400845E43F9"
+				"4BFE00ABA1FF6678"
+				"1E121286E4EFBB97"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Circuits along this line are LuV, and can all be substituted in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+				""
+				"Make sure to set up the wetware board production as soon as possible! These take a very long time to make."
+				""
+				"It's LuV, not LUV."
+			]
+			icon: "gtceu:luv_machine_hull"
+			id: "536CEDA3142BCE63"
+			tasks: [{
+				id: "42DE11F1A04B0B97"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/luv"
+					}
+				}
+				title: "Any #gtceu:circuits/luv"
+				type: "item"
+			}]
+			title: "LuV Circuits"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7A103C8708F3B716"
+				"16139ABAE30BF117"
+				"0F612EAA83D23F9B"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Circuits along this line are ZPM, and can all be substituted in recipes."]
+			disable_toast: true
+			icon: "gtceu:zpm_machine_hull"
+			id: "0472A05CFBF4A2F0"
+			tasks: [{
+				id: "29F9B9784EDCAC70"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/zpm"
+					}
+				}
+				title: "Any #gtceu:circuits/zpm"
+				type: "item"
+			}]
+			title: "ZPM Circuits"
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"6588C68DE6973BCC"
+				"5EE23A29090BD374"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Circuits along this line are UV, and can both be substituted in recipes."]
+			icon: "gtceu:uv_machine_hull"
+			id: "519A11FDC6A7EF21"
+			tasks: [{
+				id: "5D3D61A04CC17374"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/uv"
+					}
+				}
+				title: "Any #gtceu:circuits/uv"
+				type: "item"
+			}]
+			title: "UV Circuits"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["619D94FE1D9834FA"]
+			description: [
+				"Congratulations! You've reached the end of the circuit progression."
+				""
+				"The only UHV circuit is the &6Wetware Mainframe&r, which is used for crafting high-tier micro miners among some endgame stuff."
+			]
+			icon: "gtceu:uhv_machine_hull"
+			id: "0C50D78D8F63CAFE"
+			tasks: [{
+				id: "23886E0727C34288"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/uhv"
+					}
+				}
+				title: "Any #gtceu:circuits/uhv"
+				type: "item"
+			}]
+			title: "UHV Circuit...s?"
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["077AA27F26B7831F"]
+			description: [
+				"&oNote: this quest accepts a Power Unit of any voltage (LV, MV, HV, EV \\& IV).&r"
+				""
+				"With &bGregTech &6Power Storage&r unlocked, you can make &aPower Units&r for electric GT tools."
+				""
+				"Check if that tool has that tier first! &6Drills&r are available at all tiers, the &6Wrench&r is available at &7LV&r, &6HV&r and &1IV&r, and the other electric tools, such as &6Chainsaws&r and &6Screwdrivers&r are only available at &7LV&r. "
+				""
+				"&2A new addition among them is the Drill, which at LV tier can mine a 3x3x1 area of blocks, and at MV tier can mine a 3x3x3 area of blocks."
+				""
+				"Higher tier drills can mine 5x5x5, 7x7x7 and 9x9x9 areas! Shift-right-click to change the breaking area.&r"
+				""
+				"Charge these with a &6Battery&r of appropriate tier, or in an appropriately tiered &3Machine&r, &3Battery Buffer&r or &3Turbo Charger&r. "
+				""
+				"You may want to look into &6Chainsaws&r for mass tree felling as well, or a &6Wrench&r, for breaking machines very quickly. The other electric tools are probably not worth making."
+			]
+			id: "2280472741683581"
+			tasks: [{
+				id: "028CED757315461B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_power_unit"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_power_unit"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_power_unit"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_power_unit"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_power_unit"
+							}
+						]
+					}
+				}
+				title: "Any Power Unit"
+				type: "item"
+			}]
+			title: "GregTech Electric Tools"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: ["Carry stuff."]
+			disable_toast: true
+			id: "3270496124969A51"
+			tasks: [{
+				id: "204DF036220B3222"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "&9Backpack"
+			x: 7.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0A9BC922CF76F48A"]
+			description: ["Carry &3&l&o&neven more&r stuff."]
+			disable_toast: true
+			id: "6DEA5CE28A667453"
+			tasks: [{
+				id: "12C73A9D54273F41"
+				item: "sophisticatedbackpacks:netherite_backpack"
+				type: "item"
+			}]
+			title: "&9Resonant Backpack"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7DB174443D7FAFA0"
+				"1CC092A2F2CD4589"
+				"14F1FF4656693711"
+				"55074143B559493F"
+			]
+			description: [
+				"The final tier of Integral Components!"
+				""
+				"Dynamos operate at &a1000% of base power generation and fuel burn rate&r."
+				""
+				"Machines operate at &a1000% of base speed&r."
+			]
+			disable_toast: true
+			id: "15B1277EF8657C65"
+			rewards: [{
+				id: "790D1FEAB25D4ACD"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "445CD99C82559395"
+				item: "thermal:upgrade_augment_3"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3F6EDC2481D5877F"
+				"3270496124969A51"
+			]
+			description: ["Carry &oeven more&r stuff."]
+			icon: {
+				Count: 1b
+				id: "sophisticatedbackpacks:iron_backpack"
+				tag: {
+					contentsUuid: [I;
+						890972236
+						1590249428
+						-1212807776
+						575640463
+					]
+					inventorySlots: 54
+					upgradeSlots: 2
+				}
+			}
+			id: "1F976B197DEFF654"
+			tasks: [{
+				id: "7F9D573211B5B2FB"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:iron_backpack"
+					tag: {
+						contentsUuid: [I;
+							890972236
+							1590249428
+							-1212807776
+							575640463
+						]
+						inventorySlots: 54
+						upgradeSlots: 2
+					}
+				}
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "&9Hardened Backpack"
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"3AB0402B19DD5BA8"
+				"1F976B197DEFF654"
+			]
+			description: ["Carry &o&leven more&r stuff."]
+			disable_toast: true
+			id: "503CA19637471E6E"
+			tasks: [{
+				id: "7AE450006E9274BE"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:gold_backpack"
+					tag: {
+						contentsUuid: [I;
+							-2079088966
+							795101541
+							-1099241216
+							-1042767112
+						]
+						inventorySlots: 81
+						upgradeSlots: 3
+					}
+				}
+				type: "item"
+			}]
+			title: "&9Reinforced Backpack"
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"27A80F018F59EF1E"
+				"503CA19637471E6E"
+			]
+			description: ["Carry &l&o&neven more&r stuff."]
+			disable_toast: true
+			id: "0A9BC922CF76F48A"
+			shape: "square"
+			tasks: [{
+				id: "76D574F61E10C5A2"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:diamond_backpack"
+					tag: {
+						contentsUuid: [I;
+							1998719540
+							-2126561006
+							-1970026112
+							791982398
+						]
+						inventorySlots: 108
+						upgradeSlots: 5
+					}
+				}
+				type: "item"
+			}]
+			title: "&9Signalum Backpack"
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["025543EDB0A4AC22"]
+			description: [
+				"Upgrade kits can be applied to Thermal Expansion Dynamos, machines, and even Portable Tanks. Machines and dynamos get additional augment slots."
+				""
+				"When applied to a dynamo, it increases the &apower generation and fuel burn rate to 150%&r."
+				""
+				"Allows machines operate at &a150% of base power per tick&r. The more power a machine can use, the faster it works."
+			]
+			disable_toast: true
+			id: "126ED4A0AEA05DCD"
+			rewards: [{
+				id: "48105C59C4C73BF9"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "&6STEAM DYNAMO&r is evolving!"
+			tasks: [{
+				id: "78E3752A857221D8"
+				item: "thermal:upgrade_augment_1"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 9.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["126ED4A0AEA05DCD"]
+			description: [
+				"Same deal as Hardened Components, but even faster."
+				""
+				"Dynamos operate at &a250% of base power generation and fuel burn rate&r."
+				""
+				"Machines operate at &a250% of base speed&r."
+			]
+			disable_toast: true
+			id: "5CFBAB5F83E33064"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "5A83B44B86BFE10C"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"54C3B1B782FDF57F"
+				"27A80F018F59EF1E"
+				"5CFBAB5F83E33064"
+			]
+			description: [
+				"Having unlocked &6Signalum&r, at long last you can make &aSignalum Integral Components&r!"
+				""
+				"Dynamos operate at &a500% of base power generation and fuel burn rate&r."
+				""
+				"Machines operate at &a500% of base speed&r."
+			]
+			disable_toast: true
+			id: "55074143B559493F"
+			shape: "square"
+			tasks: [{
+				id: "22B125A4AD3E034B"
+				item: "thermal:upgrade_augment_4"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3EDD0A986384F2A7"]
+			description: [
+				"Now that you have a &3Wiremill&f and a &2Bending Machine&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &9Monicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
+				""
+				"With renewable &9Monicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "3418E5AB8FEEB34C"
+			size: 1.0d
+			tasks: [{
+				id: "2AF929CAA963A2A2"
+				item: "bountiful:bountyboard"
+				type: "item"
+			}]
+			title: "&2Bounties For Monicoins!"
+			x: 11.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Holding one of these reveals &aTravel Anchors&r and &aTelepads&r in range."
+				""
+				"Shift + right-click after aiming to warp to one, or point it anywhere to teleport forward a short distance (works through walls)."
+				""
+				"These are powered with RF, and can be further enchanted through &bEnderIO&r's enchanting mechanics."
+				""
+				"The &6Vibrant Crystal&r will require an &3Autoclave&r."
+			]
+			id: "49BEBA1632D41E18"
+			tasks: [{
+				id: "62FF9717DD8EE67D"
+				item: {
+					Count: 1b
+					id: "enderio:staff_of_travelling"
+					tag: {
+						Energy: {
+							EnergyStored: 100000
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"4F572CA3678CB287"
+				"5B07A88C0BFF6586"
+			]
+			description: [
+				"This is your first Micro Miner ever. &2You'll need that Phosphorous in the LV Field Generators.&r"
+				"Yes, not the last: these things aren't reusable."
+				""
+				"This one can get you:"
+				"&6* Dense Iron Ore"
+				"* Cassiterite Ore"
+				"* Redstone Ore"
+				"* Nickel Ore"
+				"&2* Imenite Ore&r"
+				"&6* Uraninite Ore"
+				"* Galena Ore"
+				"&2* Molybdenum Ore&r"
+				"&6* Moon Turf"
+				"* Dilithium"
+				"* Salt Ore&r"
+				""
+				"When equipped with a Gemstone Sensor (which may currently not be available to you yet):"
+				"&2* Perfect Diamond"
+				"&6* Apatite Ore"
+				"* Tricalcium Phosphate Ore"
+				"* Quartzite Ore&r"
+				""
+				"Can also be used to bring &bStellar Creation Data&r, but less efficiently than the Tier Two."
+			]
+			disable_toast: true
+			id: "0BBFE430F25449D4"
+			shape: "square"
+			size: 1.2d
+			tasks: [{
+				id: "5826A3E97E91E6FE"
+				item: "kubejs:microminer_t1"
+				type: "item"
+			}]
+			title: "&2First Foray Into The Microverse"
+			x: 18.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["397DB20B979BC714"]
+			description: [
+				"The Second Micro Miner! &2You'll need that Phosphorous in the LV Field Generators.&r"
+				""
+				"&9Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
+				""
+				"This Micro Miner can get you:&6"
+				"&6* Bauxite Ore"
+				"&2* Pyrochlore Ore&6"
+				"&6* Copper Ore"
+				"&2* Sphalerite Ore&r"
+				"&6* Cassiterite Ore"
+				"&6* Scheelite Ore"
+				"&6* Tungstate Ore"
+				"&6* Radium Salt&r"
+				""
+				"As well as the &6Stellar Creation Data&r, which will be useful much, much later."
+				""
+				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, as of the useful byproducts you get, and the tiny amount of each element you get in this mission."
+			]
+			disable_toast: true
+			id: "472AEEB068D18244"
+			shape: "square"
+			size: 1.2d
+			tasks: [{
+				id: "0772040FEF57AEEF"
+				item: "kubejs:microminer_t2"
+				type: "item"
+			}]
+			title: "&9Tier Two Micro Miner"
+			x: 18.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7E9DF1139829C78B"]
+			description: [
+				"The Third Micro Miner. &2You'll need that Boron in the MV Field Generators.&r"
+				""
+				"This one can get you:"
+				"&6* Scheelite Ore"
+				"&6* Tungstate Ore"
+				"&2* Ilmenite Ore&6"
+				"&6* Vanadium Magnetite Ore"
+				"&6* Tetrahedrite Ore"
+				"&6* Cassiterite Ore"
+				"&6* Tin Ore"
+				"&6* Redstone Ore"
+				"&6* Certus Quartz Ore"
+				"&6* Almandine Ore"
+				"&6* Lepidolite Ore&r"
+				""
+				"When equipped with Gemstone Sensor:"
+				"&2* Perfect Diamonds"
+				"&6* Perfect Rubies"
+				"&6* Perfect Topaz"
+				"&6* Perfect Emeralds"
+				"&6* Sapphire Ore"
+				"&6* Silver Ore"
+				"&6* Gold Ore"
+			]
+			disable_toast: true
+			id: "38BC2580D6D4546A"
+			shape: "square"
+			size: 1.2d
+			tasks: [{
+				id: "2583D472B3FD5C15"
+				item: "kubejs:microminer_t3"
+				type: "item"
+			}]
+			title: "&2Tier Three Micro Miner"
+			x: 18.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7D39A4D0CC886796"
+				"27B3EB82ED638620"
+				"52F1953ED72A8AA6"
+				"77582C534A994D7C"
+			]
+			description: [
+				"The Fourth Micro Miner."
+				""
+				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Petrotheum Dust&r."
+				""
+				"This miner is the first convenient source of &6Osmium&r and &6Iridium&r, via a mission requiring &6Wither Realm Data&r."
+				""
+				"A &6Composition Sensor&r instead directs the miner to obtain &6Dense Oilsands Ore&r, equivalent to &232&r stacks of &6End Oilsands Ore&r, and 32 &6Compressed Infinity Dust Blocks&r, equivalent to 2592 &6Infinity Dust&r."
+				""
+				"When equipped with a &6Gemstone Sensor&r:"
+				"&6* Dense Lapis Ore"
+				"* Dense Diamond Ore"
+				"* Dense Coal Ore"
+				"* Dense Emerald Ore"
+				"* Dense Redstone Ore&r"
+			]
+			disable_toast: true
+			id: "41ACC0937AA9D1E3"
+			shape: "square"
+			size: 1.4d
+			tasks: [{
+				id: "176FA720198D8858"
+				item: "kubejs:microminer_t4"
+				type: "item"
+			}]
+			title: "Tier Four Micro Miner"
+			x: 18.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F8B4DCE7C340418"]
+			description: [
+				"The only source of &6Naquadah &2Ore&r. Along with it, &2Sheldonite Ore&r (for &6PGS&r) and &2Kaemanite Ore&r (for &6Trinium&r), via a mission with &6Stabilized Plutonium&r."
+				""
+				"When provided with &6Stabilized Uranium&r, brings:"
+				"&2* Uraninite Ore&6"
+				"* Palladium Ore"
+				"&2* Realgar Ore"
+				"&6* Bastnasite Ore"
+				"* Sphalerite Ore"
+				"* Monazite Ore"
+				"&2* Enderpearl Blocks"
+				"* Osmiridium 80/20 Ore"
+				"&6* Boron Dust"
+				"* Molybdenite Ore"
+				"* Beryllium Ore"
+			]
+			disable_toast: true
+			id: "45F67FCB190EDF9D"
+			shape: "square"
+			size: 1.4d
+			tasks: [{
+				id: "510AE2417F5495F5"
+				item: "kubejs:microminer_t5"
+				type: "item"
+			}]
+			title: "&2Tier Five Micro Miner"
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4F2A97487AE923CE"]
+			description: [
+				"The first decent source of &6Dragon Eggs&r and &6Stabilized Einsteinium&r."
+				""
+				"Is also useful for:"
+				"&2* Uraninite Ore"
+				"* Iridosmine 80/20 Ore"
+				"* Osmiridium 80/20 Ore"
+			]
+			disable_toast: true
+			id: "3610B7A42E7710C1"
+			shape: "square"
+			size: 1.4d
+			tasks: [{
+				id: "2A2D25257CE7EFFF"
+				item: "kubejs:microminer_t6"
+				type: "item"
+			}]
+			title: "&2Tier Six Micro Miner"
+			x: 18.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2358A5CF22FF5495"
+				"7E3A179376673590"
+				"0B6196692F9E176D"
+			]
+			description: [
+				"The source of &6Dragon Hearts&r and the valuable &6Lair of The Chaos Guardian Data&r."
+				""
+				"As a bonus, brings &6Dragon Eggs, Dragon's Breath, Ender Dragon Scales&r, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+			]
+			disable_toast: true
+			id: "66BD8FA2507509A9"
+			shape: "square"
+			size: 1.4d
+			tasks: [{
+				id: "76BD3C96F092EDC4"
+				item: "kubejs:microminer_t7"
+				type: "item"
+			}]
+			title: "&2Tier Seven Micro Miner"
+			x: 18.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2358A5CF22FF5495"
+				"7E3A179376673590"
+				"56EFA6A07C7291F7"
+				"6391447F1A411281"
+			]
+			description: [
+				"The main source of &6Chaos Shards&r."
+				""
+				"The other mission gives negligible amounts of &6Neutronium&r and some other moderately useful things, but you're better off making Neutronium in the &3Fusion Reactor Mark 3&r&r and the other items are otherwise craftable."
+			]
+			disable_toast: true
+			id: "61DE92B5E822027F"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "7140C1B7FF5795BE"
+				item: "kubejs:microminer_t8"
+				type: "item"
+			}]
+			title: "Tier Eight Micro Miner"
+			x: 18.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"57D9FA04817CB92F"
+				"619D94FE1D9834FA"
+				"6ABD83B58FADD4DF"
+				"483652BAEF59E125"
+			]
+			description: [
+				"Combines &bStellar Creation Data&r into the &9Universe Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
+				""
+				"The alternate mission brings a decent quantity of &6Neutronium&r. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
+			]
+			disable_toast: true
+			id: "206B8889A4A22C26"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "18BCE52F27AB5682"
+				item: "kubejs:microminer_t9"
+				type: "item"
+			}]
+			title: "Tier Nine Micro Miner"
+			x: 18.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["22DC32C2B67EFD25"]
+			description: [
+				"You have become Death, destroyer of Universes."
+				""
+				"Might probably be obvious, but this miner gathers a &6Heart of a Universe&r."
+			]
+			disable_toast: true
+			id: "2C7576660329BA8E"
+			size: 2.0d
+			tasks: [{
+				id: "70F5B6D1402BA780"
+				item: "kubejs:microminer_t10"
+				type: "item"
+			}]
+			title: "Tier Ten Micro Miner"
+			x: 18.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"061904A6FEED5B66"
+				"776199B37A19A592"
+				"09A389EC37805A0A"
+				"1BC6DDC2D50F9C46"
+			]
+			description: [
+				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Kanthal Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Chemical Bath&r or &3Vacuum Freezer&r."
+				""
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Ore Dictionary Filter&r set to 'ingotHot*' with a high piority."
+			]
+			disable_toast: true
+			id: "4005450FC9363880"
+			shape: "hexagon"
+			tasks: [{
+				id: "50568E831EF9268A"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			title: "Kanthal Ingots"
+			x: 15.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4005450FC9363880"]
+			description: [
+				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
+				""
+				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Copper fluid&r."
+				""
+				"&2In CEu, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &9temperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%%&r energy."
+				""
+				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
+			]
+			disable_toast: true
+			id: "573B0EF472FDF0B1"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "01EAB6614DAA1668"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			title: "&2Kanthal Coil Blocks"
+			x: 13.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["573B0EF472FDF0B1"]
+			description: [
+				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+			]
+			disable_toast: true
+			id: "3D1FD5A875C83E2E"
+			shape: "hexagon"
+			tasks: [{
+				id: "12B4070530B5921C"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			title: "Nichrome Ingots"
+			x: 15.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3D1FD5A875C83E2E"]
+			description: [
+				"&6Nichrome&r is the third coil material available, increasing your EBF's operating temperature to 3600K so it can process more advanced materials."
+				""
+				"Notice that an &6HV&r &3Assembler&r is required to make them. Each tier of coil requires their tier of Assembler - we won't remind you again."
+				""
+				"&93600K&r is now also hot enough to grant a single &9100%% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
+				""
+				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at HV. Once you upgrade your EBF to EV power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to &6Nichrome&r once you can afford it. "
+				""
+				"Later coils will give similar bonuses. Additionally, the EBF's temperature will increase by &9100K&r for each voltage tier above MV, which could make a difference for future materials."
+			]
+			disable_toast: true
+			id: "4133AC6062B00994"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "6CDDC82BC4DD8A3B"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			title: "&2Nichrome Coil Blocks"
+			x: 13.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"3B3F46345D39CAE2"
+				"4133AC6062B00994"
+			]
+			description: [
+				"&6RTM Alloy&r is an alloy of &6Ruthenium&r, &6Tungsten&r and &6Molybdenum&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+			]
+			disable_toast: true
+			id: "5D0A642048AF909B"
+			shape: "hexagon"
+			tasks: [{
+				id: "1B62381FBD08C4A9"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			title: "&9RTM Alloy"
+			x: 15.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5D0A642048AF909B"]
+			description: [
+				"&6RTM Alloy&r is the fourth coil material available, increasing your EBF's operating temperature to 4500K so it can process more advanced materials."
+				""
+				"&9In Monifactory, RTM Alloy replaces tungstensteel in coil progression."
+			]
+			disable_toast: true
+			id: "6DC635766CD40FFF"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "7C94792375FF4CAB"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			title: "&9RTM Alloy Coil Blocks"
+			x: 13.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6DC635766CD40FFF"]
+			description: [
+				"&6HSS-G&r is an alloy of &6Tungstensteel&r, &6Chrome&r, &6Molybdenum&r, and &6Vanadium&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+			]
+			disable_toast: true
+			id: "437027889A4C8801"
+			shape: "hexagon"
+			tasks: [{
+				id: "4F147EFD4ABB7B37"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			title: "High Speed Steel Type G"
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"14F1FF4656693711"
+				"437027889A4C8801"
+			]
+			description: ["&6HSS-G&r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials, such as &6Naquadah&r."]
+			disable_toast: true
+			id: "1D8E5D1C2C865D32"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "16EA280697B0E8FB"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			title: "HSS-G Coil Blocks"
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1D8E5D1C2C865D32"
+				"45F67FCB190EDF9D"
+				"745628397790ED7A"
+			]
+			description: [
+				"An otherworldly material exclusive to Microverses, &6Naquadah&r is an important material in the late game."
+				""
+				"It can be alloyed and enriched to various forms, and is the eventual source of &6Neutronium&r in a &3Mark Three Fusion Reactor&r."
+			]
+			disable_toast: true
+			id: "74EB55B2657624B2"
+			shape: "hexagon"
+			tasks: [{
+				id: "45C807FE59139B86"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "Naquadah Ingots"
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["74EB55B2657624B2"]
+			description: [
+				"&6Naquadah&r is the sixth coil material available, increasing your EBF's operating temperature to 7200K so it can process more advanced materials."
+				""
+				"&2You cannot skip a coil material anymore."
+			]
+			disable_toast: true
+			id: "753182760993B187"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "7090280792B3E871"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			title: "Naquadah Coil Blocks"
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"753182760993B187"
+				"0508D3CCB6C876A3"
+			]
+			description: [
+				"&2A strong heavy element obtained from the Naquadah chain."
+				""
+				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &91 Trinium per 6 Naquadah processed&r."
+				""
+				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, &6Naquadah Alloy&r, among other things. You will need 14 stacks at least for a &3Fusion Reactor Mk1&r, so stock up on it."
+			]
+			disable_toast: true
+			id: "4CA5BA3F11169D79"
+			shape: "hexagon"
+			tasks: [{
+				id: "33E64510588C3E95"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			title: "&2Trinium"
+			x: 15.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"41FA85A3920EB334"
+				"4CA5BA3F11169D79"
+			]
+			description: ["&2Trinium Coils&r are the eight coiil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."]
+			disable_toast: true
+			id: "4FEF99FCFEC947C9"
+			shape: "hexagon"
+			subtitle: "Holy crap it's that thing from the boxart"
+			tasks: [{
+				count: 16L
+				id: "6A640F26EE3EBE97"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			title: "&2Trinium Coils"
+			x: 13.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"069773756716E192"
+				"4FEF99FCFEC947C9"
+			]
+			description: [
+				"&2Doesn't look exactly like Europium anymore.&r"
+				""
+				"To make &9Tritanium&r, you first need to make &9Duranium&r. This is done by fusing molten &9Gallium&r and &9Radon&r in a &3Fusion Reactor Mark 1&r or better."
+				""
+				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor Mark 2&r using the Duranium and molten &9Titanium&r."
+				""
+				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into the &aCrafting Calculator&r."
+			]
+			disable_toast: true
+			id: "46CD6750E8963351"
+			shape: "hexagon"
+			tasks: [{
+				id: "2060C3BEBD46E3DD"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			title: "&2Tritanium Ingot"
+			x: 15.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["46CD6750E8963351"]
+			description: ["&2Tritanium Coils are the final coil material. At 10800K, it's capable of smelting every material."]
+			disable_toast: true
+			id: "23A57C125DC0F948"
+			shape: "hexagon"
+			tasks: [{
+				id: "588ABC7B3A040B2E"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			title: "&2Tritanium Coils"
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["06E9B9DDDB245F38"]
+			description: [
+				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
+				""
+				"There's also a quest chain for &bEnderIO&r Jetpacks (starting with the &6Conductive Iron Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
+				""
+				"If the &6Jetpack&r overview and information from &bThe One Probe&r conflict, The One Probe may be moved using &6/topcfg&r."
+			]
+			disable_toast: true
+			id: "712023557B5B1812"
+			subtitle: "Being able to fly is pretty sick. It's also pretty expensive."
+			tasks: [{
+				id: "0AEBB08D9E593A5B"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:leadstone"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7842EC1C389C4B7E"]
+			description: [
+				"Being able to fly is nice. This is the first jetpack that uses &bEnderIO&r materials."
+				""
+				"There's also a quest chain for &bThermal Expansion&r material Jetpacks (starting with the &6Leadstone Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
+			]
+			disable_toast: true
+			id: "6ABF927014F8B79D"
+			tasks: [{
+				id: "31C521D0A2BB2C03"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:conductive_iron"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"64F45D98FA48D834"
+				"6ABF927014F8B79D"
+			]
+			description: ["Flying faster is nice."]
+			disable_toast: true
+			id: "7B1D349ADD9D1140"
+			tasks: [{
+				id: "201BBD5AAF78AE0C"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:electrical_steel"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Ironman 2"
+			x: 10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"0607A59215F0F8B3"
+				"7B1D349ADD9D1140"
+			]
+			description: ["Flying faster, even nicer."]
+			disable_toast: true
+			id: "15A43AB700CADF2D"
+			rewards: [{
+				id: "3D990FB80B9FA05C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "7F66940735049C04"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:energetic"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Ironman 3"
+			x: 10.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"1CA6D620309F2B9E"
+				"3BD20358F137E7C6"
+				"712023557B5B1812"
+			]
+			description: ["Better flying."]
+			disable_toast: true
+			id: "4542BF5E00FCBEA1"
+			tasks: [{
+				id: "60D1C9D97E874348"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:hardened"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4542BF5E00FCBEA1"]
+			description: [
+				"Even better flying."
+				""
+				"You're not getting up to Resonant for a long time, just FYI."
+			]
+			disable_toast: true
+			id: "2D46EC96DB37ED8A"
+			tasks: [{
+				id: "25694A15F26F5483"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:reinforced"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"1349044BF8C04A12"
+				"15A43AB700CADF2D"
+			]
+			description: ["Give me a little juice, FRIDAY!"]
+			disable_toast: true
+			id: "1FE8D35B4A5BFA16"
+			tasks: [{
+				id: "47722FD59AD2C4E3"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:vibrant"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Infinity War"
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"1FE8D35B4A5BFA16"
+				"2D46EC96DB37ED8A"
+			]
+			description: [
+				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
+				""
+				"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in the next jetpack, so if you want that you'll need to make one eventually."
+			]
+			disable_toast: true
+			id: "2923E98849358E16"
+			subtitle: "I'm running out of MCU puns."
+			tasks: [{
+				id: "1E1C020C525B7F47"
+				item: "miniutilities:angel_ring"
+				type: "item"
+			}]
+			title: "&9Captain... Marvel? IDK"
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7A65459E4DFAAC2D"
+				"2923E98849358E16"
+			]
+			description: ["This is the flight of our lives."]
+			disable_toast: true
+			id: "5EE4F76D1F237A13"
+			shape: "square"
+			tasks: [{
+				id: "798E10A74B24D6B4"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:dark_soularium"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Endgame"
+			x: 12.0d
+			y: -2.5d
+		}
+	]
+	title: "Progression"
+}

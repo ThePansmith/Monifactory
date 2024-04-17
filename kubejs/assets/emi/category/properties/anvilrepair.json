@@ -1,0 +1,7 @@
+{
+    "emi:anvil_repairing": {
+      "icon": {
+        "stack": "item:minecraft:book"
+      }
+    }
+  }

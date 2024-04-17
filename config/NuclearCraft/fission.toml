@@ -1,0 +1,97 @@
+
+#Settings for reactor fuel
+[reactor_fuel]
+	#Heat multiplier for boiling reactor.
+	heat_multiplier = 3.24444444
+	#Depletion multiplier. Affects how long fuel lasts.
+	#Range: 0.0 ~ 1000.0
+	depletion_multiplier = 100.0
+	#Base Fuel Heat: len-236, lep-241, mix-239, leb-248, tbu, lea-242, lecm-245, hecf-251, lecm-247, hep-241, hecm-245, mix-241, hecm-247, lep-239, hen-236, lecm-243, hecm-243, leu-233, leu-235, hea-242, lecf-251, lecf-249, heb-248, heu-235, heu-233, hecf-249, hep-239
+	base_heat = [45.0, 87.5, 71.875, 65.0, 22.5, 117.5, 85.0, 900.0, 67.5, 525.0, 510.0, 121.875, 405.0, 50.0, 270.0, 140.0, 840.0, 75.0, 62.5, 705.0, 150.0, 145.0, 390.0, 375.0, 450.0, 870.0, 300.0]
+	#Base Fuel Efficiency: len-236, lep-241, mix-239, leb-248, tbu, lea-242, lecm-245, hecf-251, lecm-247, hep-241, hecm-245, mix-241, hecm-247, lep-239, hen-236, lecm-243, hecm-243, leu-233, leu-235, hea-242, lecf-251, lecf-249, heb-248, heu-235, heu-233, hecf-249, hep-239
+	base_efficiency = [104, 119, 100, 157, 119, 128, 142, 176, 147, 123, 147, 109, 152, 142, 109, 138, 142, 104, 95, 133, 171, 166, 161, 100, 109, 171, 138]
+	#Base Fuel Depletion Time (seconds): len-236, lep-241, mix-239, leb-248, tbu, lea-242, lecm-245, hecf-251, lecm-247, hep-241, hecm-245, mix-241, hecm-247, lep-239, hen-236, lecm-243, hecm-243, leu-233, leu-235, hea-242, lecf-251, lecf-249, heb-248, heu-235, heu-233, hecf-249, hep-239
+	base_depletion = [89, 143, 198, 98, 654, 67, 109, 90, 98, 143, 109, 137, 98, 208, 89, 68, 68, 120, 218, 83, 90, 48, 83, 218, 120, 48, 208]
+	#Fuel Criticality: len-236, lep-241, mix-239, leb-248, tbu, lea-242, lecm-245, hecf-251, lecm-247, hep-241, hecm-245, mix-241, hecm-247, lep-239, hen-236, lecm-243, hecm-243, leu-233, leu-235, hea-242, lecf-251, lecf-249, heb-248, heu-235, heu-233, hecf-249, hep-239
+	base_criticallity = [77, 92, 103, 80, 257, 71, 82, 38, 79, 46, 40, 88, 39, 108, 38, 72, 36, 85, 112, 35, 78, 66, 35, 56, 42, 33, 53]
+
+#Settings for heat sinks
+[heat_sink]
+	#Cooling rate H/t: prismarine, aluminum, manganese, glowstone, netherite, slime, gold, liquid_nitrogen, lithium, carobbiite, enderium, end_stone, tin, copper, fluorite, lapis, obsidian, purpur, cryotheum, villiaumite, magnesium, quartz, arsenic, liquid_helium, nether_brick, water, lead, diamond, iron, silver, boron, emerald, redstone
+	cooling_rate = [115.0, 175.0, 150.0, 130.0, 150.0, 145.0, 120.0, 185.0, 130.0, 140.0, 120.0, 40.0, 120.0, 80.0, 160.0, 120.0, 40.0, 95.0, 160.0, 180.0, 110.0, 90.0, 135.0, 140.0, 70.0, 60.0, 60.0, 150.0, 80.0, 170.0, 160.0, 160.0, 90.0]
+	#You can define blocks by block_name. So water_heat_sink will fall back to nuclearcraft:water_heat_sink. Or qualify it with namespace like some_mod:some_block.
+	#Or use block tag key. #nuclearcraft:fission_reactor_casing will fall back to blocks with this tag. Do not forget to put #.
+	#if you need AND condition, add comma separated values "block1", "block2" means AND condition
+	#if you need OR condition, use | separator. "block1|block2" means block1 or block2
+	#By default you have rule condition is 'At least 1'. So if you define some block, it will go in the rule as 'at least 1'
+	#Validation options: >2 means at least 2 (use any number)
+	#-2 means between, it is always 2 (opposite sides)
+	#<2 means less than 2 (use any number)
+	#=2 means exact 2 (use any number)
+	#^3 means 3 blocks in the corner (shared vertex or edge). possible values 2 and 3
+	#Default placement rules have all examples
+	placement_explanations = ""
+	prismarine = ["water_heat_sink"]
+	aluminum = ["quartz_heat_sink", "lapis_heat_sink"]
+	manganese = ["fission_reactor_solid_fuel_cell>2"]
+	glowstone = ["#nuclearcraft:moderators>2"]
+	netherite = ["obsidian_heat_sink", "fission_reactor_irradiation_chamber"]
+	slime = ["water_heat_sink", "lead_heat_sink"]
+	gold = ["water_heat_sink", "redstone_heat_sink"]
+	liquid_nitrogen = ["copper_heat_sink", "purpur_heat_sink"]
+	lithium = ["lead_heat_sink-2"]
+	carobbiite = ["end_stone_heat_sink", "fission_reactor_irradiation_chamber"]
+	enderium = ["#nuclearcraft:fission_reactor_casing^3"]
+	end_stone = ["enderium_heat_sink"]
+	tin = ["lapis_heat_sink-2"]
+	copper = ["glowstone_heat_sink"]
+	fluorite = ["gold_heat_sink", "prismarine_heat_sink"]
+	lapis = ["fission_reactor_solid_fuel_cell", "#nuclearcraft:fission_reactor_casing"]
+	obsidian = ["glowstone_heat_sink-2"]
+	purpur = ["#nuclearcraft:fission_reactor_casing", "iron_heat_sink"]
+	cryotheum = ["fission_reactor_solid_fuel_cell>2"]
+	villiaumite = ["redstone_heat_sink", "end_stone_heat_sink"]
+	magnesium = ["#nuclearcraft:fission_reactor_casing", "#nuclearcraft:moderators"]
+	quartz = ["#nuclearcraft:moderators"]
+	arsenic = ["#nuclearcraft:moderators>3"]
+	liquid_helium = ["redstone_heat_sink", "#nuclearcraft:fission_reactor_casing"]
+	nether_brick = ["obsidian_heat_sink"]
+	water = ["fission_reactor_solid_fuel_cell|#nuclearcraft:moderators"]
+	lead = ["iron_heat_sink"]
+	diamond = ["copper_heat_sink", "quartz_heat_sink"]
+	iron = ["gold_heat_sink"]
+	silver = ["glowstone_heat_sink>2", "tin_heat_sink|fission_reactor_irradiation_chamber"]
+	boron = ["quartz_heat_sink", "#nuclearcraft:fission_reactor_casing|#nuclearcraft:moderators"]
+	emerald = ["fission_reactor_solid_fuel_cell", "#nuclearcraft:moderators"]
+	redstone = ["fission_reactor_solid_fuel_cell"]
+
+#Settings for Fission Reactor
+[fission_reactor]
+	#Reactor min size.
+	#Range: 3 ~ 24
+	min_size = 3
+	#Reactor max size.
+	#Range: 5 ~ 24
+	max_size = 24
+	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
+	#Range: 0.0 ~ 20.0
+	reactor_explosion_radius = 4.0
+	#How much reactor may collect heat before meltdown.
+	#Range: 1000.0 ~ 1.0E8
+	heat_capacity = 1000000.0
+	#Affects how relation of reactor cooling and heating affects to FE generation.
+	#Range: 0.01 ~ 20.0
+	heat_multiplier = 1.0
+	#Limit for heat_multiplier max value.
+	#Range: 0.01 ~ 3.0
+	heat_multiplier_cap = 3.0
+	#Each attachment of moderator to fuel cell will increase fuel FE generation by given percent value.
+	#Range: 0.0 ~ 1000.0
+	moderator_fe_multiplier = 16.67
+	#Each attachment of moderator to fuel cell will increase fuel heat generation by given percent value.
+	#Range: 0.0 ~ 1000.0
+	moderator_heat_multiplier = 33.34
+	#Rate at which steam recipes produced.
+	#Range: 0.01 ~ 1000000.0
+	boiling_mult = 5.0
+

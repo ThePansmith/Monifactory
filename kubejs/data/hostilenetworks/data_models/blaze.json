@@ -1,0 +1,30 @@
+{
+    "entity": "minecraft:blaze",
+    "name": "entity.minecraft.blaze",
+    "name_color": "#00FFFFFF",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.blaze",
+    "fabricator_drops": [{
+            "item": "minecraft:blaze_rod",
+            "count": 10
+        },
+        {
+            "item": "gtceu:sulfur_dust",
+            "count": 32
+        },
+        {
+            "item": "minecraft:magma_block",
+            "count": 32
+        }
+    ]
+}

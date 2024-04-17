@@ -1,0 +1,95 @@
+
+#General settings
+[General]
+	#Defines if the pastries should be immune to explosions [default: false]
+	explosionImmune = false
+	#Defines if the pastry usage requires hunger, when set to true it ignores hunger [default: false]
+	ignoreHunger = true
+	#Disable placement of non-overworld cakes in dimensions that aren't the overworld (Meaning you can't go from the nether straight to the end) [default: true]
+	disableHopping = false
+	#Defines if the pastry teleportation point can be reset with a milk bucket [default: false]
+	resetPastry = false
+	#Defines the item needed to reset the pastry teleportation point [default: minecraft:milk_bucket]
+	resetItems = ["minecraft:milk_bucket"]
+
+#Nether settings
+[Nether]
+	#Defines if the Nether Cake gets partly consumed when eaten [default: true]
+	consumeNetherCake = true
+	#Set the refill items used by Nether Cake (Only change if you know what you're doing) [modid:itemname].
+	netherCakeRefillItems = ["minecraft:obsidian"]
+
+#End settings
+[End]
+	#Defines if the End Cake gets partly consumed when eaten [default: true]
+	consumeEndCake = true
+	#Set the refill items used by End Cake (Only change if you know what you're doing) [modid:itemname].
+	endCakeRefillItems = ["minecraft:ender_eye"]
+
+#Overworld settings
+[Overworld]
+	#Defines if the Overworld Cake gets partly consumed when eaten [default: true]
+	consumeOverworldCake = true
+	#Set the refill items used by Overworld Cake (Only change if you know what you're doing) [modid:itemname].
+	overworldCakeRefillItems = ["minecraft:oak_sapling", "minecraft:spruce_sapling", "minecraft:birch_sapling", "minecraft:jungle_sapling", "minecraft:acacia_sapling", "minecraft:dark_oak_sapling"]
+
+#Compat settings
+[Compat]
+	#Defines if the Twilight Forest Cake gets partly consumed when eaten [default: true]
+	consumeTwilightCake = true
+	#Set the refill items used by the Twilight Forest Cake (Only change if you know what you're doing) [modid:itemname]
+	TwilightCakeRefillItems = ["minecraft:diamond"]
+	#Defines if the Lost Cities Cake gets partly consumed when eaten [default: true]
+	consumeLostCitiesCake = true
+	#Set the refill items used by the Lost Cities Cake (Only change if you know what you're doing) [modid:itemname]
+	lostCitiesCakeRefillItem = ["minecraft:bed"]
+
+#Custom Cake settings
+[CustomCake]
+	#Defines if the Custom Cake gets partly consumed when eaten [default: true]
+	consumeCustomCake = true
+	#Defines the name of the cake [default: "Custom"]
+	customCakeName = "Void World"
+	#Defines the dimension bound to the custom cake [default: "minecraft:overworld"]
+	customCakeDimension = "javd:void"
+	#Set the refill items used by the Custom Cake (Only change if you know what you're doing) [modid:itemname]
+	customCakeRefillItem = ["kubejs:pulsating_dust"]
+	#Set the minimum Y location that the cake can spawn you at [Default: 2]
+	#Range: 1 ~ 256
+	customCakeMinY = 2
+	#Set the maximum Y location that the cake can spawn you at [Default: 2]
+	#Range: 1 ~ 256
+	customCakeMaxY = 254
+
+[CustomCake2]
+	#Defines if the Custom Cake gets partly consumed when eaten [default: true]
+	consumeCustomCake2 = true
+	#Defines the name of the cake [default: "Another Custom"]
+	customCake2Name = "Another Custom"
+	#Defines the dimension bound to the custom cake [default: "minecraft:overworld"]
+	customCake2Dimension = "minecraft:overworld"
+	#Set the refill items used by the Custom Cake (Only change if you know what you're doing) [modid:itemname]
+	customCake2RefillItem = ["minecraft:cobblestone"]
+	#Set the minimum Y location that the cake can spawn you at [Default: 2]
+	#Range: 1 ~ 256
+	customCake2MinY = 2
+	#Set the maximum Y location that the cake can spawn you at [Default: 2]
+	#Range: 1 ~ 256
+	customCake2MaxY = 254
+
+[CustomCake3]
+	#Defines if the Custom Cake gets partly consumed when eaten [default: true]
+	consumeCustomCake3 = true
+	#Defines the name of the cake [default: "Yet Another Custom"]
+	customCake3Name = "Yet Another Custom"
+	#Defines the dimension bound to the custom cake [default: "minecraft:overworld"]
+	customCake3Dimension = "minecraft:overworld"
+	#Set the refill items used by the Custom Cake (Only change if you know what you're doing) [modid:itemname]
+	customCake3RefillItem = ["minecraft:cobblestone"]
+	#Set the minimum Y location that the cake can spawn you at [Default: 2]
+	#Range: 1 ~ 256
+	customCake3MinY = 2
+	#Set the maximum Y location that the cake can spawn you at [Default: 2]
+	#Range: 1 ~ 256
+	customCake3MaxY = 254
+

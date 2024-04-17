@@ -1,0 +1,1251 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fun_with_fusion"
+	group: ""
+	icon: "gtceu:luv_fusion_reactor"
+	id: "40F7695BE1E65C41"
+	order_index: 8
+	quest_links: [
+		{
+			id: "569E4C671C9A4419"
+			linked_quest: "672D43BD113251EA"
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			id: "0CC87D3E523A3D47"
+			linked_quest: "6DAB13A7BDECE94E"
+			size: 1.5d
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			id: "3C9DAB2F66E5BECC"
+			linked_quest: "6588C68DE6973BCC"
+			x: 0.5d
+			y: 1.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"28CA4E5308EC0BB9"
+				"0508D3CCB6C876A3"
+			]
+			description: [
+				"&2A strong heavy element obtained from the Naquadah chain."
+				""
+				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &91 Trinium per 6 Naquadah processed&r."
+				""
+				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, &6Naquadah Alloy&r, among other things. You will need 14 stacks at least for a &3Fusion Reactor Mk1&r, so stock up on it."
+			]
+			id: "57627DCF9F46A8E2"
+			size: 1.0d
+			tasks: [{
+				id: "393228A0D8F67AD2"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			title: "&2Trinium"
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1FD2D0855A8A926B"]
+			description: ["&3Large Plasma Turbines&r are a powerful late game method of generating power. One Large Plasma Turbine produces &2a base of 16384 EU/t when using an IV Rotor Holder&r."]
+			icon: "gtceu:plasma_large_turbine"
+			id: "1405D08C6A87B3BB"
+			rewards: [{
+				id: "265F8AF395C89377"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5CA6A3EE3EF632F5"
+					item: "gtceu:plasma_large_turbine"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "6324614154FC58BF"
+					item: "gtceu:tungstensteel_turbine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3D5916D81DAB1BCC"
+					item: "gtceu:tungstensteel_gearbox"
+					type: "item"
+				}
+			]
+			title: "&2Plasma Turbine"
+			x: -4.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["1FD2D0855A8A926B"]
+			description: [
+				"With a &3Fusion Reactor&r, you can make Europium!"
+				""
+				"This element is needed for making things in &bDraconic Evolution&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
+				""
+				"You make it by fusing molten &9Neodymium&r and &9Hydrogen&r."
+			]
+			id: "25E1DE210726372E"
+			tasks: [{
+				id: "6A87828F83C85FC9"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
+			title: "&2Europium Ingot"
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["25E1DE210726372E"]
+			description: ["&6Fusion Coils&r are &2no longer EBF coil materials, but they are used in the next Fusion Reactors."]
+			id: "1183B96529D08326"
+			rewards: [{
+				id: "064FF89D54EB9137"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D32C3161DD5623E"
+				item: "gtceu:fusion_coil"
+				type: "item"
+			}]
+			title: "&2Fusion Coils"
+			x: -1.0d
+			y: -3.4928571428571473d
+		}
+		{
+			dependencies: [
+				"1183B96529D08326"
+				"10DD3A6BE5F9624D"
+				"6588C68DE6973BCC"
+			]
+			description: [
+				"Upgrade time! "
+				"...or building a new one, which is probably better."
+				""
+				"Yet again this quest asks for the minimal number of casings. Make an extra &229&r if you don't want more than &a2 Fluid Inputs&r&r and &a1 Fluid Output&r. Don't forget the extra &e31 Fusion Glass&r or &6Fusion Machine Casings&r!"
+				""
+				"&bYes, the Fusion Glass is the same tier as last time, but the Fusion Machine Casings are more expensive.&r"
+				""
+				"Make sure your using &6ZPM Energy Hatches&r!"
+				""
+				"If you insist on upgrading instead of making a new one, don't dismantle the current one before you're sure you've got everything you need to upgrade it, or you might end up having to rebuild the &3Mark 1 Fusion Reactor&r again."
+				""
+				"The &3Mark 2 Fusion Reactor&r has an energy buffer of &e320M EU&r."
+			]
+			icon: "gtceu:zpm_fusion_reactor"
+			id: "069773756716E192"
+			rewards: [{
+				count: 10
+				id: "27AA4E8C62913D0C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "1318C0E509554BEF"
+					item: "gtceu:zpm_fusion_reactor"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4F996D6D51BF9050"
+					item: "gtceu:zpm_energy_input_hatch"
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "01C009785BE10D67"
+					item: "gtceu:fusion_casing_mk2"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3F8428A9521D1FD9"
+					item: "gtceu:fusion_coil"
+					type: "item"
+				}
+			]
+			title: "&2Fusion Reactor MK2"
+			x: 0.5d
+			y: -3.4928571428571473d
+		}
+		{
+			dependencies: ["5792330C6E5B87A3"]
+			description: [
+				"&2A lighter and unstable Naquadah isotope."
+				""
+				"&6Naquadria&o&r is used in the construction of &6UV components&r, the &3Fusion Reactor Mk2&r, and in fusing &6Neutronium&r. Each piece of Naquadria also makes &94 times&r more power than &6Enriched Naquadah&r in &3Naquadah Reactors&r."
+			]
+			id: "10DD3A6BE5F9624D"
+			tasks: [{
+				id: "4E4BF30AA04246D9"
+				item: "gtceu:naquadria_ingot"
+				type: "item"
+			}]
+			title: "&2Naquadria"
+			x: 0.5d
+			y: -4.992857142857147d
+		}
+		{
+			dependencies: ["069773756716E192"]
+			description: [
+				"&2Do you remember Darmstadtium tools in CE? You can make their material now!"
+				""
+				"It is formed by fusing Arsenic and Ruthenium, and is the main material for UV machines."
+			]
+			id: "3FFC053E3E11D586"
+			rewards: [{
+				id: "51F748D4099BAC22"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33B59563EFF662EE"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			title: "&2Darmstadtium"
+			x: 2.0d
+			y: -3.4928571428571473d
+		}
+		{
+			dependencies: ["069773756716E192"]
+			description: [
+				"&2Doesn't look exactly like Europium anymore.&r"
+				""
+				"To make &9Tritanium&r, you first need to make &9Duranium&r. This is done by fusing molten &9Gallium&r and &9Radon&r in a &3Fusion Reactor Mark 1&r or better."
+				""
+				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor Mark 2&r using the Duranium and molten &9Titanium&r."
+				""
+				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into &aEMI&r."
+			]
+			id: "79EFCD8E01384C0C"
+			rewards: [{
+				id: "6238A522FF95AD44"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26D3C433DB615E42"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			title: "&2Tritanium Ingot"
+			x: 2.0d
+			y: -1.9928571428571473d
+		}
+		{
+			dependencies: ["79EFCD8E01384C0C"]
+			description: ["&2Tritanium Coils are the final coil material. At 10800K, it's capable of smelting every material."]
+			id: "15607184B546F5EE"
+			rewards: [{
+				id: "4D377BF47452A80F"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "29D1DB4708B2D316"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			title: "&2Tritanium Coils"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"79EFCD8E01384C0C"
+				"5EE23A29090BD374"
+				"75DD12FBC8AA39FC"
+			]
+			description: [
+				"The final circuit!"
+				""
+				"The only novel ingredient is &6Tritanium Frames&r."
+				""
+				"&6Wetware Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Nine circuits. Unlike past mainframes, you will need to craft more than just a few of them. They're mostly used in the Endgame though, so you don't have to worry too much yet."
+				""
+				"Definitely consider parallelizing your &3Assembly Lines&r if you haven't already. Even just having two or three lines will vastly improve your production speeds and help avoid bottlenecks as you push towards the Endgame."
+			]
+			id: "6F9BAA754DC26A3D"
+			subtitle: "The final circuit!"
+			tasks: [{
+				id: "3B593A41F874A1DC"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.9928571428571473d
+		}
+		{
+			dependencies: [
+				"7D29C79DE1CCA2A2"
+				"2D47BFA44BDB5E6A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the sun."
+				""
+				"Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
+				""
+				"Neutronium is made from fusing molten &9Naquadria&r, a super-enriched form of &6Naquadah&r, with molten &9Americium&r, &2or from the Tier Eight Micro Miner.&r"
+				""
+				"After getting &6Chaotic Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
+			]
+			id: "0DF2AF70CB1FEFB3"
+			tasks: [{
+				id: "038C507EEFE6A5EE"
+				item: "avaritia:neutronium_ingot"
+				type: "item"
+			}]
+			title: "&2Neutronium Ingot"
+			x: 5.0d
+			y: -1.9928571428571473d
+		}
+		{
+			dependencies: [
+				"4A8FB1EF600F0882"
+				"6F9BAA754DC26A3D"
+				"5BADF536443E712D"
+			]
+			description: [
+				"This baby can do any fusion recipe, notably giving you access to &6Neutronium&r."
+				""
+				"The multiblock layout is the same as the Mark 1 and Mark 2, with the same hatch and casing substitutions permitted."
+				""
+				"Obviously though, this one uses &6Fusion Machine Casing Mk &2III&r and only works with &aUV Energy Hatches&r."
+				""
+				"The &3Mark 3 Fusion Reactor&r has an energy buffer of &e640M EU&r."
+			]
+			icon: "gtceu:uv_fusion_reactor"
+			id: "7D29C79DE1CCA2A2"
+			rewards: [{
+				count: 10
+				id: "342B04DA3362D0B9"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "FUSION!"
+			tasks: [
+				{
+					id: "3816F5546D4E770F"
+					item: "gtceu:uv_fusion_reactor"
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "5DA79E1DA2A1487B"
+					item: "gtceu:fusion_casing_mk3"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "59615AB26BAA31DA"
+					item: "gtceu:uv_energy_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&2Fusion Reactor MK3"
+			x: 5.0d
+			y: -3.4928571428571473d
+		}
+		{
+			dependencies: ["3FFC053E3E11D586"]
+			description: [
+				"&bUV&r Machine Hulls. The second last Machine Hull. &bUV&r stands for &bUltimate Voltage&r."
+				""
+				"This Hull is made with &2Darmstadtium, Yttrium Barium Cuprate Cables, and Polybenzimidazole.&r"
+				""
+				"You'll need it mainly for the &6Fusion Reactor MK 3&r."
+			]
+			id: "5BADF536443E712D"
+			rewards: [{
+				id: "31762D923359C463"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D4F6E06507385B8"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			title: "&2UV Machine Hulls"
+			x: 3.5d
+			y: -3.4928571428571473d
+		}
+		{
+			dependencies: [
+				"069773756716E192"
+				"5585B254BA2D708C"
+			]
+			description: [
+				"&6Americium Ingots&r are obtained by placing &9NuclearCraft&r Americium isotopes into an &3Extractor&r and solidifying the fluid. As with other GT materials, use the ingot or fluid to forge the other forms."
+				""
+				"&2Americium is used in larger quantities in CEu progression.&r You cannot convert this form of Americium back to NuclearCraft Americium isotopes. These are also the best &aItem Pipe&r material, in terms of throughput."
+			]
+			id: "4A8FB1EF600F0882"
+			rewards: [{
+				id: "28257AD592813E0D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58B3062238CFC79D"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			title: "&2Americium Ingot"
+			x: 2.75d
+			y: -5.0d
+		}
+		{
+			dependencies: ["745628397790ED7A"]
+			description: [
+				"The full complexity of &bNuclearCraft&r is far too much for the scope of this quest guide, so &eyou're encouraged to watch a tutorial or read a guide online&r. "
+				""
+				"For the purposes of this particular quest, you'll be building a breeder reactor to make &6Plutonium&r, and other nuclear elements. While this reactor may seem very expensive, it will be worth it, and you will probably expand it soon. "
+				""
+				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster. Alternatively, reactors can be designed to produce a decent amount of power for the mid game of the pack."
+				""
+				"First, set up your 150 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 5x5x5 space."
+				""
+				"Next, create a hole so you can get inside the cube. Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
+				""
+				"Finally, place the &3Fission Reactor Controller&r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong."
+				""
+				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
+			]
+			id: "07482E45FCEE7937"
+			size: 1.5d
+			tasks: [{
+				id: "1A6A15D246D28076"
+				item: "nuclearcraft:fission_reactor_controller"
+				type: "item"
+			}]
+			title: "Fission Reactor"
+			x: -5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["07482E45FCEE7937"]
+			description: [
+				"Climbing the ladder of fissile materials will require some specific raw materials and machinery."
+				""
+				"&2Uraninite is the base resource you will need, which comes from Uraninite and Pitchblende Ore. You will need to react it with Fluorine and Hydrofluoric Acid in a Chemical Reactor to form Uranium Hexafluoride."
+				""
+				"The Uranium Hexafluoride must then be separated into Depleted and Enriched Uranium Hexafluoride in a Centrifuge. The Depleted UF₆ will grant Uranium-238, while the Enriched UF₆ will grant Uranium-235."
+			]
+			icon: "gtceu:uranium_235_ingot"
+			id: "32E44FFD602C98DF"
+			rewards: [{
+				id: "218573064D1473A9"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "07880B6CCD7BA77E"
+					item: "gtceu:uranium_ingot"
+					type: "item"
+				}
+				{
+					id: "7DC058B767A38AFA"
+					item: "gtceu:uranium_235_ingot"
+					type: "item"
+				}
+			]
+			title: "&2Uranium Fuel Infrastructure"
+			x: -4.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["07482E45FCEE7937"]
+			description: [
+				"Thorium is a basic fissile material that can be used to get into the fissile chain. Thorium comes from &6Pitchblende Ore&r, &6Thorium Ore&r, and even &2Black Granite&r (with a few processing steps)."
+				""
+				"Thorium-Bred Uranium, or &6TBU&r for short, is made from nine clumps of &6Thorium 232&r, made from Thorium enriched in a &3Thermal Centrifuge&r."
+				""
+				"This fuel is processed in your &3Fission Reactor&r by placing it in the controller. When a redstone signal is applied it will burn the fuel, generating some power from the reactor and after a while you'll get a &6Depleted TBU Fuel&r&r."
+				""
+				"The depleted fuel provides tiny clumps of &6Uranium 233&r, &6Uranium 235&r, &6&6Neptunium 236&r, and &6Neptunium 237&r."
+			]
+			icon: "nuclearcraft:fuel_thorium_tbu"
+			id: "4BE6C4E7FDF7C71B"
+			rewards: [{
+				id: "06139FE8ADC033ED"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44C0DC3995B49AE9"
+				item: "nuclearcraft:fuel_thorium_tbu"
+				type: "item"
+			}]
+			title: "&2Thorium Fission"
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["32E44FFD602C98DF"]
+			description: [
+				"&6Uranium 233&r is obtained exclusively from the fission of &6TBU Fuels&r."
+				""
+				"&6LEU-233&r is made from one &6U233&r and eight &6U238&r."
+				""
+				"&6Depleted LEU-233&r will give you various &6Plutonium&r isotopes and some &6Americium&r."
+			]
+			id: "64B145DC53023119"
+			rewards: [{
+				id: "7F9E99458D9F8514"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C221A75335837E3"
+				item: "nuclearcraft:fuel_uranium_leu_233"
+				type: "item"
+			}]
+			title: "LEU-233"
+			x: -2.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4BE6C4E7FDF7C71B"]
+			id: "490F04B181217B28"
+			rewards: [{
+				id: "77276677737EC253"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F9E2B6EE20C17A1"
+				item: "nuclearcraft:fuel_neptunium_len_236"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"4BE6C4E7FDF7C71B"
+				"32E44FFD602C98DF"
+			]
+			description: [
+				"&6Uranium 233&r is obtained exclusively from the fission of &6TBU Fuels&r."
+				""
+				"&6LEU-233&r is made from one &6U233&r and eight &6U238&r."
+				""
+				"&6Depleted LEU-233&r will give you various &6Plutonium&r isotopes and some &6Americium&r."
+			]
+			id: "3065F950BCA5C461"
+			rewards: [{
+				id: "1CF2F7306BCC5FE5"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1AB75B01B5D4CBED"
+				item: "nuclearcraft:fuel_uranium_leu_233"
+				type: "item"
+			}]
+			title: "LEU-233"
+			x: -2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"3065F950BCA5C461"
+				"64B145DC53023119"
+				"490F04B181217B28"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&oNote: this quest accepts Plutonium 238, 239, 241 or 242.&r"
+				""
+				"Low-Enriched Plutonium 239, or &6LEP-239&r, is made from the usual 8:1 ratio of two isotopes of &6Plutonium&r, 242 and 239, acquired from earlier depleted fuels. You will also need &6Plutonium&r in large amounts for &eSunnarium&r."
+				""
+				"The two sources of Plutonium are Uranium-based fuels and Neptunium-based fuels."
+				""
+				"&6Depleted LEP-239&r will give you some different isotopes of &6Curium&r for further enrichment."
+				""
+				"High-Enriched Plutonium fuels will give better results, but &cgenerate a lot more heat&r. Make sure your reactor cooling is up to the task."
+			]
+			icon: "nuclearcraft:fuel_plutonium_hep_241"
+			id: "7D7B34CF5145F971"
+			rewards: [{
+				id: "2EE2A64247934DFA"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			subtitle: "You only need one of this quest's dependencies"
+			tasks: [{
+				id: "5CF757A158365EEF"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:plutonium_238"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:plutonium_239"
+							}
+							{
+								Count: 1b
+								id: "gtceu:plutonium_241_ingot"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:plutonium_242"
+							}
+						]
+					}
+				}
+				title: "Plutonium"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.25d
+		}
+		{
+			dependencies: [
+				"3065F950BCA5C461"
+				"490F04B181217B28"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&oNote: this quest accepts Americium 241, 242, or 243."
+				""
+				"&6Americium 242&r and &6Americium 243&r are used to make &6LEA-242 Fuel&r."
+				""
+				"There's also &6Americium 241&r, but this is only useful for making RTGs (which produce small amounts of RF continuously) or decaying down into &6Neptunium&r."
+				""
+				"&6Depleted LEA 242 Fuels&r&r will return a lot of &6Curium 246&r, and small amounts of the other three isotopes."
+			]
+			icon: "nuclearcraft:fuel_americium_hea_242"
+			id: "6728FB92FD3A2084"
+			rewards: [{
+				id: "22E84F8BB0633D73"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			subtitle: "You only need one of this quest's dependencies"
+			tasks: [{
+				id: "2EBA27CDC31F4FD7"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:americium_241"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:americium_242"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:americium_243"
+							}
+						]
+					}
+				}
+				title: "Americium"
+				type: "item"
+			}]
+			title: "Americium Fission"
+			x: -1.0d
+			y: -8.75d
+		}
+		{
+			dependencies: [
+				"7D7B34CF5145F971"
+				"6728FB92FD3A2084"
+			]
+			description: [
+				"&oNote: this quest accepts Curium 243, 245, 246 or 247.&r"
+				""
+				"Low-Enriched Curium 243, or &6LECm-243&r, is made from &6Curium-243&r and &6Curium-246&r. You will also need &6Curium&r in large amounts for &eSunnarium&r."
+				""
+				"&6Depleted LECm-243 Fuel&r gives mostly Curium-246 back, but also small quantities of &6Berkelium&r and &6Californium&r isotopes."
+				""
+				"&6HECm-247&r is a better alternative for strictly Californium, if your reactor can withstand the heat."
+			]
+			icon: "nuclearcraft:fuel_curium_lecm_245"
+			id: "0E5E5E647F378D02"
+			rewards: [{
+				id: "78C58916BAFD010E"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B9300AA8500D15F"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:curium_243"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:curium_245"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:curium_246"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:curium_247"
+							}
+						]
+					}
+				}
+				title: "Curium"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["0E5E5E647F378D02"]
+			description: [
+				"&oNote: this quest accepts Berkelium 247 or 248."
+				""
+				"&6LEB-248 Fuel&r is made with &e8 &6Berkelium-247&r and &e1 &6Berkelium 248&r. When depleted, it results in several different isotopes of &6Californium&r."
+			]
+			icon: "nuclearcraft:fuel_berkelium_heb_248"
+			id: "18B28DC43ACAF768"
+			rewards: [{
+				id: "121513CD4E6D9BA8"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D40001351115DEA"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:berkelium_247"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:berkelium_248"
+							}
+						]
+					}
+				}
+				title: "Berkelium"
+				type: "item"
+			}]
+			title: "Berkelium Fission"
+			x: 2.0d
+			y: -10.25d
+		}
+		{
+			dependencies: ["0E5E5E647F378D02"]
+			description: [
+				"&oNote: this quest accepts Californium 249, 250, 251 or 252."
+				""
+				"&6Californium&r is the final fissile material in the NuclearCraft processing chain."
+				""
+				"&6LECf-249 Fuel&r is made with the 8:1 ratio of &6Californium-252&r and &6Californium-249&r. When depleted, it results in... different isotopes of Californium."
+				""
+				"Unless you want &6Californium RTGs&r or are experimenting with further fission routes, this step is probably unnecessary for general materials processing."
+			]
+			icon: "nuclearcraft:fuel_californium_hecf_251"
+			id: "79197A2CD8E435B2"
+			rewards: [{
+				id: "461C74DA073F95A0"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D3D5AC8CBB48681"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:californium_249"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:californium_250"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:californium_251"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:californium_252"
+							}
+						]
+					}
+				}
+				title: "Californium"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.75d
+		}
+		{
+			dependencies: ["7D7B34CF5145F971"]
+			description: [
+				"&6Sunnarium&r is an alloy formed from &6Stabilized Plutonium&r and &6Stabilized Curium&r in an IV or better &3Alloy Smelter&r."
+				""
+				"It is a common ingredient in higher tier &6Solar Panels&r."
+				""
+				"This stuff takes a long time to produce so consider stocking it passively."
+			]
+			id: "171EE3A4129F19A5"
+			rewards: [{
+				id: "3C74F3D9993A0E7E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F210892580EEAB2"
+				item: "gtceu:sunnarium_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"79197A2CD8E435B2"
+				"18B28DC43ACAF768"
+			]
+			description: [
+				"Now that you have all the basic building blocks of nuclear fission, you'll need to start creating breeding chains to mass produced stabilized versions of each element, for the synthesis of &9Omnium&r."
+				""
+				"Please note that stabilized versions of each element cannot be turned back into fluids, nor turned back into their original &bNuclearCraft&r isotopes."
+				""
+				"Experiment around with larger breeder reactors that can handle highly enriched fuels."
+				""
+				"You'll probably want to build multiple reactors to make all the fissile elements in any reasonable amount of time."
+			]
+			icon: "nuclearcraft:plutonium_rtg"
+			id: "3616092A2954FEE0"
+			size: 1.5d
+			tasks: [{
+				id: "4DE6C946EF4B947F"
+				type: "checkmark"
+			}]
+			title: "Further Adventures In Fission"
+			x: 3.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"57627DCF9F46A8E2"
+				"7D39A4D0CC886796"
+				"6DAB13A7BDECE94E"
+			]
+			description: [
+				"The &3Fusion Reactor&r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows. &6Sneak-right click&r the controller to enable the in-world preview."
+				""
+				"The &bJEI&r preview shows &eall valid hatch locations&r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with &2Fusion Machine Casings&r as long as you have at least &atwo Fluid Input Hatches&r and &aone Fluid Output Hatch&r. It's possible to use input/output hatches in every valid location, if you prefer."
+				""
+				"Because of this, the quest only asks for &248 Fusion Machine Casings&r. If you want to use the minimum number of fluid hatches, you'll need to craft an additional &229 Fusion Machine Casings&r. In addition to the &a48 Fusion Machine Casings&r, you will also need &631 Fusion Glass&r or &631 Fusion Machne Casings&r. &bFusion Glass is cheaper, and looks cooler&r, but its your choice."
+				""
+				"Each &aEnergy Hatch&r increases the reactor's power buffer. &2You cannot use 4x or 16x Energy Hatches in Fusion Reactors. &aAll 16 Energy Hatches&r are required to be able to process all Mark 1 recipes and give a power buffer of &e160M EU&r. &2However, not all energy hatches are needed to be connected to power. For example, a recipe that requires LuV power draw would only need one or more hatches connected to power, but a recipe that needs ZPM power draw would need two hatches connected to power.&r &cThey still need to be present on the structure!&r"
+				""
+				"In addition to the recipe power drain, Fusion Reactors have a &eheat&r mechanic related to the recipe's &e\"Eu to Start\"&r. This amount of power is drained from the reactor's buffer before starting the recipe to heat up the reactor to the necessary temperature, and is independent of the recipe's EU/t cost. As such, this determines the minimum tier of reactor you need for a recipe."
+				""
+				"If the reactor stops processing, it will &erapidly lose heat&r, even if you pause it with a soft hammer. On the other hand, if the reactor is already at the required temperature for a recipe, &eno additional power&r is required to heat up the reactor! This is true even if you switch between different recipes. This mechanic incentivizes continuous use of the reactor."
+				""
+				"If you switch to a recipe that requires more heat, &eonly the difference&r in heat values is consumed as EU to reach the target heat (up to a maximum heat equal to the reactor's current buffer)."
+				""
+				"Fusion Reactors &2overclock, but only once per fusion tier, instead of based on energy input.&r They gate the next tier of materials, so you will eventually want to make more than one."
+			]
+			icon: "gtceu:luv_fusion_reactor"
+			id: "1FD2D0855A8A926B"
+			size: 1.5d
+			subtitle: "Time to get fusing!"
+			tasks: [
+				{
+					id: "5E005EC2DD551FB2"
+					item: "gtceu:luv_fusion_reactor"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "19392B2E76B8C49C"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					title: "Any #moni:input_hatch"
+					type: "item"
+				}
+				{
+					id: "67D16E6904489436"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
+					title: "Any #moni:output_hatch"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2563EFC2CBD0B6FC"
+					item: "gtceu:luv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "25059EA27042EA4D"
+					item: "gtceu:superconducting_coil"
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "0ABFCF5809C3F463"
+					item: "gtceu:fusion_casing"
+					type: "item"
+				}
+			]
+			title: "&2Fusion Reactor MK1"
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6728FB92FD3A2084"]
+			dependency_requirement: "one_completed"
+			description: [
+				"&oNote: this quest accepts Americium 241, 242, or 243."
+				""
+				"&6Americium 242&r and &6Americium 243&r are used to make &6LEA-242 Fuel&r."
+				""
+				"There's also &6Americium 241&r, but this is only useful for making RTGs (which produce small amounts of RF continuously) or decaying down into &6Neptunium&r."
+				""
+				"&6Depleted LEA 242 Fuels&r&r will return a lot of &6Curium 246&r, and small amounts of the other three isotopes."
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "nuclearcraft:fuel_americium_hea_242"
+			id: "5585B254BA2D708C"
+			subtitle: "You only need one of this quest's dependencies"
+			tasks: [{
+				id: "16F29EB016AF9A04"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:americium_241"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:americium_242"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:americium_243"
+							}
+						]
+					}
+				}
+				title: "Americium"
+				type: "item"
+			}]
+			title: "Americium Fission"
+			x: -1.0d
+			y: -8.75d
+		}
+		{
+			dependencies: ["3A69EE21B3089929"]
+			description: [
+				"The &3Data Bank&r acts as a mass storage for &6Data Sticks&r and &6Data Orbs&r. It is also required for reading &6Data Modules&r."
+				""
+				"Connect an &3Optical Data Transmission Hatch&r on the Data Bank to an &3Optical Data Reception Hatch&r (replacing the &3Data Access Hatch&r) on your &3Assembly Line&r using &aOptical Cables&r, and it will be able to read the data of all data items within the Data Bank."
+				""
+				"You can connect multiple &3Assembly Lines&r to a single Data Bank, but each one will need its own &3Transmission Hatch&r on the Data Bank."
+				""
+				"&3Data Access Hatches&r and &3Optical Hatches&r can replace any of the &aComputer Casings&r in the structure, but it must have a minimum of &e3&r &aComputer Casings&r. Each &3Data Access Hatch&r and &3Optical Hatch&r within the structure will consume &d1,920 EU/t&r regardless of their usage."
+				""
+				"You will also need a &aMaintenance&r and &aEnergy Hatch&r, which can replace the &aHigh Power Casings&r in front."
+				""
+				"{@pagebreak}"
+				""
+				"Although this is not strictly required until you need to make and read &6Data Modules&r, your single &3Data Access Hatch&r on your &3Assembly Line&r will not have space to hold all the items you need to craft otherwise."
+				""
+				"If your Assembly Line setups grow enough, you may need to &echain&r Data Banks. Connect the &3Transmission Hatch&r on the Data Bank with data to the &3Reception Hatch&r of a second Data Bank. The &ereceiving&r Data Bank will be able to read all the data within the transmitting Data Bank, and can send that data to more Assembly Lines or more Data Banks. However, this comes at a greatly increased energy cost for the transmitting Data Bank."
+			]
+			icon: "gtceu:data_bank"
+			id: "57C75A5756F62D17"
+			rewards: [{
+				count: 3
+				id: "31E3AF2900571CAE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "39BC10CE928DDE14"
+					item: "gtceu:data_bank"
+					type: "item"
+				}
+				{
+					id: "2B4D7DC825D1307C"
+					item: "gtceu:data_transmitter_hatch"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "7262E610DF6D4DD7"
+					item: "gtceu:computer_heat_vent"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5841BA5408F05A8A"
+					item: "gtceu:computer_casing"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3F2108F11943B202"
+					item: "gtceu:high_power_casing"
+					type: "item"
+				}
+			]
+			title: "&2Data Bank"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["672D43BD113251EA"]
+			description: [
+				"&2Optical Fiber Cables&r are used to transfer &eResearch Data&r&r between &3Data Banks&r and &3Assembly Lines&r, or &eComputation Data&r between &3High Performance Computation Arrays&r, &3Network Switches&r, and &3Research Stations&r."
+				""
+				"Note that Optical connections are limited to one &aTransmission Hatch&r to one &aReception Hatch&r."
+			]
+			id: "3A69EE21B3089929"
+			tasks: [{
+				id: "0C1D0A754607F817"
+				item: "gtceu:normal_optical_pipe"
+				type: "item"
+			}]
+			title: "&2Optical Fiber Cables"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A69EE21B3089929"]
+			description: [
+				"The &3High Performance Computing Array (HPCA)&r is a computer which provides &dComputation Work&r to be used in the &3Research Station&r. The amount of &dComputation Work&r it provides depends on the type of HPCA parts within it. It also needs to receive adequate &dCooling&r provided by Coolers within its structure."
+				""
+				"Connect the &3Computation Data Transmission Hatch&r to the &3Reception Hatch&r on your &3Research Station&r to transfer the &dCWU/t&r produced to it."
+				""
+				"The HPCA accepts almost any combination of &3Computation Components&r, &3Coolers&r, &3Bridges&r and &3Empty Components&r within the 3x3 area behind the &aComputer Heat Vents&r. The suggested components will build a &d16 CWU/t&r HPCA, enough for scanning the &3Fusion Reactor Mk2&r, &6UV Circuits&r, and all &6ZPM Components&r. You can get away with less at first, but you will eventually need to upgrade to this computing power. Refer to &eJEI&r for some other possible setups."
+				""
+				"The &dCWU/t&r of the HPCA is determined by the sum of the outputs of the &3HPCA Computation Components&r within it. Regular &3Computation Components&r produce &d4 CWU/t&r each, and require &d2 Cooling&r each. &3Advanced Computation Components&r, which you do not have access to yet, produce &d16 CWU/t&r each and require &d4 Cooling&r each."
+				""
+				"{@pagebreak}"
+				""
+				"&dCooling&r is provided by &3Cooler&r blocks within the structure. &3Passive Coolers&r provide &d1 Cooling&r each for free, whereas &3Active Coolers&r provide &d2 Cooling&r each with a steady flow of &9Dielectric PCB Coolant&r, provided through an &3Input Hatch&r. If the Cooling within the HPCA is insufficient, the components may be &cdamaged&r from overheating. The physical position of the components within the HPCA does not matter."
+				""
+				"A &3Bridge Component&r may be installed, allowing the HPCA to connect to &3Network Switches&r."
+				""
+				"The energy consumption of the HPCA is determined by the sum of its parts. 'Max Energy' refers to the power draw while the HPCA is computing, while 'Upkeep Energy' refers to the power draw when the HPCA is idling."
+			]
+			icon: "gtceu:high_performance_computation_array"
+			id: "37BE175EEC2ABD59"
+			rewards: [{
+				id: "49662F3AC1BF54B0"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "66058E2583089E93"
+					item: "gtceu:high_performance_computation_array"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "4DC31C441D81AFA8"
+					item: "gtceu:computer_heat_vent"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "2593E8CA09114408"
+					item: "gtceu:advanced_computer_casing"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "671960FED0771DD9"
+					item: "gtceu:computer_casing"
+					type: "item"
+				}
+				{
+					id: "2D706239B6466475"
+					item: "gtceu:computation_transmitter_hatch"
+					type: "item"
+				}
+			]
+			title: "&2High Performance Computing Array"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["37BE175EEC2ABD59"]
+			description: [
+				"The &3Research Station&r is an advanced Scanner which consumes &dComputation Work&r provided by connected &3High Performance Computing Arrays&r to research &cZPM&r and higher items.%n%nThe function of this multiblock is similar to the Scanner. Place the &6Data Orb&r or &6Data Module&r into the &3Object Holder&r alongside the item to be scanned. After sufficient &dCWU&r has been drawn, the item will be &cconsumed&r and the corresponding data will be written to the data item. Ensure your &3HPCA&r is supplying sufficient &dCWU/t&r - check the scan recipe in &eJEI&r for how much is required."
+				""
+				"&3Energy&r, &3Maintenance&r, and &3Computation Hatches&r can only replace the 9 &aComputer Casings&r between the &aComputer Heat Vents&r at the back of the structure. The &3Object Holder&r &cmust face&r the &3Research Station&r controller block."
+				""
+				"nThe Research Station can be accelerated with excess &dCWU/t&r, but it &cdoes not overclock&r with extra &dEU/t&r. Initial recipes run on &dLuV&r power, but &cZPM&r will be required soon, and higher tiers of energy will be required for more advanced scans. As most Research scans take a long time, you should start this process early."
+			]
+			icon: "gtceu:research_station"
+			id: "1109CFC5D47FC011"
+			tasks: [
+				{
+					id: "3AD27DA0F09B8C56"
+					item: "gtceu:research_station"
+					type: "item"
+				}
+				{
+					count: 49L
+					id: "18B4DC694262045C"
+					item: "gtceu:computer_casing"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "0C95764D74768CB4"
+					item: "gtceu:advanced_computer_casing"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "7AA21CF7DB131044"
+					item: "gtceu:computer_heat_vent"
+					type: "item"
+				}
+				{
+					id: "23103B6326C92E62"
+					item: "gtceu:object_holder"
+					type: "item"
+				}
+				{
+					id: "41A8916DAC27BCD0"
+					item: "gtceu:computation_receiver_hatch"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6588C68DE6973BCC"]
+			description: [
+				"Once you scan and make make your first &6UV Circuits&r and &6ZPM Field Generators&r, you can upgrade your &3HPCA Computing Components&r to &3Advanced Components&r. These produce &d16 CWU/t&r each and require &d4 Cooling&r each."
+				""
+				"With them, you can upgrade a single HPCA to produce &d32 CWU/t&r total - enough for basic &6UV components&r, and the &3Network Switch&r, which will allow you to go higher."
+			]
+			id: "0CEF53164D8B6496"
+			rewards: [{
+				id: "4D2596DD65D69A4E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59294AD73C598693"
+				item: "gtceu:hpca_advanced_computation_component"
+				type: "item"
+			}]
+			title: "&2Advanced HPCA"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0CEF53164D8B6496"]
+			description: [
+				"The &3Network Switch&r combines any number of &3Computation Data Reception Hatches&r into any number of &3Computation Data Transmission Hatches&r. This will be required when the &dCWU/t&r requirements of your &3Research Station&r exceed what a single &3HPCA&r can provide."
+				""
+				"Connect the &3Computation Data Reception Hatches&r&r to your &3HPCAs&r with &3Bridge Components&r within them, and connect a single &3Computation Data Transmission Hatch&r to your &3Research Station&r, and it will receive the sum of &dCWU/t&r from all of your HPCAs!"
+				""
+				"Now, all &3Assembly Line&r recipes are available to you, given you have the &dCWU/t&r to research them. The most computationally demanding scan, for the &6Ultimate Battery&r, requires &d144 CWU/t&r."
+				""
+				"The Network Switch consumes &d7,680 EU/t&r per &3Computation Hatch&r in its structure."
+			]
+			icon: "gtceu:network_switch"
+			id: "75DD12FBC8AA39FC"
+			rewards: [{
+				id: "391ACCFEB29056AC"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7AA10ECE89BABEEA"
+					item: "gtceu:network_switch"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "698C9026857CD0F9"
+					item: "gtceu:computer_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2CAF4E12B432094F"
+					item: "gtceu:computation_receiver_hatch"
+					type: "item"
+				}
+				{
+					id: "09E3C1019A70EAB5"
+					item: "gtceu:data_transmitter_hatch"
+					type: "item"
+				}
+			]
+			title: "&2Network Switch"
+			x: 3.5d
+			y: 1.0d
+		}
+	]
+	title: "Fission and Fusion"
+}

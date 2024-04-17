@@ -1,0 +1,11 @@
+{
+  "extendedcrafting:ultimate_crafting": {
+    "order": 1
+	},
+  "emi:anvil_repairing": {
+    "order": 2
+  },
+  "emi:grinding": {
+    "order": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "COMMON": {
+    "RADIUS_RANGE": 8,
+    "IGNORE_ITEM_DAMAGE": false
+  },
+  "CLIENT": {
+    "CONTAINER_TRACK_TIME": 600,
+    "CONTAINER_TRACKING": true,
+    "CONTAINER_HIGHLIGHT_COLOR": "#cf9d15"
+  }
+}

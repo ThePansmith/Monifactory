@@ -1,0 +1,6 @@
+
+#Common Settings
+[common]
+	#Determines whether chests / barrels are always dropped as packed with their contents when broken without the need to use packing tape
+	dropPacked = false
+

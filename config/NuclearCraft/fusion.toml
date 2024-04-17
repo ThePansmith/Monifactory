@@ -1,0 +1,42 @@
+
+#Settings for Fusion Reactor
+[fusion_reactor]
+	#Min reactor size.
+	#Range: 1 ~ 24
+	min_size = 1
+	#Max reactor size.
+	#Range: 3 ~ 48
+	max_size = 32
+	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
+	#Range: 0.0 ~ 20.0
+	reactor_explosion_radius = 4.0
+	#Minimal magnetic field required to operate reactor. (Depends on reactor size).
+	#Range: 1.0 ~ 100.0
+	minimal_magnetic_field = 8.0
+	#Affects heating rate for plasma by rf amplifiers.
+	#Range: 0.01 ~ 100.0
+	rf_amplification_multiplier = 5.0
+	#Affects plasma energy to FE converion rate.
+	#Range: 0.01 ~ 10.0
+	plasma_to_energy_convertion = 1.0
+
+#Settings for Electromagnets
+[electromagnets]
+	#If Electromagnets are registered.
+	registered = [true, true, true, true, true]
+	#Power consumption (FE/t): niobium_tin_electromagnet, magnesium_diboride_electromagnet, bscco_electromagnet, niobium_titanium_electromagnet, basic_electromagnet
+	power = [1500, 1000, 3000, 2000, 500]
+	#Magnetic field strength: niobium_tin_electromagnet, magnesium_diboride_electromagnet, bscco_electromagnet, niobium_titanium_electromagnet, basic_electromagnet
+	heat = [1.0, 0.5, 4.0, 2.0, 0.25]
+
+#Settings for RF Amplifiers
+[rf_amplifiers]
+	#If RF Amplifier are registered.
+	registered = [true, true, true, true, true]
+	#Power consumption (FE/t): basic_rf_amplifier, niobium_titanium_rf_amplifier, magnesium_diboride_rf_amplifier, niobium_tin_rf_amplifier, bscco_rf_amplifier
+	power = [250, 1500, 500, 750, 2500]
+	#Heat generation: basic_rf_amplifier, niobium_titanium_rf_amplifier, magnesium_diboride_rf_amplifier, niobium_tin_rf_amplifier, bscco_rf_amplifier
+	heat = [300, 2260, 500, 1140, 4500]
+	#Amplification Voltage: basic_rf_amplifier, niobium_titanium_rf_amplifier, magnesium_diboride_rf_amplifier, niobium_tin_rf_amplifier, bscco_rf_amplifier
+	voltage = [500000, 3000000, 1000000, 2000000, 4000000]
+

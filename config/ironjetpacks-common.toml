@@ -1,0 +1,19 @@
+
+#General configuration options.
+[General]
+	#Should jetpacks be enchantable?
+	enchantableJetpacks = false
+	#Enable Curios integration.
+	curiosIntegration = true
+
+#Dynamic recipe options.
+[Recipe]
+	#Enable default recipes for Energy Cells?
+	cells = true
+	#Enable default recipes for Thrusters?
+	thrusters = true
+	#Enable default recipes for Capacitors?
+	capacitors = true
+	#Enable default recipes for Jetpacks?
+	jetpacks = true
+

@@ -1,0 +1,8 @@
+
+#Anti-Nesting
+[antinesting]
+	#List of Resource Locations for items to be blocked
+	itemBlacklist = []
+	#List of Resource Locations for items to be allowed despite matching other blocking checks.
+	itemWhitelist = []
+

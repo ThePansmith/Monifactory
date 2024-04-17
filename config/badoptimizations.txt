@@ -1,0 +1,64 @@
+# BadOptimizations configuration
+# Here you can configure stuff, mostly enabling/disabling specific optimizations.
+
+# Whether we should cancel updating the lightmap if not needed.
+enable_lightmap_caching: true
+# How much the in-game time must change in ticks (1/20th of a second)
+# for the lightmap to immediately update.
+# Higher values will result in less frequent updates
+# to block lighting, but better performance.
+# Values below 2 will disable hte optimization.
+lightmap_time_change_needed_for_update: 80
+
+# Whether the sky's color should be cached unless you're on a biome border.
+enable_sky_color_caching: true
+# How much the in-game time must change in ticks for the sky color to
+# be recalculated with our own calculation. Higher values will result in
+# the sky updating less frequently, but slightly better performance.
+# Values below 2 will all have the same effect.
+skycolor_time_change_needed_for_update: 3
+
+# Whether we should avoid calling debug renderers
+# and their calculations if there are no debug entries to render
+enable_debug_renderer_disable_if_not_needed: true
+
+#
+# Micro optimizations
+#
+
+# Whether String.format should be redirected to a faster
+# StringBuilder when calculating the FPS string.
+enable_fps_string_optimization: true
+# Whether we should avoid calling the particle manager
+# and its calculations if there are no particles.
+enable_particle_manager_optimization: true
+# Whether we should avoid calling the toast manager
+# if there are no toasts
+enable_toast_optimizations: true
+# Whether the result of getSkyAngle should be cached
+# for the entire frame during rendering
+enable_sky_angle_caching_in_worldrenderer: true
+# Whether entity renderers should be stored directly in EntityType
+# instead of a HashMap.
+# Disable to fix compatibility with Twilight Forest
+enable_entity_renderer_caching: true
+# Whether block entity renderers should be stored in BlockEntityType
+# instead of a HashMap.
+enable_block_entity_renderer_caching: true
+# Whether entity flags should be cached instead of
+# calling DataTracker.
+# Also removes the unnecessary thread lock in DataTracker
+# however this is also done by Lithium (they don't conflict, however).
+enable_entity_flag_caching: true
+# Whether we should avoid calling FOV calculations
+# if the FOV effect scale is zero.
+enable_remove_redundant_fov_calculations: true
+# Don't tick the tutorial if the game is not in demo mode.
+enable_remove_tutorial_if_not_demo: true
+
+# Whether BadOptimizations <version> should be added onto
+# the left text of the F3 menu.
+show_f3_text: true
+
+# Do not change this
+config_version: 1

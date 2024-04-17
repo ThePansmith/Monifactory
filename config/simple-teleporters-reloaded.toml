@@ -1,0 +1,8 @@
+
+["Simple Teleporters Reloaded Mod"]
+	#The amount of portal particles that will come out of the teleporter every display tick.
+	#Range: > 0
+	Block = 5
+	#After teleporting, the player will face the direction they were facing when linking the crystal
+	Teleportation = true
+

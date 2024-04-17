@@ -1,0 +1,41 @@
+{
+    "entity": "minecraft:guardian",
+    "name": "entity.minecraft.guardian",
+    "name_color": "#00FFFFFF",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "fabricator_drops": [{
+            "item": "minecraft:prismarine_shard",
+            "count": 32
+        },
+        {
+            "item": "minecraft:prismarine_crystals",
+            "count": 32
+        },
+        {
+            "item": "minecraft:cod",
+            "count": 64
+        },
+        {
+            "item": "minecraft:gold_ingot",
+            "count": 8
+        },
+        {
+            "item": "gtceu:aluminium_dust",
+            "count": 12
+        },
+        {
+            "item": "armorplus:guardian_scale",
+            "count": 4
+        }
+    ]
+}

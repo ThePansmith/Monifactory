@@ -1,0 +1,33 @@
+{
+    "entity": "minecraft:ender_dragon",
+    "name": "entity.minecraft.ender_dragon",
+    "name_color": "#00FFFFFF",
+    "gui_scale": 0.25,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0.5,
+    "gui_z_offset": 0,
+    "sim_cost": 6666,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.ender_dragon",
+    "fabricator_drops": [{
+            "item": "minecraft:dragon_breath",
+            "count": 1
+        },
+        {
+            "item": "kubejs:dragon_lair_data",
+            "count": 1
+        },
+        {
+            "item": "armorplus:ender_dragon_scale",
+            "count": 1
+        }
+    ],
+    "data_per_kill": [
+        3, 12, 30, 45
+    ]
+}

@@ -1,0 +1,8 @@
+
+#General settings
+[profiles]
+	#Block to put underneath a bed so that it qualifies as a teleporter bed
+	specialBedBlock = "minecraft:diamond_block"
+	selectedProfile = "default"
+	selectedCustomJson = ""
+

@@ -1,0 +1,20 @@
+#Crop growth multiplier on tilled soil, this value multiplies default vanilla growth rate
+#e.g. 10.5 -> Ten and a half times the speed of vanilla crop.
+#Range: 0.0 ~ 25.0
+tilledSoilMultiplier = 0.5
+#Crop growth multiplier on tilled end stone, this value multiplies default vanilla growth rate
+#e.g. 10.5 -> Ten and a half times the speed of vanilla crop
+#Range: 0.0 ~ 25.0
+tilledEndMultiplier = 1.0
+#Enable Tilled End Stone
+tilledEndStone = true
+#Chance to spawn endermite when harvesting an Ender Crop on Tilled End Stone (1 in ...)
+#0 to disable
+#Range: > 0
+miteChance = 50
+#Is a hoe enchanted with Unbreaking (I) needed to till endstone?
+endstoneNeedsUnbreaking = true
+#Minimum non-vanilla hoe tool (e.g. TiCo Kama) material level needed to till endstone
+#Range: 0 ~ 20
+hoeToolHarvestLevelEndstone = 1
+

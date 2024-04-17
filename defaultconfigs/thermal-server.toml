@@ -1,0 +1,271 @@
+
+["Global Options"]
+	#If TRUE, Redstone Flux will act as its own energy system and will NOT be interoperable with 'Forge Energy' - only enable this if you absolutely know what you are doing and want the Thermal Series to use a unique energy system.
+	"Standalone Redstone Flux" = false
+	#If TRUE, most Thermal Blocks will retain Energy when dropped.
+	#This setting does not control ALL blocks.
+	"Blocks Retain Energy" = true
+	#If TRUE, most Thermal Blocks will retain Inventory Contents when dropped.
+	#This setting does not control ALL blocks.
+	"Blocks Retain Inventory" = false
+	#If TRUE, most Thermal Blocks will retain Tank Contents when dropped.
+	#This setting does not control ALL blocks.
+	"Blocks Retain Tank Contents" = false
+	#If TRUE, Thermal Blocks will retain Augments when dropped.
+	"Blocks Retain Augments" = true
+	#If TRUE, Thermal Blocks will retain Redstone Control configuration when dropped.
+	"Blocks Retain Redstone Control" = true
+	#If TRUE, Thermal Blocks will retain Side configuration when dropped.
+	"Blocks Retain Side Configuration" = true
+	#If TRUE, Thermal Blocks will retain Transfer Control configuration when dropped.
+	"Blocks Retain Transfer Control" = true
+
+[Tools]
+
+	[Tools.Satchel]
+		#A list of Items by Resource Location which are NOT allowed in Satchels.
+		Denylist = ["thermal:satchel", "minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
+
+[Mobs]
+	#If TRUE, the Basalz Mob is enabled.
+	Basalz = true
+	#If TRUE, the Blitz Mob is enabled.
+	Blitz = true
+	#If TRUE, the Blizz Mob is enabled.
+	Blizz = true
+	#If TRUE, the Blitz can occasionally call down lightning bolts.
+	"Blitz Lightning" = true
+
+[Augments]
+	#If TRUE, Side Reconfiguration is enabled by default on most augmentable blocks which support it.
+	#If FALSE, an augment is required.
+	#This setting does not control ALL blocks.
+	"Default Side Reconfiguration" = true
+	#If TRUE, Redstone Control is enabled by default on most augmentable blocks which support it.
+	#If FALSE, an augment is required.
+	#This setting does not control ALL blocks.
+	"Default Redstone Control" = true
+	#If TRUE, XP Storage is enabled by default on most augmentable blocks which support it.
+	#If FALSE, an augment is required.
+	#This setting does not control ALL blocks.
+	"Default XP Storage" = false
+
+[Villagers]
+	#If TRUE, trades will be added to various Villagers.
+	"Enable Villager Trades" = true
+	#If TRUE, trades will be added to the Wandering Trader.
+	"Enable Wandering Trader Trades" = true
+
+[Devices]
+
+	[Devices.TreeExtractor]
+		#This sets the base time constant (in ticks) for the Arboreal Extractor.
+		#Range: 20 ~ 72000
+		"Time Constant" = 500
+
+	[Devices.Composter]
+		#This sets the base time constant (in ticks) for the Batch Composter.
+		#Range: 20 ~ 72000
+		"Time Constant" = 120
+		#If TRUE, the Batch Composter will have particle effects when operating.
+		Particles = true
+
+	[Devices.Fisher]
+		#This sets the base time constant (in ticks) for the Aquatic Entangler.
+		#Range: 400 ~ 72000
+		"Time Constant" = 4800
+		#This sets the time constant reduction (in ticks) per nearby Water source block for the Aquatic Entangler.
+		#Range: 1 ~ 1000
+		"Water Source Time Constant Reduction" = 20
+		#If TRUE, the Aquatic Entangler will have particle effects when operating.
+		Particles = true
+
+[Recipes]
+
+	[Recipes.Furnace]
+		#This sets the recipe energy multiplier for the Redstone Furnace. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Sawmill]
+		#This sets the recipe energy multiplier for the Sawmill. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Pulverizer]
+		#This sets the recipe energy multiplier for the Pulverizer. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Smelter]
+		#This sets the recipe energy multiplier for the Induction Smelter. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Insolator]
+		#This sets the recipe energy multiplier for the Phytogenic Insolator. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 0.5
+
+	[Recipes.Centrifuge]
+		#This sets the recipe energy multiplier for the Centrifugal Seperator. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Press]
+		#This sets the recipe energy multiplier for the Multiservo Press. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Crucible]
+		#This sets the recipe energy multiplier for the Magma Crucible. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Chiller]
+		#This sets the recipe energy multiplier for the Blast Chiller. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Refinery]
+		#This sets the recipe energy multiplier for the Fractionating Still. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Pyrolyzer]
+		#This sets the recipe energy multiplier for the Pyrolyzer. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Bottler]
+		#If TRUE, Bucket filling recipes will be automatically created for the Fluid Encapsulator.
+		"Default Bucket Recipes" = true
+		#If TRUE, Potion filling recipes will be automatically created for the Fluid Encapsulator.
+		"Default Potion Recipes" = true
+		#This sets the recipe energy multiplier for the Fluid Encapsulator. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+		#If TRUE, Florb filling recipes will be automatically created for the Fluid Encapsulator.
+		"Default Florb Recipes" = true
+
+	[Recipes.Brewer]
+		#If TRUE, default Potion recipes will be automatically created for the Alchemical Imbuer.
+		"Default Potion Recipes" = true
+		#This sets the recipe energy multiplier for the Crystallizer. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+	[Recipes.Crafter]
+		#This sets the recipe energy multiplier for the Sequential Fabricator. This scales all recipe energy requirements.
+		#Range: 0.0625 ~ 16.0
+		"Energy Multiplier" = 1.0
+
+[Dynamos]
+
+	[Dynamos.Stirling]
+		#This sets the base power generation (RF/t) for the Stirling Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 40
+
+	[Dynamos.Compression]
+		#This sets the base power generation (RF/t) for the Compression Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 250
+
+	[Dynamos.Magmatic]
+		#This sets the base power generation (RF/t) for the Magmatic Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 60
+
+	[Dynamos.Numismatic]
+		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 2500
+
+	[Dynamos.Lapidary]
+		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 40
+
+	[Dynamos.Disenchantment]
+		#This sets the base power generation (RF/t) for the Disenchantment Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 40
+
+	[Dynamos.Gourmand]
+		#This sets the base power generation (RF/t) for the Gourmand Dynamo.
+		#Range: 10 ~ 32000
+		"Base Power" = 40
+
+[Machines]
+
+	[Machines.Furnace]
+		#This sets the base power consumption (RF/t) for the Redstone Furnace.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Sawmill]
+		#This sets the base power consumption (RF/t) for the Sawmill.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Pulverizer]
+		#This sets the base power consumption (RF/t) for the Pulverizer.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Smelter]
+		#This sets the base power consumption (RF/t) for the Induction Smelter.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Insolator]
+		#This sets the base power consumption (RF/t) for the Phytogenic Insolator.
+		#Range: 1 ~ 32000
+		"Base Power" = 10
+
+	[Machines.Centrifuge]
+		#This sets the base power consumption (RF/t) for the Centrifugal Separator.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Press]
+		#This sets the base power consumption (RF/t) for the Multiservo Press.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Crucible]
+		#This sets the base power consumption (RF/t) for the Magma Crucible.
+		#Range: 1 ~ 32000
+		"Base Power" = 80
+
+	[Machines.Chiller]
+		#This sets the base power consumption (RF/t) for the Blast Chiller.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Refinery]
+		#This sets the base power consumption (RF/t) for the Fractionating Still.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Pyrolyzer]
+		#This sets the base power consumption (RF/t) for the Pyrolyzer.
+		#Range: 1 ~ 32000
+		"Base Power" = 5
+
+	[Machines.Bottler]
+		#This sets the base power consumption (RF/t) for the Fluid Encapsulator.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+
+	[Machines.Brewer]
+		#This sets the base power consumption (RF/t) for the Crystallizer.
+		#Range: 1 ~ 32000
+		"Base Power" = 5
+
+	[Machines.Crafter]
+		#This sets the base power consumption (RF/t) for the Sequential Fabricator.
+		#Range: 1 ~ 32000
+		"Base Power" = 20
+

@@ -1,0 +1,39 @@
+{
+    "entity": "minecraft:slime",
+    "subtypes": [
+        "tconstruct:earth_slime",
+        "twilightforest:maze_slime",
+        "twilightforest:slime_beetle"
+    ],
+    "name": "entity.minecraft.slime",
+    "name_color": "#00FFFFFF",
+    "gui_scale": 2,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.slime",
+    "fabricator_drops": [{
+            "item": "minecraft:slime_ball",
+            "count": 32
+        },
+        {
+            "item": "minecraft:slime_block",
+            "count": 8
+        },
+        {
+            "item": "gtceu:nickel_ingot",
+            "count": 4
+        },
+        {
+            "item": "gtceu:platinum_credit",
+            "count": 1
+        }
+    ]
+}

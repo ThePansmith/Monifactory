@@ -1,0 +1,47 @@
+
+[Processor]
+	#Ticks
+	base_time = 240
+	#FE per Tick
+	#Better use value multiple of 8
+	base_power = 128
+	#GT EU Amperage
+	gteu_amperage = 2
+	#GT EU direct support enabled?
+	#0 - disabled, 1 - enabled EU and FE, 2 - EU only
+	gteu_support = 1
+	#Enable explosion on wrong GE EU amperage
+	gteu_explode = false
+	#Generally used for server optimization. Processors will skip defined amount of ticks then and do nothing.
+	#This won't affect recipe production performance
+	#Let's say it will skip 2 ticks, and then it will multiply recipe progress by amount if skipped ticks.
+	#So it won't do the job each tick. But production will be the same as if it was done each tick.
+	#This only works if processor has recipe in work
+	#May lead to unknown issues, Please test first
+	#Range: 0 ~ 10
+	skip_ticks = 0
+	#Allow processor registration: rock_crusher, decay_hastener, irradiator, nuclear_furnace, extractor, electrolyzer, pressurizer, alloy_smelter, melter, analyzer, ingot_former, pump, fuel_reprocessor, leacher, crystallizer, assembler, steam_turbine, supercooler, centrifuge, chemical_reactor, fluid_infuser, isotope_separator, fluid_enricher, gas_scrubber, manufactory
+	register_processor = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
+	#Processor power: rock_crusher, decay_hastener, irradiator, nuclear_furnace, extractor, electrolyzer, pressurizer, alloy_smelter, melter, analyzer, ingot_former, pump, fuel_reprocessor, leacher, crystallizer, assembler, steam_turbine, supercooler, centrifuge, chemical_reactor, fluid_infuser, isotope_separator, fluid_enricher, gas_scrubber, manufactory
+	processor_power = [20, 20, 0, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+	#Time for processor to proceed recipe: rock_crusher, decay_hastener, irradiator, nuclear_furnace, extractor, electrolyzer, pressurizer, alloy_smelter, melter, analyzer, ingot_former, pump, fuel_reprocessor, leacher, crystallizer, assembler, steam_turbine, supercooler, centrifuge, chemical_reactor, fluid_infuser, isotope_separator, fluid_enricher, gas_scrubber, manufactory
+	processor_time = [200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200]
+
+#Settings for In situ leaching
+[in_situ_leaching]
+	#Enable veins generation.
+	enable_veins = true
+	#Min and max values of blocks per vein.
+	#Result amount will be random value in this range.
+	blocks_per_vein = [30000, 70000]
+	#Veins rarity. Bigger value - less veins.
+	#Range: 1 ~ 5000
+	veins_rarity = 100
+	#All veins will have random ores. It will ignore vein settings
+	randomized_ores = false
+	#Add new veins to generation for Immersive Engineering.
+	add_ie_veins = true
+	#Allow to leach veins from Immersive Engineering.
+	#To do so, you need to put IE core sample into leacher.
+	allow_to_leach_ie_veins = true
+

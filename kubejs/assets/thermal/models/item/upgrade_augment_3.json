@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thermal:item/augments/upgrade_augment_3",
+    "layer1": "thermal:item/augments/upgrade_augment_3_lights",
+    "layer2": "thermal:item/augments/upgrade_augment_anim"
+  }
+}

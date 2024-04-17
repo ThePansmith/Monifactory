@@ -1,0 +1,448 @@
+
+#Configure advancements
+[advancements]
+	#Enable/Disable the Thank You 6M advancement
+	enableThankYou6M = true
+
+#Configure Items
+[items]
+
+	#coal equipment Configuration
+	[items.coal]
+		#coal armor: enable/disable full set effects
+		enableArmorEffects = true
+		#coal weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+	#lapis equipment Configuration
+	[items.lapis]
+		#lapis armor: enable/disable full set effects
+		enableArmorEffects = true
+		#lapis weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+	#redstone equipment Configuration
+	[items.redstone]
+		#redstone armor: enable/disable full set effects
+		enableArmorEffects = true
+		#redstone weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+	#chicken equipment Configuration
+	[items.chicken]
+		#chicken armor: enable/disable full set effects
+		enableArmorEffects = true
+		#chicken weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+	#slime equipment Configuration
+	[items.slime]
+		#slime armor: enable/disable full set effects
+		enableArmorEffects = true
+		#slime weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+	#emerald equipment Configuration
+	[items.emerald]
+		#emerald armor: enable/disable full set effects
+		enableArmorEffects = true
+		#emerald weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+	#obsidian equipment Configuration
+	[items.obsidian]
+		#obsidian armor: enable/disable full set effects
+		enableArmorEffects = true
+		#obsidian weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+	#infused_lava equipment Configuration
+	[items.infused_lava]
+		#infused_lava armor: enable/disable full set effects
+		enableArmorEffects = true
+		#infused_lava weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+		#Infused Lava Extra 
+		[items.infused_lava.extra]
+			#Infused Lava Tools: Smelting Recipe Input (Blocks)
+			smeltingInput = ["minecraft:iron_ore", "minecraft:gold_ore", "minecraft:sand", "minecraft:sandstone", "minecraft:wet_sponge", "minecraft:clay", "minecraft:stone_bricks", "minecraft:cobblestone", "minecraft:stone", "minecraft:acacia_log", "minecraft:birch_log", "minecraft:dark_oak_log", "minecraft:jungle_log", "minecraft:oak_log", "minecraft:spruce_log", "minecraft:netherrack", "minecraft:ancient_debris", "minecraft:stone_bricks", "armorplus:ore_lava_crystal", "armorplus:ore_frost_crystal"]
+			#Infused Lava Tools: Smelting Recipe Output (Items)
+			smeltingOutput = ["minecraft:iron_ingot", "minecraft:gold_ingot", "minecraft:glass", "minecraft:smooth_sandstone", "minecraft:sponge", "minecraft:terracotta", "minecraft:cracked_stone_bricks", "minecraft:stone", "minecraft:stone", "minecraft:charcoal", "minecraft:charcoal", "minecraft:charcoal", "minecraft:charcoal", "minecraft:charcoal", "minecraft:charcoal", "minecraft:nether_brick", "minecraft:netherite_scrap", "minecraft:cracked_stone_bricks", "armorplus:infused_lava_crystal", "armorplus:infused_frost_crystal"]
+
+	#frost equipment Configuration
+	[items.frost]
+		#frost armor: enable/disable full set effects
+		enableArmorEffects = true
+		#frost weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+	#frost_lava equipment Configuration
+	[items.frost_lava]
+		#frost_lava armor: enable/disable full set effects
+		enableArmorEffects = true
+		#frost_lava weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+	#guardian extended equipment Configuration
+	[items.guardian]
+		#guardian armor: enable/disable full set effects
+		enableArmorEffects = true
+		#guardian weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+		[items.guardian.effects]
+			#guardian armor: enable/disable night vision
+			enableNIGHT_VISION = true
+			#guardian armor: night vision amplifier
+			amplifierNIGHT_VISION = 0
+			#guardian armor: enable/disable water breathing
+			enableWATER_BREATHING = true
+			#guardian armor: water breathing amplifier
+			amplifierWATER_BREATHING = 0
+			#guardian armor: enable/disable strength
+			enableSTRENGTH = false
+			#guardian armor: strength amplifier
+			amplifierSTRENGTH = 0
+			#guardian armor: enable/disable speed
+			enableSPEED = false
+			#guardian armor: speed amplifier
+			amplifierSPEED = 0
+			#guardian armor: enable/disable haste
+			enableHASTE = false
+			#guardian armor: haste amplifier
+			amplifierHASTE = 0
+			#guardian armor: enable/disable jump boost
+			enableJUMP_BOOST = true
+			#guardian armor: jump boost amplifier
+			amplifierJUMP_BOOST = 1
+			#guardian armor: enable/disable regeneration
+			enableREGENERATION = false
+			#guardian armor: regeneration amplifier
+			amplifierREGENERATION = 0
+			#guardian armor: enable/disable resistance
+			enableRESISTANCE = false
+			#guardian armor: resistance amplifier
+			amplifierRESISTANCE = 0
+			#guardian armor: enable/disable fire resistance
+			enableFIRE_RESISTANCE = false
+			#guardian armor: fire resistance amplifier
+			amplifierFIRE_RESISTANCE = 0
+			#guardian armor: enable/disable saturation
+			enableSATURATION = false
+			#guardian armor: saturation amplifier
+			amplifierSATURATION = 0
+			#guardian armor: enable/disable invisibility
+			enableINVISIBILITY = false
+			#guardian armor: invisibility amplifier
+			amplifierINVISIBILITY = 0
+			#guardian armor: enable/disable health boost
+			enableHEALTH_BOOST = false
+			#guardian armor: health boost amplifier
+			amplifierHEALTH_BOOST = 0
+			#guardian armor: enable/disable absorption
+			enableABSORPTION = false
+			#guardian armor: absorption amplifier
+			amplifierABSORPTION = 0
+			#guardian armor: enable/disable slow falling
+			enableSLOW_FALLING = false
+			#guardian armor: slow falling amplifier
+			amplifierSLOW_FALLING = 0
+			#guardian armor: enable/disable flight
+			enableFLIGHT = false
+			#guardian armor: enable/disable wither immunity
+			enableWITHER_IMMUNITY = false
+			#guardian armor: enable/disable natural immunity
+			enableNATURAL_IMMUNITY = false
+			#guardian armor: enable/disable fire extinguish
+			enableFIRE_EXTINGUISH = true
+
+	#super_star extended equipment Configuration
+	[items.super_star]
+		#super_star armor: enable/disable full set effects
+		enableArmorEffects = true
+		#super_star weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+		[items.super_star.effects]
+			#super_star armor: enable/disable night vision
+			enableNIGHT_VISION = false
+			#super_star armor: night vision amplifier
+			amplifierNIGHT_VISION = 0
+			#super_star armor: enable/disable water breathing
+			enableWATER_BREATHING = false
+			#super_star armor: water breathing amplifier
+			amplifierWATER_BREATHING = 0
+			#super_star armor: enable/disable strength
+			enableSTRENGTH = false
+			#super_star armor: strength amplifier
+			amplifierSTRENGTH = 0
+			#super_star armor: enable/disable speed
+			enableSPEED = false
+			#super_star armor: speed amplifier
+			amplifierSPEED = 0
+			#super_star armor: enable/disable haste
+			enableHASTE = false
+			#super_star armor: haste amplifier
+			amplifierHASTE = 0
+			#super_star armor: enable/disable jump boost
+			enableJUMP_BOOST = false
+			#super_star armor: jump boost amplifier
+			amplifierJUMP_BOOST = 0
+			#super_star armor: enable/disable regeneration
+			enableREGENERATION = true
+			#super_star armor: regeneration amplifier
+			amplifierREGENERATION = 0
+			#super_star armor: enable/disable resistance
+			enableRESISTANCE = false
+			#super_star armor: resistance amplifier
+			amplifierRESISTANCE = 0
+			#super_star armor: enable/disable fire resistance
+			enableFIRE_RESISTANCE = true
+			#super_star armor: fire resistance amplifier
+			amplifierFIRE_RESISTANCE = 0
+			#super_star armor: enable/disable saturation
+			enableSATURATION = false
+			#super_star armor: saturation amplifier
+			amplifierSATURATION = 0
+			#super_star armor: enable/disable invisibility
+			enableINVISIBILITY = false
+			#super_star armor: invisibility amplifier
+			amplifierINVISIBILITY = 0
+			#super_star armor: enable/disable health boost
+			enableHEALTH_BOOST = false
+			#super_star armor: health boost amplifier
+			amplifierHEALTH_BOOST = 0
+			#super_star armor: enable/disable absorption
+			enableABSORPTION = true
+			#super_star armor: absorption amplifier
+			amplifierABSORPTION = 0
+			#super_star armor: enable/disable slow falling
+			enableSLOW_FALLING = false
+			#super_star armor: slow falling amplifier
+			amplifierSLOW_FALLING = 0
+			#super_star armor: enable/disable flight
+			enableFLIGHT = false
+			#super_star armor: enable/disable wither immunity
+			enableWITHER_IMMUNITY = true
+			#super_star armor: enable/disable natural immunity
+			enableNATURAL_IMMUNITY = false
+			#super_star armor: enable/disable fire extinguish
+			enableFIRE_EXTINGUISH = true
+
+	#ender_dragon extended equipment Configuration
+	[items.ender_dragon]
+		#ender_dragon armor: enable/disable full set effects
+		enableArmorEffects = true
+		#ender_dragon weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+		[items.ender_dragon.effects]
+			#ender_dragon armor: enable/disable night vision
+			enableNIGHT_VISION = false
+			#ender_dragon armor: night vision amplifier
+			amplifierNIGHT_VISION = 0
+			#ender_dragon armor: enable/disable water breathing
+			enableWATER_BREATHING = false
+			#ender_dragon armor: water breathing amplifier
+			amplifierWATER_BREATHING = 0
+			#ender_dragon armor: enable/disable strength
+			enableSTRENGTH = false
+			#ender_dragon armor: strength amplifier
+			amplifierSTRENGTH = 0
+			#ender_dragon armor: enable/disable speed
+			enableSPEED = false
+			#ender_dragon armor: speed amplifier
+			amplifierSPEED = 0
+			#ender_dragon armor: enable/disable haste
+			enableHASTE = false
+			#ender_dragon armor: haste amplifier
+			amplifierHASTE = 0
+			#ender_dragon armor: enable/disable jump boost
+			enableJUMP_BOOST = false
+			#ender_dragon armor: jump boost amplifier
+			amplifierJUMP_BOOST = 0
+			#ender_dragon armor: enable/disable regeneration
+			enableREGENERATION = false
+			#ender_dragon armor: regeneration amplifier
+			amplifierREGENERATION = 0
+			#ender_dragon armor: enable/disable resistance
+			enableRESISTANCE = false
+			#ender_dragon armor: resistance amplifier
+			amplifierRESISTANCE = 0
+			#ender_dragon armor: enable/disable fire resistance
+			enableFIRE_RESISTANCE = true
+			#ender_dragon armor: fire resistance amplifier
+			amplifierFIRE_RESISTANCE = 0
+			#ender_dragon armor: enable/disable saturation
+			enableSATURATION = false
+			#ender_dragon armor: saturation amplifier
+			amplifierSATURATION = 0
+			#ender_dragon armor: enable/disable invisibility
+			enableINVISIBILITY = false
+			#ender_dragon armor: invisibility amplifier
+			amplifierINVISIBILITY = 0
+			#ender_dragon armor: enable/disable health boost
+			enableHEALTH_BOOST = false
+			#ender_dragon armor: health boost amplifier
+			amplifierHEALTH_BOOST = 0
+			#ender_dragon armor: enable/disable absorption
+			enableABSORPTION = false
+			#ender_dragon armor: absorption amplifier
+			amplifierABSORPTION = 0
+			#ender_dragon armor: enable/disable slow falling
+			enableSLOW_FALLING = true
+			#ender_dragon armor: slow falling amplifier
+			amplifierSLOW_FALLING = 0
+			#ender_dragon armor: enable/disable flight
+			enableFLIGHT = true
+			#ender_dragon armor: enable/disable wither immunity
+			enableWITHER_IMMUNITY = true
+			#ender_dragon armor: enable/disable natural immunity
+			enableNATURAL_IMMUNITY = false
+			#ender_dragon armor: enable/disable fire extinguish
+			enableFIRE_EXTINGUISH = true
+
+	#slayer extended equipment Configuration
+	[items.slayer]
+		#slayer armor: enable/disable full set effects
+		enableArmorEffects = true
+		#slayer weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+		[items.slayer.effects]
+			#slayer armor: enable/disable night vision
+			enableNIGHT_VISION = false
+			#slayer armor: night vision amplifier
+			amplifierNIGHT_VISION = 0
+			#slayer armor: enable/disable water breathing
+			enableWATER_BREATHING = true
+			#slayer armor: water breathing amplifier
+			amplifierWATER_BREATHING = 0
+			#slayer armor: enable/disable strength
+			enableSTRENGTH = false
+			#slayer armor: strength amplifier
+			amplifierSTRENGTH = 0
+			#slayer armor: enable/disable speed
+			enableSPEED = false
+			#slayer armor: speed amplifier
+			amplifierSPEED = 0
+			#slayer armor: enable/disable haste
+			enableHASTE = false
+			#slayer armor: haste amplifier
+			amplifierHASTE = 0
+			#slayer armor: enable/disable jump boost
+			enableJUMP_BOOST = true
+			#slayer armor: jump boost amplifier
+			amplifierJUMP_BOOST = 1
+			#slayer armor: enable/disable regeneration
+			enableREGENERATION = true
+			#slayer armor: regeneration amplifier
+			amplifierREGENERATION = 0
+			#slayer armor: enable/disable resistance
+			enableRESISTANCE = false
+			#slayer armor: resistance amplifier
+			amplifierRESISTANCE = 0
+			#slayer armor: enable/disable fire resistance
+			enableFIRE_RESISTANCE = true
+			#slayer armor: fire resistance amplifier
+			amplifierFIRE_RESISTANCE = 0
+			#slayer armor: enable/disable saturation
+			enableSATURATION = false
+			#slayer armor: saturation amplifier
+			amplifierSATURATION = 0
+			#slayer armor: enable/disable invisibility
+			enableINVISIBILITY = false
+			#slayer armor: invisibility amplifier
+			amplifierINVISIBILITY = 0
+			#slayer armor: enable/disable health boost
+			enableHEALTH_BOOST = false
+			#slayer armor: health boost amplifier
+			amplifierHEALTH_BOOST = 0
+			#slayer armor: enable/disable absorption
+			enableABSORPTION = true
+			#slayer armor: absorption amplifier
+			amplifierABSORPTION = 0
+			#slayer armor: enable/disable slow falling
+			enableSLOW_FALLING = true
+			#slayer armor: slow falling amplifier
+			amplifierSLOW_FALLING = 0
+			#slayer armor: enable/disable flight
+			enableFLIGHT = true
+			#slayer armor: enable/disable wither immunity
+			enableWITHER_IMMUNITY = true
+			#slayer armor: enable/disable natural immunity
+			enableNATURAL_IMMUNITY = true
+			#slayer armor: enable/disable fire extinguish
+			enableFIRE_EXTINGUISH = true
+
+	#enhanced equipment Configuration
+	[items.enhanced]
+		#enhanced armor: enable/disable full set effects
+		enableArmorEffects = true
+		#enhanced weapons: enable/disable on hit effects
+		enableWeaponEffects = true
+
+#Enchantment Configuration
+[enchantments]
+	#is a list of registry names that will not work with the enchantment "Soul Harden"
+	disallowWithSoulHardenList = ["minecraft:mending", "minecraft:unbreaking", "minecraft:vanishing_curse"]
+
+#Mob Drops Configuration
+[drops]
+
+	#wither_boss drop configuration
+	[drops.wither_boss]
+		#ArmorPlus's wither_boss trophy drops: enable/disable  (CURRENTLY DISABLED BY THE MOD)
+		enableTrophyDrops = false
+		#ArmorPlus's wither_boss regular drops: enable/disable
+		enableBossRegularDrops = true
+		#ArmorPlus's wither_boss soul drops: enable/disable
+		enableBossSoulDrops = true
+
+	#ender_dragon drop configuration
+	[drops.ender_dragon]
+		#ArmorPlus's ender_dragon trophy drops: enable/disable  (CURRENTLY DISABLED BY THE MOD)
+		enableTrophyDrops = false
+		#ArmorPlus's ender_dragon regular drops: enable/disable
+		enableBossRegularDrops = true
+		#ArmorPlus's ender_dragon soul drops: enable/disable
+		enableBossSoulDrops = true
+
+	#elder_guardian drop configuration
+	[drops.elder_guardian]
+		#ArmorPlus's elder_guardian trophy drops: enable/disable  (CURRENTLY DISABLED BY THE MOD)
+		enableTrophyDrops = false
+		#ArmorPlus's elder_guardian regular drops: enable/disable
+		enableBossRegularDrops = true
+		#ArmorPlus's elder_guardian soul drops: enable/disable
+		enableBossSoulDrops = true
+
+	#wither_skeleton drop configuration
+	[drops.wither_skeleton]
+		#ArmorPlus's wither_skeleton regular drops: enable/disable
+		enableRegularDrops = true
+		#ArmorPlus's wither_skeleton soul drops: enable/disable
+		enableSoulDrops = true
+
+	#guardian drop configuration
+	[drops.guardian]
+		#ArmorPlus's guardian regular drops: enable/disable
+		enableRegularDrops = true
+		#ArmorPlus's guardian soul drops: enable/disable
+		enableSoulDrops = true
+
+	#enderman drop configuration
+	[drops.enderman]
+		#ArmorPlus's enderman regular drops: enable/disable
+		enableRegularDrops = true
+		#ArmorPlus's enderman soul drops: enable/disable
+		enableSoulDrops = true
+
+	#blaze drop configuration
+	[drops.blaze]
+		#ArmorPlus's blaze regular drops: enable/disable
+		enableRegularDrops = true
+		#ArmorPlus's blaze soul drops: enable/disable
+		enableSoulDrops = true
+

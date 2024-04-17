@@ -1,0 +1,55 @@
+{
+    "pools": [
+      {
+        "name": "testassets:testloot",
+        "rolls": {
+          "min": 2,
+          "max": 5
+        },
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:emerald_block",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 3,
+                  "max": 6
+                }
+              }
+            ],
+            "weight": 2
+          },
+          {
+            "type": "item",
+            "name": "minecraft:gold_block",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 3,
+                  "max": 6
+                }
+              }
+            ],
+            "weight": 2
+          },
+          {
+            "type": "item",
+            "name": "minecraft:diamond_block",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 3,
+                  "max": 6
+                }
+              }
+            ],
+            "weight": 2
+          }
+        ]
+      }
+    ]
+  }

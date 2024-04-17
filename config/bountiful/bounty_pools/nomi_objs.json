@@ -1,0 +1,110 @@
+
+{
+	"content": {
+		"all_obj_wooden_widget": {
+			"type": "item",
+			"content": "kubejs:wooden_widget",
+			"amount": {
+				"min": 5,
+				"max": 25
+			},
+			"unitWorth": 2,
+			"rarity": "COMMON"
+		},
+
+		"all_obj_stone_widget": {
+			"type": "item",
+			"content": "kubejs:stone_widget",
+			"amount": {
+				"min": 5,
+				"max": 25
+			},
+			"unitWorth": 3,
+			"rarity": "COMMON"
+			
+		},
+		"all_obj_alloy_widget": {
+			"type": "item",
+			"content": "kubejs:alloy_widget",
+			"amount": {
+				"min": 2,
+				"max": 5
+			},
+			"unitWorth": 20,
+			"rarity": "RARE"
+		},
+		"all_obj_ender_widget": {
+			"type": "item",
+			"content": "kubejs:ender_widget",
+			"amount": {
+				"min": 2,
+				"max": 5
+			},
+			"unitWorth": 30,
+			"rarity": "EPIC"
+		},
+		"all_obj_lv_con": {
+			"type": "item",
+			"content": "gtceu:lv_conveyor_module",
+			"amount": {
+				"min": 1,
+				"max": 5
+			},
+			"unitWorth": 10,
+			"rarity": "UNCOMMON"
+		},
+		"all_obj_lv_pump": {
+			"type": "item",
+			"content": "gtceu:lv_electric_pump",
+			"amount": {
+				"min": 2,
+				"max": 4
+			},
+			"unitWorth": 12,
+			"rarity": "UNCOMMON"
+		},
+		"all_obj_lv_robot_arm": {
+			"type": "item",
+			"content": "gtceu:lv_robot_arm",
+			"amount": {
+				"min": 2,
+				"max": 5
+			},
+			"unitWorth": 24,
+			"rarity": "EPIC"
+		},
+		"all_obj_lv_circuit": {
+			"type": "item",
+			"content": "gtceu:basic_electronic_circuit",
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 8,
+			"rarity": "EPIC"
+		},
+
+		"all_obj_alloy_widget_legendary": {
+			"type": "item",
+			"content": "kubejs:alloy_widget",
+			"amount": {
+				"min": 6,
+				"max": 10
+			},
+			"unitWorth": 20,
+			"rarity": "LEGENDARY"
+		},
+
+		"all_obj_ender_widget_legendary": {
+			"type": "item",
+			"content": "kubejs:ender_widget",
+			"amount": {
+				"min": 6,
+				"max": 10
+			},
+			"unitWorth": 30,
+			"rarity": "LEGENDARY"
+		}
+	
+	}
+}

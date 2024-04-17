@@ -1,0 +1,63 @@
+{
+  "core": {
+    "notifications": true
+  },
+  "advanced": {
+    "recordingPath": "./replay_recordings/",
+    "cachePath": "./.replay_cache/",
+    "renderPath": "./replay_videos/",
+    "skipPostRenderGui": false,
+    "askForOpenEye": true,
+    "skipPostScreenshotGui": false,
+    "fullBrightness": "replaymod.gui.settings.fullbrightness.gamma",
+    "fullBrightness_valid_values": [
+      "replaymod.gui.settings.fullbrightness.gamma",
+      "replaymod.gui.settings.fullbrightness.nightvision",
+      "replaymod.gui.settings.fullbrightness.both"
+    ]
+  },
+  "recording": {
+    "recordSingleplayer": true,
+    "recordServer": true,
+    "indicator": true,
+    "autoStartRecording": true,
+    "autoPostProcess": true,
+    "renameDialog": true
+  },
+  "replay": {
+    "showChat": true,
+    "showServerIPs": true,
+    "camera": "replaymod.camera.classic",
+    "camera_valid_values": [],
+    "legacyMainMenuButton": false,
+    "mainMenuButton": "DEFAULT",
+    "mainMenuButton_valid_values": [
+      "BIG",
+      "DEFAULT",
+      "TOP_LEFT",
+      "TOP_RIGHT",
+      "LEFT_OF_SINGLEPLAYER",
+      "RIGHT_OF_SINGLEPLAYER",
+      "LEFT_OF_MULTIPLAYER",
+      "RIGHT_OF_MULTIPLAYER",
+      "LEFT_OF_REALMS",
+      "RIGHT_OF_REALMS",
+      "LEFT_OF_MODS",
+      "RIGHT_OF_MODS"
+    ]
+  },
+  "render": {
+    "frameTimeFromWorldTime": false
+  },
+  "simplepathing": {
+    "pathpreview": true,
+    "autosync": true,
+    "timelineLength": 1800,
+    "interpolator": "replaymod.gui.editkeyframe.interpolator.catmullrom.name",
+    "interpolator_valid_values": [
+      "replaymod.gui.editkeyframe.interpolator.catmullrom.name",
+      "replaymod.gui.editkeyframe.interpolator.cubic.name",
+      "replaymod.gui.editkeyframe.interpolator.linear.name"
+    ]
+  }
+}

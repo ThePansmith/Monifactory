@@ -1,0 +1,14 @@
+{
+	// True to enable ClimbLaddersFast, false to disable.  This is also toggled by the toggle keybind in controls. [default = true]
+	"enabled": true,
+	// Speed for climbing up ladders [default = 0.4]
+	"climbUpSpeed": 0.4,
+	// Speed for climbing down ladders [default = 0.4]
+	"climbDownSpeed": 0.4,
+	// True to disable faster climbing on Scaffolding [default = false]
+	"disableScaffoldingFastClimbing": false,
+	// True to disable collisions with Scaffolding, allowing fast climbing down scaffolding just like ladders [default = true]
+	"disableScaffoldingCollision": true,
+	// True to disable faster climbing on vines [default = false]
+	"disableVinesFastClimbing": false
+}

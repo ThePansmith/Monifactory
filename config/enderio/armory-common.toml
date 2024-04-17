@@ -1,0 +1,43 @@
+
+[darksteel]
+
+	[darksteel.darksteelaxe]
+		energyUsePerFelledLog = 1500
+
+	[darksteel.darksteelpickaxe]
+		obsidianBreakPowerUse = 50
+		speedBoostWhenObsidian = 50
+		useObsidianBreakSpeedAtHardness = 30
+
+	[darksteel.upgrades]
+		spoonActivationCost = 4
+		forkActivationCost = 4
+		directActivationCost = 4
+
+		[darksteel.upgrades.empowered]
+			efficiencyBoost = 2
+			energyUsePerDamagePoint = 750
+			activationCost_l1 = 4
+			damageAbsorptionChance_l1 = 0.5
+			maxEnergy_l1 = 100000
+			activationCost_l2 = 8
+			damageAbsorptionChance_l2 = 0.6
+			maxEnergy_l2 = 150000
+			activationCost_l3 = 12
+			damageAbsorptionChance_l3 = 0.7
+			maxEnergy_l3 = 250000
+			activationCost_l4 = 16
+			damageAbsorptionChance_l4 = 0.85
+			maxEnergy_l4 = 1000000
+
+		[darksteel.upgrades.explosive]
+			explosiveEnergyPerBlock = 30
+			explosiveActivationCostI = 8
+			explosiveI = 1
+			explosiveActivationCostII = 12
+			explosiveII = 2
+			explosivePenetrationActivationCostI = 8
+			explosivePenetrationI = 1
+			explosivePenetrationActivationCostII = 12
+			explosivePenetrationII = 2
+

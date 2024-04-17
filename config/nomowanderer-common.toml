@@ -1,0 +1,34 @@
+
+[spawnCap]
+	#Maximum amount of each entity in the <entityWatchList> that is allowed within
+	#<spawnCapRadius> of its own entity type. Set to '0' to disable.
+	#Range: > 0
+	spawnCap = 0
+	#Radius used for the <spawnCap>.
+	#Range: 1 ~ 12
+	spawnCapRadius = 6
+
+[general]
+	#'true' to disable all spawns of entities in <entityWatchList> Ignores <radius>.
+	disableSpawns = false
+	#A list of 'modid:entityName' entries used for the various functions of this mod.
+	entityWatchList = ["minecraft:wandering_trader", "minecraft:trader_llama", "rats:plague_doctor", "supplementaries:red_merchant"]
+
+[noSolicitingSign]
+	#Entities from <entityWatchList> that spawn within <signRadius> (in chunks)
+	#around a No Soliciting Sign will be prevented from spawning.
+	#Range: 1 ~ 12
+	signRadius = 6
+
+[traderRug]
+	#Entities from <entityWatchList> that spawn within <rugRadius> (in chunks)
+	#around a Trader Rug will instead spawn on the Trader Rug.
+	#Range: 1 ~ 12
+	rugRadius = 6
+
+[talisman]
+	#Entities from <entityWatchList> that spawn within <talismanRadius> (in chunks)
+	#around a player with a No Soliciting Talisman will be prevented from spawning.
+	#Range: 1 ~ 12
+	talismanRadius = 6
+

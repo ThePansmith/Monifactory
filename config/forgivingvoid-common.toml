@@ -1,0 +1,24 @@
+#The distance to the minimum y level at which Forgiving Void should forgive the player and send them towards the sky.
+#Range: > -2147483648
+triggerAtDistanceBelow = 32
+#The amount of damage applied to the player when they land.
+#Range: > -2147483648
+damageOnFall = 19
+#The height from which the player will be falling after falling through the void.
+#Range: > -2147483648
+fallingHeight = 300
+#Prevent death on void fall (limits damage to leave at least 0.5 hearts)
+preventDeath = false
+#Set to false to make Forgiving Void not trigger in the overworld void (dimension 0).
+triggerInOverworld = true
+#Set to false to make Forgiving Void not trigger in the nether void (dimension -1).
+triggerInNether = true
+#Set to false to make Forgiving Void not trigger in the end void (dimension 1).
+triggerInEnd = true
+#Set to true if players are rubber-banding while falling through the void. If you're hosting a public server, you should only do this if you have proper anti-cheat installed.
+disableVanillaAntiCheatWhileFalling = true
+#List of dimension ids to be allowed for Forgiving Void. Options triggerInOverworld etc. take priority.
+dimensionAllowList = []
+#List of additional dimension ids to be deny-listed from Forgiving Void. Options triggerInOverworld etc. take priority. Ignored if dimensionAllowList is set.
+dimensionDenyList = []
+
