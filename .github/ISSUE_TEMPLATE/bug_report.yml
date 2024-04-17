@@ -1,0 +1,35 @@
+name: Bug Report
+description: Create a report to help reproduce and fix the issue
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before creating an issue, make sure to search the issue reports if you have the said issue before making a new one.
+        Please also make sure you are using the latest and/or check if the issue exists on the latest release.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Issue Summary
+      description: Briefly explain your issue in a few plain sentences, e.g. "X has Y issue" "When I do X, Y happens instead of Z". You may copy and paste the issue title here if it is suitable.
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Explain your issue in detail, including the steps to reproduce it. Issues without proper reproduction steps or explanation are open to being ignored/closed by maintainers.
+      placeholder: |
+        1. Try and craft X plate
+        2. It doesnt result in X plate
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell

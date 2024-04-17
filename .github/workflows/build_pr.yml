@@ -1,0 +1,59 @@
+name: Build
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Build what'
+        required: true
+        default: 'build-client'
+        type: choice
+        options:
+          - build-client
+          - build-server
+          - build-all
+jobs:
+  pack_pr:
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
+    name: Pack PR
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: pack_pr-${{ github.head_ref || github.run_id }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore Node cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.nvm
+          key: ${{ runner.os }}-node-18.19.1
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Restore mods cache
+        uses: actions/cache@v4
+        with:
+          # observe if this makes broken builds due to outdated mods (server onl)
+          path: |
+            dist/modcache
+            dist/cache.json
+          key: ${{ runner.os }}-mods-${{ hashFiles('manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-mods-
+      - name: Restore modlist cache
+        uses: actions/cache@v4
+        with:
+          path: dist/modlist.html
+          key: ${{ runner.os }}-modlist-${{ hashFiles('manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-modlist-
+      - name: Pack Modpack
+        env:
+          CFCORE_API_TOKEN: ${{ secrets.API_TOKEN }}
+        run: bash tools/build/build -c ${{ inputs.target }}
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-zipzip
+          path: dist/*.zip
+          if-no-files-found: error
+          overwrite: true
+          compression-level: 0
