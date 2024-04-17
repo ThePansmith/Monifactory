@@ -2127,7 +2127,13 @@
 			optional: true
 			rewards: [{
 				id: "21CED765A341AC89"
-				item: "gtceu:prospector.hv"
+				item: {
+					Count: 1b
+					id: "gtceu:prospector.hv"
+					tag: {
+							Charge: 1600000L
+					}
+				}
 				type: "item"
 			}]
 			tasks: [
