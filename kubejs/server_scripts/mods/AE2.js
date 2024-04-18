@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         A: 'gtceu:aluminium_plate',
         B: 'ae2:quartz_glass',
         C: 'ae2:annihilation_core',
-        D: 'kubejs:compressed_crafting_table',
+        D: 'minecraft:crafting_table',
         E: 'ae2:formation_core'
     }
     ).id('kubejs:ae2/molecular_assembler')

@@ -114,7 +114,6 @@ StartupEvents.registry('item', event => {
     event.create('pile_of_neutrons')
     event.create('neutronium_nugget')
     event.create('neutronium_ingot')
-    event.create('compressed_crafting_table').tooltip('Crafting Item. Cannot be placed.').texture('kubejs:item/removed_avaritia')
     event.create('infinity_plate');
 
     //Misc Items

@@ -496,7 +496,7 @@ ServerEvents.recipes(event => {
 			'GFG',
 			'SSS'
 	], {
-			C: 'kubejs:compressed_crafting_table',
+			C: 'minecraft:crafting_table',
 			F: 'gtceu:lv_machine_hull',
 			G: 'enderio:iron_gear',
 			R: 'kubejs:resonating_crystal',
