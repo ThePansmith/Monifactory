@@ -1,0 +1,18 @@
+name: Feature Request
+description: Suggest something to improve the pack
+title: "[Feature]: "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before creating an issue, make sure to search the issue reports if you have the said issue before making a new one.
+        Please also make sure you are using the latest and/or check if the issue exists on the latest release.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Suggestion
+      description: Briefly explain your suggestion in a few plain sentences; Tell me what it is, and how it can improve the pack. Feel free to include images.
+      placeholder: I think the pack could be improved by...
+    validations:
+      required: true
