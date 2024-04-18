@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/ThePansmith/Monifactory/main/tools/638448313865454254.png" width="250" height="250" alt="Logo"></p>
+<p align="center"><img src="https://github.com/ThePansmith/Monifactory/assets/70342772/ad4033c0-db17-407b-8b6e-283a46820d58" height="250" alt="Logo"></p>
 <h1 align="center">Monifactory CEu Modern</h1>
 <p align="center"><b><i>Port of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and its related mods.</i></b></p>
 <h1 align="center">
