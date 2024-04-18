@@ -701,7 +701,6 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			shape: "rectangle"
 			tasks: [{
 				id: "14CDC80A449BD388"
 				item: "ironfurnaces:copper_furnace"
