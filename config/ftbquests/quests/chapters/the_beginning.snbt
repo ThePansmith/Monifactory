@@ -224,7 +224,13 @@
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
-			description: ["The &3Lathe&r is an important machine that makes rods less expensive to craft."]
+			description: [
+				"The &3Lathe&r is an important machine that makes &6rods&r less expensive to craft. One ingot will yield two rods, doubling your output compared to manually crafting it"
+				""
+				"In addition to this, it is can also be used to craft &6screws&r and &6buzzsaw blades&r."
+				""
+				"You will need it later on to craft &6lenses&r"
+			]
 			id: "2A84013C14085C7B"
 			rewards: [{
 				id: "1344CFC701E35C5F"
