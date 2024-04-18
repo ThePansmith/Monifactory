@@ -567,5 +567,5 @@ ServerEvents.recipes(event => {
 	event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
 
     //Avaritia Replacement recipes
-    comapcting(event, 'kubejs:neutronium_ingot', 'minecraft:neutronium_nugget', true)
+    comapcting(event, 'kubejs:neutronium_ingot', 'kubejs:neutronium_nugget', true)
 })
