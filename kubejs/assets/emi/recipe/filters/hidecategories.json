@@ -180,6 +180,27 @@
             "category": "emi_loot:gameplay_drops"
         },
         {
+            "category": "minecraft:alchemy_bench"
+        },
+        {
+            "category": "minecraft:botanist_workbench"
+        },
+        {
+            "category": "minecraft:glassblower"
+        },
+        {
+            "category": "minecraft:carpenters_table"
+        },
+        {
+            "category": "minecraft:loom_table"
+        },
+        {
+            "category": "minecraft:mason_table"
+        },
+        {
+            "category": "minecraft:tinkering_table"
+        },
+        {
             "category": "create:automatic_shaped" 
         },
         {
@@ -206,6 +227,5 @@
         {
             "category": "gtceu:create_mixer" 
         }
-        
     ]
 }
