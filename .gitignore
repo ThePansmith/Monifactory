@@ -50,6 +50,7 @@ config/embeddium++.toml
 config/emi.css
 
 /config/**/*client.*
+!/config/**/darkmodeeverywhere-client.toml
 
 defaultconfigs/ftbultimine/ftbultimine-client.snbt
 defaultconfigs/ftbultimine/ftbultimine-server.snbt
