@@ -403,7 +403,7 @@ ServerEvents.recipes(event => {
         ], {
             I: 'kubejs:infinity_catalyst',
             N: 'gtceu:neutronium_plate',
-            P: 'kubejs:infinity_plate',
+            P: 'gtceu:infinity_plate',
             S: 'kubejs:sp_endgame.neutronium'
 
         }
