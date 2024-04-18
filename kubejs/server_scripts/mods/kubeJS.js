@@ -231,9 +231,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.minecraft.smelting('gtceu:dilithium_dust', 'gtceu:dilithium_ore')
 
+    event.remove({ output: 'gtceu:infinity_plate' })
     event.recipes.gtceu.bender('infinity_plate')
-        .itemInputs('avaritia:infinity_ingot')
-        .itemOutputs('kubejs:infinity_plate')
+        .itemInputs('gtceu:infinity_ingot')
+        .itemOutputs('gtceu:infinity_plate')
         .circuit(1)
         .duration(5000)
         .EUt(24)

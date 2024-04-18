@@ -111,7 +111,7 @@ StartupEvents.registry('item', event => {
     event.create('endest_star').displayName('§dEndest Star').glow(true)
     event.create('debug_laser').displayName('§dDebug Laser').glow(true)
     event.create('ender_energy_manipulator').displayName('Ender Energy Manipulator').glow(true)
-    event.create('infinity_plate');
+    //event.create('infinity_plate');
 
     //Jetpack Units
     event.create('empty_fluxed_jetpack_unit').displayName('Empty Fluxed Jetpack Unit')

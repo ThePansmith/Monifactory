@@ -565,8 +565,4 @@ ServerEvents.recipes(event => {
 	//Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
 	event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_log", "#minecraft:logs")
 	event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
-
-	// avaritia ext crafting table (unused, doesnt exist in 1.12)
-	event.remove({ output: "avaritia:extreme_crafting_table" })
-	event.remove({ output: "avaritia:record_fragment" })
 })

@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
 
     //INFINITY CATALYST
     event.recipes.extendedcrafting.shaped_table(
-        "avaritia:infinity_catalyst", [
+        "kubejs:infinity_catalyst", [
             'PPPPEPPPP',
             'PEPPEPPEP',
             'PPEEEEEPP',
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
             'PEPPEPPEP',
             'PPPPEPPPP',
         ], {
-            P: 'avaritia:pile_of_neutrons',
+            P: 'kubejs:pile_of_neutrons',
             E: "kubejs:eternal_catalyst",
             C: 'draconicevolution:chaotic_core',
             H: 'kubejs:heart_of_a_universe'
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
 
 	// infinity ingot
 	event.recipes.extendedcrafting.shaped_table(
-		'avaritia:infinity_ingot', [
+		'gtceu:infinity_ingot', [
             '         ',
             '     BAAA',
             '  BAAADCA',
@@ -62,11 +62,11 @@ ServerEvents.recipes(event => {
             'AAAB     ',
             '         '
 		], {
-			A: 'avaritia:neutronium_ingot',
-			B: 'avaritia:neutronium_nugget',
+			A: 'kubejs:neutronium_ingot',
+			B: 'kubejs:neutronium_nugget',
 			C: 'kubejs:omnium_ingot',
 			D: 'kubejs:eternal_catalyst',
-			E: 'avaritia:infinity_catalyst',
+			E: 'kubejs:infinity_catalyst',
 		}
 	).id('kubejs:extended/infinity_ingot')
 
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
 			K: 'gtceu:rhodium_plated_palladium_ingot',
 			L: 'gtceu:electrum_flux_ingot',
 			M: 'gtceu:dark_soularium_ingot',
-			N: 'avaritia:crystal_matrix_ingot',
+			N: 'gtceu:crystal_matrix_ingot',
 			O: 'gtceu:end_steel_ingot',
 			P: 'gtceu:electrical_steel_ingot',
 			Q: 'gtceu:signalum_ingot',

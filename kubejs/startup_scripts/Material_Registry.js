@@ -6,30 +6,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('taranium', 149, 264, -1, null, 'Tn', false)
 })
 
-GTCEuStartupEvents.materialModification(() => {
-	const INFINITY = GTMaterials.get('infinity');
-	const CRYSTAL_MATRIX = GTMaterials.get('crystal_matrix');
-	// const OMNIUM = GTMaterials.get('omnium');
-
-	TagPrefix.ingot.setIgnored(CRYSTAL_MATRIX, 'avaritia:crystal_matrix_ingot');
-	TagPrefix.ingot.setIgnored(INFINITY, 'avaritia:infinity_ingot');		// TODO broken-ish, block & plate wont unify properly
-	// TagPrefix.ingot.setIgnored(OMNIUM, 'kubejs:omnium_ingot'); 			// TODO broken
-	TagPrefix.ingot.setIgnored(GTMaterials.Neutronium, 'avaritia:neutronium_ingot');
-
-	// TagPrefix.nugget.setIgnored(OMNIUM, 'extendedcrafting:the_ultimate_nugget');
-
-	// somehow breaks gt compacting recipies, explicitly commenting this here
-	// TagPrefix.block.setIgnored(CRYSTAL_MATRIX, 'avaritia:crystal_matrix_block');
-	// TagPrefix.block.setIgnored(INFINITY, 'avaritia:infinity_block') // idk i just cant unify this block it doesnt want to be unified
-	// TagPrefix.block.setIgnored(OMNIUM, 'extendedcrafting:the_ultimate_block');
-	// TagPrefix.block.setIgnored(GTMaterials.Neutronium, 'avaritia:neutronium_block');
-
-	//TagPrefix.plate.setIgnored(INFINITY, 'kubejs:infinity_plate')
-
-	TagPrefix.dustTiny.setIgnored(GTMaterials.Neutronium, 'avaritia:pile_of_neutrons');
-	INFINITY.setFormula("∞");
-})
-
 // Elemental materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("draconium")

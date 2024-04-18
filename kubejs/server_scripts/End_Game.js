@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
 
     // Crystal Matrix Materials
     event.shaped(
-        'avaritia:diamond_lattice', [
+        'kubejs:diamond_lattice', [
             'PBP',
             'BGB',
             'PBP'
@@ -108,11 +108,10 @@ ServerEvents.recipes(event => {
             G: 'gtceu:diamond_perfect',
             P: 'gtceu:diamond_plate'
         }
-    ).id('avaritia:diamond_lattice')
+    ).id('kubejs:diamond_lattice')
 
-    event.remove({id: 'avaritia:crystal_matrix_ingot' })
     event.recipes.extendedcrafting.shaped_table(
-        'avaritia:crystal_matrix_ingot', [
+        'gtceu:crystal_matrix_ingot', [
             '         ',
             '      DDD',
             '   DDDSLD',
@@ -124,14 +123,14 @@ ServerEvents.recipes(event => {
             '         '
         ], {
             D: 'minecraft:diamond',
-            L: 'avaritia:diamond_lattice',
+            L: 'kubejs:diamond_lattice',
             S: 'minecraft:nether_star'
         }
     )
 
 	// Handled by gregtech, left here incase of emergency
     // event.recipes.gtceu.bender("crystal_matrix_plate")
-    //     .itemInputs('avaritia:crystal_matrix_ingot')
+    //     .itemInputs('gtceu:crystal_matrix_ingot')
     //     .itemOutputs('kubejs:crystal_matrix_plate')
     //     .duration(98)
     //     .EUt(24)
@@ -192,7 +191,7 @@ ServerEvents.recipes(event => {
             "gtceu:hv_steam_turbine" ,
             "gtceu:steel_large_boiler" ,
             "solarflux:sp_de.chaotic",
-            "solarflux:sp_avaritia.neutronium",
+            "kubejs:sp_endgame.neutronium",
             // Row 3
             "thermal:upgrade_augment_3",
             "nuclearcraft:enderium_heat_sink",
@@ -252,7 +251,7 @@ ServerEvents.recipes(event => {
             "gtceu:hv_gas_turbine",
             "gtceu:tungstensteel_large_boiler",
             "solarflux:sp_de.chaotic",
-            "solarflux:sp_avaritia.neutronium",
+            "kubejs:sp_endgame.neutronium",
             // Row 9
             "solarflux:sp_1",
             "solarflux:sp_2",
@@ -333,7 +332,7 @@ ServerEvents.recipes(event => {
             F: 'gtceu:zpm_quantum_chest',
             G: 'gtceu:uv_quantum_chest',
             H: 'gtceu:uhv_quantum_chest',
-            I: 'avaritia:infinity_catalyst'
+            I: 'kubejs:infinity_catalyst'
         }
     )
 
@@ -358,7 +357,7 @@ ServerEvents.recipes(event => {
             F: 'gtceu:zpm_battery_buffer_16x',
             G: 'gtceu:uv_battery_buffer_16x',
             H: 'gtceu:uhv_battery_buffer_16x',
-            I: 'avaritia:infinity_catalyst'
+            I: 'kubejs:infinity_catalyst'
         }
     )
 
@@ -380,7 +379,7 @@ ServerEvents.recipes(event => {
             E: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}').weakNBT(),
             F: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').weakNBT(),
             H: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:hardened"}').weakNBT(),
-            I: 'avaritia:infinity_catalyst',
+            I: 'kubejs:infinity_catalyst',
             L: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:leadstone"}').weakNBT(),
             N: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),
             R: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
@@ -391,7 +390,7 @@ ServerEvents.recipes(event => {
 
     //Creative Solar Panel
     event.recipes.extendedcrafting.shaped_table(
-        'solarflux:sp_avaritia.infinity', [
+        'kubejs:sp_endgame.infinity', [
             'SNNNNNNNS',
             'NPPPNPPPN',
             'NPPPNPPPN',
@@ -402,10 +401,10 @@ ServerEvents.recipes(event => {
             'NPPPNPPPN',
             'SNNNNNNNS'
         ], {
-            I: 'avaritia:infinity_catalyst',
+            I: 'kubejs:infinity_catalyst',
             N: 'gtceu:neutronium_plate',
-            P: 'kubejs:infinity_plate',
-            S: 'solarflux:sp_avaritia.neutronium'
+            P: 'gtceu:infinity_plate',
+            S: 'kubejs:sp_endgame.neutronium'
 
         }
     )
@@ -455,7 +454,7 @@ ServerEvents.recipes(event => {
             S: 'draconicevolution:energy_core_stabilizer',
             R: 'draconicevolution:reactor_stabilizer',
             O: 'draconicevolution:reactor_core',
-            I: 'avaritia:infinity_catalyst'
+            I: 'kubejs:infinity_catalyst'
         }, 4
     )
 
@@ -473,20 +472,20 @@ ServerEvents.recipes(event => {
             'ABBBBBBBA'
         ], {
             A: "kubejs:creative_storage_component",
-            B: "avaritia:infinity_ingot",
+            B: "gtceu:infinity_ingot",
             C: "enderio:creative_power",
             D: "minecraft:bedrock",
             E: "minecraft:bedrock",
             F: "minecraft:bedrock",
             G: "minecraft:bedrock",
-            H: "avaritia:infinity_helmet",
-            I: "avaritia:infinity_chestplate",
+            H: "kubejs:infinity_helmet",
+            I: "kubejs:infinity_chestplate",
             J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').weakNBT(),
-            K: "avaritia:infinity_sword",
-            L: "avaritia:infinity_leggings",
-            M: "avaritia:infinity_boots",
+            K: "kubejs:infinity_sword",
+            L: "kubejs:infinity_leggings",
+            M: "kubejs:infinity_boots",
             N: "minecraft:bedrock",
-            S: "solarflux:sp_avaritia.infinity",
+            S: "kubejs:sp_endgame.infinity",
             T: "gtceu:creative_tank",
             U: "ae2:creative_energy_cell",
             W: "minecraft:bedrock",
@@ -494,10 +493,10 @@ ServerEvents.recipes(event => {
         }, 4
     )
 
-	//! avaritia endgame items
+	//! kubejs endgame items
 	// skullfire sword
 	event.recipes.extendedcrafting.shaped_table(
-		'avaritia:skullfire_sword', [
+		'kubejs:skullfire_sword', [
 			'       B ',
 			'      BIB',
 			'     BHB ',
@@ -509,7 +508,7 @@ ServerEvents.recipes(event => {
 			'A        ',
 		], {
 			A: 'nether_star',
-			B: 'avaritia:crystal_matrix_ingot',
+			B: 'gtceu:crystal_matrix_ingot',
 			C: '#minecraft:logs',
 			D: 'armorplus:wither_bone',
 			E: 'armorplus:redstone_sword',
@@ -522,7 +521,7 @@ ServerEvents.recipes(event => {
 	);
 	// sword of the cosmos
 	event.recipes.extendedcrafting.shaped_table(
-		'avaritia:infinity_sword', [
+		'kubejs:infinity_sword', [
 			'       BB',
 			'      BIB',
 			'     B B ',
@@ -533,20 +532,20 @@ ServerEvents.recipes(event => {
 			' C  D    ',
 			'A        ',
 		], {
-			A: 'avaritia:infinity_catalyst',
-			B: 'avaritia:infinity_ingot',
-			C: 'avaritia:neutronium_ingot',
-			D: 'avaritia:crystal_matrix_ingot',
+			A: 'kubejs:infinity_catalyst',
+			B: 'gtceu:infinity_ingot',
+			C: 'kubejs:neutronium_ingot',
+			D: 'gtceu:crystal_matrix_ingot',
 			E: 'armorplus:super_star_sword',
 			F: 'armorplus:ender_dragon_sword',
 			// G: 'draconicevolution:wyvern_sword', 	// not yet finished
 			// H: 'draconicevolution:draconic_sword', 	// same as this
-			I: 'avaritia:skullfire_sword'
+			I: 'kubejs:skullfire_sword'
 		}
 	);
 	// infinity helmet
 	event.recipes.extendedcrafting.shaped_table(
-		'avaritia:infinity_helmet', [
+		'kubejs:infinity_helmet', [
 			'  AAAAA  ',
 			' ABBDBBA ',
 			' ACCECCA ',
@@ -558,9 +557,9 @@ ServerEvents.recipes(event => {
 			'         ',
 		], {
 			// TODO readd the items once they exist
-			A: 'avaritia:neutronium_ingot',
+			A: 'kubejs:neutronium_ingot',
 			B: 'barrier', // the ultimate helmet
-			C: 'avaritia:infinity_ingot',
+			C: 'gtceu:infinity_ingot',
 			D: 'barrier', // draconic helm
 			E: 'barrier', // quarktech helmet
 			F: 'barrier' // wyvern helmet
@@ -568,7 +567,7 @@ ServerEvents.recipes(event => {
 	);
 	// infinity chestplate
 	event.recipes.extendedcrafting.shaped_table(
-		'avaritia:infinity_chestplate', [
+		'kubejs:infinity_chestplate', [
 			' AA   AA ',
 			'AAA   AAA',
 			'AAAA AAAA',
@@ -579,10 +578,10 @@ ServerEvents.recipes(event => {
 			' ABBBBBA ',
 			'  AAAAA  ',
 		], {
-			A: 'avaritia:neutronium_ingot',
+			A: 'kubejs:neutronium_ingot',
 			B: 'barrier', // the ultimate chestplate
-			C: 'avaritia:infinity_ingot',
-			D: 'avaritia:infinity_block',
+			C: 'gtceu:infinity_ingot',
+			D: 'gtceu:infinity_block',
 			E: 'barrier', // draconic chestplate
 			F: 'barrier', // wyvern chestplate
 			G: 'barrier', // quarktech chestplate
@@ -590,7 +589,7 @@ ServerEvents.recipes(event => {
 	);
 	// infinity leggings
 	event.recipes.extendedcrafting.shaped_table(
-		'avaritia:infinity_leggings', [
+		'kubejs:infinity_leggings', [
 			'AAAAAAAAA',
 			'AEBBBBBFA',
 			'ABA   ABA',
@@ -602,9 +601,9 @@ ServerEvents.recipes(event => {
 			'AAA   AAA',
         ], {
 			// TODO readd the items once they exist
-			A: 'avaritia:neutronium_ingot',
+			A: 'kubejs:neutronium_ingot',
 			B: 'barrier', // the ultimate leggings
-			C: 'avaritia:infinity_ingot',
+			C: 'gtceu:infinity_ingot',
 			D: 'barrier', // quarktech leggings
 			E: 'barrier', // draconic leggings
 			F: 'barrier', // wyvern leggings
@@ -612,7 +611,7 @@ ServerEvents.recipes(event => {
     );
 	// infinity boots
 	event.recipes.extendedcrafting.shaped_table(
-		'avaritia:infinity_boots', [
+		'kubejs:infinity_boots', [
 			' AAA AAA ',
 			' ADA ADA ',
 			' AEA AFA ',
@@ -623,9 +622,9 @@ ServerEvents.recipes(event => {
 			'         ',
 			'         ',
 		], {
-			A: 'avaritia:neutronium_ingot',
+			A: 'kubejs:neutronium_ingot',
 			B: 'barrier', // the ultimate boots
-			C: 'avaritia:infinity_ingot',
+			C: 'gtceu:infinity_ingot',
 			D: 'barrier', //quarktech boots
 			E: 'barrier', // draconic boots
 			F: 'barrier', // wyvern boots

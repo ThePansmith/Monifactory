@@ -2131,7 +2131,7 @@
 					Count: 1b
 					id: "gtceu:prospector.hv"
 					tag: {
-							Charge: 1600000L
+						Charge: 1600000L
 					}
 				}
 				type: "item"
