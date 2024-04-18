@@ -81,6 +81,10 @@ JEIEvents.hideItems(event => {
 
     // Wireless Chargers
     event.hide(['wirelesschargers:basic_wireless_block_charger', 'wirelesschargers:advanced_wireless_block_charger'])
+    
+    //Sophisticated Storage barrels
+    event.hide(/^sophisticatedstorage:.+barrel$/)
+    event.hide('sophisticatedstorage:barrel')
 })
 
 JEIEvents.hideFluids(event => {
