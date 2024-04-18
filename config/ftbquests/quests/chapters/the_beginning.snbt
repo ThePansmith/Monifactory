@@ -600,7 +600,7 @@
 					id: "trofers:large_pillar"
 					tag: {
 						BlockEntityTag: {
-							Trophy: "moniceu:steel"
+							Trophy: "monifactory:steel"
 						}
 					}
 				}
@@ -1399,7 +1399,7 @@
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
-								Trophy: "moniceu:alumnium"
+								Trophy: "monifactory:alumnium"
 							}
 						}
 					}

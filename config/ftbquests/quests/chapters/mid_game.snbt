@@ -490,7 +490,7 @@
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
-								Trophy: "moniceu:titanium"
+								Trophy: "monifactory:titanium"
 							}
 						}
 					}
@@ -2211,7 +2211,7 @@
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
-								Trophy: "moniceu:tungstensteel"
+								Trophy: "monifactory:tungstensteel"
 							}
 						}
 					}
