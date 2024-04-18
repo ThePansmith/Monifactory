@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
 
 	// infinity ingot
 	event.recipes.extendedcrafting.shaped_table(
-		'gtceu:infinity_ingot', [
+		'kubejs:infinity_ingot', [
             '         ',
             '     BAAA',
             '  BAAADCA',

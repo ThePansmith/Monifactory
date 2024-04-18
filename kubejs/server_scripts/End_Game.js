@@ -472,7 +472,7 @@ ServerEvents.recipes(event => {
             'ABBBBBBBA'
         ], {
             A: "kubejs:creative_storage_component",
-            B: "gtceu:infinity_ingot",
+            B: "kubejs:infinity_ingot",
             C: "enderio:creative_power",
             D: "minecraft:bedrock",
             E: "minecraft:bedrock",
@@ -533,7 +533,7 @@ ServerEvents.recipes(event => {
 			'A        ',
 		], {
 			A: 'kubejs:infinity_catalyst',
-			B: 'gtceu:infinity_ingot',
+			B: 'kubejs:infinity_ingot',
 			C: 'kubejs:neutronium_ingot',
 			D: 'gtceu:crystal_matrix_ingot',
 			E: 'armorplus:super_star_sword',
@@ -559,7 +559,7 @@ ServerEvents.recipes(event => {
 			// TODO readd the items once they exist
 			A: 'kubejs:neutronium_ingot',
 			B: 'barrier', // the ultimate helmet
-			C: 'gtceu:infinity_ingot',
+			C: 'kubejs:infinity_ingot',
 			D: 'barrier', // draconic helm
 			E: 'barrier', // quarktech helmet
 			F: 'barrier' // wyvern helmet
@@ -580,7 +580,7 @@ ServerEvents.recipes(event => {
 		], {
 			A: 'kubejs:neutronium_ingot',
 			B: 'barrier', // the ultimate chestplate
-			C: 'gtceu:infinity_ingot',
+			C: 'kubejs:infinity_ingot',
 			D: 'gtceu:infinity_block',
 			E: 'barrier', // draconic chestplate
 			F: 'barrier', // wyvern chestplate
@@ -603,7 +603,7 @@ ServerEvents.recipes(event => {
 			// TODO readd the items once they exist
 			A: 'kubejs:neutronium_ingot',
 			B: 'barrier', // the ultimate leggings
-			C: 'gtceu:infinity_ingot',
+			C: 'kubejs:infinity_ingot',
 			D: 'barrier', // quarktech leggings
 			E: 'barrier', // draconic leggings
 			F: 'barrier', // wyvern leggings
@@ -624,7 +624,7 @@ ServerEvents.recipes(event => {
 		], {
 			A: 'kubejs:neutronium_ingot',
 			B: 'barrier', // the ultimate boots
-			C: 'gtceu:infinity_ingot',
+			C: 'kubejs:infinity_ingot',
 			D: 'barrier', //quarktech boots
 			E: 'barrier', // draconic boots
 			F: 'barrier', // wyvern boots

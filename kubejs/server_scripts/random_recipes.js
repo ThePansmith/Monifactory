@@ -565,4 +565,8 @@ ServerEvents.recipes(event => {
 	//Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
 	event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_log", "#minecraft:logs")
 	event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
+
+    //Avaritia Replacement recipes
+    comapcting(event, 'kubejs:compressed_crafting_table', 'minecraft:crafting_table', true)
+    comapcting(event, 'kubejs:neutronium_ingot', 'minecraft:neutronium_nugget', true)
 })

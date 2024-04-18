@@ -101,6 +101,22 @@ StartupEvents.registry('item', event => {
     event.create('omnium_ingot').displayName("Omnium Ingot").glow(true).rarity("epic")
     event.create('creative_storage_component').displayName("Creative Storage Component").glow(true).rarity("epic")
 
+    //Avaritia Replacements
+    event.create('diamond_lattice')
+    event.create('infinity_catalyst')
+    event.create('infinity_ingot')
+    event.create('infinity_helmet').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
+    event.create('infinity_chestplate').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
+    event.create('infinity_sword').tooltip('Crafting Item. Not a functional weapon.').texture('kubejs:item/removed_avaritia')
+    event.create('infinity_leggings').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
+    event.create('infinity_boots').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
+    event.create('skullfire_sword').tooltip('Crafting Item. Not a functional weapon.')
+    event.create('pile_of_neutrons')
+    event.create('neutronium_nugget')
+    event.create('neutronium_ingot')
+    event.create('compressed_crafting_table').tooltip('Crafting Item. Cannot be placed.').texture('kubejs:item/removed_avaritia')
+    event.create('infinity_plate');
+
     //Misc Items
     event.create('grains_of_innocence').displayName("Grains of Innocence")
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
@@ -111,7 +127,6 @@ StartupEvents.registry('item', event => {
     event.create('endest_star').displayName('§dEndest Star').glow(true)
     event.create('debug_laser').displayName('§dDebug Laser').glow(true)
     event.create('ender_energy_manipulator').displayName('Ender Energy Manipulator').glow(true)
-    //event.create('infinity_plate');
 
     //Jetpack Units
     event.create('empty_fluxed_jetpack_unit').displayName('Empty Fluxed Jetpack Unit')

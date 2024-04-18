@@ -6,6 +6,30 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('taranium', 149, 264, -1, null, 'Tn', false)
 })
 
+// For unknown reasons, having this script causes a crash on world load. TODO Investigate
+
+// GTCEuStartupEvents.materialModification(() => {
+	// const INFINITY = GTMaterials.get('infinity');
+	// const OMNIUM = GTMaterials.get('omnium');
+
+	// TagPrefix.ingot.setIgnored(INFINITY, 'kubejs:infinity_ingot');		// TODO broken-ish, block & plate wont unify properly
+	// TagPrefix.ingot.setIgnored(OMNIUM, 'kubejs:omnium_ingot'); 			// TODO broken
+	//TagPrefix.ingot.setIgnored(GTMaterials.Neutronium, 'kubejs:neutronium_ingot');
+
+	// TagPrefix.nugget.setIgnored(OMNIUM, 'extendedcrafting:the_ultimate_nugget');
+
+	// somehow breaks gt compacting recipies, explicitly commenting this here
+	// TagPrefix.block.setIgnored(CRYSTAL_MATRIX, 'kubejs:crystal_matrix_block');
+	// TagPrefix.block.setIgnored(INFINITY, 'kubejs:infinity_block') // idk i just cant unify this block it doesnt want to be unified
+	// TagPrefix.block.setIgnored(OMNIUM, 'extendedcrafting:the_ultimate_block');
+	// TagPrefix.block.setIgnored(GTMaterials.Neutronium, 'avaritia:neutronium_block');
+
+	//TagPrefix.plate.setIgnored(INFINITY, 'kubejs:infinity_plate')
+
+	//TagPrefix.dustTiny.setIgnored(GTMaterials.Neutronium, 'kubejs:pile_of_neutrons');
+	// INFINITY.setFormula("∞");
+// })
+
 // Elemental materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("draconium")

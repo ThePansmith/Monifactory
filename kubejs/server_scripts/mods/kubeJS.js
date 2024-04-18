@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'gtceu:infinity_plate' })
     event.recipes.gtceu.bender('infinity_plate')
-        .itemInputs('gtceu:infinity_ingot')
+        .itemInputs('kubejs:infinity_ingot')
         .itemOutputs('gtceu:infinity_plate')
         .circuit(1)
         .duration(5000)
