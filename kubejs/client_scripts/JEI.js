@@ -2,7 +2,7 @@
 
 JEIEvents.hideItems(event => {
     //Hides useless items
-    event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'])
+    event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper', 'thermal:constantan_coin'])
 
     //i really hate these kind of mods
     event.hide('ironfurnaces:million_furnace') // rainbow furnace
@@ -26,7 +26,7 @@ JEIEvents.hideItems(event => {
 
     //EnderIO
     event.hide(['enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block', "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])
-    //EnderIO (grinding balls) haha grind my balls -clown
+    //EnderIO (grinding balls) haha grind my balls - Juicey
     event.hide(['enderio:soularium_grinding_ball', 'enderio:conductive_alloy_grinding_ball', 'enderio:pulsating_alloy_grinding_ball', 'enderio:redstone_alloy_grinding_ball', 'enderio:energetic_alloy_grinding_ball', 'enderio:vibrant_alloy_grinding_ball', 'enderio:copper_alloy_grinding_ball', 'enderio:dark_steel_grinding_ball', 'enderio:end_steel_grinding_ball'])
 
     //GT Steam Age
@@ -81,8 +81,15 @@ JEIEvents.hideItems(event => {
 
     // Wireless Chargers
     event.hide(['wirelesschargers:basic_wireless_block_charger', 'wirelesschargers:advanced_wireless_block_charger'])
+
+    // Chipped
+    event.hide(['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'])
 })
 
 JEIEvents.hideFluids(event => {
     event.hide(/^nuclearcraft:.+/)
+})
+
+JEIEvents.removeCategories(event => {
+    event.remove('chipped:')
 })
