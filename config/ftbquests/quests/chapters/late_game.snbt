@@ -879,10 +879,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:bacterial_sludge"
-				id: "06FBDAC672F0F673"
-				type: "fluid"
+				id: "1DDC0F9C01889F1E"
+				item: "gtceu:bacterial_sludge_bucket"
+				type: "item"
 			}]
 			title: "&2Bacterial Sludge"
 			x: 3.0d
@@ -904,10 +903,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:mutagen"
-				id: "3817CC0B4600AF37"
-				type: "fluid"
+				id: "43383D2F3008596B"
+				item: "gtceu:mutagen_bucket"
+				type: "item"
 			}]
 			title: "&2Mutagen"
 			x: 3.0d
@@ -931,10 +929,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:sterilized_growth_medium"
-				id: "7370C94A1F5D76F0"
-				type: "fluid"
+				id: "25516F711598DF6D"
+				item: "gtceu:sterilized_growth_medium_bucket"
+				type: "item"
 			}]
 			title: "&2Sterilized Growth Medium"
 			x: 3.0d
@@ -2825,10 +2822,9 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:polybenzimidazole"
-				id: "41A796F18B03021D"
-				type: "fluid"
+				id: "5CED3A6311FFA3B4"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
 			}]
 			title: "&2Polybenzimidazole (PBI)"
 			x: 0.0d
