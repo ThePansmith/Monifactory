@@ -18,7 +18,7 @@ if(Platform.isLoaded('create')){
         Most recipe categories that are removed machines are hidden in 
         kubejs/assets/emi/recipe/filters/hidecategories.json as opposed to removing the actual recipes */
         event.remove({ type: 'create:deploying' })
-        event.remove({ type: 'create:millstone' })
+        event.remove({ type: 'create:milling' })
         event.remove({ type: 'create:crushing' })
 
         // Adds some create recipes to gt machines
