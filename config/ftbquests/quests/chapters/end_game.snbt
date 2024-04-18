@@ -2072,7 +2072,7 @@
 			subtitle: "Are you ready to go infinite?"
 			tasks: [{
 				id: "6E04AE0160E4D09E"
-				item: "avaritia:infinity_catalyst"
+				item: "kubejs:infinity_catalyst"
 				type: "item"
 			}]
 			x: 57.0d
@@ -2142,7 +2142,7 @@
 			size: 4.0d
 			tasks: [{
 				id: "67517FC01121D069"
-				item: "avaritia:infinity_ingot"
+				item: "gtceu:infinity_ingot"
 				type: "item"
 			}]
 			x: 67.5d
@@ -2247,7 +2247,7 @@
 			tasks: [{
 				count: 2L
 				id: "6F9246E97321EF11"
-				item: "solarflux:sp_avaritia.neutronium"
+				item: "kubejs:sp_endgame.neutronium"
 				type: "item"
 			}]
 			title: "&9Neutronium Solar Panel"
