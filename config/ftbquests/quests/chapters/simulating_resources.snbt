@@ -555,7 +555,7 @@
 			}]
 			tasks: [{
 				id: "485B18F9D8C07C54"
-				item: "gtceu:nether_air_bucket"
+				item: "gtceu:liquid_nether_air_bucket"
 				type: "item"
 			}]
 			title: "&2Distilling the Nether"
