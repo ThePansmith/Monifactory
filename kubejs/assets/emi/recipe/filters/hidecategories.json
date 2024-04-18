@@ -178,6 +178,34 @@
         },
         {
             "category": "emi_loot:gameplay_drops"
+        },
+        {
+            "category": "create:automatic_shaped" 
+        },
+        {
+            "category": "create:automatic_shapeless" 
+        },
+        {
+            "category": "create:sawing" 
+        },
+        {
+            "category": "create:draining" 
+        },
+        {
+            "category": "create:mixing" 
+        },
+        {
+            "category": "create:pressing" 
+        },
+        {
+            "category": "create:automatic_brewing" 
+        },
+        {
+            "category": "create:automatic_packing" 
+        },
+        {
+            "category": "gtceu:create_mixer" 
         }
+        
     ]
 }
