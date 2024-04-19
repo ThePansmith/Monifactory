@@ -307,7 +307,7 @@ export const BuildDevTarget = new Juke.Target({
 
     // "merge" both mod folders
     fs.cpSync('dist/modcache', 'dist/.devtmp', { recursive: true });
-    fs.cpSync('mods', 'dist/.devtmp', { recursive: true });
+    fs.cpSync('mods', 'dist/.devtmp', { recursive: true, force: true });
     fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
     fs.cpSync('config', 'dist/dev/config', { recursive: true });
 
