@@ -554,10 +554,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:liquid_nether_air"
-				id: "2776CA0F55ED0D3C"
-				type: "fluid"
+				id: "485B18F9D8C07C54"
+				item: "gtceu:liquid_nether_air_bucket"
+				type: "item"
 			}]
 			title: "&2Distilling the Nether"
 			x: -2.5d
