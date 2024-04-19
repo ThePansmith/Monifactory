@@ -7,12 +7,15 @@ ServerEvents.recipes(event => {
     event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
 
     // snaded sand snad
-	comapcting(event, 'kubejs:compressed_sand', 'minecraft:sand');
-	comapcting(event, 'kubejs:double_compressed_sand', 'kubejs:compressed_sand');
+    comapcting(event, 'kubejs:compressed_sand', 'minecraft:sand');
+    comapcting(event, 'kubejs:double_compressed_sand', 'kubejs:compressed_sand');
 
     // red snaded red sand red snad
-	comapcting(event, 'kubejs:compressed_red_sand', 'minecraft:red_sand');
-	comapcting(event, 'kubejs:double_compressed_red_sand', 'kubejs:compressed_red_sand');
+    comapcting(event, 'kubejs:compressed_red_sand', 'minecraft:red_sand');
+    comapcting(event, 'kubejs:double_compressed_red_sand', 'kubejs:compressed_red_sand');
+
+    // Compressed crafting station
+    comapcting(event, 'kubejs:compressed_crafting_table', 'minecraft:crafting_table');
 
     // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
@@ -44,9 +47,9 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
     // Infinity Dust Blocks
-	comapcting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
-	comapcting(event, 'kubejs:compressed_infinity_dust_block', 'kubejs:infinity_dust_block');
-	comapcting(event, 'kubejs:double_compressed_infinity_dust_block', 'kubejs:compressed_infinity_dust_block');
+    comapcting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
+    comapcting(event, 'kubejs:compressed_infinity_dust_block', 'kubejs:infinity_dust_block');
+    comapcting(event, 'kubejs:double_compressed_infinity_dust_block', 'kubejs:compressed_infinity_dust_block');
 
     // Blazerod Shenanigans
     event.shapeless('minecraft:blaze_rod', 'minecraft:brewing_stand')
@@ -84,73 +87,73 @@ ServerEvents.recipes(event => {
     // Change recipes for LV and MV macerators
     event.shaped(
         "gtceu:lv_macerator", [
-            'PMB',
-            'WWH',
-            'CCW'
-        ], {
-            P: "gtceu:lv_electric_piston",
-            M: "gtceu:lv_electric_motor",
-            B: "gtceu:wrought_iron_buzz_saw_blade",
-            W: "gtceu:tin_single_cable",
-            H: "gtceu:lv_machine_hull",
-            C: "#gtceu:circuits/lv"
-        }
+        'PMB',
+        'WWH',
+        'CCW'
+    ], {
+        P: "gtceu:lv_electric_piston",
+        M: "gtceu:lv_electric_motor",
+        B: "gtceu:wrought_iron_buzz_saw_blade",
+        W: "gtceu:tin_single_cable",
+        H: "gtceu:lv_machine_hull",
+        C: "#gtceu:circuits/lv"
+    }
     ).id('gtceu:shaped/lv_macerator')
 
     event.shaped(
         "gtceu:mv_macerator", [
-            'PMB',
-            'WWH',
-            'CCW'
-        ], {
-            P: "gtceu:mv_electric_piston",
-            M: "gtceu:mv_electric_motor",
-            B: "gtceu:steel_buzz_saw_blade",
-            W: "gtceu:copper_single_cable",
-            H: "gtceu:mv_machine_hull",
-            C: "#gtceu:circuits/mv"
-        }
+        'PMB',
+        'WWH',
+        'CCW'
+    ], {
+        P: "gtceu:mv_electric_piston",
+        M: "gtceu:mv_electric_motor",
+        B: "gtceu:steel_buzz_saw_blade",
+        W: "gtceu:copper_single_cable",
+        H: "gtceu:mv_machine_hull",
+        C: "#gtceu:circuits/mv"
+    }
     ).id('gtceu:shaped/mv_macerator')
 
     // Alternative LV piston recipe
     event.shaped(
         "gtceu:lv_electric_piston", [
-            'PPP',
-            'CRR',
-            'CMG'
-        ], {
-            P: "gtceu:wrought_iron_plate",
-            C: "gtceu:tin_single_cable",
-            R: "gtceu:wrought_iron_rod",
-            M: "gtceu:lv_electric_motor",
-            G: "gtceu:wrought_iron_gear"
-        }
+        'PPP',
+        'CRR',
+        'CMG'
+    ], {
+        P: "gtceu:wrought_iron_plate",
+        C: "gtceu:tin_single_cable",
+        R: "gtceu:wrought_iron_rod",
+        M: "gtceu:lv_electric_motor",
+        G: "gtceu:wrought_iron_gear"
+    }
     )
 
     // Steam oven & grinder
     event.shaped(
         "gtceu:steam_oven", [
-            'BGB',
-            'FCF',
-            'BGB'
-        ], {
-            B: "gtceu:steam_machine_casing",
-            G: "gtceu:invar_gear",
-            F: "gtceu:bronze_firebox_casing",
-            C: "ironfurnaces:copper_furnace"
-        }
+        'BGB',
+        'FCF',
+        'BGB'
+    ], {
+        B: "gtceu:steam_machine_casing",
+        G: "gtceu:invar_gear",
+        F: "gtceu:bronze_firebox_casing",
+        C: "ironfurnaces:copper_furnace"
+    }
     )
 
     event.shaped(
         "gtceu:steam_grinder", [
-            'BGB',
-            'BDB',
-            'BGB'
-        ], {
-            B: "gtceu:steam_machine_casing",
-            G: "gtceu:potin_gear",
-            D: "#forge:gems/diamond"
-        }
+        'BGB',
+        'BDB',
+        'BGB'
+    ], {
+        B: "gtceu:steam_machine_casing",
+        G: "gtceu:potin_gear",
+        D: "#forge:gems/diamond"
+    }
     )
 
     // Moni-style firebricks
@@ -162,7 +165,7 @@ ServerEvents.recipes(event => {
 
     // Table with various burn time lengths
     const pbfTimes = [
-		// material | fuel | length in ticks
+        // material | fuel | length in ticks
         ["wrought_iron", "coal", 400],
         ["wrought_iron", "charcoal", 400],
         ["wrought_iron", "coke", 600],
@@ -171,8 +174,8 @@ ServerEvents.recipes(event => {
         ["iron", "coke", 1500]
     ]
 
-	for (const [material, fuel, time] of pbfTimes) {
-		let efficient = (fuel === "coke");
+    for (const [material, fuel, time] of pbfTimes) {
+        let efficient = (fuel === "coke");
         // Ingot form
         event.recipes.gtceu.primitive_blast_furnace(`pbf_${material}_${fuel}`)
             .itemInputs(`${efficient ? '2x ' : ''}#forge:ingots/${material}`, [`#forge:gems/${fuel}`, `#forge:dusts/${fuel}`])
@@ -181,10 +184,10 @@ ServerEvents.recipes(event => {
 
         // Block form
         event.recipes.gtceu.primitive_blast_furnace(`pbf_block_${material}_${fuel}`)
-			.itemInputs(`${efficient ? '2x ' : ''}#forge:storage_blocks/${material}`, `#forge:storage_blocks/${fuel}`)
+            .itemInputs(`${efficient ? '2x ' : ''}#forge:storage_blocks/${material}`, `#forge:storage_blocks/${fuel}`)
             .itemOutputs(`${efficient ? '2x ' : ''}gtceu:steel_block`, `gtceu:${efficient ? "" : "dark_"}ash_dust`)
             .duration(time * 9)
-	}
+    }
 
     // Data Stuff
     event.recipes.gtceu.extractor("tank_data")
@@ -196,13 +199,13 @@ ServerEvents.recipes(event => {
     // Handmade rubber - no match for the power of the factory
     event.shaped(
         "gtceu:rubber_plate", [
-            ' H ',
-            ' R ',
-            ' R '
-        ], {
-            H: "#forge:tools/hammers",
-            R: "gtceu:sticky_resin"
-        }
+        ' H ',
+        ' R ',
+        ' R '
+    ], {
+        H: "#forge:tools/hammers",
+        R: "gtceu:sticky_resin"
+    }
     )
 
     // Compressor rubber - better, but not perfect - that's chemical reactor rubber
@@ -220,15 +223,15 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         "gtceu:lv_electric_motor", [
-            'CWR',
-            'WMW',
-            'RWC'
-        ], {
-            C: "gtceu:tin_single_cable",
-            W: "gtceu:fine_copper_wire",
-            R: "gtceu:iron_rod",
-            M: "gtceu:magnetic_iron_rod"
-        }
+        'CWR',
+        'WMW',
+        'RWC'
+    ], {
+        C: "gtceu:tin_single_cable",
+        W: "gtceu:fine_copper_wire",
+        R: "gtceu:iron_rod",
+        M: "gtceu:magnetic_iron_rod"
+    }
     )
 
     event.recipes.gtceu.assembler("lv_motor")
@@ -240,12 +243,12 @@ ServerEvents.recipes(event => {
     // Glass tube
     event.shaped(
         "gtceu:glass_tube", [
-            '   ',
-            'PPP',
-            'PPP'
-        ], {
-            P: "#forge:panes/glass"
-        }
+        '   ',
+        'PPP',
+        'PPP'
+    ], {
+        P: "#forge:panes/glass"
+    }
     )
 
     // Crystal Chip shit
@@ -269,13 +272,13 @@ ServerEvents.recipes(event => {
     event.remove({ type: "thermal:rock_gen", not: { output: "minecraft:cobblestone" } })
     event.shaped(
         "thermal:device_rock_gen", [
-            'PPP',
-            'B B',
-            'PPP'
-        ], {
-            P: "gtceu:steel_plate",
-            B: "minecraft:bucket"
-        }
+        'PPP',
+        'B B',
+        'PPP'
+    ], {
+        P: "gtceu:steel_plate",
+        B: "minecraft:bucket"
+    }
     ).id('thermal:device_rock_gen')
 
     //TODO: AE2 crystal growth accelerator goes here
@@ -283,15 +286,15 @@ ServerEvents.recipes(event => {
     // Monified distill tower
     event.shaped(
         "gtceu:distillation_tower", [
-            'LPL',
-            'CHC',
-            'LPL'
-        ], {
-            L: "gtceu:stainless_steel_large_fluid_pipe",
-            P: "gtceu:hv_electric_pump",
-            C: "#gtceu:circuits/hv",
-            H: "gtceu:hv_machine_hull"
-        }
+        'LPL',
+        'CHC',
+        'LPL'
+    ], {
+        L: "gtceu:stainless_steel_large_fluid_pipe",
+        P: "gtceu:hv_electric_pump",
+        C: "#gtceu:circuits/hv",
+        H: "gtceu:hv_machine_hull"
+    }
     ).id('gtceu:shaped/distillation_tower')
 
     // Implement draconium smelting
@@ -303,7 +306,7 @@ ServerEvents.recipes(event => {
         [500, "gtceu:high_octane_gasoline"]
     ]
 
-	for (const [mB, id] of draconiumFuels) {
+    for (const [mB, id] of draconiumFuels) {
         event.recipes.gtceu.electric_blast_furnace("draconium_" + id.replace(/\W/g, ''))
             .itemInputs("gtceu:draconium_dust")
             .inputFluids(`${id} ${mB}`)
@@ -314,12 +317,12 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.electric_blast_furnace("draconium_scale_" + id.replace(/\W/g, ''))
             .itemInputs("4x armorplus:ender_dragon_scale")
-			.inputFluids(`${id} ${mB * 4}`)
+            .inputFluids(`${id} ${mB * 4}`)
             .itemOutputs("2x gtceu:hot_draconium_ingot")
             .duration(20000)
             .blastFurnaceTemp(6800)
             .EUt(120)
-	}
+    }
 
     // Diamond -> carbon
     event.recipes.gtceu.electrolyzer("diamond_decomposition")
@@ -331,18 +334,18 @@ ServerEvents.recipes(event => {
     // Alternative hv cutter
     event.shaped(
         "gtceu:hv_cutter", [
-            'WCG',
-            'DHS',
-            'CGM'
-        ], {
-            W: "gtceu:gold_single_cable",
-            C: "#gtceu:circuits/hv",
-            G: "gtceu:tempered_glass",
-            D: "gtceu:hv_conveyor_module",
-            H: "gtceu:hv_machine_hull",
-            S: "gtceu:end_steel_gear", // TODO: FIX (likely requires registering end steel as a tool material, and idk how to do that)
-            M: "gtceu:hv_electric_motor"
-        }
+        'WCG',
+        'DHS',
+        'CGM'
+    ], {
+        W: "gtceu:gold_single_cable",
+        C: "#gtceu:circuits/hv",
+        G: "gtceu:tempered_glass",
+        D: "gtceu:hv_conveyor_module",
+        H: "gtceu:hv_machine_hull",
+        S: "gtceu:end_steel_gear", // TODO: FIX (likely requires registering end steel as a tool material, and idk how to do that)
+        M: "gtceu:hv_electric_motor"
+    }
     )
 
     // Prevent cleanroom casings from being usable for free resources
@@ -372,17 +375,17 @@ ServerEvents.recipes(event => {
     // Ass control casing
     event.shaped(
         "4x gtceu:assembly_line_unit", [
-            'CHC',
-            'SFE',
-            'CMC'
-        ], {
-            C: "#gtceu:circuits/luv",
-            H: "gtceu:hpic_chip",
-            S: "gtceu:iv_sensor",
-            F: "gtceu:tungsten_steel_frame",
-            E: "gtceu:iv_emitter",
-            M: "gtceu:iv_electric_motor"
-        }
+        'CHC',
+        'SFE',
+        'CMC'
+    ], {
+        C: "#gtceu:circuits/luv",
+        H: "gtceu:hpic_chip",
+        S: "gtceu:iv_sensor",
+        F: "gtceu:tungsten_steel_frame",
+        E: "gtceu:iv_emitter",
+        M: "gtceu:iv_electric_motor"
+    }
     ).id('gtceu:shaped/casing_assembly_line')
 
     // Mixer naquadah enrichment
@@ -452,16 +455,16 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         'minecraft:nether_star', [
-            ' A ',
-            'DEB',
-            ' C '
-        ], {
-            A: 'kubejs:nether_star_north',
-            B: 'kubejs:nether_star_east',
-            C: 'kubejs:nether_star_south',
-            D: 'kubejs:nether_star_west',
-            E: 'kubejs:nether_star_center'
-        }
+        ' A ',
+        'DEB',
+        ' C '
+    ], {
+        A: 'kubejs:nether_star_north',
+        B: 'kubejs:nether_star_east',
+        C: 'kubejs:nether_star_south',
+        D: 'kubejs:nether_star_west',
+        E: 'kubejs:nether_star_center'
+    }
     )
 
     // Obby grinding
@@ -512,78 +515,43 @@ ServerEvents.recipes(event => {
     //Chest
     event.shaped(
         'enderchests:ender_chest', [ // these default to 000 anyways
-            'ABA',
-            'DED',
-            'AFA'
-        ], {
-            A: 'minecraft:blaze_rod',
-            B: 'minecraft:white_wool',
-            D: 'minecraft:obsidian',
-            E: 'gtceu:steel_crate',
-            F: 'minecraft:ender_pearl'
-        }
+        'ABA',
+        'DED',
+        'AFA'
+    ], {
+        A: 'minecraft:blaze_rod',
+        B: 'minecraft:white_wool',
+        D: 'minecraft:obsidian',
+        E: 'gtceu:steel_crate',
+        F: 'minecraft:ender_pearl'
+    }
     )
 
     //Tank
     event.shaped(
         'endertanks:ender_tank', [
-            'ABA',
-            'DED',
-            'AFA'
-        ], {
-            A: 'minecraft:blaze_rod',
-            B: 'minecraft:white_wool',
-            D: 'minecraft:obsidian',
-            E: 'enderio:pressurized_fluid_tank',
-            F: 'gtceu:ender_pearl_block'
-        }
+        'ABA',
+        'DED',
+        'AFA'
+    ], {
+        A: 'minecraft:blaze_rod',
+        B: 'minecraft:white_wool',
+        D: 'minecraft:obsidian',
+        E: 'enderio:pressurized_fluid_tank',
+        F: 'gtceu:ender_pearl_block'
+    }
     )
 
     //Strings Recipe
     event.shaped(
         '6x minecraft:string', [
-            ' A ',
-            'ABA',
-            ' A '
-        ], {
-            A: '#minecraft:saplings',
-            B: '#minecraft:swords'
-        }
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: '#minecraft:saplings',
+        B: '#minecraft:swords'
+    }
     ).damageIngredient('#minecraft:swords')
 
-	//Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
-	event.remove( {id: "armorplus:crafting/shapeless/wooden_rod" })
-	event.shaped(
-		'2x armorplus:wooden_rod', [
-			'SS',
-			'SS'
-		], {
-			S: 'minecraft:stick'
-		}
-	).id('kubejs:not_a_wood_gear')
-
-	//Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
-	event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_log", "#minecraft:logs")
-	event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
-
-    //Recipie from Radium salt to Radium and Rock Salt
-    event.recipes.gtceu.electrolyzer("radiumSaltToRadiumAndSalt")
-    .itemInputs("kubejs:radium_salt")
-    .itemOutputs("gtceu:rock_salt_dust")
-    .outputFluids(Fluid.of('gtceu:radon', 1000))
-    .duration(200)
-    .EUt(2000)
-
-    //Add the Fluid Tag Filter
-    event.shaped(
-        Item.of('gtceu:fluid_tag_filter',1),
-        [
-         'ZZZ',
-         'ZLZ',
-         'ZZZ'
-        ],{
-            Z: 'gtceu:zinc_foil',
-            L: 'gtceu:lead_plate'
-         }
-    )
 })
