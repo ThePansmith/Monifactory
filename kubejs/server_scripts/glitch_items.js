@@ -11,16 +11,16 @@ const glitchArmorCallback = (ev) => {
         player.legsArmorItem === 'kubejs:glitch_infused_leggings' &&
         player.feetArmorItem === 'kubejs:glitch_infused_boots'
 
-    if (!player.abilities.mayfly && (glitchArmorEquipped || player.isCreative())) {
-        player.abilities.mayfly = true
-        player.onUpdateAbilities()
-		return;
-    }
-	if (player.abilities.mayfly && !glitchArmorEquipped && !player.isCreative()) {
-        player.abilities.mayfly = false
-        player.abilities.flying = false
-        player.onUpdateAbilities()
-    }
+    // if (!player.abilities.mayfly && (glitchArmorEquipped || player.isCreative())) {
+    //     player.abilities.mayfly = true
+    //     player.onUpdateAbilities()
+	// 	return;
+    // }
+	// if (player.abilities.mayfly && !glitchArmorEquipped && !player.isCreative()) {
+    //     player.abilities.mayfly = false
+    //     player.abilities.flying = false
+    //     player.onUpdateAbilities()
+    // }
 }
 // Notice: this wont update if you swap gamemode, you have to move glitch armor around your inventory!
 PlayerEvents.inventoryChanged('kubejs:glitch_infused_helmet', glitchArmorCallback);

@@ -301,20 +301,20 @@ export const BuildDevTarget = new Juke.Target({
 
     fs.mkdirSync("dist/dev", { recursive: true });
     fs.mkdirSync("dist/.devtmp", { recursive: true });
-    for (const folders of includeList.filter(v => v !== "mods")) {
+    for (const folders of includeList.filter(v => !(v === "mods" || v === "config"))) {
       symlinkSync(resolve(folders), resolve(`dist/dev/${folders}`));
     }
 
     // "merge" both mod folders
     fs.cpSync('dist/modcache', 'dist/.devtmp', { recursive: true });
     fs.cpSync('mods', 'dist/.devtmp', { recursive: true });
-    symlinkSync(resolve('dist/.devtmp'), resolve('dist/dev/mods'));
-    // symlinkSync('config', 'dist/dev/config');
+    fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
+    fs.cpSync('config', 'dist/dev/config', { recursive: true });
 
     // todo find the mod to blame, or just remove this and the filters up there if this ever gets fixed
-    // Juke.logger.warn('Due to a bug with a mod, symlinking the mod folder or config causes errors which breaks game startup.')
-    // Juke.logger.warn('When updating, the config and mod requires manual copy. Dev mods are packed in "dist/.devtmp"')
-    await packMod("dev");
+    Juke.logger.warn('Due to a bug with moonlight, symlinking the mod and config folder causes errors which breaks game startup.')
+    Juke.logger.warn('When updating, the mod and config folder requires manual copy. Dev mods are packed in "dist/.devtmp"')
+    await packMod("dev")
   }
 })
 
