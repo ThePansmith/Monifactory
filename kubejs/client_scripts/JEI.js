@@ -81,6 +81,10 @@ JEIEvents.hideItems(event => {
 
     // Wireless Chargers
     event.hide(['wirelesschargers:basic_wireless_block_charger', 'wirelesschargers:advanced_wireless_block_charger'])
+    
+    //Sophisticated Storage barrels
+    event.hide(/^sophisticatedstorage:.+barrel$/)
+    event.hide('sophisticatedstorage:barrel')
 
     // Chipped
     event.hide(['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'])
