@@ -1,0 +1,58 @@
+ServerEvents.recipes(event => {
+    //Milk Choclate Making
+
+    event.smelting('nuclearcraft:roasted_cocoa_beans', 'minecraft:cocoa_beans')
+    event.recipes.gtceu.macerator("Nibs")
+    .itemInputs('nuclearcraft:roasted_cocoa_beans')
+    .itemOutputs('nuclearcraft:ground_cocoa_nibs')
+    .EUt(20)
+    .duration(100)
+
+    event.recipes.gtceu.electric_blast_furnace('gtceu:choclate_liquor')
+    .itemInputs('nuclearcraft:ground_cocoa_nibs')
+    .itemOutputs('gtceu:tiny_carbon_dust')
+    .outputFluids(Fluid.of('nuclearcraft:chocolate_liqour',144))
+    .duration(100)
+    .blastFurnaceTemp(307)
+    .EUt(120)
+
+    event.recipes.gtceu.extractor('Butter')
+    .itemInputs('nuclearcraft:ground_cocoa_nibs')
+    .itemOutputs('nuclearcraft:cocoa_solids')
+    .outputFluids(Fluid.of('nuclearcraft:cocoa_butter',144))
+    .EUt(2)
+    .duration(32)
+
+    event.recipes.gtceu.mixer('nuclearcraft:unswettend_choclate')
+    .inputFluids(Fluid.of('nuclearcraft:chocolate_liqour',144), Fluid.of('nuclearcraft:cocoa_butter',144))
+    .outputFluids(Fluid.of('nuclearcraft:unsweetend_chocolate',288))
+    .EUt(30)
+    .duration(100)
+
+    event.recipes.gtceu.chemical_reactor('milk_pasteurizeation')
+    .inputFluids(Fluid.of('#forge:milk',1000),Fluid.of('#forge:steam',500))
+    .itemInputs('2x gtceu:stainless_steel_plate')
+    .outputFluids(Fluid.of('nuclearcarft:pasteurized_milk',1000))
+    .itemOutputs('2x gtceu:stainless_steel_plates')
+    .EUt(480)
+    .duration(250)
+
+    event.recipes.gtceu.mixer('nuclearcraft:dark_chocolate')
+    .inputFluids(Fluid.of('nuclearcraft:unsweetend_choclate',144),Fluid.of('nuclearcraft:sugar',72))
+    .outputFluids(Fluid.of('nuclearcraft:dark_chocolate',144))
+    .EUt(30)
+    .duration(100)
+
+    event.recipes.gtceu.mixer('nuclearcraft:milk_choclate')
+    .inputFluids(Fluid.of('nuclearcraft:dark_choclate',144),Fluid.of('nuclearcraft:pasteurized_milk',250))
+    .outputFluids(Fluid.of('nuclearcraft:milk_choclate'))
+    .EUt(30)
+    .duration(80)
+
+    event.recipes.gtceu.fluid_solidifier('solid_choclate')
+    .inputFluids(Fluid.of('nuclearcraft:milk_choclate', 144))
+    .itemOutputs('kubejs:stabilized_einsteinium')
+    .notConsumable('gtceu:plate_casting_mold')
+    .duration(100)
+    .EUt(16)
+})
