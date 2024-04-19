@@ -1,16 +1,13 @@
 CapeJS.addCapes(event => {
-    //Clown
-    event.register("00832ce6-e198-4bc0-8597-aa99c4133a38", "gregtechcape")
+
+    // Devs
         //Pansmith
     event.register("e8e08277-cc3d-4b35-8ac9-da0af044815c", "gregtechcape")
-        //Atlas
-    event.register("dd0baab4-8874-4249-912a-44e64f7b1786", "gregtechcape")
-        //Reclipse
-    event.register("119d9971-936d-478f-96bd-82d66c0e978d", "gregtechcape")
+        //Pansmith's Camera Account
+    event.register("37753ebd-9605-47c1-8818-1635160e9d73", "gregtechcape")
 
     //Contributors
-
-    //Cyb0124
+        //Cyb0124
     event.register("0171c998-50a5-4e31-9277-4516f1643d3e", "moni")
         //Jamiscus
     event.register("56db0044-9fc8-4ae3-83d6-1adee75aa799", "moni")

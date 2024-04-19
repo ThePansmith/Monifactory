@@ -144,9 +144,3 @@ ServerEvents.tags('item', event => {
     event.add('moni:awakened_injector_tier', 'draconicevolution:chaotic_crafting_injector')
     event.add('moni:chaotic_injector_tier', 'draconicevolution:chaotic_crafting_injector')
 })
-
-// Temp rubberplank stuff
-ServerEvents.tags('item', event => {
-    event.add('moni:oak_rubber_plank_temp', 'minecraft:oak_planks')
-    event.add('moni:oak_rubber_plank_temp', 'gtceu:rubber_planks')
-})
