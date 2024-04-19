@@ -140,6 +140,22 @@ ServerEvents.recipes(event => {
     }
     ).id('kubejs:ae2/interface')
 
+
+    // Requester
+    event.remove({ id: 'merequester:requester' })
+    event.shaped(
+        Item.of('merequester:requester'), [
+        'ABA',
+        'CDC',
+        'AAA'
+    ], {
+        A: 'gtceu:stainless_steel_plate',
+        B: 'gtceu:hv_robot_arm',
+        C: '#gtceu:circuits/hv',
+        D: 'gtceu:hv_machine_hull',
+    }
+    ).id('kubejs:ae2/requster')
+
     // Quantum Ring
     event.remove({ id: 'ae2:network/blocks/quantum_ring' })
     event.shaped(
