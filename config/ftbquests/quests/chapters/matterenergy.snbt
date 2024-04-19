@@ -1044,7 +1044,7 @@
 			description: [
 				"You can easily automate most &bGregTech&r machines with &aME Pattern Providers&r and processing &aPatterns&r early on by using the machines' auto-output feature."
 				""
-				"Use a &aGregTech Wrench&r to relocate the output side of a machine where you want it to be, right-click it with a &aGregTech Screwdriver&r to permit input on the output face, then put an ME Pattern Provider on that side of the machine."
+				"Use a &aGregTech Wrench&r &9(or the Machine's GUI)&r to relocate the output side of a machine where you want it to be, right-click it with a &aGregTech Screwdriver&r to permit input on the output face, then put an ME Pattern Provider on that side of the machine."
 				""
 				"You can also permit input from the output side by shift-right-clicking with a screwdriver on the output side via the machine grid."
 				""
