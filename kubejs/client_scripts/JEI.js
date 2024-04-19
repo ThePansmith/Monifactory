@@ -85,6 +85,7 @@ JEIEvents.hideItems(event => {
     //Sophisticated Storage barrels
     event.hide(/^sophisticatedstorage:.+barrel$/)
     event.hide('sophisticatedstorage:barrel')
+    event.hide(/sophisticatedstorage:[A-Za-z]+_barrel_\d/)
 
     // Chipped
     event.hide(['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'])
