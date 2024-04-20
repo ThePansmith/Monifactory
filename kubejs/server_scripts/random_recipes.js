@@ -554,4 +554,39 @@ ServerEvents.recipes(event => {
     }
     ).damageIngredient('#minecraft:swords')
 
+	   //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
+    event.remove({ id: "armorplus:crafting/shapeless/wooden_rod" })
+    event.shaped(
+        '2x armorplus:wooden_rod', [
+        'SS',
+        'SS'
+    ], {
+        S: 'minecraft:stick'
+    }
+    ).id('kubejs:not_a_wood_gear')
+
+    //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
+    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
+    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
+
+    //Recipie from Radium salt to Radium and Rock Salt
+    event.recipes.gtceu.electrolyzer("radiumSaltToRadiumAndSalt")
+        .itemInputs("kubejs:radium_salt")
+        .itemOutputs("gtceu:rock_salt_dust")
+        .outputFluids(Fluid.of('gtceu:radon', 1000))
+        .duration(200)
+        .EUt(2000)
+
+    //Add the Fluid Tag Filter
+    event.shaped(
+        Item.of('gtceu:fluid_tag_filter', 1),
+        [
+            'ZZZ',
+            'ZLZ',
+            'ZZZ'
+        ], {
+        Z: 'gtceu:zinc_foil',
+        L: 'gtceu:lead_plate'
+    }
+    )
 })
