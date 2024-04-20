@@ -59,7 +59,7 @@ event.recipes.gtceu.mixer('nuclearcraft:milk_chocolate')
     //Grham Cracker
 event.recipes.gtceu.compressor('ghramCracker')
     .itemInputs('2x gtceu:wheat_dust')
-    .itemInputs('nuclearcraft:graham_cracker')
+    .itemOutputs('nuclearcraft:graham_cracker')
     .EUt(20)
     .duration(200)
 event.recipes.gtceu.macerator('wheatToDust')
@@ -94,4 +94,42 @@ event.recipes.extractor('geltian')
     .outputFluids('nuclearcraft:gelatin',144)
     .EUt(7)
     .duration(100)
+
+
+//Smores Finally!!!
+event.shapeless('kubejs:smore_1'),[
+    '2x nuclearcraft:graham_cracker',
+    'nuclearcraft:milk_chocolate'
+    ,'nuclearcraft:marshmallow'
+]
+event.shapeless('kubejs:smore_2'),[
+    '2x kubejs:smore_1',
+    'nuclearcraft:milk_chocolate'
+    ,'nuclearcraft:marshmallow'
+]
+event.shapeless('kubejs:smore_4'),[
+    '2x kubejs:smore_2',
+    'nuclearcraft:milk_chocolate'
+    ,'nuclearcraft:marshmallow'
+]
+event.shapeless('kubejs:smore_8'),[
+    '2x kubejs:smore_4',
+    'nuclearcraft:milk_chocolate'
+    ,'nuclearcraft:marshmallow'
+]
+event.shapeless('kubejs:smore_16'),[
+    '2x kubejs:smore_8',
+    'nuclearcraft:milk_chocolate'
+    ,'nuclearcraft:marshmallow'
+]
+event.shapeless('kubejs:smore_32'),[
+    '2x kubejs:smore_16',
+    'nuclearcraft:milk_chocolate'
+    ,'nuclearcraft:marshmallow'
+]
+event.shapeless('kubejs:smore_64'),[
+    '2x kubejs:smore_32',
+    'nuclearcraft:milk_chocolate'
+    ,'nuclearcraft:marshmallow'
+]
 })
