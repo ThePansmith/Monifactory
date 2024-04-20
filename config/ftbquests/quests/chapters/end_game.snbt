@@ -275,7 +275,7 @@
 			tasks: [{
 				count: 64L
 				id: "6A11EF851C12CC27"
-				item: "gtceu:mana_infused_metal_ingot"
+				item: "gtceu:mythril_ingot"
 				type: "item"
 			}]
 			x: 0.0d

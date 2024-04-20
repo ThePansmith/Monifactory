@@ -241,15 +241,13 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // Glass tube
-    event.shaped(
-        "gtceu:glass_tube", [
+    event.shaped("gtceu:glass_tube", [
         '   ',
         'PPP',
         'PPP'
     ], {
-        P: "#forge:panes/glass"
-    }
-    )
+        P: '#forge:glass_panes'
+    }).id('nomi:glass_tube')
 
     // Crystal Chip shit
     event.recipes.gtceu.autoclave("starter_enderium_chip")
@@ -267,19 +265,6 @@ ServerEvents.recipes(event => {
         .duration(12000)
         .EUt(320)
         .cleanroom(CleanroomType.CLEANROOM)
-
-    // NC cobble gen replaced with thermal for now, make buckets empty but indicate how it must be placed, also remove easy auto deepslate and friends
-    event.remove({ type: "thermal:rock_gen", not: { output: "minecraft:cobblestone" } })
-    event.shaped(
-        "thermal:device_rock_gen", [
-        'PPP',
-        'B B',
-        'PPP'
-    ], {
-        P: "gtceu:steel_plate",
-        B: "minecraft:bucket"
-    }
-    ).id('thermal:device_rock_gen')
 
     //TODO: AE2 crystal growth accelerator goes here
 
