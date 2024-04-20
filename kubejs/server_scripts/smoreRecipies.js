@@ -16,7 +16,7 @@ event.recipes.gtceu.electric_blast_furnace('kubejs:chocolate_liquor')
     .blastFurnaceTemp(307)
     .EUt(120)
 
-event.recipes.gtceu.extractor('Butter')
+event.recipes.gtceu.extractor('kubejs:cocoa_butter')
     .itemInputs('nuclearcraft:ground_cocoa_nibs')
     .itemOutputs('nuclearcraft:cocoa_solids')
     .outputFluids(Fluid.of('nuclearcraft:cocoa_butter', 144))
