@@ -62,34 +62,34 @@ event.recipes.gtceu.compressor('ghramCracker')
     .itemOutputs('nuclearcraft:graham_cracker')
     .EUt(20)
     .duration(200)
-event.recipes.gtceu.macerator('wheatToDust')
+event.recipes.gtceu.macerator('kubejs:wheat_dust')
     .itemInputs('minecraft:wheat')
     .itemOutputs('gtceu:wheat_dust')
 
     //Marshmellow
-event.recipes.gtceu.fluid_solidifier('solid_marshmallow')
+event.recipes.gtceu.fluid_solidifier('kubejs:solid_marshmallow')
     .inputFluids(Fluid.of('nuclearcraft:marshmallow', 144))
     .itemOutputs('nuclearcraft:marshmallow')
     .notConsumable('gtceu:ball_casting_mold')
     .duration(100)
     .EUt(16)
 
-event.recipes.gtceu.mixer('liquidMarshmallow')
+event.recipes.gtceu.mixer('kubejs:liquid_marshmallow')
     .inputFluids(Fluid.of('nuclearcraft:sugar',72),Fluid.of('nuclearcraft:hydrated_gelatin',144))
     .outputFluids(Fluid.of('nuclearcraft:marshmallow',144))
     .EUt(30)
     .duration(100)
-event.recipes.gtceu.extractor('liquidSugar')
+event.recipes.gtceu.extractor('kubejs:liquid_sugar')
     .itemInputs('minecraft:sugar')
     .outputFluids('nuclearcraft:sugar')
     .EUt(16)
     .duration(150)
-event.recipes.gtceu.mixer('geletanHydrate')
+event.recipes.gtceu.mixer('kubejs:hydrated_gelatin')
     .inputFluids(Fluid.of('minecraft:water',500),Fluid.of('nuclearcraft:gelatin',144))
     .outputFluids(Fluid.of('nuclearcraft:hydrated_gelatin',144))
     .EUt(16)
     .duration(45)
-event.recipes.gtceu.extractor('geltian')
+event.recipes.gtceu.extractor('kubejs:gelatin')
     .itemInputs('gtceu:gelitan_dust')
     .outputFluids('nuclearcraft:gelatin',144)
     .EUt(7)
@@ -101,35 +101,35 @@ event.shapeless('kubejs:smore_1',[
     '2x nuclearcraft:graham_cracker',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-])
+]).id('kubejs:smore_1')
 event.shapeless('kubejs:smore_2',[
     '2x kubejs:smore_1',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-])
+]).id('kubejs:smore_2')
 event.shapeless('kubejs:smore_4',[
     '2x kubejs:smore_2',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-])
+]).id('kubejs:smore_4')
 event.shapeless('kubejs:smore_8',[
     '2x kubejs:smore_4',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-])
+]).id('kubejs:smore_8')
 event.shapeless('kubejs:smore_16',[
     '2x kubejs:smore_8',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-])
+]).id('kubejs:smore_16')
 event.shapeless('kubejs:smore_32',[
     '2x kubejs:smore_16',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-])
+]).id('kubejs:smore_32')
 event.shapeless('kubejs:smore_64',[
     '2x kubejs:smore_32',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-])
+]).id('kubejs:smore_64')
 })
