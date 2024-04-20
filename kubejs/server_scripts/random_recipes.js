@@ -568,4 +568,5 @@ ServerEvents.recipes(event => {
 
     //Avaritia Replacement recipes
     comapcting(event, 'kubejs:neutronium_ingot', 'kubejs:neutronium_nugget', true)
+    event.shapeless('9x kubejs:pile_of_neutrons', ['kubejs:neutronium_nugget'])
 })

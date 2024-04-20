@@ -114,14 +114,12 @@ StartupEvents.registry('item', event => {
     event.create('pile_of_neutrons')
     event.create('neutronium_nugget')
     event.create('neutronium_ingot')
-    event.create('infinity_plate');
 
     //Misc Items
     event.create('grains_of_innocence').displayName("Grains of Innocence")
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
     event.create('moon_dust').displayName("Moon Dust")
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
-    event.create('crystal_matrix_plate')
     event.create('ender_star').displayName('§dEnder Star').glow(true)
     event.create('endest_star').displayName('§dEndest Star').glow(true)
     event.create('debug_laser').displayName('§dDebug Laser').glow(true)

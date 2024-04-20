@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 	// const INFINITY = GTMaterials.get('infinity');
 	// const OMNIUM = GTMaterials.get('omnium');
 
-	// TagPrefix.ingot.setIgnored(INFINITY, 'kubejs:infinity_ingot');		// TODO broken-ish, block & plate wont unify properly
+	// TagPrefix.ingot.setIgnored(INFINITY, 'gtceu:infinity_ingot');		// TODO broken-ish, block & plate wont unify properly
 	// TagPrefix.ingot.setIgnored(OMNIUM, 'kubejs:omnium_ingot'); 			// TODO broken
 	//TagPrefix.ingot.setIgnored(GTMaterials.Neutronium, 'kubejs:neutronium_ingot');
 
@@ -23,8 +23,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 	// TagPrefix.block.setIgnored(INFINITY, 'kubejs:infinity_block') // idk i just cant unify this block it doesnt want to be unified
 	// TagPrefix.block.setIgnored(OMNIUM, 'extendedcrafting:the_ultimate_block');
 	// TagPrefix.block.setIgnored(GTMaterials.Neutronium, 'avaritia:neutronium_block');
-
-	//TagPrefix.plate.setIgnored(INFINITY, 'kubejs:infinity_plate')
 
 	//TagPrefix.dustTiny.setIgnored(GTMaterials.Neutronium, 'kubejs:pile_of_neutrons');
 	// INFINITY.setFormula("∞");

@@ -71,7 +71,7 @@ ServerEvents.tags('item', event => {
     event.add('forge:nuggets/omnium', 'extendedcrafting:the_ultimate_nugget')
     event.add('forge:storage_blocks/omnium', 'extendedcrafting:the_ultimate_block')
         // infinity
-    event.add('forge:ingots/infinity', 'kubejs:infinity_ingot')
+    event.add('forge:ingots/infinity', 'gtceu:infinity_ingot')
     event.add('forge:storage_blocks/infinity', 'gtceu:infinity_block')
     event.add('forge:plates/infinity', 'kubejs:infinity_plate')
 
