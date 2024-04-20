@@ -37,7 +37,7 @@ event.recipes.gtceu.mixer('kubejs:unsweetened_chocolate')
     .EUt(480)
     .duration(250)
 
-event.recipes.gtceu.mixer('nuclearcraft:dark_chocolate')
+event.recipes.gtceu.mixer('kubejs:dark_chocolate')
     .inputFluids(Fluid.of('nuclearcraft:unsweetened_chocolate', 144), Fluid.of('nuclearcraft:sugar', 72))
     .outputFluids(Fluid.of('nuclearcraft:dark_chocolate', 144))
     .EUt(30)
