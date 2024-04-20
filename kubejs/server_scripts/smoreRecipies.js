@@ -23,7 +23,7 @@ event.recipes.gtceu.extractor('kubejs:cocoa_butter')
     .EUt(2)
     .duration(32)
 
-event.recipes.gtceu.mixer('nuclearcraft:unsweetened_chocolate')
+event.recipes.gtceu.mixer('kubejs:unsweetened_chocolate')
     .inputFluids(Fluid.of('nuclearcraft:chocolate_liquor', 144), Fluid.of('nuclearcraft:cocoa_butter', 144))
     .outputFluids(Fluid.of('nuclearcraft:unsweetened_chocolate', 288))
     .EUt(30)
