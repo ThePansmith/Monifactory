@@ -88,8 +88,8 @@ JEIEvents.hideItems(event => {
     // Chipped
     event.hide(['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'])
 
-    //Vanilla Milk
-    event.hide('minecraft:milk')
+    //Greg Milk
+    event.hide('gtceu:milk')
 })
 
 JEIEvents.hideFluids(event => {

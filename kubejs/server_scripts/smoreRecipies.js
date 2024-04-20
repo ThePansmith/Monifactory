@@ -30,7 +30,7 @@ event.recipes.gtceu.mixer('kubejs:unsweetened_chocolate')
     .duration(100)
 
     event.recipes.gtceu.chemical_reactor('kubejs:milk_pasteurization')
-    .inputFluids(Fluid.of('gtceu:milk', 1000), Fluid.of('gtceu:steam', 500))//TODO Change to forge tags for steam
+    .inputFluids(Fluid.of('minecraft:milk', 1000), Fluid.of('gtceu:steam', 500))//TODO Change to forge tags for steam
     .itemInputs('2x gtceu:stainless_steel_plate')
     .itemOutputs('2x gtceu:stainless_steel_plate')
     .outputFluids(Fluid.of('nuclearcraft:pasteurized_milk', 1000))
@@ -95,6 +95,11 @@ event.recipes.gtceu.extractor('kubejs:gelatin')
     .EUt(7)
     .duration(100)
 
+event.recipes.gtceu.extractor('kubejs:extract_milk')
+    .itemInputs('minecraft:cow_spawn_egg')
+    .outputFluids(Fluid.of('minecraft:milk',5000))
+    .EUt(32)
+    .duration(1000)
 
 //Smores Finally!!!
 event.shapeless('kubejs:smore_1',[
