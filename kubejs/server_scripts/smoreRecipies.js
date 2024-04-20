@@ -29,7 +29,7 @@ event.recipes.gtceu.mixer('kubejs:unsweetened_chocolate')
     .EUt(30)
     .duration(100)
 
-    event.recipes.gtceu.chemical_reactor('milk_pasteurization')
+    event.recipes.gtceu.chemical_reactor('kubejs:milk_pasteurization')
     .inputFluids(Fluid.of('gtceu:milk', 1000), Fluid.of('gtceu:steam', 500))//TODO Change to forge tags for steam
     .itemInputs('2x gtceu:stainless_steel_plate')
     .itemOutputs('2x gtceu:stainless_steel_plate')
