@@ -29,29 +29,34 @@
 	*/
 	"zoomSmoothnessMs": 150,
 	/* 
-	   The algorithm responsible easing animations.
+	   The exponent used for easing animations.
 	   You should probably leave this at the default if you don't understand what it does.
-	   OPTIONS: `LINEAR`, `QUADRATIC`, `QUARTIC`, `QUINTIC`
-	   DEFAULT: `QUART`
+	   DEFAULT: `4.0`
 	*/
-	"animationEasingMethod": "QUARTIC",
+	"animationEasingExponent": 4.0,
 	/* 
-	   The algorithm responsible for making differences in FOV more uniform.
+	   The exponent used for making differences in FOV more uniform.
 	   You should probably leave this at the default if you don't understand what it does.
-	   OPTIONS: `LINEAR`, `QUADRATIC`, `QUARTIC`, `QUINTIC`
-	   DEFAULT: `QUADRATIC`
+	   DEFAULT: `2.0`
 	*/
-	"zoomEasingMethod": "QUADRATIC",
+	"zoomEasingExponent": 2.0,
 	/* 
 	   Default starting zoom percentage.
 	   DEFAULT: `0.5`
 	*/
 	"defaultZoom": 0.5,
 	/* 
-	   If `true`, the Zoom keybind will act as a toggle. If `false`, Zoom will only be active while the keybind is held.
+	   If `true`, the Zoom keybind will act as a toggle in first-person.
+	   If `false`, Zoom will only be active in first-person while the keybind is held.
 	   DEFAULT: `false`
 	*/
 	"toggleMode": false,
+	/* 
+	   If `true`, the Zoom keybind will act as a toggle in third-person.
+	   If `false`, Zoom will only be active in third-person while the keybind is held.
+	   DEFAULT: `true`
+	*/
+	"thirdPersonToggleMode": true,
 	/* 
 	   Minimum zoom FOV.
 	   DEFAULT: `1.0`
@@ -65,7 +70,7 @@
 	"maxThirdPersonZoomDistance": 15.0,
 	/* 
 	   Minimum third-person zoom distance (in blocks).
-	   Set to `0.0` to mimic vanilla.
+	   Set to `4.0` to mimic vanilla.
 	   DEFAULT: `0.5`
 	*/
 	"minThirdPersonZoomDistance": 0.5,
@@ -74,5 +79,7 @@
 	   Requires re-launch to take effect.
 	   DEFAULT: `false`
 	*/
-	"disable": false
+	"disable": false,
+	// Used internally. Don't modify this.
+	"configVersion": 1
 }
