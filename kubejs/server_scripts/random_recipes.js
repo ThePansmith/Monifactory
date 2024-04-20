@@ -601,4 +601,7 @@ ServerEvents.recipes(event => {
             });
         });
     });
+
+    //Dark Steel Conversion Recipie
+    event.shapeless('gtceu:dark_steel_ingot',['enderio:dark_steel_ingot'])
 })
