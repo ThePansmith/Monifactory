@@ -8,7 +8,7 @@ event.recipes.gtceu.macerator("Nibs")
     .EUt(20)
     .duration(100)
 
-event.recipes.gtceu.electric_blast_furnace('gtceu:chocolate_liquor')
+event.recipes.gtceu.electric_blast_furnace('kubejs:chocolate_liquor')
     .itemInputs('nuclearcraft:ground_cocoa_nibs')
     .itemOutputs('gtceu:tiny_carbon_dust')
     .outputFluids(Fluid.of('nuclearcraft:chocolate_liquor', 144))
