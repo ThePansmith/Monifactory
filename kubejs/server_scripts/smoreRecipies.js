@@ -49,7 +49,7 @@ event.recipes.gtceu.mixer('kubejs:milk_chocolate')
     .EUt(30)
     .duration(80)
 
-    event.recipes.gtceu.fluid_solidifier('solid_chocolate')
+    event.recipes.gtceu.fluid_solidifier('kubejs:solidify_chocolate')
     .inputFluids(Fluid.of('nuclearcraft:milk_chocolate', 144))
     .itemOutputs('nuclearcraft:milk_chocolate')
     .notConsumable('gtceu:plate_casting_mold')
