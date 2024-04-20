@@ -74,9 +74,9 @@ event.recipes.gtceu.fluid_solidifier('solid_marshmallow')
     .duration(100)
     .EUt(16)
 
-event.recipes.gtceu.mixer('liquid_marshmallow')
+event.recipes.gtceu.mixer('liquidMarshmallow')
     .inputFluids(Fluid.of('nuclearcraft:sugar',72),Fluid.of('nuclearcraft:hydrated_gelatin',144))
-    .itemOutputs(Fluid.of('nuclearcraft:marshmallow',144))
+    .outputFluids(Fluid.of('nuclearcraft:marshmallow',144))
     .EUt(30)
     .duration(100)
 event.recipes.gtceu.extractor('liquidSugar')
@@ -84,12 +84,12 @@ event.recipes.gtceu.extractor('liquidSugar')
     .outputFluids('nuclearcraft:sugar')
     .EUt(16)
     .duration(150)
-event.recipes.mixer('geletanHydrate')
+event.recipes.gtceu.mixer('geletanHydrate')
     .inputFluids(Fluid.of('minecraft:water',500),Fluid.of('nuclearcraft:gelatin',144))
     .outputFluids(Fluid.of('nuclearcraft:hydrated_gelatin',144))
     .EUt(16)
     .duration(45)
-event.recipes.extractor('geltian')
+event.recipes.gtceu.extractor('geltian')
     .itemInputs('gtceu:gelitan_dust')
     .outputFluids('nuclearcraft:gelatin',144)
     .EUt(7)
@@ -97,39 +97,39 @@ event.recipes.extractor('geltian')
 
 
 //Smores Finally!!!
-event.shapeless('kubejs:smore_1'),[
+event.shapeless('kubejs:smore_1',[
     '2x nuclearcraft:graham_cracker',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-]
-event.shapeless('kubejs:smore_2'),[
+])
+event.shapeless('kubejs:smore_2',[
     '2x kubejs:smore_1',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-]
-event.shapeless('kubejs:smore_4'),[
+])
+event.shapeless('kubejs:smore_4',[
     '2x kubejs:smore_2',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-]
-event.shapeless('kubejs:smore_8'),[
+])
+event.shapeless('kubejs:smore_8',[
     '2x kubejs:smore_4',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-]
-event.shapeless('kubejs:smore_16'),[
+])
+event.shapeless('kubejs:smore_16',[
     '2x kubejs:smore_8',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-]
-event.shapeless('kubejs:smore_32'),[
+])
+event.shapeless('kubejs:smore_32',[
     '2x kubejs:smore_16',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-]
-event.shapeless('kubejs:smore_64'),[
+])
+event.shapeless('kubejs:smore_64',[
     '2x kubejs:smore_32',
     'nuclearcraft:milk_chocolate'
     ,'nuclearcraft:marshmallow'
-]
+])
 })
