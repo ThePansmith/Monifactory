@@ -43,7 +43,7 @@ event.recipes.gtceu.mixer('kubejs:dark_chocolate')
     .EUt(30)
     .duration(100)
 
-event.recipes.gtceu.mixer('nuclearcraft:milk_chocolate')
+event.recipes.gtceu.mixer('kubejs:milk_chocolate')
     .inputFluids(Fluid.of('nuclearcraft:dark_chocolate', 144), Fluid.of('nuclearcraft:pasteurized_milk', 250))
     .outputFluids(Fluid.of('nuclearcraft:milk_chocolate',288))
     .EUt(30)
