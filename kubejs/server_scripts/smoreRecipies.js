@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 // Milk Chocolate Making
 
-event.smelting('nuclearcraft:roasted_cocoa_beans', 'minecraft:cocoa_beans')
+event.smelting('nuclearcraft:roasted_cocoa_beans', 'minecraft:cocoa_beans').id("kubejs:cocoa_beans")
 event.recipes.gtceu.macerator("Nibs")
     .itemInputs('nuclearcraft:roasted_cocoa_beans')
     .itemOutputs('nuclearcraft:ground_cocoa_nibs')
