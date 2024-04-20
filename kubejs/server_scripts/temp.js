@@ -11,22 +11,10 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({ output: 'waystones:warp_plate' }, 'minecraft:gravel', 'waystones:warp_stone')
 
-    event.remove({ output: "thermal:device_water_gen" })
-    event.shaped(
-        "thermal:device_water_gen", [
-            'BBB',
-            'BCB',
-            'BBB'
-        ], {
-            B: "enderio:fused_quartz",
-            C: "watercondenser:watercondenser"
-        }
-    )
-
     // Temp until classic boiler has these built in
     event.remove({ output: 'systeams:stirling_boiler' })
     event.shapeless('systeams:stirling_boiler', ['steamdynamo:steam_dynamo', 'systeams:boiler_pipe'])
-    
+
 	// Temp rubber wood recipes
     event.shaped(
         "3x minecraft:oak_sign", [

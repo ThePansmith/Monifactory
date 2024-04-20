@@ -144,12 +144,13 @@ ServerEvents.recipes(event => {
         "thermal:machine_insolator", [
         " A ",
         "SBS",
-        "ARA"
+        "CRC"
     ], {
-        A: "gtceu:steel_plate",
-        B: "minecraft:bucket",
-        S: '#minecraft:saplings',
-        R: 'thermal:rf_coil'
+        A: '#forge:gears/lumium',
+        B: 'thermal:machine_frame',
+        C: '#forge:gears/copper',
+        S: '#minecraft:dirt',
+        R: 'thermal:rf_coil' // this should be reception coil, made from gold
     }
     ).id('kubejs:shaped/machine_insolator')
 

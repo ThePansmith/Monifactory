@@ -365,7 +365,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "4BA139CAD2C74A24"
-				item: "gtceu:mana_infused_metal_ingot"
+				item: "gtceu:mythril_ingot"
 				type: "item"
 			}]
 			x: 5.0d
