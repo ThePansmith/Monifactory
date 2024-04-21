@@ -143,6 +143,7 @@ StartupEvents.registry('item', event => {
     event.create('pyrotheum_dust').texture('kubejs:item/pyrotheum_blend').displayName('§6Pyrotheum Dust')
     event.create('primal_mana').displayName("Primal Mana Dust").rarity('epic')
 
+
     event.create('destabilized_clathrate').rarity('uncommon')
     event.create('energized_clathrate').rarity('uncommon')
     event.create('resonant_clathrate').rarity('rare')
@@ -162,10 +163,10 @@ StartupEvents.registry('item', event => {
 
     //Thermal Augments
     //Very Hacky but whatever
-    event.create('thermal:upgrade_augment_1').displayName("Hardened Integral Components")
-    event.create('thermal:upgrade_augment_2').displayName("Reinforced Integral Components")
-    event.create('thermal:upgrade_augment_4').displayName("Signalum Integral Components")
-    event.create('thermal:upgrade_augment_3').displayName("Resonant Integral Components")
+    event.create('thermal:upgrade_augment_1');
+    event.create('thermal:upgrade_augment_2');
+    event.create('thermal:upgrade_augment_4');
+    event.create('thermal:upgrade_augment_3');
     event.create('kubejs:redstone_transmission_coil')
 
     //Extra Utilities 2
@@ -180,9 +181,6 @@ StartupEvents.registry('item', event => {
     event.create('glitch_infused_chestplate', 'chestplate').tier('glitch').displayName('§bGlitch Infused Chestplate')
     event.create('glitch_infused_leggings', 'leggings').tier('glitch').displayName('§bGlitch Infused Leggings')
     event.create('glitch_infused_boots', 'boots').tier('glitch').displayName('§bGlitch Infused Boots')
-
-    //Dev Tool
-    //event.create('dev_tool', 'paxel').tier("dev").unstackable().displayName("The Holy Pickaxe")
 
     //Ultimate Generator Components
     //event.create('survival_generator_component').textureJson({ layer0: 'gtceu:item/material_sets/dull/gear'}).color(0, '#70F00F')

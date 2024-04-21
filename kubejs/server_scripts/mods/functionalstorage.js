@@ -123,4 +123,39 @@ ServerEvents.recipes(event => {
 	}).id('functionalstorage:netherite_upgrade')
 
 	event.replaceInput({ id: /functionalstorage:fluid/ }, 'minecraft:bucket', 'gtceu:lv_super_tank')
+
+    // Custom compacting recipes
+    event.custom({ 
+        type: "functionalstorage:custom_compacting", 
+        higher_input: { 
+            count: 1, 
+            item: "kubejs:moni_dollar" 
+        }, 
+        lower_input: { 
+            count: 4,
+            item: "kubejs:moni_quarter"
+        } 
+    })
+    event.custom({ 
+        type: "functionalstorage:custom_compacting", 
+        higher_input: { 
+            count: 1, 
+            item: "kubejs:moni_quarter" 
+        }, 
+        lower_input: { 
+            count: 5, 
+            item: "kubejs:moni_nickel" 
+        } 
+    })
+    event.custom({ 
+        type: "functionalstorage:custom_compacting", 
+        higher_input: { 
+            count: 1, 
+            item: "kubejs:moni_nickel" 
+        }, 
+        lower_input: { 
+            count: 5, 
+            item: "kubejs:moni_penny"
+        } 
+    })
 })

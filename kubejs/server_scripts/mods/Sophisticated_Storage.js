@@ -10,15 +10,16 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_barrel/ })
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_chest/ })
-    event.remove({ output: /limited_barrel/ })
+    event.remove({ output: /sophisticatedstorage:[A-Za-z]+_shulker_box/ })
+    event.remove(/^sophisticatedstorage:limited.+barrel.+/)
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_to_[A-Za-z]+_tier_upgrade/ })
     event.remove({ input: 'minecraft:redstone_torch', mod: 'sophisticatedstorage'})
     
     var barrelupgrade = [
         [Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'), 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:barrel'],
         ['sophisticatedstorage:basic_to_gold_tier_upgrade', 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:iron_ingot'],
-        ['sophisticatedstorage:gold_to_diamond_tier_upgrade', 'gtceu:vibrant_alloy_ingot', 'gtceu:vibrant_alloy_ingot', 'sophisticatedstorage:basic_to_gold_tier_upgrade'],
-        ['sophisticatedstorage:diamond_to_netherite_tier_upgrade', 'gtceu:dark_soularium_ingot', 'gtceu:dark_soularium_ingot', 'sophisticatedstorage:gold_to_diamond_tier_upgrade'],
+        ['sophisticatedstorage:gold_to_diamond_tier_upgrade', 'gtceu:aluminium_ingot', 'gtceu:aluminium_ingot', 'sophisticatedstorage:basic_to_gold_tier_upgrade'],
+        ['sophisticatedstorage:diamond_to_netherite_tier_upgrade', 'gtceu:stainless_steel_ingot', 'gtceu:stainless_steel_ingot', 'sophisticatedstorage:gold_to_diamond_tier_upgrade'],
     ]
 
     barrelupgrade.forEach(material => {
