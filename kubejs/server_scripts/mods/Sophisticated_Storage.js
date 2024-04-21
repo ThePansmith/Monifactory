@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     
     var barrelupgrade = [
         [Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'), 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:barrel'],
-        ['sophisticatedstorage:basic_to_gold_tier_upgrade', 'minecraft:iron_ingot', 'minecraft:iron_ingot', 'minecraft:barrel'],
+        ['sophisticatedstorage:basic_to_gold_tier_upgrade', 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:iron_ingot'],
         ['sophisticatedstorage:gold_to_diamond_tier_upgrade', 'gtceu:aluminium_ingot', 'gtceu:aluminium_ingot', 'sophisticatedstorage:basic_to_gold_tier_upgrade'],
         ['sophisticatedstorage:diamond_to_netherite_tier_upgrade', 'gtceu:stainless_steel_ingot', 'gtceu:stainless_steel_ingot', 'sophisticatedstorage:gold_to_diamond_tier_upgrade'],
     ]
