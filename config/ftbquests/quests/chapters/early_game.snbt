@@ -2562,19 +2562,6 @@
 			y: 0.75d
 		}
 		{
-			dependencies: ["73C1AB31431B5C11"]
-			description: ["Bigger barrels."]
-			id: "313ED4E5248EFED3"
-			tasks: [{
-				id: "6B80908A668D1EFF"
-				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
-				type: "item"
-			}]
-			title: "&9Upgrades, people, upgrades."
-			x: 9.0d
-			y: 26.5d
-		}
-		{
 			dependencies: ["1D95AC7CAC7D5121"]
 			description: ["All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."]
 			id: "3A71D736AE5C17E2"
