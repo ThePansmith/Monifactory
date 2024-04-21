@@ -57,7 +57,7 @@ event.recipes.gtceu.mixer('kubejs:milk_chocolate')
     .EUt(16)
 
     //Grham Cracker
-event.recipes.gtceu.compressor('ghramCracker')
+event.recipes.gtceu.compressor('kubejs:graham_cracker')
     .itemInputs('2x gtceu:wheat_dust')
     .itemOutputs('nuclearcraft:graham_cracker')
     .EUt(20)
