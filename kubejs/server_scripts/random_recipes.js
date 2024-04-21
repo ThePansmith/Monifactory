@@ -555,7 +555,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
 
     //Recipie from Radium salt to Radium and Rock Salt
-    event.recipes.gtceu.electrolyzer("radiumSaltToRadiumAndSalt")
+    event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
         .itemInputs("kubejs:radium_salt")
         .itemOutputs("gtceu:rock_salt_dust")
         .outputFluids(Fluid.of('gtceu:radon', 1000))
