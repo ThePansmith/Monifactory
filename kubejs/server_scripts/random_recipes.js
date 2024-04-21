@@ -539,7 +539,7 @@ ServerEvents.recipes(event => {
     }
     ).damageIngredient('#minecraft:swords')
 
-    //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
+	   //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
     event.remove({ id: "armorplus:crafting/shapeless/wooden_rod" })
     event.shaped(
         '2x armorplus:wooden_rod', [
@@ -555,7 +555,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
 
     //Recipie from Radium salt to Radium and Rock Salt
-    event.recipes.gtceu.electrolyzer("radiumSaltToRadiumAndSalt")
+    event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
         .itemInputs("kubejs:radium_salt")
         .itemOutputs("gtceu:rock_salt_dust")
         .outputFluids(Fluid.of('gtceu:radon', 1000))
@@ -574,16 +574,4 @@ ServerEvents.recipes(event => {
         L: 'gtceu:lead_plate'
     }
     )
-
-    // Stonecutting CCI blocks
-    let sameItemsTags = ['#chisel_chipped_integration:factory_block', '#chisel_chipped_integration:technical_block', '#chisel_chipped_integration:laboratory_block', '#chisel_chipped_integration:tyrian']; // What item tags to go trough (change this so you have your tags)
-    sameItemsTags.forEach(tag => {
-        let sameItems = Ingredient.of(tag).stacks; // Get all of the items with that tag
-        sameItems.forEach(input => {
-            sameItems.forEach(output => { // Loop trough the items so all combination of input and output are met
-                if (input != output) // Ignore recipes where input and output are the same item
-                    event.stonecutting(output, input); // Make the recipe
-            });
-        });
-    });
 })
