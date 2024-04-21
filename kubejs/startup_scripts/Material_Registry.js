@@ -273,11 +273,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("mana"))
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("mana_infused_metal")
-        .ingot().fluid()
-        .color(0xCF83FB)
-        .iconSet('dull')
-        .flags(GTMaterialFlags.GENERATE_PLATE)
+    // this IS mithryl, just renamed
+    // event.create("mana_infused_metal")
+    //     .ingot().fluid()
+    //     .color(0xCF83FB)
+    //     .iconSet('dull')
+    //     .flags(GTMaterialFlags.GENERATE_PLATE)
 
     event.create("manyullyn")
         .ingot().fluid()

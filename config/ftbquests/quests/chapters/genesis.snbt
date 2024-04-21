@@ -15,7 +15,7 @@
 			description: [
 				"This pack is intended to be played in a &bLost cities/Overworld dimension&r."
 				""
-				"If you're playing with friends, don't forget to invite them to the &eFTB Teams party&r. "
+				"If you're playing with friends, don't forget to invite them to a &eFTB Teams party&r. "
 				""
 				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid World&r."
 				"{@pagebreak}"
@@ -676,7 +676,7 @@
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
-			description: ["&3Iron Furnaces&f can smelt an item in &a150 ticks&f, which is somewhat faster than a vanilla &6Furnace&f, which takes &a200 ticks&f. The fuel efficiency remains the same for all furnaces."]
+			description: ["&3Iron Furnaces&f can smelt an item in &a160 ticks&f, which is somewhat faster than a vanilla &6Furnace&f, which takes &a200 ticks&f. The fuel efficiency remains the same for all furnaces."]
 			id: "7865CDE5CFE005DC"
 			rewards: [{
 				id: "55F7CA98F66953A1"
@@ -701,7 +701,6 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			shape: "rectangle"
 			tasks: [{
 				id: "14CDC80A449BD388"
 				item: "ironfurnaces:copper_furnace"
@@ -713,7 +712,7 @@
 		}
 		{
 			dependencies: ["0591171F13A45283"]
-			description: ["&3Silver Furnaces&f are another step up in speed, taking a mere &a60 ticks&f to smelt an item."]
+			description: ["&3Silver Furnaces&f are another step up in speed, taking a mere &a80 ticks&f to smelt an item."]
 			id: "3F77EDE69BB649DA"
 			rewards: [{
 				id: "77EC0D08F5C99E37"
@@ -789,7 +788,7 @@
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
-			description: ["At this point, you might as well just make a &3Multi Smelter&r."]
+			description: ["At this point, you might as well just make a &3Multi Smelter&r. But it does smelt items at a blazing quick 5 ticks"]
 			id: "69E77BD01CFF65EB"
 			invisible: true
 			rewards: [{
@@ -932,7 +931,7 @@
 				""
 				"Pick your poison."
 				""
-				"&5Sadly, EnderIO has decided to already abandon 1.20.1 EnderIO, meaning things like speed upgrades, filters, etc will never be officially added. If you are a mod dev and are willing to port these elements, please let the NFm dev team know."
+				"&5Sadly, EnderIO has decided to already abandon 1.20.1 EnderIO, meaning things like speed upgrades, filters, etc will never be officially added. If you are a mod dev and are willing to port these elements, please let the Monifactory dev team know."
 			]
 			icon: "gtceu:steel_small_fluid_pipe"
 			id: "64AAF0CD958D836A"
@@ -1046,7 +1045,7 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"&9Modern replaces this with a water condenser from the Water Condenser mod, as the NuclearCraft Infinite Water Source was overhauled.&f"
+				"&9Monifactory replaces this with a water condenser from the Water Condenser mod, as the NuclearCraft Infinite Water Source was overhauled.&f"
 				""
 				"Feeding a &3Steam Dynamo&f with water by hand is a pretty silly idea."
 				""
@@ -1158,7 +1157,7 @@
 			]
 			title: "More Materials"
 			x: -1.0d
-			y: 5.5d
+			y: 5.75d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1286,7 +1285,7 @@
 			]
 			title: "From Dust to Wires"
 			x: -1.0d
-			y: 7.0d
+			y: 7.25d
 		}
 		{
 			dependencies: ["7FA0E6F3B466576C"]
@@ -1306,7 +1305,7 @@
 			}]
 			title: "Conductive Iron Energy Conduits"
 			x: -1.0d
-			y: 8.5d
+			y: 8.75d
 		}
 		{
 			dependencies: [
@@ -1397,8 +1396,6 @@
 				"&2CEu circuit progression means you also have to put wires on your substrates for them to be usable. In this case, use some Fine Copper Wires.&r"
 				""
 				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
-				""
-				"Make sure to code these recipes into a &3Crafting Station&r... you'll be making a LOT of these things."
 			]
 			icon: "gtceu:resistor"
 			id: "58F9A5310D43A2B0"
@@ -1654,10 +1651,10 @@
 			}]
 			title: "LV Power Storage"
 			x: -2.5d
-			y: 10.5d
+			y: 10.25d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
+			dependencies: ["3A5387B2003177B2"]
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
@@ -1710,17 +1707,15 @@
 				}
 			]
 			title: "Inspector Gadget"
-			x: -2.5d
-			y: 12.5d
+			x: -3.75d
+			y: 14.0d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
+			dependencies: ["3A5387B2003177B2"]
 			description: [
 				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
 				""
 				"There's also a quest chain for &bEnderIO&r Jetpacks (starting with the &6Conductive Iron Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
-				""
-				"If the &6Jetpack&r overview and information from &bThe One Probe&r conflict, The One Probe may be moved using &6/topcfg&r."
 			]
 			id: "7E66445087E82F65"
 			rewards: [{
@@ -1741,11 +1736,11 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: 10.5d
+			x: -5.0d
+			y: 12.75d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
+			dependencies: ["3A5387B2003177B2"]
 			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
 			id: "39394D5596FF8BC8"
 			rewards: [{
@@ -1769,8 +1764,8 @@
 				type: "item"
 			}]
 			title: "Electromagnet"
-			x: -3.5d
-			y: 12.5d
+			x: -5.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3B200AD6EFF90DFA"]
@@ -1986,6 +1981,16 @@
 				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
 				""
 				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"dark_purple\"},{\"text\":\"Monifactory repository\",\"color\":\"dark_purple\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/moni-CEu/moni-CEu-Modern\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"dark_purple\"}]"
+				""
+				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid World&r."
+				"{@pagebreak}"
+				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
+				""
+				"Features new to &9Monifactory&r and quests with new content will be higlighted in &9Blue&r."
+				""
+				"Notes about things in &5Alpha&r will be higlighted in &5Dark Purple&r."
+				""
+				"[\"Text with \",{\"text\":\"underlines\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"But not this!\"}},\" are (mostly) clickable.\"]"
 			]
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
@@ -2003,7 +2008,7 @@
 		{
 			dependencies: ["2FA9404468E4BBD9"]
 			description: [
-				"The &9Tinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r."
+				"The &9Tinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r. &9This is also used for upgrading thermal items.&r"
 				""
 				"The Turbo Charger is a little more expensive, but is able to charge items at a &omuch&r faster rate and is able to charge items that use &aRF&r and &aEU&r."
 			]
@@ -2023,23 +2028,15 @@
 						items: [
 							{
 								Count: 1b
-								id: "thermal:tinker_bench"
-								tag: {
-									BlockEntityTag: {
-										Energy: 9688
-										EnergyMax: 500000
-										EnergyRecv: 1000
-										EnergySend: 1000
-										RSControl: {
-											RSMode: 0b
-											RSThreshold: 0b
-										}
-									}
-								}
+								id: "gtceu:lv_charger_4x"
 							}
 							{
 								Count: 1b
-								id: "gtceu:lv_charger_4x"
+								id: "thermal:tinker_bench"
+							}
+							{
+								Count: 1b
+								id: "thermal:charge_bench"
 							}
 						]
 					}
@@ -2048,7 +2045,7 @@
 				type: "item"
 			}]
 			title: "&9Charging Items"
-			x: -3.5d
+			x: -3.75d
 			y: 11.5d
 		}
 		{
@@ -2360,6 +2357,108 @@
 			title: "Neeve: End Game"
 			x: -6.5d
 			y: 8.5d
+		}
+		{
+			dependencies: [
+				"081101DEE6227D87"
+				"06E9B9DDDB245F38"
+			]
+			description: [
+				"Basic &aFlux Capacitors&r hold a whopping lot of energy - &9500 kRF&r - and are useful for keeping your &aRF-powered&r equipment and tools charged."
+				""
+				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
+				""
+				"The Flux Capacitor is a &bBauble&r, so open your inventory and look for the Baubles button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
+				""
+				"Finally, you can charge up all those depleted &m&6Dark Boots&r&r and &6The Ender&r swords you've looted."
+			]
+			icon: {
+				Count: 1b
+				id: "thermal:flux_capacitor"
+				tag: { }
+			}
+			id: "3A5387B2003177B2"
+			rewards: [{
+				id: "18D835350F2E6BBE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Slightly Nerfed"
+			tasks: [
+				{
+					id: "5EF5A8A2767A69E3"
+					item: {
+						Count: 1b
+						id: "thermal:flux_capacitor"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "63EE7A1364F6888B"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/sulfur"
+						}
+					}
+					title: "Sulfur Dust"
+					type: "item"
+				}
+			]
+			title: "&9Flux Capacitors"
+			x: -3.75d
+			y: 12.75d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"&6Sulfur Ore&r is the only source of &6Sulfur Dust&r that's currently available to you."
+				""
+				"You may want to spend a few &9Monicoins&r on the ore to jumpstart your power storage."
+				""
+				"Otherwise the ore is only available in &athe Nether&r, and the only way to get there is with a &6Nether Cake&r. Oh no!"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:sulfur_ore"
+			id: "081101DEE6227D87"
+			rewards: [{
+				id: "4C3153B1874D58D5"
+				item: {
+					Count: 1b
+					id: "minecraft:player_head"
+					tag: {
+						SkullOwner: {
+							Id: "a8088bef-5f81-4110-a734-524cd787b270"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjkyNTFlMTg2NTdlNzMwNGVhY2VhYzVmOGQ0NDZkMjQ4ZWE0NmFmMmVhYjE0NWY4MTg1Y2VjZTc3OWYxNjQ4In19fQ=="
+								}]
+							}
+						}
+						display: {
+							Name: "[\"\",{\"text\":\"I bought ore with Nomicoins\",\"italic\":false}]"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0161A7D4C24DC421"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ores/sulfur"
+					}
+				}
+				title: "Any Sulfur Ore"
+				type: "item"
+			}]
+			title: "Sulfur Ore"
+			x: -5.0d
+			y: 11.5d
 		}
 	]
 	title: "Genesis"

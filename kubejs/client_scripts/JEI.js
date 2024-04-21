@@ -2,7 +2,7 @@
 
 JEIEvents.hideItems(event => {
     //Hides useless items
-    event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'])
+    event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper', 'thermal:constantan_coin'])
 
     //i really hate these kind of mods
     event.hide('ironfurnaces:million_furnace') // rainbow furnace
@@ -23,10 +23,11 @@ JEIEvents.hideItems(event => {
     event.hide(['thermal:dynamo_gourmand', 'thermal:dynamo_disenchantment', 'thermal:dynamo_lapidary', 'systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'])
     //event.hide(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3', 'thermal:upgrade_augment_4', 'thermal:dynamo_output_augment'])
     event.hide(['thermal:coal_coke', 'thermal:coal_coke_block'])
+    event.hide(['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter'])
 
     //EnderIO
     event.hide(['enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block', "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])
-    //EnderIO (grinding balls) haha grind my balls -clown
+    //EnderIO (grinding balls) haha grind my balls - clown
     event.hide(['enderio:soularium_grinding_ball', 'enderio:conductive_alloy_grinding_ball', 'enderio:pulsating_alloy_grinding_ball', 'enderio:redstone_alloy_grinding_ball', 'enderio:energetic_alloy_grinding_ball', 'enderio:vibrant_alloy_grinding_ball', 'enderio:copper_alloy_grinding_ball', 'enderio:dark_steel_grinding_ball', 'enderio:end_steel_grinding_ball'])
 
     //GT Steam Age
@@ -42,8 +43,6 @@ JEIEvents.hideItems(event => {
     event.hide([Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:dark_soularium"}').strongNBT(), Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:fluxed"}').strongNBT(), 'ironjetpacks:capacitor', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:creative"}').strongNBT()])
     event.hide(['ironjetpacks:basic_coil', 'ironjetpacks:advanced_coil', 'ironjetpacks:elite_coil', 'ironjetpacks:ultimate_coil'])
 
-	// Chisel
-	event.hide('chiselsandbits:block_bit');
 
 	// antiblocks (is this even needed?)
 	// event.hide([/^antiblocksrechiseled:pressure_plate_.+$/, /^antiblocksrechiseled:button_.+$/, /^antiblocksrechiseled:stair_.+$/, /^antiblocksrechiseled:slab_.+$/, /^antiblocksrechiseled:border_.+$/, /^antiblocksrechiseled:wool_.+$/])
@@ -81,8 +80,49 @@ JEIEvents.hideItems(event => {
 
     // Wireless Chargers
     event.hide(['wirelesschargers:basic_wireless_block_charger', 'wirelesschargers:advanced_wireless_block_charger'])
+
+    //Sophisticated Storage barrels
+    event.hide(/^sophisticatedstorage:.+barrel$/)
+    event.hide('sophisticatedstorage:barrel')
+
+    //Sophisticated Chests
+    event.hide(/^sophisticatedstorage:.+chest$/)
+    event.hide('sophisticatedstorage:chest')
+
+    //Sophisticated Shulkers
+    event.hide(/^sophisticatedstorage:.+shulker_box$/)
+    event.hide('sophisticatedstorage:shulker_box')
+
+    //Sophisticated Limited Drawers
+    event.hide(/^sophisticatedstorage:limited.+barrel.+/)
+
+    //Sophisticated Backpacks
+    event.hide('sophisticatedbackpacks:backpack')
+
+    //Sophisticated tier upgrades
+    event.hide(/^sophisticatedstorage:.+tier_upgrade$/)
+
+    // Chipped
+    event.hide(['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'])
+
+    //Greg Milk
+    event.hide('gtceu:milk')
 })
 
 JEIEvents.hideFluids(event => {
     event.hide(/^nuclearcraft:.+/)
+})
+
+JEIEvents.addItems(event => {
+
+
+//Sophisticated Storage Stuff
+event.add([Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'),Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"oak"}'),Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"oak"}')])
+event.add([Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'),Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'),Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}')])
+event.add(['sophisticatedstorage:gold_shulker_box', 'sophisticatedstorage:diamond_shulker_box', 'sophisticatedstorage:netherite_shulker_box'])
+event.add('sophisticatedbackpacks:backpack')
+event.add(['sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:gold_to_diamond_tier_upgrade', 'sophisticatedstorage:diamond_to_netherite_tier_upgrade'])
+
+
+
 })

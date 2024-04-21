@@ -338,10 +338,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "kubejs:molten_primal_mana"
-				id: "5FBAD0D8C7909AB0"
-				type: "fluid"
+				id: "09F975A61B3C84FA"
+				item: "kubejs:molten_primal_mana_bucket"
+				type: "item"
 			}]
 			title: "Primal Mana"
 			x: 5.0d
@@ -366,7 +365,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "4BA139CAD2C74A24"
-				item: "gtceu:mana_infused_metal_ingot"
+				item: "gtceu:mythril_ingot"
 				type: "item"
 			}]
 			x: 5.0d
@@ -651,10 +650,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:radon"
-				id: "645C8CC8F6C2397E"
-				type: "fluid"
+				id: "229C13A334082C92"
+				item: "gtceu:radon_bucket"
+				type: "item"
 			}]
 			title: "&2Radon"
 			x: 13.0d
@@ -930,10 +928,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:argon"
-				id: "293E1659F015832D"
-				type: "fluid"
+				id: "32ABC9C584E278E7"
+				item: "gtceu:argon_bucket"
+				type: "item"
 			}]
 			title: "&2Noble Gasses"
 			x: 32.0d
@@ -961,10 +958,9 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:liquid_air"
-				id: "3E8C236CFB37BCEF"
-				type: "fluid"
+				id: "42AC56FDBA8442EE"
+				item: "gtceu:liquid_air_bucket"
+				type: "item"
 			}]
 			title: "&2Distilling Liquid Air"
 			x: 32.0d
@@ -1042,10 +1038,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:nitrogen"
-				id: "0B6460DC8DD15D16"
-				type: "fluid"
+				id: "2F60FFACB0B47C9F"
+				item: "gtceu:nitrogen_bucket"
+				type: "item"
 			}]
 			title: "&2Nitrogen"
 			x: 34.0d
@@ -1107,10 +1102,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:nitrogen_dioxide"
-				id: "5E0A155B8255AC1A"
-				type: "fluid"
+				id: "3D6E3632D49E05CE"
+				item: "gtceu:nitrogen_dioxide_bucket"
+				type: "item"
 			}]
 			title: "Nitrogen Dioxide"
 			x: 36.0d
@@ -1129,10 +1123,9 @@
 			shape: "hexagon"
 			subtitle: "Don't let the EPA catch you making this stuff."
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:nitric_acid"
-				id: "17B29E8E12D6BF89"
-				type: "fluid"
+				id: "73779F75B9CA3B06"
+				item: "gtceu:nitric_acid_bucket"
+				type: "item"
 			}]
 			title: "Nitric Acid"
 			x: 38.0d
@@ -1189,10 +1182,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:acetic_acid"
-				id: "30FBE54B211E42C3"
-				type: "fluid"
+				id: "32FEE3B58C918C4A"
+				item: "gtceu:acetic_acid_bucket"
+				type: "item"
 			}]
 			title: "Acetic Acid"
 			x: 40.0d
@@ -1214,10 +1206,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:ethenone"
-				id: "4043A093814953C1"
-				type: "fluid"
+				id: "07AB0C8153AB8153"
+				item: "gtceu:ethenone_bucket"
+				type: "item"
 			}]
 			title: "Ethenone"
 			x: 40.0d
@@ -1244,10 +1235,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:tetranitromethane"
-				id: "781F8DBC12A8D878"
-				type: "fluid"
+				id: "673BEB0E2F9992E8"
+				item: "gtceu:tetranitromethane_bucket"
+				type: "item"
 			}]
 			title: "Tetranitromethane"
 			x: 40.0d
@@ -1338,10 +1328,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:diesel"
-				id: "09643192BA254853"
-				type: "fluid"
+				id: "4FE2BF6F06A4D9BF"
+				item: "gtceu:diesel_bucket"
+				type: "item"
 			}]
 			title: "Diesel"
 			x: 43.0d
@@ -1362,10 +1351,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:light_fuel"
-				id: "2364ECC1F96F85D0"
-				type: "fluid"
+				id: "76BE3671F88639AD"
+				item: "gtceu:light_fuel_bucket"
+				type: "item"
 			}]
 			title: "&2Light Fuel"
 			x: 45.0d
@@ -1383,10 +1371,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:heavy_fuel"
-				id: "5FD80D64119C2662"
-				type: "fluid"
+				id: "7D024FBCBF0F1DDB"
+				item: "gtceu:heavy_fuel_bucket"
+				type: "item"
 			}]
 			title: "Heavy Fuel"
 			x: 45.0d
@@ -1408,10 +1395,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:hydrogen_sulfide"
-				id: "42B8B115A0A62ED1"
-				type: "fluid"
+				id: "4E6B5549E5808764"
+				item: "gtceu:hydrogen_sulfide_bucket"
+				type: "item"
 			}]
 			title: "&2Hydrogen Sulfide"
 			x: 43.25d
@@ -1456,10 +1442,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:naphtha"
-				id: "73B3A50B3FE899BB"
-				type: "fluid"
+				id: "65EB9C1F38F1D80B"
+				item: "gtceu:naphtha_bucket"
+				type: "item"
 			}]
 			title: "Naphtha"
 			x: 47.0d
@@ -1543,10 +1528,9 @@
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:gasoline"
-				id: "40EE9AA7FA79138B"
-				type: "fluid"
+				id: "6E1239406B0E8A94"
+				item: "gtceu:gasoline_bucket"
+				type: "item"
 			}]
 			title: "&2Gasoline"
 			x: 49.0d
@@ -1574,10 +1558,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:high_octane_gasoline"
-				id: "52072821C3D402C8"
-				type: "fluid"
+				id: "5C57B3D8A0E38AB2"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
 			}]
 			title: "&2High-Octane Gasoline"
 			x: 49.0d
@@ -1606,10 +1589,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:glycerol"
-				id: "5E50FCFE84AB6846"
-				type: "fluid"
+				id: "7E764A4FD6AE4DE7"
+				item: "gtceu:glycerol_bucket"
+				type: "item"
 			}]
 			title: "Bio Diesel and Glycerol"
 			x: 37.0d
@@ -1678,10 +1660,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:epichlorohydrin"
-				id: "495E4994CA17A822"
-				type: "fluid"
+				id: "79AA407B90ECD8DC"
+				item: "gtceu:epichlorohydrin_bucket"
+				type: "item"
 			}]
 			title: "&2Epichlorohydrin"
 			x: 37.0d
@@ -2372,10 +2353,9 @@
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:polybenzimidazole"
-				id: "4268C24098615FE2"
-				type: "fluid"
+				id: "043025061B52906B"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
 			}]
 			title: "&2Polybenzimidazole (PBI)"
 			x: 33.75d
@@ -3177,10 +3157,9 @@
 			shape: "hexagon"
 			subtitle: "You will need either Diesel or Biodiesel"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:cetane_boosted_diesel"
-				id: "73F1DA76CDBB2AE1"
-				type: "fluid"
+				id: "75538AD487A995CD"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
 			}]
 			title: "&2CETANE-BOOSTED DIESEL!!"
 			x: 41.5d

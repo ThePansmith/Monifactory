@@ -178,6 +178,54 @@
         },
         {
             "category": "emi_loot:gameplay_drops"
+        },
+        {
+            "category": "minecraft:alchemy_bench"
+        },
+        {
+            "category": "minecraft:botanist_workbench"
+        },
+        {
+            "category": "minecraft:glassblower"
+        },
+        {
+            "category": "minecraft:carpenters_table"
+        },
+        {
+            "category": "minecraft:loom_table"
+        },
+        {
+            "category": "minecraft:mason_table"
+        },
+        {
+            "category": "minecraft:tinkering_table"
+        },
+        {
+            "category": "create:automatic_shaped" 
+        },
+        {
+            "category": "create:automatic_shapeless" 
+        },
+        {
+            "category": "create:sawing" 
+        },
+        {
+            "category": "create:draining" 
+        },
+        {
+            "category": "create:mixing" 
+        },
+        {
+            "category": "create:pressing" 
+        },
+        {
+            "category": "create:automatic_brewing" 
+        },
+        {
+            "category": "create:automatic_packing" 
+        },
+        {
+            "category": "gtceu:create_mixer" 
         }
     ]
 }

@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
 			B: 'gtceu:red_steel_ingot',
 			C: 'gtceu:kanthal_ingot',
 			D: 'gtceu:magnalium_ingot',
-			E: 'gtceu:mana_infused_metal_ingot',
+			E: 'gtceu:mythril_ingot',
 			F: 'gtceu:manyullyn_ingot',
 			G: 'gtceu:enderium_ingot',
 			H: 'gtceu:blue_steel_ingot',

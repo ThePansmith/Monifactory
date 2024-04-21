@@ -317,8 +317,8 @@ ServerEvents.recipes(event => {
             'ABCDEDCBA'
         ], {
             A: 'functionalstorage:netherite_upgrade',
-            B: 'sophisticatedstorage:gold_barrel',
-            C: 'sophisticatedstorage:diamond_barrel',
+            B: 'sophisticatedstorage:gold_to_diamond_tier_upgrade',
+            C: 'sophisticatedstorage:diamond_to_netherite_tier_upgrade',
             D: 'gtceu:tungsten_steel_crate',
             E: 'gtceu:luv_quantum_chest',
             F: 'gtceu:zpm_quantum_chest',

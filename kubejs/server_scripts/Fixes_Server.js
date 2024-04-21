@@ -1,5 +1,3 @@
-// Issue 187 - https://github.com/ThePansmith/Monifactory/issues/187
-
 function getTrueXp(level, event, debug) {
 
     let xpReq = event.player.getXpNeededForNextLevel()

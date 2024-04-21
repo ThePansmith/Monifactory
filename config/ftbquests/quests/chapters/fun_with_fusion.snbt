@@ -1,5 +1,4 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "fun_with_fusion"
@@ -305,8 +304,8 @@
 			]
 			id: "0DF2AF70CB1FEFB3"
 			tasks: [{
-				id: "038C507EEFE6A5EE"
-				item: "avaritia:neutronium_ingot"
+				id: "6DE1DEA00352373E"
+				item: "kubejs:neutronium_ingot"
 				type: "item"
 			}]
 			title: "&2Neutronium Ingot"

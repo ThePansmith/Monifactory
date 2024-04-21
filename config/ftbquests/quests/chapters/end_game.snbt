@@ -243,7 +243,7 @@
 			tasks: [{
 				count: 64L
 				id: "7A046BF6B05009FA"
-				item: "avaritia:crystal_matrix_ingot"
+				item: "gtceu:crystal_matrix_ingot"
 				type: "item"
 			}]
 			x: 4.5d
@@ -275,7 +275,7 @@
 			tasks: [{
 				count: 64L
 				id: "6A11EF851C12CC27"
-				item: "gtceu:mana_infused_metal_ingot"
+				item: "gtceu:mythril_ingot"
 				type: "item"
 			}]
 			x: 0.0d
@@ -2388,22 +2388,22 @@
 			tasks: [
 				{
 					id: "6EC86152DABE9C01"
-					item: "avaritia:infinity_helmet"
+					item: "kubejs:infinity_helmet"
 					type: "item"
 				}
 				{
 					id: "67DEDB5346729921"
-					item: "avaritia:infinity_chestplate"
+					item: "kubejs:infinity_chestplate"
 					type: "item"
 				}
 				{
 					id: "08F4B7B75DFA16AB"
-					item: "avaritia:infinity_leggings"
+					item: "kubejs:infinity_leggings"
 					type: "item"
 				}
 				{
 					id: "4A64827ABA2985B4"
-					item: "avaritia:infinity_boots"
+					item: "kubejs:infinity_boots"
 					type: "item"
 				}
 			]
@@ -2419,7 +2419,7 @@
 			subtitle: "Unstoppable Force"
 			tasks: [{
 				id: "0C7ADE397D4ECB2D"
-				item: "avaritia:infinity_sword"
+				item: "kubejs:infinity_sword"
 				type: "item"
 			}]
 			title: "Sword Of The Cosmos"
@@ -2435,7 +2435,7 @@
 			tasks: [{
 				count: 6L
 				id: "2EE60D5EE1564FCF"
-				item: "solarflux:sp_avaritia.infinity"
+				item: "kubejs:sp_endgame.infinity"
 				type: "item"
 			}]
 			title: "The Final Solar Panel"
