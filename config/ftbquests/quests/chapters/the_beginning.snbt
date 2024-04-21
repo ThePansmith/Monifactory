@@ -2089,6 +2089,19 @@
 			x: 10.5d
 			y: 7.5d
 		}
+		{
+			dependencies: ["3AB0402B19DD5BA8"]
+			description: ["Bigger barrels."]
+			id: "3E4DEA4FFD019AB9"
+			tasks: [{
+				id: "4355F32860B92456"
+				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+				type: "item"
+			}]
+			title: "&9Upgrades, people, upgrades."
+			x: 8.5d
+			y: 7.5d
+		}
 	]
 	title: "The Beginning"
 }
