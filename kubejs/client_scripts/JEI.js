@@ -84,7 +84,23 @@ JEIEvents.hideItems(event => {
     //Sophisticated Storage barrels
     event.hide(/^sophisticatedstorage:.+barrel$/)
     event.hide('sophisticatedstorage:barrel')
-    event.hide(/sophisticatedstorage:[A-Za-z]+_barrel_\d/)
+
+    //Sophisticated Chests
+    event.hide(/^sophisticatedstorage:.+chest$/)
+    event.hide('sophisticatedstorage:chest')
+
+    //Sophisticated Shulkers
+    event.hide(/^sophisticatedstorage:.+shulker_box$/)
+    event.hide('sophisticatedstorage:shulker_box')
+
+    //Sophisticated Limited Drawers
+    event.hide(/^sophisticatedstorage:limited.+barrel.+/)
+
+    //Sophisticated Backpacks
+    event.hide('sophisticatedbackpacks:backpack')
+
+    //Sophisticated tier upgrades
+    event.hide(/^sophisticatedstorage:.+tier_upgrade$/)
 
     // Chipped
     event.hide(['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'])
@@ -95,4 +111,18 @@ JEIEvents.hideItems(event => {
 
 JEIEvents.hideFluids(event => {
     event.hide(/^nuclearcraft:.+/)
+})
+
+JEIEvents.addItems(event => {
+
+
+//Sophisticated Storage Stuff
+event.add([Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'),Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"oak"}'),Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"oak"}')])
+event.add([Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'),Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'),Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}')])
+event.add(['sophisticatedstorage:gold_shulker_box', 'sophisticatedstorage:diamond_shulker_box', 'sophisticatedstorage:netherite_shulker_box'])
+event.add('sophisticatedbackpacks:backpack')
+event.add(['sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:gold_to_diamond_tier_upgrade', 'sophisticatedstorage:diamond_to_netherite_tier_upgrade'])
+
+
+
 })
