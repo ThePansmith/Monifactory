@@ -460,7 +460,7 @@ ServerEvents.recipes(event => {
 
     // Creative Chest
     event.recipes.extendedcrafting.shaped_table(
-        'gtceu:creative_chest', [
+        '2x gtceu:creative_chest', [
             'ABBBBBBBA',
             'BCTEDETCB',
             'BFSGHGSFB',
