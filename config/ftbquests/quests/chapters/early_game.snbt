@@ -97,7 +97,7 @@
 			description: [
 				"&3Centrifuges&r provide you with &21 tiny pile&r of additional materials when processing ore dusts (&e9 tiny piles=1 dust&r). Sometimes it's the main dust, but often it's a different useful material that is otherwise unobtainable."
 				""
-				"Instead of washing &6impure dusts&r (made from macerating or hammering ores) in a cauldron, you can get more out of each dust by centrifuging it. The same is true of &6pure dusts&r, when you eventually make a &3Washer&r or &3Chemical Bath&r. Note however that pure and impure dusts will usually give different byproducts (always check in &bJEI&r)."
+				"Instead of washing &6impure dusts&r (made from macerating or hammering ores) in a cauldron, you can get more out of each dust by centrifuging it. The same is true of &6pure dusts&r, when you eventually make a &3Washer&r or &3Chemical Bath&r. Note however that pure and impure dusts will usually give different byproducts (always check in &EMI&r)."
 				""
 				"Centrifuges also have other uses like unmixing compound dusts and fluids, or getting &6Rubber Pulp&r, which can be chemically reacted with &6Sulfur&r to efficiently make &9liquid Rubber&r."
 			]
@@ -175,7 +175,7 @@
 				""
 				"Byproducts are additional materials that can only be obtained from processing ores in certain machines. For example, there is no \"Gallium Ore\" or \"Arsenic Ore\". You get &6Gallium&r and &6Arsenic &ras a byproduct from processing other ores."
 				""
-				"Ores have various means of processing, and eventually you'll use machine pipelines to process ores in specific ways to optimize what byproducts you gain. You can look at the &6Ore Byproduct Page&r of an ore in &bJEI&r, accessed by pressing 'U' on an ore and navigating to the byproduct tab, to see the required route to obtain desired byproducts. "
+				"Ores have various means of processing, and eventually you'll use machine pipelines to process ores in specific ways to optimize what byproducts you gain. You can look at the &6Ore Byproduct Page&r of an ore in &EMI&r, accessed by pressing 'U' on an ore and navigating to the byproduct tab, to see the required route to obtain desired byproducts. "
 				""
 				"The relevant machines are as follows:"
 				" "
@@ -598,7 +598,7 @@
 			description: [
 				"&2Fluid Rigs will harvest fluids from underground fluid veins. Note that the fluid veins are simply simulated and don't exist in the world. &r"
 				""
-				"Shift-right-click while holding the &3Prospector's Scanner&r to set it to fluid mode, then right click it in order to see the type and amount of fluid underground and to check the depletion state of the vein. The first number represents the base amount of fluid extracted per second. You can also check the &eFluid Vein Information JEI&r page for information on where they spawn."
+				"Shift-right-click while holding the &3Prospector's Scanner&r to set it to fluid mode, then right click it in order to see the type and amount of fluid underground and to check the depletion state of the vein. The first number represents the base amount of fluid extracted per second. You can also check the &eFluid Vein Information EMI&r page for information on where they spawn."
 				""
 				"In the &eOverworld&r, it can harvest: &9Oil, Light Oil, Heavy Oil, Raw Oil, Natural Gas"
 				"Salt Water&r&r (only in Ocean biomes)"
@@ -768,7 +768,7 @@
 			description: [
 				"&2Assembling Machines come early in CEu! Circuit recipes are handled through a separate machine, the Circuit Assembler. &r"
 				""
-				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck &eJEI&r for all the components you've been making to see if the Assembler can improve their recipes."
+				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck &EMI&r for all the components you've been making to see if the Assembler can improve their recipes."
 				""
 				"Many of the Assembler's recipes require &9fluids&r. Hence, the &3Extractor&r will be required to take full advantage of this machine. "
 				""
@@ -1900,7 +1900,7 @@
 				""
 				"With Resonant Clathrates now accessible, everything you need for crafting &6Pulsating Polymer Clay&r can be automated in a net-positive loop.&r Doing so is the first step in automation of &bDeep Mob Evolution&r, which is &ea primary source of important materials for the rest of the pack&r."
 				""
-				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &bJEI&r and the Processing Lines Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
+				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &EMI&r and the Processing Lines Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
 			]
 			disable_toast: true
 			id: "0C10EC03A01E7334"

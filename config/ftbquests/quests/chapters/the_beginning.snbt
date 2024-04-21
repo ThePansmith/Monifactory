@@ -16,7 +16,7 @@
 				""
 				"&bGregTech&r machines are built from a number of components, many of which are shared between the machines. Motors&r are used in a great number of recipes, even including other components."
 				""
-				"The Wiremill requires a &6Programmed Circuit&r to run. Each machine comes with a free one - click on the circuit slot in the &9bottom right &rof the GUI. For making single wires, leave the circuit at &econfiguration 1&r. Refer to &eJEI&r for which circuit config a recipe calls for, and refer to the adjacent quest for more information."
+				"The Wiremill requires a &6Programmed Circuit&r to run. Each machine comes with a free one - click on the circuit slot in the &9bottom right &rof the GUI. For making single wires, leave the circuit at &econfiguration 1&r. Refer to &e&r for which circuit config a recipe calls for, and refer to the adjacent quest for more information."
 				"{@pagebreak}"
 				"After you make the Wiremill, &econsider making a few stacks&r of LV motors. This might sound extreme, but &ebatch crafting&r in this manner is an important habit to pick up. This way you won't have to craft more for a while, and you &owill &ruse all those motors eventually, so you're not wasting materials."
 				""
@@ -111,7 +111,7 @@
 			description: [
 				"A &6Programmed Circuit&r is an item used to configure machines. In essence, they tell a machine what to make if there's multiple things it could make from a certain input."
 				""
-				"For example, the &3Wiremill&r produces different thicknesses of &6wires&r depending on the config - &ecircuit 1&r produces &61x wires&r, &ecircuit 4&r produces &64x wires&r, etc. The &eJEI&r recipe will tell you which circuit configuration is required."
+				"For example, the &3Wiremill&r produces different thicknesses of &6wires&r depending on the config - &ecircuit 1&r produces &61x wires&r, &ecircuit 4&r produces &64x wires&r, etc. The &e&r recipe will tell you which circuit configuration is required."
 				"{@pagebreak}"
 				"Each machine and item input bus comes with a &2free \"ghost circuit\"&r. Click the circuit slot on the &9bottom right&r of the GUI to access this ghost circuit. Left- and right-click or scroll to adjust the configuration. "
 				""
@@ -154,7 +154,7 @@
 			description: [
 				"&2Assembling Machines come early in CEu! Circuit recipes are handled through a separate machine, the Circuit Assembler. &r"
 				""
-				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck &eJEI&r for all the components you've been making to see if the Assembler can improve their recipes."
+				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck &e&r for all the components you've been making to see if the Assembler can improve their recipes."
 				""
 				"Many of the Assembler's recipes require &9fluids&r. Hence, the &3Extractor&r will be required to take full advantage of this machine. "
 				""
@@ -252,7 +252,7 @@
 			description: [
 				"The &3Bending Machine&r improves the yield of a great deal of items. Most notably, you can use it to get one &6Plate&r from a single ingot, instead of having to spend two ingots for a single plate."
 				""
-				"As with the &3Wiremill&r, this requires a &6Programmed Circuit&r to tell it what to make. For plates, this is &econfiguration 1&r. Refer to &eJEI&r for which configuration to use for your recipe."
+				"As with the &3Wiremill&r, this requires a &6Programmed Circuit&r to tell it what to make. For plates, this is &econfiguration 1&r. Refer to &e&r for which configuration to use for your recipe."
 				" "
 				"Other materials it can produce include:"
 				"- 4 &6Foils&r from a Plate"
@@ -352,7 +352,7 @@
 				""
 				"Besides not having limited durability, a key advantage of Macerators over Mortars is the chance to get additional materials when grinding things down. These are called &ebyproducts&r, and HV or better Macerators have three slots instead of one so byproducts can appear."
 				""
-				"When reading Macerator recipes in &bJEI&r, you can tell which outputs are byproducts by seeing if &ethe tooltip tells you it has a chance to appear&r: guaranteed outputs do not list a chance. &2The chance increases by a certain amount for each tier of machine you have above the tier of recipe. This chance is also listed in the tooltip."
+				"When reading Macerator recipes in &b&r, you can tell which outputs are byproducts by seeing if &ethe tooltip tells you it has a chance to appear&r: guaranteed outputs do not list a chance. &2The chance increases by a certain amount for each tier of machine you have above the tier of recipe. This chance is also listed in the tooltip."
 				""
 				"Macerators can now also recycle your old Machines for some extra materials.&r"
 				""
@@ -1430,7 +1430,7 @@
 				""
 				"Since smelting &6Aluminium&r requires MV power, you're going to have to power this with 2 LV Energy Input Hatches."
 				""
-				"There is a diagram of how to build the EBF in &bJEI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &6sneak-right click&r the controller to enable the in-world preview."
+				"There is a diagram of how to build the EBF in &b&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &6sneak-right click&r the controller to enable the in-world preview."
 				""
 				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact middle of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &29&e Heatproof Machine Casings in your layout or the structure will not form&r."
 				""
@@ -1872,7 +1872,7 @@
 				""
 				"Additionally, the &aOre Dictionary Filter&r&r is a powerful tool that has a specialized filter which uses ore dictionary entries and &2uses regular expressions (regex)&r, e. g. \"&6ingotHot*&r\" will match all hot ingots, \"&6dustRegular*&r\" will match all regular dusts, and \"&6dustTiny*&r\" will match all tiny piles."
 				""
-				"All &bGregTech&r Filters can be configured using ghost items from &bJEI&r."
+				"All &bGregTech&r Filters can be configured using ghost items from &b&r."
 			]
 			id: "5F6B13DBCABA5078"
 			size: 1.5d

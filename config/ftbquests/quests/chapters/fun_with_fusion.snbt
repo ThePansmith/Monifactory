@@ -872,7 +872,7 @@
 			description: [
 				"The &3Fusion Reactor&r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows. &6Sneak-right click&r the controller to enable the in-world preview."
 				""
-				"The &bJEI&r preview shows &eall valid hatch locations&r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with &2Fusion Machine Casings&r as long as you have at least &atwo Fluid Input Hatches&r and &aone Fluid Output Hatch&r. It's possible to use input/output hatches in every valid location, if you prefer."
+				"The &EMI&r preview shows &eall valid hatch locations&r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with &2Fusion Machine Casings&r as long as you have at least &atwo Fluid Input Hatches&r and &aone Fluid Output Hatch&r. It's possible to use input/output hatches in every valid location, if you prefer."
 				""
 				"Because of this, the quest only asks for &248 Fusion Machine Casings&r. If you want to use the minimum number of fluid hatches, you'll need to craft an additional &229 Fusion Machine Casings&r. In addition to the &a48 Fusion Machine Casings&r, you will also need &631 Fusion Glass&r or &631 Fusion Machne Casings&r. &bFusion Glass is cheaper, and looks cooler&r, but its your choice."
 				""
@@ -1075,7 +1075,7 @@
 				""
 				"Connect the &3Computation Data Transmission Hatch&r to the &3Reception Hatch&r on your &3Research Station&r to transfer the &dCWU/t&r produced to it."
 				""
-				"The HPCA accepts almost any combination of &3Computation Components&r, &3Coolers&r, &3Bridges&r and &3Empty Components&r within the 3x3 area behind the &aComputer Heat Vents&r. The suggested components will build a &d16 CWU/t&r HPCA, enough for scanning the &3Fusion Reactor Mk2&r, &6UV Circuits&r, and all &6ZPM Components&r. You can get away with less at first, but you will eventually need to upgrade to this computing power. Refer to &eJEI&r for some other possible setups."
+				"The HPCA accepts almost any combination of &3Computation Components&r, &3Coolers&r, &3Bridges&r and &3Empty Components&r within the 3x3 area behind the &aComputer Heat Vents&r. The suggested components will build a &d16 CWU/t&r HPCA, enough for scanning the &3Fusion Reactor Mk2&r, &6UV Circuits&r, and all &6ZPM Components&r. You can get away with less at first, but you will eventually need to upgrade to this computing power. Refer to &EMI&r for some other possible setups."
 				""
 				"The &dCWU/t&r of the HPCA is determined by the sum of the outputs of the &3HPCA Computation Components&r within it. Regular &3Computation Components&r produce &d4 CWU/t&r each, and require &d2 Cooling&r each. &3Advanced Computation Components&r, which you do not have access to yet, produce &d16 CWU/t&r each and require &d4 Cooling&r each."
 				""
@@ -1131,7 +1131,7 @@
 		{
 			dependencies: ["37BE175EEC2ABD59"]
 			description: [
-				"The &3Research Station&r is an advanced Scanner which consumes &dComputation Work&r provided by connected &3High Performance Computing Arrays&r to research &cZPM&r and higher items.%n%nThe function of this multiblock is similar to the Scanner. Place the &6Data Orb&r or &6Data Module&r into the &3Object Holder&r alongside the item to be scanned. After sufficient &dCWU&r has been drawn, the item will be &cconsumed&r and the corresponding data will be written to the data item. Ensure your &3HPCA&r is supplying sufficient &dCWU/t&r - check the scan recipe in &eJEI&r for how much is required."
+				"The &3Research Station&r is an advanced Scanner which consumes &dComputation Work&r provided by connected &3High Performance Computing Arrays&r to research &cZPM&r and higher items.%n%nThe function of this multiblock is similar to the Scanner. Place the &6Data Orb&r or &6Data Module&r into the &3Object Holder&r alongside the item to be scanned. After sufficient &dCWU&r has been drawn, the item will be &cconsumed&r and the corresponding data will be written to the data item. Ensure your &3HPCA&r is supplying sufficient &dCWU/t&r - check the scan recipe in &EMI&r for how much is required."
 				""
 				"&3Energy&r, &3Maintenance&r, and &3Computation Hatches&r can only replace the 9 &aComputer Casings&r between the &aComputer Heat Vents&r at the back of the structure. The &3Object Holder&r &cmust face&r the &3Research Station&r controller block."
 				""

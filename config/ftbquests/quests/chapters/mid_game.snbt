@@ -892,7 +892,7 @@
 				""
 				"If you want to deal with fluids as well, subtract two casings and use a fluid input and fluid output in their place."
 				""
-				"Besides the controller placement, as usual the hatches/buses can go anywhere. Use the building guide in &bJEI&r which can be pulled up from the controller block."
+				"Besides the controller placement, as usual the hatches/buses can go anywhere. Use the building guide in &b&r which can be pulled up from the controller block."
 			]
 			id: "3000798ACA51BFDC"
 			rewards: [{
@@ -1171,7 +1171,7 @@
 			description: [
 				"There are several paths to &9Acetic Acid&r... probably the simplest is combining &9Oxygen&r, &9Hydrogen&r, and &6Carbon&r, but one of the several other methods may appeal to you more, especially if you have a &3Distillation Tower&r."
 				""
-				"Look through &bJEI&r for the various options."
+				"Look through &b&r for the various options."
 			]
 			icon: "gtceu:acetic_acid_bucket"
 			id: "5FF33EF493DB7E01"
@@ -1195,7 +1195,7 @@
 			description: [
 				"&9Acetic Acid&r and &9Sulfuric Acid&r make &9Ethenone&r."
 				""
-				"Or you can heat &9Acetone&r, or a few other approaches. Check out &bJEI&r for the various options."
+				"Or you can heat &9Acetone&r, or a few other approaches. Check out &b&r for the various options."
 			]
 			icon: "gtceu:ethenone_bucket"
 			id: "51F895647CB242F1"
@@ -2221,7 +2221,7 @@
 				""
 				"&9In Modern, Gregicality Multiblocks was folded into the main mod.&r"
 				""
-				"Look up the usages of Parallel Hatches in JEI to see details of all the multiblock machines."
+				"Look up the usages of Parallel Hatches in  to see details of all the multiblock machines."
 				""
 				"Most of the advanced alloys used to make the casings of these multiblocks are made in the &3Alloy Blast Smelter&r. If you can't seem to find the recipes for them, look for the &eMolten Fluid&r form."
 			]
@@ -3054,7 +3054,7 @@
 			description: [
 				"&2Fluid Rigs will harvest fluids from underground fluid veins. Note that the fluid veins are simply simulated and don't exist in the world. &r"
 				""
-				"Shift-right-click while holding the &3Prospector's Scanner&r to set it to fluid mode, then right click it in order to see the type and amount of fluid underground and to check the depletion state of the vein. The first number represents the base amount of fluid extracted per second. You can also check the &eFluid Vein Information JEI&r page for information on where they spawn."
+				"Shift-right-click while holding the &3Prospector's Scanner&r to set it to fluid mode, then right click it in order to see the type and amount of fluid underground and to check the depletion state of the vein. The first number represents the base amount of fluid extracted per second. You can also check the &eFluid Vein Information &r page for information on where they spawn."
 				""
 				"In the &eOverworld&r, it can harvest: &9Oil, Light Oil, Heavy Oil, Raw Oil, Natural Gas"
 				"Salt Water&r&r (only in Ocean biomes)"
