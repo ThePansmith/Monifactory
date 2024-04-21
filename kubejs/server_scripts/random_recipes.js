@@ -572,6 +572,9 @@ ServerEvents.recipes(event => {
         ], {
         Z: 'gtceu:zinc_foil',
         L: 'gtceu:lead_plate'
-    }
-    )
+    })
+
+    //Ender lily
+    event.recipes.thermal.insolator(['minecraft:ender_pearl', 'miniutilities:ender_lily_seeds'], 'miniutilities:ender_lily_seeds').water(4000)
+
 })
