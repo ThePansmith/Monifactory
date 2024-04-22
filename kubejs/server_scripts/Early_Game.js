@@ -96,4 +96,7 @@ ServerEvents.recipes(event => {
 	event.recipes.minecraft.crafting_shapeless('gtceu:lv_sodium_battery', [
 		'gtceu:lv_battery_hull', '2x #forge:dusts/sodium'
 	]).id('moni:lv_sodium_battery')
+
+    //Battery Alloy Dust
+	event.shapeless("4x gtceu:battery_alloy_dust", ["4x gtceu:lead_dust", "gtceu:antimony_dust"])
 })
