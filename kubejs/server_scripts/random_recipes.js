@@ -539,20 +539,24 @@ ServerEvents.recipes(event => {
     }
     ).damageIngredient('#minecraft:swords')
 
-	   //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
-    event.remove({ id: "armorplus:crafting/shapeless/wooden_rod" })
-    event.shaped(
-        '2x armorplus:wooden_rod', [
-        'SS',
-        'SS'
-    ], {
-        S: 'minecraft:stick'
-    }
-    ).id('kubejs:not_a_wood_gear')
+	  //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
+  	event.remove( {id: "armorplus:crafting/shapeless/wooden_rod" })
+  	event.shaped(
+  		'2x armorplus:wooden_rod', [
+		  	'SS',
+		  	'SS'
+		  ], {
+		  	S: 'minecraft:stick'
+		  }
+	  ).id('kubejs:not_a_wood_gear')
 
-    //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
-    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
-    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
+	  //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
+	  event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_log", "#minecraft:logs")
+	  event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
+
+    //Avaritia Replacement recipes
+    comapcting(event, 'kubejs:neutronium_ingot', 'kubejs:neutronium_nugget', true)
+    event.shapeless('9x kubejs:pile_of_neutrons', ['kubejs:neutronium_nugget'])
 
     //Recipie from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
