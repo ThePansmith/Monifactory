@@ -786,6 +786,8 @@
 				"&9Hydrogen&r and &9Nitrogen&r combine together to make &9Ammonia&r."
 				""
 				"An easy way to get Nitrogen is to centrifuge &9Air&r, which will require you to build an &3Air Collector&r. You could also electrolyze &6Saltpeter&r, distill &9Fermented Biomass&r in a &3Distillation Tower&r, or get huge amounts from &2distlling Liquid Air in a Distillation Tower.&r."
+				"{@pagebreak}"
+				"(new page placeholder text)"
 			]
 			id: "5DA5231489336B1B"
 			rewards: [{

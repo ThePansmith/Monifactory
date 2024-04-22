@@ -1909,7 +1909,10 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["0143E903317263D4"]
+			dependencies: [
+				"0143E903317263D4"
+				"358D9A7B1BCFA30A"
+			]
 			description: [
 				"&6Nano CPUs&r are advanced &6Circuit Wafers&r made from infusing a &6CPU Wafer&r with &6Carbon Fibers&r and &9Energized Glowstone&r in a &3Chemical Reactor&r."
 				""
@@ -1931,7 +1934,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["1207189AD233A746"]
+			dependencies: ["417D97D9E3562F45"]
 			description: [
 				"&6Carbon Fibers&r are useful for a variety of things."
 				""
@@ -2542,6 +2545,7 @@
 						Throttle: 1.0d
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "Infinity War"

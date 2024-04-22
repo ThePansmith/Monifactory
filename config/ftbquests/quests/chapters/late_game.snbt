@@ -6,7 +6,13 @@
 	icon: "gtceu:wetware_processor_mainframe"
 	id: "58ABB361EA301019"
 	order_index: 7
-	quest_links: [ ]
+	quest_links: [{
+		id: "5522298B1FC30B2B"
+		linked_quest: "2F04FA8D3E15E375"
+		size: 2.0d
+		x: 25.0d
+		y: -2.0d
+	}]
 	quests: [
 		{
 			dependencies: [
@@ -2904,7 +2910,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["16139ABAE30BF117"]
+			dependencies: [
+				"16139ABAE30BF117"
+				"1109CFC5D47FC011"
+			]
 			description: [
 				"The &6Crystal Processor Mainframe&r is the first Tier Eight circuit."
 				""
@@ -3227,56 +3236,6 @@
 			y: 24.0d
 		}
 		{
-			dependencies: ["2977E1AF13E42DCB"]
-			description: [
-				"&2Fluid Rigs will harvest fluids from underground fluid veins. Note that the fluid veins are simply simulated and don't exist in the world. &r"
-				""
-				"Shift-right-click while holding the &3Prospector's Scanner&r to set it to fluid mode, then right click it in order to see the type and amount of fluid underground and to check the depletion state of the vein. The first number represents the base amount of fluid extracted per second. You can also check the &eFluid Vein Information EMI&r page for information on where they spawn."
-				""
-				"In the &eOverworld&r, it can harvest: &9Oil, Light Oil, Heavy Oil, Raw Oil, Natural Gas"
-				"Salt Water&r&r (only in Ocean biomes)"
-				""
-				"In the &eNether&r: &eLava, Natural Gas&r"
-				""
-				"On the &eMoon&r: &9Deuterium, Helium-3&r"
-				""
-				"In the &eVoid&r: &9Raw Oil&r (does not deplete)"
-				""
-				"As Fluid Rigs work, they will deplete the vein under them, reducing their yields. When a vein is depleted, it still yields a small amount of its fluid. The first tier of Fluid Rig takes &9100,000 operations&r to deplete a vein. Higher tier Fluid Rigs harvest fluids far faster and deplete veins slower."
-			]
-			disable_toast: true
-			icon: "gtceu:mv_fluid_drilling_rig"
-			id: "5D7FE4BD4C4CA3E9"
-			rewards: [{
-				id: "33506FA2F82441A5"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [
-				{
-					id: "63A9643DCBEDB5BE"
-					item: "gtceu:mv_fluid_drilling_rig"
-					type: "item"
-				}
-				{
-					count: 7L
-					id: "7AE8B9802576473A"
-					item: "gtceu:steel_machine_casing"
-					type: "item"
-				}
-				{
-					count: 15L
-					id: "3AAC2AC4C68EF976"
-					item: "gtceu:steel_frame"
-					type: "item"
-				}
-			]
-			title: "&2Fluid Rig"
-			x: 25.0d
-			y: -2.0d
-		}
-		{
 			dependencies: ["0889C9E0DD0FDF06"]
 			description: [
 				"The &6Advanced System-on-Chip&r (or &6ASoC&r) is the &2penultimate&r component miniaturization. These unlock the most efficient recipe for producing &2Nanocircuits and &6Quantum Circuits&r."
@@ -3359,6 +3318,5 @@
 			y: 16.25d
 		}
 	]
-	subtitle: ["Progression for this chapter isn't done!"]
 	title: "Late Game"
 }

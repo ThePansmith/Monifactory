@@ -100,6 +100,7 @@ StartupEvents.registry('item', event => {
     event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
     event.create('omnium_ingot').displayName("Omnium Ingot").glow(true).rarity("epic")
     event.create('creative_storage_component').displayName("Creative Storage Component").glow(true).rarity("epic")
+    event.create('solidified_experience').displayName("Solidified Xenon")
 
     //Avaritia Replacements
     event.create('diamond_lattice')
