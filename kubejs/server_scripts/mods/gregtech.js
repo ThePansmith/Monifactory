@@ -4,6 +4,8 @@ ServerEvents.recipes(event => {
 
     event.shapeless('gtceu:conductive_alloy_dust', ['minecraft:redstone', 'gtceu:iron_dust']).id('kubejs:shapeless/conductive_alloy_dust')
 
+    event.shapeless('gtceu:battery_alloy_dust', ['4x gtceu:lead_dust', 'gtceu:antimony_dust']).id('kubejs:shapeless/battery_alloy_dust')
+
     event.recipes.gtceu.extractor('one_experience_fluid')
         .itemInputs('miniutilities:experience_pearl')
         .outputFluids(Fluid.of('enderio:xp_juice', 140))
