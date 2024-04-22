@@ -573,5 +573,6 @@ ServerEvents.recipes(event => {
         Z: 'gtceu:zinc_foil',
         L: 'gtceu:lead_plate'
     })
-
+    //Making ABS take aluminium rather than osmium so it's obtainable in EV
+    event.replaceInput( { id:"gtceu:shaped/blast_alloy_smelter"}, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 })
