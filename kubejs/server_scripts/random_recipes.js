@@ -14,9 +14,6 @@ ServerEvents.recipes(event => {
     comapcting(event, 'kubejs:compressed_red_sand', 'minecraft:red_sand');
     comapcting(event, 'kubejs:double_compressed_red_sand', 'kubejs:compressed_red_sand');
 
-    // Compressed crafting station
-    comapcting(event, 'kubejs:compressed_crafting_table', 'minecraft:crafting_table');
-
     // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
     event.replaceInput({ id: "gtceu:shaped/basic_circuit_board" }, 'gtceu:copper_single_wire', 'gtceu:fine_copper_wire')
@@ -555,8 +552,7 @@ ServerEvents.recipes(event => {
 	  event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
 
     //Avaritia Replacement recipes
-    comapcting(event, 'kubejs:neutronium_ingot', 'kubejs:neutronium_nugget', true)
-    event.shapeless('9x kubejs:pile_of_neutrons', ['kubejs:neutronium_nugget'])
+    comapcting(event, 'kubejs:neutronium_ingot', 'kubejs:neutronium_nugget')
 
     //Recipie from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
@@ -577,8 +573,5 @@ ServerEvents.recipes(event => {
         Z: 'gtceu:zinc_foil',
         L: 'gtceu:lead_plate'
     })
-
-    //Ender lily
-    event.recipes.thermal.insolator(['minecraft:ender_pearl', 'miniutilities:ender_lily_seeds'], 'miniutilities:ender_lily_seeds').water(4000)
 
 })

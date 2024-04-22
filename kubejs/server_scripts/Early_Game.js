@@ -6,8 +6,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(16)
 
-    // May as well remove ender dust usage while we're at it
-    event.remove({ id: "miniutilities:ender_dust_to_ender_pearl" })
 
     const plantMaterial = ["#minecraft:leaves", "#minecraft:saplings", "minecraft:vine"]
     plantMaterial.forEach(ballIngredient => {
