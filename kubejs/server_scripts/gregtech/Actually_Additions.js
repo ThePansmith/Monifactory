@@ -141,6 +141,11 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(128)
 
+    event.recipes.gtceu.resonator('kubejs:starry_diamond_block')
+        .itemInputs('#forge:storage_blocks/diamond')
+        .itemOutputs('kubejs:starry_diamond_block')
+        .duration(80)
+        .EUt(128)
 
     //Crystal Gears
     crystals.forEach(crystal => {
