@@ -301,21 +301,6 @@ ServerEvents.recipes(event => {
         E: 'thermal:rf_coil'
     }).id('kubejs:charge_bench')
 
-    // igneous extruder, dont disable default recipies
-    event.remove({ id: 'thermal:device_rock_gen' })
-    event.shaped("thermal:device_rock_gen", [
-        ' A ',
-        'BCB',
-        'DED'
-    ], {
-        A: '#forge:glass',
-        B: '#forge:ingots/invar',
-        C: 'thermal:machine_frame',
-        D: '#forge:gears/copper',
-        E: 'thermal:rf_coil'
-    }
-    ).id('kubejs:device_rock_gen')
-
     event.shaped(
         'thermal:device_potion_diffuser', [
             ' A ',
@@ -523,18 +508,28 @@ ServerEvents.recipes(event => {
 
     // Devices
     event.remove({ id: "thermal:device_water_gen" }) // aqua accumulator
-    event.shaped("thermal:device_water_gen", [
-            ' A ',
+    event.shaped(
+        "thermal:device_water_gen", [
+            'BBB',
             'BCB',
-            'DED'
+            'BBB'
         ], {
-            A: 'minecraft:bucket',
-            B: '#forge:glass',
-            C: 'thermal:machine_frame', // casing
-            D: '#forge:gears/iron',
-            E: 'thermal:redstone_servo'
+            B: "enderio:fused_quartz",
+            C: "watercondenser:watercondenser"
         }
     ).id('kubejs:device_water_gen');
+
+    event.remove({ type: "thermal:rock_gen", not: { output: "minecraft:cobblestone" } })
+    event.shaped(
+        "thermal:device_rock_gen", [
+        'PPP',
+        'B B',
+        'PPP'
+    ], {
+        P: "gtceu:steel_plate",
+        B: "minecraft:bucket"
+    }
+    ).id('thermal:device_rock_gen')
 
     event.remove({ id: 'thermal:device_nullifier' });
     event.shaped('thermal:device_nullifier', [
@@ -581,9 +576,9 @@ ServerEvents.recipes(event => {
         'BCB',
         'DED'
     ], {
-        A: 'hopper',
+        A: 'minecraft:hopper',
         B: '#forge:ingots/tin',
-        C: 'thermal:machine_frame', // casing
+        C: 'enderio:vacuum_chest', // casing
         D: '#forge:gears/iron',
         E: 'thermal:redstone_servo'
     }).id('kubejs:device_collector');

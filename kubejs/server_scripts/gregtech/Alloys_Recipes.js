@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer("kubejs:mana_infused_dust")
         .itemInputs('kubejs:primal_mana', '#forge:dusts/titanium')
-        .itemOutputs('gtceu:mythril_dust')
+        .itemOutputs('2x gtceu:mythril_dust')
         .duration(200)
         .EUt(30)
 
