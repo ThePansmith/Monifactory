@@ -1162,7 +1162,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&b&lEMI&r is the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack. Note that &b&lEMI&r is based on &b&JEI&r, and people tend to use the names interchangably."
+				"&b&lEMI&r is the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack. Note that &b&lEMI&r is based on &b&lEMI&r, and people tend to use the names interchangably."
 				""
 				"To see it in action, pull up a quest that requires an item of some sort and just click the item!"
 				""
@@ -1654,7 +1654,7 @@
 			y: 10.25d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
+			dependencies: ["3A5387B2003177B2"]
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
@@ -1708,10 +1708,10 @@
 			]
 			title: "Inspector Gadget"
 			x: -3.75d
-			y: 10.25d
+			y: 14.0d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
+			dependencies: ["3A5387B2003177B2"]
 			description: [
 				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
 				""
@@ -1736,11 +1736,11 @@
 				}
 				type: "item"
 			}]
-			x: -3.75d
+			x: -5.0d
 			y: 12.75d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
+			dependencies: ["3A5387B2003177B2"]
 			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
 			id: "39394D5596FF8BC8"
 			rewards: [{
@@ -1764,8 +1764,8 @@
 				type: "item"
 			}]
 			title: "Electromagnet"
-			x: -2.5d
-			y: 12.75d
+			x: -5.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3B200AD6EFF90DFA"]
@@ -2222,7 +2222,7 @@
 				""
 				"&6Sneak-left-click&r to go back to the previous layer, or close the preview from the full view."
 				""
-				"In the &eEMI previews&r for multiblocks, &6left-click&r and drag the mouse to rotate the preview."
+				"In the &eJEI previews&r for multiblocks, &6left-click&r and drag the mouse to rotate the preview."
 				""
 				"Additionally, you can &6right-click&r and drag the mouse to pan the preview or &6shift-right-click&r and drag to zoom in or out."
 				""
@@ -2357,6 +2357,108 @@
 			title: "Neeve: End Game"
 			x: -6.5d
 			y: 8.5d
+		}
+		{
+			dependencies: [
+				"081101DEE6227D87"
+				"06E9B9DDDB245F38"
+			]
+			description: [
+				"Basic &aFlux Capacitors&r hold a whopping lot of energy - &9500 kRF&r - and are useful for keeping your &aRF-powered&r equipment and tools charged."
+				""
+				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
+				""
+				"The Flux Capacitor is a &bBauble&r, so open your inventory and look for the Baubles button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
+				""
+				"Finally, you can charge up all those depleted &m&6Dark Boots&r&r and &6The Ender&r swords you've looted."
+			]
+			icon: {
+				Count: 1b
+				id: "thermal:flux_capacitor"
+				tag: { }
+			}
+			id: "3A5387B2003177B2"
+			rewards: [{
+				id: "18D835350F2E6BBE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Slightly Nerfed"
+			tasks: [
+				{
+					id: "5EF5A8A2767A69E3"
+					item: {
+						Count: 1b
+						id: "thermal:flux_capacitor"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "63EE7A1364F6888B"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/sulfur"
+						}
+					}
+					title: "Sulfur Dust"
+					type: "item"
+				}
+			]
+			title: "&9Flux Capacitors"
+			x: -3.75d
+			y: 12.75d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"&6Sulfur Ore&r is the only source of &6Sulfur Dust&r that's currently available to you."
+				""
+				"You may want to spend a few &9Monicoins&r on the ore to jumpstart your power storage."
+				""
+				"Otherwise the ore is only available in &athe Nether&r, and the only way to get there is with a &6Nether Cake&r. Oh no!"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:sulfur_ore"
+			id: "081101DEE6227D87"
+			rewards: [{
+				id: "4C3153B1874D58D5"
+				item: {
+					Count: 1b
+					id: "minecraft:player_head"
+					tag: {
+						SkullOwner: {
+							Id: "a8088bef-5f81-4110-a734-524cd787b270"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjkyNTFlMTg2NTdlNzMwNGVhY2VhYzVmOGQ0NDZkMjQ4ZWE0NmFmMmVhYjE0NWY4MTg1Y2VjZTc3OWYxNjQ4In19fQ=="
+								}]
+							}
+						}
+						display: {
+							Name: "[\"\",{\"text\":\"I bought ore with Nomicoins\",\"italic\":false}]"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0161A7D4C24DC421"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ores/sulfur"
+					}
+				}
+				title: "Any Sulfur Ore"
+				type: "item"
+			}]
+			title: "Sulfur Ore"
+			x: -5.0d
+			y: 11.5d
 		}
 	]
 	title: "Genesis"
