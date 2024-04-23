@@ -552,7 +552,7 @@ ServerEvents.recipes(event => {
 	  event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
 
     //Avaritia Replacement recipes
-    comapcting(event, 'kubejs:neutronium_ingot', 'kubejs:neutronium_nugget')
+    comapcting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
 
     //Recipie from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")

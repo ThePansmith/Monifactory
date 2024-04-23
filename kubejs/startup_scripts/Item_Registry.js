@@ -105,16 +105,12 @@ StartupEvents.registry('item', event => {
     //Avaritia Replacements
     event.create('diamond_lattice')
     event.create('infinity_catalyst')
-    event.create('infinity_ingot')
     event.create('infinity_helmet').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
     event.create('infinity_chestplate').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
     event.create('infinity_sword').tooltip('Crafting Item. Not a functional weapon.').texture('kubejs:item/removed_avaritia')
     event.create('infinity_leggings').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
     event.create('infinity_boots').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
     event.create('skullfire_sword').tooltip('Crafting Item. Not a functional weapon.')
-    event.create('pile_of_neutrons')
-    event.create('neutronium_nugget')
-    event.create('neutronium_ingot')
 
     //Misc Items
     event.create('grains_of_innocence').displayName("Grains of Innocence")
