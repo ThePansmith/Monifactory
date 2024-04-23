@@ -96,10 +96,19 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('simulation_supercomputer')
         .category('multiblock')
         .setEUIO('in')
+        .setMaxIOSize(2, 2, 0, 0) // 
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COMPUTATION)
+    
+    // Loot Superfabricator
+    event.create('loot_superfabricator')
+        .category('multiblock')
+        .setEUIO('in')
         .setMaxIOSize(1, 1, 0, 0) // 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
+        .setSound(GTSoundEntries.ELECTROLYZER)
     })
     
 // Basic Microverse Projector
@@ -318,18 +327,44 @@ event.create('simulation_supercomputer', 'multiblock')
 .pattern(definition => FactoryBlockPattern.start()
 .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
 .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-.aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCCCC")
+.aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCMCC")
 .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
 .aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
     .where('S', Predicates.controller(Predicates.blocks(definition.get())))
     .where('V', Predicates.blocks('gtceu:vibration_safe_casing'))
     .where('E', Predicates.blocks('gtceu:enderium_block'))
     .where('O', Predicates.blocks('gtceu:omnium_block'))
-    .where('Q', Predicates.blocks('ae2:quartz_glass'))
+    .where('Q', Predicates.blocks('ae2:quartz_vibrant_glass'))
     .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
     .where('C', Predicates.blocks("gtceu:atomic_casing")
-        .or(Predicates.autoAbilities(definition.getRecipeTypes())))
-        .where('#', Predicates.any())
+        .or(Predicates.autoAbilities(definition.getRecipeTypes()))) // tried putting maint hatch here, but its going to be optional and not required for the multiblock then
+    .where('M', Predicates.abilities(PartAbility.MAINTENANCE)) // temporary bandaid, someone make it so that it can be placed anywhere
+    .where('#', Predicates.any())
+    .build())
+.workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
+    "gtceu:block/multiblock/implosion_compressor", false)
+
+// Super Fabricator
+event.create('loot_superfabricator', 'multiblock')
+.rotationState(RotationState.NON_Y_AXIS)
+.recipeTypes('loot_superfabricator')
+.appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
+.pattern(definition => FactoryBlockPattern.start()
+.aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
+.aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
+.aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCMCC")
+.aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
+.aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
+    .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+    .where('V', Predicates.blocks('gtceu:shock_proof_cutting_casing'))
+    .where('E', Predicates.blocks('gtceu:energetic_alloy_block'))
+    .where('O', Predicates.blocks('gtceu:omnium_block'))
+    .where('Q', Predicates.blocks('ae2:quartz_vibrant_glass'))
+    .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+    .where('C', Predicates.blocks("gtceu:atomic_casing")
+        .or(Predicates.autoAbilities(definition.getRecipeTypes()))) // tried putting maint hatch here, but its going to be optional and not required for the multiblock then
+    .where('M', Predicates.abilities(PartAbility.MAINTENANCE)) // temporary bandaid, someone make it so that it can be placed anywhere
+    .where('#', Predicates.any())
     .build())
 .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
     "gtceu:block/multiblock/implosion_compressor", false)
