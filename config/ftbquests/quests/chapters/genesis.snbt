@@ -1162,7 +1162,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&b&lEMI&r is the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack. Note that &b&lEMI&r is based on &b&lEMI&r, and people tend to use the names interchangably."
+				"&b&lEMI&r is the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack. Note that &b&lEMI&r is based on &b&lJEI&r, and people tend to use the names interchangably."
 				""
 				"To see it in action, pull up a quest that requires an item of some sort and just click the item!"
 				""
