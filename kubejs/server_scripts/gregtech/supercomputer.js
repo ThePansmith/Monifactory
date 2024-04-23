@@ -11,11 +11,11 @@ ServerEvents.recipes(event => {
         
     ////// Computer Recipes //////
 
-            // event.recipes.gtceu.simulation_supercomputer('kubejs:enderman')
-            //     .notConsumable(Item.of('hostilenetworks:data_model', '{data_model:{data:6,id:"hostilenetworks:enderman"}}'))
-            //     .itemInput('hostilenetworks:prediction_matrix')
-            //     .chancedOutput(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:enderman"}}'), 5000, 500)
-            //     .Output(Item.of("hostilenetworks:prediction_enderman_prediction"))
-            //     .duration(512)
-            //     .EUt(10)
+    // event.recipes.gtceu.simulation_supercomputer('kubejs:enderman')
+    //     .notConsumable(Item.of('hostilenetworks:data_model', '{data_model:{data:6,id:"hostilenetworks:enderman"}}'))
+    //     .itemInput('hostilenetworks:prediction_matrix')
+    //     .chancedOutput(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:enderman"}}'), 5000, 500)
+    //     .Output(Item.of("hostilenetworks:prediction_enderman_prediction"))
+    //     .duration(512)
+    //     .EUt(10)
 })

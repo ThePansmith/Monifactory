@@ -52,12 +52,12 @@
     "block.gtceu.basic_microverse_projector": "Basic Microverse Projector",
     "block.gtceu.advanced_microverse_projector": "Advanced Microverse Projector",
     "block.gtceu.advanced_microverse_projector_ii": "Advanced Microverse Projector II",
-    "block.gtceu.naquadah_reactor_i": "Naquadah Reactor",
+    "block.gtceu.naquadah_reactor_i": "Naquadah Reactor I",
     "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
     "gtceu.basic_microverse": "Basic Microverse Projector",
     "gtceu.advanced_microverse": "Advanced Microverse Projector",
     "gtceu.advanced_microverse_ii": "Advanced Microverse Projector II",
-    "gtceu.naquadah_reactor_i": "Naquadah Reactor",
+    "gtceu.naquadah_reactor_i": "Naquadah Reactor I",
     "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
     "block.gtceu.mv_atomic_reconstructor": "Atomic Reconstructor",
     "gtceu.atomic_reconstruction": "Atomic Reconstruction",
@@ -97,5 +97,6 @@
 	"material.gtceu.crystal_matrix": "Crystal Matrix",
 	"block.gtceu.creative_energy": "Infinite GT Energy Unit Emitter",
 	"block.gtceu.creative_chest": "Creative Quantum Chest",
-	"block.gtceu.creative_tank": "Creative Quantum Tank"
+	"block.gtceu.creative_tank": "Creative Quantum Tank",
+    "block.gtceu.simulation_supercomputer": "Simulation Supercomputer"
 }
