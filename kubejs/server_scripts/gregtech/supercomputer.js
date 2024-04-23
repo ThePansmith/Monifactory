@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:sim_chamber', 'kubejs:heart_of_a_universe', '2x gtceu:uv_robot_arm', '2x gtceu:uv_field_generator', '4x gtceu:wetware_processor_mainframe', 'draconicevolution:draconic_energy_core')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('gtceu:simulation_supercomputer')
+        // requires research (sim chamber with data module)
         .duration(1200)
         .EUt(1966080)
         
@@ -20,7 +21,7 @@ ServerEvents.recipes(event => {
             .duration(15.05 * 20) // same for all recipes
             .EUt(EUt)
     }
-    
+
     supercomp('thermal/thermal_elemental', 'overworld', 256)
     supercomp('shulker', 'end', 128)
     supercomp('wither_skeleton', 'nether', 256)
