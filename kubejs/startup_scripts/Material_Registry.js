@@ -398,7 +398,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xd6d980)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
-		// .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, ALL_TOOL_TYPES))
+        // .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, ALL_TOOL_TYPES))
         .cableProperties(2048, 1, 0, true)
 
     event.create("stellar_alloy")
@@ -419,14 +419,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("draconic_superconductor"))
         .color(0xffffff)
         .iconSet('shiny')
-		.flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
+        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
         .cableProperties(2147483647, 4, 0, true)
-	event.create('infinity')
-		.ingot()
-		.color(0x000000)
-		.iconSet("shiny")
-		.flags(GTMaterialFlags.GENERATE_PLATE)
-		.components('5x neutronium');
+    event.create('infinity')
+        .ingot()
+        .color(0x000000)
+        .iconSet("shiny")
+        .flags(GTMaterialFlags.GENERATE_PLATE)
+        .components('5x neutronium');
 })
 
 
