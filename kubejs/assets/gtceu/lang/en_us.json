@@ -99,5 +99,8 @@
 	"block.gtceu.creative_chest": "Creative Quantum Chest",
 	"block.gtceu.creative_tank": "Creative Quantum Tank",
     "block.gtceu.simulation_supercomputer": "Simulation Supercomputer",
-    "gtceu.simulation_supercomputer": "Simulation Supercomputer"
+    "gtceu.simulation_supercomputer": "Simulation Supercomputer",
+    "block.gtceu.loot_superfabricator": "Loot Superfabricator",
+    "gtceu.loot_superfabricator": "Loot Superfabricator",
+    "block.gtceu.shock_proof_cutting_casing": "Shock Proof Casing"
 }
