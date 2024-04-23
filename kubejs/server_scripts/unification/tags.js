@@ -60,7 +60,6 @@ ServerEvents.tags('item', event => {
 
     // endgame mats
         // omnium
-    event.add('forge:ingots/the_ultimate', 'kubejs:omnium_ingot') // this sucks!
 
     // generic unification
     event.add('forge:dusts', ['kubejs:pulsating_dust'])
