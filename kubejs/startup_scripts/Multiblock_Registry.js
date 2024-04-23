@@ -99,7 +99,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(2, 2, 0, 0) // 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
+        .setSound(GTSoundEntries.COMPUTATION)
     
     // Loot Superfabricator
     event.create('loot_superfabricator')
@@ -108,7 +108,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(1, 1, 0, 0) // 
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
+        .setSound(GTSoundEntries.ELECTROLYZER)
     })
     
 // Basic Microverse Projector
