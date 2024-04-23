@@ -98,7 +98,6 @@ StartupEvents.registry('item', event => {
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
     event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
-    event.create('omnium_ingot').displayName("Omnium Ingot").glow(true).rarity("epic")
     event.create('creative_storage_component').displayName("Creative Storage Component").glow(true).rarity("epic")
     event.create('solidified_experience').displayName("Solidified Xenon")
 

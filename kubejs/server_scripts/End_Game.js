@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
     // Mote of omnium
     event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
         .itemInputs('kubejs:mote_of_omnium', 'minecraft:tnt')
-        .itemOutputs('extendedcrafting:the_ultimate_nugget')
+        .itemOutputs('gtceu:omnium_nugget')
         .duration(20)
         .EUt(30)
 

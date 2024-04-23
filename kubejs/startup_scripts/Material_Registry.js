@@ -8,6 +8,10 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 })
 
 // Elemental materials
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    event.create('omnium').parent(GTMaterialIconSet.SHINY)
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("draconium")
         .ingot().fluid().ore()
@@ -28,8 +32,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("omnium")
         .ingot().fluid()
         .element(GTElements.get("omnium"))
-        .color(0x414751)
-        .iconSet('shiny')
+        .color(0xffffff)
+        .iconSet('omnium')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
         .cableProperties(2147483647, 64, 0, true);
 
@@ -390,10 +394,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
     event.create('crystal_matrix').parent(GTMaterialIconSet.SHINY)
-})
-
-GTCEuStartupEvents.materialModification(() => {
-    //GTMaterials.Neutronium.setColor(0x000000)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {

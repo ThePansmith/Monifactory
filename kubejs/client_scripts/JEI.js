@@ -72,9 +72,6 @@ JEIEvents.hideItems(event => {
     //Backpacks
     event.hide('sophisticatedbackpacks:copper_backpack')
 
-    //ext crafting
-    event.hide('extendedcrafting:the_ultimate_ingot')
-
     // Angel Ring
     event.hide('better_angel_ring:ring')
 

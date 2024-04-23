@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
 		], {
 			A: 'gtceu:neutronium_ingot',
 			B: 'gtceu:neutronium_nugget',
-			C: 'kubejs:omnium_ingot',
+			C: 'gtceu:omnium_ingot',
 			D: 'kubejs:eternal_catalyst',
 			E: 'kubejs:infinity_catalyst',
 		}
