@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     fabricator('guardian', 2, '32x minecraft:prismarine_crystals')
     fabricator('guardian', 3, '64x minecraft:cod')
     fabricator('guardian', 4, '8x minecraft:gold_ingot')
-    fabricator('guardian', 5, '12x gtceu:aluminum_dust')
+    fabricator('guardian', 5, '12x gtceu:aluminium_dust')
     fabricator('guardian', 6, '4x armorplus:guardian_scale')
     fabricator('shulker', 1, '6x minecraft:shulker_shell')
     fabricator('shulker', 2, '6x minecraft:diamond')
