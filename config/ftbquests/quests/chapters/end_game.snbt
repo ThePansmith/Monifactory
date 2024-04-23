@@ -2257,6 +2257,8 @@
 		{
 			dependencies: ["2D9A95AC50CCB988"]
 			description: [
+				"&l&5Item not yet implemented!&r"
+				""
 				"The &3Simulation Supercomputer&r is a multiblock structure that performs &bDeep Mob Evolution&r simulations like the &3Simulation Chamber&r, but is capable of overclocking these simulations to incredible speeds."
 				""
 				"One of these structures can perform the equivalent work of hundreds of individual Simulation Chambers more efficiently. This will make it far easier to generate pristine matter you'll need for things like &6Dragon Lair Data&r. You'll probably need several &3Loot Fabricators&r to keep up with it."
@@ -2265,7 +2267,7 @@
 				""
 				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second &9Heart of a Universe&r."
 			]
-			icon: "gtceu:simulation_supercomputer"
+			icon: "gcyr:dyson_system_controller"
 			id: "5A70898C99B828E3"
 			size: 3.0d
 			tasks: [
@@ -2285,7 +2287,7 @@
 							value: "forge:storage_blocks/omnium"
 						}
 					}
-					title: "26x Omnium Block"
+					title: "Omnium Block"
 					type: "item"
 				}
 				{
@@ -2309,7 +2311,7 @@
 			]
 			title: "&2Simulation Supercomputer"
 			x: 67.5d
-			y: -15.0d
+			y: -13.5d
 		}
 		{
 			id: "27BB630411F4ADB0"
@@ -2633,53 +2635,6 @@
 			title: "Nothing"
 			x: 17.0d
 			y: 9.5d
-		}
-		{
-			dependencies: ["2D9A95AC50CCB988"]
-			icon: "gtceu:loot_superfabricator"
-			id: "436022967759ED52"
-			size: 3.0d
-			tasks: [
-				{
-					id: "29E15EAB6F72462C"
-					item: "gtceu:loot_superfabricator"
-					title: "&2Loot Superfabricator"
-					type: "item"
-				}
-				{
-					count: 26L
-					id: "1F6BA6D0C35AF8FA"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:storage_blocks/omnium"
-						}
-					}
-					title: "26x Omnium Block"
-					type: "item"
-				}
-				{
-					count: 13L
-					id: "272C8BA955A68E05"
-					item: { Count: 13b, id: "gtceu:energetic_alloy_block" }
-					type: "item"
-				}
-				{
-					count: 37L
-					id: "54E5390E24F2FA91"
-					item: { Count: 37b, id: "gtceu:atomic_casing" }
-					type: "item"
-				}
-				{
-					count: 26L
-					id: "0D49EED51B434A61"
-					item: "ae2:quartz_vibrant_glass"
-					type: "item"
-				}
-			]
-			x: 67.5d
-			y: -12.0d
 		}
 	]
 	title: "End Game"
