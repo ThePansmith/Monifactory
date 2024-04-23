@@ -11,11 +11,16 @@ ServerEvents.recipes(event => {
         
     ////// Computer Recipes //////
 
-    // event.recipes.gtceu.simulation_supercomputer('kubejs:enderman')
-    //     .notConsumable(Item.of('hostilenetworks:data_model', '{data_model:{data:6,id:"hostilenetworks:enderman"}}'))
-    //     .itemInput('hostilenetworks:prediction_matrix')
-    //     .chancedOutput(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:enderman"}}'), 5000, 500)
-    //     .Output(Item.of("hostilenetworks:prediction_enderman_prediction"))
-    //     .duration(512)
-    //     .EUt(10)
+    function supercomp(model, prediction, time, EUt) {
+        event.recipes.gtceu.simulation_supercomputer(`kubejs:${model}`)
+            .notConsumable(Item.of('hostilenetworks:data_model', '{data_model:{id:"hostilenetworks:' + model + '"}}')) // model nbts are still brokey
+            .itemInputs('hostilenetworks:prediction_matrix')
+            .itemOutputs('hostilenetworks:' + prediction + '_prediction')
+            .chancedOutput(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + model + '"}}'), 5000, 500)
+            .duration(time * 20) // time is in seconds
+            .EUt(EUt)
+    }
+
+    supercomp('enderman', 'end', 15.05, 512)
+
 })
