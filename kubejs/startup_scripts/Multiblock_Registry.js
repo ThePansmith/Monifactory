@@ -325,7 +325,7 @@ event.create('simulation_supercomputer', 'multiblock')
     .where('V', Predicates.blocks('gtceu:vibration_safe_casing'))
     .where('E', Predicates.blocks('gtceu:enderium_block'))
     .where('O', Predicates.blocks('gtceu:omnium_block'))
-    .where('Q', Predicates.blocks('ae2:vibrant_quartz_glass'))
+    .where('Q', Predicates.blocks('ae2:quartz_vibrant_glass'))
     .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
     .where('C', Predicates.blocks("gtceu:atomic_casing")
         .or(Predicates.autoAbilities(definition.getRecipeTypes()))) // tried putting maint hatch here, but its going to be optional and not required for the multiblock then
