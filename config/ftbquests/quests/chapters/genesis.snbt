@@ -2438,7 +2438,7 @@
 							}
 						}
 						display: {
-							Name: "[\"\",{\"text\":\"I bought ore with Nomicoins\",\"italic\":false}]"
+							Name: "[\"\",{\"text\":\"I bought ores with Nomicoins\",\"italic\":false}]"
 						}
 					}
 				}
