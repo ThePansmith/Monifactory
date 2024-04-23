@@ -98,5 +98,6 @@
 	"block.gtceu.creative_energy": "Infinite GT Energy Unit Emitter",
 	"block.gtceu.creative_chest": "Creative Quantum Chest",
 	"block.gtceu.creative_tank": "Creative Quantum Tank",
-    "block.gtceu.simulation_supercomputer": "Simulation Supercomputer"
+    "block.gtceu.simulation_supercomputer": "Simulation Supercomputer",
+    "gtceu.simulation_supercomputer": "Simulation Supercomputer"
 }
