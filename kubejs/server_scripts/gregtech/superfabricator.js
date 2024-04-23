@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
     fabricator('thermal/thermal_elemental_matter', 4, '8x thermal:blitz_rod')
     fabricator('thermal/thermal_elemental_matter', 5, '8x thermal:basalz_rod')
     fabricator('thermal/thermal_elemental_matter', 6, '8x thermal:blizz_rod')
-    fabricator('witch', 1, '16x minecraft:redstone_dust')
+    fabricator('witch', 1, '16x minecraft:redstone')
     fabricator('witch', 2, '16x minecraft:glowstone_dust')
     fabricator('witch', 3, '16x minecraft:sugar')
     fabricator('wither', 1, 'kubejs:wither_realm_data')
