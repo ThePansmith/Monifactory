@@ -198,9 +198,9 @@ ServerEvents.recipes(event => {
 	).id('kubejs:extended/exotic_materials_catalyst')
 
 	// Angel Ring
-    event.remove({ id: 'miniutilities:angel_ring_crafting' })
+    event.remove({ id: 'better_angel_ring:angel_ring' })
 	event.recipes.extendedcrafting.shaped_table(
-		'miniutilities:angel_ring', [
+		'better_angel_ring:angel_ring', [
             " AAA ",
             "A B A",
             "AC CA",

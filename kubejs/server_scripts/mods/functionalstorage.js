@@ -49,14 +49,14 @@ ServerEvents.recipes(event => {
     ).id('functionalstorage:armory_cabinet')
     event.shaped(
         "functionalstorage:ender_drawer", [
-        'III',
-        'DED',
+        'ICI',
+        'PEP',
         'III'
     ], {
         I: "gtceu:iron_plate",
-        P: "gtceu:lv_electric_piston",
+        C: "#gtceu:circuits/mv",
         E: "enderchests:ender_chest",
-        D: "#functionalstorage:drawer"
+        P: "gtceu:mv_electric_piston"
     }
     ).id('functionalstorage:ender_drawer')
 

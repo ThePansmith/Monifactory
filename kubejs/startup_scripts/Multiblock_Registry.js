@@ -91,6 +91,15 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
+
+    // Simulation Supercomputer
+    event.create('simulation_supercomputer')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(1, 1, 0, 0) // 
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
     })
     
 // Basic Microverse Projector
@@ -104,7 +113,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("CCC", "GDG", "CCC")
             .aisle("CSC", "CGC", "CCC")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('D', Predicates.blocks('chisel:space/diamond_block'))
+            .where('D', Predicates.blocks('kubejs:starry_diamond_block'))
             .where('C', Predicates.blocks("kubejs:microverse_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
@@ -129,7 +138,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("CVCVC", "GDDDG", "GDDDG", "GDDDG", "CVCVC")
             .aisle("CCSCC", "CGGGC", "CGGGC", "CGGGC", "CCCCC")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('D', Predicates.blocks('chisel:space/diamond_block'))
+            .where('D', Predicates.blocks('kubejs:starry_diamond_block'))
             .where('C', Predicates.blocks("kubejs:microverse_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
@@ -157,7 +166,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
             .aisle("#########", "#########", "##CCSCC##", "##CGGGC##", "##CGGGC##", "##CGGGC##", "##CCCCC##", "#########", "#########")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('D', Predicates.blocks('chisel:space/diamond_block'))
+            .where('D', Predicates.blocks('kubejs:starry_diamond_block'))
             .where('C', Predicates.blocks("kubejs:microverse_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
@@ -300,5 +309,29 @@ event.create('draconic_reactor', 'multiblock')
             .build())
         .workableCasingRenderer("kubejs:block/microverse_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
+
+// Super Computer
+event.create('simulation_supercomputer', 'multiblock')
+.rotationState(RotationState.NON_Y_AXIS)
+.recipeTypes('simulation_supercomputer')
+.appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
+.pattern(definition => FactoryBlockPattern.start()
+.aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
+.aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
+.aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCCCC")
+.aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
+.aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
+    .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+    .where('V', Predicates.blocks('gtceu:vibration_safe_casing'))
+    .where('E', Predicates.blocks('gtceu:enderium_block'))
+    .where('O', Predicates.blocks('gtceu:omnium_block'))
+    .where('Q', Predicates.blocks('ae2:quartz_glass'))
+    .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+    .where('C', Predicates.blocks("gtceu:atomic_casing")
+        .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+        .where('#', Predicates.any())
+    .build())
+.workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
+    "gtceu:block/multiblock/implosion_compressor", false)
 
 })

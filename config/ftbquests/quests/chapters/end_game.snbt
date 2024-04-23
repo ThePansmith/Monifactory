@@ -2101,7 +2101,7 @@
 				""
 				"This tank is your first proper creative item, which can be set to a fluid and then provides an infinite quantity of that fluid. &2Use the Creative Tank Provider to supply you with Creative Tanks."
 				""
-				"The GT Creative Tank has been enhanced. You can turn it on and off, configure exactly how much fluid you want it to push and how often, and change which direction the fluid is pushed out. You can even configure the fluid you want directly from JEI!&r"
+				"The GT Creative Tank has been enhanced. You can turn it on and off, configure exactly how much fluid you want it to push and how often, and change which direction the fluid is pushed out. You can even configure the fluid you want directly from EMI!&r"
 				""
 				"From there you can set up tanks with infinite quantities of every fluid you can think of. &3Fluid Solidifiers&r &2or the much more powerful Large Solidification Arrays&r can be used to make infinite of every element you can melt and solidify."
 				"{@pagebreak}"
@@ -2134,7 +2134,7 @@
 				""
 				"From here, you are going to be crafting a multitude of Creative-Tier items from various mods. In addition to being useful for their regular functionality, they are needed for the final goal: the &9Creative Chest&r."
 				""
-				"&bJEI&r is your friend: beyond noting a few more items, I will not be holding your hand anymore. I've taught you everything you need to know to beat the pack."
+				"&bEMI&r is your friend: beyond noting a few more items, I will not be holding your hand anymore. I've taught you everything you need to know to beat the pack."
 				""
 				"You can do it!"
 			]
@@ -2380,7 +2380,7 @@
 				""
 				"It also makes you &ci&r&6n&r&ev&r&ai&r&bn&r&9c&r&9i&r&cb&r&6l&r&ee&r*."
 				""
-				"[\"\",{\"text\":\"*Moni-co Not responsible for any deaths due to \",\"color\":\"gray\",\"italic\":true},{\"text\":\"Sword of the Cosmos\",\"color\":\"red\",\"italic\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"02F9A348301274A3\"},\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"avaritia:infinity_sword\"}}},{\"text\":\" or armor misuse or other unforseen bugs related to the item.\",\"color\":\"gray\",\"italic\":true}]"
+				"[\"\",{\"text\":\"*Moni-co not responsible for any deaths due to \",\"color\":\"gray\",\"italic\":true},{\"text\":\"Sword of the Cosmos\",\"color\":\"red\",\"italic\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"02F9A348301274A3\"},\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"avaritia:infinity_sword\"}}},{\"text\":\" or armor misuse or other unforseen bugs related to the item.\",\"color\":\"gray\",\"italic\":true}]"
 			]
 			hide_dependency_lines: true
 			id: "42566D73F0F8188D"
@@ -2433,7 +2433,6 @@
 			id: "3B57A9816A61C1DC"
 			subtitle: "Is Neutronium not enough?!"
 			tasks: [{
-				count: 6L
 				id: "2EE60D5EE1564FCF"
 				item: "kubejs:sp_endgame.infinity"
 				type: "item"
@@ -2452,7 +2451,6 @@
 			hide_dependency_lines: true
 			id: "4CF399EC00A65E3A"
 			tasks: [{
-				count: 4L
 				id: "639C72FD2123C478"
 				item: "kubejs:creative_storage_component"
 				type: "item"
@@ -2469,7 +2467,6 @@
 			subtitle: "Creative Gamemode Flight"
 			tasks: [{
 				consume_items: true
-				count: 4L
 				id: "7D6B65EEC3863252"
 				item: {
 					Count: 1b
@@ -2491,7 +2488,6 @@
 			hide_dependency_lines: true
 			id: "6E8D4566A63A3146"
 			tasks: [{
-				count: 4L
 				id: "1B8701D8C5992B1D"
 				item: "ae2:creative_energy_cell"
 				type: "item"

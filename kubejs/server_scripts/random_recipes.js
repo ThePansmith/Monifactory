@@ -14,9 +14,6 @@ ServerEvents.recipes(event => {
     comapcting(event, 'kubejs:compressed_red_sand', 'minecraft:red_sand');
     comapcting(event, 'kubejs:double_compressed_red_sand', 'kubejs:compressed_red_sand');
 
-    // Compressed crafting station
-    comapcting(event, 'kubejs:compressed_crafting_table', 'minecraft:crafting_table');
-
     // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
     event.replaceInput({ id: "gtceu:shaped/basic_circuit_board" }, 'gtceu:copper_single_wire', 'gtceu:fine_copper_wire')
@@ -539,20 +536,23 @@ ServerEvents.recipes(event => {
     }
     ).damageIngredient('#minecraft:swords')
 
-	   //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
-    event.remove({ id: "armorplus:crafting/shapeless/wooden_rod" })
-    event.shaped(
-        '2x armorplus:wooden_rod', [
-        'SS',
-        'SS'
-    ], {
-        S: 'minecraft:stick'
-    }
-    ).id('kubejs:not_a_wood_gear')
+	  //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
+  	event.remove( {id: "armorplus:crafting/shapeless/wooden_rod" })
+  	event.shaped(
+  		'2x armorplus:wooden_rod', [
+		  	'SS',
+		  	'SS'
+		  ], {
+		  	S: 'minecraft:stick'
+		  }
+	  ).id('kubejs:not_a_wood_gear')
 
-    //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
-    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
-    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
+	  //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
+	  event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_log", "#minecraft:logs")
+	  event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
+
+    //Avaritia Replacement recipes
+    comapcting(event, 'kubejs:neutronium_ingot', 'kubejs:neutronium_nugget')
 
     //Recipie from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
@@ -572,6 +572,7 @@ ServerEvents.recipes(event => {
         ], {
         Z: 'gtceu:zinc_foil',
         L: 'gtceu:lead_plate'
-    }
-    )
+    })
+    //Making ABS take aluminium rather than osmium so it's obtainable in EV
+    event.replaceInput( { id:"gtceu:shaped/blast_alloy_smelter"}, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 })

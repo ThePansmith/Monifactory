@@ -128,14 +128,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-	// Handled by gregtech, left here incase of emergency
-    // event.recipes.gtceu.bender("crystal_matrix_plate")
-    //     .itemInputs('gtceu:crystal_matrix_ingot')
-    //     .itemOutputs('kubejs:crystal_matrix_plate')
-    //     .duration(98)
-    //     .EUt(24)
-    //     .circuit(1)
-
     // Ultimate Gem
 	event.recipes.extendedcrafting.shapeless_table(
 		'kubejs:ultimate_gem',
@@ -460,7 +452,7 @@ ServerEvents.recipes(event => {
 
     // Creative Chest
     event.recipes.extendedcrafting.shaped_table(
-        'gtceu:creative_chest', [
+        '2x gtceu:creative_chest', [
             'ABBBBBBBA',
             'BCTEDETCB',
             'BFSGHGSFB',
