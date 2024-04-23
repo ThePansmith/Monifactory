@@ -403,7 +403,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('shiny')
 		.flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
         .cableProperties(2147483647, 4, 0, true)
-	event.create('')
+	event.create('infinity')
 		.ingot()
 		.color(0x000000)
 		.iconSet("shiny")
