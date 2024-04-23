@@ -20,7 +20,20 @@ ServerEvents.recipes(event => {
             .duration(15.05 * 20) // same for all recipes
             .EUt(EUt)
     }
-
+    
+    supercomp('thermal/thermal_elemental', 'overworld', 256)
+    supercomp('shulker', 'end', 128)
+    supercomp('wither_skeleton', 'nether', 256)
+    supercomp('ender_dragon', 'end', 1666)
+    supercomp('slime', 'overworld', 16)
+    supercomp('skeleton', 'overworld', 16)
+    supercomp('blaze', 'nether', 256)
+    supercomp('zombie', 'overworld', 16)
+    supercomp('witch', 'overworld', 128)
+    supercomp('guardian', 'overworld', 256)
+    supercomp('spider', 'overworld', 16)
+    supercomp('ghast', 'nether', 256)
+    supercomp('wither', 'end', 1666)
+    supercomp('creeper', 'overworld', 16)
     supercomp('enderman', 'end', 512)
-
 })
