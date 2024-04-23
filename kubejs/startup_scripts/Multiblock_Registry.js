@@ -318,7 +318,7 @@ event.create('simulation_supercomputer', 'multiblock')
 .pattern(definition => FactoryBlockPattern.start()
 .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
 .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-.aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCCCC")
+.aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCMCC")
 .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
 .aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
     .where('S', Predicates.controller(Predicates.blocks(definition.get())))
@@ -328,10 +328,11 @@ event.create('simulation_supercomputer', 'multiblock')
     .where('Q', Predicates.blocks('ae2:vibrant_quartz_glass'))
     .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
     .where('C', Predicates.blocks("gtceu:atomic_casing")
-        .or(Predicates.autoAbilities(definition.getRecipeTypes())))
-        .or(Predicates.abilities(PartAbility.MAINTENANCE)))
+        .or(Predicates.autoAbilities(definition.getRecipeTypes()))) // tried putting maint hatch here, but its going to be optional and not required for the multiblock then
+    .where('M', Predicates.abilities(PartAbility.MAINTENANCE)) // temporary bandaid, someone make it so that it can be placed anywhere
     .where('#', Predicates.any())
-    .build()
+    .build())
 .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
     "gtceu:block/multiblock/implosion_compressor", false)
+
 })
