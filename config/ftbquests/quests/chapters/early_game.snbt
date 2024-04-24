@@ -177,6 +177,7 @@
 				""
 				"Ores have various means of processing, and eventually you'll use machine pipelines to process ores in specific ways to optimize what byproducts you gain. You can look at the &6Ore Byproduct Page&r of an ore in &bEMI&r, accessed by pressing 'U' on an ore and navigating to the byproduct tab, to see the required route to obtain desired byproducts. "
 				""
+				"{@pagebreak}"
 				"The relevant machines are as follows:"
 				" "
 				"- &3Macerator&r: turns ores into &6Crushed Ores&r, Crushed Ores into &6Impure Dusts&r, and &6Purified Crushed Ores&r into &6Pure Dusts&r. Higher tiers of macerators have byproduct slots and gain a chance to get a full pile of byproduct from ores and both types of crushed ores."
@@ -187,6 +188,7 @@
 				""
 				"&r- &3Centrifuge&r: separates Pure or Impure dusts into the final material, producing a guaranteed &21 (nerfed from 3) tiny pile of byproduct&r."
 				""
+				"{@pagebreak}"
 				"- &3Electrolyzer&r: uses power to split compounds into individual elements, sometimes gaining useful byproducts in the process. &2Be warned that certain dusts may be better to directly smelt instead of electrolyze!&r"
 				""
 				"- &3Thermal Centrifuge&r: not to be confused with the regular Centrifuge. &2Less slow and power-hungry now, but still so. However, it yields 3 additional tiny piles of byproduct, and macerating the Centrifuged Ore can grant a special third byproduct."
@@ -2619,6 +2621,53 @@
 			title: "&9Charging Items Wirelessly"
 			x: 12.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["5F109188BE4D9767"]
+			description: [
+				"The &6Steam Seperator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				""
+				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
+			]
+			icon: "steamadditions:steam_separator"
+			id: "45FA4FF0B16B3879"
+			rewards: [{
+				count: 6
+				id: "4FEF69C507C110DC"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "78893122841FDA9D"
+					item: "steamadditions:steam_separator"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "3AF9F74D8F9D2FD3"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+				{
+					id: "5D781D04826C9000"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "124EF465D4193C41"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "4E8ABCD4889B4717"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&9Steam Separator"
+			x: 3.0d
+			y: -1.0d
 		}
 	]
 	title: "Early Game"

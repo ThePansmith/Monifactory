@@ -923,8 +923,9 @@
 					type: "item"
 				}
 			]
+			title: "&9Steam Grinder"
 			x: 4.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2103,6 +2104,54 @@
 			title: "&9Upgrades, people, upgrades."
 			x: 8.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["545CCC24D9401794"]
+			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."]
+			icon: "steamadditions:steam_foundry"
+			id: "5D60CAE3A33000C3"
+			rewards: [{
+				id: "0543D4882AD0F771"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "31167A476BC0B4F1"
+					item: "steamadditions:steam_foundry"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "505B1290E3042129"
+					item: { Count: 13b, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "5B5968BA75F69B32"
+					item: "gtceu:bronze_firebox_casing"
+					type: "item"
+				}
+				{
+					id: "20CC19C928014F7F"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "3F8C63CA26639558"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "2855C331EB019FD9"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&9Steam Foundry"
+			x: 4.517857142857139d
+			y: 1.4285714285714306d
 		}
 	]
 	title: "The Beginning"
