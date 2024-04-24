@@ -645,6 +645,7 @@ ServerEvents.recipes(event => {
 		}
 	);
     // Infinity Screwdriver
+
 	event.recipes.extendedcrafting.shaped_table(
 		'kubejs:infinity_screwdriver', [
 			'       BC',
