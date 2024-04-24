@@ -2184,7 +2184,6 @@
 			dependencies: [
 				"4EA1E0D437528747"
 				"42566D73F0F8188D"
-				"02F9A348301274A3"
 				"4CF399EC00A65E3A"
 				"6E8D4566A63A3146"
 				"3B57A9816A61C1DC"
@@ -2379,56 +2378,41 @@
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
-			description: [
-				"Forged from the &craw fury&r of the universe, this set of armor has it all, from flight to autoeating."
-				""
-				"It also makes you &ci&r&6n&r&ev&r&ai&r&bn&r&9c&r&9i&r&cb&r&6l&r&ee&r*."
-				""
-				"[\"\",{\"text\":\"*Moni-co not responsible for any deaths due to \",\"color\":\"gray\",\"italic\":true},{\"text\":\"Sword of the Cosmos\",\"color\":\"red\",\"italic\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"02F9A348301274A3\"},\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"avaritia:infinity_sword\"}}},{\"text\":\" or armor misuse or other unforseen bugs related to the item.\",\"color\":\"gray\",\"italic\":true}]"
-			]
+			description: ["Forged from the &craw fury&r of the universe, this set of tools will be require to craft your Magnum Opus."]
 			hide_dependency_lines: true
+			icon: "kubejs:infinity_wrench"
 			id: "42566D73F0F8188D"
-			subtitle: "Immovable Object "
+			subtitle: "Making the perfect item requires perfect tools"
 			tasks: [
 				{
 					id: "6EC86152DABE9C01"
-					item: "kubejs:infinity_helmet"
+					item: "kubejs:infinity_file"
 					type: "item"
 				}
 				{
 					id: "67DEDB5346729921"
-					item: "kubejs:infinity_chestplate"
+					item: "kubejs:infinity_hammer"
 					type: "item"
 				}
 				{
 					id: "08F4B7B75DFA16AB"
-					item: "kubejs:infinity_leggings"
+					item: "kubejs:infinity_screwdriver"
 					type: "item"
 				}
 				{
 					id: "4A64827ABA2985B4"
-					item: "kubejs:infinity_boots"
+					item: "kubejs:infinity_wrench"
+					type: "item"
+				}
+				{
+					id: "7D86837DF0C5E029"
+					item: "kubejs:infinity_wire_cutter"
 					type: "item"
 				}
 			]
-			title: "Infinity Armour"
-			x: 76.5d
-			y: -2.75d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
-			description: ["This sword deals &8void&r damage, meaning it works on players in creative mode. "]
-			hide_dependency_lines: true
-			id: "02F9A348301274A3"
-			subtitle: "Unstoppable Force"
-			tasks: [{
-				id: "0C7ADE397D4ECB2D"
-				item: "kubejs:infinity_sword"
-				type: "item"
-			}]
-			title: "Sword Of The Cosmos"
-			x: 77.5d
-			y: -2.75d
+			title: "Infinity Tool Set"
+			x: 78.5d
+			y: -1.25d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -2442,7 +2426,7 @@
 				type: "item"
 			}]
 			title: "The Final Solar Panel"
-			x: 79.5d
+			x: 79.0d
 			y: -2.75d
 		}
 		{
@@ -2650,7 +2634,7 @@
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
-			x: 78.5d
+			x: 78.0d
 			y: -2.75d
 		}
 		{
@@ -2690,7 +2674,7 @@
 				type: "item"
 			}]
 			title: "&9Creative Fluid Cell"
-			x: 80.5d
+			x: 80.0d
 			y: -2.75d
 		}
 		{
@@ -2741,8 +2725,8 @@
 				type: "item"
 			}]
 			title: "Creative Capacitor"
-			x: 78.5d
-			y: -1.25d
+			x: 77.0d
+			y: -2.75d
 		}
 	]
 	title: "End Game"
