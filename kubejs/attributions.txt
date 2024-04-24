@@ -1,2 +1,2 @@
-[diamond_lattice.png, infinity_catalyst.png, infinity_ingot.png, skullfire_sword.png], which is licensed under MIT
+[diamond_lattice.png, infinity_catalyst.png, infinity_ingot.png (modified)], which is licensed under MIT
 https://github.com/Morpheus1101/Avaritia

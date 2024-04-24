@@ -414,7 +414,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("infinity"))
         .color(0xffffff)
         .iconSet('infinity')
-        .flags(GTMaterialFlags.GENERATE_PLATE)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
 })
 
 
