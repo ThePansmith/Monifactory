@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         A: 'gtceu:aluminium_plate',
         B: 'ae2:quartz_glass',
         C: 'ae2:annihilation_core',
-        D: 'kubejs:compressed_crafting_table',
+        D: 'minecraft:crafting_table',
         E: 'ae2:formation_core'
     }
     ).id('kubejs:ae2/molecular_assembler')
@@ -139,6 +139,22 @@ ServerEvents.recipes(event => {
         E: 'ae2:formation_core'
     }
     ).id('kubejs:ae2/interface')
+
+
+    // Requester
+    event.remove({ id: 'merequester:requester' })
+    event.shaped(
+        Item.of('merequester:requester'), [
+        'ABA',
+        'CDC',
+        'AAA'
+    ], {
+        A: 'gtceu:stainless_steel_plate',
+        B: 'gtceu:hv_robot_arm',
+        C: '#gtceu:circuits/hv',
+        D: 'gtceu:hv_machine_hull',
+    }
+    ).id('kubejs:ae2/requster')
 
     // Quantum Ring
     event.remove({ id: 'ae2:network/blocks/quantum_ring' })
@@ -559,13 +575,76 @@ ServerEvents.recipes(event => {
 
     //Certus
 
+    event.remove({ id: /^ae2:transform.*budding_quartz$/ })
     event.replaceInput(
-        { id: /^ae2:transform/ },
+        {},
         'ae2:charged_certus_quartz_crystal',
         'gtceu:charged_certus_quartz_gem'
     )
 
-    // FLuix
+    event.custom({
+        "type": "ae2:transform",
+        "ingredients": [
+            {
+                "item": "gtceu:charged_certus_quartz_gem"
+            },
+            {
+                "tag": "forge:storage_blocks/certus_quartz"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "item": "ae2:damaged_budding_quartz"
+        }
+    })
+    event.custom({
+        "type": "ae2:transform",
+        "ingredients": [
+            {
+                "item": "gtceu:charged_certus_quartz_gem"
+            },
+            {
+                "item": "ae2:damaged_budding_quartz"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "item": "ae2:chipped_budding_quartz"
+        }
+    })
+    event.custom({
+        "type": "ae2:transform",
+        "ingredients": [
+            {
+                "item": "gtceu:charged_certus_quartz_gem"
+            },
+            {
+                "item": "ae2:chipped_budding_quartz"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "item": "ae2:flawed_budding_quartz"
+        }
+    })
+    event.custom({
+        "type": "ae2:transform",
+        "ingredients": [
+            {
+                "item": "gtceu:charged_certus_quartz_block"
+            },
+            {
+                "item": "ae2:flawed_budding_quartz"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "item": "ae2:flawless_budding_quartz"
+        }
+    })
+
+            
+    // Fluix
 
     event.remove({ id: 'ae2:transform/fluix_crystal' })
     event.remove({ id: 'ae2:transform/fluix_crystals' })

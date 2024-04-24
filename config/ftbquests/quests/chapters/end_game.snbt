@@ -275,7 +275,7 @@
 			tasks: [{
 				count: 64L
 				id: "6A11EF851C12CC27"
-				item: "gtceu:mana_infused_metal_ingot"
+				item: "gtceu:mythril_ingot"
 				type: "item"
 			}]
 			x: 0.0d
@@ -2117,7 +2117,7 @@
 				""
 				"This tank is your first proper creative item, which can be set to a fluid and then provides an infinite quantity of that fluid. &2Use the Creative Tank Provider to supply you with Creative Tanks."
 				""
-				"The GT Creative Tank has been enhanced. You can turn it on and off, configure exactly how much fluid you want it to push and how often, and change which direction the fluid is pushed out. You can even configure the fluid you want directly from JEI!&r"
+				"The GT Creative Tank has been enhanced. You can turn it on and off, configure exactly how much fluid you want it to push and how often, and change which direction the fluid is pushed out. You can even configure the fluid you want directly from EMI!&r"
 				""
 				"From there you can set up tanks with infinite quantities of every fluid you can think of. &3Fluid Solidifiers&r &2or the much more powerful Large Solidification Arrays&r can be used to make infinite of every element you can melt and solidify."
 				"{@pagebreak}"
@@ -2150,7 +2150,7 @@
 				""
 				"From here, you are going to be crafting a multitude of Creative-Tier items from various mods. In addition to being useful for their regular functionality, they are needed for the final goal: the &9Creative Chest&r."
 				""
-				"&bJEI&r is your friend: beyond noting a few more items, I will not be holding your hand anymore. I've taught you everything you need to know to beat the pack."
+				"&bEMI&r is your friend: beyond noting a few more items, I will not be holding your hand anymore. I've taught you everything you need to know to beat the pack."
 				""
 				"You can do it!"
 			]
@@ -2205,6 +2205,10 @@
 				"6E8D4566A63A3146"
 				"3B57A9816A61C1DC"
 				"4EFA6F2466231C23"
+				"1C861E0C62D5B97D"
+				"6FD5CF3913492676"
+				"2F21C6B6F145EA81"
+				"640FB912A1742929"
 			]
 			description: [
 				"You win."
@@ -2396,7 +2400,7 @@
 				""
 				"It also makes you &ci&r&6n&r&ev&r&ai&r&bn&r&9c&r&9i&r&cb&r&6l&r&ee&r*."
 				""
-				"[\"\",{\"text\":\"*Moni-co Not responsible for any deaths due to \",\"color\":\"gray\",\"italic\":true},{\"text\":\"Sword of the Cosmos\",\"color\":\"red\",\"italic\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"02F9A348301274A3\"},\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"avaritia:infinity_sword\"}}},{\"text\":\" or armor misuse or other unforseen bugs related to the item.\",\"color\":\"gray\",\"italic\":true}]"
+				"[\"\",{\"text\":\"*Moni-co not responsible for any deaths due to \",\"color\":\"gray\",\"italic\":true},{\"text\":\"Sword of the Cosmos\",\"color\":\"red\",\"italic\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"02F9A348301274A3\"},\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"avaritia:infinity_sword\"}}},{\"text\":\" or armor misuse or other unforseen bugs related to the item.\",\"color\":\"gray\",\"italic\":true}]"
 			]
 			hide_dependency_lines: true
 			id: "42566D73F0F8188D"
@@ -2424,8 +2428,8 @@
 				}
 			]
 			title: "Infinity Armour"
-			x: 77.0d
-			y: -2.5d
+			x: 76.5d
+			y: -2.75d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -2439,8 +2443,8 @@
 				type: "item"
 			}]
 			title: "Sword Of The Cosmos"
-			x: 78.5d
-			y: -2.5d
+			x: 77.5d
+			y: -2.75d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -2449,14 +2453,13 @@
 			id: "3B57A9816A61C1DC"
 			subtitle: "Is Neutronium not enough?!"
 			tasks: [{
-				count: 6L
 				id: "2EE60D5EE1564FCF"
 				item: "kubejs:sp_endgame.infinity"
 				type: "item"
 			}]
 			title: "The Final Solar Panel"
-			x: 80.0d
-			y: -2.5d
+			x: 79.5d
+			y: -2.75d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -2468,24 +2471,21 @@
 			hide_dependency_lines: true
 			id: "4CF399EC00A65E3A"
 			tasks: [{
-				count: 4L
 				id: "639C72FD2123C478"
 				item: "kubejs:creative_storage_component"
 				type: "item"
 			}]
-			title: "Creative Storage Upgrade"
-			x: 77.0d
-			y: -1.0d
+			title: "&9Creative Storage Upgrade"
+			x: 76.5d
+			y: -1.25d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
 			description: ["The fastest flight."]
 			hide_dependency_lines: true
 			id: "4EFA6F2466231C23"
-			subtitle: "Creative Gamemode Flight"
 			tasks: [{
 				consume_items: true
-				count: 4L
 				id: "7D6B65EEC3863252"
 				item: {
 					Count: 1b
@@ -2498,23 +2498,22 @@
 				type: "item"
 			}]
 			title: "Creative Jetpack"
-			x: 78.5d
-			y: -1.0d
+			x: 77.5d
+			y: -1.25d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
-			description: ["Even more creative energy blocks!"]
+			description: ["Why convert your RF to AE when you could just have infinite AE instead?"]
 			hide_dependency_lines: true
 			id: "6E8D4566A63A3146"
 			tasks: [{
-				count: 4L
 				id: "1B8701D8C5992B1D"
 				item: "ae2:creative_energy_cell"
 				type: "item"
 			}]
 			title: "Creative Energy Cell"
-			x: 80.0d
-			y: -1.0d
+			x: 80.5d
+			y: -1.25d
 		}
 		{
 			dependencies: ["10A6C332D8BED5FD"]
@@ -3177,6 +3176,111 @@
 			title: "Nothing"
 			x: 36.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["4EA1E0D437528747"]
+			description: ["Instead of using cables to move your data around, why not just have all the data packed in a single block?"]
+			hide_dependency_lines: true
+			id: "1C861E0C62D5B97D"
+			tasks: [{
+				id: "3BE677A49268E12B"
+				item: "gtceu:creative_data_access_hatch"
+				type: "item"
+			}]
+			title: "&9Creative Data Access Hatch"
+			x: 78.5d
+			y: -2.75d
+		}
+		{
+			dependencies: ["4EA1E0D437528747"]
+			description: [
+				"Finally, a simple way to store all 2.1 billion blocks of dirt that have been laying around!"
+				""
+				"&5I do want to have this be a functional storage upgrade."
+			]
+			hide_dependency_lines: true
+			icon: "thermal:machine_catalyst_creative_augment"
+			id: "6FD5CF3913492676"
+			tasks: [
+				{
+					id: "0919C8EFD8AF69FA"
+					item: "thermal:machine_efficiency_creative_augment"
+					type: "item"
+				}
+				{
+					id: "5DA18E27143AFD25"
+					item: "thermal:machine_catalyst_creative_augment"
+					type: "item"
+				}
+			]
+			title: "Thermal Augments"
+			x: 79.5d
+			y: -1.25d
+		}
+		{
+			dependencies: ["4EA1E0D437528747"]
+			description: ["Kind of like the previous &9infinite cells&r, but you can partition this one in a cell workbench to tell what fluids it should stock/"]
+			hide_dependency_lines: true
+			id: "2F21C6B6F145EA81"
+			tasks: [{
+				id: "390C1F547BDF7D2B"
+				item: "ae2:creative_fluid_cell"
+				type: "item"
+			}]
+			title: "&9Creative Fluid Cell"
+			x: 80.5d
+			y: -2.75d
+		}
+		{
+			dependencies: ["4EA1E0D437528747"]
+			description: ["With capacitors like these, who needs chargers?"]
+			hide_dependency_lines: true
+			id: "640FB912A1742929"
+			tasks: [{
+				consume_items: true
+				id: "37AECF86ED76FEF4"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: {
+									charge_armor: {
+										hud: 1b
+									}
+									charge_curios: {
+										hud: 1b
+									}
+									charge_held_item: {
+										hud: 1b
+									}
+									charge_hot_bar: {
+										hud: 1b
+									}
+									charge_main: {
+										hud: 1b
+									}
+								}
+								provider_id: [I;
+									1332154685
+									1428049052
+									-1092552679
+									694338582
+								]
+							}
+						}
+					}
+					id: "draconicevolution:creative_capacitor"
+				}
+				type: "item"
+			}]
+			title: "Creative Capacitor"
+			x: 78.5d
+			y: -1.25d
 		}
 	]
 	title: "End Game"
