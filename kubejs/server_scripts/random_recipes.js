@@ -153,6 +153,17 @@ ServerEvents.recipes(event => {
     }
     )
 
+    event.shaped(
+        "steamadditions:steam_foundry", [
+        'BGB',
+        'BDB',
+        'BGB'
+    ], {
+        B: "gtceu:steam_machine_casing",
+        G: "gtceu:bronze_gear",
+        D: "gtceu:lv_alloy_smelter"
+    }
+    )
     // Moni-style firebricks
     event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
     event.recipes.minecraft.smelting("gtceu:firebrick", "gtceu:fireclay_dust")
