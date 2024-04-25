@@ -4,7 +4,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('omnium', 130, 234, -1, null, 'Nm', false)
     event.create('draconium', 149, 234, -1, null, 'Dc', false)
     event.create('draconium_awakened', 149, 264, -1, null, 'Dc*', false)
-    event.create('taranium', 149, 264, -1, null, 'Tn', false)
 })
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
@@ -32,11 +31,4 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff).iconSet('omnium') // custom icon set
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
         .cableProperties(2147483647, 64, 0, true);
-
-    event.create('taranium')
-        .ingot().fluid()
-        .element(GTElements.get("taranium"))
-        .color(0xff00ff).iconSet('bright')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
-        .blastTemp(10800, 'highest')
 })
