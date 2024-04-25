@@ -60,4 +60,35 @@ ItemEvents.tooltip(tooltip => {
 	// dml glitch armor
 	tooltip.add('kubejs:glitch_fragment', Text.translatable('item.kubejs.glitch_fragment.desc'))
 	tooltip.add('kubejs:glitch_infused_ingot', Text.translatable('item.kubejs.glitch_infused_ingot.desc'))
+
+    // Multiblocks
+    tooltip.add('gtceu:draconic_reactor', Text.translatable('gtceu.draconic_reactor.desc'))
+    tooltip.add('gtceu:simulation_supercomputer', Text.translatable('gtceu.simulation_supercomputer.desc'))
+    tooltip.add('gtceu:loot_superfabricator', Text.translatable('gtceu.loot_superfabricator.desc'))
+    tooltip.add('gtceu:greenhouse', Text.translatable('gtceu.greenhouse.desc'))
+    tooltip.add('gtceu:basic_microverse_projector', Text.translatable('gtceu.basic_microverse_projector.desc'))
+    tooltip.add('gtceu:advanced_microverse_projector', Text.translatable('gtceu.advanced_microverse_projector.desc'))
+    tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.advanced_microverse_projector_ii.desc'))
+    tooltip.add('gtceu:creative_tank_fabricator', Text.translatable('gtceu.creative_tank_fabricator.desc'))
+
+    tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
+        text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
+        text.add(2, [Text.white('Produces exactly 3 amps of '), Text.red('ZPM'), Text.white('.')])
+        text.add(3, Text.gold('Does not overclock!')) //temporary
+    })
+
+    tooltip.addAdvanced('gtceu:naquadah_reactor_ii', (item, adv, text) => {
+        text.add(1, Text.gray('An elite reactor capable of capturing more energy from the decay of Enriched Naquadah and Naquadria bolt'))
+        text.add(2, [Text.white('Produces exactly 3 amps of '), Text.translatable('\u00a73UV'), Text.white('.')])
+        text.add(3, Text.gold('Does not overclock!')) //temporary
+    })
+
+    //Sophisticated Storage
+    tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
+    tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
+
+    // Misc
+    tooltip.add('kubejs:eternal_catalyst', '§8Gaze into the Abyss...')
+    tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
+
 })

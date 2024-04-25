@@ -1,5 +1,6 @@
 // Elements
 GTCEuStartupEvents.registry('gtceu:element', event => {
+    event.create('infinity', 69, 420, -1, null, '∞', false); //feel free to add a better proton/neutron count
     event.create('omnium', 130, 234, -1, null, 'Nm', false)
     event.create('draconium', 149, 234, -1, null, 'Dc', false)
     event.create('draconium_awakened', 149, 264, -1, null, 'Dc*', false)
@@ -7,6 +8,10 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 })
 
 // Elemental materials
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    event.create('omnium').parent(GTMaterialIconSet.SHINY)
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("draconium")
         .ingot().fluid().ore()
@@ -27,8 +32,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("omnium")
         .ingot().fluid()
         .element(GTElements.get("omnium"))
-        .color(0x414751)
-        .iconSet('shiny')
+        .color(0xffffff)
+        .iconSet('omnium')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
         .cableProperties(2147483647, 64, 0, true);
 
@@ -251,11 +256,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("mana"))
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("mana_infused_metal")
-        .ingot().fluid()
-        .color(0xCF83FB)
-        .iconSet('dull')
-        .flags(GTMaterialFlags.GENERATE_PLATE)
+    // this IS mithryl, just renamed
+    // event.create("mana_infused_metal")
+    //     .ingot().fluid()
+    //     .color(0xCF83FB)
+    //     .iconSet('dull')
+    //     .flags(GTMaterialFlags.GENERATE_PLATE)
 
     event.create("manyullyn")
         .ingot().fluid()
@@ -303,7 +309,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x428fdb)
         .iconSet('dull')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR) // no unification
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.NO_SMELTING) // no unification
 		.components('titanium', 'mana');
 })
 
@@ -375,7 +381,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xd6d980)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
-		// .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, ALL_TOOL_TYPES))
+        // .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, ALL_TOOL_TYPES))
         .cableProperties(2048, 1, 0, true)
 
     event.create("stellar_alloy")
@@ -385,6 +391,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 // Endgame stuff
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    event.create('infinity').parent(GTMaterialIconSet.SHINY)
+    event.create('crystal_matrix').parent(GTMaterialIconSet.SHINY)
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("crystal_matrix")
         .ingot().fluid()
@@ -396,14 +407,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("draconic_superconductor"))
         .color(0xffffff)
         .iconSet('shiny')
-		.flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
+        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
         .cableProperties(2147483647, 4, 0, true)
-	event.create('infinity')
-		.ingot()
-		.color(0x000000)
-		.iconSet("shiny")
-		.flags(GTMaterialFlags.GENERATE_PLATE)
-		.components('5x neutronium');
+    event.create('infinity')
+        .ingot()
+        .element(GTElements.get("infinity"))
+        .color(0xffffff)
+        .iconSet('infinity')
+        .flags(GTMaterialFlags.GENERATE_PLATE)
 })
 
 

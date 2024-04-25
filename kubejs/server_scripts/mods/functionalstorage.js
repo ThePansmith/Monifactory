@@ -49,14 +49,14 @@ ServerEvents.recipes(event => {
     ).id('functionalstorage:armory_cabinet')
     event.shaped(
         "functionalstorage:ender_drawer", [
-        'III',
-        'DED',
+        'ICI',
+        'PEP',
         'III'
     ], {
         I: "gtceu:iron_plate",
-        P: "gtceu:lv_electric_piston",
+        C: "#gtceu:circuits/mv",
         E: "enderchests:ender_chest",
-        D: "#functionalstorage:drawer"
+        P: "gtceu:mv_electric_piston"
     }
     ).id('functionalstorage:ender_drawer')
 
@@ -122,5 +122,40 @@ ServerEvents.recipes(event => {
 		D: 'functionalstorage:diamond_upgrade'
 	}).id('functionalstorage:netherite_upgrade')
 
-	event.replaceInput({ id: /functionalstorage:fluid/ }, 'minecraft:bucket', 'gtceu:lv_super_tank')
+	event.replaceInput({ id: /functionalstorage:fluid/ }, 'minecraft:bucket', 'gtceu:hv_super_tank')
+
+    // Custom compacting recipes
+    event.custom({ 
+        type: "functionalstorage:custom_compacting", 
+        higher_input: { 
+            count: 1, 
+            item: "kubejs:moni_dollar" 
+        }, 
+        lower_input: { 
+            count: 4,
+            item: "kubejs:moni_quarter"
+        } 
+    })
+    event.custom({ 
+        type: "functionalstorage:custom_compacting", 
+        higher_input: { 
+            count: 1, 
+            item: "kubejs:moni_quarter" 
+        }, 
+        lower_input: { 
+            count: 5, 
+            item: "kubejs:moni_nickel" 
+        } 
+    })
+    event.custom({ 
+        type: "functionalstorage:custom_compacting", 
+        higher_input: { 
+            count: 1, 
+            item: "kubejs:moni_nickel" 
+        }, 
+        lower_input: { 
+            count: 5, 
+            item: "kubejs:moni_penny"
+        } 
+    })
 })

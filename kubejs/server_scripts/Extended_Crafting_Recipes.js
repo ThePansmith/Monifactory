@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
             'PEPPEPPEP',
             'PPPPEPPPP',
         ], {
-            P: 'kubejs:pile_of_neutrons',
+            P: 'gtceu:tiny_neutronium_dust',
             E: "kubejs:eternal_catalyst",
             C: 'draconicevolution:chaotic_core',
             H: 'kubejs:heart_of_a_universe'
@@ -62,9 +62,9 @@ ServerEvents.recipes(event => {
             'AAAB     ',
             '         '
 		], {
-			A: 'kubejs:neutronium_ingot',
-			B: 'kubejs:neutronium_nugget',
-			C: 'kubejs:omnium_ingot',
+			A: 'gtceu:neutronium_ingot',
+			B: 'gtceu:neutronium_nugget',
+			C: 'gtceu:omnium_ingot',
 			D: 'kubejs:eternal_catalyst',
 			E: 'kubejs:infinity_catalyst',
 		}
@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
 			B: 'gtceu:red_steel_ingot',
 			C: 'gtceu:kanthal_ingot',
 			D: 'gtceu:magnalium_ingot',
-			E: 'gtceu:mana_infused_metal_ingot',
+			E: 'gtceu:mythril_ingot',
 			F: 'gtceu:manyullyn_ingot',
 			G: 'gtceu:enderium_ingot',
 			H: 'gtceu:blue_steel_ingot',
@@ -198,9 +198,9 @@ ServerEvents.recipes(event => {
 	).id('kubejs:extended/exotic_materials_catalyst')
 
 	// Angel Ring
-    event.remove({ id: 'miniutilities:angel_ring_crafting' })
+    event.remove({ id: 'better_angel_ring:angel_ring' })
 	event.recipes.extendedcrafting.shaped_table(
-		'miniutilities:angel_ring', [
+		'better_angel_ring:angel_ring', [
             " AAA ",
             "A B A",
             "AC CA",

@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    // All of the event.remove() here should REALLY be moved to Remove_Recipes.js for consistency
+
     //Components
     event.remove({ output: 'extendedcrafting:basic_component' })
     event.shaped(
@@ -160,7 +162,17 @@ ServerEvents.recipes(event => {
         C: 'extendedcrafting:elite_component',
         D: 'gtceu:tungsten_carbide_block'
     })
-    
+
+    event.shaped(
+        'extendedcrafting:pedestal', [
+            ' P ',
+            ' P ',
+            'PBP'
+        ], {
+            P: 'gtceu:black_steel_plate',
+            B: 'gtceu:black_steel_block'
+        })
+
     //        let tables = ['extendedcrafting:advanced_table', 'extendedcrafting:elite_table', 'extendedcrafting:ultimate_table']
     //        tables.forEach(table => {
     //            event.shapeless(2x table, [table])
@@ -193,7 +205,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.combination(
         "gtceu:palis_empowered_block",
-        "gtceu:palis_block", ["gtceu:sapphire_gem", "gtceu:mana_infused_metal_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT(), "extendedcrafting:elite_component"],
+        "gtceu:palis_block", ["gtceu:sapphire_gem", "gtceu:mythril_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT(), "extendedcrafting:elite_component"],
         4000000, 400000
     )
 

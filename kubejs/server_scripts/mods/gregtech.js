@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     event.shapeless('gtceu:conductive_alloy_dust', ['minecraft:redstone', 'gtceu:iron_dust']).id('kubejs:shapeless/conductive_alloy_dust')
 
     event.recipes.gtceu.extractor('one_experience_fluid')
-        .itemInputs('miniutilities:experience_pearl')
+        .itemInputs('kubejs:solidified_experience')
         .outputFluids(Fluid.of('enderio:xp_juice', 140))
         .duration(80)
         .EUt(32)
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
     event.recipes.gtceu.fluid_solidifier('one_experience_solid')
-        .itemOutputs('miniutilities:experience_pearl')
+        .itemOutputs('kubejs:solidified_experience')
         .inputFluids(Fluid.of('enderio:xp_juice', 140))
         .notConsumable('gtceu:ball_casting_mold')
         .duration(500)
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
             'ABA'
         ], {
             A: 'hostilenetworks:overworld_prediction',
-            B: 'miniutilities:experience_pearl'
+            B: 'kubejs:solidified_experience'
         }
     )
     event.shaped(
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
             'ABA'
         ], {
             A: 'hostilenetworks:nether_prediction',
-            B: 'miniutilities:experience_pearl'
+            B: 'kubejs:solidified_experience'
         }
     )
     event.shaped(
@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
             'ABA'
         ], {
             A: 'hostilenetworks:end_prediction',
-            B: 'miniutilities:experience_pearl'
+            B: 'kubejs:solidified_experience'
         }
     )
 
