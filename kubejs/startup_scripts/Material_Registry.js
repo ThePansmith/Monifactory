@@ -45,35 +45,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 })
 
-// Chemical Materials
-GTCEuStartupEvents.registry('gtceu:material', event => {
-    event.create('butanol')
-        .fluid()
-        .color(0xc7af2e)
-        .iconSet('butanol')
-        .components('4x carbon', '10x hydrogen', '1x oxygen')
-
-    event.create('phosphorus_trichloride')
-        .fluid()
-        .color(0xe8c474)
-        .iconSet('phosphorus_trichloride')
-        .components('1x phosphorus', '3x chlorine')
-
-    event.create('tributyl_phosphate')
-        .fluid()
-        .color(0xe8c474)
-        .iconSet('tributyl_phosphate')
-        .components('12x carbon', '27x hydrogen', '4x oxygen', '1x phosphorus')
-
-    event.create('phosphoryl_chloride')
-        .fluid()
-        .color(0xe8bb5b)
-        .iconSet('phosphoryl_chloride')
-        .components('1x phosphorus', '1x oxygen', '3x chlorine')
-
-})
-
-
 // Taranium Line Stuff
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hexafluorosilicic_acid')
@@ -99,7 +70,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xa567db)
         .iconSet('xenic_acid')
-		.components('xenon', 'water', '5x oxygen') // , 'hydrogen_peroxide'
+		.components('xenon', 'water', '5x oxygen', 'hydrogen_peroxide')
 
     event.create('dusty_helium')
         .gas()
@@ -140,65 +111,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('helium_3', 'hydrogen')
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
-
-// Platline Stuff
-GTCEuStartupEvents.registry('gtceu:material', event => {
-    event.create('chloroplatinic_acid')
-        .fluid()
-        .color(0xfef0c2F)
-        .iconSet('chloroplatinic_acid')
-        .components('2x hydrogen', 'platinum', '6x chlorine')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create('palladium_rich_ammonia')
-        .fluid()
-        .color(0x808080)
-        .iconSet('palladium_rich_ammonia')
-        .components('2x ammonia', 'palladium', 'chlorine')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create('rhodium_sulfate_solution')
-        .fluid()
-        .color(0xffbb66)
-        .iconSet('rhodium_sulfate_solution')
-		.components('rhodium_sulfate', 'water')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-	event.create("iridium_dioxide_residue")
-		.dust()
-		.color(0x17182e).iconSet("rough")
-		.components('iridium', '2x oxygen', 'rare_earth')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create('acidic_iridium_dioxide_solution')
-        .fluid()
-        .color(0x27284e)
-        .iconSet('acidic_iridium_dioxide_solution')
-		.components('iridium_dioxide_residue', '4x hydrochloric_acid')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create('platinum_palladium_leachate')
-        .fluid()
-        .color(0xffffc5)
-        .iconSet('platinum_palladium_leachate')
-		.components('platinum', 'palladium', 'aqua_regia')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create('methyl_formate')
-        .fluid()
-        .color(0xffaaaa)
-        .iconSet('methyl_formate')
-        .components('2x carbon', '4x hydrogen', '2x oxygen')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create('formic_acid')
-        .fluid()
-        .color(0xffffc5)
-        .iconSet('formic_acid')
-        .components('carbon', '2x hydrogen', '2x oxygen')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-})
-
 
 // Microverse Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {

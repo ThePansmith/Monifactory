@@ -2,7 +2,7 @@
 
 const defaultConfig = {
     mode: 'normal',
-    message: 'Valid modes are normal and expert.'
+    message: 'Valid modes are normal, hardcore and omega.'
 };
 const configName = 'mode.json';
 let config = JsonIO.read(configName);
@@ -14,13 +14,15 @@ if (!config || !config.mode) {
 if (config.mode == 'none') {
     JsonIO.write(configName, defaultConfig);
     config.mode = defaultConfig.mode;
-    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal' and 'expert'.`);
+    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal', 'hardcore' and 'omega'.`);
 }
 
 let packMode = config.mode;
 
 global.packmode = packMode;
 global.isNormalMode = packMode == 'normal';
-global.isExpertMode = packMode == 'expert';
+global.isHardcoreMode = packMode == 'hardcore';
+global.isOmegaMode = packMode == 'omega';
 const isNormalMode = packMode == 'normal';
-const isExpertMode = packMode == 'expert';
+const isHardcoreMode = packMode == 'hardcore';
+const isOmegaMode = packMode == 'omega';
