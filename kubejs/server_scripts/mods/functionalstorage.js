@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
 		D: 'functionalstorage:diamond_upgrade'
 	}).id('functionalstorage:netherite_upgrade')
 
-	event.replaceInput({ id: /functionalstorage:fluid/ }, 'minecraft:bucket', 'gtceu:lv_super_tank')
+	event.replaceInput({ id: /functionalstorage:fluid/ }, 'minecraft:bucket', 'gtceu:hv_super_tank')
 
     // Custom compacting recipes
     event.custom({ 
