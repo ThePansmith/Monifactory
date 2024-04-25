@@ -153,6 +153,17 @@ ServerEvents.recipes(event => {
     }
     )
 
+    event.shaped(
+        "steamadditions:steam_foundry", [
+        'BGB',
+        'BDB',
+        'BGB'
+    ], {
+        B: "gtceu:steam_machine_casing",
+        G: "gtceu:bronze_gear",
+        D: "gtceu:lv_alloy_smelter"
+    }
+    )
     // Moni-style firebricks
     event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
     event.recipes.minecraft.smelting("gtceu:firebrick", "gtceu:fireclay_dust")
@@ -552,7 +563,7 @@ ServerEvents.recipes(event => {
 	  event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
 
     //Avaritia Replacement recipes
-    comapcting(event, 'kubejs:neutronium_ingot', 'kubejs:neutronium_nugget')
+    comapcting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
 
     //Recipie from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")

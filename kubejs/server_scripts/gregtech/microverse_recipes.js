@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_eight_second')
         .itemInputs('kubejs:microminer_t8', '64x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:wither_realm_data', '64x kubejs:wither_realm_data',)
-        .itemOutputs('32x gtceu:quantum_star', '64x gtceu:quantum_eye', '16x kubejs:neutronium_ingot', 'gtceu:gravi_star')
+        .itemOutputs('32x gtceu:quantum_star', '64x gtceu:quantum_eye', '16x gtceu:neutronium_ingot', 'gtceu:gravi_star')
         .duration(2000)
         .EUt(62500)
 
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
         .itemInputs('kubejs:microminer_t9', '4x gtceu:neutron_reflector', '4x gtceu:draconium_awakened_block', 'kubejs:stellar_creation_data')
-        .itemOutputs('64x kubejs:neutronium_nugget', '64x kubejs:neutronium_nugget', '64x kubejs:neutronium_nugget', '64x kubejs:neutronium_nugget', '64x kubejs:neutronium_nugget', '64x kubejs:neutronium_nugget', '64x kubejs:neutronium_nugget', '64x kubejs:neutronium_nugget', '64x kubejs:neutronium_nugget', '64x kubejs:neutronium_nugget')
+        .itemOutputs('64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget')
         .duration(3000)
         .EUt(250000)
 

@@ -83,7 +83,12 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.gold('Does not overclock!')) //temporary
     })
 
+    //Sophisticated Storage
+    tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
+    tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
+
     // Misc
     tooltip.add('kubejs:eternal_catalyst', '§8Gaze into the Abyss...')
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
+
 })

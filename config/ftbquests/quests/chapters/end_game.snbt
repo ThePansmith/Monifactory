@@ -507,7 +507,7 @@
 				item: "gtceu:carbon_dust"
 				type: "item"
 			}]
-			title: "&2Element 006: Carbon"
+			title: "Element 006: Carbon"
 			x: 32.0d
 			y: -1.0d
 		}
@@ -592,7 +592,7 @@
 				item: "gtceu:sodium_dust"
 				type: "item"
 			}]
-			title: "&2Element 011: Sodium"
+			title: "Element 011: Sodium"
 			x: 12.5d
 			y: 0.5d
 		}
@@ -609,7 +609,7 @@
 				item: "gtceu:magnesium_dust"
 				type: "item"
 			}]
-			title: "&2Element 012: Magnesium"
+			title: "Element 012: Magnesium"
 			x: 14.0d
 			y: 0.5d
 		}
@@ -728,7 +728,7 @@
 				item: "gtceu:potassium_dust"
 				type: "item"
 			}]
-			title: "&2Element 019: Potassium"
+			title: "Element 019: Potassium"
 			x: 12.5d
 			y: 2.0d
 		}
@@ -1086,8 +1086,8 @@
 				title: "Element 057: Lanthanum"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 8.0d
+			x: 15.5d
+			y: 8.75d
 		}
 		{
 			id: "7B73FD81B7E8FFFE"
@@ -1103,7 +1103,7 @@
 				type: "item"
 			}]
 			title: "Element 074: Tungsten"
-			x: 21.5d
+			x: 20.0d
 			y: 5.0d
 		}
 		{
@@ -1222,8 +1222,8 @@
 				type: "item"
 			}]
 			title: "Element 090: Thorium"
-			x: 18.5d
-			y: 9.5d
+			x: 17.0d
+			y: 10.25d
 		}
 		{
 			id: "4EDE4D4D109BF2C2"
@@ -1239,8 +1239,8 @@
 				type: "item"
 			}]
 			title: "Element 092: Uranium"
-			x: 21.5d
-			y: 9.5d
+			x: 20.0d
+			y: 10.25d
 		}
 		{
 			id: "57AE5794C23B5B6F"
@@ -1256,8 +1256,8 @@
 				type: "item"
 			}]
 			title: "Element 093: Neptunium"
-			x: 23.0d
-			y: 9.5d
+			x: 21.5d
+			y: 10.25d
 		}
 		{
 			id: "17B5F089E58BB780"
@@ -1273,8 +1273,8 @@
 				type: "item"
 			}]
 			title: "Element 094: Plutonium"
-			x: 24.5d
-			y: 9.5d
+			x: 23.0d
+			y: 10.25d
 		}
 		{
 			id: "6416118459258E42"
@@ -1289,9 +1289,9 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
-			title: "&2Element 095: Americium"
-			x: 26.0d
-			y: 9.5d
+			title: "Element 095: Americium"
+			x: 24.5d
+			y: 10.25d
 		}
 		{
 			id: "4CE0D6E9E7DE3129"
@@ -1306,8 +1306,9 @@
 				item: "kubejs:stabilized_curium"
 				type: "item"
 			}]
-			x: 18.5d
-			y: 8.0d
+			title: "Element 096: Curium"
+			x: 26.0d
+			y: 10.25d
 		}
 		{
 			id: "41C61F32DBEF85B7"
@@ -1323,8 +1324,8 @@
 				type: "item"
 			}]
 			title: "Element 097: Berkelium"
-			x: 29.0d
-			y: 9.5d
+			x: 27.5d
+			y: 10.25d
 		}
 		{
 			id: "72414246D5FBBFA9"
@@ -1340,8 +1341,8 @@
 				type: "item"
 			}]
 			title: "Element 098: Californium"
-			x: 30.5d
-			y: 9.5d
+			x: 29.0d
+			y: 10.25d
 		}
 		{
 			id: "6F7D6294E9F311E4"
@@ -1357,8 +1358,8 @@
 				type: "item"
 			}]
 			title: "Element 099: Einsteinium"
-			x: 32.0d
-			y: 9.5d
+			x: 30.5d
+			y: 10.25d
 		}
 		{
 			id: "0D732BC5312234B4"
@@ -1373,6 +1374,7 @@
 				item: "gtceu:niobium_ingot"
 				type: "item"
 			}]
+			title: "Element 041: Niobium"
 			x: 18.5d
 			y: 3.5d
 		}
@@ -1389,9 +1391,9 @@
 				item: "gtceu:cadmium_dust"
 				type: "item"
 			}]
-			title: "Element 032: Cadmium"
-			x: 32.0d
-			y: 2.0d
+			title: "Element 048: Cadmium"
+			x: 29.0d
+			y: 3.5d
 		}
 		{
 			id: "0DB13ACF2241345E"
@@ -1406,8 +1408,9 @@
 				item: "gtceu:neodymium_ingot"
 				type: "item"
 			}]
-			x: 21.5d
-			y: 8.0d
+			title: "Element 060: Neodymium"
+			x: 20.0d
+			y: 8.75d
 		}
 		{
 			id: "016054D07025C8B1"
@@ -1422,8 +1425,9 @@
 				item: "gtceu:tantalum_ingot"
 				type: "item"
 			}]
-			x: 29.0d
-			y: 3.5d
+			title: "Element 073: Tantalum"
+			x: 18.5d
+			y: 5.0d
 		}
 		{
 			id: "119C529A35758AF2"
@@ -1438,9 +1442,9 @@
 				item: "gtceu:duranium_ingot"
 				type: "item"
 			}]
-			title: "Element 034: Duranium"
-			x: 35.0d
-			y: 2.0d
+			title: "Element ???: Duranium"
+			x: 23.0d
+			y: 12.5d
 		}
 		{
 			id: "1B45AA7042D110E4"
@@ -1455,7 +1459,8 @@
 				item: "gtceu:molybdenum_ingot"
 				type: "item"
 			}]
-			x: 21.5d
+			title: "Element 042: Molybdenum"
+			x: 20.0d
 			y: 3.5d
 		}
 		{
@@ -1471,9 +1476,9 @@
 				item: "gtceu:caesium_dust"
 				type: "item"
 			}]
-			title: "Element 037: Caesium"
+			title: "Element 055: Caesium"
 			x: 12.5d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
 			id: "05C97DC2035CE7CB"
@@ -1488,8 +1493,9 @@
 				item: "gtceu:samarium_ingot"
 				type: "item"
 			}]
-			x: 30.5d
-			y: 5.0d
+			title: "Element 062: Samarium"
+			x: 23.0d
+			y: 8.75d
 		}
 		{
 			id: "56F6AFFFCAE8A5D4"
@@ -1504,6 +1510,7 @@
 				item: "gtceu:lead_ingot"
 				type: "item"
 			}]
+			title: "Element 082: Lead"
 			x: 32.0d
 			y: 5.0d
 		}
@@ -1520,8 +1527,9 @@
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
-			x: 35.0d
-			y: 5.0d
+			title: "Element ???: Trinium"
+			x: 27.5d
+			y: 12.5d
 		}
 		{
 			id: "4E39FDB6FACDF522"
@@ -1536,6 +1544,7 @@
 				item: "gtceu:ruthenium_ingot"
 				type: "item"
 			}]
+			title: "Element 044: Ruthenium"
 			x: 23.0d
 			y: 3.5d
 		}
@@ -1552,7 +1561,8 @@
 				item: "gtceu:barium_dust"
 				type: "item"
 			}]
-			x: 15.5d
+			title: "Element 056: Barium"
+			x: 14.0d
 			y: 5.0d
 		}
 		{
@@ -1568,8 +1578,9 @@
 				item: "gtceu:europium_ingot"
 				type: "item"
 			}]
-			x: 26.0d
-			y: 8.0d
+			title: "Element 063: Europium"
+			x: 24.5d
+			y: 8.75d
 		}
 		{
 			id: "007B1B457AA3F497"
@@ -1584,8 +1595,9 @@
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
-			x: 18.5d
-			y: 5.0d
+			title: "Element 110: Darmstadtium"
+			x: 26.0d
+			y: 6.5d
 		}
 		{
 			id: "75489CBC9AABA80D"
@@ -1600,8 +1612,9 @@
 				item: "gtceu:draconium_ingot"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 5.0d
+			title: "Element ???: Draconium"
+			x: 26.0d
+			y: 12.5d
 		}
 		{
 			id: "39588577CDBFCAE4"
@@ -1616,6 +1629,7 @@
 				item: "gtceu:rhodium_ingot"
 				type: "item"
 			}]
+			title: "Element 045: Rhodium"
 			x: 24.5d
 			y: 3.5d
 		}
@@ -1632,8 +1646,9 @@
 				item: "gtceu:cerium_dust"
 				type: "item"
 			}]
-			x: 27.5d
-			y: 9.5d
+			title: "Element 058: Cerium"
+			x: 17.0d
+			y: 8.75d
 		}
 		{
 			id: "07706AB24D866D7F"
@@ -1648,8 +1663,9 @@
 				item: "gtceu:lutetium_ingot"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 5.0d
+			title: "Element 071: Lutetium"
+			x: 36.5d
+			y: 8.75d
 		}
 		{
 			id: "3D9E25B45A7942A7"
@@ -1664,8 +1680,9 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			x: 35.0d
-			y: 3.5d
+			title: "Element ???: Tritanium"
+			x: 24.5d
+			y: 12.5d
 		}
 		{
 			id: "37FD045CC0AEB11B"
@@ -1680,8 +1697,9 @@
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			x: 33.5d
-			y: 5.0d
+			title: "Element ???: Naquadah"
+			x: 29.0d
+			y: 12.5d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -1698,8 +1716,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 20.0d
-			y: 9.5d
+			x: 18.5d
+			y: 10.25d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -1716,8 +1734,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 20.0d
-			y: 8.0d
+			x: 17.0d
+			y: 5.0d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -1734,8 +1752,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 23.0d
-			y: 8.0d
+			x: 21.5d
+			y: 8.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -1752,8 +1770,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 24.5d
-			y: 8.0d
+			x: 18.5d
+			y: 8.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -1770,8 +1788,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 27.5d
-			y: 8.0d
+			x: 26.0d
+			y: 8.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -1788,8 +1806,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 29.0d
-			y: 8.0d
+			x: 27.5d
+			y: 8.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -1806,8 +1824,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 30.5d
-			y: 8.0d
+			x: 29.0d
+			y: 8.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -1824,8 +1842,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 32.0d
-			y: 8.0d
+			x: 21.5d
+			y: 5.0d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -1878,7 +1896,7 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 36.5d
+			x: 35.0d
 			y: 2.0d
 		}
 		{
@@ -2013,9 +2031,7 @@
 				"67591B6025C03130"
 				"1D5D25F52BE6709E"
 				"21000D112770C852"
-				"6FD050692DF28458"
 				"28558A445F62D737"
-				"748F599A5AA59D98"
 				"47E4558362202D5D"
 			]
 			description: [
@@ -2033,8 +2049,8 @@
 				item: "kubejs:mote_of_omnium"
 				type: "item"
 			}]
-			x: 23.5d
-			y: -7.0d
+			x: 25.5d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -2082,7 +2098,7 @@
 			dependencies: ["281DE48E7260BC8E"]
 			description: ["&6Chaotic Cores&r are the ultimate tier of &bDraconic Evolution&r core, used for the most powerful and advanced items."]
 			id: "3171F83E24C8F740"
-			size: 2.75d
+			size: 3.0d
 			subtitle: "The culmination of so much effort."
 			tasks: [{
 				count: 4L
@@ -2091,7 +2107,7 @@
 				type: "item"
 			}]
 			title: "Chaotic Cores"
-			x: 23.5d
+			x: 25.5d
 			y: -13.5d
 		}
 		{
@@ -2159,7 +2175,7 @@
 				item: "kubejs:heart_of_a_universe"
 				type: "item"
 			}]
-			x: 45.5d
+			x: 48.75d
 			y: -13.5d
 		}
 		{
@@ -2177,14 +2193,13 @@
 				type: "item"
 			}]
 			title: "&9Tier Ten Micro Miner"
-			x: 39.0d
+			x: 41.25d
 			y: -13.5d
 		}
 		{
 			dependencies: [
 				"4EA1E0D437528747"
 				"42566D73F0F8188D"
-				"02F9A348301274A3"
 				"4CF399EC00A65E3A"
 				"6E8D4566A63A3146"
 				"3B57A9816A61C1DC"
@@ -2255,7 +2270,7 @@
 				type: "item"
 			}]
 			title: "&9Neutronium Solar Panel"
-			x: 32.0d
+			x: 33.75d
 			y: -13.5d
 		}
 		{
@@ -2379,56 +2394,41 @@
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
-			description: [
-				"Forged from the &craw fury&r of the universe, this set of armor has it all, from flight to autoeating."
-				""
-				"It also makes you &ci&r&6n&r&ev&r&ai&r&bn&r&9c&r&9i&r&cb&r&6l&r&ee&r*."
-				""
-				"[\"\",{\"text\":\"*Moni-co not responsible for any deaths due to \",\"color\":\"gray\",\"italic\":true},{\"text\":\"Sword of the Cosmos\",\"color\":\"red\",\"italic\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"02F9A348301274A3\"},\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"avaritia:infinity_sword\"}}},{\"text\":\" or armor misuse or other unforseen bugs related to the item.\",\"color\":\"gray\",\"italic\":true}]"
-			]
+			description: ["Forged from the &craw fury&r of the universe, this set of tools will be require to craft your Magnum Opus."]
 			hide_dependency_lines: true
+			icon: "kubejs:infinity_wrench"
 			id: "42566D73F0F8188D"
-			subtitle: "Immovable Object "
+			subtitle: "Making the perfect item requires perfect tools"
 			tasks: [
 				{
 					id: "6EC86152DABE9C01"
-					item: "kubejs:infinity_helmet"
+					item: "kubejs:infinity_file"
 					type: "item"
 				}
 				{
 					id: "67DEDB5346729921"
-					item: "kubejs:infinity_chestplate"
+					item: "kubejs:infinity_hammer"
 					type: "item"
 				}
 				{
 					id: "08F4B7B75DFA16AB"
-					item: "kubejs:infinity_leggings"
+					item: "kubejs:infinity_screwdriver"
 					type: "item"
 				}
 				{
 					id: "4A64827ABA2985B4"
-					item: "kubejs:infinity_boots"
+					item: "kubejs:infinity_wrench"
+					type: "item"
+				}
+				{
+					id: "7D86837DF0C5E029"
+					item: "kubejs:infinity_wire_cutter"
 					type: "item"
 				}
 			]
-			title: "Infinity Armour"
-			x: 76.5d
-			y: -2.75d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
-			description: ["This sword deals &8void&r damage, meaning it works on players in creative mode. "]
-			hide_dependency_lines: true
-			id: "02F9A348301274A3"
-			subtitle: "Unstoppable Force"
-			tasks: [{
-				id: "0C7ADE397D4ECB2D"
-				item: "kubejs:infinity_sword"
-				type: "item"
-			}]
-			title: "Sword Of The Cosmos"
-			x: 77.5d
-			y: -2.75d
+			title: "Infinity Tool Set"
+			x: 78.5d
+			y: -1.25d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -2442,7 +2442,7 @@
 				type: "item"
 			}]
 			title: "The Final Solar Panel"
-			x: 79.5d
+			x: 79.0d
 			y: -2.75d
 		}
 		{
@@ -2528,7 +2528,7 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 20.0d
+			x: 21.5d
 			y: 3.5d
 		}
 		{
@@ -2553,24 +2553,6 @@
 			description: ["This element is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
-			id: "6FD050692DF28458"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "12BC664CC36B39BA"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 15.5d
-			y: 2.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
 			id: "21000D112770C852"
 			tasks: [{
 				disable_toast: true
@@ -2582,26 +2564,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 14.0d
+			x: 12.5d
 			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "748F599A5AA59D98"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "02E3A9718B98B430"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 14.0d
-			y: 5.0d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -2618,8 +2582,8 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 12.5d
-			y: 5.0d
+			x: 17.0d
+			y: 6.5d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -2636,8 +2600,566 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 17.0d
-			y: 9.5d
+			x: 15.5d
+			y: 10.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "5928FCBF99CF031B"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "7EC633A5B8AD5F97"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 32.0d
+			y: 2.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "65F05B1B1A57D341"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "2E59B36D918C425C"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 15.5d
+			y: 2.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "62AAA344BBAA638C"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "12FABD7054200201"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 14.0d
+			y: 3.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "76B613A95DFDD41D"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "4CF6E6523CA5A137"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 12.5d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "44F585590EB4C28C"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "572DAB92CDAB9261"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 35.0d
+			y: 3.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "26E51AB9E31378EE"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "794A760D4D9F5CD0"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 18.5d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "1E752C53A107FFF1"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "288EBED516DBF375"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 20.0d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "494F5DDE304AB43E"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "4B0AE90670F19AB1"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 35.0d
+			y: 5.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "32326CF76577DCA2"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "5C462084D069B744"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 30.5d
+			y: 5.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "07C3BF79504A9213"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "6272A48A09750CDC"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 21.5d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "28D99F6FE6773536"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "45B2AD5AD02BE4FD"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 33.5d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "1DAA388973010872"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "781FDA6CB07765FB"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 35.0d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "6B0F050E08449326"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "676F242143EEB857"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 38.0d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "46D5DFC5AFEC58AD"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "7CB68870DFB04D70"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 23.0d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "3ACAFC347DACFC8D"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "7A5056203D757251"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 24.5d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "041AFDD081C8054C"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "763AA80756A03962"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 30.5d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "62D5330EF33F11E7"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "5EBA4602A8B727B1"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 27.5d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "1B3F950BEE44BAEC"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "46A695F2ACF8AA05"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 29.0d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "20573874CE130F4B"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "34BCA11F206EBB29"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 32.0d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "13E958AA3A6CCE85"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "7158443EAB25140A"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 36.5d
+			y: 6.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "7E34C410DF281917"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "7F61249273A9E0CB"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 30.5d
+			y: 8.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "19813D769E0693EA"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "4348AEED28459C0F"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 32.0d
+			y: 8.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "247CCB1BC2E7C27C"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "58F4FFB270CEA21B"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 32.0d
+			y: 10.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "6F28EB00ECF74C9D"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "7C82CA9F8892828F"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 33.5d
+			y: 8.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "69DEA8612D70B2DE"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "3117E58BBBA2F84C"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 33.5d
+			y: 10.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "6AB1F7A04FF5D1B5"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "5CAAB07517C865BD"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 35.0d
+			y: 8.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "31125F2DDD953CDD"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "67B8DFBE1AE7297F"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 35.0d
+			y: 10.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "1465C7BE81304747"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "3A1227F656C3CA65"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 36.5d
+			y: 10.25d
+		}
+		{
+			description: ["This element exists but is not required for the Mote of Omnium."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "4CF5155563E346BE"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "51A37F29775DF2AA"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 14.0d
+			y: 6.5d
+		}
+		{
+			description: ["This element exists but is not needed for the Mote of Omnium."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "5D1DAC23C6B89AC3"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "555011C2A9D2CC5D"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 33.5d
+			y: 5.0d
+		}
+		{
+			description: ["This element exists but is not needed for the Mote of Omnium."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "2D788BE1CA9A2D69"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "1565FA8942925060"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 36.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -2650,7 +3172,7 @@
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
-			x: 78.5d
+			x: 78.0d
 			y: -2.75d
 		}
 		{
@@ -2690,7 +3212,7 @@
 				type: "item"
 			}]
 			title: "&9Creative Fluid Cell"
-			x: 80.5d
+			x: 80.0d
 			y: -2.75d
 		}
 		{
@@ -2741,8 +3263,8 @@
 				type: "item"
 			}]
 			title: "Creative Capacitor"
-			x: 78.5d
-			y: -1.25d
+			x: 77.0d
+			y: -2.75d
 		}
 	]
 	title: "End Game"
