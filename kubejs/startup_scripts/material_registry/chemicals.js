@@ -1,3 +1,4 @@
+// priority: 3
 //! Regular mode chemicals
 
 /**
