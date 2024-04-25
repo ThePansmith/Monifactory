@@ -220,6 +220,28 @@ StartupEvents.registry('item', event => {
     event.create('infinity_wire_cutter').rarity("epic")
     event.create('infinity_power_unit').rarity("epic")
     event.create('omni_motor').rarity("epic")
+
+    // Ultimate Tools
+    event.create('ultimate_file').texture('kubejs:item/ultimate/file').rarity("epic")
+    event.create('ultimate_file_core').texture('kubejs:item/ultimate/file_core')
+    event.create('ultimate_file_belly').texture('kubejs:item/ultimate/file_belly').tooltip("Yes, that's how it's called")
+    event.create('ultimate_file_point').texture('kubejs:item/ultimate/file_point')
+    event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer').rarity("epic")
+    event.create('ultimate_hammer_core').texture('kubejs:item/ultimate/hammer_core')
+    event.create('ultimate_hammer_left').texture('kubejs:item/ultimate/hammer_left')
+    event.create('ultimate_hammer_right').texture('kubejs:item/ultimate/hammer_right')
+    event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver').rarity("epic")
+    event.create('ultimate_screwdriver_core').texture('kubejs:item/ultimate/screwdriver_core')
+    event.create('ultimate_screwdriver_shaft').texture('kubejs:item/ultimate/screwdriver_shaft')
+    event.create('ultimate_screwdriver_tip').texture('kubejs:item/ultimate/screwdriver_tip')
+    event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench').rarity("epic")
+    event.create('ultimate_wrench_core').texture('kubejs:item/ultimate/wrench_core')
+    event.create('ultimate_wrench_left').texture('kubejs:item/ultimate/wrench_left')
+    event.create('ultimate_wrench_right').texture('kubejs:item/ultimate/wrench_right')
+    event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter').rarity("epic")
+    event.create('ultimate_wire_cutter_core').texture('kubejs:item/ultimate/wire_cutter_core')
+    event.create('ultimate_wire_cutter_left').texture('kubejs:item/ultimate/wire_cutter_left')
+    event.create('ultimate_wire_cutter_right').texture('kubejs:item/ultimate/wire_cutter_right')
 })
 
 ItemEvents.modification(event => {
