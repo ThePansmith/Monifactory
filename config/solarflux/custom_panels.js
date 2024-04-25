@@ -91,6 +91,30 @@ function init()
     .generation(262144)
     .capacity(204800000)
     .transfer(4096000)
+
+    // Neutronium
+    panel()
+    .name("neutronium")
+    .generation(8388608)
+    .transfer(32768000)
+    .capacity(131072000000)
+    .build()
+    .langBuilder()
+    .put("en_us", "Neutronium Solar Panel")
+    .build()
+    .register()
+
+    // Infinity
+    panel()
+    .name("infinity")
+    .generation(16777216)
+    .transfer(65536000)
+    .capacity(262144000000)
+    .build()
+    .langBuilder()
+    .put("en_us", "Infinity Solar Panel")
+    .build()
+    .register()
 }
 
 /*
