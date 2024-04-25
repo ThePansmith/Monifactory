@@ -219,6 +219,7 @@ StartupEvents.registry('item', event => {
     event.create('infinity_wrench').rarity("epic")
     event.create('infinity_wire_cutter').rarity("epic")
     event.create('infinity_power_unit').rarity("epic")
+    event.create('omni_motor').rarity("epic")
 })
 
 ItemEvents.modification(event => {
