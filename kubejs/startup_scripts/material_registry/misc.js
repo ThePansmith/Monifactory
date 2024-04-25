@@ -1,3 +1,6 @@
+//? Misc modern materials we have to add
+//? Place non-nomifactory materials here
+
 //AE2 Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('fluix')
@@ -23,7 +26,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 //PERFECT GEMS
-
 GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
     event.create('perfect')
 })
