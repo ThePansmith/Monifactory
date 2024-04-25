@@ -813,7 +813,7 @@
 						Count: 1b
 						id: "itemfilters:tag"
 						tag: {
-							value: "forge:dusts/ender_pearl"
+							value: "forge:dusts/ender"
 						}
 					}
 					title: "Ender Dust"

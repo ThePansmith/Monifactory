@@ -3266,6 +3266,19 @@
 			x: 77.0d
 			y: -2.75d
 		}
+		{
+			dependencies: ["5A70898C99B828E3"]
+			description: ["The &3Loot Superfabricator&r is a multiblock structure that takes &bDeep Mob Evolution's&r pristine matter and converts it to items like the &3Loot Fabricator&r, but is capable of overclocking these fabrications to incredible speeds."]
+			id: "6266A73765462246"
+			size: 2.0d
+			tasks: [{
+				id: "12205B5708DEC86E"
+				item: "gtceu:loot_superfabricator"
+				type: "item"
+			}]
+			x: 67.5d
+			y: -16.75d
+		}
 	]
 	title: "End Game"
 }
