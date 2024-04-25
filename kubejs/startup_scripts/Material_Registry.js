@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("omnium"))
         .color(0xffffff)
         .iconSet('omnium')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND)
         .cableProperties(2147483647, 64, 0, true);
 
     event.create('taranium')
@@ -415,7 +415,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('infinity')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
+    
+    // Adding a bunch of parts to existing elements for Endgame purpose
+    
+    GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE);
 })
+
 
 
 //AE2 Materials
