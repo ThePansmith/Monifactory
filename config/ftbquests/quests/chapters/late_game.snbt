@@ -2748,7 +2748,7 @@
 			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
-				fluid: "gtceu:radon"
+				fluid: "gtceu:radon_bucket"
 				id: "613824353565F9CF"
 				type: "fluid"
 			}]
