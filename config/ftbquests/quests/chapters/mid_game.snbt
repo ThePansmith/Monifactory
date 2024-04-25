@@ -319,7 +319,7 @@
 			tasks: [{
 				icon: "gtceu:hydrofluoric_acid_bucket"
 				id: "410F772752989787"
-				item: "minecraft:sand"
+				item: "gtceu:hydrofluoric_acid_bucket"
 				type: "item"
 			}]
 			title: "&2Hydrofluoric Acid"
