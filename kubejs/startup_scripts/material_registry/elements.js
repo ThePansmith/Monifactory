@@ -29,6 +29,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot().fluid()
         .element(GTElements.get("omnium"))
         .color(0xffffff).iconSet('omnium') // custom icon set
-        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND)
         .cableProperties(2147483647, 64, 0, true);
 })
