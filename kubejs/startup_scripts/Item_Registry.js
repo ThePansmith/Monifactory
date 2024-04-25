@@ -101,16 +101,6 @@ StartupEvents.registry('item', event => {
     event.create('creative_storage_component').displayName("Creative Storage Component").glow(true).rarity("epic")
     event.create('solidified_experience').displayName("Solidified Experience")
 
-    //Avaritia Replacements
-    event.create('diamond_lattice')
-    event.create('infinity_catalyst')
-    event.create('infinity_helmet').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
-    event.create('infinity_chestplate').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
-    event.create('infinity_sword').tooltip('Crafting Item. Not a functional weapon.').texture('kubejs:item/removed_avaritia')
-    event.create('infinity_leggings').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
-    event.create('infinity_boots').tooltip('Crafting Item. Cannot be worn.').texture('kubejs:item/removed_avaritia')
-    event.create('skullfire_sword').tooltip('Crafting Item. Not a functional weapon.')
-
     //Misc Items
     event.create('grains_of_innocence').displayName("Grains of Innocence")
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
@@ -217,6 +207,37 @@ StartupEvents.registry('item', event => {
             .textureJson({ layer0: 'gtceu:item/material_sets/dull/gear' })
             .color(0, gennyColor);
     }
+
+    //Avaritia Replacements
+    event.create('diamond_lattice')
+    event.create('infinity_catalyst').rarity("epic")
+
+    //Infinity Tools
+    event.create('infinity_file').rarity("epic")
+    event.create('infinity_hammer').rarity("epic")
+    event.create('infinity_screwdriver').rarity("epic")
+    event.create('infinity_wrench').rarity("epic")
+    event.create('infinity_wire_cutter').rarity("epic")
+    event.create('infinity_power_unit').rarity("epic")
+})
+
+ItemEvents.modification(event => {
+    // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
+    event.modify('kubejs:infinity_file', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_file').item
+    })
+    event.modify('kubejs:infinity_hammer', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_hammer').item
+    })
+    event.modify('kubejs:infinity_screwdriver', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_screwdriver').item
+    })
+    event.modify('kubejs:infinity_wrench', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wrench').item
+    })
+    event.modify('kubejs:infinity_wire_cutter', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wire_cutter').item
+    })
 })
 
 ItemEvents.armorTierRegistry(event => {

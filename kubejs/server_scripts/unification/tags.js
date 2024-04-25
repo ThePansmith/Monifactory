@@ -58,8 +58,12 @@ ServerEvents.tags('item', event => {
     // NOT pulsating iron ingot
     event.add('forge:dusts/pulsating', 'kubejs:pulsating_dust')
 
-    // endgame mats
-        // omnium
+    // Endgame tools
+    event.add('forge:tools/files', 'kubejs:infinity_file')
+    event.add('forge:tools/hammers', 'kubejs:infinity_hammer')
+    event.add('forge:tools/screwdrivers', 'kubejs:infinity_screwdriver')
+    event.add('forge:tools/wrenches', 'kubejs:infinity_wrench')
+    event.add('forge:tools/wire_cutters', 'kubejs:infinity_wire_cutter')
 
     // generic unification
     event.add('forge:dusts', ['kubejs:pulsating_dust'])
