@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
             "gtceu:hv_steam_turbine" ,
             "gtceu:steel_large_boiler" ,
             "solarflux:sp_de.chaotic",
-            "kubejs:sp_endgame.neutronium",
+            "solarflux:sp_custom_neutronium",
             // Row 3
             "thermal:upgrade_augment_3",
             "nuclearcraft:enderium_heat_sink",
@@ -243,7 +243,7 @@ ServerEvents.recipes(event => {
             "gtceu:hv_gas_turbine",
             "gtceu:tungstensteel_large_boiler",
             "solarflux:sp_de.chaotic",
-            "kubejs:sp_endgame.neutronium",
+            "solarflux:sp_custom_neutronium",
             // Row 9
             "solarflux:sp_1",
             "solarflux:sp_2",
@@ -382,7 +382,7 @@ ServerEvents.recipes(event => {
 
     //Creative Solar Panel
     event.recipes.extendedcrafting.shaped_table(
-        'kubejs:sp_endgame.infinity', [
+        'solarflux:sp_custom_infinity', [
             'SNNNNNNNS',
             'NPPPNPPPN',
             'NPPPNPPPN',
@@ -396,7 +396,7 @@ ServerEvents.recipes(event => {
             I: 'kubejs:infinity_catalyst',
             N: 'gtceu:neutronium_plate',
             P: 'gtceu:infinity_plate',
-            S: 'kubejs:sp_endgame.neutronium'
+            S: 'solarflux:sp_custom_neutronium'
 
         }
     )
@@ -574,7 +574,7 @@ ServerEvents.recipes(event => {
             L: "kubejs:infinity_wrench",
             M: "kubejs:infinity_wire_cutter",
             N: "gtceu:creative_energy",
-            S: "kubejs:sp_endgame.infinity",
+            S: "solarflux:sp_custom_infinity",
             T: "gtceu:creative_tank",
             U: "ae2:creative_energy_cell",
             W: "gtceu:creative_energy",
