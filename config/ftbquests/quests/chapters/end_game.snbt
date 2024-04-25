@@ -2266,7 +2266,7 @@
 			tasks: [{
 				count: 2L
 				id: "6F9246E97321EF11"
-				item: "kubejs:sp_endgame.neutronium"
+				item: "solarflux:sp_custom_neutronium"
 				type: "item"
 			}]
 			title: "&9Neutronium Solar Panel"
@@ -2434,7 +2434,7 @@
 			subtitle: "Is Neutronium not enough?!"
 			tasks: [{
 				id: "2EE60D5EE1564FCF"
-				item: "kubejs:sp_endgame.infinity"
+				item: "solarflux:sp_custom_infinity"
 				type: "item"
 			}]
 			title: "The Final Solar Panel"
@@ -3173,11 +3173,7 @@
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
-			description: [
-				"Finally, a simple way to store all 2.1 billion blocks of dirt that have been laying around!"
-				""
-				"&5I do want to have this be a functional storage upgrade."
-			]
+			description: ["Finally, a simple way to store all 2.1 billion blocks of dirt that have been laying around!"]
 			hide_dependency_lines: true
 			icon: "thermal:machine_catalyst_creative_augment"
 			id: "6FD5CF3913492676"
