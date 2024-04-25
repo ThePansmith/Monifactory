@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
             'PEPPEPPEP',
             'PPPPEPPPP',
         ], {
-            P: 'kubejs:pile_of_neutrons',
+            P: 'gtceu:tiny_neutronium_dust',
             E: "kubejs:eternal_catalyst",
             C: 'draconicevolution:chaotic_core',
             H: 'kubejs:heart_of_a_universe'
@@ -62,9 +62,9 @@ ServerEvents.recipes(event => {
             'AAAB     ',
             '         '
 		], {
-			A: 'kubejs:neutronium_ingot',
-			B: 'kubejs:neutronium_nugget',
-			C: 'kubejs:omnium_ingot',
+			A: 'gtceu:neutronium_ingot',
+			B: 'gtceu:neutronium_nugget',
+			C: 'gtceu:omnium_ingot',
 			D: 'kubejs:eternal_catalyst',
 			E: 'kubejs:infinity_catalyst',
 		}
