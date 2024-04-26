@@ -91,9 +91,9 @@ ServerEvents.recipes(event => {
 			' ACB BCA ',
 			' ACB BCA ',
 			' ACB BCA ',
-			' ACB BCA ',
-			'  AAEAA  ',
-			'  EEDEE  ',
+			' ACBABCA ',
+			'  AADAA  ',
+			'  EEEEE  ',
 			' EEE EEE ',
 			' EE   EE ',
 		], {
@@ -109,19 +109,19 @@ ServerEvents.recipes(event => {
 	event.recipes.extendedcrafting.shaped_table(
         'kubejs:ultimate_file', [
             '  A      ',
-            ' BEA     ',
+            ' AEA     ',
             'AEAEA    ',
-            ' AECEA   ',
+            ' AEBEA   ',
             '  AEAEF  ',
             '   AEDF  ',
             '    FFFF ',
-            '      FFF',
+            '      FCF',
             '       FF',
         ], {
             A: 'armorplus:the_ultimate_material',
-            B: 'kubejs:ultimate_file_point',
-            C: 'kubejs:ultimate_file_belly',
-            D: 'kubejs:ultimate_file_core',
+            B: 'kubejs:ultimate_file_head',
+            C: 'kubejs:ultimate_file_handle',
+            D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
         }
@@ -132,18 +132,18 @@ ServerEvents.recipes(event => {
 		'kubejs:ultimate_hammer', [
 			'    A    ',
 			'   AEA   ',
-			'  AEBEA  ',
-			'   AECEA ',
-			'   FAEDEA',
+			'  AEAEA  ',
+			'   AEBEA ',
+			'   FDEAEA',
 			'  FFFAEA ',
-			' FFF  A  ',
+			' FCF  A  ',
 			'FFF      ',
 			'FF       ',
 		], {
 			A: 'armorplus:the_ultimate_material',
-            B: 'kubejs:ultimate_hammer_left',
-            C: 'kubejs:ultimate_hammer_core',
-            D: 'kubejs:ultimate_hammer_right',
+            B: 'kubejs:ultimate_hammer_head',
+            C: 'kubejs:ultimate_hammer_handle',
+            D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
 		}
@@ -153,19 +153,19 @@ ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.shaped_table(
 		'kubejs:ultimate_screwdriver', [
 			'       AA',
-			'      ABA',
+			'      AEA',
 			'     AEA ',
-			'    ACA  ',
+			'    ABA  ',
 			'  AAEA   ',
 			' FEDA    ',
-			' FEEA    ',
+			' FCEA    ',
 			'FFFF     ',
 			'FF       ',
 		], {
 			A: 'armorplus:the_ultimate_material',
-            B: 'kubejs:ultimate_screwdriver_tip',
-            C: 'kubejs:ultimate_screwdriver_shaft',
-            D: 'kubejs:ultimate_screwdriver_core',
+            B: 'kubejs:ultimate_screwdriver_head',
+            C: 'kubejs:ultimate_screwdriver_handle',
+            D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
 		}
@@ -177,17 +177,17 @@ ServerEvents.recipes(event => {
 			'    A  A ',
 			'   AE  EA',
 			'   AE  EA',
-			'   ABEEAA',
-			'   AAACA ',
+			'   AEDEAA',
+			'   AABAA ',
 			'  AAAAA  ',
-			' ADA     ',
+			' ACA     ',
 			'AAA      ',
 			'AA       ',
         ], {
 			A: 'armorplus:the_ultimate_material',
-            B: 'kubejs:ultimate_wrench_left',
-            C: 'kubejs:ultimate_wrench_right',
-            D: 'kubejs:ultimate_wrench_core',
+            B: 'kubejs:ultimate_wrench_head',
+            C: 'kubejs:ultimate_wrench_handle',
+            D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem'
 		}
     );
@@ -198,19 +198,46 @@ ServerEvents.recipes(event => {
 			'  AA AA  ',
 			' AEA AEA ',
 			' AEA AEA ',
-			' ABA ACA ',
 			' AEA AEA ',
-			'  AAFAA  ',
-			'  FFDFF  ',
+			' AEABAEA ',
+			'  AADAA  ',
+			'  FFCFF  ',
 			' FFF FFF ',
 			' FF   FF ',
 		], {
 			A: 'armorplus:the_ultimate_material',
-            B: 'kubejs:ultimate_wire_cutter_left',
-            C: 'kubejs:ultimate_wire_cutter_right',
-            D: 'kubejs:ultimate_wire_cutter_core',
+            B: 'kubejs:ultimate_wire_cutter_head',
+            C: 'kubejs:ultimate_wire_cutter_handle',
+            D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
+		}
+	);
+
+    // Ultimate Core
+    event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_core', [
+			'    A    ',
+			'  KBCBK  ',
+			' KABDBAK ',
+			' BBEIFBB ',
+			'AGHIJIHGA',
+			' BBFIEBB ',
+			' KABDBAK ',
+			'  KBCBK  ',
+			'    A    ',
+		], {
+			A: 'armorplus:the_ultimate_material',
+            B: 'enderio:reinforced_obsidian_block',
+            C: 'gtceu:dense_indium_tin_barium_titanium_cuprate_plate',
+            D: 'gtceu:dense_blue_alloy_plate',
+            E: 'gtceu:dense_dark_soularium_plate',
+            F: 'gtceu:dense_draconium_awakened_plate',
+            G: 'gtceu:dense_manyullyn_plate',
+            H: 'gtceu:dense_enriched_sunnarium_plate',
+            I: 'kubejs:endest_star',
+            J: 'gtceu:gravi_star',
+            k: 'armorplus:wither_bone'
 		}
 	);
 
@@ -229,4 +256,33 @@ ServerEvents.recipes(event => {
         // requires research (sim chamber with data module)
         .duration(1200)
         .EUt(1966080)
+    
+    // Dense Obsidian Plate for Reinforced Obsidian
+    event.recipes.gtceu.implosion_compressor("dense_obsidian_plate")
+        .itemInputs('9x gtceu:obsidian_plate', 'minecraft:tnt')
+        .itemOutputs('gtceu:dense_obsidian_plate')
+        .duration(20)
+        .EUt(30)
+    
+    event.remove({ output: "enderio:dark_steel_bars" })
+
+    event.shaped(
+        "3x enderio:dark_steel_bars", [
+            'RRR',
+            'RRR'
+        ], {
+            R: "gtceu:dark_steel_rod"
+        }
+    )
+    event.shaped(
+        "enderio:reinforced_obsidian_block", [
+            'IBI',
+            'BPB',
+            'IBI'
+        ], {
+            P: "gtceu:dense_obsidian_plate",
+            B: "enderio:dark_steel_bars",
+            I: "gtceu:tungsten_steel_ingot"
+        }
+    )
 })
