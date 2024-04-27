@@ -98,20 +98,18 @@ StartupEvents.registry('item', event => {
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
     event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
-    event.create('omnium_ingot').displayName("Omnium Ingot").glow(true).rarity("epic")
     event.create('creative_storage_component').displayName("Creative Storage Component").glow(true).rarity("epic")
+    event.create('solidified_experience').displayName("Solidified Experience")
 
     //Misc Items
     event.create('grains_of_innocence').displayName("Grains of Innocence")
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
     event.create('moon_dust').displayName("Moon Dust")
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
-    event.create('crystal_matrix_plate')
     event.create('ender_star').displayName('§dEnder Star').glow(true)
     event.create('endest_star').displayName('§dEndest Star').glow(true)
     event.create('debug_laser').displayName('§dDebug Laser').glow(true)
     event.create('ender_energy_manipulator').displayName('Ender Energy Manipulator').glow(true)
-    //event.create('infinity_plate');
 
     //Jetpack Units
     event.create('empty_fluxed_jetpack_unit').displayName('Empty Fluxed Jetpack Unit')
@@ -143,6 +141,7 @@ StartupEvents.registry('item', event => {
     event.create('pyrotheum_dust').texture('kubejs:item/pyrotheum_blend').displayName('§6Pyrotheum Dust')
     event.create('primal_mana').displayName("Primal Mana Dust").rarity('epic')
 
+
     event.create('destabilized_clathrate').rarity('uncommon')
     event.create('energized_clathrate').rarity('uncommon')
     event.create('resonant_clathrate').rarity('rare')
@@ -162,10 +161,10 @@ StartupEvents.registry('item', event => {
 
     //Thermal Augments
     //Very Hacky but whatever
-    event.create('thermal:upgrade_augment_1').displayName("Hardened Integral Components")
-    event.create('thermal:upgrade_augment_2').displayName("Reinforced Integral Components")
-    event.create('thermal:upgrade_augment_4').displayName("Signalum Integral Components")
-    event.create('thermal:upgrade_augment_3').displayName("Resonant Integral Components")
+    event.create('thermal:upgrade_augment_1');
+    event.create('thermal:upgrade_augment_2');
+    event.create('thermal:upgrade_augment_4');
+    event.create('thermal:upgrade_augment_3');
     event.create('kubejs:redstone_transmission_coil')
 
     //Extra Utilities 2
@@ -180,9 +179,6 @@ StartupEvents.registry('item', event => {
     event.create('glitch_infused_chestplate', 'chestplate').tier('glitch').displayName('§bGlitch Infused Chestplate')
     event.create('glitch_infused_leggings', 'leggings').tier('glitch').displayName('§bGlitch Infused Leggings')
     event.create('glitch_infused_boots', 'boots').tier('glitch').displayName('§bGlitch Infused Boots')
-
-    //Dev Tool
-    //event.create('dev_tool', 'paxel').tier("dev").unstackable().displayName("The Holy Pickaxe")
 
     //Ultimate Generator Components
     //event.create('survival_generator_component').textureJson({ layer0: 'gtceu:item/material_sets/dull/gear'}).color(0, '#70F00F')
@@ -211,6 +207,37 @@ StartupEvents.registry('item', event => {
             .textureJson({ layer0: 'gtceu:item/material_sets/dull/gear' })
             .color(0, gennyColor);
     }
+
+    //Avaritia Replacements
+    event.create('diamond_lattice')
+    event.create('infinity_catalyst').rarity("epic")
+
+    //Infinity Tools
+    event.create('infinity_file').rarity("epic")
+    event.create('infinity_hammer').rarity("epic")
+    event.create('infinity_screwdriver').rarity("epic")
+    event.create('infinity_wrench').rarity("epic")
+    event.create('infinity_wire_cutter').rarity("epic")
+    event.create('infinity_power_unit').rarity("epic")
+})
+
+ItemEvents.modification(event => {
+    // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
+    event.modify('kubejs:infinity_file', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_file').item
+    })
+    event.modify('kubejs:infinity_hammer', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_hammer').item
+    })
+    event.modify('kubejs:infinity_screwdriver', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_screwdriver').item
+    })
+    event.modify('kubejs:infinity_wrench', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wrench').item
+    })
+    event.modify('kubejs:infinity_wire_cutter', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wire_cutter').item
+    })
 })
 
 ItemEvents.armorTierRegistry(event => {

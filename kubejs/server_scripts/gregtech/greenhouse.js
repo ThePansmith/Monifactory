@@ -144,14 +144,15 @@ ServerEvents.recipes(event => {
         "thermal:machine_insolator", [
         " A ",
         "SBS",
-        "ARA"
+        "CRC"
     ], {
         A: "gtceu:steel_plate",
         B: "minecraft:bucket",
         S: '#minecraft:saplings',
-        R: 'thermal:rf_coil'
+        R: 'thermal:rf_coil',
+        C: '#forge:gears/copper'
     }
-    ).id('kubejs:shaped/machine_insolator')
+    ).id("thermal:machine_insolator")
 
     event.custom({
         type: 'thermal:insolator',

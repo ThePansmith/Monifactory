@@ -58,31 +58,14 @@ ServerEvents.tags('item', event => {
     // NOT pulsating iron ingot
     event.add('forge:dusts/pulsating', 'kubejs:pulsating_dust')
 
-    // endgame mats
-    // neutronium
-    event.add('forge:ingots/neutronium', 'kubejs:neutronium_ingot')
-    event.add('forge:nuggets/neutronium', 'kubejs:neutronium_nugget')
-    event.add('forge:tiny_dusts/neutronium', 'kubejs:pile_of_neutrons')
-    event.add('forge:storage_blocks/neutronium', 'kubejs:neutronium_block')
-        // crystal matrix
-    event.add('forge:ingots/crystal_matrix', 'gtceu:crystal_matrix_ingot')
-    event.add('forge:storage_blocks/crystal_matrix', 'gtceu:crystal_matrix_block')
-    event.add('forge:plates/crystal_matrix', 'kubejs:crystal_matrix_plate')
-        // omnium
-    event.add('forge:ingots/the_ultimate', 'kubejs:omnium_ingot') // this sucks!
-    event.add('forge:ingots/omnium', 'kubejs:omnium_ingot')
-        // HACK: remove extreme crafting tags
-    event.add('forge:nuggets/omnium', 'extendedcrafting:the_ultimate_nugget')
-    event.add('forge:storage_blocks/omnium', 'extendedcrafting:the_ultimate_block')
-        // infinity
-    event.add('forge:ingots/infinity', 'gtceu:infinity_ingot')
-    event.add('forge:storage_blocks/infinity', 'gtceu:infinity_block')
-    event.add('forge:plates/infinity', 'kubejs:infinity_plate')
+    // Endgame tools
+    event.add('forge:tools/files', 'kubejs:infinity_file')
+    event.add('forge:tools/hammers', 'kubejs:infinity_hammer')
+    event.add('forge:tools/screwdrivers', 'kubejs:infinity_screwdriver')
+    event.add('forge:tools/wrenches', 'kubejs:infinity_wrench')
+    event.add('forge:tools/wire_cutters', 'kubejs:infinity_wire_cutter')
 
     // generic unification
-    event.add('forge:storage_blocks', ['kubejs:neutronium_block', 'gtceu:crystal_matrix_block', 'gtceu:infinity_block'])
-    event.add('forge:nuggets', ['extendedcrafting:the_ultimate_nugget', 'kubejs:neutronium_nugget'])
-    event.add('forge:plates', ['kubejs:crystal_matrix_plate', 'kubejs:infinity_plate'])
     event.add('forge:dusts', ['kubejs:pulsating_dust'])
 
 	// enderio!!!!
@@ -143,10 +126,4 @@ ServerEvents.tags('item', event => {
     event.add('moni:awakened_injector_tier', 'draconicevolution:awakened_crafting_injector')
     event.add('moni:awakened_injector_tier', 'draconicevolution:chaotic_crafting_injector')
     event.add('moni:chaotic_injector_tier', 'draconicevolution:chaotic_crafting_injector')
-})
-
-// Temp rubberplank stuff
-ServerEvents.tags('item', event => {
-    event.add('moni:oak_rubber_plank_temp', 'minecraft:oak_planks')
-    event.add('moni:oak_rubber_plank_temp', 'gtceu:rubber_planks')
 })

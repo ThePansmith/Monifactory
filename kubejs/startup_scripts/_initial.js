@@ -1,4 +1,4 @@
-// priority: 9999
+// priority: 999
 //! This script loads first before the other startup scripts
 // put your util or patches here so that you can access them at other scripts
 
@@ -22,8 +22,8 @@ const placeHolder = (registry, name) => {
 }
 
 //Unification regexes
-// MODS TO FIX: DRACONIC EVOLUTION, THERMAL SERIES, GTCEU NEUTRONIUM, NUCLEARCRAFT
-global.manualUnification = ['hammerlib:gears/netherite', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'hammerlib:gears/copper', 'hammerlib:gears/iron', 'hammerlib:gears/gold', 'hammerlib:gears/diamond', 'draconicevolution:draconium_ingot', 'draconicevolution:draconium_nugget', 'draconicevolution:draconium_dust', 'draconicevolution:awakened_draconium_ingot', 'draconicevolution:awakened_draconium_nugget', 'draconicevolution:awakened_draconium_dust', 'hammerlib:gears/stone', 'hammerlib:gears/wooden', 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget']
+// MODS TO FIX: DRACONIC EVOLUTION, THERMAL SERIES, NUCLEARCRAFT
+global.manualUnification = ['hammerlib:gears/netherite', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'hammerlib:gears/copper', 'hammerlib:gears/iron', 'hammerlib:gears/gold', 'hammerlib:gears/diamond', 'draconicevolution:draconium_ingot', 'draconicevolution:draconium_nugget', 'draconicevolution:draconium_dust', 'draconicevolution:awakened_draconium_ingot', 'draconicevolution:awakened_draconium_nugget', 'draconicevolution:awakened_draconium_dust', 'hammerlib:gears/stone', 'hammerlib:gears/wooden', 'extendedcrafting:the_ultimate_nugget', 'extendedcrafting:the_ultimate_ingot', 'extendedcrafting:the_ultimate_block']
 global.UnificationExcludedItems = ['nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:tough_alloy_ingot', 'enderio:wood_gear', 'enderio:stone_gear', 'enderio:iron_gear', 'enderio:energized_gear', 'enderio:vibrant_gear', 'enderio:dark_bimetal_gear']
 global.unificationPattern = new RegExp(`^(?!(${global.UnificationExcludedItems.join('|')})).*(nuclearcraft|thermal|enderio):(powdered_.*|.*(_block|_plate|_ingot|_nugget|_gear|_dust))`, 'i')
 

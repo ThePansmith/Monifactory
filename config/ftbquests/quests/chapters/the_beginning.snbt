@@ -16,7 +16,7 @@
 				""
 				"&bGregTech&r machines are built from a number of components, many of which are shared between the machines. Motors&r are used in a great number of recipes, even including other components."
 				""
-				"The Wiremill requires a &6Programmed Circuit&r to run. Each machine comes with a free one - click on the circuit slot in the &9bottom right &rof the GUI. For making single wires, leave the circuit at &econfiguration 1&r. Refer to &eJEI&r for which circuit config a recipe calls for, and refer to the adjacent quest for more information."
+				"The Wiremill requires a &6Programmed Circuit&r to run. Each machine comes with a free one - click on the circuit slot in the &9bottom right &rof the GUI. For making single wires, leave the circuit at &econfiguration 1&r. Refer to &eEMI&r for which circuit config a recipe calls for, and refer to the adjacent quest for more information."
 				"{@pagebreak}"
 				"After you make the Wiremill, &econsider making a few stacks&r of LV motors. This might sound extreme, but &ebatch crafting&r in this manner is an important habit to pick up. This way you won't have to craft more for a while, and you &owill &ruse all those motors eventually, so you're not wasting materials."
 				""
@@ -111,7 +111,7 @@
 			description: [
 				"A &6Programmed Circuit&r is an item used to configure machines. In essence, they tell a machine what to make if there's multiple things it could make from a certain input."
 				""
-				"For example, the &3Wiremill&r produces different thicknesses of &6wires&r depending on the config - &ecircuit 1&r produces &61x wires&r, &ecircuit 4&r produces &64x wires&r, etc. The &eJEI&r recipe will tell you which circuit configuration is required."
+				"For example, the &3Wiremill&r produces different thicknesses of &6wires&r depending on the config - &ecircuit 1&r produces &61x wires&r, &ecircuit 4&r produces &64x wires&r, etc. The &eEMI&r recipe will tell you which circuit configuration is required."
 				"{@pagebreak}"
 				"Each machine and item input bus comes with a &2free \"ghost circuit\"&r. Click the circuit slot on the &9bottom right&r of the GUI to access this ghost circuit. Left- and right-click or scroll to adjust the configuration. "
 				""
@@ -154,7 +154,7 @@
 			description: [
 				"&2Assembling Machines come early in CEu! Circuit recipes are handled through a separate machine, the Circuit Assembler. &r"
 				""
-				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck &eJEI&r for all the components you've been making to see if the Assembler can improve their recipes."
+				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck &eEMI&r for all the components you've been making to see if the Assembler can improve their recipes."
 				""
 				"Many of the Assembler's recipes require &9fluids&r. Hence, the &3Extractor&r will be required to take full advantage of this machine. "
 				""
@@ -252,7 +252,7 @@
 			description: [
 				"The &3Bending Machine&r improves the yield of a great deal of items. Most notably, you can use it to get one &6Plate&r from a single ingot, instead of having to spend two ingots for a single plate."
 				""
-				"As with the &3Wiremill&r, this requires a &6Programmed Circuit&r to tell it what to make. For plates, this is &econfiguration 1&r. Refer to &eJEI&r for which configuration to use for your recipe."
+				"As with the &3Wiremill&r, this requires a &6Programmed Circuit&r to tell it what to make. For plates, this is &econfiguration 1&r. Refer to &eEMI&r for which configuration to use for your recipe."
 				" "
 				"Other materials it can produce include:"
 				"- 4 &6Foils&r from a Plate"
@@ -352,7 +352,7 @@
 				""
 				"Besides not having limited durability, a key advantage of Macerators over Mortars is the chance to get additional materials when grinding things down. These are called &ebyproducts&r, and HV or better Macerators have three slots instead of one so byproducts can appear."
 				""
-				"When reading Macerator recipes in &bJEI&r, you can tell which outputs are byproducts by seeing if &ethe tooltip tells you it has a chance to appear&r: guaranteed outputs do not list a chance. &2The chance increases by a certain amount for each tier of machine you have above the tier of recipe. This chance is also listed in the tooltip."
+				"When reading Macerator recipes in &bEMI&r, you can tell which outputs are byproducts by seeing if &ethe tooltip tells you it has a chance to appear&r: guaranteed outputs do not list a chance. &2The chance increases by a certain amount for each tier of machine you have above the tier of recipe. This chance is also listed in the tooltip."
 				""
 				"Macerators can now also recycle your old Machines for some extra materials.&r"
 				""
@@ -464,7 +464,7 @@
 				""
 				"The sugar cane it produces can be used as a fuel for your dynamos, and later you can even brew it for &9Biomass&r."
 				""
-				"This quest calls for a &aRedstone Timer&r, but there are other ways to make snad grow sugar cane even faster (like a vanilla observer clock pointing into the Snad). Make sure to set the timer to pulse as fast as possible."
+				"This quest calls for a &aRedstone Clock&r, but there are other ways to make snad grow sugar cane even faster (like a vanilla observer clock pointing into the Snad). Make sure to set the timer to pulse as fast as possible."
 				""
 				"To collect the sugar cane, you can use a piston and an observer."
 				""
@@ -487,7 +487,7 @@
 				}
 				{
 					id: "2DCBDFF5EB0F7CD9"
-					item: "miniutilities:redstone_clock"
+					item: "redstone_clock:redstone_clock"
 					type: "item"
 				}
 				{
@@ -923,8 +923,9 @@
 					type: "item"
 				}
 			]
+			title: "&9Steam Grinder"
 			x: 4.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1031,6 +1032,7 @@
 						Throttle: 1.0d
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 8.5d
@@ -1059,6 +1061,7 @@
 						Throttle: 1.0d
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 8.5d
@@ -1112,8 +1115,9 @@
 				"The &3Energy Acceptor&r converts RF power into AE power that Applied Energistics uses, in a 2 RF to 1 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected &6ME Cables&r, &6ME Conduits&r, and &6Quartz Fiber&r. "
 				""
 				"Quartz Fiber are &emicroparts&r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
+				"Applied Energistics 2 can be complicated for a new player, so I recommend either using &9the ingame guide&r or a video as a supplement to this chapter if need be. "
 				""
-				"Applied Energistics 2 can be complicated for a new player, so I recommend either using &9the ingame guide&r or a video as a supplement to this chapter if need be. I personally recommend &9Pansmith's guide to Applied Energistics 2&r, while written for the 1.12 verison of AE2, most of the infomation is the exact same between the versions, and was made with &9Monifactory&r players in mind."
+				"[\"I personally recommend \",{\"text\": \"Pansmith's guide to Applied Energistics 2\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \", while written for the 1.12 verison of AE2, most of the infomation is the exact same between the versions, and was made with Nomifactory players in mind.\"]"
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"
@@ -1429,7 +1433,7 @@
 				""
 				"Since smelting &6Aluminium&r requires MV power, you're going to have to power this with 2 LV Energy Input Hatches."
 				""
-				"There is a diagram of how to build the EBF in &bJEI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &6sneak-right click&r the controller to enable the in-world preview."
+				"There is a diagram of how to build the EBF in &bEMI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &6sneak-right click&r the controller to enable the in-world preview."
 				""
 				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact middle of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &29&e Heatproof Machine Casings in your layout or the structure will not form&r."
 				""
@@ -1871,7 +1875,7 @@
 				""
 				"Additionally, the &aOre Dictionary Filter&r&r is a powerful tool that has a specialized filter which uses ore dictionary entries and &2uses regular expressions (regex)&r, e. g. \"&6ingotHot*&r\" will match all hot ingots, \"&6dustRegular*&r\" will match all regular dusts, and \"&6dustTiny*&r\" will match all tiny piles."
 				""
-				"All &bGregTech&r Filters can be configured using ghost items from &bJEI&r."
+				"All &bGregTech&r Filters can be configured using ghost items from &bEMI&r."
 			]
 			id: "5F6B13DBCABA5078"
 			size: 1.5d
@@ -2087,6 +2091,67 @@
 			title: "&2Bounties For monicoins!"
 			x: 10.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["3AB0402B19DD5BA8"]
+			description: ["Bigger barrels."]
+			id: "3E4DEA4FFD019AB9"
+			tasks: [{
+				id: "4355F32860B92456"
+				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+				type: "item"
+			}]
+			title: "&9Upgrades, people, upgrades."
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["545CCC24D9401794"]
+			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."]
+			icon: "steamadditions:steam_foundry"
+			id: "5D60CAE3A33000C3"
+			rewards: [{
+				id: "0543D4882AD0F771"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "31167A476BC0B4F1"
+					item: "steamadditions:steam_foundry"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "505B1290E3042129"
+					item: { Count: 13b, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "5B5968BA75F69B32"
+					item: "gtceu:bronze_firebox_casing"
+					type: "item"
+				}
+				{
+					id: "20CC19C928014F7F"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "3F8C63CA26639558"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "2855C331EB019FD9"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&9Steam Foundry"
+			x: 4.517857142857139d
+			y: 1.4285714285714306d
 		}
 	]
 	title: "The Beginning"

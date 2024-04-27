@@ -6,8 +6,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(16)
 
-    // May as well remove ender dust usage while we're at it
-    event.remove({ id: "miniutilities:ender_dust_to_ender_pearl" })
 
     const plantMaterial = ["#minecraft:leaves", "#minecraft:saplings", "minecraft:vine"]
     plantMaterial.forEach(ballIngredient => {
@@ -96,4 +94,7 @@ ServerEvents.recipes(event => {
 	event.recipes.minecraft.crafting_shapeless('gtceu:lv_sodium_battery', [
 		'gtceu:lv_battery_hull', '2x #forge:dusts/sodium'
 	]).id('moni:lv_sodium_battery')
+
+    //Battery Alloy Dust
+	event.shapeless("4x gtceu:battery_alloy_dust", ["4x gtceu:lead_dust", "gtceu:antimony_dust"])
 })
