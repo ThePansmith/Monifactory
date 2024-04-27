@@ -235,7 +235,7 @@ ServerEvents.recipes(event => {
             F: 'gtceu:dense_zeron_100_plate',
             G: 'gtceu:dense_manyullyn_plate',
             H: 'gtceu:dense_enriched_sunnarium_plate',
-            I: 'kubejs:endest_star',
+            I: 'kubejs:ender_star',
             J: 'gtceu:gravi_star',
             K: 'armorplus:wither_bone'
 		}
