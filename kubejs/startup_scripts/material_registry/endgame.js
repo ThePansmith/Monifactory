@@ -29,6 +29,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Adding a bunch of parts to existing elements for Endgame purpose
     
     GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.IndiumTinBariumTitaniumCuprate.addFlags(GTMaterialFlags.GENERATE_DENSE)
+    GTMaterials.Zeron100.addFlags(GTMaterialFlags.GENERATE_DENSE)
+    GTMaterials.get('gcyr:bisalloy_400').addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
 })

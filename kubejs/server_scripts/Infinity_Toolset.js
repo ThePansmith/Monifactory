@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
         }
-    )
+    );
 
     // Ultimate Hammer
     event.recipes.extendedcrafting.shaped_table(
@@ -229,17 +229,235 @@ ServerEvents.recipes(event => {
 		], {
 			A: 'armorplus:the_ultimate_material',
             B: 'enderio:reinforced_obsidian_block',
-            C: 'gtceu:dense_indium_tin_barium_titanium_cuprate_plate',
-            D: 'gtceu:dense_blue_alloy_plate',
+            C: 'gtceu:dense_blue_alloy_plate',
+            D: 'gcyr:dense_bisalloy_400_plate',
             E: 'gtceu:dense_dark_soularium_plate',
-            F: 'gtceu:dense_draconium_awakened_plate',
+            F: 'gtceu:dense_zeron_100_plate',
             G: 'gtceu:dense_manyullyn_plate',
             H: 'gtceu:dense_enriched_sunnarium_plate',
             I: 'kubejs:endest_star',
             J: 'gtceu:gravi_star',
-            k: 'armorplus:wither_bone'
+            K: 'armorplus:wither_bone'
 		}
-	);
+	)
+
+	// Ultimate File Head
+    event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_file_head', [
+			'  B   ',
+			' BEB  ',
+			'BFGHB ',
+			' BIDJB',
+			'  BKLA',
+			'   BAC',
+
+		], {
+			A: 'armorplus:the_ultimate_material',
+            B: 'enderio:reinforced_obsidian_block',
+            C: 'gtceu:gravi_star',
+			D: 'gtceu:neutronium_file',
+            E: 'gtceu:titanium_file',
+            F: 'gtceu:duranium_file',
+            G: 'gtceu:diamond_file',
+            H: 'gtceu:stainless_steel_file',
+            I: 'gtceu:ultimet_file',
+            J: 'gtceu:tungsten_carbide_file',
+            K: 'gtceu:tungsten_steel_file',
+            L: 'gtceu:cobalt_brass_file'
+		}, 3
+	)
+
+	// Ultimate File Handle
+	event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_file_handle', [
+			'  A  ',
+			'  B  ',
+			'ACDA ',
+			'  AEA',
+			'   AF',
+		], {
+			A: 'enderio:reinforced_obsidian_block',
+			B: 'gtceu:vanadium_steel_file',
+			C: 'gtceu:naquadah_alloy_file',
+			D: 'gtceu:red_steel_file',
+			E: 'gtceu:blue_steel_file',
+			F: 'gtceu:hsse_file'
+		}, 3
+	)
+
+	// Ultimate Hammer Head
+    event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_hammer_head', [
+			'  B    ',
+			' AEB   ',
+			'BFGBB  ',
+			' BHDBB ',
+			'  CIJKB',
+			'   BLA ',
+            '    B  ',
+
+		], {
+			A: 'armorplus:the_ultimate_material',
+            B: 'enderio:reinforced_obsidian_block',
+            C: 'gtceu:gravi_star',
+			D: 'gtceu:neutronium_hammer',
+            E: 'gtceu:titanium_hammer',
+            F: 'gtceu:duranium_hammer',
+            G: 'gtceu:diamond_hammer',
+            H: 'gtceu:stainless_steel_hammer',
+            I: 'gtceu:ultimet_hammer',
+            J: 'gtceu:tungsten_carbide_hammer',
+            K: 'gtceu:tungsten_steel_hammer',
+            L: 'gtceu:cobalt_brass_hammer'
+		}, 3
+	)
+
+	// Ultimate Hammer Handle
+	event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_hammer_handle', [
+			'   B ',
+			'  ACD',
+			' AEA ',
+			'AFA  ',
+			'AA   ',
+		], {
+			A: 'enderio:reinforced_obsidian_block',
+			B: 'gtceu:vanadium_steel_hammer',
+			C: 'gtceu:naquadah_alloy_hammer',
+			D: 'gtceu:red_steel_hammer',
+			E: 'gtceu:blue_steel_hammer',
+			F: 'gtceu:hsse_hammer'
+		}, 3
+	)
+
+	// Ultimate Screwdriver Head
+    event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_screwdriver_head', [
+			'     BE',
+			'    BFB',
+			'   BDB ',
+			'  BGB  ',
+	        'AHIB   ',
+			'JCK    ',
+            ' LA    ',
+
+		], {
+			A: 'armorplus:the_ultimate_material',
+            B: 'enderio:reinforced_obsidian_block',
+            C: 'gtceu:gravi_star',
+			D: 'gtceu:neutronium_screwdriver',
+            E: 'gtceu:titanium_screwdriver',
+            F: 'gtceu:duranium_screwdriver',
+            G: 'gtceu:diamond_screwdriver',
+            H: 'gtceu:stainless_steel_screwdriver',
+            I: 'gtceu:ultimet_screwdriver',
+            J: 'gtceu:tungsten_carbide_screwdriver',
+            K: 'gtceu:tungsten_steel_screwdriver',
+            L: 'gtceu:cobalt_brass_screwdriver'
+		}, 3
+	)
+
+	// Ultimate Screwdriver Handle
+	event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_screwdriver_handle', [
+			' B  ',
+			' CA ',
+			'ADEF',
+			'AA  ',
+		], {
+			A: 'enderio:reinforced_obsidian_block',
+			B: 'gtceu:vanadium_steel_screwdriver',
+			C: 'gtceu:naquadah_alloy_screwdriver',
+			D: 'gtceu:red_steel_screwdriver',
+			E: 'gtceu:blue_steel_screwdriver',
+			F: 'gtceu:hsse_screwdriver'
+		}, 3
+	)
+
+	// Ultimate Wrench Head
+    event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_wrench_head', [
+			' A  A ',
+			'BE  FB',
+			'BG  HB',
+			'BICBJB',
+			' KDLB ',
+			'  BB  ',
+
+		], {
+			A: 'armorplus:the_ultimate_material',
+            B: 'enderio:reinforced_obsidian_block',
+            C: 'gtceu:gravi_star',
+			D: 'gtceu:neutronium_wrench',
+            E: 'gtceu:titanium_wrench',
+            F: 'gtceu:duranium_wrench',
+            G: 'gtceu:diamond_wrench',
+            H: 'gtceu:stainless_steel_wrench',
+            I: 'gtceu:ultimet_wrench',
+            J: 'gtceu:tungsten_carbide_wrench',
+            K: 'gtceu:tungsten_steel_wrench',
+            L: 'gtceu:cobalt_brass_wrench'
+		}, 3
+	)
+
+	// Ultimate Wrench Handle
+	event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_wrench_handle', [
+			'   B ',
+			'  ACD',
+			' AEA ',
+			'AFA  ',
+			'AA   ',
+		], {
+			A: 'enderio:reinforced_obsidian_block',
+			B: 'gtceu:vanadium_steel_wrench',
+			C: 'gtceu:naquadah_alloy_wrench',
+			D: 'gtceu:red_steel_wrench',
+			E: 'gtceu:blue_steel_wrench',
+			F: 'gtceu:hsse_wrench'
+		}, 3
+	)
+
+	// Ultimate Wire Cutter Head
+    event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_wire_cutter_head', [
+			' BB BB ',
+			'BEB BFB',
+			'BGB BHB',
+			'BIB BJB',
+	        'BKBDBLB',
+			' BACAB ',
+		], {
+			A: 'armorplus:the_ultimate_material',
+            B: 'enderio:reinforced_obsidian_block',
+            C: 'gtceu:gravi_star',
+			D: 'gtceu:neutronium_wire_cutter',
+            E: 'gtceu:titanium_wire_cutter',
+            F: 'gtceu:duranium_wire_cutter',
+            G: 'gtceu:diamond_wire_cutter',
+            H: 'gtceu:stainless_steel_wire_cutter',
+            I: 'gtceu:ultimet_wire_cutter',
+            J: 'gtceu:tungsten_carbide_wire_cutter',
+            K: 'gtceu:tungsten_steel_wire_cutter',
+            L: 'gtceu:cobalt_brass_wire_cutter'
+		}, 3
+	)
+
+	// Ultimate Wire Cutter Handle
+	event.recipes.extendedcrafting.shaped_table(
+		'kubejs:ultimate_wire_cutter_handle', [
+			' ABCDA ',
+			'AEA AFA',
+			'AA   AA',
+		], {
+			A: 'enderio:reinforced_obsidian_block',
+			B: 'gtceu:vanadium_steel_wire_cutter',
+			C: 'gtceu:naquadah_alloy_wire_cutter',
+			D: 'gtceu:red_steel_wire_cutter',
+			E: 'gtceu:blue_steel_wire_cutter',
+			F: 'gtceu:hsse_wire_cutter'
+		}, 3
+	)
 
     // Infinity Power Unit and Omni Motor
     event.recipes.gtceu.assembly_line('infinity_power_unit')
@@ -282,7 +500,9 @@ ServerEvents.recipes(event => {
         ], {
             P: "gtceu:dense_obsidian_plate",
             B: "enderio:dark_steel_bars",
-            I: "gtceu:tungsten_steel_ingot"
+            I: "gtceu:titanium_carbide_plate"
         }
     )
+
+	event.shapeless('armorplus:lava_crystal', ['kubejs:infinity_file', 'kubejs:infinity_hammer', 'kubejs:infinity_screwdriver', 'kubejs:infinity_wrench', 'kubejs:infinity_wire_cutter'])
 })
