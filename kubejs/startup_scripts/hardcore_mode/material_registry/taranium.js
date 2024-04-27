@@ -8,6 +8,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         return;
     }
 
+    event.create('hydrogen_peroxide')
+        .liquid()
+        .color(0xd2ffff)
+        .components('8x carbon', '4x hydrogen', '3x oxygen')
+
     event.create('hexafluorosilicic_acid')
         .fluid()
         .color(0xd00010)
