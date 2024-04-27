@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
     // Mote of omnium
     event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
         .itemInputs('kubejs:mote_of_omnium', 'minecraft:tnt')
-        .itemOutputs('extendedcrafting:the_ultimate_nugget')
+        .itemOutputs('gtceu:omnium_nugget')
         .duration(20)
         .EUt(30)
 
@@ -127,14 +127,6 @@ ServerEvents.recipes(event => {
             S: 'minecraft:nether_star'
         }
     )
-
-	// Handled by gregtech, left here incase of emergency
-    // event.recipes.gtceu.bender("crystal_matrix_plate")
-    //     .itemInputs('gtceu:crystal_matrix_ingot')
-    //     .itemOutputs('kubejs:crystal_matrix_plate')
-    //     .duration(98)
-    //     .EUt(24)
-    //     .circuit(1)
 
     // Ultimate Gem
 	event.recipes.extendedcrafting.shapeless_table(
@@ -191,7 +183,7 @@ ServerEvents.recipes(event => {
             "gtceu:hv_steam_turbine" ,
             "gtceu:steel_large_boiler" ,
             "solarflux:sp_de.chaotic",
-            "kubejs:sp_endgame.neutronium",
+            "solarflux:sp_custom_neutronium",
             // Row 3
             "thermal:upgrade_augment_3",
             "nuclearcraft:enderium_heat_sink",
@@ -251,7 +243,7 @@ ServerEvents.recipes(event => {
             "gtceu:hv_gas_turbine",
             "gtceu:tungstensteel_large_boiler",
             "solarflux:sp_de.chaotic",
-            "kubejs:sp_endgame.neutronium",
+            "solarflux:sp_custom_neutronium",
             // Row 9
             "solarflux:sp_1",
             "solarflux:sp_2",
@@ -325,8 +317,8 @@ ServerEvents.recipes(event => {
             'ABCDEDCBA'
         ], {
             A: 'functionalstorage:netherite_upgrade',
-            B: 'sophisticatedstorage:basic_to_gold_tier_upgrade',
-            C: 'sophisticatedstorage:basic_to_diamond_tier_upgrade',
+            B: 'sophisticatedstorage:gold_to_diamond_tier_upgrade',
+            C: 'sophisticatedstorage:diamond_to_netherite_tier_upgrade',
             D: 'gtceu:tungsten_steel_crate',
             E: 'gtceu:luv_quantum_chest',
             F: 'gtceu:zpm_quantum_chest',
@@ -390,7 +382,7 @@ ServerEvents.recipes(event => {
 
     //Creative Solar Panel
     event.recipes.extendedcrafting.shaped_table(
-        'kubejs:sp_endgame.infinity', [
+        'solarflux:sp_custom_infinity', [
             'SNNNNNNNS',
             'NPPPNPPPN',
             'NPPPNPPPN',
@@ -404,7 +396,7 @@ ServerEvents.recipes(event => {
             I: 'kubejs:infinity_catalyst',
             N: 'gtceu:neutronium_plate',
             P: 'gtceu:infinity_plate',
-            S: 'kubejs:sp_endgame.neutronium'
+            S: 'solarflux:sp_custom_neutronium'
 
         }
     )
@@ -434,6 +426,55 @@ ServerEvents.recipes(event => {
         }
     )
 
+    // Creative Data Hatch
+    event.recipes.extendedcrafting.shaped_table(
+        'gtceu:creative_data_access_hatch', [
+            "UPPCGCPPU",
+            'PPCGSGCPP',
+            'PCGSRSGCP',
+            'CGSRORSGC',
+            'GSROIORSG',
+            'CGSRORSGC',
+            'PCGSRSGCP',
+            'PPCGSGCPP',
+            "UPPCGCPPU",
+        ], {
+            U: 'gtceu:network_switch',
+            P: 'gtceu:data_bank',
+            C: 'gtceu:advanced_data_access_hatch',
+            G: 'gtceu:data_access_hatch',
+            S: 'gtceu:data_stick',
+            R: 'gtceu:data_orb',
+            O: 'gtceu:data_module',
+            I: 'kubejs:infinity_catalyst'
+        }, 4
+    )
+
+    // Creative Fluid Cell
+    event.recipes.extendedcrafting.shaped_table(
+        'ae2:creative_fluid_cell', [
+            "UPPCGCPPU",
+            'PPCGSGCPP',
+            'PCGSRSGCP',
+            'CGSRORSGC',
+            'GSROIORSG',
+            'CGSRORSGC',
+            'PCGSRSGCP',
+            'PPCGSGCPP',
+            "UPPCGCPPU",
+        ], {
+            U: 'ae2:fluid_cell_housing',
+            P: 'ae2:cell_component_256k',
+            C: 'ae2:cell_component_64k',
+            G: 'ae2:cell_component_16k',
+            S: 'ae2:cell_component_4k',
+            R: 'ae2:cell_component_1k',
+            O: 'gtceu:creative_tank',
+            I: 'kubejs:infinity_catalyst'
+        }, 4
+    )
+
+
     //CREATIVE RF SOURCE
     event.recipes.extendedcrafting.shaped_table(
         'draconicevolution:creative_op_capacitor', [
@@ -458,9 +499,57 @@ ServerEvents.recipes(event => {
         }, 4
     )
 
+    // Creative Capacitor
+    event.recipes.extendedcrafting.shaped_table(
+        'draconicevolution:creative_capacitor', [
+            "UPPCGCPPU",
+            'PPCGSGCPP',
+            'PCGSRSGCP',
+            'CGSRORSGC',
+            'GSROIORSG',
+            'CGSRORSGC',
+            'PCGSRSGCP',
+            'PPCGSGCPP',
+            "UPPCGCPPU",
+        ], {
+            U: 'kubejs:double_compressed_octadic_capacitor',
+            P: 'kubejs:compressed_octadic_capacitor',
+            C: 'enderio:octadic_capacitor',
+            G: 'thermal:flux_capacitor',
+            S: 'draconicevolution:wyvern_capacitor',
+            R: 'draconicevolution:draconic_capacitor',
+            O: 'kubejs:ultimate_power_storage',
+            I: 'kubejs:infinity_catalyst'
+        }, 4
+    )
+
+    // Creative Efficiency Upgrade
+    event.recipes.extendedcrafting.shaped_table(
+        'thermal:machine_efficiency_creative_augment', [
+            "UPPCGCPPU",
+            'PPCGSGCPP',
+            'PCGSRSGCP',
+            'CGSRORSGC',
+            'GSROIORSG',
+            'CGSRORSGC',
+            'PCGSRSGCP',
+            'PPCGSGCPP',
+            "UPPCGCPPU",
+        ], {
+            U: 'kubejs:ultimate_power_storage',
+            P: 'thermal:upgrade_augment_3',
+            C: 'thermal:upgrade_augment_4',
+            G: 'thermal:upgrade_augment_2',
+            S: 'thermal:machine_speed_augment',
+            R: 'thermal:machine_speed_augment',
+            O: 'thermal:machine_efficiency_augment',
+            I: 'kubejs:infinity_catalyst'
+        }, 4
+    )
+
     // Creative Chest
     event.recipes.extendedcrafting.shaped_table(
-        'gtceu:creative_chest', [
+        '2x gtceu:creative_chest', [
             'ABBBBBBBA',
             'BCTEDETCB',
             'BFSGHGSFB',
@@ -473,161 +562,146 @@ ServerEvents.recipes(event => {
         ], {
             A: "kubejs:creative_storage_component",
             B: "gtceu:infinity_ingot",
-            C: "enderio:creative_power",
-            D: "minecraft:bedrock",
-            E: "minecraft:bedrock",
-            F: "minecraft:bedrock",
-            G: "minecraft:bedrock",
-            H: "kubejs:infinity_helmet",
-            I: "kubejs:infinity_chestplate",
+            C: "draconicevolution:creative_op_capacitor",
+            D: "thermal:machine_efficiency_creative_augment",
+            E: "thermal:machine_catalyst_creative_augment",
+            F: "ae2:creative_fluid_cell",
+            G: "gtceu:creative_data_access_hatch", 
+            H: "kubejs:infinity_file",
+            I: "kubejs:infinity_hammer",
             J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').weakNBT(),
-            K: "kubejs:infinity_sword",
-            L: "kubejs:infinity_leggings",
-            M: "kubejs:infinity_boots",
-            N: "minecraft:bedrock",
-            S: "kubejs:sp_endgame.infinity",
+            K: "kubejs:infinity_screwdriver",
+            L: "kubejs:infinity_wrench",
+            M: "kubejs:infinity_wire_cutter",
+            N: "gtceu:creative_energy",
+            S: "solarflux:sp_custom_infinity",
             T: "gtceu:creative_tank",
             U: "ae2:creative_energy_cell",
-            W: "minecraft:bedrock",
-            X: "minecraft:bedrock"
+            W: "gtceu:creative_energy",
+            X: "draconicevolution:creative_capacitor"
+        }, 4
+    )
+
+    // Creative Catalyst augment
+    event.recipes.extendedcrafting.shaped_table(
+        'thermal:machine_catalyst_creative_augment', [
+            'TTTTTTTTT',
+            'TNNIIINNT',
+            'TNINNNINT',
+            'TNINCIIIT',
+            'TNICRCINT',
+            'TIIICNINT',
+            'TNINNNINT',
+            'TNNIIINNT',
+            'TTTTTTTTT'
+        ], {
+            I: 'gtceu:infinity_plate',
+            R: 'kubejs:infinity_catalyst',
+            N: 'gtceu:neutronium_plate',
+            T: 'gtceu:titanium_plate',
+            C: 'thermal:machine_catalyst_augment'
         }, 4
     )
 
 	//! kubejs endgame items
-	// skullfire sword
+	// Infinity Hammer
 	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:skullfire_sword', [
-			'       B ',
-			'      BIB',
-			'     BHB ',
-			'    BGB  ',
-			' D BFB   ',
-			'  DEB    ',
-			'  CD     ',
-			' C  D    ',
-			'A        ',
+		'kubejs:infinity_hammer', [
+			'    A    ',
+			'   ACA   ',
+			'  ACACA  ',
+			'   ACBCA ',
+			'   EDCACA',
+			'  EEEACA ',
+			' EEE  A  ',
+			'EEE      ',
+			'EE       ',
 		], {
-			A: 'nether_star',
-			B: 'gtceu:crystal_matrix_ingot',
-			C: '#minecraft:logs',
-			D: 'armorplus:wither_bone',
-			E: 'armorplus:redstone_sword',
-			F: 'armorplus:lapis_sword',
-			G: 'armorplus:emerald_sword',
-			H: 'armorplus:guardian_sword',
-			I: 'armorplus:infused_lava_sword',
-			// J: 'nano_saber' // missing
+			A: 'gtceu:neutronium_ingot',
+			B: 'gtceu:infinity_block',
+			C: 'barrier', //The Ultimate Hammer
+			D: 'kubejs:infinity_power_unit',
+			E: 'gtceu:omnium_ingot'
 		}
 	);
-	// sword of the cosmos
-	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:infinity_sword', [
-			'       BB',
-			'      BIB',
-			'     B B ',
-			'    B B  ',
-			' D BFB   ',
-			'  DEB    ',
-			'  CD     ',
-			' C  D    ',
-			'A        ',
+    // Infinity File
+    event.recipes.extendedcrafting.shaped_table(
+		'kubejs:infinity_file', [
+			'  A      ',
+			' BCA     ',
+			'ACBCA    ',
+			' ACBCA   ',
+			'  ACBCE  ',
+			'   ACDE  ',
+			'    EEEE ',
+			'      EEE',
+			'       EE',
 		], {
-			A: 'kubejs:infinity_catalyst',
-			B: 'gtceu:infinity_ingot',
-			C: 'kubejs:neutronium_ingot',
-			D: 'gtceu:crystal_matrix_ingot',
-			E: 'armorplus:super_star_sword',
-			F: 'armorplus:ender_dragon_sword',
-			// G: 'draconicevolution:wyvern_sword', 	// not yet finished
-			// H: 'draconicevolution:draconic_sword', 	// same as this
-			I: 'kubejs:skullfire_sword'
+			A: 'gtceu:neutronium_plate',
+			B: 'gtceu:infinity_plate',
+			C: 'barrier', //The Ultimate File
+			D: 'kubejs:infinity_power_unit',
+			E: 'gtceu:omnium_ingot'
 		}
 	);
-	// infinity helmet
+    // Infinity Screwdriver
+
 	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:infinity_helmet', [
-			'  AAAAA  ',
-			' ABBDBBA ',
-			' ACCECCA ',
-			' ABBFBBA ',
-			' ABBEBBA ',
-			'   B B   ',
-			'         ',
-			'         ',
-			'         ',
+		'kubejs:infinity_screwdriver', [
+			'       BC',
+			'      BCB',
+			'     ACB ',
+			'    ACA  ',
+			'  AACA   ',
+			' ECDA    ',
+			' ECCA    ',
+			'EEEE     ',
+			'EE       ',
 		], {
-			// TODO readd the items once they exist
-			A: 'kubejs:neutronium_ingot',
-			B: 'barrier', // the ultimate helmet
-			C: 'gtceu:infinity_ingot',
-			D: 'barrier', // draconic helm
-			E: 'barrier', // quarktech helmet
-			F: 'barrier' // wyvern helmet
-		}, 4 // explicitly make this t4 only, as this can fit into a t3 table
-	);
-	// infinity chestplate
-	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:infinity_chestplate', [
-			' AA   AA ',
-			'AAA   AAA',
-			'AAAA AAAA',
-			' AEBGBFA ',
-			' ABBCBBA ',
-			' ABCDCBA ',
-			' ABBCBBA ',
-			' ABBBBBA ',
-			'  AAAAA  ',
-		], {
-			A: 'kubejs:neutronium_ingot',
-			B: 'barrier', // the ultimate chestplate
-			C: 'gtceu:infinity_ingot',
-			D: 'gtceu:infinity_block',
-			E: 'barrier', // draconic chestplate
-			F: 'barrier', // wyvern chestplate
-			G: 'barrier', // quarktech chestplate
+			A: 'gtceu:neutronium_rod',
+			B: 'gtceu:infinity_rod',
+			C: 'barrier', //The Ultimate Screwdriver
+			D: 'kubejs:infinity_power_unit',
+			E: 'gtceu:omnium_ingot'
 		}
 	);
-	// infinity leggings
+	// infinity Wrench
 	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:infinity_leggings', [
-			'AAAAAAAAA',
-			'AEBBBBBFA',
-			'ABA   ABA',
-			'ABA   ABA',
-			'ADA   ADA',
-			'ACA   ACA',
-			'ABA   ABA',
-			'ABA   ABA',
-			'AAA   AAA',
+		'kubejs:infinity_wrench', [
+			'    A  A ',
+			'   AB  BA',
+			'   AB  BA',
+			'   ABDBCA',
+			'   ACCCA ',
+			'  ACAAA  ',
+			' ACA     ',
+			'ACA      ',
+			'AA       ',
         ], {
-			// TODO readd the items once they exist
-			A: 'kubejs:neutronium_ingot',
-			B: 'barrier', // the ultimate leggings
-			C: 'gtceu:infinity_ingot',
-			D: 'barrier', // quarktech leggings
-			E: 'barrier', // draconic leggings
-			F: 'barrier', // wyvern leggings
+			A: 'gtceu:neutronium_plate',
+			B: 'gtceu:infinity_plate',
+			C: 'barrier', //The Ultimate Wrench
+			D: 'kubejs:infinity_power_unit'
 		}
     );
-	// infinity boots
+	// infinity Wire Cutter
 	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:infinity_boots', [
-			' AAA AAA ',
-			' ADA ADA ',
-			' AEA AFA ',
-			'AABA ABAA',
-			'ABBA ABBA',
-			'AAAC CAAA',
-			'         ',
-			'         ',
-			'         ',
+		'kubejs:infinity_wire_cutter', [
+			'  AA AA  ',
+			' ACA ACA ',
+			' ACB BCA ',
+			' ACB BCA ',
+			' ACA ACA ',
+			'  AAEAA  ',
+			'  EEDEE  ',
+			' EEE EEE ',
+			' EE   EE ',
 		], {
-			A: 'kubejs:neutronium_ingot',
-			B: 'barrier', // the ultimate boots
-			C: 'gtceu:infinity_ingot',
-			D: 'barrier', //quarktech boots
-			E: 'barrier', // draconic boots
-			F: 'barrier', // wyvern boots
-		}, 4
+			A: 'gtceu:neutronium_plate',
+			B: 'gtceu:infinity_plate',
+			C: 'barrier', //The Ultimate Wire Cutter
+			D: 'kubejs:infinity_power_unit',
+			E: 'gtceu:omnium_ingot'
+		}
 	);
 })

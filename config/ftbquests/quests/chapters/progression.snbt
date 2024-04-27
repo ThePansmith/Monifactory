@@ -1743,7 +1743,7 @@
 			subtitle: "I'm running out of MCU puns."
 			tasks: [{
 				id: "1E1C020C525B7F47"
-				item: "miniutilities:angel_ring"
+				item: "better_angel_ring:angel_ring"
 				type: "item"
 			}]
 			title: "&9Captain... Marvel? IDK"

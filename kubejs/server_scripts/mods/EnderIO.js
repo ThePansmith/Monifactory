@@ -496,7 +496,7 @@ ServerEvents.recipes(event => {
 			'GFG',
 			'SSS'
 	], {
-			C: 'kubejs:compressed_crafting_table',
+			C: 'minecraft:crafting_table',
 			F: 'gtceu:lv_machine_hull',
 			G: 'enderio:iron_gear',
 			R: 'kubejs:resonating_crystal',
@@ -648,4 +648,16 @@ ServerEvents.recipes(event => {
 
     //Clear tank
     event.shapeless('enderio:fluid_tank', ['enderio:fluid_tank'])
+
+    //Cheaper me conduit recipes from nomi
+    event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
+        .itemInputs("4x enderio:me_conduit", "5x enderio:conduit_binder")
+        .itemOutputs("2x enderio:dense_me_conduit")
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.assembler("kubejs:me_conduit")
+        .itemInputs("3x ae2:fluix_covered_cable", "6x enderio:conduit_binder")
+        .itemOutputs("8x enderio:me_conduit")
+        .duration(100)
+        .EUt(16)
 })

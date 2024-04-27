@@ -55,7 +55,7 @@ config/emi.css
 defaultconfigs/ftbultimine/ftbultimine-client.snbt
 defaultconfigs/ftbultimine/ftbultimine-server.snbt
 
-options.txt
+./options.txt
 
 # dotenv
 .env
@@ -91,3 +91,4 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
+kubejs/assets/gtceu/textures/item/material_sets/infinity/infinity_plate.xcf

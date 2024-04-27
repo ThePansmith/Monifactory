@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer("kubejs:mana_infused_dust")
         .itemInputs('kubejs:primal_mana', '#forge:dusts/titanium')
-        .itemOutputs('gtceu:mana_infused_metal_dust')
+        .itemOutputs('2x gtceu:mythril_dust')
         .duration(200)
         .EUt(30)
 
@@ -168,9 +168,9 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.electric_blast_furnace("kubejs:mana_infused_metal")
-        .itemInputs('gtceu:mana_infused_metal_dust')
-        .itemOutputs('gtceu:mana_infused_metal_ingot')
+    event.recipes.gtceu.electric_blast_furnace("kubejs:mythril")
+        .itemInputs('gtceu:mythril_dust')
+        .itemOutputs('gtceu:mythril_ingot')
         .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
         .duration(400)
         .EUt(400)

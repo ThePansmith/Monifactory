@@ -11,26 +11,32 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({ output: 'waystones:warp_plate' }, 'minecraft:gravel', 'waystones:warp_stone')
 
-    event.remove({ output: "thermal:device_water_gen" })
-    event.shaped(
-        "thermal:device_water_gen", [
-            'BBB',
-            'BCB',
-            'BBB'
-        ], {
-            B: "enderio:fused_quartz",
-            C: "watercondenser:watercondenser"
-        }
-    )
-
     // Temp until classic boiler has these built in
     event.remove({ output: 'systeams:stirling_boiler' })
     event.shapeless('systeams:stirling_boiler', ['steamdynamo:steam_dynamo', 'systeams:boiler_pipe'])
 
-    //temp rubber wood
-    event.replaceInput( { input: 'minecraft:oak_planks' }, 'minecraft:oak_planks', '#moni:oak_rubber_plank_temp' )
-    
-    
+	// Temp rubber wood recipes
+    event.shaped(
+        "3x minecraft:oak_sign", [
+            'PPP',
+            'PPP',
+            ' C '
+        ], {
+            P: "gtceu:rubber_planks",
+            C: "minecraft:stick"
+        }
+    )
+
+    event.shaped(
+        "6x minecraft:oak_slab", [
+            '   ',
+            'PPP',
+            '   '
+        ], {
+            P: "gtceu:rubber_planks"
+        }
+    )
+
     event.remove({ id: /storagedrawer/ })
 
 })
