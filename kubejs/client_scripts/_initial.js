@@ -46,6 +46,15 @@ const rainbowify = (text, offset) => {
 	return Text.join(components);
 }
 
+/**
+ * @param {string} text
+ * @param {number} offset
+ * @returns {Internal.MutableComponent}
+ */
+const rainbowifySingle = (text, offset) => {
+	return ____rainbowify_idx_to_color(text, (offset % 7));
+}
+
 // Tier enums for easier data handling
 const TIER_ULV = 0; // ulv
 const TIER_LV = 1;

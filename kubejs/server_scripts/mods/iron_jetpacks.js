@@ -6,47 +6,47 @@ ServerEvents.recipes(event => {
     // Thermal
 
     // Generate thermal thruster recipes
-    var thermalType = [
+    const thermalThrusters = [
         ['leadstone', 'lead', 'lead', 'steamdynamo:steam_dynamo'],
         ['hardened', 'invar', 'invar', 'thermal:dynamo_magmatic'],
         ['reinforced', 'aluminium', 'electrum', 'thermal:dynamo_compression'],
         ['resonant', 'enderium', 'enderium', 'thermal:dynamo_numismatic']
     ]
 
-    thermalType.forEach(material => {
-        event.shaped(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:' + material[0] + '"}'), [
+    thermalThrusters.forEach(([newTier, plate1, plate2, dynamo]) => {
+        event.shaped(Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${newTier}"}`), [
             'PCP',
             'MDM',
             'BBB'
         ], {
-            P: '#forge:plates/' + material[1],
-            M: '#forge:plates/' + material[2],
+            P: `#forge:plates/${plate1}`,
+            M: `#forge:plates/${plate2}`,
             C: 'thermal:rf_coil',
-            D: material[3],
-            B: 'gtceu:red_alloy_plate'
-        })
+            D: dynamo,
+            B: '#forge:plates/red_alloy'
+        }).id(`kubejs:ironjetpacks/thrusters/${newTier}`);
     })
 
     // Generate EnderIO thruster recipes
-    var EIOType = [
+    const eioThrusters = [
         ['conductive_iron', 'conductive_alloy', 'conductive', 'kubejs:resonating_crystal', 'gtceu:red_alloy_plate'],
         ['electrical_steel', 'electrical_steel', 'conductive', 'enderio:pulsating_crystal', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:conductive_iron"}').weakNBT()],
         ['energetic', 'energetic_alloy', 'energetic', 'enderio:vibrant_crystal', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').weakNBT()],
         ['vibrant', 'vibrant_alloy', 'vibrant', 'enderio:prescient_crystal', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').weakNBT()]
     ]
 
-    EIOType.forEach(material => {
-        event.shaped(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:' + material[0] + '"}'), [
+    eioThrusters.forEach(([newTier, plate, conduit, crystal, lastTier]) => {
+        event.shaped(Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${newTier}"}`), [
             'PCP',
             'PRP',
             'BTB'
         ], {
-            P: '#forge:plates/' + material[1],
-            C: 'enderio:' + material[2] + '_conduit',
-            R: material[3],
-            T: material[4],
+            P: `#forge:plates/${plate}`,
+            C: `enderio:${conduit}_conduit`,
+            R: crystal,
+            T: lastTier,
             B: 'gtceu:red_alloy_plate'
-        })
+        }).id(`kubejs:ironjetpacks/thrusters/${newTier}`);
     })
 
     // Special thrusters
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         C: 'enderio:draconium_conduit',
         F: 'kubejs:flight_control_unit',
         T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').weakNBT()
-    })
+    }).id('kubejs:ironjetpacks/thrusters/dark_soularium');
 
     // Fluxed
     event.shaped(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}'), [
@@ -73,40 +73,53 @@ ServerEvents.recipes(event => {
         G: 'kubejs:glowstone_elevation_unit',
         S: 'gtceu:signalum_plate',
         T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:resonant"}').weakNBT()
-    })
+    }).id('kubejs:ironjetpacks/thrusters/fluxed');
 
     //
     // Jetpacks
     //
 
-		//Copies old jetpack nbt to the new jetpack
-		const jetpackUpgradeModifyResult = function(grid, result) {
-			let item = grid.find('ironjetpacks:jetpack')
-			let nbt = {};
-			if (item.nbt) {
-				if (item.nbt.Energy) {
-					nbt.Energy = item.nbt.Energy
-				}
-				if (item.nbt.Engine) {
-					nbt.Engine = item.nbt.Engine
-				}
-				if (item.nbt.Hover) {
-					nbt.Hover = item.nbt.Hover
-				}
-				if (item.nbt.Throttle) {
-					nbt.Throttle = item.nbt.Throttle
-				}
-			}
-			return result.withNBT(nbt);
+    /**
+     * Copies old jetpack nbt to the new jetpack
+     * @param {Internal.ModifyRecipeCraftingGrid} grid
+     * @param {Internal.ItemStack} result
+     * @returns {Internal.ItemStack}
+     */
+	const copyOldJetpackData = (grid, result) => {
+		let item = grid.find('ironjetpacks:jetpack')
+		if (!item.nbt) {
+            return result;
 		}
 
-		const jetpackBase = [
-			['leadstone', 'ironjetpacks:strap', 'lead', Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:leadstone"}').weakNBT()],
-      ['conductive_iron', 'ironjetpacks:strap', 'conductive_alloy', 'enderio:basic_capacitor']
-		]
+		let nbt = {};
+		if (item.nbt.Energy) {
+			nbt.Energy = item.nbt.Energy
+		}
+		if (item.nbt.Engine) {
+			nbt.Engine = item.nbt.Engine
+		}
+		if (item.nbt.Hover) {
+			nbt.Hover = item.nbt.Hover
+		}
+		if (item.nbt.Throttle) {
+			nbt.Throttle = item.nbt.Throttle
+		}
+		return result.withNBT(nbt);
+	}
 
+    /**
+     * @type {Internal.Ingredient[][]}
+     */
+	const jetpackBase = [
+		['leadstone', 'ironjetpacks:strap', 'lead', 'thermal:flux_capacitor'],
+        ['conductive_iron', 'ironjetpacks:strap', 'conductive_alloy', 'enderio:basic_capacitor']
+	]
+
+    /**
+     * @type {Internal.Ingredient[][]}
+     */
     const jetpackUpgrade = [
-				['hardened', "leadstone", 'invar', Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:hardened"}').weakNBT()],
+		['hardened', "leadstone", 'invar', Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:hardened"}').weakNBT()],
         ['reinforced', "hardened", 'electrum', Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:reinforced"}').weakNBT()],
         ['resonant', "reinforced", 'enderium', Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:resonant"}').weakNBT()],
         ['electrical_steel', "conductive_iron", 'electrical_steel', 'enderio:double_layer_capacitor'],
@@ -114,66 +127,51 @@ ServerEvents.recipes(event => {
         ['vibrant', "energetic", 'vibrant_alloy', 'kubejs:compressed_octadic_capacitor']
     ]
 
-		jetpackBase.forEach(material => {
-			event.shaped(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:' + material[0] + '"}'), [
-					'PEP',
-					'PSP',
-					'T T'
-			], {
-					P: '#forge:plates/' + material[2],
-					E: material[3],
-					S: material[1],
-					T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:' + material[0] + '"}').weakNBT()
-			})
-		})
+	jetpackBase.forEach(([newTier, middlePart, plate, energyCapacitor]) => {
+		event.shaped(Item.of('ironjetpacks:jetpack', `{Id:"ironjetpacks:${newTier}"}`).strongNBT(), [
+			'PEP',
+			'PSP',
+			'T T'
+		], {
+			P: `#forge:plates/${plate}`,
+			E: energyCapacitor,
+			S: middlePart,
+			T: Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${newTier}"}`).weakNBT()
+		}).id(`kubejs:ironjetpacks/base/${newTier}`);
+	})
 
-    jetpackUpgrade.forEach(material => {
-        event.shaped(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:' + material[0] + '"}'), [
+    jetpackUpgrade.forEach(([newTier, previousTier, plate, energyCapacitor]) => {
+        event.shaped(Item.of('ironjetpacks:jetpack', `{Id:"ironjetpacks:${newTier}"}`).strongNBT(), [
             'PEP',
             'PSP',
             'T T'
         ], {
-            P: '#forge:plates/' + material[2],
-            E: material[3],
-            S: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:'+material[1]+'"}').weakNBT(),
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:' + material[0] + '"}').weakNBT()
-        }).modifyResult(jetpackUpgradeModifyResult)
+            P: `#forge:plates/${plate}`,
+            E: energyCapacitor,
+            S: Item.of('ironjetpacks:jetpack', `{Id:"ironjetpacks:${previousTier}"}`).weakNBT(),
+            T: Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${newTier}"}`).weakNBT()
+        }).modifyResult(copyOldJetpackData).id(`kubejs:ironjetpacks/upgrade/${newTier}`);
     })
 
-    event.recipes.gtceu.assembly_line('dark_soularium_jetpack')
+    event.recipes.gtceu.assembly_line('kubejs:ironjetpacks/upgrade/dark_soularium')
         .itemInputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT(), 'gtceu:dark_soularium_block', 'better_angel_ring:angel_ring', '2x enderio:ender_crystal', 'kubejs:double_compressed_octadic_capacitor', '4x #gtceu:circuits/luv', Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
         .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
+        .itemOutputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:dark_soularium"}').strongNBT())
         .duration(3000)
         .EUt(30720)
-				.modifyResult(jetpackUpgradeModifyResult)
+		.modifyResult(copyOldJetpackData)
 
-     event.recipes.gtceu.assembly_line('fluxed_jetpack')
+    event.recipes.gtceu.assembly_line('kubejs:ironjetpacks/upgrade/fluxed')
         .itemInputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}').weakNBT(), 'redstone_arsenal:flux_chestplate', 'kubejs:cryotheum_coolant_unit', 'better_angel_ring:angel_ring', '2x kubejs:compressed_octadic_capacitor', '4x #gtceu:circuits/luv', Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT())
         .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').weakNBT())
+        .itemOutputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').strongNBT())
         .duration(3000)
         .EUt(30720)
-				.modifyResult(jetpackUpgradeModifyResult)
+		.modifyResult(copyOldJetpackData)
 
     //
     // Misc
     //
-
-    event.recipes.gtceu.alloy_smelter('resonating_redstone')
-        .itemInputs('minecraft:redstone_block', 'kubejs:ender_shard')
-        .itemOutputs('kubejs:resonating_crystal')
-        .duration(180)
-        .EUt(16)
-
-    event.recipes.gtceu.alloy_smelter('resonating_restonia')
-        .itemInputs('gtceu:restonia_gem', 'kubejs:ender_shard')
-        .itemOutputs('kubejs:resonating_crystal')
-        .duration(180)
-        .EUt(16)
-
-    event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl'])
-
     event.shaped('kubejs:empty_fluxed_jetpack_unit', [
         'ABA',
         'BCB',
@@ -182,7 +180,7 @@ ServerEvents.recipes(event => {
         A: 'gtceu:electrum_flux_ingot',
         B: 'gtceu:signalum_ingot',
         C: 'enderio:fused_quartz'
-    })
+    }).id('kubejs:ironjetpacks/misc/empty_fluxed_jetpack_unit');
 
     event.shaped('kubejs:empty_soularium_jetpack_unit', [
         'ABA',
@@ -192,22 +190,22 @@ ServerEvents.recipes(event => {
         A: 'gtceu:dark_soularium_ingot',
         B: 'gtceu:electrical_steel_ingot',
         C: 'enderio:fused_quartz'
-    })
+    }).id('kubejs:ironjetpacks/misc/empty_soularium_jetpack_unit');
 
-    event.recipes.gtceu.alloy_smelter('flight_control_unit')
+    event.recipes.gtceu.alloy_smelter('kubejs:ironjetpacks/misc/flight_control_unit')
         .itemInputs('4x minecraft:ghast_tear', 'kubejs:empty_soularium_jetpack_unit')
         .itemOutputs('kubejs:flight_control_unit')
         .duration(100)
         .EUt(2000)
 
-    event.recipes.gtceu.canner('glowstone_elevation_unit')
+    event.recipes.gtceu.canner('kubejs:ironjetpacks/misc/glowstone_elevation_unit')
         .itemInputs('kubejs:empty_fluxed_jetpack_unit')
         .inputFluids('gtceu:glowstone 4032')
         .itemOutputs('kubejs:glowstone_elevation_unit')
         .duration(100)
         .EUt(7)
 
-    event.recipes.gtceu.canner('cyrotheum_coolant_unit')
+    event.recipes.gtceu.canner('kubejs:ironjetpacks/misc/cyrotheum_coolant_unit')
         .itemInputs('kubejs:empty_fluxed_jetpack_unit')
         .inputFluids('kubejs:molten_cryotheum 6000')
         .itemOutputs('kubejs:cryotheum_coolant_unit')
@@ -215,30 +213,19 @@ ServerEvents.recipes(event => {
         .EUt(7)
 
 
-    //Cells
-    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:leadstone"}').weakNBT(), [
-        ' A ',
-        'BCB',
-        'ADA'
-    ], {
-        A: 'minecraft:redstone',
-        B: 'gtceu:lead_ingot',
-        C: 'minecraft:copper_ingot',
-        D: 'gtceu:sulfur_dust'
-    })
-
-    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:hardened"}').weakNBT(), [
+    //Cells, thermal exp.
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:hardened"}').strongNBT(), [
         ' A ',
         'BCB',
         'ADA'
     ], {
         A: 'minecraft:redstone',
         B: 'gtceu:invar_ingot',
-        C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:leadstone"}').weakNBT(),
+        C: 'thermal:flux_capacitor',
         D: 'gtceu:tin_ingot'
-    })
+    }).id('kubejs:ironjetpacks/cells/hardened');
 
-    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:reinforced"}').weakNBT(), [
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:reinforced"}').strongNBT(), [
         ' A ',
         'BCB',
         'ADA'
@@ -247,9 +234,9 @@ ServerEvents.recipes(event => {
         B: 'gtceu:electrum_ingot',
         C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:hardened"}').weakNBT(),
         D: '#enderio:fused_quartz'
-    })
+    }).id('kubejs:ironjetpacks/cells/reinforced');
 
-    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:resonant"}').weakNBT(), [
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:resonant"}').strongNBT(), [
         ' A ',
         'BCB',
         'ADA'
@@ -258,5 +245,5 @@ ServerEvents.recipes(event => {
         B: 'gtceu:enderium_ingot',
         C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
         D: 'kubejs:pyrotheum_dust'
-    })
+    }).id('kubejs:ironjetpacks/cells/resonant');
 })
