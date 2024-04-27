@@ -16,7 +16,8 @@ ServerEvents.recipes(event => {
         ['minecraft:red_mushroom', 'minecraft:nether_wart', 'nether_wart'],
         ['minecraft:quartz', 'minecraft:prismarine_shard', 'prismarine_shard'],
         ['minecraft:rotten_flesh', 'minecraft:leather', 'leather'],
-        ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 'prismarine_crystals']
+        ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 'prismarine_crystals'],
+        ['gtceu:steel_ingot', 'gtceu:damascus_steel_ingot', 'damascus_steel']
     ]
 
     const crystals = ['enori', 'void', 'palis', 'diamatine', 'restonia', 'emeradic']
