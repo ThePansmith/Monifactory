@@ -1356,7 +1356,7 @@
 			description: [
 				"[\"When setting up your AE2 network, generally you either \",{\"text\": \"passive or on-demand things\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://youtu.be/u0ouTWgdcXk?si=4l4UpQnWsYS5b-gT&t=803\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \", depending on how often you need them, recipe complexity, and so on.\"]"
 				""
-				"Gregtech circuits fall in this weird middle area where while you need a ton of them, the recipes you will be using change often enough to passiving them at this point isn't viable."
+				"Gregtech circuits fall in this weird middle area where while you need a ton of them, the recipes you will be using change often enough to where passiving them at this point isn't viable."
 				""
 				"You could use a crafting card to help you, but the &9ME Requester&r allows for a better solution, being able to tell your system to keep a stock of many different items within a single block, perfect for keeping circuits stocked."
 			]

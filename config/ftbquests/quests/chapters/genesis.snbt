@@ -1383,7 +1383,7 @@
 			}]
 			title: "&9More Efficient"
 			x: -4.5d
-			y: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1841,61 +1841,6 @@
 			title: "Discord and GitHub"
 			x: -10.0d
 			y: 4.0d
-		}
-		{
-			can_repeat: true
-			dependencies: ["39D4174834F3879D"]
-			description: ["Adds +300% to the Max Power/t of your Dynamo"]
-			icon: "thermal:dynamo_output_augment"
-			id: "703D0E1210E4300A"
-			rewards: [{
-				id: "67402C88DCE6AB7F"
-				item: {
-					Count: 1b
-					id: "thermal:dynamo_output_augment"
-					tag: {
-						AugmentData: {
-							DynamoEnergy: 0.7f
-							DynamoPower: 3.0f
-							Type: "Dynamo"
-						}
-					}
-				}
-				team_reward: false
-				type: "item"
-			}]
-			tasks: [
-				{
-					consume_items: true
-					count: 6L
-					id: "7A192B5FCDE90F64"
-					item: { Count: 6b, id: "gtceu:sterling_silver_ingot" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 12L
-					id: "4980DDAC1A83053E"
-					item: { Count: 12b, id: "gtceu:energetic_alloy_ingot" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 6L
-					id: "3D2E81CCF2F0F422"
-					item: { Count: 6b, id: "gtceu:conductive_alloy_block" }
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "065DE9E1A4307218"
-					item: { Count: 3b, id: "kubejs:redstone_transmission_coil" }
-					type: "item"
-				}
-			]
-			title: "&9Triple Power Augment"
-			x: -4.5d
-			y: 6.5d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]

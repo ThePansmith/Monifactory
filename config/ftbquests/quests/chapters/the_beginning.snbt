@@ -492,7 +492,7 @@
 				}
 				{
 					id: "3DBB91C93688C4FC"
-					item: "storagedrawers:void_upgrade"
+					item: "functionalstorage:void_upgrade"
 					type: "item"
 				}
 			]
@@ -718,7 +718,7 @@
 				{
 					count: 2L
 					id: "76CB286FDDD00D40"
-					item: "steamdynamo:steam_dynamo"
+					item: "systeams:steam_dynamo"
 					type: "item"
 				}
 			]
@@ -1759,7 +1759,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any GregTech machine, chest, or drum to expand its functionality. These are seperate on each side of the machine, meaning you can have up to six different covers! To work with covers, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine. This quest accepts a &aScrewdriver&r and &aCrowbar&r made from any material."
+				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are seperate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine. This quest accepts a &aScrewdriver&r and &aCrowbar&r made from any material."
 				""
 				"Here's a list of some covers there are in the game, and what they do:"
 				""
@@ -1800,57 +1800,28 @@
 			}
 			id: "1A427A8CB43C8B59"
 			size: 1.5d
-			tasks: [
-				{
-					id: "7E69A18642BC819F"
-					item: {
-						Count: 1b
-						id: "gtceu:wrought_iron_screwdriver"
-						tag: {
+			tasks: [{
+				id: "1D9F1F42A80B4792"
+				item: {
+					Count: 1b
+					id: "gtceu:wrought_iron_crowbar"
+					tag: {
+						Damage: 0
+						GT.Tool: {
 							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
 						}
 					}
-					type: "item"
 				}
-				{
-					id: "1D9F1F42A80B4792"
-					item: {
-						Count: 1b
-						id: "gtceu:wrought_iron_crowbar"
-						tag: {
-							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "&2Machine Covers"
+				type: "item"
+			}]
+			title: "&9Machine Covers"
 			x: 15.0d
 			y: 9.375d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: [
-				"&9Or you can just use the dedicated button in the machine's GUI."
-				""
-				"&9Whatever floats your boat."
-			]
-			icon: {
-				Count: 1b
-				id: "gtceu:wrought_iron_screwdriver"
-				tag: {
-					Damage: 0
-					GT.Tool: {
-						Damage: 0
-					}
-				}
-			}
+			description: ["&9Pressing the second tab in any given machine's GUI will open up a view showing the machine and any blocks it is touching&r. From there, you can click on a side of the machine and easily add, edit and remove covers, and configure if the machine should &3automatically output&r it's output and which side it should output to. "]
+			icon: "ulvcovm:ulv_conveyor_module"
 			id: "431BB650AC492C84"
 			size: 1.5d
 			tasks: [{
@@ -1858,7 +1829,7 @@
 				title: "Screwdrive Output Sides!"
 				type: "checkmark"
 			}]
-			title: "&9Screwdrive Output Sides!"
+			title: "&9 Machine Auto-Output"
 			x: 12.75d
 			y: 9.375d
 		}
@@ -1963,7 +1934,7 @@
 					type: "item"
 				}
 				{
-					count: 10L
+					count: 9L
 					id: "30B3B90B99DE0109"
 					item: "gtceu:ulv_machine_casing"
 					type: "item"
@@ -2045,9 +2016,9 @@
 		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
-				"The &bPhytogenic Insolator&r is a way to &9passively produce wood in the earlygame&r. While somewhat slow, it only requires &a20 rf/t&r to operate, meaning you can just set it down and not have to worry about it, and then come back to wood when you need some for crafting or steel production."
+				"The &bPhytogenic Insolator&r is a way to &9passively produce wood in the earlygame&r. While somewhat slow, it only requires &a10 rf/t&r to operate, meaning you can just set it down and not have to worry about it, and then come back to wood when you need some for crafting or steel production."
 				""
-				"Using &bHardened Integral Components&r in it will cause it to work 1.5x faster, while only requiring an extra &a10 rf/t&r to operate, and using &6Bonemeal&r or otherwise will boost how much wood you get per cycle."
+				"Using &bHardened Integral Components&r in it will cause it to work 1.5x faster, while only requiring an extra &a5 rf/t&r to operate, and using &6Bonemeal&r or otherwise will boost how much wood you get per cycle."
 				""
 				"By the way, &bThermal&r Machines are capable of Automatic I/O, try placing a 2x2 drawer beside your &bPhytogenic Insolator&r and configuring it to both push to and pull from the side with the drawer."
 			]
@@ -2107,7 +2078,7 @@
 		}
 		{
 			dependencies: ["545CCC24D9401794"]
-			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."]
+			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
 			icon: "steamadditions:steam_foundry"
 			id: "5D60CAE3A33000C3"
 			rewards: [{
