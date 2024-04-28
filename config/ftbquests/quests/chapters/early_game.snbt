@@ -37,6 +37,13 @@
 			x: 10.5d
 			y: 25.0d
 		}
+		{
+			id: "6DB017E9911300A9"
+			linked_quest: "2F04FA8D3E15E375"
+			shape: "hexagon"
+			x: 5.25d
+			y: 8.5d
+		}
 	]
 	quests: [
 		{
@@ -596,55 +603,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["2977E1AF13E42DCB"]
-			description: [
-				"&2Fluid Rigs will harvest fluids from underground fluid veins. Note that the fluid veins are simply simulated and don't exist in the world. &r"
-				""
-				"Shift-right-click while holding the &3Prospector's Scanner&r to set it to fluid mode, then right click it in order to see the type and amount of fluid underground and to check the depletion state of the vein. The first number represents the base amount of fluid extracted per second. You can also check the &eFluid Vein Information EMI&r page for information on where they spawn."
-				""
-				"In the &eOverworld&r, it can harvest: &9Oil, Light Oil, Heavy Oil, Raw Oil, Natural Gas"
-				"Salt Water&r&r (only in Ocean biomes)"
-				""
-				"In the &eNether&r: &eLava, Natural Gas&r"
-				""
-				"On the &eMoon&r: &9Deuterium, Helium-3&r"
-				""
-				"In the &eVoid&r: &9Raw Oil&r (does not deplete)"
-				""
-				"As Fluid Rigs work, they will deplete the vein under them, reducing their yields. When a vein is depleted, it still yields a small amount of its fluid. The first tier of Fluid Rig takes &9100,000 operations&r to deplete a vein. Higher tier Fluid Rigs harvest fluids far faster and deplete veins slower."
-			]
-			icon: "gtceu:mv_fluid_drilling_rig"
-			id: "748C26AF0C9271B2"
-			rewards: [{
-				id: "512E804A5DD80330"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "79B79F111C73C76E"
-					item: "gtceu:mv_fluid_drilling_rig"
-					type: "item"
-				}
-				{
-					count: 7L
-					id: "386E4B8836F8D191"
-					item: "gtceu:solid_machine_casing"
-					type: "item"
-				}
-				{
-					count: 15L
-					id: "185717A9B46EF83B"
-					item: "gtceu:steel_frame"
-					type: "item"
-				}
-			]
-			title: "&2Fluid Rig"
-			x: 5.25d
-			y: 8.5d
-		}
-		{
 			dependencies: [
 				"517A89E954C7EA74"
 				"776199B37A19A592"
@@ -750,6 +708,11 @@
 				"13F33DCE02ECE265"
 				"53347AAAE4495F95"
 			]
+			description: [
+				"&6Diodes&r are a component in the next Circuit tiers. They are made in an &3Assembler&r from liquid &9Glass&r, &6Fine Copper Wire&r and &6Gallium Arsenide&r. "
+				""
+				"Always be on the lookout for &ebetter recipes&r! &6Fine Annealed Copper Wire&r doubles your yield, and &9Polyethylene&r unlocks a few more efficient recipes."
+			]
 			id: "591A1B8B279DFCC9"
 			rewards: [{
 				id: "1FB54E4EC1F36941"
@@ -762,6 +725,7 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
+			title: "Diodes"
 			x: 10.5d
 			y: 1.0d
 		}
@@ -2605,7 +2569,7 @@
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
-			description: ["Placing a &9Wireless Charger in a area that you frequent (as such where you do your crafting) will ensure that your items are always topped off on energy."]
+			description: ["Placing a &9Wireless Charger&r in a area that you frequent (as such where you do your crafting) will ensure that your items are always topped off on energy."]
 			id: "1AA0A089DCA17FC8"
 			rewards: [{
 				id: "67EDE8C53008B226"
@@ -2623,7 +2587,6 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["5F109188BE4D9767"]
 			description: [
 				"The &6Steam Seperator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
 				""
