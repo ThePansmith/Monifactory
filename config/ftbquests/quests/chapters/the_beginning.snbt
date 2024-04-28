@@ -1782,37 +1782,12 @@
 				""
 				"Covers that move items or fluids can have a &aFilter&r placed inside them. These modify the functionality of covers in ways explained in their own quests."
 			]
-			icon: {
-				Count: 1b
-				id: "gtceu:wrought_iron_crowbar"
-				tag: {
-					Damage: 0
-					GT.Behaviours: { }
-					GT.Tool: {
-						AttackDamage: 4.0f
-						AttackSpeed: -2.6000001f
-						Damage: 0
-						HarvestLevel: 2
-						MaxDamage: 384
-						ToolSpeed: 6.0f
-					}
-				}
-			}
+			icon: "gtceu:lv_electric_pump"
 			id: "1A427A8CB43C8B59"
 			size: 1.5d
 			tasks: [{
-				id: "1D9F1F42A80B4792"
-				item: {
-					Count: 1b
-					id: "gtceu:wrought_iron_crowbar"
-					tag: {
-						Damage: 0
-						GT.Tool: {
-							Damage: 0
-						}
-					}
-				}
-				type: "item"
+				id: "550495EAC8E9629D"
+				type: "checkmark"
 			}]
 			title: "&9Machine Covers"
 			x: 15.0d
@@ -1820,8 +1795,8 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["&9Pressing the second tab in any given machine's GUI will open up a view showing the machine and any blocks it is touching&r. From there, you can click on a side of the machine and easily add, edit and remove covers, and configure if the machine should &3automatically output&r it's output and which side it should output to. "]
-			icon: "ulvcovm:ulv_conveyor_module"
+			description: ["&9Pressing the second tab in any given machine's GUI will open up a view showing the machine and any blocks it is touching&r. From there, you can click on a side of the machine and easily add, edit and remove &acovers&r, and configure if the machine should &3automatically output&r it's output and which side it should output to. "]
+			icon: "minecraft:hopper"
 			id: "431BB650AC492C84"
 			size: 1.5d
 			tasks: [{
