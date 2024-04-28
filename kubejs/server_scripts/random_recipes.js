@@ -640,5 +640,5 @@ ServerEvents.recipes(event => {
     const p2p = ["redstone", "item", "fluid", "fe", "light"]
     p2p.forEach(type => {
     event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
-
+})
 })
