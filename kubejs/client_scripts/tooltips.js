@@ -45,7 +45,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
 	// Fix gtceu text
-    tooltip.addAdvanced(['gtceu:creative_energy', 'gtceu:creative_tank', 'gtceu:creative_chest'], (item, adv, text) => {
+    tooltip.addAdvanced(['gtceu:creative_energy', 'gtceu:creative_tank', 'gtceu:creative_chest', 'gtceu:creative_data_access_hatch'], (item, adv, text) => {
         text.remove(3);
         text.remove(2);
         text.remove(1);
@@ -74,13 +74,13 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
         text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
         text.add(2, [Text.white('Produces exactly 3 amps of '), Text.red('ZPM'), Text.white('.')])
-        text.add(3, Text.gold('Does not overclock!')) //temporary
+        text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
     tooltip.addAdvanced('gtceu:naquadah_reactor_ii', (item, adv, text) => {
         text.add(1, Text.gray('An elite reactor capable of capturing more energy from the decay of Enriched Naquadah and Naquadria bolt'))
         text.add(2, [Text.white('Produces exactly 3 amps of '), Text.translatable('\u00a73UV'), Text.white('.')])
-        text.add(3, Text.gold('Does not overclock!')) //temporary
+        text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
     //Sophisticated Storage
@@ -88,7 +88,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
 
     // Misc
-    tooltip.add('kubejs:eternal_catalyst', '§8Gaze into the Abyss...')
+    tooltip.add('kubejs:eternal_catalyst', Text.darkGray('Gaze into the Abyss...'))
+    tooltip.add('kubejs:infinity_catalyst', Text.darkGray('One is all, and all is one.'))
+    tooltip.add('gtceu:infinity_ingot', Text.darkGray('The fury of the universe in the palm of your hand.'))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
-
 })

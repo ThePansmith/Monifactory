@@ -305,7 +305,7 @@
 			id: "0DF2AF70CB1FEFB3"
 			tasks: [{
 				id: "6DE1DEA00352373E"
-				item: "kubejs:neutronium_ingot"
+				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
 			title: "&2Neutronium Ingot"

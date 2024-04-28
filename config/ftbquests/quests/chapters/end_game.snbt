@@ -2266,7 +2266,7 @@
 			tasks: [{
 				count: 2L
 				id: "6F9246E97321EF11"
-				item: "kubejs:sp_endgame.neutronium"
+				item: "solarflux:sp_custom_neutronium"
 				type: "item"
 			}]
 			title: "&9Neutronium Solar Panel"
@@ -2276,55 +2276,51 @@
 		{
 			dependencies: ["2D9A95AC50CCB988"]
 			description: [
-				"&l&5Item not yet implemented!&r"
+				"The &3Simulation Supercomputer&r is a multiblock structure that performs &9HNN&r simulations like the &3Simulation Chamber&r, but is capable of overclocking these simulations to incredible speeds."
 				""
-				"The &3Simulation Supercomputer&r is a multiblock structure that performs &bDeep Mob Evolution&r simulations like the &3Simulation Chamber&r, but is capable of overclocking these simulations to incredible speeds."
-				""
-				"One of these structures can perform the equivalent work of hundreds of individual Simulation Chambers more efficiently. This will make it far easier to generate pristine matter you'll need for things like &6Dragon Lair Data&r. You'll probably need several &3Loot Fabricators&r to keep up with it."
+				"One of these structures can perform the equivalent work of hundreds of individual Simulation Chambers more efficiently. This will make it far easier to generate pristine matter you'll need for things like &6Dragon Lair Data&r. "
 				""
 				"The data model you place in the input bus will &2have a fixed 30% chance of producing Pristine matter regardless of its tier. &eOverclocking does not alter the chances of pristines&r: those come at fixed rates per iteration."
 				""
 				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second &9Heart of a Universe&r."
 			]
-			icon: "gcyr:dyson_system_controller"
+			icon: "gtceu:simulation_supercomputer"
 			id: "5A70898C99B828E3"
 			size: 3.0d
 			tasks: [
 				{
-					icon: "gcyr:dyson_system_controller"
-					id: "6E3D9FEFB4E9E640"
-					title: "&l&5Placeholder, doesnt exist yet!!"
-					type: "custom"
-				}
-				{
-					count: 26L
-					id: "59B95DC9936246B6"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:storage_blocks/omnium"
-						}
-					}
-					title: "Omnium Block"
-					type: "item"
-				}
-				{
-					count: 13L
 					id: "5C159D99CDA8EEE0"
-					item: "gtceu:enderium_block"
+					item: "gtceu:simulation_supercomputer"
 					type: "item"
 				}
 				{
-					count: 37L
+					count: 45L
 					id: "5DEC122EDABB5D6F"
 					item: "gtceu:atomic_casing"
 					type: "item"
 				}
 				{
 					count: 26L
-					id: "5C51134773E5231F"
-					item: "ae2:quartz_vibrant_glass"
+					id: "53593263F0B2BD34"
+					item: { Count: 26b, id: "gtceu:omnium_block" }
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "287AEC44CC7A8A38"
+					item: { Count: 18b, id: "gtceu:vibration_safe_casing" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "11FAD5991B3199F5"
+					item: { Count: 13b, id: "gtceu:enderium_block" }
+					type: "item"
+				}
+				{
+					count: 17L
+					id: "081CB54FA393231E"
+					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
 			]
@@ -2438,7 +2434,7 @@
 			subtitle: "Is Neutronium not enough?!"
 			tasks: [{
 				id: "2EE60D5EE1564FCF"
-				item: "kubejs:sp_endgame.infinity"
+				item: "solarflux:sp_custom_infinity"
 				type: "item"
 			}]
 			title: "The Final Solar Panel"
@@ -3177,11 +3173,7 @@
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
-			description: [
-				"Finally, a simple way to store all 2.1 billion blocks of dirt that have been laying around!"
-				""
-				"&5I do want to have this be a functional storage upgrade."
-			]
+			description: ["Finally, a simple way to store all 2.1 billion blocks of dirt that have been laying around!"]
 			hide_dependency_lines: true
 			icon: "thermal:machine_catalyst_creative_augment"
 			id: "6FD5CF3913492676"
@@ -3268,16 +3260,58 @@
 		}
 		{
 			dependencies: ["5A70898C99B828E3"]
-			description: ["The &3Loot Superfabricator&r is a multiblock structure that takes &bDeep Mob Evolution's&r pristine matter and converts it to items like the &3Loot Fabricator&r, but is capable of overclocking these fabrications to incredible speeds."]
-			id: "6266A73765462246"
+      
+			description: [
+				"The &3Loot Superfabricator&r is a multiblock structure that is made to match the incredible speeds of the &3Simulation Supercomputer&r."
+				""
+				"One of these structures can perform the equivalent work of hundreds of individual Loot Fabricators more efficiently. This will make it far easier to generate said &6Dragon Lair Data&r from all that pristine matter you now have. "
+				""
+				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your third &9Heart of a Universe&r."
+			]
+			hide_text_until_complete: true
+			icon: "gtceu:loot_superfabricator"
+			id: "5EAD96FFF35F5B9D"
 			size: 2.0d
-			tasks: [{
-				id: "12205B5708DEC86E"
-				item: "gtceu:loot_superfabricator"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "62C2E89B1FD1F376"
+					item: "gtceu:loot_superfabricator"
+					type: "item"
+				}
+				{
+					count: 45L
+					id: "7CBF58EEA3AF8B2D"
+					item: "gtceu:atomic_casing"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "37BC6A237752EC4F"
+					item: "gtceu:omnium_block"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "4316D6E3C131A4F1"
+					item: "gtceu:shock_proof_cutting_casing"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "34FAE0CA437C742E"
+					item: "gtceu:energetic_alloy_block"
+					type: "item"
+				}
+				{
+					count: 17L
+					id: "6AC4D204D85CA630"
+					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
+					type: "item"
+				}
+			]
+			title: "&9Loot Superfabricator"
 			x: 67.5d
-			y: -16.75d
+			y: -10.5d
 		}
 	]
 	title: "End Game"

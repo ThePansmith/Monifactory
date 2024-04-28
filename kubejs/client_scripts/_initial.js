@@ -1,7 +1,6 @@
-// priority: 9999
+// priority: 999
 //! This script loads first before the other startup scripts
 // put your util or patches here so that you can access them at other scripts
-
 
 /**
  * # DO NOT USE THIS!!!!
@@ -45,6 +44,15 @@ const rainbowify = (text, offset) => {
 		components.push(____rainbowify_idx_to_color(char, (idx % 7)));
 	}
 	return Text.join(components);
+}
+
+/**
+ * @param {string} text
+ * @param {number} offset
+ * @returns {Internal.MutableComponent}
+ */
+const rainbowifySingle = (text, offset) => {
+	return ____rainbowify_idx_to_color(text, (offset % 7));
 }
 
 // Tier enums for easier data handling

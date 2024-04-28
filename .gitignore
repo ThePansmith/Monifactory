@@ -55,7 +55,7 @@ config/emi.css
 defaultconfigs/ftbultimine/ftbultimine-client.snbt
 defaultconfigs/ftbultimine/ftbultimine-server.snbt
 
-options.txt
+./options.txt
 
 # dotenv
 .env
