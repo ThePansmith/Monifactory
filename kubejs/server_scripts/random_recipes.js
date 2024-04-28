@@ -172,38 +172,40 @@ ServerEvents.recipes(event => {
         D: "gtceu:lv_alloy_smelter"
     }
     )
+
+    // PBF Stuff, most of it has just been commented out as it will be reimplemented in HM
     // Moni-style firebricks
     event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
-    event.recipes.minecraft.smelting("gtceu:firebrick", "gtceu:fireclay_dust")
+    // event.recipes.minecraft.smelting("gtceu:firebrick", "gtceu:fireclay_dust")
 
     // Complete PBF recipe replacement
     event.remove({ type: "gtceu:primitive_blast_furnace" })
 
-    // Table with various burn time lengths
-    const pbfTimes = [
-        // material | fuel | length in ticks
-        ["wrought_iron", "coal", 400],
-        ["wrought_iron", "charcoal", 400],
-        ["wrought_iron", "coke", 600],
-        ["iron", "coal", 900],
-        ["iron", "charcoal", 900],
-        ["iron", "coke", 1500]
-    ]
+    // // Table with various burn time lengths
+    // const pbfTimes = [
+    //     // material | fuel | length in ticks
+    //     ["wrought_iron", "coal", 400],
+    //     ["wrought_iron", "charcoal", 400],
+    //     ["wrought_iron", "coke", 600],
+    //     ["iron", "coal", 900],
+    //     ["iron", "charcoal", 900],
+    //     ["iron", "coke", 1500]
+    // ]
 
-    for (const [material, fuel, time] of pbfTimes) {
-        let efficient = (fuel === "coke");
-        // Ingot form
-        event.recipes.gtceu.primitive_blast_furnace(`pbf_${material}_${fuel}`)
-            .itemInputs(`${efficient ? '2x ' : ''}#forge:ingots/${material}`, [`#forge:gems/${fuel}`, `#forge:dusts/${fuel}`])
-            .itemOutputs(`${efficient ? '2x ' : ''}gtceu:steel_ingot`, `gtceu:tiny_${efficient ? "" : "dark_"}ash_dust`)
-            .duration(time)
+    // for (const [material, fuel, time] of pbfTimes) {
+    //     let efficient = (fuel === "coke");
+    //     // Ingot form
+    //     event.recipes.gtceu.primitive_blast_furnace(`pbf_${material}_${fuel}`)
+    //         .itemInputs(`${efficient ? '2x ' : ''}#forge:ingots/${material}`, [`#forge:gems/${fuel}`, `#forge:dusts/${fuel}`])
+    //         .itemOutputs(`${efficient ? '2x ' : ''}gtceu:steel_ingot`, `gtceu:tiny_${efficient ? "" : "dark_"}ash_dust`)
+    //         .duration(time)
 
-        // Block form
-        event.recipes.gtceu.primitive_blast_furnace(`pbf_block_${material}_${fuel}`)
-            .itemInputs(`${efficient ? '2x ' : ''}#forge:storage_blocks/${material}`, `#forge:storage_blocks/${fuel}`)
-            .itemOutputs(`${efficient ? '2x ' : ''}gtceu:steel_block`, `gtceu:${efficient ? "" : "dark_"}ash_dust`)
-            .duration(time * 9)
-    }
+    //     // Block form
+    //     event.recipes.gtceu.primitive_blast_furnace(`pbf_block_${material}_${fuel}`)
+    //         .itemInputs(`${efficient ? '2x ' : ''}#forge:storage_blocks/${material}`, `#forge:storage_blocks/${fuel}`)
+    //         .itemOutputs(`${efficient ? '2x ' : ''}gtceu:steel_block`, `gtceu:${efficient ? "" : "dark_"}ash_dust`)
+    //         .duration(time * 9)
+    // }
 
     // Data Stuff
     event.recipes.gtceu.extractor("tank_data")
@@ -555,20 +557,20 @@ ServerEvents.recipes(event => {
     }
     ).damageIngredient('#minecraft:swords')
 
-	  //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
-  	event.remove( {id: "armorplus:crafting/shapeless/wooden_rod" })
-  	event.shaped(
-  		'2x armorplus:wooden_rod', [
-		  	'SS',
-		  	'SS'
-		  ], {
-		  	S: 'minecraft:stick'
-		  }
-	  ).id('kubejs:not_a_wood_gear')
+    //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
+    event.remove({ id: "armorplus:crafting/shapeless/wooden_rod" })
+    event.shaped(
+        '2x armorplus:wooden_rod', [
+        'SS',
+        'SS'
+    ], {
+        S: 'minecraft:stick'
+    }
+    ).id('kubejs:not_a_wood_gear')
 
-	  //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
-	  event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_log", "#minecraft:logs")
-	  event.replaceInput( { id:"bountiful:crafting/bountyboard"}, "minecraft:oak_planks", "#minecraft:planks")
+    //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
+    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
+    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
 
     //Avaritia Replacement recipes
     comapcting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
@@ -593,7 +595,7 @@ ServerEvents.recipes(event => {
         L: 'gtceu:lead_plate'
     })
     //Making ABS take aluminium rather than osmium so it's obtainable in EV
-    event.replaceInput( { id:"gtceu:shaped/blast_alloy_smelter"}, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
+    event.replaceInput({ id: "gtceu:shaped/blast_alloy_smelter" }, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 
     event.recipes.gtceu.alloy_smelter('kubejs:resonating_redstone')
         .itemInputs('minecraft:redstone_block', 'kubejs:ender_shard')
@@ -633,4 +635,10 @@ ServerEvents.recipes(event => {
         B: 'gtceu:bronze_plate',
     }
     ).id('waterframes:projector')
+
+    // Stonecut p2p tunnels, attunement sucks
+    const p2p = ["redstone", "item", "fluid", "fe", "light"]
+    p2p.forEach(type => {
+    event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
+
 })
