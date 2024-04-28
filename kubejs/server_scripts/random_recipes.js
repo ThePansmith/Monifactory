@@ -608,4 +608,29 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl']).id('kubejs:ender_pearl')
+
+    // Waterframes
+    event.shaped(
+        'waterframes:frame', [
+        'IGI',
+        'GSG',
+        'IGI'
+    ], {
+        I: 'gtceu:iron_plate',
+        S: 'gtceu:steel_plate',
+        G: '#forge:glass_panes',
+    }
+    ).id('waterframes:frame')
+
+    event.shaped(
+        'waterframes:projector', [
+        'IIB',
+        'IIF',
+        'IIB'
+    ], {
+        F: 'waterframes:frame',
+        I: 'gtceu:iron_plate',
+        B: 'gtceu:bronze_plate',
+    }
+    ).id('waterframes:projector')
 })
