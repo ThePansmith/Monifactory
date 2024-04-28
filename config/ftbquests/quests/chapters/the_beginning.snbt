@@ -614,13 +614,13 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "You already have &6Steel&r, but it can be made much faster in the &3Alloy Smelter&r, at the cost of EU."
+			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
 			tasks: [{
 				id: "17210F38B40BAAD7"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&2Steel"
+			title: "&9Alloying Steel"
 			x: 2.5d
 			y: -3.0d
 		}
@@ -651,7 +651,7 @@
 		{
 			dependencies: ["62BBD1F6767A4D90"]
 			description: [
-				"Alloy Smelters are used to create alloys by melting and reforming items together."
+				"&3Alloy Smelters&r are used to create alloys by melting and reforming items together."
 				""
 				"Now you won't need to grind up metals into dusts and mix them for alloy dusts! Plus, many of the more complex alloys you couldn't make that way are now possible."
 			]

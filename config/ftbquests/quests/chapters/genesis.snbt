@@ -1388,7 +1388,7 @@
 		{
 			dependencies: [
 				"7FA0E6F3B466576C"
-				"747434DD99118DA4"
+				"17312BF0197B87A8"
 			]
 			description: [
 				"A \"&esubstrate&f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
@@ -1465,44 +1465,10 @@
 		}
 		{
 			dependencies: [
-				"1FF132DED1748D11"
-				"4FE53F31E68F4C1C"
-			]
-			description: ["A mixture of Clay and Brick produces large quantities of &6Firebricks&r, used in building the &3Primitive Blast Furnace&r. This allows you to make &6Steel&r from &6Wrought Iron&r, which &2forms the basis of LV Machine Hulls&r, and allows you to make &6Belt Pouches&r, for upgrading your &eTool Belt&r."]
-			hide_dependency_lines: true
-			icon: "gtceu:primitive_blast_furnace"
-			id: "747434DD99118DA4"
-			rewards: [{
-				count: 3
-				id: "0ECA36DF477F8CDE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "35C6F2F120BD65AF"
-					item: "gtceu:primitive_blast_furnace"
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "254A5A7997F2EF9E"
-					item: { Count: 32b, id: "gtceu:firebricks" }
-					type: "item"
-				}
-			]
-			title: "Primitive Steelworks"
-			x: 2.5d
-			y: 11.5d
-		}
-		{
-			dependencies: [
 				"39D4174834F3879D"
 				"7358461DB0D9A9AF"
 				"08948A23B3A17923"
-				"747434DD99118DA4"
+				"17312BF0197B87A8"
 			]
 			description: [
 				"&rThe &3Steam Dynamos&r&r&r you have made are generating &aRF power&r, but &bGregTech&r machines require &aEU power&r. With your first &6circuit&r in hand, you are ready to build a &eLow Voltage (LV) &3&2Energy Converter&r."
@@ -2458,6 +2424,31 @@
 			}]
 			title: "Sulfur Ore"
 			x: -5.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			description: [
+				"Although most &ealloys&f require an &3Alloy Smelter&f, some alloys can be made simply by mixing the correct metal dusts together. "
+				""
+				"&9Steel is one of these alloys, being made by mixing wrought iron dust with coal dust or charcoal dust&r. &2Steel forms the basis of LV Machine Hulls&r, and allows you to make &6Belt Pouches&r, for upgrading your &eTool Belt&r."
+			]
+			hide_dependency_lines: true
+			id: "17312BF0197B87A8"
+			rewards: [{
+				count: 2
+				id: "716AB913E59B120B"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "7DCB0AE4BF702D13"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			title: "&9Steel"
+			x: 2.5d
 			y: 11.5d
 		}
 	]
