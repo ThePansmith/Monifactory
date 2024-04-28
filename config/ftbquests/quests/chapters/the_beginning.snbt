@@ -145,7 +145,7 @@
 				id: "381F87172DB87754"
 				type: "checkmark"
 			}]
-			title: "Programmed Circuits"
+			title: "&9Programmed Circuits"
 			x: -1.9047619047619193d
 			y: 3.720238095238088d
 		}
@@ -261,7 +261,7 @@
 				"- &6Small Springs&r from one Rod"
 				"- &6Springs&r from one Long Rod. "
 				"&r"
-				"If you played the CE version of &9monifactory&r, note that the functions of the &3Compressor&r (for making Plates) and &3Cluster Mill&r are merged into this machine."
+				"If you played the CE version of &9Nomifactory&r, note that the functions of the &3Compressor&r (for making Plates) and &3Cluster Mill&r are merged into this machine."
 			]
 			id: "3EDD0A986384F2A7"
 			rewards: [{
@@ -297,7 +297,7 @@
 				item: "functionalstorage:compacting_drawer"
 				type: "item"
 			}]
-			title: "Compacting Drawers"
+			title: "&9Compacting Drawers"
 			x: -7.0d
 			y: 2.0d
 		}
@@ -858,7 +858,7 @@
 				item: "hostilenetworks:sim_chamber"
 				type: "item"
 			}]
-			title: "Simulating Mobs"
+			title: "&9Simulating Mobs"
 			x: 6.5d
 			y: -5.5d
 		}
@@ -894,7 +894,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			size: 2.0d
+			size: 1.75d
 			tasks: [
 				{
 					id: "7DD0FE0A1E868294"
@@ -2061,6 +2061,7 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
+			size: 1.25d
 			tasks: [
 				{
 					id: "31167A476BC0B4F1"

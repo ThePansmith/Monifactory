@@ -102,7 +102,7 @@
 		{
 			dependencies: ["61AD3760E271B431"]
 			description: [
-				"&3Centrifuges&r provide you with &21 tiny pile&r of additional materials when processing ore dusts (&e9 tiny piles=1 dust&r). Sometimes it's the main dust, but often it's a different useful material that is otherwise unobtainable."
+				"&3Centrifuges&r have a chance of creating additional materials when processing ore dusts. Sometimes it's the main dust, but often it's a different useful material that is otherwise unobtainable."
 				""
 				"Instead of washing &6impure dusts&r (made from macerating or hammering ores) in a cauldron, you can get more out of each dust by centrifuging it. The same is true of &6pure dusts&r, when you eventually make a &3Washer&r or &3Chemical Bath&r. Note however that pure and impure dusts will usually give different byproducts (always check in &bEMI&r)."
 				""
@@ -2587,6 +2587,7 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["61AD3760E271B431"]
 			description: [
 				"The &6Steam Seperator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
 				""
