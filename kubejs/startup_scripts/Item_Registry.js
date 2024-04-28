@@ -219,6 +219,25 @@ StartupEvents.registry('item', event => {
     event.create('infinity_wrench').rarity("epic")
     event.create('infinity_wire_cutter').rarity("epic")
     event.create('infinity_power_unit').rarity("epic")
+    event.create('omni_motor').rarity("epic")
+
+    // Ultimate Tools
+    event.create('ultimate_core').texture('kubejs:item/ultimate/core')
+    event.create('ultimate_file').texture('kubejs:item/ultimate/file').rarity("epic")
+    event.create('ultimate_file_head').texture('kubejs:item/ultimate/file_head')
+    event.create('ultimate_file_handle').texture('kubejs:item/ultimate/file_handle')
+    event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer').rarity("epic")
+    event.create('ultimate_hammer_head').texture('kubejs:item/ultimate/hammer_head')
+    event.create('ultimate_hammer_handle').texture('kubejs:item/ultimate/hammer_handle')
+    event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver').rarity("epic")
+    event.create('ultimate_screwdriver_head').texture('kubejs:item/ultimate/screwdriver_head')
+    event.create('ultimate_screwdriver_handle').texture('kubejs:item/ultimate/screwdriver_handle')
+    event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench').rarity("epic")
+    event.create('ultimate_wrench_head').texture('kubejs:item/ultimate/wrench_head')
+    event.create('ultimate_wrench_handle').texture('kubejs:item/ultimate/wrench_handle')
+    event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter').rarity("epic")
+    event.create('ultimate_wire_cutter_head').texture('kubejs:item/ultimate/wire_cutter_head')
+    event.create('ultimate_wire_cutter_handle').texture('kubejs:item/ultimate/wire_cutter_handle')
 })
 
 ItemEvents.modification(event => {

@@ -54,15 +54,23 @@ ServerEvents.recipes(event => {
 
     // Moni Steel
     event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
+    event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
 
     const carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
-    // Alloy smelter steel
     carbonSources.forEach(carbonSource => {
         event.recipes.gtceu.alloy_smelter("steel_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
-            .itemInputs("#forge:ingots/wrought_iron", carbonSource)
+            .itemInputs("#forge:ingots/iron", carbonSource)
             .itemOutputs("gtceu:steel_ingot")
             .duration(150)
             .EUt(16)
+
+            event.recipes.gtceu.alloy_smelter("steel_wrought_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
+            .itemInputs("#forge:ingots/wrought_iron", carbonSource)
+            .itemOutputs("gtceu:steel_ingot")
+            .duration(100)
+            .EUt(16)
+
+        event.shapeless("gtceu:steel_dust", ["gtceu:wrought_iron_dust", carbonSource])
     })
 
     // Wrought iron per ingot
@@ -600,4 +608,29 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl']).id('kubejs:ender_pearl')
+
+    // Waterframes
+    event.shaped(
+        'waterframes:frame', [
+        'IGI',
+        'GSG',
+        'IGI'
+    ], {
+        I: 'gtceu:iron_plate',
+        S: 'gtceu:steel_plate',
+        G: '#forge:glass_panes',
+    }
+    ).id('waterframes:frame')
+
+    event.shaped(
+        'waterframes:projector', [
+        'IIB',
+        'IIF',
+        'IIB'
+    ], {
+        F: 'waterframes:frame',
+        I: 'gtceu:iron_plate',
+        B: 'gtceu:bronze_plate',
+    }
+    ).id('waterframes:projector')
 })

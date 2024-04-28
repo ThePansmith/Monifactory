@@ -135,7 +135,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('enriched_sunnarium')
         .dust()
         .color(0xACFFC2)
-        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
+        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
 })
 
 // Misc
