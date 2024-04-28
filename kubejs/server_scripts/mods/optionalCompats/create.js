@@ -3,6 +3,23 @@ if (Platform.isLoaded('create')) {
     ServerEvents.recipes(event => {
 
         // Removes any machines related to processing, the point of this compat is fun not functionality, 
+        event.remove({output: 'create:millstone'})
+        event.remove({output: 'create:crushing_wheel'})
+        event.remove({output: 'create:mechanical_plough'})
+        event.remove({output: 'create:mechanical_crafter'})
+        event.remove({output: 'create:mechanical_mixer'})
+        event.remove({output: 'create:mechanical_saw'})
+        event.remove({output: 'create:mechanical_drill'})
+        event.remove({output: 'create:mechanical_harvester'})
+        event.remove({output: 'create:mechanical_press'})
+        event.remove({output: 'create:mechanical_roller'})
+
+        /* Removes recipes for machines that were not removed, deployers and mechanical crafters are fun!
+        Most recipe categories that are removed machines are hidden in 
+        kubejs/assets/emi/recipe/filters/hidecategories.json as opposed to removing the actual recipes */
+        event.remove({ type: 'create:deploying' })
+        event.remove({ type: 'create:milling' })
+        event.remove({ type: 'create:crushing' })
         event.remove({ id: 'create:crafting/kinetics/millstone' })
         //event.remove({id: 'create:mechanical_crafting/crushing_wheel'}) //mechanical roller uses this for now
         event.remove({ id: 'create:crafting/kinetics/mechanical_mixer' })

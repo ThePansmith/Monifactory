@@ -214,6 +214,15 @@
         },
         {
             "category": "gtceu:create_mixer" 
+        },
+        {
+            "category": "create:sawing" 
+        },
+        {
+            "category": "create:mixing" 
+        },
+        {
+            "category": "create:pressing" 
         }
     ]
 }
