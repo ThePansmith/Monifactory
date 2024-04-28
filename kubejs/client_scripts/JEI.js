@@ -104,6 +104,9 @@ JEIEvents.hideItems(event => {
 
     //Greg Milk
     event.hide('gtceu:milk')
+
+    //Greg Hot MV ingots
+    event.hide(['gtceu:hot_kanthal_ingot', 'gtceu:hot_silicon_ingot'])
 })
 
 JEIEvents.hideFluids(event => {
