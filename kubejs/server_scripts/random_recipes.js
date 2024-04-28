@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
             .duration(150)
             .EUt(16)
 
-        event.recipes.gtceu.alloy_smelter("steel_wrought_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
+            event.recipes.gtceu.alloy_smelter("steel_wrought_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
             .itemInputs("#forge:ingots/wrought_iron", carbonSource)
             .itemOutputs("gtceu:steel_ingot")
             .duration(100)
@@ -640,5 +640,5 @@ ServerEvents.recipes(event => {
     const p2p = ["redstone", "item", "fluid", "fe", "light"]
     p2p.forEach(type => {
     event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
-    })
+
 })
