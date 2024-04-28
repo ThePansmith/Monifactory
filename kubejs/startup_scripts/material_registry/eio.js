@@ -61,6 +61,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("dark_soularium")
         .ingot().fluid()
         .color(0x7c674d).iconSet('metallic')
+        .flags(GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_DENSE)
 
     event.create("stellar_alloy")
         .ingot().fluid()

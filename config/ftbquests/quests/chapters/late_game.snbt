@@ -2395,7 +2395,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "67E4E186D212226D"
-				item: "kubejs:neutronium_ingot"
+				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
 			title: "&2Neutronium Ingot"
