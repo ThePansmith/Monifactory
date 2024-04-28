@@ -6,7 +6,7 @@ if(Platform.isLoaded('create')){
         event.remove({id: 'create:crafting/kinetics/millstone'})
         //event.remove({id: 'create:mechanical_crafting/crushing_wheel'}) //mechanical roller uses this for now
         event.remove({id: 'create:crafting/kinetics/mechanical_mixer'})
-        event.remove({id: 'create:crafting/kinetics/mechanical_press'})
+        //event.remove({id: 'create:crafting/kinetics/mechanical_press'}) //used in sequenced assembly
         //Remove the hand crank since it's easy to abuse contraptions using it
         event.remove({id: 'create:crafting/kinetics/hand_crank'})
 
