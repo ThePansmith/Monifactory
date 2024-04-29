@@ -264,8 +264,8 @@
 			id: "57778B08ADACB62D"
 			linked_quest: "4AC51394FB5152E5"
 			shape: "hexagon"
-			x: 3.5d
-			y: -9.25d
+			x: 3.25d
+			y: -9.0d
 		}
 		{
 			id: "697D790E02EFC25A"
@@ -305,20 +305,20 @@
 		{
 			id: "7D217833035647CD"
 			linked_quest: "04A0863937695AC4"
-			x: 6.5d
-			y: 8.0d
+			x: 12.5d
+			y: 8.5d
 		}
 		{
 			id: "4CA98E8FC9082FA2"
 			linked_quest: "5F9C7FB40AD2640B"
-			x: 9.5d
-			y: 8.0d
+			x: 15.5d
+			y: 8.5d
 		}
 		{
 			id: "6E8F35B6CC447F93"
 			linked_quest: "1BC6DDC2D50F9C46"
 			shape: "hexagon"
-			x: 13.5d
+			x: 16.0d
 			y: -8.5d
 		}
 	]
@@ -662,8 +662,8 @@
 				type: "item"
 			}]
 			title: "GregTech Electric Tools"
-			x: 8.0d
-			y: 8.0d
+			x: 14.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -676,7 +676,7 @@
 				type: "item"
 			}]
 			title: "&9Backpack"
-			x: 7.0d
+			x: 9.5d
 			y: -8.5d
 		}
 		{
@@ -690,7 +690,7 @@
 				type: "item"
 			}]
 			title: "&9Resonant Backpack"
-			x: 7.0d
+			x: 9.5d
 			y: -2.5d
 		}
 		{
@@ -719,7 +719,7 @@
 				item: "thermal:upgrade_augment_3"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 11.5d
 			y: -4.0d
 		}
 		{
@@ -763,7 +763,7 @@
 				weak_nbt_match: true
 			}]
 			title: "&9Hardened Backpack"
-			x: 7.0d
+			x: 9.5d
 			y: -7.0d
 		}
 		{
@@ -793,7 +793,7 @@
 				type: "item"
 			}]
 			title: "&9Reinforced Backpack"
-			x: 7.0d
+			x: 9.5d
 			y: -5.5d
 		}
 		{
@@ -824,7 +824,7 @@
 				type: "item"
 			}]
 			title: "&9Signalum Backpack"
-			x: 7.0d
+			x: 9.5d
 			y: -4.0d
 		}
 		{
@@ -850,7 +850,7 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 9.0d
+			x: 11.5d
 			y: -8.5d
 		}
 		{
@@ -871,7 +871,7 @@
 				item: "thermal:upgrade_augment_2"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 11.5d
 			y: -7.0d
 		}
 		{
@@ -896,7 +896,7 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 9.0d
+			x: 11.5d
 			y: -5.5d
 		}
 		{
@@ -916,8 +916,8 @@
 				type: "item"
 			}]
 			title: "&2Bounties For Monicoins!"
-			x: 11.0d
-			y: 8.0d
+			x: 17.0d
+			y: 8.5d
 		}
 		{
 			description: [
@@ -945,8 +945,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: 8.0d
+			x: 18.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -988,7 +988,7 @@
 				type: "item"
 			}]
 			title: "&2First Foray Into The Microverse"
-			x: 18.0d
+			x: 20.5d
 			y: -8.5d
 		}
 		{
@@ -1022,7 +1022,7 @@
 				type: "item"
 			}]
 			title: "&9Tier Two Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -7.0d
 		}
 		{
@@ -1062,7 +1062,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Three Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -5.5d
 		}
 		{
@@ -1098,7 +1098,7 @@
 				type: "item"
 			}]
 			title: "Tier Four Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -4.0d
 		}
 		{
@@ -1129,7 +1129,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Five Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -2.5d
 		}
 		{
@@ -1152,7 +1152,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Six Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -1.0d
 		}
 		{
@@ -1176,7 +1176,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Seven Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: 0.5d
 		}
 		{
@@ -1201,7 +1201,7 @@
 				type: "item"
 			}]
 			title: "Tier Eight Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: 4.5d
 		}
 		{
@@ -1226,7 +1226,7 @@
 				type: "item"
 			}]
 			title: "Tier Nine Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: 6.5d
 		}
 		{
@@ -1245,7 +1245,7 @@
 				type: "item"
 			}]
 			title: "Tier Ten Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: 8.5d
 		}
 		{
@@ -1271,7 +1271,7 @@
 				type: "item"
 			}]
 			title: "Kanthal Ingots"
-			x: 15.0d
+			x: 17.5d
 			y: -8.5d
 		}
 		{
@@ -1295,7 +1295,7 @@
 				type: "item"
 			}]
 			title: "&2Kanthal Coil Blocks"
-			x: 13.5d
+			x: 16.0d
 			y: -7.0d
 		}
 		{
@@ -1314,7 +1314,7 @@
 				type: "item"
 			}]
 			title: "Nichrome Ingots"
-			x: 15.0d
+			x: 17.5d
 			y: -7.0d
 		}
 		{
@@ -1340,7 +1340,7 @@
 				type: "item"
 			}]
 			title: "&2Nichrome Coil Blocks"
-			x: 13.5d
+			x: 16.0d
 			y: -5.5d
 		}
 		{
@@ -1362,7 +1362,7 @@
 				type: "item"
 			}]
 			title: "&9RTM Alloy"
-			x: 15.0d
+			x: 17.5d
 			y: -5.5d
 		}
 		{
@@ -1382,7 +1382,7 @@
 				type: "item"
 			}]
 			title: "&9RTM Alloy Coil Blocks"
-			x: 13.5d
+			x: 16.0d
 			y: -4.0d
 		}
 		{
@@ -1401,7 +1401,7 @@
 				type: "item"
 			}]
 			title: "High Speed Steel Type G"
-			x: 15.0d
+			x: 17.5d
 			y: -4.0d
 		}
 		{
@@ -1420,7 +1420,7 @@
 				type: "item"
 			}]
 			title: "HSS-G Coil Blocks"
-			x: 13.5d
+			x: 16.0d
 			y: -2.5d
 		}
 		{
@@ -1443,7 +1443,7 @@
 				type: "item"
 			}]
 			title: "Naquadah Ingots"
-			x: 15.0d
+			x: 17.5d
 			y: -2.5d
 		}
 		{
@@ -1463,7 +1463,7 @@
 				type: "item"
 			}]
 			title: "Naquadah Coil Blocks"
-			x: 13.5d
+			x: 16.0d
 			y: -1.0d
 		}
 		{
@@ -1487,7 +1487,7 @@
 				type: "item"
 			}]
 			title: "&2Trinium"
-			x: 15.0d
+			x: 17.5d
 			y: -1.0d
 		}
 		{
@@ -1507,7 +1507,7 @@
 				type: "item"
 			}]
 			title: "&2Trinium Coils"
-			x: 13.5d
+			x: 16.0d
 			y: 0.5d
 		}
 		{
@@ -1533,7 +1533,7 @@
 				type: "item"
 			}]
 			title: "&2Tritanium Ingot"
-			x: 15.0d
+			x: 17.5d
 			y: 0.5d
 		}
 		{
@@ -1548,7 +1548,7 @@
 				type: "item"
 			}]
 			title: "&2Tritanium Coils"
-			x: 13.5d
+			x: 16.0d
 			y: 2.0d
 		}
 		{
@@ -1575,7 +1575,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.5d
 			y: -8.5d
 		}
 		{
@@ -1599,7 +1599,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
+			x: 13.0d
 			y: -8.5d
 		}
 		{
@@ -1623,7 +1623,7 @@
 				type: "item"
 			}]
 			title: "Ironman 2"
-			x: 10.5d
+			x: 13.0d
 			y: -7.0d
 		}
 		{
@@ -1653,7 +1653,7 @@
 				type: "item"
 			}]
 			title: "Ironman 3"
-			x: 10.5d
+			x: 13.0d
 			y: -5.5d
 		}
 		{
@@ -1677,7 +1677,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.5d
 			y: -7.0d
 		}
 		{
@@ -1701,7 +1701,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.5d
 			y: -5.5d
 		}
 		{
@@ -1725,7 +1725,7 @@
 				type: "item"
 			}]
 			title: "Infinity War"
-			x: 10.5d
+			x: 13.0d
 			y: -4.0d
 		}
 		{
@@ -1747,7 +1747,7 @@
 				type: "item"
 			}]
 			title: "&9Captain... Marvel? IDK"
-			x: 12.0d
+			x: 14.5d
 			y: -4.0d
 		}
 		{
@@ -1772,8 +1772,168 @@
 				type: "item"
 			}]
 			title: "Endgame"
-			x: 12.0d
+			x: 14.5d
 			y: -2.5d
+		}
+		{
+			id: "4EB9D1ADC4814330"
+			tasks: [{
+				id: "2AAFA7BC6C6517A8"
+				item: "kubejs:matter_processor_computer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			id: "7704A934F89E4FD9"
+			tasks: [{
+				id: "25F064AE3DC12AA5"
+				item: "kubejs:dimensional_processor_assembly"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 6.5d
+		}
+		{
+			id: "07057CDE4E021BA7"
+			tasks: [{
+				id: "6F4F2E13D73644F0"
+				item: "kubejs:matter_processor_mainframe"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			id: "5E829641B6FE96E5"
+			tasks: [{
+				id: "6AFA814AA43354BE"
+				item: "kubejs:dimensional_processor_computer"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 8.0d
+		}
+		{
+			id: "1B1D3A66B847D129"
+			tasks: [{
+				id: "41FE8DE484FF65DD"
+				item: "kubejs:dimensional_processor_mainframe"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 9.5d
+		}
+		{
+			id: "5601A05D8361551D"
+			tasks: [{
+				id: "7C6BFAE0BEAADEA4"
+				item: "kubejs:monic_processor_mainframe"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 11.0d
+		}
+		{
+			id: "4612D36D22AB4B34"
+			tasks: [{
+				id: "7D7522E4B5D0061A"
+				item: "kubejs:dimensional_processor"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 5.0d
+		}
+		{
+			id: "6F5BB99060FF03AC"
+			tasks: [{
+				id: "621B8C0DD18BFA3A"
+				item: "kubejs:matter_processor_assembly"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			id: "78411542383DBD9F"
+			tasks: [{
+				id: "621632DB0ADB7720"
+				item: "gtceu:creative_chest"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.5d
+		}
+		{
+			id: "248ABB7F26EB72EE"
+			tasks: [{
+				id: "58B3E75584D6D2D6"
+				item: "kubejs:matter_processor"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			id: "11FDFB08CD48D66E"
+			tasks: [{
+				id: "703CDB7D8BF05A55"
+				item: "gtceu:monium_block"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 11.0d
+		}
+		{
+			id: "4177C4BD329C38DA"
+			tasks: [{
+				id: "168A6D29177E8DBD"
+				item: "gtceu:infinity_block"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			id: "0B923E8ED6161CA8"
+			tasks: [{
+				id: "1DC59BD73D749A60"
+				item: "gtceu:omnium_block"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			id: "0C9A9F33EEA3AB5E"
+			tasks: [{
+				id: "12DD7DF8ACAA29E5"
+				item: "kubejs:monic_processor_computer"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.5d
+		}
+		{
+			id: "3D7924B550A1BBA0"
+			tasks: [{
+				id: "36FE3694B99326BE"
+				item: "kubejs:monic_processor_assembly"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.0d
+		}
+		{
+			id: "5A8D2BFAF02E6325"
+			tasks: [{
+				id: "3EFB11DA4735807C"
+				item: "kubejs:monic_processor"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.5d
 		}
 	]
 	title: "Progression"

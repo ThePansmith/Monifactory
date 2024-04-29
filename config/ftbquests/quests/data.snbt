@@ -13,7 +13,7 @@
 	]
 	emergency_items_cooldown: 300
 	grid_scale: 0.25d
-	icon: "gtceu:rtm_alloy_coil_block"
+	icon: "gtceu:kanthal_coil_block"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0

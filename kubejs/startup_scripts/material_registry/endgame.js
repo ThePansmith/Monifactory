@@ -1,6 +1,3 @@
-//? Keep in sync with
-//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEndgame.java
-
 // custom icons
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
@@ -25,6 +22,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('infinity')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD)
+    event.create('monium')
+        .ingot()
+        .element(GTElements.get("monium"))
+        .color(0x1e90ff)
+        .iconSet('shiny')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
+        event.create('netherite') //Not actually endgame but will see use in matter circuits
+        .ingot()
+        .element(GTElements.get("netherite"))
+        .color(0x4C484C)
+        .iconSet('shiny')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
     
     // Adding a bunch of parts to existing elements for Endgame purpose
     

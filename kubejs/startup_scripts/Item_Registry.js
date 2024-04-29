@@ -238,6 +238,29 @@ StartupEvents.registry('item', event => {
     event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter').rarity("epic")
     event.create('ultimate_wire_cutter_head').texture('kubejs:item/ultimate/wire_cutter_head')
     event.create('ultimate_wire_cutter_handle').texture('kubejs:item/ultimate/wire_cutter_handle')
+
+    // Post tank circuits
+    const circs = [
+        ['matter', 'processor_mainframe', '#f5f5f5'],
+        ['matter', 'processor_computer', '#f5f5f5'],
+        ['matter', 'processor_assembly', '#f5f5f5'],
+        ['matter', 'processor', '#f5f5f5'],
+        ['dimensional', 'processor_mainframe', '#696969'],
+        ['dimensional', 'processor_computer', '#696969'],
+        ['dimensional', 'processor_assembly', '#696969'],
+        ['dimensional', 'processor', '#696969'],
+        ['monic', 'processor_mainframe', '#1e90ff'],
+        ['monic', 'processor_computer', '#1e90ff'],
+        ['monic', 'processor_assembly', '#1e90ff'],
+        ['monic', 'processor', '#1e90ff']
+    ]
+
+    for (const [volt, tier, circcolor] of circs) {
+        event.create(`${volt}_${tier}`)
+            .displayName(`${volt.split('_').map(v => capitalize(v)).join(" ")} ${tier.split('_').map(v => capitalize(v))}`)
+            .textureJson({ layer0: `gtceu:item/nano_${tier}` })
+            .color(0, circcolor);
+    }
 })
 
 ItemEvents.modification(event => {
