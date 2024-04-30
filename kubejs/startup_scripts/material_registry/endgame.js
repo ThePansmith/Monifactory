@@ -1,6 +1,14 @@
+
+//? Keep in sync with
+//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEndgame.java
+GTCEuStartupEvents.registry('gtceu:element', event => {
+    event.create('monium', 69, 420, -1, null, 'Mu', false);
+})
+
 // custom icons
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
+    event.create('monium').parent(GTMaterialIconSet.SHINY)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -25,10 +33,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('monium')
         .ingot()
         .element(GTElements.get("monium"))
-        .color(0x1e90ff)
-        .iconSet('shiny')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
-        event.create('netherite') //Not actually endgame but will see use in matter circuits
+        .color(0xffffff)
+        .iconSet('monium')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR)
+    event.create('netherite') //Not actually endgame but will see use in matter circuits
         .ingot()
         .element(GTElements.get("netherite"))
         .color(0x4C484C)
