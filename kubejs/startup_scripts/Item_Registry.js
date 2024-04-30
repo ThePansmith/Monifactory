@@ -239,28 +239,42 @@ StartupEvents.registry('item', event => {
     event.create('ultimate_wire_cutter_head').texture('kubejs:item/ultimate/wire_cutter_head')
     event.create('ultimate_wire_cutter_handle').texture('kubejs:item/ultimate/wire_cutter_handle')
 
-    // Post tank circuits
+    // Post tank circuits and whatnot
     const circs = [
-        ['matter', 'processor_mainframe', '#f5f5f5'],
-        ['matter', 'processor_computer', '#f5f5f5'],
-        ['matter', 'processor_assembly', '#f5f5f5'],
-        ['matter', 'processor', '#f5f5f5'],
-        ['dimensional', 'processor_mainframe', '#696969'],
-        ['dimensional', 'processor_computer', '#696969'],
-        ['dimensional', 'processor_assembly', '#696969'],
-        ['dimensional', 'processor', '#696969'],
-        ['monic', 'processor_mainframe', '#1e90ff'],
-        ['monic', 'processor_computer', '#1e90ff'],
-        ['monic', 'processor_assembly', '#1e90ff'],
-        ['monic', 'processor', '#1e90ff']
+        ['matter', 'processor_mainframe', "UEV", '#f5f5f5'],
+        ['matter', 'processor_computer', "UHV",'#f5f5f5'],
+        ['matter', 'processor_assembly', "UV", '#f5f5f5'],
+        ['matter', 'processor', "ZPM", '#f5f5f5'],
+        ['dimensional', 'processor_mainframe', "UIV", '#696969'],
+        ['dimensional', 'processor_computer', "UEV", '#696969'],
+        ['dimensional', 'processor_assembly', "UHV", '#696969'],
+        ['dimensional', 'processor', "UV", '#696969'],
+        ['monic', 'processor_mainframe', "MAX", '#1e90ff'],
+        ['monic', 'processor_computer', "UIV", '#1e90ff'],
+        ['monic', 'processor_assembly',"UEV", '#1e90ff'],
+        ['monic', 'processor',"UHV", '#1e90ff']
     ]
 
-    for (const [volt, tier, circcolor] of circs) {
-        event.create(`${volt}_${tier}`)
-            .displayName(`${volt.split('_').map(v => capitalize(v)).join(" ")} ${tier.split('_').map(v => capitalize(v))}`)
-            .textureJson({ layer0: `gtceu:item/nano_${tier}` })
-            .color(0, circcolor);
+    for (const [theme, type, volt, circcolor] of circs) {
+        event.create(`${theme}_${type}`)
+            .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} ${type.split('_').map(v => capitalize(v)).join(" ")}`)
+            .textureJson({ layer0: `gtceu:item/nano_${type}` })
+            .color(0, circcolor)
+            .tooltip(`${volt}-Tier Circuit`)
     }
+
+const unit = [
+    ['matter', '#f5f5f5'],
+    ['dimensional', '#696969'],
+    ['monic', '#1e90ff'],
+]
+
+for (const [theme, color] of unit) {
+    event.create(`${theme}_processing_unit`)
+        .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processing Unit`)
+        .textureJson({ layer0: `gtceu:item/computer_monitor_cover` })
+        .color(0, color)
+}
 })
 
 ItemEvents.modification(event => {

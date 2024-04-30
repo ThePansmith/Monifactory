@@ -120,6 +120,8 @@ JEIEvents.addItems(event => {
     event.add('sophisticatedbackpacks:backpack')
     event.add(['sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:gold_to_diamond_tier_upgrade', 'sophisticatedstorage:diamond_to_netherite_tier_upgrade'])
 
-
+// Posttank stuff
+event.hide(/gtceu:uxv/)
+event.hide({/gtceu:opv/)
 
 })
