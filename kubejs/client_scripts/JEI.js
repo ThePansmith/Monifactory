@@ -107,6 +107,9 @@ JEIEvents.hideItems(event => {
 
     //Greg Hot MV ingots
     event.hide(['gtceu:hot_kanthal_ingot', 'gtceu:hot_silicon_ingot'])
+
+    // AE2 stuff
+    event.hide(['ae2:fluix_dust', 'ae2:fluix_crystal', 'ae2:fluix_block', 'ae2:certus_quartz_crystal', 'ae2:charged_certus_quartz_crystal'])
 })
 
 JEIEvents.hideFluids(event => {
