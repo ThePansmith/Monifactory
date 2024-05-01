@@ -3260,7 +3260,6 @@
 		}
 		{
 			dependencies: ["5A70898C99B828E3"]
-      
 			description: [
 				"The &3Loot Superfabricator&r is a multiblock structure that is made to match the incredible speeds of the &3Simulation Supercomputer&r."
 				""
