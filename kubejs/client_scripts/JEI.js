@@ -106,6 +106,9 @@ JEIEvents.hideItems(event => {
 
     //Greg Milk
     event.hide('gtceu:milk')
+
+    // AE2 stuff
+    event.hide(['ae2:fluix_dust', 'ae2:fluix_crystal', 'ae2:fluix_block', 'ae2:certus_quartz_crystal', 'ae2:charged_certus_quartz_crystal'])
 })
 
 JEIEvents.hideFluids(event => {
