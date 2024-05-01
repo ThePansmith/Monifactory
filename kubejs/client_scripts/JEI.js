@@ -43,6 +43,8 @@ JEIEvents.hideItems(event => {
     event.hide([Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:dark_soularium"}').strongNBT(), Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:fluxed"}').strongNBT(), 'ironjetpacks:capacitor', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:creative"}').strongNBT()])
     event.hide(['ironjetpacks:basic_coil', 'ironjetpacks:advanced_coil', 'ironjetpacks:elite_coil', 'ironjetpacks:ultimate_coil'])
 
+    // Chisels&Bits
+    event.hide('chiselsandbits:block_bit')
 
     // antiblocks (is this even needed?)
     // event.hide([/^antiblocksrechiseled:pressure_plate_.+$/, /^antiblocksrechiseled:button_.+$/, /^antiblocksrechiseled:stair_.+$/, /^antiblocksrechiseled:slab_.+$/, /^antiblocksrechiseled:border_.+$/, /^antiblocksrechiseled:wool_.+$/])
@@ -104,6 +106,10 @@ JEIEvents.hideItems(event => {
 
     //Greg Milk
     event.hide('gtceu:milk')
+    
+    // Posttank stuff
+    event.hide(/gtceu:uxv/)
+    event.hide(/gtceu:opv/)
 })
 
 JEIEvents.hideFluids(event => {
@@ -120,8 +126,7 @@ JEIEvents.addItems(event => {
     event.add('sophisticatedbackpacks:backpack')
     event.add(['sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:gold_to_diamond_tier_upgrade', 'sophisticatedstorage:diamond_to_netherite_tier_upgrade'])
 
-// Posttank stuff
-event.hide(/gtceu:uxv/)
-event.hide({/gtceu:opv/)
+    // AE2 stuff
+    event.add(Item.of('ae2:facade', {item: "gtceu:infinity_block"}))
 
 })

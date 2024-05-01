@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:hv_field_generator',
             F: 'kubejs:signalum_micro_miner_core',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').weakNBT(),
-            D: 'thermal:dynamo_magmatic' // TODO: replace with reactant dynamo when possible
+            D: 'thermal:dynamo_compression'
         }, 3
     )
 
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
             L: 'kubejs:supercharged_laser_array',
             D: 'gtceu:double_draconium_plate',
             G: 'kubejs:advanced_micro_miner_guidance_system',
-            P: 'draconicevolution:particle_generator',
+            P: 'draconicevolution:energy_core_stabilizer',
             A: 'gtceu:luv_field_generator',
             E: 'kubejs:ender_energy_manipulator', // TODO: REPLACE WITH REAL DE COMPONENT
             W: 'kubejs:warp_engine'
@@ -204,8 +204,8 @@ ServerEvents.recipes(event => {
             U: 'kubejs:universal_navigator',
             A: 'gtceu:uv_field_generator',
             B: 'gtceu:ev_super_chest',
-            R: 'draconicevolution:reactor_stabilizer', // TODO: REPLACE WITH THE REAL DE COMPONENT
-            C: 'draconicevolution:reactor_core', // TODO: REPLACE WITH THE REAL DE COMPONENT
+            R: 'draconicevolution:reactor_stabilizer',
+            C: 'draconicevolution:reactor_core',
             W: 'kubejs:warp_engine'
         }
     )
@@ -226,9 +226,9 @@ ServerEvents.recipes(event => {
         ], {
             N: 'gtceu:double_neutronium_plate',
             U: 'kubejs:universal_navigator',
-            C: 'draconicevolution:reactor_core', // TODO: REPLACE WITH THE REAL DE COMPONENT
+            C: 'draconicevolution:reactor_core',
             P: 'solarflux:sp_custom_neutronium',
-            R: 'draconicevolution:energy_core_stabilizer', // TODO: REPLACE WITH THE REAL DE COMPONENT
+            R: 'draconicevolution:reactor_stabilizer',
             A: 'gtceu:iv_quantum_chest',
             W: 'kubejs:warp_engine'
         }
@@ -246,7 +246,7 @@ ServerEvents.recipes(event => {
             'PCP',
             'CCC'
         ], {
-            G: 'minecraft:glass',
+            G: 'gtceu:lv_sensor',
             P: 'gtceu:double_steel_plate',
             C: '#gtceu:circuits/mv'
         }
@@ -333,8 +333,8 @@ ServerEvents.recipes(event => {
             'draconicevolution:advanced_magnet', /* DE Magnet */
             '2x #forge:plates/crystal_matrix',
             '2x gtceu:iv_field_generator',
-            Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}').weakNBT(),
-            Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
+            Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT(),
+            Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
         .itemOutputs('kubejs:warp_engine')
         .inputFluids('gtceu:soldering_alloy 1152')
         .duration(1800)

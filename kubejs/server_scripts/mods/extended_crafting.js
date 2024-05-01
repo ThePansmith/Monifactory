@@ -54,6 +54,19 @@ ServerEvents.recipes(event => {
         A: 'gtceu:uranium_plate',
         B: 'gtceu:emerald_plate'
     })
+    
+    event.remove({ output: 'extendedcrafting:epic_component' })
+    event.shaped(
+        'extendedcrafting:epic_component', [
+        'SL ',
+        'AB ',
+        '   '
+    ], {
+        S: 'gtceu:black_steel_plate',
+        L: 'extendedcrafting:luminessence',
+        A: 'gtceu:netherite_plate',
+        B: 'gtceu:red_steel_plate'
+    })
 
     event.remove({ output: 'extendedcrafting:crystaltine_component' })
     event.shaped(
@@ -148,6 +161,27 @@ ServerEvents.recipes(event => {
         R: 'extendedcrafting:crystaltine_component',
         T: 'extendedcrafting:elite_table'
     }, 3
+    )
+    event.remove({ output: 'extendedcrafting:epic_table' })
+    event.recipes.extendedcrafting.shaped_table(
+        'extendedcrafting:epic_table', [
+        'ESSSCSSSE',
+        'SUUUUUUUS',
+        'SUSSRSSUS',
+        'SUSSRSSUS',
+        'CURRTRRUC',
+        'SUSSRSSUS',
+        'SUSSRSSUS',
+        'SUUUUUUUS',
+        'ESSSCSSSE'
+    ], {
+        E: '#forge:storage_blocks/netherite',
+        S: 'gtceu:double_black_steel_plate',
+        C: 'extendedcrafting:the_ultimate_catalyst',
+        U: 'extendedcrafting:epic_component',
+        R: 'extendedcrafting:crystaltine_component',
+        T: 'extendedcrafting:ultimate_table'
+    }, 4
     )
 
     event.remove({ output: 'extendedcrafting:crafting_core' })

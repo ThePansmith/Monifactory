@@ -2,13 +2,14 @@ ServerEvents.recipes(event => {
     event.shaped(
         'gtceu:creative_tank_fabricator', [
             'EFE',
-            'FCF',
+            'GCG',
             'LUL'
         ], {
         E: 'gtceu:zpm_emitter',
-        F: 'gtceu:zpm_field_generator',
-        L: 'gtceu:luv_emitter',
-        C: 'kubejs:microverse_casing',
+        F: 'gtceu:luv_field_generator',
+        G: 'gtceu:zpm_field_generator',
+        L: '#gtceu:circuits/luv',
+        C: 'gtceu:atomic_casing',
         U: 'gtceu:uv_field_generator'
     }
     ).id('kubejs:shaped/creative_tank_fabricator')
