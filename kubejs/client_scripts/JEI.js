@@ -109,7 +109,7 @@ JEIEvents.hideItems(event => {
     
     // Posttank stuff
     event.hide(/gtceu:uxv/)
-    event.hide({/gtceu:opv/)
+    event.hide(/gtceu:opv/)
 })
 
 JEIEvents.hideFluids(event => {
