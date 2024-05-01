@@ -56,6 +56,11 @@ ServerEvents.recipes(event => {
 		['#forge:dusts/boron'],
 		'2x nuclearcraft:ferroboron_ingot', 15, 120);
 
+    alloySmeltingVariant(
+        ['#forge:ingots/gold', '#forge:dusts/gold'],
+        ['minecraft:soul_sand'],
+        'gtceu:soularium_ingot', 6, 16);
+
     event.recipes.gtceu.alloy_smelter('kubejs:tough_alloy_ingot')
         .itemInputs('#forge:ingots/ferroboron', '#forge:dusts/lithium')
         .itemOutputs('2x nuclearcraft:tough_alloy_ingot')
