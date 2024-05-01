@@ -42,6 +42,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x4C484C)
         .iconSet('shiny')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
+
+    event.create('omnic_acid')
+        .dust()
+        .color(0xff00ff)
+        .iconSet('shiny')
+        .components('5x carbon', '4x hydrogen', '3x oxygen', GTMaterials.get('omnium'))
     
     // Adding a bunch of parts to existing elements for Endgame purpose
     
