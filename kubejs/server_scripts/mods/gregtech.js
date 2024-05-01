@@ -210,6 +210,15 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Hot MV ingots
+    event.remove({ input: ['gtceu:hot_kanthal_ingot', "gtceu:hot_silicon_ingot"]})
+    event.replaceOutput(
+        { output: 'gtceu:hot_silicon_ingot' },
+        'gtceu:hot_silicon_ingot',
+        'gtceu:silicon_ingot'
+    )
+
+
     //Ender Pearl dust Electrolysis
     //event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })
 
