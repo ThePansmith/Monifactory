@@ -13,7 +13,8 @@
 
 ## Features
 - GTCEu Modern which is on active development in-parity with regular GTCEu
-- LV-ZPM tier in-parity of Nomifactory CEu
+- LV-UHV tier in-parity of Nomifactory CEu
+- A WIP Post Tank Progression overhaul, refer to the posttank branch.
 
 ## Credits
 Original pack by [Exaxxion](https://github.com/Exaxxion).

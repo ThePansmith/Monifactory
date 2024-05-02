@@ -3,14 +3,32 @@ ServerEvents.recipes(event => {
     // The crafting core is expensive enough as is, dont need to throw extra circuits on top
     event.shaped(
         'gtceu:draconic_reactor',
-        ['PPP',
-            'PFP',
-            'PPP'
+        ['PLP',
+            'CFC',
+            'PHP'
         ], {
-        P: 'gtceu:stainless_steel_plate',
-        F: 'draconicevolution:crafting_core'
+        P: 'gtceu:draconium_plate',
+        F: 'draconicevolution:crafting_core',
+        C: 'gtceu:niobium_titanium_single_cable',
+        L: 'gtceu:iv_field_generator',
+        H: 'gtceu:hsse_frame'
+
     }
     ).id('kubejs:shaped/draconic_reactor')
+
+    event.recipes.gtceu.assembler('kubejs:draconium_casing')
+        .itemInputs('6x gtceu:draconium_plate', 'gtceu:draconium_frame')
+        .itemOutputs('2x kubejs:draconium_casing')
+        .duration(50)
+        .circuit(6)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('kubejs:awakened_draconium_casing')
+        .itemInputs('6x gtceu:draconium_awakened_plate', 'gtceu:draconium_awakened_frame')
+        .itemOutputs('2x kubejs:awakened_draconium_casing')
+        .duration(50)
+        .circuit(6)
+        .EUt(16)
 
     function Reactor(id, output, input, tier, RF) {
         event.recipes.gtceu.draconic_reactor(`kubejs:${id}`)

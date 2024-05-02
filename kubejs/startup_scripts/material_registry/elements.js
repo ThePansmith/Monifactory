@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("draconium"))
         .color(0xbe49ed).iconSet('metallic')
         .blastTemp(6800, 'higher')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_DENSE)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME)
         .cableProperties(524288, 1, 0, true);
 
     event.create("draconium_awakened")
