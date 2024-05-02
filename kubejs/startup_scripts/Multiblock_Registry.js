@@ -105,10 +105,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('loot_superfabricator')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(1, 1, 0, 0) //
+        .setMaxIOSize(2, 1, 0, 0) //
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ELECTROLYZER)
+        .setSound(GTSoundEntries.COMPUTATION)
     })
 
 // Basic Microverse Projector
@@ -302,22 +302,22 @@ event.create('draconic_reactor', 'multiblock')
 
 // Creative Tank Fabricator
 // TODO: Cooler Design, thinking about some kind of computer that fabricates the tanks from the data
-    event.create('creative_tank_fabricator', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('creative_tank_fabricator')
-        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCC", "GGG", "CCC")
-            .aisle("CCC", "G#G", "CCC")
-            .aisle("CSC", "GGG", "CCC")
-            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-            .where('C', Predicates.blocks("kubejs:microverse_casing")
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
-                .where('#', Predicates.any())
-            .build())
-        .workableCasingRenderer("kubejs:block/microverse_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+event.create('creative_tank_fabricator', 'multiblock')
+    .rotationState(RotationState.NON_Y_AXIS)
+    .recipeTypes('creative_tank_fabricator')
+    .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
+    .pattern(definition => FactoryBlockPattern.start()
+        .aisle("CCC", "GGG", "CCC")
+        .aisle("CCC", "G#G", "CCC")
+        .aisle("CSC", "GGG", "CCC")
+        .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+        .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+        .where('C', Predicates.blocks("gtceu:atomic_casing")
+            .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+        .where('#', Predicates.any())
+         .build())
+     .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
+        "gtceu:block/multiblock/implosion_compressor", false)
 
 // Super Computer
 event.create('simulation_supercomputer', 'multiblock')

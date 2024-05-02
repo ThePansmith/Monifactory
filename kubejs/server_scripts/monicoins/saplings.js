@@ -48,6 +48,24 @@ ServerEvents.recipes(event => {
     }).noMirror().noShrink()
 
     event.shaped(
+        Item.of('thermal:rubberwood_sapling', 64), [
+        'AA ',
+        ' A ',
+        '   '
+    ], {
+        A: 'kubejs:moni_penny'
+    }).noMirror().noShrink()
+
+    event.shaped(
+        Item.of('minecraft:jungle_sapling', 64), [
+        'AA ',
+        '  A',
+        '   '
+    ], {
+        A: 'kubejs:moni_penny'
+    }).noMirror().noShrink()
+
+    event.shaped(
         Item.of('minecraft:cherry_sapling', 64), [
         'AA ',
         '   ',

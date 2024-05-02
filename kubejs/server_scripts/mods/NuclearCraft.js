@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
             "TST"
         ], {
             T: 'nuclearcraft:tough_alloy_ingot',
-            S: 'gtceu:tungsten_ingot',
+            S: 'gtceu:tungsten_plate',
             D: 'gtceu:double_steel_plate'
         }
     )
