@@ -105,7 +105,11 @@ JEIEvents.hideItems(event => {
     event.hide(['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'])
 
     //Greg Milk
-    event.hide('gtceu:milk')
+    event.hide('gtceu:milk')   
+  
+    // Posttank stuff
+    event.hide(/gtceu:uxv/)
+    event.hide(/gtceu:opv/)
 
     //Greg Hot MV ingots
     event.hide(['gtceu:hot_kanthal_ingot', 'gtceu:hot_silicon_ingot'])
@@ -127,6 +131,7 @@ JEIEvents.addItems(event => {
     event.add(['sophisticatedstorage:gold_shulker_box', 'sophisticatedstorage:diamond_shulker_box', 'sophisticatedstorage:netherite_shulker_box'])
     event.add('sophisticatedbackpacks:backpack')
     event.add(['sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:gold_to_diamond_tier_upgrade', 'sophisticatedstorage:diamond_to_netherite_tier_upgrade'])
-    event.add(Item.of('ae2:facade', {item: "gtceu:infinity_block"}))
 
+    // AE2 stuff
+    event.add(Item.of('ae2:facade', {item: "gtceu:infinity_block"}))
 })

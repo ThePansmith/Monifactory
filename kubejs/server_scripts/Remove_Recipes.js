@@ -91,4 +91,9 @@ ServerEvents.recipes(event => {
     // event.remove({id: 'minecraft:gold_nugget'})
     // event.remove({id: 'minecraft:kjs/iron_nugget'})
     // event.remove({id: 'minecraft:kjs/gold_nugget'})
+
+
+    // Posttank stuff
+    event.remove({ id: /gtceu:uxv/ })
+    event.remove({ id: /gtceu:opv/ })
 })

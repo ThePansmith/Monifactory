@@ -3313,6 +3313,17 @@
 			x: 67.5d
 			y: -10.5d
 		}
+		{
+			description: ["not the actual quest, i just wanted a dependacy for the monium unit quest lol"]
+			id: "5B4CCC68D5180D68"
+			tasks: [{
+				id: "6D41F2AF5975E688"
+				item: "gtceu:monium_ingot"
+				type: "item"
+			}]
+			x: 71.75d
+			y: -2.0d
+		}
 	]
 	title: "End Game"
 }
