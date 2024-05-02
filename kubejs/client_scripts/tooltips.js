@@ -87,6 +87,9 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
     tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
 
+    // AE2
+    tooltip.add('ae2:facade', Text.gray('Crafted with Cable Anchors'))
+
     // Misc
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray('Gaze into the Abyss...'))
     tooltip.add('kubejs:infinity_catalyst', Text.darkGray('One is all, and all is one.'))

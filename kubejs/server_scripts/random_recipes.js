@@ -575,6 +575,10 @@ ServerEvents.recipes(event => {
     //Avaritia Replacement recipes
     comapcting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
 
+    //Dense Hydrogen converion
+    comapcting(event, 'kubejs:dense_hydrogen', 'kubejs:solidified_hydrogen');
+    comapcting(event, 'kubejs:ultra_dense_hydrogen', 'kubejs:dense_hydrogen');
+
     //Recipie from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
         .itemInputs("kubejs:radium_salt")
@@ -639,6 +643,6 @@ ServerEvents.recipes(event => {
     // Stonecut p2p tunnels, attunement sucks
     const p2p = ["redstone", "item", "fluid", "fe", "light"]
     p2p.forEach(type => {
-    event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
-})
+        event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
+    })
 })
