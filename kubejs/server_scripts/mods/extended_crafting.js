@@ -195,13 +195,13 @@ ServerEvents.recipes(event => {
     // Combination Crafts
     event.recipes.extendedcrafting.combination(
         "gtceu:restonia_empowered_block",
-        "gtceu:restonia_block", ["gtceu:red_alloy_ingot", "gtceu:almandine_gem", Item.of('gtceu:glass_vial', '{Fluid:{Amount:1000,FluidName:"gtceu:sulfuric_acid"}}'), "extendedcrafting:the_ultimate_component"],
+        "gtceu:restonia_block", ["gtceu:red_alloy_ingot", "gtceu:almandine_gem", Item.of('gtceu:glass_vial', '{Fluid:{Amount:1000,FluidName:"gtceu:sulfuric_acid"}}').strongNBT(), "extendedcrafting:the_ultimate_component"],
         4000000, 400000
     )
 
     event.recipes.extendedcrafting.combination(
         "gtceu:diamatine_empowered_block",
-        "gtceu:diamatine_block", ["extendedcrafting:ender_star", "extendedcrafting:crystaltine_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:nitrogen_dioxide"}}'), "extendedcrafting:crystaltine_component"],
+        "gtceu:diamatine_block", ["extendedcrafting:ender_star", "extendedcrafting:crystaltine_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:nitrogen_dioxide"}}').strongNBT(), "extendedcrafting:crystaltine_component"],
         4000000, 400000
     )
 
