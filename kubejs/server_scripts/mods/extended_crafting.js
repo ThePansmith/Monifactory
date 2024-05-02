@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.combination(
         "gtceu:diamatine_empowered_block",
-        "gtceu:diamatine_block", ["extendedcrafting:ender_star", "extendedcrafting:crystaltine_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:nitrogen_dioxide"}}').strongNBT(), "extendedcrafting:crystaltine_component"],
+        "gtceu:diamatine_block", ["extendedcrafting:ender_star", "extendedcrafting:crystaltine_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:nitrogen_dioxide"}}').weakNBT(), "extendedcrafting:crystaltine_component"],
         4000000, 400000
     )
 
