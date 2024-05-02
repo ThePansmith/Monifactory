@@ -105,6 +105,18 @@ StartupEvents.registry("block", event => {
 		.resistance(2)
 		.tagBlock("mineable/pickaxe")
 		.requiresTool();
+    
+    // Coil Blocks
+    event.create('omnium_coil_block', 'gtceu:coil')
+        .temperature(12500)
+        .level(24)
+        .energyDiscount(16)
+        .tier(9)
+        .coilMaterial(GTMaterials.get('omnium'))
+        .texture('kubejs:block/omnium/coil')
+        .hardness(5)
+        .requiresTool(true)
+        .material('metal')
 });
 
 // StartupEvents.registry('block', event => {

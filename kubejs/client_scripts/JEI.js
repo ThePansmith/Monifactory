@@ -128,5 +128,8 @@ JEIEvents.addItems(event => {
 
     // AE2 stuff
     event.add(Item.of('ae2:facade', {item: "gtceu:infinity_block"}))
-
+  
+    // Posttank stuff
+    event.hide(/gtceu:uxv/)
+    event.hide(/gtceu:opv/)
 })
