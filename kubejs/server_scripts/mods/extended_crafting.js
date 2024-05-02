@@ -55,6 +55,20 @@ ServerEvents.recipes(event => {
         B: 'gtceu:emerald_plate'
     })
 
+    event.remove({ output: 'extendedcrafting:the_ultimate_component' })
+    event.shaped(
+        'extendedcrafting:the_ultimate_component', [
+        ' B ',
+        'ACE',
+        ' U '
+    ], {
+        A: 'extendedcrafting:advanced_component',
+        B: 'extendedcrafting:basic_component',
+        C: 'extendedcrafting:crystaltine_component',
+        E: 'extendedcrafting:elite_component',
+        U: 'extendedcrafting:ultimate_component',
+    })
+
     event.remove({ output: 'extendedcrafting:crystaltine_component' })
     event.shaped(
         'extendedcrafting:crystaltine_component', [
