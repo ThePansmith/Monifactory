@@ -69,7 +69,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('greenhouse')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(3, 3, 1, 0) // 
+        .setMaxIOSize(3, 3, 1, 0) //
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
@@ -78,7 +78,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('draconic_reactor')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(9, 1, 0, 0) // 
+        .setMaxIOSize(9, 1, 0, 0) //
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
@@ -87,7 +87,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('creative_tank_fabricator')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(1, 1, 0, 0) // 
+        .setMaxIOSize(1, 1, 0, 0) //
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
@@ -96,21 +96,21 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('simulation_supercomputer')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(2, 2, 0, 0) // 
+        .setMaxIOSize(2, 2, 0, 0) //
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
-    
+
     // Loot Superfabricator
     event.create('loot_superfabricator')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(1, 1, 0, 0) // 
+        .setMaxIOSize(1, 1, 0, 0) //
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
     })
-    
+
 // Basic Microverse Projector
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('basic_microverse_projector', 'multiblock')
@@ -158,7 +158,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
 
-    // Advanced Microverse Projecctor II 
+    // Advanced Microverse Projecctor II
 
     event.create('advanced_microverse_projector_ii', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -222,7 +222,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks("gtceu:reaction_safe_mixing_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('P', Predicates.blocks("ae2:spatial_pylon"))
-            .where('N', Predicates.blocks("gtceu:taranium_block"))
+            .where('N', Predicates.blocks('gtceu:ruthenium_trinium_americium_neutronate_block'))
             .where('O', Predicates.blocks("extendedcrafting:the_ultimate_block"))
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
@@ -276,7 +276,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
 // Draconic Reactor
-// WIP 
+// WIP
 event.create('draconic_reactor', 'multiblock')
 .rotationState(RotationState.NON_Y_AXIS)
 .recipeTypes('draconic_reactor')

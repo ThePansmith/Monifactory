@@ -586,4 +586,18 @@ ServerEvents.recipes(event => {
     })
     //Making ABS take aluminium rather than osmium so it's obtainable in EV
     event.replaceInput( { id:"gtceu:shaped/blast_alloy_smelter"}, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
+
+    event.recipes.gtceu.alloy_smelter('kubejs:resonating_redstone')
+        .itemInputs('minecraft:redstone_block', 'kubejs:ender_shard')
+        .itemOutputs('kubejs:resonating_crystal')
+        .duration(180)
+        .EUt(16)
+
+    event.recipes.gtceu.alloy_smelter('kubejs:resonating_restonia')
+        .itemInputs('gtceu:restonia_gem', 'kubejs:ender_shard')
+        .itemOutputs('kubejs:resonating_crystal')
+        .duration(180)
+        .EUt(16)
+
+    event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl']).id('kubejs:ender_pearl')
 })
