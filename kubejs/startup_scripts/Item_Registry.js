@@ -239,6 +239,15 @@ StartupEvents.registry('item', event => {
     event.create('ultimate_wire_cutter_head').texture('kubejs:item/ultimate/wire_cutter_head')
     event.create('ultimate_wire_cutter_handle').texture('kubejs:item/ultimate/wire_cutter_handle')
 
+    // Netherite processing midproducts
+    event.create('crushed_ancient_debris').texture('kubejs:item/netherite/crushed_ancient_debris')
+    event.create('purified_ancient_debris').texture('kubejs:item/netherite/purified_ancient_debris')
+    event.create('refined_ancient_debris').texture('kubejs:item/netherite/refined_ancient_debris')
+    event.create('impure_netherite_dust').texture('kubejs:item/netherite/impure_netherite_dust')
+    event.create('purified_netherite_dust').texture('kubejs:item/netherite/purified_netherite_dust')
+    event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
+
+
     // Post tank circuits and whatnot
     const circs = [
         ['matter', 'processor_computer', "UHV"],

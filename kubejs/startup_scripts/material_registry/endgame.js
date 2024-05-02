@@ -36,18 +36,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('monium')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR)
+
     event.create('netherite') //Not actually endgame but will see use in matter circuits
         .ingot()
         .element(GTElements.get("netherite"))
         .color(0x4C484C)
-        .iconSet('shiny')
+        .iconSet('dull')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
 
     event.create('omnic_acid')
         .dust()
         .color(0xff00ff)
         .iconSet('shiny')
-        .components('5x carbon', '4x hydrogen', '3x oxygen', GTMaterials.get('omnium'))
+        .components('5x carbon', '4x hydrogen', '3x oxygen', '4x nitrogen') //Replace Nitrogen with Omnium when we find out how
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     
     // Adding a bunch of parts to existing elements for Endgame purpose
     
