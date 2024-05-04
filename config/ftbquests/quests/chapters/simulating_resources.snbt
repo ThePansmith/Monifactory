@@ -78,7 +78,9 @@
 		{
 			dependencies: ["73C1AB31431B5C11"]
 			description: [
-				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack. Paired with a &aLapidary Calibration Augment&r and a self-sustaining &bHostile Neural Networks&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
+				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack."
+				""
+				"Paired with a self-sustaining &bDeep Mob Evolution&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
 				""
 				"Just like other &bThermal Expansion&r dynamos, the &6Numismatic Dynamo&r can be given tier upgrades to produce more power and gain access to more &aAugment Slots&r."
 			]
