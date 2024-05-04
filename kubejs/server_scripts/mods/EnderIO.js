@@ -27,7 +27,6 @@ ServerEvents.recipes(event => {
         }
     ).id('kubejs:item_conduit')
 
-	// event.remove({ id: "enderio:ender_fluid_conduit" })
     // Manual ender fluid conduit
     event.shaped(
         "4x enderio:ender_fluid_conduit", [
@@ -40,6 +39,8 @@ ServerEvents.recipes(event => {
             P: "enderio:pressurized_fluid_conduit"
         }
     ).id("kubejs:ender_fluid_conduit_upgrade")
+
+    event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
 
     // Assembler item conduit
     event.recipes.gtceu.assembler("kubejs:efficent_item_conduit")
@@ -557,6 +558,7 @@ ServerEvents.recipes(event => {
 
 	// staff of traveling
 	event.replaceInput({id: 'enderio:staff_of_travelling'}, '#forge:ingots/dark_steel', '#forge:rods/dark_steel')
+    event.replaceInput({id: 'enderio:staff_of_travelling'}, 'enderio:ender_crystal', 'enderio:vibrant_crystal')
 
 	// travel anchor
 	event.replaceInput({id: 'enderio:travel_anchor'}, 'enderio:conduit_binder', '#forge:plates/vibrant_alloy')

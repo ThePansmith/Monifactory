@@ -264,7 +264,7 @@
 			id: "57778B08ADACB62D"
 			linked_quest: "4AC51394FB5152E5"
 			shape: "hexagon"
-			x: 3.5d
+			x: 3.25d
 			y: -9.25d
 		}
 		{
@@ -305,20 +305,20 @@
 		{
 			id: "7D217833035647CD"
 			linked_quest: "04A0863937695AC4"
-			x: 6.5d
-			y: 8.0d
+			x: 12.5d
+			y: 8.5d
 		}
 		{
 			id: "4CA98E8FC9082FA2"
 			linked_quest: "5F9C7FB40AD2640B"
-			x: 9.5d
-			y: 8.0d
+			x: 15.5d
+			y: 8.5d
 		}
 		{
 			id: "6E8F35B6CC447F93"
 			linked_quest: "1BC6DDC2D50F9C46"
 			shape: "hexagon"
-			x: 13.5d
+			x: 17.0d
 			y: -8.5d
 		}
 	]
@@ -538,6 +538,7 @@
 				"7A103C8708F3B716"
 				"16139ABAE30BF117"
 				"0F612EAA83D23F9B"
+				"248ABB7F26EB72EE"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Circuits along this line are ZPM, and can all be substituted in recipes."]
@@ -564,6 +565,8 @@
 			dependencies: [
 				"6588C68DE6973BCC"
 				"5EE23A29090BD374"
+				"4612D36D22AB4B34"
+				"6F5BB99060FF03AC"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Circuits along this line are UV, and can both be substituted in recipes."]
@@ -662,8 +665,8 @@
 				type: "item"
 			}]
 			title: "GregTech Electric Tools"
-			x: 8.0d
-			y: 8.0d
+			x: 14.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -676,7 +679,7 @@
 				type: "item"
 			}]
 			title: "&9Backpack"
-			x: 7.0d
+			x: 10.5d
 			y: -8.5d
 		}
 		{
@@ -690,7 +693,7 @@
 				type: "item"
 			}]
 			title: "&9Resonant Backpack"
-			x: 7.0d
+			x: 10.5d
 			y: -2.5d
 		}
 		{
@@ -719,7 +722,7 @@
 				item: "thermal:upgrade_augment_3"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 12.5d
 			y: -4.0d
 		}
 		{
@@ -763,7 +766,7 @@
 				weak_nbt_match: true
 			}]
 			title: "&9Hardened Backpack"
-			x: 7.0d
+			x: 10.5d
 			y: -7.0d
 		}
 		{
@@ -793,7 +796,7 @@
 				type: "item"
 			}]
 			title: "&9Reinforced Backpack"
-			x: 7.0d
+			x: 10.5d
 			y: -5.5d
 		}
 		{
@@ -824,7 +827,7 @@
 				type: "item"
 			}]
 			title: "&9Signalum Backpack"
-			x: 7.0d
+			x: 10.5d
 			y: -4.0d
 		}
 		{
@@ -850,7 +853,7 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 9.0d
+			x: 12.5d
 			y: -8.5d
 		}
 		{
@@ -871,7 +874,7 @@
 				item: "thermal:upgrade_augment_2"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 12.5d
 			y: -7.0d
 		}
 		{
@@ -896,7 +899,7 @@
 				match_nbt: false
 				type: "item"
 			}]
-			x: 9.0d
+			x: 12.5d
 			y: -5.5d
 		}
 		{
@@ -916,8 +919,8 @@
 				type: "item"
 			}]
 			title: "&2Bounties For Monicoins!"
-			x: 11.0d
-			y: 8.0d
+			x: 17.0d
+			y: 8.5d
 		}
 		{
 			description: [
@@ -945,8 +948,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: 8.0d
+			x: 18.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -988,7 +991,7 @@
 				type: "item"
 			}]
 			title: "&2First Foray Into The Microverse"
-			x: 18.0d
+			x: 20.5d
 			y: -8.5d
 		}
 		{
@@ -1022,7 +1025,7 @@
 				type: "item"
 			}]
 			title: "&9Tier Two Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -7.0d
 		}
 		{
@@ -1062,7 +1065,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Three Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -5.5d
 		}
 		{
@@ -1098,7 +1101,7 @@
 				type: "item"
 			}]
 			title: "Tier Four Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -4.0d
 		}
 		{
@@ -1129,7 +1132,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Five Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -2.5d
 		}
 		{
@@ -1152,7 +1155,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Six Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: -1.0d
 		}
 		{
@@ -1176,7 +1179,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Seven Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: 0.5d
 		}
 		{
@@ -1201,7 +1204,7 @@
 				type: "item"
 			}]
 			title: "Tier Eight Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: 4.5d
 		}
 		{
@@ -1226,7 +1229,7 @@
 				type: "item"
 			}]
 			title: "Tier Nine Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: 6.5d
 		}
 		{
@@ -1245,7 +1248,7 @@
 				type: "item"
 			}]
 			title: "Tier Ten Micro Miner"
-			x: 18.0d
+			x: 20.5d
 			y: 8.5d
 		}
 		{
@@ -1271,7 +1274,7 @@
 				type: "item"
 			}]
 			title: "Kanthal Ingots"
-			x: 15.0d
+			x: 18.5d
 			y: -8.5d
 		}
 		{
@@ -1295,7 +1298,7 @@
 				type: "item"
 			}]
 			title: "&2Kanthal Coil Blocks"
-			x: 13.5d
+			x: 17.0d
 			y: -7.0d
 		}
 		{
@@ -1314,7 +1317,7 @@
 				type: "item"
 			}]
 			title: "Nichrome Ingots"
-			x: 15.0d
+			x: 18.5d
 			y: -7.0d
 		}
 		{
@@ -1340,7 +1343,7 @@
 				type: "item"
 			}]
 			title: "&2Nichrome Coil Blocks"
-			x: 13.5d
+			x: 17.0d
 			y: -5.5d
 		}
 		{
@@ -1362,7 +1365,7 @@
 				type: "item"
 			}]
 			title: "&9RTM Alloy"
-			x: 15.0d
+			x: 18.5d
 			y: -5.5d
 		}
 		{
@@ -1382,7 +1385,7 @@
 				type: "item"
 			}]
 			title: "&9RTM Alloy Coil Blocks"
-			x: 13.5d
+			x: 17.0d
 			y: -4.0d
 		}
 		{
@@ -1401,7 +1404,7 @@
 				type: "item"
 			}]
 			title: "High Speed Steel Type G"
-			x: 15.0d
+			x: 18.5d
 			y: -4.0d
 		}
 		{
@@ -1420,7 +1423,7 @@
 				type: "item"
 			}]
 			title: "HSS-G Coil Blocks"
-			x: 13.5d
+			x: 17.0d
 			y: -2.5d
 		}
 		{
@@ -1443,7 +1446,7 @@
 				type: "item"
 			}]
 			title: "Naquadah Ingots"
-			x: 15.0d
+			x: 18.5d
 			y: -2.5d
 		}
 		{
@@ -1463,7 +1466,7 @@
 				type: "item"
 			}]
 			title: "Naquadah Coil Blocks"
-			x: 13.5d
+			x: 17.0d
 			y: -1.0d
 		}
 		{
@@ -1487,7 +1490,7 @@
 				type: "item"
 			}]
 			title: "&2Trinium"
-			x: 15.0d
+			x: 18.5d
 			y: -1.0d
 		}
 		{
@@ -1507,7 +1510,7 @@
 				type: "item"
 			}]
 			title: "&2Trinium Coils"
-			x: 13.5d
+			x: 17.0d
 			y: 0.5d
 		}
 		{
@@ -1533,7 +1536,7 @@
 				type: "item"
 			}]
 			title: "&2Tritanium Ingot"
-			x: 15.0d
+			x: 18.5d
 			y: 0.5d
 		}
 		{
@@ -1548,7 +1551,7 @@
 				type: "item"
 			}]
 			title: "&2Tritanium Coils"
-			x: 13.5d
+			x: 17.0d
 			y: 2.0d
 		}
 		{
@@ -1575,7 +1578,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 15.5d
 			y: -8.5d
 		}
 		{
@@ -1599,7 +1602,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
+			x: 14.0d
 			y: -8.5d
 		}
 		{
@@ -1623,7 +1626,7 @@
 				type: "item"
 			}]
 			title: "Ironman 2"
-			x: 10.5d
+			x: 14.0d
 			y: -7.0d
 		}
 		{
@@ -1653,7 +1656,7 @@
 				type: "item"
 			}]
 			title: "Ironman 3"
-			x: 10.5d
+			x: 14.0d
 			y: -5.5d
 		}
 		{
@@ -1677,7 +1680,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 15.5d
 			y: -7.0d
 		}
 		{
@@ -1701,7 +1704,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 15.5d
 			y: -5.5d
 		}
 		{
@@ -1725,7 +1728,7 @@
 				type: "item"
 			}]
 			title: "Infinity War"
-			x: 10.5d
+			x: 14.0d
 			y: -4.0d
 		}
 		{
@@ -1747,7 +1750,7 @@
 				type: "item"
 			}]
 			title: "&9Captain... Marvel? IDK"
-			x: 12.0d
+			x: 15.5d
 			y: -4.0d
 		}
 		{
@@ -1772,8 +1775,231 @@
 				type: "item"
 			}]
 			title: "Endgame"
-			x: 12.0d
+			x: 15.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["6F5BB99060FF03AC"]
+			id: "4EB9D1ADC4814330"
+			tasks: [{
+				id: "2AAFA7BC6C6517A8"
+				item: "kubejs:matter_processor_computer"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4612D36D22AB4B34"]
+			id: "7704A934F89E4FD9"
+			tasks: [{
+				id: "25F064AE3DC12AA5"
+				item: "kubejs:dimensional_processor_assembly"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4EB9D1ADC4814330"]
+			id: "07057CDE4E021BA7"
+			tasks: [{
+				id: "6F4F2E13D73644F0"
+				item: "kubejs:matter_processor_mainframe"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7704A934F89E4FD9"]
+			id: "5E829641B6FE96E5"
+			tasks: [{
+				id: "6AFA814AA43354BE"
+				item: "kubejs:dimensional_processor_computer"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5E829641B6FE96E5"]
+			id: "1B1D3A66B847D129"
+			tasks: [{
+				id: "41FE8DE484FF65DD"
+				item: "kubejs:dimensional_processor_mainframe"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0C9A9F33EEA3AB5E"]
+			description: [
+				"&6Monic Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Twelve circuits. Unlike past mainframes, you will need to craft more than just a few of them. They're mostly used in the Endgame though, so you don't have to worry too much yet."
+				""
+				"Definitely consider parallelizing your &3Assembly Lines&r if you haven't already. Even just having two or three lines will vastly improve your production speeds and help avoid bottlenecks as you push towards the Creative Chest."
+			]
+			id: "5601A05D8361551D"
+			tasks: [{
+				id: "7C6BFAE0BEAADEA4"
+				item: "kubejs:monic_processor_mainframe"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5054D3FA7E96EB83"]
+			id: "4612D36D22AB4B34"
+			tasks: [{
+				id: "7D7522E4B5D0061A"
+				item: "kubejs:dimensional_processor"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 5.0d
+		}
+		{
+			dependencies: ["248ABB7F26EB72EE"]
+			id: "6F5BB99060FF03AC"
+			tasks: [{
+				id: "621B8C0DD18BFA3A"
+				item: "kubejs:matter_processor_assembly"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5601A05D8361551D"]
+			id: "78411542383DBD9F"
+			tasks: [{
+				id: "621632DB0ADB7720"
+				item: "gtceu:creative_chest"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0F56F4E642BC2B85"]
+			id: "248ABB7F26EB72EE"
+			tasks: [{
+				id: "58B3E75584D6D2D6"
+				item: "kubejs:matter_processor"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5601A05D8361551D"]
+			id: "11FDFB08CD48D66E"
+			tasks: [{
+				id: "703CDB7D8BF05A55"
+				item: "gtceu:max_machine_hull"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"0C9A9F33EEA3AB5E"
+				"1B1D3A66B847D129"
+			]
+			dependency_requirement: "one_completed"
+			id: "4177C4BD329C38DA"
+			tasks: [{
+				id: "168A6D29177E8DBD"
+				item: "gtceu:uiv_machine_hull"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"5E829641B6FE96E5"
+				"3D7924B550A1BBA0"
+				"07057CDE4E021BA7"
+			]
+			dependency_requirement: "one_completed"
+			id: "0B923E8ED6161CA8"
+			tasks: [{
+				id: "1DC59BD73D749A60"
+				item: "gtceu:uev_machine_hull"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3D7924B550A1BBA0"]
+			id: "0C9A9F33EEA3AB5E"
+			tasks: [{
+				id: "12DD7DF8ACAA29E5"
+				item: "kubejs:monic_processor_computer"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["5A8D2BFAF02E6325"]
+			id: "3D7924B550A1BBA0"
+			tasks: [{
+				id: "36FE3694B99326BE"
+				item: "kubejs:monic_processor_assembly"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7979D07FBDC6D170"]
+			id: "5A8D2BFAF02E6325"
+			tasks: [{
+				id: "3EFB11DA4735807C"
+				item: "kubejs:monic_processor"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6F9041F256F517A3"]
+			id: "0F56F4E642BC2B85"
+			tasks: [{
+				id: "0AB88809F545701F"
+				item: "kubejs:matter_processing_unit"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4EA1E0D437528747"]
+			id: "5054D3FA7E96EB83"
+			tasks: [{
+				id: "61502A1FCAC431BA"
+				item: "kubejs:dimensional_processing_unit"
+				type: "item"
+			}]
+			x: 7.25d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6D41F2AF5975E688"]
+			id: "7979D07FBDC6D170"
+			tasks: [{
+				id: "3B038F650DFA2526"
+				item: "kubejs:monic_processing_unit"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -8.5d
 		}
 	]
 	title: "Progression"

@@ -3260,6 +3260,7 @@
 		}
 		{
 			dependencies: ["5A70898C99B828E3"]
+      
 			description: [
 				"The &3Loot Superfabricator&r is a multiblock structure that is made to match the incredible speeds of the &3Simulation Supercomputer&r."
 				""
@@ -3311,6 +3312,17 @@
 			title: "&9Loot Superfabricator"
 			x: 67.5d
 			y: -10.5d
+		}
+		{
+			description: ["not the actual quest, i just wanted a dependacy for the monium unit quest lol"]
+			id: "5B4CCC68D5180D68"
+			tasks: [{
+				id: "6D41F2AF5975E688"
+				item: "gtceu:monium_ingot"
+				type: "item"
+			}]
+			x: 71.75d
+			y: -2.0d
 		}
 	]
 	title: "End Game"

@@ -811,4 +811,27 @@ ServerEvents.recipes(event => {
         mode: "press",
         result: { item: "ae2wtlib:quantum_bridge_card" }
     }).id('kubejs:ae2wtlib/quantum_bridge_card')
+
+    //Fluix Dust Inscriber 
+    // event.remove({ id: 'jei:ae2/inscriber/fluix_dust' }) (I don't know what's wrong with that recipe but it doesn't want to be removed or replaceoutput)
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "middle": {
+                "item": "gtceu:fluix_gem"
+            }
+        },
+        "mode": "inscribe",
+        "result": {
+            "item": "gtceu:fluix_dust"
+        }
+    }).id('kubejs:ae2/fluix_dust_inscriber')
+
+    //Certus Quartz Crystal
+    event.remove({ input: 'ae2:certus_quartz_crystal'})
+    event.replaceOutput(
+        { output: 'ae2:certus_quartz_crystal' },
+        'ae2:certus_quartz_crystal',
+        'gtceu:certus_quartz_gem'
+    )
 })

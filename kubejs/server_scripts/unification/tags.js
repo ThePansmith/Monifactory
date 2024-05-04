@@ -49,6 +49,12 @@ ServerEvents.tags('item', event => {
     // can't replace tags in recipes so we just add the tag to the item instead
     event.add('forge:ingots/redstone_alloy', 'gtceu:red_alloy_ingot')
     event.add('forge:ingots/copper_alloy', 'gtceu:electrical_steel_ingot')
+    event.add('gtceu:circuits/zpm', 'kubejs:matter_processor')
+    event.add('gtceu:circuits/uv', ['kubejs:matter_processor_assembly', 'kubejs:dimensional_processor'])
+    event.add('gtceu:circuits/uhv', ['kubejs:matter_processor_computer', 'kubejs:dimensional_processor_assembly', 'kubejs:monic_processor'])
+    event.add('gtceu:circuits/uev', ['kubejs:matter_processor_mainframe', 'kubejs:dimensional_processor_computer', 'kubejs:monic_processor_assembly'])
+    event.add('gtceu:circuits/uiv', ['kubejs:dimensional_processor_mainframe', 'kubejs:monic_processor_computer'])
+    event.add('gtceu:circuits/max', 'kubejs:monic_processor_mainframe')
 
     event.remove('forge:gears/wood', 'enderio:wood_gear')
     event.remove('forge:gears/stone', 'enderio:stone_gear')

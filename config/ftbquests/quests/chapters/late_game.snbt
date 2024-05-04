@@ -3011,13 +3011,8 @@
 				"5EE23A29090BD374"
 				"79EFCD8E01384C0C"
 			]
-			description: [
-				"The only novel ingredient is &6Tritanium Frames&r."
-				""
-				"&6Wetware Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Nine circuits. Unlike past mainframes, you will need to craft more than just a few of them. They're mostly used in the Endgame though, so you don't have to worry too much yet."
-				""
-				"Definitely consider parallelizing your &3Assembly Lines&r if you haven't already. Even just having two or three lines will vastly improve your production speeds and help avoid bottlenecks as you push towards the Endgame."
-			]
+
+			description: ["The only novel ingredient is &6Tritanium Frames&r."]
 			id: "619D94FE1D9834FA"
 			rewards: [{
 				count: 10
@@ -3032,7 +3027,7 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			title: "The First And Only Tier Nine Circuit"
+			title: "The First Tier Nine Circuit"
 			x: 17.25d
 			y: 22.25d
 		}
@@ -3055,7 +3050,7 @@
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			title: "The Second And Final Tier Eight Circuits"
+			title: "The Second Tier Eight Circuits"
 			x: 15.25d
 			y: 22.25d
 		}
@@ -3074,7 +3069,7 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			title: "&2The Third and Final Tier Seven Circuits"
+			title: "&2The Third Tier Seven Circuits"
 			x: 13.0d
 			y: 22.25d
 		}
@@ -3084,7 +3079,7 @@
 				"13C5F3A7E86D468F"
 			]
 			description: [
-				"The final form of Tier Six circuits, and the final circuit theme."
+				"The final form of Tier Six circuits."
 				""
 				"Using your &2Neuro Processing Units&r, you can craft (grow?) these circuits in a ZPM or better &3Circuit Assembling Machine&r."
 				""

@@ -56,6 +56,11 @@ ServerEvents.recipes(event => {
 		['#forge:dusts/boron'],
 		'2x nuclearcraft:ferroboron_ingot', 15, 120);
 
+    alloySmeltingVariant(
+        ['#forge:ingots/gold', '#forge:dusts/gold'],
+        ['minecraft:soul_sand'],
+        'gtceu:soularium_ingot', 6, 16);
+
     event.recipes.gtceu.alloy_smelter('kubejs:tough_alloy_ingot')
         .itemInputs('#forge:ingots/ferroboron', '#forge:dusts/lithium')
         .itemOutputs('2x nuclearcraft:tough_alloy_ingot')
@@ -175,6 +180,25 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(400)
         .blastFurnaceTemp(2141)
+})
+
+ServerEvents.recipes(event => {
+    event.remove(['gtceu:electric_blast_furnace/blast_kanthal','gtceu:electric_blast_furnace/blast_kanthal_gas'])
+    event.recipes.gtceu.electric_blast_furnace("kubejs:kanthal")
+        .itemInputs('gtceu:kanthal_dust')
+        .itemOutputs('gtceu:kanthal_ingot')
+        .duration(700)
+        .EUt(480)
+        .circuit(1)
+        .blastFurnaceTemp(1800)
+    event.recipes.gtceu.electric_blast_furnace("kubejs:kanthal_gas")
+        .itemInputs('gtceu:kanthal_dust')
+        .itemOutputs('gtceu:kanthal_ingot')
+        .inputFluids(Fluid.of('gtceu:nitrogen', 1000))
+        .duration(469)
+        .EUt(480)
+        .circuit(2)
+        .blastFurnaceTemp(1800)
 })
 
 ServerEvents.recipes(event => {

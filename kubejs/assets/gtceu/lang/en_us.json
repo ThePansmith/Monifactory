@@ -95,7 +95,6 @@
   "material.gtceu.end_steel": "End Steel",
   "material.gtceu.ardite": "Ardite",
   "material.gtceu.manyullyn": "Manyullyn",
-  "material.gtceu.omnium": "Omnium",
   "material.gtceu.draconium": "Draconium",
   "material.gtceu.microversium": "Microversium",
   "material.gtceu.awakened_draconium": "Awakened Draconium",
@@ -104,7 +103,7 @@
   "material.gtceu.knightslime": "Knightslime",
   "material.gtceu.crystal_matrix": "Crystal Matrix",
   "material.gtceu.soularium": "Soularium",
-  "material.gtceu.infinity": "Infinity",
+  "material.gtceu.omnium": "Omnium",
   "material.gtceu.draconic_superconductor": "Draconic Superconductor",
   "material.gtceu.fluix": "Fluix",
   "material.gtceu.iridosmineyes": "Iridiosmine 80/20",
@@ -112,6 +111,15 @@
   "material.gtceu.kaemanite": "Kaemanite",
   "material.gtceu.mythril": "§bMana Infused Metal§r",
   "item.gtceu.mythril_ingot": "§bMana Infused Metal§r",
+  
+  "__POST_TANK_MATERIALS__.header": "=======================",
+  "__POST_TANK_MATERIALS__.flufff": "> Post-Tank Materials <",
+  "__POST_TANK_MATERIALS__.footer": "=======================",
+
+  "material.gtceu.infinity": "Infinity",
+  "material.gtceu.monium": "Monium",
+  "material.gtceu.netherite": "Netherite",
+  "material.gtceu.omnic_acid": "Omnic Acid",
 
   "__CHEMICALS__.header": "=============",
   "__CHEMICALS__.flufff": "> Chemicals <",
