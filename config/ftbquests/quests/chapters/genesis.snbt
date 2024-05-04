@@ -304,7 +304,7 @@
 				}
 			]
 			title: "&9Wrenches Galore"
-			x: 0.0d
+			x: 0.5d
 			y: 2.5d
 		}
 		{
@@ -368,11 +368,11 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.25d
 			y: 2.5d
 		}
 		{
-			dependencies: ["2E8BFA2E719B1C47"]
+			dependencies: ["58566C7BF4C22D86"]
 			description: [
 				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
 				""
@@ -755,7 +755,7 @@
 		}
 		{
 			dependencies: ["6B121BEFD852BC2D"]
-			description: ["&3Diamond Furnaces&f are teven faster, taking only &a25 ticks&f to smelt an item."]
+			description: ["&3Diamond Furnaces&f are even faster, taking only &a25 ticks&f to smelt an item."]
 			id: "1AE46C1970378083"
 			rewards: [{
 				id: "4F7C761D3657868A"
@@ -1205,8 +1205,8 @@
 				type: "checkmark"
 			}]
 			title: "&9&lUse EMI! Use EMI! USE. EMI."
-			x: 1.0d
-			y: -2.0d
+			x: 0.75d
+			y: -1.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1755,10 +1755,14 @@
 		}
 		{
 			dependencies: [
-				"3B200AD6EFF90DFA"
 				"66FCC26399376B55"
+				"2E8BFA2E719B1C47"
 			]
 			description: [
+				"&6Gregtech&r adds a decent of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
+				""
+				"[\"On the topic of crafting, if you are not already familiar with how \", {\"text\": \"recipe viewers\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B200AD6EFF90DFA\" } },\" like EMI or JEI, read that quest first.\"]"
+				""
 				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
 				""
 				"Let's start with &9[+]&r, as it's the simplest: right-click a crafting table, look up the recipe you need and press the &9[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
@@ -1779,8 +1783,8 @@
 				type: "checkmark"
 			}]
 			title: "&9Recipe Trees and Crafting Trees"
-			x: 1.0d
-			y: -1.0d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
