@@ -191,7 +191,6 @@
 			dependencies: ["66FCC26399376B55"]
 			description: ["&9Still very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
 			disable_toast: true
-			hide_dependency_lines: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
 			rewards: [{
@@ -205,8 +204,8 @@
 				title: "Terminal"
 				type: "checkmark"
 			}]
-			x: -10.0d
-			y: 8.5d
+			x: 0.75d
+			y: -1.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -368,7 +367,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.25d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
@@ -379,8 +378,6 @@
 				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
 				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
-				""
-				"[\"On the topic of crafting, if you are not aware of how \", {\"text\": \"crafting trees\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"58566C7BF4C22D86\" } },\" work, read their quest, as they are a massive aid in earlygame crafting.\"]"
 			]
 			icon: {
 				Count: 1b
@@ -1206,7 +1203,7 @@
 			}]
 			title: "&9&lUse EMI! Use EMI! USE. EMI."
 			x: 0.75d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1776,8 +1773,9 @@
 			disable_toast: true
 			icon: "gtceu:crafting_table_cover"
 			id: "58566C7BF4C22D86"
-			size: 1.0d
-			subtitle: "Extremely powerful when crafting."
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Better than any crafting calculator."
 			tasks: [{
 				id: "3768A707E0489471"
 				type: "checkmark"
