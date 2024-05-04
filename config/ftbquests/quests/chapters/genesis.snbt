@@ -191,7 +191,6 @@
 			dependencies: ["66FCC26399376B55"]
 			description: ["&9Still very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
 			disable_toast: true
-			hide_dependency_lines: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
 			rewards: [{
@@ -205,8 +204,8 @@
 				title: "Terminal"
 				type: "checkmark"
 			}]
-			x: -10.0d
-			y: 8.5d
+			x: 0.75d
+			y: -1.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -304,7 +303,7 @@
 				}
 			]
 			title: "&9Wrenches Galore"
-			x: 0.0d
+			x: 0.5d
 			y: 2.5d
 		}
 		{
@@ -368,19 +367,17 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.5d
 			y: 2.5d
 		}
 		{
-			dependencies: ["2E8BFA2E719B1C47"]
+			dependencies: ["58566C7BF4C22D86"]
 			description: [
 				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
 				""
 				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
 				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
-				""
-				"[\"On the topic of crafting, if you are not aware of how \", {\"text\": \"crafting trees\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"58566C7BF4C22D86\" } },\" work, read their quest, as they are a massive aid in earlygame crafting.\"]"
 			]
 			icon: {
 				Count: 1b
@@ -755,7 +752,7 @@
 		}
 		{
 			dependencies: ["6B121BEFD852BC2D"]
-			description: ["&3Diamond Furnaces&f are teven faster, taking only &a25 ticks&f to smelt an item."]
+			description: ["&3Diamond Furnaces&f are even faster, taking only &a25 ticks&f to smelt an item."]
 			id: "1AE46C1970378083"
 			rewards: [{
 				id: "4F7C761D3657868A"
@@ -1205,7 +1202,7 @@
 				type: "checkmark"
 			}]
 			title: "&9&lUse EMI! Use EMI! USE. EMI."
-			x: 1.0d
+			x: 0.75d
 			y: -2.0d
 		}
 		{
@@ -1755,10 +1752,14 @@
 		}
 		{
 			dependencies: [
-				"3B200AD6EFF90DFA"
 				"66FCC26399376B55"
+				"2E8BFA2E719B1C47"
 			]
 			description: [
+				"&6Gregtech&r adds a decent of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
+				""
+				"[\"On the topic of crafting, if you are not already familiar with how \", {\"text\": \"recipe viewers\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B200AD6EFF90DFA\" } },\" like EMI or JEI, read that quest first.\"]"
+				""
 				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
 				""
 				"Let's start with &9[+]&r, as it's the simplest: right-click a crafting table, look up the recipe you need and press the &9[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
@@ -1772,15 +1773,16 @@
 			disable_toast: true
 			icon: "gtceu:crafting_table_cover"
 			id: "58566C7BF4C22D86"
-			size: 1.0d
-			subtitle: "Extremely powerful when crafting."
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Better than any crafting calculator."
 			tasks: [{
 				id: "3768A707E0489471"
 				type: "checkmark"
 			}]
 			title: "&9Recipe Trees and Crafting Trees"
-			x: 1.0d
-			y: -1.0d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
