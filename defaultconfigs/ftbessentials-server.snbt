@@ -10,4 +10,30 @@
 # 	}
 # }
 
-{ }
+{ 
+	teleportation: {
+		# Allows users to set 'homes', which they can then freely teleport to by using /home afterwards
+		home: {
+			# Cooldown between /home commands (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.home.cooldown
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 0
+			
+			# Default: true
+			enabled: true
+			
+			# Max amount of homes a user can have.
+			# You can override this with FTB Ranks using ftbessentials.home.max
+			# Default: 1
+			# Range: 0 ~ 2147483647
+			max: 10
+			
+			# Warm-up time before /home command executes (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.home.warmup
+			# Default: 0
+			# Range: 0 ~ 604800
+			warmup: 0
+		}
+    }
+}
