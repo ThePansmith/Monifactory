@@ -1190,7 +1190,7 @@
 				""
 				"[\"Hover over an item and press \",{\"keybind\":\"key.jei.bookmark\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"\\\"Add/Remove Bookmark\\\" in keybind option\"}},\" to bookmark it. To remove a bookmarked item from the list, press \",{\"keybind\":\"key.jei.bookmark\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"\\\"Add/Remove Bookmark\\\" in keybind option\"}},\" on the bookmark.\"]"
 				""
-				"One of the remarkable features of EMI is that it's also capable of helping you with recipes, covered more in the quest to the right of this one."
+				"[\"One of the remarkable features of EMI is that it's also capable of helping you with recipes, covered more in \", {\"text\": \"this\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"58566C7BF4C22D86\" } },\" quest.\"]"
 			]
 			disable_toast: true
 			icon: "ftbquests:book"
@@ -1756,7 +1756,7 @@
 				"2E8BFA2E719B1C47"
 			]
 			description: [
-				"&6Gregtech&r adds a decent of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
+				"&6Gregtech&r adds a decent bit of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
 				""
 				"[\"On the topic of crafting, if you are not already familiar with how \", {\"text\": \"recipe viewers\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B200AD6EFF90DFA\" } },\" like EMI or JEI, read that quest first.\"]"
 				""
@@ -2096,7 +2096,7 @@
 			description: [
 				"[\"The \",{\"text\":\"Progression tab\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"395B849AC6294153\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the chapter\"}},\" was added so you can keep track of the important bits of the pack.\"]"
 				""
-				"Circuits are the baseline of the entire monifactory-GTCEu progression, so keep climbing!"
+				"Circuits are the baseline of the entire Monifactory progression, so keep climbing!"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
