@@ -218,14 +218,6 @@ ServerEvents.recipes(event => {
         'gtceu:silicon_ingot'
     )
 
-    //Stainless Steel
-    event.remove({ id: 'gtceu:mixer/stainless_steel_from_invar'})
-    event.recipes.gtceu.mixer("stainless_steel_invar")
-    .itemInputs("4x gtceu:iron_dust", "gtceu:invar_dust", "gtceu:manganese_dust", "gtceu:chromium_dust")
-    .itemOutputs("9x gtceu:stainless_steel_dust")
-    .duration(600)
-    .EUt(120)
-    .circuit(1)
 
     //Ender Pearl dust Electrolysis
     //event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })
