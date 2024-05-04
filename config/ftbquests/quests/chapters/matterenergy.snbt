@@ -12,8 +12,8 @@
 			id: "20253D681F399A92"
 			linked_quest: "6D03BB4A6A4BBA27"
 			shape: "hexagon"
-			x: -1.75d
-			y: -1.0d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			id: "58FC19A7FB4407CE"
@@ -1090,7 +1090,10 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["15AE607E2EDD0369"]
+			dependencies: [
+				"15AE607E2EDD0369"
+				"41D3154853B9F90C"
+			]
 			description: ["Placing these in one of your &6ME Drives&r will provide your ME network with an &ainfinite&r amount of water or cobblestone. Use &6interfaces&r or &6export busses&r to provide said substances to whereever you need it."]
 			id: "26C9F1514FD08C81"
 			rewards: [{
@@ -1348,6 +1351,7 @@
 				item: "expatternprovider:ex_drive"
 				type: "item"
 			}]
+			title: "&9Extended Drive"
 			x: -2.0d
 			y: 8.5d
 		}
@@ -1358,7 +1362,7 @@
 				""
 				"Gregtech circuits fall in this weird middle area where while you need a ton of them, the recipes you will be using change often enough to where passiving them at this point isn't viable."
 				""
-				"You could use a crafting card to help you, but the &9ME Requester&r allows for a better solution, being able to tell your system to keep a stock of many different items within a single block, perfect for keeping circuits stocked."
+				"You could use a crafting card to help you, but the &9ME Requester&r allows for a better solution, being able to tell your system to keep a stock of many different items and how many it should craft at a time, perfect for keeping circuits stocked."
 			]
 			id: "0D1A64EBBA742196"
 			rewards: [{

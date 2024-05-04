@@ -888,12 +888,28 @@
 			]
 			icon: "gtceu:steam_grinder"
 			id: "41C2E49E70D76330"
-			rewards: [{
-				count: 7
-				id: "6B113D9EF57E5CDE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 7
+					id: "6B113D9EF57E5CDE"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "42A15BBED3DD9B74"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:silk_touch"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 1.75d
 			tasks: [
 				{

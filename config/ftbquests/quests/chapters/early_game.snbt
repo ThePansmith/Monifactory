@@ -44,6 +44,12 @@
 			x: 5.25d
 			y: 8.5d
 		}
+		{
+			id: "27DFA4CC3F039428"
+			linked_quest: "26C9F1514FD08C81"
+			x: 5.25d
+			y: 18.5d
+		}
 	]
 	quests: [
 		{
@@ -1256,8 +1262,8 @@
 				type: "item"
 			}]
 			title: "Annealed Copper"
-			x: 0.75d
-			y: 14.0d
+			x: 0.9375d
+			y: 12.9375d
 		}
 		{
 			dependencies: ["2823D7B4C8F900CA"]

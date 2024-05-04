@@ -79,10 +79,32 @@
 					type: "item"
 				}
 				{
-					auto: "invisible"
+					id: "19598A860287E726"
+					item: {
+						Count: 1b
+						id: "gtceu:diamond_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 767
+								ToolSpeed: 8.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "no_toast"
 					icon: "enderio:cake_base"
-					id: "24FE5D5A412EA666"
-					title: "FREE CAKES"
+					id: "612FEB595285D353"
+					title: "&6Infinite Cakes!"
 					type: "custom"
 				}
 			]
@@ -169,6 +191,7 @@
 			dependencies: ["66FCC26399376B55"]
 			description: ["&9Still very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
 			disable_toast: true
+			hide_dependency_lines: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
 			rewards: [{
@@ -182,8 +205,8 @@
 				title: "Terminal"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -1.5d
+			x: -10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -212,7 +235,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "ULV Beginings"
+			subtitle: "ULV Beginnings"
 			tasks: [
 				{
 					count: 12L
@@ -356,6 +379,8 @@
 				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
 				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
+				""
+				"[\"On the topic of crafting, if you are not aware of how \", {\"text\": \"crafting trees\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"58566C7BF4C22D86\" } },\" work, read their quest, as they are a massive aid in earlygame crafting.\"]"
 			]
 			icon: {
 				Count: 1b
@@ -730,7 +755,7 @@
 		}
 		{
 			dependencies: ["6B121BEFD852BC2D"]
-			description: ["&3Diamond Furnaces&f are the fastest available, taking only &a25 ticks&f to smelt an item."]
+			description: ["&3Diamond Furnaces&f are teven faster, taking only &a25 ticks&f to smelt an item."]
 			id: "1AE46C1970378083"
 			rewards: [{
 				id: "4F7C761D3657868A"
@@ -766,11 +791,7 @@
 		}
 		{
 			dependencies: ["1AE46C1970378083"]
-			description: [
-				"While &3Obsidian Furnaces&f are the same speed as &3Diamond Furnaces&f, they are blastproof."
-				""
-				"&5Need to buff these to either smelt twice as fast or have 2 smelting slots."
-			]
+			description: ["&3Obsidian Furnaces&f are slightly faster than &3Diamond Furnaces&f, taking only &a20 ticks&r to smelt an items, and are also blastproof."]
 			id: "3969150B59EA38A2"
 			rewards: [{
 				id: "7BADB8C39CADB5FF"
@@ -1175,7 +1196,6 @@
 				"One of the remarkable features of EMI is that it's also capable of helping you with recipes, covered more in the quest to the right of this one."
 			]
 			disable_toast: true
-			hide_dependency_lines: true
 			icon: "ftbquests:book"
 			id: "3B200AD6EFF90DFA"
 			size: 1.0d
@@ -1185,8 +1205,8 @@
 				type: "checkmark"
 			}]
 			title: "&9&lUse EMI! Use EMI! USE. EMI."
-			x: -11.5d
-			y: -0.5d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1347,7 +1367,7 @@
 				""
 				"You'll need a small bit of &6Silver&f for this dynamo. If you haven't found a &6Galena vein&f yet (which is where Silver is), then consider \"buying\" some &6Silver Ore&r using &9Monicoins&r. You won't need a ton of silver and lead just yet, so it won't bankrupt you."
 				""
-				"Keep in mind that &eDynamos only output power when burning through fuel, and only the block attached directly to the coil will get provided with power&f."
+				"Keep in mind that &eDynamos only output power when burning through fuel, and only the block/cable attached directly to the coil will get provided with power&f."
 			]
 			id: "39D4174834F3879D"
 			rewards: [{
@@ -1734,7 +1754,10 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["3B200AD6EFF90DFA"]
+			dependencies: [
+				"3B200AD6EFF90DFA"
+				"66FCC26399376B55"
+			]
 			description: [
 				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
 				""
@@ -1749,7 +1772,6 @@
 			disable_toast: true
 			icon: "gtceu:crafting_table_cover"
 			id: "58566C7BF4C22D86"
-			optional: true
 			size: 1.0d
 			subtitle: "Extremely powerful when crafting."
 			tasks: [{
@@ -1757,8 +1779,8 @@
 				type: "checkmark"
 			}]
 			title: "&9Recipe Trees and Crafting Trees"
-			x: -10.0d
-			y: -0.5d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1919,7 +1941,7 @@
 		{
 			dependencies: ["2FA9404468E4BBD9"]
 			description: [
-				"The &9Tinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r. &9This is also used for upgrading thermal items.&r"
+				"The &9Tinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r. &9This is also used for upgrading thermal items&r."
 				""
 				"The Turbo Charger is a little more expensive, but is able to charge items at a &omuch&r faster rate and is able to charge items that use &aRF&r and &aEU&r."
 			]
@@ -2154,123 +2176,6 @@
 		}
 		{
 			dependencies: [
-				"70026930847E8EC0"
-				"6F9041F256F517A3"
-			]
-			description: [
-				"Neeve, the master of Leveret. Summon him, and then bless him with your presents, and you shall gain access to his all-powerful rabbit."
-				""
-				"All items will be &c&lconsumed&r&r throught this quest chain."
-			]
-			hide: true
-			hide_dependency_lines: true
-			hide_details_until_startable: true
-			icon: "minecraft:rabbit_hide"
-			id: "44B49F5F76ADE0C2"
-			optional: true
-			tasks: [{
-				id: "7E0065B408204E13"
-				type: "checkmark"
-			}]
-			title: "Neeve: The Begining"
-			x: -10.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["44B49F5F76ADE0C2"]
-			description: ["Almost there! One more after this"]
-			hide: true
-			hide_details_until_startable: true
-			icon: "minecraft:rabbit_hide"
-			id: "407A580EFD127B93"
-			optional: true
-			tasks: [
-				{
-					consume_items: true
-					count: 64L
-					id: "375AB099001CDEC3"
-					item: "minecraft:rotten_flesh"
-					title: "Neeve's Body"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 32L
-					id: "53351F27BB92BD42"
-					item: "minecraft:bone"
-					title: "Neeve's Bones"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "1E661FCC2798ACB2"
-					item: "kubejs:heart_of_a_universe"
-					title: "Neeve's Heart"
-					type: "item"
-				}
-			]
-			title: "Neeve: Mid Game"
-			x: -8.25d
-			y: 8.5d
-		}
-		{
-			dependencies: ["407A580EFD127B93"]
-			description: ["Writer department forgot to add fluff here"]
-			hide: true
-			hide_details_until_startable: true
-			icon: "minecraft:rabbit_hide"
-			id: "06D8466B2C58201D"
-			optional: true
-			rewards: [{
-				id: "42A56AE6A025DE8C"
-				item: {
-					Count: 1b
-					id: "minecraft:rabbit_spawn_egg"
-					tag: {
-						display: {
-							Name: "{\"text\":\"Neeve's Rabbit (Leveret)\",\"color\":\"light_purple\",\"bold\":true}"
-						}
-					}
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					consume_items: true
-					id: "5BC3D980767295EA"
-					item: "kubejs:universal_navigator"
-					title: "&9Neeve Finder"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "13DC281D3155BF67"
-					item: "kubejs:microminer_t10"
-					title: "&9Neeve Retriever"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 64L
-					id: "7295F203DE286C05"
-					item: "kubejs:smore_64"
-					title: "&9Neeve Feeder"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "68DFDED564D9F5FE"
-					item: "gtceu:ancient_gold_coin"
-					title: "&9Neeve Bargaining Chip"
-					type: "item"
-				}
-			]
-			title: "Neeve: End Game"
-			x: -6.5d
-			y: 8.5d
-		}
-		{
-			dependencies: [
 				"081101DEE6227D87"
 				"06E9B9DDDB245F38"
 			]
@@ -2294,7 +2199,6 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "Slightly Nerfed"
 			tasks: [
 				{
 					id: "5EF5A8A2767A69E3"
