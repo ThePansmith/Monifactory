@@ -17,8 +17,6 @@ StartupEvents.registry("block", event => {
     event.create('warp_controller').displayName("Warp Controller").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
     event.create('ultimate_generator').displayName("Ultimate Generator").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
     event.create('ultimate_power_storage').displayName("Ultimate Power Storage").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('draconium_casing').displayName("Draconium Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('awakened_draconium_casing').displayName("Awakened Draconium Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
 
     // Micro Miner Cores
     event.create('electrum_micro_miner_core')
@@ -107,8 +105,34 @@ StartupEvents.registry("block", event => {
 		.resistance(2)
 		.tagBlock("mineable/pickaxe")
 		.requiresTool();
+
+    //Casing stuff
     
-    // Coil Blocks
+    event.create('draconium_casing', 'gtceu:renderer')
+        .displayName("Draconium Casing")
+        .soundType('metal')
+        .resistance(6)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/draconium/casing')})
+
+    event.create('awakened_draconium_casing', 'gtceu:renderer')
+        .displayName("Awakened Draconium Casing")
+        .soundType('metal')
+        .resistance(6)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/draconium/awakened_casing')})
+    
+    // Post-Tank MB blocks
+    event.create('omnic_matrix_machine_casing', 'gtceu:renderer')
+        .hardness(5)
+        .requiresTool(true)
+        .material('metal')
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/omnium/casing')})
+
     event.create('omnium_coil_block', 'gtceu:coil')
         .temperature(12500)
         .level(24)
