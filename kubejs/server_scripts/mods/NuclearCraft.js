@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: "nuclearcraft:fission_reactor_casing" })
     event.shaped(
-        "nuclearcraft:fission_reactor_casing", [
+        "8x nuclearcraft:fission_reactor_casing", [
             "DDD",
             "DFD",
             "DDD"
