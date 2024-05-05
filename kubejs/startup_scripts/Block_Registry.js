@@ -1,8 +1,7 @@
 StartupEvents.registry("block", event => {
     event.create('excitationcoil', 'cardinal').displayName("Excitation Coil").soundType('metal').renderType('cutout').box(3, 0, 3, 13, 1, 13).tag("mineable/pickaxe").box(4, 1, 4, 12, 9, 12);
     event.create('dust', 'falling').soundType('sand').hardness(0.4).resistance(0.4).tag("mineable/shovel").displayName("Dust Block").property(BlockProperties.FALLING);
-    event.create("microverse_casing").displayName("Microverse Casing").soundType('metal').hardness(2.5).resistance(2.5).requiresTool(true).tagBlock("mineable/pickaxe");
-    event.create('starry_diamond_block').displayName("Starry Diamond Block").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
+    event.create('starry_diamond_block').displayName("Starry Diamond Block").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true).textureAll('kubejs:block/microverse/starry_diamond_block');
     event.create('dark_steel_machine_hull').displayName("Dark Steel Machine Hull").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
     event.create('infinity_dust_block', 'falling').displayName('Infinity Dust Block').soundType('sand').resistance(6).hardness(5).tagBlock("mineable/shovel").requiresTool(true);
     event.create('compressed_infinity_dust_block', 'falling').displayName('Compressed Infinity Dust Block').soundType('sand').resistance(6).hardness(5).tagBlock("mineable/shovel").requiresTool(true);
@@ -107,6 +106,16 @@ StartupEvents.registry("block", event => {
 		.requiresTool();
 
     //Casing stuff
+
+    event.create("microverse_casing", 'gtceu:renderer')
+        .displayName("Microverse Casing")
+        .soundType('metal')
+        .hardness(2.5)
+        .resistance(2.5)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/microverse/casing')})
+
     
     event.create('draconium_casing', 'gtceu:renderer')
         .displayName("Draconium Casing")
@@ -138,7 +147,7 @@ StartupEvents.registry("block", event => {
         .level(24)
         .energyDiscount(16)
         .tier(9)
-        .coilMaterial(GTMaterials.get('omnium'))
+        .coilMaterial(() => GTMaterials.get('omnium'))
         .texture('kubejs:block/omnium/coil')
         .hardness(5)
         .requiresTool(true)

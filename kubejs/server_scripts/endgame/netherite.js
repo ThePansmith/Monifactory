@@ -65,4 +65,20 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(250000)
         .blastFurnaceTemp(12000)
+    
+    //Nethline
+    event.remove({ input: "minecraft:netherite_scrap" })
+
+    event.recipes.gtceu.forming_press('inert_nether_compound_ingot')
+        .itemInputs('gtceu:hot_europium_ingot', '4x gtceu:dark_soularium_dust', '4x kubejs:primal_mana')
+        .itemOutputs('kubejs:inert_nether_compound_ingot')
+        .duration(600)
+        .EUt(16380)
+
+    event.recipes.gtceu.omnic_forge('netherite_ingot_final')
+        .itemInputs('kubejs:inert_nether_compound_ingot', '4x kubejs:diamond_lattice', '4x minecraft:netherite_scrap')
+        .itemOutputs('gtceu:netherite_ingot')
+        .duration(400)
+        .EUt(250000)
+
 })
