@@ -1666,24 +1666,6 @@
 			y: 17.5d
 		}
 		{
-			dependencies: ["7256E0064F967C93"]
-			description: ["&2A more compact infinite Water source. Place this as a cover on any GT machine and it will insert 16B of water every second."]
-			id: "30D21FCB95653F97"
-			rewards: [{
-				id: "170C50B4A6DACB45"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6ACD2087A6EE95FF"
-				item: "gtceu:infinite_water_cover"
-				type: "item"
-			}]
-			title: "&2Greggy Infinite Water"
-			x: 10.5d
-			y: 19.0d
-		}
-		{
 			dependencies: ["0C4E18B05F9E68DE"]
 			description: [
 				"&2Ender Fluid Link Covers are GTCEu's Ender Tanks&r. Each Cover sends their fluids through a frequency defined by an &68-digit hexadecimal number&r (0-9, then A-F for each digit). That gives you &64.29 billion&r channels to work with! "
@@ -2309,7 +2291,7 @@
 		{
 			dependencies: ["73C1AB31431B5C11"]
 			description: [
-				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack." 
+				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack."
 				""
 				"Paired with a self-sustaining &bDeep Mob Evolution&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
 				""

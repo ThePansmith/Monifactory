@@ -308,7 +308,7 @@
 			description: [
 				"&2Hydrofluoric Acid is a dangerous acid made by mixing Hydrogen and Fluorine. It is used in the production of Polytetrafluoroethylene, and in Uranium and Naquadah processing."
 				""
-				"Fluorine is best obtained from Topaz or Bastnasite Ore processing from their Micro Miner missions, and from processing renewable Black Granite."
+				"Fluorine is best obtained from Topaz or Bastnasite Ore processing from their Micro Miner missions, and from processing renewable &9Deepslate."
 			]
 			id: "476F71CC0B0AC2A4"
 			rewards: [{
@@ -2065,7 +2065,7 @@
 				""
 				"&3Rock Breakers&r are first used to achieve renewable &6Deepslate&r. This recipe runs at &9EV&r or higher."
 				""
-				"After this, &3Macerators&r should pulverise the &6Black Granite&r into &6Black Granite Dust&r and a chance of &6Thorium&r. It is recommended to overclock this recipe as much as you can, in order to maximize output of &6Thorium&r."
+				"After this, &3Macerators&r should pulverise the &9Deepslate&r into &9Deepslate Dust&r and a chance of &6Thorium&r. It is recommended to overclock this recipe as much as you can, in order to maximize output of &6Thorium&r."
 				""
 				"A &3Centrifuge&r then turns &6Deepslate Dust&r into &6Biotite Dust&r and &6Silicon Dioxide Dust&r. The latter can be electrolysed, yielding &6Silicon&r and &6Oxygen&r."
 				""

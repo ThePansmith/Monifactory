@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
     }
     )
 
-    // Steam oven & grinder
+    // Steam multis
     event.shaped(
         "gtceu:steam_oven", [
         'BGB',
@@ -477,6 +477,12 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(2)
 
+        event.recipes.gtceu.macerator("saltpeter_dust")
+        .itemInputs("4x #forge:sandstone")
+        .itemOutputs("gtceu:saltpeter_dust")
+        .duration(300)
+        .EUt(30)
+
     //
     // Recycling below here
     //
@@ -645,4 +651,11 @@ ServerEvents.recipes(event => {
     p2p.forEach(type => {
         event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
     })
+
+    event.remove({ id: 'gtceu:assembler/cover_infinite_water'})
+    event.recipes.gtceu.assembler("kubejs:infinite_water_cover")
+        .itemInputs("2x gtceu:mv_electric_pump", "thermal:device_water_gen", "#gtceu:circuits/mv")
+        .itemOutputs('gtceu:infinite_water_cover')
+        .duration(100)
+        .EUt(128)
 })

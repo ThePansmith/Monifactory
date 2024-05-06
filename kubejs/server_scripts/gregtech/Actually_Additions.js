@@ -18,8 +18,9 @@ ServerEvents.recipes(event => {
         ['minecraft:rotten_flesh', 'minecraft:leather', 'leather'],
         ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 'prismarine_crystals'],
         ['gtceu:steel_ingot', 'gtceu:damascus_steel_ingot', 'damascus_steel'],
-        ['gtceu:diamantine_block', 'kubejs:starry_diamond_block', 'starry_diamond'],
-        ['#minecraft:coals', 'gtceu:coal_perfect', 'perfect_coal']
+        ['gtceu:diamatine_block', 'kubejs:starry_diamond_block', 'starry_diamond'],
+        ['#minecraft:coals', 'gtceu:coal_perfect', 'perfect_coal'],
+        ['gtceu:obsidian_dust', 'enderio:grains_of_infinity', 'temp_grains'] //temp
     ]
 
     const crystals = ['enori', 'void', 'palis', 'diamatine', 'restonia', 'emeradic']
