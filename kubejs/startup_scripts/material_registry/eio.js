@@ -59,7 +59,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .cableProperties(2048, 1, 0, true)
 
     event.create("dark_soularium")
-        .ingot().fluid()
+        .ingot()
         .color(0x7c674d).iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_DENSE)
 

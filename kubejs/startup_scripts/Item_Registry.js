@@ -12,6 +12,8 @@ StartupEvents.registry('item', event => {
     event.create('microminer_t8').maxStackSize(16)
     event.create('microminer_t9').maxStackSize(16)
     event.create('microminer_t10').maxStackSize(16)
+    event.create('microminer_t11').maxStackSize(16)
+    event.create('microminer_t12').maxStackSize(16)
 
     // Microminer Components
     event.create('basic_mining_laser').displayName("§eBasic Mining Laser")
@@ -246,6 +248,7 @@ StartupEvents.registry('item', event => {
     event.create('impure_netherite_dust').texture('kubejs:item/netherite/impure_netherite_dust')
     event.create('purified_netherite_dust').texture('kubejs:item/netherite/purified_netherite_dust')
     event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
+    event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
 
     // Post tank circuits and whatnot

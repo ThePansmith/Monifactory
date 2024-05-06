@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 
+
     // Omnic Acid
     event.recipes.gtceu.chemical_reactor('omnic_acid')
         .itemInputs('5x gtceu:carbon_dust', '4x kubejs:mote_of_omnium')
@@ -24,9 +25,9 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:crushed_ancient_debris', 'gtceu:omnic_acid_dust')
         .inputFluids(Fluid.of('water', 2000))
         .itemOutputs('kubejs:purified_ancient_debris')
+        .chancedOutput('gtceu:platinum_dust', 3300, 0)
         .duration(1200)
         .EUt(16380)
-        .chancedOutput('gtceu:platinum_dust', 3300, 0)
 
     event.recipes.gtceu.thermal_centrifuge('ancient_debris_refining')
         .itemInputs('kubejs:purified_ancient_debris')
@@ -64,4 +65,20 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(250000)
         .blastFurnaceTemp(12000)
+    
+    //Nethline
+    event.remove({ input: "minecraft:netherite_scrap" })
+
+    event.recipes.gtceu.forming_press('inert_nether_compound_ingot')
+        .itemInputs('gtceu:hot_europium_ingot', '4x gtceu:dark_soularium_dust', '4x kubejs:primal_mana')
+        .itemOutputs('kubejs:inert_nether_compound_ingot')
+        .duration(600)
+        .EUt(16380)
+
+    event.recipes.gtceu.omnic_forge('netherite_ingot_final')
+        .itemInputs('kubejs:inert_nether_compound_ingot', '4x kubejs:diamond_lattice', '4x minecraft:netherite_scrap')
+        .itemOutputs('gtceu:netherite_ingot')
+        .duration(400)
+        .EUt(250000)
+
 })

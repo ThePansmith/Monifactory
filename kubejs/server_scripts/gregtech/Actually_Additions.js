@@ -17,7 +17,9 @@ ServerEvents.recipes(event => {
         ['minecraft:quartz', 'minecraft:prismarine_shard', 'prismarine_shard'],
         ['minecraft:rotten_flesh', 'minecraft:leather', 'leather'],
         ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 'prismarine_crystals'],
-        ['gtceu:steel_ingot', 'gtceu:damascus_steel_ingot', 'damascus_steel']
+        ['gtceu:steel_ingot', 'gtceu:damascus_steel_ingot', 'damascus_steel'],
+        ['gtceu:diamantine_block', 'kubejs:starry_diamond_block', 'starry_diamond'],
+        ['#minecraft:coals', 'gtceu:coal_perfect', 'perfect_coal']
     ]
 
     const crystals = ['enori', 'void', 'palis', 'diamatine', 'restonia', 'emeradic']
@@ -124,29 +126,6 @@ ServerEvents.recipes(event => {
     //         E: 'kubejs:empowerer_casing'
     //     })
 
-    // Resonator
-    event.shaped(
-        'gtceu:mv_resonator', [
-        'PVP',
-        'VHV',
-        'PVP'
-    ], {
-        P: 'gtceu:red_alloy_plate',
-        H: 'gtceu:mv_machine_hull',
-        V: 'gtceu:void_gem'
-    }).id('kubejs:shaped/mv_resonator')
-
-    event.recipes.gtceu.resonator('kubejs:red_coal')
-        .itemInputs('#minecraft:coals')
-        .itemOutputs('gtceu:coal_perfect')
-        .duration(80)
-        .EUt(128)
-
-    event.recipes.gtceu.resonator('kubejs:starry_diamond_block')
-        .itemInputs('#forge:storage_blocks/diamond')
-        .itemOutputs('kubejs:starry_diamond_block')
-        .duration(80)
-        .EUt(128)
 
     //Crystal Gears
     crystals.forEach(crystal => {
