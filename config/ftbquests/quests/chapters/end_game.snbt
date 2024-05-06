@@ -2210,7 +2210,10 @@
 			y: -17.0d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
+			dependencies: [
+				"0DE33F0066D49759"
+				"3B57A9816A61C1DC"
+			]
 			description: [
 				"A single-block solution to all your power needs."
 				""
@@ -2224,8 +2227,8 @@
 				type: "item"
 			}]
 			title: "Creative RF Source"
-			x: 34.75d
-			y: -20.5d
+			x: 27.75d
+			y: -21.75d
 		}
 		{
 			dependencies: ["3171F83E24C8F740"]
@@ -2306,7 +2309,7 @@
 			]
 			title: "&2Simulation Supercomputer"
 			x: 40.5d
-			y: -10.0d
+			y: -10.25d
 		}
 		{
 			dependencies: [
@@ -2353,8 +2356,8 @@
 				type: "item"
 			}]
 			title: "&2Creative Power, Gregtech Edition"
-			x: 36.75d
-			y: -20.5d
+			x: 27.75d
+			y: -23.25d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -3081,7 +3084,7 @@
 			]
 			title: "&9Loot Superfabricator"
 			x: 40.5d
-			y: -8.0d
+			y: -8.25d
 		}
 		{
 			dependencies: ["6C01042124B219B0"]
@@ -3176,7 +3179,11 @@
 		}
 		{
 			dependencies: ["456D0255B6ECFA51"]
-			description: ["Perhaps another chain or whatnot goes here"]
+			description: [
+				"Placeholder for any number of chains or mechanics or whatnot "
+				""
+				"Likely new MM missions"
+			]
 			id: "5A256CEC02CC747D"
 			tasks: [{
 				id: "41381A01B531235B"
@@ -3295,8 +3302,8 @@
 				item: "gtceu:assembly_line"
 				type: "item"
 			}]
-			x: 30.5d
-			y: -21.75d
+			x: 34.75d
+			y: -20.5d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3423,6 +3430,7 @@
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
+			description: ["yet another placeholder for a unknown number of chains, mechanics, etc"]
 			id: "68734C70E2D19616"
 			tasks: [{
 				id: "5299B82EB34822E2"
