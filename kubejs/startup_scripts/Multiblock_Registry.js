@@ -481,8 +481,6 @@ event.create('loot_superfabricator', 'multiblock')
             "gtceu:block/multiblock/implosion_compressor", false)
 
     // Draconic Fusion Reactor
-    // The real one, with parallels (the current pretank one will be retired once DE is fully ported)
-    // The current DFR will have it's lang changed to prevent confusion
     // Design will be something along the lines of https://i.imgur.com/jqhI84A.png
     event.create('draconic_fusion_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)

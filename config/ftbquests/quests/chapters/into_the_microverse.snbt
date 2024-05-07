@@ -9,7 +9,7 @@
 	quest_links: [{
 		id: "3494A1A9317B9F3B"
 		linked_quest: "5F688F22A3DB2ADD"
-		x: -10.75d
+		x: -11.0d
 		y: -4.0d
 	}]
 	quests: [
