@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
         ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 'prismarine_crystals'],
         ['gtceu:steel_ingot', 'gtceu:damascus_steel_ingot', 'damascus_steel'],
         ['gtceu:diamatine_block', 'kubejs:starry_diamond_block', 'starry_diamond'],
-        ['#minecraft:coals', 'gtceu:coal_perfect', 'perfect_coal'],
+        ['gtceu:coke_gem', 'gtceu:coal_perfect', 'perfect_coal'],
         ['gtceu:obsidian_dust', 'enderio:grains_of_infinity', 'temp_grains'] //temp
     ]
 

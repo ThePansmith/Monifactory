@@ -32,6 +32,17 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
 
+    // Advanced Microverse Projector III Recipe Type
+
+    event.create('advanced_microverse_iii')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(12, 16, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING);
+
+
 
     // Naquadah Reactor I Recipe type
 
@@ -408,4 +419,93 @@ event.create('loot_superfabricator', 'multiblock')
                 .build())
         .workableCasingRenderer(new ResourceLocation('kubejs', 'block/omnium/casing'),
             "gtceu:block/multiblock/implosion_compressor", false)
+
+    // Microverse Projector III
+    // Also a parrelizable Projector for the previous tiers
+    // Temp copypasted design, will use something like https://i.imgur.com/yP39XtI.png.
+    event.create('advanced_microverse_projector_iii', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes(['basic_microverse', 'advanced_microverse', 'advanced_microverse_ii', 'advanced_microverse_iii'])
+        .recipeModifiers(GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
+        .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("#########", "#########", "##CCCCC##", "##CVCVC##", "##CCCCC##", "##CVCVC##", "##CCCCC##", "#########", "#########")
+            .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
+            .aisle("##CCCCC##", "#CDDDDDC#", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "#CDDDDDC#", "##CCCCC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDDAAADDG", "GDDAAADDG", "GDDAAADDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDDAAADDG", "GDDAAADDG", "GDDAAADDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDDAAADDG", "GDDAAADDG", "GDDAAADDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CCCCC##", "#CDDDDDC#", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "#CDDDDDC#", "##CCCCC##")
+            .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
+            .aisle("#########", "#########", "##CCSCC##", "##CGGGC##", "##CGGGC##", "##CGGGC##", "##CCCCC##", "#########", "#########")
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('D', Predicates.blocks('kubejs:starry_diamond_block'))
+            .where('C', Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(128)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+            .where('V', Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
+            .where('A', Predicates.air())
+            .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("kubejs:block/microverse/casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+
+    // Advanced Assembly line
+    // Could have it's own recipes as well
+    // Design will be something along the lines of https://i.imgur.com/jqhI84A.png
+    event.create('advanced_assline', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('assembly_line')
+        .recipeModifiers(GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
+        .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("#########", "#########", "##CCCCC##", "##CVCVC##", "##CCCCC##", "##CVCVC##", "##CCCCC##", "#########", "#########")
+            .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
+            .aisle("##CCCCC##", "#CDDDDDC#", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "#CDDDDDC#", "##CCCCC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDDAAADDG", "GDDAAADDG", "GDDAAADDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDDAAADDG", "GDDAAADDG", "GDDAAADDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDDAAADDG", "GDDAAADDG", "GDDAAADDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CCCCC##", "#CDDDDDC#", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "#CDDDDDC#", "##CCCCC##")
+            .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
+            .aisle("#########", "#########", "##CCSCC##", "##CGGGC##", "##CGGGC##", "##CGGGC##", "##CCCCC##", "#########", "#########")
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('D', Predicates.blocks('kubejs:starry_diamond_block'))
+            .where('C', Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(128)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+            .where('V', Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
+            .where('A', Predicates.air())
+            .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("kubejs:block/microverse/casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+
+    // Draconic Fusion Reactor
+    // The real one, with parallels (the current pretank one will be retired once DE is fully ported)
+    // The current DFR will have it's lang changed to prevent confusion
+    // Design will be something along the lines of https://i.imgur.com/jqhI84A.png
+    event.create('draconic_fusion_reactor', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('draconic_reactor')
+        .recipeModifiers(GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK))
+        .appearanceBlock(() => Block.getBlock('kubejs:draconium_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+        .aisle("#CCC#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#CCC#")
+        .aisle("CCCCC", "CAIAC", "GAAAG", "GAAAG", "GAAAG", "CAIAC", "CCCCC")
+        .aisle("CCCCC", "CIMIC", "CAAAC", "CIFIC", "CAAAC", "CIMIC", "CCCCC")
+        .aisle("CCCCC", "CAIAC", "GAAAG", "GAAAG", "GAAAG", "CAIAC", "CCCCC")
+        .aisle("#CSC#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#CCC#")
+        .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+        .where('C', Predicates.blocks('kubejs:draconium_casing').setMinGlobalLimited(50)
+            .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+        .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+        .where('I', Predicates.blocks('gtceu:hsse_frame'))
+        .where('M', Predicates.blocks('gtceu:assembly_line_unit'))
+        .where('F', Predicates.blocks('gtceu:crystal_matrix_block'))
+        .where('A', Predicates.air())
+        .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("kubejs:block/draconium/casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+        
 })

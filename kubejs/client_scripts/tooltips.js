@@ -63,6 +63,7 @@ ItemEvents.tooltip(tooltip => {
 
     // Multiblocks
     tooltip.add('gtceu:draconic_reactor', Text.translatable('gtceu.draconic_reactor.desc'))
+    tooltip.add('gtceu:draconic_fusion_reactor', Text.translatable('gtceu.draconic_fusion_reactor.desc'))
     tooltip.add('gtceu:simulation_supercomputer', Text.translatable('gtceu.simulation_supercomputer.desc'))
     tooltip.add('gtceu:loot_superfabricator', Text.translatable('gtceu.loot_superfabricator.desc'))
     tooltip.add('gtceu:greenhouse', Text.translatable('gtceu.greenhouse.desc'))
@@ -70,6 +71,9 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:advanced_microverse_projector', Text.translatable('gtceu.advanced_microverse_projector.desc'))
     tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.advanced_microverse_projector_ii.desc'))
     tooltip.add('gtceu:creative_tank_fabricator', Text.translatable('gtceu.creative_tank_fabricator.desc'))
+    tooltip.add('gtceu:advanced_assline', Text.translatable('gtceu.advanced_assline.desc'))
+    tooltip.add('gtceu:advanced_microverse_projector_iii', Text.translatable('gtceu.advanced_microverse_projector_iii.desc'))
+    tooltip.add('gtceu:advanced_microverse_projector_iii', Text.translatable('gtceu.advanced_microverse_projector_iii_2.desc'))
 
     tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
         text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
@@ -83,6 +87,9 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
+    tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
+    tooltip.add(['gtceu:advanced_microverse_projector_iii', 'gtceu:advanced_assline', 'gtceu:draconic_fusion_reactor'], 'Can parallelize with Parallel Control Hatches.')
+
     //Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
     tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
@@ -94,5 +101,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray('Gaze into the Abyss...'))
     tooltip.add('kubejs:infinity_catalyst', Text.darkGray('One is all, and all is one.'))
     tooltip.add('gtceu:infinity_ingot', Text.darkGray('The fury of the universe in the palm of your hand.'))
+    tooltip.add('gtceu:monium_ingot', Text.darkGray('The serenity of the universe in the palm of your hand.'))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
 })

@@ -3283,11 +3283,10 @@
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
-			description: ["same"]
 			id: "63CC578C3558E0AF"
 			tasks: [{
 				id: "1E6F38616AA5D63C"
-				item: "gtceu:basic_microverse_projector"
+				item: "gtceu:advanced_microverse_projector_iii"
 				type: "item"
 			}]
 			x: 30.5d
@@ -3299,14 +3298,17 @@
 			id: "73A44214C2B44D53"
 			tasks: [{
 				id: "025BAF9655B5AB49"
-				item: "gtceu:assembly_line"
+				item: "gtceu:advanced_assline"
 				type: "item"
 			}]
-			x: 34.75d
-			y: -20.5d
+			x: 32.5d
+			y: -23.25d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
+			dependencies: [
+				"0DE33F0066D49759"
+				"73A44214C2B44D53"
+			]
 			description: [
 				"an unknown amount of steps go here"
 				""
@@ -3320,7 +3322,7 @@
 				item: "ftbquests:barrier"
 				type: "item"
 			}]
-			x: 32.5d
+			x: 34.75d
 			y: -23.25d
 		}
 		{
@@ -3331,8 +3333,8 @@
 				item: "ftbquests:barrier"
 				type: "item"
 			}]
-			x: 30.5d
-			y: -19.0d
+			x: 34.75d
+			y: -20.5d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -3462,10 +3464,21 @@
 			x: 45.5d
 			y: -21.5d
 		}
+		{
+			dependencies: ["456D0255B6ECFA51"]
+			id: "6138FB8766AD6F8C"
+			tasks: [{
+				id: "0BE78C6BD408CFEB"
+				item: "gtceu:draconic_fusion_reactor"
+				type: "item"
+			}]
+			x: 40.5d
+			y: -13.5d
+		}
 	]
 	subtitle: [
 		"Getting overhauled!"
-		"Everything beyond Tank is WIP and subject to change!"
+		"Everything beyond Tank is WIP and will change!"
 		"Feel free to share feedback!"
 	]
 	title: "End Game"
