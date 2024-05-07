@@ -1390,11 +1390,7 @@
 		}
 		{
 			dependencies: ["49B872B193268554"]
-			description: [
-				"&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."
-				""
-				"Fun fact: you'll need to make 487 motes. You've got all this automated, right?"
-			]
+			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
 			icon: "kubejs:mote_of_omnium"
 			id: "7A7FFE9E89D19A2F"
 			rewards: [{
@@ -3011,7 +3007,6 @@
 				"5EE23A29090BD374"
 				"79EFCD8E01384C0C"
 			]
-
 			description: ["The only novel ingredient is &6Tritanium Frames&r."]
 			id: "619D94FE1D9834FA"
 			rewards: [{

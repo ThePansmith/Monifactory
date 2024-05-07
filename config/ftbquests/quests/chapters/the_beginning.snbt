@@ -284,7 +284,7 @@
 			description: [
 				"Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with &9monicoins&r."
 				""
-				"The appearance can be customized by crafting the drawer into &aFramed Compacting Drawer&r and putting it into a &aFraming Table&r, or using a &aHand Framing Tool&r."
+				"The appearance can be customized by crafting the drawer into &aFramed Compacting Drawer&r and then using a &9Framing Template&r or your crafting grid."
 			]
 			id: "7460F22545A4EFB2"
 			rewards: [{
@@ -888,12 +888,28 @@
 			]
 			icon: "gtceu:steam_grinder"
 			id: "41C2E49E70D76330"
-			rewards: [{
-				count: 7
-				id: "6B113D9EF57E5CDE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 7
+					id: "6B113D9EF57E5CDE"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "42A15BBED3DD9B74"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:silk_touch"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 1.75d
 			tasks: [
 				{
@@ -978,7 +994,11 @@
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
-			description: ["Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."]
+			description: [
+				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
+				""
+				"&5You can automate grains via molecular reassembly, as current methods are nonfunctional."
+			]
 			icon: "enderio:grains_of_infinity"
 			id: "1CA6D620309F2B9E"
 			rewards: [{

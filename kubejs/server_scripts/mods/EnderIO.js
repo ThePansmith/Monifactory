@@ -648,8 +648,9 @@ ServerEvents.recipes(event => {
     //Whatever
     event.replaceInput({ input: '#forge:ingots/copper_alloy' }, 'enderio:copper_alloy_ingot', 'gtceu:pulsating_iron_ingot')
 
-    //Clear tank
+    //Clear tanks
     event.shapeless('enderio:fluid_tank', ['enderio:fluid_tank'])
+    event.shapeless('enderio:pressurized_fluid_tank', ['enderio:pressurized_fluid_tank'])
 
     //Cheaper me conduit recipes from nomi
     event.recipes.gtceu.assembler("kubejs:dense_me_conduit")

@@ -2034,11 +2034,7 @@
 				"28558A445F62D737"
 				"47E4558362202D5D"
 			]
-			description: [
-				"&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."
-				""
-				"Fun fact: you'll need to make 487 motes. You've got all this automated, &oright&r?"
-			]
+			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
 			id: "281DE48E7260BC8E"
 			shape: "hexagon"
 			size: 3.0d
@@ -2053,30 +2049,22 @@
 			y: -6.75d
 		}
 		{
-			dependencies: [
-				"281DE48E7260BC8E"
-				"617C16A07F56A338"
-				"27BB630411F4ADB0"
-				"4F7D97AF4E6192C8"
-				"484F6F88089BAB10"
-				"7602F1DD33E6AA64"
-				"3F0F33CD64D1ED8D"
-			]
+			dependencies: ["2D9A95AC50CCB988"]
 			description: ["A catalyst forged from &9Omnium&r, &6Empowered Gears&r, various enhanced &6Nether Stars&r, and a core made of &6The Ultimate Material&r."]
 			id: "45B17E923E03264B"
-			size: 3.0d
+			size: 1.0d
 			tasks: [{
 				id: "4264F181616FC28C"
 				item: "kubejs:eternal_catalyst"
 				type: "item"
 			}]
-			x: 45.5d
-			y: -7.0d
+			x: 32.5d
+			y: -15.25d
 		}
 		{
 			dependencies: [
 				"45B17E923E03264B"
-				"2D9A95AC50CCB988"
+				"5A256CEC02CC747D"
 			]
 			description: [
 				"Reinforcing &6Heart of a Universe&r with &6Chaotic Cores&r, many &6Piles of Neutrons&r, and a bunch of &6Eternal Catalysts&r produces an &cInfinity Catalyst&r."
@@ -2084,21 +2072,21 @@
 				"This material is the core of most creative-tier crafting recipes."
 			]
 			id: "1D00150456DEF379"
-			size: 4.0d
+			size: 1.0d
 			subtitle: "Are you ready to go infinite?"
 			tasks: [{
 				id: "6E04AE0160E4D09E"
 				item: "kubejs:infinity_catalyst"
 				type: "item"
 			}]
-			x: 57.0d
-			y: -7.0d
+			x: 38.25d
+			y: -15.25d
 		}
 		{
 			dependencies: ["281DE48E7260BC8E"]
 			description: ["&6Chaotic Cores&r are the ultimate tier of &bDraconic Evolution&r core, used for the most powerful and advanced items."]
 			id: "3171F83E24C8F740"
-			size: 3.0d
+			size: 1.0d
 			subtitle: "The culmination of so much effort."
 			tasks: [{
 				count: 4L
@@ -2108,7 +2096,7 @@
 			}]
 			title: "Chaotic Cores"
 			x: 25.5d
-			y: -13.5d
+			y: -11.75d
 		}
 		{
 			dependencies: ["6F9041F256F517A3"]
@@ -2128,7 +2116,7 @@
 				"Onward to the final challenge: the &9Creative Chest&r!"
 			]
 			id: "2D9A95AC50CCB988"
-			size: 3.5d
+			size: 1.0d
 			subtitle: "Now this is not the end.\\nIt is not even the beginning of the end.\\nBut it is, perhaps, the end of the beginning."
 			tasks: [{
 				id: "55C6A472371D7AEC"
@@ -2136,8 +2124,8 @@
 				type: "item"
 			}]
 			title: "&2Creative Tank"
-			x: 57.0d
-			y: -13.5d
+			x: 32.5d
+			y: -9.25d
 		}
 		{
 			dependencies: ["1D00150456DEF379"]
@@ -2155,28 +2143,28 @@
 				"You can do it!"
 			]
 			id: "4EA1E0D437528747"
-			size: 4.0d
+			size: 1.0d
 			tasks: [{
 				id: "67517FC01121D069"
 				item: "gtceu:infinity_ingot"
 				type: "item"
 			}]
-			x: 67.5d
-			y: -7.0d
+			x: 38.25d
+			y: -17.0d
 		}
 		{
 			dependencies: ["27EBB5AAF8A40F3D"]
 			description: ["Probably."]
 			id: "6F9041F256F517A3"
-			size: 3.0d
+			size: 1.0d
 			subtitle: "No hypothetical aliens were harmed in the harvesting of this item."
 			tasks: [{
 				id: "34944C8F2D44E07E"
 				item: "kubejs:heart_of_a_universe"
 				type: "item"
 			}]
-			x: 48.75d
-			y: -13.5d
+			x: 32.5d
+			y: -11.75d
 		}
 		{
 			dependencies: ["22DC32C2B67EFD25"]
@@ -2186,28 +2174,22 @@
 				"Might probably be obvious, but this miner gathers a &6Heart of a Universe&r."
 			]
 			id: "27EBB5AAF8A40F3D"
-			size: 3.0d
+			size: 1.0d
 			tasks: [{
 				id: "624B7498A1144A6F"
 				item: "kubejs:microminer_t10"
 				type: "item"
 			}]
 			title: "&9Tier Ten Micro Miner"
-			x: 41.25d
-			y: -13.5d
+			x: 30.25d
+			y: -11.75d
 		}
 		{
 			dependencies: [
-				"4EA1E0D437528747"
-				"42566D73F0F8188D"
-				"4CF399EC00A65E3A"
-				"6E8D4566A63A3146"
-				"3B57A9816A61C1DC"
-				"4EFA6F2466231C23"
-				"1C861E0C62D5B97D"
-				"6FD5CF3913492676"
-				"2F21C6B6F145EA81"
-				"640FB912A1742929"
+				"5601A05D8361551D"
+				"68734C70E2D19616"
+				"1A313CE1A75B909E"
+				"7C9C91EC9F3930C2"
 			]
 			description: [
 				"You win."
@@ -2217,34 +2199,36 @@
 				"I hope you enjoyed playing &9Monifactory&r."
 			]
 			id: "2EBB9A154522348F"
-			size: 5.0d
-			subtitle: "Smoke me a kipper, I'll be back for breakfast"
+			size: 1.0d
 			tasks: [{
 				id: "392DAFD3A4019E34"
 				item: "gtceu:creative_chest"
 				type: "item"
 			}]
 			title: "&9&lCreative Chest&r"
-			x: 78.5d
-			y: -7.0d
+			x: 48.25d
+			y: -17.0d
 		}
 		{
-			dependencies: ["1D00150456DEF379"]
+			dependencies: [
+				"0DE33F0066D49759"
+				"3B57A9816A61C1DC"
+			]
 			description: [
 				"A single-block solution to all your power needs."
 				""
 				"This baby pushes out 2.14 GRF/t per side!"
 			]
 			id: "10A6C332D8BED5FD"
-			size: 3.5d
+			size: 1.0d
 			tasks: [{
 				id: "0DA711CB36A29601"
 				item: "draconicevolution:creative_op_capacitor"
 				type: "item"
 			}]
 			title: "Creative RF Source"
-			x: 57.0d
-			y: -1.75d
+			x: 27.75d
+			y: -21.75d
 		}
 		{
 			dependencies: ["3171F83E24C8F740"]
@@ -2261,7 +2245,7 @@
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
-			size: 3.0d
+			size: 1.0d
 			subtitle: "How much do you think these solar panels weigh? "
 			tasks: [{
 				count: 2L
@@ -2270,11 +2254,11 @@
 				type: "item"
 			}]
 			title: "&9Neutronium Solar Panel"
-			x: 33.75d
-			y: -13.5d
+			x: 27.75d
+			y: -11.75d
 		}
 		{
-			dependencies: ["2D9A95AC50CCB988"]
+			dependencies: ["456D0255B6ECFA51"]
 			description: [
 				"The &3Simulation Supercomputer&r is a multiblock structure that performs &9HNN&r simulations like the &3Simulation Chamber&r, but is capable of overclocking these simulations to incredible speeds."
 				""
@@ -2286,7 +2270,6 @@
 			]
 			icon: "gtceu:simulation_supercomputer"
 			id: "5A70898C99B828E3"
-			size: 3.0d
 			tasks: [
 				{
 					id: "5C159D99CDA8EEE0"
@@ -2325,111 +2308,15 @@
 				}
 			]
 			title: "&2Simulation Supercomputer"
-			x: 67.5d
-			y: -13.5d
+			x: 40.5d
+			y: -10.25d
 		}
 		{
-			id: "27BB630411F4ADB0"
-			tasks: [{
-				id: "148735810418655F"
-				item: "gtceu:palis_empowered_gear"
-				type: "item"
-			}]
-			x: 45.5d
-			y: -2.5d
-		}
-		{
-			id: "484F6F88089BAB10"
-			tasks: [{
-				id: "068E4D09E0B3AC83"
-				item: "gtceu:restonia_empowered_gear"
-				type: "item"
-			}]
-			x: 44.0d
-			y: -2.5d
-		}
-		{
-			id: "7602F1DD33E6AA64"
-			tasks: [{
-				id: "40AD30AD6748EF18"
-				item: "gtceu:emeradic_empowered_gear"
-				type: "item"
-			}]
-			x: 47.0d
-			y: -2.5d
-		}
-		{
-			id: "4F7D97AF4E6192C8"
-			tasks: [{
-				id: "5D3D9F711921969E"
-				item: "gtceu:diamatine_empowered_gear"
-				type: "item"
-			}]
-			x: 44.0d
-			y: -1.0d
-		}
-		{
-			id: "3F0F33CD64D1ED8D"
-			tasks: [{
-				id: "2E17FC9B38005B55"
-				item: "gtceu:enori_empowered_gear"
-				type: "item"
-			}]
-			x: 45.5d
-			y: -1.0d
-		}
-		{
-			id: "617C16A07F56A338"
-			tasks: [{
-				id: "7D78B52C07C95C4A"
-				item: "gtceu:void_empowered_gear"
-				type: "item"
-			}]
-			x: 47.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
-			description: ["Forged from the &craw fury&r of the universe, this set of tools will be require to craft your Magnum Opus."]
-			hide_dependency_lines: true
-			icon: "kubejs:infinity_wrench"
-			id: "42566D73F0F8188D"
-			subtitle: "Making the perfect item requires perfect tools"
-			tasks: [
-				{
-					id: "6EC86152DABE9C01"
-					item: "kubejs:infinity_file"
-					type: "item"
-				}
-				{
-					id: "67DEDB5346729921"
-					item: "kubejs:infinity_hammer"
-					type: "item"
-				}
-				{
-					id: "08F4B7B75DFA16AB"
-					item: "kubejs:infinity_screwdriver"
-					type: "item"
-				}
-				{
-					id: "4A64827ABA2985B4"
-					item: "kubejs:infinity_wrench"
-					type: "item"
-				}
-				{
-					id: "7D86837DF0C5E029"
-					item: "kubejs:infinity_wire_cutter"
-					type: "item"
-				}
+			dependencies: [
+				"4EA1E0D437528747"
+				"22DC32C2B67EFD25"
 			]
-			title: "Infinity Tool Set"
-			x: 78.5d
-			y: -1.25d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
 			description: ["Even more creative energy blocks!"]
-			hide_dependency_lines: true
 			id: "3B57A9816A61C1DC"
 			subtitle: "Is Neutronium not enough?!"
 			tasks: [{
@@ -2438,17 +2325,16 @@
 				type: "item"
 			}]
 			title: "The Final Solar Panel"
-			x: 79.0d
-			y: -2.75d
+			x: 27.75d
+			y: -17.0d
 		}
 		{
-			dependencies: ["4EA1E0D437528747"]
+			dependencies: ["113E9543ADB1666B"]
 			description: [
 				"Finally, a simple way to store all 2.1 billion blocks of dirt that have been laying around!"
 				""
 				"&5I do want to have this be a functional storage upgrade."
 			]
-			hide_dependency_lines: true
 			id: "4CF399EC00A65E3A"
 			tasks: [{
 				id: "639C72FD2123C478"
@@ -2456,58 +2342,22 @@
 				type: "item"
 			}]
 			title: "&9Creative Storage Upgrade"
-			x: 76.5d
-			y: -1.25d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
-			description: ["The fastest flight."]
-			hide_dependency_lines: true
-			id: "4EFA6F2466231C23"
-			tasks: [{
-				consume_items: true
-				id: "7D6B65EEC3863252"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:creative"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			title: "Creative Jetpack"
-			x: 77.5d
-			y: -1.25d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
-			description: ["Why convert your RF to AE when you could just have infinite AE instead?"]
-			hide_dependency_lines: true
-			id: "6E8D4566A63A3146"
-			tasks: [{
-				id: "1B8701D8C5992B1D"
-				item: "ae2:creative_energy_cell"
-				type: "item"
-			}]
-			title: "Creative Energy Cell"
-			x: 80.5d
-			y: -1.25d
+			x: 40.5d
+			y: -6.75d
 		}
 		{
 			dependencies: ["10A6C332D8BED5FD"]
 			description: ["&2Configurable to output any number of GT Volts and Amps."]
 			id: "19084E91F357C8C2"
-			size: 3.0d
+			size: 1.0d
 			tasks: [{
 				id: "71ED5BF32C12DA66"
 				item: "gtceu:creative_energy"
 				type: "item"
 			}]
 			title: "&2Creative Power, Gregtech Edition"
-			x: 67.5d
-			y: -1.75d
+			x: 27.75d
+			y: -23.25d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -3158,9 +3008,8 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4EA1E0D437528747"]
+			dependencies: ["1D00150456DEF379"]
 			description: ["Instead of using cables to move your data around, why not just have all the data packed in a single block?"]
-			hide_dependency_lines: true
 			id: "1C861E0C62D5B97D"
 			tasks: [{
 				id: "3BE677A49268E12B"
@@ -3168,35 +3017,12 @@
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
-			x: 78.0d
-			y: -2.75d
+			x: 40.5d
+			y: -15.25d
 		}
 		{
-			dependencies: ["4EA1E0D437528747"]
-			description: ["Finally, a simple way to store all 2.1 billion blocks of dirt that have been laying around!"]
-			hide_dependency_lines: true
-			icon: "thermal:machine_catalyst_creative_augment"
-			id: "6FD5CF3913492676"
-			tasks: [
-				{
-					id: "0919C8EFD8AF69FA"
-					item: "thermal:machine_efficiency_creative_augment"
-					type: "item"
-				}
-				{
-					id: "5DA18E27143AFD25"
-					item: "thermal:machine_catalyst_creative_augment"
-					type: "item"
-				}
-			]
-			title: "Thermal Augments"
-			x: 79.5d
-			y: -1.25d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
-			description: ["Kind of like the previous &9infinite cells&r, but you can partition this one in a cell workbench to tell what fluids it should stock/"]
-			hide_dependency_lines: true
+			dependencies: ["2D9A95AC50CCB988"]
+			description: ["Kind of like the previous &9infinite cells&r, but you can partition this one in a cell workbench to tell what fluids it should stock."]
 			id: "2F21C6B6F145EA81"
 			tasks: [{
 				id: "390C1F547BDF7D2B"
@@ -3204,63 +3030,11 @@
 				type: "item"
 			}]
 			title: "&9Creative Fluid Cell"
-			x: 80.0d
-			y: -2.75d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
-			description: ["With capacitors like these, who needs chargers?"]
-			hide_dependency_lines: true
-			id: "640FB912A1742929"
-			tasks: [{
-				consume_items: true
-				id: "37AECF86ED76FEF4"
-				item: {
-					Count: 1b
-					ForgeCaps: {
-						Parent: {
-							energy: {
-								energy: 0
-							}
-							module_host: {
-								modules: [ ]
-								properties: {
-									charge_armor: {
-										hud: 1b
-									}
-									charge_curios: {
-										hud: 1b
-									}
-									charge_held_item: {
-										hud: 1b
-									}
-									charge_hot_bar: {
-										hud: 1b
-									}
-									charge_main: {
-										hud: 1b
-									}
-								}
-								provider_id: [I;
-									1332154685
-									1428049052
-									-1092552679
-									694338582
-								]
-							}
-						}
-					}
-					id: "draconicevolution:creative_capacitor"
-				}
-				type: "item"
-			}]
-			title: "Creative Capacitor"
-			x: 77.0d
-			y: -2.75d
+			x: 30.25d
+			y: -9.25d
 		}
 		{
 			dependencies: ["5A70898C99B828E3"]
-      
 			description: [
 				"The &3Loot Superfabricator&r is a multiblock structure that is made to match the incredible speeds of the &3Simulation Supercomputer&r."
 				""
@@ -3268,62 +3042,431 @@
 				""
 				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your third &9Heart of a Universe&r."
 			]
-			hide_text_until_complete: true
 			icon: "gtceu:loot_superfabricator"
-			id: "5EAD96FFF35F5B9D"
-			size: 2.0d
+			id: "161F61C28DBC5941"
+			size: 1.0d
 			tasks: [
 				{
-					id: "62C2E89B1FD1F376"
+					id: "47C6FEC171CDB1BC"
 					item: "gtceu:loot_superfabricator"
 					type: "item"
 				}
 				{
 					count: 45L
-					id: "7CBF58EEA3AF8B2D"
+					id: "6DCABB6D6F8FC3E5"
 					item: "gtceu:atomic_casing"
 					type: "item"
 				}
 				{
 					count: 26L
-					id: "37BC6A237752EC4F"
+					id: "426F764AA56C5A81"
 					item: "gtceu:omnium_block"
 					type: "item"
 				}
 				{
 					count: 18L
-					id: "4316D6E3C131A4F1"
+					id: "3BE7B0A7D3A77CD5"
 					item: "gtceu:shock_proof_cutting_casing"
 					type: "item"
 				}
 				{
 					count: 13L
-					id: "34FAE0CA437C742E"
+					id: "7C30A02C61FE6077"
 					item: "gtceu:energetic_alloy_block"
 					type: "item"
 				}
 				{
 					count: 17L
-					id: "6AC4D204D85CA630"
+					id: "77269C9328705964"
 					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
 			]
 			title: "&9Loot Superfabricator"
-			x: 67.5d
-			y: -10.5d
+			x: 40.5d
+			y: -8.25d
 		}
 		{
-			description: ["not the actual quest, i just wanted a dependacy for the monium unit quest lol"]
-			id: "5B4CCC68D5180D68"
+			dependencies: ["6C01042124B219B0"]
+			id: "29A0F78E8EAFCAAE"
 			tasks: [{
-				id: "6D41F2AF5975E688"
+				id: "799EBD080343F600"
+				item: "kubejs:matter_processor"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -8.75d
+		}
+		{
+			dependencies: [
+				"6F9041F256F517A3"
+				"5BFB37CA7C058AC8"
+			]
+			id: "456D0255B6ECFA51"
+			size: 1.0d
+			tasks: [{
+				id: "04C6C839119CE5F5"
+				item: "kubejs:matter_processor_mainframe"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -11.75d
+		}
+		{
+			dependencies: ["29A0F78E8EAFCAAE"]
+			id: "2EBF2DFA5907D7F1"
+			tasks: [{
+				id: "5D783CB7F735A748"
+				item: "kubejs:matter_processor_assembly"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -9.75d
+		}
+		{
+			dependencies: ["2EBF2DFA5907D7F1"]
+			id: "5BFB37CA7C058AC8"
+			tasks: [{
+				id: "1D4FFE8CCCFD21C5"
+				item: "kubejs:matter_processor_computer"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -10.75d
+		}
+		{
+			dependencies: [
+				"281DE48E7260BC8E"
+				"2D9A95AC50CCB988"
+			]
+			description: ["Now, you could make this before you get tank, it's perfectly do-able, but there's nothing that really needs it."]
+			id: "7C4E04E3EA603000"
+			tasks: [{
+				id: "528FBBDEA6B0FB36"
+				item: "kubejs:omnium_coil_block"
+				type: "item"
+			}]
+			title: "&9Omnium Coil"
+			x: 32.5d
+			y: -6.75d
+		}
+		{
+			dependencies: ["7C4E04E3EA603000"]
+			id: "113E9543ADB1666B"
+			tasks: [{
+				id: "25D96E6575B38623"
+				item: "gtceu:netherite_ingot"
+				type: "item"
+			}]
+			title: "&9Netherite"
+			x: 38.25d
+			y: -6.75d
+		}
+		{
+			dependencies: ["2D9A95AC50CCB988"]
+			description: [""]
+			id: "4261BDA34D716EC8"
+			size: 1.0d
+			subtitle: "Not just for tanks anymore!"
+			tasks: [{
+				id: "567872742E26A724"
+				item: "gtceu:creative_tank_fabricator"
+				type: "item"
+			}]
+			title: "&9Matter Replicator"
+			x: 35.5d
+			y: -9.25d
+		}
+		{
+			dependencies: ["456D0255B6ECFA51"]
+			description: [
+				"Placeholder for any number of chains or mechanics or whatnot "
+				""
+				"Likely new MM missions"
+			]
+			id: "5A256CEC02CC747D"
+			tasks: [{
+				id: "41381A01B531235B"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -13.5d
+		}
+		{
+			dependencies: ["456D0255B6ECFA51"]
+			id: "3F2FC421B1CC2D0A"
+			tasks: [{
+				id: "69C0420732DEC277"
+				item: "gtceu:uev_machine_hull"
+				type: "item"
+			}]
+			x: 40.5d
+			y: -11.75d
+		}
+		{
+			dependencies: ["1BABC1CF44534AE0"]
+			id: "1B32B86C8AF41947"
+			tasks: [{
+				id: "5510ABA29D84165F"
+				item: "kubejs:dimensional_processor"
+				type: "item"
+			}]
+			x: 36.75d
+			y: -19.0d
+		}
+		{
+			dependencies: ["1B32B86C8AF41947"]
+			id: "768A28309AF076F0"
+			tasks: [{
+				id: "625EE1D6ACF139BA"
+				item: "kubejs:dimensional_processor_assembly"
+				type: "item"
+			}]
+			x: 34.75d
+			y: -19.0d
+		}
+		{
+			dependencies: ["768A28309AF076F0"]
+			id: "5D0252A2E07BB99D"
+			tasks: [{
+				id: "695BE113997E870F"
+				item: "kubejs:dimensional_processor_computer"
+				type: "item"
+			}]
+			x: 32.5d
+			y: -19.0d
+		}
+		{
+			dependencies: ["5D0252A2E07BB99D"]
+			id: "0DE33F0066D49759"
+			tasks: [{
+				id: "06E276EFBE371067"
+				item: "kubejs:dimensional_processor_mainframe"
+				type: "item"
+			}]
+			x: 32.5d
+			y: -21.75d
+		}
+		{
+			dependencies: ["113E9543ADB1666B"]
+			id: "6C01042124B219B0"
+			tasks: [{
+				id: "770096E913BF92CF"
+				item: "kubejs:matter_processing_unit"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -7.75d
+		}
+		{
+			dependencies: ["4EA1E0D437528747"]
+			id: "1BABC1CF44534AE0"
+			tasks: [{
+				id: "401F688126A8FD9C"
+				item: "kubejs:dimensional_processing_unit"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -19.0d
+		}
+		{
+			dependencies: ["0DE33F0066D49759"]
+			id: "7BF0FE766903A1D1"
+			tasks: [{
+				id: "57A8722148FBD716"
+				item: "gtceu:uiv_machine_hull"
+				type: "item"
+			}]
+			x: 34.75d
+			y: -21.75d
+		}
+		{
+			dependencies: ["0DE33F0066D49759"]
+			description: ["same"]
+			id: "63CC578C3558E0AF"
+			tasks: [{
+				id: "1E6F38616AA5D63C"
+				item: "gtceu:basic_microverse_projector"
+				type: "item"
+			}]
+			x: 30.5d
+			y: -20.5d
+		}
+		{
+			dependencies: ["0DE33F0066D49759"]
+			description: ["parraelizable"]
+			id: "73A44214C2B44D53"
+			tasks: [{
+				id: "025BAF9655B5AB49"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			x: 34.75d
+			y: -20.5d
+		}
+		{
+			dependencies: ["0DE33F0066D49759"]
+			description: [
+				"an unknown amount of steps go here"
+				""
+				"A new MM? new missions? who knows"
+				""
+				"just part of the process to get monium"
+			]
+			id: "13578427FD9CC2CE"
+			tasks: [{
+				id: "23064FA88C378D9C"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: 32.5d
+			y: -23.25d
+		}
+		{
+			dependencies: ["0DE33F0066D49759"]
+			id: "2272159BD4643610"
+			tasks: [{
+				id: "0918712974E9D143"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: 30.5d
+			y: -19.0d
+		}
+		{
+			dependencies: ["4EA1E0D437528747"]
+			description: [
+				"infinity coils? who knows"
+				""
+				"just part of the process to get monium"
+			]
+			id: "4EEE5A7A199CFDC1"
+			tasks: [{
+				id: "7EFCB8E19449DA2A"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: 40.5d
+			y: -17.0d
+		}
+		{
+			dependencies: ["13578427FD9CC2CE"]
+			id: "060A5766B021FC77"
+			tasks: [{
+				id: "7BF367338B6E7F99"
 				item: "gtceu:monium_ingot"
 				type: "item"
 			}]
-			x: 71.75d
-			y: -2.0d
+			x: 43.25d
+			y: -23.25d
 		}
+		{
+			dependencies: ["4EEE5A7A199CFDC1"]
+			description: ["The final step of monium chain will be a MM."]
+			id: "5EE558EA203778BE"
+			tasks: [{
+				id: "03383EBA1F1FE861"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: 40.5d
+			y: -23.25d
+		}
+		{
+			dependencies: ["2C0905B3E672AA28"]
+			id: "7D7DE09439091E2A"
+			tasks: [{
+				id: "1D3B264EECEE2B69"
+				item: "kubejs:monic_processor"
+				type: "item"
+			}]
+			x: 46.25d
+			y: -23.25d
+		}
+		{
+			dependencies: ["7D7DE09439091E2A"]
+			id: "335D4FB16FFCAF11"
+			tasks: [{
+				id: "66CEE0D39830B4AA"
+				item: "kubejs:monic_processor_assembly"
+				type: "item"
+			}]
+			x: 48.25d
+			y: -23.25d
+		}
+		{
+			dependencies: ["335D4FB16FFCAF11"]
+			id: "299BD43766208FCC"
+			tasks: [{
+				id: "0962A7475C333752"
+				item: "kubejs:monic_processor_computer"
+				type: "item"
+			}]
+			x: 48.25d
+			y: -21.5d
+		}
+		{
+			dependencies: ["299BD43766208FCC"]
+			id: "1A313CE1A75B909E"
+			tasks: [{
+				id: "20187C56AD6E61F5"
+				item: "kubejs:monic_processor_mainframe"
+				type: "item"
+			}]
+			x: 48.25d
+			y: -19.0d
+		}
+		{
+			dependencies: ["060A5766B021FC77"]
+			id: "2C0905B3E672AA28"
+			tasks: [{
+				id: "0FD53B61F5CF7CCA"
+				item: "kubejs:monic_processing_unit"
+				type: "item"
+			}]
+			x: 44.75d
+			y: -23.25d
+		}
+		{
+			dependencies: ["060A5766B021FC77"]
+			description: ["yet another placeholder for a unknown number of chains, mechanics, etc"]
+			id: "68734C70E2D19616"
+			tasks: [{
+				id: "5299B82EB34822E2"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: 43.25d
+			y: -17.0d
+		}
+		{
+			dependencies: ["77FFBCDD22BA1029"]
+			id: "7C9C91EC9F3930C2"
+			tasks: [{
+				id: "4FFE066433ADCDE4"
+				item: "extendedcrafting:epic_table"
+				type: "item"
+			}]
+			x: 45.5d
+			y: -19.0d
+		}
+		{
+			dependencies: ["060A5766B021FC77"]
+			id: "77FFBCDD22BA1029"
+			tasks: [{
+				id: "033DAC9ACFD86427"
+				item: "ftbquests:barrier"
+				type: "item"
+			}]
+			x: 45.5d
+			y: -21.5d
+		}
+	]
+	subtitle: [
+		"Getting overhauled!"
+		"Everything beyond Tank is WIP and subject to change!"
+		"Feel free to share feedback!"
 	]
 	title: "End Game"
 }

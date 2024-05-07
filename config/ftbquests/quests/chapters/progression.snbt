@@ -305,21 +305,39 @@
 		{
 			id: "7D217833035647CD"
 			linked_quest: "04A0863937695AC4"
-			x: 12.5d
-			y: 8.5d
+			x: 17.0d
+			y: -8.5d
 		}
 		{
 			id: "4CA98E8FC9082FA2"
 			linked_quest: "5F9C7FB40AD2640B"
-			x: 15.5d
-			y: 8.5d
+			x: 17.0d
+			y: -5.5d
 		}
 		{
 			id: "6E8F35B6CC447F93"
 			linked_quest: "1BC6DDC2D50F9C46"
 			shape: "hexagon"
-			x: 17.0d
+			x: 18.5d
 			y: -8.5d
+		}
+		{
+			id: "63280C5F37A22345"
+			linked_quest: "2EBB9A154522348F"
+			x: 9.0d
+			y: 12.75d
+		}
+		{
+			id: "2D26C83F2B01F12D"
+			linked_quest: "3E69E1949316BD0C"
+			x: 17.0d
+			y: -4.0d
+		}
+		{
+			id: "1BD667B1076EDD5F"
+			linked_quest: "32B770DAF5618BAA"
+			x: 17.0d
+			y: -2.5d
 		}
 	]
 	quests: [
@@ -590,11 +608,7 @@
 		}
 		{
 			dependencies: ["619D94FE1D9834FA"]
-			description: [
-				"Congratulations! You've reached the end of the circuit progression."
-				""
-				"The only UHV circuit is the &6Wetware Mainframe&r, which is used for crafting high-tier micro miners among some endgame stuff."
-			]
+			description: ["Circuits along this line are UHV, and can all be substituted in recipes."]
 			icon: "gtceu:uhv_machine_hull"
 			id: "0C50D78D8F63CAFE"
 			tasks: [{
@@ -609,7 +623,7 @@
 				title: "Any #gtceu:circuits/uhv"
 				type: "item"
 			}]
-			title: "UHV Circuit...s?"
+			title: "&9UHV Circuits"
 			x: 2.5d
 			y: 6.5d
 		}
@@ -665,8 +679,8 @@
 				type: "item"
 			}]
 			title: "GregTech Electric Tools"
-			x: 14.0d
-			y: 8.5d
+			x: 17.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -903,55 +917,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["3EDD0A986384F2A7"]
-			description: [
-				"Now that you have a &3Wiremill&f and a &2Bending Machine&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &9Monicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
-				""
-				"With renewable &9Monicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
-			]
-			disable_toast: true
-			hide_dependency_lines: true
-			id: "3418E5AB8FEEB34C"
-			size: 1.0d
-			tasks: [{
-				id: "2AF929CAA963A2A2"
-				item: "bountiful:bountyboard"
-				type: "item"
-			}]
-			title: "&2Bounties For Monicoins!"
-			x: 17.0d
-			y: 8.5d
-		}
-		{
-			description: [
-				"Holding one of these reveals &aTravel Anchors&r and &aTelepads&r in range."
-				""
-				"Shift + right-click after aiming to warp to one, or point it anywhere to teleport forward a short distance (works through walls)."
-				""
-				"These are powered with RF, and can be further enchanted through &bEnderIO&r's enchanting mechanics."
-				""
-				"The &6Vibrant Crystal&r will require an &3Autoclave&r."
-			]
-			id: "49BEBA1632D41E18"
-			tasks: [{
-				id: "62FF9717DD8EE67D"
-				item: {
-					Count: 1b
-					id: "enderio:staff_of_travelling"
-					tag: {
-						Energy: {
-							EnergyStored: 100000
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 18.5d
-			y: 8.5d
-		}
-		{
 			dependencies: [
 				"4F572CA3678CB287"
 				"5B07A88C0BFF6586"
@@ -991,7 +956,7 @@
 				type: "item"
 			}]
 			title: "&2First Foray Into The Microverse"
-			x: 20.5d
+			x: 22.0d
 			y: -8.5d
 		}
 		{
@@ -1025,7 +990,7 @@
 				type: "item"
 			}]
 			title: "&9Tier Two Micro Miner"
-			x: 20.5d
+			x: 22.0d
 			y: -7.0d
 		}
 		{
@@ -1065,7 +1030,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Three Micro Miner"
-			x: 20.5d
+			x: 22.0d
 			y: -5.5d
 		}
 		{
@@ -1101,7 +1066,7 @@
 				type: "item"
 			}]
 			title: "Tier Four Micro Miner"
-			x: 20.5d
+			x: 22.0d
 			y: -4.0d
 		}
 		{
@@ -1132,7 +1097,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Five Micro Miner"
-			x: 20.5d
+			x: 22.0d
 			y: -2.5d
 		}
 		{
@@ -1155,7 +1120,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Six Micro Miner"
-			x: 20.5d
+			x: 22.0d
 			y: -1.0d
 		}
 		{
@@ -1179,7 +1144,7 @@
 				type: "item"
 			}]
 			title: "&2Tier Seven Micro Miner"
-			x: 20.5d
+			x: 22.0d
 			y: 0.5d
 		}
 		{
@@ -1204,7 +1169,7 @@
 				type: "item"
 			}]
 			title: "Tier Eight Micro Miner"
-			x: 20.5d
+			x: 22.0d
 			y: 4.5d
 		}
 		{
@@ -1229,7 +1194,7 @@
 				type: "item"
 			}]
 			title: "Tier Nine Micro Miner"
-			x: 20.5d
+			x: 22.0d
 			y: 6.5d
 		}
 		{
@@ -1248,7 +1213,7 @@
 				type: "item"
 			}]
 			title: "Tier Ten Micro Miner"
-			x: 20.5d
+			x: 22.0d
 			y: 8.5d
 		}
 		{
@@ -1274,7 +1239,7 @@
 				type: "item"
 			}]
 			title: "Kanthal Ingots"
-			x: 18.5d
+			x: 20.0d
 			y: -8.5d
 		}
 		{
@@ -1298,7 +1263,7 @@
 				type: "item"
 			}]
 			title: "&2Kanthal Coil Blocks"
-			x: 17.0d
+			x: 18.5d
 			y: -7.0d
 		}
 		{
@@ -1317,7 +1282,7 @@
 				type: "item"
 			}]
 			title: "Nichrome Ingots"
-			x: 18.5d
+			x: 20.0d
 			y: -7.0d
 		}
 		{
@@ -1343,7 +1308,7 @@
 				type: "item"
 			}]
 			title: "&2Nichrome Coil Blocks"
-			x: 17.0d
+			x: 18.5d
 			y: -5.5d
 		}
 		{
@@ -1365,7 +1330,7 @@
 				type: "item"
 			}]
 			title: "&9RTM Alloy"
-			x: 18.5d
+			x: 20.0d
 			y: -5.5d
 		}
 		{
@@ -1385,7 +1350,7 @@
 				type: "item"
 			}]
 			title: "&9RTM Alloy Coil Blocks"
-			x: 17.0d
+			x: 18.5d
 			y: -4.0d
 		}
 		{
@@ -1404,7 +1369,7 @@
 				type: "item"
 			}]
 			title: "High Speed Steel Type G"
-			x: 18.5d
+			x: 20.0d
 			y: -4.0d
 		}
 		{
@@ -1423,7 +1388,7 @@
 				type: "item"
 			}]
 			title: "HSS-G Coil Blocks"
-			x: 17.0d
+			x: 18.5d
 			y: -2.5d
 		}
 		{
@@ -1446,7 +1411,7 @@
 				type: "item"
 			}]
 			title: "Naquadah Ingots"
-			x: 18.5d
+			x: 20.0d
 			y: -2.5d
 		}
 		{
@@ -1466,7 +1431,7 @@
 				type: "item"
 			}]
 			title: "Naquadah Coil Blocks"
-			x: 17.0d
+			x: 18.5d
 			y: -1.0d
 		}
 		{
@@ -1490,7 +1455,7 @@
 				type: "item"
 			}]
 			title: "&2Trinium"
-			x: 18.5d
+			x: 20.0d
 			y: -1.0d
 		}
 		{
@@ -1510,7 +1475,7 @@
 				type: "item"
 			}]
 			title: "&2Trinium Coils"
-			x: 17.0d
+			x: 18.5d
 			y: 0.5d
 		}
 		{
@@ -1536,7 +1501,7 @@
 				type: "item"
 			}]
 			title: "&2Tritanium Ingot"
-			x: 18.5d
+			x: 20.0d
 			y: 0.5d
 		}
 		{
@@ -1551,7 +1516,7 @@
 				type: "item"
 			}]
 			title: "&2Tritanium Coils"
-			x: 17.0d
+			x: 18.5d
 			y: 2.0d
 		}
 		{
@@ -1872,17 +1837,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["5601A05D8361551D"]
-			id: "78411542383DBD9F"
-			tasks: [{
-				id: "621632DB0ADB7720"
-				item: "gtceu:creative_chest"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 12.5d
-		}
-		{
 			dependencies: ["0F56F4E642BC2B85"]
 			id: "248ABB7F26EB72EE"
 			tasks: [{
@@ -1895,12 +1849,15 @@
 		}
 		{
 			dependencies: ["5601A05D8361551D"]
+			description: ["The MAX voltage lacks machines to call it's own, with the primary usage of it's circuits being to craft the quantum chest."]
 			id: "11FDFB08CD48D66E"
+			subtitle: "There can be only one!"
 			tasks: [{
 				id: "703CDB7D8BF05A55"
 				item: "gtceu:max_machine_hull"
 				type: "item"
 			}]
+			title: "&9Max Circuit"
 			x: 7.25d
 			y: 11.0d
 		}
@@ -1910,12 +1867,14 @@
 				"1B1D3A66B847D129"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Circuits along this line are UIV, and can all be substituted in recipes."]
 			id: "4177C4BD329C38DA"
 			tasks: [{
 				id: "168A6D29177E8DBD"
 				item: "gtceu:uiv_machine_hull"
 				type: "item"
 			}]
+			title: "&9UIV Circuits"
 			x: 5.5d
 			y: 9.5d
 		}
@@ -1926,12 +1885,14 @@
 				"07057CDE4E021BA7"
 			]
 			dependency_requirement: "one_completed"
+			description: ["Circuits along this line are UEV, and can all be substituted in recipes."]
 			id: "0B923E8ED6161CA8"
 			tasks: [{
 				id: "1DC59BD73D749A60"
 				item: "gtceu:uev_machine_hull"
 				type: "item"
 			}]
+			title: "&9UEV Circuits"
 			x: 4.0d
 			y: 8.0d
 		}
@@ -1991,7 +1952,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["6D41F2AF5975E688"]
 			id: "7979D07FBDC6D170"
 			tasks: [{
 				id: "3B038F650DFA2526"

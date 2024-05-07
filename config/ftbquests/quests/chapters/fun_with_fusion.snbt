@@ -472,7 +472,7 @@
 		{
 			dependencies: ["07482E45FCEE7937"]
 			description: [
-				"Thorium is a basic fissile material that can be used to get into the fissile chain. Thorium comes from &6Pitchblende Ore&r, &6Thorium Ore&r, and even &2Black Granite&r (with a few processing steps)."
+				"Thorium is a basic fissile material that can be used to get into the fissile chain. Thorium comes from &6Pitchblende Ore&r, &6Thorium Ore&r, and even &9Deepslate&r (with a few processing steps)."
 				""
 				"Thorium-Bred Uranium, or &6TBU&r for short, is made from nine clumps of &6Thorium 232&r, made from Thorium enriched in a &3Thermal Centrifuge&r."
 				""
@@ -1131,7 +1131,9 @@
 		{
 			dependencies: ["37BE175EEC2ABD59"]
 			description: [
-				"The &3Research Station&r is an advanced Scanner which consumes &dComputation Work&r provided by connected &3High Performance Computing Arrays&r to research &cZPM&r and higher items.%n%nThe function of this multiblock is similar to the Scanner. Place the &6Data Orb&r or &6Data Module&r into the &3Object Holder&r alongside the item to be scanned. After sufficient &dCWU&r has been drawn, the item will be &cconsumed&r and the corresponding data will be written to the data item. Ensure your &3HPCA&r is supplying sufficient &dCWU/t&r - check the scan recipe in &eEMI&r for how much is required."
+				"The &3Research Station&r is an advanced Scanner which consumes &dComputation Work&r provided by connected &3High Performance Computing Arrays&r to research &cZPM&r and higher items."
+				""
+				"The function of this multiblock is similar to the Scanner. Place the &6Data Orb&r or &6Data Module&r into the &3Object Holder&r alongside the item to be scanned. After sufficient &dCWU&r has been drawn, the item will be &cconsumed&r and the corresponding data will be written to the data item. Ensure your &3HPCA&r is supplying sufficient &dCWU/t&r - check the scan recipe in &eEMI&r for how much is required."
 				""
 				"&3Energy&r, &3Maintenance&r, and &3Computation Hatches&r can only replace the 9 &aComputer Casings&r between the &aComputer Heat Vents&r at the back of the structure. The &3Object Holder&r &cmust face&r the &3Research Station&r controller block."
 				""
@@ -1174,6 +1176,7 @@
 					type: "item"
 				}
 			]
+			title: "&2Research Station"
 			x: -1.0d
 			y: 1.0d
 		}

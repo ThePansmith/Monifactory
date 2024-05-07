@@ -31,8 +31,6 @@
   "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
   "block.gtceu.mv_atomic_reconstructor": "Atomic Reconstructor",
   "gtceu.atomic_reconstruction": "Atomic Reconstruction",
-  "block.gtceu.mv_resonator": "Resonator",
-  "gtceu.resonator": "Resonator",
   "tagprefix.perfect": "Perfect %s",
   "material.gtceu.dilithium": "Dilithium",
   "material.gtceu.restonia": "§cRestonia Crystal",
