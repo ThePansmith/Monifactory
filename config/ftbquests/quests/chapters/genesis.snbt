@@ -1751,10 +1751,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: [
-				"66FCC26399376B55"
-				"2E8BFA2E719B1C47"
-			]
+			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"&6Gregtech&r adds a decent bit of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
 				""

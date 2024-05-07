@@ -134,7 +134,13 @@
 				"4174A6C6403DD245"
 				"5C4E189A3E401566"
 			]
-			description: ["&3Inscribers&r are machines used to make &6inscribed circuits&r for &bApplied Energistics&r."]
+			description: [
+				"&3Inscribers&r are machines used to make &6inscribed circuits&r for &bApplied Energistics&r."
+				""
+				"&9Inscribers can be set to automatically export items, can hold up to a stack of items within, as well as a variety of other features to aid in automation."
+				""
+				"&9The silicon used in inscribed circuits no longer requires an EBF with HV power."
+			]
 			id: "295E3D32083676E6"
 			rewards: [{
 				id: "0EE1CC6897B11687"
@@ -149,6 +155,7 @@
 				item: "ae2:inscriber"
 				type: "item"
 			}]
+			title: "&9Inscribing"
 			x: 4.0d
 			y: 0.5d
 		}
@@ -281,11 +288,12 @@
 		{
 			dependencies: ["6D03BB4A6A4BBA27"]
 			description: [
-				"This compass will lead you to the nearest meteor impact. Use your favorite mining tools to smash through the &6Skystone&r shell and get to the juicy center where the &6Skystone Chest&r with the plate is found."
+				"This compass will lead you to the nearest meteor impact. Use your favorite mining tools to smash through the &6Skystone&r shell and get to the juicy center where a &6Mysterious Cube&r with the plates are found."
 				""
 				"Please note that while they're often in a big crater, the meteors might be buried underground; when the compass is spinning wildly, you're right on top of one."
 			]
 			hide_dependency_lines: true
+			icon: "ae2:meteorite_compass"
 			id: "670C69611ECFF5C8"
 			rewards: [{
 				id: "7A90E3799F7D52FF"
@@ -293,12 +301,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&bApplied Energistics&r uses &aPresses&r found in chests at the heart of meteors as templates for &3Inscribers&r to make &6inscribed circuits&r."
-			tasks: [{
-				id: "0B6706026E84DC3C"
-				item: "ae2:meteorite_compass"
-				type: "item"
-			}]
+			subtitle: "&bApplied Energistics&r uses &aPresses&r found in cubes at the heart of meteors as templates for &3Inscribers&r to make &6inscribed circuits&r."
+			tasks: [
+				{
+					id: "0B6706026E84DC3C"
+					item: "ae2:meteorite_compass"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "40398224818E775D"
+					type: "checkmark"
+				}
+			]
 			title: "Meteorite Hunter"
 			x: 4.0d
 			y: -3.0d
@@ -1044,7 +1059,7 @@
 			description: [
 				"You can easily automate most &bGregTech&r machines with &aME Pattern Providers&r and processing &aPatterns&r early on by using the machines' auto-output feature."
 				""
-				"Use a &aGregTech Wrench&r &9(or the Machine's GUI)&r to relocate the output side of a machine where you want it to be, right-click it with a &aGregTech Screwdriver&r to permit input on the output face, then put an ME Pattern Provider on that side of the machine."
+				"Use &9the Machine's GUI&r to relocate the output side of a machine where you want it to be, then press the auto output and permit input buttons, then put an ME Pattern Provider on that side of the machine."
 				""
 				"You can also permit input from the output side by shift-right-clicking with a screwdriver on the output side via the machine grid."
 				""

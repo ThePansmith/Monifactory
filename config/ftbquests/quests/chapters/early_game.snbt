@@ -1211,13 +1211,15 @@
 		{
 			dependencies: ["41D3154853B9F90C"]
 			description: [
-				"The &3Multi Smelter&r is an absolute smelting unit, and is most likely the best furnace added by a mod."
+				"The &3Multi Smelter&r is an absolute smelting unit, and is most likely the best furnace &9and alloy smelter&r added by a mod."
 				""
 				"It's a 3x3x3 multiblock machine capable of &esmelting huge amounts of items per second&r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second."
 				""
 				"Shift and hover over different coil blocks: they tell you the number of items a Multi Smelter can smelt per operation: &e32 items per level&r. The most basic Multi Smelter essentially does 32 items in the same time as a furnace does one. With a set of &6Tungstensteel&r coil blocks, that jumps to 128 items per operation."
 				""
 				"This quest doesn't ask for coils, hatches or buses: feel free to choose whatever combination you want. You'll need &a8 coil blocks&r, &a1 input bus&r, &a1 output bus&r, and &21 maintenance hatch&r, &21 muffler hatch&r, and at least &a1 energy hatch&r, all of any tier."
+				""
+				"&9The multismelter can have it's mode swapped between processing furnace and alloy smelter recipes by pressing the robot arm button in it's GUI&r. Some other multiblocks use this mechanic as well."
 			]
 			icon: "gtceu:multi_smelter"
 			id: "2C3C6D2038B01948"
@@ -1242,6 +1244,7 @@
 					type: "item"
 				}
 			]
+			title: "&9Multismelter"
 			x: 5.25d
 			y: 16.0d
 		}
@@ -1664,24 +1667,6 @@
 			title: "&2SMD Components"
 			x: 10.5d
 			y: 17.5d
-		}
-		{
-			dependencies: ["7256E0064F967C93"]
-			description: ["&2A more compact infinite Water source. Place this as a cover on any GT machine and it will insert 16B of water every second."]
-			id: "30D21FCB95653F97"
-			rewards: [{
-				id: "170C50B4A6DACB45"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6ACD2087A6EE95FF"
-				item: "gtceu:infinite_water_cover"
-				type: "item"
-			}]
-			title: "&2Greggy Infinite Water"
-			x: 10.5d
-			y: 19.0d
 		}
 		{
 			dependencies: ["0C4E18B05F9E68DE"]
@@ -2309,7 +2294,7 @@
 		{
 			dependencies: ["73C1AB31431B5C11"]
 			description: [
-				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack." 
+				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack."
 				""
 				"Paired with a self-sustaining &bDeep Mob Evolution&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
 				""

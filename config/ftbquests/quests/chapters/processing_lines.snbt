@@ -354,7 +354,7 @@
 			description: [
 				"Break up your &6Sandstone&r into &6Saltpeter&r. This is probably the best way to get &6Saltpeter&r, which you'll need a lot for &6Aerotheum Dust&r. You can also get &6Saltpeter&r from &bDeep Mob Evolution&r."
 				""
-				"You can also electrolyse it for &6Potassium&r, although it isn't recommended because of how easily you can get &6Potassium&r, such as from &6Black Granite &3Processing&r, and how much &6Saltpeter&r it costs."
+				"You can also electrolyse it for &6Potassium&r, although it isn't recommended because of how easily you can get &6Potassium&r, such as from &9Deepslate &3Processing&r, and how much &6Saltpeter&r it costs."
 			]
 			id: "1349FBBCE3041081"
 			subtitle: "&oThis step requires a Macerator at voltage &lLV&r&o or higher.&r"
