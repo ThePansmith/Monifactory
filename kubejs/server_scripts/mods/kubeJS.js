@@ -41,8 +41,22 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(16)
 
+    event.recipes.gtceu.fluid_solidifier('stabilized_plutonium_1')
+        .inputFluids(Fluid.of('gtceu:plutonium_241', 144))
+        .itemOutputs('2x kubejs:stabilized_plutonium')
+        .notConsumable('gtceu:ball_casting_mold')
+        .duration(500)
+        .EUt(16)
+
     event.recipes.gtceu.fluid_solidifier('stabilized_uranium')
         .inputFluids(Fluid.of('gtceu:uranium', 144))
+        .itemOutputs('kubejs:stabilized_uranium')
+        .notConsumable('gtceu:ball_casting_mold')
+        .duration(500)
+        .EUt(16)
+
+    event.recipes.gtceu.fluid_solidifier('stabilized_uranium_1')
+        .inputFluids(Fluid.of('gtceu:uranium_235', 144))
         .itemOutputs('kubejs:stabilized_uranium')
         .notConsumable('gtceu:ball_casting_mold')
         .duration(500)
