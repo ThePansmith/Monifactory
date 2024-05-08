@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     }
     ).id('kubejs:shaped/subatomic_digital_assembler')
 
-    event.recipes.gtceu.subatomic_digital_assembler('kubejs:creative_tank')
+    event.recipes.gtceu.subatomic_digital_assembly('kubejs:creative_tank')
         .notConsumable('kubejs:creative_portable_tank_mold')
         .itemOutputs('gtceu:creative_tank')
         .duration(500)
