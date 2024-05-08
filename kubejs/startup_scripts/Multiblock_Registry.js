@@ -1,6 +1,7 @@
 const Tags = Java.loadClass('dev.latvian.mods.kubejs.util.Tags')
 
 // Small Microverse Projector Recipe Type
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('basic_microverse')
         .category('multiblock')
@@ -111,6 +112,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
     
+    // Large Material Press
+    event.create('large_material_press')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(6, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_COMPRESS, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COMPRESSOR)
+        .setIconSupplier(() => Item.of('gtceu:large_material_press'))
+
     //Omnic Forge
     event.create('omnic_forge')
         .category('multiblock')
@@ -118,10 +129,15 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(6, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-    })
+        
+})
+
 
 // Basic Microverse Projector
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
+    GCyMMachines.LARGE_MATERIAL_PRESS.setRecipeTypes([GTRecipeTypes.BENDER_RECIPES, GTRecipeTypes.COMPRESSOR_RECIPES, GTRecipeTypes.FORGE_HAMMER_RECIPES, GTRecipeTypes.FORMING_PRESS_RECIPES, GTRecipeTypes.get('large_material_press')])
+    
     event.create('basic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('basic_microverse')
