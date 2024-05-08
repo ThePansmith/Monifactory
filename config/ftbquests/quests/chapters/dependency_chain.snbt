@@ -37,6 +37,7 @@
 		}
 		{
 			id: "45B743CB23CA5735"
+			invisible: true
 			subtitle: "generic dependency for unlocking the genisis quest"
 			tasks: [{
 				id: "140F9B6DC0E3EE8E"
@@ -80,6 +81,6 @@
 			y: -1.5d
 		}
 	]
-	subtitle: ["REPORT THIS ON THE GITHUB IF YOU SEE THIS"]
+	subtitle: []
 	title: "dependencies"
 }

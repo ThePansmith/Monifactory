@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:luv_fusion_reactor"
 	id: "40F7695BE1E65C41"
-	order_index: 8
+	order_index: 9
 	quest_links: [
 		{
 			id: "569E4C671C9A4419"
@@ -21,10 +21,16 @@
 			y: -3.5d
 		}
 		{
-			id: "3C9DAB2F66E5BECC"
-			linked_quest: "6588C68DE6973BCC"
+			id: "1DA44B4F3BDA9825"
+			linked_quest: "115B96B2092D671E"
 			x: 0.5d
 			y: 1.0d
+		}
+		{
+			id: "1F5CD1FF70A1C548"
+			linked_quest: "01E542E1C9DAF5B4"
+			x: 3.5d
+			y: -2.0d
 		}
 	]
 	quests: [
@@ -125,7 +131,7 @@
 			dependencies: [
 				"1183B96529D08326"
 				"10DD3A6BE5F9624D"
-				"6588C68DE6973BCC"
+				"115B96B2092D671E"
 			]
 			description: [
 				"Upgrade time! "
@@ -264,31 +270,6 @@
 		}
 		{
 			dependencies: [
-				"79EFCD8E01384C0C"
-				"5EE23A29090BD374"
-				"75DD12FBC8AA39FC"
-			]
-			description: [
-				"The final circuit!"
-				""
-				"The only novel ingredient is &6Tritanium Frames&r."
-				""
-				"&6Wetware Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Nine circuits. Unlike past mainframes, you will need to craft more than just a few of them. They're mostly used in the Endgame though, so you don't have to worry too much yet."
-				""
-				"Definitely consider parallelizing your &3Assembly Lines&r if you haven't already. Even just having two or three lines will vastly improve your production speeds and help avoid bottlenecks as you push towards the Endgame."
-			]
-			id: "6F9BAA754DC26A3D"
-			subtitle: "The final circuit!"
-			tasks: [{
-				id: "3B593A41F874A1DC"
-				item: "gtceu:wetware_processor_mainframe"
-				type: "item"
-			}]
-			x: 3.5d
-			y: -1.9928571428571473d
-		}
-		{
-			dependencies: [
 				"7D29C79DE1CCA2A2"
 				"2D47BFA44BDB5E6A"
 			]
@@ -315,8 +296,8 @@
 		{
 			dependencies: [
 				"4A8FB1EF600F0882"
-				"6F9BAA754DC26A3D"
 				"5BADF536443E712D"
+				"01E542E1C9DAF5B4"
 			]
 			description: [
 				"This baby can do any fusion recipe, notably giving you access to &6Neutronium&r."
@@ -1181,7 +1162,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["6588C68DE6973BCC"]
+			dependencies: ["115B96B2092D671E"]
 			description: [
 				"Once you scan and make make your first &6UV Circuits&r and &6ZPM Field Generators&r, you can upgrade your &3HPCA Computing Components&r to &3Advanced Components&r. These produce &d16 CWU/t&r each and require &d4 Cooling&r each."
 				""

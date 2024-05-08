@@ -1,5 +1,4 @@
 {
-	autofocus_id: "4FE53F31E68F4C1C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	disable_toast: true
@@ -7,8 +6,24 @@
 	group: ""
 	icon: "gtceu:vacuum_tube"
 	id: "0654B76C306712BE"
-	order_index: 0
-	quest_links: [ ]
+	order_index: 1
+	quest_links: [
+		{
+			id: "648273CE9E632507"
+			linked_quest: "77670BF761084AA2"
+			shape: "hexagon"
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			id: "7FB8EA3900C4D89D"
+			linked_quest: "1A30472430354F1E"
+			shape: "gear"
+			size: 1.5d
+			x: 2.5d
+			y: 10.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["2A511DB40C66CF35"]
@@ -106,6 +121,13 @@
 					id: "612FEB595285D353"
 					title: "&6Infinite Cakes!"
 					type: "custom"
+				}
+				{
+					auto: "invisible"
+					id: "75FD5BC7147B8397"
+					ignore_reward_blocking: true
+					stage: "intro_complete"
+					type: "gamestage"
 				}
 			]
 			shape: "hexagon"
@@ -1404,88 +1426,10 @@
 		}
 		{
 			dependencies: [
-				"7FA0E6F3B466576C"
-				"17312BF0197B87A8"
-			]
-			description: [
-				"A \"&esubstrate&f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
-				""
-				"&2CEu circuit progression means you also have to put wires on your substrates for them to be usable. In this case, use some Fine Copper Wires.&r"
-				""
-				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
-			]
-			icon: "gtceu:resistor"
-			id: "58F9A5310D43A2B0"
-			rewards: [{
-				id: "0532511B1AABBA29"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					count: 2L
-					id: "3531424527B8E732"
-					item: { Count: 2b, id: "gtceu:resistor" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "3A7AC364B2EBF6D9"
-					item: { Count: 2b, id: "gtceu:vacuum_tube" }
-					type: "item"
-				}
-				{
-					id: "6F5AB3013B280937"
-					item: "gtceu:resin_printed_circuit_board"
-					type: "item"
-				}
-			]
-			title: "&2Electronics Subcomponents"
-			x: 2.5d
-			y: 8.5d
-		}
-		{
-			dependencies: [
-				"58F9A5310D43A2B0"
-				"12B95158E4C792DB"
-			]
-			description: [
-				"&9This is where &bEMI&9 really shines! Using it alongside &3Crafting Stations&9, you should be able to easily calculate the amount of raw resources and intermediate components you'll need to &ebatch craft &9electronic circuits quickly."
-				""
-				"You'll be making a LOT&r of circuits, so take advantage of the improved crafting efficiency."
-			]
-			icon: "gtceu:basic_electronic_circuit"
-			id: "7358461DB0D9A9AF"
-			rewards: [{
-				id: "13796FC2437C31E2"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "With all of the components made, it's time to craft an &2Electronic Circuit&r."
-			tasks: [
-				{
-					id: "0DFBE070AAC08C6C"
-					item: "gtceu:basic_electronic_circuit"
-					type: "item"
-				}
-				{
-					id: "6D1F30CE04E0D26B"
-					item: "gtceu:steel_plate"
-					type: "item"
-				}
-			]
-			title: "Your First Circuit"
-			x: 2.5d
-			y: 10.0d
-		}
-		{
-			dependencies: [
 				"39D4174834F3879D"
-				"7358461DB0D9A9AF"
 				"08948A23B3A17923"
 				"17312BF0197B87A8"
+				"1A30472430354F1E"
 			]
 			description: [
 				"&rThe &3Steam Dynamos&r&r&r you have made are generating &aRF power&r, but &bGregTech&r machines require &aEU power&r. With your first &6circuit&r in hand, you are ready to build a &eLow Voltage (LV) &3&2Energy Converter&r."
@@ -1924,6 +1868,7 @@
 				""
 				"[\"Text with \",{\"text\":\"underlines\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"But not this!\"}},\" are (mostly) clickable.\"]"
 			]
+			hide: false
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
 			size: 1.5d

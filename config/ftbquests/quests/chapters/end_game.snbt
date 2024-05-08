@@ -6,8 +6,39 @@
 	group: ""
 	icon: "kubejs:heart_of_a_universe"
 	id: "2BEB72BC6C6FB4E9"
-	order_index: 9
-	quest_links: [ ]
+	order_index: 10
+	quest_links: [
+		{
+			id: "54018A95BECC356C"
+			linked_quest: "5A8D2BFAF02E6325"
+			x: 46.5d
+			y: -23.25d
+		}
+		{
+			id: "2A5A7CD2C9EDD767"
+			linked_quest: "7979D07FBDC6D170"
+			x: 44.75d
+			y: -23.25d
+		}
+		{
+			id: "6FD00239A5CD9D2F"
+			linked_quest: "3D7924B550A1BBA0"
+			x: 48.25d
+			y: -23.25d
+		}
+		{
+			id: "3F1F20A84F3FDE97"
+			linked_quest: "0C9A9F33EEA3AB5E"
+			x: 48.25d
+			y: -21.5d
+		}
+		{
+			id: "2C514C36E06DC5FA"
+			linked_quest: "5601A05D8361551D"
+			x: 48.25d
+			y: -19.0d
+		}
+	]
 	quests: [
 		{
 			id: "273D48F9D80568AC"
@@ -2188,7 +2219,6 @@
 			dependencies: [
 				"5601A05D8361551D"
 				"68734C70E2D19616"
-				"1A313CE1A75B909E"
 				"7C9C91EC9F3930C2"
 			]
 			description: [
@@ -3371,61 +3401,6 @@
 				type: "item"
 			}]
 			x: 40.5d
-			y: -23.25d
-		}
-		{
-			dependencies: ["2C0905B3E672AA28"]
-			id: "7D7DE09439091E2A"
-			tasks: [{
-				id: "1D3B264EECEE2B69"
-				item: "kubejs:monic_processor"
-				type: "item"
-			}]
-			x: 46.25d
-			y: -23.25d
-		}
-		{
-			dependencies: ["7D7DE09439091E2A"]
-			id: "335D4FB16FFCAF11"
-			tasks: [{
-				id: "66CEE0D39830B4AA"
-				item: "kubejs:monic_processor_assembly"
-				type: "item"
-			}]
-			x: 48.25d
-			y: -23.25d
-		}
-		{
-			dependencies: ["335D4FB16FFCAF11"]
-			id: "299BD43766208FCC"
-			tasks: [{
-				id: "0962A7475C333752"
-				item: "kubejs:monic_processor_computer"
-				type: "item"
-			}]
-			x: 48.25d
-			y: -21.5d
-		}
-		{
-			dependencies: ["299BD43766208FCC"]
-			id: "1A313CE1A75B909E"
-			tasks: [{
-				id: "20187C56AD6E61F5"
-				item: "kubejs:monic_processor_mainframe"
-				type: "item"
-			}]
-			x: 48.25d
-			y: -19.0d
-		}
-		{
-			dependencies: ["060A5766B021FC77"]
-			id: "2C0905B3E672AA28"
-			tasks: [{
-				id: "0FD53B61F5CF7CCA"
-				item: "kubejs:monic_processing_unit"
-				type: "item"
-			}]
-			x: 44.75d
 			y: -23.25d
 		}
 		{
