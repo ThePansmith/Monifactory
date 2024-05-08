@@ -218,6 +218,9 @@ ServerEvents.recipes(event => {
         'gtceu:silicon_ingot'
     )
 
+    //Steel Machine Casing
+    event.remove({input: 'gtceu:steel_machine_casing'})
+    event.remove({output: 'gtceu:steel_machine_casing'})
 
     //Ender Pearl dust Electrolysis
     //event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })

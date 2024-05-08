@@ -116,6 +116,9 @@ JEIEvents.hideItems(event => {
 
     // AE2 stuff
     event.hide(['ae2:fluix_dust', 'ae2:fluix_crystal', 'ae2:fluix_block', 'ae2:certus_quartz_crystal', 'ae2:charged_certus_quartz_crystal'])
+
+    //Steel Machine Casing
+    event.hide('gtceu:steel_machine_casing')
 })
 
 JEIEvents.hideFluids(event => {

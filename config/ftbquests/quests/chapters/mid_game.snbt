@@ -2975,7 +2975,7 @@
 				{
 					count: 8L
 					id: "7784F218DA88096C"
-					item: "gtceu:steel_machine_casing"
+					item: "gtceu:solid_machine_casing"
 					type: "item"
 				}
 				{
@@ -3088,7 +3088,7 @@
 				{
 					count: 7L
 					id: "47241D10077393C2"
-					item: "gtceu:steel_machine_casing"
+					item: "gtceu:solid_machine_casing"
 					type: "item"
 				}
 				{
