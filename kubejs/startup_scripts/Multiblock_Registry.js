@@ -84,8 +84,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
-    // Creative Tank Fabricator
-    event.create('creative_tank_fabricator')
+    // Subatomic Digital Assembler
+    event.create('subatomic_digital_assembly')
         .category('multiblock')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 0, 0) //
@@ -327,16 +327,16 @@ event.create('draconic_reactor', 'multiblock')
 
 // Creative Tank Fabricator
 // TODO: Cooler Design, thinking about some kind of computer that fabricates the tanks from the data
-event.create('creative_tank_fabricator', 'multiblock')
+event.create('subatomic_digital_assembler', 'multiblock')
     .rotationState(RotationState.NON_Y_AXIS)
-    .recipeTypes('creative_tank_fabricator')
+    .recipeTypes('subatomic_digital_assembler')
     .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
     .pattern(definition => FactoryBlockPattern.start()
         .aisle("CCC", "GGG", "CCC")
         .aisle("CCC", "G#G", "CCC")
         .aisle("CSC", "GGG", "CCC")
         .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-        .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+        .where('G', Predicates.blocks(GTBlocks.CLEANROOM_GLASS.get()))
         .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(10)
             .or(Predicates.autoAbilities(definition.getRecipeTypes())))
         .where('#', Predicates.any())
