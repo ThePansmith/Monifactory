@@ -367,6 +367,7 @@
 				"545CCC24D9401794"
 				"34CA940B412284F2"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
 				""
@@ -432,10 +433,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"545CCC24D9401794"
-				"34CA940B412284F2"
-			]
+			dependencies: ["34CA940B412284F2"]
 			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
 			icon: "steamadditions:steam_foundry"
 			id: "1A80D0AE0B2F7A9D"
@@ -674,7 +672,6 @@
 		{
 			dependencies: [
 				"6FB3E3D9CA0F4B30"
-				"7FA0E6F3B466576C"
 				"605B2CCEAC246E14"
 			]
 			description: [
@@ -1458,6 +1455,53 @@
 			title: "LV Power Storage"
 			x: 0.5d
 			y: 14.25d
+		}
+		{
+			dependencies: ["34CA940B412284F2"]
+			description: [
+				"The &6Steam Seperator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				""
+				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
+			]
+			icon: "steamadditions:steam_separator"
+			id: "5F90D0FC382C0A30"
+			rewards: [{
+				count: 6
+				id: "6C3CB41773E5C5C6"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "555AE041032A635F"
+					item: "steamadditions:steam_separator"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "5A0A4E91971F038A"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+				{
+					id: "41AC95E6F1B73D7B"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "6350710523220E23"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "68721A8FB9334429"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&9Steam Separator"
+			x: 0.5d
+			y: 8.0d
 		}
 	]
 	subtitle: ["WIP, HM is not playable yet!"]
