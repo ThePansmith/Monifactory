@@ -24,11 +24,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xe8c474)
         .components('12x carbon', '27x hydrogen', '4x oxygen', '1x phosphorus')
-
-    event.create('hydrogen_peroxide') // OK, nomi core says this is hardmode but this is somehow shared in regular mode so placing it here
-        .liquid()
-        .color(0xd2ffff)
-        .components('8x carbon', '4x hydrogen', '3x oxygen')
 })
 
 // modify material names etc here

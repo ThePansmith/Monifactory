@@ -6,6 +6,13 @@
 const cake_reset_time = 60; // in seconds
 
 /**
+ * Capitalizes the first char of the string
+ * @param {string} word
+ * @returns
+ */
+const capitalize = (word) => (word[0].toUpperCase() + word.substring(1));
+
+/**
  * helper for compressing/decompress crafting
  * @param {Internal.RecipesEventJS_} ev
  * @param {OutputItem_} output output

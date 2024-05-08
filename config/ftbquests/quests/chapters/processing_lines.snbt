@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:lv_chemical_reactor"
 	id: "055C0B43FE14258F"
-	order_index: 10
+	order_index: 11
 	quest_links: [ ]
 	quests: [
 		{
@@ -74,6 +74,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["45B743CB23CA5735"]
 			description: ["Your first source of &6Ender Pearls&r could be &6Ender Lillies&r. However, that is too manual and slow for the purpose &6Ender Pearls&r are needed for here. Instead, you can make a net-positive &6Pulsating Polymer Clay&r setup that uses &6Enderman Data Models&r to produce &6Ender Pearls&r. A Self-Aware &6Enderman Data Model&r can supply enough &6Ender Pearls&r to support the running of 6.2 other models."]
 			id: "50FB5E0B0E0B142F"
 			tasks: [{
@@ -85,6 +86,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"The best source of &6Cobblestone&r is &bThermal &6Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r. "
 				""
@@ -206,6 +208,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Condensers&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
 				""
@@ -279,6 +282,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"&6Lava&r can be achieved in two main ways. The first is using a &3Chemical Reactor&r to turn &6Magma Blocks&r into &6Lava&r. The second is using a &bGregTech &6Fluid Drill&r in the Nether above a &6Lava&r vein."
 				""
@@ -553,7 +557,7 @@
 		{
 			dependencies: [
 				"66CA4A42DD474383"
-				"4783352CA1B70880"
+				"447E9501E57DA010"
 			]
 			description: ["Combine your &6Dust&r and some &6Water&r to make &6Clay&r.&r "]
 			id: "72861B317663600B"
@@ -567,25 +571,7 @@
 			y: -6.0d
 		}
 		{
-			description: [
-				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Condensers&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
-				""
-				"Right now, you should probably use the &6Aqueous Accumulator&r."
-				""
-				"In this case, you'll need &9Water&r for &6Clay&r."
-			]
-			icon: "minecraft:water_bucket"
-			id: "4783352CA1B70880"
-			subtitle: "&oYes, there's a quest for &9Water&r."
-			tasks: [{
-				id: "7CCFCED8772BF8E6"
-				type: "checkmark"
-			}]
-			title: "Water"
-			x: 3.5d
-			y: -6.0d
-		}
-		{
+			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"The best source of &6Cobblestone&r is &bThermal &6Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r."
 				""
@@ -607,6 +593,26 @@
 				type: "item"
 			}]
 			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["45B743CB23CA5735"]
+			description: [
+				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Condensers&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
+				""
+				"Right now, you should probably use the &6Aqueous Accumulator&r."
+				""
+				"In this case, you'll need &9Water&r for &6Clay&r."
+			]
+			icon: "minecraft:water_bucket"
+			id: "447E9501E57DA010"
+			subtitle: "&oYes, there's a quest for &9Water&r."
+			tasks: [{
+				id: "3E5B4CD1CB1ED343"
+				type: "checkmark"
+			}]
+			title: "Water"
+			x: 3.5d
 			y: -6.0d
 		}
 	]

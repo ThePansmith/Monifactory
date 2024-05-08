@@ -4,7 +4,7 @@
  * Chemical Materials
  */
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    if (!isHardcoreMode) {
+    if (!isExpertMode) {
         return;
     }
 
@@ -142,7 +142,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 // modify material names etc here
 GTCEuStartupEvents.materialModification(() => {
-    if (!isHardcoreMode) {
+    if (!isExpertMode) {
         return;
     }
 	GTMaterials.get('phthalic_anhydride').setFormula('C6H4(CO)2O');

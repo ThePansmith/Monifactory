@@ -5,23 +5,60 @@
 	group: ""
 	icon: "nuclearcraft:plutonium_rtg"
 	id: "7D825FFA33DC85A7"
-	order_index: 6
+	order_index: 7
 	quest_links: [
 		{
-			id: "0D45E9BB3B4BAECE"
-			linked_quest: "23A82A95709C324A"
-			shape: "hexagon"
-			size: 1.5d
-			x: 17.5d
-			y: -2.5d
-		}
-		{
-			id: "4E9A92497131D646"
-			linked_quest: "21B32BA716CE8CD3"
+			id: "4864F8F7C33860D9"
+			linked_quest: "244F2CC5484A7B21"
 			shape: "hexagon"
 			size: 1.5d
 			x: 17.5d
 			y: -4.5d
+		}
+		{
+			id: "47A998CDEFCF834D"
+			linked_quest: "7E09D4E00BFA4970"
+			shape: "hexagon"
+			x: 17.5d
+			y: -2.5d
+		}
+		{
+			id: "749D2634CA4F7836"
+			linked_quest: "6B908DECFA46C8E0"
+			shape: "hexagon"
+			size: 2.0d
+			x: 16.0d
+			y: -1.0d
+		}
+		{
+			id: "7050009D3BC75483"
+			linked_quest: "39FD6F1076559156"
+			shape: "gear"
+			size: 2.0d
+			x: 17.5d
+			y: 0.5d
+		}
+		{
+			id: "2F8475A98F03F508"
+			linked_quest: "0B8CE3FBF62B099D"
+			shape: "hexagon"
+			x: 19.5d
+			y: 4.5d
+		}
+		{
+			id: "7DE39179D1EA5189"
+			linked_quest: "5672773780EE8267"
+			shape: "hexagon"
+			x: 19.5d
+			y: 10.5d
+		}
+		{
+			id: "7F49F7308AF0F518"
+			linked_quest: "5B9F1EE13E397DEE"
+			shape: "hexagon"
+			size: 2.0d
+			x: 17.5d
+			y: 12.5d
 		}
 	]
 	quests: [
@@ -678,56 +715,6 @@
 			y: 8.5d
 		}
 		{
-			dependencies: [
-				"2F8B802869825E02"
-				"23A82A95709C324A"
-			]
-			description: [
-				"The first Mainframe you'll have to contend with."
-				""
-				"This is the first Tier Five circuit available, and consequently the most expensive to make. as always, invest in the next circuit theme to get to cheaper recipes as soon as possible."
-			]
-			id: "3F216049FBBB4E36"
-			rewards: [{
-				id: "7756528156862D1A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "0C11BF35EC81146E"
-				item: "gtceu:micro_processor_mainframe"
-				type: "item"
-			}]
-			title: "&2The First Tier Five Circuit"
-			x: 17.5d
-			y: 0.25d
-		}
-		{
-			dependencies: ["23A82A95709C324A"]
-			description: [
-				"The &3HV Circuit Assembling Machine&r unlocks &2the Mainframe. That's it.&r"
-				""
-				"It can also optionally overclock recipes up to 128 EU/t, gaining additional speed for relatively more power."
-			]
-			id: "2F8B802869825E02"
-			rewards: [{
-				id: "11A4B74776A7F2EB"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "6500E62F5D8914D9"
-				item: "gtceu:hv_circuit_assembler"
-				type: "item"
-			}]
-			title: "&2HV Circuit Assembling Machine"
-			x: 16.0d
-			y: -1.0d
-		}
-		{
 			dependencies: ["772004D5792ACC4C"]
 			description: [
 				"A more advanced type of &6Silicon Boule&r, formed by doping the &6Silicon&r crystal lattice with &6Phosphorus&r."
@@ -863,26 +850,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["26ECEC06CCAB3E56"]
-			description: ["&6Epoxy Circuit Boards&r are a more advanced substrate type that gives you access to &2Nanocircuits, which span tiers three through six."]
-			id: "2412924535FC751E"
-			rewards: [{
-				id: "634D618267BA0E7A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "794A362BAEE8DB2D"
-				item: "gtceu:epoxy_printed_circuit_board"
-				type: "item"
-			}]
-			title: "&2Epoxy Substrate"
-			x: 19.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["23A82A95709C324A"]
+			dependencies: ["7E09D4E00BFA4970"]
 			description: [
 				"&3Vacuum Freezers&r are primarily used to cool down hot ingots."
 				""
@@ -1883,33 +1851,6 @@
 		}
 		{
 			dependencies: [
-				"2412924535FC751E"
-				"0F140E480826AA81"
-				"1207189AD233A746"
-			]
-			description: [
-				"&2You can start to churn out Nanoprocessors&r. These are the best kind of Tier One circuits you can make, and you won't unlock the better recipes for quite a while."
-				""
-				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
-			]
-			id: "4D38653541F76928"
-			rewards: [{
-				id: "76040F15781A793D"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "6604B33DCD2686DB"
-				item: "gtceu:nano_processor"
-				type: "item"
-			}]
-			title: "&2The Third And Final Tier Three Circuits"
-			x: 19.5d
-			y: 10.5d
-		}
-		{
-			dependencies: [
 				"0143E903317263D4"
 				"358D9A7B1BCFA30A"
 			]
@@ -1957,35 +1898,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: [
-				"785C6332FC7A07A5"
-				"3F216049FBBB4E36"
-				"11154356854B64DA"
-			]
-			description: [
-				"With your &6Titanium&r-based machine hulls and &6Mainframes&r squared away, you can finally get on the path to making an Extreme Voltage &3Circuit Assembling Machine&r."
-				""
-				"This tier of Assembling Machine unlocks &6Nanocircuits&r, as well as handling crafting recipes up to 2048 EU/t. It can also optionally overclock recipes that consume up to 512 EU/t for improved speed at the cost of relatively more power."
-			]
-			id: "0F140E480826AA81"
-			rewards: [{
-				id: "5CA3FA1B30857AF7"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "451A56FCF12416DC"
-				item: "gtceu:ev_circuit_assembler"
-				type: "item"
-			}]
-			title: "&2EV Circuit Assembling Machine"
-			x: 17.5d
-			y: 12.5d
-		}
-		{
-			dependencies: ["0F140E480826AA81"]
+			dependencies: ["5B9F1EE13E397DEE"]
 			description: [
 				"&2Systems on Chip can be engraved with HV power and Phosphorus Boules. This unlocks the ultimate tier one circuit recipe in the EV Circuit Assembler."
 				""
@@ -2131,7 +2044,7 @@
 			y: 15.5d
 		}
 		{
-			dependencies: ["0F140E480826AA81"]
+			dependencies: ["5B9F1EE13E397DEE"]
 			description: [
 				"&2Used in building the Alloy Blast Smelter. "
 				""

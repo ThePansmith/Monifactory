@@ -2,7 +2,7 @@
 //? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEndgame.java
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    if (!isHardcoreMode) {
+    if (!isExpertMode) {
         return;
     }
 
@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(() => {
-    if (!isHardcoreMode) {
+    if (!isExpertMode) {
         return;
     }
 	GTMaterials.get('kapton_k').setFormula('C6H2((CO)2N)2C6H4OC6H4');

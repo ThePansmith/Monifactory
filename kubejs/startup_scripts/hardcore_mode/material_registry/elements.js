@@ -1,12 +1,12 @@
 GTCEuStartupEvents.registry('gtceu:element', event => {
-    if (!isHardcoreMode) {
+    if (!isExpertMode) {
         return;
     }
     event.create('taranium', 149, 264, -1, null, 'Tn', false)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    if (!isHardcoreMode) {
+    if (!isExpertMode) {
         return;
     }
 

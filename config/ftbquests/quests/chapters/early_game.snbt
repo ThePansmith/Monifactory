@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:advanced_integrated_circuit"
 	id: "7041EC01A69404E6"
-	order_index: 4
+	order_index: 5
 	quest_links: [
 		{
 			id: "7471AD069CC1E5EC"
@@ -49,6 +49,105 @@
 			linked_quest: "26C9F1514FD08C81"
 			x: 5.25d
 			y: 18.5d
+		}
+		{
+			id: "4065DEBE89F8D723"
+			linked_quest: "3650EF39B5AB4A7D"
+			shape: "hexagon"
+			x: 12.25d
+			y: 3.0d
+		}
+		{
+			id: "3127A65D63213C8E"
+			linked_quest: "3B639F4061B00F1A"
+			shape: "gear"
+			size: 1.5d
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			id: "54DA67D96DDF6F24"
+			linked_quest: "73F8EA8E7DCC94E9"
+			shape: "hexagon"
+			size: 2.0d
+			x: 10.5d
+			y: 10.0d
+		}
+		{
+			id: "5E540F00EDE093D8"
+			linked_quest: "27FAD6A8FCFAB543"
+			shape: "hexagon"
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			id: "033ECFDA3CD105A5"
+			linked_quest: "2AC61192BCD459F2"
+			shape: "hexagon"
+			x: 3.0d
+			y: 13.0d
+		}
+		{
+			id: "72565F33DD274CB5"
+			linked_quest: "6169C04DF463502F"
+			shape: "gear"
+			size: 2.0d
+			x: 3.0d
+			y: 16.0d
+		}
+		{
+			id: "1D8205BE97493DA8"
+			linked_quest: "1F101D4F758ACECB"
+			shape: "hexagon"
+			size: 2.0d
+			x: -7.0d
+			y: 16.0d
+		}
+		{
+			id: "095B07996EF4FCCF"
+			linked_quest: "7D3FAEA5E0071BDC"
+			shape: "hexagon"
+			x: 7.5d
+			y: 21.0d
+		}
+		{
+			id: "78B3988C652487F4"
+			linked_quest: "2FD1AE24CD8BEBEB"
+			shape: "hexagon"
+			size: 1.5d
+			x: -4.875d
+			y: 21.0d
+		}
+		{
+			id: "5C0A6679A759B924"
+			linked_quest: "7308924C9A481443"
+			shape: "hexagon"
+			size: 1.5d
+			x: -7.0d
+			y: 21.0d
+		}
+		{
+			id: "4E53C85BF1D03BB8"
+			linked_quest: "5759E8587624BEF1"
+			shape: "hexagon"
+			x: -7.0d
+			y: 25.0d
+		}
+		{
+			id: "6844D95401E27B3A"
+			linked_quest: "244F2CC5484A7B21"
+			shape: "hexagon"
+			size: 2.0d
+			x: 7.5d
+			y: 23.0d
+		}
+		{
+			id: "2AC2C9110FDD0D04"
+			linked_quest: "7E09D4E00BFA4970"
+			shape: "hexagon"
+			size: 2.0d
+			x: 7.5d
+			y: 25.0d
 		}
 	]
 	quests: [
@@ -529,7 +628,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1D95AC7CAC7D5121"]
 			description: [
 				"The &3Chemical Bath&r is mainly used as an ore processing machine to extract byproducts from specific &6Crushed Ores&r with either &9Sodium Persulfate&r or &9Mercury&r. It can also dye items, as well as perform some specialised processes."
 				""
@@ -636,7 +734,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["1D95AC7CAC7D5121"]
+			dependencies: ["3B639F4061B00F1A"]
 			description: [
 				"An &3MV Electrolyzer&r allows you to process recipes that require up to 128 EU/t, and can optionally overclock recipes costing at most 32 EU/t."
 				""
@@ -681,33 +779,6 @@
 			title: "&2MV Mixer"
 			x: 9.0d
 			y: 7.0d
-		}
-		{
-			dependencies: [
-				"591A1B8B279DFCC9"
-				"3A4FA18FB90A0BDA"
-			]
-			description: [
-				"Your first &6Tier Two Circuits&r will require three &6Tier One Circuits&r plus two &6Diodes&r."
-				""
-				"These are rather expensive... Always be on the lookout for a cheaper way to make your circuits - new sets of recipes become available each time you make a new tier of &2Circuit Assembler&r. Conveniently, this tier of Circuit unlocks one now!"
-			]
-			id: "1D95AC7CAC7D5121"
-			rewards: [{
-				id: "16FADFA7B37804E4"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "0792D3F06F03F6DB"
-				item: "gtceu:good_electronic_circuit"
-				type: "item"
-			}]
-			title: "&2The First Tier Two Circuits"
-			x: 10.5d
-			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -795,7 +866,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["1D95AC7CAC7D5121"]
+			dependencies: ["3B639F4061B00F1A"]
 			description: [
 				"The &3Extruder&r is an alternative way to form shapes from metal. &aExtruder Shapes&r are used for telling an Extruder which shape to make."
 				""
@@ -820,29 +891,6 @@
 			title: "&2MV Extruder"
 			x: 12.5d
 			y: 5.0d
-		}
-		{
-			dependencies: ["71C7B47DC85AA016"]
-			description: [
-				"&2Phenolic Substrates need to be turned into Circuit Boards with Silver before being usable in Circuit production."
-				""
-				"&2Sodium Persulfate and Iron III Chloride are troublesome to get right now, but using them in making Circuit Boards will reduce the amount of Silver required by 4 times."
-			]
-			id: "3A4FA18FB90A0BDA"
-			rewards: [{
-				id: "7423357D59CB8F51"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "064E42CEB175552C"
-				item: "gtceu:phenolic_printed_circuit_board"
-				type: "item"
-			}]
-			title: "&2Good Circuit Boards"
-			x: 12.5d
-			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -962,39 +1010,6 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"1D95AC7CAC7D5121"
-				"3E42B4AAA6D2A05B"
-			]
-			description: [
-				"&3Circuit Assemblers&r are the linchpin of your factory, gating progression through the &6Circuits&r. "
-				""
-				"Each time you upgrade to a new voltage of Circuit Assembler, you will be able to craft more advanced &ethemes&r of circuits. These use more complex ingredients and require new infrastructure to be in place, but are more efficient to craft overall than the same tier of circuit from the prior theme."
-				""
-				"&2The LV Circuit Assembler allows you to make Electronic Circuits far more easily."
-				""
-				"The circuit progression has been largely replaced with the progression native to CEu, with a few minor changes to reflect the progression of this pack better.&r Check out the &9Progression quest book tab&r to see the flow of circuit progression."
-			]
-			id: "2DDCA4800EFB303E"
-			rewards: [{
-				id: "066E92DD3819275A"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			subtitle: "Pick-n-Place"
-			tasks: [{
-				id: "7A8C8FD7EA66D590"
-				item: "gtceu:lv_circuit_assembler"
-				type: "item"
-			}]
-			title: "&2LV Circuit Assembler"
-			x: 10.5d
-			y: 10.0d
-		}
-		{
-			dependencies: ["7358461DB0D9A9AF"]
 			description: ["An advanced component used for the Circuit Assembling Machine."]
 			id: "3E42B4AAA6D2A05B"
 			rewards: [{
@@ -1010,32 +1025,6 @@
 			}]
 			x: 12.5d
 			y: 8.5d
-		}
-		{
-			dependencies: [
-				"7AA5FD63FA3BA43C"
-				"2DDCA4800EFB303E"
-			]
-			description: [
-				"These are easier to mass produce than &6Electronic Circuits&r, and they're required to produce the &6Advanced Integrated Circuit&r, your first &6HV&r circuit."
-				""
-				"Otherwise, they fulfill the same requirements."
-			]
-			id: "27913342423025C3"
-			rewards: [{
-				id: "3CCF4C5F3E947223"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "1428CB17E9BF4E5C"
-				item: "gtceu:basic_integrated_circuit"
-				type: "item"
-			}]
-			title: "&2The Second Tier One Circuits"
-			x: 3.0d
-			y: 10.0d
 		}
 		{
 			dependencies: ["2C6BEB5BBE5A91DC"]
@@ -1066,7 +1055,6 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["1D95AC7CAC7D5121"]
 			description: ["&2With the MV Assembling Machine, you can assemble a few necessary parts for the next Circuit tier."]
 			hide_dependency_lines: true
 			id: "2C6BEB5BBE5A91DC"
@@ -1160,56 +1148,7 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["27913342423025C3"]
-			description: ["&2Two Integrated Circuits&r and various other components will create a &2Good Integrated Circuit."]
-			id: "61D57691991183FF"
-			rewards: [{
-				id: "59E631BF7AB488BD"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "00D14EE88E380460"
-				item: "gtceu:good_integrated_circuit"
-				type: "item"
-			}]
-			title: "&2The Second Tier Two Circuits"
-			x: 3.0d
-			y: 13.0d
-		}
-		{
-			dependencies: [
-				"61D57691991183FF"
-				"13035465E07E34CF"
-				"6C8DE5DC18CDADF0"
-			]
-			description: [
-				"Your first tier three circuit, formed from &2two Good Integrated Circuits&r, &6RAM&r, and &6Transistors&r, among other ingredients."
-				""
-				"As you'll realize is the pattern, it is expensive and unwieldy to make the first forms of each tier of circuits. Fortunately, you don't have to make many of them."
-				""
-				"Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each tier through six will have a circuit recipe instead of requiring processors, arrays, or mainframes."
-			]
-			id: "41D3154853B9F90C"
-			rewards: [{
-				id: "02EEA77E79C08527"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "230F287286C582EB"
-				item: "gtceu:advanced_integrated_circuit"
-				type: "item"
-			}]
-			title: "&2The First Tier Three Circuits"
-			x: 3.0d
-			y: 16.0d
-		}
-		{
-			dependencies: ["41D3154853B9F90C"]
+			dependencies: ["6169C04DF463502F"]
 			description: [
 				"The &3Multi Smelter&r is an absolute smelting unit, and is most likely the best furnace &9and alloy smelter&r added by a mod."
 				""
@@ -1294,8 +1233,8 @@
 		}
 		{
 			dependencies: [
-				"41D3154853B9F90C"
 				"2823D7B4C8F900CA"
+				"6169C04DF463502F"
 			]
 			description: [
 				"With tier three circuits in hand, it's time to make a &3Distillation Tower&r, which is the gatekeeper for more advanced plastics like &6Epoxy&r and doing petrochemistry."
@@ -1372,26 +1311,6 @@
 			y: 13.0d
 		}
 		{
-			dependencies: ["41D3154853B9F90C"]
-			description: ["With the &3Advanced Circuit Assembling Machine&r, a new theme of Circuits is available."]
-			id: "3907A69C91726479"
-			rewards: [{
-				id: "0B7383A594D0E77E"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "6A14C9BD20667774"
-				item: "gtceu:mv_circuit_assembler"
-				type: "item"
-			}]
-			title: "&2MV Circuit Assembler"
-			x: -7.0d
-			y: 16.0d
-		}
-		{
 			dependencies: ["153BDCAE4D1CC407"]
 			description: [
 				"&9Polyethylene (PE)&r is the most common category of plastic, made from polymers of &9Ethylene&r. Adding &9Oxygen&r in a &3Chemical Reactor&r recreates (with some artistic license) early accidental synthesis of Polyethylene."
@@ -1440,85 +1359,6 @@
 			}]
 			title: "Capacitors"
 			x: -3.0d
-			y: 21.0d
-		}
-		{
-			dependencies: [
-				"7D0351942F4DB8E0"
-				"3907A69C91726479"
-				"2230386A91502CC0"
-			]
-			description: [
-				"&2You can start to churn out Microprocessors&r. These are the best kind of Tier One circuits you can make, and you won't unlock the better recipes for quite a while."
-				""
-				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
-			]
-			id: "5156ABA00FA3C6BF"
-			rewards: [{
-				id: "3D90A23D94F66136"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "7D4CA81897436591"
-				item: "gtceu:microchip_processor"
-				type: "item"
-			}]
-			title: "&2The Third And Final Tier One Circuits"
-			x: -5.0d
-			y: 21.0d
-		}
-		{
-			dependencies: [
-				"7D0351942F4DB8E0"
-				"3907A69C91726479"
-				"2230386A91502CC0"
-			]
-			description: [
-				"&2Unique to this tier of Circuit, this MV circuit doesn't require the previous tier to craft.&r These are the best kind of Tier Two circuits you can make, and you won't unlock the better recipes for quite a while."
-				""
-				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
-			]
-			id: "1E85D834A61B60F8"
-			rewards: [{
-				id: "4A30E7CA9E71F801"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "4DCAB0C482474942"
-				item: "gtceu:micro_processor"
-				type: "item"
-			}]
-			title: "&2The Third And Final Tier Two Circuits"
-			x: -6.996598639455776d
-			y: 21.011224489795914d
-		}
-		{
-			dependencies: ["417D97D9E3562F45"]
-			description: [
-				"Better substrates. Using &6Polyvinyl Chloride&r (PVC) instead of &6Polyethylene&r (PE) doubles your yield."
-				""
-				"The third &2and fourth material options&r are much more difficult to make and probably not worth considering for now."
-			]
-			id: "2230386A91502CC0"
-			rewards: [{
-				id: "45630D74F5D0EA0B"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "464ECF2573D7C72D"
-				item: "gtceu:plastic_printed_circuit_board"
-				type: "item"
-			}]
-			title: "&2Plastic Substrate"
-			x: 7.5d
 			y: 21.0d
 		}
 		{
@@ -2070,99 +1910,6 @@
 			y: 23.0d
 		}
 		{
-			dependencies: ["15E34DEC491FAB81"]
-			description: [
-				"The &2Cleanroom&r is a hollow multiblock free of contaminants. Going forward, most new circuit-related recipes, as well as some unique things like &3Fusion Casings&r, will need to be run in machines inside a Cleanroom. This is another ported &5GT5u&r feature, but just like with &aMaintenance&r, it won't be nearly as harsh."
-				""
-				"Once built, it must be well-maintained and powered for a while to clean the inside. The Cleanroom's power draw will decrease once it fully cleans itself. Recipes requiring the Cleanroom will &conly&r run when inside a &cfully-cleaned&r Cleanroom; if not, the recipe will not start, or recipe progress might be lost. (Recipe inputs will &enever be voided&r.)"
-				"{@pagebreak}"
-				"The Cleanroom can be built in any size between 5x5x5 and 15x15x15. The Controller is placed in the center of the top face, and the rest of the top face is built from &3Filter Casings&r. The rest of the wall space is filled with &3Plascrete&r."
-				""
-				"For transfer between the clean environment and the outside world:"
-				""
-				"- Items and fluids through &3Passthrough Hatches&r. They automatically input from one side and output from the opposite side."
-				""
-				"- Energy through &bGregTech &3Hulls&r or &3Diodes&r (of any tier). Note that Diodes can transport up to &e16 amps&r, whilst Hulls can only transport &e1 amp&r."
-				""
-				"- Your AE network through &bGregTech&r &3Hulls&r (of any tier)."
-				""
-				"- Players through regular &3Doors&r. The room remains clean when doors are opened."
-				""
-				"Apart from the \"official\" solutions, non-physical methods of transfer such as &3Ender Chests&r might be effective. &bApplied Energistics&r &3P2P Tunnels&r may also fit your liking."
-				""
-				"You will also need an &3Energy &rand &3Maintenance Hatch &rfor cleaning. &3Cleanroom Glass&r can replace any &3Plascrete&r, apart from the edges."
-				""
-				"If you're facing issues forming the Cleanroom:"
-				""
-				"- The wall space must be at least 75%% &3Plascrete&r or &3Cleanroom Glass&r. The floor block directly under the controller must also be &3Plascrete&r or &3Cleanroom Glass&r."
-				""
-				"- GT generators and Muffler Hatches are &cnot allowed&r in Cleanrooms."
-				""
-				"- Try rotating the controller with a wrench, or for even side lengths, try the other central positions."
-			]
-			icon: "gtceu:cleanroom"
-			id: "21B32BA716CE8CD3"
-			rewards: [{
-				count: 2
-				id: "0A8CBB81D6E18B5F"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [
-				{
-					id: "3B2FA005D7068AAE"
-					item: "gtceu:cleanroom"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "0977F82CF5B63181"
-					item: "gtceu:filter_casing"
-					type: "item"
-				}
-				{
-					count: 44L
-					id: "15668DF8C517E481"
-					item: "gtceu:plascrete"
-					type: "item"
-				}
-			]
-			title: "&2Cleanroom"
-			x: 7.535714285714285d
-			y: 22.85714285714286d
-		}
-		{
-			dependencies: [
-				"21B32BA716CE8CD3"
-				"013C3CD6D8C727CE"
-				"73C1AB31431B5C11"
-			]
-			description: [
-				"This is the first Tier Four circuit, which is used for EV-tier machinery. Requires some Vibrant Alloy."
-				""
-				"&2The HV Circuit Assembler only unlocks one circuit type, the Mainframe. There is no circuit theme associated with the HV Circuit Assembler; instead, the HV (non-Circuit) Assembler unlocks easier Circuit components. The next circuit theme is not until EV."
-			]
-			id: "23A82A95709C324A"
-			rewards: [{
-				count: 2
-				id: "7EC8EDF84C2C3C05"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "21F654243353EECC"
-				item: "gtceu:micro_processor_computer"
-				type: "item"
-			}]
-			title: "&2The First Tier Four Circuits"
-			x: 7.5d
-			y: 25.0d
-		}
-		{
 			dependencies: ["417D97D9E3562F45"]
 			description: [
 				"&2The successor of Small Coils, Inductors are another circuit component you will need."
@@ -2184,28 +1931,6 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 25.0d
-		}
-		{
-			dependencies: [
-				"1E85D834A61B60F8"
-				"013C3CD6D8C727CE"
-			]
-			description: ["Marginally cheaper to make than &2Advanced Integrated Circuits&r, and also the only way to make the &2Workstation&r, which is the first Tier Four circuit."]
-			id: "710E8D6E22C487C4"
-			rewards: [{
-				id: "040B7C9F9D45D4D9"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "69E98DD72804DC5B"
-				item: "gtceu:micro_processor_assembly"
-				type: "item"
-			}]
-			title: "&2The Second Tier Three Circuits"
-			x: -7.0d
 			y: 25.0d
 		}
 		{
@@ -2523,7 +2248,7 @@
 			y: 0.75d
 		}
 		{
-			dependencies: ["1D95AC7CAC7D5121"]
+			dependencies: ["3B639F4061B00F1A"]
 			description: ["All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."]
 			id: "3A71D736AE5C17E2"
 			rewards: [{
@@ -2541,7 +2266,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["1D95AC7CAC7D5121"]
 			description: [
 				"The &9Greenhouse&r is able to grow both crops and trees, perfect for your needs."
 				""
