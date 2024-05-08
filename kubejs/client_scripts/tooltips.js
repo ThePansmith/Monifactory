@@ -56,7 +56,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced('kubejs:debug_laser', (item, adv, text) => {
         text.add(Text.join('You need to be a ', rainbowify('dev', Math.round(Client.lastNanoTime / 100000000)), ' to use this'))
     });
-
+    
 	// dml glitch armor
 	tooltip.add('kubejs:glitch_fragment', Text.translatable('item.kubejs.glitch_fragment.desc'))
 	tooltip.add('kubejs:glitch_infused_ingot', Text.translatable('item.kubejs.glitch_infused_ingot.desc'))
@@ -70,10 +70,10 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:basic_microverse_projector', Text.translatable('gtceu.basic_microverse_projector.desc'))
     tooltip.add('gtceu:advanced_microverse_projector', Text.translatable('gtceu.advanced_microverse_projector.desc'))
     tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.advanced_microverse_projector_ii.desc'))
-    tooltip.add('gtceu:creative_tank_fabricator', Text.translatable('gtceu.creative_tank_fabricator.desc'))
     tooltip.add('gtceu:advanced_assline', Text.translatable('gtceu.advanced_assline.desc'))
     tooltip.add('gtceu:advanced_microverse_projector_iii', Text.translatable('gtceu.advanced_microverse_projector_iii.desc'))
     tooltip.add('gtceu:advanced_microverse_projector_iii', Text.translatable('gtceu.advanced_microverse_projector_iii_2.desc'))
+    tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.subatomic_digital_assembler.desc'))
 
     tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
         text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))

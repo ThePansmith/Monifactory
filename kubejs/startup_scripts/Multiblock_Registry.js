@@ -1,6 +1,7 @@
 const Tags = Java.loadClass('dev.latvian.mods.kubejs.util.Tags')
 
 // Small Microverse Projector Recipe Type
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('basic_microverse')
         .category('multiblock')
@@ -94,8 +95,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
-    // Creative Tank Fabricator
-    event.create('creative_tank_fabricator')
+    // Subatomic Digital Assembler
+    event.create('subatomic_digital_assembly')
         .category('multiblock')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 0, 0) //
@@ -122,6 +123,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
     
+
+    // Large Material Press
+    event.create('large_material_press')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(6, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_COMPRESS, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COMPRESSOR)
+        .setIconSupplier(() => Item.of('gtceu:large_material_press'))
     //Omnic Forge
     event.create('omnic_forge')
         .category('multiblock')
@@ -129,10 +140,14 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(6, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-    })
+
+})
 
 // Basic Microverse Projector
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
+    GCyMMachines.LARGE_MATERIAL_PRESS.setRecipeTypes([GTRecipeTypes.BENDER_RECIPES, GTRecipeTypes.COMPRESSOR_RECIPES, GTRecipeTypes.FORGE_HAMMER_RECIPES, GTRecipeTypes.FORMING_PRESS_RECIPES, GTRecipeTypes.get('large_material_press')])
+    
     event.create('basic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('basic_microverse')
@@ -322,16 +337,16 @@ event.create('draconic_reactor', 'multiblock')
 
 // Creative Tank Fabricator
 // TODO: Cooler Design, thinking about some kind of computer that fabricates the tanks from the data
-event.create('creative_tank_fabricator', 'multiblock')
+event.create('subatomic_digital_assembler', 'multiblock')
     .rotationState(RotationState.NON_Y_AXIS)
-    .recipeTypes('creative_tank_fabricator')
+    .recipeTypes('subatomic_digital_assembler')
     .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
     .pattern(definition => FactoryBlockPattern.start()
         .aisle("CCC", "GGG", "CCC")
         .aisle("CCC", "G#G", "CCC")
         .aisle("CSC", "GGG", "CCC")
         .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-        .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+        .where('G', Predicates.blocks(GTBlocks.CLEANROOM_GLASS.get()))
         .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(10)
             .or(Predicates.autoAbilities(definition.getRecipeTypes())))
         .where('#', Predicates.any())
@@ -505,5 +520,4 @@ event.create('loot_superfabricator', 'multiblock')
             .build())
         .workableCasingRenderer("kubejs:block/draconium/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-        
 })
