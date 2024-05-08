@@ -971,7 +971,7 @@
 				""
 				"Pick your poison."
 				""
-				"&5Sadly, EnderIO has decided to already abandon 1.20.1 EnderIO, meaning things like speed upgrades, filters, etc will never be officially added. If you are a mod dev and are willing to port these elements, please let the Monifactory dev team know."
+				"&5Sadly, EnderIO has decided to already abandon 1.20.1 EnderIO, meaning things like speed upgrades, filters, etc will never be officially added. If you are a mod dev and are willing to help in porting these elements, please refer to the Monifactory EnderIO repository."
 			]
 			icon: "gtceu:steel_small_fluid_pipe"
 			id: "64AAF0CD958D836A"
@@ -1094,11 +1094,18 @@
 				"&2GTCEu has a Primitive Water Pump, which can do it faster. However, it requires Treated Wood, which requires Creosote from a Coke Oven."
 			]
 			id: "0FF18D13CD42F48A"
-			rewards: [{
-				id: "5B48A2DC5BF8979D"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5B48A2DC5BF8979D"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "122522C479F28E1F"
+					item: "ulvcovm:ulv_electric_pump"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "2ECEDA36F2ADFDE8"
@@ -1813,8 +1820,6 @@
 				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
 				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 3 barrels worth of items at it's lowest tier, costing only a bit of iron to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
-				""
-				"&5Retextures and such are WIP."
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{

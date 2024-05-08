@@ -12,13 +12,13 @@
 			id: "3B67DB8C98F8C650"
 			linked_quest: "1A30472430354F1E"
 			x: 4.5d
-			y: 12.0d
+			y: 10.0d
 		}
 		{
 			id: "474716C83CA0A36E"
 			linked_quest: "77670BF761084AA2"
 			x: 4.5d
-			y: 10.0d
+			y: 8.5d
 		}
 	]
 	quests: [
@@ -129,7 +129,7 @@
 			]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Welcome to Monifactory"
+			subtitle: "Welcome to Monifactory Expert Mode"
 			tasks: [{
 				id: "0D6DA13EA86FE61D"
 				title: "Genesis #3"
@@ -360,7 +360,7 @@
 			]
 			title: "Some Starter Tools"
 			x: 2.5d
-			y: 2.25d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -430,7 +430,7 @@
 			]
 			title: "&9Steam Grinder"
 			x: 4.5d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -479,7 +479,7 @@
 			]
 			title: "&9Steam Foundry"
 			x: 0.5d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -507,7 +507,7 @@
 			}]
 			title: "Proper Tool Care"
 			x: 0.5d
-			y: 2.25d
+			y: 1.75d
 		}
 		{
 			dependencies: ["03A575FD497A5AC9"]
@@ -532,7 +532,7 @@
 				type: "item"
 			}]
 			x: 6.25d
-			y: 2.25d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -590,8 +590,6 @@
 				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
 				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 3 barrels worth of items at it's lowest tier, costing only a bit of iron to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
-				""
-				"&5Retextures and such are WIP."
 			]
 			id: "6FC918DC1C54B3E8"
 			rewards: [{
@@ -656,7 +654,7 @@
 				type: "item"
 			}]
 			x: 6.25d
-			y: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["4B338515E84FC51A"]
@@ -667,7 +665,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -699,7 +697,7 @@
 			}]
 			title: "&2Cables"
 			x: 2.5d
-			y: 12.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -734,7 +732,7 @@
 			}]
 			title: "&2GT Item Pipes"
 			x: 0.5d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -790,7 +788,7 @@
 			}]
 			title: "LV Power"
 			x: 2.5d
-			y: 14.25d
+			y: 11.75d
 		}
 		{
 			dependencies: [
@@ -815,11 +813,6 @@
 				{
 					id: "65B35DDB6032B961"
 					item: "buildinggadgets2:gadget_building"
-					type: "item"
-				}
-				{
-					id: "2736BF34D2ED24F6"
-					item: "buildinggadgets2:gadget_exchanging"
 					type: "item"
 				}
 				{
@@ -850,7 +843,7 @@
 			]
 			title: "Inspector Gadget"
 			x: -2.75d
-			y: 16.25d
+			y: 13.75d
 		}
 		{
 			dependencies: [
@@ -903,7 +896,7 @@
 			]
 			title: "&9Flux Capacitors"
 			x: -1.25d
-			y: 14.25d
+			y: 11.75d
 		}
 		{
 			dependencies: [
@@ -949,7 +942,7 @@
 			}]
 			title: "&9Charging Items"
 			x: -1.25d
-			y: 16.25d
+			y: 13.75d
 		}
 		{
 			dependencies: [
@@ -970,7 +963,7 @@
 			}]
 			title: "Charging Batteries"
 			x: 0.5d
-			y: 16.25d
+			y: 13.75d
 		}
 		{
 			dependencies: [
@@ -994,7 +987,7 @@
 			}]
 			title: "Conductive Iron Energy Conduits"
 			x: 0.5d
-			y: 12.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["03A575FD497A5AC9"]
@@ -1023,17 +1016,6 @@
 			}]
 			x: 4.5d
 			y: 0.25d
-		}
-		{
-			dependencies: ["03A575FD497A5AC9"]
-			id: "304CBBB36F0F9055"
-			tasks: [{
-				id: "4580F4650B74A643"
-				item: "ironfurnaces:iron_furnace"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -1095,7 +1077,7 @@
 			]
 			title: "More Materials"
 			x: 2.5d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1171,7 +1153,7 @@
 			]
 			title: "From Dust to Wires"
 			x: 2.5d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1201,29 +1183,68 @@
 			}]
 			title: "Steam Dynamo"
 			x: -1.25d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["51A495F8B5B4E947"]
 			id: "34CA940B412284F2"
 			tasks: [{
 				id: "34E57B9F8FF4E1AE"
-				item: "gtceu:lp_steam_solid_boiler"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_solar_boiler"
+							}
+						]
+					}
+				}
+				title: "Steam Boiler"
 				type: "item"
 			}]
+			title: "Steam Boilers"
 			x: 2.5d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
 			id: "4B338515E84FC51A"
-			tasks: [{
-				id: "585E8100673442CD"
-				item: "gtceu:lp_steam_compressor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4D763AE3D2BE5F1A"
+					item: "gtceu:lp_steam_forge_hammer"
+					type: "item"
+				}
+				{
+					id: "3CB3805DD8D4D875"
+					item: "gtceu:lp_steam_macerator"
+					type: "item"
+				}
+				{
+					id: "6F479A5EDAE2715B"
+					item: "gtceu:lp_steam_compressor"
+					type: "item"
+				}
+				{
+					id: "68B11E7E020C79C8"
+					item: "gtceu:lp_steam_alloy_smelter"
+					type: "item"
+				}
+			]
+			title: "Steam Machines"
 			x: 2.5d
-			y: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["03D0FFA69E671D48"]
@@ -1267,7 +1288,7 @@
 			]
 			title: "Molds"
 			x: 8.0d
-			y: 8.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1282,25 +1303,14 @@
 				"You also can only use them for now, until you get access to..."
 				""
 				"&bEnderIO&r&6 Fluid Conduits&r. They have the advantage of being &6Conduits&r, allowing them to fit in the same block as other &6Conduits&r. "
-				""
-				"Pick your poison."
-				""
-				"&5Sadly, EnderIO has decided to already abandon 1.20.1 EnderIO, meaning things like speed upgrades, filters, etc will never be officially added. If you are a mod dev and are willing to port these elements, please let the Monifactory dev team know."
 			]
 			icon: "gtceu:steel_small_fluid_pipe"
 			id: "7B780BD070BEB60A"
-			tasks: [
-				{
-					id: "7206D5D1CFE30F08"
-					item: "enderio:pressurized_fluid_conduit"
-					type: "item"
-				}
-				{
-					id: "43D259BDAF7A5694"
-					item: "gtceu:potin_normal_fluid_pipe"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "43D259BDAF7A5694"
+				item: "gtceu:potin_normal_fluid_pipe"
+				type: "item"
+			}]
 			title: "&9Fluid Transport"
 			x: -1.25d
 			y: -0.25d
@@ -1329,7 +1339,7 @@
 			}]
 			title: "Rubber Sheets"
 			x: 6.25d
-			y: 12.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["754C416FB3F5DBDA"]
@@ -1340,7 +1350,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 12.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1367,7 +1377,7 @@
 			}]
 			title: "A Primer on Power"
 			x: 2.5d
-			y: 16.25d
+			y: 13.75d
 		}
 		{
 			dependencies: [
@@ -1404,7 +1414,7 @@
 			}]
 			title: "Putting it all Together"
 			x: 2.5d
-			y: 18.75d
+			y: 16.25d
 		}
 		{
 			dependencies: [
@@ -1426,7 +1436,7 @@
 			}]
 			title: "&9More Efficient"
 			x: -1.25d
-			y: 12.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1454,7 +1464,7 @@
 			}]
 			title: "LV Power Storage"
 			x: 0.5d
-			y: 14.25d
+			y: 11.75d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -1501,7 +1511,133 @@
 			]
 			title: "&9Steam Separator"
 			x: 0.5d
-			y: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2E8BFA2E719B1C47"
+				"03A575FD497A5AC9"
+			]
+			description: ["&3Iron Furnaces&f can smelt an item in &a160 ticks&f, which is somewhat faster than a vanilla &6Furnace&f, which takes &a200 ticks&f. The fuel efficiency remains the same for all furnaces."]
+			id: "785E5C74534FA107"
+			rewards: [{
+				id: "7F8F9A39A67A2EFB"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53D92ACDB9AA373A"
+				item: "ironfurnaces:iron_furnace"
+				type: "item"
+			}]
+			title: "Furnace v2.0"
+			x: 8.0d
+			y: -1.25d
+		}
+		{
+			dependencies: [
+				"7865CDE5CFE005DC"
+				"785E5C74534FA107"
+			]
+			description: ["&3Copper Furnaces&f are another step up in speed, taking &a100 ticks&f to smelt an item."]
+			id: "08E2CC76E0FDCC0F"
+			rewards: [{
+				id: "79914B96466EC462"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B64026C850C6441"
+				item: "ironfurnaces:copper_furnace"
+				type: "item"
+			}]
+			title: "Furnace v3.0"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0591171F13A45283"
+				"08E2CC76E0FDCC0F"
+			]
+			description: ["&3Silver Furnaces&f are another step up in speed, taking a mere &a80 ticks&f to smelt an item."]
+			id: "64EF41CCA3DAB341"
+			rewards: [{
+				id: "12FD63CD61BA4343"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25E8697A0F5225FF"
+				item: "ironfurnaces:silver_furnace"
+				type: "item"
+			}]
+			title: "Furnace v4.0"
+			x: 8.0d
+			y: 1.25d
+		}
+		{
+			dependencies: [
+				"3F77EDE69BB649DA"
+				"64EF41CCA3DAB341"
+			]
+			description: ["&3Gold Furnaces&f are yet another step up in speed, taking only &a40 ticks&f to smelt an item."]
+			id: "0E531B9E3FC2B0AA"
+			rewards: [{
+				id: "2C4AD39C20E82B6E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2387A0EDC1C158C9"
+				item: "ironfurnaces:gold_furnace"
+				type: "item"
+			}]
+			title: "Furnace v5.0"
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"6B121BEFD852BC2D"
+				"0E531B9E3FC2B0AA"
+			]
+			description: ["&3Diamond Furnaces&f are even faster, taking only &a25 ticks&f to smelt an item."]
+			id: "3685DFB89BCAF513"
+			rewards: [{
+				id: "013A94BC142CE8DB"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F69FD715D3A6616"
+				item: "ironfurnaces:diamond_furnace"
+				type: "item"
+			}]
+			title: "Furnace v6.0"
+			x: 8.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"1AE46C1970378083"
+				"3685DFB89BCAF513"
+			]
+			description: ["&3Obsidian Furnaces&f are slightly faster than &3Diamond Furnaces&f, taking only &a20 ticks&r to smelt an items, and are also blastproof."]
+			id: "1AA899ABB05840CA"
+			rewards: [{
+				id: "453F8ADE82F7CF3C"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33611615E8F7830B"
+				item: "ironfurnaces:obsidian_furnace"
+				type: "item"
+			}]
+			title: "Furnace v7.0"
+			x: 8.0d
+			y: 5.0d
 		}
 	]
 	subtitle: ["WIP, HM is not playable yet!"]
