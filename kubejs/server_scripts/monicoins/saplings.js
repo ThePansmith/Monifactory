@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    if (isNormalMode) {
     //-- Saplings
         event.shaped(
         Item.of('minecraft:oak_sapling', 64), [
@@ -82,4 +83,5 @@ ServerEvents.recipes(event => {
     ], {
         A: 'kubejs:moni_penny'
     }).noMirror().noShrink()
+}
 })

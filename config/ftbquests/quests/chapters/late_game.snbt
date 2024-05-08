@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:wetware_processor_mainframe"
 	id: "58ABB361EA301019"
-	order_index: 8
+	order_index: 9
 	quest_links: [
 		{
 			id: "5522298B1FC30B2B"

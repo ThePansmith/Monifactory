@@ -1,0 +1,1465 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "a_harder_genesis"
+	group: ""
+	icon: "gtceu:lp_steam_alloy_smelter"
+	id: "3F31AF7EC98363C6"
+	order_index: 2
+	quest_links: [
+		{
+			id: "3B67DB8C98F8C650"
+			linked_quest: "1A30472430354F1E"
+			x: 4.5d
+			y: 12.0d
+		}
+		{
+			id: "474716C83CA0A36E"
+			linked_quest: "77670BF761084AA2"
+			x: 4.5d
+			y: 10.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["2A511DB40C66CF35"]
+			description: [
+				"This pack is intended to be played in a &bLost cities/Overworld dimension&r."
+				""
+				"If you're playing with friends, don't forget to invite them to a &eFTB Teams party&r. "
+				""
+				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid World&r."
+				"{@pagebreak}"
+				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
+				""
+				"Features new to &9Monifactory&r and quests with new content will be higlighted in &9Blue&r."
+				""
+				"Notes about things in &5Alpha&r will be higlighted in &5Dark Purple&r."
+				""
+				"[\"Text with \",{\"text\":\"underlines\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"But not this!\"}},\" are (mostly) clickable.\"]"
+			]
+			icon: "minecraft:crafting_table"
+			id: "693B4C589ECE895D"
+			rewards: [
+				{
+					id: "2408C5163D46C21E"
+					item: "telepastries:custom_cake"
+					type: "item"
+				}
+				{
+					id: "18933C396894F74E"
+					item: "telepastries:overworld_cake"
+					type: "item"
+				}
+				{
+					id: "2A02F754947F76BA"
+					item: {
+						Count: 1b
+						id: "gtceu:prospector.hv"
+						tag: {
+							Charge: 1600000L
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "17B4711CB158952B"
+					item: {
+						Count: 1b
+						id: "gtceu:diamond_mining_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 2303
+								ToolSpeed: 6.4f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74E6D10CE96C1CD4"
+					item: {
+						Count: 1b
+						id: "gtceu:diamond_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 767
+								ToolSpeed: 8.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "enderio:cake_base"
+					id: "7DBA0B17B70495F4"
+					title: "&6Infinite Cakes!"
+					type: "custom"
+				}
+				{
+					auto: "invisible"
+					id: "1C3BFB9A86244429"
+					ignore_reward_blocking: true
+					stage: "intro_complete"
+					type: "gamestage"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Welcome to Monifactory"
+			tasks: [{
+				id: "0D6DA13EA86FE61D"
+				title: "Genesis #3"
+				type: "checkmark"
+			}]
+			title: "&9Genesis"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"66FCC26399376B55"
+				"693B4C589ECE895D"
+			]
+			description: [
+				"&c&rOres in &9Monifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area!"
+				"&r"
+				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
+				"{@pagebreak}"
+				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &9Goethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
+				""
+				"&6Wrought Iron&f is obtained simply by &esmelting Iron a second time&f. It has more durability than Iron, so it is better for making tools, but &cdo not convert your entire Iron supply over to Wrought Iron&f. The two materials are not interchangeable and you'll need Iron or Wrought Iron as demanded by various recipes."
+			]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "03A575FD497A5AC9"
+			rewards: [{
+				id: "3B07138EE82A7C40"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:wrought_iron"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "ULV Beginnings"
+			tasks: [
+				{
+					count: 12L
+					id: "7849D11F3901C825"
+					item: { Count: 12b, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "10027F80A4352150"
+					item: { Count: 12b, id: "gtceu:wrought_iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Iron Supply"
+			x: 2.5d
+			y: -1.25d
+		}
+		{
+			dependencies: [
+				"2E8BFA2E719B1C47"
+				"03A575FD497A5AC9"
+			]
+			description: [
+				"&6Gregtech&r adds a decent bit of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
+				""
+				"[\"On the topic of crafting, if you are not already familiar with how \", {\"text\": \"recipe viewers\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B200AD6EFF90DFA\" } },\" like EMI or JEI, read that quest first.\"]"
+				""
+				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
+				""
+				"Let's start with &9[+]&r, as it's the simplest: right-click a crafting table, look up the recipe you need and press the &9[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
+				""
+				"&c[❤]&r and &a[┴]&r are used in tandem to create &arecipe trees&r. Pressing &a[┴]&r will pull up a &arecipe tree&r for that given item. Pressing &c[❤]&r on a recipe will mark it as the &cdefault recipe&r for that item, and will show that recipe (and the items used to craft it) in &arecipe trees&r. You can then add &cdefault recipes&r for the items used to craft that recipe, repeat ad nauseam. Note that you can click on a item in the &arecipe tree&r and it's recipes will be pulled up."
+				"{@pagebreak}"
+				"In the &arecipe tree&r GUI, you can change the batch size by scrolling on the number to the right of the final result. Finally, and most importantly, you can press the &6Magnifying Glass&r to switch to &6Crafting Tree Mode&r, this will &edisplay the items that you need for every step to craft the number of items that you specified&r in your sidebar, and will dynamically update as you craft items. You can click on these &6Synethic Favorites&r with your Craft to Inventory bind (unbinded by default) to &eautomatically craft and then push items back into your inventory&r when using a crafting table, or push the exact number of items needed if using a different inventory.&r"
+				""
+				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the &a[┴]&r button found in the bottom left of your screen and it will pull up the &arecipe tree&r GUI as well."
+			]
+			disable_toast: true
+			icon: "gtceu:crafting_table_cover"
+			id: "1DA1328599A76970"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Better than any crafting calculator."
+			tasks: [{
+				id: "1EB1755B3628C244"
+				type: "checkmark"
+			}]
+			title: "&9Recipe Trees and Crafting Trees"
+			x: 2.5d
+			y: 0.3125d
+		}
+		{
+			dependencies: [
+				"58566C7BF4C22D86"
+				"1DA1328599A76970"
+			]
+			description: [
+				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
+				""
+				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
+				""
+				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:wrought_iron_wire_cutter"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 383
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "22BF3BCEBA7FABBD"
+			rewards: [{
+				count: 2
+				id: "45701F60257153EE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					id: "3BFF1990DCBD639B"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_hammer"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "22C0811DDE7EE5CA"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_file"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "40F09DEEC88421D1"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_saw"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "192FE417E75386C0"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6DEE1E30C5F8BD62"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_screwdriver"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F5ACA0F37F79B0E"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_wire_cutter"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1AC95D8B083B9D7E"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_mortar"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Some Starter Tools"
+			x: 2.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"545CCC24D9401794"
+				"34CA940B412284F2"
+			]
+			description: [
+				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
+				""
+				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				""
+				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
+			]
+			icon: "gtceu:steam_grinder"
+			id: "0A8179C319A6868E"
+			rewards: [
+				{
+					count: 7
+					id: "73080607FE93E69A"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "5BC6046C0217B7C6"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:silk_touch"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 1.0d
+			tasks: [
+				{
+					id: "3EDB0FDC22025D52"
+					item: "gtceu:steam_grinder"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "0A7839B6E752B41C"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+				{
+					id: "5FE99FF941C3787F"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "2A06924A3F44F7FA"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "3B7B74056552188F"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&9Steam Grinder"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"545CCC24D9401794"
+				"34CA940B412284F2"
+			]
+			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
+			icon: "steamadditions:steam_foundry"
+			id: "1A80D0AE0B2F7A9D"
+			rewards: [{
+				id: "4B38D39E9A8C5A43"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					id: "2BCC8869D365A38D"
+					item: "steamadditions:steam_foundry"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "6394A3C7C39ABEAA"
+					item: { Count: 13b, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "6D33F60793938D3C"
+					item: "gtceu:bronze_firebox_casing"
+					type: "item"
+				}
+				{
+					id: "15E5F663F34A3F7F"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "3564DED36B075627"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "4346924640CB214F"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&9Steam Foundry"
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"4FE53F31E68F4C1C"
+				"22BF3BCEBA7FABBD"
+			]
+			description: [
+				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
+				""
+				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the mortar and the plunger."
+				""
+				"Also, you can now repair your free &6Mining Hammers&r with some &6Diamonds&r!"
+			]
+			id: "0C0E2F23F275D743"
+			rewards: [{
+				id: "719260733228F460"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "&3Anvils&f can be used to repair almost all &bGregTech tools&f!"
+			tasks: [{
+				id: "3081D7D59AFD16A5"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			title: "Proper Tool Care"
+			x: 0.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["03A575FD497A5AC9"]
+			id: "34075516DB3D9F02"
+			tasks: [{
+				id: "695BE6C5B893796B"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			x: 6.25d
+			y: -0.25d
+		}
+		{
+			dependencies: [
+				"34075516DB3D9F02"
+				"22BF3BCEBA7FABBD"
+			]
+			id: "3C00463D13E4C5D2"
+			tasks: [{
+				id: "53DA82999B801AF6"
+				item: "gtceu:primitive_pump"
+				type: "item"
+			}]
+			x: 6.25d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"4FE53F31E68F4C1C"
+				"03A575FD497A5AC9"
+			]
+			description: [
+				"&aMining Hammers&r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 of blocks (unless you're crouching) and mine quickly."
+				""
+				"&2GTCEu now has Mining Hammers natively! You can craft them with any GT tool material. &r"
+				""
+				"Your free 4 Diamond Mining Hammers should last you a while, and you can always fix them using an anvil and some diamonds."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_mining_hammer"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						Damage: 0
+					}
+				}
+			}
+			id: "3F46DE362542FEBC"
+			rewards: [{
+				id: "1593672721B281B5"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Diggy Diggy Hole"
+			tasks: [{
+				consume_items: false
+				id: "68888EA2A4DADEE0"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mining_hammers"
+					}
+				}
+				match_nbt: false
+				title: "Any Mining Hammers"
+				type: "item"
+			}]
+			title: "Mining Hammers"
+			x: 0.5d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"2E8BFA2E719B1C47"
+				"03A575FD497A5AC9"
+			]
+			description: [
+				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at base and on the go, as well as offering a variety of both helpful and fun upgrades."
+				""
+				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 3 barrels worth of items at it's lowest tier, costing only a bit of iron to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
+				""
+				"&5Retextures and such are WIP."
+			]
+			id: "6FC918DC1C54B3E8"
+			rewards: [{
+				id: "6DAA6C56B5987088"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Bags of holding"
+			tasks: [
+				{
+					id: "1DBE44ABD7CC28EE"
+					item: {
+						Count: 1b
+						id: "sophisticatedstorage:gold_barrel"
+						tag: {
+							woodType: "oak"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2DCE3A1F29D1CDCD"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni_quest:backpack"
+						}
+					}
+					title: "Any Sophisticated Backpack"
+					type: "item"
+				}
+			]
+			title: "&9Sophisticated Storage Shenanigans"
+			x: -2.75d
+			y: -1.25d
+		}
+		{
+			dependencies: [
+				"72D61AFACC53A34A"
+				"3F39E9B829DAE2F2"
+				"03D0FFA69E671D48"
+			]
+			description: [
+				"The &eNether&r contains quite a few useful resources:"
+				"- Some initial pieces of &6Sulfur&r"
+				"- &6Glowstone&r and &6Soul Sand&r"
+				"- &6Fluorine&r, &6Certus Quartz&r, &6Molybdenum&r, &6Antimony&r, and &6Gold&r-bearing ores"
+				"- &2Nether Air&r, which can be distilled for useful gases"
+				"- &eLava&r and &eNatural Gas&r from &2Fluid Rigs&r"
+			]
+			id: "126772F682B282E4"
+			rewards: [{
+				id: "7E76763C77A5431F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "2E1F72CA9DDEA37B"
+				item: "telepastries:nether_cake"
+				type: "item"
+			}]
+			x: 6.25d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4B338515E84FC51A"]
+			id: "03D0FFA69E671D48"
+			tasks: [{
+				id: "75E2F87C0D4B99E1"
+				item: "gtceu:primitive_blast_furnace"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"6FB3E3D9CA0F4B30"
+				"7FA0E6F3B466576C"
+				"605B2CCEAC246E14"
+			]
+			description: [
+				"The most basic cables, such as these &6Red Alloy Cables&f, can be wrapped in their &6Rubber&f insulation by hand."
+				""
+				"More advanced types of cables will require an &3Assembling Machine&f and liquid &9Rubber&f, but you can do it the simple way for now."
+				""
+				"&2CEu has GT6-style pipes and cables on by default. &rYou will need to use &aWire Cutters&r to connect each side of a cable to machines or other cables. Placing it against the machine or cable automatically connects it as well. The same behaviour follows for GT pipes, whose tool is the &aWrench&r."
+				"This can save you from energy or fluids going the wrong way. But if you don't like this, disable the config option for \"GT6 style pipes and cables\" in the GregTech config file."
+				""
+				"&2GT cables now support RF conversion natively! &rYou can plug an &9RF&r machine into an &9EU&r cable directly and it will convert the energy. You cannot, however, plug an &9RF&r power souce directly into an &9EU&r cable."
+			]
+			id: "1EF6D85C63B73016"
+			rewards: [{
+				id: "55C7338FBDAE4386"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 12L
+				id: "5E4005DECF556DCD"
+				item: { Count: 12b, id: "gtceu:red_alloy_single_cable" }
+				type: "item"
+			}]
+			title: "&2Cables"
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"1229234A71CE0A99"
+				"51A495F8B5B4E947"
+			]
+			description: [
+				"&rThis quest accepts a item pipe of any material, any size, whether restrictive or normal."
+				""
+				"For now, the best material to make these pipes out of is probably &6Tin&r."
+				""
+				"Their advantage over &5EnderIO &3Item Conduits&r is their far higher &6throughput&r. An unupgraded EIO Item Conduit transports &98 items per second&r, and up to &9128&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9multiple stacks per second&r."
+				""
+				"They don't auto-extract by themselves, so you have to use &3Conveyor covers&r etc. with them."
+				""
+				"The priority mechanics are more complicated, so skip ahead if you are not interested:"
+				"A Destination will have a Routing Value calculated, which is the sum of all Routing Values of the individual Pipes to that Destination. Whichever Destination has the lowest Routing Value will be the one selected for Insertion."
+				"Restrictive Pipes typically have the lowest Priority for insertion due to their higher Routing Value."
+			]
+			id: "348074066C51AEE9"
+			rewards: [{
+				id: "4CB6493F03CEE2DD"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "&2Item Pipes are back in GTCEu! They will transport items instantly through them."
+			tasks: [{
+				id: "74F09E4E4C4ECAA4"
+				item: "gtceu:tin_normal_item_pipe"
+				type: "item"
+			}]
+			title: "&2GT Item Pipes"
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"39D4174834F3879D"
+				"08948A23B3A17923"
+				"17312BF0197B87A8"
+				"1A30472430354F1E"
+				"145C7588B1391C51"
+			]
+			description: [
+				"&rThe &3Steam Dynamos&r&r&r you have made are generating &aRF power&r, but &bGregTech&r machines require &aEU power&r. With your first &6circuit&r in hand, you are ready to build a &eLow Voltage (LV) &3&2Energy Converter&r."
+				""
+				"The &2Energy Converter&r is a special device that &econverts &2between &aRF power&r and &aEU power&r. They come in &2four sizes: 1A, 4A, 8A, and 16A."
+				""
+				"&aRF&r converts into &aEU&r at a &e4 to 1 ratio&r. &a100 RF&r becomes &a25 EU&r, and vice-versa. &2Use a Soft Hammer to change the conversion direction."
+			]
+			icon: "gtceu:lv_4a_energy_converter"
+			id: "172CE49595ADD532"
+			rewards: [{
+				id: "2539A8FCCA5E2F02"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "5D3E2D11697CD5EA"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_1a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_4a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_8a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_16a_energy_converter"
+							}
+						]
+					}
+				}
+				title: "Any LV Converter"
+				type: "item"
+			}]
+			title: "LV Power"
+			x: 2.5d
+			y: 14.25d
+		}
+		{
+			dependencies: [
+				"3A5387B2003177B2"
+				"60039C237DE54C70"
+			]
+			description: [
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
+				""
+				"Also important to note that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
+				""
+				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, `connecting' the gadget to the inventory."
+				""
+				"For example, if you shift-right click a chest full of cobblestone, the gadget will use cobblestone from that chest to place blocks."
+				""
+				"By default, the config GUI is bound to &6G&r."
+			]
+			icon: "buildinggadgets2:gadget_building"
+			id: "4541FDA9D7D873DF"
+			subtitle: "This pack has &bBuilding Gadgets&r."
+			tasks: [
+				{
+					id: "65B35DDB6032B961"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "2736BF34D2ED24F6"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "32EFF880ED2E88C3"
+					item: {
+						Count: 1b
+						id: "buildinggadgets2:gadget_copy_paste"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0E2F8D1FEB3D7F20"
+					item: {
+						Count: 1b
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0BE3C28EC1D8F977"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+			]
+			title: "Inspector Gadget"
+			x: -2.75d
+			y: 16.25d
+		}
+		{
+			dependencies: [
+				"081101DEE6227D87"
+				"06E9B9DDDB245F38"
+				"60039C237DE54C70"
+			]
+			description: [
+				"Basic &aFlux Capacitors&r hold a whopping lot of energy - &9500 kRF&r - and are useful for keeping your &aRF-powered&r equipment and tools charged."
+				""
+				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
+				""
+				"The Flux Capacitor is a &bBauble&r, so open your inventory and look for the Baubles button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
+				""
+				"Finally, you can charge up all those depleted &m&6Dark Boots&r&r and &6The Ender&r swords you've looted."
+			]
+			icon: {
+				Count: 1b
+				id: "thermal:flux_capacitor"
+				tag: { }
+			}
+			id: "104BCD13FE3F218C"
+			rewards: [{
+				id: "2908C58D5D560E76"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "126E2C39B1118A67"
+					item: {
+						Count: 1b
+						id: "thermal:flux_capacitor"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4B869C1E80E53F94"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/sulfur"
+						}
+					}
+					title: "Sulfur Dust"
+					type: "item"
+				}
+			]
+			title: "&9Flux Capacitors"
+			x: -1.25d
+			y: 14.25d
+		}
+		{
+			dependencies: [
+				"2FA9404468E4BBD9"
+				"01697BFCE324D986"
+			]
+			description: [
+				"The &9Tinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r. &9This is also used for upgrading thermal items&r."
+				""
+				"The Turbo Charger is a little more expensive, but is able to charge items at a &omuch&r faster rate and is able to charge items that use &aRF&r and &aEU&r."
+			]
+			icon: "gtceu:lv_charger_4x"
+			id: "60039C237DE54C70"
+			rewards: [{
+				id: "25E2FB2877522E14"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D55C0AC249C8965"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_charger_4x"
+							}
+							{
+								Count: 1b
+								id: "thermal:tinker_bench"
+							}
+							{
+								Count: 1b
+								id: "thermal:charge_bench"
+							}
+						]
+					}
+				}
+				title: "Charger"
+				type: "item"
+			}]
+			title: "&9Charging Items"
+			x: -1.25d
+			y: 16.25d
+		}
+		{
+			dependencies: [
+				"297B523B6C503957"
+				"01697BFCE324D986"
+			]
+			description: ["The &6Battery Buffer&r is a machine which can hold &6Batteries&r for energy storage. Each Battery accepts up to 2 amps and outputs up to 1 amp."]
+			id: "68EB42F5C86F0B38"
+			rewards: [{
+				id: "34B894CEACA271D2"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E5341160C677E5B"
+				item: "gtceu:lv_battery_buffer_4x"
+				type: "item"
+			}]
+			title: "Charging Batteries"
+			x: 0.5d
+			y: 16.25d
+		}
+		{
+			dependencies: [
+				"7FA0E6F3B466576C"
+				"258564CB9E7BE6AD"
+				"605B2CCEAC246E14"
+			]
+			description: ["These can be used to transport energy from your &3Steam Dynamos&r to various destinations."]
+			id: "145C7588B1391C51"
+			rewards: [{
+				id: "5072DFC19877BB3D"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "The most basic tier of &aRF&r energy conduits from &bEnderIO&r."
+			tasks: [{
+				id: "3B3BDC60763CDF79"
+				item: "enderio:conductive_conduit"
+				type: "item"
+			}]
+			title: "Conductive Iron Energy Conduits"
+			x: 0.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["03A575FD497A5AC9"]
+			id: "527F56DFAD5E20EC"
+			tasks: [{
+				id: "254A555916313F70"
+				item: {
+					Count: 1b
+					id: "gtceu:wrought_iron_axe"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							DisableShields: 1b
+							TreeFelling: 1b
+						}
+						GT.Tool: {
+							Damage: 0
+							HarvestLevel: 2
+							MaxDamage: 383
+							ToolSpeed: 4.0f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.25d
+		}
+		{
+			dependencies: ["03A575FD497A5AC9"]
+			id: "304CBBB36F0F9055"
+			tasks: [{
+				id: "4580F4650B74A643"
+				item: "ironfurnaces:iron_furnace"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.25d
+		}
+		{
+			dependencies: [
+				"4FE53F31E68F4C1C"
+				"22BF3BCEBA7FABBD"
+			]
+			description: [
+				"&6Redstone&f: Found only deep in the world, in massive veins paired with &6Cinnabar&f and &6Ruby&f."
+				""
+				"&6Copper&f: Two primary sources. &6Tetrahedrite&f veins are higher up, while &6Chalcopyrite&f veins are lower, paired with some small amounts of &6Iron&f. You'll also find &6Malachite&f inside of Iron veins, this is another type of copper ore."
+				""
+				"&6Tin&f: Found essentially at ground level. &6Cassiterite&f is another type of tin ore, and they're always found together. If you cannot find a vein of tin, there are small amounts of tin inside veins of &6Aluminium&f and &6Rock Salt&f, which might be enough to hold you over until you find a proper tin vein."
+				""
+				"&6Coal&f: Found in relatively shallow depths. &6Lignite Coal&f is &2removed."
+				""
+				"&6Gold&f: Found inside of &6Magnetite&f veins, close to the surface."
+			]
+			icon: "minecraft:redstone"
+			id: "51A495F8B5B4E947"
+			rewards: [{
+				count: 2
+				id: "4DC0DDA2985B8158"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Before you continue, you'll need access to some more materials."
+			tasks: [
+				{
+					count: 76L
+					id: "461EC4A8B07EF9BF"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "14819CEF8EC08B75"
+					item: { Count: 36b, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "036103C58E771D8C"
+					item: { Count: 20b, id: "gtceu:tin_ingot" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "775DE07BD8858D13"
+					item: { Count: 16b, id: "minecraft:coal" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "36366A657DFB0289"
+					item: { Count: 6b, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "More Materials"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1229234A71CE0A99"
+				"4B338515E84FC51A"
+			]
+			description: [
+				"Although most &ealloys&f require an &3Alloy Smelter&f, some alloys can be made simply by mixing the correct metal dusts together. "
+				""
+				"Copper Dust mixed with Redstone makes &6Red Alloy Dust&f."
+				""
+				"Iron Dust mixed with Redstone makes &6Conductive Iron Dust&f."
+				""
+				"&3Smelt&f it into ingots, &ahammer&f it into &6Plates&f, and &acut&f them into &6Wires&f."
+			]
+			icon: "gtceu:red_alloy_dust"
+			id: "605B2CCEAC246E14"
+			rewards: [{
+				id: "7FDDB9C4D0B83642"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 16L
+					id: "761D450C2D7605B3"
+					item: { Count: 16b, id: "gtceu:copper_dust" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0BCFED23F6902B55"
+					item: { Count: 16b, id: "gtceu:red_alloy_dust" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1319F4826B365E7C"
+					item: { Count: 16b, id: "gtceu:red_alloy_ingot" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "03B8535419C9303B"
+					item: { Count: 32b, id: "gtceu:iron_dust" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "22A94430BF6CE5E6"
+					item: { Count: 32b, id: "gtceu:conductive_alloy_ingot" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3EDE784461AF0D17"
+					item: { Count: 8b, id: "gtceu:red_alloy_plate" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5E4D4A300A87F239"
+					item: { Count: 3b, id: "gtceu:red_alloy_single_wire" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "61A3A521AA87BF54"
+					item: { Count: 16b, id: "gtceu:conductive_alloy_single_wire" }
+					type: "item"
+				}
+			]
+			title: "From Dust to Wires"
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"0FF18D13CD42F48A"
+				"7B780BD070BEB60A"
+			]
+			description: [
+				""
+				"The &6Steam Dynamo&r will be your source of &9power&r for the early game. It requires &9Water&r and burnable fuel like &6Coal&r or &6Sugar Cane&r to produce power."
+				""
+				"You'll need a small bit of &6Silver&f for this dynamo. If you haven't found a &6Galena vein&f yet (which is where Silver is), then consider \"buying\" some &6Silver Ore&r using &9Monicoins&r. You won't need a ton of silver and lead just yet, so it won't bankrupt you."
+				""
+				"Keep in mind that &eDynamos only output power when burning through fuel, and only the block/cable attached directly to the coil will get provided with power&f."
+			]
+			id: "258564CB9E7BE6AD"
+			rewards: [{
+				id: "25DBDFCECC218862"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Your first major crafting project!"
+			tasks: [{
+				id: "144E0E4F2CA360A0"
+				item: "steamdynamo:steam_dynamo"
+				type: "item"
+			}]
+			title: "Steam Dynamo"
+			x: -1.25d
+			y: 10.0d
+		}
+		{
+			dependencies: ["51A495F8B5B4E947"]
+			id: "34CA940B412284F2"
+			tasks: [{
+				id: "34E57B9F8FF4E1AE"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["34CA940B412284F2"]
+			id: "4B338515E84FC51A"
+			tasks: [{
+				id: "585E8100673442CD"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["03D0FFA69E671D48"]
+			description: [
+				"&aMolds&r are used in a &3Fluid Solidifier&r or &3Alloy Smelter&r to form materials into specific shapes. These are not consumed or damaged during crafting, so you can leave them in a machine to dedicate it to that shape."
+				""
+				"The Fluid Solidifier tends to be the more efficient option: for example, you can use &e8 ingots&r to make one &6Gear&r in an Alloy Smelter, but with an Extractor and Solidifier you can accomplish the same result with &e4 ingots&r."
+				""
+				"Be careful not to accidentally make &aExtruder Shapes&r. Those are for a machine you will get access to later. The three molds in this quest are ones you will find useful right away."
+			]
+			icon: "gtceu:gear_casting_mold"
+			id: "754C416FB3F5DBDA"
+			rewards: [{
+				id: "2BDC1F35BDB89DEF"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 3L
+					id: "0300A830D96D68EB"
+					item: { Count: 3b, id: "gtceu:empty_mold" }
+					type: "item"
+				}
+				{
+					id: "71A4784D6030E623"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+				{
+					id: "6F2D627E82DF3ABA"
+					item: "gtceu:gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "476A827092AE1099"
+					item: "gtceu:rotor_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Molds"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"2E8BFA2E719B1C47"
+				"03A575FD497A5AC9"
+			]
+			description: [
+				"&2GTCEu Fluid Pipes&r are now available, much improved from CE. Their advantage is higher &9throughput&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details. Fluid pipes do require a pump to be able to pull fluids from tanks or machines that lack an autooutput function, but &9ULV pumps (as well as other covers) are now buyable with Monicoins&r."
+				""
+				"There are also &6Quadruple and Nonuple Pipes&r for transporting multiple fluid types through the same block."
+				""
+				"You also can only use them for now, until you get access to..."
+				""
+				"&bEnderIO&r&6 Fluid Conduits&r. They have the advantage of being &6Conduits&r, allowing them to fit in the same block as other &6Conduits&r. "
+				""
+				"Pick your poison."
+				""
+				"&5Sadly, EnderIO has decided to already abandon 1.20.1 EnderIO, meaning things like speed upgrades, filters, etc will never be officially added. If you are a mod dev and are willing to port these elements, please let the Monifactory dev team know."
+			]
+			icon: "gtceu:steel_small_fluid_pipe"
+			id: "7B780BD070BEB60A"
+			tasks: [
+				{
+					id: "7206D5D1CFE30F08"
+					item: "enderio:pressurized_fluid_conduit"
+					type: "item"
+				}
+				{
+					id: "43D259BDAF7A5694"
+					item: "gtceu:potin_normal_fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "&9Fluid Transport"
+			x: -1.25d
+			y: -0.25d
+		}
+		{
+			dependencies: ["126772F682B282E4"]
+			description: [
+				"Going out in search of a &6Rubber Tree&f is a viable option for sure. However, if this isn't appealing, you can also &eshear leaves&f and make &6Plantballs&f out of them. Plantballs smelt into &6Slime&f, and Slime smelts into &6Rubber&f."
+				""
+				"You'll want to transition to Rubber Trees at some point, though, since the &eratio of leaves to rubber is quite poor&f."
+				""
+				"Rubber can be hammered into sheets just like metals can be turned to plates. It's quite inefficient to do it this way, but such is the life of early game &bGregTech&f. At least rubber isn't particularly hard to come by."
+			]
+			id: "7765B19835334DE5"
+			rewards: [{
+				id: "09AA2B9B10A0151E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 3L
+				id: "7C983233C433C35E"
+				item: { Count: 3b, id: "gtceu:rubber_plate" }
+				type: "item"
+			}]
+			title: "Rubber Sheets"
+			x: 6.25d
+			y: 12.0d
+		}
+		{
+			dependencies: ["754C416FB3F5DBDA"]
+			id: "4B43ABA024E9A0B9"
+			tasks: [{
+				id: "528F95F1ECC76A3A"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"297B523B6C503957"
+				"172CE49595ADD532"
+			]
+			description: [
+				"Unlike &aRF power&r, which is safe to transport in any &6conduit&r, &aEU power &erequires caution&r. The key is to always &amatch or exceed&r the &eVoltage &rand&e Amperage&r of your power source with your &6cables&r and machines."
+				""
+				"&cNEVER &rhook up your Energy Converter&r to a cable that has fewer &eAmps&r than your Energy Converter or Battery Buffer generates. For example, you must use &64x cable&r for a 4A Converter&r, and &616x cable&r for a filled 16-slot Battery Buffer&r. Cables with insufficient amperage rating will &cburn and be destroyed&r. &2Both the multiple-amp-source and multiple-face-input bugs from CE have been fixed - the Energy network now works as intended.&r"
+				""
+				"Similarly, your cable must match or exceed the &eVoltage&r of your machines, or they will &cburn and be destroyed&r."
+				""
+				"&cNEVER&r connect a machine to excessive &eVoltage&r or it will &cvaporize&r. Touching a &6wire&r with connected &aEU power&r will &cinjure or kill you&r, so for your safety, &euse &6cables&e instead&r!"
+				""
+				"&2Superconductor-type wires do not damage you in CEu. The 0-loss cables in CE (Conductive Iron, Energetic Alloy, etc.) are considered Superconductors."
+			]
+			icon: "gtceu:hpic_wafer"
+			id: "01697BFCE324D986"
+			shape: "hexagon"
+			tasks: [{
+				id: "34A1428E5534220E"
+				type: "checkmark"
+			}]
+			title: "A Primer on Power"
+			x: 2.5d
+			y: 16.25d
+		}
+		{
+			dependencies: [
+				"5A94534682807314"
+				"01697BFCE324D986"
+			]
+			description: [
+				"Now that you have everything you need to power your machines, it's time to put it all together."
+				""
+				"Your Steam Dynamo needs burnable fuel (like &6Coal&r) and &9water&r. It will output RF power through the Excitation Coil (the red bit at the top). The orientation of the Steam Dynamo can be adjusted with a &aCrescent Hammer&r, if needed."
+				""
+				"&6Energy Conduits&r can be used to transfer that RF power, but the dynamo can also output RF directly into an Energy Converter by making the Excitation Coil touch the Energy Converter."
+				""
+				"The Energy Converter transforms RF power into EU, outputting the resulting EU through the side with a red dot. The orientation can be adjusted using a &aWrench&r. Attach your &6Conductive Iron Cables&r to the output side of the Energy Converter."
+				""
+				"Now all you need are some &bGregTech&r machines to hook up to the cables! You can make whatever you want, but its recommended that you get these two first:"
+				""
+				"The &6Wiremill&r will make crafting wires much, much easier."
+				""
+				"The &2Bending Machine&r will make Plates from one ingot instead of two."
+			]
+			icon: "gtceu:uhpic_wafer"
+			id: "4DAC63BAC6613773"
+			rewards: [{
+				id: "56062B470F5728E8"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "693BBF77C5B25DAE"
+				type: "checkmark"
+			}]
+			title: "Putting it all Together"
+			x: 2.5d
+			y: 18.75d
+		}
+		{
+			dependencies: [
+				"39D4174834F3879D"
+				"258564CB9E7BE6AD"
+			]
+			description: ["Better fuel means you need to use less of it."]
+			id: "6BDDCA26995F8996"
+			rewards: [{
+				id: "007F69E67B355703"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "58BB4D4D2558773D"
+				item: { Count: 2b, id: "thermal:dynamo_fuel_augment" }
+				type: "item"
+			}]
+			title: "&9More Efficient"
+			x: -1.25d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"2FA9404468E4BBD9"
+				"68EB42F5C86F0B38"
+			]
+			description: [
+				"&6Batteries&r are &bGregTech &rpower storage for &aEU&r energy."
+				""
+				"Although there are several types of rechargeable batteries you can make, &2Lithium Batteries&r are the best ones, and the only ones you should really consider making."
+				""
+				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are fairly rare. Consider \"buying\" some Lithium with &9Monicoins&r."
+			]
+			id: "694B69F6D7C3CCFA"
+			rewards: [{
+				id: "5AC0C019A70401BD"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "5D507AEDE93B5F26"
+				item: { Count: 4b, id: "gtceu:lv_battery_hull" }
+				type: "item"
+			}]
+			title: "LV Power Storage"
+			x: 0.5d
+			y: 14.25d
+		}
+	]
+	subtitle: ["WIP, HM is not playable yet!"]
+	title: "A Harder Genesis"
+}

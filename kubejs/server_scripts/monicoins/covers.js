@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    if (isNormalMode) {
     //-- ULV Covers
     event.shaped(
         Item.of('ulvcovm:ulv_conveyor_module', 2), [
@@ -35,4 +36,5 @@ ServerEvents.recipes(event => {
     ], {
         A: 'kubejs:moni_nickel'
     }).noMirror().noShrink()
+}
 })

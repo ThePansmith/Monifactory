@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-
+    if (isNormalMode) {
     ////// Machine Recipe //////
 
     event.recipes.gtceu.assembly_line('loot_superfabricator')
@@ -71,4 +71,5 @@ ServerEvents.recipes(event => {
     fabricator('zombie', 3, '32x minecraft:carrot')
     fabricator('zombie', 4, '32x minecraft:potato')
     fabricator('zombie', 5, '6x minecraft:zombie_head')
+}
 })

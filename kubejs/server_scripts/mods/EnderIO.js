@@ -1,23 +1,22 @@
 ServerEvents.recipes(event => {
-
     // Item and Fluid Conduits //
 
     // Make lowest tier fluid conduit pressurized
     // event.remove({ id: "enderio:fluid_conduit" }) for some reason this doesnt exist
     event.shaped(
         "4x enderio:pressurized_fluid_conduit", [
-            'BBB',
-            'GGG',
-            'BBB'
-        ], {
-            B: "enderio:conduit_binder",
-            G: '#forge:glass/colorless'
-        }
+        'BBB',
+        'GGG',
+        'BBB'
+    ], {
+        B: "enderio:conduit_binder",
+        G: '#forge:glass/colorless'
+    }
     ).id('kubejs:pressurized_fluid_conduit')
-
-    // Manual item conduit
-    event.shaped(
-        "4x enderio:item_conduit", [
+    if (isNormalMode) {
+        // Manual item conduit
+        event.shaped(
+            "4x enderio:item_conduit", [
             'BBB',
             'WWW',
             'BBB'
@@ -25,11 +24,11 @@ ServerEvents.recipes(event => {
             B: "enderio:conduit_binder",
             W: "gtceu:pulsating_alloy_single_wire"
         }
-    ).id('kubejs:item_conduit')
+        ).id('kubejs:item_conduit')
 
-    // Manual ender fluid conduit
-    event.shaped(
-        "4x enderio:ender_fluid_conduit", [
+        // Manual ender fluid conduit
+        event.shaped(
+            "4x enderio:ender_fluid_conduit", [
             'BBB',
             'WPW',
             'BBB'
@@ -38,36 +37,82 @@ ServerEvents.recipes(event => {
             W: "gtceu:vibrant_alloy_single_wire",
             P: "enderio:pressurized_fluid_conduit"
         }
-    ).id("kubejs:ender_fluid_conduit_upgrade")
+        ).id("kubejs:ender_fluid_conduit_upgrade")
 
-    event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
+        event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
 
-    // Assembler item conduit
-    event.recipes.gtceu.assembler("kubejs:efficent_item_conduit")
-        .itemInputs("3x gtceu:pulsating_alloy_single_wire", "6x enderio:conduit_binder")
-        .itemOutputs("8x enderio:item_conduit")
-        .duration(80)
-        .EUt(16)
+        // Assembler item conduit
+        event.recipes.gtceu.assembler("kubejs:efficent_item_conduit")
+            .itemInputs("3x gtceu:pulsating_alloy_single_wire", "6x enderio:conduit_binder")
+            .itemOutputs("8x enderio:item_conduit")
+            .duration(80)
+            .EUt(16)
 
-    // Assembler ender fluid conduit
-    event.recipes.gtceu.assembler("kubejs:efficent_ender_conduit")
-        .itemInputs("2x gtceu:vibrant_alloy_single_wire", "enderio:pressurized_fluid_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("8x enderio:ender_fluid_conduit")
-        .duration(80)
-        .EUt(16)
+        // Assembler ender fluid conduit
+        event.recipes.gtceu.assembler("kubejs:efficent_ender_conduit")
+            .itemInputs("2x gtceu:vibrant_alloy_single_wire", "enderio:pressurized_fluid_conduit", "6x enderio:conduit_binder")
+            .itemOutputs("8x enderio:ender_fluid_conduit")
+            .duration(80)
+            .EUt(16)
+    }
+    if (isExpertMode) {
+        // Manual item conduit
+        event.shaped(
+            "4x enderio:item_conduit", [
+            'BPB',
+            'WWW',
+            'BPB'
+        ], {
+            B: "enderio:conduit_binder",
+            W: "gtceu:pulsating_alloy_single_wire",
+            P: "gtceu:polyvinyl_chloride_foil"
+        }
+        ).id('kubejs:item_conduit')
+
+        // Manual ender fluid conduit
+        event.shaped(
+            "4x enderio:ender_fluid_conduit", [
+            'BCB',
+            'WPW',
+            'BCB'
+        ], {
+            B: "enderio:conduit_binder",
+            W: "gtceu:vibrant_alloy_single_wire",
+            P: "enderio:pressurized_fluid_conduit",
+            C: "gtceu:polyvinyl_chloride_foil"
+        }
+        ).id("kubejs:ender_fluid_conduit_upgrade")
+
+        event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
+
+        // Assembler item conduit
+        event.recipes.gtceu.assembler("kubejs:efficent_item_conduit")
+            .itemInputs("3x gtceu:pulsating_alloy_single_wire", "6x enderio:conduit_binder", "2x gtceu:polyvinyl_chloride_foil")
+            .itemOutputs("8x enderio:item_conduit")
+            .duration(80)
+            .EUt(16)
+
+        // Assembler ender fluid conduit
+        event.recipes.gtceu.assembler("kubejs:efficent_ender_conduit")
+            .itemInputs("2x gtceu:vibrant_alloy_single_wire", "enderio:pressurized_fluid_conduit", "6x enderio:conduit_binder", "2x gtceu:polyvinyl_chloride_foil")
+            .itemOutputs("8x enderio:ender_fluid_conduit")
+            .duration(80)
+            .EUt(16)
+    }
+
 
     // Energy Conduits //
 
     //Conductive Iron
     event.shaped(
         '3x enderio:conductive_conduit', [
-            'AAA',
-            'BBB',
-            'AAA'
-        ], {
-            A: 'enderio:conduit_binder',
-            B: 'gtceu:conductive_alloy_single_wire'
-        }
+        'AAA',
+        'BBB',
+        'AAA'
+    ], {
+        A: 'enderio:conduit_binder',
+        B: 'gtceu:conductive_alloy_single_wire'
+    }
     ).id("kubejs:conductive_conduit")
 
     event.recipes.gtceu.assembler('kubejs:conductive_conduit')
@@ -79,14 +124,14 @@ ServerEvents.recipes(event => {
     //Energetic Alloy
     event.shaped(
         '3x enderio:energetic_conduit', [
-            'AAA',
-            'BCB',
-            'AAA'
-        ], {
-            A: 'enderio:conduit_binder',
-            B: 'gtceu:energetic_alloy_single_wire',
-            C: 'enderio:conductive_conduit'
-        }
+        'AAA',
+        'BCB',
+        'AAA'
+    ], {
+        A: 'enderio:conduit_binder',
+        B: 'gtceu:energetic_alloy_single_wire',
+        C: 'enderio:conductive_conduit'
+    }
     ).id("kubejs:energetic_conduit")
 
     event.recipes.gtceu.assembler('kubejs:energetic_conduit')
@@ -99,14 +144,14 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         '3x enderio:vibrant_conduit', [
-            'AAA',
-            'BCB',
-            'AAA'
-        ], {
-            A: 'enderio:conduit_binder',
-            B: 'gtceu:vibrant_alloy_single_wire',
-            C: 'enderio:energetic_conduit'
-        }
+        'AAA',
+        'BCB',
+        'AAA'
+    ], {
+        A: 'enderio:conduit_binder',
+        B: 'gtceu:vibrant_alloy_single_wire',
+        C: 'enderio:energetic_conduit'
+    }
     ).id("kubejs:vibrant_conduit")
 
     event.recipes.gtceu.assembler('kubejs:vibrant_conduit')
@@ -180,7 +225,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(16)
 
-		// Dark Bimetal Gear
+    // Dark Bimetal Gear
     event.recipes.gtceu.alloy_smelter('kubejs:dark_bimetal_gear')
         .itemInputs('enderio:iron_gear', '4x gtceu:dark_steel_ingot')
         .itemOutputs('enderio:dark_bimetal_gear')
@@ -206,10 +251,10 @@ ServerEvents.recipes(event => {
 
     // Disable EnderIO machinery
 
-	event.remove({ id: "enderio:primitive_alloy_smelter"})
-	event.remove({ id: "enderio:alloy_smelter"})
-	event.remove({ id: "enderio:sag_mill"})
-	event.remove({ id: "enderio:stirling_generator"})
+    event.remove({ id: "enderio:primitive_alloy_smelter" })
+    event.remove({ id: "enderio:alloy_smelter" })
+    event.remove({ id: "enderio:sag_mill" })
+    event.remove({ id: "enderio:stirling_generator" })
 
     // Capacitors
     event.remove({ output: 'enderio:basic_capacitor' })
@@ -224,48 +269,48 @@ ServerEvents.recipes(event => {
     capacitorCores.forEach(core => {
         event.shaped(
             core[1] + 'x enderio:basic_capacitor', [
-                ' N ',
-                'NCN',
-                'W W'
-            ], {
-                N: '#forge:ingots/electrical_steel',
-                C: core[0],
-                W: 'gtceu:tin_single_wire'
-            }
+            ' N ',
+            'NCN',
+            'W W'
+        ], {
+            N: '#forge:ingots/electrical_steel',
+            C: core[0],
+            W: 'gtceu:tin_single_wire'
+        }
         ).id(`kubejs:basic_capacitor_${Item.of(core[0]).idLocation.path}`)
     })
 
     // Compressed caps
     event.shaped(
         'kubejs:compressed_octadic_capacitor', [
-            'CCC',
-            'CCC',
-            'CCC'
-        ], {
-            C: 'enderio:octadic_capacitor'
-        }
+        'CCC',
+        'CCC',
+        'CCC'
+    ], {
+        C: 'enderio:octadic_capacitor'
+    }
     ).id('kubejs:compressed_octadic_capacitor')
 
     event.shaped(
         'kubejs:double_compressed_octadic_capacitor', [
-            'CCC',
-            'CCC',
-            'CCC'
-        ], {
-            C: 'kubejs:compressed_octadic_capacitor'
-        }
+        'CCC',
+        'CCC',
+        'CCC'
+    ], {
+        C: 'kubejs:compressed_octadic_capacitor'
+    }
     ).id('kubejs:double_compressed_octadic_capacitor')
 
-	// make it use tags
-	event.replaceInput( {id: 'enderio:octadic_capacitor'}, 'minecraft:glowstone', '#forge:storage_blocks/glowstone')
+    // make it use tags
+    event.replaceInput({ id: 'enderio:octadic_capacitor' }, 'minecraft:glowstone', '#forge:storage_blocks/glowstone')
 
-	// capacitor banks
-	event.remove( {id: 'enderio:advanced_capacitor_bank'} )
-	event.remove( {id: 'enderio:vibrant_capacitor_bank_upgrade'} )
+    // capacitor banks
+    event.remove({ id: 'enderio:advanced_capacitor_bank' })
+    event.remove({ id: 'enderio:vibrant_capacitor_bank_upgrade' })
 
-	event.replaceInput( {id: 'enderio:basic_capacitor_bank'}, "#forge:ingots/iron", "#forge:plates/iron")
-	event.replaceInput( {id: 'enderio:advanced_capacitor_bank_upgrade'}, "#forge:ingots/energetic_alloy", "#forge:plates/electrical_steel")
-	event.replaceInput( {id: 'enderio:vibrant_capacitor_bank'}, ["#forge:ingots/vibrant_alloy", 'enderio:octadic_capacitor'], "#forge:plates/vibrant_alloy")
+    event.replaceInput({ id: 'enderio:basic_capacitor_bank' }, "#forge:ingots/iron", "#forge:plates/iron")
+    event.replaceInput({ id: 'enderio:advanced_capacitor_bank_upgrade' }, "#forge:ingots/energetic_alloy", "#forge:plates/electrical_steel")
+    event.replaceInput({ id: 'enderio:vibrant_capacitor_bank' }, ["#forge:ingots/vibrant_alloy", 'enderio:octadic_capacitor'], "#forge:plates/vibrant_alloy")
 
     // Fused Quartz
     event.recipes.gtceu.alloy_smelter("kubejs:fused_quartz")
@@ -315,18 +360,18 @@ ServerEvents.recipes(event => {
     event.remove({ input: 'gtceu:vibrant_alloy_ingot', output: 'enderio:ender_fluid_conduit' })
     event.remove({ input: 'gtceu:pulsating_alloy_nugget', output: 'enderio:item_conduit' })
 
-	// chasis. "industrial machine chassis"
-	event.recipes.gtceu.alloy_smelter('kubejs:void_chassis')
-		.itemInputs('gtceu:lv_machine_hull', '#forge:dusts/grains_of_infinity')
-		.itemOutputs('enderio:void_chassis')
+    // chasis. "industrial machine chassis"
+    event.recipes.gtceu.alloy_smelter('kubejs:void_chassis')
+        .itemInputs('gtceu:lv_machine_hull', '#forge:dusts/grains_of_infinity')
+        .itemOutputs('enderio:void_chassis')
         .duration(200)
         .EUt(30)
 
-	event.recipes.gtceu.alloy_smelter('kubejs:ensouled_chassis')
-		.itemInputs('enderio:void_chassis', '#forge:dusts/soularium')
-		.itemOutputs('enderio:ensouled_chassis')
-		.duration(200)
-		.EUt(30)
+    event.recipes.gtceu.alloy_smelter('kubejs:ensouled_chassis')
+        .itemInputs('enderio:void_chassis', '#forge:dusts/soularium')
+        .itemOutputs('enderio:ensouled_chassis')
+        .duration(200)
+        .EUt(30)
 
     event.recipes.gtceu.alloy_smelter('kubejs:infinity_rod')
         .itemInputs('gtceu:dark_steel_rod', 'enderio:grains_of_infinity')
@@ -338,28 +383,28 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['enderio:enchanter'] })
     event.shaped(
         'enderio:enchanter', [
-            'DCD',
-            'BBB',
-            ' A '
-        ], {
-            A: 'gtceu:void_block',
-            B: 'gtceu:dark_steel_ingot',
-            C: 'minecraft:book',
-            D: 'minecraft:diamond'
-        }
+        'DCD',
+        'BBB',
+        ' A '
+    ], {
+        A: 'gtceu:void_block',
+        B: 'gtceu:dark_steel_ingot',
+        C: 'minecraft:book',
+        D: 'minecraft:diamond'
+    }
     ).id('kubejs:enchanter')
 
     // Enchanter
     event.remove({ output: ['enderio:yeta_wrench'] })
     event.shaped(
         'enderio:yeta_wrench', [
-            'I I',
-            ' G ',
-            ' I '
-        ], {
-            I: '#forge:ingots/iron',
-            G: '#forge:gears/iron'
-        }
+        'I I',
+        ' G ',
+        ' I '
+    ], {
+        I: '#forge:ingots/iron',
+        G: '#forge:gears/iron'
+    }
     ).id('kubejs:yeta_wrench')
     event.remove({ output: 'enderio:void_chassis' })
 
@@ -477,7 +522,7 @@ ServerEvents.recipes(event => {
         .EUt(400)
 
     //Painting Machine
-	event.remove({id: 'enderio:painting_machine'})
+    event.remove({ id: 'enderio:painting_machine' })
     event.shaped('enderio:painting_machine', [
         'QDQ',
         'GHG',
@@ -490,19 +535,19 @@ ServerEvents.recipes(event => {
         R: '#forge:ingots/electrical_steel'
     }).id('kubejs:painting_machine')
 
-	// Crafter
-	event.remove({id: 'enderio:crafter'})
+    // Crafter
+    event.remove({ id: 'enderio:crafter' })
     event.shaped('enderio:crafter', [
-			'RCR',
-			'GFG',
-			'SSS'
-	], {
-			C: 'minecraft:crafting_table',
-			F: 'gtceu:lv_machine_hull',
-			G: 'enderio:iron_gear',
-			R: 'kubejs:resonating_crystal',
-			S: 'enderio:item_conduit'
-	}).id('kubejs:crafter')
+        'RCR',
+        'GFG',
+        'SSS'
+    ], {
+        C: 'minecraft:crafting_table',
+        F: 'gtceu:lv_machine_hull',
+        G: 'enderio:iron_gear',
+        R: 'kubejs:resonating_crystal',
+        S: 'enderio:item_conduit'
+    }).id('kubejs:crafter')
 
     //Z-Logic Controller
     event.shaped('enderio:z_logic_controller', [
@@ -553,97 +598,97 @@ ServerEvents.recipes(event => {
         W: 'gtceu:neutronium_wafer'
     }).id('kubejs:z_logic_controller_8x')
 
-	// glider wing
-	event.replaceInput({id: 'enderio:glider_wing'}, '#forge:ingots/dark_steel', '#forge:nuggets/dark_steel')
+    // glider wing
+    event.replaceInput({ id: 'enderio:glider_wing' }, '#forge:ingots/dark_steel', '#forge:nuggets/dark_steel')
 
-	// staff of traveling
-	event.replaceInput({id: 'enderio:staff_of_travelling'}, '#forge:ingots/dark_steel', '#forge:rods/dark_steel')
-    event.replaceInput({id: 'enderio:staff_of_travelling'}, 'enderio:ender_crystal', 'enderio:vibrant_crystal')
+    // staff of traveling
+    event.replaceInput({ id: 'enderio:staff_of_travelling' }, '#forge:ingots/dark_steel', '#forge:rods/dark_steel')
+    event.replaceInput({ id: 'enderio:staff_of_travelling' }, 'enderio:ender_crystal', 'enderio:vibrant_crystal')
 
-	// travel anchor
-	event.replaceInput({id: 'enderio:travel_anchor'}, 'enderio:conduit_binder', '#forge:plates/vibrant_alloy')
-	event.replaceInput({id: 'enderio:travel_anchor'}, 'iron_ingot', '#forge:plates/dark_steel')
+    // travel anchor
+    event.replaceInput({ id: 'enderio:travel_anchor' }, 'enderio:conduit_binder', '#forge:plates/vibrant_alloy')
+    event.replaceInput({ id: 'enderio:travel_anchor' }, 'iron_ingot', '#forge:plates/dark_steel')
 
-	// coordinate selector
-	event.remove({id: 'enderio:coordinate_selector'})
-	event.shaped('enderio:coordinate_selector', [
-		'ABC',
-		' DC',
-		'  C'
-	], {
-		A: 'gtceu:mv_emitter',
-		B: '#forge:storage_blocks/emerald',
-		C: '#forge:plates/electrical_steel',
-		D: 'enderio:vibrant_gear'
-	}).id('kubejs:coordinate_selector')
+    // coordinate selector
+    event.remove({ id: 'enderio:coordinate_selector' })
+    event.shaped('enderio:coordinate_selector', [
+        'ABC',
+        ' DC',
+        '  C'
+    ], {
+        A: 'gtceu:mv_emitter',
+        B: '#forge:storage_blocks/emerald',
+        C: '#forge:plates/electrical_steel',
+        D: 'enderio:vibrant_gear'
+    }).id('kubejs:coordinate_selector')
 
-	// soul binder
-	event.remove({id: 'enderio:soul_binder'})
-	event.recipes.extendedcrafting.shaped_table('enderio:soul_binder', [
-		'AAAAA',
-		'ABCBA',
-		'ADGEA',
-		'ABFBA',
-		'AAAAA',
-	], {
-		A: '#forge:plates/soularium',
-		B: '#forge:plates/tungsten_steel',
-		C: 'enderio:enderman_head',
-		D: 'minecraft:creeper_head',
-		E: 'minecraft:zombie_head',
-		F: 'minecraft:skeleton_skull',
-		G: 'enderio:ensouled_chassis'
-	}).id('kubejs:soul_binder')
+    // soul binder
+    event.remove({ id: 'enderio:soul_binder' })
+    event.recipes.extendedcrafting.shaped_table('enderio:soul_binder', [
+        'AAAAA',
+        'ABCBA',
+        'ADGEA',
+        'ABFBA',
+        'AAAAA',
+    ], {
+        A: '#forge:plates/soularium',
+        B: '#forge:plates/tungsten_steel',
+        C: 'enderio:enderman_head',
+        D: 'minecraft:creeper_head',
+        E: 'minecraft:zombie_head',
+        F: 'minecraft:skeleton_skull',
+        G: 'enderio:ensouled_chassis'
+    }).id('kubejs:soul_binder')
 
-	// powered spawner
-	// TODO Fixme
-	event.remove({id: 'enderio:powered_spawner'})
-	event.shaped('enderio:powered_spawner', [
-		'ABA',
-		'ACA',
-		'DED'
-	], {
-		A: '#forge:ingots/electrical_steel',
-		B: '#forge:heads',
-		C: 'enderio:ensouled_chassis',
-		D: '#forge:gems/vibrant_crystal',
-		E: 'enderio:z_logic_controller'
-	});
+    // powered spawner
+    // TODO Fixme
+    event.remove({ id: 'enderio:powered_spawner' })
+    event.shaped('enderio:powered_spawner', [
+        'ABA',
+        'ACA',
+        'DED'
+    ], {
+        A: '#forge:ingots/electrical_steel',
+        B: '#forge:heads',
+        C: 'enderio:ensouled_chassis',
+        D: '#forge:gems/vibrant_crystal',
+        E: 'enderio:z_logic_controller'
+    });
 
-	// slicensplice
-	event.replaceInput({id: 'enderio:slice_and_splice'}, '#forge:ingots/soularium', '#forge:plates/tungsten_steel')
-	event.replaceInput({id: 'enderio:slice_and_splice'}, 'iron_bars', 'enderio:dark_steel_bars')
+    // slicensplice
+    event.replaceInput({ id: 'enderio:slice_and_splice' }, '#forge:ingots/soularium', '#forge:plates/tungsten_steel')
+    event.replaceInput({ id: 'enderio:slice_and_splice' }, 'iron_bars', 'enderio:dark_steel_bars')
 
-	// impulse hopper
-	event.replaceInput({id: 'enderio:impulse_hopper'}, '#forge:gears/iron', 'enderio:energized_gear')
+    // impulse hopper
+    event.replaceInput({ id: 'enderio:impulse_hopper' }, '#forge:gears/iron', 'enderio:energized_gear')
 
-	// wired charger
-	event.remove({id: 'enderio:wired_charger'})
-	event.shaped('enderio:wired_charger', [
-		'ABA',
-		'CDC',
-		'ECE'
-	], {
-		A: '#forge:plates/dark_steel',
-		B: 'ae2:charger',
-		C: 'enderio:conductive_conduit',
-		D: 'enderio:void_chassis',
-		E: '#forge:plates/electrical_steel'
-	}).id('kubejs:wired_charger')
+    // wired charger
+    event.remove({ id: 'enderio:wired_charger' })
+    event.shaped('enderio:wired_charger', [
+        'ABA',
+        'CDC',
+        'ECE'
+    ], {
+        A: '#forge:plates/dark_steel',
+        B: 'ae2:charger',
+        C: 'enderio:conductive_conduit',
+        D: 'enderio:void_chassis',
+        E: '#forge:plates/electrical_steel'
+    }).id('kubejs:wired_charger')
 
-	// xp obelisk
-	event.remove({id: 'enderio:xp_obelisk'})
-	event.shaped('enderio:xp_obelisk', [
-		' A ',
-		'BCB',
-		'DED'
-	], {
-		A: 'enderio:experience_rod',
-		B: '#forge:ingots/energetic_alloy',
-		C: 'enderio:fluid_tank',
-		D: '#forge:ingots/soularium',
-		E: 'enderio:ensouled_chassis'
-	})
+    // xp obelisk
+    event.remove({ id: 'enderio:xp_obelisk' })
+    event.shaped('enderio:xp_obelisk', [
+        ' A ',
+        'BCB',
+        'DED'
+    ], {
+        A: 'enderio:experience_rod',
+        B: '#forge:ingots/energetic_alloy',
+        C: 'enderio:fluid_tank',
+        D: '#forge:ingots/soularium',
+        E: 'enderio:ensouled_chassis'
+    })
 
     //Whatever
     event.replaceInput({ input: '#forge:ingots/copper_alloy' }, 'enderio:copper_alloy_ingot', 'gtceu:pulsating_iron_ingot')
@@ -652,7 +697,7 @@ ServerEvents.recipes(event => {
     event.shapeless('enderio:fluid_tank', ['enderio:fluid_tank'])
     event.shapeless('enderio:pressurized_fluid_tank', ['enderio:pressurized_fluid_tank'])
 
-    //Cheaper me conduit recipes from nomi
+    //Cheaper me conduit recipes
     event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
         .itemInputs("4x enderio:me_conduit", "5x enderio:conduit_binder")
         .itemOutputs("2x enderio:dense_me_conduit")

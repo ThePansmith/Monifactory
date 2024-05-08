@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-
+    if (isNormalMode) {
     ////// Machine Recipe //////
 
     event.recipes.gtceu.assembly_line('simulation_supercomputer')
@@ -37,4 +37,5 @@ ServerEvents.recipes(event => {
     supercomp('wither', 'end', 1666)
     supercomp('creeper', 'overworld', 16)
     supercomp('enderman', 'end', 512)
+}
 })
