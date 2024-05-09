@@ -156,9 +156,14 @@ ServerEvents.recipes(event => {
         .EUt(1000000)
 })
 
-// ALMOST COMPLETED DONT TOUCH ILL FIX TOMMORROW - NEMEZANEVEM
-//STFU YOU FUCKING LIAR - CLOWN (Written a Month later)
-// lol - Pansmith
+// Advanced Microverse iii
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_test')
+        .itemInputs('minecraft:bedrock')
+        .itemOutputs('minecraft:bedrock')
+        .duration(1500)
+        .EUt(31250)
+})
 
 // Microversium
 ServerEvents.recipes(event => {

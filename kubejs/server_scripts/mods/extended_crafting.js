@@ -54,6 +54,33 @@ ServerEvents.recipes(event => {
         A: 'gtceu:uranium_plate',
         B: 'gtceu:emerald_plate'
     })
+    
+    event.remove({ output: 'extendedcrafting:epic_component' })
+    event.shaped(
+        'extendedcrafting:epic_component', [
+        'SL ',
+        'AB ',
+        '   '
+    ], {
+        S: 'gtceu:black_steel_plate',
+        L: 'extendedcrafting:luminessence',
+        A: 'gtceu:netherite_plate',
+        B: 'gtceu:red_steel_plate'
+    })
+
+    event.remove({ output: 'extendedcrafting:the_ultimate_component' })
+    event.shaped(
+        'extendedcrafting:the_ultimate_component', [
+        ' B ',
+        'ACE',
+        ' U '
+    ], {
+        A: 'extendedcrafting:advanced_component',
+        B: 'extendedcrafting:basic_component',
+        C: 'extendedcrafting:crystaltine_component',
+        E: 'extendedcrafting:elite_component',
+        U: 'extendedcrafting:ultimate_component',
+    })
 
     event.remove({ output: 'extendedcrafting:crystaltine_component' })
     event.shaped(
@@ -149,6 +176,27 @@ ServerEvents.recipes(event => {
         T: 'extendedcrafting:elite_table'
     }, 3
     )
+    event.remove({ output: 'extendedcrafting:epic_table' })
+    event.recipes.extendedcrafting.shaped_table(
+        'extendedcrafting:epic_table', [
+        'ESSSCSSSE',
+        'SUUUUUUUS',
+        'SUSSRSSUS',
+        'SUSSRSSUS',
+        'CURRTRRUC',
+        'SUSSRSSUS',
+        'SUSSRSSUS',
+        'SUUUUUUUS',
+        'ESSSCSSSE'
+    ], {
+        E: '#forge:storage_blocks/netherite',
+        S: 'gtceu:double_black_steel_plate',
+        C: 'extendedcrafting:the_ultimate_catalyst',
+        U: 'extendedcrafting:epic_component',
+        R: 'extendedcrafting:crystaltine_component',
+        T: 'extendedcrafting:ultimate_table'
+    }, 4
+    )
 
     event.remove({ output: 'extendedcrafting:crafting_core' })
     event.shaped(
@@ -181,13 +229,13 @@ ServerEvents.recipes(event => {
     // Combination Crafts
     event.recipes.extendedcrafting.combination(
         "gtceu:restonia_empowered_block",
-        "gtceu:restonia_block", ["gtceu:red_alloy_ingot", "gtceu:almandine_gem", Item.of('gtceu:glass_vial', '{Fluid:{Amount:1000,FluidName:"gtceu:sulfuric_acid"}}'), "extendedcrafting:the_ultimate_component"],
+        "gtceu:restonia_block", ["gtceu:red_alloy_ingot", "gtceu:almandine_gem", Item.of('gtceu:glass_vial', '{Fluid:{Amount:1000,FluidName:"gtceu:sulfuric_acid"}}').weakNBT(), "extendedcrafting:the_ultimate_component"],
         4000000, 400000
     )
 
     event.recipes.extendedcrafting.combination(
         "gtceu:diamatine_empowered_block",
-        "gtceu:diamatine_block", ["extendedcrafting:ender_star", "extendedcrafting:crystaltine_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:nitrogen_dioxide"}}'), "extendedcrafting:crystaltine_component"],
+        "gtceu:diamatine_block", ["extendedcrafting:ender_star", "extendedcrafting:crystaltine_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:nitrogen_dioxide"}}').weakNBT(), "extendedcrafting:crystaltine_component"],
         4000000, 400000
     )
 

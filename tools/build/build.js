@@ -67,6 +67,15 @@ async function packMod(group) {
   fs.copyFileSync('LICENSE.md', `dist/.tmp/${group}/LICENSE.md`)
 
   try {
+    if (process.platform === 'win32') {
+      await Juke.exec('powershell', [
+        'Compress-Archive',
+        `-Path "${resolve(`dist\\.tmp\\${group}\\overrides`)}","${resolve(`dist\\.tmp\\${group}\\manifest.json`)}","${resolve(`dist\\.tmp\\${group}\\modlist.html`)}","${resolve(`dist\\.tmp\\${group}\\LICENSE.md`)}"`,
+        `-DestinationPath "${resolve(`dist\\${group}.zip`)}"`,
+      ])
+      return;
+    }
+
     let hasZipCmd = false;
     try {
       await Juke.exec('zip', ['--help'], { silent: true });
@@ -75,8 +84,8 @@ async function packMod(group) {
 
     if (hasZipCmd) {
       await Juke.exec('tools/zip-stuff', [
-        `dist/.tmp/${group}`,
-        `dist/${group}.zip`,
+        `dist/.tmp/${group}`, // curr working dir
+        `dist/${group}.zip`,  // file out
         'overrides',
         'manifest.json',
         'modlist.html',
@@ -84,15 +93,6 @@ async function packMod(group) {
       ])
       return;
     }
-
-    if (process.platform === 'win32') {
-      await Juke.exec('powershell', [
-        'Compress-Archive',
-        `-Path "${resolve(`dist\\.tmp\\${group}\\overrides`)}","${resolve(`dist\\.tmp\\${group}\\manifest.json`)}","${resolve(`dist\\.tmp\\${group}\\modlist.html`)}","${resolve(`dist\\.tmp\\${group}\\LICENSE.md`)}"`,
-        `-DestinationPath "${resolve(`dist\\${group}.zip`)}"`,
-      ])
-    }
-
   } catch (error) {
     Juke.logger.error(error);
     throw new Juke.ExitCode(1);
@@ -101,22 +101,23 @@ async function packMod(group) {
   }
 }
 
-// add --check if you want the modjars to be rebuilt
-export const CheckParameter = new Juke.Parameter({
-  type: "boolean",
-  alias: 'c',
-})
-
 // for --mode=beta/release
 export const ModeParameter = new Juke.Parameter({
   type: 'string'
 })
 
+// for windows users, go do -> --key=curseforgekey
+// not recommended, go use env vars!!
+export const KeyParameter = new Juke.Parameter({
+  type: 'string'
+})
+
 export const BuildModlistTarget = new Juke.Target({
+  parameters: [KeyParameter],
   inputs: ['manifest.json'],
   outputs: ['dist/modlist.html'],
-  executes: async () => {
-    if (!env.CFCORE_API_TOKEN) {
+  executes: async ({ get }) => {
+    if (!env.CFCORE_API_TOKEN && !get(KeyParameter)) {
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
       throw new Juke.ExitCode(1);
     }
@@ -125,7 +126,7 @@ export const BuildModlistTarget = new Juke.Target({
     let html = '<ul>\n'
     for (const key in jsonData.files) {
       const file = jsonData.files[key];
-      const modInfo = await GetModInfo(env.CFCORE_API_TOKEN, file.projectID);
+      const modInfo = await GetModInfo(env.CFCORE_API_TOKEN ?? get(KeyParameter), file.projectID);
       html += `<li><a href=${modInfo.links.websiteUrl}>${modInfo.name} (by ${modInfo.authors[0].name})</a></li>\n`;
     }
     html += '</ul>'
@@ -134,13 +135,10 @@ export const BuildModlistTarget = new Juke.Target({
 })
 
 export const DownloadModsTarget = new Juke.Target({
-  parameters: [CheckParameter],
   inputs: ['manifest.json'],
-  outputs: ({ get }) => (
-    get(CheckParameter) ? [] : ['dist/modcache/']
-  ),
-  executes: async () => {
-    if (!env.CFCORE_API_TOKEN) {
+  outputs: () => [], // always run, we have internal logic to check mods now
+  executes: async ({ get }) => {
+    if (!env.CFCORE_API_TOKEN && !get(KeyParameter)) {
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
       throw new Juke.ExitCode(1);
     }
@@ -212,7 +210,7 @@ export const DownloadModsTarget = new Juke.Target({
 
     for (const modID of mIdToDownload) {
       const file = dataKeys[modID];
-      const res = await DownloadCF(env.CFCORE_API_TOKEN, {
+      const res = await DownloadCF(env.CFCORE_API_TOKEN ?? get(KeyParameter), {
         modID,
         modFileID: file.fileID
       }, `dist/modcache/`);
@@ -290,7 +288,6 @@ export const BuildDevTarget = new Juke.Target({
     Juke.rm('dist/.devtmp', { recursive: true })
 
     if (fs.existsSync("dist/dev")) {
-      // Do something
       Juke.logger.info('Only updating mods as dist/dev exists');
 
       fs.mkdirSync("dist/dev", { recursive: true });
@@ -308,12 +305,13 @@ export const BuildDevTarget = new Juke.Target({
     // "merge" both mod folders
     fs.cpSync('dist/modcache', 'dist/.devtmp', { recursive: true });
     fs.cpSync('mods', 'dist/.devtmp', { recursive: true, force: true });
-    fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
+    symlinkSync(resolve('dist/.devtmp'), resolve('dist/dev/mods'));
+    // fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
     fs.cpSync('config', 'dist/dev/config', { recursive: true });
 
     // todo find the mod to blame, or just remove this and the filters up there if this ever gets fixed
-    Juke.logger.warn('Due to a bug with moonlight, symlinking the mod and config folder causes errors which breaks game startup.')
-    Juke.logger.warn('When updating, the mod and config folder requires manual copy. Dev mods are packed in "dist/.devtmp"')
+    Juke.logger.warn('Due to a bug with moonlight, symlinking the config folder causes errors which breaks game startup.')
+    Juke.logger.warn('When updating, the config folder requires manual copy.')
     await packMod("dev")
   }
 })
@@ -324,13 +322,13 @@ export const BuildAllTarget = new Juke.Target({
 
 export const UploadTarget = new Juke.Target({
   dependsOn: [BuildAllTarget],
-  parameters: [ModeParameter],
+  parameters: [ModeParameter, KeyParameter],
   inputs: [
     "dist/client.zip",
     "dist/server.zip",
   ],
   executes: async ({ get }) => {
-    if (!env.CFCORE_API_TOKEN) {
+    if (!env.CFCORE_API_TOKEN && !get(KeyParameter)) {
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
       throw new Juke.ExitCode(1);
     }
@@ -344,7 +342,7 @@ export const UploadTarget = new Juke.Target({
       // TODO changelog
     });
 
-    await UploadCF(env.CFCORE_API_TOKEN, {
+    await UploadCF(env.CFCORE_API_TOKEN ?? get(KeyParameter), {
       parentFileID: clientUploadResponse.id,
       file: 'dist/server.zip',
       displayName: 'server',

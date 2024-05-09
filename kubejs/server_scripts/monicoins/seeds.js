@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    if (isNormalMode) {
     //-- "Seeds"
     event.shaped(
         Item.of('minecraft:cocoa_beans', 32), [
@@ -35,4 +36,5 @@ ServerEvents.recipes(event => {
     ], {
         A: 'kubejs:moni_penny'
     }).noMirror().noShrink()
+}
 })

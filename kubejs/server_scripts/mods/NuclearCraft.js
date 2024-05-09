@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
             "TST"
         ], {
             T: 'nuclearcraft:tough_alloy_ingot',
-            S: 'gtceu:tungsten_ingot',
+            S: 'gtceu:tungsten_plate',
             D: 'gtceu:double_steel_plate'
         }
     )
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: "nuclearcraft:fission_reactor_casing" })
     event.shaped(
-        "nuclearcraft:fission_reactor_casing", [
+        "8x nuclearcraft:fission_reactor_casing", [
             "DDD",
             "DFD",
             "DDD"

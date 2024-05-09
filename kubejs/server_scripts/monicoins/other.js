@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    if (isNormalMode) {
     //-- Other stuff
 
     // To jumpstart HNN
@@ -10,4 +11,5 @@ ServerEvents.recipes(event => {
     ], {
         P: 'kubejs:moni_penny'
     }).noMirror().noShrink()
+}
 })

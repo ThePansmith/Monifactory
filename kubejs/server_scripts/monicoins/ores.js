@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-
+    if (isNormalMode) {
     //moniPENNY RECIPES
     event.shaped(
         Item.of('minecraft:clay_ball', 64), [
@@ -790,4 +790,5 @@ ServerEvents.recipes(event => {
     ], {
         A: 'kubejs:moni_quarter'
     }).noMirror().noShrink()
+}
 })

@@ -109,8 +109,10 @@
     "auto_ender_crafter": true,
     "ultimate_table": true,
     "ultimate_auto_table": true,
+    "epic_table": true,
     "elite_table": true,
     "basic_table": true,
+    "epic_auto_table": true,
     "crafting_core": true,
     "advanced_auto_table": true,
     "compressor": true

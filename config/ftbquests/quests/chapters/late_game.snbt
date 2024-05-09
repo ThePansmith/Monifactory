@@ -5,19 +5,173 @@
 	group: ""
 	icon: "gtceu:wetware_processor_mainframe"
 	id: "58ABB361EA301019"
-	order_index: 7
-	quest_links: [{
-		id: "5522298B1FC30B2B"
-		linked_quest: "2F04FA8D3E15E375"
-		size: 2.0d
-		x: 25.0d
-		y: -2.0d
-	}]
+	order_index: 9
+	quest_links: [
+		{
+			id: "5522298B1FC30B2B"
+			linked_quest: "2F04FA8D3E15E375"
+			size: 2.0d
+			x: 25.0d
+			y: -2.0d
+		}
+		{
+			id: "4AB71382C803BD92"
+			linked_quest: "1DFF7C35B5B26B80"
+			shape: "hexagon"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			id: "1596B621A4F022CC"
+			linked_quest: "2DD1E2391DA3170C"
+			shape: "hexagon"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			id: "68CD175ED7E7E9FE"
+			linked_quest: "4DB622A78605A2EB"
+			shape: "gear"
+			size: 1.5d
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "760BD8D5E0B0FE24"
+			linked_quest: "57A6FE885489C3ED"
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			id: "1C267CF4E1689C85"
+			linked_quest: "4E63CE9607E3B792"
+			shape: "hexagon"
+			size: 1.5d
+			x: -2.0d
+			y: 6.25d
+		}
+		{
+			id: "7E828413AC5F2CE2"
+			linked_quest: "47D092CBA484C0DE"
+			shape: "hexagon"
+			x: -2.0d
+			y: 8.25d
+		}
+		{
+			id: "7A8ECF14A7DB76F8"
+			linked_quest: "1FF5C2A3CAB76088"
+			shape: "hexagon"
+			x: -2.0d
+			y: 10.25d
+		}
+		{
+			id: "2DAEEE4673ACDE81"
+			linked_quest: "6CE6674C20500023"
+			shape: "hexagon"
+			x: -2.0d
+			y: 12.25d
+		}
+		{
+			id: "69D9E5D2192FE218"
+			linked_quest: "521977C7165229F1"
+			shape: "gear"
+			size: 1.5d
+			x: -2.0d
+			y: 14.25d
+		}
+		{
+			id: "24BED0E27BD54DB6"
+			linked_quest: "0BB798ACFE684AA9"
+			shape: "hexagon"
+			size: 2.0d
+			x: -2.0d
+			y: 16.25d
+		}
+		{
+			id: "37E71BAD3A4303A6"
+			linked_quest: "3C3B5875FCD6B5B7"
+			shape: "hexagon"
+			x: 0.0d
+			y: 18.25d
+		}
+		{
+			id: "3E8AD2962C885A40"
+			linked_quest: "64C33333ECCAABC7"
+			shape: "hexagon"
+			x: 6.0d
+			y: 18.25d
+		}
+		{
+			id: "68CD20CF674D7CC0"
+			linked_quest: "7E51D15F38C3B356"
+			x: 0.0d
+			y: 22.25d
+		}
+		{
+			id: "207E26A342B05F89"
+			linked_quest: "26CA20E74A62FA6E"
+			shape: "hexagon"
+			x: 9.0d
+			y: 18.25d
+		}
+		{
+			id: "688ACEE0FD0E5FED"
+			linked_quest: "115B96B2092D671E"
+			shape: "gear"
+			size: 1.5d
+			x: 13.0d
+			y: 18.25d
+		}
+		{
+			id: "2F00B9AF68AA27B9"
+			linked_quest: "49E9A178F6A52A62"
+			shape: "hexagon"
+			size: 2.0d
+			x: 17.25d
+			y: 18.25d
+		}
+		{
+			id: "357D42CDD60D4A44"
+			linked_quest: "4FABACAB7C4A74AC"
+			shape: "hexagon"
+			x: 6.0d
+			y: 22.25d
+		}
+		{
+			id: "24661D5DD2B4EE0E"
+			linked_quest: "5ECF0A787D861C89"
+			shape: "hexagon"
+			x: 11.0d
+			y: 22.25d
+		}
+		{
+			id: "3F02009E39E9934C"
+			linked_quest: "1289F9FE461BFE01"
+			shape: "hexagon"
+			x: 13.0d
+			y: 22.25d
+		}
+		{
+			id: "7602F121648F676B"
+			linked_quest: "67663B49B80849C1"
+			shape: "hexagon"
+			x: 15.0d
+			y: 22.25d
+		}
+		{
+			id: "7D8282F098F3A0F6"
+			linked_quest: "01E542E1C9DAF5B4"
+			shape: "gear"
+			size: 1.5d
+			x: 17.0d
+			y: 22.25d
+		}
+	]
 	quests: [
 		{
 			dependencies: [
-				"23A82A95709C324A"
 				"77582C534A994D7C"
+				"7E09D4E00BFA4970"
 			]
 			description: [
 				"The &3Medium Microverse Projector&r is a more powerful projector required for sending &6Tier Four&r through &6Tier Six Micro Miners&r into microverses."
@@ -127,96 +281,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["383AF0F983B15CA1"]
-			description: [
-				"The first and most expensive Tier Six Circuit, needed for crafting the &3IV Assembling Machine&r."
-				""
-				"Requires a bunch of standard circuit components."
-			]
-			id: "2D757C34B8CC82D4"
-			rewards: [{
-				id: "3FF5F83498EB6B2C"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "672878E8473C0B73"
-				item: "gtceu:nano_processor_mainframe"
-				type: "item"
-			}]
-			title: "The First Tier Six Ciruits"
-			x: -2.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["00041F4B8EB603DB"]
-			description: ["Upgrading to the &6Nano Supercomputer&r requires some standard circuit components, but also some &6Lumium Wire&r and &2Fine Tungstensteel Wire."]
-			id: "383AF0F983B15CA1"
-			rewards: [{
-				count: 2
-				id: "52E3D349D9B46E8D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "4015B5FE8ABBB61C"
-				item: "gtceu:nano_processor_computer"
-				type: "item"
-			}]
-			title: "The Second Tier Five Circuits"
-			x: -4.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"605062720747B482"
-				"2D757C34B8CC82D4"
-			]
-			description: [
-				"With your &6Tungstensteel&r-based machine hulls and &6Nanoprocessor Mainframes&r squared away, you can finally get on the path to making an Insane Voltage &3Circuit Assembling Machine&r."
-				""
-				"This tier of Assembling Machine unlocks &6Quantum Circuits&r, as well as handling crafting recipes up to 8192 EU/t. It can also optionally overclock recipes that consume up to 2048 EU/t for improved speed at the cost of relatively more power."
-			]
-			id: "747261209378726B"
-			rewards: [{
-				id: "2C70D08FBE8565B2"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "27469B198BA91338"
-				item: "gtceu:iv_circuit_assembler"
-				type: "item"
-			}]
-			title: "IV Circuit Assembling Machine"
-			x: -2.0d
-			y: 6.375d
-		}
-		{
-			dependencies: ["4D38653541F76928"]
-			description: ["Nothing you haven't seen here: just combine some standard circuit components and &6Nanocircuits&r to make a &6Nanoprocessor&r."]
-			id: "00041F4B8EB603DB"
-			rewards: [{
-				count: 2
-				id: "14D874B2DBAE5FBA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "3047252B070C8A7B"
-				item: "gtceu:nano_processor_assembly"
-				type: "item"
-			}]
-			title: "The Second Tier Four Circuits"
-			x: -6.0d
-			y: 3.0d
-		}
-		{
 			dependencies: ["53C00EA9D9BEE776"]
 			description: [
 				"&6Indium&r is a rare material requiring specialized bulk ore processing to acquire. It is useful for making &6Indium Gallium Phosphide&r (InGaP)."
@@ -277,109 +341,6 @@
 			y: 8.25d
 		}
 		{
-			dependencies: [
-				"35567AC1074FB2C0"
-				"1903B26C95DD325A"
-				"747261209378726B"
-			]
-			description: [
-				"With your new &6Epoxy Circuit Boards, &6QBit CPUs&r, and some standard components, you can make the final type of Tier Four Circuit: the &6Quantum Circuit&r."
-				""
-				"As the best form of Tier Four circuit, these should be automated and stockpiled. The variant recipe requiring &6Advanced System-on-Chip&r won't be available until ZPM."
-			]
-			id: "12D33BA9CF1DBE54"
-			rewards: [{
-				count: 2
-				id: "3DC7180EDBBAC477"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "67605B742ECA0788"
-				item: "gtceu:quantum_processor"
-				type: "item"
-			}]
-			title: "The Third and Final Tier Four Circuits"
-			x: -2.0d
-			y: 8.25d
-		}
-		{
-			dependencies: ["12D33BA9CF1DBE54"]
-			description: ["Nothing new here, just use more standard circuit stuff and you can upgrade several &6Quantum Circuits&r into a &6Quantum Processor&r."]
-			id: "605B92FDF74E3140"
-			rewards: [{
-				count: 2
-				id: "43BCEEFBAB445C17"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "42546DF0EB4A0A4A"
-				item: "gtceu:quantum_processor_assembly"
-				type: "item"
-			}]
-			title: "The Third Tier Five Circuit"
-			x: -2.0d
-			y: 10.25d
-		}
-		{
-			dependencies: ["605B92FDF74E3140"]
-			description: ["Nothing special about this tier either."]
-			id: "6F3D0400845E43F9"
-			rewards: [{
-				count: 2
-				id: "3ADB5528FCFC0B34"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "5712D78E83D7CC08"
-				item: "gtceu:quantum_processor_computer"
-				type: "item"
-			}]
-			title: "The Second Tier Six Circuits"
-			x: -2.0d
-			y: 12.25d
-		}
-		{
-			dependencies: ["2412924535FC751E"]
-			description: [
-				"A &6Reinforced Epoxy Resin Sheet&r is made in a &3Chemical Bath&r, not a &3Chemical Reactor&r. The board itself is made in a Chemical Reactor though."
-				""
-				"Other than that, it's very similar to the other substrates you've made so far. This board type unlocks &2Quantum Circuits, which span tiers four through seven."
-			]
-			icon: "gtceu:fiber_reinforced_printed_circuit_board"
-			id: "35567AC1074FB2C0"
-			rewards: [{
-				id: "086E0E977FC4CCC2"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "3711F543C3EA4FCF"
-					item: "gtceu:reinforced_epoxy_resin_plate"
-					type: "item"
-				}
-				{
-					id: "228B199F5197D509"
-					item: "gtceu:fiber_reinforced_circuit_board"
-					type: "item"
-				}
-				{
-					id: "054C12D143E9115C"
-					item: "gtceu:fiber_reinforced_printed_circuit_board"
-					type: "item"
-				}
-			]
-			title: "Fiber-Reinforced Printed Circuit Board"
-			x: 0.0d
-			y: 6.25d
-		}
-		{
 			dependencies: ["1AC91A3E05215569"]
 			description: [
 				"&2Your first few Raw Crystal Chips must be grown in an Autoclave from liquid Enderium, or more efficiently with Europium, and Exquisite Emeralds or Exquisite Olivine."
@@ -404,30 +365,6 @@
 			title: "Crystal Growing"
 			x: 0.0d
 			y: 12.25d
-		}
-		{
-			dependencies: ["6F3D0400845E43F9"]
-			description: [
-				"Now you can craft the &6Quantum Processor Mainframe&r, the first Tier Seven circuit."
-				""
-				"These are required for crafting the Ludicrous Voltage (LuV) &3Assembling Machine&r."
-			]
-			id: "7A103C8708F3B716"
-			rewards: [{
-				count: 2
-				id: "0FDCF5C832E6D1E1"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "744B6BB715C050D5"
-				item: "gtceu:quantum_processor_mainframe"
-				type: "item"
-			}]
-			title: "&2The First Tier Seven Circuits"
-			x: -2.0d
-			y: 14.25d
 		}
 		{
 			dependencies: ["40E8C7CEE285D702"]
@@ -457,7 +394,6 @@
 			dependencies: [
 				"672D43BD113251EA"
 				"605062720747B482"
-				"3F216049FBBB4E36"
 			]
 			description: [
 				"The &3Assembly Line&r is a large multiblock structure that crafts complex materials, similar to an &3Assembling Machine&r. These will be crucial going forward for making a variety of components and machinery."
@@ -494,7 +430,7 @@
 				}
 				{
 					id: "7497F00CED97F4DA"
-					item: "gtceu:steel_machine_casing"
+					item: "gtceu:solid_machine_casing"
 					type: "item"
 				}
 				{
@@ -525,7 +461,7 @@
 			y: 12.25d
 		}
 		{
-			dependencies: ["3F216049FBBB4E36"]
+			dependencies: ["39FD6F1076559156"]
 			description: [
 				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r, the &3Fusion Reactor&r, and some parts from &9Draconic Evolution&r."
 				""
@@ -578,34 +514,6 @@
 			}]
 			title: "&2Crystal Processing Unit"
 			x: 0.0d
-			y: 16.25d
-		}
-		{
-			dependencies: [
-				"6DAB13A7BDECE94E"
-				"76BAC72CC89F390E"
-				"7A103C8708F3B716"
-			]
-			description: [
-				"With your &2Rhodium Plated Lumium-Palladium&r-based machine hulls, Assembling Machine built, and &6Quantum Processor Mainframes&r squared away, you can finally get on the path to making a Ludicrous Voltage &3Circuit Assembling Machine&r."
-				""
-				"This tier of Assembling Machine unlocks &6Crystal Circuits&r, as well as handling crafting recipes up to 32768 EU/t. It can also optionally overclock recipes that consume up to 8192 EU/t for improved speed at the cost of relatively more power."
-			]
-			id: "064DBD0DFB04B320"
-			rewards: [{
-				id: "4C20CA2372DAC248"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "3FBAF80640D2617A"
-				item: "gtceu:luv_circuit_assembler"
-				type: "item"
-			}]
-			title: "&2LuV Circuit Assembling Machine"
-			x: -2.0d
 			y: 16.25d
 		}
 		{
@@ -753,36 +661,6 @@
 		}
 		{
 			dependencies: [
-				"064DBD0DFB04B320"
-				"5374CA06645C2DC9"
-				"5C5842E524934F55"
-				"67833AE5421E10D4"
-			]
-			description: [
-				"With your &6Crystal CPUs&r and the &3LuV Assembling Machine&r crafted, you can make the final type of Tier Five Circuit: the &6Crystal Circuit&r."
-				""
-				"&2This is the first Circuit which strictly requires Advanced SMD components. All of them will from now on.&r"
-				""
-				"As the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring &6Crystal System-on-Chip&r won't be available until you can make a &3ZPM Circuit Assembling Machine&r."
-			]
-			id: "13E85F25A122FF1F"
-			rewards: [{
-				id: "22B6605466DD94B5"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "1E668B12F589B060"
-				item: "gtceu:crystal_processor"
-				type: "item"
-			}]
-			title: "&2The Fourth and Final Tier Five Circuits"
-			x: 0.0d
-			y: 18.25d
-		}
-		{
-			dependencies: [
 				"15DBB22E3DC0AFB7"
 				"1C1B1E1BBFA079F5"
 			]
@@ -834,7 +712,7 @@
 				"6DAB13A7BDECE94E"
 				"51A463024F35DC2E"
 				"025092551C0A20B6"
-				"2D757C34B8CC82D4"
+				"4DB622A78605A2EB"
 			]
 			description: [
 				"&2Wetware and crystal-related processes require some stronger sterilisation.&r"
@@ -942,7 +820,7 @@
 		{
 			dependencies: [
 				"2F6EC962007FA9FB"
-				"5C5842E524934F55"
+				"7E51D15F38C3B356"
 			]
 			description: [
 				"The most advanced substrate available, prepared for bleeding-edge bioengineering technology."
@@ -969,41 +847,6 @@
 				}
 			]
 			x: 3.0d
-			y: 22.25d
-		}
-		{
-			dependencies: ["35567AC1074FB2C0"]
-			description: [
-				"That's a lot of foil. &2These use Palladium Foil instead of Electrum now.&r"
-				""
-				"These boards are required for &6Crystal Circuits&r, as well as the future basis of &6Wetware Lifesupport Circuit Boards&r. These will get you from tier five to tier eight."
-			]
-			icon: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
-			id: "5C5842E524934F55"
-			rewards: [{
-				id: "2762479F6DDB5907"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "3028DCFDB754F84F"
-					item: "gtceu:palladium_foil"
-					type: "item"
-				}
-				{
-					id: "6FFA5253F0B1B9A2"
-					item: "gtceu:multilayer_fiber_reinforced_circuit_board"
-					type: "item"
-				}
-				{
-					id: "129822B632525839"
-					item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
-					type: "item"
-				}
-			]
-			title: "Multi-Layer Fiber-Reinforced Printed Circuit Board"
-			x: 0.0d
 			y: 22.25d
 		}
 		{
@@ -1304,47 +1147,6 @@
 		}
 		{
 			dependencies: [
-				"4BFE00ABA1FF6678"
-				"7DB174443D7FAFA0"
-			]
-			description: ["With &6Enderium&r, you can assemble a &6Crystal Processor Supercomputer&r."]
-			id: "16139ABAE30BF117"
-			rewards: [{
-				id: "329A7EC0225CE978"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "1BEA3C67E8A0817E"
-				item: "gtceu:crystal_processor_computer"
-				type: "item"
-			}]
-			title: "&2The Second Tier Seven Circuits"
-			x: 9.0d
-			y: 18.25d
-		}
-		{
-			dependencies: ["13E85F25A122FF1F"]
-			description: ["With some now-standard components you can upgrade a few &6Crystal Prcessors&r into a &6Crystal Processor Assembly&r."]
-			id: "4BFE00ABA1FF6678"
-			rewards: [{
-				id: "4CB66530942D953A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "4CA430CD2B21A1E0"
-				item: "gtceu:crystal_processor_assembly"
-				type: "item"
-			}]
-			title: "The Third Tier Six Circuits"
-			x: 6.0d
-			y: 18.25d
-		}
-		{
-			dependencies: [
 				"2F6EC962007FA9FB"
 				"039F70814051413E"
 			]
@@ -1390,11 +1192,7 @@
 		}
 		{
 			dependencies: ["49B872B193268554"]
-			description: [
-				"&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."
-				""
-				"Fun fact: you'll need to make 487 motes. You've got all this automated, right?"
-			]
+			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
 			icon: "kubejs:mote_of_omnium"
 			id: "7A7FFE9E89D19A2F"
 			rewards: [{
@@ -1422,8 +1220,8 @@
 		}
 		{
 			dependencies: [
-				"6588C68DE6973BCC"
 				"1B07DB4D58D43B7C"
+				"115B96B2092D671E"
 			]
 			description: [
 				"&2Upgraded forms of the EBF and Vacuum Freezer.&r"
@@ -1742,33 +1540,6 @@
 			title: "&2Naquadria"
 			x: 19.25d
 			y: 15.25d
-		}
-		{
-			dependencies: [
-				"217F85D6FE2A467D"
-				"6588C68DE6973BCC"
-			]
-			description: [
-				"With your &2Naquadah Alloy&r-based machine hulls and &6Crystal Processor Mainframes&r squared away, you can finally get on the path to making a ZPM &3Circuit Assembling Machine&r."
-				""
-				"This tier of Assembling Machine unlocks &6Wetware Circuits&r, as well as handling crafting recipes up to 131072 EU/t. It can also optionally overclock recipes that consume up to 32768 EU/t for improved speed at the cost of relatively more power."
-			]
-			id: "13C5F3A7E86D468F"
-			rewards: [{
-				id: "11BF9ED869B8BD06"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "69C0B8463F9F86EB"
-				item: "gtceu:zpm_circuit_assembler"
-				type: "item"
-			}]
-			title: "&2ZPM Circuit Assembling Machine"
-			x: 17.25d
-			y: 18.25d
 		}
 		{
 			dependencies: ["1B07DB4D58D43B7C"]
@@ -2198,7 +1969,7 @@
 			y: 15.25d
 		}
 		{
-			dependencies: ["3F216049FBBB4E36"]
+			dependencies: ["39FD6F1076559156"]
 			description: [
 				"The &3Advanced Microverse Projector II&r is a more powerful projector required for sending &6Tier Seven&r through &6Tier Ten Micro Miners&r into microverses."
 				""
@@ -2294,9 +2065,9 @@
 		{
 			dependencies: [
 				"57D9FA04817CB92F"
-				"619D94FE1D9834FA"
 				"6ABD83B58FADD4DF"
 				"483652BAEF59E125"
+				"01E542E1C9DAF5B4"
 			]
 			description: [
 				"Combines &bStellar Creation Data&r into the &9Universe Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
@@ -2395,7 +2166,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "67E4E186D212226D"
-				item: "kubejs:neutronium_ingot"
+				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
 			title: "&2Neutronium Ingot"
@@ -2546,7 +2317,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["7A103C8708F3B716"]
+			dependencies: ["521977C7165229F1"]
 			description: [
 				"The &3Active Transformer&r is a device which can convert any number and type of &9GT Energy Inputs&r into any number and type of &9GT Energy Outputs&r. That includes &664A Substation Hatches&r, as well as &aLaser Hatches&r - refer to the nearby quests for more details on those."
 				""
@@ -2570,7 +2341,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["7A103C8708F3B716"]
+			dependencies: ["521977C7165229F1"]
 			description: [
 				"The &3Power Substation&r is GregTech's native mass power storage solution. At &cZPM&r tier and above, it can rival the &6Tier 7 Energy Core&r from Draconic Evolution."
 				""
@@ -2598,7 +2369,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["7A103C8708F3B716"]
+			dependencies: ["521977C7165229F1"]
 			description: [
 				"&aLasers&r are &9GregTech&r's native solution to high-volume power transfer. Each power tier starting at &1IV&r has &aLaser Hatches&r capable of transferring &9256A&r, &91,024A&r and &94,096A&r of their voltage's power!"
 				""
@@ -2910,34 +2681,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"16139ABAE30BF117"
-				"1109CFC5D47FC011"
-			]
-			description: [
-				"The &6Crystal Processor Mainframe&r is the first Tier Eight circuit."
-				""
-				"Along with things you already know how to make, this needs &6HSS-E Frames&r."
-				""
-				"These are required for crafting the &3ZPM Assembling Machine&r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these."
-			]
-			id: "6588C68DE6973BCC"
-			rewards: [{
-				id: "44E6E8165DBEC0A8"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "1AFE6053A50B6188"
-				item: "gtceu:crystal_processor_mainframe"
-				type: "item"
-			}]
-			title: "&2The First Tier Eight Circuits"
-			x: 13.0d
-			y: 18.25d
-		}
-		{
 			dependencies: ["74469710D910C19D"]
 			description: [
 				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5Monifactory&r is to allow you to eventually automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
@@ -3005,128 +2748,6 @@
 			title: "&9Ultimate Crafting Table"
 			x: 6.0d
 			y: 1.0d
-		}
-		{
-			dependencies: [
-				"5EE23A29090BD374"
-				"79EFCD8E01384C0C"
-			]
-			description: [
-				"The only novel ingredient is &6Tritanium Frames&r."
-				""
-				"&6Wetware Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Nine circuits. Unlike past mainframes, you will need to craft more than just a few of them. They're mostly used in the Endgame though, so you don't have to worry too much yet."
-				""
-				"Definitely consider parallelizing your &3Assembly Lines&r if you haven't already. Even just having two or three lines will vastly improve your production speeds and help avoid bottlenecks as you push towards the Endgame."
-			]
-			id: "619D94FE1D9834FA"
-			rewards: [{
-				count: 10
-				id: "14FC9E519EDE4F8D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "The final circuit!"
-			tasks: [{
-				id: "50A8B0EB26CD11D5"
-				item: "gtceu:wetware_processor_mainframe"
-				type: "item"
-			}]
-			title: "The First And Only Tier Nine Circuit"
-			x: 17.25d
-			y: 22.25d
-		}
-		{
-			dependencies: ["0F612EAA83D23F9B"]
-			description: [
-				"&6Wetware Supercomputers&r are made in an &3Assembly Line&r at ZPM or better power."
-				""
-				"You'll need &6Europium&r from the &3Fusion Reactor&r to craft these."
-			]
-			id: "5EE23A29090BD374"
-			rewards: [{
-				id: "5AE3A43C14D02922"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "39A5471F38915E67"
-				item: "gtceu:wetware_processor_computer"
-				type: "item"
-			}]
-			title: "The Second And Final Tier Eight Circuits"
-			x: 15.25d
-			y: 22.25d
-		}
-		{
-			dependencies: ["1E121286E4EFBB97"]
-			description: ["&6Wetware Processors&r are made in &2the ZPM+ Circuit Assembler still."]
-			id: "0F612EAA83D23F9B"
-			rewards: [{
-				id: "71EE67E8F571822E"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "1FE5E4966CC2B0CD"
-				item: "gtceu:wetware_processor_assembly"
-				type: "item"
-			}]
-			title: "&2The Third and Final Tier Seven Circuits"
-			x: 13.0d
-			y: 22.25d
-		}
-		{
-			dependencies: [
-				"6B851C550A0C6C4A"
-				"13C5F3A7E86D468F"
-			]
-			description: [
-				"The final form of Tier Six circuits, and the final circuit theme."
-				""
-				"Using your &2Neuro Processing Units&r, you can craft (grow?) these circuits in a ZPM or better &3Circuit Assembling Machine&r."
-				""
-				"These are fairly slow to craft and you're going to need considerable quantities, so make sure you have a good parallelized infrastructure for keeping these stocked."
-			]
-			id: "1E121286E4EFBB97"
-			rewards: [{
-				id: "2A6EED68E7A5C7F0"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "19973552943EFCCE"
-				item: "gtceu:wetware_processor"
-				type: "item"
-			}]
-			title: "&2The Fourth And Final Tier Six Circuits"
-			x: 11.0d
-			y: 22.25d
-		}
-		{
-			dependencies: [
-				"0F6B344C265D1FBB"
-				"4AC51394FB5152E5"
-			]
-			description: ["&2Use the Stem Cells and more advanced materials to build a Neuro Processing Unit. This is used in the first Wetware Circuit."]
-			id: "6B851C550A0C6C4A"
-			rewards: [{
-				id: "48A87DAC7AA75A2F"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "6B2E02ECF4209A83"
-				item: "gtceu:neuro_processing_unit"
-				type: "item"
-			}]
-			title: "&2Neuro Processing Unit"
-			x: 6.0d
-			y: 22.25d
 		}
 		{
 			dependencies: ["7A7FFE9E89D19A2F"]

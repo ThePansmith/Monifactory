@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/ThePansmith/Monifactory/assets/70342772/ad4033c0-db17-407b-8b6e-283a46820d58" height="250" alt="Logo"></p>
+<p align="center"><img src="https://github.com/ThePansmith/Monifactory/assets/70342772/4ac1d5e7-0610-4f44-bfed-b3b2022eecc0" height="250" alt="Logo"></p>
 <h1 align="center">Monifactory</h1>
 <p align="center"><b><i>Port of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and its related mods.</i></b></p>
 <h1 align="center">
@@ -13,7 +13,8 @@
 
 ## Features
 - GTCEu Modern which is on active development in-parity with regular GTCEu
-- LV-ZPM tier in-parity of Nomifactory CEu
+- LV-UHV tier in-parity of Nomifactory CEu
+- A WIP Post Tank Progression overhaul
 
 ## Credits
 Original pack by [Exaxxion](https://github.com/Exaxxion).

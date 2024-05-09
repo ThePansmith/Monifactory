@@ -1,0 +1,86 @@
+{
+	always_invisible: true
+	autofocus_id: "7DC209D400BCD708"
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "dependency_chain"
+	group: ""
+	icon: "gtceu:kanthal_coil_block"
+	id: "1956832191841F25"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "57E7182198B2EA9A"
+			invisible: true
+			subtitle: "unlocks normal quests"
+			tasks: [{
+				id: "114368F6DCC624B8"
+				stage: "mode_normal"
+				type: "gamestage"
+			}]
+			x: -1.25d
+			y: -0.25d
+		}
+		{
+			id: "2EC4EF1BEEA578F3"
+			invisible: true
+			subtitle: "unlocks expert quest"
+			tasks: [{
+				id: "61ED97728A33334E"
+				stage: "mode_expert"
+				type: "gamestage"
+			}]
+			x: 0.0d
+			y: -0.25d
+		}
+		{
+			id: "45B743CB23CA5735"
+			invisible: true
+			subtitle: "generic dependency for unlocking the genisis quest"
+			tasks: [{
+				id: "140F9B6DC0E3EE8E"
+				stage: "intro_complete"
+				type: "gamestage"
+			}]
+			x: 1.25d
+			y: -0.25d
+		}
+		{
+			description: ["This is used for unlocking quests, esp hard mode."]
+			icon: "minecraft:oak_sign"
+			id: "7DC209D400BCD708"
+			subtitle: "uh oh"
+			tasks: [{
+				id: "424451AEEE23C1AF"
+				title: "nevercomplete"
+				type: "custom"
+			}]
+			title: "&l&cREAD ME!!"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			hide: true
+			id: "0404FB4732F944D7"
+			rewards: [{
+				auto: "invisible"
+				id: "254BEB71E268E855"
+				ignore_reward_blocking: true
+				remove: true
+				stage: "intro_complete"
+				type: "gamestage"
+			}]
+			tasks: [{
+				id: "3149CE3926BE4C88"
+				type: "checkmark"
+			}]
+			title: "debug: undo intro"
+			x: 1.25d
+			y: -1.5d
+		}
+	]
+	subtitle: []
+	title: "dependencies"
+}

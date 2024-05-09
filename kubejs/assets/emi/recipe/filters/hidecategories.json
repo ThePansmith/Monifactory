@@ -108,6 +108,9 @@
             "category": "nuclearcraft:melter"
         },
         {
+            "category": "nuclearcraft:nc_ore_veins"
+        },
+        {
             "category": "ftbquests:quest"
         },
         {
@@ -165,12 +168,6 @@
             "category": "thermal:bottler"
         },
         {
-            "category": "sgjourney:crystallizing"
-        },
-        {
-            "category": "sgjourney:advanced_crystallizing"
-        },
-        {
             "category": "ae2:entropy"
         },
         {
@@ -207,25 +204,25 @@
             "category": "create:automatic_shapeless" 
         },
         {
-            "category": "create:sawing" 
-        },
-        {
-            "category": "create:draining" 
-        },
-        {
-            "category": "create:mixing" 
-        },
-        {
-            "category": "create:pressing" 
-        },
-        {
             "category": "create:automatic_brewing" 
         },
         {
             "category": "create:automatic_packing" 
         },
         {
+            "category": "create:draining" 
+        },
+        {
             "category": "gtceu:create_mixer" 
+        },
+        {
+            "category": "create:sawing" 
+        },
+        {
+            "category": "create:mixing" 
+        },
+        {
+            "category": "create:pressing" 
         }
     ]
 }
