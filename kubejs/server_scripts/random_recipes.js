@@ -85,7 +85,6 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/mv"
     }
     ).id('gtceu:shaped/mv_macerator')
-
     // Data Stuff
     event.recipes.gtceu.extractor("tank_data")
         .itemInputs("kubejs:heart_of_a_universe")

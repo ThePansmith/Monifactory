@@ -278,7 +278,7 @@ StartupEvents.registry('item', event => {
     
     for (const [theme, volt] of mainframes) {
         event.create(`${theme}_processor_mainframe`)
-            .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processor Mainframe}`)
+            .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processor Mainframe`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_processor_mainframe_base`, layer1: "kubejs:item/circuits/processor_mainframe_lights" })
             .tooltip(`${volt}-Tier Circuit`)
     }

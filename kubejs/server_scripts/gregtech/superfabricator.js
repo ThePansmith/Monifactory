@@ -1,4 +1,12 @@
 ServerEvents.recipes(event => {
+    function fabricator(prediction, circuit, output) {
+        event.recipes.gtceu.loot_superfabricator(`kubejs:${prediction}_${circuit}`)
+            .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + prediction + '"}}').weakNBT())
+            .circuit(circuit)
+            .itemOutputs(output)
+            .duration(3 * 20) // same for all recipes
+            .EUt(64) // same for all recipes
+    }
     if (isNormalMode) {
     ////// Machine Recipe //////
 
@@ -11,14 +19,7 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
         
     ////// Fabricator Recipes //////
-    function fabricator(prediction, circuit, output) {
-        event.recipes.gtceu.loot_superfabricator(`kubejs:${prediction}_${circuit}`)
-            .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + prediction + '"}}').weakNBT())
-            .circuit(circuit)
-            .itemOutputs(output)
-            .duration(3 * 20) // same for all recipes
-            .EUt(64) // same for all recipes
-    }
+
 
     fabricator('blaze', 1, '10x minecraft:blaze_rod')
     fabricator('blaze', 2, '32x gtceu:sulfur_dust')
