@@ -13,7 +13,7 @@
     },
     "reportThreshold": {
         "desc:": "Set the min amount of stacked items being reported, default: 80",
-        "reportThreshold": 80
+        "reportThreshold": 200
     },
     "autoremovethreshold": {
         "desc:": "Set the amount of stacked items being automatically removed, default: 120",
