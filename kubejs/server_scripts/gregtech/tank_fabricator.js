@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     event.shaped(
-        'gtceu:creative_tank_fabricator', [
+        'gtceu:subatomic_digital_assembler', [
             'EFE',
             'GCG',
             'LUL'
@@ -12,11 +12,12 @@ ServerEvents.recipes(event => {
         C: 'gtceu:atomic_casing',
         U: 'gtceu:uv_field_generator'
     }
-    ).id('kubejs:shaped/creative_tank_fabricator')
+    ).id('kubejs:shaped/subatomic_digital_assembler')
 
-    event.recipes.gtceu.creative_tank_fabricator('kubejs:creative_tank')
+    event.recipes.gtceu.subatomic_digital_assembly('kubejs:creative_tank')
         .notConsumable('kubejs:creative_portable_tank_mold')
         .itemOutputs('gtceu:creative_tank')
+        .CWUt(64)
         .duration(500)
         .EUt(100000)
 })

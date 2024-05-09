@@ -1,4 +1,13 @@
 ServerEvents.recipes(event => {
+    function supercomp(model, prediction, EUt) {
+        event.recipes.gtceu.simulation_supercomputer(`kubejs:${model}`)
+            .notConsumable(Item.of('hostilenetworks:data_model', '{data_model:{id:"hostilenetworks:' + model + '"}}').weakNBT())
+            .itemInputs('hostilenetworks:prediction_matrix')
+            .itemOutputs('hostilenetworks:' + prediction + '_prediction')
+            .chancedOutput(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + model + '"}}'), 3000, 500)
+            .duration(15.05 * 20) // same for all recipes
+            .EUt(EUt)
+    }
     if (isNormalMode) {
     ////// Machine Recipe //////
 
@@ -12,15 +21,6 @@ ServerEvents.recipes(event => {
         
     ////// Computer Recipes //////
 
-    function supercomp(model, prediction, EUt) {
-        event.recipes.gtceu.simulation_supercomputer(`kubejs:${model}`)
-            .notConsumable(Item.of('hostilenetworks:data_model', '{data_model:{id:"hostilenetworks:' + model + '"}}').weakNBT())
-            .itemInputs('hostilenetworks:prediction_matrix')
-            .itemOutputs('hostilenetworks:' + prediction + '_prediction')
-            .chancedOutput(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + model + '"}}'), 3000, 500)
-            .duration(15.05 * 20) // same for all recipes
-            .EUt(EUt)
-    }
 
     supercomp('thermal/thermal_elemental', 'overworld', 256)
     supercomp('shulker', 'end', 128)

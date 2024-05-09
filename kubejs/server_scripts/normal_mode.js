@@ -1,12 +1,13 @@
 // THIS FILE IS FOR RANDOM RECIPES THAT DOESNT REQUIRE THEIR OWN FILE
 
 ServerEvents.recipes(event => {
+    const carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
+    const gtMachines = ['extractor', 'macerator', 'compressor', 'forge_hammer', 'furnace', 'alloy_smelter']
     if (isNormalMode) {
         // Moni Steel
         event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
         event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
 
-        const carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
         carbonSources.forEach(carbonSource => {
             event.recipes.gtceu.alloy_smelter("steel_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
                 .itemInputs("#forge:ingots/iron", carbonSource)
@@ -38,37 +39,6 @@ ServerEvents.recipes(event => {
             .outputFluids("minecraft:water 6000")
             .duration(364)
             .EUt(15)
-
-        // Change recipes for LV and MV macerators
-        event.shaped(
-            "gtceu:lv_macerator", [
-            'PMB',
-            'WWH',
-            'CCW'
-        ], {
-            P: "gtceu:lv_electric_piston",
-            M: "gtceu:lv_electric_motor",
-            B: "gtceu:wrought_iron_buzz_saw_blade",
-            W: "gtceu:tin_single_cable",
-            H: "gtceu:lv_machine_hull",
-            C: "#gtceu:circuits/lv"
-        }
-        ).id('gtceu:shaped/lv_macerator')
-
-        event.shaped(
-            "gtceu:mv_macerator", [
-            'PMB',
-            'WWH',
-            'CCW'
-        ], {
-            P: "gtceu:mv_electric_piston",
-            M: "gtceu:mv_electric_motor",
-            B: "gtceu:steel_buzz_saw_blade",
-            W: "gtceu:copper_single_cable",
-            H: "gtceu:mv_machine_hull",
-            C: "#gtceu:circuits/mv"
-        }
-        ).id('gtceu:shaped/mv_macerator')
 
         // Alternative LV piston recipe
         event.shaped(
