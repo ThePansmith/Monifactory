@@ -43,6 +43,9 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(/storagedrawers:/, (item, advanced, text) => {
         text.add(1, [Text.red('Deprecated').bold()])
     })
+    tooltip.addAdvanced(/waystones:/, (item, advanced, text) => {
+        text.add(1, [Text.red('Deprecated. Migrate to Tempad').bold()])
+    })
 
 	// Fix gtceu text
     tooltip.addAdvanced(['gtceu:creative_energy', 'gtceu:creative_tank', 'gtceu:creative_chest', 'gtceu:creative_data_access_hatch'], (item, adv, text) => {
