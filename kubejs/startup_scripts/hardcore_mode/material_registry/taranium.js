@@ -4,9 +4,14 @@
 
 // Taranium Line Stuff
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    if (!isHardcoreMode) {
+    if (!isExpertMode) {
         return;
     }
+
+    event.create('hydrogen_peroxide')
+        .liquid()
+        .color(0xd2ffff)
+        .components('8x carbon', '4x hydrogen', '3x oxygen')
 
     event.create('hexafluorosilicic_acid')
         .fluid()
@@ -89,7 +94,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(() => {
-    if (!isHardcoreMode) {
+    if (!isExpertMode) {
         return;
     }
 	GTMaterials.get('xenic_acid').setFormula('H2XeO4');

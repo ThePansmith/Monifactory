@@ -121,9 +121,9 @@ worldgen:
     # Default: true
     removeVanillaLargeOreVeins: true
 
-    # Multiplier to bedrock ore generation amount
-    # Default: 1.0f
-    bedrockOreMultiplier: 1.0
+    # Distance between bedrock ore veins in chunks, if enabled.
+    # Default: 16
+    bedrockOreDistance: 16
 
     # Make bedrock ore/fluid veins infinite?
     # Default: false
@@ -244,7 +244,7 @@ machines:
   # This is intended for modpack developers only, and is not playable without custom tweaks or addons.
   # Other mods can override this to true, regardless of the config file.
   # Default: false
-  highTierContent: false
+  highTierContent: true
 
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.

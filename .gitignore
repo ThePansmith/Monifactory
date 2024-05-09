@@ -12,6 +12,7 @@
 !.editorconfig
 
 !/mods/systeams*
+!/mods/ExtendedCrafting*
 
 /mods/.index
 /mods/.connector

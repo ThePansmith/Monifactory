@@ -6,7 +6,7 @@
 	group: ""
 	icon: "gtceu:electric_blast_furnace"
 	id: "2763DAD954E0EED8"
-	order_index: 1
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -145,7 +145,7 @@
 				id: "381F87172DB87754"
 				type: "checkmark"
 			}]
-			title: "Programmed Circuits"
+			title: "&9Programmed Circuits"
 			x: -1.9047619047619193d
 			y: 3.720238095238088d
 		}
@@ -261,7 +261,7 @@
 				"- &6Small Springs&r from one Rod"
 				"- &6Springs&r from one Long Rod. "
 				"&r"
-				"If you played the CE version of &9monifactory&r, note that the functions of the &3Compressor&r (for making Plates) and &3Cluster Mill&r are merged into this machine."
+				"If you played the CE version of &9Nomifactory&r, note that the functions of the &3Compressor&r (for making Plates) and &3Cluster Mill&r are merged into this machine."
 			]
 			id: "3EDD0A986384F2A7"
 			rewards: [{
@@ -284,7 +284,7 @@
 			description: [
 				"Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with &9monicoins&r."
 				""
-				"The appearance can be customized by crafting the drawer into &aFramed Compacting Drawer&r and putting it into a &aFraming Table&r, or using a &aHand Framing Tool&r."
+				"The appearance can be customized by crafting the drawer into &aFramed Compacting Drawer&r and then using a &9Framing Template&r or your crafting grid."
 			]
 			id: "7460F22545A4EFB2"
 			rewards: [{
@@ -297,7 +297,7 @@
 				item: "functionalstorage:compacting_drawer"
 				type: "item"
 			}]
-			title: "Compacting Drawers"
+			title: "&9Compacting Drawers"
 			x: -7.0d
 			y: 2.0d
 		}
@@ -492,7 +492,7 @@
 				}
 				{
 					id: "3DBB91C93688C4FC"
-					item: "storagedrawers:void_upgrade"
+					item: "functionalstorage:void_upgrade"
 					type: "item"
 				}
 			]
@@ -614,13 +614,13 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "You already have &6Steel&r, but it can be made much faster in the &3Alloy Smelter&r, at the cost of EU."
+			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
 			tasks: [{
 				id: "17210F38B40BAAD7"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&2Steel"
+			title: "&9Alloying Steel"
 			x: 2.5d
 			y: -3.0d
 		}
@@ -651,7 +651,7 @@
 		{
 			dependencies: ["62BBD1F6767A4D90"]
 			description: [
-				"Alloy Smelters are used to create alloys by melting and reforming items together."
+				"&3Alloy Smelters&r are used to create alloys by melting and reforming items together."
 				""
 				"Now you won't need to grind up metals into dusts and mix them for alloy dusts! Plus, many of the more complex alloys you couldn't make that way are now possible."
 			]
@@ -718,7 +718,7 @@
 				{
 					count: 2L
 					id: "76CB286FDDD00D40"
-					item: "steamdynamo:steam_dynamo"
+					item: "systeams:steam_dynamo"
 					type: "item"
 				}
 			]
@@ -858,7 +858,7 @@
 				item: "hostilenetworks:sim_chamber"
 				type: "item"
 			}]
-			title: "Simulating Mobs"
+			title: "&9Simulating Mobs"
 			x: 6.5d
 			y: -5.5d
 		}
@@ -888,13 +888,29 @@
 			]
 			icon: "gtceu:steam_grinder"
 			id: "41C2E49E70D76330"
-			rewards: [{
-				count: 7
-				id: "6B113D9EF57E5CDE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			size: 2.0d
+			rewards: [
+				{
+					count: 7
+					id: "6B113D9EF57E5CDE"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "42A15BBED3DD9B74"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:silk_touch"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 1.75d
 			tasks: [
 				{
 					id: "7DD0FE0A1E868294"
@@ -978,7 +994,11 @@
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
-			description: ["Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."]
+			description: [
+				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
+				""
+				"&5You can automate grains via molecular reassembly, as current methods are nonfunctional."
+			]
 			icon: "enderio:grains_of_infinity"
 			id: "1CA6D620309F2B9E"
 			rewards: [{
@@ -1759,7 +1779,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any GregTech machine, chest, or drum to expand its functionality. These are seperate on each side of the machine, meaning you can have up to six different covers! To work with covers, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine. This quest accepts a &aScrewdriver&r and &aCrowbar&r made from any material."
+				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are seperate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine. This quest accepts a &aScrewdriver&r and &aCrowbar&r made from any material."
 				""
 				"Here's a list of some covers there are in the game, and what they do:"
 				""
@@ -1782,75 +1802,21 @@
 				""
 				"Covers that move items or fluids can have a &aFilter&r placed inside them. These modify the functionality of covers in ways explained in their own quests."
 			]
-			icon: {
-				Count: 1b
-				id: "gtceu:wrought_iron_crowbar"
-				tag: {
-					Damage: 0
-					GT.Behaviours: { }
-					GT.Tool: {
-						AttackDamage: 4.0f
-						AttackSpeed: -2.6000001f
-						Damage: 0
-						HarvestLevel: 2
-						MaxDamage: 384
-						ToolSpeed: 6.0f
-					}
-				}
-			}
+			icon: "gtceu:lv_electric_pump"
 			id: "1A427A8CB43C8B59"
 			size: 1.5d
-			tasks: [
-				{
-					id: "7E69A18642BC819F"
-					item: {
-						Count: 1b
-						id: "gtceu:wrought_iron_screwdriver"
-						tag: {
-							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1D9F1F42A80B4792"
-					item: {
-						Count: 1b
-						id: "gtceu:wrought_iron_crowbar"
-						tag: {
-							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "&2Machine Covers"
+			tasks: [{
+				id: "550495EAC8E9629D"
+				type: "checkmark"
+			}]
+			title: "&9Machine Covers"
 			x: 15.0d
 			y: 9.375d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: [
-				"&9Or you can just use the dedicated button in the machine's GUI."
-				""
-				"&9Whatever floats your boat."
-			]
-			icon: {
-				Count: 1b
-				id: "gtceu:wrought_iron_screwdriver"
-				tag: {
-					Damage: 0
-					GT.Tool: {
-						Damage: 0
-					}
-				}
-			}
+			description: ["&9Pressing the second tab in any given machine's GUI will open up a view showing the machine and any blocks it is touching&r. From there, you can click on a side of the machine and easily add, edit and remove &acovers&r, and configure if the machine should &3automatically output&r it's output and which side it should output to. "]
+			icon: "minecraft:hopper"
 			id: "431BB650AC492C84"
 			size: 1.5d
 			tasks: [{
@@ -1858,7 +1824,7 @@
 				title: "Screwdrive Output Sides!"
 				type: "checkmark"
 			}]
-			title: "&9Screwdrive Output Sides!"
+			title: "&9 Machine Auto-Output"
 			x: 12.75d
 			y: 9.375d
 		}
@@ -1963,7 +1929,7 @@
 					type: "item"
 				}
 				{
-					count: 10L
+					count: 9L
 					id: "30B3B90B99DE0109"
 					item: "gtceu:ulv_machine_casing"
 					type: "item"
@@ -2045,9 +2011,9 @@
 		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
-				"The &bPhytogenic Insolator&r is a way to &9passively produce wood in the earlygame&r. While somewhat slow, it only requires &a20 rf/t&r to operate, meaning you can just set it down and not have to worry about it, and then come back to wood when you need some for crafting or steel production."
+				"The &bPhytogenic Insolator&r is a way to &9passively produce wood in the earlygame&r. While somewhat slow, it only requires &a10 rf/t&r to operate, meaning you can just set it down and not have to worry about it, and then come back to wood when you need some for crafting or steel production."
 				""
-				"Using &bHardened Integral Components&r in it will cause it to work 1.5x faster, while only requiring an extra &a10 rf/t&r to operate, and using &6Bonemeal&r or otherwise will boost how much wood you get per cycle."
+				"Using &bHardened Integral Components&r in it will cause it to work 1.5x faster, while only requiring an extra &a5 rf/t&r to operate, and using &6Bonemeal&r or otherwise will boost how much wood you get per cycle."
 				""
 				"By the way, &bThermal&r Machines are capable of Automatic I/O, try placing a 2x2 drawer beside your &bPhytogenic Insolator&r and configuring it to both push to and pull from the side with the drawer."
 			]
@@ -2107,7 +2073,7 @@
 		}
 		{
 			dependencies: ["545CCC24D9401794"]
-			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."]
+			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
 			icon: "steamadditions:steam_foundry"
 			id: "5D60CAE3A33000C3"
 			rewards: [{
@@ -2115,6 +2081,7 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
+			size: 1.25d
 			tasks: [
 				{
 					id: "31167A476BC0B4F1"

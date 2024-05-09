@@ -6,6 +6,13 @@
 const cake_reset_time = 60; // in seconds
 
 /**
+ * Capitalizes the first char of the string
+ * @param {string} word
+ * @returns
+ */
+const capitalize = (word) => (word[0].toUpperCase() + word.substring(1));
+
+/**
  * helper for compressing/decompress crafting
  * @param {Internal.RecipesEventJS_} ev
  * @param {OutputItem_} output output
@@ -33,6 +40,8 @@ const comapcting = (ev, output, input, make_uncompacting) => {
 const JSONObject = Java.loadClass('com.google.gson.JsonObject')
 //Required to use fluid tags in gregtech recipes
 const FluidIngredientJS = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS')
+//Required for the rock breaker
+const RockBreakerCondition = Java.loadClass("com.gregtechceu.gtceu.common.recipe.RockBreakerCondition")
 
 // Tier enums for easier data handling
 const TIER_ULV = 0; // ulv

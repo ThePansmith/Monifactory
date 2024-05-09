@@ -1,5 +1,13 @@
 ServerEvents.recipes(event => {
-
+    function fabricator(prediction, circuit, output) {
+        event.recipes.gtceu.loot_superfabricator(`kubejs:${prediction}_${circuit}`)
+            .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + prediction + '"}}').weakNBT())
+            .circuit(circuit)
+            .itemOutputs(output)
+            .duration(3 * 20) // same for all recipes
+            .EUt(64) // same for all recipes
+    }
+    if (isNormalMode) {
     ////// Machine Recipe //////
 
     event.recipes.gtceu.assembly_line('loot_superfabricator')
@@ -11,14 +19,7 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
         
     ////// Fabricator Recipes //////
-    function fabricator(prediction, circuit, output) {
-        event.recipes.gtceu.loot_superfabricator(`kubejs:${prediction}_${circuit}`)
-            .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + prediction + '"}}').weakNBT())
-            .circuit(circuit)
-            .itemOutputs(output)
-            .duration(3 * 20) // same for all recipes
-            .EUt(64) // same for all recipes
-    }
+
 
     fabricator('blaze', 1, '10x minecraft:blaze_rod')
     fabricator('blaze', 2, '32x gtceu:sulfur_dust')
@@ -53,12 +54,12 @@ ServerEvents.recipes(event => {
     fabricator('spider', 1, '32x minecraft:string')
     fabricator('spider', 2, '16x minecraft:spider_eye')
     fabricator('spider', 3, '12x minecraft:copper_ingot')
-    fabricator('thermal/thermal_elemental_matter', 1, '16x gtceu:saltpeter_dust')
-    fabricator('thermal/thermal_elemental_matter', 2, '16x gtceu:obsidian_dust')
-    fabricator('thermal/thermal_elemental_matter', 3, '64x minecraft:snowball')
-    fabricator('thermal/thermal_elemental_matter', 4, '8x thermal:blitz_rod')
-    fabricator('thermal/thermal_elemental_matter', 5, '8x thermal:basalz_rod')
-    fabricator('thermal/thermal_elemental_matter', 6, '8x thermal:blizz_rod')
+    fabricator('thermal/thermal_elemental', 1, '16x gtceu:saltpeter_dust')
+    fabricator('thermal/thermal_elemental', 2, '16x gtceu:obsidian_dust')
+    fabricator('thermal/thermal_elemental', 3, '64x minecraft:snowball')
+    fabricator('thermal/thermal_elemental', 4, '8x thermal:blitz_rod')
+    fabricator('thermal/thermal_elemental', 5, '8x thermal:basalz_rod')
+    fabricator('thermal/thermal_elemental', 6, '8x thermal:blizz_rod')
     fabricator('witch', 1, '16x minecraft:redstone')
     fabricator('witch', 2, '16x minecraft:glowstone_dust')
     fabricator('witch', 3, '16x minecraft:sugar')
@@ -71,4 +72,5 @@ ServerEvents.recipes(event => {
     fabricator('zombie', 3, '32x minecraft:carrot')
     fabricator('zombie', 4, '32x minecraft:potato')
     fabricator('zombie', 5, '6x minecraft:zombie_head')
+}
 })

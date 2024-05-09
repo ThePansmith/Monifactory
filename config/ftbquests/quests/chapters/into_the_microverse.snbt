@@ -5,29 +5,16 @@
 	group: ""
 	icon: "kubejs:microminer_t1"
 	id: "68F29871402A6B1B"
-	order_index: 5
-	quest_links: [ ]
+	order_index: 7
+	quest_links: [{
+		id: "3494A1A9317B9F3B"
+		linked_quest: "5F688F22A3DB2ADD"
+		x: -11.0d
+		y: -4.0d
+	}]
 	quests: [
 		{
-			dependencies: ["3F39E9B829DAE2F2"]
-			description: ["The &3Resonator&r produces special items like &6Perfect Coal&r, used in the creation of &6Black Steel&r."]
-			id: "3AD22A73E517DD01"
-			rewards: [{
-				id: "7547817DD805CD76"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "52E1726424C11C9A"
-				item: "gtceu:mv_resonator"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["3AD22A73E517DD01"]
+			dependencies: ["5F688F22A3DB2ADD"]
 			description: ["&6Black Steel&r will be used to make various items from &bExtended Crafting&r. It will also be the basis of other Steel types later on."]
 			id: "74FEF82CA2FB3D02"
 			rewards: [{

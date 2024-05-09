@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    if (isNormalMode) {
     //remove dml iems
     event.remove({ output: ['hostilenetworks:blank_data_model', 'hostilenetworks:deep_learner', 'hostilenetworks:loot_fabricator', 'hostilenetworks:sim_chamber'] })
 
@@ -153,7 +154,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:pulsating_mesh')
         .duration(200)
         .EUt(16)
-
+    }
 })
 
 ItemEvents.rightClicked(event => {
@@ -173,6 +174,7 @@ ItemEvents.rightClicked(event => {
 
 // Crafting recipes for the models
 ServerEvents.recipes(event => {
+    if (isNormalMode) {
     var dataModelData = [
         ['blaze', 'minecraft:blaze_powder', 'nether', true],
         ['creeper', 'minecraft:gunpowder', 'overworld', true],
@@ -207,5 +209,5 @@ ServerEvents.recipes(event => {
             recipeIngredients
         )
     })
-
+    }
 })
