@@ -4,4 +4,7 @@ ServerEvents.blockLootTables(event => {
 LootJS.modifiers((event) => {
     event.addBlockLootModifier(/ae2:.*quartz_bud/)
         .replaceLoot("ae2:certus_quartz_dust", "gtceu:certus_quartz_dust")
+    event.addLootTableModifier("minecraft:chests/simple_dungeon")
+        .randomChance(0.02)
+        .addLoot("tempad:tempad");
 })
