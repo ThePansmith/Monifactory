@@ -1,0 +1,41 @@
+topInformation:
+  # If true, the outputs of the current recipe will be displayed.
+  # Default: true
+  displayRecipeOutputs: true
+
+  # If true, only the name of item and fluid will be displayed.
+  # Default: false
+  conciseMode: false
+
+  # Each line can have a maximum of several items, which only take effect when displayItemName is false.
+  # Default: 8
+  itemsPerLine: 8
+
+  # If true, the maintenance information of the current machine will be displayed.
+  # Default: true
+  displayMaintenanceInfo: true
+
+  # If true, the exhaust vent information of the current machine will be displayed.
+  # Default: true
+  displayExhaustVentInfo: true
+
+  # If true, the auto output information of the current machine will be displayed.
+  # Default: true
+  displayAutoOutputInfo: true
+
+  # If true, the voltage and amperage of the current cable will be displayed.
+  # Default: true
+  displayCableInfo: true
+
+oreVeinDisplay:
+  # If true, the ore vein display will be displayed using an NH-style dimension.
+  # Default: true
+  useNHDimensionDisplay: true
+
+  # If true, the dimension display will show dimension tier.
+  # Default: false
+  showDimensionTier: false
+
+  # To add custom display dimensions.
+  dimensions:
+

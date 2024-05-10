@@ -1,7 +1,5 @@
 
-["Configs for WaterCondenser"]
-	#The fluid to generate. If not valid, will revert to minecraft:water. Existing worlds will retroactively change their fluid type on change (but keep the same amount).
-	"Output fluid" = "minecraft:water"
+["Configs for WaterCollector"]
 	#Tank capacity in mB
 	"Condenser capacity" = 1000
 	#The length of a fill cycle, in ticks

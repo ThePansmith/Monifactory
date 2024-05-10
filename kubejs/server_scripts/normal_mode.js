@@ -131,9 +131,9 @@ ServerEvents.recipes(event => {
         }
         )
 
-        event.remove({ id: "watercondenser:watercondenser" })
+        event.remove({ id: "watercollector:watercollector" })
         event.shaped(
-            "watercondenser:watercondenser", [
+            "watercollector:watercollector", [
             "AAA",
             "B B",
             "AAA"

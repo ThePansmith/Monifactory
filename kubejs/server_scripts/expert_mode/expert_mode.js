@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     }
 
 
-        event.remove({ id: "watercondenser:watercondenser" })
+        event.remove({ id: "watercollector:watercollector" })
         event.remove({ id: /hostilenetworks/ })
 
         const xpjuice = [
