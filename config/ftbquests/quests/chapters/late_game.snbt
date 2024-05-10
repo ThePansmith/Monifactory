@@ -1488,7 +1488,6 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "Holy crap it's that thing from the boxart"
 			tasks: [{
 				count: 16L
 				id: "52F9691851DE4023"
