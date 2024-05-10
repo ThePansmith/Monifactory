@@ -11,7 +11,7 @@ JEIEvents.hideItems(event => {
 
         if (isExpertMode) {
 event.hide(/hostilenetworks/)
-event.hide("watercondenser:watercondenser")
+event.hide("watercollector:watercollector")
 }
 
 })

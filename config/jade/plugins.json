@@ -10,7 +10,6 @@
     "furnace": true,
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
-    "animal_owner.fetch_names": true,
     "harvest_tool.effective_tool": true,
     "item_storage": true,
     "item_storage.normal_amount": 9,
@@ -63,10 +62,6 @@
     "hud.status": true,
     "hud.contents": true
   },
-  "endercrop": {
-    "endercrop": true,
-    "endstone": true
-  },
   "gtceu": {
     "recipe_logic_provider": true,
     "workable_provider": true,
@@ -87,6 +82,13 @@
   },
   "telepastries": {
     "bites": true
+  },
+  "monazite": {
+    "maintenance_info": true,
+    "auto_output_info": true,
+    "recipe_output_info": true,
+    "exhaust_vent_info": true,
+    "cable_info": true
   },
   "ae2": {
     "part_icon": true,
@@ -119,6 +121,9 @@
   },
   "jadeaddons": {
     "equipment_requirement": ""
+  },
+  "hammerlib": {
+    "root": true
   },
   "shetiphiancore": {
     "hud.rgb16": true,

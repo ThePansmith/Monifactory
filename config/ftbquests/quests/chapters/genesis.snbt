@@ -1094,22 +1094,15 @@
 				"&2GTCEu has a Primitive Water Pump, which can do it faster. However, it requires Treated Wood, which requires Creosote from a Coke Oven."
 			]
 			id: "0FF18D13CD42F48A"
-			rewards: [
-				{
-					id: "5B48A2DC5BF8979D"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "122522C479F28E1F"
-					item: "ulvcovm:ulv_electric_pump"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5B48A2DC5BF8979D"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "2ECEDA36F2ADFDE8"
-				item: "watercondenser:watercondenser"
+				item: "watercollector:watercollector"
 				type: "item"
 			}]
 			title: "&9Infinite Water"

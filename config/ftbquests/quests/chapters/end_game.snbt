@@ -3200,7 +3200,7 @@
 			subtitle: "Not just for tanks anymore!"
 			tasks: [{
 				id: "567872742E26A724"
-				item: "gtceu:creative_tank_fabricator"
+				item: "gtceu:subatomic_digital_assembler"
 				type: "item"
 			}]
 			title: "&9Matter Replicator"

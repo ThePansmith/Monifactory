@@ -501,7 +501,7 @@ ServerEvents.recipes(event => {
             'BBB'
         ], {
             B: "enderio:fused_quartz",
-            C: "watercondenser:watercondenser"
+            C: "watercollector:watercollector"
         }
     ).id('kubejs:device_water_gen');
 

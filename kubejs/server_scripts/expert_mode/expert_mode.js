@@ -33,7 +33,6 @@ ServerEvents.recipes(event => {
     }
 
 
-        event.remove({ id: "watercondenser:watercondenser" })
         event.remove({ id: /hostilenetworks/ })
 
         const xpjuice = [
@@ -55,9 +54,9 @@ ServerEvents.recipes(event => {
     
         event.replaceInput({ output: 'buildinggadgets2:gadget_exchanging' }, 'minecraft:redstone', 'gtceu:iv_emitter')
 
-        event.remove({ id: "watercondenser:watercondenser" })
+        event.remove({ id: "watercollector:watercollector" })
         event.shaped(
-            "watercondenser:watercondenser", [
+            "watercollector:watercollector", [
                 "AAA",
                 "B B",
                 "AAA"
