@@ -10,7 +10,6 @@
     "furnace": true,
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
-    "animal_owner.fetch_names": true,
     "harvest_tool.effective_tool": true,
     "item_storage": true,
     "item_storage.normal_amount": 9,
@@ -62,10 +61,6 @@
     "hud": true,
     "hud.status": true,
     "hud.contents": true
-  },
-  "endercrop": {
-    "endercrop": true,
-    "endstone": true
   },
   "gtceu": {
     "recipe_logic_provider": true,
@@ -119,6 +114,9 @@
   },
   "jadeaddons": {
     "equipment_requirement": ""
+  },
+  "hammerlib": {
+    "root": true
   },
   "shetiphiancore": {
     "hud.rgb16": true,
