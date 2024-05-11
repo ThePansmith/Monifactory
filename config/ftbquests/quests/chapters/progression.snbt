@@ -1790,6 +1790,7 @@
 			dependencies: [
 				"591A1B8B279DFCC9"
 				"3650EF39B5AB4A7D"
+				"1A30472430354F1E"
 			]
 			description: [
 				"Your first &6Tier Two Circuits&r will require three &6Tier One Circuits&r plus two &6Diodes&r."
@@ -2800,6 +2801,33 @@
 			title: "The First Tier Nine Circuit"
 			x: 4.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["23A57C125DC0F948"]
+			description: ["[MISSING DESCRIPTION]"]
+			id: "6DF2C1E88BE7CE5F"
+			shape: "hexagon"
+			tasks: [{
+				id: "6E9EDE045B0C0B3E"
+				item: "gtceu:omnium_ingot"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6DF2C1E88BE7CE5F"]
+			description: ["[MISSING DESCRIPTION]"]
+			id: "59C70B40D865995D"
+			shape: "hexagon"
+			tasks: [{
+				id: "08BB95F9BF15FF55"
+				item: "kubejs:omnic_matrix_coil_block"
+				type: "item"
+			}]
+			title: "Omnic Matrix Coils"
+			x: 18.5d
+			y: 3.5d
 		}
 	]
 	title: "Progression"

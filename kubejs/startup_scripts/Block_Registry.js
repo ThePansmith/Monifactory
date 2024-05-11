@@ -142,7 +142,7 @@ StartupEvents.registry("block", event => {
         .material('metal')
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/omnium/casing')})
 
-    event.create('omnium_coil_block', 'gtceu:coil')
+    event.create('omnic_matrix_coil_block', 'gtceu:coil')
         .temperature(12500)
         .level(24)
         .energyDiscount(16)

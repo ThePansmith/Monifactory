@@ -83,6 +83,9 @@
   "telepastries": {
     "bites": true
   },
+  "lootr": {
+    "info": true
+  },
   "monazite": {
     "maintenance_info": true,
     "auto_output_info": true,
