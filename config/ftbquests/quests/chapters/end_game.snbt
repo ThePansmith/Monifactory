@@ -2296,7 +2296,7 @@
 				""
 				"The data model you place in the input bus will &2have a fixed 30% chance of producing Pristine matter regardless of its tier. &eOverclocking does not alter the chances of pristines&r: those come at fixed rates per iteration."
 				""
-				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second &9Heart of a Universe&r."
+				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your first batch of &9Matter Processor Mainframes&r."
 			]
 			icon: "gtceu:simulation_supercomputer"
 			id: "5A70898C99B828E3"
@@ -3070,7 +3070,7 @@
 				""
 				"One of these structures can perform the equivalent work of hundreds of individual Loot Fabricators more efficiently. This will make it far easier to generate said &6Dragon Lair Data&r from all that pristine matter you now have. "
 				""
-				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your third &9Heart of a Universe&r."
+				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second batch of &9Matter Processor Mainframes&r."
 			]
 			icon: "gtceu:loot_superfabricator"
 			id: "161F61C28DBC5941"
@@ -3165,23 +3165,21 @@
 			y: -10.75d
 		}
 		{
-			dependencies: [
-				"281DE48E7260BC8E"
-				"2D9A95AC50CCB988"
-			]
-			description: ["Now, you could make this before you get tank, it's perfectly do-able, but there's nothing that really needs it."]
+			dependencies: ["4155AEBF760C42E8"]
+			description: ["[MISSING DESCRIPTION]"]
 			id: "7C4E04E3EA603000"
 			tasks: [{
 				id: "528FBBDEA6B0FB36"
-				item: "kubejs:omnium_coil_block"
+				item: "kubejs:omnic_matrix_coil_block"
 				type: "item"
 			}]
-			title: "&9Omnium Coil"
-			x: 32.5d
+			title: "&9Omnic Matrix Coil"
+			x: 35.5d
 			y: -6.75d
 		}
 		{
 			dependencies: ["7C4E04E3EA603000"]
+			description: ["This highly advanced alloy will require you to extensively process Ancient Debris and combine the results with a few other items in an Omnic Forge."]
 			id: "113E9543ADB1666B"
 			tasks: [{
 				id: "25D96E6575B38623"
@@ -3194,16 +3192,16 @@
 		}
 		{
 			dependencies: ["2D9A95AC50CCB988"]
-			description: [""]
+			description: ["The &bSubatomic Digital Assembler &fcan be used to produce some creative items from the required data and computational power, the first of which is the &dCreative Quantum Tank."]
 			id: "4261BDA34D716EC8"
 			size: 1.0d
-			subtitle: "Not just for tanks anymore!"
+			subtitle: "The Pinnacle of Energy-To-Mass Conversion"
 			tasks: [{
 				id: "567872742E26A724"
 				item: "gtceu:subatomic_digital_assembler"
 				type: "item"
 			}]
-			title: "&9Matter Replicator"
+			title: "Subatomic Digital Assembler"
 			x: 35.5d
 			y: -9.25d
 		}
@@ -3458,6 +3456,27 @@
 			}]
 			x: 40.5d
 			y: -13.5d
+		}
+		{
+			dependencies: [
+				"281DE48E7260BC8E"
+				"2D9A95AC50CCB988"
+			]
+			description: [
+				"&fThe Omnic Forge will allow you to produce post-tank coils and casings. It is also part of the Netherite processing line."
+				"Note that Omnic Matrix Machine Casings are twice as expensive when crafted using the Assembler, so make sure to use your first Omnic Forge to build any extra ones."
+				""
+				"Now, you could make this before you get tank, it's perfectly do-able, but there's nothing that really needs it."
+			]
+			id: "4155AEBF760C42E8"
+			subtitle: "Wow, that's a lot of omnium!"
+			tasks: [{
+				id: "1EBD17D9B6A27E1C"
+				item: "gtceu:omnic_forge"
+				type: "item"
+			}]
+			x: 32.5d
+			y: -6.75d
 		}
 	]
 	subtitle: [

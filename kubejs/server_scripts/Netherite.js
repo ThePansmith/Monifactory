@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
     event.remove({ input: "minecraft:netherite_scrap" })
 
     event.recipes.gtceu.large_material_press('inert_nether_compound_ingot')
-        .itemInputs('gtceu:hot_europium_ingot', '32x hostilenetworks:nether_prediction', '4x gtceu:dark_soularium_dust', '4x kubejs:primal_mana')
+        .itemInputs('gtceu:hot_europium_ingot', '16x armorplus:wither_bone', '4x gtceu:dark_soularium_dust', '4x kubejs:primal_mana')
         .itemOutputs('kubejs:inert_nether_compound_ingot')
         .duration(600)
         .EUt(16380)

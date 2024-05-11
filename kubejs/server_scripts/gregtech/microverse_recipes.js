@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
         .EUt(7500)
 
     event.recipes.gtceu.advanced_microverse('kubejs:t_six_first')
-        .itemInputs('kubejs:microminer_t3', '16x kubejs:quantum_flux', '32x kubejs:stabilized_uranium', '16x kubejs:wither_realm_data')
+        .itemInputs('kubejs:microminer_t6', '16x kubejs:quantum_flux', '32x kubejs:stabilized_uranium', '16x kubejs:wither_realm_data')
         .itemOutputs('64x gtceu:uraninite_ore', '64x gtceu:uraninite_ore', '64x gtceu:uraninite_ore', '64x gtceu:uraninite_ore', '64x gtceu:osmiridiumyes_ore', '64x gtceu:osmiridiumyes_ore', '64x gtceu:osmiridiumyes_ore', '64x gtceu:iridosmineyes_ore', '64x gtceu:iridosmineyes_ore')
         .duration(1250)
         .EUt(18750)
@@ -108,6 +108,13 @@ ServerEvents.recipes(event => {
         .itemOutputs('32x minecraft:dragon_egg')
         .duration(1250)
         .EUt(18750)
+
+    //Post-Tank
+    event.recipes.gtceu.advanced_microverse('kubejs:t_three_third')
+        .itemInputs('kubejs:microminer_t3', '16x kubejs:quantum_flux', '32x kubejs:wither_realm_data')
+        .itemOutputs('16x minecraft:ancient_debris', '64x kubejs:dense_nether_quartz_ore')
+        .duration(600)
+        .EUt(7500)
 })
 
 
