@@ -739,14 +739,14 @@ ServerEvents.recipes(event => {
     //Extended Pattern Provider
     event.remove({ id: 'expatternprovider:epp' })
     event.recipes.gtceu.assembler("kubejs:epp/ex_pattern_provider")
-        .itemInputs("4x ae2:pattern_provider", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
+        .itemInputs("2x ae2:pattern_provider", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
         .itemOutputs("expatternprovider:ex_pattern_provider")
         .duration(180)
         .EUt(128)
 
 	event.remove({ id: 'expatternprovider:epp_upgrade' })
 	event.recipes.gtceu.assembler("kubejs:epp/ex_pattern_provider_upgrade")
-		.itemInputs("3x ae2:pattern_provider", "4x ae2:capacity_card", "4x gtceu:steel_plate")
+		.itemInputs("ae2:pattern_provider", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
 		.itemOutputs("expatternprovider:pattern_provider_upgrade")
 		.duration(180)
 		.EUt(128)
@@ -754,14 +754,14 @@ ServerEvents.recipes(event => {
     // Extended Interface
     event.remove({ id: 'expatternprovider:ei' })
     event.recipes.gtceu.assembler("kubejs:epp/ex_interface")
-        .itemInputs("4x ae2:interface", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
+        .itemInputs("2x ae2:interface", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
         .itemOutputs("expatternprovider:ex_interface")
         .duration(180)
         .EUt(128)
 
     event.remove({ id: 'expatternprovider:ei_upgrade' })
     event.recipes.gtceu.assembler("kubejs:epp/ex_interface_upgrade")
-        .itemInputs("3x ae2:interface", "4x ae2:capacity_card", "4x gtceu:steel_plate")
+        .itemInputs("ae2:interface", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
         .itemOutputs("expatternprovider:interface_upgrade")
         .duration(180)
         .EUt(128)
@@ -779,19 +779,23 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: 'expatternprovider:water_cell' }, 'minecraft:diamond', 'gtceu:diamond_plate')
     event.replaceInput({ id: 'expatternprovider:cobblestone_cell' }, 'minecraft:diamond', 'gtceu:diamond_plate')
 
+    //Misc stuff
+    event.replaceInput({ id: 'expatternprovider:ingredient_buffer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
+    event.replaceInput({ id: 'expatternprovider:crystal_fixer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
+
     event.remove({ id: 'expatternprovider:ex_drive' })
     event.recipes.gtceu.assembler("kubejs:epp/ex_drive")
         .itemInputs("2x ae2:drive", "4x gtceu:fluix_plate", "ae2:capacity_card")
         .itemOutputs("expatternprovider:ex_drive")
         .duration(240)
-        .EUt(1024)
+        .EUt(128)
 
     event.remove({ id: 'expatternprovider:ex_drive_upgrade' })
     event.recipes.gtceu.assembler('kubejs:epp/ex_drive_upgrade')
         .itemInputs("1x ae2:drive", "4x gtceu:fluix_plate", "ae2:capacity_card")
         .itemOutputs('expatternprovider:drive_upgrade')
         .duration(240)
-        .EUt(1024)
+        .EUt(128)
 
     // qbridge card
     event.remove({ id: 'ae2wtlib:quantum_bridge_card' })
