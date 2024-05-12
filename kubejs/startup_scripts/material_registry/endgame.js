@@ -56,6 +56,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("netherite"))
         .color(0x4C484C)
         .iconSet('dull')
+        .cableProperties(2147483647, 64, 0, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
 
     event.create('omnic_acid')

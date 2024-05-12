@@ -997,7 +997,7 @@
 			description: [
 				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
 				""
-				"&5You can automate grains via molecular reassembly, as current methods are nonfunctional."
+				"&5You can automate grains via molecular reassembly, as current automation methods are nonfunctional."
 			]
 			icon: "enderio:grains_of_infinity"
 			id: "1CA6D620309F2B9E"

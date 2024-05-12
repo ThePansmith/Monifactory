@@ -38,6 +38,12 @@
 			x: 48.25d
 			y: -20.0d
 		}
+		{
+			id: "5A699096AFBB95A8"
+			linked_quest: "4DF92773C82F4AAC"
+			x: 35.5d
+			y: -16.75d
+		}
 	]
 	quests: [
 		{
@@ -2216,7 +2222,6 @@
 			dependencies: [
 				"5601A05D8361551D"
 				"68734C70E2D19616"
-				"7C9C91EC9F3930C2"
 			]
 			description: [
 				"You win."
@@ -3111,7 +3116,7 @@
 			]
 			title: "&9Loot Superfabricator"
 			x: 40.25d
-			y: -8.25d
+			y: -9.25d
 		}
 		{
 			dependencies: ["6C01042124B219B0"]
@@ -3216,7 +3221,7 @@
 		{
 			dependencies: [
 				"1BABC1CF44534AE0"
-				"0DE1BF1648CAF6D6"
+				"1E36AFB19932C805"
 			]
 			id: "1B32B86C8AF41947"
 			tasks: [{
@@ -3272,7 +3277,10 @@
 			y: -7.75d
 		}
 		{
-			dependencies: ["4EA1E0D437528747"]
+			dependencies: [
+				"4EA1E0D437528747"
+				"4DF92773C82F4AAC"
+			]
 			id: "1BABC1CF44534AE0"
 			tasks: [{
 				id: "401F688126A8FD9C"
@@ -3357,17 +3365,6 @@
 			y: -24.25d
 		}
 		{
-			description: ["The final step of monium chain will be a MM."]
-			id: "5EE558EA203778BE"
-			tasks: [{
-				id: "03383EBA1F1FE861"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 40.5d
-			y: -24.25d
-		}
-		{
 			dependencies: ["060A5766B021FC77"]
 			description: ["yet another placeholder for a unknown number of chains, mechanics, etc"]
 			id: "68734C70E2D19616"
@@ -3380,26 +3377,17 @@
 			y: -18.0d
 		}
 		{
-			dependencies: ["77FFBCDD22BA1029"]
+			dependencies: ["113E9543ADB1666B"]
+			description: ["This is the largest Extended Crafting Table, capable of handling 11x11 recipes."]
 			id: "7C9C91EC9F3930C2"
 			tasks: [{
 				id: "4FFE066433ADCDE4"
 				item: "extendedcrafting:epic_table"
 				type: "item"
 			}]
-			x: 45.5d
-			y: -20.0d
-		}
-		{
-			dependencies: ["060A5766B021FC77"]
-			id: "77FFBCDD22BA1029"
-			tasks: [{
-				id: "033DAC9ACFD86427"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 45.5d
-			y: -22.5d
+			title: "&9Epic Crafting Table"
+			x: 40.25d
+			y: -8.25d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3483,7 +3471,7 @@
 				type: "item"
 			}]
 			x: 38.25d
-			y: -20.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["4261BDA34D716EC8"]
@@ -3495,6 +3483,39 @@
 			}]
 			x: 35.5d
 			y: -15.25d
+		}
+		{
+			dependencies: ["0DE1BF1648CAF6D6"]
+			id: "1E36AFB19932C805"
+			tasks: [
+				{
+					id: "0A893375306C18AD"
+					item: "kubejs:complex_smd_transistor"
+					type: "item"
+				}
+				{
+					id: "751C08F6C9B75F3E"
+					item: "kubejs:complex_smd_resistor"
+					type: "item"
+				}
+				{
+					id: "3C86A2BFB0FFFD3A"
+					item: "kubejs:complex_smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "1B0708CAB7087D70"
+					item: "kubejs:complex_smd_diode"
+					type: "item"
+				}
+				{
+					id: "4121FD8773A441E4"
+					item: "kubejs:complex_smd_inductor"
+					type: "item"
+				}
+			]
+			x: 38.25d
+			y: -20.0d
 		}
 	]
 	subtitle: [
