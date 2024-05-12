@@ -629,6 +629,19 @@
 			dependencies: ["23A867EC14368388"]
 			description: ["&2Rhodium Plated Lumium-Palladium is a mixture of Rhodium, Lumium and Palladium. It forms the basis of LuV Machine Hulls."]
 			id: "2B336FD89B15F98E"
+			rewards: [{
+				id: "12C3AFEE397AB67E"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:rhodiumplated"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "0A1E55B5F54F0B7B"
@@ -1502,11 +1515,26 @@
 			dependencies: ["15FAEE3F625265F4"]
 			description: ["&2Naquadah Alloy is different in CEu. It requires Naquadah, Osmiridium and Trinium."]
 			id: "1B07DB4D58D43B7C"
-			rewards: [{
-				id: "0A307605C7249051"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0A307605C7249051"
+					item: "kubejs:moni_quarter"
+					type: "item"
+				}
+				{
+					id: "5DDE0D9210D6C69A"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "monifactory:naquadahalloy"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "643EAAB3956473B9"
@@ -2155,12 +2183,27 @@
 				"After getting &6Chaotic Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
 			]
 			id: "22E50A6923EBF5CB"
-			rewards: [{
-				count: 5
-				id: "5A61462892D564CB"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "5A61462892D564CB"
+					item: "kubejs:moni_quarter"
+					type: "item"
+				}
+				{
+					id: "6F66A7A256F1CDF0"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "monifactory:neutronium"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
