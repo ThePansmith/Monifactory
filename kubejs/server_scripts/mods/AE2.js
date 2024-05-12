@@ -743,6 +743,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:ex_pattern_provider")
         .duration(180)
         .EUt(128)
+        .circuit(4)
 
 	event.remove({ id: 'expatternprovider:epp_upgrade' })
 	event.recipes.gtceu.assembler("kubejs:epp/ex_pattern_provider_upgrade")
@@ -750,6 +751,7 @@ ServerEvents.recipes(event => {
 		.itemOutputs("expatternprovider:pattern_provider_upgrade")
 		.duration(180)
 		.EUt(128)
+        .circuit(3)
 
     // Extended Interface
     event.remove({ id: 'expatternprovider:ei' })
@@ -758,6 +760,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:ex_interface")
         .duration(180)
         .EUt(128)
+        .circuit(4)
 
     event.remove({ id: 'expatternprovider:ei_upgrade' })
     event.recipes.gtceu.assembler("kubejs:epp/ex_interface_upgrade")
@@ -765,6 +768,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:interface_upgrade")
         .duration(180)
         .EUt(128)
+        .circuit(3)
 
     event.remove({ id: 'expatternprovider:ex_molecular_assembler' })
     event.recipes.gtceu.assembler("kubejs:epp/ex_molecular_assembler")
