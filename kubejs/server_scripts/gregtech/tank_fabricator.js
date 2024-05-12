@@ -24,4 +24,11 @@ ServerEvents.recipes(event => {
         .CWUt(64)
         .duration(500)
         .EUt(100000)
+
+        event.recipes.gtceu.subatomic_digital_assembly('kubejs:corrupted_data')
+        .itemInputs('kubejs:universe_creation_data')
+        .itemOutputs('kubejs:corrupted_universe_data')
+        .CWUt(64)
+        .duration(200)
+        .EUt(16000)
 })

@@ -295,6 +295,18 @@ StartupEvents.registry('item', event => {
             .textureJson({ layer0: `gtceu:item/computer_monitor_cover` })
             .color(0, color)
     }
+
+    // Alien scrap
+    event.create('corrupted_universe_data')
+    event.create('alien_scrap')
+    event.create('alien_scrap_supercap')
+    event.create('alien_scrap_sensor')
+    event.create('alien_scrap_emitter')
+    event.create('crushed_supercap')
+    event.create('magnetic_supercap_dust')
+    event.create('crushed_alien_sensor')
+    event.create('holmium_compound')
+    event.create('kubejs:holmium_oxide_glass_dust')
 })
 
 ItemEvents.modification(event => {

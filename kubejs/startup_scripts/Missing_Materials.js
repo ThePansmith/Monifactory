@@ -9,6 +9,7 @@ const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 
     GTMaterials.Einsteinium.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.Einsteinium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())

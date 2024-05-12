@@ -12,31 +12,31 @@
 			id: "54018A95BECC356C"
 			linked_quest: "5A8D2BFAF02E6325"
 			x: 46.5d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			id: "2A5A7CD2C9EDD767"
 			linked_quest: "7979D07FBDC6D170"
 			x: 44.75d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			id: "6FD00239A5CD9D2F"
 			linked_quest: "3D7924B550A1BBA0"
 			x: 48.25d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			id: "3F1F20A84F3FDE97"
 			linked_quest: "0C9A9F33EEA3AB5E"
 			x: 48.25d
-			y: -21.5d
+			y: -22.5d
 		}
 		{
 			id: "2C514C36E06DC5FA"
 			linked_quest: "5601A05D8361551D"
 			x: 48.25d
-			y: -19.0d
+			y: -20.0d
 		}
 	]
 	quests: [
@@ -2090,13 +2090,10 @@
 				type: "item"
 			}]
 			x: 32.5d
-			y: -15.25d
+			y: -13.5d
 		}
 		{
-			dependencies: [
-				"45B17E923E03264B"
-				"5A256CEC02CC747D"
-			]
+			dependencies: ["45B17E923E03264B"]
 			description: [
 				"Reinforcing &6Heart of a Universe&r with &6Chaotic Cores&r, many &6Piles of Neutrons&r, and a bunch of &6Eternal Catalysts&r produces an &cInfinity Catalyst&r."
 				""
@@ -2110,7 +2107,7 @@
 				item: "kubejs:infinity_catalyst"
 				type: "item"
 			}]
-			x: 38.25d
+			x: 32.5d
 			y: -15.25d
 		}
 		{
@@ -2130,7 +2127,7 @@
 			y: -11.75d
 		}
 		{
-			dependencies: ["6F9041F256F517A3"]
+			dependencies: ["4261BDA34D716EC8"]
 			description: [
 				"The &9Creative Tank&r is a major milestone. Great work!"
 				""
@@ -2180,8 +2177,8 @@
 				item: "gtceu:infinity_ingot"
 				type: "item"
 			}]
-			x: 38.25d
-			y: -17.0d
+			x: 32.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["27EBB5AAF8A40F3D"]
@@ -2237,7 +2234,7 @@
 			}]
 			title: "&9&lCreative Chest&r"
 			x: 48.25d
-			y: -17.0d
+			y: -18.0d
 		}
 		{
 			dependencies: [
@@ -2258,7 +2255,7 @@
 			}]
 			title: "Creative RF Source"
 			x: 27.75d
-			y: -21.75d
+			y: -22.75d
 		}
 		{
 			dependencies: ["3171F83E24C8F740"]
@@ -2338,7 +2335,7 @@
 				}
 			]
 			title: "&2Simulation Supercomputer"
-			x: 40.5d
+			x: 40.25d
 			y: -10.25d
 		}
 		{
@@ -2356,7 +2353,7 @@
 			}]
 			title: "The Final Solar Panel"
 			x: 27.75d
-			y: -17.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -2372,7 +2369,7 @@
 				type: "item"
 			}]
 			title: "&9Creative Storage Upgrade"
-			x: 40.5d
+			x: 40.25d
 			y: -6.75d
 		}
 		{
@@ -2387,7 +2384,7 @@
 			}]
 			title: "&2Creative Power, Gregtech Edition"
 			x: 27.75d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -3047,7 +3044,7 @@
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
-			x: 40.5d
+			x: 30.25d
 			y: -15.25d
 		}
 		{
@@ -3113,7 +3110,7 @@
 				}
 			]
 			title: "&9Loot Superfabricator"
-			x: 40.5d
+			x: 40.25d
 			y: -8.25d
 		}
 		{
@@ -3191,7 +3188,7 @@
 			y: -6.75d
 		}
 		{
-			dependencies: ["2D9A95AC50CCB988"]
+			dependencies: ["6F9041F256F517A3"]
 			description: ["The &bSubatomic Digital Assembler &fcan be used to produce some creative items from the required data and computational power, the first of which is the &dCreative Quantum Tank."]
 			id: "4261BDA34D716EC8"
 			size: 1.0d
@@ -3207,41 +3204,28 @@
 		}
 		{
 			dependencies: ["456D0255B6ECFA51"]
-			description: [
-				"Placeholder for any number of chains or mechanics or whatnot "
-				""
-				"Likely new MM missions"
-			]
-			id: "5A256CEC02CC747D"
-			tasks: [{
-				id: "41381A01B531235B"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -13.5d
-		}
-		{
-			dependencies: ["456D0255B6ECFA51"]
 			id: "3F2FC421B1CC2D0A"
 			tasks: [{
 				id: "69C0420732DEC277"
 				item: "gtceu:uev_machine_hull"
 				type: "item"
 			}]
-			x: 40.5d
+			x: 40.25d
 			y: -11.75d
 		}
 		{
-			dependencies: ["1BABC1CF44534AE0"]
+			dependencies: [
+				"1BABC1CF44534AE0"
+				"0DE1BF1648CAF6D6"
+			]
 			id: "1B32B86C8AF41947"
 			tasks: [{
 				id: "5510ABA29D84165F"
 				item: "kubejs:dimensional_processor"
 				type: "item"
 			}]
-			x: 36.75d
-			y: -19.0d
+			x: 35.5d
+			y: -20.0d
 		}
 		{
 			dependencies: ["1B32B86C8AF41947"]
@@ -3251,8 +3235,8 @@
 				item: "kubejs:dimensional_processor_assembly"
 				type: "item"
 			}]
-			x: 34.75d
-			y: -19.0d
+			x: 34.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["768A28309AF076F0"]
@@ -3263,7 +3247,7 @@
 				type: "item"
 			}]
 			x: 32.5d
-			y: -19.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["5D0252A2E07BB99D"]
@@ -3274,7 +3258,7 @@
 				type: "item"
 			}]
 			x: 32.5d
-			y: -21.75d
+			y: -22.75d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -3295,8 +3279,8 @@
 				item: "kubejs:dimensional_processing_unit"
 				type: "item"
 			}]
-			x: 38.25d
-			y: -19.0d
+			x: 35.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3307,18 +3291,18 @@
 				type: "item"
 			}]
 			x: 34.75d
-			y: -21.75d
+			y: -22.75d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
+			dependencies: ["456D0255B6ECFA51"]
 			id: "63CC578C3558E0AF"
 			tasks: [{
 				id: "1E6F38616AA5D63C"
 				item: "gtceu:advanced_microverse_projector_iii"
 				type: "item"
 			}]
-			x: 32.5d
-			y: -23.25d
+			x: 40.25d
+			y: -13.5d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3330,7 +3314,7 @@
 				type: "item"
 			}]
 			x: 30.25d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3348,7 +3332,7 @@
 				type: "item"
 			}]
 			x: 34.75d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3359,23 +3343,7 @@
 				type: "item"
 			}]
 			x: 34.75d
-			y: -20.5d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
-			description: [
-				"infinity coils? who knows"
-				""
-				"just part of the process to get monium"
-			]
-			id: "4EEE5A7A199CFDC1"
-			tasks: [{
-				id: "7EFCB8E19449DA2A"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 40.5d
-			y: -17.0d
+			y: -21.5d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
@@ -3386,10 +3354,9 @@
 				type: "item"
 			}]
 			x: 43.25d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
-			dependencies: ["4EEE5A7A199CFDC1"]
 			description: ["The final step of monium chain will be a MM."]
 			id: "5EE558EA203778BE"
 			tasks: [{
@@ -3398,7 +3365,7 @@
 				type: "item"
 			}]
 			x: 40.5d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
@@ -3410,7 +3377,7 @@
 				type: "item"
 			}]
 			x: 43.25d
-			y: -17.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["77FFBCDD22BA1029"]
@@ -3421,7 +3388,7 @@
 				type: "item"
 			}]
 			x: 45.5d
-			y: -19.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
@@ -3432,7 +3399,7 @@
 				type: "item"
 			}]
 			x: 45.5d
-			y: -21.5d
+			y: -22.5d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3443,7 +3410,7 @@
 				type: "item"
 			}]
 			x: 30.25d
-			y: -20.25d
+			y: -21.25d
 		}
 		{
 			dependencies: ["456D0255B6ECFA51"]
@@ -3454,7 +3421,7 @@
 				item: "gtceu:draconic_reactor"
 				type: "item"
 			}]
-			x: 40.5d
+			x: 36.75d
 			y: -13.5d
 		}
 		{
@@ -3477,6 +3444,57 @@
 			}]
 			x: 32.5d
 			y: -6.75d
+		}
+		{
+			dependencies: [
+				"456D0255B6ECFA51"
+				"63CC578C3558E0AF"
+			]
+			id: "33F610CF136278AE"
+			tasks: [{
+				id: "38C0D22CABA00813"
+				item: "kubejs:microminer_t11"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"1D00150456DEF379"
+				"33F610CF136278AE"
+				"61BE0215F377C510"
+			]
+			id: "0FD9B533BB402B17"
+			tasks: [{
+				id: "53F611C7F1F12321"
+				item: "kubejs:alien_scrap"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -15.25d
+		}
+		{
+			dependencies: ["0FD9B533BB402B17"]
+			id: "0DE1BF1648CAF6D6"
+			tasks: [{
+				id: "1BBD650C59C35C52"
+				item: "gtceu:holmium_ingot"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -20.0d
+		}
+		{
+			dependencies: ["4261BDA34D716EC8"]
+			id: "61BE0215F377C510"
+			tasks: [{
+				id: "3F79F8E984CF6A2A"
+				item: "kubejs:corrupted_universe_data"
+				type: "item"
+			}]
+			x: 35.5d
+			y: -15.25d
 		}
 	]
 	subtitle: [

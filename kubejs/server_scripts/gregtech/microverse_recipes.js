@@ -165,11 +165,11 @@ ServerEvents.recipes(event => {
 
 // Advanced Microverse iii
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_test')
-        .itemInputs('minecraft:bedrock')
-        .itemOutputs('minecraft:bedrock')
-        .duration(1500)
-        .EUt(31250)
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_first')
+        .itemInputs('kubejs:microminer_t11', 'kubejs:corrupted_universe_data', 'kubejs:infinity_catalyst') // could be increased 
+        .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
+        .duration(400)
+        .EUt(2000000)
 })
 
 // Microversium
@@ -203,6 +203,7 @@ ServerEvents.recipes(event => {
         ['basic_microverse_projector', '#gtceu:circuits/hv'],
         ['advanced_microverse_projector', '#gtceu:circuits/ev'],
         ['advanced_microverse_projector_ii', '#gtceu:circuits/iv'],
+        ['advanced_microverse_projector_iii', '#gtceu:circuits/uev']
     ]
 
     projector.forEach(projector => {
