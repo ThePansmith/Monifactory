@@ -660,9 +660,7 @@
 			description: [
 				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
 				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Kanthal Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Chemical Bath&r or &3Vacuum Freezer&r."
-				""
-				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Ore Dictionary Filter&r set to 'ingotHot*' with a high piority."
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r"
 			]
 			id: "3115EAF1F70A613E"
 			rewards: [{
