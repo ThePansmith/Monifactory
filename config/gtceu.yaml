@@ -282,6 +282,23 @@ client:
   # Default: 300
   animationTime: 300
 
+  armorHud:
+    # Sets HUD location
+    # 1 - left-upper corner
+    # 2 - right-upper corner
+    # 3 - left-bottom corner
+    # 4 - right-bottom corner
+    # Default: 1
+    hudLocation: 1
+
+    # Horizontal offset of HUD.
+    # Default: 0
+    hudOffsetX: 0
+
+    # Vertical offset of HUD.
+    # Default: 0
+    hudOffsetY: 0
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage

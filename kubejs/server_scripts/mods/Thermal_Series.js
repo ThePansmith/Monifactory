@@ -222,20 +222,6 @@ ServerEvents.recipes(event => {
     )
 
     event.shaped(
-        'thermal:dynamo_numismatic', [
-            ' A ',
-            'BCB',
-            'DED'
-        ], {
-            A: 'kubejs:excitationcoil',
-            B: 'gtceu:vibrant_alloy_plate',
-            C: 'ironfurnaces:diamond_furnace',
-            D: 'enderio:vibrant_gear',
-            E: 'kubejs:redstone_transmission_coil'
-        }
-    )
-
-    event.shaped(
         'thermal:dynamo_compression', [
             ' A ',
             'BCB',
@@ -515,21 +501,11 @@ ServerEvents.recipes(event => {
             'BBB'
         ], {
             B: "enderio:fused_quartz",
-            C: "watercondenser:watercondenser"
+            C: "watercollector:watercollector"
         }
     ).id('kubejs:device_water_gen');
 
     event.remove({ type: "thermal:rock_gen", not: { output: "minecraft:cobblestone" } })
-    event.shaped(
-        "thermal:device_rock_gen", [
-        'PPP',
-        'B B',
-        'PPP'
-    ], {
-        P: "gtceu:steel_plate",
-        B: "minecraft:bucket"
-    }
-    ).id('thermal:device_rock_gen')
 
     event.remove({ id: 'thermal:device_nullifier' });
     event.shaped('thermal:device_nullifier', [

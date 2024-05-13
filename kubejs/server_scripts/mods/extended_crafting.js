@@ -265,6 +265,7 @@ ServerEvents.recipes(event => {
 
     //Luminessence
     event.remove({ id: 'extendedcrafting:luminessence' })
+    event.remove({id: /phosphoric_acid_from_apatite/ })
 
     event.recipes.gtceu.chemical_reactor('phosphoric_acid_apatite')
         .itemInputs('9x gtceu:apatite_dust')

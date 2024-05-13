@@ -1,7 +1,7 @@
 //Microminers
 
 StartupEvents.registry('item', event => {
-	// The microminers
+    // The microminers
     event.create('microminer_t1').maxStackSize(16)
     event.create('microminer_t2').maxStackSize(16)
     event.create('microminer_t3').maxStackSize(16)
@@ -123,13 +123,13 @@ StartupEvents.registry('item', event => {
     //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create('compressed_octadic_capacitor').displayName("Compressed Octadic Capacitor")
     event.create('double_compressed_octadic_capacitor').displayName("Double Compressed Octadic Capacitor")
-        // Core and North are part of the Crafting Nether Star mod.
+    // Core and North are part of the Crafting Nether Star mod.
     event.create('nether_star_north').displayName("Nether Star North Tip")
     event.create('nether_star_south').displayName("Nether Star South Tip")
     event.create('nether_star_east').displayName("Nether Star East Tip")
     event.create('nether_star_west').displayName("Nether Star West Tip")
     event.create('nether_star_center').displayName("Nether Star Center")
-        // Hydrogen is part of Solidified Items section.
+    // Hydrogen is part of Solidified Items section.
     event.create('dense_hydrogen').displayName("Dense Hydrogen").rarity('Uncommon')
     event.create('ultra_dense_hydrogen').displayName("Ultra Dense Hydrogen").rarity('Rare')
 
@@ -260,8 +260,8 @@ StartupEvents.registry('item', event => {
         ['dimensional', 'processor_assembly', "UHV"],
         ['dimensional', 'processor', "UV"],
         ['monic', 'processor_computer', "UIV"],
-        ['monic', 'processor_assembly',"UEV"],
-        ['monic', 'processor',"UHV"]
+        ['monic', 'processor_assembly', "UEV"],
+        ['monic', 'processor', "UHV"]
     ]
     const mainframes = [
         ['matter', "UEV"],
@@ -275,7 +275,7 @@ StartupEvents.registry('item', event => {
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_${type}` })
             .tooltip(`${volt}-Tier Circuit`)
     }
-    
+
     for (const [theme, volt] of mainframes) {
         event.create(`${theme}_processor_mainframe`)
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processor Mainframe`)
@@ -295,8 +295,35 @@ StartupEvents.registry('item', event => {
             .textureJson({ layer0: `gtceu:item/computer_monitor_cover` })
             .color(0, color)
     }
-})
 
+    // Alien scrap
+    event.create('corrupted_universe_data')
+    event.create('alien_scrap')
+    event.create('alien_scrap_supercap')
+    event.create('alien_scrap_sensor')
+    event.create('alien_scrap_emitter')
+    event.create('crushed_supercap')
+    event.create('magnetic_supercap_dust')
+    event.create('crushed_alien_sensor')
+    event.create('holmium_compound')
+    event.create('kubejs:holmium_oxide_glass_dust')
+
+
+    // Complex SMDs
+    const smds = [['transistor'],
+        ['resistor'],
+        ['capacitor'],
+        ['diode'],
+        ['inductor']]
+
+    for (const [name] of smds) {
+        event.create(`complex_smd_${name}`)
+            .displayName(`Complex SMD ${name.split('_').map(v => capitalize(v)).join(" ")}`)
+            .textureJson({ layer0: `gtceu:item/advanced_smd_${name}` })
+            .color(0, `#0080ff`)
+    }
+
+})
 ItemEvents.modification(event => {
     // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
     event.modify('kubejs:infinity_file', item => {
@@ -326,11 +353,11 @@ ItemEvents.armorTierRegistry(event => {
 })
 
 ItemEvents.toolTierRegistry(event => {
-	event.add("glitch", tier => {
-		tier.attackDamageBonus = 10;
-		tier.speed = 1.6;
-		tier.uses = 2200;
-	})
+    event.add("glitch", tier => {
+        tier.attackDamageBonus = 10;
+        tier.speed = 1.6;
+        tier.uses = 2200;
+    })
 
     event.add("dev", (tier) => {
         tier.enchantmentValue = 42

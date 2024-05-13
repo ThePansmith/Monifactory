@@ -77,9 +77,17 @@ ServerEvents.recipes(event => {
     Greenhouse('flowering_azalea', 'minecraft:flowering_azalea', 1000, ['64x minecraft:oak_log', '4x minecraft:flowering_azalea'], false)
     Greenhouse('flowering_azalea_boosted', 'minecraft:flowering_azalea', 1000, ['64x minecraft:oak_log', '64x minecraft:oak_log', '4x minecraft:flowering_azalea'], true)
 
+    // Cherry
+    Greenhouse('cherry_sapling', 'minecraft:cherry_sapling', 1000, ['64x minecraft:cherry_log', '4x minecraft:cherry_sapling'], false)
+    Greenhouse('cherry_sapling_boosted', 'minecraft:cherry_sapling', 1000, ['64x minecraft:cherry_log', '64x minecraft:cherry_log', '4x minecraft:cherry_sapling'], true)
+
     // Mangrove
     Greenhouse('mangrove_propagule', 'minecraft:mangrove_propagule', 1000, ['64x minecraft:mangrove_log', '4x minecraft:mangrove_propagule'], false)
     Greenhouse('mangrove_propagule_boosted', 'minecraft:mangrove_propagule', 1000, ['64x minecraft:mangrove_log', '64x minecraft:mangrove_log', '4x minecraft:mangrove_propagule'], true)
+    
+    // Chorus
+    Greenhouse('chorus', 'minecraft:chorus_flower', 1000, ['32x minecraft:chorus_fruit', '4x minecraft:chorus_flower'], false)
+    Greenhouse('chorus_boosted', 'minecraft:chorus_flower', 1000, ['64x minecraft:chorus_fruit', '4x minecraft:chorus_flower'], true)
 
     ////// Crops //////
 
@@ -134,6 +142,9 @@ ServerEvents.recipes(event => {
     // Brown Mushroom
     Greenhouse('brown_mushroom', 'minecraft:brown_mushroom', 1000, '12x minecraft:brown_mushroom', false)
     Greenhouse('brown_mushroom_boosted', 'minecraft:brown_mushroom', 1000, '24x minecraft:brown_mushroom', true)
+
+
+    // Flowers
 })
 
 ServerEvents.recipes(event => {
@@ -176,4 +187,19 @@ ServerEvents.recipes(event => {
         "energy_mod": 3.0,
         "water_mod": 3.0
     }).id('kubejs:thermal/insolator/rubber_sapling')
+
+    event.custom({
+        type: 'thermal:insolator',
+        "ingredient": {
+            "item": "minecraft:pink_petals",
+        },
+        "result": [
+            {
+                "item": "minecraft:pink_petals",
+                "chance": 2.0
+            }
+        ],
+        "energy_mod": 1.0,
+        "water_mod": 1.0
+    }).id('kubejs:thermal/insolator/pink_petals')
 })

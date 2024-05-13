@@ -131,6 +131,17 @@ ServerEvents.recipes(event => {
         }
         )
 
+        event.remove({ id: "watercollector:watercollector" })
+        event.shaped(
+            "watercollector:watercollector", [
+            "AAA",
+            "B B",
+            "AAA"
+        ], {
+            A: "gtceu:wrought_iron_plate",
+            B: "minecraft:water_bucket"
+        }
+        )
         event.recipes.gtceu.assembler("lv_motor")
             .itemInputs("2x gtceu:tin_single_cable", "2x gtceu:iron_rod", "gtceu:magnetic_iron_rod", "4x gtceu:fine_copper_wire")
             .itemOutputs("gtceu:lv_electric_motor")
@@ -177,4 +188,30 @@ ServerEvents.recipes(event => {
             event.remove({ output: ['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine] })
         })
     }
+
+    event.shaped(
+        'thermal:dynamo_numismatic', [
+        ' A ',
+        'BCB',
+        'DED'
+    ], {
+        A: 'kubejs:excitationcoil',
+        B: 'gtceu:vibrant_alloy_plate',
+        C: 'ironfurnaces:diamond_furnace',
+        D: 'enderio:vibrant_gear',
+        E: 'kubejs:redstone_transmission_coil'
+    }
+    )
+
+    event.remove({ id: "thermal:device_rock_gen" })
+    event.shaped(
+        "thermal:device_rock_gen", [
+        'PPP',
+        'B B',
+        'PPP'
+    ], {
+        P: "gtceu:steel_plate",
+        B: "minecraft:bucket"
+    }
+    )
 })

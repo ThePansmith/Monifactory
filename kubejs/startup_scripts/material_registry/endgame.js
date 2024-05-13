@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot().fluid()
         .color(0x66ffff)
         .iconSet('shiny')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME); // yeah you can smash the plates
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME); // yeah you can smash the plates
         
     event.create("omnium")
         .ingot()
@@ -56,6 +56,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("netherite"))
         .color(0x4C484C)
         .iconSet('dull')
+        .cableProperties(2147483647, 64, 0, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
 
     event.create('omnic_acid')

@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:omnic_forge', [
             'ASESA',
@@ -26,6 +25,12 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.omnic_forge('kubejs:omnic_matrix_machine_casing_forge')
         .itemInputs('6x gtceu:omnium_plate', 'gtceu:crystal_matrix_frame', 'gtceu:zpm_field_generator', '#gtceu:circuits/uv')
         .itemOutputs('2x kubejs:omnic_matrix_machine_casing')
-        .duration(4000)
+        .duration(2000)
+        .EUt(65520)
+
+    event.recipes.gtceu.omnic_forge('kubejs:omnic_matrix_coil')
+        .itemInputs('8x gtceu:omnium_double_wire', '8x gtceu:crystal_matrix_foil')
+        .itemOutputs('2x kubejs:omnic_matrix_coil_block')
+        .duration(2000)
         .EUt(65520)
 })

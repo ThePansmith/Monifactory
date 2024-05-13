@@ -78,4 +78,58 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('gtceu:polyethylene', 4320))
         .duration(800).EUt(30)
 
+    // Kapton K Wetwares
+    event.recipes.gtceu.circuit_assembler('kubejs:circuit_assembler/wetware_hm')
+        .itemInputs(
+            '16x gcyr:kapton_k_plate',
+            'gtceu:petri_dish',
+            'gtceu:luv_electric_pump',
+            'gtceu:iv_sensor',
+            '#gtceu:circuits/iv',
+            '16x gtceu:niobium_titanium_foil'
+        )
+        .inputFluids(Fluid.of('gtceu:tin', 288))
+        .itemOutputs('16x gtceu:wetware_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(1200)
+        .EUt(30720)
+
+        //Commented out in favor of GCYM's chain
+
+        // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
+        // .inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000), Fluid.of('gtceu:chloromethane', 1000))
+        // .itemOutputs('24x gtceu:durene_dust')
+        // .outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
+        // .EUt(120)
+        // .duration(120)
+
+        // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/pyrom_hm')
+        // .inputFluids(Fluid.of('gtceu:oxygen', 6000))
+        // .itemInputs('24x gtceu:durene_dust')
+        // .outputFluids(Fluid.of('minecraft:water', 3000))
+        // .itemOutputs('9x gcyr:pyrometillic_dianhydride_dust')
+        // .EUt(480)
+        // .duration(100)
+
+        // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/aminophenol_hm')
+        // .inputFluids(Fluid.of('gtceu:nitrobenzene', 1000), Fluid.of('gtceu:hydrogen', 4000))
+        // .outputFluids(Fluid.of('gtceu:aminophenol', 1000), Fluid.of('minecraft:water', 1000))
+        // .circuit(1)
+        // .EUt(30)
+        // .duration(300)
+
+        // event.recipes.gtceu.large_chemical_reactor("kubejs:large_chemical_reactor/oxydianiline_dust")
+        // .notConsumable("gtceu:saltpeter_dust")
+        // .inputFluids(Fluid.of('gtceu:aminophenol', 1000), Fluid.of('gtceu:nitrochlorobenzene', 1000), Fluid.of('gtceu:water', 1000))
+        // .outputFluids(Fluid.of('gtceu:oxygen', 3000), Fluid.of('gtceu:hydrochloric_acid', 1000))
+        // .itemOutputs('27x gtceu:oxydianiline_dust')
+        // .duration(200)
+        // .EUt(21000)
+
+        // event.recipes.gtceu.alloy_smelter('kubejs:kaptonk')
+        // .itemInputs('3x gtceu:oxydianiline_dust', '2x gcyr:pyrometillic_dianhydride_dust')
+        // .itemOutputs('gtceu:kapton_k_ingot')
+        // .duration(30)
+        // .EUt(7680)
+
 });
