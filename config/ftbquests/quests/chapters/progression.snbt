@@ -1713,13 +1713,9 @@
 				""
 				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
 			]
+			disable_toast: true
 			icon: "gtceu:resistor"
 			id: "77670BF761084AA2"
-			rewards: [{
-				id: "19C03FD033716A50"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1750,6 +1746,9 @@
 				"77670BF761084AA2"
 				"1EF6D85C63B73016"
 				"4B43ABA024E9A0B9"
+				"5D0DC2908E159923"
+				"17312BF0197B87A8"
+				"28572A53241D91D2"
 			]
 			dependency_requirement: "one_completed"
 			description: [

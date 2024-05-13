@@ -7,20 +7,12 @@
 	icon: "gtceu:lp_steam_alloy_smelter"
 	id: "3F31AF7EC98363C6"
 	order_index: 2
-	quest_links: [
-		{
-			id: "3B67DB8C98F8C650"
-			linked_quest: "1A30472430354F1E"
-			x: 4.5d
-			y: 10.0d
-		}
-		{
-			id: "474716C83CA0A36E"
-			linked_quest: "77670BF761084AA2"
-			x: 4.5d
-			y: 8.5d
-		}
-	]
+	quest_links: [{
+		id: "3B67DB8C98F8C650"
+		linked_quest: "1A30472430354F1E"
+		x: 4.5d
+		y: 10.0d
+	}]
 	quests: [
 		{
 			dependencies: ["2A511DB40C66CF35"]
@@ -1620,6 +1612,50 @@
 			title: "Furnace v7.0"
 			x: 8.0d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7FA0E6F3B466576C"
+				"605B2CCEAC246E14"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A \"&esubstrate&f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
+				""
+				"&2CEu circuit progression means you also have to put wires on your substrates for them to be usable. In this case, use some Fine Copper Wires.&r"
+				""
+				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
+			]
+			icon: "gtceu:resistor"
+			id: "28572A53241D91D2"
+			rewards: [{
+				id: "2D0B3E1ABF3F439D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 2L
+					id: "0BA579BB42BC7E3B"
+					item: { Count: 2b, id: "gtceu:resistor" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "41ECC9231AB366D8"
+					item: { Count: 2b, id: "gtceu:vacuum_tube" }
+					type: "item"
+				}
+				{
+					id: "107F5C09752CA85F"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "&2Electronics Subcomponents"
+			x: 4.5d
+			y: 8.5d
 		}
 	]
 	subtitle: ["WIP, HM is not playable yet!"]

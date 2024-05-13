@@ -7,23 +7,14 @@
 	icon: "gtceu:vacuum_tube"
 	id: "0654B76C306712BE"
 	order_index: 1
-	quest_links: [
-		{
-			id: "648273CE9E632507"
-			linked_quest: "77670BF761084AA2"
-			shape: "hexagon"
-			x: 2.5d
-			y: 8.5d
-		}
-		{
-			id: "7FB8EA3900C4D89D"
-			linked_quest: "1A30472430354F1E"
-			shape: "gear"
-			size: 1.5d
-			x: 2.5d
-			y: 10.0d
-		}
-	]
+	quest_links: [{
+		id: "7FB8EA3900C4D89D"
+		linked_quest: "1A30472430354F1E"
+		shape: "gear"
+		size: 1.5d
+		x: 2.5d
+		y: 10.0d
+	}]
 	quests: [
 		{
 			dependencies: ["2A511DB40C66CF35"]
@@ -897,6 +888,12 @@
 			]
 			icon: "gtceu:steel_small_fluid_pipe"
 			id: "64AAF0CD958D836A"
+			rewards: [{
+				count: 2
+				id: "56EDDA9AEA7F1EBA"
+				item: "ulvcovm:ulv_electric_pump"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "150F57D9BEE7CCEE"
@@ -2163,6 +2160,50 @@
 			title: "&9Steel"
 			x: 2.5d
 			y: 11.5d
+		}
+		{
+			dependencies: [
+				"7FA0E6F3B466576C"
+				"605B2CCEAC246E14"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A \"&esubstrate&f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
+				""
+				"&2CEu circuit progression means you also have to put wires on your substrates for them to be usable. In this case, use some Fine Copper Wires.&r"
+				""
+				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
+			]
+			icon: "gtceu:resistor"
+			id: "5D0DC2908E159923"
+			rewards: [{
+				id: "0F54830706364BCE"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 2L
+					id: "04546DEDB7639D19"
+					item: { Count: 2b, id: "gtceu:resistor" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1F4E86AC91B52078"
+					item: { Count: 2b, id: "gtceu:vacuum_tube" }
+					type: "item"
+				}
+				{
+					id: "34D5052D97D1A3E6"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "&2Electronics Subcomponents"
+			x: 2.5d
+			y: 8.5d
 		}
 	]
 	title: "Genesis"
