@@ -25,9 +25,9 @@ vein.addIndicator(/* ... *//*)
 
 GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:overworld/uraninite", vein => {
-        vein.weight(20)
+        vein.weight(30)
         vein.clusterSize(30)
-        vein.density(0.25)
+        vein.density(1.0)
         vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
@@ -42,9 +42,9 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     event.add("kubejs:overworld/tetrahedrite", vein => {
-        vein.weight(30)
+        vein.weight(40)
         vein.clusterSize(30)
-        vein.density(0.25)
+        vein.density(1.0)
         vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
@@ -66,5 +66,6 @@ GTCEuServerEvents.oreVeins(event => {
 GTCEuServerEvents.oreVeins(event => {
     event.modifyAll((id, vein) => {
         vein.indicatorGenerators().clear()
+        vein.density(1.0) // The People Hath Spoken https://discord.com/channels/914926812948234260/1229854271613436066/1239032894664478730
     })
 })  
