@@ -40,9 +40,9 @@ ServerEvents.recipes(event => {
 
         // WIP: Dimensional Circuits
         event.recipes.gtceu.assembler('dimensional_processing_unit')
-        .itemInputs('4x gtceu:infinity_plate', '2x armorplus:the_ultimate_material', '2x gtceu:netherite_double_wire', 'gtceu:highly_advanced_soc', 'gtceu:flawless_monazite_gem',  'gtceu:flawless_glass_gem')
+        .itemInputs('2x gtceu:infinity_plate', '2x armorplus:the_ultimate_material', '2x gtceu:netherite_double_wire', 'gtceu:highly_advanced_soc', 'gtceu:flawless_monazite_gem',  'gtceu:flawless_glass_gem')
         .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('2x kubejs:dimensional_processing_unit')
+        .itemOutputs('16x kubejs:dimensional_processing_unit')
         .duration(100)
         .EUt(1966080)
 
