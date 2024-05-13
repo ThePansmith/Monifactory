@@ -284,16 +284,15 @@ StartupEvents.registry('item', event => {
     }
 
     const unit = [
-        ['matter', '#f5f5f5'],
-        ['dimensional', '#696969'],
-        ['monic', '#1e90ff'],
+        'matter',
+        'dimensional',
+        'monic'
     ]
 
-    for (const [theme, color] of unit) {
+    for (const theme of unit) {
         event.create(`${theme}_processing_unit`)
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processing Unit`)
-            .textureJson({ layer0: `gtceu:item/computer_monitor_cover` })
-            .color(0, color)
+            .textureJson({ layer0: `kubejs:item/circuits/${theme}_processing_unit` })
     }
 
     // Alien scrap

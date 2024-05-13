@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gtceu:item/material_sets/monium/plate",
+    "layer1": "gtceu:item/material_sets/monium/plate_double_overlay"
+  }
+}
