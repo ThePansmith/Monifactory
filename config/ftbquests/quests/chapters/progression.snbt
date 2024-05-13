@@ -1681,11 +1681,9 @@
 		{
 			dependencies: [
 				"7FA0E6F3B466576C"
-				"17312BF0197B87A8"
-				"45B743CB23CA5735"
-				"03D0FFA69E671D48"
 				"605B2CCEAC246E14"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"A \"&esubstrate&f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
 				""
@@ -1731,6 +1729,7 @@
 				"1EF6D85C63B73016"
 				"4B43ABA024E9A0B9"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"&9This is where &bEMI&9 really shines! Using it alongside &3Crafting Stations&9, you should be able to easily calculate the amount of raw resources and intermediate components you'll need to &ebatch craft &9electronic circuits quickly."
 				""
@@ -1791,6 +1790,7 @@
 			dependencies: [
 				"591A1B8B279DFCC9"
 				"3650EF39B5AB4A7D"
+				"1A30472430354F1E"
 			]
 			description: [
 				"Your first &6Tier Two Circuits&r will require three &6Tier One Circuits&r plus two &6Diodes&r."
@@ -2801,6 +2801,33 @@
 			title: "The First Tier Nine Circuit"
 			x: 4.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["23A57C125DC0F948"]
+			description: ["[MISSING DESCRIPTION]"]
+			id: "6DF2C1E88BE7CE5F"
+			shape: "hexagon"
+			tasks: [{
+				id: "6E9EDE045B0C0B3E"
+				item: "gtceu:omnium_ingot"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6DF2C1E88BE7CE5F"]
+			description: ["[MISSING DESCRIPTION]"]
+			id: "59C70B40D865995D"
+			shape: "hexagon"
+			tasks: [{
+				id: "08BB95F9BF15FF55"
+				item: "kubejs:omnic_matrix_coil_block"
+				type: "item"
+			}]
+			title: "Omnic Matrix Coils"
+			x: 18.5d
+			y: 3.5d
 		}
 	]
 	title: "Progression"

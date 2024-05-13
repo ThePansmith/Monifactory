@@ -325,71 +325,7 @@
 				}
 			]
 			title: "&9Wrenches Galore"
-			x: 0.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["2E8BFA2E719B1C47"]
-			description: [
-				"There are lots of ways to upgrade and improve your Grappling Hook, so play around with it."
-				""
-				"&9Since there is no Curios slot for the Hook, you'll have to keep it in your hotbar to use it.&r"
-			]
-			id: "5B31AB11CC640279"
-			rewards: [{
-				id: "5C2F124669C65506"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			subtitle: "A &aGrappling Hook&f is very useful in an urban environment."
-			tasks: [{
-				id: "3C1E57C56F5B5B92"
-				item: {
-					Count: 1b
-					id: "grapplemod:grapplinghook"
-					tag: {
-						Damage: 0
-						custom: {
-							angle: 20.0d
-							attract: 0b
-							attractradius: 3.0d
-							crc32: 2252267022L
-							detachonkeyrelease: 0b
-							doublehook: 0b
-							enderstaff: 0b
-							hookgravity: 1.0d
-							maxlen: 30.0d
-							motor: 0b
-							motoracceleration: 0.2d
-							motordampener: 0b
-							motormaxspeed: 4.0d
-							motorwhencrouching: 0b
-							motorwhennotcrouching: 1b
-							oneropepull: 0b
-							phaserope: 0b
-							playermovementmult: 1.0d
-							pullbackwards: 1b
-							reelin: 1b
-							repel: 0b
-							repelforce: 1.0d
-							rocket: 0b
-							rocket_active_time: 0.5d
-							rocket_force: 1.0d
-							rocket_refuel_ratio: 15.0d
-							rocket_vertical_angle: 0.0d
-							smartdoublemotor: 1b
-							smartmotor: 0b
-							sneakingangle: 10.0d
-							sneakingverticalthrowangle: 0.0d
-							sticky: 0b
-							throwspeed: 2.0d
-							verticalthrowangle: 0.0d
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -2.5d
+			x: 1.5d
 			y: 2.5d
 		}
 		{
@@ -904,19 +840,6 @@
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
-			description: ["&3Crafting Stations&f let you also pull from connected inventories when crafting, including when using EMI's &aautofill&r button."]
-			id: "7F291FE6247B57BC"
-			tasks: [{
-				id: "6E936CEF869788B9"
-				item: "craftingstation:crafting_station"
-				type: "item"
-			}]
-			title: "Batch Crafting In Style"
-			x: 1.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"The &eTool Belt&r is a item, which can store your tools, and exchange them easily! Right now, it has 2 slots, but later, once you unlock &6Steel&r, you can upgrade it with &6Belt Pouches&r, all the way to 9 slots, with an &3Anvil&r and some &aXP&r!"
 				""
@@ -1094,22 +1017,15 @@
 				"&2GTCEu has a Primitive Water Pump, which can do it faster. However, it requires Treated Wood, which requires Creosote from a Coke Oven."
 			]
 			id: "0FF18D13CD42F48A"
-			rewards: [
-				{
-					id: "5B48A2DC5BF8979D"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "122522C479F28E1F"
-					item: "ulvcovm:ulv_electric_pump"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5B48A2DC5BF8979D"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "2ECEDA36F2ADFDE8"
-				item: "watercondenser:watercondenser"
+				item: "watercollector:watercollector"
 				type: "item"
 			}]
 			title: "&9Infinite Water"

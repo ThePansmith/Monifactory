@@ -81,6 +81,5 @@
 			y: -1.5d
 		}
 	]
-	subtitle: []
 	title: "dependencies"
 }

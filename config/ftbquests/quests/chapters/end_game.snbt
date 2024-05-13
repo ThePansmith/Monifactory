@@ -12,31 +12,37 @@
 			id: "54018A95BECC356C"
 			linked_quest: "5A8D2BFAF02E6325"
 			x: 46.5d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			id: "2A5A7CD2C9EDD767"
 			linked_quest: "7979D07FBDC6D170"
 			x: 44.75d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			id: "6FD00239A5CD9D2F"
 			linked_quest: "3D7924B550A1BBA0"
 			x: 48.25d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			id: "3F1F20A84F3FDE97"
 			linked_quest: "0C9A9F33EEA3AB5E"
 			x: 48.25d
-			y: -21.5d
+			y: -22.5d
 		}
 		{
 			id: "2C514C36E06DC5FA"
 			linked_quest: "5601A05D8361551D"
 			x: 48.25d
-			y: -19.0d
+			y: -20.0d
+		}
+		{
+			id: "5A699096AFBB95A8"
+			linked_quest: "4DF92773C82F4AAC"
+			x: 35.5d
+			y: -16.75d
 		}
 	]
 	quests: [
@@ -2090,13 +2096,10 @@
 				type: "item"
 			}]
 			x: 32.5d
-			y: -15.25d
+			y: -13.5d
 		}
 		{
-			dependencies: [
-				"45B17E923E03264B"
-				"5A256CEC02CC747D"
-			]
+			dependencies: ["45B17E923E03264B"]
 			description: [
 				"Reinforcing &6Heart of a Universe&r with &6Chaotic Cores&r, many &6Piles of Neutrons&r, and a bunch of &6Eternal Catalysts&r produces an &cInfinity Catalyst&r."
 				""
@@ -2110,7 +2113,7 @@
 				item: "kubejs:infinity_catalyst"
 				type: "item"
 			}]
-			x: 38.25d
+			x: 32.5d
 			y: -15.25d
 		}
 		{
@@ -2130,7 +2133,7 @@
 			y: -11.75d
 		}
 		{
-			dependencies: ["6F9041F256F517A3"]
+			dependencies: ["4261BDA34D716EC8"]
 			description: [
 				"The &9Creative Tank&r is a major milestone. Great work!"
 				""
@@ -2180,8 +2183,8 @@
 				item: "gtceu:infinity_ingot"
 				type: "item"
 			}]
-			x: 38.25d
-			y: -17.0d
+			x: 32.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["27EBB5AAF8A40F3D"]
@@ -2219,7 +2222,6 @@
 			dependencies: [
 				"5601A05D8361551D"
 				"68734C70E2D19616"
-				"7C9C91EC9F3930C2"
 			]
 			description: [
 				"You win."
@@ -2237,7 +2239,7 @@
 			}]
 			title: "&9&lCreative Chest&r"
 			x: 48.25d
-			y: -17.0d
+			y: -18.0d
 		}
 		{
 			dependencies: [
@@ -2258,7 +2260,7 @@
 			}]
 			title: "Creative RF Source"
 			x: 27.75d
-			y: -21.75d
+			y: -22.75d
 		}
 		{
 			dependencies: ["3171F83E24C8F740"]
@@ -2296,7 +2298,7 @@
 				""
 				"The data model you place in the input bus will &2have a fixed 30% chance of producing Pristine matter regardless of its tier. &eOverclocking does not alter the chances of pristines&r: those come at fixed rates per iteration."
 				""
-				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second &9Heart of a Universe&r."
+				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your first batch of &9Matter Processor Mainframes&r."
 			]
 			icon: "gtceu:simulation_supercomputer"
 			id: "5A70898C99B828E3"
@@ -2338,7 +2340,7 @@
 				}
 			]
 			title: "&2Simulation Supercomputer"
-			x: 40.5d
+			x: 40.25d
 			y: -10.25d
 		}
 		{
@@ -2356,7 +2358,7 @@
 			}]
 			title: "The Final Solar Panel"
 			x: 27.75d
-			y: -17.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -2372,7 +2374,7 @@
 				type: "item"
 			}]
 			title: "&9Creative Storage Upgrade"
-			x: 40.5d
+			x: 40.25d
 			y: -6.75d
 		}
 		{
@@ -2387,7 +2389,7 @@
 			}]
 			title: "&2Creative Power, Gregtech Edition"
 			x: 27.75d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -3047,7 +3049,7 @@
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
-			x: 40.5d
+			x: 30.25d
 			y: -15.25d
 		}
 		{
@@ -3070,7 +3072,7 @@
 				""
 				"One of these structures can perform the equivalent work of hundreds of individual Loot Fabricators more efficiently. This will make it far easier to generate said &6Dragon Lair Data&r from all that pristine matter you now have. "
 				""
-				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your third &9Heart of a Universe&r."
+				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second batch of &9Matter Processor Mainframes&r."
 			]
 			icon: "gtceu:loot_superfabricator"
 			id: "161F61C28DBC5941"
@@ -3113,8 +3115,8 @@
 				}
 			]
 			title: "&9Loot Superfabricator"
-			x: 40.5d
-			y: -8.25d
+			x: 40.25d
+			y: -9.25d
 		}
 		{
 			dependencies: ["6C01042124B219B0"]
@@ -3165,23 +3167,21 @@
 			y: -10.75d
 		}
 		{
-			dependencies: [
-				"281DE48E7260BC8E"
-				"2D9A95AC50CCB988"
-			]
-			description: ["Now, you could make this before you get tank, it's perfectly do-able, but there's nothing that really needs it."]
+			dependencies: ["4155AEBF760C42E8"]
+			description: ["[MISSING DESCRIPTION]"]
 			id: "7C4E04E3EA603000"
 			tasks: [{
 				id: "528FBBDEA6B0FB36"
-				item: "kubejs:omnium_coil_block"
+				item: "kubejs:omnic_matrix_coil_block"
 				type: "item"
 			}]
-			title: "&9Omnium Coil"
-			x: 32.5d
+			title: "&9Omnic Matrix Coil"
+			x: 35.5d
 			y: -6.75d
 		}
 		{
 			dependencies: ["7C4E04E3EA603000"]
+			description: ["This highly advanced alloy will require you to extensively process Ancient Debris and combine the results with a few other items in an Omnic Forge."]
 			id: "113E9543ADB1666B"
 			tasks: [{
 				id: "25D96E6575B38623"
@@ -3193,35 +3193,19 @@
 			y: -6.75d
 		}
 		{
-			dependencies: ["2D9A95AC50CCB988"]
-			description: [""]
+			dependencies: ["6F9041F256F517A3"]
+			description: ["The &bSubatomic Digital Assembler &fcan be used to produce some creative items from the required data and computational power, the first of which is the &dCreative Quantum Tank."]
 			id: "4261BDA34D716EC8"
 			size: 1.0d
-			subtitle: "Not just for tanks anymore!"
+			subtitle: "The Pinnacle of Energy-To-Mass Conversion"
 			tasks: [{
 				id: "567872742E26A724"
-				item: "gtceu:creative_tank_fabricator"
+				item: "gtceu:subatomic_digital_assembler"
 				type: "item"
 			}]
-			title: "&9Matter Replicator"
+			title: "Subatomic Digital Assembler"
 			x: 35.5d
 			y: -9.25d
-		}
-		{
-			dependencies: ["456D0255B6ECFA51"]
-			description: [
-				"Placeholder for any number of chains or mechanics or whatnot "
-				""
-				"Likely new MM missions"
-			]
-			id: "5A256CEC02CC747D"
-			tasks: [{
-				id: "41381A01B531235B"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -13.5d
 		}
 		{
 			dependencies: ["456D0255B6ECFA51"]
@@ -3231,19 +3215,22 @@
 				item: "gtceu:uev_machine_hull"
 				type: "item"
 			}]
-			x: 40.5d
+			x: 40.25d
 			y: -11.75d
 		}
 		{
-			dependencies: ["1BABC1CF44534AE0"]
+			dependencies: [
+				"1BABC1CF44534AE0"
+				"1E36AFB19932C805"
+			]
 			id: "1B32B86C8AF41947"
 			tasks: [{
 				id: "5510ABA29D84165F"
 				item: "kubejs:dimensional_processor"
 				type: "item"
 			}]
-			x: 36.75d
-			y: -19.0d
+			x: 35.5d
+			y: -20.0d
 		}
 		{
 			dependencies: ["1B32B86C8AF41947"]
@@ -3253,8 +3240,8 @@
 				item: "kubejs:dimensional_processor_assembly"
 				type: "item"
 			}]
-			x: 34.75d
-			y: -19.0d
+			x: 34.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["768A28309AF076F0"]
@@ -3265,7 +3252,7 @@
 				type: "item"
 			}]
 			x: 32.5d
-			y: -19.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["5D0252A2E07BB99D"]
@@ -3276,7 +3263,7 @@
 				type: "item"
 			}]
 			x: 32.5d
-			y: -21.75d
+			y: -22.75d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -3290,15 +3277,18 @@
 			y: -7.75d
 		}
 		{
-			dependencies: ["4EA1E0D437528747"]
+			dependencies: [
+				"4EA1E0D437528747"
+				"4DF92773C82F4AAC"
+			]
 			id: "1BABC1CF44534AE0"
 			tasks: [{
 				id: "401F688126A8FD9C"
 				item: "kubejs:dimensional_processing_unit"
 				type: "item"
 			}]
-			x: 38.25d
-			y: -19.0d
+			x: 35.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3309,18 +3299,18 @@
 				type: "item"
 			}]
 			x: 34.75d
-			y: -21.75d
+			y: -22.75d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
+			dependencies: ["456D0255B6ECFA51"]
 			id: "63CC578C3558E0AF"
 			tasks: [{
 				id: "1E6F38616AA5D63C"
 				item: "gtceu:advanced_microverse_projector_iii"
 				type: "item"
 			}]
-			x: 32.5d
-			y: -23.25d
+			x: 40.25d
+			y: -13.5d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3332,7 +3322,7 @@
 				type: "item"
 			}]
 			x: 30.25d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3350,7 +3340,7 @@
 				type: "item"
 			}]
 			x: 34.75d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3361,23 +3351,7 @@
 				type: "item"
 			}]
 			x: 34.75d
-			y: -20.5d
-		}
-		{
-			dependencies: ["4EA1E0D437528747"]
-			description: [
-				"infinity coils? who knows"
-				""
-				"just part of the process to get monium"
-			]
-			id: "4EEE5A7A199CFDC1"
-			tasks: [{
-				id: "7EFCB8E19449DA2A"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 40.5d
-			y: -17.0d
+			y: -21.5d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
@@ -3388,19 +3362,7 @@
 				type: "item"
 			}]
 			x: 43.25d
-			y: -23.25d
-		}
-		{
-			dependencies: ["4EEE5A7A199CFDC1"]
-			description: ["The final step of monium chain will be a MM."]
-			id: "5EE558EA203778BE"
-			tasks: [{
-				id: "03383EBA1F1FE861"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 40.5d
-			y: -23.25d
+			y: -24.25d
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
@@ -3412,29 +3374,20 @@
 				type: "item"
 			}]
 			x: 43.25d
-			y: -17.0d
+			y: -18.0d
 		}
 		{
-			dependencies: ["77FFBCDD22BA1029"]
+			dependencies: ["113E9543ADB1666B"]
+			description: ["This is the largest Extended Crafting Table, capable of handling 11x11 recipes."]
 			id: "7C9C91EC9F3930C2"
 			tasks: [{
 				id: "4FFE066433ADCDE4"
 				item: "extendedcrafting:epic_table"
 				type: "item"
 			}]
-			x: 45.5d
-			y: -19.0d
-		}
-		{
-			dependencies: ["060A5766B021FC77"]
-			id: "77FFBCDD22BA1029"
-			tasks: [{
-				id: "033DAC9ACFD86427"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 45.5d
-			y: -21.5d
+			title: "&9Epic Crafting Table"
+			x: 40.25d
+			y: -8.25d
 		}
 		{
 			dependencies: ["0DE33F0066D49759"]
@@ -3445,7 +3398,7 @@
 				type: "item"
 			}]
 			x: 30.25d
-			y: -20.25d
+			y: -21.25d
 		}
 		{
 			dependencies: ["456D0255B6ECFA51"]
@@ -3456,8 +3409,113 @@
 				item: "gtceu:draconic_reactor"
 				type: "item"
 			}]
-			x: 40.5d
+			x: 36.75d
 			y: -13.5d
+		}
+		{
+			dependencies: [
+				"281DE48E7260BC8E"
+				"2D9A95AC50CCB988"
+			]
+			description: [
+				"&fThe Omnic Forge will allow you to produce post-tank coils and casings. It is also part of the Netherite processing line."
+				"Note that Omnic Matrix Machine Casings are twice as expensive when crafted using the Assembler, so make sure to use your first Omnic Forge to build any extra ones."
+				""
+				"Now, you could make this before you get tank, it's perfectly do-able, but there's nothing that really needs it."
+			]
+			id: "4155AEBF760C42E8"
+			subtitle: "Wow, that's a lot of omnium!"
+			tasks: [{
+				id: "1EBD17D9B6A27E1C"
+				item: "gtceu:omnic_forge"
+				type: "item"
+			}]
+			x: 32.5d
+			y: -6.75d
+		}
+		{
+			dependencies: [
+				"456D0255B6ECFA51"
+				"63CC578C3558E0AF"
+			]
+			id: "33F610CF136278AE"
+			tasks: [{
+				id: "38C0D22CABA00813"
+				item: "kubejs:microminer_t11"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"1D00150456DEF379"
+				"33F610CF136278AE"
+				"61BE0215F377C510"
+			]
+			id: "0FD9B533BB402B17"
+			tasks: [{
+				id: "53F611C7F1F12321"
+				item: "kubejs:alien_scrap"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -15.25d
+		}
+		{
+			dependencies: ["0FD9B533BB402B17"]
+			id: "0DE1BF1648CAF6D6"
+			tasks: [{
+				id: "1BBD650C59C35C52"
+				item: "gtceu:holmium_ingot"
+				type: "item"
+			}]
+			x: 38.25d
+			y: -18.0d
+		}
+		{
+			dependencies: ["4261BDA34D716EC8"]
+			id: "61BE0215F377C510"
+			tasks: [{
+				id: "3F79F8E984CF6A2A"
+				item: "kubejs:corrupted_universe_data"
+				type: "item"
+			}]
+			x: 35.5d
+			y: -15.25d
+		}
+		{
+			dependencies: ["0DE1BF1648CAF6D6"]
+			id: "1E36AFB19932C805"
+			tasks: [
+				{
+					id: "0A893375306C18AD"
+					item: "kubejs:complex_smd_transistor"
+					type: "item"
+				}
+				{
+					id: "751C08F6C9B75F3E"
+					item: "kubejs:complex_smd_resistor"
+					type: "item"
+				}
+				{
+					id: "3C86A2BFB0FFFD3A"
+					item: "kubejs:complex_smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "1B0708CAB7087D70"
+					item: "kubejs:complex_smd_diode"
+					type: "item"
+				}
+				{
+					id: "4121FD8773A441E4"
+					item: "kubejs:complex_smd_inductor"
+					type: "item"
+				}
+			]
+			x: 38.25d
+			y: -20.0d
 		}
 	]
 	subtitle: [

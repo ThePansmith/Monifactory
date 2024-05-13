@@ -144,4 +144,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xbbddbd)
         .iconSet('elemental_reduction_fluid')
+        
+        event.create('holmium_oxide')
+        .dust()
+        .color(0xD29092)
+        .components('2x holmium', '3x oxygen')
 })

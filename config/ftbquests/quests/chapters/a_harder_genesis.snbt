@@ -1093,7 +1093,7 @@
 				""
 				"&3Smelt&f it into ingots, &ahammer&f it into &6Plates&f, and &acut&f them into &6Wires&f."
 			]
-			icon: "gtceu:red_alloy_dust"
+			icon: "gtceu:red_alloy_ingot"
 			id: "605B2CCEAC246E14"
 			rewards: [{
 				id: "7FDDB9C4D0B83642"
@@ -1104,26 +1104,8 @@
 			tasks: [
 				{
 					count: 16L
-					id: "761D450C2D7605B3"
-					item: { Count: 16b, id: "gtceu:copper_dust" }
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "0BCFED23F6902B55"
-					item: { Count: 16b, id: "gtceu:red_alloy_dust" }
-					type: "item"
-				}
-				{
-					count: 16L
 					id: "1319F4826B365E7C"
 					item: { Count: 16b, id: "gtceu:red_alloy_ingot" }
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "03B8535419C9303B"
-					item: { Count: 32b, id: "gtceu:iron_dust" }
 					type: "item"
 				}
 				{
@@ -1151,7 +1133,7 @@
 					type: "item"
 				}
 			]
-			title: "From Dust to Wires"
+			title: "From Ingots to Wires"
 			x: 2.5d
 			y: 8.5d
 		}
