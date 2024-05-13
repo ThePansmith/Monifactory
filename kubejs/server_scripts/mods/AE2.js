@@ -842,6 +842,15 @@ ServerEvents.recipes(event => {
         'ae2:certus_quartz_crystal',
         'gtceu:certus_quartz_gem'
     )
+    // Vibrant Quartz Glass
+    event.remove({output: 'ae2:quartz_vibrant_glass'})
+    event.recipes.gtceu.alloy_smelter('kubejs:vibrant_quartz_glass')
+        .itemInputs('ae2:quartz_glass', 'gtceu:vibrant_alloy_dust')
+        .itemOutputs('ae2:quartz_vibrant_glass')
+        .duration('200')
+        .EUt('128')
+
+    // Cable stuff
 
     const colors = ['black', 'blue', 'brown', 'cyan', 'gray', 'green', 'light_blue', 'light_gray', 'lime','magenta', 'orange', 'pink', 'purple', 'red', 'white', 'yellow']
 

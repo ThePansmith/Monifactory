@@ -33,4 +33,11 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x kubejs:omnic_matrix_coil_block')
         .duration(2000)
         .EUt(65520)
+        
+    event.remove({output: 'gcyr:dyson_sphere_casing'})
+    event.recipes.gtceu.omnic_forge('kubejs:dyson_casing')
+        .itemInputs('32x gcyr:bisalloy_400_plate', '12x gtceu:netherite_frame', '12x gtceu:dense_naquadah_alloy_plate', '12x gtceu:omnium_rod')
+        .itemOutputs('6x gcyr:dyson_sphere_casing')
+        .duration(4000)
+        .EUt(65520)
 })
