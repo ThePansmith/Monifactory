@@ -3460,7 +3460,7 @@
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
-			description: ["&2Advanced SMD Components&r are new to CEu and are required for &9Dimensional and Monic circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Crystal, Wetware, and Matter circuits."]
+			description: ["&9Complex SMD Components&r are required for &9Dimensional and Monic circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Crystal, Wetware, and Matter circuits."]
 			id: "1E36AFB19932C805"
 			tasks: [
 				{
