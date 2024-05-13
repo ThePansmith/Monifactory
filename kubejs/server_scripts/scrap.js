@@ -9,30 +9,30 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:stone_dust', 5000, 0)
         .chancedOutput('gtceu:concrete_dust', 5000, 0)
         .chancedOutput('gtceu:carbon_dust', 5000, 0)
-        .chancedOutput('kubejs:alien_scrap_supercap', 3300, 0)
-        .chancedOutput('kubejs:alien_scrap_sensor', 3300, 0)
-        .chancedOutput('kubejs:alien_scrap_emitter', 3300, 0)
+        .chancedOutput('kubejs:ruined_capacitor', 3300, 0)
+        .chancedOutput('kubejs:ruined_sensor', 3300, 0)
+        .chancedOutput('kubejs:ruined_emitter', 3300, 0)
         .duration(400)
         .EUt(16380)
 
 // Supercap
 // A simple "crush the thing and get the good stuff"
 event.recipes.gtceu.macerator('alien_scrap_supercap_crushing')
-.itemInputs('kubejs:alien_scrap_supercap')
-.itemOutputs('kubejs:crushed_supercap')
+.itemInputs('kubejs:ruined_capacitor')
+.itemOutputs('kubejs:crushed_capacitor')
 .chancedOutput('gtceu:enriched_naquadah_trinium_europium_duranide_dust', 3300, 0)
 .duration(100)
 .EUt(16380)
 
 event.recipes.gtceu.electromagnetic_separator('alien_scrap_supercap_electro')
-.itemInputs('kubejs:crushed_supercap')
-.itemOutputs('kubejs:magnetic_supercap_dust')
+.itemInputs('kubejs:crushed_capacitor')
+.itemOutputs('kubejs:magnetic_capacitor_dust')
 .chancedOutput('gtceu:carbon_dust', 3300, 850) // Finally, an easy way to get carbon!
 .duration(100)
 .EUt(16380)
 
 event.recipes.gtceu.centrifuge('alien_scrap_supercap_dust_centrifuge')
-.itemInputs('5x kubejs:magnetic_supercap_dust')
+.itemInputs('5x kubejs:magnetic_capacitor_dust')
 .itemOutputs('gtceu:holmium_dust')
 .chancedOutput('gtceu:iron_dust', 3300, 850)
 .duration(100)
@@ -41,7 +41,7 @@ event.recipes.gtceu.centrifuge('alien_scrap_supercap_dust_centrifuge')
 // Sensor
 // Ion exchange
 event.recipes.gtceu.macerator('alien_scrap_sensor_crushing')
-.itemInputs('kubejs:alien_scrap_sensor')
+.itemInputs('kubejs:ruined_sensor')
 .itemOutputs('kubejs:crushed_alien_sensor')
 .chancedOutput('gtceu:neutronium_dust', 3300, 850)
 .duration(600)
@@ -65,7 +65,7 @@ event.recipes.gtceu.autoclave('holmium_compound_autoclave')
 // Emitter
 // Has Glass containing holmium oxide
 event.recipes.gtceu.macerator('alien_scrap_emitter_crushing')
-.itemInputs('kubejs:alien_scrap_emitter')
+.itemInputs('kubejs:ruined_emitter')
 .itemOutputs('kubejs:holmium_oxide_glass_dust')
 .chancedOutput('gtceu:trinium_dust', 3300, 850)
 .duration(400)

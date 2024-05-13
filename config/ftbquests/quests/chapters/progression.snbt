@@ -1213,7 +1213,7 @@
 		}
 		{
 			dependencies: ["46CD6750E8963351"]
-			description: ["&2Tritanium Coils are the final coil material. At 10800K, it's capable of smelting every material."]
+			description: ["&2Tritanium Coils are next coil material. At 10800K, it's capable of smelting nearly every material."]
 			disable_toast: true
 			id: "23A57C125DC0F948"
 			shape: "hexagon"
@@ -1458,6 +1458,7 @@
 				item: "kubejs:matter_processor_computer"
 				type: "item"
 			}]
+			title: "&9The Second Tier Nine Circuit"
 			x: 5.5d
 			y: 6.5d
 		}
@@ -1469,17 +1470,22 @@
 				item: "kubejs:dimensional_processor_assembly"
 				type: "item"
 			}]
+			title: "&9The Third Tier Nine Circuit"
 			x: 7.25d
 			y: 6.5d
 		}
 		{
-			dependencies: ["4EB9D1ADC4814330"]
+			dependencies: [
+				"4EB9D1ADC4814330"
+				"6F9041F256F517A3"
+			]
 			id: "07057CDE4E021BA7"
 			tasks: [{
 				id: "6F4F2E13D73644F0"
 				item: "kubejs:matter_processor_mainframe"
 				type: "item"
 			}]
+			title: "&9The First Tier Ten Circuit"
 			x: 5.5d
 			y: 8.0d
 		}
@@ -1491,6 +1497,7 @@
 				item: "kubejs:dimensional_processor_computer"
 				type: "item"
 			}]
+			title: "&9The Second Tier Ten Circuit"
 			x: 7.25d
 			y: 8.0d
 		}
@@ -1502,6 +1509,7 @@
 				item: "kubejs:dimensional_processor_mainframe"
 				type: "item"
 			}]
+			title: "&9The First Tier Eleven Circuit"
 			x: 7.25d
 			y: 9.5d
 		}
@@ -1513,22 +1521,28 @@
 				"Definitely consider parallelizing your &3Assembly Lines&r if you haven't already. Even just having two or three lines will vastly improve your production speeds and help avoid bottlenecks as you push towards the Creative Chest."
 			]
 			id: "5601A05D8361551D"
+			subtitle: "The Final Circuit!"
 			tasks: [{
 				id: "7C6BFAE0BEAADEA4"
 				item: "kubejs:monic_processor_mainframe"
 				type: "item"
 			}]
+			title: "&9The First Tier Twelve Circuit"
 			x: 9.0d
 			y: 11.0d
 		}
 		{
-			dependencies: ["5054D3FA7E96EB83"]
+			dependencies: [
+				"5054D3FA7E96EB83"
+				"1E36AFB19932C805"
+			]
 			id: "4612D36D22AB4B34"
 			tasks: [{
 				id: "7D7522E4B5D0061A"
 				item: "kubejs:dimensional_processor"
 				type: "item"
 			}]
+			title: "&9The Fourth And Final Tier Eight Circuits"
 			x: 7.25d
 			y: 5.0d
 		}
@@ -1540,6 +1554,7 @@
 				item: "kubejs:matter_processor_assembly"
 				type: "item"
 			}]
+			title: "&9The Third Tier Eight Circuit"
 			x: 5.5d
 			y: 5.0d
 		}
@@ -1551,6 +1566,7 @@
 				item: "kubejs:matter_processor"
 				type: "item"
 			}]
+			title: "&9The Fourth And Final Tier Seven Circuits"
 			x: 5.5d
 			y: 3.5d
 		}
@@ -1588,8 +1604,8 @@
 		{
 			dependencies: [
 				"5E829641B6FE96E5"
-				"3D7924B550A1BBA0"
 				"07057CDE4E021BA7"
+				"3D7924B550A1BBA0"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Circuits along this line are UEV, and can all be substituted in recipes."]
@@ -1611,6 +1627,7 @@
 				item: "kubejs:monic_processor_computer"
 				type: "item"
 			}]
+			title: "&9The Second Tier Eleven Circuit"
 			x: 9.0d
 			y: 9.5d
 		}
@@ -1622,6 +1639,7 @@
 				item: "kubejs:monic_processor_assembly"
 				type: "item"
 			}]
+			title: "&9The Third Tier Ten Circuit"
 			x: 9.0d
 			y: 8.0d
 		}
@@ -1633,13 +1651,14 @@
 				item: "kubejs:monic_processor"
 				type: "item"
 			}]
+			title: "&9The Fourth And Final Tier Nine Circuits"
 			x: 9.0d
 			y: 6.5d
 		}
 		{
 			dependencies: [
-				"6F9041F256F517A3"
 				"45B743CB23CA5735"
+				"113E9543ADB1666B"
 			]
 			id: "0F56F4E642BC2B85"
 			tasks: [{
@@ -1647,6 +1666,7 @@
 				item: "kubejs:matter_processing_unit"
 				type: "item"
 			}]
+			title: "&9Matter Processing Unit"
 			x: 5.5d
 			y: -8.5d
 		}
@@ -1661,6 +1681,7 @@
 				item: "kubejs:dimensional_processing_unit"
 				type: "item"
 			}]
+			title: "&9Dimensional Processing Unit"
 			x: 7.25d
 			y: -8.5d
 		}
@@ -1675,6 +1696,7 @@
 				item: "kubejs:monic_processing_unit"
 				type: "item"
 			}]
+			title: "&9Monic Processing Unit"
 			x: 9.0d
 			y: -8.5d
 		}
@@ -2792,7 +2814,6 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "The final circuit!"
 			tasks: [{
 				id: "53F558D65B0FF102"
 				item: "gtceu:wetware_processor_mainframe"

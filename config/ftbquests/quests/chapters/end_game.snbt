@@ -39,10 +39,64 @@
 			y: -20.0d
 		}
 		{
-			id: "5A699096AFBB95A8"
-			linked_quest: "4DF92773C82F4AAC"
+			id: "2DE45181A83AEBEB"
+			linked_quest: "248ABB7F26EB72EE"
+			x: 38.25d
+			y: -8.75d
+		}
+		{
+			id: "64A590345841C96D"
+			linked_quest: "6F5BB99060FF03AC"
+			x: 38.25d
+			y: -9.75d
+		}
+		{
+			id: "7D48D4665ACE37FD"
+			linked_quest: "4EB9D1ADC4814330"
+			x: 38.25d
+			y: -10.75d
+		}
+		{
+			id: "253B127314F09EF5"
+			linked_quest: "0F56F4E642BC2B85"
+			x: 38.25d
+			y: -7.75d
+		}
+		{
+			id: "100FE5584DF66812"
+			linked_quest: "5054D3FA7E96EB83"
 			x: 35.5d
-			y: -16.75d
+			y: -18.0d
+		}
+		{
+			id: "2257A8F22DB09C97"
+			linked_quest: "5E829641B6FE96E5"
+			x: 32.5d
+			y: -20.0d
+		}
+		{
+			id: "6A146108A296A053"
+			linked_quest: "7704A934F89E4FD9"
+			x: 34.0d
+			y: -20.0d
+		}
+		{
+			id: "06553CB928FD765B"
+			linked_quest: "4612D36D22AB4B34"
+			x: 35.5d
+			y: -20.0d
+		}
+		{
+			id: "64CBC49787B51FD8"
+			linked_quest: "1B1D3A66B847D129"
+			x: 32.5d
+			y: -22.75d
+		}
+		{
+			id: "3B6669BBD0448982"
+			linked_quest: "07057CDE4E021BA7"
+			x: 38.25d
+			y: -11.75d
 		}
 	]
 	quests: [
@@ -2146,8 +2200,6 @@
 				"This is quite a game-changer as far as infrastructure goes. You'll find that many machines won't need to be used for their original purpose anymore. Some major base redesign is in order. Have you considered moving to space?"
 				""
 				"All that said, &ethe pack will still be challenging to complete&r. Infinite resources and power is nice, but it's not everything. There are plenty of materials you can't melt, and creative items will push your factory automation engineering skills to their limits."
-				""
-				"Onward to the final challenge: the &9Creative Chest&r!"
 			]
 			id: "2D9A95AC50CCB988"
 			size: 1.0d
@@ -2164,25 +2216,21 @@
 		{
 			dependencies: ["1D00150456DEF379"]
 			description: [
-				"This ingot is the most advanced basic material."
-				""
 				"With all the automation you hopefully set up for your first &c&cInfinity Catalyst&r, these ingots should be easy."
 				""
 				"Well, not easy. But... Reasonable."
 				""
-				"From here, you are going to be crafting a multitude of Creative-Tier items from various mods. In addition to being useful for their regular functionality, they are needed for the final goal: the &9Creative Chest&r."
-				""
-				"&bEMI&r is your friend: beyond noting a few more items, I will not be holding your hand anymore. I've taught you everything you need to know to beat the pack."
-				""
-				"You can do it!"
+				"Infinity Ingots see a couple of uses, the most notiable at the moment being their use in the creation of &9Dimensional Circuits&r."
 			]
 			id: "4EA1E0D437528747"
 			size: 1.0d
+			subtitle: "To infinity, and beyond!"
 			tasks: [{
 				id: "67517FC01121D069"
 				item: "gtceu:infinity_ingot"
 				type: "item"
 			}]
+			title: "&9Infinity Ingots"
 			x: 32.5d
 			y: -18.0d
 		}
@@ -2243,8 +2291,8 @@
 		}
 		{
 			dependencies: [
-				"0DE33F0066D49759"
 				"3B57A9816A61C1DC"
+				"1B1D3A66B847D129"
 			]
 			description: [
 				"A single-block solution to all your power needs."
@@ -2290,7 +2338,7 @@
 			y: -11.75d
 		}
 		{
-			dependencies: ["456D0255B6ECFA51"]
+			dependencies: ["07057CDE4E021BA7"]
 			description: [
 				"The &3Simulation Supercomputer&r is a multiblock structure that performs &9HNN&r simulations like the &3Simulation Chamber&r, but is capable of overclocking these simulations to incredible speeds."
 				""
@@ -2348,7 +2396,7 @@
 				"4EA1E0D437528747"
 				"22DC32C2B67EFD25"
 			]
-			description: ["Even more creative energy blocks!"]
+			description: ["An even stronger solar."]
 			id: "3B57A9816A61C1DC"
 			subtitle: "Is Neutronium not enough?!"
 			tasks: [{
@@ -3119,56 +3167,8 @@
 			y: -9.25d
 		}
 		{
-			dependencies: ["6C01042124B219B0"]
-			id: "29A0F78E8EAFCAAE"
-			tasks: [{
-				id: "799EBD080343F600"
-				item: "kubejs:matter_processor"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -8.75d
-		}
-		{
-			dependencies: [
-				"6F9041F256F517A3"
-				"5BFB37CA7C058AC8"
-			]
-			id: "456D0255B6ECFA51"
-			size: 1.0d
-			tasks: [{
-				id: "04C6C839119CE5F5"
-				item: "kubejs:matter_processor_mainframe"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -11.75d
-		}
-		{
-			dependencies: ["29A0F78E8EAFCAAE"]
-			id: "2EBF2DFA5907D7F1"
-			tasks: [{
-				id: "5D783CB7F735A748"
-				item: "kubejs:matter_processor_assembly"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -9.75d
-		}
-		{
-			dependencies: ["2EBF2DFA5907D7F1"]
-			id: "5BFB37CA7C058AC8"
-			tasks: [{
-				id: "1D4FFE8CCCFD21C5"
-				item: "kubejs:matter_processor_computer"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -10.75d
-		}
-		{
 			dependencies: ["4155AEBF760C42E8"]
-			description: ["[MISSING DESCRIPTION]"]
+			description: ["Made in the &dOmnic Forge&r, these coils can heat up to 12500K, allowing them to smelt everything."]
 			id: "7C4E04E3EA603000"
 			tasks: [{
 				id: "528FBBDEA6B0FB36"
@@ -3208,90 +3208,7 @@
 			y: -9.25d
 		}
 		{
-			dependencies: ["456D0255B6ECFA51"]
-			id: "3F2FC421B1CC2D0A"
-			tasks: [{
-				id: "69C0420732DEC277"
-				item: "gtceu:uev_machine_hull"
-				type: "item"
-			}]
-			x: 40.25d
-			y: -11.75d
-		}
-		{
-			dependencies: [
-				"1BABC1CF44534AE0"
-				"1E36AFB19932C805"
-			]
-			id: "1B32B86C8AF41947"
-			tasks: [{
-				id: "5510ABA29D84165F"
-				item: "kubejs:dimensional_processor"
-				type: "item"
-			}]
-			x: 35.5d
-			y: -20.0d
-		}
-		{
-			dependencies: ["1B32B86C8AF41947"]
-			id: "768A28309AF076F0"
-			tasks: [{
-				id: "625EE1D6ACF139BA"
-				item: "kubejs:dimensional_processor_assembly"
-				type: "item"
-			}]
-			x: 34.0d
-			y: -20.0d
-		}
-		{
-			dependencies: ["768A28309AF076F0"]
-			id: "5D0252A2E07BB99D"
-			tasks: [{
-				id: "695BE113997E870F"
-				item: "kubejs:dimensional_processor_computer"
-				type: "item"
-			}]
-			x: 32.5d
-			y: -20.0d
-		}
-		{
-			dependencies: ["5D0252A2E07BB99D"]
-			id: "0DE33F0066D49759"
-			tasks: [{
-				id: "06E276EFBE371067"
-				item: "kubejs:dimensional_processor_mainframe"
-				type: "item"
-			}]
-			x: 32.5d
-			y: -22.75d
-		}
-		{
-			dependencies: ["113E9543ADB1666B"]
-			id: "6C01042124B219B0"
-			tasks: [{
-				id: "770096E913BF92CF"
-				item: "kubejs:matter_processing_unit"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -7.75d
-		}
-		{
-			dependencies: [
-				"4EA1E0D437528747"
-				"4DF92773C82F4AAC"
-			]
-			id: "1BABC1CF44534AE0"
-			tasks: [{
-				id: "401F688126A8FD9C"
-				item: "kubejs:dimensional_processing_unit"
-				type: "item"
-			}]
-			x: 35.5d
-			y: -18.0d
-		}
-		{
-			dependencies: ["0DE33F0066D49759"]
+			dependencies: ["1B1D3A66B847D129"]
 			id: "7BF0FE766903A1D1"
 			tasks: [{
 				id: "57A8722148FBD716"
@@ -3302,30 +3219,37 @@
 			y: -22.75d
 		}
 		{
-			dependencies: ["456D0255B6ECFA51"]
+			dependencies: ["07057CDE4E021BA7"]
+			description: [
+				"The &3Advanced Microverse Projector III&r is the most powerful projector, capiable of running hundreds of missions in parallel. It can perform all microminer missions, and is capiable of a few of it's own as well. "
+				""
+				"&6Sneak-right click&r the controller to enable the in-world preview."
+			]
 			id: "63CC578C3558E0AF"
 			tasks: [{
 				id: "1E6F38616AA5D63C"
 				item: "gtceu:advanced_microverse_projector_iii"
 				type: "item"
 			}]
+			title: "&9Advanced Microverse Projector III"
 			x: 40.25d
 			y: -13.5d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
-			description: ["parraelizable"]
+			dependencies: ["1B1D3A66B847D129"]
+			description: ["The &6Advanced Assembly Line&r uses microverses to process hundreds of assembly line recipes at once. "]
 			id: "73A44214C2B44D53"
 			tasks: [{
 				id: "025BAF9655B5AB49"
 				item: "gtceu:advanced_assline"
 				type: "item"
 			}]
+			title: "&9Advanced Assembly Line"
 			x: 30.25d
 			y: -24.25d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
+			dependencies: ["1B1D3A66B847D129"]
 			description: [
 				"an unknown amount of steps go here"
 				""
@@ -3343,7 +3267,7 @@
 			y: -24.25d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
+			dependencies: ["1B1D3A66B847D129"]
 			id: "2272159BD4643610"
 			tasks: [{
 				id: "0918712974E9D143"
@@ -3390,18 +3314,20 @@
 			y: -8.25d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
+			dependencies: ["1B1D3A66B847D129"]
+			description: ["The &6Draconic Fusion Reactor&r is a even stronger version of the &9Draconic Reactor&r, capable of running hundreds of recipes at once."]
 			id: "6138FB8766AD6F8C"
 			tasks: [{
 				id: "0BE78C6BD408CFEB"
 				item: "gtceu:draconic_fusion_reactor"
 				type: "item"
 			}]
+			title: "&9Draconic Fusion Reactor"
 			x: 30.25d
 			y: -21.25d
 		}
 		{
-			dependencies: ["456D0255B6ECFA51"]
+			dependencies: ["07057CDE4E021BA7"]
 			description: ["oc not unlocked here at the moment, but once fusion is implemented this multiblock will be moved here"]
 			id: "6A9E02E66C10EA9F"
 			tasks: [{
@@ -3409,6 +3335,7 @@
 				item: "gtceu:draconic_reactor"
 				type: "item"
 			}]
+			title: "&9Draconic Reactor"
 			x: 36.75d
 			y: -13.5d
 		}
@@ -3430,13 +3357,19 @@
 				item: "gtceu:omnic_forge"
 				type: "item"
 			}]
+			title: "&9Omnic Forge"
 			x: 32.5d
 			y: -6.75d
 		}
 		{
 			dependencies: [
-				"456D0255B6ECFA51"
 				"63CC578C3558E0AF"
+				"07057CDE4E021BA7"
+			]
+			description: [
+				"Taking a look at the &6Corrupted Universe Data&r has given you a couple of ideas, but to properly take advantage of it, a new microminer is needed."
+				""
+				"This microminer requires a Epic Extended Crafting Table to fit all the things required for a foray into a corrupted universe."
 			]
 			id: "33F610CF136278AE"
 			tasks: [{
@@ -3444,6 +3377,7 @@
 				item: "kubejs:microminer_t11"
 				type: "item"
 			}]
+			title: "&9Microminer T11"
 			x: 38.25d
 			y: -13.5d
 		}
@@ -3453,39 +3387,80 @@
 				"33F610CF136278AE"
 				"61BE0215F377C510"
 			]
+			description: [
+				"Using the corrupted universe data and a tier 11 microminer, Scrap can be retrieved. Scrap can be sifted into various bits of ruined tech, which then can be recycled into holmium, each with their own miniature line."
+				""
+				"Scrap processing also can retrieve a variety of other important elements."
+			]
 			id: "0FD9B533BB402B17"
 			tasks: [{
-				id: "53F611C7F1F12321"
-				item: "kubejs:alien_scrap"
+				id: "7DCC421A0B0BC7F9"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:ruined_capacitor"
+							}
+							{
+								Count: 1b
+								id: "kubejs:ruined_sensor"
+							}
+							{
+								Count: 1b
+								id: "kubejs:ruined_emitter"
+							}
+						]
+					}
+				}
+				title: "Any ruined item"
 				type: "item"
 			}]
+			title: "&9Scrapping"
 			x: 38.25d
 			y: -15.25d
 		}
 		{
 			dependencies: ["0FD9B533BB402B17"]
+			description: [
+				"Thankfully, &9Holmium&r itself does not require any special processing, and can just be smelted."
+				""
+				"&9Holmium&r will see use in the next tier of SMDs, as well as things requiring strong magnetic fields."
+			]
 			id: "0DE1BF1648CAF6D6"
 			tasks: [{
 				id: "1BBD650C59C35C52"
 				item: "gtceu:holmium_ingot"
 				type: "item"
 			}]
+			title: "&9Holmium"
 			x: 38.25d
 			y: -18.0d
 		}
 		{
 			dependencies: ["4261BDA34D716EC8"]
+			description: [
+				"&7&oUh boss? I think putting the Universe Creation Data in the Subatomic Digital Assembler was a bad idea.&r"
+				""
+				"Attempting to replicate Universe Creation Data will instead corrupt the data, giving you this unsightly mess."
+				""
+				"Not all may be lost, though..."
+			]
 			id: "61BE0215F377C510"
 			tasks: [{
 				id: "3F79F8E984CF6A2A"
 				item: "kubejs:corrupted_universe_data"
 				type: "item"
 			}]
+			title: "&9Corrupted Universe Data"
 			x: 35.5d
 			y: -15.25d
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
+			description: ["&2Advanced SMD Components&r are new to CEu and are required for &9Dimensional and Monic circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Crystal, Wetware, and Matter circuits."]
 			id: "1E36AFB19932C805"
 			tasks: [
 				{
@@ -3514,6 +3489,7 @@
 					type: "item"
 				}
 			]
+			title: "&9Complex SMD Components"
 			x: 38.25d
 			y: -20.0d
 		}
