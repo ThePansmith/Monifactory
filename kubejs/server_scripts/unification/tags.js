@@ -77,8 +77,6 @@ ServerEvents.tags('item', event => {
 	// enderio!!!!
 	event.add('forge:heads', 'enderio:enderman_head')
 
-    // Tempad fuel
-    event.add('tempad:tempad_fuel', 'kubejs:moni_penny')
 
     unifyChisel(event);
 })
