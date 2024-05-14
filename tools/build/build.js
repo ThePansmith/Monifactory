@@ -262,7 +262,8 @@ export const BuildServerTarget = new Juke.Target({
       const fillet = file.toLowerCase();
       return (
         !fillet.includes('oculus')
-        && !fillet.includes('citresewn')
+        && !fillet.includes('zume')
+        && !fillet.includes('watermedia')
         && fillet.includes('.jar')
       )
     })
