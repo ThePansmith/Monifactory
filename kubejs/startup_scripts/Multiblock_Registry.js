@@ -552,6 +552,30 @@ event.create('loot_superfabricator', 'multiblock')
         .where('A', Predicates.air())
         .where('#', Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/draconium/casing",
+            .workableCasingRenderer("kubejs:block/draconium/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
+
+    //Extra Large Chemical Reactor
+
+    event.create('extra_large_chemical_reactor', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('large_chemical_reactor')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .appearanceBlock(() => Block.getBlock('gtceu:inert_machine_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+        .aisle("CCCCC", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "CCCCC")
+        .aisle("CCCCC", "GKPKG", "GPKPG", "GKPKG", "GPKPG", "GKPKG", "GPKPG", "GKPKG", "GPKPG", "CCCCC")
+        .aisle("CCCCC", "GPKPG", "GKPKG", "GPKPG", "GKPKG", "GPKPG", "GKPKG", "GPKPG", "GKPKG", "CCCCC")
+        .aisle("CCCCC", "GKPKG", "GPKPG", "GKPKG", "GPKPG", "GKPKG", "GPKPG", "GKPKG", "GPKPG", "CCCCC")
+        .aisle("CCSCC", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "CCCCC")
+        .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+        .where('C', Predicates.blocks('gtceu:inert_machine_casing').setMinGlobalLimited(43)
+            .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+        .where('G', Predicates.blocks('gtceu:fusion_glass'))
+        .where('P', Predicates.blocks('gtceu:ptfe_pipe_casing'))
+        .where('#', Predicates.blocks('gtceu:naquadah_alloy_frame'))
+        .where('K', Predicates.blocks('gtceu:trinium_coil_block'))
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_inert_ptfe",
+        "gtceu:block/multiblock/implosion_compressor", false)
 })
