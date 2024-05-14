@@ -2,18 +2,18 @@
 
 StartupEvents.registry('item', event => {
     // The microminers
-    event.create('microminer_t1').maxStackSize(16)
-    event.create('microminer_t2').maxStackSize(16)
-    event.create('microminer_t3').maxStackSize(16)
-    event.create('microminer_t4').maxStackSize(16)
-    event.create('microminer_t5').maxStackSize(16)
-    event.create('microminer_t6').maxStackSize(16)
-    event.create('microminer_t7').maxStackSize(16)
-    event.create('microminer_t8').maxStackSize(16)
-    event.create('microminer_t9').maxStackSize(16)
-    event.create('microminer_t10').maxStackSize(16)
-    event.create('microminer_t11').maxStackSize(16)
-    event.create('microminer_t12').maxStackSize(16)
+    event.create('microminer_t1').maxStackSize(16).texture("kubejs:item/microverse/microminer_t1")
+    event.create('microminer_t2').maxStackSize(16).texture("kubejs:item/microverse/microminer_t2")
+    event.create('microminer_t3').maxStackSize(16).texture("kubejs:item/microverse/microminer_t3")
+    event.create('microminer_t4').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4")
+    event.create('microminer_t5').maxStackSize(16).texture("kubejs:item/microverse/microminer_t5")
+    event.create('microminer_t6').maxStackSize(16).texture("kubejs:item/microverse/microminer_t6")
+    event.create('microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7")
+    event.create('microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8")
+    event.create('microminer_t9').maxStackSize(16).texture("kubejs:item/microverse/microminer_t9")
+    event.create('microminer_t10').maxStackSize(16).texture("kubejs:item/microverse/microminer_t10")
+    event.create('microminer_t11').maxStackSize(16).texture("kubejs:item/microverse/microminer_t11")
+    event.create('microminer_t12').maxStackSize(16).texture("kubejs:item/microverse/microminer_t12")
 
     // Microminer Components
     event.create('basic_mining_laser').displayName("§eBasic Mining Laser")
