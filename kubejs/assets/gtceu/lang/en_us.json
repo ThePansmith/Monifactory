@@ -61,6 +61,8 @@
   "material.gtceu.elemental_reduction_fluid": "Elemental Reduction Fluid",
   "block.gtceu.greenhouse": "Greenhouse",
   "gtceu.greenhouse": "Greenhouse",
+  "block.gtceu.extra_large_chemical_reactor": "Extra Large Chemical Reactor",
+  "gtceu.extra_large_chemical_reactor": "Extra Large Chemical Reactor",
   "block.gtceu.draconic_reactor": "Draconic Reactor",
   "block.gtceu.draconic_fusion_reactor": "Draconic Fusion Reactor",
   "gtceu.draconic_reactor": "Draconic Fusion Reaction",
@@ -87,7 +89,6 @@
   "block.gtceu.dimensional_superassembler":"Dimensional Superassembler",
   "gtceu.dimensional_superassembler.desc":"Uses dimensional warping to process hundreds of assembly line recipes at once.",
   "gtceu.subatomic_digital_assembler.desc": "§8A complex machine capable of synthetizing certain technological marvels when provided with the required data",
-
 
   "__GENERIC_MATERIALS__.header": "=====================",
   "__GENERIC_MATERIALS__.flufff": "> Generic Materials <",
