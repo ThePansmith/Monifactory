@@ -57,7 +57,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x4C484C)
         .iconSet('dull')
         .cableProperties(2147483647, 64, 0, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE)
 
     event.create('omnic_acid')
         .dust()

@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
         ['basic_microverse_projector', '#gtceu:circuits/hv'],
         ['advanced_microverse_projector', '#gtceu:circuits/ev'],
         ['advanced_microverse_projector_ii', '#gtceu:circuits/iv'],
-        ['advanced_microverse_projector_iii', '#gtceu:circuits/uev']
+        ['hyperbolic_microverse_projector', '#gtceu:circuits/uev']
     ]
 
     projector.forEach(projector => {
