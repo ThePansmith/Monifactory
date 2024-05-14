@@ -3221,30 +3221,30 @@
 		{
 			dependencies: ["07057CDE4E021BA7"]
 			description: [
-				"The &3Advanced Microverse Projector III&r is the most powerful projector, capiable of running hundreds of missions in parallel. It can perform all microminer missions, and is capiable of a few of it's own as well. "
+				"The &3Hyperbolic Microverse Projector&r is the most powerful projector, capiable of running hundreds of missions in parallel. It can perform all microminer missions, and is capiable of a few of it's own as well. "
 				""
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
 			id: "63CC578C3558E0AF"
 			tasks: [{
 				id: "1E6F38616AA5D63C"
-				item: "gtceu:advanced_microverse_projector_iii"
+				item: "gtceu:hyperbolic_microverse_projector"
 				type: "item"
 			}]
-			title: "&9Advanced Microverse Projector III"
+			title: "&9Hyperbolic Microverse Projector"
 			x: 40.25d
 			y: -13.5d
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: ["The &6Advanced Assembly Line&r uses microverses to process hundreds of assembly line recipes at once. "]
+			description: ["The &6Dimensional Superassembler&r uses dimensional warping to process hundreds of assembly line recipes at once. "]
 			id: "73A44214C2B44D53"
 			tasks: [{
 				id: "025BAF9655B5AB49"
-				item: "gtceu:advanced_assline"
+				item: "gtceu:dimensional_superassembler"
 				type: "item"
 			}]
-			title: "&9Advanced Assembly Line"
+			title: "&9Dimensional Superassembler"
 			x: 30.25d
 			y: -24.25d
 		}

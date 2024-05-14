@@ -71,8 +71,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:advanced_microverse_projector', Text.translatable('gtceu.advanced_microverse_projector.desc'))
     tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.advanced_microverse_projector_ii.desc'))
     tooltip.add('gtceu:dimensional_superassembler', Text.translatable('gtceu.dimensional_superassembler.desc'))
-    tooltip.add('gtceu:advanced_microverse_projector_iii', Text.translatable('gtceu.advanced_microverse_projector_iii.desc'))
-    tooltip.add('gtceu:advanced_microverse_projector_iii', Text.translatable('gtceu.advanced_microverse_projector_iii_2.desc'))
+    tooltip.add('gtceu:hyperbolic_microverse_projector', Text.translatable('gtceu.hyperbolic_microverse_projector.desc'))
+    tooltip.add('gtceu:hyperbolic_microverse_projector', Text.translatable('gtceu.hyperbolic_microverse_projector_2.desc'))
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.subatomic_digital_assembler.desc'))
 
     tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
@@ -88,7 +88,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add(['gtceu:advanced_microverse_projector_iii', 'gtceu:dimensional_superassembler', 'gtceu:draconic_fusion_reactor'], 'Can parallelize with Parallel Control Hatches.')
+    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:draconic_fusion_reactor'], 'Can parallelize with Parallel Control Hatches.')
 
     //Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
