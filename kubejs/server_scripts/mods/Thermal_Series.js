@@ -592,7 +592,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'thermal:drill_head',
         B: '#forge:ingots/silver',
-        C: 'minecraft:barrier', // TOOL CASING!!
+        C: 'gtceu:lv_power_unit',
         D: '#forge:ingots/tin',
         E: '#forge:gears/iron'
     }).id('kubejs:flux_drill');
