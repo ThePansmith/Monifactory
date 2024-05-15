@@ -5,8 +5,10 @@ ServerEvents.recipes(event => {
     const gtMachines = ['extractor', 'macerator', 'compressor', 'forge_hammer', 'furnace', 'alloy_smelter']
     if (isNormalMode) {
         // Moni Steel
-        event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
         event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
+        event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
+        event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
+        event.recipes.minecraft.smelting("gtceu:firebrick", "gtceu:fireclay_dust")
 
         carbonSources.forEach(carbonSource => {
             event.recipes.gtceu.alloy_smelter("steel_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic

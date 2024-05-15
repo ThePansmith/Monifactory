@@ -361,11 +361,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
-				""
 				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
+				""
+				"You may wish to wait until you have a Bending Machine at LV to reduce the cost."
 			]
 			icon: "gtceu:steam_grinder"
 			id: "0A8179C319A6868E"
@@ -426,7 +426,11 @@
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
-			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
+			description: [
+				"The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."
+				""
+				"You may wish to wait until you have a Bending Machine at LV to reduce the cost."
+			]
 			icon: "steamadditions:steam_foundry"
 			id: "1A80D0AE0B2F7A9D"
 			rewards: [{
@@ -503,6 +507,11 @@
 		}
 		{
 			dependencies: ["03A575FD497A5AC9"]
+			description: [
+				"&2For making Charcoal for smelting, and Creosote, which can be used as furnace fuel, boiler fuel, and for Treated Planks."
+				""
+				"Use up to 5 Coke Oven Hatches for automation."
+			]
 			id: "34075516DB3D9F02"
 			tasks: [{
 				id: "695BE6C5B893796B"
@@ -517,12 +526,18 @@
 				"34075516DB3D9F02"
 				"22BF3BCEBA7FABBD"
 			]
+			description: [
+				"Feeding &3Steam producers&r with water by hand is a pretty silly idea."
+				""
+				"A &2Primitive Water Pump&r will take care of that for you."
+			]
 			id: "3C00463D13E4C5D2"
 			tasks: [{
 				id: "53DA82999B801AF6"
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
+			title: "&2Infinite Water"
 			x: 6.25d
 			y: 1.75d
 		}
@@ -650,12 +665,22 @@
 		}
 		{
 			dependencies: ["4B338515E84FC51A"]
+			description: [
+				"A mixture of &6Clay, Brick, &cGypsum and Concrete&r produces &6Firebricks&r, used in building the &3Primitive Blast Furnace&r. &c"
+				""
+				"So far, your only available route for Concrete is adding Stone Dust, Quartz Sand, Clay and Calcite to a bucket of Water.&r"
+				""
+				"This allows you to make &6Steel&r from &6Wrought Iron&r (or with &6Iron&r, but its slower). Now you can make &7LV &6Machine Hulls&r!"
+				""
+				"Also allows you to make the &6Belt Pouch&r, to upgrade your &eTool Belt&r."
+			]
 			id: "03D0FFA69E671D48"
 			tasks: [{
 				id: "75E2F87C0D4B99E1"
 				item: "gtceu:primitive_blast_furnace"
 				type: "item"
 			}]
+			title: "&2Primitive Steelworks"
 			x: 4.5d
 			y: 7.0d
 		}
@@ -1077,13 +1102,13 @@
 				"4B338515E84FC51A"
 			]
 			description: [
-				"Although most &ealloys&f require an &3Alloy Smelter&f, some alloys can be made simply by mixing the correct metal dusts together. "
+				"Use your newly acquired &3Alloy Smelter&r to make some new alloys!"
 				""
-				"Copper Dust mixed with Redstone makes &6Red Alloy Dust&f."
+				"&eCopper&r alloyed with &eRedstone&r makes &6Red Alloy Ingots&r."
 				""
-				"Iron Dust mixed with Redstone makes &6Conductive Iron Dust&f."
+				"&eIron&r alloyed with &eRedstone&r makes &6Conductive Iron Ingots&r."
 				""
-				"&3Smelt&f it into ingots, &ahammer&f it into &6Plates&f, and &acut&f them into &6Wires&f."
+				"&aHammer&r them into &6Plates&r, then &acut&r them into &6Wires&r."
 			]
 			icon: "gtceu:red_alloy_ingot"
 			id: "605B2CCEAC246E14"
@@ -1161,6 +1186,11 @@
 		}
 		{
 			dependencies: ["51A495F8B5B4E947"]
+			description: [
+				"Your initial method of &9Steam&r production, to fuel your first machines. They automatically output Steam on all faces except the bottom."
+				""
+				"Once you get Steel, consider investing in HP Solar Boilers."
+			]
 			id: "34CA940B412284F2"
 			tasks: [{
 				id: "34E57B9F8FF4E1AE"
@@ -1187,12 +1217,27 @@
 				title: "Steam Boiler"
 				type: "item"
 			}]
-			title: "Steam Boilers"
+			title: "Steam Production"
 			x: 2.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
+			description: [
+				"Steam Machines can run recipes listed as up to &d32 EU/t&r. They need to have their vent side unobstructed. Use a Wrench to change the venting side."
+				""
+				"- &3Forge Hammer&r: Allows you to make &62 plates&r from &63 ingots&r."
+				""
+				"- &3Macerator&r: Allows you to grind &6Clay&r, and other ingots, into their respective &eDusts&r."
+				""
+				"- &3Compressor&r: Allows you to make &6Compressed Fireclay&r, and other materials."
+				""
+				"- &3Alloy Smelter&r: Allows you to make &6Bronze&r more efficiently, as well as other useful alloys like &6Invar&r. Also allows you to cast &6Glass&r, and make components like &eGears&r more easily, and make &6Rubber Sheets&r, with Molds."
+				""
+				"You can upgrade them to HP version with Steel, which doubles their speed."
+				""
+				"If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer."
+			]
 			id: "4B338515E84FC51A"
 			tasks: [
 				{
@@ -1317,6 +1362,13 @@
 		}
 		{
 			dependencies: ["754C416FB3F5DBDA"]
+			description: [
+				"&eGlass&r is extremely useful, and will be used for many things in the future. Currently, you need it for the &cSteam Extractor&r, and can use it for &6Solar Boilers&r."
+				""
+				"Currently, your only available method to make Glass is through &eGlass Dust&r. Combine &eQuartz Sand&r with a &eTiny Pile of Flint Dust&r in a &3Crafting Table&r. Then, alloy it with the &eBlock Mold&r you have crafted, and voila!"
+				""
+				"Later, to save you from this suffering, you can make an &6Arc Furnace&r, which makes two Glass, from one Sand."
+			]
 			id: "4B43ABA024E9A0B9"
 			tasks: [{
 				id: "528F95F1ECC76A3A"
@@ -1446,6 +1498,8 @@
 				"The &6Steam Seperator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
 				""
 				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
+				""
+				"You may wish to wait until you have a Bending Machine at LV to reduce the cost."
 			]
 			icon: "steamadditions:steam_separator"
 			id: "5F90D0FC382C0A30"

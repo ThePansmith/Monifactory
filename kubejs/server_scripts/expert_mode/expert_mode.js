@@ -3,8 +3,6 @@
 ServerEvents.recipes(event => {
     if (isExpertMode) {
     event.remove({ type: "minecraft:smelting", output: "minecraft:charcoal" }) 
-    event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
-    event.recipes.minecraft.smelting("gtceu:firebrick", "gtceu:fireclay_dust")
 
     // Table with various burn time lengths
     const pbfTimes = [
