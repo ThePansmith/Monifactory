@@ -2290,27 +2290,6 @@
 			y: -18.0d
 		}
 		{
-			dependencies: [
-				"3B57A9816A61C1DC"
-				"1B1D3A66B847D129"
-			]
-			description: [
-				"A single-block solution to all your power needs."
-				""
-				"This baby pushes out 2.14 GRF/t per side!"
-			]
-			id: "10A6C332D8BED5FD"
-			size: 1.0d
-			tasks: [{
-				id: "0DA711CB36A29601"
-				item: "draconicevolution:creative_op_capacitor"
-				type: "item"
-			}]
-			title: "Creative RF Source"
-			x: 27.75d
-			y: -22.75d
-		}
-		{
 			dependencies: ["3171F83E24C8F740"]
 			description: [
 				"These are quite expensive and two of them are required for each Tier Ten Micro Miner."
@@ -2411,9 +2390,9 @@
 		{
 			dependencies: ["113E9543ADB1666B"]
 			description: [
-				"Finally, a simple way to store all 2.1 billion blocks of dirt that have been laying around!"
+				"Reinforcing your Microminer with netherite lets it retrieve &9Creative Storage Data&r. "
 				""
-				"&5I do want to have this be a functional storage upgrade."
+				"Similar to how the Creative Tank Data, the Creative Storage Data lets you assemble the means to create infinite storage, in the form of the drawer upgrades, as well as Quantum Chests and Tanks."
 			]
 			id: "4CF399EC00A65E3A"
 			tasks: [{
@@ -2421,23 +2400,50 @@
 				item: "kubejs:creative_storage_component"
 				type: "item"
 			}]
-			title: "&9Creative Storage Upgrade"
+			title: "&9Creative Storage Data"
 			x: 40.25d
 			y: -6.75d
 		}
 		{
-			dependencies: ["10A6C332D8BED5FD"]
-			description: ["&2Configurable to output any number of GT Volts and Amps."]
+			dependencies: [
+				"1B1D3A66B847D129"
+				"3B57A9816A61C1DC"
+			]
+			description: [
+				"Allows you to assemble 3 kinds of creative energy blocks."
+				""
+				"&2The Gregtech Energy Emitter is configurable to output any number of GT Volts and Amps."
+			]
 			id: "19084E91F357C8C2"
 			size: 1.0d
 			tasks: [{
 				id: "71ED5BF32C12DA66"
-				item: "gtceu:creative_energy"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:creative_energy"
+							}
+							{
+								Count: 1b
+								id: "draconicevolution:creative_op_capacitor"
+							}
+							{
+								Count: 1b
+								id: "ae2:creative_energy_cell"
+							}
+						]
+					}
+				}
+				title: "Creative Energy"
 				type: "item"
 			}]
-			title: "&2Creative Power, Gregtech Edition"
+			title: "&9Creative Power"
 			x: 27.75d
-			y: -24.25d
+			y: -22.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -3102,7 +3108,11 @@
 		}
 		{
 			dependencies: ["2D9A95AC50CCB988"]
-			description: ["Kind of like the previous &9infinite cells&r, but you can partition this one in a cell workbench to tell what fluids it should stock."]
+			description: [
+				"Changing the circuit value on your newfound &9Subatomic Digital Assembler&r will allow you to assemble &9Creative ME Fluid Cells&r."
+				""
+				"These are kind of like the previous &9infinite cells&r, but you can partition this one in a &6cell workbench&r to tell what fluids it should stock."
+			]
 			id: "2F21C6B6F145EA81"
 			tasks: [{
 				id: "390C1F547BDF7D2B"
@@ -3203,7 +3213,7 @@
 				item: "gtceu:subatomic_digital_assembler"
 				type: "item"
 			}]
-			title: "Subatomic Digital Assembler"
+			title: "&9Subatomic Digital Assembler"
 			x: 35.5d
 			y: -9.25d
 		}

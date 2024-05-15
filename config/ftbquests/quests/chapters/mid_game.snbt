@@ -2052,7 +2052,7 @@
 				""
 				"&6Molybdenum&r is obtained from &6Molybdenum, Molybdenite, Powellite, and Wulfenite ores&r. They spawn together in the &eNether&r rarely, or some of them come from &3Tier One&r and &3Five Micro Miners&r."
 				""
-				"&2Remember, you need an appropriately tiered Mixer (HV for HSLA Steel, and EV for the others)."
+				"&2Remember, you need an appropriately tiered Mixer (HV for HSLA Steel, and IV for the others)."
 			]
 			id: "7F1EE712BD9CC811"
 			rewards: [{

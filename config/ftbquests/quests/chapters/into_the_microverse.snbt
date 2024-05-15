@@ -770,11 +770,11 @@
 		{
 			dependencies: ["7A09229ACC000B09"]
 			description: [
-				"&9Hydrogen&r and &9Nitrogen&r combine together to make &9Ammonia&r."
+				"&9Water&r and &9Chlorine&r can be combined to make &9Hypochlorous Acid&r. If you add &9Mercury&r to catalyze the reaction, the yield is much better."
 				""
-				"An easy way to get Nitrogen is to centrifuge &9Air&r, which will require you to build an &3Air Collector&r. You could also electrolyze &6Saltpeter&r, distill &9Fermented Biomass&r in a &3Distillation Tower&r, or get huge amounts from &2distlling Liquid Air in a Distillation Tower.&r."
-				"{@pagebreak}"
-				"(new page placeholder text)"
+				"&ePlease note that Hypochlorous Acid and Hydrochloric Acid are different things.&r"
+				""
+				"You're already familiar with Chlorine production from your forays into Plastics, but a great source of Mercury is &2centrifuging &6Redstone&r."
 			]
 			id: "5DA5231489336B1B"
 			rewards: [{

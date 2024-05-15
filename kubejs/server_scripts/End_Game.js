@@ -160,103 +160,7 @@ ServerEvents.recipes(event => {
 		]
 	)
 
-    // Ultimate Generator
-	event.recipes.extendedcrafting.shapeless_table(
-		'kubejs:ultimate_generator',
-		[
-			// Row 1
-            "solarflux:sp_1",
-            "solarflux:sp_2",
-            "solarflux:sp_3",
-            "solarflux:sp_4",
-            "gtceu:steam_large_turbine",
-            "solarflux:sp_5",
-            "solarflux:sp_6",
-            "solarflux:sp_7",
-            "solarflux:sp_8",
-            // Row 2
-            "solarflux:sp_de.wyvern",
-            "solarflux:sp_de.draconic",
-            "gtceu:bronze_large_boiler" ,
-            "gtceu:lv_steam_turbine" ,
-            "gtceu:mv_steam_turbine" ,
-            "gtceu:hv_steam_turbine" ,
-            "gtceu:steel_large_boiler" ,
-            "solarflux:sp_de.chaotic",
-            "solarflux:sp_custom_neutronium",
-            // Row 3
-            "thermal:upgrade_augment_3",
-            "nuclearcraft:enderium_heat_sink",
-            "kubejs:survival_generator_component", // Survival Generator
-            "kubejs:furnace_generator_component", // Furnace Generator
-            "kubejs:culinary_generator_component", // Culinary Generator
-            "kubejs:magmatic_generator_component", // Magmatic Generator
-            "kubejs:heated_redstone_generator_component", //Heated Redstone Generator
-            "nuclearcraft:enderium_heat_sink",
-            "thermal:upgrade_augment_3",
-            // Row 4
-            "gtceu:lv_combustion",
-            "gtceu:luv_fusion_reactor",
-            "kubejs:slimey_generator_component", // Slimey Generator
-            "steamdynamo:steam_dynamo",
-            "nuclearcraft:fission_reactor_controller",
-            "steamdynamo:steam_dynamo",
-            "kubejs:ender_generator_component", // Ender Generator
-            "gtceu:uv_fusion_reactor",
-            "gtceu:lv_combustion",
-            // Row 5
-            "gtceu:mv_combustion",
-            "draconicevolution:reactor_stabilizer",
-            "kubejs:disenchantment_generator_component", // Disenchantment Generator
-            "thermal:dynamo_magmatic",
-            "draconicevolution:reactor_core",
-            "thermal:dynamo_magmatic",
-            "kubejs:potion_generator_component", // Potion Generator
-            "draconicevolution:reactor_stabilizer",
-            "gtceu:mv_combustion",
-            // Row 6
-            "gtceu:hv_combustion",
-            "gtceu:zpm_fusion_reactor",
-            "kubejs:death_generator_component", // Death Generator
-            "thermal:dynamo_numismatic",
-            "draconicevolution:generator",
-            "thermal:dynamo_numismatic",
-            "kubejs:pink_generator_component", // Pink Generator
-            "gtceu:draconic_reactor",
-            "gtceu:hv_combustion",
-            // Row 7
-            "thermal:upgrade_augment_3",
-            "nuclearcraft:enderium_heat_sink",
-            "kubejs:frosty_generator_component",
-            "kubejs:halitosis_generator_component",
-            "kubejs:nether_star_generator_component",
-            "kubejs:explosive_generator_component",
-            "kubejs:overclocked_generator_component",
-            "nuclearcraft:enderium_heat_sink",
-            "thermal:upgrade_augment_3",
-            // Row 8
-            "solarflux:sp_de.wyvern",
-            "solarflux:sp_de.draconic",
-            "gtceu:titanium_large_boiler",
-            "gtceu:lv_gas_turbine",
-            "gtceu:mv_gas_turbine",
-            "gtceu:hv_gas_turbine",
-            "gtceu:tungstensteel_large_boiler",
-            "solarflux:sp_de.chaotic",
-            "solarflux:sp_custom_neutronium",
-            // Row 9
-            "solarflux:sp_1",
-            "solarflux:sp_2",
-            "solarflux:sp_3",
-            "solarflux:sp_4",
-            "gtceu:gas_large_turbine",
-            "solarflux:sp_5",
-            "solarflux:sp_6",
-            "solarflux:sp_7",
-            "solarflux:sp_8"
-		]
-	)
-
+ 
     event.recipes.extendedcrafting.shaped_table(
         'kubejs:ultimate_power_storage', [
             'ABCDEDCBA',
@@ -278,7 +182,7 @@ ServerEvents.recipes(event => {
             G: 'gtceu:zero_point_module',
             H: 'gtceu:energy_cluster',
             I: 'gtceu:max_battery'
-        }
+        }, 4
     )
 
     event.recipes.extendedcrafting.shaped_table(
@@ -298,60 +202,10 @@ ServerEvents.recipes(event => {
             F: 'gtceu:zpm_field_generator',
             P: 'nuclearcraft:plate_elite',
             Z: '#gtceu:circuits/zpm'
-        }
+        }, 4
     )
 
     //! Creative Items !//
-
-    //Creative Vending Upgrade
-    event.recipes.extendedcrafting.shaped_table(
-        'kubejs:creative_storage_component', [
-            'ABCDEDCBA',
-            'BCDEFEDCB',
-            'CDEFGFEDC',
-            'DEFGHGFED',
-            'EFGHIHGFE',
-            'DEFGHGFED',
-            'CDEFGFEDC',
-            'BCDEFEDCB',
-            'ABCDEDCBA'
-        ], {
-            A: 'functionalstorage:netherite_upgrade',
-            B: 'sophisticatedstorage:gold_to_diamond_tier_upgrade',
-            C: 'sophisticatedstorage:diamond_to_netherite_tier_upgrade',
-            D: 'gtceu:tungsten_steel_crate',
-            E: 'gtceu:luv_quantum_chest',
-            F: 'gtceu:zpm_quantum_chest',
-            G: 'gtceu:uv_quantum_chest',
-            H: 'gtceu:uhv_quantum_chest',
-            I: 'kubejs:infinity_catalyst'
-        }
-    )
-
-    //Creative Energy Cell (AE2)
-    event.recipes.extendedcrafting.shaped_table(
-        'ae2:creative_energy_cell', [
-            'ABCDEDCBA',
-            'BCDEFEDCB',
-            'CDEFGFEDC',
-            'DEFGHGFED',
-            'EFGHIHGFE',
-            'DEFGHGFED',
-            'CDEFGFEDC',
-            'BCDEFEDCB',
-            'ABCDEDCBA'
-        ], {
-            A: 'kubejs:ultimate_power_storage',
-            B: 'gtceu:hv_battery_buffer_16x',
-            C: 'gtceu:ev_battery_buffer_16x',
-            D: 'gtceu:iv_battery_buffer_16x',
-            E: 'gtceu:luv_battery_buffer_16x',
-            F: 'gtceu:zpm_battery_buffer_16x',
-            G: 'gtceu:uv_battery_buffer_16x',
-            H: 'gtceu:uhv_battery_buffer_16x',
-            I: 'kubejs:infinity_catalyst'
-        }
-    )
 
     //Creative Jetpack
     event.recipes.extendedcrafting.shaped_table(
@@ -377,7 +231,7 @@ ServerEvents.recipes(event => {
             R: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
             S: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(),
             V: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT()
-        }
+        }, 4
     )
 
     //Creative Solar Panel
@@ -398,106 +252,9 @@ ServerEvents.recipes(event => {
             P: 'gtceu:infinity_plate',
             S: 'solarflux:sp_custom_neutronium'
 
-        }
-    )
-
-    //GT CREATIVE EU SOURCE
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:creative_energy', [
-            'ABCDEDCBA',
-            'BCDEFEDCB',
-            'CDEFGFEDC',
-            'DEFGHGFED',
-            'EFGHIHGFE',
-            'DEFGHGFED',
-            'CDEFGFEDC',
-            'BCDEFEDCB',
-            'ABCDEDCBA',
-        ], {
-            A: 'gtceu:mercury_barium_calcium_cuprate_hex_wire',
-            B: 'gtceu:uranium_triplatinum_hex_wire',
-            C: 'gtceu:samarium_iron_arsenic_oxide_hex_wire',
-            D: 'gtceu:indium_tin_barium_titanium_cuprate_hex_wire',
-            E: 'gtceu:uranium_rhodium_dinaquadide_hex_wire',
-            F: 'gtceu:enriched_naquadah_trinium_europium_duranide_hex_wire',
-            G: 'gtceu:ruthenium_trinium_americium_neutronate_hex_wire',
-            H: 'gtceu:omnium_hex_wire',
-            I: 'draconicevolution:creative_op_capacitor'
-        }
-    )
-
-    // Creative Data Hatch
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:creative_data_access_hatch', [
-            "UPPCGCPPU",
-            'PPCGSGCPP',
-            'PCGSRSGCP',
-            'CGSRORSGC',
-            'GSROIORSG',
-            'CGSRORSGC',
-            'PCGSRSGCP',
-            'PPCGSGCPP',
-            "UPPCGCPPU",
-        ], {
-            U: 'gtceu:network_switch',
-            P: 'gtceu:data_bank',
-            C: 'gtceu:advanced_data_access_hatch',
-            G: 'gtceu:data_access_hatch',
-            S: 'gtceu:data_stick',
-            R: 'gtceu:data_orb',
-            O: 'gtceu:data_module',
-            I: 'kubejs:infinity_catalyst'
         }, 4
     )
 
-    // Creative Fluid Cell
-    event.recipes.extendedcrafting.shaped_table(
-        'ae2:creative_fluid_cell', [
-            "UPPCGCPPU",
-            'PPCGSGCPP',
-            'PCGSRSGCP',
-            'CGSRORSGC',
-            'GSROIORSG',
-            'CGSRORSGC',
-            'PCGSRSGCP',
-            'PPCGSGCPP',
-            "UPPCGCPPU",
-        ], {
-            U: 'ae2:fluid_cell_housing',
-            P: 'ae2:cell_component_256k',
-            C: 'ae2:cell_component_64k',
-            G: 'ae2:cell_component_16k',
-            S: 'ae2:cell_component_4k',
-            R: 'ae2:cell_component_1k',
-            O: 'gtceu:creative_tank',
-            I: 'kubejs:infinity_catalyst'
-        }, 4
-    )
-
-
-    //CREATIVE RF SOURCE
-    event.recipes.extendedcrafting.shaped_table(
-        'draconicevolution:creative_op_capacitor', [
-            "UPPCGCPPU",
-            'PPCGSGCPP',
-            'PCGSRSGCP',
-            'CGSRORSGC',
-            'GSROIORSG',
-            'CGSRORSGC',
-            'PCGSRSGCP',
-            'PPCGSGCPP',
-            "UPPCGCPPU",
-        ], {
-            U: 'kubejs:ultimate_generator',
-            P: 'draconicevolution:energy_pylon',
-            C: 'draconicevolution:energy_core',
-            G: 'draconicevolution:particle_generator',
-            S: 'draconicevolution:energy_core_stabilizer',
-            R: 'draconicevolution:reactor_stabilizer',
-            O: 'draconicevolution:reactor_core',
-            I: 'kubejs:infinity_catalyst'
-        }, 4
-    )
 
     // Creative Capacitor
     event.recipes.extendedcrafting.shaped_table(

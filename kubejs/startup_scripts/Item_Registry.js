@@ -95,7 +95,10 @@ StartupEvents.registry('item', event => {
 
     //End Game Items
     event.create('heart_of_a_universe').displayName("§dHeart Of A Universe")
-    event.create('creative_portable_tank_mold').displayName("Creative Quantum Tank Data")
+    event.create('creative_tank_data').displayName("Creative Quantum Tank Data")
+    event.create('creative_storage_data').displayName("Creative Storage Data")
+    event.create('creative_data_hatch_data').displayName("Creative Data Hatch Data")
+    event.create('creative_energy_data').displayName("Creative Energy Data")
     event.create('exotic_materials_catalyst').displayName("Exotic Materials Catalyst")
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
@@ -181,34 +184,6 @@ StartupEvents.registry('item', event => {
     event.create('glitch_infused_chestplate', 'chestplate').tier('glitch').displayName('§bGlitch Infused Chestplate')
     event.create('glitch_infused_leggings', 'leggings').tier('glitch').displayName('§bGlitch Infused Leggings')
     event.create('glitch_infused_boots', 'boots').tier('glitch').displayName('§bGlitch Infused Boots')
-
-    //Ultimate Generator Components
-    //event.create('survival_generator_component').textureJson({ layer0: 'gtceu:item/material_sets/dull/gear'}).color(0, '#70F00F')
-    const generators = [
-        ['survival', '#333333'],
-        ['furnace', '#888888'],
-        ['culinary', '#FFFFFF'],
-        ['magmatic', '#630000'],
-        ['heated_redstone', '#CF2600'],
-        ['slimey', '#7EB53C'],
-        ['ender', '#21593b'],
-        ['disenchantment', '#30183B'],
-        ['potion', '#6F348A'],
-        ['death', '#E3CF81'],
-        ['pink', '#E381A8'],
-        ['frosty', '#81B1E3'],
-        ['halitosis', '#A1688F'],
-        ['nether_star', '#000000'],
-        ['explosive', '#FF4800'],
-        ['overclocked', '#1D24A1']
-    ]
-
-    for (const [genny, gennyColor] of generators) {
-        event.create(`${genny}_generator_component`)
-            .displayName(`${genny.split('_').map(v => capitalize(v)).join(" ")} Generator Component`)
-            .textureJson({ layer0: 'gtceu:item/material_sets/dull/gear' })
-            .color(0, gennyColor);
-    }
 
     //Avaritia Replacements
     event.create('diamond_lattice')
