@@ -34,9 +34,21 @@
 
 #Settings for the Extended Crafting Tables.
 ["Table Crafting"]
+	#How many ticks the Basic Auto Table takes to craft
+	#Range: > 1
+	autoTableBasicCraftTime = 2
+	#How many ticks the Ultimate Auto Table takes to craft
+	#Range: > 1
+	autoTableUltimateCraftTime = 2
 	#How much FE the Auto Crafting Tables should hold. Higher tiers use double the previous tier.
 	#Range: > 0
 	autoTablePowerCapacity = 500000
+	#How many ticks the Elite Auto Table takes to craft
+	#Range: > 1
+	autoTableEliteCraftTime = 2
+	#How many ticks the Epic Auto Table takes to craft
+	#Range: > 1
+	autoTableEpicCraftTime = 2
 	#How much FE the Auto Crafting Tables should use when auto inserting items.
 	#Range: > 0
 	autoTableInsertPowerRate = 100
@@ -49,6 +61,9 @@
 	#How much FE the Auto Crafting Tables should use when crafting.
 	#Range: > 0
 	autoTablePowerRate = 500
+	#How many ticks the Advanced Auto Table takes to craft
+	#Range: > 1
+	autoTableAdvancedCraftTime = 2
 
 #Settings for the Quantum Compressor.
 ["Quantum Compression"]
