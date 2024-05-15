@@ -297,6 +297,15 @@ StartupEvents.registry('item', event => {
             .color(0, `#0080ff`)
     }
 
+    // Monium 
+    event.create('quantum_chromodynamic_charge')
+    event.create('leptonic_charge')
+    event.create('time_diliation_unit')
+    event.create('empty_glucon_cell')
+    event.create('quark_glucon_plasma_cell')
+    event.create('heavy_quark_cell')
+    event.create('light_quark_cell')
+    event.create('glucon_cell')
 })
 ItemEvents.modification(event => {
     // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools

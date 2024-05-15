@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     // Data Stuff
     event.recipes.gtceu.extractor("tank_data")
         .itemInputs("kubejs:heart_of_a_universe")
-        .itemOutputs("kubejs:creative_portable_tank_mold")
+        .itemOutputs("kubejs:creative_tank_data")
         .duration(1000)
         .EUt(180000)
 

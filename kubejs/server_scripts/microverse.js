@@ -257,6 +257,32 @@ ServerEvents.recipes(event => {
             S: 'draconicevolution:reactor_stabilizer'
         }
     )
+
+    // T11 Microminer
+    event.recipes.extendedcrafting.shaped_table(
+        'kubejs:microminer_t12', [ // temp
+            '   O M O   ',
+            '   O M O   ',
+            '  OO M OO  ',
+            ' POOMMMOOP ',
+            ' OOOMMMOOO ',
+            'POOMMQMMOOP',
+            'OODMMMMMDOO',
+            'ODSMOOOMSDO',
+            'OSOOW WOOSO',
+            ' OOW   WOO ',
+            ' W       W '
+        ], {
+            O: 'gtceu:double_omnium_plate',
+            M: 'gtceu:double_crystal_matrix_plate',
+            P: 'solarflux:sp_custom_neutronium',
+            W: 'kubejs:warp_engine',
+            D: 'draconicevolution:reactor_core',
+            S: 'draconicevolution:reactor_stabilizer',
+            Q: 'kubejs:quantum_chromodynamic_charge'
+
+        }
+    )
     //
     // Miner Components
     //
