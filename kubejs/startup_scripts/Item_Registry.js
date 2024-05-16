@@ -299,14 +299,6 @@ StartupEvents.registry('item', event => {
     }
 
     // Monium 
-    event.create('quantum_chromodynamic_charge')
-    event.create('leptonic_charge')
-    event.create('time_diliation_unit')
-    event.create('empty_glucon_cell')
-    event.create('quark_glucon_plasma_cell')
-    event.create('heavy_quark_cell')
-    event.create('light_quark_cell')
-    event.create('glucon_cell')
     event.create('shattered_star_data')
     event.create('Field_Stabilised_Omnic-Pulsar_Compound')
     event.create('Quasi-Stable_Neutron_Star')

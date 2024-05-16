@@ -258,7 +258,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // T11 Microminer
+    // T12 Microminer
     event.recipes.extendedcrafting.shaped_table(
         'kubejs:microminer_t12', [ // temp
             '   O M O   ',
@@ -279,8 +279,7 @@ ServerEvents.recipes(event => {
             W: 'kubejs:warp_engine',
             D: 'draconicevolution:reactor_core',
             S: 'draconicevolution:reactor_stabilizer',
-            Q: 'kubejs:quantum_chromodynamic_charge'
-
+            Q: 'kubejs:Field_Stabilised_Omnic-Pulsar_Compound'
         }
     )
     //
