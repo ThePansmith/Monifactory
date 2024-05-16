@@ -4,12 +4,23 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:microminer_t2', Text.translatable('item.kubejs.microminer_t2.desc'))
     tooltip.add('kubejs:microminer_t3', Text.translatable('item.kubejs.microminer_t3.desc'))
     tooltip.add('kubejs:microminer_t4', Text.translatable('item.kubejs.microminer_t4.desc'))
+    tooltip.add('kubejs:microminer_t4half', Text.translatable('item.kubejs.microminer_t4.desc'))
     tooltip.add('kubejs:microminer_t5', Text.translatable('item.kubejs.microminer_t5.desc'))
     tooltip.add('kubejs:microminer_t6', Text.translatable('item.kubejs.microminer_t6.desc'))
     tooltip.add('kubejs:microminer_t7', Text.translatable('item.kubejs.microminer_t7.desc'))
     tooltip.add('kubejs:microminer_t8', Text.translatable('item.kubejs.microminer_t8.desc'))
     tooltip.add('kubejs:microminer_t9', Text.translatable('item.kubejs.microminer_t9.desc'))
     tooltip.add('kubejs:microminer_t10', Text.translatable('item.kubejs.microminer_t10.desc'))
+
+    // HM Microminers
+    tooltip.add('kubejs:microminer_t4half', Text.translatable('item.kubejs.microminer_t4half.desc'))
+    tooltip.add('kubejs:microminer_t8half', Text.translatable('item.kubejs.microminer_t8half.desc'))
+    
+    tooltip.addAdvanced(['/kubejs:stabilized_microminer/'], (item, adv, text) => {
+        text.add(1, '§f§oA stabilized version, injected with a Heart of a Universe.§r')
+        text.add(2, '§f§oLasts indefinitely. Reusable. Totally not overpowered.§r')
+        text.add(3, '§f§oIt looks oddly familiar.§r')
+    })
 
     //Microminer Components
     tooltip.add('kubejs:universal_navigator', '§9See You Later, navigator!')
