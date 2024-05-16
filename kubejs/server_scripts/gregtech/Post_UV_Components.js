@@ -150,6 +150,31 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(3932160)
 
+    // Conveyors
+    event.recipes.gtceu.assembly_line('uhv_conveyor')
+        .itemInputs('2x gtceu:uhv_electric_motor', '2x gtceu:neutronium_plate', '4x gtceu:neutronium_ring', '16x gtceu:neutronium_round', '4x gtceu:neutronium_screw', '2x gtceu:europium_double_cable')
+        .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 2000', 'gtceu:styrene_butadiene_rubber 5760', 'gtceu:naquadria 576')
+        .itemOutputs('gtceu:uhv_conveyor_module')
+        // requires research (UV conveyor with data module, 96 CWU/t)
+        .duration(600)
+        .EUt(491520)
+
+    event.recipes.gtceu.assembly_line('uev_conveyor')
+        .itemInputs('2x gtceu:uev_electric_motor', '2x gtceu:omnium_plate', '4x gtceu:omnium_ring', '16x gtceu:omnium_round', '4x gtceu:omnium_screw', '2x gtceu:netherite_double_wire')
+        .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 3000', 'gtceu:styrene_butadiene_rubber 5760', 'gtceu:naquadria 1152')
+        .itemOutputs('gtceu:uev_conveyor_module')
+        // requires research (UHV conveyor with data module, 128 CWU/t)
+        .duration(600)
+        .EUt(1966080)
+
+    event.recipes.gtceu.assembly_line('uiv_conveyor')
+        .itemInputs('2x gtceu:uiv_electric_motor', '2x gtceu:infinity_plate', '4x gtceu:infinity_ring', '16x gtceu:infinity_round', '4x gtceu:infinity_screw', '2x gtceu:holmium_double_wire')
+        .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:styrene_butadiene_rubber 5760', 'gtceu:naquadria 2304')
+        .itemOutputs('gtceu:uiv_conveyor_module')
+        // requires research (UEV conveyor with data module, 144 CWU/t)
+        .duration(1200)
+        .EUt(3932160)
+
     // Pumps
     event.recipes.gtceu.assembly_line('uhv_pump')
         .itemInputs('gtceu:uhv_electric_motor', 'gtceu:crystal_matrix_huge_fluid_pipe', '2x gtceu:neutronium_plate', '8x gtceu:neutronium_screw', '32x gtceu:neutronium_ring', 'gtceu:crystal_matrix_rotor', '2x gtceu:europium_double_cable')
@@ -175,4 +200,25 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(3932160)
 
+    // Fluid Regulators
+    event.recipes.gtceu.assembler('uhv_fluid_regulator')
+        .itemInputs('gtceu:uhv_electric_pump', '2x #gtceu:circuits/uhv')
+        .circuit(1)
+        .itemOutputs('gtceu:uhv_fluid_regulator')
+        .duration(50)
+        .EUt(1966080)
+
+    event.recipes.gtceu.assembler('uev_fluid_regulator')
+        .itemInputs('gtceu:uev_electric_pump', '2x #gtceu:circuits/uev')
+        .circuit(1)
+        .itemOutputs('gtceu:uev_fluid_regulator')
+        .duration(50)
+        .EUt(3932160)
+
+    event.recipes.gtceu.assembler('uiv_fluid_regulator')
+        .itemInputs('gtceu:uiv_electric_pump', '2x #gtceu:circuits/uiv')
+        .circuit(1)
+        .itemOutputs('gtceu:uiv_fluid_regulator')
+        .duration(50)
+        .EUt(15728640)
 })
