@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(3932160)
         
-    // emitters
+    // Emitters
     event.recipes.gtceu.assembly_line('uhv_emitter')
         .itemInputs('gtceu:neutronium_frame', 'gtceu:uhv_electric_motor', '4x gtceu:neutronium_rod', '2x gtceu:gravi_star', '#gtceu:circuits/uhv', '64x gtceu:naquadria_foil', '32x gtceu:naquadria_foil', '4x gtceu:europium_double_cable')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 1152', 'gtceu:naquadria 576')
@@ -115,13 +115,63 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:uev_emitter')
         // requires research (UHV emitter with data module, 128 CWU/t)
         .duration(600)
-        .EUt(1966080)   
+        .EUt(1966080)
     
     event.recipes.gtceu.assembly_line('uiv_emitter')
         .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:infinity_rod', '2x gtceu:gravi_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_double_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_emitter')
         // requires research (UEV emitter with data module, 144 CWU/t)
+        .duration(1200)
+        .EUt(3932160)
+
+    // Field Generators
+    event.recipes.gtceu.assembly_line('uhv_field_generator')
+        .itemInputs('gtceu:neutronium_frame', '6x gtceu:neutronium_plate', '2x gtceu:gravi_star', '2x gtceu:uhv_emitter', '2x #gtceu:circuits/uhv', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '4x gtceu:europium_double_cable')
+        .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 1152', 'gtceu:naquadria 576')
+        .itemOutputs('gtceu:uhv_field_generator')
+        // requires research (UV field generator with data module, 96 CWU/t)
+        .duration(600)
+        .EUt(491520)
+
+    event.recipes.gtceu.assembly_line('uev_field_generator')
+        .itemInputs('gtceu:omnium_frame', '6x gtceu:omnium_plate', 'kubejs:ender_star', '2x gtceu:uev_emitter', '2x #gtceu:circuits/uev', '64x gtceu:fine_netherite_wire', '64x gtceu:fine_netherite_wire', '4x gtceu:netherite_double_wire')
+        .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
+        .itemOutputs('gtceu:uev_field_generator')
+        // requires research (UHV field generator with data module, 128 CWU/t)
+        .duration(600)
+        .EUt(1966080)
+
+    event.recipes.gtceu.assembly_line('uiv_field_generator')
+        .itemInputs('gtceu:infinity_frame', '6x gtceu:infinity_plate', '2x kubejs:ender_star', '2x gtceu:uiv_emitter', '2x #gtceu:circuits/uiv', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '4x gtceu:holmium_double_wire')
+        .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
+        .itemOutputs('gtceu:uiv_field_generator')
+        // requires research (UEV field generator with data module, 144 CWU/t)
+        .duration(1200)
+        .EUt(3932160)
+
+    // Pumps
+    event.recipes.gtceu.assembly_line('uhv_pump')
+        .itemInputs('gtceu:uhv_electric_motor', 'gtceu:crystal_matrix_huge_fluid_pipe', '2x gtceu:neutronium_plate', '8x gtceu:neutronium_screw', '32x gtceu:neutronium_ring', 'gtceu:crystal_matrix_rotor', '2x gtceu:europium_double_cable')
+        .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 2000', 'gtceu:crystal_matrix 1152', 'gtceu:naquadria 576')
+        .itemOutputs('gtceu:uhv_electric_pump')
+        // requires research (UV pump with data module, 96 CWU/t)
+        .duration(600)
+        .EUt(491520)
+
+    event.recipes.gtceu.assembly_line('uev_pump')
+        .itemInputs('gtceu:uev_electric_motor', 'gtceu:netherite_huge_fluid_pipe', '2x gtceu:omnium_plate', '8x gtceu:omnium_screw', '48x gtceu:omnium_ring', 'gtceu:netherite_rotor', '2x gtceu:netherite_double_wire')
+        .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 3000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
+        .itemOutputs('gtceu:uev_electric_pump')
+        // requires research (UHV pump with data module, 128 CWU/t)
+        .duration(600)
+        .EUt(1966080)
+
+    event.recipes.gtceu.assembly_line('uiv_pump')
+        .itemInputs('gtceu:uiv_electric_motor', 'gtceu:holmium_huge_fluid_pipe', '2x gtceu:infinity_plate', '8x gtceu:infinity_screw', '64x gtceu:infinity_ring', 'gtceu:holmium_rotor', '2x gtceu:holmium_double_wire')
+        .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
+        .itemOutputs('gtceu:uiv_electric_pump')
+        // requires research (UEV pump with data module, 144 CWU/t)
         .duration(1200)
         .EUt(3932160)
 
