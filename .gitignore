@@ -10,6 +10,7 @@
 /tools/bootstrap/.cache
 !/.github
 !.editorconfig
+!mode.json
 
 !/mods/systeams*
 !/mods/ExtendedCrafting*

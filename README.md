@@ -23,3 +23,6 @@ README.md base from [Gregtech CEu](https://github.com/GregTechCEu/GregTech).
 Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
 Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
 Thank you!
+
+## Enabling Expert/Omega Mode
+To enable expert/omega mode, change the value in mode.json in the root folder (folder containing ``config``, ``mods``, etc.)
