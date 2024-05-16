@@ -44,10 +44,10 @@
   "item.kubejs.microminer_t9.desc": "§7§oCollapses microverse stars and harvests their delicious neutronium cores.",
   "item.kubejs.microminer_t10": "§dNeutronium Plated Micro Universe Harvester [Tier Ten]",
   "item.kubejs.microminer_t10.desc": "§7§oCollapses an entire microverse and harvests it whole. Try to aim for uninhabited ones.",
-  "item.kubejs.microminer_t11": "§bOmnium Plated Micro Civilization Scrapper [Tier Eleven]",
+  "item.kubejs.microminer_t11": "§cOmnium Plated Micro Civilization Scrapper [Tier Eleven]",
   "item.kubejs.microminer_t11.desc": "§7§oTurns abandoned alien civilzations to scrap. Or atleast, we think they're abandoned.",
   "item.kubejs.microminer_t12": "§cThe Creator-Harvester [Tier Twelve]",
-  "item.kubejs.microminer_t12.desc": "§7§oSets off a Big Bang in the void, creating an entirely new microverse, before harvesting it. How metal is that?",
+  "item.kubejs.microminer_t12.desc": "§7§oSets off a Big Bang in §kthevoid§r§7§o, creating an entirely new microverse, before harvesting it. How metal is that?",
 
   "item.kubejs.stabilized_microminer_t1": "§dStabilized Steel Plated Micro Miner [Tier One]",
   "item.kubejs.stabilized_microminer_t2": "§dStabilized Titanium Plated Micro Miner [Tier Two]",
@@ -56,12 +56,6 @@
   "item.kubejs.stabilized_microminer_t5": "§dStabilized Iridium Plated Micro Miner [Tier Five]",
   "item.kubejs.stabilized_microminer_t6": "§dStabilized Enderium Plated Micro Miner [Tier Six]",
   "item.kubejs.stabilized_microminer_t7": "§dStabilized Draconium Plated Micro Dragon Hunter [Tier Seven]",
-  "item.kubejs.stabilized_microminer_t8": "§dStabilized Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
-  "item.kubejs.stabilized_microminer_t9": "§dStabilized Eternium Plated Micro Sun Eater [Tier Nine]",
-  "item.kubejs.stabilized_microminer_t10": "§dStabilized Neutronium Plated Micro Universe Harvester [Tier Ten]",
-
-  "tooltip.stabilized_miners.description1": "§f§oA stabilized version, injected with a Heart of a Universe.",
-  "tooltip.stabilized_miners.description2": "§f§oLasts indefinitely. Reusable. Totally not overpowered.",
-  "tooltip.stabilized_miners.description3": "§f§oIt looks oddly familiar."
+  "item.kubejs.stabilized_microminer_t8": "§dStabilized Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]"
 }
   
