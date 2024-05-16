@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
             F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:mv_combustion',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').weakNBT()
-        }, 2
+        }
     )
 
     // T3 Microminer
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
             F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:hv_combustion',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:reinforced"}').weakNBT()
-        }, 3
+        }
     )
 
     // T4 Microminer
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
             F: 'kubejs:signalum_micro_miner_core',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').weakNBT(),
             D: 'thermal:dynamo_compression'
-        }, 3
+        }
     )
 
     // T5 Microminer
@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').weakNBT()
-        }, 3
+        }
     )
 
     // T6 Microminer
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:resonant"}').weakNBT()
-        }, 3
+        }
     )
 
     // T7 Microminer
@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:luv_field_generator',
             E: 'kubejs:ender_energy_manipulator', // TODO: REPLACE WITH REAL DE COMPONENT
             W: 'kubejs:warp_engine'
-        }, 4
+        }
     )
 
     // T8 Microminer
@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
             D: 'kubejs:warp_core',
             M: 'kubejs:warp_controller',
             E: 'kubejs:warp_engine'
-        }, 4
+        }
     )
 
     // T9 Microminer

@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
             G: 'gtceu:zpm_field_generator',
             R: 'gtceu:research_station',
             U: 'gtceu:uv_field_generator'
-        }, 2
+        }
         ).id('kubejs:shaped/subatomic_digital_assembler')
 
         function print(input, circuit, output) {

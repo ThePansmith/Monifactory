@@ -16,4 +16,6 @@ StartupEvents.registry('item', event => {
     event.create('stabilized_microminer_t6').maxStackSize(16).texture("kubejs:item/microverse/microminer_t6").glow(true)
     event.create('stabilized_microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7").glow(true)
     event.create('stabilized_microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8").glow(true)
+
+    event.create('microminer_trobbie').maxStackSize(16).texture("kubejs:item/microverse/microminer_trobbie").glow(false)
 })

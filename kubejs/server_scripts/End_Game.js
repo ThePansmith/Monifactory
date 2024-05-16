@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
             G: 'gtceu:zero_point_module',
             H: 'gtceu:energy_cluster',
             I: 'gtceu:max_battery'
-        }, 4
+        }
     )
 
     event.recipes.extendedcrafting.shaped_table(
@@ -202,7 +202,7 @@ ServerEvents.recipes(event => {
             F: 'gtceu:zpm_field_generator',
             P: 'nuclearcraft:plate_elite',
             Z: '#gtceu:circuits/zpm'
-        }, 4
+        }
     )
 
     //! Creative Items !//
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
             R: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
             S: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(),
             V: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT()
-        }, 4
+        }
     )
 
     //Creative Solar Panel
@@ -251,8 +251,7 @@ ServerEvents.recipes(event => {
             N: 'gtceu:neutronium_plate',
             P: 'gtceu:infinity_plate',
             S: 'solarflux:sp_custom_neutronium'
-
-        }, 4
+        }
     )
 
 
@@ -277,7 +276,7 @@ ServerEvents.recipes(event => {
             R: 'draconicevolution:draconic_capacitor',
             O: 'kubejs:ultimate_power_storage',
             I: 'kubejs:infinity_catalyst'
-        }, 4
+        }
     )
 
     // Creative Efficiency Upgrade
@@ -301,7 +300,7 @@ ServerEvents.recipes(event => {
             R: 'thermal:machine_speed_augment',
             O: 'thermal:machine_efficiency_augment',
             I: 'kubejs:infinity_catalyst'
-        }, 4
+        }
     )
 
     // Creative Chest
@@ -336,7 +335,7 @@ ServerEvents.recipes(event => {
             U: "ae2:creative_energy_cell",
             W: "gtceu:creative_energy",
             X: "draconicevolution:creative_capacitor"
-        }, 4
+        }
     )
 
     // Creative Catalyst augment
@@ -357,6 +356,6 @@ ServerEvents.recipes(event => {
             N: 'gtceu:neutronium_plate',
             T: 'gtceu:titanium_plate',
             C: 'thermal:machine_catalyst_augment'
-        }, 4
+        }
     )
 })

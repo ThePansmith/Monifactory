@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
         E: 'extendedcrafting:elite_catalyst',
         C: 'extendedcrafting:elite_component',
         T: 'extendedcrafting:advanced_table'
-    }, 2
+    }
     )
     event.remove({ output: 'extendedcrafting:ultimate_table' })
     event.recipes.extendedcrafting.shaped_table(
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
         U: 'extendedcrafting:ultimate_component',
         R: 'extendedcrafting:crystaltine_component',
         T: 'extendedcrafting:elite_table'
-    }, 3
+    }
     )
     event.remove({ output: 'extendedcrafting:epic_table' })
     event.recipes.extendedcrafting.shaped_table(
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
         U: 'extendedcrafting:epic_component',
         R: 'extendedcrafting:crystaltine_component',
         T: 'extendedcrafting:ultimate_table'
-    }, 4
+    }
     )
 
     event.remove({ output: 'extendedcrafting:crafting_core' })
