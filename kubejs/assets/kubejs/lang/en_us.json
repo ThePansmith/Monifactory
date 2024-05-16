@@ -13,7 +13,7 @@
   "item.kubejs.glitch_heart": "§bCorrupted Glitch Heart",
   "item.kubejs.glitch_heart.desc": "§7Drops from system glitches",
   "item.kubejs.glitch_infused_ingot": "§bGlitch Infused Ingot",
-  "item.kubejs.glitch_infused_ingot.desc": "§7Made by stablizing §bUnstable Glitch Fragment§r",
+  "item.kubejs.glitch_infused_ingot.desc": "§7Made by stablizing §bUnstable Glitch Fragment",
 
   "item.kubejs.moni_penny": "Monipenny §7[1]",
   "item.kubejs.moni_nickel": "§eMoninickel §r§7[5]",
@@ -29,7 +29,7 @@
   "item.kubejs.microminer_t4": "§eSignalum Plated Micro Miner [Tier Four]",
   "item.kubejs.microminer_t4.desc": "§7§oHarvests ultra cold materials from the deepest parts of empty space.",
   "item.kubejs.microminer_t4half": "§eLumium Plated Micro Mob Slayer [Tier Four and Half]",
-  "item.kubejs.microminer_t4half.desc": "§7§oKills mobs in dangerous microverses and collects their highly prized skeletons and parts.§r",
+  "item.kubejs.microminer_t4half.desc": "§7§oKills mobs in dangerous microverses and collects their highly prized skeletons and parts",
   "item.kubejs.microminer_t5": "§bIridium Plated Micro Miner [Tier Five]",
   "item.kubejs.microminer_t5.desc": "§7§oHarvests strange materials from End microverses.",
   "item.kubejs.microminer_t6": "§bEnderium Plated Micro Miner [Tier Six]",
@@ -39,7 +39,7 @@
   "item.kubejs.microminer_t8": "§dCrystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
   "item.kubejs.microminer_t8.desc": "§7§oHunts inconcievable monstrosities from beyond the End and returns with bizzare trinkets.",
   "item.kubejs.microminer_t8half": "§dTrinium Plated Micro Excavator [Tier Eight and Half]",
-  "item.kubejs.microminer_t8half.desc": "§7§oHarvests exclusive Gems and Metals from unexplored corners, from beyond the microverse.§r",
+  "item.kubejs.microminer_t8half.desc": "§7§oHarvests exclusive Gems and Metals from unexplored corners, from beyond the microverse",
   "item.kubejs.microminer_t9": "§dEternium Plated Micro Sun Eater [Tier Nine]",
   "item.kubejs.microminer_t9.desc": "§7§oCollapses microverse stars and harvests their delicious neutronium cores.",
   "item.kubejs.microminer_t10": "§dNeutronium Plated Micro Universe Harvester [Tier Ten]",
@@ -53,9 +53,15 @@
   "item.kubejs.stabilized_microminer_t2": "§dStabilized Titanium Plated Micro Miner [Tier Two]",
   "item.kubejs.stabilized_microminer_t3": "§dStabilized Tungsten Carbide Plated Micro Miner [Tier Three]",
   "item.kubejs.stabilized_microminer_t4": "§dStabilized Signalum Plated Micro Miner [Tier Four]",
+  "item.kubejs.stabilized_microminer_t4half": "§dStabilized Lumium Plated Micro Mob Slayer [Tier Four and Half]",
   "item.kubejs.stabilized_microminer_t5": "§dStabilized Iridium Plated Micro Miner [Tier Five]",
   "item.kubejs.stabilized_microminer_t6": "§dStabilized Enderium Plated Micro Miner [Tier Six]",
   "item.kubejs.stabilized_microminer_t7": "§dStabilized Draconium Plated Micro Dragon Hunter [Tier Seven]",
-  "item.kubejs.stabilized_microminer_t8": "§dStabilized Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]"
+  "item.kubejs.stabilized_microminer_t8": "§dStabilized Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
+  "item.kubejs.stabilized_microminer_t8half": "§dStabilized Trinium Plated Micro Excavator [Tier Eight and Half]",
+  "item.kubejs.stabilized_microminer_t9": "§dStabilized Eternium Plated Micro Sun Eater [Tier Nine]",
+  "item.kubejs.stabilized_microminer_t10": "§dStabilized Neutronium Plated Micro Universe Harvester [Tier Ten]"
+
+
 }
   
