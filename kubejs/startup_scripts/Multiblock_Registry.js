@@ -552,7 +552,7 @@ event.create('loot_superfabricator', 'multiblock')
         .where('A', Predicates.air())
         .where('#', Predicates.any())
             .build())
-            .workableCasingRenderer("kubejs:block/draconium/casing",
+            .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
     //Extra Large Chemical Reactor
