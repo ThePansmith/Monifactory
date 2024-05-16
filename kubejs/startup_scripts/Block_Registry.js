@@ -134,6 +134,24 @@ StartupEvents.registry("block", event => {
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/draconium/awakened_casing')})
+
+    event.create('awakened_fusion_casing', 'gtceu:renderer')
+        .displayName("Awakened Fusion Casing")
+        .soundType('metal')
+        .resistance(6)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/draconium/fusion')})
+
+    event.create('awakened_fusion_coil', 'gtceu:renderer')
+        .displayName("Awakened Fusion Coil")
+        .soundType('metal')
+        .resistance(6)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/draconium/coil')})
     
     // Post-Tank MB blocks
     event.create('omnic_matrix_machine_casing', 'gtceu:renderer')
