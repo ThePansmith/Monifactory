@@ -16,8 +16,4 @@ StartupEvents.registry('item', event => {
     event.create('stabilized_microminer_t6').maxStackSize(16).texture("kubejs:item/microverse/microminer_t6").glow(true)
     event.create('stabilized_microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7").glow(true)
     event.create('stabilized_microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8").glow(true)
-    event.create('stabilized_microminer_t9').maxStackSize(16).texture("kubejs:item/microverse/microminer_t9").glow(true)
-    event.create('stabilized_microminer_t10').maxStackSize(16).texture("kubejs:item/microverse/microminer_t10").glow(true)
-    event.create('stabilized_microminer_t11').maxStackSize(16).parentModel("kubejs:item/microverse/microminer_t11").texture("kubejs:item/microverse/microminer_t11_base").glow(true)
-    event.create('stabilized_microminer_t12').maxStackSize(16).texture("kubejs:item/microverse/microminer_t12").glow(true)
 })
