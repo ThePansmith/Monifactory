@@ -307,6 +307,9 @@ StartupEvents.registry('item', event => {
     event.create('heavy_quark_cell')
     event.create('light_quark_cell')
     event.create('glucon_cell')
+    event.create('shattered_star_data')
+    event.create('Field_Stabilised_Omnic-Pulsar_Compound')
+    event.create('Quasi-Stable_Neutron_Star')
 })
 ItemEvents.modification(event => {
     // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
