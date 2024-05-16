@@ -2,18 +2,19 @@
 
 StartupEvents.registry('item', event => {
     // The microminers
-    event.create('microminer_t1').maxStackSize(16)
-    event.create('microminer_t2').maxStackSize(16)
-    event.create('microminer_t3').maxStackSize(16)
-    event.create('microminer_t4').maxStackSize(16)
-    event.create('microminer_t5').maxStackSize(16)
-    event.create('microminer_t6').maxStackSize(16)
-    event.create('microminer_t7').maxStackSize(16)
-    event.create('microminer_t8').maxStackSize(16)
-    event.create('microminer_t9').maxStackSize(16)
-    event.create('microminer_t10').maxStackSize(16)
-    event.create('microminer_t11').maxStackSize(16)
-    event.create('microminer_t12').maxStackSize(16)
+    event.create('microminer_t1').maxStackSize(16).texture("kubejs:item/microverse/microminer_t1")
+    event.create('microminer_t2').maxStackSize(16).texture("kubejs:item/microverse/microminer_t2")
+    event.create('microminer_t3').maxStackSize(16).texture("kubejs:item/microverse/microminer_t3")
+    event.create('microminer_t4').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4")
+    event.create('microminer_t5').maxStackSize(16).texture("kubejs:item/microverse/microminer_t5")
+    event.create('microminer_t6').maxStackSize(16).texture("kubejs:item/microverse/microminer_t6")
+    event.create('microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7")
+    event.create('microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8")
+    event.create('microminer_t9').maxStackSize(16).texture("kubejs:item/microverse/microminer_t9")
+    event.create('microminer_t10').maxStackSize(16).texture("kubejs:item/microverse/microminer_t10")
+        // Sorry for this monstrosity of a line, it's the only way I got it to work
+    event.create('microminer_t11').maxStackSize(16).parentModel("kubejs:item/microverse/microminer_t11").texture("kubejs:item/microverse/microminer_t11_base")
+    event.create('microminer_t12').maxStackSize(16).texture("kubejs:item/microverse/microminer_t12")
 
     // Microminer Components
     event.create('basic_mining_laser').displayName("§eBasic Mining Laser")
@@ -297,6 +298,15 @@ StartupEvents.registry('item', event => {
             .color(0, `#0080ff`)
     }
 
+    // Monium 
+    event.create('quantum_chromodynamic_charge')
+    event.create('leptonic_charge')
+    event.create('time_diliation_unit')
+    event.create('empty_glucon_cell')
+    event.create('quark_glucon_plasma_cell')
+    event.create('heavy_quark_cell')
+    event.create('light_quark_cell')
+    event.create('glucon_cell')
 })
 ItemEvents.modification(event => {
     // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools

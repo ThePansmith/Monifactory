@@ -1,0 +1,6 @@
+{
+    "parent":"item/generated",
+    "textures": {
+      "layer1":"kubejs:item/microverse/microminer_t11_lights"
+    }
+  }
