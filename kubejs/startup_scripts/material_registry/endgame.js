@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .element(GTElements.get("omnium"))
         .color(0xffffff).iconSet('omnium') // custom icon set
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND)
         .cableProperties(2147483647, 64, 0, true)
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("infinity"))
         .color(0xffffff)
         .iconSet('infinity')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD,  GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_FRAME)
         
     event.create('monium')
         .ingot()
@@ -57,7 +57,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x4C484C)
         .iconSet('dull')
         .cableProperties(2147483647, 64, 0, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE)
 
     event.create('omnic_acid')
         .dust()
@@ -72,4 +72,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Zeron100.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.get('gcyr:bisalloy_400').addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
+    GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND)
 })
