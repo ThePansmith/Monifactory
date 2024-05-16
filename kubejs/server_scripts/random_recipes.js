@@ -463,4 +463,18 @@ ServerEvents.recipes(event => {
         event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
     })
 
+    // Fix random bug with quartz dust autoclave recipe
+    event.recipes.gtceu.autoclave('autoclave_nether_quartz_water')
+        .itemInputs('gtceu:nether_quartz_dust')
+        .inputFluids(Fluid.of('minecraft:water', 250))
+        .chancedOutput('minecraft:quartz', 7000, 1000)
+        .duration(60)
+        .EUt(24)        
+
+    event.recipes.gtceu.autoclave('autoclave_nether_quartz_distilled')
+        .itemInputs('gtceu:nether_quartz_dust')
+        .inputFluids(Fluid.of('gtceu:distilled_water', 50))
+        .itemOutputs('minecraft:quartz')
+        .duration(30)
+        .EUt(24)
 })

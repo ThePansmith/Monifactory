@@ -12,6 +12,8 @@ ServerEvents.recipes(event => {
     //GT
     event.remove({ id: "gtceu:shapeless/fireclay_dust" })
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
+    event.remove({ id: 'gtceu:autoclave/autoclave_dust_nether_quartz__water' })
+    event.remove({ id: 'gtceu:autoclave/autoclave_dust_nether_quartz__distilled' })
 
     //FIXME will get fixed
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__fireclay" })
