@@ -18,9 +18,9 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:microminer_t8half', Text.translatable('item.kubejs.microminer_t8half.desc'))
     
     tooltip.addAdvanced(['/kubejs:stabilized_microminer/'], (item, adv, text) => {
-        text.add(1, '§7§oA stabilized version, injected with a Heart of a Universe')
-        text.add(2, '§7§oLasts indefinitely. Reusable. Totally not overpowered')
-        text.add(3, '§7§oIt looks oddly familiar')
+        text.add(1, '§7§oA stabilized version, injected with a Heart of a Universe.')
+        text.add(2, '§7§oLasts indefinitely. Reusable. Totally not overpowered.')
+        text.add(3, '§7§oIt looks oddly familiar.')
     })
 
     //Microminer Components

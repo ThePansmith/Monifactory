@@ -60,8 +60,8 @@
   "item.kubejs.stabilized_microminer_t9": "§dStabilized Eternium Plated Micro Sun Eater [Tier Nine]",
   "item.kubejs.stabilized_microminer_t10": "§dStabilized Neutronium Plated Micro Universe Harvester [Tier Ten]",
 
-  "tooltip.stabilized_miners.description1": "§f§oA stabilized version, injected with a Heart of a Universe.§r",
-  "tooltip.stabilized_miners.description2": "§f§oLasts indefinitely. Reusable. Totally not overpowered.§r",
-  "tooltip.stabilized_miners.description3": "§f§oIt looks oddly familiar.§r"
+  "tooltip.stabilized_miners.description1": "§f§oA stabilized version, injected with a Heart of a Universe.",
+  "tooltip.stabilized_miners.description2": "§f§oLasts indefinitely. Reusable. Totally not overpowered.",
+  "tooltip.stabilized_miners.description3": "§f§oIt looks oddly familiar."
 }
   
