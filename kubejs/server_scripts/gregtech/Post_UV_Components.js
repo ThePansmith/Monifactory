@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         .EUt(491520)
 
     event.recipes.gtceu.assembly_line('uev_sensor')
-        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:omnium_plate', '2x gtceu:gravi_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:netherite_double_wire')
+        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:omnium_plate', 'kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_sensor')
         // requires research (UHV sensor with data module, 128 CWU/t)
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
         .EUt(1966080)   
         
     event.recipes.gtceu.assembly_line('uiv_sensor')
-        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:infinity_plate', '2x gtceu:gravi_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_double_wire')
+        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:infinity_plate', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_double_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_sensor')
         // requires research (UEV sensor with data module, 144 CWU/t)
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
         .EUt(491520)
 
     event.recipes.gtceu.assembly_line('uev_emitter')
-        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:omnium_rod', '2x gtceu:gravi_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:netherite_double_wire')
+        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:omnium_rod', 'kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_emitter')
         // requires research (UHV emitter with data module, 128 CWU/t)
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
     
     event.recipes.gtceu.assembly_line('uiv_emitter')
-        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:infinity_rod', '2x gtceu:gravi_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_double_wire')
+        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:infinity_rod', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_double_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_emitter')
         // requires research (UEV emitter with data module, 144 CWU/t)
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
         .EUt(491520)
 
     event.recipes.gtceu.assembly_line('uev_field_generator')
-        .itemInputs('gtceu:omnium_frame', '6x gtceu:omnium_plate', 'kubejs:ender_star', '2x gtceu:uev_emitter', '2x #gtceu:circuits/uev', '64x gtceu:fine_netherite_wire', '64x gtceu:fine_netherite_wire', '4x gtceu:netherite_double_wire')
+        .itemInputs('gtceu:omnium_frame', '6x gtceu:omnium_plate', 'kubejs:quasi_stable_neutron_star', '2x gtceu:uev_emitter', '2x #gtceu:circuits/uev', '64x gtceu:fine_netherite_wire', '64x gtceu:fine_netherite_wire', '4x gtceu:netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_field_generator')
         // requires research (UHV field generator with data module, 128 CWU/t)
@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
 
     event.recipes.gtceu.assembly_line('uiv_field_generator')
-        .itemInputs('gtceu:infinity_frame', '6x gtceu:infinity_plate', '2x kubejs:ender_star', '2x gtceu:uiv_emitter', '2x #gtceu:circuits/uiv', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '4x gtceu:holmium_double_wire')
+        .itemInputs('gtceu:infinity_frame', '6x gtceu:infinity_plate', '2x kubejs:quasi_stable_neutron_star', '2x gtceu:uiv_emitter', '2x #gtceu:circuits/uiv', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '4x gtceu:holmium_double_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_field_generator')
         // requires research (UEV field generator with data module, 144 CWU/t)
