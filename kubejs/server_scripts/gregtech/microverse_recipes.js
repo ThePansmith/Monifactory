@@ -189,12 +189,6 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(2000000)
 
-        event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_third')
-        .itemInputs('kubejs:microminer_t11', 'kubejs:universe_creation_data', '64x kubejs:empty_glucon_cell')
-        .itemOutputs('64x kubejs:quark_glucon_plasma_cell')
-        .duration(1200)
-        .EUt(2000000)
-
         event.recipes.gtceu.advanced_microverse_iii('kubejs:t_twelve_first')
         .itemInputs('kubejs:microminer_t12', '4x kubejs:universe_creation_data', '16x gtceu:infinity_ingot')
         .itemOutputs('16x gtceu:monium_ingot')
