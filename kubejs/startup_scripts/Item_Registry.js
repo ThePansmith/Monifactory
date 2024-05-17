@@ -281,7 +281,7 @@ StartupEvents.registry('item', event => {
     event.create('magnetic_capacitor_dust')
     event.create('crushed_alien_sensor')
     event.create('holmium_compound')
-    event.create('kubejs:holmium_oxide_glass_dust')
+    event.create('holmium_oxide_glass_dust')
 
 
     // Complex SMDs
