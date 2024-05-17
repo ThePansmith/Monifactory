@@ -13,18 +13,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust().ore()
         .components('8x osmium', '2x iridium')
         .iconSet('dull')
+        .addOreByproducts('osmium', 'iridium', 'ruthenium')
 
     event.create("iridosmineyes")
         .dust().ore()
         .components('8x iridium', '2x osmium')
         .iconSet('dull')
+        .addOreByproducts('iridium', 'osmium', 'rhodium')
 
     event.create("kaemanite")
         .dust().ore()
-		// .components('trinium', 'tantalum', '4x oxygen')
+		.components('trinium', 'tantalum', '4x oxygen')
         .color(0xe7413c)
         .iconSet('bright')
-		// .addOreByproducts(material('niobium'), material('trinium_sulfide'), material('trinium'))
+		.addOreByproducts('niobium', 'trinium_sulfide', 'trinium')
 
     event.create("fluorite")
         .dust().ore()
