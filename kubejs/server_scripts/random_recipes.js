@@ -463,4 +463,15 @@ ServerEvents.recipes(event => {
         event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
     })
 
+    // Stonecutting CCI blocks
+    let sameItemsTags = ['#chisel_chipped_integration:factory_block', '#chisel_chipped_integration:technical_block', '#chisel_chipped_integration:laboratory_block', '#chisel_chipped_integration:tyrian']; // What item tags to go trough (change this so you have your tags)
+    sameItemsTags.forEach(tag => {
+        let sameItems = Ingredient.of(tag).stacks; // Get all of the items with that tag
+        sameItems.forEach(input => {
+            sameItems.forEach(output => { // Loop trough the items so all combination of input and output are met
+                if (input != output) // Ignore recipes where input and output are the same item
+                    event.stonecutting(output, input); // Make the recipe
+            });
+        });
+    }); 
 })
