@@ -10,6 +10,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:microminer_t8', Text.translatable('item.kubejs.microminer_t8.desc'))
     tooltip.add('kubejs:microminer_t9', Text.translatable('item.kubejs.microminer_t9.desc'))
     tooltip.add('kubejs:microminer_t10', Text.translatable('item.kubejs.microminer_t10.desc'))
+    tooltip.add('kubejs:microminer_t11', Text.translatable('item.kubejs.microminer_t11.desc'))
+    tooltip.add('kubejs:microminer_t12', Text.translatable('item.kubejs.microminer_t12.desc'))
 
     //Microminer Components
     tooltip.add('kubejs:universal_navigator', '§9See You Later, navigator!')

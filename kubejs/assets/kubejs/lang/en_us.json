@@ -39,5 +39,9 @@
   "item.kubejs.microminer_t9": "§dEternium Plated Micro Sun Eater [Tier Nine]",
   "item.kubejs.microminer_t9.desc": "§7§oCollapses microverse stars and harvests their delicious neutronium cores.",
   "item.kubejs.microminer_t10": "§dNeutronium Plated Micro Universe Harvester [Tier Ten]",
-  "item.kubejs.microminer_t10.desc": "§7§oCollapses an entire microverse and harvests it whole. Try to aim for uninhabited ones."
+  "item.kubejs.microminer_t10.desc": "§7§oCollapses an entire microverse and harvests it whole. Try to aim for uninhabited ones.",
+  "item.kubejs.microminer_t11": "§dOmnic Matrix Micro Universal Scavenger [Tier Eleven]",
+  "item.kubejs.microminer_t11.desc": "§7§oScavenges through the necrosed ruins of corrupted microverses to retreive alien materials.",
+  "item.kubejs.microminer_t12": "§dInfinity Plated Micro Extradimensional Phase Shifter [Tier Twelve]",
+  "item.kubejs.microminer_t12.desc": "§7§oAlters the laws of physics on a microversal scale, thus allowing the production of previously impossible materials."
 }

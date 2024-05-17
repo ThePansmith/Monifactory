@@ -19,13 +19,13 @@ ServerEvents.recipes(event => {
 // A simple "crush the thing and get the good stuff"
 event.recipes.gtceu.macerator('alien_scrap_supercap_crushing')
 .itemInputs('kubejs:ruined_capacitor')
-.itemOutputs('kubejs:crushed_capacitor')
+.itemOutputs('kubejs:crushed_alien_capacitor')
 .chancedOutput('gtceu:enriched_naquadah_trinium_europium_duranide_dust', 3300, 0)
 .duration(100)
 .EUt(16380)
 
 event.recipes.gtceu.electromagnetic_separator('alien_scrap_supercap_electro')
-.itemInputs('kubejs:crushed_capacitor')
+.itemInputs('kubejs:crushed_alien_capacitor')
 .itemOutputs('kubejs:magnetic_capacitor_dust')
 .chancedOutput('gtceu:carbon_dust', 3300, 850) // Finally, an easy way to get carbon!
 .duration(100)
