@@ -300,8 +300,8 @@ StartupEvents.registry('item', event => {
 
     // Monium 
     event.create('shattered_star_data')
-    event.create('Field_Stabilised_Omnic-Pulsar_Compound')
-    event.create('Quasi-Stable_Neutron_Star')
+    event.create('field_stabilised_omnic-pulsar_compound')
+    event.create('quasi_stable_neutron_star').displayName('Quasi-Stable Neutron Star')
 })
 ItemEvents.modification(event => {
     // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
