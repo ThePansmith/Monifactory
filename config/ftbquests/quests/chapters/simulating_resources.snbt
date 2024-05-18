@@ -500,6 +500,19 @@
 					match_nbt: true
 					type: "item"
 				}
+				{
+					id: "0A2B07B076638423"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:warden"
+							}
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "&8End&r Mobs"
 			x: 3.5d
