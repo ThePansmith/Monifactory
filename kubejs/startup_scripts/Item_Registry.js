@@ -270,6 +270,9 @@ StartupEvents.registry('item', event => {
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processing Unit`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_processing_unit` })
     }
+    event.create('matter_circuit_board').texture('kubejs:item/circuits/matter_circuit_board')
+    event.create('dimensional_circuit_board').texture('kubejs:item/circuits/dimensional_circuit_board')
+    event.create('monic_circuit_board').texture('kubejs:item/circuits/monic_circuit_board')
 
     // Alien scrap
     event.create('corrupted_universe_data')
