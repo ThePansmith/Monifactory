@@ -2,36 +2,36 @@ ServerEvents.recipes(event => {
 
     // The crafting core is expensive enough as is, dont need to throw extra circuits on top
     event.shaped(
-        'gtceu:draconic_reactor',
+        'gtceu:sculk_reactor',
         ['PLP',
             'CFC',
             'PHP'
         ], {
-        P: 'gtceu:draconium_plate',
-        F: 'draconicevolution:crafting_core',
+        P: 'gtceu:sculk_compound_plate',
+        F: 'kubejs:crafting_core',
         C: 'gtceu:niobium_titanium_single_cable',
         L: 'gtceu:iv_field_generator',
         H: 'gtceu:hsse_frame'
 
     }
-    ).id('kubejs:shaped/draconic_reactor')
+    ).id('kubejs:shaped/sculk_reactor')
 
-    event.recipes.gtceu.assembler('kubejs:draconium_casing')
-        .itemInputs('6x gtceu:draconium_plate', 'gtceu:draconium_frame')
-        .itemOutputs('2x kubejs:draconium_casing')
+    event.recipes.gtceu.assembler('kubejs:sculk_compound_casing')
+        .itemInputs('6x gtceu:sculk_compound_plate', 'gtceu:sculk_compound_frame')
+        .itemOutputs('2x kubejs:sculk_compound_casing')
         .duration(50)
         .circuit(6)
         .EUt(16)
 
-    event.recipes.gtceu.assembler('kubejs:awakened_draconium_casing')
-        .itemInputs('6x gtceu:draconium_awakened_plate', 'gtceu:draconium_awakened_frame')
-        .itemOutputs('2x kubejs:awakened_draconium_casing')
+    event.recipes.gtceu.assembler('kubejs:resonant_sculk_compound_casing')
+        .itemInputs('6x gtceu:resonant_sculk_compound_plate', 'gtceu:resonant_sculk_compound_frame')
+        .itemOutputs('2x kubejs:resonant_sculk_compound_casing')
         .duration(50)
         .circuit(6)
         .EUt(16)
 
     function Reactor(id, output, input, tier, RF) {
-        event.recipes.gtceu.draconic_reactor(`kubejs:${id}`)
+        event.recipes.gtceu.sculk_reactor(`kubejs:${id}`)
             .notConsumable('10x #moni:' + tier + '_injector_tier')
             .itemInputs(input)
             .itemOutputs(output)
@@ -39,23 +39,22 @@ ServerEvents.recipes(event => {
             .EUt(61440)
     }
 
-    Reactor('wyvern_crafting_injector', 'draconicevolution:wyvern_crafting_injector', ['draconicevolution:basic_crafting_injector', 'draconicevolution:wyvern_core', '2x draconicevolution:draconium_core', 'gtceu:draconium_block', '4x minecraft:nether_star'], 'basic', 20480000)
-    Reactor('wyvern_core', 'draconicevolution:wyvern_core', ['gtceu:emeradic_empowered_block', '4x draconicevolution:draconium_core', '2x gtceu:nether_star_block', '2x armorplus:compressed_infused_lava_crystal'], 'basic', 175544000)
-    Reactor('chaotic_solar', '2x solarflux:sp_de.chaotic', ['draconicevolution:chaotic_core', '2x solarflux:sp_de.draconic', '2x draconicevolution:draconic_energy_core'], 'chaotic', 13421760000)
-    Reactor('nt_solar', 'solarflux:sp_custom_neutronium', ['solarflux:sp_de.chaotic', '4x draconicevolution:chaotic_core', '4x gtceu:draconic_superconductor_single_wire', '2x gtceu:omnium_block'], 'chaotic', 134217600000)
-    Reactor('draconic_solar', '2x solarflux:sp_de.draconic', ['draconicevolution:draconic_energy_core', '4x solarflux:sp_de.wyvern', '4x enderio:draconic_superconductor_conduit', '2x draconicevolution:wyvern_energy_core'], 'awakened', 16777200000)
-    Reactor('wyvern_solar', '2x solarflux:sp_de.wyvern', ['draconicevolution:wyvern_energy_core', '4x solarflux:sp_8', '4x enderio:draconium_conduit', '2x gtceu:draconium_block'], 'wyvern', 8388600000)
-    Reactor('reactor_core', 'draconicevolution:reactor_core', ['extendedcrafting:the_ultimate_catalyst', '4x gtceu:draconium_awakened_block', '4x draconicevolution:chaos_shard', '2x kubejs:stabilized_einsteinium'], 'awakened', 26000000000)
-    Reactor('chaotic_crafting_injector', 'draconicevolution:chaotic_crafting_injector', ['draconicevolution:awakened_crafting_injector', '4x gtceu:neutronium_ingot', '4x draconicevolution:chaos_shard', '2x gtceu:crystal_matrix_block'], 'awakened', 30000000000)
-    Reactor('draconic_crafting_injector', 'draconicevolution:awakened_crafting_injector', ['draconicevolution:wyvern_crafting_injector', '2x minecraft:nether_star', '2x draconicevolution:wyvern_core', '2x minecraft:dragon_egg'], 'wyvern', 6000000000)
-    Reactor('energy_core_stabilizer', 'draconicevolution:energy_core_stabilizer', ['draconicevolution:particle_generator', '8x gtceu:diamatine_empowered_block'], 'wyvern', 320000000)
-    Reactor('reactor_stabilizer', 'draconicevolution:reactor_stabilizer', ['draconicevolution:reactor_prt_stab_frame', 'draconicevolution:reactor_prt_rotor_full', 'draconicevolution:reactor_prt_focus_ring', '2x draconicevolution:draconic_energy_core', '4x draconicevolution:awakened_core'], 'awakened', 56320000000)
-    Reactor('draconic_energy_core', 'draconicevolution:draconic_energy_core', ['draconicevolution:wyvern_energy_core', '4x gtceu:draconium_awakened_ingot', '2x draconicevolution:awakened_core', '2x gtceu:energy_module', '2x gtceu:restonia_empowered_block'], 'awakened', 419430000)
-    Reactor('draconium_awakened_block', '5x gtceu:draconium_awakened_block', ['5x gtceu:draconium_block', '4x draconicevolution:wyvern_core', '2x draconicevolution:dragon_heart'], 'wyvern', 24000000000)
-    Reactor('awakened_core', 'draconicevolution:awakened_core', ['minecraft:nether_star', '4x draconicevolution:wyvern_core', '2x gtceu:draconium_awakened_block'], 'wyvern', 3000000000)
-    Reactor('chaotic_core', 'draconicevolution:chaotic_core', ['minecraft:nether_star', '4x draconicevolution:chaos_shard', '2x gtceu:neutronium_ingot', '2x gtceu:omnium_ingot'], 'chaotic', 30000000000)
-    Reactor('draconium_infused_obsidian', 'draconicevolution:infused_obsidian', ['2x gtceu:draconium_dust', '2x kubejs:pyrotheum_dust', '2x armorplus:compressed_obsidian', '2x armorplus:infused_lava_crystal', 'gtceu:dark_steel_block'], 'basic', 104857000)
-    Reactor('ender_energy_manipulator', 'kubejs:ender_energy_manipulator', ['1x minecraft:wither_skeleton_skull', '4x draconicevolution:draconium_core', '3x minecraft:ender_eye', '3x draconicevolution:wyvern_core'], 'wyvern', 320000000)
+    Reactor('echo_reaction_casing', 'kubejs:echo_reaction_casing', ['kubejs:sculk_reaction_casing', 'kubejs:echo_core', '2x kubejs:sculk_core', 'gtceu:sculk_compound_block', '4x minecraft:nether_star'], 'basic', 20480000)
+    Reactor('echo_core', 'kubejs:echo_core', ['gtceu:emeradic_empowered_block', '4x kubejs:sculk_core', '2x gtceu:nether_star_block', '2x armorplus:compressed_infused_lava_crystal'], 'basic', 175544000)
+    Reactor('abyssal_solar', '2x solarflux:sp_custom_abyssal', ['kubejs:abyssal_core', '2x solarflux:sp_custom_resonant', '2x kubejs:resonant_energy_core'], 'abyssal', 13421760000)
+    Reactor('nt_solar', 'solarflux:sp_custom_neutronium', ['solarflux:sp_custom_abyssal', '4x kubejs:abyssal_core', '4x gtceu:sculk_superconductor_single_wire', '2x gtceu:omnium_block'], 'abyssal', 134217600000)
+    Reactor('resonant_solar', '2x solarflux:sp_custom_resonant', ['kubejs:resonant_energy_core', '4x solarflux:sp_custom_echo', '4x enderio:sculk_superconductor_conduit', '2x kubejs:echo_energy_core'], 'resonant', 16777200000)
+    Reactor('echo_solar', '2x solarflux:sp_custom_echo', ['kubejs:echo_energy_core', '4x solarflux:sp_8', '4x enderio:sculk_compound_conduit', '2x gtceu:sculk_compound_block'], 'echo', 8388600000)
+    Reactor('reactor_core', 'kubejs:reactor_core', ['extendedcrafting:the_ultimate_catalyst', '4x gtceu:resonant_sculk_compound_block', '4x kubejs:abyss_shard', '2x kubejs:stabilized_einsteinium'], 'resonant', 26000000000)
+    Reactor('abyssal_reaction_casing', 'kubejs:abyssal_reaction_casing', ['kubejs:resonant_reaction_casing', '4x gtceu:neutronium_ingot', '4x kubejs:abyss_shard', '2x gtceu:crystal_matrix_block'], 'resonant', 30000000000)
+    Reactor('kubejs_reaction_casing', 'kubejs:resonant_reaction_casing', ['kubejs:echo_reaction_casing', '2x minecraft:nether_star', '2x kubejs:echo_core', '2x minecraft:dragon_egg'], 'echo', 6000000000)
+    Reactor('energy_core_stabilizer', 'kubejs:energy_core_stabilizer', ['kubejs:particle_generator', '8x gtceu:diamatine_empowered_block'], 'echo', 320000000)
+    Reactor('reactor_stabilizer', 'kubejs:reactor_stabilizer', ['kubejs:reactor_prt_stab_frame', '2x kubejs:resonant_energy_core', '4x kubejs:resonant_core'], 'resonant', 56320000000)
+    Reactor('resonant_energy_core', 'kubejs:resonant_energy_core', ['kubejs:echo_energy_core', '4x gtceu:resonant_sculk_compound_ingot', '2x kubejs:resonant_core', '2x gtceu:energy_module', '2x gtceu:restonia_empowered_block'], 'resonant', 419430000)
+    Reactor('sculk_compound_resonant_block', '5x gtceu:resonant_sculk_compound_block', ['5x gtceu:sculk_compound_block', '4x kubejs:echo_core', '2x kubejs:warden_heart'], 'echo', 24000000000)
+    Reactor('resonant_core', 'kubejs:resonant_core', ['minecraft:nether_star', '4x kubejs:echo_core', '2x gtceu:resonant_sculk_compound_block'], 'echo', 3000000000)
+    Reactor('abyssal_core', 'kubejs:abyssal_core', ['minecraft:nether_star', '4x kubejs:abyss_shard', '2x gtceu:neutronium_ingot', '2x gtceu:omnium_ingot'], 'abyssal', 30000000000)
+    Reactor('sculk_compound_infused_obsidian', 'kubejs:infused_obsidian', ['2x gtceu:sculk_compound_dust', '2x kubejs:pyrotheum_dust', '2x armorplus:compressed_obsidian', '2x armorplus:infused_lava_crystal', 'gtceu:dark_steel_block'], 'basic', 104857000)
+    Reactor('ender_energy_manipulator', 'kubejs:ender_energy_manipulator', ['1x minecraft:wither_skeleton_skull', '4x kubejs:sculk_core', '3x minecraft:ender_eye', '3x kubejs:echo_core'], 'echo', 320000000)
 
-    event.remove({ id: 'draconicevolution:infused_obsidian' })
 })

@@ -95,7 +95,7 @@
 			description: [
 				"With a &3Fusion Reactor&r, you can make Europium!"
 				""
-				"This element is needed for making things in &bDraconic Evolution&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
+				"This element is needed for making things in &bkubejs Evolution&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
 				""
 				"You make it by fusing molten &9Neodymium&r and &9Hydrogen&r."
 			]
@@ -296,7 +296,7 @@
 				""
 				"Neutronium is made from fusing molten &9Naquadria&r, a super-enriched form of &6Naquadah&r, with molten &9Americium&r, &2or from the Tier Eight Micro Miner.&r"
 				""
-				"After getting &6Chaotic Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
+				"After getting &6abyssal Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
 			]
 			id: "0DF2AF70CB1FEFB3"
 			tasks: [{

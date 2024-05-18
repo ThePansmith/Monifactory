@@ -86,8 +86,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
-    // Draconic Reactor
-    event.create('draconic_reactor')
+    // kubejs Reactor
+    event.create('sculk_reactor')
         .category('multiblock')
         .setEUIO('in')
         .setMaxIOSize(9, 1, 0, 0) //
@@ -310,12 +310,12 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-// Draconic Reactor
+// Sculk Reactor
 // WIP
-event.create('draconic_reactor', 'multiblock')
+event.create('sculk_reactor', 'multiblock')
 .rotationState(RotationState.NON_Y_AXIS)
-.recipeTypes('draconic_reactor')
-.appearanceBlock(() => Block.getBlock('kubejs:draconium_casing'))
+.recipeTypes('sculk_reactor')
+.appearanceBlock(() => Block.getBlock('kubejs:sculk_compound_casing'))
 .pattern(definition => FactoryBlockPattern.start()
 .aisle("#CCC#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#CCC#")
 .aisle("CCCCC", "CAIAC", "GAAAG", "GAAAG", "GAAAG", "CAIAC", "CCCCC")
@@ -323,7 +323,7 @@ event.create('draconic_reactor', 'multiblock')
 .aisle("CCCCC", "CAIAC", "GAAAG", "GAAAG", "GAAAG", "CAIAC", "CCCCC")
 .aisle("#CSC#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#CCC#")
 .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-.where('C', Predicates.blocks('kubejs:draconium_casing').setMinGlobalLimited(50)
+.where('C', Predicates.blocks('kubejs:sculk_compound_casing').setMinGlobalLimited(50)
     .or(Predicates.autoAbilities(definition.getRecipeTypes())))
 .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
 .where('I', Predicates.blocks('gtceu:hsse_frame'))
@@ -332,7 +332,7 @@ event.create('draconic_reactor', 'multiblock')
 .where('A', Predicates.air())
 .where('#', Predicates.any())
     .build())
-.workableCasingRenderer("kubejs:block/draconium/casing",
+.workableCasingRenderer("kubejs:block/sculk_compound/casing",
     "gtceu:block/multiblock/implosion_compressor", false)
 
 // Subatomic Digital Assembler
@@ -433,8 +433,8 @@ event.create('loot_superfabricator', 'multiblock')
             .aisle("#########", "#########", "####O####", "###CCC###", "##OCSCO##", "###CCC###", "####O####", "#########", "#########")
                 .where('S', Predicates.controller(Predicates.blocks(definition.get())))
                 .where('B', Predicates.blocks('gtceu:crystal_matrix_block'))
-                .where('N', Predicates.blocks('gtceu:draconic_superconductor_block'))
-                .where('D', Predicates.blocks('gtceu:draconium_frame'))
+                .where('N', Predicates.blocks('gtceu:sculk_superconductor_block'))
+                .where('D', Predicates.blocks('gtceu:sculk_compound_frame'))
                 .where('G', Predicates.blocks('gtceu:fusion_glass'))
                 .where('O', Predicates.blocks('kubejs:omnic_matrix_machine_casing'))
                 .where('C', Predicates.blocks('kubejs:omnic_matrix_machine_casing')
@@ -529,13 +529,13 @@ event.create('loot_superfabricator', 'multiblock')
         .workableCasingRenderer("kubejs:block/netherite/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-    // Draconic Fusion Reactor
+    // kubejs Fusion Reactor
     // Design will be something along the lines of https://i.imgur.com/jqhI84A.png
-    event.create('draconic_fusion_reactor', 'multiblock')
+    event.create('kubejs_fusion_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('draconic_reactor')
+        .recipeTypes('sculk_reactor')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
-        .appearanceBlock(() => Block.getBlock('kubejs:draconium_casing'))
+        .appearanceBlock(() => Block.getBlock('kubejs:sculk_compound_casing'))
         .pattern(definition => FactoryBlockPattern.start()
         .aisle("####KKKKKKK####", "####KKKKKKK####", "####NN###NN####", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "######CCC######", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "####NN###NN####", "####KKKKKKK####", "####KKKKKKK####")
         .aisle("##KKKKKKKKKKK##", "##KKKKKKKKKKK##", "##TNN#DDD#NNT##", "##TNN##D##NNT##", "##T####D####T##", "###############", "###############", "###############", "###############", "###############", "###############", "######WWW######", "####CCFFFCC####", "######WWW######", "###############", "###############", "###############", "###############", "###############", "###############", "##T####D####T##", "##TNN##D##NNT##", "##TNN#DDD#NNT##", "##KKKKKKKKKKK##", "##KKKKKKKKKKK##")
@@ -558,10 +558,10 @@ event.create('loot_superfabricator', 'multiblock')
             .or(Predicates.autoAbilities(definition.getRecipeTypes()))
             .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
         )
-        .where('W', Predicates.blocks('kubejs:awakened_draconium_casing'))
-        .where('F', Predicates.blocks('kubejs:awakened_fusion_casing'))
-        .where('C', Predicates.blocks('kubejs:awakened_fusion_coil'))
-        .where('D', Predicates.blocks('kubejs:draconium_casing'))
+        .where('W', Predicates.blocks('kubejs:resonant_sculk_compound_casing'))
+        .where('F', Predicates.blocks('kubejs:resonant_fusion_casing'))
+        .where('C', Predicates.blocks('kubejs:resonant_fusion_coil'))
+        .where('D', Predicates.blocks('kubejs:sculk_compound_casing'))
         .where('N', Predicates.blocks('gtceu:naquadah_alloy_frame'))
         .where('#', Predicates.any())
             .build())

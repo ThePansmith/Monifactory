@@ -107,8 +107,8 @@
         "niobium_titanium",
         "tungsten_carbide",
         "yttrium",
-        "draconium",
-        "draconium_awakened",
+        "sculk_compound",
+        "sculk_compound_resonant",
         "crystal_matrix"
     ],
     "priorityOverrides": {},

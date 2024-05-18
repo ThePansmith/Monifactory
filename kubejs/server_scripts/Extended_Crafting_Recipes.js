@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         ], {
             P: 'gtceu:tiny_neutronium_dust',
             E: "kubejs:eternal_catalyst",
-            C: 'draconicevolution:chaotic_core',
+            C: 'kubejs:abyssal_core',
             H: 'kubejs:heart_of_a_universe'
         }).id('kubejs:extended/infinity_catalyst');
 
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
 			'gtceu:tritanium_ingot',
 			'gtceu:duranium_ingot',
 			'gtceu:trinium_ingot',
-			'gtceu:draconium_ingot',
+			'gtceu:sculk_compound_ingot',
 			'gtceu:naquadah_ingot',
 			'gtceu:tiny_nether_star_dust',
 		]

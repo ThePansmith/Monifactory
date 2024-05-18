@@ -673,7 +673,7 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["Needs 2 &6Water Source Blocks&r around it to generate water."]
+			description: ["Needs 2 &6Water Source Blocks&r around it to generate water. You will also need a way to pull the water out of the accumulator, such as using the &5LV water pump&f as a &acover&f."]
 			icon: {
 				Count: 1b
 				id: "thermal:device_water_gen"
@@ -1779,7 +1779,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are seperate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine. This quest accepts a &aScrewdriver&r and &aCrowbar&r made from any material."
+				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are seperate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine."
 				""
 				"Here's a list of some covers there are in the game, and what they do:"
 				""

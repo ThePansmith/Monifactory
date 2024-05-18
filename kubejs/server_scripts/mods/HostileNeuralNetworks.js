@@ -186,6 +186,7 @@ ServerEvents.recipes(event => {
         ['skeleton', 'minecraft:bone', 'overworld', false],
         ['slime', 'minecraft:slime_ball', 'overworld', false],
         ['spider', 'minecraft:spider_eye', 'overworld', true],
+        ['warden', 'kubejs:deep_dark_data', 'overworld', true],
         ['witch', 'minecraft:glass_bottle', 'overworld', true],
         ['wither', 'minecraft:nether_star', 'nether', false],
         ['wither_skeleton', 'minecraft:wither_skeleton_skull', 'nether', true],

@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/draconium/coil_ctm"
+        "connection": "kubejs:block/sculk_compound/coil_ctm"
     }
 }

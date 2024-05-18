@@ -118,13 +118,7 @@ JEIEvents.hideItems(event => {
     event.hide(['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'])
 })
 
-JEIEvents.hideFluids(event => {
-    event.hide(/^nuclearcraft:.+/)
-})
-
 JEIEvents.addItems(event => {
-
-
     //Sophisticated Storage Stuff
     event.add([Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"oak"}')])
     event.add([Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}')])
@@ -134,4 +128,24 @@ JEIEvents.addItems(event => {
 
     // AE2 stuff
     event.add(Item.of('ae2:facade', {item: "gtceu:infinity_block"}))
+})
+
+JEIEvents.hideFluids(event => {
+    // hiding NuclearCraft Fluids
+    // get all nc fluids from index
+    let ncFluids = Fluid.getTypes().filter(id=>id.includes("nuclearcraft"))
+
+    // list of used fluids to not remove
+    let ncUsedFluid = ['nuclearcraft:hydrated_gelatin', 'nuclearcraft:gelatin', 'nuclearcraft:sugar', 'nuclearcraft:marshmallow', 'nuclearcraft:cocoa_butter',     'nuclearcraft:chocolate_liquor', 'nuclearcraft:unsweetened_chocolate', 'nuclearcraft:dark_chocolate', 'nuclearcraft:milk_chocolate', 'nuclearcraft:technical_water', 'nuclearcraft:high_pressure_steam', 'nuclearcraft:exhaust_steam']
+
+    // adds flowing fluid variants to the l ist so they aren't hidden
+    ncUsedFluid.forEach(fluid => {ncUsedFluid.push(fluid+"_flowing")})
+
+    // remove used fluids from the full list
+    ncFluids = ncFluids.filter((el) => !ncUsedFluid.includes(el))
+
+    // loops through the list and hides all the unwanted fluids for nc
+    ncFluids.forEach(element => {
+        event.hide(element)
+    })
 })
