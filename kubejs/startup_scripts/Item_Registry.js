@@ -277,9 +277,9 @@ StartupEvents.registry('item', event => {
     event.create('ruined_capacitor')
     event.create('ruined_sensor')
     event.create('ruined_emitter')
-    event.create('crushed_alien_capacitor')
+    event.create('crushed_capacitor')
     event.create('magnetic_capacitor_dust')
-    event.create('crushed_alien_sensor')
+    event.create('crushed_sensor')
     event.create('holmium_compound')
     event.create('holmium_oxide_glass_dust')
 
