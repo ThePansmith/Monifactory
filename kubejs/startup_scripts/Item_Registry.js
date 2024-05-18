@@ -190,6 +190,15 @@ StartupEvents.registry('item', event => {
     event.create('diamond_lattice')
     event.create('infinity_catalyst').rarity("epic")
 
+    // Draconic Evo Replacements
+    event.create('draconium_core')
+    event.create('wyvern_core')
+    event.create('awakened_core')
+    event.create('chaotic_core')
+    event.create('energy_core')
+    event.create('kubejs:particle_generator')
+    event.create('energy_core')
+
     //Infinity Tools
     event.create('infinity_file').rarity("epic")
     event.create('infinity_hammer').rarity("epic")

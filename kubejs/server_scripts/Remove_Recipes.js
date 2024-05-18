@@ -10,7 +10,6 @@ ServerEvents.recipes(event => {
 
 
     //GT
-    event.remove({ id: "gtceu:shapeless/fireclay_dust" })
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
 
     //FIXME will get fixed
