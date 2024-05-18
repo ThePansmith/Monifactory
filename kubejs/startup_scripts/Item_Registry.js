@@ -300,7 +300,7 @@ StartupEvents.registry('item', event => {
 
     // Monium 
     event.create('shattered_star_data')
-    event.create('field_stabilised_omnic-pulsar_compound')
+    event.create('field_stabilised_omnic_pulsar_compound')
     event.create('quasi_stable_neutron_star').displayName('Quasi-Stable Neutron Star')
 })
 ItemEvents.modification(event => {
