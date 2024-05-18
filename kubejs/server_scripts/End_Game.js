@@ -53,26 +53,26 @@ ServerEvents.recipes(event => {
     ).id('redstone_arsenal:materials/flux_plating')
 
 	// Vacuum Freezer
-	// Draconic Superconductor Wire
-    event.recipes.gtceu.vacuum_freezer("draconic_superconductor_wire")
-        .itemInputs('gtceu:draconium_single_wire')
-        .itemOutputs('gtceu:draconic_superconductor_single_wire')
+	// kubejs Superconductor Wire
+    event.recipes.gtceu.vacuum_freezer("sculk_superconductor_wire")
+        .itemInputs('gtceu:sculk_compound_single_wire')
+        .itemOutputs('gtceu:sculk_superconductor_single_wire')
         .inputFluids(Fluid.of('gtceu:nether_star', 144))
         .duration(100)
         .EUt(6000)
 
     // Chemical Reactor
 
-    event.recipes.gtceu.chemical_reactor("draconium_dust")
-        .itemInputs('gtceu:manyullyn_dust', 'minecraft:dragon_breath')
-        .itemOutputs('gtceu:draconium_dust')
+    event.recipes.gtceu.chemical_reactor("sculk_compound_dust")
+        .itemInputs('gtceu:manyullyn_dust', 'minecraft:sculk_catalyst')
+        .itemOutputs('gtceu:sculk_compound_dust')
         .duration(500)
         .EUt(2000)
 
-    //Draconic Stem Cells
+    //kubejs Stem Cells
     event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
     event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells' })
-    event.recipes.gtceu.chemical_reactor("draconic_stem_cells")
+    event.recipes.gtceu.chemical_reactor("kubejs_stem_cells")
         .itemInputs('minecraft:dragon_egg')
         .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500')
         .itemOutputs('64x gtceu:stem_cells', '64x gtceu:stem_cells')
@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
 
     //Blast Furnace
     event.recipes.gtceu.electric_blast_furnace("quantum_fluxed_eternium_heavy_plating")
-        .itemInputs('10x redstone_arsenal:flux_plating', 'gtceu:draconium_awakened_plate', '16x kubejs:quantum_flux')
+        .itemInputs('10x redstone_arsenal:flux_plating', 'gtceu:resonant_sculk_compound_plate', '16x kubejs:quantum_flux')
         .inputFluids('gtceu:krypton 1000')
         .itemOutputs('kubejs:quantum_fluxed_eternium_heavy_plating')
         .duration(200)
@@ -255,31 +255,6 @@ ServerEvents.recipes(event => {
         }, 4
     )
 
-
-    // Creative Capacitor
-    event.recipes.extendedcrafting.shaped_table(
-        'draconicevolution:creative_capacitor', [
-            "UPPCGCPPU",
-            'PPCGSGCPP',
-            'PCGSRSGCP',
-            'CGSRORSGC',
-            'GSROIORSG',
-            'CGSRORSGC',
-            'PCGSRSGCP',
-            'PPCGSGCPP',
-            "UPPCGCPPU",
-        ], {
-            U: 'kubejs:double_compressed_octadic_capacitor',
-            P: 'kubejs:compressed_octadic_capacitor',
-            C: 'enderio:octadic_capacitor',
-            G: 'thermal:flux_capacitor',
-            S: 'draconicevolution:wyvern_capacitor',
-            R: 'draconicevolution:draconic_capacitor',
-            O: 'kubejs:ultimate_power_storage',
-            I: 'kubejs:infinity_catalyst'
-        }, 4
-    )
-
     // Creative Efficiency Upgrade
     event.recipes.extendedcrafting.shaped_table(
         'thermal:machine_efficiency_creative_augment', [
@@ -319,7 +294,7 @@ ServerEvents.recipes(event => {
         ], {
             A: "kubejs:creative_storage_component",
             B: "gtceu:infinity_ingot",
-            C: "draconicevolution:creative_op_capacitor",
+            C: "kubejs:creative_op_capacitor",
             D: "thermal:machine_efficiency_creative_augment",
             E: "thermal:machine_catalyst_creative_augment",
             F: "ae2:creative_fluid_cell",
@@ -335,7 +310,7 @@ ServerEvents.recipes(event => {
             T: "gtceu:creative_tank",
             U: "ae2:creative_energy_cell",
             W: "gtceu:creative_energy",
-            X: "draconicevolution:creative_capacitor"
+            X: "kubejs:creative_capacitor"
         }, 4
     )
 

@@ -151,9 +151,9 @@ ServerEvents.recipes(event => {
             'D WW WW D'
         ], {
             L: 'kubejs:supercharged_laser_array',
-            D: 'gtceu:double_draconium_plate',
+            D: 'gtceu:double_sculk_compound_plate',
             G: 'kubejs:advanced_micro_miner_guidance_system',
-            P: 'draconicevolution:energy_core_stabilizer',
+            P: 'kubejs:energy_core_stabilizer',
             A: 'gtceu:luv_field_generator',
             E: 'kubejs:ender_energy_manipulator', // TODO: REPLACE WITH REAL DE COMPONENT
             W: 'kubejs:warp_engine'
@@ -204,8 +204,8 @@ ServerEvents.recipes(event => {
             U: 'kubejs:universal_navigator',
             A: 'gtceu:uv_field_generator',
             B: 'gtceu:ev_super_chest',
-            R: 'draconicevolution:reactor_stabilizer',
-            C: 'draconicevolution:reactor_core',
+            R: 'kubejs:reactor_stabilizer',
+            C: 'kubejs:reactor_core',
             W: 'kubejs:warp_engine'
         }
     )
@@ -226,9 +226,9 @@ ServerEvents.recipes(event => {
         ], {
             N: 'gtceu:double_neutronium_plate',
             U: 'kubejs:universal_navigator',
-            C: 'draconicevolution:reactor_core',
+            C: 'kubejs:reactor_core',
             P: 'solarflux:sp_custom_neutronium',
-            R: 'draconicevolution:reactor_stabilizer',
+            R: 'kubejs:reactor_stabilizer',
             A: 'gtceu:iv_quantum_chest',
             W: 'kubejs:warp_engine'
         }
@@ -253,8 +253,8 @@ ServerEvents.recipes(event => {
             M: 'gtceu:double_crystal_matrix_plate',
             P: 'solarflux:sp_custom_neutronium',
             W: 'kubejs:warp_engine',
-            D: 'draconicevolution:reactor_core',
-            S: 'draconicevolution:reactor_stabilizer'
+            D: 'kubejs:reactor_core',
+            S: 'kubejs:reactor_stabilizer'
         }
     )
 
@@ -279,9 +279,9 @@ ServerEvents.recipes(event => {
             P: 'solarflux:sp_custom_infinity',
             C: 'gtceu:uhv_quantum_chest',
             W: 'kubejs:warp_engine',
-            D: 'draconicevolution:creative_op_capacitor',
-            S: 'draconicevolution:reactor_stabilizer',
-            Q: 'kubejs:field_stabilised_omnic_pulsar_compound'
+            D: 'gtceu:creative_energy',
+            S: 'kubejs:reactor_stabilizer',
+            Q: 'kubejs:Field_Stabilised_Omnic-Pulsar_Compound'
         }
     )
     //
@@ -379,8 +379,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('warp_engine')
         .itemInputs('gtceu:microversium_frame',
             '6x gtceu:enderium_plate',
-            'draconicevolution:dislocation_inhibitor', /* Item dislocation inhibitor */
-            'draconicevolution:advanced_magnet', /* DE Magnet */
+            'kubejs:dislocation_inhibitor', /* Item dislocation inhibitor */
+            'kubejs:advanced_magnet', /* DE Magnet */
             '2x #forge:plates/crystal_matrix',
             '2x gtceu:iv_field_generator',
             Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT(),

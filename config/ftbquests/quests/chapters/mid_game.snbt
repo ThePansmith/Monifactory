@@ -1281,7 +1281,7 @@
 			description: [
 				"&9Diesel&r is a mixture of &9Light Fuel&r and &9Heavy Fuel&r."
 				""
-				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6Draconium &2(unless you use Gasoline instead)."
+				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6sculk_compound &2(unless you use Gasoline instead)."
 				""
 				"The performance of Combustion Generators is also improved, but you probably want to refine Diesel anyway."
 				""
@@ -1475,7 +1475,7 @@
 		{
 			dependencies: ["21B16C005E9E3B0E"]
 			description: [
-				"&2Gasoline is a powerful combustion fuel, generating 1600 EU per mB of fluid. It can also be substituted for Cetane-Boosted Diesel in Draconium production."
+				"&2Gasoline is a powerful combustion fuel, generating 1600 EU per mB of fluid. It can also be substituted for Cetane-Boosted Diesel in sculk_compound production."
 				""
 				"Gasoline is made of:"
 				"- 16 parts Naphtha"
@@ -1507,7 +1507,7 @@
 		{
 			dependencies: ["4C76017864258EA9"]
 			description: [
-				"&2High-Octane Gasoline is the most powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in Draconium production, using 75%% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
+				"&2High-Octane Gasoline is the most powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in sculk_compound production, using 75%% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
 				""
 				"To refine Gasoline to High-Octane Gasoline, you will need:"
 				"- 20 parts Gasoline"
@@ -3060,7 +3060,7 @@
 				"10C4A6FF23A4DF17"
 			]
 			description: [
-				"Mixing &9Diesel&r (or less efficiently, &9Bio Diesel&r) with &9Tetranitromethane&r in an &3HV Mixer&r &2or Large Chemical Reactor&r produces &2Cetane-Boosted Diesel&r, an extremely potent fuel needed later for &6Draconium&r production."
+				"Mixing &9Diesel&r (or less efficiently, &9Bio Diesel&r) with &9Tetranitromethane&r in an &3HV Mixer&r &2or Large Chemical Reactor&r produces &2Cetane-Boosted Diesel&r, an extremely potent fuel needed later for &6sculk_compound&r production."
 				""
 				"If you have a very robust petrochemical infrastructure and can afford to burn it, this fuel along with proper oxygenation &2is a potent fuel in the Large Combustion Engine and Extreme Combustion Engine, producing &2720 EU/mB of fuel."
 			]

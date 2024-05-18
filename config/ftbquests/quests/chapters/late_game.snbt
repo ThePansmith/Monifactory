@@ -463,7 +463,7 @@
 		{
 			dependencies: ["39FD6F1076559156"]
 			description: [
-				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r, the &3Fusion Reactor&r, and some parts from &9Draconic Evolution&r."
+				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r, the &3Fusion Reactor&r, and some parts from &9kubejs Evolution&r."
 				""
 				"To begin, craft a &3Scanner&r and a few &6Data Sticks&r. The initial Scanner recipes run at &6HV&r, but &1IV&r is required relatively soon so might as well make that one."
 				""
@@ -1273,7 +1273,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Draconium is a complex material needed in vast quantities."
+				"Sculk Compound is a complex material needed in vast quantities."
 				""
 				"You'll likely have come by some dust while mining in the End, but you can also create it with &6Dragon's Breath&r and &6Manyullyn&r."
 			]
@@ -1286,9 +1286,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75321CAE019C190A"
-				item: "gtceu:draconium_dust"
+				item: "gtceu:sculk_compound_dust"
 				type: "item"
 			}]
+			title: "Sculk Compound Dust"
 			x: 15.25d
 			y: 6.25d
 		}
@@ -1298,11 +1299,11 @@
 				"7F669657313F2E62"
 			]
 			description: [
-				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Draconium&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
+				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6sculk_compound&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
 				""
-				"Draconium gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
+				"sculk_compound gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Draconium: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Draconium, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft Draconium."
+				"There are several ways to make sculk_compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain sculk_compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft sculk_compound."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1316,10 +1317,10 @@
 			size: 2.0d
 			tasks: [{
 				id: "7D3DF1D033AF6DC9"
-				item: "gtceu:draconium_ingot"
+				item: "gtceu:sculk_compound_ingot"
 				type: "item"
 			}]
-			title: "&2Draconium Ingots"
+			title: "&2sculk_compound Ingots"
 			x: 17.25d
 			y: 8.25d
 		}
@@ -1365,7 +1366,7 @@
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"Coating &6Draconium Wire&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
+				"Coating &6Sculk Compound Wire&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
 				"These wires losslessly transmit \"MAX\" tier, which is effectively infinite transfer rate. This means they will work for any tier of power. 1x wires handle 4 amps, meaning 4x wires can handle 16 amps, and 16x wires can handle 64 amps."
 				""
@@ -1380,7 +1381,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3C6395EDE0AE8FE3"
-				item: "gtceu:draconic_superconductor_single_wire"
+				item: "gtceu:sculk_superconductor_single_wire"
 				type: "item"
 			}]
 			title: "Superconductor Wire"
@@ -1670,7 +1671,7 @@
 			description: [
 				"With a &3Fusion Reactor&r, you can make Europium!"
 				""
-				"This element is needed for making things in &bDraconic Evolution&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
+				"This element is needed for making things in &bkubejs Evolution&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
 				""
 				"You make it by fusing molten &9Neodymium&r and &9Hydrogen&r."
 			]
@@ -1789,17 +1790,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "27BE677925582139"
-				item: "gtceu:double_draconium_plate"
+				item: "gtceu:double_sculk_compound_plate"
 				type: "item"
 			}]
-			title: "&2Draconium Double Plates"
+			title: "&2sculk_compound Double Plates"
 			x: 23.25d
 			y: 8.25d
 		}
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"&6Draconic Cores&r are the first crafting step into &bDraconic Evolution&r."
+				"&6Sculk Cores&r are the first crafting step into &bmultiblock/line name tbd&r."
 				""
 				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &eFusion Crafting&r."
 			]
@@ -1812,10 +1813,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "712064FEEFCC29AA"
-				item: "draconicevolution:draconium_core"
+				item: "kubejs:sculk_core"
 				type: "item"
 			}]
-			title: "Draconic Cores"
+			title: "&9Sculk Cores"
 			x: 25.25d
 			y: 8.25d
 		}
@@ -1843,7 +1844,7 @@
 		}
 		{
 			dependencies: ["5FE96C30454A0374"]
-			description: ["&6Dragon Hearts&r are needed for both &6Awakened Draconium&r and &6The Ultimate Material&r."]
+			description: ["&6Dragon Hearts&r are needed for both &6resonant sculk_compound&r and &6The Ultimate Material&r."]
 			id: "7FAB6FD0A054443E"
 			rewards: [{
 				id: "2AA894050D239DEE"
@@ -1853,7 +1854,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7615C990816E6132"
-				item: "draconicevolution:dragon_heart"
+				item: "kubejs:dragon_heart"
 				type: "item"
 			}]
 			title: "Dragon Hearts"
@@ -1863,15 +1864,15 @@
 		{
 			dependencies: ["7C89BC235C988689"]
 			description: [
-				"&bDraconic Evolution&r features &eFusion Crafting&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
+				"&9Various items can be empowered with sculk&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
 				""
-				"You'll need eight &6Basic Fusion Crafting Injectors&r to upgrade any additional injectors you make to Wyvern Tier."
+				"You'll need eight &6Sculk Reactopns Casings&r to upgrade any additional injectors you make to echo Tier."
 				""
 				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
 				""
-				"&5Until Fusion Crafting is ported, you get to use a (albet nerfed) version of a new Post-Tank Multiblock, the Draconic Fusion Reactor. The final version will not require the injectors to be in the machine, have a different design, and will be able to parallelize."
+				"&5DE is currently in the process of being removed, the draconic reactor will be replaced with one a bit more fitting. The quest details will remain unchanged until said multiblock is finalized."
 			]
-			icon: "draconicevolution:basic_crafting_injector"
+			icon: "kubejs:sculk_reaction_casing"
 			id: "713FAECEE5046121"
 			rewards: [{
 				id: "1334EFA413965845"
@@ -1882,26 +1883,26 @@
 			tasks: [
 				{
 					id: "3C9333ECA3F6B5F9"
-					item: "gtceu:draconic_reactor"
+					item: "gtceu:sculk_reactor"
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "5756875831B786CB"
-					item: "draconicevolution:basic_crafting_injector"
+					item: "kubejs:sculk_reaction_casing"
 					type: "item"
 				}
 			]
-			title: "Basic Fusion Injector"
+			title: "&9Shulk Reaction Casings"
 			x: 27.25d
 			y: 8.25d
 		}
 		{
 			dependencies: ["713FAECEE5046121"]
 			description: [
-				"&6Wyvern Cores&r are the second tier of cores, used for intermediate crafting recipes."
+				"&6Echo Cores&r are the second tier of cores, used for intermediate crafting recipes."
 				""
-				"Each Wyvern Core is made via fusion crafting and the setup needs eight &6Basic Fusion Crafting Injectors&r."
+				"Each Echo Core is made via fusion crafting and the setup needs eight &6Shulk Reaction Casings&r."
 			]
 			id: "20CB8F878CADA235"
 			rewards: [{
@@ -1912,17 +1913,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "5A46206776E20233"
-				item: "draconicevolution:wyvern_core"
+				item: "kubejs:echo_core"
 				type: "item"
 			}]
-			title: "Wyvern Core"
+			title: "&9Echo Cores"
 			x: 27.25d
 			y: 10.25d
 		}
 		{
 			dependencies: ["6F5579E1646634C7"]
 			description: [
-				"&6Draconic Fusion Crafting Injectors&r are the penultimate tier of injectors for fusion crafting."
+				"&6Resonant Reaction Casing&r are the penultimate tier of injectors for fusion crafting."
 				""
 				"You'll need a fusion crafting setup with ten of these for the next tier of injector, and the next tier you'll also need ten injectors, so consider making 20 of these."
 			]
@@ -1935,17 +1936,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "09CD18933F28FA28"
-				item: "draconicevolution:awakened_crafting_injector"
+				item: "kubejs:resonant_reaction_casing"
 				type: "item"
 			}]
-			title: "Draconic Fusion Injectors"
+			title: "&9Resonant Reaction Casings"
 			x: 25.25d
 			y: 12.25d
 		}
 		{
 			dependencies: ["20CB8F878CADA235"]
 			description: [
-				"&6Basic Fusion Crafting Injectors&r can be upgraded to Wyvern Tier via fusion crafting."
+				"&6Sculk Reactions Casings&r can be upgraded to Echo Tier via fusion crafting."
 				""
 				"Technically you only need six of these to start making the next tier of injectors, but some recipes will need more than that. Plan on making at least twenty-six of these."
 			]
@@ -1959,10 +1960,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "581D806823B709C3"
-				item: "draconicevolution:wyvern_crafting_injector"
+				item: "kubejs:echo_reaction_casing"
 				type: "item"
 			}]
-			title: "Wyvern Fusion Injectors"
+			title: "&9Echo Reaction Casings"
 			x: 27.25d
 			y: 12.25d
 		}
@@ -2023,9 +2024,9 @@
 		{
 			dependencies: ["7FAB6FD0A054443E"]
 			description: [
-				"&6Awakened Draconium&r is a powerful material used for crafting high-grade components, items, and machines from &bDraconic Evolution&r."
+				"&6Resonant Sculk Compound&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r."
 				""
-				"Five &6Draconium Blocks&r can be processed in a Wyvern Tier fusion crafting setup to create an equal output of five &6Awakened Draconium Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
+				"Five &6Sculk Compound Blocks&r can be processed in a Echo Tier fusion crafting setup to create an equal output of five &6Resonant Sculk Compound Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
 			]
 			id: "0562D9F4C441EAF9"
 			rewards: [{
@@ -2036,19 +2037,19 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "50929C3F5F044E40"
-				item: "gtceu:draconium_awakened_block"
+				item: "gtceu:resonant_sculk_compound_block"
 				type: "item"
 			}]
-			title: "Awakened Draconium"
+			title: "&9Resonant Sculk Compound"
 			x: 24.75d
 			y: 18.25d
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"&6Awakened Cores&r are the third tier of &bDraconic Evolution&r core, and are common components of endgame recipes."
+				"&6Resonant Cores&r are the third tier of &bkubejs Evolution&r core, and are common components of endgame recipes."
 				""
-				"These cores are made with &6Awakened Draconium&r and also cost &e3 Billion RF&r to craft."
+				"These cores are made with &6resonant sculk_compound&r and also cost &e3 Billion RF&r to craft."
 			]
 			id: "03F04B4005F2CBE1"
 			rewards: [{
@@ -2059,17 +2060,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "71171679FDF638A6"
-				item: "draconicevolution:awakened_core"
+				item: "kubejs:resonant_core"
 				type: "item"
 			}]
-			title: "Awakened Core"
+			title: "Resonant Core"
 			x: 24.75d
 			y: 21.0d
 		}
 		{
 			dependencies: ["03F04B4005F2CBE1"]
 			description: [
-				"&6Awakened Draconium&r, &6Chaos Shards&r, and &6Stabilized Einsteinium&r can be used in a Draconic Tier fusion crafting setup to create a &6Draconic Reactor Core&r."
+				"&6resonant sculk_compound&r, &6Chaos Shards&r, and &6Stabilized Einsteinium&r can be used in a kubejs Tier fusion crafting setup to create a &6kubejs Reactor Core&r."
 				""
 				"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some Endgame items."
 			]
@@ -2082,10 +2083,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "69DC07184B74DB07"
-				item: "draconicevolution:reactor_core"
+				item: "kubejs:reactor_core"
 				type: "item"
 			}]
-			title: "Draconic Reactor Core"
+			title: "kubejs Reactor Core"
 			x: 22.75d
 			y: 21.0d
 		}
@@ -2126,7 +2127,7 @@
 			description: [
 				"The &6Reactor Stabilizer&r is a component needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."
 				""
-				"They are made in a Chaotic Tier fusion crafting setup, requiring a whopping &e56 Billion total RF each&r. You're gonna need some serious power generation and crafting infrastructure to make everything for these."
+				"They are made in a abyssal Tier fusion crafting setup, requiring a whopping &e56 Billion total RF each&r. You're gonna need some serious power generation and crafting infrastructure to make everything for these."
 			]
 			id: "483652BAEF59E125"
 			rewards: [{
@@ -2137,7 +2138,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6D27E0C7357E8F5A"
-				item: "draconicevolution:reactor_stabilizer"
+				item: "kubejs:reactor_stabilizer"
 				type: "item"
 			}]
 			title: "Reactor Stabilizer"
@@ -2147,9 +2148,9 @@
 		{
 			dependencies: ["03F04B4005F2CBE1"]
 			description: [
-				"&6Chaos Shards&r are an endgame component for &bDraconic Evolution&r."
+				"&6Chaos Shards&r are an endgame component for &bkubejs Evolution&r."
 				""
-				"They are the base material for Chaotic Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Chaos Dragon Data&r."
+				"They are the base material for abyssal Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Chaos Dragon Data&r."
 			]
 			id: "235C1E5B2C58B5AF"
 			rewards: [{
@@ -2160,7 +2161,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "31B73CD828CA2128"
-				item: "draconicevolution:chaos_shard"
+				item: "kubejs:chaos_shard"
 				type: "item"
 			}]
 			title: "Chaos Shards"
@@ -2180,7 +2181,7 @@
 				""
 				"Neutronium is made from fusing molten &9Naquadria&r, a super-enriched form of &6Naquadah&r, with molten &9Americium&r, &2or from the Tier Eight Micro Miner.&r"
 				""
-				"After getting &6Chaotic Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
+				"After getting &6abyssal Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
 			]
 			id: "22E50A6923EBF5CB"
 			rewards: [
@@ -2238,10 +2239,10 @@
 			size: 2.0d
 			tasks: [{
 				id: "140C83AB5FE8450E"
-				item: "draconicevolution:chaotic_crafting_injector"
+				item: "kubejs:abyssal_reaction_casing"
 				type: "item"
 			}]
-			title: "Chaotic Fusion Injectors"
+			title: "Abyssal Fusion Injectors"
 			x: 29.25d
 			y: 24.0d
 		}
@@ -2287,19 +2288,19 @@
 		{
 			dependencies: ["6F5579E1646634C7"]
 			description: [
-				"Now that you have &6Wyvern Fusion Injectors&r, you can make the &eEnergy Storage Core&r from &bDraconic Evolution&r. It's a great way to store all the energy required to craft power-hungry late game items."
+				"Now that you have &6echo Fusion Injectors&r, you can make the &eEnergy Storage Core&r from &bkubejs Evolution&r. It's a great way to store all the energy required to craft power-hungry late game items."
 				""
 				"The &eEnergy Storage Core&r is a multiblock structure that can be upgraded to store increasingly immense amounts of RF energy."
 				""
-				"See the &bDraconic Evolution&r manual for more information on the material requirements for each tier, and more information on the &6Stabilizers&r and &6Pylons&r."
+				"See the &bkubejs Evolution&r manual for more information on the material requirements for each tier, and more information on the &6Stabilizers&r and &6Pylons&r."
 				""
 				"&6Energy Pylons&r are required to input and output energy from the core. Each pylon allows movement in a single direction, so you need at least two."
 				""
 				"Once you have the materials together for your desired tier, the structure can build itself: simply access the GUI of the &6Energy Core&r, set the tier, and click Assemble. Items will be automatically used from your inventory. Once the structure is built, you can access the core's GUI again through &6Energy Core Stabilizers&r to activate it."
 				""
-				"It is recommended to postpone Tier 8 until after you reach the &9Creative Tank&r, as it requires large amounts of &6Awakened Draconium&r."
+				"It is recommended to postpone Tier 8 until after you reach the &9Creative Tank&r, as it requires large amounts of &6resonant sculk_compound&r."
 			]
-			icon: "draconicevolution:energy_core"
+			icon: "kubejs:energy_core"
 			id: "48D3640053770BD8"
 			rewards: [{
 				count: 2
@@ -2312,19 +2313,22 @@
 			tasks: [
 				{
 					id: "6C9957529780CBFB"
-					item: "draconicevolution:energy_core"
+					item: "kubejs:energy_core"
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "62599F4AC08F92EB"
-					item: { Count: 2b, id: "draconicevolution:energy_pylon" }
+					item: {
+						Count: 2b
+						id: "kubejs:energy_pylon"
+					}
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "0E0CB12516222A89"
-					item: { Count: 4b, id: "draconicevolution:energy_core_stabilizer" }
+					item: { Count: 4b, id: "kubejs:energy_core_stabilizer" }
 					type: "item"
 				}
 			]
@@ -2335,7 +2339,7 @@
 		{
 			dependencies: ["6DAB13A7BDECE94E"]
 			description: [
-				"&3World Accelerators&r accelerate the ticks of any non-GregTech machine adjacent to them. This is handy for &9Draconic Evolution Fusion&r, which is a slow process otherwise."
+				"&3World Accelerators&r accelerate the ticks of any non-GregTech machine adjacent to them. This is handy for &9kubejs Evolution Fusion&r, which is a slow process otherwise."
 				""
 				"The &6HV&r WA accelerates by 8x, the &5EV&r WA accelerates by 16x, and the &1IV&r WA accelerates by 32x. They require an input of 8A of their voltage tier. Be sure to right-click the WA once with a &aScrewdriver&r to set it to &eTile Entity Mode&r, otherwise it will accelerate random ticks in a radius around it instead."
 				""
@@ -2385,7 +2389,7 @@
 		{
 			dependencies: ["521977C7165229F1"]
 			description: [
-				"The &3Power Substation&r is GregTech's native mass power storage solution. At &cZPM&r tier and above, it can rival the &6Tier 7 Energy Core&r from Draconic Evolution."
+				"The &3Power Substation&r is GregTech's native mass power storage solution. At &cZPM&r tier and above, it can rival the &6Tier 7 Energy Core&r from kubejs Evolution."
 				""
 				"The structure can accept up to 18 layers of 3x3 &aLapotronic Capacitor&r blocks. GT batteries can hold &96x&r the EU their item counterparts can hold when crafted into a &aLapotronic Capacitor&r. The structure need not be made of all of the same tier blocks, but it must be full, so fill any empty space with &aEmpty Capacitor Blocks&r."
 				""

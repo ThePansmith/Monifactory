@@ -54,10 +54,11 @@ StartupEvents.registry('item', event => {
     event.create('unprepared_space_boots').displayName("Unprepared Space Boots")
 
     //Data
-    event.create('lair_of_the_chaos_guardian_data').displayName("§dLair Of The Chaos Guardian Data")
+    event.create('lair_of_the_warden_data').displayName("§dLair Of The Warden Data")
     event.create('stellar_creation_data').displayName("§bStellar Creation Data")
     event.create('universe_creation_data').displayName("§dUniverse Creation Data")
     event.create('impossible_realm_data').displayName("§bImpossible Realm Data")
+    event.create('deep_dark_data').displayName("§dDeep Dark Data")
     event.create('wither_realm_data').displayName("§dWither Realm Data")
     event.create('dragon_lair_data').displayName("§dDragon Lair Data")
 
@@ -111,6 +112,7 @@ StartupEvents.registry('item', event => {
     event.create('grains_of_innocence').displayName("Grains of Innocence")
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
     event.create('moon_dust').displayName("Moon Dust")
+    event.create('warden_horn').displayName("Warden Horn")
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
     event.create('ender_star').displayName('§dEnder Star').glow(true)
     event.create('endest_star').displayName('§dEndest Star').glow(true)
@@ -189,6 +191,24 @@ StartupEvents.registry('item', event => {
     //Avaritia Replacements
     event.create('diamond_lattice')
     event.create('infinity_catalyst').rarity("epic")
+
+    // kubejs Evo Replacements
+    event.create('sculk_core')
+    event.create('echo_core')
+    event.create('resonant_core')
+    event.create('abyssal_core')
+    event.create('crafting_core')
+    event.create('energy_core')
+    event.create('energy_core_stabilizer')
+    event.create('particle_generator')
+    event.create('reactor_stabilizer')
+    event.create('reactor_prt_stab_frame')
+    event.create('reactor_core')
+    event.create('resonant_energy_core')
+    event.create('echo_energy_core')
+    event.create('abyss_shard')
+    event.create('warden_heart')
+    event.create('infused_obsidian')
 
     //Infinity Tools
     event.create('infinity_file').rarity("epic")
