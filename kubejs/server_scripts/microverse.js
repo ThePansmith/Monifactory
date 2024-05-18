@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
             P: 'solarflux:sp_custom_infinity',
             C: 'gtceu:uhv_quantum_chest',
             W: 'kubejs:warp_engine',
-            D: 'kubejs:creative_op_capacitor',
+            D: 'gtceu:creative_energy',
             S: 'kubejs:reactor_stabilizer',
             Q: 'kubejs:Field_Stabilised_Omnic-Pulsar_Compound'
         }

@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:universe_creation_data')
         .itemOutputs('kubejs:corrupted_universe_data')
         .circuit(1)
-        .CWUt(64)
+        .CWUt(32)
         .duration(200)
         .EUt(16000)
 })
