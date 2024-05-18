@@ -2172,7 +2172,7 @@
 		}
 		{
 			dependencies: ["281DE48E7260BC8E"]
-			description: ["&6abyssal Cores&r are the ultimate tier of &bkubejs Evolution&r core, used for the most powerful and advanced items."]
+			description: ["&6Abyssal Cores&r are the ultimate tier of &bSculk&r core, used for the most powerful and advanced items."]
 			id: "3171F83E24C8F740"
 			size: 1.0d
 			subtitle: "The culmination of so much effort."
@@ -3325,14 +3325,14 @@
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: ["The &6kubejs Fusion Reactor&r is a even stronger version of the &9kubejs Reactor&r, capable of running hundreds of recipes at once."]
+			description: ["The &6Sculk Fusion Reactor&r is a even stronger version of the &9Sculk Reactor&r, capable of running hundreds of recipes at once."]
 			id: "6138FB8766AD6F8C"
 			tasks: [{
 				id: "0BE78C6BD408CFEB"
 				item: "gtceu:kubejs_fusion_reactor"
 				type: "item"
 			}]
-			title: "&9kubejs Fusion Reactor"
+			title: "&9Sculk Fusion Reactor"
 			x: 30.25d
 			y: -21.25d
 		}

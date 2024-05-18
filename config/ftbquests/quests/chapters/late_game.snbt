@@ -1273,7 +1273,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"sculk_compound is a complex material needed in vast quantities."
+				"Sculk Compound is a complex material needed in vast quantities."
 				""
 				"You'll likely have come by some dust while mining in the End, but you can also create it with &6Dragon's Breath&r and &6Manyullyn&r."
 			]
@@ -1289,6 +1289,7 @@
 				item: "gtceu:sculk_compound_dust"
 				type: "item"
 			}]
+			title: "Sculk Compound Dust"
 			x: 15.25d
 			y: 6.25d
 		}
@@ -1365,7 +1366,7 @@
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"Coating &6sculk_compound Wire&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
+				"Coating &6Sculk Compound Wire&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
 				"These wires losslessly transmit \"MAX\" tier, which is effectively infinite transfer rate. This means they will work for any tier of power. 1x wires handle 4 amps, meaning 4x wires can handle 16 amps, and 16x wires can handle 64 amps."
 				""
@@ -1380,7 +1381,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3C6395EDE0AE8FE3"
-				item: "gtceu:kubejs_superconductor_single_wire"
+				item: "gtceu:sculk_superconductor_single_wire"
 				type: "item"
 			}]
 			title: "Superconductor Wire"
@@ -1799,7 +1800,7 @@
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"&6kubejs Cores&r are the first crafting step into &bkubejs Evolution&r."
+				"&6Sculk Cores&r are the first crafting step into &bmultiblock/line name tbd&r."
 				""
 				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &eFusion Crafting&r."
 			]
@@ -1815,7 +1816,7 @@
 				item: "kubejs:sculk_core"
 				type: "item"
 			}]
-			title: "kubejs Cores"
+			title: "&9Sculk Cores"
 			x: 25.25d
 			y: 8.25d
 		}
@@ -1863,13 +1864,13 @@
 		{
 			dependencies: ["7C89BC235C988689"]
 			description: [
-				"&bkubejs Evolution&r features &eFusion Crafting&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
+				"&9Various items can be empowered with sculk&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
 				""
-				"You'll need eight &6Basic Fusion Crafting Injectors&r to upgrade any additional injectors you make to echo Tier."
+				"You'll need eight &6Sculk Reactopns Casings&r to upgrade any additional injectors you make to echo Tier."
 				""
 				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
 				""
-				"&5Until Fusion Crafting is ported, you get to use a (albet nerfed) version of a new Post-Tank Multiblock, the kubejs Fusion Reactor. The final version will not require the injectors to be in the machine, have a different design, and will be able to parallelize."
+				"&5DE is currently in the process of being removed, the draconic reactor will be replaced with one a bit more fitting. The quest details will remain unchanged until said multiblock is finalized."
 			]
 			icon: "kubejs:sculk_reaction_casing"
 			id: "713FAECEE5046121"
@@ -1892,16 +1893,16 @@
 					type: "item"
 				}
 			]
-			title: "Basic Fusion Injector"
+			title: "&9Shulk Reaction Casings"
 			x: 27.25d
 			y: 8.25d
 		}
 		{
 			dependencies: ["713FAECEE5046121"]
 			description: [
-				"&6echo Cores&r are the second tier of cores, used for intermediate crafting recipes."
+				"&6Echo Cores&r are the second tier of cores, used for intermediate crafting recipes."
 				""
-				"Each echo Core is made via fusion crafting and the setup needs eight &6Basic Fusion Crafting Injectors&r."
+				"Each Echo Core is made via fusion crafting and the setup needs eight &6Shulk Reaction Casings&r."
 			]
 			id: "20CB8F878CADA235"
 			rewards: [{
@@ -1915,14 +1916,14 @@
 				item: "kubejs:echo_core"
 				type: "item"
 			}]
-			title: "echo Core"
+			title: "&9Echo Cores"
 			x: 27.25d
 			y: 10.25d
 		}
 		{
 			dependencies: ["6F5579E1646634C7"]
 			description: [
-				"&6kubejs Fusion Crafting Injectors&r are the penultimate tier of injectors for fusion crafting."
+				"&6Resonant Reaction Casing&r are the penultimate tier of injectors for fusion crafting."
 				""
 				"You'll need a fusion crafting setup with ten of these for the next tier of injector, and the next tier you'll also need ten injectors, so consider making 20 of these."
 			]
@@ -1938,14 +1939,14 @@
 				item: "kubejs:resonant_reaction_casing"
 				type: "item"
 			}]
-			title: "kubejs Fusion Injectors"
+			title: "&9Resonant Reaction Casings"
 			x: 25.25d
 			y: 12.25d
 		}
 		{
 			dependencies: ["20CB8F878CADA235"]
 			description: [
-				"&6Basic Fusion Crafting Injectors&r can be upgraded to echo Tier via fusion crafting."
+				"&6Sculk Reactions Casings&r can be upgraded to Echo Tier via fusion crafting."
 				""
 				"Technically you only need six of these to start making the next tier of injectors, but some recipes will need more than that. Plan on making at least twenty-six of these."
 			]
@@ -1962,7 +1963,7 @@
 				item: "kubejs:echo_reaction_casing"
 				type: "item"
 			}]
-			title: "echo Fusion Injectors"
+			title: "&9Echo Reaction Casings"
 			x: 27.25d
 			y: 12.25d
 		}
@@ -2023,9 +2024,9 @@
 		{
 			dependencies: ["7FAB6FD0A054443E"]
 			description: [
-				"&6resonant sculk_compound&r is a powerful material used for crafting high-grade components, items, and machines from &bkubejs Evolution&r."
+				"&6Resonant Sculk Compound&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r."
 				""
-				"Five &6sculk_compound Blocks&r can be processed in a echo Tier fusion crafting setup to create an equal output of five &6resonant sculk_compound Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
+				"Five &6Sculk Compound Blocks&r can be processed in a Echo Tier fusion crafting setup to create an equal output of five &6Resonant Sculk Compound Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
 			]
 			id: "0562D9F4C441EAF9"
 			rewards: [{
@@ -2039,14 +2040,14 @@
 				item: "gtceu:resonant_sculk_compound_block"
 				type: "item"
 			}]
-			title: "resonant sculk_compound"
+			title: "&9Resonant Sculk Compound"
 			x: 24.75d
 			y: 18.25d
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"&6resonant Cores&r are the third tier of &bkubejs Evolution&r core, and are common components of endgame recipes."
+				"&6Resonant Cores&r are the third tier of &bkubejs Evolution&r core, and are common components of endgame recipes."
 				""
 				"These cores are made with &6resonant sculk_compound&r and also cost &e3 Billion RF&r to craft."
 			]
@@ -2062,7 +2063,7 @@
 				item: "kubejs:resonant_core"
 				type: "item"
 			}]
-			title: "resonant Core"
+			title: "Resonant Core"
 			x: 24.75d
 			y: 21.0d
 		}
@@ -2241,7 +2242,7 @@
 				item: "kubejs:abyssal_reaction_casing"
 				type: "item"
 			}]
-			title: "abyssal Fusion Injectors"
+			title: "Abyssal Fusion Injectors"
 			x: 29.25d
 			y: 24.0d
 		}

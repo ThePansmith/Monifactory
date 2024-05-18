@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
 
     //LAIR DATA
     event.shaped(
-        'kubejs:dragon_lair_data', [
+        'kubejs:deep_dark_data', [
             'ABB',
             'BBB',
             'BBB'

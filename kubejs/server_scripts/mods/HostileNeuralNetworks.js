@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
     var dataModelData = [
         ['blaze', 'minecraft:blaze_powder', 'nether', true],
         ['creeper', 'minecraft:gunpowder', 'overworld', true],
-        ['ender_dragon', 'kubejs:dragon_lair_data', 'end', true],
+        ['ender_dragon', 'kubejs:deep_dark_data', 'end', true],
         ['enderman', 'minecraft:ender_pearl', 'end', true],
         ['ghast', 'minecraft:ghast_tear', 'nether', true],
         ['guardian', 'minecraft:prismarine_shard', 'overworld', true],

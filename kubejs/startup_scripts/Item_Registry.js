@@ -54,12 +54,12 @@ StartupEvents.registry('item', event => {
     event.create('unprepared_space_boots').displayName("Unprepared Space Boots")
 
     //Data
-    event.create('lair_of_the_chaos_guardian_data').displayName("§dLair Of The Chaos Guardian Data")
+    event.create('lair_of_the_warden_data').displayName("§dLair Of The Warden Data")
     event.create('stellar_creation_data').displayName("§bStellar Creation Data")
     event.create('universe_creation_data').displayName("§dUniverse Creation Data")
     event.create('impossible_realm_data').displayName("§bImpossible Realm Data")
     event.create('wither_realm_data').displayName("§dWither Realm Data")
-    event.create('dragon_lair_data').displayName("§dDragon Lair Data")
+    event.create('deep_dark_data').displayName("§dDeep Dark Data")
 
     //Solidified Items
     event.create('solidified_argon').displayName("Solidified Argon")
@@ -204,8 +204,8 @@ StartupEvents.registry('item', event => {
     event.create('reactor_core')
     event.create('resonant_energy_core')
     event.create('echo_energy_core')
-    event.create('chaos_shard')
-    event.create('dragon_heart')
+    event.create('abyss_shard')
+    event.create('warden_heart')
     event.create('infused_obsidian')
 
     //Infinity Tools
