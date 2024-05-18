@@ -128,13 +128,13 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_seven_second')
         .itemInputs('kubejs:microminer_t7', '32x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '32x kubejs:dragon_lair_data')
-        .itemOutputs('32x draconicevolution:dragon_heart', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_breath', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x gtceu:silver_block', '64x gtceu:silver_block', '64x minecraft:diamond_block', '64x minecraft:diamond_block', '64x gtceu:platinum_block', '16x gtceu:ruthenium_block')
+        .itemOutputs('32x kubejs:dragon_heart', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_breath', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x gtceu:silver_block', '64x gtceu:silver_block', '64x minecraft:diamond_block', '64x minecraft:diamond_block', '64x gtceu:platinum_block', '16x gtceu:ruthenium_block')
         .duration(1500)
         .EUt(31250)
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_eight_first')
         .itemInputs('kubejs:microminer_t8', '64x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', 'kubejs:lair_of_the_chaos_guardian_data')
-        .itemOutputs('4x draconicevolution:chaos_shard', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg')
+        .itemOutputs('4x kubejs:chaos_shard', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg')
         .duration(1500)
         .EUt(62500)
 
@@ -145,19 +145,19 @@ ServerEvents.recipes(event => {
         .EUt(62500)
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_first')
-        .itemInputs('kubejs:microminer_t9', '4x gtceu:draconium_awakened_block', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data')
+        .itemInputs('kubejs:microminer_t9', '4x gtceu:resonant_sculk_compound_block', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data')
         .itemOutputs('kubejs:universe_creation_data')
         .duration(3000)
         .EUt(250000)
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
-        .itemInputs('kubejs:microminer_t9', '4x gtceu:neutron_reflector', '4x gtceu:draconium_awakened_block', 'kubejs:stellar_creation_data')
+        .itemInputs('kubejs:microminer_t9', '4x gtceu:neutron_reflector', '4x gtceu:resonant_sculk_compound_block', 'kubejs:stellar_creation_data')
         .itemOutputs('64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget', '64x gtceu:neutronium_nugget')
         .duration(3000)
         .EUt(250000)
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_first')
-        .itemInputs('kubejs:microminer_t10', 'kubejs:universe_creation_data', '8x gtceu:draconium_awakened_block')
+        .itemInputs('kubejs:microminer_t10', 'kubejs:universe_creation_data', '8x gtceu:resonant_sculk_compound_block')
         .itemOutputs('kubejs:heart_of_a_universe')
         .duration(6000)
         .EUt(1000000)

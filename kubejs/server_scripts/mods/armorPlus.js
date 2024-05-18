@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
 
     // Ultimate Material
     event.recipes.gtceu.assembly_line("kubejs:armorplus/the_ultimate_material")
-        .itemInputs('draconicevolution:dragon_heart', '4x armorplus:guardian_scale', '8x armorplus:wither_bone', '12x armorplus:ender_dragon_scale')
+        .itemInputs('kubejs:dragon_heart', '4x armorplus:guardian_scale', '8x armorplus:wither_bone', '12x armorplus:ender_dragon_scale')
         .itemOutputs('armorplus:the_ultimate_material')
         .duration(600)
         .EUt(491520)

@@ -190,14 +190,23 @@ StartupEvents.registry('item', event => {
     event.create('diamond_lattice')
     event.create('infinity_catalyst').rarity("epic")
 
-    // Draconic Evo Replacements
-    event.create('draconium_core')
-    event.create('wyvern_core')
-    event.create('awakened_core')
-    event.create('chaotic_core')
+    // kubejs Evo Replacements
+    event.create('sculk_core')
+    event.create('echo_core')
+    event.create('resonant_core')
+    event.create('abyssal_core')
+    event.create('crafting_core')
     event.create('energy_core')
-    event.create('kubejs:particle_generator')
-    event.create('energy_core')
+    event.create('energy_core_stabilizer')
+    event.create('particle_generator')
+    event.create('reactor_stabilizer')
+    event.create('reactor_prt_stab_frame')
+    event.create('reactor_core')
+    event.create('resonant_energy_core')
+    event.create('echo_energy_core')
+    event.create('chaos_shard')
+    event.create('dragon_heart')
+    event.create('infused_obsidian')
 
     //Infinity Tools
     event.create('infinity_file').rarity("epic")

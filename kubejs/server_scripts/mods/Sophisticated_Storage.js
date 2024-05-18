@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     var stackupgrade = [
         ['stack_upgrade_tier_1', 'gtceu:vibrant_alloy', 'upgrade_base'],
         ['stack_upgrade_tier_2', 'gtceu:lumium', 'stack_upgrade_tier_1'],
-        ['stack_upgrade_tier_3', 'gtceu:draconium', 'stack_upgrade_tier_2'],
+        ['stack_upgrade_tier_3', 'gtceu:sculk_compound', 'stack_upgrade_tier_2'],
         ['stack_upgrade_tier_4', 'gtceu:omnium', 'stack_upgrade_tier_3']
     ]
     event.remove({ output: 'sophisticatedbackpacks:stack_upgrade_starter_tier' })

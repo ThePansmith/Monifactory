@@ -30,9 +30,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .cableProperties(2147483647, 64, 0, true)
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
-    event.create("draconic_superconductor")
+    event.create("sculk_superconductor")
         .ingot().fluid()
-        .element(GTElements.get("draconic_superconductor"))
+        .element(GTElements.get("sculk_superconductor"))
         .color(0xffffff)
         .iconSet('shiny')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)

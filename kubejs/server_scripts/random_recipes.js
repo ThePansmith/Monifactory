@@ -34,6 +34,14 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .duration(200)
 
+    // Lost Cities Air (normal air)
+    event.recipes.gtceu.gas_collector('lc_air')
+        .dimension('lostcities:lostcities')
+        .outputFluids(Fluid.of('gtceu:air', 10000))
+        .circuit(5)
+        .EUt(16)
+        .duration(200)
+
     // Netherrack
     event.recipes.gtceu.chemical_reactor('dust_to_netherrack')
         .itemInputs('kubejs:dust')
@@ -110,28 +118,28 @@ ServerEvents.recipes(event => {
 
     //TODO: AE2 crystal growth accelerator goes here
 
-    // Implement draconium smelting
-    event.remove({ id: "gtceu:electric_blast_furnace/blast_draconium" })
+    // Implement sculk_compound smelting
+    event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound" })
 
-    const draconiumFuels = [
+    const sculk_compoundFuels = [
         [2000, "gtceu:cetane_boosted_diesel"],
         [2000, "gtceu:gasoline"],
         [500, "gtceu:high_octane_gasoline"]
     ]
 
-    for (const [mB, id] of draconiumFuels) {
-        event.recipes.gtceu.electric_blast_furnace("draconium_" + id.replace(/\W/g, ''))
-            .itemInputs("gtceu:draconium_dust")
+    for (const [mB, id] of sculk_compoundFuels) {
+        event.recipes.gtceu.electric_blast_furnace("sculk_compound_" + id.replace(/\W/g, ''))
+            .itemInputs("gtceu:sculk_compound_dust")
             .inputFluids(`${id} ${mB}`)
-            .itemOutputs("gtceu:hot_draconium_ingot")
+            .itemOutputs("gtceu:hot_sculk_compound_ingot")
             .duration(10000)
             .blastFurnaceTemp(6800)
             .EUt(120)
 
-        event.recipes.gtceu.electric_blast_furnace("draconium_scale_" + id.replace(/\W/g, ''))
+        event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_" + id.replace(/\W/g, ''))
             .itemInputs("4x armorplus:ender_dragon_scale")
             .inputFluids(`${id} ${mB * 4}`)
-            .itemOutputs("2x gtceu:hot_draconium_ingot")
+            .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
             .duration(20000)
             .blastFurnaceTemp(6800)
             .EUt(120)
