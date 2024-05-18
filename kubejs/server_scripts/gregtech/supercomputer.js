@@ -37,5 +37,6 @@ ServerEvents.recipes(event => {
     supercomp('wither', 'end', 1666)
     supercomp('creeper', 'overworld', 16)
     supercomp('enderman', 'end', 512)
+    supercomp('warden', 'end', 1666)
 }
 })

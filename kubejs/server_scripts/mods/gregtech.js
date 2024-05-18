@@ -195,6 +195,17 @@ ServerEvents.recipes(event => {
             'BBB'
         ], {
             A: 'kubejs:impossible_realm_data',
+            B: 'hostilenetworks:overworld_prediction'
+        }
+    )
+
+    event.shaped(
+        'kubejs:dragon_lair_data', [
+            'ABB',
+            'BBB',
+            'BBB'
+        ], {
+            A: 'kubejs:impossible_realm_data',
             B: 'hostilenetworks:end_prediction'
         }
     )

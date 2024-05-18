@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
 
     //TODO: AE2 crystal growth accelerator goes here
 
-    // Implement sculk_compound smelting
+    // Implement Sculk Compound smelting
     event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound" })
 
     const sculk_compoundFuels = [
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
             .EUt(120)
 
         event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_" + id.replace(/\W/g, ''))
-            .itemInputs("4x armorplus:ender_dragon_scale")
+            .itemInputs("4x kubejs:warden_horn")
             .inputFluids(`${id} ${mB * 4}`)
             .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
             .duration(20000)

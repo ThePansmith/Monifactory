@@ -58,8 +58,9 @@ StartupEvents.registry('item', event => {
     event.create('stellar_creation_data').displayName("§bStellar Creation Data")
     event.create('universe_creation_data').displayName("§dUniverse Creation Data")
     event.create('impossible_realm_data').displayName("§bImpossible Realm Data")
-    event.create('wither_realm_data').displayName("§dWither Realm Data")
     event.create('deep_dark_data').displayName("§dDeep Dark Data")
+    event.create('wither_realm_data').displayName("§dWither Realm Data")
+    event.create('dragon_lair_data').displayName("§dDragon Lair Data")
 
     //Solidified Items
     event.create('solidified_argon').displayName("Solidified Argon")
@@ -111,6 +112,7 @@ StartupEvents.registry('item', event => {
     event.create('grains_of_innocence').displayName("Grains of Innocence")
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
     event.create('moon_dust').displayName("Moon Dust")
+    event.create('warden_horn').displayName("Warden Horn")
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
     event.create('ender_star').displayName('§dEnder Star').glow(true)
     event.create('endest_star').displayName('§dEndest Star').glow(true)

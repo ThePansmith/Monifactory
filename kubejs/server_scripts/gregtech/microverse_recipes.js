@@ -128,13 +128,13 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_seven_second')
         .itemInputs('kubejs:microminer_t7', '32x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '32x kubejs:deep_dark_data')
-        .itemOutputs('32x kubejs:warden_heart', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_breath', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x gtceu:silver_block', '64x gtceu:silver_block', '64x minecraft:diamond_block', '64x minecraft:diamond_block', '64x gtceu:platinum_block', '16x gtceu:ruthenium_block')
+        .itemOutputs('32x kubejs:warden_heart', '64x minecraft:sculk_catalyst', '64x minecraft:sculk_catalyst', '64x kubejs:warden_horn', '64x kubejs:warden_horn', '64x kubejs:warden_horn', '64x kubejs:warden_horn', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x gtceu:silver_block', '64x gtceu:silver_block', '64x minecraft:diamond_block', '64x minecraft:diamond_block', '64x gtceu:platinum_block', '16x gtceu:ruthenium_block')
         .duration(1500)
         .EUt(31250)
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_eight_first')
         .itemInputs('kubejs:microminer_t8', '64x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', 'kubejs:lair_of_the_warden_data')
-        .itemOutputs('4x kubejs:abyss_shard', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg')
+        .itemOutputs('4x kubejs:abyss_shard', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg')
         .duration(1500)
         .EUt(62500)
 

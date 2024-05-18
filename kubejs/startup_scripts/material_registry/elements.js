@@ -6,7 +6,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("sculk_compound")
-        .ingot().fluid().ore()
+        .ingot().fluid()
         .element(GTElements.get("sculk_compound"))
         .color(0x042228).iconSet('metallic')
         .blastTemp(6800, 'higher')
