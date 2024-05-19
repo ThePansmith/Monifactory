@@ -104,8 +104,8 @@ ServerEvents.recipes(event => {
         .EUt(18750)
 
     event.recipes.gtceu.advanced_microverse('kubejs:t_six_third')
-        .itemInputs('kubejs:microminer_t6', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium', '16x kubejs:deep_dark_data')
-        .itemOutputs('32x minecraft:dragon_egg')
+        .itemInputs('kubejs:microminer_t6', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium', '16x kubejs:dragon_lair_data')
+        .itemOutputs('64x minecraft:dragon_egg')
         .duration(1250)
         .EUt(18750)
 
@@ -134,11 +134,17 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_eight_first')
         .itemInputs('kubejs:microminer_t8', '64x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', 'kubejs:lair_of_the_warden_data')
-        .itemOutputs('4x kubejs:abyss_shard', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg')
+        .itemOutputs('4x kubejs:abyss_shard', '64x minecraft:sculk_catalyst', '32x kubejs:warden_horn')
         .duration(1500)
         .EUt(62500)
 
-    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_eight_second')
+        event.recipes.gtceu.advanced_microverse_ii('kubejs:t_eight_second')
+        .itemInputs('kubejs:microminer_t8', '64x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dragon_lair_data')
+        .itemOutputs('64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x armorplus:ender_dragon_scale', )
+        .duration(1750)
+        .EUt(62500)
+
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_eight_third')
         .itemInputs('kubejs:microminer_t8', '64x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:wither_realm_data', '64x kubejs:wither_realm_data',)
         .itemOutputs('32x gtceu:quantum_star', '64x gtceu:quantum_eye', '16x gtceu:neutronium_ingot', 'gtceu:gravi_star')
         .duration(2000)

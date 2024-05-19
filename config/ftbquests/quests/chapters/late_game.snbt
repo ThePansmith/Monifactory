@@ -1854,7 +1854,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7615C990816E6132"
-				item: "kubejs:dragon_heart"
+				item: "kubejs:warden_heart"
 				type: "item"
 			}]
 			title: "Dragon Hearts"
@@ -1866,13 +1866,13 @@
 			description: [
 				"&9Various items can be empowered with sculk&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
 				""
-				"You'll need eight &6Sculk Reactopns Casings&r to upgrade any additional injectors you make to echo Tier."
+				"You'll need eight &6Sculk Reaction Casings&r to upgrade any additional injectors you make to echo Tier."
 				""
 				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
 				""
 				"&5DE is currently in the process of being removed, the draconic reactor will be replaced with one a bit more fitting. The quest details will remain unchanged until said multiblock is finalized."
 			]
-			icon: "kubejs:sculk_reaction_casing"
+			icon: "gtceu:sculk_reverberator"
 			id: "713FAECEE5046121"
 			rewards: [{
 				id: "1334EFA413965845"
@@ -1883,7 +1883,7 @@
 			tasks: [
 				{
 					id: "3C9333ECA3F6B5F9"
-					item: "gtceu:sculk_reactor"
+					item: "gtceu:sculk_reverberator"
 					type: "item"
 				}
 				{
@@ -2161,7 +2161,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "31B73CD828CA2128"
-				item: "kubejs:chaos_shard"
+				item: "kubejs:abyss_shard"
 				type: "item"
 			}]
 			title: "Chaos Shards"
