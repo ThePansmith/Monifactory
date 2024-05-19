@@ -11,32 +11,32 @@
 		{
 			id: "54018A95BECC356C"
 			linked_quest: "5A8D2BFAF02E6325"
-			x: 46.5d
-			y: -24.25d
+			x: 42.5d
+			y: -22.75d
 		}
 		{
 			id: "2A5A7CD2C9EDD767"
 			linked_quest: "7979D07FBDC6D170"
-			x: 44.75d
+			x: 42.5d
 			y: -24.25d
 		}
 		{
 			id: "6FD00239A5CD9D2F"
 			linked_quest: "3D7924B550A1BBA0"
-			x: 48.25d
-			y: -24.25d
+			x: 42.5d
+			y: -20.75d
 		}
 		{
 			id: "3F1F20A84F3FDE97"
 			linked_quest: "0C9A9F33EEA3AB5E"
-			x: 48.25d
-			y: -22.5d
+			x: 42.5d
+			y: -19.0d
 		}
 		{
 			id: "2C514C36E06DC5FA"
 			linked_quest: "5601A05D8361551D"
-			x: 48.25d
-			y: -20.0d
+			x: 42.5d
+			y: -16.75d
 		}
 		{
 			id: "2DE45181A83AEBEB"
@@ -2269,7 +2269,7 @@
 		{
 			dependencies: [
 				"5601A05D8361551D"
-				"68734C70E2D19616"
+				"0ABECB2A7871130C"
 			]
 			description: [
 				"You win."
@@ -2279,15 +2279,15 @@
 				"I hope you enjoyed playing &9Monifactory&r."
 			]
 			id: "2EBB9A154522348F"
-			size: 1.0d
+			size: 3.0d
 			tasks: [{
 				id: "392DAFD3A4019E34"
 				item: "gtceu:creative_chest"
 				type: "item"
 			}]
 			title: "&9&lCreative Chest&r"
-			x: 48.25d
-			y: -18.0d
+			x: 48.0d
+			y: -16.75d
 		}
 		{
 			dependencies: ["3171F83E24C8F740"]
@@ -3260,32 +3260,15 @@
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: [
-				"an unknown amount of steps go here"
-				""
-				"A new MM? new missions? who knows"
-				""
-				"just part of the process to get monium"
-			]
+			description: [""]
 			id: "13578427FD9CC2CE"
 			tasks: [{
 				id: "23064FA88C378D9C"
-				item: "ftbquests:barrier"
+				item: "kubejs:microminer_t12"
 				type: "item"
 			}]
 			x: 34.75d
 			y: -24.25d
-		}
-		{
-			dependencies: ["1B1D3A66B847D129"]
-			id: "2272159BD4643610"
-			tasks: [{
-				id: "0918712974E9D143"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 34.75d
-			y: -21.5d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
@@ -3295,20 +3278,19 @@
 				item: "gtceu:monium_ingot"
 				type: "item"
 			}]
-			x: 43.25d
+			x: 40.5d
 			y: -24.25d
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
-			description: ["yet another placeholder for a unknown number of chains, mechanics, etc"]
 			id: "68734C70E2D19616"
 			tasks: [{
 				id: "5299B82EB34822E2"
-				item: "ftbquests:barrier"
+				item: "kubejs:contained_singularity"
 				type: "item"
 			}]
-			x: 43.25d
-			y: -18.0d
+			x: 40.5d
+			y: -22.75d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -3329,7 +3311,7 @@
 			id: "6138FB8766AD6F8C"
 			tasks: [{
 				id: "0BE78C6BD408CFEB"
-				item: "gtceu:kubejs_fusion_reactor"
+				item: "gtceu:sculk_reactor"
 				type: "item"
 			}]
 			title: "&9Sculk Fusion Reactor"
@@ -3502,6 +3484,35 @@
 			title: "&9Complex SMD Components"
 			x: 38.25d
 			y: -20.0d
+		}
+		{
+			dependencies: ["07057CDE4E021BA7"]
+			id: "0ABECB2A7871130C"
+			tasks: [
+				{
+					id: "74B6D230864DD36A"
+					item: "kubejs:infinity_hammer"
+					type: "item"
+				}
+				{
+					id: "1C2D1820E93775A1"
+					item: "kubejs:infinity_wrench"
+					type: "item"
+				}
+				{
+					id: "3290DBB6E7ED33BB"
+					item: "kubejs:infinity_screwdriver"
+					type: "item"
+				}
+				{
+					id: "3F9C29009FAC42BF"
+					item: "kubejs:infinity_file"
+					type: "item"
+				}
+			]
+			title: "Infinity Tools"
+			x: 48.0d
+			y: -11.75d
 		}
 	]
 	subtitle: [

@@ -30,8 +30,9 @@
 		{
 			id: "63280C5F37A22345"
 			linked_quest: "2EBB9A154522348F"
+			size: 2.0d
 			x: 9.0d
-			y: 12.75d
+			y: 13.0d
 		}
 		{
 			id: "2D26C83F2B01F12D"
@@ -1643,7 +1644,10 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["7979D07FBDC6D170"]
+			dependencies: [
+				"7979D07FBDC6D170"
+				"68734C70E2D19616"
+			]
 			id: "5A8D2BFAF02E6325"
 			tasks: [{
 				id: "3EFB11DA4735807C"
@@ -2847,6 +2851,43 @@
 			title: "Omnic Matrix Coils"
 			x: 18.5d
 			y: 3.5d
+		}
+		{
+			dependencies: [
+				"63CC578C3558E0AF"
+				"07057CDE4E021BA7"
+			]
+			description: [
+				"Taking a look at the &6Corrupted Universe Data&r has given you a couple of ideas, but to properly take advantage of it, a new microminer is needed."
+				""
+				"This microminer requires a Epic Extended Crafting Table to fit all the things required for a foray into a corrupted universe."
+			]
+			hide_dependency_lines: true
+			id: "035F72A2CBF8E13D"
+			size: 2.0d
+			tasks: [{
+				id: "7047A1151205D4E5"
+				item: "kubejs:microminer_t11"
+				type: "item"
+			}]
+			title: "&9Microminer T11"
+			x: 22.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B1D3A66B847D129"]
+			description: [""]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "73EAD7C490D388F4"
+			size: 2.0d
+			tasks: [{
+				id: "090E1D526383D8D0"
+				item: "kubejs:microminer_t12"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 13.0d
 		}
 	]
 	title: "Progression"
