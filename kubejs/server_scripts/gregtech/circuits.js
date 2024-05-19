@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
             .EUt(1966080)
 
         event.recipes.gtceu.assembly_line('dimensional_processor_assembly')
-            .itemInputs('kubejs:dimensional_processing_unit', '3x kubejs:dimensional_processor', '64x gtceu:qbit_cpu_chip', '16x kubejs:complex_smd_capacitor', '16x kubejs:complex_smd_transistor', '16x kubejs:complex_smd_diode', '16x kubejs:complex_smd_resistor', '4x gtceu:ruthenium_trinium_americium_neutronate_single_wire')
+            .itemInputs('kubejs:dimensional_processing_unit', '3x kubejs:dimensional_processor', '32x gtceu:qbit_cpu_chip', '16x kubejs:complex_smd_capacitor', '16x kubejs:complex_smd_transistor', '16x kubejs:complex_smd_diode', '16x kubejs:complex_smd_resistor', '4x gtceu:ruthenium_trinium_americium_neutronate_single_wire')
             .inputFluids('gtceu:soldering_alloy 1152')
             .itemOutputs('kubejs:dimensional_processor_assembly')
             .duration(160)
@@ -150,4 +150,32 @@ ServerEvents.recipes(event => {
             .itemOutputs('2x kubejs:monic_processing_unit')
             .duration(100)
             .EUt(3932160)
+
+            event.recipes.gtceu.circuit_assembler('monic_processor')
+            .itemInputs('kubejs:monic_processing_unit', '8x kubejs:complex_smd_capacitor', '4x kubejs:complex_smd_transistor', '4x kubejs:contained_singularity', '4x gtceu:fine_holmium_wire')
+            .inputFluids('gtceu:soldering_alloy 144')
+            .itemOutputs('4x kubejs:monic_processor')
+            .duration(160)
+            .EUt(1966080)
+
+        event.recipes.gtceu.assembly_line('monic_processor_assembly')
+            .itemInputs('kubejs:monic_processing_unit', '3x kubejs:monic_processor', '16x kubejs:contained_singularity', '16x kubejs:complex_smd_capacitor', '16x kubejs:complex_smd_transistor', '16x kubejs:complex_smd_diode', '16x kubejs:complex_smd_resistor', '4x gtceu:netherite_single_wire')
+            .inputFluids('gtceu:soldering_alloy 1152')
+            .itemOutputs('kubejs:monic_processor_assembly')
+            .duration(160)
+            .EUt(1966080)
+
+        event.recipes.gtceu.assembly_line('monic_processor_computer')
+            .itemInputs('kubejs:monic_processing_unit', '4x kubejs:monic_processor_assembly', '32x kubejs:contained_singularity', '32x kubejs:complex_smd_capacitor', '32x kubejs:complex_smd_transistor', '32x kubejs:complex_smd_diode', '32x kubejs:complex_smd_resistor', '16x gtceu:uhpic_chip', '4x gtceu:netherite_double_wire')
+            .inputFluids('gtceu:soldering_alloy 1152')
+            .itemOutputs('kubejs:monic_processor_computer')
+            .duration(200)
+            .EUt(1966080)
+
+        event.recipes.gtceu.assembly_line('monic_processor_mainframe')
+            .itemInputs('4x gtceu:monium_frame', '2x kubejs:monic_processor_computer', '64x kubejs:complex_smd_capacitor', '64x kubejs:complex_smd_transistor', '64x kubejs:complex_smd_diode', '64x kubejs:complex_smd_resistor', '64x kubejs:complex_smd_inductor', '64x kubejs:contained_singularity', '64x kubejs:contained_singularity', '8x gtceu:sculk_superconductor_double_wire', '4x gtceu:double_infinity_plate') // could replace with omnium frame
+            .inputFluids('gtceu:soldering_alloy 1152')
+            .itemOutputs('kubejs:monic_processor_mainframe')
+            .duration(1200)
+            .EUt(2147483647)
     })

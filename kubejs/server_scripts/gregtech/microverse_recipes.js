@@ -138,9 +138,9 @@ ServerEvents.recipes(event => {
         .duration(1500)
         .EUt(62500)
 
-        event.recipes.gtceu.advanced_microverse_ii('kubejs:t_eight_second')
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_eight_second')
         .itemInputs('kubejs:microminer_t8', '64x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dragon_lair_data')
-        .itemOutputs('64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x armorplus:ender_dragon_scale', )
+        .itemOutputs('64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x armorplus:ender_dragon_scale',)
         .duration(1750)
         .EUt(62500)
 
@@ -168,13 +168,13 @@ ServerEvents.recipes(event => {
         .duration(6000)
         .EUt(1000000)
 
-        event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_second')
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_second')
         .itemInputs('kubejs:microminer_t10', '64x kubejs:stellar_creation_data', '4x minecraft:netherite_block')
         .itemOutputs('kubejs:creative_storage_data')
         .duration(3000)
         .EUt(1000000)
 
-        event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_third')
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_third')
         .itemInputs('kubejs:microminer_t10', 'kubejs:infinity_catalyst', '64x kubejs:stellar_creation_data', '8x gtceu:network_switch', '8x gtceu:data_bank', '16x gtceu:advanced_data_access_hatch', '16x gtceu:computation_receiver_hatch')
         .itemOutputs('kubejs:creative_data_hatch_data')
         .duration(3000)
@@ -183,23 +183,36 @@ ServerEvents.recipes(event => {
 
 // Advanced Microverse iii
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_first')
-        .itemInputs('kubejs:microminer_t11', 'kubejs:corrupted_universe_data', 'kubejs:infinity_catalyst') // could be increased 
-        .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_third')
+        .itemInputs('kubejs:microminer_t9', '40x gtceu:gravi_star', '10x kubejs:shattered_star_data')
+        .itemOutputs('10x kubejs:quasi_stable_neutron_star')
+        .duration(900)
+        .EUt(194387)
+
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_ten_second')
+        .itemInputs('kubejs:microminer_t10', 'kubejs:corrupted_universe_data', '64x kubejs:singularity_containment_unit') // could be increased 
+        .itemOutputs('64x kubejs:contained_singularity')
         .duration(400)
         .EUt(2000000)
 
-        event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_second')
+        event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_first')
+        .itemInputs('kubejs:microminer_t11', 'kubejs:corrupted_universe_data', 'kubejs:infinity_catalyst')
+        .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
+        .duration(600)
+        .EUt(2000000)
+
+
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_second')
         .itemInputs('kubejs:microminer_t11', '4x kubejs:universe_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', 'gtceu:uiv_energy_output_hatch', '4x gtceu:max_battery', '2x solarflux:sp_custom_infinity') // could be increased 
         .itemOutputs('kubejs:creative_energy_data')
         .duration(1200)
-        .EUt(2000000)
+        .EUt(12000000)
 
-        event.recipes.gtceu.advanced_microverse_iii('kubejs:t_twelve_first')
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_twelve_first')
         .itemInputs('kubejs:microminer_t12', '4x kubejs:universe_creation_data', '16x gtceu:infinity_ingot')
         .itemOutputs('16x gtceu:monium_ingot')
         .duration(1200)
-        .EUt(2000000)
+        .EUt(32000000)
 })
 
 // Microversium

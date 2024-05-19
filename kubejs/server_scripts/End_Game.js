@@ -279,41 +279,38 @@ ServerEvents.recipes(event => {
         }, 4
     )
 
-    // Creative Chest
     event.recipes.extendedcrafting.shaped_table(
         '2x gtceu:creative_chest', [
-            'ABBBBBBBA',
-            'BCTEDETCB',
-            'BFSGHGSFB',
-            'BUJXIXJUB',
-            'BNSWKWSNB',
-            'BUJXLXJUB',
-            'BFSGMGSFB',
-            'BCTEDETCB',
-            'ABBBBBBBA'
+            'BMMMMMMMMMB',
+            'MWINSSSNIXM',
+            'MINEQUQENIM',
+            'MNETRRRTENM',
+            'MSQRCCCRQSM',
+            'MSURCHCRUSM',
+            'MSQRCCCRQSM',
+            'MNETRRRTENM',
+            'MINEQUQENIM',
+            'MYINSSSNIZM',
+            'BMMMMMMMMMB'
         ], {
-            A: "kubejs:creative_storage_component",
-            B: "gtceu:infinity_ingot",
-            C: "kubejs:creative_op_capacitor",
-            D: "thermal:machine_efficiency_creative_augment",
-            E: "thermal:machine_catalyst_creative_augment",
-            F: "ae2:creative_fluid_cell",
-            G: "gtceu:creative_data_access_hatch", 
-            H: "kubejs:infinity_file",
-            I: "kubejs:infinity_hammer",
-            J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').weakNBT(),
-            K: "kubejs:infinity_screwdriver",
-            L: "kubejs:infinity_wrench",
-            M: "kubejs:infinity_wire_cutter",
-            N: "gtceu:creative_energy",
-            S: "solarflux:sp_custom_infinity",
-            T: "gtceu:creative_tank",
-            U: "ae2:creative_energy_cell",
-            W: "gtceu:creative_energy",
-            X: "kubejs:creative_capacitor"
-        }, 4
+            B: 'gtceu:monium_block',
+            M: 'gtceu:monium_plate',
+            I: 'gtceu:infinity_block',
+            N: 'gtceu:dense_netherite_plate',
+            S: 'kubejs:creative_storage_data',
+            E: 'kubejs:creative_energy_data',
+            Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
+            U: 'gtceu:subatomic_digital_assembler',
+            T: 'kubejs:creative_tank_data',
+            R: 'gtceu:uiv_robot_arm',
+            C: 'kubejs:monic_processor_mainframe',
+            H: 'gtceu:max_machine_hull',
+            W: 'kubejs:infinity_hammer',
+            X: 'kubejs:infinity_screwdriver',
+            Y: 'kubejs:infinity_wrench',
+            Z: 'kubejs:infinity_file'
+        }
     )
-
     // Creative Catalyst augment
     event.recipes.extendedcrafting.shaped_table(
         'thermal:machine_catalyst_creative_augment', [

@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
             W: 'kubejs:warp_engine',
             D: 'gtceu:creative_energy',
             S: 'kubejs:reactor_stabilizer',
-            Q: 'kubejs:Field_Stabilised_Omnic-Pulsar_Compound'
+            Q: 'kubejs:field_stabilised_omnic_pulsar_compound'
         }
     )
     //
