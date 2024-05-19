@@ -1,20 +1,19 @@
 ServerEvents.recipes(event => {
 
-    // The crafting core is expensive enough as is, dont need to throw extra circuits on top
     event.shaped(
-        'gtceu:sculk_reactor',
+        'gtceu:sculk_reverberator',
         ['PLP',
             'CFC',
             'PHP'
         ], {
         P: 'gtceu:sculk_compound_plate',
-        F: 'kubejs:crafting_core',
+        F: 'kubejs:reverberation_core',
         C: 'gtceu:niobium_titanium_single_cable',
         L: 'gtceu:iv_field_generator',
         H: 'gtceu:hsse_frame'
 
     }
-    ).id('kubejs:shaped/sculk_reactor')
+    ).id('kubejs:shaped/sculk_reverberator')
 
     event.recipes.gtceu.assembler('kubejs:sculk_compound_casing')
         .itemInputs('6x gtceu:sculk_compound_plate', 'gtceu:sculk_compound_frame')
@@ -31,7 +30,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     function Reactor(id, output, input, tier, RF) {
-        event.recipes.gtceu.sculk_reactor(`kubejs:${id}`)
+        event.recipes.gtceu.sculk_reverberator(`kubejs:${id}`)
             .notConsumable('10x #moni:' + tier + '_injector_tier')
             .itemInputs(input)
             .itemOutputs(output)

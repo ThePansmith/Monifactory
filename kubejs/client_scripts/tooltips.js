@@ -64,8 +64,8 @@ ItemEvents.tooltip(tooltip => {
 	tooltip.add('kubejs:glitch_infused_ingot', Text.translatable('item.kubejs.glitch_infused_ingot.desc'))
 
     // Multiblocks
+    tooltip.add('gtceu:sculk_reverberator', Text.translatable('gtceu.sculk_reverberator.desc'))
     tooltip.add('gtceu:sculk_reactor', Text.translatable('gtceu.sculk_reactor.desc'))
-    tooltip.add('gtceu:kubejs_fusion_reactor', Text.translatable('gtceu.kubejs_fusion_reactor.desc'))
     tooltip.add('gtceu:simulation_supercomputer', Text.translatable('gtceu.simulation_supercomputer.desc'))
     tooltip.add('gtceu:loot_superfabricator', Text.translatable('gtceu.loot_superfabricator.desc'))
     tooltip.add('gtceu:greenhouse', Text.translatable('gtceu.greenhouse.desc'))
@@ -90,7 +90,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:kubejs_fusion_reactor'], 'Can parallelize with Parallel Control Hatches.')
+    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:sculk_reactor'], 'Can parallelize with Parallel Control Hatches.')
 
     //Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')

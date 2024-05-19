@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('kubejs_fusion_crafting_core')
         .itemInputs('gtceu:hsse_frame', '6x gtceu:tungsten_carbide_plate', '4x kubejs:sculk_core', '4x minecraft:nether_star', '2x gtceu:iv_sensor', '#gtceu:circuits/iv', '8x #forge:storage_blocks/lapis')
         .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('kubejs:crafting_core')
+        .itemOutputs('kubejs:reverberation_core')
         .duration(1200)
         .EUt(30720)
 

@@ -628,35 +628,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"The &3Chemical Bath&r is mainly used as an ore processing machine to extract byproducts from specific &6Crushed Ores&r with either &9Sodium Persulfate&r or &9Mercury&r. It can also dye items, as well as perform some specialised processes."
-				""
-				"For now, you will need it to cool down &6Hot Kanthal Ingots&r and &6Hot Silicon Ingots&r with &9Water&r. &9Distilled Water&r can accelerate this process if you have it."
-				""
-				"Are you facing a shortage of &6Gold&r? This can net you some extra Gold by bathing &6Crushed Ores&r in &9Mercury&r, or &6Crushed Iron Ore&r in &9Sodium Persulfate&r."
-			]
-			hide_dependency_lines: true
-			id: "09A389EC37805A0A"
-			rewards: [{
-				id: "75DC3EB5DFF16867"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "32EC35083D4C7C82"
-				item: "gtceu:mv_chemical_bath"
-				type: "item"
-			}]
-			title: "MV Chemical Bath"
-			x: -1.0d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"09A389EC37805A0A"
-				"776199B37A19A592"
-			]
+			dependencies: ["776199B37A19A592"]
 			description: [
 				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
 				""

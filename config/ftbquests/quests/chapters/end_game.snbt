@@ -3334,7 +3334,7 @@
 			}]
 			title: "&9Sculk Fusion Reactor"
 			x: 30.25d
-			y: -21.25d
+			y: -21.5d
 		}
 		{
 			dependencies: ["07057CDE4E021BA7"]

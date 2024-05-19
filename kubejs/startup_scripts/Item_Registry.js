@@ -197,7 +197,7 @@ StartupEvents.registry('item', event => {
     event.create('echo_core')
     event.create('resonant_core')
     event.create('abyssal_core')
-    event.create('crafting_core')
+    event.create('reverberation_core')
     event.create('energy_core')
     event.create('energy_core_stabilizer')
     event.create('particle_generator')
