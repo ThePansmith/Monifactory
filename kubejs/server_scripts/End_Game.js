@@ -279,38 +279,45 @@ ServerEvents.recipes(event => {
         }, 4
     )
 
+    // Creative Chest
     event.recipes.extendedcrafting.shaped_table(
         '2x gtceu:creative_chest', [
             'BMMMMMMMMMB',
-            'MWINSSSNIXM',
-            'MINEQUQENIM',
-            'MNETRRRTENM',
-            'MSQRCCCRQSM',
-            'MSURCHCRUSM',
-            'MSQRCCCRQSM',
-            'MNETRRRTENM',
-            'MINEQUQENIM',
-            'MYINSSSNIZM',
+            'MIPOPPPOPIM',
+            'MIFNNNNNFIM',
+            'GUNNEEENNUG',
+            'RDEEQQQEEDR',
+            'RSSSSHSSSSR',
+            'RDTTQQQTTDR',
+            'GUNNTTTNNUG',
+            'MIFNNNNNFIM',
+            'MIPVWXYZPIM',
             'BMMMMMMMMMB'
         ], {
             B: 'gtceu:monium_block',
             M: 'gtceu:monium_plate',
+            D: 'gtceu:double_monium_plate',
+            G: 'gtceu:monium_gear',
             I: 'gtceu:infinity_block',
             N: 'gtceu:dense_netherite_plate',
             S: 'kubejs:creative_storage_data',
             E: 'kubejs:creative_energy_data',
+            T: 'kubejs:creative_tank_data',
             Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
             U: 'gtceu:subatomic_digital_assembler',
-            T: 'kubejs:creative_tank_data',
             R: 'gtceu:uiv_robot_arm',
-            C: 'kubejs:monic_processor_mainframe',
+            F: 'gtceu:uiv_field_generator',
+            O: 'gtceu:uiv_sensor',
+            P: 'kubejs:monic_processor_mainframe',
             H: 'gtceu:max_machine_hull',
-            W: 'kubejs:infinity_hammer',
-            X: 'kubejs:infinity_screwdriver',
-            Y: 'kubejs:infinity_wrench',
-            Z: 'kubejs:infinity_file'
+            V: 'kubejs:infinity_file',
+            W: 'kubejs:infinity_screwdriver',
+            X: 'kubejs:infinity_wrench',
+            Y: 'kubejs:infinity_hammer',
+            Z: 'kubejs:infinity_wire_cutter'            
         }
     )
+
     // Creative Catalyst augment
     event.recipes.extendedcrafting.shaped_table(
         'thermal:machine_catalyst_creative_augment', [
