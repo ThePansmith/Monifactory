@@ -61,11 +61,15 @@ GTCEuServerEvents.oreVeins(event => {
 })
 
 
-// Remove ore indicators
+// Remove ore indicators, increase density
 
 GTCEuServerEvents.oreVeins(event => {
     event.modifyAll((id, vein) => {
+        vein.density(0.8)
+        vein.discardChanceOnAirExposure(0.3)
         vein.indicatorGenerators().clear()
-        vein.density(1.0) // The People Hath Spoken https://discord.com/channels/914926812948234260/1229854271613436066/1239032894664478730
     })
-})  
+
+}
+
+)  
