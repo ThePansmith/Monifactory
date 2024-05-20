@@ -2106,7 +2106,7 @@
 		}
 		{
 			dependencies: ["64F45D98FA48D834"]
-			description: ["Two &aCapacitor Banks&r can be grafted together with a &6Double-Layer Capacitor&r and &6Electrical Steel&r to create an &aAdvanced Capacitor Bank&r, which stores five times as much RF as the basic bank."]
+			description: ["Two &aCapacitor Banks&r can be grafted together with a &6Double-Layer Capacitor&r and &6Electrical Steel&r to create an &aAdvanced Capacitor Bank&r, which stores four times as much RF as the basic bank."]
 			id: "09EED0C4106265BC"
 			rewards: [{
 				id: "452D3826F2B6022F"
@@ -2127,7 +2127,7 @@
 				"09EED0C4106265BC"
 				"73C1AB31431B5C11"
 			]
-			description: ["Two &aAdvanced Capacitor Banks&r can be grafted together with a &6Vibrant Crystal&r and &6Vibrant Alloy Plates&r to create a &aVibrant Capacitor Bank&r, which stores five times as much RF as the advanced bank, for a total of twenty-five times as much as the basic bank."]
+			description: ["Two &aAdvanced Capacitor Banks&r can be grafted together with a &6Vibrant Crystal&r and &6Vibrant Alloy Plates&r to create a &aVibrant Capacitor Bank&r, which stores four times as much RF as the advanced bank, for a total of sixteen times as much as the basic bank."]
 			id: "5B0CFF0E0233E98F"
 			rewards: [{
 				id: "46C624ED7E126EDD"
