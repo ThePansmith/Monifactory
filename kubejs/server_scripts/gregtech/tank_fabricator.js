@@ -45,4 +45,12 @@ ServerEvents.recipes(event => {
         .CWUt(32)
         .duration(200)
         .EUt(16000)
+
+    event.recipes.gtceu.subatomic_digital_assembly("shatteredstardata")
+        .itemInputs('kubejs:stellar_creation_data')
+        .itemOutputs('kubejs:shattered_star_data')
+        .EUt(16000)
+        .circuit(1)
+        .CWUt(32)
+        .duration(50)
 })
