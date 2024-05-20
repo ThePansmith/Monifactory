@@ -802,8 +802,6 @@
 				"&6&6String&r and &6Coal Dust&r can be baked together into a &6Carbon Mesh&r in an &3Alloy Furnace&r."
 				""
 				"Combine that with &6Pulsating Dust&r to get a &6Pulsating Mesh&r."
-				""
-				"This will not be needed now. In fact, its only use is for &6Solar Panels&r. The &6Carbon Mesh&r has some uses though."
 			]
 			icon: "kubejs:pulsating_mesh"
 			id: "645B1DCB3DA7198A"

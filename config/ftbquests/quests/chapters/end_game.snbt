@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "end_game"
 	group: ""
-	icon: "kubejs:heart_of_a_universe"
+	icon: "kubejs:monic_processor_mainframe"
 	id: "2BEB72BC6C6FB4E9"
 	order_index: 11
 	quest_links: [
@@ -24,19 +24,19 @@
 			id: "6FD00239A5CD9D2F"
 			linked_quest: "3D7924B550A1BBA0"
 			x: 42.5d
-			y: -20.75d
+			y: -20.0d
 		}
 		{
 			id: "3F1F20A84F3FDE97"
 			linked_quest: "0C9A9F33EEA3AB5E"
 			x: 42.5d
-			y: -19.0d
+			y: -18.0d
 		}
 		{
 			id: "2C514C36E06DC5FA"
 			linked_quest: "5601A05D8361551D"
 			x: 42.5d
-			y: -16.75d
+			y: -15.25d
 		}
 		{
 			id: "2DE45181A83AEBEB"
@@ -2267,10 +2267,7 @@
 			y: -11.75d
 		}
 		{
-			dependencies: [
-				"5601A05D8361551D"
-				"0ABECB2A7871130C"
-			]
+			dependencies: ["5601A05D8361551D"]
 			description: [
 				"You win."
 				""
@@ -2286,8 +2283,8 @@
 				type: "item"
 			}]
 			title: "&9&lCreative Chest&r"
-			x: 48.0d
-			y: -16.75d
+			x: 47.75d
+			y: -15.25d
 		}
 		{
 			dependencies: ["3171F83E24C8F740"]
@@ -3218,17 +3215,6 @@
 			y: -9.25d
 		}
 		{
-			dependencies: ["1B1D3A66B847D129"]
-			id: "7BF0FE766903A1D1"
-			tasks: [{
-				id: "57A8722148FBD716"
-				item: "gtceu:uiv_machine_hull"
-				type: "item"
-			}]
-			x: 34.75d
-			y: -22.75d
-		}
-		{
 			dependencies: ["07057CDE4E021BA7"]
 			description: [
 				"The &3Hyperbolic Microverse Projector&r is the most powerful projector, capiable of running hundreds of missions in parallel. It can perform all microminer missions, and is capiable of a few of it's own as well. "
@@ -3255,12 +3241,11 @@
 				type: "item"
 			}]
 			title: "&9Dimensional Superassembler"
-			x: 30.25d
-			y: -24.25d
+			x: 34.75d
+			y: -21.25d
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: [""]
 			id: "13578427FD9CC2CE"
 			tasks: [{
 				id: "23064FA88C378D9C"
@@ -3283,6 +3268,11 @@
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
+			description: [
+				"Turns out corrupting a microverse has some other interesting consequences, including causing singulairities. These impossibilities may just be what you need to create an impossibily perfect circuit line, but you do need to be able to contain it in some way."
+				""
+				"Thankfully, you already have a metal that bends the rules, so that should be a good starting place."
+			]
 			id: "68734C70E2D19616"
 			tasks: [{
 				id: "5299B82EB34822E2"
@@ -3315,8 +3305,8 @@
 				type: "item"
 			}]
 			title: "&9Sculk Fusion Reactor"
-			x: 30.25d
-			y: -21.5d
+			x: 34.75d
+			y: -22.75d
 		}
 		{
 			dependencies: ["07057CDE4E021BA7"]
@@ -3484,35 +3474,6 @@
 			title: "&9Complex SMD Components"
 			x: 38.25d
 			y: -20.0d
-		}
-		{
-			dependencies: ["07057CDE4E021BA7"]
-			id: "0ABECB2A7871130C"
-			tasks: [
-				{
-					id: "74B6D230864DD36A"
-					item: "kubejs:infinity_hammer"
-					type: "item"
-				}
-				{
-					id: "1C2D1820E93775A1"
-					item: "kubejs:infinity_wrench"
-					type: "item"
-				}
-				{
-					id: "3290DBB6E7ED33BB"
-					item: "kubejs:infinity_screwdriver"
-					type: "item"
-				}
-				{
-					id: "3F9C29009FAC42BF"
-					item: "kubejs:infinity_file"
-					type: "item"
-				}
-			]
-			title: "Infinity Tools"
-			x: 48.0d
-			y: -11.75d
 		}
 	]
 	subtitle: [

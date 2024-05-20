@@ -454,15 +454,59 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         'waterframes:projector', [
-        'IIB',
-        'IIF',
-        'IIB'
+        'III',
+        'IFG',
+        'III'
     ], {
         F: 'waterframes:frame',
         I: 'gtceu:iron_plate',
-        B: 'gtceu:bronze_plate',
+        G: '#forge:glass_panes',
     }
     ).id('waterframes:projector')
+
+    event.shaped(
+        'waterframes:tv', [
+        'III',
+        'GFG',
+        'III'
+    ], {
+        F: 'waterframes:frame',
+        I: 'gtceu:iron_plate',
+        G: '#forge:glass_panes',
+    }
+    ).id('waterframes:tv')
+
+    event.shaped(
+        'waterframes:big_tv', [
+            'III',
+            'GFG',
+            'III'
+        ], {
+            F: 'waterframes:tv',
+            I: 'gtceu:iron_plate',
+            G: '#forge:glass_panes',
+    }
+    ).id('waterframes:big_tv')
+
+    event.shaped(
+        'waterframes:remote', [
+            'IRI',
+            'ICI',
+            'ICI'
+        ], {
+            R: 'minecraft:redstone',
+            I: 'gtceu:iron_plate',
+            G: 'gtceu:copper_plate',
+    }
+    ).id('waterframes:remote')
+
+    // Angel Ring
+        event.remove({ id: 'better_angel_ring:angel_ring' })
+        event.recipes.gtceu.assembler('angel_ring')
+            .itemInputs('32x gtceu:electrum_foil', 'gtceu:rose_gold_ring', Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT())
+            .itemOutputs('better_angel_ring:angel_ring')
+            .duration(400)
+            .EUt(128)
 
     // Stonecut p2p tunnels, attunement sucks
     const p2p = ["redstone", "item", "fluid", "fe", "light"]

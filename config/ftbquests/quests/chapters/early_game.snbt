@@ -2320,6 +2320,29 @@
 			x: 3.0d
 			y: -1.0d
 		}
+		{
+			dependencies: [
+				"1E498F509DB1D460"
+				"1BC8DBBBBB1E17E4"
+			]
+			description: ["The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."]
+			id: "74BD1A246B9CF784"
+			rewards: [{
+				count: 2
+				id: "337976C834A2A48E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			subtitle: "I'm running out of MCU puns."
+			tasks: [{
+				id: "3240962B7D1154AF"
+				item: "better_angel_ring:angel_ring"
+				type: "item"
+			}]
+			title: "&9Captain... Marvel? IDK"
+			x: 17.5d
+			y: 25.0d
+		}
 	]
 	title: "Early Game"
 }
