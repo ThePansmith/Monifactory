@@ -1275,7 +1275,7 @@
 			description: [
 				"Sculk Compound is a complex material needed in vast quantities."
 				""
-				"You'll likely have come by some dust while mining in the End, but you can also create it with &6Dragon's Breath&r and &6Manyullyn&r."
+				"You'll likely have come by some dust while mining in the End, but you can also create it with a &9Sculk Catalyst&r and &6Manyullyn&r."
 			]
 			id: "7F669657313F2E62"
 			rewards: [{
@@ -1289,7 +1289,7 @@
 				item: "gtceu:sculk_compound_dust"
 				type: "item"
 			}]
-			title: "Sculk Compound Dust"
+			title: "&9Sculk Compound Dust"
 			x: 15.25d
 			y: 6.25d
 		}
@@ -1301,9 +1301,9 @@
 			description: [
 				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6sculk_compound&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
 				""
-				"sculk_compound gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
+				"Sculk Compound gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make sculk_compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain sculk_compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft sculk_compound."
+				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain sculk_compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft sculk_compound."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1320,7 +1320,7 @@
 				item: "gtceu:sculk_compound_ingot"
 				type: "item"
 			}]
-			title: "&2sculk_compound Ingots"
+			title: "&9Sculk Compound Ingots"
 			x: 17.25d
 			y: 8.25d
 		}
@@ -1645,9 +1645,9 @@
 				"0B6196692F9E176D"
 			]
 			description: [
-				"The source of &6Dragon Hearts&r and the valuable &6Lair of The Chaos Guardian Data&r."
+				"The source of &9Warden Hearts&r and the valuable &9Lair of The Warden Data&r."
 				""
-				"As a bonus, brings &6Dragon Eggs, Dragon's Breath, Ender Dragon Scales&r, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+				"As a bonus, brings &9Sculk Catalysts, Warden Horns, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
 			]
 			id: "5FE96C30454A0374"
 			rewards: [{
@@ -1662,7 +1662,7 @@
 				item: "kubejs:microminer_t7"
 				type: "item"
 			}]
-			title: "&2Tier Seven Micro Miner"
+			title: "&9Tier Seven Micro Miner"
 			x: 23.25d
 			y: 15.25d
 		}
@@ -1793,7 +1793,7 @@
 				item: "gtceu:double_sculk_compound_plate"
 				type: "item"
 			}]
-			title: "&2sculk_compound Double Plates"
+			title: "&9Sculk Compound Double Plates"
 			x: 23.25d
 			y: 8.25d
 		}
@@ -1844,7 +1844,7 @@
 		}
 		{
 			dependencies: ["5FE96C30454A0374"]
-			description: ["&6Dragon Hearts&r are needed for both &6resonant sculk_compound&r and &6The Ultimate Material&r."]
+			description: ["&6Warden Hearts&r are needed for both &6Resonant Sculk Compound&r and &6The Ultimate Material&r."]
 			id: "7FAB6FD0A054443E"
 			rewards: [{
 				id: "2AA894050D239DEE"
@@ -1857,7 +1857,7 @@
 				item: "kubejs:warden_heart"
 				type: "item"
 			}]
-			title: "Dragon Hearts"
+			title: "&9Warden Hearts"
 			x: 23.25d
 			y: 18.25d
 		}
@@ -1870,7 +1870,7 @@
 				""
 				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
 				""
-				"&5DE is currently in the process of being removed, the draconic reactor will be replaced with one a bit more fitting. The quest details will remain unchanged until said multiblock is finalized."
+				"&5DE is currently in the process of being removed, the draconic reactor multiblock will be replaced with one a bit more fitting. The quest details will remain unchanged until said multiblock is finalized."
 			]
 			icon: "gtceu:sculk_reverberator"
 			id: "713FAECEE5046121"
@@ -1975,9 +1975,9 @@
 				"6391447F1A411281"
 			]
 			description: [
-				"The main source of &6Chaos Shards&r."
+				"The main source of &9Abyss Shards&r."
 				""
-				"The other mission gives negligible amounts of &6Neutronium&r and some other moderately useful things, but you're better off making Neutronium in the &3Fusion Reactor Mark 3&r&r and the other items are otherwise craftable."
+				"&9This microminer is also to bring back Ender dragon eggs and Ender dragon scales, as well as neutronium, depending on the mission&r."
 			]
 			id: "2D47BFA44BDB5E6A"
 			rewards: [{
@@ -1992,7 +1992,7 @@
 				item: "kubejs:microminer_t8"
 				type: "item"
 			}]
-			title: "Tier Eight Micro Miner"
+			title: "&9Tier Eight Micro Miner"
 			x: 27.25d
 			y: 15.25d
 		}
@@ -2047,9 +2047,9 @@
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"&6Resonant Cores&r are the third tier of &bkubejs Evolution&r core, and are common components of endgame recipes."
+				"&6Resonant Cores&r are the third tier of &bSculk Reaction&r core, and are common components of endgame recipes."
 				""
-				"These cores are made with &6resonant sculk_compound&r and also cost &e3 Billion RF&r to craft."
+				"These cores are made with &6Resonant Sculk Compound&r and also cost &e3 Billion RF&r to craft."
 			]
 			id: "03F04B4005F2CBE1"
 			rewards: [{
@@ -2063,14 +2063,14 @@
 				item: "kubejs:resonant_core"
 				type: "item"
 			}]
-			title: "Resonant Core"
+			title: "&9Resonant Core"
 			x: 24.75d
 			y: 21.0d
 		}
 		{
 			dependencies: ["03F04B4005F2CBE1"]
 			description: [
-				"&6resonant sculk_compound&r, &6Chaos Shards&r, and &6Stabilized Einsteinium&r can be used in a kubejs Tier fusion crafting setup to create a &6kubejs Reactor Core&r."
+				"&6Resonant Sculk Compound&r, &6Abyss Shards&r, and &6Stabilized Einsteinium&r can be used to create a &6Reactor Core&r."
 				""
 				"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some Endgame items."
 			]
@@ -2086,7 +2086,7 @@
 				item: "kubejs:reactor_core"
 				type: "item"
 			}]
-			title: "kubejs Reactor Core"
+			title: "Reactor Core"
 			x: 22.75d
 			y: 21.0d
 		}
@@ -2148,9 +2148,9 @@
 		{
 			dependencies: ["03F04B4005F2CBE1"]
 			description: [
-				"&6Chaos Shards&r are an endgame component for &bkubejs Evolution&r."
+				"&6Abyss Shards&r are a component in &bSculk Reaction&r."
 				""
-				"They are the base material for abyssal Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Chaos Dragon Data&r."
+				"They are the base material for abyssal Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Warden Data&r."
 			]
 			id: "235C1E5B2C58B5AF"
 			rewards: [{
@@ -2164,7 +2164,7 @@
 				item: "kubejs:abyss_shard"
 				type: "item"
 			}]
-			title: "Chaos Shards"
+			title: "&9Abyss Shards"
 			x: 26.75d
 			y: 21.0d
 		}
@@ -2286,57 +2286,6 @@
 			y: 20.25d
 		}
 		{
-			dependencies: ["6F5579E1646634C7"]
-			description: [
-				"Now that you have &6echo Fusion Injectors&r, you can make the &eEnergy Storage Core&r from &bkubejs Evolution&r. It's a great way to store all the energy required to craft power-hungry late game items."
-				""
-				"The &eEnergy Storage Core&r is a multiblock structure that can be upgraded to store increasingly immense amounts of RF energy."
-				""
-				"See the &bkubejs Evolution&r manual for more information on the material requirements for each tier, and more information on the &6Stabilizers&r and &6Pylons&r."
-				""
-				"&6Energy Pylons&r are required to input and output energy from the core. Each pylon allows movement in a single direction, so you need at least two."
-				""
-				"Once you have the materials together for your desired tier, the structure can build itself: simply access the GUI of the &6Energy Core&r, set the tier, and click Assemble. Items will be automatically used from your inventory. Once the structure is built, you can access the core's GUI again through &6Energy Core Stabilizers&r to activate it."
-				""
-				"It is recommended to postpone Tier 8 until after you reach the &9Creative Tank&r, as it requires large amounts of &6resonant sculk_compound&r."
-			]
-			icon: "kubejs:energy_core"
-			id: "48D3640053770BD8"
-			rewards: [{
-				count: 2
-				id: "5D820B09C4CFB783"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [
-				{
-					id: "6C9957529780CBFB"
-					item: "kubejs:energy_core"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "62599F4AC08F92EB"
-					item: {
-						Count: 2b
-						id: "kubejs:energy_pylon"
-					}
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "0E0CB12516222A89"
-					item: { Count: 4b, id: "kubejs:energy_core_stabilizer" }
-					type: "item"
-				}
-			]
-			title: "Power Storage on a Massive Level"
-			x: 30.25d
-			y: 12.25d
-		}
-		{
 			dependencies: ["6DAB13A7BDECE94E"]
 			description: [
 				"&3World Accelerators&r accelerate the ticks of any non-GregTech machine adjacent to them. This is handy for &9kubejs Evolution Fusion&r, which is a slow process otherwise."
@@ -2389,13 +2338,13 @@
 		{
 			dependencies: ["521977C7165229F1"]
 			description: [
-				"The &3Power Substation&r is GregTech's native mass power storage solution. At &cZPM&r tier and above, it can rival the &6Tier 7 Energy Core&r from kubejs Evolution."
+				"The &3Power Substation&r is GregTech's native mass power storage solution."
 				""
 				"The structure can accept up to 18 layers of 3x3 &aLapotronic Capacitor&r blocks. GT batteries can hold &96x&r the EU their item counterparts can hold when crafted into a &aLapotronic Capacitor&r. The structure need not be made of all of the same tier blocks, but it must be full, so fill any empty space with &aEmpty Capacitor Blocks&r."
 				""
 				"Insert power through &6Energy Hatches&r and extract from &6Dynamo Hatches&r, each of any tier. The Power Substation can accept special &664A Substation Hatches&r, as well as &aLaser Hatches&r."
 				""
-				"The Power Substation will &cpassively lose 1%%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
+				"The Power Substation will &cpassively lose 1%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
 			]
 			hide_dependency_lines: true
 			id: "36B1B083B4FA439F"
@@ -2925,10 +2874,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"7A65459E4DFAAC2D"
-				"09002E8DD1A359AD"
-			]
+			dependencies: ["7A65459E4DFAAC2D"]
 			description: ["This is the flight of our lives."]
 			id: "747A3DEA569CB6C9"
 			rewards: [{

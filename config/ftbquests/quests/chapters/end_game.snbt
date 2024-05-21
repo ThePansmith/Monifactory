@@ -3317,7 +3317,7 @@
 				item: "gtceu:sculk_reactor"
 				type: "item"
 			}]
-			title: "&9kubejs Reactor"
+			title: "&9Sculk Reactor"
 			x: 36.75d
 			y: -13.5d
 		}
@@ -3476,10 +3476,6 @@
 			y: -20.0d
 		}
 	]
-	subtitle: [
-		"Getting overhauled!"
-		"Everything beyond Tank is WIP and will change!"
-		"Feel free to share feedback!"
-	]
+	subtitle: ["Everything beyond Tank is WIP!"]
 	title: "End Game"
 }
