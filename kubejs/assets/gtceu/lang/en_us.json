@@ -89,6 +89,8 @@
   "block.gtceu.dimensional_superassembler":"Dimensional Superassembler",
   "gtceu.dimensional_superassembler.desc":"Uses dimensional warping to process hundreds of assembly line recipes at once.",
   "gtceu.subatomic_digital_assembler.desc": "§8A complex machine capable of synthetizing certain technological marvels when provided with the required data",
+  "block.gtceu.quintessence_infuser":"Quintessence Infuser",
+  "block.gtceu.quintessence_infuser.desc": "Uses intense rotational speeds to infuse large amounts of souls into objects at once.",
 
   "__GENERIC_MATERIALS__.header": "=====================",
   "__GENERIC_MATERIALS__.flufff": "> Generic Materials <",
