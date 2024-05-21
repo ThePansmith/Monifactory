@@ -627,7 +627,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.abilities(PartAbility.MAINTENANCE))
             .where('#', Predicates.any())
                 .build())
-    .workableCasingRenderer("kubejs:block/soularium/dark_soularium_casing",
+    .workableCasingRenderer("kubejs:block/soularium/casing",
         "gtceu:block/multiblock/implosion_compressor", false)
 })
 

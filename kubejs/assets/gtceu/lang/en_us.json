@@ -91,7 +91,7 @@
   "gtceu.subatomic_digital_assembler.desc": "§8A complex machine capable of synthetizing certain technological marvels when provided with the required data",
   "gtceu.quintessence_infuser":"Quintessence Infusing",
   "block.gtceu.quintessence_infuser":"Quintessence Infuser",
-  "block.gtceu.quintessence_infuser.desc": "Uses intense rotational speeds to infuse large amounts of souls into objects at once.",
+  "gtceu.quintessence_infuser.desc": "Uses intense rotational speeds to infuse large amounts of souls into objects at once.",
 
   "__GENERIC_MATERIALS__.header": "=====================",
   "__GENERIC_MATERIALS__.flufff": "> Generic Materials <",
