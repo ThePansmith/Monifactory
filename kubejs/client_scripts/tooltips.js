@@ -76,6 +76,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:hyperbolic_microverse_projector', Text.translatable('gtceu.hyperbolic_microverse_projector.desc'))
     tooltip.add('gtceu:hyperbolic_microverse_projector', Text.translatable('gtceu.hyperbolic_microverse_projector_2.desc'))
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.subatomic_digital_assembler.desc'))
+    tooltip.add('gtceu:quintessence_infuser', Text.translatable('gtceu.quintessence_infuser.desc'))
 
     tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
         text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
@@ -90,7 +91,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:sculk_reactor'], 'Can parallelize with Parallel Control Hatches.')
+    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:sculk_reactor', 'gtceu:quintessence_infuser'], 'Can parallelize with Parallel Control Hatches.')
 
     //Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')

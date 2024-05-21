@@ -156,6 +156,15 @@ StartupEvents.registry("block", event => {
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/coil')})
+
+        event.create("dark_soularium_casing", 'gtceu:renderer')
+        .displayName("Dark Soularium Casing")
+        .soundType('metal')
+        .hardness(2.5)
+        .resistance(2.5)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/soularium/casing')})
     
     // Post-Tank MB blocks
     event.create('omnic_matrix_machine_casing', 'gtceu:renderer')

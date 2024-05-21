@@ -631,4 +631,3 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         "gtceu:block/multiblock/implosion_compressor", false)
 })
 
-})
