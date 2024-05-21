@@ -143,6 +143,15 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 
+        //Quintessence Infuser
+    event.create('quintessence_infuser')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(2, 2, 1, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.CENTRIFUGE)
+
 })
 
 // Basic Microverse Projector
@@ -594,4 +603,32 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_inert_ptfe",
             "gtceu:block/multiblock/implosion_compressor", false)
+
+    //Quintessence Infuser
+    event.create('quintessence_infuser', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('quintessence_infuser')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .appearanceBlock(() => Block.getBlock('kubejs:dark_soularium_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("#CCC#", "CCCCC", "HGGGH", "HGGGH", "HGGGH", "CCCCC", "#CCC#")
+            .aisle("CCCCC", "COOOC", "G#O#G", "G#O#G", "G#O#G", "C#O#C", "CCCCC")
+            .aisle("CCCCC", "COPOC", "GOPOG", "GOPOG", "GOPOG", "COPOC", "CCMCC")
+            .aisle("CCCCC", "COOOC", "G#O#G", "G#O#G", "G#O#G", "C#O#C", "CCCCC")
+            .aisle("#CSC#", "CCCCC", "HGGGH", "HGGGH", "HGGGH", "CCCCC", "#CCC#")
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('H', Predicates.blocks('enderio:ensouled_chassis'))
+            .where('O', Predicates.blocks('gtceu:tungsten_frame'))
+            .where('G', Predicates.blocks('gtceu:fusion_glass'))
+            .where('P', Predicates.blocks('gtceu:tungstensteel_pipe_casing'))
+            .where('C', Predicates.blocks('kubejs:dark_soularium_casing').setMinGlobalLimited(40)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+            .where('M', Predicates.abilities(PartAbility.MAINTENANCE))
+            .where('#', Predicates.any())
+                .build())
+    .workableCasingRenderer("kubejs:block/soularium/dark_soularium_casing",
+        "gtceu:block/multiblock/implosion_compressor", false)
+})
+
 })
