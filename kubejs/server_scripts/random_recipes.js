@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
 
     // Implement Sculk Compound smelting
     event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound" })
-
+    event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound_gas" })
     const sculk_compoundFuels = [
         [2000, "gtceu:cetane_boosted_diesel"],
         [2000, "gtceu:gasoline"],
