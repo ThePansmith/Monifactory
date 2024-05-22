@@ -1,7 +1,7 @@
 // THIS FILE IS FOR RANDOM RECIPES THAT DOESNT REQUIRE THEIR OWN FILE
 
 ServerEvents.recipes(event => {
-    if (isExpertMode) {
+    if (isHardMode) {
     event.remove({ type: "minecraft:smelting", output: "minecraft:charcoal" }) 
 
     // Table with various burn time lengths

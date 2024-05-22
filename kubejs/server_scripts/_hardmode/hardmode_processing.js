@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    if (!isExpertMode) {
+    if (!isHardMode) {
         return;
     }
 
