@@ -9,7 +9,7 @@ JEIEvents.hideItems(event => {
     })
 }
 
-        if (isExpertMode) {
+        if (isHardMode) {
 event.hide(/hostilenetworks/)
 event.hide("watercollector:watercollector")
 }
