@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
         }
         )
     }
-    if (isHardMode) {
+    if (isExpertMode) {
         event.shaped(
             "telepastries:nether_cake", [
             'NNN',

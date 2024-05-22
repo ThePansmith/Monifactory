@@ -4,7 +4,7 @@
 
 // Taranium Line Stuff
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    if (!isHardMode) {
+    if (!isExpertMode) {
         return;
     }
 
@@ -94,7 +94,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(() => {
-    if (!isHardMode) {
+    if (!isExpertMode) {
         return;
     }
 	GTMaterials.get('xenic_acid').setFormula('H2XeO4');

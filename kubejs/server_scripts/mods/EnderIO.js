@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
             .duration(80)
             .EUt(16)
     }
-    if (isHardMode) {
+    if (isExpertMode) {
         // Manual item conduit
         event.shaped(
             "4x enderio:item_conduit", [

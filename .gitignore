@@ -1,7 +1,6 @@
 /*
 
 !/config
-!/config-overrides
 !/kubejs
 !/defaultconfigs
 !/.gitignore
@@ -11,7 +10,6 @@
 /tools/bootstrap/.cache
 !/.github
 !.editorconfig
-!/pack-mode-switcher*
 
 !/mods/systeams*
 !/mods/ExtendedCrafting*

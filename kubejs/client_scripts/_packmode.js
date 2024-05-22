@@ -2,9 +2,9 @@
 
 const defaultConfig = {
     mode: 'normal',
-    message: 'This tells KubeJS what mode the pack is currently in, packmode is changed in pack-mode-switcher'
+    message: 'Valid modes are normal, expert and omega.'
 };
-const configName = 'config/packmode.json';
+const configName = 'mode.json';
 let config = JsonIO.read(configName);
 if (!config || !config.mode) {
     JsonIO.write(configName, defaultConfig);
@@ -14,15 +14,15 @@ if (!config || !config.mode) {
 if (config.mode == 'none') {
     JsonIO.write(configName, defaultConfig);
     config.mode = defaultConfig.mode;
-    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal', 'hard' and 'omega'.`);
+    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal', 'expert' and 'omega'.`);
 }
 
 let packMode = config.mode;
 
 global.packmode = packMode;
 global.isNormalMode = packMode == 'normal';
-global.isHardMode = packMode == 'hard';
+global.isExpertMode = packMode == 'expert';
 global.isOmegaMode = packMode == 'omega';
 const isNormalMode = packMode == 'normal';
-const isHardMode = packMode == 'hard';
+const isExpertMode = packMode == 'expert';
 const isOmegaMode = packMode == 'omega';

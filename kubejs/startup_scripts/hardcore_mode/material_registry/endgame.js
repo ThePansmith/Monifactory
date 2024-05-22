@@ -3,7 +3,7 @@
 
 // Kapton K disabled in favor of GCYr's chain
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    if (!isHardMode) {
+    if (!isExpertMode) {
         return;
     }
 
@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 GTCEuStartupEvents.materialModification(() => {
-    if (!isHardMode) {
+    if (!isExpertMode) {
         return;
     }
 	// GTMaterials.get('kapton_k').setFormula('C6H2((CO)2N)2C6H4OC6H4');
