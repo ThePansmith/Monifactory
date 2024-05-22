@@ -1,6 +1,7 @@
 /*
 
 !/config
+!/config-overrides
 !/kubejs
 !/defaultconfigs
 !/.gitignore
