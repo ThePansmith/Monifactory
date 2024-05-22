@@ -10,6 +10,7 @@
 /tools/bootstrap/.cache
 !/.github
 !.editorconfig
+!/pack-mode-switcher*
 
 !/mods/systeams*
 !/mods/ExtendedCrafting*
