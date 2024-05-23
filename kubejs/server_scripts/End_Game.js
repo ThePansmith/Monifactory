@@ -17,50 +17,6 @@ ServerEvents.recipes(event => {
             .EUt(1000000)
     //research Assembly Line in Data Module, 144 CWU/t?
 
-    // UEV/UIV/MAX Hulls and Casing
-
-    event.recipes.gtceu.assembler('uev_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:single_omnium_wire')
-        .inputFluids('gtceu:polybenzimidazole 576')
-        .itemOutputs('gtceu:uev_machine_hull')
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('uev_casing')
-        .itemInputs('8x gtceu:omnium_plate')
-        .itemOutputs('gtceu:uev_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('uiv_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire')
-        .inputFluids('gtceu:polybenzimidazole 576')
-        .itemOutputs('gtceu:uiv_machine_hull')
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('uiv_casing')
-        .itemInputs('8x gtceu:infinity_plate')
-        .itemOutputs('gtceu:uiv_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
-
-        event.recipes.gtceu.assembler('max_hull')
-        .itemInputs('gtceu:max_machine_casing', '2x gtceu:holmium_single_wire')
-        .inputFluids('gtceu:omnium 1152')
-        .itemOutputs('gtceu:max_machine_hull')
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('max_casing')
-        .itemInputs('8x gtceu:monium_plate')
-        .itemOutputs('gtceu:max_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
-
     // Blacklight
     event.shaped(
         'gtceu:blacklight', [
