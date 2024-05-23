@@ -83,13 +83,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hydrazine') // is this a reference to the book 'Ignition! An Informal History of Liquid Rocket Propellants.' no way
         .fluid()
         .color(0xb50707)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('2x nitrogen', '4x hydrogen')
 
     event.create('acetone_azine')
         .fluid()
         .color(0xa1e1e1)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('6x carbon', '12x hydrogen', '2x nitrogen')
 
     event.create('graphene_oxide')
@@ -136,7 +134,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('lead_metasilicate')
         .dust()
         .color(0xF7F7E7).iconSet('dull')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('lead', 'silicon', '3x oxygen')
 })
 
