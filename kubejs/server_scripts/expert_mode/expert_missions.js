@@ -42,8 +42,8 @@ ServerEvents.recipes(event => {
                 T: 'gtceu:double_trinium_plate',
                 F: 'gtceu:zpm_field_generator',
                 E: 'gtceu:zpm_emitter',
-                C: 'draconicevolution:draconic_energy_core',
-                S: 'draconicevolution:reactor_prt_stab_frame',
+                C: 'kubejs:energy_core',
+                S: 'kubejs:reactor_prt_stab_frame',
                 Q: 'gtceu:luv_quantum_chest',
                 W: 'kubejs:warp_core',
                 C: 'kubejs:warp_controller',
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
         function stabilized_miners(tier) {
             event.recipes.gtceu.assembly_line(`stable_t_${tier}`)
-                .itemInputs(`kubejs:microminer_t${tier}`, 'kubejs:heart_of_a_universe', '4x draconicevolution:chaos_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
+                .itemInputs(`kubejs:microminer_t${tier}`, 'kubejs:heart_of_a_universe', '4x kubejs:abyss_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
                 .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
                 .itemOutputs(`kubejs:stabilized_microminer_t${tier}`)
                 .duration(125)

@@ -36,7 +36,6 @@ ServerEvents.recipes(event => {
         print('creative_storage_data', 3, 'gtceu:uhv_quantum_tank')
         print('creative_data_hatch_data', 1, 'gtceu:creative_data_access_hatch')
         print('creative_energy_data', 1, 'gtceu:creative_energy')
-        print('creative_energy_data', 2, 'draconicevolution:creative_op_capacitor')
         print('creative_energy_data', 3, 'ae2:creative_energy_cell')
 
         event.recipes.gtceu.subatomic_digital_assembly('kubejs:corrupted_data')
