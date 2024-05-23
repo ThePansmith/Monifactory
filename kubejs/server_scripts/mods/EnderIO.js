@@ -56,6 +56,7 @@ ServerEvents.recipes(event => {
             .EUt(16)
     }
     if (isHardMode) {
+        if (!isHarderMode) {
         // Manual item conduit
         event.shaped(
             "4x enderio:item_conduit", [
@@ -99,6 +100,7 @@ ServerEvents.recipes(event => {
             .duration(80)
             .EUt(16)
     }
+}
 
 
     // Energy Conduits //

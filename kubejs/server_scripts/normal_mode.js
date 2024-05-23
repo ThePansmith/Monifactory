@@ -217,4 +217,20 @@ ServerEvents.recipes(event => {
         B: "minecraft:bucket"
     }
     )
+    
+    event.remove({ output: 'systeams:stirling_boiler' })
+    event.shapeless('systeams:stirling_boiler', ['steamdynamo:steam_dynamo', 'systeams:boiler_pipe'])
+
+    event.shaped(
+        'systeams:boiler_pipe', [
+            ' C ',
+            'ABA',
+            ' D '
+        ], {
+            A: 'gtceu:copper_plate',
+            B: 'minecraft:bucket',
+            C: 'gtceu:iron_gear',
+            D: '#enderio:fused_quartz'
+        }
+    )
 })

@@ -96,3 +96,5 @@ $RECYCLE.BIN/
 .AppleDouble
 .LSOverride
 kubejs/assets/gtceu/textures/item/material_sets/infinity/infinity_plate.xcf
+config/packmode.json
+config/gtceu.yaml
