@@ -1,4 +1,172 @@
 ServerEvents.recipes(event => {
+    const converter = [
+        ['uev', 'omnium', 'netherite', '1966080'],
+        ['uiv', 'infinity', 'holmium', '3932160'],
+        ['max', 'monium', 'monium', '80000000'],
+    ]
+    // no MAX tier laserhatch :1984:
+    const laserhatch = [
+        ['uev', 'netherite', '1966080'],
+        ['uiv', 'holmium', '3932160'],
+    ]
+    if (!isHarderMode) {
+        converter.forEach(([tier, mat1, mat2, eut]) => {
+            event.shaped(Item.of(`gtceu:${tier}_1a_energy_converter`), [
+                ' BB',
+                'AHC',
+                ' BB'
+            ], {
+                A: `gtceu:red_alloy_single_wire`,
+                B: `gtceu:${mat2}_single_wire`,
+                H: `gtceu:${tier}_machine_hull`,
+                C: `#gtceu:circuits/${tier}`
+            })
+
+
+            event.shaped(Item.of(`gtceu:${tier}_4a_energy_converter`), [
+                ' BB',
+                'AHC',
+                ' BB'
+            ], {
+                A: `gtceu:red_alloy_quadruple_wire`,
+                B: `gtceu:${mat2}_quadruple_wire`,
+                H: `gtceu:${tier}_machine_hull`,
+                C: `#gtceu:circuits/${tier}`
+            })
+
+            event.shaped(Item.of(`gtceu:${tier}_8a_energy_converter`), [
+                ' BB',
+                'AHC',
+                ' BB'
+            ], {
+                A: `gtceu:red_alloy_octal_wire`,
+                B: `gtceu:${mat2}_octal_wire`,
+                H: `gtceu:${tier}_machine_hull`,
+                C: `#gtceu:circuits/${tier}`
+            })
+
+            event.shaped(Item.of(`gtceu:${tier}_16a_energy_converter`), [
+                ' BB',
+                'AHC',
+                ' BB'
+            ], {
+                A: `gtceu:red_alloy_hex_wire`,
+                B: `gtceu:${mat2}_hex_wire`,
+                H: `gtceu:${tier}_machine_hull`,
+                C: `#gtceu:circuits/${tier}`
+
+
+            })
+
+
+            event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_input_hatch`)
+                .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_single_wire`, `2x gtceu:uhpic_chip`, `#gtceu:circuits/${tier}`, `2x gtceu:${mat1}_double_wire`)
+                .itemOutputs(`gtceu:${tier}_energy_input_hatch`)
+                .inputFluids('gtceu:crystal_matrix 11520', 'gtceu:soldering_alloy 5760')
+                .duration(1000)
+                .EUt(eut)
+
+            event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_output_hatch`)
+                .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_spring`, `2x gtceu:uhpic_chip`, `#gtceu:circuits/${tier}`, `2x gtceu:${mat1}_double_wire`)
+                .itemOutputs(`gtceu:${tier}_energy_output_hatch`)
+                .inputFluids('gtceu:crystal_matrix 11520', 'gtceu:soldering_alloy 5760')
+                .duration(1000)
+                .EUt(eut)
+        })
+    }
+
+
+
+    laserhatch.forEach(([tier, mat1, eut]) => {
+        event.recipes.gtceu.assembler(`${tier}_256a_laser_target_hatch`)
+            .itemInputs(`gtceu:${tier}_machine_hull`, 'gtceu:diamond_lens', `gtceu:${tier}_emitter`, `gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
+            .itemOutputs(`gtceu:${tier}_256a_laser_target_hatch`)
+            .circuit(1)
+            .duration(400)
+            .EUt(eut)
+
+        event.recipes.gtceu.assembler(`${tier}_256a_laser_source_hatch`)
+            .itemInputs(`gtceu:${tier}_machine_hull`, 'gtceu:diamond_lens', `gtceu:${tier}_sensor`, `gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
+            .itemOutputs(`gtceu:${tier}_256a_laser_target_hatch`)
+            .circuit(1)
+            .duration(400)
+            .EUt(eut)
+
+        event.recipes.gtceu.assembler(`${tier}_1024a_laser_target_hatch`)
+            .itemInputs(`gtceu:${tier}_machine_hull`, '2x gtceu:diamond_lens', `2x gtceu:${tier}_emitter`, `2x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
+            .itemOutputs(`gtceu:${tier}_1024a_laser_target_hatch`)
+            .circuit(2)
+            .duration(400)
+            .EUt(eut)
+
+        event.recipes.gtceu.assembler(`${tier}_1024a_laser_source_hatch`)
+            .itemInputs(`gtceu:${tier}_machine_hull`, '2x gtceu:diamond_lens', `2x gtceu:${tier}_sensor`, `2x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_double_wire`)
+            .itemOutputs(`gtceu:${tier}_1024a_laser_target_hatch`)
+            .circuit(2)
+            .duration(400)
+            .EUt(eut)
+
+        event.recipes.gtceu.assembler(`${tier}_4096a_laser_target_hatch`)
+            .itemInputs(`gtceu:${tier}_machine_hull`, '4x gtceu:diamond_lens', `4x gtceu:${tier}_emitter`, `4x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_quadruple_wire`)
+            .itemOutputs(`gtceu:${tier}_4096a_laser_target_hatch`)
+            .circuit(3)
+            .duration(400)
+            .EUt(eut)
+
+        event.recipes.gtceu.assembler(`${tier}_4096a_laser_source_hatch`)
+            .itemInputs(`gtceu:${tier}_machine_hull`, '4x gtceu:diamond_lens', `4x gtceu:${tier}_sensor`, `4x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_quadruple_wire`)
+            .itemOutputs(`gtceu:${tier}_4096a_laser_target_hatch`)
+            .circuit(3)
+            .duration(400)
+            .EUt(eut)
+
+
+    })
+
+
+    // UEV/UIV/MAX Hulls and Casing
+
+    event.recipes.gtceu.assembler('uev_hull')
+        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:single_omnium_wire')
+        .inputFluids('gtceu:polybenzimidazole 576')
+        .itemOutputs('gtceu:uev_machine_hull')
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('uev_casing')
+        .itemInputs('8x gtceu:omnium_plate')
+        .itemOutputs('gtceu:uev_machine_casing')
+        .circuit(8)
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('uiv_hull')
+        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire')
+        .inputFluids('gtceu:polybenzimidazole 576')
+        .itemOutputs('gtceu:uiv_machine_hull')
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('uiv_casing')
+        .itemInputs('8x gtceu:infinity_plate')
+        .itemOutputs('gtceu:uiv_machine_casing')
+        .circuit(8)
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('max_hull')
+        .itemInputs('gtceu:max_machine_casing', '2x gtceu:holmium_single_wire')
+        .inputFluids('gtceu:omnium 1152')
+        .itemOutputs('gtceu:max_machine_hull')
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('max_casing')
+        .itemInputs('8x gtceu:monium_plate')
+        .itemOutputs('gtceu:max_machine_casing')
+        .circuit(8)
+        .duration(50)
+        .EUt(16)
 
     // Motors
     event.recipes.gtceu.assembly_line('uhv_motor')
@@ -65,7 +233,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:uev_robot_arm')
         // requires research (UHV robot arm with data module, 128 CWU/t)
         .duration(600)
-        .EUt(1966080)     
+        .EUt(1966080)
 
     event.recipes.gtceu.assembly_line('uiv_robot_arm')
         .itemInputs('4x gtceu:long_infinity_rod', 'gtceu:infinity_gear', '3x gtceu:small_infinity_gear', '3x gtceu:uiv_electric_motor', 'gtceu:uiv_electric_piston', '#gtceu:circuits/uiv', '2x #gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '4x gtceu:holmium_double_wire')
@@ -90,8 +258,8 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:uev_sensor')
         // requires research (UHV sensor with data module, 128 CWU/t)
         .duration(600)
-        .EUt(1966080)   
-        
+        .EUt(1966080)
+
     event.recipes.gtceu.assembly_line('uiv_sensor')
         .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:infinity_plate', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_double_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
@@ -99,7 +267,7 @@ ServerEvents.recipes(event => {
         // requires research (UEV sensor with data module, 144 CWU/t)
         .duration(1200)
         .EUt(3932160)
-        
+
     // Emitters
     event.recipes.gtceu.assembly_line('uhv_emitter')
         .itemInputs('gtceu:neutronium_frame', 'gtceu:uhv_electric_motor', '4x gtceu:neutronium_rod', '2x gtceu:gravi_star', '#gtceu:circuits/uhv', '64x gtceu:naquadria_foil', '32x gtceu:naquadria_foil', '4x gtceu:europium_double_cable')
@@ -116,7 +284,7 @@ ServerEvents.recipes(event => {
         // requires research (UHV emitter with data module, 128 CWU/t)
         .duration(600)
         .EUt(1966080)
-    
+
     event.recipes.gtceu.assembly_line('uiv_emitter')
         .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:infinity_rod', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_double_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')

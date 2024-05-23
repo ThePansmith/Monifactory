@@ -1299,11 +1299,11 @@
 				"7F669657313F2E62"
 			]
 			description: [
-				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6sculk_compound&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
+				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Sculk Compound&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
 				""
 				"Sculk Compound gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain sculk_compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft sculk_compound."
+				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Sculk Compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft sculk_compound."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1864,7 +1864,7 @@
 		{
 			dependencies: ["7C89BC235C988689"]
 			description: [
-				"&9Various items can be empowered with sculk&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
+				"&9Various items can be empowered with Sculk&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
 				""
 				"You'll need eight &6Sculk Reaction Casings&r to upgrade any additional injectors you make to echo Tier."
 				""

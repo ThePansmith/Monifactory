@@ -50,7 +50,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("monium"))
         .color(0xffffff)
         .iconSet('monium')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING)
+        .cableProperties(2147483647, 1000, 0, true)
 
     event.create('netherite')
         .ingot()
@@ -59,7 +60,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('dull')
         .cableProperties(2147483647, 64, 0, true)
         .fluidPipeProperties(120000, 96000, true, true, true, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
     event.create('omnic_acid')
         .dust()

@@ -485,7 +485,7 @@
 				""
 				"Unfortunately, it is super hot. You'll need to cool it in a &3Vacuum Freezer&r for it to be usable."
 				""
-				"You should have set up a &3Vaccum Freezer&r for &6Kanthal&r, but if you haven't done it yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set an Ore Dictionary Storage Bus on the input bus of the freezer, set it to 'ingotHot*', and set it to a high piority. This will accept any new Hot Ingots entering you're system, and eliminates the need for a big conduit network."
+				"You should have set up a &3Vaccum Freezer&r for &6Kanthal&r, but if you haven't done it yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set an Ore Dictionary Storage Bus on the input bus of the freezer, set it to 'forge:hot_ingots', and set it to a high piority. This will accept any new Hot Ingots entering you're system, and eliminates the need for a big conduit network."
 				""
 				"Don't encode the Hot Ingot in a pattern though!"
 			]
@@ -749,7 +749,7 @@
 				""
 				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Kanthal Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Chemical Bath&r or &3Vacuum Freezer&r."
 				""
-				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Ore Dictionary Filter&r set to 'ingotHot*' with a high piority."
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Ore Dictionary Filter&r set to 'forge:hot_ingots' with a high piority."
 			]
 			id: "74832ED7B78A6AEA"
 			rewards: [{

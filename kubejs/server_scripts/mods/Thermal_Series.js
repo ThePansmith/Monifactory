@@ -28,19 +28,6 @@ ServerEvents.recipes(event => {
     ]).id('kubejs:drill_head');
 
     event.shaped(
-        'systeams:boiler_pipe', [
-            ' C ',
-            'ABA',
-            ' D '
-        ], {
-            A: 'gtceu:copper_plate',
-            B: 'minecraft:bucket',
-            C: 'gtceu:iron_gear',
-            D: '#enderio:fused_quartz'
-        }
-    )
-
-    event.shaped(
         'thermal:dynamo_fuel_augment', [
             'ABA',
             'BCB',
