@@ -87,8 +87,12 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:hyperbolic_microverse_projector', Text.translatable('gtceu.hyperbolic_microverse_projector_2.desc'))
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.subatomic_digital_assembler.desc'))
     tooltip.add('gtceu:quintessence_infuser', Text.translatable('gtceu.quintessence_infuser.desc'))
-    tooltip.add('gtceu:universal_crystallizer', Text.translatable('gtceu.universal_crystallizer.desc'))
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.actualization_chamber.desc'))
+
+    tooltip.addAdvanced('gtceu:universal_crystallizer', (item, adv, text) => {
+        text.add(1, Text.darkGray('An immense device, capable of turning raw materials into complex matters'))
+        text.add(2, [Text.gray('Can be parallelized with '), Text.aqua('Parallel Control Hatches')])
+    })
 
     tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
         text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
