@@ -3,7 +3,7 @@
 //? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsNaqLine.java
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    if (!isExpertMode) {
+    if (!isHardMode) {
         return;
     }
 
@@ -55,7 +55,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 // modify material names etc here
 GTCEuStartupEvents.materialModification(() => {
-    if (!isExpertMode) {
+    if (!isHardMode) {
         return;
     }
 	GTMaterials.get('naquadah_hydroxide').setFormula('Nq(OH)3');

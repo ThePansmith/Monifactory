@@ -1,7 +1,7 @@
 // HM exclusive items
 
 StartupEvents.registry('item', event => {
-    if (!isExpertMode) {
+    if (!isHardMode) {
         return;
     }
     event.create('magnetron')
