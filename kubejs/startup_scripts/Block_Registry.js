@@ -76,6 +76,24 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .defaultCutout();
 
+    event.create('reactor_stabilizer')
+        .displayName("Reactor Stabilizer")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout();
+    
+    event.create('reactor_core')
+        .displayName("Reactor Core")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout();
+
     //Dense Ores
     const ores = [
         "redstone_ore",
