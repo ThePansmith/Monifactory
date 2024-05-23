@@ -85,7 +85,8 @@ StartupEvents.registry('item', event => {
         ['uranium', '#04ff00'],
         ['curium', '#c800ff'],
         ['californium', '#ad0232'],
-        ['americium', '#875800']
+        ['americium', '#875800'],
+        ['oganesson', '#cda79a']
     ]
 
     for (const [element, elemColor] of stabilized_elements) {
@@ -237,6 +238,13 @@ StartupEvents.registry('item', event => {
     event.create('purified_netherite_dust').texture('kubejs:item/netherite/purified_netherite_dust')
     event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
+
+    // Post Tank Wafer Stuff
+    event.create('universe_boule').texture('kubejs:item/universalwafer/universal_boule').displayName('Universe-doped Monocrystalline Silicon Boule')
+    event.create('universe_wafer').texture('kubejs:item/universalwafer/universal_wafer').displayName('Universe-doped Wafer')
+    event.create('unactivated_multidimensional_cpu_wafer').texture('kubejs:item/multidimensionalcpu/unactivated_multidimensional_cpu_wafer').displayName('Unactivated Multidimensional CPU Wafer')
+    event.create('multidimensional_cpu_wafer').texture('kubejs:item/multidimensionalcpu/multidimensional_cpu_wafer').displayName('Multidimensional CPU Wafer')
+    event.create('multidimensional_cpu_chip').texture('kubejs:item/multidimensionalcpu/multidimensional_cpu_chip').displayName('Multidimensional CPU Chip')
 
 
     // Post tank circuits and whatnot

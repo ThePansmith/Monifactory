@@ -240,8 +240,8 @@ ServerEvents.recipes(event => {
             '   O M O   ',
             '   O M O   ',
             '  OO M OO  ',
-            ' POOMMMOOP ',
-            ' OOOMMMOOO ',
+            ' POOMUMOOP ',
+            ' OUOMMMOUO ',
             'POOMMMMMOOP',
             'OODMMMMMDOO',
             'ODSMOOOMSDO',
@@ -254,7 +254,8 @@ ServerEvents.recipes(event => {
             P: 'solarflux:sp_custom_neutronium',
             W: 'kubejs:warp_engine',
             D: 'kubejs:reactor_core',
-            S: 'kubejs:reactor_stabilizer'
+            S: 'kubejs:reactor_stabilizer',
+            U: 'kubejs:universal_navigator'
         }
     )
 
