@@ -14,7 +14,7 @@ if (!config || !config.mode) {
 if (config.mode == 'none') {
     JsonIO.write(configName, defaultConfig);
     config.mode = defaultConfig.mode;
-    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal', 'hard' and 'omega'.`);
+    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal', 'hard' and 'harder'.`);
 }
 
 let packMode = config.mode;
@@ -22,7 +22,7 @@ let packMode = config.mode;
 global.packmode = packMode;
 global.isNormalMode = packMode == 'normal';
 global.isHardMode = packMode == 'hard';
-global.isOmegaMode = packMode == 'omega';
+global.isHarderMode = packMode == 'harder';
 const isNormalMode = packMode == 'normal';
 const isHardMode = packMode == 'hard';
-const isOmegaMode = packMode == 'omega';
+const isHarderMode = packMode == 'harder';

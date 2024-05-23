@@ -14,15 +14,15 @@ if (!config || !config.mode) {
 if (config.mode == 'none') {
     JsonIO.write(configName, defaultConfig);
     config.mode = defaultConfig.mode;
-    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal', 'hard' and 'omega'.`);
+    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal', 'hard' and 'harder'.`);
 }
 
 let packMode = config.mode;
 
 global.packmode = packMode;
 global.isNormalMode = packMode == 'normal';
-global.isHardMode = (packMode == 'hard') || global.isOmegaMode;
-global.isOmegaMode = packMode == 'omega';
+global.isHardMode = (packMode == 'hard') || global.isHarderMode;
+global.isHarderMode = packMode == 'harder';
 const isNormalMode = packMode == 'normal';
-const isHardMode = (packMode == 'hard') || isOmegaMode;
-const isOmegaMode = packMode == 'omega';
+const isHardMode = (packMode == 'hard') || isHarderMode;
+const isHarderMode = packMode == 'harder';
