@@ -1,7 +1,6 @@
 ServerEvents.recipes(event => {
-    if (!isExpertMode) {
-        return;
-    }
+    if (isHardMode) {
+
 
     // Tungsten
     event.remove({id: 'gtceu:electrolyzer/tungstic_acid_electrolysis'})
@@ -820,4 +819,4 @@ ServerEvents.recipes(event => {
         // .duration(30)
         // .EUt(7680)
 
-});
+}});

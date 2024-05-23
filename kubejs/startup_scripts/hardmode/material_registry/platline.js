@@ -6,7 +6,7 @@
  * Chemical Materials
  */
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    if (!isExpertMode) {
+    if (!isHardMode) {
         return;
     }
 
@@ -169,7 +169,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 // modify material names etc here
 GTCEuStartupEvents.materialModification(() => {
-    if (!isExpertMode) {
+    if (!isHardMode) {
         return;
     }
 	GTMaterials.get('ammonium_hexachloroplatinate').setFormula('(NH4)2PtCl6');
