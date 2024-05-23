@@ -1,4 +1,66 @@
 ServerEvents.recipes(event => {
+    // Assembly Line
+    // Dimensional Superassembler
+    event.recipes.gtceu.assembly_line('dimensional_superassembler')
+            .itemInputs('gtceu:assembly_line', '4x kubejs:dimensional_processor_mainframe', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '12x gtceu:uiv_conveyor_module', '8x gtceu:uiv_robot_arm', '8x gtceu:uiv_emitter', '2x gtceu:infinity_frame')
+            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760', 'gtceu:polybenzimidazole 11520')
+            .itemOutputs('gtceu:dimensional_superassembler')
+            .duration(6000)
+            .EUt(13920000)
+    //research Assembly Line in Data Module, 160 CWU/t?
+    // Extra Large Chemical Reactor
+    event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
+            .itemInputs('gtceu:large_chemical_reactor', "16x gtceu:duranium_large_fluid_pipe", '16x gtceu:uhv_hermetic_casing', '4x gtceu:uv_field_generator', '8x gtceu:uv_electric_pump', '8x gtceu:uv_fluid_regulator', '4x #gtceu:circuits/uhv')
+            .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polybenzimidazole 1152')
+            .itemOutputs('gtceu:extra_large_chemical_reactor')
+            .duration(1200)
+            .EUt(1000000)
+    //research Assembly Line in Data Module, 144 CWU/t?
+
+    // UEV/UIV/MAX Hulls and Casing
+
+    event.recipes.gtceu.assembler('uev_hull')
+        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:single_omnium_wire')
+        .inputFluids('gtceu:polybenzimidazole 576')
+        .itemOutputs('gtceu:uev_machine_hull')
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('uev_casing')
+        .itemInputs('8x gtceu:omnium_plate')
+        .itemOutputs('gtceu:uev_machine_casing')
+        .circuit(8)
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('uiv_hull')
+        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire')
+        .inputFluids('gtceu:polybenzimidazole 576')
+        .itemOutputs('gtceu:uiv_machine_hull')
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('uiv_casing')
+        .itemInputs('8x gtceu:infinity_plate')
+        .itemOutputs('gtceu:uiv_machine_casing')
+        .circuit(8)
+        .duration(50)
+        .EUt(16)
+
+        event.recipes.gtceu.assembler('max_hull')
+        .itemInputs('gtceu:max_machine_casing', '2x gtceu:holmium_single_wire')
+        .inputFluids('gtceu:omnium 1152')
+        .itemOutputs('gtceu:max_machine_hull')
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.assembler('max_casing')
+        .itemInputs('8x gtceu:monium_plate')
+        .itemOutputs('gtceu:max_machine_casing')
+        .circuit(8)
+        .duration(50)
+        .EUt(16)
+
     // Blacklight
     event.shaped(
         'gtceu:blacklight', [
