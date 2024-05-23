@@ -254,30 +254,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // Creative Capacitor
-    event.recipes.extendedcrafting.shaped_table(
-        'draconicevolution:creative_capacitor', [
-            "UPPCGCPPU",
-            'PPCGSGCPP',
-            'PCGSRSGCP',
-            'CGSRORSGC',
-            'GSROIORSG',
-            'CGSRORSGC',
-            'PCGSRSGCP',
-            'PPCGSGCPP',
-            "UPPCGCPPU",
-        ], {
-            U: 'kubejs:double_compressed_octadic_capacitor',
-            P: 'kubejs:compressed_octadic_capacitor',
-            C: 'enderio:octadic_capacitor',
-            G: 'thermal:flux_capacitor',
-            S: 'draconicevolution:wyvern_capacitor',
-            R: 'draconicevolution:draconic_capacitor',
-            O: 'kubejs:ultimate_power_storage',
-            I: 'kubejs:infinity_catalyst'
-        }
-    )
-
     // Creative Efficiency Upgrade
     event.recipes.extendedcrafting.shaped_table(
         'thermal:machine_efficiency_creative_augment', [
@@ -317,25 +293,6 @@ ServerEvents.recipes(event => {
             'MIPVWXYZPIM',
             'BMMMMMMMMMB'
         ], {
-            A: "kubejs:creative_storage_component",
-            B: "gtceu:infinity_ingot",
-            C: "draconicevolution:creative_op_capacitor",
-            D: "thermal:machine_efficiency_creative_augment",
-            E: "thermal:machine_catalyst_creative_augment",
-            F: "ae2:creative_fluid_cell",
-            G: "gtceu:creative_data_access_hatch", 
-            H: "kubejs:infinity_file",
-            I: "kubejs:infinity_hammer",
-            J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').weakNBT(),
-            K: "kubejs:infinity_screwdriver",
-            L: "kubejs:infinity_wrench",
-            M: "kubejs:infinity_wire_cutter",
-            N: "gtceu:creative_energy",
-            S: "solarflux:sp_custom_infinity",
-            T: "gtceu:creative_tank",
-            U: "ae2:creative_energy_cell",
-            W: "gtceu:creative_energy",
-            X: "draconicevolution:creative_capacitor"
             B: 'gtceu:monium_block',
             M: 'gtceu:monium_plate',
             D: 'gtceu:double_monium_plate',
