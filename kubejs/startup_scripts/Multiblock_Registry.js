@@ -36,6 +36,29 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
             .setSound(GTSoundEntries.COMPUTATION)
     }
 
+    // Normal mode-exclusive Multis
+    if (isExpertMode) {
+
+        // Actualization Chamber
+        event.create('actualization_chamber')
+            .category('multiblock')
+            .setEUIO('in')
+            .setMaxIOSize(2, 20, 0, 0) //
+            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+            .setSound(GTSoundEntries.COOLING)
+
+
+        // Universal Crystallizer
+        event.create('universal_crystallizer')
+            .category('multiblock')
+            .setEUIO('in')
+            .setMaxIOSize(9, 1, 1, 0) //
+            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+            .setSound(GTSoundEntries.COMPUTATION)
+    }
+
 
     // Small Microverse Projector Recipe Type
     event.create('basic_microverse')
@@ -180,7 +203,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .aisle("CCCCCCC", "CHMMMHC", "CHAAAHC", "CHAAAHC", "CHAAAHC", "CHAAAHC", "CHAAAHC", "CHMMMHC", "CCCCCCC")
                 .aisle("CCCCCCC", "CCCCCCC", "#CCCCC#", "#CCCCC#", "#CCCCC#", "#CCCCC#", "#CCCCC#", "CCCCCCC", "CCCCCCC")
                 .aisle("CCCCCCC", "#CCCCC#", "#CCCCC#", "#CNNNC#", "###N###", "###N###", "###N###", "#CNNNC#", "CCCCCCC")
-                .aisle("#CCCCC#", "##CSC##", "##CCC##", "#######", "#######", "#######", "#######", "#######", "#CCCCC#") 
+                .aisle("#CCCCC#", "##CSC##", "##CCC##", "#######", "#######", "#######", "#######", "#######", "#CCCCC#")
                     .where('S', Predicates.controller(Predicates.blocks(definition.get())))
                     .where('G', Predicates.blocks(GTBlocks.CLEANROOM_GLASS.get()))
                     .where('H', Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
@@ -203,11 +226,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .recipeTypes('simulation_supercomputer')
             .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
             .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
-            .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-            .aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCMCC")
-            .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-            .aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
+                .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
+                .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
+                .aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCMCC")
+                .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
+                .aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
                 .where('S', Predicates.controller(Predicates.blocks(definition.get())))
                 .where('V', Predicates.blocks('gtceu:vibration_safe_casing'))
                 .where('E', Predicates.blocks('gtceu:enderium_block'))
@@ -215,8 +238,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('Q', Predicates.blocks('ae2:quartz_vibrant_glass'))
                 .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
                 .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(40)
-                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))) // tried putting maint hatch here, but its going to be optional and not required for the multiblock then
-                .where('M', Predicates.abilities(PartAbility.MAINTENANCE)) // temporary bandaid, someone make it so that it can be placed anywhere
+                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where('#', Predicates.any())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
@@ -228,11 +251,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .recipeTypes('loot_superfabricator')
             .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
             .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
-            .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-            .aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCMCC")
-            .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-            .aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
+                .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
+                .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
+                .aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCMCC")
+                .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
+                .aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
                 .where('S', Predicates.controller(Predicates.blocks(definition.get())))
                 .where('V', Predicates.blocks('gtceu:shock_proof_cutting_casing'))
                 .where('E', Predicates.blocks('gtceu:energetic_alloy_block'))
@@ -240,12 +263,64 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('Q', Predicates.blocks('ae2:quartz_vibrant_glass'))
                 .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
                 .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(40)
-                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))) // tried putting maint hatch here, but its going to be optional and not required for the multiblock then
-                .where('M', Predicates.abilities(PartAbility.MAINTENANCE)) // temporary bandaid, someone make it so that it can be placed anywhere
+                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where('#', Predicates.any())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
                 "gtceu:block/multiblock/implosion_compressor", false)
+    }
+
+    // Expert mode-exclusive multis            
+    if (isExpertMode) {
+
+        // Actualization Chamber
+        event.create('actualization_chamber', 'multiblock')
+            .rotationState(RotationState.NON_Y_AXIS)
+            .recipeTypes('actualization_chamber')
+            .appearanceBlock(GTBlocks.FUSION_CASING)
+            .pattern(definition => FactoryBlockPattern.start()
+                .aisle("XXX", "GGG", "XXX")
+                .aisle("XXX", "GOG", "XXX")
+                .aisle("XSX", "GGG", "XXX")
+                .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+                .where('X', Predicates.blocks("gtceu:fusion_casing").setMinGlobalLimited(9)
+                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .where('G', Predicates.blocks("gtceu:fusion_glass"))
+                .where('O', Predicates.blocks("gtceu:fusion_coil"))
+                .build())
+            .workableCasingRenderer("gtceu:block/casings/fusion/fusion_casing",
+                "gtceu:block/multiblock/implosion_compressor", false)
+
+        // Universal Crystallizer
+        event.create('universal_crystallizer', 'multiblock')
+            .rotationState(RotationState.NON_Y_AXIS)
+            .recipeTypes('universal_crystallizer')
+            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+            .appearanceBlock(GCyMBlocks.CASING_LASER_SAFE_ENGRAVING)
+            .pattern(definition => FactoryBlockPattern.start()
+                .aisle("XXXXXXX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XXXXXXX")
+                .aisle("XXXXXXX", "G#####G", "G#####G", "F#####F", "G#####G", "G#####G", "XGGGGGX")
+                .aisle("XXXXXXX", "G#CCC#G", "F#C#C#F", "FTC#CTF", "F#C#C#F", "G#CCC#G", "XGGGGGX")
+                .aisle("XXXXXXX", "F#CCC#F", "FT###TF", "FTBRBTF", "FT###TF", "F#CCC#F", "XGGGGGX")
+                .aisle("XXXXXXX", "G#CCC#G", "F#C#C#F", "FTC#CTF", "F#C#C#F", "G#CCC#G", "XGGGGGX")
+                .aisle("XXXXXXX", "G#####G", "G#####G", "F#####F", "G#####G", "G#####G", "XGGGGGX")
+                .aisle("XXXSXXX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XXXXXXX")
+                .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+                .where('X', Predicates.blocks("gtceu:laser_safe_engraving_casing").setMinGlobalLimited(80)
+                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .where('#', Predicates.air())
+                .where('C', Predicates.blocks("gtceu:fusion_coil"))
+                .where('F', Predicates.blocks("gtceu:berkelium_frame"))
+                .where('G', Predicates.blocks("gtceu:fusion_glass"))
+                .where('T', Predicates.blocks("gtceu:taranium_block"))
+                .where('B', Predicates.blocks("kubejs:reactor_stabilizer"))
+                .where('R', Predicates.blocks("kubejs:reactor_core"))
+                .build())
+            .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
+                "gtceu:block/multiblock/implosion_compressor", false)    
     }
 
     
@@ -431,112 +506,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("kubejs:block/sculk_compound/casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
-
-    // Subatomic Digital Assembler
-    event.create('subatomic_digital_assembler', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('subatomic_digital_assembly')
-        .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("#CCCCC#", "#CCCCC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CCCCC#", "#CCCCC#")
-            .aisle("CCCCCCC", "CHMMMHC", "CHAAAHC", "CHAAAHC", "CHAAAHC", "CHAAAHC", "CHAAAHC", "CHMMMHC", "CCCCCCC")
-            .aisle("CCCCCCC", "CMXYXMC", "GAXYXAG", "GAXYXAG", "GAXYXAG", "GAXYXAG", "GAXYXAG", "CMXYXMC", "CCCCCCC")
-            .aisle("CCCCCCC", "CMYYYMC", "GAYYYAG", "GAYYYAG", "GAYYYAG", "GAYYYAG", "GAYYYAG", "CMYYYMC", "CCCCCCC")
-            .aisle("CCCCCCC", "CMXYXMC", "GAXYXAG", "GAXYXAG", "GAXYXAG", "GAXYXAG", "GAXYXAG", "CMXYXMC", "CCCCCCC")
-            .aisle("CCCCCCC", "CHMMMHC", "CHAAAHC", "CHAAAHC", "CHAAAHC", "CHAAAHC", "CHAAAHC", "CHMMMHC", "CCCCCCC")
-            .aisle("CCCCCCC", "CCCCCCC", "#CCCCC#", "#CCCCC#", "#CCCCC#", "#CCCCC#", "#CCCCC#", "CCCCCCC", "CCCCCCC")
-            .aisle("CCCCCCC", "#CCCCC#", "#CCCCC#", "#CNNNC#", "###N###", "###N###", "###N###", "#CNNNC#", "CCCCCCC")
-            .aisle("#CCCCC#", "##CSC##", "##CCC##", "#######", "#######", "#######", "#######", "#######", "#CCCCC#")
-            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('G', Predicates.blocks(GTBlocks.CLEANROOM_GLASS.get()))
-            .where('H', Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
-            .where('M', Predicates.blocks("gtceu:crystal_matrix_frame"))
-            .where('N', Predicates.blocks("gtceu:naquadah_alloy_frame"))
-            .where('X', Predicates.blocks(GTBlocks.COMPUTER_CASING.get()))
-            .where('Y', Predicates.blocks(GTBlocks.ADVANCED_COMPUTER_CASING.get()))
-            .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(220)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1)))
-            .where('A', Predicates.any())
-            .where('#', Predicates.any())
-            .build())
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
-
-    // Super Computer
-    event.create('simulation_supercomputer', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('simulation_supercomputer')
-        .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
-            .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-            .aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCMCC")
-            .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-            .aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
-            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('V', Predicates.blocks('gtceu:vibration_safe_casing'))
-            .where('E', Predicates.blocks('gtceu:enderium_block'))
-            .where('O', Predicates.blocks('gtceu:omnium_block'))
-            .where('Q', Predicates.blocks('ae2:quartz_vibrant_glass'))
-            .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-            .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(40)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))) // tried putting maint hatch here, but its going to be optional and not required for the multiblock then
-            .where('M', Predicates.abilities(PartAbility.MAINTENANCE)) // temporary bandaid, someone make it so that it can be placed anywhere
-            .where('#', Predicates.any())
-            .build())
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
-
-    // Super Fabricator
-    event.create('loot_superfabricator', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('loot_superfabricator')
-        .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
-            .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-            .aisle("CCCCC", "QOOOQ", "VO#OV", "QOOOQ", "CCMCC")
-            .aisle("CCCCC", "QOOOQ", "VOOOV", "QOOOQ", "CCCCC")
-            .aisle("CCSCC", "VEQEV", "VQQQV", "VEQEV", "CCCCC")
-            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('V', Predicates.blocks('gtceu:shock_proof_cutting_casing'))
-            .where('E', Predicates.blocks('gtceu:energetic_alloy_block'))
-            .where('O', Predicates.blocks('gtceu:omnium_block'))
-            .where('Q', Predicates.blocks('ae2:quartz_vibrant_glass'))
-            .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-            .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(40)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))) // tried putting maint hatch here, but its going to be optional and not required for the multiblock then
-            .where('M', Predicates.abilities(PartAbility.MAINTENANCE)) // temporary bandaid, someone make it so that it can be placed anywhere
-            .where('#', Predicates.any())
-            .build())
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
-
-    // Draconic Reactor
-    // WIP
-    event.create('draconic_reactor', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('draconic_reactor')
-        .appearanceBlock(() => Block.getBlock('kubejs:draconium_casing'))
-        .pattern(definition => FactoryBlockPattern.start()
-        .aisle("#CCC#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#CCC#")
-        .aisle("CCCCC", "CAIAC", "GAAAG", "GAAAG", "GAAAG", "CAIAC", "CCCCC")
-        .aisle("CCCCC", "CIMIC", "CAAAC", "CIFIC", "CAAAC", "CIMIC", "CCCCC")
-        .aisle("CCCCC", "CAIAC", "GAAAG", "GAAAG", "GAAAG", "CAIAC", "CCCCC")
-        .aisle("#CSC#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#CCC#")
-        .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-        .where('C', Predicates.blocks('kubejs:draconium_casing').setMinGlobalLimited(50)
-            .or(Predicates.autoAbilities(definition.getRecipeTypes())))
-        .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
-        .where('I', Predicates.blocks('gtceu:hsse_frame'))
-        .where('M', Predicates.blocks('gtceu:assembly_line_unit'))
-        .where('F', Predicates.blocks('gtceu:crystal_matrix_block'))
-        .where('A', Predicates.air())
-        .where('#', Predicates.any())
-            .build())
-        .workableCasingRenderer("kubejs:block/draconium/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
 
