@@ -53,26 +53,26 @@ ServerEvents.recipes(event => {
     ).id('redstone_arsenal:materials/flux_plating')
 
 	// Vacuum Freezer
-	// Draconic Superconductor Wire
-    event.recipes.gtceu.vacuum_freezer("draconic_superconductor_wire")
-        .itemInputs('gtceu:draconium_single_wire')
-        .itemOutputs('gtceu:draconic_superconductor_single_wire')
+	// kubejs Superconductor Wire
+    event.recipes.gtceu.vacuum_freezer("sculk_superconductor_wire")
+        .itemInputs('gtceu:sculk_compound_single_wire')
+        .itemOutputs('gtceu:sculk_superconductor_single_wire')
         .inputFluids(Fluid.of('gtceu:nether_star', 144))
         .duration(100)
         .EUt(6000)
 
     // Chemical Reactor
 
-    event.recipes.gtceu.chemical_reactor("draconium_dust")
-        .itemInputs('gtceu:manyullyn_dust', 'minecraft:dragon_breath')
-        .itemOutputs('gtceu:draconium_dust')
+    event.recipes.gtceu.chemical_reactor("sculk_compound_dust")
+        .itemInputs('gtceu:manyullyn_dust', 'minecraft:sculk_catalyst')
+        .itemOutputs('gtceu:sculk_compound_dust')
         .duration(500)
         .EUt(2000)
 
-    //Draconic Stem Cells
+    //kubejs Stem Cells
     event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
     event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells' })
-    event.recipes.gtceu.chemical_reactor("draconic_stem_cells")
+    event.recipes.gtceu.chemical_reactor("kubejs_stem_cells")
         .itemInputs('minecraft:dragon_egg')
         .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500')
         .itemOutputs('64x gtceu:stem_cells', '64x gtceu:stem_cells')
@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
 
     //Blast Furnace
     event.recipes.gtceu.electric_blast_furnace("quantum_fluxed_eternium_heavy_plating")
-        .itemInputs('10x redstone_arsenal:flux_plating', 'gtceu:draconium_awakened_plate', '16x kubejs:quantum_flux')
+        .itemInputs('10x redstone_arsenal:flux_plating', 'gtceu:resonant_sculk_compound_plate', '16x kubejs:quantum_flux')
         .inputFluids('gtceu:krypton 1000')
         .itemOutputs('kubejs:quantum_fluxed_eternium_heavy_plating')
         .duration(200)
@@ -254,7 +254,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-
     // Creative Capacitor
     event.recipes.extendedcrafting.shaped_table(
         'draconicevolution:creative_capacitor', [
@@ -306,15 +305,17 @@ ServerEvents.recipes(event => {
     // Creative Chest
     event.recipes.extendedcrafting.shaped_table(
         '2x gtceu:creative_chest', [
-            'ABBBBBBBA',
-            'BCTEDETCB',
-            'BFSGHGSFB',
-            'BUJXIXJUB',
-            'BNSWKWSNB',
-            'BUJXLXJUB',
-            'BFSGMGSFB',
-            'BCTEDETCB',
-            'ABBBBBBBA'
+            'BMMMMMMMMMB',
+            'MIPOPPPOPIM',
+            'MIFNNNNNFIM',
+            'GUNNEEENNUG',
+            'RDEEQQQEEDR',
+            'RSSSSHSSSSR',
+            'RDTTQQQTTDR',
+            'GUNNTTTNNUG',
+            'MIFNNNNNFIM',
+            'MIPVWXYZPIM',
+            'BMMMMMMMMMB'
         ], {
             A: "kubejs:creative_storage_component",
             B: "gtceu:infinity_ingot",
@@ -335,6 +336,27 @@ ServerEvents.recipes(event => {
             U: "ae2:creative_energy_cell",
             W: "gtceu:creative_energy",
             X: "draconicevolution:creative_capacitor"
+            B: 'gtceu:monium_block',
+            M: 'gtceu:monium_plate',
+            D: 'gtceu:double_monium_plate',
+            G: 'gtceu:monium_gear',
+            I: 'gtceu:infinity_block',
+            N: 'gtceu:dense_netherite_plate',
+            S: 'kubejs:creative_storage_data',
+            E: 'kubejs:creative_energy_data',
+            T: 'kubejs:creative_tank_data',
+            Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
+            U: 'gtceu:subatomic_digital_assembler',
+            R: 'gtceu:uiv_robot_arm',
+            F: 'gtceu:uiv_field_generator',
+            O: 'gtceu:uiv_sensor',
+            P: 'kubejs:monic_processor_mainframe',
+            H: 'gtceu:max_machine_hull',
+            V: 'kubejs:infinity_file',
+            W: 'kubejs:infinity_screwdriver',
+            X: 'kubejs:infinity_wrench',
+            Y: 'kubejs:infinity_hammer',
+            Z: 'kubejs:infinity_wire_cutter'            
         }
     )
 

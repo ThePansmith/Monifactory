@@ -117,7 +117,7 @@
   "message.extendedcrafting.max_unique_items_exceeded": "You can only have a maximum of (%s) unique items in a shaped datapack recipe.",
 
   "jei.category.extendedcrafting.combination": "Combination Crafting",
-  "jei.category.extendedcrafting.basic_crafting": "Basic Crafting",
+  "jei.category.extendedcrafting.sculk_crafting": "Basic Crafting",
   "jei.category.extendedcrafting.advanced_crafting": "Advanced Crafting",
   "jei.category.extendedcrafting.elite_crafting": "Elite Crafting",
   "jei.category.extendedcrafting.ultimate_crafting": "Ultimate Crafting",

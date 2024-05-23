@@ -17,7 +17,6 @@ ServerEvents.recipes(event => {
     // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
     event.replaceInput({ id: "gtceu:shaped/basic_circuit_board" }, 'gtceu:copper_single_wire', 'gtceu:fine_copper_wire')
-    event.shapeless('16x gtceu:fireclay_dust', ['gtceu:clay_dust', 'gtceu:brick_dust'])
     event.remove({ id: "gtceu:shapeless/credit_platinum" })
     event.remove({ id: "gtceu:shapeless/credit_platinum_alt" })
 
@@ -32,6 +31,14 @@ ServerEvents.recipes(event => {
         .dimension('javd:void')
         .outputFluids(Fluid.of('gtceu:air', 10000))
         .circuit(4)
+        .EUt(16)
+        .duration(200)
+
+    // Lost Cities Air (normal air)
+    event.recipes.gtceu.gas_collector('lc_air')
+        .dimension('lostcities:lostcities')
+        .outputFluids(Fluid.of('gtceu:air', 10000))
+        .circuit(5)
         .EUt(16)
         .duration(200)
 
@@ -111,28 +118,28 @@ ServerEvents.recipes(event => {
 
     //TODO: AE2 crystal growth accelerator goes here
 
-    // Implement draconium smelting
-    event.remove({ id: "gtceu:electric_blast_furnace/blast_draconium" })
-
-    const draconiumFuels = [
+    // Implement Sculk Compound smelting
+    event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound" })
+    event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound_gas" })
+    const sculk_compoundFuels = [
         [2000, "gtceu:cetane_boosted_diesel"],
         [2000, "gtceu:gasoline"],
         [500, "gtceu:high_octane_gasoline"]
     ]
 
-    for (const [mB, id] of draconiumFuels) {
-        event.recipes.gtceu.electric_blast_furnace("draconium_" + id.replace(/\W/g, ''))
-            .itemInputs("gtceu:draconium_dust")
+    for (const [mB, id] of sculk_compoundFuels) {
+        event.recipes.gtceu.electric_blast_furnace("sculk_compound_" + id.replace(/\W/g, ''))
+            .itemInputs("gtceu:sculk_compound_dust")
             .inputFluids(`${id} ${mB}`)
-            .itemOutputs("gtceu:hot_draconium_ingot")
+            .itemOutputs("gtceu:hot_sculk_compound_ingot")
             .duration(10000)
             .blastFurnaceTemp(6800)
             .EUt(120)
 
-        event.recipes.gtceu.electric_blast_furnace("draconium_scale_" + id.replace(/\W/g, ''))
-            .itemInputs("4x armorplus:ender_dragon_scale")
+        event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_" + id.replace(/\W/g, ''))
+            .itemInputs("4x kubejs:warden_horn")
             .inputFluids(`${id} ${mB * 4}`)
-            .itemOutputs("2x gtceu:hot_draconium_ingot")
+            .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
             .duration(20000)
             .blastFurnaceTemp(6800)
             .EUt(120)
@@ -447,15 +454,59 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         'waterframes:projector', [
-        'IIB',
-        'IIF',
-        'IIB'
+        'III',
+        'IFG',
+        'III'
     ], {
         F: 'waterframes:frame',
         I: 'gtceu:iron_plate',
-        B: 'gtceu:bronze_plate',
+        G: '#forge:glass_panes',
     }
     ).id('waterframes:projector')
+
+    event.shaped(
+        'waterframes:tv', [
+        'III',
+        'GFG',
+        'III'
+    ], {
+        F: 'waterframes:frame',
+        I: 'gtceu:iron_plate',
+        G: '#forge:glass_panes',
+    }
+    ).id('waterframes:tv')
+
+    event.shaped(
+        'waterframes:big_tv', [
+            'III',
+            'GFG',
+            'III'
+        ], {
+            F: 'waterframes:tv',
+            I: 'gtceu:iron_plate',
+            G: '#forge:glass_panes',
+    }
+    ).id('waterframes:big_tv')
+
+    event.shaped(
+        'waterframes:remote', [
+            'IRI',
+            'ICI',
+            'ICI'
+        ], {
+            R: 'minecraft:redstone',
+            I: 'gtceu:iron_plate',
+            G: 'gtceu:copper_plate',
+    }
+    ).id('waterframes:remote')
+
+    // Angel Ring
+        event.remove({ id: 'better_angel_ring:angel_ring' })
+        event.recipes.gtceu.assembler('angel_ring')
+            .itemInputs('32x gtceu:electrum_foil', 'gtceu:rose_gold_ring', Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT())
+            .itemOutputs('better_angel_ring:angel_ring')
+            .duration(400)
+            .EUt(128)
 
     // Stonecut p2p tunnels, attunement sucks
     const p2p = ["redstone", "item", "fluid", "fe", "light"]
@@ -463,4 +514,15 @@ ServerEvents.recipes(event => {
         event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
     })
 
+    // Stonecutting CCI blocks
+    let sameItemsTags = ['#chisel_chipped_integration:factory_block', '#chisel_chipped_integration:technical_block', '#chisel_chipped_integration:laboratory_block', '#chisel_chipped_integration:tyrian']; // What item tags to go trough (change this so you have your tags)
+    sameItemsTags.forEach(tag => {
+        let sameItems = Ingredient.of(tag).stacks; // Get all of the items with that tag
+        sameItems.forEach(input => {
+            sameItems.forEach(output => { // Loop trough the items so all combination of input and output are met
+                if (input != output) // Ignore recipes where input and output are the same item
+                    event.stonecutting(output, input); // Make the recipe
+            });
+        });
+    }); 
 })

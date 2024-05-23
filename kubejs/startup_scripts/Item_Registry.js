@@ -12,7 +12,7 @@ StartupEvents.registry('item', event => {
     event.create('microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8")
     event.create('microminer_t9').maxStackSize(16).texture("kubejs:item/microverse/microminer_t9")
     event.create('microminer_t10').maxStackSize(16).texture("kubejs:item/microverse/microminer_t10")
-        // Sorry for this monstrosity of a line, it's the only way I got it to work
+    // Sorry for this monstrosity of a line, it's the only way I got it to work
     event.create('microminer_t11').maxStackSize(16).parentModel("kubejs:item/microverse/microminer_t11").texture("kubejs:item/microverse/microminer_t11_base")
     event.create('microminer_t12').maxStackSize(16).texture("kubejs:item/microverse/microminer_t12")
 
@@ -54,10 +54,11 @@ StartupEvents.registry('item', event => {
     event.create('unprepared_space_boots').displayName("Unprepared Space Boots")
 
     //Data
-    event.create('lair_of_the_chaos_guardian_data').displayName("§dLair Of The Chaos Guardian Data")
+    event.create('lair_of_the_warden_data').displayName("§dLair Of The Warden Data")
     event.create('stellar_creation_data').displayName("§bStellar Creation Data")
     event.create('universe_creation_data').displayName("§dUniverse Creation Data")
     event.create('impossible_realm_data').displayName("§bImpossible Realm Data")
+    event.create('deep_dark_data').displayName("§dDeep Dark Data")
     event.create('wither_realm_data').displayName("§dWither Realm Data")
     event.create('dragon_lair_data').displayName("§dDragon Lair Data")
 
@@ -111,6 +112,7 @@ StartupEvents.registry('item', event => {
     event.create('grains_of_innocence').displayName("Grains of Innocence")
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
     event.create('moon_dust').displayName("Moon Dust")
+    event.create('warden_horn').displayName("Warden Horn")
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
     event.create('ender_star').displayName('§dEnder Star').glow(true)
     event.create('endest_star').displayName('§dEndest Star').glow(true)
@@ -189,6 +191,24 @@ StartupEvents.registry('item', event => {
     //Avaritia Replacements
     event.create('diamond_lattice')
     event.create('infinity_catalyst').rarity("epic")
+
+    // Drac Evo Replacements
+    event.create('sculk_core')
+    event.create('echo_core')
+    event.create('resonant_core')
+    event.create('abyssal_core')
+    event.create('reverberation_core')
+    event.create('energy_core')
+    event.create('energy_core_stabilizer')
+    event.create('particle_generator')
+    event.create('reactor_stabilizer')
+    event.create('reactor_prt_stab_frame')
+    event.create('reactor_core')
+    event.create('resonant_energy_core')
+    event.create('echo_energy_core')
+    event.create('abyss_shard')
+    event.create('warden_heart')
+    event.create('infused_obsidian')
 
     //Infinity Tools
     event.create('infinity_file').rarity("epic")
@@ -269,6 +289,9 @@ StartupEvents.registry('item', event => {
         event.create(`${theme}_processing_unit`)
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processing Unit`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_processing_unit` })
+        event.create(`${theme}_circuit_board`)
+            .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Circuit Board`)
+            .textureJson({ layer0: `kubejs:item/circuits/${theme}_circuit_board` })
     }
 
     // Alien scrap
@@ -279,17 +302,17 @@ StartupEvents.registry('item', event => {
     event.create('ruined_emitter')
     event.create('crushed_capacitor')
     event.create('magnetic_capacitor_dust')
-    event.create('crushed_alien_sensor')
+    event.create('crushed_sensor')
     event.create('holmium_compound')
-    event.create('kubejs:holmium_oxide_glass_dust')
+    event.create('holmium_oxide_glass_dust')
 
 
     // Complex SMDs
     const smds = [['transistor'],
-        ['resistor'],
-        ['capacitor'],
-        ['diode'],
-        ['inductor']]
+    ['resistor'],
+    ['capacitor'],
+    ['diode'],
+    ['inductor']]
 
     for (const [name] of smds) {
         event.create(`complex_smd_${name}`)
@@ -299,14 +322,13 @@ StartupEvents.registry('item', event => {
     }
 
     // Monium 
-    event.create('quantum_chromodynamic_charge')
-    event.create('leptonic_charge')
-    event.create('time_diliation_unit')
-    event.create('empty_glucon_cell')
-    event.create('quark_glucon_plasma_cell')
-    event.create('heavy_quark_cell')
-    event.create('light_quark_cell')
-    event.create('glucon_cell')
+    event.create('shattered_star_data')
+    event.create('field_stabilised_omnic_pulsar_compound')
+    event.create('quasi_stable_neutron_star').displayName('Quasi-Stable Neutron Star')
+
+    // Singularities
+    event.create('singularity_containment_unit')
+    event.create('contained_singularity')
 })
 ItemEvents.modification(event => {
     // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools

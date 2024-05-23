@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         ], {
             P: 'gtceu:tiny_neutronium_dust',
             E: "kubejs:eternal_catalyst",
-            C: 'draconicevolution:chaotic_core',
+            C: 'kubejs:abyssal_core',
             H: 'kubejs:heart_of_a_universe'
         }).id('kubejs:extended/infinity_catalyst');
 
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
 			'gtceu:tritanium_ingot',
 			'gtceu:duranium_ingot',
 			'gtceu:trinium_ingot',
-			'gtceu:draconium_ingot',
+			'gtceu:sculk_compound_ingot',
 			'gtceu:naquadah_ingot',
 			'gtceu:tiny_nether_star_dust',
 		]
@@ -197,19 +197,4 @@ ServerEvents.recipes(event => {
 		}
 	).id('kubejs:extended/exotic_materials_catalyst')
 
-	// Angel Ring
-    event.remove({ id: 'better_angel_ring:angel_ring' })
-	event.recipes.extendedcrafting.shaped_table(
-		'better_angel_ring:angel_ring', [
-            " AAA ",
-            "A B A",
-            "AC CA",
-            "A B A",
-            " AAA "
-		], {
-			A: 'gtceu:rose_gold_ingot',
-			B: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
-			C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT(),
-		} //, 2 // remove this comment to force t2 crafting only.
-	).id('kubejs:extended/angel_ring')
 })

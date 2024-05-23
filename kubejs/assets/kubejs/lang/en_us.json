@@ -34,8 +34,8 @@
   "item.kubejs.microminer_t5.desc": "§7§oHarvests strange materials from End microverses.",
   "item.kubejs.microminer_t6": "§bEnderium Plated Micro Miner [Tier Six]",
   "item.kubejs.microminer_t6.desc": "§7§oHarvests extremely rare materials from every concievable reality.",
-  "item.kubejs.microminer_t7": "§bDraconium Plated Micro Dragon Hunter [Tier Seven]",
-  "item.kubejs.microminer_t7.desc": "§7§oHunts Wyrms and End Dragons from the microverse and returns with parts from their carapaces.",
+  "item.kubejs.microminer_t7": "§bSculk Plated Micro Warden Hunter [Tier Seven]",
+  "item.kubejs.microminer_t7.desc": "§7§oHunts Wardens from the microverse and returns with parts from their carapaces.",
   "item.kubejs.microminer_t8": "§dCrystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
   "item.kubejs.microminer_t8.desc": "§7§oHunts inconcievable monstrosities from beyond the End and returns with bizzare trinkets.",
   "item.kubejs.microminer_t8half": "§dTrinium Plated Micro Excavator [Tier Eight and a Half]",
@@ -58,6 +58,9 @@
   "item.kubejs.stabilized_microminer_t9": "§dStabilized Eternium Plated Micro Sun Eater [Tier Nine]",
   "item.kubejs.stabilized_microminer_t10": "§dStabilized Neutronium Plated Micro Universe Harvester [Tier Ten]"
 
-
+  "item.kubejs.microminer_t11": "§dOmnic Matrix Micro Universal Scavenger [Tier Eleven]",
+  "item.kubejs.microminer_t11.desc": "§7§oScavenges through the necrosed ruins of corrupted microverses to retreive alien materials.",
+  "item.kubejs.microminer_t12": "§dInfinity Plated Micro Extradimensional Phase Shifter [Tier Twelve]",
+  "item.kubejs.microminer_t12.desc": "§7§oAlters the laws of physics on a microversal scale, thus allowing the production of previously impossible materials."
 }
   

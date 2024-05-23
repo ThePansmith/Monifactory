@@ -6,12 +6,16 @@ const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.m
 
 const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty')
 const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
+const $FluidPipeProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
+const $WireProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties')
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 
     GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
-    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
+    GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(2147483647, 128, 0, true))
+    GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(120000, 128000, true, true, true, true))
+    GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR)
 
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL)
     GTMaterials.Tritium.addFlags(GTMaterialFlags.GENERATE_RING)

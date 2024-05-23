@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/sculk_compound/coil_ctm"
+    }
+}

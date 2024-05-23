@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     ////// Machine Recipe //////
 
     event.recipes.gtceu.assembly_line('loot_superfabricator')
-        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', '#gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter',  'draconicevolution:draconic_energy_core')
+        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', '#gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter',  'kubejs:resonant_energy_core')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('gtceu:loot_superfabricator')
         // requires research (sim chamber with data module)
@@ -60,6 +60,8 @@ ServerEvents.recipes(event => {
     fabricator('thermal/thermal_elemental', 4, '8x thermal:blitz_rod')
     fabricator('thermal/thermal_elemental', 5, '8x thermal:basalz_rod')
     fabricator('thermal/thermal_elemental', 6, '8x thermal:blizz_rod')
+    fabricator('warden', 1, 'kubejs:deep_dark_data')
+    fabricator('warden', 2, 'kubejs:warden_horn')
     fabricator('witch', 1, '16x minecraft:redstone')
     fabricator('witch', 2, '16x minecraft:glowstone_dust')
     fabricator('witch', 3, '16x minecraft:sugar')

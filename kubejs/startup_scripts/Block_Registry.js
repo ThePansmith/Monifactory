@@ -16,7 +16,11 @@ StartupEvents.registry("block", event => {
     event.create('warp_controller').displayName("Warp Controller").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
     event.create('ultimate_generator').displayName("Ultimate Generator").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
     event.create('ultimate_power_storage').displayName("Ultimate Power Storage").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-
+    event.create('sculk_reaction_casing').displayName("Sculk Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
+    event.create('echo_reaction_casing').displayName("Echo Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
+    event.create('resonant_reaction_casing').displayName("Resonant Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
+    event.create('abyssal_reaction_casing').displayName("Abyssal Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
+  
     // Micro Miner Cores
     event.create('electrum_micro_miner_core')
         .displayName("Electrum Micro Miner Engine Core")
@@ -117,23 +121,50 @@ StartupEvents.registry("block", event => {
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/microverse/casing')})
 
     
-    event.create('draconium_casing', 'gtceu:renderer')
-        .displayName("Draconium Casing")
+    event.create('sculk_compound_casing', 'gtceu:renderer')
+        .displayName("Sculk Compound Casing")
         .soundType('metal')
         .resistance(6)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/draconium/casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/casing')})
 
-    event.create('awakened_draconium_casing', 'gtceu:renderer')
-        .displayName("Awakened Draconium Casing")
+    event.create('resonant_sculk_compound_casing', 'gtceu:renderer')
+        .displayName("Resonant Sculk Compound Casing")
         .soundType('metal')
         .resistance(6)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/draconium/awakened_casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/resonant_casing')})
+
+    event.create('resonant_fusion_casing', 'gtceu:renderer')
+        .displayName("Resonant Fusion Casing")
+        .soundType('metal')
+        .resistance(6)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/fusion')})
+
+    event.create('resonant_fusion_coil', 'gtceu:renderer')
+        .displayName("Resonant Fusion Coil")
+        .soundType('metal')
+        .resistance(6)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/coil')})
+
+        event.create("dark_soularium_casing", 'gtceu:renderer')
+        .displayName("Dark Soularium Casing")
+        .soundType('metal')
+        .hardness(2.5)
+        .resistance(2.5)
+        .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/soularium/casing')})
     
     // Post-Tank MB blocks
     event.create('omnic_matrix_machine_casing', 'gtceu:renderer')

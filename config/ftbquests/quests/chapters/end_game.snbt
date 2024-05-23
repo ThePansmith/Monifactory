@@ -4,39 +4,39 @@
 	default_quest_shape: ""
 	filename: "end_game"
 	group: ""
-	icon: "kubejs:heart_of_a_universe"
+	icon: "kubejs:monic_processor_mainframe"
 	id: "2BEB72BC6C6FB4E9"
 	order_index: 11
 	quest_links: [
 		{
 			id: "54018A95BECC356C"
 			linked_quest: "5A8D2BFAF02E6325"
-			x: 46.5d
-			y: -24.25d
+			x: 42.5d
+			y: -22.75d
 		}
 		{
 			id: "2A5A7CD2C9EDD767"
 			linked_quest: "7979D07FBDC6D170"
-			x: 44.75d
+			x: 42.5d
 			y: -24.25d
 		}
 		{
 			id: "6FD00239A5CD9D2F"
 			linked_quest: "3D7924B550A1BBA0"
-			x: 48.25d
-			y: -24.25d
+			x: 42.5d
+			y: -20.0d
 		}
 		{
 			id: "3F1F20A84F3FDE97"
 			linked_quest: "0C9A9F33EEA3AB5E"
-			x: 48.25d
-			y: -22.5d
+			x: 42.5d
+			y: -18.0d
 		}
 		{
 			id: "2C514C36E06DC5FA"
 			linked_quest: "5601A05D8361551D"
-			x: 48.25d
-			y: -20.0d
+			x: 42.5d
+			y: -15.25d
 		}
 		{
 			id: "2DE45181A83AEBEB"
@@ -1700,10 +1700,10 @@
 			tasks: [{
 				count: 64L
 				id: "65D45DB6200284B7"
-				item: "gtceu:draconium_ingot"
+				item: "gtceu:sculk_compound_ingot"
 				type: "item"
 			}]
-			title: "Element ???: Draconium"
+			title: "Element ???: sculk_compound"
 			x: 26.0d
 			y: 12.5d
 		}
@@ -2155,7 +2155,7 @@
 		{
 			dependencies: ["45B17E923E03264B"]
 			description: [
-				"Reinforcing &6Heart of a Universe&r with &6Chaotic Cores&r, many &6Piles of Neutrons&r, and a bunch of &6Eternal Catalysts&r produces an &cInfinity Catalyst&r."
+				"Reinforcing &6Heart of a Universe&r with &6abyssal Cores&r, many &6Piles of Neutrons&r, and a bunch of &6Eternal Catalysts&r produces an &cInfinity Catalyst&r."
 				""
 				"This material is the core of most creative-tier crafting recipes."
 			]
@@ -2172,17 +2172,17 @@
 		}
 		{
 			dependencies: ["281DE48E7260BC8E"]
-			description: ["&6Chaotic Cores&r are the ultimate tier of &bDraconic Evolution&r core, used for the most powerful and advanced items."]
+			description: ["&6Abyssal Cores&r are the ultimate tier of &bSculk&r core, used for the most powerful and advanced items."]
 			id: "3171F83E24C8F740"
 			size: 1.0d
 			subtitle: "The culmination of so much effort."
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: { Count: 4b, id: "draconicevolution:chaotic_core" }
+				item: { Count: 4b, id: "kubejs:abyssal_core" }
 				type: "item"
 			}]
-			title: "Chaotic Cores"
+			title: "Abyssal Cores"
 			x: 25.5d
 			y: -11.75d
 		}
@@ -2267,10 +2267,7 @@
 			y: -11.75d
 		}
 		{
-			dependencies: [
-				"5601A05D8361551D"
-				"68734C70E2D19616"
-			]
+			dependencies: ["5601A05D8361551D"]
 			description: [
 				"You win."
 				""
@@ -2279,15 +2276,15 @@
 				"I hope you enjoyed playing &9Monifactory&r."
 			]
 			id: "2EBB9A154522348F"
-			size: 1.0d
+			size: 3.0d
 			tasks: [{
 				id: "392DAFD3A4019E34"
 				item: "gtceu:creative_chest"
 				type: "item"
 			}]
 			title: "&9&lCreative Chest&r"
-			x: 48.25d
-			y: -18.0d
+			x: 47.75d
+			y: -15.25d
 		}
 		{
 			dependencies: ["3171F83E24C8F740"]
@@ -2429,7 +2426,7 @@
 							}
 							{
 								Count: 1b
-								id: "draconicevolution:creative_op_capacitor"
+								id: "kubejs:creative_op_capacitor"
 							}
 							{
 								Count: 1b
@@ -3218,17 +3215,6 @@
 			y: -9.25d
 		}
 		{
-			dependencies: ["1B1D3A66B847D129"]
-			id: "7BF0FE766903A1D1"
-			tasks: [{
-				id: "57A8722148FBD716"
-				item: "gtceu:uiv_machine_hull"
-				type: "item"
-			}]
-			x: 34.75d
-			y: -22.75d
-		}
-		{
 			dependencies: ["07057CDE4E021BA7"]
 			description: [
 				"The &3Hyperbolic Microverse Projector&r is the most powerful projector, capiable of running hundreds of missions in parallel. It can perform all microminer missions, and is capiable of a few of it's own as well. "
@@ -3255,37 +3241,19 @@
 				type: "item"
 			}]
 			title: "&9Dimensional Superassembler"
-			x: 30.25d
-			y: -24.25d
+			x: 34.75d
+			y: -21.25d
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: [
-				"an unknown amount of steps go here"
-				""
-				"A new MM? new missions? who knows"
-				""
-				"just part of the process to get monium"
-			]
 			id: "13578427FD9CC2CE"
 			tasks: [{
 				id: "23064FA88C378D9C"
-				item: "ftbquests:barrier"
+				item: "kubejs:microminer_t12"
 				type: "item"
 			}]
 			x: 34.75d
 			y: -24.25d
-		}
-		{
-			dependencies: ["1B1D3A66B847D129"]
-			id: "2272159BD4643610"
-			tasks: [{
-				id: "0918712974E9D143"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 34.75d
-			y: -21.5d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
@@ -3295,20 +3263,24 @@
 				item: "gtceu:monium_ingot"
 				type: "item"
 			}]
-			x: 43.25d
+			x: 40.5d
 			y: -24.25d
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
-			description: ["yet another placeholder for a unknown number of chains, mechanics, etc"]
+			description: [
+				"Turns out corrupting a microverse has some other interesting consequences, including causing singulairities. These impossibilities may just be what you need to create an impossibily perfect circuit line, but you do need to be able to contain it in some way."
+				""
+				"Thankfully, you already have a metal that bends the rules, so that should be a good starting place."
+			]
 			id: "68734C70E2D19616"
 			tasks: [{
 				id: "5299B82EB34822E2"
-				item: "ftbquests:barrier"
+				item: "kubejs:contained_singularity"
 				type: "item"
 			}]
-			x: 43.25d
-			y: -18.0d
+			x: 40.5d
+			y: -22.75d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -3325,16 +3297,16 @@
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: ["The &6Draconic Fusion Reactor&r is a even stronger version of the &9Draconic Reactor&r, capable of running hundreds of recipes at once."]
+			description: ["The &6Sculk Fusion Reactor&r is a even stronger version of the &9Sculk Reactor&r, capable of running hundreds of recipes at once."]
 			id: "6138FB8766AD6F8C"
 			tasks: [{
 				id: "0BE78C6BD408CFEB"
-				item: "gtceu:draconic_fusion_reactor"
+				item: "gtceu:sculk_reactor"
 				type: "item"
 			}]
-			title: "&9Draconic Fusion Reactor"
-			x: 30.25d
-			y: -21.25d
+			title: "&9Sculk Fusion Reactor"
+			x: 34.75d
+			y: -22.75d
 		}
 		{
 			dependencies: ["07057CDE4E021BA7"]
@@ -3342,10 +3314,10 @@
 			id: "6A9E02E66C10EA9F"
 			tasks: [{
 				id: "673F392CD989796A"
-				item: "gtceu:draconic_reactor"
+				item: "gtceu:sculk_reactor"
 				type: "item"
 			}]
-			title: "&9Draconic Reactor"
+			title: "&9Sculk Reactor"
 			x: 36.75d
 			y: -13.5d
 		}
@@ -3504,10 +3476,6 @@
 			y: -20.0d
 		}
 	]
-	subtitle: [
-		"Getting overhauled!"
-		"Everything beyond Tank is WIP and will change!"
-		"Feel free to share feedback!"
-	]
+	subtitle: ["Everything beyond Tank is WIP!"]
 	title: "End Game"
 }

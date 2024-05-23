@@ -188,17 +188,17 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    //Draconium
-    event.recipes.gtceu.assembler('kubejs:draconium_conduit')
-        .itemInputs('2x gtceu:draconium_single_wire', 'enderio:enderium_conduit', '6x enderio:conduit_binder')
-        .itemOutputs('4x enderio:draconium_conduit')
+    //sculk_compound
+    event.recipes.gtceu.assembler('kubejs:sculk_compound_conduit')
+        .itemInputs('2x gtceu:sculk_compound_single_wire', 'enderio:enderium_conduit', '6x enderio:conduit_binder')
+        .itemOutputs('4x enderio:sculk_compound_conduit')
         .duration(80)
         .EUt(16)
 
-    //Draconic Superconductor
-    event.recipes.gtceu.assembler('kubejs:draconic_superconductor_conduit')
-        .itemInputs('2x gtceu:draconic_superconductor_single_wire', 'enderio:draconium_conduit', '6x enderio:conduit_binder')
-        .itemOutputs('4x enderio:draconic_superconductor_conduit')
+    //kubejs Superconductor
+    event.recipes.gtceu.assembler('kubejs:sculk_superconductor_conduit')
+        .itemInputs('2x gtceu:sculk_superconductor_single_wire', 'enderio:sculk_compound_conduit', '6x enderio:conduit_binder')
+        .itemOutputs('4x enderio:sculk_superconductor_conduit')
         .duration(80)
         .EUt(16)
 
