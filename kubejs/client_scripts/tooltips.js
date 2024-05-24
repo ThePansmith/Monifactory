@@ -68,10 +68,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced('kubejs:debug_laser', (item, adv, text) => {
         text.add(Text.join('You need to be a ', rainbowify('dev', Math.round(Client.lastNanoTime / 100000000)), ' to use this'))
     });
-    
-	// dml glitch armor
-	tooltip.add('kubejs:glitch_fragment', Text.translatable('item.kubejs.glitch_fragment.desc'))
-	tooltip.add('kubejs:glitch_infused_ingot', Text.translatable('item.kubejs.glitch_infused_ingot.desc'))
+
 
     // Multiblocks
     tooltip.add('gtceu:sculk_reverberator', Text.translatable('gtceu.sculk_reverberator.desc'))

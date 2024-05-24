@@ -7,14 +7,6 @@
   "item.kubejs.smore_32": "Half-stack-o'-S'more TriacontadyoS'mingot",
   "item.kubejs.smore_64": "Stack-o'-S'more HexecontatessaraS'mingot",
 
-
-  "item.kubejs.glitch_fragment": "§bUnstable Glitch Fragment",
-  "item.kubejs.glitch_fragment.desc": "§7Crafted by crushing a Corrupted Glitch Heart against some §rObsidian§7.\nYields 3 fragment per crushed heart",
-  "item.kubejs.glitch_heart": "§bCorrupted Glitch Heart",
-  "item.kubejs.glitch_heart.desc": "§7Drops from system glitches",
-  "item.kubejs.glitch_infused_ingot": "§bGlitch Infused Ingot",
-  "item.kubejs.glitch_infused_ingot.desc": "§7Made by stablizing §bUnstable Glitch Fragment",
-
   "item.kubejs.moni_penny": "Monipenny §7[1]",
   "item.kubejs.moni_nickel": "§eMoninickel §r§7[5]",
   "item.kubejs.moni_quarter": "§bMoniquarter §r§7[25]",

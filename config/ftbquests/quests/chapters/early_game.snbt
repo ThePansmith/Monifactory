@@ -781,7 +781,7 @@
 			description: [
 				"&2Assembling Machines come early in CEu! Circuit recipes are handled through a separate machine, the Circuit Assembler. &r"
 				""
-				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck &EMI&r for all the components you've been making to see if the Assembler can improve their recipes."
+				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck EMI&r for all the components you've been making to see if the Assembler can improve their recipes."
 				""
 				"Many of the Assembler's recipes require &9fluids&r. Hence, the &3Extractor&r will be required to take full advantage of this machine. "
 				""
