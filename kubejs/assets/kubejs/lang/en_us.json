@@ -44,7 +44,7 @@
   "item.kubejs.stabilized_microminer_t4half": "§dStabilized Lumium Plated Micro Mob Slayer [Tier Four and Half]",
   "item.kubejs.stabilized_microminer_t5": "§dStabilized Iridium Plated Micro Miner [Tier Five]",
   "item.kubejs.stabilized_microminer_t6": "§dStabilized Enderium Plated Micro Miner [Tier Six]",
-  "item.kubejs.stabilized_microminer_t7": "§dStabilized Draconium Plated Micro Dragon Hunter [Tier Seven]",
+  "item.kubejs.stabilized_microminer_t7": "§dStabilized Sculk Plated Micro Dragon Hunter [Tier Seven]",
   "item.kubejs.stabilized_microminer_t8": "§dStabilized Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
   "item.kubejs.stabilized_microminer_t8half": "§dStabilized Trinium Plated Micro Excavator [Tier Eight and Half]",
   "item.kubejs.stabilized_microminer_t9": "§dStabilized Eternium Plated Micro Sun Eater [Tier Nine]",
@@ -53,6 +53,17 @@
   "item.kubejs.microminer_t11": "§dOmnic Matrix Micro Universal Scavenger [Tier Eleven]",
   "item.kubejs.microminer_t11.desc": "§7§oScavenges through the necrosed ruins of corrupted microverses to retreive alien materials.",
   "item.kubejs.microminer_t12": "§dInfinity Plated Micro Extradimensional Phase Shifter [Tier Twelve]",
-  "item.kubejs.microminer_t12.desc": "§7§oAlters the laws of physics on a microversal scale, thus allowing the production of previously impossible materials."
+  "item.kubejs.microminer_t12.desc": "§7§oAlters the laws of physics on a microversal scale, thus allowing the production of previously impossible materials.",
+
+  "item.kubejs.pristine_matter_t1": "§dPristine Steel Microverse Matter [Tier One]",
+  "item.kubejs.pristine_matter_t2": "§dPristine Titanium Microverse Matter [Tier Two]",
+  "item.kubejs.pristine_matter_t3": "§dPristine Tungsten Microverse Matter [Tier Three]",
+  "item.kubejs.pristine_matter_t4": "§dPristine Signalum Microverse Matter [Tier Four]",
+  "item.kubejs.pristine_matter_t4half": "§dPristine Lumium Microverse Matter [Tier Four and a Half]",
+  "item.kubejs.pristine_matter_t5": "§dPristine Iridium Microverse Matter [Tier Five]",
+  "item.kubejs.pristine_matter_t6": "§dPristine Enderium Microverse Matter [Tier Six]",
+  "item.kubejs.pristine_matter_t7": "§dPristine Sculk Microverse Matter [Tier Seven]",
+  "item.kubejs.pristine_matter_t8": "§dPristine Crystal Microverse Matter [Tier Eight]",
+  "item.kubejs.pristine_matter_t8half": "§dPristine Trinium Microverse Matter [Tier Eight and a Half]"
 }
   
