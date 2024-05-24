@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
             }
         ).id('kubejs:microminer/t8half')
 
-
+        // Stabilized miners recipe
         function stabilized_miners(tier) {
             event.recipes.gtceu.assembly_line(`stable_t_${tier}`)
                 .itemInputs(`kubejs:microminer_t${tier}`, 'kubejs:heart_of_a_universe', '4x kubejs:abyss_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
@@ -63,5 +63,45 @@ ServerEvents.recipes(event => {
 
         for (let i = 1; i <= 8; i++) {
             stabilized_miners(i)
-        }        
+        }
+        
+        // Pristine matter recipe
+        function pristine_matter(tier, microtier) {
+            if (microtier == 1) {
+                event.recipes.gtceu.basic_microverse(`pristine_${tier}`)
+                    .itemInputs('minecraft:cobblestone')
+                    .notConsumable(`kubejs:stabilized_microminer_t${tier}`)
+                    .itemOutputs(`kubejs:pristine_matter_t${tier}`)
+                    .duration(470.4*20)
+                    .EUt(30720)
+            }
+            if (microtier == 2) {
+                event.recipes.gtceu.advanced_microverse(`pristine_${tier}`)
+                    .itemInputs('minecraft:cobblestone')
+                    .notConsumable(`kubejs:stabilized_microminer_t${tier}`)
+                    .itemOutputs(`kubejs:pristine_matter_t${tier}`)
+                    .duration(470.4*20)
+                    .EUt(30720)
+            }
+            if (microtier == 3) {
+                event.recipes.gtceu.advanced_microverse_ii(`pristine_${tier}`)
+                    .itemInputs('minecraft:cobblestone')
+                    .notConsumable(`kubejs:stabilized_microminer_t${tier}`)
+                    .itemOutputs(`kubejs:pristine_matter_t${tier}`)
+                    .duration(470.4*20)
+                    .EUt(30720)
+            }
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            pristine_matter(i, 1)
+        }
+        for (let i = 4; i <= 5; i++) {
+            pristine_matter(i, 2)
+        }
+        for (let i = 6; i <= 8; i++) {
+            pristine_matter(i, 3)
+        }
+        pristine_matter('4half', 2)
+        pristine_matter('8half', 3)
 })
