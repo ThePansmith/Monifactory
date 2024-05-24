@@ -365,7 +365,7 @@ ServerEvents.recipes(event => {
             E: 'kubejs:creative_energy_data',
             T: 'kubejs:creative_tank_data',
             Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
-            U: 'gtceu:subatomic_digital_assembler',
+            U: 'gtceu:subatomic_digital_assembler', // breaks HM since its not in it
             R: 'gtceu:uiv_robot_arm',
             F: 'gtceu:uiv_field_generator',
             O: 'gtceu:uiv_sensor',
@@ -376,7 +376,7 @@ ServerEvents.recipes(event => {
             X: 'kubejs:infinity_wrench',
             Y: 'kubejs:infinity_hammer',
             Z: 'kubejs:infinity_wire_cutter'            
-        }
+        }.id('kubejs:creative_chest')
     )
 
     // Creative Catalyst augment
