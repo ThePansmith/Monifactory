@@ -23,6 +23,4 @@ CapeJS.addCapes(event => {
     event.register("fa544035-5c57-49c9-8c8f-f44deaa086eb", "moni")
         //WithersChat
     event.register("13d0aeda-c1e9-4d91-a9b7-4d4e6a19128e", "moni")
-        //SparkedTheorem
-    event.register("59c2af9a-1149-48e4-a3e1-56e558804347", "moni")
 })
