@@ -269,7 +269,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('P', Predicates.blocks("ae2:spatial_pylon"))
             .where('N', Predicates.blocks('gtceu:ruthenium_trinium_americium_neutronate_block'))
-            .where('O', Predicates.blocks("extendedcrafting:the_ultimate_block"))
+            .where('O', Predicates.blocks("gtceu:omnium_block"))
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
