@@ -25,4 +25,45 @@ ItemEvents.modification(event => {
     event.modify('minecraft:ender_pearl', item => {
         item.maxStackSize = 64
     })
+
+    // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
+    event.modify('kubejs:infinity_file', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_file').item
+    })
+    event.modify('kubejs:infinity_hammer', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_hammer').item
+    })
+    event.modify('kubejs:infinity_screwdriver', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_screwdriver').item
+    })
+    event.modify('kubejs:infinity_wrench', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wrench').item
+    })
+    event.modify('kubejs:infinity_wire_cutter', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wire_cutter').item
+    })
+})
+
+ItemEvents.armorTierRegistry(event => {
+    event.add("glitch", (tier) => {
+        tier.durabilityMultiplier = 120;
+        tier.equipSound = 'minecraft:item.armor.equip_iron';
+        tier.toughness = 4.0;
+        tier.slotProtections = [3, 10, 6, 3];
+    })
+})
+
+ItemEvents.toolTierRegistry(event => {
+    event.add("glitch", tier => {
+        tier.attackDamageBonus = 10;
+        tier.speed = 1.6;
+        tier.uses = 2200;
+    })
+
+    event.add("dev", (tier) => {
+        tier.enchantmentValue = 42
+        tier.level = 42
+        tier.uses = 42690
+        tier.speed = 12
+    })
 })
