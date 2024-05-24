@@ -70,34 +70,5 @@ ServerEvents.recipes(event => {
             .itemOutputs('1x gtceu:crystal_matrix_ingot')
             .duration(7)
             .EUt(1000000)
-
-        // On ice until I get a reply from Pansmith/WithersChat
-        // event.recipes.gtceu.universal_crystallizer('sculk_core_crystallization')
-        //     .itemInputs('3x gtceu:diamond_perfect', '9x minecraft:nether_star', '27x gtceu:diamond_plate', '27x minecraft:diamond')
-        //     .inputFluids('gtceu:enriched_naquadah 3')
-        //     .itemOutputs('1x gtceu:crystal_matrix_ingot')
-        //     .duration(7)
-        //     .EUt(1000000)
-
-        // event.recipes.gtceu.universal_crystallizer('echo_core_crystallization')
-        //     .itemInputs('3x gtceu:diamond_perfect', '9x minecraft:nether_star', '27x gtceu:diamond_plate', '27x minecraft:diamond')
-        //     .inputFluids('gtceu:enriched_naquadah 3')
-        //     .itemOutputs('1x gtceu:crystal_matrix_ingot')
-        //     .duration(7)
-        //     .EUt(1000000)
-
-        // event.recipes.gtceu.universal_crystallizer('resonant_core_crystallization')
-        //     .itemInputs('3x gtceu:diamond_perfect', '9x minecraft:nether_star', '27x gtceu:diamond_plate', '27x minecraft:diamond')
-        //     .inputFluids('gtceu:enriched_naquadah 3')
-        //     .itemOutputs('1x gtceu:crystal_matrix_ingot')
-        //     .duration(7)
-        //     .EUt(1000000)
-
-        // event.recipes.gtceu.universal_crystallizer('abyssal_core_crystallization')
-        //     .itemInputs('3x gtceu:diamond_perfect', '9x minecraft:nether_star', '27x gtceu:diamond_plate', '27x minecraft:diamond')
-        //     .inputFluids('gtceu:enriched_naquadah 3')
-        //     .itemOutputs('1x gtceu:crystal_matrix_ingot')
-        //     .duration(7)
-        //     .EUt(1000000)
     }
 })
