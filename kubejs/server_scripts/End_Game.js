@@ -7,7 +7,12 @@ ServerEvents.recipes(event => {
             .itemOutputs('gtceu:dimensional_superassembler')
             .duration(6000)
             .EUt(13920000)
-    //research Assembly Line in Data Module, 160 CWU/t?
+
+            .stationResearch(b => b
+                .researchStack('gtceu:assembly_line')
+                .CWUt(160, 1024000)
+                .EUt(1200000)
+            )
     // Extra Large Chemical Reactor
     event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
             .itemInputs('gtceu:large_chemical_reactor', "16x gtceu:duranium_large_fluid_pipe", '8x gtceu:uv_hermetic_casing', '4x gtceu:uv_field_generator', '8x gtceu:uv_electric_pump', '8x gtceu:uv_fluid_regulator', '4x #gtceu:circuits/uhv')
@@ -15,8 +20,12 @@ ServerEvents.recipes(event => {
             .itemOutputs('gtceu:extra_large_chemical_reactor')
             .duration(1200)
             .EUt(1000000)
-    //research Assembly Line in Data Module, 144 CWU/t?
-
+    
+    .stationResearch(b => b
+        .researchStack('gtceu:large_chemical_reactor')
+        .CWUt(96, 288000)
+        .EUt(30720)
+    )
     // UEV/UIV/MAX Hulls and Casing
 
     event.recipes.gtceu.assembler('uev_hull')
