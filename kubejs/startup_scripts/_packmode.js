@@ -11,19 +11,18 @@ if (!config || !config.mode) {
     console.log(`Created new ${configName}`);
     config = defaultConfig;
 }
-let invalidConfig = function (configMode) {
+if (config.mode == 'none') {
     JsonIO.write(configName, defaultConfig);
     config.mode = defaultConfig.mode;
-    console.error(`Overwrote ${configName}, because the mode ${configMode} was found. Valid modes are 'normal', 'hard' and 'harder'.`);
+    console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal', 'hard' and 'harder'.`);
 }
 
 let packMode = config.mode;
-switch (packMode) {
-	case 'normal': case 'hard': case 'harder': break;
-	default: invalidConfig(); packMode= config.mode;
-}
 
 global.packmode = packMode;
-const isNormalMode = global.isNormalMode = packMode == 'normal';
-const isHarderMode = global.isHarderMode = packMode == 'harder';
-const isHardMode = global.isHardMode = (packMode == 'hard') || global.isHarderMode;
+global.isNormalMode = packMode == 'normal';
+global.isHardMode = (packMode == 'hard') || global.isHarderMode;
+global.isHarderMode = packMode == 'harder';
+const isNormalMode = packMode == 'normal';
+const isHardMode = (packMode == 'hard') || isHarderMode;
+const isHarderMode = packMode == 'harder';
