@@ -16,9 +16,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__fireclay" })
 
     //Thermal
-    event.remove({ output: ['thermal:dynamo_gourmand', 'thermal:dynamo_lapidary', 'thermal:dynamo_disenchantment', 'systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler', 'thermal:constantan_coin'] })
-    event.remove({ id: 'systeams:boilers/stirling' })
+    event.remove({ output: ['thermal:dynamo_stirling', 'thermal:dynamo_gourmand', 'thermal:dynamo_lapidary', 'thermal:dynamo_disenchantment', 'systeams:numismatic_boiler', 'systeams:stirling_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler', 'thermal:constantan_coin'] })
     event.remove({ id: /thermal:parts.*_gear/ })
+    event.remove({ output: 'thermal:rubber' })
+    event.remove({ output: 'thermal:cured_rubber' })
     event.remove({ input: 'forge:nuggets/netherite'})
     
     //ArmorPlus
@@ -51,9 +52,6 @@ ServerEvents.recipes(event => {
 
     //dml
     event.remove({ output: ["hostilenetworks:twilight_prediction"] })
-
-    //Thermal
-    event.remove({ output: ['thermal:dynamo_stirling', 'thermal:dynamo_gourmand', 'thermal:dynamo_disenchantment', 'thermal:dynamo_lapidary', 'systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'] })
 
     //EnderIO
     event.remove({ output: ['enderio:conduit', 'enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block'] })

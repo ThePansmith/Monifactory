@@ -10,7 +10,29 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'thermal:fire_charge/lumium_glass_2' })
     event.remove({ id: 'thermal:fire_charge/enderium_glass_2' })
 
+    //Unify Thermal with GT rubber
     event.smelting('gtceu:sticky_resin', 'thermal:tar');
+    event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['gtceu:rubber_plate'])
+
+    //Centrifuging Recipes for Arboreal Extractor products
+    event.recipes.gtceu.centrifuge('kubejs:latex_centrifuging')
+        .inputFluids(Fluid.of('thermal:latex', 500))
+        .itemOutputs('2x gtceu:raw_rubber_dust')
+        .outputFluids(Fluid.of('minecraft:water', 400))
+        .duration(60).EUt(6)
+
+    event.recipes.gtceu.centrifuge('kubejs:resin_centrifuging')
+        .inputFluids(Fluid.of('thermal:resin', 400))
+        .itemOutputs('gtceu:sticky_resin')
+        .chancedOutput('thermal:rosin', 5000, 500)
+        .outputFluids(Fluid.of('minecraft:water', 150), Fluid.of('thermal:tree_oil', 100))
+        .duration(200).EUt(20)
+
+    event.recipes.gtceu.centrifuge('kubejs:sap_centrifuging')
+        .inputFluids(Fluid.of('thermal:sap', 200))
+        .chancedOutput('minecraft:sugar', 200, 50)
+        .outputFluids(Fluid.of('minecraft:water', 190), Fluid.of('thermal:syrup', 10))
+        .duration(2000).EUt(2)
 
     event.remove({ id: 'thermal:redstone_servo' });
     event.shaped('thermal:redstone_servo', [
