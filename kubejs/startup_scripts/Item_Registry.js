@@ -180,14 +180,6 @@ StartupEvents.registry('item', event => {
     event.create('resonating_crystal').displayName("Resonating Redstone Crystal")
     event.create('ender_shard')
 
-    //Glitch Armor
-    event.create('glitch_fragment')
-    event.create('glitch_heart')
-    event.create('glitch_infused_ingot')
-    event.create('glitch_infused_helmet', 'helmet').tier('glitch').displayName('§bGlitch Infused Helmet')
-    event.create('glitch_infused_chestplate', 'chestplate').tier('glitch').displayName('§bGlitch Infused Chestplate')
-    event.create('glitch_infused_leggings', 'leggings').tier('glitch').displayName('§bGlitch Infused Leggings')
-    event.create('glitch_infused_boots', 'boots').tier('glitch').displayName('§bGlitch Infused Boots')
 
     //Avaritia Replacements
     event.create('diamond_lattice')
@@ -329,7 +321,7 @@ StartupEvents.registry('item', event => {
             .color(0, `#0080ff`)
     }
 
-    // Monium 
+    // Monium
     event.create('shattered_star_data')
     event.create('field_stabilised_omnic_pulsar_compound')
     event.create('quasi_stable_neutron_star').displayName('Quasi-Stable Neutron Star')
