@@ -96,7 +96,7 @@ StartupEvents.registry("block", event => {
 
     //Dense Ores
     const ores = [
-        "redstone_ore",
+        'redstone_ore',
         'diamond_ore',
         'emerald_ore',
         'gold_ore',
@@ -118,6 +118,15 @@ StartupEvents.registry("block", event => {
 			.tagBlock('forge:ores/dense_' + ore)
 			.requiresTool(true);
 	}
+
+    event.create('dense_magma_block')
+			.displayName(`Dense Magma Block`)
+			.soundType('stone')
+			.resistance(6)
+			.hardness(5)
+			.tagBlock('mineable/pickaxe')
+			.tagBlock('forge:ores/dense_magma')
+			.requiresTool(true);
 
     //EMERGENCY FIX
     event.create('gtceu:dilithium_ore')
