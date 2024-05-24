@@ -16,8 +16,4 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xff00ff).iconSet('bright')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
         .blastTemp(10800, 'highest')
-
-    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_DENSE)
-    GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-    GTMaterials.Berkelium.addFlags(GTMaterialFlags.GENERATE_FRAME)
 })
