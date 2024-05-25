@@ -6,7 +6,7 @@
  * Chemical Materials
  */
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    if (!isExpertMode) {
+    if (!isHardMode) {
         return;
     }
 
@@ -169,10 +169,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 // modify material names etc here
 GTCEuStartupEvents.materialModification(() => {
-    if (!isExpertMode) {
+    if (!isHardMode) {
         return;
     }
-	GTMaterials.get('phthalic_anhydride').setFormula('C6H4(CO)2O');
 	GTMaterials.get('ammonium_hexachloroplatinate').setFormula('(NH4)2PtCl6');
 	GTMaterials.get('rhodium_nitrate').setFormula('Rh(NO3)3');
 	GTMaterials.get('ammonium_hexachloroiridiate').setFormula('(NH4)2IrCl6');
