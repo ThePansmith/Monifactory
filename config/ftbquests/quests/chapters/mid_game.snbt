@@ -1764,7 +1764,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "74CFD980F2E43686"
-				item: "gtceu:tungsten_carbide_plate"
+				item: "gtceu:double_tungsten_carbide_plate"
 				type: "item"
 			}]
 			title: "&2Tungsten Carbide Double Plates"
