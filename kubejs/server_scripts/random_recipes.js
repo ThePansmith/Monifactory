@@ -124,7 +124,6 @@ ServerEvents.recipes(event => {
     const sculk_compoundFuels = [
         [2000, "gtceu:cetane_boosted_diesel"],
         [2000, "gtceu:gasoline"],
-        [500, "gtceu:high_octane_gasoline"],
     ]
 
     for (const [mB, id] of sculk_compoundFuels) {
@@ -145,6 +144,24 @@ ServerEvents.recipes(event => {
             .EUt(30720)
 
     }
+    
+    //HOG Sculk Compound Recipes
+    event.recipes.gtceu.electric_blast_furnace("sculk_compound_hog")
+        .itemInputs("gtceu:sculk_compound_dust")
+        .inputFluids("gtceu:high_octane_gasoline 500")
+        .itemOutputs("gtceu:hot_sculk_compound_ingot")
+        .duration(1200)
+        .blastFurnaceTemp(6800)
+        .EUt(30720)
+
+    event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_hog")
+        .itemInputs("4x kubejs:warden_horn")
+        .inputFluids("gtceu:high_octane_gasoline 2000")
+        .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
+        .duration(2400)
+        .blastFurnaceTemp(6800)
+        .EUt(30720)
+
 
     //Sculk Compound Vac Freezer recipe
     event.remove({ id: "gtceu:vacuum_freezer/cool_hot_sculk_compound_ingot" }) 

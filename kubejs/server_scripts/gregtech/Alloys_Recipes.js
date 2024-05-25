@@ -269,4 +269,47 @@ ServerEvents.recipes(event => {
 		.duration(1200) // 60 sec
 		.EUt(32000)
 		.blastFurnaceTemp(8600)
-})
+
+    // thermal alloy ABS recipe fixes
+    event.remove ({ id: 'gtceu:alloy_blast_smelter/signalum_gas' })
+    event.remove ({ id: 'gtceu:alloy_blast_smelter/signalum' })
+    event.remove ({ id: 'gtceu:alloy_blast_smelter/lumium_gas' })
+    event.remove ({ id: 'gtceu:alloy_blast_smelter/lumium' })
+
+    event.recipes.gtceu.alloy_blast_smelter('signalum_mana')
+    .itemInputs('4x gtceu:annealed_copper_dust', '2x gtceu:ardite_dust', '2x gtceu:red_alloy_dust', 'kubejs:destabilized_clathrate')
+    .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
+    .circuit(4)
+    .outputFluids(Fluid.of('gtceu:molten_signalum', 1152))
+    .duration(8400) // 420s
+    .EUt(7680)
+    .blastFurnaceTemp(4000)
+
+    event.recipes.gtceu.alloy_blast_smelter('signalum_mana_gas')
+    .itemInputs('4x gtceu:annealed_copper_dust', '2x gtceu:ardite_dust', '2x gtceu:red_alloy_dust', 'kubejs:destabilized_clathrate')
+    .inputFluids('kubejs:molten_primal_mana 1000', 'gtceu:helium 800')
+    .circuit(14)
+    .outputFluids(Fluid.of('gtceu:molten_signalum', 1152))
+    .duration(5620) // 281s
+    .EUt(7680)
+    .blastFurnaceTemp(4000)
+
+    event.recipes.gtceu.alloy_blast_smelter('lumium_mana')
+    .itemInputs('4x gtceu:tin_alloy_dust', '2x gtceu:sterling_silver_dust', '2x extendedcrafting:luminessence', 'kubejs:energized_clathrate')
+    .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
+    .circuit(4)
+    .outputFluids(Fluid.of('gtceu:molten_lumium', 864))
+    .duration(7200) // 360s
+    .EUt(7680)
+    .blastFurnaceTemp(4500)
+
+    event.recipes.gtceu.alloy_blast_smelter('lumium_mana_gas')
+    .itemInputs('4x gtceu:tin_alloy_dust', '2x gtceu:sterling_silver_dust', '2x extendedcrafting:luminessence', 'kubejs:energized_clathrate')
+    .inputFluids('kubejs:molten_primal_mana 1000', 'gtceu:helium 800')
+    .circuit(4)
+    .outputFluids(Fluid.of('gtceu:molten_lumium', 864))
+    .duration(4800) // 240s
+    .EUt(7680)
+    .blastFurnaceTemp(4500)
+
+}) 
