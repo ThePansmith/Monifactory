@@ -27,7 +27,7 @@ global.packmode = packMode;
 global.isNormalMode = packMode == 'normal';
 global.isHarderMode = packMode == 'harder';
 global.isHardMode = (packMode == 'hard') || global.isHarderMode;
-//the !! is to cast the types into boolean since they get given a strange Java type from being a global
+//the !! is to cast the types into boolean since they got transformed into Java Objects from being globals
 const isNormalMode = !!global.isNormalMode;
 const isHarderMode = !!global.isHarderMode;
 const isHardMode = !!global.isHardMode;
