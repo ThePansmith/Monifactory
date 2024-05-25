@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
 
 	//Get greg'd idiot
     event.shaped(
-        "8x enderio:dark_steel_bars", [
+        "3x enderio:dark_steel_bars", [
             ' H ',
 			'RRR',
             'RRR'
@@ -261,8 +261,8 @@ ServerEvents.recipes(event => {
         }
     )
 	event.recipes.gtceu.assembler('dark_steel_bars')
-            .itemInputs('3x gtceu:dark_steel_rod')
-            .itemOutputs('4x enderio:dark_steel_bars')
+            .itemInputs('6x gtceu:dark_steel_rod')
+            .itemOutputs('3x enderio:dark_steel_bars')
             .duration(300)
             .EUt(4)
 
