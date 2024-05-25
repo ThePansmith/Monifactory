@@ -39,7 +39,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("enderium")
         .ingot().fluid()
         .color(0x1f6b62).iconSet('shiny')
-        .blastTemp(6400, 'highest')
+        .blastTemp(6400, 'highest', 30720, 1600)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
 		.components('4x lead', '2x platinum', 'blue_steel', 'osmium')
         .cableProperties(131072, 1, 0, true)

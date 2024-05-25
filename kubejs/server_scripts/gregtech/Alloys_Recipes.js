@@ -275,6 +275,8 @@ ServerEvents.recipes(event => {
     event.remove ({ id: 'gtceu:alloy_blast_smelter/signalum' })
     event.remove ({ id: 'gtceu:alloy_blast_smelter/lumium_gas' })
     event.remove ({ id: 'gtceu:alloy_blast_smelter/lumium' })
+    event.remove ({ id: 'gtceu:alloy_blast_smelter/enderium' })
+    event.remove ({ id: 'gtceu:alloy_blast_smelter/enderium_gas' })
 
     event.recipes.gtceu.alloy_blast_smelter('signalum_mana')
     .itemInputs('4x gtceu:annealed_copper_dust', '2x gtceu:ardite_dust', '2x gtceu:red_alloy_dust', 'kubejs:destabilized_clathrate')
@@ -306,9 +308,27 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_blast_smelter('lumium_mana_gas')
     .itemInputs('4x gtceu:tin_alloy_dust', '2x gtceu:sterling_silver_dust', '2x extendedcrafting:luminessence', 'kubejs:energized_clathrate')
     .inputFluids('kubejs:molten_primal_mana 1000', 'gtceu:helium 800')
-    .circuit(4)
+    .circuit(14)
     .outputFluids(Fluid.of('gtceu:molten_lumium', 864))
     .duration(4800) // 240s
+    .EUt(7680)
+    .blastFurnaceTemp(4500)
+
+    event.recipes.gtceu.alloy_blast_smelter('enderium_mana_gas')
+    .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'kubejs:resonant_clathrate')
+    .inputFluids('kubejs:molten_primal_mana 1000', 'gtceu:krypton 80')
+    .circuit(14)
+    .outputFluids(Fluid.of('gtceu:molten_enderium', 1152))
+    .duration(6400) // 320s
+    .EUt(7680)
+    .blastFurnaceTemp(4500)
+
+    event.recipes.gtceu.alloy_blast_smelter('enderium_mana')
+    .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'kubejs:resonant_clathrate')
+    .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
+    .circuit(4)
+    .outputFluids(Fluid.of('gtceu:molten_enderium', 1152))
+    .duration(7200) // 480S
     .EUt(7680)
     .blastFurnaceTemp(4500)
 
