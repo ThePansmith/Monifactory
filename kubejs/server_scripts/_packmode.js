@@ -1,8 +1,6 @@
-//priority: 1000
-
-const isNormalMode = global.isNormalMode
-const isHardMode = global.isHardMode
-const isHarderMode = global.isHarderMode
+const isNormalMode = !!global.isNormalMode;
+const isHardMode = !!global.isHardMode;
+const isHarderMode = !!global.isHarderMode;
 
 PlayerEvents.loggedIn(event => {
     // devmode stuff so we can switch modes in runtime (not recommended)

@@ -24,6 +24,10 @@ switch (packMode) {
 }
 
 global.packmode = packMode;
-const isNormalMode = global.isNormalMode = packMode == 'normal';
-const isHarderMode = global.isHarderMode = packMode == 'harder';
-const isHardMode = global.isHardMode = (packMode == 'hard') || global.isHarderMode;
+global.isNormalMode = packMode == 'normal';
+global.isHarderMode = packMode == 'harder';
+global.isHardMode = (packMode == 'hard') || global.isHarderMode;
+//the !! is to cast the types into boolean since they got transformed into Java Objects from being globals
+const isNormalMode = !!global.isNormalMode;
+const isHarderMode = !!global.isHarderMode;
+const isHardMode = !!global.isHardMode;
