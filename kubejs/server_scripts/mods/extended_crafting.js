@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
             B: 'extendedcrafting:elite_catalyst',
             C: 'extendedcrafting:elite_table'
         }
-    )
+    ).id('elite_table_dupe')
 
     event.remove({ output: 'extendedcrafting:ultimate_table' })
     event.recipes.extendedcrafting.shaped_table(
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
             B: 'extendedcrafting:ultimate_catalyst',
             C: 'extendedcrafting:ultimate_table'
         }
-    )
+    ).id('ultimate_table_dupe')
 
 
     event.remove({ output: 'extendedcrafting:epic_table' })
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
             B: 'extendedcrafting:epic_catalyst',
             C: 'extendedcrafting:epic_table'
         }
-    )
+    ).id('epic_table_dupe')
 
     event.remove({ output: 'extendedcrafting:crafting_core' })
     event.shaped(
