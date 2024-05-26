@@ -1,6 +1,12 @@
 // /kjs inventory will be your friend.
 
 JEIEvents.hideItems(event => {
+
+    //Enderio cleanup
+    event.hide(/enderio:clear_glass_.*_.*/)
+    event.hide(/enderio:fused_quartz_.*_.*/)
+    event.hide('enderio:broken_spawner')
+
     //Hides useless items
     event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper', 'thermal:constantan_coin'])
 
@@ -58,6 +64,16 @@ JEIEvents.hideItems(event => {
     event.hide(['nuclearcraft:magnesium_deepslate_ore', 'nuclearcraft:thorium_deepslate_ore', 'nuclearcraft:uranium_deepslate_ore', 'nuclearcraft:magnesium_ore', 'nuclearcraft:boron_deepslate_ore', 'nuclearcraft:cobalt_ore', 'nuclearcraft:platinum_deepslate_ore', 'nuclearcraft:silver_deepslate_ore', 'nuclearcraft:lead_ore', 'nuclearcraft:lithium_ore', 'nuclearcraft:thorium_ore', 'nuclearcraft:tin_ore', 'nuclearcraft:cobalt_deepslate_ore', 'nuclearcraft:silver_ore', 'nuclearcraft:uranium_ore', 'nuclearcraft:zinc_ore', 'nuclearcraft:boron_ore', 'nuclearcraft:lithium_deepslate_ore'])
     event.hide(['nuclearcraft:foursmore', 'nuclearcraft:evenmoresmore', 'nuclearcraft:moresmore', 'nuclearcraft:smore'])
     event.hide(/^nuclearcraft:.*_bucket/i)
+    event.hide(/nuclearcraft:.*_ingot/)
+    event.hide(/nuclearcraft:.*_.*_ingot/)
+    event.hide(/nuclearcraft:.*_plate/)
+    event.hide(/nuclearcraft:.*_.*_.*_.*_.*_tr/)
+    event.hide(/nuclearcraft:.*_.*_.*_.*_tr/)
+    event.hide(/nuclearcraft:.*_.*_.*_tr/)
+    event.hide(/nuclearcraft:.*_dust/)
+    event.hide(/nuclearcraft:.*_.*_dust/)
+    event.hide(/nuclearcraft:.*_nugget/)
+    event.hide(/nuclearcraft:.*_gem/)
 
     //JAVD
     event.hide(["javd:portal_block"])
@@ -83,7 +99,7 @@ JEIEvents.hideItems(event => {
     event.hide('sophisticatedstorage:chest')
 
     //Sophisticated Shulkers
-    event.hide(/^sophisticatedstorage:.+shulker_box$/)
+    event.hide(/^sophisticatedstorage:.+sshulker_box$/)
     event.hide('sophisticatedstorage:shulker_box')
 
     //Sophisticated Limited Drawers
@@ -128,9 +144,20 @@ JEIEvents.addItems(event => {
 
     // AE2 stuff
     event.add(Item.of('ae2:facade', {item: "gtceu:infinity_block"}))
+
+    //EnderIO
+    event.add('enderio:broken_spawner')
+
+    //NuclearCraft
+    event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust'])
 })
 
 JEIEvents.hideFluids(event => {
+
+    //EnderIO
+    let eioUseless = ['enderio:nutrient_distillation', 'enderio:vapor_of_levity', 'enderio:hootch', 'enderio:rocket_fuel', 'enderio:fire_water', 'enderio:liquid_sunshine', 'enderio:cloud_seed', 'enderio:cloud_seed_concentrated']
+    eioUseless.forEach(liquid => { event.hide(liquid) })
+
     // hiding NuclearCraft Fluids
     // get all nc fluids from index
     let ncFluids = Fluid.getTypes().filter(id=>id.includes("nuclearcraft"))
