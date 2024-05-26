@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
             .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + prediction + '"}}').weakNBT())
             .circuit(circuit)
             .itemOutputs(output)
-            .duration(3 * 20) // same for all recipes
+            .duration(60) // same for all recipes
             .EUt(64) // same for all recipes
     }
     if (isNormalMode) {
