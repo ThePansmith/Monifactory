@@ -101,6 +101,7 @@
   "gtceu.quintessence_infuser":"Quintessence Infusing",
   "block.gtceu.quintessence_infuser":"Quintessence Infuser",
   "gtceu.quintessence_infuser.desc": "Uses intense rotational speeds to infuse large amounts of souls into objects at once.",
+  "block.gtceu.rock_cycle_simulator":"Rock Cycle Simulator",
 
   "__GENERIC_MATERIALS__.header": "=====================",
   "__GENERIC_MATERIALS__.flufff": "> Generic Materials <",

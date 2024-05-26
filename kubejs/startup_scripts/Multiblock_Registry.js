@@ -652,7 +652,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
            .where('I', Predicates.blocks("minecraft:blue_ice"))
            .where('M', Predicates.blocks("minecraft:magma_block"))
-           .where('O', Predicates.blocks("minecraft:cobblestone"))
+           .where('O', Predicates.blocks("gtceu:titanium_pipe_casing"))
            .where('T', Predicates.blocks("gtceu:tempered_glass"))
            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
            .where('C', Predicates.blocks("gtceu:high_temperature_smelting_casing").setMinGlobalLimited(20)
