@@ -24,6 +24,7 @@ StartupEvents.registry('item', event => {
     event.create('reinforced_mining_laser').displayName("§bReinforced Mining Laser")
     event.create('warp_engine').displayName("§dWarp Engine")
     event.create('universal_navigator').displayName("§dUniversal Navigator")
+    event.create('extradimensional_navigator').displayName("§dExtradimensional Navigator")
     event.create('quantum_fluxed_eternium_heavy_plating').displayName("§dQuantum Fluxed Eternium Heavy Plating")
     event.create('quantum_flux').displayName("§dQuantum Flux")
     event.create('gem_sensor').displayName("Gemstone Sensor")
@@ -231,6 +232,7 @@ StartupEvents.registry('item', event => {
     event.create('purified_netherite_dust').texture('kubejs:item/netherite/purified_netherite_dust')
     event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
+    event.create('dormant_infinity_compound_ingot')
 
     // Post Tank Wafer Stuff
     event.create('universe_boule').texture('kubejs:item/universalwafer/universal_boule').displayName('Universe-doped Monocrystalline Silicon Boule')

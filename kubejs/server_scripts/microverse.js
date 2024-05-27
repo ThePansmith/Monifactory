@@ -237,15 +237,15 @@ ServerEvents.recipes(event => {
     // T11 Microminer
     event.recipes.extendedcrafting.shaped_table(
         'kubejs:microminer_t11', [
-            '   O M O   ',
+            '   A M A   ',
             '   O M O   ',
             '  OO M OO  ',
-            ' POOMUMOOP ',
-            ' OUOMMMOUO ',
-            'POOMMMMMOOP',
-            'OODMMMMMDOO',
-            'ODSMOOOMSDO',
-            'OSOOW WOOSO',
+            ' POOMMMOOP ',
+            ' OONMMMNOO ',
+            'POOMMCMMOOP',
+            'OOOMMIMMOOO',
+            'OOOMOOOMOOO',
+            'OOOOW WOOOO',
             ' OOW   WOO ',
             ' W       W '
         ], {
@@ -253,9 +253,10 @@ ServerEvents.recipes(event => {
             M: 'gtceu:double_crystal_matrix_plate',
             P: 'solarflux:sp_custom_neutronium',
             W: 'kubejs:warp_engine',
-            D: 'kubejs:reactor_core',
-            S: 'kubejs:reactor_stabilizer',
-            U: 'kubejs:universal_navigator'
+            A: 'gtceu:uev_robot_arm',
+            C: 'gtceu:uhv_quantum_chest',
+            N: 'kubejs:universal_navigator',
+            I: 'kubejs:infinity_power_unit'
         }
     )
 
@@ -276,11 +277,11 @@ ServerEvents.recipes(event => {
         ], {
             I: 'gtceu:double_infinity_plate',
             N: 'gtceu:double_netherite_plate',
-            E: 'kubejs:universal_navigator', // Replace with Extradimensional Navigator
+            E: 'kubejs:extradimensional_navigator',
             P: 'solarflux:sp_custom_infinity',
             C: 'gtceu:uhv_quantum_chest',
             W: 'kubejs:warp_engine',
-            D: 'gtceu:creative_energy',
+            D: 'kubejs:infinity_power_unit',
             S: 'kubejs:reactor_stabilizer',
             Q: 'kubejs:field_stabilised_omnic_pulsar_compound'
         }
@@ -415,7 +416,22 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:universal_navigator')
         .duration(6000)
         .EUt(491520)
-
+  
+    event.recipes.gtceu.assembly_line('extradimensional_navigator')
+        .itemInputs('gtceu:infinity_frame',
+            '4x kubejs:universal_navigator',
+            '4x gtceu:uev_field_generator',
+            '24x gtceu:holmium_plate',
+            '8x kubejs:dimensional_processor_computer',
+            '2x gtceu:uiv_sensor',
+            '2x gtceu:uiv_emitter',
+            '4x gtceu:dense_naquadah_alloy_plate',
+            '8x gtceu:netherite_quadruple_wire',
+            '32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire')
+        .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
+        .itemOutputs('kubejs:extradimensional_navigator')
+        .duration(6000)
+        .EUt(3932160)
         .stationResearch(b => b
             .researchStack('kubejs:stellar_creation_data')
             .CWUt(96, 384000)

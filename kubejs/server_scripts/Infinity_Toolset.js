@@ -234,7 +234,7 @@ ServerEvents.recipes(event => {
 
     // Infinity Power Unit
     event.recipes.gtceu.assembly_line('infinity_toolset/infinity_power_unit')
-        .itemInputs('gtceu:infinity_frame', '32x gtceu:polybenzimidazole_plate', '16x gtceu:darmstadtium_plate', '16x gtceu:enriched_naquadah_trinium_europium_duranide_plate', '16x #gtceu:circuits/uev', '8x #gtceu:circuits/uiv', '16x kubejs:resonant_energy_core', '4x gtceu:max_battery', '8x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '32x gtceu:uev_electric_motor')
+        .itemInputs('kubejs:infinity_catalyst', '32x gtceu:polybenzimidazole_plate', '16x gtceu:darmstadtium_plate', '16x gtceu:enriched_naquadah_trinium_europium_duranide_plate', '16x #gtceu:circuits/uhv', '8x #gtceu:circuits/uev', '16x kubejs:resonant_energy_core', '4x gtceu:max_battery', '8x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '32x gtceu:uev_electric_motor')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:polybenzimidazole 1152', 'gtceu:omnium 5760', 'gtceu:crystal_matrix 1152')
         .itemOutputs('kubejs:infinity_power_unit')
         .duration(1200)

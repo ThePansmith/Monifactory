@@ -596,7 +596,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("CCCCCCC", "#CCCCC#", "#GGGGG#", "#GGGGG#", "#CCCCC#", "CCCCCCC")
             .aisle("CCCCCCC", "ACPPPCA", "AGKKKGA", "AGKKKGA", "ACPPPCA", "CCCCCCC")
             .aisle("CCCCCCC", "ACPPPCA", "AGKPKGA", "AGKPKGA", "ACPPPCA", "CCCCCCC")
-            .aisle("CCSCCCC", "ACPPPCA", "AGKKKGA", "AGKKKGA", "ACPPPCA", "CCSCCCC")
+            .aisle("CCCCCCC", "ACPPPCA", "AGKKKGA", "AGKKKGA", "ACPPPCA", "CCCCCCC")
             .aisle("CCCCCCC", "#CCCCC#", "#GGGGG#", "#GGGGG#", "#CCCCC#", "CCCCCCC")
             .aisle("ACCSCCA", "A#AAA#A", "A#AAA#A", "A#AAA#A", "A#AAA#A", "ACCCCCA")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))

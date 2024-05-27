@@ -157,6 +157,18 @@ ServerEvents.recipes(event => {
         T: 'extendedcrafting:advanced_table'
     }, 2
     )
+    event.shaped(
+        '2x extendedcrafting:elite_table', [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'gtceu:aluminium_block',
+            B: 'extendedcrafting:elite_catalyst',
+            C: 'extendedcrafting:elite_table'
+        }
+    ).id('elite_table_dupe')
+
     event.remove({ output: 'extendedcrafting:ultimate_table' })
     event.recipes.extendedcrafting.shaped_table(
         'extendedcrafting:ultimate_table', [
@@ -176,6 +188,19 @@ ServerEvents.recipes(event => {
         T: 'extendedcrafting:elite_table'
     }, 3
     )
+    event.shaped(
+        '2x extendedcrafting:ultimate_table', [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'minecraft:emerald_block',
+            B: 'extendedcrafting:ultimate_catalyst',
+            C: 'extendedcrafting:ultimate_table'
+        }
+    ).id('ultimate_table_dupe')
+
+
     event.remove({ output: 'extendedcrafting:epic_table' })
     event.recipes.extendedcrafting.shaped_table(
         'extendedcrafting:epic_table', [
@@ -197,6 +222,17 @@ ServerEvents.recipes(event => {
         T: 'extendedcrafting:ultimate_table'
     }, 4
     )
+    event.shaped(
+        '2x extendedcrafting:epic_table', [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: '#forge:storage_blocks/netherite',
+            B: 'extendedcrafting:epic_catalyst',
+            C: 'extendedcrafting:epic_table'
+        }
+    ).id('epic_table_dupe')
 
     event.remove({ output: 'extendedcrafting:crafting_core' })
     event.shaped(
