@@ -203,6 +203,8 @@ StartupEvents.registry('item', event => {
     event.create('abyss_shard')
     event.create('warden_heart')
     event.create('infused_obsidian')
+    event.create('dislocation_inhibitor')
+    event.create('advanced_magnet')
 
     //Infinity Tools
     event.create('infinity_file').rarity("epic")
@@ -216,20 +218,10 @@ StartupEvents.registry('item', event => {
     // Ultimate Tools
     event.create('ultimate_core').texture('kubejs:item/ultimate/core')
     event.create('ultimate_file').texture('kubejs:item/ultimate/file').rarity("epic")
-    event.create('ultimate_file_head').texture('kubejs:item/ultimate/file_head')
-    event.create('ultimate_file_handle').texture('kubejs:item/ultimate/file_handle')
     event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer').rarity("epic")
-    event.create('ultimate_hammer_head').texture('kubejs:item/ultimate/hammer_head')
-    event.create('ultimate_hammer_handle').texture('kubejs:item/ultimate/hammer_handle')
     event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver').rarity("epic")
-    event.create('ultimate_screwdriver_head').texture('kubejs:item/ultimate/screwdriver_head')
-    event.create('ultimate_screwdriver_handle').texture('kubejs:item/ultimate/screwdriver_handle')
     event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench').rarity("epic")
-    event.create('ultimate_wrench_head').texture('kubejs:item/ultimate/wrench_head')
-    event.create('ultimate_wrench_handle').texture('kubejs:item/ultimate/wrench_handle')
     event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter').rarity("epic")
-    event.create('ultimate_wire_cutter_head').texture('kubejs:item/ultimate/wire_cutter_head')
-    event.create('ultimate_wire_cutter_handle').texture('kubejs:item/ultimate/wire_cutter_handle')
 
     // Netherite processing midproducts
     event.create('crushed_ancient_debris').texture('kubejs:item/netherite/crushed_ancient_debris')
@@ -353,20 +345,10 @@ ItemEvents.modification(event => {
 })
 
 ItemEvents.armorTierRegistry(event => {
-    event.add("glitch", (tier) => {
-        tier.durabilityMultiplier = 120;
-        tier.equipSound = 'minecraft:item.armor.equip_iron';
-        tier.toughness = 4.0;
-        tier.slotProtections = [3, 10, 6, 3];
-    })
+    //blank for anything else that gets added
 })
 
 ItemEvents.toolTierRegistry(event => {
-    event.add("glitch", tier => {
-        tier.attackDamageBonus = 10;
-        tier.speed = 1.6;
-        tier.uses = 2200;
-    })
 
     event.add("dev", (tier) => {
         tier.enchantmentValue = 42
