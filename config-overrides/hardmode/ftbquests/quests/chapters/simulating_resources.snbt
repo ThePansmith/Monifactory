@@ -1,11 +1,12 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "simulating_resources"
 	group: ""
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
-	order_index: 4
+	order_index: 6
 	quest_links: [
 		{
 			id: "1344E3300C29A4CF"
@@ -24,7 +25,6 @@
 	]
 	quests: [
 		{
-			dependencies: ["715BC5C7DAC53B7B"]
 			description: [
 				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
 				""
