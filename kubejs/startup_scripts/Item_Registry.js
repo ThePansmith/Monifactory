@@ -61,6 +61,7 @@ StartupEvents.registry('item', event => {
     event.create('deep_dark_data').displayName("§dDeep Dark Data")
     event.create('wither_realm_data').displayName("§dWither Realm Data")
     event.create('dragon_lair_data').displayName("§dDragon Lair Data")
+    event.create('shattered_universe_data').displayName("§dShattered Universe Data")
 
     //Solidified Items
     event.create('solidified_argon').displayName("Solidified Argon")
