@@ -249,14 +249,23 @@ ServerEvents.recipes(event => {
     
     event.remove({ output: "enderio:dark_steel_bars" })
 
+	//Get greg'd idiot
     event.shaped(
         "3x enderio:dark_steel_bars", [
-            'RRR',
+            ' H ',
+			'RRR',
             'RRR'
         ], {
-            R: "gtceu:dark_steel_rod"
+            R: "gtceu:dark_steel_rod",
+			H: "#forge:tools/hammers"
         }
     )
+	event.recipes.gtceu.assembler('dark_steel_bars')
+            .itemInputs('6x gtceu:dark_steel_rod')
+            .itemOutputs('3x enderio:dark_steel_bars')
+            .duration(300)
+            .EUt(4)
+
     event.shaped(
         "enderio:reinforced_obsidian_block", [
             'IBI',

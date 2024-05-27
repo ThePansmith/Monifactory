@@ -15,17 +15,13 @@ ServerEvents.recipes(event => {
             )
     // Extra Large Chemical Reactor
     event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
-            .itemInputs('gtceu:large_chemical_reactor', "16x gtceu:duranium_large_fluid_pipe", '8x gtceu:uv_hermetic_casing', '4x gtceu:uv_field_generator', '8x gtceu:uv_electric_pump', '8x gtceu:uv_fluid_regulator', '4x #gtceu:circuits/uhv')
+            .itemInputs('gtceu:large_chemical_reactor', "8x gtceu:naquadah_large_fluid_pipe", '8x gtceu:luv_hermetic_casing', '4x gtceu:luv_field_generator', '8x gtceu:luv_electric_pump', '8x gtceu:luv_fluid_regulator', '4x #gtceu:circuits/zpm')
             .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polybenzimidazole 1152')
             .itemOutputs('gtceu:extra_large_chemical_reactor')
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:large_chemical_reactor').EUt(7680).duration(600))
             .duration(1200)
-            .EUt(1000000)
+            .EUt(131072)
     
-    .stationResearch(b => b
-        .researchStack('gtceu:large_chemical_reactor')
-        .CWUt(96, 288000)
-        .EUt(30720)
-    )
 
     // Blacklight
     event.shaped(
@@ -188,31 +184,6 @@ ServerEvents.recipes(event => {
 		]
 	)
 
- 
-    event.recipes.extendedcrafting.shaped_table(
-        'kubejs:ultimate_power_storage', [
-            'ABCDEDCBA',
-            'BCDEFEDCB',
-            'CDEFGFEDC',
-            'DEFGHGFED',
-            'EFGHIHGFE',
-            'DEFGHGFED',
-            'CDEFGFEDC',
-            'BCDEFEDCB',
-            'ABCDEDCBA'
-        ], {
-            A: 'gtceu:lv_lithium_battery',
-            B: 'gtceu:mv_lithium_battery',
-            C: 'gtceu:energy_crystal',
-            D: 'gtceu:lapotron_crystal',
-            E: 'gtceu:lapotronic_energy_orb',
-            F: 'gtceu:lapotronic_energy_orb_cluster',
-            G: 'gtceu:zero_point_module',
-            H: 'gtceu:energy_cluster',
-            I: 'gtceu:max_battery'
-        }, 4
-    )
-
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:zero_point_module', [
             '  PPPPP  ',
@@ -296,7 +267,7 @@ ServerEvents.recipes(event => {
             'PPCGSGCPP',
             "UPPCGCPPU",
         ], {
-            U: 'kubejs:ultimate_power_storage',
+            U: 'gtceu:max_battery',
             P: 'thermal:upgrade_augment_3',
             C: 'thermal:upgrade_augment_4',
             G: 'thermal:upgrade_augment_2',

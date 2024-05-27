@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
 
     print('creative_tank_data', 1, 'gtceu:creative_tank')
     print('creative_tank_data', 2, 'ae2:creative_fluid_cell')
-    print('creative_storage_data', 1, 'kubejs:creative_storage_component')
+    print('creative_storage_data', 1, 'functionalstorage:max_storage_upgrade')
     print('creative_storage_data', 2, 'gtceu:uhv_quantum_chest')
     print('creative_storage_data', 3, 'gtceu:uhv_quantum_tank')
     print('creative_data_hatch_data', 1, 'gtceu:creative_data_access_hatch')
