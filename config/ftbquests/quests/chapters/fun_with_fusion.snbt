@@ -32,6 +32,12 @@
 			x: 3.5d
 			y: -2.0d
 		}
+		{
+			id: "042267F47AE0C415"
+			linked_quest: "69034B168B5134ED"
+			x: -4.0d
+			y: -9.5d
+		}
 	]
 	quests: [
 		{
@@ -422,6 +428,7 @@
 				""
 				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
 			]
+			disable_toast: true
 			id: "07482E45FCEE7937"
 			size: 1.5d
 			tasks: [{

@@ -1506,7 +1506,7 @@
 		{
 			dependencies: ["4C76017864258EA9"]
 			description: [
-				"&2High-Octane Gasoline is the most powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in sculk_compound production, using 75%% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
+				"&2High-Octane Gasoline is the most powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in sculk_compound production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
 				""
 				"To refine Gasoline to High-Octane Gasoline, you will need:"
 				"- 20 parts Gasoline"
@@ -3015,7 +3015,7 @@
 			id: "745628397790ED7A"
 			rewards: [{
 				id: "0F6CC38788229FC4"
-				item: "kubejs:moni_nickel"
+				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3119,6 +3119,49 @@
 			title: "&2Cracker"
 			x: 47.0d
 			y: -4.5d
+		}
+		{
+			dependencies: [
+				"745628397790ED7A"
+				"07482E45FCEE7937"
+			]
+			description: [
+				"While you could simply just extract power from the reactor and call it a day, you might find better luck in taking advantage of its ability to &esuperheat&r water into &9High Pressure Steam&r."
+				""
+				"&9Large Steam Turbines&r are best equiped for this, being able to use &eRotor Holders&r and &eTurbines&r to produce large amounts of power from High Pressure Steam."
+				""
+				"[\"The \", {\"text\": \"Large Turbines\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0F779BEEED8E67BB\" } },\" quest goes into more detail on how exactly these large turbines work.\"]"
+			]
+			icon: "gtceu:steam_large_turbine"
+			id: "69034B168B5134ED"
+			rewards: [{
+				count: 3
+				id: "05A240B35081D3F6"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1CB0BAF39BD9486E"
+					item: "gtceu:steam_large_turbine"
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "1BE09907EC7CAAB0"
+					item: "gtceu:steel_turbine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "31B29F8245043671"
+					item: { Count: 2b, id: "gtceu:steel_gearbox" }
+					type: "item"
+				}
+			]
+			title: "&9High Pressure Steam"
+			x: 47.0d
+			y: 13.5d
 		}
 	]
 	title: "Mid Game"
