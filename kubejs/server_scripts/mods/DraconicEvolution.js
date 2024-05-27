@@ -21,12 +21,21 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(30720)
 
+    event.recipes.gtceu.assembly_line('reactor_prt_stab_frame')
+        .itemInputs('6x nuclearcraft:plate_elite', 'kubejs:resonant_core', 'gtceu:resonant_sculk_compound_gear', 'gtceu:resonant_sculk_compound_frame', '2x gtceu:zpm_emitter', '2x gtceu:zpm_sensor')
+        .inputFluids('gtceu:soldering_alloy 1152')
+        .itemOutputs('kubejs:reactor_prt_stab_frame')
+        .duration(750)
+        .EUt(491520)
+
     event.recipes.gtceu.assembly_line('particle_generator')
         .itemInputs('gtceu:tungsten_carbide_frame', '6x gtceu:sculk_compound_plate', 'kubejs:sculk_core', '10x minecraft:blaze_rod', '3x gtceu:ev_emitter', '4x gtceu:restonia_empowered_block')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('kubejs:particle_generator')
         .duration(1200)
         .EUt(30720)
+
+
 
     event.shaped('kubejs:sculk_core', [
         'ABA',

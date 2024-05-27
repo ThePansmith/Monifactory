@@ -15,15 +15,15 @@ ServerEvents.recipes(event => {
             )
     // Extra Large Chemical Reactor
     event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
-            .itemInputs('gtceu:large_chemical_reactor', "16x gtceu:duranium_large_fluid_pipe", '8x gtceu:uv_hermetic_casing', '4x gtceu:uv_field_generator', '8x gtceu:uv_electric_pump', '8x gtceu:uv_fluid_regulator', '4x #gtceu:circuits/uhv')
+            .itemInputs('gtceu:large_chemical_reactor', "8x gtceu:naquadah_large_fluid_pipe", '8x gtceu:luv_hermetic_casing', '4x gtceu:luv_field_generator', '8x gtceu:luv_electric_pump', '8x gtceu:luv_fluid_regulator', '4x #gtceu:circuits/zpm')
             .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polybenzimidazole 1152')
             .itemOutputs('gtceu:extra_large_chemical_reactor')
             .duration(1200)
-            .EUt(1000000)
+            .EUt(131072)
     
     .stationResearch(b => b
         .researchStack('gtceu:large_chemical_reactor')
-        .CWUt(96, 288000)
+        .CWUt(8, 32000)
         .EUt(30720)
     )
 
