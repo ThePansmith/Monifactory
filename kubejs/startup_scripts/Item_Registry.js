@@ -202,6 +202,8 @@ StartupEvents.registry('item', event => {
     event.create('abyss_shard')
     event.create('warden_heart')
     event.create('infused_obsidian')
+    event.create('dislocation_inhibitor')
+    event.create('advanced_magnet')
 
     //Infinity Tools
     event.create('infinity_file').rarity("epic")

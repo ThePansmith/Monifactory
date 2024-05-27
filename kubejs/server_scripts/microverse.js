@@ -386,6 +386,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:iv_field_generator',
             Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT(),
             Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('kubejs:dislocation_inhibitor').EUt(480).duration(1200))
         .itemOutputs('kubejs:warp_engine')
         .inputFluids('gtceu:soldering_alloy 1152')
         .duration(1800)
@@ -414,6 +415,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:universal_navigator')
         .duration(6000)
         .EUt(491520)
+
+        .stationResearch(b => b
+            .researchStack('kubejs:stellar_creation_data')
+            .CWUt(96, 384000)
+            .EUt(491520)
+        )
 
     // Electrum Engine Frame
     event.shaped(
