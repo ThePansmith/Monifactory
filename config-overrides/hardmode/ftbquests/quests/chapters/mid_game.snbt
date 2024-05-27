@@ -5,7 +5,7 @@
 	group: ""
 	icon: "nuclearcraft:plutonium_rtg"
 	id: "7D825FFA33DC85A7"
-	order_index: 7
+	order_index: 6
 	quest_links: [
 		{
 			id: "4864F8F7C33860D9"
@@ -1587,7 +1587,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: [
 				"You will need either &9Seed Oil&r or &9Fish Oil&r in the process of creating &9Biodiesel&r, created by extracting seeds or fish."
 				""

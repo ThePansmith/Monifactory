@@ -159,10 +159,18 @@ machines:
   # Default: 100
   energyUsageMultiplier: 100
 
+  # Energy use multiplier for prospectors.
+  # Default: 100
+  prospectorEnergyUseMultiplier: 100
+
   # Whether machines or boilers damage the terrain when they explode.
   # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
   # Default: true
   doesExplosionDamagesTerrain: false
+
+  # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
+  # Default: false
+  harmlessActiveTransformers: false
 
   # Divisor for Recipe Duration per Overclock.
   # Default: 2.0
@@ -308,6 +316,12 @@ tools:
   # Amount of blocks that can be spray painted at once
   # Default: 16
   sprayCanChainLength: 16
+
+# Config options for Game Mechanics
+gameplay:
+  # Enable hazardous materials
+  # Default: true
+  hazardsEnabled: true
 
 # Config options for Mod Compatibility
 compat:

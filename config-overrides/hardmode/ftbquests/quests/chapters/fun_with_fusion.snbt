@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:luv_fusion_reactor"
 	id: "40F7695BE1E65C41"
-	order_index: 9
+	order_index: 8
 	quest_links: [
 		{
 			id: "569E4C671C9A4419"

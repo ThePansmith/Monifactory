@@ -10,7 +10,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2D31856F6EF1ED69"]
 			description: [
 				"The &3Wiremill&r is a major efficiency boost, giving you double yield of &6wires&r for your ingots. But first, you'll need to make some &6Motors&r."
 				""
@@ -104,10 +103,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"2D31856F6EF1ED69"
-				"62BBD1F6767A4D90"
-			]
+			dependencies: ["62BBD1F6767A4D90"]
 			description: [
 				"A &6Programmed Circuit&r is an item used to configure machines. In essence, they tell a machine what to make if there's multiple things it could make from a certain input."
 				""
@@ -829,39 +825,6 @@
 		}
 		{
 			dependencies: [
-				"645B1DCB3DA7198A"
-				"3BD20358F137E7C6"
-			]
-			description: [
-				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
-				""
-				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron, gold, tin, copper, diamonds&r and many more!), through pristine matter."
-				""
-				"Setting up HNN automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
-				""
-				"HNN changes machines, making them no longer sided, so you can input and output from any side, as well as allowing them to be controlled by redstone."
-				""
-				"Yes, you can also use it for generating power... &owith Diamonds."
-			]
-			id: "715BC5C7DAC53B7B"
-			rewards: [{
-				id: "518DD0C9237B4DBC"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "15A06F5EF4CADA4C"
-				item: "hostilenetworks:sim_chamber"
-				type: "item"
-			}]
-			title: "&9Simulating Mobs"
-			x: 6.5d
-			y: -5.5d
-		}
-		{
-			dependencies: [
 				"5301E546BAA69844"
 				"74B5CA5A48CE7B39"
 			]
@@ -966,7 +929,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"You'll need &6Obsidian&r to make &6Dark Steel&r. Most of the tools you can make cannot mine Obsidian, but you do have a few potential options for ones that will work. The options you're most likely to have access to at this point are:"
 				""
@@ -1751,7 +1713,6 @@
 			y: 9.375d
 		}
 		{
-			dependencies: ["2D31856F6EF1ED69"]
 			description: [
 				"&9GregTech Power&r can be tricky to handle. Luckily, there are several tools you can use to tackle some of the problems."
 				""
@@ -1775,7 +1736,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: [
 				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are seperate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine."
 				""
@@ -1812,7 +1772,6 @@
 			y: 9.375d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: ["&9Pressing the second tab in any given machine's GUI will open up a view showing the machine and any blocks it is touching&r. From there, you can click on a side of the machine and easily add, edit and remove &acovers&r, and configure if the machine should &3automatically output&r it's output and which side it should output to. "]
 			icon: "minecraft:hopper"
 			id: "431BB650AC492C84"
@@ -1827,7 +1786,6 @@
 			y: 9.375d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: [
 				"&aFilters&r are a type of machine cover that controls what items or fluids are allowed to pass through it. They can be used directly on the side of a machine to affect external automation or the Machine's &aAuto-Output Functionality&r."
 				""

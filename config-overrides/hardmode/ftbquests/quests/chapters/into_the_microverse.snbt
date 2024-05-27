@@ -5,7 +5,7 @@
 	group: ""
 	icon: "kubejs:microminer_t1"
 	id: "68F29871402A6B1B"
-	order_index: 6
+	order_index: 5
 	quest_links: [{
 		id: "3494A1A9317B9F3B"
 		linked_quest: "5F688F22A3DB2ADD"
@@ -886,7 +886,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6C1AAFF54A2ADB45"]
 			description: ["&6Hellish Matter&r and &6Ender Pearl&r can be crafted into Extraterrestrial Matter."]
 			id: "790E3275E88265E3"
 			shape: "hexagon"
