@@ -67,6 +67,51 @@ ServerEvents.recipes(event => {
         H: 'gtceu:mv_machine_hull'
     }).id('kubejs:shaped/mv_atomic_reconstructor')
 
+    event.shaped(
+        'gtceu:ev_atomic_reconstructor', [
+        'PPP',
+        'EHE',
+        'PPP'
+    ], {
+        P: 'gtceu:beryllium_plate',
+        E: 'gtceu:ev_emitter',
+        H: 'gtceu:ev_machine_hull'
+    }).id('kubejs:shaped/ev_atomic_reconstructor')
+
+    event.shaped(
+        'gtceu:luv_atomic_reconstructor', [
+        'PPP',
+        'EHE',
+        'PPP'
+    ], {
+        P: 'gtceu:osmiridium_plate',
+        E: 'gtceu:luv_emitter',
+        H: 'gtceu:luv_machine_hull'
+    }).id('kubejs:shaped/luv_atomic_reconstructor')
+
+    event.shaped(
+        'gtceu:uv_atomic_reconstructor', [
+        'PPP',
+        'EHE',
+        'PPP'
+    ], {
+        P: 'gtceu:duranium_plate',
+        E: 'gtceu:uv_emitter',
+        H: 'gtceu:uv_machine_hull'
+    }).id('kubejs:shaped/uv_atomic_reconstructor')
+
+    event.shaped(
+        'gtceu:uev_atomic_reconstructor', [
+        'PPP',
+        'EHE',
+        'PPP'
+    ], {
+        P: 'gtceu:holmium_plate',
+        E: 'gtceu:uev_emitter',
+        H: 'gtceu:uev_machine_hull'
+    }).id('kubejs:shaped/uev_atomic_reconstructor')
+
+
     // Empowerment
     // event.recipes.gtceu.empowerment("restonia")
     //     .itemInputs("gtceu:restonia_block", "gtceu:red_alloy_ingot", "gtceu:almandine_gem", Item.of('gtceu:glass_vial', '{Fluid:{Amount:1000,FluidName:"gtceu:sulfuric_acid"}}').strongNBT(), "extendedcrafting:the_ultimate_component")
