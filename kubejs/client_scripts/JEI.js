@@ -99,7 +99,7 @@ JEIEvents.hideItems(event => {
     event.hide('sophisticatedstorage:chest')
 
     //Sophisticated Shulkers
-    event.hide(/^sophisticatedstorage:.+sshulker_box$/)
+    event.hide(/^sophisticatedstorage:.+shulker_box$/)
     event.hide('sophisticatedstorage:shulker_box')
 
     //Sophisticated Limited Drawers
