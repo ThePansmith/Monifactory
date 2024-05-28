@@ -81,7 +81,7 @@
 	heat_capacity = 1000000.0
 	#Affects how relation of reactor cooling and heating affects to FE generation.
 	#Range: 0.01 ~ 20.0
-	heat_multiplier = 1.0
+	heat_multiplier = 3.0
 	#Limit for heat_multiplier max value.
 	#Range: 0.01 ~ 3.0
 	heat_multiplier_cap = 3.0
@@ -93,5 +93,5 @@
 	moderator_heat_multiplier = 33.34
 	#Rate at which steam recipes produced.
 	#Range: 0.01 ~ 1000000.0
-	boiling_mult = 5.0
+	boiling_mult = 15.0
 

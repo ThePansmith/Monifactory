@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('shiny')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
-        .cableProperties(2147483647, 4, 0, true)
+        .cableProperties(524288, 4, 0, true)
 
     event.create('infinity')
         .ingot()
@@ -51,14 +51,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('monium')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING)
-        .cableProperties(2147483647, 1000, 0, true)
+        .cableProperties(2147483647, 134217727, 0, true)
 
     event.create('netherite')
         .ingot()
         .element(GTElements.get("netherite"))
         .color(0x4C484C)
         .iconSet('dull')
-        .cableProperties(2147483647, 64, 0, true)
+        .cableProperties(8388608, 16, 0, true)
         .fluidPipeProperties(120000, 96000, true, true, true, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 

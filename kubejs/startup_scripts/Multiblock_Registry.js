@@ -152,6 +152,15 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE)
 
+        //Rock Cycle Simulator
+    event.create('rock_cycle_simulator')
+    .category('multiblock')
+    .setEUIO('in')
+    .setMaxIOSize(1, 1, 0, 0)
+    .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    .setSound(GTSoundEntries.CENTRIFUGE)
+
 })
 
 // Basic Microverse Projector
@@ -587,7 +596,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("CCCCCCC", "#CCCCC#", "#GGGGG#", "#GGGGG#", "#CCCCC#", "CCCCCCC")
             .aisle("CCCCCCC", "ACPPPCA", "AGKKKGA", "AGKKKGA", "ACPPPCA", "CCCCCCC")
             .aisle("CCCCCCC", "ACPPPCA", "AGKPKGA", "AGKPKGA", "ACPPPCA", "CCCCCCC")
-            .aisle("CCSCCCC", "ACPPPCA", "AGKKKGA", "AGKKKGA", "ACPPPCA", "CCSCCCC")
+            .aisle("CCCCCCC", "ACPPPCA", "AGKKKGA", "AGKKKGA", "ACPPPCA", "CCCCCCC")
             .aisle("CCCCCCC", "#CCCCC#", "#GGGGG#", "#GGGGG#", "#CCCCC#", "CCCCCCC")
             .aisle("ACCSCCA", "A#AAA#A", "A#AAA#A", "A#AAA#A", "A#AAA#A", "ACCCCCA")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
@@ -629,5 +638,29 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .build())
     .workableCasingRenderer("kubejs:block/soularium/casing",
         "gtceu:block/multiblock/implosion_compressor", false)
+
+       // Rock Cycle Simulator
+
+       event.create('rock_cycle_simulator', 'multiblock')
+       .rotationState(RotationState.NON_Y_AXIS)
+       .recipeTypes('rock_cycle_simulator')
+       .appearanceBlock(() => Block.getBlock('gtceu:high_temperature_smelting_casing'))
+       .pattern(definition => FactoryBlockPattern.start()
+           .aisle("CCCCCCC", "CCCCCCC", "CCCCCCC", "CCCCCCC")
+           .aisle("CCCCCCC", "TMMOIIT", "TMCCCIT", "CCCCCCC")
+           .aisle("CCCSCCC", "CTTTTTC", "CTCHCTC", "CCCCCCC")
+           .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+           .where('I', Predicates.blocks("minecraft:blue_ice"))
+           .where('M', Predicates.blocks("minecraft:magma_block"))
+           .where('O', Predicates.blocks("gtceu:titanium_pipe_casing"))
+           .where('T', Predicates.blocks("gtceu:tempered_glass"))
+           .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
+           .where('C', Predicates.blocks("gtceu:high_temperature_smelting_casing").setMinGlobalLimited(20)
+               .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+           .where('#', Predicates.any())
+           .build())
+       .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
+           "gtceu:block/multiblock/implosion_compressor", false)
+
 })
 

@@ -63,6 +63,7 @@ ServerEvents.recipes(event => {
     .itemInputs('2x solarflux:sp_7', '3x solarflux:photovoltaic_cell_6', '2x gtceu:osmiridium_plate', 'enderio:enderium_conduit')
     .inputFluids('gtceu:enderium 1296')
     .itemOutputs('4x solarflux:sp_8')
+    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('solarflux:sp_7').EUt(480).duration(1200))
     .duration(4800)
     .EUt(30720)
 
