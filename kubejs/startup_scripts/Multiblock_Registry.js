@@ -351,7 +351,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('A', Predicates.air())
             .where('#', Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/sculk_compound/casing",
+        .workableCasingRenderer("kubejs:block/sculk_compound/sculk_compound_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
     // Subatomic Digital Assembler
