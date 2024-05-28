@@ -72,6 +72,19 @@ ServerEvents.recipes(event => {
                 .inputFluids('gtceu:crystal_matrix 11520', 'gtceu:soldering_alloy 5760')
                 .duration(1000)
                 .EUt(eut)
+
+                event.recipes.gtceu.assembler(`gtceu:${tier}_energy_input_hatch_4a`)
+                .itemInputs(`gtceu:${tier}_energy_input_hatch`, `2x gtceu:${mat1}_plate`, `2x gtceu:${mat2}_quadruple_wire`)
+                .itemOutputs(`gtceu:${tier}_energy_input_hatch_4a`)
+                .duration(100)
+                .EUt(eut)
+
+                event.recipes.gtceu.assembler(`gtceu:${tier}_energy_input_hatch_16a`)
+                .itemInputs(`2x gtceu:${tier}_energy_input_hatch_4a`, `4x gtceu:${mat1}_plate`, `2x gtceu:${mat2}_octal_wire`, `2x gtceu:uhpic_chip`)
+                .itemOutputs(`gtceu:${tier}_energy_input_hatch_16a`)
+                .duration(100)
+                .EUt(eut)
+
         })
     }
 

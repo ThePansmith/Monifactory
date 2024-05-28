@@ -66,9 +66,9 @@ ServerEvents.recipes(event => {
         .EUt(128000)
 
         event.recipes.gtceu.large_chemical_reactor("multidimensional_cpu_wafer")
-        .itemInputs('kubejs:unactivated_multidimensional_cpu_wafer', '16x kubejs:quantum_flux', 'kubejs:quasi_stable_neutron_star')
-        .inputFluids(Fluid.of('gtceu:xenon', 250))
-        .itemOutputs('kubejs:multidimensional_cpu_wafer')
+        .itemInputs('4x kubejs:unactivated_multidimensional_cpu_wafer', '64x kubejs:quantum_flux', 'kubejs:quasi_stable_neutron_star')
+        .inputFluids(Fluid.of('gtceu:xenon', 1000))
+        .itemOutputs('4x kubejs:multidimensional_cpu_wafer')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(900)
         .EUt(250000)

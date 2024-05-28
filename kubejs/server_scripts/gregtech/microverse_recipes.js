@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
         .EUt(194387)
 
         event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_forth')
-        .itemInputs('kubejs:microminer_t9', 'kubejs:universe_creation_data', '64x kubejs:corrupted_universe_data', '64x kubejs:shattered_star_data', '64x kubejs:shattered_star_data')
+        .itemInputs('kubejs:microminer_t9', 'kubejs:universe_creation_data', '64x kubejs:shattered_star_data', '64x kubejs:shattered_star_data', '64x kubejs:shattered_star_data', '64x kubejs:shattered_star_data')
         .itemOutputs('kubejs:shattered_universe_data')
         .duration(1000)
         .EUt(194387)

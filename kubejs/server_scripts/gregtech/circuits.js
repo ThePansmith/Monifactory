@@ -203,5 +203,5 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:soldering_alloy 1152')
             .itemOutputs('kubejs:monic_processor_mainframe')
             .duration(1200)
-            .EUt(2147483647)
+            .EUt(134217728)
     })

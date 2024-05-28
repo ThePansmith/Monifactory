@@ -414,8 +414,10 @@ ServerEvents.recipes(event => {
             '64x gtceu:fine_tritanium_wire')
         .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:naquadria 576')
         .itemOutputs('kubejs:universal_navigator')
+        .stationResearch(b => b.researchStack('kubejs:stellar_creation_data').CWUt(96,384000).EUt(491520))
         .duration(6000)
         .EUt(491520)
+
   
     event.recipes.gtceu.assembly_line('extradimensional_navigator')
         .itemInputs('gtceu:infinity_frame',
@@ -430,13 +432,9 @@ ServerEvents.recipes(event => {
             '32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('kubejs:extradimensional_navigator')
+        .stationResearch(b => b.researchStack('kubejs:universal_navigator').CWUt(160, 640000).EUt(3932160))
         .duration(6000)
         .EUt(3932160)
-        .stationResearch(b => b
-            .researchStack('kubejs:stellar_creation_data')
-            .CWUt(96, 384000)
-            .EUt(491520)
-        )
 
     // Electrum Engine Frame
     event.shaped(
