@@ -12,14 +12,14 @@ touch .mode
 set -e
 printf "${POWDER_BLUE}Monifactory | Pack Mode Switcher${NORMAL}"
 
-NORMAL_CFG=config-overrides/normal
-HARDMODE_CFG=config-overrides/hardmode
-TARGET=./config
+NORMAL_CFG='./config-overrides/normal'
+HARDMODE_CFG='./config-overrides/hardmode'
+TARGET='./config'
 CURRENT_MODE="$(head .mode)"
 CURRENT_MODE=${CURRENT_MODE:="normal"}
 
 # Check if config-overrides dir exists
-if [[ ! -d "${NORMAL_CFG}" ]] || [[ ! -d "${EXPERT_CFG}" ]]; then
+if [[ ! -d "${NORMAL_CFG}" ]] || [[ ! -d "${HARDMODE_CFG}" ]]; then
   printf "\n\n${RED}Could not find \`config-overrides\` directory! \nMake sure you are in the \`/minecraft\` directory of your instance! (The one containing \`/config\`)${NORMAL}\n"
   printf "${YELLOW}Otherwise, if you are in the \`/minecraft\` directory, please try reinstalling the pack.${NORMAL}\n"
   exit 1
