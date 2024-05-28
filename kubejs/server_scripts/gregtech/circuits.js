@@ -1,6 +1,12 @@
 ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:circuit_assembler/workstation_ev' })
     event.remove({ id: 'gtceu:circuit_assembler/workstation_ev_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_computer_iv_asmd' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_computer_iv_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_computer_iv_asmd_soldering_alloy' })
+    event.remove({ id: 'gtceu:circuit_assembler/nano_computer_iv' })
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_computer_zpm' })
+    event.remove({ id: 'gtceu:circuit_assembler/crystal_computer_zpm_soldering_alloy' })
 
     //Using event.replaceInput on gregtech recipes causes the ingredient order to be mixed up.
     //We redeclare the recipe instead to preserve ingredient order
@@ -32,6 +38,95 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(400)
         .EUt(120)
+
+    //Nano Supercomputer Recipe Modification
+    event.recipes.gtceu.circuit_assembler('kubejs:circuit_assembler/nano_computer_iv_soldering_alloy')
+        .itemInputs(
+            'gtceu:epoxy_printed_circuit_board',
+            '2x gtceu:nano_processor_assembly',
+            '4x gtceu:nor_memory_chip',
+            '8x #forge:fine_wires/lumium',
+            '16x #forge:fine_wires/tungsten_steel',
+            '8x gtceu:smd_diode'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('gtceu:nano_processor_computer')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(200)
+        .EUt(600)
+    event.recipes.gtceu.circuit_assembler('kubejs:circuit_assembler/nano_computer_iv')
+        .itemInputs(
+            'gtceu:epoxy_printed_circuit_board',
+            '2x gtceu:nano_processor_assembly',
+            '4x gtceu:nor_memory_chip',
+            '8x #forge:fine_wires/lumium',
+            '16x #forge:fine_wires/tungsten_steel',
+            '8x gtceu:smd_diode'
+        )
+        .inputFluids(Fluid.of('gtceu:tin', 288))
+        .itemOutputs('gtceu:nano_processor_computer')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(200)
+        .EUt(600)
+        event.recipes.gtceu.circuit_assembler('kubejs:circuit_assembler/nano_computer_iv_asmd_soldering_alloy')
+        .itemInputs(
+            'gtceu:epoxy_printed_circuit_board',
+            '2x gtceu:nano_processor_assembly',
+            '4x gtceu:nor_memory_chip',
+            '8x #forge:fine_wires/lumium',
+            '16x #forge:fine_wires/tungsten_steel',
+            '2x gtceu:advanced_smd_diode'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('gtceu:nano_processor_computer')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(200)
+        .EUt(600)
+    event.recipes.gtceu.circuit_assembler('kubejs:circuit_assembler/nano_computer_iv_asmd')
+        .itemInputs(
+            'gtceu:epoxy_printed_circuit_board',
+            '2x gtceu:nano_processor_assembly',
+            '4x gtceu:nor_memory_chip',
+            '8x #forge:fine_wires/lumium',
+            '16x #forge:fine_wires/tungsten_steel',
+            '2x gtceu:advanced_smd_diode'
+        )
+        .inputFluids(Fluid.of('gtceu:tin', 288))
+        .itemOutputs('gtceu:nano_processor_computer')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(200)
+        .EUt(600)
+
+        //Crystal Supercomputer Modification
+        event.recipes.gtceu.circuit_assembler('kubejs:circuit_assembler/crystal_computer_zpm_soldering_alloy')
+        .itemInputs(
+            'gtceu:multilayer_fiber_reinforced_printed_circuit_board',
+            '2x gtceu:crystal_processor_assembly',
+            '4x gtceu:ram_chip',
+            '32x gtceu:nor_memory_chip',
+            '64x gtceu:nand_memory_chip',
+            '32x #forge:fine_wires/enderium'
+        )
+        .inputFluids(Fluid.of('gtceu:soldering_alloy', 144))
+        .itemOutputs('gtceu:crystal_processor_computer')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(400)
+        .EUt(9600)
+    event.recipes.gtceu.circuit_assembler('kubejs:circuit_assembler/crystal_computer_zpm')
+        .itemInputs(
+            'gtceu:multilayer_fiber_reinforced_printed_circuit_board',
+            '2x gtceu:crystal_processor_assembly',
+            '4x gtceu:ram_chip',
+            '32x gtceu:nor_memory_chip',
+            '64x gtceu:nand_memory_chip',
+            '32x #forge:fine_wires/enderium'
+        )
+        .inputFluids(Fluid.of('gtceu:tin', 288))
+        .itemOutputs('gtceu:crystal_processor_computer')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(400)
+        .EUt(9600)
+
 
         // WIP: Matter Circuits
         event.recipes.gtceu.circuit_assembler('matter_circuit_board')
