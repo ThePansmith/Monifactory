@@ -321,7 +321,7 @@ tools:
 gameplay:
   # Enable hazardous materials
   # Default: true
-  hazardsEnabled: true
+  hazardsEnabled: false
 
 # Config options for Mod Compatibility
 compat:
