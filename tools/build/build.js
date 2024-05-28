@@ -92,7 +92,9 @@ async function packMod(group) {
         'overrides',
         'manifest.json',
         'modlist.html',
-        'LICENSE.md'
+        'LICENSE.md',
+        'pack-mode-switcher.bat',
+        'pack-mode-switcher.sh'
       ])
       return;
     }
