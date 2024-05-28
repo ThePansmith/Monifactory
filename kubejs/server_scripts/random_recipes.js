@@ -50,6 +50,13 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(32)
 
+    // Lava from Magma
+    event.recipes.gtceu.chemical_reactor('lava_from_magma')
+        .itemInputs('minecraft:magma_block')
+        .outputFluids(Fluid.of('minecraft:lava', 1000))
+        .EUt(32)
+        .duration(120)
+
     // Infinity Dust Blocks
     comapcting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
     comapcting(event, 'kubejs:compressed_infinity_dust_block', 'kubejs:infinity_dust_block');
