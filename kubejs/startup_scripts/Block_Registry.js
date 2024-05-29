@@ -126,7 +126,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/sculk_compound_casing')})
 
     event.create('resonant_sculk_compound_casing', 'gtceu:renderer')
         .displayName("Resonant Sculk Compound Casing")
