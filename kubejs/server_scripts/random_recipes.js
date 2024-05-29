@@ -527,14 +527,6 @@ ServerEvents.recipes(event => {
     }
     ).id('waterframes:remote')
 
-    // Angel Ring
-        event.remove({ id: 'better_angel_ring:angel_ring' })
-        event.recipes.gtceu.assembler('angel_ring')
-            .itemInputs('32x gtceu:electrum_foil', 'gtceu:rose_gold_ring', Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT())
-            .itemOutputs('better_angel_ring:angel_ring')
-            .duration(400)
-            .EUt(128)
-
     // Stonecut p2p tunnels, attunement sucks
     const p2p = ["redstone", "item", "fluid", "fe", "light"]
     p2p.forEach(type => {
