@@ -6,7 +6,7 @@
 	group: ""
 	icon: "ae2:controller"
 	id: "118959024F296F70"
-	order_index: 4
+	order_index: 3
 	quest_links: [
 		{
 			id: "20253D681F399A92"
@@ -44,7 +44,7 @@
 			description: [
 				"Normally, this block acts as a source of &echannels&r, but that mechanic is disabled by default in &5Monifactory&r."
 				""
-				"You don't have to make this to operate a network when channels are disabled, but if you do, &eyour network will consume less power&r than if it did not have a Controller. Plus, they look kind of cool."
+				"Or at least that could have been the case. &eSince you're playing on harder mode, devices connected to your network will consume channels&r. Be prepared to make use of many &aME Controllers&r as well as &aME P2P Tunnels&r to keep up with your network's demand for channels."
 				""
 				"&mMake sure you craft the AE2 one though, and not the one from &bChisel&r!&r"
 				""

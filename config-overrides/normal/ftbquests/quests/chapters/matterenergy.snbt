@@ -42,7 +42,7 @@
 		{
 			dependencies: ["4174A6C6403DD245"]
 			description: [
-				"Normally, this block acts as a source of &echannels&r, but those mechanics are disabled by default in &5monifactory&r."
+				"Normally, this block acts as a source of &echannels&r, but that mechanic is disabled by default in &5Monifactory&r."
 				""
 				"You don't have to make this to operate a network when channels are disabled, but if you do, &eyour network will consume less power&r than if it did not have a Controller. Plus, they look kind of cool."
 				""
