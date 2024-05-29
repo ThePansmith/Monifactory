@@ -14,6 +14,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'systeams:stirling_boiler' })
     event.shapeless('systeams:stirling_boiler', ['steamdynamo:steam_dynamo', 'systeams:boiler_pipe'])
 
+    event.shapeless('betterp2p:advanced_memory_card', ['betterp2p:advanced_memory_card', 'ae2:network_tool'])
+
     event.remove({ id: /storagedrawer/ })
 
 })
