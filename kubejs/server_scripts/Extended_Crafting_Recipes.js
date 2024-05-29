@@ -204,4 +204,18 @@ ServerEvents.recipes(event => {
 		}
 	).id('kubejs:extended/exotic_materials_catalyst')
 
+	// Angel Ring
+	event.recipes.extendedcrafting.shaped_table(
+		'better_angel_ring:angel_ring', [
+            " AAA ",
+            "A B A",
+            "AC CA",
+            "A B A",
+            " AAA "
+		], {
+			A: 'gtceu:rose_gold_ingot',
+			B: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
+			C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT(),
+		} //, 2 // remove this comment to force t2 crafting only.
+	).id('kubejs:extended/angel_ring')
 })
