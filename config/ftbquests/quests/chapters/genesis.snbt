@@ -1748,7 +1748,7 @@
 			description: [
 				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
 				""
-				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"dark_purple\"},{\"text\":\"Monifactory repository\",\"color\":\"dark_purple\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/moni-CEu/moni-CEu-Modern\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"dark_purple\"}]"
+				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"blue\"},{\"text\":\"Monifactory repository\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"blue\"}]"
 				""
 				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid World&r."
 				"{@pagebreak}"
@@ -1770,7 +1770,7 @@
 				title: "Acknowleged"
 				type: "checkmark"
 			}]
-			title: "&5This pack is in alpha!"
+			title: "&9This pack is in alpha!"
 			x: -1.0d
 			y: -4.0d
 		}
