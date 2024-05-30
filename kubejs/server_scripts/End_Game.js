@@ -313,7 +313,7 @@ ServerEvents.recipes(event => {
             X: 'kubejs:infinity_wrench',
             Y: 'kubejs:infinity_hammer',
             Z: 'kubejs:infinity_wire_cutter'            
-        }.id('kubejs:creative_chest')
+        }
     )
 
     // Creative Catalyst augment

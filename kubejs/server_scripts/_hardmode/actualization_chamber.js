@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t5')
             .circuit(2)
             .itemOutputs(
-                '64x gtceu:pollucite_ore', // why is this replaced with sheldonite? shouldn't be end either
+                '64x gtceu:pollucite_ore', // why is this replaced with cooperite? shouldn't be end either
                 '64x gtceu:pollucite_ore',
                 '64x gtceu:snowchestite_ore', // why is THIS replaced with naq? 
                 '64x gtceu:snowchestite_ore',
@@ -302,10 +302,10 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '64x gtceu:endstone_uraninite_ore',
                 '64x gtceu:endstone_uraninite_ore',
-                '64x gtceu:endstone_sheldonite_ore',
-                '64x gtceu:endstone_sheldonite_ore',
-                '64x gtceu:endstone_sheldonite_ore',
-                '64x gtceu:endstone_sheldonite_ore',
+                '64x gtceu:endstone_cooperite_ore',
+                '64x gtceu:endstone_cooperite_ore',
+                '64x gtceu:endstone_cooperite_ore',
+                '64x gtceu:endstone_cooperite_ore',
                 '24x gtceu:iridosmineyes_ore'
             )
             .duration(39*20)
@@ -315,7 +315,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t6')
             .circuit(2)
             .itemOutputs(
-                '32 kubejs:stabilized_einsteinium'
+                '32x kubejs:stabilized_einsteinium'
             )
             .duration(39*20)
             .EUt(30720)
@@ -324,7 +324,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t6')
             .circuit(3)
             .itemOutputs(
-                '32 minecraft:dragon_egg'
+                '32x minecraft:dragon_egg'
             )
             .duration(39*20)
             .EUt(30720)
@@ -368,7 +368,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '4x kubejs:abyss_shard',
                 '64x minecraft:sculk_catalyst',
-                '32 kubejs:warden_horn'
+                '32x kubejs:warden_horn'
             )
             .duration(39*20)
             .EUt(30720)
@@ -399,18 +399,5 @@ ServerEvents.recipes(event => {
             )
             .duration(39*20)
             .EUt(30720)
-
-        // On ice until we know if there will be pristines past tier 8
-        // event.recipes.gtceu.actualization_chamber('pristine_t9_one')
-        //     .itemInputs('kubejs:pristine_matter_t9')
-        //     .circuit(3)
-        //     .itemOutputs(
-        //         '32x gtceu:quantum_star', 
-        //         '64x gtceu:quantum_eye', 
-        //         '16x gtceu:neutronium_ingot', 
-        //         'gtceu:gravi_star'
-        //     )
-        //     .duration(39*20)
-        //     .EUt(30720)
     }
 })
