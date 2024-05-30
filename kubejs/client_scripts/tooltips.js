@@ -115,6 +115,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:infinity_catalyst', Text.darkGray('One is all, and all is one.'))
     tooltip.add('gtceu:infinity_ingot', Text.darkGray('The fury of the universe in the palm of your hand.'))
     tooltip.add('gtceu:monium_ingot', Text.darkGray('The serenity of the universe in the palm of your hand.'))
+    tooltip.add('extendedcrafting:the_ultimate_catalyst', Text.darkGray("I'm the real ultimate catalyst..."))
+    tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
 
     tooltip.addAdvanced(['/^kubejs:.+infinity_dust_block$/', 'kubejs:infinity_dust_block'], (item, adv, text) => {
