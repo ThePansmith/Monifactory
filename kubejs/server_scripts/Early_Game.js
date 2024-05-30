@@ -1,4 +1,21 @@
 ServerEvents.recipes(event => {
+    // Aluminum EBF recipe rebuild
+    event.recipes.gtceu.electric_blast_furnace("aluminum_ingot")
+        .itemInputs('gtceu:aluminum_dust')
+        .itemOutputs('gtceu:aluminum_ingot')
+        .duration(800)
+        .EUt(120)
+        .blastFurnaceTemp(1700)
+
+event.recipes.gtceu.electric_blast_furnace("aluminum_ingot")
+        .itemInputs('gtceu:aluminum_dust')
+        .fluidInput('gtceu:nitrogen_gas 1000')
+        .itemOutputs('gtceu:aluminum_ingot')
+        .duration(800)
+        .EUt(120)
+        .blastFurnaceTemp(1700)
+
+
     // Ender Pearls
     event.recipes.gtceu.alloy_smelter("pulsating_ender_pearl")
         .itemInputs('#forge:gems/diamond', "#forge:dusts/pulsating")
