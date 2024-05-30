@@ -2082,15 +2082,19 @@
 					tag: {
 						SkullOwner: {
 							Id: [I;
-								342431837
-								145309554
-								-1579649036
-								1919480490
+								1207556655
+								-2087172645
+								-1127815359
+								-166568499
 							]
-							Name: "thepansmith"
+							Properties: {
+								textures: [{
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxYzU4MDEzOGM2MjU0M2I0ZWVmNWU2NjI4MjNhZmNkZDNlNzdjYTQxYTU0ODY3ZWExMmUwZDM5YmNkNTliMSJ9fX0="
+								}]
+							}
 						}
 						display: {
-							Name: "[\"\",{\"text\":\"I bought ores with Nomicoins\",\"italic\":false}]"
+							Name: "{\"text\":\"I bought ores with Monicoins\",\"color\":\"blue\",\"underlined\":false,\"bold\":true,\"italic\":false}"
 						}
 					}
 				}
