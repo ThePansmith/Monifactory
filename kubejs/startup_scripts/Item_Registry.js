@@ -24,6 +24,7 @@ StartupEvents.registry('item', event => {
     event.create('reinforced_mining_laser').displayName("§bReinforced Mining Laser")
     event.create('warp_engine').displayName("§dWarp Engine")
     event.create('universal_navigator').displayName("§dUniversal Navigator")
+    event.create('extradimensional_navigator').displayName("§dExtradimensional Navigator")
     event.create('quantum_fluxed_eternium_heavy_plating').displayName("§dQuantum Fluxed Eternium Heavy Plating")
     event.create('quantum_flux').displayName("§dQuantum Flux")
     event.create('gem_sensor').displayName("Gemstone Sensor")
@@ -61,6 +62,7 @@ StartupEvents.registry('item', event => {
     event.create('deep_dark_data').displayName("§dDeep Dark Data")
     event.create('wither_realm_data').displayName("§dWither Realm Data")
     event.create('dragon_lair_data').displayName("§dDragon Lair Data")
+    event.create('shattered_universe_data').displayName("§dShattered Universe Data")
 
     //Solidified Items
     event.create('solidified_argon').displayName("Solidified Argon")
@@ -200,6 +202,8 @@ StartupEvents.registry('item', event => {
     event.create('abyss_shard')
     event.create('warden_heart')
     event.create('infused_obsidian')
+    event.create('dislocation_inhibitor')
+    event.create('advanced_magnet')
 
     //Infinity Tools
     event.create('infinity_file').rarity("epic")
@@ -213,20 +217,10 @@ StartupEvents.registry('item', event => {
     // Ultimate Tools
     event.create('ultimate_core').texture('kubejs:item/ultimate/core')
     event.create('ultimate_file').texture('kubejs:item/ultimate/file').rarity("epic")
-    event.create('ultimate_file_head').texture('kubejs:item/ultimate/file_head')
-    event.create('ultimate_file_handle').texture('kubejs:item/ultimate/file_handle')
     event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer').rarity("epic")
-    event.create('ultimate_hammer_head').texture('kubejs:item/ultimate/hammer_head')
-    event.create('ultimate_hammer_handle').texture('kubejs:item/ultimate/hammer_handle')
     event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver').rarity("epic")
-    event.create('ultimate_screwdriver_head').texture('kubejs:item/ultimate/screwdriver_head')
-    event.create('ultimate_screwdriver_handle').texture('kubejs:item/ultimate/screwdriver_handle')
     event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench').rarity("epic")
-    event.create('ultimate_wrench_head').texture('kubejs:item/ultimate/wrench_head')
-    event.create('ultimate_wrench_handle').texture('kubejs:item/ultimate/wrench_handle')
     event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter').rarity("epic")
-    event.create('ultimate_wire_cutter_head').texture('kubejs:item/ultimate/wire_cutter_head')
-    event.create('ultimate_wire_cutter_handle').texture('kubejs:item/ultimate/wire_cutter_handle')
 
     // Netherite processing midproducts
     event.create('crushed_ancient_debris').texture('kubejs:item/netherite/crushed_ancient_debris')
@@ -236,6 +230,7 @@ StartupEvents.registry('item', event => {
     event.create('purified_netherite_dust').texture('kubejs:item/netherite/purified_netherite_dust')
     event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
+    event.create('dormant_infinity_compound_ingot')
 
     // Post Tank Wafer Stuff
     event.create('universe_boule').texture('kubejs:item/universalwafer/universal_boule').displayName('Universe-doped Monocrystalline Silicon Boule')
@@ -243,7 +238,9 @@ StartupEvents.registry('item', event => {
     event.create('unactivated_multidimensional_cpu_wafer').texture('kubejs:item/multidimensionalcpu/unactivated_multidimensional_cpu_wafer').displayName('Unactivated Multidimensional CPU Wafer')
     event.create('multidimensional_cpu_wafer').texture('kubejs:item/multidimensionalcpu/multidimensional_cpu_wafer').displayName('Multidimensional CPU Wafer')
     event.create('multidimensional_cpu_chip').texture('kubejs:item/multidimensionalcpu/multidimensional_cpu_chip').displayName('Multidimensional CPU Chip')
-
+    event.create('hyperdynamic_ram_wafer').texture('kubejs:item/hyperdynamicram/hyperdynamic_ram_wafer').displayName('Hyperdynamic RAM Wafer')
+    event.create('hyperdynamic_ram_chip_base').texture('kubejs:item/hyperdynamicram/hyperdynamic_ram_chip').displayName('Hyperdynamic RAM Chip Base')
+    event.create('hyperdynamic_ram_chip').texture('kubejs:item/hyperdynamicram/activated_hyperdynamic_ram_chip').displayName('Hyperdynamic RAM Chip')
 
     // Post tank circuits and whatnot
     const circs = [
@@ -327,4 +324,36 @@ StartupEvents.registry('item', event => {
     // Singularities
     event.create('singularity_containment_unit')
     event.create('contained_singularity')
+})
+ItemEvents.modification(event => {
+    // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
+    event.modify('kubejs:infinity_file', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_file').item
+    })
+    event.modify('kubejs:infinity_hammer', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_hammer').item
+    })
+    event.modify('kubejs:infinity_screwdriver', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_screwdriver').item
+    })
+    event.modify('kubejs:infinity_wrench', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wrench').item
+    })
+    event.modify('kubejs:infinity_wire_cutter', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wire_cutter').item
+    })
+})
+
+ItemEvents.armorTierRegistry(event => {
+    //blank for anything else that gets added
+})
+
+ItemEvents.toolTierRegistry(event => {
+
+    event.add("dev", (tier) => {
+        tier.enchantmentValue = 42
+        tier.level = 42
+        tier.uses = 42690
+        tier.speed = 12
+    })
 })

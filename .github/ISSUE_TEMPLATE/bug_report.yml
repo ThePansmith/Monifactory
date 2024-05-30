@@ -8,6 +8,7 @@ body:
       value: |
         Before creating an issue, make sure to search the issue reports if you have the said issue before making a new one.
         Please also make sure you are using the latest and/or check if the issue exists on the latest release.
+        Also, ensure that the issue is with the pack itself and not the given mod.
   - type: textarea
     id: summary
     attributes:

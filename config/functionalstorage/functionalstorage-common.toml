@@ -6,6 +6,7 @@
 	#Linking range radius
 	DRAWER_CONTROLLER_LINKING_RANGE = 8
 	#Every how many ticks the drawer upgrades will work
+	#Range: > 1
 	UPGRADE_TICK = 4
 	#How many items the pulling upgrade will try to pull
 	UPGRADE_PULL_ITEMS = 4
@@ -17,4 +18,18 @@
 	UPGRADE_PUSH_FLUID = 500
 	#How many items the collector upgrade will try to pull
 	UPGRADE_COLLECTOR_ITEMS = 4
+	#How much the storage of an item drawer with a Copper Upgrade should be multiplied by
+	COPPER_MULTIPLIER = 8
+	#How much the storage of an item drawer with a Gold Upgrade should be multiplied by
+	GOLD_MULTIPLIER = 16
+	#How much the storage of an item drawer with a Diamond Upgrade should be multiplied by
+	DIAMOND_MULTIPLIER = 24
+	#How much the storage of an item drawer with a Netherite Upgrade should be multiplied by
+	NETHERITE_MULTIPLIER = 32
+	#How much should the fluid storage be divided by for any given Storage Upgrade
+	#Range: > 1
+	FLUID_DIVISOR = 2
+	#How much should the range be divided by for any given Storage Upgrade
+	#Range: > 1
+	RANGE_DIVISOR = 4
 

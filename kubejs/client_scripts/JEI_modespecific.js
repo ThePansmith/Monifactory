@@ -9,9 +9,12 @@ JEIEvents.hideItems(event => {
     })
 }
 
-        if (isExpertMode) {
+        if (isHardMode) {
 event.hide(/hostilenetworks/)
 event.hide("watercollector:watercollector")
 }
 
+if (isHarderMode) {
+    event.hide(/gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter/)
+    }
 })

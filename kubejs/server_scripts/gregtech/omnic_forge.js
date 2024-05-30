@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.omnic_forge('kubejs:omnic_matrix_coil')
         .itemInputs('8x gtceu:omnium_double_wire', '8x gtceu:crystal_matrix_foil')
-        .itemOutputs('2x kubejs:omnic_matrix_coil_block')
+        .itemOutputs('kubejs:omnic_matrix_coil_block')
         .duration(1000)
         .EUt(65520)
         

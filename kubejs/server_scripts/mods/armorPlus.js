@@ -106,4 +106,10 @@ ServerEvents.recipes(event => {
         .itemOutputs('armorplus:the_ultimate_material')
         .duration(600)
         .EUt(491520)
+
+        .stationResearch(b => b
+            .researchStack('kubejs:warden_heart')
+            .CWUt(96, 384000)
+            .EUt(491520)
+        )
 });

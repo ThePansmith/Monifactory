@@ -1,6 +1,7 @@
 /*
 
 !/config
+!/config-overrides
 !/kubejs
 !/defaultconfigs
 !/.gitignore
@@ -10,7 +11,7 @@
 /tools/bootstrap/.cache
 !/.github
 !.editorconfig
-!mode.json
+!/pack-mode-switcher*
 
 !/mods/systeams*
 !/mods/ExtendedCrafting*
@@ -95,3 +96,5 @@ $RECYCLE.BIN/
 .AppleDouble
 .LSOverride
 kubejs/assets/gtceu/textures/item/material_sets/infinity/infinity_plate.xcf
+config/packmode.json
+config/gtceu.yaml

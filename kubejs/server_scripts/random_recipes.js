@@ -50,6 +50,13 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(32)
 
+    // Lava from Magma
+    event.recipes.gtceu.chemical_reactor('lava_from_magma')
+        .itemInputs('minecraft:magma_block')
+        .outputFluids(Fluid.of('minecraft:lava', 1000))
+        .EUt(32)
+        .duration(120)
+
     // Infinity Dust Blocks
     comapcting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
     comapcting(event, 'kubejs:compressed_infinity_dust_block', 'kubejs:infinity_dust_block');
@@ -124,7 +131,6 @@ ServerEvents.recipes(event => {
     const sculk_compoundFuels = [
         [2000, "gtceu:cetane_boosted_diesel"],
         [2000, "gtceu:gasoline"],
-        [500, "gtceu:high_octane_gasoline"]
     ]
 
     for (const [mB, id] of sculk_compoundFuels) {
@@ -132,18 +138,46 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:sculk_compound_dust")
             .inputFluids(`${id} ${mB}`)
             .itemOutputs("gtceu:hot_sculk_compound_ingot")
-            .duration(10000)
+            .duration(1800)
             .blastFurnaceTemp(6800)
-            .EUt(120)
+            .EUt(30720)
 
         event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_" + id.replace(/\W/g, ''))
             .itemInputs("4x kubejs:warden_horn")
             .inputFluids(`${id} ${mB * 4}`)
             .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
-            .duration(20000)
+            .duration(3600)
             .blastFurnaceTemp(6800)
-            .EUt(120)
+            .EUt(30720)
+
     }
+    
+    //HOG Sculk Compound Recipes
+    event.recipes.gtceu.electric_blast_furnace("sculk_compound_hog")
+        .itemInputs("gtceu:sculk_compound_dust")
+        .inputFluids("gtceu:high_octane_gasoline 500")
+        .itemOutputs("gtceu:hot_sculk_compound_ingot")
+        .duration(1200)
+        .blastFurnaceTemp(6800)
+        .EUt(30720)
+
+    event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_hog")
+        .itemInputs("4x kubejs:warden_horn")
+        .inputFluids("gtceu:high_octane_gasoline 2000")
+        .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
+        .duration(2400)
+        .blastFurnaceTemp(6800)
+        .EUt(30720)
+
+
+    //Sculk Compound Vac Freezer recipe
+    event.remove({ id: "gtceu:vacuum_freezer/cool_hot_sculk_compound_ingot" }) 
+    event.recipes.gtceu.vacuum_freezer("sculk_compound_ingot_cooling")
+        .itemInputs('gtceu:hot_sculk_compound_ingot')
+        .itemOutputs('gtceu:sculk_compound_ingot')
+        .inputFluids(Fluid.of('kubejs:molten_cryotheum', 2000))
+        .duration(600)
+        .EUt(1920)
 
     // Diamond -> carbon
     event.recipes.gtceu.electrolyzer("diamond_decomposition")
@@ -499,14 +533,6 @@ ServerEvents.recipes(event => {
             C: 'gtceu:copper_plate',
     }
     ).id('waterframes:remote')
-
-    // Angel Ring
-        event.remove({ id: 'better_angel_ring:angel_ring' })
-        event.recipes.gtceu.assembler('angel_ring')
-            .itemInputs('32x gtceu:electrum_foil', 'gtceu:rose_gold_ring', Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT())
-            .itemOutputs('better_angel_ring:angel_ring')
-            .duration(400)
-            .EUt(128)
 
     // Stonecut p2p tunnels, attunement sucks
     const p2p = ["redstone", "item", "fluid", "fe", "light"]

@@ -1,0 +1,10 @@
+{
+	id: "6E39DF4704E919EF"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "telepastries:overworld_cake" }
+		{ item: "telepastries:custom_cake" }
+	]
+	title: "Cakes"
+}

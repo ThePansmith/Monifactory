@@ -1,0 +1,377 @@
+recipes:
+  # Whether to generate Flawed and Chipped Gems for materials and recipes involving them.
+  # Useful for mods like TerraFirmaCraft.
+  # Default: false
+  generateLowQualityGems: false
+
+  # Whether to remove Block/Ingot compression and decompression in the Crafting Table.
+  # Default: true
+  disableManualCompression: false
+
+  # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
+  # Default: false
+  harderRods: false
+
+  # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
+  # Default: false
+  harderBrickRecipes: false
+
+  # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
+  # Default: false
+  nerfWoodCrafting: false
+
+  # Whether to make Wood related recipes harder.
+  # Excludes sticks and planks.
+  # Default: false
+  hardWoodRecipes: false
+
+  # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
+  # Default: true
+  hardIronRecipes: true
+
+  # Whether to make Redstone related recipes harder.
+  # Default: false
+  hardRedstoneRecipes: false
+
+  # Whether to make Vanilla Tools and Armor recipes harder.
+  # Excludes Flint and Steel, and Buckets.
+  # Default: false
+  hardToolArmorRecipes: false
+
+  # Whether to make miscellaneous recipes harder.
+  # Default: false
+  hardMiscRecipes: false
+
+  # Whether to make Glass related recipes harder. Default: true
+  hardGlassRecipes: false
+
+  # Whether to nerf the Paper crafting recipe.
+  # Default: true
+  nerfPaperCrafting: false
+
+  # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
+  # Default: false
+  hardAdvancedIronRecipes: false
+
+  # Whether to make coloring blocks like Concrete or Glass harder.
+  # Default: false
+  hardDyeRecipes: false
+
+  # Whether to remove charcoal smelting recipes from the vanilla furnace.
+  # Default: true
+  harderCharcoalRecipe: false
+
+  # Whether to make the Flint and Steel recipe require steel parts.
+  # Default: true.
+  flintAndSteelRequireSteel: true
+
+  # Whether to remove Vanilla Block Recipes from the Crafting Table.
+  # Default: false
+  removeVanillaBlockRecipes: false
+
+  # Whether to remove Vanilla TNT Recipe from the Crafting Table.
+  # Default: true
+  removeVanillaTNTRecipe: true
+
+  # How many Multiblock Casings to make per craft. Either 1, 2, or 3.
+  # Default: 2
+  casingsPerCraft: 2
+
+  # Whether to nerf the output amounts of the first circuit in a set to 1 (from 2) and SoC to 2 (from 4).
+  # Default: false
+  harderCircuitRecipes: false
+
+worldgen:
+  # Rubber Tree spawn chance (% per chunk)
+  # Default: 0.5
+  rubberTreeSpawnChance: 0.5
+
+  # Should all Stone Types drop unique Ore Item Blocks?
+  # Default: false (meaning only Stone, Netherrack, and Endstone)
+  allUniqueStoneTypes: false
+
+  # Should Sand-like ores fall?
+  # This includes gravel, sand, and red sand ores.
+  # Default: false (no falling ores)
+  sandOresFall: false
+
+  # Whether to increase number of rolls for dungeon chests. Increases dungeon loot drastically.
+  # Default: true
+  # WARNING: Currently unimplemented.
+  increaseDungeonLoot: true
+
+  # Allow GregTech to add additional GregTech Items as loot in various structures.
+  # Default: true
+  addLoot: true
+
+  oreVeins:
+    # The grid size (in chunks) for ore vein generation
+    # Default: 3
+    oreVeinGridSize: 2
+
+    # The maximum random offset (in blocks) from the grid for generating an ore vein.
+    # Default: 12
+    oreVeinRandomOffset: 6
+
+    # Prevents regular vanilla ores from being generated outside GregTech ore veins
+    # Default: true
+    removeVanillaOreGen: true
+
+    # Prevents vanilla's large ore veins from being generated
+    # Default: true
+    removeVanillaLargeOreVeins: true
+
+    # Distance between bedrock ore veins in chunks, if enabled.
+    # Default: 16
+    bedrockOreDistance: 16
+
+    # Make bedrock ore/fluid veins infinite?
+    # Default: false
+    infiniteBedrockOresFluids: false
+
+    # Sets the maximum number of chunks that may be cached for ore vein generation.
+    # Higher values may improve world generation performance, but at the cost of more RAM usage.
+    # If you substantially increase the ore vein grid size, random vein offset, or have very large (custom) veins, you may need to increase this value as well.
+    # Default: 512 (requires restarting the server / re-opening the world)
+    oreGenerationChunkCacheSize: 512
+
+    # Sets the maximum number of chunks for which ore indicators may be cached.
+    # If you register any custom veins with very large indicator ranges (or modify existing ones that way), you may need to increase this value.
+    # Default: 2048 (requires restarting the server / re-opening the world)
+    oreIndicatorChunkCacheSize: 2048
+
+machines:
+  # Whether insufficient energy supply should reset Machine recipe progress to zero.
+  # If true, progress will reset.
+  # If false, progress will decrease to zero with 2x speed
+  # Default: false
+  recipeProgressLowEnergy: false
+
+  # Whether to require a Wrench, Wirecutter, or other GregTech tools to break machines, casings, wires, and more.
+  # Default: false
+  requireGTToolsForBlocks: false
+
+  # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
+  # Default: false
+  doTerrainExplosion: false
+
+  # Energy use multiplier for electric items.
+  # Default: 100
+  energyUsageMultiplier: 100
+
+  # Energy use multiplier for prospectors.
+  # Default: 100
+  prospectorEnergyUseMultiplier: 0
+
+  # Whether machines or boilers damage the terrain when they explode.
+  # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
+  # Default: true
+  doesExplosionDamagesTerrain: false
+
+  # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
+  # Default: false
+  harmlessActiveTransformers: false
+
+  # Divisor for Recipe Duration per Overclock.
+  # Default: 2.0
+  overclockDivisor: 2.0
+
+  # Whether to play machine sounds while machines are active.
+  # Default: true
+  machineSounds: true
+
+  # Whether Steam Multiblocks should use Steel instead of Bronze.
+  # Default: false
+  steelSteamMultiblocks: false
+
+  # Whether to enable the cleanroom, required for various recipes.
+  # Default: true
+  enableCleanroom: true
+
+  # Whether multiblocks should ignore all cleanroom requirements.
+  # This does nothing if enableCleanroom is false.
+  # Default: false
+  cleanMultiblocks: false
+
+  # Block to replace mined ores with in the miner and multiblock miner.
+  # Default: minecraft:cobblestone
+  replaceMinedBlocksWith: minecraft:cobblestone
+
+  # Whether to enable Assembly Line research for recipes.
+  # Default: true
+  enableResearch: true
+
+  # Whether to enable the Maintenance Hatch, required for Multiblocks.
+  # Default: true
+  enableMaintenance: true
+
+  # Whether to enable World Accelerators, which accelerate ticks for surrounding Tile Entities, Crops, etc.
+  # Default: true
+  enableWorldAccelerators: true
+
+  # List of TileEntities that the World Accelerator should not accelerate.
+  # GregTech TileEntities are always blocked.
+  # Entries must be in a fully qualified format. For example: appeng.tile.networking.TileController
+  # Default: none
+  worldAcceleratorBlacklist:
+
+  # Whether to use GT6-style pipe and cable connections, meaning they will not auto-connect unless placed directly onto another pipe or cable.
+  # Default: true
+  gt6StylePipesCables: true
+
+  # Whether the machine's circuit slot need to be inserted a real circuit.
+  ghostCircuit: true
+
+  # Wether to add a "Bedrock Ore Miner" (also enables bedrock ore generation)
+  # Default: false
+  doBedrockOres: false
+
+  # What Kind of material should the bedrock ore miner output?
+  # Default: "raw"
+  bedrockOreDropTagPrefix: raw
+
+  # WARNING: THIS IS NO LONGER SUPPORTED AND WILL BE REMOVED!
+  # This option only exists to provide backwards compatibility until the Processing Array will be removed in 1.3.0
+  # Default: false
+  doProcessingArray: true
+
+  # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
+  # Default: false
+  enableTieredCasings: false
+
+  # Minimum distance between Long Distance Item Pipe Endpoints
+  # Default: 50
+  ldItemPipeMinDistance: 50
+
+  # Minimum distance betweeb Long Distance Fluid Pipe Endpoints
+  # Default: 50
+  ldFluidPipeMinDistance: 50
+
+  # If High Tier (>UV-tier) GT content should be registered.
+  # Items and Machines enabled with this config will have missing recipes by default.
+  # This is intended for modpack developers only, and is not playable without custom tweaks or addons.
+  # Other mods can override this to true, regardless of the config file.
+  # Default: false
+  highTierContent: true
+
+client:
+  # Whether or not to enable Emissive Textures for GregTech Machines.
+  # Default: true
+  machinesEmissiveTextures: true
+
+  # Whether or not sounds should be played when using tools outside of crafting.
+  # Default: true
+  toolUseSounds: true
+
+  # Whether or not sounds should be played when crafting with tools.
+  # Default: true
+  toolCraftingSounds: true
+
+  # The default color to overlay onto machines.
+  # #FFFFFF is no coloring (default).
+  # #D2DCFF is the classic blue from GT5.
+  defaultPaintingColor: #D2DCFF
+
+  # The default color to overlay onto Machine (and other) UIs.
+  # 16777215 (#FFFFFF) is no coloring (like GTCE).
+  # 13819135 (#D2DCFF in decimal) is the classic blue from GT5 (default).
+  defaultUIColor: #FFFFFF
+
+  # Use VBO cache for multiblock preview.
+  # Disable it if you have issues with rendering multiblocks.
+  # Default: true
+  useVBO: true
+
+  # Duration of the multiblock in-world preview (s)
+  # Default: 10
+  inWorldPreviewDuration: 10
+
+  # Duration of UI animations in ms
+  # Default: 300
+  animationTime: 300
+
+  armorHud:
+    # Sets HUD location
+    # 1 - left-upper corner
+    # 2 - right-upper corner
+    # 3 - left-bottom corner
+    # 4 - right-bottom corner
+    # Default: 1
+    hudLocation: 1
+
+    # Horizontal offset of HUD.
+    # Default: 0
+    hudOffsetX: 0
+
+    # Vertical offset of HUD.
+    # Default: 0
+    hudOffsetY: 0
+
+# Config options for Tools and Armor
+tools:
+  # Random chance for electric tools to take actual damage
+  # Default: 10%
+  rngDamageElectricTools: 10
+
+  # Amount of blocks that can be spray painted at once
+  # Default: 16
+  sprayCanChainLength: 16
+
+# Config options for Game Mechanics
+gameplay:
+  # Enable hazardous materials
+  # Default: true
+  hazardsEnabled: false
+
+# Config options for Mod Compatibility
+compat:
+  # Config options regarding GTEU compatibility with other energy systems
+  energy:
+    # Enable Native GTEU to Platform native Energy (RF and alike) on GT Cables and Wires.
+    # This does not enable nor disable Converters.
+    # Default: true
+    nativeEUToPlatformNative: true
+
+    # Enable GTEU to Platform native (and vice versa) Converters.
+    # Default: false
+    enablePlatformConverters: true
+
+    # Platform native Energy to GTEU ratio for converting FE to EU.
+    # Only affects converters.
+    # Default: 4 FE/Energy == 1 EU
+    platformToEuRatio: 4
+
+    # GTEU to Platform native Energy ratio for converting EU to FE.
+    # Affects native conversion and Converters.
+    # Default: 4 FE/Energy == 1 EU
+    euToPlatformRatio: 4
+
+  # Whether to hide facades of all blocks in JEI and creative search menu.
+  # Default: true
+  hideFacadesInJEI: true
+
+  # Whether to hide filled cells in JEI and creative search menu.
+  # Default: true
+  hideFilledCellsInJEI: true
+
+  # Whether Gregtech should remove smelting recipes from the vanilla furnace for ingots requiring the Electric Blast Furnace.
+  # Default: true
+  removeSmeltingForEBFMetals: true
+
+dev:
+  # Debug general events? (will print placed veins to server's debug.log)
+  # Default: false
+  debug: false
+
+  # Debug ore vein placement? (will print placed veins to server's debug.log)
+  # Default: false (no placement printout in debug.log)
+  debugWorldgen: false
+
+  # Dump all registered GT recipes?
+  # Default: false
+  dumpRecipes: false
+
+  # Dump all registered GT models/blockstates/etc?
+  # Default: false
+  dumpAssets: false
+

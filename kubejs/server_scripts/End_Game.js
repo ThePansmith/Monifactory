@@ -7,59 +7,21 @@ ServerEvents.recipes(event => {
             .itemOutputs('gtceu:dimensional_superassembler')
             .duration(6000)
             .EUt(13920000)
-    //research Assembly Line in Data Module, 160 CWU/t?
+
+            .stationResearch(b => b
+                .researchStack('gtceu:assembly_line')
+                .CWUt(160, 1024000)
+                .EUt(1200000)
+            )
     // Extra Large Chemical Reactor
     event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
-            .itemInputs('gtceu:large_chemical_reactor', "16x gtceu:duranium_large_fluid_pipe", '16x gtceu:uhv_hermetic_casing', '4x gtceu:uv_field_generator', '8x gtceu:uv_electric_pump', '8x gtceu:uv_fluid_regulator', '4x #gtceu:circuits/uhv')
+            .itemInputs('gtceu:large_chemical_reactor', "8x gtceu:naquadah_large_fluid_pipe", '8x gtceu:luv_hermetic_casing', '4x gtceu:luv_field_generator', '8x gtceu:luv_electric_pump', '8x gtceu:luv_fluid_regulator', '4x #gtceu:circuits/zpm')
             .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polybenzimidazole 1152')
             .itemOutputs('gtceu:extra_large_chemical_reactor')
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:large_chemical_reactor').EUt(7680).duration(600))
             .duration(1200)
-            .EUt(1000000)
-    //research Assembly Line in Data Module, 144 CWU/t?
-
-    // UEV/UIV/MAX Hulls and Casing
-
-    event.recipes.gtceu.assembler('uev_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:single_omnium_wire')
-        .inputFluids('gtceu:polybenzimidazole 576')
-        .itemOutputs('gtceu:uev_machine_hull')
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('uev_casing')
-        .itemInputs('8x gtceu:omnium_plate')
-        .itemOutputs('gtceu:uev_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('uiv_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire')
-        .inputFluids('gtceu:polybenzimidazole 576')
-        .itemOutputs('gtceu:uiv_machine_hull')
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('uiv_casing')
-        .itemInputs('8x gtceu:infinity_plate')
-        .itemOutputs('gtceu:uiv_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
-
-        event.recipes.gtceu.assembler('max_hull')
-        .itemInputs('gtceu:max_machine_casing', '2x gtceu:holmium_single_wire')
-        .inputFluids('gtceu:omnium 1152')
-        .itemOutputs('gtceu:max_machine_hull')
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('max_casing')
-        .itemInputs('8x gtceu:monium_plate')
-        .itemOutputs('gtceu:max_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
+            .EUt(131072)
+    
 
     // Blacklight
     event.shaped(
@@ -222,31 +184,6 @@ ServerEvents.recipes(event => {
 		]
 	)
 
- 
-    event.recipes.extendedcrafting.shaped_table(
-        'kubejs:ultimate_power_storage', [
-            'ABCDEDCBA',
-            'BCDEFEDCB',
-            'CDEFGFEDC',
-            'DEFGHGFED',
-            'EFGHIHGFE',
-            'DEFGHGFED',
-            'CDEFGFEDC',
-            'BCDEFEDCB',
-            'ABCDEDCBA'
-        ], {
-            A: 'gtceu:lv_lithium_battery',
-            B: 'gtceu:mv_lithium_battery',
-            C: 'gtceu:energy_crystal',
-            D: 'gtceu:lapotron_crystal',
-            E: 'gtceu:lapotronic_energy_orb',
-            F: 'gtceu:lapotronic_energy_orb_cluster',
-            G: 'gtceu:zero_point_module',
-            H: 'gtceu:energy_cluster',
-            I: 'gtceu:max_battery'
-        }
-    )
-
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:zero_point_module', [
             '  PPPPP  ',
@@ -329,7 +266,7 @@ ServerEvents.recipes(event => {
             'PPCGSGCPP',
             "UPPCGCPPU",
         ], {
-            U: 'kubejs:ultimate_power_storage',
+            U: 'gtceu:max_battery',
             P: 'thermal:upgrade_augment_3',
             C: 'thermal:upgrade_augment_4',
             G: 'thermal:upgrade_augment_2',

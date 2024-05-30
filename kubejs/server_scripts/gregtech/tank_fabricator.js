@@ -29,14 +29,15 @@ ServerEvents.recipes(event => {
                 .EUt(100000) // same for all recipes
         }
 
-        print('creative_tank_data', 1, 'gtceu:creative_tank')
-        print('creative_tank_data', 2, 'ae2:creative_fluid_cell')
-        print('creative_storage_data', 1, 'kubejs:creative_storage_component')
-        print('creative_storage_data', 2, 'gtceu:uhv_quantum_chest')
-        print('creative_storage_data', 3, 'gtceu:uhv_quantum_tank')
-        print('creative_data_hatch_data', 1, 'gtceu:creative_data_access_hatch')
-        print('creative_energy_data', 1, 'gtceu:creative_energy')
-        print('creative_energy_data', 3, 'ae2:creative_energy_cell')
+    print('creative_tank_data', 1, 'gtceu:creative_tank')
+    print('creative_tank_data', 2, 'ae2:creative_fluid_cell')
+    print('creative_storage_data', 1, 'functionalstorage:max_storage_upgrade')
+    print('creative_storage_data', 2, 'gtceu:uhv_quantum_chest')
+    print('creative_storage_data', 3, 'gtceu:uhv_quantum_tank')
+    print('creative_data_hatch_data', 1, 'gtceu:creative_data_access_hatch')
+    print('creative_energy_data', 1, 'gtceu:creative_energy')
+    print('creative_energy_data', 2, 'enderio:creative_power')
+    print('creative_energy_data', 3, 'ae2:creative_energy_cell')
 
         event.recipes.gtceu.subatomic_digital_assembly('kubejs:corrupted_data')
             .itemInputs('kubejs:universe_creation_data')
