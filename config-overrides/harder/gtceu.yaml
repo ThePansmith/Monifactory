@@ -31,7 +31,7 @@ recipes:
 
   # Whether to make Redstone related recipes harder.
   # Default: false
-  hardRedstoneRecipes: false
+  hardRedstoneRecipes: true
 
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
@@ -79,7 +79,7 @@ recipes:
 
   # Whether to nerf the output amounts of the first circuit in a set to 1 (from 2) and SoC to 2 (from 4).
   # Default: false
-  harderCircuitRecipes: false
+  harderCircuitRecipes: true
 
 worldgen:
   # Rubber Tree spawn chance (% per chunk)
