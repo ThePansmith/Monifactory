@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:netherrack_chalcocite_ore',
                 '64x gtceu:netherrack_chalcocite_ore',
                 '64x gtceu:netherrack_chalcocite_ore',
-                '64x gtceu:netherrack_sheldonite_ore'
+                '64x gtceu:netherrack_cooperite_ore'
             )
             .duration(39*20)
             .EUt(30720)
