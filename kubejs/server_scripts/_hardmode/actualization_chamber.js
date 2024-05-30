@@ -399,5 +399,37 @@ ServerEvents.recipes(event => {
             )
             .duration(39*20)
             .EUt(30720)
+
+        event.recipes.gtceu.actualization_chamber('pristine_t8half_one')
+            .itemInputs(
+                'kubejs:pristine_matter_t8half'
+            )
+            .itemOutputs(
+                '64x gtceu:endstone_darmstadtite_ore',
+                '64x gtceu:endstone_darmstadtite_ore',
+                '64x gtceu:endstone_darmstadtite_ore',
+                '64x gtceu:endstone_darmstadtite_ore',
+                '64x gtceu:endstone_darmstadtite_ore',
+                '64x gtceu:endstone_darmstadtite_ore',
+                '64x gtceu:endstone_darmstadtite_ore',
+                '64x gtceu:endstone_darmstadtite_ore'
+            )
+            .duration(39*20)
+            .EUt(30720)
+
+    event.recipes.gtceu.advanced_microverse_iii('pristine_t8half_two')
+            .itemInputs(
+                'kubejs:pristine_matter_t8half'
+            )
+            .itemOutputs(
+                '64x gtceu:endstone_dulysite_ore',
+                '64x gtceu:endstone_dulysite_ore',
+                '64x gtceu:endstone_dulysite_ore',
+                '64x gtceu:endstone_dulysite_ore',
+                '64x gtceu:endstone_dulysite_ore',
+                '64x gtceu:endstone_dulysite_ore'
+            )
+            .duration(39*20)
+            .EUt(30720)
     }
 })
