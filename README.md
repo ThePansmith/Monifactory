@@ -20,9 +20,14 @@
 Original pack by [Exaxxion](https://github.com/Exaxxion).
 Nomifactory CEu pack by [Tracer](https://github.com/tracer4b).  
 README.md base from [Gregtech CEu](https://github.com/GregTechCEu/GregTech).  
+Meowni (mascot) by Mutso  
 Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
 Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
 Thank you!
 
-## Enabling Expert/Omega Mode
-To enable expert/omega mode, change the value in mode.json in the root folder (folder containing ``config``, ``mods``, etc.)
+## Hard/Harder Mode
+Is Monifactory not Greggy enough for you? Or perhaps you simply want a challenge? Try hard mode! (or even harder mode, if you're not faint of heart!)
+### Installation:
+1. Open a terminal window in the root folder (the same level as ``/config``)
+2. Run ``./pack-mode-switcher.bat`` if you're on Windows, or ``./pack-mode-switcher.sh`` if you're on Linux/Apple/GNU
+3. Enter the name of the mode you wish to play!
