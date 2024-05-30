@@ -74,9 +74,27 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .defaultCutout();
 
+    event.create('reactor_stabilizer')
+        .displayName("Reactor Stabilizer")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout();
+    
+    event.create('reactor_core')
+        .displayName("Reactor Core")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout();
+
     //Dense Ores
     const ores = [
-        "redstone_ore",
+        'redstone_ore',
         'diamond_ore',
         'emerald_ore',
         'gold_ore',
@@ -98,6 +116,15 @@ StartupEvents.registry("block", event => {
 			.tagBlock('forge:ores/dense_' + ore)
 			.requiresTool(true);
 	}
+
+    event.create('dense_magma_block')
+			.displayName(`Dense Magma Block`)
+			.soundType('stone')
+			.resistance(6)
+			.hardness(5)
+			.tagBlock('mineable/pickaxe')
+			.tagBlock('forge:ores/dense_magma')
+			.requiresTool(true);
 
     //EMERGENCY FIX
     event.create('gtceu:dilithium_ore')

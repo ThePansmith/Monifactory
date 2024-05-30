@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
             F: 'gtceu:zpm_field_generator',
             P: 'nuclearcraft:plate_elite',
             Z: '#gtceu:circuits/zpm'
-        }, 4
+        }
     )
 
     //! Creative Items !//
@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
             R: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
             S: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(),
             V: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT()
-        }, 4
+        }
     )
 
     //Creative Solar Panel
@@ -250,8 +250,7 @@ ServerEvents.recipes(event => {
             N: 'gtceu:neutronium_plate',
             P: 'gtceu:infinity_plate',
             S: 'solarflux:sp_custom_neutronium'
-
-        }, 4
+        }
     )
 
     // Creative Efficiency Upgrade
@@ -275,7 +274,7 @@ ServerEvents.recipes(event => {
             R: 'thermal:machine_speed_augment',
             O: 'thermal:machine_efficiency_augment',
             I: 'kubejs:infinity_catalyst'
-        }, 4
+        }
     )
 
     // Creative Chest
@@ -303,7 +302,7 @@ ServerEvents.recipes(event => {
             E: 'kubejs:creative_energy_data',
             T: 'kubejs:creative_tank_data',
             Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
-            U: 'gtceu:subatomic_digital_assembler',
+            U: 'gtceu:subatomic_digital_assembler', // breaks HM since its not in it
             R: 'gtceu:uiv_robot_arm',
             F: 'gtceu:uiv_field_generator',
             O: 'gtceu:uiv_sensor',
@@ -335,6 +334,6 @@ ServerEvents.recipes(event => {
             N: 'gtceu:neutronium_plate',
             T: 'gtceu:titanium_plate',
             C: 'thermal:machine_catalyst_augment'
-        }, 4
+        }
     )
 })

@@ -530,7 +530,7 @@ ServerEvents.recipes(event => {
         ], {
             R: 'minecraft:redstone',
             I: 'gtceu:iron_plate',
-            G: 'gtceu:copper_plate',
+            C: 'gtceu:copper_plate',
     }
     ).id('waterframes:remote')
 

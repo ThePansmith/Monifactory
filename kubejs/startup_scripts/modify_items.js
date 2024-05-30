@@ -25,4 +25,21 @@ ItemEvents.modification(event => {
     event.modify('minecraft:ender_pearl', item => {
         item.maxStackSize = 64
     })
+
+    // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
+    event.modify('kubejs:infinity_file', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_file').item
+    })
+    event.modify('kubejs:infinity_hammer', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_hammer').item
+    })
+    event.modify('kubejs:infinity_screwdriver', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_screwdriver').item
+    })
+    event.modify('kubejs:infinity_wrench', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wrench').item
+    })
+    event.modify('kubejs:infinity_wire_cutter', item => {
+        item.craftingRemainder = Item.of('kubejs:infinity_wire_cutter').item
+    })
 })
