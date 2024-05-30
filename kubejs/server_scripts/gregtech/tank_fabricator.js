@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    if (!isExpertMode) {
+    if (!isHardMode) {
         event.recipes.extendedcrafting.shaped_table(
             'gtceu:subatomic_digital_assembler', [
             'ECFCE',

@@ -3,7 +3,7 @@ const Tags = Java.loadClass('dev.latvian.mods.kubejs.util.Tags')
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     // Normal mode-exclusive Multis
-    if (!isExpertMode) {
+    if (!isHardMode) {
 
         // Subatomic Digital Assembler
         event.create('subatomic_digital_assembly')
@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     }
 
     // Normal mode-exclusive Multis
-    if (isExpertMode) {
+    if (isHardMode) {
 
         // Actualization Chamber
         event.create('actualization_chamber')
@@ -197,7 +197,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     
     
     // Normal mode-exclusive multis            
-    if (!isExpertMode) {
+    if (!isHardMode) {
 
         // Subatomic Digital Assembler
         event.create('subatomic_digital_assembler', 'multiblock')
@@ -282,7 +282,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     }
 
     // Expert mode-exclusive multis            
-    if (isExpertMode) {
+    if (isHardMode) {
 
         // Actualization Chamber
         event.create('actualization_chamber', 'multiblock')
