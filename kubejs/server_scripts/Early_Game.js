@@ -11,10 +11,9 @@ event.recipes.gtceu.electric_blast_furnace("aluminum_ingot")
         .itemInputs('gtceu:aluminum_dust')
         .fluidInput('gtceu:nitrogen_gas 1000')
         .itemOutputs('gtceu:aluminum_ingot')
-        .duration(800)
+        .duration(400)
         .EUt(120)
         .blastFurnaceTemp(1700)
-
 
     // Ender Pearls
     event.recipes.gtceu.alloy_smelter("pulsating_ender_pearl")
