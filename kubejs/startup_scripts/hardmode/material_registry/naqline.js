@@ -51,6 +51,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x658280)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    event.create("snowchestite") // Hardmode only
+        .dust().ore()
+        .color(0x274c9f).iconSet('shiny')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components('3x naquadah_oxide', 'pyromorphite')
+        .addOreByproducts('chalcopyrite', 'vanadium_magnetite', 'naquadah') // Naquadah is replaced with naquadah hydroxide in expert_processing.js
+
 })
 
 // modify material names etc here
