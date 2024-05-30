@@ -43,27 +43,3 @@ ItemEvents.modification(event => {
         item.craftingRemainder = Item.of('kubejs:infinity_wire_cutter').item
     })
 })
-
-ItemEvents.armorTierRegistry(event => {
-    event.add("glitch", (tier) => {
-        tier.durabilityMultiplier = 120;
-        tier.equipSound = 'minecraft:item.armor.equip_iron';
-        tier.toughness = 4.0;
-        tier.slotProtections = [3, 10, 6, 3];
-    })
-})
-
-ItemEvents.toolTierRegistry(event => {
-    event.add("glitch", tier => {
-        tier.attackDamageBonus = 10;
-        tier.speed = 1.6;
-        tier.uses = 2200;
-    })
-
-    event.add("dev", (tier) => {
-        tier.enchantmentValue = 42
-        tier.level = 42
-        tier.uses = 42690
-        tier.speed = 12
-    })
-})
