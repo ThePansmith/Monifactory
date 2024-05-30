@@ -1,0 +1,51 @@
+{
+    /*
+     * The distance from the player that the Tempad is summoned.
+     * Range: 1 - 10
+     */
+    "distanceFromPlayer": 3,
+    /*
+     * The amount of time in ticks that the timedoor will wait before closing itself after the owner walked through it.
+     * Type: Integer
+     */
+    "timedoorWaitTime": 60,
+    /*
+     * The amount of time in ticks that the Tempad will add to the wait time when the player is in the Tempad.
+     * Type: Integer
+     */
+    "timedoorAddWaitTime": 40,
+    // Whether or not the Tempad should allow interdimensional travel.
+    "allowInterdimensionalTravel": true,
+    // Whether or not the Tempad should allow exporting of locations onto Location Cards.
+    "allowExporting": true,
+    // Whether or not the Tempad should consume a cooldown when exporting a location.
+    "consumeCooldown": true,
+    // Whether or not the Tempad should allow teleporting to waystones.
+    "waystonesCompat": true,
+    // Whether or not the Tempad should allow teleporting to waystones from the Fabric version of Waystones by LordDeatHunter (fwaystones) (ignore on forge).
+    "fabricWaystonesCompat": false,
+    /*
+     * The amount of fuel that the timedoor will consume on opening of the timedoor.
+     * Type: Integer
+     */
+    "timedoorFuelAmount": 1,
+    /*
+     * The amount of fuel that the timedoor can hold.
+     * Type: Integer
+     */
+    "timedoorFuelCapacity": 10,
+    /*
+     * The amount of fuel that the advanced timedoor will consume on opening of the timedoor.
+     * Type: Integer
+     */
+    "advancedTimedoorFuelAmount": 1,
+    /*
+     * The amount of fuel that the advanced timedoor can hold.
+     * Type: Integer
+     */
+    "advancedTimedoorFuelCapacity": 1000,
+    // The type of fuel that the timedoor will consume.
+    "timedoorFuelType": "tempad:item",
+    // The type of fuel that the advanced timedoor will consume.
+    "advancedTimedoorFuelType": "tempad:unlimited"
+}
