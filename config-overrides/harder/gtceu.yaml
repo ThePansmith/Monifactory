@@ -75,7 +75,7 @@ recipes:
 
   # How many Multiblock Casings to make per craft. Either 1, 2, or 3.
   # Default: 2
-  casingsPerCraft: 2
+  casingsPerCraft: 1
 
   # Whether to nerf the output amounts of the first circuit in a set to 1 (from 2) and SoC to 2 (from 4).
   # Default: false
