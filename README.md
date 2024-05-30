@@ -28,6 +28,5 @@ Thank you!
 ## Hard/Harder Mode
 Is Monifactory not Greggy enough for you? Or perhaps you simply want a challenge? Try hard mode! (or even harder mode, if you're not faint of heart!)
 ### Installation:
-1. Open a terminal window in the root folder (the same level as ``/config``)
-2. Run ``./pack-mode-switcher.bat`` if you're on Windows, or ``./pack-mode-switcher.sh`` if you're on Linux/Apple/GNU
-3. Enter the name of the mode you wish to play!
+1. Click on ``./pack-mode-switcher.bat`` if you're on Windows, or ``./pack-mode-switcher.sh`` if you're on Linux/Apple/GNU (located within your minecraft folder)
+2. Follow the prompt to select your mode.
