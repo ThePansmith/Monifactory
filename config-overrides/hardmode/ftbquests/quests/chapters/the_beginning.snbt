@@ -10,6 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["4DAC63BAC6613773"]
 			description: [
 				"The &3Wiremill&r is a major efficiency boost, giving you double yield of &6wires&r for your ingots. But first, you'll need to make some &6Motors&r."
 				""
@@ -25,12 +26,27 @@
 			]
 			icon: "gtceu:lv_electric_motor"
 			id: "62BBD1F6767A4D90"
-			rewards: [{
-				count: 2
-				id: "33683A0D0F389BD0"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "33683A0D0F389BD0"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "6DF36E66EE590F9E"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "monifactory:steel"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "The factory begins"
@@ -592,31 +608,17 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["29A487F0BC43AAF9"]
-			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for Steel and other useful things."]
+			dependencies: ["03D0FFA69E671D48"]
+			description: ["You might want to save your &6Coal&r for circuits and use &6Charcoal&r instead. Later on, you can also use the &3Electric Blast Furnace&r to create steel without needing coal or charcoal."]
 			id: "5301E546BAA69844"
-			rewards: [{
-				id: "424A2A6FAB412F69"
-				item: {
-					Count: 1b
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "monifactory:steel"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
 			tasks: [{
 				id: "17210F38B40BAAD7"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&9Alloying Steel"
+			title: "&9Steel Creation"
 			x: 2.5d
 			y: -3.0d
 		}
@@ -646,11 +648,8 @@
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
-			description: [
-				"&3Alloy Smelters&r are used to create alloys by melting and reforming items together."
-				""
-				"Now you won't need to grind up metals into dusts and mix them for alloy dusts! Plus, many of the more complex alloys you couldn't make that way are now possible."
-			]
+			description: ["Seeing as you likely already have a &9Steam Foundry&r up, an LV alloy smelter isn't going to be super helpful for now."]
+			icon: "gtceu:lv_alloy_smelter"
 			id: "29A487F0BC43AAF9"
 			rewards: [{
 				id: "0C69338204BAC2F3"
@@ -659,9 +658,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "1E91BE2938B1B8CE"
-				item: "gtceu:lv_alloy_smelter"
-				type: "item"
+				id: "471CAFCC4478BD88"
+				type: "checkmark"
 			}]
 			title: "LV Alloy Smelter"
 			x: 2.5d
@@ -720,7 +718,7 @@
 			]
 			title: "Boilers and Turbines"
 			x: 4.5d
-			y: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
@@ -837,72 +835,6 @@
 			}]
 			x: 6.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["545CCC24D9401794"]
-			description: [
-				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
-				""
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
-				""
-				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
-			]
-			icon: "gtceu:steam_grinder"
-			id: "41C2E49E70D76330"
-			rewards: [
-				{
-					count: 7
-					id: "6B113D9EF57E5CDE"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "42A15BBED3DD9B74"
-					item: {
-						Count: 1b
-						id: "minecraft:enchanted_book"
-						tag: {
-							StoredEnchantments: [{
-								id: "minecraft:silk_touch"
-								lvl: 1s
-							}]
-						}
-					}
-					type: "item"
-				}
-			]
-			size: 1.75d
-			tasks: [
-				{
-					id: "7DD0FE0A1E868294"
-					item: "gtceu:steam_grinder"
-					type: "item"
-				}
-				{
-					count: 22L
-					id: "18DB8D651F2D31CB"
-					item: "gtceu:steam_machine_casing"
-					type: "item"
-				}
-				{
-					id: "570435DB56E60014"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-				{
-					id: "4A720EFF7B137995"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-				{
-					id: "76E984019B7F6D6B"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-			]
-			title: "&9Steam Grinder"
-			x: 4.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1417,6 +1349,7 @@
 				""
 				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact middle of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &29&e Heatproof Machine Casings in your layout or the structure will not form&r."
 				""
+				"{@pagebreak}"
 				"This quest calls for a &2maintenance hatch&r, two energy hatches, a fluid input and output, and an item input and output, which is a total of 7 positions. Their specific order and placement don't matter, as long as you can access them. The 8th position is your EBF controller, leaving 9 gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the colors on its hatches and casings will unify, and the controller will say \"Idling.\""
 				""
 				"Hatches and Buses can be replaced by Hatches and Buses of any tier, although the Input Bus must be at least LV, as there are 2 inputs."
@@ -2026,55 +1959,6 @@
 			title: "&9Upgrades, people, upgrades."
 			x: 8.5d
 			y: 7.5d
-		}
-		{
-			dependencies: ["545CCC24D9401794"]
-			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
-			icon: "steamadditions:steam_foundry"
-			id: "5D60CAE3A33000C3"
-			rewards: [{
-				id: "0543D4882AD0F771"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			size: 1.25d
-			tasks: [
-				{
-					id: "31167A476BC0B4F1"
-					item: "steamadditions:steam_foundry"
-					type: "item"
-				}
-				{
-					count: 13L
-					id: "505B1290E3042129"
-					item: { Count: 13b, id: "gtceu:steam_machine_casing" }
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "5B5968BA75F69B32"
-					item: "gtceu:bronze_firebox_casing"
-					type: "item"
-				}
-				{
-					id: "20CC19C928014F7F"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-				{
-					id: "3F8C63CA26639558"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-				{
-					id: "2855C331EB019FD9"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-			]
-			title: "&9Steam Foundry"
-			x: 4.517857142857139d
-			y: 1.4285714285714306d
 		}
 	]
 	title: "The Beginning"

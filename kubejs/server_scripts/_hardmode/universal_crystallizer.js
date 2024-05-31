@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     if (isHardMode) {
         ////// Machine Recipe //////
         event.recipes.gtceu.assembly_line('universal_crystallizer')
-            .itemInputs('24x gtceu:large_autoclave', '24x packagedexcrafting:combination_crafter', '24x gtceu:uv_emitter', '24x gtceu:uv_field_generator', '64x gtceu:wetware_processor_mainframe', '64x gtceu:tritanium_coil_block', '24x kubejs:reactor_stabilizer', '8x kubejs:abyssal_reaction_casing', '8x gtceu:infinity_plate')
+            .itemInputs('24x gtceu:large_autoclave', '24x packagedexcrafting:combination_crafter', '24x gtceu:uv_emitter', '24x gtceu:uv_field_generator', '64x #gtceu:circuits/uhv', '8x #gtceu:circuits/uev', '64x gtceu:tritanium_coil_block', '24x kubejs:reactor_stabilizer', '8x kubejs:abyssal_reaction_casing')
             .inputFluids('kubejs:molten_cryotheum 36864', 'gtceu:diamatine_empowered 18432', 'gtceu:naquadria 63216', 'gtceu:taranium 4608')
             .itemOutputs('gtceu:universal_crystallizer')
             .stationResearch(b => b

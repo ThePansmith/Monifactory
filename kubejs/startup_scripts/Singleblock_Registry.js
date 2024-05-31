@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 // Machines
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Atomic Reconstructor
-    event.create('atomic_reconstructor', 'simple', GTValues.MV, GTValues.EV, GTValues.LuV, GTValues.UV, GTValues.UEV)
+    event.create('atomic_reconstructor', 'simple', GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV)
         .langValue("Atomic Reconstructor")
         .recipeType('atomic_reconstruction', true, true)
         .workableTieredHullRenderer('gtceu:block/machines/reconstructor')

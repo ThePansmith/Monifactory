@@ -1,26 +1,29 @@
 ServerEvents.recipes(event => {
     const reconstructedItems = [
-        ['minecraft:redstone', 'gtceu:restonia_gem', 'restonia'],
-        ['minecraft:iron_ingot', 'gtceu:enori_gem', 'enori'],
-        ['minecraft:coal', 'gtceu:void_gem', 'void'],
-        ['minecraft:lapis_lazuli', 'gtceu:palis_gem', 'palis'],
-        ['minecraft:diamond', 'gtceu:diamatine_gem', 'diamatine'],
-        ['minecraft:emerald', 'gtceu:emeradic_gem', 'emeradic'],
-        ['minecraft:coal_block', 'gtceu:void_block', 'void_block'],
-        ['#forge:storage_blocks/redstone', 'gtceu:restonia_block', 'restonia_block'],
-        ['#forge:storage_blocks/lapis', 'gtceu:palis_block', 'palis_block'],
-        ['#forge:storage_blocks/diamond', 'gtceu:diamatine_block', 'diamatine_block'],
-        ['#forge:storage_blocks/emerald', 'gtceu:emeradic_block', 'emeradic_block'],
-        ['#forge:storage_blocks/iron', 'gtceu:enori_block', 'enori_block'],
-        ['minecraft:sand', 'minecraft:soul_sand', 'soul_sand'],
-        ['minecraft:red_mushroom', 'minecraft:nether_wart', 'nether_wart'],
-        ['minecraft:quartz', 'minecraft:prismarine_shard', 'prismarine_shard'],
-        ['minecraft:rotten_flesh', 'minecraft:leather', 'leather'],
-        ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 'prismarine_crystals'],
-        ['gtceu:steel_ingot', 'gtceu:damascus_steel_ingot', 'damascus_steel'],
-        ['gtceu:diamatine_block', 'kubejs:starry_diamond_block', 'starry_diamond'],
-        ['gtceu:coke_gem', 'gtceu:coal_perfect', 'perfect_coal'],
-        ['gtceu:obsidian_dust', 'enderio:grains_of_infinity', 'temp_grains'] //temp
+        ['minecraft:redstone', 'gtceu:restonia_gem', 128, 'restonia'],
+        ['minecraft:iron_ingot', 'gtceu:enori_gem', 128, 'enori'],
+        ['minecraft:coal', 'gtceu:void_gem', 128, 'void'],
+        ['minecraft:lapis_lazuli', 'gtceu:palis_gem', 128, 'palis'],
+        ['minecraft:diamond', 'gtceu:diamatine_gem', 128, 'diamatine'],
+        ['minecraft:emerald', 'gtceu:emeradic_gem', 128, 'emeradic'],
+        ['minecraft:coal_block', 'gtceu:void_block', 128, 'void_block'],
+        ['#forge:storage_blocks/redstone', 'gtceu:restonia_block', 128, 'restonia_block'],
+        ['#forge:storage_blocks/lapis', 'gtceu:palis_block', 128, 'palis_block'],
+        ['#forge:storage_blocks/diamond', 'gtceu:diamatine_block', 128, 'diamatine_block'],
+        ['#forge:storage_blocks/emerald', 'gtceu:emeradic_block', 128, 'emeradic_block'],
+        ['#forge:storage_blocks/iron', 'gtceu:enori_block', 128, 'enori_block'],
+        ['minecraft:sand', 'minecraft:soul_sand', 128, 'soul_sand'],
+        ['minecraft:red_mushroom', 'minecraft:nether_wart', 32, 'nether_wart'],
+        ['minecraft:quartz', 'minecraft:prismarine_shard', 128, 'prismarine_shard'],
+        ['minecraft:rotten_flesh', 'minecraft:leather', 32, 'leather'],
+        ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 128, 'prismarine_crystals'],
+        ['gtceu:steel_ingot', 'gtceu:damascus_steel_ingot', 128, 'damascus_steel'],
+        ['gtceu:diamatine_block', 'kubejs:starry_diamond_block', 128, 'starry_diamond'],
+        ['gtceu:coke_gem', 'gtceu:coal_perfect', 128, 'perfect_coal'],
+        ['gtceu:obsidian_dust', 'enderio:grains_of_infinity', 32, 'temp_grains'],
+        ['minecraft:poppy', 'minecraft:red_mushroom', 32, 'red_mushroom'],
+        ['minecraft:dried_kelp', 'minecraft:wither_rose', 32, 'wither_rose'],
+        ['gtceu:plant_ball', 'minecraft:kelp', 32, 'kelp']
     ]
 
     const crystals = ['enori', 'void', 'palis', 'diamatine', 'restonia', 'emeradic']
@@ -48,130 +51,40 @@ ServerEvents.recipes(event => {
         .EUt(24)
 
     // Reconstruction
-    reconstructedItems.forEach(([input, output, id]) => {
+    reconstructedItems.forEach(([input, output, eut, id]) => {
         event.recipes.gtceu.atomic_reconstruction('kubejs:' + id)
             .itemInputs(input)
             .itemOutputs(output)
             .duration(20)
-            .EUt(128)
+            .EUt(eut)
     })
 
+
+    const reconstructorrecipe = [
+        ['lv', 'lead'],
+        ['mv', 'lead'],
+        ['hv', 'lead'],
+        ['ev', 'beryllium'],
+        ['iv', 'beryllium'],
+        ['luv', 'osmiridium'],
+        ['zpm', 'osmiridium'],
+        ['uv', 'duranium'],
+        ['uhv', 'duranium'],
+        ['uev', 'holmium'],
+        ['uiv', 'holmium']
+    ]
+    reconstructorrecipe.forEach(([tier, plate]) => {
     event.shaped(
-        'gtceu:mv_atomic_reconstructor', [
+        `gtceu:${tier}_atomic_reconstructor`, [
         'PPP',
         'EHE',
         'PPP'
     ], {
-        P: 'gtceu:lead_plate',
-        E: 'gtceu:mv_emitter',
-        H: 'gtceu:mv_machine_hull'
-    }).id('kubejs:shaped/mv_atomic_reconstructor')
-
-    event.shaped(
-        'gtceu:ev_atomic_reconstructor', [
-        'PPP',
-        'EHE',
-        'PPP'
-    ], {
-        P: 'gtceu:beryllium_plate',
-        E: 'gtceu:ev_emitter',
-        H: 'gtceu:ev_machine_hull'
-    }).id('kubejs:shaped/ev_atomic_reconstructor')
-
-    event.shaped(
-        'gtceu:luv_atomic_reconstructor', [
-        'PPP',
-        'EHE',
-        'PPP'
-    ], {
-        P: 'gtceu:osmiridium_plate',
-        E: 'gtceu:luv_emitter',
-        H: 'gtceu:luv_machine_hull'
-    }).id('kubejs:shaped/luv_atomic_reconstructor')
-
-    event.shaped(
-        'gtceu:uv_atomic_reconstructor', [
-        'PPP',
-        'EHE',
-        'PPP'
-    ], {
-        P: 'gtceu:duranium_plate',
-        E: 'gtceu:uv_emitter',
-        H: 'gtceu:uv_machine_hull'
-    }).id('kubejs:shaped/uv_atomic_reconstructor')
-
-    event.shaped(
-        'gtceu:uev_atomic_reconstructor', [
-        'PPP',
-        'EHE',
-        'PPP'
-    ], {
-        P: 'gtceu:holmium_plate',
-        E: 'gtceu:uev_emitter',
-        H: 'gtceu:uev_machine_hull'
-    }).id('kubejs:shaped/uev_atomic_reconstructor')
-
-
-    // Empowerment
-    // event.recipes.gtceu.empowerment("restonia")
-    //     .itemInputs("gtceu:restonia_block", "gtceu:red_alloy_ingot", "gtceu:almandine_gem", Item.of('gtceu:glass_vial', '{Fluid:{Amount:1000,FluidName:"gtceu:sulfuric_acid"}}').strongNBT(), "extendedcrafting:the_ultimate_component")
-    //     .itemOutputs("gtceu:restonia_empowered_block")
-    //     .duration(200)
-    //     .EUt(128)
-
-    // event.recipes.gtceu.empowerment("diamatine")
-    //     .itemInputs("gtceu:diamatine_block", "extendedcrafting:ender_star", "extendedcrafting:crystaltine_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:nitrogen_dioxide"}}').strongNBT(), "extendedcrafting:crystaltine_component")
-    //     .itemOutputs("gtceu:diamatine_empowered_block")
-    //     .duration(200)
-    //     .EUt(128)
-
-    // event.recipes.gtceu.empowerment("emeradic")
-    //     .itemInputs("gtceu:emeradic_block", "kubejs:stabilized_uranium", "gtceu:vibrant_alloy_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:argon"}}').strongNBT(), "extendedcrafting:ultimate_component")
-    //     .itemOutputs("gtceu:emeradic_empowered_block")
-    //     .duration(200)
-    //     .EUt(128)
-
-    // event.recipes.gtceu.empowerment("enori")
-    //     .itemInputs("gtceu:enori_block", "gtceu:apatite_gem", "gtceu:end_steel_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:helium"}}').strongNBT(), "extendedcrafting:basic_component")
-    //     .itemOutputs("gtceu:enori_empowered_block")
-    //     .duration(200)
-    //     .EUt(128)
-
-    // event.recipes.gtceu.empowerment("palis")
-    //     .itemInputs("gtceu:palis_block", "gtceu:sapphire_gem", "minecraft:bedrock", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT(), "extendedcrafting:elite_component")
-    //     .itemOutputs("gtceu:palis_empowered_block")
-    //     .duration(200)
-    //     .EUt(128)
-
-    // event.recipes.gtceu.empowerment("void")
-    //     .itemInputs("gtceu:void_block", "gtceu:black_quartz_gem", "gtceu:dark_steel_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:oil"}}').strongNBT(), "extendedcrafting:advanced_component")
-    //     .itemOutputs("gtceu:void_empowered_block")
-    //     .duration(200)
-    //     .EUt(128)
-
-    // event.shaped(
-    //     'kubejs:empowerer_casing', [
-    //         'AHA',
-    //         'AEA',
-    //         'AWA'
-    //     ], {
-    //         A: 'gtceu:aluminium_plate',
-    //         E: 'gtceu:enori_block',
-    //         H: '#forge:tools/hammers',
-    //         W: '#forge:tools/wrenches',
-    //     })
-
-    // event.shaped(
-    //     'gtceu:empowerment', [
-    //         'TVT',
-    //         'VEV',
-    //         'TVT'
-    //     ], {
-    //         T: 'gtceu:tungsten_carbide_plate',
-    //         V: 'gtceu:vibrant_alloy_plate',
-    //         E: 'kubejs:empowerer_casing'
-    //     })
-
+        P: `gtceu:${plate}_plate`,
+        E: `gtceu:${tier}_emitter`,
+        H: `gtceu:${tier}_machine_hull`
+    }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
+    })
 
     //Crystal Gears
     crystals.forEach(crystal => {

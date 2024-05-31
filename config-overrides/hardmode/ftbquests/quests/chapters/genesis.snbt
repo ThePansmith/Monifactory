@@ -667,12 +667,13 @@
 				""
 				"Their advantage over &5EnderIO &3Item Conduits&r is their far higher &6throughput&r. An unupgraded EIO Item Conduit transports &98 items per second&r, and up to &9128&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9multiple stacks per second&r."
 				""
-				"They don't auto-extract by themselves, so you have to use &3Conveyor covers&r etc. with them."
+				"They don't auto-extract by themselves, so you have to use &3Conveyor covers&r etc. with them. &9Like with fluid pipes, ULV varients of conveyors have been added, so take a look at those&r."
 				""
 				"The priority mechanics are more complicated, so skip ahead if you are not interested:"
 				"A Destination will have a Routing Value calculated, which is the sum of all Routing Values of the individual Pipes to that Destination. Whichever Destination has the lowest Routing Value will be the one selected for Insertion."
 				"Restrictive Pipes typically have the lowest Priority for insertion due to their higher Routing Value."
 			]
+			icon: "gtceu:tin_normal_item_pipe"
 			id: "348074066C51AEE9"
 			rewards: [{
 				id: "4CB6493F03CEE2DD"
@@ -683,10 +684,34 @@
 			subtitle: "&2Item Pipes are back in GTCEu! They will transport items instantly through them."
 			tasks: [{
 				id: "74F09E4E4C4ECAA4"
-				item: "gtceu:tin_normal_item_pipe"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:tin_small_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:tin_normal_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:tin_large_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:tin_huge_item_pipe"
+							}
+						]
+					}
+				}
+				title: "Tin item pipe"
 				type: "item"
 			}]
-			title: "&2GT Item Pipes"
+			title: "&9GT Item Pipes"
 			x: 0.5d
 			y: 3.5d
 		}
@@ -803,8 +828,6 @@
 				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
 				""
 				"The Flux Capacitor is a &bBauble&r, so open your inventory and look for the Baubles button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
-				""
-				"Finally, you can charge up all those depleted &m&6Dark Boots&r&r and &6The Ender&r swords you've looted."
 			]
 			icon: {
 				Count: 1b
@@ -1006,12 +1029,6 @@
 					item: { Count: 16b, id: "minecraft:coal" }
 					type: "item"
 				}
-				{
-					count: 6L
-					id: "36366A657DFB0289"
-					item: { Count: 6b, id: "minecraft:gold_ingot" }
-					type: "item"
-				}
 			]
 			title: "More Materials"
 			x: 2.5d
@@ -1154,6 +1171,19 @@
 				"If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer."
 			]
 			id: "4B338515E84FC51A"
+			rewards: [{
+				id: "7BD3619691C7B6B3"
+				item: {
+					Count: 1b
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:bronze"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4D763AE3D2BE5F1A"
@@ -1227,7 +1257,7 @@
 		{
 			dependencies: ["03A575FD497A5AC9"]
 			description: [
-				"&2GTCEu Fluid Pipes&r are now available, much improved from CE. Their advantage is higher &9throughput&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details. Fluid pipes do require a pump to be able to pull fluids from tanks or machines that lack an autooutput function, but &9ULV pumps (as well as other covers) are now buyable with Monicoins&r."
+				"&2GTCEu Fluid Pipes&r are now available, much improved from CE. Their advantage is higher &9throughput&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details. Fluid pipes do require a pump to be able to pull fluids from tanks or machines that lack an autooutput function, &9consider looking into ULV pumps, as they are cheap&r."
 				""
 				"There are also &6Quadruple and Nonuple Pipes&r for transporting multiple fluid types through the same block."
 				""
@@ -1373,8 +1403,6 @@
 				"&6Batteries&r are &bGregTech &rpower storage for &aEU&r energy."
 				""
 				"Although there are several types of rechargeable batteries you can make, &2Lithium Batteries&r are the best ones, and the only ones you should really consider making."
-				""
-				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are fairly rare. Consider \"buying\" some Lithium with &9Monicoins&r."
 			]
 			id: "694B69F6D7C3CCFA"
 			rewards: [{
@@ -1589,6 +1617,29 @@
 			title: "&2Electronics Subcomponents"
 			x: 4.5d
 			y: 8.5d
+		}
+		{
+			dependencies: ["60039C237DE54C70"]
+			description: [
+				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
+				""
+				"There's also a quest chain for &bEnderIO&r Jetpacks (starting with the &6Conductive Iron Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
+			]
+			id: "73A08022268973DB"
+			tasks: [{
+				id: "3DB1300E1D65B31F"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:leadstone"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.75d
+			y: 11.75d
 		}
 	]
 	subtitle: ["WIP, HM is not fully playable yet!"]

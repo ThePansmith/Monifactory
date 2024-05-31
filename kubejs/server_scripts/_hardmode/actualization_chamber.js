@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:dilithium_ore', 
                 '64x gtceu:salt_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t1_two')
@@ -49,14 +49,14 @@ ServerEvents.recipes(event => {
                 '64x gtceu:tricalcium_phosphate_ore', 
                 '64x gtceu:quartzite_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t1_three')
             .itemInputs('kubejs:pristine_matter_t1')
             .circuit(3)
             .itemOutputs('kubejs:stellar_creation_data')
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t2_one')
@@ -77,14 +77,14 @@ ServerEvents.recipes(event => {
                 '64x gtceu:endstone_tungstate_ore', 
                 '64x kubejs:radium_salt'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t2_two')
             .itemInputs('kubejs:pristine_matter_t2')
             .circuit(2)
             .itemOutputs('4x kubejs:stellar_creation_data')
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t3_one')
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:netherrack_gold_ore',
                 '64x gtceu:netherrack_silver_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t3_two')
@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
                 '16x gtceu:netherrack_laurite_ore',
                 '8x gtceu:netherrack_cuprorhodsite_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t3_three')
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dense_magma_block',
                 '64x kubejs:dense_magma_block'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t4_one')
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dense_oilsands_ore',
                 'kubejs:compressed_infinity_dust_block'                
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t4_two')
@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
                 '32x kubejs:dense_emerald_ore',
                 '16x kubejs:dense_redstone_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t4_three')
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:netherrack_chalcocite_ore',
                 '64x gtceu:netherrack_cooperite_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
         
         event.recipes.gtceu.actualization_chamber('pristine_t4half_one')
@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
                 '64x minecraft:slime_block',
                 '64x armorplus:guardian_scale'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t4half_two')
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
                 '64x minecraft:magma_cream',
                 '64x minecraft:magma_cream'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t4half_three')
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
                 '64x minecraft:shulker_shell',
                 '64x minecraft:shulker_shell' // shulker pearls aren't in the pack
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t4half_four')
@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dragon_lair_data',
                 'minecraft:dragon_head'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t4half_five')
@@ -255,7 +255,7 @@ ServerEvents.recipes(event => {
                 '64x kubejs:wither_realm_data',
                 '48x gtceu:nether_star_block'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t5_one')
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:beryllium_ore',
                 '64x gtceu:fluorite_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t5_two')
@@ -293,7 +293,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:snowchestite_ore',
                 '24x gtceu:kaemanite_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t6_one')
@@ -308,7 +308,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:endstone_cooperite_ore',
                 '24x gtceu:iridosmineyes_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t6_two')
@@ -317,7 +317,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '32x kubejs:stabilized_einsteinium'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t6_three')
@@ -326,7 +326,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '32x minecraft:dragon_egg'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t7_one')
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:platinum_block', 
                 '16x gtceu:ruthenium_block'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t7_two')
@@ -359,7 +359,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 'kubejs:lair_of_the_warden_data'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t8_one')
@@ -370,7 +370,7 @@ ServerEvents.recipes(event => {
                 '64x minecraft:sculk_catalyst',
                 '32x kubejs:warden_horn'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t8_two')
@@ -385,7 +385,7 @@ ServerEvents.recipes(event => {
                 '64x minecraft:dragon_egg', 
                 '64x armorplus:ender_dragon_scale'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t8_three')
@@ -397,7 +397,7 @@ ServerEvents.recipes(event => {
                 '16x gtceu:neutronium_ingot', 
                 'gtceu:gravi_star'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t8half_one')
@@ -414,7 +414,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:endstone_darmstadtite_ore',
                 '64x gtceu:endstone_darmstadtite_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
 
     event.recipes.gtceu.advanced_microverse_iii('pristine_t8half_two')
@@ -429,7 +429,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:endstone_dulysite_ore',
                 '64x gtceu:endstone_dulysite_ore'
             )
-            .duration(39*20)
+            .duration(780)
             .EUt(30720)
     }
 })

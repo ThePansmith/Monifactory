@@ -241,7 +241,9 @@ StartupEvents.registry('item', event => {
     event.create('hyperdynamic_ram_wafer').texture('kubejs:item/hyperdynamicram/hyperdynamic_ram_wafer').displayName('Hyperdynamic RAM Wafer')
     event.create('hyperdynamic_ram_chip_base').texture('kubejs:item/hyperdynamicram/hyperdynamic_ram_chip').displayName('Hyperdynamic RAM Chip Base')
     event.create('hyperdynamic_ram_chip').texture('kubejs:item/hyperdynamicram/activated_hyperdynamic_ram_chip').displayName('Hyperdynamic RAM Chip')
-
+    event.create('quantum_soc_wafer').texture('kubejs:item/hyperdynamicram/quantum_soc_wafer').displayName('Quantum SoC Wafer')
+    event.create('quantum_soc_chip_base').texture('kubejs:item/hyperdynamicram/quantum_soc_chip').displayName('Quantum SoC Chip Base')
+    event.create('quantum_soc_chip').texture('kubejs:item/hyperdynamicram/activated_quantum_soc_chip').displayName('Quantum SoC Chip')
     // Post tank circuits and whatnot
     const circs = [
         ['matter', 'processor_computer', "UHV"],
