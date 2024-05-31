@@ -10,7 +10,11 @@ const ___TIER_QUEST_MAPPING = [
 	'536CEDA3142BCE63', // luv
 	'0472A05CFBF4A2F0', // zpm
 	'519A11FDC6A7EF21', // uv
-	'0C50D78D8F63CAFE'  // uhv
+	'0C50D78D8F63CAFE',  // uhv
+	'0B923E8ED6161CA8', // uev
+	'4177C4BD329C38DA', // uiv
+	'11FDFB08CD48D66E', // max
+	'63280C5F37A22345' // creative chest (end)
 ]
 
 FTBQuestsEvents.completed(event => {
