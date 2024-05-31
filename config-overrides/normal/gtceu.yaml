@@ -107,11 +107,11 @@ worldgen:
   oreVeins:
     # The grid size (in chunks) for ore vein generation
     # Default: 3
-    oreVeinGridSize: 2
+    oreVeinGridSize: 3
 
     # The maximum random offset (in blocks) from the grid for generating an ore vein.
     # Default: 12
-    oreVeinRandomOffset: 6
+    oreVeinRandomOffset: 0
 
     # Prevents regular vanilla ores from being generated outside GregTech ore veins
     # Default: true
