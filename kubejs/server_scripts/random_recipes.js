@@ -179,13 +179,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(1920)
 
-    // Diamond -> carbon
-    event.recipes.gtceu.electrolyzer("diamond_decomposition")
-        .itemInputs("gtceu:diamond_dust")
-        .itemOutputs("16x gtceu:carbon_dust")
-        .duration(768)
-        .EUt(30)
-
     // Alternative hv cutter
     event.shaped(
         "gtceu:hv_cutter", [
@@ -482,7 +475,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'gtceu:iron_plate',
         S: 'gtceu:steel_plate',
-        G: '#forge:glass_panes',
+        G: '#forge:glass_panes'
     }
     ).id('waterframes:frame')
 
@@ -494,7 +487,7 @@ ServerEvents.recipes(event => {
     ], {
         F: 'waterframes:frame',
         I: 'gtceu:iron_plate',
-        G: '#forge:glass_panes',
+        G: '#forge:glass_panes'
     }
     ).id('waterframes:projector')
 
@@ -506,7 +499,7 @@ ServerEvents.recipes(event => {
     ], {
         F: 'waterframes:frame',
         I: 'gtceu:iron_plate',
-        G: '#forge:glass_panes',
+        G: '#forge:glass_panes'
     }
     ).id('waterframes:tv')
 
@@ -518,7 +511,7 @@ ServerEvents.recipes(event => {
         ], {
             F: 'waterframes:tv',
             I: 'gtceu:iron_plate',
-            G: '#forge:glass_panes',
+            G: '#forge:glass_panes'
     }
     ).id('waterframes:big_tv')
 
@@ -530,7 +523,7 @@ ServerEvents.recipes(event => {
         ], {
             R: 'minecraft:redstone',
             I: 'gtceu:iron_plate',
-            C: 'gtceu:copper_plate',
+            C: 'gtceu:copper_plate'
     }
     ).id('waterframes:remote')
 
