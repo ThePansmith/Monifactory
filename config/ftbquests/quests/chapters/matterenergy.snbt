@@ -1394,6 +1394,33 @@
 			x: 6.75d
 			y: 11.5d
 		}
+		{
+			dependencies: ["410EA68D6EF15CEC"]
+			description: ["Managing P2P tunnels can be a pain in large numbers, thankfully, the &6Advanced Memory Card&r fixes that, by allowing you to manage all of your connections within a single card, and bind and unbind things on the fly, among other features."]
+			id: "1AC8700C190E84BC"
+			rewards: [{
+				count: 3
+				id: "2143755D5F938861"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "They really do have a GUI for everything now"
+			tasks: [{
+				id: "75CE8F67A574D433"
+				item: {
+					Count: 1b
+					id: "betterp2p:advanced_memory_card"
+					tag: {
+						gui: 3b
+						selectedIndex: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "&9Better P2P Management"
+			x: 2.5d
+			y: 5.5d
+		}
 	]
 	title: "Matter-Energy"
 }
