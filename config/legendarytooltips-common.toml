@@ -64,16 +64,16 @@
 		level10_entries = ["%UHV", "^UHV"]
 		level11_entries = ["%UEV", "^UEV"]
 		level12_entries = ["%UIV", "^UIV"]
-		level13_entries = ["%MAX", "^MAX", "gtceu:creative_chest"]
-		level14_entries = ["%Creative", "^Creative"]
-		level15_entries = []
+		level13_entries = ["%MAX", "^MAX"]
+		level14_entries = ["gtceu:creative_chest"]
+		level15_entries = ["%Creative", "^Creative"]
 		# Enter blacklist selectors here using the same format as above. Any items that match these selectors will NOT show a border.
 		blacklist = []
 
 	# Set border priorities here.  This should be a list of numbers that correspond to border levels, with numbers coming first being higher priority.
 	# Optionally, -1 can be inserted to indicate relative priority of data and api-defined borders.  If you don't know what that means, you don't need to worry about it.
 	[client.priorities]
-		priorities = [10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 15, 0, 13]
+		priorities = [10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 14, 15, 0]
 
 	# The colors used for each tooltip, in this order: top border color, bottom border color, top background color, bottom background color.
 	# None of these colors are required, though any colors not specified will be replaced with the default tooltip colors.
@@ -114,7 +114,7 @@
 		level10_colors = ["dark_red", "dark_red", "auto", "auto"]
 		level11_colors = ["green", "green", "auto", "auto"]
 		level12_colors = ["dark_green", "dark_green", "auto", "auto"]
-		level13_colors = ["1_blue_#0000AA", "1_blue_#0000AA", "auto", "auto"]
-		level14_colors = ["3_#AA00AA_#0000AA", "3_#AA00AA_#0000AA", "auto", "auto"]
-		level15_colors = ["auto", "auto", "auto", "auto"]
+		level13_colors = ["red", "red", "auto", "auto"]
+		level14_colors = ["1_blue_#0000AA", "1_blue_#0000AA", "auto", "auto"]
+		level15_colors = ["3_blue_#0000AA", "3_blue_#0000AA", "auto", "auto"]
 
