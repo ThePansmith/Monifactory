@@ -50,6 +50,13 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(32)
 
+    // Lava from Magma
+    event.recipes.gtceu.chemical_reactor('lava_from_magma')
+        .itemInputs('minecraft:magma_block')
+        .outputFluids(Fluid.of('minecraft:lava', 1000))
+        .EUt(32)
+        .duration(120)
+
     // Infinity Dust Blocks
     comapcting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
     comapcting(event, 'kubejs:compressed_infinity_dust_block', 'kubejs:infinity_dust_block');
@@ -171,13 +178,6 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('kubejs:molten_cryotheum', 2000))
         .duration(600)
         .EUt(1920)
-
-    // Diamond -> carbon
-    event.recipes.gtceu.electrolyzer("diamond_decomposition")
-        .itemInputs("gtceu:diamond_dust")
-        .itemOutputs("16x gtceu:carbon_dust")
-        .duration(768)
-        .EUt(30)
 
     // Alternative hv cutter
     event.shaped(
@@ -475,7 +475,7 @@ ServerEvents.recipes(event => {
     ], {
         I: 'gtceu:iron_plate',
         S: 'gtceu:steel_plate',
-        G: '#forge:glass_panes',
+        G: '#forge:glass_panes'
     }
     ).id('waterframes:frame')
 
@@ -487,7 +487,7 @@ ServerEvents.recipes(event => {
     ], {
         F: 'waterframes:frame',
         I: 'gtceu:iron_plate',
-        G: '#forge:glass_panes',
+        G: '#forge:glass_panes'
     }
     ).id('waterframes:projector')
 
@@ -499,7 +499,7 @@ ServerEvents.recipes(event => {
     ], {
         F: 'waterframes:frame',
         I: 'gtceu:iron_plate',
-        G: '#forge:glass_panes',
+        G: '#forge:glass_panes'
     }
     ).id('waterframes:tv')
 
@@ -511,7 +511,7 @@ ServerEvents.recipes(event => {
         ], {
             F: 'waterframes:tv',
             I: 'gtceu:iron_plate',
-            G: '#forge:glass_panes',
+            G: '#forge:glass_panes'
     }
     ).id('waterframes:big_tv')
 
@@ -523,17 +523,9 @@ ServerEvents.recipes(event => {
         ], {
             R: 'minecraft:redstone',
             I: 'gtceu:iron_plate',
-            G: 'gtceu:copper_plate',
+            C: 'gtceu:copper_plate'
     }
     ).id('waterframes:remote')
-
-    // Angel Ring
-        event.remove({ id: 'better_angel_ring:angel_ring' })
-        event.recipes.gtceu.assembler('angel_ring')
-            .itemInputs('32x gtceu:electrum_foil', 'gtceu:rose_gold_ring', Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(), Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT())
-            .itemOutputs('better_angel_ring:angel_ring')
-            .duration(400)
-            .EUt(128)
 
     // Stonecut p2p tunnels, attunement sucks
     const p2p = ["redstone", "item", "fluid", "fe", "light"]
@@ -552,4 +544,77 @@ ServerEvents.recipes(event => {
             });
         });
     }); 
+
+    //LUV Components
+    event.remove({ id: 'gtceu:assembly_line/electric_motor_luv'})
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_motor_luv')
+        .itemInputs('gtceu:long_magnetic_samarium_rod',Item.of('gtceu:long_hsss_rod',2),Item.of('gtceu:hsss_ring',2),Item.of('gtceu:hsss_round',4),Item.of('gtceu:fine_ruridit_wire',64),Item.of('gtceu:niobium_titainum_single_cable',2))
+        .inputFluids(Fluid.of('gtceu:soldering_alloy',144),Fluid.of('gtceu:lubricant',250))
+        .itemOutputs('gtceu:luv_electric_motor')
+        .duration(600)
+        .EUt(6000)
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_electric_motor').EUt(480).duration(4800))
+    
+    event.remove({ id: 'gtceu:assembly_line/electric_pump_luv'})
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_pump_luv')
+        .itemInputs(Item.of('gtceu:luv_electric_motor',1),Item.of('gtceu:niobium_titanium_small_fluid_pipe',1),Item.of('gtceu:hsss_plate',2),Item.of('gtceu:hsss_screw',8),Item.of('gtceu:silicone_rubber_ring',4),Item.of('gtceu:hsss_rotor',1),Item.of('gtceu:niobium_titanium_single_cable',2))
+        .inputFluids(Fluid.of('gtceu:soldering_alloy',144),Fluid.of('gtceu:lubricant',250))
+        .itemOutputs('gtceu:luv_electric_pump')
+        . duration(600)
+        .EUt(6000)
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_electric_pump').EUt(480).duration(4800))
+   
+    event.remove({ id: 'gtceu:assembly_line/conveyor_module_luv'})
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/conveyor_module_luv')
+        .itemInputs(Item.of('gtceu:luv_electric_motor',2),Item.of('gtceu:hsss_round',16),Item.of('gtceu:hsss_plate',2),Item.of('gtceu:hsss_screw',4),Item.of('gtceu:hsss_ring',4) , Item.of('gtceu:niobium_titanium_single_cable',2))
+        .inputFluids(Fluid.of('gtceu:soldering_alloy',144),Fluid.of('gtceu:lubricant',250), Fluid.of('gtceu:styrene_butadiene_rubber',1000))
+        .itemOutputs('gtceu:luv_conveyor_module')
+        .duration(600)
+        .EUt(6000)
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_conveyor_module').EUt(480).duration(4800))
+
+    
+    event.remove({ id: 'gtceu:assembly_line/electric_piston_luv'})
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_piston_luv')
+            .itemInputs(Item.of('gtceu:luv_electric_motor',1),Item.of('gtceu:hsss_plate',4),Item.of('gtceu:hsss_ring',2),Item.of('gtceu:hsss_round',16),Item.of('gtceu:hsss_rod',4),Item.of('gtceu:hsss_gear',1),Item.of('gtceu:small_hsss_gear',2),Item.of('gtceu:niobium_titanium_single_cable',2))
+            .inputFluids(Fluid.of('gtceu:soldering_alloy',144),Fluid.of('gtceu:lubricant',250))
+            .itemOutputs('gtceu:luv_electric_piston')
+            .duration(600)
+            .EUt(6000)
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_electric_piston').EUt(480).duration(4800))
+        
+    event.remove({ id: 'gtceu:assembly_line/dynamo_hatch_luv'})
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/dynamo_hatch_luv')
+            .itemInputs(Item.of('gtceu:long_hsss_rod',4),Item.of('gtceu:hsss_gear',1),Item.of('gtceu:small_hsss_gear',3), Item.of('gtceu:hpic_chip',2),Item.of('#gtceu:circuits/luv',1),Item.of('gtceu:luv_voltage_coil',1))
+            .inputFluids(Fluid.of('gtceu:sodium_potassium',6000),Fluid.of('gtceu:soldering_alloy',720))
+            .itemOutputs('gtceu:luv_energy_output_hatch')
+            .duration(400)
+            .EUt(30720)
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_energy_output_hatch').EUt(480).duration(4800))
+
+            event.remove({ id: 'gtceu:assembly_line/robot_arm_luv'})
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/robot_arm_luv')
+            .itemInputs(Item.of('gtceu:luv_machine_hull',1),Item.of('gtceu:niobium_titanium_spring',4),Item.of('gtceu:small_hsss_gear',3), Item.of('gtceu:luv_electric_motor',2),Item.of('gtceu:luv_electric_piston',1),Item.of('#gtceu:circuits/luv',1),Item.of('#gtceu:circuits/iv',2),Item.of('#gtceu:circuits/ev',2),Item.of('gtceu:niobium_titanium_single_cable',4))
+            .inputFluids(Fluid.of('gtceu:soldering_alloy',576),Fluid.of('gtceu:lubricant',250))
+            .itemOutputs('gtceu:luv_robot_arm')
+            .duration(600)
+            .EUt(6000)
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_robot_arm').EUt(480).duration(4800))
+            event.remove({ id: 'gtceu:shaped/mega_blast_furnace'})
+    event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_blast_furnace')
+        .itemInputs(Item.of('gtceu:electric_blast_furnace',16),Item.of('gtceu:dense_naquadah_alloy_plate',8),Item.of('gtceu:naquadah_spring',8),Item.of('gtceu:ruthenium_trinium_americium_neutronate_octal_wire',2),Item.of('gtceu:zpm_field_generator',4),Item.of('#gtceu:circuits/zpm',4))
+        .inputFluids('gtceu:soldering_alloy 9216')
+        .itemOutputs(Item.of('gtceu:mega_blast_furnace'))
+        .duration(3000)
+        .EUt(30720)
+        .stationResearch(b => b.researchStack(Item.of('gtceu:electric_blast_furnace')).EUt(131072).CWUt(2048))
+    event.remove({ id: 'gtceu:shaped/mega_vacuum_freezer'})
+    event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_vacuum_freezer')
+        .itemInputs(Item.of('gtceu:vacuum_freezer',16),Item.of('gtceu:dense_rhodium_plated_palladium_plate',8),Item.of('gtceu:niobium_titanium_normal_fluid_pipe',8),Item.of('gtceu:ruthenium_trinium_americium_neutronate_octal_wire',2),Item.of('gtceu:zpm_field_generator',4),Item.of('#gtceu:circuits/zpm',4))
+        .inputFluids('gtceu:soldering_alloy 9216')
+        .itemOutputs(Item.of('gtceu:mega_vacuum_freezer'))
+        .duration(3000)
+        .EUt(30720)
+        .stationResearch(b => b.researchStack(Item.of('gtceu:vacuum_freezer')).EUt(131072).CWUt(2048))
+
 })

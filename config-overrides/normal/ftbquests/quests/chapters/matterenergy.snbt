@@ -42,7 +42,7 @@
 		{
 			dependencies: ["4174A6C6403DD245"]
 			description: [
-				"Normally, this block acts as a source of &echannels&r, but those mechanics are disabled by default in &5monifactory&r."
+				"Normally, this block acts as a source of &echannels&r, but that mechanic is disabled by default in &5Monifactory&r."
 				""
 				"You don't have to make this to operate a network when channels are disabled, but if you do, &eyour network will consume less power&r than if it did not have a Controller. Plus, they look kind of cool."
 				""
@@ -1393,6 +1393,33 @@
 			title: "&9ME Requester"
 			x: 6.75d
 			y: 11.5d
+		}
+		{
+			dependencies: ["410EA68D6EF15CEC"]
+			description: ["Managing P2P tunnels can be a pain in large numbers, thankfully, the &6Advanced Memory Card&r fixes that, by allowing you to manage all of your connections within a single card, and bind and unbind things on the fly, among other features."]
+			id: "1AC8700C190E84BC"
+			rewards: [{
+				count: 3
+				id: "2143755D5F938861"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "They really do have a GUI for everything now"
+			tasks: [{
+				id: "75CE8F67A574D433"
+				item: {
+					Count: 1b
+					id: "betterp2p:advanced_memory_card"
+					tag: {
+						gui: 3b
+						selectedIndex: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "&9Better P2P Management"
+			x: 2.5d
+			y: 5.5d
 		}
 	]
 	title: "Matter-Energy"

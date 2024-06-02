@@ -6,7 +6,7 @@ recipes:
 
   # Whether to remove Block/Ingot compression and decompression in the Crafting Table.
   # Default: true
-  disableManualCompression: true
+  disableManualCompression: false
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
   # Default: false
@@ -14,16 +14,16 @@ recipes:
 
   # Whether to make crafting recipes for Bricks, Firebricks, Nether Bricks, and Coke Bricks harder.
   # Default: false
-  harderBrickRecipes: false
+  harderBrickRecipes: true
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
   # Default: false
-  nerfWoodCrafting: false
+  nerfWoodCrafting: true
 
   # Whether to make Wood related recipes harder.
   # Excludes sticks and planks.
   # Default: false
-  hardWoodRecipes: false
+  hardWoodRecipes: true
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
@@ -31,16 +31,16 @@ recipes:
 
   # Whether to make Redstone related recipes harder.
   # Default: false
-  hardRedstoneRecipes: false
+  hardRedstoneRecipes: true
 
   # Whether to make Vanilla Tools and Armor recipes harder.
   # Excludes Flint and Steel, and Buckets.
   # Default: false
-  hardToolArmorRecipes: false
+  hardToolArmorRecipes: true
 
   # Whether to make miscellaneous recipes harder.
   # Default: false
-  hardMiscRecipes: false
+  hardMiscRecipes: true
 
   # Whether to make Glass related recipes harder. Default: true
   hardGlassRecipes: true
@@ -51,7 +51,7 @@ recipes:
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
-  hardAdvancedIronRecipes: false
+  hardAdvancedIronRecipes: true
 
   # Whether to make coloring blocks like Concrete or Glass harder.
   # Default: false
@@ -59,7 +59,7 @@ recipes:
 
   # Whether to remove charcoal smelting recipes from the vanilla furnace.
   # Default: true
-  harderCharcoalRecipe: false
+  harderCharcoalRecipe: true
 
   # Whether to make the Flint and Steel recipe require steel parts.
   # Default: true.
@@ -107,11 +107,11 @@ worldgen:
   oreVeins:
     # The grid size (in chunks) for ore vein generation
     # Default: 3
-    oreVeinGridSize: 2
+    oreVeinGridSize: 3
 
     # The maximum random offset (in blocks) from the grid for generating an ore vein.
     # Default: 12
-    oreVeinRandomOffset: 6
+    oreVeinRandomOffset: 0
 
     # Prevents regular vanilla ores from being generated outside GregTech ore veins
     # Default: true
@@ -159,10 +159,18 @@ machines:
   # Default: 100
   energyUsageMultiplier: 100
 
+  # Energy use multiplier for prospectors.
+  # Default: 100
+  prospectorEnergyUseMultiplier: 100
+
   # Whether machines or boilers damage the terrain when they explode.
   # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
   # Default: true
-  doesExplosionDamagesTerrain: false
+  doesExplosionDamagesTerrain: true
+
+  # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
+  # Default: false
+  harmlessActiveTransformers: false
 
   # Divisor for Recipe Duration per Overclock.
   # Default: 2.0
@@ -308,6 +316,12 @@ tools:
   # Amount of blocks that can be spray painted at once
   # Default: 16
   sprayCanChainLength: 16
+
+# Config options for Game Mechanics
+gameplay:
+  # Enable hazardous materials
+  # Default: true
+  hazardsEnabled: false
 
 # Config options for Mod Compatibility
 compat:

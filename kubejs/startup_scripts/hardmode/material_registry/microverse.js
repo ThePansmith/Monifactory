@@ -9,13 +9,6 @@ event.create("fluorite") // Hardmode only
 .components('calcium', '2x fluorine')
 .addOreByproducts('sphalerite', 'bastnasite', 'topaz')
 
-event.create("snowchestite") // Hardmode only
-.dust().ore()
-.color(0x274c9f).iconSet('shiny')
-.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-// .components('3x naquadah_oxide', 'pyromorphite')
-// .addOreByproducts('chalcopyrite', 'vanadium_magnetite', 'naquadah') // Naquadah is replaced with naquadah hydroxide in expert_processing.js
-
 event.create("darmstadtite") // Hardmode only
 .dust().ore(2, 1)
 .iconSet('dull')
@@ -28,4 +21,5 @@ event.create("dulysite") // Hardmode only
 .components('duranium', '3x chlorine')
 .addOreByproducts('sphalerite', 'duranium', 'europium')
 
+// Snowchestite is in naqline.js
 })

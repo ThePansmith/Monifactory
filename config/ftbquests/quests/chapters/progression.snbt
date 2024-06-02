@@ -1502,7 +1502,10 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["5E829641B6FE96E5"]
+			dependencies: [
+				"5E829641B6FE96E5"
+				"7AF06CB391779388"
+			]
 			id: "1B1D3A66B847D129"
 			tasks: [{
 				id: "41FE8DE484FF65DD"
@@ -1514,7 +1517,10 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["0C9A9F33EEA3AB5E"]
+			dependencies: [
+				"0C9A9F33EEA3AB5E"
+				"4DED2A24CB1A56F5"
+			]
 			description: ["&6Monic Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Twelve circuits. Unlike past mainframes, you will need to craft more than just a few of them."]
 			id: "5601A05D8361551D"
 			subtitle: "The Final Circuit!"
@@ -1555,7 +1561,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["0F56F4E642BC2B85"]
+			dependencies: [
+				"0F56F4E642BC2B85"
+				"2D5677EA9F47AA83"
+			]
 			id: "248ABB7F26EB72EE"
 			tasks: [{
 				id: "58B3E75584D6D2D6"
@@ -1658,7 +1667,7 @@
 		{
 			dependencies: [
 				"45B743CB23CA5735"
-				"113E9543ADB1666B"
+				"5A07988F5AD20A06"
 			]
 			id: "0F56F4E642BC2B85"
 			tasks: [{
@@ -1674,6 +1683,8 @@
 			dependencies: [
 				"4EA1E0D437528747"
 				"45B743CB23CA5735"
+				"7E93D88827F83E1A"
+				"4DF92773C82F4AAC"
 			]
 			id: "5054D3FA7E96EB83"
 			tasks: [{
@@ -1688,7 +1699,8 @@
 		{
 			dependencies: [
 				"45B743CB23CA5735"
-				"060A5766B021FC77"
+				"2343B68110805282"
+				"434142F777A2CCBE"
 			]
 			id: "7979D07FBDC6D170"
 			tasks: [{

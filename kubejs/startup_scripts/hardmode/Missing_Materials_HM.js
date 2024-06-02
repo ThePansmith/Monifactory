@@ -6,4 +6,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         return;
     }
     GTMaterials.RhodiumSulfate.setProperty($PropertyKey.DUST, new $DustProperty());
+    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_DENSE)
+    GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+    GTMaterials.Berkelium.addFlags(GTMaterialFlags.GENERATE_FRAME)
 })
