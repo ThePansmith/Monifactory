@@ -4,7 +4,6 @@ Meownifactory!
 Meowni approved!
 Measure once, cut twice!
 Measure twice, cut once!
-Featuring post-tank gameplay!
 Now with 30% more circuits!
 Now you're crafting with fluids!
 That cat ate my circuits!
@@ -53,8 +52,15 @@ Greg approved mascot!
 You are crafting in stacks, right?
 Full of Circuits!
 Crafting Trees!
-It's even funnier the third time!
 Have you tried turning it off and on again?
 The machines need power to work!
 The discord has a art channel!
 Dynamos output through the excitation coil!
+node graph out of date. rebuilding
+You like crafting circuits, don't you?
+In remembrance of Gregicality
+New Horizons!
+Chemical Engineering in Minecraft!
+The Day of Reckoning
+Do your homework first!
+/reload
