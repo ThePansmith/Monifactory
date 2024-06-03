@@ -77,6 +77,9 @@ ServerEvents.tags('item', event => {
 	// enderio!!!!
 	event.add('forge:heads', 'enderio:enderman_head')
 
+    event.add('forge:microminers', '/kubejs:microminer_t/')
+    event.add('forge:microminers', '/kubejs:stabilized_microminer_t/')
+
     unifyChisel(event);
 })
 

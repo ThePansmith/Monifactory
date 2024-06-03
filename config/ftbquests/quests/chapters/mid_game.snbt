@@ -5,7 +5,7 @@
 	group: ""
 	icon: "nuclearcraft:plutonium_rtg"
 	id: "7D825FFA33DC85A7"
-	order_index: 8
+	order_index: 7
 	quest_links: [
 		{
 			id: "4864F8F7C33860D9"
@@ -1764,7 +1764,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "74CFD980F2E43686"
-				item: "gtceu:tungsten_carbide_plate"
+				item: "gtceu:double_tungsten_carbide_plate"
 				type: "item"
 			}]
 			title: "&2Tungsten Carbide Double Plates"

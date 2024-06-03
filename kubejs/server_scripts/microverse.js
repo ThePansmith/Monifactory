@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
             F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:mv_combustion',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').weakNBT()
-        }, 2
+        }
     )
 
     // T3 Microminer
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
             F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:hv_combustion',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:reinforced"}').weakNBT()
-        }, 3
+        }
     )
 
     // T4 Microminer
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
             F: 'kubejs:signalum_micro_miner_core',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').weakNBT(),
             D: 'thermal:dynamo_compression'
-        }, 3
+        }
     )
 
     // T5 Microminer
@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').weakNBT()
-        }, 3
+        }
     )
 
     // T6 Microminer
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:resonant"}').weakNBT()
-        }, 3
+        }
     )
 
     // T7 Microminer
@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:luv_field_generator',
             E: 'kubejs:ender_energy_manipulator', // TODO: REPLACE WITH REAL DE COMPONENT
             W: 'kubejs:warp_engine'
-        }, 4
+        }
     )
 
     // T8 Microminer
@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
             D: 'kubejs:warp_core',
             M: 'kubejs:warp_controller',
             E: 'kubejs:warp_engine'
-        }, 4
+        }
     )
 
     // T9 Microminer
@@ -414,6 +414,7 @@ ServerEvents.recipes(event => {
             '64x gtceu:fine_tritanium_wire')
         .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:naquadria 576')
         .itemOutputs('kubejs:universal_navigator')
+        .stationResearch(b => b.researchStack('kubejs:stellar_creation_data').CWUt(96,384000).EUt(491520))
         .duration(6000)
         .EUt(491520)
   
@@ -430,12 +431,9 @@ ServerEvents.recipes(event => {
             '32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('kubejs:extradimensional_navigator')
-        .duration(6000)
-        .EUt(3932160)
-        .stationResearch(b => b
-            .researchStack('kubejs:stellar_creation_data')
-            .CWUt(96, 384000)
-            .EUt(491520)
+        .stationResearch(b => b.researchStack('kubejs:universal_navigator').CWUt(160, 640000).EUt(3932160))
+          .duration(6000)
+          .EUt(3932160)
         )
 
     // Electrum Engine Frame

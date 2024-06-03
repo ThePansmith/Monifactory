@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', '#gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter',  'kubejs:resonant_energy_core')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('gtceu:loot_superfabricator')
-        // requires research (sim chamber with data module)
+        // .stationResearch(b => b.researchStack(Item.of('hostilenetworks:loot_fabricator')).EUt(1966080).CWUt(8192))
         .duration(1200)
         .EUt(1966080)
         

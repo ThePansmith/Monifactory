@@ -67,7 +67,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.modifyAll((id, vein) => {
         vein.density(0.8)
         vein.discardChanceOnAirExposure(0.3)
-        vein.indicatorGenerators().clear()
     })
 
 }
