@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         event.remove({ id: "watercollector:watercollector" })
         event.remove({ id: "thermal:device_rock_gen" })
         event.remove({ output: 'systeams:stirling_boiler' })
-
+        event.remove({ id: "bountiful:crafting/bountyboard" })
 
         event.shaped(
             'thermal:dynamo_numismatic', [
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
                     B: "minecraft:water_bucket"
                 }
             )
-           
+
             event.remove({ id: "thermal:device_rock_gen" })
             event.shaped(
                 "thermal:device_rock_gen", [
@@ -97,35 +97,6 @@ ServerEvents.recipes(event => {
                 P: "gtceu:black_steel_plate",
                 B: "minecraft:bucket"
             }
-            )
-    
-            event.shaped(
-                'thermal:dynamo_numismatic', [
-                    ' A ',
-                    'BCB',
-                    'DED'
-                ], {
-                    A: 'kubejs:excitationcoil',
-                    B: 'gtceu:zeron_100_plate',
-                    C: 'ironfurnaces:diamond_furnace',
-                    D: 'enderio:vibrant_gear',
-                    E: 'kubejs:redstone_transmission_coil'
-                }
-            )
-
-            event.shapeless('systeams:stirling_boiler', ['steamdynamo:steam_dynamo', 'systeams:boiler_pipe'])
-
-            event.shaped(
-                'systeams:boiler_pipe', [
-                    ' C ',
-                    'ABA',
-                    ' D '
-                ], {
-                    A: 'gtceu:copper_plate',
-                    B: 'minecraft:bucket',
-                    C: 'gtceu:iron_gear',
-                    D: '#enderio:fused_quartz'
-                }
             )
 }}
 

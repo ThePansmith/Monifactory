@@ -3,8 +3,7 @@
 ServerEvents.recipes(event => {
 
     // snad
-    event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snadrecipe')
-    event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
+
 
     // snaded sand snad
     comapcting(event, 'kubejs:compressed_sand', 'minecraft:sand');
@@ -419,10 +418,6 @@ ServerEvents.recipes(event => {
     }
     ).id('kubejs:not_a_wood_gear')
 
-    //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
-    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
-    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
-
     //Avaritia Replacement recipes
     comapcting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
 
@@ -617,4 +612,6 @@ ServerEvents.recipes(event => {
         .EUt(30720)
         .stationResearch(b => b.researchStack(Item.of('gtceu:vacuum_freezer')).EUt(131072).CWUt(2048))
 
+    event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['gtceu:uraninite_dust'])
+    event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['kubejs:resonant_clathrate'])
 })

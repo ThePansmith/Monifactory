@@ -302,7 +302,7 @@ ServerEvents.recipes(event => {
             E: 'kubejs:creative_energy_data',
             T: 'kubejs:creative_tank_data',
             Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
-            U: 'gtceu:subatomic_digital_assembler', // breaks HM since its not in it
+            U: 'gtceu:subatomic_digital_assembler', 
             R: 'gtceu:uiv_robot_arm',
             F: 'gtceu:uiv_field_generator',
             O: 'gtceu:uiv_sensor',

@@ -64,3 +64,4 @@ Chemical Engineering in Minecraft!
 The Day of Reckoning
 Do your homework first!
 /reload
+Why is the C capitalised?
