@@ -257,8 +257,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t7', 
             '64x kubejs:dilithium_crystal', 
-            '64x kubejs:dilithium_crystal', 
-            '64x kubejs:dilithium_crystal', 
+            '64x kubejs:dilithium_crystal',  
             'kubejs:gem_sensor', 
             '64x kubejs:wither_realm_data', 
             '64x kubejs:wither_realm_data', 
