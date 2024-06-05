@@ -2267,7 +2267,7 @@
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
-			description: ["It grants the most wafers, and is required for Highly Advanced Systems-on-Chip."]
+			description: ["Allows for the creation of ASoCs."]
 			id: "524E7A937C2D9DDD"
 			rewards: [{
 				id: "088BB71A2B6A615E"
@@ -2275,7 +2275,6 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "The final Boule."
 			tasks: [{
 				id: "3BC9108FCF45C8A6"
 				item: "gtceu:neutronium_boule"

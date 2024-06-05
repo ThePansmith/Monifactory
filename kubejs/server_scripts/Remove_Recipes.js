@@ -11,7 +11,8 @@ ServerEvents.recipes(event => {
 
     //GT
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
-
+    event.remove({ id: 'gtceu:smelting/dust_mythril__demagnetize_from_dust' })
+    
     //FIXME will get fixed
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__fireclay" })
 
