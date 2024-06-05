@@ -543,7 +543,7 @@ ServerEvents.recipes(event => {
     //LUV Components
     event.remove({ id: 'gtceu:assembly_line/electric_motor_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_motor_luv')
-        .itemInputs('gtceu:long_magnetic_samarium_rod',Item.of('gtceu:long_hsss_rod',2),Item.of('gtceu:hsss_ring',2),Item.of('gtceu:hsss_round',4),Item.of('gtceu:fine_ruridit_wire',64),Item.of('gtceu:niobium_titainum_single_cable',2))
+        .itemInputs('gtceu:long_magnetic_samarium_rod',Item.of('gtceu:long_hsss_rod',2),Item.of('gtceu:hsss_ring',2),Item.of('gtceu:hsss_round',4),Item.of('gtceu:fine_ruridit_wire',64),Item.of('gtceu:niobium_titanium_single_cable',2))
         .inputFluids(Fluid.of('gtceu:soldering_alloy',144),Fluid.of('gtceu:lubricant',250))
         .itemOutputs('gtceu:luv_electric_motor')
         .duration(600)
