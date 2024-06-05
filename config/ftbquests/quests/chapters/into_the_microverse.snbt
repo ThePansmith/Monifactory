@@ -5,7 +5,7 @@
 	group: ""
 	icon: "kubejs:microminer_t1"
 	id: "68F29871402A6B1B"
-	order_index: 6
+	order_index: 5
 	quest_links: [{
 		id: "3494A1A9317B9F3B"
 		linked_quest: "5F688F22A3DB2ADD"
@@ -487,7 +487,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					count: 3L
+					count: 4L
 					id: "36AC33D59E419A30"
 					item: "gcyr:basic_rocket_motor"
 					type: "item"
@@ -617,7 +617,7 @@
 			description: [
 				"The &9Rocket Scanner&r is used to create rockets from various blocks."
 				""
-				"To use it, build the multiblock, then place &6engines&r and &6tanks&r (as well as other blocks) within the given area. Once you are satisfied, press the &eBuild Rocket&r text in the Rocket Scanner's GUI."
+				"To use it, build the multiblock (facing either east or west), then place &6engines&r and &6tanks&r (as well as other blocks) within the given area. Once you are satisfied, press the &eBuild Rocket&r text in the Rocket Scanner's GUI."
 			]
 			id: "193B7038EAB6EFA3"
 			rewards: [{

@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:advanced_integrated_circuit"
 	id: "7041EC01A69404E6"
-	order_index: 5
+	order_index: 4
 	quest_links: [
 		{
 			id: "7471AD069CC1E5EC"
@@ -1124,7 +1124,7 @@
 				""
 				"It's a 3x3x3 multiblock machine capable of &esmelting huge amounts of items per second&r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second."
 				""
-				"Shift and hover over different coil blocks: they tell you the number of items a Multi Smelter can smelt per operation: &e32 items per level&r. The most basic Multi Smelter essentially does 32 items in the same time as a furnace does one. With a set of &6Tungstensteel&r coil blocks, that jumps to 128 items per operation."
+				"Shift and hover over different coil blocks: they tell you the number of items a Multi Smelter can smelt per operation: &e32 items per level&r. The most basic Multi Smelter essentially does 32 items in the same time as a furnace does one. With a set of &9RTM Alloy&r coil blocks, that jumps to 128 items per operation."
 				""
 				"This quest doesn't ask for coils, hatches or buses: feel free to choose whatever combination you want. You'll need &a8 coil blocks&r, &a1 input bus&r, &a1 output bus&r, and &21 maintenance hatch&r, &21 muffler hatch&r, and at least &a1 energy hatch&r, all of any tier."
 				""
