@@ -854,6 +854,7 @@
 				"281C7940CD437B69"
 				"7890528B5B23980B"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"The Moon is a barren, lifeless rock... So why did you want to come here?"
 				""
