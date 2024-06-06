@@ -210,7 +210,7 @@
 		{
 			dependencies: ["45B743CB23CA5735"]
 			description: [
-				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Condensers&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
+				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
 				""
 				"Right now, you should probably use the &6Aqueous Accumulator&r."
 				""
@@ -598,7 +598,7 @@
 		{
 			dependencies: ["45B743CB23CA5735"]
 			description: [
-				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Condensers&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
+				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
 				""
 				"Right now, you should probably use the &6Aqueous Accumulator&r."
 				""

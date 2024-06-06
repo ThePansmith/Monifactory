@@ -979,11 +979,11 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"&9Monifactory replaces this with a water condenser from the Water Condenser mod, as the NuclearCraft Infinite Water Source was overhauled.&f"
+				"&9Monifactory replaces this with a water collector from the Water Collector mod, as the NuclearCraft Infinite Water Source was overhauled.&f"
 				""
 				"Feeding a &3Steam Dynamo&f with water by hand is a pretty silly idea."
 				""
-				"A &6Water Condenser&f will take care of that for you, albeit slowly. It does, however, auto-output the water to making it simple to use."
+				"A &6Water Collector&f will take care of that for you, albeit slowly. It does, however, auto-output the water to making it simple to use."
 				""
 				"&2GTCEu has a Primitive Water Pump, which can do it faster. However, it requires Treated Wood, which requires Creosote from a Coke Oven."
 			]
