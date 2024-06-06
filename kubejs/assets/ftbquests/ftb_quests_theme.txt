@@ -123,11 +123,11 @@ quest_view_border:                  {{widget_border}}
 quest_view_title:                   #AAAAAA
 quest_completed_color:              #2943D6
 quest_started_color:                #96FFFFFF
-quest_not_started_color:            #96FFFFFF
+quest_not_started_color:            #b5b5b5
 quest_locked_color:                 #FF999999
 dependency_line_texture:            ftbquests:textures/gui/dependency.png
 dependency_line_completed_color:    #2943D6
-dependency_line_requires_color:     #00C8C8
+dependency_line_requires_color:     #AAAAAA
 dependency_line_required_for_color: #C8C800
 dependency_line_selected_speed:     1.0
 dependency_line_unselected_speed:   0.0
@@ -139,7 +139,7 @@ dependency_line_uncompleted_color: #5F867E
 checkmark_task_active:   ftblibrary:icons/accept
 checkmark_task_inactive: ftblibrary:icons/accept_gray
 
-quest_not_started_color:            #96FFFFFF
+quest_not_started_color:            #b5b5b5
 quest_locked_color:                 #FF999999
 dependency_line_texture:            ftbquests:textures/gui/dependency.png
 dependency_line_completed_color:    #2943D6

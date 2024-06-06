@@ -30,6 +30,13 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("gtceu:nitric_acid", 1000))
         .duration(200)
         .EUt(500)
+
+    event.recipes.gtceu.chemical_reactor("kubejs:undensify_magma")
+        .itemInputs("kubejs:dense_magma_block")
+        .itemOutputs('16x minecraft:magma_block')
+        .inputFluids(Fluid.of("gtceu:nitric_acid", 1000))
+        .duration(200)
+        .EUt(500)
 })
 
 ServerEvents.tags('item', event => {

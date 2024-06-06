@@ -6,7 +6,7 @@
 	group: ""
 	icon: "kubejs:monic_processor_mainframe"
 	id: "2BEB72BC6C6FB4E9"
-	order_index: 9
+	order_index: 10
 	quest_links: [
 		{
 			id: "54018A95BECC356C"
@@ -2140,7 +2140,7 @@
 			y: -6.75d
 		}
 		{
-			dependencies: ["2D9A95AC50CCB988"]
+			dependencies: ["6F9041F256F517A3"]
 			description: ["A catalyst forged from &9Omnium&r, &6Empowered Gears&r, various enhanced &6Nether Stars&r, and a core made of &6The Ultimate Material&r."]
 			id: "45B17E923E03264B"
 			size: 1.0d
@@ -2187,29 +2187,65 @@
 			y: -11.75d
 		}
 		{
-			dependencies: ["4261BDA34D716EC8"]
-			description: [
-				"The &9Creative Tank&r is a major milestone. Great work!"
-				""
-				"This tank is your first proper creative item, which can be set to a fluid and then provides an infinite quantity of that fluid. &2Use the Creative Tank Provider to supply you with Creative Tanks."
-				""
-				"The GT Creative Tank has been enhanced. You can turn it on and off, configure exactly how much fluid you want it to push and how often, and change which direction the fluid is pushed out. You can even configure the fluid you want directly from EMI!&r"
-				""
-				"From there you can set up tanks with infinite quantities of every fluid you can think of. &3Fluid Solidifiers&r &2or the much more powerful Large Solidification Arrays&r can be used to make infinite of every element you can melt and solidify."
-				"{@pagebreak}"
-				"This is quite a game-changer as far as infrastructure goes. You'll find that many machines won't need to be used for their original purpose anymore. Some major base redesign is in order. Have you considered moving to space?"
-				""
-				"All that said, &ethe pack will still be challenging to complete&r. Infinite resources and power is nice, but it's not everything. There are plenty of materials you can't melt, and creative items will push your factory automation engineering skills to their limits."
-			]
+			dependencies: ["6F9041F256F517A3"]
+			description: [""]
 			id: "2D9A95AC50CCB988"
 			size: 1.0d
 			subtitle: "Now this is not the end.\\nIt is not even the beginning of the end.\\nBut it is, perhaps, the end of the beginning."
 			tasks: [{
 				id: "55C6A472371D7AEC"
-				item: "gtceu:creative_tank"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t1"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t2"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t3"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t4"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t4half"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t5"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t6"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t7"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t8"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t8half"
+							}
+						]
+					}
+				}
+				title: "Stablized Microminers"
 				type: "item"
 			}]
-			title: "&2Creative Tank"
+			title: "Microminer Stablization"
 			x: 32.5d
 			y: -9.25d
 		}
@@ -2312,60 +2348,6 @@
 			title: "&9Neutronium Solar Panel"
 			x: 27.75d
 			y: -11.75d
-		}
-		{
-			dependencies: ["07057CDE4E021BA7"]
-			description: [
-				"The &3Simulation Supercomputer&r is a multiblock structure that performs &9HNN&r simulations like the &3Simulation Chamber&r, but is capable of overclocking these simulations to incredible speeds."
-				""
-				"One of these structures can perform the equivalent work of hundreds of individual Simulation Chambers more efficiently. This will make it far easier to generate pristine matter you'll need for things like &6Dragon Lair Data&r. "
-				""
-				"The data model you place in the input bus will &2have a fixed 30% chance of producing Pristine matter regardless of its tier. &eOverclocking does not alter the chances of pristines&r: those come at fixed rates per iteration."
-				""
-				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your first batch of &9Matter Processor Mainframes&r."
-			]
-			icon: "gtceu:simulation_supercomputer"
-			id: "5A70898C99B828E3"
-			tasks: [
-				{
-					id: "5C159D99CDA8EEE0"
-					item: "gtceu:simulation_supercomputer"
-					type: "item"
-				}
-				{
-					count: 45L
-					id: "5DEC122EDABB5D6F"
-					item: "gtceu:atomic_casing"
-					type: "item"
-				}
-				{
-					count: 26L
-					id: "53593263F0B2BD34"
-					item: { Count: 26b, id: "gtceu:omnium_block" }
-					type: "item"
-				}
-				{
-					count: 18L
-					id: "287AEC44CC7A8A38"
-					item: { Count: 18b, id: "gtceu:vibration_safe_casing" }
-					type: "item"
-				}
-				{
-					count: 13L
-					id: "11FAD5991B3199F5"
-					item: { Count: 13b, id: "gtceu:enderium_block" }
-					type: "item"
-				}
-				{
-					count: 17L
-					id: "081CB54FA393231E"
-					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
-					type: "item"
-				}
-			]
-			title: "&2Simulation Supercomputer"
-			x: 40.25d
-			y: -10.25d
 		}
 		{
 			dependencies: [
@@ -3104,76 +3086,6 @@
 			y: -15.25d
 		}
 		{
-			dependencies: ["2D9A95AC50CCB988"]
-			description: [
-				"Changing the circuit value on your newfound &9Subatomic Digital Assembler&r will allow you to assemble &9Creative ME Fluid Cells&r."
-				""
-				"These are kind of like the previous &9infinite cells&r, but you can partition this one in a &6cell workbench&r to tell what fluids it should stock."
-			]
-			id: "2F21C6B6F145EA81"
-			tasks: [{
-				id: "390C1F547BDF7D2B"
-				item: "ae2:creative_fluid_cell"
-				type: "item"
-			}]
-			title: "&9Creative Fluid Cell"
-			x: 30.25d
-			y: -9.25d
-		}
-		{
-			dependencies: ["5A70898C99B828E3"]
-			description: [
-				"The &3Loot Superfabricator&r is a multiblock structure that is made to match the incredible speeds of the &3Simulation Supercomputer&r."
-				""
-				"One of these structures can perform the equivalent work of hundreds of individual Loot Fabricators more efficiently. This will make it far easier to generate said &6Dragon Lair Data&r from all that pristine matter you now have. "
-				""
-				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second batch of &9Matter Processor Mainframes&r."
-			]
-			icon: "gtceu:loot_superfabricator"
-			id: "161F61C28DBC5941"
-			size: 1.0d
-			tasks: [
-				{
-					id: "47C6FEC171CDB1BC"
-					item: "gtceu:loot_superfabricator"
-					type: "item"
-				}
-				{
-					count: 45L
-					id: "6DCABB6D6F8FC3E5"
-					item: "gtceu:atomic_casing"
-					type: "item"
-				}
-				{
-					count: 26L
-					id: "426F764AA56C5A81"
-					item: "gtceu:omnium_block"
-					type: "item"
-				}
-				{
-					count: 18L
-					id: "3BE7B0A7D3A77CD5"
-					item: "gtceu:shock_proof_cutting_casing"
-					type: "item"
-				}
-				{
-					count: 13L
-					id: "7C30A02C61FE6077"
-					item: "gtceu:energetic_alloy_block"
-					type: "item"
-				}
-				{
-					count: 17L
-					id: "77269C9328705964"
-					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
-					type: "item"
-				}
-			]
-			title: "&9Loot Superfabricator"
-			x: 40.25d
-			y: -9.25d
-		}
-		{
 			dependencies: ["4155AEBF760C42E8"]
 			description: ["Made in the &dOmnic Forge&r, these coils can heat up to 12500K, allowing them to smelt everything."]
 			id: "7C4E04E3EA603000"
@@ -3322,10 +3234,7 @@
 			y: -13.5d
 		}
 		{
-			dependencies: [
-				"281DE48E7260BC8E"
-				"2D9A95AC50CCB988"
-			]
+			dependencies: ["281DE48E7260BC8E"]
 			description: [
 				"&fThe Omnic Forge will allow you to produce post-tank coils and casings. It is also part of the Netherite processing line."
 				"Note that Omnic Matrix Machine Casings are twice as expensive when crafted using the Assembler, so make sure to use your first Omnic Forge to build any extra ones."

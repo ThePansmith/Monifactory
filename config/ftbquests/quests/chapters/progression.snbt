@@ -1452,6 +1452,7 @@
 		}
 		{
 			dependencies: ["6F5BB99060FF03AC"]
+			description: ["May be worth setting up a line for &9Multidimensional CPU Chip&r Processing."]
 			id: "4EB9D1ADC4814330"
 			tasks: [{
 				id: "2AAFA7BC6C6517A8"
@@ -1464,6 +1465,7 @@
 		}
 		{
 			dependencies: ["4612D36D22AB4B34"]
+			description: ["Some of the elements that can be found in &9Scrap Processing&r are used to create this superconductor, funny how the world works."]
 			id: "7704A934F89E4FD9"
 			tasks: [{
 				id: "25F064AE3DC12AA5"
@@ -1479,6 +1481,11 @@
 				"4EB9D1ADC4814330"
 				"6F9041F256F517A3"
 			]
+			description: [
+				"Notiably, these mainframes require a HOTU each to craft."
+				""
+				"Don't let that discourge you, though, they also unlock many useful tools to add to your factory."
+			]
 			id: "07057CDE4E021BA7"
 			tasks: [{
 				id: "6F4F2E13D73644F0"
@@ -1491,6 +1498,7 @@
 		}
 		{
 			dependencies: ["7704A934F89E4FD9"]
+			description: ["At this point, making circuits are beyond second nature for you, so you know what to do."]
 			id: "5E829641B6FE96E5"
 			tasks: [{
 				id: "6AFA814AA43354BE"
@@ -1502,7 +1510,11 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["5E829641B6FE96E5"]
+			dependencies: [
+				"5E829641B6FE96E5"
+				"7AF06CB391779388"
+			]
+			description: ["With these circuits, you have unlocked &aUIV&r, the pentultimate voltage. UIV circuits allow you to craft a variety of things to help improve and redefine your base as you push on."]
 			id: "1B1D3A66B847D129"
 			tasks: [{
 				id: "41FE8DE484FF65DD"
@@ -1514,7 +1526,10 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["0C9A9F33EEA3AB5E"]
+			dependencies: [
+				"0C9A9F33EEA3AB5E"
+				"4DED2A24CB1A56F5"
+			]
 			description: ["&6Monic Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Twelve circuits. Unlike past mainframes, you will need to craft more than just a few of them."]
 			id: "5601A05D8361551D"
 			subtitle: "The Final Circuit!"
@@ -1532,6 +1547,7 @@
 				"5054D3FA7E96EB83"
 				"1E36AFB19932C805"
 			]
+			description: ["The first circuit to require complex SMDs."]
 			id: "4612D36D22AB4B34"
 			tasks: [{
 				id: "7D7522E4B5D0061A"
@@ -1544,6 +1560,7 @@
 		}
 		{
 			dependencies: ["248ABB7F26EB72EE"]
+			description: ["Now with superconductors!"]
 			id: "6F5BB99060FF03AC"
 			tasks: [{
 				id: "621B8C0DD18BFA3A"
@@ -1555,8 +1572,13 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["0F56F4E642BC2B85"]
+			dependencies: [
+				"0F56F4E642BC2B85"
+				"2D5677EA9F47AA83"
+			]
+			description: ["At this point, if you are not already using a &2Multiblock&r to perform your circuit assembler recipes, you really should."]
 			id: "248ABB7F26EB72EE"
+			shape: "hexagon"
 			tasks: [{
 				id: "58B3E75584D6D2D6"
 				item: "kubejs:matter_processor"
@@ -1617,6 +1639,7 @@
 		}
 		{
 			dependencies: ["3D7924B550A1BBA0"]
+			description: ["Possibly strong enough to run vanilla Minecraft at a decent FPS."]
 			id: "0C9A9F33EEA3AB5E"
 			tasks: [{
 				id: "12DD7DF8ACAA29E5"
@@ -1629,6 +1652,7 @@
 		}
 		{
 			dependencies: ["5A8D2BFAF02E6325"]
+			description: ["Infinite power in a circuit."]
 			id: "3D7924B550A1BBA0"
 			tasks: [{
 				id: "36FE3694B99326BE"
@@ -1645,7 +1669,9 @@
 				"68734C70E2D19616"
 				"1E36AFB19932C805"
 			]
+			description: ["Lets put all of this together to create the final circuit tier."]
 			id: "5A8D2BFAF02E6325"
+			subtitle: "The Beginning of The End"
 			tasks: [{
 				id: "3EFB11DA4735807C"
 				item: "kubejs:monic_processor"
@@ -1658,8 +1684,9 @@
 		{
 			dependencies: [
 				"45B743CB23CA5735"
-				"113E9543ADB1666B"
+				"5A07988F5AD20A06"
 			]
+			description: ["Crafted from the aforementioned Circuit Boards, these Processing Units will be used to create &6Matter Circuits&r."]
 			id: "0F56F4E642BC2B85"
 			tasks: [{
 				id: "0AB88809F545701F"
@@ -1674,7 +1701,10 @@
 			dependencies: [
 				"4EA1E0D437528747"
 				"45B743CB23CA5735"
+				"7E93D88827F83E1A"
+				"4DF92773C82F4AAC"
 			]
+			description: ["&6Infinity&r and &6Ultimate Material&r are needed for these."]
 			id: "5054D3FA7E96EB83"
 			tasks: [{
 				id: "61502A1FCAC431BA"
@@ -1688,8 +1718,10 @@
 		{
 			dependencies: [
 				"45B743CB23CA5735"
-				"060A5766B021FC77"
+				"2343B68110805282"
+				"434142F777A2CCBE"
 			]
+			description: ["The final processing unit, these require ultimate gems."]
 			id: "7979D07FBDC6D170"
 			tasks: [{
 				id: "3B038F650DFA2526"

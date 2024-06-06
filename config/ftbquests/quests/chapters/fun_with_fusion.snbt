@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "fun_with_fusion"
 	group: ""
 	icon: "gtceu:luv_fusion_reactor"
@@ -35,6 +35,7 @@
 		{
 			id: "042267F47AE0C415"
 			linked_quest: "69034B168B5134ED"
+			shape: "square"
 			x: -4.0d
 			y: -9.5d
 		}
@@ -73,6 +74,7 @@
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
+			shape: "square"
 			tasks: [
 				{
 					id: "5CA6A3EE3EF632F5"
@@ -422,6 +424,7 @@
 				""
 				"First, set up your 150 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 5x5x5 space."
 				""
+				"{@pagebreak}"
 				"Next, create a hole so you can get inside the cube. Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
 				""
 				"Finally, place the &3Fission Reactor Controller&r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong."

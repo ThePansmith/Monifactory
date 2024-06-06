@@ -226,14 +226,14 @@ if (Platform.isLoaded('create')) {
                 .itemInputs(`${owStone[i][0]}:${owStone[i][1]}`)
                 .itemOutputs(`${owStone[i + 1][0]}:${owStone[i + 1][1]}`)
                 .duration(20)
-                .EUt(128)
+                .EUt(32)
         }
         for (let i = 0; i < neStone.length - 1; ++i) {
             event.recipes.gtceu.atomic_reconstruction(`kubejs:stone_reconstruction/${neStone[i][1]}`)
                 .itemInputs(`${neStone[i][0]}:${neStone[i][1]}`)
                 .itemOutputs(`${neStone[i + 1][0]}:${neStone[i + 1][1]}`)
                 .duration(20)
-                .EUt(128)
+                .EUt(32)
         }
         //remove unused recipe types
         event.remove({ type: 'create:pressing' })

@@ -169,7 +169,7 @@
 		}
 		{
 			dependencies: ["2968DF8A3A0EBF89"]
-			description: ["Search your &6Gravel&r for &6Flint&r. The only main thing you'll need this for is &6Storage Downgrades&r."]
+			description: ["Search your &6Gravel&r for &6Flint&r."]
 			id: "483B16F4D4291C82"
 			subtitle: "&oThis step requires a Sifter at voltage &lLV&r&o or higher.&r"
 			tasks: [{

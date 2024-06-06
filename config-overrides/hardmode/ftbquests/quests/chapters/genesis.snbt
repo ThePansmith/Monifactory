@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "a_harder_genesis"
+	filename: "genesis"
 	group: ""
 	icon: "gtceu:lp_steam_alloy_smelter"
 	id: "3F31AF7EC98363C6"
@@ -88,8 +88,6 @@
 				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
 				"{@pagebreak}"
 				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &9Goethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
-				""
-				"&6Wrought Iron&f is obtained simply by &esmelting Iron a second time&f. It has more durability than Iron, so it is better for making tools, but &cdo not convert your entire Iron supply over to Wrought Iron&f. The two materials are not interchangeable and you'll need Iron or Wrought Iron as demanded by various recipes."
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "03A575FD497A5AC9"
@@ -108,20 +106,12 @@
 			}]
 			shape: "hexagon"
 			subtitle: "ULV Beginnings"
-			tasks: [
-				{
-					count: 12L
-					id: "7849D11F3901C825"
-					item: { Count: 12b, id: "minecraft:iron_ingot" }
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "10027F80A4352150"
-					item: { Count: 12b, id: "gtceu:wrought_iron_ingot" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 12L
+				id: "7849D11F3901C825"
+				item: { Count: 12b, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
 			title: "Iron Supply"
 			x: 2.5d
 			y: -1.25d
@@ -163,8 +153,6 @@
 				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
 				""
 				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
-				""
-				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
 			]
 			icon: {
 				Count: 1b
@@ -195,12 +183,17 @@
 					id: "3BFF1990DCBD639B"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_hammer"
+						id: "gtceu:iron_hammer"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -209,12 +202,15 @@
 					id: "22C0811DDE7EE5CA"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_file"
+						id: "gtceu:iron_file"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -223,12 +219,17 @@
 					id: "40F09DEEC88421D1"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_saw"
+						id: "gtceu:iron_saw"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -237,12 +238,17 @@
 					id: "192FE417E75386C0"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_wrench"
+						id: "gtceu:iron_wrench"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -251,12 +257,15 @@
 					id: "6DEE1E30C5F8BD62"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_screwdriver"
+						id: "gtceu:iron_screwdriver"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -265,12 +274,17 @@
 					id: "7F5ACA0F37F79B0E"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_wire_cutter"
+						id: "gtceu:iron_wire_cutter"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -279,12 +293,15 @@
 					id: "1AC95D8B083B9D7E"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_mortar"
+						id: "gtceu:iron_mortar"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -484,8 +501,6 @@
 				"&aMining Hammers&r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 of blocks (unless you're crouching) and mine quickly."
 				""
 				"&2GTCEu now has Mining Hammers natively! You can craft them with any GT tool material. &r"
-				""
-				"Your free 4 Diamond Mining Hammers should last you a while, and you can always fix them using an anvil and some diamonds."
 			]
 			icon: {
 				Count: 1b
@@ -652,12 +667,13 @@
 				""
 				"Their advantage over &5EnderIO &3Item Conduits&r is their far higher &6throughput&r. An unupgraded EIO Item Conduit transports &98 items per second&r, and up to &9128&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9multiple stacks per second&r."
 				""
-				"They don't auto-extract by themselves, so you have to use &3Conveyor covers&r etc. with them."
+				"They don't auto-extract by themselves, so you have to use &3Conveyor covers&r etc. with them. &9Like with fluid pipes, ULV varients of conveyors have been added, so take a look at those&r."
 				""
 				"The priority mechanics are more complicated, so skip ahead if you are not interested:"
 				"A Destination will have a Routing Value calculated, which is the sum of all Routing Values of the individual Pipes to that Destination. Whichever Destination has the lowest Routing Value will be the one selected for Insertion."
 				"Restrictive Pipes typically have the lowest Priority for insertion due to their higher Routing Value."
 			]
+			icon: "gtceu:tin_normal_item_pipe"
 			id: "348074066C51AEE9"
 			rewards: [{
 				id: "4CB6493F03CEE2DD"
@@ -668,10 +684,34 @@
 			subtitle: "&2Item Pipes are back in GTCEu! They will transport items instantly through them."
 			tasks: [{
 				id: "74F09E4E4C4ECAA4"
-				item: "gtceu:tin_normal_item_pipe"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:tin_small_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:tin_normal_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:tin_large_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:tin_huge_item_pipe"
+							}
+						]
+					}
+				}
+				title: "Tin item pipe"
 				type: "item"
 			}]
-			title: "&2GT Item Pipes"
+			title: "&9GT Item Pipes"
 			x: 0.5d
 			y: 3.5d
 		}
@@ -788,8 +828,6 @@
 				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
 				""
 				"The Flux Capacitor is a &bBauble&r, so open your inventory and look for the Baubles button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
-				""
-				"Finally, you can charge up all those depleted &m&6Dark Boots&r&r and &6The Ender&r swords you've looted."
 			]
 			icon: {
 				Count: 1b
@@ -915,12 +953,13 @@
 		}
 		{
 			dependencies: ["03A575FD497A5AC9"]
+			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
 			id: "527F56DFAD5E20EC"
 			tasks: [{
 				id: "254A555916313F70"
 				item: {
 					Count: 1b
-					id: "gtceu:wrought_iron_axe"
+					id: "gtceu:flint_axe"
 					tag: {
 						DisallowContainerItem: 0b
 						GT.Behaviours: {
@@ -930,14 +969,15 @@
 						GT.Tool: {
 							Damage: 0
 							HarvestLevel: 2
-							MaxDamage: 383
-							ToolSpeed: 4.0f
+							MaxDamage: 63
+							ToolSpeed: 3.5f
 						}
 						HideFlags: 2
 					}
 				}
 				type: "item"
 			}]
+			title: "&9Tree chopping"
 			x: 4.5d
 			y: 0.25d
 		}
@@ -987,12 +1027,6 @@
 					count: 16L
 					id: "775DE07BD8858D13"
 					item: { Count: 16b, id: "minecraft:coal" }
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "36366A657DFB0289"
-					item: { Count: 6b, id: "minecraft:gold_ingot" }
 					type: "item"
 				}
 			]
@@ -1137,6 +1171,19 @@
 				"If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer."
 			]
 			id: "4B338515E84FC51A"
+			rewards: [{
+				id: "7BD3619691C7B6B3"
+				item: {
+					Count: 1b
+					id: "trofers:medium_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:bronze"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4D763AE3D2BE5F1A"
@@ -1210,7 +1257,7 @@
 		{
 			dependencies: ["03A575FD497A5AC9"]
 			description: [
-				"&2GTCEu Fluid Pipes&r are now available, much improved from CE. Their advantage is higher &9throughput&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details. Fluid pipes do require a pump to be able to pull fluids from tanks or machines that lack an autooutput function, but &9ULV pumps (as well as other covers) are now buyable with Monicoins&r."
+				"&2GTCEu Fluid Pipes&r are now available, much improved from CE. Their advantage is higher &9throughput&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details. Fluid pipes do require a pump to be able to pull fluids from tanks or machines that lack an autooutput function, &9consider looking into ULV pumps, as they are cheap&r."
 				""
 				"There are also &6Quadruple and Nonuple Pipes&r for transporting multiple fluid types through the same block."
 				""
@@ -1356,8 +1403,6 @@
 				"&6Batteries&r are &bGregTech &rpower storage for &aEU&r energy."
 				""
 				"Although there are several types of rechargeable batteries you can make, &2Lithium Batteries&r are the best ones, and the only ones you should really consider making."
-				""
-				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are fairly rare. Consider \"buying\" some Lithium with &9Monicoins&r."
 			]
 			id: "694B69F6D7C3CCFA"
 			rewards: [{
@@ -1573,7 +1618,30 @@
 			x: 4.5d
 			y: 8.5d
 		}
+		{
+			dependencies: ["60039C237DE54C70"]
+			description: [
+				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
+				""
+				"There's also a quest chain for &bEnderIO&r Jetpacks (starting with the &6Conductive Iron Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
+			]
+			id: "73A08022268973DB"
+			tasks: [{
+				id: "3DB1300E1D65B31F"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:leadstone"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -2.75d
+			y: 11.75d
+		}
 	]
-	subtitle: ["WIP, HM is not playable yet!"]
+	subtitle: ["WIP, HM is not fully playable yet!"]
 	title: "A Harder Genesis"
 }

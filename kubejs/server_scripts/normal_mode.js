@@ -190,7 +190,6 @@ ServerEvents.recipes(event => {
         gtMachines.forEach(machine => {
             event.remove({ output: ['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine] })
         })
-    }
 
     event.shaped(
         'thermal:dynamo_numismatic', [
@@ -221,16 +220,10 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'systeams:stirling_boiler' })
     event.shapeless('systeams:stirling_boiler', ['steamdynamo:steam_dynamo', 'systeams:boiler_pipe'])
 
-    event.shaped(
-        'systeams:boiler_pipe', [
-            ' C ',
-            'ABA',
-            ' D '
-        ], {
-            A: 'gtceu:copper_plate',
-            B: 'minecraft:bucket',
-            C: 'gtceu:iron_gear',
-            D: '#enderio:fused_quartz'
-        }
-    )
+    //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
+    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
+    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
+}
+
+
 })

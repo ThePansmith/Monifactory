@@ -20,6 +20,13 @@
 Original pack by [Exaxxion](https://github.com/Exaxxion).
 Nomifactory CEu pack by [Tracer](https://github.com/tracer4b).  
 README.md base from [Gregtech CEu](https://github.com/GregTechCEu/GregTech).  
+Meowni (mascot) by Mutso  
 Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
 Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
 Thank you!
+
+## Hard/Harder Mode
+Is Monifactory not Greggy enough for you? Or perhaps you simply want a challenge? Try hard mode! (or even harder mode, if you're not faint of heart!)
+### Installation:
+1. Click on ``./pack-mode-switcher.bat`` if you're on Windows, or ``./pack-mode-switcher.sh`` if you're on Linux/Apple/GNU (located within your minecraft folder)
+2. Follow the prompt to select your mode.

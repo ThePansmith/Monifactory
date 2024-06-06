@@ -81,15 +81,13 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         'ironfurnaces:netherite_furnace', [
-            'ACA',
-            'BDB',
-            'AEA'
+            'ABA',
+            'BCB',
+            'ABA'
         ], {
-            A: '#forge:cobblestone/normal', //FIXME
-            B: 'minecraft:netherite_ingot',
-            C: 'minecraft:magma_block',
-            D: 'ironfurnaces:obsidian_furnace',
-            E: 'minecraft:magma_cream'
+            A: 'gtceu:black_steel_ingot',
+            B: 'ironfurnaces:obsidian_furnace',
+            C: 'gtceu:black_steel_block'
         }
     )
 

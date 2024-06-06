@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:mv_assembler',
             E: 'gtceu:hv_emitter',
             C: '#gtceu:circuits/hv'
-        }, 2
+        }
     ).id('gcyr:shaped/rocket_scanner')
 
     // Space Station Packager
@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:ev_assembler',
             E: 'gtceu:ev_emitter',
             C: '#gtceu:circuits/ev'
-        }, 2
+        }
     ).id('gcyr:shaped/space_station_packager')
 
     //Motors and Tanks

@@ -1748,7 +1748,7 @@
 			description: [
 				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
 				""
-				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"dark_purple\"},{\"text\":\"Monifactory repository\",\"color\":\"dark_purple\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/moni-CEu/moni-CEu-Modern\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"dark_purple\"}]"
+				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"blue\"},{\"text\":\"Monifactory repository\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"blue\"}]"
 				""
 				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid World&r."
 				"{@pagebreak}"
@@ -1770,7 +1770,7 @@
 				title: "Acknowleged"
 				type: "checkmark"
 			}]
-			title: "&5This pack is in alpha!"
+			title: "&9This pack is in alpha!"
 			x: -1.0d
 			y: -4.0d
 		}
@@ -2081,15 +2081,20 @@
 					id: "minecraft:player_head"
 					tag: {
 						SkullOwner: {
-							Id: "a8088bef-5f81-4110-a734-524cd787b270"
+							Id: [I;
+								1207556655
+								-2087172645
+								-1127815359
+								-166568499
+							]
 							Properties: {
 								textures: [{
-									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjkyNTFlMTg2NTdlNzMwNGVhY2VhYzVmOGQ0NDZkMjQ4ZWE0NmFmMmVhYjE0NWY4MTg1Y2VjZTc3OWYxNjQ4In19fQ=="
+									Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWYxYzU4MDEzOGM2MjU0M2I0ZWVmNWU2NjI4MjNhZmNkZDNlNzdjYTQxYTU0ODY3ZWExMmUwZDM5YmNkNTliMSJ9fX0="
 								}]
 							}
 						}
 						display: {
-							Name: "[\"\",{\"text\":\"I bought ores with Nomicoins\",\"italic\":false}]"
+							Name: "{\"text\":\"I bought ores with Monicoins\",\"color\":\"blue\",\"underlined\":false,\"bold\":true,\"italic\":false}"
 						}
 					}
 				}

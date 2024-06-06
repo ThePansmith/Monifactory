@@ -66,8 +66,8 @@ async function packMod(group) {
   fs.copyFileSync('manifest.json', `dist/.tmp/${group}/manifest.json`)
   fs.copyFileSync('dist/modlist.html', `dist/.tmp/${group}/modlist.html`)
   fs.copyFileSync('LICENSE.md', `dist/.tmp/${group}/LICENSE.md`)
-  fs.copyFileSync('pack-mode-switcher.bat', `dist/.tmp/${group}/pack-mode-switcher.bat`)
-  fs.copyFileSync('pack-mode-switcher.sh', `dist/.tmp/${group}/pack-mode-switcher.sh`)
+  fs.copyFileSync('pack-mode-switcher.bat', `dist/.tmp/${group}/overrides/pack-mode-switcher.bat`)
+  fs.copyFileSync('pack-mode-switcher.sh', `dist/.tmp/${group}/overrides/pack-mode-switcher.sh`)
 
   try {
     if (process.platform === 'win32') {
@@ -272,6 +272,7 @@ export const BuildServerTarget = new Juke.Target({
         && !fillet.includes('embeddium')
         && !fillet.includes('embeddiumplus')
         && !fillet.includes('citresewn')
+        && !fillet.includes('legendarytooltips')
         && fillet.includes('.jar')
       )
     })

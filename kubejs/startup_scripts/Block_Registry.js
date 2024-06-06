@@ -74,9 +74,27 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .defaultCutout();
 
+    event.create('reactor_stabilizer')
+        .displayName("Reactor Stabilizer")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout();
+    
+    event.create('reactor_core')
+        .displayName("Reactor Core")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout();
+
     //Dense Ores
     const ores = [
-        "redstone_ore",
+        'redstone_ore',
         'diamond_ore',
         'emerald_ore',
         'gold_ore',
@@ -98,6 +116,15 @@ StartupEvents.registry("block", event => {
 			.tagBlock('forge:ores/dense_' + ore)
 			.requiresTool(true);
 	}
+
+    event.create('dense_magma_block')
+			.displayName(`Dense Magma Block`)
+			.soundType('stone')
+			.resistance(6)
+			.hardness(5)
+			.tagBlock('mineable/pickaxe')
+			.tagBlock('forge:ores/dense_magma')
+			.requiresTool(true);
 
     //EMERGENCY FIX
     event.create('gtceu:dilithium_ore')
@@ -126,7 +153,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/sculk_compound_casing')})
 
     event.create('resonant_sculk_compound_casing', 'gtceu:renderer')
         .displayName("Resonant Sculk Compound Casing")
@@ -144,7 +171,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/fusion')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/resonant_fusion_casing')})
 
     event.create('resonant_fusion_coil', 'gtceu:renderer')
         .displayName("Resonant Fusion Coil")
@@ -153,7 +180,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/coil')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/resonant_fusion_coil')})
 
         event.create("dark_soularium_casing", 'gtceu:renderer')
         .displayName("Dark Soularium Casing")

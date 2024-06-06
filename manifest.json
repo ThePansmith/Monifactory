@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Monifactory",
-  "version": "0.1.4",
+  "version": "0.5.1",
   "author": "Pansmith",
   "overrides": "overrides",
   "files": [
@@ -426,8 +426,8 @@
       "required": true
     },
     {
-      "projectID": 956084,
-      "fileID": 5037268,
+      "projectID": 318551,
+      "fileID": 4770683,
       "required": true
     },
     {
@@ -956,6 +956,11 @@
       "required": true
     },
     {
+      "projectID": 538092,
+      "fileID": 5360516,
+      "required": true
+    },
+    {
       "projectID": 626839,
       "fileID": 5074767,
       "required": true
@@ -968,6 +973,21 @@
     {
       "projectID": 390886,
       "fileID": 5146560,
+      "required": true
+    },
+    {
+      "projectID": 532127,
+      "fileID": 4662781,
+      "required": true
+    },
+    {
+      "projectID": 520110,
+      "fileID": 5138899,
+      "required": true
+    },
+    {
+      "projectID": 638111,
+      "fileID": 4650325,
       "required": true
     },
     {

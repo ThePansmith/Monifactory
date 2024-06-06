@@ -5,7 +5,7 @@
 	group: ""
 	icon: "nuclearcraft:plutonium_rtg"
 	id: "7D825FFA33DC85A7"
-	order_index: 7
+	order_index: 6
 	quest_links: [
 		{
 			id: "4864F8F7C33860D9"
@@ -2134,7 +2134,7 @@
 				""
 				"&rThese are formed like multiblocks. You can add a &3Parallel Control Hatch&r in order to allow them to process &9more recipes&r at the same time, similarly to a &3Processing Array&r. The highest tier of Parallel Control Hatch can facilitate processing &9256 recipes&r at once!"
 				""
-				"&9In Modern, Gregicality Multiblocks was folded into the main mod.&r"
+				"&9Crafting Co-Processers increase the rate that your ME network will \"push\" batches of items out, perfect for machines like these.&r"
 				""
 				"Look up the usages of Parallel Hatches in EMI to see details of all the multiblock machines."
 				""
