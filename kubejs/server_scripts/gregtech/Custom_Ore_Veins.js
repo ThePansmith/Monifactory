@@ -27,7 +27,7 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:overworld/uraninite", vein => {
         vein.weight(30)
         vein.clusterSize(30)
-        vein.density(1.0)
+        vein.density(0.8)
         vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
@@ -44,7 +44,7 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:overworld/tetrahedrite", vein => {
         vein.weight(40)
         vein.clusterSize(30)
-        vein.density(1.0)
+        vein.density(0.8)
         vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
@@ -69,6 +69,19 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0.3)
     })
 
-}
+})
 
+GTCEuServerEvents.fluidVeins(event => {
+
+    event.add('kubejs:void/oil', vein => {
+        vein.dimensions('javd:void')
+        vein.fluid(() => Fluid.of('gtceu:oil_medium').fluid)
+        vein.weight(600)
+        vein.minimumYield(120)
+        vein.maximumYield(720)
+        vein.depletionAmount(2)
+        vein.depletionChance(1)
+        vein.depletedYield(50)
+    });
+}
 )  
