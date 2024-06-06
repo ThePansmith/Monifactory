@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:wetware_processor_computer"
 	id: "58ABB361EA301019"
-	order_index: 7
+	order_index: 8
 	quest_links: [
 		{
 			id: "5522298B1FC30B2B"
@@ -881,8 +881,8 @@
 				type: "item"
 			}]
 			title: "&2Signalum Double Plates"
-			x: 6.0d
-			y: -2.0d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4F8B4DCE7C340418"]
@@ -2267,7 +2267,7 @@
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
-			description: ["It grants the most wafers, and is required for Highly Advanced Systems-on-Chip."]
+			description: ["Allows for the creation of ASoCs."]
 			id: "524E7A937C2D9DDD"
 			rewards: [{
 				id: "088BB71A2B6A615E"
@@ -2275,7 +2275,6 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "The final Boule."
 			tasks: [{
 				id: "3BC9108FCF45C8A6"
 				item: "gtceu:neutronium_boule"
@@ -2929,6 +2928,81 @@
 			title: "&2Platinum Group Processing"
 			x: -6.0d
 			y: 16.25d
+		}
+		{
+			dependencies: ["15DBB22E3DC0AFB7"]
+			description: [
+				"&cThe 4.5th Micro Miner.&r"
+				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Aerotheum Dust&r."
+				""
+				"This miner will be your primary source of mob drops, for all, if not most, of your game."
+				""
+				"When equipped with a &6Sapling&r:"
+				"* Creeper, Skeleton and Zombie skulls"
+				"* Bone"
+				"* Rotten Flesh"
+				"* Gunpowder"
+				"* Slime Block"
+				"* Guardian Scale&r"
+				"When equipped with a &6Block of Netherrack:"
+				"* Wither Skeleton Skull and Bones"
+				"* Blaze Rod"
+				"* Blizz, Blitz and Basalz Rods"
+				"* Ghast Tear"
+				"* Magma Cream"
+				"* Drop of Evil&r"
+				"When equipped with a &6Block of Endstone:"
+				"* Enderman Skull"
+				"* Enderpearl Block"
+				"* Shulker Shell"
+				"* Shulker Pearl&r"
+				"When equipped with &6Ender Eyes:"
+				"* Dragon Lair Data"
+				"* Ender Dragon Head&r"
+				""
+				"When equipped with &6Wither Bones&r:"
+				"&6* Wither Realm Data\\n* Nether Star Block"
+			]
+			id: "19C2D208A2FC9968"
+			rewards: [{
+				id: "7003E20DD8EE9891"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0A014ADA1BC753F1"
+				item: "kubejs:microminer_t4half"
+				type: "item"
+			}]
+			title: "Tier Four and a Half Microminer"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2D47BFA44BDB5E6A"
+				"22E50A6923EBF5CB"
+			]
+			description: [
+				"The Eighth and a Half Micro Miner."
+				"An alternative source for &6Duranium&r (via &6Dulysite Ore&r, mission with &aGemstone Sensors&r), and an alternative source for &6Darmstadtium&r (via &6Darmstadtite Ore&r, mission with &aIridium Neutron Reflectors&r)."
+				""
+				"Minimizes waiting for the &3Fusion Reactor&r."
+			]
+			id: "0C9E7E4644084C94"
+			rewards: [{
+				id: "171A48800572C311"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "769EE75FA2394FBD"
+				item: "kubejs:microminer_t8half"
+				type: "item"
+			}]
+			x: 27.25d
+			y: 18.25d
 		}
 	]
 	title: "Late Game"

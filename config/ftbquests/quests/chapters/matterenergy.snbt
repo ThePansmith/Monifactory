@@ -30,13 +30,6 @@
 			x: 2.5d
 			y: -1.5d
 		}
-		{
-			id: "3DE460B6056D9AD3"
-			linked_quest: "417D97D9E3562F45"
-			shape: "hexagon"
-			x: 2.5d
-			y: 7.0d
-		}
 	]
 	quests: [
 		{
@@ -1404,6 +1397,33 @@
 			title: "&9Better P2P Management"
 			x: 2.5d
 			y: 5.5d
+		}
+		{
+			dependencies: [
+				"6F32A8739D8E792A"
+				"410EA68D6EF15CEC"
+			]
+			description: [
+				"&3Pattern P2P&r is somewhat like the other &aP2P&r types, but is able to copy a pattern provider's patterns to all of its outputs."
+				""
+				"For example, you could have a Pattern P2P Input placed on a pattern provider, then 5 Outputs with the same ID placed on assemblers. All 5 of those assemblers would then &6act as if they each had their own pattern provider that all just so happened to have the same exact patterns&r, and will obey blocking rules, parallelize, and such. "
+			]
+			id: "6646E6DBEF368924"
+			rewards: [{
+				count: 3
+				id: "033E426A87F3FC76"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "3D2DBB6C527CF870"
+				item: "mae2:pattern_p2p_tunnel"
+				type: "item"
+			}]
+			title: "&9Pattern P2P"
+			x: 2.5d
+			y: 7.0d
 		}
 	]
 	title: "Matter-Energy"

@@ -971,11 +971,6 @@
 					type: "item"
 				}
 				{
-					id: "60BDE4F687BB9677"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
 					id: "7927851A2296E98B"
 					item: "gtceu:lv_muffler_hatch"
 					type: "item"
