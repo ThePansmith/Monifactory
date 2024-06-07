@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
 	alloySmeltingVariant(
 		['#forge:ingots/dark_steel', '#forge:dusts/dark_steel'],
 		['minecraft:end_stone', '#forge:dusts/endstone'], // apparently we have dusts/end_stone (doesnt work)
-		'gtceu:end_steel_ingot', 15, 120);
+		'gtceu:end_steel_ingot', 15, 2000);
 
 	alloySmeltingVariant(
 		['#forge:ingots/steel', '#forge:dusts/steel'],
