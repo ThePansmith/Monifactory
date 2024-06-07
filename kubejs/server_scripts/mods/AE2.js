@@ -271,6 +271,12 @@ ServerEvents.recipes(event => {
         }
     }).id('kubejs:ae2/charged_certus_quartz_gem')
 
+    event.recipes.gtceu.autoclave("charged_autoclave")
+        .itemInputs(["gtceu:certus_quartz_gem"])
+        .inputFluids("gtceu:distilled_water 100")
+        .itemOutputs('gtceu:charged_certus_quartz_gem')
+        .duration(20)
+        .EUt(480)
 
     // Matter Condenser
     event.remove({ id: 'ae2:network/blocks/io_condenser' })
