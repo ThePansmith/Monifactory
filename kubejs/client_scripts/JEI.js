@@ -8,12 +8,13 @@ JEIEvents.hideItems(event => {
     event.hide('enderio:broken_spawner')
 
     //Hides useless items
-    event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper', 'thermal:constantan_coin'])
+    event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'thermal:constantan_coin'])
 
     //i really hate these kind of mods
     event.hide('ironfurnaces:million_furnace') // rainbow furnace
     event.hide(['ironfurnaces:item_spooky', 'ironfurnaces:item_xmas']) // cosmetic items
     // TODO renable this again. why in the fuck did we disable this?
+    // No upgrade consumables to go from diamond to obsidian or iron to silver without re-enabling more furnaces
     event.hide(['ironfurnaces:upgrade_iron', 'ironfurnaces:upgrade_gold', 'ironfurnaces:upgrade_diamond', 'ironfurnaces:upgrade_emerald', 'ironfurnaces:upgrade_obsidian', 'ironfurnaces:upgrade_crystal', 'ironfurnaces:upgrade_netherite', 'ironfurnaces:upgrade_copper', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_silver', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_iron2', 'ironfurnaces:upgrade_gold2', 'ironfurnaces:upgrade_silver2'])
     event.hide(['ironfurnaces:crystal_furnace', 'ironfurnaces:emerald_furnace', 'ironfurnaces:item_linker', 'ironfurnaces:rainbow_core', 'ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_coal', 'ironfurnaces:allthemodium_furnace', 'ironfurnaces:vibranium_furnace', 'ironfurnaces:unobtainium_furnace', 'ironfurnaces:upgrade_allthemodium', 'ironfurnaces:upgrade_vibranium', 'ironfurnaces:upgrade_unobtainium', 'ironfurnaces:item_heater', 'ironfurnaces:augment_blasting', 'ironfurnaces:augment_smoking', 'ironfurnaces:heater', 'ironfurnaces:augment_generator'])
 
@@ -30,6 +31,14 @@ JEIEvents.hideItems(event => {
     //event.hide(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3', 'thermal:upgrade_augment_4', 'thermal:dynamo_output_augment'])
     event.hide(['thermal:coal_coke', 'thermal:coal_coke_block'])
     event.hide(['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter'])
+    //Thermal unused items
+    event.hide(/thermal:.*_block/)
+    event.hide(/thermal:.*_ingot/)
+    event.hide(/thermal:.*_dust/)
+    event.hide(/thermal:.*_plate/)
+    event.hide(/thermal:.*_nugget/)
+    event.hide(/thermal:.*_glass/)
+    event.hide(/thermal:.*_gear/)
 
     //EnderIO
     event.hide(['enderio:conduit', 'enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block', "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])
@@ -112,6 +121,8 @@ JEIEvents.hideItems(event => {
     event.hide(/^sophisticatedstorage:.+tier_upgrade$/)
 
     // Chipped
+    // Adding this in case chipped is okay to be hidden since it adds a ton of items
+    //event.hide(/chipped:*/)
     event.hide(['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'])
 
     //Greg Milk
