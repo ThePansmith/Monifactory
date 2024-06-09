@@ -336,6 +336,22 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(32)
 
+    //Clear Glass
+    if (isNormalMode) {
+        event.recipes.gtceu.alloy_smelter("kubejs:clear_glass")
+            .itemInputs('minecraft:glass')
+            .itemOutputs('enderio:clear_glass')
+            .duration(80)
+            .EUt(16)
+    }
+    if (isHardMode) {
+        event.recipes.gtceu.alloy_smelter("kubejs:clear_glass")
+            .itemInputs('minecraft:glass', 'gtceu:tiny_soda_ash_dust')
+            .itemOutputs('enderio:clear_glass')
+            .duration(80)
+            .EUt(16)
+    }
+
     // Enlightened clear glass
     event.recipes.gtceu.alloy_smelter("kubejs:enlightened_clear_glass")
         .itemInputs('#enderio:clear_glass', 'minecraft:glowstone')
