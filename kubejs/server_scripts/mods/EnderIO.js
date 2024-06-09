@@ -2,7 +2,17 @@ ServerEvents.recipes(event => {
     // Item and Fluid Conduits //
 
     // Make lowest tier fluid conduit pressurized
-    event.remove({ id: "enderio:fluid_conduit" })
+    // event.remove({ id: "enderio:fluid_conduit" }) for some reason this doesnt exist
+    event.shaped(
+        "4x enderio:pressurized_fluid_conduit", [
+        'BBB',
+        'GGG',
+        'BBB'
+    ], {
+        B: "enderio:conduit_binder",
+        G: '#forge:glass/colorless'
+    }
+    ).id('kubejs:pressurized_fluid_conduit')
     if (isNormalMode) {
         // Manual item conduit
         event.shaped(
@@ -15,17 +25,6 @@ ServerEvents.recipes(event => {
             W: "gtceu:pulsating_alloy_single_wire"
         }
         ).id('kubejs:item_conduit')
-
-        event.shaped(
-            "4x enderio:pressurized_fluid_conduit", [
-            'BBB',
-            'GGG',
-            'BBB'
-        ], {
-            B: "enderio:conduit_binder",
-            G: '#forge:glass/colorless'
-        }
-        ).id('kubejs:pressurized_fluid_conduit')
 
         // Manual ender fluid conduit
         event.shaped(
@@ -71,17 +70,6 @@ ServerEvents.recipes(event => {
         }
         ).id('kubejs:item_conduit')
 
-        event.shaped(
-            "4x enderio:pressurized_fluid_conduit", [
-            'BBB',
-            'GGG',
-            'BBB'
-        ], {
-            B: "enderio:conduit_binder",
-            G: '#forge:glass/colorless'
-        }
-        ).id('kubejs:pressurized_fluid_conduit')
-
         // Manual ender fluid conduit
         event.shaped(
             "4x enderio:ender_fluid_conduit", [
@@ -112,11 +100,6 @@ ServerEvents.recipes(event => {
             .duration(80)
             .EUt(16)
     }
-}
-if (isHarderMode) {
-
-    event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
-    event.remove({ output: "enderio:pressurized_fluid_conduit" })
 }
 
 
@@ -660,7 +643,6 @@ if (isHarderMode) {
     }).id('kubejs:soul_binder')
 
     // powered spawner
-    // TODO Fixme
     event.remove({ id: 'enderio:powered_spawner' })
     event.shaped('enderio:powered_spawner', [
         'ABA',
@@ -668,11 +650,15 @@ if (isHarderMode) {
         'DED'
     ], {
         A: '#forge:ingots/electrical_steel',
-        B: '#forge:heads',
+        B: 'enderio:broken_spawner',
         C: 'enderio:ensouled_chassis',
         D: '#forge:gems/vibrant_crystal',
         E: 'enderio:z_logic_controller'
-    });
+    }).modifyResult((grid, result) => {
+        let input = grid.find('enderio:broken_spawner')
+        return result.withNBT(input.nbt)
+    }).id('kubejs:powered_spawner')
+
 
     // slicensplice
     event.replaceInput({ id: 'enderio:slice_and_splice' }, '#forge:ingots/soularium', '#forge:plates/tungsten_steel')
