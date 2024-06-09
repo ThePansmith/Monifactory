@@ -1,0 +1,2579 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "omnium"
+	group: ""
+	icon: "kubejs:mote_of_omnium"
+	id: "7057E5E8D08CFB0B"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7A1937956C0E37A2"
+			rewards: [{
+				id: "3A6E75F062893E3D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1D1F307724DB7104"
+				item: "gtceu:manyullyn_ingot"
+				type: "item"
+			}]
+			x: -15.25d
+			y: 4.5d
+		}
+		{
+			id: "7FB19A396C483BCA"
+			rewards: [{
+				id: "0E6CFECD19F3DB3D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "12C285B444ACA6DE"
+				item: "gtceu:blue_steel_ingot"
+				type: "item"
+			}]
+			x: -16.75d
+			y: 4.5d
+		}
+		{
+			id: "0698BFFB87DC0BB4"
+			rewards: [{
+				id: "570E6050F373CED8"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "4D8B70089D9E4BFD"
+				item: "gtceu:red_steel_ingot"
+				type: "item"
+			}]
+			x: -18.25d
+			y: 4.5d
+		}
+		{
+			id: "2C5C23565C5D37C4"
+			rewards: [{
+				id: "4B69BD5FECA6B9CB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "3A18F1B63CE85891"
+				item: "gtceu:dark_soularium_ingot"
+				type: "item"
+			}]
+			x: -19.75d
+			y: 4.5d
+		}
+		{
+			id: "22F0CD5A32CC6E5A"
+			rewards: [{
+				id: "505543312973C99C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "0E07AC70A37F7FF8"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			x: -21.25d
+			y: 4.5d
+		}
+		{
+			id: "7AF2B373C595AD3C"
+			rewards: [{
+				id: "4F864EB737AF5013"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "34B2EC90A773CE6E"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: -21.25d
+			y: 6.0d
+		}
+		{
+			id: "4972BBCB37572AB8"
+			rewards: [{
+				id: "3408B9131CA8A05F"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "66F34E8CDC151C1F"
+				item: "gtceu:electrum_flux_ingot"
+				type: "item"
+			}]
+			x: -19.75d
+			y: 6.0d
+		}
+		{
+			id: "518F9062A0A8CDE5"
+			rewards: [{
+				id: "1CAE9EE4D97CC4F7"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "180E78712B44B69C"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			x: -18.25d
+			y: 6.0d
+		}
+		{
+			id: "0F236710A90BB87D"
+			rewards: [{
+				id: "487ABEC3F9B8806B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "3800FF20CC3083CC"
+				item: "gtceu:signalum_ingot"
+				type: "item"
+			}]
+			x: -16.75d
+			y: 6.0d
+		}
+		{
+			id: "71AFC6DF574A2772"
+			rewards: [{
+				id: "639676BE00069746"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "7E427250277EB28A"
+				item: "gtceu:enderium_ingot"
+				type: "item"
+			}]
+			x: -15.25d
+			y: 6.0d
+		}
+		{
+			id: "0C1EA572F862671E"
+			rewards: [{
+				id: "650D1178E8F08B1E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "030488BD5B6FAF51"
+				item: "gtceu:crystal_matrix_ingot"
+				type: "item"
+			}]
+			x: -15.25d
+			y: 7.5d
+		}
+		{
+			id: "78CD7FA185BA058D"
+			rewards: [{
+				id: "012C20D8EF895D16"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "718C4984CFF3C13A"
+				item: "gtceu:hsss_ingot"
+				type: "item"
+			}]
+			x: -16.75d
+			y: 7.5d
+		}
+		{
+			id: "1A2FE45689B810DB"
+			rewards: [{
+				id: "053B5771E08422BD"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2B04A4944D38B919"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			x: -18.25d
+			y: 7.5d
+		}
+		{
+			id: "33FF25A98D8061A6"
+			rewards: [{
+				id: "172179C2A1A9BA4C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1A9CE530334F012E"
+				item: "gtceu:hsse_ingot"
+				type: "item"
+			}]
+			x: -19.75d
+			y: 7.5d
+		}
+		{
+			id: "1EB5F4307E97BDE4"
+			rewards: [{
+				id: "02AA43B7D5836A30"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "77702ECA133F0D7C"
+				item: "gtceu:magnalium_ingot"
+				type: "item"
+			}]
+			x: -21.25d
+			y: 7.5d
+		}
+		{
+			id: "1E4F5EFF88111E5F"
+			rewards: [{
+				id: "720C475F97B31D6B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "210F0A43C16A302C"
+				item: "gtceu:ruridit_ingot"
+				type: "item"
+			}]
+			x: -21.25d
+			y: 9.0d
+		}
+		{
+			id: "1BDD035C84344247"
+			rewards: [{
+				id: "3BEF247B5F912410"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "6D182FBF3372B224"
+				item: "gtceu:mythril_ingot"
+				type: "item"
+			}]
+			x: -19.75d
+			y: 9.0d
+		}
+		{
+			id: "0849ED1D9654737E"
+			rewards: [{
+				id: "6EE4462176869B25"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1CC386D64E815E9C"
+				item: "gtceu:microversium_ingot"
+				type: "item"
+			}]
+			x: -18.25d
+			y: 9.0d
+		}
+		{
+			id: "6EFE39A1E450EBE9"
+			rewards: [{
+				id: "114E24E6078292C4"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1BBDDD32D8D9E607"
+				item: "gtceu:end_steel_ingot"
+				type: "item"
+			}]
+			x: -16.75d
+			y: 9.0d
+		}
+		{
+			id: "057BA65D91CB28EC"
+			rewards: [{
+				id: "4550A92EB8924C54"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "03FD47B1C100C054"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			x: -15.25d
+			y: 9.0d
+		}
+		{
+			id: "5649963B4A7B77AF"
+			rewards: [{
+				id: "267A9FF80913D3E8"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "73CD445A3FD120B9"
+				item: "gtceu:electrical_steel_ingot"
+				type: "item"
+			}]
+			x: -15.25d
+			y: 10.5d
+		}
+		{
+			id: "0C38F3A56B8AA0F0"
+			rewards: [{
+				id: "11448E638E66C698"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2DBD0A73BF7203C0"
+				item: "gtceu:energetic_alloy_ingot"
+				type: "item"
+			}]
+			x: -16.75d
+			y: 10.5d
+		}
+		{
+			id: "7054DE12EB634583"
+			rewards: [{
+				id: "660CE3626FB0BBEE"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "7430B1F8EA163CC3"
+				item: "gtceu:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			x: -18.25d
+			y: 10.5d
+		}
+		{
+			id: "11A861B380147258"
+			rewards: [{
+				id: "2B1D78D774F591D6"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "5C45D8F6D5DE5A36"
+				item: "gtceu:dark_steel_ingot"
+				type: "item"
+			}]
+			x: -19.75d
+			y: 10.5d
+		}
+		{
+			id: "23AC13947362DCEB"
+			rewards: [{
+				id: "3A68AB01CDF0C314"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "218209BA14E8C27D"
+				item: "gtceu:soularium_ingot"
+				type: "item"
+			}]
+			x: -21.25d
+			y: 10.5d
+		}
+		{
+			description: ["As the name suggests, this catalyst is formed from exotic non-elemental materials and alloys."]
+			id: "685105B09E709238"
+			size: 2.0d
+			subtitle: "A small appetizer, before the &9Omnium&r main course."
+			tasks: [{
+				id: "22B130024672DD1D"
+				item: "kubejs:exotic_materials_catalyst"
+				type: "item"
+			}]
+			x: -18.25d
+			y: 0.0d
+		}
+		{
+			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
+			id: "069F02D77F297DBE"
+			shape: "hexagon"
+			size: 3.0d
+			subtitle: "Man, that's a LOT of quests linked to this one."
+			tasks: [{
+				count: 64L
+				id: "47CF28B800685F57"
+				item: "kubejs:mote_of_omnium"
+				type: "item"
+			}]
+			x: 5.75d
+			y: 0.0d
+		}
+		{
+			id: "29A831AAD5FEA7B6"
+			rewards: [{
+				id: "0083B8B993E62C97"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2A18150AED6654A0"
+				item: "kubejs:solidified_hydrogen"
+				type: "item"
+			}]
+			title: "Element 001: Hydrogen"
+			x: -7.25d
+			y: 4.25d
+		}
+		{
+			id: "08FF7E8879D1C365"
+			rewards: [{
+				id: "7B221E157C278841"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "5466CB40D26D41A1"
+				item: "gtceu:lithium_dust"
+				type: "item"
+			}]
+			title: "Element 003: Lithium"
+			x: -7.25d
+			y: 5.75d
+		}
+		{
+			id: "3F0364E4451EE5F7"
+			rewards: [{
+				id: "293D11B010217ED8"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "7F51882C3AA46C2F"
+				item: "gtceu:sodium_dust"
+				type: "item"
+			}]
+			title: "Element 011: Sodium"
+			x: -7.25d
+			y: 7.25d
+		}
+		{
+			id: "1B7D82084BE2CC05"
+			rewards: [{
+				id: "19BCB427A5E27286"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1370B52463F32A9B"
+				item: "gtceu:potassium_dust"
+				type: "item"
+			}]
+			title: "Element 019: Potassium"
+			x: -7.25d
+			y: 8.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "280BD4210E6023CB"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "4AB4402CD6C24A60"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -7.25d
+			y: 10.25d
+		}
+		{
+			id: "12A5E582D3D7172B"
+			rewards: [{
+				id: "5FDF3EC872E17574"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "18DFDCEC4EEBF0C7"
+				item: "gtceu:caesium_dust"
+				type: "item"
+			}]
+			title: "Element 055: Caesium"
+			x: -7.25d
+			y: 11.75d
+		}
+		{
+			description: ["This element exists but is not required for the Mote of Omnium."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "5C26E519A1ADE101"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "05331EA282CEDFD3"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -5.75d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "2CBE460630C68C20"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "35503A7E48AE5901"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -7.25d
+			y: 13.25d
+		}
+		{
+			id: "0C1727B6BF16F8BF"
+			rewards: [{
+				id: "4E454B80AEA6F863"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2E97316606566250"
+				item: "gtceu:barium_dust"
+				type: "item"
+			}]
+			title: "Element 056: Barium"
+			x: -5.75d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "324DD2416B2D4C2C"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "0FD397C2B5DF134D"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -5.75d
+			y: 10.25d
+		}
+		{
+			id: "6339CB316E2EFBF2"
+			rewards: [{
+				id: "156EAA2A185CCF42"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "4BA66C155AD48D20"
+				item: "gtceu:calcium_dust"
+				type: "item"
+			}]
+			title: "Element 020: Calcium"
+			x: -5.75d
+			y: 8.75d
+		}
+		{
+			id: "05AAF87782E4D061"
+			rewards: [{
+				id: "1422999BEEBB2A9A"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "0EBCAF538183E966"
+				item: "gtceu:magnesium_dust"
+				type: "item"
+			}]
+			title: "Element 012: Magnesium"
+			x: -5.75d
+			y: 7.25d
+		}
+		{
+			id: "34F328D516FECD9D"
+			rewards: [{
+				id: "00D5406019BA5F84"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "49BFB5189A1A187A"
+				item: "gtceu:beryllium_ingot"
+				type: "item"
+			}]
+			title: "Element 004: Beryllium"
+			x: -5.75d
+			y: 5.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "5B01C01E6EBAEE06"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "60586536962BEDCA"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -4.25d
+			y: 8.75d
+		}
+		{
+			id: "1AEFF50FBA79F68E"
+			rewards: [{
+				id: "6983CD45FACFDB95"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "7A34913317B5B5FA"
+				item: "gtceu:yttrium_ingot"
+				type: "item"
+			}]
+			title: "Element 039: Yttrium"
+			x: -4.25d
+			y: 10.25d
+		}
+		{
+			id: "5F7AC5AB936009C4"
+			rewards: [{
+				id: "77F3B699189844E0"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "0DD474056EF2DAE4"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			title: "Element 022: Titanium"
+			x: -2.75d
+			y: 8.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "40B8D70AD01CAD63"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "2378AC0ACC979AE9"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -2.75d
+			y: 10.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "76A66F490FF04F78"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "36CF89649A0EDADA"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -2.75d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "00714DEFD4A63F85"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "7CFF45B56B87CB65"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -2.75d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "529D6CD40CF76E5C"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "6A0F21077F29F3F0"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -1.25d
+			y: 13.25d
+		}
+		{
+			id: "5C058F7853B1B190"
+			rewards: [{
+				id: "67F27EE7F1FF1ED7"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "788BEB0AD970011B"
+				item: "gtceu:tantalum_ingot"
+				type: "item"
+			}]
+			title: "Element 073: Tantalum"
+			x: -1.25d
+			y: 11.75d
+		}
+		{
+			id: "618F55BE6A852471"
+			rewards: [{
+				id: "1E7E28A0514A76DF"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "48C1BA6ACFA0850C"
+				item: "gtceu:niobium_ingot"
+				type: "item"
+			}]
+			title: "Element 041: Niobium"
+			x: -1.25d
+			y: 10.25d
+		}
+		{
+			id: "7313C8F4E3727096"
+			rewards: [{
+				id: "33C4ECACC5689809"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "4770E3426DC8E242"
+				item: "gtceu:vanadium_ingot"
+				type: "item"
+			}]
+			title: "Element 023: Vanadium"
+			x: -1.25d
+			y: 8.75d
+		}
+		{
+			id: "184FF2F8753591CF"
+			rewards: [{
+				id: "650814B84137EC98"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "58AD435A736E8D3D"
+				item: "gtceu:chromium_ingot"
+				title: "Element 024: Chromium"
+				type: "item"
+			}]
+			x: 0.25d
+			y: 8.75d
+		}
+		{
+			id: "5AC287005FBC30C1"
+			rewards: [{
+				id: "11E7CC76EF47A7AB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "4B883C5F6E8241CD"
+				item: "gtceu:molybdenum_ingot"
+				type: "item"
+			}]
+			title: "Element 042: Molybdenum"
+			x: 0.25d
+			y: 10.25d
+		}
+		{
+			id: "35E9DF74D2CF99E1"
+			rewards: [{
+				id: "59A3773E8F361F38"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1BBD16FB68359EB5"
+				item: "gtceu:tungsten_ingot"
+				type: "item"
+			}]
+			title: "Element 074: Tungsten"
+			x: 0.25d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "6EF8C20772F2C2C1"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "1FFD01747ED3065C"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 0.25d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "74A71437EC283073"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "3D4E52DCBCD9FCF3"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 1.75d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "238FC8CD6357863D"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "6504F1D372067A9C"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 1.75d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "33F6FCCA576F3A7D"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "47EF74EB53090778"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 1.75d
+			y: 10.25d
+		}
+		{
+			id: "2498CF27CC2451A8"
+			rewards: [{
+				id: "718CCADC1D92FA3D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2C959EAC777EDDF7"
+				item: "gtceu:manganese_ingot"
+				type: "item"
+			}]
+			title: "Element 025: Manganese"
+			x: 1.75d
+			y: 8.75d
+		}
+		{
+			id: "7626155C76B402BC"
+			rewards: [{
+				id: "2A634ADD278F115E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "52D03997352CBB99"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Element 026: Iron"
+			x: 3.25d
+			y: 8.75d
+		}
+		{
+			id: "2D10AF317CF15C2D"
+			rewards: [{
+				id: "75C2BF349928E776"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "7F8BE261B47A8A52"
+				item: "gtceu:ruthenium_ingot"
+				type: "item"
+			}]
+			title: "Element 044: Ruthenium"
+			x: 3.25d
+			y: 10.25d
+		}
+		{
+			id: "38236C07D9A262D4"
+			rewards: [{
+				id: "6A9F7243E60F35C9"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1661E00B6DBAF28F"
+				item: "gtceu:osmium_ingot"
+				type: "item"
+			}]
+			title: "Element 076: Osmium"
+			x: 3.25d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "73DBDE3C2DAE6651"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "1F38C2AC2993FFAA"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 3.25d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "79BAB3062D71BD4F"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "16FA8F2750C2E1D5"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 4.75d
+			y: 13.25d
+		}
+		{
+			id: "7D7DF6E949309CF0"
+			rewards: [{
+				id: "4A7A9533A582D5DC"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "36AB2341A1FA5293"
+				item: "gtceu:iridium_ingot"
+				type: "item"
+			}]
+			title: "Element 077: Iridium"
+			x: 4.75d
+			y: 11.75d
+		}
+		{
+			id: "4AF842CBEA060BE6"
+			rewards: [{
+				id: "085EB1C87C0F3110"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "372CF80455C3F9B1"
+				item: "gtceu:rhodium_ingot"
+				type: "item"
+			}]
+			title: "Element 045: Rhodium"
+			x: 4.75d
+			y: 10.25d
+		}
+		{
+			id: "6B3C70DF89839030"
+			rewards: [{
+				id: "2B487B3A90E7461C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "797D026751B542D4"
+				item: "gtceu:cobalt_ingot"
+				type: "item"
+			}]
+			title: "Element 027: Cobalt"
+			x: 4.75d
+			y: 8.75d
+		}
+		{
+			id: "3817D351D1F96A4B"
+			rewards: [{
+				id: "1A12170C3A5303BC"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1A4566EAFD2E3FAD"
+				item: "gtceu:nickel_ingot"
+				type: "item"
+			}]
+			title: "Element 028: Nickel"
+			x: 6.25d
+			y: 8.75d
+		}
+		{
+			id: "2AF7FE11929BF4C6"
+			rewards: [{
+				id: "37F4A516E6E72FD9"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "400144CC6EC5B9D9"
+				item: "gtceu:palladium_ingot"
+				type: "item"
+			}]
+			title: "Element 046: Palladium"
+			x: 6.25d
+			y: 10.25d
+		}
+		{
+			id: "0236C343D489422F"
+			rewards: [{
+				id: "48AE4D768044D660"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "15007E9C66263DC2"
+				item: "gtceu:platinum_ingot"
+				type: "item"
+			}]
+			title: "Element 078: Platinum"
+			x: 6.25d
+			y: 11.75d
+		}
+		{
+			id: "02E53BE709964361"
+			rewards: [{
+				id: "03B5F0928F0BE80B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "33CAFB92099DF030"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			title: "Element 110: Darmstadtium"
+			x: 6.25d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "6814C570D1807D02"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "62D5CFC1ED25D016"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 7.75d
+			y: 13.25d
+		}
+		{
+			id: "26FE70B88812449C"
+			rewards: [{
+				id: "52A3D6772BE03CE0"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "580BFEDF15CF4BDC"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			title: "Element 079: Gold"
+			x: 7.75d
+			y: 11.75d
+		}
+		{
+			id: "12E1B65FE4FDDED0"
+			rewards: [{
+				id: "1913FC126D2C52A6"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "0796C151CCFADD1C"
+				item: "gtceu:silver_ingot"
+				type: "item"
+			}]
+			title: "Element 047: Silver"
+			x: 7.75d
+			y: 10.25d
+		}
+		{
+			id: "5510AB4428CB418C"
+			rewards: [{
+				id: "7EBBDCC8ABBA016E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "45215B492F86D28E"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			title: "Element 029: Copper"
+			x: 7.75d
+			y: 8.75d
+		}
+		{
+			id: "54D339631B16C8BA"
+			rewards: [{
+				id: "0C0079F763B7FCAB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "23DA0B31B85D2698"
+				item: "gtceu:zinc_ingot"
+				type: "item"
+			}]
+			title: "Element 030: Zinc"
+			x: 9.25d
+			y: 8.75d
+		}
+		{
+			id: "7DD09F924C4563C5"
+			rewards: [{
+				id: "0FED84E9E92E31F0"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "3B7EABB3D366B4B3"
+				item: "gtceu:cadmium_dust"
+				type: "item"
+			}]
+			title: "Element 048: Cadmium"
+			x: 9.25d
+			y: 10.25d
+		}
+		{
+			id: "167184732A00C2C9"
+			rewards: [{
+				id: "1F6B56E9EEC819DE"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "79D7CB79FD7E111B"
+				item: "kubejs:solidified_mercury"
+				type: "item"
+			}]
+			title: "Element 080: Mercury"
+			x: 9.25d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "3F435B59A8172EEC"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "3DD01F9C8F3AF682"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 9.25d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "5833FD5F79B2C4A7"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "49F7AA6E01325ABF"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 10.75d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "4FB6C83CD7A67A29"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "4755BF9C0C39DD72"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 10.75d
+			y: 11.75d
+		}
+		{
+			id: "26560B3E86598C7B"
+			rewards: [{
+				id: "242932BBCF8A631F"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "3C93EDAD21F96B8C"
+				item: "gtceu:indium_ingot"
+				type: "item"
+			}]
+			title: "Element 049: Indium"
+			x: 10.75d
+			y: 10.25d
+		}
+		{
+			id: "2A97A3E6499943ED"
+			rewards: [{
+				id: "7CBBBC97B0E2D4B0"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "3AA5D8D5A29DEE1F"
+				item: "gtceu:gallium_ingot"
+				type: "item"
+			}]
+			title: "Element 031: Gallium"
+			x: 10.75d
+			y: 8.75d
+		}
+		{
+			id: "23E439B06FEDCBD2"
+			rewards: [{
+				id: "2D289578CF4CCD11"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "6D025FFAE2DA84EC"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			title: "Element 013: Aluminium"
+			x: 10.75d
+			y: 7.25d
+		}
+		{
+			id: "51F29424A6E8854A"
+			rewards: [{
+				id: "48F7F7EAEC63866B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "5F53F6B05D05918E"
+				item: "gtceu:boron_dust"
+				type: "item"
+			}]
+			title: "Element 005: Boron"
+			x: 10.75d
+			y: 5.75d
+		}
+		{
+			id: "3003985CA580E132"
+			rewards: [{
+				id: "29D6D55188ACC923"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "12EA9134136C8A55"
+				item: "gtceu:carbon_dust"
+				type: "item"
+			}]
+			title: "Element 006: Carbon"
+			x: 12.25d
+			y: 5.75d
+		}
+		{
+			id: "46D7C080F3260CCF"
+			rewards: [{
+				id: "48937109C31819DC"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "42781DD1AE131BC3"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			title: "Element 014: Silicon"
+			x: 12.25d
+			y: 7.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "0BECC337F6F04C1B"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "3BEA54F5E27AB810"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 12.25d
+			y: 8.75d
+		}
+		{
+			id: "240FE845630AAFF3"
+			rewards: [{
+				id: "48ED443662E2C9DF"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "4EA05A1EF7615BEA"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
+			title: "Element 050: Tin"
+			x: 12.25d
+			y: 10.25d
+		}
+		{
+			id: "3F7A5B3E28241F74"
+			rewards: [{
+				id: "50ADCB5603611747"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2F0567BC2B72E45D"
+				item: "gtceu:lead_ingot"
+				type: "item"
+			}]
+			title: "Element 082: Lead"
+			x: 12.25d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "3AE675AF38B9D5F6"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "53C3276FBD897DCE"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 12.25d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "65B9515B66899487"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "3ECC2EF26A892994"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 13.75d
+			y: 13.25d
+		}
+		{
+			description: ["This element exists but is not needed for the Mote of Omnium."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "049F92F8429AA1D7"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "6063AA18E3DEAE08"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 13.75d
+			y: 11.75d
+		}
+		{
+			id: "628C591C09539D9C"
+			rewards: [{
+				id: "13B541C65326670C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "605365BE6908092F"
+				item: "gtceu:antimony_ingot"
+				type: "item"
+			}]
+			title: "Element 051: Antimony"
+			x: 13.75d
+			y: 10.25d
+		}
+		{
+			id: "2B6BEB7D6D50729A"
+			rewards: [{
+				id: "09EE4F582161830B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "7A6E2E30232A97D1"
+				item: "gtceu:arsenic_dust"
+				type: "item"
+			}]
+			title: "Element 033: Arsenic"
+			x: 13.75d
+			y: 8.75d
+		}
+		{
+			id: "38FA465F10D73830"
+			rewards: [{
+				id: "32E658B926E1B819"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "160D526519C8EA91"
+				item: "gtceu:phosphorus_dust"
+				type: "item"
+			}]
+			title: "Element 015: Phosphorus"
+			x: 13.75d
+			y: 7.25d
+		}
+		{
+			id: "017B1546B6660CFF"
+			rewards: [{
+				id: "50F09ED5E47DD181"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "33841BAD1BD643B4"
+				item: "kubejs:solidified_nitrogen"
+				type: "item"
+			}]
+			title: "Element 007: Nitrogen"
+			x: 13.75d
+			y: 5.75d
+		}
+		{
+			id: "374B64ECA7B53E8E"
+			rewards: [{
+				id: "2A25A3BDB7CBFA5B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "60F6AB566B6CCF60"
+				item: "kubejs:solidified_oxygen"
+				type: "item"
+			}]
+			title: "Element 008: Oxygen"
+			x: 15.25d
+			y: 5.75d
+		}
+		{
+			id: "625D3EE01D2826B3"
+			rewards: [{
+				id: "69EABBE20489266C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "6558CB9479A1E181"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			title: "Element 016: Sulfur"
+			x: 15.25d
+			y: 7.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "75A097BAF7E17A44"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "1AB8A1D37BAAE597"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 15.25d
+			y: 8.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "276199EF138BB832"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "54DCDB3D31D1FA48"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 15.25d
+			y: 10.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "301894E7BFE7713C"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "6D781A3E06E574ED"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 15.25d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "78D7E51501F6EAA6"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "545C8EBECF195798"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 15.25d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "3A2A86B01DB25431"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "25BA93FB88E7B002"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 16.75d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "5918FEFC4207C009"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "51253244DA5E8708"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 16.75d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "0096A1539D08EEE9"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "42A47DB2F06A33A6"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 16.75d
+			y: 10.25d
+		}
+		{
+			description: ["This element exists but is not needed for the Mote of Omnium."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "489EF91C7BFA6CD3"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "2B304D6452354D4E"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 16.75d
+			y: 8.75d
+		}
+		{
+			id: "1F52E04DC740B35F"
+			rewards: [{
+				id: "26E698A0376EB1FB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "090AFFCFD06629B5"
+				item: "kubejs:solidified_chlorine"
+				type: "item"
+			}]
+			title: "Element 017: Chlorine"
+			x: 16.75d
+			y: 7.25d
+		}
+		{
+			id: "540315EB4FEBF444"
+			rewards: [{
+				id: "6799399D17A423A1"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "6EC1AD03F93C1DBD"
+				item: "kubejs:solidified_fluorine"
+				type: "item"
+			}]
+			title: "Element 009: Fluorine"
+			x: 16.75d
+			y: 5.75d
+		}
+		{
+			id: "307603394F82CAC5"
+			rewards: [{
+				id: "2C66F8C04C2654D4"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2635A779998B63C5"
+				item: "kubejs:solidified_helium"
+				type: "item"
+			}]
+			title: "Element 002: Helium"
+			x: 18.25d
+			y: 4.25d
+		}
+		{
+			id: "0EBFA5614203CD52"
+			rewards: [{
+				id: "60FEF413E5C1DB3D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1C5BDD71B2362B9B"
+				item: "kubejs:solidified_neon"
+				type: "item"
+			}]
+			title: "Element 010: Neon"
+			x: 18.25d
+			y: 5.75d
+		}
+		{
+			id: "52CB3EC92D197874"
+			rewards: [{
+				id: "6BCF053D2468907A"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "6DD2D8A814A0957A"
+				item: "kubejs:solidified_argon"
+				type: "item"
+			}]
+			title: "Element 018: Argon"
+			x: 18.25d
+			y: 7.25d
+		}
+		{
+			id: "27A0672343FF6EDC"
+			rewards: [{
+				id: "41AE891E869296D7"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "19917DE7D833675C"
+				item: "kubejs:solidified_krypton"
+				type: "item"
+			}]
+			title: "Element 036: Krypton"
+			x: 18.25d
+			y: 8.75d
+		}
+		{
+			id: "124EDA6BAEBBDB74"
+			rewards: [{
+				id: "64144B13DF802F17"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "74EE969854124AD9"
+				item: "kubejs:solidified_xenon"
+				type: "item"
+			}]
+			title: "Element 054: Xenon"
+			x: 18.25d
+			y: 10.25d
+		}
+		{
+			id: "4AFFC9C1EF40B51B"
+			rewards: [{
+				id: "15FB689CF6CCCBF0"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "295417389863432E"
+				item: "kubejs:solidified_radon"
+				type: "item"
+			}]
+			title: "Element 086: Radon"
+			x: 18.25d
+			y: 11.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "28F857E640856705"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "1D580BC8F158F2DB"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 18.25d
+			y: 13.25d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "44EBC7425DC62E9D"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "2F810506ADB78A2B"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 16.75d
+			y: 17.0d
+		}
+		{
+			id: "1D121CE2184DE927"
+			rewards: [{
+				id: "21E688819A45CEA1"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "4E2E25F90D282329"
+				item: "gtceu:lutetium_ingot"
+				type: "item"
+			}]
+			title: "Element 071: Lutetium"
+			x: 16.75d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "30D60D50D13C9841"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "00FFB91BF274ED1C"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 15.25d
+			y: 17.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "42CC6ED30E1B6426"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "11B14FDAD4B1CE84"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 13.75d
+			y: 17.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "37B39E929051399D"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "0491C4676072C5A8"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 12.25d
+			y: 17.0d
+		}
+		{
+			id: "3EBD87ED35DE0B85"
+			rewards: [{
+				id: "229A8BDFA143D3C2"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "09739A9CD7C942C8"
+				item: "kubejs:stabilized_einsteinium"
+				type: "item"
+			}]
+			title: "Element 099: Einsteinium"
+			x: 10.75d
+			y: 17.0d
+		}
+		{
+			id: "228ED1D646687FD3"
+			rewards: [{
+				id: "239BCA8F0CC3EACB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "5C82BA32EC6438E1"
+				item: "kubejs:stabilized_californium"
+				type: "item"
+			}]
+			title: "Element 098: Californium"
+			x: 9.25d
+			y: 17.0d
+		}
+		{
+			id: "1FC9CD2CCBB5CCAA"
+			rewards: [{
+				id: "1B3A2FE80EC5F19C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "0167F14D9404D951"
+				item: "kubejs:stabilized_berkelium"
+				type: "item"
+			}]
+			title: "Element 097: Berkelium"
+			x: 7.75d
+			y: 17.0d
+		}
+		{
+			id: "258EC49955A63798"
+			rewards: [{
+				id: "6779520EB62A9BFA"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2D966A7728B1F634"
+				item: "kubejs:stabilized_curium"
+				type: "item"
+			}]
+			title: "Element 096: Curium"
+			x: 6.25d
+			y: 17.0d
+		}
+		{
+			id: "23501E5DE1966006"
+			rewards: [{
+				id: "0760565D84C3DB46"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "214FCD7413AA3913"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			title: "Element 095: Americium"
+			x: 4.75d
+			y: 17.0d
+		}
+		{
+			id: "605453FD9CF94A5C"
+			rewards: [{
+				id: "67F96AEDB0CF4C7C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "25459EF1E7D4E42A"
+				item: "kubejs:stabilized_plutonium"
+				type: "item"
+			}]
+			title: "Element 094: Plutonium"
+			x: 3.25d
+			y: 17.0d
+		}
+		{
+			id: "2A4CE47C72F3BA11"
+			rewards: [{
+				id: "3B99349492C75919"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "4CD9A992BA9369B3"
+				item: "kubejs:stabilized_neptunium"
+				type: "item"
+			}]
+			title: "Element 093: Neptunium"
+			x: 1.75d
+			y: 17.0d
+		}
+		{
+			id: "5E4BDA13267DEEFB"
+			rewards: [{
+				id: "4269577220DBC9A3"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "2D9B6CE7ADB52193"
+				item: "kubejs:stabilized_uranium"
+				type: "item"
+			}]
+			title: "Element 092: Uranium"
+			x: 0.25d
+			y: 17.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "0DBFCD22B2D8A2CB"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "6C8DA081E2286280"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -1.25d
+			y: 17.0d
+		}
+		{
+			id: "2765204AF30440EC"
+			rewards: [{
+				id: "2F62CE45100464AB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "6EC9E38FA00F407E"
+				item: "gtceu:thorium_ingot"
+				type: "item"
+			}]
+			title: "Element 090: Thorium"
+			x: -2.75d
+			y: 17.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "6B26F440EBCC22F6"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "4F6E48715E0C5BAA"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -4.25d
+			y: 17.0d
+		}
+		{
+			id: "342F4D1F139C4A63"
+			rewards: [{
+				id: "4950364C592C88CF"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "614D506AA2DB3884"
+				item: "gtceu:lanthanum_dust"
+				title: "Element 057: Lanthanum"
+				type: "item"
+			}]
+			x: -4.25d
+			y: 15.5d
+		}
+		{
+			id: "678E41A9266009B7"
+			rewards: [{
+				id: "345A05A75CE4B3DA"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "70AE63D650E73F01"
+				item: "gtceu:cerium_dust"
+				type: "item"
+			}]
+			title: "Element 058: Cerium"
+			x: -2.75d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "7B39112B02E26A9D"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "24B55861EFAF8268"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: -1.25d
+			y: 15.5d
+		}
+		{
+			id: "529EBBB89B8C284B"
+			rewards: [{
+				id: "4113A5AB7AA85F74"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "3190588EFB89794E"
+				item: "gtceu:neodymium_ingot"
+				type: "item"
+			}]
+			title: "Element 060: Neodymium"
+			x: 0.25d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "795AA060D8034CCA"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "766668A11AA8C6F8"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 1.75d
+			y: 15.5d
+		}
+		{
+			id: "7CBBDD73E086D891"
+			rewards: [{
+				id: "2FF3B3DFE5307B67"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "63AAA745812C9050"
+				item: "gtceu:samarium_ingot"
+				type: "item"
+			}]
+			title: "Element 062: Samarium"
+			x: 3.25d
+			y: 15.5d
+		}
+		{
+			id: "6F4B41E96A51AC2D"
+			rewards: [{
+				id: "14885C758AD16DCF"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "30F6B21E55451C22"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
+			title: "Element 063: Europium"
+			x: 4.75d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "05CA6E9EF8A2998B"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "0AB27BF61429F77A"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 6.25d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "1EF77421454DB57C"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "553656BF6C7757FE"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 7.75d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "47B3762D4C5E36FF"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "09D088C3C104CD1F"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 9.25d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "722A06B809ADE53E"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "6E2C7F97F3BC488A"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 10.75d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "2B0AF36E8AD20F72"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "52DA9A8A9F9F15D1"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 12.25d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "196C73E769962E05"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "41ECDF721F24C332"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 13.75d
+			y: 15.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "0B476F1E9508C5AD"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "554976A8E03BC564"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 15.25d
+			y: 15.5d
+		}
+		{
+			id: "12F29D29C712433A"
+			rewards: [{
+				id: "5AF4CD69F17E739B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "76E1D344624390C2"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "Element ???: Naquadah"
+			x: 9.25d
+			y: 19.25d
+		}
+		{
+			id: "5BCE9CFFD9D9AD75"
+			rewards: [{
+				id: "0B8D54DE7B65DB12"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "7D5A7D4556C729A9"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			title: "Element ???: Trinium"
+			x: 7.75d
+			y: 19.25d
+		}
+		{
+			id: "2F777772F7F29B37"
+			rewards: [{
+				id: "1C09DF0F5D10CC5D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "158BD1E1A2231F78"
+				item: "gtceu:sculk_compound_ingot"
+				type: "item"
+			}]
+			title: "Element ???: sculk_compound"
+			x: 6.25d
+			y: 19.25d
+		}
+		{
+			id: "5B538E445C4D7025"
+			rewards: [{
+				id: "711DA1C98B50E48C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "3ECA5FA51E0FA360"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			title: "Element ???: Tritanium"
+			x: 4.75d
+			y: 19.25d
+		}
+		{
+			id: "02F14DA9B5285CA3"
+			rewards: [{
+				id: "68BD53AE7A9C6447"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "6B93DC220309E06A"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			title: "Element ???: Duranium"
+			x: 3.25d
+			y: 19.25d
+		}
+	]
+	title: "Omnium"
+}
