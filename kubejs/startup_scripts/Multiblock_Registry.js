@@ -697,6 +697,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('rock_cycle_simulator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('rock_cycle_simulator')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock('gtceu:high_temperature_smelting_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCCCC", "CCCCCCC", "CCCCCCC", "CCCCCCC")
@@ -709,7 +710,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('T', Predicates.blocks("gtceu:tempered_glass"))
             .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
             .where('C', Predicates.blocks("gtceu:high_temperature_smelting_casing").setMinGlobalLimited(20)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
