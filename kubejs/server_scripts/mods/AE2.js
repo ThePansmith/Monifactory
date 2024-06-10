@@ -108,49 +108,6 @@ ServerEvents.recipes(event => {
     }
     ).id('kubejs:ae2/pattern_provider')
 
-    //Higher tier pattern provider recipes
-    event.shaped(
-        "4x ae2:pattern_provider", [
-        'PRP',
-        'AHF',
-        'PPP'
-    ], {
-        P: "gtceu:titanium_plate",
-        R: "gtceu:ev_robot_arm",
-        A: "ae2:annihilation_core",
-        H: "gtceu:ev_machine_hull",
-        F: "ae2:formation_core"
-    }
-    ).id('kubejs:ae2/pattern_provider_1')
-
-    event.shaped(
-        "8x ae2:pattern_provider", [
-        'PRP',
-        'AHF',
-        'PPP'
-    ], {
-        P: "gtceu:tungsten_plate",
-        R: "gtceu:iv_robot_arm",
-        A: "ae2:annihilation_core",
-        H: "gtceu:iv_machine_hull",
-        F: "ae2:formation_core"
-    }
-    ).id('kubejs:ae2/pattern_provider_2')
-
-    event.shaped(
-        "16x ae2:pattern_provider", [
-        'PRP',
-        'AHF',
-        'PPP'
-    ], {
-        P: "gtceu:rhodium_plated_palladium_plate",
-        R: "gtceu:luv_robot_arm",
-        A: "ae2:annihilation_core",
-        H: "gtceu:luv_machine_hull",
-        F: "ae2:formation_core"
-    }
-    ).id('kubejs:ae2/pattern_provider_3')
-
     // Molecular Assembler
     event.remove({ id: 'ae2:network/crafting/molecular_assembler' })
     event.shaped(
@@ -182,49 +139,6 @@ ServerEvents.recipes(event => {
         E: 'ae2:formation_core'
     }
     ).id('kubejs:ae2/interface')
-
-    //Higher tier interface recipes
-    event.shaped(
-        "4x ae2:interface", [
-        'PCP',
-        'AHF',
-        'PPP'
-    ], {
-        P: "gtceu:titanium_plate",
-        C: "gtceu:ev_conveyor_module",
-        A: "ae2:annihilation_core",
-        H: "gtceu:ev_machine_hull",
-        F: "ae2:formation_core"
-    }
-    ).id('kubejs:ae2/interface_1')
-
-    event.shaped(
-        "8x ae2:interface", [
-        'PCP',
-        'AHF',
-        'PPP'
-    ], {
-        P: "gtceu:tungsten_plate",
-        C: "gtceu:iv_conveyor_module",
-        A: "ae2:annihilation_core",
-        H: "gtceu:iv_machine_hull",
-        F: "ae2:formation_core"
-    }
-    ).id('kubejs:ae2/interface_2')
-
-    event.shaped(
-        "16x ae2:interface", [
-        'PCP',
-        'AHF',
-        'PPP'
-    ], {
-        P: "gtceu:rhodium_plated_palladium_plate",
-        C: "gtceu:luv_conveyor_module",
-        A: "ae2:annihilation_core",
-        H: "gtceu:luv_machine_hull",
-        F: "ae2:formation_core"
-    }
-    ).id('kubejs:ae2/interface_3')
 
     // Requester
     event.remove({ id: 'merequester:requester' })
