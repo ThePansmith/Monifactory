@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:naquadah_reactor_i')
         .duration(1500)
         .EUt(122880)
-        .stationResearch(b => b.researchStack(Item.of('gtceu:naquadah_bolt')).EUt(131072).CWUt(2048))
+        .stationResearch(b => b.researchStack(Item.of('gtceu:naquadah_bolt')).EUt(30720).CWUt(16,64000))
 
     event.recipes.gtceu.assembly_line('kubejs:naquadah_reactor_ii')
         .itemInputs('gtceu:computer_monitor_cover', '3x ae2:spatial_pylon', '#gtceu:circuits/uv', '2x gtceu:fusion_glass')
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:naquadah_reactor_ii')
         .duration(1500)
         .EUt(122880)
-        .stationResearch(b => b.researchStack(Item.of('gtceu:naquadah_reactor_i')).EUt(131072).CWUt(2048))
+        .stationResearch(b => b.researchStack(Item.of('gtceu:naquadah_reactor_i')).EUt(122880).CWUt(64,256000))
 
     //Reactor usage
     //TODO: Make recipes not overclockable. I looked through the GregTech KJS integration but am too stupid to figure it out -Ciggy
