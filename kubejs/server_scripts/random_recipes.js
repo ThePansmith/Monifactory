@@ -602,7 +602,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('gtceu:mega_blast_furnace'))
         .duration(3000)
         .EUt(30720)
-        .stationResearch(b => b.researchStack(Item.of('gtceu:electric_blast_furnace')).EUt(131072).CWUt(2048))
+        .stationResearch(b => b.researchStack(Item.of('gtceu:electric_blast_furnace')).EUt(30720).CWUt(16,64000))
     event.remove({ id: 'gtceu:shaped/mega_vacuum_freezer'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_vacuum_freezer')
         .itemInputs(Item.of('gtceu:vacuum_freezer',16),Item.of('gtceu:dense_rhodium_plated_palladium_plate',8),Item.of('gtceu:niobium_titanium_normal_fluid_pipe',8),Item.of('gtceu:ruthenium_trinium_americium_neutronate_octal_wire',2),Item.of('gtceu:zpm_field_generator',4),Item.of('#gtceu:circuits/zpm',4))
@@ -610,7 +610,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('gtceu:mega_vacuum_freezer'))
         .duration(3000)
         .EUt(30720)
-        .stationResearch(b => b.researchStack(Item.of('gtceu:vacuum_freezer')).EUt(131072).CWUt(2048))
+        .stationResearch(b => b.researchStack(Item.of('gtceu:electric_blast_furnace')).EUt(30720).CWUt(16,64000))
 
     event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['gtceu:uraninite_dust'])
     event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['kubejs:resonant_clathrate'])
