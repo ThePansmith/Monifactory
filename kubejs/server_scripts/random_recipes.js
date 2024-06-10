@@ -562,7 +562,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:assembly_line/conveyor_module_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/conveyor_module_luv')
         .itemInputs(Item.of('gtceu:luv_electric_motor',2),Item.of('gtceu:hsss_round',16),Item.of('gtceu:hsss_plate',2),Item.of('gtceu:hsss_screw',4),Item.of('gtceu:hsss_ring',4) , Item.of('gtceu:niobium_titanium_single_cable',2))
-        .inputFluids(Fluid.of('gtceu:soldering_alloy',144),Fluid.of('gtceu:lubricant',250), Fluid.of('gtceu:styrene_butadiene_rubber',1000))
+        .inputFluids(Fluid.of('gtceu:soldering_alloy',144),Fluid.of('gtceu:lubricant',250), Fluid.of('gtceu:styrene_butadiene_rubber',1152))
         .itemOutputs('gtceu:luv_conveyor_module')
         .duration(600)
         .EUt(6000)
