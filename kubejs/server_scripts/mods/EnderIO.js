@@ -2,17 +2,7 @@ ServerEvents.recipes(event => {
     // Item and Fluid Conduits //
 
     // Make lowest tier fluid conduit pressurized
-    // event.remove({ id: "enderio:fluid_conduit" }) for some reason this doesnt exist
-    event.shaped(
-        "4x enderio:pressurized_fluid_conduit", [
-        'BBB',
-        'GGG',
-        'BBB'
-    ], {
-        B: "enderio:conduit_binder",
-        G: '#forge:glass/colorless'
-    }
-    ).id('kubejs:pressurized_fluid_conduit')
+    event.remove({ id: "enderio:fluid_conduit" })
     if (isNormalMode) {
         // Manual item conduit
         event.shaped(
@@ -25,6 +15,17 @@ ServerEvents.recipes(event => {
             W: "gtceu:pulsating_alloy_single_wire"
         }
         ).id('kubejs:item_conduit')
+
+        event.shaped(
+            "4x enderio:pressurized_fluid_conduit", [
+            'BBB',
+            'GGG',
+            'BBB'
+        ], {
+            B: "enderio:conduit_binder",
+            G: '#forge:glass/colorless'
+        }
+        ).id('kubejs:pressurized_fluid_conduit')
 
         // Manual ender fluid conduit
         event.shaped(
@@ -70,6 +71,17 @@ ServerEvents.recipes(event => {
         }
         ).id('kubejs:item_conduit')
 
+        event.shaped(
+            "4x enderio:pressurized_fluid_conduit", [
+            'BBB',
+            'GGG',
+            'BBB'
+        ], {
+            B: "enderio:conduit_binder",
+            G: '#forge:glass/colorless'
+        }
+        ).id('kubejs:pressurized_fluid_conduit')
+
         // Manual ender fluid conduit
         event.shaped(
             "4x enderio:ender_fluid_conduit", [
@@ -100,6 +112,11 @@ ServerEvents.recipes(event => {
             .duration(80)
             .EUt(16)
     }
+}
+if (isHarderMode) {
+
+    event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
+    event.remove({ output: "enderio:pressurized_fluid_conduit" })
 }
 
 
