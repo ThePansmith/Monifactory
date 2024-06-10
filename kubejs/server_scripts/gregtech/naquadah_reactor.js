@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
 
     //Reactor usage
     //TODO: Make recipes not overclockable. I looked through the GregTech KJS integration but am too stupid to figure it out -Ciggy
+    // @ Ciggy from 3x1t_5tyl3; In startup you just don't add a "GTRecipeModifier" for overclockables. See other multiblocks. As long as ya don't add it it's fine uwu
     event.recipes.gtceu.naquadah_reactor_i('kubejs:process_naquadah_i')
         .itemInputs('gtceu:enriched_naquadah_nugget') // TODO: Add bolts - or maybe even 'fuel rods', that would be cool I think
         .itemOutputs('gtceu:lead_nugget')

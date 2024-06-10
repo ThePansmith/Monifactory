@@ -37,6 +37,7 @@ config/modernfix-mixins.properties
 config/immediatelyfast.json
 config/ftbbackups2.json
 config/spark/tmp
+config/spark/activity.json
 config/roughlyenoughitems/hints.json
 config/voicechat/username-cache.json
 config/minihud/*
