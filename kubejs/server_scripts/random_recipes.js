@@ -347,16 +347,16 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // BBC
-    event.remove({ input: "gtceu:mega_vacuum_freezer" })
+    event.remove({ input: "gtceu:mega_vaccum_freezer" })
     event.recipes.gtceu.arc_furnace("bbc_recycling")
-        .itemInputs("gtceu:mega_vacuum_freezer")
+        .itemInputs("gtceu:mega_vaccum_freezer")
         .inputFluids("gtceu:oxygen 26976")
         .itemOutputs("18x gtceu:naquadah_alloy_ingot", "12x gtceu:stainless_steel_ingot", "12x gtceu:electrum_ingot", "gtceu:steel_block")
         .duration(26976)
         .EUt(30)
 
     event.recipes.gtceu.macerator("bbc_crushing")
-        .itemInputs("gtceu:mega_vacuum_freezer")
+        .itemInputs("gtceu:mega_vaccum_freezer")
         .itemOutputs("18x gtceu:naquadah_alloy_dust", "50x gtceu:small_rubber_dust", "49x gtceu:small_steel_dust", "12x gtceu:stainless_steel_dust")
         .duration(25408)
         .EUt(302)
@@ -421,11 +421,11 @@ ServerEvents.recipes(event => {
     //Avaritia Replacement recipes
     comapcting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
 
-    //Dense Hydrogen conversion
+    //Dense Hydrogen converion
     comapcting(event, 'kubejs:dense_hydrogen', 'kubejs:solidified_hydrogen');
     comapcting(event, 'kubejs:ultra_dense_hydrogen', 'kubejs:dense_hydrogen');
 
-    //Recipe from Radium salt to Radium and Rock Salt
+    //Recipie from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
         .itemInputs("kubejs:radium_salt")
         .itemOutputs("gtceu:rock_salt_dust")
@@ -529,11 +529,11 @@ ServerEvents.recipes(event => {
     })
 
     // Stonecutting CCI blocks
-    let sameItemsTags = ['#chisel_chipped_integration:factory_block', '#chisel_chipped_integration:technical_block', '#chisel_chipped_integration:laboratory_block', '#chisel_chipped_integration:tyrian']; // What item tags to go through (change this so you have your tags)
+    let sameItemsTags = ['#chisel_chipped_integration:factory_block', '#chisel_chipped_integration:technical_block', '#chisel_chipped_integration:laboratory_block', '#chisel_chipped_integration:tyrian']; // What item tags to go trough (change this so you have your tags)
     sameItemsTags.forEach(tag => {
         let sameItems = Ingredient.of(tag).stacks; // Get all of the items with that tag
         sameItems.forEach(input => {
-            sameItems.forEach(output => { // Loop through the items so all combination of input and output are met
+            sameItems.forEach(output => { // Loop trough the items so all combination of input and output are met
                 if (input != output) // Ignore recipes where input and output are the same item
                     event.stonecutting(output, input); // Make the recipe
             });
