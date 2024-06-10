@@ -660,7 +660,6 @@ if (isHarderMode) {
     }).id('kubejs:soul_binder')
 
     // powered spawner
-    // TODO Fixme
     event.remove({ id: 'enderio:powered_spawner' })
     event.shaped('enderio:powered_spawner', [
         'ABA',
@@ -668,11 +667,14 @@ if (isHarderMode) {
         'DED'
     ], {
         A: '#forge:ingots/electrical_steel',
-        B: '#forge:heads',
+        B: 'enderio:broken_spawner',
         C: 'enderio:ensouled_chassis',
         D: '#forge:gems/vibrant_crystal',
         E: 'enderio:z_logic_controller'
-    });
+    }).modifyResult((grid, result) => {
+        let input = grid.find('enderio:broken_spawner')
+        return result.withNBT(input.nbt)
+    }).id('kubejs:powered_spawner')
 
     // slicensplice
     event.replaceInput({ id: 'enderio:slice_and_splice' }, '#forge:ingots/soularium', '#forge:plates/tungsten_steel')
