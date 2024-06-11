@@ -505,31 +505,4 @@ ServerEvents.recipes(event => {
             C: 'gtceu:iv_sensor'
         }
     )
-
-    //Tier three micro miner mission idk
-    event.recipes.gtceu.basic_microverse('t_three_third')
-    .itemInputs(
-        'kubejs:microminer_t3',
-        '4x kubejs:quantum_flux',
-        'gtceu:mv_super_chest'
-    )
-    .inputFluids(Fluid.of('gtceu:rocket_fuel', 24000))
-    .itemOutputs(
-        '64x gtceu:netherrack_salt_ore',
-        '64x gtceu:netherrack_salt_ore',
-        '64x gtceu:netherrack_salt_ore',
-        '64x gtceu:netherrack_salt_ore',
-        '64x gtceu:netherrack_barite_ore',
-        '64x gtceu:netherrack_barite_ore',
-        '64x gtceu:netherrack_apatite_ore',
-        '64x gtceu:netherrack_apatite_ore',
-        '64x gtceu:netherrack_neodymium_ore',
-        '64x gtceu:netherrack_chromite_ore',
-        '64x gtceu:netherrack_chromite_ore',
-        '64x gtceu:netherrack_chromite_ore',
-        '64x gtceu:netherrack_pyrope_ore',
-        '64x gtceu:netherrack_pyrope_ore'
-    )
-    .duration(800)
-    .EUt(2000)
 })
