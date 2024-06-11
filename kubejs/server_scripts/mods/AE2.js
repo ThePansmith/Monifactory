@@ -140,7 +140,6 @@ ServerEvents.recipes(event => {
     }
     ).id('kubejs:ae2/interface')
 
-
     // Requester
     event.remove({ id: 'merequester:requester' })
     event.shaped(

@@ -105,7 +105,7 @@
 		level1_colors = ["dark_gray", "dark_gray", "auto", "auto"]
 		level2_colors = ["gray", "gray", "auto", "auto"]
 		level3_colors = ["aqua", "aqua", "auto", "auto"]
-		level4_colors = ["yellow", "yellow", "auto", "auto"]
+		level4_colors = ["gold", "gold", "auto", "auto"]
 		level5_colors = ["dark_purple", "dark_purple", "auto", "auto"]
 		level6_colors = ["blue", "blue", "auto", "auto"]
 		level7_colors = ["light_purple", "light_purple", "auto", "auto"]

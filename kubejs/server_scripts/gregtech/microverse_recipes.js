@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
             '64x kubejs:dense_diamond_ore', 
             '64x kubejs:dense_coal_ore', 
             '32x kubejs:dense_emerald_ore', 
-            '16x kubejs:dense_redstone_ore'
+            '32x kubejs:dense_redstone_ore'
         )
         .duration(800)
         .EUt(3750)
@@ -257,8 +257,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t7', 
             '64x kubejs:dilithium_crystal', 
-            '64x kubejs:dilithium_crystal', 
-            '64x kubejs:dilithium_crystal', 
+            '64x kubejs:dilithium_crystal',  
             'kubejs:gem_sensor', 
             '64x kubejs:wither_realm_data', 
             '64x kubejs:wither_realm_data', 
