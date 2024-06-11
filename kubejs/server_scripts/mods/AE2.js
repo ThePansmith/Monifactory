@@ -277,6 +277,24 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(480)
 
+    // Certus Block
+
+    event.remove({ output:'gtceu:certus_quartz_block'})
+    event.recipes.gtceu.compressor("certus_quartz_block")
+        .itemInputs(["4x gtceu:certus_quartz_gem"])
+        .itemOutputs('gtceu:certus_quartz_block')
+        .duration(300)
+        .EUt(2)
+
+    event.shaped(
+        Item.of('gtceu:certus_quartz_block'),[
+        'AA',
+        'AA'
+    ],{
+        A: '#forge:gems/certus_quartz'
+    }
+    ).id('kubejs:gtceu/certus_quartz_block')
+
     // Matter Condenser
     event.remove({ id: 'ae2:network/blocks/io_condenser' })
     event.shaped(
