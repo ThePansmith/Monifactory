@@ -11,5 +11,14 @@ ServerEvents.recipes(event => {
     ], {
         P: 'kubejs:moni_penny'
     }).noMirror().noShrink()
+
+    event.shaped(
+        Item.of('gcyr:space_upgrade_smithing_template', 4), [
+        'DDD',
+        'DDD',
+        'DDD'
+    ], {
+        D: 'kubejs:moni_dollar'
+    }).noMirror().noShrink()
 }
 })

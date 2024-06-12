@@ -593,10 +593,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:polyphenylene_sulfide"
-				id: "7FB9D172BE7BBC11"
-				type: "fluid"
+				id: "674ADD4BEFC6B52D"
+				item: "gtceu:polyphenylene_sulfide_bucket"
+				type: "item"
 			}]
 			title: "&2Polyphenylene Sulfide"
 			x: -2.0d

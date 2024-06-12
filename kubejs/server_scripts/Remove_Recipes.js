@@ -22,6 +22,14 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'thermal:rubber' })
     event.remove({ output: 'thermal:cured_rubber' })
     event.remove({ input: 'forge:nuggets/netherite'})
+
+    //Redstone arsenal
+    event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_smelting' })
+    event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_blasting' })
+    event.remove({ id: 'redstone_arsenal:materials/flux_ingot_fire_charge_from_dust' })
+    event.remove({ id: 'redstone_arsenal:storage/flux_metal_block' })
+    event.remove({ id: 'redstone_arsenal:storage/flux_ingot_from_block' })
+
     
     //ArmorPlus
     event.remove({ output: ["armorplus:the_ultimate_material"] });

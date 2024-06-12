@@ -186,6 +186,7 @@ ServerEvents.recipes(event => {
             })
 
     // Launch Pad           
+    event.remove({id: 'gcyr:assembler/launch_pad'})
     event.shaped(
         '9x gcyr:launch_pad', [
             'CCC',
@@ -195,7 +196,7 @@ ServerEvents.recipes(event => {
             C: 'gtceu:concrete_dust'
         })
 
-    // Launch Pad           
+    // Seat
     event.shaped(
         'gcyr:seat', [
             'CCC',

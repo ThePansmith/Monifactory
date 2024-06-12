@@ -365,6 +365,7 @@
 				""
 				"Prepare some gear, eat a slice, and get ready for a fight!"
 			]
+			icon: "minecraft:dragon_head"
 			id: "56FB624B384FFAF5"
 			rewards: [{
 				id: "671C0205B990A2F1"
@@ -373,9 +374,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "0014FE3B92FEBC6B"
-				item: "minecraft:dragon_head"
-				type: "item"
+				dimension: "minecraft:the_end"
+				id: "5EFEF3EB5567D109"
+				type: "dimension"
 			}]
 			title: "The End...?"
 			x: -9.0d
@@ -476,6 +477,8 @@
 				"&6Engines&r provide thrust, and &6Tanks&r provide fuel for your engines, make sure to have a decent amount of both."
 				""
 				"Being able to ride your rocket is important, too, so don't forget to add a &6seat&r."
+				""
+				"While sitting on a rocket, you can open your inventory to open check the rocket's thrust, and insert fuel and a ID Chip."
 			]
 			icon: "gcyr:basic_rocket_motor"
 			id: "4669C1DCEE4AA563"
@@ -487,7 +490,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					count: 4L
+					count: 5L
 					id: "36AC33D59E419A30"
 					item: "gcyr:basic_rocket_motor"
 					type: "item"
@@ -505,7 +508,7 @@
 				}
 			]
 			title: "&9Rocket Parts"
-			x: 3.5d
+			x: 2.5d
 			y: -8.5d
 		}
 		{
@@ -514,6 +517,10 @@
 				"Making yourself a space suit is the most important step towards your space adventures."
 				""
 				"This suit lets you breathe in space, which is kind of important."
+				""
+				"You can also make yourself some &9space upgrade trims&r, and it to any armor of your choice into a spacesuit."
+				""
+				"You can also hide the spacesuit from your playermodel via the cosmetic armor buttons, if you wish."
 			]
 			icon: {
 				Count: 1b
@@ -531,7 +538,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "5D4FFDBF1470DF9D"
+					id: "0DFC776179D464C1"
 					item: {
 						Count: 1b
 						id: "gcyr:space_helmet"
@@ -542,7 +549,7 @@
 					type: "item"
 				}
 				{
-					id: "31AD06B034B3E8B4"
+					id: "0399F0828F49C6DF"
 					item: {
 						Count: 1b
 						id: "gcyr:space_chestplate"
@@ -553,7 +560,7 @@
 					type: "item"
 				}
 				{
-					id: "5F36F126EDB7EE1D"
+					id: "19B6A6B00F982087"
 					item: {
 						Count: 1b
 						id: "gcyr:space_leggings"
@@ -564,7 +571,7 @@
 					type: "item"
 				}
 				{
-					id: "62E54B6B701D40E8"
+					id: "03A19D83B2062391"
 					item: {
 						Count: 1b
 						id: "gcyr:space_boots"
@@ -576,7 +583,7 @@
 				}
 			]
 			title: "&9Space Suit"
-			x: 2.0d
+			x: 3.5d
 			y: -8.5d
 		}
 		{
@@ -606,7 +613,7 @@
 				type: "item"
 			}]
 			title: "&9Planet ID"
-			x: 5.0d
+			x: 4.5d
 			y: -8.5d
 		}
 		{

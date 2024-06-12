@@ -350,4 +350,10 @@ ServerEvents.recipes(event => {
             .duration(10)
             .EUt(-512)
 
+            event.recipes.gtceu.distillery('distill_tech_water')
+            .inputFluids('gtceu:distilled_water 20')
+            .circuit(5)
+            .outputFluids('nuclearcraft:technical_water 20')
+            .duration(20).EUt(120)
+    
 })
