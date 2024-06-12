@@ -377,6 +377,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('naquadah_reactor_i')
         .appearanceBlock(GCyMBlocks.CASING_REACTION_SAFE)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH]) //required to function.. Probably so it can output energy and take items in at the same time? Not entirely sure. But it made it functional! Yippie
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCC", "PGP", "PGP", "PGP", "CCC")
             .aisle("CCC", "GNG", "GNG", "GOG", "CCC")
@@ -398,6 +399,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('naquadah_reactor_ii')
         .appearanceBlock(GCyMBlocks.CASING_REACTION_SAFE)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCC", "PGP", "PGP", "PGP", "PGP", "CCC")
             .aisle("CCC", "GNG", "GNG", "GNG", "GOG", "CCC")

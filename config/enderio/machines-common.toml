@@ -70,6 +70,12 @@
 		#The base amount of energy produced in uI/t.
 		#Range: > 1
 		generation = 40
+		#The base percentage efficiency, used to determine burn times.
+		#Range: 1 ~ 200
+		fuelEfficiencyBase = 80
+		#The efficiency increase per capacitor level.
+		#Range: 1 ~ 200
+		fuelEfficiencyStep = 20
 
 	[energy.paintingMachine]
 		#The base energy capacity in uI.
