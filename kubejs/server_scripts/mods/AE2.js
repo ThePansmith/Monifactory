@@ -372,7 +372,7 @@ ServerEvents.recipes(event => {
         'BCB',
         ' B '
     ], {
-        A: 'gtceu:iv_emitter',
+        A: 'gtceu:ev_emitter',
         B: 'gtceu:titanium_plate',
         C: 'ae2:fluix_pearl'
     }
