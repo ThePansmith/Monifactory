@@ -847,6 +847,24 @@ ServerEvents.recipes(event => {
         'ae2:certus_quartz_crystal',
         'gtceu:certus_quartz_gem'
     )
+
+    // Certus Quartz Block
+    event.remove({ output:'gtceu:certus_quartz_block'})
+    event.recipes.gtceu.compressor("kubejs:certus_quartz_block")
+        .itemInputs(["4x gtceu:certus_quartz_gem"])
+        .itemOutputs('gtceu:certus_quartz_block')
+        .duration(300)
+        .EUt(2)
+
+    event.shaped(
+        Item.of('gtceu:certus_quartz_block'),[
+        'AA',
+        'AA'
+    ],{
+        A: '#forge:gems/certus_quartz'
+    }
+    ).id('kubejs:gtceu/certus_quartz_block')
+    
     // Vibrant Quartz Glass
     event.remove({output: 'ae2:quartz_vibrant_glass'})
     event.recipes.gtceu.alloy_smelter('kubejs:vibrant_quartz_glass')
