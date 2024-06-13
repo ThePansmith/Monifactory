@@ -598,7 +598,6 @@ ServerEvents.recipes(event => {
             ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_robot_arm').EUt(480).duration(4800))
             event.remove({ id: 'gtceu:shaped/mega_blast_furnace'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_blast_furnace')
-        .itemInputs('16x gtceu:electric_blast_furnace','8x gtceu:dense_naquadah_alloy_plate','8x gtceu:naquadah_spring','2x gtceu:ruthenium_trinium_americium_neutronate_octal_wire','4x gtceu:zpm_field_generator','4x #gtceu:circuits/zpm')
         .itemInputs('gtceu:electric_blast_furnace','4x #gtceu:circuits/zpm','4x gtceu:luv_field_generator','4x gtceu:naquadah_alloy_spring','4x gtceu:dense_naquadah_alloy_plate','4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
         .inputFluids('gtceu:soldering_alloy 9216')
         .itemOutputs('gtceu:mega_blast_furnace')
