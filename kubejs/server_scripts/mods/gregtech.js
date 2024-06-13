@@ -229,6 +229,21 @@ ServerEvents.recipes(event => {
         'gtceu:silicon_ingot'
     )
 
+    event.remove({ output: 'gtceu:cleaning_maintenance_hatch'})
+    event.shaped(
+        'gtceu:cleaning_maintenance_hatch', [
+            'ABA',
+            'CDC',
+            'EAE'
+        ], {
+            A: '#gtceu:circuits/ev',
+            B: 'gtceu:auto_maintenance_hatch',
+            C: 'gtceu:ev_robot_arm',
+            D: 'gtceu:ev_machine_hull',
+            E: 'gtceu:rtm_alloy_single_cable'
+        }
+    )
+
     //Steel Machine Casing
     event.remove({input: 'gtceu:steel_machine_casing'})
     event.remove({output: 'gtceu:steel_machine_casing'})
