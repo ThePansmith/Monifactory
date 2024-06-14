@@ -909,18 +909,18 @@ ServerEvents.recipes(event => {
     }
     ).id('kubejs:mega/cpu_crafting_unit')
 
+    //Remove duplicates
+    event.remove({ id: "megacells:crafting/mega_crafting_accelerator" })
+    event.remove({ id: /megacells:network\/mega_interface/ })
+    event.remove({ id: /megacells:network\/mega_pattern_provider/ })
+    event.remove({ output: /megacells:sky_steel/ })
+
     //MAE2 compat stuff
     event.remove({ id: /mae2/ })
     event.shapeless('mae2:4x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_4k'])
     event.shapeless('mae2:16x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_16k'])
     event.shapeless('mae2:64x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_64k'])
     event.shapeless('mae2:256x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_256k'])
-
-    //Remove duplicates
-    event.remove({ id: "megacells:crafting/mega_crafting_accelerator" })
-    event.remove({ id: /megacells:network\/mega_interface/ })
-    event.remove({ id: /megacells:network\/mega_pattern_provider/ })
-    event.remove({ output: /megacells:sky_steel/ })
 
     // ExtendedAE
 
