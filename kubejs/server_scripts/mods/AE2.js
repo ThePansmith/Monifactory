@@ -922,6 +922,130 @@ ServerEvents.recipes(event => {
     event.shapeless('mae2:64x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_64k'])
     event.shapeless('mae2:256x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_256k'])
 
+    // Alternate Storage Component Recipes
+
+    //1k recipe stuff
+    event.shaped(
+        '2x ae2:cell_component_1k', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:tempered_glass',
+        B: 'gtceu:red_alloy_plate',
+        C: '#gtceu:circuits/mv'
+    }
+    ).id('kubejs:ae2/storage_component_1k_double')
+
+    event.shaped(
+        '4x ae2:cell_component_1k', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:tempered_glass',
+        B: 'gtceu:red_alloy_plate',
+        C: '#gtceu:circuits/hv'
+    }
+    ).id('kubejs:ae2/storage_component_1k_quad')
+
+    event.shaped(
+        '8x ae2:cell_component_1k', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:tempered_glass',
+        B: 'gtceu:red_alloy_plate',
+        C: '#gtceu:circuits/ev'
+    }
+    ).id('kubejs:ae2/storage_component_1k_oct')
+
+    event.shaped(
+        '16x ae2:cell_component_1k', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:tempered_glass',
+        B: 'gtceu:red_alloy_plate',
+        C: '#gtceu:circuits/iv'
+    }
+    ).id('kubejs:ae2/storage_component_1k_hex')
+
+    //Cheaper ramp up to reduce exponential effect
+    event.recipes.gtceu.assembler("kubejs:ae2/4k_storage_assembler")
+        .itemInputs("2x ae2:cell_component_1k", "ae2:calculation_processor", "#gtceu:circuits/mv")
+        .inputFluids("gtceu:polyethylene 144")
+        .itemOutputs("ae2:cell_component_4k")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:ae2/16k_storage_assembler")
+        .itemInputs("2x ae2:cell_component_4k", "ae2:engineering_processor", "#gtceu:circuits/hv")
+        .inputFluids("gtceu:polyethylene 144")
+        .itemOutputs("ae2:cell_component_16k")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:ae2/64k_storage_assembler")
+        .itemInputs("2x ae2:cell_component_16k", "2x ae2:logic_processor", "ae2:engineering_processor", "#gtceu:circuits/ev")
+        .inputFluids("gtceu:polyethylene 144")
+        .itemOutputs("ae2:cell_component_64k")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:ae2/256k_storage_assembler")
+        .itemInputs("2x ae2:cell_component_64k", "2x ae2:logic_processor", "ae2:engineering_processor", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:polytetrafluoroethylene 144")
+        .itemOutputs("ae2:cell_component_256k")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/1m_storage_assembler")
+        .itemInputs("2x ae2:cell_component_256k", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:polytetrafluoroethylene 288")
+        .itemOutputs("megacells:cell_component_1m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/4m_storage_assembler")
+        .itemInputs("2x megacells:cell_component_1m", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/luv")
+        .inputFluids("gtceu:polytetrafluoroethylene 288")
+        .itemOutputs("megacells:cell_component_4m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/16m_storage_assembler")
+        .itemInputs("2x megacells:cell_component_4m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/luv")
+        .inputFluids("gtceu:polytetrafluoroethylene 288")
+        .itemOutputs("megacells:cell_component_16m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/64m_storage_assembler")
+        .itemInputs("2x megacells:cell_component_16m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/zpm")
+        .inputFluids("gtceu:polybenzimidazole 288")
+        .itemOutputs("megacells:cell_component_64m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/256m_storage_assembler")
+        .itemInputs("2x megacells:cell_component_64m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/zpm")
+        .inputFluids("gtceu:polybenzimidazole 288")
+        .itemOutputs("megacells:cell_component_256m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+
     // ExtendedAE
 
     //Pattern Modifier (NAE2's Pattern Multitool)
