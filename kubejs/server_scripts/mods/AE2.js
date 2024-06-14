@@ -735,6 +735,185 @@ ServerEvents.recipes(event => {
     pressengrave("kubejs:ae2/logic_processor_press", 'ae2:logic_processor_press', '#forge:lenses/green');
     pressengrave("kubejs:ae2/name_press", 'ae2:name_press', '#forge:lenses/white');
 
+    //MEGA cells
+
+    event.remove({ id: 'megacells:inscriber/accumulation_processor_press' })
+    event.recipes.gtceu.laser_engraver("kubejs:mega/accumulation_processor_press")
+        .itemInputs('gtceu:stainless_steel_block')
+        .notConsumable('#forge:lenses/magenta')
+        .itemOutputs('megacells:accumulation_processor_press')
+        .duration(1600)
+        .EUt(240)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.remove({ id: "megacells:inscriber/accumulation_processor_print" })
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "middle": {
+                "item": "gtceu:black_steel_ingot"
+            },
+            "top": {
+                "item": "megacells:accumulation_processor_press"
+            }
+        },
+        "mode": "inscribe",
+        "result": {
+            "item": "megacells:printed_accumulation_processor"
+        }
+    }).id('kubejs:mega/accumulation_processor_print')
+
+    event.remove({ id: "megacells:inscriber/accumulation_processor" })
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "bottom": {
+                "item": "ae2:printed_silicon"
+            },
+            "middle": {
+                "tag": "gtceu:circuits/hv"
+            },
+            "top": {
+                "item": "megacells:printed_accumulation_processor"
+            }
+        },
+        "mode": "press",
+        "result": {
+            "item": "megacells:accumulation_processor"
+        }
+    }).id('kubejs:mega/accumulation_processor')
+
+    // Storage Component 1M
+    event.remove({ id: 'megacells:cells/cell_component_1m' })
+    event.shaped(
+        Item.of('megacells:cell_component_1m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'ae2:engineering_processor',
+        B: 'ae2:cell_component_256k',
+        C: '#gtceu:circuits/iv',
+        D: 'megacells:accumulation_processor'
+    }
+    ).id('kubejs:mega/storage_component_1m')
+
+    // Storage Component 4M
+    event.remove({ id: 'megacells:cells/cell_component_4m' })
+    event.shaped(
+        Item.of('megacells:cell_component_4m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'ae2:engineering_processor',
+        B: 'megacells:cell_component_1m',
+        C: '#gtceu:circuits/luv',
+        D: 'megacells:accumulation_processor'
+    }
+    ).id('kubejs:mega/storage_component_4m')
+
+    // Storage Component 4M
+    event.remove({ id: 'megacells:cells/cell_component_16m' })
+    event.shaped(
+        Item.of('megacells:cell_component_16m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'megacells:accumulation_processor',
+        B: 'megacells:cell_component_4m',
+        C: '#gtceu:circuits/luv',
+        D: 'gtceu:quantum_eye'
+    }
+    ).id('kubejs:mega/storage_component_16m')
+
+    // Storage Component 4M
+    event.remove({ id: 'megacells:cells/cell_component_64m' })
+    event.shaped(
+        Item.of('megacells:cell_component_64m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'megacells:accumulation_processor',
+        B: 'megacells:cell_component_16m',
+        C: '#gtceu:circuits/zpm',
+        D: 'gtceu:quantum_eye'
+    }
+    ).id('kubejs:mega/storage_component_64m')
+
+    // Storage Component 4M
+    event.remove({ id: 'megacells:cells/cell_component_256m' })
+    event.shaped(
+        Item.of('megacells:cell_component_256m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'megacells:accumulation_processor',
+        B: 'megacells:cell_component_64m',
+        C: '#gtceu:circuits/zpm',
+        D: 'gtceu:quantum_eye'
+    }
+    ).id('kubejs:mega/storage_component_256m')
+
+    event.remove({ id: /megacells:cells\/standard\/.*storage_cell.*m$/ })
+
+    event.remove({ id: "megacells:cells/mega_item_cell_housing" })
+    event.shaped(
+        Item.of('megacells:mega_item_cell_housing'), [
+        'ABA',
+        'B B',
+        'ABA'
+    ], {
+        A: 'gtceu:fine_lumium_wire',
+        B: 'gtceu:naquadah_plate'
+    }
+    ).id('kubejs:mega/item_cell_housing')
+
+    event.remove({ id: "megacells:cells/mega_fluid_cell_housing" })
+    event.shaped(
+        Item.of('megacells:mega_fluid_cell_housing'), [
+        'ABA',
+        'B B',
+        'ABA'
+    ], {
+        A: 'gtceu:fine_lumium_wire',
+        B: 'gtceu:crystal_matrix_plate'
+    }
+    ).id('kubejs:mega/fluid_cell_housing')
+
+    event.remove({ id: "megacells:cells/standard/bulk_item_cell" })
+    event.remove({ id: "megacells:crafting/bulk_cell_component" })
+
+    event.remove({ id: "megacells:crafting/mega_crafting_unit"})
+    event.shaped(
+        Item.of('megacells:mega_crafting_unit'), [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'gtceu:black_steel_plate',
+        B: 'ae2:logic_processor',
+        C: 'ae2:crafting_unit',
+        D: 'megacells:accumulation_processor'
+    }
+    ).id('kubejs:mega/cpu_crafting_unit')
+
+    //MAE2 compat stuff
+    event.remove({ id: /mae2/ })
+    event.shapeless('mae2:4x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_4k'])
+    event.shapeless('mae2:16x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_16k'])
+    event.shapeless('mae2:64x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_64k'])
+    event.shapeless('mae2:256x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_256k'])
+
+    //Remove duplicates
+    event.remove({ id: "megacells:crafting/mega_crafting_accelerator" })
+    event.remove({ id: /megacells:network\/mega_interface/ })
+    event.remove({ id: /megacells:network\/mega_pattern_provider/ })
+    event.remove({ output: /megacells:sky_steel/ })
+
     // ExtendedAE
 
     //Pattern Modifier (NAE2's Pattern Multitool)
