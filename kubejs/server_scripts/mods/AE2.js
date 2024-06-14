@@ -884,8 +884,16 @@ ServerEvents.recipes(event => {
     }
     ).id('kubejs:mega/fluid_cell_housing')
 
-    event.remove({ id: "megacells:cells/standard/bulk_item_cell" })
+    event.remove({ id: "megacells:cells/standard/bulk_item_cell" }) //recipe in SDA
     event.remove({ id: "megacells:crafting/bulk_cell_component" })
+
+    event.remove({ id: "megacells:network/cell_dock"})
+    event.recipes.gtceu.assembler("kubejs:mega/cell_dock")
+        .itemInputs("4x gtceu:stainless_steel_plate", "8x gtceu:aluminium_plate", "gtceu:mv_emitter", "gtceu:mv_sensor", "2x #gtceu:circuits/mv")
+        .inputFluids("gtceu:soldering_alloy 144")
+        .itemOutputs("8x megacells:cell_dock")
+        .EUt(240)
+        .duration(200)
 
     event.remove({ id: "megacells:crafting/mega_crafting_unit"})
     event.shaped(
