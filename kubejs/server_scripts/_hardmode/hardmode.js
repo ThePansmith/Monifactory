@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
             ["enderio:pulsating_powder", 2240],
             ["enderio:vibrant_powder", 4480],
             ["kubejs:grains_of_innocence", 6720],
-            ["enderio:precient_powder", 8960],
+            ["enderio:prescient_powder", 8960],
             ["enderio:ender_crystal_powder", 11200],
         ]
     
