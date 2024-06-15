@@ -52,12 +52,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('2x carbon', '4x hydrogen', '2x oxygen')
 
-    event.create('formic_acid')
-        .fluid()
-        .color(0xffffc5)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .components('carbon', '2x hydrogen', '2x oxygen')
-
     event.create('platinum_metallic')
         .dust()
         .color(0xfffbc5).iconSet('metallic')
@@ -85,11 +79,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xfbbb66)
         .components('2x potassium', '2x sulfur', '7x oxygen')
-
-    event.create('potassium_sulfate')
-        .dust()
-        .color(0xf0b064).iconSet('metallic')
-        .components('2x potassium', 'sulfur', '4x oxygen')
 
     event.create('zinc_sulfate')
         .dust()
@@ -176,5 +165,4 @@ GTCEuStartupEvents.materialModification(() => {
 	GTMaterials.get('rhodium_nitrate').setFormula('Rh(NO3)3');
 	GTMaterials.get('ammonium_hexachloroiridiate').setFormula('(NH4)2IrCl6');
 	GTMaterials.get('rhodium_salt').setFormula('(NaCl)2(RhCl3)2');
-	GTMaterials.get('formic_acid').setFormula("HCOOH");
 })
