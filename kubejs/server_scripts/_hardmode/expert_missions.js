@@ -205,6 +205,21 @@ ServerEvents.recipes(event => {
             .duration(100*20)
             .EUt(30720)
 
+         event.recipes.gtceu.advanced_microverse_ii('t4half_six')
+            .itemInputs(
+                'kubejs:microminer_t4half',
+                '8x kubejs:quantum_flux',
+                '64x kubejs:aerotheum_dust',
+                '16x minecraft:sculk_catalyst'
+            )
+            .itemOutputs(
+                '64x kubejs:deep_dark_data',
+                '64x kubejs:deep_dark_data',
+                '32x kubejs:warden_horn'
+            )
+            .duration(100*20)
+            .EUt(30720)
+
         // Tier 8.5 missions
         event.recipes.gtceu.advanced_microverse_iii('t8half_one')
             .itemInputs(
