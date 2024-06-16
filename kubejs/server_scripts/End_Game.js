@@ -38,6 +38,30 @@ ServerEvents.recipes(event => {
         }
     ).id('gtceu:shaped/blacklight')
 
+    // Atomic Casing Buff
+    event.remove({ id: 'gcyr:shaped/casing_atomic' })
+    event.remove({ id: 'gcyr:assembler/casing_atomic' })
+
+    event.shaped(
+        '2x gtceu:atomic_casing', [
+            'PHP',
+            'PFP',
+            'PWP'
+        ], {
+            P: 'gcyr:trinaquadalloy_plate',
+            H: '#forge:tools/hammers',
+            W: '#forge:tools/wrenches',
+            F: 'gtceu:naquadah_alloy_frame',
+        }
+    ).id('gtceu:shaped/atomic_casing')
+
+    event.recipes.gtceu.assembler("atomic_casing")
+    .itemInputs("6x gcyr:trinaquadalloy_plate", "gtceu:naquadah_alloy_frame")
+    .itemOutputs("2x gtceu:atomic_casing")
+    .duration(100)
+    .EUt(16)
+    .circuit(6)
+
     // Sterilising Filter Casing
     event.shaped(
         'gtceu:sterilizing_filter_casing', [
@@ -50,7 +74,7 @@ ServerEvents.recipes(event => {
             F: 'gtceu:item_filter',
             M: 'gtceu:luv_electric_motor',
             P: 'gtceu:polybenzimidazole_large_fluid_pipe',
-            R: 'gtceu:osmiridium_rotor', // TODO: replace with iridium rotor if possible
+            R: 'gtceu:iridium_rotor', 
             S: 'gtceu:black_steel_frame'
         }
     ).id('gtceu:shaped/filter_casing_sterile')
