@@ -38,6 +38,14 @@ ServerEvents.recipes(event => {
         }
     ).id('gtceu:shaped/blacklight')
 
+    // Trinaquadalloy Mixer Recipe
+    event.recipes.gtceu.mixer("mixer_trinaquadalloy")
+    .itemInputs("6x gtceu:trinium_dust", "2x gtceu:naquadah_dust",  "gtceu:carbon_dust")
+    .itemOutputs("9x gcyr:trinaquadalloy_dust")
+    .circuit(1)
+    .duration(300)
+    .EUt(491250)
+
     // Atomic Casing Buff
     event.remove({ id: 'gcyr:shaped/casing_atomic' })
     event.remove({ id: 'gcyr:assembler/casing_atomic' })

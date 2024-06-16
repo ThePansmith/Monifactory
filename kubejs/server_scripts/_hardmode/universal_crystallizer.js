@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             .EUt(1000000)
 
         event.recipes.gtceu.universal_crystallizer('restonia_crystallization')
-            .itemInputs('minecraft:redstone')
+            .itemInputs('63x minecraft:redstone')
             .inputFluids('gtceu:enriched_naquadah 3')
             .itemOutputs('7x gtceu:restonia_empowered_block')
             .duration(7)
