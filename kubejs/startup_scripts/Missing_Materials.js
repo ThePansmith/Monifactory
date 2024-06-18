@@ -15,6 +15,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 0, true))
     GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(120000, 128000, true, true, true, true))
+    GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, 'highest', 1000000, 1000));
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL)
@@ -38,12 +39,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.NetherStar.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.NetherStar.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
+    GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
 
     // GTMaterials.Aluminium.getProperty($PropertyKey.BLAST).setProperty($BlastProperty(1700, 'low', 128, 400));
-    GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, 'highest', 1000000, 1000));
-
-
-    //GTMaterials.NetherQuartz.setProperty($PropertyKey.GEM, new $GemProperty())
+    // GTMaterials.NetherQuartz.setProperty($PropertyKey.GEM, new $GemProperty())
 
     const missingGears = ['Electrum', 'Lead', 'Silver', 'Nickel', 'Ruby', 'Sapphire', 'Gold', 'Copper', 'Lapis', 'Emerald', 'NetherQuartz']
     missingGears.forEach(missingGears => {
