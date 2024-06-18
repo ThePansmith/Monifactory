@@ -20,26 +20,26 @@ ServerEvents.recipes(event => {
     //TODO: Make recipes not overclockable. I looked through the GregTech KJS integration but am too stupid to figure it out -Ciggy
     // @ Ciggy from 3x1t_5tyl3; In startup you just don't add a "GTRecipeModifier" for overclockables. See other multiblocks. As long as ya don't add it it's fine uwu
     event.recipes.gtceu.naquadah_reactor_i('kubejs:process_naquadah_i')
-        .itemInputs('gtceu:enriched_naquadah_nugget') // TODO: Add bolts - or maybe even 'fuel rods', that would be cool I think
-        .itemOutputs('gtceu:lead_nugget')
+        .itemInputs('gtceu:enriched_naquadah_bolt') 
+        .itemOutputs('gtceu:lead_bolt')
         .duration(938)
         .EUt(-393216)
 
     event.recipes.gtceu.naquadah_reactor_i('kubejs:process_naquadria_i')
-        .itemInputs('gtceu:naquadria_nugget')
-        .itemOutputs('gtceu:lead_nugget')
+        .itemInputs('gtceu:naquadria_bolt')
+        .itemOutputs('gtceu:lead_bolt')
         .duration(3750)
         .EUt(-393216)
 
     event.recipes.gtceu.naquadah_reactor_ii('kubejs:process_naquadah_ii')
-        .itemInputs('gtceu:enriched_naquadah_nugget')
-        .itemOutputs('gtceu:lead_nugget')
+        .itemInputs('gtceu:enriched_naquadah_bolt')
+        .itemOutputs('gtceu:lead_bolt')
         .duration(1875)
         .EUt(-1572864)
 
     event.recipes.gtceu.naquadah_reactor_ii('kubejs:process_naquadria_ii')
-        .itemInputs('gtceu:naquadria_nugget')
-        .itemOutputs('gtceu:lead_nugget')
+        .itemInputs('gtceu:naquadria_bolt')
+        .itemOutputs('gtceu:lead_bolt')
         .duration(7500)
         .EUt(-1572864)
 })
