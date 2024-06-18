@@ -318,8 +318,8 @@ ServerEvents.recipes(event => {
 
 
     event.shaped('nuclearcraft:fuel_thorium_tbu', ['AAA', 'AAA', 'AAA'], { A: 'nuclearcraft:thorium_232' })
-    event.shaped('nuclearcraft:fuel_uranium_heu_233', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:uranium_233', B: 'nuclearcraft:uranium_238' })
-    event.shaped('nuclearcraft:fuel_uranium_leu_233', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:uranium_233', B: 'nuclearcraft:uranium_238' })
+    event.shaped('nuclearcraft:fuel_uranium_heu_233', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:uranium_233', B: 'gtceu:uranium_ingot' })
+    event.shaped('nuclearcraft:fuel_uranium_leu_233', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:uranium_233', B: 'gtceu:uranium_ingot' })
     event.shaped('nuclearcraft:fuel_uranium_leu_235', ['ABB', 'BBB', 'BBB'], { A: 'gtceu:uranium_235_ingot', B: 'gtceu:uranium_ingot' })
     event.shaped('nuclearcraft:fuel_uranium_heu_235', ['AAA', 'ABB', 'BBB'], { A: 'gtceu:uranium_235_ingot', B: 'gtceu:uranium_ingot' })
     event.shaped('nuclearcraft:fuel_neptunium_hen_236', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:neptunium_236', B: 'nuclearcraft:neptunium_237' })
