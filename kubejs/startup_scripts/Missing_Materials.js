@@ -39,6 +39,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.NetherStar.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.NetherStar.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
+    GTMaterials.Ruridit.setProperty($PropertyKey.FLUID, new $FluidProperty())
+    GTMaterials.Ruridit.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+
     GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
 
     // GTMaterials.Aluminium.getProperty($PropertyKey.BLAST).setProperty($BlastProperty(1700, 'low', 128, 400));
