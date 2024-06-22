@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
     // UEV/UIV/MAX Hulls and Casing
 
     event.recipes.gtceu.assembler('uev_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:single_omnium_wire')
+        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire')
         .inputFluids('gtceu:polybenzimidazole 576')
         .itemOutputs('gtceu:uev_machine_hull')
         .duration(50)
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     event.recipes.gtceu.assembler('uiv_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire')
+        .itemInputs('gtceu:uiv_machine_casing', '2x gtceu:netherite_single_wire')
         .inputFluids('gtceu:polybenzimidazole 576')
         .itemOutputs('gtceu:uiv_machine_hull')
         .duration(50)

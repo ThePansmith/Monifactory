@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
         .EUt(128000)
 
         event.recipes.gtceu.circuit_assembler("activated_hyperdynamic_ram_chip")
-        .itemInputs('4x kubejs:hyperdynamic_ram_chip_base', '12x #gtceu:circuits/ulv', '4x gtceu:advanced_smd_transistor', '12x gtceu:fine_netherite_wire')
+        .itemInputs('4x kubejs:hyperdynamic_ram_chip_base', '2x kubejs:matter_processing_unit', '4x gtceu:advanced_smd_transistor', '12x gtceu:fine_holmium_wire')
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('4x kubejs:hyperdynamic_ram_chip')
         .cleanroom(CleanroomType.CLEANROOM)

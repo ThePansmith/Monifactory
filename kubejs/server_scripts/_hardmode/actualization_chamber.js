@@ -257,6 +257,17 @@ ServerEvents.recipes(event => {
             )
             .duration(780)
             .EUt(30720)
+        
+        event.recipes.gtceu.actualization_chamber('pristine_t4half_six')
+            .itemInputs('kubejs:pristine_matter_t4half')
+            .circuit(6)
+            .itemOutputs(
+                '64x kubejs:deep_dark_data',
+                '64x kubejs:deep_dark_data',
+                '32x kubejs:warden_horn'
+            )
+            .duration(780)
+            .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t5_one')
             .itemInputs('kubejs:pristine_matter_t5')
