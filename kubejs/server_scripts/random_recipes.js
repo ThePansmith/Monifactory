@@ -118,11 +118,14 @@ ServerEvents.recipes(event => {
     }
     ).id('gtceu:shaped/mv_macerator')
     // Data Stuff
+    
+    if (isNormalMode) {
     event.recipes.gtceu.extractor("tank_data")
         .itemInputs("kubejs:heart_of_a_universe")
         .itemOutputs("kubejs:creative_tank_data")
         .duration(1000)
         .EUt(180000)
+    }
 
     // Crystal Chip shit
     event.recipes.gtceu.autoclave("starter_enderium_chip")
@@ -636,4 +639,9 @@ ServerEvents.recipes(event => {
 
     // Electrum
     event.replaceInput({ id: /redstone_arsenal/ }, 'redstone_arsenal:flux_metal_block', 'gtceu:electrum_flux_block')
+
+
+
+
 })
+ 
