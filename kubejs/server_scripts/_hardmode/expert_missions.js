@@ -10,6 +10,21 @@ ServerEvents.recipes(event => {
             .EUt(1966080)
     }
 
+    //Manual fix for half tier miners
+    event.recipes.gtceu.assembly_line(`stable_t4half`)
+        .itemInputs(`kubejs:microminer_t4half`, 'kubejs:heart_of_a_universe', '4x kubejs:abyss_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
+        .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
+        .itemOutputs(`kubejs:stabilized_microminer_t4half`)
+        .duration(125)
+        .EUt(1966080)
+
+    event.recipes.gtceu.assembly_line(`stable_t8half`)
+        .itemInputs(`kubejs:microminer_t8half`, 'kubejs:heart_of_a_universe', '4x kubejs:abyss_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
+        .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
+        .itemOutputs(`kubejs:stabilized_microminer_t8half`)
+        .duration(125)
+        .EUt(1966080)
+
     // Pristine matter recipe
     function pristine_matter(tier, microtier) {
         if (microtier == 1) {
