@@ -590,7 +590,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'gtceu:assembly_line/robot_arm_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/robot_arm_luv')
-            .itemInputs('1x gtceu:luv_machine_hull','4x gtceu:niobium_titanium_spring','3x gtceu:small_hsss_gear','2x gtceu:luv_electric_motor','1x gtceu:luv_electric_piston','1x #gtceu:circuits/luv','2x #gtceu:circuits/iv','#gtceu:circuits/ev','4x gtceu:niobium_titanium_single_cable')
+            .itemInputs('4x gtceu:long_hsss_rod','1x gtceu:hsss_gear','3x gtceu:small_hsss_gear','2x gtceu:luv_electric_motor','1x gtceu:luv_electric_piston','1x #gtceu:circuits/luv','2x #gtceu:circuits/iv','4x #gtceu:circuits/ev','4x gtceu:niobium_titanium_single_cable')
             .inputFluids('gtceu:soldering_alloy 576','gtceu:lubricant 250')
             .itemOutputs('gtceu:luv_robot_arm')
             .duration(600)
