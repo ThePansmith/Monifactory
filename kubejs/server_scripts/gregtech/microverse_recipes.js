@@ -481,6 +481,12 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt(180000)
 
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_four_fourth')
+        .itemInputs('kubejs:microminer_t4', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '1x gtceu:data_module', '1x gtceu:uhv_sensor')
+        .itemOutputs('64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data') 
+        .duration(600)
+        .EUt(180000)
+
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_second')
         .itemInputs('kubejs:microminer_t11','4x gtceu:max_battery', '2x solarflux:sp_custom_infinity', 'gtceu:uiv_energy_output_hatch','4x kubejs:universe_creation_data',  '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data') // could be increased 
         .itemOutputs('kubejs:creative_energy_data')
