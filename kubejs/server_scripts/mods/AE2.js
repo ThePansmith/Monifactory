@@ -680,6 +680,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x gtceu:fluix_gem')
         .duration(20)
         .EUt(7)
+        .circuit(3)
 
     // cable recipes
     event.remove({ id: "ae2:network/cables/covered_fluix" })
