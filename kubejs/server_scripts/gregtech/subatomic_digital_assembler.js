@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
     if (!isNormalMode) {
         event.recipes.gtceu.subatomic_digital_assembly("omnicdata")
         .notConsumable('kubejs:omnic_data')
-        .itemOutputs('kubejs:mote_of_omnium')
+        .itemOutputs('gtceu:omnium_nugget')
         .EUt(16000)
         .circuit(1)
         .CWUt(16)
