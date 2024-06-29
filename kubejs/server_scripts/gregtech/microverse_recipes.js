@@ -410,7 +410,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_second')
         .itemInputs(
             'kubejs:microminer_t10', 
-            '16x minecraft:netherite_block',
+            '16x #forge:storage_blocks/netherite',
             '64x kubejs:stellar_creation_data'
         )
         .itemOutputs('kubejs:creative_storage_data')
@@ -479,6 +479,12 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:microminer_t5', '4x gtceu:uhv_electric_pump','16x kubejs:stabilized_americium', '16x kubejs:quantum_flux', '16x kubejs:shattered_star_data', )
         .itemOutputs('32x kubejs:stabilized_oganesson')
         .duration(900)
+        .EUt(180000)
+
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_four_fourth')
+        .itemInputs('kubejs:microminer_t4', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '1x gtceu:data_module', '1x gtceu:uhv_sensor')
+        .itemOutputs('64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data') 
+        .duration(600)
         .EUt(180000)
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_second')

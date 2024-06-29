@@ -780,7 +780,15 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:lutetium_dust', 600, 0)
         .chancedOutput('gtceu:europium_dust', 600, 0)
         .duration(50).EUt(1966080)
- 
+        
+    // Quantum Flux Recipe
+    event.recipes.gtceu.mixer('quantum_flux_hm')
+        .itemInputs('redstone_arsenal:flux_gem')
+        .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
+        .itemOutputs('8x kubejs:quantum_flux')
+        .duration(100)
+        .EUt(480)
+        
         //Commented out in favor of GCYM's chain
 
         // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
