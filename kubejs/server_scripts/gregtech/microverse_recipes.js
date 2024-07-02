@@ -279,6 +279,25 @@ ServerEvents.recipes(event => {
 
 // Advanced Microverse II Recipes
 ServerEvents.recipes(event => {
+
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_two_fourth')
+    .itemInputs(
+        'kubejs:microminer_t2', 
+        'gtceu:advanced_power_thruster', 
+        'kubejs:gem_sensor', 
+        '64x kubejs:quantum_flux'
+    )
+    .itemOutputs('64x gtceu:endstone_dilithium_ore', 
+        '64x gtceu:endstone_dilithium_ore', 
+        '64x gtceu:endstone_dilithium_ore',
+        '64x gtceu:endstone_dilithium_ore',
+        '64x gtceu:endstone_certus_quartz_ore',
+        '64x gtceu:endstone_nether_quartz_ore',
+        '64x gtceu:endstone_monazite_ore',
+    )
+    .duration(600)
+    .EUt(62500)
+
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_seven_first')
         .itemInputs(
             'kubejs:microminer_t7', 
@@ -430,10 +449,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:creative_data_hatch_data')
         .duration(3000)
         .EUt(1000000)
+
 })
 
 // Advanced Microverse III
 ServerEvents.recipes(event => {
+
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_third')
         .itemInputs(
             'kubejs:microminer_t9', 
