@@ -339,6 +339,18 @@ if (isHarderMode) {
         .duration(80)
         .EUt(16)
 
+    // Clear Glass
+    event.recipes.gtceu.alloy_smelter("kubejs:clear_glass_soda_ash")
+        .itemInputs('minecraft:glass', 'gtceu:tiny_soda_ash_dust')
+        .itemOutputs('enderio:clear_glass')
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.alloy_smelter("kubejs:clear_glass_quicklime")
+        .itemInputs('minecraft:glass', 'gtceu:tiny_quicklime_dust')
+        .itemOutputs('enderio:clear_glass')
+        .duration(80)
+        .EUt(16)
+
     // Enlightened fused quartz
     event.recipes.gtceu.alloy_smelter("kubejs:enlightened_fused_quartz")
         .itemInputs('#enderio:fused_quartz', 'minecraft:glowstone')
