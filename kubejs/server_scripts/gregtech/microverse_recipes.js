@@ -279,6 +279,17 @@ ServerEvents.recipes(event => {
 
 // Advanced Microverse II Recipes
 ServerEvents.recipes(event => {
+
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_five_third')
+        .itemInputs('kubejs:microminer_t5', 
+            '4x gtceu:uhv_electric_pump',
+            '16x kubejs:stabilized_americium', 
+            '16x kubejs:quantum_flux', 
+            '16x kubejs:shattered_star_data', )
+        .itemOutputs('32x kubejs:stabilized_oganesson')
+        .duration(900)
+        .EUt(180000)
+
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_seven_first')
         .itemInputs(
             'kubejs:microminer_t7', 
@@ -430,10 +441,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:creative_data_hatch_data')
         .duration(3000)
         .EUt(1000000)
+
 })
 
 // Advanced Microverse III
 ServerEvents.recipes(event => {
+
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_third')
         .itemInputs(
             'kubejs:microminer_t9', 
@@ -474,12 +487,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
         .duration(600)
         .EUt(2000000)
-
-    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_five_third')
-        .itemInputs('kubejs:microminer_t5', '4x gtceu:uhv_electric_pump','16x kubejs:stabilized_americium', '16x kubejs:quantum_flux', '16x kubejs:shattered_star_data', )
-        .itemOutputs('32x kubejs:stabilized_oganesson')
-        .duration(900)
-        .EUt(180000)
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_four_fourth')
         .itemInputs('kubejs:microminer_t4', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '1x gtceu:data_module', '1x gtceu:uhv_sensor')
