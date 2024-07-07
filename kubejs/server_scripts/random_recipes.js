@@ -349,6 +349,33 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(30)
 
+     // UHV+ Parallel Control Hatch
+     event.shaped('gtceu:uhv_uhv_parallel_hatch', [
+        'SCE',
+        'CHC',
+        'WCW'
+    ], {
+        H: 'gtceu:uhv_machine_hull',
+        S: 'gtceu:uhv_sensor',
+        C: '#gtceu:circuits/uev',
+        E: 'gtceu:uhv_emitter',
+        W: 'gtceu:netherite_quadruple_wire'
+    }
+    )
+
+    event.shaped('gtceu:uev_uev_parallel_hatch', [
+        'SCE',
+        'CHC',
+        'WCW'
+    ], {
+        H: 'gtceu:uev_machine_hull',
+        S: 'gtceu:uev_sensor',
+        C: '#gtceu:circuits/uiv',
+        E: 'gtceu:uev_emitter',
+        W: 'gtceu:holmium_quadruple_wire'
+    }
+    )
+
     //
     // Recycling below here
     //
@@ -640,6 +667,27 @@ ServerEvents.recipes(event => {
     // Electrum
     event.replaceInput({ id: /redstone_arsenal/ }, 'redstone_arsenal:flux_metal_block', 'gtceu:electrum_flux_block')
 
+    // Americium Plasma
+    event.recipes.gtceu.fusion_reactor('americium_plasma')
+    .inputFluids('gtceu:plutonium_241 144', 'gtceu:hydrogen 2000')
+    .outputFluids('gtceu:americium_plasma 144')
+    .duration(64)
+    .EUt(98304)
+    .fusionStartEU(500000000)
+
+    event.recipes.gtceu.plasma_generator('americium_plasma_generator')
+    .inputFluids('gtceu:americium_plasma 1')
+    .outputFluids('gtceu:americium 1')
+    .duration(320)
+    .EUt(-2048)
+
+    //Resonant Clathrate
+    event.recipes.gtceu.chemical_reactor('resonant_clathrate')
+    .itemInputs('minecraft:quartz')
+    .inputFluids(Fluid.of('kubejs:resonant_ender', 250))
+    .itemOutputs('kubejs:resonant_clathrate')
+    .duration(120)
+    .EUt(75)
 
 
 })
