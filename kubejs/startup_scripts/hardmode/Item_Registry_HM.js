@@ -8,16 +8,27 @@ StartupEvents.registry('item', event => {
     event.create('omnic_data')
 
     // Microverse Pristine Matter
-    event.create('pristine_matter_t1')
-    event.create('pristine_matter_t2')
-    event.create('pristine_matter_t3')
-    event.create('pristine_matter_t4')
-    event.create('pristine_matter_t4half')
-    event.create('pristine_matter_t5')
-    event.create('pristine_matter_t6')
-    event.create('pristine_matter_t7')
-    event.create('pristine_matter_t8')
-    event.create('pristine_matter_t8half')
+    const pristine_matter = [
+        ['1', '#c0c0b0'],
+        ['2', '#f5f5f1'],
+        ['3', '#736055'],
+        ['4', '#f17d3d'],
+        ['4half', '#f17d3d'],
+        ['5', '#fccc6a'],
+        ['6', '#58a14e'],
+        ['7', '#173639'],
+        ['8', '#dcdbe4'],
+        ['8half', '#dcdbe4']
+    ]
+
+    for (const [tier, color] of pristine_matter) {
+        event.create(`pristine_matter_t${tier}`)
+            .textureJson({ layer0: 'kubejs:item/prediction' })
+            .color(0, color)
+            .glow(true);
+    }
+    // Microverse Pristine Matter
+
 
     // Microminers
     event.create('microminer_t4half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
