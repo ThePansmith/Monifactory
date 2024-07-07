@@ -326,6 +326,12 @@ StartupEvents.registry('item', event => {
     // Singularities
     event.create('singularity_containment_unit')
     event.create('contained_singularity')
+
+    // Boosted Infinity Catalsyts
+    event.create('fury_enhanced_infinity_catalyst')
+    event.create('dormant_fury_enhanced_infinity_catalyst')
+    event.create('serenity_enhanced_infinity_catalyst')
+    event.create('dormant_serenity_enhanced_infinity_catalyst')
 })
 ItemEvents.modification(event => {
     // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
