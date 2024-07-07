@@ -116,6 +116,8 @@
   "block.gtceu.actualization_chamber": "Actualization Chamber",
   "gtceu.actualization_chamber": "Actualization",
   "gtceu.actualization_chamber.desc": "§8A powerful machine that harnesses the most complex of matters and turns it into raw materials",
+  "block.gtceu.uhv_uhv_parallel_hatch": "Giga Parallel Control Hatch",
+  "block.gtceu.uev_uev_parallel_hatch": "Omega Parallel Control Hatch",
 
   "__GENERIC_MATERIALS__.header": "=====================",
   "__GENERIC_MATERIALS__.flufff": "> Generic Materials <",

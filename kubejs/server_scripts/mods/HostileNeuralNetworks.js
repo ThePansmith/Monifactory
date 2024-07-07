@@ -108,13 +108,6 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(30)
 
-    event.recipes.gtceu.chemical_reactor('resonant_clathrate')
-        .itemInputs('minecraft:quartz')
-        .inputFluids(Fluid.of('kubejs:resonant_ender', 250))
-        .itemOutputs('kubejs:resonant_clathrate')
-        .duration(120)
-        .EUt(75)
-
     event.recipes.gtceu.electrolyzer('gt_quartz')
         .itemInputs('4x minecraft:glass')
         .itemOutputs('minecraft:quartz')
