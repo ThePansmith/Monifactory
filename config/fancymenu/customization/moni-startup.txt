@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1717257573127
+  last_edited_time = 1720402238833
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:df1701ae-9dcd-4a43-834b-56970daed1fa-1717257555980] = [groups:][instances:]
+  [loading_requirement_container_meta:9cb527c5-77d7-4559-aa95-2ee7c295c650-1720402064184] = [groups:][instances:]
 }
 
 menu_background {
@@ -60,7 +60,7 @@ element {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/meowni_1.png
+  source = [source:local]/config/fancymenu/assets/meowni.gif
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
@@ -72,8 +72,8 @@ element {
   fade_in = false
   fade_in_speed = 1.0
   anchor_point = bottom-right
-  x = -61
-  y = -68
+  x = -20
+  y = -35
   width = 95
   height = 95
   stretch_x = false
