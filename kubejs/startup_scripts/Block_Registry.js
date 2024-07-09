@@ -127,12 +127,12 @@ StartupEvents.registry("block", event => {
 			.requiresTool(true);
 
     //EMERGENCY FIX
-    event.create('gtceu:dilithium_ore')
+    /*event.create('gtceu:dilithium_ore')
 		.soundType('stone')
 		.hardness(2)
 		.resistance(2)
 		.tagBlock("mineable/pickaxe")
-		.requiresTool();
+		.requiresTool();*/
 
     //Casing stuff
 
@@ -196,14 +196,12 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
-        .tagBlock("mineable/pickaxe")
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/omnium/casing')})
         
     event.create('dimensional_stabilization_netherite_casing', 'gtceu:renderer')
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
-        .tagBlock("mineable/pickaxe")
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/netherite/casing')})
 
     event.create('omnic_matrix_coil_block', 'gtceu:coil')
@@ -216,7 +214,8 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
-        .tagBlock("mineable/pickaxe")
+
+
 });
 
 // StartupEvents.registry('block', event => {
