@@ -294,6 +294,8 @@ StartupEvents.registry('item', event => {
     // Alien scrap
     event.create('corrupted_universe_data')
     event.create('alien_scrap')
+    event.create('ruined_hull')
+    event.create('ruined_machine_parts')
     event.create('ruined_capacitor')
     event.create('ruined_sensor')
     event.create('ruined_emitter')
@@ -332,6 +334,7 @@ StartupEvents.registry('item', event => {
     event.create('dormant_fury_enhanced_infinity_catalyst')
     event.create('serenity_enhanced_infinity_catalyst')
     event.create('dormant_serenity_enhanced_infinity_catalyst')
+
 })
 ItemEvents.modification(event => {
     // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools
