@@ -498,11 +498,11 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:microminer_t11','4x gtceu:max_battery', '2x solarflux:sp_custom_infinity', 'gtceu:uiv_energy_output_hatch','4x kubejs:universe_creation_data',  '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data') // could be increased 
         .itemOutputs('kubejs:creative_energy_data')
         .duration(1200)
-        .EUt(12000000)
+        .EUt(8000000)
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_twelve_first')
-        .itemInputs('kubejs:microminer_t12', '16x gtceu:infinity_ingot', '4x kubejs:universe_creation_data')
-        .itemOutputs('16x gtceu:monium_ingot')
+        .itemInputs('kubejs:microminer_t12', '32x gtceu:infinity_ingot', '4x kubejs:universe_creation_data')
+        .itemOutputs('32x gtceu:monium_ingot')
         .duration(1200)
         .EUt(32000000)
 })
