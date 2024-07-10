@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x gtceu:crystal_matrix_dust')
         .chancedOutput('kubejs:crushed_sensor', 3300, 0)
         .chancedOutput('kubejs:magnetic_capacitor_dust', 3300, 0)
-        .chancedOutput('gtceu:holmium_oxide_glass_dust', 3300, 0)
+        .chancedOutput('kubejs:holmium_oxide_glass_dust', 3300, 0)
         .duration(400)
         .EUt(16380) 
 
