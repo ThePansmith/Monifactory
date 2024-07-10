@@ -7,6 +7,6 @@ settings {
   inner_height = 300.0
   snapping_side = top-right
   expanded = true
-  visible = true
+  visible = false
 }
 

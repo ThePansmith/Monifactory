@@ -59,8 +59,14 @@ ServerEvents.recipes(event => {
         sda_print('creative_storage_data', 4, 'gtceu:uhv_quantum_tank', 32)
     }
 
-    if (!isHarderMode) {
-        sda_print('creative_energy_data', 3, 'gtceu:creative_energy', 256)
+    if (!isNormalMode) {
+        event.recipes.gtceu.subatomic_digital_assembly("omnicdata")
+        .notConsumable('kubejs:omnic_data')
+        .itemOutputs('gtceu:omnium_nugget')
+        .EUt(16000)
+        .circuit(1)
+        .CWUt(16)
+        .duration(10)
     }
 
 })

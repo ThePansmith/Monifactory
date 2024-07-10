@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
             ["enderio:pulsating_powder", 2240],
             ["enderio:vibrant_powder", 4480],
             ["kubejs:grains_of_innocence", 6720],
-            ["enderio:precient_powder", 8960],
+            ["enderio:prescient_powder", 8960],
             ["enderio:ender_crystal_powder", 11200],
         ]
     
@@ -48,8 +48,14 @@ ServerEvents.recipes(event => {
             .EUt(480)
             .duration(100)
         }
-    
+
         event.replaceInput({ output: 'buildinggadgets2:gadget_exchanging' }, 'minecraft:redstone', 'gtceu:iv_emitter')
+
+        event.remove({ output: 'gtceu:extractor/tank_data' })
+        event.recipes.gtceu.extractor('omnicdata')
+        .itemInputs('kubejs:heart_of_a_universe')
+        .itemOutputs('kubejs:omnic_data')
+        .duration(1000).EUt(180000)
 
         event.remove({ id: "watercollector:watercollector" })
         event.remove({ id: "thermal:device_rock_gen" })

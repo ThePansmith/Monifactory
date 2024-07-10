@@ -113,12 +113,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x42bdff)
         .components('3x carbon', '7x hydrogen', 'nitrogen', 'oxygen')
 
-    event.create('aminophenol')
-        .fluid()
-        .color(0xff7f50)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .components('6x carbon', '7x hydrogen', 'nitrogen', 'oxygen')
-
     event.create('oxydianiline')
         .dust()
         .color(0xf0e130).iconSet('dull')

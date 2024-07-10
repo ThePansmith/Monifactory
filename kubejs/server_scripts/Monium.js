@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         .EUt(16380)
 
         event.recipes.gtceu.omnic_forge('singularity_containment_unit')
-        .itemInputs('8x gtceu:monium_plate', '4x gtceu:neutron_reflector', '2x gtceu:uiv_sensor', '2x gtceu:uev_sensor', 'gtceu:uiv_field_generator')
+        .itemInputs('4x gtceu:monium_plate', '4x gtceu:neutron_reflector', '1x gtceu:uev_sensor', '2x gtceu:uhv_sensor', 'gtceu:uev_field_generator')
         .itemOutputs('64x kubejs:singularity_containment_unit')
         .duration(300)
         .EUt(16380)

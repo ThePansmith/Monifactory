@@ -149,4 +149,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xD29092)
         .components('2x holmium', '3x oxygen')
+
 })
+
+GTCEuStartupEvents.materialModification(event => {
+    GTMaterials.get("rhodium_plated_palladium").setComponents("3x palladium", "1x rhodium", "2x lumium")
+    GTMaterials.RhodiumPlatedPalladium.setFormula('Pd3Rh(SnFe)4(CuAg4)2', true)
+})
+

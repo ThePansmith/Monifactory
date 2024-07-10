@@ -242,12 +242,12 @@ ServerEvents.recipes(event => {
     event.shapeless('nuclearcraft:fission_reactor_port', ['nuclearcraft:fission_reactor_casing', "minecraft:hopper"])
 
     event.recipes.gtceu.chemical_reactor('rhodochrosite_dust')
-        .itemInputs('6x gtceu:pyrolusite_ore')
-        .inputFluids('gtceu:sulfuric_acid 3000')
+        .itemInputs('12x gtceu:redstone_ore')
+        .inputFluids('gtceu:sulfuric_acid 6000')
         .itemOutputs('nuclearcraft:rhodochrosite_dust')
-        .outputFluids('gtceu:manganese 4320')
-        .duration(200)
+        .outputFluids('gtceu:redstone 19008')
         .EUt(2000)
+        .duration(200)
 
         event.recipes.gtceu.thermal_centrifuge("thoriumdecomp")
             .itemInputs('gtceu:thorium_dust')
@@ -318,8 +318,8 @@ ServerEvents.recipes(event => {
 
 
     event.shaped('nuclearcraft:fuel_thorium_tbu', ['AAA', 'AAA', 'AAA'], { A: 'nuclearcraft:thorium_232' })
-    event.shaped('nuclearcraft:fuel_uranium_heu_233', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:uranium_233', B: 'nuclearcraft:uranium_238' })
-    event.shaped('nuclearcraft:fuel_uranium_leu_233', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:uranium_233', B: 'nuclearcraft:uranium_238' })
+    event.shaped('nuclearcraft:fuel_uranium_heu_233', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:uranium_233', B: 'gtceu:uranium_ingot' })
+    event.shaped('nuclearcraft:fuel_uranium_leu_233', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:uranium_233', B: 'gtceu:uranium_ingot' })
     event.shaped('nuclearcraft:fuel_uranium_leu_235', ['ABB', 'BBB', 'BBB'], { A: 'gtceu:uranium_235_ingot', B: 'gtceu:uranium_ingot' })
     event.shaped('nuclearcraft:fuel_uranium_heu_235', ['AAA', 'ABB', 'BBB'], { A: 'gtceu:uranium_235_ingot', B: 'gtceu:uranium_ingot' })
     event.shaped('nuclearcraft:fuel_neptunium_hen_236', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:neptunium_236', B: 'nuclearcraft:neptunium_237' })

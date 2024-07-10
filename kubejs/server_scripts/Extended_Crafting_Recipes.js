@@ -77,6 +77,22 @@ ServerEvents.recipes(event => {
 		.EUt(50000)
 		.blastFurnaceTemp(12000)
 
+	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation_t2')
+		.itemInputs('4x kubejs:dormant_infinity_compound_ingot', 'kubejs:fury_enhanced_infinity_catalyst')
+		.inputFluids(Fluid.of('gtceu:omnium', 576))
+		.itemOutputs('4x gtceu:infinity_ingot', 'kubejs:dormant_fury_enhanced_infinity_catalyst')
+		.duration(300)
+		.EUt(250000)
+		.blastFurnaceTemp(12000)
+
+	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation_t3')
+		.itemInputs('8x kubejs:dormant_infinity_compound_ingot', 'kubejs:serenity_enhanced_infinity_catalyst')
+		.inputFluids(Fluid.of('gtceu:omnium', 576))
+		.itemOutputs('8x gtceu:infinity_ingot', 'kubejs:dormant_serenity_enhanced_infinity_catalyst')
+		.duration(200)
+		.EUt(1000000)
+		.blastFurnaceTemp(12000)
+
 
 	// mote of omnium
 	event.recipes.extendedcrafting.shapeless_table(

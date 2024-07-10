@@ -103,8 +103,9 @@
 			id: "64CBC49787B51FD8"
 			linked_quest: "1B1D3A66B847D129"
 			shape: "gear"
+			size: 1.5d
 			x: 43.75d
-			y: -23.5d
+			y: -24.5d
 		}
 		{
 			id: "3B6669BBD0448982"
@@ -2423,7 +2424,7 @@
 			id: "4CF399EC00A65E3A"
 			tasks: [{
 				id: "639C72FD2123C478"
-				item: "kubejs:creative_storage_component"
+				item: "kubejs:creative_storage_data"
 				type: "item"
 			}]
 			title: "&9Creative Storage Data"
@@ -2466,7 +2467,7 @@
 			}]
 			title: "&9Creative Power"
 			x: 43.75d
-			y: -25.75d
+			y: -26.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -3276,7 +3277,7 @@
 			}]
 			title: "&9Dimensional Superassembler"
 			x: 45.75d
-			y: -25.75d
+			y: -26.75d
 		}
 		{
 			dependencies: [
@@ -3355,7 +3356,7 @@
 			}]
 			title: "&9Sculk Fusion Reactor"
 			x: 41.75d
-			y: -25.75d
+			y: -26.75d
 		}
 		{
 			dependencies: ["07057CDE4E021BA7"]
@@ -3738,6 +3739,31 @@
 			}]
 			x: 55.0d
 			y: -6.75d
+		}
+		{
+			dependencies: [
+				"1B1D3A66B847D129"
+				"1D00150456DEF379"
+			]
+			id: "06849E067C88C0E9"
+			tasks: [{
+				id: "0BB7A824F7B03BDC"
+				item: "kubejs:fury_enhanced_infinity_catalyst"
+				type: "item"
+			}]
+			x: 35.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["68734C70E2D19616"]
+			id: "65B610CF9324F6B2"
+			tasks: [{
+				id: "2A554D0488C990D6"
+				item: "kubejs:serenity_enhanced_infinity_catalyst"
+				type: "item"
+			}]
+			x: 55.0d
+			y: -26.5d
 		}
 	]
 	title: "End Game"

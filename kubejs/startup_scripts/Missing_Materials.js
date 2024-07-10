@@ -18,10 +18,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL)
-    GTMaterials.Tritium.addFlags(GTMaterialFlags.GENERATE_RING)
+    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
 
     GTMaterials.Einsteinium.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.Einsteinium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+
+    GTMaterials.Americium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.PLASMA, new GTFluidBuilder())
 
     GTMaterials.Berkelium.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.Berkelium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
