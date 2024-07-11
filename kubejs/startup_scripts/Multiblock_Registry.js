@@ -719,6 +719,33 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
+    // Atmospheric Inhaler
+
+    event.create('atmospheric_inhaler', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes(GTRecipeTypes.GAS_COLLECTOR_RECIPES)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .appearanceBlock(() => Block.getBlock('gtceu:corrosion_proof_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("CCHCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
+            .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
+            .aisle("CCCCC", "#IOI#", "CGOGC", "#IOI#", "CCOCC", "#IOI#", "CIOIC")
+            .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
+            .aisle("CCSCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('I', Predicates.blocks("gtceu:engine_intake_casing"))
+            .where('G', Predicates.blocks("gtceu:assembly_line_grating"))
+            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
+            .where('O', Predicates.blocks("gtceu:titanium_pipe_casing"))
+            .where('C', Predicates.blocks("gtceu:corrosion_proof_casing").setMinGlobalLimited(20)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+            .where('#', Predicates.air())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+
+
 
     // Subatomic Digital Assembler
     event.create('subatomic_digital_assembler', 'multiblock')

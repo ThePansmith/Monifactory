@@ -106,6 +106,7 @@
   "block.gtceu.dimensional_superassembler":"Dimensional Superassembler",
   "gtceu.dimensional_superassembler.desc":"§8Uses dimensional warping to process hundreds of assembly line recipes at once.",
   "gtceu.subatomic_digital_assembler.desc": "§8A complex machine capable of synthetizing certain technological marvels when provided with the required data",
+  "gtceu.subatomic_digital_assembly": "Subatomic Digital Assembly",
   "gtceu.quintessence_infuser":"Quintessence Infusing",
   "block.gtceu.quintessence_infuser":"Quintessence Infuser",
   "gtceu.quintessence_infuser.desc": "§8Uses intense rotational speeds to infuse large amounts of souls into objects at once.",
@@ -118,6 +119,9 @@
   "gtceu.actualization_chamber.desc": "§8A powerful machine that harnesses the most complex of matters and turns it into raw materials",
   "block.gtceu.uhv_uhv_parallel_hatch": "Giga Parallel Control Hatch",
   "block.gtceu.uev_uev_parallel_hatch": "Omega Parallel Control Hatch",
+  "block.gtceu.atmospheric_inhaler": "Atmospheric Inhaler",
+  "gtceu.atmospheric_inhaler.desc": "§8A large machine that can suck up large amounts of air at once.",
+
 
   "__GENERIC_MATERIALS__.header": "=====================",
   "__GENERIC_MATERIALS__.flufff": "> Generic Materials <",
