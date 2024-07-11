@@ -217,6 +217,22 @@ ServerEvents.recipes(event => {
     }
     )
 
+    // Atmospheric Inhaler
+    event.shaped(
+        "gtceu:atmospheric_inhaler", [
+        'WRW',
+        'THT',
+        'COC'
+    ], {
+        W: "gtceu:tungsten_single_cable",
+        C: "#gtceu:circuits/iv",
+        T: "gtceu:tungsten_large_fluid_pipe",
+        H: "gtceu:iv_gas_collector",
+        R: "gtceu:tungsten_steel_rotor",
+        O: "gtceu:iv_electric_pump"
+    }
+    ).id('gtceu:shaped/atmospheric_inhaler')
+
     // Prevent cleanroom casings from being usable for free resources
     event.remove({ input: "gtceu:sterilizing_filter_casing" })
     event.recipes.gtceu.arc_furnace("sterile_filter_recycling")
@@ -688,6 +704,12 @@ ServerEvents.recipes(event => {
     .itemOutputs('kubejs:resonant_clathrate')
     .duration(120)
     .EUt(75)
+
+    event.recipes.gtceu.extractor('resonant_ender')
+    .itemInputs('minecraft:ender_pearl')
+    .outputFluids(Fluid.of('kubejs:resonant_ender', 250))
+    .duration(40)
+    .EUt(30)
 
 
 })
