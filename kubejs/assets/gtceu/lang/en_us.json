@@ -119,8 +119,9 @@
   "gtceu.actualization_chamber.desc": "§8A powerful machine that harnesses the most complex of matters and turns it into raw materials",
   "block.gtceu.uhv_uhv_parallel_hatch": "Giga Parallel Control Hatch",
   "block.gtceu.uev_uev_parallel_hatch": "Omega Parallel Control Hatch",
-  "block.gtceu.atmospheric_inhaler": "Atmospheric Inhaler",
-  "gtceu.atmospheric_inhaler.desc": "§8A large machine that can suck up large amounts of air at once.",
+  "block.gtceu.atmospheric_accumulator": "Atmospheric Accumulator",
+  "gtceu.atmospheric_accumulator.desc": "§8A large machine that can suck up large amounts of air at once.",
+  "block.gtceu.matter_alternator": "Matter Alternator",
 
 
   "__GENERIC_MATERIALS__.header": "=====================",
