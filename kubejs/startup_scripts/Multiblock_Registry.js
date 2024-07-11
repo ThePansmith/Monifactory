@@ -745,9 +745,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-    // Matter Alternator
+    // Matter Alterator
 
-        event.create('matter_alternator', 'multiblock')
+        event.create('matter_alterator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('atomic_reconstruction')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])

@@ -217,9 +217,9 @@ ServerEvents.recipes(event => {
     }
     )
 
-    // Atmospheric Inhaler
+    // Atmospheric Accumulator
     event.shaped(
-        "gtceu:atmospheric_inhaler", [
+        "gtceu:atmospheric_accumulator", [
         'WRW',
         'THT',
         'COC'
@@ -231,7 +231,24 @@ ServerEvents.recipes(event => {
         R: "gtceu:tungsten_steel_rotor",
         O: "gtceu:iv_electric_pump"
     }
-    ).id('gtceu:shaped/atmospheric_inhaler')
+    ).id('gtceu:shaped/atmospheric_accumulator')
+
+    // Matter Alterator
+    event.shaped(
+        "gtceu:matter_alterator", [
+        'WEW',
+        'THT',
+        'PCV'
+    ], {
+        W: "gtceu:tungsten_single_cable",
+        C: "#gtceu:circuits/iv",
+        T: "gtceu:restonia_empowered_plate",
+        H: "gtceu:iv_atomic_reconstructor",
+        E: "gtceu:iv_emitter",
+        P: "gtceu:iv_electric_piston",
+        V: "gtceu:iv_conveyor_module"
+    }
+    ).id('gtceu:shaped/matter_alterator')
 
     // Prevent cleanroom casings from being usable for free resources
     event.remove({ input: "gtceu:sterilizing_filter_casing" })

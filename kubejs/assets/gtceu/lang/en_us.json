@@ -121,7 +121,7 @@
   "block.gtceu.uev_uev_parallel_hatch": "Omega Parallel Control Hatch",
   "block.gtceu.atmospheric_accumulator": "Atmospheric Accumulator",
   "gtceu.atmospheric_accumulator.desc": "§8A large machine that can suck up large amounts of air at once.",
-  "block.gtceu.matter_alternator": "Matter Alternator",
+  "block.gtceu.matter_alterator": "Matter Alterator",
 
 
   "__GENERIC_MATERIALS__.header": "=====================",
