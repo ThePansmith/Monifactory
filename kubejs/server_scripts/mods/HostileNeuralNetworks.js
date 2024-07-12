@@ -102,12 +102,6 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(7)
 
-    event.recipes.gtceu.extractor('resonant_ender')
-        .itemInputs('minecraft:ender_pearl')
-        .outputFluids(Fluid.of('kubejs:resonant_ender', 250))
-        .duration(40)
-        .EUt(30)
-
     event.recipes.gtceu.electrolyzer('gt_quartz')
         .itemInputs('4x minecraft:glass')
         .itemOutputs('minecraft:quartz')
