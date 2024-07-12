@@ -1812,7 +1812,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "712064FEEFCC29AA"
-				item: "kubejs:sculk_core"
+				item: "kubejs:mesol_core"
 				type: "item"
 			}]
 			title: "&9Sculk Cores"
@@ -1912,7 +1912,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "5A46206776E20233"
-				item: "kubejs:echo_core"
+				item: "kubejs:bathyal_core"
 				type: "item"
 			}]
 			title: "&9Echo Cores"
@@ -2059,7 +2059,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "71171679FDF638A6"
-				item: "kubejs:resonant_core"
+				item: "kubejs:abyssal_core"
 				type: "item"
 			}]
 			title: "&9Resonant Core"

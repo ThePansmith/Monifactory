@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         ], {
             P: 'gtceu:tiny_neutronium_dust',
             E: "kubejs:eternal_catalyst",
-            C: 'kubejs:abyssal_core',
+            C: 'kubejs:hadal_core',
             H: 'kubejs:heart_of_a_universe'
         }).id('kubejs:extended/infinity_catalyst');
 
