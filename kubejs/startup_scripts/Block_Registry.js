@@ -196,12 +196,14 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
+        .tagBlock("mineable/pickaxe")
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/omnium/casing')})
         
     event.create('dimensional_stabilization_netherite_casing', 'gtceu:renderer')
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
+        .tagBlock("mineable/pickaxe")
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/netherite/casing')})
 
     event.create('omnic_matrix_coil_block', 'gtceu:coil')
@@ -213,6 +215,7 @@ StartupEvents.registry("block", event => {
         .texture('kubejs:block/omnium/coil')
         .hardness(5)
         .requiresTool(true)
+        .tagBlock("mineable/pickaxe")
         .soundType('metal')
 
 
