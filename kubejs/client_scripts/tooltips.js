@@ -39,7 +39,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('enderio:lumium_conduit', '§7Max Output 131,072 RF/t')
     tooltip.add('enderio:signalum_conduit', '§7Max Output 524,288 RF/t')
     tooltip.add('enderio:enderium_conduit', '§7Max Output 2,097,152 RF/t')
-    tooltip.add('enderio:sculk_compound_conduit', '§7Max Output 8,388,608 RF/t')
+    tooltip.add('enderio:cryolobus_conduit', '§7Max Output 8,388,608 RF/t')
     tooltip.add('enderio:sculk_superconductor_conduit', '§7Max Output 134,217,728 RF/t')
 
     tooltip.add("thermal:device_rock_gen", "§7Must be placed next to lava and water to produce cobblestone.")

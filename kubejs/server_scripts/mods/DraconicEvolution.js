@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .EUt(30720)
 
     event.recipes.gtceu.assembly_line('resonant_energy_core')
-        .itemInputs('gtceu:tungsten_carbide_frame', '6x gtceu:sculk_compound_plate', 'kubejs:echo_core', '4x kubejs:echo_energy_core', '2x gtceu:iv_field_generator', '12x gtceu:vanadium_gallium_single_wire')
+        .itemInputs('gtceu:tungsten_carbide_frame', '6x gtceu:cryolobus_plate', 'kubejs:echo_core', '4x kubejs:echo_energy_core', '2x gtceu:iv_field_generator', '12x gtceu:vanadium_gallium_single_wire')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('kubejs:energy_core')
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('kubejs:echo_energy_core').EUt(480).duration(1200))
@@ -25,15 +25,15 @@ ServerEvents.recipes(event => {
         .EUt(30720)
 
     event.recipes.gtceu.assembly_line('reactor_prt_stab_frame')
-        .itemInputs('6x nuclearcraft:plate_elite', 'kubejs:resonant_core', 'gtceu:resonant_sculk_compound_gear', 'gtceu:resonant_sculk_compound_frame', '2x gtceu:zpm_emitter', '2x gtceu:zpm_sensor')
+        .itemInputs('6x nuclearcraft:plate_elite', 'kubejs:resonant_core', 'gtceu:cryococcus_gear', 'gtceu:cryococcus_frame', '2x gtceu:zpm_emitter', '2x gtceu:zpm_sensor')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('kubejs:reactor_prt_stab_frame')
-        .stationResearch(b => b.researchStack('gtceu:resonant_sculk_compound_frame').CWUt(96,384000))
+        .stationResearch(b => b.researchStack('gtceu:cryococcus_frame').CWUt(96,384000))
         .duration(750)
         .EUt(491520)
 
     event.recipes.gtceu.assembly_line('particle_generator')
-        .itemInputs('gtceu:tungsten_carbide_frame', '6x gtceu:sculk_compound_plate', 'kubejs:sculk_core', '10x minecraft:blaze_rod', '3x gtceu:ev_emitter', '4x gtceu:restonia_empowered_block')
+        .itemInputs('gtceu:tungsten_carbide_frame', '6x gtceu:cryolobus_plate', 'kubejs:sculk_core', '10x minecraft:blaze_rod', '3x gtceu:ev_emitter', '4x gtceu:restonia_empowered_block')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('kubejs:particle_generator')
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:restonia_empowered_block').EUt(480).duration(1200))
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         'BCB',
         'ABA'
     ], {
-        A: "gtceu:sculk_compound_ingot",
+        A: "gtceu:cryolobus_ingot",
         B: "gtceu:tungsten_carbide_ingot",
         C: "gtceu:palis_empowered_block"
     }).id('kubejs:components/sculk_core')
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
         'SWS'
     ], {
         R: "minecraft:redstone_block",
-        S: "gtceu:sculk_compound_ingot",
+        S: "gtceu:cryolobus_ingot",
         W: "waystones:warp_stone"
     }).id('kubejs:advanced_magnet')
 

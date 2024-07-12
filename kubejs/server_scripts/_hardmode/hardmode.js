@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
         )
 
         event.remove({id: "gtceu:large_chemical_reactor/radon_from_uranium_238"})
-        event.remove({id: "gtceu:electric_blast_furnace/blast_sculk_compound_gas"})
+        event.remove({id: "gtceu:electric_blast_furnace/blast_cryolobus_gas"})
         event.remove({id: "gtceu:circuit_assembler/wetware_board"})
         event.remove({id: "enderio:stick"})
 

@@ -1723,10 +1723,10 @@
 			tasks: [{
 				count: 64L
 				id: "65D45DB6200284B7"
-				item: "gtceu:sculk_compound_ingot"
+				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
-			title: "Element ???: sculk_compound"
+			title: "Element ???: cryolobus"
 			x: 26.0d
 			y: 12.5d
 		}

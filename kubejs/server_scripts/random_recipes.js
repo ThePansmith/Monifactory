@@ -147,26 +147,26 @@ ServerEvents.recipes(event => {
     //TODO: AE2 crystal growth accelerator goes here
 
     // Implement Sculk Compound smelting
-    event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound" })
-    event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound_gas" })
-    const sculk_compoundFuels = [
+    event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
+    event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
+    const cryolobusFuels = [
         [2000, "gtceu:cetane_boosted_diesel"],
         [2000, "gtceu:gasoline"],
     ]
 
-    for (const [mB, id] of sculk_compoundFuels) {
-        event.recipes.gtceu.electric_blast_furnace("sculk_compound_" + id.replace(/\W/g, ''))
-            .itemInputs("gtceu:sculk_compound_dust")
+    for (const [mB, id] of cryolobusFuels) {
+        event.recipes.gtceu.electric_blast_furnace("cryolobus_" + id.replace(/\W/g, ''))
+            .itemInputs("gtceu:cryolobus_dust")
             .inputFluids(`${id} ${mB}`)
-            .itemOutputs("gtceu:hot_sculk_compound_ingot")
+            .itemOutputs("gtceu:hot_cryolobus_ingot")
             .duration(1800)
             .blastFurnaceTemp(6800)
             .EUt(30720)
 
-        event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_" + id.replace(/\W/g, ''))
+        event.recipes.gtceu.electric_blast_furnace("cryolobus_scale_" + id.replace(/\W/g, ''))
             .itemInputs("4x kubejs:warden_horn")
             .inputFluids(`${id} ${mB * 4}`)
-            .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
+            .itemOutputs("2x gtceu:hot_cryolobus_ingot")
             .duration(3600)
             .blastFurnaceTemp(6800)
             .EUt(30720)
@@ -174,28 +174,28 @@ ServerEvents.recipes(event => {
     }
     
     //HOG Sculk Compound Recipes
-    event.recipes.gtceu.electric_blast_furnace("sculk_compound_hog")
-        .itemInputs("gtceu:sculk_compound_dust")
+    event.recipes.gtceu.electric_blast_furnace("cryolobus_hog")
+        .itemInputs("gtceu:cryolobus_dust")
         .inputFluids("gtceu:high_octane_gasoline 500")
-        .itemOutputs("gtceu:hot_sculk_compound_ingot")
+        .itemOutputs("gtceu:hot_cryolobus_ingot")
         .duration(1200)
         .blastFurnaceTemp(6800)
         .EUt(30720)
 
-    event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_hog")
+    event.recipes.gtceu.electric_blast_furnace("cryolobus_scale_hog")
         .itemInputs("4x kubejs:warden_horn")
         .inputFluids("gtceu:high_octane_gasoline 2000")
-        .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
+        .itemOutputs("2x gtceu:hot_cryolobus_ingot")
         .duration(2400)
         .blastFurnaceTemp(6800)
         .EUt(30720)
 
 
     //Sculk Compound Vac Freezer recipe
-    event.remove({ id: "gtceu:vacuum_freezer/cool_hot_sculk_compound_ingot" }) 
-    event.recipes.gtceu.vacuum_freezer("sculk_compound_ingot_cooling")
-        .itemInputs('gtceu:hot_sculk_compound_ingot')
-        .itemOutputs('gtceu:sculk_compound_ingot')
+    event.remove({ id: "gtceu:vacuum_freezer/cool_hot_cryolobus_ingot" }) 
+    event.recipes.gtceu.vacuum_freezer("cryolobus_ingot_cooling")
+        .itemInputs('gtceu:hot_cryolobus_ingot')
+        .itemOutputs('gtceu:cryolobus_ingot')
         .inputFluids(Fluid.of('kubejs:molten_cryotheum', 2000))
         .duration(600)
         .EUt(1920)

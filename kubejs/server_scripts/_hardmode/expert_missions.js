@@ -280,7 +280,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t9', 
             '8x gtceu:neutron_reflector', 
-            '4x gtceu:resonant_sculk_compound_block', 
+            '4x gtceu:cryococcus_block', 
             'kubejs:stellar_creation_data'
         )
         .itemOutputs(

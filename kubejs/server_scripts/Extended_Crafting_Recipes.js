@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
 			'gtceu:tritanium_ingot',
 			'gtceu:duranium_ingot',
 			'gtceu:trinium_ingot',
-			'gtceu:sculk_compound_ingot',
+			'gtceu:cryolobus_ingot',
 			'gtceu:naquadah_ingot',
 			'gtceu:tiny_nether_star_dust',
 		]

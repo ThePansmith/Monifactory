@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
             'D WW WW D'
         ], {
             L: 'kubejs:supercharged_laser_array',
-            D: 'gtceu:double_sculk_compound_plate',
+            D: 'gtceu:double_cryolobus_plate',
             G: 'kubejs:advanced_micro_miner_guidance_system',
             P: 'kubejs:energy_core_stabilizer',
             A: 'gtceu:luv_field_generator',

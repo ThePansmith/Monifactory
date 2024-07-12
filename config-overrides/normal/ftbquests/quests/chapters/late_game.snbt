@@ -1286,7 +1286,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75321CAE019C190A"
-				item: "gtceu:sculk_compound_dust"
+				item: "gtceu:cryolobus_dust"
 				type: "item"
 			}]
 			title: "&9Sculk Compound Dust"
@@ -1303,7 +1303,7 @@
 				""
 				"Sculk Compound gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Sculk Compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft sculk_compound."
+				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Sculk Compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1317,7 +1317,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "7D3DF1D033AF6DC9"
-				item: "gtceu:sculk_compound_ingot"
+				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
 			title: "&9Sculk Compound Ingots"
@@ -1790,7 +1790,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "27BE677925582139"
-				item: "gtceu:double_sculk_compound_plate"
+				item: "gtceu:double_cryolobus_plate"
 				type: "item"
 			}]
 			title: "&9Sculk Compound Double Plates"
@@ -2037,7 +2037,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "50929C3F5F044E40"
-				item: "gtceu:resonant_sculk_compound_block"
+				item: "gtceu:cryococcus_block"
 				type: "item"
 			}]
 			title: "&9Resonant Sculk Compound"
