@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     
     //Sculk Reactor
     event.recipes.gtceu.assembly_line('sculk_reactor')
-    .itemInputs('8x kubejs:resonant_fusion_casing', '20x kubejs:abyssal_reaction_casing', "16x kubejs:resonant_fusion_coil", '32x gtceu:holmium_double_wire', '4x gtceu:uiv_field_generator', '8x kubejs:quasi_stable_neutron_star', '4x gtceu:double_infinity_plate', '4x #gtceu:circuits/uiv')
+    .itemInputs('8x kubejs:resonant_fusion_casing', '20x moni_multiblocks:hadal_coil_block', "16x kubejs:resonant_fusion_coil", '32x gtceu:holmium_double_wire', '4x gtceu:uiv_field_generator', '8x kubejs:quasi_stable_neutron_star', '4x gtceu:double_infinity_plate', '4x #gtceu:circuits/uiv')
     .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:cryococcus 1152')
     .itemOutputs('gtceu:sculk_reactor')
     .duration(6000)

@@ -1,7 +1,7 @@
 // Elements
 GTCEuStartupEvents.registry('gtceu:element', event => {
-    event.create('cryolobus', 149, 234, -1, null, 'Cr', false)
-    event.create('cryococcus', 149, 264, -1, null, 'Cr*', false)
+    event.create('cryolobus', 149, 234, -1, null, 'Cy', false)
+    event.create('cryococcus', 149, 264, -1, null, 'Cy*', false)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {

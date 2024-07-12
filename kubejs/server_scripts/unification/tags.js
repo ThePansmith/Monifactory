@@ -124,17 +124,3 @@ ServerEvents.recipes(event => {
     event.remove({ output: global.nuclearcraftMaterialPattern })
 })
 
-// Hacky Drac Reactor stuff
-// This will be removed when it becomes a proper post tank multi in favor of just including the injectors in it's recipe or something
-ServerEvents.tags('item', event => {
-    event.add('moni:basic_injector_tier', 'kubejs:sculk_reaction_casing')
-    event.add('moni:basic_injector_tier', 'kubejs:echo_reaction_casing')
-    event.add('moni:basic_injector_tier', 'kubejs:resonant_reaction_casing')
-    event.add('moni:basic_injector_tier', 'kubejs:abyssal_reaction_casing')
-    event.add('moni:echo_injector_tier', 'kubejs:echo_reaction_casing')
-    event.add('moni:echo_injector_tier', 'kubejs:resonant_reaction_casing')
-    event.add('moni:echo_injector_tier', 'kubejs:abyssal_reaction_casing')
-    event.add('moni:resonant_injector_tier', 'kubejs:resonant_reaction_casing')
-    event.add('moni:resonant_injector_tier', 'kubejs:abyssal_reaction_casing')
-    event.add('moni:abyssal_injector_tier', 'kubejs:abyssal_reaction_casing')
-})

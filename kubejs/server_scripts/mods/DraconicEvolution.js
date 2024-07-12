@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('sculk_reaction_casing')
         .itemInputs('gtceu:assembly_line_unit', 'gtceu:enori_empowered_block', 'gtceu:europium_plate', '2x kubejs:sculk_core', '4x enderio:ender_crystal')
         .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('kubejs:sculk_reaction_casing')
+        .itemOutputs('moni_multiblocks:mesol_coil_block')
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:enori_empowered_block').EUt(480).duration(1200))
         .duration(600)
         .EUt(30720)

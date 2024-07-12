@@ -14,11 +14,7 @@ StartupEvents.registry("block", event => {
     event.create('double_compressed_red_sand').displayName("Double Compressed Red Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING);
     event.create('warp_core').displayName("Warp Core").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
     event.create('warp_controller').displayName("Warp Controller").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('sculk_reaction_casing').displayName("Sculk Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('echo_reaction_casing').displayName("Echo Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('resonant_reaction_casing').displayName("Resonant Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('abyssal_reaction_casing').displayName("Abyssal Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-  
+
     // Micro Miner Cores
     event.create('electrum_micro_miner_core')
         .displayName("Electrum Micro Miner Engine Core")

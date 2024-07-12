@@ -1889,7 +1889,7 @@
 				{
 					count: 10L
 					id: "5756875831B786CB"
-					item: "kubejs:sculk_reaction_casing"
+					item: "moni_multiblocks:mesol_coil_block"
 					type: "item"
 				}
 			]
@@ -1936,7 +1936,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "09CD18933F28FA28"
-				item: "kubejs:resonant_reaction_casing"
+				item: "moni_multiblocks:bathyal_coil_block"
 				type: "item"
 			}]
 			title: "&9Resonant Reaction Casings"
@@ -1960,7 +1960,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "581D806823B709C3"
-				item: "kubejs:echo_reaction_casing"
+				item: "moni_multiblocks:bathyal_coil_block"
 				type: "item"
 			}]
 			title: "&9Echo Reaction Casings"
@@ -2239,7 +2239,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "140C83AB5FE8450E"
-				item: "kubejs:abyssal_reaction_casing"
+				item: "moni_multiblocks:hadal_coil_block"
 				type: "item"
 			}]
 			title: "Abyssal Fusion Injectors"
