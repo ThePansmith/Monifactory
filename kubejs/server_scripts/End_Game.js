@@ -23,15 +23,15 @@ ServerEvents.recipes(event => {
             .EUt(131072)
     
     //Sculk Reactor
-    event.recipes.gtceu.assembly_line('sculk_reactor')
-    .itemInputs('8x kubejs:resonant_fusion_casing', '20x moni_multiblocks:hadal_coil_block', "16x kubejs:resonant_fusion_coil", '32x gtceu:holmium_double_wire', '4x gtceu:uiv_field_generator', '8x kubejs:quasi_stable_neutron_star', '4x gtceu:double_infinity_plate', '4x #gtceu:circuits/uiv')
+    event.recipes.gtceu.assembly_line('hypogean_reactor')
+    .itemInputs('8x kubejs:cryococcus_fusion_casing', '20x moni_multiblocks:hadal_coil_block', "16x kubejs:cryococcus_fusion_coil", '32x gtceu:holmium_double_wire', '4x gtceu:uiv_field_generator', '8x kubejs:quasi_stable_neutron_star', '4x gtceu:double_infinity_plate', '4x #gtceu:circuits/uiv')
     .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:cryococcus 1152')
-    .itemOutputs('gtceu:sculk_reactor')
+    .itemOutputs('gtceu:hypogean_reactor')
     .duration(6000)
     .EUt(13920000)
 
     .stationResearch(b => b
-        .researchStack('gtceu:sculk_reverberator')
+        .researchStack('moni_multiblocks:hypogean_infuser')
         .CWUt(160, 1024000)
         .EUt(1200000)
     )

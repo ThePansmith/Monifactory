@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     event.shaped(
-        'gtceu:sculk_reverberator',
+        'moni_multiblocks:hypogean_infuser',
         ['PLP',
             'CFC',
             'PHP'
@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         H: 'gtceu:hsse_frame'
 
     }
-    ).id('kubejs:shaped/sculk_reverberator')
+    ).id('kubejs:shaped/hypogean_infuser')
 
     event.recipes.gtceu.assembler('kubejs:cryolobus_casing')
         .itemInputs('6x gtceu:cryolobus_plate', 'gtceu:cryolobus_frame')
@@ -27,6 +27,13 @@ ServerEvents.recipes(event => {
         .duration(50)
         .circuit(6)
         .EUt(16)
+
+        event.recipes.gtceu.assembler('sculk_seed_bus')
+        .itemInputs('gtceu:luv_machine_hull', '8x gtceu:cryococcus_plate', 'minecraft:chest')
+        .itemOutputs('moni_multiblocks:sculk_seed_bus')
+        .duration(100)
+        .circuit(1)
+        .EUt(120)
 
     const SculkTemperatureCondition = Java.loadClass("com.monifactory.multiblocks.common.recipe.SculkTemperatureCondition")
     function Reactor(id, output, input, temp, RF) {

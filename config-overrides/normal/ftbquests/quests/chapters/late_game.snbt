@@ -1872,7 +1872,7 @@
 				""
 				"&5DE is currently in the process of being removed, the draconic reactor multiblock will be replaced with one a bit more fitting. The quest details will remain unchanged until said multiblock is finalized."
 			]
-			icon: "gtceu:sculk_reverberator"
+			icon: "moni_multiblocks:hypogean_infuser"
 			id: "713FAECEE5046121"
 			rewards: [{
 				id: "1334EFA413965845"
@@ -1883,7 +1883,7 @@
 			tasks: [
 				{
 					id: "3C9333ECA3F6B5F9"
-					item: "gtceu:sculk_reverberator"
+					item: "moni_multiblocks:hypogean_infuser"
 					type: "item"
 				}
 				{
