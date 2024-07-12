@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .circuit(1)
         .EUt(120)
-
+        
     const SculkTemperatureCondition = Java.loadClass("com.monifactory.multiblocks.common.recipe.SculkTemperatureCondition")
     function Reactor(id, output, input, temp, RF) {
         event.recipes.moni_multiblocks.hypogean_infuser(`kubejs:${id}`)
@@ -43,6 +43,12 @@ ServerEvents.recipes(event => {
             .duration(200) //wip
             .EUt(61440)
             .addCondition(new SculkTemperatureCondition(0.1))
+
+            event.recipes.gtceu.hypogean_reactor(`kubejs:${id}_reactor`)
+            .itemInputs(input)
+            .itemOutputs(output)
+            .duration(200) //wip
+            .EUt(61440)
     }
 
 

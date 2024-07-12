@@ -156,7 +156,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 
-
     //Quintessence Infuser
     event.create('quintessence_infuser')
         .category('multiblock')
@@ -175,6 +174,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE)
 
+    //Hypogen reactor: cheating the system by just making a second recipemap :tr:
+    event.create('hypogean_reactor')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(9, 1, 1, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -571,7 +577,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     const HypogeanInfuser = Java.loadClass('com.monifactory.multiblocks.common.machine.multiblock.HypogeanInfuserMachine')
     event.create('hypogean_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('moni_multiblocks:hypogean_infuser')
+        .recipeTypes('hypogean_reactor')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock('kubejs:cryolobus_casing'))
         .pattern(definition => FactoryBlockPattern.start()
