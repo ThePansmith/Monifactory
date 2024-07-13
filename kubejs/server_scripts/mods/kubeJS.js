@@ -178,6 +178,13 @@ ServerEvents.recipes(event => {
         .notConsumable('gtceu:ball_casting_mold')
         .duration(500)
         .EUt(16)
+    
+    event.recipes.gtceu.fluid_solidifier('mote_of_omnium')
+        .inputFluids(Fluid.of('gtceu:omnium', 16))
+        .itemOutputs('kubejs:mote_of_omnium')
+        .notConsumable('gtceu:ball_casting_mold')
+        .duration(20)
+        .EUt(7)
 
     //Thermal Fluids
     event.recipes.gtceu.extractor('primal_mana')
