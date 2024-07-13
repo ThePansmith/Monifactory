@@ -693,6 +693,57 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
+    // Atmospheric Accumulator
+
+    event.create('atmospheric_accumulator', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes(GTRecipeTypes.GAS_COLLECTOR_RECIPES)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .appearanceBlock(() => Block.getBlock('gtceu:corrosion_proof_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("CCHCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
+            .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
+            .aisle("CCCCC", "#IOI#", "CGOGC", "#IOI#", "CCOCC", "#IOI#", "CIOIC")
+            .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
+            .aisle("CCSCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('I', Predicates.blocks("gtceu:engine_intake_casing"))
+            .where('G', Predicates.blocks("gtceu:assembly_line_grating"))
+            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
+            .where('O', Predicates.blocks("gtceu:titanium_pipe_casing"))
+            .where('C', Predicates.blocks("gtceu:corrosion_proof_casing").setMinGlobalLimited(70)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+            .where('#', Predicates.air())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+
+    // Matter Alterator
+
+        event.create('matter_alterator', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('atomic_reconstruction')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .appearanceBlock(() => Block.getBlock('gtceu:laser_safe_engraving_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("#CHC#######", "#CGC#######", "#CGC#######", "#CGC#######", "#CCC#######",)
+            .aisle("CCCCC#F###F", "C###CCCCCCC", "C###CGGGGGC", "C###CCCCCCC", "CCCCC######",)
+            .aisle("CCCCC######", "G#CCCCCCCCC", "G#F######PC", "G#CCCGGGGGC", "CCCCC######",)
+            .aisle("CCCCC#F###F", "C###CCCCCCC", "C###CGGGGGC", "C###CCCCCCC", "CCCCC######",)
+            .aisle("#CSC#######", "#CGC#######", "#CGC#######", "#CGC#######", "#CCC#######",)
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('G', Predicates.blocks("gtceu:laminated_glass"))
+            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
+            .where('P', Predicates.blocks("gtceu:palis_block"))
+            .where('F', Predicates.blocks("gtceu:hastelloy_c_276_frame"))
+            .where('C', Predicates.blocks("gtceu:laser_safe_engraving_casing").setMinGlobalLimited(50)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+            .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
 
     // Subatomic Digital Assembler
     event.create('subatomic_digital_assembler', 'multiblock')

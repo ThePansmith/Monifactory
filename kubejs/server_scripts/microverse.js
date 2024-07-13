@@ -424,7 +424,7 @@ ServerEvents.recipes(event => {
             '4x kubejs:universal_navigator',
             '4x gtceu:uev_field_generator',
             '24x gtceu:holmium_plate',
-            '8x kubejs:dimensional_processor_computer',
+            '4x #gtceu:circuits/uiv',
             '2x gtceu:uiv_sensor',
             '2x gtceu:uiv_emitter',
             '4x gtceu:dense_naquadah_alloy_plate',

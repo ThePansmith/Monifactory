@@ -123,12 +123,12 @@ StartupEvents.registry("block", event => {
 			.requiresTool(true);
 
     //EMERGENCY FIX
-    event.create('gtceu:dilithium_ore')
+    /*event.create('gtceu:dilithium_ore')
 		.soundType('stone')
 		.hardness(2)
 		.resistance(2)
 		.tagBlock("mineable/pickaxe")
-		.requiresTool();
+		.requiresTool();*/
 
     //Casing stuff
 
@@ -211,8 +211,10 @@ StartupEvents.registry("block", event => {
         .texture('kubejs:block/omnium/coil')
         .hardness(5)
         .requiresTool(true)
-        .soundType('metal')
         .tagBlock("mineable/pickaxe")
+        .soundType('metal')
+
+
 });
 
 // StartupEvents.registry('block', event => {
