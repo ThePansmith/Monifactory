@@ -47,15 +47,15 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(65520)
 
-    event.recipes.gtceu.omnic_forge('kubejs:resonant_fusion_coil')
-        .itemInputs('2x gtceu:fusion_coil', '8x gtceu:dense_resonant_sculk_compound_plate', '2x gtceu:netherite_frame', '2x #gtceu:circuits/uhv', 'gtceu:uhv_field_generator')
-        .itemOutputs('2x kubejs:resonant_fusion_coil')
+    event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_coil')
+        .itemInputs('2x gtceu:fusion_coil', '8x gtceu:dense_cryococcus_plate', '2x gtceu:netherite_frame', '2x #gtceu:circuits/uhv', 'gtceu:uhv_field_generator')
+        .itemOutputs('2x kubejs:cryococcus_fusion_coil')
         .duration(2000)
         .EUt(65520)
     
-    event.recipes.gtceu.omnic_forge('kubejs:resonant_fusion_casing')
-        .itemInputs('gtceu:uiv_machine_hull', '2x kubejs:resonant_fusion_coil', '12x gtceu:resonant_sculk_compound_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uev_field_generator')
-        .itemOutputs('4x kubejs:resonant_fusion_casing')
+    event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_casing')
+        .itemInputs('gtceu:uiv_machine_hull', '2x kubejs:cryococcus_fusion_coil', '12x gtceu:cryococcus_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uev_field_generator')
+        .itemOutputs('4x kubejs:cryococcus_fusion_casing')
         .duration(2000)
         .EUt(65520)
 

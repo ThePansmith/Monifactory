@@ -6,6 +6,6 @@ EnderIOEvents.conduits(event => {
     event.registerEnergyConduit("lumium_conduit", "Lumium Energy Conduit", 131072)
     event.registerEnergyConduit("signalum_conduit", "Signalum Energy Conduit", 524288)
     event.registerEnergyConduit("enderium_conduit", "Enderium Energy Conduit", 2097152)
-    event.registerEnergyConduit("sculk_compound_conduit", "Sculk Compound Energy Conduit", 8388608)
+    event.registerEnergyConduit("cryolobus_conduit", "Sculk Compound Energy Conduit", 8388608)
     event.registerEnergyConduit("sculk_superconductor_conduit", "Sculk Superconductor Energy Conduit", 134217728)
 })

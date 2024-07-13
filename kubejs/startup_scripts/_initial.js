@@ -23,7 +23,7 @@ const placeHolder = (registry, name) => {
 
 //Unification regexes
 // MODS TO FIX: (cool line name tbd), THERMAL SERIES, NUCLEARCRAFT
-global.manualUnification = ['hammerlib:gears/netherite', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'hammerlib:gears/copper', 'hammerlib:gears/iron', 'hammerlib:gears/gold', 'hammerlib:gears/diamond', 'kubejs:sculk_compound_ingot', 'kubejs:sculk_compound_nugget', 'kubejs:sculk_compound_dust', 'kubejs:resonant_sculk_compound_ingot', 'kubejs:resonant_sculk_compound_nugget', 'kubejs:resonant_sculk_compound_dust', 'hammerlib:gears/stone', 'hammerlib:gears/wooden', 'extendedcrafting:the_ultimate_nugget', 'extendedcrafting:the_ultimate_ingot', 'extendedcrafting:the_ultimate_block']
+global.manualUnification = ['hammerlib:gears/netherite', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'hammerlib:gears/copper', 'hammerlib:gears/iron', 'hammerlib:gears/gold', 'hammerlib:gears/diamond', 'kubejs:cryolobus_ingot', 'kubejs:cryolobus_nugget', 'kubejs:cryolobus_dust', 'kubejs:cryococcus_ingot', 'kubejs:cryococcus_nugget', 'kubejs:cryococcus_dust', 'hammerlib:gears/stone', 'hammerlib:gears/wooden', 'extendedcrafting:the_ultimate_nugget', 'extendedcrafting:the_ultimate_ingot', 'extendedcrafting:the_ultimate_block']
 global.UnificationExcludedItems = ['nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:tough_alloy_ingot', 'enderio:wood_gear', 'enderio:stone_gear', 'enderio:iron_gear', 'enderio:energized_gear', 'enderio:vibrant_gear', 'enderio:dark_bimetal_gear']
 global.unificationPattern = new RegExp(`^(?!(${global.UnificationExcludedItems.join('|')})).*(nuclearcraft|thermal|enderio):(powdered_.*|.*(_block|_plate|_ingot|_nugget|_gear|_dust))`, 'i')
 

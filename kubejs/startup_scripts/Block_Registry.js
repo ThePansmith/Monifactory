@@ -14,11 +14,7 @@ StartupEvents.registry("block", event => {
     event.create('double_compressed_red_sand').displayName("Double Compressed Red Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING);
     event.create('warp_core').displayName("Warp Core").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
     event.create('warp_controller').displayName("Warp Controller").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('sculk_reaction_casing').displayName("Sculk Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('echo_reaction_casing').displayName("Echo Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('resonant_reaction_casing').displayName("Resonant Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('abyssal_reaction_casing').displayName("Abyssal Reaction Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-  
+
     // Micro Miner Cores
     event.create('electrum_micro_miner_core')
         .displayName("Electrum Micro Miner Engine Core")
@@ -146,41 +142,41 @@ StartupEvents.registry("block", event => {
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/microverse/casing')})
 
     
-    event.create('sculk_compound_casing', 'gtceu:renderer')
-        .displayName("Sculk Compound Casing")
+    event.create('cryolobus_casing', 'gtceu:renderer')
+        .displayName("Cryolobus Casing")
         .soundType('metal')
         .resistance(6)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/sculk_compound_casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/cryolobus/cryolobus_casing')})
 
-    event.create('resonant_sculk_compound_casing', 'gtceu:renderer')
-        .displayName("Resonant Sculk Compound Casing")
+    event.create('cryococcus_casing', 'gtceu:renderer')
+        .displayName("Cryococcus Casing")
         .soundType('metal')
         .resistance(6)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/resonant_casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_casing')})
 
-    event.create('resonant_fusion_casing', 'gtceu:renderer')
-        .displayName("Resonant Fusion Casing")
+    event.create('cryococcus_fusion_casing', 'gtceu:renderer')
+        .displayName("Cryococcus Fusion Casing")
         .soundType('metal')
         .resistance(6)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/resonant_fusion_casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_fusion_casing')})
 
-    event.create('resonant_fusion_coil', 'gtceu:renderer')
-        .displayName("Resonant Fusion Coil")
+    event.create('cryococcus_fusion_coil', 'gtceu:renderer')
+        .displayName("Cryococcus Fusion Coil")
         .soundType('metal')
         .resistance(6)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/sculk_compound/resonant_fusion_coil')})
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_fusion_coil')})
 
         event.create("dark_soularium_casing", 'gtceu:renderer')
         .displayName("Dark Soularium Casing")

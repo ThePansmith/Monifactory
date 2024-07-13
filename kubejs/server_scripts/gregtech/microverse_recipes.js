@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t9', 
             '8x gtceu:neutron_reflector', 
-            '4x gtceu:resonant_sculk_compound_block', 
+            '4x gtceu:cryococcus_block', 
             'kubejs:stellar_creation_data'
         )
         .itemOutputs(
@@ -415,7 +415,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_first')
         .itemInputs(
             'kubejs:microminer_t9', 
-            '4x gtceu:resonant_sculk_compound_block', 
+            '4x gtceu:cryococcus_block', 
             '64x kubejs:stellar_creation_data', 
             '64x kubejs:stellar_creation_data', 
             '64x kubejs:stellar_creation_data', 
@@ -429,7 +429,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_first')
         .itemInputs(
             'kubejs:microminer_t10', 
-            '8x gtceu:resonant_sculk_compound_block',
+            '8x gtceu:cryococcus_block',
             'kubejs:universe_creation_data'
         )
         .itemOutputs('kubejs:heart_of_a_universe')

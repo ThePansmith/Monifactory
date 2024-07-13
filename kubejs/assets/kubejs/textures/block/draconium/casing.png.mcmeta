@@ -1,5 +1,5 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/sculk_compound/casing_ctm"
+        "connection": "kubejs:block/cryolobus/casing_ctm"
     }
 }

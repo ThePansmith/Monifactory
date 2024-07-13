@@ -188,10 +188,10 @@ StartupEvents.registry('item', event => {
     event.create('infinity_catalyst').rarity("epic")
 
     // Drac Evo Replacements
-    event.create('sculk_core')
-    event.create('echo_core')
-    event.create('resonant_core')
+    event.create('mesol_core')
+    event.create('bathyal_core')
     event.create('abyssal_core')
+    event.create('hadal_core')
     event.create('reverberation_core')
     event.create('energy_core')
     event.create('energy_core_stabilizer')

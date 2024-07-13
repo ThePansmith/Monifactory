@@ -39,7 +39,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('enderio:lumium_conduit', '§7Max Output 131,072 RF/t')
     tooltip.add('enderio:signalum_conduit', '§7Max Output 524,288 RF/t')
     tooltip.add('enderio:enderium_conduit', '§7Max Output 2,097,152 RF/t')
-    tooltip.add('enderio:sculk_compound_conduit', '§7Max Output 8,388,608 RF/t')
+    tooltip.add('enderio:cryolobus_conduit', '§7Max Output 8,388,608 RF/t')
     tooltip.add('enderio:sculk_superconductor_conduit', '§7Max Output 134,217,728 RF/t')
 
     tooltip.add("thermal:device_rock_gen", "§7Must be placed next to lava and water to produce cobblestone.")
@@ -68,8 +68,8 @@ ItemEvents.tooltip(tooltip => {
 
 
     // Multiblocks
-    tooltip.add('gtceu:sculk_reverberator', Text.translatable('gtceu.sculk_reverberator.desc'))
-    tooltip.add('gtceu:sculk_reactor', Text.translatable('gtceu.sculk_reactor.desc'))
+    tooltip.add('moni_multiblocks:hypogean_infuser', Text.translatable('gtceu.sculk_reverberator.desc'))
+    tooltip.add('gtceu:hypogean_reactor', Text.translatable('gtceu.hypogean_reactor.desc'))
     tooltip.add('gtceu:simulation_supercomputer', Text.translatable('gtceu.simulation_supercomputer.desc'))
     tooltip.add('gtceu:loot_superfabricator', Text.translatable('gtceu.loot_superfabricator.desc'))
     tooltip.add('gtceu:greenhouse', Text.translatable('gtceu.greenhouse.desc'))
@@ -101,7 +101,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:sculk_reactor', 'gtceu:quintessence_infuser'], 'Can parallelize with Parallel Control Hatches.')
+    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:hypogean_reactor', 'gtceu:quintessence_infuser'], 'Can parallelize with Parallel Control Hatches.')
 
     //Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
