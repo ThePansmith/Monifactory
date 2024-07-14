@@ -199,7 +199,6 @@ StartupEvents.registry('item', event => {
     event.create('reactor_prt_stab_frame')
     event.create('resonant_energy_core')
     event.create('echo_energy_core')
-    event.create('abyss_shard')
     event.create('warden_heart')
     event.create('dislocation_inhibitor')
     event.create('advanced_magnet')
