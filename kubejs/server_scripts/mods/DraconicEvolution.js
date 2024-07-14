@@ -16,14 +16,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(30720)
 
-    event.recipes.gtceu.assembly_line('resonant_energy_core')
-        .itemInputs('gtceu:tungsten_carbide_frame', '6x gtceu:cryolobus_plate', 'kubejs:bathyal_core', '4x kubejs:echo_energy_core', '2x gtceu:iv_field_generator', '12x gtceu:vanadium_gallium_single_wire')
-        .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('kubejs:energy_core')
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('kubejs:echo_energy_core').EUt(480).duration(1200))
-        .duration(1200)
-        .EUt(30720)
-
     event.recipes.gtceu.assembly_line('reactor_prt_stab_frame')
         .itemInputs('6x nuclearcraft:plate_elite', 'kubejs:abyssal_core', 'gtceu:cryococcus_gear', 'gtceu:cryococcus_frame', '2x gtceu:zpm_emitter', '2x gtceu:zpm_sensor')
         .inputFluids('gtceu:soldering_alloy 1152')
@@ -62,23 +54,4 @@ ServerEvents.recipes(event => {
         C: "gtceu:lapotronic_energy_orb"
     }).id('kubejs:components/echo_energy_core')
 
-    event.shaped('kubejs:advanced_magnet', [
-        'R R',
-        'S S',
-        'SWS'
-    ], {
-        R: "minecraft:redstone_block",
-        S: "gtceu:cryolobus_ingot",
-        W: "waystones:warp_stone"
-    }).id('kubejs:advanced_magnet')
-
-    event.shaped('kubejs:dislocation_inhibitor', [
-        'III',
-        'BMB',
-        'III'
-    ], {
-        I: "minecraft:iron_ingot",
-        B: "minecraft:iron_bars",
-        M: "kubejs:advanced_magnet"
-    }).id('kubejs:dislocation_inhibitor')
 })
