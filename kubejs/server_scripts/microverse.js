@@ -382,7 +382,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:microversium_frame',
             '6x gtceu:enderium_plate',
             'ae2:quantum_ring', 
-            '8x ae2:quantum_link',
+            '4x ae2:quantum_link',
             '2x #forge:plates/crystal_matrix',
             '2x gtceu:iv_field_generator',
             Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT(),
