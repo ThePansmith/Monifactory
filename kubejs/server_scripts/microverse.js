@@ -381,13 +381,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('warp_engine')
         .itemInputs('gtceu:microversium_frame',
             '6x gtceu:enderium_plate',
-            'kubejs:dislocation_inhibitor', /* Item dislocation inhibitor */
-            'kubejs:advanced_magnet', /* DE Magnet */
+            'ae2:quantum_ring', 
+            '8x ae2:quantum_link',
             '2x #forge:plates/crystal_matrix',
             '2x gtceu:iv_field_generator',
             Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT(),
             Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('kubejs:dislocation_inhibitor').EUt(480).duration(1200))
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('ae2:quantum_ring').EUt(480).duration(1200))
         .itemOutputs('kubejs:warp_engine')
         .inputFluids('gtceu:soldering_alloy 1152')
         .duration(1800)
