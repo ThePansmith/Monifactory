@@ -387,7 +387,7 @@ ServerEvents.recipes(event => {
             '64x minecraft:dragon_egg', 
             '64x minecraft:dragon_egg', 
             '64x minecraft:dragon_egg', 
-            '64x armorplus:ender_dragon_scale'
+            '64x kubejs:ender_dragon_scale'
         )
         .duration(1750)
         .EUt(62500)

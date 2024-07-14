@@ -164,10 +164,10 @@ StartupEvents.registry('item', event => {
 
 
     //I hate ArmorPlus
-    //event.create('guardian_scale').rarity('rare').displayName("Guardian Scale")
-    //event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
-    //event.create('wither_bone').displayName("Wither Bone")
-    //event.create('lava_crystal_charged').displayName("§6Infused Lava Crystal")
+    event.create('guardian_scale').rarity('rare').displayName("Guardian Scale")
+    event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
+    event.create('wither_bone').displayName("Wither Bone")
+    event.create('the_ultimate_material').displayName("The Ultimate Material")
 
 
     //Thermal Augments
