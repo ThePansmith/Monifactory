@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
         C: "gtceu:palis_empowered_block"
     }).id('kubejs:components/mesol_core')
 
-    event.shaped('kubejs:echo_energy_core', [
+    event.shaped('kubejs:bathyal_energy_core', [
         'ABA',
         'BCB',
         'ABA'
@@ -52,6 +52,6 @@ ServerEvents.recipes(event => {
         A: "kubejs:mesol_core",
         B: "gtceu:restonia_empowered_block",
         C: "gtceu:lapotronic_energy_orb"
-    }).id('kubejs:components/echo_energy_core')
+    }).id('kubejs:components/bathyal_energy_core')
 
 })

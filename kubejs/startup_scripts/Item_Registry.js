@@ -195,9 +195,8 @@ StartupEvents.registry('item', event => {
     event.create('energy_core_stabilizer')
     event.create('particle_generator')
     event.create('reactor_prt_stab_frame')
-    event.create('resonant_energy_core')
-    event.create('echo_energy_core')
-    event.create('abyss_shard')
+    event.create('abyssal_energy_core')
+    event.create('bathyal_energy_core')
     event.create('warden_heart')
     //Infinity Tools
     event.create('infinity_file').rarity("epic")

@@ -11,18 +11,18 @@
         "solarflux:sp_8": true,
         "solarflux:sp_custom_neutronium": true,
         "solarflux:sp_custom_infinity": true,
-        "solarflux:sp_custom_abyssal": true,
-        "solarflux:sp_custom_echo": true,
-        "solarflux:sp_custom_resonant": true
+        "solarflux:sp_custom_bathyal": true,
+        "solarflux:sp_custom_hadal": true,
+        "solarflux:sp_custom_abyssal": true
     }},
     "unregistered": {
-        "kubejs:fusion_crafting": {"solarflux:solar_panels/kubejs/abyssal": true},
+        "kubejs:fusion_crafting": {"solarflux:solar_panels/kubejs/hadal": true},
         "minecraft:crafting": {
-            "solarflux:sp_custom_kubejs": true,
-            "solarflux:sp_custom_echo": true,
+            "solarflux:sp_custom_hadal": true,
             "solarflux:sp_custom_abyssal": true,
-            "solarflux:solar_panels/kubejs/echo": true,
-            "solarflux:solar_panels/kubejs/abyssal": true,
+            "solarflux:sp_custom_kubejs": true,
+            "solarflux:solar_panels/kubejs/bathyal": true,
+            "solarflux:solar_panels/kubejs/hadal": true,
             "solarflux:sp_custom_avaritia.infinity": true,
             "solarflux:sp_avaritia.infinity": true,
             "solarflux:sp_avaritia.neutronium": true,
