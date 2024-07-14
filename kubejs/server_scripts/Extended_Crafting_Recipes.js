@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             X: 'gtceu:gravi_star',
             Z: 'gtceu:quantum_star',
             Y: 'kubejs:endest_star',
-            U: 'armorplus:the_ultimate_material'
+            U: 'kubejs:the_ultimate_material'
         }).id('kubejs:extended/eternal_catalyst');
 
     //INFINITY CATALYST

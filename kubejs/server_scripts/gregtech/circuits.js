@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
             .EUt(500000)
 
         event.recipes.gtceu.assembler('dimensional_processing_unit')
-            .itemInputs('4x kubejs:dimensional_circuit_board', 'gtceu:infinity_plate', '4x armorplus:the_ultimate_material', 
+            .itemInputs('4x kubejs:dimensional_circuit_board', 'gtceu:infinity_plate', '4x kubejs:the_ultimate_material', 
             '4x gtceu:netherite_double_wire', '2x gtceu:flawless_monazite_gem',  '2x gtceu:flawless_glass_gem')
             .inputFluids('gtceu:soldering_alloy 1152')
             .itemOutputs('4x kubejs:dimensional_processing_unit')

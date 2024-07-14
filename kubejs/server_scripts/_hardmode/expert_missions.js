@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
                 '48x minecraft:creeper_head',
                 '64x minecraft:gunpowder',
                 '64x minecraft:slime_block',
-                '64x armorplus:guardian_scale'
+                '64x kubejs:guardian_scale'
             )
             .duration(40*20)
             .EUt(3750)
@@ -166,8 +166,8 @@ ServerEvents.recipes(event => {
                 '50x thermal:basalz_rod',
                 '64x minecraft:ghast_tear',
                 '48x minecraft:wither_skeleton_skull',
-                '64x armorplus:wither_bone',
-                '64x armorplus:wither_bone', // drops of evil aren't in the pack
+                '64x kubejs:wither_bone',
+                '64x kubejs:wither_bone', // drops of evil aren't in the pack
                 '64x minecraft:magma_cream',
                 '64x minecraft:magma_cream'
             )
@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
                 'kubejs:microminer_t4half',
                 '8x kubejs:quantum_flux',
                 '64x kubejs:aerotheum_dust',
-                '64x armorplus:wither_bone'
+                '64x kubejs:wither_bone'
             )
             .itemOutputs(
                 '64x kubejs:wither_realm_data',

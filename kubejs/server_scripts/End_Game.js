@@ -221,7 +221,7 @@ ServerEvents.recipes(event => {
             "gtceu:diamatine_empowered_gem",
             "gtceu:void_empowered_gem",
             "gtceu:emeradic_empowered_gem",
-            "armorplus:infused_lava_crystal",
+            "kubejs:resonating_crystal",
             "minecraft:emerald",
             "redstone_arsenal:flux_gem",
             "minecraft:diamond",
