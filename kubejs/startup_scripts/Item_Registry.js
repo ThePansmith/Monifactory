@@ -108,7 +108,6 @@ StartupEvents.registry('item', event => {
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
     event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
-    event.create('creative_storage_component').displayName("Creative Storage Component").glow(true).rarity("epic")
     event.create('solidified_experience').displayName("Solidified Experience")
 
     //Misc Items
@@ -193,17 +192,12 @@ StartupEvents.registry('item', event => {
     event.create('abyssal_core')
     event.create('hadal_core')
     event.create('reverberation_core')
-    event.create('energy_core')
     event.create('energy_core_stabilizer')
     event.create('particle_generator')
     event.create('reactor_prt_stab_frame')
-    event.create('resonant_energy_core')
-    event.create('echo_energy_core')
-    event.create('abyss_shard')
+    event.create('abyssal_energy_core')
+    event.create('bathyal_energy_core')
     event.create('warden_heart')
-    event.create('dislocation_inhibitor')
-    event.create('advanced_magnet')
-
     //Infinity Tools
     event.create('infinity_file').rarity("epic")
     event.create('infinity_hammer').rarity("epic")
