@@ -363,7 +363,7 @@ ServerEvents.recipes(event => {
             'kubejs:lair_of_the_warden_data'
         )
         .itemOutputs(
-            '4x kubejs:abyss_shard',
+            '4x minecraft:echo_shard',
             '64x minecraft:sculk_catalyst', 
             '32x kubejs:warden_horn'
         )
@@ -425,6 +425,17 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(250000)
 
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_third')
+        .itemInputs(
+            'kubejs:microminer_t9', 
+            '40x gtceu:gravi_star', 
+            '20x kubejs:shattered_star_data'
+        )
+        .itemOutputs('20x kubejs:quasi_stable_neutron_star')
+        .duration(900)
+        .EUt(194387)
+
+
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_first')
         .itemInputs(
@@ -464,16 +475,6 @@ ServerEvents.recipes(event => {
 
 // Advanced Microverse III
 ServerEvents.recipes(event => {
-
-    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_third')
-        .itemInputs(
-            'kubejs:microminer_t9', 
-            '40x gtceu:gravi_star', 
-            '10x kubejs:shattered_star_data'
-        )
-        .itemOutputs('10x kubejs:quasi_stable_neutron_star')
-        .duration(900)
-        .EUt(194387)
 
         event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_forth')
         .itemInputs(
