@@ -476,6 +476,28 @@ ServerEvents.recipes(event => {
 
 // Advanced Microverse III
 ServerEvents.recipes(event => {
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_six_fourth')
+    .itemInputs(
+        'kubejs:microminer_t6', 
+        '16x kubejs:stabilized_californium', 
+        'kubejs:gem_sensor', 
+        '16x kubejs:quantum_flux', 
+    )
+    .itemOutputs('64x gtceu:diamond_perfect',
+                 '64x gtceu:diamond_perfect',
+                 '64x gtceu:diamond_perfect',
+                 '64x gtceu:diamond_perfect',
+                 '64x gtceu:diamond_perfect',
+                 '64x gtceu:ruby_perfect',
+                 '64x gtceu:ruby_perfect',
+                 '64x gtceu:ruby_perfect',
+                 '64x gtceu:ruby_perfect',
+                 '64x gtceu:cinnabar_perfect',
+                 '64x gtceu:cinnabar_perfect'
+
+    )
+    .duration(500)
+    .EUt(62500)
 
         event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_forth')
         .itemInputs(
