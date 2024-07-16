@@ -363,7 +363,7 @@ ServerEvents.recipes(event => {
             'kubejs:lair_of_the_warden_data'
         )
         .itemOutputs(
-            '4x kubejs:abyss_shard',
+            '4x kubejs:hadal_shard',
             '64x minecraft:sculk_catalyst', 
             '32x kubejs:warden_horn'
         )
