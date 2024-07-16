@@ -542,13 +542,17 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(8000000)
 
-    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_third')
-        .itemInputs('kubejs:microminer_t11', 
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eight_fourth')
+        .itemInputs('kubejs:microminer_t8', 
             '64x gtceu:gravi_star',
             '64x gtceu:gravi_star',
             '64x gtceu:gravi_star',
             '64x gtceu:gravi_star',
-            'kubejs:corrupted_universe_data')
+            'kubejs:corrupted_universe_data',
+            '64x kubejs:dilithium_crystal',
+            '64x kubejs:dilithium_crystal',
+            '64x kubejs:wither_realm_data',
+            '64x kubejs:wither_realm_data')
         .itemOutputs('64x kubejs:quasi_stable_neutron_star', 
             '64x kubejs:quasi_stable_neutron_star', 
             '64x kubejs:quasi_stable_neutron_star', 
