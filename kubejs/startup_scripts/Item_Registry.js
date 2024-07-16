@@ -199,6 +199,7 @@ StartupEvents.registry('item', event => {
     event.create('bathyal_energy_core')
     event.create('warden_heart')
     event.create('abyss_shard')
+
     //Infinity Tools
     event.create('infinity_file').rarity("epic")
     event.create('infinity_hammer').rarity("epic")
