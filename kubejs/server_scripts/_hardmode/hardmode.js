@@ -48,8 +48,14 @@ ServerEvents.recipes(event => {
             .EUt(480)
             .duration(100)
         }
-    
+
         event.replaceInput({ output: 'buildinggadgets2:gadget_exchanging' }, 'minecraft:redstone', 'gtceu:iv_emitter')
+
+        event.remove({ output: 'gtceu:extractor/tank_data' })
+        event.recipes.gtceu.extractor('omnicdata')
+        .itemInputs('kubejs:heart_of_a_universe')
+        .itemOutputs('kubejs:omnic_data')
+        .duration(1000).EUt(180000)
 
         event.remove({ id: "watercollector:watercollector" })
         event.remove({ id: "thermal:device_rock_gen" })
@@ -71,7 +77,7 @@ ServerEvents.recipes(event => {
         )
 
         event.remove({id: "gtceu:large_chemical_reactor/radon_from_uranium_238"})
-        event.remove({id: "gtceu:electric_blast_furnace/blast_sculk_compound_gas"})
+        event.remove({id: "gtceu:electric_blast_furnace/blast_cryolobus_gas"})
         event.remove({id: "gtceu:circuit_assembler/wetware_board"})
         event.remove({id: "enderio:stick"})
 		

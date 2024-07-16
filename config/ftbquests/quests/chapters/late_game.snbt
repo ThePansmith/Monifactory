@@ -1285,7 +1285,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75321CAE019C190A"
-				item: "gtceu:sculk_compound_dust"
+				item: "gtceu:cryolobus_dust"
 				type: "item"
 			}]
 			title: "&9Sculk Compound Dust"
@@ -1302,7 +1302,7 @@
 				""
 				"Sculk Compound gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Sculk Compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft sculk_compound."
+				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Sculk Compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1316,7 +1316,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "7D3DF1D033AF6DC9"
-				item: "gtceu:sculk_compound_ingot"
+				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
 			title: "&9Sculk Compound Ingots"
@@ -1789,7 +1789,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "27BE677925582139"
-				item: "gtceu:double_sculk_compound_plate"
+				item: "gtceu:double_cryolobus_plate"
 				type: "item"
 			}]
 			title: "&9Sculk Compound Double Plates"
@@ -1812,7 +1812,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "712064FEEFCC29AA"
-				item: "kubejs:sculk_core"
+				item: "kubejs:mesol_core"
 				type: "item"
 			}]
 			title: "&9Sculk Cores"
@@ -1863,15 +1863,13 @@
 		{
 			dependencies: ["7C89BC235C988689"]
 			description: [
-				"&9Various items can be empowered with Sculk&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
+				"&9By chilling sculk to subzero  temperatures and injecting it with xp juice, you can create new items.&r "
 				""
-				"You'll need eight &6Sculk Reaction Casings&r to upgrade any additional injectors you make to echo Tier."
+				"As stated above, the multiblock does require extremely cold temperatures to function, so it does require a passive supply of power to decrease it's temperature, and a passive supply of fluid to keep the sculk contained alive. Said sculk is inserted in a "
 				""
 				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
-				""
-				"&5DE is currently in the process of being removed, the draconic reactor multiblock will be replaced with one a bit more fitting. The quest details will remain unchanged until said multiblock is finalized."
 			]
-			icon: "gtceu:sculk_reverberator"
+			icon: "moni_multiblocks:hypogean_infuser"
 			id: "713FAECEE5046121"
 			rewards: [{
 				id: "1334EFA413965845"
@@ -1882,24 +1880,24 @@
 			tasks: [
 				{
 					id: "3C9333ECA3F6B5F9"
-					item: "gtceu:sculk_reverberator"
+					item: "moni_multiblocks:hypogean_infuser"
 					type: "item"
 				}
 				{
-					count: 10L
+					count: 24L
 					id: "5756875831B786CB"
-					item: "kubejs:sculk_reaction_casing"
+					item: "moni_multiblocks:mesol_coil_block"
 					type: "item"
 				}
 			]
-			title: "&9Shulk Reaction Casings"
+			title: "&9Hypogen Infuser"
 			x: 27.25d
 			y: 8.25d
 		}
 		{
 			dependencies: ["713FAECEE5046121"]
 			description: [
-				"&6Echo Cores&r are the second tier of cores, used for intermediate crafting recipes."
+				"&6Echo Cores&r are the second tier of casing, used for intermediate crafting recipes."
 				""
 				"Each Echo Core is made via fusion crafting and the setup needs eight &6Shulk Reaction Casings&r."
 			]
@@ -1912,7 +1910,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "5A46206776E20233"
-				item: "kubejs:echo_core"
+				item: "kubejs:bathyal_core"
 				type: "item"
 			}]
 			title: "&9Echo Cores"
@@ -1921,11 +1919,7 @@
 		}
 		{
 			dependencies: ["6F5579E1646634C7"]
-			description: [
-				"&6Resonant Reaction Casing&r are the penultimate tier of injectors for fusion crafting."
-				""
-				"You'll need a fusion crafting setup with ten of these for the next tier of injector, and the next tier you'll also need ten injectors, so consider making 20 of these."
-			]
+			description: ["&6Resonant Reaction Casing&r are the penultimate tier of casings for Hypogean Infusion, able to reach even colder temps."]
 			id: "2358A5CF22FF5495"
 			rewards: [{
 				id: "0022ECDC55B22DC3"
@@ -1935,10 +1929,9 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "09CD18933F28FA28"
-				item: "kubejs:resonant_reaction_casing"
+				item: "moni_multiblocks:abyssal_coil_block"
 				type: "item"
 			}]
-			title: "&9Resonant Reaction Casings"
 			x: 25.25d
 			y: 12.25d
 		}
@@ -1959,10 +1952,9 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "581D806823B709C3"
-				item: "kubejs:echo_reaction_casing"
+				item: "moni_multiblocks:bathyal_coil_block"
 				type: "item"
 			}]
-			title: "&9Echo Reaction Casings"
 			x: 27.25d
 			y: 12.25d
 		}
@@ -2036,7 +2028,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "50929C3F5F044E40"
-				item: "gtceu:resonant_sculk_compound_block"
+				item: "gtceu:cryococcus_block"
 				type: "item"
 			}]
 			title: "&9Resonant Sculk Compound"
@@ -2059,7 +2051,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "71171679FDF638A6"
-				item: "kubejs:resonant_core"
+				item: "kubejs:abyssal_core"
 				type: "item"
 			}]
 			title: "&9Resonant Core"
@@ -2238,7 +2230,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "140C83AB5FE8450E"
-				item: "kubejs:abyssal_reaction_casing"
+				item: "moni_multiblocks:hadal_coil_block"
 				type: "item"
 			}]
 			title: "Abyssal Fusion Injectors"

@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
             'D WW WW D'
         ], {
             L: 'kubejs:supercharged_laser_array',
-            D: 'gtceu:double_sculk_compound_plate',
+            D: 'gtceu:double_cryolobus_plate',
             G: 'kubejs:advanced_micro_miner_guidance_system',
             P: 'kubejs:energy_core_stabilizer',
             A: 'gtceu:luv_field_generator',
@@ -381,13 +381,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('warp_engine')
         .itemInputs('gtceu:microversium_frame',
             '6x gtceu:enderium_plate',
-            'kubejs:dislocation_inhibitor', /* Item dislocation inhibitor */
-            'kubejs:advanced_magnet', /* DE Magnet */
+            'ae2:quantum_ring', 
+            '4x ae2:quantum_link',
             '2x #forge:plates/crystal_matrix',
             '2x gtceu:iv_field_generator',
             Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT(),
             Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('kubejs:dislocation_inhibitor').EUt(480).duration(1200))
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('ae2:quantum_ring').EUt(480).duration(1200))
         .itemOutputs('kubejs:warp_engine')
         .inputFluids('gtceu:soldering_alloy 1152')
         .duration(1800)
@@ -424,7 +424,7 @@ ServerEvents.recipes(event => {
             '4x kubejs:universal_navigator',
             '4x gtceu:uev_field_generator',
             '24x gtceu:holmium_plate',
-            '8x kubejs:dimensional_processor_computer',
+            '4x #gtceu:circuits/uiv',
             '2x gtceu:uiv_sensor',
             '2x gtceu:uiv_emitter',
             '4x gtceu:dense_naquadah_alloy_plate',

@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
             'BCB',
             'DBA'
         ], {
-            A: 'gtceu:sculk_compound_plate',
+            A: 'gtceu:cryolobus_plate',
             B: 'gtceu:enderium_plate',
             C: 'thermal:upgrade_augment_4',
             D: 'gtceu:tungsten_carbide_plate'

@@ -10,6 +10,23 @@ ServerEvents.recipes(event => {
             .EUt(1966080)
     }
 
+    //Manual fix for half tier miners
+    if (isHardMode) {
+    event.recipes.gtceu.assembly_line(`stable_t4half`)
+        .itemInputs(`kubejs:microminer_t4half`, 'kubejs:heart_of_a_universe', '4x kubejs:abyss_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
+        .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
+        .itemOutputs(`kubejs:stabilized_microminer_t4half`)
+        .duration(125)
+        .EUt(1966080)
+
+    event.recipes.gtceu.assembly_line(`stable_t8half`)
+        .itemInputs(`kubejs:microminer_t8half`, 'kubejs:heart_of_a_universe', '4x kubejs:abyss_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
+        .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
+        .itemOutputs(`kubejs:stabilized_microminer_t8half`)
+        .duration(125)
+        .EUt(1966080)
+    }
+
     // Pristine matter recipe
     function pristine_matter(tier, microtier) {
         if (microtier == 1) {
@@ -126,7 +143,7 @@ ServerEvents.recipes(event => {
                 '48x minecraft:creeper_head',
                 '64x minecraft:gunpowder',
                 '64x minecraft:slime_block',
-                '64x armorplus:guardian_scale'
+                '64x kubejs:guardian_scale'
             )
             .duration(40*20)
             .EUt(3750)
@@ -149,8 +166,8 @@ ServerEvents.recipes(event => {
                 '50x thermal:basalz_rod',
                 '64x minecraft:ghast_tear',
                 '48x minecraft:wither_skeleton_skull',
-                '64x armorplus:wither_bone',
-                '64x armorplus:wither_bone', // drops of evil aren't in the pack
+                '64x kubejs:wither_bone',
+                '64x kubejs:wither_bone', // drops of evil aren't in the pack
                 '64x minecraft:magma_cream',
                 '64x minecraft:magma_cream'
             )
@@ -195,7 +212,7 @@ ServerEvents.recipes(event => {
                 'kubejs:microminer_t4half',
                 '8x kubejs:quantum_flux',
                 '64x kubejs:aerotheum_dust',
-                '64x armorplus:wither_bone'
+                '64x kubejs:wither_bone'
             )
             .itemOutputs(
                 '64x kubejs:wither_realm_data',
@@ -263,7 +280,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t9', 
             '8x gtceu:neutron_reflector', 
-            '4x gtceu:resonant_sculk_compound_block', 
+            '4x gtceu:cryococcus_block', 
             'kubejs:stellar_creation_data'
         )
         .itemOutputs(

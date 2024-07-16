@@ -47,15 +47,42 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(65520)
 
-    event.recipes.gtceu.omnic_forge('kubejs:resonant_fusion_coil')
-        .itemInputs('2x gtceu:fusion_coil', '8x gtceu:dense_resonant_sculk_compound_plate', '2x gtceu:netherite_frame', '2x #gtceu:circuits/uhv', 'gtceu:uhv_field_generator')
-        .itemOutputs('2x kubejs:resonant_fusion_coil')
+    event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_coil')
+        .itemInputs('2x gtceu:fusion_coil', '8x gtceu:dense_cryococcus_plate', '2x gtceu:netherite_frame', '2x #gtceu:circuits/uhv', 'gtceu:uhv_field_generator')
+        .itemOutputs('2x kubejs:cryococcus_fusion_coil')
         .duration(2000)
         .EUt(65520)
     
-    event.recipes.gtceu.omnic_forge('kubejs:resonant_fusion_casing')
-        .itemInputs('gtceu:uiv_machine_hull', '2x kubejs:resonant_fusion_coil', '12x gtceu:resonant_sculk_compound_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uev_field_generator')
-        .itemOutputs('4x kubejs:resonant_fusion_casing')
+    event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_casing')
+        .itemInputs('gtceu:uiv_machine_hull', '2x kubejs:cryococcus_fusion_coil', '12x gtceu:cryococcus_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uev_field_generator')
+        .itemOutputs('4x kubejs:cryococcus_fusion_casing')
         .duration(2000)
         .EUt(65520)
+
+    //Buffed Catalyst Recycling
+    event.recipes.gtceu.omnic_forge('kubejs:fury_enhanced_infinity_catalyst_recycling')
+        .itemInputs('kubejs:dormant_fury_enhanced_infinity_catalyst', 'kubejs:heart_of_a_universe')
+        .itemOutputs('kubejs:fury_enhanced_infinity_catalyst')
+        .duration(2000)
+        .EUt(65520)
+
+    event.recipes.gtceu.omnic_forge('kubejs:serenity_enhanced_infinity_catalyst_recycling')
+        .itemInputs('kubejs:dormant_serenity_enhanced_infinity_catalyst', 'kubejs:heart_of_a_universe')
+        .itemOutputs('kubejs:serenity_enhanced_infinity_catalyst')
+        .duration(2000)
+        .EUt(65520)
+
+    //Enhanced Infinity Catalyst Crafting
+    event.recipes.gtceu.omnic_forge('kubejs:fury_enhanced_infinity_catalyst_crafting')
+        .itemInputs('kubejs:infinity_catalyst', 'kubejs:heart_of_a_universe', 'gtceu:infinity_frame', '2x gtceu:uiv_emitter')
+        .itemOutputs('kubejs:fury_enhanced_infinity_catalyst')
+        .duration(1000)
+        .EUt(1966080)
+
+    event.recipes.gtceu.omnic_forge('kubejs:serenity_enhanced_infinity_catalyst_crafting')
+        .itemInputs('kubejs:infinity_catalyst', 'kubejs:heart_of_a_universe', 'gtceu:monium_frame', '8x kubejs:contained_singularity')
+        .itemOutputs('kubejs:serenity_enhanced_infinity_catalyst')
+        .duration(1000)
+        .EUt(1966080)
+
 })

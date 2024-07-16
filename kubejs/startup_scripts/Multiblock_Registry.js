@@ -137,17 +137,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
-    // Sculk Reverberator
-    // To be replaced with a coremod version with all the mechanics
-    // https://ptb.discord.com/channels/914926812948234260/1229929078547550238/1241448205217169528
-    event.create('sculk_reverberator')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(6, 1, 1, 0) //
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
-
     // Large Material Press
     event.create('large_material_press')
         .category('multiblock')
@@ -167,7 +156,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 
-
     //Quintessence Infuser
     event.create('quintessence_infuser')
         .category('multiblock')
@@ -186,6 +174,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE)
 
+    //Hypogen reactor: cheating the system by just making a second recipemap :tr:
+    event.create('hypogean_reactor')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(9, 1, 1, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -462,31 +457,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-    // Sculk Reverberator
-    event.create('sculk_reverberator', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('sculk_reverberator')
-        .appearanceBlock(() => Block.getBlock('kubejs:sculk_compound_casing'))
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("#CCC#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#CCC#")
-            .aisle("CCCCC", "CAIAC", "GAAAG", "GAAAG", "GAAAG", "CAIAC", "CCCCC")
-            .aisle("CCCCC", "CIMIC", "CAAAC", "CIFIC", "CAAAC", "CIMIC", "CCCCC")
-            .aisle("CCCCC", "CAIAC", "GAAAG", "GAAAG", "GAAAG", "CAIAC", "CCCCC")
-            .aisle("#CSC#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#GGG#", "#CCC#")
-            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('C', Predicates.blocks('kubejs:sculk_compound_casing').setMinGlobalLimited(50)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
-            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
-            .where('I', Predicates.blocks('gtceu:hsse_frame'))
-            .where('M', Predicates.blocks('gtceu:assembly_line_unit'))
-            .where('F', Predicates.blocks('gtceu:crystal_matrix_block'))
-            .where('A', Predicates.air())
-            .where('#', Predicates.any())
-            .build())
-        .workableCasingRenderer("kubejs:block/sculk_compound/sculk_compound_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
-
-
     // Omnic Forge
     event.create('omnic_forge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -506,7 +476,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
             .where('B', Predicates.blocks('gtceu:crystal_matrix_block'))
             .where('N', Predicates.blocks('gtceu:sculk_superconductor_block'))
-            .where('D', Predicates.blocks('gtceu:sculk_compound_frame'))
+            .where('D', Predicates.blocks('gtceu:cryolobus_frame'))
             .where('G', Predicates.blocks('gtceu:fusion_glass'))
             .where('O', Predicates.blocks('kubejs:omnic_matrix_machine_casing'))
             .where('C', Predicates.blocks('kubejs:omnic_matrix_machine_casing')
@@ -602,11 +572,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
     // Sculk Reactor
-    event.create('sculk_reactor', 'multiblock')
+    const MMMachines = Java.loadClass('com.monifactory.multiblocks.common.data.MMMachines')
+    const MMPartAbilities = Java.loadClass('com.monifactory.multiblocks.common.data.MMPartAbilities')
+    const HypogeanInfuser = Java.loadClass('com.monifactory.multiblocks.common.machine.multiblock.HypogeanInfuserMachine')
+    event.create('hypogean_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('sculk_reverberator')
+        .recipeTypes('hypogean_reactor')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
-        .appearanceBlock(() => Block.getBlock('kubejs:sculk_compound_casing'))
+        .appearanceBlock(() => Block.getBlock('kubejs:cryolobus_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("####KKKKKKK####", "####KKKKKKK####", "####NN###NN####", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "######CCC######", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "####NN###NN####", "####KKKKKKK####", "####KKKKKKK####")
             .aisle("##KKKKKKKKKKK##", "##KKKKKKKKKKK##", "##TNN#DDD#NNT##", "##TNN##D##NNT##", "##T####D####T##", "###############", "###############", "###############", "###############", "###############", "###############", "######WWW######", "####CCFFFCC####", "######WWW######", "###############", "###############", "###############", "###############", "###############", "###############", "##T####D####T##", "##TNN##D##NNT##", "##TNN#DDD#NNT##", "##KKKKKKKKKKK##", "##KKKKKKKKKKK##")
@@ -628,11 +601,12 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('K', Predicates.blocks('gtceu:atomic_casing').setMinGlobalLimited(750)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(MMPartAbilities.SCULK_SEED).setMaxGlobalLimited(1))
             )
-            .where('W', Predicates.blocks('kubejs:resonant_sculk_compound_casing'))
-            .where('F', Predicates.blocks('kubejs:resonant_fusion_casing'))
-            .where('C', Predicates.blocks('kubejs:resonant_fusion_coil'))
-            .where('D', Predicates.blocks('kubejs:sculk_compound_casing'))
+            .where('W', Predicates.blocks('kubejs:cryococcus_casing'))
+            .where('F', Predicates.blocks('kubejs:cryococcus_fusion_casing'))
+            .where('C', Predicates.blocks('kubejs:cryococcus_fusion_coil'))
+            .where('D', Predicates.blocks('kubejs:cryolobus_casing'))
             .where('N', Predicates.blocks('gtceu:naquadah_alloy_frame'))
             .where('#', Predicates.any())
             .build())
@@ -719,6 +693,57 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
+    // Atmospheric Accumulator
+
+    event.create('atmospheric_accumulator', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes(GTRecipeTypes.GAS_COLLECTOR_RECIPES)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .appearanceBlock(() => Block.getBlock('gtceu:corrosion_proof_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("CCHCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
+            .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
+            .aisle("CCCCC", "#IOI#", "CGOGC", "#IOI#", "CCOCC", "#IOI#", "CIOIC")
+            .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
+            .aisle("CCSCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('I', Predicates.blocks("gtceu:engine_intake_casing"))
+            .where('G', Predicates.blocks("gtceu:assembly_line_grating"))
+            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
+            .where('O', Predicates.blocks("gtceu:titanium_pipe_casing"))
+            .where('C', Predicates.blocks("gtceu:corrosion_proof_casing").setMinGlobalLimited(70)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+            .where('#', Predicates.air())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+
+    // Matter Alterator
+
+        event.create('matter_alterator', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('atomic_reconstruction')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .appearanceBlock(() => Block.getBlock('gtceu:laser_safe_engraving_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("#CHC#######", "#CGC#######", "#CGC#######", "#CGC#######", "#CCC#######",)
+            .aisle("CCCCC#F###F", "C###CCCCCCC", "C###CGGGGGC", "C###CCCCCCC", "CCCCC######",)
+            .aisle("CCCCC######", "G#CCCCCCCCC", "G#F######PC", "G#CCCGGGGGC", "CCCCC######",)
+            .aisle("CCCCC#F###F", "C###CCCCCCC", "C###CGGGGGC", "C###CCCCCCC", "CCCCC######",)
+            .aisle("#CSC#######", "#CGC#######", "#CGC#######", "#CGC#######", "#CCC#######",)
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('G', Predicates.blocks("gtceu:laminated_glass"))
+            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
+            .where('P', Predicates.blocks("gtceu:palis_block"))
+            .where('F', Predicates.blocks("gtceu:hastelloy_c_276_frame"))
+            .where('C', Predicates.blocks("gtceu:laser_safe_engraving_casing").setMinGlobalLimited(50)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+            .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
 
     // Subatomic Digital Assembler
     event.create('subatomic_digital_assembler', 'multiblock')

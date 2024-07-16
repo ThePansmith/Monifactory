@@ -702,7 +702,7 @@ ServerEvents.recipes(event => {
     // 1/4800 scale
     event.recipes.gtceu.centrifuge('centrifuging_refined_residue')
         .itemInputs('10x gtceu:refined_residue_dust')
-        .notConsumable('kubejs:echo_core')
+        .notConsumable('kubejs:bathyal_core')
         .chancedFluidInput('gtceu:fluoroantimonic_acid 1000', 0, 0)
         .itemOutputs('10x gtceu:pitchblende_dust', '6x gtceu:borax_dust', '5x gtceu:rare_earth_dust', '4x gtceu:snowchestite_dust', '3x gtceu:diamond_dust', 'gtceu:clean_inert_residue_dust')
         .duration(2000).EUt(400)
@@ -716,7 +716,7 @@ ServerEvents.recipes(event => {
     // 1/9600
     event.recipes.gtceu.large_chemical_reactor('ultraacidic_residue_to_dusty_helium')
         .inputFluids('gtceu:xenon 1000', 'gtceu:oxygen 4000', 'gtceu:ultraacidic_residue 2000')
-        .notConsumable('kubejs:resonant_core')
+        .notConsumable('kubejs:abyssal_core')
         .itemOutputs('2x gtceu:europium_dust', 'gtceu:kaemanite_dust', 'gtceu:small_osmiridiumyes_dust')
         .outputFluids('gtceu:xenic_acid 1000', 'gtceu:dusty_helium 2000')
         .duration(1000).EUt(1920)
@@ -780,7 +780,15 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:lutetium_dust', 600, 0)
         .chancedOutput('gtceu:europium_dust', 600, 0)
         .duration(50).EUt(1966080)
- 
+        
+    // Quantum Flux Recipe
+    event.recipes.gtceu.mixer('quantum_flux_hm')
+        .itemInputs('redstone_arsenal:flux_gem')
+        .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
+        .itemOutputs('8x kubejs:quantum_flux')
+        .duration(100)
+        .EUt(480)
+        
         //Commented out in favor of GCYM's chain
 
         // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')

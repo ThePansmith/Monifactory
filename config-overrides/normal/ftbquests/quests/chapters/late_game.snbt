@@ -1286,7 +1286,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75321CAE019C190A"
-				item: "gtceu:sculk_compound_dust"
+				item: "gtceu:cryolobus_dust"
 				type: "item"
 			}]
 			title: "&9Sculk Compound Dust"
@@ -1303,7 +1303,7 @@
 				""
 				"Sculk Compound gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Sculk Compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft sculk_compound."
+				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Sculk Compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1317,7 +1317,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "7D3DF1D033AF6DC9"
-				item: "gtceu:sculk_compound_ingot"
+				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
 			title: "&9Sculk Compound Ingots"
@@ -1790,7 +1790,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "27BE677925582139"
-				item: "gtceu:double_sculk_compound_plate"
+				item: "gtceu:double_cryolobus_plate"
 				type: "item"
 			}]
 			title: "&9Sculk Compound Double Plates"
@@ -1813,7 +1813,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "712064FEEFCC29AA"
-				item: "kubejs:sculk_core"
+				item: "kubejs:mesol_core"
 				type: "item"
 			}]
 			title: "&9Sculk Cores"
@@ -1872,7 +1872,7 @@
 				""
 				"&5DE is currently in the process of being removed, the draconic reactor multiblock will be replaced with one a bit more fitting. The quest details will remain unchanged until said multiblock is finalized."
 			]
-			icon: "gtceu:sculk_reverberator"
+			icon: "moni_multiblocks:hypogean_infuser"
 			id: "713FAECEE5046121"
 			rewards: [{
 				id: "1334EFA413965845"
@@ -1883,13 +1883,13 @@
 			tasks: [
 				{
 					id: "3C9333ECA3F6B5F9"
-					item: "gtceu:sculk_reverberator"
+					item: "moni_multiblocks:hypogean_infuser"
 					type: "item"
 				}
 				{
 					count: 10L
 					id: "5756875831B786CB"
-					item: "kubejs:sculk_reaction_casing"
+					item: "moni_multiblocks:mesol_coil_block"
 					type: "item"
 				}
 			]
@@ -1913,7 +1913,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "5A46206776E20233"
-				item: "kubejs:echo_core"
+				item: "kubejs:bathyal_core"
 				type: "item"
 			}]
 			title: "&9Echo Cores"
@@ -1936,7 +1936,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "09CD18933F28FA28"
-				item: "kubejs:resonant_reaction_casing"
+				item: "moni_multiblocks:bathyal_coil_block"
 				type: "item"
 			}]
 			title: "&9Resonant Reaction Casings"
@@ -1960,7 +1960,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "581D806823B709C3"
-				item: "kubejs:echo_reaction_casing"
+				item: "moni_multiblocks:bathyal_coil_block"
 				type: "item"
 			}]
 			title: "&9Echo Reaction Casings"
@@ -2037,7 +2037,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "50929C3F5F044E40"
-				item: "gtceu:resonant_sculk_compound_block"
+				item: "gtceu:cryococcus_block"
 				type: "item"
 			}]
 			title: "&9Resonant Sculk Compound"
@@ -2060,7 +2060,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "71171679FDF638A6"
-				item: "kubejs:resonant_core"
+				item: "kubejs:abyssal_core"
 				type: "item"
 			}]
 			title: "&9Resonant Core"
@@ -2239,7 +2239,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "140C83AB5FE8450E"
-				item: "kubejs:abyssal_reaction_casing"
+				item: "moni_multiblocks:hadal_coil_block"
 				type: "item"
 			}]
 			title: "Abyssal Fusion Injectors"

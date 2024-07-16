@@ -178,6 +178,13 @@ ServerEvents.recipes(event => {
         .notConsumable('gtceu:ball_casting_mold')
         .duration(500)
         .EUt(16)
+    
+    event.recipes.gtceu.fluid_solidifier('mote_of_omnium')
+        .inputFluids(Fluid.of('gtceu:omnium', 16))
+        .itemOutputs('kubejs:mote_of_omnium')
+        .notConsumable('gtceu:ball_casting_mold')
+        .duration(20)
+        .EUt(7)
 
     //Thermal Fluids
     event.recipes.gtceu.extractor('primal_mana')
@@ -243,19 +250,4 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(110)
 
-    event.recipes.gtceu.macerator('dilithium_dust')
-        .itemInputs('gtceu:dilithium_ore')
-        .itemOutputs('2x gtceu:dilithium_dust')
-        .duration(200)
-        .EUt(420)
-
-    event.recipes.minecraft.smelting('gtceu:dilithium_dust', 'gtceu:dilithium_ore')
-
-    event.remove({ output: 'gtceu:infinity_plate' })
-    event.recipes.gtceu.bender('infinity_plate')
-        .itemInputs('gtceu:infinity_ingot')
-        .itemOutputs('gtceu:infinity_plate')
-        .circuit(1)
-        .duration(5000)
-        .EUt(24)
 })

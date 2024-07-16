@@ -207,16 +207,16 @@ if (isHarderMode) {
         .duration(80)
         .EUt(16)
 
-    //sculk_compound
-    event.recipes.gtceu.assembler('kubejs:sculk_compound_conduit')
-        .itemInputs('2x gtceu:sculk_compound_single_wire', 'enderio:enderium_conduit', '6x enderio:conduit_binder')
-        .itemOutputs('4x enderio:sculk_compound_conduit')
+    //cryolobus
+    event.recipes.gtceu.assembler('kubejs:cryolobus_conduit')
+        .itemInputs('2x gtceu:cryolobus_single_wire', 'enderio:enderium_conduit', '6x enderio:conduit_binder')
+        .itemOutputs('4x enderio:cryolobus_conduit')
         .duration(80)
         .EUt(16)
 
     //kubejs Superconductor
     event.recipes.gtceu.assembler('kubejs:sculk_superconductor_conduit')
-        .itemInputs('2x gtceu:sculk_superconductor_single_wire', 'enderio:sculk_compound_conduit', '6x enderio:conduit_binder')
+        .itemInputs('2x gtceu:sculk_superconductor_single_wire', 'enderio:cryolobus_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:sculk_superconductor_conduit')
         .duration(80)
         .EUt(16)
@@ -336,6 +336,18 @@ if (isHarderMode) {
         .itemInputs('3x minecraft:quartz')
         .notConsumable('gtceu:block_casting_mold')
         .itemOutputs('enderio:fused_quartz')
+        .duration(80)
+        .EUt(16)
+
+    // Clear Glass
+    event.recipes.gtceu.alloy_smelter("kubejs:clear_glass_soda_ash")
+        .itemInputs('minecraft:glass', 'gtceu:tiny_soda_ash_dust')
+        .itemOutputs('enderio:clear_glass')
+        .duration(80)
+        .EUt(16)
+    event.recipes.gtceu.alloy_smelter("kubejs:clear_glass_quicklime")
+        .itemInputs('minecraft:glass', 'gtceu:tiny_quicklime_dust')
+        .itemOutputs('enderio:clear_glass')
         .duration(80)
         .EUt(16)
 

@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
             '      FFF',
             '       FF',
         ], {
-            A: 'armorplus:the_ultimate_material',
+            A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
 			'FFF      ',
 			'FF       ',
 		], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
 			'FFFF     ',
 			'FF       ',
 		], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
 			'AAA      ',
 			'AA       ',
         ], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem'
 		}
@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
 			' FFF FFF ',
 			' FF   FF ',
 		], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
 			'  KBCBK  ',
 			'    A    ',
 		], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             B: 'enderio:reinforced_obsidian_block',
             C: 'gtceu:dense_blue_alloy_plate',
             D: 'gcyr:dense_bisalloy_400_plate',
@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
             H: 'gtceu:dense_enriched_sunnarium_plate',
             I: 'kubejs:ender_star',
             J: 'gtceu:gravi_star',
-            K: 'armorplus:wither_bone'
+            K: 'kubejs:wither_bone'
 		}
 	)
 

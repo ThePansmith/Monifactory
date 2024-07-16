@@ -118,11 +118,14 @@ ServerEvents.recipes(event => {
     }
     ).id('gtceu:shaped/mv_macerator')
     // Data Stuff
+    
+    if (isNormalMode) {
     event.recipes.gtceu.extractor("tank_data")
         .itemInputs("kubejs:heart_of_a_universe")
         .itemOutputs("kubejs:creative_tank_data")
         .duration(1000)
         .EUt(180000)
+    }
 
     // Crystal Chip shit
     event.recipes.gtceu.autoclave("starter_enderium_chip")
@@ -144,26 +147,26 @@ ServerEvents.recipes(event => {
     //TODO: AE2 crystal growth accelerator goes here
 
     // Implement Sculk Compound smelting
-    event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound" })
-    event.remove({ id: "gtceu:electric_blast_furnace/blast_sculk_compound_gas" })
-    const sculk_compoundFuels = [
+    event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
+    event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
+    const cryolobusFuels = [
         [2000, "gtceu:cetane_boosted_diesel"],
         [2000, "gtceu:gasoline"],
     ]
 
-    for (const [mB, id] of sculk_compoundFuels) {
-        event.recipes.gtceu.electric_blast_furnace("sculk_compound_" + id.replace(/\W/g, ''))
-            .itemInputs("gtceu:sculk_compound_dust")
+    for (const [mB, id] of cryolobusFuels) {
+        event.recipes.gtceu.electric_blast_furnace("cryolobus_" + id.replace(/\W/g, ''))
+            .itemInputs("gtceu:cryolobus_dust")
             .inputFluids(`${id} ${mB}`)
-            .itemOutputs("gtceu:hot_sculk_compound_ingot")
+            .itemOutputs("gtceu:hot_cryolobus_ingot")
             .duration(1800)
             .blastFurnaceTemp(6800)
             .EUt(30720)
 
-        event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_" + id.replace(/\W/g, ''))
+        event.recipes.gtceu.electric_blast_furnace("cryolobus_scale_" + id.replace(/\W/g, ''))
             .itemInputs("4x kubejs:warden_horn")
             .inputFluids(`${id} ${mB * 4}`)
-            .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
+            .itemOutputs("2x gtceu:hot_cryolobus_ingot")
             .duration(3600)
             .blastFurnaceTemp(6800)
             .EUt(30720)
@@ -171,28 +174,28 @@ ServerEvents.recipes(event => {
     }
     
     //HOG Sculk Compound Recipes
-    event.recipes.gtceu.electric_blast_furnace("sculk_compound_hog")
-        .itemInputs("gtceu:sculk_compound_dust")
+    event.recipes.gtceu.electric_blast_furnace("cryolobus_hog")
+        .itemInputs("gtceu:cryolobus_dust")
         .inputFluids("gtceu:high_octane_gasoline 500")
-        .itemOutputs("gtceu:hot_sculk_compound_ingot")
+        .itemOutputs("gtceu:hot_cryolobus_ingot")
         .duration(1200)
         .blastFurnaceTemp(6800)
         .EUt(30720)
 
-    event.recipes.gtceu.electric_blast_furnace("sculk_compound_scale_hog")
+    event.recipes.gtceu.electric_blast_furnace("cryolobus_scale_hog")
         .itemInputs("4x kubejs:warden_horn")
         .inputFluids("gtceu:high_octane_gasoline 2000")
-        .itemOutputs("2x gtceu:hot_sculk_compound_ingot")
+        .itemOutputs("2x gtceu:hot_cryolobus_ingot")
         .duration(2400)
         .blastFurnaceTemp(6800)
         .EUt(30720)
 
 
     //Sculk Compound Vac Freezer recipe
-    event.remove({ id: "gtceu:vacuum_freezer/cool_hot_sculk_compound_ingot" }) 
-    event.recipes.gtceu.vacuum_freezer("sculk_compound_ingot_cooling")
-        .itemInputs('gtceu:hot_sculk_compound_ingot')
-        .itemOutputs('gtceu:sculk_compound_ingot')
+    event.remove({ id: "gtceu:vacuum_freezer/cool_hot_cryolobus_ingot" }) 
+    event.recipes.gtceu.vacuum_freezer("cryolobus_ingot_cooling")
+        .itemInputs('gtceu:hot_cryolobus_ingot')
+        .itemOutputs('gtceu:cryolobus_ingot')
         .inputFluids(Fluid.of('kubejs:molten_cryotheum', 2000))
         .duration(600)
         .EUt(1920)
@@ -213,6 +216,39 @@ ServerEvents.recipes(event => {
         M: "gtceu:hv_electric_motor"
     }
     )
+
+    // Atmospheric Accumulator
+    event.shaped(
+        "gtceu:atmospheric_accumulator", [
+        'WRW',
+        'THT',
+        'COC'
+    ], {
+        W: "gtceu:tungsten_single_cable",
+        C: "#gtceu:circuits/iv",
+        T: "gtceu:tungsten_large_fluid_pipe",
+        H: "gtceu:iv_gas_collector",
+        R: "gtceu:tungsten_steel_rotor",
+        O: "gtceu:iv_electric_pump"
+    }
+    ).id('gtceu:shaped/atmospheric_accumulator')
+
+    // Matter Alterator
+    event.shaped(
+        "gtceu:matter_alterator", [
+        'WEW',
+        'THT',
+        'PCV'
+    ], {
+        W: "gtceu:tungsten_single_cable",
+        C: "#gtceu:circuits/iv",
+        T: "gtceu:restonia_empowered_plate",
+        H: "gtceu:iv_atomic_reconstructor",
+        E: "gtceu:iv_emitter",
+        P: "gtceu:iv_electric_piston",
+        V: "gtceu:iv_conveyor_module"
+    }
+    ).id('gtceu:shaped/matter_alterator')
 
     // Prevent cleanroom casings from being usable for free resources
     event.remove({ input: "gtceu:sterilizing_filter_casing" })
@@ -346,6 +382,33 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(30)
 
+     // UHV+ Parallel Control Hatch
+     event.shaped('gtceu:uhv_uhv_parallel_hatch', [
+        'SCE',
+        'CHC',
+        'WCW'
+    ], {
+        H: 'gtceu:uhv_machine_hull',
+        S: 'gtceu:uhv_sensor',
+        C: '#gtceu:circuits/uev',
+        E: 'gtceu:uhv_emitter',
+        W: 'gtceu:netherite_quadruple_wire'
+    }
+    )
+
+    event.shaped('gtceu:uev_uev_parallel_hatch', [
+        'SCE',
+        'CHC',
+        'WCW'
+    ], {
+        H: 'gtceu:uev_machine_hull',
+        S: 'gtceu:uev_sensor',
+        C: '#gtceu:circuits/uiv',
+        E: 'gtceu:uev_emitter',
+        W: 'gtceu:holmium_quadruple_wire'
+    }
+    )
+
     //
     // Recycling below here
     //
@@ -425,17 +488,6 @@ ServerEvents.recipes(event => {
         B: '#minecraft:swords'
     }
     ).damageIngredient('#minecraft:swords')
-
-    //Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
-    event.remove({ id: "armorplus:crafting/shapeless/wooden_rod" })
-    event.shaped(
-        '2x armorplus:wooden_rod', [
-        'SS',
-        'SS'
-    ], {
-        S: 'minecraft:stick'
-    }
-    ).id('kubejs:not_a_wood_gear')
 
     //Avaritia Replacement recipes
     comapcting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
@@ -599,22 +651,22 @@ ServerEvents.recipes(event => {
         
     event.remove({ id: 'gtceu:assembly_line/dynamo_hatch_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/dynamo_hatch_luv')
-            .itemInputs('4x gtceu:long_hsss_rod','1x gtceu:hsss_gear','3x gtceu:small_hsss_gear','2x gtceu:hpic_chip','1x #gtceu:circuits/luv','1x gtceu:luv_voltage_coil')
+            .itemInputs('1x gtceu:luv_machine_hull','4x gtceu:niobium_titanium_spring','2x gtceu:hpic_chip','1x #gtceu:circuits/luv','2x gtceu:luv_voltage_coil')
             .inputFluids('gtceu:sodium_potassium 6000','gtceu:soldering_alloy 720')
             .itemOutputs('gtceu:luv_energy_output_hatch')
             .duration(400)
             .EUt(30720)
             ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_energy_output_hatch').EUt(480).duration(4800))
 
-            event.remove({ id: 'gtceu:assembly_line/robot_arm_luv'})
+    event.remove({ id: 'gtceu:assembly_line/robot_arm_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/robot_arm_luv')
-            .itemInputs('1x gtceu:luv_machine_hull','4x gtceu:niobium_titanium_spring','3x gtceu:small_hsss_gear','2x gtceu:luv_electric_motor','1x gtceu:luv_electric_piston','1x #gtceu:circuits/luv','2x #gtceu:circuits/iv','#gtceu:circuits/ev','4x gtceu:niobium_titanium_single_cable')
+            .itemInputs('4x gtceu:long_hsss_rod','1x gtceu:hsss_gear','3x gtceu:small_hsss_gear','2x gtceu:luv_electric_motor','1x gtceu:luv_electric_piston','1x #gtceu:circuits/luv','2x #gtceu:circuits/iv','4x #gtceu:circuits/ev','4x gtceu:niobium_titanium_single_cable')
             .inputFluids('gtceu:soldering_alloy 576','gtceu:lubricant 250')
             .itemOutputs('gtceu:luv_robot_arm')
             .duration(600)
             .EUt(6000)
             ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_robot_arm').EUt(480).duration(4800))
-            event.remove({ id: 'gtceu:shaped/mega_blast_furnace'})
+    event.remove({ id: 'gtceu:shaped/mega_blast_furnace'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_blast_furnace')
         .itemInputs('gtceu:electric_blast_furnace','4x #gtceu:circuits/zpm','4x gtceu:luv_field_generator','4x gtceu:naquadah_alloy_spring','4x gtceu:dense_naquadah_alloy_plate','4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
         .inputFluids('gtceu:soldering_alloy 9216')
@@ -636,4 +688,35 @@ ServerEvents.recipes(event => {
 
     // Electrum
     event.replaceInput({ id: /redstone_arsenal/ }, 'redstone_arsenal:flux_metal_block', 'gtceu:electrum_flux_block')
+
+    // Americium Plasma
+    event.recipes.gtceu.fusion_reactor('americium_plasma')
+    .inputFluids('gtceu:plutonium_241 144', 'gtceu:hydrogen 2000')
+    .outputFluids('gtceu:americium_plasma 144')
+    .duration(64)
+    .EUt(98304)
+    .fusionStartEU(500000000)
+
+    event.recipes.gtceu.plasma_generator('americium_plasma_generator')
+    .inputFluids('gtceu:americium_plasma 1')
+    .outputFluids('gtceu:americium 1')
+    .duration(320)
+    .EUt(-2048)
+
+    //Resonant Clathrate
+    event.recipes.gtceu.chemical_reactor('resonant_clathrate')
+    .itemInputs('minecraft:quartz')
+    .inputFluids(Fluid.of('kubejs:resonant_ender', 250))
+    .itemOutputs('kubejs:resonant_clathrate')
+    .duration(120)
+    .EUt(75)
+
+    event.recipes.gtceu.extractor('resonant_ender')
+    .itemInputs('minecraft:ender_pearl')
+    .outputFluids(Fluid.of('kubejs:resonant_ender', 250))
+    .duration(40)
+    .EUt(30)
+
+
 })
+ 

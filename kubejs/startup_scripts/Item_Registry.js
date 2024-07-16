@@ -108,7 +108,6 @@ StartupEvents.registry('item', event => {
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
     event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
-    event.create('creative_storage_component').displayName("Creative Storage Component").glow(true).rarity("epic")
     event.create('solidified_experience').displayName("Solidified Experience")
 
     //Misc Items
@@ -164,10 +163,10 @@ StartupEvents.registry('item', event => {
 
 
     //I hate ArmorPlus
-    //event.create('guardian_scale').rarity('rare').displayName("Guardian Scale")
-    //event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
-    //event.create('wither_bone').displayName("Wither Bone")
-    //event.create('lava_crystal_charged').displayName("§6Infused Lava Crystal")
+    event.create('guardian_scale').rarity('rare').displayName("Guardian Scale")
+    event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
+    event.create('wither_bone').displayName("Wither Bone")
+    event.create('the_ultimate_material').displayName("The Ultimate Material")
 
 
     //Thermal Augments
@@ -188,23 +187,19 @@ StartupEvents.registry('item', event => {
     event.create('infinity_catalyst').rarity("epic")
 
     // Drac Evo Replacements
-    event.create('sculk_core')
-    event.create('echo_core')
-    event.create('resonant_core')
+    event.create('mesol_core')
+    event.create('bathyal_core')
     event.create('abyssal_core')
+    event.create('hadal_core')
     event.create('reverberation_core')
-    event.create('energy_core')
     event.create('energy_core_stabilizer')
     event.create('particle_generator')
     event.create('reactor_prt_stab_frame')
-    event.create('resonant_energy_core')
-    event.create('echo_energy_core')
-    event.create('abyss_shard')
+    event.create('abyssal_energy_core')
+    event.create('bathyal_energy_core')
     event.create('warden_heart')
-    event.create('infused_obsidian')
-    event.create('dislocation_inhibitor')
-    event.create('advanced_magnet')
-
+    event.create('abyss_shard')
+    
     //Infinity Tools
     event.create('infinity_file').rarity("epic")
     event.create('infinity_hammer').rarity("epic")
@@ -241,9 +236,9 @@ StartupEvents.registry('item', event => {
     event.create('hyperdynamic_ram_wafer').texture('kubejs:item/hyperdynamicram/hyperdynamic_ram_wafer').displayName('Hyperdynamic RAM Wafer')
     event.create('hyperdynamic_ram_chip_base').texture('kubejs:item/hyperdynamicram/hyperdynamic_ram_chip').displayName('Hyperdynamic RAM Chip Base')
     event.create('hyperdynamic_ram_chip').texture('kubejs:item/hyperdynamicram/activated_hyperdynamic_ram_chip').displayName('Hyperdynamic RAM Chip')
-    event.create('quantum_soc_wafer').texture('kubejs:item/hyperdynamicram/quantum_soc_wafer').displayName('Quantum SoC Wafer')
-    event.create('quantum_soc_chip_base').texture('kubejs:item/hyperdynamicram/quantum_soc_chip').displayName('Quantum SoC Chip Base')
-    event.create('quantum_soc_chip').texture('kubejs:item/hyperdynamicram/activated_quantum_soc_chip').displayName('Quantum SoC Chip')
+    event.create('quantum_soc_wafer').texture('kubejs:item/quantumsoc/quantum_soc_wafer').displayName('Quantum SoC Wafer')
+    event.create('quantum_soc_chip_base').texture('kubejs:item/quantumsoc/quantum_soc_chip_base').displayName('Quantum SoC Chip Base')
+    event.create('quantum_soc_chip').texture('kubejs:item/quantumsoc/quantum_soc_chip').displayName('Quantum SoC Chip')
     // Post tank circuits and whatnot
     const circs = [
         ['matter', 'processor_computer', "UHV"],
@@ -294,6 +289,8 @@ StartupEvents.registry('item', event => {
     // Alien scrap
     event.create('corrupted_universe_data')
     event.create('alien_scrap')
+    event.create('ruined_hull')
+    event.create('ruined_machine_parts')
     event.create('ruined_capacitor')
     event.create('ruined_sensor')
     event.create('ruined_emitter')
@@ -326,6 +323,13 @@ StartupEvents.registry('item', event => {
     // Singularities
     event.create('singularity_containment_unit')
     event.create('contained_singularity')
+
+    // Boosted Infinity Catalsyts
+    event.create('fury_enhanced_infinity_catalyst')
+    event.create('dormant_fury_enhanced_infinity_catalyst')
+    event.create('serenity_enhanced_infinity_catalyst')
+    event.create('dormant_serenity_enhanced_infinity_catalyst')
+
 })
 ItemEvents.modification(event => {
     // Making Infinity (and later Ultimate) tools work as unbreakable crafting tools

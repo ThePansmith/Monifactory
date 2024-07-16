@@ -71,6 +71,11 @@ GTCEuServerEvents.oreVeins(event => {
 
 })
 
+//Remove Naquadah veins
+GTCEuServerEvents.oreVeins(event => {
+    event.remove("gtceu:naquadah_vein") 
+})
+
 GTCEuServerEvents.fluidVeins(event => {
 
     event.add('kubejs:void/oil', vein => {

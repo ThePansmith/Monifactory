@@ -680,6 +680,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x gtceu:fluix_gem')
         .duration(20)
         .EUt(7)
+        .circuit(3)
 
     // cable recipes
     event.remove({ id: "ae2:network/cables/covered_fluix" })
@@ -734,6 +735,518 @@ ServerEvents.recipes(event => {
     pressengrave("kubejs:ae2/silicon_press", "ae2:silicon_press", '#forge:lenses/light_blue');
     pressengrave("kubejs:ae2/logic_processor_press", 'ae2:logic_processor_press', '#forge:lenses/green');
     pressengrave("kubejs:ae2/name_press", 'ae2:name_press', '#forge:lenses/white');
+
+    //MEGA cells
+
+    event.remove({ id: 'megacells:inscriber/accumulation_processor_press' })
+    event.recipes.gtceu.laser_engraver("kubejs:mega/accumulation_processor_press")
+        .itemInputs('gtceu:stainless_steel_block')
+        .notConsumable('#forge:lenses/magenta')
+        .itemOutputs('megacells:accumulation_processor_press')
+        .duration(1600)
+        .EUt(240)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.remove({ id: "megacells:inscriber/accumulation_processor_print" })
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "middle": {
+                "item": "gtceu:black_steel_ingot"
+            },
+            "top": {
+                "item": "megacells:accumulation_processor_press"
+            }
+        },
+        "mode": "inscribe",
+        "result": {
+            "item": "megacells:printed_accumulation_processor"
+        }
+    }).id('kubejs:mega/accumulation_processor_print')
+
+    event.remove({ id: "megacells:inscriber/accumulation_processor" })
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "bottom": {
+                "item": "ae2:printed_silicon"
+            },
+            "middle": {
+                "tag": "gtceu:circuits/hv"
+            },
+            "top": {
+                "item": "megacells:printed_accumulation_processor"
+            }
+        },
+        "mode": "press",
+        "result": {
+            "item": "megacells:accumulation_processor"
+        }
+    }).id('kubejs:mega/accumulation_processor')
+
+    // Storage Component 1M
+    event.remove({ id: 'megacells:cells/cell_component_1m' })
+    event.shaped(
+        Item.of('megacells:cell_component_1m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'ae2:engineering_processor',
+        B: 'ae2:cell_component_256k',
+        C: '#gtceu:circuits/iv',
+        D: 'megacells:accumulation_processor'
+    }
+    ).id('kubejs:mega/storage_component_1m')
+
+    // Storage Component 4M
+    event.remove({ id: 'megacells:cells/cell_component_4m' })
+    event.shaped(
+        Item.of('megacells:cell_component_4m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'ae2:engineering_processor',
+        B: 'megacells:cell_component_1m',
+        C: '#gtceu:circuits/luv',
+        D: 'megacells:accumulation_processor'
+    }
+    ).id('kubejs:mega/storage_component_4m')
+
+    // Storage Component 4M
+    event.remove({ id: 'megacells:cells/cell_component_16m' })
+    event.shaped(
+        Item.of('megacells:cell_component_16m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'megacells:accumulation_processor',
+        B: 'megacells:cell_component_4m',
+        C: '#gtceu:circuits/luv',
+        D: 'gtceu:quantum_eye'
+    }
+    ).id('kubejs:mega/storage_component_16m')
+
+    // Storage Component 4M
+    event.remove({ id: 'megacells:cells/cell_component_64m' })
+    event.shaped(
+        Item.of('megacells:cell_component_64m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'megacells:accumulation_processor',
+        B: 'megacells:cell_component_16m',
+        C: '#gtceu:circuits/zpm',
+        D: 'gtceu:quantum_eye'
+    }
+    ).id('kubejs:mega/storage_component_64m')
+
+    // Storage Component 4M
+    event.remove({ id: 'megacells:cells/cell_component_256m' })
+    event.shaped(
+        Item.of('megacells:cell_component_256m'), [
+        'ADA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'megacells:accumulation_processor',
+        B: 'megacells:cell_component_64m',
+        C: '#gtceu:circuits/zpm',
+        D: 'gtceu:quantum_eye'
+    }
+    ).id('kubejs:mega/storage_component_256m')
+
+    event.remove({ id: /megacells:cells\/standard\/.*storage_cell.*m$/ })
+
+    event.remove({ id: "megacells:cells/mega_item_cell_housing" })
+    event.shaped(
+        Item.of('megacells:mega_item_cell_housing'), [
+        'ABA',
+        'B B',
+        'ABA'
+    ], {
+        A: 'gtceu:fine_lumium_wire',
+        B: 'gtceu:naquadah_plate'
+    }
+    ).id('kubejs:mega/item_cell_housing')
+
+    event.remove({ id: "megacells:cells/mega_fluid_cell_housing" })
+    event.shaped(
+        Item.of('megacells:mega_fluid_cell_housing'), [
+        'ABA',
+        'B B',
+        'ABA'
+    ], {
+        A: 'gtceu:fine_lumium_wire',
+        B: 'gtceu:crystal_matrix_plate'
+    }
+    ).id('kubejs:mega/fluid_cell_housing')
+
+    event.remove({ id: "megacells:cells/standard/bulk_item_cell" }) //recipe in SDA
+    event.remove({ id: "megacells:crafting/bulk_cell_component" })
+
+    event.remove({ id: "megacells:network/cell_dock"})
+    event.recipes.gtceu.assembler("kubejs:mega/cell_dock")
+        .itemInputs("4x gtceu:stainless_steel_plate", "8x gtceu:aluminium_plate", "gtceu:mv_emitter", "gtceu:mv_sensor", "2x #gtceu:circuits/mv")
+        .inputFluids("gtceu:soldering_alloy 144")
+        .itemOutputs("8x megacells:cell_dock")
+        .EUt(240)
+        .duration(200)
+
+    event.remove({ id: "megacells:crafting/mega_crafting_unit"})
+    event.shaped(
+        Item.of('megacells:mega_crafting_unit'), [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'gtceu:black_steel_plate',
+        B: 'ae2:logic_processor',
+        C: 'ae2:crafting_unit',
+        D: 'megacells:accumulation_processor'
+    }
+    ).id('kubejs:mega/cpu_crafting_unit')
+
+    //Remove duplicates
+    event.remove({ id: "megacells:crafting/mega_crafting_accelerator" })
+    event.remove({ id: /megacells:network\/mega_interface/ })
+    event.remove({ id: /megacells:network\/mega_pattern_provider/ })
+    event.remove({ output: /megacells:sky_steel/ })
+
+    //MAE2 compat stuff
+    event.remove({ id: /mae2/ })
+    event.shapeless('mae2:4x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_4k'])
+    event.shapeless('mae2:16x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_16k'])
+    event.shapeless('mae2:64x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_64k'])
+    event.shapeless('mae2:256x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_256k'])
+
+    // Alternate Storage Component Recipes
+
+    //1k recipe stuff
+    event.shaped(
+        '2x ae2:cell_component_1k', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:tempered_glass',
+        B: 'gtceu:red_alloy_plate',
+        C: '#gtceu:circuits/mv'
+    }
+    ).id('kubejs:ae2/storage_component_1k_double')
+
+    event.shaped(
+        '4x ae2:cell_component_1k', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:tempered_glass',
+        B: 'gtceu:red_alloy_plate',
+        C: '#gtceu:circuits/hv'
+    }
+    ).id('kubejs:ae2/storage_component_1k_quad')
+
+    event.shaped(
+        '8x ae2:cell_component_1k', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:tempered_glass',
+        B: 'gtceu:red_alloy_plate',
+        C: '#gtceu:circuits/ev'
+    }
+    ).id('kubejs:ae2/storage_component_1k_oct')
+
+    event.shaped(
+        '16x ae2:cell_component_1k', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:tempered_glass',
+        B: 'gtceu:red_alloy_plate',
+        C: '#gtceu:circuits/iv'
+    }
+    ).id('kubejs:ae2/storage_component_1k_hex')
+
+    //Cheaper ramp up to reduce exponential effect
+    event.recipes.gtceu.assembler("kubejs:ae2/4k_storage_assembler")
+        .itemInputs("2x ae2:cell_component_1k", "ae2:calculation_processor", "#gtceu:circuits/mv")
+        .inputFluids("gtceu:polyethylene 144")
+        .itemOutputs("ae2:cell_component_4k")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:ae2/16k_storage_assembler")
+        .itemInputs("2x ae2:cell_component_4k", "ae2:engineering_processor", "#gtceu:circuits/hv")
+        .inputFluids("gtceu:polyethylene 144")
+        .itemOutputs("ae2:cell_component_16k")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:ae2/64k_storage_assembler")
+        .itemInputs("2x ae2:cell_component_16k", "2x ae2:logic_processor", "ae2:engineering_processor", "#gtceu:circuits/ev")
+        .inputFluids("gtceu:polyethylene 144")
+        .itemOutputs("ae2:cell_component_64k")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:ae2/256k_storage_assembler")
+        .itemInputs("2x ae2:cell_component_64k", "2x ae2:logic_processor", "ae2:engineering_processor", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:polytetrafluoroethylene 144")
+        .itemOutputs("ae2:cell_component_256k")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/1m_storage_assembler")
+        .itemInputs("2x ae2:cell_component_256k", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:polytetrafluoroethylene 288")
+        .itemOutputs("megacells:cell_component_1m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/4m_storage_assembler")
+        .itemInputs("2x megacells:cell_component_1m", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/luv")
+        .inputFluids("gtceu:polytetrafluoroethylene 288")
+        .itemOutputs("megacells:cell_component_4m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/16m_storage_assembler")
+        .itemInputs("2x megacells:cell_component_4m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/luv")
+        .inputFluids("gtceu:polytetrafluoroethylene 288")
+        .itemOutputs("megacells:cell_component_16m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/64m_storage_assembler")
+        .itemInputs("2x megacells:cell_component_16m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/zpm")
+        .inputFluids("gtceu:polybenzimidazole 288")
+        .itemOutputs("megacells:cell_component_64m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
+    event.recipes.gtceu.assembler("kubejs:mega/256m_storage_assembler")
+        .itemInputs("2x megacells:cell_component_64m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/zpm")
+        .inputFluids("gtceu:polybenzimidazole 288")
+        .itemOutputs("megacells:cell_component_256m")
+        .EUt(240)
+        .duration(200)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    //Cheaper circuits
+    event.recipes.gtceu.forming_press("ae2_printed_silicon_greg")
+        .notConsumable("ae2:silicon_press")
+        .itemInputs("4x ae2:silicon")
+        .itemOutputs("4x ae2:printed_silicon")
+        .duration(10)
+        .EUt(2560)
+
+    event.recipes.gtceu.forming_press("ae2_printed_engineering_greg")
+        .notConsumable("ae2:engineering_processor_press")
+        .itemInputs("4x minecraft:diamond")
+        .itemOutputs("4x ae2:printed_engineering_processor")
+        .duration(10)
+        .EUt(2560)
+
+    event.recipes.gtceu.forming_press("ae2_printed_logic_greg")
+        .notConsumable("ae2:logic_processor_press")
+        .itemInputs("4x minecraft:gold_ingot")
+        .itemOutputs("4x ae2:printed_logic_processor")
+        .duration(10)
+        .EUt(2560)
+
+    event.recipes.gtceu.forming_press("ae2_printed_calcuation_greg")
+        .notConsumable("ae2:calculation_processor_press")
+        .itemInputs("4x gtceu:certus_quartz_gem")
+        .itemOutputs("4x ae2:printed_calculation_processor")
+        .duration(10)
+        .EUt(2560)
+
+    event.recipes.gtceu.forming_press("mega_printed_accumulation_greg")
+        .notConsumable("megacells:accumulation_processor_press")
+        .itemInputs("4x gtceu:black_steel_plate")
+        .itemOutputs("4x megacells:printed_accumulation_processor")
+        .duration(10)
+        .EUt(2560)
+
+    //LV circuit (1x)
+    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg_1x")
+        .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("ae2:engineering_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg_1x")
+        .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("ae2:logic_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg_1x")
+        .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("ae2:calculation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg_1x")
+        .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("megacells:accumulation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    //MV circuit (2x)
+    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg_2x")
+        .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/mv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("2x ae2:engineering_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg_2x")
+        .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/mv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("2x ae2:logic_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg_2x")
+        .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/mv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("2x ae2:calculation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg_2x")
+        .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/mv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("2x megacells:accumulation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    //HV circuit (4x)
+    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg_4x")
+        .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("4x ae2:engineering_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg_4x")
+        .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("4x ae2:logic_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg_4x")
+        .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("4x ae2:calculation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg_4x")
+        .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("4x megacells:accumulation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    //EV circuit (8x)
+    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg_8x")
+        .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/ev")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("8x ae2:engineering_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg_8x")
+        .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/ev")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("8x ae2:logic_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg_8x")
+        .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/ev")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("8x ae2:calculation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg_8x")
+        .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/ev")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("8x megacells:accumulation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    //IV circuit (16x)
+    event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg_16x")
+        .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("16x ae2:engineering_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg_16x")
+        .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("16x ae2:logic_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg_16x")
+        .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("16x ae2:calculation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
+    
+    event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg_16x")
+        .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("16x megacells:accumulation_processor")
+        .duration(100)
+        .EUt(30)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // ExtendedAE
 

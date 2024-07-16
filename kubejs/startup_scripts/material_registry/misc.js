@@ -21,8 +21,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("dilithium")
         .dust()
+        .ore(2, 1)
         .color(0xd1b5b4)
         .iconSet(GTMaterialIconSet.CERTUS)
+        .components('2x lithium')
+        .addOreByproducts('lithium', 'cobalt', 'platinum')
+
 })
 
 //PERFECT GEMS
@@ -149,4 +153,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xD29092)
         .components('2x holmium', '3x oxygen')
+
 })
+
+GTCEuStartupEvents.materialModification(event => {
+    GTMaterials.get("rhodium_plated_palladium").setComponents("3x palladium", "1x rhodium", "2x lumium")
+    GTMaterials.RhodiumPlatedPalladium.setFormula('Pd3Rh(SnFe)4(CuAg4)2', true)
+})
+

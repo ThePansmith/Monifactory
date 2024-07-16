@@ -103,8 +103,9 @@
 			id: "64CBC49787B51FD8"
 			linked_quest: "1B1D3A66B847D129"
 			shape: "gear"
+			size: 1.5d
 			x: 43.75d
-			y: -23.5d
+			y: -24.5d
 		}
 		{
 			id: "3B6669BBD0448982"
@@ -1722,10 +1723,10 @@
 			tasks: [{
 				count: 64L
 				id: "65D45DB6200284B7"
-				item: "gtceu:sculk_compound_ingot"
+				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
-			title: "Element ???: sculk_compound"
+			title: "Element ???: cryolobus"
 			x: 26.0d
 			y: 12.5d
 		}
@@ -2200,7 +2201,7 @@
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: { Count: 4b, id: "kubejs:abyssal_core" }
+				item: { Count: 4b, id: "kubejs:hadal_core" }
 				type: "item"
 			}]
 			title: "Abyssal Cores"
@@ -2423,7 +2424,7 @@
 			id: "4CF399EC00A65E3A"
 			tasks: [{
 				id: "639C72FD2123C478"
-				item: "kubejs:creative_storage_component"
+				item: "kubejs:creative_storage_data"
 				type: "item"
 			}]
 			title: "&9Creative Storage Data"
@@ -2466,7 +2467,7 @@
 			}]
 			title: "&9Creative Power"
 			x: 43.75d
-			y: -25.75d
+			y: -26.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -3276,7 +3277,7 @@
 			}]
 			title: "&9Dimensional Superassembler"
 			x: 45.75d
-			y: -25.75d
+			y: -26.75d
 		}
 		{
 			dependencies: [
@@ -3345,31 +3346,17 @@
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: ["The &6Sculk Fusion Reactor&r is a even stronger version of the &9Sculk Reactor&r, capable of running hundreds of recipes at once."]
+			description: ["The &6Hypogen Reactor&r is a even stronger version of the &9Hypogen Reactor&r, capable of running hundreds of recipes at once."]
 			id: "6138FB8766AD6F8C"
 			size: 2.0d
 			tasks: [{
 				id: "0BE78C6BD408CFEB"
-				item: "gtceu:sculk_reactor"
+				item: "gtceu:hypogean_reactor"
 				type: "item"
 			}]
-			title: "&9Sculk Fusion Reactor"
+			title: "&9Hypogen Reactor"
 			x: 41.75d
-			y: -25.75d
-		}
-		{
-			dependencies: ["07057CDE4E021BA7"]
-			description: ["oc not unlocked here at the moment, but once fusion is implemented this multiblock will be moved here"]
-			id: "6A9E02E66C10EA9F"
-			size: 1.5d
-			tasks: [{
-				id: "673F392CD989796A"
-				item: "gtceu:sculk_reactor"
-				type: "item"
-			}]
-			title: "&9Sculk Reactor"
-			x: 50.0d
-			y: -13.5d
+			y: -26.75d
 		}
 		{
 			dependencies: [
@@ -3738,6 +3725,31 @@
 			}]
 			x: 55.0d
 			y: -6.75d
+		}
+		{
+			dependencies: [
+				"1B1D3A66B847D129"
+				"1D00150456DEF379"
+			]
+			id: "06849E067C88C0E9"
+			tasks: [{
+				id: "0BB7A824F7B03BDC"
+				item: "kubejs:fury_enhanced_infinity_catalyst"
+				type: "item"
+			}]
+			x: 35.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["68734C70E2D19616"]
+			id: "65B610CF9324F6B2"
+			tasks: [{
+				id: "2A554D0488C990D6"
+				item: "kubejs:serenity_enhanced_infinity_catalyst"
+				type: "item"
+			}]
+			x: 55.0d
+			y: -26.5d
 		}
 	]
 	title: "End Game"

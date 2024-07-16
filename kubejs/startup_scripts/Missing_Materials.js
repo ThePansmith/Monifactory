@@ -23,6 +23,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Einsteinium.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.Einsteinium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
+    GTMaterials.Americium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.PLASMA, new GTFluidBuilder())
+
     GTMaterials.Berkelium.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.Berkelium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
