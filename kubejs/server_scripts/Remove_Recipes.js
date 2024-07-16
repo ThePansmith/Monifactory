@@ -92,6 +92,8 @@ ServerEvents.recipes(event => {
     // event.remove({id: 'minecraft:kjs/iron_nugget'})
     // event.remove({id: 'minecraft:kjs/gold_nugget'})
 
+    // Just a test recipe packaged with the coremod
+    event.remove({ id: 'gtceu:hypogean_infuser/mesol' })
 
     // Posttank stuff
     event.remove({ id: /gtceu:uxv/ })
