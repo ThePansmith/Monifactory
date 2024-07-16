@@ -5,6 +5,9 @@ StartupEvents.registry('item', event => {
         return;
     }
     event.create('magnetron')
+	
+	  event.create('ender_spore')
+
     event.create('omnic_data')
 
     // Microverse Pristine Matter
