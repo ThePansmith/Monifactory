@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
 
     //TODO: AE2 crystal growth accelerator goes here
 
-    // Implement Sculk Compound smelting
+    // Implement Cryolobus smelting
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
     const cryolobusFuels = [
@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
 
     }
     
-    //HOG Sculk Compound Recipes
+    //HOG Cryolobus Recipes
     event.recipes.gtceu.electric_blast_furnace("cryolobus_hog")
         .itemInputs("gtceu:cryolobus_dust")
         .inputFluids("gtceu:high_octane_gasoline 500")
@@ -191,7 +191,7 @@ ServerEvents.recipes(event => {
         .EUt(30720)
 
 
-    //Sculk Compound Vac Freezer recipe
+    //Cryolobus Vac Freezer recipe
     event.remove({ id: "gtceu:vacuum_freezer/cool_hot_cryolobus_ingot" }) 
     event.recipes.gtceu.vacuum_freezer("cryolobus_ingot_cooling")
         .itemInputs('gtceu:hot_cryolobus_ingot')

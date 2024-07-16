@@ -1273,7 +1273,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Sculk Compound is a complex material needed in vast quantities."
+				"Cryolobus is a complex material needed in vast quantities."
 				""
 				"You'll likely have come by some dust while mining in the End, but you can also create it with a &9Sculk Catalyst&r and &6Manyullyn&r."
 			]
@@ -1289,7 +1289,7 @@
 				item: "gtceu:cryolobus_dust"
 				type: "item"
 			}]
-			title: "&9Sculk Compound Dust"
+			title: "&9Cryolobus Dust"
 			x: 15.25d
 			y: 6.25d
 		}
@@ -1299,11 +1299,11 @@
 				"7F669657313F2E62"
 			]
 			description: [
-				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Sculk Compound&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
+				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Cryolobus&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
 				""
-				"Sculk Compound gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
+				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Sculk Compound: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Sculk Compound, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
+				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1320,7 +1320,7 @@
 				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
-			title: "&9Sculk Compound Ingots"
+			title: "&9Cryolobus Ingots"
 			x: 17.25d
 			y: 8.25d
 		}
@@ -1366,7 +1366,7 @@
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"Coating &6Sculk Compound Wire&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
+				"Coating &6Cryolobus Wire&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
 				"These wires losslessly transmit \"MAX\" tier, which is effectively infinite transfer rate. This means they will work for any tier of power. 1x wires handle 4 amps, meaning 4x wires can handle 16 amps, and 16x wires can handle 64 amps."
 				""
@@ -1793,7 +1793,7 @@
 				item: "gtceu:double_cryolobus_plate"
 				type: "item"
 			}]
-			title: "&9Sculk Compound Double Plates"
+			title: "&9Cryolobus Double Plates"
 			x: 23.25d
 			y: 8.25d
 		}
@@ -1802,7 +1802,7 @@
 			description: [
 				"&6Sculk Cores&r are the first crafting step into &bmultiblock/line name tbd&r."
 				""
-				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &eFusion Crafting&r."
+				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &eHypogean infusion&r."
 			]
 			id: "7C89BC235C988689"
 			rewards: [{
@@ -1844,7 +1844,7 @@
 		}
 		{
 			dependencies: ["5FE96C30454A0374"]
-			description: ["&6Warden Hearts&r are needed for both &6Resonant Sculk Compound&r and &6The Ultimate Material&r."]
+			description: ["&6Warden Hearts&r are needed for both &6Cryococcus&r and &6The Ultimate Material&r."]
 			id: "7FAB6FD0A054443E"
 			rewards: [{
 				id: "2AA894050D239DEE"
@@ -1864,9 +1864,9 @@
 		{
 			dependencies: ["7C89BC235C988689"]
 			description: [
-				"&9Various items can be empowered with Sculk&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
+				"&9Various items can be empowered with Sculk&r, which requires a &6Hypogean infusion Core&r and up to ten injectors of the appropriate tier."
 				""
-				"You'll need eight &6Sculk Reaction Casings&r to upgrade any additional injectors you make to echo Tier."
+				"You'll need eight &6Hypogean infusion Casings&r to upgrade any additional injectors you make to echo Tier."
 				""
 				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
 				""
@@ -1902,7 +1902,7 @@
 			description: [
 				"&6Echo Cores&r are the second tier of cores, used for intermediate crafting recipes."
 				""
-				"Each Echo Core is made via fusion crafting and the setup needs eight &6Shulk Reaction Casings&r."
+				"Each Echo Core is made via hypogean infusion and the setup needs eight &6Shulk Reaction Casings&r."
 			]
 			id: "20CB8F878CADA235"
 			rewards: [{
@@ -1923,9 +1923,9 @@
 		{
 			dependencies: ["6F5579E1646634C7"]
 			description: [
-				"&6Resonant Reaction Casing&r are the penultimate tier of injectors for fusion crafting."
+				"&6Resonant Reaction Casing&r are the penultimate tier of injectors for hypogean infusion."
 				""
-				"You'll need a fusion crafting setup with ten of these for the next tier of injector, and the next tier you'll also need ten injectors, so consider making 20 of these."
+				"You'll need a hypogean infusion setup with ten of these for the next tier of injector, and the next tier you'll also need ten injectors, so consider making 20 of these."
 			]
 			id: "2358A5CF22FF5495"
 			rewards: [{
@@ -1946,7 +1946,7 @@
 		{
 			dependencies: ["20CB8F878CADA235"]
 			description: [
-				"&6Sculk Reactions Casings&r can be upgraded to Echo Tier via fusion crafting."
+				"&6Hypogean infusion Casings&r can be upgraded to Echo Tier via hypogean infusion."
 				""
 				"Technically you only need six of these to start making the next tier of injectors, but some recipes will need more than that. Plan on making at least twenty-six of these."
 			]
@@ -2024,9 +2024,9 @@
 		{
 			dependencies: ["7FAB6FD0A054443E"]
 			description: [
-				"&6Resonant Sculk Compound&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r."
+				"&6Cryococcus&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r."
 				""
-				"Five &6Sculk Compound Blocks&r can be processed in a Echo Tier fusion crafting setup to create an equal output of five &6Resonant Sculk Compound Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
+				"Five &6Cryolobus Blocks&r can be processed in a Echo Tier hypogean infusion setup to create an equal output of five &6Cryococcus Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
 			]
 			id: "0562D9F4C441EAF9"
 			rewards: [{
@@ -2040,16 +2040,16 @@
 				item: "gtceu:cryococcus_block"
 				type: "item"
 			}]
-			title: "&9Resonant Sculk Compound"
+			title: "&9Cryococcus"
 			x: 24.75d
 			y: 18.25d
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"&6Resonant Cores&r are the third tier of &bSculk Reaction&r core, and are common components of endgame recipes."
+				"&6Resonant Cores&r are the third tier of &bHypogean infusion&r core, and are common components of endgame recipes."
 				""
-				"These cores are made with &6Resonant Sculk Compound&r and also cost &e3 Billion RF&r to craft."
+				"These cores are made with &6Cryococcus&r and also cost &e3 Billion RF&r to craft."
 			]
 			id: "03F04B4005F2CBE1"
 			rewards: [{
@@ -2070,7 +2070,7 @@
 		{
 			dependencies: ["03F04B4005F2CBE1"]
 			description: [
-				"&6Resonant Sculk Compound&r, &6Abyss Shards&r, and &6Stabilized Einsteinium&r can be used to create a &6Reactor Core&r."
+				"&6Cryococcus&r, &6Abyss Shards&r, and &6Stabilized Einsteinium&r can be used to create a &6Reactor Core&r."
 				""
 				"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some Endgame items."
 			]
@@ -2127,7 +2127,7 @@
 			description: [
 				"The &6Reactor Stabilizer&r is a component needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."
 				""
-				"They are made in a abyssal Tier fusion crafting setup, requiring a whopping &e56 Billion total RF each&r. You're gonna need some serious power generation and crafting infrastructure to make everything for these."
+				"They are made in a abyssal Tier hypogean infusion setup, requiring a whopping &e56 Billion total RF each&r. You're gonna need some serious power generation and crafting infrastructure to make everything for these."
 			]
 			id: "483652BAEF59E125"
 			rewards: [{
@@ -2148,7 +2148,7 @@
 		{
 			dependencies: ["03F04B4005F2CBE1"]
 			description: [
-				"&6Abyss Shards&r are a component in &bSculk Reaction&r."
+				"&6Abyss Shards&r are a component in &bHypogean infusion&r."
 				""
 				"They are the base material for abyssal Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Warden Data&r."
 			]
@@ -2222,7 +2222,7 @@
 				"235C1E5B2C58B5AF"
 			]
 			description: [
-				"The highest tier of fusion crafting injectors. You will need at least ten of these to reach the &9Creative Tank&r."
+				"The highest tier of hypogean infusion injectors. You will need at least ten of these to reach the &9Creative Tank&r."
 				""
 				"Each injector requires four ingots of &6Neutronium&r and four &6Chaos Shards&r, as well as two &6Crystal Matrix&r blocks."
 				""
