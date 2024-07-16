@@ -3346,31 +3346,17 @@
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: ["The &6Sculk Fusion Reactor&r is a even stronger version of the &9Sculk Reactor&r, capable of running hundreds of recipes at once."]
+			description: ["The &6Hypogen Reactor&r is a even stronger version of the &9Hypogen Reactor&r, capable of running hundreds of recipes at once."]
 			id: "6138FB8766AD6F8C"
 			size: 2.0d
 			tasks: [{
 				id: "0BE78C6BD408CFEB"
-				item: "gtceu:sculk_reactor"
+				item: "gtceu:hypogean_reactor"
 				type: "item"
 			}]
-			title: "&9Sculk Fusion Reactor"
+			title: "&9Hypogen Reactor"
 			x: 41.75d
 			y: -26.75d
-		}
-		{
-			dependencies: ["07057CDE4E021BA7"]
-			description: ["oc not unlocked here at the moment, but once fusion is implemented this multiblock will be moved here"]
-			id: "6A9E02E66C10EA9F"
-			size: 1.5d
-			tasks: [{
-				id: "673F392CD989796A"
-				item: "gtceu:sculk_reactor"
-				type: "item"
-			}]
-			title: "&9Sculk Reactor"
-			x: 50.0d
-			y: -13.5d
 		}
 		{
 			dependencies: [

@@ -1311,6 +1311,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:ex_drive")
         .duration(240)
         .EUt(128)
+        .circuit(4)
 
     event.remove({ id: 'expatternprovider:ex_drive_upgrade' })
     event.recipes.gtceu.assembler('kubejs:epp/ex_drive_upgrade')
@@ -1318,6 +1319,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('expatternprovider:drive_upgrade')
         .duration(240)
         .EUt(128)
+        .circuit(3)
 
     // qbridge card
     event.remove({ id: 'ae2wtlib:quantum_bridge_card' })

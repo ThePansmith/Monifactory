@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hydrogen_peroxide')
         .liquid()
         .color(0xd2ffff)
-        .components('8x carbon', '4x hydrogen', '3x oxygen')
+        .components('2x hydrogen', '2x oxygen')
 
     event.create('hexafluorosilicic_acid')
         .fluid()

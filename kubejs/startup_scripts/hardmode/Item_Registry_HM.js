@@ -5,6 +5,9 @@ StartupEvents.registry('item', event => {
         return;
     }
     event.create('magnetron')
+	
+	  event.create('ender_spore')
+
     event.create('omnic_data')
 
     // Microverse Pristine Matter
@@ -13,12 +16,12 @@ StartupEvents.registry('item', event => {
         ['2', '#f5f5f1'],
         ['3', '#736055'],
         ['4', '#f17d3d'],
-        ['4half', '#f17d3d'],
+        ['4half', '#eef487'],
         ['5', '#fccc6a'],
         ['6', '#58a14e'],
         ['7', '#173639'],
         ['8', '#dcdbe4'],
-        ['8half', '#dcdbe4']
+        ['8half', '#4ebcef']
     ]
 
     for (const [tier, color] of pristine_matter) {

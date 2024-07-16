@@ -31,7 +31,6 @@ ServerEvents.recipes(event => {
     function pristine_matter(tier, microtier) {
         if (microtier == 1) {
             event.recipes.gtceu.basic_microverse(`pristine_${tier}`)
-                .itemInputs('minecraft:cobblestone')
                 .notConsumable(`kubejs:stabilized_microminer_t${tier}`)
                 .itemOutputs(`kubejs:pristine_matter_t${tier}`)
                 .duration(470.4*20)
@@ -39,7 +38,6 @@ ServerEvents.recipes(event => {
         }
         if (microtier == 2) {
             event.recipes.gtceu.advanced_microverse(`pristine_${tier}`)
-                .itemInputs('minecraft:cobblestone')
                 .notConsumable(`kubejs:stabilized_microminer_t${tier}`)
                 .itemOutputs(`kubejs:pristine_matter_t${tier}`)
                 .duration(470.4*20)
@@ -47,7 +45,6 @@ ServerEvents.recipes(event => {
         }
         if (microtier == 3) {
             event.recipes.gtceu.advanced_microverse_ii(`pristine_${tier}`)
-                .itemInputs('minecraft:cobblestone')
                 .notConsumable(`kubejs:stabilized_microminer_t${tier}`)
                 .itemOutputs(`kubejs:pristine_matter_t${tier}`)
                 .duration(470.4*20)
