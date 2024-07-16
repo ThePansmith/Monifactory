@@ -377,7 +377,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t8')
             .circuit(1)
             .itemOutputs(
-                '4x minecraft:echo_shard',
+                '4x kubejs:abyss_shard',
                 '64x minecraft:sculk_catalyst',
                 '32x kubejs:warden_horn'
             )
