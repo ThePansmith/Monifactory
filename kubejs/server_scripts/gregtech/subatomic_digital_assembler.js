@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
 
-    function sda_print(input, circuit, output) {
+    function sda_print(input, circuit, output, cwut) {
         event.recipes.gtceu.subatomic_digital_assembly(`kubejs:${input}_${circuit}`)
             .notConsumable(`kubejs:${input}`)
             .circuit(circuit)
             .itemOutputs(output)
-            .CWUt(64)  // same for all recipes
+            .CWUt(cwut)  // same for all recipes
             .duration(500) // same for all recipes
             .EUt(100000) // same for all recipes
     }
@@ -30,17 +30,17 @@ ServerEvents.recipes(event => {
     }
     ).id('kubejs:shaped/subatomic_digital_assembler')
 
-    sda_print('creative_storage_data', 1, 'functionalstorage:max_storage_upgrade')
-    sda_print('creative_data_hatch_data', 1, 'gtceu:creative_data_access_hatch')
-    sda_print('creative_energy_data', 1, 'enderio:creative_power')
-    sda_print('creative_energy_data', 2, 'ae2:creative_energy_cell')
-    sda_print('creative_energy_data', 3, 'gtceu:creative_energy')
+    sda_print('creative_storage_data', 1, 'functionalstorage:max_storage_upgrade', 128)
+    sda_print('creative_storage_data', 2, 'megacells:bulk_item_cell', 128)
+    sda_print('creative_data_hatch_data', 1, 'gtceu:creative_data_access_hatch', 256)
+    sda_print('creative_energy_data', 1, 'enderio:creative_power', 256)
+    sda_print('creative_energy_data', 2, 'ae2:creative_energy_cell', 256)
 
     event.recipes.gtceu.subatomic_digital_assembly('kubejs:corrupted_data')
         .itemInputs('kubejs:universe_creation_data')
         .itemOutputs('kubejs:corrupted_universe_data')
         .circuit(1)
-        .CWUt(64)
+        .CWUt(32)
         .duration(200)
         .EUt(16000)
 
@@ -49,14 +49,14 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:shattered_star_data')
         .EUt(16000)
         .circuit(1)
-        .CWUt(32)
+        .CWUt(16)
         .duration(50)
 
     if (isNormalMode) {
-        sda_print('creative_tank_data', 1, 'gtceu:creative_tank')
-        sda_print('creative_tank_data', 2, 'ae2:creative_fluid_cell')
-        sda_print('creative_storage_data', 2, 'gtceu:uhv_quantum_chest')
-        sda_print('creative_storage_data', 3, 'gtceu:uhv_quantum_tank')
+        sda_print('creative_tank_data', 1, 'gtceu:creative_tank', 64)
+        sda_print('creative_tank_data', 2, 'ae2:creative_fluid_cell', 64)
+        sda_print('creative_storage_data', 3, 'gtceu:uhv_quantum_chest', 32)
+        sda_print('creative_storage_data', 4, 'gtceu:uhv_quantum_tank', 32)
     }
 
     if (!isNormalMode) {
