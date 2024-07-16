@@ -76,6 +76,13 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(1920)
 
+        event.recipes.gtceu.cutter('cut_perfect_cinnabar')
+        .itemInputs('gtceu:cinnabar_perfect')
+        .inputFluids('gtceu:lubricant 100')
+        .itemOutputs('2x gtceu:exquisite_cinnabar_gem')
+        .duration(100)
+        .EUt(1920)
+
     //DML MATTERS
     event.recipes.gtceu.extractor('overworld_fluid')
         .itemInputs('hostilenetworks:overworld_prediction')
