@@ -515,7 +515,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
             .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-            .where('N', Predicates.blocks("gtceu:netherite_frame"))
+            .where('N', Predicates.blocks("gtceu:omnium_frame"))
             .where('V', Predicates.blocks("ae2:quartz_vibrant_glass"))
             .where('W', Predicates.blocks("kubejs:warp_core"))
             .where('Y', Predicates.blocks("gcyr:dyson_sphere_casing"))

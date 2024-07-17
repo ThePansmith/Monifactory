@@ -597,8 +597,7 @@ ServerEvents.recipes(event => {
     var projector = [
         ['basic_microverse_projector', '#gtceu:circuits/hv'],
         ['advanced_microverse_projector', '#gtceu:circuits/ev'],
-        ['advanced_microverse_projector_ii', '#gtceu:circuits/iv'],
-        ['hyperbolic_microverse_projector', '#gtceu:circuits/uev']
+        ['advanced_microverse_projector_ii', '#gtceu:circuits/iv']
     ]
 
     projector.forEach(projector => {
@@ -614,4 +613,21 @@ ServerEvents.recipes(event => {
         }
         ).id(`kubejs:${projector[0]}`)
     })
+
+    event.recipes.extendedcrafting.shaped_table(
+        'gtceu:hyperbolic_microverse_projector', [
+        'EPFPE',
+        'PALAP',
+        'FLRLF',
+        'PALAP',
+        'EPFPE'
+    ], {
+        E: 'gtceu:uv_field_generator',
+        P: 'gtceu:double_microversium_plate',
+        F: 'gtceu:uhv_emitter',
+        L: 'kubejs:microverse_casing',
+        A: '#gtceu:circuits/uev',
+        R: 'gtceu:computer_monitor_cover'
+    }
+    ).id('kubejs:shaped/hyperbolic_microverse_projector')
 })
