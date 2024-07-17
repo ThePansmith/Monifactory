@@ -77,7 +77,6 @@ JEIEvents.hideItems(event => {
     event.hide(['nuclearcraft:nitrogen_collector', 'nuclearcraft:compact_nitrogen_collector', 'nuclearcraft:lava_collector', 'nuclearcraft:dense_nitrogen_collector', 'nuclearcraft:compact_helium_collector', 'nuclearcraft:helium_collector', 'nuclearcraft:dense_helium_collector'])
     event.hide(['nuclearcraft:magnesium_deepslate_ore', 'nuclearcraft:thorium_deepslate_ore', 'nuclearcraft:uranium_deepslate_ore', 'nuclearcraft:magnesium_ore', 'nuclearcraft:boron_deepslate_ore', 'nuclearcraft:cobalt_ore', 'nuclearcraft:platinum_deepslate_ore', 'nuclearcraft:silver_deepslate_ore', 'nuclearcraft:lead_ore', 'nuclearcraft:lithium_ore', 'nuclearcraft:thorium_ore', 'nuclearcraft:tin_ore', 'nuclearcraft:cobalt_deepslate_ore', 'nuclearcraft:silver_ore', 'nuclearcraft:uranium_ore', 'nuclearcraft:zinc_ore', 'nuclearcraft:boron_ore', 'nuclearcraft:lithium_deepslate_ore'])
     event.hide(['nuclearcraft:foursmore', 'nuclearcraft:evenmoresmore', 'nuclearcraft:moresmore', 'nuclearcraft:smore'])
-	event.hide(['nuclearcraft:thorium_230', 'nuclearcraft:plutonium_241', 'nuclearcraft:lithium_6', 'nuclearcraft:lithium_7', 'nuclearcraft:boron_10', 'nuclearcraft:boron_11', 'nuclearcraft:plutonium_239', 'nuclearcraft:uranium_235', 'nuclearcraft:uranium_238', ])
     event.hide(/^nuclearcraft:.*_bucket/i)
     event.hide(/nuclearcraft:.*_ingot/)
     event.hide(/nuclearcraft:.*_.*_ingot/)
@@ -89,9 +88,15 @@ JEIEvents.hideItems(event => {
     event.hide(/nuclearcraft:.*_.*_dust/)
     event.hide(/nuclearcraft:.*_nugget/)
     event.hide(/nuclearcraft:.*_gem/)
+	// Hides all unused isotopes and fuels
+	event.hide(['nuclearcraft:thorium_230', 'nuclearcraft:plutonium_241', 'nuclearcraft:lithium_6', 'nuclearcraft:lithium_7', 'nuclearcraft:boron_10', 'nuclearcraft:boron_11', 'nuclearcraft:plutonium_239', 'nuclearcraft:uranium_235', 'nuclearcraft:uranium_238', ])
 	event.hide(/nuclearcraft:.*_.*_ox/)
     event.hide(/nuclearcraft:.*_.*_za/)
     event.hide(/nuclearcraft:.*_.*_ni/)
+	// Hides all unused blocks
+	event.hide(['nuclearcraft:supercooler', 'nuclearcraft:steel_block', 'nuclearcraft:electrum_block', 'nuclearcraft:supercold_ice_block', 'nuclearcraft:magnesium_block', 'nuclearcraft:cobalt_block', 'nuclearcraft:aluminum_block', 'nuclearcraft:graphite_block', 'nuclearcraft:lead_block', 'nuclearcraft:bronze_block', 'nuclearcraft:californium250_block', 'nuclearcraft:lithium_block', 'nuclearcraft:platinum_block', 'nuclearcraft:thorium_block', 'nuclearcraft:americium241_block', 'nuclearcraft:plutonium238_block', 'nuclearcraft:tin_block', 'nuclearcraft:beryllium_block', 'nuclearcraft:uranium238_block', 'nuclearcraft:silver_block', 'nuclearcraft:uranium_block', 'nuclearcraft:zirconium_block', 'nuclearcraft:zinc_block', 'nuclearcraft:boron_block', ])
+	// Hides all unused items
+	event.hide(['nuclearcraft:salt', 'nuclearcraft:cocoa_butter', 'nuclearcraft:sawdust', 'nuclearcraft:flour', 'nuclearcraft:dominos', 'nuclearcraft:radaway'])
 
     //JAVD
     event.hide(["javd:portal_block"])
