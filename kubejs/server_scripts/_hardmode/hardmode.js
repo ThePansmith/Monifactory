@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
             .notConsumable('kubejs:ender_spore')
             .itemInputs('4x gtceu:fertilizer')
             .inputFluids(Fluid.of('minecraft:water'))
-            .itemOutputs('16x kubejs:ender_spore')
+            .itemOutputs('8x kubejs:ender_spore')
             .duration(640)
             .EUt(120)
 
