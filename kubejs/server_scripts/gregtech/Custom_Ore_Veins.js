@@ -75,18 +75,3 @@ GTCEuServerEvents.oreVeins(event => {
 GTCEuServerEvents.oreVeins(event => {
     event.remove("gtceu:naquadah_vein") 
 })
-
-GTCEuServerEvents.fluidVeins(event => {
-
-    event.add('kubejs:void/oil', vein => {
-        vein.dimensions('javd:void')
-        vein.fluid(() => Fluid.of('gtceu:oil_medium').fluid)
-        vein.weight(600)
-        vein.minimumYield(120)
-        vein.maximumYield(720)
-        vein.depletionAmount(2)
-        vein.depletionChance(1)
-        vein.depletedYield(50)
-    });
-}
-)  
