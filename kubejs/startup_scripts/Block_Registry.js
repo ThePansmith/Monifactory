@@ -120,7 +120,8 @@ StartupEvents.registry("block", event => {
 			.hardness(5)
 			.tagBlock('mineable/pickaxe')
 			.tagBlock('forge:ores/dense_magma')
-			.requiresTool(true);
+			.requiresTool(true)
+            .lightLevel(1.0);
 
     //EMERGENCY FIX
     /*event.create('gtceu:dilithium_ore')
