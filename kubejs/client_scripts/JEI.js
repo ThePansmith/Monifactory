@@ -5,6 +5,10 @@ JEIEvents.hideItems(event => {
     //Enderio cleanup
     event.hide(/enderio:clear_glass_.*_.*/)
     event.hide(/enderio:fused_quartz_.*_.*/)
+    event.hide(/enderio:powdered_.*/)
+    event.hide(/enderio:.*_ingot/)
+    event.hide(/enderio:.*_nugget/)
+    event.hide(/enderio:.*_block/)
     event.hide('enderio:broken_spawner')
 
     //Hides useless items
@@ -58,6 +62,11 @@ JEIEvents.hideItems(event => {
     // antiblocks (is this even needed?)
     // event.hide([/^antiblocksrechiseled:pressure_plate_.+$/, /^antiblocksrechiseled:button_.+$/, /^antiblocksrechiseled:stair_.+$/, /^antiblocksrechiseled:slab_.+$/, /^antiblocksrechiseled:border_.+$/, /^antiblocksrechiseled:wool_.+$/])
 
+    // Solar Flux
+    event.hide(/solarflux:.*_upgrade/)
+    event.hide(/solarflux:.*_glass/)
+    event.hide('solarflux:blazing_coating')
+
     // AE
     event.hide(['ae2:facade', 'ae2:vibration_chamber'])
     event.hide(/megacells:.*mega_interface/)
@@ -100,6 +109,9 @@ JEIEvents.hideItems(event => {
 
     //JAVD
     event.hide(["javd:portal_block"])
+
+    // Storage Drawers
+    event.hide(/storagedrawers/)
 
     //Ender Storage
     event.hide(['endertanks:ender_bucket'])
@@ -172,6 +184,7 @@ JEIEvents.addItems(event => {
 
     //EnderIO
     event.add('enderio:broken_spawner')
+    event.add('enderio:reinforced_obsidian_block')
 
     //NuclearCraft
     event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust'])
