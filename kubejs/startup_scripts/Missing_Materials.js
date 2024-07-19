@@ -39,6 +39,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     GTMaterials.NetherStar.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.NetherStar.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+	
+	GTMaterials.Graphite.addFlags(GTMaterialFlags.GENERATE_PLATE)
+	
+	GTMaterials.MagnesiumDiboride.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
 
 
     // GTMaterials.Aluminium.getProperty($PropertyKey.BLAST).setProperty($BlastProperty(1700, 'low', 128, 400));

@@ -98,14 +98,23 @@ JEIEvents.hideItems(event => {
     event.hide(/nuclearcraft:.*_nugget/)
     event.hide(/nuclearcraft:.*_gem/)
 	// Hides all unused isotopes and fuels
-	event.hide(['nuclearcraft:thorium_230', 'nuclearcraft:plutonium_241', 'nuclearcraft:lithium_6', 'nuclearcraft:lithium_7', 'nuclearcraft:boron_10', 'nuclearcraft:boron_11', 'nuclearcraft:plutonium_239', 'nuclearcraft:uranium_235', 'nuclearcraft:uranium_238', ])
+	event.hide(['nuclearcraft:fuel_mixed_mix_239', 'nuclearcraft:fuel_mixed_mix_241', 'nuclearcraft:thorium_230', 'nuclearcraft:plutonium_241', 'nuclearcraft:lithium_6', 'nuclearcraft:lithium_7', 'nuclearcraft:boron_10', 'nuclearcraft:boron_11', 'nuclearcraft:plutonium_239', 'nuclearcraft:uranium_235', 'nuclearcraft:uranium_238', ])
 	event.hide(/nuclearcraft:.*_.*_ox/)
     event.hide(/nuclearcraft:.*_.*_za/)
     event.hide(/nuclearcraft:.*_.*_ni/)
+	// Hides unused or duplicate machines
+	event.hide(/nuclearcraft:solar_panel.*/)
+	event.hide(/nuclearcraft:.*_voltaic_pile/)
+	event.hide(/nuclearcraft:.*_battery/)
+	event.hide(/nuclearcraft:.*_barrel/)
+	event.hide(/nuclearcraft:.*bscco.*/)
+	event.hide(/nuclearcraft:turbine.*/)
+	event.hide(/nuclearcraft:.*_container/)
+	event.hide(/nuclearcraft:niobium_tin_.*/)
 	// Hides all unused blocks
-	event.hide(['nuclearcraft:supercooler', 'nuclearcraft:steel_block', 'nuclearcraft:electrum_block', 'nuclearcraft:supercold_ice_block', 'nuclearcraft:magnesium_block', 'nuclearcraft:cobalt_block', 'nuclearcraft:aluminum_block', 'nuclearcraft:graphite_block', 'nuclearcraft:lead_block', 'nuclearcraft:bronze_block', 'nuclearcraft:californium250_block', 'nuclearcraft:lithium_block', 'nuclearcraft:platinum_block', 'nuclearcraft:thorium_block', 'nuclearcraft:americium241_block', 'nuclearcraft:plutonium238_block', 'nuclearcraft:tin_block', 'nuclearcraft:beryllium_block', 'nuclearcraft:uranium238_block', 'nuclearcraft:silver_block', 'nuclearcraft:uranium_block', 'nuclearcraft:zirconium_block', 'nuclearcraft:zinc_block', 'nuclearcraft:boron_block', ])
+	event.hide(['nuclearcraft:empty_active_heat_sink', 'nuclearcraft:villiaumite_heat_sink', 'nuclearcraft:carobbiite_heat_sink', 'nuclearcraft:empty_frame', 'nuclearcraft:supercooler', 'nuclearcraft:steel_block', 'nuclearcraft:electrum_block', 'nuclearcraft:supercold_ice_block', 'nuclearcraft:magnesium_block', 'nuclearcraft:cobalt_block', 'nuclearcraft:aluminum_block', 'nuclearcraft:graphite_block', 'nuclearcraft:lead_block', 'nuclearcraft:bronze_block', 'nuclearcraft:californium250_block', 'nuclearcraft:lithium_block', 'nuclearcraft:platinum_block', 'nuclearcraft:thorium_block', 'nuclearcraft:americium241_block', 'nuclearcraft:plutonium238_block', 'nuclearcraft:tin_block', 'nuclearcraft:beryllium_block', 'nuclearcraft:uranium238_block', 'nuclearcraft:silver_block', 'nuclearcraft:uranium_block', 'nuclearcraft:zirconium_block', 'nuclearcraft:zinc_block', 'nuclearcraft:boron_block', ])
 	// Hides all unused items
-	event.hide(['nuclearcraft:salt', 'nuclearcraft:cocoa_butter', 'nuclearcraft:sawdust', 'nuclearcraft:flour', 'nuclearcraft:dominos', 'nuclearcraft:radaway'])
+	event.hide(['nuclearcraft:rad_x', 'nuclearcraft:research_paper', 'nuclearcraft:plate_extreme', 'nuclearcraft:gelatin', 'nuclearcraft:actuator', 'nuclearcraft:basic_electric_circuit', 'nuclearcraft:sic_fiber', 'nuclearcraft:tough_helmet', 'nuclearcraft:tough_chest', 'nuclearcraft:tough_pants', 'nuclearcraft:tough_boots', 'nuclearcraft:spaxelhoe_tough', 'nuclearcraft:spaxelhoe_thorium', 'nuclearcraft:multitool', 'nuclearcraft:qnp', 'nuclearcraft:lithium_ion_cell', 'nuclearcraft:dps', 'nuclearcraft:servo', 'nuclearcraft:bioplastic', 'nuclearcraft:empty_sink', 'nuclearcraft:radaway_slow', 'nuclearcraft:motor', 'nuclearcraft:salt', 'nuclearcraft:cocoa_butter', 'nuclearcraft:sawdust', 'nuclearcraft:flour', 'nuclearcraft:dominos', 'nuclearcraft:radaway'])
 
     //JAVD
     event.hide(["javd:portal_block"])
@@ -188,6 +197,7 @@ JEIEvents.addItems(event => {
 
     //NuclearCraft
     event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust'])
+
 })
 
 JEIEvents.hideFluids(event => {
