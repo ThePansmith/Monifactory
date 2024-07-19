@@ -63,20 +63,33 @@ StartupEvents.registry('item', event => {
     event.create('wither_realm_data').displayName("§dWither Realm Data")
     event.create('dragon_lair_data').displayName("§dDragon Lair Data")
     event.create('shattered_universe_data').displayName("§dShattered Universe Data")
+    event.create('corrupted_universe_data').displayName("§dCorrupted Universe Data")
+    event.create('shattered_star_data').displayName("§dShattered Star Data")
 
     //Solidified Items
-    event.create('solidified_argon').displayName("Solidified Argon")
-    event.create('solidified_chlorine').displayName("Solidified Chlorine")
-    event.create('solidified_fluorine').displayName("Solidified Fluorine")
-    event.create('solidified_helium').displayName("Solidified Helium")
-    event.create('solidified_hydrogen').displayName("Solidified Hydrogen")
-    event.create('solidified_krypton').displayName("Solidified Krypton")
-    event.create('solidified_mercury').displayName("Solidified Mercury")
-    event.create('solidified_neon').displayName("Solidified Neon")
-    event.create('solidified_nitrogen').displayName("Solidified Nitrogen")
-    event.create('solidified_oxygen').displayName("Solidified Oxygen")
-    event.create('solidified_radon').displayName("Solidified Radon")
-    event.create('solidified_xenon').displayName("Solidified Xenon")
+    const solidified_elements = [
+        ['argon', '#12bc12'],
+        ['chlorine', '#2d6d6d'],
+        ['fluorine', '#4b7ba6'],
+        ['helium', '#e8ea86'],
+        ['hydrogen', '#12128a'],
+        ['krypton', '#7ffe7f'],
+        ['mercury', '#ad9dce'],
+        ['neon', '#b88a8a'],
+        ['nitrogen', '#129192'],
+        ['oxygen', '#4494bc'],
+        ['radon', '#bc38bc'],
+        ['xenon', '#12bcbc'],
+        ['experience', '#04ff00']
+    ]
+
+    for (const [element, elemColor] of solidified_elements) {
+        event.create(`solidified_${element}`)
+            .displayName(`Solidified ${element.split('_').map(v => capitalize(v)).join(" ")}`)
+            .textureJson({ layer0: 'kubejs:item/solidified_element' })
+            .color(0, elemColor);
+    }
+
 
     //Stabilized Items
     const stabilized_elements = [
@@ -108,7 +121,6 @@ StartupEvents.registry('item', event => {
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
     event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
-    event.create('solidified_experience').displayName("Solidified Experience")
 
     //Misc Items
     event.create('grains_of_innocence').displayName("Grains of Innocence")
@@ -118,7 +130,6 @@ StartupEvents.registry('item', event => {
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
     event.create('ender_star').displayName('§dEnder Star').glow(true)
     event.create('endest_star').displayName('§dEndest Star').glow(true)
-    event.create('debug_laser').displayName('§dDebug Laser').glow(true)
     event.create('ender_energy_manipulator').displayName('Ender Energy Manipulator').glow(true)
 
     //Jetpack Units
@@ -140,9 +151,6 @@ StartupEvents.registry('item', event => {
     // Hydrogen is part of Solidified Items section.
     event.create('dense_hydrogen').displayName("Dense Hydrogen").rarity('Uncommon')
     event.create('ultra_dense_hydrogen').displayName("Ultra Dense Hydrogen").rarity('Rare')
-
-    //TODO: Add Hand Framing Tool
-    event.create('hand_framing_tool').displayName("Hand Framing Tool [W.I.P]")
 
     //Add Thermal Series items that were missing
     event.create('aerotheum_dust').texture('kubejs:item/aerotheum_blend').displayName('§7Aerotheum Dust')
@@ -286,7 +294,6 @@ StartupEvents.registry('item', event => {
     }
 
     // Alien scrap
-    event.create('corrupted_universe_data')
     event.create('alien_scrap')
     event.create('ruined_hull')
     event.create('ruined_machine_parts')
@@ -315,7 +322,6 @@ StartupEvents.registry('item', event => {
     }
 
     // Monium
-    event.create('shattered_star_data')
     event.create('field_stabilised_omnic_pulsar_compound')
     event.create('quasi_stable_neutron_star').displayName('Quasi-Stable Neutron Star')
 
