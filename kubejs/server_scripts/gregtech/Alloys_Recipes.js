@@ -67,8 +67,8 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(16)
     event.recipes.gtceu.alloy_smelter('kubejs:hard_carbon_ingot')
-        .itemInputs('#forge:gems/diamond', '2x #forge:ingots/steel') // was flipped
-        .itemOutputs('2x nuclearcraft:hard_carbon_ingot')
+        .itemInputs('#forge:gems/diamond', '3x #forge:ingots/steel') // was flipped
+        .itemOutputs('3x nuclearcraft:hard_carbon_ingot')
         .duration(300)
         .EUt(500)
     event.recipes.gtceu.alloy_smelter('kubejs:sunnarium_dust')
