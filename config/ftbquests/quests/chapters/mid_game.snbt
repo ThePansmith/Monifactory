@@ -648,9 +648,11 @@
 				"&6* Tungstate Ore"
 				"&6* Radium Salt&r"
 				""
-				"As well as the &6Stellar Creation Data&r, which will be useful much, much later."
+				"It is also a primary source of &6Stellar Creation Data&r, which will be useful much, much later."
 				""
-				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, as of the useful byproducts you get, and the tiny amount of each element you get in this mission."
+				"When you eventually obtain the &aAdvanced Microverse Projector II&r, this Micro Miner can perform a mission that gives you large amounts of &6Dilithium Ore&r, as well as &6Certus Quartz, Nether Quartz, and Monazite Ore.&r"
+				""
+				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, as of the useful byproducts you get, and the tiny amount of each element you get in this mission.&r"
 			]
 			id: "53C00EA9D9BEE776"
 			rewards: [{
@@ -1820,7 +1822,18 @@
 				"&6* Redstone Ore"
 				"&6* Certus Quartz Ore"
 				"&6* Almandine Ore"
-				"&6* Lepidolite Ore&r"
+				"&6* Lepidolite Ore"
+				"&2* Cobaltite Ore"
+				"&2* Laurite Ore"
+				"&2* Cuprorhodsite Ore&r"
+				""
+				"Or with a Super Chest III:"
+				"&6* Salt Ore"
+				"&2* Barite Ore"
+				"&2* Neodymium Ore"
+				"&2* Apatite Ore"
+				"&2* Chromite Ore"
+				"&2* Pyrope Ore"
 				""
 				"When equipped with Gemstone Sensor:"
 				"&2* Perfect Diamonds"
@@ -1830,6 +1843,8 @@
 				"&6* Sapphire Ore"
 				"&6* Silver Ore"
 				"&6* Gold Ore"
+				""
+				"The Tier Three Micro Miner will also be used to obtain &2Netherite&r in the endgame."
 			]
 			id: "664107ED03A944CD"
 			rewards: [{
@@ -2254,9 +2269,9 @@
 		{
 			dependencies: ["605062720747B482"]
 			description: [
-				"&2This is the highest tier of polymer. It is used in crafting Advanced SMD components, ZPM+ Machine Hulls, among other things."
+				"This is the highest tier of polymer. It is used in crafting &2Advanced SMD components and ZPM+ Machine Hulls,&r among other things."
 				""
-				"This polymer requires at least 14 processing steps to craft. Good luck!"
+				"This polymer can require up to &914 steps&r to create from scratch, but multiple steps are able to be skipped through distillation of various liquids. &6Check what steps you can easily skip!&r"
 			]
 			icon: "gtceu:polybenzimidazole_bucket"
 			id: "51A463024F35DC2E"
@@ -3140,6 +3155,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
+			subtitle: "That's it?! That's the nuclear power?!?"
 			tasks: [
 				{
 					id: "1CB0BAF39BD9486E"
@@ -3162,6 +3178,145 @@
 			title: "&9High Pressure Steam"
 			x: 47.0d
 			y: 13.5d
+		}
+		{
+			dependencies: [
+				"0B9D5F865C3F8B31"
+				"555BEBF7FD6012B7"
+				"1321299E1528EF92"
+			]
+			description: [
+				"This is the largest Extended Crafting Table, capable of handling 9x9 recipes."
+				""
+				"&9PackagedAuto is now available, so just use that to automate these recipes."
+			]
+			id: "6BD7144B324B286C"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "6CEE1668C0288ACE"
+				item: "extendedcrafting:ultimate_table"
+				type: "item"
+			}]
+			title: "&9Ultimate Crafting Table"
+			x: 35.5d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"2181102841205407"
+				"77582C534A994D7C"
+				"22EE79257B57E56B"
+				"6FFF396CDA6A42CE"
+			]
+			description: [
+				"Now that you have &6Osmium&r and &6Iridium&r from the &6Tier Four Micro Miner&r or &6Platinum Group Processing&r, you have access to something vastly better for Extended Crafting Table Automation&r: &bPackagedExCrafting."
+				""
+				"To begin, you'll need to craft one of each extended &3Package Crafter&r listed on the right. Put an &3Unpackager&r on top of each one, and then a &3Packager&r anywhere you want. These are all AE2 devices, so you'll need to connect them to an ME Network."
+				""
+				"Next, right-click the &3Package Recipe Encoder&r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You'll have to choose the appropriate table for the recipe you want to encode."
+				""
+				"&6Holders&r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press &6[+]&r in &bREI&r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines."
+				""
+				"If you've done everything correctly, you should see the item appear as craftable in a Terminal."
+				""
+				"While it might seem that the crafting process is slow, &ePackagedAuto is excellent at parallelizing&r. You can surround an Unpackager with Crafters and it will use all of them. It's also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same."
+			]
+			icon: "packagedexcrafting:ultimate_crafter"
+			id: "1321299E1528EF92"
+			rewards: [{
+				count: 5
+				id: "352BA907B62D2C5D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3A80AB73797B107D"
+					item: "packagedexcrafting:advanced_crafter"
+					type: "item"
+				}
+				{
+					id: "731AC8C89597DEB5"
+					item: "packagedexcrafting:elite_crafter"
+					type: "item"
+				}
+				{
+					id: "122B999D5378E270"
+					item: "packagedexcrafting:ultimate_crafter"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4E503219CA818091"
+					item: "packagedauto:unpackager"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6CD39F5C3666E39D"
+					item: "packagedauto:packager"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "797E33035C2F3A99"
+					item: "packagedauto:recipe_holder"
+					type: "item"
+				}
+			]
+			title: "Automating Extended Crafting"
+			x: 37.86989795918369d
+			y: 15.509353741496604d
+		}
+		{
+			dependencies: ["74469710D910C19D"]
+			description: [
+				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5Monifactory&r is to allow you to eventually automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
+				""
+				"&bApplied Energistics 2&r stores recipes in &aPatterns&r, but so far they have been limited to at most 9 stacks of items as input (a standard 3x3 crafting grid). PackagedAuto stores recipes in &aPackage Recipe Holders&r, which don't have this limitation. Additionally, each Holder can store up to &e20 different recipes&r. Holders must be encoded in the &3Package Recipe Encoder&r."
+				""
+				"In the vast majority of situations you'll need two identically-encoded Holders, as the following machines work together."
+				""
+				"The &3Packager&r is a machine that compresses ingredients for a specific recipe into a set of &6Recipe Packages&r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks)."
+				""
+				"The &3Unpackager&r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if &eall packages in a set are present&r."
+				""
+				"When both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your &aTerminal&r."
+				""
+				"&3Packager Extensions&r will act like a clone of an adjacent Packager - including access to patterns in its Package Recipe Holder - allowing you to craft recipe packages faster. Simply place the Packager Extensions around the Packager. Up to 26 extensions in a 3x3x3 cube around the Packager are supported."
+			]
+			disable_toast: true
+			icon: "packagedauto:package"
+			id: "6FFF396CDA6A42CE"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "014BDF2A6D29355F"
+					item: "packagedauto:packager"
+					type: "item"
+				}
+				{
+					id: "7E2552844A34871F"
+					item: "packagedauto:unpackager"
+					type: "item"
+				}
+				{
+					id: "03B4D4F9D0033DE0"
+					item: "packagedauto:recipe_holder"
+					type: "item"
+				}
+				{
+					id: "292E9C1D30909C24"
+					item: "packagedauto:encoder"
+					type: "item"
+				}
+			]
+			title: "PackagedAuto"
+			x: 39.5d
+			y: 15.5d
 		}
 	]
 	title: "Mid Game"

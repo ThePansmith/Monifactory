@@ -119,7 +119,7 @@
 		}
 		{
 			dependencies: ["25E1DE210726372E"]
-			description: ["&6Fusion Coils&r are &2no longer EBF coil materials, but they are used in the next Fusion Reactors."]
+			description: ["&6Fusion Coils&r are used in the &2Fusion Reactor MK2&r and &2Fusion Reactor MK3&r."]
 			id: "1183B96529D08326"
 			rewards: [{
 				id: "064FF89D54EB9137"
@@ -212,11 +212,7 @@
 		}
 		{
 			dependencies: ["069773756716E192"]
-			description: [
-				"&2Do you remember Darmstadtium tools in CE? You can make their material now!"
-				""
-				"It is formed by fusing Arsenic and Ruthenium, and is the main material for UV machines."
-			]
+			description: ["&9Darmstadium&r is formed by fusing Arsenic and Ruthenium, and is the main material for UV machines."]
 			id: "3FFC053E3E11D586"
 			rewards: [
 				{
@@ -250,8 +246,6 @@
 		{
 			dependencies: ["069773756716E192"]
 			description: [
-				"&2Doesn't look exactly like Europium anymore.&r"
-				""
 				"To make &9Tritanium&r, you first need to make &9Duranium&r. This is done by fusing molten &9Gallium&r and &9Radon&r in a &3Fusion Reactor Mark 1&r or better."
 				""
 				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor Mark 2&r using the Duranium and molten &9Titanium&r."
@@ -396,7 +390,7 @@
 			description: [
 				"&6Americium Ingots&r are obtained by placing &9NuclearCraft&r Americium isotopes into an &3Extractor&r and solidifying the fluid. As with other GT materials, use the ingot or fluid to forge the other forms."
 				""
-				"&2Americium is used in larger quantities in CEu progression.&r You cannot convert this form of Americium back to NuclearCraft Americium isotopes. These are also the best &aItem Pipe&r material, in terms of throughput."
+				"&2You're gonna need quite a bit of Americium.&r You cannot convert this form of Americium back to NuclearCraft Americium isotopes. These are also the best &aItem Pipe&r material, in terms of throughput."
 			]
 			id: "4A8FB1EF600F0882"
 			rewards: [{
@@ -505,11 +499,11 @@
 		{
 			dependencies: ["32E44FFD602C98DF"]
 			description: [
-				"&6Uranium 233&r is obtained exclusively from the fission of &6TBU Fuels&r."
+				"When you have enough materials, you can craft Uranium isotope clumps into Low-Enriched Uranium 235 Fuel (or &6LEU-235&r, for short). This fuel uses an 8:1 ratio of U238 to U235."
 				""
-				"&6LEU-233&r is made from one &6U233&r and eight &6U238&r."
+				"This fuel is processed in your &3Fission Reactor&r by placing it in the controller. When a redstone signal is applied it will burn the fuel, generating some power from the reactor and after a while you'll get a &6Depleted LEU-235 Fuel&r."
 				""
-				"&6Depleted LEU-233&r will give you various &6Plutonium&r isotopes and some &6Americium&r."
+				"The depleted fuel is separated in a regular &3Centrifuge&r, resulting in many tiny clumps of fissile materials: Uranium 238, &6Neptunium 237&r, &6Plutonium 239&r, and &6Plutonium 241&r."
 			]
 			id: "64B145DC53023119"
 			rewards: [{
@@ -518,16 +512,27 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "3C221A75335837E3"
-				item: "nuclearcraft:fuel_uranium_leu_233"
+				id: "6F33280EE9C07FE2"
+				item: "nuclearcraft:fuel_uranium_leu_235"
 				type: "item"
 			}]
-			title: "LEU-233"
+			title: "Uranium Fission"
 			x: -2.5d
 			y: -11.0d
 		}
 		{
 			dependencies: ["4BE6C4E7FDF7C71B"]
+			description: [
+				"&oNote: this quest accepts Neptunium 236 or 237.&r"
+				""
+				"Low-Enriched Neptunium 236, or &6LEN-236&r, is the next step in the fissile material fuel chain."
+				""
+				"This fuel requires an 8:1 ratio of &6Neptunium 237&r to &6Neptunium 236&r. Using only the results from Thorium fission, it will take two batches of &6Depleted TBU Fuel&r to make your first LEN fuel."
+				""
+				"Of course, higher order reactions also will result in small amounts of Neptunium that you can work with as well."
+				""
+				"&6Depleted LEN 236&r gives a small bit of Neptunium 237 back, but principally provides &6Plutonium&r and &6Americium&r isotopes."
+			]
 			id: "490F04B181217B28"
 			rewards: [{
 				id: "77276677737EC253"
@@ -539,6 +544,7 @@
 				item: "nuclearcraft:fuel_neptunium_len_236"
 				type: "item"
 			}]
+			title: "Neptunium Fusion"
 			x: -2.5d
 			y: -8.0d
 		}
