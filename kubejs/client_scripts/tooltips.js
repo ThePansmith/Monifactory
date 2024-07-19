@@ -118,6 +118,29 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('extendedcrafting:the_ultimate_catalyst', Text.darkGray("I'm the real ultimate catalyst..."))
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
+	
+	// NuclearCraft tooltips
+	tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
+	tooltip.add('nuclearcraft:tough_alloy_ingot', '§eLiFeB');
+	tooltip.add('nuclearcraft:ferroboron_ingot', '§eFeB');
+	tooltip.add('nuclearcraft:hard_carbon_ingot', '§e');
+	tooltip.add('nuclearcraft:uranium_233', '§eU²³³');
+	tooltip.add('nuclearcraft:plutonium_238', '§ePu²³⁸');
+	tooltip.add('nuclearcraft:plutonium_242', '§ePu²⁴²');
+	tooltip.add('nuclearcraft:neptunium_236', '§eNp²³⁶');
+	tooltip.add('nuclearcraft:neptunium_237', '§eNp²³⁷');
+	tooltip.add('nuclearcraft:americium_241', '§eAm²⁴¹');
+	tooltip.add('nuclearcraft:americium_242', '§eAm²⁴²');
+	tooltip.add('nuclearcraft:americium_243', '§eAm²⁴³');
+	tooltip.add('nuclearcraft:curium_243', '§eCm²⁴³');
+	tooltip.add('nuclearcraft:curium_245', '§eCm²⁴⁵');
+	tooltip.add('nuclearcraft:curium_246', '§eCm²⁴⁶');
+	tooltip.add('nuclearcraft:curium_247', '§eCm²⁴⁷');
+	tooltip.add('nuclearcraft:berkelium_247', '§eBk²⁴⁷');
+	tooltip.add('nuclearcraft:berkelium_248', '§eBk²⁴⁸');
+	tooltip.add('nuclearcraft:californium_249', '§eCf²⁴⁹');
+	tooltip.add('nuclearcraft:californium_251', '§eCf²⁵¹');
+	tooltip.add('nuclearcraft:californium_252', '§eCf²⁵²');
 
     tooltip.addAdvanced(['/^kubejs:.+infinity_dust_block$/', 'kubejs:infinity_dust_block'], (item, adv, text) => {
         text.add(1, Text.gray('Not quite solid'))

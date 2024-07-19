@@ -143,6 +143,7 @@ ServerEvents.recipes(event => {
     cansolid('fluorite', "gcyr:fluorite_dust")
     cansolid('tin', "gtceu:tin_dust")
     cansolid('aluminum', "gtceu:aluminium_dust")
+    cansolid('manganese', "gtceu:manganese_dust")
 
     event.remove({ id: "nuclearcraft:empty_heat_sink" })
     event.shaped(
@@ -350,10 +351,36 @@ ServerEvents.recipes(event => {
             .duration(10)
             .EUt(-512)
 
-            event.recipes.gtceu.distillery('distill_tech_water')
+        event.recipes.gtceu.distillery('distill_tech_water')
             .inputFluids('gtceu:distilled_water 20')
             .circuit(5)
             .outputFluids('nuclearcraft:technical_water 20')
             .duration(20).EUt(120)
+			
+	function rtg(name, input) {
+		event.remove({ output: `nuclearcraft:${name}_rtg` })
+		event.recipes.gtceu.assembler(name)
+			.itemInputs('4x gtceu:graphite_plate', '4x nuclearcraft:plate_advanced', `4x ${input}`)
+			.itemOutputs(`nuclearcraft:${name}_rtg`)
+			.duration(200)
+			.EUt(1920)
+	}
+	
+	rtg('americium', 'nuclearcraft:americium_241')
+	rtg('plutonium', 'nuclearcraft:plutonium_238')
+	rtg('uranium', 'gtceu:uranium_ingot')
+	rtg('californium', 'nuclearcraft:californium_250')
+	
+	function coils(name) {
+		event.remove({ output: `nuclearcraft:coil_${name}` })
+		event.recipes.gtceu.assembler(name)
+			.itemInputs('1x gtceu:magnetic_steel_rod', `16x fine_${name}_wire`)
+			.notConsumable('gtceu:programmed_circuit{Configuration:1}')
+			.duration(200)
+			.EUt(480)
+	}
+	
+	coils('copper')
+	coils('magnesium_diboride')
     
 })
