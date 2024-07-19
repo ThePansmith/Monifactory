@@ -2,7 +2,6 @@
     "parent":"item/generated",
     "textures": {
       "layer0":"kubejs:item/shattered_universe_data",
-      "layer1":"kubejs:item/data_overlay",
-      "layer2":"kubejs:item/corrupted_data_overlay"
+      "layer1":"kubejs:item/shattered_data_overlay"
     }
 }
