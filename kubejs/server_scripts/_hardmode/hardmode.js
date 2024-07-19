@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
             .notConsumable('kubejs:ender_spore')
             .itemInputs('4x gtceu:fertilizer')
             .inputFluids(Fluid.of('minecraft:water'))
-            .itemOutputs('16x kubejs:ender_spore')
+            .itemOutputs('8x kubejs:ender_spore')
             .duration(640)
             .EUt(120)
 
@@ -135,4 +135,29 @@ ServerEvents.recipes(event => {
 }}
 
 
+})
+
+// HM Ore Gen
+
+GTCEuServerEvents.oreVeins(event => {
+	if (isHardMode) {
+		// Fluorite is not registerd in NM
+		event.add("kubejs:luna/fluorite", vein => {
+        vein.weight(40)
+        vein.clusterSize(25)
+        vein.density(0.7)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.biomes("gcyr:moon")
+        vein.heightRangeUniform(-40, 50)
+			vein.layeredVeinGenerator(generator => generator
+				.buildLayerPattern(pattern => pattern
+					.layer(l => l.weight(5).mat(GTMaterials.get('fluorite')).size(1, 1))
+					.layer(l => l.weight(3).mat(GTMaterials.Sphalerite).size(2, 4))
+					.layer(l => l.weight(2).mat(GTMaterials.Bastnasite).size(2, 4))
+				)
+			)
+		})
+	}
 })

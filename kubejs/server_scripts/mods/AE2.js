@@ -923,6 +923,18 @@ ServerEvents.recipes(event => {
     event.shapeless('mae2:64x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_64k'])
     event.shapeless('mae2:256x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_256k'])
 
+    event.shaped(
+        'mae2:item_multi_p2p_tunnel', [
+        ' A ',
+        'ABA',
+        'CDC'
+    ], {
+        A: 'gtceu:black_steel_plate',
+        B: 'megacells:accumulation_processor',
+        C: 'gtceu:sapphire_plate',
+        D: 'gtceu:fluix_plate'
+    }).id('kubejs:ae2/multi_p2p_tunnel')
+
     // Alternate Storage Component Recipes
 
     //1k recipe stuff

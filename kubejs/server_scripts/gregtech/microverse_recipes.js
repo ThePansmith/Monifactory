@@ -542,18 +542,18 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(8000000)
 
-    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eight_fourth')
-        .itemInputs('kubejs:microminer_t8', 
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_third')
+        .itemInputs('kubejs:microminer_t11', 
             '64x gtceu:gravi_star',
             '64x gtceu:gravi_star',
             '64x gtceu:gravi_star',
             '64x gtceu:gravi_star',
-            'kubejs:corrupted_universe_data',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:wither_realm_data',
-            '64x kubejs:wither_realm_data')
+            'kubejs:shattered_universe_data')
         .itemOutputs('64x kubejs:quasi_stable_neutron_star', 
+            '64x kubejs:quasi_stable_neutron_star', 
+            '64x kubejs:quasi_stable_neutron_star', 
+            '64x kubejs:quasi_stable_neutron_star',
+            '64x kubejs:quasi_stable_neutron_star', 
             '64x kubejs:quasi_stable_neutron_star', 
             '64x kubejs:quasi_stable_neutron_star', 
             '64x kubejs:quasi_stable_neutron_star')
@@ -597,8 +597,7 @@ ServerEvents.recipes(event => {
     var projector = [
         ['basic_microverse_projector', '#gtceu:circuits/hv'],
         ['advanced_microverse_projector', '#gtceu:circuits/ev'],
-        ['advanced_microverse_projector_ii', '#gtceu:circuits/iv'],
-        ['hyperbolic_microverse_projector', '#gtceu:circuits/uev']
+        ['advanced_microverse_projector_ii', '#gtceu:circuits/iv']
     ]
 
     projector.forEach(projector => {
@@ -614,4 +613,21 @@ ServerEvents.recipes(event => {
         }
         ).id(`kubejs:${projector[0]}`)
     })
+
+    event.recipes.extendedcrafting.shaped_table(
+        'gtceu:hyperbolic_microverse_projector', [
+        'EPFPE',
+        'PALAP',
+        'FLRLF',
+        'PALAP',
+        'EPFPE'
+    ], {
+        E: 'gtceu:uv_field_generator',
+        P: 'gtceu:double_microversium_plate',
+        F: 'gtceu:uhv_emitter',
+        L: 'kubejs:microverse_casing',
+        A: '#gtceu:circuits/uev',
+        R: 'gtceu:computer_monitor_cover'
+    }
+    ).id('kubejs:shaped/hyperbolic_microverse_projector')
 })
