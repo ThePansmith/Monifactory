@@ -24,14 +24,6 @@ ServerEvents.recipes(event => {
         .duration(750)
         .EUt(491520)
 
-    event.recipes.gtceu.assembly_line('particle_generator')
-        .itemInputs('gtceu:tungsten_carbide_frame', '6x gtceu:cryolobus_plate', 'kubejs:mesol_core', '10x minecraft:blaze_rod', '3x gtceu:ev_emitter', '4x gtceu:restonia_empowered_block')
-        .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('kubejs:particle_generator')
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:restonia_empowered_block').EUt(480).duration(1200))
-        .duration(1200)
-        .EUt(30720)
-
 
 
     event.shaped('kubejs:mesol_core', [
