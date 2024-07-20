@@ -6,10 +6,10 @@ ItemEvents.tooltip(tooltip => {
     for (let i = 1; i <= 12; i++) {
         microminer_tooltip(i)
     }
-    
+
     tooltip.add('kubejs:microminer_t4half', Text.translatable('item.kubejs.microminer_t4half.desc'))
     tooltip.add('kubejs:microminer_t8half', Text.translatable('item.kubejs.microminer_t8half.desc'))
-    
+
     tooltip.addAdvanced(['/kubejs:stabilized_microminer/'], (item, adv, text) => {
         text.add(1, '§7§oA stabilized version, injected with a Heart of a Universe.')
         text.add(2, '§7§oLasts indefinitely. Reusable. Totally not overpowered.')
@@ -53,7 +53,7 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, [Text.red('Deprecated').bold()])
     })
 
-	// Fix gtceu text
+    // Fix gtceu text
     tooltip.addAdvanced(['gtceu:creative_energy', 'gtceu:creative_tank', 'gtceu:creative_chest', 'gtceu:creative_data_access_hatch'], (item, adv, text) => {
         text.remove(3);
         text.remove(2);
@@ -61,10 +61,20 @@ ItemEvents.tooltip(tooltip => {
         text.add(Text.join(Text.translatable('gtceu.creative_tooltip.1'), rainbowify(Text.translatable('gtceu.creative_tooltip.2').getString(), Math.round(Client.lastNanoTime / 100000000)), Text.translatable('gtceu.creative_tooltip.3')))
     });
 
-	// Debug laser
-    tooltip.addAdvanced('kubejs:debug_laser', (item, adv, text) => {
-        text.add(Text.join('You need to be a ', rainbowify('dev', Math.round(Client.lastNanoTime / 100000000)), ' to use this'))
-    });
+    // Circuits
+    tooltip.addAdvanced(`kubejs:matter_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(`UEV-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:matter_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(`UHV-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:matter_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(`UV-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:matter_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(`ZPM-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(`UIV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(`UEV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(`UHV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(`UV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:monic_processor_mainframe`, (item, adv, text) => {text.add(1, Text.blue(`MAX-Tier Circuit`))})
+    tooltip.addAdvanced(`kubejs:monic_processor_computer`, (item, adv, text) => {text.add(1, Text.blue(`UIV-Tier Circuit`))})
+    tooltip.addAdvanced(`kubejs:monic_processor_assembly`, (item, adv, text) => {text.add(1, Text.blue(`UEV-Tier Circuit`))})
+    tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => {text.add(1, Text.blue(`UHV-Tier Circuit`))})
+
 
 
     // Multiblocks
@@ -118,29 +128,29 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('extendedcrafting:the_ultimate_catalyst', Text.darkGray("I'm the real ultimate catalyst..."))
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
-	
-	// NuclearCraft tooltips
-	tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
-	tooltip.add('nuclearcraft:tough_alloy_ingot', '§eLiFeB');
-	tooltip.add('nuclearcraft:ferroboron_ingot', '§eFeB');
-	tooltip.add('nuclearcraft:hard_carbon_ingot', '§eFe₃C');
-	tooltip.add('nuclearcraft:uranium_233', '§eU²³³');
-	tooltip.add('nuclearcraft:plutonium_238', '§ePu²³⁸');
-	tooltip.add('nuclearcraft:plutonium_242', '§ePu²⁴²');
-	tooltip.add('nuclearcraft:neptunium_236', '§eNp²³⁶');
-	tooltip.add('nuclearcraft:neptunium_237', '§eNp²³⁷');
-	tooltip.add('nuclearcraft:americium_241', '§eAm²⁴¹');
-	tooltip.add('nuclearcraft:americium_242', '§eAm²⁴²');
-	tooltip.add('nuclearcraft:americium_243', '§eAm²⁴³');
-	tooltip.add('nuclearcraft:curium_243', '§eCm²⁴³');
-	tooltip.add('nuclearcraft:curium_245', '§eCm²⁴⁵');
-	tooltip.add('nuclearcraft:curium_246', '§eCm²⁴⁶');
-	tooltip.add('nuclearcraft:curium_247', '§eCm²⁴⁷');
-	tooltip.add('nuclearcraft:berkelium_247', '§eBk²⁴⁷');
-	tooltip.add('nuclearcraft:berkelium_248', '§eBk²⁴⁸');
-	tooltip.add('nuclearcraft:californium_249', '§eCf²⁴⁹');
-	tooltip.add('nuclearcraft:californium_251', '§eCf²⁵¹');
-	tooltip.add('nuclearcraft:californium_252', '§eCf²⁵²');
+
+    // NuclearCraft tooltips
+    tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
+    tooltip.add('nuclearcraft:tough_alloy_ingot', '§eLiFeB');
+    tooltip.add('nuclearcraft:ferroboron_ingot', '§eFeB');
+    tooltip.add('nuclearcraft:hard_carbon_ingot', '§eFe₃C');
+    tooltip.add('nuclearcraft:uranium_233', '§eU²³³');
+    tooltip.add('nuclearcraft:plutonium_238', '§ePu²³⁸');
+    tooltip.add('nuclearcraft:plutonium_242', '§ePu²⁴²');
+    tooltip.add('nuclearcraft:neptunium_236', '§eNp²³⁶');
+    tooltip.add('nuclearcraft:neptunium_237', '§eNp²³⁷');
+    tooltip.add('nuclearcraft:americium_241', '§eAm²⁴¹');
+    tooltip.add('nuclearcraft:americium_242', '§eAm²⁴²');
+    tooltip.add('nuclearcraft:americium_243', '§eAm²⁴³');
+    tooltip.add('nuclearcraft:curium_243', '§eCm²⁴³');
+    tooltip.add('nuclearcraft:curium_245', '§eCm²⁴⁵');
+    tooltip.add('nuclearcraft:curium_246', '§eCm²⁴⁶');
+    tooltip.add('nuclearcraft:curium_247', '§eCm²⁴⁷');
+    tooltip.add('nuclearcraft:berkelium_247', '§eBk²⁴⁷');
+    tooltip.add('nuclearcraft:berkelium_248', '§eBk²⁴⁸');
+    tooltip.add('nuclearcraft:californium_249', '§eCf²⁴⁹');
+    tooltip.add('nuclearcraft:californium_251', '§eCf²⁵¹');
+    tooltip.add('nuclearcraft:californium_252', '§eCf²⁵²');
 
     tooltip.addAdvanced(['/^kubejs:.+infinity_dust_block$/', 'kubejs:infinity_dust_block'], (item, adv, text) => {
         text.add(1, Text.gray('Not quite solid'))

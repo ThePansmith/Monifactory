@@ -261,21 +261,19 @@ StartupEvents.registry('item', event => {
     const mainframes = [
         ['matter', "UEV"],
         ['dimensional', "UIV"],
-        ['monic', "MAX"],
+        ['monic', "§9MAX"],
     ]
 
     for (const [theme, type, volt] of circs) {
         event.create(`${theme}_${type}`)
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} ${type.split('_').map(v => capitalize(v)).join(" ")}`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_${type}` })
-            .tooltip(`${volt}-Tier Circuit`)
     }
 
     for (const [theme, volt] of mainframes) {
         event.create(`${theme}_processor_mainframe`)
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processor Mainframe`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_processor_mainframe_base`, layer1: "kubejs:item/circuits/processor_mainframe_lights" })
-            .tooltip(`${volt}-Tier Circuit`)
     }
 
     const unit = [
