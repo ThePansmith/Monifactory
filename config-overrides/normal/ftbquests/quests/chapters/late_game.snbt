@@ -262,6 +262,8 @@
 				"* Dense Coal Ore"
 				"* Dense Emerald Ore"
 				"* Dense Redstone Ore&r"
+				""
+				"Eventually, when you unlock the &aHyperbolic Microverse Projector&r, you can also use it to gain a massive amount of &bStellar Creation Data&r at once."
 			]
 			id: "15DBB22E3DC0AFB7"
 			rewards: [{
@@ -593,10 +595,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:polyphenylene_sulfide"
-				id: "7FB9D172BE7BBC11"
-				type: "fluid"
+				id: "674ADD4BEFC6B52D"
+				item: "gtceu:polyphenylene_sulfide_bucket"
+				type: "item"
 			}]
 			title: "&2Polyphenylene Sulfide"
 			x: -2.0d
@@ -901,6 +902,8 @@
 				"&6* Boron Dust"
 				"* Molybdenite Ore"
 				"* Beryllium Ore"
+				""
+				"This microminer will also be important much later, as the sole source of &2Stabilized Oganesson&r."
 			]
 			id: "023197AB7CDBDD6E"
 			rewards: [{
@@ -918,75 +921,6 @@
 			title: "&2Tier Five Micro Miner"
 			x: 6.0d
 			y: 6.25d
-		}
-		{
-			dependencies: [
-				"2181102841205407"
-				"77582C534A994D7C"
-				"6B23DD1121BE8174"
-				"22EE79257B57E56B"
-			]
-			description: [
-				"Now that you have &6Osmium&r and &6Iridium&r from the &6Tier Four Micro Miner&r or &6Platinum Group Processing&r, you have access to something vastly better for Extended Crafting Table Automation&r: &bPackagedExCrafting."
-				""
-				"To begin, you'll need to craft one of each extended &3Package Crafter&r listed on the right. Put an &3Unpackager&r on top of each one, and then a &3Packager&r anywhere you want. These are all AE2 devices, so you'll need to connect them to an ME Network."
-				""
-				"Next, right-click the &3Package Recipe Encoder&r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You'll have to choose the appropriate table for the recipe you want to encode."
-				""
-				"&6Holders&r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press &6[+]&r in &bREI&r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines."
-				""
-				"If you've done everything correctly, you should see the item appear as craftable in a Terminal."
-				""
-				"While it might seem that the crafting process is slow, &ePackagedAuto is excellent at parallelizing&r. You can surround an Unpackager with Crafters and it will use all of them. It's also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same."
-			]
-			icon: "packagedexcrafting:ultimate_crafter"
-			id: "53C09541792FACF4"
-			rewards: [{
-				count: 5
-				id: "00B0BC45DB6CDAB9"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "382E3A0B54F89BB7"
-					item: "packagedexcrafting:advanced_crafter"
-					type: "item"
-				}
-				{
-					id: "6BD4F2D62F3F873A"
-					item: "packagedexcrafting:elite_crafter"
-					type: "item"
-				}
-				{
-					id: "6A4BDAA83790136E"
-					item: "packagedexcrafting:ultimate_crafter"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "495A048EF23847CA"
-					item: "packagedauto:unpackager"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "23DE5E055525B95E"
-					item: "packagedauto:packager"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "28D5C937C2070CE4"
-					item: "packagedauto:recipe_holder"
-					type: "item"
-				}
-			]
-			title: "Automating Extended Crafting"
-			x: 6.0d
-			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1140,6 +1074,12 @@
 				"&2* Uraninite Ore"
 				"* Iridosmine 80/20 Ore"
 				"* Osmiridium 80/20 Ore"
+				""
+				"Once you reach the &aHyperbolic Microverse Projector&r, this microminer can also get the following:"
+				""
+				"&6* Perfect Diamonds"
+				"&6* Perfect Rubies"
+				"&6* Perfect Cinnabar"
 			]
 			id: "49B872B193268554"
 			rewards: [{
@@ -1204,7 +1144,10 @@
 			y: 20.25d
 		}
 		{
-			dependencies: ["49B872B193268554"]
+			dependencies: [
+				"49B872B193268554"
+				"62AC7103FF9D25FD"
+			]
 			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
 			icon: "kubejs:mote_of_omnium"
 			id: "7A7FFE9E89D19A2F"
@@ -1239,7 +1182,7 @@
 			description: [
 				"&2Upgraded forms of the EBF and Vacuum Freezer.&r"
 				""
-				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e256x&r with the best hatch!."
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!."
 				""
 				"The &aRotary Hearth Furnace&r is quite big!"
 			]
@@ -1303,7 +1246,7 @@
 				""
 				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
+				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Horns&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1632,11 +1575,11 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "19750B567D0D0ABC"
-				item: "armorplus:the_ultimate_material"
+				item: "kubejs:the_ultimate_material"
 				type: "item"
 			}]
-			x: 21.25d
-			y: 16.75d
+			x: 23.25d
+			y: 19.75d
 		}
 		{
 			dependencies: [
@@ -1671,7 +1614,7 @@
 			description: [
 				"With a &3Fusion Reactor&r, you can make Europium!"
 				""
-				"This element is needed for making things in &bkubejs Evolution&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
+				"This element is needed for making &9Sculk related items&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
 				""
 				"You make it by fusing molten &9Neodymium&r and &9Hydrogen&r."
 			]
@@ -1800,9 +1743,9 @@
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"&6Sculk Cores&r are the first crafting step into &bmultiblock/line name tbd&r."
+				"&9Mesol Cores&r are the first crafting step into &9Hypogen Infusion&r."
 				""
-				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &eHypogean infusion&r."
+				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &9Sculk&r."
 			]
 			id: "7C89BC235C988689"
 			rewards: [{
@@ -1816,7 +1759,7 @@
 				item: "kubejs:mesol_core"
 				type: "item"
 			}]
-			title: "&9Sculk Cores"
+			title: "&9Mesol Cores"
 			x: 25.25d
 			y: 8.25d
 		}
@@ -1844,7 +1787,7 @@
 		}
 		{
 			dependencies: ["5FE96C30454A0374"]
-			description: ["&6Warden Hearts&r are needed for both &6Cryococcus&r and &6The Ultimate Material&r."]
+			description: ["&9Warden Hearts&r are needed for both &9Cryococcus&r and &6The Ultimate Material&r."]
 			id: "7FAB6FD0A054443E"
 			rewards: [{
 				id: "2AA894050D239DEE"
@@ -1864,13 +1807,11 @@
 		{
 			dependencies: ["7C89BC235C988689"]
 			description: [
-				"&9Various items can be empowered with Sculk&r, which requires a &6Hypogean infusion Core&r and up to ten injectors of the appropriate tier."
+				"&9By chilling sculk to subzero  temperatures and injecting it with xp juice, you can create new items.&r "
 				""
-				"You'll need eight &6Hypogean infusion Casings&r to upgrade any additional injectors you make to echo Tier."
+				"As stated above, the multiblock does require extremely cold temperatures to function, so it does require a passive supply of power to decrease it's temperature, and a passive supply of fluid to keep the sculk contained alive. Said sculk is inserted in a "
 				""
 				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
-				""
-				"&5DE is currently in the process of being removed, the draconic reactor multiblock will be replaced with one a bit more fitting. The quest details will remain unchanged until said multiblock is finalized."
 			]
 			icon: "moni_multiblocks:hypogean_infuser"
 			id: "713FAECEE5046121"
@@ -1887,23 +1828,19 @@
 					type: "item"
 				}
 				{
-					count: 10L
+					count: 24L
 					id: "5756875831B786CB"
 					item: "moni_multiblocks:mesol_coil_block"
 					type: "item"
 				}
 			]
-			title: "&9Shulk Reaction Casings"
+			title: "&9Hypogen Infuser"
 			x: 27.25d
 			y: 8.25d
 		}
 		{
 			dependencies: ["713FAECEE5046121"]
-			description: [
-				"&6Echo Cores&r are the second tier of cores, used for intermediate crafting recipes."
-				""
-				"Each Echo Core is made via hypogean infusion and the setup needs eight &6Shulk Reaction Casings&r."
-			]
+			description: ["&9Bathyal Cores&r are the second tier of core, used for intermediate crafting recipes."]
 			id: "20CB8F878CADA235"
 			rewards: [{
 				id: "6C1605F1E280EA28"
@@ -1916,17 +1853,13 @@
 				item: "kubejs:bathyal_core"
 				type: "item"
 			}]
-			title: "&9Echo Cores"
+			title: "&9Bathyal Cores"
 			x: 27.25d
 			y: 10.25d
 		}
 		{
 			dependencies: ["6F5579E1646634C7"]
-			description: [
-				"&6Resonant Reaction Casing&r are the penultimate tier of injectors for hypogean infusion."
-				""
-				"You'll need a hypogean infusion setup with ten of these for the next tier of injector, and the next tier you'll also need ten injectors, so consider making 20 of these."
-			]
+			description: ["&9Abyssal Casings&r are the penultimate tier of casings for Hypogean Infusion, able to reach even colder temps."]
 			id: "2358A5CF22FF5495"
 			rewards: [{
 				id: "0022ECDC55B22DC3"
@@ -1936,17 +1869,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "09CD18933F28FA28"
-				item: "moni_multiblocks:bathyal_coil_block"
+				item: "moni_multiblocks:abyssal_coil_block"
 				type: "item"
 			}]
-			title: "&9Resonant Reaction Casings"
+			title: "&9Abyssal Casings"
 			x: 25.25d
 			y: 12.25d
 		}
 		{
 			dependencies: ["20CB8F878CADA235"]
 			description: [
-				"&6Hypogean infusion Casings&r can be upgraded to Echo Tier via hypogean infusion."
+				"&9Hypogean infusion Casings&r can be upgraded to &9Bathyal Tier&r via hypogean infusion."
 				""
 				"Technically you only need six of these to start making the next tier of injectors, but some recipes will need more than that. Plan on making at least twenty-six of these."
 			]
@@ -1963,7 +1896,7 @@
 				item: "moni_multiblocks:bathyal_coil_block"
 				type: "item"
 			}]
-			title: "&9Echo Reaction Casings"
+			title: "&9Bathyal Casings"
 			x: 27.25d
 			y: 12.25d
 		}
@@ -1975,7 +1908,7 @@
 				"6391447F1A411281"
 			]
 			description: [
-				"The main source of &9Abyss Shards&r."
+				"The main source of &9Hadal Shards&r."
 				""
 				"&9This microminer is also to bring back Ender dragon eggs and Ender dragon scales, as well as neutronium, depending on the mission&r."
 			]
@@ -2026,7 +1959,7 @@
 			description: [
 				"&6Cryococcus&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r."
 				""
-				"Five &6Cryolobus Blocks&r can be processed in a Echo Tier hypogean infusion setup to create an equal output of five &6Cryococcus Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
+				"Five &6Cryolobus Blocks&r can be processed in to create an equal output of five &6Cryococcus Blocks&r."
 			]
 			id: "0562D9F4C441EAF9"
 			rewards: [{
@@ -2041,13 +1974,13 @@
 				type: "item"
 			}]
 			title: "&9Cryococcus"
-			x: 24.75d
+			x: 25.25d
 			y: 18.25d
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"&6Resonant Cores&r are the third tier of &bHypogean infusion&r core, and are common components of endgame recipes."
+				"&6Abyssal Cores&r are the third tier of &bSculk&r core, and are common components of endgame recipes."
 				""
 				"These cores are made with &6Cryococcus&r and also cost &e3 Billion RF&r to craft."
 			]
@@ -2063,8 +1996,8 @@
 				item: "kubejs:abyssal_core"
 				type: "item"
 			}]
-			title: "&9Resonant Core"
-			x: 24.75d
+			title: "&9Abyssal Core"
+			x: 25.25d
 			y: 21.0d
 		}
 		{
@@ -2087,7 +2020,7 @@
 				type: "item"
 			}]
 			title: "Reactor Core"
-			x: 22.75d
+			x: 23.25d
 			y: 21.0d
 		}
 		{
@@ -2101,6 +2034,8 @@
 				"Combines &bStellar Creation Data&r into the &9Universe Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
 				""
 				"The alternate mission brings a decent quantity of &6Neutronium&r. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
+				""
+				"The Tier Nine Micro Miner will also be important in the Post-Tank game, as it will be your main source of &9Quasi-Stable Neutron Stars&r."
 			]
 			id: "6BF4A76C5B84EEE9"
 			rewards: [{
@@ -2124,11 +2059,7 @@
 				"03F04B4005F2CBE1"
 				"738A141D31AD7CE3"
 			]
-			description: [
-				"The &6Reactor Stabilizer&r is a component needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."
-				""
-				"They are made in a abyssal Tier hypogean infusion setup, requiring a whopping &e56 Billion total RF each&r. You're gonna need some serious power generation and crafting infrastructure to make everything for these."
-			]
+			description: ["The &6Reactor Stabilizer&r is a component needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."]
 			id: "483652BAEF59E125"
 			rewards: [{
 				id: "6D6D92F23F1DCEA5"
@@ -2142,13 +2073,13 @@
 				type: "item"
 			}]
 			title: "Reactor Stabilizer"
-			x: 24.75d
+			x: 25.25d
 			y: 24.0d
 		}
 		{
 			dependencies: ["03F04B4005F2CBE1"]
 			description: [
-				"&6Abyss Shards&r are a component in &bHypogean infusion&r."
+				"&6Hadal Shards&r are a component in &bHypogean infusion&r."
 				""
 				"They are the base material for abyssal Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Warden Data&r."
 			]
@@ -2160,12 +2091,12 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "31B73CD828CA2128"
-				item: "kubejs:abyss_shard"
+				id: "5E20DE67BAF768B6"
+				item: "kubejs:hadal_shard"
 				type: "item"
 			}]
-			title: "&9Abyss Shards"
-			x: 26.75d
+			title: "&9Hadal Shards"
+			x: 27.25d
 			y: 21.0d
 		}
 		{
@@ -2181,7 +2112,7 @@
 				""
 				"Neutronium is made from fusing molten &9Naquadria&r, a super-enriched form of &6Naquadah&r, with molten &9Americium&r, &2or from the Tier Eight Micro Miner.&r"
 				""
-				"After getting &6abyssal Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
+				"You might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
 			]
 			id: "22E50A6923EBF5CB"
 			rewards: [
@@ -2222,9 +2153,9 @@
 				"235C1E5B2C58B5AF"
 			]
 			description: [
-				"The highest tier of hypogean infusion injectors. You will need at least ten of these to reach the &9Creative Tank&r."
+				"The highest tier of hypogean infusion injectors, used to bring sculk to the lowest temptures. You will these to reach the &9Creative Tank&r."
 				""
-				"Each injector requires four ingots of &6Neutronium&r and four &6Chaos Shards&r, as well as two &6Crystal Matrix&r blocks."
+				"Each injector requires four ingots of &6Neutronium&r and four &6Hadal Shards&r, as well as two &6Crystal Matrix&r blocks."
 				""
 				"Hope you've got those Tier Eight Micro Miners automated."
 			]
@@ -2242,7 +2173,7 @@
 				item: "moni_multiblocks:hadal_coil_block"
 				type: "item"
 			}]
-			title: "Abyssal Fusion Injectors"
+			title: "&9Hadal Cryogenic Casings"
 			x: 29.25d
 			y: 24.0d
 		}
@@ -2267,7 +2198,7 @@
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
-			description: ["It grants the most wafers, and is required for Highly Advanced Systems-on-Chip."]
+			description: ["Allows for the creation of ASoCs."]
 			id: "524E7A937C2D9DDD"
 			rewards: [{
 				id: "088BB71A2B6A615E"
@@ -2275,7 +2206,6 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "The final Boule."
 			tasks: [{
 				id: "3BC9108FCF45C8A6"
 				item: "gtceu:neutronium_boule"
@@ -2478,8 +2408,8 @@
 				type: "item"
 			}]
 			title: "&2Implosion Compressor"
-			x: 19.25d
-			y: 1.0d
+			x: 5.9375d
+			y: 24.0625d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
@@ -2496,8 +2426,8 @@
 				item: "minecraft:tnt"
 				type: "item"
 			}]
-			x: 19.25d
-			y: -0.5d
+			x: 3.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["49D33146A1F417E8"]
@@ -2673,75 +2603,6 @@
 			]
 			title: "&2Advanced SMD Components"
 			x: 0.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["74469710D910C19D"]
-			description: [
-				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5Monifactory&r is to allow you to eventually automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
-				""
-				"&bApplied Energistics 2&r stores recipes in &aPatterns&r, but so far they have been limited to at most 9 stacks of items as input (a standard 3x3 crafting grid). PackagedAuto stores recipes in &aPackage Recipe Holders&r, which don't have this limitation. Additionally, each Holder can store up to &e20 different recipes&r. Holders must be encoded in the &3Package Recipe Encoder&r."
-				""
-				"In the vast majority of situations you'll need two identically-encoded Holders, as the following machines work together."
-				""
-				"The &3Packager&r is a machine that compresses ingredients for a specific recipe into a set of &6Recipe Packages&r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks)."
-				""
-				"The &3Unpackager&r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if &eall packages in a set are present&r."
-				""
-				"When both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your &aTerminal&r."
-				""
-				"&3Packager Extensions&r will act like a clone of an adjacent Packager - including access to patterns in its Package Recipe Holder - allowing you to craft recipe packages faster. Simply place the Packager Extensions around the Packager. Up to 26 extensions in a 3x3x3 cube around the Packager are supported."
-			]
-			disable_toast: true
-			icon: "packagedauto:package"
-			id: "6B23DD1121BE8174"
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "48748A565C341DF1"
-					item: "packagedauto:packager"
-					type: "item"
-				}
-				{
-					id: "09C32235E81EE845"
-					item: "packagedauto:unpackager"
-					type: "item"
-				}
-				{
-					id: "78ACB6BDC43791BE"
-					item: "packagedauto:recipe_holder"
-					type: "item"
-				}
-				{
-					id: "0DF55C8EB1DA9019"
-					item: "packagedauto:encoder"
-					type: "item"
-				}
-			]
-			title: "PackagedAuto"
-			x: 9.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"15DBB22E3DC0AFB7"
-				"555BEBF7FD6012B7"
-			]
-			description: [
-				"This is the largest Extended Crafting Table, capable of handling 9x9 recipes."
-				""
-				"&9PackagedAuto is now available, so just use that to automate these recipes."
-			]
-			id: "22EE79257B57E56B"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "381FFA3284E21350"
-				item: "extendedcrafting:ultimate_table"
-				type: "item"
-			}]
-			title: "&9Ultimate Crafting Table"
-			x: 6.0d
 			y: 1.0d
 		}
 		{
