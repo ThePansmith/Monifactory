@@ -1747,16 +1747,6 @@
 				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
 				""
 				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"blue\"},{\"text\":\"Monifactory repository\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"blue\"}]"
-				""
-				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid World&r."
-				"{@pagebreak}"
-				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
-				""
-				"Features new to &9Monifactory&r and quests with new content will be higlighted in &9Blue&r."
-				""
-				"Notes about things in &5Alpha&r will be higlighted in &5Dark Purple&r."
-				""
-				"[\"Text with \",{\"text\":\"underlines\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"But not this!\"}},\" are (mostly) clickable.\"]"
 			]
 			hide: false
 			icon: "thermal:nuke_tnt"

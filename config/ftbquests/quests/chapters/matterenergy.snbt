@@ -548,7 +548,7 @@
 		{
 			dependencies: ["6F32A8739D8E792A"]
 			description: [
-				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5monifactory&r is to allow you to eventually automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
+				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5Monifactory&r is to allow you to eventually automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
 				""
 				"&bApplied Energistics 2&r stores recipes in &aPatterns&r, but so far they have been limited to at most 9 stacks of items as input (a standard 3x3 crafting grid). PackagedAuto stores recipes in &aPackage Recipe Holders&r, which don't have this limitation. Additionally, each Holder can store up to &e20 different recipes&r. Holders must be encoded in the &3Package Recipe Encoder&r."
 				""
@@ -973,11 +973,14 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["74469710D910C19D"]
+			dependencies: [
+				"74469710D910C19D"
+				"798889BE3819EB4D"
+			]
 			description: [
-				"Now that you have &6Osmium&r and &6Iridium&r from the &6Tier Four Micro Miner&r or &6Platinum Group Processing&r, you can begin automating &bExtended Crafting&r recipes. While it is possible to use &6Auto Crafting Tables&r for this task, you have access to something &ovastly&r better&r: &bPackagedExCrafting&r."
+				"Now that you have &6HSS-E&r, you can begin automating &bExtended Crafting&r recipes in a easier way than before. "
 				""
-				"To begin, you'll need to craft one of each extended &3Package Crafter&r listed on the right. Put an &3Unpackager&r on top of each one, and then a &3Packager&r anywhere you want. These are all AE2 devices, so you'll need to connect them to an ME Network."
+				"To begin, you'll need to craft one of each extended &3Package Crafter&r listed above. Put an &3Unpackager&r on top of each one, and then a &3Packager&r anywhere you want. These are all AE2 devices, so you'll need to connect them to an ME Network."
 				"{@pagebreak}"
 				"Next, right-click the &3Package Recipe Encoder&r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You'll have to choose the appropriate table for the recipe you want to encode."
 				""
@@ -987,7 +990,7 @@
 				""
 				"While it might seem that the crafting process is slow, &ePackagedAuto is excellent at parallelizing&r. You can surround an Unpackager with Crafters and it will use all of them. It's also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same."
 			]
-			icon: "extendedcrafting:elite_auto_table"
+			icon: "packagedexcrafting:ultimate_crafter"
 			id: "70D9B3C6539720DE"
 			rewards: [{
 				id: "083A8F49762A37FE"
@@ -1431,7 +1434,7 @@
 				"4FAFF184242F5EB8"
 			]
 			description: [
-				"If somehow being able to store over a million items in a single &9256k Item Storage Cell&r isn't enough for you, there is now &eMEGA Cells&r!"
+				"If somehow being able to store over a million items in a single &9256k Item Storage Cell&r isn't enough for you, there is now &9MEGA Cells&r!"
 				""
 				"&eMEGA Cells&r go up to 256M bytes, allowing them to store an insane amount of items. You will need high end materials to make the housings for these cells."
 			]
@@ -1446,7 +1449,7 @@
 				item: "megacells:cell_component_1m"
 				type: "item"
 			}]
-			title: "MEGA Cells"
+			title: "&9MEGA Cells"
 			x: 7.25d
 			y: -8.0d
 		}
@@ -1459,12 +1462,13 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "&6Logic Processors&r are made from a &6Black Steel Plate&r, a &6Silicon Plate&r, and any tier three circuit."
+			subtitle: "&6Accumulation Processors&r are made from a &6Black Steel Plate&r, a &6Silicon Plate&r, and any tier three circuit."
 			tasks: [{
 				id: "4B2E214B3A13DCD5"
 				item: "megacells:accumulation_processor"
 				type: "item"
 			}]
+			title: "&9Accumlation Processors"
 			x: 7.25d
 			y: 0.5d
 		}
@@ -1489,6 +1493,7 @@
 				item: "megacells:mega_crafting_unit"
 				type: "item"
 			}]
+			title: "&9MEGA Crafting"
 			x: 7.25d
 			y: 2.5d
 		}

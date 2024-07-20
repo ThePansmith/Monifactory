@@ -516,7 +516,7 @@
 				item: "nuclearcraft:fuel_uranium_leu_235"
 				type: "item"
 			}]
-			title: "Uranium Fission"
+			title: "Uranium 235 Fission"
 			x: -2.5d
 			y: -11.0d
 		}
@@ -571,7 +571,7 @@
 				item: "nuclearcraft:fuel_uranium_leu_233"
 				type: "item"
 			}]
-			title: "LEU-233"
+			title: "Uranium 233 Fission"
 			x: -2.5d
 			y: -9.5d
 		}
