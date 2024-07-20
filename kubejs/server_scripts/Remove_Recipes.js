@@ -49,8 +49,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['gtceu:restonia_perfect', 'gtceu:exquisite_restonia_gem', 'gtceu:restonia_dust', 'gtceu:tiny_restonia_dust', 'gtceu:flawless_restonia_gem', 'gtceu:restonia_rod', 'gtceu:restonia_plate', 'gtceu:small_restonia_dust', 'gtceu:palis_perfect', 'gtceu:exquisite_palis_gem', 'gtceu:palis_dust', 'gtceu:tiny_palis_dust', 'gtceu:flawless_palis_gem', 'gtceu:palis_rod', 'gtceu:palis_plate', 'gtceu:small_palis_dust'] })
 
     //NC
-    event.hide(/nuclearcraft:fusion.*/)
-    event.hide(/nuclearcraft:.*electromagnet.*/)
+    event.remove(/nuclearcraft:fusion.*/)
+    event.remove(/nuclearcraft:.*electromagnet.*/)
     event.remove({ output: /water_collector/ });
     event.remove({ output: ["nuclearcraft:tough_alloy_ingot"] });
     //JAVD
