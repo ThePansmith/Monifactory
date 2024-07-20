@@ -204,7 +204,7 @@ StartupEvents.registry("block", event => {
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/netherite/casing')})
 
     event.create('omnic_matrix_coil_block', 'gtceu:coil')
-        .temperature(12500)
+        .temperature(15000)
         .level(24)
         .energyDiscount(16)
         .tier(9)

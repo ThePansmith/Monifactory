@@ -1,7 +1,7 @@
 //Pre Release
 ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('kubejs_fusion_crafting_core')
-        .itemInputs('gtceu:hsse_frame', '6x gtceu:tungsten_carbide_plate', '4x kubejs:mesol_core', '4x minecraft:nether_star', '2x gtceu:iv_sensor', '#gtceu:circuits/iv', '8x #forge:storage_blocks/lapis')
+        .itemInputs('gtceu:hsse_frame', '6x gtceu:tungsten_carbide_plate', '4x kubejs:mesol_core', '4x minecraft:nether_star', '2x gtceu:iv_sensor', '#gtceu:circuits/iv', '8x #forge:storage_blocks/diamatine_empowered')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('kubejs:reverberation_core')
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('kubejs:mesol_core').EUt(480).duration(1200))
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         'BCB',
         'ABA'
     ], {
-        A: "kubejs:mesol_core",
+        A: "kubejs:bathyal_core",
         B: "gtceu:restonia_empowered_block",
         C: "gtceu:lapotronic_energy_orb"
     }).id('kubejs:components/bathyal_energy_core')

@@ -153,9 +153,9 @@ ServerEvents.recipes(event => {
             L: 'kubejs:supercharged_laser_array',
             D: 'gtceu:double_cryolobus_plate',
             G: 'kubejs:advanced_micro_miner_guidance_system',
-            P: 'kubejs:energy_core_stabilizer',
+            P: 'kubejs:bathyal_energy_core',
             A: 'gtceu:luv_field_generator',
-            E: 'kubejs:ender_energy_manipulator', // TODO: REPLACE WITH REAL DE COMPONENT
+            E: 'kubejs:reverberation_core',
             W: 'kubejs:warp_engine'
         }
     )
@@ -380,8 +380,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('warp_engine')
         .itemInputs('gtceu:microversium_frame',
             '6x gtceu:enderium_plate',
-            'ae2:quantum_ring', 
-            '4x ae2:quantum_link',
+            '8x ae2:quantum_ring', 
+            'ae2:quantum_link',
             '2x #forge:plates/crystal_matrix',
             '2x gtceu:iv_field_generator',
             Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT(),
