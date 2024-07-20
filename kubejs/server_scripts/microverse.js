@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
             '  QQAQQ  ',
             ' QQQQQQQ ',
             'QQBQRQBQQ',
-            ' QQQCQQQ ',
+            ' QQQQQQQ ',
             ' QQQQQQQ ',
             'QQ W W QQ'
         ], {
@@ -204,9 +204,8 @@ ServerEvents.recipes(event => {
             U: 'kubejs:universal_navigator',
             A: 'gtceu:uv_field_generator',
             B: 'gtceu:ev_super_chest',
-            R: 'kubejs:reactor_stabilizer',
-            C: 'kubejs:reactor_core',
-            W: 'kubejs:warp_engine'
+            R: 'kubejs:abyssal_energy_core',
+            W: 'kubejs:hadal_warp_engine'
         }
     )
 
@@ -218,19 +217,18 @@ ServerEvents.recipes(event => {
             ' NUN NUN ',
             ' NNN NNN ',
             ' NNN NNN ',
-            ' NCNNNCN ',
+            ' NNNNNNN ',
             'PNRN NRNP',
             'NNNNANNNN',
             ' N NNN N ',
-            'N  W W  N'
+            'NW W W WN'
         ], {
             N: 'kubejs:universe_resistant_neutronium_heavy_plating',
             U: 'kubejs:universal_navigator',
-            C: 'kubejs:reactor_core',
+            R: 'kubejs:abyssal_energy_core',
             P: 'solarflux:sp_custom_neutronium',
-            R: 'kubejs:reactor_stabilizer',
             A: 'gtceu:iv_quantum_chest',
-            W: 'kubejs:warp_engine'
+            W: 'kubejs:hadal_warp_engine'
         }
     )
 
@@ -252,7 +250,7 @@ ServerEvents.recipes(event => {
             O: 'kubejs:elementally_infused_omnic_matrix_heavy_plating',
             M: 'gtceu:crystal_matrix_plate',
             P: 'solarflux:sp_custom_neutronium',
-            W: 'kubejs:warp_engine',
+            W: 'kubejs:hadal_warp_engine',
             A: 'gtceu:uev_robot_arm',
             C: 'gtceu:uhv_quantum_chest',
             N: 'kubejs:universal_navigator',
@@ -279,9 +277,9 @@ ServerEvents.recipes(event => {
             E: 'kubejs:extradimensional_navigator',
             P: 'solarflux:sp_custom_infinity',
             C: 'gtceu:uhv_quantum_chest',
-            W: 'kubejs:warp_engine',
+            W: 'kubejs:hadal_warp_engine',
             D: 'kubejs:infinity_power_unit',
-            S: 'kubejs:reactor_stabilizer',
+            S: 'gtceu:dense_netherite_plate',
             Q: 'kubejs:field_stabilised_omnic_pulsar_compound'
         }
     )

@@ -16,15 +16,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(30720)
 
-    event.recipes.gtceu.assembly_line('reactor_prt_stab_frame')
-        .itemInputs('6x nuclearcraft:plate_elite', 'kubejs:abyssal_core', 'gtceu:cryococcus_gear', 'gtceu:cryococcus_frame', '2x gtceu:zpm_emitter', '2x gtceu:zpm_sensor')
-        .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('kubejs:reactor_prt_stab_frame')
-        .stationResearch(b => b.researchStack('gtceu:cryococcus_frame').CWUt(96,384000))
-        .duration(750)
-        .EUt(491520)
-
-
 
     event.shaped('kubejs:mesol_core', [
         'ABA',
