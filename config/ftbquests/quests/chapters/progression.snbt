@@ -1197,7 +1197,7 @@
 				""
 				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor Mark 2&r using the Duranium and molten &9Titanium&r."
 				""
-				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into the &aCrafting Calculator&r."
+				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into &aEMI&r."
 			]
 			disable_toast: true
 			id: "46CD6750E8963351"
@@ -1598,7 +1598,7 @@
 				item: "gtceu:max_machine_hull"
 				type: "item"
 			}]
-			title: "&9Max Circuit"
+			title: "&9MAX Circuit"
 			x: 7.25d
 			y: 11.0d
 		}
@@ -1721,7 +1721,7 @@
 				"2343B68110805282"
 				"434142F777A2CCBE"
 			]
-			description: ["The final processing unit, these require ultimate gems."]
+			description: ["The final processing unit, these require &6Ultimate Gems&r."]
 			id: "7979D07FBDC6D170"
 			tasks: [{
 				id: "3B038F650DFA2526"
@@ -2661,11 +2661,6 @@
 			]
 			description: ["With &6Enderium&r, you can assemble a &6Crystal Processor Supercomputer&r."]
 			id: "26CA20E74A62FA6E"
-			rewards: [{
-				id: "72BB8009C757EA33"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "24CC69AAE2D715C1"
@@ -2850,7 +2845,11 @@
 		}
 		{
 			dependencies: ["23A57C125DC0F948"]
-			description: ["[MISSING DESCRIPTION]"]
+			description: [
+				"The prelude to the final coil tier. "
+				""
+				"Traditionally made by combining 9 &9Omnium Nuggets&r into an ingot, but by the time you are making &6Omnic Matrix Coils&r, you will probably already have the &3Creative Quantum Tank&r and be able to simply solidify all the required ingots."
+			]
 			id: "6DF2C1E88BE7CE5F"
 			shape: "hexagon"
 			tasks: [{

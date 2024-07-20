@@ -899,7 +899,7 @@
 		{
 			dependencies: ["60BC08DE447E5007"]
 			description: [
-				"The ultimate item storage component in &bApplied Energistics&r."
+				"The ultimate item storage component in base &bApplied Energistics&r."
 				""
 				"These have a massive capacity, hundreds of times that of a &61k ME Storage Component&r."
 			]
@@ -1424,6 +1424,73 @@
 			title: "&9Pattern P2P"
 			x: 2.5d
 			y: 7.0d
+		}
+		{
+			dependencies: [
+				"241FADD2C751BE74"
+				"4FAFF184242F5EB8"
+			]
+			description: [
+				"If somehow being able to store over a million items in a single &9256k Item Storage Cell&r isn't enough for you, there is now &eMEGA Cells&r!"
+				""
+				"&eMEGA Cells&r go up to 256M bytes, allowing them to store an insane amount of items. You will need high end materials to make the housings for these cells."
+			]
+			id: "31A4355401B03644"
+			rewards: [{
+				id: "51D92E40EA9356F3"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "125C5CCA8906DC11"
+				item: "megacells:cell_component_1m"
+				type: "item"
+			}]
+			title: "MEGA Cells"
+			x: 7.25d
+			y: -8.0d
+		}
+		{
+			dependencies: ["295E3D32083676E6"]
+			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Accumulation Processor."]
+			id: "4FAFF184242F5EB8"
+			rewards: [{
+				id: "444FF1C6F8EEB5AF"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "&6Logic Processors&r are made from a &6Black Steel Plate&r, a &6Silicon Plate&r, and any tier three circuit."
+			tasks: [{
+				id: "4B2E214B3A13DCD5"
+				item: "megacells:accumulation_processor"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4FAFF184242F5EB8"
+				"4A96659253CCFACF"
+			]
+			description: [
+				"For the big autocrafters. "
+				""
+				"These Crafting Units can be crafted with &eMEGA Cell Storage Components&r to make even larger crafting units, or can be crafted with &6Engineering Processors&r and &6Standard AE2 Storage Components&r to make denser &9Crafting Co-Processors&r."
+			]
+			id: "0C08F09EBCDFDAD0"
+			rewards: [{
+				id: "23F41A3707BE058F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DE29491688CFFFB"
+				item: "megacells:mega_crafting_unit"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 2.5d
 		}
 	]
 	title: "Matter-Energy"

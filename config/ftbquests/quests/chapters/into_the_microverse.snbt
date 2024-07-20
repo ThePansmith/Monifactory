@@ -385,8 +385,6 @@
 		{
 			dependencies: ["56FB624B384FFAF5"]
 			description: [
-				"&2This is new to CEu! Before, you could only distil Liquid Air."
-				""
 				"&9Ender Air&r, collected from a &3Gas Collector&r, can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Ender Air&r."
 				""
 				"&9Liquid Ender Air&r can be sent into a &2Distillation Tower&r to break it down into its components."
@@ -1062,7 +1060,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["131EAE1541E9C780"]
+			dependencies: [
+				"131EAE1541E9C780"
+				"6A8764DDD3489EE8"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Place down a &6Waystone&r and set a memorable name and enable &6Global&r if you want other players to access it, in order to be able to easily warp to that location, either using a &6Warp Scroll&r, a &6Warp Stone&r or a second Waystone."]
 			icon: "waystones:waystone"
 			id: "5EB185AD9BD0D069"
@@ -1081,6 +1083,18 @@
 			title: "Thinking with Waystones"
 			x: 9.0d
 			y: -6.0d
+		}
+		{
+			description: ["Waystones also &anaturally generate&r across the world, so nothing is stopping you from simply roaming around and stealing Waystones for your own needs."]
+			icon: "minecraft:ender_eye"
+			id: "6A8764DDD3489EE8"
+			tasks: [{
+				id: "096445386AE9F109"
+				type: "checkmark"
+			}]
+			title: "You Can Also Find One!"
+			x: 9.0d
+			y: -8.5d
 		}
 	]
 	title: "Into The Microverse"

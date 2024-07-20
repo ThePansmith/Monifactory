@@ -262,6 +262,8 @@
 				"* Dense Coal Ore"
 				"* Dense Emerald Ore"
 				"* Dense Redstone Ore&r"
+				""
+				"Eventually, when you unlock the &aHyperbolic Microverse Projector&r, you can also use it to gain a massive amount of &bStellar Creation Data&r at once."
 			]
 			id: "15DBB22E3DC0AFB7"
 			rewards: [{
@@ -900,6 +902,8 @@
 				"&6* Boron Dust"
 				"* Molybdenite Ore"
 				"* Beryllium Ore"
+				""
+				"This microminer will also be important much later, as the sole source of &2Stabilized Oganesson&r."
 			]
 			id: "023197AB7CDBDD6E"
 			rewards: [{
@@ -984,8 +988,8 @@
 				}
 			]
 			title: "Automating Extended Crafting"
-			x: 6.0d
-			y: 3.0d
+			x: 11.25d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1139,6 +1143,12 @@
 				"&2* Uraninite Ore"
 				"* Iridosmine 80/20 Ore"
 				"* Osmiridium 80/20 Ore"
+				""
+				"Once you reach the &aHyperbolic Microverse Projector&r, this microminer can also get the following:"
+				""
+				"&6* Perfect Diamonds"
+				"&6* Perfect Rubies"
+				"&6* Perfect Cinnabar"
 			]
 			id: "49B872B193268554"
 			rewards: [{
@@ -1203,7 +1213,10 @@
 			y: 20.25d
 		}
 		{
-			dependencies: ["49B872B193268554"]
+			dependencies: [
+				"49B872B193268554"
+				"62AC7103FF9D25FD"
+			]
 			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
 			icon: "kubejs:mote_of_omnium"
 			id: "7A7FFE9E89D19A2F"
@@ -1238,7 +1251,7 @@
 			description: [
 				"&2Upgraded forms of the EBF and Vacuum Freezer.&r"
 				""
-				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e256x&r with the best hatch!."
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!."
 				""
 				"The &aRotary Hearth Furnace&r is quite big!"
 			]
@@ -1799,7 +1812,7 @@
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"&9Sculk Cores&r are the first crafting step into &9Hypogen Infusion&r."
+				"&9Mesol Cores&r are the first crafting step into &9Hypogen Infusion&r."
 				""
 				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &9Sculk&r."
 			]
@@ -1815,7 +1828,7 @@
 				item: "kubejs:mesol_core"
 				type: "item"
 			}]
-			title: "&9Sculk Cores"
+			title: "&9Mesol Cores"
 			x: 25.25d
 			y: 8.25d
 		}
@@ -1896,7 +1909,7 @@
 		}
 		{
 			dependencies: ["713FAECEE5046121"]
-			description: ["&9Echo Cores&r are the second tier of core, used for intermediate crafting recipes."]
+			description: ["&9Bathyal Cores&r are the second tier of core, used for intermediate crafting recipes."]
 			id: "20CB8F878CADA235"
 			rewards: [{
 				id: "6C1605F1E280EA28"
@@ -1909,7 +1922,7 @@
 				item: "kubejs:bathyal_core"
 				type: "item"
 			}]
-			title: "&9Echo Cores"
+			title: "&9Bathyal Cores"
 			x: 27.25d
 			y: 10.25d
 		}
@@ -1964,7 +1977,7 @@
 				"6391447F1A411281"
 			]
 			description: [
-				"The main source of &9Abyss Shards&r."
+				"The main source of &9Hadal Shards&r."
 				""
 				"&9This microminer is also to bring back Ender dragon eggs and Ender dragon scales, as well as neutronium, depending on the mission&r."
 			]
@@ -2036,7 +2049,7 @@
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"&6Resonant Cores&r are the third tier of &bSculk&r core, and are common components of endgame recipes."
+				"&6Abyssal Cores&r are the third tier of &bSculk&r core, and are common components of endgame recipes."
 				""
 				"These cores are made with &6Cryococcus&r and also cost &e3 Billion RF&r to craft."
 			]
@@ -2052,7 +2065,7 @@
 				item: "kubejs:abyssal_core"
 				type: "item"
 			}]
-			title: "&9Resonant Core"
+			title: "&9Abyssal Core"
 			x: 25.25d
 			y: 21.0d
 		}
@@ -2090,6 +2103,8 @@
 				"Combines &bStellar Creation Data&r into the &9Universe Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
 				""
 				"The alternate mission brings a decent quantity of &6Neutronium&r. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
+				""
+				"The Tier Nine Micro Miner will also be important in the Post-Tank game, as it will be your main source of &9Quasi-Stable Neutron Stars&r."
 			]
 			id: "6BF4A76C5B84EEE9"
 			rewards: [{
@@ -2133,7 +2148,7 @@
 		{
 			dependencies: ["03F04B4005F2CBE1"]
 			description: [
-				"&6Abyss Shards&r are a component in &bHypogean infusion&r."
+				"&6Hadal Shards&r are a component in &bHypogean infusion&r."
 				""
 				"They are the base material for abyssal Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Warden Data&r."
 			]
@@ -2145,11 +2160,11 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "31B73CD828CA2128"
-				item: "kubejs:abyss_shard"
+				id: "5E20DE67BAF768B6"
+				item: "kubejs:hadal_shard"
 				type: "item"
 			}]
-			title: "&9Abyss Shards"
+			title: "&9Hadal Shards"
 			x: 27.25d
 			y: 21.0d
 		}
@@ -2209,7 +2224,7 @@
 			description: [
 				"The highest tier of hypogean infusion injectors, used to bring sculk to the lowest temptures. You will these to reach the &9Creative Tank&r."
 				""
-				"Each injector requires four ingots of &6Neutronium&r and four &6Abyss Shards&r, as well as two &6Crystal Matrix&r blocks."
+				"Each injector requires four ingots of &6Neutronium&r and four &6Hadal Shards&r, as well as two &6Crystal Matrix&r blocks."
 				""
 				"Hope you've got those Tier Eight Micro Miners automated."
 			]
@@ -2462,8 +2477,8 @@
 				type: "item"
 			}]
 			title: "&2Implosion Compressor"
-			x: 19.25d
-			y: 1.0d
+			x: 5.9375d
+			y: 24.0625d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
@@ -2480,8 +2495,8 @@
 				item: "minecraft:tnt"
 				type: "item"
 			}]
-			x: 19.25d
-			y: -0.5d
+			x: 3.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["49D33146A1F417E8"]
@@ -2703,13 +2718,13 @@
 				}
 			]
 			title: "PackagedAuto"
-			x: 9.0d
-			y: 3.0d
+			x: 13.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
-				"15DBB22E3DC0AFB7"
 				"555BEBF7FD6012B7"
+				"7615FABC8B262803"
 			]
 			description: [
 				"This is the largest Extended Crafting Table, capable of handling 9x9 recipes."
@@ -2725,8 +2740,8 @@
 				type: "item"
 			}]
 			title: "&9Ultimate Crafting Table"
-			x: 6.0d
-			y: 1.0d
+			x: 9.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7A7FFE9E89D19A2F"]
