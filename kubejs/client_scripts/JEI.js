@@ -82,11 +82,12 @@ JEIEvents.hideItems(event => {
     event.hide(['gtceu:restonia_perfect', 'gtceu:exquisite_restonia_gem', 'gtceu:restonia_dust', 'gtceu:tiny_restonia_dust', 'gtceu:flawless_restonia_gem', 'gtceu:restonia_rod', 'gtceu:restonia_plate', 'gtceu:small_restonia_dust', 'gtceu:palis_perfect', 'gtceu:exquisite_palis_gem', 'gtceu:palis_dust', 'gtceu:tiny_palis_dust', 'gtceu:flawless_palis_gem', 'gtceu:palis_rod', 'gtceu:palis_plate', 'gtceu:small_palis_dust'])
 
     //NuclearCraft
-    event.hide(['nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
+    event.hide(['nuclearcraft:diosmeter', 'nuclearcraft:steel_frame', 'nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
     event.hide(['nuclearcraft:nitrogen_collector', 'nuclearcraft:compact_nitrogen_collector', 'nuclearcraft:lava_collector', 'nuclearcraft:dense_nitrogen_collector', 'nuclearcraft:compact_helium_collector', 'nuclearcraft:helium_collector', 'nuclearcraft:dense_helium_collector'])
     event.hide(['nuclearcraft:magnesium_deepslate_ore', 'nuclearcraft:thorium_deepslate_ore', 'nuclearcraft:uranium_deepslate_ore', 'nuclearcraft:magnesium_ore', 'nuclearcraft:boron_deepslate_ore', 'nuclearcraft:cobalt_ore', 'nuclearcraft:platinum_deepslate_ore', 'nuclearcraft:silver_deepslate_ore', 'nuclearcraft:lead_ore', 'nuclearcraft:lithium_ore', 'nuclearcraft:thorium_ore', 'nuclearcraft:tin_ore', 'nuclearcraft:cobalt_deepslate_ore', 'nuclearcraft:silver_ore', 'nuclearcraft:uranium_ore', 'nuclearcraft:zinc_ore', 'nuclearcraft:boron_ore', 'nuclearcraft:lithium_deepslate_ore'])
     event.hide(['nuclearcraft:foursmore', 'nuclearcraft:evenmoresmore', 'nuclearcraft:moresmore', 'nuclearcraft:smore'])
     event.hide(/^nuclearcraft:.*_bucket/i)
+    event.hide(/nuclearcraft:upgrade_.*/)
     event.hide(/nuclearcraft:.*_ingot/)
     event.hide(/nuclearcraft:.*_.*_ingot/)
     event.hide(/nuclearcraft:.*_plate/)
@@ -111,6 +112,9 @@ JEIEvents.hideItems(event => {
 	event.hide(/nuclearcraft:turbine.*/)
 	event.hide(/nuclearcraft:.*_container/)
 	event.hide(/nuclearcraft:niobium_tin_.*/)
+    event.hide(/nuclearcraft:fusion.*/)
+    event.hide(/water_collector/);
+    event.hide(/nuclearcraft:.*electromagnet.*/)
 	// Hides all unused blocks
 	event.hide(['nuclearcraft:empty_active_heat_sink', 'nuclearcraft:villiaumite_heat_sink', 'nuclearcraft:carobbiite_heat_sink', 'nuclearcraft:empty_frame', 'nuclearcraft:supercooler', 'nuclearcraft:steel_block', 'nuclearcraft:electrum_block', 'nuclearcraft:supercold_ice_block', 'nuclearcraft:magnesium_block', 'nuclearcraft:cobalt_block', 'nuclearcraft:aluminum_block', 'nuclearcraft:graphite_block', 'nuclearcraft:lead_block', 'nuclearcraft:bronze_block', 'nuclearcraft:californium250_block', 'nuclearcraft:lithium_block', 'nuclearcraft:platinum_block', 'nuclearcraft:thorium_block', 'nuclearcraft:americium241_block', 'nuclearcraft:plutonium238_block', 'nuclearcraft:tin_block', 'nuclearcraft:beryllium_block', 'nuclearcraft:uranium238_block', 'nuclearcraft:silver_block', 'nuclearcraft:uranium_block', 'nuclearcraft:zirconium_block', 'nuclearcraft:zinc_block', 'nuclearcraft:boron_block', ])
 	// Hides all unused items

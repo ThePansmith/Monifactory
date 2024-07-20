@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
 
-    event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/copper'] })
+
+    // Snad
     event.remove('snad:snadrecipe')
     event.remove('snad:red_snad')
     //Extended Crafting
@@ -22,7 +23,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'thermal:rubber' })
     event.remove({ output: 'thermal:cured_rubber' })
     event.remove({ input: 'forge:nuggets/netherite'})
-
+    event.remove({ id: 'thermal:gunpowder_4' })
     //Redstone arsenal
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_smelting' })
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_blasting' })
@@ -37,6 +38,7 @@ ServerEvents.recipes(event => {
     // Misc broken recipes
     event.remove({ id: 'minecraft:netherite_spikes_smithing' })
     event.remove({ id: 'storagedrawers:conversion_upgrade' })
+    event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/copper'] })
 
     // Angel Ring
     event.remove({ id: 'better_angel_ring:angel_ring' })
@@ -47,7 +49,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['gtceu:restonia_perfect', 'gtceu:exquisite_restonia_gem', 'gtceu:restonia_dust', 'gtceu:tiny_restonia_dust', 'gtceu:flawless_restonia_gem', 'gtceu:restonia_rod', 'gtceu:restonia_plate', 'gtceu:small_restonia_dust', 'gtceu:palis_perfect', 'gtceu:exquisite_palis_gem', 'gtceu:palis_dust', 'gtceu:tiny_palis_dust', 'gtceu:flawless_palis_gem', 'gtceu:palis_rod', 'gtceu:palis_plate', 'gtceu:small_palis_dust'] })
 
     //NC
-    event.remove({ output: ["nuclearcraft:hard_carbon_ingot"] });
+    event.hide(/nuclearcraft:fusion.*/)
+    event.hide(/nuclearcraft:.*electromagnet.*/)
+    event.remove({ output: /water_collector/ });
     event.remove({ output: ["nuclearcraft:tough_alloy_ingot"] });
     //JAVD
     event.remove({ output: ["javd:portal_block"] });
