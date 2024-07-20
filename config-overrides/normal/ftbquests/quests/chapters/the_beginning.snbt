@@ -550,8 +550,6 @@
 				"&6Pulsating Dust&r is a mysterious magical material that taps into the power of Ender. It has all sorts of strange and potentially dangerous applications, including the ability to make &6Pulsating Ingots&r and &6Ender Pearls&r."
 				""
 				"Your first source of Pulsating Dust is &6Uraninite&r, which you can get from &6Uraninite Ore&r. Later on, you'll be able to produce Pulsating Dust by smelting &6Resonant Clathrates&r."
-				""
-				"&cPlease note that the Enderpearl Dust electrolysis recipe requires an EV Electrolyzer, and is most likely not worth it.&r"
 			]
 			icon: "kubejs:pulsating_dust"
 			id: "30EBD4E7BBFFEF2C"
@@ -1104,23 +1102,11 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [
-				{
-					id: "39AA9BBDCACBC109"
-					item: "ae2:charger"
-					type: "item"
-				}
-				{
-					id: "04AC6A5A46C16692"
-					item: "gtceu:certus_quartz_gem"
-					type: "item"
-				}
-				{
-					id: "11C67D466485AF01"
-					item: "gtceu:charged_certus_quartz_gem"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "39AA9BBDCACBC109"
+				item: "ae2:charger"
+				type: "item"
+			}]
 			title: "Charging Quartz"
 			x: 10.5d
 			y: -3.0d

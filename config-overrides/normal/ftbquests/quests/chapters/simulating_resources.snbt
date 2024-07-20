@@ -5,7 +5,7 @@
 	group: ""
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
-	order_index: 3
+	order_index: 4
 	quest_links: [
 		{
 			id: "1344E3300C29A4CF"
@@ -82,7 +82,7 @@
 				""
 				"Paired with a self-sustaining &bDeep Mob Evolution&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
 				""
-				"Just like other &bThermal Expansion&r dynamos, the &6Numismatic Dynamo&r can be given tier upgrades to produce more power and gain access to more &aAugment Slots&r."
+				"Just like other &bThermal Expansion&r dynamos, the &6Numismatic Dynamo&r can be given &eAugments&r to produce more power."
 			]
 			id: "6FDF37EE046349F7"
 			rewards: [{
@@ -553,8 +553,6 @@
 		{
 			dependencies: ["7A67E519745A8361"]
 			description: [
-				"&2This is new to CEu! Before, you could only distill Liquid Air."
-				""
 				"&9Nether Air&r, collected from &3Gas Collectors&r, can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Nether Air&r."
 				""
 				"&9Liquid Nether Air&r can be sent into a &2Distillation Tower&r to break it down into its components."
