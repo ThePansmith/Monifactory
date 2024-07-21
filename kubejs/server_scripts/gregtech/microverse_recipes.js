@@ -561,8 +561,8 @@ ServerEvents.recipes(event => {
         .EUt(1000000)
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_twelve_first')
-        .itemInputs('kubejs:microminer_t12', '32x gtceu:infinity_ingot', '4x kubejs:universe_creation_data')
-        .itemOutputs('32x gtceu:monium_ingot')
+        .itemInputs('kubejs:microminer_t12', '64x gtceu:infinity_ingot', '4x kubejs:universe_creation_data')
+        .itemOutputs('64x gtceu:monium_ingot')
         .duration(1200)
         .EUt(32000000)
 })

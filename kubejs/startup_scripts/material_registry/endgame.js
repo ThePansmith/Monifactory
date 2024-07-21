@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x66ffff)
         .iconSet('shiny')
         .fluidPipeProperties(100000, 64000, true, true, true, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR); // yeah you can smash the plates
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_DENSE); // yeah you can smash the plates
         
     event.create("omnium")
         .ingot()

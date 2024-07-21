@@ -159,6 +159,26 @@ ServerEvents.recipes(event => {
         .EUt(250000)
         .blastFurnaceTemp(9000)
 
+    event.recipes.gtceu.electric_blast_furnace("universe_resistant_neutronium_heavy_plating")
+        .itemInputs('gtceu:neutronium_plate', '2x kubejs:mote_of_omnium', '16x gtceu:quantum_eye')
+        .inputFluids('gtceu:xenon 1000')
+        .itemOutputs('kubejs:universe_resistant_neutronium_heavy_plating')
+        .duration(200)
+        .EUt(250000)
+        .blastFurnaceTemp(10000)
+
+    event.recipes.gtceu.omnic_forge("elementally_infused_omnic_matrix_heavy_plating")
+        .itemInputs('4x gtceu:omnium_plate', 'gtceu:dense_crystal_matrix_plate', 'gtceu:gravi_star', '4x gtceu:neutron_reflector', '16x kubejs:primal_mana')
+        .itemOutputs('kubejs:elementally_infused_omnic_matrix_heavy_plating')
+        .duration(100)
+        .EUt(1000000)
+
+    event.recipes.gtceu.omnic_forge("dimensionally_stabilized_infinity_heavy_plating")
+        .itemInputs('gtceu:infinity_plate', 'gtceu:dense_netherite_plate', 'kubejs:quasi_stable_neutron_star', '8x gtceu:neutron_reflector', '16x kubejs:the_ultimate_material')
+        .itemOutputs('kubejs:dimensionally_stabilized_infinity_heavy_plating')
+        .duration(100)
+        .EUt(4000000)
+
     // Mote of omnium
     event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
         .itemInputs('kubejs:mote_of_omnium', 'minecraft:tnt')

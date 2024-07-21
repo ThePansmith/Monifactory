@@ -287,8 +287,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('F', Predicates.blocks("gtceu:berkelium_frame"))
                 .where('G', Predicates.blocks("gtceu:fusion_glass"))
                 .where('T', Predicates.blocks("gtceu:taranium_block"))
-                .where('B', Predicates.blocks("kubejs:reactor_stabilizer"))
-                .where('R', Predicates.blocks("kubejs:reactor_core"))
+                .where('B', Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
+                .where('R', Predicates.blocks("kubejs:enderium_micro_miner_core"))
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
                 "gtceu:block/multiblock/implosion_compressor", false)

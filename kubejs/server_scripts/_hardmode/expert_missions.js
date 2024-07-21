@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
                 F: 'gtceu:zpm_field_generator',
                 E: 'gtceu:zpm_emitter',
                 C: 'kubejs:energy_core',
-                S: 'kubejs:reactor_prt_stab_frame',
+                S: 'gtceu:naquadah_alloy_frame',
                 Q: 'gtceu:luv_quantum_chest',
                 W: 'kubejs:warp_core',
                 C: 'kubejs:warp_controller',

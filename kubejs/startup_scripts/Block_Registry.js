@@ -14,6 +14,8 @@ StartupEvents.registry("block", event => {
     event.create('double_compressed_red_sand').displayName("Double Compressed Red Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING);
     event.create('warp_core').displayName("Warp Core").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
     event.create('warp_controller').displayName("Warp Controller").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
+    event.create('universal_warp_core').displayName("Universal Warp Core").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
+    event.create('universal_warp_controller').displayName("Universal Warp Controller").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
 
     // Micro Miner Cores
     event.create('electrum_micro_miner_core')
@@ -63,24 +65,6 @@ StartupEvents.registry("block", event => {
 
     event.create('enderium_micro_miner_frame')
         .displayName("Enderium Micro Miner Engine Frame")
-        .soundType('metal')
-        .resistance(5)
-        .hardness(5)
-        .tagBlock("mineable/pickaxe")
-        .requiresTool(true)
-        .defaultCutout();
-
-    event.create('reactor_stabilizer')
-        .displayName("Reactor Stabilizer")
-        .soundType('metal')
-        .resistance(5)
-        .hardness(5)
-        .tagBlock("mineable/pickaxe")
-        .requiresTool(true)
-        .defaultCutout();
-    
-    event.create('reactor_core')
-        .displayName("Reactor Core")
         .soundType('metal')
         .resistance(5)
         .hardness(5)
@@ -204,7 +188,7 @@ StartupEvents.registry("block", event => {
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/netherite/casing')})
 
     event.create('omnic_matrix_coil_block', 'gtceu:coil')
-        .temperature(12500)
+        .temperature(15000)
         .level(24)
         .energyDiscount(16)
         .tier(9)

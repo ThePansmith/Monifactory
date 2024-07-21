@@ -23,9 +23,21 @@ StartupEvents.registry('item', event => {
     event.create('advanced_micro_miner_guidance_system').displayName("§eAdvanced Micro Miner Guidance System")
     event.create('reinforced_mining_laser').displayName("§bReinforced Mining Laser")
     event.create('warp_engine').displayName("§dWarp Engine")
+    event.create('hadal_warp_engine').displayName("§dHadal Warp Engine")
     event.create('universal_navigator').displayName("§dUniversal Navigator")
     event.create('extradimensional_navigator').displayName("§dExtradimensional Navigator")
-    event.create('quantum_fluxed_eternium_heavy_plating').displayName("§dQuantum Fluxed Eternium Heavy Plating")
+    event.create('quantum_fluxed_eternium_heavy_plating')
+        .displayName("§dQuantum Fluxed Eternium Heavy Plating")
+        .texture("kubejs:item/microverse/eternium_heavy_plating")
+    event.create('universe_resistant_neutronium_heavy_plating')
+        .displayName("§dUniverse Resistant Neutronium Heavy Plating")
+        .texture("kubejs:item/microverse/neutronium_heavy_plating")
+    event.create('elementally_infused_omnic_matrix_heavy_plating')
+        .displayName("§dElementally Infused Omnic Matrix Heavy Plating")
+        .texture("kubejs:item/microverse/omnic_matrix_heavy_plating")
+    event.create('dimensionally_stabilized_infinity_heavy_plating')
+        .displayName("§dDimensionally Stabilized Infinity Heavy Plating")
+        .texture("kubejs:item/microverse/infinity_heavy_plating")
     event.create('quantum_flux').displayName("§dQuantum Flux")
     event.create('gem_sensor').displayName("Gemstone Sensor")
 
@@ -130,7 +142,6 @@ StartupEvents.registry('item', event => {
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
     event.create('ender_star').displayName('§dEnder Star').glow(true)
     event.create('endest_star').displayName('§dEndest Star').glow(true)
-    event.create('ender_energy_manipulator').displayName('Ender Energy Manipulator').glow(true)
 
     //Jetpack Units
     event.create('empty_fluxed_jetpack_unit').displayName('Empty Fluxed Jetpack Unit')
@@ -200,9 +211,6 @@ StartupEvents.registry('item', event => {
     event.create('abyssal_core')
     event.create('hadal_core')
     event.create('reverberation_core')
-    event.create('energy_core_stabilizer')
-    event.create('particle_generator')
-    event.create('reactor_prt_stab_frame')
     event.create('abyssal_energy_core')
     event.create('bathyal_energy_core')
     event.create('warden_heart')
@@ -214,7 +222,6 @@ StartupEvents.registry('item', event => {
     event.create('infinity_wrench').rarity("epic")
     event.create('infinity_wire_cutter').rarity("epic")
     event.create('infinity_power_unit').rarity("epic")
-    event.create('omni_motor').rarity("epic")
 
     // Ultimate Tools
     event.create('ultimate_core').texture('kubejs:item/ultimate/core')
