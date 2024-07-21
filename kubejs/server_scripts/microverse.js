@@ -213,14 +213,14 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.shaped_table(
         'kubejs:microminer_t10', [
+            '   N N   ',
             '  NN NN  ',
-            ' NNN NNN ',
-            ' NUN NUN ',
-            ' NNN NNN ',
-            ' NCNNNCN ',
-            'PNRN NRNP',
-            'NNNNANNNN',
-            ' N NNN N ',
+            '  NN NN  ',
+            '  NN NN  ',
+            ' NUNNNUN ',
+            'PNCN NCNP',
+            'NNRNANRNN',
+            ' NNNNNNN ',
             'NW W W WN'
         ], {
             N: 'kubejs:universe_resistant_neutronium_heavy_plating',
