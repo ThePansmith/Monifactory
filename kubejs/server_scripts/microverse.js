@@ -213,11 +213,11 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.shaped_table(
         'kubejs:microminer_t10', [
-            '  N   N  ',
+            '  NN NN  ',
+            ' NNN NNN ',
             ' NUN NUN ',
             ' NNN NNN ',
-            ' NNN NNN ',
-            ' NNNNNNN ',
+            ' NCNNNCN ',
             'PNRN NRNP',
             'NNNNANNNN',
             ' N NNN N ',
@@ -225,7 +225,8 @@ ServerEvents.recipes(event => {
         ], {
             N: 'kubejs:universe_resistant_neutronium_heavy_plating',
             U: 'kubejs:universal_navigator',
-            R: 'kubejs:abyssal_energy_core',
+            R: 'kubejs:warp_core',
+            C: 'kubejs:warp_controller',
             P: 'solarflux:sp_custom_neutronium',
             A: 'gtceu:iv_quantum_chest',
             W: 'kubejs:hadal_warp_engine'
@@ -240,9 +241,9 @@ ServerEvents.recipes(event => {
             '  OO M OO  ',
             ' POOMMMOOP ',
             ' OONMMMNOO ',
-            'POOOMCMOOOP',
-            'OOOOMIMOOOO',
-            'OOOOOOOOOOO',
+            'POOMMCMMOOP',
+            'OODMMIMMDOO',
+            'OOBMOOOMBOO',
             'OOOOW WOOOO',
             ' OOW   WOO ',
             ' W       W '
@@ -254,7 +255,9 @@ ServerEvents.recipes(event => {
             A: 'gtceu:uev_robot_arm',
             C: 'gtceu:uhv_quantum_chest',
             N: 'kubejs:universal_navigator',
-            I: 'kubejs:infinity_power_unit'
+            I: 'kubejs:infinity_power_unit',
+            B: 'kubejs:warp_core',
+            D: 'kubejs:warp_controller'
         }
     )
 
@@ -266,20 +269,21 @@ ServerEvents.recipes(event => {
             '    III    ',
             '   IISII   ',
             '  PISQSIP  ',
-            '  IIISIII  ',
-            ' IIIICIIII ',
-            'PIIDIIIDIIP',
-            'IIIII IIIII',
+            '  IIJSJII  ',
+            ' IIIJCJIII ',
+            'PIIDJJJDIIP',
+            'IIIJJ JJIII',
             'IIWW   WWII',
             'IW       WI'
         ], {
             I: 'kubejs:dimensionally_stabilized_infinity_heavy_plating',
+            J: 'kubejs:universe_resistant_neutronium_heavy_plating',
             E: 'kubejs:extradimensional_navigator',
             P: 'solarflux:sp_custom_infinity',
             C: 'gtceu:uhv_quantum_chest',
             W: 'kubejs:hadal_warp_engine',
             D: 'kubejs:infinity_power_unit',
-            S: 'gtceu:dense_netherite_plate',
+            S: 'kubejs:dimensional_stabilization_netherite_casing',
             Q: 'kubejs:field_stabilised_omnic_pulsar_compound'
         }
     )

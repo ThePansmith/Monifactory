@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(9000)
 
     event.recipes.gtceu.electric_blast_furnace("universe_resistant_neutronium_heavy_plating")
-        .itemInputs('gtceu:neutronium_plate', '4x kubejs:mote_of_omnium', '16x gtceu:quantum_eye')
+        .itemInputs('gtceu:neutronium_plate', '2x kubejs:mote_of_omnium', '16x gtceu:quantum_eye')
         .inputFluids('gtceu:xenon 1000')
         .itemOutputs('kubejs:universe_resistant_neutronium_heavy_plating')
         .duration(200)
