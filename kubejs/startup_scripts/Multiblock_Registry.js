@@ -458,7 +458,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.blockTag(Tags.block("minecraft:doors")).setMaxGlobalLimited(4)))
             .where('C', Predicates.blockTag(Tags.block("minecraft:dirt"))
                 .or(Predicates.blocks("minecraft:farmland")))
-            .where("*", Predicates.air())
             .where("#", Predicates.any())
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
