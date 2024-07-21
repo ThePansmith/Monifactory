@@ -225,8 +225,8 @@ ServerEvents.recipes(event => {
         ], {
             N: 'kubejs:universe_resistant_neutronium_heavy_plating',
             U: 'kubejs:universal_navigator',
-            R: 'kubejs:warp_core',
-            C: 'kubejs:warp_controller',
+            R: 'kubejs:universal_warp_core',
+            C: 'kubejs:universal_warp_controller',
             P: 'solarflux:sp_custom_neutronium',
             A: 'gtceu:iv_quantum_chest',
             W: 'kubejs:hadal_warp_engine'
@@ -256,8 +256,8 @@ ServerEvents.recipes(event => {
             C: 'gtceu:uhv_quantum_chest',
             N: 'kubejs:universal_navigator',
             I: 'kubejs:infinity_power_unit',
-            B: 'kubejs:warp_core',
-            D: 'kubejs:warp_controller'
+            B: 'kubejs:universal_warp_core',
+            D: 'kubejs:universal_warp_controller'
         }
     )
 
@@ -375,6 +375,33 @@ ServerEvents.recipes(event => {
             H: 'gtceu:ev_machine_hull',
             M: 'gtceu:computer_monitor_cover',
             S: 'gtceu:ev_sensor'
+        }
+    )
+
+    // Warp Core
+    event.shaped(
+        'kubejs:universal_warp_core', [
+            'LTL',
+            'TNT',
+            'LTL'
+        ], {
+            L: 'gtceu:void_empowered_block',
+            N: 'kubejs:warp_core',
+            T: 'kubejs:bathyal_core'
+        }
+    )
+
+    // Warp Controller
+    event.shaped(
+        'kubejs:universal_warp_controller', [
+            'SMS',
+            'CHC',
+            'SCS'
+        ], {
+            C: '#gtceu:circuits/luv',
+            H: 'kubejs:warp_controller',
+            M: 'kubejs:abyssal_core',
+            S: 'gtceu:void_empowered_block'
         }
     )
 
