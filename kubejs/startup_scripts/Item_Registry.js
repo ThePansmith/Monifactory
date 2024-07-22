@@ -322,8 +322,6 @@ StartupEvents.registry('item', event => {
     for (const [name] of smds) {
         event.create(`complex_smd_${name}`)
             .displayName(`Complex SMD ${name.split('_').map(v => capitalize(v)).join(" ")}`)
-            .textureJson({ layer0: `gtceu:item/advanced_smd_${name}` })
-            .color(0, `#0080ff`)
     }
 
     // Monium
