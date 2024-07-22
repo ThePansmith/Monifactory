@@ -6,15 +6,54 @@ StartupEvents.registry('item', event => {
     event.create('microminer_t2').maxStackSize(16).texture("kubejs:item/microverse/microminer_t2")
     event.create('microminer_t3').maxStackSize(16).texture("kubejs:item/microverse/microminer_t3")
     event.create('microminer_t4').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4")
+    if (!isNormalMode) { 
+        event.create('microminer_t4half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
+    }
     event.create('microminer_t5').maxStackSize(16).texture("kubejs:item/microverse/microminer_t5")
     event.create('microminer_t6').maxStackSize(16).texture("kubejs:item/microverse/microminer_t6")
     event.create('microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7")
     event.create('microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8")
+    if (!isNormalMode) { 
+        event.create('microminer_t8half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
+    }
     event.create('microminer_t9').maxStackSize(16).texture("kubejs:item/microverse/microminer_t9")
     event.create('microminer_t10').maxStackSize(16).texture("kubejs:item/microverse/microminer_t10")
     // Sorry for this monstrosity of a line, it's the only way I got it to work
     event.create('microminer_t11').maxStackSize(16).parentModel("kubejs:item/microverse/microminer_t11").texture("kubejs:item/microverse/microminer_t11_base")
     event.create('microminer_t12').maxStackSize(16).texture("kubejs:item/microverse/microminer_t12")
+
+    
+    if (!isNormalMode) {
+        event.create('stabilized_microminer_t1').maxStackSize(16).texture("kubejs:item/microverse/microminer_t1").glow(true) // temporarily make stabilized miners just glow until new textures are made
+        event.create('stabilized_microminer_t2').maxStackSize(16).texture("kubejs:item/microverse/microminer_t2").glow(true)
+        event.create('stabilized_microminer_t3').maxStackSize(16).texture("kubejs:item/microverse/microminer_t3").glow(true)
+        event.create('stabilized_microminer_t4').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4").glow(true)
+        event.create('stabilized_microminer_t4half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half").glow(true)
+        event.create('stabilized_microminer_t5').maxStackSize(16).texture("kubejs:item/microverse/microminer_t5").glow(true)
+        event.create('stabilized_microminer_t6').maxStackSize(16).texture("kubejs:item/microverse/microminer_t6").glow(true)
+        event.create('stabilized_microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7").glow(true)
+        event.create('stabilized_microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8").glow(true)
+        event.create('stabilized_microminer_t8half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half").glow(true)
+        const pristine_matter = [
+            ['1', '#c0c0b0'],
+            ['2', '#f5f5f1'],
+            ['3', '#736055'],
+            ['4', '#f17d3d'],
+            ['4half', '#eef487'],
+            ['5', '#fccc6a'],
+            ['6', '#58a14e'],
+            ['7', '#173639'],
+            ['8', '#dcdbe4'],
+            ['8half', '#4ebcef']
+        ]
+    
+        for (const [tier, color] of pristine_matter) {
+            event.create(`pristine_matter_t${tier}`)
+                .textureJson({ layer0: 'kubejs:item/prediction' })
+                .color(0, color)
+                .glow(true);
+        }
+    }
 
     // Microminer Components
     event.create('basic_mining_laser').displayName("§eBasic Mining Laser")
@@ -56,6 +95,9 @@ StartupEvents.registry('item', event => {
     event.create('stone_widget_down').displayName("Stone Widget Down Side")
     event.create('alloy_widget').displayName("Alloy Widget")
     event.create('ender_widget').displayName("Ender Widget")
+    if (!isNormalMode) {
+        event.create('magnetron')
+    }
 
     //Space Items.
     event.create('radiation_layer').displayName("Radiaton Layer")
@@ -80,6 +122,9 @@ StartupEvents.registry('item', event => {
     
 
     // End Game Data
+    if (!isNormalMode) {
+        event.create('omnic_data')
+    }
     event.create('creative_tank_data').displayName("Creative Quantum Tank Data")
     event.create('creative_storage_data').displayName("Creative Storage Data")
     event.create('creative_data_hatch_data').displayName("Creative Data Hatch Data")
@@ -193,6 +238,10 @@ StartupEvents.registry('item', event => {
     event.create('energized_clathrate').rarity('uncommon')
     event.create('resonant_clathrate').rarity('rare')
 
+    if (!isNormalMode) {
+    	event.create('ender_spore')
+    }
+    
     //Thermal Augments
     //Very Hacky but whatever
     event.create('kubejs:redstone_transmission_coil')
