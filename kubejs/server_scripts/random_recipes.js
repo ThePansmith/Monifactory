@@ -2,6 +2,10 @@
 
 ServerEvents.recipes(event => {
 
+    // Remove dragon stuff IDK
+    event.remove({ output: 'minecraft:dragon_egg'})
+    event.remove({ output: 'minecraft:dragon_breath'})
+
     // snad
     event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snadrecipe')
     event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')

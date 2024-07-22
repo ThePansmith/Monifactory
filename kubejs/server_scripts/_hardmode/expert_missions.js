@@ -195,11 +195,11 @@ ServerEvents.recipes(event => {
                 '16x minecraft:ender_eye'
             )
             .itemOutputs(
-                '64x kubejs:dragon_lair_data',
-                '64x kubejs:dragon_lair_data',
-                '64x kubejs:dragon_lair_data',
-                '64x kubejs:dragon_lair_data',
-                'minecraft:dragon_head'
+                '64x kubejs:deep_dark_data',
+                '64x kubejs:deep_dark_data',
+                '64x kubejs:deep_dark_data',
+                '64x kubejs:deep_dark_data',
+                'minecraft:sculk_shrieker'
             )
             .duration(100*20)
             .EUt(30720)
