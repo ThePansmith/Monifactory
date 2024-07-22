@@ -276,6 +276,7 @@ ServerEvents.recipes(event => {
             'nuclearcraft:fuel_curium_lecm_243',
             'nuclearcraft:fuel_curium_hecm_243',
             'nuclearcraft:fuel_curium_lecm_245',
+            'nuclearcraft:fuel_curium_hecm_245',
             'nuclearcraft:fuel_curium_lecm_247',
             'nuclearcraft:fuel_curium_hecm_247',
             'nuclearcraft:fuel_berkelium_leb_248',
@@ -329,9 +330,8 @@ ServerEvents.recipes(event => {
     event.shaped('nuclearcraft:fuel_neptunium_hen_236', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:neptunium_236', B: 'nuclearcraft:neptunium_237' })
     event.shaped('nuclearcraft:fuel_neptunium_len_236', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:neptunium_236', B: 'nuclearcraft:neptunium_237' })
     event.shaped('nuclearcraft:fuel_plutonium_lep_239', ['ABB', 'BBB', 'BBB'], { A: 'gtceu:plutonium_ingot', B: 'nuclearcraft:plutonium_242' })
-    event.shaped('nuclearcraft:fuel_plutonium_lep_239', ['AAA', 'ABB', 'BBB'], { A: 'gtceu:plutonium_ingot', B: 'nuclearcraft:plutonium_242' })
     event.shaped('nuclearcraft:fuel_plutonium_lep_241', ['ABB', 'BBB', 'BBB'], { A: 'gtceu:plutonium_241_ingot', B: 'nuclearcraft:plutonium_242' })
-    event.shaped('nuclearcraft:fuel_plutonium_hep_239', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:plutonium_239', B: 'nuclearcraft:plutonium_242' })
+    event.shaped('nuclearcraft:fuel_plutonium_hep_239', ['AAA', 'ABB', 'BBB'], { A: 'gtceu:plutonium_ingot', B: 'nuclearcraft:plutonium_242' })
     event.shaped('nuclearcraft:fuel_plutonium_hep_241', ['AAA', 'ABB', 'BBB'], { A: 'gtceu:plutonium_241_ingot', B: 'nuclearcraft:plutonium_242' })
     event.shaped('nuclearcraft:fuel_americium_lea_242', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:americium_242', B: 'nuclearcraft:americium_243' })
     event.shaped('nuclearcraft:fuel_americium_hea_242', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:americium_242', B: 'nuclearcraft:americium_243' })
