@@ -105,4 +105,7 @@ ServerEvents.recipes(event => {
 
     // LaserIO
     event.remove({ output: ['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'] })
+
+    //Default Fluxed Electrum recipe (Redstone Arsenal)
+    event.remove({ id: 'redstone_arsenal:materials/flux_dust'})
 })
