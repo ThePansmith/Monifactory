@@ -581,10 +581,7 @@
 			y: -1.25d
 		}
 		{
-			dependencies: [
-				"3F39E9B829DAE2F2"
-				"03D0FFA69E671D48"
-			]
+			dependencies: ["03D0FFA69E671D48"]
 			description: [
 				"The &eNether&r contains quite a few useful resources:"
 				"- Some initial pieces of &6Sulfur&r"
@@ -1642,6 +1639,5 @@
 			y: 11.75d
 		}
 	]
-	subtitle: ["WIP, HM is not fully playable yet!"]
 	title: "A Harder Genesis"
 }
