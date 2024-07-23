@@ -232,6 +232,15 @@
         },
         {
             "category": "nuclearcraft:turbine_controller" 
+        },
+        {
+            "category": "gtceu:hypogean_reactor" 
+        },
+        {
+            "category": "enderio:primitive_alloy_smelting" 
+        },
+        {
+            "category": "enderio:sagmilling" 
         }
     ]
 }

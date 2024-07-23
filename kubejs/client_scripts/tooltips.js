@@ -6,10 +6,10 @@ ItemEvents.tooltip(tooltip => {
     for (let i = 1; i <= 12; i++) {
         microminer_tooltip(i)
     }
-    
+
     tooltip.add('kubejs:microminer_t4half', Text.translatable('item.kubejs.microminer_t4half.desc'))
     tooltip.add('kubejs:microminer_t8half', Text.translatable('item.kubejs.microminer_t8half.desc'))
-    
+
     tooltip.addAdvanced(['/kubejs:stabilized_microminer/'], (item, adv, text) => {
         text.add(1, '§7§oA stabilized version, injected with a Heart of a Universe.')
         text.add(2, '§7§oLasts indefinitely. Reusable. Totally not overpowered.')
@@ -39,7 +39,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('enderio:lumium_conduit', '§7Max Output 131,072 RF/t')
     tooltip.add('enderio:signalum_conduit', '§7Max Output 524,288 RF/t')
     tooltip.add('enderio:enderium_conduit', '§7Max Output 2,097,152 RF/t')
-    tooltip.add('enderio:sculk_compound_conduit', '§7Max Output 8,388,608 RF/t')
+    tooltip.add('enderio:cryolobus_conduit', '§7Max Output 8,388,608 RF/t')
     tooltip.add('enderio:sculk_superconductor_conduit', '§7Max Output 134,217,728 RF/t')
 
     tooltip.add("thermal:device_rock_gen", "§7Must be placed next to lava and water to produce cobblestone.")
@@ -53,7 +53,7 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, [Text.red('Deprecated').bold()])
     })
 
-	// Fix gtceu text
+    // Fix gtceu text
     tooltip.addAdvanced(['gtceu:creative_energy', 'gtceu:creative_tank', 'gtceu:creative_chest', 'gtceu:creative_data_access_hatch'], (item, adv, text) => {
         text.remove(3);
         text.remove(2);
@@ -61,15 +61,25 @@ ItemEvents.tooltip(tooltip => {
         text.add(Text.join(Text.translatable('gtceu.creative_tooltip.1'), rainbowify(Text.translatable('gtceu.creative_tooltip.2').getString(), Math.round(Client.lastNanoTime / 100000000)), Text.translatable('gtceu.creative_tooltip.3')))
     });
 
-	// Debug laser
-    tooltip.addAdvanced('kubejs:debug_laser', (item, adv, text) => {
-        text.add(Text.join('You need to be a ', rainbowify('dev', Math.round(Client.lastNanoTime / 100000000)), ' to use this'))
-    });
+    // Circuits
+    tooltip.addAdvanced(`kubejs:matter_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(`UEV-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:matter_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(`UHV-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:matter_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(`UV-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:matter_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(`ZPM-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(`UIV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(`UEV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(`UHV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(`UV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:monic_processor_mainframe`, (item, adv, text) => {text.add(1, Text.blue(`MAX-Tier Circuit`))})
+    tooltip.addAdvanced(`kubejs:monic_processor_computer`, (item, adv, text) => {text.add(1, Text.blue(`UIV-Tier Circuit`))})
+    tooltip.addAdvanced(`kubejs:monic_processor_assembly`, (item, adv, text) => {text.add(1, Text.blue(`UEV-Tier Circuit`))})
+    tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => {text.add(1, Text.blue(`UHV-Tier Circuit`))})
+
 
 
     // Multiblocks
-    tooltip.add('gtceu:sculk_reverberator', Text.translatable('gtceu.sculk_reverberator.desc'))
-    tooltip.add('gtceu:sculk_reactor', Text.translatable('gtceu.sculk_reactor.desc'))
+    tooltip.add('moni_multiblocks:hypogean_infuser', Text.translatable('gtceu.sculk_reverberator.desc'))
+    tooltip.add('gtceu:hypogean_reactor', Text.translatable('gtceu.hypogean_reactor.desc'))
     tooltip.add('gtceu:simulation_supercomputer', Text.translatable('gtceu.simulation_supercomputer.desc'))
     tooltip.add('gtceu:loot_superfabricator', Text.translatable('gtceu.loot_superfabricator.desc'))
     tooltip.add('gtceu:greenhouse', Text.translatable('gtceu.greenhouse.desc'))
@@ -101,7 +111,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:sculk_reactor', 'gtceu:quintessence_infuser'], 'Can parallelize with Parallel Control Hatches.')
+    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:hypogean_reactor', 'gtceu:quintessence_infuser'], 'Can parallelize with Parallel Control Hatches.')
 
     //Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
@@ -118,6 +128,29 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('extendedcrafting:the_ultimate_catalyst', Text.darkGray("I'm the real ultimate catalyst..."))
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
+
+    // NuclearCraft tooltips
+    tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
+    tooltip.add('nuclearcraft:tough_alloy_ingot', '§eLiFeB');
+    tooltip.add('nuclearcraft:ferroboron_ingot', '§eFeB');
+    tooltip.add('nuclearcraft:hard_carbon_ingot', '§eFe₃C');
+    tooltip.add('nuclearcraft:uranium_233', '§eU²³³');
+    tooltip.add('nuclearcraft:plutonium_238', '§ePu²³⁸');
+    tooltip.add('nuclearcraft:plutonium_242', '§ePu²⁴²');
+    tooltip.add('nuclearcraft:neptunium_236', '§eNp²³⁶');
+    tooltip.add('nuclearcraft:neptunium_237', '§eNp²³⁷');
+    tooltip.add('nuclearcraft:americium_241', '§eAm²⁴¹');
+    tooltip.add('nuclearcraft:americium_242', '§eAm²⁴²');
+    tooltip.add('nuclearcraft:americium_243', '§eAm²⁴³');
+    tooltip.add('nuclearcraft:curium_243', '§eCm²⁴³');
+    tooltip.add('nuclearcraft:curium_245', '§eCm²⁴⁵');
+    tooltip.add('nuclearcraft:curium_246', '§eCm²⁴⁶');
+    tooltip.add('nuclearcraft:curium_247', '§eCm²⁴⁷');
+    tooltip.add('nuclearcraft:berkelium_247', '§eBk²⁴⁷');
+    tooltip.add('nuclearcraft:berkelium_248', '§eBk²⁴⁸');
+    tooltip.add('nuclearcraft:californium_249', '§eCf²⁴⁹');
+    tooltip.add('nuclearcraft:californium_251', '§eCf²⁵¹');
+    tooltip.add('nuclearcraft:californium_252', '§eCf²⁵²');
 
     tooltip.addAdvanced(['/^kubejs:.+infinity_dust_block$/', 'kubejs:infinity_dust_block'], (item, adv, text) => {
         text.add(1, Text.gray('Not quite solid'))

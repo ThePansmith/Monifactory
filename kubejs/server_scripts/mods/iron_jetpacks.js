@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         'TTT'
     ], {
         I: 'gtceu:dark_soularium_ingot',
-        C: 'enderio:sculk_compound_conduit',
+        C: 'enderio:cryolobus_conduit',
         F: 'kubejs:flight_control_unit',
         T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').weakNBT()
     }).id('kubejs:ironjetpacks/thrusters/dark_soularium');

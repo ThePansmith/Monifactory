@@ -5,6 +5,10 @@ JEIEvents.hideItems(event => {
     //Enderio cleanup
     event.hide(/enderio:clear_glass_.*_.*/)
     event.hide(/enderio:fused_quartz_.*_.*/)
+    event.hide(/enderio:powdered_.*/)
+    event.hide(/enderio:.*_ingot/)
+    event.hide(/enderio:.*_nugget/)
+    event.hide(/enderio:.*_block/)
     event.hide('enderio:broken_spawner')
 
     //Hides useless items
@@ -58,8 +62,18 @@ JEIEvents.hideItems(event => {
     // antiblocks (is this even needed?)
     // event.hide([/^antiblocksrechiseled:pressure_plate_.+$/, /^antiblocksrechiseled:button_.+$/, /^antiblocksrechiseled:stair_.+$/, /^antiblocksrechiseled:slab_.+$/, /^antiblocksrechiseled:border_.+$/, /^antiblocksrechiseled:wool_.+$/])
 
+    // Solar Flux
+    event.hide(/solarflux:.*_upgrade/)
+    event.hide(/solarflux:.*_glass/)
+    event.hide('solarflux:blazing_coating')
+
     // AE
     event.hide(['ae2:facade', 'ae2:vibration_chamber'])
+    event.hide(/megacells:.*mega_interface/)
+    event.hide(/megacells:.*mega_pattern_provider/)
+    event.hide(/megacells:sky_steel/)
+    event.hide("megacells:mega_crafting_accelerator")
+    event.hide("megacells:bulk_storage_component")
 
     //AA
     event.hide(['gtceu:flawless_palis_empowered_gem', 'gtceu:flawless_diamatine_empowered_gem', 'gtceu:flawless_emeradic_empowered_gem', 'gtceu:restonia_empowered_rod', 'gtceu:enori_empowered_rod', 'gtceu:void_empowered_rod', 'gtceu:palis_empowered_rod', 'gtceu:diamatine_empowered_rod', 'gtceu:emeradic_empowered_rod', 'gtceu:restonia_empowered_perfect', 'gtceu:enori_empowered_perfect', 'gtceu:void_empowered_perfect', 'gtceu:palis_empowered_perfect', 'gtceu:diamatine_empowered_perfect', 'gtceu:emeradic_empowered_perfect', 'gtceu:exquisite_restonia_empowered_gem', 'gtceu:exquisite_enori_empowered_gem', 'gtceu:exquisite_void_empowered_gem', 'gtceu:exquisite_palis_empowered_gem', 'gtceu:exquisite_diamatine_empowered_gem', 'gtceu:exquisite_emeradic_empowered_gem', 'gtceu:restonia_empowered_dust', 'gtceu:enori_empowered_dust', 'gtceu:void_empowered_dust', 'gtceu:palis_empowered_dust', 'gtceu:diamatine_empowered_dust', 'gtceu:emeradic_empowered_dust', 'gtceu:tiny_restonia_empowered_dust', 'gtceu:tiny_enori_empowered_dust', 'gtceu:tiny_void_empowered_dust', 'gtceu:tiny_palis_empowered_dust', 'gtceu:tiny_diamatine_empowered_dust', 'gtceu:tiny_emeradic_empowered_dust', 'gtceu:flawless_restonia_empowered_gem', 'gtceu:flawless_enori_empowered_gem', 'gtceu:flawless_void_empowered_gem'])
@@ -68,11 +82,12 @@ JEIEvents.hideItems(event => {
     event.hide(['gtceu:restonia_perfect', 'gtceu:exquisite_restonia_gem', 'gtceu:restonia_dust', 'gtceu:tiny_restonia_dust', 'gtceu:flawless_restonia_gem', 'gtceu:restonia_rod', 'gtceu:restonia_plate', 'gtceu:small_restonia_dust', 'gtceu:palis_perfect', 'gtceu:exquisite_palis_gem', 'gtceu:palis_dust', 'gtceu:tiny_palis_dust', 'gtceu:flawless_palis_gem', 'gtceu:palis_rod', 'gtceu:palis_plate', 'gtceu:small_palis_dust'])
 
     //NuclearCraft
-    event.hide(['nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
+    event.hide(['nuclearcraft:diosmeter', 'nuclearcraft:steel_frame', 'nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
     event.hide(['nuclearcraft:nitrogen_collector', 'nuclearcraft:compact_nitrogen_collector', 'nuclearcraft:lava_collector', 'nuclearcraft:dense_nitrogen_collector', 'nuclearcraft:compact_helium_collector', 'nuclearcraft:helium_collector', 'nuclearcraft:dense_helium_collector'])
     event.hide(['nuclearcraft:magnesium_deepslate_ore', 'nuclearcraft:thorium_deepslate_ore', 'nuclearcraft:uranium_deepslate_ore', 'nuclearcraft:magnesium_ore', 'nuclearcraft:boron_deepslate_ore', 'nuclearcraft:cobalt_ore', 'nuclearcraft:platinum_deepslate_ore', 'nuclearcraft:silver_deepslate_ore', 'nuclearcraft:lead_ore', 'nuclearcraft:lithium_ore', 'nuclearcraft:thorium_ore', 'nuclearcraft:tin_ore', 'nuclearcraft:cobalt_deepslate_ore', 'nuclearcraft:silver_ore', 'nuclearcraft:uranium_ore', 'nuclearcraft:zinc_ore', 'nuclearcraft:boron_ore', 'nuclearcraft:lithium_deepslate_ore'])
     event.hide(['nuclearcraft:foursmore', 'nuclearcraft:evenmoresmore', 'nuclearcraft:moresmore', 'nuclearcraft:smore'])
     event.hide(/^nuclearcraft:.*_bucket/i)
+    event.hide(/nuclearcraft:upgrade_.*/)
     event.hide(/nuclearcraft:.*_ingot/)
     event.hide(/nuclearcraft:.*_.*_ingot/)
     event.hide(/nuclearcraft:.*_plate/)
@@ -83,9 +98,33 @@ JEIEvents.hideItems(event => {
     event.hide(/nuclearcraft:.*_.*_dust/)
     event.hide(/nuclearcraft:.*_nugget/)
     event.hide(/nuclearcraft:.*_gem/)
+	// Hides all unused isotopes and fuels
+	event.hide(['nuclearcraft:fuel_mixed_mix_239', 'nuclearcraft:fuel_mixed_mix_241', 'nuclearcraft:thorium_230', 'nuclearcraft:plutonium_241', 'nuclearcraft:lithium_6', 'nuclearcraft:lithium_7', 'nuclearcraft:boron_10', 'nuclearcraft:boron_11', 'nuclearcraft:plutonium_239', 'nuclearcraft:uranium_235', 'nuclearcraft:uranium_238', ])
+	event.hide(/nuclearcraft:.*_.*_ox/)
+    event.hide(/nuclearcraft:.*_.*_za/)
+    event.hide(/nuclearcraft:.*_.*_ni/)
+	// Hides unused or duplicate machines
+	event.hide(/nuclearcraft:solar_panel.*/)
+	event.hide(/nuclearcraft:.*_voltaic_pile/)
+	event.hide(/nuclearcraft:.*_battery/)
+	event.hide(/nuclearcraft:.*_barrel/)
+	event.hide(/nuclearcraft:.*bscco.*/)
+	event.hide(/nuclearcraft:turbine.*/)
+	event.hide(/nuclearcraft:.*_container/)
+	event.hide(/nuclearcraft:niobium_tin_.*/)
+    event.hide(/nuclearcraft:fusion.*/)
+    event.hide(/water_collector/);
+    event.hide(/nuclearcraft:.*electromagnet.*/)
+	// Hides all unused blocks
+	event.hide(['nuclearcraft:empty_active_heat_sink', 'nuclearcraft:villiaumite_heat_sink', 'nuclearcraft:carobbiite_heat_sink', 'nuclearcraft:empty_frame', 'nuclearcraft:supercooler', 'nuclearcraft:steel_block', 'nuclearcraft:electrum_block', 'nuclearcraft:supercold_ice_block', 'nuclearcraft:magnesium_block', 'nuclearcraft:cobalt_block', 'nuclearcraft:aluminum_block', 'nuclearcraft:graphite_block', 'nuclearcraft:lead_block', 'nuclearcraft:bronze_block', 'nuclearcraft:californium250_block', 'nuclearcraft:lithium_block', 'nuclearcraft:platinum_block', 'nuclearcraft:thorium_block', 'nuclearcraft:americium241_block', 'nuclearcraft:plutonium238_block', 'nuclearcraft:tin_block', 'nuclearcraft:beryllium_block', 'nuclearcraft:uranium238_block', 'nuclearcraft:silver_block', 'nuclearcraft:uranium_block', 'nuclearcraft:zirconium_block', 'nuclearcraft:zinc_block', 'nuclearcraft:boron_block', ])
+	// Hides all unused items
+	event.hide(['nuclearcraft:rad_x', 'nuclearcraft:research_paper', 'nuclearcraft:plate_extreme', 'nuclearcraft:gelatin', 'nuclearcraft:actuator', 'nuclearcraft:basic_electric_circuit', 'nuclearcraft:sic_fiber', 'nuclearcraft:tough_helmet', 'nuclearcraft:tough_chest', 'nuclearcraft:tough_pants', 'nuclearcraft:tough_boots', 'nuclearcraft:spaxelhoe_tough', 'nuclearcraft:spaxelhoe_thorium', 'nuclearcraft:multitool', 'nuclearcraft:qnp', 'nuclearcraft:lithium_ion_cell', 'nuclearcraft:dps', 'nuclearcraft:servo', 'nuclearcraft:bioplastic', 'nuclearcraft:empty_sink', 'nuclearcraft:radaway_slow', 'nuclearcraft:motor', 'nuclearcraft:salt', 'nuclearcraft:cocoa_butter', 'nuclearcraft:sawdust', 'nuclearcraft:flour', 'nuclearcraft:dominos', 'nuclearcraft:radaway'])
 
     //JAVD
     event.hide(["javd:portal_block"])
+
+    // Storage Drawers
+    event.hide(/storagedrawers/)
 
     //Ender Storage
     event.hide(['endertanks:ender_bucket'])
@@ -158,9 +197,11 @@ JEIEvents.addItems(event => {
 
     //EnderIO
     event.add('enderio:broken_spawner')
+    event.add('enderio:reinforced_obsidian_block')
 
     //NuclearCraft
     event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust'])
+
 })
 
 JEIEvents.hideFluids(event => {

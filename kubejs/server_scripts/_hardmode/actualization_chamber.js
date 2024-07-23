@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
                 '48x minecraft:creeper_head',
                 '64x minecraft:gunpowder',
                 '64x minecraft:slime_block',
-                '64x armorplus:guardian_scale'
+                '64x kubejs:guardian_scale'
             )
             .duration(780)
             .EUt(30720)
@@ -214,8 +214,8 @@ ServerEvents.recipes(event => {
                 '50x thermal:basalz_rod',
                 '64x minecraft:ghast_tear',
                 '48x minecraft:wither_skeleton_skull',
-                '64x armorplus:wither_bone',
-                '64x armorplus:wither_bone', // drops of evil aren't in the pack
+                '64x kubejs:wither_bone',
+                '64x kubejs:wither_bone', // drops of evil aren't in the pack
                 '64x minecraft:magma_cream',
                 '64x minecraft:magma_cream'
             )
@@ -254,6 +254,17 @@ ServerEvents.recipes(event => {
                 '64x kubejs:wither_realm_data',
                 '64x kubejs:wither_realm_data',
                 '48x gtceu:nether_star_block'
+            )
+            .duration(780)
+            .EUt(30720)
+        
+        event.recipes.gtceu.actualization_chamber('pristine_t4half_six')
+            .itemInputs('kubejs:pristine_matter_t4half')
+            .circuit(6)
+            .itemOutputs(
+                '64x kubejs:deep_dark_data',
+                '64x kubejs:deep_dark_data',
+                '32x kubejs:warden_horn'
             )
             .duration(780)
             .EUt(30720)
@@ -366,7 +377,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t8')
             .circuit(1)
             .itemOutputs(
-                '4x kubejs:abyss_shard',
+                '4x kubejs:hadal_shard',
                 '64x minecraft:sculk_catalyst',
                 '32x kubejs:warden_horn'
             )
@@ -383,7 +394,7 @@ ServerEvents.recipes(event => {
                 '64x minecraft:dragon_egg', 
                 '64x minecraft:dragon_egg', 
                 '64x minecraft:dragon_egg', 
-                '64x armorplus:ender_dragon_scale'
+                '64x kubejs:ender_dragon_scale'
             )
             .duration(780)
             .EUt(30720)

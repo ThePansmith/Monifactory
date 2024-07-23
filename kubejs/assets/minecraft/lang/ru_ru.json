@@ -1,0 +1,17 @@
+{
+    "advancements.story.enter_the_end.description": "Переместитесь в Энд, съев кусок торта Энда",
+    "advancements.story.enter_the_nether.description": "Испеките и съедите кусок торта Незера",
+    "block.minecraft.deepslate_lapis_ore": "Ляпис-лазуроносный глубинный сланец",
+    "block.minecraft.lapis_block": "Ляпис-лазурный блок",
+    "block.minecraft.lapis_ore": "Ляпис-лазурная руда",
+    "container.enchant.lapis.many": "Ляпис-лазурь: %s",
+    "container.enchant.lapis.one": "Ляпис-лазурь: 1",
+    "credits_and_attribution.screen.title": "Титры и атрибуции",
+    "item.minecraft.lapis_lazuli": "Ляпис-лазурь",
+    "menu.multiplayer": "Сетевая",
+    "menu.options": "Настройки",
+    "menu.quit": "Выйти",
+    "menu.singleplayer": "Одиночная",
+    "options.credits_and_attribution": "Титры и атрибуции...",
+    "trim_material.minecraft.lapis": "Ляпис-лазурная"
+}

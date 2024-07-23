@@ -67,6 +67,13 @@ ServerEvents.recipes(event => {
                 .inputFluids('gtceu:crystal_matrix 11520', 'gtceu:soldering_alloy 5760')
                 .duration(1000)
                 .EUt(eut)
+                
+            event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_input_hatch`)
+                .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_single_wire`, '16x gtceu:uhpic_chip', `#gtceu:circuits/${tier}`, `2x gtceu:${mat2}_double_wire`)
+                .itemOutputs(`gtceu:${tier}_energy_input_hatch`)
+                .inputFluids('gtceu:sodium_potassium 12000', 'gtceu:omnium 1152', 'gtceu:soldering_alloy 576')
+                .duration(100)
+                .EUt(eut)
 
                 //event.recipes.gtceu.assembler(`gtceu:${tier}_energy_input_hatch_4a`)
                // .itemInputs(`gtceu:${tier}_energy_input_hatch`, `2x gtceu:${mat1}_plate`, `2x gtceu:${mat2}_quadruple_wire`)
@@ -135,7 +142,7 @@ ServerEvents.recipes(event => {
     // UEV/UIV/MAX Hulls and Casing
 
     event.recipes.gtceu.assembler('uev_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:single_omnium_wire')
+        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire')
         .inputFluids('gtceu:polybenzimidazole 576')
         .itemOutputs('gtceu:uev_machine_hull')
         .duration(50)
@@ -149,7 +156,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     event.recipes.gtceu.assembler('uiv_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire')
+        .itemInputs('gtceu:uiv_machine_casing', '2x gtceu:netherite_single_wire')
         .inputFluids('gtceu:polybenzimidazole 576')
         .itemOutputs('gtceu:uiv_machine_hull')
         .duration(50)

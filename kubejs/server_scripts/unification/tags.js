@@ -34,10 +34,6 @@ ServerEvents.tags('item', event => {
     event.add('forge:gems/certus_quartz', 'gtceu:charged_certus_quartz_gem')
     event.add('forge:singularities/ultimate', 'kubejs:mote_of_omnium')
     event.add('forge:singularities/ultimate', 'extendedcrafting:ultimate_singularity')
-    event.add('forge:ingots/electrum_flux', 'redstone_arsenal:flux_ingot')
-    event.add('forge:dusts/electrum_flux', 'redstone_arsenal:flux_dust')
-    event.add('forge:nuggets/electrum_flux', 'redstone_arsenal:flux_nugget')
-    event.add('forge:gears/electrum_flux', 'redstone_arsenal:flux_gear')
     event.add('forge:dusts/quartz', 'gtceu:nether_quartz_dust')
     event.removeAllTagsFrom('ae2:certus_quartz_crystal')
     event.removeAllTagsFrom('ae2:charged_certus_quartz_crystal')
@@ -124,17 +120,3 @@ ServerEvents.recipes(event => {
     event.remove({ output: global.nuclearcraftMaterialPattern })
 })
 
-// Hacky Drac Reactor stuff
-// This will be removed when it becomes a proper post tank multi in favor of just including the injectors in it's recipe or something
-ServerEvents.tags('item', event => {
-    event.add('moni:basic_injector_tier', 'kubejs:sculk_reaction_casing')
-    event.add('moni:basic_injector_tier', 'kubejs:echo_reaction_casing')
-    event.add('moni:basic_injector_tier', 'kubejs:resonant_reaction_casing')
-    event.add('moni:basic_injector_tier', 'kubejs:abyssal_reaction_casing')
-    event.add('moni:echo_injector_tier', 'kubejs:echo_reaction_casing')
-    event.add('moni:echo_injector_tier', 'kubejs:resonant_reaction_casing')
-    event.add('moni:echo_injector_tier', 'kubejs:abyssal_reaction_casing')
-    event.add('moni:resonant_injector_tier', 'kubejs:resonant_reaction_casing')
-    event.add('moni:resonant_injector_tier', 'kubejs:abyssal_reaction_casing')
-    event.add('moni:abyssal_injector_tier', 'kubejs:abyssal_reaction_casing')
-})

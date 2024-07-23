@@ -58,6 +58,195 @@ GTCEuServerEvents.oreVeins(event => {
             )
         )
     })
+	
+	// Moon veins
+    event.add("kubejs:luna/diamond", vein => {
+        vein.weight(20)
+        vein.clusterSize(25)
+        vein.density(0.7)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.biomes("gcyr:moon")
+        vein.heightRangeUniform(-40, 20)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(6).mat(GTMaterials.Diamond).size(1, 3))
+                .layer(l => l.weight(4).mat(GTMaterials.Graphite).size(1, 2))
+            )
+        )
+		vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.Diamond)
+			.placement("above")
+			.density(0.4)
+			.radius(5)
+		)
+    })	
+	
+    event.add("kubejs:luna/gold", vein => {
+        vein.weight(40)
+        vein.clusterSize(25)
+        vein.density(0.7)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.biomes("gcyr:moon")
+        vein.heightRangeUniform(10, 60)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.Magnetite).size(1, 3))
+                .layer(l => l.weight(1).mat(GTMaterials.VanadiumMagnetite).size(1, 1))
+				.layer(l => l.weight(5).mat(GTMaterials.Gold).size(1, 4))
+            )
+        )
+		vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.Gold)
+			.placement("above")
+			.density(0.4)
+			.radius(5)
+		)
+    })
+
+    event.add("kubejs:luna/manganese", vein => {
+        vein.weight(30)
+        vein.clusterSize(70)
+        vein.density(0.7)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.biomes("gcyr:moon")
+        vein.heightRangeUniform(20, 100)
+        vein.veinedVeinGenerator(generator => generator
+            .oreBlock(GTMaterials.Grossular, 3)
+			.oreBlock(GTMaterials.Spessartine, 3)
+			.oreBlock(GTMaterials.Pyrolusite, 3)
+			.oreBlock(GTMaterials.Tantalite, 1)
+			.veininessThreshold(0.1)
+			.maxRichnessThreshold(0.3)
+			.minRichness(0.3)
+			.maxRichness(0.5)
+			.edgeRoundoffBegin(10)
+			.maxEdgeRoundoff(0.2)
+		)
+    })	
+	
+    event.add("kubejs:luna/molybdenum", vein => {
+        vein.weight(20)
+        vein.clusterSize(80)
+        vein.density(0.6)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.biomes("gcyr:moon")
+        vein.heightRangeUniform(20, 100)
+        vein.veinedVeinGenerator(generator => generator
+            .oreBlock(GTMaterials.Wulfenite, 3)
+			.oreBlock(GTMaterials.Chalcopyrite, 3)
+			.oreBlock(GTMaterials.Molybdenite, 2)
+			.veininessThreshold(0.1)
+			.maxRichnessThreshold(0.3)
+			.minRichness(0.3)
+			.maxRichness(0.5)
+			.edgeRoundoffBegin(10)
+			.maxEdgeRoundoff(0.2)
+        )
+    })	
+	
+    event.add("kubejs:luna/quartz", vein => {
+        vein.weight(40)
+        vein.clusterSize(45)
+        vein.density(0.7)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.biomes("gcyr:moon")
+        vein.heightRangeUniform(40, 120)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(5).mat(GTMaterials.NetherQuartz).size(1, 3))
+                .layer(l => l.weight(3).mat(GTMaterials.CertusQuartz).size(1, 2))
+				.layer(l => l.weight(2).mat(GTMaterials.get('dilithium')).size(1, 1))
+            )
+        )
+		vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.NetherQuartz)
+			.placement("above")
+			.density(0.4)
+			.radius(5)
+		)
+    })
+
+    event.add("kubejs:luna/rutil", vein => {
+        vein.weight(30)
+        vein.clusterSize(25)
+        vein.density(0.7)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.biomes("gcyr:moon")
+        vein.heightRangeUniform(40, 80)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(1).mat(GTMaterials.Aluminium).size(1, 1))
+                .layer(l => l.weight(6).mat(GTMaterials.Ilmenite).size(1, 4))
+				.layer(l => l.weight(3).mat(GTMaterials.Bauxite).size(1, 3))
+            )
+        )
+		vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.Ilmenite)
+			.placement("above")
+			.density(0.4)
+			.radius(5)
+		)
+    })	
+	
+	event.add("kubejs:luna/tungsten", vein => {
+        vein.weight(45)
+        vein.clusterSize(25)
+        vein.density(0.7)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.biomes("gcyr:moon")
+        vein.heightRangeUniform(-40, 20)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(6).mat(GTMaterials.Scheelite).size(1, 4))
+                .layer(l => l.weight(4).mat(GTMaterials.Tungstate).size(1, 4))
+            )
+        )
+		vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.Scheelite)
+			.placement("above")
+			.density(0.4)
+			.radius(5)
+		)
+    })	
+	
+    event.add("kubejs:luna/tetrahedrite", vein => {
+        vein.weight(30)
+        vein.clusterSize(30)
+        vein.density(0.7)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.biomes("gcyr:moon")
+        vein.heightRangeUniform(40, 120)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.Tetrahedrite).size(1, 3))
+                .layer(l => l.weight(2).mat(GTMaterials.Copper).size(1, 2))
+                .layer(l => l.weight(1).mat(GTMaterials.Stibnite).size(1, 1))
+            )
+        )
+		vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.Tetrahedrite)
+			.placement("above")
+			.density(0.4)
+			.radius(5)
+		)
+    })
+
 })
 
 
@@ -71,17 +260,7 @@ GTCEuServerEvents.oreVeins(event => {
 
 })
 
-GTCEuServerEvents.fluidVeins(event => {
-
-    event.add('kubejs:void/oil', vein => {
-        vein.dimensions('javd:void')
-        vein.fluid(() => Fluid.of('gtceu:oil_medium').fluid)
-        vein.weight(600)
-        vein.minimumYield(120)
-        vein.maximumYield(720)
-        vein.depletionAmount(2)
-        vein.depletionChance(1)
-        vein.depletedYield(50)
-    });
-}
-)  
+//Remove Naquadah veins
+GTCEuServerEvents.oreVeins(event => {
+    event.remove("gtceu:naquadah_vein") 
+})  

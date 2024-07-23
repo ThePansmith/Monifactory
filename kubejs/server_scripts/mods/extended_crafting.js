@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
     ], {
         S: 'gtceu:black_steel_plate',
         L: 'extendedcrafting:luminessence',
-        A: 'gtceu:osmiridium_plate',
+        A: 'gtceu:hssg_plate',
         B: 'extendedcrafting:crystaltine_ingot'
     })
 

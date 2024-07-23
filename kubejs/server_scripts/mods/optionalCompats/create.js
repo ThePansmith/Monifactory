@@ -154,6 +154,7 @@ if (Platform.isLoaded('create')) {
             .itemOutputs('create:rose_quartz')
             .duration(200)
             .EUt(16)
+            .circuit(6)
         event.recipes.gtceu.sifter("kubejs:polished_rose_quartz")
             .itemInputs('create:rose_quartz')
             .itemOutputs('create:polished_rose_quartz')

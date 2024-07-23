@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
             'BCB',
             'DBA'
         ], {
-            A: 'gtceu:sculk_compound_plate',
+            A: 'gtceu:cryolobus_plate',
             B: 'gtceu:enderium_plate',
             C: 'thermal:upgrade_augment_4',
             D: 'gtceu:tungsten_carbide_plate'
@@ -605,6 +605,19 @@ ServerEvents.recipes(event => {
         D: '#forge:ingots/tin',
         E: '#forge:gears/iron'
     }).id('kubejs:flux_drill');
+
+    event.remove({ id: 'thermal:flux_saw' })
+    event.shaped('thermal:flux_saw', [
+        ' A ',
+        'BCB',
+        'DED'
+    ], {
+        A: 'thermal:saw_blade',
+        B: '#forge:ingots/silver',
+        C: 'gtceu:lv_power_unit',
+        D: '#forge:ingots/tin',
+        E: '#forge:gears/iron'
+    }).id('kubejs:flux_saw');
 
     event.remove({ id: 'thermal:flux_capacitor' });
     event.shaped('thermal:flux_capacitor', [

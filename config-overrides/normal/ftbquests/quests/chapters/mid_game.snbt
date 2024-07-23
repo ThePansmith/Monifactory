@@ -60,6 +60,19 @@
 			x: 17.5d
 			y: 12.5d
 		}
+		{
+			id: "4E96C0A741972F9E"
+			linked_quest: "74469710D910C19D"
+			x: 38.5d
+			y: 15.5d
+		}
+		{
+			id: "24A33B6D4DE6DB8F"
+			linked_quest: "70D9B3C6539720DE"
+			size: 1.5d
+			x: 35.5d
+			y: 15.5d
+		}
 	]
 	quests: [
 		{
@@ -648,9 +661,11 @@
 				"&6* Tungstate Ore"
 				"&6* Radium Salt&r"
 				""
-				"As well as the &6Stellar Creation Data&r, which will be useful much, much later."
+				"It is also a primary source of &6Stellar Creation Data&r, which will be useful much, much later."
 				""
-				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, as of the useful byproducts you get, and the tiny amount of each element you get in this mission."
+				"When you eventually obtain the &aAdvanced Microverse Projector II&r, this Micro Miner can perform a mission that gives you large amounts of &6Dilithium Ore&r, as well as &6Certus Quartz, Nether Quartz, and Monazite Ore.&r"
+				""
+				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, as of the useful byproducts you get, and the tiny amount of each element you get in this mission.&r"
 			]
 			id: "53C00EA9D9BEE776"
 			rewards: [{
@@ -1280,7 +1295,7 @@
 			description: [
 				"&9Diesel&r is a mixture of &9Light Fuel&r and &9Heavy Fuel&r."
 				""
-				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6sculk_compound &2(unless you use Gasoline instead)."
+				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6cryolobus &2(unless you use Gasoline instead)."
 				""
 				"The performance of Combustion Generators is also improved, but you probably want to refine Diesel anyway."
 				""
@@ -1474,7 +1489,7 @@
 		{
 			dependencies: ["21B16C005E9E3B0E"]
 			description: [
-				"&2Gasoline is a powerful combustion fuel, generating 1600 EU per mB of fluid. It can also be substituted for Cetane-Boosted Diesel in sculk_compound production."
+				"&2Gasoline is a powerful combustion fuel, generating 1600 EU per mB of fluid. It can also be substituted for Cetane-Boosted Diesel in cryolobus production."
 				""
 				"Gasoline is made of:"
 				"- 16 parts Naphtha"
@@ -1506,7 +1521,7 @@
 		{
 			dependencies: ["4C76017864258EA9"]
 			description: [
-				"&2High-Octane Gasoline is the most powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in sculk_compound production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
+				"&2High-Octane Gasoline is the most powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in cryolobus production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
 				""
 				"To refine Gasoline to High-Octane Gasoline, you will need:"
 				"- 20 parts Gasoline"
@@ -1764,7 +1779,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "74CFD980F2E43686"
-				item: "gtceu:tungsten_carbide_plate"
+				item: "gtceu:double_tungsten_carbide_plate"
 				type: "item"
 			}]
 			title: "&2Tungsten Carbide Double Plates"
@@ -1773,11 +1788,7 @@
 		}
 		{
 			dependencies: ["14F1FF4656693711"]
-			description: [
-				"The &3Crafting Core&r is used to convert special crystalline materials into empowered variants."
-				""
-				"&5Currently, AA has not been completely ported to 1.20.1, in the meantime, you get the better option for empowerment from the get go!"
-			]
+			description: ["The &3Crafting Core&r is used to convert special crystalline materials into empowered variants."]
 			icon: "extendedcrafting:crafting_core"
 			id: "49C8716030809478"
 			rewards: [{
@@ -1820,7 +1831,18 @@
 				"&6* Redstone Ore"
 				"&6* Certus Quartz Ore"
 				"&6* Almandine Ore"
-				"&6* Lepidolite Ore&r"
+				"&6* Lepidolite Ore"
+				"&2* Cobaltite Ore"
+				"&2* Laurite Ore"
+				"&2* Cuprorhodsite Ore&r"
+				""
+				"Or with a Super Chest III:"
+				"&6* Salt Ore"
+				"&2* Barite Ore"
+				"&2* Neodymium Ore"
+				"&2* Apatite Ore"
+				"&2* Chromite Ore"
+				"&2* Pyrope Ore"
 				""
 				"When equipped with Gemstone Sensor:"
 				"&2* Perfect Diamonds"
@@ -1830,6 +1852,8 @@
 				"&6* Sapphire Ore"
 				"&6* Silver Ore"
 				"&6* Gold Ore"
+				""
+				"The Tier Three Micro Miner will also be used to obtain &2Netherite&r in the endgame."
 			]
 			id: "664107ED03A944CD"
 			rewards: [{
@@ -2134,7 +2158,7 @@
 				""
 				"&rThese are formed like multiblocks. You can add a &3Parallel Control Hatch&r in order to allow them to process &9more recipes&r at the same time, similarly to a &3Processing Array&r. The highest tier of Parallel Control Hatch can facilitate processing &9256 recipes&r at once!"
 				""
-				"&9In Modern, Gregicality Multiblocks was folded into the main mod.&r"
+				"&9Crafting Co-Processers increase the rate that your ME network will \"push\" batches of items out, perfect for machines like these.&r"
 				""
 				"Look up the usages of Parallel Hatches in EMI to see details of all the multiblock machines."
 				""
@@ -2254,9 +2278,9 @@
 		{
 			dependencies: ["605062720747B482"]
 			description: [
-				"&2This is the highest tier of polymer. It is used in crafting Advanced SMD components, ZPM+ Machine Hulls, among other things."
+				"This is the highest tier of polymer. It is used in crafting &2Advanced SMD components and ZPM+ Machine Hulls,&r among other things."
 				""
-				"This polymer requires at least 14 processing steps to craft. Good luck!"
+				"This polymer can require up to &914 steps&r to create from scratch, but multiple steps are able to be skipped through distillation of various liquids. &6Check what steps you can easily skip!&r"
 			]
 			icon: "gtceu:polybenzimidazole_bucket"
 			id: "51A463024F35DC2E"
@@ -2999,14 +3023,14 @@
 				""
 				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster. Alternatively, reactors can be designed to produce a decent amount of power for the mid game of the pack."
 				""
-				"First, set up your 150 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 5x5x5 space."
-				""
-				"TODO: actually doublecheck that below is still true lol"
+				"First, set up your 150 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r. The Casings should  cover the faces of the interior cube, as well as the edges or corners. You should have exactly the right number of Casings to encase a 5x5x5 space."
+				"{@pagebreak}"
 				""
 				"Next, create a hole so you can get inside the cube. Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
 				""
 				"Finally, place the &3Fission Reactor Controller&r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong."
 				""
+				"{@pagebreak}"
 				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
 				""
 				"Info on what exactly you are going to be doing with you fancy new reactor can be found in the &bFission and Fusion&r Chapter."
@@ -3035,7 +3059,7 @@
 				"10C4A6FF23A4DF17"
 			]
 			description: [
-				"Mixing &9Diesel&r (or less efficiently, &9Bio Diesel&r) with &9Tetranitromethane&r in an &3HV Mixer&r &2or Large Chemical Reactor&r produces &2Cetane-Boosted Diesel&r, an extremely potent fuel needed later for &6sculk_compound&r production."
+				"Mixing &9Diesel&r (or less efficiently, &9Bio Diesel&r) with &9Tetranitromethane&r in an &3HV Mixer&r &2or Large Chemical Reactor&r produces &2Cetane-Boosted Diesel&r, an extremely potent fuel needed later for &6cryolobus&r production."
 				""
 				"If you have a very robust petrochemical infrastructure and can afford to burn it, this fuel along with proper oxygenation &2is a potent fuel in the Large Combustion Engine and Extreme Combustion Engine, producing &2720 EU/mB of fuel."
 			]

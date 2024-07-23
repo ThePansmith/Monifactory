@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
             '      FFF',
             '       FF',
         ], {
-            A: 'armorplus:the_ultimate_material',
+            A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
 			'FFF      ',
 			'FF       ',
 		], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
 			'FFFF     ',
 			'FF       ',
 		], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
 			'AAA      ',
 			'AA       ',
         ], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem'
 		}
@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
 			' FFF FFF ',
 			' FF   FF ',
 		], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             D: 'kubejs:ultimate_core',
             E: 'kubejs:ultimate_gem',
             F: 'gtceu:crystal_matrix_ingot'
@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
 			'  KBCBK  ',
 			'    A    ',
 		], {
-			A: 'armorplus:the_ultimate_material',
+			A: 'kubejs:the_ultimate_material',
             B: 'enderio:reinforced_obsidian_block',
             C: 'gtceu:dense_blue_alloy_plate',
             D: 'gcyr:dense_bisalloy_400_plate',
@@ -225,16 +225,16 @@ ServerEvents.recipes(event => {
             F: 'gtceu:dense_zeron_100_plate',
             G: 'gtceu:dense_manyullyn_plate',
             H: 'gtceu:dense_enriched_sunnarium_plate',
-            I: 'kubejs:ender_star',
-            J: 'gtceu:gravi_star',
-            K: 'armorplus:wither_bone'
+            I: 'gtceu:gravi_star',
+            J: 'kubejs:quasi_stable_neutron_star',
+            K: 'kubejs:wither_bone'
 		}
 	)
 
 
     // Infinity Power Unit
     event.recipes.gtceu.assembly_line('infinity_toolset/infinity_power_unit')
-        .itemInputs('kubejs:infinity_catalyst', '32x gtceu:polybenzimidazole_plate', '16x gtceu:darmstadtium_plate', '16x gtceu:enriched_naquadah_trinium_europium_duranide_plate', '16x #gtceu:circuits/uhv', '8x #gtceu:circuits/uev', '16x kubejs:resonant_energy_core', '4x gtceu:max_battery', '8x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '32x gtceu:uev_electric_motor')
+        .itemInputs('kubejs:infinity_catalyst', '32x gtceu:polybenzimidazole_plate', '16x gtceu:darmstadtium_plate', '16x gtceu:enriched_naquadah_trinium_europium_duranide_plate', '16x #gtceu:circuits/uhv', '8x #gtceu:circuits/uev', '16x kubejs:hadal_core', '4x gtceu:max_battery', '8x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '32x gtceu:uev_electric_motor')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:polybenzimidazole 1152', 'gtceu:omnium 5760', 'gtceu:crystal_matrix 1152')
         .itemOutputs('kubejs:infinity_power_unit')
         .duration(1200)

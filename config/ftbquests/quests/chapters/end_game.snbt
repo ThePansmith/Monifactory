@@ -103,8 +103,9 @@
 			id: "64CBC49787B51FD8"
 			linked_quest: "1B1D3A66B847D129"
 			shape: "gear"
+			size: 1.5d
 			x: 43.75d
-			y: -23.5d
+			y: -24.5d
 		}
 		{
 			id: "3B6669BBD0448982"
@@ -1722,10 +1723,10 @@
 			tasks: [{
 				count: 64L
 				id: "65D45DB6200284B7"
-				item: "gtceu:sculk_compound_ingot"
+				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
-			title: "Element ???: sculk_compound"
+			title: "Element ???: cryolobus"
 			x: 26.0d
 			y: 12.5d
 		}
@@ -2192,7 +2193,7 @@
 		}
 		{
 			dependencies: ["281DE48E7260BC8E"]
-			description: ["&6Abyssal Cores&r are the ultimate tier of &bSculk&r core, used for the most powerful and advanced items."]
+			description: ["&6Hadal Cores&r are the ultimate tier of &bSculk&r core, used for the most powerful and advanced items."]
 			id: "3171F83E24C8F740"
 			shape: "hexagon"
 			size: 1.0d
@@ -2200,10 +2201,10 @@
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: { Count: 4b, id: "kubejs:abyssal_core" }
+				item: { Count: 4b, id: "kubejs:hadal_core" }
 				type: "item"
 			}]
-			title: "Abyssal Cores"
+			title: "Hadal Cores"
 			x: 25.5d
 			y: -9.5d
 		}
@@ -2277,7 +2278,9 @@
 			description: [
 				"You have become Death, destroyer of Universes."
 				""
-				"Might probably be obvious, but this miner gathers a &6Heart of a Universe&r."
+				"Might probably be obvious, but this miner is your sole source of &6Hearts of Universes&r. "
+				""
+				"It also can be used later to obtain &6Creative Storage Data&r and &6Creative Data Hatch Data&r, and is used to obtain &9Contained Singularities&r for &6Monic Circuits&r."
 			]
 			id: "27EBB5AAF8A40F3D"
 			shape: "hexagon"
@@ -2302,6 +2305,7 @@
 			]
 			id: "2EBB9A154522348F"
 			size: 5.0d
+			subtitle: "A winner is you"
 			tasks: [{
 				id: "392DAFD3A4019E34"
 				item: "gtceu:creative_chest"
@@ -2423,7 +2427,7 @@
 			id: "4CF399EC00A65E3A"
 			tasks: [{
 				id: "639C72FD2123C478"
-				item: "kubejs:creative_storage_component"
+				item: "kubejs:creative_storage_data"
 				type: "item"
 			}]
 			title: "&9Creative Storage Data"
@@ -2466,7 +2470,7 @@
 			}]
 			title: "&9Creative Power"
 			x: 43.75d
-			y: -25.75d
+			y: -26.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -3248,7 +3252,7 @@
 		{
 			dependencies: ["07057CDE4E021BA7"]
 			description: [
-				"The &3Hyperbolic Microverse Projector&r is the most powerful projector, capiable of running hundreds of missions in parallel. It can perform all microminer missions, and is capiable of a few of it's own as well. "
+				"The &3Hyperbolic Microverse Projector&r is the most powerful projector, capiable of running hundreds of missions in parallel. It can perform all previous microminer missions, and opens the door to many new microminer missions."
 				""
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
@@ -3266,7 +3270,11 @@
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: ["The &6Dimensional Superassembler&r uses dimensional warping to process hundreds of assembly line recipes at once."]
+			description: [
+				"The &6Dimensional Superassembler&r uses dimensional warping to process hundreds of assembly line recipes at once. "
+				""
+				"Notably, the Dimensional Superassembler bypasses the need to use &9ULV Input Buses&r or &9ordered assembly&r, so you are free to stuff the entirety of a recipe into a single input bus."
+			]
 			id: "73A44214C2B44D53"
 			size: 2.0d
 			tasks: [{
@@ -3276,7 +3284,7 @@
 			}]
 			title: "&9Dimensional Superassembler"
 			x: 45.75d
-			y: -25.75d
+			y: -26.75d
 		}
 		{
 			dependencies: [
@@ -3345,31 +3353,17 @@
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: ["The &6Sculk Fusion Reactor&r is a even stronger version of the &9Sculk Reactor&r, capable of running hundreds of recipes at once."]
+			description: ["The &6Hypogen Reactor&r is a even stronger version of the &9Hypogen Reactor&r, capable of running hundreds of recipes at once."]
 			id: "6138FB8766AD6F8C"
 			size: 2.0d
 			tasks: [{
 				id: "0BE78C6BD408CFEB"
-				item: "gtceu:sculk_reactor"
+				item: "gtceu:hypogean_reactor"
 				type: "item"
 			}]
-			title: "&9Sculk Fusion Reactor"
+			title: "&9Hypogen Reactor"
 			x: 41.75d
-			y: -25.75d
-		}
-		{
-			dependencies: ["07057CDE4E021BA7"]
-			description: ["oc not unlocked here at the moment, but once fusion is implemented this multiblock will be moved here"]
-			id: "6A9E02E66C10EA9F"
-			size: 1.5d
-			tasks: [{
-				id: "673F392CD989796A"
-				item: "gtceu:sculk_reactor"
-				type: "item"
-			}]
-			title: "&9Sculk Reactor"
-			x: 50.0d
-			y: -13.5d
+			y: -26.75d
 		}
 		{
 			dependencies: [
@@ -3430,28 +3424,8 @@
 			id: "0FD9B533BB402B17"
 			shape: "hexagon"
 			tasks: [{
-				id: "7DCC421A0B0BC7F9"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "kubejs:ruined_capacitor"
-							}
-							{
-								Count: 1b
-								id: "kubejs:ruined_sensor"
-							}
-							{
-								Count: 1b
-								id: "kubejs:ruined_emitter"
-							}
-						]
-					}
-				}
-				title: "Any ruined item"
+				id: "05C1101C77DE5B22"
+				item: "kubejs:alien_scrap"
 				type: "item"
 			}]
 			title: "&9Scrapping"
@@ -3459,7 +3433,11 @@
 			y: -18.0d
 		}
 		{
-			dependencies: ["0FD9B533BB402B17"]
+			dependencies: [
+				"72996D5B09AC57CF"
+				"23F3219BBE486D2E"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Thankfully, &9Holmium&r itself does not require any special processing, and can just be smelted."
 				""
@@ -3728,7 +3706,7 @@
 		}
 		{
 			dependencies: ["39A09DA3903C5564"]
-			description: ["The strongest circuit needs the strongest SoCs"]
+			description: ["The strongest circuit needs the strongest SoCs."]
 			id: "4DED2A24CB1A56F5"
 			shape: "hexagon"
 			tasks: [{
@@ -3738,6 +3716,65 @@
 			}]
 			x: 55.0d
 			y: -6.75d
+		}
+		{
+			dependencies: [
+				"1B1D3A66B847D129"
+				"1D00150456DEF379"
+			]
+			description: ["An upgraded form of &6Infinity Catalyst&r. It processes 4 &cDormant Infinity Compound Ingots&r at a time, essentially increasing your &6Infinity Ingot&r output per &6Heart of a Universe&r by &e4x&r. They also are recyclable afterwards."]
+			id: "06849E067C88C0E9"
+			subtitle: "Gee that's a lot of Infinity Ingots"
+			tasks: [{
+				id: "0BB7A824F7B03BDC"
+				item: "kubejs:fury_enhanced_infinity_catalyst"
+				type: "item"
+			}]
+			x: 35.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["68734C70E2D19616"]
+			description: ["The final form of the &6Infinity Catalyst&r. It processes 8 &cDormant Infinity Compound Ingots&r at a time, essentially increasing your &6Infinity Ingot&r output per &6Heart of a Universe&r by &e8x&r."]
+			id: "65B610CF9324F6B2"
+			subtitle: "Spend Monium to make Monium"
+			tasks: [{
+				id: "2A554D0488C990D6"
+				item: "kubejs:serenity_enhanced_infinity_catalyst"
+				type: "item"
+			}]
+			x: 55.0d
+			y: -26.5d
+		}
+		{
+			dependencies: ["0FD9B533BB402B17"]
+			description: [
+				"&9Ruined Hull&r is more abundant than &9Ruined Machine Parts&r but gives less &9Holmium&r overall. "
+				""
+				"It also drops high-end materials such as &6Neutronium&r, &6Tritanium&r, and &6Crystal Matrix Dust&r, although these are mostly irrelevant to you as you already have the &9Creative Quantum Tank.&r"
+			]
+			id: "72996D5B09AC57CF"
+			shape: "hexagon"
+			tasks: [{
+				id: "24211E4714EDB0E9"
+				item: "kubejs:ruined_hull"
+				type: "item"
+			}]
+			x: 45.75d
+			y: -20.25d
+		}
+		{
+			dependencies: ["0FD9B533BB402B17"]
+			description: ["&9Ruined Machine Parts&r provide greater amounts of &9Holmium&r compared to &9Ruined Hull&r."]
+			id: "23F3219BBE486D2E"
+			shape: "hexagon"
+			tasks: [{
+				id: "6A1B3F762DFA4750"
+				item: "kubejs:ruined_machine_parts"
+				type: "item"
+			}]
+			x: 45.75d
+			y: -18.0d
 		}
 	]
 	title: "End Game"

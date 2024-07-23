@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             X: 'gtceu:gravi_star',
             Z: 'gtceu:quantum_star',
             Y: 'kubejs:endest_star',
-            U: 'armorplus:the_ultimate_material'
+            U: 'kubejs:the_ultimate_material'
         }).id('kubejs:extended/eternal_catalyst');
 
     //INFINITY CATALYST
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         ], {
             P: 'gtceu:tiny_neutronium_dust',
             E: "kubejs:eternal_catalyst",
-            C: 'kubejs:abyssal_core',
+            C: 'kubejs:hadal_core',
             H: 'kubejs:heart_of_a_universe'
         }).id('kubejs:extended/infinity_catalyst');
 
@@ -75,6 +75,22 @@ ServerEvents.recipes(event => {
 		.itemOutputs('gtceu:infinity_ingot')
 		.duration(400)
 		.EUt(50000)
+		.blastFurnaceTemp(12000)
+
+	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation_t2')
+		.itemInputs('4x kubejs:dormant_infinity_compound_ingot', 'kubejs:fury_enhanced_infinity_catalyst')
+		.inputFluids(Fluid.of('gtceu:omnium', 576))
+		.itemOutputs('4x gtceu:infinity_ingot', 'kubejs:dormant_fury_enhanced_infinity_catalyst')
+		.duration(300)
+		.EUt(250000)
+		.blastFurnaceTemp(12000)
+
+	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation_t3')
+		.itemInputs('8x kubejs:dormant_infinity_compound_ingot', 'kubejs:serenity_enhanced_infinity_catalyst')
+		.inputFluids(Fluid.of('gtceu:omnium', 576))
+		.itemOutputs('8x gtceu:infinity_ingot', 'kubejs:dormant_serenity_enhanced_infinity_catalyst')
+		.duration(200)
+		.EUt(1000000)
 		.blastFurnaceTemp(12000)
 
 
@@ -159,7 +175,7 @@ ServerEvents.recipes(event => {
 			'gtceu:tritanium_ingot',
 			'gtceu:duranium_ingot',
 			'gtceu:trinium_ingot',
-			'gtceu:sculk_compound_ingot',
+			'gtceu:cryolobus_ingot',
 			'gtceu:naquadah_ingot',
 			'gtceu:tiny_nether_star_dust',
 		]

@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t9', 
             '8x gtceu:neutron_reflector', 
-            '4x gtceu:resonant_sculk_compound_block', 
+            '4x gtceu:cryococcus_block', 
             'kubejs:stellar_creation_data'
         )
         .itemOutputs(
@@ -279,6 +279,35 @@ ServerEvents.recipes(event => {
 
 // Advanced Microverse II Recipes
 ServerEvents.recipes(event => {
+
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_two_fourth')
+    .itemInputs(
+        'kubejs:microminer_t2', 
+        'gtceu:advanced_power_thruster', 
+        'kubejs:gem_sensor', 
+        '64x kubejs:quantum_flux'
+    )
+    .itemOutputs('64x gtceu:endstone_dilithium_ore', 
+        '64x gtceu:endstone_dilithium_ore', 
+        '64x gtceu:endstone_dilithium_ore',
+        '64x gtceu:endstone_dilithium_ore',
+        '64x gtceu:endstone_certus_quartz_ore',
+        '64x gtceu:endstone_nether_quartz_ore',
+        '64x gtceu:endstone_monazite_ore',
+    )
+    .duration(600)
+    .EUt(62500)
+
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_five_third')
+        .itemInputs('kubejs:microminer_t5', 
+            '4x gtceu:uhv_electric_pump',
+            '16x kubejs:stabilized_americium', 
+            '16x kubejs:quantum_flux', 
+            '16x kubejs:shattered_star_data', )
+        .itemOutputs('32x kubejs:stabilized_oganesson')
+        .duration(900)
+        .EUt(180000)
+
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_seven_first')
         .itemInputs(
             'kubejs:microminer_t7', 
@@ -334,7 +363,7 @@ ServerEvents.recipes(event => {
             'kubejs:lair_of_the_warden_data'
         )
         .itemOutputs(
-            '4x kubejs:abyss_shard',
+            '4x kubejs:hadal_shard',
             '64x minecraft:sculk_catalyst', 
             '32x kubejs:warden_horn'
         )
@@ -358,7 +387,7 @@ ServerEvents.recipes(event => {
             '64x minecraft:dragon_egg', 
             '64x minecraft:dragon_egg', 
             '64x minecraft:dragon_egg', 
-            '64x armorplus:ender_dragon_scale'
+            '64x kubejs:ender_dragon_scale'
         )
         .duration(1750)
         .EUt(62500)
@@ -386,7 +415,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_first')
         .itemInputs(
             'kubejs:microminer_t9', 
-            '4x gtceu:resonant_sculk_compound_block', 
+            '4x gtceu:cryococcus_block', 
             '64x kubejs:stellar_creation_data', 
             '64x kubejs:stellar_creation_data', 
             '64x kubejs:stellar_creation_data', 
@@ -396,11 +425,23 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(250000)
 
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_third')
+        .itemInputs(
+            'kubejs:microminer_t9', 
+            '64x gtceu:gravi_star',
+            '64x gtceu:gravi_star', 
+            '32x kubejs:shattered_star_data'
+        )
+        .itemOutputs('32x kubejs:quasi_stable_neutron_star')
+        .duration(900)
+        .EUt(194387)
+
+
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_first')
         .itemInputs(
             'kubejs:microminer_t10', 
-            '8x gtceu:resonant_sculk_compound_block',
+            '8x gtceu:cryococcus_block',
             'kubejs:universe_creation_data'
         )
         .itemOutputs('kubejs:heart_of_a_universe')
@@ -410,7 +451,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_second')
         .itemInputs(
             'kubejs:microminer_t10', 
-            '16x minecraft:netherite_block',
+            '16x #forge:storage_blocks/netherite',
             '64x kubejs:stellar_creation_data'
         )
         .itemOutputs('kubejs:creative_storage_data')
@@ -430,19 +471,33 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:creative_data_hatch_data')
         .duration(3000)
         .EUt(1000000)
+
 })
 
 // Advanced Microverse III
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_third')
-        .itemInputs(
-            'kubejs:microminer_t9', 
-            '40x gtceu:gravi_star', 
-            '10x kubejs:shattered_star_data'
-        )
-        .itemOutputs('10x kubejs:quasi_stable_neutron_star')
-        .duration(900)
-        .EUt(194387)
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_six_fourth')
+    .itemInputs(
+        'kubejs:microminer_t6', 
+        '16x kubejs:stabilized_californium', 
+        'kubejs:gem_sensor', 
+        '16x kubejs:quantum_flux', 
+    )
+    .itemOutputs('64x gtceu:diamond_perfect',
+                 '64x gtceu:diamond_perfect',
+                 '64x gtceu:diamond_perfect',
+                 '64x gtceu:diamond_perfect',
+                 '64x gtceu:diamond_perfect',
+                 '64x gtceu:ruby_perfect',
+                 '64x gtceu:ruby_perfect',
+                 '64x gtceu:ruby_perfect',
+                 '64x gtceu:ruby_perfect',
+                 '64x gtceu:cinnabar_perfect',
+                 '64x gtceu:cinnabar_perfect'
+
+    )
+    .duration(500)
+    .EUt(62500)
 
         event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_forth')
         .itemInputs(
@@ -475,21 +530,39 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(2000000)
 
-    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_five_third')
-        .itemInputs('kubejs:microminer_t5', '4x gtceu:uhv_electric_pump','16x kubejs:stabilized_americium', '16x kubejs:quantum_flux', '16x kubejs:shattered_star_data', )
-        .itemOutputs('32x kubejs:stabilized_oganesson')
-        .duration(900)
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_four_fourth')
+        .itemInputs('kubejs:microminer_t4', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '64x kubejs:ultra_dense_hydrogen', '1x gtceu:data_module', '1x gtceu:uhv_sensor')
+        .itemOutputs('64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data') 
+        .duration(600)
         .EUt(180000)
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_second')
         .itemInputs('kubejs:microminer_t11','4x gtceu:max_battery', '2x solarflux:sp_custom_infinity', 'gtceu:uiv_energy_output_hatch','4x kubejs:universe_creation_data',  '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data') // could be increased 
         .itemOutputs('kubejs:creative_energy_data')
         .duration(1200)
-        .EUt(12000000)
+        .EUt(8000000)
+
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_third')
+        .itemInputs('kubejs:microminer_t11', 
+            '64x gtceu:gravi_star',
+            '64x gtceu:gravi_star',
+            '64x gtceu:gravi_star',
+            '64x gtceu:gravi_star',
+            'kubejs:shattered_universe_data')
+        .itemOutputs('64x kubejs:quasi_stable_neutron_star', 
+            '64x kubejs:quasi_stable_neutron_star', 
+            '64x kubejs:quasi_stable_neutron_star', 
+            '64x kubejs:quasi_stable_neutron_star',
+            '64x kubejs:quasi_stable_neutron_star', 
+            '64x kubejs:quasi_stable_neutron_star', 
+            '64x kubejs:quasi_stable_neutron_star', 
+            '64x kubejs:quasi_stable_neutron_star')
+        .duration(600)
+        .EUt(1000000)
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_twelve_first')
-        .itemInputs('kubejs:microminer_t12', '16x gtceu:infinity_ingot', '4x kubejs:universe_creation_data')
-        .itemOutputs('16x gtceu:monium_ingot')
+        .itemInputs('kubejs:microminer_t12', '64x gtceu:infinity_ingot', '4x kubejs:universe_creation_data')
+        .itemOutputs('64x gtceu:monium_ingot')
         .duration(1200)
         .EUt(32000000)
 })
@@ -524,8 +597,7 @@ ServerEvents.recipes(event => {
     var projector = [
         ['basic_microverse_projector', '#gtceu:circuits/hv'],
         ['advanced_microverse_projector', '#gtceu:circuits/ev'],
-        ['advanced_microverse_projector_ii', '#gtceu:circuits/iv'],
-        ['hyperbolic_microverse_projector', '#gtceu:circuits/uev']
+        ['advanced_microverse_projector_ii', '#gtceu:circuits/iv']
     ]
 
     projector.forEach(projector => {
@@ -541,4 +613,21 @@ ServerEvents.recipes(event => {
         }
         ).id(`kubejs:${projector[0]}`)
     })
+
+    event.recipes.extendedcrafting.shaped_table(
+        'gtceu:hyperbolic_microverse_projector', [
+        'EPFPE',
+        'PALAP',
+        'FLRLF',
+        'PALAP',
+        'EPFPE'
+    ], {
+        E: 'gtceu:uv_field_generator',
+        P: 'gtceu:double_microversium_plate',
+        F: 'gtceu:uhv_emitter',
+        L: 'kubejs:microverse_casing',
+        A: '#gtceu:circuits/uev',
+        R: 'gtceu:computer_monitor_cover'
+    }
+    ).id('kubejs:shaped/hyperbolic_microverse_projector')
 })

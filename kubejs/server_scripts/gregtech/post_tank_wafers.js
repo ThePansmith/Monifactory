@@ -66,9 +66,9 @@ ServerEvents.recipes(event => {
         .EUt(128000)
 
         event.recipes.gtceu.large_chemical_reactor("multidimensional_cpu_wafer")
-        .itemInputs('4x kubejs:unactivated_multidimensional_cpu_wafer', '64x kubejs:quantum_flux', 'kubejs:quasi_stable_neutron_star')
+        .itemInputs('16x kubejs:unactivated_multidimensional_cpu_wafer', '64x kubejs:quantum_flux', 'kubejs:quasi_stable_neutron_star')
         .inputFluids(Fluid.of('gtceu:xenon', 1000))
-        .itemOutputs('4x kubejs:multidimensional_cpu_wafer')
+        .itemOutputs('16x kubejs:multidimensional_cpu_wafer')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(900)
         .EUt(250000)
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
         .EUt(128000)
 
         event.recipes.gtceu.circuit_assembler("activated_hyperdynamic_ram_chip")
-        .itemInputs('4x kubejs:hyperdynamic_ram_chip_base', '12x #gtceu:circuits/ulv', '4x gtceu:advanced_smd_transistor', '12x gtceu:fine_netherite_wire')
+        .itemInputs('4x kubejs:hyperdynamic_ram_chip_base', '2x kubejs:matter_processing_unit', '4x gtceu:advanced_smd_transistor', '12x gtceu:fine_holmium_wire')
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('4x kubejs:hyperdynamic_ram_chip')
         .cleanroom(CleanroomType.CLEANROOM)

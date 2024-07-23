@@ -69,10 +69,10 @@ ServerEvents.recipes(event => {
     // Stack upgrades
 
     var stackupgrade = [
-        ['stack_upgrade_tier_1', 'gtceu:vibrant_alloy', 'upgrade_base'],
-        ['stack_upgrade_tier_2', 'gtceu:lumium', 'stack_upgrade_tier_1'],
-        ['stack_upgrade_tier_3', 'gtceu:sculk_compound', 'stack_upgrade_tier_2'],
-        ['stack_upgrade_tier_4', 'gtceu:omnium', 'stack_upgrade_tier_3']
+        ['stack_upgrade_tier_1', 'gtceu:energetic_alloy', 'upgrade_base'],
+        ['stack_upgrade_tier_2', 'gtceu:stainless_steel', 'stack_upgrade_tier_1'],
+        ['stack_upgrade_tier_3', 'gtceu:tungsten_steel', 'stack_upgrade_tier_2'],
+        ['stack_upgrade_tier_4', 'gtceu:osmiridium', 'stack_upgrade_tier_3']
     ]
     event.remove({ output: 'sophisticatedbackpacks:stack_upgrade_starter_tier' })
     event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_1_plus' })
@@ -84,8 +84,8 @@ ServerEvents.recipes(event => {
             'IUI',
             'BIB'
         ], {
-            I: material[1] + '_ingot',
-            B: material[1] + '_block',
+            I: material[1] + '_plate',
+            B: material[1] + '_gear',
             U: 'sophisticatedbackpacks:' + material[2]
         })
 
@@ -95,11 +95,25 @@ ServerEvents.recipes(event => {
             'IUI',
             'BIB'
         ], {
-            I: material[1] + '_ingot',
-            B: material[1] + '_block',
+            I: material[1] + '_plate',
+            B: material[1] + '_gear',
             U: 'sophisticatedstorage:' + material[2]
         })
+
     })
+
+    event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_5'})
+    event.shaped('sophisticatedstorage:stack_upgrade_tier_5', [
+        'III',
+        'IUI',
+        'BIB'
+    ], {
+        I: 'gtceu:naquadah_alloy_plate',
+        B: 'gtceu:naquadah_alloy_gear',
+        U: 'sophisticatedstorage:stack_upgrade_tier_4'
+    }),
+
+    
 
 
     event.remove({ output: 'sophisticatedstorage:hopper_upgrade' })

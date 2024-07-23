@@ -74,7 +74,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["45B743CB23CA5735"]
 			description: ["Your first source of &6Ender Pearls&r could be &6Ender Lillies&r. However, that is too manual and slow for the purpose &6Ender Pearls&r are needed for here. Instead, you can make a net-positive &6Pulsating Polymer Clay&r setup that uses &6Enderman Data Models&r to produce &6Ender Pearls&r. A Self-Aware &6Enderman Data Model&r can supply enough &6Ender Pearls&r to support the running of 6.2 other models."]
 			id: "50FB5E0B0E0B142F"
 			tasks: [{
@@ -86,7 +85,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"The best source of &6Cobblestone&r is &bThermal &6Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r. "
 				""
@@ -169,7 +167,7 @@
 		}
 		{
 			dependencies: ["2968DF8A3A0EBF89"]
-			description: ["Search your &6Gravel&r for &6Flint&r. The only main thing you'll need this for is &6Storage Downgrades&r."]
+			description: ["Search your &6Gravel&r for &6Flint&r."]
 			id: "483B16F4D4291C82"
 			subtitle: "&oThis step requires a Sifter at voltage &lLV&r&o or higher.&r"
 			tasks: [{
@@ -208,7 +206,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
 				""
@@ -282,7 +279,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"&6Lava&r can be achieved in two main ways. The first is using a &3Chemical Reactor&r to turn &6Magma Blocks&r into &6Lava&r. The second is using a &bGregTech &6Fluid Drill&r in the Nether above a &6Lava&r vein."
 				""
@@ -372,7 +368,7 @@
 		}
 		{
 			dependencies: ["3380CBA4E4010EEC"]
-			description: ["Compact your &6Sand&r into &6Sandstone&r. It is recommended to use &3Mechanical Crafters&r or &6Compacting Drawers&r."]
+			description: ["Compact your &6Sand&r into &6Sandstone&r. It is recommended to use &3EnderIO Crafters&r or &6Compacting Drawers&r."]
 			id: "21654B6E703A2923"
 			tasks: [{
 				id: "105B371C4873CAEB"
@@ -571,7 +567,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"The best source of &6Cobblestone&r is &bThermal &6Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r."
 				""
@@ -596,7 +591,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
 				""
