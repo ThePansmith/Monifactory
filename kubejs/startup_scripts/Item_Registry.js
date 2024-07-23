@@ -22,7 +22,19 @@ StartupEvents.registry('item', event => {
     event.create('microminer_t11').maxStackSize(16).parentModel("kubejs:item/microverse/microminer_t11").texture("kubejs:item/microverse/microminer_t11_base")
     event.create('microminer_t12').maxStackSize(16).texture("kubejs:item/microverse/microminer_t12")
 
-    
+    const pristine_matter = [
+        ['1', '#c0c0b0'],
+        ['2', '#f5f5f1'],
+        ['3', '#736055'],
+        ['4', '#f17d3d'],
+        ['4half', '#eef487'],
+        ['5', '#fccc6a'],
+        ['6', '#58a14e'],
+        ['7', '#173639'],
+        ['8', '#dcdbe4'],
+        ['8half', '#4ebcef']
+    ]
+
     if (!isNormalMode) {
         event.create('stabilized_microminer_t1').maxStackSize(16).texture("kubejs:item/microverse/microminer_t1").glow(true) // temporarily make stabilized miners just glow until new textures are made
         event.create('stabilized_microminer_t2').maxStackSize(16).texture("kubejs:item/microverse/microminer_t2").glow(true)
@@ -34,20 +46,8 @@ StartupEvents.registry('item', event => {
         event.create('stabilized_microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7").glow(true)
         event.create('stabilized_microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8").glow(true)
         event.create('stabilized_microminer_t8half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half").glow(true)
-        const pristine_matter_reg = [
-            ['1', '#c0c0b0'],
-            ['2', '#f5f5f1'],
-            ['3', '#736055'],
-            ['4', '#f17d3d'],
-            ['4half', '#eef487'],
-            ['5', '#fccc6a'],
-            ['6', '#58a14e'],
-            ['7', '#173639'],
-            ['8', '#dcdbe4'],
-            ['8half', '#4ebcef']
-        ]
     
-        for (const [tier, color] of pristine_matter_reg) {
+        for (const [tier, color] of pristine_matter) {
             event.create(`pristine_matter_t${tier}`)
                 .textureJson({ layer0: 'kubejs:item/prediction' })
                 .color(0, color)
