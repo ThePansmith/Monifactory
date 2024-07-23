@@ -1,21 +1,74 @@
 StartupEvents.registry("block", event => {
-    event.create('excitationcoil', 'cardinal').displayName("Excitation Coil").soundType('metal').renderType('cutout').box(3, 0, 3, 13, 1, 13).tag("mineable/pickaxe").box(4, 1, 4, 12, 9, 12);
-    event.create('dust', 'falling').soundType('sand').hardness(0.4).resistance(0.4).tag("mineable/shovel").displayName("Dust Block").property(BlockProperties.FALLING);
-    event.create('starry_diamond_block').displayName("Starry Diamond Block").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true).textureAll('kubejs:block/microverse/starry_diamond_block');
-    event.create('dark_steel_machine_hull').displayName("Dark Steel Machine Hull").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('infinity_dust_block', 'falling').displayName('Infinity Dust Block').soundType('sand').resistance(6).hardness(5).tagBlock("mineable/shovel").requiresTool(true);
-    event.create('compressed_infinity_dust_block', 'falling').displayName('Compressed Infinity Dust Block').soundType('sand').resistance(6).hardness(5).tagBlock("mineable/shovel").requiresTool(true);
-    event.create('double_compressed_infinity_dust_block', 'falling').displayName('Double Compressed Infinity Dust Block').soundType('sand').resistance(6).hardness(5).tagBlock("mineable/shovel").requiresTool(true);
-    event.create('dense_oilsands_ore').displayName('Dense Oilsands Ore').soundType('stone').resistance(6).hardness(5).tagBlock("mineable/shovel").requiresTool(true);
-    event.create('empowerer_casing').displayName("Empowerer Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('compressed_sand').displayName("Compressed Sand").soundType('sand').resistance(1).hardness(1).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING);
-    event.create('double_compressed_sand').displayName("Double Compressed Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING);
-    event.create('compressed_red_sand').displayName("Compressed Red Sand").soundType('sand').resistance(1).hardness(1).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING);
-    event.create('double_compressed_red_sand').displayName("Double Compressed Red Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING);
-    event.create('warp_core').displayName("Warp Core").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('warp_controller').displayName("Warp Controller").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('universal_warp_core').displayName("Universal Warp Core").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
-    event.create('universal_warp_controller').displayName("Universal Warp Controller").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
+    event.create('starry_diamond_block')
+        .displayName("Starry Diamond Block")
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe").requiresTool(true)
+        .textureAll('kubejs:block/microverse/starry_diamond_block');
+
+    event.create('dense_oilsands_ore')
+        .displayName('Dense Oilsands Ore')
+        .soundType('stone')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/shovel").requiresTool(true);
+
+    event.create('empowerer_casing')
+        .displayName("Empowerer Casing")
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe").requiresTool(true);
+
+    event.create('dust', 'falling')
+        .soundType('sand')
+        .hardness(0.4).resistance(0.4)
+        .tag("mineable/shovel").displayName("Dust Block")
+        .property(BlockProperties.FALLING);
+
+    event.create('compressed_sand')
+        .displayName("Compressed Sand")
+        .soundType('sand')
+        .resistance(1).hardness(1)
+        .tagBlock("mineable/shovel").requiresTool(true)
+        .property(BlockProperties.FALLING);
+
+    event.create('double_compressed_sand')
+        .displayName("Double Compressed Sand")
+        .soundType('sand')
+        .resistance(2).hardness(2)
+        .tagBlock("mineable/shovel").requiresTool(true)
+        .property(BlockProperties.FALLING);
+
+    event.create('compressed_red_sand')
+        .displayName("Compressed Red Sand")
+        .soundType('sand')
+        .resistance(1).hardness(1)
+        .tagBlock("mineable/shovel").requiresTool(true)
+        .property(BlockProperties.FALLING);
+
+    event.create('double_compressed_red_sand')
+        .displayName("Double Compressed Red Sand")
+        .soundType('sand')
+        .resistance(2).hardness(2)
+        .tagBlock("mineable/shovel").requiresTool(true)
+        .property(BlockProperties.FALLING);
+
+    event.create('infinity_dust_block', 'falling')
+        .displayName('Infinity Dust Block')
+        .soundType('sand')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/shovel").requiresTool(true);
+
+    event.create('compressed_infinity_dust_block', 'falling')
+        .displayName('Compressed Infinity Dust Block')
+        .soundType('sand')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/shovel").requiresTool(true);
+
+    event.create('double_compressed_infinity_dust_block', 'falling')
+        .displayName('Double Compressed Infinity Dust Block')
+        .soundType('sand')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/shovel").requiresTool(true);
 
     // Micro Miner Cores
     event.create('electrum_micro_miner_core')
@@ -72,6 +125,30 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .defaultCutout();
 
+    event.create('warp_core')
+        .displayName("Warp Core")
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe").requiresTool(true);
+
+    event.create('warp_controller')
+        .displayName("Warp Controller")
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe").requiresTool(true);
+
+    event.create('universal_warp_core')
+        .displayName("Universal Warp Core")
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe").requiresTool(true);
+        
+    event.create('universal_warp_controller')
+        .displayName("Universal Warp Controller")
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe").requiresTool(true);
+
     //Dense Ores
     const ores = [
         'redstone_ore',
@@ -93,6 +170,7 @@ StartupEvents.registry("block", event => {
 			.resistance(6)
 			.hardness(5)
 			.tagBlock('mineable/pickaxe')
+            .tagBlock('forge:ores/dense')
 			.tagBlock('forge:ores/dense_' + ore)
 			.requiresTool(true);
 	}
@@ -103,19 +181,26 @@ StartupEvents.registry("block", event => {
 			.resistance(6)
 			.hardness(5)
 			.tagBlock('mineable/pickaxe')
+            .tagBlock('forge:ores/dense')
 			.tagBlock('forge:ores/dense_magma')
 			.requiresTool(true)
             .lightLevel(1.0);
 
-    //EMERGENCY FIX
-    /*event.create('gtceu:dilithium_ore')
-		.soundType('stone')
-		.hardness(2)
-		.resistance(2)
-		.tagBlock("mineable/pickaxe")
-		.requiresTool();*/
-
     //Casing stuff
+
+    event.create('excitationcoil', 'cardinal')
+        .displayName("Excitation Coil")
+        .soundType('metal')
+        .renderType('cutout')
+        .box(3, 0, 3, 13, 1, 13)
+        .box(4, 1, 4, 12, 9, 12)
+        .tag("mineable/pickaxe").requiresTool(true);
+
+    event.create('dark_steel_machine_hull')
+        .displayName("Dark Steel Machine Hull")
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe").requiresTool(true);
 
     event.create("microverse_casing", 'gtceu:renderer')
         .displayName("Microverse Casing")
@@ -125,7 +210,6 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/microverse/casing')})
-
     
     event.create('cryolobus_casing', 'gtceu:renderer')
         .displayName("Cryolobus Casing")
@@ -163,7 +247,7 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_fusion_coil')})
 
-        event.create("dark_soularium_casing", 'gtceu:renderer')
+    event.create("dark_soularium_casing", 'gtceu:renderer')
         .displayName("Dark Soularium Casing")
         .soundType('metal')
         .hardness(2.5)
