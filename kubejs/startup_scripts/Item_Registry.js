@@ -34,7 +34,7 @@ StartupEvents.registry('item', event => {
         event.create('stabilized_microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7").glow(true)
         event.create('stabilized_microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8").glow(true)
         event.create('stabilized_microminer_t8half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half").glow(true)
-        const pristine_matter = [
+        const pristine_matter_reg = [
             ['1', '#c0c0b0'],
             ['2', '#f5f5f1'],
             ['3', '#736055'],
@@ -47,7 +47,7 @@ StartupEvents.registry('item', event => {
             ['8half', '#4ebcef']
         ]
     
-        for (const [tier, color] of pristine_matter) {
+        for (const [tier, color] of pristine_matter_reg) {
             event.create(`pristine_matter_t${tier}`)
                 .textureJson({ layer0: 'kubejs:item/prediction' })
                 .color(0, color)
