@@ -25,6 +25,7 @@ ServerEvents.recipes(event => {
     supercomp('thermal/thermal_elemental', 'overworld', 256)
     supercomp('shulker', 'end', 128)
     supercomp('wither_skeleton', 'nether', 256)
+    supercomp('ender_dragon', 'end', 1666)
     supercomp('slime', 'overworld', 16)
     supercomp('skeleton', 'overworld', 16)
     supercomp('blaze', 'nether', 256)

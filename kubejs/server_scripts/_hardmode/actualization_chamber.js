@@ -238,11 +238,11 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t4half')
             .circuit(4)
             .itemOutputs(
-                '64x kubejs:deep_dark_data',
-                '64x kubejs:deep_dark_data',
-                '64x kubejs:deep_dark_data',
-                '64x kubejs:deep_dark_data',
-                'minecraft:sculk_shrieker'
+                '64x kubejs:dragon_lair_data',
+                '64x kubejs:dragon_lair_data',
+                '64x kubejs:dragon_lair_data',
+                '64x kubejs:dragon_lair_data',
+                'minecraft:dragon_head'
             )
             .duration(780)
             .EUt(30720)
@@ -335,7 +335,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t6')
             .circuit(3)
             .itemOutputs(
-                '32x minecraft:sculk_catalyst'
+                '32x minecraft:dragon_egg'
             )
             .duration(780)
             .EUt(30720)
@@ -347,7 +347,7 @@ ServerEvents.recipes(event => {
                 '32x kubejs:warden_heart', 
                 '64x minecraft:sculk_catalyst', 
                 '64x minecraft:sculk_catalyst', 
-                '64x minecraft:sculk_catalyst',
+                '64x kubejs:warden_horn', 
                 '64x kubejs:warden_horn', 
                 '64x kubejs:warden_horn', 
                 '64x kubejs:warden_horn', 
@@ -385,6 +385,21 @@ ServerEvents.recipes(event => {
             .EUt(30720)
 
         event.recipes.gtceu.actualization_chamber('pristine_t8_two')
+            .itemInputs('kubejs:pristine_matter_t8')
+            .circuit(2)
+            .itemOutputs(
+                '64x minecraft:dragon_egg', 
+                '64x minecraft:dragon_egg', 
+                '64x minecraft:dragon_egg', 
+                '64x minecraft:dragon_egg', 
+                '64x minecraft:dragon_egg', 
+                '64x minecraft:dragon_egg', 
+                '64x kubejs:ender_dragon_scale'
+            )
+            .duration(780)
+            .EUt(30720)
+
+        event.recipes.gtceu.actualization_chamber('pristine_t8_three')
             .itemInputs('kubejs:pristine_matter_t8')
             .circuit(3)
             .itemOutputs(

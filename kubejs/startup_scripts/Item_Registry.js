@@ -110,6 +110,7 @@ StartupEvents.registry('item', event => {
 
     //Data
     event.create('impossible_realm_data').displayName("§bImpossible Realm Data")
+    event.create('dragon_lair_data').displayName("§dDragon Lair Data")
     event.create('wither_realm_data').displayName("§dWither Realm Data")
     event.create('deep_dark_data').displayName("§dDeep Dark Data")
     event.create('lair_of_the_warden_data').displayName("§dLair Of The Warden Data")
@@ -274,6 +275,7 @@ StartupEvents.registry('item', event => {
     //I hate ArmorPlus
     //Me too - WithersChat
     event.create('guardian_scale').rarity('rare').displayName("Guardian Scale")
+    event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
     event.create('wither_bone').displayName("Wither Bone")
     event.create('the_ultimate_material').displayName("The Ultimate Material")
 

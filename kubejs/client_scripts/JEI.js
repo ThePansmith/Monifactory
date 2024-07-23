@@ -182,10 +182,6 @@ JEIEvents.hideItems(event => {
 
     //Laserio
     event.hide(['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'])
-
-    // Hide dragon stuff that doesn't want to get removed fsr
-    event.hide(Item.of('hostilenetworks:data_model', '{data_model:{data:6,id:\"hostilenetworks:ender_dragon\"}}'))
-    event.hide(Item.of('hostilenetworks:prediction', '{data_model: {id: \"hostilenetworks:ender_dragon\"}}'))
 })
 
 JEIEvents.addItems(event => {

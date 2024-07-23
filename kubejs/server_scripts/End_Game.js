@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
     event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells' })
     event.recipes.gtceu.chemical_reactor("kubejs_stem_cells")
-        .itemInputs('minecraft:sculk_catalyst')
+        .itemInputs('minecraft:dragon_egg')
         .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500')
         .itemOutputs('64x gtceu:stem_cells', '64x gtceu:stem_cells')
         .outputFluids('gtceu:bacterial_sludge 500')
