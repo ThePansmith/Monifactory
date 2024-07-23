@@ -26,7 +26,8 @@ const includeList = [
   "config",
   "defaultconfigs",
   "config-overrides",
-  "kubejs"
+  "kubejs",
+  "mods"
 ]
 
 /**
