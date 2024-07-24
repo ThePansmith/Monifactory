@@ -119,6 +119,8 @@ ServerEvents.recipes(event => {
         .duration(140)
         .EUt(30)
 
+    //Replace default GTCEu glowstone separation recipe to match mixing recipe
+    event.replaceOutput({ id: "gtceu:centrifuge/glowstone_separation" }, 'minecraft:redstone', 'gtceu:tricalcium_phosphate_dust')
     event.recipes.gtceu.mixer("kubejs:glowstone_dust")
         .itemInputs('gtceu:tricalcium_phosphate_dust', '#forge:dusts/gold')
         .itemOutputs('2x minecraft:glowstone_dust')
@@ -145,6 +147,8 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(1920)
 
+    //Remove old rhodium plated palladium recipe
+    event.remove({ id: "gtceu:mixer/rhodium_plated_palladium" })
     event.recipes.gtceu.mixer("kubejs:rhodium_plated_palladium_dust")
         .itemInputs('3x gtceu:palladium_dust', 'gtceu:rhodium_dust', '2x gtceu:lumium_dust')
         .itemOutputs('6x gtceu:rhodium_plated_palladium_dust')
