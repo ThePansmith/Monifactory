@@ -717,6 +717,30 @@ ServerEvents.recipes(event => {
     .duration(40)
     .EUt(30)
 
+    //Cleanroom Hatch
+    event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning'})
+    event.shaped(
+        "gtceu:cleaning_maintenance_hatch", [
+        'CMC',
+        'RHR',
+        'WCW'
+    ], {
+        R: "gtceu:luv_robot_arm",
+        W: "gtceu:niobium_titanium_single_cable",
+        M: "gtceu:auto_maintenance_hatch",
+        H: "gtceu:luv_machine_hull",
+        C: "#gtceu:circuits/luv"
+    })
+    
+    //ZPM Field Gen
+    event.remove({ id: 'gtceu:assembly_line/field_generator_zpm'})
+    event.recipes.gtceu.assembly_line('kubejs:assembly_line/zpm_field_generator')
+    .itemInputs('gtceu:naquadah_alloy_frame','6x gtceu:naquadah_alloy_plate', 'gtceu:quantum_star','2x gtceu:zpm_emitter','2x #gtceu:circuits/zpm','64x gtceu:fine_uranium_rhodium_dinaquadide_wire', '64x gtceu:fine_uranium_rhodium_dinaquadide_wire','4x gtceu:vanadium_gallium_single_cable')
+    .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:cryococcus 1152')
+    .itemOutputs('gtceu:zpm_field_generator')
+    .duration(600)
+    .EUt(24000)
+    .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
 
 })
  
