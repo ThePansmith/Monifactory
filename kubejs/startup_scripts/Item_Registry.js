@@ -284,7 +284,7 @@ StartupEvents.registry('item', event => {
     event.create('pulsating_dust').displayName("Pulsating Dust")
 
     // Sculk Items
-    event.create('warden_horn').displayName("Warden Horn")
+    event.create('warden_horn').displayName("Warden Tendril")
     event.create('mesol_core')
     event.create('bathyal_core')
     event.create('abyssal_core')
