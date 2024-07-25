@@ -202,6 +202,8 @@ JEIEvents.addItems(event => {
     //NuclearCraft
     event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust'])
 
+    // Hide debug item(s)
+event.hide('kubejs:debug_ctm_block')
 })
 
 JEIEvents.hideFluids(event => {

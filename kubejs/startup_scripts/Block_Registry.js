@@ -284,6 +284,13 @@ StartupEvents.registry("block", event => {
         .soundType('metal')
 
 
+    event.create('debug_ctm_block', 'gtceu:renderer')
+        .hardness(5)
+        .requiresTool(true)
+        .soundType('metal')
+        .tagBlock("mineable/pickaxe")
+        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/debug/ctm_block')})
+
 });
 
 // StartupEvents.registry('block', event => {
