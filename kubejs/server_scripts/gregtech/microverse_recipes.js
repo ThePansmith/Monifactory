@@ -314,10 +314,10 @@ ServerEvents.recipes(event => {
             '64x kubejs:dilithium_crystal', 
             '64x kubejs:dilithium_crystal',  
             'kubejs:gem_sensor', 
-            '64x kubejs:wither_realm_data', 
-            '64x kubejs:wither_realm_data', 
-            '64x kubejs:wither_realm_data', 
-            '64x kubejs:wither_realm_data'
+            '64x kubejs:deep_dark_data', 
+            '64x kubejs:deep_dark_data', 
+            '64x kubejs:deep_dark_data', 
+            '64x kubejs:deep_dark_data'
         )
         .itemOutputs('kubejs:lair_of_the_warden_data')
         .duration(1500)
