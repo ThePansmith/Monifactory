@@ -410,6 +410,14 @@ if (isHarderMode) {
         .duration(200)
         .EUt(30)
 
+    // Conduit Binder Composite Mixer Recipe
+    event.recipes.gtceu.mixer("kubejs:conduit_binder_composite")
+        .itemInputs('2x minecraft:clay_ball', '3x minecraft:gravel', '2x #minecraft:smelts_to_glass')
+        .itemOutputs('8x enderio:conduit_binder_composite')
+        .duration(64)
+        .EUt(7)
+
+
     // Enchanter
     event.remove({ output: ['enderio:enchanter'] })
     event.shaped(
