@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
     Reactor('kubejs_reaction_casing', 'moni_multiblocks:abyssal_coil_block', ['moni_multiblocks:bathyal_coil_block', '2x minecraft:nether_star', '2x kubejs:bathyal_core', '2x minecraft:dragon_egg'], '0.00001', 120000000)
     Reactor('abyssal_energy_core', 'kubejs:abyssal_energy_core', ['kubejs:bathyal_energy_core', '4x gtceu:cryococcus_ingot', '2x kubejs:abyssal_core', '2x gtceu:energy_module', '2x gtceu:restonia_empowered_block'], '0.00000001', 419430000)
     Reactor('cryococcus_block', '5x gtceu:cryococcus_block', ['5x gtceu:cryolobus_block', '4x kubejs:bathyal_core', '2x kubejs:warden_heart'], '0.00001', 24000000000)
-    Reactor('abyssal_core', 'kubejs:abyssal_core', ['minecraft:nether_star', '4x kubejs:bathyal_core', '2x gtceu:cryococcus_block'], '0.00001', 3000000000)
+    Reactor('abyssal_core', 'kubejs:abyssal_core', ['minecraft:nether_star', '4x kubejs:bathyal_core', '2x gtceu:cryococcus_block', 'kubejs:stabilized_einsteinium'], '0.00001', 3000000000)
     Reactor('hadal_core', 'kubejs:hadal_core', ['minecraft:nether_star', '4x kubejs:hadal_shard', '2x gtceu:neutronium_ingot', '2x gtceu:omnium_ingot'], '0.000000000001', 30000000000)
     Reactor('hadal_warp_engine', 'kubejs:hadal_warp_engine', ['gtceu:cryococcus_frame', 'kubejs:warp_engine', 'gtceu:cryococcus_plate', '2x gtceu:cryolobus_plate', 'kubejs:bathyal_core', 'gtceu:zpm_field_generator', 'kubejs:abyssal_energy_core', 'kubejs:hadal_shard'], '0.000000000001', 30000000000)
 })

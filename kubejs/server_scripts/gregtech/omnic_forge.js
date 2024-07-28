@@ -85,4 +85,30 @@ ServerEvents.recipes(event => {
         .duration(1000)
         .EUt(1966080)
 
+        //Simplified Crafting
+        event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_dark_soularium_thruster')
+        .itemInputs('4x gtceu:dark_soularium_plate', '6x gtceu:vibrant_alloy_plate', '2x enderio:ender_crystal', '2x enderio:prescient_crystal', 'enderio:cryolobus_conduit', 'kubejs:flight_control_unit')
+        .itemOutputs(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}'))
+        .duration(100)
+        .EUt(7680)
+
+        event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_flux_thruster')
+        .itemInputs('3x redstone_arsenal:flux_plating', '4x gtceu:enderium_plate', '2x gtceu:signalum_plate', 'thermal:dynamo_numismatic', 'kubejs:glowstone_elevation_unit', 'kubejs:cryotheum_coolant_unit')
+        .itemOutputs(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}'))
+        .duration(50)
+        .EUt(7680)
+
+        event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_ultra_dense_hydrogen')
+        .itemInputs('64x kubejs:solidified_hydrogen')
+        .itemOutputs('kubejs:ultra_dense_hydrogen')
+        .duration(20)
+        .EUt(120)
+
+        event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_quantum_flux')
+        .itemInputs('redstone_arsenal:flux_gem', '2x kubejs:primal_mana', '2x minecraft:dragon_breath', 'minecraft:wither_skeleton_skull')
+        .itemOutputs('32x kubejs:quantum_flux')
+        .duration(50)
+        .EUt(1920)
+
+
 })

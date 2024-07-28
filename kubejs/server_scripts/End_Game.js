@@ -52,6 +52,14 @@ ServerEvents.recipes(event => {
     .duration(300)
     .EUt(491250)
 
+    // Fluxed Electrum Mixer Recipe
+    event.recipes.gtceu.mixer("mixer_electrum_flux")
+    .itemInputs("6x gtceu:trinium_dust", "gtceu:lumium_dust",  "gtceu:signalum_dust")
+    .itemOutputs("8x gtceu:electrum_flux_dust")
+    .circuit(2)
+    .duration(300)
+    .EUt(129)
+
     // Atomic Casing Buff
     event.remove({ id: 'gcyr:shaped/casing_atomic' })
     event.remove({ id: 'gcyr:assembler/casing_atomic' })

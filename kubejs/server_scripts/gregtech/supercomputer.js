@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     ////// Machine Recipe //////
 
     event.recipes.gtceu.assembly_line('simulation_supercomputer')
-        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:sim_chamber', '#gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_field_generator', 'kubejs:resonant_energy_core')
+        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:sim_chamber', '#gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_field_generator', 'kubejs:abyssal_energy_core')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('gtceu:simulation_supercomputer')
         // .stationResearch(b => b.researchStack(Item.of('hostilenetworks:simulaton_chamber')).EUt(1966080).CWUt(8192))
