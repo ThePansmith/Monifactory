@@ -215,18 +215,34 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(3750)
 
-    event.recipes.gtceu.advanced_microverse('kubejs:t_five_first')
-        .itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
-        .itemOutputs(
-            '64x gtceu:endstone_cooperite_ore', 
-            '64x gtceu:endstone_cooperite_ore', 
-            '64x gtceu:naquadah_ore', 
-            '64x gtceu:naquadah_ore', 
-            '64x gtceu:naquadah_ore', 
-            '48x gtceu:kaemanite_ore'
-        )
-        .duration(1000)
-        .EUt(7500)
+	if (isNormalMode) {
+		event.recipes.gtceu.advanced_microverse('kubejs:t_five_first')
+			.itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
+			.itemOutputs(
+				'64x gtceu:endstone_cooperite_ore', 
+				'64x gtceu:endstone_cooperite_ore', 
+				'64x gtceu:naquadah_ore', 
+				'64x gtceu:naquadah_ore', 
+				'64x gtceu:naquadah_ore', 
+				'48x gtceu:kaemanite_ore'
+			)
+			.duration(1000)
+			.EUt(7500)
+	} else  {
+		event.recipes.gtceu.advanced_microverse('kubejs:t_five_first')
+			.itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
+			.itemOutputs(
+				'64x gtceu:pollucite_ore', 
+				'64x gtceu:pollucite_ore', 
+				'64x gtceu:snowchestite_ore', 
+				'64x gtceu:snowchestite_ore', 
+				'64x gtceu:snowchestite_ore',
+				'64x gtceu:snowchestite_ore',				
+				'48x gtceu:kaemanite_ore'
+			)
+			.duration(1000)
+			.EUt(7500)	
+	}
 
     event.recipes.gtceu.advanced_microverse('kubejs:t_five_second')
         .itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_uranium')
