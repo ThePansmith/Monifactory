@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
     Reactor('bathyal_core', 'kubejs:bathyal_core', ['gtceu:emeradic_empowered_block', '4x kubejs:mesol_core', '2x gtceu:nether_star_block', '5x nuclearcraft:quartz_heat_sink'], '0.1', 175544000)
     Reactor('hadal_solar', '2x solarflux:sp_custom_hadal', ['kubejs:hadal_core', '2x solarflux:sp_custom_abyssal', '2x kubejs:abyssal_energy_core'], '0.000000000001', 13421760000)
     Reactor('nt_solar', 'solarflux:sp_custom_neutronium', ['solarflux:sp_custom_hadal', '4x kubejs:hadal_core', '4x gtceu:sculk_superconductor_single_wire', '2x gtceu:omnium_block'], '0.000000000001', 30000000000)
-    Reactor('abyssal_solar', '2x solarflux:sp_custom_abyssal', ['kubejs:abyssal_energy_core', '4x solarflux:sp_custom_bathyal', '4x enderio:sculk_superconductor_conduit', '2x minecraft:bathyal_energy_core'], '0.00000001', 16777200000)
+    Reactor('abyssal_solar', '2x solarflux:sp_custom_abyssal', ['kubejs:abyssal_energy_core', '4x solarflux:sp_custom_bathyal', '4x enderio:sculk_superconductor_conduit', '2x kubejs:bathyal_energy_core'], '0.00000001', 16777200000)
     Reactor('bathyal_solar', '2x solarflux:sp_custom_bathyal', ['kubejs:bathyal_energy_core', '4x solarflux:sp_8', '4x enderio:cryolobus_conduit', '2x gtceu:cryolobus_block'], '0.00001', 8388600000)
     Reactor('abyssal_reaction_casing', 'moni_multiblocks:hadal_coil_block', ['moni_multiblocks:abyssal_coil_block', '4x gtceu:neutronium_ingot', '4x kubejs:hadal_shard', '2x gtceu:crystal_matrix_block', '2x gtceu:void_empowered_block'], '0.00000001', 400000000)
     Reactor('kubejs_reaction_casing', 'moni_multiblocks:abyssal_coil_block', ['moni_multiblocks:bathyal_coil_block', '2x minecraft:nether_star', '2x kubejs:bathyal_core', '2x minecraft:dragon_egg'], '0.00001', 120000000)
