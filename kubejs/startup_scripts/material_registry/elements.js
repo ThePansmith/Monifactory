@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x042228).iconSet('metallic')
         .blastTemp(6800, 'higher')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME)
-        .cableProperties(524288, 1, 0, true);
+        .cableProperties(524288, 8, 0, true);
 
     event.create("cryococcus")
         .ingot().fluid()
