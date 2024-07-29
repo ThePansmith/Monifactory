@@ -255,13 +255,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.arc_furnace("sterile_filter_recycling")
         .itemInputs("gtceu:sterilizing_filter_casing")
         .inputFluids("gtceu:oxygen 1265")
-        .itemOutputs("4x gtceu:iridium_ingot", "2x gtceu:black_steel_ingot", "6x gtceu:small_ash_dust")
+        .itemOutputs("4x gtceu:iridium_ingot", "2x gtceu:tritanium_ingot", "6x gtceu:small_ash_dust")
         .duration(691)
         .EUt(30)
 
     event.recipes.gtceu.macerator("sterile_filter_crushing")
         .itemInputs("gtceu:sterilizing_filter_casing")
-        .itemOutputs("12x gtceu:polybenzimidazole_dust", "4x gtceu:iridium_dust", "2x gtceu:black_steel_dust")
+        .itemOutputs("12x gtceu:polybenzimidazole_dust", "4x gtceu:iridium_dust", "2x gtceu:tritanium_dust")
         .duration(696)
         .EUt(32)
 
@@ -725,11 +725,11 @@ ServerEvents.recipes(event => {
         'RHR',
         'WCW'
     ], {
-        R: "gtceu:luv_robot_arm",
-        W: "gtceu:niobium_titanium_single_cable",
+        R: "gtceu:iv_robot_arm",
+        W: "gtceu:graphene_single_cable",
         M: "gtceu:auto_maintenance_hatch",
-        H: "gtceu:luv_machine_hull",
-        C: "#gtceu:circuits/luv"
+        H: "gtceu:iv_machine_hull",
+        C: "#gtceu:circuits/iv"
     })
     
     //ZPM Field Gen
@@ -741,6 +741,19 @@ ServerEvents.recipes(event => {
     .duration(600)
     .EUt(24000)
     .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
+
+    // Quantum Ring Assembler Recipes
+    event.recipes.gtceu.assembler('kubejs:quantum_ring')
+        .itemInputs('4x gtceu:stainless_steel_plate', '2x ae2:calculation_processor', '2x ae2:engineering_processor', 'gtceu:quantum_star')
+        .itemOutputs('ae2:quantum_ring')
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.assembler('kubejs:quantum_link')
+        .itemInputs('4x ae2:fluix_pearl', '4x ae2:quartz_glass', 'gtceu:certus_quartz_plate')
+        .itemOutputs('ae2:quantum_link')
+        .duration(100)
+        .EUt(30)
 
 })
  
