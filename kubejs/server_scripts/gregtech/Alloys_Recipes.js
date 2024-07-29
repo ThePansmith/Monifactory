@@ -265,6 +265,14 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .blastFurnaceTemp(1200)
 
+    // End Steel
+    event.recipes.gtceu.mixer("kubejs:end_steel_dust")
+        .itemInputs('gtceu:dark_steel_dust', 'gtceu:blue_steel_dust', '#forge:dusts/endstone')
+        .itemOutputs('3x gtceu:end_steel_dust')
+        .duration(260)
+        .EUt(120)
+
+
 	// moni ceu 1.7 normal
 	event.recipes.gtceu.electric_blast_furnace('kubejs:dark_soularium_ingot')
 		.itemInputs('#forge:ingots/soularium', '#forge:ingots/dark_steel')
