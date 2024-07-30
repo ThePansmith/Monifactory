@@ -2324,8 +2324,6 @@
 			description: [
 				"Glowing! &2But all the GTCEu machines glow already, so...&r"
 				""
-				"This one takes a significant amount of time to cook, so make sure to have it going constantly."
-				""
 				"Wires made from &6Lumium&r transmit IV power losslessly, and it forms part of the basis for &6LuV Machine Hulls&r."
 			]
 			id: "54C3B1B782FDF57F"
