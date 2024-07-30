@@ -755,5 +755,47 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
+    // Draconically Enhanced Gasoline consumption
+    event.recipes.gtceu.combustion_generator('dqtel_gasoline_generator')
+    .inputFluids('gtceu:dqtel_gasoline 1')
+    .duration(320)
+    .EUt(-256)
+
+    // Draconically Enhanced Gasoline
+    event.recipes.gtceu.large_chemical_reactor('kubejs:dntel_gasoline')
+    .itemInputs('3x gtceu:netherrack_dust', '2x minecraft:dragon_breath')
+    .inputFluids('gtceu:high_octane_gasoline 8000', 'gtceu:rocket_fuel 5000', 'gtceu:chlorine_triflouride 2000', 'gtceu:tetraethyllead 1000')
+    .outputFluids('gtceu:dntel_gasoline 16000')
+    .duration(200)
+    .EUt(7680)
+    .circuit(24)
+
+    event.recipes.gtceu.chemical_reactor('kubejs:chloroethane')
+    .inputFluids('gtceu:ethylene 1000', 'gtceu:hydrochloric_acid 1000')
+    .outputFluids('gtceu:chloroethane 2000')
+    .duration(60)
+    .EUt(30)
+    .circuit(4)
+
+    event.recipes.gtceu.chemical_reactor('kubejs:tetraethyllead')
+    .itemInputs('4x gtceu:sodium_lead_alloy_dust')
+    .inputFluids('gtceu:chloroethane 4000')
+    .outputFluids('gtceu:tetraethyllead 1000')
+    .itemOutputs('4x gtceu:salt_dust', '3x gtceu:lead_dust')
+    .duration(300)
+    .EUt(480)
+
+    event.recipes.gtceu.chemical_reactor('kubejs:chlorine_triflouride')
+    .inputFluids('gtceu:fluorine 3000', 'gtceu:chlorine 1000')
+    .outputFluids('gtceu:chlorine_triflouride 2000')
+    .duration(60)
+    .EUt(7)
+
+    event.recipes.gtceu.mixer('kubejs:sodium_lead_alloy')
+    .itemInputs('gtceu:sodium_dust', 'gtceu:lead_dust')
+    .itemOutputs('2x gtceu:sodium_lead_alloy_dust')
+    .duration(200)
+    .EUt(7)
+
 })
  
