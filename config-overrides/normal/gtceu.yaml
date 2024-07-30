@@ -81,8 +81,12 @@ recipes:
   # Default: false
   harderCircuitRecipes: false
 
+  # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
+  # Default: true
+  enchantedTools: true
+
 worldgen:
-  # Rubber Tree spawn chance (% per chunk)
+  # Rubber Tree spawn chance (decimal % per chunk)
   # Default: 0.5
   rubberTreeSpawnChance: 0.5
 
@@ -161,7 +165,7 @@ machines:
 
   # Energy use multiplier for prospectors.
   # Default: 100
-  prospectorEnergyUseMultiplier: 0
+  prospectorEnergyUseMultiplier: 100
 
   # Whether machines or boilers damage the terrain when they explode.
   # Note machines and boilers always explode when overloaded with power or met with special conditions, regardless of this config.
@@ -233,7 +237,7 @@ machines:
   # WARNING: THIS IS NO LONGER SUPPORTED AND WILL BE REMOVED!
   # This option only exists to provide backwards compatibility until the Processing Array will be removed in 1.3.0
   # Default: false
-  doProcessingArray: true
+  doProcessingArray: false
 
   # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
   # Default: false
@@ -253,6 +257,15 @@ machines:
   # Other mods can override this to true, regardless of the config file.
   # Default: false
   highTierContent: true
+
+  # Whether the Assembly Line should require the item inputs to be in order.
+  # Default: true
+  orderedAssemblyLineItems: true
+
+  # Whether the Assembly Line should require the fluid inputs to be in order.
+  # (Requires Ordered Assembly Line Item Inputs to be enabled.)
+  # Default: false
+  orderedAssemblyLineFluids: false
 
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
@@ -376,6 +389,10 @@ gameplay:
   # Default: true
   environmentalHazards: false
 
+  # How much environmental hazards decay per chunk, per tick.
+  # Default: 0.001
+  environmentalHazardDecayRate: 0.001
+
   # Whether the GTCEu's ingame guidebook, 'Compass', be enabled.
   # WARNING: INCOMPLETE
   # Default: false
@@ -430,6 +447,10 @@ compat:
   # Whether Gregtech should remove smelting recipes from the vanilla furnace for ingots requiring the Electric Blast Furnace.
   # Default: true
   removeSmeltingForEBFMetals: true
+
+  # Whether dimension marker should show dimension tier.
+  # Default: false
+  showDimensionTier: false
 
 dev:
   # Debug general events? (will print recipe conficts etc. to server's debug.log)
