@@ -58,7 +58,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(3600, 'mid', 480, 900)
         .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, []))
         .cableProperties(2048, 4, 0, true)
-        .components('dark_steel', 'endstone', 'blue_steel')
+        .components('dark_steel', 'endstone', 'vibrant_alloy')
 
     event.create("dark_soularium")
         .ingot()

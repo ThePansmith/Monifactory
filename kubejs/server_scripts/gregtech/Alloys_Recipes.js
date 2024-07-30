@@ -47,11 +47,6 @@ ServerEvents.recipes(event => {
 		'gtceu:electrical_steel_ingot', 6, 16);
 
 	alloySmeltingVariant(
-		['#forge:ingots/dark_steel', '#forge:dusts/dark_steel'],
-		['minecraft:end_stone', '#forge:dusts/endstone'], // apparently we have dusts/end_stone (doesnt work)
-		'gtceu:end_steel_ingot', 15, 2000);
-
-	alloySmeltingVariant(
 		['#forge:ingots/steel', '#forge:dusts/steel'],
 		['#forge:dusts/boron'],
 		'2x nuclearcraft:ferroboron_ingot', 15, 120);
@@ -267,7 +262,7 @@ ServerEvents.recipes(event => {
 
     // End Steel
     event.recipes.gtceu.mixer("kubejs:end_steel_dust")
-        .itemInputs('gtceu:dark_steel_dust', 'gtceu:blue_steel_dust', '#forge:dusts/endstone')
+        .itemInputs('gtceu:dark_steel_dust', 'gtceu:vibrant_alloy_dust', '#forge:dusts/endstone')
         .itemOutputs('3x gtceu:end_steel_dust')
         .duration(260)
         .EUt(120)
