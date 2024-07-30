@@ -276,6 +276,7 @@ StartupEvents.registry('item', event => {
     //Me too - WithersChat
     event.create('guardian_scale').rarity('rare').displayName("Guardian Scale")
     event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
+    event.create('ender_dragon_scale_dust')
     event.create('wither_bone').displayName("Wither Bone")
     event.create('the_ultimate_material').displayName("The Ultimate Material")
 
@@ -365,19 +366,19 @@ StartupEvents.registry('item', event => {
     }
     
     Unit('matter'),
-    Circuit('matter', 'processor_computer', "UHV"),
-    Circuit('matter', 'processor_assembly', "UV"),
     Circuit('matter', 'processor', "ZPM"),
+    Circuit('matter', 'processor_assembly', "UV"),
+    Circuit('matter', 'processor_computer', "UHV"),
     Mainframe('matter', "UEV"),
     Unit('dimensional'),
-    Circuit('dimensional', 'processor_computer', "UEV"),
-    Circuit('dimensional', 'processor_assembly', "UHV"),
     Circuit('dimensional', 'processor', "UV"),
+    Circuit('dimensional', 'processor_assembly', "UHV"),
+    Circuit('dimensional', 'processor_computer', "UEV"),
     Mainframe('dimensional', "UIV"),
     Unit('monic'),
-    Circuit('monic', 'processor_computer', "UIV"),
-    Circuit('monic', 'processor_assembly', "UEV"),
     Circuit('monic', 'processor', "UHV"),
+    Circuit('monic', 'processor_assembly', "UEV"),
+    Circuit('monic', 'processor_computer', "UIV"),
     Mainframe('monic', "§9MAX")
 
     //Smores
