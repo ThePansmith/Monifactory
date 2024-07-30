@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(4000, 'mid', 7680, 1400)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
 		.components('4x annealed_copper', '2x ardite', '2x red_alloy')
-        .cableProperties(32768, 2, 0, true)
+        .cableProperties(32768, 1, 0, true)
 
     event.create("lumium")
         .ingot().fluid()
@@ -33,7 +33,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(4500, 'mid', 4800, 1000)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
 		.components('4x tin_alloy', '2x sterling_silver')
-        .cableProperties(8192, 2, 0, true)
+        .cableProperties(8192, 1, 0, true)
         .fluidPipeProperties(4500, 256, true, true, true, false)
 
     event.create("enderium")
@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(6400, 'highest', 30720, 1600)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
 		.components('4x lead', '2x platinum', 'blue_steel', 'osmium')
-        .cableProperties(131072, 2, 0, true)
+        .cableProperties(131072, 1, 0, true)
 
     event.create("electrum_flux")
         .ingot().fluid()

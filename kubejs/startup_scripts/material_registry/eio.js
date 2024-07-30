@@ -57,16 +57,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
         .blastTemp(3600, 'mid', 480, 900)
         .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, []))
-        .cableProperties(2048, 4, 0, true)
+        .cableProperties(2048, 1, 0, true)
         .components('dark_steel', 'endstone', 'vibrant_alloy')
 
     event.create("dark_soularium")
         .ingot()
         .color(0x7c674d).iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_DENSE)
-
-    event.create("stellar_alloy")
-        .ingot().fluid()
-        .cableProperties(8192, 4, 0, true)
-        .color(0xc5c8c8).iconSet('metallic')
 })

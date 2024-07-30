@@ -149,7 +149,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xbbddbd)
         .iconSet('elemental_reduction_fluid')
     
-    event.create("dntel_gasoline")
+    event.create("jean_gasoline")
         .fluid()
 		.color(0xF16AA5)
         
