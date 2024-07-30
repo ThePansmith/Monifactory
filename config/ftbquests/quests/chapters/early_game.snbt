@@ -980,6 +980,7 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["1A30472430354F1E"]
 			description: ["An advanced component used for the Circuit Assembling Machine."]
 			id: "3E42B4AAA6D2A05B"
 			rewards: [{
