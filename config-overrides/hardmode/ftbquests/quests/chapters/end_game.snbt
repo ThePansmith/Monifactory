@@ -2377,12 +2377,13 @@
 			id: "19084E91F357C8C2"
 			size: 2.0d
 			tasks: [{
-				id: "46BC97C650ECA03A"
+				id: "25F7D8080E9B62C1"
 				item: "kubejs:creative_energy_data"
+				title: "Creative Energy"
 				type: "item"
 			}]
 			title: "&9Creative Power"
-			x: 43.75d
+			x: 41.75d
 			y: -26.75d
 		}
 		{
@@ -3040,7 +3041,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "3BE677A49268E12B"
-				item: "gtceu:creative_data_access_hatch"
+				item: "kubejs:creative_data_hatch_data"
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
@@ -3210,20 +3211,6 @@
 			title: "&9Epic Crafting Table"
 			x: 36.5d
 			y: -4.75d
-		}
-		{
-			dependencies: ["1B1D3A66B847D129"]
-			description: ["The &6Hypogen Reactor&r is a even stronger version of the &9Hypogen Reactor&r, capable of running hundreds of recipes at once."]
-			id: "6138FB8766AD6F8C"
-			size: 2.0d
-			tasks: [{
-				id: "0BE78C6BD408CFEB"
-				item: "gtceu:hypogean_reactor"
-				type: "item"
-			}]
-			title: "&9Hypogen Reactor"
-			x: 41.75d
-			y: -26.75d
 		}
 		{
 			dependencies: [
