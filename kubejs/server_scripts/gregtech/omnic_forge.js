@@ -105,8 +105,8 @@ ServerEvents.recipes(event => {
         .EUt(120)
 
         event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_quantum_flux')
-        .itemInputs('redstone_arsenal:flux_gem', '2x kubejs:primal_mana', '2x minecraft:dragon_breath', 'minecraft:wither_skeleton_skull')
-        .itemOutputs('32x kubejs:quantum_flux')
+        .itemInputs('redstone_arsenal:flux_gem', '4x kubejs:primal_mana', '2x minecraft:dragon_breath', 'gtceu:nether_star_dust')
+        .itemOutputs('64x kubejs:quantum_flux')
         .duration(50)
         .EUt(1920)
 

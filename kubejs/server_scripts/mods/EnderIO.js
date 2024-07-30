@@ -379,13 +379,6 @@ if (isHarderMode) {
         .duration(200)
         .EUt(32)
 
-    // Stellar Alloy
-    event.recipes.gtceu.alloy_smelter('kubejs:stellar_alloy')
-        .itemInputs('gtceu:end_steel_ingot', '8x enderio:grains_of_infinity')
-        .itemOutputs('gtceu:stellar_alloy_ingot')
-        .duration(200)
-        .EUt(2000)
-
     // Remove useless/op conduit recipes from enderio
     event.remove({ input: '#enderio:fused_quartz', output: 'enderio:pressurized_fluid_conduit' })
     event.remove({ input: 'gtceu:vibrant_alloy_ingot', output: 'enderio:ender_fluid_conduit' })

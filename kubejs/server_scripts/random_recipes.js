@@ -255,13 +255,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.arc_furnace("sterile_filter_recycling")
         .itemInputs("gtceu:sterilizing_filter_casing")
         .inputFluids("gtceu:oxygen 1265")
-        .itemOutputs("4x gtceu:iridium_ingot", "2x gtceu:black_steel_ingot", "6x gtceu:small_ash_dust")
+        .itemOutputs("1x gtceu:iridium_ingot", "4x gtceu:tritanium_nugget", "6x gtceu:small_ash_dust")
         .duration(691)
         .EUt(30)
 
     event.recipes.gtceu.macerator("sterile_filter_crushing")
         .itemInputs("gtceu:sterilizing_filter_casing")
-        .itemOutputs("12x gtceu:polybenzimidazole_dust", "4x gtceu:iridium_dust", "2x gtceu:black_steel_dust")
+        .itemOutputs("3x gtceu:polybenzimidazole_dust", "gtceu:iridium_dust", "gtceu:small_tritanium_dust")
         .duration(696)
         .EUt(32)
 
@@ -730,11 +730,11 @@ ServerEvents.recipes(event => {
         'RHR',
         'WCW'
     ], {
-        R: "gtceu:luv_robot_arm",
-        W: "gtceu:niobium_titanium_single_cable",
+        R: "gtceu:iv_robot_arm",
+        W: "gtceu:graphene_single_cable",
         M: "gtceu:auto_maintenance_hatch",
-        H: "gtceu:luv_machine_hull",
-        C: "#gtceu:circuits/luv"
+        H: "gtceu:iv_machine_hull",
+        C: "#gtceu:circuits/iv"
     })
     
     //ZPM Field Gen
@@ -746,6 +746,61 @@ ServerEvents.recipes(event => {
     .duration(600)
     .EUt(24000)
     .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
+
+    // Quantum Ring Assembler Recipes
+    event.recipes.gtceu.assembler('kubejs:quantum_ring')
+        .itemInputs('4x gtceu:stainless_steel_plate', '2x ae2:calculation_processor', '2x ae2:engineering_processor', 'gtceu:quantum_star')
+        .itemOutputs('ae2:quantum_ring')
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.assembler('kubejs:quantum_link')
+        .itemInputs('4x ae2:fluix_pearl', '4x ae2:quartz_glass', 'gtceu:certus_quartz_plate')
+        .itemOutputs('ae2:quantum_link')
+        .duration(100)
+        .EUt(30)
+
+    // JEAN Gasoline consumption
+    event.recipes.gtceu.combustion_generator('jean_gasoline_generator')
+    .inputFluids('gtceu:jean_gasoline 1')
+    .duration(320)
+    .EUt(-256)
+
+    // JEAN Gasoline
+    event.recipes.gtceu.large_chemical_reactor('kubejs:jean_gasoline')
+    .itemInputs('3x gtceu:netherrack_dust', '2x minecraft:dragon_breath')
+    .inputFluids('gtceu:high_octane_gasoline 8000', 'gtceu:rocket_fuel 5000', 'gtceu:chlorine_triflouride 2000', 'gtceu:tetraethyllead 1000')
+    .outputFluids('gtceu:jean_gasoline 16000')
+    .duration(200)
+    .EUt(7680)
+    .circuit(24)
+
+    event.recipes.gtceu.chemical_reactor('kubejs:chloroethane')
+    .inputFluids('gtceu:ethylene 1000', 'gtceu:hydrochloric_acid 1000')
+    .outputFluids('gtceu:chloroethane 2000')
+    .duration(60)
+    .EUt(30)
+    .circuit(4)
+
+    event.recipes.gtceu.chemical_reactor('kubejs:tetraethyllead')
+    .itemInputs('4x gtceu:sodium_lead_alloy_dust')
+    .inputFluids('gtceu:chloroethane 4000')
+    .outputFluids('gtceu:tetraethyllead 1000')
+    .itemOutputs('4x gtceu:salt_dust', '3x gtceu:lead_dust')
+    .duration(300)
+    .EUt(480)
+
+    event.recipes.gtceu.chemical_reactor('kubejs:chlorine_triflouride')
+    .inputFluids('gtceu:fluorine 3000', 'gtceu:chlorine 1000')
+    .outputFluids('gtceu:chlorine_triflouride 2000')
+    .duration(60)
+    .EUt(7)
+
+    event.recipes.gtceu.mixer('kubejs:sodium_lead_alloy')
+    .itemInputs('gtceu:sodium_dust', 'gtceu:lead_dust')
+    .itemOutputs('2x gtceu:sodium_lead_alloy_dust')
+    .duration(200)
+    .EUt(7)
 
 })
  

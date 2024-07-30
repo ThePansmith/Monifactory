@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
     // Fluxed Electrum Mixer Recipe
     event.recipes.gtceu.mixer("mixer_electrum_flux")
-    .itemInputs("6x gtceu:trinium_dust", "gtceu:lumium_dust",  "gtceu:signalum_dust")
+    .itemInputs("6x gtceu:electrum_dust", "gtceu:lumium_dust",  "gtceu:signalum_dust")
     .itemOutputs("8x gtceu:electrum_flux_dust")
     .circuit(2)
     .duration(300)
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
 
     // Sterilising Filter Casing
     event.shaped(
-        'gtceu:sterilizing_filter_casing', [
+        '4x gtceu:sterilizing_filter_casing', [
             'PEP',
             'FBF',
             'MSR'
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
             M: 'gtceu:luv_electric_motor',
             P: 'gtceu:polybenzimidazole_large_fluid_pipe',
             R: 'gtceu:iridium_rotor', 
-            S: 'gtceu:black_steel_frame'
+            S: 'gtceu:tritanium_frame'
         }
     ).id('gtceu:shaped/filter_casing_sterile')
 
@@ -184,6 +184,12 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
         .itemInputs('kubejs:mote_of_omnium', 'minecraft:tnt')
         .itemOutputs('gtceu:omnium_nugget')
+        .duration(20)
+        .EUt(30)
+
+    event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget_itnt")
+        .itemInputs('4x kubejs:mote_of_omnium', 'gtceu:industrial_tnt')
+        .itemOutputs('4x gtceu:omnium_nugget')
         .duration(20)
         .EUt(30)
 
