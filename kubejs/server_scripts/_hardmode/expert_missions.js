@@ -199,6 +199,8 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dragon_lair_data',
                 '64x kubejs:dragon_lair_data',
                 '64x kubejs:dragon_lair_data',
+                '64x minecraft:dragon_breath',
+                '64x minecraft:dragon_breath',
                 'minecraft:dragon_head'
             )
             .duration(100*20)
