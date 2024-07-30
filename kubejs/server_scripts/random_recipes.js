@@ -255,13 +255,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.arc_furnace("sterile_filter_recycling")
         .itemInputs("gtceu:sterilizing_filter_casing")
         .inputFluids("gtceu:oxygen 1265")
-        .itemOutputs("4x gtceu:iridium_ingot", "2x gtceu:tritanium_ingot", "6x gtceu:small_ash_dust")
+        .itemOutputs("1x gtceu:iridium_ingot", "4x gtceu:tritanium_nugget", "6x gtceu:small_ash_dust")
         .duration(691)
         .EUt(30)
 
     event.recipes.gtceu.macerator("sterile_filter_crushing")
         .itemInputs("gtceu:sterilizing_filter_casing")
-        .itemOutputs("12x gtceu:polybenzimidazole_dust", "4x gtceu:iridium_dust", "2x gtceu:tritanium_dust")
+        .itemOutputs("3x gtceu:polybenzimidazole_dust", "gtceu:iridium_dust", "gtceu:small_tritanium_dust")
         .duration(696)
         .EUt(32)
 
