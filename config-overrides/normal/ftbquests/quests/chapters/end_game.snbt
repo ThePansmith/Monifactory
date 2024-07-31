@@ -415,7 +415,6 @@
 			tasks: [{
 				id: "25F7D8080E9B62C1"
 				item: "kubejs:creative_energy_data"
-				title: "Creative Energy"
 				type: "item"
 			}]
 			title: "&9Creative Power"
