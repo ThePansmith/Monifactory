@@ -74,6 +74,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["57E7182198B2EA9A"]
 			description: ["Your first source of &6Ender Pearls&r could be &6Ender Lillies&r. However, that is too manual and slow for the purpose &6Ender Pearls&r are needed for here. Instead, you can make a net-positive &6Pulsating Polymer Clay&r setup that uses &6Enderman Data Models&r to produce &6Ender Pearls&r. A Self-Aware &6Enderman Data Model&r can supply enough &6Ender Pearls&r to support the running of 6.2 other models."]
 			id: "50FB5E0B0E0B142F"
 			tasks: [{
@@ -85,6 +86,12 @@
 			y: -1.5d
 		}
 		{
+			dependencies: [
+				"57E7182198B2EA9A"
+				"2EC4EF1BEEA578F3"
+				"0B37518A984D386F"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"The best source of &6Cobblestone&r is &bThermal &6Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r. "
 				""
@@ -567,6 +574,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["57E7182198B2EA9A"]
 			description: [
 				"The best source of &6Cobblestone&r is &bThermal &6Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r."
 				""
@@ -591,6 +599,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["57E7182198B2EA9A"]
 			description: [
 				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
 				""
