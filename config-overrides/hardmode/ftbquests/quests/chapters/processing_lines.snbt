@@ -9,84 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"2B4F44E19AA7A1B6"
-				"72861B317663600B"
-			]
-			description: [
-				"The final step. Combine &6Pulsating Dust&r and &6Resonant Clathrate&r to make &6Pulsating Polymer Clay&r. "
-				""
-				"Take note that a &3&3Chemical Reactor&r making &6Resonant Clathrate&r will supply 1 &3Alloy Smelter&r of the same tier, and that one &bMV &3Alloy Smelter&r making &6Pulsating Polymer Clay&r supports 10.03 &3Simulation Chambers&r, with each higher tier doubling the amount of &3Simulation Chambers&r it supports."
-			]
-			id: "261F7D50E23B0789"
-			size: 2.0d
-			subtitle: "&oThis step requires a Alloy Smelter at voltage &lLV&r&o or higher.&r"
-			tasks: [{
-				id: "6D25E047579465DD"
-				item: "hostilenetworks:prediction_matrix"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -3.75d
-		}
-		{
-			dependencies: [
-				"500B77982B9CDF9B"
-				"3BC7B5321B707F78"
-			]
-			description: ["Combine your &6Quartz&r and &6Resonant Ender&r to make &6Resonant Clathrate&r. One &3Electrolyser&r making &6Quartz&r supports one &3Chemical Reactor &rof the same tier."]
-			id: "3E90A188715DA88A"
-			size: 1.5d
-			subtitle: "&oThis step requires a Chemical Reactor at voltage &lMV&r&o or higher.&r"
-			tasks: [{
-				id: "122706C284BF4311"
-				item: "kubejs:resonant_clathrate"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["3E90A188715DA88A"]
-			description: ["Smelt your &6Resonant Clathrate&r into &6Pulsating Dust&r. If you're using a &3Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r. You can fuel them with &6Sugar Cane&r. You might want to keep it as a &3Electric Furnace&r, depending on your circumstance. "]
-			id: "2B4F44E19AA7A1B6"
-			subtitle: "&oThis step requires a Furnace"
-			tasks: [{
-				id: "39B409F800210783"
-				item: "kubejs:pulsating_dust"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["50FB5E0B0E0B142F"]
-			description: ["Melt your &6Ender Pearls&r into &6Resonant Ender&r."]
-			icon: "kubejs:resonant_ender_bucket"
-			id: "500B77982B9CDF9B"
-			subtitle: "&oThis step requires an Extractor of tier &lLV&r&o or higher.&r"
-			tasks: [{
-				id: "6B06F7499D051242"
-				type: "checkmark"
-			}]
-			title: "Resonant Ender"
-			x: -2.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["45B743CB23CA5735"]
-			description: ["Your first source of &6Ender Pearls&r could be &6Ender Lillies&r. However, that is too manual and slow for the purpose &6Ender Pearls&r are needed for here. Instead, you can make a net-positive &6Pulsating Polymer Clay&r setup that uses &6Enderman Data Models&r to produce &6Ender Pearls&r. A Self-Aware &6Enderman Data Model&r can supply enough &6Ender Pearls&r to support the running of 6.2 other models."]
-			id: "50FB5E0B0E0B142F"
-			tasks: [{
-				id: "3B35A9161911CB96"
-				item: "minecraft:ender_pearl"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"The best source of &6Cobblestone&r is &bThermal &6Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r. "
 				""
@@ -208,7 +130,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
 				""
@@ -282,7 +203,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["45B743CB23CA5735"]
 			description: [
 				"&6Lava&r can be achieved in two main ways. The first is using a &3Chemical Reactor&r to turn &6Magma Blocks&r into &6Lava&r. The second is using a &bGregTech &6Fluid Drill&r in the Nether above a &6Lava&r vein."
 				""
@@ -488,132 +408,6 @@
 			}]
 			x: 7.0d
 			y: 4.5d
-		}
-		{
-			dependencies: ["6D61F343826FD239"]
-			description: ["Break up your &6Cobblestone&r into &6Gravel&r."]
-			id: "5228EFF7200B4C91"
-			subtitle: "&oThis step requires a Forge Hammer at voltage &lLV&r&o or higher.&r"
-			tasks: [{
-				id: "7981A513A9BBFDC3"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["5228EFF7200B4C91"]
-			description: ["Break up your &6Gravel&r into &6Sand&r."]
-			id: "456239275544A789"
-			subtitle: "&oThis step requires a Forge Hammer at voltage &lLV&r&o or higher.&r"
-			tasks: [{
-				id: "3A229BA671666C89"
-				item: "minecraft:sand"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["456239275544A789"]
-			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r. You can fuel them with &6Sugar Cane&r. The &3Arc Furnace&r doubles your glass though. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
-			id: "749281AED88852C2"
-			subtitle: "&oThis step requires a Furnace"
-			tasks: [{
-				id: "5CB8E13112A61401"
-				item: "minecraft:glass"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["749281AED88852C2"]
-			description: ["Break up your &6Sand&r into &6Quartz&r. An &3Arc Furnace&r making &6Glass&r supports 2.5 &3Electrolysers&r of the same tier. You will need a lot of &6Quartz&r, so its crucial that you passive this."]
-			id: "3BC7B5321B707F78"
-			subtitle: "&oThis step requires a Electrolyser at voltage &lLV&r&o or higher.&r"
-			tasks: [{
-				id: "13EDE5C42D7590D4"
-				item: "minecraft:quartz"
-				type: "item"
-			}]
-			x: -1.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["456239275544A789"]
-			description: ["Break up your &6Sand&r into &6Dust&r."]
-			id: "66CA4A42DD474383"
-			subtitle: "&oThis step requires a Forge Hammer at voltage &lLV&r&o or higher.&r"
-			tasks: [{
-				id: "62CDC0E943DB3904"
-				item: "kubejs:dust"
-				type: "item"
-			}]
-			x: 0.5d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"66CA4A42DD474383"
-				"447E9501E57DA010"
-			]
-			description: ["Combine your &6Dust&r and some &6Water&r to make &6Clay&r.&r "]
-			id: "72861B317663600B"
-			subtitle: "&oThis step requires a Chemical Reactor at voltage &lLV&r&o or higher.&r"
-			tasks: [{
-				id: "1C1DC449620563CB"
-				item: "minecraft:clay"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["45B743CB23CA5735"]
-			description: [
-				"The best source of &6Cobblestone&r is &bThermal &6Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r."
-				""
-				"Also a cheap building block."
-			]
-			disable_toast: true
-			id: "6D61F343826FD239"
-			size: 1.0d
-			tasks: [{
-				id: "44F09B9F2D173993"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:cobblestone"
-					}
-				}
-				title: "Cobblestone"
-				type: "item"
-			}]
-			x: -4.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["45B743CB23CA5735"]
-			description: [
-				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
-				""
-				"Right now, you should probably use the &6Aqueous Accumulator&r."
-				""
-				"In this case, you'll need &9Water&r for &6Clay&r."
-			]
-			icon: "minecraft:water_bucket"
-			id: "447E9501E57DA010"
-			subtitle: "&oYes, there's a quest for &9Water&r."
-			tasks: [{
-				id: "3E5B4CD1CB1ED343"
-				type: "checkmark"
-			}]
-			title: "Water"
-			x: 3.5d
-			y: -6.0d
 		}
 	]
 	title: "Processing Lines"

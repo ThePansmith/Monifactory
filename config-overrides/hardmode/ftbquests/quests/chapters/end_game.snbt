@@ -2209,14 +2209,58 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["65C40A41F29687F4"]
-			description: ["The &9Stablized Microminers &r are a major milestone! These allow for you to reuse microminers, allowing you to refactor your base a bit."]
+			dependencies: ["0F251AF2286FCE0D"]
+			description: ["The &9Stablized Microminers&r are a major milestone! These allow for you to reuse microminers, allowing you to refactor your base a bit."]
 			id: "2D9A95AC50CCB988"
 			size: 2.5d
 			subtitle: "Now this is not the end.\\nIt is not even the beginning of the end.\\nBut it is, perhaps, the end of the beginning."
 			tasks: [{
 				id: "55C6A472371D7AEC"
-				item: "gtceu:creative_tank"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t2"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t3"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t4"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t4half"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t5"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t6"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t7"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t8"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t8half"
+							}
+						]
+					}
+				}
+				title: "Any Stablized Microminer"
 				type: "item"
 			}]
 			title: "&9Stablized Microminers"
@@ -2382,7 +2426,7 @@
 				type: "item"
 			}]
 			title: "&9Creative Power"
-			x: 43.75d
+			x: 41.75d
 			y: -26.75d
 		}
 		{
@@ -3040,29 +3084,12 @@
 			size: 1.5d
 			tasks: [{
 				id: "3BE677A49268E12B"
-				item: "gtceu:creative_data_access_hatch"
+				item: "kubejs:creative_data_hatch_data"
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
 			x: 33.25d
 			y: -16.0d
-		}
-		{
-			dependencies: ["65C40A41F29687F4"]
-			description: [
-				"Changing the circuit value on your newfound &9Subatomic Digital Assembler&r will allow you to assemble &9Creative ME Fluid Cells&r."
-				""
-				"These are kind of like the previous &9infinite cells&r, but you can partition this one in a &6cell workbench&r to tell what fluids it should stock."
-			]
-			id: "2F21C6B6F145EA81"
-			tasks: [{
-				id: "390C1F547BDF7D2B"
-				item: "ae2:creative_fluid_cell"
-				type: "item"
-			}]
-			title: "&9Creative Fluid Cell"
-			x: 31.0d
-			y: -9.5d
 		}
 		{
 			dependencies: ["4155AEBF760C42E8"]
@@ -3210,20 +3237,6 @@
 			title: "&9Epic Crafting Table"
 			x: 36.5d
 			y: -4.75d
-		}
-		{
-			dependencies: ["1B1D3A66B847D129"]
-			description: ["The &6Hypogen Reactor&r is a even stronger version of the &9Hypogen Reactor&r, capable of running hundreds of recipes at once."]
-			id: "6138FB8766AD6F8C"
-			size: 2.0d
-			tasks: [{
-				id: "0BE78C6BD408CFEB"
-				item: "gtceu:hypogean_reactor"
-				type: "item"
-			}]
-			title: "&9Hypogen Reactor"
-			x: 41.75d
-			y: -26.75d
 		}
 		{
 			dependencies: [
@@ -3535,23 +3548,6 @@
 			y: -21.75d
 		}
 		{
-			dependencies: [
-				"4261BDA34D716EC8"
-				"6F9041F256F517A3"
-			]
-			description: ["The first of a couple creative datas, these will allow you to replicate extremely powerful marvels, such as the &9Creative Tank&r."]
-			id: "65C40A41F29687F4"
-			shape: "hexagon"
-			tasks: [{
-				id: "36D8F742C5C59B86"
-				item: "kubejs:creative_tank_data"
-				type: "item"
-			}]
-			title: "&9Creative Fluid Data"
-			x: 31.0d
-			y: -11.5d
-		}
-		{
 			dependencies: ["39A09DA3903C5564"]
 			description: ["These RAM chips will find use in the remaining mainframe recipes."]
 			id: "7AF06CB391779388"
@@ -3635,6 +3631,21 @@
 			}]
 			x: 45.75d
 			y: -18.0d
+		}
+		{
+			dependencies: [
+				"27EBB5AAF8A40F3D"
+				"4261BDA34D716EC8"
+			]
+			description: ["The first of a couple creative datas, these will allow you to replicate extremely powerful marvels, such as &9Omnium&r."]
+			id: "0F251AF2286FCE0D"
+			tasks: [{
+				id: "1CD3CC3EA0D76B52"
+				item: "kubejs:omnic_data"
+				type: "item"
+			}]
+			x: 31.0d
+			y: -11.5d
 		}
 	]
 	title: "End Game"
