@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
     // Sculk Catalyst LCR recipes
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst")
         .notConsumable("minecraft:sculk_catalyst")
-        .itemInputs('4x #forge:cobblestone')
+        .itemInputs('4x #forge:stone')
         .inputFluids("enderio:xp_juice 4000", 'gtceu:plutonium 144')
         .itemOutputs("4x minecraft:sculk_catalyst")
         .duration(1000)
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst_boosted")
         .notConsumable("minecraft:sculk_catalyst")
-        .itemInputs('16x #forge:cobblestone')
+        .itemInputs('16x #forge:stone')
         .inputFluids("enderio:xp_juice 4000", 'gtceu:berkelium 144')
         .itemOutputs("16x minecraft:sculk_catalyst")
         .duration(1000)
