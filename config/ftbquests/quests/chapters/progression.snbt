@@ -6,7 +6,7 @@
 	group: ""
 	icon: "minecraft:writable_book"
 	id: "395B849AC6294153"
-	order_index: 12
+	order_index: 13
 	quest_links: [
 		{
 			id: "7D217833035647CD"
@@ -1682,10 +1682,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"45B743CB23CA5735"
-				"5A07988F5AD20A06"
-			]
+			dependencies: ["5A07988F5AD20A06"]
 			description: ["Crafted from the aforementioned Circuit Boards, these Processing Units will be used to create &6Matter Circuits&r."]
 			id: "0F56F4E642BC2B85"
 			tasks: [{
@@ -1700,7 +1697,6 @@
 		{
 			dependencies: [
 				"4EA1E0D437528747"
-				"45B743CB23CA5735"
 				"7E93D88827F83E1A"
 				"4DF92773C82F4AAC"
 			]
@@ -1717,7 +1713,6 @@
 		}
 		{
 			dependencies: [
-				"45B743CB23CA5735"
 				"2343B68110805282"
 				"434142F777A2CCBE"
 			]
@@ -1798,10 +1793,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"71C7B47DC85AA016"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["71C7B47DC85AA016"]
 			description: [
 				"&2Phenolic Substrates need to be turned into Circuit Boards with Silver before being usable in Circuit production."
 				""
@@ -1855,7 +1847,6 @@
 			dependencies: [
 				"3E42B4AAA6D2A05B"
 				"3B639F4061B00F1A"
-				"45B743CB23CA5735"
 			]
 			description: [
 				"&3Circuit Assemblers&r are the linchpin of your factory, gating progression through the &6Circuits&r. "
@@ -1960,10 +1951,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"6169C04DF463502F"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["6169C04DF463502F"]
 			description: ["With the &3Advanced Circuit Assembling Machine&r, a new theme of Circuits is available."]
 			id: "1F101D4F758ACECB"
 			rewards: [{
@@ -2011,10 +1999,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"417D97D9E3562F45"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["417D97D9E3562F45"]
 			description: [
 				"Better substrates. Using &6Polyvinyl Chloride&r (PVC) instead of &6Polyethylene&r (PE) doubles your yield."
 				""
@@ -2231,10 +2216,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"26ECEC06CCAB3E56"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["26ECEC06CCAB3E56"]
 			description: ["&6Epoxy Circuit Boards&r are a more advanced substrate type that gives you access to &2Nanocircuits, which span tiers three through six."]
 			id: "0B8CE3FBF62B099D"
 			rewards: [{
@@ -2371,10 +2353,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"0B8CE3FBF62B099D"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["0B8CE3FBF62B099D"]
 			description: [
 				"A &6Reinforced Epoxy Resin Sheet&r is made in a &3Chemical Bath&r, not a &3Chemical Reactor&r. The board itself is made in a Chemical Reactor though."
 				""
@@ -2606,10 +2585,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"57A6FE885489C3ED"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["57A6FE885489C3ED"]
 			description: [
 				"That's a lot of foil. &2These use Palladium Foil instead of Electrum now.&r"
 				""
@@ -2720,7 +2696,6 @@
 			dependencies: [
 				"0F6B344C265D1FBB"
 				"4AC51394FB5152E5"
-				"45B743CB23CA5735"
 			]
 			description: ["&2Use the Stem Cells and more advanced materials to build a Neuro Processing Unit. This is used in the first Wetware Circuit."]
 			id: "4FABACAB7C4A74AC"

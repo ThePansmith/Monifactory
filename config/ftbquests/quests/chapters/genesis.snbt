@@ -369,7 +369,7 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"[\"Take a peek at the \",{\"text\":\"End Game quest book tab\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2BEB72BC6C6FB4E9\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the chapter\"}},\". This might seem a bit premature to suggest, but it has a reason.\"]"
+				"[\"Take a peek at the \",{\"text\":\"Elements and Alloys quest book tab\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"25FEB9E61EEC1A96\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the chapter\"}},\". This might seem a bit premature to suggest, but it has a reason.\"]"
 				""
 				"These are quests for a full stack of many of the materials in the game. Those are the materials you'll need to synthesize &5Omnium&r, the basic end game resource. It's the pack's way of letting you know what materials you should be prepared to mass produce as you approach the end."
 				""
@@ -381,7 +381,7 @@
 				id: "647D560D77DBCEA5"
 				type: "checkmark"
 			}]
-			title: "End Game Tab"
+			title: "Elements and Alloys"
 			x: -2.5d
 			y: 4.0d
 		}
@@ -396,7 +396,7 @@
 				""
 				"Later on, you also gain access to &9LaserIO&r, which trades some speed in exchange for allowing rather complex and compact filtering."
 			]
-			icon: "gtceu:steel_small_fluid_pipe"
+			icon: "enderio:pressurized_fluid_conduit"
 			id: "64AAF0CD958D836A"
 			rewards: [{
 				count: 2
