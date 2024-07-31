@@ -10,8 +10,8 @@ on:
         options:
           - "Stable"
           - "Pre-release"
-      prefix:
-        description: "Release Type"
+      cf_type:
+        description: "CF Release Type"
         required: true
         type: choice
         options:
@@ -20,7 +20,7 @@ on:
           - "alpha"
         default: "alpha"
       draft:
-        description: "Draft release"
+        description: "Draft GitHub release (CF release will always be normal)"
         type: boolean
         default: true
       generate_release_notes:
@@ -87,21 +87,16 @@ jobs:
       - name: Determine tag
         id: tag
         run: |
-          if [[ "${{ github.event.inputs.type }}" == "Stable" ]]; then
-            tag="${{needs.pre-build.outputs.version_tag}}"
-          else
-            echo "Unknown type: ${{ github.event.inputs.type }}"
-            exit 1
-          fi
+          tag="${{needs.pre-build.outputs.version_tag}}"
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
         shell: bash
 
       - name: Determine name
         id: name
         run: |
-          if [[ "${{ github.event.inputs.prefix }}" != "" ]]; then
+          if [[ "${{ github.event.inputs.cf_type }}" != "" ]]; then
             # Get prefix first char capitalized
-            prefix=$(echo "${{ github.event.inputs.prefix }}" | awk '{print toupper(substr($0, 1, 1)) tolower(substr($0, 2))}')
+            prefix=$(echo "${{ github.event.inputs.cf_type }}" | awk '{print toupper(substr($0, 1, 1)) tolower(substr($0, 2))}')
             name="${prefix} ${{needs.pre-build.outputs.version}}"
           else
             name="${{needs.pre-build.outputs.version}}"
@@ -173,3 +168,26 @@ jobs:
         run: |
           echo "Release URL: ${{ steps.release.outputs.html_url }}"
         shell: bash
+
+      - name: Get server and client file paths
+        id: filepaths
+        run: |
+          server_file=$(ls artifacts/build-zipzip/*server*.zip)
+          client_file=$(ls artifacts/build-zipzip/*client*.zip)
+          echo "server_file=$server_file" >> "$GITHUB_OUTPUT"
+          echo "client_file=$client_file" >> "$GITHUB_OUTPUT"
+        shell: bash
+
+      - uses: henkelmax/upload-curseforge-modpack-action@v1.0.0
+        if: ${{ inputs.skip_cf_release == false }}
+        with:
+          api-token: ${{ secrets.RELEASE_TOKEN  }}
+          project-id: ${{vars.CF_PROJECT_ID}}
+          modpack-path: "${{steps.filepaths.outputs.client_file}}"
+          modpack-server-path: "${{steps.filepaths.outputs.server_file}}"
+          changelog: "For a detailed changelog, see the GitHub release: ${{ steps.release.outputs.html_url }}"
+          changelog-format: "text"
+          game-version: "1.20.1"
+          display-name: "Monifactory-${{steps.name.outputs.name}}"
+          server-display-name: "Monifactory-${{steps.name.outputs.name}} Server"
+          release-type: ${{ github.event.inputs.cf_type }}
