@@ -20,8 +20,8 @@
 			id: "6DC914192E886D47"
 			linked_quest: "77670BF761084AA2"
 			shape: "hexagon"
-			x: -1.75d
-			y: 12.0d
+			x: 1.5d
+			y: 13.75d
 		}
 	]
 	quests: [
@@ -347,7 +347,7 @@
 			description: [
 				"&6Gregtech&r adds a decent bit of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
 				""
-				"[\"On the topic of crafting, if you are not already familiar with how \", {\"text\": \"recipe viewers\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B200AD6EFF90DFA\" } },\" like EMI or JEI, read that quest first.\"]"
+				"[\"On the topic of crafting, if you are not already familiar with how \", {\"text\": \"recipe viewers\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B200AD6EFF90DFA\" } },\" like EMI or JEI work, read that quest first.\"]"
 				""
 				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
 				""
@@ -945,8 +945,8 @@
 				type: "item"
 			}]
 			title: "&2Primitive Steelworks"
-			x: 1.75d
-			y: 10.25d
+			x: 1.5d
+			y: 9.75d
 		}
 		{
 			dependencies: [
@@ -1060,8 +1060,8 @@
 				}
 			]
 			title: "&9Steam Grinder"
-			x: 1.75d
-			y: 8.5d
+			x: 1.5d
+			y: 7.25d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -1113,8 +1113,8 @@
 				}
 			]
 			title: "&9Steam Foundry"
-			x: -1.75d
-			y: 10.25d
+			x: 1.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
@@ -1138,13 +1138,13 @@
 				item: "telepastries:nether_cake"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 10.25d
+			x: 4.0d
+			y: 9.75d
 		}
 		{
 			dependencies: [
 				"126772F682B282E4"
-				"754C416FB3F5DBDA"
+				"4B43ABA024E9A0B9"
 			]
 			description: [
 				"Going out in search of a &6Rubber Tree&f is a viable option for sure. However, if this isn't appealing, you can also &eshear leaves&f and make &6Plantballs&f out of them. Plantballs smelt into &6Slime&f, and Slime smelts into &6Rubber&f."
@@ -1167,8 +1167,8 @@
 				type: "item"
 			}]
 			title: "Rubber Sheets"
-			x: 3.5d
-			y: 12.0d
+			x: 4.0d
+			y: 12.25d
 		}
 		{
 			dependencies: ["6FB3E3D9CA0F4B30"]
@@ -1286,8 +1286,8 @@
 				type: "item"
 			}]
 			title: "Soft Mallet"
-			x: 4.5d
-			y: 12.0d
+			x: 4.0d
+			y: 13.75d
 		}
 		{
 			dependencies: ["4B338515E84FC51A"]
@@ -1348,7 +1348,7 @@
 			]
 			title: "From Ingots to Wires"
 			x: 0.0d
-			y: 12.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1379,8 +1379,8 @@
 				type: "item"
 			}]
 			title: "&2Cables"
-			x: 1.75d
-			y: 13.75d
+			x: 0.0d
+			y: 12.25d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1474,7 +1474,7 @@
 			]
 			title: "Steam Machines"
 			x: 0.0d
-			y: 10.25d
+			y: 9.75d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
@@ -1517,8 +1517,8 @@
 				}
 			]
 			title: "Molds"
-			x: 1.75d
-			y: 12.0d
+			x: 1.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["754C416FB3F5DBDA"]
@@ -1535,8 +1535,8 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 13.75d
+			x: 2.75d
+			y: 11.0d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -1584,7 +1584,7 @@
 				}
 			]
 			title: "&9Steam Separator"
-			x: -1.75d
+			x: -1.5d
 			y: 8.5d
 		}
 		{
@@ -1654,7 +1654,7 @@
 			}]
 			title: "LV Power Storage"
 			x: 1.5d
-			y: 16.75d
+			y: 17.0d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
@@ -1754,7 +1754,7 @@
 			]
 			title: "Inspector Gadget"
 			x: -2.75d
-			y: 16.75d
+			y: 17.0d
 		}
 		{
 			dependencies: ["06E9B9DDDB245F38"]
@@ -1860,7 +1860,7 @@
 			}]
 			title: "Electromagnet"
 			x: -1.5d
-			y: 16.75d
+			y: 17.0d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
@@ -2172,6 +2172,5 @@
 			y: 8.5d
 		}
 	]
-	subtitle: ["WIP, Harder Mode is not fully playable yet!"]
 	title: "An Even Harder Genesis"
 }

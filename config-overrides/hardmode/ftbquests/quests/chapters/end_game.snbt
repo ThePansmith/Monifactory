@@ -2209,14 +2209,58 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["65C40A41F29687F4"]
-			description: ["The &9Stablized Microminers &r are a major milestone! These allow for you to reuse microminers, allowing you to refactor your base a bit."]
+			dependencies: ["0F251AF2286FCE0D"]
+			description: ["The &9Stablized Microminers&r are a major milestone! These allow for you to reuse microminers, allowing you to refactor your base a bit."]
 			id: "2D9A95AC50CCB988"
 			size: 2.5d
 			subtitle: "Now this is not the end.\\nIt is not even the beginning of the end.\\nBut it is, perhaps, the end of the beginning."
 			tasks: [{
 				id: "55C6A472371D7AEC"
-				item: "gtceu:creative_tank"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t2"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t3"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t4"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t4half"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t5"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t6"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t7"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t8"
+							}
+							{
+								Count: 1b
+								id: "kubejs:stabilized_microminer_t8half"
+							}
+						]
+					}
+				}
+				title: "Any Stablized Microminer"
 				type: "item"
 			}]
 			title: "&9Stablized Microminers"
@@ -2377,9 +2421,8 @@
 			id: "19084E91F357C8C2"
 			size: 2.0d
 			tasks: [{
-				id: "25F7D8080E9B62C1"
+				id: "46BC97C650ECA03A"
 				item: "kubejs:creative_energy_data"
-				title: "Creative Energy"
 				type: "item"
 			}]
 			title: "&9Creative Power"
@@ -3049,23 +3092,6 @@
 			y: -16.0d
 		}
 		{
-			dependencies: ["65C40A41F29687F4"]
-			description: [
-				"Changing the circuit value on your newfound &9Subatomic Digital Assembler&r will allow you to assemble &9Creative ME Fluid Cells&r."
-				""
-				"These are kind of like the previous &9infinite cells&r, but you can partition this one in a &6cell workbench&r to tell what fluids it should stock."
-			]
-			id: "2F21C6B6F145EA81"
-			tasks: [{
-				id: "390C1F547BDF7D2B"
-				item: "ae2:creative_fluid_cell"
-				type: "item"
-			}]
-			title: "&9Creative Fluid Cell"
-			x: 31.0d
-			y: -9.5d
-		}
-		{
 			dependencies: ["4155AEBF760C42E8"]
 			description: ["Made in the &dOmnic Forge&r, these coils can heat up to 12500K, allowing them to smelt everything."]
 			id: "7C4E04E3EA603000"
@@ -3522,23 +3548,6 @@
 			y: -21.75d
 		}
 		{
-			dependencies: [
-				"4261BDA34D716EC8"
-				"6F9041F256F517A3"
-			]
-			description: ["The first of a couple creative datas, these will allow you to replicate extremely powerful marvels, such as the &9Creative Tank&r."]
-			id: "65C40A41F29687F4"
-			shape: "hexagon"
-			tasks: [{
-				id: "36D8F742C5C59B86"
-				item: "kubejs:creative_tank_data"
-				type: "item"
-			}]
-			title: "&9Creative Fluid Data"
-			x: 31.0d
-			y: -11.5d
-		}
-		{
 			dependencies: ["39A09DA3903C5564"]
 			description: ["These RAM chips will find use in the remaining mainframe recipes."]
 			id: "7AF06CB391779388"
@@ -3622,6 +3631,21 @@
 			}]
 			x: 45.75d
 			y: -18.0d
+		}
+		{
+			dependencies: [
+				"27EBB5AAF8A40F3D"
+				"4261BDA34D716EC8"
+			]
+			description: ["The first of a couple creative datas, these will allow you to replicate extremely powerful marvels, such as &9Omnium&r."]
+			id: "0F251AF2286FCE0D"
+			tasks: [{
+				id: "1CD3CC3EA0D76B52"
+				item: "kubejs:omnic_data"
+				type: "item"
+			}]
+			x: 31.0d
+			y: -11.5d
 		}
 	]
 	title: "End Game"
