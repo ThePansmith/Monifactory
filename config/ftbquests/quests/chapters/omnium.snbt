@@ -2682,13 +2682,13 @@
 				"47E4558362202D5D"
 			]
 			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
-			id: "281DE48E7260BC8E"
+			id: "739F7BF2A90B278A"
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "Man, that's a LOT of quests linked to this one."
 			tasks: [{
 				count: 64L
-				id: "2930DDCAF43468A4"
+				id: "6E908CE0BA9547C5"
 				item: "kubejs:mote_of_omnium"
 				type: "item"
 			}]
@@ -2696,5 +2696,5 @@
 			y: 0.0d
 		}
 	]
-	title: "Omnium"
+	title: "Elements and Alloys"
 }
