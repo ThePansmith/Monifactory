@@ -1,0 +1,55 @@
+name: Upload to curseforge
+on:
+  workflow_dispatch:
+    inputs:
+      releaseType:
+        description: 'Release Type'
+        required: true
+        default: 'release'
+        type: choice
+        options:
+          - alpha
+          - beta
+          - release
+      changelog:
+        description: "Changelog"
+        type: string
+
+jobs:
+  pack_mod:
+    name: Pack mod
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: pacpack_modk_pr-${{ github.head_ref || github.run_id }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore Node cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.nvm
+          key: ${{ runner.os }}-node-18.19.1
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Restore mods cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            dist/modcache
+            dist/cache.json
+          key: ${{ runner.os }}-mods-${{ hashFiles('manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-mods-
+      - name: Restore modlist cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            dist/modlist.html
+            dist/slug.json
+          key: ${{ runner.os }}-modlist-${{ hashFiles('manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-modlist-
+      - name: Upload Modpack
+        env:
+          CFCORE_API_TOKEN: ${{ secrets.API_TOKEN }}
+        run: bash tools/build/build -c upload --mode=${{ inputs.releaseType }} --changelog=${{ inputs.changelog }}

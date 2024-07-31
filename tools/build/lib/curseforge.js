@@ -101,6 +101,7 @@ export const DownloadCF = async (key, modInfo = {}, dest, retrycount) => {
  *  releaseType: 'release' | 'beta' | 'alpha';
  *  parentFileID?: number | string;
  *  changelog?: string;
+ *  relations?: {projects: string[]};
  * }} options
  * @returns
  */
@@ -112,7 +113,8 @@ export const UploadCF = async (key, options = {}) => {
     projectID,
     releaseType = 'beta',
     parentFileID,
-    changelog = ""
+    changelog = "",
+    relations
   } = options;
   if (!file || !displayName || !projectID) {
     Juke.logger.error(`UploadCF missing values in options.`);
@@ -156,7 +158,8 @@ export const UploadCF = async (key, options = {}) => {
       releaseType,
       parentFileID,
       gameVersions,
-      displayName
+      displayName,
+      relations
     }))
   formData.append('file', fs.createReadStream(file));
 

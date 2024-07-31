@@ -111,6 +111,10 @@ export const ModeParameter = new Juke.Parameter({
   type: 'string'
 })
 
+export const ChangelogParameter = new Juke.Parameter({
+  type: 'string'
+})
+
 // for windows users, go do -> --key=curseforgekey
 // not recommended, go use env vars!!
 export const KeyParameter = new Juke.Parameter({
@@ -120,7 +124,7 @@ export const KeyParameter = new Juke.Parameter({
 export const BuildModlistTarget = new Juke.Target({
   parameters: [KeyParameter],
   inputs: ['manifest.json'],
-  outputs: ['dist/modlist.html'],
+  outputs: ['dist/modlist.html', 'dist/slug.json'],
   executes: async ({ get }) => {
     if (!env.CFCORE_API_TOKEN && !get(KeyParameter)) {
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
@@ -128,13 +132,19 @@ export const BuildModlistTarget = new Juke.Target({
     }
     fs.mkdirSync("dist", { recursive: true })
     const jsonData = JSON.parse(fs.readFileSync('manifest.json', 'utf-8'));
+    let slugData = [] // for 'relations'
     let html = '<ul>\n'
     for (const key in jsonData.files) {
       const file = jsonData.files[key];
       const modInfo = await GetModInfo(env.CFCORE_API_TOKEN ?? get(KeyParameter), file.projectID);
       html += `<li><a href=${modInfo.links.websiteUrl}>${modInfo.name} (by ${modInfo.authors[0].name})</a></li>\n`;
+      slugData.push({
+        slug: modInfo.slug,
+        type: file.required ? 'requiredDependency' : 'optionalDependency'
+      })
     }
     html += '</ul>'
+    fs.writeFileSync('dist/slug.json', JSON.stringify(slugData))
     fs.writeFileSync('dist/modlist.html', html);
   }
 })
@@ -332,24 +342,31 @@ export const BuildAllTarget = new Juke.Target({
 
 export const UploadTarget = new Juke.Target({
   dependsOn: [BuildAllTarget],
-  parameters: [ModeParameter, KeyParameter],
+  parameters: [ModeParameter, KeyParameter, ChangelogParameter],
   inputs: [
     "dist/client.zip",
     "dist/server.zip",
+    "dist/slug.json"
   ],
+  outputs: [],
   executes: async ({ get }) => {
     if (!env.CFCORE_API_TOKEN && !get(KeyParameter)) {
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
       throw new Juke.ExitCode(1);
     }
     const rt = get(ModeParameter);
-    const clientUploadResponse = await UploadCF(env.CFCORE_API_TOKEN, {
+    const cl = get(ChangelogParameter);
+    const relations = JSON.parse(fs.readFileSync('dist/slug.json', 'utf-8'));
+    const clientUploadResponse = await UploadCF(env.CFCORE_API_TOKEN ?? get(KeyParameter), {
       mcVersion: '1.20.1',
       file: 'dist/client.zip',
       displayName: 'client',
       projectID: 123, //! CHANGE THIS
-      releaseType: rt, // default beta
-      // TODO changelog
+      releaseType: rt,
+      changelog: cl,
+      relations: {
+        projects: relations
+      }
     });
 
     await UploadCF(env.CFCORE_API_TOKEN ?? get(KeyParameter), {
@@ -357,8 +374,11 @@ export const UploadTarget = new Juke.Target({
       file: 'dist/server.zip',
       displayName: 'server',
       projectID: 123, //! CHANGE THIS
-      releaseType: rt, // default beta
-      // TODO changelog
+      releaseType: rt,
+      changelog: cl,
+      relations: {
+        projects: relations
+      }
     });
   },
 })
