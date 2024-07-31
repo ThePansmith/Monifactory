@@ -122,7 +122,7 @@
 			y: -20.0d
 		}
 		{
-			id: "4F243009CD7FF336"
+			id: "3F8FC1CF9A8083E1"
 			linked_quest: "739F7BF2A90B278A"
 			shape: "hexagon"
 			size: 3.0d
@@ -390,7 +390,7 @@
 			id: "19084E91F357C8C2"
 			size: 2.0d
 			tasks: [{
-				id: "46BC97C650ECA03A"
+				id: "25F7D8080E9B62C1"
 				item: "kubejs:creative_energy_data"
 				type: "item"
 			}]
