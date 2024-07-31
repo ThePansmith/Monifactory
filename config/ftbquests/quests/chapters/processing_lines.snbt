@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:lv_chemical_reactor"
 	id: "055C0B43FE14258F"
-	order_index: 11
+	order_index: 12
 	quest_links: [ ]
 	quests: [
 		{
