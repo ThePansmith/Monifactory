@@ -200,13 +200,35 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dragon_lair_data',
                 '64x kubejs:dragon_lair_data',
                 '64x minecraft:dragon_breath',
-                '64x minecraft:dragon_breath',
+                '64x minecraft:ender_dragon_scale',
                 'minecraft:dragon_head'
             )
             .duration(100*20)
             .EUt(30720)
 
         event.recipes.gtceu.advanced_microverse_ii('t4half_five')
+            .itemInputs(
+                'kubejs:microminer_t4half',
+                '16x kubejs:quantum_flux',
+                '64x kubejs:aerotheum_dust',
+                '8x kubejs:dragon_lair_data'
+            )
+            .itemOutputs(
+                '64x minecraft:ender_dragon_scale',
+                '64x minecraft:ender_dragon_scale',
+                '64x minecraft:ender_dragon_scale',
+                '64x minecraft:ender_dragon_scale',
+                '64x minecraft:ender_dragon_scale',
+                '64x minecraft:ender_dragon_scale',
+                '64x minecraft:dragon_breath',
+                '64x minecraft:dragon_breath',
+                '64x minecraft:dragon_breath',
+                '64x minecraft:dragon_breath'
+            )
+            .duration(100*20)
+            .EUt(30720)
+
+        event.recipes.gtceu.advanced_microverse_ii('t4half_six')
             .itemInputs(
                 'kubejs:microminer_t4half',
                 '8x kubejs:quantum_flux',
@@ -221,7 +243,7 @@ ServerEvents.recipes(event => {
             .duration(100*20)
             .EUt(30720)
 
-         event.recipes.gtceu.advanced_microverse_ii('t4half_six')
+         event.recipes.gtceu.advanced_microverse_ii('t4half_seven')
             .itemInputs(
                 'kubejs:microminer_t4half',
                 '8x kubejs:quantum_flux',

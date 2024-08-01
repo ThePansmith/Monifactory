@@ -826,6 +826,21 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
+    // Dragon Breath caning and extracting
+    event.recipes.gtceu.extractor('dragon_breath_fluid')
+        .itemInputs('minecraft:dragon_breath')
+        .itemOutputs('minecraft:glass_bottle')
+        .outputFluids('gtceu:dragon_breath 250')
+        .duration(400)
+        .EUt(2)
+
+    event.recipes.gtceu.canner('dragon_breath_bottling')
+        .itemInputs('minecraft:glass_bottle')
+        .inputFluids('gtceu:dragon_breath 250')
+        .itemOutputs('minecraft:dragon_breath')
+        .duration(400)
+        .EUt(2)
+
     // JEAN Gasoline consumption
     event.recipes.gtceu.combustion_generator('jean_gasoline_generator')
         .inputFluids('gtceu:jean_gasoline 1')
@@ -834,8 +849,8 @@ ServerEvents.recipes(event => {
 
     // JEAN Gasoline
     event.recipes.gtceu.large_chemical_reactor('kubejs:jean_gasoline')
-        .itemInputs('3x gtceu:netherrack_dust', '2x minecraft:dragon_breath')
-        .inputFluids('gtceu:high_octane_gasoline 8000', 'gtceu:rocket_fuel 5000', 'gtceu:chlorine_triflouride 2000', 'gtceu:tetraethyllead 1000')
+        .itemInputs('3x gtceu:netherrack_dust')
+        .inputFluids('gtceu:high_octane_gasoline 8000', 'gtceu:rocket_fuel 5000', 'gtceu:chlorine_triflouride 2000', 'gtceu:tetraethyllead 1000', 'gtceu:dragon_breath 500')
         .outputFluids('gtceu:jean_gasoline 16000')
         .duration(200)
         .EUt(7680)

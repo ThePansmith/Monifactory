@@ -148,12 +148,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xbbddbd)
         .iconSet('elemental_reduction_fluid')
-    
+
+    event.create("dragon_breath")
+        .fluid()
+		.color(0xFF6AB9)  
+
     event.create("jean_gasoline")
         .fluid()
 		.color(0xF16AA5)
         
-        event.create('holmium_oxide')
+    event.create('holmium_oxide')
         .dust()
         .color(0xD29092)
         .components('2x holmium', '3x oxygen')
