@@ -1521,7 +1521,7 @@
 		{
 			dependencies: ["4C76017864258EA9"]
 			description: [
-				"&2High-Octane Gasoline is the most powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in cryolobus production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
+				"&2High-Octane Gasoline is a even more powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in cryolobus production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
 				""
 				"To refine Gasoline to High-Octane Gasoline, you will need:"
 				"- 20 parts Gasoline"
@@ -1602,7 +1602,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
+			dependencies: ["038D06BCA022C1BF"]
 			description: [
 				"You will need either &9Seed Oil&r or &9Fish Oil&r in the process of creating &9Biodiesel&r, created by extracting seeds or fish."
 				""
@@ -2323,8 +2323,6 @@
 			dependencies: ["072DB633006E78B7"]
 			description: [
 				"Glowing! &2But all the GTCEu machines glow already, so...&r"
-				""
-				"This one takes a significant amount of time to cook, so make sure to have it going constantly."
 				""
 				"Wires made from &6Lumium&r transmit IV power losslessly, and it forms part of the basis for &6LuV Machine Hulls&r."
 			]
@@ -3186,6 +3184,30 @@
 			title: "&9High Pressure Steam"
 			x: 47.0d
 			y: 13.5d
+		}
+		{
+			dependencies: ["2CC50101A39EA2C0"]
+			description: [
+				"&9JEAN Gasoline is the most powerful combustion fuel, using some anomalous ingredients to generate a staggering 81920 EU per mB of fuel. The trade-off is the extremely complex processing lines you must set up for it."
+				""
+				"To refine High-Octane Gasoline, to JEAN Gasoline, you will need:"
+				"- 8 parts High Octane Gasoline"
+				"- 5 parts Rocket Fuel"
+				"- 2 parts Cholorine Triflorine"
+				"- 1 part Tetraethyllead"
+				"- 1 part dragon's breath"
+				""
+				"To get the most out of this, run it in an Extreme Combustion Engine with Liquid Oxygen."
+			]
+			id: "053DDDCD2505E20B"
+			tasks: [{
+				id: "6E961DB62F3D14AF"
+				item: "gtceu:jean_gasoline_bucket"
+				type: "item"
+			}]
+			title: "&9JEAN Gasoline"
+			x: 49.0d
+			y: 1.5d
 		}
 	]
 	title: "Mid Game"

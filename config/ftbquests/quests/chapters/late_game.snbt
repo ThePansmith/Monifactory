@@ -1830,7 +1830,7 @@
 				{
 					count: 24L
 					id: "5756875831B786CB"
-					item: "moni_multiblocks:mesol_coil_block"
+					item: "moni_multiblocks:mesol_voltic_casing"
 					type: "item"
 				}
 			]
@@ -1869,7 +1869,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "09CD18933F28FA28"
-				item: "moni_multiblocks:abyssal_coil_block"
+				item: "moni_multiblocks:abyssal_voltic_casing"
 				type: "item"
 			}]
 			title: "&9Abyssal Casings"
@@ -1889,7 +1889,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "581D806823B709C3"
-				item: "moni_multiblocks:bathyal_coil_block"
+				item: "moni_multiblocks:bathyal_voltic_casing"
 				type: "item"
 			}]
 			title: "&9Bathyal Casings"
@@ -2162,7 +2162,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "140C83AB5FE8450E"
-				item: "moni_multiblocks:hadal_coil_block"
+				item: "moni_multiblocks:hadal_voltic_casing"
 				type: "item"
 			}]
 			title: "&9Hadal Cryogenic Casings"

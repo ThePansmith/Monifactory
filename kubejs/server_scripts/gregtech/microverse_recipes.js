@@ -534,6 +534,24 @@ ServerEvents.recipes(event => {
     .duration(500)
     .EUt(62500)
 
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eight_fourth')
+    .itemInputs('kubejs:microminer_t8', 
+                '64x kubejs:quantum_flux', 
+                '64x kubejs:dilithium_crystal', 
+                '64x kubejs:dilithium_crystal', 
+                '64x kubejs:dilithium_crystal', 
+                '64x kubejs:dilithium_crystal', 
+                '64x minecraft:sculk_catalyst', 
+                'kubejs:shattered_universe_data',
+                'kubejs:lair_of_the_warden_data')
+    .itemOutputs('64x kubejs:hadal_shard',
+                 '64x kubejs:warden_heart',
+                 '64x kubejs:warden_horn',
+                 '64x kubejs:warden_horn'
+    )
+    .duration(2000)
+    .EUt(180000)
+
         event.recipes.gtceu.advanced_microverse_iii('kubejs:t_nine_forth')
         .itemInputs(
             'kubejs:microminer_t9', 

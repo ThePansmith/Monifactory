@@ -17,7 +17,7 @@ recipes:
   harderBrickRecipes: true
 
   # Whether to nerf Wood crafting to 2 Planks from 1 Log, and 2 Sticks from 2 Planks.
-  # Default: true
+  # Default: false
   nerfWoodCrafting: true
 
   # Whether to make Wood related recipes harder.
@@ -81,8 +81,12 @@ recipes:
   # Default: false
   harderCircuitRecipes: false
 
+  # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
+  # Default: true
+  enchantedTools: true
+
 worldgen:
-  # Rubber Tree spawn chance (% per chunk)
+  # Rubber Tree spawn chance (decimal % per chunk)
   # Default: 0.5
   rubberTreeSpawnChance: 0.5
 
@@ -254,6 +258,15 @@ machines:
   # Default: false
   highTierContent: true
 
+  # Whether the Assembly Line should require the item inputs to be in order.
+  # Default: true
+  orderedAssemblyLineItems: true
+
+  # Whether the Assembly Line should require the fluid inputs to be in order.
+  # (Requires Ordered Assembly Line Item Inputs to be enabled.)
+  # Default: false
+  orderedAssemblyLineFluids: false
+
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
@@ -376,6 +389,10 @@ gameplay:
   # Default: true
   environmentalHazards: true
 
+  # How much environmental hazards decay per chunk, per tick.
+  # Default: 0.001
+  environmentalHazardDecayRate: 0.001
+
   # Whether the GTCEu's ingame guidebook, 'Compass', be enabled.
   # WARNING: INCOMPLETE
   # Default: false
@@ -430,6 +447,10 @@ compat:
   # Whether Gregtech should remove smelting recipes from the vanilla furnace for ingots requiring the Electric Blast Furnace.
   # Default: true
   removeSmeltingForEBFMetals: true
+
+  # Whether dimension marker should show dimension tier.
+  # Default: false
+  showDimensionTier: false
 
 dev:
   # Debug general events? (will print recipe conficts etc. to server's debug.log)

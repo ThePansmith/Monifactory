@@ -1807,11 +1807,11 @@
 		{
 			dependencies: ["7C89BC235C988689"]
 			description: [
-				"&9By chilling sculk to subzero  temperatures and injecting it with xp juice, you can create new items.&r "
+				"&9By shocking sculk and injecting it with xp juice, you can create new items.&r "
 				""
-				"As stated above, the multiblock does require extremely cold temperatures to function, so it does require a passive supply of power to decrease it's temperature, and a passive supply of fluid to keep the sculk contained alive. Said sculk is inserted in a "
+				"The multiblock requires extremely large amounts of energy to function, and a passive supply of sculk. Said sculk is inserted into a &9sculk input bus&r."
 				""
-				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
+				"The multiblock is formed with special coils, with said casings able to increase the internal power buffer of the machine the higher tier they are. The power substation will likely be very useful here, as it allows you to buffer even more power."
 			]
 			icon: "moni_multiblocks:hypogean_infuser"
 			id: "713FAECEE5046121"
@@ -1830,7 +1830,7 @@
 				{
 					count: 24L
 					id: "5756875831B786CB"
-					item: "moni_multiblocks:mesol_coil_block"
+					item: "moni_multiblocks:mesol_voltic_casing"
 					type: "item"
 				}
 			]
@@ -1859,7 +1859,7 @@
 		}
 		{
 			dependencies: ["6F5579E1646634C7"]
-			description: ["&9Abyssal Casings&r are the penultimate tier of casings for Hypogean Infusion, able to reach even colder temps."]
+			description: ["&9Abyssal Casings&r are the penultimate tier of casings for Hypogean Infusion, able to store even more power."]
 			id: "2358A5CF22FF5495"
 			rewards: [{
 				id: "0022ECDC55B22DC3"
@@ -1869,7 +1869,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "09CD18933F28FA28"
-				item: "moni_multiblocks:abyssal_coil_block"
+				item: "moni_multiblocks:abyssal_voltic_casing"
 				type: "item"
 			}]
 			title: "&9Abyssal Casings"
@@ -1878,11 +1878,7 @@
 		}
 		{
 			dependencies: ["20CB8F878CADA235"]
-			description: [
-				"&9Hypogean infusion Casings&r can be upgraded to &9Bathyal Tier&r via hypogean infusion."
-				""
-				"Technically you only need six of these to start making the next tier of injectors, but some recipes will need more than that. Plan on making at least twenty-six of these."
-			]
+			description: ["&9Hypogean Casings&r can be upgraded to &9Bathyal Tier&r via hypogean infusion."]
 			id: "6F5579E1646634C7"
 			rewards: [{
 				count: 2
@@ -1893,7 +1889,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "581D806823B709C3"
-				item: "moni_multiblocks:bathyal_coil_block"
+				item: "moni_multiblocks:bathyal_voltic_casing"
 				type: "item"
 			}]
 			title: "&9Bathyal Casings"
@@ -1979,11 +1975,7 @@
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
-			description: [
-				"&6Abyssal Cores&r are the third tier of &bSculk&r core, and are common components of endgame recipes."
-				""
-				"These cores are made with &6Cryococcus&r and also cost &e3 Billion RF&r to craft."
-			]
+			description: ["&6Abyssal Cores&r are the third tier of &bSculk&r core, and are common components of endgame recipes."]
 			id: "03F04B4005F2CBE1"
 			rewards: [{
 				id: "6F7838D02F126912"
@@ -2016,10 +2008,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "69DC07184B74DB07"
-				item: "kubejs:reactor_core"
+				item: "kubejs:abyssal_energy_core"
 				type: "item"
 			}]
-			title: "Reactor Core"
+			title: "&9Abyssal Energy Core"
 			x: 23.25d
 			y: 21.0d
 		}
@@ -2059,7 +2051,7 @@
 				"03F04B4005F2CBE1"
 				"738A141D31AD7CE3"
 			]
-			description: ["The &6Reactor Stabilizer&r is a component needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."]
+			description: ["&9Hadal Warp Engines&r are components needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."]
 			id: "483652BAEF59E125"
 			rewards: [{
 				id: "6D6D92F23F1DCEA5"
@@ -2069,10 +2061,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6D27E0C7357E8F5A"
-				item: "kubejs:reactor_stabilizer"
+				item: "kubejs:hadal_warp_engine"
 				type: "item"
 			}]
-			title: "Reactor Stabilizer"
+			title: "&9Hadal Warp Engine"
 			x: 25.25d
 			y: 24.0d
 		}
@@ -2170,7 +2162,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "140C83AB5FE8450E"
-				item: "moni_multiblocks:hadal_coil_block"
+				item: "moni_multiblocks:hadal_voltic_casing"
 				type: "item"
 			}]
 			title: "&9Hadal Cryogenic Casings"
@@ -2194,7 +2186,7 @@
 			}]
 			title: "&2Highly Advanced SoCs"
 			x: 31.25d
-			y: 22.25d
+			y: 22.5d
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
