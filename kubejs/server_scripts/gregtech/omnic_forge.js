@@ -59,56 +59,60 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(65520)
 
+    event.recipes.gtceu.omnic_forge('kubejs:timeless_monic_heavy_plating')
+        .itemInputs('10x gtceu:monium_plate', '8x kubejs:quantum_fluxed_eternium_heavy_plating', '4x kubejs:universe_resistant_neutronium_heavy_plating', '4x kubejs:elementally_infused_omnic_matrix_heavy_plating', '2x kubejs:dimensionally_stabilized_infinity_heavy_plating', '16x kubejs:contained_singularity')
+        .itemOutputs('kubejs:timeless_monic_heavy_plating')
+        .duration(800)
+        .EUt(134217728)
+
     //Buffed Catalyst Recycling
-    event.recipes.gtceu.omnic_forge('kubejs:fury_enhanced_infinity_catalyst_recycling')
-        .itemInputs('kubejs:dormant_fury_enhanced_infinity_catalyst', 'kubejs:heart_of_a_universe')
-        .itemOutputs('kubejs:fury_enhanced_infinity_catalyst')
+    event.recipes.gtceu.omnic_forge('kubejs:furious_infinity_catalyst_recycling')
+        .itemInputs('kubejs:dormant_furious_infinity_catalyst', 'kubejs:heart_of_a_universe')
+        .itemOutputs('kubejs:furious_infinity_catalyst')
         .duration(2000)
         .EUt(65520)
 
-    event.recipes.gtceu.omnic_forge('kubejs:serenity_enhanced_infinity_catalyst_recycling')
-        .itemInputs('kubejs:dormant_serenity_enhanced_infinity_catalyst', 'kubejs:heart_of_a_universe')
-        .itemOutputs('kubejs:serenity_enhanced_infinity_catalyst')
+    event.recipes.gtceu.omnic_forge('kubejs:serene_infinity_catalyst_recycling')
+        .itemInputs('kubejs:inert_serene_infinity_catalyst', 'kubejs:heart_of_a_universe')
+        .itemOutputs('kubejs:serene_infinity_catalyst')
         .duration(2000)
         .EUt(65520)
 
     //Enhanced Infinity Catalyst Crafting
-    event.recipes.gtceu.omnic_forge('kubejs:fury_enhanced_infinity_catalyst_crafting')
-        .itemInputs('kubejs:infinity_catalyst', 'kubejs:heart_of_a_universe', 'gtceu:infinity_frame', '2x gtceu:uiv_emitter')
-        .itemOutputs('kubejs:fury_enhanced_infinity_catalyst')
+    event.recipes.gtceu.omnic_forge('kubejs:furious_infinity_catalyst_crafting')
+        .itemInputs('kubejs:infinity_catalyst', 'kubejs:heart_of_a_universe', 'gtceu:infinity_frame', '2x gtceu:uev_emitter', '64x gtceu:holmium_foil')
+        .itemOutputs('kubejs:furious_infinity_catalyst')
         .duration(1000)
         .EUt(1966080)
 
-    event.recipes.gtceu.omnic_forge('kubejs:serenity_enhanced_infinity_catalyst_crafting')
-        .itemInputs('kubejs:infinity_catalyst', 'kubejs:heart_of_a_universe', 'gtceu:monium_frame', '8x kubejs:contained_singularity')
-        .itemOutputs('kubejs:serenity_enhanced_infinity_catalyst')
+    event.recipes.gtceu.omnic_forge('kubejs:serene_infinity_catalyst_crafting')
+        .itemInputs('kubejs:infinity_catalyst', 'kubejs:heart_of_a_universe', 'gtceu:monium_frame', '16x kubejs:contained_singularity')
+        .itemOutputs('kubejs:serene_infinity_catalyst')
         .duration(1000)
         .EUt(1966080)
 
-        //Simplified Crafting
-        event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_dark_soularium_thruster')
+    //Simplified Crafting
+    event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_dark_soularium_thruster')
         .itemInputs('4x gtceu:dark_soularium_plate', '6x gtceu:vibrant_alloy_plate', '2x enderio:ender_crystal', '2x enderio:prescient_crystal', 'enderio:cryolobus_conduit', 'kubejs:flight_control_unit')
         .itemOutputs(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}'))
         .duration(100)
         .EUt(7680)
 
-        event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_flux_thruster')
+    event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_flux_thruster')
         .itemInputs('3x redstone_arsenal:flux_plating', '4x gtceu:enderium_plate', '2x gtceu:signalum_plate', 'thermal:dynamo_numismatic', 'kubejs:glowstone_elevation_unit', 'kubejs:cryotheum_coolant_unit')
         .itemOutputs(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}'))
         .duration(50)
         .EUt(7680)
 
-        event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_ultra_dense_hydrogen')
+    event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_ultra_dense_hydrogen')
         .itemInputs('64x kubejs:solidified_hydrogen')
         .itemOutputs('kubejs:ultra_dense_hydrogen')
         .duration(20)
         .EUt(120)
 
-        event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_quantum_flux')
+    event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_quantum_flux')
         .itemInputs('redstone_arsenal:flux_gem', '2x kubejs:primal_mana', '2x minecraft:dragon_breath', 'minecraft:wither_skeleton_skull')
         .itemOutputs('32x kubejs:quantum_flux')
         .duration(50)
         .EUt(1920)
-
-
 })

@@ -600,6 +600,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('64x gtceu:monium_ingot')
         .duration(1200)
         .EUt(32000000)
+
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_twelve_second')
+        .itemInputs('kubejs:microminer_t12', '8x kubejs:timeless_monic_heavy_plating', '4x kubejs:universe_creation_data', '2x kubejs:corrupted_universe_data', '2x kubejs:shattered_universe_data')
+        .itemOutputs('4x kubejs:causality_exempt_monic_heavy_plating')
+        .duration(800)
+        .EUt(128000000)
 })
 
 // Microversium

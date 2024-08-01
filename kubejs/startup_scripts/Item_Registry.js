@@ -78,6 +78,12 @@ StartupEvents.registry('item', event => {
     event.create('dimensionally_stabilized_infinity_heavy_plating')
         .displayName("§dDimensionally Stabilized Infinity Heavy Plating")
         .texture("kubejs:item/microverse/infinity_heavy_plating")
+    event.create('timeless_monic_heavy_plating')
+        .displayName("§dTimeless Monic Heavy Plating")
+        .texture("kubejs:item/microverse/dormant_monic_heavy_plating")
+    event.create('causality_exempt_monic_heavy_plating')
+        .displayName("§1Causality Exempt Monic Heavy Plating")
+        .texture("kubejs:item/microverse/monic_heavy_plating")
     event.create('quantum_flux').displayName("§dQuantum Flux")
 
     //Moni Coins
@@ -140,10 +146,10 @@ StartupEvents.registry('item', event => {
 
     // Infinity
     event.create('infinity_catalyst').rarity("epic")
-    event.create('dormant_fury_enhanced_infinity_catalyst')
-    event.create('fury_enhanced_infinity_catalyst')
-    event.create('dormant_serenity_enhanced_infinity_catalyst')
-    event.create('serenity_enhanced_infinity_catalyst')
+    event.create('dormant_furious_infinity_catalyst')
+    event.create('furious_infinity_catalyst').rarity("epic")
+    event.create('inert_serene_infinity_catalyst')
+    event.create('serene_infinity_catalyst').rarity("epic")
     event.create('dormant_infinity_compound_ingot')
 
     // Monium
@@ -156,19 +162,19 @@ StartupEvents.registry('item', event => {
 
     // Ultimate Tools
     event.create('ultimate_core').texture('kubejs:item/ultimate/core')
-    event.create('ultimate_file').texture('kubejs:item/ultimate/file').rarity("epic")
-    event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer').rarity("epic")
-    event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver').rarity("epic")
-    event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench').rarity("epic")
-    event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter').rarity("epic")
+    event.create('ultimate_file').texture('kubejs:item/ultimate/file').rarity("epic").maxStackSize(1)
+    event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer').rarity("epic").maxStackSize(1)
+    event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver').rarity("epic").maxStackSize(1)
+    event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench').rarity("epic").maxStackSize(1)
+    event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter').rarity("epic").maxStackSize(1)
 
     //Infinity Tools
-    event.create('infinity_file').rarity("epic")
-    event.create('infinity_hammer').rarity("epic")
-    event.create('infinity_screwdriver').rarity("epic")
-    event.create('infinity_wrench').rarity("epic")
-    event.create('infinity_wire_cutter').rarity("epic")
-    event.create('infinity_power_unit').rarity("epic")
+    event.create('infinity_file').rarity("epic").maxStackSize(1)
+    event.create('infinity_hammer').rarity("epic").maxStackSize(1)
+    event.create('infinity_screwdriver').rarity("epic").maxStackSize(1)
+    event.create('infinity_wrench').rarity("epic").maxStackSize(1)
+    event.create('infinity_wire_cutter').rarity("epic").maxStackSize(1)
+    event.create('infinity_power_unit').rarity("epic").maxStackSize(1)
 
     //Solidified Items
     const solidified_elements = [

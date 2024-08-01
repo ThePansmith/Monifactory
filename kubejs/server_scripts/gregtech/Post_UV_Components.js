@@ -169,20 +169,6 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(16)
 
-    event.recipes.gtceu.assembler('max_hull')
-        .itemInputs('gtceu:max_machine_casing', '2x gtceu:holmium_single_wire')
-        .inputFluids('gtceu:omnium 1152')
-        .itemOutputs('gtceu:max_machine_hull')
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('max_casing')
-        .itemInputs('8x gtceu:monium_plate')
-        .itemOutputs('gtceu:max_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
-
     // Motors
     event.recipes.gtceu.assembly_line('uhv_motor')
         .itemInputs('gtceu:long_magnetic_samarium_rod', '8x gtceu:long_neutronium_rod', '8x gtceu:neutronium_ring', '16x gtceu:neutronium_round', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '4x gtceu:tritanium_quadruple_cable')

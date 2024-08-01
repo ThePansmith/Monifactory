@@ -316,7 +316,7 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
 
     event.recipes.gtceu.assembly_line('monic_processor_mainframe')
-        .itemInputs('4x gtceu:monium_frame', '16x kubejs:monic_processor_computer', '64x kubejs:complex_smd_capacitor', '64x kubejs:complex_smd_transistor',
+        .itemInputs('8x gtceu:monium_frame', '2x kubejs:monic_processing_unit', '16x kubejs:monic_processor_computer', '64x kubejs:complex_smd_capacitor', '64x kubejs:complex_smd_transistor',
             '64x kubejs:complex_smd_diode', '64x kubejs:complex_smd_resistor', '64x kubejs:complex_smd_inductor', 
             '64x kubejs:contained_singularity', '64x kubejs:contained_singularity', '64x kubejs:multidimensional_cpu_chip', 
             '64x kubejs:hyperdynamic_ram_chip', '64x kubejs:quantum_soc_chip', '4x gtceu:double_infinity_plate', '8x gtceu:sculk_superconductor_double_wire') // could replace with omnium frame
