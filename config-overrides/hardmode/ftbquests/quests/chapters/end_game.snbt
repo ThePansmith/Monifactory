@@ -170,7 +170,7 @@
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: { Count: 4b, id: "kubejs:hadal_core" }
+				item: { Count: 4b, id: "kubejs:hadal_energy_core" }
 				type: "item"
 			}]
 			title: "Hadal Cores"

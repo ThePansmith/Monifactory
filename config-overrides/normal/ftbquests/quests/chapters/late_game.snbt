@@ -1756,7 +1756,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "712064FEEFCC29AA"
-				item: "kubejs:mesol_core"
+				item: "kubejs:mesol_energy_core"
 				type: "item"
 			}]
 			title: "&9Mesol Cores"
@@ -1850,7 +1850,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "5A46206776E20233"
-				item: "kubejs:bathyal_core"
+				item: "kubejs:bathyal_energy_core"
 				type: "item"
 			}]
 			title: "&9Bathyal Cores"
@@ -1985,7 +1985,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "71171679FDF638A6"
-				item: "kubejs:abyssal_core"
+				item: "kubejs:abyssal_energy_core"
 				type: "item"
 			}]
 			title: "&9Abyssal Core"

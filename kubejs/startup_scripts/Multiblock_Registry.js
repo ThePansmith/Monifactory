@@ -173,6 +173,15 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE)
+
+    //Discharger
+    event.create('discharger')
+        .category('multiblock')
+        .setEUIO('out')
+        .setMaxIOSize(9, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -731,6 +740,29 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+        
+    // Discharger
+    event.create('discharger', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('discharger')
+        .appearanceBlock(() => Block.getBlock('kubejs:cryolobus_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+        .aisle("CCCCC", "     ", "     ", "     ", "CCCCC")
+        .aisle("CCCCC", " HHH ", " HHH ", " HHH ", "CCCCC")
+        .aisle("CCCCC", " HAH ", " HAH ", " HAH ", "CCCCC")
+        .aisle("CCCCC", " HHH ", " HHH ", " HHH ", "CCCCC")
+        .aisle("CCYCC", "     ", "     ", "     ", "CCCCC")
+            .where('Y', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('H', Predicates.blocks("kubejs:cryolobus_casing"))
+            .where('C', Predicates.blocks("kubejs:cryolobus_casing")
+            .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+            .or(Predicates.abilities(PartAbility.MAINTENANCE)))
+            .where('A', Predicates.any())
+            .where(' ', Predicates.any())
+            .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("kubejs:block/cryolobus/cryolobus_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
 })

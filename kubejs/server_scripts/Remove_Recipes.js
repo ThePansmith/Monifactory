@@ -109,4 +109,8 @@ ServerEvents.recipes(event => {
 
     //Default Fluxed Electrum recipe (Redstone Arsenal)
     event.remove({ id: 'redstone_arsenal:materials/flux_dust'})
+
+    // PEX
+    event.remove({ output: ['packagedexcrafting:flux_crafter'] })
+
 })
