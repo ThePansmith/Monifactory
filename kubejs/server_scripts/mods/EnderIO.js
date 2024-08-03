@@ -742,4 +742,6 @@ if (isHarderMode) {
         .itemOutputs("8x enderio:me_conduit")
         .duration(100)
         .EUt(16)
+
+    event.replaceInput({ output: 'enderio:extraction_speed_upgrade_3' }, 'gtceu:soularium_ingot', 'gtceu:aluminium_ingot')
 })
