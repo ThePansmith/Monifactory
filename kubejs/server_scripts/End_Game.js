@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     
 
     .stationResearch(b => b
-        .researchStack('moni_multiblocks:hypogean_infuser')
+        .researchStack('gtceu:discharger')
         .CWUt(160, 1024000)
         .EUt(1200000)
     )

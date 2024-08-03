@@ -387,7 +387,7 @@ ServerEvents.recipes(event => {
         ], {
             L: 'gtceu:void_empowered_block',
             N: 'kubejs:warp_core',
-            T: 'kubejs:bathyal_core'
+            T: 'kubejs:bathyal_energy_core'
         }
     )
 
@@ -400,7 +400,7 @@ ServerEvents.recipes(event => {
         ], {
             C: '#gtceu:circuits/luv',
             H: 'kubejs:warp_controller',
-            M: 'kubejs:abyssal_core',
+            M: 'kubejs:abyssal_energy_core',
             S: 'gtceu:void_empowered_block'
         }
     )
