@@ -516,7 +516,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
             .where('N', Predicates.blocks("gtceu:omnium_frame"))
             .where('V', Predicates.blocks("ae2:quartz_vibrant_glass"))
-            .where('W', Predicates.blocks("kubejs:warp_core"))
+            .where('W', Predicates.blocks("kubejs:universal_warp_core"))
             .where('Y', Predicates.blocks("gcyr:dyson_sphere_casing"))
             .where('#', Predicates.any())
             .build())

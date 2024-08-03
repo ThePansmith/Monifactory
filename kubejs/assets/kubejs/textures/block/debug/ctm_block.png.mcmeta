@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/debug/ctm_block_ctm"
+    }
+}

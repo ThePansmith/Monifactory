@@ -287,7 +287,11 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse('kubejs:t_six_third')
         .itemInputs('kubejs:microminer_t6', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium', '16x kubejs:dragon_lair_data')
-        .itemOutputs('64x minecraft:dragon_egg')
+        .itemOutputs('64x minecraft:dragon_egg',
+            '64x kubejs:ender_dragon_scale',
+            '64x kubejs:ender_dragon_scale',
+            '64x minecraft:dragon_breath'
+        )
         .duration(1250)
         .EUt(18750)
 })
@@ -330,10 +334,10 @@ ServerEvents.recipes(event => {
             '64x kubejs:dilithium_crystal', 
             '64x kubejs:dilithium_crystal',  
             'kubejs:gem_sensor', 
-            '64x kubejs:wither_realm_data', 
-            '64x kubejs:wither_realm_data', 
-            '64x kubejs:wither_realm_data', 
-            '64x kubejs:wither_realm_data'
+            '64x kubejs:deep_dark_data', 
+            '64x kubejs:deep_dark_data', 
+            '64x kubejs:deep_dark_data', 
+            '64x kubejs:deep_dark_data'
         )
         .itemOutputs('kubejs:lair_of_the_warden_data')
         .duration(1500)
@@ -380,8 +384,14 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs(
             '4x kubejs:hadal_shard',
-            '64x minecraft:sculk_catalyst', 
-            '32x kubejs:warden_horn'
+            '64x minecraft:sculk_catalyst',
+            '64x minecraft:sculk_catalyst',
+            '64x kubejs:warden_horn',
+            '64x kubejs:warden_horn',
+            '64x kubejs:warden_horn',
+            '64x kubejs:warden_horn',
+            '64x kubejs:warden_horn',
+            '64x kubejs:warden_horn'
         )
         .duration(1500)
         .EUt(62500)
@@ -403,7 +413,16 @@ ServerEvents.recipes(event => {
             '64x minecraft:dragon_egg', 
             '64x minecraft:dragon_egg', 
             '64x minecraft:dragon_egg', 
-            '64x kubejs:ender_dragon_scale'
+            '64x kubejs:ender_dragon_scale',
+            '64x kubejs:ender_dragon_scale',
+            '64x kubejs:ender_dragon_scale',
+            '64x kubejs:ender_dragon_scale',
+            '64x kubejs:ender_dragon_scale',
+            '64x kubejs:ender_dragon_scale',
+            '64x minecraft:dragon_breath',
+            '64x minecraft:dragon_breath',
+            '64x minecraft:dragon_breath',
+            '64x minecraft:dragon_breath'
         )
         .duration(1750)
         .EUt(62500)
@@ -599,6 +618,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('64x gtceu:monium_ingot')
         .duration(1200)
         .EUt(32000000)
+
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_twelve_second')
+        .itemInputs('kubejs:microminer_t12', '8x kubejs:timeless_monic_heavy_plating', '4x kubejs:universe_creation_data', '2x kubejs:corrupted_universe_data', '2x kubejs:shattered_universe_data')
+        .itemOutputs('4x kubejs:causality_exempt_monic_heavy_plating')
+        .duration(800)
+        .EUt(128000000)
 })
 
 // Microversium

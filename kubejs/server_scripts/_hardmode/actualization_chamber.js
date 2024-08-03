@@ -337,7 +337,10 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t6')
             .circuit(3)
             .itemOutputs(
-                '32x minecraft:dragon_egg'
+                '32x minecraft:dragon_egg',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x minecraft:dragon_breath'
             )
             .duration(780)
             .EUt(30720)
@@ -381,7 +384,13 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '4x kubejs:hadal_shard',
                 '64x minecraft:sculk_catalyst',
-                '32x kubejs:warden_horn'
+                '64x minecraft:sculk_catalyst',
+                '64x kubejs:warden_horn',
+                '64x kubejs:warden_horn',
+                '64x kubejs:warden_horn',
+                '64x kubejs:warden_horn',
+                '64x kubejs:warden_horn',
+                '64x kubejs:warden_horn'
             )
             .duration(780)
             .EUt(30720)

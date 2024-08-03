@@ -25,6 +25,37 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xe8c474)
         .components('12x carbon', '27x hydrogen', '4x oxygen', '1x phosphorus')
 
+
+    event.create('hydrochloric_dragon_scale_solution')
+        .fluid()
+        .color(0x697898)
+        .components('2x hydrogen', '2x chlorine', '2x manganese', '1x tantalum', '4x carbon')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('hydrochloric_manganese_solution')
+        .fluid()
+        .color(0x697898)
+        .components('2x hydrogen', '2x chlorine', '2x manganese')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('graphitic_tantalum')
+        .dust()
+        .color(0x747499).secondaryColor(0x999974)
+        .components('1x tantalum', '4x carbon')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('hydrofluoric_graphitic_tantalum_solution')
+        .fluid()
+        .color(0x424272)
+        .components('2x hydrogen', '2x fluorine', '1x tantalum', '4x carbon')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('hydrofluoric_tantalum_solution')
+        .fluid()
+        .color(0x626299)
+        .components('2x hydrogen', '2x fluorine', '1x tantalum')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
     event.create('chlorine_triflouride')
         .gas()
         .color(0xCBC4EF)
@@ -44,12 +75,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x58649B)
         .components('1x lead','1x sodium')
-    
 })
 
 // modify material names etc here
 GTCEuStartupEvents.materialModification(() => {
 	GTMaterials.get('butanol').setFormula('C4H9OH');
 	GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO');
+    GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HC)2Mn2TaC?');
+    GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HC)2Mn2');
+    GTMaterials.get('graphitic_tantalum').setFormula('TaC')
+    GTMaterials.get('hydrofluoric_graphitic_tantalum_solution').setFormula('(HF)2TaC')
+    GTMaterials.get('hydrofluoric_tantalum_solution').setFormula('(HF)2Ta')
     GTMaterials.get('tetraethyllead').setFormula('Pb(CH3CH2)4');
 })

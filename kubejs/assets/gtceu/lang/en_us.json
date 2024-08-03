@@ -1,5 +1,5 @@
 {
-  "material.gtceu.cryococcus": "Cryococcus",
+  "material.gtceu.dragon_breath": "Dragon's Breath",
   "material.gtceu.jean_gasoline": "JEAN Gasoline",
   "material.gtceu.chlorine_triflouride": "Chlorine Triflouride",
   "material.gtceu.tetraethyllead": "Tetraethyllead",
@@ -145,6 +145,7 @@
   "material.gtceu.ardite": "Ardite",
   "material.gtceu.manyullyn": "Manyullyn",
   "material.gtceu.cryolobus": "Cryolobus",
+  "material.gtceu.cryococcus": "Cryococcus",
   "material.gtceu.microversium": "Microversium",
   "material.gtceu.electrum_flux": "Fluxed Electrum",
   "material.gtceu.mithril": "Mana Infused",
@@ -209,6 +210,11 @@
   "material.gtceu.hot_naquadah_oxide_neocryolite_solution": "Hot Naquadah Oxide Neocryolite Solution",
   "material.gtceu.lead_metasilicate": "Lead Metasilicate",
   "material.gtceu.holmium_oxide": "Holmium Oxide",
+  "material.gtceu.hydrofluoric_tantalum_solution": "Hydrofluoric Tantalum Solution",
+  "material.gtceu.hydrofluoric_graphitic_tantalum_solution": "Hydrofluoric Graphitic Tantalum Solution",
+  "material.gtceu.graphitic_tantalum": "Graphitic Tantalum",
+  "material.gtceu.hydrochloric_manganese_solution": "Hydrochloric Manganese Solution",
+  "material.gtceu.hydrochloric_dragon_scale_solution": "Hydrochloric Dragon Scale Solution",
 
   "__PLATLINE__.header": "=======================",
   "__PLATLINE__.flufff": "> Platinum line items <",
