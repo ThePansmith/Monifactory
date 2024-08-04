@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             .itemInputs(input)
             .itemOutputs(output)
             .duration(10) //wip
-            .EUt(-(refund / 4))
+            // .EUt(-(refund / 4)) Enable once that gets fixed.
     }
 
     Discharge('hadal_solar', '2x solarflux:sp_custom_hadal', ['kubejs:hadal_energy_core', '2x solarflux:sp_custom_abyssal', '2x kubejs:abyssal_energy_core'], 1000000)
