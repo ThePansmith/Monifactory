@@ -1808,7 +1808,11 @@
 		}
 		{
 			dependencies: ["22144A6785524FDF"]
-			description: ["The multiblock uses energy cores to release extremely large amounts of energy at once to craft things. While the batteries themselves are lost, you are able to recover some of the spent energy."]
+			description: [
+				"The multiblock uses energy cores to &erelease extremely large amounts of energy at once&r to craft things. While the batteries themselves are lost, you are able to recover some of the spent energy. "
+				""
+				"&5...once energy voiding is implmented in gtm."
+			]
 			icon: "gtceu:discharger"
 			id: "713FAECEE5046121"
 			rewards: [{
