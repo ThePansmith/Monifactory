@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
     event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells' })
     event.recipes.gtceu.chemical_reactor("kubejs_stem_cells")
-        .itemInputs('minecraft:dragon_egg', '4x minecraft:sculk_catalyst')
+        .itemInputs('minecraft:dragon_egg')
         .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500')
         .itemOutputs('64x gtceu:stem_cells', '64x gtceu:stem_cells')
         .outputFluids('gtceu:bacterial_sludge 500')
@@ -409,30 +409,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // Creative Efficiency Upgrade
-    event.recipes.extendedcrafting.shaped_table(
-        'thermal:machine_efficiency_creative_augment', [
-            "UPPCGCPPU",
-            'PPCGSGCPP',
-            'PCGSRSGCP',
-            'CGSRORSGC',
-            'GSROIORSG',
-            'CGSRORSGC',
-            'PCGSRSGCP',
-            'PPCGSGCPP',
-            "UPPCGCPPU",
-        ], {
-            U: 'gtceu:max_battery',
-            P: 'thermal:upgrade_augment_3',
-            C: 'thermal:upgrade_augment_4',
-            G: 'thermal:upgrade_augment_2',
-            S: 'thermal:machine_speed_augment',
-            R: 'thermal:machine_speed_augment',
-            O: 'thermal:machine_efficiency_augment',
-            I: 'kubejs:infinity_catalyst'
-        }
-    )
-
     // Creative Chest
 	event.recipes.extendedcrafting.shaped_table(
 		'gtceu:max_machine_casing', [
@@ -546,27 +522,4 @@ ServerEvents.recipes(event => {
                 Z: 'kubejs:infinity_wire_cutter'          
             }
     )}
-    
-    
-
-    // Creative Catalyst augment
-    event.recipes.extendedcrafting.shaped_table(
-        'thermal:machine_catalyst_creative_augment', [
-            'TTTTTTTTT',
-            'TNNIIINNT',
-            'TNINNNINT',
-            'TNINCIIIT',
-            'TNICRCINT',
-            'TIIICNINT',
-            'TNINNNINT',
-            'TNNIIINNT',
-            'TTTTTTTTT'
-        ], {
-            I: 'gtceu:infinity_plate',
-            R: 'kubejs:infinity_catalyst',
-            N: 'gtceu:neutronium_plate',
-            T: 'gtceu:titanium_plate',
-            C: 'thermal:machine_catalyst_augment'
-        }
-    )
 })

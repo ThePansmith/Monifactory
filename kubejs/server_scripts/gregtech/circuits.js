@@ -128,27 +128,9 @@ ServerEvents.recipes(event => {
         .EUt(9600)
 
     // Wetware tweaks
-    
-    event.remove({output: 'gtceu:wetware_printed_circuit_board'})
-    event.recipes.gtceu.large_chemical_reactor('wetware_printed_board_iron3')
-        .itemInputs('gtceu:wetware_circuit_board', '32x minecraft:sculk_vein', '4x gtceu:stem_cells')
-        .inputFluids('gtceu:iron_iii_chloride 5000', 'enderio:xp_juice 4000', 'gtceu:sterilized_growth_medium 100')
-        .itemOutputs('gtceu:wetware_printed_circuit_board')
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(1800)
-        .EUt(480)
-
-    event.recipes.gtceu.large_chemical_reactor('wetware_printed_board_persulfate')
-        .itemInputs('gtceu:wetware_circuit_board', '32x minecraft:sculk_vein', '4x gtceu:stem_cells')
-        .inputFluids('gtceu:sodium_persulfate 10000', 'enderio:xp_juice 8000', 'gtceu:sterilized_growth_medium 100')
-        .itemOutputs('gtceu:wetware_printed_circuit_board')
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(1800)
-        .EUt(480)
-
     event.remove({output: 'gtceu:neuro_processing_unit'})
     event.recipes.gtceu.circuit_assembler('neuro_processing_unit')
-        .itemInputs('gtceu:wetware_printed_circuit_board', '4x gtceu:stem_cells', '8x gtceu:polybenzimidazole_small_fluid_pipe', '4x gtceu:cryolobus_plate', '16x gtceu:silicone_rubber_foil', '8x gtceu:hsse_bolt')
+        .itemInputs('gtceu:wetware_printed_circuit_board', '4x gtceu:stem_cells', '8x gtceu:polybenzimidazole_small_fluid_pipe', '4x gtceu:enderium_plate', '16x gtceu:silicone_rubber_foil', '8x gtceu:hsse_bolt')
         .inputFluids('gtceu:sterilized_growth_medium 100')
         .itemOutputs('gtceu:neuro_processing_unit')
         .duration(600)

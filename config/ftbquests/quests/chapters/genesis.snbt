@@ -259,7 +259,7 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["&9Still very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
+			description: ["&9Can be used to autobuild multiblocks&r."]
 			disable_toast: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
@@ -274,6 +274,7 @@
 				title: "Terminal"
 				type: "checkmark"
 			}]
+			title: "&9Terminal"
 			x: 1.75d
 			y: 0.5d
 		}
@@ -396,7 +397,6 @@
 				""
 				"Later on, you also gain access to &9LaserIO&r, which trades some speed in exchange for allowing rather complex and compact filtering."
 			]
-			icon: "enderio:pressurized_fluid_conduit"
 			id: "64AAF0CD958D836A"
 			rewards: [{
 				count: 2
@@ -404,18 +404,26 @@
 				item: "ulvcovm:ulv_electric_pump"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "150F57D9BEE7CCEE"
-					item: "enderio:pressurized_fluid_conduit"
-					type: "item"
+			tasks: [{
+				id: "150F57D9BEE7CCEE"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "enderio:pressurized_fluid_conduit"
+							}
+							{
+								Count: 1b
+								id: "gtceu:steel_normal_fluid_pipe"
+							}
+						]
+					}
 				}
-				{
-					id: "277C38246AE179F6"
-					item: "gtceu:potin_normal_fluid_pipe"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "&9Fluid Transport"
 			x: -4.0d
 			y: 3.5d
