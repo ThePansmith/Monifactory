@@ -324,7 +324,7 @@
 		{
 			dependencies: [
 				"6E5343E45E99CBAD"
-                "11154356854B64DA"
+				"11154356854B64DA"
 			]
 			description: [
 				"&6QBit CPUs&r are an advanced Circuit Wafer crucial for &6Quantum Circuits&r."
@@ -851,7 +851,7 @@
 			description: [
 				"The most advanced substrate available, prepared for bleeding-edge bioengineering technology."
 				""
-                "&6Wetware Circuit Boards&r are the basis of &6Wetware&r circuits."
+				"&6Wetware Circuit Boards&r are the basis of &6Wetware&r circuits."
 			]
 			icon: "gtceu:wetware_printed_circuit_board"
 			id: "4AC51394FB5152E5"
@@ -1599,7 +1599,7 @@
 			dependencies: [
 				"7E3A179376673590"
 				"0B6196692F9E176D"
-                "20CB8F878CADA235"
+				"20CB8F878CADA235"
 			]
 			description: [
 				"The source of &9Warden Hearts&r and the valuable &9Lair of The Warden Data&r."
@@ -1842,7 +1842,7 @@
 			}]
 			title: "&9Discharger"
 			x: 27.25d
-			y: 18.25d
+			y: 18.25238095238094d
 		}
 		{
 			dependencies: ["7C89BC235C988689"]
@@ -1859,7 +1859,7 @@
 				item: "kubejs:bathyal_energy_core"
 				type: "item"
 			}]
-            title: "&9Bathyal Energy Core"
+			title: "&9Bathyal Energy Core"
 			x: 25.25d
 			y: 12.25d
 		}
@@ -1868,13 +1868,14 @@
 				"7E3A179376673590"
 				"56EFA6A07C7291F7"
 				"6391447F1A411281"
-                "20CB8F878CADA235"
+				"20CB8F878CADA235"
 			]
 			description: [
 				"The main source of &9Hadal Shards&r."
 				""
 				"&9This microminer is also to bring back Ender dragon eggs and Ender dragon scales, as well as neutronium, depending on the mission&r."
 			]
+			hide_dependency_lines: false
 			id: "2D47BFA44BDB5E6A"
 			rewards: [{
 				id: "5D074328E8D1E7A2"
@@ -1901,6 +1902,7 @@
 				""
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
+			hide_dependent_lines: true
 			id: "7E3A179376673590"
 			rewards: [{
 				id: "685F19529C786FAC"
@@ -2102,7 +2104,7 @@
 			description: [
 				"The highest tier of &9energy core&r, you will these to reach the &9Creative Tank&r."
 				""
-                "Each core requires four ingots of &6Neutronium&r and a &6Hadal Shard&r, as well as plenty of the previous energy cores."
+				"Each core requires four ingots of &6Neutronium&r and a &6Hadal Shard&r, as well as plenty of the previous energy cores."
 				""
 				"Hope you've got those Tier Eight Micro Miners automated."
 			]
@@ -2752,7 +2754,10 @@
 			y: 8.25d
 		}
 		{
-			dependencies: ["15DBB22E3DC0AFB7"]
+			dependencies: [
+				"15DBB22E3DC0AFB7"
+				"7E3A179376673590"
+			]
 			description: [
 				"&cThe 4.5th Micro Miner.&r"
 				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Aerotheum Dust&r."
@@ -2799,7 +2804,7 @@
 			}]
 			title: "Tier Four and a Half Microminer"
 			x: 6.0d
-			y: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2823,8 +2828,8 @@
 				item: "kubejs:microminer_t8half"
 				type: "item"
 			}]
-			x: 27.25d
-			y: 18.25d
+			x: 29.25d
+			y: 16.5d
 		}
 	]
 	title: "Late Game"
