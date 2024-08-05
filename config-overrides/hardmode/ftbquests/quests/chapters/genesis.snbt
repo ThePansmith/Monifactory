@@ -210,7 +210,7 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["&9Still very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
+			description: ["&9Can be used to autobuild multiblocks&r."]
 			disable_toast: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
@@ -225,6 +225,7 @@
 				title: "Terminal"
 				type: "checkmark"
 			}]
+            title: "&9Terminal"
 			x: 1.75d
 			y: 0.5d
 		}

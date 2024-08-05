@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dragon_lair_data',
                 '64x kubejs:dragon_lair_data',
                 '64x minecraft:dragon_breath',
-                '64x minecraft:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
                 'minecraft:dragon_head'
             )
             .duration(100*20)
@@ -214,12 +214,12 @@ ServerEvents.recipes(event => {
                 '8x kubejs:dragon_lair_data'
             )
             .itemOutputs(
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
                 '64x minecraft:dragon_breath',
                 '64x minecraft:dragon_breath',
                 '64x minecraft:dragon_breath',

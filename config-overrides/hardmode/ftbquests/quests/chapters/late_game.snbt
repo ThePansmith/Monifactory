@@ -166,6 +166,18 @@
 			x: 17.0d
 			y: 22.25d
 		}
+		{
+			id: "33B08B68738FB6E3"
+			linked_quest: "49D33146A1F417E8"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			id: "3580707E636655C2"
+			linked_quest: "11154356854B64DA"
+			x: -6.0d
+			y: 8.25d
+		}
 	]
 	quests: [
 		{
@@ -311,8 +323,8 @@
 		}
 		{
 			dependencies: [
-				"71602D44E1D0013E"
 				"6E5343E45E99CBAD"
+				"11154356854B64DA"
 			]
 			description: [
 				"&6QBit CPUs&r are an advanced Circuit Wafer crucial for &6Quantum Circuits&r."
@@ -839,7 +851,7 @@
 			description: [
 				"The most advanced substrate available, prepared for bleeding-edge bioengineering technology."
 				""
-				"&6Wetware Circuit Boards&r are the basis of &6Wetware&r circuits, the final theme that spans tiers six through nine."
+				"&6Wetware Circuit Boards&r are the basis of &6Wetware&r circuits."
 			]
 			icon: "gtceu:wetware_printed_circuit_board"
 			id: "4AC51394FB5152E5"
@@ -1001,6 +1013,8 @@
 				"A complex material from &bThermal Expansion&r cooked in an &3Electric Blast Furnace&r, or a &2Alloy Blast Smelter&r."
 				""
 				"&6Enderium&r doesn't require much power (running on as little as MV) but it does need a lot of heat and is incredibly slow without overclocking. &2You can use small amounts of Krypton from Liquid Ender Air distillation to significantly decrease the smelting time.&r"
+				""
+				"&9Enderium also requires Tantalum, which can be renewably created by macerating and processing dragon scales."
 				""
 				"As with all later blast furnace materials, dedicate a furnace to keeping these in stock and have it running constantly to ensure a stable supply (turning it off when you have an acceptably vast stockpile)."
 				""
@@ -1583,9 +1597,9 @@
 		}
 		{
 			dependencies: [
-				"2358A5CF22FF5495"
 				"7E3A179376673590"
 				"0B6196692F9E176D"
+				"20CB8F878CADA235"
 			]
 			description: [
 				"The source of &9Warden Hearts&r and the valuable &9Lair of The Warden Data&r."
@@ -1741,11 +1755,11 @@
 			y: 8.25d
 		}
 		{
-			dependencies: ["1CC092A2F2CD4589"]
+			dependencies: ["22144A6785524FDF"]
 			description: [
-				"&9Mesol Cores&r are the first crafting step into &9Hypogen Infusion&r."
+				"&9Mesol Energy Cores&r is your first proper &9Energy Cores&r."
 				""
-				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &9Sculk&r."
+				"They (as well as future Energy Cores) require xp juice to craft."
 			]
 			id: "7C89BC235C988689"
 			rewards: [{
@@ -1759,9 +1773,9 @@
 				item: "kubejs:mesol_energy_core"
 				type: "item"
 			}]
-			title: "&9Mesol Cores"
-			x: 25.25d
-			y: 8.25d
+			title: "&9Mesol Energy Core"
+			x: 27.25d
+			y: 12.25d
 		}
 		{
 			dependencies: [
@@ -1805,15 +1819,13 @@
 			y: 18.25d
 		}
 		{
-			dependencies: ["7C89BC235C988689"]
+			dependencies: ["22144A6785524FDF"]
 			description: [
-				"&9By shocking sculk and injecting it with xp juice, you can create new items.&r "
+				"The multiblock uses energy cores to &erelease extremely large amounts of energy at once&r to craft things. While the batteries themselves are lost, you are able to recover some of the spent energy. "
 				""
-				"The multiblock requires extremely large amounts of energy to function, and a passive supply of sculk. Said sculk is inserted into a &9sculk input bus&r."
-				""
-				"The multiblock is formed with special coils, with said casings able to increase the internal power buffer of the machine the higher tier they are. The power substation will likely be very useful here, as it allows you to buffer even more power."
+				"&5...once energy voiding is implemented in gtm."
 			]
-			icon: "moni_multiblocks:hypogean_infuser"
+			icon: "gtceu:discharger"
 			id: "713FAECEE5046121"
 			rewards: [{
 				id: "1334EFA413965845"
@@ -1821,26 +1833,20 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [
-				{
-					id: "3C9333ECA3F6B5F9"
-					item: "moni_multiblocks:hypogean_infuser"
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "5756875831B786CB"
-					item: "moni_multiblocks:mesol_voltic_casing"
-					type: "item"
-				}
-			]
-			title: "&9Hypogen Infuser"
+			size: 1.5d
+			subtitle: "What good is a battery if you don't use it?"
+			tasks: [{
+				id: "3C9333ECA3F6B5F9"
+				item: "gtceu:discharger"
+				type: "item"
+			}]
+			title: "&9Discharger"
 			x: 27.25d
-			y: 8.25d
+			y: 18.25238095238094d
 		}
 		{
-			dependencies: ["713FAECEE5046121"]
-			description: ["&9Bathyal Cores&r are the second tier of core, used for intermediate crafting recipes."]
+			dependencies: ["7C89BC235C988689"]
+			description: ["&9Bathyal Energy Cores&r are the second tier of core, used for intermediate crafting recipes."]
 			id: "20CB8F878CADA235"
 			rewards: [{
 				id: "6C1605F1E280EA28"
@@ -1853,61 +1859,23 @@
 				item: "kubejs:bathyal_energy_core"
 				type: "item"
 			}]
-			title: "&9Bathyal Cores"
-			x: 27.25d
-			y: 10.25d
-		}
-		{
-			dependencies: ["6F5579E1646634C7"]
-			description: ["&9Abyssal Casings&r are the penultimate tier of casings for Hypogean Infusion, able to store even more power."]
-			id: "2358A5CF22FF5495"
-			rewards: [{
-				id: "0022ECDC55B22DC3"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "09CD18933F28FA28"
-				item: "moni_multiblocks:abyssal_voltic_casing"
-				type: "item"
-			}]
-			title: "&9Abyssal Casings"
+			title: "&9Bathyal Energy Core"
 			x: 25.25d
 			y: 12.25d
 		}
 		{
-			dependencies: ["20CB8F878CADA235"]
-			description: ["&9Hypogean Casings&r can be upgraded to &9Bathyal Tier&r via hypogean infusion."]
-			id: "6F5579E1646634C7"
-			rewards: [{
-				count: 2
-				id: "049628C1CAA8417E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "581D806823B709C3"
-				item: "moni_multiblocks:bathyal_voltic_casing"
-				type: "item"
-			}]
-			title: "&9Bathyal Casings"
-			x: 27.25d
-			y: 12.25d
-		}
-		{
 			dependencies: [
-				"2358A5CF22FF5495"
 				"7E3A179376673590"
 				"56EFA6A07C7291F7"
 				"6391447F1A411281"
+				"20CB8F878CADA235"
 			]
 			description: [
 				"The main source of &9Hadal Shards&r."
 				""
 				"&9This microminer is also to bring back Ender dragon eggs and Ender dragon scales, as well as neutronium, depending on the mission&r."
 			]
+			hide_dependency_lines: false
 			id: "2D47BFA44BDB5E6A"
 			rewards: [{
 				id: "5D074328E8D1E7A2"
@@ -1934,6 +1902,7 @@
 				""
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
+			hide_dependent_lines: true
 			id: "7E3A179376673590"
 			rewards: [{
 				id: "685F19529C786FAC"
@@ -1951,7 +1920,10 @@
 			y: 15.25d
 		}
 		{
-			dependencies: ["7FAB6FD0A054443E"]
+			dependencies: [
+				"7FAB6FD0A054443E"
+				"713FAECEE5046121"
+			]
 			description: [
 				"&6Cryococcus&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r."
 				""
@@ -1975,27 +1947,8 @@
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
-			description: ["&6Abyssal Cores&r are the third tier of &bSculk&r core, and are common components of endgame recipes."]
-			id: "03F04B4005F2CBE1"
-			rewards: [{
-				id: "6F7838D02F126912"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "71171679FDF638A6"
-				item: "kubejs:abyssal_energy_core"
-				type: "item"
-			}]
-			title: "&9Abyssal Core"
-			x: 25.25d
-			y: 21.0d
-		}
-		{
-			dependencies: ["03F04B4005F2CBE1"]
 			description: [
-				"&6Cryococcus&r, &6Abyss Shards&r, and &6Stabilized Einsteinium&r can be used to create a &6Reactor Core&r."
+				"&6Cryococcus&r, &6Abyss Shards&r, and &6Stabilized Einsteinium&r can be used to create a &9Abyssal Energy Core&r."
 				""
 				"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some Endgame items."
 			]
@@ -2013,7 +1966,7 @@
 			}]
 			title: "&9Abyssal Energy Core"
 			x: 23.25d
-			y: 21.0d
+			y: 21.5d
 		}
 		{
 			dependencies: [
@@ -2027,7 +1980,7 @@
 				""
 				"The alternate mission brings a decent quantity of &6Neutronium&r. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
 				""
-				"The Tier Nine Micro Miner will also be important in the Post-Tank game, as it will be your main source of &9Quasi-Stable Neutron Stars&r."
+				"The Tier Nine Micro Miner will also be important later on, as it will be your main source of &9Quasi-Stable Neutron Stars&r."
 			]
 			id: "6BF4A76C5B84EEE9"
 			rewards: [{
@@ -2048,8 +2001,9 @@
 		}
 		{
 			dependencies: [
-				"03F04B4005F2CBE1"
 				"738A141D31AD7CE3"
+				"6ABD83B58FADD4DF"
+				"235C1E5B2C58B5AF"
 			]
 			description: ["&9Hadal Warp Engines&r are components needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."]
 			id: "483652BAEF59E125"
@@ -2069,7 +2023,10 @@
 			y: 24.0d
 		}
 		{
-			dependencies: ["03F04B4005F2CBE1"]
+			dependencies: [
+				"0562D9F4C441EAF9"
+				"6ABD83B58FADD4DF"
+			]
 			description: [
 				"&6Hadal Shards&r are a component in &bHypogean infusion&r."
 				""
@@ -2089,7 +2046,7 @@
 			}]
 			title: "&9Hadal Shards"
 			x: 27.25d
-			y: 21.0d
+			y: 21.5d
 		}
 		{
 			dependencies: [
@@ -2145,9 +2102,9 @@
 				"235C1E5B2C58B5AF"
 			]
 			description: [
-				"The highest tier of hypogean infusion injectors, used to bring sculk to the lowest temptures. You will these to reach the &9Creative Tank&r."
+				"The highest tier of &9energy core&r, you will these to reach the &9Creative Tank&r."
 				""
-				"Each injector requires four ingots of &6Neutronium&r and four &6Hadal Shards&r, as well as two &6Crystal Matrix&r blocks."
+				"Each core requires four ingots of &6Neutronium&r and a &6Hadal Shard&r, as well as plenty of the previous energy cores."
 				""
 				"Hope you've got those Tier Eight Micro Miners automated."
 			]
@@ -2162,10 +2119,10 @@
 			size: 2.0d
 			tasks: [{
 				id: "140C83AB5FE8450E"
-				item: "moni_multiblocks:hadal_voltic_casing"
+				item: "kubejs:hadal_energy_core"
 				type: "item"
 			}]
-			title: "&9Hadal Cryogenic Casings"
+			title: "&9Hadal Energy Core"
 			x: 29.25d
 			y: 24.0d
 		}
@@ -2354,7 +2311,6 @@
 			y: 15.25d
 		}
 		{
-			dependencies: ["71602D44E1D0013E"]
 			description: [
 				"Some Micro Miner missions use a &6Gemstone Sensor&r to scout out gems instead of ores."
 				""
@@ -2420,47 +2376,6 @@
 			}]
 			x: 3.0d
 			y: 24.0d
-		}
-		{
-			dependencies: ["49D33146A1F417E8"]
-			description: [
-				"&9Radon&r will be needed in large quantities."
-				""
-				"For now, you'll need to obtain it from Tier Two Micro Miner missions, in the form of &6Radium Salt&r. Electrolyze it for Radon and &6Rock Salt&r. &2You can also get it from distilling liquid Ender Air.&r"
-				""
-				"Later it will be possible to make Radon using a &bGregTech &3Fusion Reactor&r."
-			]
-			disable_toast: true
-			icon: "gtceu:radon_bucket"
-			id: "6B0A547EA42CD35A"
-			shape: "hexagon"
-			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:radon"
-				id: "613824353565F9CF"
-				type: "fluid"
-			}]
-			title: "&2Radon"
-			x: -6.0d
-			y: 6.25d
-		}
-		{
-			dependencies: [
-				"11154356854B64DA"
-				"6B0A547EA42CD35A"
-			]
-			description: ["You'll need an HV or better &3Chemical Bath&r to make these. The recipe is quite slow, so invest in the highest tier Chemical Baths you can and consider parallelizing the recipe."]
-			disable_toast: true
-			id: "71602D44E1D0013E"
-			shape: "hexagon"
-			subtitle: "When &6Ender Eyes&r just aren't creepy enough."
-			tasks: [{
-				id: "52E1C27170D352B7"
-				item: "gtceu:quantum_eye"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 8.25d
 		}
 		{
 			dependencies: ["53EC3831D66769CA"]
@@ -2784,7 +2699,65 @@
 			y: 16.25d
 		}
 		{
-			dependencies: ["15DBB22E3DC0AFB7"]
+			dependencies: [
+				"0B6196692F9E176D"
+				"5199E6FAA4B699CD"
+			]
+			description: [
+				"Interestingly enough, sculk itself functions great as a &9biobattery&r, being able to store and quickly release mass amounts of energy, perfect for some upcoming items. The &9sculk charger&r should be able to get started in tacking advantage of it."
+				""
+				"To use it, set the recipe &ein the same way you would for an autocrafting table&r, then place an inventory (such as a barrel on top), and connect power to the charger and a pylon. Items can be extacted from the charger in any manner."
+				""
+				"The charger and pylon themselves &ehave extreme throughput&r, so don't worry about having to wait for it to craft items."
+			]
+			id: "7F75D961B102A72D"
+			rewards: [{
+				id: "4CF3CFEF57B863A3"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "338DCAE7D9D78C51"
+					item: "extendedcrafting:auto_flux_crafter"
+					type: "item"
+				}
+				{
+					id: "00EF32A94D627A37"
+					item: "extendedcrafting:flux_alternator"
+					type: "item"
+				}
+			]
+			title: "&9Sculk Charging"
+			x: 25.25d
+			y: 8.25d
+		}
+		{
+			dependencies: ["7F75D961B102A72D"]
+			description: ["[\"While the charger itself has extreme throughput, it is recommended to either create a \",{ \"text\": \"power substation\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"36B1B083B4FA439F\" }},\", or keep the cores themselves in stock, as a single core requires 200 Million RF to craft.\"]"]
+			id: "22144A6785524FDF"
+			rewards: [{
+				id: "5B1FA1A9ACBC0EB7"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "295338231C995AE7"
+				item: "kubejs:mesol_core"
+				type: "item"
+			}]
+			title: "&9Mesol Core"
+			x: 27.25d
+			y: 8.25d
+		}
+		{
+			dependencies: [
+				"15DBB22E3DC0AFB7"
+				"7E3A179376673590"
+			]
 			description: [
 				"&cThe 4.5th Micro Miner.&r"
 				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Aerotheum Dust&r."
@@ -2831,7 +2804,7 @@
 			}]
 			title: "Tier Four and a Half Microminer"
 			x: 6.0d
-			y: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2855,8 +2828,8 @@
 				item: "kubejs:microminer_t8half"
 				type: "item"
 			}]
-			x: 27.25d
-			y: 18.25d
+			x: 29.25d
+			y: 16.5d
 		}
 	]
 	title: "Late Game"
