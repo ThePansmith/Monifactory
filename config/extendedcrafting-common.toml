@@ -92,10 +92,10 @@
 	defaultPowerRate = 200000000
 	#How much FE the Flux Alternator should hold.
 	#Range: > 0
-	powerCapacity = 2000000000
+	powerCapacity = 200000000
 	#How much FE the Auto Flux Crafter should hold.
 	#Range: > 0
-	autoCrafterPowerCapacity = 2000000000
+	autoCrafterPowerCapacity = 200000000
 	#How much FE the Auto Flux Crafter should use when auto inserting items.
 	#Range: > 0
 	autoCrafterInsertPowerRate = 100
