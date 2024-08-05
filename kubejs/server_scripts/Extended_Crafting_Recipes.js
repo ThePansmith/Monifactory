@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
 		], {
 			A: 'gtceu:neutronium_ingot',
 			B: 'gtceu:neutronium_nugget',
-			C: 'gtceu:netherite_ingot',
+			C: 'gtceu:activated_netherite_ingot',
 			D: 'kubejs:eternal_catalyst'
 		}
 	).id('kubejs:extended/infinity_compound')

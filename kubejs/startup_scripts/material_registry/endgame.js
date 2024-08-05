@@ -53,9 +53,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING)
         .cableProperties(2147483647, 134217727, 0, true)
 
-    event.create('netherite')
+    event.create('activated_netherite')
         .ingot()
-        .element(GTElements.get("netherite"))
+        .element(GTElements.get("activated_netherite"))
         .color(0x4C484C)
         .iconSet('dull')
         .cableProperties(8388608, 16, 0, true)

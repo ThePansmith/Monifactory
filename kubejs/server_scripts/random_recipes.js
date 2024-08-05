@@ -406,7 +406,7 @@ ServerEvents.recipes(event => {
         S: 'gtceu:uhv_sensor',
         C: '#gtceu:circuits/uev',
         E: 'gtceu:uhv_emitter',
-        W: 'gtceu:netherite_quadruple_wire'
+        W: 'gtceu:activated_netherite_quadruple_wire'
     }
     )
 
