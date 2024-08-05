@@ -30,8 +30,8 @@ ServerEvents.recipes(event => {
     const quickSmelt = (oreName, output) => {
         event.remove({ id: "gtceu:smelting/smelt_raw_" + oreName + "_ore_to_ingot" })
         event.remove({ id: "gtceu:blasting/smelt_raw_" + oreName + "_ore_to_ingot" })
-        event.smelting(output, "gtceu:raw_" + oreName).id("gtceu:smelting/smelt_raw_" + oreName + "_ore_to_ingot").cookingTime(50)
-        event.blasting(output, "gtceu:raw_" + oreName).id("gtceu:blasting/smelt_raw_" + oreName + "_ore_to_ingot").cookingTime(50)
+        event.smelting(output, "gtceu:raw_" + oreName).id("gtceu:smelting/smelt_raw_" + oreName + "_ore_to_ingot").cookingTime(50).xp(0.9)
+        event.blasting(output, "gtceu:raw_" + oreName).id("gtceu:blasting/smelt_raw_" + oreName + "_ore_to_ingot").cookingTime(50).xp(0.9)
     }
     quickSmelt("redstone", "3x minecraft:redstone")
     quickSmelt("electrotine", "gtceu:electrotine_dust")
