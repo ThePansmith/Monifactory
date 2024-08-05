@@ -1,12 +1,12 @@
 ServerEvents.recipes(event => {
     const converter = [
-        ['uev', 'omnium', 'netherite', '1966080'],
+        ['uev', 'omnium', 'activated_netherite', '1966080'],
         ['uiv', 'infinity', 'holmium', '3932160'],
         ['max', 'monium', 'monium', '80000000'],
     ]
     // no MAX tier laserhatch :1984:
     const laserhatch = [
-        ['uev', 'netherite', '1966080'],
+        ['uev', 'activated_netherite', '1966080'],
         ['uiv', 'holmium', '3932160'],
     ]
 
@@ -156,7 +156,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     event.recipes.gtceu.assembler('uiv_hull')
-        .itemInputs('gtceu:uiv_machine_casing', '2x gtceu:netherite_single_wire')
+        .itemInputs('gtceu:uiv_machine_casing', '2x gtceu:activated_netherite_single_wire')
         .inputFluids('gtceu:polybenzimidazole 576')
         .itemOutputs('gtceu:uiv_machine_hull')
         .duration(50)
@@ -224,7 +224,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_piston')
-        .itemInputs('gtceu:uev_electric_motor', '4x gtceu:omnium_plate', '4x gtceu:omnium_ring', '16x gtceu:omnium_round', '4x gtceu:omnium_rod', 'gtceu:omnium_gear', '2x gtceu:small_omnium_gear', '2x gtceu:netherite_double_wire')
+        .itemInputs('gtceu:uev_electric_motor', '4x gtceu:omnium_plate', '4x gtceu:omnium_ring', '16x gtceu:omnium_round', '4x gtceu:omnium_rod', 'gtceu:omnium_gear', '2x gtceu:small_omnium_gear', '2x gtceu:activated_netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 3000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_electric_piston')
         .duration(600)
@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_robot_arm')
-        .itemInputs('4x gtceu:long_omnium_rod', 'gtceu:omnium_gear', '3x gtceu:small_omnium_gear', '3x gtceu:uev_electric_motor', 'gtceu:uev_electric_piston', '#gtceu:circuits/uev', '2x #gtceu:circuits/uhv', '4x #gtceu:circuits/uv', '4x gtceu:netherite_double_wire')
+        .itemInputs('4x gtceu:long_omnium_rod', 'gtceu:omnium_gear', '3x gtceu:small_omnium_gear', '3x gtceu:uev_electric_motor', 'gtceu:uev_electric_piston', '#gtceu:circuits/uev', '2x #gtceu:circuits/uhv', '4x #gtceu:circuits/uv', '4x gtceu:activated_netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 3000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_robot_arm')
         .duration(600)
@@ -304,7 +304,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_sensor')
-        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:omnium_plate', 'kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:netherite_double_wire')
+        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:omnium_plate', 'kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:activated_netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_sensor')
         .duration(600)
@@ -344,7 +344,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_emitter')
-        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:omnium_rod', 'kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:netherite_double_wire')
+        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:omnium_rod', 'kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:activated_netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_emitter')
         .duration(600)
@@ -386,7 +386,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_field_generator')
-        .itemInputs('gtceu:omnium_frame', '6x gtceu:omnium_plate', 'kubejs:quasi_stable_neutron_star', '2x gtceu:uev_emitter', '2x #gtceu:circuits/uev', '64x gtceu:fine_netherite_wire', '64x gtceu:fine_netherite_wire', '4x gtceu:netherite_double_wire')
+        .itemInputs('gtceu:omnium_frame', '6x gtceu:omnium_plate', 'kubejs:quasi_stable_neutron_star', '2x gtceu:uev_emitter', '2x #gtceu:circuits/uev', '64x gtceu:fine_netherite_wire', '64x gtceu:fine_netherite_wire', '4x gtceu:activated_netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_field_generator')
         .duration(600)
@@ -428,7 +428,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_conveyor')
-        .itemInputs('2x gtceu:uev_electric_motor', '2x gtceu:omnium_plate', '4x gtceu:omnium_ring', '16x gtceu:omnium_round', '4x gtceu:omnium_screw', '2x gtceu:netherite_double_wire')
+        .itemInputs('2x gtceu:uev_electric_motor', '2x gtceu:omnium_plate', '4x gtceu:omnium_ring', '16x gtceu:omnium_round', '4x gtceu:omnium_screw', '2x gtceu:activated_netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 3000', 'gtceu:styrene_butadiene_rubber 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_conveyor_module')
         .duration(600)
@@ -468,7 +468,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_pump')
-        .itemInputs('gtceu:uev_electric_motor', 'gtceu:netherite_huge_fluid_pipe', '2x gtceu:omnium_plate', '8x gtceu:omnium_screw', '48x gtceu:omnium_ring', 'gtceu:netherite_rotor', '2x gtceu:netherite_double_wire')
+        .itemInputs('gtceu:uev_electric_motor', 'gtceu:activated_netherite_huge_fluid_pipe', '2x gtceu:omnium_plate', '8x gtceu:omnium_screw', '48x gtceu:omnium_ring', 'gtceu:activated_netherite_rotor', '2x gtceu:activated_netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 3000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_electric_pump')
         .duration(600)

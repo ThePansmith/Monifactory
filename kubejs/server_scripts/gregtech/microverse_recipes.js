@@ -486,7 +486,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_second')
         .itemInputs(
             'kubejs:microminer_t10', 
-            '16x #forge:storage_blocks/netherite',
+            '16x #forge:storage_blocks/activated_netherite',
             '64x kubejs:stellar_creation_data'
         )
         .itemOutputs('kubejs:creative_storage_data')

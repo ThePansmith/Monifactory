@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
 
     // WIP: Matter Circuits
     event.recipes.gtceu.circuit_assembler('matter_circuit_board')
-        .itemInputs('16x gtceu:omnium_plate', '32x gtceu:netherite_foil', '32x gtceu:crystal_matrix_foil', '#gtceu:circuits/zpm', 'gtceu:luv_emitter', 
+        .itemInputs('16x gtceu:omnium_plate', '32x gtceu:activated_netherite_foil', '32x gtceu:crystal_matrix_foil', '#gtceu:circuits/zpm', 'gtceu:luv_emitter', 
             '8x gtceu:omnic_acid_dust')
         .inputFluids('minecraft:water 500')
         .itemOutputs('16x kubejs:matter_circuit_board')
@@ -147,7 +147,7 @@ ServerEvents.recipes(event => {
         .EUt(250000)
 
     event.recipes.gtceu.assembler('matter_processing_unit')
-        .itemInputs('2x kubejs:matter_circuit_board', '2x gtceu:crystal_matrix_plate', '2x gtceu:netherite_double_wire', 'gtceu:highly_advanced_soc')
+        .itemInputs('2x kubejs:matter_circuit_board', '2x gtceu:crystal_matrix_plate', '2x gtceu:activated_netherite_double_wire', 'gtceu:highly_advanced_soc')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:matter_processing_unit')
         .duration(100)
@@ -179,7 +179,7 @@ ServerEvents.recipes(event => {
         .EUt(250000)
 
     event.recipes.gtceu.assembly_line('matter_processor_mainframe')
-        .itemInputs('4x gtceu:netherite_frame', '16x kubejs:matter_processor_computer', '24x gtceu:advanced_smd_capacitor', 
+        .itemInputs('4x gtceu:activated_netherite_frame', '16x kubejs:matter_processor_computer', '24x gtceu:advanced_smd_capacitor', 
             '24x gtceu:advanced_smd_transistor', '24x gtceu:advanced_smd_diode', '24x gtceu:advanced_smd_resistor', '24x gtceu:advanced_smd_inductor', 
             '32x gtceu:ram_chip', '8x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire', 
             '8x gtceu:crystal_matrix_plate') // could replace with omnium frame
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('dimensional_processing_unit')
         .itemInputs('4x kubejs:dimensional_circuit_board', 'gtceu:infinity_plate', '4x kubejs:the_ultimate_material', 
-            '4x gtceu:netherite_double_wire', '2x gtceu:flawless_monazite_gem',  '2x gtceu:flawless_glass_gem')
+            '4x gtceu:activated_netherite_double_wire', '2x gtceu:flawless_monazite_gem',  '2x gtceu:flawless_glass_gem')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('4x kubejs:dimensional_processing_unit')
         .duration(100)
@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
 
     const smds = [
         ['transistor', 'gtceu:diamond_plate', '8x gtceu:fine_holmium_wire'],
-        ['resistor', 'gtceu:netherite_dust', '4x gtceu:fine_holmium_wire'],
+        ['resistor', 'gtceu:activated_netherite_dust', '4x gtceu:fine_holmium_wire'],
         ['capacitor', 'gtceu:neutronium_foil', 'gtceu:holmium_foil'],
         ['diode', 'gtceu:ruthenium_trinium_americium_neutronate_dust', '16x gtceu:fine_holmium_wire'],
         ['inductor', 'gtceu:tritanium_ring', '16x gtceu:fine_holmium_wire']
@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
 
     // Monic Circuits
     event.recipes.gtceu.circuit_assembler('monic_circuit_board')
-        .itemInputs('16x kubejs:dimensional_circuit_board', '16x gtceu:netherite_plate', '8x gtceu:holmium_plate', 
+        .itemInputs('16x kubejs:dimensional_circuit_board', '16x gtceu:activated_netherite_plate', '8x gtceu:holmium_plate', 
             '#gtceu:circuits/uhv', 'gtceu:uv_field_generator', '4x kubejs:quasi_stable_neutron_star')
         .inputFluids('gtceu:omnium 576')
         .itemOutputs('16x kubejs:monic_circuit_board')
@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler('monic_processor_assembly')
         .itemInputs('kubejs:monic_processing_unit', '8x kubejs:monic_processor', '2x kubejs:contained_singularity', '12x kubejs:complex_smd_capacitor', 
-            '12x kubejs:complex_smd_transistor', '8x gtceu:netherite_single_wire')
+            '12x kubejs:complex_smd_transistor', '8x gtceu:activated_netherite_single_wire')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('8x kubejs:monic_processor_assembly')
         .duration(160)
@@ -291,7 +291,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('monic_processor_computer')
         .itemInputs('kubejs:monic_processing_unit', '2x kubejs:monic_processor_assembly', '4x kubejs:contained_singularity', 
             '16x kubejs:complex_smd_capacitor', '16x kubejs:complex_smd_transistor', '16x kubejs:complex_smd_diode', '16x kubejs:complex_smd_resistor', 
-            '16x gtceu:uhpic_chip', '4x gtceu:netherite_double_wire')
+            '16x gtceu:uhpic_chip', '4x gtceu:activated_netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:monic_processor_computer')
         .duration(200)

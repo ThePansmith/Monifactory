@@ -77,6 +77,12 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(16)
 
+        event.recipes.gtceu.alloy_smelter('kubejs:netherite_ingot')
+        .itemInputs('4x #forge:ingots/gold', '4x minecraft:netherite_scrap') // was flipped
+        .itemOutputs('1x minecraft:netherite_ingot')
+        .duration(100)
+        .EUt(32)
+
     event.remove({ id: "minecraft:nuclearcraft_ferroboron_plate" }) // minecraft??
     event.remove({ id: "minecraft:nuclearcraft_ferroboron_dust" })
     event.remove([{ id: "nuclearcraft:blast_ferroboron_dust" }, { id: "nuclearcraft:fission_reactor_glass" }])

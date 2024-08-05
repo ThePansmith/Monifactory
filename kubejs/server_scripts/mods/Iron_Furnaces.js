@@ -82,12 +82,11 @@ ServerEvents.recipes(event => {
     event.shaped(
         'ironfurnaces:netherite_furnace', [
             'ABA',
-            'BCB',
+            'BBB',
             'ABA'
         ], {
-            A: 'gtceu:black_steel_ingot',
-            B: 'ironfurnaces:obsidian_furnace',
-            C: 'gtceu:black_steel_block'
+            A: 'gtceu:minecraft_netherite_ingot',
+            B: 'ironfurnaces:obsidian_furnace'
         }
     )
 

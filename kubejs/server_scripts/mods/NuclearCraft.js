@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
     cansolid('copper', "gtceu:copper_dust")
     cansolid('magnesium', "gtceu:magnesium_dust")
     cansolid('slime', "minecraft:slime_ball")
-    cansolid('netherite', "gtceu:black_steel_dust")
+    cansolid('netherite', "minecraft:netherite_scrap")
     cansolid('end_stone', "gtceu:endstone_dust")
     cansolid('prismarine', "minecraft:prismarine_crystals")
     cansolid('obsidian', "gtceu:obsidian_dust")

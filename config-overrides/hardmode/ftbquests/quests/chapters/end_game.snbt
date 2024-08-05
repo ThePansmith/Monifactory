@@ -434,7 +434,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "25D96E6575B38623"
-				item: "gtceu:netherite_ingot"
+				item: "gtceu:activated_netherite_ingot"
 				type: "item"
 			}]
 			title: "&9Netherite"

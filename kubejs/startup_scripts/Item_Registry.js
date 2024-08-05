@@ -305,8 +305,9 @@ StartupEvents.registry('item', event => {
     event.create('crushed_ancient_debris').texture('kubejs:item/netherite/crushed_ancient_debris')
     event.create('purified_ancient_debris').texture('kubejs:item/netherite/purified_ancient_debris')
     event.create('refined_ancient_debris').texture('kubejs:item/netherite/refined_ancient_debris')
-    event.create('impure_netherite_dust').texture('kubejs:item/netherite/impure_netherite_dust')
-    event.create('purified_netherite_dust').texture('kubejs:item/netherite/purified_netherite_dust')
+    event.create('impure_ancient_debris_dust').texture('kubejs:item/netherite/impure_ancient_debris_dust')
+    event.create('purified_ancient_debris_dust').texture('kubejs:item/netherite/purified_ancient_debris_dust')
+    event.create('processed_ancient_debris_dust').texture('kubejs:item/netherite/processed_ancient_debris_dust')
     event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
