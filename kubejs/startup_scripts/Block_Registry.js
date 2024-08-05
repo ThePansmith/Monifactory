@@ -142,7 +142,7 @@ StartupEvents.registry("block", event => {
         .soundType('metal')
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe").requiresTool(true);
-        
+
     event.create('universal_warp_controller')
         .displayName("Universal Warp Controller")
         .soundType('metal')
@@ -162,29 +162,29 @@ StartupEvents.registry("block", event => {
         'copper_ore'
     ]
 
-	for (const ore of ores) {
-		// split '_' then capitalize then rejoin
-		event.create('dense_' + ore)
-			.displayName(`Dense ${ore.split('_').map(v => capitalize(v)).join(" ")}`)
-			.soundType('stone')
-			.resistance(6)
-			.hardness(5)
-			.tagBlock('mineable/pickaxe')
+    for (const ore of ores) {
+        // split '_' then capitalize then rejoin
+        event.create('dense_' + ore)
+            .displayName(`Dense ${ore.split('_').map(v => capitalize(v)).join(" ")}`)
+            .soundType('stone')
+            .resistance(6)
+            .hardness(5)
+            .tagBlock('mineable/pickaxe')
             .tagBlock('forge:ores/dense')
-			.tagBlock('forge:ores/dense_' + ore)
-			.requiresTool(true);
-	}
+            .tagBlock('forge:ores/dense_' + ore)
+            .requiresTool(true);
+    }
 
     event.create('dense_magma_block')
-			.displayName(`Dense Magma Block`)
-			.soundType('stone')
-			.resistance(6)
-			.hardness(5)
-			.tagBlock('mineable/pickaxe')
-            .tagBlock('forge:ores/dense')
-			.tagBlock('forge:ores/dense_magma')
-			.requiresTool(true)
-            .lightLevel(1.0);
+        .displayName(`Dense Magma Block`)
+        .soundType('stone')
+        .resistance(6)
+        .hardness(5)
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('forge:ores/dense')
+        .tagBlock('forge:ores/dense_magma')
+        .requiresTool(true)
+        .lightLevel(1.0);
 
     //Casing stuff
 
@@ -209,8 +209,8 @@ StartupEvents.registry("block", event => {
         .resistance(2.5)
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/microverse/casing')})
-    
+        .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/microverse/casing') })
+
     event.create('cryolobus_casing', 'gtceu:renderer')
         .displayName("Cryolobus Casing")
         .soundType('metal')
@@ -218,7 +218,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/cryolobus/cryolobus_casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/cryolobus/cryolobus_casing') })
 
     event.create('cryococcus_casing', 'gtceu:renderer')
         .displayName("Cryococcus Casing")
@@ -227,7 +227,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_casing') })
 
     event.create('cryococcus_fusion_casing', 'gtceu:renderer')
         .displayName("Cryococcus Fusion Casing")
@@ -236,7 +236,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_fusion_casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_fusion_casing') })
 
     event.create('cryococcus_fusion_coil', 'gtceu:renderer')
         .displayName("Cryococcus Fusion Coil")
@@ -245,7 +245,7 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_fusion_coil')})
+        .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/cryolobus/cryococcus_fusion_coil') })
 
     event.create("dark_soularium_casing", 'gtceu:renderer')
         .displayName("Dark Soularium Casing")
@@ -254,22 +254,22 @@ StartupEvents.registry("block", event => {
         .resistance(2.5)
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/soularium/casing')})
-    
+        .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/soularium/casing') })
+
     // Post-Tank MB blocks
     event.create('omnic_matrix_machine_casing', 'gtceu:renderer')
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
         .tagBlock("mineable/pickaxe")
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/omnium/casing')})
-        
+        .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/omnium/casing') })
+
     event.create('dimensional_stabilization_netherite_casing', 'gtceu:renderer')
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
         .tagBlock("mineable/pickaxe")
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/netherite/casing')})
+        .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/netherite/casing') })
 
     event.create('omnic_matrix_coil_block', 'gtceu:coil')
         .temperature(15000)
@@ -289,7 +289,7 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .soundType('metal')
         .tagBlock("mineable/pickaxe")
-        .textureOverrideRenderer('minecraft:block/cube_all', {'all': new ResourceLocation('kubejs', 'block/debug/ctm_block')})
+        .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/debug/ctm_block') })
 
 });
 

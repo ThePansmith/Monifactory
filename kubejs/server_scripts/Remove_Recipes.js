@@ -97,9 +97,6 @@ ServerEvents.recipes(event => {
     // event.remove({id: 'minecraft:kjs/iron_nugget'})
     // event.remove({id: 'minecraft:kjs/gold_nugget'})
 
-    // Just a test recipe packaged with the coremod
-    event.remove({ id: 'gtceu:hypogean_infuser/mesol' })
-
     // Posttank stuff
     event.remove({ id: /gtceu:uxv/ })
     event.remove({ id: /gtceu:opv/ })
@@ -113,4 +110,7 @@ ServerEvents.recipes(event => {
     // PEX
     event.remove({ output: ['packagedexcrafting:flux_crafter'] })
 
+    // Utilitarian
+    event.remove({ id: /utilitarian:.*_soliciting_carpet/ })
+    event.remove({ output: ['utilitarian:snad', 'utilitarian:red_snad', 'utilitarian:soul_snad', 'utilitarian:fluid_hopper', 'utilitarian:no_soliciting_banner']})
 })
