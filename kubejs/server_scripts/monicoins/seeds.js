@@ -3,9 +3,9 @@ ServerEvents.recipes(event => {
     //-- "Seeds"
     event.shaped(
         Item.of('minecraft:cocoa_beans', 32), [
-        'AA ',
-        ' A ',
-        '   '
+        'A A',
+        '   ',
+        ' A '
     ], {
         A: 'kubejs:moni_penny'
     }).noMirror().noShrink()
