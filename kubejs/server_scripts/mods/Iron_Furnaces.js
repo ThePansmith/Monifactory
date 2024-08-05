@@ -56,18 +56,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-	event.shapeless('ironfurnaces:diamond_furnace', ['ironfurnaces:obsidian_furnace'])
-    event.shaped(
-        'ironfurnaces:diamond_furnace', [
-            'AAA',
-            'ABA',
-            'AAA'
-        ], {
-            A: 'minecraft:diamond',
-            B: 'ironfurnaces:gold_furnace'
-        }
-    )
-
     event.shaped(
         'ironfurnaces:obsidian_furnace', [
             'AAA',
@@ -85,7 +73,7 @@ ServerEvents.recipes(event => {
             'BBB',
             'ABA'
         ], {
-            A: 'gtceu:minecraft_netherite_ingot',
+            A: 'minecraft:netherite_ingot',
             B: 'ironfurnaces:obsidian_furnace'
         }
     )
@@ -154,7 +142,7 @@ ServerEvents.recipes(event => {
     .circuit(8)
 
     event.recipes.gtceu.assembler('kubejs:stone_to_netherite_furnace')
-    .itemInputs('4x minecraft:furnace', '16x gtceu:diamond_plate', '16x gtceu:obsidian_plate', 'gtceu:black_steel_block', '4x gtceu:black_steel_plate')
+    .itemInputs('5x minecraft:furnace', '20x gtceu:diamond_plate', '20x gtceu:obsidian_plate', '4x minecraft:netherite_ingot')
     .itemOutputs('ironfurnaces:netherite_furnace')
     .duration(500)
     .EUt(30)
@@ -184,7 +172,7 @@ ServerEvents.recipes(event => {
     .circuit(4)
 
     event.recipes.gtceu.assembler('kubejs:obsidian_to_netherite_furnace')
-    .itemInputs('4x ironfurnaces:obsidian_furnace', 'gtceu:black_steel_block', '4x gtceu:black_steel_plate')
+    .itemInputs('5x ironfurnaces:obsidian_furnace', '4x minecraft:netherite_ingot')
     .itemOutputs('ironfurnaces:netherite_furnace')
     .duration(200)
     .EUt(30)
