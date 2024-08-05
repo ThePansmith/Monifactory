@@ -785,6 +785,7 @@
 			y: -18.0d
 		}
 		{
+            dependencies: ["49C8716030809478"]
 			description: ["An amalgamation of gems, all of them combined will be needed for the final circuit tier."]
 			hide_dependency_lines: true
 			id: "2343B68110805282"
@@ -903,7 +904,7 @@
 			subtitle: "Gee that's a lot of Infinity Ingots"
 			tasks: [{
 				id: "0BB7A824F7B03BDC"
-				item: "kubejs:fury_enhanced_infinity_catalyst"
+				item: "kubejs:furious_infinity_catalyst"
 				type: "item"
 			}]
 			x: 35.0d
@@ -916,9 +917,10 @@
 			subtitle: "Spend Monium to make Monium"
 			tasks: [{
 				id: "2A554D0488C990D6"
-				item: "kubejs:serenity_enhanced_infinity_catalyst"
+				item: "kubejs:serene_infinity_catalyst"
 				type: "item"
 			}]
+            title: "&9Serene Infinity Catalyst"
 			x: 55.0d
 			y: -26.5d
 		}
