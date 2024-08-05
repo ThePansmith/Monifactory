@@ -26,7 +26,7 @@
   "block.extendedcrafting.ender_alternator": "Ender Alternator",
   "block.extendedcrafting.ender_crafter": "Ender Crafter",
   "block.extendedcrafting.auto_ender_crafter": "Auto Ender Crafter",
-  "block.extendedcrafting.flux_alternator": "If you see this you have to eat a LuV circuit",
+  "block.extendedcrafting.flux_alternator": "Sculk Pylon",
   "block.extendedcrafting.flux_crafter": "Sculk Charger",
   "block.extendedcrafting.auto_flux_crafter": "Sculk Charger",
 
@@ -78,7 +78,7 @@
   "container.extendedcrafting.ultimate_table": "Ultimate Crafting",
   "container.extendedcrafting.compressor": "Quantum Compressor",
   "container.extendedcrafting.ender_crafter": "Ender Crafting",
-  "container.extendedcrafting.flux_alternator": "Flux Alternator",
+  "container.extendedcrafting.flux_alternator": "Sculk Pylon",
   "container.extendedcrafting.flux_crafter": "Sculk Charging",
 
   "screen.extendedcrafting.crafting_core.pedestals": "Pedestals: %s",

@@ -20,6 +20,22 @@ ServerEvents.recipes(event => {
                 R: 'gtceu:luv_lapotronic_battery',
                 X: 'kubejs:cryolobus_casing',
                 A: 'gtceu:luv_charger_4x',
+                E: 'gtceu:luv_sensor',
+                C: '#gtceu:circuits/luv'
+            }
+        )
+
+        event.recipes.extendedcrafting.shaped_table(
+            'extendedcrafting:flux_alternator', [
+                " PEP ",
+                " PCP ",
+                " PCP ",
+                "PPCPP",
+                "XRRRX"
+            ], {
+                P: 'gtceu:double_cryolobus_plate',
+                R: 'gtceu:luv_lapotronic_battery',
+                X: 'kubejs:cryolobus_casing',
                 E: 'gtceu:luv_emitter',
                 C: '#gtceu:circuits/luv'
             }
