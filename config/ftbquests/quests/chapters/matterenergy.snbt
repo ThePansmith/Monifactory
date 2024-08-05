@@ -6,7 +6,7 @@
 	group: ""
 	icon: "ae2:controller"
 	id: "118959024F296F70"
-	order_index: 5
+	order_index: 3
 	quest_links: [
 		{
 			id: "20253D681F399A92"
@@ -30,19 +30,12 @@
 			x: 2.5d
 			y: -1.5d
 		}
-		{
-			id: "3DE460B6056D9AD3"
-			linked_quest: "417D97D9E3562F45"
-			shape: "hexagon"
-			x: 2.5d
-			y: 7.0d
-		}
 	]
 	quests: [
 		{
 			dependencies: ["4174A6C6403DD245"]
 			description: [
-				"Normally, this block acts as a source of &echannels&r, but those mechanics are disabled by default in &5monifactory&r."
+				"Normally, this block acts as a source of &echannels&r, but that mechanic is disabled by default in &5Monifactory&r."
 				""
 				"You don't have to make this to operate a network when channels are disabled, but if you do, &eyour network will consume less power&r than if it did not have a Controller. Plus, they look kind of cool."
 				""
@@ -555,7 +548,7 @@
 		{
 			dependencies: ["6F32A8739D8E792A"]
 			description: [
-				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5monifactory&r is to allow you to eventually automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
+				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5Monifactory&r is to allow you to eventually automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
 				""
 				"&bApplied Energistics 2&r stores recipes in &aPatterns&r, but so far they have been limited to at most 9 stacks of items as input (a standard 3x3 crafting grid). PackagedAuto stores recipes in &aPackage Recipe Holders&r, which don't have this limitation. Additionally, each Holder can store up to &e20 different recipes&r. Holders must be encoded in the &3Package Recipe Encoder&r."
 				""
@@ -783,11 +776,7 @@
 				"1175ED9EF0AB82F6"
 			]
 			description: [
-				"Firstly, you will need a &3Matter Condenser&r. Stick a &664k ME Storage Component&r in, change the mode to 'Singularity', and stuff lots of items in. "
-				""
-				"The fastest way to make these is with &aFluid Lasers&r and a &6Aqueous Accumulator&r. "
-				""
-				"Set the Aqueous Accumulator&r to output at a fluid laser, configure that fluid laser to `output', add a fluid laser on your matter condensor set to `input', and connect them together."
+				"Firstly, you will need a &3Matter Condenser&r. Stick a &664k ME Storage Component&r in, change the mode to 'Singularity', and stuff lots of items (or fluids) in, &9done easily with a infinity cell&r."
 				""
 				"If you don't have that, you can surround it with &6Dense Cobblestone Generators&r."
 				"{@pagebreak}"
@@ -823,18 +812,6 @@
 					weak_nbt_match: true
 				}
 				{
-					id: "742471AA41CC22DE"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:dusts/ender"
-						}
-					}
-					title: "Ender Dust"
-					type: "item"
-				}
-				{
 					id: "788789B1F39AF853"
 					item: "ae2wtlib:quantum_bridge_card"
 					type: "item"
@@ -851,7 +828,7 @@
 					type: "item"
 				}
 			]
-			title: "AE2 Everywhere!"
+			title: "&9AE2 Everywhere!"
 			x: 1.5d
 			y: -6.5d
 		}
@@ -922,7 +899,7 @@
 		{
 			dependencies: ["60BC08DE447E5007"]
 			description: [
-				"The ultimate item storage component in &bApplied Energistics&r."
+				"The ultimate item storage component in base &bApplied Energistics&r."
 				""
 				"These have a massive capacity, hundreds of times that of a &61k ME Storage Component&r."
 			]
@@ -996,11 +973,14 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["74469710D910C19D"]
+			dependencies: [
+				"74469710D910C19D"
+				"798889BE3819EB4D"
+			]
 			description: [
-				"Now that you have &6Osmium&r and &6Iridium&r from the &6Tier Four Micro Miner&r or &6Platinum Group Processing&r, you can begin automating &bExtended Crafting&r recipes. While it is possible to use &6Auto Crafting Tables&r for this task, you have access to something &ovastly&r better&r: &bPackagedExCrafting&r."
+				"Now that you have &6HSS-E&r, you can begin automating &bExtended Crafting&r recipes in a easier way than before. "
 				""
-				"To begin, you'll need to craft one of each extended &3Package Crafter&r listed on the right. Put an &3Unpackager&r on top of each one, and then a &3Packager&r anywhere you want. These are all AE2 devices, so you'll need to connect them to an ME Network."
+				"To begin, you'll need to craft one of each extended &3Package Crafter&r listed above. Put an &3Unpackager&r on top of each one, and then a &3Packager&r anywhere you want. These are all AE2 devices, so you'll need to connect them to an ME Network."
 				"{@pagebreak}"
 				"Next, right-click the &3Package Recipe Encoder&r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You'll have to choose the appropriate table for the recipe you want to encode."
 				""
@@ -1010,7 +990,7 @@
 				""
 				"While it might seem that the crafting process is slow, &ePackagedAuto is excellent at parallelizing&r. You can surround an Unpackager with Crafters and it will use all of them. It's also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same."
 			]
-			icon: "extendedcrafting:elite_auto_table"
+			icon: "packagedexcrafting:ultimate_crafter"
 			id: "70D9B3C6539720DE"
 			rewards: [{
 				id: "083A8F49762A37FE"
@@ -1393,6 +1373,129 @@
 			title: "&9ME Requester"
 			x: 6.75d
 			y: 11.5d
+		}
+		{
+			dependencies: ["410EA68D6EF15CEC"]
+			description: ["Managing P2P tunnels can be a pain in large numbers, thankfully, the &6Advanced Memory Card&r fixes that, by allowing you to manage all of your connections within a single card, and bind and unbind things on the fly, among other features."]
+			id: "1AC8700C190E84BC"
+			rewards: [{
+				count: 3
+				id: "2143755D5F938861"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "They really do have a GUI for everything now"
+			tasks: [{
+				id: "75CE8F67A574D433"
+				item: {
+					Count: 1b
+					id: "betterp2p:advanced_memory_card"
+					tag: {
+						gui: 3b
+						selectedIndex: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "&9Better P2P Management"
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"6F32A8739D8E792A"
+				"410EA68D6EF15CEC"
+			]
+			description: [
+				"&3Pattern P2P&r is somewhat like the other &aP2P&r types, but is able to copy a pattern provider's patterns to all of its outputs."
+				""
+				"For example, you could have a Pattern P2P Input placed on a pattern provider, then 5 Outputs with the same ID placed on assemblers. All 5 of those assemblers would then &6act as if they each had their own pattern provider that all just so happened to have the same exact patterns&r, and will obey blocking rules, parallelize, and such. "
+			]
+			id: "6646E6DBEF368924"
+			rewards: [{
+				count: 3
+				id: "033E426A87F3FC76"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "3D2DBB6C527CF870"
+				item: "mae2:pattern_p2p_tunnel"
+				type: "item"
+			}]
+			title: "&9Pattern P2P"
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"241FADD2C751BE74"
+				"4FAFF184242F5EB8"
+			]
+			description: [
+				"If somehow being able to store over a million items in a single &9256k Item Storage Cell&r isn't enough for you, there is now &9MEGA Cells&r!"
+				""
+				"&eMEGA Cells&r go up to 256M bytes, allowing them to store an insane amount of items. You will need high end materials to make the housings for these cells."
+			]
+			id: "31A4355401B03644"
+			rewards: [{
+				id: "51D92E40EA9356F3"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "125C5CCA8906DC11"
+				item: "megacells:cell_component_1m"
+				type: "item"
+			}]
+			title: "&9MEGA Cells"
+			x: 7.25d
+			y: -8.0d
+		}
+		{
+			dependencies: ["295E3D32083676E6"]
+			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Accumulation Processor."]
+			id: "4FAFF184242F5EB8"
+			rewards: [{
+				id: "444FF1C6F8EEB5AF"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "&6Accumulation Processors&r are made from a &6Black Steel Plate&r, a &6Silicon Plate&r, and any tier three circuit."
+			tasks: [{
+				id: "4B2E214B3A13DCD5"
+				item: "megacells:accumulation_processor"
+				type: "item"
+			}]
+			title: "&9Accumlation Processors"
+			x: 7.25d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4FAFF184242F5EB8"
+				"4A96659253CCFACF"
+			]
+			description: [
+				"For the big autocrafters. "
+				""
+				"These Crafting Units can be crafted with &eMEGA Cell Storage Components&r to make even larger crafting units, or can be crafted with &6Engineering Processors&r and &6Standard AE2 Storage Components&r to make denser &9Crafting Co-Processors&r."
+			]
+			id: "0C08F09EBCDFDAD0"
+			rewards: [{
+				id: "23F41A3707BE058F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DE29491688CFFFB"
+				item: "megacells:mega_crafting_unit"
+				type: "item"
+			}]
+			title: "&9MEGA Crafting"
+			x: 7.25d
+			y: 2.5d
 		}
 	]
 	title: "Matter-Energy"

@@ -74,8 +74,11 @@ ServerEvents.tags('item', event => {
     // generic unification
     event.add('forge:dusts', ['kubejs:pulsating_dust'])
 
-	// enderio!!!!
-	event.add('forge:heads', 'enderio:enderman_head')
+	  // enderio!!!!
+	  event.add('forge:heads', 'enderio:enderman_head')
+
+    event.add('forge:microminers', '/kubejs:microminer_t/')
+    event.add('forge:microminers', '/kubejs:stabilized_microminer_t/')
 
 
     unifyChisel(event);
@@ -93,7 +96,18 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.tags('fluid', event => {
-
+    // removing tags from nc fluids so they stop showing up in ae2 and emi
+    // reused code from JEI hiding script
+    // get all nc fluids from index
+    let ncFluids = Fluid.getTypes().filter(id=>id.includes("nuclearcraft"))
+    // list of used fluids to not remove
+    let ncUsedFluid = ['nuclearcraft:hydrated_gelatin', 'nuclearcraft:gelatin', 'nuclearcraft:sugar', 'nuclearcraft:marshmallow', 'nuclearcraft:cocoa_butter',     'nuclearcraft:chocolate_liquor', 'nuclearcraft:unsweetened_chocolate', 'nuclearcraft:dark_chocolate', 'nuclearcraft:milk_chocolate', 'nuclearcraft:technical_water', 'nuclearcraft:high_pressure_steam', 'nuclearcraft:exhaust_steam']
+    // remove used fluids from the full list
+    ncFluids = ncFluids.filter((el) => !ncUsedFluid.includes(el))
+    // loops through the list and hides all the unwanted fluids for nc
+    ncFluids.forEach(element => {
+        event.removeAllTagsFrom(element)
+    })
 })
 
 // Unification regexes are definited in startup script _initial.js
@@ -111,26 +125,3 @@ ServerEvents.recipes(event => {
     event.remove({ output: global.nuclearcraftMaterialPattern })
 })
 
-
-
-
-
-
-
-
-
-
-// Hacky Drac Reactor stuff
-// This will be removed when it becomes a proper post tank multi in favor of just including the injectors in it's recipe or something
-ServerEvents.tags('item', event => {
-    event.add('moni:basic_injector_tier', 'draconicevolution:basic_crafting_injector')
-    event.add('moni:basic_injector_tier', 'draconicevolution:wyvern_crafting_injector')
-    event.add('moni:basic_injector_tier', 'draconicevolution:awakened_crafting_injector')
-    event.add('moni:basic_injector_tier', 'draconicevolution:chaotic_crafting_injector')
-    event.add('moni:wyvern_injector_tier', 'draconicevolution:wyvern_crafting_injector')
-    event.add('moni:wyvern_injector_tier', 'draconicevolution:awakened_crafting_injector')
-    event.add('moni:wyvern_injector_tier', 'draconicevolution:chaotic_crafting_injector')
-    event.add('moni:awakened_injector_tier', 'draconicevolution:awakened_crafting_injector')
-    event.add('moni:awakened_injector_tier', 'draconicevolution:chaotic_crafting_injector')
-    event.add('moni:chaotic_injector_tier', 'draconicevolution:chaotic_crafting_injector')
-})

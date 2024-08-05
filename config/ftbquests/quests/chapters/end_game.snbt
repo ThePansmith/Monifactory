@@ -4,2108 +4,152 @@
 	default_quest_shape: ""
 	filename: "end_game"
 	group: ""
-	icon: "kubejs:heart_of_a_universe"
+	icon: "kubejs:monic_processor_mainframe"
 	id: "2BEB72BC6C6FB4E9"
 	order_index: 11
 	quest_links: [
 		{
 			id: "54018A95BECC356C"
 			linked_quest: "5A8D2BFAF02E6325"
-			x: 46.5d
-			y: -24.25d
+			shape: "hexagon"
+			x: 55.0d
+			y: -21.75d
 		}
 		{
 			id: "2A5A7CD2C9EDD767"
 			linked_quest: "7979D07FBDC6D170"
-			x: 44.75d
-			y: -24.25d
+			shape: "hexagon"
+			x: 52.5d
+			y: -20.0d
 		}
 		{
 			id: "6FD00239A5CD9D2F"
 			linked_quest: "3D7924B550A1BBA0"
-			x: 48.25d
-			y: -24.25d
+			shape: "hexagon"
+			x: 55.0d
+			y: -18.0d
 		}
 		{
 			id: "3F1F20A84F3FDE97"
 			linked_quest: "0C9A9F33EEA3AB5E"
-			x: 48.25d
-			y: -22.5d
+			shape: "hexagon"
+			x: 55.0d
+			y: -15.5d
 		}
 		{
 			id: "2C514C36E06DC5FA"
 			linked_quest: "5601A05D8361551D"
-			x: 48.25d
+			shape: "gear"
+			x: 55.0d
+			y: -13.5d
+		}
+		{
+			id: "2DE45181A83AEBEB"
+			linked_quest: "248ABB7F26EB72EE"
+			shape: "hexagon"
+			x: 41.75d
+			y: -10.75d
+		}
+		{
+			id: "64A590345841C96D"
+			linked_quest: "6F5BB99060FF03AC"
+			shape: "hexagon"
+			x: 45.25d
+			y: -10.75d
+		}
+		{
+			id: "7D48D4665ACE37FD"
+			linked_quest: "4EB9D1ADC4814330"
+			shape: "hexagon"
+			x: 48.0d
+			y: -10.75d
+		}
+		{
+			id: "253B127314F09EF5"
+			linked_quest: "0F56F4E642BC2B85"
+			shape: "hexagon"
+			x: 40.25d
+			y: -10.75d
+		}
+		{
+			id: "100FE5584DF66812"
+			linked_quest: "5054D3FA7E96EB83"
+			shape: "hexagon"
+			x: 38.75d
 			y: -20.0d
 		}
 		{
-			id: "5A699096AFBB95A8"
+			id: "2257A8F22DB09C97"
+			linked_quest: "5E829641B6FE96E5"
+			shape: "hexagon"
+			x: 41.75d
+			y: -23.5d
+		}
+		{
+			id: "6A146108A296A053"
+			linked_quest: "7704A934F89E4FD9"
+			shape: "hexagon"
+			x: 38.75d
+			y: -23.5d
+		}
+		{
+			id: "06553CB928FD765B"
+			linked_quest: "4612D36D22AB4B34"
+			shape: "hexagon"
+			x: 38.75d
+			y: -21.75d
+		}
+		{
+			id: "64CBC49787B51FD8"
+			linked_quest: "1B1D3A66B847D129"
+			shape: "gear"
+			size: 1.5d
+			x: 43.75d
+			y: -24.5d
+		}
+		{
+			id: "3B6669BBD0448982"
+			linked_quest: "07057CDE4E021BA7"
+			shape: "gear"
+			x: 48.0d
+			y: -13.5d
+		}
+		{
+			id: "20F44ACD2F91FD2A"
 			linked_quest: "4DF92773C82F4AAC"
-			x: 35.5d
-			y: -16.75d
+			shape: "hexagon"
+			x: 40.25d
+			y: -20.0d
+		}
+		{
+			id: "3F8FC1CF9A8083E1"
+			linked_quest: "739F7BF2A90B278A"
+			shape: "hexagon"
+			size: 3.0d
+			x: 25.5d
+			y: -6.75d
 		}
 	]
 	quests: [
 		{
-			id: "273D48F9D80568AC"
-			rewards: [{
-				id: "47350CA77DC47F61"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "0FEDE6C11BDF99BD"
-				item: "gtceu:nichrome_ingot"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -2.5d
-		}
-		{
-			id: "6ACBD5F648141ECC"
-			rewards: [{
-				id: "50FB93436B43A246"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "2ABC38663521B852"
-				item: "gtceu:dark_soularium_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -2.5d
-		}
-		{
-			id: "7E2620ED869001A8"
-			rewards: [{
-				id: "6F39FD1C908C6A1E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "312AEAA5E33FCF4A"
-				item: "gtceu:red_steel_ingot"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -2.5d
-		}
-		{
-			id: "6F59C7C23A41282A"
-			rewards: [{
-				id: "052D5BF972A122AD"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "171D8F8C4F7D7277"
-				item: "gtceu:blue_steel_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -2.5d
-		}
-		{
-			id: "22ED61C490B7CE88"
-			rewards: [{
-				id: "31EF1BB0CEF2FD99"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "70DFBF9A75A6AC78"
-				item: "gtceu:manyullyn_ingot"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -2.5d
-		}
-		{
-			id: "46641CBE1B25A58A"
-			rewards: [{
-				id: "7952296006D1415F"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "580B680E2091357D"
-				item: "gtceu:kanthal_ingot"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -1.0d
-		}
-		{
-			id: "5A6E9B2CBD801245"
-			rewards: [{
-				id: "546394470F77C1AF"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "399BEFA50A358E8A"
-				item: "gtceu:electrum_flux_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -1.0d
-		}
-		{
-			id: "7F05F81141C8EA91"
-			rewards: [{
-				id: "7943D3B1AE314ECA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "78E45395106D3F8B"
-				item: "gtceu:rhodium_plated_palladium_ingot"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -1.0d
-		}
-		{
-			id: "0FF0CBBA4F923E5A"
-			rewards: [{
-				id: "516ACDF5DD6B58FA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "51DDDEF2A9B4BCEC"
-				item: "gtceu:signalum_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -1.0d
-		}
-		{
-			id: "6BD48196D8DB2AD6"
-			rewards: [{
-				id: "6D0C3A7948F44D98"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1DD95C061014E855"
-				item: "gtceu:enderium_ingot"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -1.0d
-		}
-		{
-			id: "0204D290950F1DA6"
-			rewards: [{
-				id: "3CCE11BD81C9DBFF"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1B4EBD489B618D9C"
-				item: "gtceu:magnalium_ingot"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 0.5d
-		}
-		{
-			id: "23A578F05966E88E"
-			rewards: [{
-				id: "4E32707EF1F06120"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7B964F0259FBC69A"
-				item: "gtceu:hsse_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.5d
-		}
-		{
-			id: "06211913A786D9DD"
-			rewards: [{
-				id: "6FD38B40AEBD4CCA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7F5C1674EBAA1932"
-				item: "gtceu:hssg_ingot"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 0.5d
-		}
-		{
-			id: "71D6DC14A6F9882A"
-			rewards: [{
-				id: "3B179ABD24D9ADB2"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "4BA8069A180DFA5A"
-				item: "gtceu:hsss_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 0.5d
-		}
-		{
-			id: "5875B965A52FD955"
-			rewards: [{
-				id: "387E1A622DCD85D7"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7A046BF6B05009FA"
-				item: "gtceu:crystal_matrix_ingot"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 0.5d
-		}
-		{
-			id: "222CB99ACBD324ED"
-			rewards: [{
-				id: "6B1FFA54EE533907"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3FC1AD35B4CA1532"
-				item: "gtceu:ruridit_ingot"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 2.0d
-		}
-		{
-			id: "41DCE197206EDEA5"
-			rewards: [{
-				id: "5CB2BD3CBC7A6AC0"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "6A11EF851C12CC27"
-				item: "gtceu:mythril_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			id: "4E4F728ADA8240A8"
-			rewards: [{
-				id: "5D269698882738BF"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3268990434208AF8"
-				item: "gtceu:microversium_ingot"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 2.0d
-		}
-		{
-			id: "42A7971C7C8174CD"
-			rewards: [{
-				id: "6DA425F3D1D9EFC1"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1EBFC49EA3AE5C8C"
-				item: "gtceu:end_steel_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 2.0d
-		}
-		{
-			id: "18EF39D0C5B55C34"
-			rewards: [{
-				id: "4D616F5BBF538A37"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "6FD6A45B105C4FED"
-				item: "gtceu:vanadium_steel_ingot"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 2.0d
-		}
-		{
-			id: "4636F253795B1613"
-			rewards: [{
-				id: "6C4E9AC6BAED6654"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "02581B4A61CF4D65"
-				item: "gtceu:soularium_ingot"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.5d
-		}
-		{
-			id: "114DC4B7E144ECF5"
-			rewards: [{
-				id: "15FA9B351B238DDD"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "0B607778718EEE99"
-				item: "gtceu:dark_steel_ingot"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.5d
-		}
-		{
-			id: "5A508404A0B07AD1"
-			rewards: [{
-				id: "1148EB1D134AD2D8"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "008240039BBD1134"
-				item: "gtceu:vibrant_alloy_ingot"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 3.5d
-		}
-		{
-			id: "411F77907FBEB93B"
-			rewards: [{
-				id: "28F9B1D9E49C3FEA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "44C902082B51EB13"
-				item: "gtceu:energetic_alloy_ingot"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 3.5d
-		}
-		{
-			id: "0B5B7A15B7FD684C"
-			rewards: [{
-				id: "2A2F3186C7EC2C70"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1A3E1D5350F6CEB9"
-				item: "gtceu:electrical_steel_ingot"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 3.5d
-		}
-		{
-			id: "4A6F916494B787AE"
-			rewards: [{
-				id: "347FF6F781910720"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "46C92517EFB1CF93"
-				item: "kubejs:solidified_hydrogen"
-				type: "item"
-			}]
-			title: "Element 001: Hydrogen"
-			x: 12.5d
-			y: -2.5d
-		}
-		{
-			id: "4DCB58F9B3771DC8"
-			rewards: [{
-				id: "294888A725611944"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "5E9C277137346F42"
-				item: "kubejs:solidified_helium"
-				type: "item"
-			}]
-			title: "Element 002: Helium"
-			x: 38.0d
-			y: -2.5d
-		}
-		{
-			id: "797D6787F2BEE54C"
-			rewards: [{
-				id: "5A6E2BD6ED3383F1"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "2D11EA2B7CA7F139"
-				item: "gtceu:lithium_dust"
-				type: "item"
-			}]
-			title: "Element 003: Lithium"
-			x: 12.5d
-			y: -1.0d
-		}
-		{
-			id: "3D54068FFDD1F3CE"
-			rewards: [{
-				id: "158C42B13C50EC4B"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1A0D69ACD34C2719"
-				item: "gtceu:beryllium_ingot"
-				type: "item"
-			}]
-			title: "Element 004: Beryllium"
-			x: 14.0d
-			y: -1.0d
-		}
-		{
-			id: "59C4DA6088B9BC7D"
-			rewards: [{
-				id: "34DB39AA89AB2B7A"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "16E30A040AA05A50"
-				item: "gtceu:boron_dust"
-				type: "item"
-			}]
-			title: "Element 005: Boron"
-			x: 30.5d
-			y: -1.0d
-		}
-		{
-			id: "63969C74693044BA"
-			rewards: [{
-				id: "4827D9D1F86E4DF2"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "62C55C5E377E2D3C"
-				item: "gtceu:carbon_dust"
-				type: "item"
-			}]
-			title: "Element 006: Carbon"
-			x: 32.0d
-			y: -1.0d
-		}
-		{
-			id: "03819818FD208DEE"
-			rewards: [{
-				id: "331C6B865336B23F"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "475634049F0948B0"
-				item: "kubejs:solidified_nitrogen"
-				type: "item"
-			}]
-			title: "Element 007: Nitrogen"
-			x: 33.5d
-			y: -1.0d
-		}
-		{
-			id: "6648CD525CE34898"
-			rewards: [{
-				id: "04CEB2BE24BECEAC"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "5051015BB866DDDE"
-				item: "kubejs:solidified_oxygen"
-				type: "item"
-			}]
-			title: "Element 008: Oxygen"
-			x: 35.0d
-			y: -1.0d
-		}
-		{
-			id: "02782201B4D4DB5C"
-			rewards: [{
-				id: "63329F8641BE4C17"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3B808E066C078E84"
-				item: "kubejs:solidified_fluorine"
-				type: "item"
-			}]
-			title: "Element 009: Fluorine"
-			x: 36.5d
-			y: -1.0d
-		}
-		{
-			id: "36902938AFF55303"
-			rewards: [{
-				id: "381465469D796854"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "60BAEF7ADFDD531A"
-				item: "kubejs:solidified_neon"
-				type: "item"
-			}]
-			title: "Element 010: Neon"
-			x: 38.0d
-			y: -1.0d
-		}
-		{
-			id: "228E46FDEBF7F389"
-			rewards: [{
-				id: "40DB4B92E759DBD5"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "196414B326BCA79C"
-				item: "gtceu:sodium_dust"
-				type: "item"
-			}]
-			title: "Element 011: Sodium"
-			x: 12.5d
-			y: 0.5d
-		}
-		{
-			id: "14F2E61E80D231AE"
-			rewards: [{
-				id: "450457CCD20C3F41"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "192ACBC6D9F21792"
-				item: "gtceu:magnesium_dust"
-				type: "item"
-			}]
-			title: "Element 012: Magnesium"
-			x: 14.0d
-			y: 0.5d
-		}
-		{
-			id: "24FC29C2D5E3A76E"
-			rewards: [{
-				id: "0D31346FC6E930A4"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "578E3B55AC2693BE"
-				item: "gtceu:aluminium_ingot"
-				type: "item"
-			}]
-			title: "Element 013: Aluminium"
-			x: 30.5d
-			y: 0.5d
-		}
-		{
-			id: "1A693859BD2CDADF"
-			rewards: [{
-				id: "075523E110848E7C"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "5199AA216B35B4BB"
-				item: "gtceu:silicon_ingot"
-				type: "item"
-			}]
-			title: "Element 014: Silicon"
-			x: 32.0d
-			y: 0.5d
-		}
-		{
-			id: "102BE3675105B9F5"
-			rewards: [{
-				id: "6DF5C270D5782552"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1A6F777982C717FF"
-				item: "gtceu:phosphorus_dust"
-				type: "item"
-			}]
-			title: "Element 015: Phosphorus"
-			x: 33.5d
-			y: 0.5d
-		}
-		{
-			id: "0BEEC4D7F9839411"
-			rewards: [{
-				id: "0222818775A969C4"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "5E9205A1AC8BA092"
-				item: "gtceu:sulfur_dust"
-				type: "item"
-			}]
-			title: "Element 016: Sulfur"
-			x: 35.0d
-			y: 0.5d
-		}
-		{
-			id: "293A7F5F0A58E5F3"
-			rewards: [{
-				id: "4B8ED93A5624CCA8"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "587CD29E5AE347F3"
-				item: "kubejs:solidified_chlorine"
-				type: "item"
-			}]
-			title: "Element 017: Chlorine"
-			x: 36.5d
-			y: 0.5d
-		}
-		{
-			id: "12B896D7EF558835"
-			rewards: [{
-				id: "3710410C26C7FF1D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "27CF515B85CD4F61"
-				item: "kubejs:solidified_argon"
-				type: "item"
-			}]
-			title: "Element 018: Argon"
-			x: 38.0d
-			y: 0.5d
-		}
-		{
-			id: "5B3ABAA58C564CB4"
-			rewards: [{
-				id: "742E11A802D4655E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "70320BC30AAEBFEC"
-				item: "gtceu:potassium_dust"
-				type: "item"
-			}]
-			title: "Element 019: Potassium"
-			x: 12.5d
-			y: 2.0d
-		}
-		{
-			id: "5A25A4DEF1CCA576"
-			rewards: [{
-				id: "4161AEFD5B9D0477"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "53CE7BDD4A77313D"
-				item: "gtceu:calcium_dust"
-				type: "item"
-			}]
-			title: "Element 020: Calcium"
-			x: 14.0d
-			y: 2.0d
-		}
-		{
-			id: "6F76D81C52F0E04C"
-			rewards: [{
-				id: "1E8ED67A661B7928"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "160290C6405AF059"
-				item: "gtceu:titanium_ingot"
-				type: "item"
-			}]
-			title: "Element 022: Titanium"
-			x: 17.0d
-			y: 2.0d
-		}
-		{
-			id: "0D552ECAE4FC617B"
-			rewards: [{
-				id: "41E1A833E2914BAA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "289B62B080E7DF88"
-				item: "gtceu:vanadium_ingot"
-				type: "item"
-			}]
-			title: "Element 023: Vanadium"
-			x: 18.5d
-			y: 2.0d
-		}
-		{
-			id: "21F3839E5E4B57BE"
-			rewards: [{
-				id: "2E89E649A8F61BCB"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "64E4171E8B8F7956"
-				item: "gtceu:chromium_ingot"
-				title: "Element 024: Chromium"
-				type: "item"
-			}]
-			x: 20.0d
-			y: 2.0d
-		}
-		{
-			id: "4AF3060B2426B25F"
-			rewards: [{
-				id: "207983AA9E7C4820"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "528935DEE2477A6E"
-				item: "gtceu:manganese_ingot"
-				type: "item"
-			}]
-			title: "Element 025: Manganese"
-			x: 21.5d
-			y: 2.0d
-		}
-		{
-			id: "7DB1C08EEF0BEE02"
-			rewards: [{
-				id: "2CFC2FB141BDF8AD"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "448D41085D75769C"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
-			title: "Element 026: Iron"
-			x: 23.0d
-			y: 2.0d
-		}
-		{
-			id: "73F80C5062B86D09"
-			rewards: [{
-				id: "5A87AE85035ABC57"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "16BC3496F212C996"
-				item: "gtceu:cobalt_ingot"
-				type: "item"
-			}]
-			title: "Element 027: Cobalt"
-			x: 24.5d
-			y: 2.0d
-		}
-		{
-			id: "42F1EF8432C05294"
-			rewards: [{
-				id: "58C26800772F055C"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "61944BBB48E8F1D7"
-				item: "gtceu:nickel_ingot"
-				type: "item"
-			}]
-			title: "Element 028: Nickel"
-			x: 26.0d
-			y: 2.0d
-		}
-		{
-			id: "4BBB1F5A2657650D"
-			rewards: [{
-				id: "4EECC75E0EB87A4A"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "6B67E2CDAFD919C0"
-				item: "minecraft:copper_ingot"
-				type: "item"
-			}]
-			title: "Element 029: Copper"
-			x: 27.5d
-			y: 2.0d
-		}
-		{
-			id: "76B813A1717561B5"
-			rewards: [{
-				id: "7062203FEBDB6D60"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7619429B85AB16C8"
-				item: "gtceu:zinc_ingot"
-				type: "item"
-			}]
-			title: "Element 030: Zinc"
-			x: 29.0d
-			y: 2.0d
-		}
-		{
-			id: "2859B3747ACF856C"
-			rewards: [{
-				id: "4C56D9E2FB1115EE"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "00905889F697EA03"
-				item: "gtceu:gallium_ingot"
-				type: "item"
-			}]
-			title: "Element 031: Gallium"
-			x: 30.5d
-			y: 2.0d
-		}
-		{
-			id: "7C55E6EBB28BF5C2"
-			rewards: [{
-				id: "5B12AEC267F0062D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3CA8E6545B8A66F1"
-				item: "gtceu:arsenic_dust"
-				type: "item"
-			}]
-			title: "Element 033: Arsenic"
-			x: 33.5d
-			y: 2.0d
-		}
-		{
-			id: "271B184131614D97"
-			rewards: [{
-				id: "0DDB908C60099E63"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "2186499329A7498F"
-				item: "kubejs:solidified_krypton"
-				type: "item"
-			}]
-			title: "Element 036: Krypton"
-			x: 38.0d
-			y: 2.0d
-		}
-		{
-			id: "2B7DEF68BB674CC6"
-			rewards: [{
-				id: "208FA081AE03219D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "4E65D2A403BE0C83"
-				item: "gtceu:yttrium_ingot"
-				type: "item"
-			}]
-			title: "Element 039: Yttrium"
-			x: 15.5d
-			y: 3.5d
-		}
-		{
-			id: "20116A38B08BA7A3"
-			rewards: [{
-				id: "7738612A1D0AE733"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "31FDD92501CFFAF3"
-				item: "gtceu:palladium_ingot"
-				type: "item"
-			}]
-			title: "Element 046: Palladium"
-			x: 26.0d
-			y: 3.5d
-		}
-		{
-			id: "442C028AB73A0A06"
-			rewards: [{
-				id: "5D24A17E96DA67B4"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "77E4F675336CCA8C"
-				item: "gtceu:silver_ingot"
-				type: "item"
-			}]
-			title: "Element 047: Silver"
-			x: 27.5d
-			y: 3.5d
-		}
-		{
-			id: "33131617D0919A5B"
-			rewards: [{
-				id: "30CFE890C590CBF2"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "48D4472D13536F0C"
-				item: "gtceu:indium_ingot"
-				type: "item"
-			}]
-			title: "Element 049: Indium"
-			x: 30.5d
-			y: 3.5d
-		}
-		{
-			id: "7C6E64B63F0DB4BD"
-			rewards: [{
-				id: "26D85A98DD8C13CD"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "6B554D20DBE521B5"
-				item: "gtceu:tin_ingot"
-				type: "item"
-			}]
-			title: "Element 050: Tin"
-			x: 32.0d
-			y: 3.5d
-		}
-		{
-			id: "02EFF3E87346EDF4"
-			rewards: [{
-				id: "1EE34256857BFDBD"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3DC712E446D1B704"
-				item: "gtceu:antimony_ingot"
-				type: "item"
-			}]
-			title: "Element 051: Antimony"
-			x: 33.5d
-			y: 3.5d
-		}
-		{
-			id: "4978EC7E56F89AB0"
-			rewards: [{
-				id: "2228E71045B9FAB5"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "48CD41D93F11AF81"
-				item: "kubejs:solidified_xenon"
-				type: "item"
-			}]
-			title: "Element 054: Xenon"
-			x: 38.0d
-			y: 3.5d
-		}
-		{
-			id: "1753776C838E2048"
-			rewards: [{
-				id: "125C19C1F70CF222"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "2D438909DE308C35"
-				item: "gtceu:lanthanum_dust"
-				title: "Element 057: Lanthanum"
-				type: "item"
-			}]
-			x: 15.5d
-			y: 8.75d
-		}
-		{
-			id: "7B73FD81B7E8FFFE"
-			rewards: [{
-				id: "09EEFCC2832CF560"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "65CDBC136BB39AE6"
-				item: "gtceu:tungsten_ingot"
-				type: "item"
-			}]
-			title: "Element 074: Tungsten"
-			x: 20.0d
-			y: 5.0d
-		}
-		{
-			id: "0A6D3E69FEB53084"
-			rewards: [{
-				id: "2AD80E4F4D62A018"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "306928EB55C00422"
-				item: "gtceu:osmium_ingot"
-				type: "item"
-			}]
-			title: "Element 076: Osmium"
-			x: 23.0d
-			y: 5.0d
-		}
-		{
-			id: "28FE832435EAEE16"
-			rewards: [{
-				id: "33041D14755C8B0C"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "465AEC4CDB1A3423"
-				item: "gtceu:iridium_ingot"
-				type: "item"
-			}]
-			title: "Element 077: Iridium"
-			x: 24.5d
-			y: 5.0d
-		}
-		{
-			id: "12602DA0FD3D8349"
-			rewards: [{
-				id: "37F646D256D3DC24"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "02E73221D7DB22AF"
-				item: "gtceu:platinum_ingot"
-				type: "item"
-			}]
-			title: "Element 078: Platinum"
-			x: 26.0d
-			y: 5.0d
-		}
-		{
-			id: "26380A0FD7A8688C"
-			rewards: [{
-				id: "05D561FB9527A0EC"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "4515709AE1819FC6"
-				item: "minecraft:gold_ingot"
-				type: "item"
-			}]
-			title: "Element 079: Gold"
-			x: 27.5d
-			y: 5.0d
-		}
-		{
-			id: "70E774D0394C0B8E"
-			rewards: [{
-				id: "126A801CD700FD25"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "12C5EB096E3C8A9D"
-				item: "kubejs:solidified_mercury"
-				type: "item"
-			}]
-			title: "Element 080: Mercury"
-			x: 29.0d
-			y: 5.0d
-		}
-		{
-			id: "3A3C9648BD56ED20"
-			rewards: [{
-				id: "2AC71B676121FB34"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "5E3B0E5E16F70105"
-				item: "kubejs:solidified_radon"
-				type: "item"
-			}]
-			title: "Element 086: Radon"
-			x: 38.0d
-			y: 5.0d
-		}
-		{
-			id: "7B8621728BF88BEC"
-			rewards: [{
-				id: "4BF311C58A3284DB"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "690E703E8D042AFC"
-				item: "gtceu:thorium_ingot"
-				type: "item"
-			}]
-			title: "Element 090: Thorium"
-			x: 17.0d
-			y: 10.25d
-		}
-		{
-			id: "4EDE4D4D109BF2C2"
-			rewards: [{
-				id: "76F4CB6D7F8430F4"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "22C3329D3D46F7B7"
-				item: "kubejs:stabilized_uranium"
-				type: "item"
-			}]
-			title: "Element 092: Uranium"
-			x: 20.0d
-			y: 10.25d
-		}
-		{
-			id: "57AE5794C23B5B6F"
-			rewards: [{
-				id: "607939341D3D8856"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "39856D31296B377E"
-				item: "kubejs:stabilized_neptunium"
-				type: "item"
-			}]
-			title: "Element 093: Neptunium"
-			x: 21.5d
-			y: 10.25d
-		}
-		{
-			id: "17B5F089E58BB780"
-			rewards: [{
-				id: "6A20B9E6D4B2521A"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "2C6306BD5E86EB70"
-				item: "kubejs:stabilized_plutonium"
-				type: "item"
-			}]
-			title: "Element 094: Plutonium"
-			x: 23.0d
-			y: 10.25d
-		}
-		{
-			id: "6416118459258E42"
-			rewards: [{
-				id: "1A291CB9C8512CF4"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "6F12010C1D06D935"
-				item: "gtceu:americium_ingot"
-				type: "item"
-			}]
-			title: "Element 095: Americium"
-			x: 24.5d
-			y: 10.25d
-		}
-		{
-			id: "4CE0D6E9E7DE3129"
-			rewards: [{
-				id: "393FACB2F646FE62"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3BC631547DED93A4"
-				item: "kubejs:stabilized_curium"
-				type: "item"
-			}]
-			title: "Element 096: Curium"
-			x: 26.0d
-			y: 10.25d
-		}
-		{
-			id: "41C61F32DBEF85B7"
-			rewards: [{
-				id: "36F86E20F1F099A7"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "29C2220487AC6007"
-				item: "kubejs:stabilized_berkelium"
-				type: "item"
-			}]
-			title: "Element 097: Berkelium"
-			x: 27.5d
-			y: 10.25d
-		}
-		{
-			id: "72414246D5FBBFA9"
-			rewards: [{
-				id: "33606BFD7870074B"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7EED460D17D6220F"
-				item: "kubejs:stabilized_californium"
-				type: "item"
-			}]
-			title: "Element 098: Californium"
-			x: 29.0d
-			y: 10.25d
-		}
-		{
-			id: "6F7D6294E9F311E4"
-			rewards: [{
-				id: "699E49AD73A92C21"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3C7C63A8387F6CF8"
-				item: "kubejs:stabilized_einsteinium"
-				type: "item"
-			}]
-			title: "Element 099: Einsteinium"
-			x: 30.5d
-			y: 10.25d
-		}
-		{
-			id: "0D732BC5312234B4"
-			rewards: [{
-				id: "6AFFAED62B8C9737"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7B0921BFD2093303"
-				item: "gtceu:niobium_ingot"
-				type: "item"
-			}]
-			title: "Element 041: Niobium"
-			x: 18.5d
-			y: 3.5d
-		}
-		{
-			id: "68CE119F73B6FACF"
-			rewards: [{
-				id: "60F4CBFD5FB26D1F"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "764876DAB2B712EE"
-				item: "gtceu:cadmium_dust"
-				type: "item"
-			}]
-			title: "Element 048: Cadmium"
-			x: 29.0d
-			y: 3.5d
-		}
-		{
-			id: "0DB13ACF2241345E"
-			rewards: [{
-				id: "7F5A4DB4E2A626EC"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "54F7B47E5C643EE1"
-				item: "gtceu:neodymium_ingot"
-				type: "item"
-			}]
-			title: "Element 060: Neodymium"
-			x: 20.0d
-			y: 8.75d
-		}
-		{
-			id: "016054D07025C8B1"
-			rewards: [{
-				id: "7B06EBCF7A2ABDFD"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7F13D791D8D473F7"
-				item: "gtceu:tantalum_ingot"
-				type: "item"
-			}]
-			title: "Element 073: Tantalum"
-			x: 18.5d
-			y: 5.0d
-		}
-		{
-			id: "119C529A35758AF2"
-			rewards: [{
-				id: "3FCCD8B4F54F754C"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "04D116D8C5C90264"
-				item: "gtceu:duranium_ingot"
-				type: "item"
-			}]
-			title: "Element ???: Duranium"
-			x: 23.0d
-			y: 12.5d
-		}
-		{
-			id: "1B45AA7042D110E4"
-			rewards: [{
-				id: "2DD86B8089DD42F8"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "60D23B4E9895A29F"
-				item: "gtceu:molybdenum_ingot"
-				type: "item"
-			}]
-			title: "Element 042: Molybdenum"
-			x: 20.0d
-			y: 3.5d
-		}
-		{
-			id: "5C549B001A8AB62F"
-			rewards: [{
-				id: "364A47815AD9671D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "5D6E049878B8FC67"
-				item: "gtceu:caesium_dust"
-				type: "item"
-			}]
-			title: "Element 055: Caesium"
-			x: 12.5d
-			y: 5.0d
-		}
-		{
-			id: "05C97DC2035CE7CB"
-			rewards: [{
-				id: "6421ED19B626BF9B"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "5EA12B0E38716467"
-				item: "gtceu:samarium_ingot"
-				type: "item"
-			}]
-			title: "Element 062: Samarium"
-			x: 23.0d
-			y: 8.75d
-		}
-		{
-			id: "56F6AFFFCAE8A5D4"
-			rewards: [{
-				id: "08C0F56131DEDCB7"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "75E68EF5F871707F"
-				item: "gtceu:lead_ingot"
-				type: "item"
-			}]
-			title: "Element 082: Lead"
-			x: 32.0d
-			y: 5.0d
-		}
-		{
-			id: "77880E592DB38C9C"
-			rewards: [{
-				id: "781E2EB85AD5B060"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "410C4F56121B1FFE"
-				item: "gtceu:trinium_ingot"
-				type: "item"
-			}]
-			title: "Element ???: Trinium"
-			x: 27.5d
-			y: 12.5d
-		}
-		{
-			id: "4E39FDB6FACDF522"
-			rewards: [{
-				id: "6C02B001A7E60BDE"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "4260C001BFAEE183"
-				item: "gtceu:ruthenium_ingot"
-				type: "item"
-			}]
-			title: "Element 044: Ruthenium"
-			x: 23.0d
-			y: 3.5d
-		}
-		{
-			id: "4DC7B2BB86A2FEBD"
-			rewards: [{
-				id: "2B597730FF1E7E9E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "451C6F9EBE6A2B67"
-				item: "gtceu:barium_dust"
-				type: "item"
-			}]
-			title: "Element 056: Barium"
-			x: 14.0d
-			y: 5.0d
-		}
-		{
-			id: "64CD4BDBEBD0353D"
-			rewards: [{
-				id: "50E670CF87BDC8FA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "091FADB49706A126"
-				item: "gtceu:europium_ingot"
-				type: "item"
-			}]
-			title: "Element 063: Europium"
-			x: 24.5d
-			y: 8.75d
-		}
-		{
-			id: "007B1B457AA3F497"
-			rewards: [{
-				id: "6549F8A6559931C2"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "246EBAD3AB7D489A"
-				item: "gtceu:darmstadtium_ingot"
-				type: "item"
-			}]
-			title: "Element 110: Darmstadtium"
-			x: 26.0d
-			y: 6.5d
-		}
-		{
-			id: "75489CBC9AABA80D"
-			rewards: [{
-				id: "1A6A4F69C8C9FAE0"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "65D45DB6200284B7"
-				item: "gtceu:draconium_ingot"
-				type: "item"
-			}]
-			title: "Element ???: Draconium"
-			x: 26.0d
-			y: 12.5d
-		}
-		{
-			id: "39588577CDBFCAE4"
-			rewards: [{
-				id: "5EF6B9A5421BCD4D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "53A59C3EC7E6E92A"
-				item: "gtceu:rhodium_ingot"
-				type: "item"
-			}]
-			title: "Element 045: Rhodium"
-			x: 24.5d
-			y: 3.5d
-		}
-		{
-			id: "408C7F5C8340AF27"
-			rewards: [{
-				id: "0FE9D045CE22E471"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "2CEE7056544F0633"
-				item: "gtceu:cerium_dust"
-				type: "item"
-			}]
-			title: "Element 058: Cerium"
-			x: 17.0d
-			y: 8.75d
-		}
-		{
-			id: "07706AB24D866D7F"
-			rewards: [{
-				id: "58EAB82D9B723C52"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "021B408B9A601BB6"
-				item: "gtceu:lutetium_ingot"
-				type: "item"
-			}]
-			title: "Element 071: Lutetium"
-			x: 36.5d
-			y: 8.75d
-		}
-		{
-			id: "3D9E25B45A7942A7"
-			rewards: [{
-				id: "04125772561E8A7E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1E7280ACBCCB43CF"
-				item: "gtceu:tritanium_ingot"
-				type: "item"
-			}]
-			title: "Element ???: Tritanium"
-			x: 24.5d
-			y: 12.5d
-		}
-		{
-			id: "37FD045CC0AEB11B"
-			rewards: [{
-				id: "5F6AD7D585BDA2D3"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "5AA1C9C0F0B5189B"
-				item: "gtceu:naquadah_ingot"
-				type: "item"
-			}]
-			title: "Element ???: Naquadah"
-			x: 29.0d
-			y: 12.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "63CFADCCE0688239"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "4436AE0DF3B78649"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 18.5d
-			y: 10.25d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "7D50B0E825F8D70B"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "415231D9E79ADF76"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 17.0d
-			y: 5.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "6564ADDBABF7DB49"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "5DB657A9EF012D12"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 21.5d
-			y: 8.75d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "75FDDFCD19B1614C"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "05487BA8EF0D19C6"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 18.5d
-			y: 8.75d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "1DD6F43254B077E1"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "1BE1DA02DDB3277C"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 26.0d
-			y: 8.75d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "3CFF422D1BAAEB65"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "4212B218BA04DBA1"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 27.5d
-			y: 8.75d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "7BEAC81200BD7563"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "4035A62968461C40"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 29.0d
-			y: 8.75d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "441BD16D32E88974"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "73AB7C76A6C3B1E7"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 21.5d
-			y: 5.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "275EB687F851025B"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "4D78E0F0784E30B1"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 36.5d
-			y: 5.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "7978CD633112BE89"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "20B30658AB28C786"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 36.5d
-			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "721D1C6CA8C2AF22"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "1F7AC5B831F7860B"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 35.0d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"41DCE197206EDEA5"
-				"0FF0CBBA4F923E5A"
-				"5A6E9B2CBD801245"
-				"222CB99ACBD324ED"
-				"411F77907FBEB93B"
-				"114DC4B7E144ECF5"
-				"7F05F81141C8EA91"
-				"6BD48196D8DB2AD6"
-				"71D6DC14A6F9882A"
-				"22ED61C490B7CE88"
-				"6ACBD5F648141ECC"
-				"06211913A786D9DD"
-				"5875B965A52FD955"
-				"273D48F9D80568AC"
-				"4636F253795B1613"
-				"4E4F728ADA8240A8"
-				"6F59C7C23A41282A"
-				"7E2620ED869001A8"
-				"46641CBE1B25A58A"
-				"5A508404A0B07AD1"
-				"42A7971C7C8174CD"
-				"0204D290950F1DA6"
-				"23A578F05966E88E"
-				"18EF39D0C5B55C34"
-				"0B5B7A15B7FD684C"
-			]
-			description: ["As the name suggests, this catalyst is formed from exotic non-elemental materials and alloys."]
-			id: "67591B6025C03130"
-			size: 2.0d
-			subtitle: "A small appetizer, before the &9Omnium&r main course."
-			tasks: [{
-				id: "4E828B100CB2362F"
-				item: "kubejs:exotic_materials_catalyst"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -7.0d
-		}
-		{
-			dependencies: [
-				"1B45AA7042D110E4"
-				"7978CD633112BE89"
-				"4AF3060B2426B25F"
-				"20116A38B08BA7A3"
-				"119C529A35758AF2"
-				"6564ADDBABF7DB49"
-				"3A3C9648BD56ED20"
-				"797D6787F2BEE54C"
-				"007B1B457AA3F497"
-				"4DCB58F9B3771DC8"
-				"228E46FDEBF7F389"
-				"2859B3747ACF856C"
-				"12B896D7EF558835"
-				"14F2E61E80D231AE"
-				"721D1C6CA8C2AF22"
-				"4A6F916494B787AE"
-				"26380A0FD7A8688C"
-				"37FD045CC0AEB11B"
-				"0D552ECAE4FC617B"
-				"21F3839E5E4B57BE"
-				"73F80C5062B86D09"
-				"442C028AB73A0A06"
-				"05C97DC2035CE7CB"
-				"3CFF422D1BAAEB65"
-				"0D732BC5312234B4"
-				"42F1EF8432C05294"
-				"016054D07025C8B1"
-				"28FE832435EAEE16"
-				"7BEAC81200BD7563"
-				"68CE119F73B6FACF"
-				"0BEEC4D7F9839411"
-				"271B184131614D97"
-				"41C61F32DBEF85B7"
-				"24FC29C2D5E3A76E"
-				"2B7DEF68BB674CC6"
-				"12602DA0FD3D8349"
-				"02EFF3E87346EDF4"
-				"0A6D3E69FEB53084"
-				"56F6AFFFCAE8A5D4"
-				"1DD6F43254B077E1"
-				"7DB1C08EEF0BEE02"
-				"17B5F089E58BB780"
-				"408C7F5C8340AF27"
-				"4BBB1F5A2657650D"
-				"07706AB24D866D7F"
-				"102BE3675105B9F5"
-				"5A25A4DEF1CCA576"
-				"1A693859BD2CDADF"
-				"3D54068FFDD1F3CE"
-				"4EDE4D4D109BF2C2"
-				"7D50B0E825F8D70B"
-				"75FDDFCD19B1614C"
-				"293A7F5F0A58E5F3"
-				"33131617D0919A5B"
-				"4978EC7E56F89AB0"
-				"75489CBC9AABA80D"
-				"63CFADCCE0688239"
-				"275EB687F851025B"
-				"72414246D5FBBFA9"
-				"6F76D81C52F0E04C"
-				"03819818FD208DEE"
-				"76B813A1717561B5"
-				"36902938AFF55303"
-				"59C4DA6088B9BC7D"
-				"7B8621728BF88BEC"
-				"4E39FDB6FACDF522"
-				"6648CD525CE34898"
-				"0DB13ACF2241345E"
-				"4DC7B2BB86A2FEBD"
-				"7B73FD81B7E8FFFE"
-				"63969C74693044BA"
-				"7C6E64B63F0DB4BD"
-				"441BD16D32E88974"
-				"57AE5794C23B5B6F"
-				"02782201B4D4DB5C"
-				"5C549B001A8AB62F"
-				"39588577CDBFCAE4"
-				"3D9E25B45A7942A7"
-				"70E774D0394C0B8E"
-				"6416118459258E42"
-				"7C55E6EBB28BF5C2"
-				"1753776C838E2048"
-				"64CD4BDBEBD0353D"
-				"5B3ABAA58C564CB4"
-				"4CE0D6E9E7DE3129"
-				"6F7D6294E9F311E4"
-				"77880E592DB38C9C"
-				"67591B6025C03130"
-				"1D5D25F52BE6709E"
-				"21000D112770C852"
-				"28558A445F62D737"
-				"47E4558362202D5D"
-			]
-			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
-			id: "281DE48E7260BC8E"
-			shape: "hexagon"
-			size: 3.0d
-			subtitle: "Man, that's a LOT of quests linked to this one."
-			tasks: [{
-				count: 64L
-				id: "2930DDCAF43468A4"
-				item: "kubejs:mote_of_omnium"
-				type: "item"
-			}]
-			x: 25.5d
-			y: -6.75d
-		}
-		{
 			dependencies: ["2D9A95AC50CCB988"]
 			description: ["A catalyst forged from &9Omnium&r, &6Empowered Gears&r, various enhanced &6Nether Stars&r, and a core made of &6The Ultimate Material&r."]
 			id: "45B17E923E03264B"
+			shape: "hexagon"
 			size: 1.0d
 			tasks: [{
 				id: "4264F181616FC28C"
 				item: "kubejs:eternal_catalyst"
 				type: "item"
 			}]
-			x: 32.5d
-			y: -13.5d
+			x: 35.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["45B17E923E03264B"]
-			description: [
-				"Reinforcing &6Heart of a Universe&r with &6Chaotic Cores&r, many &6Piles of Neutrons&r, and a bunch of &6Eternal Catalysts&r produces an &cInfinity Catalyst&r."
-				""
-				"This material is the core of most creative-tier crafting recipes."
-			]
+			description: ["Reinforcing &6Heart of a Universe&r with &6abyssal Cores&r, many &6Piles of Neutrons&r, and a bunch of &6Eternal Catalysts&r produces an &cInfinity Catalyst&r."]
 			id: "1D00150456DEF379"
+			shape: "hexagon"
 			size: 1.0d
 			subtitle: "Are you ready to go infinite?"
 			tasks: [{
@@ -2113,83 +157,81 @@
 				item: "kubejs:infinity_catalyst"
 				type: "item"
 			}]
-			x: 32.5d
-			y: -15.25d
+			x: 35.0d
+			y: -18.0d
 		}
 		{
-			dependencies: ["281DE48E7260BC8E"]
-			description: ["&6Chaotic Cores&r are the ultimate tier of &bDraconic Evolution&r core, used for the most powerful and advanced items."]
+			dependencies: ["739F7BF2A90B278A"]
+			description: ["&6Hadal Cores&r are the ultimate tier of &bSculk&r core, used for the most powerful and advanced items."]
 			id: "3171F83E24C8F740"
+			shape: "hexagon"
 			size: 1.0d
 			subtitle: "The culmination of so much effort."
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: { Count: 4b, id: "draconicevolution:chaotic_core" }
+				item: { Count: 4b, id: "kubejs:hadal_energy_core" }
 				type: "item"
 			}]
-			title: "Chaotic Cores"
+			title: "Hadal Cores"
 			x: 25.5d
-			y: -11.75d
+			y: -9.5d
 		}
 		{
-			dependencies: ["4261BDA34D716EC8"]
+			dependencies: ["65C40A41F29687F4"]
 			description: [
 				"The &9Creative Tank&r is a major milestone. Great work!"
 				""
-				"This tank is your first proper creative item, which can be set to a fluid and then provides an infinite quantity of that fluid. &2Use the Creative Tank Provider to supply you with Creative Tanks."
+				"This tank is your first proper creative item, which can be set to a fluid and then provides an infinite quantity of that fluid."
 				""
-				"The GT Creative Tank has been enhanced. You can turn it on and off, configure exactly how much fluid you want it to push and how often, and change which direction the fluid is pushed out. You can even configure the fluid you want directly from EMI!&r"
+				"While your first instinct would be to set up massive rows of fluid solidifers and calling it day, instead, try using these powerful tanks to passively produce items and materials that were previously complex chains."
 				""
-				"From there you can set up tanks with infinite quantities of every fluid you can think of. &3Fluid Solidifiers&r &2or the much more powerful Large Solidification Arrays&r can be used to make infinite of every element you can melt and solidify."
 				"{@pagebreak}"
-				"This is quite a game-changer as far as infrastructure goes. You'll find that many machines won't need to be used for their original purpose anymore. Some major base redesign is in order. Have you considered moving to space?"
+				""
+				"&2The GT Creative Tank has been enhanced. You can turn it on and off, configure exactly how much fluid you want it to push and how often, and change which direction the fluid is pushed out. You can even configure the fluid you want directly from EMI!&r"
 				""
 				"All that said, &ethe pack will still be challenging to complete&r. Infinite resources and power is nice, but it's not everything. There are plenty of materials you can't melt, and creative items will push your factory automation engineering skills to their limits."
-				""
-				"Onward to the final challenge: the &9Creative Chest&r!"
 			]
 			id: "2D9A95AC50CCB988"
-			size: 1.0d
+			size: 2.5d
 			subtitle: "Now this is not the end.\\nIt is not even the beginning of the end.\\nBut it is, perhaps, the end of the beginning."
 			tasks: [{
 				id: "55C6A472371D7AEC"
 				item: "gtceu:creative_tank"
 				type: "item"
 			}]
-			title: "&2Creative Tank"
-			x: 32.5d
-			y: -9.25d
+			title: "&9Creative Tank"
+			x: 35.0d
+			y: -11.5d
 		}
 		{
-			dependencies: ["1D00150456DEF379"]
+			dependencies: [
+				"1D00150456DEF379"
+				"63EB8CC34802E56A"
+			]
 			description: [
-				"This ingot is the most advanced basic material."
+				"Blasting your &9Dormant Infinity Compound Ingots&r and &cInfinity Catalysts&r together will give you &6Infinity Ingots&r, one of the strongest materials ever created."
 				""
-				"With all the automation you hopefully set up for your first &c&cInfinity Catalyst&r, these ingots should be easy."
-				""
-				"Well, not easy. But... Reasonable."
-				""
-				"From here, you are going to be crafting a multitude of Creative-Tier items from various mods. In addition to being useful for their regular functionality, they are needed for the final goal: the &9Creative Chest&r."
-				""
-				"&bEMI&r is your friend: beyond noting a few more items, I will not be holding your hand anymore. I've taught you everything you need to know to beat the pack."
-				""
-				"You can do it!"
+				"Infinity Ingots see a couple of uses, the most notiable at the moment being their use in the creation of &9Dimensional Circuits&r and the &9Tier 11 Microminer&r."
 			]
 			id: "4EA1E0D437528747"
-			size: 1.0d
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "To infinity, and beyond!"
 			tasks: [{
 				id: "67517FC01121D069"
 				item: "gtceu:infinity_ingot"
 				type: "item"
 			}]
-			x: 32.5d
-			y: -18.0d
+			title: "&9Infinity Ingots"
+			x: 36.5d
+			y: -20.0d
 		}
 		{
 			dependencies: ["27EBB5AAF8A40F3D"]
 			description: ["Probably."]
 			id: "6F9041F256F517A3"
+			shape: "hexagon"
 			size: 1.0d
 			subtitle: "No hypothetical aliens were harmed in the harvesting of this item."
 			tasks: [{
@@ -2197,17 +239,20 @@
 				item: "kubejs:heart_of_a_universe"
 				type: "item"
 			}]
-			x: 32.5d
-			y: -11.75d
+			x: 28.5d
+			y: -13.5d
 		}
 		{
 			dependencies: ["22DC32C2B67EFD25"]
 			description: [
 				"You have become Death, destroyer of Universes."
 				""
-				"Might probably be obvious, but this miner gathers a &6Heart of a Universe&r."
+				"Might probably be obvious, but this miner is your sole source of &6Hearts of Universes&r. "
+				""
+				"It also can be used later to obtain &6Creative Storage Data&r and &6Creative Data Hatch Data&r, and is used to obtain &9Contained Singularities&r for &6Monic Circuits&r."
 			]
 			id: "27EBB5AAF8A40F3D"
+			shape: "hexagon"
 			size: 1.0d
 			tasks: [{
 				id: "624B7498A1144A6F"
@@ -2215,14 +260,11 @@
 				type: "item"
 			}]
 			title: "&9Tier Ten Micro Miner"
-			x: 30.25d
-			y: -11.75d
+			x: 28.5d
+			y: -11.5d
 		}
 		{
-			dependencies: [
-				"5601A05D8361551D"
-				"68734C70E2D19616"
-			]
+			dependencies: ["5601A05D8361551D"]
 			description: [
 				"You win."
 				""
@@ -2231,36 +273,16 @@
 				"I hope you enjoyed playing &9Monifactory&r."
 			]
 			id: "2EBB9A154522348F"
-			size: 1.0d
+			size: 5.0d
+			subtitle: "A winner is you"
 			tasks: [{
 				id: "392DAFD3A4019E34"
 				item: "gtceu:creative_chest"
 				type: "item"
 			}]
 			title: "&9&lCreative Chest&r"
-			x: 48.25d
-			y: -18.0d
-		}
-		{
-			dependencies: [
-				"0DE33F0066D49759"
-				"3B57A9816A61C1DC"
-			]
-			description: [
-				"A single-block solution to all your power needs."
-				""
-				"This baby pushes out 2.14 GRF/t per side!"
-			]
-			id: "10A6C332D8BED5FD"
-			size: 1.0d
-			tasks: [{
-				id: "0DA711CB36A29601"
-				item: "draconicevolution:creative_op_capacitor"
-				type: "item"
-			}]
-			title: "Creative RF Source"
-			x: 27.75d
-			y: -22.75d
+			x: 60.25d
+			y: -13.5d
 		}
 		{
 			dependencies: ["3171F83E24C8F740"]
@@ -2277,6 +299,7 @@
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.0d
 			subtitle: "How much do you think these solar panels weigh? "
 			tasks: [{
@@ -2286,11 +309,11 @@
 				type: "item"
 			}]
 			title: "&9Neutronium Solar Panel"
-			x: 27.75d
-			y: -11.75d
+			x: 25.5d
+			y: -11.5d
 		}
 		{
-			dependencies: ["456D0255B6ECFA51"]
+			dependencies: ["07057CDE4E021BA7"]
 			description: [
 				"The &3Simulation Supercomputer&r is a multiblock structure that performs &9HNN&r simulations like the &3Simulation Chamber&r, but is capable of overclocking these simulations to incredible speeds."
 				""
@@ -2302,6 +325,7 @@
 			]
 			icon: "gtceu:simulation_supercomputer"
 			id: "5A70898C99B828E3"
+			size: 1.5d
 			tasks: [
 				{
 					id: "5C159D99CDA8EEE0"
@@ -2340,16 +364,18 @@
 				}
 			]
 			title: "&2Simulation Supercomputer"
-			x: 40.25d
-			y: -10.25d
+			x: 50.0d
+			y: -10.75d
 		}
 		{
 			dependencies: [
 				"4EA1E0D437528747"
 				"22DC32C2B67EFD25"
 			]
-			description: ["Even more creative energy blocks!"]
+			description: ["An even stronger solar."]
 			id: "3B57A9816A61C1DC"
+			shape: "hexagon"
+			size: 1.25d
 			subtitle: "Is Neutronium not enough?!"
 			tasks: [{
 				id: "2EE60D5EE1564FCF"
@@ -2357,704 +383,65 @@
 				type: "item"
 			}]
 			title: "The Final Solar Panel"
-			x: 27.75d
-			y: -18.0d
+			x: 25.5d
+			y: -20.0d
 		}
 		{
-			dependencies: ["113E9543ADB1666B"]
+			dependencies: ["7C9C91EC9F3930C2"]
 			description: [
-				"Finally, a simple way to store all 2.1 billion blocks of dirt that have been laying around!"
+				"Reinforcing your Microminer with netherite lets it retrieve &9Creative Storage Data&r. "
 				""
-				"&5I do want to have this be a functional storage upgrade."
+				"Similar to how the Creative Tank Data, the Creative Storage Data lets you assemble the means to create infinite storage, in the form of the drawer upgrades, as well as Quantum Chests and Tanks."
 			]
 			id: "4CF399EC00A65E3A"
 			tasks: [{
 				id: "639C72FD2123C478"
-				item: "kubejs:creative_storage_component"
+				item: "kubejs:creative_storage_data"
 				type: "item"
 			}]
-			title: "&9Creative Storage Upgrade"
-			x: 40.25d
-			y: -6.75d
+			title: "&9Creative Storage Data"
+			x: 38.75d
+			y: -4.75d
 		}
 		{
-			dependencies: ["10A6C332D8BED5FD"]
-			description: ["&2Configurable to output any number of GT Volts and Amps."]
+			dependencies: ["1B1D3A66B847D129"]
+			description: [
+				"Allows you to assemble 3 kinds of creative energy blocks."
+				""
+				"&2The Gregtech Energy Emitter is configurable to output any number of GT Volts and Amps."
+			]
 			id: "19084E91F357C8C2"
-			size: 1.0d
+			size: 2.0d
 			tasks: [{
-				id: "71ED5BF32C12DA66"
-				item: "gtceu:creative_energy"
+				id: "25F7D8080E9B62C1"
+				item: "kubejs:creative_energy_data"
 				type: "item"
 			}]
-			title: "&2Creative Power, Gregtech Edition"
-			x: 27.75d
-			y: -24.25d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "39999DC07696B3FC"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "107456F9C5FC6932"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 21.5d
-			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "47E4558362202D5D"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "1624AC337BD63AAA"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 17.0d
-			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "21000D112770C852"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7DC386F41AA01A9B"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 12.5d
-			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "28558A445F62D737"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "376026CA732087F5"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 17.0d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "1D5D25F52BE6709E"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7546DF93889C5CA8"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 15.5d
-			y: 10.25d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "5928FCBF99CF031B"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7EC633A5B8AD5F97"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 32.0d
-			y: 2.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "65F05B1B1A57D341"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "2E59B36D918C425C"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 15.5d
-			y: 2.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "62AAA344BBAA638C"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "12FABD7054200201"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 14.0d
-			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "76B613A95DFDD41D"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "4CF6E6523CA5A137"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 12.5d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "44F585590EB4C28C"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "572DAB92CDAB9261"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 35.0d
-			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "26E51AB9E31378EE"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "794A760D4D9F5CD0"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 18.5d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "1E752C53A107FFF1"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "288EBED516DBF375"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 20.0d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "494F5DDE304AB43E"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "4B0AE90670F19AB1"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 35.0d
-			y: 5.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "32326CF76577DCA2"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "5C462084D069B744"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 30.5d
-			y: 5.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "07C3BF79504A9213"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "6272A48A09750CDC"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 21.5d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "28D99F6FE6773536"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "45B2AD5AD02BE4FD"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 33.5d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "1DAA388973010872"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "781FDA6CB07765FB"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 35.0d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "6B0F050E08449326"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "676F242143EEB857"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 38.0d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "46D5DFC5AFEC58AD"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7CB68870DFB04D70"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 23.0d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "3ACAFC347DACFC8D"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7A5056203D757251"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 24.5d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "041AFDD081C8054C"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "763AA80756A03962"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 30.5d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "62D5330EF33F11E7"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "5EBA4602A8B727B1"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 27.5d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "1B3F950BEE44BAEC"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "46A695F2ACF8AA05"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 29.0d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "20573874CE130F4B"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "34BCA11F206EBB29"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 32.0d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "13E958AA3A6CCE85"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7158443EAB25140A"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 36.5d
-			y: 6.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "7E34C410DF281917"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7F61249273A9E0CB"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 30.5d
-			y: 8.75d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "19813D769E0693EA"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "4348AEED28459C0F"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 32.0d
-			y: 8.75d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "247CCB1BC2E7C27C"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "58F4FFB270CEA21B"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 32.0d
-			y: 10.25d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "6F28EB00ECF74C9D"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7C82CA9F8892828F"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 33.5d
-			y: 8.75d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "69DEA8612D70B2DE"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "3117E58BBBA2F84C"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 33.5d
-			y: 10.25d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "6AB1F7A04FF5D1B5"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "5CAAB07517C865BD"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 35.0d
-			y: 8.75d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "31125F2DDD953CDD"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "67B8DFBE1AE7297F"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 35.0d
-			y: 10.25d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "1465C7BE81304747"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "3A1227F656C3CA65"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 36.5d
-			y: 10.25d
-		}
-		{
-			description: ["This element exists but is not required for the Mote of Omnium."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "4CF5155563E346BE"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "51A37F29775DF2AA"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 14.0d
-			y: 6.5d
-		}
-		{
-			description: ["This element exists but is not needed for the Mote of Omnium."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "5D1DAC23C6B89AC3"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "555011C2A9D2CC5D"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 33.5d
-			y: 5.0d
-		}
-		{
-			description: ["This element exists but is not needed for the Mote of Omnium."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "2D788BE1CA9A2D69"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "1565FA8942925060"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 36.5d
-			y: 2.0d
+			title: "&9Creative Power"
+			x: 41.75d
+			y: -26.75d
 		}
 		{
 			dependencies: ["1D00150456DEF379"]
 			description: ["Instead of using cables to move your data around, why not just have all the data packed in a single block?"]
 			id: "1C861E0C62D5B97D"
+			size: 1.5d
 			tasks: [{
 				id: "3BE677A49268E12B"
-				item: "gtceu:creative_data_access_hatch"
+				item: "kubejs:creative_data_hatch_data"
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
-			x: 30.25d
-			y: -15.25d
+			x: 33.25d
+			y: -16.0d
 		}
 		{
-			dependencies: ["2D9A95AC50CCB988"]
-			description: ["Kind of like the previous &9infinite cells&r, but you can partition this one in a cell workbench to tell what fluids it should stock."]
+			dependencies: ["65C40A41F29687F4"]
+			description: [
+				"Changing the circuit value on your newfound &9Subatomic Digital Assembler&r will allow you to assemble &9Creative ME Fluid Cells&r."
+				""
+				"These are kind of like the previous &9infinite cells&r, but you can partition this one in a &6cell workbench&r to tell what fluids it should stock."
+			]
 			id: "2F21C6B6F145EA81"
 			tasks: [{
 				id: "390C1F547BDF7D2B"
@@ -3062,8 +449,8 @@
 				type: "item"
 			}]
 			title: "&9Creative Fluid Cell"
-			x: 30.25d
-			y: -9.25d
+			x: 31.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["5A70898C99B828E3"]
@@ -3076,7 +463,7 @@
 			]
 			icon: "gtceu:loot_superfabricator"
 			id: "161F61C28DBC5941"
-			size: 1.0d
+			size: 1.5d
 			tasks: [
 				{
 					id: "47C6FEC171CDB1BC"
@@ -3115,87 +502,43 @@
 				}
 			]
 			title: "&9Loot Superfabricator"
-			x: 40.25d
-			y: -9.25d
-		}
-		{
-			dependencies: ["6C01042124B219B0"]
-			id: "29A0F78E8EAFCAAE"
-			tasks: [{
-				id: "799EBD080343F600"
-				item: "kubejs:matter_processor"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -8.75d
-		}
-		{
-			dependencies: [
-				"6F9041F256F517A3"
-				"5BFB37CA7C058AC8"
-			]
-			id: "456D0255B6ECFA51"
-			size: 1.0d
-			tasks: [{
-				id: "04C6C839119CE5F5"
-				item: "kubejs:matter_processor_mainframe"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -11.75d
-		}
-		{
-			dependencies: ["29A0F78E8EAFCAAE"]
-			id: "2EBF2DFA5907D7F1"
-			tasks: [{
-				id: "5D783CB7F735A748"
-				item: "kubejs:matter_processor_assembly"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -9.75d
-		}
-		{
-			dependencies: ["2EBF2DFA5907D7F1"]
-			id: "5BFB37CA7C058AC8"
-			tasks: [{
-				id: "1D4FFE8CCCFD21C5"
-				item: "kubejs:matter_processor_computer"
-				type: "item"
-			}]
-			x: 38.25d
+			x: 52.5d
 			y: -10.75d
 		}
 		{
 			dependencies: ["4155AEBF760C42E8"]
-			description: ["[MISSING DESCRIPTION]"]
+			description: ["Made in the &dOmnic Forge&r, these coils can heat up to 12500K, allowing them to smelt everything."]
 			id: "7C4E04E3EA603000"
+			shape: "hexagon"
 			tasks: [{
 				id: "528FBBDEA6B0FB36"
 				item: "kubejs:omnic_matrix_coil_block"
 				type: "item"
 			}]
 			title: "&9Omnic Matrix Coil"
-			x: 35.5d
+			x: 36.5d
 			y: -6.75d
 		}
 		{
 			dependencies: ["7C4E04E3EA603000"]
 			description: ["This highly advanced alloy will require you to extensively process Ancient Debris and combine the results with a few other items in an Omnic Forge."]
 			id: "113E9543ADB1666B"
+			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "25D96E6575B38623"
 				item: "gtceu:netherite_ingot"
 				type: "item"
 			}]
 			title: "&9Netherite"
-			x: 38.25d
-			y: -6.75d
+			x: 36.5d
+			y: -8.75d
 		}
 		{
-			dependencies: ["6F9041F256F517A3"]
+			dependencies: ["49E9A178F6A52A62"]
 			description: ["The &bSubatomic Digital Assembler &fcan be used to produce some creative items from the required data and computational power, the first of which is the &dCreative Quantum Tank."]
 			id: "4261BDA34D716EC8"
+			shape: "hexagon"
 			size: 1.0d
 			subtitle: "The Pinnacle of Energy-To-Mass Conversion"
 			tasks: [{
@@ -3203,178 +546,98 @@
 				item: "gtceu:subatomic_digital_assembler"
 				type: "item"
 			}]
-			title: "Subatomic Digital Assembler"
-			x: 35.5d
-			y: -9.25d
-		}
-		{
-			dependencies: ["456D0255B6ECFA51"]
-			id: "3F2FC421B1CC2D0A"
-			tasks: [{
-				id: "69C0420732DEC277"
-				item: "gtceu:uev_machine_hull"
-				type: "item"
-			}]
-			x: 40.25d
-			y: -11.75d
-		}
-		{
-			dependencies: [
-				"1BABC1CF44534AE0"
-				"1E36AFB19932C805"
-			]
-			id: "1B32B86C8AF41947"
-			tasks: [{
-				id: "5510ABA29D84165F"
-				item: "kubejs:dimensional_processor"
-				type: "item"
-			}]
-			x: 35.5d
-			y: -20.0d
-		}
-		{
-			dependencies: ["1B32B86C8AF41947"]
-			id: "768A28309AF076F0"
-			tasks: [{
-				id: "625EE1D6ACF139BA"
-				item: "kubejs:dimensional_processor_assembly"
-				type: "item"
-			}]
-			x: 34.0d
-			y: -20.0d
-		}
-		{
-			dependencies: ["768A28309AF076F0"]
-			id: "5D0252A2E07BB99D"
-			tasks: [{
-				id: "695BE113997E870F"
-				item: "kubejs:dimensional_processor_computer"
-				type: "item"
-			}]
-			x: 32.5d
-			y: -20.0d
-		}
-		{
-			dependencies: ["5D0252A2E07BB99D"]
-			id: "0DE33F0066D49759"
-			tasks: [{
-				id: "06E276EFBE371067"
-				item: "kubejs:dimensional_processor_mainframe"
-				type: "item"
-			}]
-			x: 32.5d
-			y: -22.75d
-		}
-		{
-			dependencies: ["113E9543ADB1666B"]
-			id: "6C01042124B219B0"
-			tasks: [{
-				id: "770096E913BF92CF"
-				item: "kubejs:matter_processing_unit"
-				type: "item"
-			}]
-			x: 38.25d
-			y: -7.75d
-		}
-		{
-			dependencies: [
-				"4EA1E0D437528747"
-				"4DF92773C82F4AAC"
-			]
-			id: "1BABC1CF44534AE0"
-			tasks: [{
-				id: "401F688126A8FD9C"
-				item: "kubejs:dimensional_processing_unit"
-				type: "item"
-			}]
-			x: 35.5d
-			y: -18.0d
-		}
-		{
-			dependencies: ["0DE33F0066D49759"]
-			id: "7BF0FE766903A1D1"
-			tasks: [{
-				id: "57A8722148FBD716"
-				item: "gtceu:uiv_machine_hull"
-				type: "item"
-			}]
-			x: 34.75d
-			y: -22.75d
-		}
-		{
-			dependencies: ["456D0255B6ECFA51"]
-			id: "63CC578C3558E0AF"
-			tasks: [{
-				id: "1E6F38616AA5D63C"
-				item: "gtceu:advanced_microverse_projector_iii"
-				type: "item"
-			}]
-			x: 40.25d
+			title: "&9Subatomic Digital Assembler"
+			x: 31.0d
 			y: -13.5d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
-			description: ["parraelizable"]
+			dependencies: ["07057CDE4E021BA7"]
+			description: [
+				"The &3Hyperbolic Microverse Projector&r is the most powerful projector, capiable of running hundreds of missions in parallel. It can perform all previous microminer missions, and opens the door to many new microminer missions."
+				""
+				"&6Sneak-right click&r the controller to enable the in-world preview."
+			]
+			id: "63CC578C3558E0AF"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "1E6F38616AA5D63C"
+				item: "gtceu:hyperbolic_microverse_projector"
+				type: "item"
+			}]
+			title: "&9Hyperbolic Microverse Projector"
+			x: 48.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["1B1D3A66B847D129"]
+			description: [
+				"The &6Dimensional Superassembler&r uses dimensional warping to process hundreds of assembly line recipes at once. "
+				""
+				"Notably, the Dimensional Superassembler bypasses the need to use &9ULV Input Buses&r or &9ordered assembly&r, so you are free to stuff the entirety of a recipe into a single input bus."
+			]
 			id: "73A44214C2B44D53"
+			size: 2.0d
 			tasks: [{
 				id: "025BAF9655B5AB49"
-				item: "gtceu:advanced_assline"
+				item: "gtceu:dimensional_superassembler"
 				type: "item"
 			}]
-			x: 30.25d
-			y: -24.25d
+			title: "&9Dimensional Superassembler"
+			x: 45.75d
+			y: -26.75d
 		}
 		{
-			dependencies: ["0DE33F0066D49759"]
-			description: [
-				"an unknown amount of steps go here"
-				""
-				"A new MM? new missions? who knows"
-				""
-				"just part of the process to get monium"
+			dependencies: [
+				"1B1D3A66B847D129"
+				"040B3FCD82533BD9"
 			]
+			description: ["The final microminer, it is capable of altering the laws of physics on a microversal scale, thus allowing the production of previously impossible materials."]
 			id: "13578427FD9CC2CE"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Final microminer!"
 			tasks: [{
 				id: "23064FA88C378D9C"
-				item: "ftbquests:barrier"
+				item: "kubejs:microminer_t12"
 				type: "item"
 			}]
-			x: 34.75d
-			y: -24.25d
-		}
-		{
-			dependencies: ["0DE33F0066D49759"]
-			id: "2272159BD4643610"
-			tasks: [{
-				id: "0918712974E9D143"
-				item: "ftbquests:barrier"
-				type: "item"
-			}]
-			x: 34.75d
-			y: -21.5d
+			title: "&9Tier Twelve Microminer"
+			x: 45.75d
+			y: -23.5d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
+			description: ["Infinity can be manipulated to create Monium, the strongest possible material."]
 			id: "060A5766B021FC77"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The be all end all"
 			tasks: [{
 				id: "7BF367338B6E7F99"
 				item: "gtceu:monium_ingot"
 				type: "item"
 			}]
-			x: 43.25d
-			y: -24.25d
+			title: "&9Monium"
+			x: 50.0d
+			y: -23.5d
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
-			description: ["yet another placeholder for a unknown number of chains, mechanics, etc"]
+			description: [
+				"Turns out corrupting a microverse has some other interesting consequences, including causing singulairities. These impossibilities may just be what you need to create an impossibily perfect circuit line, but you do need to be able to contain it in some way."
+				""
+				"Thankfully, you already have a metal that bends the rules, so that should be a good starting place."
+			]
 			id: "68734C70E2D19616"
+			shape: "hexagon"
 			tasks: [{
 				id: "5299B82EB34822E2"
-				item: "ftbquests:barrier"
+				item: "kubejs:contained_singularity"
 				type: "item"
 			}]
-			x: 43.25d
-			y: -18.0d
+			x: 55.0d
+			y: -23.5d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -3386,36 +649,13 @@
 				type: "item"
 			}]
 			title: "&9Epic Crafting Table"
-			x: 40.25d
-			y: -8.25d
-		}
-		{
-			dependencies: ["0DE33F0066D49759"]
-			id: "6138FB8766AD6F8C"
-			tasks: [{
-				id: "0BE78C6BD408CFEB"
-				item: "gtceu:draconic_fusion_reactor"
-				type: "item"
-			}]
-			x: 30.25d
-			y: -21.25d
-		}
-		{
-			dependencies: ["456D0255B6ECFA51"]
-			description: ["oc not unlocked here at the moment, but once fusion is implemented this multiblock will be moved here"]
-			id: "6A9E02E66C10EA9F"
-			tasks: [{
-				id: "673F392CD989796A"
-				item: "gtceu:draconic_reactor"
-				type: "item"
-			}]
-			x: 36.75d
-			y: -13.5d
+			x: 36.5d
+			y: -4.75d
 		}
 		{
 			dependencies: [
-				"281DE48E7260BC8E"
 				"2D9A95AC50CCB988"
+				"739F7BF2A90B278A"
 			]
 			description: [
 				"&fThe Omnic Forge will allow you to produce post-tank coils and casings. It is also part of the Netherite processing line."
@@ -3424,28 +664,38 @@
 				"Now, you could make this before you get tank, it's perfectly do-able, but there's nothing that really needs it."
 			]
 			id: "4155AEBF760C42E8"
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "Wow, that's a lot of omnium!"
 			tasks: [{
 				id: "1EBD17D9B6A27E1C"
 				item: "gtceu:omnic_forge"
 				type: "item"
 			}]
-			x: 32.5d
+			title: "&9Omnic Forge"
+			x: 35.0d
 			y: -6.75d
 		}
 		{
 			dependencies: [
-				"456D0255B6ECFA51"
 				"63CC578C3558E0AF"
+				"07057CDE4E021BA7"
+			]
+			description: [
+				"Taking a look at the &6Corrupted Universe Data&r has given you a couple of ideas, but to properly take advantage of it, a new microminer is needed."
+				""
+				"This microminer requires a Epic Extended Crafting Table to fit all the things required for a foray into a corrupted universe."
 			]
 			id: "33F610CF136278AE"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "38C0D22CABA00813"
 				item: "kubejs:microminer_t11"
 				type: "item"
 			}]
-			x: 38.25d
-			y: -13.5d
+			x: 50.0d
+			y: -16.0d
 		}
 		{
 			dependencies: [
@@ -3453,40 +703,69 @@
 				"33F610CF136278AE"
 				"61BE0215F377C510"
 			]
+			description: [
+				"Using the corrupted universe data and a tier 11 microminer, Scrap can be retrieved. Scrap can be sifted into various bits of ruined tech, which then can be recycled into holmium, each with their own miniature line."
+				""
+				"Scrap processing also can retrieve a variety of other important elements."
+			]
 			id: "0FD9B533BB402B17"
+			shape: "hexagon"
 			tasks: [{
-				id: "53F611C7F1F12321"
+				id: "05C1101C77DE5B22"
 				item: "kubejs:alien_scrap"
 				type: "item"
 			}]
-			x: 38.25d
-			y: -15.25d
+			title: "&9Scrapping"
+			x: 50.0d
+			y: -18.0d
 		}
 		{
-			dependencies: ["0FD9B533BB402B17"]
+			dependencies: [
+				"72996D5B09AC57CF"
+				"23F3219BBE486D2E"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Thankfully, &9Holmium&r itself does not require any special processing, and can just be smelted."
+				""
+				"&9Holmium&r will see use in the next tier of SMDs, as well as things requiring strong magnetic fields."
+			]
 			id: "0DE1BF1648CAF6D6"
+			shape: "hexagon"
 			tasks: [{
 				id: "1BBD650C59C35C52"
 				item: "gtceu:holmium_ingot"
 				type: "item"
 			}]
-			x: 38.25d
+			title: "&9Holmium"
+			x: 41.75d
 			y: -18.0d
 		}
 		{
 			dependencies: ["4261BDA34D716EC8"]
+			description: [
+				"&7&oUh boss? I think putting the Universe Creation Data in the Subatomic Digital Assembler was a bad idea.&r"
+				""
+				"Attempting to replicate Universe Creation Data will instead corrupt the data, giving you this unsightly mess."
+				""
+				"Not all may be lost, though..."
+			]
 			id: "61BE0215F377C510"
+			shape: "hexagon"
 			tasks: [{
 				id: "3F79F8E984CF6A2A"
 				item: "kubejs:corrupted_universe_data"
 				type: "item"
 			}]
-			x: 35.5d
-			y: -15.25d
+			title: "&9Corrupted Universe Data"
+			x: 31.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
+			description: ["&9Complex SMD Components&r are required for &9Dimensional and Monic circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Crystal, Wetware, and Matter circuits."]
 			id: "1E36AFB19932C805"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "0A893375306C18AD"
@@ -3514,14 +793,277 @@
 					type: "item"
 				}
 			]
-			x: 38.25d
+			title: "&9Complex SMD Components"
+			x: 41.75d
+			y: -21.75d
+		}
+		{
+			dependencies: ["113E9543ADB1666B"]
+			description: [
+				"The precurser to &9Matter Processing Units&r, these boards require circuits themselves to craft."
+				""
+				"These circuit boards will also find use in all of the remaining circuit tiers, as they will be upgraded into circuit boards for the other tiers. "
+			]
+			id: "5A07988F5AD20A06"
+			shape: "hexagon"
+			tasks: [{
+				id: "53E419D291C6E2B2"
+				item: "kubejs:matter_circuit_board"
+				type: "item"
+			}]
+			title: "&9Matter Circuit Board"
+			x: 38.75d
+			y: -8.75d
+		}
+		{
+			dependencies: [
+				"39A09DA3903C5564"
+				"601A47A727AC3BD2"
+			]
+			description: ["A &9Multidimentional CPU Wafer&r needs to be enhanced and cut before it is usable in circuit recipes."]
+			id: "2D5677EA9F47AA83"
+			shape: "hexagon"
+			tasks: [{
+				id: "38EA1251719C7C8E"
+				item: "kubejs:multidimensional_cpu_chip"
+				type: "item"
+			}]
+			x: 41.75d
+			y: -8.75d
+		}
+		{
+			dependencies: ["7C4E04E3EA603000"]
+			description: ["These Boules have a hefty cost up front, but a single one will last you quite a while, as well as allowing for the creation of new Chips."]
+			id: "39A09DA3903C5564"
+			shape: "hexagon"
+			subtitle: "The final Boule"
+			tasks: [{
+				id: "6C2FE18AC14A6945"
+				item: "kubejs:universe_boule"
+				type: "item"
+			}]
+			title: "&9Universe Doped Boules"
+			x: 42.75d
+			y: -6.75d
+		}
+		{
+			dependencies: ["060A5766B021FC77"]
+			description: ["The last circuit board, these require UHV circuits, but at this point this shouldn't be an issue for you."]
+			id: "434142F777A2CCBE"
+			shape: "hexagon"
+			tasks: [{
+				id: "5475E609759AF888"
+				item: "kubejs:monic_circuit_board"
+				type: "item"
+			}]
+			x: 50.0d
 			y: -20.0d
 		}
-	]
-	subtitle: [
-		"Getting overhauled!"
-		"Everything beyond Tank is WIP and will change!"
-		"Feel free to share feedback!"
+		{
+			dependencies: [
+				"5A07988F5AD20A06"
+				"0DE1BF1648CAF6D6"
+				"601A47A727AC3BD2"
+			]
+			description: ["The precurser to &6Dimensional Processing Units&r, these will be your first major use for &6Holmium&r."]
+			id: "7E93D88827F83E1A"
+			shape: "hexagon"
+			tasks: [{
+				id: "213CA9E42639CC66"
+				item: "kubejs:dimensional_circuit_board"
+				type: "item"
+			}]
+			title: "&9 Dimensional Circuit Board"
+			x: 38.75d
+			y: -18.0d
+		}
+		{
+			dependencies: ["49C8716030809478"]
+			description: ["An amalgamation of gems, all of them combined will be needed for the final circuit tier."]
+			hide_dependency_lines: true
+			id: "2343B68110805282"
+			shape: "hexagon"
+			tasks: [{
+				id: "50C7192DF852960F"
+				item: "kubejs:ultimate_gem"
+				type: "item"
+			}]
+			x: 52.5d
+			y: -18.0d
+		}
+		{
+			dependencies: [
+				"6F9041F256F517A3"
+				"1D00150456DEF379"
+			]
+			description: [
+				"Sending out this corrupted data with some shattered star data will return &9Shattered Universe Data&r.  "
+				""
+				"Using this data alongside some infinity catalysts will return multiple Hearts of The Universe, making a nice net profit."
+			]
+			id: "769047385AAC71B2"
+			shape: "hexagon"
+			subtitle: "Sometimes you gotta spend money to make money"
+			tasks: [{
+				id: "45C0AD6F1EC8334B"
+				item: "kubejs:shattered_universe_data"
+				type: "item"
+			}]
+			title: "&9Shattered Universe Data"
+			x: 28.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["4261BDA34D716EC8"]
+			description: ["The final Nether Star tier, these take advantage of &6Shattered Star&r data."]
+			id: "601A47A727AC3BD2"
+			shape: "hexagon"
+			tasks: [{
+				id: "47B63F1FDEB9A456"
+				item: "kubejs:quasi_stable_neutron_star"
+				type: "item"
+			}]
+			x: 41.75d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"113E9543ADB1666B"
+				"45B17E923E03264B"
+			]
+			description: ["Combining &6Eternal Catalysts&r, &6Netherite Ingots&r and &6Neutronium Ingots&r will give you the core to one of the most powerful materials."]
+			id: "63EB8CC34802E56A"
+			shape: "hexagon"
+			tasks: [{
+				id: "10E4580AA26D3F66"
+				item: "kubejs:dormant_infinity_compound_ingot"
+				type: "item"
+			}]
+			title: "&9Dormant Infinity Compound"
+			x: 36.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["1E36AFB19932C805"]
+			description: [
+				"Bending the laws of physics is no small feat, thankfully, you've come up with a solution that is compact enough to fit on a microminer."
+				""
+				"As you can probably guess, these are expensive."
+			]
+			id: "040B3FCD82533BD9"
+			shape: "hexagon"
+			tasks: [{
+				id: "6D3DB0D6E5C60BCF"
+				item: "kubejs:field_stabilised_omnic_pulsar_compound"
+				type: "item"
+			}]
+			title: "&9Field Stabilised Omnic Pulsar Compound"
+			x: 45.75d
+			y: -21.75d
+		}
+		{
+			dependencies: [
+				"4261BDA34D716EC8"
+				"6F9041F256F517A3"
+			]
+			description: ["The first of a couple creative datas, these will allow you to replicate extremely powerful marvels, such as the &9Creative Tank&r."]
+			id: "65C40A41F29687F4"
+			shape: "hexagon"
+			tasks: [{
+				id: "36D8F742C5C59B86"
+				item: "kubejs:creative_tank_data"
+				type: "item"
+			}]
+			title: "&9Creative Fluid Data"
+			x: 31.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["39A09DA3903C5564"]
+			description: ["These RAM chips will find use in the remaining mainframe recipes."]
+			id: "7AF06CB391779388"
+			shape: "hexagon"
+			tasks: [{
+				id: "07C7B57760C2EC1C"
+				item: "kubejs:hyperdynamic_ram_chip"
+				type: "item"
+			}]
+			x: 43.75d
+			y: -8.75d
+		}
+		{
+			dependencies: ["39A09DA3903C5564"]
+			description: ["The strongest circuit needs the strongest SoCs."]
+			id: "4DED2A24CB1A56F5"
+			shape: "hexagon"
+			tasks: [{
+				id: "464708B6E0231084"
+				item: "kubejs:quantum_soc_chip"
+				type: "item"
+			}]
+			x: 55.0d
+			y: -6.75d
+		}
+		{
+			dependencies: [
+				"1B1D3A66B847D129"
+				"1D00150456DEF379"
+			]
+			description: ["An upgraded form of &6Infinity Catalyst&r. It processes 4 &cDormant Infinity Compound Ingots&r at a time, essentially increasing your &6Infinity Ingot&r output per &6Heart of a Universe&r by &e4x&r. They also are recyclable afterwards."]
+			id: "06849E067C88C0E9"
+			subtitle: "Gee that's a lot of Infinity Ingots"
+			tasks: [{
+				id: "0BB7A824F7B03BDC"
+				item: "kubejs:furious_infinity_catalyst"
+				type: "item"
+			}]
+			x: 35.0d
+			y: -24.5d
+		}
+		{
+			dependencies: ["68734C70E2D19616"]
+			description: ["The final form of the &6Infinity Catalyst&r. It processes 8 &cDormant Infinity Compound Ingots&r at a time, essentially increasing your &6Infinity Ingot&r output per &6Heart of a Universe&r by &e8x&r."]
+			id: "65B610CF9324F6B2"
+			subtitle: "Spend Monium to make Monium"
+			tasks: [{
+				id: "2A554D0488C990D6"
+				item: "kubejs:serene_infinity_catalyst"
+				type: "item"
+			}]
+			title: "&9Serene Infinity Catalyst"
+			x: 55.0d
+			y: -26.5d
+		}
+		{
+			dependencies: ["0FD9B533BB402B17"]
+			description: [
+				"&9Ruined Hull&r is more abundant than &9Ruined Machine Parts&r but gives less &9Holmium&r overall. "
+				""
+				"It also drops high-end materials such as &6Neutronium&r, &6Tritanium&r, and &6Crystal Matrix Dust&r, although these are mostly irrelevant to you as you already have the &9Creative Quantum Tank.&r"
+			]
+			id: "72996D5B09AC57CF"
+			shape: "hexagon"
+			tasks: [{
+				id: "24211E4714EDB0E9"
+				item: "kubejs:ruined_hull"
+				type: "item"
+			}]
+			x: 45.75d
+			y: -20.25d
+		}
+		{
+			dependencies: ["0FD9B533BB402B17"]
+			description: ["&9Ruined Machine Parts&r provide greater amounts of &9Holmium&r compared to &9Ruined Hull&r."]
+			id: "23F3219BBE486D2E"
+			shape: "hexagon"
+			tasks: [{
+				id: "6A1B3F762DFA4750"
+				item: "kubejs:ruined_machine_parts"
+				type: "item"
+			}]
+			x: 45.75d
+			y: -18.0d
+		}
 	]
 	title: "End Game"
 }

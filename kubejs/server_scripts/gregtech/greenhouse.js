@@ -145,6 +145,106 @@ ServerEvents.recipes(event => {
 
 
     // Flowers
+
+    // Wither Rose
+    Greenhouse('wither_rose', 'minecraft:wither_rose', 1000, '12x minecraft:wither_rose', false)
+    Greenhouse('wither_rose_boosted', 'minecraft:wither_rose', 1000, '24x minecraft:wither_rose', true)
+
+    // Cornflower
+    Greenhouse('cornflower', 'minecraft:cornflower', 1000, '12x minecraft:cornflower', false)
+    Greenhouse('cornflower_boosted', 'minecraft:cornflower', 1000, '24x minecraft:cornflower', true)
+
+    // Torchflower
+    Greenhouse('torchflower', 'minecraft:torchflower', 1000, '12x minecraft:torchflower', false)
+    Greenhouse('torchflower_boosted', 'minecraft:torchflower', 1000, '24x minecraft:torchflower', true)
+
+    // Sunflower
+    Greenhouse('sunflower', 'minecraft:sunflower', 1000, '12x minecraft:sunflower', false)
+    Greenhouse('sunflower_boosted', 'minecraft:sunflower', 1000, '24x minecraft:sunflower', true)
+
+    // Peony
+    Greenhouse('peony', 'minecraft:peony', 1000, '12x minecraft:peony', false)
+    Greenhouse('peony_boosted', 'minecraft:peony', 1000, '24x minecraft:peony', true)
+
+    // Red Tulip
+    Greenhouse('red_tulip', 'minecraft:red_tulip', 1000, '12x minecraft:red_tulip', false)
+    Greenhouse('red_tulip_boosted', 'minecraft:red_tulip', 1000, '24x minecraft:red_tulip', true)
+
+    // Poppy
+    Greenhouse('poppy', 'minecraft:poppy', 1000, '12x minecraft:poppy', false)
+    Greenhouse('poppy_boosted', 'minecraft:poppy', 1000, '24x minecraft:poppy', true)
+
+    // Rose Bush
+    Greenhouse('rose_bush', 'minecraft:rose_bush', 1000, '12x minecraft:rose_bush', false)
+    Greenhouse('rose_bush_boosted', 'minecraft:rose_bush', 1000, '24x minecraft:rose_bush', true)
+
+    // Blue Orchid
+    Greenhouse('blue_orchid', 'minecraft:blue_orchid', 1000, '12x minecraft:blue_orchid', false)
+    Greenhouse('blue_orchid_boosted', 'minecraft:blue_orchid', 1000, '24x minecraft:blue_orchid', true)
+
+    // Orange Tulip
+    Greenhouse('orange_tulip', 'minecraft:orange_tulip', 1000, '12x minecraft:orange_tulip', false)
+    Greenhouse('orange_tulip_boosted', 'minecraft:orange_tulip', 1000, '24x minecraft:orange_tulip', true)
+
+    // Dandelion
+    Greenhouse('dandelion', 'minecraft:dandelion', 1000, '12x minecraft:dandelion', false)
+    Greenhouse('dandelion_boosted', 'minecraft:dandelion', 1000, '24x minecraft:dandelion', true)
+
+    // Pink Tulip
+    Greenhouse('pink_tulip', 'minecraft:pink_tulip', 1000, '12x minecraft:pink_tulip', false)
+    Greenhouse('pink_tulip_boosted', 'minecraft:pink_tulip', 1000, '24x minecraft:pink_tulip', true)
+
+    // Pink Petals
+    Greenhouse('pink_petals', 'minecraft:pink_petals', 1000, '12x minecraft:pink_petals', false)
+    Greenhouse('pink_petals_boosted', 'minecraft:pink_petals', 1000, '24x minecraft:pink_petals', true)
+
+    // Allium
+    Greenhouse('allium', 'minecraft:allium', 1000, '12x minecraft:allium', false)
+    Greenhouse('allium_boosted', 'minecraft:allium', 1000, '24x minecraft:allium', true)
+
+    // Lilac
+    Greenhouse('lilac', 'minecraft:lilac', 1000, '12x minecraft:lilac', false)
+    Greenhouse('lilac_boosted', 'minecraft:lilac', 1000, '24x minecraft:lilac', true)
+
+    // Lily of the Valley
+    Greenhouse('lily_of_the_valley', 'minecraft:lily_of_the_valley', 1000, '12x minecraft:lily_of_the_valley', false)
+    Greenhouse('lily_of_the_valley_boosted', 'minecraft:lily_of_the_valley', 1000, '24x minecraft:lily_of_the_valley', true)
+
+    // Oxeye Daisy
+    Greenhouse('oxeye_daisy', 'minecraft:oxeye_daisy', 1000, '12x minecraft:oxeye_daisy', false)
+    Greenhouse('oxeye_daisy_boosted', 'minecraft:oxeye_daisy', 1000, '24x minecraft:oxeye_daisy', true)
+
+    // Azure Bluet
+    Greenhouse('azure_bluet', 'minecraft:azure_bluet', 1000, '12x minecraft:azure_bluet', false)
+    Greenhouse('azure_bluet_boosted', 'minecraft:azure_bluet', 1000, '24x minecraft:azure_bluet', true)
+
+    // White Tulip
+    Greenhouse('white_tulip', 'minecraft:white_tulip', 1000, '12x minecraft:white_tulip', false)
+    Greenhouse('white_tulip_boosted', 'minecraft:white_tulip', 1000, '24x minecraft:white_tulip', true)  
+
+    // Pitcher Plant
+    Greenhouse('pitcher_plant', 'minecraft:pitcher_plant', 1000, '6x minecraft:pitcher_plant', false)
+    Greenhouse('pitcher_plant_boosted', 'minecraft:pitcher_plant', 1000, '12x minecraft:pitcher_plant', true)  
+    
+    //Cosmetic Stuff
+    // Lily Pad
+    Greenhouse('lily_pad', 'minecraft:lily_pad', 1000, '12x minecraft:lily_pad', false)
+    Greenhouse('lily_pad_boosted', 'minecraft:lily_pad', 1000, '24x minecraft:lily_pad', true)   
+
+    // Vine
+    Greenhouse('vine', 'minecraft:vine', 1000, '12x minecraft:vine', false)
+    Greenhouse('vine_boosted', 'minecraft:vine', 1000, '24x minecraft:vine', true)
+    
+    // Moss
+    Greenhouse('moss_block', 'minecraft:moss_block', 1000, '12x minecraft:moss_block', false)
+    Greenhouse('moss_block_boosted', 'minecraft:moss_block', 1000, '24x minecraft:moss_block', true) 
+	
+	// Thermal Mushroom Spores
+	Greenhouse('slime_spores_boosted', 'thermal:slime_mushroom_spores', 1000, '8x thermal:slime_mushroom_spores', true)
+	Greenhouse('gunpowder_spores_boosted', 'thermal:gunpowder_mushroom_spores', 1000, '8x thermal:gunpowder_mushroom_spores', true)
+	Greenhouse('glowstone_spores_boosted', 'thermal:glowstone_mushroom_spores', 1000, '8x thermal:glowstone_mushroom_spores', true)
+	Greenhouse('redstone_spores_boosted', 'thermal:redstone_mushroom_spores', 1000, '8x thermal:redstone_mushroom_spores', true)
+
 })
 
 ServerEvents.recipes(event => {

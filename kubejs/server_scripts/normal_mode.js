@@ -5,8 +5,11 @@ ServerEvents.recipes(event => {
     const gtMachines = ['extractor', 'macerator', 'compressor', 'forge_hammer', 'furnace', 'alloy_smelter']
     if (isNormalMode) {
         // Moni Steel
-        event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
         event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
+        event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
+        
+        event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
+        event.remove({ id: "gtceu:shapeless/fireclay_dust" })
 
         carbonSources.forEach(carbonSource => {
             event.recipes.gtceu.alloy_smelter("steel_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
@@ -187,7 +190,6 @@ ServerEvents.recipes(event => {
         gtMachines.forEach(machine => {
             event.remove({ output: ['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine] })
         })
-    }
 
     event.shaped(
         'thermal:dynamo_numismatic', [
@@ -214,4 +216,14 @@ ServerEvents.recipes(event => {
         B: "minecraft:bucket"
     }
     )
+    
+    event.remove({ output: 'systeams:stirling_boiler' })
+    event.shapeless('systeams:stirling_boiler', ['steamdynamo:steam_dynamo', 'systeams:boiler_pipe'])
+
+    //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
+    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
+    event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
+}
+
+
 })

@@ -154,6 +154,7 @@ if (Platform.isLoaded('create')) {
             .itemOutputs('create:rose_quartz')
             .duration(200)
             .EUt(16)
+            .circuit(6)
         event.recipes.gtceu.sifter("kubejs:polished_rose_quartz")
             .itemInputs('create:rose_quartz')
             .itemOutputs('create:polished_rose_quartz')
@@ -226,14 +227,14 @@ if (Platform.isLoaded('create')) {
                 .itemInputs(`${owStone[i][0]}:${owStone[i][1]}`)
                 .itemOutputs(`${owStone[i + 1][0]}:${owStone[i + 1][1]}`)
                 .duration(20)
-                .EUt(128)
+                .EUt(32)
         }
         for (let i = 0; i < neStone.length - 1; ++i) {
             event.recipes.gtceu.atomic_reconstruction(`kubejs:stone_reconstruction/${neStone[i][1]}`)
                 .itemInputs(`${neStone[i][0]}:${neStone[i][1]}`)
                 .itemOutputs(`${neStone[i + 1][0]}:${neStone[i + 1][1]}`)
                 .duration(20)
-                .EUt(128)
+                .EUt(32)
         }
         //remove unused recipe types
         event.remove({ type: 'create:pressing' })

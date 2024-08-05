@@ -739,8 +739,8 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         Item.of('minecraft:cow_spawn_egg', 2), [
-        'AA ',
         '   ',
+        'AA ',
         '   '
     ], {
         A: 'kubejs:moni_quarter'

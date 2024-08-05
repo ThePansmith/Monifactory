@@ -4,17 +4,17 @@ ServerEvents.recipes(event => {
             .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + prediction + '"}}').weakNBT())
             .circuit(circuit)
             .itemOutputs(output)
-            .duration(3 * 20) // same for all recipes
+            .duration(60) // same for all recipes
             .EUt(64) // same for all recipes
     }
     if (isNormalMode) {
     ////// Machine Recipe //////
 
     event.recipes.gtceu.assembly_line('loot_superfabricator')
-        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', 'kubejs:heart_of_a_universe', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter', '4x gtceu:wetware_processor_mainframe', 'draconicevolution:draconic_energy_core')
+        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', '#gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter',  'kubejs:abyssal_energy_core')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('gtceu:loot_superfabricator')
-        // requires research (sim chamber with data module)
+        // .stationResearch(b => b.researchStack(Item.of('hostilenetworks:loot_fabricator')).EUt(1966080).CWUt(8192))
         .duration(1200)
         .EUt(1966080)
         
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     fabricator('creeper', 3, '32x minecraft:coal')
     fabricator('ender_dragon', 1, 'minecraft:dragon_breath')
     fabricator('ender_dragon', 2, 'kubejs:dragon_lair_data')
-    fabricator('ender_dragon', 3, 'armorplus:ender_dragon_scale')
+    fabricator('ender_dragon', 3, 'kubejs:ender_dragon_scale')
     fabricator('enderman', 1, '6x minecraft:ender_pearl')
     fabricator('enderman', 2, '6x minecraft:emerald')
     fabricator('enderman', 3, '2x enderio:enderman_head')
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     fabricator('guardian', 3, '64x minecraft:cod')
     fabricator('guardian', 4, '8x minecraft:gold_ingot')
     fabricator('guardian', 5, '12x gtceu:aluminium_dust')
-    fabricator('guardian', 6, '4x armorplus:guardian_scale')
+    fabricator('guardian', 6, '4x kubejs:guardian_scale')
     fabricator('shulker', 1, '6x minecraft:shulker_shell')
     fabricator('shulker', 2, '6x minecraft:diamond')
     fabricator('skeleton', 1, '64x minecraft:arrow')
@@ -60,11 +60,14 @@ ServerEvents.recipes(event => {
     fabricator('thermal/thermal_elemental', 4, '8x thermal:blitz_rod')
     fabricator('thermal/thermal_elemental', 5, '8x thermal:basalz_rod')
     fabricator('thermal/thermal_elemental', 6, '8x thermal:blizz_rod')
+    fabricator('warden', 1, 'minecraft:sculk_catalyst')
+    fabricator('warden', 2, 'kubejs:deep_dark_data')
+    fabricator('warden', 3, 'kubejs:warden_horn')
     fabricator('witch', 1, '16x minecraft:redstone')
     fabricator('witch', 2, '16x minecraft:glowstone_dust')
     fabricator('witch', 3, '16x minecraft:sugar')
     fabricator('wither', 1, 'kubejs:wither_realm_data')
-    fabricator('wither', 2, 'armorplus:wither_bone')
+    fabricator('wither', 2, 'kubejs:wither_bone')
     fabricator('wither_skeleton', 1, 'minecraft:wither_skeleton_skull')
     fabricator('wither_skeleton', 2, '12x gtceu:lead_ingot')
     fabricator('zombie', 1, '64x minecraft:rotten_flesh')

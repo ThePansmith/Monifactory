@@ -30,21 +30,6 @@ ServerEvents.recipes(event => {
     }
     )
 
-    //End Cake
-
-    event.shaped(
-        'telepastries:end_cake', [
-        'NNN',
-        'OBO',
-        'SSS'
-    ], {
-        N: 'gtceu:endstone_dust',
-        O: 'minecraft:ender_eye',
-        B: "enderio:cake_base",
-        S: 'gtceu:black_steel_plate'
-    }
-    )
-
     //Void Cake
 
     event.shaped(
@@ -74,8 +59,20 @@ ServerEvents.recipes(event => {
             S: "minecraft:soul_sand"
         }
         )
+    event.shaped(
+        'telepastries:end_cake', [
+        'NNN',
+        'OBO',
+        'SSS'
+    ], {
+        N: 'gtceu:endstone_dust',
+        O: 'minecraft:ender_eye',
+        B: "enderio:cake_base",
+        S: 'gtceu:black_steel_plate'
     }
-    if (isExpertMode) {
+    )
+    }
+    if (isHardMode) {
         event.shaped(
             "telepastries:nether_cake", [
             'NNN',
@@ -86,6 +83,18 @@ ServerEvents.recipes(event => {
             O: "minecraft:obsidian",
             B: "enderio:cake_base",
             S: "minecraft:gold_block"
+        }
+        )
+        event.shaped(
+            'telepastries:end_cake', [
+            'NNN',
+            'OBO',
+            'SSS'
+        ], {
+            N: 'gtceu:uraninite_dust',
+            O: 'minecraft:ender_eye',
+            B: "enderio:cake_base",
+            S: 'gtceu:black_steel_plate'
         }
         )
     }

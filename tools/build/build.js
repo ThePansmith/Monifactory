@@ -25,6 +25,7 @@ Juke.setup({ file: import.meta.url }).then((code) => {
 const includeList = [
   "config",
   "defaultconfigs",
+  "config-overrides",
   "kubejs",
   "mods"
 ]
@@ -65,6 +66,8 @@ async function packMod(group) {
   fs.copyFileSync('manifest.json', `dist/.tmp/${group}/manifest.json`)
   fs.copyFileSync('dist/modlist.html', `dist/.tmp/${group}/modlist.html`)
   fs.copyFileSync('LICENSE.md', `dist/.tmp/${group}/LICENSE.md`)
+  fs.copyFileSync('pack-mode-switcher.bat', `dist/.tmp/${group}/overrides/pack-mode-switcher.bat`)
+  fs.copyFileSync('pack-mode-switcher.sh', `dist/.tmp/${group}/overrides/pack-mode-switcher.sh`)
 
   try {
     if (process.platform === 'win32') {
@@ -89,7 +92,9 @@ async function packMod(group) {
         'overrides',
         'manifest.json',
         'modlist.html',
-        'LICENSE.md'
+        'LICENSE.md',
+        'pack-mode-switcher.bat',
+        'pack-mode-switcher.sh'
       ])
       return;
     }
@@ -262,7 +267,12 @@ export const BuildServerTarget = new Juke.Target({
       const fillet = file.toLowerCase();
       return (
         !fillet.includes('oculus')
+        && !fillet.includes('zume')
+        && !fillet.includes('watermedia')
+        && !fillet.includes('embeddium')
+        && !fillet.includes('embeddiumplus')
         && !fillet.includes('citresewn')
+        && !fillet.includes('legendarytooltips')
         && fillet.includes('.jar')
       )
     })

@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/netherite/casing_ctm"
+    }
+}

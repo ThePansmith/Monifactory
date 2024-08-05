@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
     ], {
         S: 'gtceu:black_steel_plate',
         L: 'extendedcrafting:luminessence',
-        A: 'gtceu:osmiridium_plate',
+        A: 'gtceu:hssg_plate',
         B: 'extendedcrafting:crystaltine_ingot'
     })
 
@@ -155,8 +155,20 @@ ServerEvents.recipes(event => {
         E: 'extendedcrafting:elite_catalyst',
         C: 'extendedcrafting:elite_component',
         T: 'extendedcrafting:advanced_table'
-    }, 2
+    }
     )
+    event.shaped(
+        '2x extendedcrafting:elite_table', [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'gtceu:aluminium_block',
+            B: 'extendedcrafting:elite_catalyst',
+            C: 'extendedcrafting:elite_table'
+        }
+    ).id('elite_table_dupe')
+
     event.remove({ output: 'extendedcrafting:ultimate_table' })
     event.recipes.extendedcrafting.shaped_table(
         'extendedcrafting:ultimate_table', [
@@ -174,8 +186,21 @@ ServerEvents.recipes(event => {
         U: 'extendedcrafting:ultimate_component',
         R: 'extendedcrafting:crystaltine_component',
         T: 'extendedcrafting:elite_table'
-    }, 3
+    }
     )
+    event.shaped(
+        '2x extendedcrafting:ultimate_table', [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'minecraft:emerald_block',
+            B: 'extendedcrafting:ultimate_catalyst',
+            C: 'extendedcrafting:ultimate_table'
+        }
+    ).id('ultimate_table_dupe')
+
+
     event.remove({ output: 'extendedcrafting:epic_table' })
     event.recipes.extendedcrafting.shaped_table(
         'extendedcrafting:epic_table', [
@@ -195,8 +220,19 @@ ServerEvents.recipes(event => {
         U: 'extendedcrafting:epic_component',
         R: 'extendedcrafting:crystaltine_component',
         T: 'extendedcrafting:ultimate_table'
-    }, 4
+    }
     )
+    event.shaped(
+        '2x extendedcrafting:epic_table', [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: '#forge:storage_blocks/netherite',
+            B: 'extendedcrafting:epic_catalyst',
+            C: 'extendedcrafting:epic_table'
+        }
+    ).id('epic_table_dupe')
 
     event.remove({ output: 'extendedcrafting:crafting_core' })
     event.shaped(
@@ -235,7 +271,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.combination(
         "gtceu:diamatine_empowered_block",
-        "gtceu:diamatine_block", ["extendedcrafting:ender_star", "extendedcrafting:crystaltine_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:nitrogen_dioxide"}}').weakNBT(), "extendedcrafting:crystaltine_component"],
+        "gtceu:diamatine_block", ["kubejs:endest_star", "extendedcrafting:crystaltine_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:nitrogen_dioxide"}}').weakNBT(), "extendedcrafting:crystaltine_component"],
         4000000, 400000
     )
 
@@ -281,7 +317,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('8x extendedcrafting:luminessence')
         .duration(20)
         .EUt(30)
-
 
 
 

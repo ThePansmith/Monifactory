@@ -21,8 +21,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("dilithium")
         .dust()
+        .ore(2, 1)
         .color(0xd1b5b4)
         .iconSet(GTMaterialIconSet.CERTUS)
+        .components('2x lithium')
+        .addOreByproducts('lithium', 'cobalt', 'platinum')
+
 })
 
 //PERFECT GEMS
@@ -144,9 +148,27 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xbbddbd)
         .iconSet('elemental_reduction_fluid')
+
+    event.create("dragon_breath")
+        .fluid()
+		.color(0xFF6AB9)  
+
+    event.create("jean_gasoline")
+        .fluid()
+		.color(0xF16AA5)
         
-        event.create('holmium_oxide')
+    event.create('holmium_oxide')
         .dust()
         .color(0xD29092)
         .components('2x holmium', '3x oxygen')
+
 })
+
+GTCEuStartupEvents.materialModification(event => {
+    GTMaterials.RhodiumPlatedPalladium.setComponents("3x palladium", "1x rhodium", "2x lumium")
+    GTMaterials.RhodiumPlatedPalladium.setFormula('Pd3Rh(SnFe)4(CuAg4)2', true)
+
+    GTMaterials.Glowstone.setComponents("1x tricalcium_phosphate", "1x gold")
+    GTMaterials.Glowstone.setFormula('AuCa3(PO4)2', true)
+})
+

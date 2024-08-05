@@ -12,10 +12,10 @@ ServerEvents.recipes(event => {
     ////// Machine Recipe //////
 
     event.recipes.gtceu.assembly_line('simulation_supercomputer')
-        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:sim_chamber', 'kubejs:heart_of_a_universe', '2x gtceu:uv_robot_arm', '2x gtceu:uv_field_generator', '4x gtceu:wetware_processor_mainframe', 'draconicevolution:draconic_energy_core')
+        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:sim_chamber', '#gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_field_generator', 'kubejs:abyssal_energy_core')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('gtceu:simulation_supercomputer')
-        // requires research (sim chamber with data module)
+        // .stationResearch(b => b.researchStack(Item.of('hostilenetworks:simulaton_chamber')).EUt(1966080).CWUt(8192))
         .duration(1200)
         .EUt(1966080)
         
@@ -37,5 +37,6 @@ ServerEvents.recipes(event => {
     supercomp('wither', 'end', 1666)
     supercomp('creeper', 'overworld', 16)
     supercomp('enderman', 'end', 512)
+    supercomp('warden', 'end', 1666)
 }
 })

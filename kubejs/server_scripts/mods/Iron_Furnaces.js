@@ -81,15 +81,13 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         'ironfurnaces:netherite_furnace', [
-            'ACA',
-            'BDB',
-            'AEA'
+            'ABA',
+            'BCB',
+            'ABA'
         ], {
-            A: '#forge:cobblestone/normal', //FIXME
-            B: 'minecraft:netherite_ingot',
-            C: 'minecraft:magma_block',
-            D: 'ironfurnaces:obsidian_furnace',
-            E: 'minecraft:magma_cream'
+            A: 'gtceu:black_steel_ingot',
+            B: 'ironfurnaces:obsidian_furnace',
+            C: 'gtceu:black_steel_block'
         }
     )
 
@@ -117,4 +115,79 @@ ServerEvents.recipes(event => {
             I: "minecraft:iron_ingot"
         }
     )
+
+    // Assembler Recipes for Iron Furnaces
+    event.recipes.gtceu.assembler('kubejs:stone_to_iron_furnace')
+    .itemInputs('minecraft:furnace', '4x gtceu:iron_plate')
+    .itemOutputs('ironfurnaces:iron_furnace')
+    .duration(200)
+    .EUt(30)
+    .circuit(8)
+
+    event.recipes.gtceu.assembler('kubejs:stone_to_copper_furnace')
+    .itemInputs('minecraft:furnace', '4x gtceu:iron_plate', '4x gtceu:copper_plate')
+    .itemOutputs('ironfurnaces:copper_furnace')
+    .duration(200)
+    .EUt(30)
+    .circuit(8)
+
+    var stonefurnaceupgrade = [
+        ['silver', 'iron', 'copper', 'silver'],
+        ['gold', 'copper', 'silver', 'gold'],
+        ['diamond', 'silver', 'gold', 'diamond'],
+
+    ]
+
+    stonefurnaceupgrade.forEach(([tier, mat1, mat2, mat3]) => {
+        event.recipes.gtceu.assembler('kubejs:stone_to_' + tier + '_furnace')
+        .itemInputs('minecraft:furnace', `2x gtceu:${mat1}_plate`, `4x gtceu:${mat2}_plate`, `4x gtceu:${mat3}_plate`)
+        .itemOutputs(`ironfurnaces:${tier}_furnace`)
+        .duration(300)
+        .EUt(30)
+        .circuit(8)
+        })
+
+    event.recipes.gtceu.assembler('kubejs:stone_to_obsidian_furnace')
+    .itemInputs('2x minecraft:furnace', '4x gtceu:gold_plate', '8x gtceu:diamond_plate', '4x gtceu:obsidian_plate')
+    .itemOutputs('ironfurnaces:obsidian_furnace')
+    .duration(400)
+    .EUt(30)
+    .circuit(8)
+
+    event.recipes.gtceu.assembler('kubejs:stone_to_netherite_furnace')
+    .itemInputs('4x minecraft:furnace', '16x gtceu:diamond_plate', '16x gtceu:obsidian_plate', 'gtceu:black_steel_block', '4x gtceu:black_steel_plate')
+    .itemOutputs('ironfurnaces:netherite_furnace')
+    .duration(500)
+    .EUt(30)
+    .circuit(8)
+
+    var furnaceupgrade = [
+        ['copper', 'iron'],
+        ['silver', 'copper'],
+        ['gold', 'silver'],
+        ['diamond', 'gold'],
+    ]
+
+    furnaceupgrade.forEach(([tier, mat1]) => {
+        event.recipes.gtceu.assembler('kubejs:' + mat1 + '_to_' + tier + '_furnace')
+        .itemInputs(`ironfurnaces:${mat1}_furnace`, `4x gtceu:${tier}_plate`)
+        .itemOutputs(`ironfurnaces:${tier}_furnace`)
+        .duration(300)
+        .EUt(30)
+        .circuit(4)
+        })
+
+    event.recipes.gtceu.assembler('kubejs:diamond_to_obsidian_furnace')
+    .itemInputs('2x ironfurnaces:diamond_furnace', '4x gtceu:obsidian_plate')
+    .itemOutputs('ironfurnaces:obsidian_furnace')
+    .duration(200)
+    .EUt(30)
+    .circuit(4)
+
+    event.recipes.gtceu.assembler('kubejs:obsidian_to_netherite_furnace')
+    .itemInputs('4x ironfurnaces:obsidian_furnace', 'gtceu:black_steel_block', '4x gtceu:black_steel_plate')
+    .itemOutputs('ironfurnaces:netherite_furnace')
+    .duration(200)
+    .EUt(30)
+    .circuit(4)
 })

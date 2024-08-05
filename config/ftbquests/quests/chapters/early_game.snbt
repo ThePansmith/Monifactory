@@ -5,7 +5,7 @@
 	group: ""
 	icon: "gtceu:advanced_integrated_circuit"
 	id: "7041EC01A69404E6"
-	order_index: 6
+	order_index: 5
 	quest_links: [
 		{
 			id: "7471AD069CC1E5EC"
@@ -628,35 +628,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"The &3Chemical Bath&r is mainly used as an ore processing machine to extract byproducts from specific &6Crushed Ores&r with either &9Sodium Persulfate&r or &9Mercury&r. It can also dye items, as well as perform some specialised processes."
-				""
-				"For now, you will need it to cool down &6Hot Kanthal Ingots&r and &6Hot Silicon Ingots&r with &9Water&r. &9Distilled Water&r can accelerate this process if you have it."
-				""
-				"Are you facing a shortage of &6Gold&r? This can net you some extra Gold by bathing &6Crushed Ores&r in &9Mercury&r, or &6Crushed Iron Ore&r in &9Sodium Persulfate&r."
-			]
-			hide_dependency_lines: true
-			id: "09A389EC37805A0A"
-			rewards: [{
-				id: "75DC3EB5DFF16867"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "32EC35083D4C7C82"
-				item: "gtceu:mv_chemical_bath"
-				type: "item"
-			}]
-			title: "MV Chemical Bath"
-			x: -1.0d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"09A389EC37805A0A"
-				"776199B37A19A592"
-			]
+			dependencies: ["776199B37A19A592"]
 			description: [
 				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
 				""
@@ -809,7 +781,7 @@
 			description: [
 				"&2Assembling Machines come early in CEu! Circuit recipes are handled through a separate machine, the Circuit Assembler. &r"
 				""
-				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck &EMI&r for all the components you've been making to see if the Assembler can improve their recipes."
+				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck EMI&r for all the components you've been making to see if the Assembler can improve their recipes."
 				""
 				"Many of the Assembler's recipes require &9fluids&r. Hence, the &3Extractor&r will be required to take full advantage of this machine. "
 				""
@@ -1008,6 +980,7 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["1A30472430354F1E"]
 			description: ["An advanced component used for the Circuit Assembling Machine."]
 			id: "3E42B4AAA6D2A05B"
 			rewards: [{
@@ -1152,7 +1125,7 @@
 				""
 				"It's a 3x3x3 multiblock machine capable of &esmelting huge amounts of items per second&r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second."
 				""
-				"Shift and hover over different coil blocks: they tell you the number of items a Multi Smelter can smelt per operation: &e32 items per level&r. The most basic Multi Smelter essentially does 32 items in the same time as a furnace does one. With a set of &6Tungstensteel&r coil blocks, that jumps to 128 items per operation."
+				"Shift and hover over different coil blocks: they tell you the number of items a Multi Smelter can smelt per operation: &e32 items per level&r. The most basic Multi Smelter essentially does 32 items in the same time as a furnace does one. With a set of &9RTM Alloy&r coil blocks, that jumps to 128 items per operation."
 				""
 				"This quest doesn't ask for coils, hatches or buses: feel free to choose whatever combination you want. You'll need &a8 coil blocks&r, &a1 input bus&r, &a1 output bus&r, and &21 maintenance hatch&r, &21 muffler hatch&r, and at least &a1 energy hatch&r, all of any tier."
 				""
@@ -2134,7 +2107,7 @@
 		}
 		{
 			dependencies: ["64F45D98FA48D834"]
-			description: ["Two &aCapacitor Banks&r can be grafted together with a &6Double-Layer Capacitor&r and &6Electrical Steel&r to create an &aAdvanced Capacitor Bank&r, which stores five times as much RF as the basic bank."]
+			description: ["Two &aCapacitor Banks&r can be grafted together with a &6Double-Layer Capacitor&r and &6Electrical Steel&r to create an &aAdvanced Capacitor Bank&r, which stores four times as much RF as the basic bank."]
 			id: "09EED0C4106265BC"
 			rewards: [{
 				id: "452D3826F2B6022F"
@@ -2155,7 +2128,7 @@
 				"09EED0C4106265BC"
 				"73C1AB31431B5C11"
 			]
-			description: ["Two &aAdvanced Capacitor Banks&r can be grafted together with a &6Vibrant Crystal&r and &6Vibrant Alloy Plates&r to create a &aVibrant Capacitor Bank&r, which stores five times as much RF as the advanced bank, for a total of twenty-five times as much as the basic bank."]
+			description: ["Two &aAdvanced Capacitor Banks&r can be grafted together with a &6Vibrant Crystal&r and &6Vibrant Alloy Plates&r to create a &aVibrant Capacitor Bank&r, which stores four times as much RF as the advanced bank, for a total of sixteen times as much as the basic bank."]
 			id: "5B0CFF0E0233E98F"
 			rewards: [{
 				id: "46C624ED7E126EDD"
@@ -2216,8 +2189,8 @@
 				"IV - Lumium "
 				"LuV - Signalum "
 				"ZPM - Enderium "
-				"UV - Draconium "
-				"MAX - &2Draconic Superconductor&r, Omnium"
+				"UV - cryolobus "
+				"MAX - &2kubejs Superconductor&r, Omnium"
 				""
 				"&2There are an additional set of superconductors, one for each tier, which are the CEu default superconductors. Their advantage is their higher amperage rating, reaching the hundreds of amps for higher tier 16x wires. They are also used in crafting Field Generators. They are:"
 				""
@@ -2347,6 +2320,29 @@
 			title: "&9Steam Separator"
 			x: 3.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1E498F509DB1D460"
+				"1BC8DBBBBB1E17E4"
+			]
+			description: ["The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."]
+			id: "74BD1A246B9CF784"
+			rewards: [{
+				count: 2
+				id: "337976C834A2A48E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			subtitle: "I'm running out of MCU puns."
+			tasks: [{
+				id: "3240962B7D1154AF"
+				item: "better_angel_ring:angel_ring"
+				type: "item"
+			}]
+			title: "&9Captain... Marvel? IDK"
+			x: 17.5d
+			y: 25.0d
 		}
 	]
 	title: "Early Game"

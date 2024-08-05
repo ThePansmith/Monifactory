@@ -5,7 +5,7 @@
 	group: ""
 	icon: "nuclearcraft:plutonium_rtg"
 	id: "7D825FFA33DC85A7"
-	order_index: 8
+	order_index: 7
 	quest_links: [
 		{
 			id: "4864F8F7C33860D9"
@@ -59,6 +59,19 @@
 			size: 2.0d
 			x: 17.5d
 			y: 12.5d
+		}
+		{
+			id: "4E96C0A741972F9E"
+			linked_quest: "74469710D910C19D"
+			x: 38.5d
+			y: 15.5d
+		}
+		{
+			id: "24A33B6D4DE6DB8F"
+			linked_quest: "70D9B3C6539720DE"
+			size: 1.5d
+			x: 35.5d
+			y: 15.5d
 		}
 	]
 	quests: [
@@ -485,7 +498,7 @@
 				""
 				"Unfortunately, it is super hot. You'll need to cool it in a &3Vacuum Freezer&r for it to be usable."
 				""
-				"You should have set up a &3Vaccum Freezer&r for &6Kanthal&r, but if you haven't done it yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set an Ore Dictionary Storage Bus on the input bus of the freezer, set it to 'ingotHot*', and set it to a high piority. This will accept any new Hot Ingots entering you're system, and eliminates the need for a big conduit network."
+				"You should have set up a &3Vaccum Freezer&r for &6Kanthal&r, but if you haven't done it yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set an Ore Dictionary Storage Bus on the input bus of the freezer, set it to 'forge:hot_ingots', and set it to a high piority. This will accept any new Hot Ingots entering you're system, and eliminates the need for a big conduit network."
 				""
 				"Don't encode the Hot Ingot in a pattern though!"
 			]
@@ -648,9 +661,11 @@
 				"&6* Tungstate Ore"
 				"&6* Radium Salt&r"
 				""
-				"As well as the &6Stellar Creation Data&r, which will be useful much, much later."
+				"It is also a primary source of &6Stellar Creation Data&r, which will be useful much, much later."
 				""
-				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, as of the useful byproducts you get, and the tiny amount of each element you get in this mission."
+				"When you eventually obtain the &aAdvanced Microverse Projector II&r, this Micro Miner can perform a mission that gives you large amounts of &6Dilithium Ore&r, as well as &6Certus Quartz, Nether Quartz, and Monazite Ore.&r"
+				""
+				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, as of the useful byproducts you get, and the tiny amount of each element you get in this mission.&r"
 			]
 			id: "53C00EA9D9BEE776"
 			rewards: [{
@@ -743,14 +758,13 @@
 			dependencies: [
 				"061904A6FEED5B66"
 				"776199B37A19A592"
-				"09A389EC37805A0A"
 			]
 			description: [
 				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
 				""
 				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Kanthal Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Chemical Bath&r or &3Vacuum Freezer&r."
 				""
-				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Ore Dictionary Filter&r set to 'ingotHot*' with a high piority."
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Ore Dictionary Filter&r set to 'forge:hot_ingots' with a high piority."
 			]
 			id: "74832ED7B78A6AEA"
 			rewards: [{
@@ -1281,7 +1295,7 @@
 			description: [
 				"&9Diesel&r is a mixture of &9Light Fuel&r and &9Heavy Fuel&r."
 				""
-				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6Draconium &2(unless you use Gasoline instead)."
+				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6cryolobus &2(unless you use Gasoline instead)."
 				""
 				"The performance of Combustion Generators is also improved, but you probably want to refine Diesel anyway."
 				""
@@ -1475,7 +1489,7 @@
 		{
 			dependencies: ["21B16C005E9E3B0E"]
 			description: [
-				"&2Gasoline is a powerful combustion fuel, generating 1600 EU per mB of fluid. It can also be substituted for Cetane-Boosted Diesel in Draconium production."
+				"&2Gasoline is a powerful combustion fuel, generating 1600 EU per mB of fluid. It can also be substituted for Cetane-Boosted Diesel in cryolobus production."
 				""
 				"Gasoline is made of:"
 				"- 16 parts Naphtha"
@@ -1507,7 +1521,7 @@
 		{
 			dependencies: ["4C76017864258EA9"]
 			description: [
-				"&2High-Octane Gasoline is the most powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in Draconium production, using 75%% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
+				"&2High-Octane Gasoline is a even more powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in cryolobus production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
 				""
 				"To refine Gasoline to High-Octane Gasoline, you will need:"
 				"- 20 parts Gasoline"
@@ -1588,7 +1602,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
+			dependencies: ["038D06BCA022C1BF"]
 			description: [
 				"You will need either &9Seed Oil&r or &9Fish Oil&r in the process of creating &9Biodiesel&r, created by extracting seeds or fish."
 				""
@@ -1765,7 +1779,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "74CFD980F2E43686"
-				item: "gtceu:tungsten_carbide_plate"
+				item: "gtceu:double_tungsten_carbide_plate"
 				type: "item"
 			}]
 			title: "&2Tungsten Carbide Double Plates"
@@ -1774,11 +1788,7 @@
 		}
 		{
 			dependencies: ["14F1FF4656693711"]
-			description: [
-				"The &3Crafting Core&r is used to convert special crystalline materials into empowered variants."
-				""
-				"&5Currently, AA has not been completely ported to 1.20.1, in the meantime, you get the better option for empowerment from the get go!"
-			]
+			description: ["The &3Crafting Core&r is used to convert special crystalline materials into empowered variants."]
 			icon: "extendedcrafting:crafting_core"
 			id: "49C8716030809478"
 			rewards: [{
@@ -1821,7 +1831,18 @@
 				"&6* Redstone Ore"
 				"&6* Certus Quartz Ore"
 				"&6* Almandine Ore"
-				"&6* Lepidolite Ore&r"
+				"&6* Lepidolite Ore"
+				"&2* Cobaltite Ore"
+				"&2* Laurite Ore"
+				"&2* Cuprorhodsite Ore&r"
+				""
+				"Or with a Super Chest III:"
+				"&6* Salt Ore"
+				"&2* Barite Ore"
+				"&2* Neodymium Ore"
+				"&2* Apatite Ore"
+				"&2* Chromite Ore"
+				"&2* Pyrope Ore"
 				""
 				"When equipped with Gemstone Sensor:"
 				"&2* Perfect Diamonds"
@@ -1831,6 +1852,8 @@
 				"&6* Sapphire Ore"
 				"&6* Silver Ore"
 				"&6* Gold Ore"
+				""
+				"The Tier Three Micro Miner will also be used to obtain &2Netherite&r in the endgame."
 			]
 			id: "664107ED03A944CD"
 			rewards: [{
@@ -2052,7 +2075,7 @@
 				""
 				"&6Molybdenum&r is obtained from &6Molybdenum, Molybdenite, Powellite, and Wulfenite ores&r. They spawn together in the &eNether&r rarely, or some of them come from &3Tier One&r and &3Five Micro Miners&r."
 				""
-				"&2Remember, you need an appropriately tiered Mixer (HV for HSLA Steel, and EV for the others)."
+				"&2Remember, you need an appropriately tiered Mixer (HV for HSLA Steel, and IV for the others)."
 			]
 			id: "7F1EE712BD9CC811"
 			rewards: [{
@@ -2135,7 +2158,7 @@
 				""
 				"&rThese are formed like multiblocks. You can add a &3Parallel Control Hatch&r in order to allow them to process &9more recipes&r at the same time, similarly to a &3Processing Array&r. The highest tier of Parallel Control Hatch can facilitate processing &9256 recipes&r at once!"
 				""
-				"&9In Modern, Gregicality Multiblocks was folded into the main mod.&r"
+				"&9Crafting Co-Processers increase the rate that your ME network will \"push\" batches of items out, perfect for machines like these.&r"
 				""
 				"Look up the usages of Parallel Hatches in EMI to see details of all the multiblock machines."
 				""
@@ -2255,9 +2278,9 @@
 		{
 			dependencies: ["605062720747B482"]
 			description: [
-				"&2This is the highest tier of polymer. It is used in crafting Advanced SMD components, ZPM+ Machine Hulls, among other things."
+				"This is the highest tier of polymer. It is used in crafting &2Advanced SMD components and ZPM+ Machine Hulls,&r among other things."
 				""
-				"This polymer requires at least 14 processing steps to craft. Good luck!"
+				"This polymer can require up to &914 steps&r to create from scratch, but multiple steps are able to be skipped through distillation of various liquids. &6Check what steps you can easily skip!&r"
 			]
 			icon: "gtceu:polybenzimidazole_bucket"
 			id: "51A463024F35DC2E"
@@ -2300,8 +2323,6 @@
 			dependencies: ["072DB633006E78B7"]
 			description: [
 				"Glowing! &2But all the GTCEu machines glow already, so...&r"
-				""
-				"This one takes a significant amount of time to cook, so make sure to have it going constantly."
 				""
 				"Wires made from &6Lumium&r transmit IV power losslessly, and it forms part of the basis for &6LuV Machine Hulls&r."
 			]
@@ -2502,30 +2523,6 @@
 			}]
 			x: 28.5d
 			y: 12.0d
-		}
-		{
-			dependencies: ["1E498F509DB1D460"]
-			description: [
-				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
-				""
-				"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in the next jetpack, so if you want that you'll need to make one eventually."
-			]
-			id: "09002E8DD1A359AD"
-			rewards: [{
-				count: 2
-				id: "3F2F66C14E5AC440"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			subtitle: "I'm running out of MCU puns."
-			tasks: [{
-				id: "3BBA27F180D57286"
-				item: "better_angel_ring:angel_ring"
-				type: "item"
-			}]
-			title: "&9Captain... Marvel? IDK"
-			x: 27.0d
-			y: 13.5d
 		}
 		{
 			dependencies: ["53EC3831D66769CA"]
@@ -3024,14 +3021,14 @@
 				""
 				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster. Alternatively, reactors can be designed to produce a decent amount of power for the mid game of the pack."
 				""
-				"First, set up your 150 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 5x5x5 space."
-				""
-				"TODO: actually doublecheck that below is still true lol"
+				"First, set up your 150 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r. The Casings should  cover the faces of the interior cube, as well as the edges or corners. You should have exactly the right number of Casings to encase a 5x5x5 space."
+				"{@pagebreak}"
 				""
 				"Next, create a hole so you can get inside the cube. Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
 				""
 				"Finally, place the &3Fission Reactor Controller&r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong."
 				""
+				"{@pagebreak}"
 				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
 				""
 				"Info on what exactly you are going to be doing with you fancy new reactor can be found in the &bFission and Fusion&r Chapter."
@@ -3040,7 +3037,7 @@
 			id: "745628397790ED7A"
 			rewards: [{
 				id: "0F6CC38788229FC4"
-				item: "kubejs:moni_nickel"
+				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -3060,7 +3057,7 @@
 				"10C4A6FF23A4DF17"
 			]
 			description: [
-				"Mixing &9Diesel&r (or less efficiently, &9Bio Diesel&r) with &9Tetranitromethane&r in an &3HV Mixer&r &2or Large Chemical Reactor&r produces &2Cetane-Boosted Diesel&r, an extremely potent fuel needed later for &6Draconium&r production."
+				"Mixing &9Diesel&r (or less efficiently, &9Bio Diesel&r) with &9Tetranitromethane&r in an &3HV Mixer&r &2or Large Chemical Reactor&r produces &2Cetane-Boosted Diesel&r, an extremely potent fuel needed later for &6cryolobus&r production."
 				""
 				"If you have a very robust petrochemical infrastructure and can afford to burn it, this fuel along with proper oxygenation &2is a potent fuel in the Large Combustion Engine and Extreme Combustion Engine, producing &2720 EU/mB of fuel."
 			]
@@ -3144,6 +3141,73 @@
 			title: "&2Cracker"
 			x: 47.0d
 			y: -4.5d
+		}
+		{
+			dependencies: [
+				"745628397790ED7A"
+				"07482E45FCEE7937"
+			]
+			description: [
+				"While you could simply just extract power from the reactor and call it a day, you might find better luck in taking advantage of its ability to &esuperheat&r water into &9High Pressure Steam&r."
+				""
+				"&9Large Steam Turbines&r are best equiped for this, being able to use &eRotor Holders&r and &eTurbines&r to produce large amounts of power from High Pressure Steam."
+				""
+				"[\"The \", {\"text\": \"Large Turbines\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0F779BEEED8E67BB\" } },\" quest goes into more detail on how exactly these large turbines work.\"]"
+			]
+			icon: "gtceu:steam_large_turbine"
+			id: "69034B168B5134ED"
+			rewards: [{
+				count: 3
+				id: "05A240B35081D3F6"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1CB0BAF39BD9486E"
+					item: "gtceu:steam_large_turbine"
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "1BE09907EC7CAAB0"
+					item: "gtceu:steel_turbine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "31B29F8245043671"
+					item: { Count: 2b, id: "gtceu:steel_gearbox" }
+					type: "item"
+				}
+			]
+			title: "&9High Pressure Steam"
+			x: 47.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["2CC50101A39EA2C0"]
+			description: [
+				"&9JEAN Gasoline is the most powerful combustion fuel, using some anomalous ingredients to generate a staggering 81920 EU per mB of fuel. The trade-off is the extremely complex processing lines you must set up for it."
+				""
+				"To refine High-Octane Gasoline, to JEAN Gasoline, you will need:"
+				"- 8 parts High Octane Gasoline"
+				"- 5 parts Rocket Fuel"
+				"- 2 parts Cholorine Triflorine"
+				"- 1 part Tetraethyllead"
+				"- 1 part dragon's breath"
+				""
+				"To get the most out of this, run it in an Extreme Combustion Engine with Liquid Oxygen."
+			]
+			id: "053DDDCD2505E20B"
+			tasks: [{
+				id: "6E961DB62F3D14AF"
+				item: "gtceu:jean_gasoline_bucket"
+				type: "item"
+			}]
+			title: "&9JEAN Gasoline"
+			x: 49.0d
+			y: 1.5d
 		}
 	]
 	title: "Mid Game"

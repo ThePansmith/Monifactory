@@ -30,8 +30,9 @@
 		{
 			id: "63280C5F37A22345"
 			linked_quest: "2EBB9A154522348F"
+			size: 2.0d
 			x: 9.0d
-			y: 12.75d
+			y: 13.0d
 		}
 		{
 			id: "2D26C83F2B01F12D"
@@ -832,7 +833,6 @@
 		}
 		{
 			dependencies: [
-				"2358A5CF22FF5495"
 				"7E3A179376673590"
 				"0B6196692F9E176D"
 			]
@@ -856,7 +856,6 @@
 		}
 		{
 			dependencies: [
-				"2358A5CF22FF5495"
 				"7E3A179376673590"
 				"56EFA6A07C7291F7"
 				"6391447F1A411281"
@@ -927,7 +926,6 @@
 			dependencies: [
 				"061904A6FEED5B66"
 				"776199B37A19A592"
-				"09A389EC37805A0A"
 				"1BC6DDC2D50F9C46"
 			]
 			description: [
@@ -1197,7 +1195,7 @@
 				""
 				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor Mark 2&r using the Duranium and molten &9Titanium&r."
 				""
-				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into the &aCrafting Calculator&r."
+				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into &aEMI&r."
 			]
 			disable_toast: true
 			id: "46CD6750E8963351"
@@ -1213,7 +1211,7 @@
 		}
 		{
 			dependencies: ["46CD6750E8963351"]
-			description: ["&2Tritanium Coils are the final coil material. At 10800K, it's capable of smelting every material."]
+			description: ["&2Tritanium Coils are next coil material. At 10800K, it's capable of smelting nearly every material."]
 			disable_toast: true
 			id: "23A57C125DC0F948"
 			shape: "hexagon"
@@ -1452,105 +1450,139 @@
 		}
 		{
 			dependencies: ["6F5BB99060FF03AC"]
+			description: ["May be worth setting up a line for &9Multidimensional CPU Chip&r Processing."]
 			id: "4EB9D1ADC4814330"
 			tasks: [{
 				id: "2AAFA7BC6C6517A8"
 				item: "kubejs:matter_processor_computer"
 				type: "item"
 			}]
+			title: "&9The Second Tier Nine Circuit"
 			x: 5.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["4612D36D22AB4B34"]
+			description: ["Some of the elements that can be found in &9Scrap Processing&r are used to create this superconductor, funny how the world works."]
 			id: "7704A934F89E4FD9"
 			tasks: [{
 				id: "25F064AE3DC12AA5"
 				item: "kubejs:dimensional_processor_assembly"
 				type: "item"
 			}]
+			title: "&9The Third Tier Nine Circuit"
 			x: 7.25d
 			y: 6.5d
 		}
 		{
-			dependencies: ["4EB9D1ADC4814330"]
+			dependencies: [
+				"4EB9D1ADC4814330"
+				"6F9041F256F517A3"
+			]
+			description: [
+				"Notiably, these mainframes require a HOTU each to craft."
+				""
+				"Don't let that discourge you, though, they also unlock many useful tools to add to your factory."
+			]
 			id: "07057CDE4E021BA7"
 			tasks: [{
 				id: "6F4F2E13D73644F0"
 				item: "kubejs:matter_processor_mainframe"
 				type: "item"
 			}]
+			title: "&9The First Tier Ten Circuit"
 			x: 5.5d
 			y: 8.0d
 		}
 		{
 			dependencies: ["7704A934F89E4FD9"]
+			description: ["At this point, making circuits are beyond second nature for you, so you know what to do."]
 			id: "5E829641B6FE96E5"
 			tasks: [{
 				id: "6AFA814AA43354BE"
 				item: "kubejs:dimensional_processor_computer"
 				type: "item"
 			}]
+			title: "&9The Second Tier Ten Circuit"
 			x: 7.25d
 			y: 8.0d
 		}
 		{
-			dependencies: ["5E829641B6FE96E5"]
+			dependencies: [
+				"5E829641B6FE96E5"
+				"7AF06CB391779388"
+			]
+			description: ["With these circuits, you have unlocked &aUIV&r, the pentultimate voltage. UIV circuits allow you to craft a variety of things to help improve and redefine your base as you push on."]
 			id: "1B1D3A66B847D129"
 			tasks: [{
 				id: "41FE8DE484FF65DD"
 				item: "kubejs:dimensional_processor_mainframe"
 				type: "item"
 			}]
+			title: "&9The First Tier Eleven Circuit"
 			x: 7.25d
 			y: 9.5d
 		}
 		{
-			dependencies: ["0C9A9F33EEA3AB5E"]
-			description: [
-				"&6Monic Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Twelve circuits. Unlike past mainframes, you will need to craft more than just a few of them. They're mostly used in the Endgame though, so you don't have to worry too much yet."
-				""
-				"Definitely consider parallelizing your &3Assembly Lines&r if you haven't already. Even just having two or three lines will vastly improve your production speeds and help avoid bottlenecks as you push towards the Creative Chest."
+			dependencies: [
+				"0C9A9F33EEA3AB5E"
+				"4DED2A24CB1A56F5"
 			]
+			description: ["&6Monic Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Twelve circuits. Unlike past mainframes, you will need to craft more than just a few of them."]
 			id: "5601A05D8361551D"
+			subtitle: "The Final Circuit!"
 			tasks: [{
 				id: "7C6BFAE0BEAADEA4"
 				item: "kubejs:monic_processor_mainframe"
 				type: "item"
 			}]
+			title: "&9The First Tier Twelve Circuit"
 			x: 9.0d
 			y: 11.0d
 		}
 		{
-			dependencies: ["5054D3FA7E96EB83"]
+			dependencies: [
+				"5054D3FA7E96EB83"
+				"1E36AFB19932C805"
+			]
+			description: ["The first circuit to require complex SMDs."]
 			id: "4612D36D22AB4B34"
 			tasks: [{
 				id: "7D7522E4B5D0061A"
 				item: "kubejs:dimensional_processor"
 				type: "item"
 			}]
+			title: "&9The Fourth And Final Tier Eight Circuits"
 			x: 7.25d
 			y: 5.0d
 		}
 		{
 			dependencies: ["248ABB7F26EB72EE"]
+			description: ["Now with superconductors!"]
 			id: "6F5BB99060FF03AC"
 			tasks: [{
 				id: "621B8C0DD18BFA3A"
 				item: "kubejs:matter_processor_assembly"
 				type: "item"
 			}]
+			title: "&9The Third Tier Eight Circuit"
 			x: 5.5d
 			y: 5.0d
 		}
 		{
-			dependencies: ["0F56F4E642BC2B85"]
+			dependencies: [
+				"0F56F4E642BC2B85"
+				"2D5677EA9F47AA83"
+			]
+			description: ["At this point, if you are not already using a &2Multiblock&r to perform your circuit assembler recipes, you really should."]
 			id: "248ABB7F26EB72EE"
+			shape: "hexagon"
 			tasks: [{
 				id: "58B3E75584D6D2D6"
 				item: "kubejs:matter_processor"
 				type: "item"
 			}]
+			title: "&9The Fourth And Final Tier Seven Circuits"
 			x: 5.5d
 			y: 3.5d
 		}
@@ -1564,7 +1596,7 @@
 				item: "gtceu:max_machine_hull"
 				type: "item"
 			}]
-			title: "&9Max Circuit"
+			title: "&9MAX Circuit"
 			x: 7.25d
 			y: 11.0d
 		}
@@ -1588,8 +1620,8 @@
 		{
 			dependencies: [
 				"5E829641B6FE96E5"
-				"3D7924B550A1BBA0"
 				"07057CDE4E021BA7"
+				"3D7924B550A1BBA0"
 			]
 			dependency_requirement: "one_completed"
 			description: ["Circuits along this line are UEV, and can all be substituted in recipes."]
@@ -1605,84 +1637,96 @@
 		}
 		{
 			dependencies: ["3D7924B550A1BBA0"]
+			description: ["Possibly strong enough to run vanilla Minecraft at a decent FPS."]
 			id: "0C9A9F33EEA3AB5E"
 			tasks: [{
 				id: "12DD7DF8ACAA29E5"
 				item: "kubejs:monic_processor_computer"
 				type: "item"
 			}]
+			title: "&9The Second Tier Eleven Circuit"
 			x: 9.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["5A8D2BFAF02E6325"]
+			description: ["Infinite power in a circuit."]
 			id: "3D7924B550A1BBA0"
 			tasks: [{
 				id: "36FE3694B99326BE"
 				item: "kubejs:monic_processor_assembly"
 				type: "item"
 			}]
+			title: "&9The Third Tier Ten Circuit"
 			x: 9.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["7979D07FBDC6D170"]
+			dependencies: [
+				"7979D07FBDC6D170"
+				"68734C70E2D19616"
+				"1E36AFB19932C805"
+			]
+			description: ["Lets put all of this together to create the final circuit tier."]
 			id: "5A8D2BFAF02E6325"
+			subtitle: "The Beginning of The End"
 			tasks: [{
 				id: "3EFB11DA4735807C"
 				item: "kubejs:monic_processor"
 				type: "item"
 			}]
+			title: "&9The Fourth And Final Tier Nine Circuits"
 			x: 9.0d
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"6F9041F256F517A3"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["5A07988F5AD20A06"]
+			description: ["Crafted from the aforementioned Circuit Boards, these Processing Units will be used to create &6Matter Circuits&r."]
 			id: "0F56F4E642BC2B85"
 			tasks: [{
 				id: "0AB88809F545701F"
 				item: "kubejs:matter_processing_unit"
 				type: "item"
 			}]
+			title: "&9Matter Processing Unit"
 			x: 5.5d
 			y: -8.5d
 		}
 		{
 			dependencies: [
 				"4EA1E0D437528747"
-				"45B743CB23CA5735"
+				"7E93D88827F83E1A"
+				"4DF92773C82F4AAC"
 			]
+			description: ["&6Infinity&r and &6Ultimate Material&r are needed for these."]
 			id: "5054D3FA7E96EB83"
 			tasks: [{
 				id: "61502A1FCAC431BA"
 				item: "kubejs:dimensional_processing_unit"
 				type: "item"
 			}]
+			title: "&9Dimensional Processing Unit"
 			x: 7.25d
 			y: -8.5d
 		}
 		{
 			dependencies: [
-				"45B743CB23CA5735"
-				"060A5766B021FC77"
+				"2343B68110805282"
+				"434142F777A2CCBE"
 			]
+			description: ["The final processing unit, these require &6Ultimate Gems&r."]
 			id: "7979D07FBDC6D170"
 			tasks: [{
 				id: "3B038F650DFA2526"
 				item: "kubejs:monic_processing_unit"
 				type: "item"
 			}]
+			title: "&9Monic Processing Unit"
 			x: 9.0d
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"7FA0E6F3B466576C"
-				"605B2CCEAC246E14"
-			]
+			dependencies: ["17312BF0197B87A8"]
 			dependency_requirement: "one_completed"
 			description: [
 				"A \"&esubstrate&f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
@@ -1691,13 +1735,9 @@
 				""
 				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
 			]
+			disable_toast: true
 			icon: "gtceu:resistor"
 			id: "77670BF761084AA2"
-			rewards: [{
-				id: "19C03FD033716A50"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -1726,8 +1766,6 @@
 			dependencies: [
 				"12B95158E4C792DB"
 				"77670BF761084AA2"
-				"1EF6D85C63B73016"
-				"4B43ABA024E9A0B9"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1744,27 +1782,17 @@
 			}]
 			shape: "hexagon"
 			subtitle: "With all of the components made, it's time to craft an &2Electronic Circuit&r."
-			tasks: [
-				{
-					id: "5DED56006806D2E0"
-					item: "gtceu:basic_electronic_circuit"
-					type: "item"
-				}
-				{
-					id: "683E805451352A9E"
-					item: "gtceu:steel_plate"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5DED56006806D2E0"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
 			title: "Your First Circuit"
 			x: -6.5d
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"71C7B47DC85AA016"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["71C7B47DC85AA016"]
 			description: [
 				"&2Phenolic Substrates need to be turned into Circuit Boards with Silver before being usable in Circuit production."
 				""
@@ -1818,7 +1846,6 @@
 			dependencies: [
 				"3E42B4AAA6D2A05B"
 				"3B639F4061B00F1A"
-				"45B743CB23CA5735"
 			]
 			description: [
 				"&3Circuit Assemblers&r are the linchpin of your factory, gating progression through the &6Circuits&r. "
@@ -1923,10 +1950,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"6169C04DF463502F"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["6169C04DF463502F"]
 			description: ["With the &3Advanced Circuit Assembling Machine&r, a new theme of Circuits is available."]
 			id: "1F101D4F758ACECB"
 			rewards: [{
@@ -1974,10 +1998,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"417D97D9E3562F45"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["417D97D9E3562F45"]
 			description: [
 				"Better substrates. Using &6Polyvinyl Chloride&r (PVC) instead of &6Polyethylene&r (PE) doubles your yield."
 				""
@@ -2194,10 +2215,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"26ECEC06CCAB3E56"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["26ECEC06CCAB3E56"]
 			description: ["&6Epoxy Circuit Boards&r are a more advanced substrate type that gives you access to &2Nanocircuits, which span tiers three through six."]
 			id: "0B8CE3FBF62B099D"
 			rewards: [{
@@ -2334,10 +2352,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"0B8CE3FBF62B099D"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["0B8CE3FBF62B099D"]
 			description: [
 				"A &6Reinforced Epoxy Resin Sheet&r is made in a &3Chemical Bath&r, not a &3Chemical Reactor&r. The board itself is made in a Chemical Reactor though."
 				""
@@ -2569,10 +2584,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"57A6FE885489C3ED"
-				"45B743CB23CA5735"
-			]
+			dependencies: ["57A6FE885489C3ED"]
 			description: [
 				"That's a lot of foil. &2These use Palladium Foil instead of Electrum now.&r"
 				""
@@ -2614,11 +2626,6 @@
 			]
 			description: ["With &6Enderium&r, you can assemble a &6Crystal Processor Supercomputer&r."]
 			id: "26CA20E74A62FA6E"
-			rewards: [{
-				id: "72BB8009C757EA33"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "24CC69AAE2D715C1"
@@ -2688,7 +2695,6 @@
 			dependencies: [
 				"0F6B344C265D1FBB"
 				"4AC51394FB5152E5"
-				"45B743CB23CA5735"
 			]
 			description: ["&2Use the Stem Cells and more advanced materials to build a Neuro Processing Unit. This is used in the first Wetware Circuit."]
 			id: "4FABACAB7C4A74AC"
@@ -2792,7 +2798,6 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "The final circuit!"
 			tasks: [{
 				id: "53F558D65B0FF102"
 				item: "gtceu:wetware_processor_mainframe"
@@ -2804,7 +2809,11 @@
 		}
 		{
 			dependencies: ["23A57C125DC0F948"]
-			description: ["[MISSING DESCRIPTION]"]
+			description: [
+				"The prelude to the final coil tier. "
+				""
+				"Traditionally made by combining 9 &9Omnium Nuggets&r into an ingot, but by the time you are making &6Omnic Matrix Coils&r, you will probably already have the &3Creative Quantum Tank&r and be able to simply solidify all the required ingots."
+			]
 			id: "6DF2C1E88BE7CE5F"
 			shape: "hexagon"
 			tasks: [{
@@ -2828,6 +2837,43 @@
 			title: "Omnic Matrix Coils"
 			x: 18.5d
 			y: 3.5d
+		}
+		{
+			dependencies: [
+				"63CC578C3558E0AF"
+				"07057CDE4E021BA7"
+			]
+			description: [
+				"Taking a look at the &6Corrupted Universe Data&r has given you a couple of ideas, but to properly take advantage of it, a new microminer is needed."
+				""
+				"This microminer requires a Epic Extended Crafting Table to fit all the things required for a foray into a corrupted universe."
+			]
+			hide_dependency_lines: true
+			id: "035F72A2CBF8E13D"
+			size: 2.0d
+			tasks: [{
+				id: "7047A1151205D4E5"
+				item: "kubejs:microminer_t11"
+				type: "item"
+			}]
+			title: "&9Microminer T11"
+			x: 22.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1B1D3A66B847D129"]
+			description: [""]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "73EAD7C490D388F4"
+			size: 2.0d
+			tasks: [{
+				id: "090E1D526383D8D0"
+				item: "kubejs:microminer_t12"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 13.0d
 		}
 	]
 	title: "Progression"

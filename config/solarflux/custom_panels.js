@@ -68,30 +68,43 @@ function init()
 
     Comment end*/
 
-    // Wyvern
+    // bathyal
     panel()
-    .name('wyvern')
+    .name('bathyal')
     .height(0.5)
-    .generation(32768)
+    .generation(65536)
     .capacity(25600000)
     .transfer(512000)
-
-    // Draconic
+    .build()
+    .langBuilder()
+    .put("en_us", "Bathyal Solar Panel")
+    .build()
+    .register()
+    // resonant
     panel()
-    .name('draconic')
+    .name('abyssal')
     .height(0.5)
     .generation(131072)
     .capacity(512000000)
     .transfer(1024000)
-
-    // Chaotic
+    .build()
+    .langBuilder()
+    .put("en_us", "Abyssal Solar Panel")
+    .build()
+    .register()
+    // abyssal
     panel()
-    .name('chaotic')
+    .name('hadal')
     .height(0.5)
     .generation(262144)
     .capacity(204800000)
     .transfer(4096000)
-
+    .build()
+    .langBuilder()
+    .put("en_us", "Hadal Solar Panel")
+    .build()
+    .register()
+    
     // Neutronium
     panel()
     .name("neutronium")
@@ -107,7 +120,7 @@ function init()
     // Infinity
     panel()
     .name("infinity")
-    .generation(16777216)
+    .generation(33554432)
     .transfer(65536000)
     .capacity(262144000000)
     .build()

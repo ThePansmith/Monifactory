@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         'TTT'
     ], {
         I: 'gtceu:dark_soularium_ingot',
-        C: 'enderio:draconium_conduit',
+        C: 'enderio:cryolobus_conduit',
         F: 'kubejs:flight_control_unit',
         T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').weakNBT()
     }).id('kubejs:ironjetpacks/thrusters/dark_soularium');
@@ -152,14 +152,15 @@ ServerEvents.recipes(event => {
             T: Item.of('ironjetpacks:thruster', `{Id:"ironjetpacks:${newTier}"}`).weakNBT()
         }).modifyResult(copyOldJetpackData).id(`kubejs:ironjetpacks/upgrade/${newTier}`);
     })
-
+   
     event.recipes.gtceu.assembly_line('kubejs:ironjetpacks/upgrade/dark_soularium')
         .itemInputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT(), 'gtceu:dark_soularium_block', 'better_angel_ring:angel_ring', '2x enderio:ender_crystal', 'kubejs:double_compressed_octadic_capacitor', '4x #gtceu:circuits/luv', Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:dark_soularium"}').strongNBT())
         .duration(3000)
         .EUt(30720)
-		.modifyResult(copyOldJetpackData)
+        .stationResearch(b => b.researchStack(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}')).EUt(3686).CWUt(64))
+        .modifyResult(copyOldJetpackData)
 
     event.recipes.gtceu.assembly_line('kubejs:ironjetpacks/upgrade/fluxed')
         .itemInputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}').weakNBT(), 'redstone_arsenal:flux_chestplate', 'kubejs:cryotheum_coolant_unit', 'better_angel_ring:angel_ring', '2x kubejs:compressed_octadic_capacitor', '4x #gtceu:circuits/luv', Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT())
@@ -167,6 +168,10 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').strongNBT())
         .duration(3000)
         .EUt(30720)
+        .stationResearch(b => b
+            .researchStack(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}'))
+            .EUt(3686)
+            .CWUt(64))
 		.modifyResult(copyOldJetpackData)
 
     //

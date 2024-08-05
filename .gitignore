@@ -1,6 +1,7 @@
 /*
 
 !/config
+!/config-overrides
 !/kubejs
 !/defaultconfigs
 !/.gitignore
@@ -10,6 +11,7 @@
 /tools/bootstrap/.cache
 !/.github
 !.editorconfig
+!/pack-mode-switcher*
 
 !/mods/systeams*
 !/mods/ExtendedCrafting*
@@ -35,6 +37,7 @@ config/modernfix-mixins.properties
 config/immediatelyfast.json
 config/ftbbackups2.json
 config/spark/tmp
+config/spark/activity.json
 config/roughlyenoughitems/hints.json
 config/voicechat/username-cache.json
 config/minihud/*
@@ -49,7 +52,8 @@ config/jei*
 config/embeddium++.toml
 config/embeddium++.toml
 config/emi.css
-
+config\darkmodeeverywhereshaders.json
+config\darkmodeeverywhereshaders.toml
 /config/**/*client.*
 !/config/**/darkmodeeverywhere-client.toml
 
@@ -93,3 +97,6 @@ $RECYCLE.BIN/
 .AppleDouble
 .LSOverride
 kubejs/assets/gtceu/textures/item/material_sets/infinity/infinity_plate.xcf
+config/packmode.json
+config/gtceu.yaml
+config/darkmodeeverywhereshaders.json

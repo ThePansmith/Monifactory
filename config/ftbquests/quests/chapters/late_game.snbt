@@ -3,9 +3,9 @@
 	default_quest_shape: ""
 	filename: "late_game"
 	group: ""
-	icon: "gtceu:wetware_processor_mainframe"
+	icon: "gtceu:wetware_processor_computer"
 	id: "58ABB361EA301019"
-	order_index: 9
+	order_index: 8
 	quest_links: [
 		{
 			id: "5522298B1FC30B2B"
@@ -166,6 +166,18 @@
 			x: 17.0d
 			y: 22.25d
 		}
+		{
+			id: "33B08B68738FB6E3"
+			linked_quest: "49D33146A1F417E8"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			id: "3580707E636655C2"
+			linked_quest: "11154356854B64DA"
+			x: -6.0d
+			y: 8.25d
+		}
 	]
 	quests: [
 		{
@@ -262,6 +274,8 @@
 				"* Dense Coal Ore"
 				"* Dense Emerald Ore"
 				"* Dense Redstone Ore&r"
+				""
+				"Eventually, when you unlock the &aHyperbolic Microverse Projector&r, you can also use it to gain a massive amount of &bStellar Creation Data&r at once."
 			]
 			id: "15DBB22E3DC0AFB7"
 			rewards: [{
@@ -309,8 +323,8 @@
 		}
 		{
 			dependencies: [
-				"71602D44E1D0013E"
 				"6E5343E45E99CBAD"
+				"11154356854B64DA"
 			]
 			description: [
 				"&6QBit CPUs&r are an advanced Circuit Wafer crucial for &6Quantum Circuits&r."
@@ -463,7 +477,7 @@
 		{
 			dependencies: ["39FD6F1076559156"]
 			description: [
-				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r, the &3Fusion Reactor&r, and some parts from &9Draconic Evolution&r."
+				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r, the &3Fusion Reactor&r, and some parts from &9kubejs Evolution&r."
 				""
 				"To begin, craft a &3Scanner&r and a few &6Data Sticks&r. The initial Scanner recipes run at &6HV&r, but &1IV&r is required relatively soon so might as well make that one."
 				""
@@ -593,10 +607,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:polyphenylene_sulfide"
-				id: "7FB9D172BE7BBC11"
-				type: "fluid"
+				id: "674ADD4BEFC6B52D"
+				item: "gtceu:polyphenylene_sulfide_bucket"
+				type: "item"
 			}]
 			title: "&2Polyphenylene Sulfide"
 			x: -2.0d
@@ -838,7 +851,7 @@
 			description: [
 				"The most advanced substrate available, prepared for bleeding-edge bioengineering technology."
 				""
-				"&6Wetware Circuit Boards&r are the basis of &6Wetware&r circuits, the final theme that spans tiers six through nine."
+				"&6Wetware Circuit Boards&r are the basis of &6Wetware&r circuits."
 			]
 			icon: "gtceu:wetware_printed_circuit_board"
 			id: "4AC51394FB5152E5"
@@ -901,6 +914,8 @@
 				"&6* Boron Dust"
 				"* Molybdenite Ore"
 				"* Beryllium Ore"
+				""
+				"This microminer will also be important much later, as the sole source of &2Stabilized Oganesson&r."
 			]
 			id: "023197AB7CDBDD6E"
 			rewards: [{
@@ -918,75 +933,6 @@
 			title: "&2Tier Five Micro Miner"
 			x: 6.0d
 			y: 6.25d
-		}
-		{
-			dependencies: [
-				"2181102841205407"
-				"77582C534A994D7C"
-				"6B23DD1121BE8174"
-				"22EE79257B57E56B"
-			]
-			description: [
-				"Now that you have &6Osmium&r and &6Iridium&r from the &6Tier Four Micro Miner&r or &6Platinum Group Processing&r, you have access to something vastly better for Extended Crafting Table Automation&r: &bPackagedExCrafting."
-				""
-				"To begin, you'll need to craft one of each extended &3Package Crafter&r listed on the right. Put an &3Unpackager&r on top of each one, and then a &3Packager&r anywhere you want. These are all AE2 devices, so you'll need to connect them to an ME Network."
-				""
-				"Next, right-click the &3Package Recipe Encoder&r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You'll have to choose the appropriate table for the recipe you want to encode."
-				""
-				"&6Holders&r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press &6[+]&r in &bREI&r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines."
-				""
-				"If you've done everything correctly, you should see the item appear as craftable in a Terminal."
-				""
-				"While it might seem that the crafting process is slow, &ePackagedAuto is excellent at parallelizing&r. You can surround an Unpackager with Crafters and it will use all of them. It's also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same."
-			]
-			icon: "packagedexcrafting:ultimate_crafter"
-			id: "53C09541792FACF4"
-			rewards: [{
-				count: 5
-				id: "00B0BC45DB6CDAB9"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "382E3A0B54F89BB7"
-					item: "packagedexcrafting:advanced_crafter"
-					type: "item"
-				}
-				{
-					id: "6BD4F2D62F3F873A"
-					item: "packagedexcrafting:elite_crafter"
-					type: "item"
-				}
-				{
-					id: "6A4BDAA83790136E"
-					item: "packagedexcrafting:ultimate_crafter"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "495A048EF23847CA"
-					item: "packagedauto:unpackager"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "23DE5E055525B95E"
-					item: "packagedauto:packager"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "28D5C937C2070CE4"
-					item: "packagedauto:recipe_holder"
-					type: "item"
-				}
-			]
-			title: "Automating Extended Crafting"
-			x: 6.0d
-			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1068,6 +1014,8 @@
 				""
 				"&6Enderium&r doesn't require much power (running on as little as MV) but it does need a lot of heat and is incredibly slow without overclocking. &2You can use small amounts of Krypton from Liquid Ender Air distillation to significantly decrease the smelting time.&r"
 				""
+				"&9Enderium also requires Tantalum, which can be renewably created by macerating and processing dragon scales."
+				""
 				"As with all later blast furnace materials, dedicate a furnace to keeping these in stock and have it running constantly to ensure a stable supply (turning it off when you have an acceptably vast stockpile)."
 				""
 				"In addition to its other uses, Enderium gets you access to &aResonant Integral Components&r for machines. These quests can be found on the &eProgression&r tab."
@@ -1140,6 +1088,12 @@
 				"&2* Uraninite Ore"
 				"* Iridosmine 80/20 Ore"
 				"* Osmiridium 80/20 Ore"
+				""
+				"Once you reach the &aHyperbolic Microverse Projector&r, this microminer can also get the following:"
+				""
+				"&6* Perfect Diamonds"
+				"&6* Perfect Rubies"
+				"&6* Perfect Cinnabar"
 			]
 			id: "49B872B193268554"
 			rewards: [{
@@ -1204,7 +1158,10 @@
 			y: 20.25d
 		}
 		{
-			dependencies: ["49B872B193268554"]
+			dependencies: [
+				"49B872B193268554"
+				"62AC7103FF9D25FD"
+			]
 			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
 			icon: "kubejs:mote_of_omnium"
 			id: "7A7FFE9E89D19A2F"
@@ -1239,7 +1196,7 @@
 			description: [
 				"&2Upgraded forms of the EBF and Vacuum Freezer.&r"
 				""
-				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e256x&r with the best hatch!."
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!."
 				""
 				"The &aRotary Hearth Furnace&r is quite big!"
 			]
@@ -1273,9 +1230,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Draconium is a complex material needed in vast quantities."
+				"Cryolobus is a complex material needed in vast quantities."
 				""
-				"You'll likely have come by some dust while mining in the End, but you can also create it with &6Dragon's Breath&r and &6Manyullyn&r."
+				"You'll likely have come by some dust while mining in the End, but you can also create it with a &9Sculk Catalyst&r and &6Manyullyn&r."
 			]
 			id: "7F669657313F2E62"
 			rewards: [{
@@ -1286,9 +1243,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75321CAE019C190A"
-				item: "gtceu:draconium_dust"
+				item: "gtceu:cryolobus_dust"
 				type: "item"
 			}]
+			title: "&9Cryolobus Dust"
 			x: 15.25d
 			y: 6.25d
 		}
@@ -1298,11 +1256,11 @@
 				"7F669657313F2E62"
 			]
 			description: [
-				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Draconium&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
+				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Cryolobus&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
 				""
-				"Draconium gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
+				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Draconium: dust can be smelted into ingots, but you can also turn &6Ender Dragon Scales&r, which contain Draconium, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft Draconium."
+				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Horns&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1316,10 +1274,10 @@
 			size: 2.0d
 			tasks: [{
 				id: "7D3DF1D033AF6DC9"
-				item: "gtceu:draconium_ingot"
+				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
-			title: "&2Draconium Ingots"
+			title: "&9Cryolobus Ingots"
 			x: 17.25d
 			y: 8.25d
 		}
@@ -1365,7 +1323,7 @@
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"Coating &6Draconium Wire&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
+				"Coating &6Cryolobus Wire&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
 				"These wires losslessly transmit \"MAX\" tier, which is effectively infinite transfer rate. This means they will work for any tier of power. 1x wires handle 4 amps, meaning 4x wires can handle 16 amps, and 16x wires can handle 64 amps."
 				""
@@ -1380,7 +1338,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3C6395EDE0AE8FE3"
-				item: "gtceu:draconic_superconductor_single_wire"
+				item: "gtceu:sculk_superconductor_single_wire"
 				type: "item"
 			}]
 			title: "Superconductor Wire"
@@ -1631,22 +1589,22 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "19750B567D0D0ABC"
-				item: "armorplus:the_ultimate_material"
+				item: "kubejs:the_ultimate_material"
 				type: "item"
 			}]
-			x: 21.25d
-			y: 16.75d
+			x: 23.25d
+			y: 19.75d
 		}
 		{
 			dependencies: [
-				"2358A5CF22FF5495"
 				"7E3A179376673590"
 				"0B6196692F9E176D"
+				"20CB8F878CADA235"
 			]
 			description: [
-				"The source of &6Dragon Hearts&r and the valuable &6Lair of The Chaos Guardian Data&r."
+				"The source of &9Warden Hearts&r and the valuable &9Lair of The Warden Data&r."
 				""
-				"As a bonus, brings &6Dragon Eggs, Dragon's Breath, Ender Dragon Scales&r, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+				"As a bonus, brings &9Sculk Catalysts, Warden Horns, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
 			]
 			id: "5FE96C30454A0374"
 			rewards: [{
@@ -1661,7 +1619,7 @@
 				item: "kubejs:microminer_t7"
 				type: "item"
 			}]
-			title: "&2Tier Seven Micro Miner"
+			title: "&9Tier Seven Micro Miner"
 			x: 23.25d
 			y: 15.25d
 		}
@@ -1670,7 +1628,7 @@
 			description: [
 				"With a &3Fusion Reactor&r, you can make Europium!"
 				""
-				"This element is needed for making things in &bDraconic Evolution&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
+				"This element is needed for making &9Sculk related items&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
 				""
 				"You make it by fusing molten &9Neodymium&r and &9Hydrogen&r."
 			]
@@ -1789,19 +1747,19 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "27BE677925582139"
-				item: "gtceu:double_draconium_plate"
+				item: "gtceu:double_cryolobus_plate"
 				type: "item"
 			}]
-			title: "&2Draconium Double Plates"
+			title: "&9Cryolobus Double Plates"
 			x: 23.25d
 			y: 8.25d
 		}
 		{
-			dependencies: ["1CC092A2F2CD4589"]
+			dependencies: ["22144A6785524FDF"]
 			description: [
-				"&6Draconic Cores&r are the first crafting step into &bDraconic Evolution&r."
+				"&9Mesol Energy Cores&r is your first proper &9Energy Cores&r."
 				""
-				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &eFusion Crafting&r."
+				"They (as well as future Energy Cores) require xp juice to craft."
 			]
 			id: "7C89BC235C988689"
 			rewards: [{
@@ -1812,12 +1770,12 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "712064FEEFCC29AA"
-				item: "draconicevolution:draconium_core"
+				item: "kubejs:mesol_energy_core"
 				type: "item"
 			}]
-			title: "Draconic Cores"
-			x: 25.25d
-			y: 8.25d
+			title: "&9Mesol Energy Core"
+			x: 27.25d
+			y: 12.25d
 		}
 		{
 			dependencies: [
@@ -1843,7 +1801,7 @@
 		}
 		{
 			dependencies: ["5FE96C30454A0374"]
-			description: ["&6Dragon Hearts&r are needed for both &6Awakened Draconium&r and &6The Ultimate Material&r."]
+			description: ["&9Warden Hearts&r are needed for both &9Cryococcus&r and &6The Ultimate Material&r."]
 			id: "7FAB6FD0A054443E"
 			rewards: [{
 				id: "2AA894050D239DEE"
@@ -1853,25 +1811,21 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7615C990816E6132"
-				item: "draconicevolution:dragon_heart"
+				item: "kubejs:warden_heart"
 				type: "item"
 			}]
-			title: "Dragon Hearts"
+			title: "&9Warden Hearts"
 			x: 23.25d
 			y: 18.25d
 		}
 		{
-			dependencies: ["7C89BC235C988689"]
+			dependencies: ["22144A6785524FDF"]
 			description: [
-				"&bDraconic Evolution&r features &eFusion Crafting&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
+				"The multiblock uses energy cores to &erelease extremely large amounts of energy at once&r to craft things. While the batteries themselves are lost, you are able to recover some of the spent energy. "
 				""
-				"You'll need eight &6Basic Fusion Crafting Injectors&r to upgrade any additional injectors you make to Wyvern Tier."
-				""
-				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
-				""
-				"&5Until Fusion Crafting is ported, you get to use a (albet nerfed) version of a new Post-Tank Multiblock, the Draconic Fusion Reactor. The final version will not require the injectors to be in the machine, have a different design, and will be able to parallelize."
+				"&5...once energy voiding is implemented in gtm."
 			]
-			icon: "draconicevolution:basic_crafting_injector"
+			icon: "gtceu:discharger"
 			id: "713FAECEE5046121"
 			rewards: [{
 				id: "1334EFA413965845"
@@ -1879,30 +1833,20 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [
-				{
-					id: "3C9333ECA3F6B5F9"
-					item: "gtceu:draconic_reactor"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "5756875831B786CB"
-					item: "draconicevolution:basic_crafting_injector"
-					type: "item"
-				}
-			]
-			title: "Basic Fusion Injector"
+			size: 1.5d
+			subtitle: "What good is a battery if you don't use it?"
+			tasks: [{
+				id: "3C9333ECA3F6B5F9"
+				item: "gtceu:discharger"
+				type: "item"
+			}]
+			title: "&9Discharger"
 			x: 27.25d
-			y: 8.25d
+			y: 18.25d
 		}
 		{
-			dependencies: ["713FAECEE5046121"]
-			description: [
-				"&6Wyvern Cores&r are the second tier of cores, used for intermediate crafting recipes."
-				""
-				"Each Wyvern Core is made via fusion crafting and the setup needs eight &6Basic Fusion Crafting Injectors&r."
-			]
+			dependencies: ["7C89BC235C988689"]
+			description: ["&9Bathyal Energy Cores&r are the second tier of core, used for intermediate crafting recipes."]
 			id: "20CB8F878CADA235"
 			rewards: [{
 				id: "6C1605F1E280EA28"
@@ -1912,71 +1856,24 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "5A46206776E20233"
-				item: "draconicevolution:wyvern_core"
+				item: "kubejs:bathyal_energy_core"
 				type: "item"
 			}]
-			title: "Wyvern Core"
-			x: 27.25d
-			y: 10.25d
-		}
-		{
-			dependencies: ["6F5579E1646634C7"]
-			description: [
-				"&6Draconic Fusion Crafting Injectors&r are the penultimate tier of injectors for fusion crafting."
-				""
-				"You'll need a fusion crafting setup with ten of these for the next tier of injector, and the next tier you'll also need ten injectors, so consider making 20 of these."
-			]
-			id: "2358A5CF22FF5495"
-			rewards: [{
-				id: "0022ECDC55B22DC3"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "09CD18933F28FA28"
-				item: "draconicevolution:awakened_crafting_injector"
-				type: "item"
-			}]
-			title: "Draconic Fusion Injectors"
+			title: "&9Bathyal Energy Core"
 			x: 25.25d
 			y: 12.25d
 		}
 		{
-			dependencies: ["20CB8F878CADA235"]
-			description: [
-				"&6Basic Fusion Crafting Injectors&r can be upgraded to Wyvern Tier via fusion crafting."
-				""
-				"Technically you only need six of these to start making the next tier of injectors, but some recipes will need more than that. Plan on making at least twenty-six of these."
-			]
-			id: "6F5579E1646634C7"
-			rewards: [{
-				count: 2
-				id: "049628C1CAA8417E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "581D806823B709C3"
-				item: "draconicevolution:wyvern_crafting_injector"
-				type: "item"
-			}]
-			title: "Wyvern Fusion Injectors"
-			x: 27.25d
-			y: 12.25d
-		}
-		{
 			dependencies: [
-				"2358A5CF22FF5495"
 				"7E3A179376673590"
 				"56EFA6A07C7291F7"
 				"6391447F1A411281"
+				"20CB8F878CADA235"
 			]
 			description: [
-				"The main source of &6Chaos Shards&r."
+				"The main source of &9Hadal Shards&r."
 				""
-				"The other mission gives negligible amounts of &6Neutronium&r and some other moderately useful things, but you're better off making Neutronium in the &3Fusion Reactor Mark 3&r&r and the other items are otherwise craftable."
+				"&9This microminer is also to bring back Ender dragon eggs and Ender dragon scales, as well as neutronium, depending on the mission&r."
 			]
 			id: "2D47BFA44BDB5E6A"
 			rewards: [{
@@ -1991,7 +1888,7 @@
 				item: "kubejs:microminer_t8"
 				type: "item"
 			}]
-			title: "Tier Eight Micro Miner"
+			title: "&9Tier Eight Micro Miner"
 			x: 27.25d
 			y: 15.25d
 		}
@@ -2021,11 +1918,14 @@
 			y: 15.25d
 		}
 		{
-			dependencies: ["7FAB6FD0A054443E"]
+			dependencies: [
+				"7FAB6FD0A054443E"
+				"713FAECEE5046121"
+			]
 			description: [
-				"&6Awakened Draconium&r is a powerful material used for crafting high-grade components, items, and machines from &bDraconic Evolution&r."
+				"&6Cryococcus&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r."
 				""
-				"Five &6Draconium Blocks&r can be processed in a Wyvern Tier fusion crafting setup to create an equal output of five &6Awakened Draconium Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
+				"Five &6Cryolobus Blocks&r can be processed in to create an equal output of five &6Cryococcus Blocks&r."
 			]
 			id: "0562D9F4C441EAF9"
 			rewards: [{
@@ -2036,40 +1936,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "50929C3F5F044E40"
-				item: "gtceu:draconium_awakened_block"
+				item: "gtceu:cryococcus_block"
 				type: "item"
 			}]
-			title: "Awakened Draconium"
-			x: 24.75d
+			title: "&9Cryococcus"
+			x: 25.25d
 			y: 18.25d
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"&6Awakened Cores&r are the third tier of &bDraconic Evolution&r core, and are common components of endgame recipes."
-				""
-				"These cores are made with &6Awakened Draconium&r and also cost &e3 Billion RF&r to craft."
-			]
-			id: "03F04B4005F2CBE1"
-			rewards: [{
-				id: "6F7838D02F126912"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "71171679FDF638A6"
-				item: "draconicevolution:awakened_core"
-				type: "item"
-			}]
-			title: "Awakened Core"
-			x: 24.75d
-			y: 21.0d
-		}
-		{
-			dependencies: ["03F04B4005F2CBE1"]
-			description: [
-				"&6Awakened Draconium&r, &6Chaos Shards&r, and &6Stabilized Einsteinium&r can be used in a Draconic Tier fusion crafting setup to create a &6Draconic Reactor Core&r."
+				"&6Cryococcus&r, &6Abyss Shards&r, and &6Stabilized Einsteinium&r can be used to create a &9Abyssal Energy Core&r."
 				""
 				"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some Endgame items."
 			]
@@ -2082,12 +1959,12 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "69DC07184B74DB07"
-				item: "draconicevolution:reactor_core"
+				item: "kubejs:abyssal_energy_core"
 				type: "item"
 			}]
-			title: "Draconic Reactor Core"
-			x: 22.75d
-			y: 21.0d
+			title: "&9Abyssal Energy Core"
+			x: 23.25d
+			y: 21.5d
 		}
 		{
 			dependencies: [
@@ -2100,6 +1977,8 @@
 				"Combines &bStellar Creation Data&r into the &9Universe Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
 				""
 				"The alternate mission brings a decent quantity of &6Neutronium&r. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
+				""
+				"The Tier Nine Micro Miner will also be important later on, as it will be your main source of &9Quasi-Stable Neutron Stars&r."
 			]
 			id: "6BF4A76C5B84EEE9"
 			rewards: [{
@@ -2120,14 +1999,11 @@
 		}
 		{
 			dependencies: [
-				"03F04B4005F2CBE1"
 				"738A141D31AD7CE3"
+				"6ABD83B58FADD4DF"
+				"235C1E5B2C58B5AF"
 			]
-			description: [
-				"The &6Reactor Stabilizer&r is a component needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."
-				""
-				"They are made in a Chaotic Tier fusion crafting setup, requiring a whopping &e56 Billion total RF each&r. You're gonna need some serious power generation and crafting infrastructure to make everything for these."
-			]
+			description: ["&9Hadal Warp Engines&r are components needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."]
 			id: "483652BAEF59E125"
 			rewards: [{
 				id: "6D6D92F23F1DCEA5"
@@ -2137,19 +2013,22 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6D27E0C7357E8F5A"
-				item: "draconicevolution:reactor_stabilizer"
+				item: "kubejs:hadal_warp_engine"
 				type: "item"
 			}]
-			title: "Reactor Stabilizer"
-			x: 24.75d
+			title: "&9Hadal Warp Engine"
+			x: 25.25d
 			y: 24.0d
 		}
 		{
-			dependencies: ["03F04B4005F2CBE1"]
+			dependencies: [
+				"0562D9F4C441EAF9"
+				"6ABD83B58FADD4DF"
+			]
 			description: [
-				"&6Chaos Shards&r are an endgame component for &bDraconic Evolution&r."
+				"&6Hadal Shards&r are a component in &bHypogean infusion&r."
 				""
-				"They are the base material for Chaotic Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Chaos Dragon Data&r."
+				"They are the base material for abyssal Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Warden Data&r."
 			]
 			id: "235C1E5B2C58B5AF"
 			rewards: [{
@@ -2159,13 +2038,13 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "31B73CD828CA2128"
-				item: "draconicevolution:chaos_shard"
+				id: "5E20DE67BAF768B6"
+				item: "kubejs:hadal_shard"
 				type: "item"
 			}]
-			title: "Chaos Shards"
-			x: 26.75d
-			y: 21.0d
+			title: "&9Hadal Shards"
+			x: 27.25d
+			y: 21.5d
 		}
 		{
 			dependencies: [
@@ -2180,7 +2059,7 @@
 				""
 				"Neutronium is made from fusing molten &9Naquadria&r, a super-enriched form of &6Naquadah&r, with molten &9Americium&r, &2or from the Tier Eight Micro Miner.&r"
 				""
-				"After getting &6Chaotic Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
+				"You might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
 			]
 			id: "22E50A6923EBF5CB"
 			rewards: [
@@ -2221,9 +2100,9 @@
 				"235C1E5B2C58B5AF"
 			]
 			description: [
-				"The highest tier of fusion crafting injectors. You will need at least ten of these to reach the &9Creative Tank&r."
+				"The highest tier of &9energy core&r, you will these to reach the &9Creative Tank&r."
 				""
-				"Each injector requires four ingots of &6Neutronium&r and four &6Chaos Shards&r, as well as two &6Crystal Matrix&r blocks."
+				"Each core requires four ingots of &6Neutronium&r and a &6Hadal Shard&r, as well as plenty of the previous energy cores."
 				""
 				"Hope you've got those Tier Eight Micro Miners automated."
 			]
@@ -2238,10 +2117,10 @@
 			size: 2.0d
 			tasks: [{
 				id: "140C83AB5FE8450E"
-				item: "draconicevolution:chaotic_crafting_injector"
+				item: "kubejs:hadal_energy_core"
 				type: "item"
 			}]
-			title: "Chaotic Fusion Injectors"
+			title: "&9Hadal Energy Core"
 			x: 29.25d
 			y: 24.0d
 		}
@@ -2262,11 +2141,11 @@
 			}]
 			title: "&2Highly Advanced SoCs"
 			x: 31.25d
-			y: 22.25d
+			y: 22.5d
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
-			description: ["It grants the most wafers, and is required for Highly Advanced Systems-on-Chip."]
+			description: ["Allows for the creation of ASoCs."]
 			id: "524E7A937C2D9DDD"
 			rewards: [{
 				id: "088BB71A2B6A615E"
@@ -2274,7 +2153,6 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "The final Boule."
 			tasks: [{
 				id: "3BC9108FCF45C8A6"
 				item: "gtceu:neutronium_boule"
@@ -2285,57 +2163,9 @@
 			y: 20.25d
 		}
 		{
-			dependencies: ["6F5579E1646634C7"]
-			description: [
-				"Now that you have &6Wyvern Fusion Injectors&r, you can make the &eEnergy Storage Core&r from &bDraconic Evolution&r. It's a great way to store all the energy required to craft power-hungry late game items."
-				""
-				"The &eEnergy Storage Core&r is a multiblock structure that can be upgraded to store increasingly immense amounts of RF energy."
-				""
-				"See the &bDraconic Evolution&r manual for more information on the material requirements for each tier, and more information on the &6Stabilizers&r and &6Pylons&r."
-				""
-				"&6Energy Pylons&r are required to input and output energy from the core. Each pylon allows movement in a single direction, so you need at least two."
-				""
-				"Once you have the materials together for your desired tier, the structure can build itself: simply access the GUI of the &6Energy Core&r, set the tier, and click Assemble. Items will be automatically used from your inventory. Once the structure is built, you can access the core's GUI again through &6Energy Core Stabilizers&r to activate it."
-				""
-				"It is recommended to postpone Tier 8 until after you reach the &9Creative Tank&r, as it requires large amounts of &6Awakened Draconium&r."
-			]
-			icon: "draconicevolution:energy_core"
-			id: "48D3640053770BD8"
-			rewards: [{
-				count: 2
-				id: "5D820B09C4CFB783"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [
-				{
-					id: "6C9957529780CBFB"
-					item: "draconicevolution:energy_core"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "62599F4AC08F92EB"
-					item: { Count: 2b, id: "draconicevolution:energy_pylon" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "0E0CB12516222A89"
-					item: { Count: 4b, id: "draconicevolution:energy_core_stabilizer" }
-					type: "item"
-				}
-			]
-			title: "Power Storage on a Massive Level"
-			x: 30.25d
-			y: 12.25d
-		}
-		{
 			dependencies: ["6DAB13A7BDECE94E"]
 			description: [
-				"&3World Accelerators&r accelerate the ticks of any non-GregTech machine adjacent to them. This is handy for &9Draconic Evolution Fusion&r, which is a slow process otherwise."
+				"&3World Accelerators&r accelerate the ticks of any non-GregTech machine adjacent to them. This is handy for &9kubejs Evolution Fusion&r, which is a slow process otherwise."
 				""
 				"The &6HV&r WA accelerates by 8x, the &5EV&r WA accelerates by 16x, and the &1IV&r WA accelerates by 32x. They require an input of 8A of their voltage tier. Be sure to right-click the WA once with a &aScrewdriver&r to set it to &eTile Entity Mode&r, otherwise it will accelerate random ticks in a radius around it instead."
 				""
@@ -2385,13 +2215,13 @@
 		{
 			dependencies: ["521977C7165229F1"]
 			description: [
-				"The &3Power Substation&r is GregTech's native mass power storage solution. At &cZPM&r tier and above, it can rival the &6Tier 7 Energy Core&r from Draconic Evolution."
+				"The &3Power Substation&r is GregTech's native mass power storage solution."
 				""
 				"The structure can accept up to 18 layers of 3x3 &aLapotronic Capacitor&r blocks. GT batteries can hold &96x&r the EU their item counterparts can hold when crafted into a &aLapotronic Capacitor&r. The structure need not be made of all of the same tier blocks, but it must be full, so fill any empty space with &aEmpty Capacitor Blocks&r."
 				""
 				"Insert power through &6Energy Hatches&r and extract from &6Dynamo Hatches&r, each of any tier. The Power Substation can accept special &664A Substation Hatches&r, as well as &aLaser Hatches&r."
 				""
-				"The Power Substation will &cpassively lose 1%%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
+				"The Power Substation will &cpassively lose 1%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
 			]
 			hide_dependency_lines: true
 			id: "36B1B083B4FA439F"
@@ -2479,7 +2309,6 @@
 			y: 15.25d
 		}
 		{
-			dependencies: ["71602D44E1D0013E"]
 			description: [
 				"Some Micro Miner missions use a &6Gemstone Sensor&r to scout out gems instead of ores."
 				""
@@ -2525,8 +2354,8 @@
 				type: "item"
 			}]
 			title: "&2Implosion Compressor"
-			x: 19.25d
-			y: 1.0d
+			x: 5.9375d
+			y: 24.0625d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
@@ -2543,49 +2372,8 @@
 				item: "minecraft:tnt"
 				type: "item"
 			}]
-			x: 19.25d
-			y: -0.5d
-		}
-		{
-			dependencies: ["49D33146A1F417E8"]
-			description: [
-				"&9Radon&r will be needed in large quantities."
-				""
-				"For now, you'll need to obtain it from Tier Two Micro Miner missions, in the form of &6Radium Salt&r. Electrolyze it for Radon and &6Rock Salt&r. &2You can also get it from distilling liquid Ender Air.&r"
-				""
-				"Later it will be possible to make Radon using a &bGregTech &3Fusion Reactor&r."
-			]
-			disable_toast: true
-			icon: "gtceu:radon_bucket"
-			id: "6B0A547EA42CD35A"
-			shape: "hexagon"
-			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:radon"
-				id: "613824353565F9CF"
-				type: "fluid"
-			}]
-			title: "&2Radon"
-			x: -6.0d
-			y: 6.25d
-		}
-		{
-			dependencies: [
-				"11154356854B64DA"
-				"6B0A547EA42CD35A"
-			]
-			description: ["You'll need an HV or better &3Chemical Bath&r to make these. The recipe is quite slow, so invest in the highest tier Chemical Baths you can and consider parallelizing the recipe."]
-			disable_toast: true
-			id: "71602D44E1D0013E"
-			shape: "hexagon"
-			subtitle: "When &6Ender Eyes&r just aren't creepy enough."
-			tasks: [{
-				id: "52E1C27170D352B7"
-				item: "gtceu:quantum_eye"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 8.25d
+			x: 3.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["53EC3831D66769CA"]
@@ -2723,75 +2511,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["74469710D910C19D"]
-			description: [
-				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5Monifactory&r is to allow you to eventually automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
-				""
-				"&bApplied Energistics 2&r stores recipes in &aPatterns&r, but so far they have been limited to at most 9 stacks of items as input (a standard 3x3 crafting grid). PackagedAuto stores recipes in &aPackage Recipe Holders&r, which don't have this limitation. Additionally, each Holder can store up to &e20 different recipes&r. Holders must be encoded in the &3Package Recipe Encoder&r."
-				""
-				"In the vast majority of situations you'll need two identically-encoded Holders, as the following machines work together."
-				""
-				"The &3Packager&r is a machine that compresses ingredients for a specific recipe into a set of &6Recipe Packages&r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks)."
-				""
-				"The &3Unpackager&r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if &eall packages in a set are present&r."
-				""
-				"When both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your &aTerminal&r."
-				""
-				"&3Packager Extensions&r will act like a clone of an adjacent Packager - including access to patterns in its Package Recipe Holder - allowing you to craft recipe packages faster. Simply place the Packager Extensions around the Packager. Up to 26 extensions in a 3x3x3 cube around the Packager are supported."
-			]
-			disable_toast: true
-			icon: "packagedauto:package"
-			id: "6B23DD1121BE8174"
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "48748A565C341DF1"
-					item: "packagedauto:packager"
-					type: "item"
-				}
-				{
-					id: "09C32235E81EE845"
-					item: "packagedauto:unpackager"
-					type: "item"
-				}
-				{
-					id: "78ACB6BDC43791BE"
-					item: "packagedauto:recipe_holder"
-					type: "item"
-				}
-				{
-					id: "0DF55C8EB1DA9019"
-					item: "packagedauto:encoder"
-					type: "item"
-				}
-			]
-			title: "PackagedAuto"
-			x: 9.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"15DBB22E3DC0AFB7"
-				"555BEBF7FD6012B7"
-			]
-			description: [
-				"This is the largest Extended Crafting Table, capable of handling 9x9 recipes."
-				""
-				"&9PackagedAuto is now available, so just use that to automate these recipes."
-			]
-			id: "22EE79257B57E56B"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "381FFA3284E21350"
-				item: "extendedcrafting:ultimate_table"
-				type: "item"
-			}]
-			title: "&9Ultimate Crafting Table"
-			x: 6.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["7A7FFE9E89D19A2F"]
 			description: [
 				"The &3Naquadah Reactor&r is a structure used to generate considerable amounts of EU power from decaying &6Enriched Naquadah&r or &6Naquadria&r into &6Lead&r."
@@ -2921,10 +2640,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"7A65459E4DFAAC2D"
-				"09002E8DD1A359AD"
-			]
+			dependencies: ["7A65459E4DFAAC2D"]
 			description: ["This is the flight of our lives."]
 			id: "747A3DEA569CB6C9"
 			rewards: [{
@@ -2979,6 +2695,62 @@
 			title: "&2Platinum Group Processing"
 			x: -6.0d
 			y: 16.25d
+		}
+		{
+			dependencies: [
+				"0B6196692F9E176D"
+				"5199E6FAA4B699CD"
+			]
+			description: [
+				"Interestingly enough, sculk itself functions great as a &9biobattery&r, being able to store and quickly release mass amounts of energy, perfect for some upcoming items. The &9sculk charger&r should be able to get started in tacking advantage of it."
+				""
+				"To use it, set the recipe &ein the same way you would for an autocrafting table&r, then place an inventory (such as a barrel on top), and connect power to the charger and a pylon. Items can be extacted from the charger in any manner."
+				""
+				"The charger and pylon themselves &ehave extreme throughput&r, so don't worry about having to wait for it to craft items."
+			]
+			icon: "extendedcrafting:auto_flux_crafter"
+			id: "7F75D961B102A72D"
+			rewards: [{
+				id: "4CF3CFEF57B863A3"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "338DCAE7D9D78C51"
+					item: "extendedcrafting:auto_flux_crafter"
+					type: "item"
+				}
+				{
+					id: "00EF32A94D627A37"
+					item: "extendedcrafting:flux_alternator"
+					type: "item"
+				}
+			]
+			title: "&9Sculk Charging"
+			x: 25.25d
+			y: 8.25d
+		}
+		{
+			dependencies: ["7F75D961B102A72D"]
+			description: ["[\"While the charger itself has extreme throughput, it is recommended to either create a \",{ \"text\": \"power substation\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"36B1B083B4FA439F\" }},\", or keep the cores themselves in stock, as a single core requires 200 Million RF to craft.\"]"]
+			id: "22144A6785524FDF"
+			rewards: [{
+				id: "5B1FA1A9ACBC0EB7"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "295338231C995AE7"
+				item: "kubejs:mesol_core"
+				type: "item"
+			}]
+			title: "&9Mesol Core"
+			x: 27.25d
+			y: 8.25d
 		}
 	]
 	title: "Late Game"

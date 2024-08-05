@@ -5,7 +5,7 @@
 	group: ""
 	icon: "kubejs:microminer_t1"
 	id: "68F29871402A6B1B"
-	order_index: 7
+	order_index: 6
 	quest_links: [{
 		id: "3494A1A9317B9F3B"
 		linked_quest: "5F688F22A3DB2ADD"
@@ -365,6 +365,7 @@
 				""
 				"Prepare some gear, eat a slice, and get ready for a fight!"
 			]
+			icon: "minecraft:dragon_head"
 			id: "56FB624B384FFAF5"
 			rewards: [{
 				id: "671C0205B990A2F1"
@@ -373,9 +374,9 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "0014FE3B92FEBC6B"
-				item: "minecraft:dragon_head"
-				type: "item"
+				dimension: "minecraft:the_end"
+				id: "5EFEF3EB5567D109"
+				type: "dimension"
 			}]
 			title: "The End...?"
 			x: -9.0d
@@ -384,8 +385,6 @@
 		{
 			dependencies: ["56FB624B384FFAF5"]
 			description: [
-				"&2This is new to CEu! Before, you could only distil Liquid Air."
-				""
 				"&9Ender Air&r, collected from a &3Gas Collector&r, can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Ender Air&r."
 				""
 				"&9Liquid Ender Air&r can be sent into a &2Distillation Tower&r to break it down into its components."
@@ -476,6 +475,8 @@
 				"&6Engines&r provide thrust, and &6Tanks&r provide fuel for your engines, make sure to have a decent amount of both."
 				""
 				"Being able to ride your rocket is important, too, so don't forget to add a &6seat&r."
+				""
+				"While sitting on a rocket, you can open your inventory to open check the rocket's thrust, and insert fuel and a ID Chip."
 			]
 			icon: "gcyr:basic_rocket_motor"
 			id: "4669C1DCEE4AA563"
@@ -487,7 +488,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					count: 3L
+					count: 5L
 					id: "36AC33D59E419A30"
 					item: "gcyr:basic_rocket_motor"
 					type: "item"
@@ -505,7 +506,7 @@
 				}
 			]
 			title: "&9Rocket Parts"
-			x: 3.5d
+			x: 2.5d
 			y: -8.5d
 		}
 		{
@@ -514,6 +515,10 @@
 				"Making yourself a space suit is the most important step towards your space adventures."
 				""
 				"This suit lets you breathe in space, which is kind of important."
+				""
+				"You can also make yourself some &9space upgrade trims&r, and it to any armor of your choice into a spacesuit."
+				""
+				"You can also hide the spacesuit from your playermodel via the cosmetic armor buttons, if you wish."
 			]
 			icon: {
 				Count: 1b
@@ -531,7 +536,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "5D4FFDBF1470DF9D"
+					id: "0DFC776179D464C1"
 					item: {
 						Count: 1b
 						id: "gcyr:space_helmet"
@@ -542,7 +547,7 @@
 					type: "item"
 				}
 				{
-					id: "31AD06B034B3E8B4"
+					id: "0399F0828F49C6DF"
 					item: {
 						Count: 1b
 						id: "gcyr:space_chestplate"
@@ -553,7 +558,7 @@
 					type: "item"
 				}
 				{
-					id: "5F36F126EDB7EE1D"
+					id: "19B6A6B00F982087"
 					item: {
 						Count: 1b
 						id: "gcyr:space_leggings"
@@ -564,7 +569,7 @@
 					type: "item"
 				}
 				{
-					id: "62E54B6B701D40E8"
+					id: "03A19D83B2062391"
 					item: {
 						Count: 1b
 						id: "gcyr:space_boots"
@@ -576,7 +581,7 @@
 				}
 			]
 			title: "&9Space Suit"
-			x: 2.0d
+			x: 3.5d
 			y: -8.5d
 		}
 		{
@@ -606,7 +611,7 @@
 				type: "item"
 			}]
 			title: "&9Planet ID"
-			x: 5.0d
+			x: 4.5d
 			y: -8.5d
 		}
 		{
@@ -617,7 +622,7 @@
 			description: [
 				"The &9Rocket Scanner&r is used to create rockets from various blocks."
 				""
-				"To use it, build the multiblock, then place &6engines&r and &6tanks&r (as well as other blocks) within the given area. Once you are satisfied, press the &eBuild Rocket&r text in the Rocket Scanner's GUI."
+				"To use it, build the multiblock (facing either east or west), then place &6engines&r and &6tanks&r (as well as other blocks) within the given area. Once you are satisfied, press the &eBuild Rocket&r text in the Rocket Scanner's GUI."
 			]
 			id: "193B7038EAB6EFA3"
 			rewards: [{
@@ -770,11 +775,11 @@
 		{
 			dependencies: ["7A09229ACC000B09"]
 			description: [
-				"&9Hydrogen&r and &9Nitrogen&r combine together to make &9Ammonia&r."
+				"&9Water&r and &9Chlorine&r can be combined to make &9Hypochlorous Acid&r. If you add &9Mercury&r to catalyze the reaction, the yield is much better."
 				""
-				"An easy way to get Nitrogen is to centrifuge &9Air&r, which will require you to build an &3Air Collector&r. You could also electrolyze &6Saltpeter&r, distill &9Fermented Biomass&r in a &3Distillation Tower&r, or get huge amounts from &2distlling Liquid Air in a Distillation Tower.&r."
-				"{@pagebreak}"
-				"(new page placeholder text)"
+				"&ePlease note that Hypochlorous Acid and Hydrochloric Acid are different things.&r"
+				""
+				"You're already familiar with Chlorine production from your forays into Plastics, but a great source of Mercury is &2centrifuging &6Redstone&r."
 			]
 			id: "5DA5231489336B1B"
 			rewards: [{
@@ -854,6 +859,7 @@
 				"281C7940CD437B69"
 				"7890528B5B23980B"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"The Moon is a barren, lifeless rock... So why did you want to come here?"
 				""
@@ -970,11 +976,6 @@
 					type: "item"
 				}
 				{
-					id: "60BDE4F687BB9677"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
 					id: "7927851A2296E98B"
 					item: "gtceu:lv_muffler_hatch"
 					type: "item"
@@ -1059,7 +1060,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["131EAE1541E9C780"]
+			dependencies: [
+				"131EAE1541E9C780"
+				"6A8764DDD3489EE8"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Place down a &6Waystone&r and set a memorable name and enable &6Global&r if you want other players to access it, in order to be able to easily warp to that location, either using a &6Warp Scroll&r, a &6Warp Stone&r or a second Waystone."]
 			icon: "waystones:waystone"
 			id: "5EB185AD9BD0D069"
@@ -1078,6 +1083,18 @@
 			title: "Thinking with Waystones"
 			x: 9.0d
 			y: -6.0d
+		}
+		{
+			description: ["Waystones also &anaturally generate&r across the world, so nothing is stopping you from simply roaming around and stealing Waystones for your own needs."]
+			icon: "minecraft:ender_eye"
+			id: "6A8764DDD3489EE8"
+			tasks: [{
+				id: "096445386AE9F109"
+				type: "checkmark"
+			}]
+			title: "Exploration can pay off!"
+			x: 9.0d
+			y: -8.5d
 		}
 	]
 	title: "Into The Microverse"

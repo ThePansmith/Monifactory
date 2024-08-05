@@ -223,6 +223,21 @@
         },
         {
             "category": "create:pressing" 
+        },
+        {
+            "category": "nuclearcraft:fusion_coolant" 
+        },
+        {
+            "category": "nuclearcraft:fusion_core" 
+        },
+        {
+            "category": "nuclearcraft:turbine_controller" 
+        },
+        {
+            "category": "enderio:primitive_alloy_smelting" 
+        },
+        {
+            "category": "enderio:sagmilling" 
         }
     ]
 }

@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             X: 'gtceu:gravi_star',
             Z: 'gtceu:quantum_star',
             Y: 'kubejs:endest_star',
-            U: 'armorplus:the_ultimate_material'
+            U: 'kubejs:the_ultimate_material'
         }).id('kubejs:extended/eternal_catalyst');
 
     //INFINITY CATALYST
@@ -45,18 +45,18 @@ ServerEvents.recipes(event => {
         ], {
             P: 'gtceu:tiny_neutronium_dust',
             E: "kubejs:eternal_catalyst",
-            C: 'draconicevolution:chaotic_core',
+            C: 'kubejs:hadal_energy_core',
             H: 'kubejs:heart_of_a_universe'
         }).id('kubejs:extended/infinity_catalyst');
 
 	// infinity ingot
 	event.recipes.extendedcrafting.shaped_table(
-		'gtceu:infinity_ingot', [
+		'kubejs:dormant_infinity_compound_ingot', [
             '         ',
             '     BAAA',
             '  BAAADCA',
             'AAACDCCDA',
-            'ACDDEDDCA',
+            'ACDDCDDCA',
             'ADCCDCAAA',
             'ACDAAAB  ',
             'AAAB     ',
@@ -64,11 +64,34 @@ ServerEvents.recipes(event => {
 		], {
 			A: 'gtceu:neutronium_ingot',
 			B: 'gtceu:neutronium_nugget',
-			C: 'gtceu:omnium_ingot',
-			D: 'kubejs:eternal_catalyst',
-			E: 'kubejs:infinity_catalyst',
+			C: 'gtceu:netherite_ingot',
+			D: 'kubejs:eternal_catalyst'
 		}
-	).id('kubejs:extended/infinity_ingot')
+	).id('kubejs:extended/infinity_compound')
+
+	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation')
+		.itemInputs('kubejs:dormant_infinity_compound_ingot', 'kubejs:infinity_catalyst')
+		.inputFluids(Fluid.of('gtceu:omnium', 576))
+		.itemOutputs('gtceu:infinity_ingot')
+		.duration(400)
+		.EUt(50000)
+		.blastFurnaceTemp(12000)
+
+	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation_t2')
+		.itemInputs('4x kubejs:dormant_infinity_compound_ingot', 'kubejs:furious_infinity_catalyst')
+		.inputFluids(Fluid.of('gtceu:omnium', 576))
+		.itemOutputs('4x gtceu:infinity_ingot', 'kubejs:dormant_furious_infinity_catalyst')
+		.duration(300)
+		.EUt(250000)
+		.blastFurnaceTemp(12000)
+
+	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation_t3')
+		.itemInputs('16x kubejs:dormant_infinity_compound_ingot', 'kubejs:serene_infinity_catalyst')
+		.inputFluids(Fluid.of('gtceu:omnium', 576))
+		.itemOutputs('16x gtceu:infinity_ingot', 'kubejs:inert_serene_infinity_catalyst')
+		.duration(200)
+		.EUt(1000000)
+		.blastFurnaceTemp(12000)
 
 
 	// mote of omnium
@@ -152,7 +175,7 @@ ServerEvents.recipes(event => {
 			'gtceu:tritanium_ingot',
 			'gtceu:duranium_ingot',
 			'gtceu:trinium_ingot',
-			'gtceu:draconium_ingot',
+			'gtceu:cryolobus_ingot',
 			'gtceu:naquadah_ingot',
 			'gtceu:tiny_nether_star_dust',
 		]
@@ -198,7 +221,6 @@ ServerEvents.recipes(event => {
 	).id('kubejs:extended/exotic_materials_catalyst')
 
 	// Angel Ring
-    event.remove({ id: 'better_angel_ring:angel_ring' })
 	event.recipes.extendedcrafting.shaped_table(
 		'better_angel_ring:angel_ring', [
             " AAA ",
@@ -208,8 +230,8 @@ ServerEvents.recipes(event => {
             " AAA "
 		], {
 			A: 'gtceu:rose_gold_ingot',
-			B: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
-			C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT(),
+			B: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),
+			C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(),
 		} //, 2 // remove this comment to force t2 crafting only.
 	).id('kubejs:extended/angel_ring')
 })

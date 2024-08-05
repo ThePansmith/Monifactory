@@ -21,4 +21,8 @@ CapeJS.addCapes(event => {
     event.register("3f529105-93b0-491b-b545-b4fbcf8a6902", "moni")
         //Ciggymunch
     event.register("fa544035-5c57-49c9-8c8f-f44deaa086eb", "moni")
+        //WithersChat
+    event.register("13d0aeda-c1e9-4d91-a9b7-4d4e6a19128e", "moni")
+        //JuiceyBeans
+    event.register("d7dfa467-51b9-4beb-9a40-24ec2c2b8759", "moni")
 })
