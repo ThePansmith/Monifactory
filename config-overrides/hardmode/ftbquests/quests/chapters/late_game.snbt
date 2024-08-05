@@ -166,6 +166,18 @@
 			x: 17.0d
 			y: 22.25d
 		}
+		{
+			id: "33B08B68738FB6E3"
+			linked_quest: "49D33146A1F417E8"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			id: "3580707E636655C2"
+			linked_quest: "11154356854B64DA"
+			x: -6.0d
+			y: 8.25d
+		}
 	]
 	quests: [
 		{
@@ -311,8 +323,8 @@
 		}
 		{
 			dependencies: [
-				"71602D44E1D0013E"
 				"6E5343E45E99CBAD"
+                "11154356854B64DA"
 			]
 			description: [
 				"&6QBit CPUs&r are an advanced Circuit Wafer crucial for &6Quantum Circuits&r."
@@ -1811,7 +1823,7 @@
 			description: [
 				"The multiblock uses energy cores to &erelease extremely large amounts of energy at once&r to craft things. While the batteries themselves are lost, you are able to recover some of the spent energy. "
 				""
-				"&5...once energy voiding is implmented in gtm."
+				"&5...once energy voiding is implemented in gtm."
 			]
 			icon: "gtceu:discharger"
 			id: "713FAECEE5046121"
@@ -2297,7 +2309,6 @@
 			y: 15.25d
 		}
 		{
-			dependencies: ["71602D44E1D0013E"]
 			description: [
 				"Some Micro Miner missions use a &6Gemstone Sensor&r to scout out gems instead of ores."
 				""
@@ -2363,47 +2374,6 @@
 			}]
 			x: 3.0d
 			y: 24.0d
-		}
-		{
-			dependencies: ["49D33146A1F417E8"]
-			description: [
-				"&9Radon&r will be needed in large quantities."
-				""
-				"For now, you'll need to obtain it from Tier Two Micro Miner missions, in the form of &6Radium Salt&r. Electrolyze it for Radon and &6Rock Salt&r. &2You can also get it from distilling liquid Ender Air.&r"
-				""
-				"Later it will be possible to make Radon using a &bGregTech &3Fusion Reactor&r."
-			]
-			disable_toast: true
-			icon: "gtceu:radon_bucket"
-			id: "6B0A547EA42CD35A"
-			shape: "hexagon"
-			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:radon"
-				id: "613824353565F9CF"
-				type: "fluid"
-			}]
-			title: "&2Radon"
-			x: -6.0d
-			y: 6.25d
-		}
-		{
-			dependencies: [
-				"11154356854B64DA"
-				"6B0A547EA42CD35A"
-			]
-			description: ["You'll need an HV or better &3Chemical Bath&r to make these. The recipe is quite slow, so invest in the highest tier Chemical Baths you can and consider parallelizing the recipe."]
-			disable_toast: true
-			id: "71602D44E1D0013E"
-			shape: "hexagon"
-			subtitle: "When &6Ender Eyes&r just aren't creepy enough."
-			tasks: [{
-				id: "52E1C27170D352B7"
-				item: "gtceu:quantum_eye"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 8.25d
 		}
 		{
 			dependencies: ["53EC3831D66769CA"]
@@ -2734,9 +2704,9 @@
 			description: [
 				"Interestingly enough, sculk itself functions great as a &9biobattery&r, being able to store and quickly release mass amounts of energy, perfect for some upcoming items. The &9sculk charger&r should be able to get started in tacking advantage of it."
 				""
-				"To use it, set the recipe &ein the same way you would for an autocrafting table&r, then place an inventory (such as a barrel on top), and connect power to the charger. Items can be extacted from the charger in any manner."
+				"To use it, set the recipe &ein the same way you would for an autocrafting table&r, then place an inventory (such as a barrel on top), and connect power to the charger and a pylon. Items can be extacted from the charger in any manner."
 				""
-				"The charger itself &ehas extreme throughput&r, so don't worry about having to wait for it to craft items."
+				"The charger and pylon themselves &ehave extreme throughput&r, so don't worry about having to wait for it to craft items."
 			]
 			id: "7F75D961B102A72D"
 			rewards: [{
@@ -2746,11 +2716,18 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			tasks: [{
-				id: "338DCAE7D9D78C51"
-				item: "extendedcrafting:auto_flux_crafter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "338DCAE7D9D78C51"
+					item: "extendedcrafting:auto_flux_crafter"
+					type: "item"
+				}
+				{
+					id: "00EF32A94D627A37"
+					item: "extendedcrafting:flux_alternator"
+					type: "item"
+				}
+			]
 			title: "&9Sculk Charging"
 			x: 25.25d
 			y: 8.25d
