@@ -154,4 +154,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(['/^kubejs:.+infinity_dust_block$/', 'kubejs:infinity_dust_block'], (item, adv, text) => {
         text.add(1, Text.gray('Not quite solid'))
     })
+
+    if (Platform.isLoaded('tempad')) {
+        tooltip.add('tempad:tempad', '§6Uses Monipennies as fuel');
+    }
 })
