@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
             'PTP',
             'PTP'
         ], {
-            P: 'gtceu:stainless_steel_plate',
+            P: 'gtceu:cupronickel_plate',
             T: 'enderio:fluid_tank'
         })
 
@@ -182,6 +182,26 @@ ServerEvents.recipes(event => {
                 'PTP'
             ], {
                 P: 'gtceu:tungsten_steel_plate',
+                T: 'enderio:fluid_tank'
+            })
+
+        event.shaped(
+            'gcyr:elite_rocket_motor', [
+                ' P ',
+                'PPP',
+                'TTT'
+            ], {
+                P: 'gtceu:double_titanium_tungsten_carbide_plate',
+                T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').weakNBT()
+            })
+
+        event.shaped(
+            'gcyr:elite_fuel_tank', [
+                'PTP',
+                'PTP',
+                'PTP'
+            ], {
+                P: 'gtceu:hsse_plate',
                 T: 'enderio:fluid_tank'
             })
 
