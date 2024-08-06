@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
             '  QQAQQ  ',
             ' QQQQQQQ ',
             'QQBQRQBQQ',
-            ' QQQQQQQ ',
+            ' QQQCQQQ ',
             ' QQQQQQQ ',
             'QQ W W QQ'
         ], {
@@ -204,7 +204,8 @@ ServerEvents.recipes(event => {
             U: 'kubejs:universal_navigator',
             A: 'gtceu:uv_field_generator',
             B: 'gtceu:ev_super_chest',
-            R: 'kubejs:abyssal_energy_core',
+            R: 'kubejs:universal_warp_core',
+            C: 'kubejs:universal_warp_controller',
             W: 'kubejs:hadal_warp_engine'
         }
     )
@@ -396,11 +397,12 @@ ServerEvents.recipes(event => {
         'kubejs:universal_warp_controller', [
             'SMS',
             'CHC',
-            'SCS'
+            'SFS'
         ], {
             C: '#gtceu:circuits/luv',
             H: 'kubejs:warp_controller',
             M: 'kubejs:abyssal_energy_core',
+            F: 'extendedcrafting:the_ultimate_catalyst',
             S: 'gtceu:void_empowered_block'
         }
     )
