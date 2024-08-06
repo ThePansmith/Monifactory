@@ -248,12 +248,11 @@ ServerEvents.recipes(event => {
                 'kubejs:microminer_t4half',
                 '8x kubejs:quantum_flux',
                 '64x kubejs:aerotheum_dust',
-                '16x minecraft:deepslate'
+                '16x minecraft:sculk_catalyst'
             )
             .itemOutputs(
                 '64x kubejs:deep_dark_data',
                 '64x kubejs:deep_dark_data',
-                '16x minecraft:sculk_catalyst',
                 '32x kubejs:warden_horn'
             )
             .duration(100*20)
