@@ -196,6 +196,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         event.create('simulation_supercomputer', 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes('simulation_supercomputer')
+            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
             .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
@@ -211,7 +212,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
                 .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(40)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                    .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
                 .where('#', Predicates.any())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
@@ -221,6 +222,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         event.create('loot_superfabricator', 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes('loot_superfabricator')
+            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
             .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
@@ -236,7 +238,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
                 .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(40)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                    .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
                 .where('#', Predicates.any())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
