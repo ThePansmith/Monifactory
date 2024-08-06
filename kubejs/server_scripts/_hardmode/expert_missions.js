@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dragon_lair_data',
                 '64x kubejs:dragon_lair_data',
                 '64x minecraft:dragon_breath',
-                '64x minecraft:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
                 'minecraft:dragon_head'
             )
             .duration(100*20)
@@ -214,12 +214,12 @@ ServerEvents.recipes(event => {
                 '8x kubejs:dragon_lair_data'
             )
             .itemOutputs(
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
-                '64x minecraft:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
                 '64x minecraft:dragon_breath',
                 '64x minecraft:dragon_breath',
                 '64x minecraft:dragon_breath',
@@ -248,11 +248,12 @@ ServerEvents.recipes(event => {
                 'kubejs:microminer_t4half',
                 '8x kubejs:quantum_flux',
                 '64x kubejs:aerotheum_dust',
-                '16x minecraft:sculk_catalyst'
+                '16x minecraft:deepslate'
             )
             .itemOutputs(
                 '64x kubejs:deep_dark_data',
                 '64x kubejs:deep_dark_data',
+                '16x minecraft:sculk_catalyst',
                 '32x kubejs:warden_horn'
             )
             .duration(100*20)

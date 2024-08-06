@@ -145,6 +145,7 @@ ServerEvents.recipes(event => {
     ).id('gcyr:shaped/space_station_packager')
 
     //Motors and Tanks
+    event.remove({ output: 'gcyr:basic_rocket_motor' })
     event.shaped(
         'gcyr:basic_rocket_motor', [
             ' P ',
@@ -155,6 +156,7 @@ ServerEvents.recipes(event => {
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').weakNBT()
         })
 
+    event.remove({ output: 'gcyr:basic_fuel_tank' })
     event.shaped(
         'gcyr:basic_fuel_tank', [
             'PTP',
