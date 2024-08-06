@@ -145,6 +145,7 @@
 	#Range: > 0
 	maxentities = 2
 	#The way a powered spawner spawns an entity. Possible options: 'ENTITYPE' Spawns the same entity types as the soul vial. 'COPY' Spawns an exact copy of the mob in the soul vial
+	#Allowed Values: ENTITYTYPE, COPY
 	"Spawn Type" = "ENTITYTYPE"
 	#The maximum amount of spawners before the spawners suffers a loss of efficiency
 	#Range: > 0
