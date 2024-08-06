@@ -2745,10 +2745,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "295338231C995AE7"
-				item: "kubejs:mesol_core"
+				item: "kubejs:sculk_core"
 				type: "item"
 			}]
-			title: "&9Mesol Core"
+			title: "&9Sculk Core"
 			x: 27.25d
 			y: 8.25d
 		}
