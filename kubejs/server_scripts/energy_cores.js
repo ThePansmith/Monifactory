@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
             }
         )
 
-        event.recipes.extendedcrafting.shaped_flux_crafter('kubejs:mesol_core', [
+        event.recipes.extendedcrafting.shaped_flux_crafter('kubejs:sculk_core', [
         'ABA',
         'BCB',
         'ABA'
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
         }, 200000000).powerRate(200000000);
 
         event.recipes.gtceu.assembler("kubejs:mesol_energy_core")
-        .itemInputs("kubejs:mesol_core", "4x gtceu:enori_empowered_gem")
+        .itemInputs("kubejs:sculk_core", "4x gtceu:enori_empowered_gem")
         .inputFluids('enderio:xp_juice 100')
         .itemOutputs("kubejs:mesol_energy_core")
         .duration(100)
