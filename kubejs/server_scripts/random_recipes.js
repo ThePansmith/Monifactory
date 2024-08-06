@@ -70,6 +70,14 @@ ServerEvents.recipes(event => {
     event.shapeless("minecraft:clay", ["kubejs:dust", "minecraft:water_bucket"])
 
     // Sculk Catalyst LCR recipes
+
+    event.recipes.gtceu.large_chemical_reactor("sculk_catalyst_initial")
+        .itemInputs('#forge:stone', 'minecraft:soul_sand')
+        .inputFluids("enderio:xp_juice 8000", 'gtceu:biomass 2000', 'gtceu:plutonium 576', 'gtceu:californium 576')
+        .itemOutputs("minecraft:sculk_catalyst")
+        .duration(2000)
+        .EUt(8000)
+
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst")
         .notConsumable("minecraft:sculk_catalyst")
         .itemInputs('4x #forge:stone')
@@ -204,6 +212,22 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(6800)
         .EUt(30720)
 
+    //JEAN Cryolobus Recipes
+    event.recipes.gtceu.electric_blast_furnace("cryolobus_jean")
+        .itemInputs("gtceu:cryolobus_dust")
+        .inputFluids("gtceu:jean_gasoline 400")
+        .itemOutputs("gtceu:hot_cryolobus_ingot")
+        .duration(900)
+        .blastFurnaceTemp(6800)
+        .EUt(30720)
+
+    event.recipes.gtceu.electric_blast_furnace("cryolobus_scale_jean")
+        .itemInputs("4x kubejs:warden_horn")
+        .inputFluids("gtceu:jean_gasoline 1600")
+        .itemOutputs("2x gtceu:hot_cryolobus_ingot")
+        .duration(1800)
+        .blastFurnaceTemp(6800)
+        .EUt(30720)
 
     //Cryolobus Vac Freezer recipe
     event.remove({ id: "gtceu:vacuum_freezer/cool_hot_cryolobus_ingot" }) 
