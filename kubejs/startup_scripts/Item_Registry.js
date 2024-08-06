@@ -292,7 +292,7 @@ StartupEvents.registry('item', event => {
 
     // Sculk Items
     event.create('warden_horn').displayName("Warden Tendril")
-    event.create('mesol_core')
+    event.create('sculk_core')
     event.create('mesol_energy_core')
     event.create('bathyal_energy_core')
     event.create('abyssal_energy_core')
