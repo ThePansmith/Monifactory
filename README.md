@@ -36,7 +36,7 @@ Highlights include:
 
 - Forced Peaceful Mode
 - No HNN for easy infinite resources
-- Monicoins can't be spent, or obtained
+- Monicoins can't be spent
 - The Steam Age
 - More Focus on GT Power Generation
 - No Creative Tank; instead, use Stabilized Micro Miners for late-game infinite resources
