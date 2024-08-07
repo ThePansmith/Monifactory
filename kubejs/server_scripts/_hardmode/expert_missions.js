@@ -257,6 +257,22 @@ ServerEvents.recipes(event => {
             )
             .duration(100*20)
             .EUt(30720)
+        
+        //Initial Sculk Catalyst Mission
+
+        event.recipes.gtceu.advanced_microverse_ii('t6_five_hm')
+        .itemInputs(
+            'kubejs:microminer_t6',
+            '16x kubejs:quantum_flux',
+            '16x kubejs:stabilized_curium',
+            '8x kubejs:impossible_realm_data',
+            '4x gtceu:void_empowered_block'
+        )
+        .itemOutputs(
+            'minecraft:sculk_catalyst'
+        )
+        .duration(100*20)
+        .EUt(30720)
 
         // Tier 8.5 missions
         event.recipes.gtceu.advanced_microverse_iii('t8half_one')

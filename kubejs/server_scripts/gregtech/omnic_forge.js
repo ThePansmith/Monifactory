@@ -110,6 +110,12 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(120)
 
+    event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_conflux_catalyst')
+        .itemInputs('2x extendedcrafting:the_ultimate_component', '5x gtceu:black_steel_plate')
+        .itemOutputs('extendedcrafting:the_ultimate_catalyst')
+        .duration(20)   
+        .EUt(480)
+
 
     event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_quantum_flux')
         .itemInputs('redstone_arsenal:flux_gem', '4x kubejs:primal_mana', '2x minecraft:dragon_breath', 'gtceu:nether_star_dust')

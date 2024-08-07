@@ -253,6 +253,24 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t4half')
             .circuit(5)
             .itemOutputs(
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x kubejs:ender_dragon_scale',
+                '64x minecraft:dragon_breath',
+                '64x minecraft:dragon_breath',
+                '64x minecraft:dragon_breath',
+                '64x minecraft:dragon_breath'
+            )
+            .duration(780)
+            .EUt(30720)
+
+        event.recipes.gtceu.actualization_chamber('pristine_t4half_six')
+            .itemInputs('kubejs:pristine_matter_t4half')
+            .circuit(6)
+            .itemOutputs(
                 '64x kubejs:wither_realm_data',
                 '64x kubejs:wither_realm_data',
                 '48x gtceu:nether_star_block'
@@ -260,9 +278,9 @@ ServerEvents.recipes(event => {
             .duration(780)
             .EUt(30720)
         
-        event.recipes.gtceu.actualization_chamber('pristine_t4half_six')
+        event.recipes.gtceu.actualization_chamber('pristine_t4half_seven')
             .itemInputs('kubejs:pristine_matter_t4half')
-            .circuit(6)
+            .circuit(7)
             .itemOutputs(
                 '64x kubejs:deep_dark_data',
                 '64x kubejs:deep_dark_data',
@@ -341,6 +359,15 @@ ServerEvents.recipes(event => {
                 '64x kubejs:ender_dragon_scale',
                 '64x kubejs:ender_dragon_scale',
                 '64x minecraft:dragon_breath'
+            )
+            .duration(780)
+            .EUt(30720)
+        
+            event.recipes.gtceu.actualization_chamber('pristine_t6_five')
+            .itemInputs('kubejs:pristine_matter_t6')
+            .circuit(5)
+            .itemOutputs(
+                'minecraft:sculk_catalyst'
             )
             .duration(780)
             .EUt(30720)
