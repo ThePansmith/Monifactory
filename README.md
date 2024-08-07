@@ -14,7 +14,9 @@
 ## Features
 - [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](https://gist.github.com/ThePansmith/f2637bcbcb37b6d7f07cddb8a3385f14)
 - A complete overhaul of post-tank progression
-- Retexturing of everything Nomi to better match the modern style
+- A new difficulty mode for returning Nomi CEu HM players
+- A Retexturing of everything Nomi to better match the modern style
+- Optional Compatability with various mods, such as Create
 
 
 
