@@ -76,14 +76,15 @@ ServerEvents.recipes(event => {
     reconstructorrecipe.forEach(([tier, plate]) => {
     event.shaped(
         `gtceu:${tier}_atomic_reconstructor`, [
-        'CPC',
-        'EHE',
-        'PPP'
+        'PCE',
+        'CHL',
+        'PPE'
     ], {
         P: `gtceu:${plate}_plate`,
         E: `gtceu:${tier}_emitter`,
         H: `gtceu:${tier}_machine_hull`,
-        C: `#gtceu:circuits/${tier}`
+        C: `#gtceu:circuits/${tier}`,
+        L: `#forge:lenses`
     }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
     })
 
