@@ -69,14 +69,7 @@ ServerEvents.recipes(event => {
     // Dust hydration
     event.shapeless("minecraft:clay", ["kubejs:dust", "minecraft:water_bucket"])
 
-    // Sculk Catalyst LCR recipes
-
-    event.recipes.gtceu.large_chemical_reactor("sculk_catalyst_initial")
-        .itemInputs('#forge:stone', 'minecraft:soul_sand')
-        .inputFluids("enderio:xp_juice 8000", 'gtceu:biomass 2000', 'gtceu:plutonium 576', 'gtceu:californium 576')
-        .itemOutputs("minecraft:sculk_catalyst")
-        .duration(2000)
-        .EUt(8000)
+    // Sculk LCR recipes 
 
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst")
         .notConsumable("minecraft:sculk_catalyst")
