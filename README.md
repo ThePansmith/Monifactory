@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/ThePansmith/Monifactory/assets/70342772/4ac1d5e7-0610-4f44-bfed-b3b2022eecc0" height="250" alt="Logo"></p>
 <h1 align="center">Monifactory</h1>
-<p align="center"><b><i>Port of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and its related mods.</i></b></p>
+<p align="center"><b><i>A Remaster and Port of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and its related mods.</i></b></p>
 <h1 align="center">
     <a href="https://github.com/ThePansmith/Monifactory/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu?style=for-the-badge&logo=github" alt="License"></a>
     <img src="https://img.shields.io/github/actions/workflow/status/ThePansmith/Monifactory/build_pr.yml?branch=main&style=for-the-badge&label=Dev%20Build" alt="GitHub Actions Workflow Status">
@@ -12,9 +12,11 @@
 </h1>
 
 ## Features
-- GTCEu Modern which is on active development in-parity with regular GTCEu
-- LV-UHV tier in-parity of Nomifactory CEu
-- A WIP Post Tank Progression overhaul
+- [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](https://gist.github.com/ThePansmith/f2637bcbcb37b6d7f07cddb8a3385f14)
+- A complete overhaul of post-tank progression
+- Retexturing of everything Nomi to better match the modern style
+
+
 
 ## Credits
 Original pack by [Exaxxion](https://github.com/Exaxxion).
