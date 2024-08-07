@@ -4,7 +4,7 @@
 
 	[Settings."FPS Counter"]
 		"FPS Counter Distance" = 12
-		"Display FPS Counter (OFF, SIMPLE, ADVANCED)" = "ADVANCED"
+		"Display FPS Counter (OFF, SIMPLE, ADVANCED)" = "OFF"
 
 	[Settings.Misc]
 		"Render Fog" = true

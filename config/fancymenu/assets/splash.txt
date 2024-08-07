@@ -10,7 +10,6 @@ That cat ate my circuits!
 Read the questbook!
 Create compatible!
 Who's Greg?
-Monifactory, a post-gregtech role playing game!
 Steam powered!
 Diamond powered!
 Also try CABIN!
@@ -24,7 +23,6 @@ Minin ya ores!
 Cake-based travel!
 Try using a screwdriver on a Gregtech Drum!
 The Rot
-Things have Changed...
 Sussy!
 Now with Harder Mode!
 Don't give Meowni circuits!
@@ -43,7 +41,6 @@ Open Source!
 Also try Factorio!
 Not P-rankable!
 That cat is looking at me weird...
-That shark is looking at me weird...
 TODO: Write more splash texts
 Known to give Stage 5 Brainrot!
 Read the quests!
@@ -65,4 +62,4 @@ Chemical Engineering in Minecraft!
 The Day of Reckoning
 Do your homework first!
 /reload
-Why is the C capitalised?
+%t gtm

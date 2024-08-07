@@ -120,7 +120,7 @@ function init()
     // Infinity
     panel()
     .name("infinity")
-    .generation(16777216)
+    .generation(33554432)
     .transfer(65536000)
     .capacity(262144000000)
     .build()

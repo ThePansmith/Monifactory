@@ -379,13 +379,6 @@ if (isHarderMode) {
         .duration(200)
         .EUt(32)
 
-    // Stellar Alloy
-    event.recipes.gtceu.alloy_smelter('kubejs:stellar_alloy')
-        .itemInputs('gtceu:end_steel_ingot', '8x enderio:grains_of_infinity')
-        .itemOutputs('gtceu:stellar_alloy_ingot')
-        .duration(200)
-        .EUt(2000)
-
     // Remove useless/op conduit recipes from enderio
     event.remove({ input: '#enderio:fused_quartz', output: 'enderio:pressurized_fluid_conduit' })
     event.remove({ input: 'gtceu:vibrant_alloy_ingot', output: 'enderio:ender_fluid_conduit' })
@@ -409,6 +402,14 @@ if (isHarderMode) {
         .itemOutputs('enderio:infinity_rod')
         .duration(200)
         .EUt(30)
+
+    // Conduit Binder Composite Mixer Recipe
+    event.recipes.gtceu.mixer("kubejs:conduit_binder_composite")
+        .itemInputs('2x minecraft:clay_ball', '3x minecraft:gravel', '2x #minecraft:smelts_to_glass')
+        .itemOutputs('8x enderio:conduit_binder_composite')
+        .duration(64)
+        .EUt(7)
+
 
     // Enchanter
     event.remove({ output: ['enderio:enchanter'] })
@@ -741,4 +742,6 @@ if (isHarderMode) {
         .itemOutputs("8x enderio:me_conduit")
         .duration(100)
         .EUt(16)
+
+    event.replaceInput({ output: 'enderio:extraction_speed_upgrade_3' }, 'gtceu:soularium_ingot', 'gtceu:aluminium_ingot')
 })

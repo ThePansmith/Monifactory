@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
     //GT
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
     event.remove({ id: 'gtceu:smelting/dust_mythril__demagnetize_from_dust' })
+    event.remove({ id: 'gtceu:mixer/rhodium_plated_palladium' })
     
     //FIXME will get fixed
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__fireclay" })
@@ -96,13 +97,20 @@ ServerEvents.recipes(event => {
     // event.remove({id: 'minecraft:kjs/iron_nugget'})
     // event.remove({id: 'minecraft:kjs/gold_nugget'})
 
-    // Just a test recipe packaged with the coremod
-    event.remove({ id: 'gtceu:hypogean_infuser/mesol' })
-
     // Posttank stuff
     event.remove({ id: /gtceu:uxv/ })
     event.remove({ id: /gtceu:opv/ })
 
     // LaserIO
     event.remove({ output: ['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'] })
+
+    //Default Fluxed Electrum recipe (Redstone Arsenal)
+    event.remove({ id: 'redstone_arsenal:materials/flux_dust'})
+
+    // PEX
+    event.remove({ output: ['packagedexcrafting:flux_crafter'] })
+
+    // Utilitarian
+    event.remove({ id: /utilitarian:.*_soliciting_carpet/ })
+    event.remove({ output: ['utilitarian:snad', 'utilitarian:red_snad', 'utilitarian:soul_snad', 'utilitarian:fluid_hopper', 'utilitarian:no_soliciting_banner']})
 })

@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
     // Sculk Catalyst LCR recipes
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst")
         .notConsumable("minecraft:sculk_catalyst")
-        .itemInputs('4x #forge:cobblestone')
+        .itemInputs('4x #forge:stone')
         .inputFluids("enderio:xp_juice 4000", 'gtceu:plutonium 144')
         .itemOutputs("4x minecraft:sculk_catalyst")
         .duration(1000)
@@ -80,9 +80,23 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst_boosted")
         .notConsumable("minecraft:sculk_catalyst")
-        .itemInputs('16x #forge:cobblestone')
+        .itemInputs('16x #forge:stone')
         .inputFluids("enderio:xp_juice 4000", 'gtceu:berkelium 144')
         .itemOutputs("16x minecraft:sculk_catalyst")
+        .duration(1000)
+        .EUt(2000)
+
+    event.recipes.gtceu.large_chemical_reactor("sculk_vein")
+        .itemInputs('minecraft:sculk_catalyst', '16x minecraft:vine')
+        .inputFluids("enderio:xp_juice 2000")
+        .itemOutputs("16x minecraft:sculk_vein")
+        .duration(1000)
+        .EUt(2000)
+
+    event.recipes.gtceu.large_chemical_reactor("sculk_block")
+        .itemInputs('minecraft:sculk_catalyst', '64x minecraft:moss_block')
+        .inputFluids("enderio:xp_juice 2000")
+        .itemOutputs("64x minecraft:sculk")
         .duration(1000)
         .EUt(2000)
 
@@ -255,13 +269,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.arc_furnace("sterile_filter_recycling")
         .itemInputs("gtceu:sterilizing_filter_casing")
         .inputFluids("gtceu:oxygen 1265")
-        .itemOutputs("4x gtceu:iridium_ingot", "2x gtceu:black_steel_ingot", "6x gtceu:small_ash_dust")
+        .itemOutputs("1x gtceu:iridium_ingot", "4x gtceu:tritanium_nugget", "6x gtceu:small_ash_dust")
         .duration(691)
         .EUt(30)
 
     event.recipes.gtceu.macerator("sterile_filter_crushing")
         .itemInputs("gtceu:sterilizing_filter_casing")
-        .itemOutputs("12x gtceu:polybenzimidazole_dust", "4x gtceu:iridium_dust", "2x gtceu:black_steel_dust")
+        .itemOutputs("3x gtceu:polybenzimidazole_dust", "gtceu:iridium_dust", "gtceu:small_tritanium_dust")
         .duration(696)
         .EUt(32)
 
@@ -392,7 +406,7 @@ ServerEvents.recipes(event => {
         S: 'gtceu:uhv_sensor',
         C: '#gtceu:circuits/uev',
         E: 'gtceu:uhv_emitter',
-        W: 'gtceu:netherite_quadruple_wire'
+        W: 'gtceu:activated_netherite_quadruple_wire'
     }
     )
 
@@ -598,7 +612,12 @@ ServerEvents.recipes(event => {
     p2p.forEach(type => {
         event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
     })
-
+    event.stonecutting('mae2:pattern_p2p_tunnel', 'ae2:me_p2p_tunnel')
+    const multi_p2p = ["pattern", "redstone", "fluid", "fe"]
+    multi_p2p.forEach(type => {
+        event.stonecutting('mae2:'+type+'_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel')
+    })
+    
     // Stonecutting CCI blocks
     let sameItemsTags = ['#chisel_chipped_integration:factory_block', '#chisel_chipped_integration:technical_block', '#chisel_chipped_integration:laboratory_block', '#chisel_chipped_integration:tyrian']; // What item tags to go through (change this so you have your tags)
     sameItemsTags.forEach(tag => {
@@ -632,7 +651,7 @@ ServerEvents.recipes(event => {
    
     event.remove({ id: 'gtceu:assembly_line/conveyor_module_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/conveyor_module_luv')
-        .itemInputs('2x gtceu:luv_electric_motor','16x gtceu:hsss_round','2x gtceu:hsss_plate','4x gtceu:hsss_screw','4x gtceu:hsss_ring','2x gtceu:niobium_titanium_single_cable')
+        .itemInputs('2x gtceu:luv_electric_motor','2x gtceu:hsss_plate','4x gtceu:hsss_ring','16x gtceu:hsss_round','4x gtceu:hsss_screw','2x gtceu:niobium_titanium_single_cable')
         .inputFluids('gtceu:soldering_alloy 144','gtceu:lubricant 250','gtceu:styrene_butadiene_rubber 1152')
         .itemOutputs('gtceu:luv_conveyor_module')
         .duration(600)
@@ -717,6 +736,152 @@ ServerEvents.recipes(event => {
     .duration(40)
     .EUt(30)
 
+    //Cleanroom Hatch
+    event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning'})
+    event.shaped(
+        "gtceu:cleaning_maintenance_hatch", [
+        'CMC',
+        'RHR',
+        'WCW'
+    ], {
+        R: "gtceu:iv_robot_arm",
+        W: "gtceu:graphene_single_cable",
+        M: "gtceu:auto_maintenance_hatch",
+        H: "gtceu:iv_machine_hull",
+        C: "#gtceu:circuits/iv"
+    })
+    
+    //ZPM Field Gen
+    event.remove({ id: 'gtceu:assembly_line/field_generator_zpm'})
+    event.recipes.gtceu.assembly_line('kubejs:assembly_line/zpm_field_generator')
+    .itemInputs('gtceu:naquadah_alloy_frame','6x gtceu:naquadah_alloy_plate', 'gtceu:quantum_star','2x gtceu:zpm_emitter','2x #gtceu:circuits/zpm','64x gtceu:fine_uranium_rhodium_dinaquadide_wire', '64x gtceu:fine_uranium_rhodium_dinaquadide_wire','4x gtceu:vanadium_gallium_single_cable')
+    .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:cryococcus 1152')
+    .itemOutputs('gtceu:zpm_field_generator')
+    .duration(600)
+    .EUt(24000)
+    .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
+
+    // Scaleline
+    event.recipes.gtceu.macerator('dragon_scale_crushing')
+        .itemInputs('kubejs:ender_dragon_scale')
+        .itemOutputs('kubejs:ender_dragon_scale_dust')
+        .chancedOutput('kubejs:ender_dragon_scale_dust', 1000, 500)
+        .chancedOutput('gtceu:graphite_dust', 1400, 850)
+        .chancedOutput('gtceu:small_ilmenite_dust', 1400, 850)
+        .duration(200)
+        .EUt(120)
+
+    event.recipes.gtceu.mixer('scale_dust_acid_mix')
+        .itemInputs('4x kubejs:ender_dragon_scale_dust')
+        .inputFluids('gtceu:hydrochloric_acid 2000')
+        .outputFluids('gtceu:hydrochloric_dragon_scale_solution 2000')
+        .duration(240)
+        .EUt(120)
+    
+    event.recipes.gtceu.centrifuge('scale_acid_centrifuge')
+        .inputFluids('gtceu:hydrochloric_dragon_scale_solution 1000')
+        .itemOutputs('gtceu:graphitic_tantalum_dust')
+        .outputFluids('gtceu:hydrochloric_manganese_solution 1000')
+        .duration(120)
+        .EUt(120)
+
+    event.recipes.gtceu.electrolyzer('manganese_acid_separation')
+        .inputFluids('gtceu:hydrochloric_manganese_solution 1000')
+        .itemOutputs('gtceu:manganese_dust')
+        .outputFluids('gtceu:hydrogen 1000', 'gtceu:chlorine 1000')
+        .duration(240)
+        .EUt(120)
+
+    event.recipes.gtceu.mixer('graphitic_tantalum_acid_mix')
+        .itemInputs('4x gtceu:graphitic_tantalum_dust')
+        .inputFluids('gtceu:hydrofluoric_acid 2000')
+        .outputFluids('gtceu:hydrofluoric_graphitic_tantalum_solution 2000')
+        .duration(240)
+        .EUt(120)
+        
+    event.recipes.gtceu.centrifuge('tantalum_acid_graphite_centrifuge')
+        .inputFluids('gtceu:hydrofluoric_graphitic_tantalum_solution 1000')
+        .itemOutputs('gtceu:graphite_dust')
+        .outputFluids('gtceu:hydrofluoric_tantalum_solution 1000')
+        .duration(120)
+        .EUt(120)
+
+    event.recipes.gtceu.electrolyzer('tantalum_acid_separation')
+        .inputFluids('gtceu:hydrofluoric_tantalum_solution 1000')
+        .itemOutputs('gtceu:tantalum_dust')
+        .outputFluids('gtceu:hydrogen 1000', 'gtceu:fluorine 1000')
+        .duration(240)
+        .EUt(120)
+
+    // Quantum Ring Assembler Recipes
+    event.recipes.gtceu.assembler('kubejs:quantum_ring')
+        .itemInputs('4x gtceu:stainless_steel_plate', '2x ae2:calculation_processor', '2x ae2:engineering_processor', 'gtceu:quantum_star')
+        .itemOutputs('ae2:quantum_ring')
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.assembler('kubejs:quantum_link')
+        .itemInputs('4x ae2:fluix_pearl', '4x ae2:quartz_glass', 'gtceu:certus_quartz_plate')
+        .itemOutputs('ae2:quantum_link')
+        .duration(100)
+        .EUt(30)
+
+    // Dragon Breath caning and extracting
+    event.recipes.gtceu.extractor('dragon_breath_fluid')
+        .itemInputs('minecraft:dragon_breath')
+        .itemOutputs('minecraft:glass_bottle')
+        .outputFluids('gtceu:dragon_breath 250')
+        .duration(400)
+        .EUt(2)
+
+    event.recipes.gtceu.canner('dragon_breath_bottling')
+        .itemInputs('minecraft:glass_bottle')
+        .inputFluids('gtceu:dragon_breath 250')
+        .itemOutputs('minecraft:dragon_breath')
+        .duration(400)
+        .EUt(2)
+
+    // JEAN Gasoline consumption
+    event.recipes.gtceu.combustion_generator('jean_gasoline_generator')
+        .inputFluids('gtceu:jean_gasoline 1')
+        .duration(320)
+        .EUt(-256)
+
+    // JEAN Gasoline
+    event.recipes.gtceu.large_chemical_reactor('kubejs:jean_gasoline')
+        .itemInputs('3x gtceu:netherrack_dust')
+        .inputFluids('gtceu:high_octane_gasoline 8000', 'gtceu:rocket_fuel 5000', 'gtceu:chlorine_triflouride 2000', 'gtceu:tetraethyllead 1000', 'gtceu:dragon_breath 500')
+        .outputFluids('gtceu:jean_gasoline 16000')
+        .duration(200)
+        .EUt(7680)
+        .circuit(24)
+
+    event.recipes.gtceu.chemical_reactor('kubejs:chloroethane')
+        .inputFluids('gtceu:ethylene 1000', 'gtceu:hydrochloric_acid 1000')
+        .outputFluids('gtceu:chloroethane 2000')
+        .duration(60)
+        .EUt(30)
+        .circuit(4)
+
+    event.recipes.gtceu.chemical_reactor('kubejs:tetraethyllead')
+        .itemInputs('4x gtceu:sodium_lead_alloy_dust')
+        .inputFluids('gtceu:chloroethane 4000')
+        .outputFluids('gtceu:tetraethyllead 1000')
+        .itemOutputs('4x gtceu:salt_dust', '3x gtceu:lead_dust')
+        .duration(300)
+        .EUt(480)
+
+    event.recipes.gtceu.chemical_reactor('kubejs:chlorine_triflouride')
+        .inputFluids('gtceu:fluorine 3000', 'gtceu:chlorine 1000')
+        .outputFluids('gtceu:chlorine_triflouride 2000')
+        .duration(60)
+        .EUt(7)
+
+    event.recipes.gtceu.mixer('kubejs:sodium_lead_alloy')
+        .itemInputs('gtceu:sodium_dust', 'gtceu:lead_dust')
+        .itemOutputs('2x gtceu:sodium_lead_alloy_dust')
+        .duration(200)
+        .EUt(7)
 
 })
  

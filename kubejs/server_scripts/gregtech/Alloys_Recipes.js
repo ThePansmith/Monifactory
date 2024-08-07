@@ -47,11 +47,6 @@ ServerEvents.recipes(event => {
 		'gtceu:electrical_steel_ingot', 6, 16);
 
 	alloySmeltingVariant(
-		['#forge:ingots/dark_steel', '#forge:dusts/dark_steel'],
-		['minecraft:end_stone', '#forge:dusts/endstone'], // apparently we have dusts/end_stone (doesnt work)
-		'gtceu:end_steel_ingot', 15, 2000);
-
-	alloySmeltingVariant(
 		['#forge:ingots/steel', '#forge:dusts/steel'],
 		['#forge:dusts/boron'],
 		'2x nuclearcraft:ferroboron_ingot', 15, 120);
@@ -81,6 +76,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('nuclearcraft:fission_reactor_glass')
         .duration(50)
         .EUt(16)
+
+        event.recipes.gtceu.alloy_smelter('kubejs:netherite_ingot')
+        .itemInputs('4x #forge:ingots/gold', '4x minecraft:netherite_scrap') // was flipped
+        .itemOutputs('1x minecraft:netherite_ingot')
+        .duration(100)
+        .EUt(32)
 
     event.remove({ id: "minecraft:nuclearcraft_ferroboron_plate" }) // minecraft??
     event.remove({ id: "minecraft:nuclearcraft_ferroboron_dust" })
@@ -119,6 +120,8 @@ ServerEvents.recipes(event => {
         .duration(140)
         .EUt(30)
 
+    //Replace default GTCEu glowstone separation recipe to match mixing recipe
+    event.replaceOutput({ id: "gtceu:centrifuge/glowstone_separation" }, 'minecraft:redstone', 'gtceu:tricalcium_phosphate_dust')
     event.recipes.gtceu.mixer("kubejs:glowstone_dust")
         .itemInputs('gtceu:tricalcium_phosphate_dust', '#forge:dusts/gold')
         .itemOutputs('2x minecraft:glowstone_dust')
@@ -145,6 +148,8 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(1920)
 
+    //Remove old rhodium plated palladium recipe
+    event.remove({ id: "gtceu:mixer/rhodium_plated_palladium" })
     event.recipes.gtceu.mixer("kubejs:rhodium_plated_palladium_dust")
         .itemInputs('3x gtceu:palladium_dust', 'gtceu:rhodium_dust', '2x gtceu:lumium_dust')
         .itemOutputs('6x gtceu:rhodium_plated_palladium_dust')
@@ -153,7 +158,7 @@ ServerEvents.recipes(event => {
         .circuit(1)
 
     event.recipes.gtceu.mixer("kubejs:enderium_dust")
-        .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'kubejs:resonant_clathrate')
+        .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'gtceu:tantalum_dust', 'kubejs:resonant_clathrate')
         .itemOutputs('4x gtceu:enderium_dust')
         .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
         .duration(300)
@@ -261,6 +266,14 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .blastFurnaceTemp(1200)
 
+    // End Steel
+    event.recipes.gtceu.mixer("kubejs:end_steel_dust")
+        .itemInputs('gtceu:dark_steel_dust', 'gtceu:vibrant_alloy_dust', '#forge:dusts/endstone')
+        .itemOutputs('3x gtceu:end_steel_dust')
+        .duration(260)
+        .EUt(120)
+
+
 	// moni ceu 1.7 normal
 	event.recipes.gtceu.electric_blast_furnace('kubejs:dark_soularium_ingot')
 		.itemInputs('#forge:ingots/soularium', '#forge:ingots/dark_steel')
@@ -315,20 +328,20 @@ ServerEvents.recipes(event => {
     .blastFurnaceTemp(4500)
 
     event.recipes.gtceu.alloy_blast_smelter('enderium_mana_gas')
-    .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'kubejs:resonant_clathrate')
+    .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'gtceu:tantalum_dust', 'kubejs:resonant_clathrate')
     .inputFluids('kubejs:molten_primal_mana 1000', 'gtceu:krypton 80')
     .circuit(14)
-    .outputFluids(Fluid.of('gtceu:molten_enderium', 1152))
-    .duration(6400) // 320s
+    .outputFluids(Fluid.of('gtceu:molten_enderium', 1296))
+    .duration(7200) // 320s
     .EUt(7680)
     .blastFurnaceTemp(4500)
 
     event.recipes.gtceu.alloy_blast_smelter('enderium_mana')
-    .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'kubejs:resonant_clathrate')
+    .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'gtceu:tantalum_dust', 'kubejs:resonant_clathrate')
     .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
     .circuit(4)
-    .outputFluids(Fluid.of('gtceu:molten_enderium', 1152))
-    .duration(7200) // 480S
+    .outputFluids(Fluid.of('gtceu:molten_enderium', 1296))
+    .duration(8100) // 480S
     .EUt(7680)
     .blastFurnaceTemp(4500)
 

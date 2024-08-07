@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
     ], {
         S: 'gtceu:black_steel_plate',
         L: 'extendedcrafting:luminessence',
-        A: 'gtceu:netherite_plate',
+        A: 'gtceu:activated_netherite_plate',
         B: 'gtceu:red_steel_plate'
     })
 
@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
         'SUUUUUUUS',
         'ESSSCSSSE'
     ], {
-        E: '#forge:storage_blocks/netherite',
+        E: '#forge:storage_blocks/activated_netherite',
         S: 'gtceu:double_black_steel_plate',
         C: 'extendedcrafting:the_ultimate_catalyst',
         U: 'extendedcrafting:epic_component',
@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
             'BCB',
             'ABA'
         ], {
-            A: '#forge:storage_blocks/netherite',
+            A: '#forge:storage_blocks/activated_netherite',
             B: 'extendedcrafting:epic_catalyst',
             C: 'extendedcrafting:epic_table'
         }
@@ -317,7 +317,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('8x extendedcrafting:luminessence')
         .duration(20)
         .EUt(30)
-
 
 
 

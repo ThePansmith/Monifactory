@@ -19,6 +19,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL)
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
+    GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
 
     GTMaterials.Einsteinium.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.Einsteinium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
@@ -36,6 +37,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     GTMaterials.Curium.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.Curium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+    
+    GTMaterials.Ruridit.setProperty($PropertyKey.FLUID, new $FluidProperty())
+    GTMaterials.Ruridit.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
     GTMaterials.NetherStar.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.NetherStar.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())

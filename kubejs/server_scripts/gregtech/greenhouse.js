@@ -233,7 +233,11 @@ ServerEvents.recipes(event => {
 
     // Vine
     Greenhouse('vine', 'minecraft:vine', 1000, '12x minecraft:vine', false)
-    Greenhouse('vine_boosted', 'minecraft:vine', 1000, '24x minecraft:vine', true)  
+    Greenhouse('vine_boosted', 'minecraft:vine', 1000, '24x minecraft:vine', true)
+    
+    // Moss
+    Greenhouse('moss_block', 'minecraft:moss_block', 1000, '12x minecraft:moss_block', false)
+    Greenhouse('moss_block_boosted', 'minecraft:moss_block', 1000, '24x minecraft:moss_block', true) 
 	
 	// Thermal Mushroom Spores
 	Greenhouse('slime_spores_boosted', 'thermal:slime_mushroom_spores', 1000, '8x thermal:slime_mushroom_spores', true)

@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x66ffff)
         .iconSet('shiny')
         .fluidPipeProperties(100000, 64000, true, true, true, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR); // yeah you can smash the plates
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_DENSE); // yeah you can smash the plates
         
     event.create("omnium")
         .ingot()
@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('shiny')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
-        .cableProperties(524288, 4, 0, true)
+        .cableProperties(524288, 8, 0, true)
 
     event.create('infinity')
         .ingot()
@@ -53,9 +53,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING)
         .cableProperties(2147483647, 134217727, 0, true)
 
-    event.create('netherite')
+    event.create('activated_netherite')
         .ingot()
-        .element(GTElements.get("netherite"))
+        .element(GTElements.get("activated_netherite"))
         .color(0x4C484C)
         .iconSet('dull')
         .cableProperties(8388608, 16, 0, true)

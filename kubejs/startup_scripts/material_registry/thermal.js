@@ -30,7 +30,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("lumium")
         .ingot().fluid()
         .color(0xf6ff99).iconSet('bright')
-        .blastTemp(4500, 'mid', 7680, 1600)
+        .blastTemp(4500, 'mid', 4800, 1000)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
 		.components('4x tin_alloy', '2x sterling_silver')
         .cableProperties(8192, 1, 0, true)
@@ -41,7 +41,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x1f6b62).iconSet('shiny')
         .blastTemp(6400, 'highest', 30720, 1600)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
-		.components('4x lead', '2x platinum', 'blue_steel', 'osmium')
+		.components('4x lead', '2x platinum', 'blue_steel', 'osmium', 'tantalum')
         .cableProperties(131072, 1, 0, true)
 
     event.create("electrum_flux")
