@@ -16,21 +16,39 @@
 - A complete overhaul of post-tank progression
 - A new difficulty mode for returning Nomi CEu HM players
 - A Retexturing of everything Nomi to better match the modern style
-- Optional Compatability with various mods, such as Create
+- Optional Compatibility with various mods, such as Create
 
 
 
 ## Credits
-Original pack by [Exaxxion](https://github.com/Exaxxion).
-Nomifactory CEu pack by [Tracer](https://github.com/tracer4b).  
-README.md base from [Gregtech CEu](https://github.com/GregTechCEu/GregTech).  
-Meowni (mascot) by Mutso  
-Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
-Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
+- Original pack by [Exaxxion](https://github.com/Exaxxion).
+- Nomifactory CEu pack by [Tracer](https://github.com/tracer4b).  
+- README.md base from [Gregtech CEu](https://github.com/GregTechCEu/GregTech).  
+- Meowni (mascot) by Mutso  
+- Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
+- Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
 Thank you!
 
 ## Hard/Harder Mode
 Is Monifactory not Greggy enough for you? Or perhaps you simply want a challenge? Try hard mode! (or even harder mode, if you're not faint of heart!)
+
+Highlights include:
+
+- Forced Peaceful Mode
+- No HNN for easy infinite resources
+- Monicoins can't be spent, or obtained
+- The Steam Age
+- More Focus on GT Power Generation
+- No Creative Tank; instead, use Stabilized Micro Miners for late-game infinite resources
+
+Harder Mode is a modifier for Hard Mode, and takes things a step further by:
+
+- Outright Disabling RF->EU Converters, making GT power generation your only option.
+- Removing EnderIO, Laserio Item and Fluid Transportation Options
+- Bringing Back Machine Explosions
+- Enabling Pollution and Hazards
+- Various other nerfs
+
 ### Installation:
 1. Click on ``./pack-mode-switcher.bat`` if you're on Windows, or ``./pack-mode-switcher.sh`` if you're on Linux/Apple/GNU (located within your minecraft folder)
 2. Follow the prompt to select your mode.
