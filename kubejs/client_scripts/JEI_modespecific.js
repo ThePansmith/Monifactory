@@ -7,6 +7,8 @@ JEIEvents.hideItems(event => {
     gtMachines.forEach(machine => {
         event.hide(['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine])
     })
+    event.hide(['gtceu:firebrick', 'gtceu:firebricks', 'gtceu:primitive_blast_furnace'])
+    event.hide(/fireclay/)
 }
 
         if (isHardMode) {

@@ -14,7 +14,7 @@ JEIEvents.hideItems(event => {
     //Hides useless items
     event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'thermal:constantan_coin'])
 
-    //i really hate these kind of mods
+    // Iron Furnace
     event.hide('ironfurnaces:million_furnace') // rainbow furnace
     event.hide(['ironfurnaces:item_spooky', 'ironfurnaces:item_xmas']) // cosmetic items
     // TODO renable this again. why in the fuck did we disable this?
