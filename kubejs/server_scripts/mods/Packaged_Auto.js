@@ -155,6 +155,20 @@ ServerEvents.recipes(event => {
             }
         )
         
+        event.remove({ output: 'packagedexexcrafting:epic_crafter' })
+        event.shaped(
+            'packagedexexcrafting:epic_crafter', [
+                'ACA',
+                'BEB',
+                'ACA'
+            ], {
+                A: 'extendedcrafting:epic_component',
+                B: 'gtceu:black_steel_plate',
+                C: 'packagedauto:me_package_component',
+                E:'extendedcrafting:epic_auto_table'
+            }
+        )
+
         event.remove({ output: 'packagedexcrafting:combination_crafter' })
         event.shaped(
             'packagedexcrafting:combination_crafter', [

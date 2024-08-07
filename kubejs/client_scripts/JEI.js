@@ -184,7 +184,7 @@ JEIEvents.hideItems(event => {
     event.hide(['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'])
 
     // PEX
-    event.hide(['packagedexcrafting:flux_crafter'])
+    event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
 
     // Utilitarian
     event.hide(/utilitarian:.*_soliciting_carpet/)
