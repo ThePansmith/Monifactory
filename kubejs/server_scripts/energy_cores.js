@@ -52,28 +52,28 @@ ServerEvents.recipes(event => {
         }, 200000000).powerRate(200000000);
 
         event.recipes.gtceu.assembler("kubejs:mesol_energy_core")
-        .itemInputs("kubejs:sculk_core", "4x gtceu:enori_empowered_gem")
+        .itemInputs("kubejs:sculk_core", "4x gtceu:enori_empowered_gem", "gtceu:palis_empowered_block")
         .inputFluids('enderio:xp_juice 100')
         .itemOutputs("kubejs:mesol_energy_core")
         .duration(100)
         .EUt(32)
 
         event.recipes.gtceu.assembler("kubejs:bathyal_energy_core")
-        .itemInputs("3x kubejs:mesol_energy_core", "4x gtceu:emeradic_empowered_gem", 'gtceu:nether_star_plate')
+        .itemInputs("3x kubejs:mesol_energy_core", "4x gtceu:emeradic_empowered_gem", "gtceu:nether_star_block")
         .inputFluids('enderio:xp_juice 1000')
         .itemOutputs("kubejs:bathyal_energy_core")
         .duration(100)
         .EUt(32)
 
         event.recipes.gtceu.assembler("kubejs:abyssal_energy_core")
-        .itemInputs("4x kubejs:bathyal_energy_core", "4x gtceu:restonia_empowered_gem", 'gtceu:cryococcus_plate', 'kubejs:stabilized_einsteinium')
+        .itemInputs("4x kubejs:bathyal_energy_core", "4x gtceu:restonia_empowered_gem", "gtceu:cryococcus_block", "kubejs:stabilized_einsteinium")
         .inputFluids('enderio:xp_juice 1000')
         .itemOutputs("kubejs:abyssal_energy_core")
         .duration(100)
         .EUt(32)
 
         event.recipes.gtceu.assembler("kubejs:hadal_energy_core")
-        .itemInputs("5x kubejs:abyssal_energy_core", 'kubejs:hadal_shard', "gtceu:void_empowered_block", '2x gtceu:omnium_plate', '2x gtceu:neutronium_plate')
+        .itemInputs("5x kubejs:abyssal_energy_core", 'kubejs:hadal_shard', "gtceu:void_empowered_block",'2x gtceu:neutronium_plate', '16x gtceu:omnium_bolt')
         .inputFluids('enderio:xp_juice 1000')
         .itemOutputs("kubejs:hadal_energy_core")
         .duration(100)
