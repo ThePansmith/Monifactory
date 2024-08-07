@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:advanced_micro_miner_guidance_system',
             P: 'kubejs:bathyal_energy_core',
             A: 'gtceu:luv_field_generator',
-            E: 'kubejs:reverberation_core',
+            E: 'kubejs:dischargement_core',
             W: 'kubejs:warp_engine'
         }
     )

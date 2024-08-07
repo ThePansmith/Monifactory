@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             'PHP'
         ], {
         P: 'gtceu:cryolobus_plate',
-        F: 'kubejs:reverberation_core',
+        F: 'kubejs:dischargement_core',
         C: 'gtceu:niobium_titanium_single_cable',
         L: 'gtceu:iv_field_generator',
         H: 'gtceu:hsse_frame'

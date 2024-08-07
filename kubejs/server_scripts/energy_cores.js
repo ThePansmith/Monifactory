@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('kubejs_fusion_crafting_core')
         .itemInputs('gtceu:hsse_frame', '6x gtceu:tungsten_carbide_plate', '4x kubejs:mesol_energy_core', '4x minecraft:nether_star', '2x gtceu:iv_sensor', '#gtceu:circuits/iv', '8x #forge:storage_blocks/diamatine_empowered')
         .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('kubejs:reverberation_core')
+        .itemOutputs('kubejs:dischargement_core')
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('kubejs:mesol_energy_core').EUt(480).duration(1200))
         .duration(1200)
         .EUt(30720)
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
             }
         )
 
-        event.recipes.extendedcrafting.shaped_flux_crafter('kubejs:mesol_core', [
+        event.recipes.extendedcrafting.shaped_flux_crafter('kubejs:sculk_core', [
         'ABA',
         'BCB',
         'ABA'
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
         }, 200000000).powerRate(200000000);
 
         event.recipes.gtceu.assembler("kubejs:mesol_energy_core")
-        .itemInputs("kubejs:mesol_core", "4x gtceu:enori_empowered_gem")
+        .itemInputs("kubejs:sculk_core", "4x gtceu:enori_empowered_gem")
         .inputFluids('enderio:xp_juice 100')
         .itemOutputs("kubejs:mesol_energy_core")
         .duration(100)
