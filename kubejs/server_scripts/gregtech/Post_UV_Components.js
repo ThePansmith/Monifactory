@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_motor')
-        .itemInputs('gtceu:long_magnetic_samarium_rod', '8x gtceu:long_omnium_rod', '8x gtceu:omnium_ring', '16x gtceu:omnium_round', '64x gtceu:fine_netherite_wire', '64x gtceu:fine_netherite_wire', '64x gtceu:fine_netherite_wire', '4x gtceu:tritanium_octal_cable')
+        .itemInputs('gtceu:long_magnetic_samarium_rod', '8x gtceu:long_omnium_rod', '8x gtceu:omnium_ring', '16x gtceu:omnium_round', '64x gtceu:fine_activated_netherite_wire', '64x gtceu:fine_activated_netherite_wire', '64x gtceu:fine_activated_netherite_wire', '4x gtceu:tritanium_octal_cable')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 3000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_electric_motor')
         .duration(600)
