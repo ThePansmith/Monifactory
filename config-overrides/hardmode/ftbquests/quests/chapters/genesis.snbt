@@ -227,7 +227,7 @@
 				title: "Terminal"
 				type: "checkmark"
 			}]
-            title: "&9Terminal"
+			title: "&9Terminal"
 			x: 1.75d
 			y: 0.5d
 		}
