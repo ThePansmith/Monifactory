@@ -415,6 +415,15 @@ StartupEvents.registry('item', event => {
 
         effDuration *= 2;
     }
+
+    //universal circuit
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv", "uxv", "opv", "max"]
+    tiers.forEach((universal_circuit) => {
+        event.create(universal_circuit + "_universal_circuit")
+            .tag("gtceu:circuits/" + universal_circuit)
+            .displayName(universal_circuit.toUpperCase() + " Universal Circuit")
+            .tooltip("§7A Universal Circuit")
+    })
 })
 
 ItemEvents.modification(event => {
