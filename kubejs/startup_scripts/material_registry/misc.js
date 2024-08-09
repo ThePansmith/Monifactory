@@ -170,5 +170,8 @@ GTCEuStartupEvents.materialModification(event => {
 
     GTMaterials.Glowstone.setComponents("1x tricalcium_phosphate", "1x gold")
     GTMaterials.Glowstone.setFormula('AuCa3(PO4)2', true)
+    
+    GTMaterials.get('energetic_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCaPO4)');
+    GTMaterials.get('vibrant_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCaPO4)(BeK4N5)');
 })
 
