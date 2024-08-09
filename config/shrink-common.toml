@@ -1,0 +1,17 @@
+#Set to false to allow shrinking while in spectator mode
+enableShrinkInSpectator = false
+#Set the amount of power required to use use the personal shrinking device
+setPowerUsage = 5000
+#Set to false to disable mobs being put in bottles
+enableMobBottles = true
+#Set to false to disable power requirements for personal shrinking device
+enablePowerRequirements = true
+#Set the max size a player can grow too
+#Range: 0.0 ~ 100.0
+maxSize = 10.0
+#Set the min size a player can shrink too
+#Range: 0.21 ~ 100.0
+minSize = 0.21
+#Set the amount of power the personal shrinking device can store
+setShrinkingDeviceCapacity = 100000
+
