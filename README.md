@@ -49,8 +49,7 @@ Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 - Enabling Pollution and Hazards
 - Various other nerfs
 
-## Tutorials
-
+## Installation:
 
 ### Hard/Harder Mode Installation:
 1. Click on ``./pack-mode-switcher.bat`` if you're on Windows, or ``./pack-mode-switcher.sh`` if you're on Linux/Apple/GNU (located within your minecraft folder)
