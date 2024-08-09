@@ -760,7 +760,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .aisle("  CCCCCCC  ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "  CCCCCCC  ")
         .aisle("    CYC    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "    CCC    ")
             .where('Y', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('C', Predicates.blocks("kubejs:cryolobus_casing").setMinGlobalLimited(220)
+            .where('C', Predicates.blocks("kubejs:cryolobus_casing").setMinGlobalLimited(192)
             .or(Predicates.autoAbilities(definition.getRecipeTypes()))
             .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('c', Predicates.blocks("kubejs:cryolobus_casing"))

@@ -31,7 +31,7 @@
 				""
 				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"blue\"},{\"text\":\"Monifactory repository\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"blue\"}]"
 				""
-				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that it does not happen with the mod on it's own, and if so, report it to the mod's repository."
+				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that the issue can not be replicated with the mod on it's own, and if it can, report it to the mod's repository instead."
 			]
 			hide: false
 			icon: "thermal:nuke_tnt"
