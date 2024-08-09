@@ -49,8 +49,6 @@ ServerEvents.recipes(event => {
             .duration(100)
         }
 
-        event.replaceInput({ output: 'buildinggadgets2:gadget_exchanging' }, 'minecraft:redstone', 'gtceu:iv_emitter')
-
         event.remove({ output: 'gtceu:extractor/tank_data' })
         event.recipes.gtceu.extractor('omnicdata')
         .itemInputs('kubejs:heart_of_a_universe')
