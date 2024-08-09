@@ -7,7 +7,7 @@
     <!-- <a href="https://discord.com/invite/zwQzqP8b6q"><img src="https://img.shields.io/discord/927050775073534012?style=for-the-badge&logo=discord&color=5865F2&labelColor=grey&label=+" alt="Discord"></a> -->
     <br>
     <!-- <a href="https://www.curseforge.com/minecraft/modpacks/nomifactory-ceu-modern"><img src="https://img.shields.io/curseforge/dt/981238?style=for-the-badge&logo=CurseForge&labelColor=grey&label=+" alt="CurseForge Downloads"></a> -->
-    <a href="https://www.curseforge.com/minecraft/modpacks/nomifactory-ceu-modern"><img src="https://img.shields.io/badge/for_mc-1.20.1-e05d44?style=for-the-badge" alt="MC Versions"></a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/monifactory"><img src="https://img.shields.io/badge/for_mc-1.20.1-e05d44?style=for-the-badge" alt="MC Versions"></a>
     <a href="https://github.com/ThePansmith/Monifactory/releases"><img src="https://img.shields.io/github/downloads/ThePansmith/Monifactory/total?style=for-the-badge&labelColor=grey&logo=github&label=+" alt="GitHub Downloads"></a>
 </h1>
 
