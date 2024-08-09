@@ -126,6 +126,7 @@
   "block.gtceu.atmospheric_accumulator": "Atmospheric Accumulator",
   "gtceu.atmospheric_accumulator.desc": "§8A large machine that can suck up large amounts of air at once.",
   "block.gtceu.matter_alterator": "Matter Alterator",
+  "block.gtceu.mega_alloy_blast_smelter": "Mega Alloy Blast Smelter",
 
 
   "__GENERIC_MATERIALS__.header": "=====================",

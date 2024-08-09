@@ -44,6 +44,19 @@ ServerEvents.recipes(event => {
         }
     ).id('gtceu:shaped/blacklight')
 
+    event.shaped("gtceu:mega_alloy_blast_smelter", [
+        "AFA",
+        "CDC",
+        "EBE"
+    ], {
+        A: "gtceu:naquadah_alloy_spring",
+        B: "gtceu:ruthenium_trinium_americium_neutronate_hex_wire",
+        C: "gtceu:zpm_field_generator",
+        D: "gtceu:alloy_blast_smelter",
+        E: "gtceu:dense_darmstadtium_plate",
+        F: "#gtceu:circuits/zpm"
+    }).id('gtceu:shaped/mega_alloy_blast_smelter')
+
     // Trinaquadalloy Mixer Recipe
     event.recipes.gtceu.mixer("mixer_trinaquadalloy")
     .itemInputs("6x gtceu:trinium_dust", "2x gtceu:naquadah_dust",  "gtceu:carbon_dust")

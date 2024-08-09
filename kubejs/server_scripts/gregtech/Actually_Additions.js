@@ -95,4 +95,13 @@ ServerEvents.recipes(event => {
             .duration(80)
             .EUt(56)
     })
+
+    const tiers = [["ulv", 1], ["lv", 2], ["mv", 3], ["hv", 4], ["ev", 5], ["iv", 6], ["luv", 7], ["zpm", 8], ["uv", 9], ["uhv", 10], ["uev", 11], ["uiv", 12]]
+    tiers.forEach((level) => {
+        event.recipes.gtceu.packer("kubejs:" + level[0] + "_universal_circuit")
+            .itemInputs("#gtceu:circuits/" + level[0])
+            .itemOutputs("kubejs:" + level[0] + "_universal_circuit")
+            .EUt(7)
+            .duration(2 ** level[1])
+    })
 })
