@@ -16,4 +16,6 @@ ServerEvents.recipes(event => {
 
     event.shapeless('betterp2p:advanced_memory_card', ['ae2:memory_card', 'ae2:network_tool'])
 
+    event.remove({ id: /storagedrawer/ })
+
 })
