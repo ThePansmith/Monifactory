@@ -1,37 +1,18 @@
 if (Platform.isLoaded('create')) {
-    console.log("create found and scripts loaded")
+    console.log("create found and server script loaded")
+
+    ServerEvents.tags('item', event => {
+        event.remove('forge:ingots/brass', 'create:brass_ingot')
+        event.remove('forge:nuggets/brass', 'create:brass_nugget')
+    })
+
     ServerEvents.recipes(event => {
-
-        // Removes any machines related to processing, the point of this compat is fun not functionality, 
-        event.remove({output: 'create:millstone'})
-        event.remove({output: 'create:crushing_wheel'})
-        event.remove({output: 'create:mechanical_plough'})
-        event.remove({output: 'create:mechanical_crafter'})
-        event.remove({output: 'create:mechanical_mixer'})
-        event.remove({output: 'create:mechanical_saw'})
-        event.remove({output: 'create:mechanical_drill'})
-        event.remove({output: 'create:mechanical_harvester'})
-        event.remove({output: 'create:mechanical_press'})
-        event.remove({output: 'create:mechanical_roller'})
-
-        /* Removes recipes for machines that were not removed, deployers and mechanical crafters are fun!
-        Most recipe categories that are removed machines are hidden in 
-        kubejs/assets/emi/recipe/filters/hidecategories.json as opposed to removing the actual recipes */
         event.remove({ type: 'create:deploying' })
         event.remove({ type: 'create:milling' })
         event.remove({ type: 'create:crushing' })
-        event.remove({ id: 'create:crafting/kinetics/millstone' })
-        //event.remove({id: 'create:mechanical_crafting/crushing_wheel'}) //mechanical roller uses this for now
-        event.remove({ id: 'create:crafting/kinetics/mechanical_mixer' })
-        event.remove({ id: 'create:crafting/kinetics/mechanical_press' })
-        //Remove the hand crank since it's easy to abuse contraptions using it
-        event.remove({ id: 'create:crafting/kinetics/hand_crank' })
-
-        // w h a t ?
-        event.remove({ id: 'gtceu:shaped/lv_kinetic_mixer' })
-        event.remove({ id: 'gtceu:shaped/mv_kinetic_mixer' })
-        event.remove({ id: 'gtceu:shaped/hv_kinetic_mixer' })
-        event.remove({ id: 'gtceu:shaped/ev_kinetic_mixer' })
+        event.remove({ type: 'create:mixing' })
+        event.remove({ type: 'create:pressing' })
+        event.remove({ output: /gtceu:.*kinetic_mixer/ })
 
         //belts made with rubber
         let kelpRecipes = ["create:crafting/kinetics/belt_connector", "create:crafting/logistics/andesite_funnel", "create:crafting/logistics/brass_funnel", "create:crafting/logistics/andesite_tunnel", "create:crafting/logistics/brass_tunnel"]
@@ -154,7 +135,6 @@ if (Platform.isLoaded('create')) {
             .itemOutputs('create:rose_quartz')
             .duration(200)
             .EUt(16)
-            .circuit(6)
         event.recipes.gtceu.sifter("kubejs:polished_rose_quartz")
             .itemInputs('create:rose_quartz')
             .itemOutputs('create:polished_rose_quartz')
@@ -177,11 +157,112 @@ if (Platform.isLoaded('create')) {
         assembleCasing('minecraft:copper_ingot', 'copper_casing')
         assembleCasing('#forge:plates/obsidian', 'railway_casing', 'create:brass_casing')
 
+        // Creative stuff
+        event.shapeless('gtceu:creative_chest', 'create:handheld_worldshaper')
+        event.shapeless('create:handheld_worldshaper', 'gtceu:creative_chest')
+
+        event.shapeless('gtceu:creative_tank', 'create:creative_fluid_tank')
+        event.shapeless('create:creative_fluid_tank', 'gtceu:creative_tank')
+
+        event.shaped("create:creative_motor", [
+            'RM ',
+            'CKS',
+            'RM '
+        ], {
+            K: "gtceu:zpm_kinetic_output_box",
+            M: "gtceu:zpm_electric_motor",
+            R: "gtceu:rhodium_gear",
+            C: "#gtceu:circuits/zpm",
+            S: "create:shaft"
+        })
+
+        event.remove({ output: 'create:mechanical_drill' })
+        event.shaped('create:mechanical_drill', [
+            'SW ',
+            'RCH',
+            'GD '
+        ], {
+            S: 'gtceu:aluminium_screw',
+            G: 'gtceu:small_aluminium_gear',
+            C: 'create:andesite_casing',
+            H: 'gtceu:aluminium_drill_head',
+            D: '#forge:tools/screwdrivers',
+            W: '#forge:tools/wrenches',
+            R: 'create:shaft'
+
+        })
+
+        event.remove({ output: 'create:mechanical_harvester' })
+        event.shaped('create:mechanical_harvester', [
+            'WR ',
+            'CSR',
+            'DR '
+        ], {
+            W: '#forge:tools/wrenches',
+            R: 'gtceu:titanium_rod',
+            C: 'create:andesite_casing',
+            S: 'gtceu:titanium_rotor',
+            D: '#forge:tools/screwdrivers'
+        })
+
+        event.remove({ output: 'create:mechanical_saw' })
+        event.shaped('create:mechanical_saw', [
+            'SW ',
+            'ACB',
+            'GD '
+        ], {
+            W: '#forge:tools/wrenches',
+            S: 'gtceu:titanium_screw',
+            C: 'create:andesite_casing',
+            D: '#forge:tools/screwdrivers',
+            B: 'gtceu:titanium_buzz_saw_blade',
+            G: 'gtceu:small_titanium_gear',
+            A: 'create:shaft'
+
+        })
+
+        // crushing wheel in mv to gate rollers mostly, recipes are disabled and they are decorative
+        event.remove({ output: 'create:crushing_wheel' })
+        event.custom({
+            type: "create:mechanical_crafting",
+            
+            pattern: [
+                ' AAA ',
+                'AABAA',
+                'ABCBA',
+                'AABAA',
+                ' AAA ',
+            ],
+    
+            key: {
+                A: { item: "create:andesite_alloy" },
+                B: { item: "create:andesite_casing" },
+                C: { item: "gtceu:mv_kinetic_input_box"},
+                
+            },
+    
+            result: { item: "create:crushing_wheel"}
+        }).id(`kubejs:create/crushing_wheel`)
+
+        // meme
+        event.remove({ output: 'create:hand_crank' })
+        event.recipes.gtceu.assembler('kubejs:create_hand_crank')
+            .itemInputs('gtceu:tungsten_steel_rotor', 'gtceu:iv_robot_arm', '3x create:andesite_alloy')
+            .itemOutputs('create:hand_crank')
+            .duration(1200)
+            .EUt(7680)
+
+        // I had a better recipe idea but can't use create kjs and this is funny
+        event.remove({ output: 'create:mechanical_crafter' })
+        event.recipes.gtceu.macerator('kubejs:create_mechanical_crafter')
+            .itemInputs('gtceu:lv_assembler')
+            .itemOutputs('25x create:mechanical_crafter')
+            .duration(1200)
+            .EUt(16)
 
         // Tracks
         event.remove({ output: 'create:track' })
-        event.shaped(
-            "create:track", [
+        event.shaped("2x create:track", [
             '   ',
             'IHI',
             'SSS'
@@ -189,12 +270,12 @@ if (Platform.isLoaded('create')) {
             H: "#forge:tools/hammers",
             I: "minecraft:iron_nugget",
             S: "#create:sleepers"
-        }
-        )
+        })
+
         event.recipes.gtceu.assembler('kubejs:createtracks')
             .itemInputs('3x #create:sleepers', "2x minecraft:iron_nugget")
-            .itemOutputs('create:track')
-            .duration(5)
+            .itemOutputs('4x create:track')
+            .duration(50)
             .EUt(16)
 
 
@@ -285,5 +366,12 @@ if (Platform.isLoaded('create')) {
                 }).id(`kubejs:create/splashing/${recipe.getId().split(':')[1]}`)
             })
     })
-}
-else { console.log("create not found") }
+} else { console.log("create not found") }
+
+if (Platform.isLoaded('createaddition')) {
+    console.log("C:C&Afound and scripts loaded")
+    ServerEvents.recipes(event => {
+        // doing this for the sole purpose of people not using the addon and using creative motor for energy
+        event.remove({ output: "createaddition:alternator" })
+    })
+} else { console.log("C:C&A not found") }
