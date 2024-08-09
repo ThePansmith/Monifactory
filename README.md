@@ -49,6 +49,18 @@ Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 - Enabling Pollution and Hazards
 - Various other nerfs
 
-### Installation:
+## Installation:
+
+### Hard/Harder Mode Installation:
 1. Click on ``./pack-mode-switcher.bat`` if you're on Windows, or ``./pack-mode-switcher.sh`` if you're on Linux/Apple/GNU (located within your minecraft folder)
 2. Follow the prompt to select your mode.
+
+### Dedicated Server Installation:
+1. Download a server.zip file from the releases page.
+2. Download the forge installer from [here](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html).
+3. Create a folder for the server (``mkdir MonifactoryServer``, name doesnt matter)
+4. Move the server.zip and forge installer into your server directory. The rest of the guide assumes your current directory is the server directory.
+5. Run the forge installer and install the forge server, this can be done with the command ``java -jar TheForgeInstallerName.jar --installServer``
+6. ``unzip server.zip``
+7. Move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
+8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
