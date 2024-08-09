@@ -27,9 +27,11 @@
 	quests: [
 		{
 			description: [
-				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
+				"This pack is in &eBeta&r. Issues are to be expected at this stage of development."
 				""
 				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"blue\"},{\"text\":\"Monifactory repository\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"blue\"}]"
+				""
+				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that it does not happen with the mod on it's own, and if so, report it to the mod's repository."
 			]
 			hide: false
 			icon: "thermal:nuke_tnt"
@@ -41,7 +43,7 @@
 				title: "Acknowleged"
 				type: "checkmark"
 			}]
-			title: "&9This pack is in alpha!"
+			title: "&9This pack is in beta!"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -58,7 +60,7 @@
 				""
 				"Features new to &9Monifactory&r and quests with new content will be higlighted in &9Blue&r."
 				""
-				"Notes about things in &5Alpha&r will be higlighted in &5Dark Purple&r."
+				"Notes about things in &5Beta&r will be higlighted in &5Dark Purple&r."
 				""
 				"[\"Text with \",{\"text\":\"underlines\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"But not this!\"}},\" are (mostly) clickable.\"]"
 			]

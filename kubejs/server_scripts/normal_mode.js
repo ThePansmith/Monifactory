@@ -9,7 +9,8 @@ ServerEvents.recipes(event => {
         event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
         
         event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
-        event.remove({ id: "gtceu:shapeless/fireclay_dust" })
+        event.remove({ id: /fireclay/ })
+        event.remove({ output: ['gtceu:firebrick', 'gtceu:firebricks', 'gtceu:primitive_blast_furnace'] })
 
         carbonSources.forEach(carbonSource => {
             event.recipes.gtceu.alloy_smelter("steel_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
