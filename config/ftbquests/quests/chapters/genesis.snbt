@@ -60,7 +60,7 @@
 				""
 				"Features new to &9Monifactory&r and quests with new content will be higlighted in &9Blue&r."
 				""
-				"Notes about things in &5Alpha&r will be higlighted in &5Dark Purple&r."
+				"Notes about things in &5Beta&r will be higlighted in &5Dark Purple&r."
 				""
 				"[\"Text with \",{\"text\":\"underlines\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"But not this!\"}},\" are (mostly) clickable.\"]"
 			]
