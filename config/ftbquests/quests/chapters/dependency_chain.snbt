@@ -36,10 +36,10 @@
 			]
 			subtitle: "unlocks normal only quests"
 			tasks: [{
-				id: "114368F6DCC624B8"
-				stage: "mode_normal"
-				type: "gamestage"
+				id: "366EC85C24C1CFA4"
+				type: "checkmark"
 			}]
+			title: "Normal Mode"
 			x: -1.25d
 			y: -0.25d
 		}
@@ -68,10 +68,10 @@
 			]
 			subtitle: "unlocks hm quest only quests"
 			tasks: [{
-				id: "61ED97728A33334E"
-				stage: "mode_hard"
-				type: "gamestage"
+				id: "1699D5240C6A25C3"
+				type: "checkmark"
 			}]
+			title: "Hard Mode"
 			x: 0.0d
 			y: -0.25d
 		}
@@ -87,64 +87,7 @@
 			}]
 			title: "&l&cREAD ME!!"
 			x: 0.0d
-			y: -3.0d
-		}
-		{
-			hide: true
-			id: "6BBACA979DF9BA30"
-			rewards: [{
-				auto: "invisible"
-				id: "566AF335EE552829"
-				ignore_reward_blocking: true
-				remove: true
-				stage: "mode_hard"
-				type: "gamestage"
-			}]
-			tasks: [{
-				id: "47C0B69BD9EE8C6E"
-				type: "checkmark"
-			}]
-			title: "debug: undo hm"
-			x: 0.0d
-			y: -1.5d
-		}
-		{
-			hide: true
-			id: "7F34A1A10CD8E058"
-			rewards: [{
-				auto: "invisible"
-				id: "3E5EA66D05EAE1FD"
-				ignore_reward_blocking: true
-				remove: true
-				stage: "mode_normal"
-				type: "gamestage"
-			}]
-			tasks: [{
-				id: "123F9074DAF40100"
-				type: "checkmark"
-			}]
-			title: "debug: undo nm"
-			x: -1.25d
-			y: -1.5d
-		}
-		{
-			hide: true
-			id: "57AB012919A985A2"
-			rewards: [{
-				auto: "invisible"
-				id: "348D173332287681"
-				ignore_reward_blocking: true
-				remove: true
-				stage: "mode_harder"
-				type: "gamestage"
-			}]
-			tasks: [{
-				id: "4CF502F8C9521549"
-				type: "checkmark"
-			}]
-			title: "debug: undo em"
-			x: 1.25d
-			y: -1.5d
+			y: -1.75d
 		}
 		{
 			id: "0B37518A984D386F"
@@ -173,10 +116,10 @@
 			]
 			subtitle: "unlocks em only quests"
 			tasks: [{
-				id: "63D27F02DE8A233E"
-				stage: "mode_harder"
-				type: "gamestage"
+				id: "7AC71E5E3C887D33"
+				type: "checkmark"
 			}]
+			title: "Harder Mode"
 			x: 1.25d
 			y: -0.25d
 		}
