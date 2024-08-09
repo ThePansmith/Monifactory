@@ -123,9 +123,6 @@ JEIEvents.hideItems(event => {
     //JAVD
     event.hide(["javd:portal_block"])
 
-    // Storage Drawers
-    event.hide(/storagedrawers/)
-
     //Ender Storage
     event.hide(['endertanks:ender_bucket'])
 
