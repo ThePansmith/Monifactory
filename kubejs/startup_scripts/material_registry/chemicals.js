@@ -56,6 +56,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('2x hydrogen', '2x fluorine', '1x tantalum')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    event.create('guardian_scale_slurry')
+        .fluid()
+        .color(0x8bbeaf)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
     event.create('chlorine_triflouride')
         .gas()
         .color(0xCBC4EF)

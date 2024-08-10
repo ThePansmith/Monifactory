@@ -778,7 +778,7 @@ ServerEvents.recipes(event => {
     .EUt(24000)
     .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
 
-    // Scaleline
+    // Dragon Scaleline
     event.recipes.gtceu.macerator('dragon_scale_crushing')
         .itemInputs('kubejs:ender_dragon_scale')
         .itemOutputs('kubejs:ender_dragon_scale_dust')
@@ -829,6 +829,24 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrogen 1000', 'gtceu:fluorine 1000')
         .duration(240)
         .EUt(120)
+
+    // Guardian Scale recycling
+    event.recipes.gtceu.mixer('guardian_scale_slurry_mix')
+        .itemInputs('2x kubejs:guardian_scale')
+        .inputFluids('gtceu:aqua_regia 4000')
+        .outputFluids('gtceu:guardian_scale_slurry 4000')
+        .duration(280)
+        .EUt(1920)
+
+    event.recipes.gtceu.centrifuge('guardian_scale_slurry_centrifuge')
+        .inputFluids('gtceu:guardian_scale_slurry 4000')
+        .itemOutputs('2x gtceu:aluminium_dust', 'gtceu:copper_dust')
+        .chancedOutput("gtceu:titanium_dust", 200, 0)
+        .chancedOutput("gtceu:iron_dust", 200, 0)
+        .chancedOutput("gtceu:vanadium_dust", 200, 0)
+        .outputFluids('gtceu:phosphoric_acid 1000', 'gtceu:nitrosyl_chloride 1000', 'minecraft:water 2000', 'gtceu:oxygen 2000')
+        .duration(320)
+        .EUt(480)
 
     // Quantum Ring Assembler Recipes
     event.recipes.gtceu.assembler('kubejs:quantum_ring')
