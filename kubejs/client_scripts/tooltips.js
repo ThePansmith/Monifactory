@@ -47,7 +47,6 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_4', 'thermal:upgrade_augment_3', 'thermal:dynamo_output_augment'], '§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.')
 
-
     // Depreciation
     tooltip.addAdvanced(/storagedrawers:/, (item, advanced, text) => {
         text.add(1, [Text.red('Deprecated').bold()])
@@ -125,8 +124,15 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:infinity_ingot', Text.darkGray('The fury of the universe in the palm of your hand.'))
     tooltip.add('gtceu:monium_ingot', Text.darkGray('The serenity of the universe in the palm of your hand.'))
     tooltip.add('extendedcrafting:the_ultimate_catalyst', Text.darkGray("I'm the real ultimate catalyst..."))
+    tooltip.add('extendedcrafting:auto_flux_crafter',("Uses large amounts of energy to convert Sculk into Sculk Cores."))
+    tooltip.add('extendedcrafting:flux_alternator', ("Provides Energy to the Sculk Charger, from up to 3 blocks away."))
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
+    tooltip.add('gtceu:terminal', 'Can autobuild multiblocks by shift-rightclicking a controller.')
+    tooltip.addAdvanced(['utilitarian:redstone_clock'], (item, adv, text) => {
+        text.add(2, Text.gold('Can be locked by incoming redstone signals, place above redstone dust or use a repeater.'))
+    })
+
 
     // NuclearCraft tooltips
     tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
