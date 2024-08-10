@@ -55,5 +55,9 @@ GregTech uses dynamically generated textures, reloading your resource packs may 
 
 Known issue (https://github.com/GregTechCEu/GregTech-Modern/issues/1682)
 
+**Q. My issue isn't listed above**
+
+https://discord.gg/N8b2JEfAqb
+
 ## Contributing to Monifactory
 <!-- Todo -->
