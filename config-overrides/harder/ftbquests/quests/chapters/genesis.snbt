@@ -556,7 +556,7 @@
 				""
 				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
-				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
+				"&6Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
 			]
 			icon: {
 				Count: 1b
@@ -587,12 +587,17 @@
 					id: "04ED9B749EA44142"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_hammer"
+						id: "gtceu:iron_hammer"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -601,12 +606,15 @@
 					id: "514CE965C8FB1452"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_file"
+						id: "gtceu:iron_file"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -615,12 +623,17 @@
 					id: "7226082DB71F551A"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_saw"
+						id: "gtceu:iron_saw"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -629,12 +642,19 @@
 					id: "705CACC01AD1C68E"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_wrench"
+						id: "gtceu:iron_wrench"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
 							GT.Tool: {
 								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -643,12 +663,15 @@
 					id: "290A0FE8C389AF05"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_screwdriver"
+						id: "gtceu:iron_screwdriver"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -657,12 +680,17 @@
 					id: "7B41907A63748FCA"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_wire_cutter"
+						id: "gtceu:iron_wire_cutter"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -671,12 +699,15 @@
 					id: "7298CFD7BA970AA8"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_mortar"
+						id: "gtceu:iron_mortar"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
