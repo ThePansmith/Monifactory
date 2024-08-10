@@ -16,7 +16,7 @@
     "trivia": "hostilenetworks.trivia.ender_dragon",
     "fabricator_drops": [{
             "item": "minecraft:dragon_breath",
-            "count": 1
+            "count": 2
         },
         {
             "item": "kubejs:dragon_lair_data",
@@ -24,7 +24,7 @@
         },
         {
             "item": "kubejs:ender_dragon_scale",
-            "count": 1
+            "count": 4
         }
     ],
     "data_per_kill": [
