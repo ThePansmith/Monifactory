@@ -7,7 +7,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(1, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_reconstuction.png"), FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
 })
 
