@@ -815,27 +815,35 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_axe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						DisableShields: 1b
+						TreeFelling: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 4.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "527F56DFAD5E20EC"
 			tasks: [{
 				id: "254A555916313F70"
 				item: {
 					Count: 1b
-					id: "gtceu:flint_axe"
+					id: "itemfilters:id_regex"
 					tag: {
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							DisableShields: 1b
-							TreeFelling: 1b
-						}
-						GT.Tool: {
-							Damage: 0
-							HarvestLevel: 2
-							MaxDamage: 63
-							ToolSpeed: 3.5f
-						}
-						HideFlags: 2
+						value: "^gtceu:.*_axe$"
 					}
 				}
+				title: "Any Lumber Axe"
 				type: "item"
 			}]
 			title: "&9Tree chopping"
