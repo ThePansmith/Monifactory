@@ -222,10 +222,8 @@
 				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
 				"{@pagebreak}"
 				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &9Goethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
-				""
-				"&6Wrought Iron&f is obtained simply by &esmelting Iron Nuggets a second time&f. It has more durability than Iron, so it is better for making tools, but &cdo not convert your entire Iron supply over to Wrought Iron&f. The two materials are not interchangeable and you'll need Iron or Wrought Iron as demanded by various recipes."
 			]
-			icon: "gtceu:wrought_iron_ingot"
+			icon: "minecraft:iron_ingot"
 			id: "2E8BFA2E719B1C47"
 			rewards: [{
 				id: "318894ADCA9CF9DB"
@@ -242,20 +240,12 @@
 			}]
 			shape: "hexagon"
 			subtitle: "ULV Beginnings"
-			tasks: [
-				{
-					count: 12L
-					id: "674259A69F1EEC1C"
-					item: { Count: 12b, id: "minecraft:iron_ingot" }
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "02A10A7E907718D5"
-					item: { Count: 12b, id: "gtceu:wrought_iron_ingot" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 24L
+				id: "674259A69F1EEC1C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			title: "Iron Supply"
 			x: 0.0d
 			y: 2.5d
