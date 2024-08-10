@@ -837,9 +837,9 @@
 				"0B6196692F9E176D"
 			]
 			description: [
-				"The source of &6Dragon Hearts&r and the valuable &6Lair of The Chaos Guardian Data&r."
+				"The source of &6Warden Hearts&r and the valuable &6Lair of The Warden Data&r."
 				""
-				"As a bonus, brings &6Dragon Eggs, Dragon's Breath, Ender Dragon Scales&r, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+				"As a bonus, brings &6Sculk Catalysts, Warden Tendrils&r, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
 			]
 			disable_toast: true
 			id: "66BD8FA2507509A9"
@@ -861,7 +861,7 @@
 				"6391447F1A411281"
 			]
 			description: [
-				"The main source of &6Chaos Shards&r."
+				"The main source of &6Hadal Shards&r."
 				""
 				"The other mission gives negligible amounts of &6Neutronium&r and some other moderately useful things, but you're better off making Neutronium in the &3Fusion Reactor Mark 3&r&r and the other items are otherwise craftable."
 			]
