@@ -14,6 +14,14 @@ A comprehensive list of changes can be found [here](https://gist.github.com/TheP
 Monifactory should run on any computer with a CPU newer than 2019. Allocating 6GB of RAM is recommended<br>
 ``NOTE: If your computer has 8GB RAM or less, assume that Monifactory will not run on it``
 
+**Q. Can I add 'X' mod to Monifactory?**
+
+By default, Monifactory only supports the mods included with it, and has optional compat for ComputerCraft, Create, and Tempad. Any other mods added may break progression and/or deviate from the intended experience, but feel free to add them to your personal instance. Note that support may not be provided for bugs related to mods not shipped with the pack
+
+**Q. Will Monifactory be ported to 'X' Minecraft version?**
+
+Monifactory will not be backported to any versions before 1.20.1. Porting the pack to a future version of Minecraft may or may not happen, but **do not ask and pester the devs**.
+
 **Q. I've found a bug, where do I report it?**
 
 You can report it on the [Monifactory issue tracker](https://github.com/ThePansmith/Monifactory/issues). If the issue lies with GregTech itself or another mod, report it to their respective issue trackers
@@ -26,7 +34,7 @@ You can report it on the [Monifactory issue tracker](https://github.com/ThePansm
 
 **Q. Does Monifactory support Essential world hosting?**
 
-Essential is not officially supported, and various unsupported bugs and crashes may arise from hosting using it-->
+Essential is not officially supported, and various unsupported bugs and crashes may arise from hosting using it. Support will not be provided for these -->
 
 **Q. How do I play Monifactory Hard Mode/Harder Mode?**
    
@@ -42,6 +50,10 @@ Odds are your config doesn't match the ones on the server. If the server is runn
 **Q. My GregTech textures are all messed up!**
 
 GregTech uses dynamically generated textures, reloading your resource packs may break this. Restarting the game should fix it
+
+**Q. Solar boilers do not work in the void dimension**
+
+Known issue (https://github.com/GregTechCEu/GregTech-Modern/issues/1682)
 
 ## Contributing to Monifactory
 <!-- Todo -->
