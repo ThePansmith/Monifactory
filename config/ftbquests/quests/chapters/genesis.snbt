@@ -996,8 +996,9 @@
 			]
 			id: "57D1B1D74391A05F"
 			rewards: [{
+				count: 2
 				id: "04FB020A78370641"
-				item: "kubejs:moni_nickel"
+				item: "ulvcovm:ulv_conveyor_module"
 				type: "item"
 			}]
 			shape: "hexagon"
