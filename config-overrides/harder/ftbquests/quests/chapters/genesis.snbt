@@ -201,7 +201,7 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["&9Still very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
+			description: ["&9Can be used to autobuild multiblocks&r."]
 			disable_toast: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
@@ -222,10 +222,8 @@
 				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
 				"{@pagebreak}"
 				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &9Goethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
-				""
-				"&6Wrought Iron&f is obtained simply by &esmelting Iron Nuggets a second time&f. It has more durability than Iron, so it is better for making tools, but &cdo not convert your entire Iron supply over to Wrought Iron&f. The two materials are not interchangeable and you'll need Iron or Wrought Iron as demanded by various recipes."
 			]
-			icon: "gtceu:wrought_iron_ingot"
+			icon: "minecraft:iron_ingot"
 			id: "2E8BFA2E719B1C47"
 			rewards: [{
 				id: "318894ADCA9CF9DB"
@@ -242,20 +240,12 @@
 			}]
 			shape: "hexagon"
 			subtitle: "ULV Beginnings"
-			tasks: [
-				{
-					count: 12L
-					id: "674259A69F1EEC1C"
-					item: { Count: 12b, id: "minecraft:iron_ingot" }
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "02A10A7E907718D5"
-					item: { Count: 12b, id: "gtceu:wrought_iron_ingot" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 24L
+				id: "674259A69F1EEC1C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			title: "Iron Supply"
 			x: 0.0d
 			y: 2.5d
@@ -556,11 +546,11 @@
 				""
 				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
-				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
+				"&6Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
 			]
 			icon: {
 				Count: 1b
-				id: "gtceu:wrought_iron_wire_cutter"
+				id: "gtceu:iron_wire_cutter"
 				tag: {
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
@@ -587,12 +577,17 @@
 					id: "04ED9B749EA44142"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_hammer"
+						id: "gtceu:iron_hammer"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -601,12 +596,15 @@
 					id: "514CE965C8FB1452"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_file"
+						id: "gtceu:iron_file"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -615,12 +613,17 @@
 					id: "7226082DB71F551A"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_saw"
+						id: "gtceu:iron_saw"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -629,12 +632,19 @@
 					id: "705CACC01AD1C68E"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_wrench"
+						id: "gtceu:iron_wrench"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
 							GT.Tool: {
 								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -643,12 +653,15 @@
 					id: "290A0FE8C389AF05"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_screwdriver"
+						id: "gtceu:iron_screwdriver"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -657,12 +670,17 @@
 					id: "7B41907A63748FCA"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_wire_cutter"
+						id: "gtceu:iron_wire_cutter"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -671,12 +689,15 @@
 					id: "7298CFD7BA970AA8"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_mortar"
+						id: "gtceu:iron_mortar"
 						tag: {
-							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
 							GT.Tool: {
 								Damage: 0
+								MaxDamage: 255
 							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -789,7 +810,7 @@
 					id: "1F3EDCBF5EB70229"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_wrench"
+						id: "gtceu:iron_wrench"
 						tag: {
 							Damage: 0
 							GT.Tool: {
@@ -818,7 +839,7 @@
 			description: [
 				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
 				""
-				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the mortar and the plunger."
+				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Iron Ingots&f to repair tools made of &6Iron&f. The only tools unable to be repaired are the mortar and the plunger."
 				""
 				"Also, you can now repair your free &6Mining Hammers&r with some &6Diamonds&r!"
 			]
@@ -1626,7 +1647,26 @@
 			}]
 			tasks: [{
 				id: "0527876D6287634B"
-				item: "gtceu:lv_battery_buffer_4x"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_4x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_8x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_16x"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Charging Batteries"
@@ -1640,7 +1680,7 @@
 				""
 				"Although there are several types of rechargeable batteries you can make, &2Lithium Batteries&r are the best ones, and the only ones you should really consider making."
 				""
-				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are fairly rare."
+				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are only found in the End dimension."
 			]
 			id: "077AA27F26B7831F"
 			rewards: [{
@@ -2172,6 +2212,45 @@
 			title: "Inventory Sorting"
 			x: -9.0d
 			y: 8.5d
+		}
+		{
+			dependencies: [
+				"754C416FB3F5DBDA"
+				"4B338515E84FC51A"
+			]
+			description: [
+				"&6Wrought Iron&r is a better alternative than &6Iron&r for tools, and with the &3Alloy Smelter&r you finally have a way to manufacture it, albeit slowly."
+				""
+				"First, you put Iron Ingots the &3Alloy Smelter&r with a &6Nugget Mold&r to create Iron Nuggets. Those Nuggets are then smelted in any &3Furnace&r to create &6Wrought Iron Nuggets.&r"
+				""
+				"Finally, you can turn those &6Wrought Iron Nuggets&r into a &6Wrought Iron Ingot&r with another trip to the &3Alloy Smelter,&r or by &3Macerating&r them, combining the dust piles and another round of smelting in a &3Furnace.&r"
+				""
+				"After all that hassle, though, you're probably better off using &6Steel.&r"
+			]
+			icon: "gtceu:wrought_iron_nugget"
+			id: "70784021A2D4E520"
+			shape: "hexagon"
+			subtitle: "Better Iron... Mostly"
+			tasks: [
+				{
+					id: "47B3AE212EB051F2"
+					item: "gtceu:nugget_casting_mold"
+					type: "item"
+				}
+				{
+					id: "6EAF71E5BF140718"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "1D5FB685C74458E9"
+					item: "gtceu:wrought_iron_nugget"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron"
+			x: -1.5d
+			y: 11.0d
 		}
 	]
 	title: "An Even Harder Genesis"

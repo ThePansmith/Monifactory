@@ -10,7 +10,6 @@
 		{
 			id: "7471AD069CC1E5EC"
 			linked_quest: "5CFBAB5F83E33064"
-			shape: "hexagon"
 			size: 1.5d
 			x: -6.75d
 			y: 3.0d
@@ -1026,6 +1025,7 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["5C4E189A3E401566"]
 			description: ["&2With the MV Assembling Machine, you can assemble a few necessary parts for the next Circuit tier."]
 			hide_dependency_lines: true
 			id: "2C6BEB5BBE5A91DC"
@@ -2161,7 +2161,6 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				count: 4L
@@ -2171,7 +2170,7 @@
 			}]
 			title: "&2More Blast Furnaces"
 			x: -6.75d
-			y: 6.75d
+			y: 5.25d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
@@ -2208,7 +2207,6 @@
 			]
 			icon: "gtceu:energetic_alloy_octal_wire"
 			id: "2861BA7C235C52A3"
-			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "7A50024966E38151"
@@ -2220,7 +2218,11 @@
 		}
 		{
 			dependencies: ["3B639F4061B00F1A"]
-			description: ["All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."]
+			description: [
+				"All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."
+				""
+				"Providing it with &6Fertilizer&r will significantly increase it's output."
+			]
 			id: "3A71D736AE5C17E2"
 			rewards: [{
 				id: "1FE4BFEFDB4C34FC"
@@ -2235,25 +2237,6 @@
 			title: "&9Infiniter Wood"
 			x: 12.5d
 			y: 7.0d
-		}
-		{
-			description: [
-				"The &9Greenhouse&r is able to grow both crops and trees, perfect for your needs."
-				""
-				"Providing it with &6Fertilizer&r will significantly increase it's output."
-			]
-			hide_dependency_lines: true
-			id: "5138F8BE53342697"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "07E81B14FA5C5CA6"
-				item: "gtceu:greenhouse"
-				type: "item"
-			}]
-			title: "&9Farming"
-			x: -6.75d
-			y: 4.75d
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]

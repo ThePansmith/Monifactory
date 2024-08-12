@@ -334,7 +334,7 @@ ServerEvents.recipes(event => {
     .outputFluids(Fluid.of('gtceu:molten_enderium', 1296))
     .duration(7200) // 320s
     .EUt(7680)
-    .blastFurnaceTemp(4500)
+    .blastFurnaceTemp(6400)
 
     event.recipes.gtceu.alloy_blast_smelter('enderium_mana')
     .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'gtceu:tantalum_dust', 'kubejs:resonant_clathrate')

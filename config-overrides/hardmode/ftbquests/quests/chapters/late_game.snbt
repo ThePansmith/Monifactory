@@ -1138,7 +1138,7 @@
 				""
 				"Tier Six Micro Miners can get some eggs (enough for this quest, as it happens), but Tier Seven miners are a better long-term solution for building up your supply, as they also give &6Dragon Hearts&r."
 				""
-				"Later, you'll also get substantial quantities from Tier Eight Micro Miners, while you are accumulating &6Chaos Shards&r."
+				"Later, you'll also get substantial quantities from Tier Eight Micro Miners, while you are accumulating &6Hadal Shards&r."
 			]
 			id: "039F70814051413E"
 			rewards: [{
@@ -1842,7 +1842,7 @@
 			}]
 			title: "&9Discharger"
 			x: 27.25d
-			y: 18.25238095238094d
+			y: 18.25d
 		}
 		{
 			dependencies: ["7C89BC235C988689"]
@@ -1875,7 +1875,6 @@
 				""
 				"&9This microminer is also to bring back Ender dragon eggs and Ender dragon scales, as well as neutronium, depending on the mission&r."
 			]
-			hide_dependency_lines: false
 			id: "2D47BFA44BDB5E6A"
 			rewards: [{
 				id: "5D074328E8D1E7A2"
@@ -1902,7 +1901,6 @@
 				""
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
-			hide_dependent_lines: true
 			id: "7E3A179376673590"
 			rewards: [{
 				id: "685F19529C786FAC"
@@ -2311,6 +2309,10 @@
 			y: 15.25d
 		}
 		{
+			dependencies: [
+				"11154356854B64DA"
+				"39FD6F1076559156"
+			]
 			description: [
 				"Some Micro Miner missions use a &6Gemstone Sensor&r to scout out gems instead of ores."
 				""
@@ -2710,6 +2712,7 @@
 				""
 				"The charger and pylon themselves &ehave extreme throughput&r, so don't worry about having to wait for it to craft items."
 			]
+			icon: "extendedcrafting:auto_flux_crafter"
 			id: "7F75D961B102A72D"
 			rewards: [{
 				id: "4CF3CFEF57B863A3"
