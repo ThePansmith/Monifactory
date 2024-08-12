@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         'DDD',
         'DDD'
     ], {
-        D: 'kubejs:moni_dollar'
+        D: 'kubejs:moni_quarter'
     }).noMirror().noShrink()
 }
 })
