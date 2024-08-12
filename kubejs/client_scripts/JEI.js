@@ -190,7 +190,7 @@ JEIEvents.hideItems(event => {
 
 JEIEvents.addItems(event => {
     //Sophisticated Storage Stuff
-    event.add([Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"oak"}')])
+    event.add([Item.of('sophisticatedstorage:gold_barrel', '{woodType:"spruce"}'), Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"spruce"}'), Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"spruce"}')])
     event.add([Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}')])
     event.add(['sophisticatedstorage:gold_shulker_box', 'sophisticatedstorage:diamond_shulker_box', 'sophisticatedstorage:netherite_shulker_box'])
     event.add('sophisticatedbackpacks:backpack')
