@@ -10,7 +10,6 @@
 		{
 			id: "7471AD069CC1E5EC"
 			linked_quest: "5CFBAB5F83E33064"
-			shape: "hexagon"
 			size: 1.5d
 			x: -6.75d
 			y: 3.0d
@@ -2161,7 +2160,6 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				count: 4L
@@ -2208,7 +2206,6 @@
 			]
 			icon: "gtceu:energetic_alloy_octal_wire"
 			id: "2861BA7C235C52A3"
-			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "7A50024966E38151"
