@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     const converter = [
         ['uev', 'omnium', 'activated_netherite', '1966080'],
-        ['uiv', 'infinity', 'holmium', '3932160'],
+        ['uiv', 'holmium', 'holmium', '3932160'],
         ['max', 'monium', 'monium', '80000000'],
     ]
     // no MAX tier laserhatch :1984:
