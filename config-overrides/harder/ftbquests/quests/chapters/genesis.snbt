@@ -1657,7 +1657,26 @@
 			}]
 			tasks: [{
 				id: "0527876D6287634B"
-				item: "gtceu:lv_battery_buffer_4x"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_4x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_8x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_16x"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Charging Batteries"
