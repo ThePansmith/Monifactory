@@ -11,13 +11,13 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:microminer_t8half', Text.translatable('item.kubejs.microminer_t8half.desc'))
 
     tooltip.addAdvanced(['/kubejs:stabilized_microminer/'], (item, adv, text) => {
-        text.add(1, '§7§oA stabilized version, injected with a Heart of a Universe.')
-        text.add(2, '§7§oLasts indefinitely. Reusable. Totally not overpowered.')
-        text.add(3, '§7§oIt looks oddly familiar.')
+        text.add(1, Text.translatable('item.kubejs.stabilized_microminer.tooltip.1'))
+        text.add(2, Text.translatable('item.kubejs.stabilized_microminer.tooltip.2'))
+        text.add(3, Text.translatable('item.kubejs.stabilized_microminer.tooltip.3'))
     })
 
     tooltip.addAdvanced(['/kubejs:pristine_matter/'], (item, adv, text) => {
-        text.add(1, '§7§oAn infinite and incomprehensible abyss of materials.')
+        text.add(1, Text.translatable('item.kubejs.pristine_matter.desc'))
     })
 
     //Microminer Components
@@ -61,18 +61,18 @@ ItemEvents.tooltip(tooltip => {
     });
 
     // Circuits
-    tooltip.addAdvanced(`kubejs:matter_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(`UEV-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
-    tooltip.addAdvanced(`kubejs:matter_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(`UHV-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
-    tooltip.addAdvanced(`kubejs:matter_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(`UV-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
-    tooltip.addAdvanced(`kubejs:matter_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(`ZPM-Tier Circuit`, Math.round(Client.lastNanoTime / 1000000000)))})
-    tooltip.addAdvanced(`kubejs:dimensional_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(`UIV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
-    tooltip.addAdvanced(`kubejs:dimensional_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(`UEV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
-    tooltip.addAdvanced(`kubejs:dimensional_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(`UHV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
-    tooltip.addAdvanced(`kubejs:dimensional_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(`UV-Tier Circuit`, Math.round(Client.lastNanoTime / 100000000)))})
-    tooltip.addAdvanced(`kubejs:monic_processor_mainframe`, (item, adv, text) => {text.add(1, Text.blue(`MAX-Tier Circuit`))})
-    tooltip.addAdvanced(`kubejs:monic_processor_computer`, (item, adv, text) => {text.add(1, Text.blue(`UIV-Tier Circuit`))})
-    tooltip.addAdvanced(`kubejs:monic_processor_assembly`, (item, adv, text) => {text.add(1, Text.blue(`UEV-Tier Circuit`))})
-    tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => {text.add(1, Text.blue(`UHV-Tier Circuit`))})
+    tooltip.addAdvanced(`kubejs:matter_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uev_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:matter_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uhv_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:matter_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uv_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:matter_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.zpm_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uiv_tier_circuit'), Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uev_tier_circuit'), Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uhv_tier_circuit'), Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:dimensional_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uv_tier_circuit'), Math.round(Client.lastNanoTime / 100000000)))})
+    tooltip.addAdvanced(`kubejs:monic_processor_mainframe`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.max_tier_circuit')))})
+    tooltip.addAdvanced(`kubejs:monic_processor_computer`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uiv_tier_circuit')))})
+    tooltip.addAdvanced(`kubejs:monic_processor_assembly`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uev_tier_circuit')))})
+    tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uhv_tier_circuit')))})
 
 
 
@@ -158,7 +158,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('nuclearcraft:californium_252', '§eCf²⁵²');
 
     tooltip.addAdvanced(['/^kubejs:.+infinity_dust_block$/', 'kubejs:infinity_dust_block'], (item, adv, text) => {
-        text.add(1, Text.gray('Not quite solid'))
+        text.add(1, Text.translatable('item.kubejs.infinity_dust_block.tooltip'))
     })
 
     if (Platform.isLoaded('tempad')) {
