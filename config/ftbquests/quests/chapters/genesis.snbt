@@ -1485,11 +1485,11 @@
 							{
 								Count: 1b
 								id: "gtceu:lv_battery_buffer_4x
-							},
+							}
 							{
 								Count: 1b
 								id: "gtceu:lv_battery_buffer_8x
-							},
+							}
 							{
 								Count: 1b
 								id: "gtceu:lv_battery_buffer_16x
