@@ -815,27 +815,35 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_axe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						DisableShields: 1b
+						TreeFelling: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 4.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "527F56DFAD5E20EC"
 			tasks: [{
 				id: "254A555916313F70"
 				item: {
 					Count: 1b
-					id: "gtceu:flint_axe"
+					id: "itemfilters:id_regex"
 					tag: {
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							DisableShields: 1b
-							TreeFelling: 1b
-						}
-						GT.Tool: {
-							Damage: 0
-							HarvestLevel: 2
-							MaxDamage: 63
-							ToolSpeed: 3.5f
-						}
-						HideFlags: 2
+						value: "^gtceu:.*_axe$"
 					}
 				}
+				title: "Any Lumber Axe"
 				type: "item"
 			}]
 			title: "&9Tree chopping"
@@ -996,8 +1004,9 @@
 			]
 			id: "57D1B1D74391A05F"
 			rewards: [{
+				count: 2
 				id: "04FB020A78370641"
-				item: "kubejs:moni_nickel"
+				item: "ulvcovm:ulv_conveyor_module"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1510,7 +1519,7 @@
 				""
 				"Although there are several types of rechargeable batteries you can make, &2Lithium Batteries&r are the best ones, and the only ones you should really consider making."
 				""
-				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are fairly rare. Consider \"buying\" some Lithium with &9Monicoins&r."
+				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are only found in the End dimension. Consider \"buying\" some Lithium with &9Monicoins&r."
 			]
 			id: "077AA27F26B7831F"
 			rewards: [{

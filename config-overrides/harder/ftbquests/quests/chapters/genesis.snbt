@@ -222,10 +222,8 @@
 				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
 				"{@pagebreak}"
 				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &9Goethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
-				""
-				"&6Wrought Iron&f is obtained simply by &esmelting Iron Nuggets a second time&f. It has more durability than Iron, so it is better for making tools, but &cdo not convert your entire Iron supply over to Wrought Iron&f. The two materials are not interchangeable and you'll need Iron or Wrought Iron as demanded by various recipes."
 			]
-			icon: "gtceu:wrought_iron_ingot"
+			icon: "minecraft:iron_ingot"
 			id: "2E8BFA2E719B1C47"
 			rewards: [{
 				id: "318894ADCA9CF9DB"
@@ -242,20 +240,12 @@
 			}]
 			shape: "hexagon"
 			subtitle: "ULV Beginnings"
-			tasks: [
-				{
-					count: 12L
-					id: "674259A69F1EEC1C"
-					item: { Count: 12b, id: "minecraft:iron_ingot" }
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "02A10A7E907718D5"
-					item: { Count: 12b, id: "gtceu:wrought_iron_ingot" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 24L
+				id: "674259A69F1EEC1C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			title: "Iron Supply"
 			x: 0.0d
 			y: 2.5d
@@ -560,7 +550,7 @@
 			]
 			icon: {
 				Count: 1b
-				id: "gtceu:wrought_iron_wire_cutter"
+				id: "gtceu:iron_wire_cutter"
 				tag: {
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
@@ -820,7 +810,7 @@
 					id: "1F3EDCBF5EB70229"
 					item: {
 						Count: 1b
-						id: "gtceu:wrought_iron_wrench"
+						id: "gtceu:iron_wrench"
 						tag: {
 							Damage: 0
 							GT.Tool: {
@@ -849,7 +839,7 @@
 			description: [
 				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
 				""
-				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the mortar and the plunger."
+				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Iron Ingots&f to repair tools made of &6Iron&f. The only tools unable to be repaired are the mortar and the plunger."
 				""
 				"Also, you can now repair your free &6Mining Hammers&r with some &6Diamonds&r!"
 			]
@@ -1690,7 +1680,7 @@
 				""
 				"Although there are several types of rechargeable batteries you can make, &2Lithium Batteries&r are the best ones, and the only ones you should really consider making."
 				""
-				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are fairly rare."
+				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are only found in the End dimension."
 			]
 			id: "077AA27F26B7831F"
 			rewards: [{
@@ -2222,6 +2212,45 @@
 			title: "Inventory Sorting"
 			x: -9.0d
 			y: 8.5d
+		}
+		{
+			dependencies: [
+				"754C416FB3F5DBDA"
+				"4B338515E84FC51A"
+			]
+			description: [
+				"&6Wrought Iron&r is a better alternative than &6Iron&r for tools, and with the &3Alloy Smelter&r you finally have a way to manufacture it, albeit slowly."
+				""
+				"First, you put Iron Ingots the &3Alloy Smelter&r with a &6Nugget Mold&r to create Iron Nuggets. Those Nuggets are then smelted in any &3Furnace&r to create &6Wrought Iron Nuggets.&r"
+				""
+				"Finally, you can turn those &6Wrought Iron Nuggets&r into a &6Wrought Iron Ingot&r with another trip to the &3Alloy Smelter,&r or by &3Macerating&r them, combining the dust piles and another round of smelting in a &3Furnace.&r"
+				""
+				"After all that hassle, though, you're probably better off using &6Steel.&r"
+			]
+			icon: "gtceu:wrought_iron_nugget"
+			id: "70784021A2D4E520"
+			shape: "hexagon"
+			subtitle: "Better Iron... Mostly"
+			tasks: [
+				{
+					id: "47B3AE212EB051F2"
+					item: "gtceu:nugget_casting_mold"
+					type: "item"
+				}
+				{
+					id: "6EAF71E5BF140718"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "1D5FB685C74458E9"
+					item: "gtceu:wrought_iron_nugget"
+					type: "item"
+				}
+			]
+			title: "Wrought Iron"
+			x: -1.5d
+			y: 11.0d
 		}
 	]
 	title: "An Even Harder Genesis"
