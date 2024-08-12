@@ -351,6 +351,18 @@
   "block.kubejs.dark_soularium_casing": "Dark Soularium Casing",
   "block.kubejs.omnic_matrix_machine_casing": "Omnic Matrix Machine Casing",
   "block.kubejs.dimensional_stabilization_netherite_casing": "Dimensional Stabilization Netherite Casing",
-  "block.kubejs.omnic_matrix_coil_block": "Omnic Matrix Coil Block"
+  "block.kubejs.omnic_matrix_coil_block": "Omnic Matrix Coil Block",
+
+  "item.kubejs.stabilized_microminer.tooltip.1": "§7§oA stabilized version, injected with a Heart of a Universe.",
+  "item.kubejs.stabilized_microminer.tooltip.2": "§7§oLasts indefinitely. Reusable. Totally not overpowered.",
+  "item.kubejs.stabilized_microminer.tooltip.3": "§7§oIt looks oddly familiar.",
+  "item.kubejs.pristine_matter.desc": "§7§oAn infinite and incomprehensible abyss of materials.",
+  "item.kubejs.uv_tier_circuit": "UV-Tier Circuit",
+  "item.kubejs.zpm_tier_circuit": "ZPM-Tier Circuit",
+  "item.kubejs.uhv_tier_circuit": "UHV-Tier Circuit",
+  "item.kubejs.uev_tier_circuit": "UEV-Tier Circuit",
+  "item.kubejs.uiv_tier_circuit": "UIV-Tier Circuit",
+  "item.kubejs.max_tier_circuit": "MAX-Tier Circuit",
+  "item.kubejs.infinity_dust_block.tooltip": "§7§oNot quite solid"
 }
 
