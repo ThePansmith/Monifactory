@@ -113,6 +113,7 @@ ServerEvents.recipes(event => {
     // Utilitarian
     event.remove({ id: /utilitarian:.*_soliciting_carpet/ })
     event.remove({ output: ['utilitarian:snad', 'utilitarian:red_snad', 'utilitarian:soul_snad', 'utilitarian:fluid_hopper', 'utilitarian:no_soliciting_banner']})
+    event.remove({ id: 'utilitarian:utility/logs_to_hopper'})
 
     // Shrink
     event.remove({ output: 'shrink:shrinking_device'})
