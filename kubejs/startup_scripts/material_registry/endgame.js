@@ -44,7 +44,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('infinity')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD,  GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE)
-        
+        .cableProperties(134217728, 256, 0, true)
+
     event.create('monium')
         .ingot()
         .element(GTElements.get("monium"))
