@@ -2309,6 +2309,10 @@
 			y: 15.25d
 		}
 		{
+			dependencies: [
+				"11154356854B64DA"
+				"39FD6F1076559156"
+			]
 			description: [
 				"Some Micro Miner missions use a &6Gemstone Sensor&r to scout out gems instead of ores."
 				""
