@@ -36,5 +36,14 @@ ServerEvents.recipes(event => {
     ], {
         A: 'kubejs:moni_penny'
     }).noMirror().noShrink()
+
+    event.shaped(
+        Item.of('32x minecraft:honeycomb', 32), [
+        'AAA',
+        '   ',
+        '   '
+    ], {
+        A: 'kubejs:moni_penny'
+    }).noMirror().noShrink()
 }
 })
