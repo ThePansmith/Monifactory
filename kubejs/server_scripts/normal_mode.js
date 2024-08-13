@@ -8,8 +8,6 @@ ServerEvents.recipes(event => {
         event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
         event.remove({ type: "gtceu:primitive_blast_furnace", output: "gtceu:steel_ingot" })
         event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
-        
-        event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
         event.remove({ id: /fireclay/ })
         event.remove({ output: ['gtceu:firebrick', 'gtceu:firebricks', 'gtceu:primitive_blast_furnace'] })
 
@@ -182,8 +180,6 @@ ServerEvents.recipes(event => {
             .itemOutputs('gtceu:infinite_water_cover')
             .duration(100)
             .EUt(128)
-
-        event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
 
         //GT Steam Age
         gtMachines.forEach(machine => {
