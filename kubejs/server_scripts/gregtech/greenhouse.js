@@ -239,12 +239,6 @@ ServerEvents.recipes(event => {
     Greenhouse('moss_block', 'minecraft:moss_block', 1000, '12x minecraft:moss_block', false)
     Greenhouse('moss_block_boosted', 'minecraft:moss_block', 1000, '24x minecraft:moss_block', true) 
 	
-	// Thermal Mushroom Spores
-	Greenhouse('slime_spores_boosted', 'thermal:slime_mushroom_spores', 1000, '8x thermal:slime_mushroom_spores', true)
-	Greenhouse('gunpowder_spores_boosted', 'thermal:gunpowder_mushroom_spores', 1000, '8x thermal:gunpowder_mushroom_spores', true)
-	Greenhouse('glowstone_spores_boosted', 'thermal:glowstone_mushroom_spores', 1000, '8x thermal:glowstone_mushroom_spores', true)
-	Greenhouse('redstone_spores_boosted', 'thermal:redstone_mushroom_spores', 1000, '8x thermal:redstone_mushroom_spores', true)
-
 })
 
 ServerEvents.recipes(event => {
