@@ -104,6 +104,9 @@ ServerEvents.recipes(event => {
             R: "gtceu:sticky_resin"
         }
         )
+        event.shapeless("gtceu:rubber_ingot", [
+            'gtceu:sticky_resin', 'gtceu:brick_wooden_form'
+        ])
 
         // Compressor rubber - better, but not perfect - that's chemical reactor rubber
         event.recipes.gtceu.compressor("compressor_rubber_sheet")
