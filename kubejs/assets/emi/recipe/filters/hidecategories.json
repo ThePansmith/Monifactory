@@ -249,6 +249,9 @@
             "category": "create:fan_washing" 
         },
         {
+            "category": "create:block_cutting" 
+        },
+        {
             "category": "enderio:sagmilling" 
         }
     ]
