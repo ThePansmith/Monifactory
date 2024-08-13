@@ -42,14 +42,14 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     event.add("kubejs:overworld/tetrahedrite", vein => {
-        vein.weight(40)
-        vein.clusterSize(30)
+        vein.weight(50)
+        vein.clusterSize(40)
         vein.density(0.8)
         vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
         vein.biomes("#minecraft:is_overworld")
-        vein.heightRangeUniform(60, 120)
+        vein.heightRangeUniform(30, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(2).mat(GTMaterials.Tetrahedrite).size(1, 1))
