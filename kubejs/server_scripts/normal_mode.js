@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
     if (isNormalMode) {
         // Moni Steel
         event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
+        event.remove({ type: "gtceu:primitive_blast_furnace", output: "gtceu:steel_ingot" })
         event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
         
         event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
