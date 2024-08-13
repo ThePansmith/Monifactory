@@ -776,6 +776,8 @@
 				"&2GTCEu now has Mining Hammers natively! You can craft them with any GT tool material. &r"
 				""
 				"Your free 4 Diamond Mining Hammers should last you a while, and you can always fix them using an anvil and some diamonds."
+				""
+				"(If you started on "Hardmode", you sadly have to make one yourself)"
 			]
 			icon: {
 				Count: 1b
