@@ -139,7 +139,8 @@ ServerEvents.recipes(event => {
         })
 
         event.remove({ output: 'sophisticatedstorage:compression_upgrade' })
-
+        event.remove({ id: 'sophisticatedbackpacks:advanced_magnet_upgrade' })
+        event.remove({ id: 'sophisticatedstorage:advanced_magnet_upgrade' })
 
 
 
