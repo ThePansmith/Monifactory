@@ -33,9 +33,6 @@ ServerEvents.recipes(event => {
         event.remove({ type: "minecraft:smelting", output: "gtceu:wrought_iron_nugget" })
         event.smelting("gtceu:wrought_iron_ingot", "minecraft:iron_ingot")
 
-        // Dust hydration
-        event.shapeless("minecraft:clay", ["kubejs:dust", "minecraft:water_bucket"])
-
         // Make clay electrolysis an LV recipe
         event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_clay" })
         event.recipes.gtceu.electrolyzer("clay_electrolysis_lv")
