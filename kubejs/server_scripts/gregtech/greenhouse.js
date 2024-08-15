@@ -89,6 +89,14 @@ ServerEvents.recipes(event => {
     Greenhouse('chorus', 'minecraft:chorus_flower', 1000, ['32x minecraft:chorus_fruit', '4x minecraft:chorus_flower'], false)
     Greenhouse('chorus_boosted', 'minecraft:chorus_flower', 1000, ['64x minecraft:chorus_fruit', '4x minecraft:chorus_flower'], true)
 
+    // Warped Fungus
+    Greenhouse('warped_fungus', 'minecraft:warped_fungus', 1000, ['64x minecraft:warped_stem', '32x minecraft:warped_wart_block', '16x minecraft:shroomlight', '4x minecraft:warped_fungus'], false)
+    Greenhouse('warped_fungus_boosted', 'minecraft:warped_fungus', 1000, ['64x minecraft:warped_stem', '64x minecraft:warped_stem', '16x minecraft:warped_wart_block', '32x minecraft:shroomlight', '4x minecraft:warped_fungus'], true)
+
+    // Crimson Fungus
+    Greenhouse('crimson_fungus', 'minecraft:crimson_fungus', 1000, ['64x minecraft:crimson_stem', '16x minecraft:nether_wart_block', '16x minecraft:shroomlight', '16x minecraft:weeping_vines', '4x minecraft:crimson_fungus'], false)
+    Greenhouse('crimson_fungus_boosted', 'minecraft:crimson_fungus', 1000, ['64x minecraft:crimson_stem', '64x minecraft:crimson_stem', '16x minecraft:nether_wart_block', '32x minecraft:shroomlight', '16x minecraft:weeping_vines', '4x minecraft:crimson_fungus'], true)
+
     ////// Crops //////
 
     // Sugarcane
