@@ -501,7 +501,7 @@
 		}
 		{
 			dependencies: ["3F77EDE69BB649DA"]
-			description: ["&3Gold Furnaces&f are yet another step up in speed, taking only &a40 ticks&f to smelt an item."]
+			description: ["&3Gold Furnaces&f are yet another step up in speed, taking only &a60 ticks&f to smelt an item."]
 			id: "6B121BEFD852BC2D"
 			rewards: [{
 				id: "045094D4927E2AB5"
