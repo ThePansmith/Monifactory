@@ -225,21 +225,8 @@
 			]
 			icon: "minecraft:iron_ingot"
 			id: "2E8BFA2E719B1C47"
-			rewards: [{
-				id: "318894ADCA9CF9DB"
-				item: {
-					Count: 1b
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "monifactory:wrought_iron"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
-			subtitle: "ULV Beginnings"
+			subtitle: "Steam Beginnings"
 			tasks: [{
 				count: 24L
 				id: "674259A69F1EEC1C"
