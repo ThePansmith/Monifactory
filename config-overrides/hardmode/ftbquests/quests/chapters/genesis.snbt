@@ -964,9 +964,7 @@
 		{
 			dependencies: ["4B338515E84FC51A"]
 			description: [
-				"A mixture of &6Clay, Brick, &cGypsum and Concrete&r produces &6Firebricks&r, used in building the &3Primitive Blast Furnace&r. &c"
-				""
-				"So far, your only available route for Concrete is adding Stone Dust, Quartz Sand, Clay and Calcite to a bucket of Water.&r"
+				"A mixture of &6Clay and Brick&r produces &6Fireclay&r, used in building the &3Primitive Blast Furnace&r. &c"
 				""
 				"This allows you to make &6Steel&r from &6Wrought Iron&r (or with &6Iron&r, but its slower). Now you can make &7LV &6Machine Hulls&r!"
 				""
