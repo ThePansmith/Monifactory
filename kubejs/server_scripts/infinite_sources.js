@@ -67,4 +67,20 @@ ServerEvents.recipes(event => {
             }
         ).id('kubejs:device_rock_gen');
     }
+
+    //Infinite Cobble/Water cells
+    event.remove({ id: 'expatternprovider:water_cell' })
+    event.recipes.gtceu.assembler("kubejs:infinite_water_cell")
+            .itemInputs("3x #forge:plates/mythril", "3x minecraft:water_bucket", "ae2:cell_component_16k", "2x ae2:quartz_vibrant_glass")
+            .itemOutputs(Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}'))
+            .duration(800)
+            .EUt(512)
+
+    event.remove({ id: 'expatternprovider:cobblestone_cell' })
+    event.recipes.gtceu.assembler("kubejs:infinite_cobblestone_cell")
+            .itemInputs("3x #forge:plates/mythril", "2x minecraft:water_bucket", "1x minecraft:lava_bucket", "ae2:cell_component_16k", "2x ae2:quartz_vibrant_glass")
+            .itemOutputs(Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:i",id:"minecraft:cobblestone"}}'))
+            .duration(800)
+            .EUt(512)
+
 })
