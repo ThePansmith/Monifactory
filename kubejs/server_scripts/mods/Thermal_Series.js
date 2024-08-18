@@ -502,18 +502,6 @@ ServerEvents.recipes(event => {
         .EUt(16);
 
     // Devices
-    event.remove({ id: "thermal:device_water_gen" }) // aqua accumulator
-    event.shaped(
-        "thermal:device_water_gen", [
-            'BBB',
-            'BCB',
-            'BBB'
-        ], {
-            B: "enderio:fused_quartz",
-            C: "watercollector:watercollector"
-        }
-    ).id('kubejs:device_water_gen');
-
     event.remove({ type: "thermal:rock_gen", not: { output: "minecraft:cobblestone" } })
 
     event.remove({ id: 'thermal:device_nullifier' });

@@ -131,17 +131,6 @@ ServerEvents.recipes(event => {
         }
         )
 
-        event.remove({ id: "watercollector:watercollector" })
-        event.shaped(
-            "watercollector:watercollector", [
-            "AAA",
-            "B B",
-            "AAA"
-        ], {
-            A: "gtceu:wrought_iron_plate",
-            B: "minecraft:water_bucket"
-        }
-        )
         event.recipes.gtceu.assembler("lv_motor")
             .itemInputs("2x gtceu:tin_single_cable", "2x gtceu:iron_rod", "gtceu:magnetic_iron_rod", "4x gtceu:fine_copper_wire")
             .itemOutputs("gtceu:lv_electric_motor")
@@ -173,14 +162,6 @@ ServerEvents.recipes(event => {
         }
         ).id('gtceu:shaped/distillation_tower')
 
-
-        event.remove({ id: 'gtceu:assembler/cover_infinite_water' })
-        event.recipes.gtceu.assembler("kubejs:infinite_water_cover")
-            .itemInputs("2x gtceu:mv_electric_pump", "thermal:device_water_gen", "#gtceu:circuits/mv")
-            .itemOutputs('gtceu:infinite_water_cover')
-            .duration(100)
-            .EUt(128)
-
         //GT Steam Age
         gtMachines.forEach(machine => {
             event.remove({ output: ['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine] })
@@ -197,18 +178,6 @@ ServerEvents.recipes(event => {
         C: 'ironfurnaces:diamond_furnace',
         D: 'enderio:vibrant_gear',
         E: 'kubejs:redstone_transmission_coil'
-    }
-    )
-
-    event.remove({ id: "thermal:device_rock_gen" })
-    event.shaped(
-        "thermal:device_rock_gen", [
-        'PPP',
-        'B B',
-        'PPP'
-    ], {
-        P: "gtceu:steel_plate",
-        B: "minecraft:bucket"
     }
     )
     
