@@ -21,11 +21,11 @@
 
 ## Credits
 - Original pack by [Exaxxion](https://github.com/Exaxxion).
-- Nomifactory CEu pack by [Tracer](https://github.com/tracer4b).  
-- README.md base from [Gregtech CEu](https://github.com/GregTechCEu/GregTech).  
-- Meowni (mascot) by Mutso  
-- Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
-- Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
+- Nomifactory CEu pack by [Tracer](https://github.com/tracer4b).
+- README.md base from [Gregtech CEu](https://github.com/GregTechCEu/GregTech).
+- Meowni (mascot) by Mutso
+- Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).
+- Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).
 Thank you!
 
 ## Hard/Harder Mode
@@ -63,3 +63,7 @@ Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 6. ``unzip server.zip``
 7. Move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
 8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
