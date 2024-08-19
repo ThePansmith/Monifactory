@@ -159,6 +159,7 @@
 				""
 				"For your MV cables, you can use &6Copper&r to start with. &6Energetic Alloy cables&r are lossless though, so consider them if you're able to mass produce those ingots."
 			]
+			icon: "gtceu:mv_4a_energy_converter"
 			id: "0B62AD25CDD86A6B"
 			rewards: [{
 				id: "0328A56626F1B919"
@@ -168,27 +169,31 @@
 			size: 1.5d
 			tasks: [{
 				id: "28506753F6FA0755"
-                item: "itemfilters:or"
-                tag: {
-                    items: [
-                        {
-                            Count: 1b
-                            id: "gtceu:mv_1a_energy_converter"
-                        }
-                        {
-                            Count: 1b
-                            id: "gtceu:mv_4a_energy_converter"
-                        }
-                        {
-                            Count: 1b
-                            id: "gtceu:mv_8a_energy_converter"
-                        }
-                        {
-                            Count: 1b
-                            id: "gtceu:mv_16a_energy_converter"
-                        }
-                    ]
-                }
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_1a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_4a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_8a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_16a_energy_converter"
+							}
+						]
+					}
+				}
+				title: "Any MV Converter"
 				type: "item"
 			}]
 			title: "MV Energy Converter"
