@@ -416,6 +416,11 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.recipes.gtceu.mixer("mixer_primal_mana")
+    .itemInputs("2x kubejs:petrotheum_dust", "2x kubejs:pyrotheum_dust", "2x kubejs:aerotheum_dust", "2x kubejs:cryotheum_dust", "1x gtceu:diamond_dust")
+    .itemOutputs("4x kubejs:primal_mana")
+    .duration(100)
+    .EUt(100)
 
     event.shaped(
         '2x kubejs:petrotheum_dust', [
@@ -429,6 +434,12 @@ ServerEvents.recipes(event => {
         }
     ).noMirror().noShrink()
 
+    event.recipes.gtceu.mixer("mixer_petrotheum")
+    .itemInputs("2x thermal:basalz_powder", "minecraft:redstone",  "gtceu:obsidian_dust")
+    .itemOutputs("2x kubejs:petrotheum_dust")
+    .duration(40)
+    .EUt(20)
+
     event.shaped(
         '2x kubejs:pyrotheum_dust', [
             'AA ',
@@ -441,6 +452,11 @@ ServerEvents.recipes(event => {
         }
     ).noMirror().noShrink()
 
+    event.recipes.gtceu.mixer("mixer_pyrotheum")
+    .itemInputs("2x minecraft:blaze_powder", "minecraft:redstone",  "gtceu:sulfur_dust")
+    .itemOutputs("2x kubejs:pyrotheum_dust")
+    .duration(40)
+    .EUt(20)
 
     event.shaped(
         '2x kubejs:aerotheum_dust', [
@@ -454,6 +470,11 @@ ServerEvents.recipes(event => {
         }
     ).noMirror().noShrink()
 
+    event.recipes.gtceu.mixer("mixer_aerotheum")
+    .itemInputs("2x thermal:blitz_powder", "minecraft:redstone",  "gtceu:saltpeter_dust")
+    .itemOutputs("2x kubejs:aerotheum_dust")
+    .duration(40)
+    .EUt(20)
 
     event.shaped(
         '2x kubejs:cryotheum_dust', [
@@ -467,6 +488,11 @@ ServerEvents.recipes(event => {
         }
     ).noMirror().noShrink()
 
+    event.recipes.gtceu.mixer("mixer_cryotheum")
+    .itemInputs("2x thermal:blizz_powder", "minecraft:redstone",  "minecraft:snowball")
+    .itemOutputs("2x kubejs:cryotheum_dust")
+    .duration(40)
+    .EUt(20)
 
     event.recipes.gtceu.chemical_reactor('energized_clathrate')
         .itemInputs('minecraft:quartz')
