@@ -14,7 +14,9 @@ PlayerEvents.loggedIn(event => {
     //     event.player.tell(Text.yellow('Pack mode swapped'))
     // }
 
-    if (!event.hasGameStage(`mode_${global.packmode}`)) {
-        event.removeGameStage(/mode_[A-Za-z]+/)
-        event.addGameStage(`mode_${global.packmode}`);
-}})
+    event.removeGameStage('mode_normal')
+    event.removeGameStage('mode_hard')
+    event.removeGameStage('mode_harder')
+
+    event.addGameStage(`mode_${global.packmode}`);
+})

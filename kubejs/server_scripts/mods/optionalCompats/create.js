@@ -13,6 +13,7 @@ if (Platform.isLoaded('create')) {
         event.remove({output: 'create:mechanical_harvester'})
         event.remove({output: 'create:mechanical_press'})
         event.remove({output: 'create:mechanical_roller'})
+        event.remove({output: 'create:encased_fan'})
 
         /* Removes recipes for machines that were not removed, deployers and mechanical crafters are fun!
         Most recipe categories that are removed machines are hidden in 
@@ -245,45 +246,6 @@ if (Platform.isLoaded('create')) {
         //Deploying recipes are fine
         //Remove sawing recipes. Mechanical saws can still be used for stonecutting and in world tree cutting
         event.remove({ type: 'create:cutting' })
-
-        //remove splashing and replace them with some ulv gregtech recipes from the ore washer and chemical bath
-        event.remove({ type: 'create:splashing' }) //We don't want any of these
-        event.forEachRecipe([{ type: 'gtceu:ore_washer' }, { type: 'gtceu:chemical_bath' }],
-            (recipe) => {
-                let r = JSON.parse(recipe.json)
-
-                let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null
-                if (!(EUt <= 8)) { //Reject recipes that cost more than 8 eu/t, check is done like this to filter out null
-                    return
-                }
-                if (!r.inputs) { return } //There are no inputless/outputless recipes by default. But it may be possible to create one
-                let fluidInputs = r.inputs.fluid
-                if (!fluidInputs || fluidInputs[0].content.value[0].tag != "forge:water") { //Reject recipes that do not use water
-                    return
-                }
-                let inputs = r.inputs.item
-                if (!inputs || inputs[0].content.count != 1) { //Reject recipes with input amounts other than 1 (due to a create issue)
-                    return
-                }
-                let outputs = r.outputs.item
-                if (!outputs || outputs[0].content.type != "gtceu:sized" || !outputs[0].content.ingredient.item) { //Not sure if outputs other than "item" are possible. Check to be safe
-                    return
-                }
-                if (inputs.length > 1 && (inputs[1].content.type != "gtceu:circuit" || inputs[1].content.configuration != 2)) { //Reject recipes with a second ingredient that isn't a (2) circuit
-                    return
-                }
-                //let duration = r.duration
-                event.custom({
-                    "type": "create:splashing",
-                    "ingredients": [inputs[0].content.ingredient],
-                    "results": [
-                        {
-                            "item": outputs[0].content.ingredient.item,
-                            "count": outputs[0].content.count
-                        }
-                    ]
-                }).id(`kubejs:create/splashing/${recipe.getId().split(':')[1]}`)
-            })
     })
 }
 else { console.log("create not found") }

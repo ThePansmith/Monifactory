@@ -15,10 +15,10 @@ on:
         required: true
         type: choice
         options:
-          - "release"
-          - "beta"
-          - "alpha"
-        default: "alpha"
+          - "Release"
+          - "Beta"
+          - "Alpha"
+        default: "Beta"
       draft:
         description: "Draft GitHub release (CF release will always be normal)"
         type: boolean

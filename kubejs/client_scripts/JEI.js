@@ -14,7 +14,7 @@ JEIEvents.hideItems(event => {
     //Hides useless items
     event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'thermal:constantan_coin'])
 
-    //i really hate these kind of mods
+    // Iron Furnace
     event.hide('ironfurnaces:million_furnace') // rainbow furnace
     event.hide(['ironfurnaces:item_spooky', 'ironfurnaces:item_xmas']) // cosmetic items
     // TODO renable this again. why in the fuck did we disable this?
@@ -123,9 +123,6 @@ JEIEvents.hideItems(event => {
     //JAVD
     event.hide(["javd:portal_block"])
 
-    // Storage Drawers
-    event.hide(/storagedrawers/)
-
     //Ender Storage
     event.hide(['endertanks:ender_bucket'])
 
@@ -193,7 +190,7 @@ JEIEvents.hideItems(event => {
 
 JEIEvents.addItems(event => {
     //Sophisticated Storage Stuff
-    event.add([Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"oak"}')])
+    event.add([Item.of('sophisticatedstorage:gold_barrel', '{woodType:"spruce"}'), Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"spruce"}'), Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"spruce"}')])
     event.add([Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}')])
     event.add(['sophisticatedstorage:gold_shulker_box', 'sophisticatedstorage:diamond_shulker_box', 'sophisticatedstorage:netherite_shulker_box'])
     event.add('sophisticatedbackpacks:backpack')

@@ -39,6 +39,13 @@
 			x: -4.0d
 			y: -9.5d
 		}
+		{
+			id: "6888572487BED5D5"
+			linked_quest: "745628397790ED7A"
+			size: 1.5d
+			x: -5.5d
+			y: -9.5d
+		}
 	]
 	quests: [
 		{
@@ -410,36 +417,6 @@
 		{
 			dependencies: ["745628397790ED7A"]
 			description: [
-				"The full complexity of &bNuclearCraft&r is far too much for the scope of this quest guide, so &eyou're encouraged to watch a tutorial or read a guide online&r. "
-				""
-				"For the purposes of this particular quest, you'll be building a breeder reactor to make &6Plutonium&r, and other nuclear elements. While this reactor may seem very expensive, it will be worth it, and you will probably expand it soon. "
-				""
-				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster. Alternatively, reactors can be designed to produce a decent amount of power for the mid game of the pack."
-				""
-				"First, set up your 150 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 5x5x5 space."
-				""
-				"{@pagebreak}"
-				"Next, create a hole so you can get inside the cube. Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
-				""
-				"Finally, place the &3Fission Reactor Controller&r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong."
-				""
-				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
-			]
-			disable_toast: true
-			id: "07482E45FCEE7937"
-			size: 1.5d
-			tasks: [{
-				id: "1A6A15D246D28076"
-				item: "nuclearcraft:fission_reactor_controller"
-				type: "item"
-			}]
-			title: "Fission Reactor"
-			x: -5.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["07482E45FCEE7937"]
-			description: [
 				"Climbing the ladder of fissile materials will require some specific raw materials and machinery."
 				""
 				"&2Uraninite is the base resource you will need, which comes from Uraninite and Pitchblende Ore. You will need to react it with Fluorine and Hydrofluoric Acid in a Chemical Reactor to form Uranium Hexafluoride."
@@ -470,7 +447,7 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["07482E45FCEE7937"]
+			dependencies: ["745628397790ED7A"]
 			description: [
 				"Thorium is a basic fissile material that can be used to get into the fissile chain. Thorium comes from &6Pitchblende Ore&r, &6Thorium Ore&r, and even &9Deepslate&r (with a few processing steps)."
 				""

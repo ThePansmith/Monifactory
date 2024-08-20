@@ -487,7 +487,7 @@
 				}
 				{
 					id: "2DCBDFF5EB0F7CD9"
-					item: "redstone_clock:redstone_clock"
+					item: "utilitarian:redstone_clock"
 					type: "item"
 				}
 				{
@@ -793,37 +793,6 @@
 			title: "&2Forge Hammer"
 			x: 4.5d
 			y: -7.0d
-		}
-		{
-			dependencies: ["30EBD4E7BBFFEF2C"]
-			description: [
-				"&6&6String&r and &6Coal Dust&r can be baked together into a &6Carbon Mesh&r in an &3Alloy Furnace&r."
-				""
-				"Combine that with &6Pulsating Dust&r to get a &6Pulsating Mesh&r."
-			]
-			icon: "kubejs:pulsating_mesh"
-			id: "645B1DCB3DA7198A"
-			rewards: [{
-				id: "2D12B468C7630D14"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "3FB8F2F8B1867430"
-					item: "kubejs:pulsating_mesh"
-					type: "item"
-				}
-				{
-					id: "6684545526C4AD44"
-					item: "gtceu:carbon_fiber_mesh"
-					type: "item"
-				}
-			]
-			title: "Pulsating Mesh"
-			x: 6.5d
-			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -2071,6 +2040,56 @@
 			title: "&9Steam Foundry"
 			x: 4.517857142857139d
 			y: 1.4285714285714306d
+		}
+		{
+			dependencies: ["2607F8404B56773B"]
+			description: [
+				"&bThermal Expansion&r provides a set of \"spores\" that can be used to produce useful items like &6Gunpowder, Redstone, Glowstone, and Slime.&r There is also one that can be used to produce &6Ender Pearls&r that you will be able to make later."
+				""
+				"After crafting your first batch, they can be duplicated in the &3Phytogenic Insulator&r you made, or more efficiently in a &3Greenhouse.&r"
+				""
+				"Once you have a sufficient number of spores, the excess from each production cycle can be smelted to provide the corresonding product."
+			]
+			icon: "thermal:slime_mushroom_spores"
+			id: "04BA4BC12DFF6581"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "22A7DD752D6384E0"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "thermal:glowstone_mushroom_spores"
+							}
+							{
+								Count: 1b
+								id: "thermal:gunpowder_mushroom_spores"
+							}
+							{
+								Count: 1b
+								id: "thermal:redstone_mushroom_spores"
+							}
+							{
+								Count: 1b
+								id: "thermal:slime_mushroom_spores"
+							}
+							{
+								Count: 1b
+								id: "kubejs:ender_spore"
+							}
+						]
+					}
+				}
+				title: "Any Thermal Spore"
+				type: "item"
+			}]
+			title: "Thermal Spore Production"
+			x: 6.5d
+			y: -5.0d
 		}
 	]
 	title: "The Beginning"

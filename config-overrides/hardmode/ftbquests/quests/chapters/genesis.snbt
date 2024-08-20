@@ -27,9 +27,11 @@
 	quests: [
 		{
 			description: [
-				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
+				"This pack is in &eBeta&r. Issues are to be expected at this stage of development."
 				""
 				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"blue\"},{\"text\":\"Monifactory repository\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"blue\"}]"
+				""
+				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that the issue can not be replicated with the mod on it's own, and if it can, report it to the mod's repository instead."
 			]
 			hide: false
 			icon: "thermal:nuke_tnt"
@@ -41,7 +43,7 @@
 				title: "Acknowleged"
 				type: "checkmark"
 			}]
-			title: "&9This pack is in alpha!"
+			title: "&9This pack is in beta!"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -58,7 +60,7 @@
 				""
 				"Features new to &9Monifactory&r and quests with new content will be higlighted in &9Blue&r."
 				""
-				"Notes about things in &5Alpha&r will be higlighted in &5Dark Purple&r."
+				"Notes about things in &5Beta&r will be higlighted in &5Dark Purple&r."
 				""
 				"[\"Text with \",{\"text\":\"underlines\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"But not this!\"}},\" are (mostly) clickable.\"]"
 			]
@@ -225,7 +227,7 @@
 				title: "Terminal"
 				type: "checkmark"
 			}]
-            title: "&9Terminal"
+			title: "&9Terminal"
 			x: 1.75d
 			y: 0.5d
 		}
@@ -321,7 +323,7 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"[\"Take a peek at the \",{\"text\":\"End Game quest book tab\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2BEB72BC6C6FB4E9\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the chapter\"}},\". This might seem a bit premature to suggest, but it has a reason.\"]"
+				"[\"Take a peek at the \",{\"text\":\"Elements and Alloys quest book tab\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2BEB72BC6C6FB4E9\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the chapter\"}},\". This might seem a bit premature to suggest, but it has a reason.\"]"
 				""
 				"These are quests for a full stack of many of the materials in the game. Those are the materials you'll need to synthesize &5Omnium&r, the basic end game resource. It's the pack's way of letting you know what materials you should be prepared to mass produce as you approach the end."
 				""
@@ -333,7 +335,7 @@
 				id: "647D560D77DBCEA5"
 				type: "checkmark"
 			}]
-			title: "End Game Tab"
+			title: "Elements and Alloys"
 			x: -2.5d
 			y: 4.0d
 		}
@@ -754,27 +756,35 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_axe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						DisableShields: 1b
+						TreeFelling: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 4.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "527F56DFAD5E20EC"
 			tasks: [{
 				id: "254A555916313F70"
 				item: {
 					Count: 1b
-					id: "gtceu:flint_axe"
+					id: "itemfilters:id_regex"
 					tag: {
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							DisableShields: 1b
-							TreeFelling: 1b
-						}
-						GT.Tool: {
-							Damage: 0
-							HarvestLevel: 2
-							MaxDamage: 63
-							ToolSpeed: 3.5f
-						}
-						HideFlags: 2
+						value: "^gtceu:.*_axe$"
 					}
 				}
+				title: "Any Lumber Axe"
 				type: "item"
 			}]
 			title: "&9Tree chopping"
@@ -935,8 +945,9 @@
 			]
 			id: "57D1B1D74391A05F"
 			rewards: [{
+				count: 2
 				id: "04FB020A78370641"
-				item: "kubejs:moni_nickel"
+				item: "ulvcovm:ulv_conveyor_module"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -953,9 +964,7 @@
 		{
 			dependencies: ["4B338515E84FC51A"]
 			description: [
-				"A mixture of &6Clay, Brick, &cGypsum and Concrete&r produces &6Firebricks&r, used in building the &3Primitive Blast Furnace&r. &c"
-				""
-				"So far, your only available route for Concrete is adding Stone Dust, Quartz Sand, Clay and Calcite to a bucket of Water.&r"
+				"A mixture of &6Clay and Brick&r produces &6Fireclay&r, used in building the &3Primitive Blast Furnace&r. &c"
 				""
 				"This allows you to make &6Steel&r from &6Wrought Iron&r (or with &6Iron&r, but its slower). Now you can make &7LV &6Machine Hulls&r!"
 				""
@@ -1741,7 +1750,26 @@
 			}]
 			tasks: [{
 				id: "0527876D6287634B"
-				item: "gtceu:lv_battery_buffer_4x"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_4x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_8x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_16x"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Charging Batteries"
@@ -1755,7 +1783,7 @@
 				""
 				"Although there are several types of rechargeable batteries you can make, &2Lithium Batteries&r are the best ones, and the only ones you should really consider making."
 				""
-				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are fairly rare."
+				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are only found in the End dimension."
 			]
 			id: "077AA27F26B7831F"
 			rewards: [{

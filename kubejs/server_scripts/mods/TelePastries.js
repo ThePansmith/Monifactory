@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
             'OBO',
             'SSS'
         ], {
-            N: "gtceu:netherrack_dust",
+            N: "hostilenetworks:nether_prediction",
             O: "minecraft:obsidian",
             B: "enderio:cake_base",
             S: "minecraft:soul_sand"
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
         'OBO',
         'SSS'
     ], {
-        N: 'gtceu:endstone_dust',
+        N: 'hostilenetworks:end_prediction',
         O: 'minecraft:ender_eye',
         B: "enderio:cake_base",
         S: 'gtceu:black_steel_plate'

@@ -66,9 +66,6 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:blaze_rod', 'minecraft:brewing_stand')
     event.replaceInput({ input: 'gtceu:wood_plate' }, 'gtceu:wood_plate', '#minecraft:planks')
 
-    // Dust hydration
-    event.shapeless("minecraft:clay", ["kubejs:dust", "minecraft:water_bucket"])
-
     // Sculk LCR recipes 
 
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst")
@@ -899,6 +896,20 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x gtceu:sodium_lead_alloy_dust')
         .duration(200)
         .EUt(7)
+
+    //Clay synthesis from Dust
+    event.recipes.gtceu.forge_hammer('dust')
+        .itemInputs('minecraft:sand')
+        .itemOutputs('kubejs:dust')
+        .duration(16)
+        .EUt(10)
+
+    event.recipes.gtceu.chemical_reactor('gt_clay')
+        .itemInputs('kubejs:dust')
+        .itemOutputs('minecraft:clay')
+        .inputFluids('water')
+        .duration(20)
+        .EUt(15)
 
 })
  
