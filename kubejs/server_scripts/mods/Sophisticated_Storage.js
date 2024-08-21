@@ -13,6 +13,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_shulker_box/ })
     event.remove(/^sophisticatedstorage:limited.+barrel.+/)
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_to_[A-Za-z]+_tier_upgrade/ })
+    event.remove({ id: "sophisticatedstorage:xp_pump_upgrade"})
+    event.remove({ id: "sophisticatedbackpacks:xp_pump_upgrade"})
     event.remove({ input: 'minecraft:redstone_torch', mod: 'sophisticatedstorage'})
     
     var barrelupgrade = [

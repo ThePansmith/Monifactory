@@ -542,19 +542,6 @@ ServerEvents.recipes(event => {
         E: 'thermal:redstone_servo'
     }).id('kubejs:device_fisher');
 
-    event.remove({ id: 'thermal:device_xp_condenser' });
-    event.shaped('thermal:device_xp_condenser', [
-        ' A ',
-        'BCB',
-        'DED'
-    ], {
-        A: 'thermal:xp_crystal',
-        B: '#forge:ingots/gold',
-        C: 'thermal:machine_frame', // casing
-        D: '#forge:gears/iron',
-        E: 'thermal:redstone_servo'
-    }).id('kubejs:device_xp_condenser');
-
     event.remove({ id: 'thermal:device_collector' });
     event.shaped('thermal:device_collector', [
         ' A ',
