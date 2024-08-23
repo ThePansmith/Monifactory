@@ -298,7 +298,7 @@
 						Count: 1b
 						id: "sophisticatedstorage:gold_barrel"
 						tag: {
-							woodType: "oak"
+							woodType: "spruce"
 						}
 					}
 					type: "item"
