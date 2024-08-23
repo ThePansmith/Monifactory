@@ -544,7 +544,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('dimensional_superassembler', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeTypes('assembly_line')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock('kubejs:dimensional_stabilization_netherite_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#########", "###CCC###", "##CCCCC##", "#CCCCCCC#", "#CCCCCCC#", "#CCCCCCC#", "##CCCCC##", "###CCC###", "#########")
