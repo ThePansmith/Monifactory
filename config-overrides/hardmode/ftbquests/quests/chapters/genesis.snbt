@@ -2130,11 +2130,11 @@
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
 				""
-				"[\"\",{\"text\":\"You shouldn't feel any pressure to do that in monifactory, though\",\"color\":\"yellow\"},\". Ore veins are massive, and mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},\". What's more, even once you get access to \",{\"text\":\"Macerators\",\"color\":\"dark_aqua\"},\", they initially process ore slowly and require power to operate.\"]"
+				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"chanced byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
 				""
 				"The obvious exception would be rare materials; Those are worth doubling, if possible."
 				""
-				"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! &eOre doubling can be safely ignored until you have the &2Steam Grinder&r&e, or Medium Voltage machines or even later.&r"
+				"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! &eOre doubling can be safely ignored until you have the &2Steam Grinder&r&e or High Voltage machines.&r"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:crushed_redstone_ore"
