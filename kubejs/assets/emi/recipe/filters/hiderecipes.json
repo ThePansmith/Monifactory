@@ -1,0 +1,7 @@
+{
+    "filters": [
+      {
+        "id": "/emi:/crafting/repairing/.*/"
+      }
+    ]
+  }
