@@ -355,7 +355,11 @@
 			y: 8.25d
 		}
 		{
-			dependencies: ["1AC91A3E05215569"]
+			dependencies: [
+				"2A6E9E7C80754936"
+				"7DB174443D7FAFA0"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"&2Your first few Raw Crystal Chips must be grown in an Autoclave from liquid Enderium, or more efficiently with Europium, and Exquisite Emeralds or Exquisite Olivine."
 				""
@@ -363,7 +367,7 @@
 				""
 				"Bacterial Sludge can later be obtained in the byproducts of getting Stem Cells."
 			]
-			icon: "gtceu:raw_crystal_chip_parts"
+			icon: "gtceu:raw_crystal_chip"
 			id: "40E8C7CEE285D702"
 			rewards: [{
 				id: "7BC43EF40ABF0212"
@@ -735,10 +739,9 @@
 		{
 			dependencies: [
 				"14F1FF4656693711"
-				"6DAB13A7BDECE94E"
 				"51A463024F35DC2E"
 				"025092551C0A20B6"
-				"4DB622A78605A2EB"
+				"115B96B2092D671E"
 			]
 			description: [
 				"&2Wetware and crystal-related processes require some stronger sterilisation.&r"
