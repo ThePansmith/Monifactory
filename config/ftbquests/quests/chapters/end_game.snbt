@@ -249,7 +249,7 @@
 				""
 				"Might probably be obvious, but this miner is your sole source of &6Hearts of Universes&r. "
 				""
-				"It also can be used later to obtain &6Creative Storage Data&r and &6Creative Data Hatch Data&r, and is used to obtain &9Contained Singularities&r for &6Monic Circuits&r."
+				"It also can be used later to obtain &6Creative Storage Data&r and &6Creative Computation Data&r, and is used to obtain &9Contained Singularities&r for &6Monic Circuits&r."
 			]
 			id: "27EBB5AAF8A40F3D"
 			shape: "hexagon"
