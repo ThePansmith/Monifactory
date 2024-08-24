@@ -133,7 +133,7 @@ StartupEvents.registry('item', event => {
     }
     event.create('creative_tank_data').displayName("Creative Quantum Tank Data")
     event.create('creative_storage_data').displayName("Creative Storage Data")
-    event.create('creative_data_hatch_data').displayName("Creative Data Hatch Data")
+    event.create('creative_computation_data').displayName("Creative Computation Data")
     event.create('creative_energy_data').displayName("Creative Energy Data")
 
     // End Game Items
