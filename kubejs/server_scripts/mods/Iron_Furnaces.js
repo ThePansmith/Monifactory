@@ -111,8 +111,8 @@ ServerEvents.recipes(event => {
     .EUt(30)
     .circuit(8)
 
-    event.recipes.gtceu.assembler('kubejs:stone_to_copper_furnace')
-    .itemInputs('minecraft:furnace', '4x gtceu:iron_plate', '4x gtceu:copper_plate')
+    event.recipes.gtceu.assembler('kubejs:iron_to_copper_furnace')
+    .itemInputs('ironfurnaces:iron_furnace', '4x gtceu:copper_plate')
     .itemOutputs('ironfurnaces:copper_furnace')
     .duration(200)
     .EUt(30)
