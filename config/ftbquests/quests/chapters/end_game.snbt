@@ -428,7 +428,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "3BE677A49268E12B"
-				item: "kubejs:creative_data_hatch_data"
+				item: "kubejs:creative_computation_data"
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"

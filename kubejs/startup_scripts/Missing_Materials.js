@@ -9,6 +9,14 @@ const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store
 const $FluidPipeProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
 const $WireProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties')
 const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty')
+const $FluidBuilder = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidBuilder');
+
+let addFluid = (mat, key) => {
+    let prop = new $FluidProperty()
+    prop.getStorage().enqueueRegistration(key, new $FluidBuilder())
+    mat.setProperty(PropertyKey.FLUID, prop)
+}
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 
@@ -21,28 +29,29 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
     GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
 
-    GTMaterials.Einsteinium.setProperty($PropertyKey.FLUID, new $FluidProperty())
-    GTMaterials.Einsteinium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+
+    addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID);
+    // GTMaterials.Einsteinium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
     GTMaterials.Americium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.PLASMA, new GTFluidBuilder())
 
-    GTMaterials.Berkelium.setProperty($PropertyKey.FLUID, new $FluidProperty())
-    GTMaterials.Berkelium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+    addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID);
+    // GTMaterials.Berkelium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
-    GTMaterials.Californium.setProperty($PropertyKey.FLUID, new $FluidProperty())
-    GTMaterials.Californium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+    addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID);
+    // GTMaterials.Californium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
-    GTMaterials.Neptunium.setProperty($PropertyKey.FLUID, new $FluidProperty())
-    GTMaterials.Neptunium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+    addFluid(GTMaterials.Neptunium, $FluidStorageKeys.LIQUID);
+    // GTMaterials.Neptunium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
-    GTMaterials.Curium.setProperty($PropertyKey.FLUID, new $FluidProperty())
-    GTMaterials.Curium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+    addFluid(GTMaterials.Curium, $FluidStorageKeys.LIQUID);
+    // GTMaterials.Curium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
     
-    GTMaterials.Ruridit.setProperty($PropertyKey.FLUID, new $FluidProperty())
-    GTMaterials.Ruridit.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+    addFluid(GTMaterials.Ruridit, $FluidStorageKeys.LIQUID);
+    // GTMaterials.Ruridit.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
-    GTMaterials.NetherStar.setProperty($PropertyKey.FLUID, new $FluidProperty())
-    GTMaterials.NetherStar.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
+    addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID);
+    // GTMaterials.NetherStar.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 	
 	GTMaterials.Graphite.addFlags(GTMaterialFlags.GENERATE_PLATE)
 	
@@ -59,4 +68,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     missingGears.forEach(missingGears => {
         GTMaterials[missingGears].addFlags(GTMaterialFlags.GENERATE_GEAR)
     })
+
+    
 })
