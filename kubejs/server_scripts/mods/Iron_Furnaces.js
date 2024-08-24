@@ -111,13 +111,6 @@ ServerEvents.recipes(event => {
     .EUt(30)
     .circuit(8)
 
-    event.recipes.gtceu.assembler('kubejs:iron_to_copper_furnace')
-    .itemInputs('ironfurnaces:iron_furnace', '4x gtceu:copper_plate')
-    .itemOutputs('ironfurnaces:copper_furnace')
-    .duration(200)
-    .EUt(30)
-    .circuit(8)
-
     var stonefurnaceupgrade = [
         ['silver', 'iron', 'copper', 'silver'],
         ['gold', 'copper', 'silver', 'gold'],

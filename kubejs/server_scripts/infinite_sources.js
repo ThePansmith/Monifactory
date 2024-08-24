@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
                 G: "#forge:gears/iron",
                 B: "minecraft:bucket",
                 W: "watercollector:watercollector",
-                S: "thermal:redstone_servo",
+                S: "enderio:fused_quartz",
                 C: "#forge:ingots/copper"
             }
         ).id('kubejs:device_water_gen');

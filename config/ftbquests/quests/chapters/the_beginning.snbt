@@ -670,7 +670,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["025543EDB0A4AC22"]
+			dependencies: ["29A487F0BC43AAF9"]
 			description: ["Needs 2 &6Water Source Blocks&r around it to generate water. You will also need a way to pull the water out of the accumulator, such as using the &5LV water pump&f as a &acover&f."]
 			icon: {
 				Count: 1b
@@ -693,7 +693,7 @@
 				type: "item"
 			}]
 			title: "&9Infiniter Water"
-			x: 8.5d
+			x: 1.0d
 			y: -0.5d
 		}
 		{
