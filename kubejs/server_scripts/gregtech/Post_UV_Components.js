@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
     ]
 
         converter.forEach(([tier, mat1, mat2, eut]) => {
+            event.remove({ output:[`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter` ] })
             if (!isHarderMode) {
             event.shaped(Item.of(`gtceu:${tier}_1a_energy_converter`), [
                 ' BB',
