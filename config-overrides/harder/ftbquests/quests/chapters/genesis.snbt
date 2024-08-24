@@ -66,32 +66,13 @@
 			]
 			icon: "minecraft:crafting_table"
 			id: "66FCC26399376B55"
-			rewards: [
-				{
-					id: "031A59BA80B8796A"
-					item: "telepastries:custom_cake"
-					type: "item"
-				}
-				{
-					id: "48B3D498AC0B2BE0"
-					item: "telepastries:overworld_cake"
-					type: "item"
-				}
-				{
-					auto: "no_toast"
-					icon: "enderio:cake_base"
-					id: "612FEB595285D353"
-					title: "&6Infinite Cakes!"
-					type: "custom"
-				}
-				{
-					auto: "invisible"
-					id: "75FD5BC7147B8397"
-					ignore_reward_blocking: true
-					stage: "intro_complete"
-					type: "gamestage"
-				}
-			]
+			rewards: [{
+				auto: "invisible"
+				id: "75FD5BC7147B8397"
+				ignore_reward_blocking: true
+				stage: "intro_complete"
+				type: "gamestage"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Welcome to Monifactory Harder Mode"
@@ -105,39 +86,19 @@
 			y: 0.0d
 		}
 		{
-			can_repeat: true
 			dependencies: ["66FCC26399376B55"]
-			description: ["This quest is repeatable and gives you a free cake to the &6Void World&r or &2Overworld&r every hour. You can also refill your cakes with the items indicated in their tooltips."]
+			description: ["Instead of using portals, &bTelePastries&r are used to transport you between dimensions. &eYou can also refill your cakes with the items indicated in their tooltips.&r"]
 			disable_toast: true
 			icon: "telepastries:overworld_cake"
 			id: "542F0090D8975D3C"
 			optional: true
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1F03FEFB5B2A3B47"
-				table_id: 7942624913962637807L
-				type: "choice"
-			}]
 			subtitle: "Cakes are magical!"
 			tags: ["moni_cakequest"]
-			tasks: [
-				{
-					id: "423B4FAF11B1C0FA"
-					title: "Cake Based Dimensional Transit"
-					type: "checkmark"
-				}
-				{
-					disable_toast: true
-					icon: "minecraft:clock"
-					id: "138B92A597D63C12"
-					tags: [
-						"moni_timer"
-						"moni_timer_60"
-					]
-					title: "Timer"
-					type: "custom"
-				}
-			]
+			tasks: [{
+				id: "423B4FAF11B1C0FA"
+				title: "Cake Based Dimensional Transit"
+				type: "checkmark"
+			}]
 			title: "Cake Based Dimensional Transit"
 			x: -2.0d
 			y: -0.5d
