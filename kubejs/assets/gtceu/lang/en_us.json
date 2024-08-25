@@ -88,6 +88,7 @@
   "gtceu.extra_large_chemical_reactor": "Extra Large Chemical Reactor",
   "block.gtceu.discharger": "Discharger",
   "gtceu.discharger": "Dischargement",
+  "block.gtceu.compression_imploder": "Compression Imploder",
   "gtceu.sculk_reverberator.desc": "§8Utilizes freezing temperatures to force sculk to grow.",
   "block.gtceu.subatomic_digital_assembler": "Subatomic Digital Assembler",
   "block.gtceu.creative_energy": "Infinite GT Energy Unit Emitter",
