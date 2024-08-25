@@ -44,6 +44,8 @@ Essential is not officially supported, and various unsupported bugs and crashes 
 
 [Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardharder-mode-installation)
 
+<hr>
+
 ### Tech Support
 
 **Q. The server says I don't have the right version of a mod, but I do! ([example pictured here](https://imgur.com/GL1GdwW))**
@@ -86,5 +88,9 @@ DarkModeEverywhere is enabled by default, and makes your UI darker (duh). You ca
 
 Report it to the [issue tracker](https://github.com/ThePansmith/Monifactory/issues), or get help on the [Discord](https://discord.gg/N8b2JEfAqb)
 
+<hr>
+
 ## Contributing to Monifactory
-<!-- Todo; look at the contributions.md PR-->
+<!-- Todo; uncomment when #549 is merged
+See more at [CONTRIBUTING.md](https://github.com/ThePansmith/Monifactory/CONTRIBUTING.md)
+-->
