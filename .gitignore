@@ -12,6 +12,7 @@
 !/.github
 !.editorconfig
 !/pack-mode-switcher*
+!/FAQ.md
 
 !/mods/systeams*
 !/mods/ExtendedCrafting*
