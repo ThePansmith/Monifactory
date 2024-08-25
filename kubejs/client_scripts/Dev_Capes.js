@@ -25,4 +25,6 @@ CapeJS.addCapes(event => {
     event.register("13d0aeda-c1e9-4d91-a9b7-4d4e6a19128e", "moni")
         //JuiceyBeans
     event.register("d7dfa467-51b9-4beb-9a40-24ec2c2b8759", "moni")
+        //Xefyr0
+    event.register("a3b08192-f19b-4037-abcd-15093454d905", "moni")
 })

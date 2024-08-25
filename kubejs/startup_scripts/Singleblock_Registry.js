@@ -19,38 +19,36 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeType('atomic_reconstruction', true, true)
         .workableTieredHullRenderer('gtceu:block/machines/reconstructor')
 
-    })
-    // Parallel Hatch, is a little jank to get textures to work properly
-    GTCEuStartupEvents.registry('gtceu:machine',event =>{
-        event.create(
-                "uhv_parallel_hatch",
-                "custom",
-                (holder, tier) => {
-                    return new $ParallelHatchPartMachine(holder, tier);
-                },
-                GTValues.UHV
-            )
-            //.rotatationState(RotationState.NON_Y_AXIS)
-            .abilities(PartAbility.PARALLEL_HATCH)
-            .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk9"))
+})
+// Parallel Hatch, is a little jank to get textures to work properly
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create(
+        "uhv_parallel_hatch",
+        "custom",
+        (holder, tier) => {
+            return new $ParallelHatchPartMachine(holder, tier);
+        },
+        GTValues.UHV
+    )
+        //.rotatationState(RotationState.NON_Y_AXIS)
+        .abilities(PartAbility.PARALLEL_HATCH)
+        .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk9"))
 
-            event.create(
-                "uev_parallel_hatch",
-                "custom",
-                (holder, tier) => {
-                    return new $ParallelHatchPartMachine(holder, tier);
-                },
-                GTValues.UEV
-            )
-            //.rotatationState(RotationState.NON_Y_AXIS)
-            .abilities(PartAbility.PARALLEL_HATCH)
-            .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk10"))
-
-
+    event.create(
+        "uev_parallel_hatch",
+        "custom",
+        (holder, tier) => {
+            return new $ParallelHatchPartMachine(holder, tier);
+        },
+        GTValues.UEV
+    )
+        //.rotatationState(RotationState.NON_Y_AXIS)
+        .abilities(PartAbility.PARALLEL_HATCH)
+        .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk10"))
 })
 
 
 
 
-    
+
 
