@@ -12,12 +12,12 @@ Like this list, some features here are WIP.
 * 5 New Posttank Multiblocks
     * Dimensional Superassembler, a parallelizable assline
     * Loot Superfabricator, made to meet the speeds of the Supercomputer
-    * Hyperbolic Microverse Projector,  a parallelizable projector, able to preform all microverse misisons, as well as a couple of its own.
+    * Hyperbolic Microverse Projector,  a parallelizable projector, able to perform all microverse missions, as well as a couple of its own.
     * Subatomic Digital Assembler, see below 
 * The Creative Tank Replicator has been reworked into the Subatomic Digital Assembler, allowing it to construct other items
     * Creative Tank can now replicate both creative quantum tanks and creative fluid ME cells
     * Creative Storage can replicate quantum tanks, chests, and Soph Storage Max Upgrades
-    * Creative Computation Data can replicate creative compution providers and creative data access hatches.
+    * Creative Computation Data can replicate creative computation providers and creative data access hatches.
     * Creative Energy can replicate GT energy emitter, EIO creative energy, and AE2 Creative Energy Cell
     * Some interesting things can happen if you try to replicate the unreplicatable...
 * The Nomi "a billion patterns for random bullshit" experience is no more
@@ -55,7 +55,7 @@ Like this list, some features here are WIP.
   * The Steam Separator removes the earlygame gallium oreproc woes (and just getting more stuff for free is cool)
   * The greenhouse allows you to easily grow large amounts of crops and trees
 * ULV covers have been ported, and are buyable with monicoins
-* The thermal phytho has been reworked to be a super earlygame way to easily passiving wood and sticky resin for very cheap
+* The thermal phyto has been reworked to be a super earlygame way to easily passiving wood and sticky resin for very cheap
 * Kanthal, Silicon no longer require a chemical bath
 * Angel Ring is available earlier 
 * ME infinite water and cobblestone cells
@@ -112,7 +112,7 @@ Like this list, some features here are WIP.
 # Textures, assets
 * A complete respriting of everything nomifactory
 * A new mainmenu theme
-* Legandary Tooltips, with custom support for GT Voltage Tiers.
+* Legendary Tooltips, with custom support for GT Voltage Tiers.
 
 # Other New Mods 
 * LaserIO
