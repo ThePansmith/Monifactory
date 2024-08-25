@@ -90,7 +90,8 @@ Report it to the [issue tracker](https://github.com/ThePansmith/Monifactory/issu
 
 <hr>
 
-## Contributing to Monifactory
 <!-- Todo; uncomment when #549 is merged
+## Contributing to Monifactory
+
 See more at [CONTRIBUTING.md](https://github.com/ThePansmith/Monifactory/CONTRIBUTING.md)
 -->
