@@ -10,7 +10,6 @@
 		{
 			id: "7471AD069CC1E5EC"
 			linked_quest: "5CFBAB5F83E33064"
-			shape: "hexagon"
 			size: 1.5d
 			x: -6.75d
 			y: 3.0d
@@ -43,12 +42,6 @@
 			shape: "hexagon"
 			x: 5.25d
 			y: 8.5d
-		}
-		{
-			id: "27DFA4CC3F039428"
-			linked_quest: "26C9F1514FD08C81"
-			x: 5.25d
-			y: 18.5d
 		}
 		{
 			id: "4065DEBE89F8D723"
@@ -160,6 +153,7 @@
 				""
 				"For your MV cables, you can use &6Copper&r to start with. &6Energetic Alloy cables&r are lossless though, so consider them if you're able to mass produce those ingots."
 			]
+			icon: "gtceu:mv_4a_energy_converter"
 			id: "0B62AD25CDD86A6B"
 			rewards: [{
 				id: "0328A56626F1B919"
@@ -169,7 +163,31 @@
 			size: 1.5d
 			tasks: [{
 				id: "28506753F6FA0755"
-				item: "gtceu:mv_4a_energy_converter"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_1a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_4a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_8a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_16a_energy_converter"
+							}
+						]
+					}
+				}
+				title: "Any MV Converter"
 				type: "item"
 			}]
 			title: "MV Energy Converter"
@@ -1026,6 +1044,7 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["5C4E189A3E401566"]
 			description: ["&2With the MV Assembling Machine, you can assemble a few necessary parts for the next Circuit tier."]
 			hide_dependency_lines: true
 			id: "2C6BEB5BBE5A91DC"
@@ -2047,7 +2066,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:energetic"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true
@@ -2095,7 +2113,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:electrical_steel"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true
@@ -2161,7 +2178,6 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				count: 4L
@@ -2171,7 +2187,7 @@
 			}]
 			title: "&2More Blast Furnaces"
 			x: -6.75d
-			y: 6.75d
+			y: 5.25d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
@@ -2208,7 +2224,6 @@
 			]
 			icon: "gtceu:energetic_alloy_octal_wire"
 			id: "2861BA7C235C52A3"
-			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "7A50024966E38151"
@@ -2220,7 +2235,11 @@
 		}
 		{
 			dependencies: ["3B639F4061B00F1A"]
-			description: ["All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."]
+			description: [
+				"All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."
+				""
+				"Providing it with &6Fertilizer&r will significantly increase it's output."
+			]
 			id: "3A71D736AE5C17E2"
 			rewards: [{
 				id: "1FE4BFEFDB4C34FC"
@@ -2235,25 +2254,6 @@
 			title: "&9Infiniter Wood"
 			x: 12.5d
 			y: 7.0d
-		}
-		{
-			description: [
-				"The &9Greenhouse&r is able to grow both crops and trees, perfect for your needs."
-				""
-				"Providing it with &6Fertilizer&r will significantly increase it's output."
-			]
-			hide_dependency_lines: true
-			id: "5138F8BE53342697"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "07E81B14FA5C5CA6"
-				item: "gtceu:greenhouse"
-				type: "item"
-			}]
-			title: "&9Farming"
-			x: -6.75d
-			y: 4.75d
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]

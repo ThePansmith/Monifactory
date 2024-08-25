@@ -402,6 +402,7 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ input: 'nuclearcraft:basic_electronic_circuit' }, 'nuclearcraft:basic_electric_circuit', '#gtceu:circuits/hv')
 	event.replaceInput({ input: 'nuclearcraft:gelatin' }, 'nuclearcraft:gelatin', '#forge:rubber_plates')
 	event.replaceInput({ input: 'nuclearcraft:lithium_ion_cell' }, 'nuclearcraft:lithium_ion_cell', '#gtceu:batteries/hv')
+	event.replaceInput({ output: /nuclearcraft:hev/ }, 'nuclearcraft:plate_extreme', 'nuclearcraft:plate_advanced')
 	
 	event.remove({ id: 'nuclearcraft:heavy_shielding' })
 	event.shaped(

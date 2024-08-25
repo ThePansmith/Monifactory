@@ -503,7 +503,7 @@ ServerEvents.recipes(event => {
             '16x gtceu:computation_receiver_hatch',
             '64x kubejs:stellar_creation_data'
         )
-        .itemOutputs('kubejs:creative_data_hatch_data')
+        .itemOutputs('kubejs:creative_computation_data')
         .duration(3000)
         .EUt(1000000)
 

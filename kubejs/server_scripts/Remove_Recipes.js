@@ -26,6 +26,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'thermal:cured_rubber' })
     event.remove({ input: 'forge:nuggets/netherite'})
     event.remove({ id: 'thermal:gunpowder_4' })
+    event.remove({ id: 'thermal:device_xp_condenser'})
+
     //Redstone arsenal
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_smelting' })
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_blasting' })
@@ -39,7 +41,6 @@ ServerEvents.recipes(event => {
 
     // Misc broken recipes
     event.remove({ id: 'minecraft:netherite_spikes_smithing' })
-    event.remove({ id: 'storagedrawers:conversion_upgrade' })
     event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/copper'] })
 
     // Angel Ring
@@ -61,7 +62,7 @@ ServerEvents.recipes(event => {
     //Hides useless items
     event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'] })
 
-    //i really hate these kind of mods
+    //Iron Furnace
     event.remove({ output: ["ironfurnaces:million_furnace"] })
     event.remove({ output: ['ironfurnaces:crystal_furnace', 'ironfurnaces:emerald_furnace', 'ironfurnaces:item_spooky', 'ironfurnaces:item_xmas', 'ironfurnaces:item_copy', 'ironfurnaces:item_linker', 'ironfurnaces:rainbow_core', 'ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_coal', 'ironfurnaces:upgrade_iron', 'ironfurnaces:upgrade_gold', 'ironfurnaces:upgrade_diamond', 'ironfurnaces:upgrade_emerald', 'ironfurnaces:upgrade_obsidian', 'ironfurnaces:upgrade_crystal', 'ironfurnaces:upgrade_netherite', 'ironfurnaces:upgrade_copper', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_silver', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_iron2', 'ironfurnaces:upgrade_gold2', 'ironfurnaces:upgrade_silver2', 'ironfurnaces:allthemodium_furnace', 'ironfurnaces:vibranium_furnace', 'ironfurnaces:unobtainium_furnace', 'ironfurnaces:upgrade_allthemodium', 'ironfurnaces:upgrade_vibranium', 'ironfurnaces:upgrade_unobtainium', 'ironfurnaces:item_heater', 'ironfurnaces:augment_blasting', 'ironfurnaces:augment_smoking', 'ironfurnaces:heater', 'ironfurnaces:augment_generator'] })
 
@@ -101,6 +102,7 @@ ServerEvents.recipes(event => {
     // Posttank stuff
     event.remove({ id: /gtceu:uxv/ })
     event.remove({ id: /gtceu:opv/ })
+    event.remove({ id: 'gtceu:shaped/max_machine_hull'})
 
     // LaserIO
     event.remove({ output: ['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'] })
@@ -111,7 +113,6 @@ ServerEvents.recipes(event => {
     // PEX
     event.remove({ output: ['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'] })
 
-    // Utilitarian
-    event.remove({ id: /utilitarian:.*_soliciting_carpet/ })
-    event.remove({ output: ['utilitarian:snad', 'utilitarian:red_snad', 'utilitarian:soul_snad', 'utilitarian:fluid_hopper', 'utilitarian:no_soliciting_banner']})
+    // Shrink
+    event.remove({ output: 'shrink:shrinking_device'})
 })

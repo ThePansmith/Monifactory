@@ -249,7 +249,7 @@
 				""
 				"Might probably be obvious, but this miner is your sole source of &6Hearts of Universes&r. "
 				""
-				"It also can be used later to obtain &6Creative Storage Data&r and &6Creative Data Hatch Data&r, and is used to obtain &9Contained Singularities&r for &6Monic Circuits&r."
+				"It also can be used later to obtain &6Creative Storage Data&r and &6Creative Computation Data&r, and is used to obtain &9Contained Singularities&r for &6Monic Circuits&r."
 			]
 			id: "27EBB5AAF8A40F3D"
 			shape: "hexagon"
@@ -428,7 +428,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "3BE677A49268E12B"
-				item: "kubejs:creative_data_hatch_data"
+				item: "kubejs:creative_computation_data"
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
@@ -530,7 +530,7 @@
 				item: "gtceu:activated_netherite_ingot"
 				type: "item"
 			}]
-			title: "&9Netherite"
+			title: "&9Activated Netherite"
 			x: 36.5d
 			y: -8.75d
 		}
@@ -878,6 +878,7 @@
 			y: -18.0d
 		}
 		{
+			dependencies: ["49C8716030809478"]
 			description: ["An amalgamation of gems, all of them combined will be needed for the final circuit tier."]
 			hide_dependency_lines: true
 			id: "2343B68110805282"
@@ -1013,7 +1014,7 @@
 			subtitle: "Gee that's a lot of Infinity Ingots"
 			tasks: [{
 				id: "0BB7A824F7B03BDC"
-				item: "kubejs:fury_enhanced_infinity_catalyst"
+				item: "kubejs:furious_infinity_catalyst"
 				type: "item"
 			}]
 			x: 35.0d
@@ -1026,9 +1027,10 @@
 			subtitle: "Spend Monium to make Monium"
 			tasks: [{
 				id: "2A554D0488C990D6"
-				item: "kubejs:serenity_enhanced_infinity_catalyst"
+				item: "kubejs:serene_infinity_catalyst"
 				type: "item"
 			}]
+			title: "&9Serene Infinity Catalyst"
 			x: 55.0d
 			y: -26.5d
 		}

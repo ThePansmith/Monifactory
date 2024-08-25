@@ -837,9 +837,9 @@
 				"0B6196692F9E176D"
 			]
 			description: [
-				"The source of &6Dragon Hearts&r and the valuable &6Lair of The Chaos Guardian Data&r."
+				"The source of &6Warden Hearts&r and the valuable &6Lair of The Warden Data&r."
 				""
-				"As a bonus, brings &6Dragon Eggs, Dragon's Breath, Ender Dragon Scales&r, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+				"As a bonus, brings &6Sculk Catalysts, Warden Tendrils&r, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
 			]
 			disable_toast: true
 			id: "66BD8FA2507509A9"
@@ -861,7 +861,7 @@
 				"6391447F1A411281"
 			]
 			description: [
-				"The main source of &6Chaos Shards&r."
+				"The main source of &6Hadal Shards&r."
 				""
 				"The other mission gives negligible amounts of &6Neutronium&r and some other moderately useful things, but you're better off making Neutronium in the &3Fusion Reactor Mark 3&r&r and the other items are otherwise craftable."
 			]
@@ -1452,6 +1452,7 @@
 			dependencies: ["6F5BB99060FF03AC"]
 			description: ["May be worth setting up a line for &9Multidimensional CPU Chip&r Processing."]
 			id: "4EB9D1ADC4814330"
+			shape: "hexagon"
 			tasks: [{
 				id: "2AAFA7BC6C6517A8"
 				item: "kubejs:matter_processor_computer"
@@ -1465,6 +1466,7 @@
 			dependencies: ["4612D36D22AB4B34"]
 			description: ["Some of the elements that can be found in &9Scrap Processing&r are used to create this superconductor, funny how the world works."]
 			id: "7704A934F89E4FD9"
+			shape: "hexagon"
 			tasks: [{
 				id: "25F064AE3DC12AA5"
 				item: "kubejs:dimensional_processor_assembly"
@@ -1485,6 +1487,7 @@
 				"Don't let that discourge you, though, they also unlock many useful tools to add to your factory."
 			]
 			id: "07057CDE4E021BA7"
+			shape: "hexagon"
 			tasks: [{
 				id: "6F4F2E13D73644F0"
 				item: "kubejs:matter_processor_mainframe"
@@ -1498,6 +1501,7 @@
 			dependencies: ["7704A934F89E4FD9"]
 			description: ["At this point, making circuits are beyond second nature for you, so you know what to do."]
 			id: "5E829641B6FE96E5"
+			shape: "hexagon"
 			tasks: [{
 				id: "6AFA814AA43354BE"
 				item: "kubejs:dimensional_processor_computer"
@@ -1514,6 +1518,7 @@
 			]
 			description: ["With these circuits, you have unlocked &aUIV&r, the pentultimate voltage. UIV circuits allow you to craft a variety of things to help improve and redefine your base as you push on."]
 			id: "1B1D3A66B847D129"
+			shape: "hexagon"
 			tasks: [{
 				id: "41FE8DE484FF65DD"
 				item: "kubejs:dimensional_processor_mainframe"
@@ -1530,6 +1535,7 @@
 			]
 			description: ["&6Monic Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Twelve circuits. Unlike past mainframes, you will need to craft more than just a few of them."]
 			id: "5601A05D8361551D"
+			shape: "hexagon"
 			subtitle: "The Final Circuit!"
 			tasks: [{
 				id: "7C6BFAE0BEAADEA4"
@@ -1547,6 +1553,7 @@
 			]
 			description: ["The first circuit to require complex SMDs."]
 			id: "4612D36D22AB4B34"
+			shape: "hexagon"
 			tasks: [{
 				id: "7D7522E4B5D0061A"
 				item: "kubejs:dimensional_processor"
@@ -1560,6 +1567,7 @@
 			dependencies: ["248ABB7F26EB72EE"]
 			description: ["Now with superconductors!"]
 			id: "6F5BB99060FF03AC"
+			shape: "hexagon"
 			tasks: [{
 				id: "621B8C0DD18BFA3A"
 				item: "kubejs:matter_processor_assembly"
@@ -1639,6 +1647,7 @@
 			dependencies: ["3D7924B550A1BBA0"]
 			description: ["Possibly strong enough to run vanilla Minecraft at a decent FPS."]
 			id: "0C9A9F33EEA3AB5E"
+			shape: "hexagon"
 			tasks: [{
 				id: "12DD7DF8ACAA29E5"
 				item: "kubejs:monic_processor_computer"
@@ -1652,6 +1661,7 @@
 			dependencies: ["5A8D2BFAF02E6325"]
 			description: ["Infinite power in a circuit."]
 			id: "3D7924B550A1BBA0"
+			shape: "hexagon"
 			tasks: [{
 				id: "36FE3694B99326BE"
 				item: "kubejs:monic_processor_assembly"
@@ -1669,6 +1679,7 @@
 			]
 			description: ["Lets put all of this together to create the final circuit tier."]
 			id: "5A8D2BFAF02E6325"
+			shape: "hexagon"
 			subtitle: "The Beginning of The End"
 			tasks: [{
 				id: "3EFB11DA4735807C"

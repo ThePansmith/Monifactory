@@ -3143,10 +3143,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"745628397790ED7A"
-				"07482E45FCEE7937"
-			]
+			dependencies: ["745628397790ED7A"]
 			description: [
 				"While you could simply just extract power from the reactor and call it a day, you might find better luck in taking advantage of its ability to &esuperheat&r water into &9High Pressure Steam&r."
 				""
