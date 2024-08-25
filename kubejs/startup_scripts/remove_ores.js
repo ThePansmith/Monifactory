@@ -12,12 +12,6 @@ WorldgenEvents.remove(event => {
         'nuclearcraft:thorium_placed',
         'nuclearcraft:tin_placed',
         'nuclearcraft:uranium_placed',
-        'nuclearcraft:zinc_placed',
-        'armorplus:ore_lava_crystal',
-        'armorplus:ore_lava_crystal_stone',
-        'armorplus:ore_lava_crystal_obsidian',
-        'armorplus:ore_frost_crystal',
-        'armorplus:ore_frost_crystal_stone',
-        'armorplus:ore_frost_crystal_obsidian'
+        'nuclearcraft:zinc_placed'
     ])
 })
