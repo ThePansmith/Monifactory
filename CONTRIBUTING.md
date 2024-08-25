@@ -27,7 +27,7 @@ We are currently looking for the following kinds of contributions:
 * Bug fixes
 * Documentation improvements
 * Small quality of life improvements
-* Spelling/grammer fixes
+* Spelling/grammar fixes
 
 Specifically, we are not looking for:
 
