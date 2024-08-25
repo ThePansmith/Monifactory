@@ -7,7 +7,7 @@ Bleeding edge builds can be found [here](https://github.com/ThePansmith/Monifact
 
 **Q. What's the difference between Monifactory and Nomifactory CEu?**
 
-A comprehensive list of changes can be found [here](https://gist.github.com/ThePansmith/f2637bcbcb37b6d7f07cddb8a3385f14)
+A comprehensive list of changes can be found [here](CHANGELOG.md)
 
 **Q. Can my PC run Monifactory?**
 
