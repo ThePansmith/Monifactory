@@ -6,14 +6,14 @@ StartupEvents.registry('item', event => {
     event.create('microminer_t2').maxStackSize(16).texture("kubejs:item/microverse/microminer_t2")
     event.create('microminer_t3').maxStackSize(16).texture("kubejs:item/microverse/microminer_t3")
     event.create('microminer_t4').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4")
-    if (!isNormalMode) { 
+    if (!isNormalMode) {
         event.create('microminer_t4half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
     }
     event.create('microminer_t5').maxStackSize(16).texture("kubejs:item/microverse/microminer_t5")
     event.create('microminer_t6').maxStackSize(16).texture("kubejs:item/microverse/microminer_t6")
     event.create('microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7")
     event.create('microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8")
-    if (!isNormalMode) { 
+    if (!isNormalMode) {
         event.create('microminer_t8half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
     }
     event.create('microminer_t9').maxStackSize(16).texture("kubejs:item/microverse/microminer_t9")
@@ -46,7 +46,7 @@ StartupEvents.registry('item', event => {
         event.create('stabilized_microminer_t7').maxStackSize(16).texture("kubejs:item/microverse/microminer_t7").glow(true)
         event.create('stabilized_microminer_t8').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8").glow(true)
         event.create('stabilized_microminer_t8half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half").glow(true)
-    
+
         for (const [tier, color] of pristine_matter) {
             event.create(`pristine_matter_t${tier}`)
                 .textureJson({ layer0: 'kubejs:item/prediction' })
@@ -92,7 +92,7 @@ StartupEvents.registry('item', event => {
     event.create('moni_quarter')
     event.create('moni_dollar').glow(true)
 
-    //widgets
+    //Widgets
     event.create('wooden_widget').displayName("Wooden Widget")
     event.create('wooden_widget_left').displayName("Wooden Widget Left Part")
     event.create('wooden_widget_right').displayName("Wooden Widget Right Part")
@@ -125,7 +125,6 @@ StartupEvents.registry('item', event => {
     event.create('shattered_star_data').displayName("§dShattered Star Data")
     event.create('shattered_universe_data').displayName("§dShattered Universe Data")
     event.create('corrupted_universe_data').displayName("§dCorrupted Universe Data")
-    
 
     // End Game Data
     if (!isNormalMode) {
@@ -204,7 +203,6 @@ StartupEvents.registry('item', event => {
     event.create('dense_hydrogen').displayName("Dense Hydrogen").rarity('Uncommon')
     event.create('ultra_dense_hydrogen').displayName("Ultra Dense Hydrogen").rarity('Rare')
 
-
     //Stabilized Items
     const stabilized_elements = [
         ['einsteinium', '#ffea00'],
@@ -232,7 +230,7 @@ StartupEvents.registry('item', event => {
     event.create('grains_of_innocence').displayName("Grains of Innocence")
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
     event.create('moon_dust').displayName("Moon Dust")
-    
+
     //Add Thermal Series items that were missing
     event.create('aerotheum_dust').texture('kubejs:item/aerotheum_blend').displayName('§7Aerotheum Dust')
     event.create('cryotheum_dust').texture('kubejs:item/cryotheum_blend').displayName('§bCryotheum Dust')
@@ -245,9 +243,9 @@ StartupEvents.registry('item', event => {
     event.create('resonant_clathrate').rarity('rare')
 
     if (!isNormalMode) {
-    	event.create('ender_spore')
+        event.create('ender_spore')
     }
-    
+
     //Thermal Augments
     //Very Hacky but whatever
     event.create('kubejs:redstone_transmission_coil')
@@ -255,18 +253,18 @@ StartupEvents.registry('item', event => {
     event.create('thermal:upgrade_augment_2');
     event.create('thermal:upgrade_augment_4');
     event.create('thermal:upgrade_augment_3');
-    
+
     //Jetpack Units
     event.create('empty_fluxed_jetpack_unit').displayName('Empty Fluxed Jetpack Unit')
     event.create('empty_soularium_jetpack_unit').displayName('Empty Soularium Jetpack Unit')
     event.create('flight_control_unit').displayName('Ensouled Flight Control Unit')
     event.create('glowstone_elevation_unit').displayName('Glowstone Elevation Unit')
     event.create('cryotheum_coolant_unit').displayName('Cryotheum Coolant Unit')
-    
+
     //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create('compressed_octadic_capacitor').displayName("Compressed Octadic Capacitor")
     event.create('double_compressed_octadic_capacitor').displayName("Double Compressed Octadic Capacitor")
-    
+
     //Extra Utilities 2
     event.create('resonating_crystal').displayName("Resonating Redstone Crystal")
     event.create('ender_shard')
@@ -278,8 +276,7 @@ StartupEvents.registry('item', event => {
     event.create('nether_star_west').displayName("Nether Star West Tip")
     event.create('nether_star_center').displayName("Nether Star Center")
 
-    //I hate ArmorPlus
-    //Me too - WithersChat
+    //ArmorPlus
     event.create('guardian_scale').rarity('rare').displayName("Guardian Scale")
     event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
     event.create('ender_dragon_scale_dust')
@@ -301,7 +298,7 @@ StartupEvents.registry('item', event => {
     event.create('warden_heart')
     event.create('hadal_shard')
 
-    // Netherite processing midproducts
+    // Netherite Processing Midproducts
     event.create('crushed_ancient_debris').texture('kubejs:item/netherite/crushed_ancient_debris')
     event.create('purified_ancient_debris').texture('kubejs:item/netherite/purified_ancient_debris')
     event.create('refined_ancient_debris').texture('kubejs:item/netherite/refined_ancient_debris')
@@ -311,7 +308,7 @@ StartupEvents.registry('item', event => {
     event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
-    // Alien scrap
+    // Alien Scrap
     event.create('alien_scrap')
     event.create('ruined_hull')
     event.create('ruined_machine_parts')
@@ -370,22 +367,22 @@ StartupEvents.registry('item', event => {
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Circuit Board`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_circuit_board` })
     }
-    
+
     Unit('matter'),
-    Circuit('matter', 'processor', "ZPM"),
-    Circuit('matter', 'processor_assembly', "UV"),
-    Circuit('matter', 'processor_computer', "UHV"),
-    Mainframe('matter', "UEV"),
-    Unit('dimensional'),
-    Circuit('dimensional', 'processor', "UV"),
-    Circuit('dimensional', 'processor_assembly', "UHV"),
-    Circuit('dimensional', 'processor_computer', "UEV"),
-    Mainframe('dimensional', "UIV"),
-    Unit('monic'),
-    Circuit('monic', 'processor', "UHV"),
-    Circuit('monic', 'processor_assembly', "UEV"),
-    Circuit('monic', 'processor_computer', "UIV"),
-    Mainframe('monic', "§9MAX")
+        Circuit('matter', 'processor', "ZPM"),
+        Circuit('matter', 'processor_assembly', "UV"),
+        Circuit('matter', 'processor_computer', "UHV"),
+        Mainframe('matter', "UEV"),
+        Unit('dimensional'),
+        Circuit('dimensional', 'processor', "UV"),
+        Circuit('dimensional', 'processor_assembly', "UHV"),
+        Circuit('dimensional', 'processor_computer', "UEV"),
+        Mainframe('dimensional', "UIV"),
+        Unit('monic'),
+        Circuit('monic', 'processor', "UHV"),
+        Circuit('monic', 'processor_assembly', "UEV"),
+        Circuit('monic', 'processor_computer', "UIV"),
+        Mainframe('monic', "§9MAX")
 
     //Smores
     const smoreHunger = [
@@ -397,9 +394,9 @@ StartupEvents.registry('item', event => {
     let effDuration = 300;
 
     for (let i = 0; i <= 6; i++) {
-        event.create(`smore_${2**i}`).food(food => {
-            food.hunger(smoreHunger[i]*2);
-            food.saturation(smoreSaturation[i]/(1+4*smoreHunger[i]) * 2);
+        event.create(`smore_${2 ** i}`).food(food => {
+            food.hunger(smoreHunger[i] * 2);
+            food.saturation(smoreSaturation[i] / (1 + 4 * smoreHunger[i]) * 2);
             food.effect("absorption", effDuration, 1, 1);
             food.effect("speed", effDuration, 1, 1);
             food.effect("haste", effDuration, 1, 1);
