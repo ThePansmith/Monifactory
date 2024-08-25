@@ -14,6 +14,10 @@ A comprehensive list of changes can be found [here](https://gist.github.com/TheP
 Monifactory should run on any computer with a CPU newer than 2019. Allocating 6GB of RAM is recommended<br>
 ``NOTE: If your computer has 8GB RAM or less, assume that Monifactory will not run on it``
 
+**Q. Can I play Monifactory on Peaceful mode?**
+
+Yes! Peaceful mode is the intended playstyle for Monifactory. Playing with mobs and hunger do not have any additional benefits in Moni, and all mob drops are attainable early through other methods.
+
 **Q. Can I add 'X' mod to Monifactory?**
 
 By default, Monifactory only supports the mods included with it, and has optional compat for ComputerCraft, Create, and Tempad. Any other mods added may break progression and/or deviate from the intended experience, but feel free to add them to your personal instance. Note that support may not be provided for bugs related to mods not shipped with the pack
@@ -37,7 +41,6 @@ You can report it on the [Monifactory issue tracker](https://github.com/ThePansm
 Essential is not officially supported, and various unsupported bugs and crashes may arise from hosting using it. Support will not be provided for these -->
 
 **Q. How do I play Monifactory Hard Mode/Harder Mode?**
-   
 
 [Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardharder-mode-installation)
 
