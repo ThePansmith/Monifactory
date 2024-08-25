@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Monifactory",
-  "version": "0.5.1",
+  "version": "0.8.0",
   "author": "Pansmith",
   "overrides": "overrides",
   "files": [
@@ -457,7 +457,7 @@
     },
     {
       "projectID": 626676,
-      "fileID": 5437704,
+      "fileID": 5644276,
       "required": true
     },
     {
@@ -477,7 +477,7 @@
     },
     {
       "projectID": 580555,
-      "fileID": 5204261,
+      "fileID": 5619582,
       "required": true
     },
     {
@@ -527,7 +527,7 @@
     },
     {
       "projectID": 984988,
-      "fileID": 5242919,
+      "fileID": 5615934,
       "required": true
     },
     {
@@ -582,7 +582,12 @@
     },
     {
       "projectID": 890405,
-      "fileID": 5493660,
+      "fileID": 5641637,
+      "required": true
+    },
+    {
+      "projectID": 444699,
+      "fileID": 4710266,
       "required": true
     },
     {
@@ -602,7 +607,7 @@
     },
     {
       "projectID": 238222,
-      "fileID": 5101366,
+      "fileID": 5630570,
       "required": true
     },
     {
@@ -638,11 +643,6 @@
     {
       "projectID": 1018621,
       "fileID": 5597556,
-      "required": true
-    },
-    {
-      "projectID": 856906,
-      "fileID": 5291546,
       "required": true
     },
     {
@@ -718,11 +718,6 @@
     {
       "projectID": 388800,
       "fileID": 5222033,
-      "required": true
-    },
-    {
-      "projectID": 585406,
-      "fileID": 5227399,
       "required": true
     },
     {
@@ -877,12 +872,12 @@
     },
     {
       "projectID": 834607,
-      "fileID": 5547943,
+      "fileID": 5655174,
       "required": true
     },
     {
       "projectID": 869524,
-      "fileID": 5587628,
+      "fileID": 5619771,
       "required": true
     },
     {
@@ -903,16 +898,6 @@
     {
       "projectID": 574123,
       "fileID": 4645933,
-      "required": true
-    },
-    {
-      "projectID": 223852,
-      "fileID": 5152196,
-      "required": true
-    },
-    {
-      "projectID": 376351,
-      "fileID": 5284254,
       "required": true
     },
     {
@@ -942,7 +927,7 @@
     },
     {
       "projectID": 1017786,
-      "fileID": 5565344,
+      "fileID": 5613251,
       "required": true
     },
     {
@@ -998,6 +983,21 @@
     {
       "projectID": 622112,
       "fileID": 5320730,
+      "required": true
+    },
+    {
+      "projectID": 776293,
+      "fileID": 5549521,
+      "required": true
+    },
+    {
+      "projectID": 291936,
+      "fileID": 5074609,
+      "required": true
+    },
+    {
+      "projectID": 426386,
+      "fileID": 4863339,
       "required": true
     }
   ]

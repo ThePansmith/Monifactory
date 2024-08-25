@@ -237,6 +237,27 @@
             "category": "enderio:primitive_alloy_smelting" 
         },
         {
+            "category": "create:fan_blasting" 
+        },
+        {
+            "category": "create:fan_haunting" 
+        },
+        {
+            "category": "create:fan_smoking" 
+        },
+        {
+            "category": "create:fan_washing" 
+        },
+        {
+            "category": "create:block_cutting" 
+        },
+        {
+            "category": "gcyr:dyson_controller" 
+        },
+        {
+            "category": "gcyr:space_elevator" 
+        },
+        {
             "category": "enderio:sagmilling" 
         }
     ]

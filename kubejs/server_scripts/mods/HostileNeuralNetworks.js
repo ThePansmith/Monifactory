@@ -108,19 +108,6 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(20)
 
-    event.recipes.gtceu.forge_hammer('dust')
-        .itemInputs('minecraft:sand')
-        .itemOutputs('kubejs:dust')
-        .duration(16)
-        .EUt(10)
-
-    event.recipes.gtceu.chemical_reactor('gt_clay')
-        .itemInputs('kubejs:dust')
-        .itemOutputs('minecraft:clay')
-        .inputFluids('water')
-        .duration(20)
-        .EUt(15)
-
     event.recipes.gtceu.alloy_smelter('carbon_fiber_mesh_coal')
         .itemInputs(['4x minecraft:string', 'gtceu:coal_dust'])
         .itemOutputs('gtceu:carbon_fiber_mesh')

@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'gtceu:green_sapphire_plate',
             B: 'ironfurnaces:obsidian_furnace',
-            C: '#gtceu:circuits/lv',
+            C: '#gtceu:circuits/mv',
             D: 'gtceu:steel_gear'
         }
     )
@@ -107,13 +107,6 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('kubejs:stone_to_iron_furnace')
     .itemInputs('minecraft:furnace', '4x gtceu:iron_plate')
     .itemOutputs('ironfurnaces:iron_furnace')
-    .duration(200)
-    .EUt(30)
-    .circuit(8)
-
-    event.recipes.gtceu.assembler('kubejs:stone_to_copper_furnace')
-    .itemInputs('minecraft:furnace', '4x gtceu:iron_plate', '4x gtceu:copper_plate')
-    .itemOutputs('ironfurnaces:copper_furnace')
     .duration(200)
     .EUt(30)
     .circuit(8)

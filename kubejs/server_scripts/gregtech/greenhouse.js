@@ -17,234 +17,147 @@ ServerEvents.recipes(event => {
 
     ////// Greenhouse Recipes //////
 
-    function Greenhouse(id, input, fluid, output, boosted) {
-        if (boosted) {
-            event.recipes.gtceu.greenhouse(`kubejs:${id}`)
-                .circuit(2)
-                .notConsumable(InputItem.of(input))
-                .itemInputs('4x gtceu:fertilizer')
-                .inputFluids(Fluid.of('minecraft:water', fluid))
-                .itemOutputs(output)
-                .duration(640)
-                .EUt(120)
-        } else {
-            event.recipes.gtceu.greenhouse(`kubejs:${id}`)
-                .circuit(1)
-                .notConsumable(InputItem.of(input))
-                .inputFluids(Fluid.of('minecraft:water', fluid))
-                .itemOutputs(output)
-                .duration(1280)
-                .EUt(120)
+    function boost(input, factor) {
+        let boosted = [];
+        input.forEach(element => {
+            let item = Item.of(element);
+            let curCount = item.getCount() * factor;
+            let type = item.getId();
+            while(curCount > item.maxStackSize) {
+                boosted.push(Item.of(type, item.maxStackSize));
+                curCount -= item.maxStackSize;
+            }
+            if(curCount > 0) boosted.push(Item.of(type, curCount));
+        })
+        return boosted;
+    }
+
+    function Greenhouse(mod, input, duration, output, inputFeedbackAmount) {
+        //Create new boosted output item array
+        let boostedOutputs = boost(output, 2)
+
+        //Push sapling/seed inputs (unboosted) onto output arrays
+        if(inputFeedbackAmount > 0) {
+            output.push(Item.of(`${mod}:${input}`, inputFeedbackAmount));
+            boostedOutputs.push(Item.of(`${mod}:${input}`, inputFeedbackAmount));
         }
+
+        event.recipes.gtceu.greenhouse(`kubejs:${input}`)
+            .circuit(1)
+            .notConsumable(InputItem.of(Item.of(`${mod}:${input}`)))
+            .inputFluids(Fluid.of('minecraft:water', 1500))
+            .itemOutputs(output)
+            .duration(duration)
+            .EUt(80)
+        event.recipes.gtceu.greenhouse(`kubejs:${input}_boosted`)
+            .circuit(2)
+            .notConsumable(InputItem.of(Item.of(`${mod}:${input}`)))
+            .itemInputs('4x gtceu:fertilizer')
+            .inputFluids(Fluid.of('minecraft:water', 1000))
+            .itemOutputs(boostedOutputs)
+            .duration(duration / 2)
+            .EUt(80)
     }
 
 
     ////// Trees //////
-
-    // Rubber
-    Greenhouse('rubber_sapling', 'gtceu:rubber_sapling', 1000, ['32x gtceu:rubber_log', '8x gtceu:sticky_resin', '4x gtceu:rubber_sapling'], false)
-    Greenhouse('rubber_sapling_boosted', 'gtceu:rubber_sapling', 1000, ['64x gtceu:rubber_log', '16x gtceu:sticky_resin', '4x gtceu:rubber_sapling'], true)
-
-    // Oak
-    Greenhouse('oak_sapling', 'minecraft:oak_sapling', 1000, ['64x minecraft:oak_log', '4x minecraft:oak_sapling'], false)
-    Greenhouse('oak_sapling_boosted', 'minecraft:oak_sapling', 1000, ['64x minecraft:oak_log', '64x minecraft:oak_log', '4x minecraft:oak_sapling'], true)
-
-    // Dark Oak
-    Greenhouse('dark_oak_sapling', 'minecraft:dark_oak_sapling', 1000, ['64x minecraft:dark_oak_log', '4x minecraft:dark_oak_sapling'], false)
-    Greenhouse('dark_oak_sapling_boosted', 'minecraft:dark_oak_sapling', 1000, ['64x minecraft:dark_oak_log', '64x minecraft:dark_oak_log', '4x minecraft:dark_oak_sapling'], true)
-
-    // Spruce
-    Greenhouse('spruce_sapling', 'minecraft:spruce_sapling', 1000, ['64x minecraft:spruce_log', '4x minecraft:spruce_sapling'], false)
-    Greenhouse('spruce_sapling_boosted', 'minecraft:spruce_sapling', 1000, ['64x minecraft:spruce_log', '64x minecraft:spruce_log', '4x minecraft:spruce_sapling'], true)
-
-    // Birch
-    Greenhouse('birch_sapling', 'minecraft:birch_sapling', 1000, ['64x minecraft:birch_log', '4x minecraft:birch_sapling'], false)
-    Greenhouse('birch_sapling_boosted', 'minecraft:birch_sapling', 1000, ['64x minecraft:birch_log', '64x minecraft:birch_log', '4x minecraft:birch_sapling'], true)
-
-    // Acacia
-    Greenhouse('acacia_sapling', 'minecraft:acacia_sapling', 1000, ['64x minecraft:acacia_log', '4x minecraft:acacia_sapling'], false)
-    Greenhouse('acacia_sapling_boosted', 'minecraft:acacia_sapling', 1000, ['64x minecraft:acacia_log', '64x minecraft:acacia_log', '4x minecraft:acacia_sapling'], true)
-
-    // Jungle
-    Greenhouse('jungle_sapling', 'minecraft:jungle_sapling', 1000, ['64x minecraft:jungle_log', '4x minecraft:jungle_sapling'], false)
-    Greenhouse('jungle_sapling_boosted', 'minecraft:jungle_sapling', 1000, ['64x minecraft:jungle_log', '64x minecraft:jungle_log', '4x minecraft:jungle_sapling'], true)
-
-    // Azalea
-    Greenhouse('azalea_sapling', 'minecraft:azalea', 1000, ['64x minecraft:oak_log', '4x minecraft:azalea'], false)
-    Greenhouse('azalea_boosted', 'minecraft:azalea', 1000, ['64x minecraft:oak_log', '64x minecraft:oak_log', '4x minecraft:azalea'], true)
-
-    // Flowering Azalea
-    Greenhouse('flowering_azalea', 'minecraft:flowering_azalea', 1000, ['64x minecraft:oak_log', '4x minecraft:flowering_azalea'], false)
-    Greenhouse('flowering_azalea_boosted', 'minecraft:flowering_azalea', 1000, ['64x minecraft:oak_log', '64x minecraft:oak_log', '4x minecraft:flowering_azalea'], true)
-
-    // Cherry
-    Greenhouse('cherry_sapling', 'minecraft:cherry_sapling', 1000, ['64x minecraft:cherry_log', '4x minecraft:cherry_sapling'], false)
-    Greenhouse('cherry_sapling_boosted', 'minecraft:cherry_sapling', 1000, ['64x minecraft:cherry_log', '64x minecraft:cherry_log', '4x minecraft:cherry_sapling'], true)
-
-    // Mangrove
-    Greenhouse('mangrove_propagule', 'minecraft:mangrove_propagule', 1000, ['64x minecraft:mangrove_log', '4x minecraft:mangrove_propagule'], false)
-    Greenhouse('mangrove_propagule_boosted', 'minecraft:mangrove_propagule', 1000, ['64x minecraft:mangrove_log', '64x minecraft:mangrove_log', '4x minecraft:mangrove_propagule'], true)
-    
-    // Chorus
-    Greenhouse('chorus', 'minecraft:chorus_flower', 1000, ['32x minecraft:chorus_fruit', '4x minecraft:chorus_flower'], false)
-    Greenhouse('chorus_boosted', 'minecraft:chorus_flower', 1000, ['64x minecraft:chorus_fruit', '4x minecraft:chorus_flower'], true)
+    Greenhouse('gtceu', 'rubber_sapling', 1280, ['32x gtceu:rubber_log', '8x gtceu:sticky_resin'], 4)
+    Greenhouse('minecraft', 'oak_sapling', 1280, ['64x minecraft:oak_log'], 4)
+    Greenhouse('minecraft', 'dark_oak_sapling', 1280, ['64x minecraft:dark_oak_log'], 4)
+    Greenhouse('minecraft', 'spruce_sapling', 1280, ['64x minecraft:spruce_log'], 4)
+    Greenhouse('minecraft', 'birch_sapling', 1280, ['64x minecraft:birch_log'], 4)
+    Greenhouse('minecraft', 'acacia_sapling', 1280, ['64x minecraft:acacia_log'], 4)
+    Greenhouse('minecraft', 'jungle_sapling', 1280, ['64x minecraft:jungle_log'], 4)
+    Greenhouse('minecraft', 'azalea', 1280, ['64x minecraft:oak_log'], 4)
+    Greenhouse('minecraft', 'flowering_azalea', 1280, ['64x minecraft:oak_log'], 4)
+    Greenhouse('minecraft', 'cherry_sapling', 1280, ['64x minecraft:cherry_log'], 4)
+    Greenhouse('minecraft', 'mangrove_propagule', 1280, ['64x minecraft:mangrove_log'], 4)
+    Greenhouse('minecraft', 'chorus_flower', 1280, ['32x minecraft:chorus_fruit'], 4)
+    Greenhouse('minecraft', 'warped_fungus', 1280, ['64x minecraft:warped_stem', '32x minecraft:warped_wart_block', '16x minecraft:shroomlight'], 4)
+    Greenhouse('minecraft', 'crimson_fungus', 1280, ['64x minecraft:crimson_stem', '32x minecraft:nether_wart_block', '16x minecraft:shroomlight'], 4)
 
     ////// Crops //////
+    Greenhouse('minecraft', 'sugar_cane', 640, ['32x minecraft:sugar_cane'], 0)
+    //TODO: Increase water requirement for Kelp
+    Greenhouse('minecraft', 'kelp', 640, ['32x minecraft:kelp'], 0)
+    Greenhouse('minecraft', 'bamboo', 640, ['48x minecraft:bamboo'], 0)
+    Greenhouse('minecraft', 'cactus', 640, ['32x minecraft:cactus'], 0)
+    Greenhouse('minecraft', 'wheat_seeds', 640, ['32x minecraft:wheat'], 0)
+    Greenhouse('minecraft', 'carrot', 640, ['32x minecraft:carrot'], 0)
+    Greenhouse('minecraft', 'potato', 640, ['32x minecraft:potato'], 0)
+    Greenhouse('minecraft', 'beetroot_seeds', 640, ['32x minecraft:beetroot'], 0)
+    Greenhouse('minecraft', 'sweet_berries', 640, ['32x minecraft:sweet_berries'], 0)
+    Greenhouse('minecraft', 'glow_berries', 640, ['32x minecraft:glow_berries'], 0)
+    Greenhouse('minecraft', 'cocoa_beans', 640, ['32x minecraft:cocoa_beans'], 0)
+    Greenhouse('minecraft', 'sea_pickle', 640, ['32x minecraft:sea_pickle'], 0)
+    Greenhouse('minecraft', 'melon_seeds', 640, ['16x minecraft:melon'], 0)
+    Greenhouse('minecraft', 'pumpkin_seeds', 640, ['16x minecraft:pumpkin'], 0)
+    Greenhouse('minecraft', 'nether_wart', 640, ['16x minecraft:nether_wart'], 0)
+    Greenhouse('minecraft', 'red_mushroom', 640, ['16x minecraft:red_mushroom'], 0)
+    Greenhouse('minecraft', 'brown_mushroom', 640, ['16x minecraft:brown_mushroom'], 0)
 
-    // Sugarcane
-    Greenhouse('sugar_cane', 'minecraft:sugar_cane', 1000, '24x minecraft:sugar_cane', false)
-    Greenhouse('sugar_cane_boosted', 'minecraft:sugar_cane', 1000, '48x minecraft:sugar_cane', true)
+    ////// Thermal Expansion Crops //////
+    let TECrops = [
+        'amaranth',
+        'barley',
+        'corn',
+        'flax',
+        'onion',
+        'radish',
+        'rice',
+        'sadiroot',
+        'spinach',
+        'bell_pepper',
+        'eggplant',
+        'green_bean',
+        'peanut',
+        'strawberry',
+        'tomato'
+    ]
+    TECrops.forEach(crop => {
+        Greenhouse('thermal', `${crop}_seeds`, 640, [`32x thermal:${crop}`], 0)
+    })
+    //Reduced output for Frost Melon
+    Greenhouse('thermal', 'frost_melon_seeds', 640, ['16x thermal:frost_melon'], 0)
 
-    // Kelp
-    Greenhouse('kelp', 'minecraft:kelp', 2000, '24x minecraft:kelp', false)
-    Greenhouse('kelp_boosted', 'minecraft:kelp', 2000, '48x minecraft:kelp', true)
-
-    // Bamboo
-    Greenhouse('bamboo', 'minecraft:bamboo', 1000, '24x minecraft:bamboo', false)
-    Greenhouse('bamboo_boosted', 'minecraft:bamboo', 1000, '48x minecraft:bamboo', true)
-
-    // Cactus
-    Greenhouse('cactus', 'minecraft:cactus', 1000, '24x minecraft:cactus', false)
-    Greenhouse('cactus_boosted', 'minecraft:cactus', 1000, '48x minecraft:cactus', true)
-
-    // Wheat
-    Greenhouse('wheat', 'minecraft:wheat_seeds', 1000, '24x minecraft:wheat', false)
-    Greenhouse('wheat_boosted', 'minecraft:wheat_seeds', 1000, '48x minecraft:wheat', true)
-
-    // Carrot
-    Greenhouse('carrot', 'minecraft:carrot', 1000, '24x minecraft:carrot', false)
-    Greenhouse('carrot_boosted', 'minecraft:carrot', 1000, '48x minecraft:carrot', true)
-
-    // Potato
-    Greenhouse('potato', 'minecraft:potato', 1000, '24x minecraft:potato', false)
-    Greenhouse('potato_boosted', 'minecraft:potato', 1000, '48x minecraft:potato', true)
-
-    // Beetroot
-    Greenhouse('beetroot', 'minecraft:beetroot_seeds', 1000, '24x minecraft:beetroot', false)
-    Greenhouse('beetroot_boosted', 'minecraft:beetroot_seeds', 1000, '48x minecraft:beetroot', true)
-
-    // Mellon
-    Greenhouse('melon', 'minecraft:melon_seeds', 1000, '12x minecraft:melon', false)
-    Greenhouse('melon_boosted', 'minecraft:melon_seeds', 1000, '24x minecraft:melon', true)
-
-    // Pumpkin
-    Greenhouse('pumpkin', 'minecraft:pumpkin_seeds', 1000, '12x minecraft:pumpkin', false)
-    Greenhouse('pumpkin_boosted', 'minecraft:pumpkin_seeds', 1000, '24x minecraft:pumpkin', true)
-
-    // Nether Wart
-    Greenhouse('nether_wart', 'minecraft:nether_wart', 1000, '12x minecraft:nether_wart', false)
-    Greenhouse('nether_wart_boosted', 'minecraft:nether_wart', 1000, '24x minecraft:nether_wart', true)
-
-    // Red Mushroom
-    Greenhouse('red_mushroom', 'minecraft:red_mushroom', 1000, '12x minecraft:red_mushroom', false)
-    Greenhouse('red_mushroom_boosted', 'minecraft:red_mushroom', 1000, '24x minecraft:red_mushroom', true)
-
-    // Brown Mushroom
-    Greenhouse('brown_mushroom', 'minecraft:brown_mushroom', 1000, '12x minecraft:brown_mushroom', false)
-    Greenhouse('brown_mushroom_boosted', 'minecraft:brown_mushroom', 1000, '24x minecraft:brown_mushroom', true)
-
-
-    // Flowers
-
-    // Wither Rose
-    Greenhouse('wither_rose', 'minecraft:wither_rose', 1000, '12x minecraft:wither_rose', false)
-    Greenhouse('wither_rose_boosted', 'minecraft:wither_rose', 1000, '24x minecraft:wither_rose', true)
-
-    // Cornflower
-    Greenhouse('cornflower', 'minecraft:cornflower', 1000, '12x minecraft:cornflower', false)
-    Greenhouse('cornflower_boosted', 'minecraft:cornflower', 1000, '24x minecraft:cornflower', true)
-
-    // Torchflower
-    Greenhouse('torchflower', 'minecraft:torchflower', 1000, '12x minecraft:torchflower', false)
-    Greenhouse('torchflower_boosted', 'minecraft:torchflower', 1000, '24x minecraft:torchflower', true)
-
-    // Sunflower
-    Greenhouse('sunflower', 'minecraft:sunflower', 1000, '12x minecraft:sunflower', false)
-    Greenhouse('sunflower_boosted', 'minecraft:sunflower', 1000, '24x minecraft:sunflower', true)
-
-    // Peony
-    Greenhouse('peony', 'minecraft:peony', 1000, '12x minecraft:peony', false)
-    Greenhouse('peony_boosted', 'minecraft:peony', 1000, '24x minecraft:peony', true)
-
-    // Red Tulip
-    Greenhouse('red_tulip', 'minecraft:red_tulip', 1000, '12x minecraft:red_tulip', false)
-    Greenhouse('red_tulip_boosted', 'minecraft:red_tulip', 1000, '24x minecraft:red_tulip', true)
-
-    // Poppy
-    Greenhouse('poppy', 'minecraft:poppy', 1000, '12x minecraft:poppy', false)
-    Greenhouse('poppy_boosted', 'minecraft:poppy', 1000, '24x minecraft:poppy', true)
-
-    // Rose Bush
-    Greenhouse('rose_bush', 'minecraft:rose_bush', 1000, '12x minecraft:rose_bush', false)
-    Greenhouse('rose_bush_boosted', 'minecraft:rose_bush', 1000, '24x minecraft:rose_bush', true)
-
-    // Blue Orchid
-    Greenhouse('blue_orchid', 'minecraft:blue_orchid', 1000, '12x minecraft:blue_orchid', false)
-    Greenhouse('blue_orchid_boosted', 'minecraft:blue_orchid', 1000, '24x minecraft:blue_orchid', true)
-
-    // Orange Tulip
-    Greenhouse('orange_tulip', 'minecraft:orange_tulip', 1000, '12x minecraft:orange_tulip', false)
-    Greenhouse('orange_tulip_boosted', 'minecraft:orange_tulip', 1000, '24x minecraft:orange_tulip', true)
-
-    // Dandelion
-    Greenhouse('dandelion', 'minecraft:dandelion', 1000, '12x minecraft:dandelion', false)
-    Greenhouse('dandelion_boosted', 'minecraft:dandelion', 1000, '24x minecraft:dandelion', true)
-
-    // Pink Tulip
-    Greenhouse('pink_tulip', 'minecraft:pink_tulip', 1000, '12x minecraft:pink_tulip', false)
-    Greenhouse('pink_tulip_boosted', 'minecraft:pink_tulip', 1000, '24x minecraft:pink_tulip', true)
-
-    // Pink Petals
-    Greenhouse('pink_petals', 'minecraft:pink_petals', 1000, '12x minecraft:pink_petals', false)
-    Greenhouse('pink_petals_boosted', 'minecraft:pink_petals', 1000, '24x minecraft:pink_petals', true)
-
-    // Allium
-    Greenhouse('allium', 'minecraft:allium', 1000, '12x minecraft:allium', false)
-    Greenhouse('allium_boosted', 'minecraft:allium', 1000, '24x minecraft:allium', true)
-
-    // Lilac
-    Greenhouse('lilac', 'minecraft:lilac', 1000, '12x minecraft:lilac', false)
-    Greenhouse('lilac_boosted', 'minecraft:lilac', 1000, '24x minecraft:lilac', true)
-
-    // Lily of the Valley
-    Greenhouse('lily_of_the_valley', 'minecraft:lily_of_the_valley', 1000, '12x minecraft:lily_of_the_valley', false)
-    Greenhouse('lily_of_the_valley_boosted', 'minecraft:lily_of_the_valley', 1000, '24x minecraft:lily_of_the_valley', true)
-
-    // Oxeye Daisy
-    Greenhouse('oxeye_daisy', 'minecraft:oxeye_daisy', 1000, '12x minecraft:oxeye_daisy', false)
-    Greenhouse('oxeye_daisy_boosted', 'minecraft:oxeye_daisy', 1000, '24x minecraft:oxeye_daisy', true)
-
-    // Azure Bluet
-    Greenhouse('azure_bluet', 'minecraft:azure_bluet', 1000, '12x minecraft:azure_bluet', false)
-    Greenhouse('azure_bluet_boosted', 'minecraft:azure_bluet', 1000, '24x minecraft:azure_bluet', true)
-
-    // White Tulip
-    Greenhouse('white_tulip', 'minecraft:white_tulip', 1000, '12x minecraft:white_tulip', false)
-    Greenhouse('white_tulip_boosted', 'minecraft:white_tulip', 1000, '24x minecraft:white_tulip', true)  
-
-    // Pitcher Plant
-    Greenhouse('pitcher_plant', 'minecraft:pitcher_plant', 1000, '6x minecraft:pitcher_plant', false)
-    Greenhouse('pitcher_plant_boosted', 'minecraft:pitcher_plant', 1000, '12x minecraft:pitcher_plant', true)  
-    
-    //Cosmetic Stuff
-    // Lily Pad
-    Greenhouse('lily_pad', 'minecraft:lily_pad', 1000, '12x minecraft:lily_pad', false)
-    Greenhouse('lily_pad_boosted', 'minecraft:lily_pad', 1000, '24x minecraft:lily_pad', true)   
-
-    // Vine
-    Greenhouse('vine', 'minecraft:vine', 1000, '12x minecraft:vine', false)
-    Greenhouse('vine_boosted', 'minecraft:vine', 1000, '24x minecraft:vine', true)
-    
-    // Moss
-    Greenhouse('moss_block', 'minecraft:moss_block', 1000, '12x minecraft:moss_block', false)
-    Greenhouse('moss_block_boosted', 'minecraft:moss_block', 1000, '24x minecraft:moss_block', true) 
-	
-	// Thermal Mushroom Spores
-	Greenhouse('slime_spores_boosted', 'thermal:slime_mushroom_spores', 1000, '8x thermal:slime_mushroom_spores', true)
-	Greenhouse('gunpowder_spores_boosted', 'thermal:gunpowder_mushroom_spores', 1000, '8x thermal:gunpowder_mushroom_spores', true)
-	Greenhouse('glowstone_spores_boosted', 'thermal:glowstone_mushroom_spores', 1000, '8x thermal:glowstone_mushroom_spores', true)
-	Greenhouse('redstone_spores_boosted', 'thermal:redstone_mushroom_spores', 1000, '8x thermal:redstone_mushroom_spores', true)
-
+    ////// Flowers & Cosmetic Blocks //////
+    let flowers = [
+        'wither_rose',
+        'cornflower',
+        'sunflower',
+        'peony',
+        'red_tulip',
+        'poppy',
+        'rose_bush',
+        'blue_orchid',
+        'orange_tulip',
+        'dandelion',
+        'pink_tulip',
+        'pink_petals',
+        'allium',
+        'lilac',
+        'lily_of_the_valley',
+        'oxeye_daisy',
+        'azure_bluet',
+        'white_tulip',
+        'pitcher_plant',
+        'lily_pad',
+        'weeping_vines',
+        'twisting_vines',
+        'vine',
+        'moss_block',
+        'glow_lichen',
+        'tube_coral_fan',
+        'brain_coral_fan',
+        'bubble_coral_fan',
+        'fire_coral_fan',
+        'horn_coral_fan'
+    ]
+    flowers.forEach(flower => {
+        Greenhouse('minecraft', flower, 640, [Item.of(flower, 48)], 0);
+    })
+    //Torchflowers are grown from seeds
+    Greenhouse('minecraft', 'torchflower_seeds', 640, [Item.of('torchflower', 48)], 0);
 })
 
 ServerEvents.recipes(event => {

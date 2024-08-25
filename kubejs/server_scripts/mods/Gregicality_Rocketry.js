@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
                 P: 'gtceu:tungsten_steel_plate',
                 T: 'enderio:fluid_tank'
             })
-
+        /*
         event.shaped(
             'gcyr:elite_rocket_motor', [
                 ' P ',
@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
                 P: 'gtceu:hsse_plate',
                 T: 'enderio:fluid_tank'
             })
-
+        */
     // Launch Pad           
     event.remove({id: 'gcyr:assembler/launch_pad'})
     event.shaped(

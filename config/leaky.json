@@ -9,11 +9,11 @@
   },
   "reportThreshold": {
     "desc:": "Set the min amount of stacked items being reported, default: 100",
-    "reportThreshold": 200
+    "reportThreshold": 100
   },
   "autoremovethreshold": {
     "desc:": "Set the amount of stacked items being automatically removed, default: 160",
-    "autoremovethreshold": 20000
+    "autoremovethreshold": 160
   },
   "reportInterval": {
     "desc:": "Set the amount of seconds between repeated notifications: default: 180",

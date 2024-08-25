@@ -21,37 +21,19 @@
 			x: 1.5d
 			y: -1.0d
 		}
-	]
-	quests: [
 		{
-			dependencies: ["715BC5C7DAC53B7B"]
-			description: [
-				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
-				""
-				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron, gold, tin, copper, diamonds&r and many more!), through pristine matter."
-				""
-				"Setting up HNN automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
-				""
-				"HNN changes machines, making them no longer sided, so you can input and output from any side, as well as allowing them to be controlled by redstone."
-				""
-				"Yes, you can also use it for generating power... &owith Diamonds."
-			]
-			disable_toast: true
-			id: "05B3758B509861B8"
+			id: "6EFDF0495132F8EC"
+			linked_quest: "715BC5C7DAC53B7B"
 			shape: "hexagon"
-			tasks: [{
-				id: "148FF0671E07B839"
-				item: "hostilenetworks:sim_chamber"
-				type: "item"
-			}]
-			title: "Simulating Mobs"
 			x: -1.5d
 			y: -3.5d
 		}
+	]
+	quests: [
 		{
 			dependencies: [
-				"05B3758B509861B8"
 				"6A914B240E1A7BCB"
+				"715BC5C7DAC53B7B"
 			]
 			description: [
 				"Simulating mob kills will occasionally result in &6Pristine Matter&r of that mob's type."
@@ -150,7 +132,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["05B3758B509861B8"]
+			dependencies: ["715BC5C7DAC53B7B"]
 			description: ["You can combine various items with a &6Model Framework&r for a completed &6Data Model&r that you can run inside the &3Simulation Chamber&r."]
 			icon: "hostilenetworks:blank_data_model"
 			id: "73C6E2724EBEC997"
