@@ -1,4 +1,4 @@
-# Moni-Ceu-Modern build script
+# Monifactory build script
 
 Uses juke from <https://github.com/tgstation/tgstation>
 
