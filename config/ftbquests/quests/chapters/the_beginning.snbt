@@ -487,7 +487,7 @@
 				}
 				{
 					id: "2DCBDFF5EB0F7CD9"
-					item: "utilitarian:redstone_clock"
+					item: "redstone_clock:redstone_clock"
 					type: "item"
 				}
 				{

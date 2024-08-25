@@ -123,9 +123,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
     tooltip.add('gtceu:terminal', 'Can autobuild multiblocks by shift-rightclicking a controller.')
-    tooltip.addAdvanced(['utilitarian:redstone_clock'], (item, adv, text) => {
-        text.add(2, Text.gold('Can be locked by incoming redstone signals, place above redstone dust or use a repeater.'))
-    })
 
 
     // NuclearCraft tooltips
