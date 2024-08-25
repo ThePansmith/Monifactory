@@ -282,24 +282,4 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
         .soundType('metal')
-
-
-    // event.create('debug_ctm_block', 'gtceu:renderer')
-    //     .hardness(5)
-    //     .requiresTool(true)
-    //     .soundType('metal')
-    //     .tagBlock("mineable/pickaxe")
-    //     .textureOverrideRenderer('minecraft:block/cube_all', { 'all': new ResourceLocation('kubejs', 'block/debug/ctm_block') })
-
 });
-
-// StartupEvents.registry('block', event => {
-//     event.create('small_storage_crate')
-//         .property(BlockProperties.CHEST_TYPE)
-//         .resistance(2)
-//         .soundType('oak_plank')
-//         .blockEntity(entityInfo => {
-//             entityInfo.inventory(13, 9)
-//             entityInfo.rightClickOpensInventory()
-//         })
-// })
