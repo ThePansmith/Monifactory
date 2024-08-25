@@ -11,12 +11,12 @@ A comprehensive list of changes can be found [here](https://gist.github.com/TheP
 
 **Q. Can my PC run Monifactory?**
 
-Monifactory should run on any computer with a CPU newer than 2019. Allocating 6GB of RAM is recommended<br>
+Monifactory should run on any computer with a CPU newer than 2019. Allocating 6GB RAM or higher is recommended<br>
 ``NOTE: If your computer has 8GB RAM or less, assume that Monifactory will not run on it``
 
 **Q. Can I play Monifactory on Peaceful mode?**
 
-Yes! Peaceful mode is the intended playstyle for Monifactory. Playing with mobs and hunger do not have any additional benefits in Moni, and all mob drops are attainable early through other methods.
+Yes! Peaceful mode is the intended playstyle for Monifactory. Playing with mobs and hunger do not have any additional benefits in Moni, and all mob drops are attainable early through other methods
 
 **Q. Can I add 'X' mod to Monifactory?**
 
@@ -58,7 +58,7 @@ GregTech uses dynamically generated textures, reloading your resource packs may 
 
 **Q. My game is crashing on MacOS!**
 
-Remove spark and ensure you are using an Arm64 version of >java 17
+Remove spark and ensure you are using an ARM64 version of Java 17 or higher
 
 **Q. Making a superflat world crashes my game!**
 
@@ -66,7 +66,7 @@ Known issue with Lost Cities, disable the mod if you wish to generate a superfla
 
 **Q. My UI elements are overlapping!**
 
-Switch to a lower GUI scale or figure out if you can move the conflicting thing, all EMI boxes are editable
+Switch to a lower GUI scale or tweak EMI's configs, all EMI boxes are editable. Alternatively, disabled EMI temporarily using Ctrl + O
 
 **Q. I lowered the rarity of Lost Cities, but I still spawn in one!**
 
@@ -74,7 +74,7 @@ Lost Cities is configured to always spawn the player in a city. Disable the mod 
 
 **Q. My EnderIO filters aren't working!**
 
-EnderIO 1.20 is not in a great state and not supported, don't expect many things to work. Try to use alternatives such as GregTech pipes or LaserIO. Energy conduits should work fine however
+EnderIO 1.20 is not in a great state and not supported by the devs, don't expect a lot things to work. Try to use alternatives such as GregTech pipes or LaserIO (Note that Energy conduits should work fine)
 
 **Q. My EnderIO conduits aren't extracting!**
 
