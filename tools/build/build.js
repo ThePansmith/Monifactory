@@ -52,18 +52,27 @@ const symlinkSync = (ourDir, newDir) => {
  * @param {(file: string) => boolean} filter
  */
 const cpSyncFiltered = (ourDir, newDir, filter) => {
-  for (const file of fs.readdirSync(ourDir, { recursive:false })) {
+  for (const file of fs.readdirSync(ourDir, { recursive: false })) {
     if (!filter(file)) continue;
     fs.copyFileSync(path.join(ourDir, file), path.join(newDir, file))
   }
 }
 
-async function packMod(group) {
+function updateManifest(group, version) {
+  const jsonData = JSON.parse(fs.readFileSync(`dist/.tmp/${group}/manifest.json`, 'utf-8'))
+  if (version) {
+    jsonData.version = version
+  }
+  fs.writeFileSync(`dist/.tmp/${group}/manifest.json`, JSON.stringify(jsonData, null, 2))
+}
+
+async function packMod(group, version) {
   Juke.rm(`dist/.tmp/${group}`, { recursive: true });
   // copy dir to dist/.tmp
   fs.mkdirSync(`dist/.tmp/${group}`, { recursive: true })
   fs.cpSync(`dist/${group}`, `dist/.tmp/${group}/overrides`, { recursive: true, force: true })
   fs.copyFileSync('manifest.json', `dist/.tmp/${group}/manifest.json`)
+  updateManifest(group, version)
   fs.copyFileSync('dist/modlist.html', `dist/.tmp/${group}/modlist.html`)
   fs.copyFileSync('LICENSE.md', `dist/.tmp/${group}/LICENSE.md`)
   // Turns out you cant package bat files in CF releases anymore.
@@ -118,6 +127,11 @@ export const KeyParameter = new Juke.Parameter({
   type: 'string'
 })
 
+// for --version=1.0.0
+export const VersionParameter = new Juke.Parameter({
+  type: 'string'
+});
+
 export const BuildModlistTarget = new Juke.Target({
   parameters: [KeyParameter],
   inputs: ['manifest.json'],
@@ -171,7 +185,7 @@ export const DownloadModsTarget = new Juke.Target({
 
       // filter returns changed mods, lets see now who owns them
       for (const pid of oldDataKeys.filter(pid => !newDataKeys.includes(pid))
-                                   .concat(newDataKeys.filter(x => !oldDataKeys.includes(x)))) {
+        .concat(newDataKeys.filter(x => !oldDataKeys.includes(x)))) {
         const fromOldData = oldData[`${pid}`];
         if (fromOldData) {
           // from old, which means this is removed
@@ -183,13 +197,13 @@ export const DownloadModsTarget = new Juke.Target({
         if (newData[`${pid}`] && !mIdToDownload.includes(`${pid}`)) { // new mod added
           mIdToDownload.push(`${pid}`);
           Juke.logger.info(`Mod was added from modpack: ${pid}`)
-          oldData[`${pid}`] = {...newData[`${pid}`]} // copy
+          oldData[`${pid}`] = { ...newData[`${pid}`] } // copy
         }
       }
 
       // now filter changed *fileids*, could prolly b optimized and use 1 loop instead of 2
       for (const pid of oldDataKeys.filter(pid => (
-          newData[pid] && oldData[pid]['fileID'] !== newData[pid]['fileID']))) {
+        newData[pid] && oldData[pid]['fileID'] !== newData[pid]['fileID']))) {
         const fromOldData = oldData[`${pid}`];
         // from old, which means this is updated
         if (fromOldData) {
@@ -228,6 +242,7 @@ export const DownloadModsTarget = new Juke.Target({
 
 export const BuildClientTarget = new Juke.Target({
   dependsOn: [BuildModlistTarget],
+  parameters: [VersionParameter],
   inputs: [
     ...includeList,
     "dist/modlist.html"
@@ -237,13 +252,14 @@ export const BuildClientTarget = new Juke.Target({
     "dist/client.zip",
     ...includeList.map(v => `dist/client/${v}`)
   ]),
-  executes: async () => {
+  executes: async ({ get }) => {
+    const version = get(VersionParameter)
     fs.mkdirSync("dist/client", { recursive: true })
     for (const folders of includeList) {
       fs.cpSync(folders, `dist/client/${folders}`, { recursive: true })
     }
 
-    await packMod("client");
+    await packMod("client", version)
   }
 })
 
