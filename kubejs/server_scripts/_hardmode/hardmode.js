@@ -57,8 +57,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:omnic_data')
         .duration(1000).EUt(180000)
 
-        event.remove({ id: "watercollector:watercollector" })
-        event.remove({ id: "thermal:device_rock_gen" })
         event.remove({ output: 'systeams:stirling_boiler' })
         event.remove({ id: "bountiful:crafting/bountyboard" })
 
@@ -107,35 +105,7 @@ ServerEvents.recipes(event => {
             .itemOutputs('8x kubejs:ender_spore')
             .duration(640)
             .EUt(120)
-
-// Anything that shouldn't apply to hardermode
-        if (!isHarderMode) {
-            event.shaped(
-                "watercollector:watercollector", [
-                    "AAA",
-                    "B B",
-                    "AAA"
-                ], {
-                    A: "gtceu:double_steel_plate",
-                    B: "minecraft:water_bucket"
-                }
-            )
-
-            event.remove({ id: "thermal:device_rock_gen" })
-            event.shaped(
-                "thermal:device_rock_gen", [
-                'PPP',
-                'B B',
-                'PPP'
-            ], {
-                P: "gtceu:black_steel_plate",
-                B: "minecraft:bucket"
-            }
-            )
-}}
-
-
-})
+}})
 
 // HM Ore Gen
 

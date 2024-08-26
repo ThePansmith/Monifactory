@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
     var cellCrafting = [
         [2, 'enderio:photovoltaic_plate', 'gtceu:battery_alloy_plate'],
         [3, 'minecraft:ender_pearl' /* Temporary, TODO: add lens as type of ender pearl material */, 'gtceu:annealed_copper_plate'],
-        [4, 'gtceu:light_blue_glass_lens', 'kubejs:pulsating_mesh'],
+        [4, 'gtceu:light_blue_glass_lens', 'gtceu:vibrant_alloy_plate'],
         [5, 'gtceu:sunnarium_plate', 'gtceu:sunnarium_plate'],
         [6, 'gtceu:enriched_sunnarium_plate', 'gtceu:enriched_sunnarium_plate']
     ]

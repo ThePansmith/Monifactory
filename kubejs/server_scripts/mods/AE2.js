@@ -1175,12 +1175,6 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(512)
 
-    //Infinite Cobble/Water cell
-    event.replaceInput({ id: 'expatternprovider:water_cell' }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
-    event.replaceInput({ id: 'expatternprovider:cobblestone_cell' }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
-    event.replaceInput({ id: 'expatternprovider:water_cell' }, 'minecraft:diamond', 'gtceu:diamond_plate')
-    event.replaceInput({ id: 'expatternprovider:cobblestone_cell' }, 'minecraft:diamond', 'gtceu:diamond_plate')
-
     //Misc stuff
     event.replaceInput({ id: 'expatternprovider:ingredient_buffer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
     event.replaceInput({ id: 'expatternprovider:crystal_fixer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')

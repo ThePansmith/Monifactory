@@ -23,7 +23,7 @@ JEIEvents.hideItems(event => {
     event.hide(['ironfurnaces:crystal_furnace', 'ironfurnaces:emerald_furnace', 'ironfurnaces:item_linker', 'ironfurnaces:rainbow_core', 'ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_coal', 'ironfurnaces:allthemodium_furnace', 'ironfurnaces:vibranium_furnace', 'ironfurnaces:unobtainium_furnace', 'ironfurnaces:upgrade_allthemodium', 'ironfurnaces:upgrade_vibranium', 'ironfurnaces:upgrade_unobtainium', 'ironfurnaces:item_heater', 'ironfurnaces:augment_blasting', 'ironfurnaces:augment_smoking', 'ironfurnaces:heater', 'ironfurnaces:augment_generator'])
 
     //dml
-    event.hide(['hostilenetworks:twilight_prediction'])
+    event.hide(['hostilenetworks:twilight_prediction', 'hostilenetworks:deep_learner'])
 
     //Extended Crafting
     event.hide([Item.of('extendedcrafting:recipe_maker', '{Shapeless:0b,Type:"CraftTweaker"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:tin"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:copper"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:iron"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:coal"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:steel"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:invar"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:silver"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:platinum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lead"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:glowstone"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lapis_lazuli"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:electrum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:redstone"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:diamond"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:nickel"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:gold"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:emerald"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:bronze"}')])
@@ -34,7 +34,7 @@ JEIEvents.hideItems(event => {
     event.hide(['thermal:dynamo_stirling', 'thermal:dynamo_gourmand', 'thermal:dynamo_disenchantment', 'thermal:dynamo_lapidary', 'systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'])
     //event.hide(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3', 'thermal:upgrade_augment_4', 'thermal:dynamo_output_augment'])
     event.hide(['thermal:coal_coke', 'thermal:coal_coke_block'])
-    event.hide(['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter'])
+    event.hide(['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter', 'thermal:device_xp_condenser'])
     //Thermal unused items
     event.hide(/thermal:.*_block/)
     event.hide(/thermal:.*_ingot/)
@@ -43,6 +43,7 @@ JEIEvents.hideItems(event => {
     event.hide(/thermal:.*_nugget/)
     event.hide(/thermal:.*_glass/)
     event.hide(/thermal:.*_gear/)
+    event.hide('thermal:creosote_bucket')
 
     //EnderIO
     event.hide(['enderio:conduit', 'enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block', "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])
@@ -155,7 +156,14 @@ JEIEvents.hideItems(event => {
 
     //Sophisticated tier upgrades
     event.hide(/^sophisticatedstorage:.+tier_upgrade$/)
+    
+    //Unused Sophisticated stack upgrades
+    event.hide("sophisticatedstorage:stack_upgrade_tier_1_plus")
+    event.hide("sophisticatedbackpacks:stack_upgrade_starter_tier")
 
+    //Sophisticated Experience
+    event.hide(/xp_pump_upgrade/)
+    
     // Chipped
     // Adding this in case chipped is okay to be hidden since it adds a ton of items
     //event.hide(/chipped:*/)
@@ -183,9 +191,6 @@ JEIEvents.hideItems(event => {
     // PEX
     event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
 
-    // Utilitarian
-    event.hide(/utilitarian:.*_soliciting_carpet/)
-    event.hide(['utilitarian:snad', 'utilitarian:red_snad', 'utilitarian:soul_snad','utilitarian:fluid_hopper', 'utilitarian:no_soliciting_banner'])
 })
 
 JEIEvents.addItems(event => {
@@ -233,4 +238,11 @@ JEIEvents.hideFluids(event => {
     ncFluids.forEach(element => {
         event.hide(element)
     })
+
+    //Hide Thermal fluids
+    event.hide("thermal:creosote")
+    event.hide("cofh_core:experience")
+
+    //Hide Soph Core fluids
+    event.hide("sophisticatedcore:xp_still")
 })

@@ -225,21 +225,8 @@
 			]
 			icon: "minecraft:iron_ingot"
 			id: "2E8BFA2E719B1C47"
-			rewards: [{
-				id: "318894ADCA9CF9DB"
-				item: {
-					Count: 1b
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "monifactory:wrought_iron"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
-			subtitle: "ULV Beginnings"
+			subtitle: "Steam Beginnings"
 			tasks: [{
 				count: 24L
 				id: "674259A69F1EEC1C"
@@ -271,7 +258,7 @@
 						Count: 1b
 						id: "sophisticatedstorage:gold_barrel"
 						tag: {
-							woodType: "oak"
+							woodType: "spruce"
 						}
 					}
 					type: "item"
@@ -1198,7 +1185,7 @@
 			description: [
 				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. This is useful when you have two machines running and both are unable to keep going because of a lack of power... let one finish then turn the other one back on with a second hit from the mallet."
 				""
-				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r."
+				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r once you can."
 				""
 				"This quest accepts a &aSoft Mallet&r made from any material."
 			]
@@ -2023,11 +2010,11 @@
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
 				""
-				"[\"\",{\"text\":\"You shouldn't feel any pressure to do that in monifactory, though\",\"color\":\"yellow\"},\". Ore veins are massive, and mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},\". What's more, even once you get access to \",{\"text\":\"Macerators\",\"color\":\"dark_aqua\"},\", they initially process ore slowly and require power to operate.\"]"
+				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"chanced byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
 				""
 				"The obvious exception would be rare materials; Those are worth doubling, if possible."
 				""
-				"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! &eOre doubling can be safely ignored until you have the &2Steam Grinder&r&e, or Medium Voltage machines or even later.&r"
+				"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! &eOre doubling can be safely ignored until you have the &2Steam Grinder&r&e or High Voltage machines.&r"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:crushed_redstone_ore"
