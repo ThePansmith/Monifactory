@@ -165,11 +165,6 @@
 			disable_toast: true
 			id: "4A696D4BA5442928"
 			optional: true
-			rewards: [{
-				id: "14F213CB6CCF4D1C"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
 			subtitle: "&oThis quest completes with any drawer."
 			tasks: [{
 				id: "02543E826A43185A"
@@ -205,11 +200,6 @@
 			disable_toast: true
 			icon: "ftbquests:book"
 			id: "3B200AD6EFF90DFA"
-			rewards: [{
-				id: "2B4A8AFF94B4F4E6"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
 			size: 1.0d
 			subtitle: "&eUSE EMI!!!&r"
 			tasks: [{
