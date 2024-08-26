@@ -265,6 +265,7 @@ export const BuildClientTarget = new Juke.Target({
 
 export const BuildServerTarget = new Juke.Target({
   dependsOn: [BuildModlistTarget, DownloadModsTarget],
+  parameters: [VersionParameter],
   inputs: [
     ...includeList,
     "dist/modlist.html"
@@ -274,7 +275,8 @@ export const BuildServerTarget = new Juke.Target({
     "dist/server.zip",
     ...includeList.map(v => `dist/server/${v}`)
   ]),
-  executes: async () => {
+  executes: async ({ get }) => {
+    const version = get(VersionParameter)
     fs.mkdirSync("dist/server", { recursive: true })
     for (const folders of includeList) {
       fs.cpSync(folders, `dist/server/${folders}`, { recursive: true })
@@ -294,7 +296,7 @@ export const BuildServerTarget = new Juke.Target({
       )
     })
 
-    await packMod("server");
+    await packMod("server", version);
   }
 })
 
