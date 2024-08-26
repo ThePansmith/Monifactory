@@ -981,7 +981,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:hardened"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true
@@ -1010,7 +1009,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:reinforced"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true
@@ -1175,7 +1173,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:conductive_iron"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"

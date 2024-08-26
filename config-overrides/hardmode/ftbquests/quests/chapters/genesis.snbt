@@ -1958,7 +1958,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:leadstone"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
