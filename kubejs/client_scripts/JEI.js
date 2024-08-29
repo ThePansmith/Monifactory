@@ -191,6 +191,8 @@ JEIEvents.hideItems(event => {
     // PEX
     event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
 
+    // Hide debug item(s)
+    event.hide('kubejs:debug_ctm_block')
 })
 
 JEIEvents.addItems(event => {
