@@ -16,9 +16,9 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('gtceu:simulation_supercomputer')
         .stationResearch(b => b
-            .researchStack('hostilenetworks:simulation_chamber')
+            .researchStack('hostilenetworks:sim_chamber')
             .EUt(1966080)
-            .CWUt(8192)
+            .CWUt(128, 512000)
         )
         .duration(1200)
         .EUt(1966080)

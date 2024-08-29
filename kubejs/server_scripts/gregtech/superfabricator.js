@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .stationResearch(b => b
             .researchStack('hostilenetworks:loot_fabricator')
             .EUt(1966080)
-            .CWUt(8192)
+            .CWUt(128, 512000)
         )
         .duration(1200)
         .EUt(1966080)
