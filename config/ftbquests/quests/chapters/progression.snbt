@@ -1243,7 +1243,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:leadstone"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
@@ -1267,7 +1266,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:conductive_iron"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
@@ -1290,7 +1288,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:electrical_steel"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
@@ -1320,7 +1317,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:energetic"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
@@ -1345,7 +1341,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:hardened"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
@@ -1369,7 +1364,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:reinforced"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
@@ -1392,7 +1386,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:vibrant"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
@@ -1439,7 +1432,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:dark_soularium"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
