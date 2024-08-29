@@ -2344,6 +2344,21 @@
 			x: 17.5d
 			y: 25.0d
 		}
+		{
+			dependencies: ["3B639F4061B00F1A"]
+			description: ["Now that you have some &6MV circuits&r, you can make a &6Factory Augment&r that lets you &2smelt multiple items at once&r with your furnaces!"]
+			id: "6DAA25CA26AE05E9"
+			optional: true
+			subtitle: "Multi smelter, sort of!"
+			tasks: [{
+				id: "530D4E4EF55BAC5F"
+				item: "ironfurnaces:augment_factory"
+				type: "item"
+			}]
+			title: "Factory Augment"
+			x: 9.0d
+			y: 3.0d
+		}
 	]
 	title: "Early Game"
 }

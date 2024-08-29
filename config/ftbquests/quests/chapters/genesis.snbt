@@ -1792,13 +1792,27 @@
 					tag: {
 						items: [
 							{
-								id: "gtceu:lv_item_magnet"
-							}
-							{
-								id: "enderio:electromagnet"
-							}
-							{
+								Count: 1b
 								id: "thermal:flux_magnet"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_item_magnet"
+								tag: {
+									Charge: 120000L
+								}
+							}
+							{
+								Count: 1b
+								id: "enderio:electromagnet"
+								tag: {
+									Energy: {
+										EnergyStored: 0
+										MaxEnergyStored: 100000
+										MaxEnergyUse: 100000
+									}
+								}
 							}
 						]
 					}
@@ -2235,10 +2249,6 @@
 					id: "itemfilters:or"
 					tag: {
 						items: [
-							{
-								Count: 1b
-								id: "ironfurnaces:augment_factory"
-							}
 							{
 								Count: 1b
 								id: "ironfurnaces:augment_speed"
