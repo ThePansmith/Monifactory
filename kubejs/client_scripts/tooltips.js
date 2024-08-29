@@ -49,8 +49,8 @@ ItemEvents.tooltip(tooltip => {
 
     // Fix gtceu text
     tooltip.addAdvanced(['gtceu:creative_energy', 'gtceu:creative_tank', 'gtceu:creative_chest', 'gtceu:creative_data_access_hatch'], (item, adv, text) => {
-        text.remove(2);
         text.remove(1);
+        text.remove(2);
         text.add(Text.join(Text.translatable('gtceu.creative_tooltip.1'), rainbowify(Text.translatable('gtceu.creative_tooltip.2').getString(), Math.round(Client.lastNanoTime / 100000000)), Text.translatable('gtceu.creative_tooltip.3')))
     });
 
