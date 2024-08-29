@@ -26,9 +26,6 @@ enable_debug_renderer_disable_if_not_needed: true
 # Micro optimizations
 #
 
-# Whether String.format should be redirected to a faster
-# StringBuilder when calculating the FPS string.
-enable_fps_string_optimization: true
 # Whether we should avoid calling the particle manager
 # and its calculations if there are no particles.
 enable_particle_manager_optimization: true
@@ -62,7 +59,7 @@ enable_remove_tutorial_if_not_demo: true
 
 # Whether BadOptimizations <version> should be added onto
 # the left text of the F3 menu.
-show_f3_text: true
+show_f3_text: false
 
 # Some config options will be force-disabled if certain mods are present
 # due to incompatibilities (e.g. entity rendering caching
@@ -76,4 +73,4 @@ ignore_mod_incompatibilities: false
 log_config: true
 
 # Do not change this
-config_version: 2
+config_version: 3
