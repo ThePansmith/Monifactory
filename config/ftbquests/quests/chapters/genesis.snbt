@@ -991,8 +991,6 @@
 		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
-				"&rThis quest accepts a item pipe of any material, any size, whether restrictive or normal."
-				""
 				"For now, the best material to make these pipes out of is probably &6Tin&r."
 				""
 				"Their advantage over &5EnderIO &3Item Conduits&r is their far higher &6throughput&r. An unupgraded EIO Item Conduit transports &98 items per second&r, and up to &9128&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9multiple stacks per second&r."
@@ -1778,7 +1776,7 @@
 			description: [
 				"This relatively inexpensive item will suck nearby items into your inventory."
 				""
-				"The &6GregTech Magnet&r and &6Thermal FluxoMagnet&r can both be placed in a Charm slot to save inventory space"
+				"The &6GregTech Magnet&r and &6Thermal FluxoMagnet&r can both be placed in a &dCurio slot&r to save inventory space"
 			]
 			id: "39394D5596FF8BC8"
 			rewards: [{
@@ -1794,27 +1792,13 @@
 					tag: {
 						items: [
 							{
-								Count: 1b
 								id: "gtceu:lv_item_magnet"
-								tag: {
-									Charge: 100000L
-								}
 							}
 							{
-								Count: 1b
 								id: "enderio:electromagnet"
-								tag: {
-									Energy: {
-										EnergyStored: 0
-										MaxEnergyStored: 100000
-										MaxEnergyUse: 100000
-									}
-								}
 							}
 							{
-								Count: 1b
 								id: "thermal:flux_magnet"
-								tag: { }
 							}
 						]
 					}
@@ -1822,7 +1806,7 @@
 				title: "Any Magnet"
 				type: "item"
 			}]
-			title: "Electromagnet"
+			title: "Magnet"
 			x: -1.5d
 			y: 16.75d
 		}
@@ -2245,7 +2229,6 @@
 			}]
 			subtitle: "Modular furnaces!"
 			tasks: [{
-				icon: "ironfurnaces:augment_factory"
 				id: "678DDB4212FDD854"
 				item: {
 					Count: 1b
