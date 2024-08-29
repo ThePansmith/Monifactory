@@ -41,7 +41,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
             .setEUIO('in')
             .setMaxIOSize(9, 1, 1, 0) //
             .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-            .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_crystallization.png"), FillDirection.LEFT_TO_RIGHT) // unused gtm texture, moved here in case it gets removed
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
     }
 

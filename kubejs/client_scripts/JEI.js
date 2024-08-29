@@ -191,9 +191,8 @@ JEIEvents.hideItems(event => {
     // PEX
     event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
 
-    // Utilitarian
-    event.hide(/utilitarian:.*_soliciting_carpet/)
-    event.hide(['utilitarian:snad', 'utilitarian:red_snad', 'utilitarian:soul_snad','utilitarian:fluid_hopper', 'utilitarian:no_soliciting_banner'])
+    // Hide debug item(s)
+    event.hide('kubejs:debug_ctm_block')
 })
 
 JEIEvents.addItems(event => {
@@ -213,9 +212,6 @@ JEIEvents.addItems(event => {
 
     //NuclearCraft
     event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust', 'nuclearcraft:beryllium_block', 'nuclearcraft:graphite_block'])
-
-    // Hide debug item(s)
-    event.hide('kubejs:debug_ctm_block')
 })
 
 JEIEvents.hideFluids(event => {
