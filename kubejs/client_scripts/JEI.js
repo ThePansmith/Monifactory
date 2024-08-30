@@ -175,6 +175,8 @@ JEIEvents.hideItems(event => {
     // Posttank stuff
     event.hide(/gtceu:uxv/)
     event.hide(/gtceu:opv/)
+    event.hide(/gcyr:uxv/)
+    event.hide(/gcyr:opv/)
 
     //Greg Hot MV ingots
     event.hide(['gtceu:hot_kanthal_ingot', 'gtceu:hot_silicon_ingot'])
@@ -191,8 +193,31 @@ JEIEvents.hideItems(event => {
     // PEX
     event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
 
-    // Hide debug item(s)
-    event.hide('kubejs:debug_ctm_block')
+    // Hide GT ores to prevent clutter
+    GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
+        event.hide([
+          `gtceu:granite_${id.name}_ore`,
+          `gtceu:diorite_${id.name}_ore`,
+          `gtceu:andesite_${id.name}_ore`,
+          `gtceu:red_granite_${id.name}_ore`,
+          `gtceu:marble_${id.name}_ore`,
+          `gtceu:deepslate_${id.name}_ore`,
+          `gtceu:tuff_${id.name}_ore`,
+          `gtceu:sand_${id.name}_ore`,
+          `gtceu:red_sand_${id.name}_ore`,
+          `gtceu:gravel_${id.name}_ore`,
+          `gtceu:basalt_${id.name}_ore`,
+          `gtceu:blackstone_${id.name}_ore`,
+          `gtceu:moon_${id.name}_ore`,
+          `gtceu:venus_${id.name}_ore`,
+          `gtceu:mercury_${id.name}_ore`,
+          `gtceu:mars_${id.name}_ore`
+        ])
+      })
+
+    
+    // Hides GCYR ores as its not part of GTMaterialRegistry
+    event.hide(/gcyr:(!netherrack|endstone).*_ore/)
 })
 
 JEIEvents.addItems(event => {
