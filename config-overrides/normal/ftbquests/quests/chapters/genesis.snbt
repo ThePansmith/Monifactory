@@ -1863,7 +1863,7 @@
 				""
 				"The &6Wiremill&r will make crafting wires much, much easier."
 				""
-				"The &2Bending Machine&r will make Plates from one ingot instead of two."
+				"The &2Bender&r will make Plates from one ingot instead of two."
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
