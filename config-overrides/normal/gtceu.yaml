@@ -27,7 +27,7 @@ recipes:
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
-  hardIronRecipes: true
+  hardIronRecipes: false
 
   # Whether to make Redstone related recipes harder.
   # Default: false
@@ -63,7 +63,7 @@ recipes:
 
   # Whether to make the Flint and Steel recipe require steel parts.
   # Default: true.
-  flintAndSteelRequireSteel: true
+  flintAndSteelRequireSteel: false
 
   # Whether to remove Vanilla Block Recipes from the Crafting Table.
   # Default: false
@@ -260,7 +260,7 @@ machines:
 
   # Whether the Assembly Line should require the item inputs to be in order.
   # Default: true
-  orderedAssemblyLineItems: true
+  orderedAssemblyLineItems: false
 
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
