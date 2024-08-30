@@ -24,7 +24,7 @@
 				""
 				"&2If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer, &9or mute the sound entirely in the ESM menu, accessable from your inventory."
 			]
-			icon: "gtceu:lv_electric_motor"
+			icon: "gtceu:lv_wiremill"
 			id: "62BBD1F6767A4D90"
 			rewards: [{
 				count: 2
