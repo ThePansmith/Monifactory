@@ -102,6 +102,9 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
+    tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
+    tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
+
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
     tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:quintessence_infuser'], 'Can parallelize with Parallel Control Hatches.')
 
