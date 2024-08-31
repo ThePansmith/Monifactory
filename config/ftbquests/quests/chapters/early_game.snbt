@@ -44,12 +44,6 @@
 			y: 8.5d
 		}
 		{
-			id: "27DFA4CC3F039428"
-			linked_quest: "26C9F1514FD08C81"
-			x: 5.25d
-			y: 18.5d
-		}
-		{
 			id: "4065DEBE89F8D723"
 			linked_quest: "3650EF39B5AB4A7D"
 			shape: "hexagon"
@@ -159,6 +153,7 @@
 				""
 				"For your MV cables, you can use &6Copper&r to start with. &6Energetic Alloy cables&r are lossless though, so consider them if you're able to mass produce those ingots."
 			]
+			icon: "gtceu:mv_4a_energy_converter"
 			id: "0B62AD25CDD86A6B"
 			rewards: [{
 				id: "0328A56626F1B919"
@@ -168,7 +163,31 @@
 			size: 1.5d
 			tasks: [{
 				id: "28506753F6FA0755"
-				item: "gtceu:mv_4a_energy_converter"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_1a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_4a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_8a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_16a_energy_converter"
+							}
+						]
+					}
+				}
+				title: "Any MV Converter"
 				type: "item"
 			}]
 			title: "MV Energy Converter"
@@ -2047,7 +2066,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:energetic"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true
@@ -2095,7 +2113,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:electrical_steel"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true

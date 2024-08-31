@@ -26,6 +26,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'thermal:cured_rubber' })
     event.remove({ input: 'forge:nuggets/netherite'})
     event.remove({ id: 'thermal:gunpowder_4' })
+    event.remove({ id: 'thermal:device_xp_condenser'})
+
     //Redstone arsenal
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_smelting' })
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_blasting' })
@@ -100,6 +102,7 @@ ServerEvents.recipes(event => {
     // Posttank stuff
     event.remove({ id: /gtceu:uxv/ })
     event.remove({ id: /gtceu:opv/ })
+    event.remove({ id: 'gtceu:shaped/max_machine_hull'})
 
     // LaserIO
     event.remove({ output: ['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'] })

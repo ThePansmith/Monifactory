@@ -63,6 +63,7 @@ jobs:
     uses: ./.github/workflows/build_pr.yml
     with:
       target: build-all
+      version: ${{needs.pre-build.outputs.version}}
     secrets: inherit
 
   release:

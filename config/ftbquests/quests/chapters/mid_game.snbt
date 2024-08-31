@@ -2476,7 +2476,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:vibrant"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true

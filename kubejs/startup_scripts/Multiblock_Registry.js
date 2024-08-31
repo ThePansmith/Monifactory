@@ -10,10 +10,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
             .setEUIO('in')
             .setMaxIOSize(2, 2, 0, 0) //
             .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-            .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_simulation.png"), FillDirection.LEFT_TO_RIGHT)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
             .setSound(GTSoundEntries.ASSEMBLER)
-
 
         // Loot Superfabricator
         event.create('loot_superfabricator')
@@ -21,22 +20,20 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
             .setEUIO('in')
             .setMaxIOSize(2, 1, 0, 0) //
             .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-            .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_simulation.png"), FillDirection.LEFT_TO_RIGHT)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
     }
 
     // Hard mode-exclusive Multis
     if (isHardMode) {
-
         // Actualization Chamber
         event.create('actualization_chamber')
             .category('multiblock')
             .setEUIO('in')
             .setMaxIOSize(2, 20, 0, 0) //
             .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-            .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_simulation.png"), FillDirection.LEFT_TO_RIGHT)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COOLING)
-
 
         // Universal Crystallizer
         event.create('universal_crystallizer')
@@ -44,10 +41,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
             .setEUIO('in')
             .setMaxIOSize(9, 1, 1, 0) //
             .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-            .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_crystallization.png"), FillDirection.LEFT_TO_RIGHT) // unused gtm texture, moved here in case it gets removed
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
     }
-
 
     // Small Microverse Projector Recipe Type
     event.create('basic_microverse')
@@ -55,9 +51,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(4, 20, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_rocket.png"), FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-        
 
     // Advanced Microverse Projector Recipe Type
     event.create('advanced_microverse')
@@ -65,7 +60,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(4, 16, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_rocket.png"), FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
 
 
@@ -75,9 +70,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(8, 16, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_rocket.png"), FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-
 
     // Advanced Microverse Projector III Recipe Type
     event.create('advanced_microverse_iii')
@@ -85,9 +79,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(12, 16, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_rocket.png"), FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-
 
     // Naquadah Reactor I Recipe type
     event.create('naquadah_reactor_i')
@@ -98,7 +91,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
 
-
     // Naqudah Reactor II Recipe Type
     event.create('naquadah_reactor_ii')
         .category('multiblock')
@@ -107,17 +99,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-
-
-    // Empowerer
-    // event.create('empowerment')
-    //     .category('multiblock')
-    //     .setEUIO('in')
-    //     .setMaxIOSize(5, 1, 0, 0)
-    //     .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-    //     .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-    //     .setSound(GTSoundEntries.COOLING);
-
 
     // Greenhouse
     event.create('greenhouse')
@@ -134,7 +115,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(2, 1, 0, 0) //
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_subatomic.png"), FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
     // Large Material Press
@@ -146,7 +127,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_COMPRESS, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPRESSOR)
         .setIconSupplier(() => Item.of('gtceu:large_material_press'))
-
 
     //Omnic Forge
     event.create('omnic_forge')
@@ -162,7 +142,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(2, 2, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(new ResourceTexture("kubejs:textures/gui/progress_bar_xp.png"), FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE)
 
     //Rock Cycle Simulator
@@ -186,9 +166,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-
     GCyMMachines.LARGE_MATERIAL_PRESS.setRecipeTypes([GTRecipeTypes.BENDER_RECIPES, GTRecipeTypes.COMPRESSOR_RECIPES, GTRecipeTypes.FORGE_HAMMER_RECIPES, GTRecipeTypes.FORMING_PRESS_RECIPES, GTRecipeTypes.get('large_material_press')])
-
 
     // Normal mode-exclusive multis            
     if (!isHardMode) {
@@ -299,7 +277,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 "gtceu:block/multiblock/implosion_compressor", false)
     }
 
-
     // Basic Microverse Projector
     event.create('basic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -319,7 +296,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer("kubejs:block/microverse/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-
 
     // Advanced Microverse Projector
     event.create('advanced_microverse_projector', 'multiblock')
@@ -342,7 +318,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer("kubejs:block/microverse/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-
 
     // Advanced Microverse Projecctor II
     event.create('advanced_microverse_projector_ii', 'multiblock')
@@ -371,7 +346,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("kubejs:block/microverse/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-
     // Naquadah Reactor I
     event.create('naquadah_reactor_i', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -394,7 +368,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-
     // Naquadah Reactor II
     event.create('naquadah_reactor_ii', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -416,34 +389,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-
-
-    //Swapped out in favor of just giving the crafting core early
-    // Code may be recycled for a lategame empowerer?
-
-    // event.create('empowerment', 'multiblock')
-    //     .rotationState(RotationState.NON_Y_AXIS)
-    //     .recipeTypes('empowerment')
-    //     .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
-    //     .pattern(definition => FactoryBlockPattern.start()
-    //         .aisle("###E###", "###I###")
-    //         .aisle("###W###", "#######")
-    //         .aisle("###W###", "#######")
-    //         .aisle("EWWOWWE", "I##I##I")
-    //         .aisle("###W###", "#######")
-    //         .aisle("###W###", "#######")
-    //         .aisle("###C###", "###I###")
-    //         .where('C', Predicates.controller(Predicates.blocks(definition.get())))
-    //         .where('W', Predicates.blocks("gtceu:aluminium_quadruple_wire"))
-    //         .where('E', Predicates.blocks("kubejs:empowerer_casing")
-    //             .or(Predicates.blocks("gtceu:mv_energy_input_hatch").setExactLimit(1)))
-    //         .where('I', Predicates.blocks("gtceu:ulv_input_bus"))
-    //         .where('O', Predicates.blocks("gtceu:ulv_output_bus"))
-    //         .where('#', Predicates.any())
-    //         .build())
-    //     .workableCasingRenderer("kubejs:block/empowerer_casing",
-    //         "gtceu:block/multiblock/implosion_compressor", false)
-
 
     // Greenhouse
     event.create('greenhouse', 'multiblock')
@@ -503,7 +448,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer(new ResourceLocation('kubejs', 'block/omnium/casing'),
             "gtceu:block/multiblock/implosion_compressor", false)
 
-
     // Microverse Projector III
     // Also a parrelizable Projector for the previous tiers
     event.create('hyperbolic_microverse_projector', 'multiblock')
@@ -538,13 +482,12 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("kubejs:block/microverse/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-
     // Advanced Assembly line
     // Could have it's own recipes as well
     event.create('dimensional_superassembler', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeTypes('assembly_line')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock('kubejs:dimensional_stabilization_netherite_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#########", "###CCC###", "##CCCCC##", "#CCCCCCC#", "#CCCCCCC#", "#CCCCCCC#", "##CCCCC##", "###CCC###", "#########")
@@ -586,7 +529,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
     //Extra Large Chemical Reactor
-
     event.create('extra_large_chemical_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('large_chemical_reactor')
@@ -641,7 +583,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
     // Rock Cycle Simulator
-
     event.create('rock_cycle_simulator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('rock_cycle_simulator')
@@ -666,7 +607,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
     // Atmospheric Accumulator
-
     event.create('atmospheric_accumulator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(GTRecipeTypes.GAS_COLLECTOR_RECIPES)
@@ -692,8 +632,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
     // Matter Alterator
-
-        event.create('matter_alterator', 'multiblock')
+    event.create('matter_alterator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('atomic_reconstruction')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
@@ -747,7 +686,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-        
+
     // Discharger
     event.create('discharger', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -755,21 +694,21 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .appearanceBlock(() => Block.getBlock('kubejs:cryolobus_casing'))
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
-        .aisle("    CCC    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "    CCC    ")
-        .aisle("  CCCCCCC  ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "  CCCCCCC  ")
-        .aisle(" CNCCCCCNC ", "  NG c GN  ", "  NG c GN  ", "  NG   GN  ", "  NG   GN  ", "  NG   GN  ", "  NG c GN  ", "  NG c GN  ", " CNCCCCCNC ")
-        .aisle(" CCCCCCCCC ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", " CCCCCCCCC ")
-        .aisle("CCCCCCCCCCC", " G  cFc  G ", " G       G ", " G       G ", " G       G ", " G       G ", " G       G ", " G  cFc  G ", "CCCCCCCCCCC")
-        .aisle("CCCCCCCCCCC", " Gc FcF cG ", " Gc  c  cG ", " G   c   G ", " G   T   G ", " G   c   G ", " Gc  c  cG ", " Gc FcF cG ", "CCCCCCCCCCC")
-        .aisle("CCCCCCCCCCC", " G  cFc  G ", " G       G ", " G       G ", " G       G ", " G       G ", " G       G ", " G  cFc  G ", "CCCCCCCCCCC")
-        .aisle(" CCCCCCCCC ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", " CCCCCCCCC ")
-        .aisle(" CNCCCCCNC ", "  NG c GN  ", "  NG c GN  ", "  NG   GN  ", "  NG   GN  ", "  NG   GN  ", "  NG c GN  ", "  NG c GN  ", " CNCCCCCNC ")
-        .aisle("  CCCCCCC  ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "  CCCCCCC  ")
-        .aisle("    CYC    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "    CCC    ")
+            .aisle("    CCC    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "    CCC    ")
+            .aisle("  CCCCCCC  ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "  CCCCCCC  ")
+            .aisle(" CNCCCCCNC ", "  NG c GN  ", "  NG c GN  ", "  NG   GN  ", "  NG   GN  ", "  NG   GN  ", "  NG c GN  ", "  NG c GN  ", " CNCCCCCNC ")
+            .aisle(" CCCCCCCCC ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", " CCCCCCCCC ")
+            .aisle("CCCCCCCCCCC", " G  cFc  G ", " G       G ", " G       G ", " G       G ", " G       G ", " G       G ", " G  cFc  G ", "CCCCCCCCCCC")
+            .aisle("CCCCCCCCCCC", " Gc FcF cG ", " Gc  c  cG ", " G   c   G ", " G   T   G ", " G   c   G ", " Gc  c  cG ", " Gc FcF cG ", "CCCCCCCCCCC")
+            .aisle("CCCCCCCCCCC", " G  cFc  G ", " G       G ", " G       G ", " G       G ", " G       G ", " G       G ", " G  cFc  G ", "CCCCCCCCCCC")
+            .aisle(" CCCCCCCCC ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", "  G     G  ", " CCCCCCCCC ")
+            .aisle(" CNCCCCCNC ", "  NG c GN  ", "  NG c GN  ", "  NG   GN  ", "  NG   GN  ", "  NG   GN  ", "  NG c GN  ", "  NG c GN  ", " CNCCCCCNC ")
+            .aisle("  CCCCCCC  ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "    GGG    ", "  CCCCCCC  ")
+            .aisle("    CYC    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "    CCC    ")
             .where('Y', Predicates.controller(Predicates.blocks(definition.get())))
             .where('C', Predicates.blocks("kubejs:cryolobus_casing").setMinGlobalLimited(155)
-            .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-            .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('c', Predicates.blocks("kubejs:cryolobus_casing"))
             .where('N', Predicates.blocks(GCyMBlocks.CASING_NONCONDUCTING.get()))
             .where('F', Predicates.blocks("gtceu:cryolobus_frame"))
@@ -779,6 +718,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer("kubejs:block/cryolobus/cryolobus_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-
 })
 

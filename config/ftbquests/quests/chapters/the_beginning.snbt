@@ -487,7 +487,7 @@
 				}
 				{
 					id: "2DCBDFF5EB0F7CD9"
-					item: "utilitarian:redstone_clock"
+					item: "redstone_clock:redstone_clock"
 					type: "item"
 				}
 				{
@@ -693,8 +693,8 @@
 				type: "item"
 			}]
 			title: "&9Infiniter Water"
-			x: 1.0357142857142563d
-			y: -0.4761904761904816d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
@@ -1045,7 +1045,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:hardened"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true
@@ -1074,7 +1073,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:reinforced"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true
@@ -1239,7 +1237,6 @@
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:conductive_iron"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"

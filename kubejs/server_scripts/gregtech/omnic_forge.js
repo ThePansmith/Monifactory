@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         .EUt(65520)
    
     event.recipes.gtceu.omnic_forge('kubejs:netherite_casing')
-        .itemInputs('16x gtceu:neutronium_plate', '12x gtceu:large_scale_assembler_casing', '12x gtceu:dense_activated_netherite_plate', '12x gtceu:tungsten_steel_rod')
+        .itemInputs('16x gtceu:neutronium_plate', '12x gtceu:large_scale_assembler_casing', '6x gtceu:dense_activated_netherite_plate', '12x gtceu:tungsten_steel_rod')
         .itemOutputs('3x kubejs:dimensional_stabilization_netherite_casing')
         .duration(2000)
         .EUt(65520)
