@@ -188,7 +188,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
     event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
 
-    event.shapeless('kubejs:monipenny', 'gtceu:ancient_gold_coin')
+    event.shapeless('kubejs:moni_penny', 'gtceu:ancient_gold_coin')
 }
 
 
