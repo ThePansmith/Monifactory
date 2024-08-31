@@ -189,6 +189,14 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
 
     event.shapeless('kubejs:moni_penny', 'gtceu:ancient_gold_coin')
+    event.shaped(
+        Item.of('gtceu:sticky_resin', 32), [
+        '   ',
+        'P  ',
+        'PPP'
+    ], {
+        P: 'kubejs:moni_penny'
+    }).noMirror().noShrink()
 }
 
 
