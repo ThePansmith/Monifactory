@@ -55,7 +55,7 @@ Like this list, some features here are WIP.
 * Refer to Draconic Removal Section below for more info regarding sculk changes.
 * RTM Alloy Coils added, replacing tungstensteel
 * New Multiblocks
-  * xLCR, a parallelizable Large Chemical Reaction
+  * xLCR, a parallelizable Large Chemical Reactor
   * Quintessence Infuser, a parallelizable Soul Binder unlocked in ZPM
 
 # Storage Upgrades
