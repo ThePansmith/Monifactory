@@ -162,7 +162,7 @@
   "material.gtceu.kaemanite": "Kaemanite",
   "material.gtceu.mythril": "§bMana Infused Metal§r",
   "item.gtceu.mythril_ingot": "§bMana Infused Metal§r",
-  
+
   "__POST_TANK_MATERIALS__.header": "=======================",
   "__POST_TANK_MATERIALS__.flufff": "> Post-Tank Materials <",
   "__POST_TANK_MATERIALS__.footer": "=======================",
@@ -250,6 +250,11 @@
   "material.gtceu.rhodium_salt_solution": "Rhodium Salt Solution",
   "material.gtceu.methyl_formate": "Methyl Formate",
   "material.gtceu.formic_acid": "Formic Acid",
-  "material.gtceu.sodium_methoxide": "Sodium Methoxide"
+  "material.gtceu.sodium_methoxide": "Sodium Methoxide",
 
+  "__MISC__.header": "===========",
+  "__MISC__.flufff": "> Misc. <",
+  "__MISC__.footer": "===========",
+
+  "curios.identifier.gtceu_magnet": "Magnet"
 }
