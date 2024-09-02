@@ -120,4 +120,17 @@ event.recipes.gtceu.electric_blast_furnace("aluminium_ingot_gas")
 
     //Battery Alloy Dust
 	event.shapeless("4x gtceu:battery_alloy_dust", ["4x gtceu:lead_dust", "gtceu:antimony_dust"])
+
+    // Ender crop
+    event.remove({ output: 'endercrop:ender_seeds'})
+
+    event.recipes.gtceu.alloy_smelter("ender_crop")
+        .itemInputs("4x minecraft:ender_pearl", "#minecraft:seeds")
+        .itemOutputs("endercrop:ender_seeds")
+        .duration(400)
+        .EUt(16)
+    
+    if (isNormalMode) {
+        event.recipes.thermal.insolator(['minecraft:ender_pearl', 'endercrop:ender_seeds'], 'endercrop:ender_seeds').water(4000)
+    }
 })

@@ -2102,6 +2102,24 @@
 			x: 4.517857142857139d
 			y: 1.4285714285714306d
 		}
+		{
+			dependencies: ["6A914B240E1A7BCB"]
+			description: ["Having trouble finding &6Ender Pearls&r for &6Vibrant Alloy&r? Ender pearls can be grown from &6Ender Crops&r, which you can either &2find in Lost Cities chests&r, or &2make in an Alloy Smelter&r!"]
+			id: "6F72047E09FCD2F8"
+			rewards: [{
+				id: "1CD6AFB62FA25F33"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Ender pearl agriculture!"
+			tasks: [{
+				id: "23794FF88AC6A779"
+				item: "endercrop:ender_seeds"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.5d
+		}
 	]
 	title: "The Beginning"
 }
