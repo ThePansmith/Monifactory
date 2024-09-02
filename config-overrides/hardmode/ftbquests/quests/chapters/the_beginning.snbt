@@ -519,12 +519,6 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					count: 3L
-					id: "003802F16404404C"
-					item: { Count: 3b, id: "gtceu:empty_mold" }
-					type: "item"
-				}
-				{
 					id: "500A01A974ACFC7D"
 					item: "gtceu:block_casting_mold"
 					type: "item"
