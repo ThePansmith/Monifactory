@@ -807,11 +807,11 @@
 		{
 			dependencies: ["7D7B34CF5145F971"]
 			description: [
-				"&6Sunnarium&r is an alloy formed from &6Stabilized Plutonium&r and &6Stabilized Curium&r in an IV or better &3Alloy Smelter&r."
+				"&6Sunnarium&r is an alloy formed using &6Plutonium&r, &6Glowstone,&r and &6Curium&r on the &3Crafting Table.&r"
 				""
 				"It is a common ingredient in higher tier &6Solar Panels&r."
 				""
-				"This stuff takes a long time to produce so consider stocking it passively."
+				"There is a more efficient recipe made in an IV or better &3Mixer&r, but it'll take a long time to produce so consider stocking it passively."
 			]
 			id: "171EE3A4129F19A5"
 			rewards: [{
