@@ -2242,27 +2242,18 @@
 				type: "item"
 			}]
 			subtitle: "Modular furnaces!"
-			tasks: [{
-				id: "678DDB4212FDD854"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "ironfurnaces:augment_speed"
-							}
-							{
-								Count: 1b
-								id: "ironfurnaces:augment_fuel"
-							}
-						]
-					}
+			tasks: [
+				{
+					id: "154872CDC7976802"
+					item: "ironfurnaces:augment_speed"
+					type: "item"
 				}
-				title: "Any Furnace Augment"
-				type: "item"
-			}]
+				{
+					id: "29E0DC2E3B5B4A0F"
+					item: "ironfurnaces:augment_fuel"
+					type: "item"
+				}
+			]
 			title: "Furnace Augments"
 			x: 7.25d
 			y: 2.5d
