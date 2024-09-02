@@ -158,7 +158,7 @@
 			tasks: [{
 				id: "02543E826A43185A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "functionalstorage:drawer"
@@ -255,7 +255,7 @@
 				{
 					id: "46CA42CF7D0730E6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "sophisticatedstorage:gold_barrel"
 						tag: {
 							woodType: "spruce"
@@ -266,7 +266,7 @@
 				{
 					id: "3A3F4984E9A1A81E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni_quest:backpack"
@@ -536,7 +536,7 @@
 				"&6Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:iron_wire_cutter"
 				tag: {
 					DisallowContainerItem: 0b
@@ -563,7 +563,7 @@
 				{
 					id: "04ED9B749EA44142"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_hammer"
 						tag: {
 							DisallowContainerItem: 0b
@@ -582,7 +582,7 @@
 				{
 					id: "514CE965C8FB1452"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_file"
 						tag: {
 							DisallowContainerItem: 0b
@@ -599,7 +599,7 @@
 				{
 					id: "7226082DB71F551A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_saw"
 						tag: {
 							DisallowContainerItem: 0b
@@ -618,7 +618,7 @@
 				{
 					id: "705CACC01AD1C68E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_wrench"
 						tag: {
 							DisallowContainerItem: 0b
@@ -639,7 +639,7 @@
 				{
 					id: "290A0FE8C389AF05"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_screwdriver"
 						tag: {
 							DisallowContainerItem: 0b
@@ -656,7 +656,7 @@
 				{
 					id: "7B41907A63748FCA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_wire_cutter"
 						tag: {
 							DisallowContainerItem: 0b
@@ -675,7 +675,7 @@
 				{
 					id: "7298CFD7BA970AA8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_mortar"
 						tag: {
 							DisallowContainerItem: 0b
@@ -704,7 +704,7 @@
 				"Your free 4 Diamond Mining Hammers should last you a while, and you can always fix them using an anvil and some diamonds."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:iron_mining_hammer"
 				tag: {
 					Damage: 0
@@ -724,7 +724,7 @@
 				consume_items: false
 				id: "589A0779F965D77A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:tools/mining_hammers"
@@ -745,7 +745,7 @@
 			tasks: [{
 				id: "254A555916313F70"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:flint_axe"
 					tag: {
 						DisallowContainerItem: 0b
@@ -796,7 +796,7 @@
 				{
 					id: "1F3EDCBF5EB70229"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:iron_wrench"
 						tag: {
 							Damage: 0
@@ -810,7 +810,7 @@
 				{
 					id: "20854F1345AB6B1E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "thermal:wrench"
 						tag: { }
 					}
@@ -879,25 +879,25 @@
 				{
 					count: 36L
 					id: "102B3966BE895F45"
-					item: { Count: 36b, id: "minecraft:copper_ingot" }
+					item: { Count: 36, id: "minecraft:copper_ingot" }
 					type: "item"
 				}
 				{
 					count: 20L
 					id: "3CEB53996CBB7381"
-					item: { Count: 20b, id: "gtceu:tin_ingot" }
+					item: { Count: 20, id: "gtceu:tin_ingot" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "5A94EE9BCBADE6BF"
-					item: { Count: 16b, id: "minecraft:coal" }
+					item: { Count: 16, id: "minecraft:coal" }
 					type: "item"
 				}
 				{
 					count: 6L
 					id: "77FEEB10E7B091B8"
-					item: { Count: 6b, id: "minecraft:gold_ingot" }
+					item: { Count: 6, id: "minecraft:gold_ingot" }
 					type: "item"
 				}
 			]
@@ -991,7 +991,7 @@
 			tasks: [{
 				id: "7B4500A4503F2F6D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "hangglider:hang_glider"
 					tag: {
 						Damage: 0
@@ -1028,7 +1028,7 @@
 				{
 					id: "5BC6046C0217B7C6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:enchanted_book"
 						tag: {
 							StoredEnchantments: [{
@@ -1097,7 +1097,7 @@
 				{
 					count: 13L
 					id: "6394A3C7C39ABEAA"
-					item: { Count: 13b, id: "gtceu:steam_machine_casing" }
+					item: { Count: 13, id: "gtceu:steam_machine_casing" }
 					type: "item"
 				}
 				{
@@ -1173,7 +1173,7 @@
 			tasks: [{
 				count: 3L
 				id: "7BA753DF38DEC329"
-				item: { Count: 3b, id: "gtceu:rubber_plate" }
+				item: { Count: 3, id: "gtceu:rubber_plate" }
 				type: "item"
 			}]
 			title: "Rubber Sheets"
@@ -1190,7 +1190,7 @@
 				"This quest accepts a &aSoft Mallet&r made from any material."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:rubber_mallet"
 				tag: {
 					Damage: 0
@@ -1214,7 +1214,7 @@
 			tasks: [{
 				id: "253D34B000F903DD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1322,37 +1322,37 @@
 				{
 					count: 16L
 					id: "16D7046417209756"
-					item: { Count: 16b, id: "gtceu:red_alloy_ingot" }
+					item: { Count: 16, id: "gtceu:red_alloy_ingot" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "57A26AF688B59DAB"
-					item: { Count: 32b, id: "gtceu:iron_dust" }
+					item: { Count: 32, id: "gtceu:iron_dust" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "5627DEBC5B168743"
-					item: { Count: 32b, id: "gtceu:conductive_alloy_ingot" }
+					item: { Count: 32, id: "gtceu:conductive_alloy_ingot" }
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "15CAA2C5B513BFC2"
-					item: { Count: 8b, id: "gtceu:red_alloy_plate" }
+					item: { Count: 8, id: "gtceu:red_alloy_plate" }
 					type: "item"
 				}
 				{
 					count: 3L
 					id: "14B188414BF825E6"
-					item: { Count: 3b, id: "gtceu:red_alloy_single_wire" }
+					item: { Count: 3, id: "gtceu:red_alloy_single_wire" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "7B8835F95B9739D6"
-					item: { Count: 16b, id: "gtceu:conductive_alloy_single_wire" }
+					item: { Count: 16, id: "gtceu:conductive_alloy_single_wire" }
 					type: "item"
 				}
 			]
@@ -1385,7 +1385,7 @@
 			tasks: [{
 				count: 12L
 				id: "24A84AB536BB27B0"
-				item: { Count: 12b, id: "gtceu:red_alloy_single_cable" }
+				item: { Count: 12, id: "gtceu:red_alloy_single_cable" }
 				type: "item"
 			}]
 			title: "&2Cables"
@@ -1403,7 +1403,7 @@
 			tasks: [{
 				id: "34E57B9F8FF4E1AE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1450,7 +1450,7 @@
 			rewards: [{
 				id: "7BD3619691C7B6B3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "trofers:medium_pillar"
 					tag: {
 						BlockEntityTag: {
@@ -1507,7 +1507,7 @@
 				{
 					count: 3L
 					id: "0300A830D96D68EB"
-					item: { Count: 3b, id: "gtceu:empty_mold" }
+					item: { Count: 3, id: "gtceu:empty_mold" }
 					type: "item"
 				}
 				{
@@ -1635,7 +1635,7 @@
 			tasks: [{
 				id: "0527876D6287634B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1678,7 +1678,7 @@
 			tasks: [{
 				count: 4L
 				id: "7923DEDAB3298371"
-				item: { Count: 4b, id: "gtceu:lv_battery_hull" }
+				item: { Count: 4, id: "gtceu:lv_battery_hull" }
 				type: "item"
 			}]
 			title: "LV Power Storage"
@@ -1702,7 +1702,7 @@
 			tasks: [{
 				id: "0560C9C2C5EC9998"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1758,7 +1758,7 @@
 				{
 					id: "4763F5F3C0771FFA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "buildinggadgets2:gadget_copy_paste"
 						tag: { }
 					}
@@ -1767,7 +1767,7 @@
 				{
 					id: "284A671CC5192B50"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "buildinggadgets2:gadget_cut_paste"
 						tag: {
 							pastereplace: 1b
@@ -1797,7 +1797,7 @@
 				"Finally, you can charge up all those depleted &m&6Dark Boots&r&r and &6The Ender&r swords you've looted."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "thermal:flux_capacitor"
 				tag: { }
 			}
@@ -1811,7 +1811,7 @@
 				{
 					id: "5EF5A8A2767A69E3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "thermal:flux_capacitor"
 						tag: { }
 					}
@@ -1820,7 +1820,7 @@
 				{
 					id: "63EE7A1364F6888B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:dusts/sulfur"
@@ -1851,7 +1851,7 @@
 			tasks: [{
 				id: "7CE647770625D692"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:leadstone"
@@ -1874,7 +1874,7 @@
 			tasks: [{
 				id: "36817E3C33876798"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "enderio:electromagnet"
 					tag: {
 						Energy: {
@@ -2055,7 +2055,7 @@
 					count: 10L
 					id: "0221039A21A1C266"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:heads"
@@ -2067,7 +2067,7 @@
 				{
 					id: "0E70B83A51A0ADEC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:beds"

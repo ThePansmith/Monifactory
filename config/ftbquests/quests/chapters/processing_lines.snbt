@@ -104,7 +104,7 @@
 			tasks: [{
 				id: "6A1B4224E18DC3EC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:cobblestone"
@@ -427,7 +427,7 @@
 			tasks: [{
 				id: "70D37DC6A4C89B21"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:glass"
@@ -586,7 +586,7 @@
 			tasks: [{
 				id: "44F09B9F2D173993"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:cobblestone"
