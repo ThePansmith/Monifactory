@@ -125,7 +125,7 @@ event.recipes.gtceu.electric_blast_furnace("aluminium_ingot_gas")
     event.remove({ output: 'endercrop:ender_seeds'})
 
     event.recipes.gtceu.alloy_smelter("ender_crop")
-        .itemInputs("4x minecraft:ender_pearl", "#minecraft:seeds")
+        .itemInputs("4x minecraft:ender_pearl", "#forge:seeds")
         .itemOutputs("endercrop:ender_seeds")
         .duration(400)
         .EUt(16)
