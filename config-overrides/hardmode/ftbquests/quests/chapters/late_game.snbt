@@ -367,7 +367,7 @@
 				""
 				"Bacterial Sludge can later be obtained in the byproducts of getting Stem Cells."
 			]
-			icon: "gtceu:raw_crystal_chip_parts"
+			icon: "gtceu:raw_crystal_chip"
 			id: "40E8C7CEE285D702"
 			rewards: [{
 				id: "7BC43EF40ABF0212"
