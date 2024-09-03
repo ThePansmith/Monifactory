@@ -136,6 +136,11 @@ ServerEvents.recipes(event => {
             P: 'gtceu:electrum_flux_plate'
         }
     ).id('redstone_arsenal:materials/flux_plating')
+    event.recipes.gtceu.omnic_forge('kubejs:flux_plating_assembly')
+        .itemInputs('redstone_arsenal:flux_gem', '4x gtceu:electrum_flux_plate')
+        .itemOutputs('redstone_arsenal:flux_plating')
+        .duration(60)
+        .EUt(7680)
 
 	// Vacuum Freezer
 	// kubejs Superconductor Wire
