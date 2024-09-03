@@ -61,6 +61,7 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Coil Ingredients
     event.shaped(
         'thermal:rf_coil', [
             ' BA',
@@ -71,6 +72,11 @@ ServerEvents.recipes(event => {
             B: 'minecraft:redstone'
         }
     )
+    event.recipes.gtceu.assembler('thermal:rf_coil_assembly')
+        .itemInputs('#forge:rods/gold', '2x #forge:rings/gold', '3x #forge:dusts/redstone')
+        .itemOutputs('thermal:rf_coil')
+        .duration(200)
+        .EUt(30)
 
     event.shaped(
         'kubejs:redstone_transmission_coil', [
@@ -82,6 +88,11 @@ ServerEvents.recipes(event => {
             B: 'minecraft:redstone'
         }
     )
+    event.recipes.gtceu.assembler('kubejs:rf_transmission_coil_assembly')
+        .itemInputs('#forge:rods/silver', '2x #forge:rings/silver', '3x #forge:dusts/redstone')
+        .itemOutputs('kubejs:redstone_transmission_coil')
+        .duration(200)
+        .EUt(30)
 
     /*=== AUGMENTS/UPGRADES ===*/
     event.shaped(
@@ -187,6 +198,11 @@ ServerEvents.recipes(event => {
             B: 'gtceu:red_alloy_plate'
         }
     )
+    event.recipes.gtceu.assembler('kubejs:excitationcoil_assembly')
+        .itemInputs('thermal:rf_coil', '2x gtceu:red_alloy_plate')
+        .itemOutputs('kubejs:excitationcoil')
+        .duration(180)
+        .EUt(30)
 
     event.shaped(
         'steamdynamo:steam_dynamo', [
