@@ -573,6 +573,13 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt(480)
 
+    event.recipes.gtceu.autoclave('kubejs:resonating_ender_dust_autoclave')
+        .itemInputs('#forge:dusts/ender_pearl')
+        .inputFluids('gtceu:redstone 1152')
+        .itemOutputs('12x kubejs:resonating_crystal')
+        .duration(900)
+        .EUt(480)
+
     event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl']).id('kubejs:ender_pearl')
 
     // Waterframes
