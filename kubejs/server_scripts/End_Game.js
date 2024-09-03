@@ -215,11 +215,16 @@ ServerEvents.recipes(event => {
             'BGB',
             'PBP'
         ], {
-            B: 'minecraft:diamond_block',
+            P: 'minecraft:diamond',
             G: 'gtceu:diamond_perfect',
-            P: 'gtceu:diamond_plate'
+            B: 'gtceu:diamond_screw'
         }
     ).id('kubejs:diamond_lattice')
+    event.recipes.gtceu.assembler('kubejs:diamond_lattice')
+        .itemInputs('gtceu:diamond_perfect', '2x gtceu:diamond_plate', '4x gtceu:diamond_screw')
+        .itemOutputs('kubejs:diamond_lattice')
+        .duration(100)
+        .EUt(491520)
 
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:crystal_matrix_ingot', [
