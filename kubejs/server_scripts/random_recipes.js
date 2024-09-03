@@ -560,14 +560,16 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     event.recipes.gtceu.autoclave('kubejs:resonating_pearl_autoclave')
-        .itemInputs('8x minecraft:redstone', 'minecraft:ender_pearl')
-        .itemOutputs('16x kubejs:resonating_crystal')
+        .itemInputs('minecraft:ender_pearl')
+        .inputFluids('gtceu:redstone 1152')
+        .itemOutputs('12x kubejs:resonating_crystal')
         .duration(900)
         .EUt(480)
 
     event.recipes.gtceu.autoclave('kubejs:resonating_pulsating_autoclave')
-        .itemInputs('8x minecraft:redstone', 'kubejs:pulsating_dust')
-        .itemOutputs('16x kubejs:resonating_crystal')
+        .itemInputs('kubejs:pulsating_dust')
+        .inputFluids('gtceu:redstone 1152')
+        .itemOutputs('12x kubejs:resonating_crystal')
         .duration(900)
         .EUt(480)
 

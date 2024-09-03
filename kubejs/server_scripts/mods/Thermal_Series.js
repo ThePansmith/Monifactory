@@ -343,7 +343,7 @@ ServerEvents.recipes(event => {
     ], {
         A: '#forge:plates/lead',
         B: '#forge:rods/electrum',
-        C: 'enderio:vibrant_capacitor_bank'
+        C: 'enderio:advanced_capacitor_bank'
     }).id('kubejs:energy_cell_frame')
     event.remove('thermal:energy_cell');
     event.recipes.gtceu.canner('kubejs:energy_cell')
