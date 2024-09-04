@@ -170,7 +170,7 @@
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: { Count: 4b, id: "kubejs:hadal_energy_core" }
+				item: { Count: 4, id: "kubejs:hadal_energy_core" }
 				type: "item"
 			}]
 			title: "Hadal Cores"
@@ -341,25 +341,25 @@
 				{
 					count: 26L
 					id: "53593263F0B2BD34"
-					item: { Count: 26b, id: "gtceu:omnium_block" }
+					item: { Count: 26, id: "gtceu:omnium_block" }
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "287AEC44CC7A8A38"
-					item: { Count: 18b, id: "gtceu:vibration_safe_casing" }
+					item: { Count: 18, id: "gtceu:vibration_safe_casing" }
 					type: "item"
 				}
 				{
 					count: 13L
 					id: "11FAD5991B3199F5"
-					item: { Count: 13b, id: "gtceu:enderium_block" }
+					item: { Count: 13, id: "gtceu:enderium_block" }
 					type: "item"
 				}
 				{
 					count: 17L
 					id: "081CB54FA393231E"
-					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
+					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
 			]
@@ -497,7 +497,7 @@
 				{
 					count: 17L
 					id: "77269C9328705964"
-					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
+					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
 			]
