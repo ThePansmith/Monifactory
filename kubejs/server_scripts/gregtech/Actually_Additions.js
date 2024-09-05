@@ -62,29 +62,30 @@ ServerEvents.recipes(event => {
 
     const reconstructorrecipe = [
         ['lv', 'lead'],
-        ['mv', 'lead'],
-        ['hv', 'lead'],
-        ['ev', 'beryllium'],
-        ['iv', 'beryllium'],
+        ['mv', 'rose_gold'],
+        ['hv', 'beryllium'],
+        ['ev', 'rhodium'],
+        ['iv', 'platinum'],
         ['luv', 'osmiridium'],
-        ['zpm', 'osmiridium'],
+        ['zpm', 'naquadah'],
         ['uv', 'duranium'],
-        ['uhv', 'duranium'],
-        ['uev', 'holmium'],
+        ['uhv', 'tritanium'],
+        ['uev', 'omnium'],
         ['uiv', 'holmium']
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
     event.shaped(
         `gtceu:${tier}_atomic_reconstructor`, [
-        'PCE',
-        'CHL',
-        'PPE'
+        'CPC',
+        'FHE',
+        'PPM'
     ], {
         P: `gtceu:${plate}_plate`,
         E: `gtceu:${tier}_emitter`,
         H: `gtceu:${tier}_machine_hull`,
         C: `#gtceu:circuits/${tier}`,
-        L: `#forge:lenses`
+        F: `gtceu:${tier}_field_generator`,
+        M: `gtceu:${tier}_electric_motor`
     }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
     })
 
