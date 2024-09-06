@@ -13,6 +13,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('omnium').parent(GTMaterialIconSet.SHINY)
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
     event.create('monium').parent(GTMaterialIconSet.SHINY)
+    event.create('pulsating').parent(GTMaterialIconSet.ROUGH)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {

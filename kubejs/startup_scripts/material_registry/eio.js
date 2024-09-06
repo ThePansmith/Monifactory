@@ -3,6 +3,11 @@
 
 // EnderIO Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('pulsating')
+        .dust()
+        .color(0xffffff)
+        .iconSet('pulsating')
+        
     event.create("dark_steel")
         .ingot().fluid()
         .color(0x414751).iconSet('dull')
@@ -36,7 +41,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot().fluid()
         .color(0x6ae26e).iconSet('shiny')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
-		.components('iron')
+		.components('iron', 'pulsating')
         .cableProperties(8, 1, 0, true)
 
     event.create("electrical_steel")

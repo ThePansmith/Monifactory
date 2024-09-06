@@ -719,8 +719,8 @@ ServerEvents.recipes(event => {
         .EUt(30720)
         .stationResearch(b => b.researchStack('gtceu:vacuum_freezer').CWUt(16, 64000).EUt(30720))
 
-    event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['gtceu:uraninite_dust'])
-    event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['kubejs:resonant_clathrate'])
+    event.recipes.minecraft.smelting('gtceu:pulsating_dust', ['gtceu:uraninite_dust'])
+    event.recipes.minecraft.smelting('gtceu:pulsating_dust', ['kubejs:resonant_clathrate'])
 
     // Electrum
     event.replaceInput({ id: /redstone_arsenal/ }, 'redstone_arsenal:flux_metal_block', 'gtceu:electrum_flux_block')

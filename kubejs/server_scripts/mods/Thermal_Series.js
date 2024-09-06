@@ -367,7 +367,7 @@ ServerEvents.recipes(event => {
 
     //Thermal Essences
     event.recipes.gtceu.chemical_reactor('elemental_reduction_fluid')
-        .itemInputs('kubejs:pulsating_dust')
+        .itemInputs('#forge:dusts/pulsating')
         .inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 1000))
         .outputFluids('gtceu:elemental_reduction_fluid 1000')
         .duration(80)
