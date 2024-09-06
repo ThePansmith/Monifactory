@@ -63,5 +63,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("dark_soularium")
         .ingot()
         .color(0x7c674d).iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE,GTMaterialFlags.GENERATE_DENSE)
+        .components('soularium', 'dark_steel', 'tritium')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
