@@ -108,13 +108,13 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(20)
 
-    event.recipes.gtceu.chemical_reactor('carbon_fiber_mesh_coal')
+    event.recipes.gtceu.alloy_smelter('carbon_fiber_mesh_coal')
         .itemInputs(['4x minecraft:string', 'gtceu:coal_dust'])
         .itemOutputs('gtceu:carbon_fiber_mesh')
         .duration(100)
         .EUt(16)
 
-    event.recipes.gtceu.chemical_reactor('carbon_fiber_mesh_carbon')
+    event.recipes.gtceu.alloy_smelter('carbon_fiber_mesh_carbon')
         .itemInputs(['4x minecraft:string', 'gtceu:carbon_dust'])
         .itemOutputs('gtceu:carbon_fiber_mesh')
         .duration(100)
