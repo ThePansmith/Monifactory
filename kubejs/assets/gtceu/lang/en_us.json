@@ -120,6 +120,8 @@
   "gtceu.universal_crystallizer": "Crystallization",
   "block.gtceu.actualization_chamber": "Actualization Chamber",
   "gtceu.actualization_chamber": "Actualization",
+  "block.gtceu.cryococcal_reverberator": "Cryococcal Reverberator",
+  "gtceu.reverberation": "Reverberation",
   "gtceu.actualization_chamber.desc": "§8A powerful machine that harnesses the most complex of matters and turns it into raw materials",
   "block.gtceu.uhv_uhv_parallel_hatch": "Giga Parallel Control Hatch",
   "block.gtceu.uev_uev_parallel_hatch": "Omega Parallel Control Hatch",
