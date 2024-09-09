@@ -1107,7 +1107,7 @@
 				"{@pagebreak}"
 				"At this point, the &3Auto Crafting Table&r can be supplied with ingredients and &aRF&r power to begin automated crafting."
 				""
-				"In compensation for the cost of the &6Crystaltine Ingots&r, hese tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
+				"In compensation for the cost of the &6Crystaltine Ingots&r, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
 			]
 			icon: "extendedcrafting:basic_auto_table"
 			id: "0DB8063A7972E1C0"
