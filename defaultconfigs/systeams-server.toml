@@ -6,6 +6,9 @@ water_to_steam_ratio = 10
 #The multiplier on the steam dynamo's RF/t
 #Range: 0.05 ~ 8.0
 steam_dynamo_output_multiplier = 4.0
+#If the Dynamo in dynamo augment tooltips should be replaced with Dynamo & Boiler
+#This doesn't have as much support for translations (it can still be translated with the key info.systeams.augment.type.DynamoBoiler)
+replace_dynamo_augment_tooltips = true
 
 ["Steam Values"]
 	#The number of mb of steam produced per RF of energy usually produced by the same fuel in a dynamo
