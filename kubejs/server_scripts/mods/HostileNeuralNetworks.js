@@ -123,6 +123,73 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:pulsating_mesh')
         .duration(200)
         .EUt(16)
+
+        //IMPOSSIBLE REALM DATA
+        let predictions = [
+            ['overworld', 1],
+            ['nether', 2],
+            ['end', 4]
+        ]
+        predictions.forEach(item => {
+            event.shaped(
+                Item.of('kubejs:impossible_realm_data', item[1]), [
+                    'ABA',
+                    'BAB',
+                    'ABA'
+                ], {
+                    A: `hostilenetworks:${predictions[0]}_prediction`,
+                    B: 'kubejs:solidified_experience'
+                }
+            )
+        })
+        
+        event.shaped(
+            '2x kubejs:impossible_realm_data', [
+                'ABA',
+                'BAB',
+                'ABA'
+            ], {
+                A: 'hostilenetworks:nether_prediction',
+                B: 'kubejs:solidified_experience'
+            }
+        )
+        event.shaped(
+            '4x kubejs:impossible_realm_data', [
+                'ABA',
+                'BAB',
+                'ABA'
+            ], {
+                A: 'hostilenetworks:end_prediction',
+                B: 'kubejs:solidified_experience'
+            }
+        )
+
+        event.recipes.gtceu.extractor('extract_quantum_flux')
+            .itemInputs('kubejs:impossible_realm_data')
+            .itemOutputs('kubejs:quantum_flux')
+            .duration(100)
+            .EUt(3000)
+
+        //LAIR DATA
+        let lairs = [
+            ['deep_dark', 'overworld'],
+            ['wither_realm', 'nether'],
+            ['dragon_lair', 'end']
+        ]
+        lairs.forEach(item =>{
+            event.shaped(
+                `kubejs:${item[0]}_data`, [
+                    'ABB',
+                    'BBB',
+                    'BBB'
+                ], {
+                    A: 'kubejs:impossible_realm_data',
+                    B: `hostilenetworks:${item[1]}_prediction`
+                }
+            )
+        })
+
+
     }
 })
 
