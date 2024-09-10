@@ -276,27 +276,27 @@ machines:
   smallBoilers:
     # The amount of steam a Steam Solid Boiler produces per second at max temperature.
     # Default: 120
-    solidBoilerBaseOutput: 240
+    solidBoilerBaseOutput: 360
 
     # The amount of steam a High Pressure Steam Solid Boiler produces per second at max temperature.
     # Default: 300
-    hpSolidBoilerBaseOutput: 600
+    hpSolidBoilerBaseOutput: 1800
 
     # The amount of steam a Steam Liquid Boiler produces per second at max temperature.
     # Default: 240
-    liquidBoilerBaseOutput: 480
+    liquidBoilerBaseOutput: 720
 
     # The amount of steam a High Pressure Steam Liquid Boiler produces per second at max temperature.
     # Default: 600
-    hpLiquidBoilerBaseOutput: 1200
+    hpLiquidBoilerBaseOutput: 1800
 
     # The amount of steam a Steam Solar Boiler produces per second at max temperature.
     # Default: 120
-    solarBoilerBaseOutput: 160
+    solarBoilerBaseOutput: 240
 
     # The amount of steam a High Pressure Steam Solar Boiler produces per second at max temperature.
     # Default: 360
-    hpSolarBoilerBaseOutput: 480
+    hpSolarBoilerBaseOutput: 720
 
   # Large Steam Boiler Options
   largeBoilers:
