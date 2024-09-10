@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
                     'BAB',
                     'ABA'
                 ], {
-                    A: `hostilenetworks:${predictions[0]}_prediction`,
+                    A: `hostilenetworks:${item[0]}_prediction`,
                     B: 'kubejs:solidified_experience'
                 }
             )
@@ -172,9 +172,9 @@ ServerEvents.recipes(event => {
 
         //LAIR DATA
         let lairs = [
-            ['deep_dark', 'overworld'],
-            ['wither_realm', 'nether'],
-            ['dragon_lair', 'end']
+            ['deep_dark', 'overworld', 'deepslate'],
+            ['wither_realm', 'nether', 'netherrack'],
+            ['dragon_lair', 'end', 'endstone']
         ]
         lairs.forEach(item =>{
             event.shaped(
@@ -187,6 +187,18 @@ ServerEvents.recipes(event => {
                     B: `hostilenetworks:${item[1]}_prediction`
                 }
             )
+            event.recipes.gtceu.canner(`canning_${item[0]}_data`)
+                .itemInputs(`8x hostilenetworks:${item[1]}_prediction`)
+                .inputFluids(Fluid.of('enderio:xp_juice', 500))
+                .itemOutputs(`kubejs:${item[0]}_data`)
+                .duration(20)
+                .EUt(60)
+            event.recipes.gtceu.canner(`advanced_canning_${item[0]}_data`)
+                .itemInputs([`12x hostilenetworks:${item[1]}_prediction`, `5x gtceu:small_${item[2]}_dust`])
+                .inputFluids(Fluid.of('enderio:xp_juice', 500))
+                .itemOutputs(`3x kubejs:${item[0]}_data`)
+                .duration(20)
+                .EUt(960)
         })
 
 
