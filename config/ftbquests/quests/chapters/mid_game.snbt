@@ -535,7 +535,7 @@
 				{
 					id: "21935100523DBD85"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
@@ -969,7 +969,7 @@
 			tasks: [{
 				id: "7FC04E0CB9796A66"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1046,7 +1046,7 @@
 			tasks: [{
 				id: "2415BC74E202A3D1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -2127,7 +2127,7 @@
 				{
 					id: "2C123B7485932F5B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
@@ -2176,7 +2176,7 @@
 			tasks: [{
 				id: "4404A112A80D0522"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -2472,7 +2472,7 @@
 			tasks: [{
 				id: "7AADB19DD0A9D2F4"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:vibrant"
@@ -2514,7 +2514,7 @@
 			tasks: [{
 				id: "174DE966E70D375F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "enderio:powered_spawner"
 					tag: { }
 				}
@@ -2631,7 +2631,7 @@
 			tasks: [{
 				id: "63E826016B3C8755"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:diamond_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -2944,7 +2944,7 @@
 				"The best &6Large Steam Turbine&r fuel is a closely-guarded government secret."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:turbine_rotor"
 				tag: {
 					GT.PartStats: {
@@ -3173,7 +3173,7 @@
 				{
 					count: 2L
 					id: "31B29F8245043671"
-					item: { Count: 2b, id: "gtceu:steel_gearbox" }
+					item: { Count: 2, id: "gtceu:steel_gearbox" }
 					type: "item"
 				}
 			]

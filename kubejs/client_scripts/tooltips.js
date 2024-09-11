@@ -23,6 +23,12 @@ ItemEvents.tooltip(tooltip => {
     //Microminer Components
     tooltip.add('kubejs:universal_navigator', '§9See You Later, navigator!')
 
+    //Endgame Items
+    tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
+
+    //DML Data Model
+    tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
+
     //DML Matters
     tooltip.add('hostilenetworks:overworld_prediction', '§7Experience per item: 10')
     tooltip.add('hostilenetworks:nether_prediction', '§7Experience per item: 20')

@@ -57,6 +57,9 @@ ServerEvents.recipes(event => {
         .EUt(32)
         .duration(120)
 
+    //Slime ball from plant ball
+    event.smelting('2x minecraft:slime_ball', 'gtceu:plant_ball')
+
     // Infinity Dust Blocks
     comapcting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
     comapcting(event, 'kubejs:compressed_infinity_dust_block', 'kubejs:infinity_dust_block');

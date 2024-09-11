@@ -521,7 +521,7 @@
 				"You can also hide the spacesuit from your playermodel via the cosmetic armor buttons, if you wish."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gcyr:space_helmet"
 				tag: {
 					Damage: 0
@@ -538,7 +538,7 @@
 				{
 					id: "0DFC776179D464C1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gcyr:space_helmet"
 						tag: {
 							Damage: 0
@@ -549,7 +549,7 @@
 				{
 					id: "0399F0828F49C6DF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gcyr:space_chestplate"
 						tag: {
 							Damage: 0
@@ -560,7 +560,7 @@
 				{
 					id: "19B6A6B00F982087"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gcyr:space_leggings"
 						tag: {
 							Damage: 0
@@ -571,7 +571,7 @@
 				{
 					id: "03A19D83B2062391"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gcyr:space_boots"
 						tag: {
 							Damage: 0
@@ -604,7 +604,7 @@
 			tasks: [{
 				id: "1227AEB2B7B46115"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gcyr:id_chip"
 					tag: { }
 				}

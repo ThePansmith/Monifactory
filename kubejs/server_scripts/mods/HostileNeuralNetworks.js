@@ -11,8 +11,6 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(16)
 
-    event.smelting('2x minecraft:slime_ball', 'gtceu:plant_ball')
-
     event.shaped(
         'minecraft:wither_skeleton_skull', [
             "AA ",

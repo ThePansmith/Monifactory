@@ -164,7 +164,7 @@
 			tasks: [{
 				id: "28506753F6FA0755"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -201,7 +201,7 @@
 			]
 			description: ["&aMV Batteries&r function essentially the same as &aLV Batteries&r, only stronger. They also need to be put into an &3MV Machines, MV Battery Buffers&r or &3MV Turbo Chargers&r."]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:mv_lithium_battery"
 				tag: {
 					Charge: 420000L
@@ -266,7 +266,7 @@
 				{
 					id: "738E125A32EE6F95"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -359,7 +359,7 @@
 			tasks: [{
 				id: "6B2421DDCE5F8C75"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -975,7 +975,7 @@
 				{
 					id: "547F553BA6D87D63"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
@@ -1632,7 +1632,7 @@
 			tasks: [{
 				id: "45EF5902181733A9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1749,7 +1749,7 @@
 			tasks: [{
 				id: "036F1F8553EEC984"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1849,7 +1849,7 @@
 			tasks: [{
 				id: "472DBFA310FC29D0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1943,7 +1943,7 @@
 			tasks: [{
 				id: "1A2DC6E313694249"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "enderio:staff_of_travelling"
 					tag: {
 						Energy: {
@@ -2062,7 +2062,7 @@
 			tasks: [{
 				id: "3959B38E4D99E1BC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:energetic"
@@ -2109,7 +2109,7 @@
 			tasks: [{
 				id: "78EEFDF0D1B695A3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:electrical_steel"
