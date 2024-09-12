@@ -86,7 +86,7 @@
     "description": "Monifactory Default Gen",
     "multi_max_z": 2,
     "spawnSphere": "",
-    "forceSpawnInBuilding": true,
+    "forceSpawnInBuilding": false,
     "terrainFixUpperMinOffset": -1,
     "highwayDistanceMask": 7,
     "terrainFixUpperMaxOffset": 1,
