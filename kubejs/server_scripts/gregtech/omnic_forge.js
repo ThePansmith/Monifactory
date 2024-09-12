@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         .EUt(65520)
     
     event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_casing')
-        .itemInputs('gtceu:uiv_machine_hull', '2x kubejs:cryococcus_fusion_coil', '12x gtceu:cryococcus_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uev_field_generator')
+        .itemInputs('gtceu:uhv_machine_hull', '2x kubejs:cryococcus_fusion_coil', '12x gtceu:cryococcus_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uhv_field_generator')
         .itemOutputs('4x kubejs:cryococcus_fusion_casing')
         .duration(2000)
         .EUt(65520)
