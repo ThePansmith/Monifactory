@@ -3201,7 +3201,7 @@
 				{
 					count: 2L
 					id: "31B29F8245043671"
-					item: "gtceu:steel_gearbox"
+					item: { Count: 2, id: "gtceu:steel_gearbox" }
 					type: "item"
 				}
 			]
