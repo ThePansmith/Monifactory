@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.alloy_blast_smelter("kubejs:conductive_alloy_fluid")
+    event.recipes.gtceu.alloy_blast_smelter("kubejs:conductive_alloy_abs")
         .itemInputs('#forge:dusts/iron', '#forge:dusts/redstone')
         .outputFluids(Fluid.of('gtceu:conductive_alloy', 288))
         .duration(112)
@@ -220,13 +220,46 @@ ServerEvents.recipes(event => {
         .circuit(2)
         .blastFurnaceTemp(1400)
 
-    // soularium
-    event.recipes.gtceu.alloy_blast_smelter('kubejs:soularium_fluid')
+    event.recipes.gtceu.alloy_blast_smelter('kubejs:soularium_abs')
         .itemInputs('#forge:dusts/gold', 'soul_sand')
 		.circuit(2)
         .outputFluids(Fluid.of('gtceu:soularium', 144))
         .duration(90) // 4.5s
         .EUt(16)
+        .blastFurnaceTemp(1200)
+
+    //Black steel recipes. Has both regular & advanced recipe, each with a noble gas version.
+    event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel'})
+    event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel_gas'})
+    event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel')
+        .itemInputs('3x #forge:dusts/steel', '2x #forge:dusts/black_bronze', '2x gtceu:void_gem', '2x gtceu:coal_perfect')
+		.circuit(3)
+        .outputFluids(Fluid.of('gtceu:black_steel', 1296))
+        .duration(2880) // 144s
+        .EUt(120)
+        .blastFurnaceTemp(1200)
+    event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_gas')
+        .itemInputs('3x #forge:dusts/steel', '2x #forge:dusts/black_bronze', '2x gtceu:void_gem', '2x gtceu:coal_perfect')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 9000))
+        .circuit(13)
+        .outputFluids(Fluid.of('gtceu:black_steel', 1296))
+        .duration(1929) // 96.45s
+        .EUt(120)
+        .blastFurnaceTemp(1200)
+    event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_alternate')
+    .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coal_perfect')
+		.circuit(3)
+        .outputFluids(Fluid.of('gtceu:black_steel', 6480))
+        .duration(14400) // 720s
+        .EUt(240)
+        .blastFurnaceTemp(1200)
+    event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_alternate_gas')
+    .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coal_perfect')
+		.inputFluids(Fluid.of('gtceu:nitrogen', 9000))
+        .circuit(13)
+        .outputFluids(Fluid.of('gtceu:black_steel', 6480))
+        .duration(9645) // 482.25s
+        .EUt(240)
         .blastFurnaceTemp(1200)
 
     // End Steel
@@ -236,8 +269,7 @@ ServerEvents.recipes(event => {
         .duration(260)
         .EUt(120)
 
-
-	// moni ceu 1.7 normal
+	//Dark Soularium recipe (Requires Tritium!)
 	event.recipes.gtceu.electric_blast_furnace('kubejs:dark_soularium_ingot')
 		.itemInputs('#forge:ingots/soularium', '#forge:ingots/dark_steel')
 		.inputFluids(Fluid.of('gtceu:tritium', 1000))
