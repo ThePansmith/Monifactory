@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
 	alloySmeltingVariant(
 		['#forge:ingots/iron', '#forge:dusts/iron'],
 		['#forge:dusts/redstone'],
-		'gtceu:conductive_alloy_ingot', 7.5, 16);
+		'2x gtceu:conductive_alloy_ingot', 7.5, 16);
 
 	alloySmeltingVariant(
 		['#forge:ingots/iron', '#forge:dusts/iron'],
@@ -95,6 +95,11 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:mixer/black_steel" })
 
 	event.shapeless('gtceu:conductive_alloy_dust', ['#forge:dusts/iron', '#forge:dusts/redstone']).id('kubejs:conductive_alloy_dust_handcraft')
+    event.recipes.gtceu.mixer("kubejs:conductive_alloy_dust")
+        .itemInputs('#forge:dusts/iron', '#forge:dusts/redstone')
+        .itemOutputs('2x gtceu:conductive_alloy_dust')
+        .duration(40)
+        .EUt(30)
 
     event.recipes.gtceu.mixer("kubejs:black_steel_dust")
         .itemInputs('3x #forge:dusts/steel', '2x #forge:dusts/black_bronze', '2x gtceu:void_gem', '2x gtceu:coal_perfect')
@@ -110,13 +115,13 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer("kubejs:vibrant_alloy_dust")
         .itemInputs('#forge:dusts/energetic_alloy', '#forge:dusts/ender_pearl')
-        .itemOutputs('gtceu:vibrant_alloy_dust')
+        .itemOutputs('2x gtceu:vibrant_alloy_dust')
         .duration(260)
         .EUt(30)
 
     event.recipes.gtceu.mixer("kubejs:energetic_alloy_dust")
         .itemInputs('2x #forge:dusts/gold', '#forge:dusts/redstone', '#forge:dusts/glowstone')
-        .itemOutputs('2x gtceu:energetic_alloy_dust')
+        .itemOutputs('4x gtceu:energetic_alloy_dust')
         .duration(140)
         .EUt(30)
 
@@ -209,47 +214,13 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_blast_smelter("kubejs:conductive_alloy_fluid")
         .itemInputs('#forge:dusts/iron', '#forge:dusts/redstone')
-        .outputFluids(Fluid.of('gtceu:conductive_alloy', 144))
+        .outputFluids(Fluid.of('gtceu:conductive_alloy', 288))
         .duration(112)
         .EUt(16)
         .circuit(2)
         .blastFurnaceTemp(1400)
 
-    event.recipes.gtceu.alloy_blast_smelter("kubejs:energetic_alloy_fluid")
-        .itemInputs('2x gtceu:gold_dust', '#forge:dusts/redstone', 'minecraft:glowstone_dust')
-        .outputFluids(Fluid.of('gtceu:energetic_alloy', 576))
-        .duration(1200)
-        .EUt(120)
-        .circuit(3)
-        .blastFurnaceTemp(1250)
-
-    event.recipes.gtceu.alloy_blast_smelter("kubejs:energetic_alloy_fluid_from_gold_dust")
-        .itemInputs('2x gtceu:gold_dust', '#forge:dusts/redstone', 'minecraft:glowstone_dust')
-        .inputFluids(Fluid.of('gtceu:nitrogen', 4000))
-        .outputFluids(Fluid.of('gtceu:energetic_alloy', 576))
-        .duration(804)
-        .EUt(120)
-        .circuit(13)
-        .blastFurnaceTemp(1250)
-
-    event.recipes.gtceu.alloy_blast_smelter("kubejs:vibrant_alloy_fluid")
-        .itemInputs('gtceu:energetic_alloy_dust', 'gtceu:ender_pearl_dust')
-        .outputFluids(Fluid.of('gtceu:vibrant_alloy', 288))
-        .duration(600) // 30s
-        .EUt(120)
-        .circuit(2)
-        .blastFurnaceTemp(1350)
-
-    event.recipes.gtceu.alloy_blast_smelter("kubejs:vibrant_alloy_fluid_from_energetic_dust")
-        .itemInputs('gtceu:energetic_alloy_dust', 'gtceu:ender_pearl_dust')
-        .inputFluids(Fluid.of('gtceu:nitrogen', 2000))
-        .outputFluids(Fluid.of('gtceu:vibrant_alloy', 288))
-        .duration(402) // 20.1s
-        .EUt(120)
-        .circuit(12)
-        .blastFurnaceTemp(1350)
-
-	// soularium
+    // soularium
     event.recipes.gtceu.alloy_blast_smelter('kubejs:soularium_fluid')
         .itemInputs('#forge:dusts/gold', 'soul_sand')
 		.circuit(2)
