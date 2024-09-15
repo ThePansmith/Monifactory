@@ -100,7 +100,7 @@
 	#Range: > 0
 	autoCrafterInsertPowerRate = 100
 	#Should the Flux Crafter be enabled?
-	enabled = false
+	enabled = true
 	#Should the Auto Flux Crafter be enabled?
 	autoCrafterEnabled = true
 
