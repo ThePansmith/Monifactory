@@ -915,10 +915,10 @@ ServerEvents.recipes(event => {
         .EUt(15)
 
     //Parallel Implosion Compressor
-    event.recipes.gtceu.assembly_line('gtceu:assembly_line/compression_imploder')
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/implosion_collider')
         .itemInputs('4x enderio:reinforced_obsidian_block','2x #gtceu:circuits/zpm','gtceu:solid_machine_casing','3x gtceu:niobium_nitride_double_cable', '2x gtceu:zpm_electric_piston')
         .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:osmium 1152')
-        .itemOutputs('gtceu:compression_imploder')
+        .itemOutputs('gtceu:implosion_collider')
         .duration(900)
         .EUt(32000)
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:implosion_compressor').EUt(6000).duration(1800))
