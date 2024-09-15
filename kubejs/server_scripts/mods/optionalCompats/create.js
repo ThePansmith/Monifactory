@@ -203,7 +203,7 @@ if (Platform.isLoaded('create')) {
 			)
 			event.recipes.gtceu.assembler('kubejs:createtracks')
 				.itemInputs('3x #create:sleepers', "2x minecraft:iron_nugget")
-				.itemOutputs('create:track')
+				.itemOutputs('2x create:track')
 				.duration(5)
 				.EUt(16)
 		} else {console.log("Steam and Rails is present, letting its compat script handle the track recipes.")}

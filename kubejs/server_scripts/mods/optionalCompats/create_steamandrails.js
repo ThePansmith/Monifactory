@@ -1,7 +1,6 @@
 if (Platform.isLoaded('railways')) {
 	console.log("Create: Steam and Rails found, loading compat scripts...")
 	ServerEvents.tags('item', event => {
-		// Thanks ChatGPT for doing this humdrum task for me :3 https://chatgpt.com/share/3c76171a-b6b6-48a8-a515-7d8fd01c9d8f
 		event.add('kubejs:create_tracks', 'create:track');
 		event.add('kubejs:create_tracks', 'railways:track_oak');
 		event.add('kubejs:create_tracks', 'railways:track_birch');
@@ -19,7 +18,6 @@ if (Platform.isLoaded('railways')) {
 		event.add('kubejs:create_tracks', 'railways:track_cherry');
 		event.add('kubejs:create_tracks', 'railways:track_bamboo');
 		event.add('kubejs:create_tracks', 'railways:track_stripped_bamboo');
-		event.add('kubejs:create_tracks', 'railways:track_create_dd_rubber');
 		event.add('kubejs:create_tracks', 'railways:track_monorail');
 		event.add('kubejs:create_tracks', 'railways:track_create_andesite_wide');
 		event.add('kubejs:create_tracks', 'railways:track_acacia_wide');
@@ -37,7 +35,6 @@ if (Platform.isLoaded('railways')) {
 		event.add('kubejs:create_tracks', 'railways:track_cherry_wide');
 		event.add('kubejs:create_tracks', 'railways:track_bamboo_wide');
 		event.add('kubejs:create_tracks', 'railways:track_stripped_bamboo_wide');
-		event.add('kubejs:create_tracks', 'railways:track_create_dd_rubber_wide');
 		event.add('kubejs:create_tracks', 'railways:track_create_andesite_narrow');
 		event.add('kubejs:create_tracks', 'railways:track_acacia_narrow');
 		event.add('kubejs:create_tracks', 'railways:track_birch_narrow');
@@ -54,7 +51,6 @@ if (Platform.isLoaded('railways')) {
 		event.add('kubejs:create_tracks', 'railways:track_cherry_narrow');
 		event.add('kubejs:create_tracks', 'railways:track_bamboo_narrow');
 		event.add('kubejs:create_tracks', 'railways:track_stripped_bamboo_narrow');
-		event.add('kubejs:create_tracks', 'railways:track_create_dd_rubber_narrow');
 		if (Platform.isLoaded('biomesoplenty')) {
 			event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_dead');
 			event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_fir');
@@ -89,8 +85,6 @@ if (Platform.isLoaded('railways')) {
 		}
 	})
 	ServerEvents.recipes(event => {
-
-		// Tracks. (I am genuinely very proud of this - TheDogOfChaos)
 		event.remove({ output: '#kubejs:create_tracks'})
 		let normalTrackRecipes = function (sleeperItem, outputItem, railItem, outputCount) {
 		/* 	
@@ -173,11 +167,9 @@ if (Platform.isLoaded('railways')) {
 				.duration(5)
 				.EUt(16);
 		};
-
-		// begin the function callening
 		{
 			/* normal tracks */{
-				normalTrackRecipes('#create:sleepers', 'create:track', 'minecraft:iron_nugget', 1);
+				// normalTrackRecipes('#create:sleepers', 'create:track', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:acacia_slab', 'railways:track_acacia', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:birch_slab', 'railways:track_birch', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:dark_oak_slab', 'railways:track_dark_oak', 'minecraft:iron_nugget', 1);
@@ -194,7 +186,6 @@ if (Platform.isLoaded('railways')) {
 				normalTrackRecipes('minecraft:cherry_slab', 'railways:track_cherry', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:bamboo', 'railways:track_bamboo', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:bamboo_slab', 'railways:track_stripped_bamboo', 'minecraft:iron_nugget', 1);
-				normalTrackRecipes('gtceu:rubber_slab', 'railways:track_create_dd_rubber', 'gtceu:copper_nugget', 1);
 				normalTrackRecipes('create:metal_bracket', 'railways:track_monorail', '#forge:plates/iron', 6)
 			}
 			/* wide tracks */{
@@ -214,7 +205,6 @@ if (Platform.isLoaded('railways')) {
 				wideTrackRecipes('railways:track_cherry', 'minecraft:cherry_slab', 'railways:track_cherry_wide', 1);
 				wideTrackRecipes('railways:track_bamboo', 'minecraft:bamboo', 'railways:track_bamboo_wide', 1);
 				wideTrackRecipes('railways:track_stripped_bamboo', 'minecraft:bamboo_slab', 'railways:track_stripped_bamboo_wide', 1);
-				wideTrackRecipes('railways:track_create_dd_rubber', 'gtceu:rubber_slab', 'railways:track_create_dd_rubber_wide', 1);
 			}
 			/* narrow tracks */{
 				narrowTrackRecipes('create:track', 'railways:track_create_andesite_narrow', 'minecraft:stone_slab', 1);
@@ -233,7 +223,6 @@ if (Platform.isLoaded('railways')) {
 				narrowTrackRecipes('railways:track_cherry', 'railways:track_cherry_narrow', 'minecraft:cherry_slab', 1);
 				narrowTrackRecipes('railways:track_bamboo', 'railways:track_bamboo_narrow', 'minecraft:bamboo', 1);
 				narrowTrackRecipes('railways:track_stripped_bamboo', 'railways:track_stripped_bamboo_narrow', 'minecraft:bamboo_slab', 1);
-				narrowTrackRecipes('railways:track_create_dd_rubber', 'railways:track_create_dd_rubber_narrow', 'gtceu:rubber_slab', 1);
 			}
 
 			if (Platform.isLoaded('biomesoplenty')) { // fuck it, we BoP
