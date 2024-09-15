@@ -1,5 +1,5 @@
 if (Platform.isLoaded('computercraft')) {
-    console.log("computercraft tweaked found and scripts loaded")
+    console.log("Computercraft Tweaked found, loading compat scripts...")
     ServerEvents.recipes(event => {
 
         //Nomral Computer
@@ -208,5 +208,5 @@ if (Platform.isLoaded('computercraft')) {
 
         })
     })
-}
-else { console.log("computercraft tweaked not found") }
+    console.log("Computercraft Tweaked compat scripts successfully loaded!")
+} else { console.log("Computercraft Tweaked not found, skipping its compat scripts.") }

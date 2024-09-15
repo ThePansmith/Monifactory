@@ -76,6 +76,7 @@ ServerEvents.recipes(event => {
     Greenhouse('minecraft', 'warped_fungus', 1280, ['64x minecraft:warped_stem', '32x minecraft:warped_wart_block', '16x minecraft:shroomlight'], 4)
     Greenhouse('minecraft', 'crimson_fungus', 1280, ['64x minecraft:crimson_stem', '32x minecraft:nether_wart_block', '16x minecraft:shroomlight'], 4)
 
+
     ////// Crops //////
     Greenhouse('minecraft', 'sugar_cane', 640, ['32x minecraft:sugar_cane'], 0)
     //TODO: Increase water requirement for Kelp
@@ -96,30 +97,7 @@ ServerEvents.recipes(event => {
     Greenhouse('minecraft', 'red_mushroom', 640, ['16x minecraft:red_mushroom'], 0)
     Greenhouse('minecraft', 'brown_mushroom', 640, ['16x minecraft:brown_mushroom'], 0)
 
-    ////// Thermal Expansion Crops //////
-    let TECrops = [
-        'amaranth',
-        'barley',
-        'corn',
-        'flax',
-        'onion',
-        'radish',
-        'rice',
-        'sadiroot',
-        'spinach',
-        'bell_pepper',
-        'eggplant',
-        'green_bean',
-        'peanut',
-        'strawberry',
-        'tomato'
-    ]
-    TECrops.forEach(crop => {
-        Greenhouse('thermal', `${crop}_seeds`, 640, [`32x thermal:${crop}`], 0)
-    })
-    //Reduced output for Frost Melon
-    Greenhouse('thermal', 'frost_melon_seeds', 640, ['16x thermal:frost_melon'], 0)
-
+    
     ////// Flowers & Cosmetic Blocks //////
     let flowers = [
         'wither_rose',

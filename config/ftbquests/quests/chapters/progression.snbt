@@ -75,7 +75,7 @@
 			tasks: [{
 				id: "6DFE042FD9FCC8D1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "gtceu:circuits/lv"
@@ -110,7 +110,7 @@
 			tasks: [{
 				id: "51CD461474675310"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "gtceu:circuits/mv"
@@ -145,7 +145,7 @@
 			tasks: [{
 				id: "75DC170D1A2B3236"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "gtceu:circuits/hv"
@@ -180,7 +180,7 @@
 			tasks: [{
 				id: "53B9C726DD479B51"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "gtceu:circuits/ev"
@@ -211,7 +211,7 @@
 			tasks: [{
 				id: "4FBA73EEA5437DC6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "gtceu:circuits/iv"
@@ -246,7 +246,7 @@
 			tasks: [{
 				id: "42DE11F1A04B0B97"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "gtceu:circuits/luv"
@@ -274,7 +274,7 @@
 			tasks: [{
 				id: "29F9B9784EDCAC70"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "gtceu:circuits/zpm"
@@ -301,7 +301,7 @@
 			tasks: [{
 				id: "5D3D61A04CC17374"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "gtceu:circuits/uv"
@@ -322,7 +322,7 @@
 			tasks: [{
 				id: "23886E0727C34288"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "gtceu:circuits/uhv"
@@ -356,7 +356,7 @@
 			tasks: [{
 				id: "028CED757315461B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -454,7 +454,7 @@
 			]
 			description: ["Carry &oeven more&r stuff."]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "sophisticatedbackpacks:iron_backpack"
 				tag: {
 					contentsUuid: [I;
@@ -471,7 +471,7 @@
 			tasks: [{
 				id: "7F9D573211B5B2FB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:iron_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -502,7 +502,7 @@
 			tasks: [{
 				id: "7AE450006E9274BE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:gold_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -533,7 +533,7 @@
 			tasks: [{
 				id: "76D574F61E10C5A2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "sophisticatedbackpacks:diamond_backpack"
 					tag: {
 						contentsUuid: [I;
@@ -1239,7 +1239,7 @@
 			tasks: [{
 				id: "0AEBB08D9E593A5B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:leadstone"
@@ -1262,7 +1262,7 @@
 			tasks: [{
 				id: "31C521D0A2BB2C03"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:conductive_iron"
@@ -1284,7 +1284,7 @@
 			tasks: [{
 				id: "201BBD5AAF78AE0C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:electrical_steel"
@@ -1313,7 +1313,7 @@
 			tasks: [{
 				id: "7F66940735049C04"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:energetic"
@@ -1337,7 +1337,7 @@
 			tasks: [{
 				id: "60D1C9D97E874348"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:hardened"
@@ -1360,7 +1360,7 @@
 			tasks: [{
 				id: "25694A15F26F5483"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:reinforced"
@@ -1382,7 +1382,7 @@
 			tasks: [{
 				id: "47722FD59AD2C4E3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:vibrant"
@@ -1428,7 +1428,7 @@
 			tasks: [{
 				id: "798E10A74B24D6B4"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:dark_soularium"
@@ -1746,13 +1746,13 @@
 				{
 					count: 2L
 					id: "13A372F129FDA834"
-					item: { Count: 2b, id: "gtceu:resistor" }
+					item: { Count: 2, id: "gtceu:resistor" }
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "5C0032543C33E7C4"
-					item: { Count: 2b, id: "gtceu:vacuum_tube" }
+					item: { Count: 2, id: "gtceu:vacuum_tube" }
 					type: "item"
 				}
 				{

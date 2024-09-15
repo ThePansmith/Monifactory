@@ -170,7 +170,7 @@
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: { Count: 4b, id: "kubejs:hadal_energy_core" }
+				item: { Count: 4, id: "kubejs:hadal_energy_core" }
 				type: "item"
 			}]
 			title: "Hadal Cores"
@@ -341,25 +341,25 @@
 				{
 					count: 26L
 					id: "53593263F0B2BD34"
-					item: { Count: 26b, id: "gtceu:omnium_block" }
+					item: { Count: 26, id: "gtceu:omnium_block" }
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "287AEC44CC7A8A38"
-					item: { Count: 18b, id: "gtceu:vibration_safe_casing" }
+					item: { Count: 18, id: "gtceu:vibration_safe_casing" }
 					type: "item"
 				}
 				{
 					count: 13L
 					id: "11FAD5991B3199F5"
-					item: { Count: 13b, id: "gtceu:enderium_block" }
+					item: { Count: 13, id: "gtceu:enderium_block" }
 					type: "item"
 				}
 				{
 					count: 17L
 					id: "081CB54FA393231E"
-					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
+					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
 			]
@@ -497,7 +497,7 @@
 				{
 					count: 17L
 					id: "77269C9328705964"
-					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
+					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
 			]
@@ -1063,6 +1063,67 @@
 			}]
 			x: 45.75d
 			y: -18.0d
+		}
+		{
+			dependencies: ["113E9543ADB1666B"]
+			description: [
+				"The &9Cryococcal Reverberator&r is a means of using &6Cryococcus&r to convert matter directly into energy more efficiently than any other means."
+				""
+				"It only works with a handful of highly energy-dense items and consumes a wealth of &6Cryococcus,&r so you'll need to find a way to produce these consistently and in bulk."
+				""
+				"If you manage to accomplish this, you'll be awarded with up to &a64A UIV&r while avoiding the explosive risk of &elarge spheres of superheated dragon metal.&r"
+			]
+			icon: "gtceu:cryococcal_reverberator"
+			id: "25A7BC39C30139DA"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "WARNING: Recipes subject to change!"
+			tasks: [
+				{
+					id: "009824CA79D811CC"
+					item: "gtceu:cryococcal_reverberator"
+					type: "item"
+				}
+				{
+					count: 152L
+					id: "13BFBC913CC929D9"
+					item: { Count: 152, id: "gtceu:naquadah_alloy_frame" }
+					type: "item"
+				}
+				{
+					count: 1000L
+					id: "22523AC6932FC851"
+					item: { Count: 1000, id: "gtceu:atomic_casing" }
+					type: "item"
+				}
+				{
+					count: 52L
+					id: "7B8B5E74E7A5C1A0"
+					item: { Count: 52, id: "kubejs:cryococcus_fusion_coil" }
+					type: "item"
+				}
+				{
+					count: 124L
+					id: "1FFF2FDB7B3FE718"
+					item: { Count: 124, id: "kubejs:cryococcus_fusion_casing" }
+					type: "item"
+				}
+				{
+					count: 88L
+					id: "5EFC3A7D1AA28C88"
+					item: { Count: 88, id: "kubejs:cryococcus_casing" }
+					type: "item"
+				}
+				{
+					count: 380L
+					id: "31FC71C05028D375"
+					item: { Count: 380, id: "kubejs:cryolobus_casing" }
+					type: "item"
+				}
+			]
+			title: "Cryococcal Reverberator"
+			x: 33.5d
+			y: -8.75d
 		}
 	]
 	title: "End Game"

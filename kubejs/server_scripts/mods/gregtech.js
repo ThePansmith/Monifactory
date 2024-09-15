@@ -107,38 +107,6 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(16)
 
-    //IMPOSSIBLE REALM DATA
-    event.shaped(
-        'kubejs:impossible_realm_data', [
-            'ABA',
-            'BAB',
-            'ABA'
-        ], {
-            A: 'hostilenetworks:overworld_prediction',
-            B: 'kubejs:solidified_experience'
-        }
-    )
-    event.shaped(
-        '2x kubejs:impossible_realm_data', [
-            'ABA',
-            'BAB',
-            'ABA'
-        ], {
-            A: 'hostilenetworks:nether_prediction',
-            B: 'kubejs:solidified_experience'
-        }
-    )
-    event.shaped(
-        '4x kubejs:impossible_realm_data', [
-            'ABA',
-            'BAB',
-            'ABA'
-        ], {
-            A: 'hostilenetworks:end_prediction',
-            B: 'kubejs:solidified_experience'
-        }
-    )
-
     //NETHER STAR RECIPES
     event.remove({ id: "hostilenetworks:living_matter/extraterrestrial/nether_star" })
     event.remove({ id: "gtceu:implosion_compressor/implodedust_nether_star_tnt" })
@@ -184,47 +152,6 @@ ServerEvents.recipes(event => {
         ], {
             A: 'minecraft:diamond',
             B: 'kubejs:moon_dust'
-        }
-    )
-
-    event.recipes.gtceu.extractor('extract_quantum_flux')
-        .itemInputs('kubejs:impossible_realm_data')
-        .itemOutputs('kubejs:quantum_flux')
-        .duration(100)
-        .EUt(3000)
-
-
-    //LAIR DATA
-    event.shaped(
-        'kubejs:deep_dark_data', [
-            'ABB',
-            'BBB',
-            'BBB'
-        ], {
-            A: 'kubejs:impossible_realm_data',
-            B: 'hostilenetworks:overworld_prediction'
-        }
-    )
-
-    event.shaped(
-        'kubejs:dragon_lair_data', [
-            'ABB',
-            'BBB',
-            'BBB'
-        ], {
-            A: 'kubejs:impossible_realm_data',
-            B: 'hostilenetworks:end_prediction'
-        }
-    )
-
-    event.shaped(
-        'kubejs:wither_realm_data', [
-            'ABB',
-            'BBB',
-            'BBB'
-        ], {
-            A: 'kubejs:impossible_realm_data',
-            B: 'hostilenetworks:nether_prediction'
         }
     )
 

@@ -124,9 +124,9 @@ ServerEvents.recipes(event => {
 
 	// Vacuum Freezer
 	// kubejs Superconductor Wire
-    event.recipes.gtceu.vacuum_freezer("sculk_superconductor_wire")
-        .itemInputs('gtceu:cryolobus_single_wire')
-        .itemOutputs('gtceu:sculk_superconductor_single_wire')
+    event.recipes.gtceu.vacuum_freezer("sculk_superconductor")
+        .itemInputs('gtceu:cryococcus_ingot')
+        .itemOutputs('gtceu:sculk_superconductor_ingot')
         .inputFluids(Fluid.of('gtceu:nether_star', 144))
         .duration(100)
         .EUt(6000)
