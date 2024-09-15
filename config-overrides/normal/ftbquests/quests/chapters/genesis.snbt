@@ -415,15 +415,44 @@
 						items: [
 							{
 								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "gtceu:steel_tiny_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_small_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_normal_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_large_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_huge_fluid_pipe"
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
 								id: "enderio:pressurized_fluid_conduit"
 							}
 							{
 								Count: 1b
-								id: "gtceu:steel_normal_fluid_pipe"
+								id: "laserio:card_fluid"
 							}
 						]
 					}
 				}
+				title: "Fluid Transport item"
 				type: "item"
 			}]
 			title: "&9Fluid Transport"
