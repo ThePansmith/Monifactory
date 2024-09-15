@@ -2038,56 +2038,6 @@
 			x: 4.517857142857139d
 			y: 1.4285714285714306d
 		}
-		{
-			dependencies: ["2607F8404B56773B"]
-			description: [
-				"&bThermal Expansion&r provides a set of \"spores\" that can be used to produce useful items like &6Gunpowder, Redstone, Glowstone, and Slime.&r There is also one that can be used to produce &6Ender Pearls&r that you will be able to make later."
-				""
-				"After crafting your first batch, they can be duplicated in the &3Phytogenic Insulator&r you made, or more efficiently in a &3Greenhouse.&r"
-				""
-				"Once you have a sufficient number of spores, the excess from each production cycle can be smelted to provide the corresonding product."
-			]
-			icon: "thermal:slime_mushroom_spores"
-			id: "04BA4BC12DFF6581"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "22A7DD752D6384E0"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "thermal:glowstone_mushroom_spores"
-							}
-							{
-								Count: 1b
-								id: "thermal:gunpowder_mushroom_spores"
-							}
-							{
-								Count: 1b
-								id: "thermal:redstone_mushroom_spores"
-							}
-							{
-								Count: 1b
-								id: "thermal:slime_mushroom_spores"
-							}
-							{
-								Count: 1b
-								id: "kubejs:ender_spore"
-							}
-						]
-					}
-				}
-				title: "Any Thermal Spore"
-				type: "item"
-			}]
-			title: "Thermal Spore Production"
-			x: 6.5d
-			y: -5.0d
-		}
 	]
 	title: "The Beginning"
 }

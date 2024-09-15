@@ -1961,40 +1961,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
-			description: [
-				"&bEffortless Building&r is a mod that makes it much easier to build. You can create large platforms or various other shapes in just a few clicks, and even build multiple identical structures at the same time!"
-				""
-				"To use &bEffortless Building&r, start by pressing and holding the &6Alt&r key. This opens a wheel-shaped menu displaying &especial building modes&r. With this menu open, simply move your cursor over the desired building mode and release &6Alt&r. This will select that mode and you can begin building."
-				""
-				"Choose the starting location for your shape by &6right-clicking&r on a blockspace while holding your desired building block. Next, move your cursor to another blockspace to see a preview of the final structure. &6Right-click&r again on the desired ending block to actually build the shape from blocks in your inventory."
-				"{@pagebreak}"
-				"Most shapes are flat and are defined using a starting and ending location, but 3D shapes have a third location to complete the shape. Some special modes also have &eoptions&r, like making a &ehollow cube&r instead of a &efilled cube&r."
-				""
-				"If you made a mistake, you can use the &aUndo&r button in the menu to break the blocks you just placed so you can collect them and try again."
-				""
-				"To change building modes, just open the menu with &6Alt&r as before and pick a different one. To exit the special building modes, select the &eNormal&r mode."
-				""
-				"&cMake sure you return to Normal mode when you're done building shapes, since the special building modes will interfere with normal gameplay.&r"
-				"{@pagebreak}"
-				"The size of shapes you can make in special building modes is limited by your &ereach&r, which is how far away you can click from yourself to start building, or from the previous location to complete a shape. You can craft and eat several tiers of &areach upgrades&r in succession to increase your reach to very high numbers."
-				""
-				"Overall, &bEffortless Building&r is a powerful mod that is very useful for construction. Experiment with it and you'll see how much time it can save you!"
-			]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "effortlessbuilding:reach_upgrade1"
-			id: "0137ECCCD7A11A15"
-			optional: true
-			tasks: [{
-				id: "23ED12507CA3130E"
-				type: "checkmark"
-			}]
-			title: "Effortless Building"
-			x: -10.5d
-			y: 4.0d
-		}
-		{
 			dependencies: ["115D2BEB18929C7C"]
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
@@ -2185,8 +2151,8 @@
 				type: "checkmark"
 			}]
 			title: "Inventory Sorting"
-			x: -9.0d
-			y: 8.5d
+			x: -10.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
