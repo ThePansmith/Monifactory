@@ -1,23 +1,23 @@
 <p align="center"><img src="https://github.com/ThePansmith/Monifactory/assets/70342772/4ac1d5e7-0610-4f44-bfed-b3b2022eecc0" height="250" alt="Logo"></p>
 <h1 align="center">Monifactory</h1>
-<p align="center"><b><i>A Remaster and Port of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and other mods!</i></b></p>
+<p align="center"><b><i>A Remaster and Port of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and other mods</i></b></p>
 <h1 align="center">
     <a href="https://github.com/ThePansmith/Monifactory/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu?style=for-the-badge&logo=github" alt="License"></a>
     <img src="https://img.shields.io/github/actions/workflow/status/ThePansmith/Monifactory/build_pr.yml?branch=main&style=for-the-badge&label=Dev%20Build" alt="GitHub Actions Workflow Status">
     <!-- <a href="https://discord.com/invite/zwQzqP8b6q"><img src="https://img.shields.io/discord/927050775073534012?style=for-the-badge&logo=discord&color=5865F2&labelColor=grey&label=+" alt="Discord"></a> -->
     <br>
-    <a href="https://www.curseforge.com/minecraft/modpacks/Monifactory"><img src="https://cf.way2muchnoise.eu/monifactory.svg?badge_style=for_the_badge" alt="CurseForge"></a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/Monifactory"><img src="https://cf.way2muchnoise.eu/monifactory.svg?badge_style=for_the_badge" alt="CurseForge"></a>F@
     <a href="https://www.curseforge.com/minecraft/modpacks/Monifactory"><img src="https://cf.way2muchnoise.eu/versions/For%20MC_Monifactory_all.svg?badge_style=for_the_badge" alt="MC Versions"></a>
     <a href="https://github.com/ThePansmith/Monifactory/releases"><img src="https://img.shields.io/github/downloads/ThePansmith/Monifactory/total?style=for-the-badge&labelColor=grey&logo=github&label=+" alt="GitHub Downloads"></a>
 </h1>
 
 ## Features
 - [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](https://github.com/ThePansmith/Monifactory/blob/main/CHANGELOG.md)
-- A complete overhaul of post-tank progression!
-- Draconic Evolution and Avaritia have been removed and replaced with new mechanics!
-- A new difficulty mode for returning Nomi CEu Hard Mode players!
-- A retexturing of everything to fit the modern style!
-- Optional compatibility with various mods, such as Create!
+- A complete overhaul of post-tank progression
+- Draconic Evolution and Avaritia have been removed and replaced with new mechanics
+- A new difficulty mode for returning Nomi CEu Hard Mode players
+- A retexturing of everything to fit the modern style
+- Optional compatibility with various mods, such as Create
 
 ## Credits
 - Original pack by [Exaxxion](https://github.com/Exaxxion).
@@ -29,24 +29,24 @@
 Thank you!
 
 ## Hard/Harder Mode
-Is Monifactory not Greggy enough for you? Or do you simply want a challenge? Try Hard Mode! (or even Harder Mode, if you're not faint of heart!)
+Is Monifactory not Greggy enough for you? Or do you simply want a challenge? Try Hard Mode (or even Harder Mode, if you're not faint of heart!)
 
 Highlights include:
 
-- Forced Peaceful Mode!
-- The Steam Age!
-- No Hostile Neural Networks for easy infinite resources!
-- Monicoins can't be spent!
-- More focus on GregTech Power Generation!
-- No Creative Tank; instead, use Stabilized Micro Miners for late-game infinite resources!
+- Forced Peaceful Mode
+- The Steam Age
+- No Hostile Neural Networks for easy infinite resources
+- Monicoins can't be spent
+- More focus on GregTech Power Generation
+- No Creative Tank; instead, use Stabilized Micro Miners for late-game infinite resources
 
 Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 
-- Disabling RF -> EU conversion, making GT power generation your only option!
-- Removing EnderIO and LaserIO's ttem and fluid transportation options!
+- Disabling RF -> EU conversion, making GT power generation your only option
+- Removing EnderIO and LaserIO's ttem and fluid transportation options
 - Bringing back GT5u machine explosions
-- Pollution and hazards!
-- Various other nerfs!
+- Pollution and hazards
+- Various other nerfs
 
 ## Installation:
 
