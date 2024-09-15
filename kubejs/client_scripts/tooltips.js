@@ -87,6 +87,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.subatomic_digital_assembler.desc'))
     tooltip.add('gtceu:quintessence_infuser', Text.translatable('gtceu.quintessence_infuser.desc'))
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.actualization_chamber.desc'))
+    tooltip.add('gtceu:implosion_collider', Text.translatable('gtceu.implosion_collider.desc'))
 
     tooltip.addAdvanced('gtceu:universal_crystallizer', (item, adv, text) => {
         text.add(1, Text.darkGray('An immense device, capable of turning raw materials into complex matters'))
@@ -109,7 +110,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:quintessence_infuser'], 'Can parallelize with Parallel Control Hatches.')
+    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:quintessence_infuser', 'gtceu:implosion_collider'], 'Can parallelize with Parallel Control Hatches.')
 
     //Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')

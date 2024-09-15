@@ -730,7 +730,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
     //Compression Imploder
-    event.create('compression_imploder', 'multiblock')
+    event.create('implosion_collider', 'multiblock')
     .rotationState(RotationState.NON_Y_AXIS)
     .recipeTypes('implosion_compressor')
     .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
