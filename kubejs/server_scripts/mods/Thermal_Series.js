@@ -527,6 +527,25 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(16);
 
+    // Thermal Mobdrops (for HM nether star recipe mostly)
+    event.recipes.gtceu.compressor('blitz_rod')
+        .itemInputs('4x thermal:blitz_powder')
+        .itemOutputs('thermal:blitz_rod')
+        .duration(200)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('blizz_rod')
+        .itemInputs('4x thermal:blizz_powder')
+        .itemOutputs('thermal:blizz_rod')
+        .duration(200)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('basalz_rod')
+        .itemInputs('4x thermal:basalz_powder')
+        .itemOutputs('thermal:basalz_rod')
+        .duration(200)
+        .EUt(2)
+
     // Devices
     event.remove({ type: "thermal:rock_gen", not: { output: "minecraft:cobblestone" } })
 
