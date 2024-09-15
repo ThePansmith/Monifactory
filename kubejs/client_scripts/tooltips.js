@@ -26,6 +26,9 @@ ItemEvents.tooltip(tooltip => {
     //Endgame Items
     tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
 
+    //DML Data Model
+    tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
+    
     //DML Matters
     tooltip.add('hostilenetworks:overworld_prediction', '§7Experience per item: 10')
     tooltip.add('hostilenetworks:nether_prediction', '§7Experience per item: 20')
@@ -49,8 +52,8 @@ ItemEvents.tooltip(tooltip => {
 
     // Fix gtceu text
     tooltip.addAdvanced(['gtceu:creative_energy', 'gtceu:creative_tank', 'gtceu:creative_chest', 'gtceu:creative_data_access_hatch'], (item, adv, text) => {
-        text.remove(2);
         text.remove(1);
+        text.remove(2);
         text.add(Text.join(Text.translatable('gtceu.creative_tooltip.1'), rainbowify(Text.translatable('gtceu.creative_tooltip.2').getString(), Math.round(Client.lastNanoTime / 100000000)), Text.translatable('gtceu.creative_tooltip.3')))
     });
 
@@ -102,6 +105,9 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
+    tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
+    tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
+
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
     tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:quintessence_infuser'], 'Can parallelize with Parallel Control Hatches.')
 
@@ -123,9 +129,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
     tooltip.add('gtceu:terminal', 'Can autobuild multiblocks by shift-rightclicking a controller.')
-    tooltip.addAdvanced(['utilitarian:redstone_clock'], (item, adv, text) => {
-        text.add(2, Text.gold('Can be locked by incoming redstone signals, place above redstone dust or use a repeater.'))
-    })
 
 
     // NuclearCraft tooltips

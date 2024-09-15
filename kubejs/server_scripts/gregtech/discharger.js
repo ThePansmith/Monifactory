@@ -21,14 +21,6 @@ ServerEvents.recipes(event => {
         .circuit(6)
         .EUt(16)
 
-    event.recipes.gtceu.assembler('kubejs:cryococcus_casing')
-        .itemInputs('6x gtceu:cryococcus_plate', 'gtceu:cryococcus_frame')
-        .itemOutputs('2x kubejs:cryococcus_casing')
-        .duration(50)
-        .circuit(6)
-        .EUt(16)
-
-
 
     function Discharge(id, output, input, refund) {
         event.recipes.gtceu.discharger(`kubejs:${id}`)

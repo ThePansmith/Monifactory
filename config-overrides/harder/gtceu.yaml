@@ -267,6 +267,75 @@ machines:
   # Default: false
   orderedAssemblyLineFluids: false
 
+  # Let Dual Hatch has more ability.
+  # When enabled it, Dual Hatch will can used to assemble line and so on.
+  # Need restart Minecraft to apply.
+  enableMoreDualHatchAbility: false
+
+  # Small Steam Boiler Options
+  smallBoilers:
+    # The amount of steam a Steam Solid Boiler produces per second at max temperature.
+    # Default: 120
+    solidBoilerBaseOutput: 120
+
+    # The amount of steam a High Pressure Steam Solid Boiler produces per second at max temperature.
+    # Default: 300
+    hpSolidBoilerBaseOutput: 300
+
+    # The amount of steam a Steam Liquid Boiler produces per second at max temperature.
+    # Default: 240
+    liquidBoilerBaseOutput: 240
+
+    # The amount of steam a High Pressure Steam Liquid Boiler produces per second at max temperature.
+    # Default: 600
+    hpLiquidBoilerBaseOutput: 600
+
+    # The amount of steam a Steam Solar Boiler produces per second at max temperature.
+    # Default: 120
+    solarBoilerBaseOutput: 120
+
+    # The amount of steam a High Pressure Steam Solar Boiler produces per second at max temperature.
+    # Default: 360
+    hpSolarBoilerBaseOutput: 360
+
+  # Large Steam Boiler Options
+  largeBoilers:
+    # The conversion rate between water and steam in Large Boilers.
+    # Default: 160
+    steamPerWater: 160
+
+    # The max temperature of the Large Bronze Boiler.
+    # Default: 800
+    bronzeBoilerMaxTemperature: 800
+
+    # The heat speed of the Large Bronze Boiler.
+    # Default: 1
+    bronzeBoilerHeatSpeed: 1
+
+    # The max temperature of the Large Steel Boiler.
+    # Default: 1800
+    steelBoilerMaxTemperature: 1800
+
+    # The heat speed of the Large Steel Boiler.
+    # Default: 1
+    steelBoilerHeatSpeed: 1
+
+    # The max temperature of the Large Titanium Boiler.
+    # Default: 3200
+    titaniumBoilerMaxTemperature: 3200
+
+    # The heat speed of the Large Titanium Boiler.
+    # Default: 1
+    titaniumBoilerHeatSpeed: 1
+
+    # The max temperature of the Large Tungstensteel Boiler.
+    # Default: 6400
+    tungstensteelBoilerMaxTemperature: 6400
+
+    # The heat speed of the Large Tungstensteel Boiler.
+    # Default: 2
+    tungstensteelBoilerHeatSpeed: 2
+
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true

@@ -384,7 +384,7 @@
 			tasks: [{
 				id: "10CF79220AE28192"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ae2:memory_card"
 					tag: { }
 				}
@@ -456,7 +456,7 @@
 			tasks: [{
 				id: "1FE9B2CBA70D22B9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "expatternprovider:extended_pattern_provider"
@@ -498,7 +498,7 @@
 			tasks: [{
 				id: "24069DF90AE106FD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "ae2:pattern_provider"
@@ -609,7 +609,7 @@
 				"If you've opted to enable channels in your AE2 configs, you will innately have some energy storage from the &3ME Controller&r, but we assume you know what you're doing at that point. &eAE2 Channels mechanics are outside the scope of the quest book, and this is the only time it will be mentioned."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ae2:energy_cell"
 				tag: { }
 			}
@@ -618,7 +618,7 @@
 			tasks: [{
 				id: "714C125E0ED99334"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -656,7 +656,7 @@
 				"The &64k ME Storage Cell&r is the next size up. With four times the bytes it holds substantially more items per type, but it requires a more advanced technology than you currently have available: AE &6Processors&r made in an &3Inscriber&r."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ae2:item_storage_cell_1k"
 				tag: { }
 			}
@@ -672,7 +672,7 @@
 			tasks: [{
 				id: "631B9DD6D42ECBE4"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -856,7 +856,7 @@
 			tasks: [{
 				id: "564AFB42CC6805FF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1101,7 +1101,7 @@
 				{
 					id: "4EFDB9B627864D5D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "expatternprovider:infinity_cell"
 						tag: {
 							record: {
@@ -1115,7 +1115,7 @@
 				{
 					id: "215932AC4E4A4995"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "expatternprovider:infinity_cell"
 						tag: {
 							record: {
@@ -1170,7 +1170,7 @@
 				{
 					id: "3EBBAF2494BBA8A8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -1224,7 +1224,7 @@
 			tasks: [{
 				id: "713C7B1C67D4771E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "ae2:interface"
@@ -1251,7 +1251,7 @@
 			tasks: [{
 				id: "53C8B8B483EF6121"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "expatternprovider:extended_interface"
@@ -1388,7 +1388,7 @@
 			tasks: [{
 				id: "75CE8F67A574D433"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "betterp2p:advanced_memory_card"
 					tag: {
 						gui: 3b

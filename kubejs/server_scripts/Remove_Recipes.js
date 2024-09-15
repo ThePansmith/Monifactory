@@ -102,9 +102,7 @@ ServerEvents.recipes(event => {
     // Posttank stuff
     event.remove({ id: /gtceu:uxv/ })
     event.remove({ id: /gtceu:opv/ })
-
-    // LaserIO
-    event.remove({ output: ['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'] })
+    event.remove({ id: 'gtceu:shaped/max_machine_hull'})
 
     //Default Fluxed Electrum recipe (Redstone Arsenal)
     event.remove({ id: 'redstone_arsenal:materials/flux_dust'})

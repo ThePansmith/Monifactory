@@ -12,6 +12,7 @@
 !/.github
 !.editorconfig
 !/pack-mode-switcher*
+!/FAQ.md
 
 !/mods/systeams*
 !/mods/ExtendedCrafting*
@@ -54,6 +55,7 @@ config/embeddium++.toml
 config/emi.css
 config\darkmodeeverywhereshaders.json
 config\darkmodeeverywhereshaders.toml
+config/ichunutil/themes
 /config/**/*client.*
 !/config/**/darkmodeeverywhere-client.toml
 

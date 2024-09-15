@@ -233,7 +233,7 @@
 				{
 					id: "42F1327485BA2D3A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:input_bus"
@@ -649,7 +649,7 @@
 			rewards: [{
 				id: "12C3AFEE397AB67E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "trofers:large_pillar"
 					tag: {
 						BlockEntityTag: {
@@ -1485,7 +1485,7 @@
 				{
 					id: "5DDE0D9210D6C69A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
@@ -1694,7 +1694,7 @@
 					count: 2L
 					id: "696B8CE2A4872407"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:input_hatch"
@@ -1706,7 +1706,7 @@
 				{
 					id: "3901C623BB44467A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:output_hatch"
@@ -2075,7 +2075,7 @@
 				{
 					id: "6F66A7A256F1CDF0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
@@ -2599,7 +2599,7 @@
 				{
 					id: "5B267E479790306D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:storage_blocks/omnium"
@@ -2660,11 +2660,10 @@
 			tasks: [{
 				id: "373620DA46014CE2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:dark_soularium"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"

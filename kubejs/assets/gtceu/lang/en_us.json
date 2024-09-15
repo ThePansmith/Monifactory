@@ -121,12 +121,16 @@
   "gtceu.universal_crystallizer": "Crystallization",
   "block.gtceu.actualization_chamber": "Actualization Chamber",
   "gtceu.actualization_chamber": "Actualization",
+  "block.gtceu.cryococcal_reverberator": "Cryococcal Reverberator",
+  "gtceu.reverberation": "Reverberation",
   "gtceu.actualization_chamber.desc": "§8A powerful machine that harnesses the most complex of matters and turns it into raw materials",
   "block.gtceu.uhv_uhv_parallel_hatch": "Giga Parallel Control Hatch",
   "block.gtceu.uev_uev_parallel_hatch": "Omega Parallel Control Hatch",
   "block.gtceu.atmospheric_accumulator": "Atmospheric Accumulator",
   "gtceu.atmospheric_accumulator.desc": "§8A large machine that can suck up large amounts of air at once.",
   "block.gtceu.matter_alterator": "Matter Alterator",
+  "gtceu.giga_parallel_hatch.desc": "Allows to run up to 1024 recipes in parallel",
+  "gtceu.omega_parallel_hatch.desc": "Allows to run up to 4096 recipes in parallel",
 
 
   "__GENERIC_MATERIALS__.header": "=====================",
@@ -161,7 +165,7 @@
   "material.gtceu.kaemanite": "Kaemanite",
   "material.gtceu.mythril": "§bMana Infused Metal§r",
   "item.gtceu.mythril_ingot": "§bMana Infused Metal§r",
-  
+
   "__POST_TANK_MATERIALS__.header": "=======================",
   "__POST_TANK_MATERIALS__.flufff": "> Post-Tank Materials <",
   "__POST_TANK_MATERIALS__.footer": "=======================",
@@ -249,6 +253,11 @@
   "material.gtceu.rhodium_salt_solution": "Rhodium Salt Solution",
   "material.gtceu.methyl_formate": "Methyl Formate",
   "material.gtceu.formic_acid": "Formic Acid",
-  "material.gtceu.sodium_methoxide": "Sodium Methoxide"
+  "material.gtceu.sodium_methoxide": "Sodium Methoxide",
 
+  "__MISC__.header": "===========",
+  "__MISC__.flufff": "> Misc. <",
+  "__MISC__.footer": "===========",
+
+  "curios.identifier.gtceu_magnet": "Magnet"
 }

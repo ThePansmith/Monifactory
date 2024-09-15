@@ -32,7 +32,8 @@ ServerEvents.recipes(event => {
 
     sda_print('creative_storage_data', 1, 'functionalstorage:max_storage_upgrade', 128)
     sda_print('creative_storage_data', 2, 'megacells:bulk_item_cell', 128)
-    sda_print('creative_data_hatch_data', 1, 'gtceu:creative_data_access_hatch', 256)
+    sda_print('creative_computation_data', 1, 'gtceu:creative_computation_provider', 256)
+    sda_print('creative_computation_data', 2, 'gtceu:creative_data_access_hatch', 256)
     sda_print('creative_energy_data', 1, 'enderio:creative_power', 256)
     sda_print('creative_energy_data', 2, 'ae2:creative_energy_cell', 256)
     sda_print('creative_energy_data', 3, 'gtceu:creative_energy', 256)

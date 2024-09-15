@@ -89,10 +89,10 @@
 ["Flux Crafting"]
 	#How much FE/t the Flux Crafter should pull from each Flux Alternator when crafting by default.
 	#Range: > 0
-	defaultPowerRate = 200000000
+	defaultPowerRate = 800000000
 	#How much FE the Flux Alternator should hold.
 	#Range: > 0
-	powerCapacity = 200000000
+	powerCapacity = 2147483647
 	#How much FE the Auto Flux Crafter should hold.
 	#Range: > 0
 	autoCrafterPowerCapacity = 200000000
@@ -119,7 +119,7 @@
 	#Range: 0.0 ~ 1.0
 	alternatorEffectiveness = 0.01
 	#Should the Ender Crafter be enabled?
-	enabled = true
+	enabled = false
 	#Should the Auto Ender Crafter be enabled?
-	autoCrafterEnabled = true
+	autoCrafterEnabled = false
 

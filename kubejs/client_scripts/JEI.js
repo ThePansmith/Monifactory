@@ -23,7 +23,7 @@ JEIEvents.hideItems(event => {
     event.hide(['ironfurnaces:crystal_furnace', 'ironfurnaces:emerald_furnace', 'ironfurnaces:item_linker', 'ironfurnaces:rainbow_core', 'ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_coal', 'ironfurnaces:allthemodium_furnace', 'ironfurnaces:vibranium_furnace', 'ironfurnaces:unobtainium_furnace', 'ironfurnaces:upgrade_allthemodium', 'ironfurnaces:upgrade_vibranium', 'ironfurnaces:upgrade_unobtainium', 'ironfurnaces:item_heater', 'ironfurnaces:augment_blasting', 'ironfurnaces:augment_smoking', 'ironfurnaces:heater', 'ironfurnaces:augment_generator'])
 
     //dml
-    event.hide(['hostilenetworks:twilight_prediction'])
+    event.hide(['hostilenetworks:twilight_prediction', 'hostilenetworks:deep_learner'])
 
     //Extended Crafting
     event.hide([Item.of('extendedcrafting:recipe_maker', '{Shapeless:0b,Type:"CraftTweaker"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:tin"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:copper"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:iron"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:coal"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:steel"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:invar"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:silver"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:platinum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lead"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:glowstone"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lapis_lazuli"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:electrum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:redstone"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:diamond"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:nickel"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:gold"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:emerald"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:bronze"}')])
@@ -175,6 +175,8 @@ JEIEvents.hideItems(event => {
     // Posttank stuff
     event.hide(/gtceu:uxv/)
     event.hide(/gtceu:opv/)
+    event.hide(/gcyr:uxv/)
+    event.hide(/gcyr:opv/)
 
     //Greg Hot MV ingots
     event.hide(['gtceu:hot_kanthal_ingot', 'gtceu:hot_silicon_ingot'])
@@ -186,14 +188,39 @@ JEIEvents.hideItems(event => {
     event.hide('gtceu:steel_machine_casing')
 
     //Laserio
-    event.hide(['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'])
+    event.hide(['laserio:card_energy', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'])
 
     // PEX
     event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
 
-    // Utilitarian
-    event.hide(/utilitarian:.*_soliciting_carpet/)
-    event.hide(['utilitarian:snad', 'utilitarian:red_snad', 'utilitarian:soul_snad','utilitarian:fluid_hopper', 'utilitarian:no_soliciting_banner'])
+    // Hide debug item(s)
+    event.hide('kubejs:debug_ctm_block')
+    
+    // Hide GT ores to prevent clutter
+    GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
+        event.hide([
+          `gtceu:granite_${id.name}_ore`,
+          `gtceu:diorite_${id.name}_ore`,
+          `gtceu:andesite_${id.name}_ore`,
+          `gtceu:red_granite_${id.name}_ore`,
+          `gtceu:marble_${id.name}_ore`,
+          `gtceu:deepslate_${id.name}_ore`,
+          `gtceu:tuff_${id.name}_ore`,
+          `gtceu:sand_${id.name}_ore`,
+          `gtceu:red_sand_${id.name}_ore`,
+          `gtceu:gravel_${id.name}_ore`,
+          `gtceu:basalt_${id.name}_ore`,
+          `gtceu:blackstone_${id.name}_ore`,
+          `gtceu:moon_${id.name}_ore`,
+          `gtceu:venus_${id.name}_ore`,
+          `gtceu:mercury_${id.name}_ore`,
+          `gtceu:mars_${id.name}_ore`
+        ])
+      })
+
+    
+    // Hides GCYR ores as its not part of GTMaterialRegistry
+    event.hide(/gcyr:(!netherrack|endstone).*_ore/)
 })
 
 JEIEvents.addItems(event => {
@@ -213,9 +240,6 @@ JEIEvents.addItems(event => {
 
     //NuclearCraft
     event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust', 'nuclearcraft:beryllium_block', 'nuclearcraft:graphite_block'])
-
-    // Hide debug item(s)
-    event.hide('kubejs:debug_ctm_block')
 })
 
 JEIEvents.hideFluids(event => {

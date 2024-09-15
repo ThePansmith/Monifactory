@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot().fluid()
         .color(0xffb545).iconSet('shiny')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
-        .blastTemp(1250, 'low', 128, 400)
+        .blastTemp(1250, 'low', 120, 400)
 		.components('2x gold', 'redstone', 'glowstone')
         .cableProperties(128, 1, 0, true)
 
@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot().fluid()
         .color(0xa4ff70).iconSet('shiny')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW)
-        .blastTemp(1350, 'low', 128, 400)
+        .blastTemp(1350, 'low', 120, 400)
 		.components('energetic_alloy', 'ender_pearl')
         .cableProperties(512, 1, 0, true)
 
