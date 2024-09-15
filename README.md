@@ -63,3 +63,7 @@ Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 6. ``unzip server.zip``
 7. Move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
 8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
+
+## Frequently Asked Questions
+
+See [FAQ.md](FAQ.md)
