@@ -352,7 +352,7 @@ client:
   # The default color to overlay onto machines.
   # #FFFFFF is no coloring (default).
   # #D2DCFF is the classic blue from GT5.
-  defaultPaintingColor: #D2DCFF
+  defaultPaintingColor: #FFFFFF
 
   # The default color to overlay onto Machine (and other) UIs.
   # 16777215 (#FFFFFF) is no coloring (like GTCE) (default).
