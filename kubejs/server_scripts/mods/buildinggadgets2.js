@@ -1,5 +1,7 @@
 ServerEvents.recipes( event => {
-    event.remove({id: 'buildinggadgets2:template_manager'})
+    event.remove({id: /buildinggadgets2/})
+
+    //Template Manager
     event.shaped(
         'buildinggadgets2:template_manager', [
             'PMP',
@@ -9,12 +11,12 @@ ServerEvents.recipes( event => {
             M: 'minecraft:paper',
             P: 'gtceu:iron_plate',
             G: 'gtceu:restonia_gear',
-            C: '#gtceu:circuits/lv',
+            C: '#gtceu:circuits/mv',
             L: '#forge:plates/lapis'
         }
     )
 
-    event.remove({id: 'buildinggadgets2:gadget_building'})
+    //Gadgets
     event.shaped(
         'buildinggadgets2:gadget_building', [
             'PE',
@@ -28,8 +30,7 @@ ServerEvents.recipes( event => {
             B: '#gtceu:batteries/lv'
         }
     )
-
-    event.remove({id: 'buildinggadgets2:gadget_exchanging'})
+    //Exchanging gadgets use an IV emitter in HM/EM
     if (isHardMode) {
         event.shaped(
             'buildinggadgets2:gadget_exchanging', [
@@ -59,8 +60,6 @@ ServerEvents.recipes( event => {
             }
         )
     }
-
-    event.remove({id: 'buildinggadgets2:gadget_copy_paste'})
     event.shaped(
         'buildinggadgets2:gadget_copy_paste', [
             'SE',
@@ -75,8 +74,6 @@ ServerEvents.recipes( event => {
             B: '#gtceu:batteries/mv'
         }
     )
-
-    event.remove({id: 'buildinggadgets2:gadget_cut_paste'})
     event.shaped(
         'buildinggadgets2:gadget_cut_paste', [
             'SE',
@@ -91,8 +88,6 @@ ServerEvents.recipes( event => {
             B: '#gtceu:batteries/hv'
         }
     )
-
-    event.remove({id: 'buildinggadgets2:gadget_destruction'})
     event.shaped(
         'buildinggadgets2:gadget_destruction', [
             'PE',
