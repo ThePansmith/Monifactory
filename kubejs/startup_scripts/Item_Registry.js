@@ -285,6 +285,7 @@ StartupEvents.registry('item', event => {
 
     //PPC Stuff
     event.create('pulsating_mesh').displayName("Pulsating Mesh")
+    event.create('pulsating_dust').displayName("Pulsating Dust")
 
     // Sculk Items
     event.create('warden_horn').displayName("Warden Tendril")

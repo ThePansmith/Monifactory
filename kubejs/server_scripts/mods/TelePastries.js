@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         A: 'gtceu:restonia_gem',
         B: 'gtceu:palis_gem',
         C: 'gtceu:emeradic_gem',
-        D: '#forge:dusts/pulsating',
+        D: 'kubejs:pulsating_dust',
         E: 'enderio:cake_base',
         F: 'gtceu:aluminium_plate'
     }

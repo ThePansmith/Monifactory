@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'hostilenetworks:prediction_matrix' })
 
     event.recipes.gtceu.alloy_smelter('pulsating_polymer_clay')
-        .itemInputs(['#forge:dusts/pulsating', 'minecraft:clay'])
+        .itemInputs(['kubejs:pulsating_dust', 'minecraft:clay'])
         .itemOutputs('4x hostilenetworks:prediction_matrix')
         .duration(240)
         .EUt(7)
@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     event.recipes.gtceu.alloy_smelter('pulsating_mesh')
-        .itemInputs(['gtceu:carbon_fiber_mesh', '4x #forge:dusts/pulsating'])
+        .itemInputs(['gtceu:carbon_fiber_mesh', '4x kubejs:pulsating_dust'])
         .itemOutputs('kubejs:pulsating_mesh')
         .duration(200)
         .EUt(16)

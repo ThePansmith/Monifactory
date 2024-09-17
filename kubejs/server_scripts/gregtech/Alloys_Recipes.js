@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 
 	alloySmeltingVariant(
 		['#forge:ingots/iron', '#forge:dusts/iron'],
-		['#forge:dusts/pulsating'],
+		['kubejs:pulsating_dust'],
 		'gtceu:pulsating_alloy_ingot', 7.5, 16);
 
 	alloySmeltingVariant(
