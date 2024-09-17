@@ -27,7 +27,7 @@ recipes:
 
   # Recipes for Buckets, Cauldrons, Hoppers, and Iron Bars require Iron Plates, Rods, and more.
   # Default: true
-  hardIronRecipes: false
+  hardIronRecipes: true
 
   # Whether to make Redstone related recipes harder.
   # Default: false
