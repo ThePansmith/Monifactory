@@ -2198,8 +2198,8 @@
 				}
 			]
 			title: "Recharge Your Prospector!"
-			x: -10.5d
-			y: 10.0d
+			x: -9.0d
+			y: 8.5d
 		}
 	]
 	title: "Genesis"
