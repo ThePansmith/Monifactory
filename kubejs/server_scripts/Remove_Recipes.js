@@ -75,6 +75,9 @@ ServerEvents.recipes(event => {
     //EnderIO (grinding balls)
     event.remove({ output: ['enderio:soularium_grinding_ball', 'enderio:conductive_alloy_grinding_ball', 'enderio:pulsating_alloy_grinding_ball', 'enderio:redstone_alloy_grinding_ball', 'enderio:energetic_alloy_grinding_ball', 'enderio:vibrant_alloy_grinding_ball', 'enderio:copper_alloy_grinding_ball', 'enderio:dark_steel_grinding_ball', 'enderio:end_steel_grinding_ball'] })
 
+    // Enderio (crashes)
+    event.remove({ output: ["enderio:basic_fluid_filter"] })
+    
     //TelePastries
     event.remove({ output: ['telepastries:lost_city_cake', 'telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'] })
 
