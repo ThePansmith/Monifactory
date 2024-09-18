@@ -1565,7 +1565,7 @@
 	"Soul Candles" = true
 	"Usage Ticker" = true
 	"Uses For Curses" = true
-	"Variant Animal Textures" = false
+	"Variant Animal Textures" = true
 	"Wool Shuts Up Minecarts" = true
 
 	[client.auto_walk_keybind]
@@ -1649,15 +1649,15 @@
 		"Bind Armor Stands With Player Heads" = true
 
 	[client.variant_animal_textures]
-		"Enable Cow" = true
-		"Enable Pig" = true
-		"Enable Chicken" = true
+		"Enable Cow" = false
+		"Enable Pig" = false
+		"Enable Chicken" = false
 		"Enable Shiny Rabbit" = true
 		"Enable Shiny Llama" = true
 		"Enable Shiny Dolphin" = true
 		"Enable Shiny Slime" = true
 		"Enable L G B T Bees" = true
-		"Every Bee Is L G B T" = false
+		"Every Bee Is L G B T" = true
 		#The chance for an animal to have a special "Shiny" skin, like a shiny pokemon. This is 1 in X. Set to 0 to disable.
 		"Shiny Animal Chance" = 2048
 		#If a shiny animal should emit occasional sparkles.
