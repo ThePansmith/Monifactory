@@ -89,7 +89,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(1, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
+        .setSound(GTSoundEntries.ARC);
 
     // Naqudah Reactor II Recipe Type
     event.create('naquadah_reactor_ii')
@@ -98,7 +98,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(1, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
+        .setSound(GTSoundEntries.ARC);
 
     // Greenhouse
     event.create('greenhouse')
@@ -107,7 +107,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(3, 3, 1, 0) //
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
+        .setSound(GTSoundEntries.TURBINE)
 
     // Subatomic Digital Assembler
     event.create('subatomic_digital_assembly')
@@ -135,6 +135,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(6, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_CRYSTALLIZATION, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ARC)
 
     //Quintessence Infuser
     event.create('quintessence_infuser')
@@ -152,7 +153,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(1, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.CENTRIFUGE)
+        .setSound(GTSoundEntries.MINER)
 
     //Discharger
     event.create('discharger')
@@ -170,7 +171,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(2, 0, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
+        .setSound(GTSoundEntries.REPLICATOR)
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -665,7 +666,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
-            "gtceu:block/machines/laser_engraver", false)
+            "gtceu:block/machines/reconstructor", false)
 
     // Subatomic Digital Assembler
     event.create('subatomic_digital_assembler', 'multiblock')
