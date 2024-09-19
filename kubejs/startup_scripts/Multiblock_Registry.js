@@ -204,7 +204,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('#', Predicates.any())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-                "gtceu:block/multiblock/implosion_compressor", false)
+                "gtceu:block/multiblock/fusion_reactor", false)
 
         // Super Fabricator
         event.create('loot_superfabricator', 'multiblock')
@@ -231,7 +231,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('#', Predicates.any())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-                "gtceu:block/multiblock/implosion_compressor", false)
+                "gtceu:block/multiblock/fusion_reactor", false)
     }
 
     // Expert mode-exclusive multis            
@@ -283,7 +283,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('R', Predicates.blocks("kubejs:enderium_micro_miner_core"))
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
-                "gtceu:block/multiblock/implosion_compressor", false)
+                "gtceu:block/machine/autoclave", false)
     }
 
     // Basic Microverse Projector
@@ -374,7 +374,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('O', Predicates.blocks("gtceu:black_steel_block"))
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/multiblock/generator/large_steam_turbine", false)
 
     // Naquadah Reactor II
     event.create('naquadah_reactor_ii', 'multiblock')
@@ -395,7 +395,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('O', Predicates.blocks("gtceu:omnium_block"))
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/multiblock/generator/large_steam_turbine", false)
 
     // Greenhouse
     event.create('greenhouse', 'multiblock')
@@ -453,7 +453,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer(new ResourceLocation('kubejs', 'block/omnium/casing'),
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/machines/reconstructor", false)
 
     // Microverse Projector III
     // Also a parrelizable Projector for the previous tiers
@@ -533,7 +533,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("kubejs:block/netherite/casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/multiblock/assembly_line", false)
 
     //Extra Large Chemical Reactor
     event.create('extra_large_chemical_reactor', 'multiblock')
@@ -561,7 +561,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('A', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_inert_ptfe",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/multiblock/large_chemical_reactor", false)
 
     //Quintessence Infuser
     event.create('quintessence_infuser', 'multiblock')
@@ -572,7 +572,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#CCC#", "CCCCC", "HGGGH", "HGGGH", "HGGGH", "CCCCC", "#CCC#")
             .aisle("CCCCC", "COOOC", "G#O#G", "G#O#G", "G#O#G", "C#O#C", "CCCCC")
-            .aisle("CCCCC", "COPOC", "GOPOG", "GOPOG", "GOPOG", "COPOC", "CCMCC")
+            .aisle("CCCCC", "COPOC", "GOPOG", "GOPOG", "GOPOG", "COPOC", "CCCCC")
             .aisle("CCCCC", "COOOC", "G#O#G", "G#O#G", "G#O#G", "C#O#C", "CCCCC")
             .aisle("#CSC#", "CCCCC", "HGGGH", "HGGGH", "HGGGH", "CCCCC", "#CCC#")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
@@ -582,8 +582,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('P', Predicates.blocks('gtceu:tungstensteel_pipe_casing'))
             .where('C', Predicates.blocks('kubejs:dark_soularium_casing').setMinGlobalLimited(40)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
-            .where('M', Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+            )
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("kubejs:block/soularium/casing",
@@ -598,20 +599,21 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCCCC", "CCCCCCC", "CCCCCCC", "CCCCCCC")
             .aisle("CCCCCCC", "TMMOIIT", "TMCCCIT", "CCCCCCC")
-            .aisle("CCCSCCC", "CTTTTTC", "CTCHCTC", "CCCCCCC")
+            .aisle("CCCSCCC", "CTTTTTC", "CTCCCTC", "CCCCCCC")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
             .where('I', Predicates.blocks("minecraft:blue_ice"))
             .where('M', Predicates.blocks("minecraft:magma_block"))
             .where('O', Predicates.blocks("gtceu:titanium_pipe_casing"))
             .where('T', Predicates.blocks("gtceu:tempered_glass"))
-            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
             .where('C', Predicates.blocks("gtceu:high_temperature_smelting_casing").setMinGlobalLimited(20)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+            )
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/machines/rock_crusher", false)
 
     // Atmospheric Accumulator
     event.create('atmospheric_accumulator', 'multiblock')
@@ -620,7 +622,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock('gtceu:corrosion_proof_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCHCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
+            .aisle("CCCCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
             .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
             .aisle("CCCCC", "#IOI#", "CGOGC", "#IOI#", "CCOCC", "#IOI#", "CIOIC")
             .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
@@ -628,15 +630,16 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
             .where('I', Predicates.blocks("gtceu:engine_intake_casing"))
             .where('G', Predicates.blocks("gtceu:assembly_line_grating"))
-            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
             .where('O', Predicates.blocks("gtceu:titanium_pipe_casing"))
             .where('C', Predicates.blocks("gtceu:corrosion_proof_casing").setMinGlobalLimited(70)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+            )
             .where('#', Predicates.air())
             .build())
-        .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+        .workableCasingRenderer("gtceu:block/casings/gcym/corrosion_proof_casing",
+            "gtceu:block/machines/gas_collector", false)
 
     // Matter Alterator
     event.create('matter_alterator', 'multiblock')
@@ -645,23 +648,24 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock('gtceu:laser_safe_engraving_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("#CHC#######", "#CGC#######", "#CGC#######", "#CGC#######", "#CCC#######",)
+            .aisle("#CCC#######", "#CGC#######", "#CGC#######", "#CGC#######", "#CCC#######",)
             .aisle("CCCCC#F###F", "C###CCCCCCC", "C###CGGGGGC", "C###CCCCCCC", "CCCCC######",)
             .aisle("CCCCC######", "G#CCCCCCCCC", "G#F######PC", "G#CCCGGGGGC", "CCCCC######",)
             .aisle("CCCCC#F###F", "C###CCCCCCC", "C###CGGGGGC", "C###CCCCCCC", "CCCCC######",)
             .aisle("#CSC#######", "#CGC#######", "#CGC#######", "#CGC#######", "#CCC#######",)
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
             .where('G', Predicates.blocks("gtceu:laminated_glass"))
-            .where('H', Predicates.abilities(PartAbility.MAINTENANCE))
             .where('P', Predicates.blocks("gtceu:palis_block"))
             .where('F', Predicates.blocks("gtceu:hastelloy_c_276_frame"))
             .where('C', Predicates.blocks("gtceu:laser_safe_engraving_casing").setMinGlobalLimited(50)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1)))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+            )
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/machines/laser_engraver", false)
 
     // Subatomic Digital Assembler
     event.create('subatomic_digital_assembler', 'multiblock')
@@ -687,12 +691,13 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('Y', Predicates.blocks(GTBlocks.ADVANCED_COMPUTER_CASING.get()))
             .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(220)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1)))
+                .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
+            )
             .where('A', Predicates.any())
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/multiblock/fusion_reactor", false)
 
     // Discharger
     event.create('discharger', 'multiblock')
@@ -715,7 +720,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('Y', Predicates.controller(Predicates.blocks(definition.get())))
             .where('C', Predicates.blocks("kubejs:cryolobus_casing").setMinGlobalLimited(150)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+            )
             .where('c', Predicates.blocks("kubejs:cryolobus_casing"))
             .where('N', Predicates.blocks(GCyMBlocks.CASING_NONCONDUCTING.get()))
             .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
@@ -727,12 +733,12 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.air())
             .build())
         .workableCasingRenderer("kubejs:block/cryolobus/cryolobus_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/machines/electrolyzer", false)
 
     //Compression Imploder
     event.create('implosion_collider', 'multiblock')
     .rotationState(RotationState.NON_Y_AXIS)
-    .recipeTypes('implosion_compressor')
+    .recipeTypes(GTRecipeTypes.IMPLOSION_RECIPES)
     .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
     .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
     .pattern(definition => FactoryBlockPattern.start()
@@ -747,9 +753,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .aisle("#########", "###SSS###", "###SYS###", "###SSS###", "#########", "#########")
         .where('Y', Predicates.controller(Predicates.blocks(definition.get())))
         .where('S', Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get())
-        .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-        .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1))
-        .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+            .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+            .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setExactLimit(1))
+            .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+        )
         .where('O', Predicates.blocks("enderio:reinforced_obsidian_block"))
         .where('E', Predicates.blocks(GTBlocks.CASING_HSSE_STURDY.get()))
         .where('F', Predicates.blocks("gtceu:black_steel_frame"))
@@ -770,6 +777,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeTypes('reverberation')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH]) //required to function.. Probably so it can output energy and take items in at the same time? Not entirely sure. But it made it functional! Yippie
         .appearanceBlock(() => Block.getBlock('gtceu:atomic_casing'))
+        .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
         .aisle("####KKKKKKK####", "####KKKKKKK####", "####NN###NN####", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "######CCC######", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "####NN###NN####", "####KKKKKKK####", "####KKKKKKK####")
         .aisle("##KKKKKKKKKKK##", "##KKKKKKKKKKK##", "##TNN#DDD#NNT##", "##TNN##D##NNT##", "##T####D####T##", "###############", "###############", "###############", "###############", "###############", "###############", "######WWW######", "####CCFFFCC####", "######WWW######", "###############", "###############", "###############", "###############", "###############", "###############", "##T####D####T##", "##TNN##D##NNT##", "##TNN#DDD#NNT##", "##KKKKKKKKKKK##", "##KKKKKKKKKKK##")
@@ -799,5 +807,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .where('#', Predicates.any())
             .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/multiblock/hpca", false)
 })
