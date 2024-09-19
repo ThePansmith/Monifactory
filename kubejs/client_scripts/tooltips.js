@@ -1,3 +1,5 @@
+const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
+
 ItemEvents.tooltip(tooltip => {
     //Microminers
     function microminer_tooltip(tier) {
@@ -88,6 +90,11 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:quintessence_infuser', Text.translatable('gtceu.quintessence_infuser.desc'))
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.actualization_chamber.desc'))
     tooltip.add('gtceu:implosion_collider', Text.translatable('gtceu.implosion_collider.desc'))
+    tooltip.addAdvanced('gtceu:helical_fusion_reactor', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.machine.fusion_reactor.capacity', Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 16) / 1000000)))
+        text.add(2, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(3, Text.translatable('gtceu.multiblock.helical_fusion_reactor.description'))
+    })
 
     tooltip.addAdvanced('gtceu:universal_crystallizer', (item, adv, text) => {
         text.add(1, Text.darkGray('An immense device, capable of turning raw materials into complex matters'))
