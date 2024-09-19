@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.subatomic_digital_assembly('kubejs:corrupted_data')
         .itemInputs('kubejs:universe_creation_data')
-        .itemOutputs('kubejs:corrupted_universe_data')
+        .itemOutputs('kubejs:shattered_universe_data')
         .circuit(1)
         .CWUt(32)
         .duration(200)
