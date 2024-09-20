@@ -1657,7 +1657,7 @@
 		"Enable Shiny Dolphin" = true
 		"Enable Shiny Slime" = true
 		"Enable L G B T Bees" = true
-		"Every Bee Is L G B T" = true
+		"Every Bee Is L G B T" = false
 		#The chance for an animal to have a special "Shiny" skin, like a shiny pokemon. This is 1 in X. Set to 0 to disable.
 		"Shiny Animal Chance" = 2048
 		#If a shiny animal should emit occasional sparkles.
