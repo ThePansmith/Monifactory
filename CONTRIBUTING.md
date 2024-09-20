@@ -34,21 +34,6 @@ Specifically, we are not looking for:
 * Major changes/features
 * Adding/removing core mods to/from the pack
 
-## Ground Rules ##
-
-The following is a list of ground rules all contributors are expected to follow.
-Please do your best to respect these.
-
-* Treat all other individuals with respect.
-* Be welcoming to others and understanding that some people who are contributing
-  may not be as experienced as others at software development, modding, and mod
-  pack development.
-* Ensure all changes follow the rules laid out in the
-  [.editorconfig](.editorconfig) file in terms of formatting.
-* Keep changes on-topic as much as possible.
-  * For example, if you are changing a quest do not go changing some recipes
-    unless those recipes changes are related to the quest change.
-
 ## Getting Started ##
 
 To begin making contributions to this project, you will likely want to create
