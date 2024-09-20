@@ -55,7 +55,8 @@ ServerEvents.recipes(event => {
         }
         )
 
-        // Steam multis
+        // Normal Mode recipes for Steam multis
+        event.remove({ output: 'gtceu:steam_oven'})
         event.shaped(
             "gtceu:steam_oven", [
             'BGB',
@@ -69,6 +70,7 @@ ServerEvents.recipes(event => {
         }
         )
 
+        event.remove({ output: 'gtceu:steam_grinder'})
         event.shaped(
             "gtceu:steam_grinder", [
             'BGB',
@@ -81,6 +83,7 @@ ServerEvents.recipes(event => {
         }
         )
 
+        event.remove({ output: 'steamadditions:steam_foundry'})
         event.shaped(
             "steamadditions:steam_foundry", [
             'BGB',
