@@ -52,13 +52,6 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_4', 'thermal:upgrade_augment_3', 'thermal:dynamo_output_augment'], '§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.')
 
-    // Fix gtceu text
-    tooltip.addAdvanced(['gtceu:creative_energy', 'gtceu:creative_tank', 'gtceu:creative_chest', 'gtceu:creative_data_access_hatch'], (item, adv, text) => {
-        text.remove(1);
-        text.remove(2);
-        text.add(Text.join(Text.translatable('gtceu.creative_tooltip.1'), rainbowify(Text.translatable('gtceu.creative_tooltip.2').getString(), Math.round(Client.lastNanoTime / 100000000)), Text.translatable('gtceu.creative_tooltip.3')))
-    });
-
     // Circuits
     tooltip.addAdvanced(`kubejs:matter_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uev_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
     tooltip.addAdvanced(`kubejs:matter_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uhv_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
