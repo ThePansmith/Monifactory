@@ -129,6 +129,8 @@
   "block.gtceu.atmospheric_accumulator": "Atmospheric Accumulator",
   "gtceu.atmospheric_accumulator.desc": "§8A large machine that can suck up large amounts of air at once.",
   "block.gtceu.matter_alterator": "Matter Alterator",
+  "block.gtceu.helical_fusion_reactor": "Helical Fusion Reactor",
+  "gtceu.multiblock.helical_fusion_reactor.description": "The Helical Fusion Reactor is a very large multiblock structure used for fusing elements into heavier ones in parallel. For every Hatch it has, its buffer increases by 80M EU, and has a maximum of 1280M.",
   "gtceu.giga_parallel_hatch.desc": "Allows to run up to 1024 recipes in parallel",
   "gtceu.omega_parallel_hatch.desc": "Allows to run up to 4096 recipes in parallel",
 
