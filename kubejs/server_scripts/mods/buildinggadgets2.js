@@ -23,7 +23,7 @@ ServerEvents.recipes( event => {
             'CM',
             'PB'
         ], {
-            M: 'gtceu:computer_monitor_cover',
+            M: '#forge:plates/glass',
             P: 'gtceu:iron_plate',
             E: 'gtceu:lv_emitter',
             C: '#gtceu:circuits/lv',
@@ -38,7 +38,7 @@ ServerEvents.recipes( event => {
                 'CM',
                 'PB'
             ], {
-                M: 'gtceu:computer_monitor_cover',
+                M: '#forge:plates/glass',
                 P: 'gtceu:iron_plate',
                 E: 'gtceu:iv_emitter',
                 C: '#gtceu:circuits/mv',
@@ -52,7 +52,7 @@ ServerEvents.recipes( event => {
                 'CM',
                 'PB'
             ], {
-                M: 'gtceu:computer_monitor_cover',
+                M: '#forge:plates/glass',
                 P: 'gtceu:iron_plate',
                 E: 'gtceu:mv_emitter',
                 C: '#gtceu:circuits/mv',
@@ -66,7 +66,7 @@ ServerEvents.recipes( event => {
             'CM',
             'PB'
         ], {
-            M: 'gtceu:computer_monitor_cover',
+            M: '#forge:plates/glass',
             P: 'gtceu:iron_plate',
             E: 'gtceu:lv_emitter',
             S: 'gtceu:lv_sensor',
@@ -80,7 +80,7 @@ ServerEvents.recipes( event => {
             'CM',
             'PB'
         ], {
-            M: 'gtceu:computer_monitor_cover',
+            M: '#forge:plates/glass',
             P: 'gtceu:steel_plate',
             E: 'gtceu:lv_emitter',
             S: 'gtceu:lv_sensor',
@@ -94,7 +94,7 @@ ServerEvents.recipes( event => {
             'CM',
             'PB'
         ], {
-            M: 'gtceu:computer_monitor_cover',
+            M: '#forge:plates/glass',
             P: 'gtceu:steel_plate',
             E: 'gtceu:lv_emitter',
             C: '#gtceu:circuits/lv',
