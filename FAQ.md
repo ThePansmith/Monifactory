@@ -22,6 +22,18 @@ Yes! Peaceful mode is the intended playstyle for Monifactory. Playing with mobs 
 
 Monifactory will not be backported to any versions before 1.20.1. Porting the pack to a future version of Minecraft may or may not happen, but **do not ask or pester the devs**.
 
+**Q. Is Create in the modpack?**
+
+No, Create is not in Monifactory by default.
+
+**Q. Are Lithium and Sodium in the modpack?**
+
+No, but we have their respective port and fork, Radium and Embeddium
+
+**Does the modpack come with shaders?**
+
+Not by default. Oculus is included to load your shaders of choice, however
+
 **Q. Can you create or add 'X' mod to Monifactory?**
 
 Create a feature request on the GitHub.
@@ -29,10 +41,6 @@ Create a feature request on the GitHub.
 **Q. Can I add 'X' mod to my instance of Monifactory?**
 
 By default, Monifactory only supports the mods included with it, and has *optional compat* for ComputerCraft, Create, XNet, and Tempad. Any other mods added may break progression and/or deviate from the intended experience, but feel free to add them to your personal instance. Note that support may not be provided for bugs related to mods not shipped with the pack
-
-**Q. Is Create in the modpack?**
-
-No, Create is not in Monifactory by default.
 
 **Q. How do I play Monifactory Hard Mode/Harder Mode?**
 
