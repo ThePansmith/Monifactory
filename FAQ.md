@@ -1,5 +1,9 @@
 ## Frequently Asked Questions
 ### General
+**Q. How "finished" is Monifactory?**
+
+The main path of progression is fully playable - multiple groups have obtained the Creative Chest in Normal Mode.
+
 **Q. Where can I download Monifactory?**
 
 Stable releases of Monifactory can be downloaded from CurseForge using any launcher of your choice (PrismLauncher, CurseForge, etc.)
