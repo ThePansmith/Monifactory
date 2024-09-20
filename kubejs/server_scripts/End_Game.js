@@ -13,6 +13,21 @@ ServerEvents.recipes(event => {
                 .CWUt(160, 1024000)
                 .EUt(1200000)
             )
+
+    // Helical Fusion Reactor
+    event.recipes.gtceu.assembly_line('gtceu:helical_fusion_reactor')
+            .itemInputs('gtceu:uv_fusion_reactor', '4x #gtceu:circuits/uev', 'gtceu:gravi_star', '2x gtceu:double_activated_netherite_plate', '4x gtceu:uhv_field_generator', '64x kubejs:multidimensional_cpu_chip', '64x kubejs:multidimensional_cpu_chip', '64x gtceu:sculk_superconductor_single_wire')
+            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760', 'gtceu:polybenzimidazole 11520')
+            .itemOutputs('gtceu:helical_fusion_reactor')
+            .duration(6000)
+            .EUt(13920000)
+
+            .stationResearch(b => b
+                .researchStack('gtceu:uv_fusion_reactor')
+                .CWUt(160, 1024000)
+                .EUt(1200000)
+    )
+
     // Extra Large Chemical Reactor
     event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
             .itemInputs('gtceu:large_chemical_reactor', "8x gtceu:naquadah_large_fluid_pipe", '8x gtceu:luv_hermetic_casing', '4x gtceu:luv_field_generator', '8x gtceu:luv_electric_pump', '8x gtceu:luv_fluid_regulator', '4x #gtceu:circuits/zpm')
