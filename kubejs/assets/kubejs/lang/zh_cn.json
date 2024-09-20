@@ -114,7 +114,7 @@
 "item.kubejs.omnic_data": "万象数据",
 "item.kubejs.creative_tank_data": "创造量子罐数据",
 "item.kubejs.creative_storage_data": "创造存储数据",
-"item.kubejs.creative_data_hatch_data": "创造数据访问仓数据",
+"item.kubejs.creative_computation_data": "创造数据访问仓数据",
 "item.kubejs.creative_energy_data": "创造能源数据",
 
 "item.kubejs.diamond_lattice": "钻石晶格",
@@ -298,14 +298,12 @@
 "fluid.kubejs.molten_petrotheum": "§8板块之层岩",
 "fluid.kubejs.molten_aerotheum": "§7飞扬之清风",
 "fluid.kubejs.molten_primal_mana": "§d元始魔力",
-"fluid.kubejs.resonant_ender": "谐振末影",
 
 "block.kubejs.molten_pyrotheum": "§6烈焰之炽焱",
 "block.kubejs.molten_cryotheum": "§b极寒之凛冰",
 "block.kubejs.molten_petrotheum": "§8板块之层岩",
 "block.kubejs.molten_aerotheum": "§7飞扬之清风",
 "block.kubejs.molten_primal_mana": "§d元始魔力",
-"block.kubejs.resonant_ender": "谐振末影",
 
 "block.kubejs.starry_diamond_block": "星钻方块",
 "block.kubejs.dense_oilsands_ore": "致密油砂矿石",

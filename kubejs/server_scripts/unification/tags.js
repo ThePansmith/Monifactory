@@ -108,6 +108,11 @@ ServerEvents.tags('fluid', event => {
     ncFluids.forEach(element => {
         event.removeAllTagsFrom(element)
     })
+
+    //Remove tags from other unused non-GT fluids
+    event.removeAllTagsFrom('thermal:creosote')
+    event.removeAllTagsFrom('thermal:experience')
+    event.removeAllTagsFrom('sophisticatedcore:xp_still')
 })
 
 // Unification regexes are definited in startup script _initial.js

@@ -11,10 +11,14 @@ ServerEvents.recipes(event => {
     ////// Machine Recipe //////
 
     event.recipes.gtceu.assembly_line('loot_superfabricator')
-        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', '#gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter',  'kubejs:abyssal_energy_core')
+        .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', 'kubejs:heart_of_a_universe', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter',  'kubejs:abyssal_energy_core')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('gtceu:loot_superfabricator')
-        // .stationResearch(b => b.researchStack(Item.of('hostilenetworks:loot_fabricator')).EUt(1966080).CWUt(8192))
+        .stationResearch(b => b
+            .researchStack('hostilenetworks:loot_fabricator')
+            .EUt(1966080)
+            .CWUt(128, 512000)
+        )
         .duration(1200)
         .EUt(1966080)
         

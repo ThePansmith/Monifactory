@@ -62,7 +62,7 @@
 			description: [
 				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack."
 				""
-				"Paired with a self-sustaining &bDeep Mob Evolution&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
+				"Paired with a self-sustaining &bHostile Neural Networks&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
 				""
 				"Just like other &bThermal Expansion&r dynamos, the &6Numismatic Dynamo&r can be given &eAugments&r to produce more power."
 			]
@@ -173,7 +173,7 @@
 				{
 					id: "39BB37A04BD2A17D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -188,7 +188,7 @@
 				{
 					id: "02A84CAF628AA38A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -203,7 +203,7 @@
 				{
 					id: "7CD80AE13126B3DC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -239,7 +239,7 @@
 				{
 					id: "392C69C0A027A256"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -254,7 +254,7 @@
 				{
 					id: "5AE0806274510B68"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -269,7 +269,7 @@
 				{
 					id: "3D6D1F055EE8FCCF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -284,7 +284,7 @@
 				{
 					id: "044CAD01DB09EE97"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -299,7 +299,7 @@
 				{
 					id: "1FE91F62FA6DBFDC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -314,7 +314,7 @@
 				{
 					id: "29EBB069295CAC7A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -329,7 +329,7 @@
 				{
 					id: "4353BDD964D462FA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -425,7 +425,7 @@
 				{
 					id: "4F5F5198F39BABCA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -440,7 +440,7 @@
 				{
 					id: "1BA5BE35C701AC5C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -455,7 +455,7 @@
 				{
 					id: "2D300F4677701B59"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -470,7 +470,7 @@
 				{
 					id: "1C75BB7AF0616CD8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -485,7 +485,7 @@
 				{
 					id: "0A2B07B076638423"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {

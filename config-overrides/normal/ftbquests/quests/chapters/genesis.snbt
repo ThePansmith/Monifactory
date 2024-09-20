@@ -80,7 +80,7 @@
 				{
 					id: "3451D4471E82E65A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:prospector.hv"
 						tag: {
 							Charge: 1600000L
@@ -92,7 +92,7 @@
 					count: 4
 					id: "3316656A4E9DA8BF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:diamond_mining_hammer"
 						tag: {
 							DisallowContainerItem: 0b
@@ -118,7 +118,7 @@
 				{
 					id: "19598A860287E726"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:diamond_axe"
 						tag: {
 							DisallowContainerItem: 0b
@@ -218,7 +218,7 @@
 			tasks: [{
 				id: "02543E826A43185A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "functionalstorage:drawer"
@@ -296,7 +296,7 @@
 			rewards: [{
 				id: "318894ADCA9CF9DB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "trofers:large_pillar"
 					tag: {
 						BlockEntityTag: {
@@ -312,13 +312,13 @@
 				{
 					count: 12L
 					id: "674259A69F1EEC1C"
-					item: { Count: 12b, id: "minecraft:iron_ingot" }
+					item: { Count: 12, id: "minecraft:iron_ingot" }
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "02A10A7E907718D5"
-					item: { Count: 12b, id: "gtceu:wrought_iron_ingot" }
+					item: { Count: 12, id: "gtceu:wrought_iron_ingot" }
 					type: "item"
 				}
 			]
@@ -344,10 +344,10 @@
 				{
 					id: "46CA42CF7D0730E6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "sophisticatedstorage:gold_barrel"
 						tag: {
-							woodType: "oak"
+							woodType: "spruce"
 						}
 					}
 					type: "item"
@@ -355,7 +355,7 @@
 				{
 					id: "3A3F4984E9A1A81E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni_quest:backpack"
@@ -397,7 +397,7 @@
 				""
 				"&bEnderIO&r&6 Fluid Conduits&r are also an option. They have the advantage of being &6Conduits&r, allowing them to fit in the same block as other &6Conduits&r. "
 				""
-				"Later on, you also gain access to &9LaserIO&r, which trades some speed in exchange for allowing rather complex and compact filtering."
+				"Later on, you also gain access to &9LaserIO&r, which while a little costly, allows for some rather complex and compact filtering."
 			]
 			id: "64AAF0CD958D836A"
 			rewards: [{
@@ -409,21 +409,46 @@
 			tasks: [{
 				id: "150F57D9BEE7CCEE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
 								Count: 1b
-								id: "enderio:pressurized_fluid_conduit"
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "gtceu:steel_tiny_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_small_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_normal_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_large_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_huge_fluid_pipe"
+										}
+									]
+								}
 							}
 							{
 								Count: 1b
-								id: "gtceu:steel_normal_fluid_pipe"
+								id: "enderio:pressurized_fluid_conduit"
 							}
 						]
 					}
 				}
+				title: "Fluid Transport item"
 				type: "item"
 			}]
 			title: "&9Fluid Transport"
@@ -641,7 +666,7 @@
 				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:wrought_iron_wire_cutter"
 				tag: {
 					DisallowContainerItem: 0b
@@ -668,7 +693,7 @@
 				{
 					id: "04ED9B749EA44142"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_hammer"
 						tag: {
 							Damage: 0
@@ -682,7 +707,7 @@
 				{
 					id: "514CE965C8FB1452"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_file"
 						tag: {
 							Damage: 0
@@ -696,7 +721,7 @@
 				{
 					id: "7226082DB71F551A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_saw"
 						tag: {
 							Damage: 0
@@ -710,7 +735,7 @@
 				{
 					id: "705CACC01AD1C68E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_wrench"
 						tag: {
 							Damage: 0
@@ -724,7 +749,7 @@
 				{
 					id: "290A0FE8C389AF05"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_screwdriver"
 						tag: {
 							Damage: 0
@@ -738,7 +763,7 @@
 				{
 					id: "7B41907A63748FCA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_wire_cutter"
 						tag: {
 							Damage: 0
@@ -752,7 +777,7 @@
 				{
 					id: "7298CFD7BA970AA8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_mortar"
 						tag: {
 							Damage: 0
@@ -778,7 +803,7 @@
 				"Your free 4 Diamond Mining Hammers should last you a while, and you can always fix them using an anvil and some diamonds."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:iron_mining_hammer"
 				tag: {
 					Damage: 0
@@ -798,7 +823,7 @@
 				consume_items: false
 				id: "589A0779F965D77A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:tools/mining_hammers"
@@ -816,7 +841,7 @@
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:iron_axe"
 				tag: {
 					DisallowContainerItem: 0b
@@ -837,7 +862,7 @@
 			tasks: [{
 				id: "254A555916313F70"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:id_regex"
 					tag: {
 						value: "^gtceu:.*_axe$"
@@ -878,7 +903,7 @@
 				{
 					id: "1F3EDCBF5EB70229"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_wrench"
 						tag: {
 							Damage: 0
@@ -892,7 +917,7 @@
 				{
 					id: "20854F1345AB6B1E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "thermal:wrench"
 						tag: { }
 					}
@@ -961,25 +986,25 @@
 				{
 					count: 36L
 					id: "102B3966BE895F45"
-					item: { Count: 36b, id: "minecraft:copper_ingot" }
+					item: { Count: 36, id: "minecraft:copper_ingot" }
 					type: "item"
 				}
 				{
 					count: 20L
 					id: "3CEB53996CBB7381"
-					item: { Count: 20b, id: "gtceu:tin_ingot" }
+					item: { Count: 20, id: "gtceu:tin_ingot" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "5A94EE9BCBADE6BF"
-					item: { Count: 16b, id: "minecraft:coal" }
+					item: { Count: 16, id: "minecraft:coal" }
 					type: "item"
 				}
 				{
 					count: 6L
 					id: "77FEEB10E7B091B8"
-					item: { Count: 6b, id: "minecraft:gold_ingot" }
+					item: { Count: 6, id: "minecraft:gold_ingot" }
 					type: "item"
 				}
 			]
@@ -1021,7 +1046,7 @@
 			y: 7.25d
 		}
 		{
-			dependencies: ["1229234A71CE0A99"]
+			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
 				"Although most &ealloys&f require an &3Alloy Smelter&f, some alloys can be made simply by mixing the correct metal dusts together. "
 				""
@@ -1090,7 +1115,7 @@
 			tasks: [{
 				id: "7B4500A4503F2F6D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "hangglider:hang_glider"
 					tag: {
 						Damage: 0
@@ -1121,7 +1146,7 @@
 			tasks: [{
 				count: 3L
 				id: "7BA753DF38DEC329"
-				item: { Count: 3b, id: "gtceu:rubber_plate" }
+				item: { Count: 3, id: "gtceu:rubber_plate" }
 				type: "item"
 			}]
 			title: "Rubber Sheets"
@@ -1133,12 +1158,12 @@
 			description: [
 				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. This is useful when you have two machines running and both are unable to keep going because of a lack of power... let one finish then turn the other one back on with a second hit from the mallet."
 				""
-				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r."
+				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r once you can."
 				""
 				"This quest accepts a &aSoft Mallet&r made from any material."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:rubber_mallet"
 				tag: {
 					Damage: 0
@@ -1162,7 +1187,7 @@
 			tasks: [{
 				id: "253D34B000F903DD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1270,49 +1295,49 @@
 				{
 					count: 16L
 					id: "6FE4A0D51F6AF22F"
-					item: { Count: 16b, id: "gtceu:copper_dust" }
+					item: { Count: 16, id: "gtceu:copper_dust" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "6449998172457471"
-					item: { Count: 16b, id: "gtceu:red_alloy_dust" }
+					item: { Count: 16, id: "gtceu:red_alloy_dust" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "16D7046417209756"
-					item: { Count: 16b, id: "gtceu:red_alloy_ingot" }
+					item: { Count: 16, id: "gtceu:red_alloy_ingot" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "57A26AF688B59DAB"
-					item: { Count: 32b, id: "gtceu:iron_dust" }
+					item: { Count: 32, id: "gtceu:iron_dust" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "5627DEBC5B168743"
-					item: { Count: 32b, id: "gtceu:conductive_alloy_ingot" }
+					item: { Count: 32, id: "gtceu:conductive_alloy_ingot" }
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "15CAA2C5B513BFC2"
-					item: { Count: 8b, id: "gtceu:red_alloy_plate" }
+					item: { Count: 8, id: "gtceu:red_alloy_plate" }
 					type: "item"
 				}
 				{
 					count: 3L
 					id: "14B188414BF825E6"
-					item: { Count: 3b, id: "gtceu:red_alloy_single_wire" }
+					item: { Count: 3, id: "gtceu:red_alloy_single_wire" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "7B8835F95B9739D6"
-					item: { Count: 16b, id: "gtceu:conductive_alloy_single_wire" }
+					item: { Count: 16, id: "gtceu:conductive_alloy_single_wire" }
 					type: "item"
 				}
 			]
@@ -1345,7 +1370,7 @@
 			tasks: [{
 				count: 12L
 				id: "24A84AB536BB27B0"
-				item: { Count: 12b, id: "gtceu:red_alloy_single_cable" }
+				item: { Count: 12, id: "gtceu:red_alloy_single_cable" }
 				type: "item"
 			}]
 			title: "&2Cables"
@@ -1394,7 +1419,7 @@
 			tasks: [{
 				count: 2L
 				id: "66B9B329F6ED7939"
-				item: { Count: 2b, id: "thermal:dynamo_fuel_augment" }
+				item: { Count: 2, id: "thermal:dynamo_fuel_augment" }
 				type: "item"
 			}]
 			title: "&9More Efficient"
@@ -1445,7 +1470,7 @@
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1487,7 +1512,7 @@
 			tasks: [{
 				id: "0527876D6287634B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1530,7 +1555,7 @@
 			tasks: [{
 				count: 4L
 				id: "7923DEDAB3298371"
-				item: { Count: 4b, id: "gtceu:lv_battery_hull" }
+				item: { Count: 4, id: "gtceu:lv_battery_hull" }
 				type: "item"
 			}]
 			title: "LV Power Storage"
@@ -1554,7 +1579,7 @@
 			tasks: [{
 				id: "0560C9C2C5EC9998"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1610,7 +1635,7 @@
 				{
 					id: "4763F5F3C0771FFA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "buildinggadgets2:gadget_copy_paste"
 						tag: { }
 					}
@@ -1619,7 +1644,7 @@
 				{
 					id: "284A671CC5192B50"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "buildinggadgets2:gadget_cut_paste"
 						tag: {
 							pastereplace: 1b
@@ -1652,7 +1677,7 @@
 			rewards: [{
 				id: "4C3153B1874D58D5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:player_head"
 					tag: {
 						SkullOwner: {
@@ -1678,7 +1703,7 @@
 			tasks: [{
 				id: "0161A7D4C24DC421"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ores/sulfur"
@@ -1706,7 +1731,7 @@
 				"Finally, you can charge up all those depleted &m&6Dark Boots&r&r and &6The Ender&r swords you've looted."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "thermal:flux_capacitor"
 				tag: { }
 			}
@@ -1720,7 +1745,7 @@
 				{
 					id: "5EF5A8A2767A69E3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "thermal:flux_capacitor"
 						tag: { }
 					}
@@ -1729,7 +1754,7 @@
 				{
 					id: "63EE7A1364F6888B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:dusts/sulfur"
@@ -1760,11 +1785,10 @@
 			tasks: [{
 				id: "7CE647770625D692"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:leadstone"
-						Throttle: 1.0d
 					}
 				}
 				type: "item"
@@ -1784,7 +1808,7 @@
 			tasks: [{
 				id: "36817E3C33876798"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "enderio:electromagnet"
 					tag: {
 						Energy: {
@@ -1899,7 +1923,7 @@
 			rewards: [{
 				id: "43415141DBD13CDD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "nomowanderer:no_mo_wanderer_totem"
 					tag: {
 						Enabled: 1b
@@ -1917,7 +1941,7 @@
 					disable_toast: true
 					id: "34ADCB8BA7F14B03"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:coins"
@@ -1933,49 +1957,15 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
-			description: [
-				"&bEffortless Building&r is a mod that makes it much easier to build. You can create large platforms or various other shapes in just a few clicks, and even build multiple identical structures at the same time!"
-				""
-				"To use &bEffortless Building&r, start by pressing and holding the &6Alt&r key. This opens a wheel-shaped menu displaying &especial building modes&r. With this menu open, simply move your cursor over the desired building mode and release &6Alt&r. This will select that mode and you can begin building."
-				""
-				"Choose the starting location for your shape by &6right-clicking&r on a blockspace while holding your desired building block. Next, move your cursor to another blockspace to see a preview of the final structure. &6Right-click&r again on the desired ending block to actually build the shape from blocks in your inventory."
-				"{@pagebreak}"
-				"Most shapes are flat and are defined using a starting and ending location, but 3D shapes have a third location to complete the shape. Some special modes also have &eoptions&r, like making a &ehollow cube&r instead of a &efilled cube&r."
-				""
-				"If you made a mistake, you can use the &aUndo&r button in the menu to break the blocks you just placed so you can collect them and try again."
-				""
-				"To change building modes, just open the menu with &6Alt&r as before and pick a different one. To exit the special building modes, select the &eNormal&r mode."
-				""
-				"&cMake sure you return to Normal mode when you're done building shapes, since the special building modes will interfere with normal gameplay.&r"
-				"{@pagebreak}"
-				"The size of shapes you can make in special building modes is limited by your &ereach&r, which is how far away you can click from yourself to start building, or from the previous location to complete a shape. You can craft and eat several tiers of &areach upgrades&r in succession to increase your reach to very high numbers."
-				""
-				"Overall, &bEffortless Building&r is a powerful mod that is very useful for construction. Experiment with it and you'll see how much time it can save you!"
-			]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "effortlessbuilding:reach_upgrade1"
-			id: "0137ECCCD7A11A15"
-			optional: true
-			tasks: [{
-				id: "23ED12507CA3130E"
-				type: "checkmark"
-			}]
-			title: "Effortless Building"
-			x: -10.5d
-			y: 4.0d
-		}
-		{
 			dependencies: ["115D2BEB18929C7C"]
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
 				""
-				"[\"\",{\"text\":\"You shouldn't feel any pressure to do that in monifactory, though\",\"color\":\"yellow\"},\". Ore veins are massive, and mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},\". What's more, even once you get access to \",{\"text\":\"Macerators\",\"color\":\"dark_aqua\"},\", they initially process ore slowly and require power to operate.\"]"
+				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"chanced byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
 				""
 				"Obvious exceptions would be rare materials or anything you buy with &9Monicoins &fbecause you can't find it. Those are worth doubling, if possible."
 				""
-				"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! &eOre doubling can be safely ignored until you have the &2Steam Grinder&r&e, or Medium Voltage machines or even later.&r"
+				"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! &eOre doubling can be safely ignored until you have the &2Steam Grinder&r&e or High Voltage machines.&r"
 			]
 			icon: "gtceu:crushed_redstone_ore"
 			id: "17E92ED356B6737F"
@@ -2016,7 +2006,7 @@
 					count: 10L
 					id: "0221039A21A1C266"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:heads"
@@ -2028,7 +2018,7 @@
 				{
 					id: "0E70B83A51A0ADEC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "minecraft:beds"
@@ -2157,8 +2147,8 @@
 				type: "checkmark"
 			}]
 			title: "Inventory Sorting"
-			x: -9.0d
-			y: 8.5d
+			x: -10.5d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
@@ -2176,7 +2166,7 @@
 			rewards: [{
 				id: "21CED765A341AC89"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:prospector.hv"
 					tag: {
 						Charge: 1600000L
@@ -2204,8 +2194,8 @@
 				}
 			]
 			title: "Recharge Your Prospector!"
-			x: -10.5d
-			y: 10.0d
+			x: -9.0d
+			y: 8.5d
 		}
 	]
 	title: "Genesis"

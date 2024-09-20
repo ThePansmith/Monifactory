@@ -230,7 +230,7 @@
 				{
 					id: "3FF03AD6F80784C3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
@@ -581,7 +581,7 @@
 			tasks: [{
 				id: "5CF757A158365EEF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -636,7 +636,7 @@
 			tasks: [{
 				id: "2EBA27CDC31F4FD7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -686,7 +686,7 @@
 			tasks: [{
 				id: "4B9300AA8500D15F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -732,7 +732,7 @@
 			tasks: [{
 				id: "1D40001351115DEA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -775,7 +775,7 @@
 			tasks: [{
 				id: "0D3D5AC8CBB48681"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -807,11 +807,11 @@
 		{
 			dependencies: ["7D7B34CF5145F971"]
 			description: [
-				"&6Sunnarium&r is an alloy formed from &6Stabilized Plutonium&r and &6Stabilized Curium&r in an IV or better &3Alloy Smelter&r."
+				"&6Sunnarium&r is an alloy formed using &6Plutonium&r, &6Glowstone,&r and &6Curium&r on the &3Crafting Table.&r"
 				""
 				"It is a common ingredient in higher tier &6Solar Panels&r."
 				""
-				"This stuff takes a long time to produce so consider stocking it passively."
+				"There is a more efficient recipe made in an IV or better &3Mixer&r, but it'll take a long time to produce so consider stocking it passively."
 			]
 			id: "171EE3A4129F19A5"
 			rewards: [{
@@ -889,7 +889,7 @@
 					count: 2L
 					id: "19392B2E76B8C49C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:input_hatch"
@@ -901,7 +901,7 @@
 				{
 					id: "67D16E6904489436"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:output_hatch"
@@ -953,7 +953,7 @@
 			tasks: [{
 				id: "16F29EB016AF9A04"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [

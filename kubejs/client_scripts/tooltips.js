@@ -1,3 +1,5 @@
+const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
+
 ItemEvents.tooltip(tooltip => {
     //Microminers
     function microminer_tooltip(tier) {
@@ -26,6 +28,9 @@ ItemEvents.tooltip(tooltip => {
     //Endgame Items
     tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
 
+    //DML Data Model
+    tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
+    
     //DML Matters
     tooltip.add('hostilenetworks:overworld_prediction', '§7Experience per item: 10')
     tooltip.add('hostilenetworks:nether_prediction', '§7Experience per item: 20')
@@ -49,9 +54,8 @@ ItemEvents.tooltip(tooltip => {
 
     // Fix gtceu text
     tooltip.addAdvanced(['gtceu:creative_energy', 'gtceu:creative_tank', 'gtceu:creative_chest', 'gtceu:creative_data_access_hatch'], (item, adv, text) => {
-        text.remove(3);
-        text.remove(2);
         text.remove(1);
+        text.remove(2);
         text.add(Text.join(Text.translatable('gtceu.creative_tooltip.1'), rainbowify(Text.translatable('gtceu.creative_tooltip.2').getString(), Math.round(Client.lastNanoTime / 100000000)), Text.translatable('gtceu.creative_tooltip.3')))
     });
 
@@ -85,6 +89,12 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.subatomic_digital_assembler.desc'))
     tooltip.add('gtceu:quintessence_infuser', Text.translatable('gtceu.quintessence_infuser.desc'))
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.actualization_chamber.desc'))
+    tooltip.add('gtceu:implosion_collider', Text.translatable('gtceu.implosion_collider.desc'))
+    tooltip.addAdvanced('gtceu:helical_fusion_reactor', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.machine.fusion_reactor.capacity', Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 16) / 1000000)))
+        text.add(2, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(3, Text.translatable('gtceu.multiblock.helical_fusion_reactor.description'))
+    })
 
     tooltip.addAdvanced('gtceu:universal_crystallizer', (item, adv, text) => {
         text.add(1, Text.darkGray('An immense device, capable of turning raw materials into complex matters'))
@@ -103,8 +113,11 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
+    tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
+    tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
+
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:quintessence_infuser'], 'Can parallelize with Parallel Control Hatches.')
+    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:quintessence_infuser', 'gtceu:implosion_collider'], 'Can parallelize with Parallel Control Hatches.')
 
     //Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
@@ -124,9 +137,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
     tooltip.add('gtceu:terminal', 'Can autobuild multiblocks by shift-rightclicking a controller.')
-    tooltip.addAdvanced(['utilitarian:redstone_clock'], (item, adv, text) => {
-        text.add(2, Text.gold('Can be locked by incoming redstone signals, place above redstone dust or use a repeater.'))
-    })
 
 
     // NuclearCraft tooltips

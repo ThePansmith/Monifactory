@@ -5,6 +5,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('omnium', 130, 234, -1, null, 'Nm', false)
     event.create('infinity', Infinity, Infinity, -1, null, '∞', false);
     event.create('monium', 69, 420, -1, null, 'Mu', false);
+    event.create('crystal_matrix', 6, 6, -1, null, 'C*', false);
 })
 
 // custom icons
@@ -17,6 +18,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("crystal_matrix")
         .ingot().fluid()
+        .element(GTElements.get("crystal_matrix"))
         .color(0x66ffff)
         .iconSet('shiny')
         .fluidPipeProperties(100000, 64000, true, true, true, true)
@@ -36,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('shiny')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
-        .cableProperties(524288, 8, 0, true)
+        .cableProperties(2097152, 8, 0, true)
 
     event.create('infinity')
         .ingot()

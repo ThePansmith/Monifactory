@@ -3,7 +3,7 @@
 ServerEvents.recipes(event => {
 
     // snad
-    event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snadrecipe')
+    event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
     event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
 
     // snaded sand snad
@@ -56,6 +56,9 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('minecraft:lava', 1000))
         .EUt(32)
         .duration(120)
+
+    //Slime ball from plant ball
+    event.smelting('2x minecraft:slime_ball', 'gtceu:plant_ball')
 
     // Infinity Dust Blocks
     comapcting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
@@ -546,6 +549,7 @@ ServerEvents.recipes(event => {
     //Making ABS take aluminium rather than osmium so it's obtainable in EV
     event.replaceInput({ id: "gtceu:shaped/blast_alloy_smelter" }, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 
+    //Resonating Crystal recipes
     event.recipes.gtceu.alloy_smelter('kubejs:resonating_redstone')
         .itemInputs('minecraft:redstone_block', 'kubejs:ender_shard')
         .itemOutputs('kubejs:resonating_crystal')
@@ -557,6 +561,27 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:resonating_crystal')
         .duration(180)
         .EUt(16)
+
+    event.recipes.gtceu.autoclave('kubejs:resonating_pearl_autoclave')
+        .itemInputs('minecraft:ender_pearl')
+        .inputFluids('gtceu:redstone 1152')
+        .itemOutputs('12x kubejs:resonating_crystal')
+        .duration(900)
+        .EUt(480)
+
+    event.recipes.gtceu.autoclave('kubejs:resonating_pulsating_autoclave')
+        .itemInputs('kubejs:pulsating_dust')
+        .inputFluids('gtceu:redstone 1152')
+        .itemOutputs('12x kubejs:resonating_crystal')
+        .duration(900)
+        .EUt(480)
+
+    event.recipes.gtceu.autoclave('kubejs:resonating_ender_dust_autoclave')
+        .itemInputs('#forge:dusts/ender_pearl')
+        .inputFluids('gtceu:redstone 1152')
+        .itemOutputs('12x kubejs:resonating_crystal')
+        .duration(900)
+        .EUt(480)
 
     event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl']).id('kubejs:ender_pearl')
 
@@ -739,14 +764,14 @@ ServerEvents.recipes(event => {
     //Resonant Clathrate
     event.recipes.gtceu.chemical_reactor('resonant_clathrate')
     .itemInputs('minecraft:quartz')
-    .inputFluids(Fluid.of('kubejs:resonant_ender', 250))
+    .inputFluids(Fluid.of('thermal:ender', 250))
     .itemOutputs('kubejs:resonant_clathrate')
     .duration(120)
     .EUt(75)
 
     event.recipes.gtceu.extractor('resonant_ender')
     .itemInputs('minecraft:ender_pearl')
-    .outputFluids(Fluid.of('kubejs:resonant_ender', 250))
+    .outputFluids(Fluid.of('thermal:ender', 250))
     .duration(40)
     .EUt(30)
 
@@ -775,7 +800,7 @@ ServerEvents.recipes(event => {
     .EUt(24000)
     .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
 
-    // Scaleline
+    // Dragon Scaleline
     event.recipes.gtceu.macerator('dragon_scale_crushing')
         .itemInputs('kubejs:ender_dragon_scale')
         .itemOutputs('kubejs:ender_dragon_scale_dust')
@@ -826,6 +851,24 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrogen 1000', 'gtceu:fluorine 1000')
         .duration(240)
         .EUt(120)
+
+    // Guardian Scale recycling
+    event.recipes.gtceu.mixer('guardian_scale_slurry_mix')
+        .itemInputs('2x kubejs:guardian_scale')
+        .inputFluids('gtceu:aqua_regia 4000')
+        .outputFluids('gtceu:guardian_scale_slurry 4000')
+        .duration(280)
+        .EUt(1920)
+
+    event.recipes.gtceu.centrifuge('guardian_scale_slurry_centrifuge')
+        .inputFluids('gtceu:guardian_scale_slurry 4000')
+        .itemOutputs('2x gtceu:aluminium_dust', 'gtceu:copper_dust')
+        .chancedOutput("gtceu:titanium_dust", 200, 0)
+        .chancedOutput("gtceu:iron_dust", 200, 0)
+        .chancedOutput("gtceu:vanadium_dust", 200, 0)
+        .outputFluids('gtceu:phosphoric_acid 1000', 'gtceu:nitrosyl_chloride 1000', 'minecraft:water 2000', 'gtceu:oxygen 2000')
+        .duration(320)
+        .EUt(480)
 
     // Quantum Ring Assembler Recipes
     event.recipes.gtceu.assembler('kubejs:quantum_ring')
@@ -911,5 +954,13 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(15)
 
+    //Parallel Implosion Compressor
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/implosion_collider')
+        .itemInputs('4x enderio:reinforced_obsidian_block','2x #gtceu:circuits/zpm','gtceu:solid_machine_casing','3x gtceu:niobium_nitride_double_cable', '2x gtceu:zpm_electric_piston')
+        .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:osmium 1152')
+        .itemOutputs('gtceu:implosion_collider')
+        .duration(900)
+        .EUt(32000)
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:implosion_compressor').EUt(6000).duration(1800))
 })
  

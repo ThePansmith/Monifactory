@@ -172,7 +172,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('matter_processor_computer')
         .itemInputs('kubejs:matter_processing_unit', '2x kubejs:matter_processor_assembly', '24x kubejs:multidimensional_cpu_chip', 
             '12x gtceu:advanced_smd_capacitor', '8x gtceu:advanced_smd_transistor', '8x gtceu:advanced_smd_diode', '8x gtceu:advanced_smd_resistor', 
-            '8x gtceu:uhpic_chip', '4x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire')
+            '8x gtceu:uhpic_chip', '4x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire', '8x gtceu:polyethyl_cyanoacrylate_foil')
         .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:omnium 144')
         .itemOutputs('kubejs:matter_processor_computer')
         .duration(200)
@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('matter_processor_mainframe')
         .itemInputs('4x gtceu:activated_netherite_frame', '16x kubejs:matter_processor_computer', '24x gtceu:advanced_smd_capacitor', 
             '24x gtceu:advanced_smd_transistor', '24x gtceu:advanced_smd_diode', '24x gtceu:advanced_smd_resistor', '24x gtceu:advanced_smd_inductor', 
-            '32x gtceu:ram_chip', '8x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire', 
+            '32x gtceu:ram_chip', '16x gtceu:polyethyl_cyanoacrylate_foil', '8x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire', 
             '8x gtceu:crystal_matrix_plate') // could replace with omnium frame
         .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:omnium 288')
         .itemOutputs('kubejs:matter_processor_mainframe')
@@ -208,7 +208,7 @@ ServerEvents.recipes(event => {
     const smds = [
         ['transistor', 'gtceu:diamond_plate', '8x gtceu:fine_holmium_wire'],
         ['resistor', 'gtceu:activated_netherite_dust', '4x gtceu:fine_holmium_wire'],
-        ['capacitor', 'gtceu:neutronium_foil', 'gtceu:holmium_foil'],
+        ['capacitor', 'gtceu:polyethyl_cyanoacrylate', 'gtceu:holmium_foil'],
         ['diode', 'gtceu:ruthenium_trinium_americium_neutronate_dust', '16x gtceu:fine_holmium_wire'],
         ['inductor', 'gtceu:tritanium_ring', '16x gtceu:fine_holmium_wire']
     ]
@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('dimensional_processor_computer')
         .itemInputs('kubejs:dimensional_processing_unit', '4x kubejs:dimensional_processor_assembly', '8x kubejs:multidimensional_cpu_chip', 
             '16x kubejs:complex_smd_capacitor', '16x kubejs:complex_smd_transistor', '8x kubejs:complex_smd_diode', '8x kubejs:complex_smd_resistor', 
-            '16x gtceu:uhpic_chip', '4x gtceu:ruthenium_trinium_americium_neutronate_double_wire')
+            '16x gtceu:uhpic_chip', '4x gtceu:ruthenium_trinium_americium_neutronate_double_wire',  '16x gtceu:polyethyl_cyanoacrylate_foil')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('kubejs:dimensional_processor_computer')
         .duration(200)
@@ -249,7 +249,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('dimensional_processor_mainframe')
         .itemInputs('4x gtceu:infinity_frame', '16x kubejs:dimensional_processor_computer', '32x kubejs:complex_smd_capacitor', 
             '32x kubejs:complex_smd_transistor', '32x kubejs:complex_smd_diode', '32x kubejs:complex_smd_resistor', '32x kubejs:complex_smd_inductor', 
-            '32x kubejs:hyperdynamic_ram_chip', '8x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '4x gtceu:double_holmium_plate') // could replace with omnium frame
+            '32x kubejs:hyperdynamic_ram_chip', '32x gtceu:polyethyl_cyanoacrylate_foil', '8x gtceu:ruthenium_trinium_americium_neutronate_double_wire', '4x gtceu:double_holmium_plate') // could replace with omnium frame
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('kubejs:dimensional_processor_mainframe')
         .duration(1200)
@@ -291,7 +291,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('monic_processor_computer')
         .itemInputs('kubejs:monic_processing_unit', '2x kubejs:monic_processor_assembly', '4x kubejs:contained_singularity', 
             '16x kubejs:complex_smd_capacitor', '16x kubejs:complex_smd_transistor', '16x kubejs:complex_smd_diode', '16x kubejs:complex_smd_resistor', 
-            '16x gtceu:uhpic_chip', '4x gtceu:activated_netherite_double_wire')
+            '16x gtceu:uhpic_chip', '4x gtceu:activated_netherite_double_wire',  '32x gtceu:polyethyl_cyanoacrylate_foil')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:monic_processor_computer')
         .duration(200)
@@ -301,7 +301,7 @@ ServerEvents.recipes(event => {
         .itemInputs('8x gtceu:monium_frame', '2x kubejs:monic_processing_unit', '16x kubejs:monic_processor_computer', '64x kubejs:complex_smd_capacitor', '64x kubejs:complex_smd_transistor',
             '64x kubejs:complex_smd_diode', '64x kubejs:complex_smd_resistor', '64x kubejs:complex_smd_inductor', 
             '64x kubejs:contained_singularity', '64x kubejs:contained_singularity', '64x kubejs:multidimensional_cpu_chip', 
-            '64x kubejs:hyperdynamic_ram_chip', '64x kubejs:quantum_soc_chip', '4x gtceu:double_infinity_plate', '8x gtceu:sculk_superconductor_double_wire') // could replace with omnium frame
+            '64x kubejs:hyperdynamic_ram_chip', '64x gtceu:polyethyl_cyanoacrylate_foil', '64x kubejs:quantum_soc_chip', '4x gtceu:double_infinity_plate', '8x gtceu:sculk_superconductor_double_wire') // could replace with omnium frame
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('kubejs:monic_processor_mainframe')
         .duration(1200)

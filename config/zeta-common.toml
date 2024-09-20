@@ -1,0 +1,28 @@
+
+[general]
+	#Disable this to turn off the module system logic that makes features turn off when specified mods with the same content are loaded
+	"Use Anti Overlap" = true
+	#Enable Zeta's piston structure resolver, needed for some Quark or other mod features. If you're having troubles, try turning this off, but be aware other Zeta-using mods can enable it too.
+	"Use Piston Logic Replacement" = true
+	#Changes the piston push limit. Only has an effect if Zeta's piston structure resolver is in use.
+	#Allowed values: (0,)
+	"Piston Push Limit" = 12
+	#Set to false to disable the behavior where Zeta will automatically hide any disabled items from creative and JEI
+	"Hide Disabled Content" = true
+	#Set to false to disable Zeta's item info when viewing recipe/uses for an item in JEI
+	"Enable Jei Item Info" = true
+	#For JEI info purposes, add any items here to specifically disable their JEI info from Zeta. Note that Zeta already only shows info that's relevant to which features are enabled
+	"Suppressed Info" = []
+	#Set to false to stop Zeta from adding mod items to multi-requirement vanilla advancements
+	"Enable Advancement Modification" = true
+	#Set to false to stop Zeta mods from adding their own advancements
+	"Enable Modded Advancements" = true
+	#Set to true to enable a system that debugs Zeta mod worldgen features. This should ONLY be used if you're asked to by a dev.
+	"Enable Worldgen Watchdog" = false
+	#Set to true to make the Zeta big worldgen features generate as spheres rather than unique shapes. It's faster, but won't look as cool
+	"Use Fast Worldgen" = false
+	#Set to true to enable verbose logging of creative tab logic, for debugging purposes
+	"Enable Creative Verbose Logging" = false
+	#Set to true to force all creative tab additions to be added to the end of the creative tabs rather than the middle, as a failsafe
+	"Force Creative Tab Appends" = false
+

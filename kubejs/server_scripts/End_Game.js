@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     // Assembly Line
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line('dimensional_superassembler')
-            .itemInputs('gtceu:assembly_line', '4x kubejs:dimensional_processor_mainframe', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '12x gtceu:uiv_conveyor_module', '8x gtceu:uiv_robot_arm', '8x gtceu:uiv_emitter', '2x gtceu:infinity_frame')
+            .itemInputs('gtceu:assembly_line', '4x kubejs:dimensional_processor_mainframe', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '6x gtceu:uiv_conveyor_module', '4x gtceu:uiv_robot_arm', '4x gtceu:uiv_emitter', '2x gtceu:infinity_frame')
             .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760', 'gtceu:polybenzimidazole 11520')
             .itemOutputs('gtceu:dimensional_superassembler')
             .duration(6000)
@@ -124,9 +124,9 @@ ServerEvents.recipes(event => {
 
 	// Vacuum Freezer
 	// kubejs Superconductor Wire
-    event.recipes.gtceu.vacuum_freezer("sculk_superconductor_wire")
-        .itemInputs('gtceu:cryolobus_single_wire')
-        .itemOutputs('gtceu:sculk_superconductor_single_wire')
+    event.recipes.gtceu.vacuum_freezer("sculk_superconductor")
+        .itemInputs('gtceu:cryococcus_ingot')
+        .itemOutputs('gtceu:sculk_superconductor_ingot')
         .inputFluids(Fluid.of('gtceu:nether_star', 144))
         .duration(100)
         .EUt(6000)

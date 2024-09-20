@@ -170,7 +170,7 @@
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: { Count: 4b, id: "kubejs:hadal_energy_core" }
+				item: { Count: 4, id: "kubejs:hadal_energy_core" }
 				type: "item"
 			}]
 			title: "Hadal Cores"
@@ -249,7 +249,7 @@
 				""
 				"Might probably be obvious, but this miner is your sole source of &6Hearts of Universes&r. "
 				""
-				"It also can be used later to obtain &6Creative Storage Data&r and &6Creative Data Hatch Data&r, and is used to obtain &9Contained Singularities&r for &6Monic Circuits&r."
+				"It also can be used later to obtain &6Creative Storage Data&r and &6Creative Computation Data&r, and is used to obtain &9Contained Singularities&r for &6Monic Circuits&r."
 			]
 			id: "27EBB5AAF8A40F3D"
 			shape: "hexagon"
@@ -313,7 +313,7 @@
 			y: -11.5d
 		}
 		{
-			dependencies: ["07057CDE4E021BA7"]
+			dependencies: ["6F9041F256F517A3"]
 			description: [
 				"The &3Simulation Supercomputer&r is a multiblock structure that performs &9HNN&r simulations like the &3Simulation Chamber&r, but is capable of overclocking these simulations to incredible speeds."
 				""
@@ -321,7 +321,7 @@
 				""
 				"The data model you place in the input bus will &2have a fixed 30% chance of producing Pristine matter regardless of its tier. &eOverclocking does not alter the chances of pristines&r: those come at fixed rates per iteration."
 				""
-				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your first batch of &9Matter Processor Mainframes&r."
+				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your first batch of &9Hearts of a Universe&r."
 			]
 			icon: "gtceu:simulation_supercomputer"
 			id: "5A70898C99B828E3"
@@ -341,31 +341,31 @@
 				{
 					count: 26L
 					id: "53593263F0B2BD34"
-					item: { Count: 26b, id: "gtceu:omnium_block" }
+					item: { Count: 26, id: "gtceu:omnium_block" }
 					type: "item"
 				}
 				{
 					count: 18L
 					id: "287AEC44CC7A8A38"
-					item: { Count: 18b, id: "gtceu:vibration_safe_casing" }
+					item: { Count: 18, id: "gtceu:vibration_safe_casing" }
 					type: "item"
 				}
 				{
 					count: 13L
 					id: "11FAD5991B3199F5"
-					item: { Count: 13b, id: "gtceu:enderium_block" }
+					item: { Count: 13, id: "gtceu:enderium_block" }
 					type: "item"
 				}
 				{
 					count: 17L
 					id: "081CB54FA393231E"
-					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
+					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
 			]
 			title: "&2Simulation Supercomputer"
-			x: 50.0d
-			y: -10.75d
+			x: 27.0d
+			y: -14.625d
 		}
 		{
 			dependencies: [
@@ -428,7 +428,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "3BE677A49268E12B"
-				item: "kubejs:creative_data_hatch_data"
+				item: "kubejs:creative_computation_data"
 				type: "item"
 			}]
 			title: "&9Creative Data Access Hatch"
@@ -459,7 +459,7 @@
 				""
 				"One of these structures can perform the equivalent work of hundreds of individual Loot Fabricators more efficiently. This will make it far easier to generate said &6Dragon Lair Data&r from all that pristine matter you now have. "
 				""
-				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second batch of &9Matter Processor Mainframes&r."
+				"As a &9Creative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second batch of &9Hearts of a Universe&r."
 			]
 			icon: "gtceu:loot_superfabricator"
 			id: "161F61C28DBC5941"
@@ -497,13 +497,13 @@
 				{
 					count: 17L
 					id: "77269C9328705964"
-					item: { Count: 17b, id: "ae2:quartz_vibrant_glass" }
+					item: { Count: 17, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
 			]
 			title: "&9Loot Superfabricator"
-			x: 52.5d
-			y: -10.75d
+			x: 27.0d
+			y: -16.875d
 		}
 		{
 			dependencies: ["4155AEBF760C42E8"]
@@ -744,9 +744,9 @@
 		{
 			dependencies: ["4261BDA34D716EC8"]
 			description: [
-				"&7&oUh boss? I think putting the Universe Creation Data in the Subatomic Digital Assembler was a bad idea.&r"
+				"&7&oUh boss? I think putting the &6Universe Creation Data&r in the Subatomic Digital Assembler was a bad idea.&r"
 				""
-				"Attempting to replicate Universe Creation Data will instead corrupt the data, giving you this unsightly mess."
+				"Attempting to replicate Universe Creation Data will instead &eshatter the universe inside&r, giving you this unsightly mess."
 				""
 				"Not all may be lost, though..."
 			]
@@ -754,10 +754,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3F79F8E984CF6A2A"
-				item: "kubejs:corrupted_universe_data"
+				item: "kubejs:shattered_universe_data"
 				type: "item"
 			}]
-			title: "&9Corrupted Universe Data"
+			title: "&9Shattered Universe Data"
 			x: 31.0d
 			y: -18.0d
 		}
@@ -897,19 +897,19 @@
 				"1D00150456DEF379"
 			]
 			description: [
-				"Sending out this corrupted data with some shattered star data will return &9Shattered Universe Data&r.  "
+				"Forcefully combining this shattered universe data with some shattered star data will return &6Corrupted Universe Data&r - a realm with &eglitched duplicates of assorted valuable resources.&r"
 				""
-				"Using this data alongside some infinity catalysts will return multiple Hearts of The Universe, making a nice net profit."
+				"Using this data alongside some infinity catalysts will return multiple &6Hearts of The Universe&r, making a nice net profit."
 			]
 			id: "769047385AAC71B2"
 			shape: "hexagon"
 			subtitle: "Sometimes you gotta spend money to make money"
 			tasks: [{
 				id: "45C0AD6F1EC8334B"
-				item: "kubejs:shattered_universe_data"
+				item: "kubejs:corrupted_universe_data"
 				type: "item"
 			}]
-			title: "&9Shattered Universe Data"
+			title: "&9Corrupted Universe Data"
 			x: 28.5d
 			y: -18.0d
 		}
@@ -1063,6 +1063,67 @@
 			}]
 			x: 45.75d
 			y: -18.0d
+		}
+		{
+			dependencies: ["113E9543ADB1666B"]
+			description: [
+				"The &9Cryococcal Reverberator&r is a means of using &6Cryococcus&r to convert matter directly into energy more efficiently than any other means."
+				""
+				"It only works with a handful of highly energy-dense items and consumes a wealth of &6Cryococcus,&r so you'll need to find a way to produce these consistently and in bulk."
+				""
+				"If you manage to accomplish this, you'll be awarded with up to &a64A UIV&r while avoiding the explosive risk of &elarge spheres of superheated dragon metal.&r"
+			]
+			icon: "gtceu:cryococcal_reverberator"
+			id: "25A7BC39C30139DA"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "WARNING: Recipes subject to change!"
+			tasks: [
+				{
+					id: "009824CA79D811CC"
+					item: "gtceu:cryococcal_reverberator"
+					type: "item"
+				}
+				{
+					count: 152L
+					id: "13BFBC913CC929D9"
+					item: { Count: 152, id: "gtceu:naquadah_alloy_frame" }
+					type: "item"
+				}
+				{
+					count: 1000L
+					id: "22523AC6932FC851"
+					item: { Count: 1000, id: "gtceu:atomic_casing" }
+					type: "item"
+				}
+				{
+					count: 52L
+					id: "7B8B5E74E7A5C1A0"
+					item: { Count: 52, id: "kubejs:cryococcus_fusion_coil" }
+					type: "item"
+				}
+				{
+					count: 124L
+					id: "1FFF2FDB7B3FE718"
+					item: { Count: 124, id: "kubejs:cryococcus_fusion_casing" }
+					type: "item"
+				}
+				{
+					count: 88L
+					id: "5EFC3A7D1AA28C88"
+					item: { Count: 88, id: "kubejs:cryococcus_casing" }
+					type: "item"
+				}
+				{
+					count: 380L
+					id: "31FC71C05028D375"
+					item: { Count: 380, id: "kubejs:cryolobus_casing" }
+					type: "item"
+				}
+			]
+			title: "Cryococcal Reverberator"
+			x: 33.5d
+			y: -8.75d
 		}
 	]
 	title: "End Game"

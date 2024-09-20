@@ -26,9 +26,4 @@ StartupEvents.registry('fluid', event => {
 		.displayName('§dPrimal Mana') // lightPurple
 		.stillTexture('kubejs:block/mana_still')
 		.flowingTexture('kubejs:block/mana_flow');
-    event.create('resonant_ender')
-		.bucketColor(Color.rgba(43, 79, 79, 255))
-		.displayName('Resonant Ender')
-		.stillTexture('kubejs:block/ender_still')
-		.flowingTexture('kubejs:block/ender_flow');
 })

@@ -3,18 +3,21 @@
 
 //AE2 Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('charged_certus_quartz')
+        .gem()
+        .dust()
+        .color(0x9fd5e8)
+        .iconSet(GTMaterialIconSet.CERTUS)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components('certus_quartz')
+
     event.create('fluix')
         .gem()
         .dust()
         .color(0x7f5bb3)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.GENERATE_PLATE)
-
-    event.create('charged_certus_quartz')
-        .gem()
-        .dust()
-        .color(0x9fd5e8)
-        .iconSet(GTMaterialIconSet.QUARTZ)
+        .components('charged_certus_quartz', 'redstone', 'nether_quartz')
 })
 
 //Space Materials
@@ -174,5 +177,7 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('energetic_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)');
     GTMaterials.get('vibrant_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5)');
     GTMaterials.get('end_steel').setFormula('Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5))');
+
+    GTMaterials.get('microversium').setFormula('Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D')
 })
 

@@ -44,12 +44,6 @@
 			y: 8.5d
 		}
 		{
-			id: "27DFA4CC3F039428"
-			linked_quest: "26C9F1514FD08C81"
-			x: 5.25d
-			y: 18.5d
-		}
-		{
 			id: "4065DEBE89F8D723"
 			linked_quest: "3650EF39B5AB4A7D"
 			shape: "hexagon"
@@ -159,6 +153,7 @@
 				""
 				"For your MV cables, you can use &6Copper&r to start with. &6Energetic Alloy cables&r are lossless though, so consider them if you're able to mass produce those ingots."
 			]
+			icon: "gtceu:mv_4a_energy_converter"
 			id: "0B62AD25CDD86A6B"
 			rewards: [{
 				id: "0328A56626F1B919"
@@ -168,7 +163,31 @@
 			size: 1.5d
 			tasks: [{
 				id: "28506753F6FA0755"
-				item: "gtceu:mv_4a_energy_converter"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_1a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_4a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_8a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_16a_energy_converter"
+							}
+						]
+					}
+				}
+				title: "Any MV Converter"
 				type: "item"
 			}]
 			title: "MV Energy Converter"
@@ -182,7 +201,7 @@
 			]
 			description: ["&aMV Batteries&r function essentially the same as &aLV Batteries&r, only stronger. They also need to be put into an &3MV Machines, MV Battery Buffers&r or &3MV Turbo Chargers&r."]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:mv_lithium_battery"
 				tag: {
 					Charge: 420000L
@@ -247,7 +266,7 @@
 				{
 					id: "738E125A32EE6F95"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -340,7 +359,7 @@
 			tasks: [{
 				id: "6B2421DDCE5F8C75"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -956,7 +975,7 @@
 				{
 					id: "547F553BA6D87D63"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
@@ -1613,7 +1632,7 @@
 			tasks: [{
 				id: "45EF5902181733A9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1666,7 +1685,7 @@
 				""
 				"Resonant Clathrates are made by melting &6Ender Pearls&r with a &3Fluid Extractor&r into &9Resonant Ender&r, then mixing that with &6Nether Quartz&r in an MV or better &3Chemical Reactor&r. Smelting this clathrate gives Pulsating Dust."
 				""
-				"With Resonant Clathrates now accessible, everything you need for crafting &6Pulsating Polymer Clay&r can be automated in a net-positive loop.&r Doing so is the first step in automation of &bDeep Mob Evolution&r, which is &ea primary source of important materials for the rest of the pack&r."
+				"With Resonant Clathrates now accessible, everything you need for crafting &6Pulsating Polymer Clay&r can be automated in a net-positive loop.&r Doing so is the first step in automation of &bHostile Neural Networks&r, which is &ea primary source of important materials for the rest of the pack&r."
 				""
 				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &bEMI&r and the Processing Lines Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
 			]
@@ -1730,7 +1749,7 @@
 			tasks: [{
 				id: "036F1F8553EEC984"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1813,7 +1832,7 @@
 				""
 				"&2Super and Quantum Tanks are the high-tier GT Fluid storage solution.&r"
 				""
-				"The first tier holds &64,000 buckets&r, and higher tiers hold more. They can also be used like Drums to put fluids in and out of machines."
+				"The first tier holds &68,000 buckets&r, and higher tiers hold more. They can also be used like Drums to put fluids in and out of machines."
 				""
 				"You can conveniently configure &cvoiding&r for them to always void, start voiding at 95%% capacity, or never void."
 				""
@@ -1830,7 +1849,7 @@
 			tasks: [{
 				id: "472DBFA310FC29D0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1924,7 +1943,7 @@
 			tasks: [{
 				id: "1A2DC6E313694249"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "enderio:staff_of_travelling"
 					tag: {
 						Energy: {
@@ -1992,7 +2011,7 @@
 			description: [
 				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack."
 				""
-				"Paired with a self-sustaining &bDeep Mob Evolution&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
+				"Paired with a self-sustaining &bHostile Neural Networks&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
 				""
 				"Just like other &bThermal Expansion&r dynamos, the &6Numismatic Dynamo&r can be given tier upgrades to produce more power and gain access to more &aAugment Slots&r."
 			]
@@ -2043,11 +2062,10 @@
 			tasks: [{
 				id: "3959B38E4D99E1BC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:energetic"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true
@@ -2091,11 +2109,10 @@
 			tasks: [{
 				id: "78EEFDF0D1B695A3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ironjetpacks:jetpack"
 					tag: {
 						Id: "ironjetpacks:electrical_steel"
-						Throttle: 1.0d
 					}
 				}
 				match_nbt: true
