@@ -62,7 +62,7 @@
 		{
 			dependencies: ["50FB5E0B0E0B142F"]
 			description: ["Melt your &6Ender Pearls&r into &6Resonant Ender&r."]
-			icon: "kubejs:resonant_ender_bucket"
+			icon: "thermal:ender_bucket"
 			id: "500B77982B9CDF9B"
 			subtitle: "&oThis step requires an Extractor of tier &lLV&r&o or higher.&r"
 			tasks: [{
