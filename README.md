@@ -13,11 +13,11 @@
 
 ## Features
 - [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](https://github.com/ThePansmith/Monifactory/blob/main/CHANGELOG.md)
-- A complete overhaul of post-tank progression
-- Draconic Evolution and Avaritia have been removed and replaced with new mechanics
-- A new difficulty mode for returning Nomi CEu Hard Mode players
+- A complete overhaul of post-tank progression from Nomifactory CEu
+- Draconic Evolution and Avaritia have been replaced with new mechanics involving Sculk
+- A new, Harder difficulty mode for returning Nomi CEu Hard Mode players
 - A retexturing of everything to fit the modern style
-- Optional compatibility with various mods, such as Create
+- Optional compatibility with various mods, such as Create or XNet
 
 ## Credits
 - Original pack by [Exaxxion](https://github.com/Exaxxion).
@@ -37,30 +37,32 @@ Highlights include:
 - The Steam Age
 - No Hostile Neural Networks for easy infinite resources
 - Monicoins can't be spent
+- Harder processing lines for Platinum and Naquadah
 - More focus on GregTech Power Generation
-- No Creative Tank; instead, use Stabilized Micro Miners for late-game infinite resources
+- No Creative Tank; instead, use Stabilized Micro Miners for late-game resource acquisition
 
 Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 
-- Disabling RF -> EU conversion, making GT power generation your only option
-- Removing EnderIO and LaserIO's ttem and fluid transportation options
+- Disabling RF -> EU conversion, making GT power generation required
+- Removing EnderIO and LaserIO's item and fluid transportation options
 - Bringing back GT5u machine explosions
-- Pollution and hazards
+- Gregtech Pollution and hazards
 - Various other nerfs
 
-## Addon Mods (AKA Optional Compats)
+## Installation:
+
+### Hard/Harder Mode Installation:
+1. Download [``./pack-mode-switcher.bat``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
+2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
+2. Run the script, and follow the prompts to select your mode.
+
+### Addon Mods (AKA Optional Compats)
 To spice up your Monifactory experience, you can add one of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
 1. [Create](https://www.curseforge.com/minecraft/mc-mods/create)
     1a. [Create: Steam and Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)
 2. [ComputerCraft: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)
 3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
-
-## Installation:
-
-### Hard/Harder Mode Installation:
-1. Click on ``./pack-mode-switcher.bat`` if you're on Windows, or ``./pack-mode-switcher.sh`` if you're on Linux/Apple/GNU (located within your .minecraft folder)
-2. Follow the prompt to select your mode.
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.
@@ -79,3 +81,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Frequently Asked Questions
 
 See [FAQ.md](FAQ.md)
+
+## Known Issues
+
+See [KNOWN-ISSUES.md](KNOWN-ISSUES.md)
