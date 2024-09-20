@@ -549,6 +549,7 @@ ServerEvents.recipes(event => {
     //Making ABS take aluminium rather than osmium so it's obtainable in EV
     event.replaceInput({ id: "gtceu:shaped/blast_alloy_smelter" }, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 
+    //Resonating Crystal recipes
     event.recipes.gtceu.alloy_smelter('kubejs:resonating_redstone')
         .itemInputs('minecraft:redstone_block', 'kubejs:ender_shard')
         .itemOutputs('kubejs:resonating_crystal')
@@ -560,6 +561,27 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:resonating_crystal')
         .duration(180)
         .EUt(16)
+
+    event.recipes.gtceu.autoclave('kubejs:resonating_pearl_autoclave')
+        .itemInputs('minecraft:ender_pearl')
+        .inputFluids('gtceu:redstone 1152')
+        .itemOutputs('12x kubejs:resonating_crystal')
+        .duration(900)
+        .EUt(480)
+
+    event.recipes.gtceu.autoclave('kubejs:resonating_pulsating_autoclave')
+        .itemInputs('kubejs:pulsating_dust')
+        .inputFluids('gtceu:redstone 1152')
+        .itemOutputs('12x kubejs:resonating_crystal')
+        .duration(900)
+        .EUt(480)
+
+    event.recipes.gtceu.autoclave('kubejs:resonating_ender_dust_autoclave')
+        .itemInputs('#forge:dusts/ender_pearl')
+        .inputFluids('gtceu:redstone 1152')
+        .itemOutputs('12x kubejs:resonating_crystal')
+        .duration(900)
+        .EUt(480)
 
     event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl']).id('kubejs:ender_pearl')
 

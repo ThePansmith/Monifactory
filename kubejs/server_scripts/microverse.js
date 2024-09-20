@@ -503,22 +503,22 @@ ServerEvents.recipes(event => {
     )
 
     // Electrum Engine Core
-    event.recipes.gtceu.alloy_smelter("electrum_micro_miner_core")
-        .itemInputs("2x minecraft:redstone_block", "kubejs:electrum_micro_miner_frame")
+    event.recipes.gtceu.canner("electrum_micro_miner_core")
+        .itemInputs("kubejs:electrum_micro_miner_frame", "2x minecraft:redstone_block")
         .itemOutputs("kubejs:electrum_micro_miner_core")
         .duration(500)
         .EUt(480)
 
     // Signalum Engine Core
-    event.recipes.gtceu.alloy_smelter("signalum_micro_miner_core")
-        .itemInputs("4x minecraft:redstone_block", "kubejs:signalum_micro_miner_frame")
+    event.recipes.gtceu.canner("signalum_micro_miner_core")
+        .itemInputs("kubejs:signalum_micro_miner_frame", "4x minecraft:redstone_block")
         .itemOutputs("kubejs:signalum_micro_miner_core")
         .duration(1000)
         .EUt(2000)
 
     // Enderium Engine Core
-    event.recipes.gtceu.alloy_smelter("enderium_micro_miner_core")
-        .itemInputs("8x minecraft:redstone_block", "kubejs:enderium_micro_miner_frame")
+    event.recipes.gtceu.canner("enderium_micro_miner_core")
+        .itemInputs("kubejs:enderium_micro_miner_frame", "8x minecraft:redstone_block")
         .itemOutputs("kubejs:enderium_micro_miner_core")
         .duration(2000)
         .EUt(8000)

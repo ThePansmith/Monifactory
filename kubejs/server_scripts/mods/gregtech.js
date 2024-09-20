@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(32)
 
-    //Sunnarium
+    //Sunnarium plates
     event.remove({ id: 'gtceu:compressor/compress_plate_dust_sunnarium_'})
     event.shaped(
         '4x gtceu:sunnarium_plate', [
@@ -20,18 +20,6 @@ ServerEvents.recipes(event => {
         ], {
             P: 'gtceu:hastelloy_c_276_plate',
             S: 'gtceu:sunnarium_dust'
-        }
-    )
-
-    event.shaped(
-        '4x gtceu:enriched_sunnarium_dust', [
-            'ABA',
-            'BCB',
-            'ABA'
-        ], {
-            A: 'kubejs:stabilized_neptunium',
-            B: 'kubejs:stabilized_americium',
-            C: 'gtceu:sunnarium_dust'
         }
     )
 
