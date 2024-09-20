@@ -77,14 +77,13 @@ ServerEvents.recipes(event => {
     event.shaped(
         `gtceu:${tier}_atomic_reconstructor`, [
         'CPC',
-        'FHE',
+        'EHE',
         'PPM'
     ], {
         P: `gtceu:${plate}_plate`,
         E: `gtceu:${tier}_emitter`,
         H: `gtceu:${tier}_machine_hull`,
         C: `#gtceu:circuits/${tier}`,
-        F: `gtceu:${tier}_field_generator`,
         M: `gtceu:${tier}_electric_motor`
     }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
     })
