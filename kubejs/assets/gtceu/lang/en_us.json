@@ -221,6 +221,24 @@
   "material.gtceu.hydrochloric_manganese_solution": "Hydrochloric Manganese Solution",
   "material.gtceu.hydrochloric_dragon_scale_solution": "Hydrochloric Dragon Scale Solution",
 
+  "PECA.header": "==================",
+  "PECA.flufff": "> PECA chemicals <",
+  "PECA.footer": "==================",
+
+  "material.gtceu.sodium_cyanide": "Sodium Cyanide",
+  "material.gtceu.chloroacetic_mixture": "Chloroacetic Mixture",
+  "material.gtceu.chloroacetate": "Chloroacetic Acid",
+  "material.gtceu.dichloroacetate": "Dichloroacetate",
+  "material.gtceu.trichloroacetate": "Trichloroacetate",
+  "material.gtceu.cyanoacetic_acid": "Cyanoacetic Acid",
+  "material.gtceu.ethyl_cyanoacetate": "Ethyl Cyanoacetate",
+  "material.gtceu.uncracked_ethyl_cyanoacrylate": "Uncracked Ethyl Cyanoacrylate",
+  "material.gtceu.ethyl_cyanoacrylate": "Ethyl Cyanoacrylate",
+  "material.gtceu.polyethyl_cyanoacrylate": "Polyethyl Cyanoacrylate",
+  "material.gtceu.dimethyl_sulfoxide": "Dimethyl Sulfoxide",
+  "material.gtceu.dimethyl_sulfide": "Dimethyl Sulfide",
+  
+
   "__PLATLINE__.header": "=======================",
   "__PLATLINE__.flufff": "> Platinum line items <",
   "__PLATLINE__.footer": "=======================",
