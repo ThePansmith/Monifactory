@@ -113,48 +113,24 @@ ServerEvents.recipes(event => {
             I: '#gtceu:circuits/ev'
         })
 
-        event.remove({ output: 'packagedexcrafting:advanced_crafter' })
-        event.shaped(
-            'packagedexcrafting:advanced_crafter', [
-                'ACA',
-                'BEB',
-                'ACA'
-            ], {
-                A: 'extendedcrafting:advanced_component',
-                B: 'gtceu:black_steel_plate',
-                C: 'packagedauto:me_package_component',
-                E: 'extendedcrafting:advanced_auto_table'
-            }
-        )
-    
-        event.remove({ output: 'packagedexcrafting:elite_crafter' })
-        event.shaped(
-            'packagedexcrafting:elite_crafter', [
-                'ACA',
-                'BEB',
-                'ACA'
-            ], {
-                A: 'extendedcrafting:elite_component',
-                B: 'gtceu:black_steel_plate',
-                C: 'packagedauto:me_package_component',
-                E: 'extendedcrafting:elite_auto_table'
-            }
-        )
-    
-        event.remove({ output: 'packagedexcrafting:ultimate_crafter' })
-        event.shaped(
-            'packagedexcrafting:ultimate_crafter', [
-                'ACA',
-                'BEB',
-                'ACA'
-            ], {
-                A: 'extendedcrafting:ultimate_component',
-                B: 'gtceu:black_steel_plate',
-                C: 'packagedauto:me_package_component',
-                E:'extendedcrafting:ultimate_auto_table'
-            }
-        )
-        
+        //Packaged Ex Crafters
+        let tiers = ['advanced', 'elite', 'ultimate']
+        tiers.forEach((tier) => {
+            event.remove({ output: `packagedexcrafting:${tier}_crafter` })
+            event.shaped(
+                `packagedexcrafting:${tier}_crafter`, [
+                    'ACA',
+                    'BEB',
+                    'ACA'
+                ], {
+                    A: `extendedcrafting:${tier}_component`,
+                    B: 'gtceu:black_steel_plate',
+                    C: 'packagedauto:me_package_component',
+                    E: `extendedcrafting:${tier}_auto_table`
+                }
+            )
+        })
+
         event.remove({ output: 'packagedexexcrafting:epic_crafter' })
         event.shaped(
             'packagedexexcrafting:epic_crafter', [
@@ -165,7 +141,7 @@ ServerEvents.recipes(event => {
                 A: 'extendedcrafting:epic_component',
                 B: 'gtceu:black_steel_plate',
                 C: 'packagedauto:me_package_component',
-                E:'extendedcrafting:epic_auto_table'
+                E: 'extendedcrafting:epic_auto_table'
             }
         )
 
