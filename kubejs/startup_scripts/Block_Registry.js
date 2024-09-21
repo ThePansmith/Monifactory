@@ -269,7 +269,6 @@ StartupEvents.registry("block", event => {
         .energyDiscount(16)
         .tier(9)
         .coilMaterial(() => GTMaterials.get('omnium'))
-        .texture('kubejs:block/omnium/coil')
         .hardness(5)
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
