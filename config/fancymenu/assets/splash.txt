@@ -63,4 +63,4 @@ Chemical Engineering in Minecraft!
 The Day of Reckoning
 Do your homework first!
 /reload
-%t gtmi
+%t gtm
