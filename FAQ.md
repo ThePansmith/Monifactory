@@ -52,7 +52,7 @@ By default, Monifactory only supports the mods included with it, and has *option
 
 **Q. How do I add optional compat mods?**
 
-[Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#Addon-Mods-AKA-Optional-Compats))
+[Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#Addon-Mods-AKA-Optional-Compats)
 
 **Q. How do I setup a dedicated multiplayer server?**
 
