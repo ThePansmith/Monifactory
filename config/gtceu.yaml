@@ -280,7 +280,7 @@ machines:
 
     # The amount of steam a High Pressure Steam Solid Boiler produces per second at max temperature.
     # Default: 300
-    hpSolidBoilerBaseOutput: 1800
+    hpSolidBoilerBaseOutput: 900
 
     # The amount of steam a Steam Liquid Boiler produces per second at max temperature.
     # Default: 240
