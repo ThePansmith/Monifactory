@@ -337,7 +337,7 @@
 				""
 				"&bEnderIO&r&6 Fluid Conduits&r. They have the advantage of being &6Conduits&r, allowing them to fit in the same block as other &6Conduits&r. "
 			]
-			icon: "gtceu:steel_small_fluid_pipe"
+			icon: "gtceu:potin_small_fluid_pipe"
 			id: "64AAF0CD958D836A"
 			rewards: [{
 				count: 2
@@ -347,7 +347,36 @@
 			}]
 			tasks: [{
 				id: "277C38246AE179F6"
-				item: "gtceu:potin_normal_fluid_pipe"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+						
+							{
+								Count: 1b
+								id: "gtceu:potin_tiny_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_small_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_normal_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_large_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_huge_fluid_pipe"
+							}
+						]
+					}
+				}
+				title: "Potin Pipe"
 				type: "item"
 			}]
 			title: "&9Fluid Transport"

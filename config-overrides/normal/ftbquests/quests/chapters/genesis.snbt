@@ -445,6 +445,10 @@
 								Count: 1b
 								id: "enderio:pressurized_fluid_conduit"
 							}
+							{
+								Count: 1b
+								id: "laserio:card_fluid"
+							}
 						]
 					}
 				}
