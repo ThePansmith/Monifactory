@@ -44,7 +44,7 @@ Create a feature request on the GitHub.
 
 **Q. Can I add 'X' mod to my instance of Monifactory?**
 
-By default, Monifactory only supports the mods included with it, and has *optional compat* for ComputerCraft, Create, XNet, and Tempad. Any other mods added may break progression and/or deviate from the intended experience. Note that support will not be provided for bugs related to mods not shipped with the pack
+By default, Monifactory only supports the mods included with it, and has *optional compat* for various mods, such as Create. Any other mods added may break progression and/or deviate from the intended experience. Note that support will not be provided for bugs related to mods not shipped with the pack
 
 **Q. How do I play Monifactory Hard Mode/Harder Mode?**
 
