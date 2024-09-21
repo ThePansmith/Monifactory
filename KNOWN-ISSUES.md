@@ -5,10 +5,9 @@ See more at [FAQ.md](FAQ.md)
 
 Switch to a lower GUI scale or tweak EMI's UI configs to your liking. Alternatively, disable EMI temporarily using Ctrl + O
 
-**Lost Cities too rare/disabled**
+**Game crashes when generating a superflat world.**
 
-Lost Cities has issues with forcing players to spawn in a Lost City, so the feature was disabled.
-You may have to travel some distance to find one
+Lost Cities has issues with forcing players to spawn in a Lost City, and crashes when attempting to generate a superflat. Remove the mod to generate a superflat until the issue is fixed.
 
 **Game crashes on MacOS**
 
