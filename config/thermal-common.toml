@@ -39,7 +39,3 @@
 			#Whether this feature should naturally spawn in the world.
 			Enable = false
 
-		[World.Features.Apatite]
-			#Whether this feature should naturally spawn in the world.
-			Enable = false
-

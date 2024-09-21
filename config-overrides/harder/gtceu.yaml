@@ -267,7 +267,7 @@ machines:
   # Default: false
   orderedAssemblyLineFluids: false
 
-  # Let Dual Hatch has more ability.
+  # Let Dual Hatch has more ability. (DEPRECATED: does nothing now)
   # When enabled it, Dual Hatch will can used to assemble line and so on.
   # Need restart Minecraft to apply.
   enableMoreDualHatchAbility: false
@@ -352,7 +352,7 @@ client:
   # The default color to overlay onto machines.
   # #FFFFFF is no coloring (default).
   # #D2DCFF is the classic blue from GT5.
-  defaultPaintingColor: #D2DCFF
+  defaultPaintingColor: #FFFFFF
 
   # The default color to overlay onto Machine (and other) UIs.
   # 16777215 (#FFFFFF) is no coloring (like GTCE) (default).
