@@ -7,20 +7,20 @@ The main path of progression is fully playable - multiple groups have obtained t
 **Q. Where can I download Monifactory?**
 
 Stable releases of Monifactory can be downloaded from CurseForge using any launcher of your choice (PrismLauncher, CurseForge, etc.)
-Bleeding edge builds can be found [here](https://github.com/ThePansmith/Monifactory/releases)
+Bleeding edge builds can be found [here](https://github.com/ThePansmith/Monifactory/releases).
 
 **Q. What's the difference between Monifactory and Nomifactory CEu?**
 
-A comprehensive list of changes can be found [here](CHANGELOG.md)
+A comprehensive list of changes can be found [here](CHANGELOG.md).
 
 **Q. Can my PC run Monifactory?**
 
-Monifactory should run on any computer with a CPU newer than 2019. Allocating 6GB RAM or higher is recommended<br>
+Monifactory should run on any computer with a CPU newer than 2019. Allocating 6GB RAM or higher is recommended<br>.
 ``NOTE: If your computer has 8GB RAM or less, assume that Monifactory will not run on it``
 
 **Q. Can I play Monifactory on Peaceful mode?**
 
-Yes! Peaceful mode is the intended playstyle for Monifactory. Playing with mobs and hunger do not have any additional benefits in Moni, and all mob drops are attainable early through other methods
+Yes! Peaceful mode is the intended playstyle for Monifactory. Playing with mobs and hunger do not have any additional benefits in Moni, and all mob drops are attainable early through other methods.
 
 **Q. Will Monifactory be ported to 'X' Minecraft version?**
 
@@ -32,11 +32,11 @@ No, Create is not in Monifactory by default.
 
 **Q. Are Lithium and Sodium in the modpack?**
 
-No, but we have their respective port and fork, Radium and Embeddium
+No, but we have their respective port and fork, Radium and Embeddium.
 
 **Does the modpack come with shaders?**
 
-Not by default. Oculus is included to load your shaders of choice, however
+Not by default. Oculus is included to load your shaders of choice, however.
 
 **Q. Can you create or add 'X' mod to Monifactory?**
 
@@ -44,7 +44,7 @@ Create a feature request on the GitHub.
 
 **Q. Can I add 'X' mod to my instance of Monifactory?**
 
-By default, Monifactory only supports the mods included with it, and has *optional compat* for various mods, such as Create. Any other mods added may break progression and/or deviate from the intended experience. Note that support will not be provided for bugs related to mods not shipped with the pack
+By default, Monifactory only supports the mods included with it, and has *optional compat* for various mods, such as Create. Any other mods added may break progression and/or deviate from the intended experience. Note that support will not be provided for bugs related to mods not shipped with the pack.
 
 **Q. How do I play Monifactory Hard Mode/Harder Mode?**
 
