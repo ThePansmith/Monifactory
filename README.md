@@ -12,7 +12,7 @@
 </h1>
 
 ## Features
-- [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](https://github.com/ThePansmith/Monifactory/blob/main/CHANGELOG.md)
+- [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](CHANGELOG.md)
 - A complete overhaul of post-tank progression from Nomifactory CEu
 - Draconic Evolution and Avaritia have been replaced with new mechanics involving Sculk
 - A new, Harder difficulty mode for returning Nomi CEu Hard Mode players
@@ -63,6 +63,7 @@ To spice up your Monifactory experience, you can add one of the following mods t
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)
 2. [ComputerCraft: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)
 3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
+4. [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.

@@ -1,5 +1,5 @@
 ## Other Frequently Asked Questions:
-See more at [FAQ.md](https://github.com/ThePansmith/Monifactory/FAQ.md)
+See more at [FAQ.md](FAQ.md)
 
 **UI elements overlapping with EMI**
 

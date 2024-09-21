@@ -82,10 +82,10 @@ Thermal Expansion Dynamos will only output energy while producing it.
 
 **Q. Where do I report an issue?**
 
-Check the [Known Issues document](https://github.com/ThePansmith/Monifactory/KNOWN-ISSUES.md) first. If it's not there, report it to the [issue tracker](https://github.com/ThePansmith/Monifactory/issues), or get help on the [Discord](https://discord.gg/N8b2JEfAqb) in the #moni-support channel
+Check the [Known Issues document](KNOWN-ISSUES.md) first. If it's not there, report it to the [issue tracker](https://github.com/ThePansmith/Monifactory/issues), or get help on the [Discord](https://discord.gg/N8b2JEfAqb) in the #moni-support channel
 
 <hr>
 
 ## Contributing to Monifactory
 
-See more at [CONTRIBUTING.md](https://github.com/ThePansmith/Monifactory/CONTRIBUTING.md)
+See more at [CONTRIBUTING.md](CONTRIBUTING.md)
