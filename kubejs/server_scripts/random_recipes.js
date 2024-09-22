@@ -3,8 +3,14 @@
 ServerEvents.recipes(event => {
 
     // snad
-    event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
-    event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
+    if(isNormalMode) {
+        event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand']).id('snad:snad')
+        event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand']).id('snad:red_snad')
+    } else {
+        event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
+        event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
+    }
+    
 
     // snaded sand snad
     comapcting(event, 'kubejs:compressed_sand', 'minecraft:sand');
