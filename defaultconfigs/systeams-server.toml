@@ -12,14 +12,14 @@ replace_dynamo_augment_tooltips = true
 
 #For future reference: Boilers are 16x as efficient as Dynamos by default.
 #This means that Numismatic Boilers are 16 * 0.5 = 8x as efficient as Numismatic Dynamos,
-#While Stirling Boilers are 16 * 0.125 = 2x as efficient as Stirling Dynamos.
+#While Stirling Boilers are 16 * 0.25 = 4x as efficient as Stirling Dynamos.
 # -Xefyr
 
 ["Steam Values"]
 	#The number of mb of steam produced per RF of energy usually produced by the same fuel in a dynamo
 	#Note that this does not affect the steam dynamo's rates. That needs to be adjusted with a datapack
 	#Range: 0.05 ~ 100.0
-	stirling = 0.125
+	stirling = 0.25
 	#Range: 0.05 ~ 100.0
 	magmatic = 0.5
 	#Range: 0.05 ~ 100.0
