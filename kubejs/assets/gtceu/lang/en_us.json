@@ -1,14 +1,18 @@
-{
-  "material.gtceu.dragon_breath": "Dragon's Breath",
-  "material.gtceu.jean_gasoline": "JEAN Gasoline",
-  "material.gtceu.chlorine_triflouride": "Chlorine Triflouride",
-  "material.gtceu.tetraethyllead": "Tetraethyllead",
-  "material.gtceu.chloroethane": "Chloroethane",
-  "material.gtceu.sodium_lead_alloy": "Sodium-Lead Alloy",
+{ 
+  "__HM_RARE_EARTH__.header": "========================",
+  "__HM_RARE_EARTH__.flufff": "> Hard Mode Rare Earth <",
+  "__HM_RARE_EARTH__.footer": "========================",
+
   "material.gtceu.butanol": "Butanol",
   "material.gtceu.phosphorus_trichloride": "Phosphorus Trichloride",
   "material.gtceu.tributyl_phosphate": "Tributyl Phosphate",
   "material.gtceu.phosphoryl_chloride": "Phosphoryl Chloride",
+
+
+  "__TARANIUM_LINE__.header": "=================",
+  "__TARANIUM_LINE__.flufff": "> Taranium Line <",
+  "__TARANIUM_LINE__.footer": "=================",
+
   "material.gtceu.hexafluorosilicic_acid": "Hexafluorosilicic Acid",
   "material.gtceu.ultraacidic_residue": "Ultra-acidic Residue",
   "material.gtceu.dirty_hexafluorosilicic_acid": "Dirty Hexafluorosilicic Acid",
@@ -19,32 +23,46 @@
   "material.gtceu.tritium_hydride": "Tritium Hydride",
   "material.gtceu.helium_hydride": "Helium Hydride",
   "material.gtceu.dioxygen_difluoride": "Dioxygen Difluoride",
-  "material.gtceu.rhodium_sulfate_solution'": "Rhodium Sulfate Solution",
-  "material.gtceu.darmstadtite": "Darmstadtite",
-  "material.gtceu.dulysite": "Dulysite",
-  "material.gtceu.laurite": "Laurite",
-  "material.gtceu.cuprorhodsite": "Cuprorhodsite",
-  "material.gtceu.mana": "Mana Infused",
-  "material.gtceu.dark_soularium": "Dark Soularium",
-  "material.gtceu.stellar_alloy": "Stellar Alloy",
-  "material.gtceu.taranium": "Taranium",
+
   "material.gtceu.stone_residue": "Stone Residue",
   "material.gtceu.uncommon_residue": "Uncommon Residue",
   "material.gtceu.oxidised_residue": "Oxidised Residue",
   "material.gtceu.refined_residue": "Refined Residue",
   "material.gtceu.clean_inert_residue": "Clean Inert Residue",
-  "block.gtceu.basic_microverse_projector": "Basic Microverse Projector",
-  "block.gtceu.advanced_microverse_projector": "Advanced Microverse Projector",
-  "block.gtceu.advanced_microverse_projector_ii": "Advanced Microverse Projector II",
-  "block.gtceu.hyperbolic_microverse_projector": "Hyperbolic Microverse Projector",
-  "block.gtceu.naquadah_reactor_i": "Naquadah Reactor I",
-  "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
-  "gtceu.basic_microverse": "Basic Microverse Projector",
-  "gtceu.advanced_microverse": "Advanced Microverse Projector",
-  "gtceu.advanced_microverse_ii": "Advanced Microverse Projector II",
-  "gtceu.advanced_microverse_iii": "Hyperbolic Microverse Projector",
-  "gtceu.naquadah_reactor_i": "Naquadah Reactor I",
-  "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
+
+  "material.gtceu.taranium": "Taranium",
+
+
+  "__ORES__.header": "========",
+  "__ORES__.flufff": "> Ores <",
+  "__ORES__.footer": "========",
+
+  "material.gtceu.laurite": "Laurite",
+  "material.gtceu.cuprorhodsite": "Cuprorhodsite",
+
+
+  "__HM_ORES__.header": "==================",
+  "__HM_ORES__.flufff": "> Hard Mode Ores <",
+  "__HM_ORES__.footer": "==================",
+
+  "material.gtceu.darmstadtite": "Darmstadtite",
+  "material.gtceu.dulysite": "Dulysite",
+  
+
+  "__PARALLEL_HATCHES__.header": "====================",
+  "__PARALLEL_HATCHES__.flufff": "> Parallel Hatches <",
+  "__PARALLEL_HATCHES__.footer": "====================",
+
+  "block.gtceu.uhv_uhv_parallel_hatch": "Giga Parallel Control Hatch",
+  "block.gtceu.uev_uev_parallel_hatch": "Omega Parallel Control Hatch",
+  "gtceu.giga_parallel_hatch.desc": "Allows to run up to 1024 recipes in parallel",
+  "gtceu.omega_parallel_hatch.desc": "Allows to run up to 4096 recipes in parallel",
+
+
+  "__CUSTOM_MACHINES__.header": "===================",
+  "__CUSTOM_MACHINES__.flufff": "> Custom Machines <",
+  "__CUSTOM_MACHINES__.footer": "===================",
+
   "block.gtceu.lv_atomic_reconstructor": "§7Basic Atomic Reconstructor",
   "block.gtceu.mv_atomic_reconstructor": "§bAdvanced Atomic Reconstructor",
   "block.gtceu.hv_atomic_reconstructor": "§6Advanced Atomic Reconstructor II",
@@ -55,84 +73,106 @@
   "block.gtceu.uv_atomic_reconstructor": "§3Ultimate Atomic Reconstructor",
   "block.gtceu.uhv_atomic_reconstructor": "§4Epic Atomic Reconstructor",
   "block.gtceu.uev_atomic_reconstructor": "§aEpic Atomic Reconstructor II",
-  "gtceu.atomic_reconstruction": "Atomic Reconstruction",
-  "block.gtceu.omnic_forge": "Omnic Forge",
-  "gtceu.omnic_forge": "Omnic Forge",
-  "gtceu.large_material_press": "Large Material Press",
-  "tagprefix.perfect": "Perfect %s",
-  "material.gtceu.dilithium": "Dilithium",
-  "material.gtceu.restonia": "§cRestonia Crystal",
-  "material.gtceu.enori": "§7Enori Crystal",
-  "material.gtceu.void": "§8Void Crystal",
-  "material.gtceu.palis": "§9Palis Crystal",
-  "material.gtceu.diamatine": "§bDiamatine Crystal",
-  "material.gtceu.emeradic": "§aEmeradic Crystal",
-  "material.gtceu.restonia_empowered": "§cEmpowered Restonia Crystal",
-  "material.gtceu.enori_empowered": "§7Empowered Enori Crystal",
-  "material.gtceu.void_empowered": "§8Empowered Void Crystal",
-  "material.gtceu.palis_empowered": "§9Empowered Palis Crystal",
-  "material.gtceu.diamatine_empowered": "§bEmpowered Diamatine Crystal",
-  "material.gtceu.emeradic_empowered": "§aEmpowered Emeradic Crystal",
-  "material.gtceu.sunnarium": "Sunnarium",
-  "material.gtceu.enriched_sunnarium": "Enriched Sunnarium",
-  "material.gtceu.black_quartz": "Black Quartz",
-  "material.gtceu.charged_certus_quartz": "Charged Certus Quartz",
-  "block.gtceu.empowerment": "Empowerer",
-  "gtceu.empowerment": "Empowerment",
-  "material.gtceu.resonating_redstone": "Resonating Redstone Crystal",
-  "material.gtceu.ender_shard": "Ender Shard",
-  "material.gtceu.elemental_reduction_fluid": "Elemental Reduction Fluid",
-  "block.gtceu.greenhouse": "Greenhouse",
-  "gtceu.greenhouse": "Greenhouse",
-  "block.gtceu.extra_large_chemical_reactor": "Extra Large Chemical Reactor",
-  "gtceu.extra_large_chemical_reactor": "Extra Large Chemical Reactor",
-  "block.gtceu.discharger": "Discharger",
-  "gtceu.discharger": "Dischargement",
-  "block.gtceu.implosion_collider": "Implosion Collider",
-  "block.gtceu.subatomic_digital_assembler": "Subatomic Digital Assembler",
-  "block.gtceu.creative_energy": "Infinite GT Energy Unit Emitter",
-  "block.gtceu.creative_chest": "Creative Quantum Chest",
-  "block.gtceu.creative_tank": "Creative Quantum Tank",
-  "block.gtceu.simulation_supercomputer": "Simulation Supercomputer",
-  "gtceu.simulation_supercomputer": "Simulation Supercomputer",
-  "block.gtceu.loot_superfabricator": "Loot Superfabricator",
-  "gtceu.loot_superfabricator": "Loot Superfabricator",
-  "block.gtceu.shock_proof_cutting_casing": "Shock Proof Casing",
-  "gtceu.discharger.desc": "§8Discharges a massive amount of energy to perform recipes",
-  "gtceu.implosion_collider.desc": "§8Capable of smashing things together even faster than before.",
-  "gtceu.simulation_supercomputer.desc": "§8A high powered simulation device, capable of performing more complex simulations, faster than ever",
-  "gtceu.loot_superfabricator.desc": "§8A high powered fabrication device, capable of fabricating loot faster than ever",
-  "gtceu.greenhouse.desc": "§8A high powered UV ray chamber, capable of mass-growing even the most incomprehensible plants",
+
+
+  "__CUSTOM_MULTIS__.header": "=====================================",
+  "__CUSTOM_MULTIS__.flufff": "> Custom Multiblocks & Recipe Types <",
+  "__CUSTOM_MULTIS__.footer": "=====================================",
+
+  "block.gtceu.basic_microverse_projector": "Basic Microverse Projector",
+  "gtceu.basic_microverse": "Basic Microverse Projector",
   "gtceu.basic_microverse_projector.desc": "§8A machine capable of stabilizing projection into microverses for basic miner missions.",
+
+  "block.gtceu.advanced_microverse_projector": "Advanced Microverse Projector",
+  "gtceu.advanced_microverse": "Advanced Microverse Projector",
   "gtceu.advanced_microverse_projector.desc": "§8An advanced machine capable of stabilizing projection into microverses for complex missions into the deepest parts of space.",
+
+  "block.gtceu.advanced_microverse_projector_ii": "Advanced Microverse Projector II",
+  "gtceu.advanced_microverse_ii": "Advanced Microverse Projector II",
   "gtceu.advanced_microverse_projector_ii.desc": "§8An elite machine capable of stabilizing projection into microverses for exotic missions, including collapsing the microverse whole.",
+
+  "block.gtceu.hyperbolic_microverse_projector": "Hyperbolic Microverse Projector",
+  "gtceu.advanced_microverse_iii": "Hyperbolic Microverse Projector",
   "gtceu.hyperbolic_microverse_projector.desc": "§8An epic machine capable of stabilizing projection into hundreds of microverses at once.",
   "gtceu.hyperbolic_microverse_projector_2.desc": "Can perform all Microverse Missions.",
+
+  "block.gtceu.naquadah_reactor_i": "Naquadah Reactor I",
+  "gtceu.naquadah_reactor_i": "Naquadah Reactor I",
+
+  "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
+  "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
+
+  "block.gtceu.matter_alterator": "Matter Alterator",
+  "gtceu.atomic_reconstruction": "Atomic Reconstruction",
+
+  "block.gtceu.omnic_forge": "Omnic Forge",
+  "gtceu.omnic_forge": "Omnic Forge",
+
+  "gtceu.large_material_press": "Large Material Press",
+
+  "block.gtceu.empowerment": "Empowerer",
+  "gtceu.empowerment": "Empowerment",
+
+  "block.gtceu.greenhouse": "Greenhouse",
+  "gtceu.greenhouse": "Greenhouse",
+  "gtceu.greenhouse.desc": "§8A high powered UV ray chamber, capable of mass-growing even the most incomprehensible plants",
+
+  "block.gtceu.extra_large_chemical_reactor": "Extra Large Chemical Reactor",
+  "gtceu.extra_large_chemical_reactor": "Extra Large Chemical Reactor",
+
+  "block.gtceu.discharger": "Discharger",
+  "gtceu.discharger": "Dischargement",
+  "gtceu.discharger.desc": "§8Discharges a massive amount of energy to perform recipes",
+
+  "block.gtceu.implosion_collider": "Implosion Collider",
+  "gtceu.implosion_collider.desc": "§8Capable of smashing things together even faster than before.",
+
+  "block.gtceu.subatomic_digital_assembler": "Subatomic Digital Assembler",
+  "gtceu.subatomic_digital_assembly": "Subatomic Digital Assembly",
+  "gtceu.subatomic_digital_assembler.desc": "§8A complex machine capable of synthetizing certain technological marvels when provided with the required data",
+
+  "block.gtceu.simulation_supercomputer": "Simulation Supercomputer",
+  "gtceu.simulation_supercomputer": "Simulation Supercomputer",
+  "gtceu.simulation_supercomputer.desc": "§8A high powered simulation device, capable of performing more complex simulations, faster than ever",
+
+  "block.gtceu.loot_superfabricator": "Loot Superfabricator",
+  "gtceu.loot_superfabricator": "Loot Superfabricator",
+  "gtceu.loot_superfabricator.desc": "§8A high powered fabrication device, capable of fabricating loot faster than ever",
+  
   "block.gtceu.dimensional_superassembler":"Dimensional Superassembler",
   "gtceu.dimensional_superassembler.desc":"§8Uses dimensional warping to process hundreds of assembly line recipes at once.",
-  "gtceu.subatomic_digital_assembler.desc": "§8A complex machine capable of synthetizing certain technological marvels when provided with the required data",
-  "gtceu.subatomic_digital_assembly": "Subatomic Digital Assembly",
-  "gtceu.quintessence_infuser":"Quintessence Infusing",
+
   "block.gtceu.quintessence_infuser":"Quintessence Infuser",
+  "gtceu.quintessence_infuser":"Quintessence Infusing",
   "gtceu.quintessence_infuser.desc": "§8Uses intense rotational speeds to infuse large amounts of souls into objects at once.",
+
   "block.gtceu.rock_cycle_simulator":"Rock Cycle Simulator",
   "gtceu.rock_cycle_simulator":"Rock Cycle Simulation",
+
   "block.gtceu.universal_crystallizer": "Universal Crystallizer",
   "gtceu.universal_crystallizer": "Crystallization",
+
   "block.gtceu.actualization_chamber": "Actualization Chamber",
   "gtceu.actualization_chamber": "Actualization",
+  "gtceu.actualization_chamber.desc": "§8A powerful machine that harnesses the most complex of matters and turns it into raw materials",
+  
   "block.gtceu.cryococcal_reverberator": "Cryococcal Reverberator",
   "gtceu.reverberation": "Reverberation",
-  "gtceu.actualization_chamber.desc": "§8A powerful machine that harnesses the most complex of matters and turns it into raw materials",
-  "block.gtceu.uhv_uhv_parallel_hatch": "Giga Parallel Control Hatch",
-  "block.gtceu.uev_uev_parallel_hatch": "Omega Parallel Control Hatch",
+  
   "block.gtceu.atmospheric_accumulator": "Atmospheric Accumulator",
   "gtceu.atmospheric_accumulator.desc": "§8A large machine that can suck up large amounts of air at once.",
-  "block.gtceu.matter_alterator": "Matter Alterator",
+
   "block.gtceu.helical_fusion_reactor": "Helical Fusion Reactor",
   "gtceu.multiblock.helical_fusion_reactor.description": "The Helical Fusion Reactor is a very large multiblock structure used for fusing elements into heavier ones in parallel. For every Hatch it has, its buffer increases by 80M EU, and has a maximum of 1280M.",
-  "gtceu.giga_parallel_hatch.desc": "Allows to run up to 1024 recipes in parallel",
-  "gtceu.omega_parallel_hatch.desc": "Allows to run up to 4096 recipes in parallel",
+  
+
+  "__CREATIVE_MACHINES__.header": "=====================",
+  "__CREATIVE_MACHINES__.flufff": "> Creative Machines <",
+  "__CREATIVE_MACHINES__.footer": "=====================",
+  
+  "block.gtceu.creative_energy": "Infinite GT Energy Unit Emitter",
+  "block.gtceu.creative_chest": "Creative Quantum Chest",
+  "block.gtceu.creative_tank": "Creative Quantum Tank",  
 
 
   "__GENERIC_MATERIALS__.header": "=====================",
@@ -166,7 +206,31 @@
   "material.gtceu.osmiridiumyes": "Osmiridium 80/20",
   "material.gtceu.kaemanite": "Kaemanite",
   "material.gtceu.mythril": "§bMana Infused Metal§r",
-  "item.gtceu.mythril_ingot": "§bMana Infused Metal§r",
+  "material.gtceu.mana": "Mana Infused",
+  "material.gtceu.dark_soularium": "Dark Soularium",
+
+  "material.gtceu.dilithium": "Dilithium",
+  "material.gtceu.restonia": "§cRestonia Crystal",
+  "material.gtceu.enori": "§7Enori Crystal",
+  "material.gtceu.void": "§8Void Crystal",
+  "material.gtceu.palis": "§9Palis Crystal",
+  "material.gtceu.diamatine": "§bDiamatine Crystal",
+  "material.gtceu.emeradic": "§aEmeradic Crystal",
+  "material.gtceu.restonia_empowered": "§cEmpowered Restonia Crystal",
+  "material.gtceu.enori_empowered": "§7Empowered Enori Crystal",
+  "material.gtceu.void_empowered": "§8Empowered Void Crystal",
+  "material.gtceu.palis_empowered": "§9Empowered Palis Crystal",
+  "material.gtceu.diamatine_empowered": "§bEmpowered Diamatine Crystal",
+  "material.gtceu.emeradic_empowered": "§aEmpowered Emeradic Crystal",
+  "material.gtceu.sunnarium": "Sunnarium",
+  "material.gtceu.enriched_sunnarium": "Enriched Sunnarium",
+  "material.gtceu.black_quartz": "Black Quartz",
+  "material.gtceu.charged_certus_quartz": "Charged Certus Quartz",
+
+  "material.gtceu.resonating_redstone": "Resonating Redstone Crystal",
+  "material.gtceu.ender_shard": "Ender Shard",
+  "material.gtceu.elemental_reduction_fluid": "Elemental Reduction Fluid",
+
 
   "__POST_TANK_MATERIALS__.header": "=======================",
   "__POST_TANK_MATERIALS__.flufff": "> Post-Tank Materials <",
@@ -176,57 +240,86 @@
   "material.gtceu.monium": "Monium",
   "material.gtceu.activated_netherite": "Activated Netherite",
   "material.gtceu.omnic_acid": "Omnic Acid",
+  "material.gtceu.holmium_oxide": "Holmium Oxide",
 
-  "__CHEMICALS__.header": "=============",
-  "__CHEMICALS__.flufff": "> Chemicals <",
-  "__CHEMICALS__.footer": "=============",
+
+  "__HM_PROCESSING__.header": "========================",
+  "__HM_PROCESSING__.flufff": "> Hard Mode Processing <",
+  "__HM_PROCESSING__.footer": "========================",
 
   "material.gtceu.tungsten_trioxide": "Tungsten Trioxide",
-  "material.gtceu.beryllium_oxide": "Beryllium Oxide",
+
   "material.gtceu.niobium_pentoxide": "Niobium Pentoxide",
   "material.gtceu.tantalum_pentoxide": "Tantalum Pentoxide",
-  "material.gtceu.fluorite": "Fluorite",
   "material.gtceu.manganese_difluoride": "Manganese Difluoride",
+
   "material.gtceu.molybdenum_trioxide": "Molybdenum Trioxide",
   "material.gtceu.lead_chloride": "Lead Chloride",
-  "material.gtceu.wollastonite": "Wollastonite",
-  "material.gtceu.sodium_metavanadate": "Sodium Metavanadate",
+  
+
+  "__HM_GRAPHITE__.header": "================================",
+  "__HM_GRAPHITE__.flufff": "> Hard Mode Graphite/Hydrazine <",
+  "__HM_GRAPHITE__.footer": "================================",
+
   "material.gtceu.vanadium_pentoxide": "Vanadium Pentoxide",
-  "material.gtceu.ammonium_metavanadate": "Ammonium Metavanadate",
   "material.gtceu.phthalic_anhydride": "Phthalic Anhydride",
   "material.gtceu.ethylanthraquinone": "2-Ethylanthraquinone",
   "material.gtceu.hydrogen_peroxide": "Hydrogen Peroxide",
   "material.gtceu.hydrazine": "Hydrazine",
   "material.gtceu.acetone_azine": "Acetone Azine",
   "material.gtceu.graphene_oxide": "Graphene Oxide",
+  
+
+  "__KAPTON_K__.header": "============",
+  "__KAPTON_K__.flufff": "> Kapton K <",
+  "__KAPTON_K__.footer": "============",
+
   "material.gtceu.kapton_k": "Kapton K",
   "material.gtceu.durene": "Durene",
   "material.gtceu.pyromellitic_dianhydride": "Pyromellitic Dianhydride",
   "material.gtceu.dimethylformamide": "Dimethylformamide",
   "material.gtceu.aminophenol": "4-Aminophenol",
   "material.gtceu.oxydianiline": "4,4'-Oxydianiline",
-  "material.gtceu.antimony_pentafluoride": "Antimony Pentafluoride",
-  "material.gtceu.naquadah_oxide": "Naquadah Oxide",
-  "material.gtceu.pyromorphite": "Pyromorphite",
+
+
+  "__HM_NAQ_ORE__.header": "=====================",
+  "__HM_NAQ_ORE__.flufff": "> Hard Mode Naq Ore <",
+  "__HM_NAQ_ORE__.footer": "=====================",
+
   "material.gtceu.snowchestite": "Snowchestite",
+  "material.gtceu.pyromorphite": "Pyromorphite",
   "material.gtceu.naquadah_hydroxide": "Naquadah Hydroxide",
   "material.gtceu.caesium_hydroxide": "Caesium Hydroxide",
   "material.gtceu.neocryolite": "Neocryolite",
   "material.gtceu.naquadah_oxide_petro_solution": "Naquadah Oxide Petro Solution",
   "material.gtceu.naquadah_oxide_aero_solution": "Naquadah Oxide Aero Solution",
   "material.gtceu.hot_naquadah_oxide_neocryolite_solution": "Hot Naquadah Oxide Neocryolite Solution",
-  "material.gtceu.lead_metasilicate": "Lead Metasilicate",
-  "material.gtceu.holmium_oxide": "Holmium Oxide",
+
+
+  "__HM_NAQLINE__.header": "=====================",
+  "__HM_NAQLINE__.flufff": "> Hard Mode Naqline <",
+  "__HM_NAQLINE__.footer": "=====================",
+
+  "material.gtceu.antimony_pentafluoride": "Antimony Pentafluoride",
+  "material.gtceu.naquadah_oxide": "Naquadah Oxide",
+
+
+  "__SCALE_LINES__.header": "===============",
+  "__SCALE_LINES__.flufff": "> Scale Lines <",
+  "__SCALE_LINES__.footer": "===============",
+
   "material.gtceu.hydrofluoric_tantalum_solution": "Hydrofluoric Tantalum Solution",
   "material.gtceu.hydrofluoric_graphitic_tantalum_solution": "Hydrofluoric Graphitic Tantalum Solution",
   "material.gtceu.graphitic_tantalum": "Graphitic Tantalum",
   "material.gtceu.hydrochloric_manganese_solution": "Hydrochloric Manganese Solution",
   "material.gtceu.hydrochloric_dragon_scale_solution": "Hydrochloric Dragon Scale Solution",
+
   "material.gtceu.guardian_scale_slurry": "Guardian Scale Slurry",
 
-  "PECA.header": "==================",
-  "PECA.flufff": "> PECA chemicals <",
-  "PECA.footer": "==================",
+
+  "__PECA__.header": "==================",
+  "__PECA__.flufff": "> PECA chemicals <",
+  "__PECA__.footer": "==================",
 
   "material.gtceu.sodium_cyanide": "Sodium Cyanide",
   "material.gtceu.chloroacetic_mixture": "Chloroacetic Mixture",
@@ -276,9 +369,50 @@
   "material.gtceu.formic_acid": "Formic Acid",
   "material.gtceu.sodium_methoxide": "Sodium Methoxide",
 
-  "__MISC__.header": "===========",
-  "__MISC__.flufff": "> Misc. <",
-  "__MISC__.footer": "===========",
+  
+  "__HM_PLATLINE__.header": "======================",
+  "__HM_PLATLINE__.flufff": "> Hard Mode Platline <",
+  "__HM_PLATLINE__.footer": "======================",
 
-  "curios.identifier.gtceu_magnet": "Magnet"
+  "material.gtceu.rhodium_sulfate_solution'": "Rhodium Sulfate Solution",
+
+
+  "__JEAN__.header": "=================",
+  "__JEAN__.flufff": "> JEAN Gasoline <",
+  "__JEAN__.footer": "=================",
+
+  "material.gtceu.dragon_breath": "Dragon's Breath",
+  "material.gtceu.jean_gasoline": "JEAN Gasoline",
+  "material.gtceu.chlorine_triflouride": "Chlorine Triflouride",
+  "material.gtceu.tetraethyllead": "Tetraethyllead",
+  "material.gtceu.chloroethane": "Chloroethane",
+  "material.gtceu.sodium_lead_alloy": "Sodium-Lead Alloy",
+
+
+  "__MISC__.header": "=========",
+  "__MISC__.flufff": "> Misc. <",
+  "__MISC__.footer": "=========",
+
+  "item.gtceu.mythril_ingot": "§bMana Infused Metal§r",
+  "tagprefix.perfect": "Perfect %s",
+  "block.gtceu.shock_proof_cutting_casing": "Shock Proof Casing",
+  "curios.identifier.gtceu_magnet": "Magnet",
+
+
+  "__HM_MISC__.header": "============",
+  "__HM_MISC__.flufff": "> HM Misc. <",
+  "__HM_MISC__.footer": "============",
+
+  "material.gtceu.beryllium_oxide": "Beryllium Oxide",
+  "material.gtceu.fluorite": "Fluorite",
+
+
+  "__UNUSED__.header": "==========",
+  "__UNUSED__.flufff": "> Unused <",
+  "__UNUSED__.footer": "==========",
+
+  "material.gtceu.wollastonite": "Wollastonite",
+  "material.gtceu.sodium_metavanadate": "Sodium Metavanadate",
+  "material.gtceu.ammonium_metavanadate": "Ammonium Metavanadate",
+  "material.gtceu.lead_metasilicate": "Lead Metasilicate"
 }

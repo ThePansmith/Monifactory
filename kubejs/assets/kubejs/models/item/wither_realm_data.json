@@ -1,7 +1,7 @@
 {
     "parent":"item/generated",
     "textures": {
-      "layer0":"kubejs:item/data/lair_of_the_warden",
+      "layer0":"kubejs:item/data/wither_realm",
       "layer1":"kubejs:item/data/overlay"
     }
 }

@@ -18,8 +18,7 @@ StartupEvents.registry('item', event => {
     }
     event.create('microminer_t9').maxStackSize(16).texture("kubejs:item/microverse/microminer_t9")
     event.create('microminer_t10').maxStackSize(16).texture("kubejs:item/microverse/microminer_t10")
-    // Sorry for this monstrosity of a line, it's the only way I got it to work
-    event.create('microminer_t11').maxStackSize(16).parentModel("kubejs:item/microverse/microminer_t11").texture("kubejs:item/microverse/microminer_t11_base")
+    event.create('microminer_t11').maxStackSize(16).texture("kubejs:item/microverse/microminer_t11")
     event.create('microminer_t12').maxStackSize(16).texture("kubejs:item/microverse/microminer_t12")
 
     const pristine_matter = [
