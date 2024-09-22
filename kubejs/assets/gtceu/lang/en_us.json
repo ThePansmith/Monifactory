@@ -59,9 +59,25 @@
   "gtceu.omega_parallel_hatch.desc": "Allows to run up to 4096 recipes in parallel",
 
 
-  "__MULTIBLOCKS__.header": "=================================",
-  "__MULTIBLOCKS__.flufff": "> Custom Multiblocks & Machines <",
-  "__MULTIBLOCKS__.footer": "=================================",
+  "__CUSTOM_MACHINES__.header": "===================",
+  "__CUSTOM_MACHINES__.flufff": "> Custom Machines <",
+  "__CUSTOM_MACHINES__.footer": "===================",
+
+  "block.gtceu.lv_atomic_reconstructor": "§7Basic Atomic Reconstructor",
+  "block.gtceu.mv_atomic_reconstructor": "§bAdvanced Atomic Reconstructor",
+  "block.gtceu.hv_atomic_reconstructor": "§6Advanced Atomic Reconstructor II",
+  "block.gtceu.ev_atomic_reconstructor": "§5Advanced Atomic Reconstructor III",
+  "block.gtceu.iv_atomic_reconstructor": "§9Elite Atomic Reconstructor",
+  "block.gtceu.luv_atomic_reconstructor": "§dElite Atomic Reconstructor II",
+  "block.gtceu.zpm_atomic_reconstructor": "§cElite Atomic Reconstructor III",
+  "block.gtceu.uv_atomic_reconstructor": "§3Ultimate Atomic Reconstructor",
+  "block.gtceu.uhv_atomic_reconstructor": "§4Epic Atomic Reconstructor",
+  "block.gtceu.uev_atomic_reconstructor": "§aEpic Atomic Reconstructor II",
+
+
+  "__CUSTOM_MULTIS__.header": "=====================================",
+  "__CUSTOM_MULTIS__.flufff": "> Custom Multiblocks & Recipe Types <",
+  "__CUSTOM_MULTIS__.footer": "=====================================",
 
   "block.gtceu.basic_microverse_projector": "Basic Microverse Projector",
   "gtceu.basic_microverse": "Basic Microverse Projector",
@@ -86,16 +102,6 @@
   "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
   "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
 
-  "block.gtceu.lv_atomic_reconstructor": "§7Basic Atomic Reconstructor",
-  "block.gtceu.mv_atomic_reconstructor": "§bAdvanced Atomic Reconstructor",
-  "block.gtceu.hv_atomic_reconstructor": "§6Advanced Atomic Reconstructor II",
-  "block.gtceu.ev_atomic_reconstructor": "§5Advanced Atomic Reconstructor III",
-  "block.gtceu.iv_atomic_reconstructor": "§9Elite Atomic Reconstructor",
-  "block.gtceu.luv_atomic_reconstructor": "§dElite Atomic Reconstructor II",
-  "block.gtceu.zpm_atomic_reconstructor": "§cElite Atomic Reconstructor III",
-  "block.gtceu.uv_atomic_reconstructor": "§3Ultimate Atomic Reconstructor",
-  "block.gtceu.uhv_atomic_reconstructor": "§4Epic Atomic Reconstructor",
-  "block.gtceu.uev_atomic_reconstructor": "§aEpic Atomic Reconstructor II",
   "block.gtceu.matter_alterator": "Matter Alterator",
   "gtceu.atomic_reconstruction": "Atomic Reconstruction",
 
