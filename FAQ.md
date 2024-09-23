@@ -50,6 +50,23 @@ By default, Monifactory only supports the mods included with it, and has *option
 
 [Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardharder-mode-installation)
 
+**Q. How do I update the modpack?**
+*Make a backup first.*
+Your launcher's built-in update function should work most of the time.
+
+If it doesn't:
+1. Download an entirely new copy of Monifactory
+2. Copy the following folders from your old instance of Monifactory to the new instance:
+    `backups`
+    `journeymap`
+    `saves`
+    `schematics` (if you have any)
+    `shaderpacks` (if you have any)
+    `emi.json`
+    `options.txt`
+    `pack-mode-switcher` (If your modpack was not in Normal Mode)
+3. Adjust the pack mode of the new instance, if needed (Instructions above)
+
 **Q. How do I add optional compat mods?**
 
 [Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#Addon-Mods-AKA-Optional-Compats)
@@ -68,9 +85,25 @@ Essential is not officially supported, and various unsupported bugs and crashes 
 
 ### Tech Support
 
+**Q. Where should I build my base?**
+
+This is your decision to make - You don't ask others to decide what you should eat for lunch!
+If you want a comparison of the available dimensions:
+Overworld: Pretty landscapes & easy access to resources, but terrain can get in the way sometimes
+Void Dimension: Always day, but featureless and nothing to build off of. Good for potato computers
+Luna, Mars, Mercury, or Venus: Mostly featureless, flat terrain. You need Oxygen to breathe.
+Orbit: Similar to the Void Dimension, but you need Oxygen to breathe.
+Lost Cities Dimension: Cities cover most terrain, and are damaged. No Ores.
+Nether/End: Good atmosphere, but potentially hazardous. Same as in Vanilla.
+AE2 Spatial Storage: 128x128 size limit. Can be combined & traversed in creative ways.
+
 **Q. My EnderIO conduits aren't extracting!**
 
 Conduits are set by default to extract on high redstone input; click the redstone torch and switch to always on, low redstone, or whatever option you wish to use
+
+**Q. My Cleanroom isn't forming!**
+
+The entire top layer except the controller, edges & corners needs to be made of Cleanroom Filter Casings. The multi also needs an energy hatch and a maintenance hatch.
 
 **Q. Why is my UI so dark?**
 

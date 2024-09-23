@@ -1,6 +1,14 @@
 ## Other Frequently Asked Questions:
 See more at [FAQ.md](FAQ.md)
 
+**EnderIO fluid conduits too slow and not accepting Filters**
+
+This is a known issue with EnderIO - your best option is to use an alternative such as GregTech pipes, LaserIO, or something from the Addon Mods (Optional Compats)
+
+**EMI and/or AE2 having issues with GregTech tools**
+
+These mods don't handle NBT or tool-based crafting perfectly all the time, so you may encounter this issue occasionally. Try to transition to Assemblers or other machines ASAP. Machine crafting also offers improved material efficiency over tool crafting
+
 **UI elements overlapping with EMI**
 
 Switch to a lower GUI scale or tweak EMI's UI configs to your liking. Alternatively, disable EMI temporarily using Ctrl + O
