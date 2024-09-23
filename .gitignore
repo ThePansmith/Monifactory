@@ -104,3 +104,7 @@ kubejs/assets/gtceu/textures/item/material_sets/infinity/infinity_plate.xcf
 config/packmode.json
 config/gtceu.yaml
 config/darkmodeeverywhereshaders.json
+
+#Don't ignore the Create client config so we can remove the Main Menu config button
+#it gets in the way of the beautiful FancyMenu
+!/config/create-client.toml
