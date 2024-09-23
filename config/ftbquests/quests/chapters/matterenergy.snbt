@@ -476,7 +476,7 @@
 				""
 				"These can be filled with encoded &aPatterns&r to perform on-demand autocrafting. Any item pushed into an &aME Pattern Provider&r is digitized and placed in your ME Network storage."
 				""
-				"When adjacent to one or more &aMolecular Assemblers&r, crafting table patterns can be crafted. It will use as many adjacent &aMolecular Assemblers&r as possible, restricted by availability and number of &aCo-processors&r in your crafting CPU multiblock."
+				"When adjacent to one or more &aMolecular Assemblers&r, &3Crafting Table&r and &3Stonecutter&r patterns can be crafted. It will use as many adjacent &aMolecular Assemblers&r as possible, restricted by availability and number of &aCo-processors&r in your crafting CPU multiblock."
 				"{@pagebreak}"
 				"When adjacent to any other block, you can use &aprocessing patterns&r with a machine to insert items into the machine. Processing patterns require that the finished item is inserted back into the ME Network through &aInterfaces&r or &aPattern Providers&r."
 				""
