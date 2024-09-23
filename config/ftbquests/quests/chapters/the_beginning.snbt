@@ -693,8 +693,8 @@
 				type: "item"
 			}]
 			title: "&9Infiniter Water"
-			x: 1.0d
-			y: -0.5d
+			x: 1.25d
+			y: -1.5d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
@@ -2101,6 +2101,97 @@
 			title: "&9Steam Foundry"
 			x: 4.517857142857139d
 			y: 1.4285714285714306d
+		}
+		{
+			dependencies: [
+				"06E9B9DDDB245F38"
+				"273F3F8DD6A3DCC5"
+			]
+			description: [
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
+				""
+				"Also important to note that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
+				""
+				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, `connecting' the gadget to the inventory."
+				""
+				"For example, if you shift-right click a chest full of cobblestone, the gadget will use cobblestone from that chest to place blocks."
+				""
+				"By default, the config GUI is bound to &6G&r."
+			]
+			icon: "buildinggadgets2:gadget_building"
+			id: "5F9C7FB40AD2640B"
+			subtitle: "This pack has &bBuilding Gadgets&r."
+			tasks: [
+				{
+					id: "449B547CDED79AE3"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "30A321B32CDAF437"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "4763F5F3C0771FFA"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_copy_paste"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "284A671CC5192B50"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "51485964CFCB26B9"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+			]
+			title: "Inspector Gadget"
+			x: 3.5d
+			y: -8.75d
+		}
+		{
+			dependencies: [
+				"06E9B9DDDB245F38"
+				"47094A5717952699"
+			]
+			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
+			id: "39394D5596FF8BC8"
+			rewards: [{
+				id: "20D8F149F414F950"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "36817E3C33876798"
+				item: {
+					Count: 1
+					id: "enderio:electromagnet"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Electromagnet"
+			x: -3.0d
+			y: -6.0d
 		}
 	]
 	title: "The Beginning"
