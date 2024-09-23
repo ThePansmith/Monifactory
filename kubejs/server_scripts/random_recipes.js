@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
 
         //If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
         //Otherwise, people will face laggy items everywhere on the ground.
-        event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', '#forge:gems/ender_pearl')
+        event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
     } else {
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
