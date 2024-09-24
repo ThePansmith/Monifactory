@@ -161,10 +161,7 @@ ItemEvents.tooltip(tooltip => {
 
     let benches = ['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'];
     benches.forEach(bench => {
-        tooltip.addAdvanced(bench, (item, adv, text) => {
-            text.add(1, 'Recipes can also be performed in the §3Stonecutter§f,')
-            text.add(2, 'which can be automated with §bAE2§f\'s §3Molecular Assemblers§f.')
-        })
+        tooltip.add(bench, ['Recipes can also be performed in the §3Stonecutter§f,', 'which can be automated with §bAE2§f\'s §3Molecular Assemblers§f.'])
     })
 
     if (Platform.isLoaded('tempad')) {
