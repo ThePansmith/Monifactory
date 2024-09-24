@@ -30,6 +30,7 @@ ItemEvents.tooltip(tooltip => {
 
     //DML Data Model
     tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
+    tooltip.add('hostilenetworks:data_model', '§7Upgrades when used in the §3Simulation Chamber')
     
     //DML Matters
     tooltip.add('hostilenetworks:overworld_prediction', '§7Experience per item: 10')
