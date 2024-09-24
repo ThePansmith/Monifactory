@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
     if (!isHarderMode) {
-
         event.remove({ id: /item_import_bus_/})
         event.remove({ id: /item_export_bus_/})
         event.remove({ id: /fluid_hatch_/, type: 'gtceu:assembler'})
