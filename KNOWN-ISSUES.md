@@ -30,24 +30,24 @@ Odds are your config doesn't match the ones on the server. If the server is runn
 GregTech uses dynamically generated textures - reloading your resource packs may break this. Restart your game to fix it
 
 ## Other Issues with Mods
-Monifactory is built off of multiple mods that are at various stages of completion - it is not uncommon for a bug to be caused by one of these mods instead of Monifactory specifically.
+Monifactory contains multiple mods that are at different stages of completion - it is not uncommon for a bug to be caused by one of these mods instead of Monifactory specifically.
 If you are unsure whether a specific mod may be causing a bug, try to replicate the bug on a *new instance with only the mods necessary to re-create the issue.* If you can do this, then the bug should be reported to that mod's developers instead of those of Monifactory
 
-The most frequent offenders are listed below
+The most frequent offenders are listed below:
 
-**Issues with EnderIO Modern**
+**Issues with [EnderIO Modern](https://github.com/Team-EnderIO/EnderIO)**
 
-EnderIO 1.20.1 is not in a great state. Updates and fixes are infrequent, so most features may have bugs or cause crashes - some items and blocks are made unobtainable for this reason.
-For item and fluid conduits specifically, try to use alternatives such as GregTech pipes, LaserIO, or a logisics option offered by an Optional Compat such as XNet
+EnderIO 1.20.1 is not in a great state. Updates and fixes are infrequent, so most features may have bugs or cause crashes - as such, some items and blocks are made unobtainable for this reason.
+For item and fluid conduits specifically, try to use alternatives such as GregTech pipes, LaserIO, or XNet if you have it installed
 
-**Issues with Nuclearcraft:Neoteric**
+**Issues with [Nuclearcraft: Neoteric](https://github.com/igentuman/NuclearCraft-Neoteric)**
 
-Nuclearcraft:Neoteric is not in a great state either. Many features (including some aspects of fission reactors!) are incomplete or buggy
+Nuclearcraft: Neoteric is not in a great state either. Many features (including some aspects of fission reactors!) are incomplete or buggy
 
-**Issues with Gregtech CEu: Modern**
+**Issues with [Gregtech CEu: Modern](https://github.com/GregTechCEu/GregTech-Modern)**
 
-GTCEu is being reworked and added to on an ongoing basis. You may run into the occasional bug, but these are addressed relatively quickly - please ensure you aren't creating a duplicate report before notifying the devs of an issue.
+GTM is being reworked and developed actively. You may run into the occasional bug, but these are addressed relatively quickly. Please ensure you aren't creating a duplicate report before notifying the devs of an issue.
 
-**Issues with AE2**
+**Issues with [AE2](https://github.com/AppliedEnergistics/Applied-Energistics-2/)**
 
-Although bugs with AE2 are infrequent, the AE2 team has shown little inclination to address bugs on 1.20.1 so your best option is to find a workaround after submitting a bug report.
+Although bugs with AE2 are infrequent, the AE2 team has shown little inclination to address bugs on 1.20.1, so your best option is to find a workaround after submitting a bug report.
