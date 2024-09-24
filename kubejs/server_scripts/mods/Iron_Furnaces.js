@@ -111,34 +111,34 @@ ServerEvents.recipes(event => {
     .EUt(30)
     .circuit(8)
 
-    var stonefurnaceupgrade = [
-        ['silver', 'iron', 'copper', 'silver'],
-        ['gold', 'copper', 'silver', 'gold'],
-        ['diamond', 'silver', 'gold', 'diamond'],
+    const stonefurnaceupgrade = ['iron', 'copper', 'silver', 'gold', 'diamond']
 
-    ]
+    //Start from silver furnace
+    for (let index = 2; index < stonefurnaceupgrade.length; index++) {
+        let mat1 = stonefurnaceupgrade[index];
+        let mat2 = stonefurnaceupgrade[index-1];
+        let mat3 = stonefurnaceupgrade[index-2];
 
-    stonefurnaceupgrade.forEach(([tier, mat1, mat2, mat3]) => {
-        event.recipes.gtceu.assembler('kubejs:stone_to_' + tier + '_furnace')
-        .itemInputs('minecraft:furnace', `2x gtceu:${mat1}_plate`, `4x gtceu:${mat2}_plate`, `4x gtceu:${mat3}_plate`)
-        .itemOutputs(`ironfurnaces:${tier}_furnace`)
-        .duration(300)
-        .EUt(30)
-        .circuit(8)
-        })
+        event.recipes.gtceu.assembler('kubejs:stone_to_' + mat1 + '_furnace')
+            .itemInputs('minecraft:furnace', `4x gtceu:${mat1}_plate`, `4x gtceu:${mat2}_plate`, `2x gtceu:${mat3}_plate`)
+            .itemOutputs(`ironfurnaces:${mat1}_furnace`)
+            .duration(300)
+            .EUt(GTValues.VA[index-1])
+            .circuit(8)
+    }
 
     event.recipes.gtceu.assembler('kubejs:stone_to_obsidian_furnace')
     .itemInputs('2x minecraft:furnace', '4x gtceu:gold_plate', '8x gtceu:diamond_plate', '4x gtceu:obsidian_plate')
     .itemOutputs('ironfurnaces:obsidian_furnace')
     .duration(400)
-    .EUt(30)
+    .EUt(GTValues.VA[GTValues.EV])
     .circuit(8)
 
     event.recipes.gtceu.assembler('kubejs:stone_to_netherite_furnace')
     .itemInputs('5x minecraft:furnace', '20x gtceu:diamond_plate', '20x gtceu:obsidian_plate', '4x minecraft:netherite_ingot')
     .itemOutputs('ironfurnaces:netherite_furnace')
     .duration(500)
-    .EUt(30)
+    .EUt(GTValues.VA[GTValues.IV])
     .circuit(8)
 
     var furnaceupgrade = [
