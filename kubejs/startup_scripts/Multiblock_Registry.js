@@ -285,7 +285,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('R', Predicates.blocks("kubejs:enderium_micro_miner_core"))
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
-                "gtceu:block/machine/autoclave", false)
+                "gtceu:block/multiblock/gcym/large_autoclave", false)
     }
 
     // Basic Microverse Projector
