@@ -196,7 +196,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK2"
+			title: "&2Fusion Reactor Mk.II"
 			x: 0.5d
 			y: -3.4928571428571473d
 		}
@@ -361,7 +361,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK3"
+			title: "&2Fusion Reactor Mk.III"
 			x: 5.0d
 			y: -3.4928571428571473d
 		}
@@ -390,10 +390,7 @@
 			y: -3.4928571428571473d
 		}
 		{
-			dependencies: [
-				"069773756716E192"
-				"5585B254BA2D708C"
-			]
+			dependencies: ["069773756716E192"]
 			description: [
 				"&6Americium Ingots&r are obtained by placing &9NuclearCraft&r Americium isotopes into an &3Extractor&r and solidifying the fluid. As with other GT materials, use the ingot or fluid to forge the other forms."
 				""
@@ -929,55 +926,9 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK1"
+			title: "&2Fusion Reactor Mk.I"
 			x: -4.0d
 			y: -3.5d
-		}
-		{
-			dependencies: ["6728FB92FD3A2084"]
-			dependency_requirement: "one_completed"
-			description: [
-				"&oNote: this quest accepts Americium 241, 242, or 243."
-				""
-				"&6Americium 242&r and &6Americium 243&r are used to make &6LEA-242 Fuel&r."
-				""
-				"There's also &6Americium 241&r, but this is only useful for making RTGs (which produce small amounts of RF continuously) or decaying down into &6Neptunium&r."
-				""
-				"&6Depleted LEA 242 Fuels&r&r will return a lot of &6Curium 246&r, and small amounts of the other three isotopes."
-			]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			icon: "nuclearcraft:fuel_americium_hea_242"
-			id: "5585B254BA2D708C"
-			subtitle: "You only need one of this quest's dependencies"
-			tasks: [{
-				id: "16F29EB016AF9A04"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "nuclearcraft:americium_241"
-							}
-							{
-								Count: 1b
-								id: "nuclearcraft:americium_242"
-							}
-							{
-								Count: 1b
-								id: "nuclearcraft:americium_243"
-							}
-						]
-					}
-				}
-				title: "Americium"
-				type: "item"
-			}]
-			title: "Americium Fission"
-			x: -1.0d
-			y: -8.75d
 		}
 		{
 			dependencies: ["3A69EE21B3089929"]

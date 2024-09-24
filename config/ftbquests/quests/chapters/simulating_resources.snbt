@@ -73,6 +73,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "552C09235D8FE4F1"
 				item: "thermal:dynamo_numismatic"

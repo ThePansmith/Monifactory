@@ -33,7 +33,7 @@
 			id: "4A06A6BAEA6B6E24"
 			linked_quest: "73C1AB31431B5C11"
 			shape: "hexagon"
-			x: 10.5d
+			x: 11.0d
 			y: 25.0d
 		}
 		{
@@ -141,6 +141,26 @@
 			size: 2.0d
 			x: 7.5d
 			y: 25.0d
+		}
+		{
+			id: "1CC86021C7B35D80"
+			linked_quest: "7B1D349ADD9D1140"
+			x: 16.0d
+			y: 26.5d
+		}
+		{
+			id: "7E3F8641F38F97A4"
+			linked_quest: "15A43AB700CADF2D"
+			x: 16.0d
+			y: 25.0d
+		}
+		{
+			id: "2AA4038AED6CF93D"
+			linked_quest: "6FDF37EE046349F7"
+			shape: "hexagon"
+			size: 1.25d
+			x: 9.5d
+			y: 26.5d
 		}
 	]
 	quests: [
@@ -303,7 +323,7 @@
 			description: [
 				"When you first started the pack, we told you that ore doubling can wait, and that's true... But you will need to start doing some rudimentary ore processing for &ebyproducts&r."
 				""
-				"Byproducts are additional materials that can only be obtained from processing ores in certain machines. For example, there is no \"Gallium Ore\" or \"Arsenic Ore\". You get &6Gallium&r and &6Arsenic &ras a byproduct from processing other ores."
+				"Byproducts are additional materials that can only be obtained from processing ores in certain machines. For example, there is no \"Gallium Ore\" or \"Arsenic Ore\". You get &6Gallium&r and &6Arsenic &ras a byproduct from processing other ores &ein a machine that is HV or higher.&r"
 				""
 				"Ores have various means of processing, and eventually you'll use machine pipelines to process ores in specific ways to optimize what byproducts you gain. You can look at the &6Ore Byproduct Page&r of an ore in &bEMI&r, accessed by pressing 'U' on an ore and navigating to the byproduct tab, to see the required route to obtain desired byproducts. "
 				""
@@ -1229,13 +1249,13 @@
 			description: [
 				"With tier three circuits in hand, it's time to make a &3Distillation Tower&r, which is the gatekeeper for more advanced plastics like &6Epoxy&r and doing petrochemistry."
 				""
-				"The Distillation Tower is a highly flexible multiblock structure, able to be anywhere from &62 blocks high to up to 13 high&r (12 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. &cAny output fluids in excess of available buses are voided&r. "
-				""
+				"The Distillation Tower is a highly flexible multiblock structure, able to be anywhere from &62 blocks high to up to 13 high&r (12 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. &cIf the number of fluid outputs from the recipe exceeds the number of available hatches or those hatches are too small to hold the output, the recipe will not run&r. "
+				"{@pagebreak}"
 				"What you need the Distillation Tower for initially is to break down &9Oil&r and &9Fermented Biomass&r into useful resources.&9 Oil&r distillation, with its four outputs, will require a &efive-block-high Distillation Tower&r (the quest materials are for such a tower; if you want to build it bigger, you will need &ean additional 7 casings and 1 fluid output per floor&r)."
 				""
 				"Any recipe with more than four output fluids (like &9Fermented Biomass&r) will need a larger tower. Make sure to increase the height of your tower to accommodate all of the outputs you want to keep. Also check the voltage requirements of the recipes, as many Distillation Tower recipes need higher voltages than MV. &eYou can swap out your Energy Input for a higher tier one when that time comes&r. Also, any recipe that has an item output will need an &6Output Bus&r, anywhere on the bottom layer."
-				""
-				"The tower we'll be building at first is 3x3x5 (LxWxH), with a hollow center. The &6Fluid Input Hatch&r &2can go anywhere on the bottom layer.&r. The &6controller&r goes in the middle of an outer edge of the bottom layer. The &6Energy Input Hatch&r can go wherever you can fit it on the bottom layer. The rest of the 3x3 must be filled with &6Clean Stainless Steel Casings&r.&2 You also need a Maintenance Hatch, which can go anywhere on the structure.&r Each level above that is a ring of 7 Clean Stainless Steel Casings, one &6Fluid Output&r and nothing in the center, except for the topmost layer which needs an eighth casing to fill in the center, capping off the top. "
+				"{@pagebreak}"
+				"The tower we'll be building at first is 3x3x5 (LxWxH), with a hollow center. The &6Fluid Input Hatch&r &2can go anywhere on the bottom layer.&r. The &6controller&r goes in the middle of an outer edge of the bottom layer. The &6Energy Input Hatch&r can go wherever you can fit it on the bottom layer. The rest of the 3x3 must be filled with &6Clean Stainless Steel Casings&r.&2 Each level above that is a ring of 7 Clean Stainless Steel Casings, one &6Fluid Output&r and nothing in the center, except for the topmost layer which needs an eighth casing to fill in the center, capping off the top. "
 				""
 				"For distilling fluids which only have one useful output, like &9Biomass&r, it is recommended to use single-block Distilleries, due to their energy efficiency and generally lower costs."
 			]
@@ -1955,7 +1975,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
+			x: 9.5d
 			y: 23.5d
 		}
 		{
@@ -1981,7 +2001,7 @@
 				type: "item"
 			}]
 			title: "Ender Fluid Conduits"
-			x: 10.5d
+			x: 11.0d
 			y: 23.5d
 		}
 		{
@@ -2003,30 +2023,8 @@
 				type: "item"
 			}]
 			title: "Vibrant Alloy Conduits"
-			x: 12.0d
+			x: 12.5d
 			y: 23.5d
-		}
-		{
-			dependencies: ["73C1AB31431B5C11"]
-			description: [
-				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack."
-				""
-				"Paired with a self-sustaining &bHostile Neural Networks&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
-				""
-				"Just like other &bThermal Expansion&r dynamos, the &6Numismatic Dynamo&r can be given tier upgrades to produce more power and gain access to more &aAugment Slots&r."
-			]
-			disable_toast: true
-			id: "2F538E24FE66CD14"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "25F41D2CDC426E5A"
-				item: "thermal:dynamo_numismatic"
-				type: "item"
-			}]
-			title: "Numismatic Power"
-			x: 12.0d
-			y: 25.0d
 		}
 		{
 			dependencies: [
@@ -2047,32 +2045,6 @@
 				type: "item"
 			}]
 			x: 14.5d
-			y: 25.0d
-		}
-		{
-			dependencies: ["0607A59215F0F8B3"]
-			description: ["Flying faster, even nicer."]
-			id: "1BC8DBBBBB1E17E4"
-			rewards: [{
-				id: "7B35C4CB085983B8"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [{
-				id: "3959B38E4D99E1BC"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:energetic"
-					}
-				}
-				match_nbt: true
-				type: "item"
-			}]
-			title: "Ironman 3"
-			x: 16.0d
 			y: 25.0d
 		}
 		{
@@ -2099,31 +2071,6 @@
 		}
 		{
 			dependencies: ["64F45D98FA48D834"]
-			description: ["Flying faster is nice."]
-			id: "053BCBAC10A9AF1F"
-			rewards: [{
-				id: "46C34055456881EF"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				id: "78EEFDF0D1B695A3"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:electrical_steel"
-					}
-				}
-				match_nbt: true
-				type: "item"
-			}]
-			title: "Ironman 2"
-			x: 16.0d
-			y: 26.5d
-		}
-		{
-			dependencies: ["64F45D98FA48D834"]
 			description: ["Two &aCapacitor Banks&r can be grafted together with a &6Double-Layer Capacitor&r and &6Electrical Steel&r to create an &aAdvanced Capacitor Bank&r, which stores four times as much RF as the basic bank."]
 			id: "09EED0C4106265BC"
 			rewards: [{
@@ -2137,7 +2084,7 @@
 				item: "enderio:advanced_capacitor_bank"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 12.5d
 			y: 26.5d
 		}
 		{
@@ -2158,7 +2105,7 @@
 				item: "enderio:vibrant_capacitor_bank"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: 26.5d
 		}
 		{
@@ -2320,29 +2267,6 @@
 			title: "&9Steam Separator"
 			x: 3.0d
 			y: -1.0d
-		}
-		{
-			dependencies: [
-				"1E498F509DB1D460"
-				"1BC8DBBBBB1E17E4"
-			]
-			description: ["The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."]
-			id: "74BD1A246B9CF784"
-			rewards: [{
-				count: 2
-				id: "337976C834A2A48E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			subtitle: "I'm running out of MCU puns."
-			tasks: [{
-				id: "3240962B7D1154AF"
-				item: "better_angel_ring:angel_ring"
-				type: "item"
-			}]
-			title: "&9Captain... Marvel? IDK"
-			x: 17.5d
-			y: 25.0d
 		}
 	]
 	title: "Early Game"

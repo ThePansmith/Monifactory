@@ -73,6 +73,18 @@
 			x: 35.5d
 			y: 15.5d
 		}
+		{
+			id: "3A3FFBE01F09FB26"
+			linked_quest: "55074143B559493F"
+			x: 37.0d
+			y: 12.0d
+		}
+		{
+			id: "7891D352106D66FD"
+			linked_quest: "0A9BC922CF76F48A"
+			x: 38.5d
+			y: 12.0d
+		}
 	]
 	quests: [
 		{
@@ -445,11 +457,7 @@
 		}
 		{
 			dependencies: ["46C6F922B4ADCC8C"]
-			description: [
-				"A very power-efficient, if slow before upgrades, means of creating plates. Also the only way to directly make plates from single gems."
-				""
-				"&9It's also able to compact items into other things as well, such as gears."
-			]
+			description: ["The &3Aquatic Entangler&r is an alternative to the &bGregtech&r &3Fisher&r for producing &6Fish&r. You may find it to be useful later to produce &6Mincemeat&r en masse."]
 			id: "7045BE273C44BA35"
 			rewards: [{
 				id: "54871D72B9A05DF7"
@@ -459,11 +467,10 @@
 			shape: "square"
 			tasks: [{
 				id: "16A558E310D05EC5"
-				item: "thermal:machine_press"
+				item: "thermal:device_fisher"
 				type: "item"
 			}]
-			title: "&9Multiservo Press"
-			x: 5.0d
+			x: 4.0d
 			y: 8.5d
 		}
 		{
@@ -498,7 +505,7 @@
 				""
 				"Unfortunately, it is super hot. You'll need to cool it in a &3Vacuum Freezer&r for it to be usable."
 				""
-				"You should have set up a &3Vaccum Freezer&r for &6Kanthal&r, but if you haven't done it yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set an Ore Dictionary Storage Bus on the input bus of the freezer, set it to 'forge:hot_ingots', and set it to a high piority. This will accept any new Hot Ingots entering you're system, and eliminates the need for a big conduit network."
+				"You should have set up a &3Vaccum Freezer&r for &6Kanthal&r, but if you haven't done it yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set an Tag Storage Bus on the input bus of the freezer, set it to 'forge:hot_ingots', and set it to a high piority. This will accept any new Hot Ingots entering you're system, and eliminates the need for a big conduit network."
 				""
 				"Don't encode the Hot Ingot in a pattern though!"
 			]
@@ -764,7 +771,7 @@
 				""
 				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Kanthal Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Chemical Bath&r or &3Vacuum Freezer&r."
 				""
-				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Ore Dictionary Filter&r set to 'forge:hot_ingots' with a high piority."
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Tag Filter&r set to 'forge:hot_ingots' with a high piority."
 			]
 			id: "74832ED7B78A6AEA"
 			rewards: [{
@@ -2624,60 +2631,6 @@
 			y: 13.5d
 		}
 		{
-			dependencies: ["27A80F018F59EF1E"]
-			description: ["Carry &l&o&neven more&r stuff."]
-			id: "1410354FC249B19D"
-			shape: "hexagon"
-			tasks: [{
-				id: "63E826016B3C8755"
-				item: {
-					Count: 1
-					id: "sophisticatedbackpacks:diamond_backpack"
-					tag: {
-						contentsUuid: [I;
-							1998719540
-							-2126561006
-							-1970026112
-							791982398
-						]
-						inventorySlots: 108
-						upgradeSlots: 5
-					}
-				}
-				type: "item"
-			}]
-			x: 38.5d
-			y: 12.0d
-		}
-		{
-			dependencies: [
-				"54C3B1B782FDF57F"
-				"27A80F018F59EF1E"
-			]
-			description: [
-				"Having unlocked &6Signalum&r, at long last you can make &aSignalum Integral Components&r!"
-				""
-				"Dynamos operate at &a500% of base power generation and fuel burn rate&r."
-				""
-				"Machines operate at &a500% of base speed&r."
-			]
-			id: "347983576B8C27F3"
-			rewards: [{
-				id: "13E68D7CFD79D206"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "7B56F268A1701B03"
-				item: "thermal:upgrade_augment_4"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 37.0d
-			y: 12.0d
-		}
-		{
 			dependencies: [
 				"072DB633006E78B7"
 				"7D39A4D0CC886796"
@@ -3232,6 +3185,19 @@
 			title: "&9JEAN Gasoline"
 			x: 49.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["46C6F922B4ADCC8C"]
+			description: ["The &3Sequential Fabricator&r is an alternative to the &bEnderIO&r &3Crafter&r and the &bExtendedCrafting&r &3Auto Crafting Table&r. It is the most intuitive of the three, and can handle bucket crafting using Fluids."]
+			id: "62C8DB9874421C79"
+			subtitle: "More reliable than a Crafter"
+			tasks: [{
+				id: "5F057A7E53C35A16"
+				item: "thermal:machine_crafter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.5d
 		}
 	]
 	title: "Mid Game"
