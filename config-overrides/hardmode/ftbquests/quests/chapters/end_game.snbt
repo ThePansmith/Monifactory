@@ -655,9 +655,9 @@
 		{
 			dependencies: ["4261BDA34D716EC8"]
 			description: [
-				"&7&oUh boss? I think putting the Universe Creation Data in the Subatomic Digital Assembler was a bad idea.&r"
+				"&7&oUh boss? I think putting the &6Universe Creation Data&r &7&oin the Subatomic Digital Assembler was a bad idea.&r"
 				""
-				"Attempting to replicate Universe Creation Data will instead corrupt the data, giving you this unsightly mess."
+				"Attempting to replicate Universe Creation Data will instead &eshatter the universe inside&r, giving you this unsightly mess."
 				""
 				"Not all may be lost, though..."
 			]
@@ -665,10 +665,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3F79F8E984CF6A2A"
-				item: "kubejs:corrupted_universe_data"
+				item: "kubejs:shattered_universe_data"
 				type: "item"
 			}]
-			title: "&9Corrupted Universe Data"
+			title: "&9Shattered Universe Data"
 			x: 31.0d
 			y: -18.0d
 		}
@@ -808,19 +808,19 @@
 				"1D00150456DEF379"
 			]
 			description: [
-				"Sending out this corrupted data with some shattered star data will return &9Shattered Universe Data&r.  "
+				"Forcefully combining this shattered universe data with some shattered star data will return &6Corrupted Universe Data&r - a realm with &eglitched duplicates of assorted valuable resources.&r"
 				""
-				"Using this data alongside some infinity catalysts will return multiple Hearts of The Universe, making a nice net profit."
+				"Using this data alongside some infinity catalysts will return multiple &6Hearts of The Universe&r, making a nice net profit."
 			]
 			id: "769047385AAC71B2"
 			shape: "hexagon"
 			subtitle: "Sometimes you gotta spend money to make money"
 			tasks: [{
 				id: "45C0AD6F1EC8334B"
-				item: "kubejs:shattered_universe_data"
+				item: "kubejs:corrupted_universe_data"
 				type: "item"
 			}]
-			title: "&9Shattered Universe Data"
+			title: "&9Corrupted Universe Data"
 			x: 28.5d
 			y: -18.0d
 		}
