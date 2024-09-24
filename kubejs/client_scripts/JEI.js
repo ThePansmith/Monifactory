@@ -165,11 +165,6 @@ JEIEvents.hideItems(event => {
 
     //Sophisticated Experience
     event.hide(/xp_pump_upgrade/)
-    
-    // Chipped
-    // Adding this in case chipped is okay to be hidden since it adds a ton of items
-    //event.hide(/chipped:*/)
-    event.hide(['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'])
 
     //Greg Milk
     event.hide('gtceu:milk')

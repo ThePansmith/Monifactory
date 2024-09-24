@@ -160,6 +160,11 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('item.kubejs.infinity_dust_block.tooltip'))
     })
 
+    let benches = ['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'];
+    benches.forEach(bench => {
+        tooltip.add(bench, ['Recipes can also be performed in the §3Stonecutter§f,', 'which can be automated with §bAE2§f\'s §3Molecular Assemblers§f.'])
+    })
+
     if (Platform.isLoaded('tempad')) {
         tooltip.add('tempad:tempad', '§6Uses Monipennies as fuel');
     }
