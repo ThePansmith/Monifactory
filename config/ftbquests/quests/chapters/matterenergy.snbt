@@ -27,7 +27,7 @@
 			id: "14426BB19924AD5E"
 			linked_quest: "5C4E189A3E401566"
 			shape: "hexagon"
-			x: 2.5d
+			x: 5.5d
 			y: -1.5d
 		}
 	]
@@ -708,13 +708,13 @@
 				type: "item"
 			}]
 			title: "Digital Storage At Last"
-			x: 2.25d
-			y: -4.0d
+			x: 1.125d
+			y: -1.5d
 		}
 		{
 			dependencies: [
 				"680C4363C268B223"
-				"1F4D2DAF4267DB77"
+				"133FB7996362498C"
 			]
 			description: ["Unformatted disks always have a hard limit of 63 distinct types of items, but each step up has roughly four times the total storage space of the prior disk."]
 			id: "72AFBEFCEAE86EC1"
@@ -730,8 +730,8 @@
 				type: "item"
 			}]
 			title: "4k Item Storage"
-			x: 5.5d
-			y: -4.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["72AFBEFCEAE86EC1"]
@@ -748,8 +748,8 @@
 				type: "item"
 			}]
 			title: "16k Item Storage"
-			x: 5.5d
-			y: -6.5d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["15AE607E2EDD0369"]
@@ -767,7 +767,7 @@
 				type: "item"
 			}]
 			title: "64k Item Storage"
-			x: 3.5d
+			x: 2.5d
 			y: -6.5d
 		}
 		{
@@ -778,7 +778,7 @@
 			description: [
 				"Firstly, you will need a &3Matter Condenser&r. Stick a &664k ME Storage Component&r in, change the mode to 'Singularity', and stuff lots of items (or fluids) in, &9done easily with a infinity cell&r."
 				""
-				"If you don't have that, you can surround it with &6Dense Cobblestone Generators&r."
+				"If you don't have that, you can provide it with the output of regular &6Water&r or &6Cobblestone&r generation methods."
 				"{@pagebreak}"
 				"After you have made the &eSingularity&r you will need from the &3Matter Condenser&r, you need to setup a &aQuantum Ring Multiblock&r. Build a 3 by 3 vertical ring with your &6Quantum Rings&r, leaving a hole in the middle. Finally, stick your &6Quantum Link Chamber&r in the hole, and connect it to your ME system. If you built it correctly, the textures of the rings should combine, leaving you with a &aMultiblock&r."
 				""
@@ -829,7 +829,7 @@
 				}
 			]
 			title: "&9AE2 Everywhere!"
-			x: 1.5d
+			x: 1.25d
 			y: -6.5d
 		}
 		{
@@ -916,8 +916,8 @@
 				type: "item"
 			}]
 			title: "&9256k Item Storage"
-			x: 3.5d
-			y: -8.0d
+			x: 5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["6F32A8739D8E792A"]
@@ -1128,8 +1128,8 @@
 				}
 			]
 			title: "&9Infinitest Water and Stone"
-			x: 5.5d
-			y: -8.0d
+			x: 1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6F32A8739D8E792A"]
@@ -1451,7 +1451,7 @@
 			}]
 			title: "&9MEGA Cells"
 			x: 7.25d
-			y: -8.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["295E3D32083676E6"]

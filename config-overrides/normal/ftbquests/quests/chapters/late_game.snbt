@@ -382,7 +382,7 @@
 			}]
 			title: "Crystal Growing"
 			x: 0.0d
-			y: 12.25d
+			y: 11.0d
 		}
 		{
 			dependencies: ["40E8C7CEE285D702"]
@@ -742,11 +742,14 @@
 				"51A463024F35DC2E"
 				"025092551C0A20B6"
 				"115B96B2092D671E"
+				"069773756716E192"
 			]
 			description: [
 				"&2Wetware and crystal-related processes require some stronger sterilisation.&r"
 				""
 				"You will need to build another &3Cleanroom&r to run these recipes inside. Instead of &3Filter Casings&r, use &3Sterilizing Filter Casings&r in the top face."
+				""
+				"These casings are expensive! You'll need &3Fusion Mk.II&r to get the &6Tritanium&r."
 				""
 				"Note that a Sterile Cleanroom cannot handle recipes which require regular Cleanrooms."
 			]
@@ -1080,7 +1083,7 @@
 			}]
 			title: "&2Enderium Double Plates"
 			x: 9.0d
-			y: 12.25d
+			y: 11.0d
 		}
 		{
 			dependencies: ["4F2A97487AE923CE"]
@@ -1350,6 +1353,7 @@
 		}
 		{
 			dependencies: ["424413BBCE3FD3BF"]
+			dependency_requirement: "one_completed"
 			description: [
 				"&2There are 3 materials you will need from processing Naquadah: Enriched Naquadah (Nq+), Naquadria (Nq*), and Trinium (Ke). "
 				""
@@ -1371,6 +1375,7 @@
 				type: "item"
 			}]
 			size: 1.5d
+			subtitle: "You only need complete one of this quest's tasks to move on"
 			tasks: [
 				{
 					id: "4B280E1FCC5B8DDC"
@@ -1418,7 +1423,7 @@
 			}]
 			title: "&2Enriched Naquadah"
 			x: 13.0d
-			y: 12.25d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -1470,7 +1475,7 @@
 			}]
 			title: "&2Trinium Coils"
 			x: 19.25d
-			y: 12.25d
+			y: 14.0d
 		}
 		{
 			dependencies: ["15FAEE3F625265F4"]
@@ -1649,7 +1654,7 @@
 			}]
 			title: "&2Europium Ingot"
 			x: 23.25d
-			y: 12.25d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1735,7 +1740,7 @@
 				}
 			]
 			title: "&2Fusion Reactor MK1"
-			x: 21.25d
+			x: 22.0d
 			y: 12.25d
 		}
 		{
@@ -1800,7 +1805,7 @@
 			}]
 			title: "LuV Power Storage"
 			x: 23.25d
-			y: 10.25d
+			y: 9.75d
 		}
 		{
 			dependencies: ["5FE96C30454A0374"]
@@ -2669,8 +2674,8 @@
 				type: "item"
 			}]
 			title: "Endgame"
-			x: 19.25d
-			y: 10.25d
+			x: 20.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["595F205B551A53C9"]
@@ -2708,9 +2713,9 @@
 				"5199E6FAA4B699CD"
 			]
 			description: [
-				"Interestingly enough, sculk itself functions great as a &9biobattery&r, being able to store and quickly release mass amounts of energy, perfect for some upcoming items. The &9sculk charger&r should be able to get started in tacking advantage of it."
+				"Interestingly enough, &eSculk itself functions great as a biobattery&r, being able to store and quickly release mass amounts of energy. The &3Sculk Charger&r should be able to get you started in tacking advantage of it."
 				""
-				"To use it, set the recipe &ein the same way you would for an autocrafting table&r, then place an inventory (such as a barrel on top), and connect power to the charger and a pylon. Items can be extacted from the charger in any manner."
+				"To use it, set the recipe in the same way you would for an &3Auto Crafting Table&r, then place an inventory (such as a Barrel) on top, and connect power to &eboth the charger and a nearby pylon&r. Items can be extacted from the charger in any manner."
 				""
 				"The charger and pylon themselves &ehave extreme throughput&r, so don't worry about having to wait for it to craft items."
 			]

@@ -7,7 +7,44 @@
 	icon: "gtceu:electric_blast_furnace"
 	id: "2763DAD954E0EED8"
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "5B0F1DA574E0A141"
+			linked_quest: "6ABF927014F8B79D"
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			id: "7584F9D503A3180E"
+			linked_quest: "4542BF5E00FCBEA1"
+			x: 8.5d
+			y: -5.5d
+		}
+		{
+			id: "7AEC3CB9FDF51CB6"
+			linked_quest: "28854E7AC91786E9"
+			x: 8.5d
+			y: -7.0d
+		}
+		{
+			id: "12C41B95C25D306A"
+			linked_quest: "126ED4A0AEA05DCD"
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			id: "252271853F4352D1"
+			linked_quest: "1F976B197DEFF654"
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			id: "21BA9CD00A0158CC"
+			linked_quest: "503CA19637471E6E"
+			x: 4.5d
+			y: 6.25d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["2D31856F6EF1ED69"]
@@ -906,7 +943,7 @@
 				""
 				"1) A &aDiamond Pickaxe&r or &aDiamond Mining Hammer&r."
 				""
-				"2) A &aPlatinum Mining Hammer&r (not pickaxe though)."
+				"2) A &aSteel Pickaxe&r"
 				""
 				"Later. you can use a &3Rock Breaker&r at voltage &aHV&r or higher to make &6Obsidian&r without spending &6Lava&r!"
 			]
@@ -960,62 +997,6 @@
 			title: "Grains Of Infinity"
 			x: 8.5d
 			y: -3.0d
-		}
-		{
-			dependencies: [
-				"1CA6D620309F2B9E"
-				"3BD20358F137E7C6"
-			]
-			description: ["Better flying."]
-			id: "4C2FE08AF5EF37F7"
-			rewards: [{
-				count: 2
-				id: "4990CA3675F1EDAC"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5117F1809E9134E3"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:hardened"
-					}
-				}
-				match_nbt: true
-				type: "item"
-			}]
-			x: 8.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["4C2FE08AF5EF37F7"]
-			description: [
-				"Even better flying."
-				""
-				"You're not getting up to Resonant for a long time, just FYI."
-			]
-			id: "1657FEC07998C9D0"
-			rewards: [{
-				id: "67FF2BDD5D4AC075"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				id: "77DC5C373B34E731"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:reinforced"
-					}
-				}
-				match_nbt: true
-				type: "item"
-			}]
-			x: 8.5d
-			y: -7.0d
 		}
 		{
 			dependencies: ["3BD20358F137E7C6"]
@@ -1132,55 +1113,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["025543EDB0A4AC22"]
-			description: [
-				"What?!"
-				"&6STEAM DYNAMO&r is evolving!"
-				""
-				"Upgrade kits can be applied to Thermal Expansion Dynamos, machines, and even Portable Tanks. Machines and dynamos get additional augment slots."
-				""
-				"When applied to a dynamo, it increases the &apower generation and fuel burn rate to 150%&r."
-				""
-				"Allows machines operate at &a150% of base power per tick&r. The more power a machine can use, the faster it works."
-			]
-			id: "356DA8DE256356B8"
-			tasks: [{
-				id: "26BC97C8FD16C12D"
-				item: "thermal:upgrade_augment_1"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 8.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["7842EC1C389C4B7E"]
-			description: [
-				"Being able to fly is nice. This is the first jetpack that uses &bEnderIO&r materials."
-				""
-				"There's also a quest chain for &bThermal Expansion&r material Jetpacks (starting with the &6Leadstone Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
-			]
-			id: "3A18C673D76382E9"
-			rewards: [{
-				id: "444D3A12D42D30E5"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5FFAD74ABDA85AAA"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:conductive_iron"
-					}
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: 0.5d
-		}
-		{
 			dependencies: ["62BBD1F6767A4D90"]
 			description: [
 				"&3Electrolyzers&r use electricity to separate items into their more basic components."
@@ -1241,52 +1173,6 @@
 			title: "Hydrogen and Oxygen"
 			x: 8.5d
 			y: 2.0d
-		}
-		{
-			dependencies: ["3F6EDC2481D5877F"]
-			description: ["Carry &oeven more&r stuff."]
-			icon: {
-				Count: 1
-				id: "sophisticatedbackpacks:iron_backpack"
-				tag: {
-					contentsUuid: [I;
-						890972236
-						1590249428
-						-1212807776
-						575640463
-					]
-					inventorySlots: 54
-					upgradeSlots: 2
-				}
-			}
-			id: "15808BD9C5DBA0F7"
-			rewards: [{
-				id: "3A6C03B13D469DDC"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "209DE065BB54505D"
-				item: {
-					Count: 1
-					id: "sophisticatedbackpacks:iron_backpack"
-					tag: {
-						contentsUuid: [I;
-							890972236
-							1590249428
-							-1212807776
-							575640463
-						]
-						inventorySlots: 54
-						upgradeSlots: 2
-					}
-				}
-				type: "item"
-				weak_nbt_match: true
-			}]
-			title: "&9Better Backpacks"
-			x: 4.5d
-			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1757,7 +1643,7 @@
 				""
 				"Similar controls are available for the &aFluid Filter&r when placed inside a &6Fluid Regulator&r."
 				""
-				"Additionally, the &aOre Dictionary Filter&r&r is a powerful tool that has a specialized filter which uses ore dictionary entries and &2uses regular expressions (regex)&r, e. g. \"&6ingotHot*&r\" will match all hot ingots, \"&6dustRegular*&r\" will match all regular dusts, and \"&6dustTiny*&r\" will match all tiny piles."
+				"Additionally, the &aTag Filter&r&r is a powerful tool that has a specialized filter which uses Tags and &regular expressions (regex)&r, e. g. \"&6ingotHot*&r\" will match all hot ingots, \"&6dustRegular*&r\" will match all regular dusts, and \"&6dustTiny*&r\" will match all tiny piles."
 				""
 				"All &bGregTech&r Filters can be configured using ghost items from &bEMI&r."
 			]
@@ -1891,40 +1777,6 @@
 			title: "&2Pyrolyse Oven"
 			x: 10.5d
 			y: 5.0d
-		}
-		{
-			dependencies: [
-				"3AB0402B19DD5BA8"
-				"15808BD9C5DBA0F7"
-			]
-			description: ["Carry &o&leven more&r stuff."]
-			id: "1C2088A496D8FE4F"
-			rewards: [{
-				id: "4E4E7320F0994D1D"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "554C5636BB994E79"
-				item: {
-					Count: 1
-					id: "sophisticatedbackpacks:gold_backpack"
-					tag: {
-						contentsUuid: [I;
-							-2079088966
-							795101541
-							-1099241216
-							-1042767112
-						]
-						inventorySlots: 81
-						upgradeSlots: 3
-					}
-				}
-				type: "item"
-			}]
-			title: "&9Even Better Backpacks"
-			x: 4.5d
-			y: 6.25d
 		}
 		{
 			dependencies: ["5301E546BAA69844"]

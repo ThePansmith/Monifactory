@@ -468,6 +468,11 @@
 				}
 			}
 			id: "1F976B197DEFF654"
+			rewards: [{
+				id: "704ED841DA5BC038"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7F9D573211B5B2FB"
 				item: {
@@ -499,6 +504,11 @@
 			description: ["Carry &o&leven more&r stuff."]
 			disable_toast: true
 			id: "503CA19637471E6E"
+			rewards: [{
+				id: "68A04B6D946072DA"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7AE450006E9274BE"
 				item: {
@@ -568,7 +578,7 @@
 				type: "xp_levels"
 				xp_levels: 5
 			}]
-			subtitle: "&6STEAM DYNAMO&r is evolving!"
+			subtitle: "What?! &6STEAM DYNAMO&r is evolving!"
 			tasks: [{
 				id: "78E3752A857221D8"
 				item: "thermal:upgrade_augment_1"
@@ -614,6 +624,11 @@
 			]
 			disable_toast: true
 			id: "55074143B559493F"
+			rewards: [{
+				id: "233CDA5C0B9CDB1A"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "square"
 			tasks: [{
 				id: "22B125A4AD3E034B"
@@ -933,7 +948,7 @@
 				""
 				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Kanthal Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Chemical Bath&r or &3Vacuum Freezer&r."
 				""
-				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Ore Dictionary Filter&r set to 'ingotHot*' with a high piority."
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Tag Filter&r set to 'ingotHot*' with a high piority."
 			]
 			disable_toast: true
 			id: "4005450FC9363880"
@@ -1225,13 +1240,11 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
+			dependencies: ["3A5387B2003177B2"]
 			description: [
 				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
 				""
 				"There's also a quest chain for &bEnderIO&r Jetpacks (starting with the &6Conductive Iron Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
-				""
-				"If the &6Jetpack&r overview and information from &bThe One Probe&r conflict, The One Probe may be moved using &6/topcfg&r."
 			]
 			disable_toast: true
 			id: "712023557B5B1812"
@@ -1259,6 +1272,11 @@
 			]
 			disable_toast: true
 			id: "6ABF927014F8B79D"
+			rewards: [{
+				id: "62368D332C0269E6"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "31C521D0A2BB2C03"
 				item: {
@@ -1281,6 +1299,11 @@
 			description: ["Flying faster is nice."]
 			disable_toast: true
 			id: "7B1D349ADD9D1140"
+			rewards: [{
+				id: "49D423562296D2C1"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [{
 				id: "201BBD5AAF78AE0C"
 				item: {
@@ -1349,29 +1372,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["4542BF5E00FCBEA1"]
-			description: [
-				"Even better flying."
-				""
-				"You're not getting up to Resonant for a long time, just FYI."
-			]
-			disable_toast: true
-			id: "2D46EC96DB37ED8A"
-			tasks: [{
-				id: "25694A15F26F5483"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:reinforced"
-					}
-				}
-				type: "item"
-			}]
-			x: 15.5d
-			y: -5.5d
-		}
-		{
 			dependencies: [
 				"1349044BF8C04A12"
 				"15A43AB700CADF2D"
@@ -1397,7 +1397,7 @@
 		{
 			dependencies: [
 				"1FE8D35B4A5BFA16"
-				"2D46EC96DB37ED8A"
+				"28854E7AC91786E9"
 			]
 			description: [
 				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
@@ -1406,6 +1406,12 @@
 			]
 			disable_toast: true
 			id: "2923E98849358E16"
+			rewards: [{
+				count: 2
+				id: "44AA63D5750C74A0"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			subtitle: "I'm running out of MCU puns."
 			tasks: [{
 				id: "1E1C020C525B7F47"
@@ -1589,11 +1595,18 @@
 		{
 			dependencies: ["5601A05D8361551D"]
 			description: ["The MAX voltage lacks machines to call it's own, with the primary usage of it's circuits being to craft the quantum chest."]
+			icon: "gtceu:max_machine_hull"
 			id: "11FDFB08CD48D66E"
 			subtitle: "There can be only one!"
 			tasks: [{
 				id: "703CDB7D8BF05A55"
-				item: "gtceu:max_machine_hull"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/max"
+					}
+				}
 				type: "item"
 			}]
 			title: "&9MAX Circuit"
@@ -1607,10 +1620,17 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["Circuits along this line are UIV, and can all be substituted in recipes."]
+			icon: "gtceu:uiv_machine_hull"
 			id: "4177C4BD329C38DA"
 			tasks: [{
 				id: "168A6D29177E8DBD"
-				item: "gtceu:uiv_machine_hull"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/uiv"
+					}
+				}
 				type: "item"
 			}]
 			title: "&9UIV Circuits"
@@ -1625,10 +1645,17 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["Circuits along this line are UEV, and can all be substituted in recipes."]
+			icon: "gtceu:uev_machine_hull"
 			id: "0B923E8ED6161CA8"
 			tasks: [{
-				id: "1DC59BD73D749A60"
-				item: "gtceu:uev_machine_hull"
+				id: "19787E3988B87A4B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:circuits/uev"
+					}
+				}
 				type: "item"
 			}]
 			title: "&9UEV Circuits"
@@ -2080,7 +2107,7 @@
 				""
 				"Once built, it must be well-maintained and powered for a while to clean the inside. The Cleanroom's power draw will decrease once it fully cleans itself. Recipes requiring the Cleanroom will &conly&r run when inside a &cfully-cleaned&r Cleanroom; if not, the recipe will not start, or recipe progress might be lost. (Recipe inputs will &enever be voided&r.)"
 				"{@pagebreak}"
-				"The Cleanroom can be built in any size between 5x5x5 and 15x15x15. The Controller is placed in the center of the top face, and the rest of the top face is built from &3Filter Casings&r. The rest of the wall space is filled with &3Plascrete&r."
+				"The Cleanroom can be built in any size between 5x5x5 and 15x15x15. The Controller is placed in the center of the top face, and the rest of the top face is built from &3Filter Casings&r, save for the edges and corners. The rest of the wall and floor space is filled with &3Plascrete&r."
 				""
 				"For transfer between the clean environment and the outside world:"
 				""
@@ -2090,8 +2117,8 @@
 				""
 				"- Your AE network through &bGregTech&r &3Hulls&r (of any tier)."
 				""
-				"- Players through regular &3Doors&r. The room remains clean when doors are opened."
-				""
+				"- Players through &3Iron Doors&r. The room remains clean when doors are opened."
+				"{@pagebreak}"
 				"Apart from the \"official\" solutions, non-physical methods of transfer such as &3Ender Chests&r might be effective. &bApplied Energistics&r &3P2P Tunnels&r may also fit your liking."
 				""
 				"You will also need an &3Energy &rand &3Maintenance Hatch &rfor cleaning. &3Cleanroom Glass&r can replace any &3Plascrete&r, apart from the edges."
@@ -2187,7 +2214,7 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2HV Circuit Assembling Machine"
+			title: "&2HV Circuit Assembler"
 			x: -2.0d
 			y: -7.0d
 		}
@@ -2287,7 +2314,7 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2EV Circuit Assembling Machine"
+			title: "&2EV Circuit Assembler"
 			x: -0.5d
 			y: -7.0d
 		}
@@ -2413,7 +2440,7 @@
 				item: "gtceu:iv_circuit_assembler"
 				type: "item"
 			}]
-			title: "IV Circuit Assembling Machine"
+			title: "&2IV Circuit Assembler"
 			x: 1.0d
 			y: -7.0d
 		}
@@ -2533,7 +2560,7 @@
 				item: "gtceu:luv_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2LuV Circuit Assembling Machine"
+			title: "&2LuV Circuit Assembler"
 			x: 2.5d
 			y: -7.0d
 		}
@@ -2690,7 +2717,7 @@
 				item: "gtceu:zpm_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2ZPM Circuit Assembling Machine"
+			title: "&2ZPM Circuit Assembler"
 			x: 4.0d
 			y: -7.0d
 		}
@@ -2829,7 +2856,7 @@
 		}
 		{
 			dependencies: ["6DF2C1E88BE7CE5F"]
-			description: ["[MISSING DESCRIPTION]"]
+			description: ["&6Omnium Coils&r are final coil type you will need to make At &a15000K&r, they're capable of smelting every material and make your EBF look &4f&6a&eb&au&2l&3o&9u&ds&5."]
 			id: "59C70B40D865995D"
 			shape: "hexagon"
 			tasks: [{
@@ -2877,6 +2904,29 @@
 			}]
 			x: 22.0d
 			y: 13.0d
+		}
+		{
+			dependencies: ["4542BF5E00FCBEA1"]
+			description: [
+				"Even better flying."
+				""
+				"You're not getting up to Resonant for a long time, just FYI."
+			]
+			disable_toast: true
+			id: "28854E7AC91786E9"
+			tasks: [{
+				id: "16B665773AD92D10"
+				item: {
+					Count: 1
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:reinforced"
+					}
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: -5.5d
 		}
 	]
 	title: "Progression"
