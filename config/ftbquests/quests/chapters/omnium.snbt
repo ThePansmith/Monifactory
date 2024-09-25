@@ -919,6 +919,23 @@
 			y: 8.75d
 		}
 		{
+			id: "5928FCBF99CF031B"
+			rewards: [{
+				id: "4C56D9E2FB1115EE"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "24B242E71551DAD6"
+				item: "kubejs:solidified_bromine"
+				type: "item"
+			}]
+			title: "Element 032: Bromine"
+			x: 6.5d
+			y: 8.75d
+		}
+		{
 			id: "7C55E6EBB28BF5C2"
 			rewards: [{
 				id: "5B12AEC267F0062D"
@@ -1527,7 +1544,7 @@
 				type: "item"
 			}]
 			title: "Element ???: Trinium"
-			x: 2.0d
+			x: 0.5d
 			y: 19.25d
 		}
 		{
@@ -1597,23 +1614,6 @@
 			title: "Element 110: Darmstadtium"
 			x: 0.5d
 			y: 13.25d
-		}
-		{
-			id: "75489CBC9AABA80D"
-			rewards: [{
-				id: "1A6A4F69C8C9FAE0"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "65D45DB6200284B7"
-				item: "gtceu:cryolobus_ingot"
-				type: "item"
-			}]
-			title: "Element ???: cryolobus"
-			x: 0.5d
-			y: 19.25d
 		}
 		{
 			id: "39588577CDBFCAE4"
@@ -1697,7 +1697,7 @@
 				type: "item"
 			}]
 			title: "Element ???: Naquadah"
-			x: 3.5d
+			x: 2.0d
 			y: 19.25d
 		}
 		{
@@ -1987,24 +1987,6 @@
 			title: "Nothing"
 			x: -10.0d
 			y: 17.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "5928FCBF99CF031B"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7EC633A5B8AD5F97"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 6.5d
-			y: 8.75d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -2680,6 +2662,7 @@
 				"21000D112770C852"
 				"28558A445F62D737"
 				"47E4558362202D5D"
+				"5928FCBF99CF031B"
 			]
 			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
 			id: "739F7BF2A90B278A"

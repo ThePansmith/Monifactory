@@ -129,6 +129,7 @@ ServerEvents.recipes(event => {
 			'copper_ingot',
 			'gtceu:zinc_ingot',
 			'gtceu:gallium_ingot',
+			'kubejs:solidified_bromine',
 			'gtceu:arsenic_dust',
 			'kubejs:solidified_krypton',
 			'gtceu:yttrium_ingot',
@@ -175,7 +176,6 @@ ServerEvents.recipes(event => {
 			'gtceu:tritanium_ingot',
 			'gtceu:duranium_ingot',
 			'gtceu:trinium_ingot',
-			'gtceu:cryolobus_ingot',
 			'gtceu:naquadah_ingot',
 			'gtceu:tiny_nether_star_dust',
 		]
