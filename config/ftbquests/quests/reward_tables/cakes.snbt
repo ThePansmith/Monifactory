@@ -4,6 +4,7 @@
 	order_index: 0
 	rewards: [
 		{ item: "telepastries:overworld_cake" }
+		{ item: "telepastries:lost_city_cake" }
 		{ item: "telepastries:custom_cake" }
 	]
 	title: "Cakes"
