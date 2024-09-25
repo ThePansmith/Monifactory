@@ -919,23 +919,6 @@
 			y: 8.75d
 		}
 		{
-			id: "5928FCBF99CF031B"
-			rewards: [{
-				id: "0BF8B84D766D401A"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "24B242E71551DAD6"
-				item: "kubejs:solidified_bromine"
-				type: "item"
-			}]
-			title: "Element 032: Bromine"
-			x: 6.5d
-			y: 8.75d
-		}
-		{
 			id: "7C55E6EBB28BF5C2"
 			rewards: [{
 				id: "5B12AEC267F0062D"
@@ -950,6 +933,23 @@
 			}]
 			title: "Element 033: Arsenic"
 			x: 8.0d
+			y: 8.75d
+		}
+		{
+			id: "5928FCBF99CF031B"
+			rewards: [{
+				id: "0BF8B84D766D401A"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "24B242E71551DAD6"
+				item: "kubejs:solidified_bromine"
+				type: "item"
+			}]
+			title: "Element 035: Bromine"
+			x: 11.0d
 			y: 8.75d
 		}
 		{
@@ -2525,7 +2525,7 @@
 				value: 1
 			}]
 			title: "Nothing"
-			x: 11.0d
+			x: 6.5d
 			y: 8.75d
 		}
 		{
