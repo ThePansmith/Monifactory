@@ -921,7 +921,7 @@
 		{
 			id: "5928FCBF99CF031B"
 			rewards: [{
-				id: "4C56D9E2FB1115EE"
+				id: "0BF8B84D766D401A"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
@@ -2625,7 +2625,6 @@
 				"293A7F5F0A58E5F3"
 				"33131617D0919A5B"
 				"4978EC7E56F89AB0"
-				"75489CBC9AABA80D"
 				"63CFADCCE0688239"
 				"275EB687F851025B"
 				"72414246D5FBBFA9"
