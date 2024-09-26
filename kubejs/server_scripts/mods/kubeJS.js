@@ -178,6 +178,13 @@ ServerEvents.recipes(event => {
         .notConsumable('gtceu:ball_casting_mold')
         .duration(500)
         .EUt(16)
+
+    event.recipes.gtceu.fluid_solidifier('solidified_bromine')
+        .inputFluids(Fluid.of('gtceu:bromine'))
+        .itemOutputs('kubejs:solidified_bromine')
+        .notConsumable('gtceu:ball_casting_mold')
+        .duration(500)
+        .EUt(16)
     
     event.recipes.gtceu.fluid_solidifier('mote_of_omnium')
         .inputFluids(Fluid.of('gtceu:omnium', 16))
