@@ -1929,6 +1929,8 @@
 			description: [
 				"You can use the &e/sethome&r command to register where your house is, and &e/home&r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There are some &erestrictions&r on this though: &eit takes a few seconds of standing still to activate&r and there is a &ecooldown&r between uses."
 				""
+				"Additionally if your server admin allows it, you can use JourneyMap to teleport to even more waypoints. Access JourneyMap waypoints by N key."
+				""
 				"Later on you'll discover other means of teleportation."
 			]
 			disable_toast: true
@@ -1942,7 +1944,7 @@
 				title: "Checkmark"
 				type: "checkmark"
 			}]
-			title: "Registering Homes"
+			title: "Map and Registering Homes"
 			x: -9.75d
 			y: 1.0d
 		}
