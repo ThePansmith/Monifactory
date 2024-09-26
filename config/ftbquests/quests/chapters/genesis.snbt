@@ -1927,9 +1927,9 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"You can use the &e/sethome&r command to register where your house is, and &e/home&r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There are some &erestrictions&r on this though: &eit takes a few seconds of standing still to activate&r and there is a &ecooldown&r between uses."
+				"If your server admin allows it, you can use JourneyMap to create and teleport to waypoints you set. You can access JourneyMap waypoints by hitting the N key by default. Use this feature to gather resources quickly."
 				""
-				"Additionally if your server admin allows it, you can use JourneyMap to teleport to even more waypoints. Access JourneyMap waypoints by N key."
+				"If JourneyMap teleportation is disabled, you can still use the &e/sethome&r command to register where your house is, and &e/home&r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There are some &erestrictions&r on this though: there is a limit on the number of homes you can set, &eit takes a few seconds of standing still to activate&r and there is a &ecooldown&r between uses."
 				""
 				"Later on you'll discover other means of teleportation."
 			]
@@ -1944,7 +1944,7 @@
 				title: "Checkmark"
 				type: "checkmark"
 			}]
-			title: "Map and Registering Homes"
+			title: "JourneyMap and Registering Homes"
 			x: -9.75d
 			y: 1.0d
 		}
