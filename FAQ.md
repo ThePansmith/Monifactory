@@ -105,7 +105,7 @@ Conduits are set by default to extract on high redstone input; click the redston
 
 The entire top layer except the controller, edges & corners needs to be made of Cleanroom Filter Casings. The multi also needs an energy hatch and a maintenance hatch.
 
-**Q. My Rocket isn't forming!
+**Q. My Rocket isn't forming!**
 
 Refer to the [GCYR Wiki](https://github.com/Argent-Matter/gcyr/wiki)
 
