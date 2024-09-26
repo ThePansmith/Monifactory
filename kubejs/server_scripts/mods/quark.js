@@ -8,5 +8,5 @@ ServerEvents.recipes(event => {
         ], {
             T: 'quark:polished_tuff'
         }
-    )
+    ).id('kubejs:shaped/quark_tuff_bricks')
 })
