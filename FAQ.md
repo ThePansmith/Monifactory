@@ -119,6 +119,14 @@ Check the [Known Issues document](KNOWN-ISSUES.md) first. If it's not there, rep
 
 <hr>
 
+## Server
+
+**Q. How do I update Monifactory on my server?**
+
+In your server directory delete config-overrides, config, defaultconfig, kubejs, and mods. Then from the new Monifactory server zip copy over those same directories to replace the ones you removed. Enjoy!
+
+<hr>
+
 ## Contributing to Monifactory
 
 See more at [CONTRIBUTING.md](CONTRIBUTING.md)
