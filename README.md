@@ -74,6 +74,7 @@ To spice up your Monifactory experience, you can add one of the following mods t
 6. ``unzip server.zip``
 7. Move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
 8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
+9. To upgrade an existing Monifactory server, see See [FAQ.md](FAQ.md).
 
 ## Contributing
 
