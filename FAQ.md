@@ -107,7 +107,7 @@ The entire top layer except the controller, edges & corners needs to be made of 
 
 **Q. My Rocket isn't forming!**
 
-Refer to the [GCYR Wiki](https://github.com/Argent-Matter/gcyr/wiki)
+Refer to the [GCYR Wiki](https://github.com/Argent-Matter/gcyr/wiki) for questions relating to space and rocketry.
 
 **Q. Why is my UI so dark?**
 
