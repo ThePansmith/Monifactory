@@ -158,5 +158,12 @@ ServerEvents.recipes(event => {
     //Ender Pearl dust Electrolysis
     //event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })
 
-
+    // rock breaker
+    event.recipes.gtceu.rock_breaker('kubejs:rock_breaker_calcite')
+        .notConsumable('minecraft:calcite')
+        .itemOutputs('minecraft:calcite')
+        .duration(16)
+        .EUt(60)
+        .addData('fluidA', 'minecraft:lava')
+        .addData('fluidB', 'minecraft:water')
 })
