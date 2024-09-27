@@ -395,6 +395,7 @@
 				""
 				"Finally, a Macerator will only start processing if there is room for all possible outputs. Make sure you empty them so they can keep working."
 			]
+			icon: "gtceu:lv_macerator"
 			id: "4685AC9E6CD87B77"
 			rewards: [{
 				id: "06A7DC04EEC732E1"
@@ -405,7 +406,27 @@
 			subtitle: "&oNote: this quest accepts LV, MV and HV Macerators."
 			tasks: [{
 				id: "29E5699EC44EAFB5"
-				item: "gtceu:lv_macerator"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_macerator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_macerator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_macerator"
+							}
+						]
+					}
+				}
+				title: "LV, MV, or HV Macerator"
 				type: "item"
 			}]
 			title: "&2Macerator"
