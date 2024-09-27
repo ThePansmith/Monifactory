@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
-    event.shapeless('2x minecraft:tuff', ['minecraft:cobblestone', 'minecraft:gravel']).id('kubejs:shapeless/tuff')
-
+    // add missing recipes
     event.shaped(
         '4x quark:tuff_bricks', [
             'TT',

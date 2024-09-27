@@ -37,4 +37,5 @@ ServerEvents.recipes(event => {
     RockCycle('red_granite', 'gtceu:red_granite', 'gtceu:red_granite', 960)
     RockCycle('deepslate', 'minecraft:deepslate', 'minecraft:deepslate', 960)
         
+    RockCycle('tuff', 'minecraft:tuff', 'minecraft:tuff', 60)
 })

@@ -166,4 +166,15 @@ ServerEvents.recipes(event => {
         .EUt(60)
         .addData('fluidA', 'minecraft:lava')
         .addData('fluidB', 'minecraft:water')
+    const generateRockBreakerStoneRecipe = (stoneItem) => {
+        event.recipes.gtceu.rock_breaker('kubejs:rock_breaker_' + stoneItem.replace(':', '_'))
+            .notConsumable(stoneItem)
+            .itemOutputs(stoneItem)
+            .duration(16)
+            .EUt(60)
+            .addData('fluidA', 'minecraft:lava')
+            .addData('fluidB', 'minecraft:water')
+    }
+    generateRockBreakerStoneRecipe('minecraft:calcite')
+    generateRockBreakerStoneRecipe('minecraft:tuff')
 })
