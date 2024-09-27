@@ -1,10 +1,6 @@
 ## Other Frequently Asked Questions:
 See more at [FAQ.md](FAQ.md)
 
-**EnderIO fluid conduits too slow and not accepting Filters**
-
-This is a known issue with EnderIO - your best option is to use an alternative such as GregTech pipes, LaserIO, or something from the Addon Mods (Optional Compats)
-
 **EMI and/or AE2 having issues with GregTech tools**
 
 These mods don't handle NBT or tool-based crafting perfectly all the time, so you may encounter this issue occasionally. Try to transition to Assemblers or other machines ASAP. Machine crafting also offers improved material efficiency over tool crafting
@@ -35,19 +31,19 @@ If you are unsure whether a specific mod may be causing a bug, try to replicate 
 
 The most frequent offenders are listed below:
 
-**Issues with [EnderIO Modern](https://github.com/Team-EnderIO/EnderIO)**
-
-EnderIO 1.20.1 is not in a great state. Updates and fixes are infrequent, so most features may have bugs or cause crashes - as such, some items and blocks are made unobtainable for this reason.
-For item and fluid conduits specifically, try to use alternatives such as GregTech pipes, LaserIO, or XNet if you have it installed
-
 **Issues with [Nuclearcraft: Neoteric](https://github.com/igentuman/NuclearCraft-Neoteric)**
 
-Nuclearcraft: Neoteric is not in a great state either. Many features (including some aspects of fission reactors!) are incomplete or buggy
+Nuclearcraft: Neoteric is not in a great state. Many features (including some aspects of fission reactors!) are incomplete or buggy
+
+**Issues with [EnderIO Modern](https://github.com/Team-EnderIO/EnderIO)**
+
+EnderIO 1.20.1 is not feature complete - things may be missing, have bugs or cause crashes.
+If you encounter any issues, please properly isolate the issue and submit a bug report to the Github page above.
 
 **Issues with [Gregtech CEu: Modern](https://github.com/GregTechCEu/GregTech-Modern)**
 
-GTM is being reworked and developed actively. You may run into the occasional bug, but these are addressed relatively quickly. Please ensure you aren't creating a duplicate report before notifying the devs of an issue.
+GTM is being actively developed. You are likely run into bugs, but these are addressed relatively quickly. Please ensure you aren't creating a duplicate report before notifying the devs of an issue or submitting a bug report to the Github page above.
 
 **Issues with [AE2](https://github.com/AppliedEnergistics/Applied-Energistics-2/)**
 
-Although bugs with AE2 are infrequent, the AE2 team has shown little inclination to address bugs on 1.20.1, so your best option is to find a workaround after submitting a bug report.
+Although bugs with AE2 are infrequent, the AE2 team has shown little inclination to address bugs on 1.20.1, so your best option is to find a workaround after submitting a bug report to the Github page above.
