@@ -132,7 +132,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('extendedcrafting:auto_flux_crafter',("Uses large amounts of energy to convert Sculk into Sculk Cores."))
     tooltip.add('extendedcrafting:flux_alternator', ("Provides Energy to the Sculk Charger, from up to 3 blocks away."))
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
-    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table'], ['Cannot input items using other mods!', 'Put them in an inventory atop the table instead.'])
+    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table'], ['Cannot be inserted into!', 'Put them in an inventory atop the table instead.'])
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
     tooltip.add('gtceu:terminal', 'Can autobuild multiblocks by shift-rightclicking a controller.')
 
