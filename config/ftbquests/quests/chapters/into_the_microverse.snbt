@@ -1105,7 +1105,7 @@
 				""
 				"Saved recipes must then be selected with a &8Left-Click&r to indicate that that recipe should be crafted. Only one recipe can be selected at a time."
 				"{@pagebreak}"
-				"At this point, the &3Auto Crafting Table&r can be supplied with ingredients and &aRF&r power to begin automated crafting."
+				"Lastly, place an inventory atop the table - The &3Auto Crafting Table&r cannot be inserted to, and &ecan only pull items from that inventory&r. At this point you can put ingredients in the inventory and &aRF&r power in the table to begin automated crafting."
 				""
 				"In compensation for the cost of the &6Crystaltine Ingots&r, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
 			]
