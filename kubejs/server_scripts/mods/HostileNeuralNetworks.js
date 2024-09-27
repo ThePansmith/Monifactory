@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:dark_steel_machine_hull')
         .duration(50)
         .EUt(16)
-				.circuit(8)
+				.circuit(6)
 
     event.shaped(
         'hostilenetworks:sim_chamber', [

@@ -49,8 +49,7 @@ JEIEvents.hideItems(event => {
     event.hide(['enderio:conduit', 'enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block', "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])
     //EnderIO (grinding balls)
     event.hide(['enderio:soularium_grinding_ball', 'enderio:conductive_alloy_grinding_ball', 'enderio:pulsating_alloy_grinding_ball', 'enderio:redstone_alloy_grinding_ball', 'enderio:energetic_alloy_grinding_ball', 'enderio:vibrant_alloy_grinding_ball', 'enderio:copper_alloy_grinding_ball', 'enderio:dark_steel_grinding_ball', 'enderio:end_steel_grinding_ball'])
-    // Enderio (crashes)
-    event.hide('enderio:basic_fluid_filter')
+
 
     //TelePastries
     event.hide(['telepastries:lost_city_cake', 'telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'])
