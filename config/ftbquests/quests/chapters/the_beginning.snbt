@@ -1073,9 +1073,10 @@
 				"The &3Energy Acceptor&r converts RF power into AE power that Applied Energistics uses, in a 2 RF to 1 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected &6ME Cables&r, &6ME Conduits&r, and &6Quartz Fiber&r. "
 				""
 				"Quartz Fiber are &emicroparts&r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
-				"Applied Energistics 2 can be complicated for a new player, so I recommend either using &9the ingame guide&r or a video as a supplement to this chapter if need be. "
+				"{@pagebreak}"
+				"Applied Energistics 2 can be complicated for a new player, so I recommend either use &9the in-game guide&r &e(Press G while hovering over a compatible item)&r or a video as a supplement to this chapter if need be. "
 				""
-				"[\"I personally recommend \",{\"text\": \"Pansmith's guide to Applied Energistics 2\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \", while written for the 1.12 verison of AE2, most of the infomation is the exact same between the versions, and was made with Nomifactory players in mind.\"]"
+				"[\"I personally recommend \",{\"text\": \"Pansmith's guide to Applied Energistics 2\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \". while written for the 1.12 verison of AE2, most of the infomation is the exact same between the versions, and was made with Nomifactory players in mind.\"]"
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"
