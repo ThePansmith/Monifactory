@@ -1,6 +1,10 @@
 ## Other Frequently Asked Questions:
 See more at [FAQ.md](FAQ.md)
 
+**Fluid Drilling Rig or Multiblock Miner not working**
+
+Ensure you're using exactly one energy hatch of the allowed voltage tiers.
+
 **EMI and/or AE2 having issues with GregTech tools**
 
 These mods don't handle NBT or tool-based crafting perfectly all the time, so you may encounter this issue occasionally. Try to transition to Assemblers or other machines ASAP. Machine crafting also offers improved material efficiency over tool crafting
