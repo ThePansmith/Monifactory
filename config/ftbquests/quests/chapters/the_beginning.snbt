@@ -1958,6 +1958,33 @@
 			x: -2.75d
 			y: -6.0d
 		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"To mute a Gregtech machine, right-click it with a &6Hammer&r. (Not the Mining kind!)"
+				""
+				"For other sounds, there is a button in the &etop-left&r of your inventory that looks like a speaker. Clicking it brings you to the &bExtreme Sound Muffler&r menu."
+				""
+				"In this menu you can &eattenuate the volume of sounds that were recently played&r, or set an \"Anchor\" to reduce the volume of sounds in that area - most of the controls in this menu have a tooltip to tell you what they do."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:textures/gui/overlay/tool_sound.png"
+				}
+			}
+			id: "5B52FFEBF5D65C20"
+			size: 1.5d
+			subtitle: "My poor ears!"
+			tasks: [{
+				id: "2D68D336FAC66CCE"
+				type: "checkmark"
+			}]
+			title: "&9Muting and Muffling"
+			x: 17.25d
+			y: 9.375d
+		}
 	]
 	title: "The Beginning"
 }
