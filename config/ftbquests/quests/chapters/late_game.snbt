@@ -1329,11 +1329,9 @@
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"Coating &6Cryolobus Wire&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
+				"Coating &6Cryococcus&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
-				"These wires losslessly transmit \"MAX\" tier, which is effectively infinite transfer rate. This means they will work for any tier of power. 1x wires handle 4 amps, meaning 4x wires can handle 16 amps, and 16x wires can handle 64 amps."
-				""
-				"These can also be made into the final form of RF conduits that can transmit a whopping 134 Million RF/t."
+				"These wires losslessly transmit &4UHV&r tier, and can also be made into the final form of RF conduits that can transmit a whopping &a134 Million RF/t&r."
 			]
 			id: "186C14C113B6F3AD"
 			rewards: [{
