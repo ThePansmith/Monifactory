@@ -38,6 +38,24 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'sophisticatedstorage:controller' })
 
+    const controllerCore = ["#forge:storage_blocks/diamond", "#forge:storage_blocks/emerald"]
+    const controllerStorage = ["#forge:barrels/wooden", "#forge:chests/wooden"]
+    controllerCore.forEach(coreBlock => {
+        controllerStorage.forEach(storageBlock => {
+            event.shaped(
+                'sophisticatedstorage:controller', [
+                'III',
+                'CDC',
+                'IEI'
+            ], {
+                I: "#forge:plates/steel",
+                C: "#gtceu:circuits/lv",
+                D: storageBlock,
+                E: coreBlock
+            })
+        })
+    })
+
     // Backpacks
     event.remove({ output: 'sophisticatedbackpacks:copper_backpack' })
 
