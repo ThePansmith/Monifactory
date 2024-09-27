@@ -940,7 +940,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('kubejs:chlorine_triflouride')
         .inputFluids('gtceu:fluorine 3000', 'gtceu:chlorine 1000')
-        .outputFluids('gtceu:chlorine_triflouride 2000')
+        .outputFluids('gtceu:chlorine_triflouride 1000')
         .duration(60)
         .EUt(7)
 

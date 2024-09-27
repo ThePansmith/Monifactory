@@ -105,6 +105,10 @@ Conduits are set by default to extract on high redstone input; click the redston
 
 The entire top layer except the controller, edges & corners needs to be made of Cleanroom Filter Casings. The multi also needs an energy hatch and a maintenance hatch.
 
+**Q. My Rocket isn't forming!**
+
+Refer to the [GCYR Wiki](https://github.com/Argent-Matter/gcyr/wiki) for questions relating to space and rocketry.
+
 **Q. Why is my UI so dark?**
 
 DarkModeEverywhere is enabled by default, and makes your UI darker (duh). You can switch colors using the button in the bottom left of your inventory screen, or on the main menu

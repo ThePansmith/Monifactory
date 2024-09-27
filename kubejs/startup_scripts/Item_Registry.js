@@ -188,6 +188,7 @@ StartupEvents.registry('item', event => {
         ['oxygen', '#4494bc'],
         ['radon', '#bc38bc'],
         ['xenon', '#12bcbc'],
+        ['bromine', '#7c1c05'],
         ['experience', '#04ff00']
     ]
 
