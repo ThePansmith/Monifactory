@@ -81,7 +81,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Calculation Processor."]
+			description: ["Run the materials through &3Inscribers&r with &aPresses&r to make the printed variant, then combine the printed materials and circuit to form the Calculation Processor."]
 			id: "133FB7996362498C"
 			rewards: [{
 				id: "035F2955DB950CCA"
@@ -89,7 +89,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Calculation Processors&r are made from a &6Certus Plate&r, a &6Silicon Plate&r, and any &6tier one circuit&r."
+			subtitle: "&6Calculation Processors&r are made from &6Printed Calculation Circuit&r, &6Printed Silicon&r, and any &6tier one circuit&r."
 			tasks: [{
 				id: "63ED16CB8306DC8C"
 				item: "ae2:calculation_processor"
@@ -154,7 +154,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Logic Processor."]
+			description: ["Run the materials through &3Inscribers&r with &aPresses&r to make the printed variant, then combine the printed materials and circuit to form the Logic Processor."]
 			id: "1F4D2DAF4267DB77"
 			rewards: [{
 				id: "52D7FCB9D1EC2573"
@@ -162,7 +162,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Logic Processors&r are made from a &6Gold Plate&r, a &6Silicon Plate&r, and any tier one circuit."
+			subtitle: "&6Logic Processors&r are made from &6Printed Logic Circuit&r, &6Printed Silicon&r, and any tier one circuit."
 			tasks: [{
 				id: "3A650FC102D75669"
 				item: "ae2:logic_processor"
@@ -341,7 +341,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Engineering Processor."]
+			description: ["Run the materials through &3Inscribers&r with &aPresses&r to make the printed variant, then combine the printed materials and circuit to form the Engineering Processor."]
 			id: "0FD703A1A1E5055E"
 			rewards: [{
 				id: "128EF2992A9B077F"
@@ -349,7 +349,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Engineering Processors&r are made from a &6Diamond Plate&r, a &6Silicon Plate&r, and any tier one circuit."
+			subtitle: "&6Engineering Processors&r are made from &6Printed Engineering Circuit&r, &6Printed Silicon&r, and any tier one circuit."
 			tasks: [{
 				id: "2D4C3E3A6D443BB0"
 				item: "ae2:engineering_processor"
