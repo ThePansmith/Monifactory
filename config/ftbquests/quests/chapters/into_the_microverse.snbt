@@ -1107,7 +1107,7 @@
 				"{@pagebreak}"
 				"Lastly, place an inventory atop the table - The &3Auto Crafting Table&r cannot be inserted to, and &ecan only pull items from that inventory&r. At this point you can put ingredients in the inventory and &aRF&r power in the table to begin automated crafting."
 				""
-				"In compensation for the cost of the &6Crystaltine Ingots&r, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
+				"In compensation for the cost of the &6Crystaltine Ingots&r and confusing logistics, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
 			]
 			icon: "extendedcrafting:basic_auto_table"
 			id: "0DB8063A7972E1C0"
