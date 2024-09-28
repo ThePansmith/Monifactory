@@ -1,5 +1,5 @@
 FTBQuestsEvents.customReward('24FE5D5A412EA666', event => {
-	// auto complete when you unlock genisis (free cake custom trigger)
+	// auto complete when you unlock genesis (free cake custom trigger)
 	FTBQuests.getServerDataFromPlayer(event.getPlayer()).complete('138B92A597D63C12')
 })
 

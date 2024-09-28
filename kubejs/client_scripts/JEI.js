@@ -52,7 +52,7 @@ JEIEvents.hideItems(event => {
 
 
     //TelePastries
-    event.hide(['telepastries:lost_city_cake', 'telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'])
+    event.hide(['telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'])
 
     //Jetpacks
     event.hide([Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:dark_soularium"}').strongNBT(), Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:fluxed"}').strongNBT(), 'ironjetpacks:capacitor', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:creative"}').strongNBT()])
