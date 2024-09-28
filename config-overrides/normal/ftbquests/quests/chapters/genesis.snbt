@@ -62,8 +62,6 @@
 				""
 				"The &2Overworld&r has ores to mine, and is a great place to gather resources."
 				""
-				"The &3Lost City&r can be explored for &eloot and spawners&r. There are no ores in the Lost City Dimension. "
-				""
 				"Simply place down and eat any dimensional cake for access to that dimension."
 				""
 				"If you're playing with friends, don't forget to invite them to an &eFTB Teams party&r. "
@@ -82,11 +80,6 @@
 				{
 					id: "031A59BA80B8796A"
 					item: "telepastries:custom_cake"
-					type: "item"
-				}
-				{
-					id: "252CA17298A86759"
-					item: "telepastries:lost_city_cake"
 					type: "item"
 				}
 				{
@@ -500,7 +493,7 @@
 				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the &a[┴]&r button found in the bottom left of your screen and it will pull up the &arecipe tree&r GUI as well."
 			]
 			disable_toast: true
-			icon: "gtceu:crafting_table_cover"
+			icon: "quark:crafter"
 			id: "58566C7BF4C22D86"
 			shape: "hexagon"
 			size: 1.25d
@@ -1934,7 +1927,7 @@
 			]
 			disable_toast: true
 			hide_dependency_lines: true
-			icon: "minecraft:purple_bed"
+			icon: "minecraft:blue_bed"
 			id: "33195ED6D7008E5F"
 			optional: true
 			subtitle: "Make returning home easy!"
@@ -1944,8 +1937,8 @@
 				type: "checkmark"
 			}]
 			title: "JourneyMap and Registering Homes"
-			x: -9.75d
-			y: 1.0d
+			x: -10.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]

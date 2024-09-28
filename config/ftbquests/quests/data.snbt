@@ -9,7 +9,6 @@
 	drop_loot_crates: false
 	emergency_items: [
 		{ Count: 1, id: "telepastries:overworld_cake" }
-		{ Count: 1, id: "telepastries:lost_city_cake" }
 		{ Count: 1, id: "telepastries:custom_cake" }
 	]
 	emergency_items_cooldown: 300
