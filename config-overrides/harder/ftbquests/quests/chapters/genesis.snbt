@@ -2255,6 +2255,7 @@
 				"Just be careful of &4Keybind Conflicts&r"
 			]
 			disable_toast: true
+			hide_dependency_lines: true
 			icon: "rehooked:wood_hook"
 			id: "372BE3F076893D71"
 			min_width: 300
@@ -2270,8 +2271,8 @@
 				type: "item"
 			}]
 			title: "Movin' Around"
-			x: -1.5d
-			y: 1.5d
+			x: -9.0d
+			y: 10.0d
 		}
 	]
 	title: "An Even Harder Genesis"
