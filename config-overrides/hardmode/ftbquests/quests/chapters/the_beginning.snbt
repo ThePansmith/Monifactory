@@ -395,6 +395,7 @@
 				""
 				"Finally, a Macerator will only start processing if there is room for all possible outputs. Make sure you empty them so they can keep working."
 			]
+			icon: "gtceu:lv_macerator"
 			id: "4685AC9E6CD87B77"
 			rewards: [{
 				id: "06A7DC04EEC732E1"
@@ -405,7 +406,27 @@
 			subtitle: "&oNote: this quest accepts LV, MV and HV Macerators."
 			tasks: [{
 				id: "29E5699EC44EAFB5"
-				item: "gtceu:lv_macerator"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_macerator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_macerator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_macerator"
+							}
+						]
+					}
+				}
+				title: "LV, MV, or HV Macerator"
 				type: "item"
 			}]
 			title: "&2Macerator"
@@ -1034,9 +1055,10 @@
 				"The &3Energy Acceptor&r converts RF power into AE power that Applied Energistics uses, in a 2 RF to 1 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected &6ME Cables&r, &6ME Conduits&r, and &6Quartz Fiber&r. "
 				""
 				"Quartz Fiber are &emicroparts&r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
-				"Applied Energistics 2 can be complicated for a new player, so I recommend either using &9the ingame guide&r or a video as a supplement to this chapter if need be. "
+				"{@pagebreak}"
+				"Applied Energistics 2 can be complicated for a new player, so I recommend either use &9the in-game guide&r &e(Press G while hovering over a compatible item)&r or a video as a supplement to this chapter if need be. "
 				""
-				"[\"I personally recommend \",{\"text\": \"Pansmith's guide to Applied Energistics 2\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \", while written for the 1.12 verison of AE2, most of the infomation is the exact same between the versions, and was made with Nomifactory players in mind.\"]"
+				"[\"I personally recommend \",{\"text\": \"Pansmith's guide to Applied Energistics 2\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \". while written for the 1.12 verison of AE2, most of the infomation is the exact same between the versions, and was made with Nomifactory players in mind.\"]"
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"
@@ -1917,6 +1939,33 @@
 			title: "Electromagnet"
 			x: -2.75d
 			y: -6.0d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"To mute a Gregtech machine, right-click it with a &6Hammer&r. (Not the Mining kind!)"
+				""
+				"For other sounds, there is a button in the &etop-left&r of your inventory that looks like a speaker. Clicking it brings you to the &bExtreme Sound Muffler&r menu."
+				""
+				"In this menu you can &eattenuate the volume of sounds that were recently played&r, or set an \"Anchor\" to reduce the volume of sounds in that area - most of the controls in this menu have a tooltip to tell you what they do."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:textures/gui/overlay/tool_sound.png"
+				}
+			}
+			id: "5B52FFEBF5D65C20"
+			size: 1.5d
+			subtitle: "My poor ears!"
+			tasks: [{
+				id: "2D68D336FAC66CCE"
+				type: "checkmark"
+			}]
+			title: "&9Muting and Muffling"
+			x: 17.25d
+			y: 9.375d
 		}
 	]
 	title: "The Beginning"
