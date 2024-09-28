@@ -1890,6 +1890,34 @@
 			x: 4.517857142857139d
 			y: 1.4285714285714306d
 		}
+		{
+			dependencies: ["47094A5717952699"]
+			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
+			id: "39394D5596FF8BC8"
+			rewards: [{
+				id: "20D8F149F414F950"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "36817E3C33876798"
+				item: {
+					Count: 1
+					id: "enderio:electromagnet"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Electromagnet"
+			x: -2.75d
+			y: -6.0d
+		}
 	]
 	title: "The Beginning"
 }
