@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
 
     // Snad
-    event.remove('snad:snadrecipe')
+    event.remove('snad:snad')
     event.remove('snad:red_snad')
     
     //Extended Crafting
