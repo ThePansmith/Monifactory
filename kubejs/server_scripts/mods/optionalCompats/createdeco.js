@@ -233,7 +233,7 @@ if (Platform.isLoaded('createdeco')) {
               event.recipes.gtceu.assembler('createdeco:red_' + decorOutput + '_lamp')
               .itemInputs('2x ' + ingot)
               .itemInputs('minecraft:redstone_torch')
-              .itemOutputs('createdeco:yellow_' + decorOutput + '_lamp')
+              .itemOutputs('createdeco:red_' + decorOutput + '_lamp')
               .duration(300)
               .EUt(7)
               event.shaped('createdeco:green_' + decorOutput + '_lamp', [
@@ -293,7 +293,7 @@ if (Platform.isLoaded('createdeco')) {
         decor('createdeco:andesite_sheet', 'create:andesite_alloy', 'createdeco:andesite_bars', 'andesite', '#forge:storage_blocks/andesite_alloy')
         decor('#forge:plates/copper', '#forge:ingots/copper', 'createdeco:copper_bars', 'copper', '#forge:storage_blocks/copper')
         decor('#forge:plates/iron', '#forge:ingots/iron', 'minecraft:iron_bars', 'iron', '#forge:storage_blocks/iron')
-        decor('createdeco:industrial_iron_sheet', 'createdeco:industrial_iron_ingot', 'createdeco:industrial_iron_bars', 'industrial_iron', '#forge:storage_blocks/industrial_iron')
+        decor('createdeco:industrial_iron_sheet', 'createdeco:industrial_iron_ingot', 'createdeco:industrial_iron_bars', 'industrial_iron', 'create:industrial_iron_block')
         decor('#forge:plates/brass', '#forge:ingots/brass', 'createdeco:brass_bars', 'brass', '#forge:storage_blocks/brass')
         decor('#forge:plates/zinc', '#forge:ingots/zinc', 'createdeco:zinc_bars', 'zinc', '#forge:storage_blocks/zinc')
 
