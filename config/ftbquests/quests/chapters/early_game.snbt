@@ -1588,7 +1588,7 @@
 				""
 				"- The &9Ethanol&r route allows you to use your existing &6Sugarcane&r farm to produce &9Ethylene&r. However, the recipes require &bMedium Voltage&r machines to run."
 				""
-				"- The &9Oil Processing&r route requires &2only LV machines&r, but you will have to source &9Oil&r, or its variants, from somewhere. &2Severely Steam-Cracked Light Fuel&r is most efficient with &9Raw Oil, Oil and Heavy Oil&r. &2Severely Steam-Cracked Naphtha&r is more efficient when you are using &9Light Oil&r."
+				"- The &9Oil Processing&r route requires &2only LV machines&r, but you will have to source &9Oil&r, or its variants, from somewhere. &2Severely Steam-Cracked Light Fuel&r is most efficient with &9Oil and Heavy Oil&r. &2Severely Steam-Cracked Naphtha&r is more efficient when you are using &9Raw Oil and Light Oil&r."
 				""
 				"It is an extremely important chemical in the production of plastics, as you'll need &9Ethylene&r in your production of &9Polyethylene (PE)&r, &9Polyvinyl Chloride (PVC)&r, and can be used in the production of &9Styrene-Butadiene Rubber (SBR)&r, the best form of rubber."
 			]

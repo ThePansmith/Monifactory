@@ -88,7 +88,7 @@
 					type: "item"
 				}
 				{
-					id: "3FD07C604E5C3BDD"
+					id: "4227D8CC87BE7710"
 					item: {
 						Count: 1
 						id: "gtceu:prospector.hv"
@@ -101,13 +101,13 @@
 				{
 					auto: "invisible"
 					icon: "enderio:cake_base"
-					id: "66946B00EE424149"
-					title: "&6Inifinite Cakes!"
+					id: "392C56C1DA9D7978"
+					title: "&6Infinite Cakes!"
 					type: "custom"
 				}
 				{
 					auto: "invisible"
-					id: "7538AE25269C2962"
+					id: "1BCE4323D97D9083"
 					ignore_reward_blocking: true
 					stage: "intro_complete"
 					type: "gamestage"
@@ -1727,6 +1727,8 @@
 				"The &2Energy Converter&r is a special device that &econverts &2between &aRF power&r and &aEU power&r. They come in &2four sizes: 1A, 4A, 8A, and 16A."
 				""
 				"&aRF&r converts into &aEU&r at a &e4 to 1 ratio&r. &a100 RF&r becomes &a25 EU&r, and vice-versa. &2Use a Soft Hammer to change the conversion direction."
+				""
+				"&eNote that you need an RF buffer to output into when you convert EU->RF!&r"
 			]
 			icon: "gtceu:lv_4a_energy_converter"
 			id: "297B523B6C503957"
@@ -2077,7 +2079,7 @@
 			optional: true
 			subtitle: "Make returning home easy!"
 			tasks: [{
-				id: "030DEF4A0C0A553F"
+				id: "1FE7AB8BD6D25B47"
 				title: "Checkmark"
 				type: "checkmark"
 			}]
