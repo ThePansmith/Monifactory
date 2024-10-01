@@ -413,7 +413,7 @@
 				""
 				"&bEnderIO&r&6 Fluid Conduits&r are also an option. They have the advantage of being &6Conduits&r, allowing them to fit in the same block as other &6Conduits&r. However, they are &every slow&r to compensate."
 				""
-				"Later on, you also gain access to &9LaserIO&r, which while a little costly, allows for some rather complex and compact filtering."
+				"You also have access to &9LaserIO&r, which while a little costly, allows for some rather complex and compact filtering."
 			]
 			id: "64AAF0CD958D836A"
 			rewards: [{
