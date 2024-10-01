@@ -83,20 +83,20 @@
 					type: "item"
 				}
 				{
-					id: "5B41064803D613C4"
+					id: "12BD64A82DB08429"
 					item: "telepastries:overworld_cake"
 					type: "item"
 				}
 				{
 					auto: "invisible"
 					icon: "enderio:cake_base"
-					id: "08F3F8B775082201"
+					id: "392C56C1DA9D7978"
 					title: "&6Infinite Cakes!"
 					type: "custom"
 				}
 				{
 					auto: "invisible"
-					id: "23FA506BA1CA21E4"
+					id: "1BCE4323D97D9083"
 					ignore_reward_blocking: true
 					stage: "intro_complete"
 					type: "gamestage"
@@ -1962,7 +1962,7 @@
 			optional: true
 			subtitle: "Make returning home easy!"
 			tasks: [{
-				id: "43065369D0A75820"
+				id: "1FE7AB8BD6D25B47"
 				title: "Checkmark"
 				type: "checkmark"
 			}]

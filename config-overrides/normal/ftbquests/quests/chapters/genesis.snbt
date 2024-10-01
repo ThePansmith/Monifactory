@@ -1478,6 +1478,8 @@
 				"The &2Energy Converter&r is a special device that &econverts &2between &aRF power&r and &aEU power&r. They come in &2four sizes: 1A, 4A, 8A, and 16A."
 				""
 				"&aRF&r converts into &aEU&r at a &e4 to 1 ratio&r. &a100 RF&r becomes &a25 EU&r, and vice-versa. &2Use a Soft Hammer to change the conversion direction."
+				""
+				"&eNote that you need an RF buffer to output into when you convert EU->RF!&r"
 			]
 			icon: "gtceu:lv_4a_energy_converter"
 			id: "297B523B6C503957"
