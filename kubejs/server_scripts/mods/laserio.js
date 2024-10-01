@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     ], {
         S: 'gtceu:steel_plate',
         E: 'gtceu:lv_emitter',
-        C: '#gtceu:circuits/mv',
+        C: '#gtceu:circuits/lv',
         R: 'gtceu:red_alloy_plate'
     }
     )
