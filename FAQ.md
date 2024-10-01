@@ -22,6 +22,10 @@ Monifactory should run on any computer with a CPU newer than 2019. Allocating 6G
 
 Yes! Peaceful mode is the intended playstyle for Monifactory. Playing with mobs and hunger do not have any additional benefits in Moni, and all mob drops are attainable early through other methods.
 
+**Q. Can I port my Nomifactory world to Monifactory?**
+
+Technically? Yes. In a practical sense? No. Loading the 1.12 world in 1.20.1 Monifactory *does* load vanilla Minecraft items and blocks and some GT ores properly, but it voids every other modded item or block - you will essentially be sent back to the stone age.
+
 **Q. Will Monifactory be ported to 'X' Minecraft version?**
 
 Monifactory will not be backported to any versions before 1.20.1. Porting the pack to a future version of Minecraft may or may not happen, but **do not ask or pester the devs**.
@@ -96,6 +100,11 @@ Orbit: Similar to the Void Dimension, but you need Oxygen to breathe.
 Lost Cities Dimension: Cities cover most terrain, and are damaged. No Ores.
 Nether/End: Good atmosphere, but potentially hazardous. Same as in Vanilla.
 AE2 Spatial Storage: 128x128 size limit. Can be combined & traversed in creative ways.
+
+**Q. I can't light my Nether portal?!?**
+
+In Monifactory, both the Nether and End portals are disabled.
+TelePastries' cakes are used to move between dimensions instead.
 
 **Q. My EnderIO conduits aren't extracting!**
 

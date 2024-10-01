@@ -112,10 +112,13 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
     tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:quintessence_infuser', 'gtceu:implosion_collider'], 'Can parallelize with Parallel Control Hatches.')
+    tooltip.add('gtceu:basic_tape', 'Useful to wrap up Crates for transport instead')
 
     //Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
     tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
+    tooltip.add('functionalstorage:storage_controller', 'Previously known as a Storage Controller')
+    tooltip.add('functionalstorage:framed_storage_controller', 'Previously known as a Framed Storage Controller')
 
     // AE2
     tooltip.add('ae2:facade', Text.gray('Crafted with Cable Anchors'))
@@ -129,6 +132,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('extendedcrafting:auto_flux_crafter',("Uses large amounts of energy to convert Sculk into Sculk Cores."))
     tooltip.add('extendedcrafting:flux_alternator', ("Provides Energy to the Sculk Charger, from up to 3 blocks away."))
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
+    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table'], ['Cannot be inserted into!', 'Put them in an inventory atop the table instead.'])
     tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
     tooltip.add('gtceu:terminal', 'Can autobuild multiblocks by shift-rightclicking a controller.')
 
