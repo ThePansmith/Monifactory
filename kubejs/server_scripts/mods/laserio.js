@@ -27,51 +27,6 @@ ServerEvents.recipes(event => {
     }
     )
 
-     //Cards
-     event.remove({ output: 'laserio:card_item' })
-     event.shaped(
-         "4x laserio:card_item", [
-         "RLR",
-         "NCN",
-         "GGG"
-     ], {
-         R: 'minecraft:redstone',
-         L: 'minecraft:lapis_lazuli',
-         N: 'minecraft:quartz',
-         C: '#gtceu:circuits/lv',
-         G: 'minecraft:gold_ingot'
-     }
-     )
- 
-     event.remove({ output: 'laserio:card_fluid' })
-     event.shaped(
-         "4x laserio:card_fluid", [
-         "RLR",
-         "NCN",
-         "GGG"
-     ], {
-         R: 'minecraft:redstone',
-         L: 'minecraft:bucket',
-         N: 'minecraft:quartz',
-         C: '#gtceu:circuits/lv',
-         G: 'minecraft:gold_ingot'
-     }
-     )
- 
-     event.remove({ output: 'laserio:card_redstone' })
-     event.shaped(
-         "4x laserio:card_redstone", [
-         "RRR",
-         "NCN",
-         "GGG"
-     ], {
-         R: 'minecraft:redstone',
-         N: 'minecraft:quartz',
-         C: '#gtceu:circuits/lv',
-         G: 'minecraft:gold_ingot'
-     }
-     )
-
     //Overclockers
     event.remove({ output: ['laserio:overclocker_card', 'laserio:overclocker_node']})
     event.shaped(
