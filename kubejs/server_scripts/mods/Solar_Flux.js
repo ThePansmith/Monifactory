@@ -145,6 +145,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x gtceu:sunnarium_dust')
         .duration(4000)
         .EUt(4000);
+    event.remove({ id: 'gtceu:macerator/macerate_sunnarium_plate'})
 
     //Enriched Sunnarium
     event.shaped(
@@ -164,4 +165,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('6x gtceu:enriched_sunnarium_dust')
         .duration(2000)
         .EUt(16000);
+    event.remove({ id: 'gtceu:macerator/macerate_enriched_sunnarium_plate'})
+    event.remove({ id: 'gtceu:macerator/macerate_dense_enriched_sunnarium_plate'})
 })
