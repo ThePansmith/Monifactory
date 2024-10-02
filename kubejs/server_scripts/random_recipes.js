@@ -8,11 +8,14 @@ ServerEvents.recipes(event => {
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand']).id('snad:red_snad')
 
         //If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
-        //Otherwise, people will face laggy items everywhere on the ground.
+        //Otherwise, people will leave laggy items everywhere on the ground.
         event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
-    } else {
+    } else if(!isHarderMode) { 
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
+    } else {
+        event.remove({ id: 'snad:snad' })
+        event.remove({ id: 'snad:red_snad' })
     }
     
 
