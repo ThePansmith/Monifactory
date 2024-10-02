@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
     Greenhouse('minecraft', 'chorus_flower', 1280, ['32x minecraft:chorus_fruit'], 4)
     Greenhouse('minecraft', 'warped_fungus', 1280, ['64x minecraft:warped_stem', '32x minecraft:warped_wart_block', '16x minecraft:shroomlight'], 4)
     Greenhouse('minecraft', 'crimson_fungus', 1280, ['64x minecraft:crimson_stem', '32x minecraft:nether_wart_block', '16x minecraft:shroomlight'], 4)
-
+    Greenhouse('thermal', 'rubberwood_sapling', 1280, ['64x thermal:rubberwood_log'], 4)
 
     ////// Crops //////
     Greenhouse('minecraft', 'sugar_cane', 640, ['32x minecraft:sugar_cane'], 0)
