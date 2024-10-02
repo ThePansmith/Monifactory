@@ -159,11 +159,21 @@ ServerEvents.recipes(event => {
     //event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })
 
     // rock breaker
-    event.recipes.gtceu.rock_breaker('kubejs:rock_breaker_calcite')
-        .notConsumable('minecraft:calcite')
-        .itemOutputs('minecraft:calcite')
-        .duration(16)
-        .EUt(60)
-        .addData('fluidA', 'minecraft:lava')
-        .addData('fluidB', 'minecraft:water')
+    const generateRockBreakerStoneRecipe = (stoneItem) => {
+        event.recipes.gtceu.rock_breaker('kubejs:rock_breaker_' + stoneItem.replace(':', '_'))
+            .notConsumable(stoneItem)
+            .itemOutputs(stoneItem)
+            .duration(16)
+            .EUt(60)
+            .addData('fluidA', 'minecraft:lava')
+            .addData('fluidB', 'minecraft:water')
+    }
+
+    generateRockBreakerStoneRecipe('minecraft:calcite')
+    generateRockBreakerStoneRecipe('minecraft:tuff')
+    generateRockBreakerStoneRecipe('quark:jasper')
+    generateRockBreakerStoneRecipe('quark:limestone')
+    generateRockBreakerStoneRecipe('quark:permafrost')
+    generateRockBreakerStoneRecipe('quark:shale')
+    generateRockBreakerStoneRecipe('quark:myalite')
 })

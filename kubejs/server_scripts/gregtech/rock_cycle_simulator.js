@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    
+
     // Recipe
     event.shaped(
         'gtceu:rock_cycle_simulator', [
@@ -36,5 +36,12 @@ ServerEvents.recipes(event => {
     RockCycle('marble', 'gtceu:marble', 'gtceu:marble', 240)
     RockCycle('red_granite', 'gtceu:red_granite', 'gtceu:red_granite', 960)
     RockCycle('deepslate', 'minecraft:deepslate', 'minecraft:deepslate', 960)
-        
+    RockCycle('calcite', 'minecraft:calcite', 'minecraft:calcite', 60)
+    RockCycle('tuff', 'minecraft:tuff', 'minecraft:tuff', 60)
+    RockCycle('jasper', 'quark:jasper', 'quark:jasper', 60)
+    RockCycle('limestone', 'quark:limestone', 'quark:limestone', 60)
+    RockCycle('permafrost', 'quark:permafrost', 'quark:permafrost', 60)
+    RockCycle('shale', 'quark:shale', 'quark:shale', 60)
+    RockCycle('myalite', 'quark:myalite', 'quark:myalite', 60)
+
 })
