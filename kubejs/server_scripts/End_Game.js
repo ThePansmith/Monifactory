@@ -2,8 +2,8 @@ ServerEvents.recipes(event => {
     // Assembly Line
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line('dimensional_superassembler')
-            .itemInputs('gtceu:assembly_line', '4x kubejs:dimensional_processor_mainframe', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '6x gtceu:uiv_conveyor_module', '4x gtceu:uiv_robot_arm', '4x gtceu:uiv_emitter', '2x gtceu:infinity_frame')
-            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760', 'gtceu:polybenzimidazole 11520')
+            .itemInputs('gtceu:assembly_line', '4x kubejs:dimensional_processor_mainframe', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '6x gtceu:uiv_conveyor_module', '4x gtceu:uiv_robot_arm', '4x gtceu:uiv_emitter', '2x gtceu:infinity_frame', '24x gtceu:polyethyl_cyanoacrylate_plate')
+            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
             .itemOutputs('gtceu:dimensional_superassembler')
             .duration(6000)
             .EUt(13920000)
@@ -13,21 +13,29 @@ ServerEvents.recipes(event => {
                 .CWUt(160, 1024000)
                 .EUt(1200000)
             )
+
+    // Helical Fusion Reactor
+    event.recipes.gtceu.assembly_line('gtceu:helical_fusion_reactor')
+            .itemInputs('gtceu:uv_fusion_reactor', '4x #gtceu:circuits/uev', 'gtceu:gravi_star', '2x gtceu:double_activated_netherite_plate', '4x gtceu:uhv_field_generator', '64x kubejs:multidimensional_cpu_chip', '64x kubejs:multidimensional_cpu_chip', '64x gtceu:sculk_superconductor_single_wire', '24x gtceu:polyethyl_cyanoacrylate_plate')
+            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
+            .itemOutputs('gtceu:helical_fusion_reactor')
+            .duration(6000)
+            .EUt(13920000)
+
+            .stationResearch(b => b
+                .researchStack('gtceu:uv_fusion_reactor')
+                .CWUt(160, 1024000)
+                .EUt(1200000)
+    )
+
     // Extra Large Chemical Reactor
     event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
-            .itemInputs('gtceu:large_chemical_reactor', "8x gtceu:naquadah_large_fluid_pipe", '8x gtceu:luv_hermetic_casing', '4x gtceu:luv_field_generator', '8x gtceu:luv_electric_pump', '8x gtceu:luv_fluid_regulator', '4x #gtceu:circuits/zpm')
-            .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polybenzimidazole 1152')
-            .itemOutputs('gtceu:extra_large_chemical_reactor')
-            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:large_chemical_reactor').EUt(7680).duration(600))
-            .duration(1200)
-            .EUt(131072)
-    
-
-    .stationResearch(b => b
-        .researchStack('gtceu:discharger')
-        .CWUt(160, 1024000)
-        .EUt(1200000)
-    )
+        .itemInputs('gtceu:large_chemical_reactor', "8x gtceu:naquadah_large_fluid_pipe", '8x gtceu:luv_hermetic_casing', '4x gtceu:luv_field_generator', '8x gtceu:luv_electric_pump', '8x gtceu:luv_fluid_regulator', '4x #gtceu:circuits/zpm')
+        .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polybenzimidazole 1152')
+        .itemOutputs('gtceu:extra_large_chemical_reactor')
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:large_chemical_reactor').EUt(7680).duration(600))
+        .duration(1200)
+        .EUt(131072)
 
     // Blacklight
     event.shaped(

@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:dark_steel_machine_hull')
         .duration(50)
         .EUt(16)
-				.circuit(8)
+				.circuit(6)
 
     event.shaped(
         'hostilenetworks:sim_chamber', [
@@ -188,15 +188,15 @@ ServerEvents.recipes(event => {
                 }
             )
             event.recipes.gtceu.canner(`canning_${item[0]}_data`)
-                .itemInputs(`8x hostilenetworks:${item[1]}_prediction`)
-                .inputFluids(Fluid.of('enderio:xp_juice', 500))
-                .itemOutputs(`kubejs:${item[0]}_data`)
+                .itemInputs('1x kubejs:impossible_realm_data', `6x hostilenetworks:${item[1]}_prediction`)
+                .inputFluids(Fluid.of('enderio:xp_juice', 140))
+                .itemOutputs(`1x kubejs:${item[0]}_data`)
                 .duration(20)
                 .EUt(60)
             event.recipes.gtceu.canner(`advanced_canning_${item[0]}_data`)
-                .itemInputs([`12x hostilenetworks:${item[1]}_prediction`, `5x gtceu:small_${item[2]}_dust`])
+                .itemInputs([`3x gtceu:small_${item[2]}_dust`, `8x hostilenetworks:${item[1]}_prediction`])
                 .inputFluids(Fluid.of('enderio:xp_juice', 500))
-                .itemOutputs(`3x kubejs:${item[0]}_data`)
+                .itemOutputs(`2x kubejs:${item[0]}_data`)
                 .duration(20)
                 .EUt(960)
         })
@@ -207,15 +207,15 @@ ServerEvents.recipes(event => {
 
 ItemEvents.rightClicked(event => {
     if (event.item.id === 'hostilenetworks:overworld_prediction') {
-        event.player.xp += 10
+        event.player.addXP(10)
         event.item.count--
     }
     if (event.item.id === 'hostilenetworks:nether_prediction') {
-        event.player.xp += 20
+        event.player.addXP(20)
         event.item.count--
     }
     if (event.item.id === 'hostilenetworks:end_prediction') {
-        event.player.xp += 25
+        event.player.addXP(25)
         event.item.count--
     }
 })

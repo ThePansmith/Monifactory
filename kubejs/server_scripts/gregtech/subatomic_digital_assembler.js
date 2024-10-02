@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.subatomic_digital_assembly('kubejs:corrupted_data')
         .itemInputs('kubejs:universe_creation_data')
-        .itemOutputs('kubejs:corrupted_universe_data')
+        .itemOutputs('kubejs:shattered_universe_data')
         .circuit(1)
         .CWUt(32)
         .duration(200)
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
 
     if (isNormalMode) {
         sda_print('creative_tank_data', 1, 'gtceu:creative_tank', 64)
-        sda_print('creative_tank_data', 2, 'ae2:creative_fluid_cell', 64)
+        //sda_print('creative_tank_data', 2, 'ae2:creative_fluid_cell', 64) //The fluid cell can output items as a bug. See #8193 on the AE2 Github.
     }
 
     if (!isNormalMode) {

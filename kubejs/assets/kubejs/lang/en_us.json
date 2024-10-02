@@ -36,6 +36,10 @@
   "item.kubejs.microminer_t9.desc": "§7§oCollapses microverse stars and harvests their delicious neutronium cores.",
   "item.kubejs.microminer_t10": "§dNeutronium Plated Micro Universe Harvester [Tier Ten]",
   "item.kubejs.microminer_t10.desc": "§7§oCollapses an entire microverse and harvests it whole. Try to aim for uninhabited ones.",
+  "item.kubejs.microminer_t11": "§dOmnic Matrix Micro Universal Scavenger [Tier Eleven]",
+  "item.kubejs.microminer_t11.desc": "§7§oScavenges through the necrosed ruins of corrupted microverses to retreive alien materials.",
+  "item.kubejs.microminer_t12": "§dInfinity Plated Micro Extradimensional Phase Shifter [Tier Twelve]",
+  "item.kubejs.microminer_t12.desc": "§7§oAlters the laws of physics on a microversal scale, thus allowing the production of previously impossible materials.",
 
   "item.kubejs.stabilized_microminer_t1": "§dStabilized Steel Plated Micro Miner [Tier One]",
   "item.kubejs.stabilized_microminer_t2": "§dStabilized Titanium Plated Micro Miner [Tier Two]",
@@ -50,10 +54,9 @@
   "item.kubejs.stabilized_microminer_t9": "§dStabilized Eternium Plated Micro Sun Eater [Tier Nine]",
   "item.kubejs.stabilized_microminer_t10": "§dStabilized Neutronium Plated Micro Universe Harvester [Tier Ten]",
 
-  "item.kubejs.microminer_t11": "§dOmnic Matrix Micro Universal Scavenger [Tier Eleven]",
-  "item.kubejs.microminer_t11.desc": "§7§oScavenges through the necrosed ruins of corrupted microverses to retreive alien materials.",
-  "item.kubejs.microminer_t12": "§dInfinity Plated Micro Extradimensional Phase Shifter [Tier Twelve]",
-  "item.kubejs.microminer_t12.desc": "§7§oAlters the laws of physics on a microversal scale, thus allowing the production of previously impossible materials.",
+  "item.kubejs.stabilized_microminer.tooltip.1": "§7§oA stabilized version, injected with a Heart of a Universe.",
+  "item.kubejs.stabilized_microminer.tooltip.2": "§7§oLasts indefinitely. Reusable. Totally not overpowered.",
+  "item.kubejs.stabilized_microminer.tooltip.3": "§7§oIt looks oddly familiar.",
 
   "item.kubejs.pristine_matter_t1": "§dPristine Steel Microverse Matter [Tier One]",
   "item.kubejs.pristine_matter_t2": "§dPristine Titanium Microverse Matter [Tier Two]",
@@ -65,6 +68,8 @@
   "item.kubejs.pristine_matter_t7": "§dPristine Cryobulus Microverse Matter [Tier Seven]",
   "item.kubejs.pristine_matter_t8": "§dPristine Crystal Microverse Matter [Tier Eight]",
   "item.kubejs.pristine_matter_t8half": "§dPristine Trinium Microverse Matter [Tier Eight and a Half]",
+
+  "item.kubejs.pristine_matter.desc": "§7§oAn infinite and incomprehensible abyss of materials.",
 
   "item.kubejs.pulsating_dust": "Pulsating Dust",
   "item.kubejs.pulsating_mesh": "Pulsating Mesh",
@@ -301,14 +306,12 @@
   "fluid.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
   "fluid.kubejs.molten_aerotheum": "§7Zephyrean Aerotheum",
   "fluid.kubejs.molten_primal_mana": "§dPrimal Mana",
-  "fluid.kubejs.resonant_ender": "Resonant Ender",
 
   "block.kubejs.molten_pyrotheum": "§6Blazing Pyrotheum",
   "block.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "block.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
   "block.kubejs.molten_aerotheum": "§7Zephyrean Aerotheum",
   "block.kubejs.molten_primal_mana": "§dPrimal Mana",
-  "block.kubejs.resonant_ender": "Resonant Ender",
 
   "block.kubejs.starry_diamond_block": "Starry Diamond Block",
   "block.kubejs.dense_oilsands_ore": "Dense Oilsands Ore",
@@ -353,10 +356,6 @@
   "block.kubejs.dimensional_stabilization_netherite_casing": "Dimensional Stabilization Netherite Casing",
   "block.kubejs.omnic_matrix_coil_block": "Omnic Matrix Coil Block",
 
-  "item.kubejs.stabilized_microminer.tooltip.1": "§7§oA stabilized version, injected with a Heart of a Universe.",
-  "item.kubejs.stabilized_microminer.tooltip.2": "§7§oLasts indefinitely. Reusable. Totally not overpowered.",
-  "item.kubejs.stabilized_microminer.tooltip.3": "§7§oIt looks oddly familiar.",
-  "item.kubejs.pristine_matter.desc": "§7§oAn infinite and incomprehensible abyss of materials.",
   "item.kubejs.uv_tier_circuit": "UV-Tier Circuit",
   "item.kubejs.zpm_tier_circuit": "ZPM-Tier Circuit",
   "item.kubejs.uhv_tier_circuit": "UHV-Tier Circuit",

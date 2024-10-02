@@ -1096,6 +1096,58 @@
 			x: 9.0d
 			y: -8.5d
 		}
+		{
+			dependencies: ["555BEBF7FD6012B7"]
+			description: [
+				"With access to &6Crystaltine components&r, &3Auto Crafting Tables&r are now an option for automation of any size of crafting table - including 3x3."
+				""
+				"Every &3Auto Crafting Table&r comes with three recipe slots in the top-right corner. To configure a recipe, the crafting grid must be filled with the recipe you wish to automate, and then saved to the table by &8Shift-Left-Clicking&r one of those recipe slots."
+				""
+				"Saved recipes must then be selected with a &8Left-Click&r to indicate that that recipe should be crafted. Only one recipe can be selected at a time."
+				"{@pagebreak}"
+				"Lastly, place an inventory atop the table - The &3Auto Crafting Table&r cannot be inserted to, and &ecan only pull items from that inventory&r. At this point you can put ingredients in the inventory and &aRF&r power in the table to begin automated crafting."
+				""
+				"In compensation for the cost of the &6Crystaltine Ingots&r and confusing logistics, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
+			]
+			icon: "extendedcrafting:basic_auto_table"
+			id: "0DB8063A7972E1C0"
+			tasks: [{
+				id: "583E42747EFEE1D3"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "extendedcrafting:basic_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:advanced_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:elite_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:ultimate_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:epic_auto_table"
+							}
+						]
+					}
+				}
+				title: "Any Auto Crafting Table"
+				type: "item"
+			}]
+			title: "Auto Crafting Tables"
+			x: -3.0d
+			y: -8.25d
+		}
 	]
 	title: "Into The Microverse"
 }

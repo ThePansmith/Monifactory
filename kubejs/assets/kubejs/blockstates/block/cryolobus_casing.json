@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/cryolobus_casing.json"
+    }
+  }
+}

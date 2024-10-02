@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil', 'thermal:dynamo_output_augment'] })
     event.remove({ output: ['thermal:dynamo_throttle_augment', 'thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
     event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame', 'thermal:fluid_cell_frame'] })
-    event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter']})
+    event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer']})
 
     event.remove({ id: /thermal:[A-Za-z]+_dust_/ }) //I don't even know what recipes this line of code is supposed to target
     event.remove({ id: 'thermal:fire_charge/obsidian_glass_2' })
@@ -342,11 +342,11 @@ ServerEvents.recipes(event => {
         'ABA'
     ], {
         A: '#forge:plates/lead',
-        B: '#forge:rods/lead',
-        C: 'enderio:vibrant_capacitor_bank'
+        B: '#forge:rods/electrum',
+        C: 'enderio:advanced_capacitor_bank'
     }).id('kubejs:energy_cell_frame')
     event.remove('thermal:energy_cell');
-    event.recipes.gtceu.alloy_smelter('kubejs:energy_cell')
+    event.recipes.gtceu.canner('kubejs:energy_cell')
         .itemInputs('thermal:energy_cell_frame', '#forge:storage_blocks/redstone')
         .itemOutputs('thermal:energy_cell')
         .duration(500)

@@ -1,7 +1,7 @@
 {
     "parent":"item/generated",
     "textures": {
-      "layer0":"kubejs:item/deep_dark_data",
-      "layer1":"kubejs:item/data_overlay"
+      "layer0":"kubejs:item/data/deep_dark",
+      "layer1":"kubejs:item/data/overlay"
     }
 }

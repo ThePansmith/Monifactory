@@ -1,7 +1,7 @@
 {
     "parent":"item/generated",
     "textures": {
-      "layer0":"kubejs:item/lair_of_the_warden_data",
-      "layer1":"kubejs:item/data_overlay"
+      "layer0":"kubejs:item/data/lair_of_the_warden",
+      "layer1":"kubejs:item/data/overlay"
     }
 }

@@ -477,11 +477,14 @@
 				type: "item"
 			}]
 			title: "&9Hyperbolic Microverse Projector"
-			x: 48.0d
-			y: -16.0d
+			x: 50.0d
+			y: -13.5d
 		}
 		{
-			dependencies: ["1B1D3A66B847D129"]
+			dependencies: [
+				"1B1D3A66B847D129"
+				"5911900438648430"
+			]
 			description: [
 				"The &6Dimensional Superassembler&r uses dimensional warping to process hundreds of assembly line recipes at once. "
 				""
@@ -655,9 +658,9 @@
 		{
 			dependencies: ["4261BDA34D716EC8"]
 			description: [
-				"&7&oUh boss? I think putting the Universe Creation Data in the Subatomic Digital Assembler was a bad idea.&r"
+				"&7&oUh boss? I think putting the &6Universe Creation Data&r &7&oin the Subatomic Digital Assembler was a bad idea.&r"
 				""
-				"Attempting to replicate Universe Creation Data will instead corrupt the data, giving you this unsightly mess."
+				"Attempting to replicate Universe Creation Data will instead &eshatter the universe inside&r, giving you this unsightly mess."
 				""
 				"Not all may be lost, though..."
 			]
@@ -665,10 +668,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3F79F8E984CF6A2A"
-				item: "kubejs:corrupted_universe_data"
+				item: "kubejs:shattered_universe_data"
 				type: "item"
 			}]
-			title: "&9Corrupted Universe Data"
+			title: "&9Shattered Universe Data"
 			x: 31.0d
 			y: -18.0d
 		}
@@ -808,19 +811,19 @@
 				"1D00150456DEF379"
 			]
 			description: [
-				"Sending out this corrupted data with some shattered star data will return &9Shattered Universe Data&r.  "
+				"Forcefully combining this shattered universe data with some shattered star data will return &6Corrupted Universe Data&r - a realm with &eglitched duplicates of assorted valuable resources.&r"
 				""
-				"Using this data alongside some infinity catalysts will return multiple Hearts of The Universe, making a nice net profit."
+				"Using this data alongside some infinity catalysts will return multiple &6Hearts of The Universe&r, making a nice net profit."
 			]
 			id: "769047385AAC71B2"
 			shape: "hexagon"
 			subtitle: "Sometimes you gotta spend money to make money"
 			tasks: [{
 				id: "45C0AD6F1EC8334B"
-				item: "kubejs:shattered_universe_data"
+				item: "kubejs:corrupted_universe_data"
 				type: "item"
 			}]
-			title: "&9Shattered Universe Data"
+			title: "&9Corrupted Universe Data"
 			x: 28.5d
 			y: -18.0d
 		}
@@ -1033,6 +1036,46 @@
 			title: "Cryococcal Reverberator"
 			x: 33.5d
 			y: -8.75d
+		}
+		{
+			dependencies: [
+				"07057CDE4E021BA7"
+				"5911900438648430"
+			]
+			description: [
+				"The &9Helical Fusion Reactor&r is a very large multiblock structure used for fusing elements into heavier ones &ein parallel&r. "
+				""
+				"For every Hatch it has, its buffer increases by 80M EU, and has a maximum of 1280M."
+			]
+			id: "4E4F03C44623A85D"
+			size: 1.5d
+			tasks: [{
+				id: "4304A44E787027B6"
+				item: "gtceu:helical_fusion_reactor"
+				type: "item"
+			}]
+			title: "&9Helical Fusion Reactor"
+			x: 48.0d
+			y: -16.875d
+		}
+		{
+			dependencies: ["739F7BF2A90B278A"]
+			description: [
+				"The most advanced polymer you will need to make, Polyethyl Cyanoacrylate is required for a few endgame crafts."
+				""
+				"Fortunately, you won't need too much of it."
+			]
+			hide_dependency_lines: true
+			id: "5911900438648430"
+			subtitle: "Krazy Glue"
+			tasks: [{
+				id: "6A6C0D5FFB29C9E1"
+				item: "gtceu:polyethyl_cyanoacrylate_plate"
+				type: "item"
+			}]
+			title: "Polyethyl Cyanoacrylate"
+			x: 48.0d
+			y: -24.25d
 		}
 	]
 	title: "End Game"

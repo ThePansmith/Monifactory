@@ -27,7 +27,7 @@
 			id: "14426BB19924AD5E"
 			linked_quest: "5C4E189A3E401566"
 			shape: "hexagon"
-			x: 2.5d
+			x: 5.5d
 			y: -1.5d
 		}
 	]
@@ -81,7 +81,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Calculation Processor."]
+			description: ["Run the materials through &3Inscribers&r with &aPresses&r to make the printed variant, then combine the printed materials and circuit to form the Calculation Processor."]
 			id: "133FB7996362498C"
 			rewards: [{
 				id: "035F2955DB950CCA"
@@ -89,7 +89,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Calculation Processors&r are made from a &6Certus Plate&r, a &6Silicon Plate&r, and any &6tier one circuit&r."
+			subtitle: "&6Calculation Processors&r are made from &6Printed Calculation Circuit&r, &6Printed Silicon&r, and any &6tier one circuit&r."
 			tasks: [{
 				id: "63ED16CB8306DC8C"
 				item: "ae2:calculation_processor"
@@ -154,7 +154,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Logic Processor."]
+			description: ["Run the materials through &3Inscribers&r with &aPresses&r to make the printed variant, then combine the printed materials and circuit to form the Logic Processor."]
 			id: "1F4D2DAF4267DB77"
 			rewards: [{
 				id: "52D7FCB9D1EC2573"
@@ -162,7 +162,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Logic Processors&r are made from a &6Gold Plate&r, a &6Silicon Plate&r, and any tier one circuit."
+			subtitle: "&6Logic Processors&r are made from &6Printed Logic Circuit&r, &6Printed Silicon&r, and any tier one circuit."
 			tasks: [{
 				id: "3A650FC102D75669"
 				item: "ae2:logic_processor"
@@ -341,7 +341,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Engineering Processor."]
+			description: ["Run the materials through &3Inscribers&r with &aPresses&r to make the printed variant, then combine the printed materials and circuit to form the Engineering Processor."]
 			id: "0FD703A1A1E5055E"
 			rewards: [{
 				id: "128EF2992A9B077F"
@@ -349,7 +349,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Engineering Processors&r are made from a &6Diamond Plate&r, a &6Silicon Plate&r, and any tier one circuit."
+			subtitle: "&6Engineering Processors&r are made from &6Printed Engineering Circuit&r, &6Printed Silicon&r, and any tier one circuit."
 			tasks: [{
 				id: "2D4C3E3A6D443BB0"
 				item: "ae2:engineering_processor"
@@ -476,7 +476,7 @@
 				""
 				"These can be filled with encoded &aPatterns&r to perform on-demand autocrafting. Any item pushed into an &aME Pattern Provider&r is digitized and placed in your ME Network storage."
 				""
-				"When adjacent to one or more &aMolecular Assemblers&r, crafting table patterns can be crafted. It will use as many adjacent &aMolecular Assemblers&r as possible, restricted by availability and number of &aCo-processors&r in your crafting CPU multiblock."
+				"When adjacent to one or more &aMolecular Assemblers&r, &3Crafting Table&r and &3Stonecutter&r patterns can be crafted. It will use as many adjacent &aMolecular Assemblers&r as possible, restricted by availability and number of &aCo-processors&r in your crafting CPU multiblock."
 				"{@pagebreak}"
 				"When adjacent to any other block, you can use &aprocessing patterns&r with a machine to insert items into the machine. Processing patterns require that the finished item is inserted back into the ME Network through &aInterfaces&r or &aPattern Providers&r."
 				""
@@ -708,13 +708,13 @@
 				type: "item"
 			}]
 			title: "Digital Storage At Last"
-			x: 2.25d
-			y: -4.0d
+			x: 1.125d
+			y: -1.5d
 		}
 		{
 			dependencies: [
 				"680C4363C268B223"
-				"1F4D2DAF4267DB77"
+				"133FB7996362498C"
 			]
 			description: ["Unformatted disks always have a hard limit of 63 distinct types of items, but each step up has roughly four times the total storage space of the prior disk."]
 			id: "72AFBEFCEAE86EC1"
@@ -730,8 +730,8 @@
 				type: "item"
 			}]
 			title: "4k Item Storage"
-			x: 5.5d
-			y: -4.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["72AFBEFCEAE86EC1"]
@@ -748,8 +748,8 @@
 				type: "item"
 			}]
 			title: "16k Item Storage"
-			x: 5.5d
-			y: -6.5d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["15AE607E2EDD0369"]
@@ -767,7 +767,7 @@
 				type: "item"
 			}]
 			title: "64k Item Storage"
-			x: 3.5d
+			x: 2.5d
 			y: -6.5d
 		}
 		{
@@ -778,7 +778,7 @@
 			description: [
 				"Firstly, you will need a &3Matter Condenser&r. Stick a &664k ME Storage Component&r in, change the mode to 'Singularity', and stuff lots of items (or fluids) in, &9done easily with a infinity cell&r."
 				""
-				"If you don't have that, you can surround it with &6Dense Cobblestone Generators&r."
+				"If you don't have that, you can provide it with the output of regular &6Water&r or &6Cobblestone&r generation methods."
 				"{@pagebreak}"
 				"After you have made the &eSingularity&r you will need from the &3Matter Condenser&r, you need to setup a &aQuantum Ring Multiblock&r. Build a 3 by 3 vertical ring with your &6Quantum Rings&r, leaving a hole in the middle. Finally, stick your &6Quantum Link Chamber&r in the hole, and connect it to your ME system. If you built it correctly, the textures of the rings should combine, leaving you with a &aMultiblock&r."
 				""
@@ -829,7 +829,7 @@
 				}
 			]
 			title: "&9AE2 Everywhere!"
-			x: 1.5d
+			x: 1.25d
 			y: -6.5d
 		}
 		{
@@ -916,8 +916,8 @@
 				type: "item"
 			}]
 			title: "&9256k Item Storage"
-			x: 3.5d
-			y: -8.0d
+			x: 5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["6F32A8739D8E792A"]
@@ -1128,8 +1128,8 @@
 				}
 			]
 			title: "&9Infinitest Water and Stone"
-			x: 5.5d
-			y: -8.0d
+			x: 1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6F32A8739D8E792A"]
@@ -1451,7 +1451,7 @@
 			}]
 			title: "&9MEGA Cells"
 			x: 7.25d
-			y: -8.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["295E3D32083676E6"]

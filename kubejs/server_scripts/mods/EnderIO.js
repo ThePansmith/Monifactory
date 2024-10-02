@@ -541,7 +541,7 @@ if (isHarderMode) {
 
     event.recipes.gtceu.chemical_reactor('kubejs:dew_of_the_void')
         .itemInputs('enderio:pulsating_powder', 'enderio:vibrant_powder')
-        .inputFluids('kubejs:resonant_ender 4000')
+        .inputFluids('thermal:ender 4000')
         .outputFluids('enderio:dew_of_the_void 2000')
         .duration(84)
         .EUt(15)
