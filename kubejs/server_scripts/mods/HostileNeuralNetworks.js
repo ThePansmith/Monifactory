@@ -207,15 +207,15 @@ ServerEvents.recipes(event => {
 
 ItemEvents.rightClicked(event => {
     if (event.item.id === 'hostilenetworks:overworld_prediction') {
-        event.player.xp += 10
+        event.player.addXP(10)
         event.item.count--
     }
     if (event.item.id === 'hostilenetworks:nether_prediction') {
-        event.player.xp += 20
+        event.player.addXP(20)
         event.item.count--
     }
     if (event.item.id === 'hostilenetworks:end_prediction') {
-        event.player.xp += 25
+        event.player.addXP(25)
         event.item.count--
     }
 })
