@@ -1811,59 +1811,6 @@
 			y: 15.5d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
-			description: [
-				"This relatively inexpensive item will suck nearby items into your inventory."
-				""
-				"The &6GregTech Magnet&r, &6EnderIO Electromagnet&r, and &6Thermal FluxoMagnet&r can all be placed in a &dCurio slot&r to save inventory space."
-			]
-			id: "39394D5596FF8BC8"
-			rewards: [{
-				id: "20D8F149F414F950"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "725D5F61518AB7EE"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "thermal:flux_magnet"
-								tag: { }
-							}
-							{
-								Count: 1b
-								id: "gtceu:lv_item_magnet"
-								tag: {
-									Charge: 120000L
-								}
-							}
-							{
-								Count: 1b
-								id: "enderio:electromagnet"
-								tag: {
-									Energy: {
-										EnergyStored: 0
-										MaxEnergyStored: 100000
-										MaxEnergyUse: 100000
-									}
-								}
-							}
-						]
-					}
-				}
-				title: "Any Magnet"
-				type: "item"
-			}]
-			title: "Magnet"
-			x: -1.5d
-			y: 17.0d
-		}
-		{
 			dependencies: ["297B523B6C503957"]
 			description: [
 				"Unlike &aRF power&r, which is safe to transport in any &6conduit&r, &aEU power &erequires caution&r. The key is to always &amatch or exceed&r the &eVoltage &rand&e Amperage&r of your power source with your &6cables&r and machines."

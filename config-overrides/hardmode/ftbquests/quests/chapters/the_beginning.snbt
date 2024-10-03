@@ -1910,7 +1910,11 @@
 		}
 		{
 			dependencies: ["47094A5717952699"]
-			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
+			description: [
+				"This relatively inexpensive item will suck nearby items into your inventory."
+				""
+				"The &6GregTech Magnet&r, &6EnderIO Electromagnet&r, and &6Thermal FluxoMagnet&r can all be placed in a &dCurio slot&r to save inventory space."
+			]
 			id: "39394D5596FF8BC8"
 			rewards: [{
 				id: "20D8F149F414F950"
@@ -1918,21 +1922,42 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "36817E3C33876798"
+				id: "725D5F61518AB7EE"
 				item: {
-					Count: 1
-					id: "enderio:electromagnet"
+					Count: 1b
+					id: "itemfilters:or"
 					tag: {
-						Energy: {
-							EnergyStored: 0
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
+						items: [
+							{
+								Count: 1b
+								id: "thermal:flux_magnet"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_item_magnet"
+								tag: {
+									Charge: 120000L
+								}
+							}
+							{
+								Count: 1b
+								id: "enderio:electromagnet"
+								tag: {
+									Energy: {
+										EnergyStored: 0
+										MaxEnergyStored: 100000
+										MaxEnergyUse: 100000
+									}
+								}
+							}
+						]
 					}
 				}
+				title: "Any Magnet"
 				type: "item"
 			}]
-			title: "Electromagnet"
+			title: "Magnet"
 			x: -2.75d
 			y: -6.0d
 		}
