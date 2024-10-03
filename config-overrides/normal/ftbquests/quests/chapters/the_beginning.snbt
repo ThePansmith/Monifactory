@@ -61,7 +61,7 @@
 				""
 				"&2If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer, &9or mute the sound entirely in the ESM menu, accessable from your inventory."
 			]
-			icon: "gtceu:lv_electric_motor"
+			icon: "gtceu:lv_wiremill"
 			id: "62BBD1F6767A4D90"
 			rewards: [{
 				count: 2
@@ -287,7 +287,7 @@
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"The &3Bending Machine&r improves the yield of a great deal of items. Most notably, you can use it to get one &6Plate&r from a single ingot, instead of having to spend two ingots for a single plate."
+				"The &3Bender&r improves the yield of a great deal of items. Most notably, you can use it to get one &6Plate&r from a single ingot, instead of having to spend two ingots for a single plate."
 				""
 				"As with the &3Wiremill&r, this requires a &6Programmed Circuit&r to tell it what to make. For plates, this is &econfiguration 1&r. Refer to &eEMI&r for which configuration to use for your recipe."
 				" "
@@ -312,7 +312,7 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			title: "&2LV Bending Machine"
+			title: "&2LV Bender"
 			x: -7.0d
 			y: -0.5d
 		}
@@ -341,7 +341,7 @@
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"&2&2Most plates are made in the Bending Machine instead of here. (Technically this was the case in CE, but this modpack transferred its recipes to the Compressor.)&r"
+				"&2&2Most plates are made in the Bender instead of here. (Technically this was the case in CE, but this modpack transferred its recipes to the Compressor.)&r"
 				""
 				"However, this machine will still see use for compressing &eNuggets&r into&e Ingots&r, &eIngots&r into &eBlocks&r, &eGem Dusts&r into &ePlates&r (such as &6Certus Quartz&r), as well as various other useful recipes."
 			]
@@ -530,12 +530,6 @@
 			}]
 			shape: "hexagon"
 			tasks: [
-				{
-					count: 3L
-					id: "003802F16404404C"
-					item: { Count: 3, id: "gtceu:empty_mold" }
-					type: "item"
-				}
 				{
 					id: "500A01A974ACFC7D"
 					item: "gtceu:block_casting_mold"
@@ -1848,7 +1842,7 @@
 		{
 			dependencies: ["3EDD0A986384F2A7"]
 			description: [
-				"Now that you have a &3Wiremill&f and a &2Bending Machine&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &9monicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
+				"Now that you have a &3Wiremill&f and a &2Bender&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &9monicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
 				""
 				"With renewable &9monicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
 			]
@@ -1934,7 +1928,11 @@
 		}
 		{
 			dependencies: ["47094A5717952699"]
-			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
+			description: [
+				"This relatively inexpensive item will suck nearby items into your inventory."
+				""
+				"The &6GregTech Magnet&r, &6EnderIO Electromagnet&r, and &6Thermal FluxoMagnet&r can all be placed in a &dCurio slot&r to save inventory space."
+			]
 			id: "39394D5596FF8BC8"
 			rewards: [{
 				id: "20D8F149F414F950"
@@ -1942,21 +1940,42 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "36817E3C33876798"
+				id: "725D5F61518AB7EE"
 				item: {
-					Count: 1
-					id: "enderio:electromagnet"
+					Count: 1b
+					id: "itemfilters:or"
 					tag: {
-						Energy: {
-							EnergyStored: 0
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
+						items: [
+							{
+								Count: 1b
+								id: "thermal:flux_magnet"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_item_magnet"
+								tag: {
+									Charge: 120000L
+								}
+							}
+							{
+								Count: 1b
+								id: "enderio:electromagnet"
+								tag: {
+									Energy: {
+										EnergyStored: 0
+										MaxEnergyStored: 100000
+										MaxEnergyUse: 100000
+									}
+								}
+							}
+						]
 					}
 				}
+				title: "Any Magnet"
 				type: "item"
 			}]
-			title: "Electromagnet"
+			title: "Magnet"
 			x: -2.75d
 			y: -6.0d
 		}
