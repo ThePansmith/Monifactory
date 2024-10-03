@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Monifactory",
-  "version": "0.9.3",
+  "version": "0.9.5",
   "author": "Pansmith",
   "overrides": "overrides",
   "files": [
