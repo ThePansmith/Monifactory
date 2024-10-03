@@ -661,7 +661,7 @@
 		}
 		{
 			dependencies: ["5E2489DE2E840738"]
-			description: ["Mix &9Oxygen&r and &91,1-Dimethylhydrazine&r together to make &9Rocket Fuel&r."]
+			description: ["Mix &9Oxygen&r and &9Dimethylhydrazine&r together to make &9Rocket Fuel&r."]
 			id: "24415A26E5A0FD72"
 			rewards: [{
 				count: 2
