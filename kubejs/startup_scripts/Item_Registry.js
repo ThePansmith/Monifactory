@@ -356,7 +356,7 @@ StartupEvents.registry('item', event => {
     function Mainframe(theme, volt) {
         event.create(`${theme}_processor_mainframe`)
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processor Mainframe`)
-            .textureJson({ layer0: `kubejs:item/circuits/${theme}_processor_mainframe_base`, layer1: "kubejs:item/circuits/processor_mainframe_lights" })
+            .textureJson({ layer0: `kubejs:item/circuits/${theme}_processor_mainframe_base`, layer1: `kubejs:item/circuits/${theme}_processor_mainframe_lights` })
     }
 
     function Unit(theme) {
