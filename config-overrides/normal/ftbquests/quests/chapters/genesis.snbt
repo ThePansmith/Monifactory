@@ -351,8 +351,9 @@
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
-				id: "404D91696592F318"
-				item: "kubejs:moni_nickel"
+				count: 4
+				id: "269E89EDD3A32100"
+				item: "sophisticatedstorage:hopper_upgrade"
 				type: "item"
 			}]
 			subtitle: "Bags of holding"
