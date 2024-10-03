@@ -395,7 +395,6 @@
 				""
 				"Finally, a Macerator will only start processing if there is room for all possible outputs. Make sure you empty them so they can keep working."
 			]
-			icon: "gtceu:lv_macerator"
 			id: "4685AC9E6CD87B77"
 			rewards: [{
 				id: "06A7DC04EEC732E1"
@@ -406,27 +405,7 @@
 			subtitle: "&oNote: this quest accepts LV, MV and HV Macerators."
 			tasks: [{
 				id: "29E5699EC44EAFB5"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_macerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_macerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_macerator"
-							}
-						]
-					}
-				}
-				title: "LV, MV, or HV Macerator"
+				item: "gtceu:lv_macerator"
 				type: "item"
 			}]
 			title: "&2Macerator"
@@ -513,6 +492,52 @@
 			y: -6.0d
 		}
 		{
+			dependencies: [
+				"47094A5717952699"
+				"273F3F8DD6A3DCC5"
+			]
+			description: [
+				"This pack has &aSnad&r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block update or a redstone update."
+				""
+				"The sugar cane it produces can be used as a fuel for your dynamos, and later you can even brew it for &9Biomass&r."
+				""
+				"This quest calls for a &aRedstone Clock&r, but there are other ways to make snad grow sugar cane even faster (like a vanilla observer clock pointing into the Snad). Make sure to set the timer to pulse as fast as possible."
+				""
+				"To collect the sugar cane, you can use a piston and an observer."
+				""
+				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
+			]
+			icon: "snad:snad"
+			id: "529D50CE814AF449"
+			shape: "hexagon"
+			subtitle: "Yes, Snad."
+			tasks: [
+				{
+					id: "77ADD3B3DA61DC55"
+					item: "snad:snad"
+					type: "item"
+				}
+				{
+					id: "719FAF0F70FA25E5"
+					item: "enderio:vacuum_chest"
+					type: "item"
+				}
+				{
+					id: "2DCBDFF5EB0F7CD9"
+					item: "redstone_clock:redstone_clock"
+					type: "item"
+				}
+				{
+					id: "3DBB91C93688C4FC"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+			]
+			title: "Snad"
+			x: -4.5d
+			y: -9.5d
+		}
+		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
 				"&aMolds&r are used in a &3Fluid Solidifier&r or &3Alloy Smelter&r to form materials into specific shapes. These are not consumed or damaged during crafting, so you can leave them in a machine to dedicate it to that shape."
@@ -533,7 +558,7 @@
 				{
 					count: 3L
 					id: "003802F16404404C"
-					item: { Count: 3, id: "gtceu:empty_mold" }
+					item: "gtceu:empty_mold"
 					type: "item"
 				}
 				{
@@ -607,7 +632,7 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for Steel and other useful things."]
+			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for other alloys."]
 			id: "5301E546BAA69844"
 			rewards: [{
 				id: "424A2A6FAB412F69"
@@ -624,13 +649,13 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
+			subtitle: "&9Steel&r is the main material in &9LV&r"
 			tasks: [{
 				id: "17210F38B40BAAD7"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&9Alloying Steel"
+			title: "&9Steel"
 			x: 2.5d
 			y: -3.0d
 		}
@@ -710,29 +735,15 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: [
-				"Using plain &3Steam Dynamos&f is pretty inefficient."
-				""
-				"It's strongly recommended to upgrade your dynamos into &3steam boilers&f and &3steam turbines&f. The ratio is always &a1:2&r if all Dynamos are equally upgraded."
-				""
-				"This greatly increases the overall efficiency and the amount of power produced, from &a40 RF/t&r per basic steam dynamo to &a320 RF/t&r per set of three augmented dynamos."
-			]
+			description: ["Need &9RF&r to charge your items? Thermal dynamos are disabled in harder mode, but you can plug GTEU straight into a &6Tinker's Workbench&r to power it. Such convinence right?"]
 			icon: "systeams:steam_dynamo"
 			id: "545CCC24D9401794"
-			tasks: [
-				{
-					id: "12315AEA66B77CB2"
-					item: { Count: 2, id: "systeams:stirling_boiler" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "76CB286FDDD00D40"
-					item: "systeams:steam_dynamo"
-					type: "item"
-				}
-			]
-			title: "Boilers and Turbines"
+			tasks: [{
+				id: "114F684B1AB140C8"
+				title: "Yay RF!"
+				type: "checkmark"
+			}]
+			title: "Making RF"
 			x: 4.5d
 			y: -1.5d
 		}
@@ -1009,10 +1020,9 @@
 				"The &3Energy Acceptor&r converts RF power into AE power that Applied Energistics uses, in a 2 RF to 1 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected &6ME Cables&r, &6ME Conduits&r, and &6Quartz Fiber&r. "
 				""
 				"Quartz Fiber are &emicroparts&r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
-				"{@pagebreak}"
-				"Applied Energistics 2 can be complicated for a new player, so I recommend either use &9the in-game guide&r &e(Press G while hovering over a compatible item)&r or a video as a supplement to this chapter if need be. "
+				"Applied Energistics 2 can be complicated for a new player, so I recommend either using &9the ingame guide&r or a video as a supplement to this chapter if need be. "
 				""
-				"[\"I personally recommend \",{\"text\": \"Pansmith's guide to Applied Energistics 2\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \". while written for the 1.12 verison of AE2, most of the infomation is the exact same between the versions, and was made with Nomifactory players in mind.\"]"
+				"[\"I personally recommend \",{\"text\": \"Pansmith's guide to Applied Energistics 2\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \", while written for the 1.12 verison of AE2, most of the infomation is the exact same between the versions, and was made with Nomifactory players in mind.\"]"
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"
@@ -1509,18 +1519,16 @@
 				"&2Certain multiblocks in CEu will require a Maintenance Hatch and/or Muffler Hatch. These cannot be shared between multiblocks. If you knew Maintenance in GT5u, fret not - Maintenance mechanics are far less punishing in CEu."
 				""
 				"&r- &aMuffler&r: This hatch must be &cunobstructed&r so it can output its beautiful smoke particles. When a recipe is performed, there is a small chance for the &3Muffler Hatch&r to give bonus items, typically tiny Dusts of Ash. It voids excess when full, so do not worry about it stopping machines from running."
-				"{@pagebreak}"
+				""
 				"- &aMaintenance&r: You will need to do Maintenance for the Multiblock to begin operating. This is done by having a &9Wrench&r, a &9Screwdriver&r, a &9Soft Mallet&r, a &9Hammer&r, a &9Wire Cutter&r, and a &9Crowbar&r in your inventory, opening the Maintenance Hatch and &eclicking the center spot once&r. &cNo need to move tools individually&r. Alternatively, you can fix problems by placing &9Tape&r in the Maintenance Hatch. "
 				""
 				"Maintenance problems may occur after &948 real hours of activity&r. Needless to say, they are very rare. Each problem increases the recipe durations by 10%%. Fixing the problems is done the same way as above."
-				"{@pagebreak}"
+				""
 				"Later, you will unlock other Maintenance Hatches that do not enforce fixing the problems manually. Both start with &6no Maintenance required&r:"
 				""
+				"- &3Automatic Maintenance Hatch&r (&9IV&r): Eliminates the need for Maintenance, &6forever&r."
+				""
 				"- &3Configurable Maintenance Hatch&r (&6HV&r): You can configure it to cut off &a10%% duration&r on recipes, at the cost of making Maintenance issues happen three times as fast. That is &916 real hours&r of activity. &9Tape&r can fix problems in this Hatch as well."
-				""
-				"- &3Automatic Maintenance Hatch&r (&9HV&r): Eliminates the need for Maintenance, &6forever&r."
-				""
-				"- &3Cleaning Maintenance Hatch&r (&9IV&r): Functions as an &3Automatic Maintenance Hatch&r, and allows the multiblock to perform recipes that would otherwise need be performed in a &2Cleanroom&r."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:maintenance_hatch"
@@ -1839,7 +1847,7 @@
 				{
 					count: 13L
 					id: "505B1290E3042129"
-					item: { Count: 13, id: "gtceu:steam_machine_casing" }
+					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
@@ -1867,61 +1875,6 @@
 			title: "&9Steam Foundry"
 			x: 4.517857142857139d
 			y: 1.4285714285714306d
-		}
-		{
-			dependencies: ["47094A5717952699"]
-			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
-			id: "39394D5596FF8BC8"
-			rewards: [{
-				id: "20D8F149F414F950"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "36817E3C33876798"
-				item: {
-					Count: 1
-					id: "enderio:electromagnet"
-					tag: {
-						Energy: {
-							EnergyStored: 0
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Electromagnet"
-			x: -2.75d
-			y: -6.0d
-		}
-		{
-			dependencies: ["66FCC26399376B55"]
-			description: [
-				"To mute a Gregtech machine, right-click it with a &6Hammer&r. (Not the Mining kind!)"
-				""
-				"For other sounds, there is a button in the &etop-left&r of your inventory that looks like a speaker. Clicking it brings you to the &bExtreme Sound Muffler&r menu."
-				""
-				"In this menu you can &eattenuate the volume of sounds that were recently played&r, or set an \"Anchor\" to reduce the volume of sounds in that area - most of the controls in this menu have a tooltip to tell you what they do."
-			]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "gtceu:textures/gui/overlay/tool_sound.png"
-				}
-			}
-			id: "5B52FFEBF5D65C20"
-			size: 1.5d
-			subtitle: "My poor ears!"
-			tasks: [{
-				id: "2D68D336FAC66CCE"
-				type: "checkmark"
-			}]
-			title: "&9Muting and Muffling"
-			x: 17.25d
-			y: 9.375d
 		}
 	]
 	title: "The Beginning"
