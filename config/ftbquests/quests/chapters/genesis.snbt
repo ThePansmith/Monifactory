@@ -1035,8 +1035,6 @@
 		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
-				"&rThis quest accepts a item pipe of any material, any size, whether restrictive or normal."
-				""
 				"For now, the best material to make these pipes out of is probably &6Tin&r."
 				""
 				"Their advantage over &5EnderIO &3Item Conduits&r is their far higher &6throughput&r. An unupgraded EIO Item Conduit transports &98 items per second&r, and up to &9128&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9multiple stacks per second&r."
@@ -1732,6 +1730,59 @@
 			y: 15.5d
 		}
 		{
+			dependencies: ["06E9B9DDDB245F38"]
+			description: [
+				"This relatively inexpensive item will suck nearby items into your inventory."
+				""
+				"The &6GregTech Magnet&r, &6EnderIO Electromagnet&r, and &6Thermal FluxoMagnet&r can all be placed in a &dCurio slot&r to save inventory space."
+			]
+			id: "39394D5596FF8BC8"
+			rewards: [{
+				id: "20D8F149F414F950"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "725D5F61518AB7EE"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "thermal:flux_magnet"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_item_magnet"
+								tag: {
+									Charge: 120000L
+								}
+							}
+							{
+								Count: 1b
+								id: "enderio:electromagnet"
+								tag: {
+									Energy: {
+										EnergyStored: 0
+										MaxEnergyStored: 100000
+										MaxEnergyUse: 100000
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "Any Magnet"
+				type: "item"
+			}]
+			title: "Magnet"
+			x: -1.5d
+			y: 16.75d
+		}
+		{
 			dependencies: ["297B523B6C503957"]
 			description: [
 				"Unlike &aRF power&r, which is safe to transport in any &6conduit&r, &aEU power &erequires caution&r. The key is to always &amatch or exceed&r the &eVoltage &rand&e Amperage&r of your power source with your &6cables&r and machines."
@@ -1770,7 +1821,7 @@
 				""
 				"The &6Wiremill&r will make crafting wires much, much easier."
 				""
-				"The &2Bending Machine&r will make Plates from one ingot instead of two."
+				"The &2Bender&r will make Plates from one ingot instead of two."
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
@@ -2179,6 +2230,53 @@
 			title: "Movin' Around"
 			x: -9.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["7865CDE5CFE005DC"]
+			description: ["All furnaces from &bIron Furnaces&r can be augmented to have be &afaster&r, more &afuel efficient&r, and &asmelt multiple items at once&r!"]
+			id: "5D5C24BACC649253"
+			optional: true
+			rewards: [{
+				id: "7021A7413D938814"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Modular furnaces!"
+			tasks: [
+				{
+					id: "154872CDC7976802"
+					item: "ironfurnaces:augment_speed"
+					type: "item"
+				}
+				{
+					id: "29E0DC2E3B5B4A0F"
+					item: "ironfurnaces:augment_fuel"
+					type: "item"
+				}
+			]
+			title: "Furnace Augments"
+			x: 7.25d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7865CDE5CFE005DC"]
+			description: ["You can copy and paste settings from different &eFurnaces&r using a &6Furnaces Setting Linker&r"]
+			id: "07508736CEE01C7F"
+			optional: true
+			rewards: [{
+				id: "7455123A87C45A7E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Copying your furnace's settings"
+			tasks: [{
+				id: "4FF735E089FC1BA8"
+				item: "ironfurnaces:item_copy"
+				type: "item"
+			}]
+			title: "Ctrl + C, Ctrl + V"
+			x: 7.25d
+			y: 3.75d
 		}
 	]
 	title: "Genesis"

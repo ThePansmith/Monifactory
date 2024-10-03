@@ -533,7 +533,7 @@
 			description: [
 				"Cuts things up."
 				""
-				"The &3Cutting Machine&r is able to cut wafers, rods, wood, and various other things for you, making it a versatile crafting tool. Cutting blocks into 9 plates may be faster than using a &2Bending Machine &rto make them one at a time."
+				"The &3Cutting Machine&r is able to cut wafers, rods, wood, and various other things for you, making it a versatile crafting tool. Cutting blocks into 9 plates may be faster than using a &2Bender &rto make them one at a time."
 				""
 				"The MV version is required for cutting &6Silicon Boules&r for easier &6Diodes&r once you get &9Polyethylene (PE)&r, and for cutting &6Wafers&r into usable components. "
 				""
@@ -2327,6 +2327,21 @@
 			title: "Inspector Gadget"
 			x: 9.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["3B639F4061B00F1A"]
+			description: ["Now that you have some &6MV circuits&r, you can make a &6Factory Augment&r that lets you &2smelt multiple items at once&r with your furnaces!"]
+			id: "6DAA25CA26AE05E9"
+			optional: true
+			subtitle: "Multi smelter, sort of!"
+			tasks: [{
+				id: "530D4E4EF55BAC5F"
+				item: "ironfurnaces:augment_factory"
+				type: "item"
+			}]
+			title: "Factory Augment"
+			x: 9.0d
+			y: 3.0d
 		}
 	]
 	title: "Early Game"

@@ -1066,7 +1066,7 @@
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
 				""
-				"You may wish to wait until you have a Bending Machine at LV to reduce the cost."
+				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "gtceu:steam_grinder"
 			id: "0A8179C319A6868E"
@@ -1130,7 +1130,7 @@
 			description: [
 				"The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."
 				""
-				"You may wish to wait until you have a Bending Machine at LV to reduce the cost."
+				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "steamadditions:steam_foundry"
 			id: "1A80D0AE0B2F7A9D"
@@ -1607,7 +1607,7 @@
 				""
 				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
 				""
-				"You may wish to wait until you have a Bending Machine at LV to reduce the cost."
+				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "steamadditions:steam_separator"
 			id: "5F90D0FC382C0A30"
@@ -1962,7 +1962,7 @@
 				""
 				"The &6Wiremill&r will make crafting wires much, much easier."
 				""
-				"The &2Bending Machine&r will make Plates from one ingot instead of two."
+				"The &2Bender&r will make Plates from one ingot instead of two."
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
