@@ -601,7 +601,7 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for Steel and other useful things."]
+			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for other alloys."]
 			id: "5301E546BAA69844"
 			rewards: [{
 				id: "424A2A6FAB412F69"
@@ -618,13 +618,13 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
+			subtitle: "&9Steel&r is the main material in &9LV&r"
 			tasks: [{
 				id: "17210F38B40BAAD7"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&9Alloying Steel"
+			title: "&9Steel"
 			x: 2.5d
 			y: -3.0d
 		}
@@ -704,29 +704,15 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: [
-				"Using plain &3Steam Dynamos&f is pretty inefficient."
-				""
-				"It's strongly recommended to upgrade your dynamos into &3steam boilers&f and &3steam turbines&f. The ratio is always &a1:2&r if all Dynamos are equally upgraded."
-				""
-				"This greatly increases the overall efficiency and the amount of power produced, from &a40 RF/t&r per basic steam dynamo to &a320 RF/t&r per set of three augmented dynamos."
-			]
+			description: ["Need &9RF&r to charge your items? Thermal dynamos are disabled in harder mode, but you can plug GTEU straight into a &6Tinker's Workbench&r to power it. Such convinence right?"]
 			icon: "systeams:steam_dynamo"
 			id: "545CCC24D9401794"
-			tasks: [
-				{
-					id: "12315AEA66B77CB2"
-					item: { Count: 2, id: "systeams:stirling_boiler" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "76CB286FDDD00D40"
-					item: "systeams:steam_dynamo"
-					type: "item"
-				}
-			]
-			title: "Boilers and Turbines"
+			tasks: [{
+				id: "114F684B1AB140C8"
+				title: "Yay RF!"
+				type: "checkmark"
+			}]
+			title: "Making RF"
 			x: 4.5d
 			y: -1.5d
 		}
@@ -799,70 +785,6 @@
 			title: "&2Forge Hammer"
 			x: 4.5d
 			y: -7.0d
-		}
-		{
-			dependencies: ["30EBD4E7BBFFEF2C"]
-			description: [
-				"&6&6String&r and &6Coal Dust&r can be baked together into a &6Carbon Mesh&r in an &3Alloy Furnace&r."
-				""
-				"Combine that with &6Pulsating Dust&r to get a &6Pulsating Mesh&r."
-			]
-			icon: "kubejs:pulsating_mesh"
-			id: "645B1DCB3DA7198A"
-			rewards: [{
-				id: "2D12B468C7630D14"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "3FB8F2F8B1867430"
-					item: "kubejs:pulsating_mesh"
-					type: "item"
-				}
-				{
-					id: "6684545526C4AD44"
-					item: "gtceu:carbon_fiber_mesh"
-					type: "item"
-				}
-			]
-			title: "Pulsating Mesh"
-			x: 6.5d
-			y: -8.0d
-		}
-		{
-			dependencies: [
-				"645B1DCB3DA7198A"
-				"3BD20358F137E7C6"
-			]
-			description: [
-				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
-				""
-				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron, gold, tin, copper, diamonds&r and many more!), through pristine matter."
-				""
-				"Setting up &bHNN&r automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
-				""
-				"&bHNN&r machines are not sided, so you can input and output from any side."
-				""
-				"Yes, you can also use it for generating power... &owith &6Diamonds&r."
-			]
-			id: "715BC5C7DAC53B7B"
-			rewards: [{
-				id: "518DD0C9237B4DBC"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "15A06F5EF4CADA4C"
-				item: "hostilenetworks:sim_chamber"
-				type: "item"
-			}]
-			title: "&9Simulating Mobs"
-			x: 6.5d
-			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1897,7 +1819,7 @@
 				{
 					count: 13L
 					id: "505B1290E3042129"
-					item: { Count: 13, id: "gtceu:steam_machine_casing" }
+					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
