@@ -208,7 +208,7 @@ ServerEvents.recipes(event => {
     const smds = [
         ['transistor', 'gtceu:diamond_plate', '8x gtceu:fine_holmium_wire'],
         ['resistor', 'gtceu:activated_netherite_dust', '4x gtceu:fine_holmium_wire'],
-        ['capacitor', 'gtceu:polyethyl_cyanoacrylate', 'gtceu:holmium_foil'],
+        ['capacitor', 'gtceu:polyethyl_cyanoacrylate_foil', 'gtceu:holmium_foil'],
         ['diode', 'gtceu:ruthenium_trinium_americium_neutronate_dust', '16x gtceu:fine_holmium_wire'],
         ['inductor', 'gtceu:tritanium_ring', '16x gtceu:fine_holmium_wire']
     ]
