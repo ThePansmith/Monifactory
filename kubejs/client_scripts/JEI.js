@@ -190,7 +190,7 @@ JEIEvents.hideItems(event => {
     event.hide('gtceu:steel_machine_casing')
 
     //Laserio
-    event.hide(['laserio:card_energy', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'])
+    event.hide(['laserio:logic_chip_raw', 'laserio:logic_chip'])
 
     // PEX
     event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
