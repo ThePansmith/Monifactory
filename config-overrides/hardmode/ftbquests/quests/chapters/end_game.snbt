@@ -3,10 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "end_game"
-	group: ""
+	group: "5CF31559080744DB"
 	icon: "kubejs:monic_processor_mainframe"
 	id: "2BEB72BC6C6FB4E9"
-	order_index: 11
+	order_index: 5
 	quest_links: [
 		{
 			id: "54018A95BECC356C"
