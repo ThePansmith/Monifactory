@@ -3,10 +3,10 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "genesis"
-	group: ""
+	group: "5CF31559080744DB"
 	icon: "gtceu:lv_steam_turbine"
 	id: "0654B76C306712BE"
-	order_index: 1
+	order_index: 0
 	quest_links: [
 		{
 			id: "7FB8EA3900C4D89D"
@@ -2119,7 +2119,7 @@
 				id: "7455123A87C45A7E"
 				item: "kubejs:moni_nickel"
 				type: "item"
-			}]	
+			}]
 			subtitle: "Copying your furnace's settings"
 			tasks: [{
 				id: "4FF735E089FC1BA8"
@@ -2206,5 +2206,5 @@
 			y: 10.0d
 		}
 	]
-	title: "An Even Harder Genesis"
+	title: "Genesis - Expert"
 }
