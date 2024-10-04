@@ -607,7 +607,7 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for Steel and other useful things."]
+			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for other alloys."]
 			id: "5301E546BAA69844"
 			rewards: [{
 				id: "424A2A6FAB412F69"
@@ -624,13 +624,13 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
+			subtitle: "&9Steel&r is the main material in &9LV&r"
 			tasks: [{
 				id: "17210F38B40BAAD7"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&9Alloying Steel"
+			title: "&9Steel"
 			x: 2.5d
 			y: -3.0d
 		}
@@ -710,29 +710,15 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: [
-				"Using plain &3Steam Dynamos&f is pretty inefficient."
-				""
-				"It's strongly recommended to upgrade your dynamos into &3steam boilers&f and &3steam turbines&f. The ratio is always &a1:2&r if all Dynamos are equally upgraded."
-				""
-				"This greatly increases the overall efficiency and the amount of power produced, from &a40 RF/t&r per basic steam dynamo to &a320 RF/t&r per set of three augmented dynamos."
-			]
+			description: ["Need &9RF&r to charge your items? Thermal dynamos are disabled in harder mode, but you can plug GTEU straight into a &6Tinker's Workbench&r to power it. Such convinence right?"]
 			icon: "systeams:steam_dynamo"
 			id: "545CCC24D9401794"
-			tasks: [
-				{
-					id: "12315AEA66B77CB2"
-					item: { Count: 2, id: "systeams:stirling_boiler" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "76CB286FDDD00D40"
-					item: "systeams:steam_dynamo"
-					type: "item"
-				}
-			]
-			title: "Boilers and Turbines"
+			tasks: [{
+				id: "114F684B1AB140C8"
+				title: "Yay RF!"
+				type: "checkmark"
+			}]
+			title: "Making RF"
 			x: 4.5d
 			y: -1.5d
 		}
@@ -1839,7 +1825,7 @@
 				{
 					count: 13L
 					id: "505B1290E3042129"
-					item: { Count: 13, id: "gtceu:steam_machine_casing" }
+					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
@@ -1870,7 +1856,11 @@
 		}
 		{
 			dependencies: ["47094A5717952699"]
-			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
+			description: [
+				"This relatively inexpensive item will suck nearby items into your inventory."
+				""
+				"The &6GregTech Magnet&r, &6EnderIO Electromagnet&r, and &6Thermal FluxoMagnet&r can all be placed in a &dCurio slot&r to save inventory space."
+			]
 			id: "39394D5596FF8BC8"
 			rewards: [{
 				id: "20D8F149F414F950"
@@ -1878,21 +1868,42 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "36817E3C33876798"
+				id: "725D5F61518AB7EE"
 				item: {
-					Count: 1
-					id: "enderio:electromagnet"
+					Count: 1b
+					id: "itemfilters:or"
 					tag: {
-						Energy: {
-							EnergyStored: 0
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
+						items: [
+							{
+								Count: 1b
+								id: "thermal:flux_magnet"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_item_magnet"
+								tag: {
+									Charge: 120000L
+								}
+							}
+							{
+								Count: 1b
+								id: "enderio:electromagnet"
+								tag: {
+									Energy: {
+										EnergyStored: 0
+										MaxEnergyStored: 100000
+										MaxEnergyUse: 100000
+									}
+								}
+							}
+						]
 					}
 				}
+				title: "Any Magnet"
 				type: "item"
 			}]
-			title: "Electromagnet"
+			title: "Magnet"
 			x: -2.75d
 			y: -6.0d
 		}
