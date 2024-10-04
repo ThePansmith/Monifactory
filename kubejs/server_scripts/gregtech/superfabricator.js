@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
     fabricator('slime', 1, '32x minecraft:slime_ball')
     fabricator('slime', 2, '8x minecraft:slime_block')
     fabricator('slime', 3, '4x gtceu:nickel_ingot')
-    fabricator('slime', 4, 'gtceu:platinum_credit')
+    fabricator('slime', 4, '3x gtceu:platinum_nugget')
     fabricator('spider', 1, '32x minecraft:string')
     fabricator('spider', 2, '16x minecraft:spider_eye')
     fabricator('spider', 3, '12x minecraft:copper_ingot')
