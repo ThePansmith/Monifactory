@@ -3,10 +3,10 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "genesis"
-	group: ""
+	group: "5CF31559080744DB"
 	icon: "gtceu:vacuum_tube"
 	id: "0654B76C306712BE"
-	order_index: 1
+	order_index: 0
 	quest_links: [
 		{
 			id: "7FB8EA3900C4D89D"

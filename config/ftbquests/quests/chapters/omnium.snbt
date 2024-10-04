@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "omnium"
-	group: ""
+	group: "6AA88557518775D7"
 	icon: "kubejs:mote_of_omnium"
 	id: "25FEB9E61EEC1A96"
-	order_index: 10
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

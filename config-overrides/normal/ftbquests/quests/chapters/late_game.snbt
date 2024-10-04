@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "late_game"
-	group: ""
+	group: "5CF31559080744DB"
 	icon: "gtceu:wetware_processor_computer"
 	id: "58ABB361EA301019"
-	order_index: 8
+	order_index: 4
 	quest_links: [
 		{
 			id: "5522298B1FC30B2B"
