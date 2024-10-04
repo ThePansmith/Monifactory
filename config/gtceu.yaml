@@ -217,7 +217,9 @@ machines:
   # GregTech TileEntities are always blocked.
   # Entries must be in a fully qualified format. For example: appeng.tile.networking.TileController
   # Default: none
-  worldAcceleratorBlacklist: zeith.solarflux.block.SolarPanelTile
+  worldAcceleratorBlacklist:
+    - org.zeith.solarflux.block.SolarPanelBlock
+    - org.zeith.solarflux.block.SolarPanelTile
 
   # Whether to use GT6-style pipe and cable connections, meaning they will not auto-connect unless placed directly onto another pipe or cable.
   # Default: true
