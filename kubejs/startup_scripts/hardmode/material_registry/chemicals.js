@@ -1,7 +1,8 @@
 //! Hardcore mode chemicals
-
 /**
- * Chemical Materials
+ * Gregtech Chemical Materials Registry: Hardmode+
+ * This file is for custom fluids (And some solids!)
+ * used in custom chemlines specific to Hardmode like harder Titanium and Graphite.
  */
 GTCEuStartupEvents.registry('gtceu:material', event => {
     if (!isHardMode) {
@@ -131,15 +132,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('lead', 'silicon', '3x oxygen')
 })
 
-// modify material names etc here
 GTCEuStartupEvents.materialModification(() => {
     if (!isHardMode) {
         return;
     }
-	GTMaterials.get('phthalic_anhydride').setFormula('C6H4(CO)2O');
-	GTMaterials.get('ethylanthraquinone').setFormula('C6H4(CO)2C6H3(CH2CH3)');
-	GTMaterials.get('acetone_azine').setFormula('((CH3)2(CN))2');
-	GTMaterials.get('durene').setFormula('C6H2(CH3)4');
+    GTMaterials.get('phthalic_anhydride').setFormula('C6H4(CO)2O');
+    GTMaterials.get('ethylanthraquinone').setFormula('C6H4(CO)2C6H3(CH2CH3)');
+    GTMaterials.get('acetone_azine').setFormula('((CH3)2(CN))2');
+    GTMaterials.get('durene').setFormula('C6H2(CH3)4');
     GTMaterials.get('pyromellitic_dianhydride').setFormula('C6H2(C2O3)2');
     GTMaterials.get('oxydianiline').setFormula('O(C6H4NH2)2');
 })

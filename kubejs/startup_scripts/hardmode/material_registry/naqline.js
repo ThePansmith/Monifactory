@@ -60,10 +60,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 })
 
-// modify material names etc here
 GTCEuStartupEvents.materialModification(() => {
     if (!isHardMode) {
         return;
     }
-	GTMaterials.get('naquadah_hydroxide').setFormula('Nq(OH)3');
+    GTMaterials.get('naquadah_hydroxide').setFormula('Nq(OH)3');
 })

@@ -1,29 +1,10 @@
+/**
+ * Block Registry - defines ID, name,
+ * block properties, and block tags of custom blocks.
+ */
 StartupEvents.registry("block", event => {
-    event.create('starry_diamond_block')
-        .displayName("Starry Diamond Block")
-        .soundType('metal')
-        .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe").requiresTool(true)
-        .textureAll('kubejs:block/microverse/starry_diamond_block');
 
-    event.create('dense_oilsands_ore')
-        .displayName('Dense Oilsands Ore')
-        .soundType('stone')
-        .resistance(6).hardness(5)
-        .tagBlock("mineable/shovel").requiresTool(true);
-
-    event.create('empowerer_casing')
-        .displayName("Empowerer Casing")
-        .soundType('metal')
-        .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe").requiresTool(true);
-
-    event.create('dust', 'falling')
-        .soundType('sand')
-        .hardness(0.4).resistance(0.4)
-        .tag("mineable/shovel").displayName("Dust Block")
-        .property(BlockProperties.FALLING);
-
+    // Compressed Blocks
     event.create('compressed_sand')
         .displayName("Compressed Sand")
         .soundType('sand')
@@ -55,22 +36,23 @@ StartupEvents.registry("block", event => {
     event.create('infinity_dust_block', 'falling')
         .displayName('Infinity Dust Block')
         .soundType('sand')
-        .resistance(6).hardness(5)
+        .resistance(0.6).hardness(0.5)
         .tagBlock("mineable/shovel").requiresTool(true);
 
     event.create('compressed_infinity_dust_block', 'falling')
         .displayName('Compressed Infinity Dust Block')
         .soundType('sand')
-        .resistance(6).hardness(5)
+        .resistance(1).hardness(1)
         .tagBlock("mineable/shovel").requiresTool(true);
 
     event.create('double_compressed_infinity_dust_block', 'falling')
         .displayName('Double Compressed Infinity Dust Block')
         .soundType('sand')
-        .resistance(6).hardness(5)
+        .resistance(2).hardness(2)
         .tagBlock("mineable/shovel").requiresTool(true);
 
-    // Micro Miner Cores
+
+    // Micro Miner Cores/Frames
     event.create('electrum_micro_miner_core')
         .displayName("Electrum Micro Miner Engine Core")
         .soundType('metal')
@@ -149,7 +131,8 @@ StartupEvents.registry("block", event => {
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe").requiresTool(true);
 
-    //Dense Ores
+
+    // Dense Ores
     const ores = [
         'redstone_ore',
         'diamond_ore',
@@ -158,12 +141,12 @@ StartupEvents.registry("block", event => {
         'lapis_ore',
         'iron_ore',
         'coal_ore',
+        'copper_ore',
         'nether_quartz_ore',
-        'copper_ore'
+        'oilsands_ore'
     ]
 
-    for (const ore of ores) {
-        // split '_' then capitalize then rejoin
+    ores.forEach(ore => {
         event.create('dense_' + ore)
             .displayName(`Dense ${ore.split('_').map(v => capitalize(v)).join(" ")}`)
             .soundType('stone')
@@ -173,10 +156,10 @@ StartupEvents.registry("block", event => {
             .tagBlock('forge:ores/dense')
             .tagBlock('forge:ores/dense_' + ore)
             .requiresTool(true);
-    }
+    });
 
     event.create('dense_magma_block')
-        .displayName(`Dense Magma Block`)
+        .displayName('Dense Magma Block')
         .soundType('stone')
         .resistance(6)
         .hardness(5)
@@ -186,7 +169,48 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .lightLevel(1.0);
 
-    //Casing stuff
+
+    // Machine Casings
+    const casings = [
+        'empowerer',
+        'microverse',
+        'cryococcus',
+        'cryolobus',
+        'cryococcus_fusion',
+        'dark_soularium',
+        'omnic_matrix_machine',
+        'dimensional_stabilization_netherite',
+
+    ]
+
+    casings.forEach(casing => {
+        event.create(`${casing}_casing`)
+            .displayName(`${casing.split('_').map(v => capitalize(v)).join(" ")} Casing`)
+            .soundType('metal')
+            .resistance(6).hardness(5)
+            .tagBlock("mineable/pickaxe").requiresTool(true);
+    });
+
+
+    // Misc
+    event.create('starry_diamond_block')
+        .displayName("Starry Diamond Block")
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe").requiresTool(true)
+        .textureAll('kubejs:block/microverse/starry_diamond_block');
+
+    event.create('dust', 'falling')
+        .soundType('sand')
+        .resistance(0.4).hardness(0.4)
+        .tag("mineable/shovel").displayName("Dust Block")
+        .property(BlockProperties.FALLING);
+
+    event.create('dark_steel_machine_hull')
+        .displayName("Dark Steel Machine Hull")
+        .soundType('metal')
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe").requiresTool(true);
 
     event.create('excitationcoil', 'cardinal')
         .displayName("Excitation Coil")
@@ -196,44 +220,6 @@ StartupEvents.registry("block", event => {
         .box(4, 1, 4, 12, 9, 12)
         .tag("mineable/pickaxe").requiresTool(true);
 
-    event.create('dark_steel_machine_hull')
-        .displayName("Dark Steel Machine Hull")
-        .soundType('metal')
-        .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe").requiresTool(true);
-
-    event.create("microverse_casing")
-        .displayName("Microverse Casing")
-        .soundType('metal')
-        .hardness(2.5)
-        .resistance(2.5)
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-
-    event.create('cryolobus_casing')
-        .displayName("Cryolobus Casing")
-        .soundType('metal')
-        .resistance(6)
-        .hardness(5)
-        .tagBlock("mineable/pickaxe")
-        .requiresTool(true)
-
-    event.create('cryococcus_casing')
-        .displayName("Cryococcus Casing")
-        .soundType('metal')
-        .resistance(6)
-        .hardness(5)
-        .tagBlock("mineable/pickaxe")
-        .requiresTool(true)
-
-    event.create('cryococcus_fusion_casing')
-        .displayName("Cryococcus Fusion Casing")
-        .soundType('metal')
-        .resistance(6)
-        .hardness(5)
-        .tagBlock("mineable/pickaxe")
-        .requiresTool(true)
-
     event.create('cryococcus_fusion_coil')
         .displayName("Cryococcus Fusion Coil")
         .soundType('metal')
@@ -241,27 +227,6 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-
-    event.create("dark_soularium_casing")
-        .displayName("Dark Soularium Casing")
-        .soundType('metal')
-        .hardness(2.5)
-        .resistance(2.5)
-        .requiresTool(true)
-        .tagBlock("mineable/pickaxe")
-
-    // Post-Tank MB blocks
-    event.create('omnic_matrix_machine_casing')
-        .hardness(5)
-        .requiresTool(true)
-        .soundType('metal')
-        .tagBlock("mineable/pickaxe")
-
-    event.create('dimensional_stabilization_netherite_casing')
-        .hardness(5)
-        .requiresTool(true)
-        .soundType('metal')
-        .tagBlock("mineable/pickaxe")
 
     event.create('omnic_matrix_coil_block', 'gtceu:coil')
         .temperature(15000)
