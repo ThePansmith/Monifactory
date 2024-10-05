@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	disable_toast: true
-	filename: "the_beginning"
+	filename: "the_factory"
 	group: ""
 	icon: "gtceu:electric_blast_furnace"
 	id: "2763DAD954E0EED8"
@@ -61,7 +61,7 @@
 				""
 				"&2If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer, &9or mute the sound entirely in the ESM menu, accessable from your inventory."
 			]
-			icon: "gtceu:lv_wiremill"
+			icon: "gtceu:lv_electric_motor"
 			id: "62BBD1F6767A4D90"
 			rewards: [{
 				count: 2
@@ -513,6 +513,52 @@
 			y: -6.0d
 		}
 		{
+			dependencies: [
+				"47094A5717952699"
+				"273F3F8DD6A3DCC5"
+			]
+			description: [
+				"This pack has &aSnad&r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block update or a redstone update."
+				""
+				"The sugar cane it produces can be used as a fuel for your dynamos, and later you can even brew it for &9Biomass&r."
+				""
+				"This quest calls for a &aRedstone Clock&r, but there are other ways to make snad grow sugar cane even faster (like a vanilla observer clock pointing into the Snad). Make sure to set the timer to pulse as fast as possible."
+				""
+				"To collect the sugar cane, you can use a piston and an observer."
+				""
+				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
+			]
+			icon: "snad:snad"
+			id: "529D50CE814AF449"
+			shape: "hexagon"
+			subtitle: "Yes, Snad."
+			tasks: [
+				{
+					id: "77ADD3B3DA61DC55"
+					item: "snad:snad"
+					type: "item"
+				}
+				{
+					id: "719FAF0F70FA25E5"
+					item: "enderio:vacuum_chest"
+					type: "item"
+				}
+				{
+					id: "2DCBDFF5EB0F7CD9"
+					item: "redstone_clock:redstone_clock"
+					type: "item"
+				}
+				{
+					id: "3DBB91C93688C4FC"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+			]
+			title: "Snad"
+			x: -4.5d
+			y: -9.5d
+		}
+		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
 				"&aMolds&r are used in a &3Fluid Solidifier&r or &3Alloy Smelter&r to form materials into specific shapes. These are not consumed or damaged during crafting, so you can leave them in a machine to dedicate it to that shape."
@@ -601,7 +647,7 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for other alloys."]
+			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for Steel and other useful things."]
 			id: "5301E546BAA69844"
 			rewards: [{
 				id: "424A2A6FAB412F69"
@@ -799,70 +845,6 @@
 			title: "&2Forge Hammer"
 			x: 4.5d
 			y: -7.0d
-		}
-		{
-			dependencies: ["30EBD4E7BBFFEF2C"]
-			description: [
-				"&6&6String&r and &6Coal Dust&r can be baked together into a &6Carbon Mesh&r in an &3Alloy Furnace&r."
-				""
-				"Combine that with &6Pulsating Dust&r to get a &6Pulsating Mesh&r."
-			]
-			icon: "kubejs:pulsating_mesh"
-			id: "645B1DCB3DA7198A"
-			rewards: [{
-				id: "2D12B468C7630D14"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "3FB8F2F8B1867430"
-					item: "kubejs:pulsating_mesh"
-					type: "item"
-				}
-				{
-					id: "6684545526C4AD44"
-					item: "gtceu:carbon_fiber_mesh"
-					type: "item"
-				}
-			]
-			title: "Pulsating Mesh"
-			x: 6.5d
-			y: -8.0d
-		}
-		{
-			dependencies: [
-				"645B1DCB3DA7198A"
-				"3BD20358F137E7C6"
-			]
-			description: [
-				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
-				""
-				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron, gold, tin, copper, diamonds&r and many more!), through pristine matter."
-				""
-				"Setting up &bHNN&r automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
-				""
-				"&bHNN&r machines are not sided, so you can input and output from any side."
-				""
-				"Yes, you can also use it for generating power... &owith &6Diamonds&r."
-			]
-			id: "715BC5C7DAC53B7B"
-			rewards: [{
-				id: "518DD0C9237B4DBC"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "15A06F5EF4CADA4C"
-				item: "hostilenetworks:sim_chamber"
-				type: "item"
-			}]
-			title: "&9Simulating Mobs"
-			x: 6.5d
-			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1897,7 +1879,7 @@
 				{
 					count: 13L
 					id: "505B1290E3042129"
-					item: "gtceu:steam_machine_casing"
+					item: { Count: 13, id: "gtceu:steam_machine_casing" }
 					type: "item"
 				}
 				{
@@ -1942,7 +1924,7 @@
 			tasks: [{
 				id: "725D5F61518AB7EE"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -2007,5 +1989,5 @@
 			y: 9.375d
 		}
 	]
-	title: "The Beginning"
+	title: "The Factory"
 }

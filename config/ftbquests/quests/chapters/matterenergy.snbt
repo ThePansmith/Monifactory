@@ -484,7 +484,7 @@
 				""
 				"Also, if you connect a gadget from &bBuilding Gadgets&r to the Pattern Provider, the gadget will pull materials straight from the attached AE2 network, &aNOT&r the Pattern Provider."
 				""
-				"There is information of the Gadgets, and how to connect them to inventories, in the &eInspector Gadget&r quest in &cGenesis&r in &cMatter Energy&r or &cThe Beginning&r."
+				"There is information of the Gadgets, and how to connect them to inventories, in the &eInspector Gadget&r quest in &cGenesis&r in &cMatter Energy&r or &cThe Factory&r."
 			]
 			icon: "ae2:pattern_provider"
 			id: "1040D941027962B1"
