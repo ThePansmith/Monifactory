@@ -1,8 +1,8 @@
 // priority: 3
-//! Regular mode chemicals
-
 /**
- * Chemical Materials
+ * Gregtech Chemical Materials Registry.
+ * This file is for custom fluids (And some solids!)
+ * used in custom chemlines like JEAN and Polyethyl Cyanoacrylate.
  */
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('butanol')
@@ -26,6 +26,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('12x carbon', '27x hydrogen', '4x oxygen', '1x phosphorus')
 
 
+    // Scaleline (Breaks Ender Dragon Scales down into useful materials)
     event.create('hydrochloric_dragon_scale_solution')
         .fluid()
         .color(0x697898)
@@ -56,11 +57,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('2x hydrogen', '2x fluorine', '1x tantalum')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+
+    // Guardian Scaleline (Breaks Guardian Scales down into useful materials)
     event.create('guardian_scale_slurry')
         .fluid()
         .color(0x8bbeaf)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+
+    // JEAN gasoline ingredients
     event.create('chlorine_triflouride')
         .gas()
         .color(0xCBC4EF)
@@ -68,20 +73,21 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('chloroethane')
         .gas()
-        .color(0xDEEDE6)    
+        .color(0xDEEDE6)
         .components('2x carbon', '5x hydrogen', '1x chlorine')
 
     event.create('tetraethyllead')
         .fluid()
         .color(0x6E6F9E)
-        .components('1x lead','8x carbon', '20x hydrogen')
+        .components('1x lead', '8x carbon', '20x hydrogen')
 
     event.create('sodium_lead_alloy')
         .ingot()
         .color(0x58649B)
-        .components('1x lead','1x sodium')
+        .components('1x lead', '1x sodium')
 
-    //PECA hydrocarbons
+
+    // Ingredients to create Polyethyl Cyanoacrylate, (PECA) a post-tank polymer
     event.create('sodium_cyanide')
         .dust()
         .color(0x7FB4C7)
@@ -96,7 +102,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x2D8BAE)
         .components('1x chlorine', '2x carbon', '3x hydrogen', '2x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        
+
     event.create('dichloroacetate')
         .fluid()
         .color(0x2D8BBE)
@@ -112,7 +118,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x5B8988)
         .components('1x nitrogen', '3x carbon', '3x hydrogen', '2x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    
+
     event.create('ethyl_cyanoacetate')
         .liquid()
         .color(0x488176)
@@ -136,32 +142,38 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x708787)
         .components('1x nitrogen', '6x carbon', '7x hydrogen', '2x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
-        
-    //Dimethyl sulfoxide chain below
+
+
+    // Dimethyl sulfoxide sub-chain (PECA catalyst)
     event.create('dimethyl_sulfoxide')
         .liquid()
         .color(0xBFB178)
         .components('2x carbon', '6x hydrogen', '1x sulfur', '1x oxygen')
-    
+
     event.create('dimethyl_sulfide')
         .liquid()
         .color(0xACB279)
         .components('2x carbon', '6x hydrogen', '1x sulfur')
 })
 
-// modify material names etc here
+
+// Modify materials' compositions
 GTCEuStartupEvents.materialModification(() => {
-	GTMaterials.get('butanol').setFormula('C4H9OH');
-	GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO');
+    GTMaterials.get('butanol').setFormula('C4H9OH');
+    GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO');
+
+    // Scaleline intermediates
     GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HC)2Mn2TaC?');
     GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HC)2Mn2');
     GTMaterials.get('graphitic_tantalum').setFormula('TaC')
     GTMaterials.get('hydrofluoric_graphitic_tantalum_solution').setFormula('(HF)2TaC')
     GTMaterials.get('hydrofluoric_tantalum_solution').setFormula('(HF)2Ta')
+
+    // JEAN gasoline intermediates
     GTMaterials.get('tetraethyllead').setFormula('Pb(CH3CH2)4');
 
+    // PECA intermediates
     GTMaterials.get('sodium_cyanide').setFormula('NaCN')
-    //GTMaterials.get('acetic_anhydride').setFormula('C4H6O3')
     GTMaterials.get('chloroacetate').setFormula('ClCH2CO2H')
     GTMaterials.get('dichloroacetate').setFormula('Cl2CH2CO2H')
     GTMaterials.get('trichloroacetate').setFormula('Cl3CH2CO2H')

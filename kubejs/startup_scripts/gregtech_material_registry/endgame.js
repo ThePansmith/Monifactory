@@ -1,6 +1,11 @@
-
+/**
+ * Endgame Material Registry.
+ * Used for registering Gregtech Materials
+ * that are related post-tank content.
+ */
 //? Keep in sync with
 //? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEndgame.java
+
 GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('omnium', 130, 234, -1, null, 'Nm', false)
     event.create('infinity', Infinity, Infinity, -1, null, '∞', false);
@@ -8,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('crystal_matrix', 6, 6, -1, null, 'C*', false);
 })
 
-// custom icons
+// Omnium, Infinity, and Monium have animations and thus custom material icon sets.
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('omnium').parent(GTMaterialIconSet.SHINY)
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
@@ -22,12 +27,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x66ffff)
         .iconSet('shiny')
         .fluidPipeProperties(100000, 64000, true, true, true, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_DENSE); // yeah you can smash the plates
-        
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_DENSE);
+
     event.create("omnium")
         .ingot()
         .element(GTElements.get("omnium"))
-        .color(0xffffff).iconSet('omnium') // custom icon set
+        .color(0xffffff).iconSet('omnium')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME)
         .cableProperties(2147483647, 64, 0, true)
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
@@ -45,7 +50,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("infinity"))
         .color(0xffffff)
         .iconSet('infinity')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD,  GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE)
 
     event.create('monium')
         .ingot()
@@ -68,14 +73,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xff00ff)
         .iconSet('shiny')
-        .components('5x carbon', '4x hydrogen', '3x oxygen', '4x omnium') //Replace Nitrogen with Omnium when we find out how
+        .components('5x carbon', '4x hydrogen', '3x oxygen', '4x omnium') // Replace Nitrogen with Omnium when we find out how
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    
-    // Adding a bunch of parts to existing elements for Endgame purpose
-    
-    GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.Zeron100.addFlags(GTMaterialFlags.GENERATE_DENSE)
-    GTMaterials.get('gcyr:bisalloy_400').addFlags(GTMaterialFlags.GENERATE_DENSE)
-    GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
-    GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
 })

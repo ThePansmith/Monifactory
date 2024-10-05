@@ -1,7 +1,11 @@
+/**
+ * Thermal Material Registry.
+ * Used for registering Gregtech Materials
+ * that are related to Thermal or its 1.12 version.
+ */
 //? Keep in sync with
 //? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsThermal.java
 
-// Thermal Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("ardite")
         .ingot().fluid()
@@ -11,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create("mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .element(GTElements.get("mana")) // TODO check
+        .element(GTElements.get("mana"))
 
     event.create("manyullyn")
         .ingot().fluid()
@@ -51,7 +55,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
 		.components('6x electrum', 'lumium', 'signalum');
 
-	event.create("mythril") // mithril
+    // Mana Infused Metal
+	event.create("mythril")
         .ingot()
         .color(0x428fdb).iconSet('dull')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)

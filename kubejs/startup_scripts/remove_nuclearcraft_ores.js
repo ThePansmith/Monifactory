@@ -1,5 +1,6 @@
-//Does work, you just had the wrong ids
-
+/**
+ * Remove Ore generation from Nuclearcraft: Neoteric
+ */
 WorldgenEvents.remove(event => {
     event.removeFeatureById('underground_ores', [
         'nuclearcraft:boron_placed',
