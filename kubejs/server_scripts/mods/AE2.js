@@ -1121,7 +1121,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
     
     event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg_1x")
-        .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
+        .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
         .inputFluids("gtceu:soldering_alloy 72")
         .itemOutputs("megacells:accumulation_processor")
         .duration(100)
