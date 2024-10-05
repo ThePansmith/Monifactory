@@ -3,10 +3,10 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "the_factory"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "gtceu:electric_blast_furnace"
 	id: "2763DAD954E0EED8"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "5B0F1DA574E0A141"
@@ -1870,7 +1870,7 @@
 			tasks: [{
 				id: "725D5F61518AB7EE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
