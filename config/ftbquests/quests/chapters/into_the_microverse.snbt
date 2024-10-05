@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "into_the_microverse"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "kubejs:microminer_t1"
 	id: "68F29871402A6B1B"
-	order_index: 6
+	order_index: 3
 	quest_links: [{
 		id: "3494A1A9317B9F3B"
 		linked_quest: "5F688F22A3DB2ADD"
