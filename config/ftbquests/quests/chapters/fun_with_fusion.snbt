@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "fun_with_fusion"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "gtceu:luv_fusion_reactor"
 	id: "40F7695BE1E65C41"
-	order_index: 9
+	order_index: 6
 	quest_links: [
 		{
 			id: "569E4C671C9A4419"

@@ -190,6 +190,20 @@ ServerEvents.recipes(event => {
     //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
     event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
     event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
+
+    event.remove({ output: 'gtceu:lv_item_magnet'})
+    event.shaped(
+        Item.of('gtceu:lv_item_magnet', '{Charge:120000L}'), 
+        [
+            'R R',
+            'R R',
+            'CPC'
+        ], {
+            C: 'gtceu:tin_single_cable',
+            R: 'gtceu:magnetic_iron_rod',
+            P: 'gtceu:iron_plate'
+        }
+    )
 }
 
 

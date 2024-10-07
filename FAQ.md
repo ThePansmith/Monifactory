@@ -22,6 +22,10 @@ Monifactory should run on any computer with a CPU newer than 2019. Allocating 6G
 
 Yes! Peaceful mode is the intended playstyle for Monifactory. Playing with mobs and hunger do not have any additional benefits in Moni, and all mob drops are attainable early through other methods.
 
+**Q. Can I port my Nomifactory world to Monifactory?**
+
+Technically? Yes. In a practical sense? No. Loading the 1.12 world in 1.20.1 Monifactory *does* load vanilla Minecraft items and blocks and some GT ores properly, but it voids every other modded item or block - you will essentially be sent back to the stone age.
+
 **Q. Will Monifactory be ported to 'X' Minecraft version?**
 
 Monifactory will not be backported to any versions before 1.20.1. Porting the pack to a future version of Minecraft may or may not happen, but **do not ask or pester the devs**.
@@ -97,6 +101,11 @@ Lost Cities Dimension: Cities cover most terrain, and are damaged. No Ores.
 Nether/End: Good atmosphere, but potentially hazardous. Same as in Vanilla.
 AE2 Spatial Storage: 128x128 size limit. Can be combined & traversed in creative ways.
 
+**Q. I can't light my Nether portal?!?**
+
+In Monifactory, both the Nether and End portals are disabled.
+TelePastries' cakes are used to move between dimensions instead.
+
 **Q. My EnderIO conduits aren't extracting!**
 
 Conduits are set by default to extract on high redstone input; click the redstone torch and switch to always on, low redstone, or whatever option you wish to use
@@ -104,6 +113,10 @@ Conduits are set by default to extract on high redstone input; click the redston
 **Q. My Cleanroom isn't forming!**
 
 The entire top layer except the controller, edges & corners needs to be made of Cleanroom Filter Casings. The multi also needs an energy hatch and a maintenance hatch.
+
+**Q. My Rocket isn't forming!**
+
+Refer to the [GCYR Wiki](https://github.com/Argent-Matter/gcyr/wiki) for questions relating to space and rocketry.
 
 **Q. Why is my UI so dark?**
 
@@ -116,6 +129,14 @@ Thermal Expansion Dynamos will only output energy while producing it.
 **Q. Where do I report an issue?**
 
 Check the [Known Issues document](KNOWN-ISSUES.md) first. If it's not there, report it to the [issue tracker](https://github.com/ThePansmith/Monifactory/issues), or get help on the [Discord](https://discord.gg/N8b2JEfAqb) in the #moni-support channel
+
+<hr>
+
+## Server
+
+**Q. How do I update Monifactory on my server?**
+
+In your server directory delete config-overrides, config, defaultconfig, kubejs, and mods. Then from the new Monifactory server zip copy over those same directories to replace the ones you removed. Enjoy!
 
 <hr>
 

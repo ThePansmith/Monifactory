@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mid_game"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "nuclearcraft:plutonium_rtg"
 	id: "7D825FFA33DC85A7"
-	order_index: 7
+	order_index: 4
 	quest_links: [
 		{
 			id: "4864F8F7C33860D9"

@@ -42,7 +42,7 @@
 	#Defines if the Lost Cities Cake gets partly consumed when eaten [default: true]
 	consumeLostCitiesCake = true
 	#Set the refill items used by the Lost Cities Cake (Only change if you know what you're doing) [modid:itemname]
-	lostCitiesCakeRefillItem = ["minecraft:bed"]
+	lostCitiesCakeRefillItem = ["minecraft:diamond"]
 
 #Custom Cake settings
 [CustomCake]

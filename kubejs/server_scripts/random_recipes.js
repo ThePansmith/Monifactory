@@ -8,11 +8,14 @@ ServerEvents.recipes(event => {
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand']).id('snad:red_snad')
 
         //If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
-        //Otherwise, people will face laggy items everywhere on the ground.
+        //Otherwise, people will leave laggy items everywhere on the ground.
         event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
-    } else {
+    } else if(!isHarderMode) { 
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
+    } else {
+        event.remove({ id: 'snad:snad' })
+        event.remove({ id: 'snad:red_snad' })
     }
     
 
@@ -27,14 +30,6 @@ ServerEvents.recipes(event => {
     // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
     event.replaceInput({ id: "gtceu:shaped/basic_circuit_board" }, 'gtceu:copper_single_wire', 'gtceu:fine_copper_wire')
-    event.remove({ id: "gtceu:shapeless/credit_platinum" })
-    event.remove({ id: "gtceu:shapeless/credit_platinum_alt" })
-
-    event.recipes.gtceu.extractor('fluid_platinum')
-        .outputFluids(Fluid.of('gtceu:platinum', 48))
-        .itemInputs('gtceu:platinum_credit')
-        .duration(40)
-        .EUt(7)
 
     // Void Air (normal air)
     event.recipes.gtceu.gas_collector('void_air')
@@ -940,7 +935,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('kubejs:chlorine_triflouride')
         .inputFluids('gtceu:fluorine 3000', 'gtceu:chlorine 1000')
-        .outputFluids('gtceu:chlorine_triflouride 2000')
+        .outputFluids('gtceu:chlorine_triflouride 1000')
         .duration(60)
         .EUt(7)
 

@@ -3,10 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "end_game"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "kubejs:monic_processor_mainframe"
 	id: "2BEB72BC6C6FB4E9"
-	order_index: 11
+	order_index: 7
 	quest_links: [
 		{
 			id: "54018A95BECC356C"
@@ -566,11 +566,14 @@
 				type: "item"
 			}]
 			title: "&9Hyperbolic Microverse Projector"
-			x: 48.0d
-			y: -16.0d
+			x: 50.0d
+			y: -13.5d
 		}
 		{
-			dependencies: ["1B1D3A66B847D129"]
+			dependencies: [
+				"1B1D3A66B847D129"
+				"5911900438648430"
+			]
 			description: [
 				"The &6Dimensional Superassembler&r uses dimensional warping to process hundreds of assembly line recipes at once. "
 				""
@@ -1124,7 +1127,10 @@
 			y: -8.75d
 		}
 		{
-			dependencies: ["07057CDE4E021BA7"]
+			dependencies: [
+				"07057CDE4E021BA7"
+				"5911900438648430"
+			]
 			description: [
 				"The &9Helical Fusion Reactor&r is a very large multiblock structure used for fusing elements into heavier ones &ein parallel&r. "
 				""
@@ -1138,8 +1144,27 @@
 				type: "item"
 			}]
 			title: "&9Helical Fusion Reactor"
-			x: 50.0d
-			y: -10.75d
+			x: 48.0d
+			y: -16.875d
+		}
+		{
+			dependencies: ["739F7BF2A90B278A"]
+			description: [
+				"The most advanced polymer you will need to make, Polyethyl Cyanoacrylate is required for a few endgame crafts."
+				""
+				"Fortunately, you won't need too much of it."
+			]
+			hide_dependency_lines: true
+			id: "5911900438648430"
+			subtitle: "Krazy Glue"
+			tasks: [{
+				id: "6A6C0D5FFB29C9E1"
+				item: "gtceu:polyethyl_cyanoacrylate_plate"
+				type: "item"
+			}]
+			title: "Polyethyl Cyanoacrylate"
+			x: 48.0d
+			y: -24.25d
 		}
 	]
 	title: "End Game"

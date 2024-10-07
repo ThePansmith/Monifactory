@@ -1,7 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "gtceu:item/material_sets/omnium/plate",
-    "layer1": "gtceu:item/material_sets/omnium/plate_double_overlay"
+    "layer0": "gtceu:item/material_sets/omnium/plate_double"
   }
 }

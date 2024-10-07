@@ -3,10 +3,10 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "genesis"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "gtceu:lv_steam_turbine"
 	id: "0654B76C306712BE"
-	order_index: 1
+	order_index: 0
 	quest_links: [
 		{
 			id: "7FB8EA3900C4D89D"
@@ -56,11 +56,15 @@
 		{
 			dependencies: ["2A511DB40C66CF35"]
 			description: [
-				"This pack is intended to be played in a &bLost cities/Overworld dimension&r."
+				"This pack is intended to be played in the &bOverworld and Lost City Dimensions&r."
 				""
-				"If you're playing with friends, don't forget to invite them to a &eFTB Teams party&r. "
+				"If you wish to build your base in total safety, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the &7Void World&r. "
 				""
-				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid World&r."
+				"The &2Overworld&r has ores to mine, and is a great place to gather resources."
+				""
+				"Simply place down and eat any dimensional cake for access to that dimension."
+				""
+				"If you're playing with friends, don't forget to invite them to an &eFTB Teams party&r. "
 				"{@pagebreak}"
 				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
 				""
@@ -79,20 +83,20 @@
 					type: "item"
 				}
 				{
-					id: "48B3D498AC0B2BE0"
+					id: "12BD64A82DB08429"
 					item: "telepastries:overworld_cake"
 					type: "item"
 				}
 				{
-					auto: "no_toast"
+					auto: "invisible"
 					icon: "enderio:cake_base"
-					id: "612FEB595285D353"
+					id: "392C56C1DA9D7978"
 					title: "&6Infinite Cakes!"
 					type: "custom"
 				}
 				{
 					auto: "invisible"
-					id: "75FD5BC7147B8397"
+					id: "1BCE4323D97D9083"
 					ignore_reward_blocking: true
 					stage: "intro_complete"
 					type: "gamestage"
@@ -114,9 +118,11 @@
 			can_repeat: true
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"In &9Monifactory&r, all dimensional transit is done through the power of &bTelePastries&r. No Portals here!"
+				"In &9Monifactory&r, all dimensional transit is done through the power of &6TelePastries&r. No Portals here!"
 				""
-				"This quest is repeatable and gives you a free cake to the &6Void World&r or &2Overworld&r every hour. You can also refill your cakes with the items indicated in their tooltips."
+				"This quest is repeatable and gives you a free cake to the &2Overworld&r, &3Lost City&r, or &7Void World&r every hour. You can also refill your cakes with the items indicated in their tooltips."
+				""
+				"&cDon't forget to have a way to get back!&r If you do, click on the Emergency Items heart on the right side of the quest book screen."
 			]
 			disable_toast: true
 			icon: "telepastries:overworld_cake"
@@ -128,7 +134,7 @@
 				table_id: 7942624913962637807L
 				type: "choice"
 			}]
-			subtitle: "Cakes are magical!"
+			subtitle: "Cakes are quantum objects!"
 			tags: ["moni_cakequest"]
 			tasks: [
 				{
@@ -257,8 +263,9 @@
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
-				id: "404D91696592F318"
-				item: "kubejs:moni_nickel"
+				count: 4
+				id: "269E89EDD3A32100"
+				item: "sophisticatedstorage:hopper_upgrade"
 				type: "item"
 			}]
 			subtitle: "Bags of holding"
@@ -317,7 +324,7 @@
 				""
 				"There are also &6Quadruple and Nonuple Pipes&r for transporting multiple fluid types through the same block."
 				""
-				"Later on, you also gain access to &9LaserIO&r, which while a little costly, allows for some rather complex and compact filtering."
+				"You also have access to &9LaserIO&r, which while a little costly, allows for some rather complex and compact filtering."
 				""
 				"There are also &9EnderIO&r conduits, which are compact but slow."
 			]
@@ -330,7 +337,6 @@
 					id: "itemfilters:or"
 					tag: {
 						items: [
-						
 							{
 								Count: 1b
 								id: "gtceu:potin_tiny_fluid_pipe"
@@ -379,7 +385,7 @@
 				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the &a[┴]&r button found in the bottom left of your screen and it will pull up the &arecipe tree&r GUI as well."
 			]
 			disable_toast: true
-			icon: "gtceu:crafting_table_cover"
+			icon: "quark:crafter"
 			id: "58566C7BF4C22D86"
 			shape: "hexagon"
 			size: 1.25d
@@ -1044,7 +1050,7 @@
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
 				""
-				"You may wish to wait until you have a Bending Machine at LV to reduce the cost."
+				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "gtceu:steam_grinder"
 			id: "0A8179C319A6868E"
@@ -1108,7 +1114,7 @@
 			description: [
 				"The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."
 				""
-				"You may wish to wait until you have a Bending Machine at LV to reduce the cost."
+				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "steamadditions:steam_foundry"
 			id: "1A80D0AE0B2F7A9D"
@@ -1131,7 +1137,7 @@
 					type: "item"
 				}
 				{
-					count: 9L
+					count: 8L
 					id: "6D33F60793938D3C"
 					item: "gtceu:bronze_firebox_casing"
 					type: "item"
@@ -1585,7 +1591,7 @@
 				""
 				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
 				""
-				"You may wish to wait until you have a Bending Machine at LV to reduce the cost."
+				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "steamadditions:steam_separator"
 			id: "5F90D0FC382C0A30"
@@ -1761,63 +1767,6 @@
 		{
 			dependencies: ["06E9B9DDDB245F38"]
 			description: [
-				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
-				""
-				"Also important to note that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
-				""
-				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, `connecting' the gadget to the inventory."
-				""
-				"For example, if you shift-right click a chest full of cobblestone, the gadget will use cobblestone from that chest to place blocks."
-				""
-				"By default, the config GUI is bound to &6G&r."
-			]
-			icon: "buildinggadgets2:gadget_building"
-			id: "5F9C7FB40AD2640B"
-			subtitle: "This pack has &bBuilding Gadgets&r."
-			tasks: [
-				{
-					id: "449B547CDED79AE3"
-					item: "buildinggadgets2:gadget_building"
-					type: "item"
-				}
-				{
-					id: "30A321B32CDAF437"
-					item: "buildinggadgets2:gadget_exchanging"
-					type: "item"
-				}
-				{
-					id: "4763F5F3C0771FFA"
-					item: {
-						Count: 1
-						id: "buildinggadgets2:gadget_copy_paste"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "284A671CC5192B50"
-					item: {
-						Count: 1
-						id: "buildinggadgets2:gadget_cut_paste"
-						tag: {
-							pastereplace: 1b
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "51485964CFCB26B9"
-					item: "buildinggadgets2:gadget_destruction"
-					type: "item"
-				}
-			]
-			title: "Inspector Gadget"
-			x: -2.75d
-			y: 16.75d
-		}
-		{
-			dependencies: ["06E9B9DDDB245F38"]
-			description: [
 				"Basic &aFlux Capacitors&r hold a whopping lot of energy - &9500 kRF&r - and are useful for keeping your &aRF-powered&r equipment and tools charged."
 				""
 				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
@@ -1863,34 +1812,6 @@
 			y: 15.5d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
-			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
-			id: "39394D5596FF8BC8"
-			rewards: [{
-				id: "20D8F149F414F950"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "36817E3C33876798"
-				item: {
-					Count: 1
-					id: "enderio:electromagnet"
-					tag: {
-						Energy: {
-							EnergyStored: 0
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Electromagnet"
-			x: -1.5d
-			y: 16.75d
-		}
-		{
 			dependencies: ["297B523B6C503957"]
 			description: [
 				"Unlike &aRF power&r, which is safe to transport in any &6conduit&r, &aEU power &erequires caution&r. The key is to always &amatch or exceed&r the &eVoltage &rand&e Amperage&r of your power source with your &6cables&r and machines."
@@ -1925,7 +1846,7 @@
 				""
 				"The &6Wiremill&r will make crafting wires much, much easier."
 				""
-				"The &2Bending Machine&r will make Plates from one ingot instead of two."
+				"The &2Bender&r will make Plates from one ingot instead of two."
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
@@ -2029,63 +1950,26 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"Whether or not you (or your server admin) picked the default &bLost Cities&r overworld type, you have the option of teleporting yourself to the &eLost Cities Dimension&r. This is useful if you like other world types but want to still be able to explore cities for things like &eloot and spawners&r."
+				"If your server admin allows it, you can use JourneyMap to create and teleport to waypoints you set. You can access JourneyMap waypoints by hitting the N key by default. Use this feature to gather resources quickly."
 				""
-				"To create a portal, you must place a &aBed&r down on two &6Blocks of Diamond&r. Then, you surround the bed with any kind of &eMonster Skulls&r. Sleep in this bed and you will be teleported there."
+				"If JourneyMap teleportation is disabled, you can still use the &e/sethome&r command to register where your house is, and &e/home&r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There are some &erestrictions&r on this though: there is a limit on the number of homes you can set, &eit takes a few seconds of standing still to activate&r and there is a &ecooldown&r between uses."
 				""
-				"&cDon't forget to have a way to get back!&r You can use the &e/sethome&r command to register where your house is, and &e/home&r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There are some &erestrictions&r on this though: &eit takes a few seconds of standing still to activate&r and there is a &ecooldown&r between uses."
-				""
-				"Later on you'll have other means of teleportation."
-				""
-				"Monster Skulls might take a little while to get if you're playing in &ePeaceful&r&r. &6Skeleton Skulls&r would be the way to go in that case."
+				"Later on you'll discover other means of teleportation."
 			]
 			disable_toast: true
 			hide_dependency_lines: true
-			icon: "minecraft:purple_bed"
+			icon: "minecraft:blue_bed"
 			id: "33195ED6D7008E5F"
 			optional: true
-			rewards: [{
-				id: "3DE844F3B9CF2903"
-				item: "kubejs:moni_nickel"
-				type: "item"
+			subtitle: "Make returning home easy!"
+			tasks: [{
+				id: "1FE7AB8BD6D25B47"
+				title: "Checkmark"
+				type: "checkmark"
 			}]
-			subtitle: "Free materials!"
-			tasks: [
-				{
-					count: 10L
-					id: "0221039A21A1C266"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:heads"
-						}
-					}
-					title: "Any Heads"
-					type: "item"
-				}
-				{
-					id: "0E70B83A51A0ADEC"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:beds"
-						}
-					}
-					title: "Any Bed"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "0DA16402F8B9CC9B"
-					item: "minecraft:diamond_block"
-					type: "item"
-				}
-			]
-			title: "Lost Cities and Registering Homes"
+			title: "JourneyMap and Registering Homes"
 			x: -10.5d
-			y: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2132,7 +2016,7 @@
 			}]
 			title: "&2Processing Lines Tab"
 			x: -10.5d
-			y: 8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2179,8 +2063,8 @@
 				type: "checkmark"
 			}]
 			title: "Multiblock Machine Previews"
-			x: -10.5d
-			y: 10.0d
+			x: -9.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2198,6 +2082,53 @@
 			title: "Inventory Sorting"
 			x: -10.5d
 			y: 5.5d
+		}
+		{
+			dependencies: ["7865CDE5CFE005DC"]
+			description: ["All furnaces from &bIron Furnaces&r can be augmented to have be &afaster&r, more &afuel efficient&r, and &asmelt multiple items at once&r!"]
+			id: "5D5C24BACC649253"
+			optional: true
+			rewards: [{
+				id: "7021A7413D938814"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Modular furnaces!"
+			tasks: [
+				{
+					id: "154872CDC7976802"
+					item: "ironfurnaces:augment_speed"
+					type: "item"
+				}
+				{
+					id: "29E0DC2E3B5B4A0F"
+					item: "ironfurnaces:augment_fuel"
+					type: "item"
+				}
+			]
+			title: "Furnace Augments"
+			x: 7.25d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7865CDE5CFE005DC"]
+			description: ["You can copy and paste settings from different &eFurnaces&r using a &6Furnaces Setting Linker&r"]
+			id: "07508736CEE01C7F"
+			optional: true
+			rewards: [{
+				id: "7455123A87C45A7E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Copying your furnace's settings"
+			tasks: [{
+				id: "4FF735E089FC1BA8"
+				item: "ironfurnaces:item_copy"
+				type: "item"
+			}]
+			title: "Ctrl + C, Ctrl + V"
+			x: 7.25d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -2238,6 +2169,42 @@
 			x: -1.5d
 			y: 11.0d
 		}
+		{
+			can_repeat: false
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"You may wish to &aautomatically sprint&r instead of having to press &eControl + W&r or &eW twice&r."
+				"To achieve this, change the &bSprint&r keybind to &eW&r. (or the same keybind as Walk Forward)"
+				""
+				"A &aGrappling Hook&r is also very useful in an urban environment, allowing you to climb buildings with ease!"
+				""
+				"There are lots of ways to upgrade and improve your &aGrappling Hook&r, so play around with it."
+				""
+				"Open your inventory and look for the &3Curios&r button, click it to reveal the additional curio slots and put the hook in the hook shaped slot."
+				""
+				"The default key to fire a hook is &6C&r, however you might want to change it, simply search for &5category:ReHooked&r in the key binds screen and change them to whatever you want."
+				"Just be careful of &4Keybind Conflicts&r"
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "rehooked:wood_hook"
+			id: "372BE3F076893D71"
+			min_width: 300
+			rewards: [{
+				id: "3A1EB6268A778123"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "&oFaster is better!"
+			tasks: [{
+				id: "2FDEDCA3D120121B"
+				item: "rehooked:wood_hook"
+				type: "item"
+			}]
+			title: "Movin' Around"
+			x: -9.0d
+			y: 10.0d
+		}
 	]
-	title: "An Even Harder Genesis"
+	title: "An Expert Genesis"
 }

@@ -1,3 +1,5 @@
 {
-  "item.functionalstorage.netherite_upgrade": "Emerald Upgrade"
+  "item.functionalstorage.netherite_upgrade": "Emerald Upgrade",
+  "block.functionalstorage.storage_controller": "Drawer Controller",
+  "block.functionalstorage.framed_storage_controller": "Framed Drawer Controller"
 }

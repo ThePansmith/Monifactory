@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "early_game"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "gtceu:advanced_integrated_circuit"
 	id: "7041EC01A69404E6"
-	order_index: 5
+	order_index: 2
 	quest_links: [
 		{
 			id: "7471AD069CC1E5EC"
@@ -533,7 +533,7 @@
 			description: [
 				"Cuts things up."
 				""
-				"The &3Cutting Machine&r is able to cut wafers, rods, wood, and various other things for you, making it a versatile crafting tool. Cutting blocks into 9 plates may be faster than using a &2Bending Machine &rto make them one at a time."
+				"The &3Cutting Machine&r is able to cut wafers, rods, wood, and various other things for you, making it a versatile crafting tool. Cutting blocks into 9 plates may be faster than using a &2Bender &rto make them one at a time."
 				""
 				"The MV version is required for cutting &6Silicon Boules&r for easier &6Diodes&r once you get &9Polyethylene (PE)&r, and for cutting &6Wafers&r into usable components. "
 				""
@@ -1032,8 +1032,8 @@
 				item: "gtceu:lv_emitter"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 8.5d
+			x: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2C6BEB5BBE5A91DC"]
@@ -1588,7 +1588,7 @@
 				""
 				"- The &9Ethanol&r route allows you to use your existing &6Sugarcane&r farm to produce &9Ethylene&r. However, the recipes require &bMedium Voltage&r machines to run."
 				""
-				"- The &9Oil Processing&r route requires &2only LV machines&r, but you will have to source &9Oil&r, or its variants, from somewhere. &2Severely Steam-Cracked Light Fuel&r is most efficient with &9Raw Oil, Oil and Heavy Oil&r. &2Severely Steam-Cracked Naphtha&r is more efficient when you are using &9Light Oil&r."
+				"- The &9Oil Processing&r route requires &2only LV machines&r, but you will have to source &9Oil&r, or its variants, from somewhere. &2Severely Steam-Cracked Light Fuel&r is most efficient with &9Oil and Heavy Oil&r. &2Severely Steam-Cracked Naphtha&r is more efficient when you are using &9Raw Oil and Light Oil&r."
 				""
 				"It is an extremely important chemical in the production of plastics, as you'll need &9Ethylene&r in your production of &9Polyethylene (PE)&r, &9Polyvinyl Chloride (PVC)&r, and can be used in the production of &9Styrene-Butadiene Rubber (SBR)&r, the best form of rubber."
 			]
@@ -2219,7 +2219,7 @@
 			}]
 			title: "&9Charging Items Wirelessly"
 			x: 12.5d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["61AD3760E271B431"]
@@ -2267,6 +2267,81 @@
 			title: "&9Steam Separator"
 			x: 3.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3E42B4AAA6D2A05B"
+				"1EBF9D9EADB7C451"
+			]
+			description: [
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
+				""
+				"Also important to note that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
+				""
+				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, `connecting' the gadget to the inventory."
+				""
+				"For example, if you shift-right click a chest full of cobblestone, the gadget will use cobblestone from that chest to place blocks."
+				""
+				"By default, the config GUI is bound to &6G&r."
+			]
+			icon: "buildinggadgets2:gadget_building"
+			id: "5F9C7FB40AD2640B"
+			subtitle: "This pack has &bBuilding Gadgets&r."
+			tasks: [
+				{
+					id: "449B547CDED79AE3"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "30A321B32CDAF437"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "4763F5F3C0771FFA"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_copy_paste"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "284A671CC5192B50"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "51485964CFCB26B9"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+			]
+			title: "Inspector Gadget"
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3B639F4061B00F1A"]
+			description: ["Now that you have some &6MV circuits&r, you can make a &6Factory Augment&r that lets you &2smelt multiple items at once&r with your furnaces!"]
+			id: "6DAA25CA26AE05E9"
+			optional: true
+			subtitle: "Multi smelter, sort of!"
+			tasks: [{
+				id: "530D4E4EF55BAC5F"
+				item: "ironfurnaces:augment_factory"
+				type: "item"
+			}]
+			title: "Factory Augment"
+			x: 9.0d
+			y: 3.0d
 		}
 	]
 	title: "Early Game"
