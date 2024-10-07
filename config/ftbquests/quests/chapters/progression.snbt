@@ -3,10 +3,10 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "progression"
-	group: ""
+	group: "0D5BFFD0A5E49312"
 	icon: "minecraft:writable_book"
 	id: "395B849AC6294153"
-	order_index: 13
+	order_index: 4
 	quest_links: [
 		{
 			id: "7D217833035647CD"

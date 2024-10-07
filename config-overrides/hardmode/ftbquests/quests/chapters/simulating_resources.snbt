@@ -3,10 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "simulating_resources"
-	group: ""
+	group: "0D5BFFD0A5E49312"
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
-	order_index: 4
+	order_index: 2
 	quest_links: [
 		{
 			id: "1344E3300C29A4CF"
@@ -21,13 +21,6 @@
 			shape: "hexagon"
 			x: 1.5d
 			y: -1.0d
-		}
-		{
-			id: "6EFDF0495132F8EC"
-			linked_quest: "715BC5C7DAC53B7B"
-			shape: "hexagon"
-			x: -1.5d
-			y: -3.5d
 		}
 	]
 	quests: [
