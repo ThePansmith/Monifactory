@@ -1187,7 +1187,6 @@
 			disable_toast: true
 			id: "4FEF99FCFEC947C9"
 			shape: "hexagon"
-			subtitle: "Holy crap it's that thing from the boxart"
 			tasks: [{
 				count: 16L
 				id: "6A640F26EE3EBE97"
