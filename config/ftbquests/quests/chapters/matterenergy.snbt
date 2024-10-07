@@ -6,7 +6,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "ae2:controller"
 	id: "118959024F296F70"
-	order_index: 2
+	order_index: 0
 	quest_links: [
 		{
 			id: "20253D681F399A92"

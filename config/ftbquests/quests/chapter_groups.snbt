@@ -2,6 +2,5 @@
 	chapter_groups: [
 		{ id: "18F0ED1F9A002C08", title: "&9Main Progression&9" }
 		{ id: "0D5BFFD0A5E49312", title: "&9Guides \\& Help&9" }
-		{ id: "31C224DAEA5D363C", title: "&9Extra Content&9" }
 	]
 }
