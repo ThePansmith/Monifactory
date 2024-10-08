@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
     //GT
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
     event.remove({ id: 'gtceu:smelting/dust_mythril__demagnetize_from_dust' })
+    event.remove({ id: 'gtceu:smelting/smelt_dust_mythril_to_ingot'})
     event.remove({ id: 'gtceu:mixer/rhodium_plated_palladium' })
     
     //FIXME will get fixed
@@ -30,6 +31,7 @@ ServerEvents.recipes(event => {
     //Redstone arsenal
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_smelting' })
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_blasting' })
+    event.remove({ id: 'redstone_arsenal:materials/flux_ingot_fire_charge' })
     event.remove({ id: 'redstone_arsenal:materials/flux_ingot_fire_charge_from_dust' })
     event.remove({ id: 'redstone_arsenal:storage/flux_metal_block' })
     event.remove({ id: 'redstone_arsenal:storage/flux_ingot_from_block' })
@@ -64,6 +66,8 @@ ServerEvents.recipes(event => {
     //Iron Furnace
     event.remove({ output: ["ironfurnaces:million_furnace"] })
     event.remove({ output: ['ironfurnaces:crystal_furnace', 'ironfurnaces:emerald_furnace', 'ironfurnaces:item_spooky', 'ironfurnaces:item_xmas', 'ironfurnaces:item_copy', 'ironfurnaces:item_linker', 'ironfurnaces:rainbow_core', 'ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_coal', 'ironfurnaces:upgrade_iron', 'ironfurnaces:upgrade_gold', 'ironfurnaces:upgrade_diamond', 'ironfurnaces:upgrade_emerald', 'ironfurnaces:upgrade_obsidian', 'ironfurnaces:upgrade_crystal', 'ironfurnaces:upgrade_netherite', 'ironfurnaces:upgrade_copper', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_silver', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_iron2', 'ironfurnaces:upgrade_gold2', 'ironfurnaces:upgrade_silver2', 'ironfurnaces:allthemodium_furnace', 'ironfurnaces:vibranium_furnace', 'ironfurnaces:unobtainium_furnace', 'ironfurnaces:upgrade_allthemodium', 'ironfurnaces:upgrade_vibranium', 'ironfurnaces:upgrade_unobtainium', 'ironfurnaces:item_heater', 'ironfurnaces:augment_blasting', 'ironfurnaces:augment_smoking', 'ironfurnaces:heater', 'ironfurnaces:augment_generator'] })
+
+    event.remove({ output: ['sophisticatedstorage:storage_io', 'sophisticatedstorage:storage_input', 'sophisticatedstorage:storage_output'] });
 
     //dml
     event.remove({ output: ["hostilenetworks:twilight_prediction"] })

@@ -569,17 +569,32 @@ if (isHarderMode) {
 
     // Crafter
     event.remove({ id: 'enderio:crafter' })
-    event.shaped('enderio:crafter', [
-        'RCR',
-        'GFG',
-        'SSS'
-    ], {
-        C: 'minecraft:crafting_table',
-        F: 'gtceu:lv_machine_hull',
-        G: 'enderio:iron_gear',
-        R: 'kubejs:resonating_crystal',
-        S: 'enderio:item_conduit'
-    }).id('kubejs:crafter')
+    if(!isHarderMode) {
+        event.shaped('enderio:crafter', [
+            'RCR',
+            'GFG',
+            'SSS'
+        ], {
+            C: 'minecraft:crafting_table',
+            F: 'gtceu:lv_machine_hull',
+            G: 'enderio:iron_gear',
+            R: 'kubejs:resonating_crystal',
+            S: 'enderio:item_conduit'
+        }).id('enderio:crafter')
+    } else {
+        event.shaped('enderio:crafter', [
+            'RCR',
+            'GFG',
+            'SSS'
+        ], {
+            C: 'minecraft:crafting_table',
+            F: 'gtceu:lv_machine_hull',
+            G: 'enderio:iron_gear',
+            R: 'kubejs:resonating_crystal',
+            S: 'gtceu:pulsating_alloy_single_wire'
+        }).id('enderio:crafter')
+    }
+    
 
     //Z-Logic Controller
     event.shaped('enderio:z_logic_controller', [

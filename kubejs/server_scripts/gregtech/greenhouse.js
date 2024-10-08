@@ -139,23 +139,6 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
-
-    event.remove({ id: "thermal:machine_insolator" })
-
-    event.shaped(
-        "thermal:machine_insolator", [
-        " A ",
-        "SBS",
-        "CRC"
-    ], {
-        A: "gtceu:steel_plate",
-        B: "minecraft:bucket",
-        S: '#minecraft:saplings',
-        R: 'thermal:rf_coil',
-        C: '#forge:gears/copper'
-    }
-    ).id("thermal:machine_insolator")
-
     event.custom({
         type: 'thermal:insolator',
         "ingredient": {

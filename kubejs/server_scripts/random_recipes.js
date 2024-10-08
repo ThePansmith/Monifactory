@@ -959,6 +959,9 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(15)
 
+    //Break Clay blocks into balls
+    event.shapeless('4x minecraft:clay_ball', ['minecraft:clay']);
+
     //Parallel Implosion Compressor
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/implosion_collider')
         .itemInputs('4x enderio:reinforced_obsidian_block','2x #gtceu:circuits/zpm','gtceu:solid_machine_casing','3x gtceu:niobium_nitride_double_cable', '2x gtceu:zpm_electric_piston')

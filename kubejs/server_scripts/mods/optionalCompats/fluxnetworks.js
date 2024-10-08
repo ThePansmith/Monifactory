@@ -13,6 +13,8 @@ if (Platform.isLoaded('fluxnetworks')) {
             F: 'fluxnetworks:flux_dust'
         }).id('fluxnetworks:fluxblock')
 
+        event.shapeless('9x fluxnetworks:flux_dust', ['fluxnetworks:flux_block']).id('fluxnetworks:fluxdust')
+
         //Flux Core
         event.remove({ id: 'fluxnetworks:fluxcore'})
         event.recipes.gtceu.assembler('fluxnetworks:fluxcore')

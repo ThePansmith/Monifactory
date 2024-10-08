@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         UniverseEngrave("hasoc_wafer", 'gtceu:black_glass_lens', '4x gtceu:highly_advanced_soc_wafer', 500);
         UniverseEngrave("ulpic_wafer", '#forge:lenses/blue', '32x gtceu:ulpic_wafer', 20);
         UniverseEngrave("soc_wafer", 'gtceu:yellow_glass_lens', '16x gtceu:soc_wafer', 100);
-        UniverseEngrave("asoc_wafer", 'gtceu:purple_glass_lens', '8x gtceu:advanced_soc_wafer', 200);
+        UniverseEngrave("asoc_wafer", '#forge:lenses/purple', '8x gtceu:advanced_soc_wafer', 200);
         UniverseEngrave("nand_wafer", 'gtceu:gray_glass_lens', '16x gtceu:nand_memory_wafer', 100);
         UniverseEngrave("nor_wafer", 'gtceu:pink_glass_lens', '16x gtceu:nor_memory_wafer', 100);
 
