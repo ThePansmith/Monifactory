@@ -233,12 +233,12 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('ae2:crafting_unit'), [
         'ABA',
-        'CDC',
+        'SDS',
         'ABA'
     ], {
         A: 'gtceu:aluminium_plate',
         B: 'ae2:calculation_processor',
-        C: 'ae2:fluix_glass_cable',
+        S: 'ae2:sky_dust',
         D: 'ae2:logic_processor'
     }
     ).id('kubejs:ae2/cpu_crafting_unit')
