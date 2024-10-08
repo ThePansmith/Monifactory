@@ -102,12 +102,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(15)
 
-    event.recipes.gtceu.mixer("kubejs:black_steel_dust_alternate")
-        .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coal_perfect')
-        .itemOutputs('45x gtceu:black_steel_dust')
-        .duration(375)
-        .EUt(240)
-
     event.recipes.gtceu.mixer("kubejs:vibrant_alloy_dust")
         .itemInputs('#forge:dusts/energetic_alloy', '#forge:dusts/ender_pearl')
         .itemOutputs('2x gtceu:vibrant_alloy_dust')

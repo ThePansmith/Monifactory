@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil', 'thermal:dynamo_output_augment'] })
     event.remove({ output: ['thermal:dynamo_throttle_augment', 'thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
-    event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame', 'thermal:fluid_cell_frame'] })
+    event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame'] })
     event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer']})
 
     event.remove({ id: /thermal:[A-Za-z]+_dust_/ }) //I don't even know what recipes this line of code is supposed to target
@@ -296,6 +296,22 @@ ServerEvents.recipes(event => {
         E: 'thermal:rf_coil'
     }).id('kubejs:charge_bench')
 
+    //Phytogenic Insolator
+    event.remove({ id: "thermal:machine_insolator" })
+    event.shaped(
+        "thermal:machine_insolator", [
+        " A ",
+        "SBS",
+        "CRC"
+    ], {
+        A: "gtceu:double_steel_plate",
+        B: "minecraft:bucket",
+        S: '#minecraft:saplings',
+        R: 'thermal:rf_coil',
+        C: '#forge:gears/copper'
+    }
+    ).id("thermal:machine_insolator")
+
     event.shaped(
         'thermal:device_potion_diffuser', [
             ' A ',
@@ -561,19 +577,6 @@ ServerEvents.recipes(event => {
         D: '#forge:gears/iron',
         E: 'thermal:redstone_servo'
     }).id('kubejs:device_nullifier');
-
-    event.remove({ id: 'thermal:device_fisher' });
-    event.shaped('thermal:device_fisher', [
-        ' A ',
-        'BCB',
-        'DED'
-    ], {
-        A: 'fishing_rod',
-        B: 'iron_bars',
-        C: 'thermal:machine_frame', // casing
-        D: '#forge:gears/iron',
-        E: 'thermal:redstone_servo'
-    }).id('kubejs:device_fisher');
 
     event.remove({ id: 'thermal:device_collector' });
     event.shaped('thermal:device_collector', [
