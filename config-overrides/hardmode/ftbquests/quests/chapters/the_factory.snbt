@@ -1661,7 +1661,9 @@
 				""
 				"Similar controls are available for the &aFluid Filter&r when placed inside a &6Fluid Regulator&r."
 				""
-				"Additionally, the &aTag Filter&r&r is a powerful tool that has a specialized filter which uses Tags and &rregular expressions (regex)&r, e. g. \"&6forge:hot_ingots*&r\" will match all hot ingots, \"&6forge:dusts*&r\" will match all regular dusts, and \"&6forge:tiny_dusts*&r\" will match all tiny piles."
+				"Additionally, the &aTag Filter&r&r is a powerful tool that has a specialized filter which uses Tags and &rboolean expressions &r, e. g. \"&6*hot_ingots*&r\" will match all hot ingots, \"&6*dusts*&r\" will match all regular dusts, and \"&6*tiny_dusts*&r\" will match all tiny piles."
+				""
+				"Tags are used similarly in the &1Tag Export Bus&r."
 				""
 				"All &bGregTech&r Filters can be configured using ghost items from &bEMI&r."
 			]
