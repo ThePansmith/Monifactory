@@ -27,12 +27,12 @@ if (!config || !config.mode) {
 let invalidConfig = function (configMode) {
     JsonIO.write(configName, defaultConfig);
     config.mode = defaultConfig.mode;
-    console.error(`Overwrote ${configName}, because the mode ${configMode} was found. Valid modes are 'normal', 'hard' and 'harder'.`);
+    console.error(`Overwrote ${configName}, because the mode ${configMode} was found. Valid modes are 'normal', 'hard' and 'expert'.`);
 }
 
 let packMode = config.mode;
 switch (packMode) {
-    case 'normal': case 'hard': case 'harder': break;
+    case 'normal': case 'hard': case 'expert': break;
     default: invalidConfig(); packMode = config.mode;
 }
 
@@ -40,9 +40,9 @@ switch (packMode) {
 // String representation of the current packmode
 global.packmode = packMode;
 
-// Global mode booleans. Note that isHardMode is also true if the pack is in Harder
+// Global mode booleans. Note that isHardMode is also true if the pack is in Expert
 global.isNormalMode = packMode == 'normal';
-global.isHarderMode = packMode == 'harder';
+global.isHarderMode = packMode == 'expert';
 global.isHardMode = (packMode == 'hard') || global.isHarderMode;
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
 const isNormalMode = !!global.isNormalMode;

@@ -104,7 +104,7 @@
 			]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Welcome to Monifactory Harder Mode"
+			subtitle: "Welcome to Monifactory Expert Mode"
 			tasks: [{
 				id: "1FF132DED1748D11"
 				title: "Genesis #3"

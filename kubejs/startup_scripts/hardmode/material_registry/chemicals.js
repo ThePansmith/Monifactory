@@ -2,7 +2,7 @@
 /**
  * Gregtech Chemical Materials Registry: Hardmode+
  * This file is for custom fluids (And some solids!)
- * used in custom chemlines specific to Hardmode like harder Titanium and Graphite.
+ * used in custom chemlines specific to Hardmode like expert Titanium and Graphite.
  */
 GTCEuStartupEvents.registry('gtceu:material', event => {
     if (!isHardMode) {
