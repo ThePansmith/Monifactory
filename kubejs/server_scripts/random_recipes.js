@@ -967,5 +967,24 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt(32000)
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:implosion_compressor').EUt(6000).duration(1800))
+
+    // Froglights
+    event.recipes.gtceu.atomic_reconstruction('ochre_froglight')
+        .itemInputs('minecraft:magma_block')
+        .itemOutputs('minecraft:ochre_froglight')
+        .duration(20)
+        .EUt(15)
+
+    event.recipes.gtceu.atomic_reconstruction('verdant_froglight')
+        .itemInputs('minecraft:ochre_froglight')
+        .itemOutputs('minecraft:verdant_froglight')
+        .duration(20)
+        .EUt(15)
+
+    event.recipes.gtceu.atomic_reconstruction('pearlescent_froglight')
+        .itemInputs('minecraft:verdant_froglight')
+        .itemOutputs('minecraft:pearlescent_froglight')
+        .duration(20)
+        .EUt(15)
 })
  
