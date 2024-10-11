@@ -362,7 +362,7 @@
 		{
 			dependencies: ["0FD703A1A1E5055E"]
 			description: [
-				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, RF/EU or fluids from one location to another, using your ME system, without the need to use any disk storage space. &cTransporting RF/EU has a 5%% tax on the input energy.&r"
+				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, RF/EU or fluids from one location to another, using your ME system, without the need to use any disk storage space. &cTransporting RF/EU has a 5% tax on the input energy.&r"
 				""
 				"Each P2P tunnel system may have only &cone input&r but &eany number of outputs&r. There is no limit on how many P2P tunnels, or P2P tunnel systems, you can have on one network."
 				""
