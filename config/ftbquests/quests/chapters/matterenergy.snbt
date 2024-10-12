@@ -1360,7 +1360,7 @@
 			description: [
 				"&3Applied Energistics&r does not allow you to use tags when creating &aProcessing Patterns&r, this can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
 				""
-				"Instead, use &9Universal Circuits&r when creating your Processing Patterns, as all normal circuits can be converted to to their Universal Circuit equivalent in an &3Atomic Reconstuctor&r."
+				"Instead, use &9Universal Circuits&r when creating your Processing Patterns, as all normal circuits can be converted to to their &9Universal Circuit&r equivalent, which can be used in all the same recipes as regular circuits."
 			]
 			icon: "kubejs:hv_universal_circuit"
 			id: "0D1A64EBBA742196"
