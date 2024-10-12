@@ -77,8 +77,8 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         Item.of('minecraft:mangrove_propagule', 64), [
-        'AA ',
-        '   ',
+        'A  ',
+        '  A',
         ' A '
     ], {
         A: 'kubejs:moni_penny'

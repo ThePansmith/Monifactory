@@ -520,7 +520,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('palladium_metallic_dust_to_palladium_raw_dust')
         .itemInputs('2x gtceu:palladium_metallic_dust')
         .inputFluids('gtceu:palladium_rich_ammonia 1000')
-        .itemOutputs('3x gtceu:palladium_raw_dust', 'gtceu:crude_palladium_residue_dust')
+        .itemOutputs('3x gtceu:crude_palladium_residue_dust', 'gtceu:palladium_raw_dust')
         .outputFluids('gtceu:ammonia 2000')
         .duration(250).EUt(30)
 

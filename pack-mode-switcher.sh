@@ -14,7 +14,7 @@ printf "${POWDER_BLUE}Monifactory | Pack Mode Switcher${NORMAL}"
 
 NORMAL_CFG='./config-overrides/normal'
 HARDMODE_CFG='./config-overrides/hardmode'
-HARDER_CFG='./config-overrides/harder'
+HARDER_CFG='./config-overrides/expert'
 TARGET='./config'
 CURRENT_MODE="$(head .mode)"
 CURRENT_MODE=${CURRENT_MODE:="normal"}
@@ -32,7 +32,7 @@ fi
 printf "\n\n${YELLOW}Current Mode: ${CURRENT_MODE}${NORMAL}\n"
 
 if [ -z "$1" ]; then
-  printf "${POWDER_BLUE}Set Pack Mode: [Normal / Hardmode / Harder]: ${NORMAL}"
+  printf "${POWDER_BLUE}Set Pack Mode: [Normal / Hardmode / Expert]: ${NORMAL}"
   read MODE
 else
   MODE="$1"
@@ -68,7 +68,7 @@ case $MODE in
     echo hard > .mode
   ;;
 
-  E|e|harder|Harder)
+  E|e|expert|Expert)
 
     cp -rf "$HARDER_CFG/." ${TARGET}
 
@@ -79,12 +79,12 @@ case $MODE in
     fi
 
     # Update Mode
-    echo harder > .mode
+    echo expert > .mode
   ;;
 
   *)
     printf "\n${RED}Error: Invalid input ${MODE}!${NORMAL}\n"
-    printf "\n${POWDER_BLUE}Accepted Inputs:\n${YELLOW}- [Normal, normal, N, n]\n- [Hardmode, hardmode, H, h]\n- [Harder, harder, E, e]${NORMAL}\n"
+    printf "\n${POWDER_BLUE}Accepted Inputs:\n${YELLOW}- [Normal, normal, N, n]\n- [Hardmode, hardmode, H, h]\n- [Expert, expert, E, e]${NORMAL}\n"
     exit 1
   ;;
 esac

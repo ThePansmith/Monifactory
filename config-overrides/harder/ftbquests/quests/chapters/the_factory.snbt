@@ -709,20 +709,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["29A487F0BC43AAF9"]
-			description: ["Need &9RF&r to charge your items? Thermal dynamos are disabled in harder mode, but you can plug GTEU straight into a &6Tinker's Workbench&r to power it. Such convinence right?"]
-			icon: "systeams:steam_dynamo"
-			id: "545CCC24D9401794"
-			tasks: [{
-				id: "114F684B1AB140C8"
-				title: "Yay RF!"
-				type: "checkmark"
-			}]
-			title: "Making RF"
-			x: 4.5d
-			y: -1.5d
-		}
-		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
 				"&2Technically not new to CEu, but it was disabled in the original version, and it had much less functionality in CE.&r"
@@ -806,72 +792,6 @@
 			}]
 			x: 6.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["545CCC24D9401794"]
-			description: [
-				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
-				""
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
-				""
-				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
-			]
-			icon: "gtceu:steam_grinder"
-			id: "41C2E49E70D76330"
-			rewards: [
-				{
-					count: 7
-					id: "6B113D9EF57E5CDE"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "42A15BBED3DD9B74"
-					item: {
-						Count: 1
-						id: "minecraft:enchanted_book"
-						tag: {
-							StoredEnchantments: [{
-								id: "minecraft:silk_touch"
-								lvl: 1s
-							}]
-						}
-					}
-					type: "item"
-				}
-			]
-			size: 1.75d
-			tasks: [
-				{
-					id: "7DD0FE0A1E868294"
-					item: "gtceu:steam_grinder"
-					type: "item"
-				}
-				{
-					count: 22L
-					id: "18DB8D651F2D31CB"
-					item: "gtceu:steam_machine_casing"
-					type: "item"
-				}
-				{
-					id: "570435DB56E60014"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-				{
-					id: "4A720EFF7B137995"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-				{
-					id: "76E984019B7F6D6B"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-			]
-			title: "&9Steam Grinder"
-			x: 4.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1607,7 +1527,9 @@
 				""
 				"Similar controls are available for the &aFluid Filter&r when placed inside a &6Fluid Regulator&r."
 				""
-				"Additionally, the &aTag Filter&r&r is a powerful tool that has a specialized filter which uses Tags and &regular expressions (regex)&r, e. g. \"&6ingotHot*&r\" will match all hot ingots, \"&6dustRegular*&r\" will match all regular dusts, and \"&6dustTiny*&r\" will match all tiny piles."
+				"Additionally, the &aTag Filter&r&r is a powerful tool that has a specialized filter which uses Tags and &rboolean expressions &r, e. g. \"&6*hot_ingots*&r\" will match all hot ingots, \"&6*dusts*&r\" will match all regular dusts, and \"&6*tiny_dusts*&r\" will match all tiny piles."
+				""
+				"Tags are used similarly in the &1Tag Export Bus&r."
 				""
 				"All &bGregTech&r Filters can be configured using ghost items from &bEMI&r."
 			]
@@ -1804,55 +1726,6 @@
 			title: "&9Upgrades, people, upgrades."
 			x: 8.5d
 			y: 7.5d
-		}
-		{
-			dependencies: ["545CCC24D9401794"]
-			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
-			icon: "steamadditions:steam_foundry"
-			id: "5D60CAE3A33000C3"
-			rewards: [{
-				id: "0543D4882AD0F771"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			size: 1.25d
-			tasks: [
-				{
-					id: "31167A476BC0B4F1"
-					item: "steamadditions:steam_foundry"
-					type: "item"
-				}
-				{
-					count: 13L
-					id: "505B1290E3042129"
-					item: "gtceu:steam_machine_casing"
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "5B5968BA75F69B32"
-					item: "gtceu:bronze_firebox_casing"
-					type: "item"
-				}
-				{
-					id: "20CC19C928014F7F"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-				{
-					id: "3F8C63CA26639558"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-				{
-					id: "2855C331EB019FD9"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-			]
-			title: "&9Steam Foundry"
-			x: 4.517857142857139d
-			y: 1.4285714285714306d
 		}
 		{
 			dependencies: ["47094A5717952699"]

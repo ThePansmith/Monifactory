@@ -50,7 +50,7 @@ Create a feature request on the GitHub.
 
 By default, Monifactory only supports the mods included with it, and has *optional compat* for various mods, such as Create. Any other mods added may break progression and/or deviate from the intended experience. Note that support will not be provided for bugs related to mods not shipped with the pack.
 
-**Q. How do I play Monifactory Hard Mode/Harder Mode?**
+**Q. How do I play Monifactory Hard Mode/Expert Mode?**
 
 [Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardharder-mode-installation)
 

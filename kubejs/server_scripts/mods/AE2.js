@@ -917,11 +917,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: /megacells:sky_steel/ })
 
     //MAE2 compat stuff
-    event.remove({ id: /mae2/ })
-    event.shapeless('mae2:4x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_4k'])
-    event.shapeless('mae2:16x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_16k'])
-    event.shapeless('mae2:64x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_64k'])
-    event.shapeless('mae2:256x_crafting_accelerator', ['megacells:mega_crafting_unit', 'ae2:engineering_processor', 'ae2:cell_component_256k'])
+    event.remove({ id: /mae2/, not: { id: /crafting_accelerator/ } })
 
     event.shaped(
         'mae2:item_multi_p2p_tunnel', [
@@ -1020,7 +1016,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
         
     event.recipes.gtceu.assembler("kubejs:mega/1m_storage_assembler")
-        .itemInputs("2x ae2:cell_component_256k", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/iv")
+        .itemInputs("2x ae2:cell_component_256k", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/luv")
         .inputFluids("gtceu:polytetrafluoroethylene 288")
         .itemOutputs("megacells:cell_component_1m")
         .EUt(240)
@@ -1028,7 +1024,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
         
     event.recipes.gtceu.assembler("kubejs:mega/4m_storage_assembler")
-        .itemInputs("2x megacells:cell_component_1m", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/luv")
+        .itemInputs("2x megacells:cell_component_1m", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/zpm")
         .inputFluids("gtceu:polytetrafluoroethylene 288")
         .itemOutputs("megacells:cell_component_4m")
         .EUt(240)
@@ -1036,7 +1032,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
         
     event.recipes.gtceu.assembler("kubejs:mega/16m_storage_assembler")
-        .itemInputs("2x megacells:cell_component_4m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/luv")
+        .itemInputs("2x megacells:cell_component_4m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/uv")
         .inputFluids("gtceu:polytetrafluoroethylene 288")
         .itemOutputs("megacells:cell_component_16m")
         .EUt(240)
@@ -1044,7 +1040,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
         
     event.recipes.gtceu.assembler("kubejs:mega/64m_storage_assembler")
-        .itemInputs("2x megacells:cell_component_16m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/zpm")
+        .itemInputs("2x megacells:cell_component_16m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/uhv")
         .inputFluids("gtceu:polybenzimidazole 288")
         .itemOutputs("megacells:cell_component_64m")
         .EUt(240)
@@ -1052,7 +1048,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
         
     event.recipes.gtceu.assembler("kubejs:mega/256m_storage_assembler")
-        .itemInputs("2x megacells:cell_component_64m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/zpm")
+        .itemInputs("2x megacells:cell_component_64m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/uev")
         .inputFluids("gtceu:polybenzimidazole 288")
         .itemOutputs("megacells:cell_component_256m")
         .EUt(240)

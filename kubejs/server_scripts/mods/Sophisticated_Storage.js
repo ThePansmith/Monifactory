@@ -7,7 +7,6 @@ ServerEvents.recipes(event => {
     // event.replaceInput({ output: /gold_barrel/ }, 'minecraft:gold_ingot', 'minecraft:iron_ingot')
     // event.replaceInput({ output: /diamond_barrel/ }, 'minecraft:diamond', 'gtceu:vibrant_alloy_ingot')
     // event.replaceInput({ output: /netherite_barrel/ }, 'minecraft:netherite_ingot', 'gtceu:dark_soularium_ingot')
-
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_barrel/ })
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_chest/ })
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_shulker_box/ })
@@ -15,7 +14,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_to_[A-Za-z]+_tier_upgrade/ })
     event.remove({ id: "sophisticatedstorage:xp_pump_upgrade"})
     event.remove({ id: "sophisticatedbackpacks:xp_pump_upgrade"})
-    event.remove({ input: 'minecraft:redstone_torch', mod: 'sophisticatedstorage'})
     
     var barrelupgrade = [
         [Item.of('sophisticatedstorage:gold_barrel', '{woodType:"spruce"}'), 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:barrel'],
@@ -38,10 +36,6 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'sophisticatedstorage:controller' })
 
-    const controllerCore = ["#forge:storage_blocks/diamond", "#forge:storage_blocks/emerald"]
-    const controllerStorage = ["#forge:barrels/wooden", "#forge:chests/wooden"]
-    controllerCore.forEach(coreBlock => {
-        controllerStorage.forEach(storageBlock => {
             event.shaped(
                 'sophisticatedstorage:controller', [
                 'III',
@@ -50,11 +44,44 @@ ServerEvents.recipes(event => {
             ], {
                 I: "#forge:plates/steel",
                 C: "#gtceu:circuits/lv",
-                D: storageBlock,
-                E: coreBlock
+                D: "#moni:SophContainer",
+                E: "#moni:SophGemBlock"
             })
+            event.shaped(
+                'sophisticatedstorage:storage_input', [
+                'III',
+                'CDC',
+                'IEI'
+            ], {
+                I: "#forge:plates/steel",
+                C: "#gtceu:circuits/lv",
+                D: "#moni:SophContainer",
+                E: "#forge:storage_blocks/gold"
+            })
+            event.shaped(
+                'sophisticatedstorage:storage_output', [
+                'IEI',
+                'CDC',
+                'III'
+            ], {
+                I: "#forge:plates/steel",
+                C: "#gtceu:circuits/lv",
+                D: "#moni:SophContainer",
+                E: "#forge:storage_blocks/gold"
+            })
+
+            event.shaped(
+                'sophisticatedstorage:storage_io', [
+                'III',
+                'SDT',
+                'III'
+            ], {
+                I: "#forge:plates/steel",
+                S: "sophisticatedstorage:storage_input",
+                T: "sophisticatedstorage:storage_output",
+                D: "#moni:SophContainer",
         })
-    })
+
 
     // Backpacks
     event.remove({ output: 'sophisticatedbackpacks:copper_backpack' })

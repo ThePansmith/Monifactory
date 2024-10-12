@@ -188,7 +188,9 @@ StartupEvents.registry("block", event => {
             .displayName(`${casing.split('_').map(v => capitalize(v)).join(" ")} Casing`)
             .soundType('metal')
             .resistance(6).hardness(5)
-            .tagBlock("mineable/pickaxe").requiresTool(true);
+            .tagBlock("mineable/pickaxe")
+            .tagBlock("forge:mineable/wrench")
+            .requiresTool(true);
     });
 
 

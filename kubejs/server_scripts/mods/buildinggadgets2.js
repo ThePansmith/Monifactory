@@ -1,9 +1,9 @@
-ServerEvents.recipes( event => {
-    event.remove({id: /buildinggadgets2/})
-
-    //Template Manager
-    event.shaped(
-        'buildinggadgets2:template_manager', [
+ServerEvents.recipes(event => {
+    if (isHardMode) {
+        event.remove({ id: /buildinggadgets2/ })
+        //Template Manager
+        event.shaped(
+            'buildinggadgets2:template_manager', [
             'PMP',
             'CGC',
             'PLP'
@@ -13,12 +13,10 @@ ServerEvents.recipes( event => {
             G: 'gtceu:restonia_gear',
             C: '#gtceu:circuits/mv',
             L: '#forge:plates/lapis'
-        }
-    )
-
-    //Gadgets
-    event.shaped(
-        'buildinggadgets2:gadget_building', [
+        })
+        //Gadgets
+        event.shaped(
+            'buildinggadgets2:gadget_building', [
             'PE',
             'CM',
             'PB'
@@ -28,40 +26,22 @@ ServerEvents.recipes( event => {
             E: 'gtceu:lv_emitter',
             C: '#gtceu:circuits/lv',
             B: '#gtceu:batteries/lv'
-        }
-    )
-    //Exchanging gadgets use an IV emitter in HM/EM
-    if (isHardMode) {
+        })
+
         event.shaped(
             'buildinggadgets2:gadget_exchanging', [
-                'PE',
-                'CM',
-                'PB'
-            ], {
-                M: '#forge:plates/glass',
-                P: 'gtceu:iron_plate',
-                E: 'gtceu:iv_emitter',
-                C: '#gtceu:circuits/mv',
-                B: '#gtceu:batteries/lv'
-            }
-        )
-    } else {
+            'PE',
+            'CM',
+            'PB'
+        ], {
+            M: '#forge:plates/glass',
+            P: 'gtceu:iron_plate',
+            E: 'gtceu:mv_emitter',
+            C: '#gtceu:circuits/mv',
+            B: '#gtceu:batteries/lv'
+        })
         event.shaped(
-            'buildinggadgets2:gadget_exchanging', [
-                'PE',
-                'CM',
-                'PB'
-            ], {
-                M: '#forge:plates/glass',
-                P: 'gtceu:iron_plate',
-                E: 'gtceu:mv_emitter',
-                C: '#gtceu:circuits/mv',
-                B: '#gtceu:batteries/lv'
-            }
-        )
-    }
-    event.shaped(
-        'buildinggadgets2:gadget_copy_paste', [
+            'buildinggadgets2:gadget_copy_paste', [
             'SE',
             'CM',
             'PB'
@@ -72,10 +52,9 @@ ServerEvents.recipes( event => {
             S: 'gtceu:lv_sensor',
             C: '#gtceu:circuits/mv',
             B: '#gtceu:batteries/mv'
-        }
-    )
-    event.shaped(
-        'buildinggadgets2:gadget_cut_paste', [
+        })
+        event.shaped(
+            'buildinggadgets2:gadget_cut_paste', [
             'SE',
             'CM',
             'PB'
@@ -86,10 +65,9 @@ ServerEvents.recipes( event => {
             S: 'gtceu:lv_sensor',
             C: '#gtceu:circuits/lv',
             B: '#gtceu:batteries/hv'
-        }
-    )
-    event.shaped(
-        'buildinggadgets2:gadget_destruction', [
+        })
+        event.shaped(
+            'buildinggadgets2:gadget_destruction', [
             'PE',
             'CM',
             'PB'
@@ -99,6 +77,21 @@ ServerEvents.recipes( event => {
             E: 'gtceu:lv_emitter',
             C: '#gtceu:circuits/lv',
             B: '#gtceu:batteries/mv'
-        }
-    )
+        })
+    } else {
+        // Slight nerf in NM because its stupid good for mining lol
+        event.remove({ id: 'buildinggadgets2:gadget_exchanging' })
+        event.shaped(
+            'buildinggadgets2:gadget_exchanging', [
+            'PE',
+            'CM',
+            'PB'
+        ], {
+            M: '#forge:plates/glass',
+            P: 'gtceu:iron_plate',
+            E: 'gtceu:lv_emitter',
+            C: '#gtceu:circuits/mv',
+            B: '#gtceu:batteries/lv'
+        })
+    }
 })
