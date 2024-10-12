@@ -349,7 +349,7 @@
 		{
 			dependencies: ["73C6E2724EBEC997"]
 			description: [
-				"Provide your &3Simulation Chamber&r with RF power and &6Pulsating Prediction Matrix&r. Then insert a &6Data Model&r of your choice. The Simulation Chamber will consume Polymer Clay and a decent amount of power to begin simulating mob kills. This will generate &6Overworldian Matter&r and may occasionally provide you with &6Pristine Matter&r."
+				"Provide your &3Simulation Chamber&r with RF power and &6Pulsating Prediction Matrix&r. Then insert a &6Data Model&r of your choice. The Simulation Chamber will consume Prediction Matrix and a decent amount of power to begin simulating mob kills. This will generate &6Overworldian Matter&r and may occasionally provide you with &6Pristine Matter&r."
 				""
 				"&6Overworldian Matter&r can be eaten to gain experience, or can be combined with other materials to obtain drops from Overworld mobs, and other forms of matter. With these drops and the other kinds of matter, you can then create Data Models for lots of other mob types!"
 			]
