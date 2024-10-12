@@ -1705,7 +1705,7 @@
 				""
 				"Resonant Clathrates are made by melting &6Ender Pearls&r with a &3Fluid Extractor&r into &9Resonant Ender&r, then mixing that with &6Nether Quartz&r in an MV or better &3Chemical Reactor&r. Smelting this clathrate gives Pulsating Dust."
 				""
-				"With Resonant Clathrates now accessible, everything you need for crafting &6Pulsating Polymer Clay&r can be automated in a net-positive loop.&r Doing so is the first step in automation of &bHostile Neural Networks&r, which is &ea primary source of important materials for the rest of the pack&r."
+				"With Resonant Clathrates now accessible, everything you need for crafting &6Pulsating Prediction Matrix&r can be automated in a net-positive loop.&r Doing so is the first step in automation of &bHostile Neural Networks&r, which is &ea primary source of important materials for the rest of the pack&r."
 				""
 				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &bEMI&r and the Processing Lines Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
 			]
