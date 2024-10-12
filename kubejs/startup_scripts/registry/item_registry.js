@@ -381,12 +381,14 @@ StartupEvents.registry('item', event => {
         event.create(`${theme}_${type}`)
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} ${type.split('_').map(v => capitalize(v)).join(" ")}`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_${type}` })
+            .tag(`gtceu:circuits/${volt}`)
     }
 
     function Mainframe(theme, volt) {
         event.create(`${theme}_processor_mainframe`)
             .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processor Mainframe`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_processor_mainframe_base`, layer1: `kubejs:item/circuits/${theme}_processor_mainframe_lights` })
+            .tag(`gtceu:circuits/${volt}`)
     }
 
     function Unit(theme) {
@@ -399,23 +401,22 @@ StartupEvents.registry('item', event => {
     }
 
     Unit('matter')
-    Circuit('matter', 'processor', "ZPM")
-    Circuit('matter', 'processor_assembly', "UV")
-    Circuit('matter', 'processor_computer', "UHV")
-    Mainframe('matter', "UEV")
+    Circuit('matter', 'processor', "zpm")
+    Circuit('matter', 'processor_assembly', "uh")
+    Circuit('matter', 'processor_computer', "uhv")
+    Mainframe('matter', "uev")
 
     Unit('dimensional')
-    Circuit('dimensional', 'processor', "UV")
-    Circuit('dimensional', 'processor_assembly', "UHV")
-    Circuit('dimensional', 'processor_computer', "UEV")
-    Mainframe('dimensional', "UIV")
+    Circuit('dimensional', 'processor', "uv")
+    Circuit('dimensional', 'processor_assembly', "uhv")
+    Circuit('dimensional', 'processor_computer', "uev")
+    Mainframe('dimensional', "uiv")
 
     Unit('monic')
-    Circuit('monic', 'processor', "UHV")
-    Circuit('monic', 'processor_assembly', "UEV")
-    Circuit('monic', 'processor_computer', "UIV")
-    Mainframe('monic', "§9MAX")
-
+    Circuit('monic', 'processor', "uhv")
+    Circuit('monic', 'processor_assembly', "uev")
+    Circuit('monic', 'processor_computer', "uiv")
+    Mainframe('monic', "max")
 
     // Smores
     const smoreHunger = [
@@ -445,6 +446,16 @@ StartupEvents.registry('item', event => {
 
         effDuration *= 2;
     }
+
+    //Universal Circuits
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+    tiers.forEach((universal_circuit) => {
+        event.create(universal_circuit + "_universal_circuit")
+            .tag("gtceu:circuits/" + universal_circuit)
+            .displayName(universal_circuit.toUpperCase() + " Universal Circuit")
+            .tooltip("§7A Universal Circuit")
+            .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
+    })
 })
 
 ItemEvents.toolTierRegistry(event => {
