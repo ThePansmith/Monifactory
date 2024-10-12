@@ -250,7 +250,7 @@ ServerEvents.recipes(event => {
             ' W       W '
         ], {
             O: 'kubejs:elementally_infused_omnic_matrix_heavy_plating',
-            M: 'gtceu:crystal_matrix_plate',
+            M: 'gtceu:double_crystal_matrix_plate',
             P: 'solarflux:sp_custom_neutronium',
             W: 'kubejs:hadal_warp_engine',
             A: 'gtceu:uev_robot_arm',
