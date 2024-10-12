@@ -1358,24 +1358,17 @@
 		{
 			dependencies: ["6E27B9938B280291"]
 			description: [
-				"[\"When setting up your AE2 network, generally you either \",{\"text\": \"passive or on-demand things\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://youtu.be/u0ouTWgdcXk?si=4l4UpQnWsYS5b-gT&t=803\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \", depending on how often you need them, recipe complexity, and so on.\"]"
+				"&3Applied Energistics&r does not allow you to use tags when creating &aProcessing Patterns&r, this can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
 				""
-				"Gregtech circuits fall in this weird middle area where while you need a ton of them, the recipes you will be using change often enough to where passiving them at this point isn't viable."
-				""
-				"You could use a crafting card to help you, but the &9ME Requester&r allows for a better solution, being able to tell your system to keep a stock of many different items and how many it should craft at a time, perfect for keeping circuits stocked."
+				"Instead, use &9Universal Circuits&r when creating your Processing Patterns, as all normal circuits can be converted to to their Universal Circuit equivalent in an &3Atomic Reconstuctor&r."
 			]
+			icon: "kubejs:hv_universal_circuit"
 			id: "0D1A64EBBA742196"
-			rewards: [{
-				id: "04717344EF601BB2"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
 			tasks: [{
-				id: "3C4732F427609C5A"
-				item: "merequester:requester"
-				type: "item"
+				id: "21D1CA04E224F57A"
+				type: "checkmark"
 			}]
-			title: "&9ME Requester"
+			title: "&9Universal Circuits"
 			x: 6.75d
 			y: 11.5d
 		}
