@@ -1157,6 +1157,8 @@
 				"&6Certus quartz&r can be grown from &6Budding Certus Quartz&r blocks!"
 				""
 				"Check out the &9&lingame guide&r&r or &eG&r on the item for specifics on how to get this set up."
+				""
+				"Note that Monifactory adds a crafting recipe for Flawless Budding Certus Quartz — check EMI for details!"
 			]
 			icon: "ae2:flawless_budding_quartz"
 			id: "62356B88D5366D33"
