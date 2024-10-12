@@ -917,11 +917,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: /megacells:sky_steel/ })
 
     //MAE2 compat stuff
-    event.remove({ id: /mae2/ })
-    event.shapeless('mae2:4x_crafting_accelerator', ['ae2:crafting_accelerator', 'ae2:cell_component_4k'])
-    event.shapeless('mae2:16x_crafting_accelerator', ['ae2:crafting_accelerator', 'ae2:cell_component_16k'])
-    event.shapeless('mae2:64x_crafting_accelerator', ['ae2:crafting_accelerator', 'ae2:cell_component_64k'])
-    event.shapeless('mae2:256x_crafting_accelerator', ['ae2:crafting_accelerator', 'ae2:cell_component_256k'])
+    event.remove({ id: /mae2/, not: { id: /crafting_accelerator/ } })
 
     event.shaped(
         'mae2:item_multi_p2p_tunnel', [
