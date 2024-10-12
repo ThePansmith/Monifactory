@@ -29,6 +29,12 @@
 			x: -4.0d
 			y: 15.5d
 		}
+		{
+			id: "564D04B3CA37A1FF"
+			linked_quest: "2280472741683581"
+			x: 4.0d
+			y: 15.5d
+		}
 	]
 	quests: [
 		{
@@ -1488,6 +1494,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "Green=Input, Red=Output"
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
 				item: {
@@ -1580,8 +1587,8 @@
 				type: "item"
 			}]
 			title: "LV Power Storage"
-			x: 1.5d
-			y: 16.75d
+			x: 2.75d
+			y: 15.5d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
@@ -1901,7 +1908,7 @@
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
 				""
-				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"chanced byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
+				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"Macerators' byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
 				""
 				"Obvious exceptions would be rare materials or anything you buy with &9Monicoins &fbecause you can't find it. Those are worth doubling, if possible."
 				""

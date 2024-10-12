@@ -61,7 +61,7 @@
 				""
 				"&2If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer, &9or mute the sound entirely in the ESM menu, accessable from your inventory."
 			]
-			icon: "gtceu:lv_electric_motor"
+			icon: "gtceu:lv_wiremill"
 			id: "62BBD1F6767A4D90"
 			rewards: [{
 				count: 2
@@ -647,7 +647,7 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for Steel and other useful things."]
+			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for other alloys."]
 			id: "5301E546BAA69844"
 			rewards: [{
 				id: "424A2A6FAB412F69"
@@ -664,13 +664,13 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
+			subtitle: "&9Steel&r is the main material in &9LV&r"
 			tasks: [{
 				id: "17210F38B40BAAD7"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&9Alloying Steel"
+			title: "&9Steel"
 			x: 2.5d
 			y: -3.0d
 		}
@@ -700,11 +700,8 @@
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
-			description: [
-				"&3Alloy Smelters&r are used to create alloys by melting and reforming items together."
-				""
-				"Now you won't need to grind up metals into dusts and mix them for alloy dusts! Plus, many of the more complex alloys you couldn't make that way are now possible."
-			]
+			description: ["The &6LV Alloy Smelter&r offers an electrical alternative to your &6Steam Alloy Smelter&r."]
+			icon: "gtceu:lv_alloy_smelter"
 			id: "29A487F0BC43AAF9"
 			rewards: [{
 				id: "0C69338204BAC2F3"
@@ -714,8 +711,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "1E91BE2938B1B8CE"
-				item: "gtceu:lv_alloy_smelter"
-				type: "item"
+				type: "checkmark"
 			}]
 			title: "LV Alloy Smelter"
 			x: 2.5d
@@ -860,72 +856,6 @@
 			}]
 			x: 6.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["545CCC24D9401794"]
-			description: [
-				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
-				""
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
-				""
-				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
-			]
-			icon: "gtceu:steam_grinder"
-			id: "41C2E49E70D76330"
-			rewards: [
-				{
-					count: 7
-					id: "6B113D9EF57E5CDE"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "42A15BBED3DD9B74"
-					item: {
-						Count: 1
-						id: "minecraft:enchanted_book"
-						tag: {
-							StoredEnchantments: [{
-								id: "minecraft:silk_touch"
-								lvl: 1s
-							}]
-						}
-					}
-					type: "item"
-				}
-			]
-			size: 1.75d
-			tasks: [
-				{
-					id: "7DD0FE0A1E868294"
-					item: "gtceu:steam_grinder"
-					type: "item"
-				}
-				{
-					count: 22L
-					id: "18DB8D651F2D31CB"
-					item: "gtceu:steam_machine_casing"
-					type: "item"
-				}
-				{
-					id: "570435DB56E60014"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-				{
-					id: "4A720EFF7B137995"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-				{
-					id: "76E984019B7F6D6B"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-			]
-			title: "&9Steam Grinder"
-			x: 4.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1133,7 +1063,7 @@
 			description: [
 				"&3Electrolyzers&r use electricity to separate items into their more basic components."
 				""
-				"For example, you can break down Water into &9Hydrogen Gas&r and &9Oxygen Gas&r, or break down &6Clay Dust&r into &6Sodium Dust&r, &6Silicon Dust&r, &6Lithium Dust&r, and &6Aluminium Dust&r."
+				"For example, you can break down Water into &9Hydrogen Gas&r and &9Oxygen Gas&r."
 			]
 			id: "5B0200011DF8E1B6"
 			rewards: [{
@@ -1226,7 +1156,7 @@
 			description: [
 				"With your EBF running, start to create a supply of &6Aluminium Ingots&r. These are crucial ingredients for MV machines, including &bApplied Energistics&r."
 				""
-				"&2With LV power, you can only get Aluminium Dust from electrolyzing Clay Dust, Sapphire Dust or Green Sapphire Dust. Clay Dust is recommended. Once you make an MV Electrolyzer, you can get it from a plethora of other raw resources.&r"
+				"&2With LV power, you can only get Aluminium Dust from electrolyzing Sapphire Dust or Green Sapphire Dust. Once you make an MV Electrolyzer, you can get it from a plethora of other raw resources, such as Clay.&r"
 				""
 				"If you find your power supply is faltering, you may want to make additional dynamos and turn them into steam boilers and turbines. Upgrading your dynamos is also advisable."
 				""
@@ -1860,55 +1790,6 @@
 			title: "&9Upgrades, people, upgrades."
 			x: 8.5d
 			y: 7.5d
-		}
-		{
-			dependencies: ["545CCC24D9401794"]
-			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
-			icon: "steamadditions:steam_foundry"
-			id: "5D60CAE3A33000C3"
-			rewards: [{
-				id: "0543D4882AD0F771"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			size: 1.25d
-			tasks: [
-				{
-					id: "31167A476BC0B4F1"
-					item: "steamadditions:steam_foundry"
-					type: "item"
-				}
-				{
-					count: 13L
-					id: "505B1290E3042129"
-					item: { Count: 13, id: "gtceu:steam_machine_casing" }
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "5B5968BA75F69B32"
-					item: "gtceu:bronze_firebox_casing"
-					type: "item"
-				}
-				{
-					id: "20CC19C928014F7F"
-					item: "gtceu:steam_input_bus"
-					type: "item"
-				}
-				{
-					id: "3F8C63CA26639558"
-					item: "gtceu:steam_output_bus"
-					type: "item"
-				}
-				{
-					id: "2855C331EB019FD9"
-					item: "gtceu:steam_input_hatch"
-					type: "item"
-				}
-			]
-			title: "&9Steam Foundry"
-			x: 4.517857142857139d
-			y: 1.4285714285714306d
 		}
 		{
 			dependencies: ["47094A5717952699"]

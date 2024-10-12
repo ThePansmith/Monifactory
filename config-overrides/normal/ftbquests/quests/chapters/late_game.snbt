@@ -2217,7 +2217,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["521977C7165229F1"]
+			dependencies: ["4DB622A78605A2EB"]
 			description: [
 				"The &3Power Substation&r is GregTech's native mass power storage solution."
 				""

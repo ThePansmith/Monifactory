@@ -61,7 +61,7 @@
 				""
 				"&2If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer, &9or mute the sound entirely in the ESM menu, accessable from your inventory."
 			]
-			icon: "gtceu:lv_electric_motor"
+			icon: "gtceu:lv_wiremill"
 			id: "62BBD1F6767A4D90"
 			rewards: [{
 				count: 2
@@ -287,7 +287,7 @@
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"The &3Bending Machine&r improves the yield of a great deal of items. Most notably, you can use it to get one &6Plate&r from a single ingot, instead of having to spend two ingots for a single plate."
+				"The &3Bender&r improves the yield of a great deal of items. Most notably, you can use it to get one &6Plate&r from a single ingot, instead of having to spend two ingots for a single plate."
 				""
 				"As with the &3Wiremill&r, this requires a &6Programmed Circuit&r to tell it what to make. For plates, this is &econfiguration 1&r. Refer to &eEMI&r for which configuration to use for your recipe."
 				" "
@@ -312,36 +312,14 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			title: "&2LV Bending Machine"
+			title: "&2LV Bender"
 			x: -7.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with &9monicoins&r."
-				""
-				"The appearance can be customized by crafting the drawer into &aFramed Compacting Drawer&r and then using a &9Framing Template&r or your crafting grid."
-			]
-			id: "7460F22545A4EFB2"
-			rewards: [{
-				id: "46EA0B4F09642C8E"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "05CB7EE672B034D4"
-				item: "functionalstorage:compacting_drawer"
-				type: "item"
-			}]
-			title: "&9Compacting Drawers"
-			x: -7.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["7A12743F5ECCED90"]
-			description: [
-				"&2&2Most plates are made in the Bending Machine instead of here. (Technically this was the case in CE, but this modpack transferred its recipes to the Compressor.)&r"
+				"&2&2Most plates are made in the Bender instead of here. (Technically this was the case in CE, but this modpack transferred its recipes to the Compressor.)&r"
 				""
 				"However, this machine will still see use for compressing &eNuggets&r into&e Ingots&r, &eIngots&r into &eBlocks&r, &eGem Dusts&r into &ePlates&r (such as &6Certus Quartz&r), as well as various other useful recipes."
 			]
@@ -531,12 +509,6 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					count: 3L
-					id: "003802F16404404C"
-					item: { Count: 3, id: "gtceu:empty_mold" }
-					type: "item"
-				}
-				{
 					id: "500A01A974ACFC7D"
 					item: "gtceu:block_casting_mold"
 					type: "item"
@@ -660,11 +632,8 @@
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
-			description: [
-				"&3Alloy Smelters&r are used to create alloys by melting and reforming items together."
-				""
-				"Now you won't need to grind up metals into dusts and mix them for alloy dusts! Plus, many of the more complex alloys you couldn't make that way are now possible."
-			]
+			description: ["The &6LV Alloy Smelter&r offers an electrical alternative to your &6Steam Alloy Smelter&r."]
+			icon: "gtceu:lv_alloy_smelter"
 			id: "29A487F0BC43AAF9"
 			rewards: [{
 				id: "0C69338204BAC2F3"
@@ -674,8 +643,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "1E91BE2938B1B8CE"
-				item: "gtceu:lv_alloy_smelter"
-				type: "item"
+				type: "checkmark"
 			}]
 			title: "LV Alloy Smelter"
 			x: 2.5d
@@ -999,7 +967,7 @@
 			description: [
 				"&3Electrolyzers&r use electricity to separate items into their more basic components."
 				""
-				"For example, you can break down Water into &9Hydrogen Gas&r and &9Oxygen Gas&r, or break down &6Clay Dust&r into &6Sodium Dust&r, &6Silicon Dust&r, &6Lithium Dust&r, and &6Aluminium Dust&r."
+				"For example, you can break down Water into &9Hydrogen Gas&r and &9Oxygen Gas&r."
 			]
 			id: "5B0200011DF8E1B6"
 			rewards: [{
@@ -1092,7 +1060,7 @@
 			description: [
 				"With your EBF running, start to create a supply of &6Aluminium Ingots&r. These are crucial ingredients for MV machines, including &bApplied Energistics&r."
 				""
-				"&2With LV power, you can only get Aluminium Dust from electrolyzing Clay Dust, Sapphire Dust or Green Sapphire Dust. Clay Dust is recommended. Once you make an MV Electrolyzer, you can get it from a plethora of other raw resources.&r"
+				"&2With LV power, you can only get Aluminium Dust from electrolyzing Sapphire Dust or Green Sapphire Dust. Once you make an MV Electrolyzer, you can get it from a plethora of other raw resources, such as Clay.&r"
 				""
 				"If you find your power supply is faltering, you may want to make additional dynamos and turn them into steam boilers and turbines. Upgrading your dynamos is also advisable."
 				""
@@ -1562,29 +1530,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["273F3F8DD6A3DCC5"]
-			description: [
-				"Item conduits are useful for moving items between inventories over moderate distances."
-				""
-				"Crafting them in an Assembling Machine instead of by hand gives twice as many conduits."
-			]
-			id: "4F239316765C7CA1"
-			rewards: [{
-				id: "189732EC89DA656B"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "6DEB6911246BA1D9"
-				item: "enderio:item_conduit"
-				type: "item"
-			}]
-			title: "Item Conduits"
-			x: 4.5d
-			y: -9.5d
-		}
-		{
 			dependencies: ["4CD6C60CBEFFA317"]
 			description: [
 				"The main function of this oven is to increase the fuel values of your wood and coal while also recovering some of the various potentially useful waste products."
@@ -1692,7 +1637,7 @@
 		{
 			dependencies: ["3EDD0A986384F2A7"]
 			description: [
-				"Now that you have a &3Wiremill&f and a &2Bending Machine&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &9monicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
+				"Now that you have a &3Wiremill&f and a &2Bender&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &9monicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
 				""
 				"With renewable &9monicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
 			]

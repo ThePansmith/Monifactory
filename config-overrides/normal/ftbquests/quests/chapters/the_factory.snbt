@@ -1897,13 +1897,13 @@
 					type: "item"
 				}
 				{
-					count: 13L
+					count: 14L
 					id: "505B1290E3042129"
 					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
-					count: 9L
+					count: 8L
 					id: "5B5968BA75F69B32"
 					item: "gtceu:bronze_firebox_casing"
 					type: "item"

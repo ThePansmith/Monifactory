@@ -29,6 +29,12 @@
 			x: -4.0d
 			y: 15.5d
 		}
+		{
+			id: "412B0192D3658F7C"
+			linked_quest: "2280472741683581"
+			x: 4.0d
+			y: 15.5d
+		}
 	]
 	quests: [
 		{
@@ -1040,10 +1046,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"545CCC24D9401794"
-				"34CA940B412284F2"
-			]
+			dependencies: ["34CA940B412284F2"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
@@ -1131,9 +1134,9 @@
 					type: "item"
 				}
 				{
-					count: 13L
+					count: 14L
 					id: "6394A3C7C39ABEAA"
-					item: { Count: 13, id: "gtceu:steam_machine_casing" }
+					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
@@ -1718,8 +1721,8 @@
 				type: "item"
 			}]
 			title: "LV Power Storage"
-			x: 1.5d
-			y: 16.75d
+			x: 2.75d
+			y: 15.5d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
@@ -1930,7 +1933,7 @@
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
 				""
-				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"chanced byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
+				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"Macerators' byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
 				""
 				"The obvious exception would be rare materials; Those are worth doubling, if possible."
 				""
