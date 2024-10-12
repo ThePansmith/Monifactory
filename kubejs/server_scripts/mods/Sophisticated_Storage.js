@@ -44,8 +44,8 @@ ServerEvents.recipes(event => {
             ], {
                 I: "#forge:plates/steel",
                 C: "#gtceu:circuits/lv",
-                D: "#moni:SophContainer",
-                E: "#moni:SophGemBlock"
+                D: "#moni:sophcontainer",
+                E: "#moni:sophgemblock"
             })
             event.shaped(
                 'sophisticatedstorage:storage_input', [
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
             ], {
                 I: "#forge:plates/steel",
                 C: "#gtceu:circuits/lv",
-                D: "#moni:SophContainer",
+                D: "#moni:sophcontainer",
                 E: "#forge:storage_blocks/gold"
             })
             event.shaped(
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
             ], {
                 I: "#forge:plates/steel",
                 C: "#gtceu:circuits/lv",
-                D: "#moni:SophContainer",
+                D: "#moni:sophcontainer",
                 E: "#forge:storage_blocks/gold"
             })
 
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
                 I: "#forge:plates/steel",
                 S: "sophisticatedstorage:storage_input",
                 T: "sophisticatedstorage:storage_output",
-                D: "#moni:SophContainer",
+                D: "#moni:sophcontainer",
         })
 
 
