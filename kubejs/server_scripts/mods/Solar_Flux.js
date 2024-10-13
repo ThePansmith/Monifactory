@@ -24,58 +24,73 @@ ServerEvents.recipes(event => {
             C: 'enderio:conductive_conduit'
         }
     )
-
-    //T2 (Mirror instead of photovoltaic cell)
-    event.shaped(
-        '2x solarflux:sp_2', [
-            'SCS',
-            'WBW',
-            'PEP'
-        ], {
-            S: 'solarflux:sp_1',
-            C: 'gtceu:tempered_glass',
-            W: 'gtceu:tin_single_cable',
-            B: 'minecraft:redstone_block',
-            P: 'gtceu:cupronickel_plate',
-            E: 'enderio:energetic_conduit'
-        }
-    )
+    event.recipes.gtceu.assembler('sp_1')
+        .itemInputs([
+            Item.of('solarflux:mirror', 3),
+            Item.of('gtceu:fine_copper_wire', 3),
+            Item.of('minecraft:stone_slab', 2),
+            Item.of('enderio:conductive_conduit', 1)
+        ])
+        .itemOutputs('2x solarflux:sp_1')
+        .duration(2400)
+        .EUt(2)
     
     // All the other panels follow a pattern until 7
     var solarCrafting = [
+        ['gtceu:tin_single_cable', 'minecraft:redstone_block', 'gtceu:cupronickel_plate', 'enderio:energetic_conduit'],
         ['gtceu:electrical_steel_plate', 'gtceu:conductive_alloy_block', 'gtceu:electrical_steel_gear', 'enderio:vibrant_conduit'],
         ['gtceu:microversium_ingot', 'gtceu:end_steel_block', 'gtceu:microversium_ingot', 'enderio:endsteel_conduit'],
         ['gtceu:lumium_plate', 'gtceu:sunnarium_dust', 'gtceu:lumium_plate', 'enderio:lumium_conduit'],
         ['gtceu:signalum_plate', 'gtceu:enriched_sunnarium_dust', 'gtceu:signalum_plate', 'enderio:signalum_conduit']
     ]
     
-    solarCrafting.forEach((ingredients, photovoltaic_cell_index) => {
+    solarCrafting.forEach((ingredients, index) => {
+        //Account for the first recipe, which doesn't use a photovoltaic cell
+        var photovoltaic;
+        if(index == 0) {
+            photovoltaic = 'gtceu:tempered_glass'
+        } else {
+            photovoltaic = 'solarflux:photovoltaic_cell_' + index;
+        }
         event.shaped(
-            '2x solarflux:sp_' + (photovoltaic_cell_index+3), [
+            '2x solarflux:sp_' + (index+2), [
                 'SCS',
                 'WBW',
                 'PEP'
             ], {
-                S: 'solarflux:sp_' + (photovoltaic_cell_index+2),
-                C: 'solarflux:photovoltaic_cell_' + (photovoltaic_cell_index+1),
+                S: 'solarflux:sp_' + (index+1),
+                C: photovoltaic,
                 W: ingredients[0],
                 B: ingredients[1],
                 P: ingredients[2],
                 E: ingredients[3]
             }
         )
-        event.recipes.gtceu.assembler('sp_' + (photovoltaic_cell_index+3))
-            .itemInputs([
-                '2x solarflux:sp_' + (photovoltaic_cell_index+2),
-                'solarflux:photovoltaic_cell_' + (photovoltaic_cell_index+1),
+        //Account for when the same ingredients are used twice
+        let assemblerInputs;
+        if(ingredients[0] == ingredients[2]) {
+            assemblerInputs = [
+                '2x solarflux:sp_' + (index+1),
+                Item.of(photovoltaic, 1),
+                Item.of(ingredients[0], 4),
+                Item.of(ingredients[1], 1),
+                Item.of(ingredients[3], 1)
+            ]
+        } else {
+            assemblerInputs = [
+                '2x solarflux:sp_' + (index+1),
+                Item.of(photovoltaic, 1),
                 Item.of(ingredients[0], 2),
                 Item.of(ingredients[1], 1),
                 Item.of(ingredients[2], 2),
                 Item.of(ingredients[3], 1)
-            ])
-            .itemOutputs('2x solarflux:sp_' + (photovoltaic_cell_index+3))
+            ]
+        }
+        event.recipes.gtceu.assembler('sp_' + (index+2))
+            .itemInputs(assemblerInputs)
+            .itemOutputs('2x solarflux:sp_' + (index+2))
             .duration(2400)
-            .EUt(2* Math.pow(4, photovoltaic_cell_index))
+            .EUt(GTValues.VA[index])
     })
 
     // High tier solars
@@ -86,7 +101,7 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:signalum 1296')
     .itemOutputs('2x solarflux:sp_7')
     .duration(2400)
-    .EUt(7680)
+    .EUt(GTValues.VA[GTValues.IV])
 
     // T8
     event.recipes.gtceu.assembly_line('sp_8')
