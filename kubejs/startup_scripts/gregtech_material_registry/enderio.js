@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Pulsating Iron
     event.create("pulsating_alloy")
         .ingot().fluid()
-        .color(0x6ae26e).iconSet('shiny')
+        .color(0x2AB38F).iconSet('shiny')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
         .components('iron')
         .cableProperties(8, 1, 0, true)
