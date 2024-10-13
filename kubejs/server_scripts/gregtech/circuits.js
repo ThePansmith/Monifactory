@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(250000)
 
-    event.recipes.gtceu.assembler('matter_processing_unit')
+    event.recipes.gtceu.circuit_assembler('matter_processing_unit')
         .itemInputs('2x kubejs:matter_circuit_board', '2x gtceu:crystal_matrix_plate', '2x gtceu:activated_netherite_double_wire', 'gtceu:highly_advanced_soc')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:matter_processing_unit')
@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(500000)
 
-    event.recipes.gtceu.assembler('dimensional_processing_unit')
+    event.recipes.gtceu.circuit_assembler('dimensional_processing_unit')
         .itemInputs('4x kubejs:dimensional_circuit_board', 'gtceu:infinity_plate', '4x kubejs:the_ultimate_material', 
             '4x gtceu:activated_netherite_double_wire', '2x gtceu:flawless_monazite_gem',  '2x gtceu:flawless_glass_gem')
         .inputFluids('gtceu:soldering_alloy 1152')
@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(2000000)
 
-    event.recipes.gtceu.assembler('monic_processing_unit')
+    event.recipes.gtceu.circuit_assembler('monic_processing_unit')
         .itemInputs('8x kubejs:monic_circuit_board', '1x gtceu:monium_plate', '16x gtceu:holmium_double_wire', '4x kubejs:ultimate_gem',  
             '4x gtceu:exquisite_glass_gem')
         .inputFluids('gtceu:soldering_alloy 1152')
