@@ -5,6 +5,7 @@
  *  Solar Flux Solars
  *  Photovoltaic Cells
  *  Sunnarium
+ *  GT <-> Solarflux conversion recipes
  * Does not add recipes for:
  *  Sculk Solars
  *  Neutronium & Infinity Solars
