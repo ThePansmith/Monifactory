@@ -64,6 +64,7 @@ To spice up your Monifactory experience, you can add one of the following mods t
 2. [ComputerCraft: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)
 3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
 4. [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
+5. [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.
