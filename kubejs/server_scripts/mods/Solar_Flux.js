@@ -236,8 +236,4 @@ ServerEvents.recipes(event => {
         event.shapeless(`gtceu:${tiername}_solar_panel`, solarFluxPanel).id(`gtceu:solar_panel_${tiername}_conversion`)
         event.shapeless(solarFluxPanel, `gtceu:${tiername}_solar_panel`).id(`gtceu:solar_panel_${tiername}_reversion`)
     }
-    
-    // Neutronium conversion & reversion
-    event.shapeless('5x gtceu:uv_solar_panel', 'solarflux:sp_custom_neutronium').id('gtceu:solar_panel_uv_conversion_neutronium')
-    event.shapeless('solarflux:sp_custom_neutronium', '5x gtceu:uv_solar_panel').id('gtceu:solar_panel_uv_reversion_neutronium')
 })
