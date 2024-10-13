@@ -138,6 +138,7 @@ ItemEvents.tooltip(tooltip => {
 
     // AE2
     tooltip.add('ae2:facade', Text.gray('Crafted with Cable Anchors'))
+    tooltip.add('ae2:memory_card', Text.gray('Hold in offhand to set additional inputs on Multi P2Ps.'))
 
     // Misc
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray('Gaze into the Abyss...'))
