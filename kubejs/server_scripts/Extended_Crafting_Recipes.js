@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
 		], {
 			A: 'gtceu:rose_gold_ingot',
 			B: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),
-			C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(),
+			C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
 		} //, 2 // remove this comment to force t2 crafting only.
 	).id('kubejs:extended/angel_ring')
 })

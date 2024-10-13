@@ -1383,36 +1383,13 @@
 		}
 		{
 			dependencies: [
-				"1349044BF8C04A12"
-				"15A43AB700CADF2D"
-			]
-			description: ["Give me a little juice, FRIDAY!"]
-			disable_toast: true
-			id: "1FE8D35B4A5BFA16"
-			tasks: [{
-				id: "47722FD59AD2C4E3"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:vibrant"
-					}
-				}
-				type: "item"
-			}]
-			title: "Infinity War"
-			x: 14.0d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"1FE8D35B4A5BFA16"
 				"28854E7AC91786E9"
+				"15A43AB700CADF2D"
 			]
 			description: [
 				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
 				""
-				"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in the next jetpack, so if you want that you'll need to make one eventually."
+				"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in each of the Jetplates so if you want either of them you'll need to make one eventually."
 			]
 			disable_toast: true
 			id: "2923E98849358E16"
@@ -1429,32 +1406,8 @@
 				type: "item"
 			}]
 			title: "&9Captain... Marvel? IDK"
-			x: 15.5d
+			x: 14.75d
 			y: -4.0d
-		}
-		{
-			dependencies: [
-				"7A65459E4DFAAC2D"
-				"2923E98849358E16"
-			]
-			description: ["This is the flight of our lives."]
-			disable_toast: true
-			id: "5EE4F76D1F237A13"
-			shape: "square"
-			tasks: [{
-				id: "798E10A74B24D6B4"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:dark_soularium"
-					}
-				}
-				type: "item"
-			}]
-			title: "Endgame"
-			x: 15.5d
-			y: -2.5d
 		}
 		{
 			dependencies: ["6F5BB99060FF03AC"]
