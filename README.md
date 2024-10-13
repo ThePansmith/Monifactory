@@ -28,8 +28,8 @@
 - Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
 Thank you!
 
-## Hard/Harder Mode
-Is Monifactory not Greggy enough for you? Or do you simply want a challenge? Try Hard Mode (or even Harder Mode, if you're not faint of heart!)
+## Hard/Expert Mode
+Is Monifactory not Greggy enough for you? Or do you simply want a challenge? Try Hard Mode (or even Expert Mode, if you're not faint of heart!)
 
 Highlights include:
 
@@ -41,7 +41,7 @@ Highlights include:
 - More focus on GregTech Power Generation
 - No Creative Tank; instead, use Stabilized Micro Miners for late-game resource acquisition
 
-Harder Mode is a modifier for Hard Mode, and takes things a step further by:
+Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 
 - Disabling RF -> EU conversion, making GT power generation required
 - EnderIO Conduits are removed
@@ -52,7 +52,7 @@ Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 
 ## Installation:
 
-### Hard/Harder Mode Installation:
+### Hard/Expert Mode Installation:
 1. Download [``./pack-mode-switcher.bat``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
 2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
 2. Run the script, and follow the prompts to select your mode.
