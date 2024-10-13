@@ -13,7 +13,7 @@ layout-meta {
 }
 
 menu_background {
-  color = #24293c
+  color = #1b1a48
   background_type = drippy_color_background
 }
 
