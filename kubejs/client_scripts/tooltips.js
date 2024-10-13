@@ -68,27 +68,14 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uhv_tier_circuit')))})
 
 
-
     // Multiblocks
-    tooltip.add('gtceu:discharger', Text.translatable('gtceu.discharger.desc'))
-    tooltip.add('gtceu:simulation_supercomputer', Text.translatable('gtceu.simulation_supercomputer.desc'))
-    tooltip.add('gtceu:loot_superfabricator', Text.translatable('gtceu.loot_superfabricator.desc'))
-    tooltip.add('gtceu:greenhouse', Text.translatable('gtceu.greenhouse.desc'))
-    tooltip.add('gtceu:basic_microverse_projector', Text.translatable('gtceu.basic_microverse_projector.desc'))
-    tooltip.add('gtceu:advanced_microverse_projector', Text.translatable('gtceu.advanced_microverse_projector.desc'))
-    tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.advanced_microverse_projector_ii.desc'))
-    tooltip.add('gtceu:dimensional_superassembler', Text.translatable('gtceu.dimensional_superassembler.desc'))
-    tooltip.add('gtceu:hyperbolic_microverse_projector', Text.translatable('gtceu.hyperbolic_microverse_projector.desc'))
-    tooltip.add('gtceu:hyperbolic_microverse_projector', Text.translatable('gtceu.hyperbolic_microverse_projector_2.desc'))
-    tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.subatomic_digital_assembler.desc'))
-    tooltip.add('gtceu:quintessence_infuser', Text.translatable('gtceu.quintessence_infuser.desc'))
-    tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.actualization_chamber.desc'))
-    tooltip.add('gtceu:implosion_collider', Text.translatable('gtceu.implosion_collider.desc'))
-    tooltip.addAdvanced('gtceu:helical_fusion_reactor', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.machine.fusion_reactor.capacity', Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 16) / 1000000)))
-        text.add(2, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(3, Text.translatable('gtceu.multiblock.helical_fusion_reactor.description'))
-    })
+    tooltip.add('gtceu:discharger', Text.translatable('gtceu.multiblock.discharger.description'))
+    tooltip.add('gtceu:greenhouse', Text.translatable('gtceu.multiblock.greenhouse.description'))
+    tooltip.add('gtceu:basic_microverse_projector', Text.translatable('gtceu.multiblock.basic_microverse_projector.description'))
+    tooltip.add('gtceu:advanced_microverse_projector', Text.translatable('gtceu.multiblock.advanced_microverse_projector.description'))
+    tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.multiblock.advanced_microverse_projector_ii.description'))
+    tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.multiblock.subatomic_digital_assembler.description'))
+    tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.multiblock.actualization_chamber.description'))
 
     tooltip.addAdvanced('gtceu:universal_crystallizer', (item, adv, text) => {
         text.add(1, Text.darkGray('An immense device, capable of turning raw materials into complex matters'))
@@ -107,11 +94,40 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
+
+    //Parallel multiblocks
+    const parallelMultis = [
+        'simulation_supercomputer',
+        'loot_superfabricator',
+        'rock_cycle_simulator',
+        'atmospheric_accumulator',
+        'matter_alterator',
+        'implosion_collider',
+        'extra_large_chemical_reactor',
+        'quintessence_infuser',
+        'hyperbolic_microverse_projector',
+        'dimensional_superassembler'
+    ]
+
+    parallelMultis.forEach(multi => {
+        tooltip.addAdvanced('gtceu:' + multi, (item, adv, text) => {
+            text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+            text.add(2, Text.translatable('gtceu.multiblock.' + multi + '.description'))
+        })
+    })
+
+    tooltip.addAdvanced('gtceu:helical_fusion_reactor', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.machine.fusion_reactor.capacity', Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 16) / 1000000)))
+        text.add(2, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(3, Text.translatable('gtceu.multiblock.helical_fusion_reactor.description'))
+    })
+
+
+    //Parallel hatches
     tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
     tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:quintessence_infuser', 'gtceu:implosion_collider'], 'Can parallelize with Parallel Control Hatches.')
     tooltip.add('gtceu:basic_tape', 'Useful to wrap up Crates for transport instead')
 
     //Sophisticated Storage
