@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
             .EUt(16)
     }
     if (isHardMode) {
-        if (!isHarderMode) {
+        if (!isExpertMode) {
         // Manual item conduit
         event.shaped(
             "4x enderio:item_conduit", [
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
             .EUt(16)
     }
 }
-if (isHarderMode) {
+if (isExpertMode) {
 
     event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
     event.remove({ output: "enderio:pressurized_fluid_conduit" })
@@ -569,7 +569,7 @@ if (isHarderMode) {
 
     // Crafter
     event.remove({ id: 'enderio:crafter' })
-    if(!isHarderMode) {
+    if(!isExpertMode) {
         event.shaped('enderio:crafter', [
             'RCR',
             'GFG',

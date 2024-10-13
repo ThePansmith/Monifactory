@@ -52,7 +52,7 @@ By default, Monifactory only supports the mods included with it, and has *option
 
 **Q. How do I play Monifactory Hard Mode/Expert Mode?**
 
-[Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardharder-mode-installation)
+[Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardexpert-mode-installation)
 
 **Q. How do I update the modpack?**
 *Make a backup first.*

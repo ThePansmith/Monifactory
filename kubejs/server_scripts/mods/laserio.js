@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     //Disable in Hard Mode
-    if (isHarderMode) {
+    if (isExpertMode) {
         event.remove({ output: /laserio/ })
         return
     } 

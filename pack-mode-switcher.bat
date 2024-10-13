@@ -5,7 +5,7 @@ echo Monifactory Pack Mode Switcher
 setlocal
 set normalCfgPath=%~dp0config-overrides\normal
 set hardCfgPath=%~dp0config-overrides\hardmode
-set harderCfgPath=%~dp0config-overrides\expert
+set expertCfgPath=%~dp0config-overrides\expert
 set targetPath=%~dp0config
 
 echo Set pack mode:
@@ -16,7 +16,7 @@ choice /c NHE /m "Selection:"
 
 if "%errorlevel%" == "1" goto copyNormal
 if "%errorlevel%" == "2" goto copyHard
-if "%errorlevel%" == "3" goto copyHarder
+if "%errorlevel%" == "3" goto copyExpert
 
 :copyNormal
 robocopy "%normalCfgPath%" "%targetPath%" *.* /e /nfl /ndl
@@ -34,9 +34,9 @@ IF EXIST server.properties (move "%targetPath%\server.properties" .\)
 echo hard > .mode
 goto end
 
-:copyHarder
+:copyExpert
 robocopy "%hardCfgPath%" "%targetPath%" *.* /e /nfl /ndl
-robocopy "%harderCfgPath%" "%targetPath%" *.* /e /nfl /ndl
+robocopy "%expertCfgPath%" "%targetPath%" *.* /e /nfl /ndl
 
 rem If server.properties exists, update server config
 IF EXIST server.properties (move "%targetPath%\server.properties" .\)
