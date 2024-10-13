@@ -1,16 +1,19 @@
-// Solar Panels
-
+/**
+ * Solar Flux mod script.
+ * 
+ * Adds recipes for:
+ *  Solar Flux Solars
+ *  Photovoltaic Cells
+ *  Sunnarium
+ * Does not add recipes for:
+ *  Sculk Solars
+ *  Neutronium & Infinity Solars
+ */
 ServerEvents.recipes(event => {
 
-    // Recipes have already been disabled in the SolarFlux config
-
-    //
-    // Solar Panel Recipes
-    //
-
-    // T1
+    // T1 (No photovoltaic cell)
     event.shaped(
-        'solarflux:sp_1', [
+        '2x solarflux:sp_1', [
             'MMM',
             'WWW',
             'SCS'
@@ -21,31 +24,58 @@ ServerEvents.recipes(event => {
             C: 'enderio:conductive_conduit'
         }
     )
+
+    //T2 (Mirror instead of photovoltaic cell)
+    event.shaped(
+        '2x solarflux:sp_2', [
+            'SCS',
+            'WBW',
+            'PEP'
+        ], {
+            S: 'solarflux:sp_1',
+            C: 'gtceu:tempered_glass',
+            W: 'gtceu:tin_single_cable',
+            B: 'minecraft:redstone_block',
+            P: 'gtceu:cupronickel_plate',
+            E: 'enderio:energetic_conduit'
+        }
+    )
     
     // All the other panels follow a pattern until 7
     var solarCrafting = [
-        [2, 'gtceu:tin_single_cable', 'minecraft:redstone_block', 'gtceu:cupronickel_plate', 'enderio:energetic_conduit', 1, 1],
-        [3, 'gtceu:electrical_steel_plate', 'gtceu:conductive_alloy_block', 'gtceu:electrical_steel_gear', 'enderio:vibrant_conduit', 1, 1],
-        [4, 'gtceu:microversium_ingot', 'gtceu:end_steel_block', 'gtceu:microversium_ingot', 'enderio:endsteel_conduit', 2, 2],
-        [5, 'gtceu:lumium_plate', 'gtceu:sunnarium_dust', 'gtceu:lumium_plate', 'enderio:lumium_conduit', 4, 3],
-        [6, 'gtceu:signalum_plate', 'gtceu:enriched_sunnarium_dust', 'gtceu:signalum_plate', 'enderio:signalum_conduit', 4, 4]
+        ['gtceu:electrical_steel_plate', 'gtceu:conductive_alloy_block', 'gtceu:electrical_steel_gear', 'enderio:vibrant_conduit'],
+        ['gtceu:microversium_ingot', 'gtceu:end_steel_block', 'gtceu:microversium_ingot', 'enderio:endsteel_conduit'],
+        ['gtceu:lumium_plate', 'gtceu:sunnarium_dust', 'gtceu:lumium_plate', 'enderio:lumium_conduit'],
+        ['gtceu:signalum_plate', 'gtceu:enriched_sunnarium_dust', 'gtceu:signalum_plate', 'enderio:signalum_conduit']
     ]
     
-    solarCrafting.forEach(solar => {
+    solarCrafting.forEach((ingredients, photovoltaic_cell_index) => {
         event.shaped(
-            solar[5] + 'x solarflux:sp_' + solar[0], [
+            '2x solarflux:sp_' + (photovoltaic_cell_index+3), [
                 'SCS',
                 'WBW',
                 'PEP'
             ], {
-                S: 'solarflux:sp_' + (solar[0] - 1),
-                C: 'solarflux:photovoltaic_cell_' + solar[6],
-                W: solar[1],
-                B: solar[2],
-                P: solar[3],
-                E: solar[4]
+                S: 'solarflux:sp_' + (photovoltaic_cell_index+2),
+                C: 'solarflux:photovoltaic_cell_' + (photovoltaic_cell_index+1),
+                W: ingredients[0],
+                B: ingredients[1],
+                P: ingredients[2],
+                E: ingredients[3]
             }
         )
+        event.recipes.gtceu.assembler('sp_' + (photovoltaic_cell_index+3))
+            .itemInputs([
+                '2x solarflux:sp_' + (photovoltaic_cell_index+2),
+                'solarflux:photovoltaic_cell_' + (photovoltaic_cell_index+1),
+                Item.of(ingredients[0], 2),
+                Item.of(ingredients[1], 1),
+                Item.of(ingredients[2], 2),
+                Item.of(ingredients[3], 1)
+            ])
+            .itemOutputs('2x solarflux:sp_' + (photovoltaic_cell_index+3))
+            .duration(2400)
+            .EUt(2* Math.pow(4, photovoltaic_cell_index))
     })
 
     // High tier solars
@@ -54,7 +84,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler('sp_7')
     .itemInputs('2x solarflux:sp_6', '3x solarflux:photovoltaic_cell_5', '2x gtceu:osmium_plate', 'enderio:signalum_conduit')
     .inputFluids('gtceu:signalum 1296')
-    .itemOutputs('4x solarflux:sp_7')
+    .itemOutputs('2x solarflux:sp_7')
     .duration(2400)
     .EUt(7680)
 
@@ -62,16 +92,16 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('sp_8')
     .itemInputs('2x solarflux:sp_7', '3x solarflux:photovoltaic_cell_6', '2x gtceu:osmiridium_plate', 'enderio:enderium_conduit')
     .inputFluids('gtceu:enderium 1296')
-    .itemOutputs('4x solarflux:sp_8')
+    .itemOutputs('2x solarflux:sp_8')
     ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('solarflux:sp_7').EUt(480).duration(1200))
     .duration(4800)
     .EUt(30720)
 
     //
-    // Photo Cell Recipes
+    // Photovoltaic Cell Recipes
     //
 
-    // Similar thing with the photo cells, cells 2-6 follow a pattern (1 uses mirror)
+    // Similar thing with the photovoltaic cells, cells 2-6 follow a pattern (1 uses mirror)
 
     // Mirror
     event.shaped(
@@ -85,7 +115,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // T1
+    // Photovoltaic Cell T1
     event.shaped(
         '6x solarflux:photovoltaic_cell_1', [
             'LLL',
@@ -98,7 +128,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // T2-6
+    // Photovoltaic Cells T2-6
     var cellCrafting = [
         [2, 'enderio:photovoltaic_plate', 'gtceu:battery_alloy_plate'],
         [3, 'minecraft:ender_pearl' /* Temporary, TODO: add lens as type of ender pearl material */, 'gtceu:annealed_copper_plate'],
@@ -121,7 +151,8 @@ ServerEvents.recipes(event => {
         )
     })
 
-    //Sunnarium
+
+    // Sunnarium
     event.shaped(
         '3x gtceu:sunnarium_dust', [
             'ABA',
@@ -145,9 +176,11 @@ ServerEvents.recipes(event => {
         .itemOutputs('2x gtceu:sunnarium_dust')
         .duration(4000)
         .EUt(4000);
+
     event.remove({ id: 'gtceu:macerator/macerate_sunnarium_plate'})
 
-    //Enriched Sunnarium
+
+    // Enriched Sunnarium
     event.shaped(
         '4x gtceu:enriched_sunnarium_dust', [
             'ABA',
@@ -165,6 +198,46 @@ ServerEvents.recipes(event => {
         .itemOutputs('6x gtceu:enriched_sunnarium_dust')
         .duration(2000)
         .EUt(16000);
+
     event.remove({ id: 'gtceu:macerator/macerate_enriched_sunnarium_plate'})
     event.remove({ id: 'gtceu:macerator/macerate_dense_enriched_sunnarium_plate'})
+})
+
+
+/* Gregtech Solar conversion/reversion */
+ServerEvents.recipes(event => {
+    event.remove({ id: /gtceu:shaped\/solar_panel_/ })
+
+    // Basic conversion & reversion
+    event.shapeless('2x gtceu:solar_panel', 'solarflux:sp_2').id('gtceu:solar_panel_basic_conversion')
+    event.shapeless('solarflux:sp_2', '2x gtceu:solar_panel').id('gtceu:solar_panel_basic_reversion')
+
+    // Generic conversion & reversion (Note the switch for Sculk solars)
+    for (let index = 0; index <= 8; index++) {
+        let tiername = TIER_ID_MAPPING[index].toLowerCase();
+        let solarFluxPanel;
+        if(index <= 5) {
+            solarFluxPanel = `solarflux:sp_${index+3}`;
+        } else {
+            switch (index) {
+                case 6:
+                    solarFluxPanel = 'solarflux:sp_custom_bathyal'
+                    break;
+                case 7:
+                    solarFluxPanel = 'solarflux:sp_custom_abyssal'
+                    break;
+                case 8:
+                    solarFluxPanel = 'solarflux:sp_custom_hadal'
+                    break;
+                default:
+                    break;
+            }
+        }
+        event.shapeless(`gtceu:${tiername}_solar_panel`, solarFluxPanel).id(`gtceu:solar_panel_${tiername}_conversion`)
+        event.shapeless(solarFluxPanel, `gtceu:${tiername}_solar_panel`).id(`gtceu:solar_panel_${tiername}_reversion`)
+    }
+    
+    // Neutronium conversion & reversion
+    event.shapeless('5x gtceu:uv_solar_panel', 'solarflux:sp_custom_neutronium').id('gtceu:solar_panel_uv_conversion_neutronium')
+    event.shapeless('solarflux:sp_custom_neutronium', '5x gtceu:uv_solar_panel').id('gtceu:solar_panel_uv_reversion_neutronium')
 })
