@@ -44,9 +44,10 @@ Highlights include:
 Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 
 - Disabling RF -> EU conversion, making GT power generation required
-- Removing EnderIO and LaserIO's item and fluid transportation options
-- Bringing back GT5u machine explosions
-- Gregtech Pollution and hazards
+- EnderIO Conduits are removed
+- LaserIO is disabled
+- GT5u-style machine explosions
+- Gregtech Pollution and Hazards
 - Various other nerfs
 
 ## Installation:
