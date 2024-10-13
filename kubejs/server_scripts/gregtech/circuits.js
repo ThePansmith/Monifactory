@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
 
     // WIP: Matter Circuits
     event.recipes.gtceu.circuit_assembler('matter_circuit_board')
-        .itemInputs('16x gtceu:omnium_plate', '32x gtceu:activated_netherite_foil', '32x gtceu:crystal_matrix_foil', '#gtceu:circuits/zpm', 'gtceu:luv_emitter', 
+        .itemInputs('16x gtceu:omnium_plate', '32x gtceu:activated_netherite_foil', '32x gtceu:crystal_matrix_foil', '#gtceu:circuits/luv', 'gtceu:iv_emitter', 
             '8x gtceu:omnic_acid_dust')
         .inputFluids('minecraft:water 500')
         .itemOutputs('16x kubejs:matter_circuit_board')
@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
 
     // WIP: Dimensional Circuits
     event.recipes.gtceu.circuit_assembler('dimensional_circuit_board')
-        .itemInputs('16x kubejs:matter_circuit_board', '32x gtceu:holmium_foil', '#gtceu:circuits/uv', 'gtceu:zpm_field_generator', 
+        .itemInputs('16x kubejs:matter_circuit_board', '32x gtceu:holmium_foil', '#gtceu:circuits/zpm', 'gtceu:luv_field_generator', 
             '8x gtceu:nether_star_lens')
         .inputFluids('gtceu:omnium 288')
         .itemOutputs('16x kubejs:dimensional_circuit_board')
@@ -258,7 +258,7 @@ ServerEvents.recipes(event => {
     // Monic Circuits
     event.recipes.gtceu.circuit_assembler('monic_circuit_board')
         .itemInputs('16x kubejs:dimensional_circuit_board', '16x gtceu:activated_netherite_plate', '8x gtceu:holmium_plate', 
-            '#gtceu:circuits/uhv', 'gtceu:uv_field_generator', '4x kubejs:quasi_stable_neutron_star')
+            '#gtceu:circuits/uv', 'gtceu:zpm_field_generator', '4x kubejs:quasi_stable_neutron_star')
         .inputFluids('gtceu:omnium 576')
         .itemOutputs('16x kubejs:monic_circuit_board')
         .duration(1200)
