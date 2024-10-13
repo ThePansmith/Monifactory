@@ -1,7 +1,7 @@
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 
 ItemEvents.tooltip(tooltip => {
-    //Microminers
+    // Microminers
     function microminer_tooltip(tier) {
         tooltip.add(`kubejs:microminer_t${tier}`, Text.translatable(`item.kubejs.microminer_t${tier}.desc`))
     }
@@ -22,22 +22,22 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('item.kubejs.pristine_matter.desc'))
     })
 
-    //Microminer Components
+    // Microminer Components
     tooltip.add('kubejs:universal_navigator', '§9See You Later, navigator!')
 
-    //Endgame Items
+    // Endgame Items
     tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
 
-    //DML Data Model
+    // DML Data Model
     tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
     tooltip.add('hostilenetworks:data_model', '§7Upgrades when used in the §3Simulation Chamber')
     
-    //DML Matters
+    // DML Matters
     tooltip.add('hostilenetworks:overworld_prediction', '§7Experience per item: 10')
     tooltip.add('hostilenetworks:nether_prediction', '§7Experience per item: 20')
     tooltip.add('hostilenetworks:end_prediction', '§7Experience per item: 25')
 
-    //Conduits
+    // Conduits
     tooltip.add('enderio:conductive_conduit', '§7Max Output 512 RF/t')
     tooltip.add('enderio:energetic_conduit', '§7Max Output 2,048 RF/t')
     tooltip.add('enderio:vibrant_conduit', '§7Max Output 8,192 RF/t')
@@ -95,7 +95,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
 
-    //Parallel multiblocks
+    // Parallel multiblocks
     const parallelMultis = [
         'simulation_supercomputer',
         'loot_superfabricator',
@@ -123,18 +123,18 @@ ItemEvents.tooltip(tooltip => {
     })
 
 
-    //Parallel hatches
+    // Parallel hatches
     tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
-    tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add('gtceu:basic_tape', 'Useful to wrap up Crates for transport instead')
+    tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
+    tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
 
-    //Sophisticated Storage
+    // Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
     tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
-    tooltip.add('functionalstorage:storage_controller', 'Previously known as a Storage Controller')
-    tooltip.add('functionalstorage:framed_storage_controller', 'Previously known as a Framed Storage Controller')
+    tooltip.add('functionalstorage:storage_controller', '§7Previously known as a Storage Controller')
+    tooltip.add('functionalstorage:framed_storage_controller', '§7Previously known as a Framed Storage Controller')
 
     // AE2
     tooltip.add('ae2:facade', Text.gray('Crafted with Cable Anchors'))
@@ -145,15 +145,17 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:infinity_ingot', Text.darkGray('The fury of the universe in the palm of your hand.'))
     tooltip.add('gtceu:monium_ingot', Text.darkGray('The serenity of the universe in the palm of your hand.'))
     tooltip.add('extendedcrafting:the_ultimate_catalyst', Text.darkGray("I'm the real ultimate catalyst..."))
-    tooltip.add('extendedcrafting:auto_flux_crafter',("Uses large amounts of energy to convert Sculk into Sculk Cores."))
-    tooltip.add('extendedcrafting:flux_alternator', ("Provides Energy to the Sculk Charger, from up to 3 blocks away."))
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
-    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table'], ['Cannot be inserted into!', 'Put them in an inventory atop the table instead.'])
-    tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
-    tooltip.add('gtceu:terminal', 'Can autobuild multiblocks by shift-rightclicking a controller.')
+
+    tooltip.add('extendedcrafting:auto_flux_crafter',("§7Uses large amounts of energy to convert Sculk into Sculk Cores."))
+    tooltip.add('extendedcrafting:flux_alternator', ("§7Provides Energy to the Sculk Charger, from up to 3 blocks away."))
+    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table'], ['§7Cannot be inserted into!', '§7Put them in an inventory atop the table instead.'])
+    
+    tooltip.add('kubejs:excitationcoil', '§7Used for Crafting.')
+    tooltip.add('gtceu:terminal', '§7Can autobuild multiblocks by shift-right-clicking a controller.')
 
 
-    // NuclearCraft tooltips
+    // NuclearCraft
     tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
     tooltip.add('nuclearcraft:tough_alloy_ingot', '§eLiFeB');
     tooltip.add('nuclearcraft:ferroboron_ingot', '§eFeB');
@@ -180,11 +182,32 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('item.kubejs.infinity_dust_block.tooltip'))
     })
 
-    let benches = ['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'];
-    benches.forEach(bench => {
-        tooltip.add(bench, ['Recipes can also be performed in the §3Stonecutter§f,', 'which can be automated with §bAE2§f\'s §3Molecular Assemblers§f.'])
-    })
+    // Macerator byproduct warning
+    tooltip.add(['gtceu:lv_macerator', 'gtceu:mv_macerator'], '§4You must use a HV-tier macerator or higher for byproducts.')
 
+    // Wooden pipe, tank warning
+    tooltip.add([
+        'gtceu:wood_small_fluid_pipe',
+        'gtceu:treated_wood_small_fluid_pipe',
+        'gtceu:wood_normal_fluid_pipe',
+        'gtceu:treated_wood_normal_fluid_pipe',
+        'gtceu:wood_large_fluid_pipe',
+        'gtceu:treated_wood_large_fluid_pipe',
+        'gtceu:wooden_multiblock_tank'
+    ], '§4Can\'t hold Steam or other gases!')
+
+    // Chipped workbenches
+    tooltip.add([
+        'chipped:botanist_workbench',
+        'chipped:glassblower',
+        'chipped:carpenters_table',
+        'chipped:loom_table',
+        'chipped:mason_table',
+        'chipped:alchemy_bench',
+        'chipped:tinkering_table'
+    ], '§7Recipes can also be performed in the §3Stonecutter§7,\nwhich can be automated with §bAE2§7\'s §3Molecular Assemblers§7.')
+
+    // Tempad
     if (Platform.isLoaded('tempad')) {
         tooltip.add('tempad:tempad', '§6Uses Monipennies as fuel');
     }
