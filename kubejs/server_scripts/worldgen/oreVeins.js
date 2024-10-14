@@ -229,10 +229,16 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.8)
         vein.discardChanceOnAirExposure(0.3)
     })
-
 })
 
 // Remove Naquadah veins
 GTCEuServerEvents.oreVeins(event => {
     event.remove("gtceu:naquadah_vein") 
 })  
+
+// Make End Chromite veins more common
+GTCEuServerEvents.oreVeins(event => {
+    event.modify("gtceu:magnetite_vein_end", vein => {
+        vein.weight(50)
+    })
+})
