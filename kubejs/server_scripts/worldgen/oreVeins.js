@@ -19,6 +19,10 @@ GTCEuServerEvents.oreVeins(event => {
                 .layer(l => l.weight(3).mat(GTMaterials.Uraninite).size(2, 4))
             )
         )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.Uraninite)
+			.placement("above")
+		)
     })
 
     event.add("kubejs:overworld/tetrahedrite", vein => {
@@ -36,6 +40,10 @@ GTCEuServerEvents.oreVeins(event => {
                 .layer(l => l.weight(1).mat(GTMaterials.Stibnite).size(1, 4))
             )
         )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.Tetrahedrite)
+			.placement("above")
+		)
     })
 	
 	// Moon veins
@@ -56,8 +64,6 @@ GTCEuServerEvents.oreVeins(event => {
 		vein.surfaceIndicatorGenerator(indicator => indicator
 			.surfaceRock(GTMaterials.Diamond)
 			.placement("above")
-			.density(0.4)
-			.radius(5)
 		)
     })	
 	
@@ -79,8 +85,6 @@ GTCEuServerEvents.oreVeins(event => {
 		vein.surfaceIndicatorGenerator(indicator => indicator
 			.surfaceRock(GTMaterials.Gold)
 			.placement("above")
-			.density(0.4)
-			.radius(5)
 		)
     })
 
@@ -104,6 +108,10 @@ GTCEuServerEvents.oreVeins(event => {
 			.edgeRoundoffBegin(10)
 			.maxEdgeRoundoff(0.2)
 		)
+        vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.Pyrolusite)
+			.placement("above")
+		)
     })	
 	
     event.add("kubejs:luna/molybdenum", vein => {
@@ -125,6 +133,10 @@ GTCEuServerEvents.oreVeins(event => {
 			.edgeRoundoffBegin(10)
 			.maxEdgeRoundoff(0.2)
         )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.Molybdenite)
+			.placement("above")
+		)
     })	
 	
     event.add("kubejs:luna/quartz", vein => {
@@ -145,8 +157,6 @@ GTCEuServerEvents.oreVeins(event => {
 		vein.surfaceIndicatorGenerator(indicator => indicator
 			.surfaceRock(GTMaterials.NetherQuartz)
 			.placement("above")
-			.density(0.4)
-			.radius(5)
 		)
     })
 
@@ -168,8 +178,6 @@ GTCEuServerEvents.oreVeins(event => {
 		vein.surfaceIndicatorGenerator(indicator => indicator
 			.surfaceRock(GTMaterials.Ilmenite)
 			.placement("above")
-			.density(0.4)
-			.radius(5)
 		)
     })	
 	
@@ -190,8 +198,6 @@ GTCEuServerEvents.oreVeins(event => {
 		vein.surfaceIndicatorGenerator(indicator => indicator
 			.surfaceRock(GTMaterials.Scheelite)
 			.placement("above")
-			.density(0.4)
-			.radius(5)
 		)
     })	
 	
@@ -213,8 +219,6 @@ GTCEuServerEvents.oreVeins(event => {
 		vein.surfaceIndicatorGenerator(indicator => indicator
 			.surfaceRock(GTMaterials.Tetrahedrite)
 			.placement("above")
-			.density(0.4)
-			.radius(5)
 		)
     })
 
@@ -233,6 +237,10 @@ GTCEuServerEvents.oreVeins(event => {
                 .layer(l => l.weight(2).mat(GTMaterials.Bastnasite).size(2, 4))
             )
         )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GCYRMaterials.Fluorite)
+			.placement("above")
+		)
 	})
 })
 
