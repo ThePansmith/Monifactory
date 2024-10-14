@@ -2489,7 +2489,7 @@
 				""
 				"It is used to automate the spawning and capture of mobs. As with all &bEnderIO&r machines, it requires a capacitor, with a higher tier capacitor increasing the range, spawning rate, and capture rate."
 				""
-				"In order to set a &6Powered Spawner&r to the mob type that you want, you must combine it with a &6Broken Spawner&r, set to your specified mob type, in an anvil. "
+				"In order to create a &6Powered Spawner&r for the mob type that you want, you must craft it using a &6Broken Spawner&r for that specific mob type. Once created, the mob type cannot be changed. "
 				""
 				"This &6Broken Spawner&r is set by putting a &6Broken Spawner&r, of any mob type, and a &6Soul Vial&r, of the specified mob, into a &aSoul Binder&r, with a few dashes of &aXP&r. Broken Spawners can be obtained by breaking a mob spawner. &eTIP: Spawners are all over the Lost Cities!&r"
 				""
