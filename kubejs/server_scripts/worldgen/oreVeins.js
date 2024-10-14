@@ -45,6 +45,28 @@ GTCEuServerEvents.oreVeins(event => {
 			.placement("above")
 		)
     })
+
+    // Nether veins
+    event.add("kubejs:nether/laurite", vein => {
+        vein.weight(10)
+        vein.clusterSize(40)
+        vein.density(0.8)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("netherrack")
+        vein.dimensions("minecraft:the_nether")
+        vein.heightRangeUniform(40, 80)
+        vein.veinedVeinGenerator(generator => generator
+            .oreBlock(GTMaterials.get('laurite'), 1)
+            .rareBlock(GTMaterials.get('cuprorhodsite'), 1)
+            .rareBlockChance(0.33)
+            .veininessThreshold(0.1)
+            .maxRichnessThreshold(0.3)
+            .minRichness(0.3)
+            .maxRichness(0.5)
+            .edgeRoundoffBegin(10)
+            .maxEdgeRoundoff(0.2)
+        )
+    })
 	
 	// Moon veins
     event.add("kubejs:luna/diamond", vein => {
