@@ -159,27 +159,6 @@ GTCEuServerEvents.oreVeins(event => {
 			.placement("above")
 		)
     })
-
-    event.add("kubejs:luna/rutile", vein => {
-        vein.weight(30)
-        vein.clusterSize(25)
-        vein.density(0.7)
-        vein.discardChanceOnAirExposure(0)
-        vein.layer("moon")
-        vein.dimensions("gcyr:luna")
-        vein.heightRangeUniform(40, 80)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(1).mat(GTMaterials.Aluminium).size(1, 1))
-                .layer(l => l.weight(6).mat(GTMaterials.Ilmenite).size(1, 4))
-				.layer(l => l.weight(3).mat(GTMaterials.Bauxite).size(1, 3))
-            )
-        )
-		vein.surfaceIndicatorGenerator(indicator => indicator
-			.surfaceRock(GTMaterials.Ilmenite)
-			.placement("above")
-		)
-    })	
 	
 	event.add("kubejs:luna/tungsten", vein => {
         vein.weight(45)
