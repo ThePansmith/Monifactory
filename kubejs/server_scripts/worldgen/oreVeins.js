@@ -1,29 +1,10 @@
-/*
-GTCEuServerEvents.oreVeins(event => {
-  event.add("kubejs:custom_vein", vein => {
-    // Basic vein generation properties
-    vein.weight(200) // [*] 
-    vein.clusterSize(40) // [*] 
-    vein.density(0.25) // [*] 
-    vein.discardChanceOnAirExposure(0) // 
-
-    // Define where the vein can generate
-    vein.layer("deepslate") // [*] 
-    vein.dimensions("minecraft:overworld") // 
-    vein.biomes("#minecraft:is_overworld") // 
-
-    // Define a height range:
-    // You must choose EXACTLY ONE of these options! [*]
-    vein.heightRangeUniform(-60, 20)
-    // Define the vein's generator:
-    vein.generator(/* ... *//*) // [*] 
-// Add one or more type of surface indicator to the vein:
-vein.addIndicator(/* ... *//*) 
-})
-})
-*/
+/**
+ * Registry for Gregtech Modern-style ore veins.
+ */
+const GCYRMaterials = Java.loadClass("argent_matter.gcyr.common.data.GCYRMaterials")
 
 GTCEuServerEvents.oreVeins(event => {
+    // Overworld veins
     event.add("kubejs:overworld/uraninite", vein => {
         vein.weight(30)
         vein.clusterSize(30)
@@ -31,7 +12,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
-        vein.biomes("#minecraft:is_overworld")
         vein.heightRangeUniform(30, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -48,7 +28,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
-        vein.biomes("#minecraft:is_overworld")
         vein.heightRangeUniform(30, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -67,7 +46,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
-        vein.biomes("gcyr:moon")
         vein.heightRangeUniform(-40, 20)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -90,7 +68,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
-        vein.biomes("gcyr:moon")
         vein.heightRangeUniform(10, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -114,7 +91,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
-        vein.biomes("gcyr:moon")
         vein.heightRangeUniform(20, 100)
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.Grossular, 3)
@@ -137,7 +113,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
-        vein.biomes("gcyr:moon")
         vein.heightRangeUniform(20, 100)
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.Wulfenite, 3)
@@ -159,7 +134,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
-        vein.biomes("gcyr:moon")
         vein.heightRangeUniform(40, 120)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -176,14 +150,13 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })
 
-    event.add("kubejs:luna/rutil", vein => {
+    event.add("kubejs:luna/rutile", vein => {
         vein.weight(30)
         vein.clusterSize(25)
         vein.density(0.7)
         vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
-        vein.biomes("gcyr:moon")
         vein.heightRangeUniform(40, 80)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -207,7 +180,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
-        vein.biomes("gcyr:moon")
         vein.heightRangeUniform(-40, 20)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -230,7 +202,6 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
-        vein.biomes("gcyr:moon")
         vein.heightRangeUniform(40, 120)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -247,11 +218,25 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })
 
+    event.add("kubejs:luna/fluorite", vein => {
+        vein.weight(40)
+        vein.clusterSize(25)
+        vein.density(0.7)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("moon")
+        vein.dimensions("gcyr:luna")
+        vein.heightRangeUniform(-40, 50)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(5).mat(GCYRMaterials.Fluorite).size(1, 1))
+                .layer(l => l.weight(3).mat(GTMaterials.Sphalerite).size(2, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.Bastnasite).size(2, 4))
+            )
+        )
+	})
 })
 
-
-// Remove ore indicators, increase density
-
+// Increase vein density
 GTCEuServerEvents.oreVeins(event => {
     event.modifyAll((id, vein) => {
         vein.density(0.8)
@@ -260,7 +245,7 @@ GTCEuServerEvents.oreVeins(event => {
 
 })
 
-//Remove Naquadah veins
+// Remove Naquadah veins
 GTCEuServerEvents.oreVeins(event => {
     event.remove("gtceu:naquadah_vein") 
 })  
