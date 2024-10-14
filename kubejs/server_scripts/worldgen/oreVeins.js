@@ -54,7 +54,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.discardChanceOnAirExposure(0)
         vein.layer("netherrack")
         vein.dimensions("minecraft:the_nether")
-        vein.heightRangeUniform(40, 80)
+        vein.heightRangeUniform(80, 120)
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.get('laurite'), 1)
             .rareBlock(GTMaterials.get('cuprorhodsite'), 1)
@@ -66,6 +66,10 @@ GTCEuServerEvents.oreVeins(event => {
             .edgeRoundoffBegin(10)
             .maxEdgeRoundoff(0.2)
         )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+			.surfaceRock(GTMaterials.get('cuprorhodsite'))
+			.placement("below")
+		)
     })
 	
 	// Moon veins
