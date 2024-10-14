@@ -8,8 +8,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:overworld/uraninite", vein => {
         vein.weight(30)
         vein.clusterSize(30)
-        vein.density(0.8)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
         vein.heightRangeUniform(30, 60)
@@ -28,8 +26,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:overworld/tetrahedrite", vein => {
         vein.weight(50)
         vein.clusterSize(40)
-        vein.density(0.8)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
         vein.heightRangeUniform(30, 60)
@@ -50,8 +46,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:nether/laurite", vein => {
         vein.weight(10)
         vein.clusterSize(40)
-        vein.density(0.8)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("netherrack")
         vein.dimensions("minecraft:the_nether")
         vein.heightRangeUniform(80, 120)
@@ -76,8 +70,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:luna/diamond", vein => {
         vein.weight(20)
         vein.clusterSize(25)
-        vein.density(0.7)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
         vein.heightRangeUniform(-40, 20)
@@ -96,8 +88,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:luna/gold", vein => {
         vein.weight(40)
         vein.clusterSize(25)
-        vein.density(0.7)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
         vein.heightRangeUniform(10, 60)
@@ -117,8 +107,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:luna/manganese", vein => {
         vein.weight(30)
         vein.clusterSize(70)
-        vein.density(0.7)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
         vein.heightRangeUniform(20, 100)
@@ -143,8 +131,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:luna/molybdenum", vein => {
         vein.weight(20)
         vein.clusterSize(80)
-        vein.density(0.6)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
         vein.heightRangeUniform(20, 100)
@@ -168,8 +154,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:luna/quartz", vein => {
         vein.weight(40)
         vein.clusterSize(45)
-        vein.density(0.7)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
         vein.heightRangeUniform(40, 120)
@@ -189,8 +173,6 @@ GTCEuServerEvents.oreVeins(event => {
 	event.add("kubejs:luna/tungsten", vein => {
         vein.weight(45)
         vein.clusterSize(25)
-        vein.density(0.7)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
         vein.heightRangeUniform(-40, 20)
@@ -209,8 +191,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:luna/tetrahedrite", vein => {
         vein.weight(30)
         vein.clusterSize(30)
-        vein.density(0.7)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
         vein.heightRangeUniform(40, 120)
@@ -230,8 +210,6 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("kubejs:luna/fluorite", vein => {
         vein.weight(40)
         vein.clusterSize(25)
-        vein.density(0.7)
-        vein.discardChanceOnAirExposure(0)
         vein.layer("moon")
         vein.dimensions("gcyr:luna")
         vein.heightRangeUniform(-40, 50)
