@@ -402,7 +402,7 @@ StartupEvents.registry('item', event => {
 
     Unit('matter')
     Circuit('matter', 'processor', "zpm")
-    Circuit('matter', 'processor_assembly', "uh")
+    Circuit('matter', 'processor_assembly', "uv")
     Circuit('matter', 'processor_computer', "uhv")
     Mainframe('matter', "uev")
 
