@@ -83,7 +83,7 @@ recipes:
 
   # Whether to nerf machine controller recipes.
   # Default: false
-  hardMultiRecipes: true
+  hardMultiRecipes: false
 
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
