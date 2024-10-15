@@ -792,7 +792,7 @@
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
-			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
+			description: ["&9Gregtech Axes are able to veinmine an entire tree at once!"]
 			id: "527F56DFAD5E20EC"
 			tasks: [{
 				id: "254A555916313F70"
