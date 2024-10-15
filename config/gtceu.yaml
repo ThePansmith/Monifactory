@@ -81,6 +81,10 @@ recipes:
   # Default: false
   harderCircuitRecipes: false
 
+  # Whether to nerf machine controller recipes.
+  # Default: false
+  hardMultiRecipes: true
+
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
   enchantedTools: true
@@ -253,6 +257,14 @@ machines:
   # Default: 50
   ldFluidPipeMinDistance: 50
 
+  # Whether non owners can open a machine gui
+  # Default: false
+  machineOwnerGUI: true
+
+  # Whether non owners can break a machine
+  # Default: false
+  machineOwnerBreak: true
+
   # If High Tier (>UV-tier) GT content should be registered.
   # Items and Machines enabled with this config will have missing recipes by default.
   # This is intended for modpack developers only, and is not playable without custom tweaks or addons.
@@ -273,6 +285,10 @@ machines:
   # When enabled it, Dual Hatch will can used to assemble line and so on.
   # Need restart Minecraft to apply.
   enableMoreDualHatchAbility: false
+
+  # Default maximum parallel of steam multiblocks
+  # Default: 8
+  steamMultiParallelAmount: 8
 
   # Small Steam Boiler Options
   smallBoilers:
