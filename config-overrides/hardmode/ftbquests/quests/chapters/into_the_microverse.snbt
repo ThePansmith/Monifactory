@@ -918,7 +918,7 @@
 					type: "item"
 				}
 				{
-					count: 15L
+					count: 16L
 					id: "17E44DB94862D5B7"
 					item: "kubejs:microverse_casing"
 					type: "item"
