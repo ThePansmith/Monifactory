@@ -59,6 +59,7 @@ StartupEvents.registry("block", event => {
         .resistance(3)
         .hardness(3)
         .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
         .requiresTool(true)
         .defaultCutout();
 
@@ -68,6 +69,7 @@ StartupEvents.registry("block", event => {
         .resistance(4)
         .hardness(4)
         .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
         .requiresTool(true)
         .defaultCutout();
 
@@ -77,6 +79,7 @@ StartupEvents.registry("block", event => {
         .resistance(5)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
         .requiresTool(true)
         .defaultCutout();
 
@@ -86,6 +89,7 @@ StartupEvents.registry("block", event => {
         .resistance(3)
         .hardness(3)
         .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
         .requiresTool(true)
         .defaultCutout();
 
@@ -95,6 +99,7 @@ StartupEvents.registry("block", event => {
         .resistance(4)
         .hardness(4)
         .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
         .requiresTool(true)
         .defaultCutout();
 
@@ -104,6 +109,7 @@ StartupEvents.registry("block", event => {
         .resistance(5)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
         .requiresTool(true)
         .defaultCutout();
 
@@ -111,25 +117,33 @@ StartupEvents.registry("block", event => {
         .displayName("Warp Core")
         .soundType('metal')
         .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe").requiresTool(true);
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
 
     event.create('warp_controller')
         .displayName("Warp Controller")
         .soundType('metal')
         .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe").requiresTool(true);
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
 
     event.create('universal_warp_core')
         .displayName("Universal Warp Core")
         .soundType('metal')
         .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe").requiresTool(true);
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
 
     event.create('universal_warp_controller')
         .displayName("Universal Warp Controller")
         .soundType('metal')
         .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe").requiresTool(true);
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
 
 
     // Dense Ores
@@ -212,7 +226,9 @@ StartupEvents.registry("block", event => {
         .displayName("Dark Steel Machine Hull")
         .soundType('metal')
         .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe").requiresTool(true);
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
 
     event.create('excitationcoil', 'cardinal')
         .displayName("Excitation Coil")
@@ -220,7 +236,9 @@ StartupEvents.registry("block", event => {
         .renderType('cutout')
         .box(3, 0, 3, 13, 1, 13)
         .box(4, 1, 4, 12, 9, 12)
-        .tag("mineable/pickaxe").requiresTool(true);
+        .tag("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
 
     event.create('cryococcus_fusion_coil')
         .displayName("Cryococcus Fusion Coil")
@@ -228,6 +246,7 @@ StartupEvents.registry("block", event => {
         .resistance(6)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
         .requiresTool(true)
 
     event.create('omnic_matrix_coil_block', 'gtceu:coil')
@@ -239,5 +258,6 @@ StartupEvents.registry("block", event => {
         .hardness(5)
         .requiresTool(true)
         .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
         .soundType('metal')
 });

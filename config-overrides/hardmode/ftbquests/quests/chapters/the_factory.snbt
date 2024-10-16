@@ -689,11 +689,18 @@
 			}]
 			shape: "hexagon"
 			subtitle: "Copper... Nickel... Cupronickel?"
-			tasks: [{
-				id: "708858A9BC1F9ABE"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "708858A9BC1F9ABE"
+					item: "gtceu:cupronickel_ingot"
+					type: "item"
+				}
+				{
+					id: "7ECBEB3D39F5DFD2"
+					item: "gtceu:invar_ingot"
+					type: "item"
+				}
+			]
 			title: "Cupronickel"
 			x: 2.5d
 			y: 2.0d

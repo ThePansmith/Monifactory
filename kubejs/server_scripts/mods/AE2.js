@@ -148,10 +148,10 @@ ServerEvents.recipes(event => {
         'CDC',
         'AAA'
     ], {
-        A: 'gtceu:stainless_steel_plate',
-        B: 'gtceu:hv_robot_arm',
-        C: '#gtceu:circuits/hv',
-        D: 'gtceu:hv_machine_hull',
+        A: 'gtceu:rhodium_plated_palladium_plate',
+        B: 'gtceu:luv_robot_arm',
+        C: '#gtceu:circuits/luv',
+        D: 'gtceu:luv_machine_hull',
     }
     ).id('kubejs:ae2/requster')
 

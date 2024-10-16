@@ -643,11 +643,18 @@
 			}]
 			shape: "hexagon"
 			subtitle: "Copper... Nickel... Cupronickel?"
-			tasks: [{
-				id: "708858A9BC1F9ABE"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "708858A9BC1F9ABE"
+					item: "gtceu:cupronickel_ingot"
+					type: "item"
+				}
+				{
+					id: "7ECBEB3D39F5DFD2"
+					item: "gtceu:invar_ingot"
+					type: "item"
+				}
+			]
 			title: "Cupronickel"
 			x: 2.5d
 			y: 2.0d
@@ -884,9 +891,11 @@
 			description: [
 				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
 				""
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
+				""
+				"&4Does not generate byproducts!&r You need an HV-tier macerator or higher to get some."
 			]
 			icon: "gtceu:steam_grinder"
 			id: "41C2E49E70D76330"
