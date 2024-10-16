@@ -588,7 +588,13 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt(480)
 
+    //Ender Shard
     event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl']).id('kubejs:ender_pearl')
+    event.recipes.gtceu.forge_hammer('kubejs:ender_pearl_shattering')
+        .itemInputs('minecraft:ender_pearl')
+        .itemOutputs('8x kubejs:ender_shard')
+        .duration(40)
+        .EUt(12)
 
     // Waterframes
     event.shaped(

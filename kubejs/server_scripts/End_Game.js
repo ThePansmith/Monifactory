@@ -129,6 +129,11 @@ ServerEvents.recipes(event => {
             P: 'gtceu:electrum_flux_plate'
         }
     ).id('redstone_arsenal:materials/flux_plating')
+    event.recipes.gtceu.omnic_forge('kubejs:flux_plating_assembly')
+        .itemInputs('redstone_arsenal:flux_gem', '4x gtceu:electrum_flux_plate')
+        .itemOutputs('redstone_arsenal:flux_plating')
+        .duration(60)
+        .EUt(7680)
 
 	// Vacuum Freezer
 	// kubejs Superconductor Wire
@@ -208,11 +213,16 @@ ServerEvents.recipes(event => {
             'BGB',
             'PBP'
         ], {
-            B: 'minecraft:diamond_block',
+            P: 'minecraft:diamond',
             G: 'gtceu:diamond_perfect',
-            P: 'gtceu:diamond_plate'
+            B: 'gtceu:diamond_screw'
         }
     ).id('kubejs:diamond_lattice')
+    event.recipes.gtceu.assembler('kubejs:diamond_lattice')
+        .itemInputs('gtceu:diamond_perfect', '2x gtceu:diamond_plate', '4x gtceu:diamond_screw')
+        .itemOutputs('kubejs:diamond_lattice')
+        .duration(100)
+        .EUt(491520)
 
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:crystal_matrix_ingot', [
