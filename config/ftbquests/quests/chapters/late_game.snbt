@@ -1274,7 +1274,7 @@
 				""
 				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Horns&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
+				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Tendrils&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1618,7 +1618,7 @@
 			description: [
 				"The source of &9Warden Hearts&r and the valuable &9Lair of The Warden Data&r."
 				""
-				"As a bonus, brings &9Sculk Catalysts, Warden Horns, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+				"As a bonus, brings &9Sculk Catalysts, Warden Tendrils, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
 			]
 			id: "5FE96C30454A0374"
 			rewards: [{
