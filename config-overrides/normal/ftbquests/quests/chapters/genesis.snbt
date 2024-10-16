@@ -686,7 +686,7 @@
 		{
 			dependencies: ["58566C7BF4C22D86"]
 			description: [
-				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
+				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
 				""
 				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
@@ -866,7 +866,7 @@
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
-			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
+			description: ["&9Gregtech Axes are able to veinmine an entire tree at once!"]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_axe"
