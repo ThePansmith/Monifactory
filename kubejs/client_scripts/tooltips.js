@@ -164,6 +164,26 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add(['gtceu:prospector.lv', 'gtceu:prospector.hv', 'gtceu:prospector.luv'], "§7Only shows ores in the immediate vicinity.\nIf you're looking for a specific ore, you may need to go exploring!")
 
+    // TelePastries
+    tooltip.addAdvanced(['telepastries:nether_cake'], (item, adv, text) => {
+            text.add(1, ('§6Teleports you to the Nether'))
+            text.add(2, ('§7Refill by right-clicking with 2 or more obsidian'))
+    })
+
+    tooltip.addAdvanced(['telepastries:overworld_cake'], (item, adv, text) => {
+        text.add(1, ('§6Teleports you to the Overworld'))
+        text.add(2, ('§7Refill by right-clicking with 2 or more vanilla saplings'))
+    })
+
+    tooltip.addAdvanced(['telepastries:end_cake'], (item, adv, text) => {
+            text.add(1, ('§6Teleports you to the End'))
+            text.add(2, ('§7Refill by right-clicking with 2 or more Eye of Ender'))
+    })
+    tooltip.addAdvanced(['telepastries:custom_cake'], (item, adv, text) => {
+            text.add(1, ('§6Teleports you to the Void World'))
+            text.add(2, ('§7Refill by right-clicking with 2 or more Pulsating Dust'))
+    })
+
 
     // NuclearCraft
     tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
