@@ -240,9 +240,15 @@ GTCEuServerEvents.oreVeins(event => {
     event.remove("gtceu:naquadah_vein") 
 })  
 
-// Make End Chromite veins more common
+
 GTCEuServerEvents.oreVeins(event => {
+    // Make End Chromite veins more common
     event.modify("gtceu:magnetite_vein_end", vein => {
         vein.weight(50)
+    })
+
+    // Make Arsenic 3x more likely to appear in its vein
+    event.modify("gtceu:copper_tin_vein", vein => {
+        vein.rareBlockChance(0.15)
     })
 })
