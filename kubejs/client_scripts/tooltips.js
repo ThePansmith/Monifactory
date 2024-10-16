@@ -127,6 +127,12 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
+    //Converters
+    tooltip.add(/^gtceu:.*a_energy_converter$/, "§7Cannot be extracted from in EU->FE mode!\nUse an FE buffer for this to push into.")
+    
+    // GT filters
+    tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red("Negation operator [!] is nonfunctional."))
+
     tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
     tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
 
@@ -139,6 +145,7 @@ ItemEvents.tooltip(tooltip => {
     // AE2
     tooltip.add('ae2:facade', Text.gray('Crafted with Cable Anchors'))
     tooltip.add('ae2:memory_card', Text.gray('Hold in offhand to set additional inputs on Multi P2Ps.'))
+    tooltip.add('ae2:creative_fluid_cell', Text.red('Cannot be made using Creative Tank data!\nAE2 devs will not fix a bug that allows this to make items as well.'))
 
     // Misc
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray('Gaze into the Abyss...'))
@@ -154,6 +161,8 @@ ItemEvents.tooltip(tooltip => {
     
     tooltip.add('kubejs:excitationcoil', '§7Used for Crafting.')
     tooltip.add('gtceu:terminal', '§7Can autobuild multiblocks by shift-right-clicking a controller.')
+
+    tooltip.add(['gtceu:prospector.lv', 'gtceu:prospector.hv', 'gtceu:prospector.luv'], "§7Only shows ores in the immediate vicinity.\nIf you're looking for a specific ore, you may need to go exploring!")
 
 
     // NuclearCraft
@@ -184,7 +193,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
     // Macerator byproduct warning
-    tooltip.add(['gtceu:lv_macerator', 'gtceu:mv_macerator'], '§4You must use a HV-tier macerator or higher for byproducts.')
+    tooltip.add(['gtceu:lp_steam_macerator', 'gtceu:hp_steam_macerator', 'gtceu:steam_grinder', 'gtceu:lv_macerator', 'gtceu:mv_macerator'], '§4You must use a HV-tier macerator or higher for byproducts.')
 
     // Wooden pipe, tank warning
     tooltip.add([

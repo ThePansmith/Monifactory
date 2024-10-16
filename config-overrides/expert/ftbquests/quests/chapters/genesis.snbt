@@ -1053,6 +1053,8 @@
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
 				""
+				"&4Does not generate byproducts!&r You need an HV-tier macerator or higher to get some."
+				""
 				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "gtceu:steam_grinder"
