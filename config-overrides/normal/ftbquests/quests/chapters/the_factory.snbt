@@ -1897,13 +1897,13 @@
 					type: "item"
 				}
 				{
-					count: 13L
+					count: 14L
 					id: "505B1290E3042129"
 					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
-					count: 9L
+					count: 8L
 					id: "5B5968BA75F69B32"
 					item: "gtceu:bronze_firebox_casing"
 					type: "item"
@@ -2007,6 +2007,128 @@
 			title: "&9Muting and Muffling"
 			x: 17.25d
 			y: 9.375d
+		}
+		{
+			dependencies: [
+				"6FB3E3D9CA0F4B30"
+				"29A487F0BC43AAF9"
+			]
+			description: [
+				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. This is useful when you have two machines running and both are unable to keep going because of a lack of power... let one finish then turn the other one back on with a second hit from the mallet."
+				""
+				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r now that you can."
+				""
+				"This quest accepts a &aSoft Mallet&r made from any material."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:rubber_mallet"
+				tag: {
+					Damage: 0
+					GT.Behaviours: { }
+					GT.Tool: {
+						AttackDamage: 0.0f
+						AttackSpeed: -2.4f
+						Damage: 0
+						MaxDamage: 128
+					}
+				}
+			}
+			id: "78B5D55A3560B98E"
+			rewards: [{
+				id: "16EF260235D12825"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Bonk!"
+			tasks: [{
+				id: "253D34B000F903DD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:wood_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:rubber_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polytetrafluoroethylene_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polyethylene_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polybenzimidazole_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+						]
+					}
+				}
+				title: "Any Soft Mallet"
+				type: "item"
+			}]
+			title: "Soft Mallet"
+			x: 1.0d
+			y: -2.0d
 		}
 	]
 	title: "The Factory"

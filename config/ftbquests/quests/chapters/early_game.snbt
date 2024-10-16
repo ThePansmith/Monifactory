@@ -722,7 +722,7 @@
 			description: [
 				"&6Chromium&r is used in the production of many alloys. &6Stainless Steel&r, &6Vanadiumsteel&r and &6Kanthal&r are the ones you will encounter soon. "
 				""
-				"It is primarily obtained by electrolyzing &6Ruby Dust&r. You will need a lot of this soon, so be sure to find a robust source of it."
+				"It is primarily obtained by electrolyzing &6Ruby Dust&r, although you can also mine some &6Chromite&r in The End. You will need a lot of this soon, so be sure to accumulate a lot of it."
 			]
 			id: "061904A6FEED5B66"
 			rewards: [{
@@ -1521,6 +1521,8 @@
 		{
 			dependencies: ["0C4E18B05F9E68DE"]
 			description: [
+				"&4Not yet implemented - quest is kept as-is for when the devs get around to it!&r"
+				""
 				"&2Ender Fluid Link Covers are GTCEu's Ender Tanks&r. Each Cover sends their fluids through a frequency defined by an &68-digit hexadecimal number&r (0-9, then A-F for each digit). That gives you &64.29 billion&r channels to work with! "
 				""
 				"Ender Fluid Link Covers work as long as their chunk is loaded - regardless of distance or dimension."
@@ -1705,7 +1707,7 @@
 				""
 				"Resonant Clathrates are made by melting &6Ender Pearls&r with a &3Fluid Extractor&r into &9Resonant Ender&r, then mixing that with &6Nether Quartz&r in an MV or better &3Chemical Reactor&r. Smelting this clathrate gives Pulsating Dust."
 				""
-				"With Resonant Clathrates now accessible, everything you need for crafting &6Pulsating Polymer Clay&r can be automated in a net-positive loop.&r Doing so is the first step in automation of &bHostile Neural Networks&r, which is &ea primary source of important materials for the rest of the pack&r."
+				"With Resonant Clathrates now accessible, everything you need for crafting &6Pulsating Prediction Matrix&r can be automated in a net-positive loop.&r Doing so is the first step in automation of &bHostile Neural Networks&r, which is &ea primary source of important materials for the rest of the pack&r."
 				""
 				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &bEMI&r and the Processing Lines Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
 			]
@@ -1946,7 +1948,7 @@
 		{
 			dependencies: ["73C1AB31431B5C11"]
 			description: [
-				"Holding one of these reveals &aTravel Anchors&r and &aTelepads&r in range."
+				"Holding one of these reveals &aTravel Anchors&r in range."
 				""
 				"Shift + right-click after aiming to warp to one, or point it anywhere to teleport forward a short distance (works through walls)."
 				""

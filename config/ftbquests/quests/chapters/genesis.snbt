@@ -29,6 +29,12 @@
 			x: -4.0d
 			y: 15.5d
 		}
+		{
+			id: "564D04B3CA37A1FF"
+			linked_quest: "2280472741683581"
+			x: 4.0d
+			y: 15.5d
+		}
 	]
 	quests: [
 		{
@@ -680,11 +686,11 @@
 		{
 			dependencies: ["58566C7BF4C22D86"]
 			description: [
-				"{monifactory.genesis.542F0090D8975D3C0.description0}"
+				"{monifactory.genesis.4FE53F31E68F4C1C.description0}"
 				""
-				"{monifactory.genesis.542F0090D8975D3C0.description1}"
+				"{monifactory.genesis.4FE53F31E68F4C1C.description1}"
 				""
-				"{monifactory.genesis.542F0090D8975D3C0.description2}"
+				"{monifactory.genesis.4FE53F31E68F4C1C.description2}"
 			]
 			icon: {
 				Count: 1
@@ -810,7 +816,7 @@
 					type: "item"
 				}
 			]
-			title: "{monifactory.genesis.542F0090D8975D3C0.title}"
+			title: "{monifactory.genesis.4FE53F31E68F4C1C.title}"
 			x: 0.0d
 			y: 5.5d
 		}
@@ -860,7 +866,7 @@
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
-			description: ["{monifactory.genesis.542F0090D8975D3C2.description0}"]
+			description: ["{monifactory.genesis.527F56DFAD5E20EC.description0}"]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_axe"
@@ -889,10 +895,10 @@
 						value: "^gtceu:.*_axe$"
 					}
 				}
-				title: "{monifactory.genesis.542F0090D8975D3C2.tasks0.title}"
+				title: "{monifactory.genesis.527F56DFAD5E20EC.254A555916313F70.title}"
 				type: "item"
 			}]
-			title: "{monifactory.genesis.542F0090D8975D3C2.title}"
+			title: "{monifactory.genesis.527F56DFAD5E20EC.title}"
 			x: 1.5d
 			y: 6.0d
 		}
@@ -1173,125 +1179,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["6FB3E3D9CA0F4B30"]
-			description: [
-				"{monifactory.genesis.4A696D4BA54429281.description0}"
-				""
-				"{monifactory.genesis.4A696D4BA54429281.description1}"
-				""
-				"{monifactory.genesis.4A696D4BA54429281.description2}"
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:rubber_mallet"
-				tag: {
-					Damage: 0
-					GT.Behaviours: { }
-					GT.Tool: {
-						AttackDamage: 0.0f
-						AttackSpeed: -2.4f
-						Damage: 0
-						MaxDamage: 128
-					}
-				}
-			}
-			id: "78B5D55A3560B98E"
-			rewards: [{
-				id: "16EF260235D12825"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "{monifactory.genesis.4A696D4BA54429281.subtitle}"
-			tasks: [{
-				id: "253D34B000F903DD"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:wood_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										AttackDamage: 0.0f
-										AttackSpeed: -2.4f
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:rubber_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:polytetrafluoroethylene_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:polyethylene_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										AttackDamage: 0.0f
-										AttackSpeed: -2.4f
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:polybenzimidazole_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										AttackDamage: 0.0f
-										AttackSpeed: -2.4f
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-						]
-					}
-				}
-				title: "{monifactory.genesis.4A696D4BA54429281.tasks0.title}"
-				type: "item"
-			}]
-			title: "{monifactory.genesis.4A696D4BA54429281.title}"
-			x: 4.25d
-			y: 5.5d
-		}
-		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"{monifactory.genesis.4A696D4BA54429282.description0}"
@@ -1488,6 +1375,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "Green=Input, Red=Output"
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
 				item: {
@@ -1561,11 +1449,11 @@
 		{
 			dependencies: ["2FA9404468E4BBD9"]
 			description: [
-				"{monifactory.genesis.4A696D4BA54429289.description0}"
+				"{monifactory.genesis.077AA27F26B7831F.description0}"
 				""
-				"{monifactory.genesis.4A696D4BA54429289.description1}"
+				"{monifactory.genesis.077AA27F26B7831F.description1}"
 				""
-				"{monifactory.genesis.4A696D4BA54429289.description2}"
+				"{monifactory.genesis.077AA27F26B7831F.description2}"
 			]
 			id: "077AA27F26B7831F"
 			rewards: [{
@@ -1579,9 +1467,9 @@
 				item: { Count: 4, id: "gtceu:lv_battery_hull" }
 				type: "item"
 			}]
-			title: "{monifactory.genesis.4A696D4BA54429289.title}"
-			x: 1.5d
-			y: 16.75d
+			title: "{monifactory.genesis.077AA27F26B7831F.title}"
+			x: 2.75d
+			y: 15.5d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
@@ -1899,13 +1787,13 @@
 		{
 			dependencies: ["115D2BEB18929C7C"]
 			description: [
-				"{monifactory.genesis.3B200AD6EFF90DFA8.description0}"
+				"{monifactory.genesis.17E92ED356B6737F.description0}"
 				""
-				"{monifactory.genesis.3B200AD6EFF90DFA8.description1}"
+				"{monifactory.genesis.17E92ED356B6737F.description1}"
 				""
-				"{monifactory.genesis.3B200AD6EFF90DFA8.description2}"
+				"{monifactory.genesis.17E92ED356B6737F.description2}"
 				""
-				"{monifactory.genesis.3B200AD6EFF90DFA8.description3}"
+				"{monifactory.genesis.17E92ED356B6737F.description3}"
 			]
 			icon: "gtceu:crushed_redstone_ore"
 			id: "17E92ED356B6737F"
@@ -1913,7 +1801,7 @@
 				id: "36817889D65727FA"
 				type: "checkmark"
 			}]
-			title: "{monifactory.genesis.3B200AD6EFF90DFA8.title}"
+			title: "{monifactory.genesis.17E92ED356B6737F.title}"
 			x: -9.0d
 			y: 4.0d
 		}

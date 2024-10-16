@@ -12,7 +12,6 @@ ServerEvents.recipes(event => {
 
         converter.forEach(([tier, mat1, mat2, eut]) => {
             event.remove({ output:[`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter` ] })
-            if (!isHarderMode) {
             event.shaped(Item.of(`gtceu:${tier}_1a_energy_converter`), [
                 ' BB',
                 'AHC',
@@ -101,7 +100,6 @@ ServerEvents.recipes(event => {
                .itemOutputs(`gtceu:${tier}_energy_input_hatch_16a`)
                .duration(100)
                .EUt(eut)
-        }
         })
 
 

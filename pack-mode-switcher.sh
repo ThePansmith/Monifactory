@@ -14,13 +14,13 @@ printf "${POWDER_BLUE}Monifactory | Pack Mode Switcher${NORMAL}"
 
 NORMAL_CFG='./config-overrides/normal'
 HARDMODE_CFG='./config-overrides/hardmode'
-HARDER_CFG='./config-overrides/expert'
+EXPERT_CFG='./config-overrides/expert'
 TARGET='./config'
 CURRENT_MODE="$(head .mode)"
 CURRENT_MODE=${CURRENT_MODE:="normal"}
 
 # Check if config-overrides dir exists
-if [[ ! -d "${NORMAL_CFG}" ]] || [[ ! -d "${HARDMODE_CFG}" ]] || [[ ! -d "${HARDER_CFG}" ]] ; then
+if [[ ! -d "${NORMAL_CFG}" ]] || [[ ! -d "${HARDMODE_CFG}" ]] || [[ ! -d "${EXPERT_CFG}" ]] ; then
   printf "\n\n${RED}Could not find \`config-overrides\` directory! \nMake sure you are in the \`/minecraft\` directory of your instance! (The one containing \`/config\`)${NORMAL}\n"
   printf "${YELLOW}Otherwise, if you are in the \`/minecraft\` directory, please try reinstalling the pack.${NORMAL}\n"
   exit 1
@@ -70,7 +70,7 @@ case $MODE in
 
   E|e|expert|Expert)
 
-    cp -rf "$HARDER_CFG/." ${TARGET}
+    cp -rf "$EXPERT_CFG/." ${TARGET}
 
     if [ -f "server.properties" ]; then
         mv "${TARGET}/server.properties" ./

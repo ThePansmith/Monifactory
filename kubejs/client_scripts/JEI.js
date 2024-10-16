@@ -27,7 +27,7 @@ JEIEvents.hideItems(event => {
 
     //snad
     event.hide('snad:soul_snad')
-    if(isHarderMode) {
+    if(isExpertMode) {
         event.hide(['snad:snad', 'snad:red_snad'])
     }
 

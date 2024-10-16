@@ -89,6 +89,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__black_steel" })
     event.remove({ id: "gtceu:mixer/black_steel" })
 
+    event.recipes.gtceu.mixer("kubejs:dark_steel_dust")
+        .itemInputs('#forge:dusts/steel', '#forge:dusts/obsidian')
+        .itemOutputs('gtceu:dark_steel_dust')
+        .duration(80)
+        .EUt(15)
+
 	event.shapeless('gtceu:conductive_alloy_dust', ['#forge:dusts/iron', '#forge:dusts/redstone']).id('kubejs:conductive_alloy_dust_handcraft')
     event.recipes.gtceu.mixer("kubejs:conductive_alloy_dust")
         .itemInputs('#forge:dusts/iron', '#forge:dusts/redstone')

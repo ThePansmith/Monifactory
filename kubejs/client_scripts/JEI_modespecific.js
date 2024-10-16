@@ -16,7 +16,7 @@ event.hide(/hostilenetworks/)
 event.hide("watercollector:watercollector")
 }
 
-if (isHarderMode) {
+if (isExpertMode) {
     event.hide(/gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter/)
     }
 })

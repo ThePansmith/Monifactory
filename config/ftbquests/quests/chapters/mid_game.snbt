@@ -85,6 +85,20 @@
 			x: 38.5d
 			y: 12.0d
 		}
+		{
+			id: "1CDC489E37B0D834"
+			linked_quest: "5D0A642048AF909B"
+			shape: "hexagon"
+			x: 37.0d
+			y: 6.5d
+		}
+		{
+			id: "441DC395A05CBC01"
+			linked_quest: "6DC635766CD40FFF"
+			shape: "hexagon"
+			x: 37.0d
+			y: 8.5d
+		}
 	]
 	quests: [
 		{
@@ -1138,6 +1152,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 1.5d
 			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
 			tasks: [
 				{
@@ -1153,7 +1168,7 @@
 			]
 			title: "&2Platinum Group Processing"
 			x: 38.0d
-			y: -6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5357A16B5BF62C96"]
@@ -1238,15 +1253,15 @@
 				"Petrochemistry is the category of organic chemistry pertaining to petroleum, otherwise known as &9Oil&r."
 				""
 				"&bGregTech&r's petrochemistry may seem daunting at first, given the sheer number of chemicals and processing options, but it's actually easier to get into than you think."
-				""
+				"{@pagebreak}"
 				"Oil is the starting point, and can be found in several variants which you can pump from finite natural wells on the Overworld, as well as coming renewably from &6Oilsands Ore&r and &6Soul Sand&r, and directly in liquid form from a &3Fluid Rig&r."
 				""
 				"&2The Fluid Rig can also harvest Raw Oil, Heavy Oil and Light Oil depending on your fluid vein. Raw Oil is similar to Oil, giving the same ratios when distilled but needing double the fluid. Heavy Oil and Light Oil give different ratios when distilled.&r "
-				""
+				"{@pagebreak}"
 				"Start off by distilling the Oil. This will result in &9Sulfuric Heavy Fuel&r, &9Sulfuric Light Fuel&r, &9Sulfuric Naphtha&r, and/or &9Sulfuric Gas&r."
 				""
 				"These will all need to be hydrodesulfurized using &9Hydrogen&r in a &3Chemical Reactor&r or &2Oil Cracking Unit&r, which produces the non-Sulfuric versions."
-				""
+				"{@pagebreak}"
 				"All of these products are useful, so figure out how you want to store the variety and large quantities of fluids."
 				""
 				"The upcoming quests will guide you through the basics of petrochemistry. Once you've mastered that, feel free to explore further."
@@ -1635,6 +1650,7 @@
 				"502AB887CB316377"
 				"2EFC9DDA09527638"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"A colorless liquid with a pungent, garlic-like odor. It's needed in the production of &9Epoxy&r."
 				""
@@ -1660,8 +1676,6 @@
 		{
 			dependencies: ["7174484A926682F3"]
 			description: [
-				"&2The Naphtha route for Epoxy has been removed. You can only make Epoxy using the BPA route."
-				""
 				"&rBPA can be produced using petrochemistry distillation products, or via distilling &9Charcoal Byproducts&r from your &3Pyrolyse Oven&r into useful components. Alternatively, you can get &9Phenol&r from &6Coal&r pyrolysis. &9Fermented Biomass&r is also useful to distill as it provides many useful products."
 				""
 				"&2Using the Large Chemical Reactor, you can skip two steps in the Epoxy production line."
@@ -2037,7 +2051,7 @@
 			description: [
 				"&2The Alloy Blast Smelter directly smelts dust combinations into molten Alloys, skipping the Mixer step, and applying a 3/4 discount to your EBF time. Some molten alloys may need to be cooled in a Vacuum Freezer before being usable."
 				""
-				"&rThis is the only way to create some of the advanced alloys used in multiblock machines. You can also use it for most normal alloys if you want. In particular, the yield of &6Energetic Alloy&r and &6Vibrant Alloy&r is &9doubled&r, and &6Red Alloy&r has a discount from 4 redstone per alloy, to 1 and a half."
+				"&rThis is the only way to create some of the advanced alloys used in multiblock machines. You can also use it for most normal alloys if you want. In particular, &ethe speed and energy efficiency are better than the equivalent EBF recipe.&r"
 				""
 				"You can also use the ABS for most Alloy Smelter alloys, apart from &6Steel&r, like &eInvar&r, &e&eConductive Iron&r&r, and &e&eDark Steel&r&r."
 			]
@@ -2057,7 +2071,7 @@
 					type: "item"
 				}
 				{
-					count: 35L
+					count: 30L
 					id: "1D22CC5ADFDFD0A0"
 					item: "gtceu:high_temperature_smelting_casing"
 					type: "item"
@@ -2082,7 +2096,7 @@
 				""
 				"&6Molybdenum&r is obtained from &6Molybdenum, Molybdenite, Powellite, and Wulfenite ores&r. They spawn together in the &eNether&r rarely, or some of them come from &3Tier One&r and &3Five Micro Miners&r."
 				""
-				"&2Remember, you need an appropriately tiered Mixer (HV for HSLA Steel, and IV for the others)."
+				"&2Remember, you need an appropriately tiered Mixer (HV for HSLA Steel, and EV for the others)."
 			]
 			id: "7F1EE712BD9CC811"
 			rewards: [{
@@ -2237,30 +2251,6 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["32F80B528E0EAA96"]
-			description: [
-				"&6RTM Alloy&r is the fourth coil material available, increasing your EBF's operating temperature to 4500K so it can process more advanced materials."
-				""
-				"&9In Monifactory, RTM Alloy replaces tungstensteel in coil progression."
-			]
-			id: "072DB633006E78B7"
-			rewards: [{
-				id: "6D3C752C2E6A7402"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				count: 16L
-				id: "356D9050E33E21D8"
-				item: "gtceu:rtm_alloy_coil_block"
-				type: "item"
-			}]
-			title: "&9RTM Alloy Coil Blocks"
-			x: 37.0d
-			y: 8.5d
-		}
-		{
 			dependencies: ["605062720747B482"]
 			description: [
 				"&9Rubber&r has been sufficient for making cables so far, but you will soon discover that this basic type of rubber won't withstand more than &2Extreme Voltage&r. Higher quality rubber is necessary to properly insulate your wires."
@@ -2327,7 +2317,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["072DB633006E78B7"]
+			dependencies: ["6DC635766CD40FFF"]
 			description: [
 				"Glowing! &2But all the GTCEu machines glow already, so...&r"
 				""
@@ -2350,7 +2340,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["072DB633006E78B7"]
+			dependencies: ["6DC635766CD40FFF"]
 			description: [
 				"&6HSS-G&r is an alloy of &6Tungstensteel&r, &6Chrome&r, &6Molybdenum&r, and &6Vanadium&r."
 				""
@@ -2373,7 +2363,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["072DB633006E78B7"]
+			dependencies: ["6DC635766CD40FFF"]
 			description: [
 				"Not glowing."
 				""
@@ -2499,7 +2489,7 @@
 				""
 				"It is used to automate the spawning and capture of mobs. As with all &bEnderIO&r machines, it requires a capacitor, with a higher tier capacitor increasing the range, spawning rate, and capture rate."
 				""
-				"In order to set a &6Powered Spawner&r to the mob type that you want, you must combine it with a &6Broken Spawner&r, set to your specified mob type, in an anvil. "
+				"In order to create a &6Powered Spawner&r for the mob type that you want, you must craft it using a &6Broken Spawner&r for that specific mob type. Once created, the mob type cannot be changed. "
 				""
 				"This &6Broken Spawner&r is set by putting a &6Broken Spawner&r, of any mob type, and a &6Soul Vial&r, of the specified mob, into a &aSoul Binder&r, with a few dashes of &aXP&r. Broken Spawners can be obtained by breaking a mob spawner. &eTIP: Spawners are all over the Lost Cities!&r"
 				""
@@ -2632,9 +2622,9 @@
 		}
 		{
 			dependencies: [
-				"072DB633006E78B7"
 				"7D39A4D0CC886796"
 				"3B6331F5763C4932"
+				"6DC635766CD40FFF"
 			]
 			description: [
 				"&6Yttrium Barium Cuprate&r (more accurately, Yttrium Barium Copper Oxide, or YBCO) is, among other things, a high-temperature superconductor material."
@@ -2970,19 +2960,22 @@
 				"The full complexity of &bNuclearCraft&r is far too much for the scope of this quest guide, so &eyou're encouraged to watch a tutorial or read a guide online&r. "
 				""
 				"For the purposes of this particular quest, you'll be building a breeder reactor to make &6Plutonium&r, and other nuclear elements. While this reactor may seem very expensive, it will be worth it, and you will probably expand it soon. "
-				""
+				"{@pagebreak}"
 				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster. Alternatively, reactors can be designed to produce a decent amount of power for the mid game of the pack."
 				""
-				"First, set up your 215 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r. The Casings should  cover the faces of the interior cube, as well as the edges or corners. You should have exactly the right number of Casings to encase a 5x5x5 space (with space for the controller and ports)."
-				""
+				"First, set up your 215 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r."
 				"{@pagebreak}"
+				"The Casings should  cover the faces of the interior cube, &9as well as the edges and corners&r. You should have exactly the right number of Casings to encase a 5x5x5 space (with space for the controller and ports)."
 				""
-				"Next, create a hole so you can get inside the cube. Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
-				""
+				"Next, create a hole so you can get inside the cube."
+				"{@pagebreak}"
+				"Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
+				"{@pagebreak}"
 				"Finally, place the &3Fission Reactor Controller&r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong."
 				""
+				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r"
 				"{@pagebreak}"
-				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
+				"You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
 				""
 				"Info on what exactly you are going to be doing with you fancy new reactor can be found in the &bFission and Fusion&r Chapter."
 			]
@@ -3076,29 +3069,6 @@
 			title: "&9Space Stationing"
 			x: 9.5d
 			y: 10.5d
-		}
-		{
-			dependencies: ["3B3F46345D39CAE2"]
-			description: [
-				"&6RTM Alloy&r is an alloy of &6Ruthenium&r, &6Tungsten&r and &6Molybdenum&r."
-				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
-			]
-			id: "32F80B528E0EAA96"
-			rewards: [{
-				id: "6339CD11A76FCF56"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "3EE0E90EFEBA33D1"
-				item: "gtceu:rtm_alloy_ingot"
-				type: "item"
-			}]
-			title: "&9RTM Alloy"
-			x: 37.0d
-			y: 6.5d
 		}
 		{
 			dependencies: ["6D434F3B0E720A5A"]

@@ -1,7 +1,7 @@
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 
 ItemEvents.tooltip(tooltip => {
-    //Microminers
+    // Microminers
     function microminer_tooltip(tier) {
         tooltip.add(`kubejs:microminer_t${tier}`, Text.translatable(`item.kubejs.microminer_t${tier}.desc`))
     }
@@ -22,22 +22,22 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('item.kubejs.pristine_matter.desc'))
     })
 
-    //Microminer Components
+    // Microminer Components
     tooltip.add('kubejs:universal_navigator', '§9See You Later, navigator!')
 
-    //Endgame Items
+    // Endgame Items
     tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
 
-    //DML Data Model
+    // DML Data Model
     tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
     tooltip.add('hostilenetworks:data_model', '§7Upgrades when used in the §3Simulation Chamber')
     
-    //DML Matters
+    // DML Matters
     tooltip.add('hostilenetworks:overworld_prediction', '§7Experience per item: 10')
     tooltip.add('hostilenetworks:nether_prediction', '§7Experience per item: 20')
     tooltip.add('hostilenetworks:end_prediction', '§7Experience per item: 25')
 
-    //Conduits
+    // Conduits
     tooltip.add('enderio:conductive_conduit', '§7Max Output 512 RF/t')
     tooltip.add('enderio:energetic_conduit', '§7Max Output 2,048 RF/t')
     tooltip.add('enderio:vibrant_conduit', '§7Max Output 8,192 RF/t')
@@ -68,27 +68,14 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uhv_tier_circuit')))})
 
 
-
     // Multiblocks
-    tooltip.add('gtceu:discharger', Text.translatable('gtceu.discharger.desc'))
-    tooltip.add('gtceu:simulation_supercomputer', Text.translatable('gtceu.simulation_supercomputer.desc'))
-    tooltip.add('gtceu:loot_superfabricator', Text.translatable('gtceu.loot_superfabricator.desc'))
-    tooltip.add('gtceu:greenhouse', Text.translatable('gtceu.greenhouse.desc'))
-    tooltip.add('gtceu:basic_microverse_projector', Text.translatable('gtceu.basic_microverse_projector.desc'))
-    tooltip.add('gtceu:advanced_microverse_projector', Text.translatable('gtceu.advanced_microverse_projector.desc'))
-    tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.advanced_microverse_projector_ii.desc'))
-    tooltip.add('gtceu:dimensional_superassembler', Text.translatable('gtceu.dimensional_superassembler.desc'))
-    tooltip.add('gtceu:hyperbolic_microverse_projector', Text.translatable('gtceu.hyperbolic_microverse_projector.desc'))
-    tooltip.add('gtceu:hyperbolic_microverse_projector', Text.translatable('gtceu.hyperbolic_microverse_projector_2.desc'))
-    tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.subatomic_digital_assembler.desc'))
-    tooltip.add('gtceu:quintessence_infuser', Text.translatable('gtceu.quintessence_infuser.desc'))
-    tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.actualization_chamber.desc'))
-    tooltip.add('gtceu:implosion_collider', Text.translatable('gtceu.implosion_collider.desc'))
-    tooltip.addAdvanced('gtceu:helical_fusion_reactor', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.machine.fusion_reactor.capacity', Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 16) / 1000000)))
-        text.add(2, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(3, Text.translatable('gtceu.multiblock.helical_fusion_reactor.description'))
-    })
+    tooltip.add('gtceu:discharger', Text.translatable('gtceu.multiblock.discharger.description'))
+    tooltip.add('gtceu:greenhouse', Text.translatable('gtceu.multiblock.greenhouse.description'))
+    tooltip.add('gtceu:basic_microverse_projector', Text.translatable('gtceu.multiblock.basic_microverse_projector.description'))
+    tooltip.add('gtceu:advanced_microverse_projector', Text.translatable('gtceu.multiblock.advanced_microverse_projector.description'))
+    tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.multiblock.advanced_microverse_projector_ii.description'))
+    tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.multiblock.subatomic_digital_assembler.description'))
+    tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.multiblock.actualization_chamber.description'))
 
     tooltip.addAdvanced('gtceu:universal_crystallizer', (item, adv, text) => {
         text.add(1, Text.darkGray('An immense device, capable of turning raw materials into complex matters'))
@@ -107,21 +94,51 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
+
+    // Parallel multiblocks
+    const parallelMultis = [
+        'simulation_supercomputer',
+        'loot_superfabricator',
+        'rock_cycle_simulator',
+        'atmospheric_accumulator',
+        'matter_alterator',
+        'implosion_collider',
+        'extra_large_chemical_reactor',
+        'quintessence_infuser',
+        'hyperbolic_microverse_projector',
+        'dimensional_superassembler'
+    ]
+
+    parallelMultis.forEach(multi => {
+        tooltip.addAdvanced('gtceu:' + multi, (item, adv, text) => {
+            text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+            text.add(2, Text.translatable('gtceu.multiblock.' + multi + '.description'))
+        })
+    })
+
+    tooltip.addAdvanced('gtceu:helical_fusion_reactor', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.machine.fusion_reactor.capacity', Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 16) / 1000000)))
+        text.add(2, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(3, Text.translatable('gtceu.multiblock.helical_fusion_reactor.description'))
+    })
+
+
+    // Parallel hatches
     tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
-    tooltip.add('gcyr:rocket_scanner', Text.darkGray('Rotate the multiblock if your rocket doesnt build.'))
-    tooltip.add(['gtceu:hyperbolic_microverse_projector', 'gtceu:dimensional_superassembler', 'gtceu:quintessence_infuser', 'gtceu:implosion_collider'], 'Can parallelize with Parallel Control Hatches.')
-    tooltip.add('gtceu:basic_tape', 'Useful to wrap up Crates for transport instead')
+    tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
+    tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
 
-    //Sophisticated Storage
+    // Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
     tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
-    tooltip.add('functionalstorage:storage_controller', 'Previously known as a Storage Controller')
-    tooltip.add('functionalstorage:framed_storage_controller', 'Previously known as a Framed Storage Controller')
+    tooltip.add('functionalstorage:storage_controller', '§7Previously known as a Storage Controller')
+    tooltip.add('functionalstorage:framed_storage_controller', '§7Previously known as a Framed Storage Controller')
 
     // AE2
     tooltip.add('ae2:facade', Text.gray('Crafted with Cable Anchors'))
+    tooltip.add('ae2:memory_card', Text.gray('Hold in offhand to set additional inputs on Multi P2Ps.'))
 
     // Misc
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray('Gaze into the Abyss...'))
@@ -129,15 +146,17 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:infinity_ingot', Text.darkGray('The fury of the universe in the palm of your hand.'))
     tooltip.add('gtceu:monium_ingot', Text.darkGray('The serenity of the universe in the palm of your hand.'))
     tooltip.add('extendedcrafting:the_ultimate_catalyst', Text.darkGray("I'm the real ultimate catalyst..."))
-    tooltip.add('extendedcrafting:auto_flux_crafter',("Uses large amounts of energy to convert Sculk into Sculk Cores."))
-    tooltip.add('extendedcrafting:flux_alternator', ("Provides Energy to the Sculk Charger, from up to 3 blocks away."))
     tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
-    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table'], ['Cannot be inserted into!', 'Put them in an inventory atop the table instead.'])
-    tooltip.add('kubejs:excitationcoil', 'Crafting Component Only')
-    tooltip.add('gtceu:terminal', 'Can autobuild multiblocks by shift-rightclicking a controller.')
+
+    tooltip.add('extendedcrafting:auto_flux_crafter',("§7Uses large amounts of energy to convert Sculk into Sculk Cores."))
+    tooltip.add('extendedcrafting:flux_alternator', ("§7Provides Energy to the Sculk Charger, from up to 3 blocks away."))
+    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table'], ['§7Cannot be inserted into!', '§7Put them in an inventory atop the table instead.'])
+    
+    tooltip.add('kubejs:excitationcoil', '§7Used for Crafting.')
+    tooltip.add('gtceu:terminal', '§7Can autobuild multiblocks by shift-right-clicking a controller.')
 
 
-    // NuclearCraft tooltips
+    // NuclearCraft
     tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
     tooltip.add('nuclearcraft:tough_alloy_ingot', '§eLiFeB');
     tooltip.add('nuclearcraft:ferroboron_ingot', '§eFeB');
@@ -164,11 +183,32 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('item.kubejs.infinity_dust_block.tooltip'))
     })
 
-    let benches = ['chipped:botanist_workbench', 'chipped:glassblower', 'chipped:carpenters_table', 'chipped:loom_table', 'chipped:mason_table', 'chipped:alchemy_bench', 'chipped:tinkering_table'];
-    benches.forEach(bench => {
-        tooltip.add(bench, ['Recipes can also be performed in the §3Stonecutter§f,', 'which can be automated with §bAE2§f\'s §3Molecular Assemblers§f.'])
-    })
+    // Macerator byproduct warning
+    tooltip.add(['gtceu:lv_macerator', 'gtceu:mv_macerator'], '§4You must use a HV-tier macerator or higher for byproducts.')
 
+    // Wooden pipe, tank warning
+    tooltip.add([
+        'gtceu:wood_small_fluid_pipe',
+        'gtceu:treated_wood_small_fluid_pipe',
+        'gtceu:wood_normal_fluid_pipe',
+        'gtceu:treated_wood_normal_fluid_pipe',
+        'gtceu:wood_large_fluid_pipe',
+        'gtceu:treated_wood_large_fluid_pipe',
+        'gtceu:wooden_multiblock_tank'
+    ], '§4Can\'t hold Steam or other gases!')
+
+    // Chipped workbenches
+    tooltip.add([
+        'chipped:botanist_workbench',
+        'chipped:glassblower',
+        'chipped:carpenters_table',
+        'chipped:loom_table',
+        'chipped:mason_table',
+        'chipped:alchemy_bench',
+        'chipped:tinkering_table'
+    ], '§7Recipes can also be performed in the §3Stonecutter§7,\nwhich can be automated with §bAE2§7\'s §3Molecular Assemblers§7.')
+
+    // Tempad
     if (Platform.isLoaded('tempad')) {
         tooltip.add('tempad:tempad', '§6Uses Monipennies as fuel');
     }

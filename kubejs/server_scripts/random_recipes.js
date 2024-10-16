@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         //If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
         //Otherwise, people will leave laggy items everywhere on the ground.
         event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
-    } else if(!isHarderMode) { 
+    } else if(!isExpertMode) { 
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
     } else {
@@ -588,7 +588,13 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt(480)
 
+    //Ender Shard
     event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl']).id('kubejs:ender_pearl')
+    event.recipes.gtceu.forge_hammer('kubejs:ender_pearl_shattering')
+        .itemInputs('minecraft:ender_pearl')
+        .itemOutputs('8x kubejs:ender_shard')
+        .duration(40)
+        .EUt(12)
 
     // Waterframes
     event.shaped(

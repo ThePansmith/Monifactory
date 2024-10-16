@@ -1,5 +1,9 @@
-## Frequently Asked Questions
-### General
+# Frequently Asked Questions
+
+## General
+
+### About Monifactory
+
 **Q. How "finished" is Monifactory?**
 
 The main path of progression is fully playable - multiple groups have obtained the Creative Chest in Normal Mode.
@@ -16,7 +20,7 @@ A comprehensive list of changes can be found [here](CHANGELOG.md).
 **Q. Can my PC run Monifactory?**
 
 Monifactory should run on any computer with a CPU newer than 2019. Allocating 6GB RAM or higher is recommended<br>.
-``NOTE: If your computer has 8GB RAM or less, assume that Monifactory will not run on it``
+``NOTE: If your computer has 8GB RAM or less, assume that Monifactory will not run on it.``
 
 **Q. Can I play Monifactory on Peaceful mode?**
 
@@ -38,7 +42,7 @@ No, Create is not in Monifactory by default.
 
 No, but we have their respective port and fork, Radium and Embeddium.
 
-**Does the modpack come with shaders?**
+**Q. Does the modpack come with shaders?**
 
 Not by default. Oculus is included to load your shaders of choice, however.
 
@@ -50,9 +54,13 @@ Create a feature request on the GitHub.
 
 By default, Monifactory only supports the mods included with it, and has *optional compat* for various mods, such as Create. Any other mods added may break progression and/or deviate from the intended experience. Note that support will not be provided for bugs related to mods not shipped with the pack.
 
+<hr>
+
+## How Do I...?
+
 **Q. How do I play Monifactory Hard Mode/Expert Mode?**
 
-[Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardharder-mode-installation)
+[Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardexpert-mode-installation)
 
 **Q. How do I update the modpack?**
 *Make a backup first.*
@@ -79,27 +87,23 @@ If it doesn't:
 
 [Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#dedicated-server-installation)
 
-<!--- Essential PSA, I've commented this out for now. Feel free to edit/uncomment 
-
-**Q. Does Monifactory support Essential world hosting?**
-
-Essential is not officially supported, and various unsupported bugs and crashes may arise from hosting using it. Support will not be provided for these -->
-
 <hr>
 
-### Tech Support
+## Tech Support
+
+### Gameplay
 
 **Q. Where should I build my base?**
 
 This is your decision to make - You don't ask others to decide what you should eat for lunch!
 If you want a comparison of the available dimensions:
-Overworld: Pretty landscapes & easy access to resources, but terrain can get in the way sometimes
-Void Dimension: Always day, but featureless and nothing to build off of. Good for potato computers
-Luna, Mars, Mercury, or Venus: Mostly featureless, flat terrain. You need Oxygen to breathe.
-Orbit: Similar to the Void Dimension, but you need Oxygen to breathe.
-Lost Cities Dimension: Cities cover most terrain, and are damaged. No Ores.
-Nether/End: Good atmosphere, but potentially hazardous. Same as in Vanilla.
-AE2 Spatial Storage: 128x128 size limit. Can be combined & traversed in creative ways.
+- Overworld: Pretty landscapes & easy access to resources, but some find the terrain difficult to build around.
+- Void Dimension: Always day, but featureless and nothing to build off of. Good for potato computers.
+- Luna, Mars, Mercury, or Venus: Mostly featureless, flat terrain. You need Oxygen and a spacesuit to breathe.
+- Planetary Orbit dimensions: Similar to the Void Dimension, but you need Oxygen and a spacesuit to breathe.
+- Lost Cities Dimension: Cities cover most terrain, and are damaged. No Ores.
+- Nether/End: Rich in resources, but potentially hazardous. Same generation as in Vanilla but with GregTech ores.
+- AE2 Spatial Storage: 128x128 size limit. Can be combined & traversed in creative ways.
 
 **Q. I can't light my Nether portal?!?**
 
@@ -126,17 +130,23 @@ DarkModeEverywhere is enabled by default, and makes your UI darker (duh). You ca
 
 Thermal Expansion Dynamos will only output energy while producing it.
 
-**Q. Where do I report an issue?**
-
-Check the [Known Issues document](KNOWN-ISSUES.md) first. If it's not there, report it to the [issue tracker](https://github.com/ThePansmith/Monifactory/issues), or get help on the [Discord](https://discord.gg/N8b2JEfAqb) in the #moni-support channel
-
-<hr>
-
-## Server
+### Servers
 
 **Q. How do I update Monifactory on my server?**
 
 In your server directory delete config-overrides, config, defaultconfig, kubejs, and mods. Then from the new Monifactory server zip copy over those same directories to replace the ones you removed. Enjoy!
+
+<!--- Essential PSA, I've commented this out for now. Feel free to edit/uncomment 
+
+**Q. Does Monifactory support Essential world hosting?**
+
+Essential is not officially supported, and various unsupported bugs and crashes may arise from hosting using it. Support will not be provided for these -->
+
+### Other Issues
+
+**Q. Where do I report an issue?**
+
+Check the [Known Issues document](KNOWN-ISSUES.md) first. If it's not there, report it to the [issue tracker](https://github.com/ThePansmith/Monifactory/issues), or get help on the [Discord](https://discord.gg/N8b2JEfAqb) in the #moni-support channel
 
 <hr>
 

@@ -135,7 +135,7 @@
 				id: "348D173332287681"
 				ignore_reward_blocking: true
 				remove: true
-				stage: "mode_harder"
+				stage: "mode_expert"
 				type: "gamestage"
 			}]
 			tasks: [{
@@ -174,7 +174,7 @@
 			subtitle: "unlocks em only quests"
 			tasks: [{
 				id: "63D27F02DE8A233E"
-				stage: "mode_harder"
+				stage: "mode_expert"
 				type: "gamestage"
 			}]
 			x: 1.25d
