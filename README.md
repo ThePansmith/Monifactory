@@ -52,7 +52,7 @@ Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 ## Installation:
 
 ### Hard/Harder Mode Installation:
-1. Download [``./pack-mode-switcher.bat``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
+1. Download [``./pack-mode-switcher.ps1``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.ps1) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
 2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
 - Windows:
     - Manual:
@@ -62,7 +62,10 @@ Harder Mode is a modifier for Hard Mode, and takes things a step further by:
 
     - Prism Launcher (and various other custom launchers):
         1. If your Minecraft launcher supports it, select your Minecraft instance -> Edit -> Settings -> Custom Commands, check ``Custom Commands``, paste
-        ``powershell.exe -ExecutionPolicy Bypass -File "$INST_DIR\minecraft\pack-mode-switcher.ps1" <your mode here Normal/Hard/Expert>`` into Pre-launch command and specify your wanted mode.
+           ```
+           powershell.exe -ExecutionPolicy Bypass -File "$INST_DIR\minecraft\pack-mode-switcher.ps1" <your mode here Normal/Hard/Expert>
+           ```
+           into Pre-launch command and specify your wanted mode.
 
 - Linux/Apple/GNU:
 1. Open https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh and download the file to your Minecraft / Minecraft instance folder.
