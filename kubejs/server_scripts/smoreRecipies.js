@@ -96,7 +96,7 @@ event.recipes.gtceu.extractor('kubejs:gelatin')
     .duration(100)
 
 event.recipes.gtceu.extractor('kubejs:extract_milk')
-    .itemInputs('minecraft:cow_spawn_egg')
+    .notConsumable('minecraft:cow_spawn_egg')
     .outputFluids(Fluid.of('minecraft:milk',5000))
     .EUt(32)
     .duration(1000)
