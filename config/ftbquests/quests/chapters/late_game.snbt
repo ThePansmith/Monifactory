@@ -1331,11 +1331,11 @@
 					type: "item"
 				}
 			]
-			x: 17.25d
+			x: 19.0d
 			y: 6.25d
 		}
 		{
-			dependencies: ["1CC092A2F2CD4589"]
+			dependencies: ["0562D9F4C441EAF9"]
 			description: [
 				"Coating &6Cryococcus&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
@@ -1354,8 +1354,8 @@
 				type: "item"
 			}]
 			title: "Superconductor Wire"
-			x: 19.25d
-			y: 6.25d
+			x: 25.25d
+			y: 17.0d
 		}
 		{
 			dependencies: ["424413BBCE3FD3BF"]
