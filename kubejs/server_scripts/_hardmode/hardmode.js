@@ -77,28 +77,3 @@ ServerEvents.recipes(event => {
             .duration(640)
             .EUt(120)
 }})
-
-// HM Ore Gen
-
-GTCEuServerEvents.oreVeins(event => {
-	if (isHardMode) {
-		// Fluorite is not registerd in NM
-		event.add("kubejs:luna/fluorite", vein => {
-        vein.weight(40)
-        vein.clusterSize(25)
-        vein.density(0.7)
-        vein.discardChanceOnAirExposure(0)
-        vein.layer("moon")
-        vein.dimensions("gcyr:luna")
-        vein.biomes("gcyr:moon")
-        vein.heightRangeUniform(-40, 50)
-			vein.layeredVeinGenerator(generator => generator
-				.buildLayerPattern(pattern => pattern
-					.layer(l => l.weight(5).mat(GTMaterials.get('fluorite')).size(1, 1))
-					.layer(l => l.weight(3).mat(GTMaterials.Sphalerite).size(2, 4))
-					.layer(l => l.weight(2).mat(GTMaterials.Bastnasite).size(2, 4))
-				)
-			)
-		})
-	}
-})
