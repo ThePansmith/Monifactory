@@ -247,8 +247,20 @@ GTCEuServerEvents.oreVeins(event => {
         vein.weight(50)
     })
 
-    // Make Arsenic 3x more likely to appear in its vein
+    // TODO: Remove this when GTM increases Realgar's frequency as requested
+    // Make Arsenic much more likely to appear in its vein
     event.modify("gtceu:copper_tin_vein", vein => {
-        vein.rareBlockChance(0.15)
+        vein.veinedVeinGenerator(generator => generator
+            .oreBlock(GTMaterials.Chalcopyrite, 5)
+            .oreBlock(GTMaterials.Zeolite, 2)
+            .oreBlock(GTMaterials.Cassiterite, 2)
+            .rareBlock(GTMaterials.Realgar, 2)
+            .rareBlockChance(0.2)
+            .veininessThreshold(0.01)
+            .maxRichnessThreshold(0.175)
+            .minRichness(0.7)
+            .maxRichness(1.0)
+            .edgeRoundoffBegin(3)
+            .maxEdgeRoundoff(0.1))
     })
 })
