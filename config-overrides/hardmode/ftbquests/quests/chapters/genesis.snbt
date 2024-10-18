@@ -45,7 +45,6 @@
 				""
 				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that the issue can not be replicated with the mod on it's own, and if it can, report it to the mod's repository instead."
 			]
-			hide: false
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
 			size: 1.5d
