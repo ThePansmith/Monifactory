@@ -605,7 +605,7 @@
 			]
 			title: "&2Advanced LuV Alloys"
 			x: 1.5d
-			y: 14.5d
+			y: 14.25d
 		}
 		{
 			dependencies: ["78DCEF2FF2E1AC8C"]
@@ -1428,7 +1428,7 @@
 				type: "item"
 			}]
 			title: "&2Enriched Naquadah"
-			x: 13.0d
+			x: 11.0d
 			y: 14.0d
 		}
 		{
@@ -2821,6 +2821,65 @@
 			}]
 			x: 29.25d
 			y: 16.5d
+		}
+		{
+			dependencies: [
+				"1349044BF8C04A12"
+				"458FF3F9BC8E025B"
+			]
+			description: [
+				"&9Upgraded form of the Soul Binder&r"
+				""
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!."
+			]
+			icon: "gtceu:quintessence_infuser"
+			id: "0608EE0A3BDE58D5"
+			rewards: [{
+				id: "61D7174842FE7D36"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0235FA500D9F953C"
+					item: "gtceu:quintessence_infuser"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "181FE76CD595DF04"
+					item: { Count: 12, id: "enderio:ensouled_chassis" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "7375E5C90B542A1E"
+					item: { Count: 24, id: "gtceu:tungsten_frame" }
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "5BF59752E9522F50"
+					item: { Count: 36, id: "gtceu:fusion_glass" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "47FEFD33C0AFB1A0"
+					item: { Count: 5, id: "gtceu:tungstensteel_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 67L
+					id: "2E43A58DB1519CB2"
+					item: { Count: 67, id: "kubejs:dark_soularium_casing" }
+					type: "item"
+				}
+			]
+			title: "&9Quintessence Infuser"
+			x: 1.5d
+			y: 16.25d
 		}
 	]
 	title: "Late Game"
