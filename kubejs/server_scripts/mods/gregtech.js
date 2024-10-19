@@ -116,6 +116,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge('moon_deuterium')
         .itemInputs('kubejs:moon_dust')
+        .chancedOutput('gtceu:stone_dust', 3000, 500)
+        .chancedOutput('kubejs:dust', 1000, 100)
+        .chancedOutput('minecraft:sand', 500, 200)
         .outputFluids(Fluid.of('gtceu:deuterium', 100))
         .duration(200)
         .EUt(20)

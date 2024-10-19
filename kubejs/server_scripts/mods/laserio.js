@@ -1,14 +1,18 @@
 ServerEvents.recipes(event => {
-    //Disable in Hard Mode
+    //Disable in Expert Mode
     if (isExpertMode) {
         event.remove({ output: /laserio/ })
         return
     } 
+    //Harder recipes in Hard Mode
+    const connectorChip = isHardMode ? '#gtceu:circuits/mv' : '#gtceu:circuits/lv'
+    const cardChip = isHardMode ? '#gtceu:circuits/lv' : '#gtceu:circuits/ulv'
+
     
     //Replace Logic chips with circuits.
     event.remove({ output: ['laserio:logic_chip_raw', 'laserio:logic_chip'] })
     event.replaceInput({ mod: 'laserio', not: [{ id: 'laserio:card_item' }, { id: 'laserio:card_fluid' }, { id: 'laserio:card_energy' }, { id: 'laserio:card_redstone' }]}, 'laserio:logic_chip', '#gtceu:circuits/lv')
-    event.replaceInput([{ id: 'laserio:card_item' }, { id: 'laserio:card_fluid' }, { id: 'laserio:card_energy' }, { id: 'laserio:card_redstone' }], 'laserio:logic_chip', '#gtceu:circuits/ulv')
+    event.replaceInput([{ id: 'laserio:card_item' }, { id: 'laserio:card_fluid' }, { id: 'laserio:card_energy' }, { id: 'laserio:card_redstone' }], 'laserio:logic_chip', cardChip)
 
     //Gate Energy card to Lumium, where equivalent throughput can be achieved through Conduits.
     event.replaceInput({ id: 'laserio:card_energy' }, '#forge:storage_blocks/redstone', 'gtceu:lumium_foil')
@@ -21,7 +25,7 @@ ServerEvents.recipes(event => {
         ], {
             S: 'gtceu:steel_plate',
             E: 'gtceu:lv_emitter',
-            C: '#gtceu:circuits/lv',
+            C: connectorChip,
             R: 'gtceu:red_alloy_plate'
         }
     ).id('laserio:laser_connector')

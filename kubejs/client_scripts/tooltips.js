@@ -135,6 +135,7 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
     tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
+    tooltip.add('gtceu:ender_fluid_link_cover', '§4Not yet implemented.')
 
     // Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')

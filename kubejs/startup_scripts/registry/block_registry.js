@@ -162,7 +162,6 @@ StartupEvents.registry("block", event => {
 
     ores.forEach(ore => {
         event.create('dense_' + ore)
-            .displayName(`Dense ${ore.split('_').map(v => capitalize(v)).join(" ")}`)
             .soundType('stone')
             .resistance(6)
             .hardness(5)
@@ -173,7 +172,6 @@ StartupEvents.registry("block", event => {
     });
 
     event.create('dense_magma_block')
-        .displayName('Dense Magma Block')
         .soundType('stone')
         .resistance(6)
         .hardness(5)
@@ -188,18 +186,16 @@ StartupEvents.registry("block", event => {
     const casings = [
         'empowerer',
         'microverse',
-        'cryococcus',
         'cryolobus',
+        'cryococcus',
         'cryococcus_fusion',
         'dark_soularium',
         'omnic_matrix_machine',
-        'dimensional_stabilization_netherite',
-
+        'dimensional_stabilization_netherite'
     ]
 
     casings.forEach(casing => {
         event.create(`${casing}_casing`)
-            .displayName(`${casing.split('_').map(v => capitalize(v)).join(" ")} Casing`)
             .soundType('metal')
             .resistance(6).hardness(5)
             .tagBlock("mineable/pickaxe")
