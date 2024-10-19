@@ -3129,6 +3129,59 @@
 			x: 6.0d
 			y: 8.5d
 		}
+		{
+			dependencies: ["1349044BF8C04A12"]
+			description: [
+				"&2Upgraded form of the Soul Binder&r"
+				""
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!."
+			]
+			id: "3DC4B160A2B0FF9A"
+			rewards: [{
+				id: "40C6AC07AC9F6EFB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "52542C99DFA4BBBF"
+					item: "gtceu:quintessence_infuser"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "670A6FF907228EF7"
+					item: { Count: 12, id: "enderio:ensouled_chassis" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "150E1148924780FF"
+					item: { Count: 24, id: "gtceu:tungsten_frame" }
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "54C714DECB262FD1"
+					item: { Count: 36, id: "gtceu:fusion_glass" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "79C1B9BE67982463"
+					item: { Count: 5, id: "gtceu:tungstensteel_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 67L
+					id: "5D284C18C46D6F16"
+					item: { Count: 67, id: "kubejs:dark_soularium_casing" }
+					type: "item"
+				}
+			]
+			x: 25.75d
+			y: 12.0d
+		}
 	]
 	title: "Mid Game"
 }
