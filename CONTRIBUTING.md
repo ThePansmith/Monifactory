@@ -102,3 +102,13 @@ KubeJS offers a feature to automatically load resource packs & datapacks put int
 7. When dealing with long concatenated method calls or extended lists of parameters, indent any continuations of that statement on a new line, in the same way that one would indent the body of an if statement or for loop.
 8. All mod-focused scripts' filenames should be the same as that mod's namespace. (Visible when viewing item IDs) Furthermore all scripts' filenames should be entirely lowercase.
 9. For Multiblock pattern builders, always use `@` char for the controller, ` ` (space) for air and `#` for the 'any' predicate.
+
+## Updating Mods ##
+
+If you're updating mods, please make sure to test the basic functionality of every mod you're updating.
+It's easy to forget, but mod updates can break as many things as they fix - don't let that happen to Moni as well!
+
+DO NOT UPDATE:
+- Crafting Station to 1.20.1-0
+- Nuclearcraft: Neoteric
+- Not Enough Recipe Book
