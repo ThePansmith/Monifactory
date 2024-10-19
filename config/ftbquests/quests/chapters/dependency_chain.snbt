@@ -6,7 +6,7 @@
 	disable_toast: true
 	filename: "dependency_chain"
 	group: ""
-	icon: "gtceu:kanthal_coil_block"
+	icon: "gtceu:monium_frame"
 	id: "1956832191841F25"
 	order_index: 0
 	quest_links: [ ]
