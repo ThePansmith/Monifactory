@@ -5,7 +5,6 @@
 * [Contributing Guidelines](#contributing-guidelines)
   * [Introduction](#introduction)
   * [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
-  * [Ground Rules](#ground-rules)
   * [Getting Started](#getting-started)
     * [Things to Watch Out For](#things-to-watch-out-for)
 
@@ -49,6 +48,27 @@ After you have made your changes, please create a pull request. Once again, see
 more details.
 
 ## Things to Watch Out For ##
+
+### Questbook Highlighting ###
+
+| Color  | Info Highlighted |
+| ------------- | ------------- |
+| Black (0)  | Currently Unused |
+| Dark Blue (l)  | Currently Unused  |
+| Dark Green (2)  | Currently Unused  |
+| Cyan (3)  | Machines & other processing  |
+| Red (4)  | Warnings  |
+| Dark Purple (5) | Notes about things in Beta  |
+| Orange (6) | Items AND fluids  |
+| Light Gray (7) | Currently Unused  |
+| Gray (8)  | Keyboard/mouse controls  |
+| Light Blue (9)  | Content new to Monifactory |
+| Lime (A) | RF and EU Power |
+| Aqua (B) | Mod names |
+| Light Red (C) | HM/EM exclusive info |
+| Pink (D) | CWU & Data |
+| Yellow (E) | Supplemental Information |
+| White (F) | Default text |
 
 ### Config Overrides ###
 
