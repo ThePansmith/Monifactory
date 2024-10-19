@@ -6,32 +6,11 @@
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
 	order_index: 2
-	quest_links: [
-		{
-			id: "1344E3300C29A4CF"
-			linked_quest: "6A914B240E1A7BCB"
-			shape: "hexagon"
-			x: 0.5d
-			y: -3.5d
-		}
-		{
-			id: "518FB90169F41B6A"
-			linked_quest: "73C1AB31431B5C11"
-			shape: "hexagon"
-			x: 1.5d
-			y: -1.0d
-		}
-		{
-			id: "6EFDF0495132F8EC"
-			linked_quest: "715BC5C7DAC53B7B"
-			shape: "hexagon"
-			x: -1.5d
-			y: -3.5d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
+				"57E7182198B2EA9A"
 				"6A914B240E1A7BCB"
 				"715BC5C7DAC53B7B"
 			]
@@ -42,6 +21,7 @@
 				""
 				"{monifactory.simulating_resources.0006FEA1843FEA0A.description2}"
 			]
+			hide_until_deps_visible: true
 			id: "0006FEA1843FEA0A"
 			rewards: [{
 				id: "41BB142FCD5A17DD"
@@ -54,11 +34,14 @@
 				item: "hostilenetworks:loot_fabricator"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["73C1AB31431B5C11"]
+			dependencies: [
+				"73C1AB31431B5C11"
+				"0006FEA1843FEA0A"
+			]
 			description: [
 				"{monifactory.simulating_resources.6FDF37EE046349F7.description0}"
 				""
@@ -66,6 +49,7 @@
 				""
 				"{monifactory.simulating_resources.6FDF37EE046349F7.description2}"
 			]
+			hide_until_deps_visible: true
 			id: "6FDF37EE046349F7"
 			rewards: [{
 				id: "00CF22695EBB0588"
@@ -82,55 +66,6 @@
 			title: "{monifactory.simulating_resources.6FDF37EE046349F7.title}"
 			x: 3.5d
 			y: -1.0d
-		}
-		{
-			dependencies: ["5357A16B5BF62C96"]
-			description: [
-				"{monifactory.simulating_resources.3F62C4BB7F36BC98.description0}"
-				""
-				"{monifactory.simulating_resources.3F62C4BB7F36BC98.description1}"
-			]
-			disable_toast: true
-			id: "3F62C4BB7F36BC98"
-			shape: "hexagon"
-			tasks: [{
-				id: "2F5D362FB00827E4"
-				item: "gtceu:mv_chemical_reactor"
-				type: "item"
-			}]
-			title: "{monifactory.simulating_resources.3F62C4BB7F36BC98.title}"
-			x: 3.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["3F62C4BB7F36BC98"]
-			description: [
-				"{monifactory.simulating_resources.5E80297BCBEA3C27.description0}"
-				""
-				"{monifactory.simulating_resources.5E80297BCBEA3C27.description1}"
-				""
-				"{monifactory.simulating_resources.5E80297BCBEA3C27.description2}"
-				""
-				"{monifactory.simulating_resources.5E80297BCBEA3C27.description3}"
-				""
-				"{monifactory.simulating_resources.5E80297BCBEA3C27.description4}"
-			]
-			disable_toast: true
-			id: "5E80297BCBEA3C27"
-			rewards: [{
-				id: "1C6E51A8176CFB52"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "255142F1CEAD1AEA"
-				item: "kubejs:resonant_clathrate"
-				type: "item"
-			}]
-			title: "{monifactory.simulating_resources.5E80297BCBEA3C27.title}"
-			x: 5.5d
-			y: -3.5d
 		}
 		{
 			dependencies: ["715BC5C7DAC53B7B"]
@@ -503,6 +438,7 @@
 		}
 		{
 			dependencies: [
+				"57E7182198B2EA9A"
 				"72D61AFACC53A34A"
 				"3F39E9B829DAE2F2"
 			]
@@ -518,6 +454,7 @@
 				""
 				"{monifactory.simulating_resources.7A67E519745A8361.description7}"
 			]
+			hide_until_deps_visible: true
 			id: "7A67E519745A8361"
 			rewards: [{
 				id: "5E252CA9C37789FE"
@@ -557,6 +494,41 @@
 			title: "{monifactory.simulating_resources.45DD07F2BB9C6A59.title}"
 			x: -2.5d
 			y: 4.5d
+		}
+		{
+			dependencies: [
+				"57E7182198B2EA9A"
+				"645B1DCB3DA7198A"
+				"3BD20358F137E7C6"
+			]
+			description: [
+				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
+				""
+				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron, gold, tin, copper, diamonds&r and many more!), through pristine matter."
+				""
+				"Setting up &bHNN&r automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
+				""
+				"&bHNN&r machines are not sided, so you can input and output from any side."
+				""
+				"Yes, you can also use it for generating power... &owith &6Diamonds&r."
+			]
+			hide_until_deps_visible: true
+			id: "715BC5C7DAC53B7B"
+			rewards: [{
+				id: "518DD0C9237B4DBC"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "15A06F5EF4CADA4C"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			title: "&9Simulating Mobs"
+			x: -0.5d
+			y: -1.5d
 		}
 	]
 	title: "{monifactory.simulating_resources.title}"

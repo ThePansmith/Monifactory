@@ -45,7 +45,6 @@
 				""
 				"{monifactory.genesis.2A511DB40C66CF35.description1}"
 			]
-			hide: false
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
 			size: 1.5d
