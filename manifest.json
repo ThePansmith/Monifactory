@@ -1,4 +1,4 @@
-{
+/{
   "minecraft": {
     "version": "1.20.1",
     "modLoaders": [
@@ -441,7 +441,7 @@
       "required": true
     },
     {
-      "fileID": 5496566,
+      "fileID": 4770683,
       "projectID": 318551,
       "required": true
     },
