@@ -3093,46 +3093,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["745628397790ED7A"]
-			description: [
-				"While you could simply just extract power from the reactor and call it a day, you might find better luck in taking advantage of its ability to &esuperheat&r water into &9High Pressure Steam&r."
-				""
-				"&9Large Steam Turbines&r are best equiped for this, being able to use &eRotor Holders&r and &eTurbines&r to produce large amounts of power from High Pressure Steam."
-				""
-				"[\"The \", {\"text\": \"Large Turbines\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0F779BEEED8E67BB\" } },\" quest goes into more detail on how exactly these large turbines work.\"]"
-			]
-			icon: "gtceu:steam_large_turbine"
-			id: "69034B168B5134ED"
-			rewards: [{
-				count: 3
-				id: "05A240B35081D3F6"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "1CB0BAF39BD9486E"
-					item: "gtceu:steam_large_turbine"
-					type: "item"
-				}
-				{
-					count: 27L
-					id: "1BE09907EC7CAAB0"
-					item: "gtceu:steel_turbine_casing"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "31B29F8245043671"
-					item: { Count: 2, id: "gtceu:steel_gearbox" }
-					type: "item"
-				}
-			]
-			title: "&9High Pressure Steam"
-			x: 47.0d
-			y: 13.5d
-		}
-		{
 			dependencies: ["2CC50101A39EA2C0"]
 			description: [
 				"&9JEAN Gasoline is the most powerful combustion fuel, using some anomalous ingredients to generate a staggering 81920 EU per mB of fuel. The trade-off is the extremely complex processing lines you must set up for it."
