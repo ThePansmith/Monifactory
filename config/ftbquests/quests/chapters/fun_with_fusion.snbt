@@ -33,6 +33,13 @@
 			y: -2.0d
 		}
 		{
+			id: "042267F47AE0C415"
+			linked_quest: "69034B168B5134ED"
+			shape: "square"
+			x: -4.0d
+			y: -9.5d
+		}
+		{
 			id: "6888572487BED5D5"
 			linked_quest: "745628397790ED7A"
 			size: 1.5d
