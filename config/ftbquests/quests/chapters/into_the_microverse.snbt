@@ -874,9 +874,14 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6C1AAFF54A2ADB45"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"6C1AAFF54A2ADB45"
+			]
 			description: ["&6Hellish Matter&r and &6Ender Pearl&r can be crafted into Extraterrestrial Matter."]
+			hide_until_deps_visible: true
 			id: "790E3275E88265E3"
+			optional: true
 			shape: "hexagon"
 			tasks: [{
 				id: "479BA190EDA1D5F0"
@@ -972,6 +977,7 @@
 				"7DE2C9292A09FC76"
 				"790E3275E88265E3"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Very fluxy."
 				""

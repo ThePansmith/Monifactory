@@ -2739,6 +2739,89 @@
 			x: 27.25d
 			y: 8.25d
 		}
+		{
+			dependencies: [
+				"1F7F73BF81570F3C"
+				"15DBB22E3DC0AFB7"
+				"7E3A179376673590"
+			]
+			description: [
+				"&cThe 4.5th Micro Miner.&r"
+				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Aerotheum Dust&r."
+				""
+				"This miner will be your primary source of mob drops, for all, if not most, of your game."
+				""
+				"When equipped with a &6Sapling&r:"
+				"* Creeper, Skeleton and Zombie skulls"
+				"* Bone"
+				"* Rotten Flesh"
+				"* Gunpowder"
+				"* Slime Block"
+				"* Guardian Scale&r"
+				"When equipped with a &6Block of Netherrack:"
+				"* Wither Skeleton Skull and Bones"
+				"* Blaze Rod"
+				"* Blizz, Blitz and Basalz Rods"
+				"* Ghast Tear"
+				"* Magma Cream"
+				"* Drop of Evil&r"
+				"When equipped with a &6Block of Endstone:"
+				"* Enderman Skull"
+				"* Enderpearl Block"
+				"* Shulker Shell"
+				"* Shulker Pearl&r"
+				"When equipped with &6Ender Eyes:"
+				"* Dragon Lair Data"
+				"* Ender Dragon Head&r"
+				""
+				"When equipped with &6Wither Bones&r:"
+				"&6* Wither Realm Data\\n* Nether Star Block"
+			]
+			hide_until_deps_visible: true
+			id: "19C2D208A2FC9968"
+			optional: true
+			rewards: [{
+				id: "7003E20DD8EE9891"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0A014ADA1BC753F1"
+				item: "kubejs:microminer_t4half"
+				type: "item"
+			}]
+			title: "Tier Four and a Half Microminer"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F7F73BF81570F3C"
+				"2D47BFA44BDB5E6A"
+				"22E50A6923EBF5CB"
+			]
+			description: [
+				"The Eighth and a Half Micro Miner."
+				"An alternative source for &6Duranium&r (via &6Dulysite Ore&r, mission with &aGemstone Sensors&r), and an alternative source for &6Darmstadtium&r (via &6Darmstadtite Ore&r, mission with &aIridium Neutron Reflectors&r)."
+				""
+				"Minimizes waiting for the &3Fusion Reactor&r."
+			]
+			hide_until_deps_visible: true
+			id: "0C9E7E4644084C94"
+			rewards: [{
+				id: "171A48800572C311"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "769EE75FA2394FBD"
+				item: "kubejs:microminer_t8half"
+				type: "item"
+			}]
+			x: 29.25d
+			y: 16.5d
+		}
 	]
 	title: "Late Game"
 }
