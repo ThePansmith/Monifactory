@@ -1188,6 +1188,9 @@ ServerEvents.recipes(event => {
         .duration(180)
         .EUt(32)
 
+    //ME packing tape
+    event.shapeless('expatternprovider:me_packing_tape', ['gtceu:basic_tape', 'gtceu:fluix_dust']).id('expatternprovider:tape')
+
     //Misc stuff
     event.replaceInput({ id: 'expatternprovider:ingredient_buffer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
     event.replaceInput({ id: 'expatternprovider:crystal_fixer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')

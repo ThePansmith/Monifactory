@@ -39,8 +39,6 @@
 				""
 				"You don't have to make this to operate a network when channels are disabled, but if you do, &eyour network will consume less power&r than if it did not have a Controller. Plus, they look kind of cool."
 				""
-				"&mMake sure you craft the AE2 one though, and not the one from &bChisel&r!&r"
-				""
 				"Food for thought."
 			]
 			id: "7E59E0E33962D787"
@@ -405,6 +403,11 @@
 				"This means you don't have to run to your ME Pattern Providers each time you make a new pattern for them."
 			]
 			id: "2E079747A46D48CF"
+			rewards: [{
+				id: "6C75FCFA33334E30"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "2F7F08A819F2F81A"
@@ -1358,7 +1361,7 @@
 		{
 			dependencies: ["6E27B9938B280291"]
 			description: [
-				"&3Applied Energistics&r does not allow you to use tags when creating &aProcessing Patterns&r, this can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
+				"&bApplied Energistics&r does not allow you to use tags when creating &6Processing Patterns&r, this can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
 				""
 				"Instead, use &9Universal Circuits&r when creating your Processing Patterns, as all normal circuits can be converted to to their &9Universal Circuit&r equivalent, which can be used in all the same recipes as regular circuits."
 			]
@@ -1494,6 +1497,31 @@
 			title: "&9MEGA Crafting"
 			x: 7.25d
 			y: 2.5d
+		}
+		{
+			dependencies: ["1040D941027962B1"]
+			description: ["&9ME Packing Tape&r allows you to easily move &6ME Drives&r and &6Pattern Providers&r by packaging them up, which will retain their contents, such as cells and patterns. "]
+			id: "5BE41497CBA97FE5"
+			rewards: [{
+				id: "738B2A17684F1318"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Packin' up!"
+			tasks: [{
+				id: "110002C8135222FC"
+				item: {
+					Count: 1
+					id: "expatternprovider:me_packing_tape"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&9ME Packing Tape"
+			x: 6.75d
+			y: 5.5d
 		}
 	]
 	title: "Matter-Energy"
