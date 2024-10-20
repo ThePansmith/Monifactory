@@ -406,8 +406,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:tools/network_memory_card' })
     event.shapeless('ae2:memory_card', ['#gtceu:circuits/hv', 'ae2:basic_card']).id('kubejs:ae2/memory_card')
 
-
-
     //Level Emitter
     event.remove({ id: 'ae2:network/parts/level_emitter' })
     event.shapeless('ae2:level_emitter', ['minecraft:redstone_torch', 'gtceu:aluminium_plate', 'ae2:calculation_processor', '#forge:rods/stainless_steel']).id('kubejs:ae2/level_emitter')
@@ -415,12 +413,6 @@ ServerEvents.recipes(event => {
     //Energy level Emitter
     event.remove({ id: 'ae2:network/parts/energy_level_emitter' })
     event.shapeless('ae2:energy_level_emitter', ['ae2:level_emitter', '#forge:gems/certus_quartz']).id('kubejs:ae2/energy_level_emitter').id('kubejs:ae2/energy_level_emitter')
-
-
-    // Network Tool (default recipe is fine)
-
-
-    //TODO Big I/O (MAKE IN IV ASSEMBLY LINE)
 
     // Processors
     event.remove({ id: 'ae2:inscriber/calculation_processor_print' })
@@ -1069,42 +1061,42 @@ ServerEvents.recipes(event => {
         .itemInputs("4x ae2:silicon")
         .itemOutputs("4x ae2:printed_silicon")
         .duration(10)
-        .EUt(2560)
+        .EUt(2048)
 
     event.recipes.gtceu.forming_press("ae2_printed_engineering_greg")
         .notConsumable("ae2:engineering_processor_press")
         .itemInputs("4x minecraft:diamond")
         .itemOutputs("4x ae2:printed_engineering_processor")
         .duration(10)
-        .EUt(2560)
+        .EUt(2048)
 
     event.recipes.gtceu.forming_press("ae2_printed_logic_greg")
         .notConsumable("ae2:logic_processor_press")
         .itemInputs("4x minecraft:gold_ingot")
         .itemOutputs("4x ae2:printed_logic_processor")
         .duration(10)
-        .EUt(2560)
+        .EUt(2048)
 
     event.recipes.gtceu.forming_press("ae2_printed_calcuation_greg")
         .notConsumable("ae2:calculation_processor_press")
         .itemInputs("4x gtceu:certus_quartz_gem")
         .itemOutputs("4x ae2:printed_calculation_processor")
         .duration(10)
-        .EUt(2560)
+        .EUt(2048)
 
     event.recipes.gtceu.forming_press("mega_printed_accumulation_greg")
         .notConsumable("megacells:accumulation_processor_press")
         .itemInputs("4x gtceu:black_steel_plate")
         .itemOutputs("4x megacells:printed_accumulation_processor")
         .duration(10)
-        .EUt(2560)
+        .EUt(2048)
 
     //Processors
     event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg_1x")
         .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
         .inputFluids("gtceu:soldering_alloy 72")
         .itemOutputs("ae2:engineering_processor")
-        .duration(100)
+        .duration(10)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
@@ -1112,7 +1104,7 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
         .inputFluids("gtceu:soldering_alloy 72")
         .itemOutputs("ae2:logic_processor")
-        .duration(100)
+        .duration(10)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
@@ -1120,7 +1112,7 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
         .inputFluids("gtceu:soldering_alloy 72")
         .itemOutputs("ae2:calculation_processor")
-        .duration(100)
+        .duration(10)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
     
@@ -1128,7 +1120,7 @@ ServerEvents.recipes(event => {
         .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
         .inputFluids("gtceu:soldering_alloy 72")
         .itemOutputs("megacells:accumulation_processor")
-        .duration(100)
+        .duration(10)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
@@ -1172,12 +1164,32 @@ ServerEvents.recipes(event => {
         .EUt(128)
         .circuit(3)
 
+    // Extended MA
     event.remove({ id: 'expatternprovider:ex_molecular_assembler' })
     event.recipes.gtceu.assembler("kubejs:epp/ex_molecular_assembler")
         .itemInputs("8x ae2:molecular_assembler", "8x gtceu:fluix_plate", "8x ae2:capacity_card")
         .itemOutputs("expatternprovider:ex_molecular_assembler")
         .duration(240)
         .EUt(512)
+
+    //Extended Inscriber
+    event.remove({ id: 'expatternprovider:ex_inscriber' })
+    event.recipes.gtceu.assembler("kubejs:epp/ex_inscriber")
+        .itemInputs("4x ae2:inscriber", "2x ae2:capacity_card")
+        .itemOutputs("expatternprovider:ex_inscriber")
+        .duration(180)
+        .EUt(32)
+
+    //Extended Charger
+    event.remove({ id: 'expatternprovider:ex_charger' })
+    event.recipes.gtceu.assembler("kubejs:epp/ex_charger")
+        .itemInputs("4x ae2:charger", "2x ae2:capacity_card")
+        .itemOutputs("expatternprovider:ex_charger")
+        .duration(180)
+        .EUt(32)
+
+    //ME packing tape
+    event.shapeless('expatternprovider:me_packing_tape', ['gtceu:basic_tape', 'gtceu:fluix_dust']).id('expatternprovider:tape')
 
     //Misc stuff
     event.replaceInput({ id: 'expatternprovider:ingredient_buffer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
