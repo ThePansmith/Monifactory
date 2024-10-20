@@ -259,11 +259,11 @@ machines:
 
   # Whether non owners can open a machine gui
   # Default: false
-  machineOwnerGUI: true
+  machineOwnerGUI: false
 
   # Whether non owners can break a machine
   # Default: false
-  machineOwnerBreak: true
+  machineOwnerBreak: false
 
   # If High Tier (>UV-tier) GT content should be registered.
   # Items and Machines enabled with this config will have missing recipes by default.
