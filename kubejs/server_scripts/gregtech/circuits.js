@@ -206,16 +206,17 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
 
     const smds = [
-        ['transistor', 'gtceu:diamond_plate', '8x gtceu:fine_holmium_wire'],
-        ['resistor', 'gtceu:activated_netherite_dust', '4x gtceu:fine_holmium_wire'],
-        ['capacitor', 'gtceu:polyethyl_cyanoacrylate_foil', 'gtceu:holmium_foil'],
-        ['diode', 'gtceu:ruthenium_trinium_americium_neutronate_dust', '16x gtceu:fine_holmium_wire'],
-        ['inductor', 'gtceu:tritanium_ring', '16x gtceu:fine_holmium_wire']
+        ['transistor', 'gtceu:enriched_naquadah_foil', '8x gtceu:fine_holmium_wire', 2],
+        ['resistor', 'gtceu:crystal_matrix_dust', '4x gtceu:fine_holmium_wire', 4],
+        ['capacitor', 'gtceu:polybenzimidazole_foil', 'gtceu:holmium_foil', 1],
+        ['diode', 'gtceu:indium_gallium_phosphide_dust', '8x gtceu:fine_holmium_wire', 2],
+        ['inductor', 'gtceu:tritanium_ring', '4x gtceu:fine_holmium_wire', 2]
     ]
     
-    for (const [item, primary, secondary] of smds) {
+    //PECA foil to replace fluid polymer cost
+    for (const [item, primary, secondary, foil_amount] of smds) {
         event.recipes.gtceu.assembler(`complex_smd_${item}`)
-        .itemInputs(primary, secondary)
+        .itemInputs(primary, secondary, Item.of('gtceu:polyethyl_cyanoacrylate_foil', foil_amount))
         .itemOutputs(`32x kubejs:complex_smd_${item}`)
         .duration(160)
         .EUt(245760)
