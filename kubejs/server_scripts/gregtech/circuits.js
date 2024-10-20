@@ -50,9 +50,9 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:wetware_printed_circuit_board', '4x gtceu:stem_cells', '8x gtceu:polybenzimidazole_small_fluid_pipe', '4x gtceu:enderium_plate', '16x gtceu:silicone_rubber_foil', '8x gtceu:hsse_bolt')
         .inputFluids('gtceu:sterilized_growth_medium 100')
         .itemOutputs('gtceu:neuro_processing_unit')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(600)
         .EUt(80000)
-        .cleanroom(CleanroomType.CLEANROOM)
 
 
     // WIP: Matter Circuits
@@ -61,6 +61,7 @@ ServerEvents.recipes(event => {
             '8x gtceu:omnic_acid_dust')
         .inputFluids('minecraft:water 500')
         .itemOutputs('16x kubejs:matter_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(250000)
 
@@ -68,6 +69,7 @@ ServerEvents.recipes(event => {
         .itemInputs('2x kubejs:matter_circuit_board', '2x gtceu:crystal_matrix_plate', '2x gtceu:activated_netherite_double_wire', 'gtceu:highly_advanced_soc')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:matter_processing_unit')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
         .EUt(250000)
 
@@ -82,6 +84,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('2x kubejs:matter_processor')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(160)
         .EUt(250000)
 
@@ -95,6 +98,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:matter_processor_assembly')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(160)
         .EUt(250000)
 
@@ -138,6 +142,7 @@ ServerEvents.recipes(event => {
             '8x gtceu:nether_star_lens')
         .inputFluids('gtceu:omnium 288')
         .itemOutputs('16x kubejs:dimensional_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(500000)
 
@@ -146,6 +151,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:activated_netherite_double_wire', '2x gtceu:flawless_monazite_gem',  '2x gtceu:flawless_glass_gem')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:dimensional_processing_unit')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
         .EUt(1966080)
 
@@ -160,6 +166,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('2x kubejs:dimensional_processor')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(160)
         .EUt(1966080)
 
@@ -174,6 +181,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:dimensional_processor_assembly')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(160)
         .EUt(1966080)
 
@@ -221,6 +229,7 @@ ServerEvents.recipes(event => {
             '#gtceu:circuits/uv', 'gtceu:zpm_field_generator', '4x kubejs:quasi_stable_neutron_star')
         .inputFluids('gtceu:omnium 576')
         .itemOutputs('16x kubejs:monic_circuit_board')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(2000000)
 
@@ -229,6 +238,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:exquisite_glass_gem')
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:monic_processing_unit')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
         .EUt(3932160)
 
@@ -243,6 +253,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 288')
         .itemOutputs('2x kubejs:monic_processor')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(160)
         .EUt(1966080)
 
@@ -257,6 +268,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:monic_processor_assembly')
+        .cleanroom(CleanroomType.CLEANROOM)
         .duration(160)
         .EUt(3932160)
 
