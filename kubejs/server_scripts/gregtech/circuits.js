@@ -313,5 +313,19 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 4320', 'gtceu:omnium 1152')
         .itemOutputs('kubejs:monic_processor_mainframe')
         .duration(1200)
-        .EUt(134217728)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+    //SoC recipe for cheaper matter processor
+    event.recipes.gtceu.circuit_assembler('matter_processor_soc')
+        .itemInputs(
+            'kubejs:matter_processing_unit',
+            'kubejs:quantum_soc_chip',
+            '8x gtceu:fine_ruthenium_trinium_americium_neutronate_wire',
+            '8x gtceu:activated_netherite_bolt'
+        )
+        .itemOutputs('4x kubejs:matter_processor')
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(5 * 20)
+        .EUt(3932160)
+        
 })

@@ -173,10 +173,10 @@ ServerEvents.recipes(event => {
  .EUt(GTValues.VA[GTValues.LuV])
 
  event.recipes.gtceu.circuit_assembler("activated_quantum_soc_chip")
- .itemInputs('8x kubejs:quantum_soc_chip_base', '4x #gtceu:circuits/uhv', '4x kubejs:complex_smd_transistor', '64x gtceu:holmium_foil')
- .inputFluids('gtceu:soldering_alloy 144')
+ .itemInputs('8x kubejs:quantum_soc_chip_base', '4x kubejs:complex_smd_transistor', '64x gtceu:holmium_foil')
+ .inputFluids('gtceu:soldering_alloy 144', 'gtceu:omnium 144')
  .itemOutputs('8x kubejs:quantum_soc_chip')
  .cleanroom(CleanroomType.CLEANROOM)
  .duration(300)
- .EUt(GTValues.VA[GTValues.UEV])
+ .EUt(GTValues.VA[GTValues.UIV])
 })
