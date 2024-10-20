@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('2x kubejs:matter_processor')
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(160)
+        .duration(10*20)
         .EUt(250000)
 
     event.recipes.gtceu.circuit_assembler('matter_processor_assembly')
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:matter_processor_assembly')
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(160)
+        .duration(20*20)
         .EUt(250000)
 
     event.recipes.gtceu.assembly_line('matter_processor_computer')
@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:omnium 144')
         .itemOutputs('kubejs:matter_processor_computer')
-        .duration(200)
+        .duration(20*20)
         .EUt(250000)
 
     event.recipes.gtceu.assembly_line('matter_processor_mainframe')
@@ -132,8 +132,8 @@ ServerEvents.recipes(event => {
             '8x gtceu:crystal_matrix_plate') // could replace with omnium frame
         .inputFluids('gtceu:soldering_alloy 4320', 'gtceu:omnium 288')
         .itemOutputs('kubejs:matter_processor_mainframe')
-        .duration(1200)
-        .EUt(1000000)
+        .duration(2400)
+        .EUt(GTValues.VA[GTValues.UHV])
 
 
     // WIP: Dimensional Circuits
@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 144')
         .itemOutputs('2x kubejs:dimensional_processor')
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(160)
+        .duration(10*20)
         .EUt(1966080)
 
     event.recipes.gtceu.circuit_assembler('dimensional_processor_assembly')
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:dimensional_processor_assembly')
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(160)
+        .duration(20*20)
         .EUt(1966080)
 
     event.recipes.gtceu.assembly_line('dimensional_processor_computer')
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('kubejs:dimensional_processor_computer')
-        .duration(200)
+        .duration(20*20)
         .EUt(1966080)
 
     event.recipes.gtceu.assembly_line('dimensional_processor_mainframe')
@@ -219,8 +219,8 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 4320', 'gtceu:omnium 576')
         .itemOutputs('kubejs:dimensional_processor_mainframe')
-        .duration(1200)
-        .EUt(3932160)
+        .duration(2400)
+        .EUt(GTValues.VA[GTValues.UEV])
 
 
     // Monic Circuits
@@ -254,8 +254,8 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 288')
         .itemOutputs('2x kubejs:monic_processor')
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(160)
-        .EUt(1966080)
+        .duration(10*20)
+        .EUt(3932160)
 
     event.recipes.gtceu.circuit_assembler('monic_processor_assembly')
         .itemInputs(
@@ -269,7 +269,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:monic_processor_assembly')
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(160)
+        .duration(20*20)
         .EUt(3932160)
 
     event.recipes.gtceu.assembly_line('monic_processor_computer')
@@ -288,7 +288,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs('2x kubejs:monic_processor_computer')
-        .duration(200)
+        .duration(20*20)
         .EUt(3932160)
 
     event.recipes.gtceu.assembly_line('monic_processor_mainframe')
@@ -312,7 +312,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids('gtceu:soldering_alloy 4320', 'gtceu:omnium 1152')
         .itemOutputs('kubejs:monic_processor_mainframe')
-        .duration(1200)
+        .duration(3200)
         .EUt(GTValues.VA[GTValues.UIV])
 
     //SoC recipe for cheaper matter processor
