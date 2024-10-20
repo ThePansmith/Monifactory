@@ -578,6 +578,14 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(16)
 
+
+    // Skystone
+    event.recipes.gtceu.macerator('sky_stone_dust')
+        .itemInputs('ae2:sky_stone_block')
+        .itemOutputs('ae2:sky_dust')
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.ULV])
+    
     //Certus
 
     event.remove({ id: /^ae2:transform.*budding_quartz$/ })

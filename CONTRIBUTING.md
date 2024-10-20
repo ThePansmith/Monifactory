@@ -5,7 +5,6 @@
 * [Contributing Guidelines](#contributing-guidelines)
   * [Introduction](#introduction)
   * [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
-  * [Ground Rules](#ground-rules)
   * [Getting Started](#getting-started)
     * [Things to Watch Out For](#things-to-watch-out-for)
 
@@ -50,6 +49,27 @@ more details.
 
 ## Things to Watch Out For ##
 
+### Questbook Highlighting ###
+
+| Color  | Info Highlighted |
+| ------------- | ------------- |
+| Black (0)  | Currently Unused |
+| Dark Blue (l)  | Currently Unused  |
+| Dark Green (2)  | Currently Unused  |
+| Cyan (3)  | Machines & other processing  |
+| Red (4)  | Warnings  |
+| Dark Purple (5) | Notes about things in Beta  |
+| Orange (6) | Items AND fluids  |
+| Light Gray (7) | Currently Unused  |
+| Gray (8)  | Keyboard/mouse controls  |
+| Light Blue (9)  | Content new to Monifactory |
+| Lime (A) | RF and EU Power |
+| Aqua (B) | Mod names |
+| Light Red (C) | HM/EM exclusive info |
+| Pink (D) | CWU & Data |
+| Yellow (E) | Supplemental Information |
+| White (F) | Default text |
+
 ### Config Overrides ###
 
 One notable thing to watch out for when modifying this mod pack is that we have
@@ -82,3 +102,13 @@ KubeJS offers a feature to automatically load resource packs & datapacks put int
 7. When dealing with long concatenated method calls or extended lists of parameters, indent any continuations of that statement on a new line, in the same way that one would indent the body of an if statement or for loop.
 8. All mod-focused scripts' filenames should be the same as that mod's namespace. (Visible when viewing item IDs) Furthermore all scripts' filenames should be entirely lowercase.
 9. For Multiblock pattern builders, always use `@` char for the controller, ` ` (space) for air and `#` for the 'any' predicate.
+
+## Updating Mods ##
+
+If you're updating mods, please make sure to test the basic functionality of every mod you're updating.
+It's easy to forget, but mod updates can break as many things as they fix - don't let that happen to Moni as well!
+
+DO NOT UPDATE:
+- Crafting Station to 1.20.1-0
+- Nuclearcraft: Neoteric
+- Not Enough Recipe Book

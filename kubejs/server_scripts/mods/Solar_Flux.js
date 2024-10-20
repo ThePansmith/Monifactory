@@ -184,14 +184,14 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:plutonium 144', 'gtceu:curium 72')
         .itemInputs('minecraft:glowstone_dust')
         .itemOutputs('2x gtceu:sunnarium_dust')
-        .duration(4000)
-        .EUt(4000);
+        .duration(2000)
+        .EUt(GTValues.VHA[GTValues.IV]);
     event.recipes.gtceu.mixer('kubejs:sunnarium_dust_mixer_alt')
         .inputFluids('gtceu:plutonium_241 144', 'gtceu:curium 72')
         .itemInputs('minecraft:glowstone_dust')
         .itemOutputs('2x gtceu:sunnarium_dust')
-        .duration(4000)
-        .EUt(4000);
+        .duration(2000)
+        .EUt(GTValues.VHA[GTValues.IV]);
 
     event.remove({ id: 'gtceu:macerator/macerate_sunnarium_plate'})
 
@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:sunnarium_dust')
         .itemOutputs('6x gtceu:enriched_sunnarium_dust')
         .duration(2000)
-        .EUt(16000);
+        .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.remove({ id: 'gtceu:macerator/macerate_enriched_sunnarium_plate'})
     event.remove({ id: 'gtceu:macerator/macerate_dense_enriched_sunnarium_plate'})

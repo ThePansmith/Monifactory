@@ -20,7 +20,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("manyullyn")
         .ingot().fluid()
         .color(0x9949cc).iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_DENSE)
+        .blastTemp(4800, 'high')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
 		.components('4x ardite', '4x cobalt', 'mana')
 
     event.create("signalum")

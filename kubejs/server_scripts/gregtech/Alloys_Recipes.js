@@ -243,7 +243,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1200)
     event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_alternate')
     .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coal_perfect')
-		.circuit(3)
+		.circuit(4)
         .outputFluids(Fluid.of('gtceu:black_steel', 6480))
         .duration(14400) // 720s
         .EUt(240)
@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_alternate_gas')
     .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coal_perfect')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 9000))
-        .circuit(13)
+        .circuit(14)
         .outputFluids(Fluid.of('gtceu:black_steel', 6480))
         .duration(9645) // 482.25s
         .EUt(240)

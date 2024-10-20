@@ -1233,6 +1233,7 @@
 		}
 		{
 			dependencies: [
+				"1F7F73BF81570F3C"
 				"07057CDE4E021BA7"
 				"5911900438648430"
 			]
@@ -1241,6 +1242,7 @@
 				""
 				"For every Hatch it has, its buffer increases by 80M EU, and has a maximum of 1280M."
 			]
+			hide_until_deps_visible: true
 			id: "4E4F03C44623A85D"
 			size: 1.5d
 			tasks: [{

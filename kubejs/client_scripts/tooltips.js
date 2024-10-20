@@ -135,6 +135,7 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
     tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
+    tooltip.add('gtceu:ender_fluid_link_cover', '§4Not yet implemented.')
 
     // Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
@@ -157,7 +158,7 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add('extendedcrafting:auto_flux_crafter',("§7Uses large amounts of energy to convert Sculk into Sculk Cores."))
     tooltip.add('extendedcrafting:flux_alternator', ("§7Provides Energy to the Sculk Charger, from up to 3 blocks away."))
-    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table'], ['§7Cannot be inserted into!', '§7Put them in an inventory atop the table instead.'])
+    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table', 'extendedcrafting:auto_flux_crafter'], ['§7Cannot be inserted into!', '§7Put items in an inventory atop the table instead.'])
     
     tooltip.add('kubejs:excitationcoil', '§7Used for Crafting.')
     tooltip.add('gtceu:terminal', '§7Can autobuild multiblocks by shift-right-clicking a controller.')

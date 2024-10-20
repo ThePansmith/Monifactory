@@ -359,11 +359,6 @@ ServerEvents.recipes(event => {
     event.shaped('nuclearcraft:fuel_californium_hecf_249', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:californium_249', B: 'nuclearcraft:californium_252' })
     event.shaped('nuclearcraft:fuel_californium_hecf_251', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:californium_251', B: 'nuclearcraft:californium_252' })
 
-        event.recipes.gtceu.steam_turbine("steam_hp")
-        .inputFluids('nuclearcraft:high_pressure_steam 160')
-        .outputFluids('gtceu:distilled_water 1')
-            .duration(10)
-            .EUt(-512)
 
         event.recipes.gtceu.distillery('distill_tech_water')
             .inputFluids('gtceu:distilled_water 20')
