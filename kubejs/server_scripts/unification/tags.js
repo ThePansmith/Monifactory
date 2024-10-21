@@ -110,17 +110,15 @@ ServerEvents.tags('fluid', event => {
 })
 
 // Unification regexes are definited in startup script _initial.js
-ServerEvents.tags('item', event => {
-    event.removeAllTagsFrom(global.unificationPattern)
-    event.removeAllTagsFrom(global.manualUnification)
-    event.removeAllTagsFrom(global.nuclearcraftFuelPattern)
-    event.removeAllTagsFrom(global.nuclearcraftMaterialPattern)
-})
+ServerEvents.recipes((event) => {
+    event.remove({ output: global.unificationPattern });
+    event.remove({ output: global.manualUnification });
+    event.remove({ output: global.nuclearcraftFuelPattern });
+    event.remove({ output: global.nuclearcraftMaterialPattern });
 
-ServerEvents.recipes(event => {
-    event.remove({ output: global.unificationPattern })
-    event.remove({ output: global.manualUnification })
-    event.remove({ output: global.nuclearcraftFuelPattern })
-    event.remove({ output: global.nuclearcraftMaterialPattern })
-})
+    event.remove({ input: global.unificationPattern });
+    event.remove({ input: global.manualUnification });
+    event.remove({ input: global.nuclearcraftFuelPattern });
+    event.remove({ input: global.nuclearcraftMaterialPattern });
+});
 
