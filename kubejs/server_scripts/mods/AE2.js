@@ -290,79 +290,92 @@ ServerEvents.recipes(event => {
     }
     ).id('kubejs:ae2/matter_condensor')
 
-    // Storage Component 1K
+    // Storage Components
+    const storage_tiers = [
+        '1k',
+        '4k',
+        '16k',
+        '64k',
+        '256k',
+        '1m',
+        '4m',
+        '16m',
+        '64m',
+        '256m'
+    ]
+    const storage_component_ingredients = [
+        ['minecraft:glass', 'ae2:calculation_processor', 'gtceu:polyethylene', 1],
+        ['minecraft:glass', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
+        ['ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
+        ['ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polytetrafluoroethylene', 1],
+        ['ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
+        ['ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
+        ['megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polytetrafluoroethylene', 2],
+        ['megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
+        ['megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
+    ]
+    for (let index = 0; index < storage_component_ingredients.length; index++) {
+        let curTier;
+        if(index < 4) curTier = Item.of('ae2:cell_component_' + storage_tiers[index+1])
+        else curTier = Item.of('megacells:cell_component_' + storage_tiers[index+1])
+
+        let curIngredients = storage_component_ingredients[index];
+
+        let toRemove;
+        if(index < 4) toRemove = `ae2:network/cells/item_storage_components_cell_${storage_tiers[index+1]}_part`
+        else toRemove = `megacells:cells/cell_component_${storage_tiers[index+1]}`
+
+        let prevTier;
+        if(index <= 4) prevTier = Item.of('ae2:cell_component_' + storage_tiers[index])
+        else prevTier = Item.of('megacells:cell_component_' + storage_tiers[index])
+        
+        event.remove({ id: toRemove })
+        event.shaped(
+            Item.of(curTier), [
+            'ABA',
+            'SCS',
+            'ASA'
+        ], {
+            A: curIngredients[0],
+            B: curIngredients[1],
+            C: '#gtceu:circuits/' + GTValues.VN[index+2].toLowerCase(),
+            S: Item.of(prevTier)
+        }
+        ).id('kubejs:ae2/storage_component_' + storage_tiers[index+1])
+
+        //Cheaper ramp up to reduce exponential effect
+        event.recipes.gtceu.assembler(`kubejs:ae2/${storage_tiers[index+1]}_storage_assembler`)
+            .itemInputs(
+                Item.of(prevTier, 2),
+                Item.of(curIngredients[0], 2),
+                Item.of(curIngredients[1], 1),
+                '#gtceu:circuits/' + GTValues.VN[index+2].toLowerCase()
+            )
+            .inputFluids(Fluid.of(curIngredients[2], 144*curIngredients[3]))
+            .itemOutputs(curTier)
+            .EUt(240)
+            .duration(200)
+            .cleanroom(CleanroomType.CLEANROOM)
+    }
+
+    // 1K Storage Component recipes
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_1k_part' })
-    event.shaped(
-        Item.of('ae2:cell_component_1k'), [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'minecraft:glass',
-        B: 'gtceu:red_alloy_plate',
-        C: '#gtceu:circuits/lv'
+    for (let index = 0; index < 5; index++) {
+        let circuit = '#gtceu:circuits/'  + GTValues.VN[index+1].toLowerCase()
+        let glass = index == 0 ? 'minecraft:glass' : 'gtceu:tempered_glass'
+        event.shaped(
+            Item.of('ae2:cell_component_1k', Math.pow(2, index)), 
+            [
+                'ABA',
+                'BCB',
+                'ABA'
+            ], {
+                A: glass,
+                B: 'gtceu:red_alloy_plate',
+                C: circuit
+            }
+        ).id('kubejs:ae2/storage_component_1k_' + Math.pow(2, index))
     }
-    ).id('kubejs:ae2/storage_component_1k')
-
-    // Storage Component 4K
-    event.remove({ id: 'ae2:network/cells/item_storage_components_cell_4k_part' })
-    event.shaped(
-        Item.of('ae2:cell_component_4k'), [
-        'ADA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'minecraft:glass',
-        B: 'ae2:cell_component_1k',
-        C: '#gtceu:circuits/mv',
-        D: 'ae2:calculation_processor'
-    }
-    ).id('kubejs:ae2/storage_component_4k')
-
-    // Storage Component 16K
-    event.remove({ id: 'ae2:network/cells/item_storage_components_cell_16k_part' })
-    event.shaped(
-        Item.of('ae2:cell_component_16k'), [
-        'ADA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'minecraft:glass',
-        B: 'ae2:cell_component_4k',
-        C: '#gtceu:circuits/hv',
-        D: 'ae2:engineering_processor'
-    }
-    ).id('kubejs:ae2/storage_component_16k')
-
-    // Storage Component 64K
-    event.remove({ id: 'ae2:network/cells/item_storage_components_cell_64k_part' })
-    event.shaped(
-        Item.of('ae2:cell_component_64k'), [
-        'ADA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'ae2:logic_processor',
-        B: 'ae2:cell_component_16k',
-        C: '#gtceu:circuits/ev',
-        D: 'ae2:engineering_processor'
-    }
-    ).id('kubejs:ae2/storage_component_64k')
-
-    // Storage Component 256K
-    event.remove({ id: 'ae2:network/cells/item_storage_components_cell_256k_part' })
-    event.shaped(
-        Item.of('ae2:cell_component_256k'), [
-        'ADA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'ae2:logic_processor',
-        B: 'ae2:cell_component_64k',
-        C: '#gtceu:circuits/iv',
-        D: 'ae2:engineering_processor'
-    }
-    ).id('kubejs:ae2/storage_component_256k')
 
     // Wireless Receiver
     event.remove({ id: 'ae2:network/wireless_part' })
@@ -784,81 +797,6 @@ ServerEvents.recipes(event => {
         }
     }).id('kubejs:mega/accumulation_processor')
 
-    // Storage Component 1M
-    event.remove({ id: 'megacells:cells/cell_component_1m' })
-    event.shaped(
-        Item.of('megacells:cell_component_1m'), [
-        'ADA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'ae2:engineering_processor',
-        B: 'ae2:cell_component_256k',
-        C: '#gtceu:circuits/iv',
-        D: 'megacells:accumulation_processor'
-    }
-    ).id('kubejs:mega/storage_component_1m')
-
-    // Storage Component 4M
-    event.remove({ id: 'megacells:cells/cell_component_4m' })
-    event.shaped(
-        Item.of('megacells:cell_component_4m'), [
-        'ADA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'ae2:engineering_processor',
-        B: 'megacells:cell_component_1m',
-        C: '#gtceu:circuits/luv',
-        D: 'megacells:accumulation_processor'
-    }
-    ).id('kubejs:mega/storage_component_4m')
-
-    // Storage Component 4M
-    event.remove({ id: 'megacells:cells/cell_component_16m' })
-    event.shaped(
-        Item.of('megacells:cell_component_16m'), [
-        'ADA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'megacells:accumulation_processor',
-        B: 'megacells:cell_component_4m',
-        C: '#gtceu:circuits/luv',
-        D: 'gtceu:quantum_eye'
-    }
-    ).id('kubejs:mega/storage_component_16m')
-
-    // Storage Component 4M
-    event.remove({ id: 'megacells:cells/cell_component_64m' })
-    event.shaped(
-        Item.of('megacells:cell_component_64m'), [
-        'ADA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'megacells:accumulation_processor',
-        B: 'megacells:cell_component_16m',
-        C: '#gtceu:circuits/zpm',
-        D: 'gtceu:quantum_eye'
-    }
-    ).id('kubejs:mega/storage_component_64m')
-
-    // Storage Component 4M
-    event.remove({ id: 'megacells:cells/cell_component_256m' })
-    event.shaped(
-        Item.of('megacells:cell_component_256m'), [
-        'ADA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'megacells:accumulation_processor',
-        B: 'megacells:cell_component_64m',
-        C: '#gtceu:circuits/zpm',
-        D: 'gtceu:quantum_eye'
-    }
-    ).id('kubejs:mega/storage_component_256m')
-
     event.remove({ id: /megacells:cells\/standard\/.*storage_cell.*m$/ })
 
     event.remove({ id: "megacells:cells/mega_item_cell_housing" })
@@ -931,129 +869,6 @@ ServerEvents.recipes(event => {
         D: 'gtceu:fluix_plate'
     }).id('kubejs:ae2/multi_p2p_tunnel')
 
-    // Alternate Storage Component Recipes
-
-    //1k recipe stuff
-    event.shaped(
-        '2x ae2:cell_component_1k', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'gtceu:tempered_glass',
-        B: 'gtceu:red_alloy_plate',
-        C: '#gtceu:circuits/mv'
-    }
-    ).id('kubejs:ae2/storage_component_1k_double')
-
-    event.shaped(
-        '4x ae2:cell_component_1k', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'gtceu:tempered_glass',
-        B: 'gtceu:red_alloy_plate',
-        C: '#gtceu:circuits/hv'
-    }
-    ).id('kubejs:ae2/storage_component_1k_quad')
-
-    event.shaped(
-        '8x ae2:cell_component_1k', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'gtceu:tempered_glass',
-        B: 'gtceu:red_alloy_plate',
-        C: '#gtceu:circuits/ev'
-    }
-    ).id('kubejs:ae2/storage_component_1k_oct')
-
-    event.shaped(
-        '16x ae2:cell_component_1k', [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'gtceu:tempered_glass',
-        B: 'gtceu:red_alloy_plate',
-        C: '#gtceu:circuits/iv'
-    }
-    ).id('kubejs:ae2/storage_component_1k_hex')
-
-    //Cheaper ramp up to reduce exponential effect
-    event.recipes.gtceu.assembler("kubejs:ae2/4k_storage_assembler")
-        .itemInputs("2x ae2:cell_component_1k", "ae2:calculation_processor", "#gtceu:circuits/mv")
-        .inputFluids("gtceu:polyethylene 144")
-        .itemOutputs("ae2:cell_component_4k")
-        .EUt(240)
-        .duration(200)
-        .cleanroom(CleanroomType.CLEANROOM)
-        
-    event.recipes.gtceu.assembler("kubejs:ae2/16k_storage_assembler")
-        .itemInputs("2x ae2:cell_component_4k", "ae2:engineering_processor", "#gtceu:circuits/hv")
-        .inputFluids("gtceu:polyethylene 144")
-        .itemOutputs("ae2:cell_component_16k")
-        .EUt(240)
-        .duration(200)
-        .cleanroom(CleanroomType.CLEANROOM)
-        
-    event.recipes.gtceu.assembler("kubejs:ae2/64k_storage_assembler")
-        .itemInputs("2x ae2:cell_component_16k", "2x ae2:logic_processor", "ae2:engineering_processor", "#gtceu:circuits/ev")
-        .inputFluids("gtceu:polyethylene 144")
-        .itemOutputs("ae2:cell_component_64k")
-        .EUt(240)
-        .duration(200)
-        .cleanroom(CleanroomType.CLEANROOM)
-        
-    event.recipes.gtceu.assembler("kubejs:ae2/256k_storage_assembler")
-        .itemInputs("2x ae2:cell_component_64k", "2x ae2:logic_processor", "ae2:engineering_processor", "#gtceu:circuits/iv")
-        .inputFluids("gtceu:polytetrafluoroethylene 144")
-        .itemOutputs("ae2:cell_component_256k")
-        .EUt(240)
-        .duration(200)
-        .cleanroom(CleanroomType.CLEANROOM)
-        
-    event.recipes.gtceu.assembler("kubejs:mega/1m_storage_assembler")
-        .itemInputs("2x ae2:cell_component_256k", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/luv")
-        .inputFluids("gtceu:polytetrafluoroethylene 288")
-        .itemOutputs("megacells:cell_component_1m")
-        .EUt(240)
-        .duration(200)
-        .cleanroom(CleanroomType.CLEANROOM)
-        
-    event.recipes.gtceu.assembler("kubejs:mega/4m_storage_assembler")
-        .itemInputs("2x megacells:cell_component_1m", "2x ae2:engineering_processor", "megacells:accumulation_processor", "#gtceu:circuits/zpm")
-        .inputFluids("gtceu:polytetrafluoroethylene 288")
-        .itemOutputs("megacells:cell_component_4m")
-        .EUt(240)
-        .duration(200)
-        .cleanroom(CleanroomType.CLEANROOM)
-        
-    event.recipes.gtceu.assembler("kubejs:mega/16m_storage_assembler")
-        .itemInputs("2x megacells:cell_component_4m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/uv")
-        .inputFluids("gtceu:polytetrafluoroethylene 288")
-        .itemOutputs("megacells:cell_component_16m")
-        .EUt(240)
-        .duration(200)
-        .cleanroom(CleanroomType.CLEANROOM)
-        
-    event.recipes.gtceu.assembler("kubejs:mega/64m_storage_assembler")
-        .itemInputs("2x megacells:cell_component_16m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/uhv")
-        .inputFluids("gtceu:polybenzimidazole 288")
-        .itemOutputs("megacells:cell_component_64m")
-        .EUt(240)
-        .duration(200)
-        .cleanroom(CleanroomType.CLEANROOM)
-        
-    event.recipes.gtceu.assembler("kubejs:mega/256m_storage_assembler")
-        .itemInputs("2x megacells:cell_component_64m", "2x megacells:accumulation_processor", "gtceu:quantum_eye", "#gtceu:circuits/uev")
-        .inputFluids("gtceu:polybenzimidazole 288")
-        .itemOutputs("megacells:cell_component_256m")
-        .EUt(240)
-        .duration(200)
-        .cleanroom(CleanroomType.CLEANROOM)
 
     //Greg circuits
     event.recipes.gtceu.forming_press("ae2_printed_silicon_greg")
