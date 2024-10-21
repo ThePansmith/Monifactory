@@ -123,4 +123,3 @@ ServerEvents.recipes(event => {
     event.remove({ output: global.nuclearcraftFuelPattern })
     event.remove({ output: global.nuclearcraftMaterialPattern })
 })
-
