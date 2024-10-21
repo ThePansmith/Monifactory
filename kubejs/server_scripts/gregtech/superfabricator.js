@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
     fabricator('creeper', 3, '32x minecraft:coal')
     fabricator('ender_dragon', 1, 'minecraft:dragon_breath')
     fabricator('ender_dragon', 2, 'kubejs:dragon_lair_data')
-    fabricator('ender_dragon', 3, 'kubejs:ender_dragon_scale')
+    fabricator('ender_dragon', 3, '4x kubejs:ender_dragon_scale')
     fabricator('enderman', 1, '6x minecraft:ender_pearl')
     fabricator('enderman', 2, '6x minecraft:emerald')
     fabricator('enderman', 3, '2x enderio:enderman_head')
