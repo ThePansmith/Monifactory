@@ -143,31 +143,18 @@ JEIEvents.hideItems(event => {
 
     // Wireless Chargers
     event.hide(['wirelesschargers:basic_wireless_block_charger', 'wirelesschargers:advanced_wireless_block_charger'])
-
-    //Sophisticated Storage barrels
-    event.hide(/^sophisticatedstorage:.+barrel$/)
-    event.hide('sophisticatedstorage:barrel')
-
-    //Sophisticated Chests
-    event.hide(/^sophisticatedstorage:.+chest$/)
-    event.hide('sophisticatedstorage:chest')
-
-    //Sophisticated Shulkers
-    event.hide(/^sophisticatedstorage:.+shulker_box$/)
-    event.hide('sophisticatedstorage:shulker_box')
-
-    //Sophisticated Limited Drawers
-    event.hide(/^sophisticatedstorage:limited.+barrel.+/)
-
-    //Sophisticated Backpacks
-    event.hide('sophisticatedbackpacks:backpack')
-
+    
     //Sophisticated tier upgrades
     event.hide(/^sophisticatedstorage:.+tier_upgrade$/)
-    
+
     //Unused Sophisticated stack upgrades
     event.hide("sophisticatedstorage:stack_upgrade_tier_1_plus")
     event.hide("sophisticatedbackpacks:stack_upgrade_starter_tier")
+
+    //Sophisticated compacting upgrades
+    if(isExpertMode) {
+        event.hide(/^sophisticated.*(compacting|compression)_upgrade$/)
+    }
 
     //Sophisticated Experience
     event.hide(/xp_pump_upgrade/)
@@ -227,13 +214,6 @@ JEIEvents.hideItems(event => {
 })
 
 JEIEvents.addItems(event => {
-    //Sophisticated Storage Stuff
-    event.add([Item.of('sophisticatedstorage:gold_barrel', '{woodType:"spruce"}'), Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"spruce"}'), Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"spruce"}')])
-    event.add([Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}')])
-    event.add(['sophisticatedstorage:gold_shulker_box', 'sophisticatedstorage:diamond_shulker_box', 'sophisticatedstorage:netherite_shulker_box'])
-    event.add('sophisticatedbackpacks:backpack')
-    event.add(['sophisticatedstorage:basic_to_gold_tier_upgrade', 'sophisticatedstorage:gold_to_diamond_tier_upgrade', 'sophisticatedstorage:diamond_to_netherite_tier_upgrade'])
-
     // AE2 stuff
     event.add(Item.of('ae2:facade', { item: "gtceu:infinity_block" }))
 
