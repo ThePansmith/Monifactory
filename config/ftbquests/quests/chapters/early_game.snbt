@@ -162,6 +162,12 @@
 			x: 9.5d
 			y: 26.5d
 		}
+		{
+			id: "7FC84014DAAD0025"
+			linked_quest: "6D434F3B0E720A5A"
+			x: 17.5d
+			y: 22.5d
+		}
 	]
 	quests: [
 		{
@@ -1792,35 +1798,6 @@
 			title: "&2Distillery"
 			x: 17.5d
 			y: 21.0d
-		}
-		{
-			dependencies: ["48E83C38B37DFEE6"]
-			description: [
-				"Petrochemistry is the category of organic chemistry pertaining to petroleum, otherwise known as &9Oil&r."
-				""
-				"&bGregTech&r's petrochemistry may seem daunting at first, given the sheer number of chemicals and processing options, but it's actually easier to get into than you think."
-				""
-				"Oil is the starting point, and can be found in several variants which you can pump from finite natural wells on the Overworld, as well as coming renewably from &6Oilsands Ore&r and &6Soul Sand&r, and directly in liquid form from a &3Fluid Rig&r."
-				""
-				"&2The Fluid Rig can also harvest Raw Oil, Heavy Oil and Light Oil depending on your fluid vein. Raw Oil is similar to Oil, giving the same ratios when distilled but needing double the fluid. Heavy Oil and Light Oil give different ratios when distilled.&r "
-				""
-				"Start off by distilling the Oil. This will result in &9Sulfuric Heavy Fuel&r, &9Sulfuric Light Fuel&r, &9Sulfuric Naphtha&r, and/or &9Sulfuric Gas&r."
-				""
-				"These will all need to be hydrodesulfurized using &9Hydrogen&r in a &3Chemical Reactor&r or &2Oil Cracking Unit&r, which produces the non-Sulfuric versions."
-				""
-				"All of these products are useful, so figure out how you want to store the variety and large quantities of fluids."
-				""
-				"The upcoming quests will guide you through the basics of petrochemistry. Once you've mastered that, feel free to explore further."
-			]
-			icon: "gtceu:oil_bucket"
-			id: "024C0A84C054ED4B"
-			tasks: [{
-				id: "30E326A41DA04A3B"
-				type: "checkmark"
-			}]
-			title: "&2Navigating Petrochem"
-			x: 17.5d
-			y: 22.5d
 		}
 		{
 			dependencies: ["5B0200011DF8E1B6"]
