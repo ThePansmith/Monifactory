@@ -138,8 +138,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:ender_fluid_link_cover', '§4Not yet implemented.')
 
     // Sophisticated Storage
-    tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
-    tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
     tooltip.add('functionalstorage:storage_controller', '§7Previously known as a Storage Controller')
     tooltip.add('functionalstorage:framed_storage_controller', '§7Previously known as a Framed Storage Controller')
 
