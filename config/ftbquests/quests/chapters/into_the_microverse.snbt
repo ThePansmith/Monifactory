@@ -673,7 +673,7 @@
 				"3547762BC39A0B8F"
 				"4146B73F27D24131"
 			]
-			description: ["&9Dimethylamine&r and &9Chloramine&r combine together into &9Dimethylhydrazine&r. &2Or, combine Methanol, Ammonia and Hypochlorous Acid in a LCR."]
+			description: ["&9Dimethylamine&r and &9Chloramine&r combine together into &9Dimethylhydrazine&r. &2You can also combine Methanol, Ammonia and Hypochlorous Acid."]
 			id: "5E2489DE2E840738"
 			rewards: [{
 				id: "1C076188D1C62B2C"
