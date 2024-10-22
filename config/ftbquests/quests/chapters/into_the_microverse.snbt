@@ -400,7 +400,7 @@
 				""
 				"- &eMake sure you're wearing your Space Suit&r (all four pieces) and that it has a full tank of Oxygen."
 				""
-				"- Two &aEnder Crystals&r and &aTeleporters&r, with one set up to bring you back home."
+				"- Two &aWaystones&r, with one set up to bring you back home."
 				""
 				"When you're sure you're prepared, sit in your rocket and press &eSpace&r."
 				""
@@ -498,9 +498,9 @@
 				""
 				"This suit lets you breathe in space, which is kind of important."
 				""
-				"You can also make yourself some &9space upgrade trims&r, and it to any armor of your choice into a spacesuit."
+				"You can also make yourself some &9space upgrade trims&r, and use them to turn any armor of your choice into a spacesuit."
 				""
-				"You can also hide the spacesuit from your playermodel via the cosmetic armor buttons, if you wish."
+				"If you wish, you can hide the spacesuit from your playermodel via the cosmetic armor buttons."
 			]
 			icon: {
 				Count: 1
@@ -573,7 +573,7 @@
 				""
 				"In this case, you want to go to the &7Overworld's Moon&r, so select that."
 				""
-				"Then, place it in the rocket's inventory, accessed by right-clicking the rocket with an empty hand."
+				"Then, place it in the rocket's inventory, accessed by shift-right-clicking the rocket with an empty hand."
 			]
 			id: "0400F3BAB236F259"
 			rewards: [{
@@ -727,7 +727,7 @@
 				item: "gtceu:monochloramine_bucket"
 				type: "item"
 			}]
-			title: "Chloramine"
+			title: "Monochloramine"
 			x: 1.5d
 			y: -13.5d
 		}
