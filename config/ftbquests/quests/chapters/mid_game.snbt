@@ -2496,10 +2496,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: [
-				"1349044BF8C04A12"
-				"174C8EDDEF916209"
-			]
+			dependencies: ["1349044BF8C04A12"]
 			description: [
 				"The &6Powered Spawner&r is a machine from &bEnderIO&r."
 				""
