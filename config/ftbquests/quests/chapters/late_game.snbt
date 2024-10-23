@@ -194,7 +194,7 @@
 				"7E09D4E00BFA4970"
 			]
 			description: [
-				"The &3Medium Microverse Projector&r is a more powerful projector required for sending &6Tier Four&r through &6Tier Six Micro Miners&r into microverses."
+				"The &3Advanced Microverse Projector&r is a more powerful projector required for sending &6Tier Four&r through &6Tier Six Micro Miners&r into microverses."
 				""
 				"Initial missions can operate on &eIV power&r, while &eLuV power&r is required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any &6Microverse Projector Casing&r."
 				""
@@ -339,7 +339,7 @@
 				""
 				"There are two methods of creating them:"
 				""
-				"The simpler recipe uses two &6Quantum Eyes&r and two ingots worth of molten &9Gallium Arsenide&r to enhance a &6NanoCPU Wafer&r. This recipe is slow and requires substantially more &9Radon&r per craft."
+				"The simpler recipe uses two &6Quantum Eyes&r and two ingots' worth of molten &9Gallium Arsenide&r to enhance a &6NanoCPU Wafer&r. This recipe is slow and requires substantially more &9Radon&r per craft."
 				""
 				"The other route instead uses &6Indium Gallium Phosphide&r and a tiny amount of Radon. This skips the slow-crafting Quantum Eyes, using far less Radon in the process, but requires the infrastructure in place for obtaining &6Indium&r."
 				""
@@ -395,7 +395,7 @@
 		{
 			dependencies: ["40E8C7CEE285D702"]
 			description: [
-				"By baking a &2Raw Crystal Chip &rand &6Emerald Plates&r with &9Helium&r in an &3Electric Blast Furnace&r, you can create an &6Engraved Crystal Chip&r."
+				"By baking a &2Raw Crystal Chip &rand &6Emerald&r or &6Olivine Plates&r with &9Helium&r in an &3Electric Blast Furnace&r, you can create an &6Engraved Crystal Chip&r."
 				""
 				"This is a material needed for &6Crystal Circuits&r."
 			]
