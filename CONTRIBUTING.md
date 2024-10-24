@@ -6,7 +6,9 @@
   * [Introduction](#introduction)
   * [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
   * [Getting Started](#getting-started)
-    * [Things to Watch Out For](#things-to-watch-out-for)
+    * [Setting up an instance repository](#setting-up-an-instance-repository-for-use-in-dev)
+  * [Things to Watch Out For](#things-to-watch-out-for)
+    * [Questbook Highlighting](#questbook-highlighting)
 
 ## Introduction ##
 
@@ -35,46 +37,19 @@ Specifically, we are not looking for:
 
 ## Getting Started ##
 
-To begin making contributions to this project in the form of Pull Requests, you will need to create
-your own **fork** of this repository. This can be done via the GitHub web UI.
-Please see [this GitHub help article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) for more information.
+### Setting up an instance repository for use in dev ###
+If this is your first time using github, see [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) on how to create a fork and clone it to your desktop.
 
-Once you have created a **fork** of the Monifactory repository you may make the changes you want using that same web UI.
-If you want to test those changes, you'll have to make a **clone of that fork** as an instance on your launcher.
+The following guide was written with prism launcher in mind, see [here](<https://discord.com/channels/914926812948234260/1229929078547550238/1298732957204221965>) for curselauncher instructions.
 
-To do so, you should follow these steps:
-1. Make a new Monifactory instance in your launcher of choice from the latest release.
-2. Identify where on your machine that instance is located.
-* For those on Prism, it will be in `PrismLauncher/instances/Monifactory`.
-* For those on Curseforge, it will be in `curseforge/Instances/Monifactory`.
-3. You will need to move some files from this new instance into a temporary directory to be used later.
-* For those on Prism, it will be the mod .jars in `PrismLauncher/instances/Monifactory/minecraft/mods`.
-* For those on Curseforge, it will be everything in `curseforge/Instances/Monifactory`.
-4. Now, you will need to clone your fork into where the instance used to be.
-* For those on Prism, delete the `minecraft` folder and clone your fork of Monifactory into `PrismLauncher/instances/Monifactory`. This will create a new folder with the name of your fork - rename that folder to `minecraft`.
-* For those on Curseforge, clone your fork of Monifactory into `curseforge/Instances`. This will create a new folder with the name of your fork - feel free to rename this folder to "Monifactory-dev" or similar.
-6. At this point, you will need to move some files from the instance back to where they used to be for your launcher to recognize the conglomerate as a valid instance of modded Minecraft.
-* For those on Prism, move the .jar files you moved earlier back into `PrismLauncher/instances/Monifactory/minecraft/mods`.
-* For those on Curseforge, move the contents you moved earlier back into `curseforge/Instances/Monifactory`. Do NOT replace any files with this action - Keep the ones from the clone instead.
-7. At this point, you should now be able to launch this creation as you would any other modpack in your launcher.
+1. Create a new Monifactory instance from the latest release, in this example, the instance folder will be named Monifactory
+2. Open the `instances\Monifactory` folder, take everything contained within it and store it in a temporary folder (`temp`).
+3. Clone your fork of the Monifactory repository into `instances\Monifactory`, with the repository's folder being named `minecraft`. (If using the desktop app, see [here](https://cdn.discordapp.com/attachments/1229929078547550238/1298722566264848424/image.png?ex=671b41e4&is=6719f064&hm=136130e4025ea3c04f92a19888b8969615806686c97707c44b57885e40f91ac2&) for an image example.)
+4. Once the repo is installed,  go back to your temporary folder and move the files from the `temp` root folder and `temp\minecraft\mods` folder back into the Monifactory folder.
 
-If you encounter a problem and there have been mod updates since the latest release, you may need to update your mods using the mod manifest file.
-1. Look for a file named `manifest.json` in your instance and make a .zip with it inside.
-2. Use your launcher to import the zipped manifest as a new pack - this will download a bunch of updated mod .jars from Curseforge.
-3. Move the mod .jars that were just downloaded the `mods` folder of your instance.
+Once those files are moved back in place, you should be able to launch the instance as a modpack while also being to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance. 
 
-At this point, making and testing changes should be far easier. You may also make changes on your local **clone** and "push" those changes back to your **fork**, which can then be turned into a **Pull Request**. 
 
-To create a pull request, see
-[this other GitHub help article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for
-more details.
-
-### Terms: ###
-**Fork**: A duplicate of the Monifactory project under your control stored on Github.
-
-**Clone**: A duplicate of a project (In this case, your fork of Monifactory) stored locally.
-
-**Pull Request**: A request for the maintainters of Monifactory to copy the changes you have made on your **fork** into the main project.
 
 ## Things to Watch Out For ##
 
