@@ -1,9 +1,14 @@
 ## Other Frequently Asked Questions:
 See more at [FAQ.md](FAQ.md)
 
-**Fluid Drilling Rig or Multiblock Miner not working**
+**Gregtech machine GUI mostly missing**
 
-Ensure you're using exactly one energy hatch of the allowed voltage tiers.
+Most frequently found on the Large boilers and Rocket Scanner, this is a bug with Gregtech: Modern.
+There is nothing that can be done until the mod updates - feel free to try downgrading until then but you may encounter even *more* issues in the attempt.
+
+**KubeJS errors when updating on Prism Launcher**
+
+Update to Prism 9.0. Previous versions of Prism don't delete files from the previous version of Moni when updating, so any file that should be removed in a modpack update won't necessarily be deleted on your end. This can cause problems.
 
 **EMI and/or AE2 having issues with GregTech tools**
 
