@@ -1064,7 +1064,7 @@
 			description: [
 				"&6RTM Alloy&r is the fourth coil material available, increasing your EBF's operating temperature to 4500K so it can process more advanced materials."
 				""
-				"&9In Monifactory, RTM Alloy replaces tungstensteel in coil progression."
+				"&9In Monifactory, RTM Alloy replaces Tungstensteel in coil progression."
 			]
 			disable_toast: true
 			id: "6DC635766CD40FFF"
