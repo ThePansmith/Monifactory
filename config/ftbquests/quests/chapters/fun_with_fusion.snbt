@@ -932,10 +932,10 @@
 				"The &3Research Station&r is an advanced Scanner which consumes &dComputation Work&r provided by connected &3High Performance Computing Arrays&r to research &cZPM&r and higher items."
 				""
 				"The function of this multiblock is similar to the Scanner. Place the &6Data Orb&r or &6Data Module&r into the &3Object Holder&r alongside the item to be scanned. After sufficient &dCWU&r has been drawn, the item will be &cconsumed&r and the corresponding data will be written to the data item. Ensure your &3HPCA&r is supplying sufficient &dCWU/t&r - check the scan recipe in &eEMI&r for how much is required."
-				""
+				"{@pagebreak}"
 				"&3Energy&r, &3Maintenance&r, and &3Computation Hatches&r can only replace the 9 &aComputer Casings&r between the &aComputer Heat Vents&r at the back of the structure. The &3Object Holder&r &cmust face&r the &3Research Station&r controller block."
 				""
-				"nThe Research Station can be accelerated with excess &dCWU/t&r, but it &cdoes not overclock&r with extra &dEU/t&r. Initial recipes run on &dLuV&r power, but &cZPM&r will be required soon, and higher tiers of energy will be required for more advanced scans. As most Research scans take a long time, you should start this process early."
+				"The Research Station can be accelerated with excess &dCWU/t&r, but it &cdoes not overclock&r with extra &dEU/t&r. Initial recipes run on &dLuV&r power, but &cZPM&r will be required soon, and higher tiers of energy will be required for more advanced scans. As most Research scans take a long time, you should start this process early."
 			]
 			icon: "gtceu:research_station"
 			id: "1109CFC5D47FC011"
