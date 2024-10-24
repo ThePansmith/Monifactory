@@ -35,17 +35,46 @@ Specifically, we are not looking for:
 
 ## Getting Started ##
 
-To begin making contributions to this project, you will likely want to create
-your own fork of this repository. This can be done via the GitHub web UI. Please
-see [this GitHub help article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
-for more information.
+To begin making contributions to this project in the form of Pull Requests, you will need to create
+your own **fork** of this repository. This can be done via the GitHub web UI.
+Please see [this GitHub help article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) for more information.
 
-Once you have forked the repository you may make the changes you want, either in
-the web UI or by cloning the repository locally.
+Once you have created a **fork** of the Monifactory repository you may make the changes you want using that same web UI.
+If you want to test those changes, you'll have to make a **clone of that fork** as an instance on your launcher.
 
-After you have made your changes, please create a pull request. Once again, see
-[this GitHub help article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for
+To do so, you should follow these steps:
+1. Make a new Monifactory instance in your launcher of choice from the latest release.
+2. Identify where on your machine that instance is located.
+* For those on Prism, it will be in `PrismLauncher/instances/Monifactory`.
+* For those on Curseforge, it will be in `curseforge/Instances/Monifactory`.
+3. You will need to move some files from this new instance into a temporary directory to be used later.
+* For those on Prism, it will be the mod .jars in `PrismLauncher/instances/Monifactory/minecraft/mods`.
+* For those on Curseforge, it will be everything in `curseforge/Instances/Monifactory`.
+4. Now, you will need to clone your fork into where the instance used to be.
+* For those on Prism, delete the `minecraft` folder and clone your fork of Monifactory into `PrismLauncher/instances/Monifactory`. This will create a new folder with the name of your fork - rename that folder to `minecraft`.
+* For those on Curseforge, clone your fork of Monifactory into `curseforge/Instances`. This will create a new folder with the name of your fork - feel free to rename this folder to "Monifactory-dev" or similar.
+6. At this point, you will need to move some files from the instance back to where they used to be for your launcher to recognize the conglomerate as a valid instance of modded Minecraft.
+* For those on Prism, move the .jar files you moved earlier back into `PrismLauncher/instances/Monifactory/minecraft/mods`.
+* For those on Curseforge, move the contents you moved earlier back into `curseforge/Instances/Monifactory`. Do NOT replace any files with this action - Keep the ones from the clone instead.
+7. At this point, you should now be able to launch this creation as you would any other modpack in your launcher.
+
+If you encounter a problem and there have been mod updates since the latest release, you may need to update your mods using the mod manifest file.
+1. Look for a file named `manifest.json` in your instance and make a .zip with it inside.
+2. Use your launcher to import the zipped manifest as a new pack - this will download a bunch of updated mod .jars from Curseforge.
+3. Move the mod .jars that were just downloaded the `mods` folder of your instance.
+
+At this point, making and testing changes should be far easier. You may also make changes on your local **clone** and "push" those changes back to your **fork**, which can then be turned into a **Pull Request**. 
+
+To create a pull request, see
+[this other GitHub help article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for
 more details.
+
+### Terms: ###
+**Fork**: A duplicate of the Monifactory project under your control stored on Github.
+
+**Clone**: A duplicate of a project (In this case, your fork of Monifactory) stored locally.
+
+**Pull Request**: A request for the maintainters of Monifactory to copy the changes you have made on your **fork** into the main project.
 
 ## Things to Watch Out For ##
 
@@ -97,8 +126,8 @@ KubeJS offers a feature to automatically load resource packs & datapacks put int
 2. On a similar note, we use `4 Spaces` to indent, `UTF-8` character encoding, and end lines with `CRLF`. This information is visible on the bottom-right if you're using VSCode.
 3. Label things with comments! Every file should have a C-style comment at the top explaining what that file does, (Reference existing files if you don't know what that is) and please sprinkle in one-line comments throughout to explain what certain blocks of code do. _Nobody's_ code is self-explanatory.
 4. On that note, please add a space between the double line comment and its text to form comments `// like this.`
-5. When possible, use a  list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
-6. Use either one or two empty lines to delineate between distinct blocks of code in the same file.
+5. When possible, use a list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
+6. Use empty lines to delineate between distinct blocks of code in the same file - one line if the two blocks work together to perform the same function, two otherwise.
 7. When dealing with long concatenated method calls or extended lists of parameters, indent any continuations of that statement on a new line, in the same way that one would indent the body of an if statement or for loop.
 8. All mod-focused scripts' filenames should be the same as that mod's namespace. (Visible when viewing item IDs) Furthermore all scripts' filenames should be entirely lowercase.
 9. For Multiblock pattern builders, always use `@` char for the controller, ` ` (space) for air and `#` for the 'any' predicate.
@@ -106,7 +135,7 @@ KubeJS offers a feature to automatically load resource packs & datapacks put int
 ## Updating Mods ##
 
 If you're updating mods, please make sure to test the basic functionality of every mod you're updating.
-It's easy to forget, but mod updates can break as many things as they fix - don't let that happen to Moni as well!
+It's easy to forget, but mod updates can break as many things as they fix - don't let that happen to Moni's updates as well!
 
 DO NOT UPDATE:
 - Crafting Station to 1.20.1-0
