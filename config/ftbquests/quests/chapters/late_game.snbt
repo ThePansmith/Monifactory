@@ -426,13 +426,13 @@
 				""
 				"Make sure your power generation and circuit production are up to the challenge. &2None of the Assembly Line recipes require programmed circuits anymore.&r It is &anot required&r to insert items or fluids in the correct order."
 				""
-				"Notice that all numbers of required items are &emultiples of 10.&r This is to make an Assembly Line that's 10 units long, allowing for 9 inputs and one output. This is a large enough Assembly Line to make &6LuV components&r, but you'll need to expand to more inputs for later projects."
+				"This quest calls for an Assembly Line that's 10 units long, allowing for 9 inputs and one output. This is a large enough Assembly Line to make &6LuV components&r, but you'll need to expand to more inputs for later projects."
 				""
 				"The structure of the Assembly Line is a little stricter than other multiblocks:"
 				""
 				"- The &aInput Buses&r can only be placed along the bottom, must all be &8ULV&r tier, and must face downwards. The &aOutput Bus&r must be placed at the very end of the row of Input Buses, and can be any tier."
 				""
-				"- &aFluid Hatches&r and the &2Maintenance Hatch&r can only replace the &6Steel Casings&r along the bottom."
+				"- &aFluid Hatches&r can only replace the &6Steel Casings&r along the bottom."
 				""
 				"- &aEnergy Hatches&r can only be placed within the top row of &6Steel Casings&r."
 				""
@@ -455,30 +455,74 @@
 					type: "item"
 				}
 				{
+					count: 29L
 					id: "7497F00CED97F4DA"
 					item: "gtceu:solid_machine_casing"
 					type: "item"
 				}
 				{
+					count: 10L
 					id: "65DBFA3899B0BF69"
 					item: "gtceu:assembly_line_unit"
 					type: "item"
 				}
 				{
-					count: 19L
+					count: 18L
 					id: "034A6892C4736EE2"
 					item: "gtceu:assembly_line_grating"
 					type: "item"
 				}
 				{
+					count: 20L
 					id: "13EA465FE104347C"
 					item: "gtceu:laminated_glass"
 					type: "item"
 				}
 				{
 					count: 9L
-					id: "6A4AAA49FAC579FB"
-					item: "gtceu:ulv_input_bus"
+					id: "7ED2599D4180E9A6"
+					item: { Count: 9, id: "gtceu:ulv_input_bus" }
+					type: "item"
+				}
+				{
+					id: "393A504BEBE2900C"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6D2A69F8627ECAB4"
+					item: { Count: 10, id: "gtceu:assembly_line_casing" }
+					type: "item"
+				}
+				{
+					id: "1CAF65797B20AC6F"
+					item: "gtceu:data_access_hatch"
+					type: "item"
+				}
+				{
+					id: "387214B8A372DF36"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iv_energy_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_energy_input_hatch_4a"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_energy_input_hatch_16a"
+								}
+							]
+						}
+					}
+					title: "Any IV Energy Hatch"
 					type: "item"
 				}
 			]
@@ -489,7 +533,7 @@
 		{
 			dependencies: ["39FD6F1076559156"]
 			description: [
-				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r, the &3Fusion Reactor&r, and some parts from &9kubejs Evolution&r."
+				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r and the &3Fusion Reactor&r, among other things."
 				""
 				"To begin, craft a &3Scanner&r and a few &6Data Sticks&r. The initial Scanner recipes run at &6HV&r, but &1IV&r is required relatively soon so might as well make that one."
 				""
@@ -524,7 +568,7 @@
 			description: [
 				"&6Crystal CPUs&r are the cores of &6Crystal Circuits&r."
 				""
-				"You'll need an &2LuV Precision Laser Engraver&r to craft this."
+				"You'll need a &2LuV Laser Engraver&r to craft this."
 			]
 			id: "67833AE5421E10D4"
 			rewards: [{
@@ -548,7 +592,7 @@
 				"1C1B1E1BBFA079F5"
 			]
 			description: [
-				"Coming into &9Ludicrous Voltage&r, many new advanced materials will be required to craft items and components. Most of these materials require &6Tungstensteel Coils&r."
+				"Coming into &9Ludicrous Voltage&r, many new advanced materials will be required to craft items and components. Most of these materials require &6RTM Alloy Coils&r."
 				""
 				"&6Ruridit&r is an alloy of Ruthenium and Iridium. It is used in LuV components alongside &6HSS-S&r."
 				""
@@ -558,7 +602,7 @@
 				""
 				"&6Osmiridium&r (not from the ore) is used to make the &6Ludicrous Voltage Coil&r, for LuV-tier energy I/O. It is later used to make ZPM components."
 				""
-				"&6Indium Tin Barium Titanium Cuprate&r is an LuV superconductor. Its uses are more limited, but it is used in places like the &3Fusion Reactor&r."
+				"&6Indium Tin Barium Titanium Cuprate&r is a LuV superconductor. Its uses are more limited, but it is used in places like the &3Fusion Reactor&r."
 				""
 				"Finally, &6Samarium&r is used for LuV+ motors. It is obtained from &6Rare Earth&r."
 				""
@@ -680,7 +724,7 @@
 		{
 			dependencies: ["54C3B1B782FDF57F"]
 			description: [
-				"Glowing! &9But all the GTM machines glow already if shimmer is installed, so...&r"
+				"Glowing! &9But all the GTM machines glow already if Shimmer is installed, so...&r"
 				""
 				"This one takes a significant amount of time to cook, so make sure to have it going constantly."
 				""
@@ -705,7 +749,7 @@
 			description: [
 				"&6Iridium&r is an advanced material used for Micro Miners, and for alloying with &6Osmium&r into &6Osmiridium&r."
 				""
-				"You can also get tons of these from &6Platinum Group Sludge&r."
+				"You can also get tons of this from &6Platinum Group Sludge&r."
 				""
 				"&2Osmiridium 80/20 Ore and Iridosmine 80/20 Ore&r is available renewably from the Tier Four and Tier Six micro miners, as well as semi-renewably from the Tier Five micro miner."
 			]
@@ -753,11 +797,11 @@
 				"069773756716E192"
 			]
 			description: [
-				"&2Wetware and crystal-related processes require some stronger sterilisation.&r"
+				"&2Wetware and crystal-related processes require some stronger sterilization.&r"
 				""
 				"You will need to build another &3Cleanroom&r to run these recipes inside. Instead of &3Filter Casings&r, use &3Sterilizing Filter Casings&r in the top face."
 				""
-				"These casings are expensive! You'll need &3Fusion Mk.II&r to get the &6Tritanium&r."
+				"These casings are expensive! You'll need &3Fusion MK II&r to get the &6Tritanium&r."
 				""
 				"Note that a Sterile Cleanroom cannot handle recipes which require regular Cleanrooms."
 			]
@@ -786,7 +830,7 @@
 			description: [
 				"&2Bacterial Sludge will be used in the Crystal and Wetware processes."
 				""
-				"Plant matter in Plant Ball can be broken down to Bio Chaff, and broken down to Bacteria. Then, combine it with your Biomass to get Bacterial Sludge."
+				"Plant Balls can be macerated to obtain Bio Chaff, which can be further broken down to Bacteria. Then, combine it with Biomass to get Bacterial Sludge."
 				""
 				"You will also get a bit back from growing Stem Cells later."
 			]
@@ -810,7 +854,7 @@
 		{
 			dependencies: ["1AC91A3E05215569"]
 			description: [
-				"&2Use Uranium-238 or more efficiently, Uranium-235 to enrich Bacterial Sludge, and distill it to Mutagen. You can also use Naquadria to double your Enriched Bacterial Sludge yield."
+				"&2Use Uranium-238 (or more efficiently, Uranium-235) to enrich Bacterial Sludge, and distill it to Mutagen. You can also use Naquadria to double your Enriched Bacterial Sludge yield."
 				""
 				"Mutagen is used in Growth Medium production."
 			]
@@ -836,7 +880,7 @@
 			description: [
 				"&9Sterilized Growth Medium&r is needed for &6Wetware Circuits&r."
 				""
-				"You'll need to mix &6Mincemeat&r, &2Calcium, Salt, Agar, and Mutagen&r with water in a mixer to make &9Raw Growth Medium&r, then use a &3Fluid Heater&r to sterilize it. &2This is a significantly more involved process than before.&r"
+				"You'll need to mix &6Mincemeat&r, &2Calcium, Salt, Agar, and Mutagen&r in a mixer to make &9Raw Growth Medium&r, then use a &3Fluid Heater&r to sterilize it. &2This is a significantly more involved process than before.&r"
 				""
 				"Mincemeat comes from pulverizing any kind of animal meat."
 				"A &aFisher&r might be useful for this endeavor - especially &bThermal's&r &6Aquatic Entangler&r which can operate passively, produces only &6Fishes&r, and &eaccepts augments&r."
@@ -925,7 +969,7 @@
 				"&6* Bastnasite Ore"
 				"* Sphalerite Ore"
 				"* Monazite Ore"
-				"&2* Enderpearl Blocks"
+				"&2* Blocks of Ender Pearl"
 				"* Osmiridium 80/20 Ore"
 				"&6* Boron Dust"
 				"* Molybdenite Ore"
@@ -982,7 +1026,7 @@
 			description: [
 				"An otherworldly material exclusive to Microverses, &6Naquadah&r is an important material in the late game."
 				""
-				"It can be alloyed and enriched to various forms, and is the eventual source of &6Neutronium&r in a &3Mark Three Fusion Reactor&r."
+				"It can be alloyed and enriched to various forms, and is the eventual source of &6Neutronium&r in a &3MK III Fusion Reactor&r."
 			]
 			id: "424413BBCE3FD3BF"
 			rewards: [{
@@ -1003,9 +1047,9 @@
 		{
 			dependencies: ["424413BBCE3FD3BF"]
 			description: [
-				"The &6Naquadah-Doped Boule&r produces even more wafers per boule. It also is relatively cheap, due to the abundance of Naquadah that is gained from the &eTier 5 Micro Miner Mission&r."
+				"The &6Naquadah-doped Boule&r produces even more wafers per boule. It also is relatively cheap, due to the abundance of Naquadah that is gained from the &eTier 5 Micro Miner Mission&r."
 				""
-				"This boule also allows the production of &6Advanced System on Chip&r wafers, which are used to make the final forms of the circuits very cheaply. However, you might not be able to take advantage of the &6Advanced System on Chip&r yet, due to the power requirements."
+				"This boule also allows the production of &6Advanced System-on-Chip&r wafers, which are used to make the final forms of &6Quantum&r and &2Nanocircuits&r very cheaply. However, you might not be able to take advantage of the &6Advanced System-on-Chip&r yet, due to the power requirements."
 			]
 			id: "0889C9E0DD0FDF06"
 			rewards: [{
@@ -1026,7 +1070,7 @@
 		{
 			dependencies: ["28CA4E5308EC0BB9"]
 			description: [
-				"A complex material from &bThermal Expansion&r cooked in an &3Electric Blast Furnace&r, or a &2Alloy Blast Smelter&r."
+				"A complex material from &bThermal Expansion&r cooked in an &3Electric Blast Furnace&r, or an &2Alloy Blast Smelter&r."
 				""
 				"&6Enderium&r needs a lot of heat and is incredibly slow without overclocking. &2You can use small amounts of Krypton from Liquid Ender Air distillation to significantly decrease the smelting time.&r"
 				""
@@ -1102,8 +1146,8 @@
 				""
 				"Is also useful for:"
 				"&2* Uraninite Ore"
-				"* Iridosmine 80/20 Ore"
 				"* Osmiridium 80/20 Ore"
+				"* Iridosmine 80/20 Ore"
 				""
 				"Once you reach the &aHyperbolic Microverse Projector&r, this microminer can also get the following:"
 				""
@@ -1150,7 +1194,7 @@
 			description: [
 				"\"&6Dragon Eggs&r?\" You might ask. Yep."
 				""
-				"The final circuit theme, Wetware, will require a lot of them."
+				"The next circuit theme, Wetware, will require a lot of them."
 				""
 				"Tier Six Micro Miners are the first option to get some eggs. (enough for this quest, as it happens) Later on, you'll also get substantial quantities from Tier Eight Micro Miners while you accumulate &6Dragon Scales&r."
 			]
@@ -1210,7 +1254,7 @@
 			description: [
 				"&2Upgraded forms of the EBF and Vacuum Freezer.&r"
 				""
-				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!."
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!"
 				""
 				"The &aRotary Hearth Furnace&r is quite big!"
 			]
@@ -1270,7 +1314,7 @@
 				"7F669657313F2E62"
 			]
 			description: [
-				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Cryolobus&r, as well as a healthy supply of &2Cetane-Boosted Diesel &2or Gasoline&r to reach the immense heat it takes to liquefy."
+				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Cryolobus&r, as well as a healthy supply of &2Cetane-Boosted Diesel&r or &2Gasoline&r to reach the immense heat it takes to liquefy."
 				""
 				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
@@ -1305,7 +1349,7 @@
 				""
 				"This is a digital upgrade to the &3Crafting Core&r, allowing you to craft Empowerer recipes directly through &bPackagedAuto&r."
 				""
-				"The &aMarked Pedestals&r can be placed freely within three blocks distance of the Crafting block, as long as they are on the same Y-level."
+				"The &aMarked Pedestals&r can be placed freely within three blocks' distance of the Crafting block, as long as they are on the same Y-level."
 				""
 				"As usual with PackagedAuto crafters, you need to encode the recipe in the correct mode and place a copy in two places: a &3Packager&r somewhere on your network, and an &3Unpackager&r adjacent to the &3Combination Package Crafter&r."
 				""
@@ -1337,9 +1381,9 @@
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"Coating &6Cryococcus&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
+				"Coating &6Cryococcus&r with &9Liquid Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
-				"These wires losslessly transmit &4UHV&r tier, and can also be made into the final form of RF conduits that can transmit a whopping &a134 Million RF/t&r."
+				"These wires losslessly transmit &4UHV&r power, and can also be made into the final form of RF conduits that can transmit a whopping &a134 Million RF/t&r."
 			]
 			id: "186C14C113B6F3AD"
 			rewards: [{
@@ -1381,20 +1425,20 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "You only need complete one of this quest's tasks to move on"
+			subtitle: "You only need to complete one of this quest's tasks to move on"
 			tasks: [
 				{
-					id: "4B280E1FCC5B8DDC"
+					id: "1BA846C616A1DCF3"
 					item: "gtceu:trinium_dust"
 					type: "item"
 				}
 				{
-					id: "56ABB0A4A163BD0A"
+					id: "2ECFFA8C2BB912BF"
 					item: "gtceu:enriched_naquadah_dust"
 					type: "item"
 				}
 				{
-					id: "6ED52B28D264D90A"
+					id: "42C2D7CD2FF1F4D2"
 					item: "gtceu:naquadria_dust"
 					type: "item"
 				}
@@ -1441,7 +1485,7 @@
 				""
 				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &91 Trinium per 6 Naquadah processed&r."
 				""
-				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, &6Naquadah Alloy&r, among other things. You will need 14 stacks at least for a &3Fusion Reactor Mk1&r, so stock up on it."
+				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, &6Naquadah Alloy&r, among other things. You will need at least 14 stacks for a &3Fusion Reactor MK I&r, so stock up on it."
 			]
 			id: "15FAEE3F625265F4"
 			rewards: [{
@@ -1465,7 +1509,7 @@
 				"41FA85A3920EB334"
 				"15FAEE3F625265F4"
 			]
-			description: ["&2Trinium Coils&r are the eight coiil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."]
+			description: ["&2Trinium&r is the seventh coil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."]
 			id: "7A65459E4DFAAC2D"
 			rewards: [{
 				id: "0F124B2E02F2BD4E"
@@ -1522,7 +1566,7 @@
 			description: [
 				"&2A lighter and unstable Naquadah isotope."
 				""
-				"&6Naquadria&o&r is used in the construction of &6UV components&r, the &3Fusion Reactor Mk2&r, and in fusing &6Neutronium&r. Each piece of Naquadria also makes &94 times&r more power than &6Enriched Naquadah&r in &3Naquadah Reactors&r."
+				"&6Naquadria&o&r is used in the construction of &6UV components&r, the &3Fusion Reactor MK II&r, and in fusing &6Neutronium&r. Each piece of Naquadria also makes &94 times&r more power than &6Enriched Naquadah&r in &3Naquadah Reactors&r."
 			]
 			id: "5792330C6E5B87A3"
 			rewards: [{
@@ -1592,7 +1636,7 @@
 			description: [
 				"You don't need it just yet, but you can make it now."
 				""
-				"This is a critical material for the Endgame."
+				"This is a critical material for the End Game."
 			]
 			id: "4DF92773C82F4AAC"
 			rewards: [{
@@ -2638,7 +2682,7 @@
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
 			description: [
-				"The &6Advanced System-on-Chip&r (or &6ASoC&r) is the &2penultimate&r component miniaturization. These unlock the most efficient recipe for producing &2Nanocircuits and &6Quantum Circuits&r."
+				"The &6Advanced System-on-Chip&r (or &6ASoC&r) is the &2penultimate&r component miniaturization. These unlock the most efficient recipe for producing &2Nanocircuits&r and &6Quantum Circuits&r."
 				""
 				"The latter circuits must be made in a &aZPM Assembling Machine&r."
 			]
