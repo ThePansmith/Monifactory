@@ -534,11 +534,11 @@
 			dependencies: ["39FD6F1076559156"]
 			description: [
 				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r and the &3Fusion Reactor&r, among other things."
-				""
+				"{@pagebreak}"
 				"To begin, craft a &3Scanner&r and a few &6Data Sticks&r. The initial Scanner recipes run at &6HV&r, but &1IV&r is required relatively soon so might as well make that one."
 				""
 				"Press &bR&r on the item you want to craft in the and navigate to the &bScanner tab&r. This will tell you which item needs to be scanned to make the data for the new item. For example, &9LuV &6Electric Motors&r will require an &1IV&r &6Electric Motor&r to be scanned."
-				""
+				"{@pagebreak}"
 				"Place a &6Data Stick&r with the item to be scanned in the &3Scanner&r. The item will be &cconsumed&r and its data will be written to the &6Data Stick&r. Each &6Data item&r can only hold a &csingle recipe&r."
 				""
 				"Finally, place the &6Data Stick&r into the &aData Access Hatch&r of your &3Assembly Line&r. It will now be able to craft that item."
@@ -1383,7 +1383,7 @@
 			description: [
 				"Coating &6Cryococcus&r with &9Liquid Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
-				"These wires losslessly transmit &4UHV&r power, and can also be made into the final form of RF conduits that can transmit a whopping &a134 Million RF/t&r."
+				"These wires losslessly transmit &4UHV&r power, and can also be made into the final form of RF conduits that can transmit a whopping &a134 million RF/t&r."
 			]
 			id: "186C14C113B6F3AD"
 			rewards: [{
@@ -1662,7 +1662,7 @@
 			description: [
 				"The source of &9Warden Hearts&r and the valuable &9Lair of The Warden Data&r."
 				""
-				"As a bonus, brings &9Sculk Catalysts, Warden Tendrils, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+				"As a bonus, brings &9Sculk Catalysts, Warden Tendrils, &2Blocks of Ruthenium&r, and plenty of different precious metals and gems."
 			]
 			id: "5FE96C30454A0374"
 			rewards: [{
@@ -1686,7 +1686,7 @@
 			description: [
 				"With a &3Fusion Reactor&r, you can make Europium!"
 				""
-				"This element is needed for making &9Sculk related items&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
+				"This element is needed for making &9Sculk-related items&r, as well as the &6Fusion Reactor Computer MK II&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
 				""
 				"You make it by fusing molten &9Neodymium&r and &9Hydrogen&r."
 			]
@@ -1716,15 +1716,15 @@
 				"The &3Fusion Reactor&r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows. &6Sneak-right click&r the controller to enable the in-world preview."
 				""
 				"The &bEMI&r preview shows &eall valid hatch locations&r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with &2Fusion Machine Casings&r as long as you have at least &atwo Fluid Input Hatches&r and &aone Fluid Output Hatch&r. It's possible to use input/output hatches in every valid location, if you prefer."
+				"{@pagebreak}"
+				"Because of this, the quest only asks for &248 Fusion Machine Casings&r. If you want to use the minimum number of fluid hatches, you'll need to craft an additional &229 Fusion Machine Casings&r. In addition to the &a48 Fusion Machine Casings&r, you will also need &631 Fusion Glass&r or &631 Fusion Machne Casings&r. &bFusion Glass is cheaper, and looks cooler&r, but it's your choice."
 				""
-				"Because of this, the quest only asks for &248 Fusion Machine Casings&r. If you want to use the minimum number of fluid hatches, you'll need to craft an additional &229 Fusion Machine Casings&r. In addition to the &a48 Fusion Machine Casings&r, you will also need &631 Fusion Glass&r or &631 Fusion Machne Casings&r. &bFusion Glass is cheaper, and looks cooler&r, but its your choice."
-				""
-				"Each &aEnergy Hatch&r increases the reactor's power buffer. &2You cannot use 4x or 16x Energy Hatches in Fusion Reactors. &aAll 16 Energy Hatches&r are required to be able to process all Mark 1 recipes and give a power buffer of &e160M EU&r. &2However, not all energy hatches are needed to be connected to power. For example, a recipe that requires LuV power draw would only need one or more hatches connected to power, but a recipe that needs ZPM power draw would need two hatches connected to power.&r &cThey still need to be present on the structure!&r"
-				""
+				"Each &aEnergy Hatch&r increases the reactor's power buffer. &cYou cannot use 4x or 16x Energy Hatches in Fusion Reactors. &aAll 16 Energy Hatches&r are required to be able to process all Mark 1 recipes and give a power buffer of &e160M EU&r. &2However, not all energy hatches need to be connected to power. For example, a recipe that requires LuV power draw would only need one or more hatches connected to power, but a recipe that needs ZPM power draw would need at least two hatches connected to power.&r &cThey still need to be present on the structure!&r"
+				"{@pagebreak}"
 				"In addition to the recipe power drain, Fusion Reactors have a &eheat&r mechanic related to the recipe's &e\"Eu to Start\"&r. This amount of power is drained from the reactor's buffer before starting the recipe to heat up the reactor to the necessary temperature, and is independent of the recipe's EU/t cost. As such, this determines the minimum tier of reactor you need for a recipe."
 				""
 				"If the reactor stops processing, it will &erapidly lose heat&r, even if you pause it with a soft hammer. On the other hand, if the reactor is already at the required temperature for a recipe, &eno additional power&r is required to heat up the reactor! This is true even if you switch between different recipes. This mechanic incentivizes continuous use of the reactor."
-				""
+				"{@pagebreak}"
 				"If you switch to a recipe that requires more heat, &eonly the difference&r in heat values is consumed as EU to reach the target heat (up to a maximum heat equal to the reactor's current buffer)."
 				""
 				"Fusion Reactors &2overclock, but only once per fusion tier, instead of based on energy input.&r They gate the next tier of materials, so you will eventually want to make more than one."
@@ -1789,7 +1789,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK1"
+			title: "&2Fusion Reactor MK I"
 			x: 22.0d
 			y: 12.25d
 		}
@@ -1815,9 +1815,9 @@
 		{
 			dependencies: ["22144A6785524FDF"]
 			description: [
-				"&9Mesol Energy Cores&r is your first proper &9Energy Cores&r."
+				"&9Mesol Energy Cores&r are your first proper &9Energy Cores&r."
 				""
-				"They (as well as future Energy Cores) require xp juice to craft."
+				"They (as well as future Energy Cores) require XP Juice to craft."
 			]
 			id: "7C89BC235C988689"
 			rewards: [{
@@ -1881,7 +1881,7 @@
 			description: [
 				"The multiblock uses energy cores to &erelease extremely large amounts of energy at once&r to craft things. While the batteries themselves are lost, you are able to recover some of the spent energy. "
 				""
-				"&5...once energy voiding is implemented in gtm."
+				"&5...once energy voiding is implemented in GTm."
 			]
 			icon: "gtceu:discharger"
 			id: "713FAECEE5046121"
@@ -1931,7 +1931,7 @@
 			description: [
 				"The main source of &9Hadal Shards&r."
 				""
-				"&9This microminer is also to bring back Ender dragon eggs and Ender dragon scales, as well as neutronium, depending on the mission&r."
+				"&9This Micro Miner also brings back Dragon Eggs and Ender Dragon Scales, as well as Neutronium, depending on the mission&r."
 			]
 			id: "2D47BFA44BDB5E6A"
 			rewards: [{
@@ -1953,9 +1953,9 @@
 		{
 			dependencies: ["39FD6F1076559156"]
 			description: [
-				"The &3Advanced Microverse Projector II&r is a more powerful projector required for sending &6Tier Seven&r through &6Tier Ten Micro Miners&r into microverses."
+				"The &3Advanced Microverse Projector II&r is an even more powerful projector required for sending &6Tier Seven&r through &6Tier Ten Micro Miners&r into microverses."
 				""
-				"Tier Seven missions will operate on &eLuV power&r, but higher energy tiers will be required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any &6Microverse Projector Casing&r."
+				"Tier Seven missions will operate on &eLuV power&r, but higher energy tiers will be required for later missions. As with the previous projector, this structure supports overclocking and the position of buses and hatches can be swapped with any &6Microverse Projector Casing&r."
 				""
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
@@ -1983,7 +1983,7 @@
 			description: [
 				"&6Cryococcus&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r."
 				""
-				"Five &6Cryolobus Blocks&r can be processed in to create an equal output of five &6Cryococcus Blocks&r."
+				"Five &6Cryolobus Blocks&r can be processed in the Discharger to create an equal output of five &6Cryococcus Blocks&r."
 			]
 			id: "0562D9F4C441EAF9"
 			rewards: [{
@@ -2004,9 +2004,9 @@
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"&6Cryococcus&r, &6Abyss Shards&r, and &6Stabilized Einsteinium&r can be used to create a &9Abyssal Energy Core&r."
+				"&6Cryococcus&r, &9Bathyal Energy Cores&r, and &6Stabilized Einsteinium&r can be used to create a &9Abyssal Energy Core&r."
 				""
-				"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some Endgame items."
+				"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some End Game items."
 			]
 			id: "6ABD83B58FADD4DF"
 			rewards: [{
@@ -2032,7 +2032,7 @@
 				"01E542E1C9DAF5B4"
 			]
 			description: [
-				"Combines &bStellar Creation Data&r into the &9Universe Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
+				"Combines &bStellar Creation Data&r into &9Universe Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
 				""
 				"The alternate mission brings a decent quantity of &6Neutronium&r. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
 				""
@@ -2061,7 +2061,7 @@
 				"6ABD83B58FADD4DF"
 				"235C1E5B2C58B5AF"
 			]
-			description: ["&9Hadal Warp Engines&r are components needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."]
+			description: ["&9Hadal Warp Engines&r are components needed for the Tier Nine and Tier Ten Micro Miners, as well as a few End Game recipes."]
 			id: "483652BAEF59E125"
 			rewards: [{
 				id: "6D6D92F23F1DCEA5"
@@ -2084,9 +2084,9 @@
 				"6ABD83B58FADD4DF"
 			]
 			description: [
-				"&6Hadal Shards&r are a component in &bHypogean infusion&r."
+				"&6Hadal Shards&r are a component in &9Hadal Energy Cores&r and &9Hadal Warp Engines&r."
 				""
-				"They are the base material for abyssal Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Warden Data&r."
+				"They come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Warden Data&r."
 			]
 			id: "235C1E5B2C58B5AF"
 			rewards: [{
@@ -2111,11 +2111,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the sun."
+				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the Sun."
 				""
 				"Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
 				""
-				"Neutronium is made from fusing molten &9Naquadria&r, a super-enriched form of &6Naquadah&r, with molten &9Americium&r, &2or from the Tier Eight Micro Miner.&r"
+				"Neutronium is obtained by fusing &9Liquid Naquadria&r with &9Liquid Americium&r, &2or from the Tier Eight Micro Miner.&r"
 				""
 				"You might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
 			]
@@ -2158,9 +2158,9 @@
 				"235C1E5B2C58B5AF"
 			]
 			description: [
-				"The highest tier of &9energy core&r, you will these to reach the &9Creative Tank&r."
+				"The highest tier of &9energy core&r. You will need these to reach the &9Creative Tank&r."
 				""
-				"Each core requires four ingots of &6Neutronium&r and a &6Hadal Shard&r, as well as plenty of the previous energy cores."
+				"Each core requires two ingots of &6Neutronium&r and a &6Hadal Shard&r, as well as plenty of the previous energy cores."
 				""
 				"Hope you've got those Tier Eight Micro Miners automated."
 			]
@@ -2203,7 +2203,7 @@
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
-			description: ["Allows for the creation of ASoCs."]
+			description: ["Allows for the creation of HASoCs."]
 			id: "524E7A937C2D9DDD"
 			rewards: [{
 				id: "088BB71A2B6A615E"
@@ -2223,7 +2223,7 @@
 		{
 			dependencies: ["6DAB13A7BDECE94E"]
 			description: [
-				"&3World Accelerators&r accelerate the ticks of any non-GregTech machine adjacent to them. This is handy for &9kubejs Evolution Fusion&r, which is a slow process otherwise."
+				"&3World Accelerators&r accelerate the ticks of any non-GregTech machine adjacent to them."
 				""
 				"The &6HV&r WA accelerates by 8x, the &5EV&r WA accelerates by 16x, and the &1IV&r WA accelerates by 32x. They require an input of 8A of their voltage tier. Be sure to right-click the WA once with a &aScrewdriver&r to set it to &eTile Entity Mode&r, otherwise it will accelerate random ticks in a radius around it instead."
 				""
@@ -2326,7 +2326,7 @@
 		}
 		{
 			dependencies: ["56EFA6A07C7291F7"]
-			description: ["Double Plates used exclusively for the Tier Eight Micro Miner."]
+			description: ["Double Plates used exclusively for the Tier Eight and Tier Eleven Micro Miners."]
 			id: "6391447F1A411281"
 			rewards: [{
 				id: "1DAE2A0FADC5CC24"
@@ -2521,7 +2521,7 @@
 				"38791476E970C57D"
 			]
 			description: [
-				"&2Advanced SMD Components&r are new to CEu and are required for &6Crystal and Wetware circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Nano and Quantum circuits."
+				"&2Advanced SMD Components&r are new to CEu and are required for &6Crystal, Wetware, and Matter circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Nano and Quantum circuits."
 				""
 				"All of these components require &1IV&r power and liquid PBI."
 				""
@@ -2627,16 +2627,16 @@
 					type: "item"
 				}
 			]
-			title: "Naquadah Reactor Mk1"
+			title: "Naquadah Reactor I"
 			x: 11.0d
 			y: 24.0d
 		}
 		{
 			dependencies: ["425D1C34A82B054D"]
 			description: [
-				"The &3Naquadah Reactor II&r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the Mk1. The materials it requires are similar to the Mk1, and you can almost reuse the same structure. Make sure you are prepared for the UV power output by adding a &6UV Energy Output Hatch&r."
+				"The &3Naquadah Reactor II&r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the MK I. The materials it requires are similar to the MK I, and you can almost reuse the same structure. Make sure you are prepared for the UV power output by adding a &6UV Energy Output Hatch&r."
 				""
-				"This is a pretty expensive structure though, as it needs blocks of &9Omnium&r."
+				"This is a pretty expensive structure though, as it needs a block of &9Omnium&r."
 			]
 			icon: "gtceu:naquadah_reactor_ii"
 			id: "2E8AFA6B42E939B4"
@@ -2675,7 +2675,7 @@
 					type: "item"
 				}
 			]
-			title: "Naquadah Reactor Mk2"
+			title: "Naquadah Reactor II"
 			x: 13.0d
 			y: 24.0d
 		}
@@ -2733,7 +2733,7 @@
 				"5199E6FAA4B699CD"
 			]
 			description: [
-				"Interestingly enough, &eSculk itself functions great as a biobattery&r, being able to store and quickly release mass amounts of energy. The &3Sculk Charger&r should be able to get you started in tacking advantage of it."
+				"Interestingly enough, &eSculk itself functions great as a biobattery&r, being able to store and quickly release mass amounts of energy. The &3Sculk Charger&r should be able to get you started in taking advantage of it."
 				""
 				"To use it, set the recipe in the same way you would for an &3Auto Crafting Table&r, then place an inventory (such as a Barrel) on top, and connect power to &eboth the charger and a nearby pylon&r. Items can be extacted from the charger in any manner."
 				""
@@ -2766,7 +2766,7 @@
 		}
 		{
 			dependencies: ["7F75D961B102A72D"]
-			description: ["[\"While the charger itself has extreme throughput, it is recommended to either create a \",{ \"text\": \"power substation\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"36B1B083B4FA439F\" }},\", or keep the cores themselves in stock, as a single core requires 200 Million RF to craft.\"]"]
+			description: ["[\"While the charger itself has extreme throughput, it is recommended to either create a \",{ \"text\": \"power substation\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"36B1B083B4FA439F\" }},\" or keep the cores themselves in stock, as a single core requires 200 million RF to craft.\"]"]
 			id: "22144A6785524FDF"
 			rewards: [{
 				id: "5B1FA1A9ACBC0EB7"
