@@ -2872,9 +2872,9 @@
 				"458FF3F9BC8E025B"
 			]
 			description: [
-				"&9Upgraded form of the Soul Binder&r"
+				"&9The upgraded form of the Soul Binder.&r"
 				""
-				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!."
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!"
 			]
 			icon: "gtceu:quintessence_infuser"
 			id: "0608EE0A3BDE58D5"
