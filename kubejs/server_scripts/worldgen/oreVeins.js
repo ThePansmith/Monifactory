@@ -243,25 +243,16 @@ GTCEuServerEvents.oreVeins(event => {
 
 
 GTCEuServerEvents.oreVeins(event => {
-    // Make End Chromite veins more common
+    // Make End Magnetite veins more rich in Chromite
     event.modify("gtceu:magnetite_vein_end", vein => {
-        vein.weight(50)
-    })
-
-    // TODO: Remove this when GTM increases Realgar's frequency as requested
-    // Make Arsenic much more likely to appear in its vein
-    event.modify("gtceu:copper_tin_vein", vein => {
-        vein.veinedVeinGenerator(generator => generator
-            .oreBlock(GTMaterials.Chalcopyrite, 5)
-            .oreBlock(GTMaterials.Zeolite, 2)
-            .oreBlock(GTMaterials.Cassiterite, 2)
-            .rareBlock(GTMaterials.Realgar, 2)
-            .rareBlockChance(0.2)
-            .veininessThreshold(0.01)
-            .maxRichnessThreshold(0.175)
-            .minRichness(0.7)
-            .maxRichness(1.0)
-            .edgeRoundoffBegin(3)
-            .maxEdgeRoundoff(0.1))
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.Magnetite).size(1, 3))
+                .layer(l => l.weight(1).mat(GTMaterials.VanadiumMagnetite).size(1, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.Chromite).size(1, 3))
+                .layer(l => l.weight(1).mat(GTMaterials.Gold).size(1, 2))
+                .build()
+            )
+        )
     })
 })
