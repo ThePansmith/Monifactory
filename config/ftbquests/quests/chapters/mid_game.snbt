@@ -784,8 +784,6 @@
 				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
 				""
 				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r."
-				""
-				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Tag Filter&r set to 'forge:hot_ingots' with a high piority."
 			]
 			id: "74832ED7B78A6AEA"
 			rewards: [{
@@ -1094,7 +1092,7 @@
 				title: "A Centrifuge"
 				type: "item"
 			}]
-			title: "Air Cetrifuging"
+			title: "Air Centrifuging"
 			x: 34.0d
 			y: -4.5d
 		}

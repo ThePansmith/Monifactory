@@ -279,7 +279,7 @@
 				""
 				"&aLV Batteries&r were very simple to make, but more effective forms of power storage will be more complex to build, so we'll need to lay the groundwork now."
 				""
-				"Put your &3Centrifuge&r to work for the &6Antimony&r you'll need, which comes in tiny piles from processing &6Tetrahedrite Ore&r and &6Stibnite Ore&r."
+				"Put your &3Centrifuge&r to work for the &6Antimony&r you'll need, which comes from &6Stibnite Ore&r and processing &6Tetrahedrite Ore&r and &6Realgar Ore&r."
 			]
 			icon: "gtceu:lv_canner"
 			id: "74935A3553451178"
@@ -652,7 +652,7 @@
 			description: [
 				"You'll need a variety of &alenses&r for use in &3Precision Laser Engravers&r, all of which are made in the &2Lathe&r."
 				""
-				"Initially you'll need a &a&3&2Ruby Lens&r. Soon you will need &2Diamond, Emerald, Topaz, and Sapphire Lenses&r. &2You can choose to use an MV Lathe to get a lens from a plate, or sift for an Exquisite Gem and use an LV Lathe."
+				"Initially you'll need a &a&3&2Ruby Lens&r. Soon you will need &2Diamond, Emerald, and Sapphire Lenses. &2You can choose to use an MV Lathe to get a lens from a plate, or sift for an Exquisite Gem and use an LV Lathe."
 			]
 			icon: "gtceu:ruby_lens"
 			id: "21B917932F5B25BA"
@@ -854,7 +854,7 @@
 				"The &6Machine Controller&r is a cover that manages the operation of &bGregTech&r machines, similar to a &aSoft Hammer&r. These are crucial for &epassive automation&r, where a machine is dedicated to keeping something in stock for you."
 				""
 				"\"Machines\" here is broader than you might think. It of course works on single-block machines, but can also be used on &eMultiblock Controllers&r like your &3Electronic Blast Furnace&r. But it's even more flexible than that: you can use it on any &bGregTech&r block that accepts transfer covers, as long as the controllable cover is placed on it first! This means it also works for things like &6Chests&r, &6Drums&r, and Multiblock inputs."
-				""
+				"{@pagebreak}"
 				"The cover works by detecting a &eredstone signal&r. By default, the entire machine will be disabled if a sufficiently strong signal is detected by the cover."
 				""
 				"When you open the Machine Controller's GUI with a &aScrewdriver&r, you will see several options for configuring its behavior:"
@@ -968,8 +968,23 @@
 			shape: "hexagon"
 			subtitle: "Iron The Third"
 			tasks: [{
-				id: "678C2DC44ECEC7D1"
-				item: "gtceu:sodium_persulfate_bucket"
+				id: "51BA79F86129325D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:sodium_persulfate_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iron_iii_chloride_bucket"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "&2Sodium Persulfate and Iron III Chloride"
@@ -1588,6 +1603,7 @@
 			dependencies: [
 				"0E010F5348FC89BF"
 				"48E83C38B37DFEE6"
+				"6D434F3B0E720A5A"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -2203,7 +2219,7 @@
 		{
 			dependencies: ["61AD3760E271B431"]
 			description: [
-				"The &6Steam Seperator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				"The &6Steam Separator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
 				""
 				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
 			]
