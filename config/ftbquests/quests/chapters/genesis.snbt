@@ -665,9 +665,9 @@
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
-			description: ["At this point, you might as well just make a &3Multi Smelter&r. But it does smelt items at a blazing quick 5 ticks"]
+			description: ["At this point, you might as well just make a &3Multi Smelter&r. But it does smelt items at a blazing quick 5 ticks."]
+			hide_until_deps_complete: true
 			id: "69E77BD01CFF65EB"
-			invisible: true
 			rewards: [{
 				id: "2BBD659B19ED9807"
 				item: "kubejs:moni_nickel"

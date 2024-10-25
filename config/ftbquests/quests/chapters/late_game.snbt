@@ -1485,7 +1485,7 @@
 				""
 				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &91 Trinium per 6 Naquadah processed&r."
 				""
-				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, &6Naquadah Alloy&r, among other things. You will need at least 14 stacks for a &3Fusion Reactor MK I&r, so stock up on it."
+				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, and &6Naquadah Alloy&r, among other things. You will need at least 14 stacks for a &3Fusion Reactor MK I&r, so stock up on it."
 			]
 			id: "15FAEE3F625265F4"
 			rewards: [{
@@ -1645,6 +1645,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "...Did it just move?"
 			tasks: [{
 				id: "19750B567D0D0ABC"
 				item: "kubejs:the_ultimate_material"
@@ -1867,6 +1868,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "It continues to beat, even after removal from its host."
 			tasks: [{
 				id: "7615C990816E6132"
 				item: "kubejs:warden_heart"
@@ -2853,6 +2855,7 @@
 			]
 			hide_until_deps_visible: true
 			id: "0C9E7E4644084C94"
+			optional: true
 			rewards: [{
 				id: "171A48800572C311"
 				item: "kubejs:moni_quarter"

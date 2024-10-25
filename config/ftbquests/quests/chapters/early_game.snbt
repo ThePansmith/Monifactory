@@ -1189,7 +1189,7 @@
 				""
 				"This quest doesn't ask for coils, hatches or buses: feel free to choose whatever combination you want. You'll need &a8 coil blocks&r, &a1 input bus&r, &a1 output bus&r, and &21 maintenance hatch&r, &21 muffler hatch&r, and at least &a1 energy hatch&r, all of any tier."
 				""
-				"&9The multismelter can have its mode swapped between Electric Furnace and Alloy Smelter recipes by pressing the robot arm button in its GUI&r. Some other multiblocks use this mechanic as well."
+				"&9The Multi Smelter can have its mode swapped between Electric Furnace and Alloy Smelter recipes by pressing the robot arm button in its GUI&r. Some other multiblocks use this mechanic as well."
 			]
 			icon: "gtceu:multi_smelter"
 			id: "2C3C6D2038B01948"
@@ -1214,7 +1214,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Multismelter"
+			title: "&9Multi Smelter"
 			x: 5.25d
 			y: 16.0d
 		}
