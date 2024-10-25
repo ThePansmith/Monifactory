@@ -771,7 +771,7 @@
 				"61BE0215F377C510"
 			]
 			description: [
-				"Using the &6Corrupted Universe Data&r and a Tier Eleven Micro Miner, Scrap can be retrieved. Scrap can be sifted into various bits of ruined tech, which then can be recycled into &6Holmium&r, each with their own miniature processing line."
+				"Using the &6Shattered Universe Data&r and a Tier Eleven Micro Miner, Scrap can be retrieved. Scrap can be sifted into various bits of ruined tech, each of which go through their own miniature processing line to be recycled into &6Holmium&r."
 				""
 				"Scrap processing can also yield a variety of other important elements."
 			]
@@ -1000,7 +1000,7 @@
 				"113E9543ADB1666B"
 				"45B17E923E03264B"
 			]
-			description: ["Combining &6Eternal Catalysts&r, &6Netherite Ingots&r, and &6Neutronium Ingots&r will give you the core to one of the most powerful materials."]
+			description: ["Combining &6Eternal Catalysts&r, &6Activated Netherite Ingots&r, and &6Neutronium Ingots&r will give you the core to one of the most powerful materials."]
 			id: "63EB8CC34802E56A"
 			shape: "hexagon"
 			subtitle: "Are you ready to go infinite?"
