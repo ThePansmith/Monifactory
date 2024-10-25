@@ -692,7 +692,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('N', Predicates.blocks("gtceu:omnium_frame"))
             .where('V', Predicates.blocks("ae2:quartz_vibrant_glass"))
             .where('W', Predicates.blocks("kubejs:universal_warp_core"))
-            .where('Y', Predicates.blocks("gcyr:dyson_sphere_casing"))
+            .where('Y', Predicates.blocks("kubejs:dimensional_stabilization_netherite_casing"))
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("kubejs:block/microverse/casing",
@@ -808,7 +808,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
             .where('L', Predicates.blocks(GCyMBlocks.CASING_LARGE_SCALE_ASSEMBLING.get()))
             .where('O', Predicates.blocks(GTBlocks.CASING_ASSEMBLY_LINE.get()))
-            .where('F', Predicates.blocks(GTBlocks.FUSION_CASING_MK3.get()))
+            .where('F', Predicates.blocks("kubejs:cryococcus_fusion_casing"))
             .where('R', Predicates.blocks(GTBlocks.CASING_GRATE.get())
                 .or(Predicates.abilities(PartAbility.DATA_ACCESS).setExactLimit(1)))
             .where('M', Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
