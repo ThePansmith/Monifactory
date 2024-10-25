@@ -93,8 +93,9 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(10, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Magnetite).size(1, 3))
+                .layer(l => l.weight(2).mat(GTMaterials.Magnetite).size(1, 3))
                 .layer(l => l.weight(1).mat(GTMaterials.VanadiumMagnetite).size(1, 1))
+                .layer(l => l.weight(3).mat(GTMaterials.Chromite).size(1, 2))
 				.layer(l => l.weight(5).mat(GTMaterials.Gold).size(1, 4))
             )
         )
