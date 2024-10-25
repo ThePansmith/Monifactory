@@ -20,7 +20,7 @@
 			]
 			id: "261F7D50E23B0789"
 			size: 2.0d
-			subtitle: "&oThis step requires a Alloy Smelter at voltage &lLV&r&o or higher.&r"
+			subtitle: "&oThis step requires an Alloy Smelter at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "6D25E047579465DD"
 				item: "hostilenetworks:prediction_matrix"
@@ -34,7 +34,7 @@
 				"500B77982B9CDF9B"
 				"3BC7B5321B707F78"
 			]
-			description: ["Combine your &6Quartz&r and &6Resonant Ender&r to make &6Resonant Clathrate&r. One &3Electrolyser&r making &6Quartz&r supports one &3Chemical Reactor &rof the same tier."]
+			description: ["Combine your &6Quartz&r and &6Resonant Ender&r to make &6Resonant Clathrate&r. One &3Electrolyzer&r making &6Quartz&r supports 2.4 &3Chemical Reactors &rof the same tier."]
 			id: "3E90A188715DA88A"
 			size: 1.5d
 			subtitle: "&oThis step requires a Chemical Reactor at voltage &lMV&r&o or higher.&r"
@@ -48,9 +48,9 @@
 		}
 		{
 			dependencies: ["3E90A188715DA88A"]
-			description: ["Smelt your &6Resonant Clathrate&r into &6Pulsating Dust&r. If you're using a &3Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r. You can fuel them with &6Sugar Cane&r. You might want to keep it as a &3Electric Furnace&r, depending on your circumstance. "]
+			description: ["Smelt your &6Resonant Clathrate&r into &6Pulsating Dust&r. If you're using a &3Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r. You can fuel them with &6Sugar Cane&r. You might want to keep it as an &3Electric Furnace&r, depending on your circumstances. "]
 			id: "2B4F44E19AA7A1B6"
-			subtitle: "&oThis step requires a Furnace"
+			subtitle: "&oThis step requires a Furnace."
 			tasks: [{
 				id: "39B409F800210783"
 				item: "kubejs:pulsating_dust"
@@ -64,7 +64,7 @@
 			description: ["Melt your &6Ender Pearls&r into &6Resonant Ender&r."]
 			icon: "thermal:ender_bucket"
 			id: "500B77982B9CDF9B"
-			subtitle: "&oThis step requires an Extractor of tier &lLV&r&o or higher.&r"
+			subtitle: "&oThis step requires an Extractor at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "6B06F7499D051242"
 				type: "checkmark"
@@ -75,7 +75,7 @@
 		}
 		{
 			dependencies: ["57E7182198B2EA9A"]
-			description: ["Your first source of &6Ender Pearls&r could be &6Ender Lillies&r. However, that is too manual and slow for the purpose &6Ender Pearls&r are needed for here. Instead, you can make a net-positive &6Pulsating Prediction Matrix&r setup that uses &6Enderman Data Models&r to produce &6Ender Pearls&r. A Self-Aware &6Enderman Data Model&r can supply enough &6Ender Pearls&r to support the running of 6.2 other models."]
+			description: ["You can make a net-positive &6Pulsating Prediction Matrix&r setup that uses &6Enderman Data Models&r to produce &6Ender Pearls&r. A Self-Aware &6Enderman Data Model&r can supply enough &6Ender Pearls&r to support the running of 6.2 other models."]
 			id: "50FB5E0B0E0B142F"
 			tasks: [{
 				id: "3B35A9161911CB96"
@@ -120,7 +120,7 @@
 			dependencies: ["1881488CEB982FCD"]
 			description: ["Mainly used for decorational blocks. Still part of &eCobbleworks&r I guess."]
 			id: "6E06505BC7636985"
-			subtitle: "This step requires a Furnace"
+			subtitle: "&oThis step requires a Furnace."
 			tasks: [{
 				id: "7429EE615EFC6A1C"
 				item: "minecraft:stone"
@@ -202,7 +202,7 @@
 			dependencies: ["7A3F3FB2774A4632"]
 			description: ["Split your &6Clay Dust&r to make &6Sodium Dust&r, &6Silicon Dust&r, &6Lithium Dust&r, and &6Aluminium Dust&r.&r This is extremely important to passive, as you will need a lot of these resources, and this is the best way to get them."]
 			id: "1D4B663AD87CA3C1"
-			subtitle: "&oThis step requires a Electrolyser at voltage &lLV&r&o or higher.&r"
+			subtitle: "&oThis step requires a Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "78F2F922F7B7F0EA"
 				item: "gtceu:sodium_dust"
@@ -214,7 +214,7 @@
 		}
 		{
 			description: [
-				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
+				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow but cheap; &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster; and &bGregTech &6Infinite Water Covers&r, which are much more expensive, but save space because they're covers, and make water 16x faster than &6Accumulators&r."
 				""
 				"Right now, you should probably use the &6Aqueous Accumulator&r."
 				""
@@ -261,7 +261,7 @@
 		}
 		{
 			dependencies: ["3380CBA4E4010EEC"]
-			description: ["Break up your &6Sand&r into &6Dust&r. Used for nothing, apart from turning into &6Clay&r and &6Netherrack&r."]
+			description: ["Break up your &6Sand&r into &6Dust&r. Used for nothing, apart from &6Clay&r and &6Netherrack&r."]
 			id: "626330BB4A59E567"
 			subtitle: "&oThis step requires a Forge Hammer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
@@ -289,7 +289,7 @@
 			description: [
 				"&6Lava&r can be achieved in two main ways. The first is using a &3Chemical Reactor&r to turn &6Magma Blocks&r into &6Lava&r. The second is using a &bGregTech &6Fluid Drill&r in the Nether above a &6Lava&r vein."
 				""
-				"In this case, you'll need &6Lava&r for &6Netherrack&r. You won't need much, although &6Lava&r can also be centrifuged for useful resources, and will be used heavily in the End Game for &6Lava Infused Crystals&r."
+				"In this case, you'll need &6Lava&r for &6Netherrack&r. You won't need much, although &6Lava&r can also be centrifuged for useful resources."
 			]
 			icon: "minecraft:lava_bucket"
 			id: "36100ACD3655DAFF"
@@ -332,7 +332,7 @@
 		}
 		{
 			dependencies: ["36100ACD3655DAFF"]
-			description: ["Cool down your &6Lava&r into &6Obsidian&r. You'll need a lot of this, so it's probably wise to use &3Rock Breakers&r once you hit &6HV&r, as they don't consume anything to produce &6Obsidian&r."]
+			description: ["Cool down your &6Lava&r into &6Obsidian&r. You'll need a lot of this, so it's probably wise to use &3Rock Breakers&r once you hit &6HV&r, as they produce &6Obsidian&r without consuming anything."]
 			id: "6B4A50B6F9F835EF"
 			subtitle: "&oThis step requires a Fluid Solidifier at voltage &lLV&r&o or higher, or a Rock Breaker at voltage &lHV&r&o or higher.&r"
 			tasks: [{
@@ -359,9 +359,9 @@
 		{
 			dependencies: ["21654B6E703A2923"]
 			description: [
-				"Break up your &6Sandstone&r into &6Saltpeter&r. This is probably the best way to get &6Saltpeter&r, which you'll need a lot for &6Aerotheum Dust&r. You can also get &6Saltpeter&r from &bHostile Neural Networks&r."
+				"Break up your &6Sandstone&r into &6Saltpeter&r. This is probably the best way to get &6Saltpeter&r, which you'll need a lot of for &6Aerotheum Dust&r. You can also get &6Saltpeter&r from &bHostile Neural Networks&r."
 				""
-				"You can also electrolyse it for &6Potassium&r, although it isn't recommended because of how easily you can get &6Potassium&r, such as from &9Deepslate &3Processing&r, and how much &6Saltpeter&r it costs."
+				"You can also electrolyze it for &6Potassium&r, although that isn't recommended because of how easily you can get &6Potassium&r from other sources and how much &6Saltpeter&r it costs."
 			]
 			id: "1349FBBCE3041081"
 			subtitle: "&oThis step requires a Macerator at voltage &lLV&r&o or higher.&r"
@@ -387,7 +387,7 @@
 		}
 		{
 			dependencies: ["599012DB0B179B3B"]
-			description: ["Seperate your &6Quartz Sand&r into &6Quartzite Dust&r and &6Certus Quartz Dust&r. This is a good renewable source of &6Certus Quartz&r, which you need for &bApplied Energistics 2&r."]
+			description: ["Separate your &6Quartz Sand&r into &6Quartzite Dust&r and &6Certus Quartz Dust&r. This is a good renewable source of &6Certus Quartz&r, which you need for &bApplied Energistics 2&r."]
 			id: "201B129579ACF449"
 			subtitle: "&oThis step requires a Centrifuge at voltage &lLV&r&o or higher.&r"
 			tasks: [
@@ -402,12 +402,12 @@
 					type: "item"
 				}
 			]
-			title: "Quartzite and Certus Quartz"
+			title: "Quartzite and Certus Quartz Dust"
 			x: 8.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["21654B6E703A2923"]
+			dependencies: ["3380CBA4E4010EEC"]
 			description: ["Crush your &6Sand&r into &6Quartz Sand&r. Can be centrifuged into useful resources."]
 			id: "599012DB0B179B3B"
 			subtitle: "This step requires a Macerator at voltage &lLV&r&o or higher.&r"
@@ -420,10 +420,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["599012DB0B179B3B"]
-			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r. You can fuel them with &6Sugar Cane&r. The &3Arc Furnace&r doubles your glass though. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
+			dependencies: ["3380CBA4E4010EEC"]
+			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r, which you can fuel with &6Sugar Cane&r. However, using an &3Arc Furnace&r doubles your glass output. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
 			id: "33351123F08D92BE"
-			subtitle: "&oThis step requires a Furnace"
+			subtitle: "&oThis step requires a Furnace."
 			tasks: [{
 				id: "70D37DC6A4C89B21"
 				item: {
@@ -455,7 +455,7 @@
 		}
 		{
 			dependencies: ["69BFFF8BFB3B3B5C"]
-			description: ["Seperate your &6Glass Dust&r into &6Silicon Dioxide Dust&r. Can be electrolysed into useful resources."]
+			description: ["Seperate your &6Glass Dust&r into &6Silicon Dioxide Dust&r. Can be electrolyzed into useful resources."]
 			id: "3B8EFDA817243B9F"
 			subtitle: "&oThis step requires a Centrifuge at voltage &lLV&r&o or higher.&r"
 			tasks: [{
@@ -470,7 +470,7 @@
 			dependencies: ["3B8EFDA817243B9F"]
 			description: ["Split your &6Silicon Dioxide Dust&r into &6Silicon Dust and Oxygen&r. This is the best source of Early Game &6Oxygen&r, although distilling &6Liquid Air&r may be better later, depending on your situation."]
 			id: "6E16CEC90AA82C32"
-			subtitle: "&oThis step requires a Electrolyser at voltage &lLV&r&o or higher.&r"
+			subtitle: "&oThis step requires a Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "5E475348CEFAFBBF"
 				item: "gtceu:silicon_dust"
@@ -481,9 +481,9 @@
 		}
 		{
 			dependencies: ["33351123F08D92BE"]
-			description: ["Break up your &6Sand&r into &6Quartz&r. An &3Arc Furnace&r making &6Glass&r supports 2.5 &3Electrolysers&r of the same tier. You will need a lot of &6Quartz&r, so its crucial that you passive this."]
+			description: ["Turn your &6Glass&r into &6Quartz&r. An &3Arc Furnace&r making &6Glass&r supports 2.5 &3Electrolyzers&r of the same tier. You will need a lot of &6Quartz&r, so it's crucial that you passive this."]
 			id: "6792DF5F9F320B98"
-			subtitle: "&oThis step requires a Electrolyser at voltage &lLV&r&o or higher.&r"
+			subtitle: "&oThis step requires a Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "79199213561E6E2C"
 				item: "minecraft:quartz"
@@ -520,9 +520,9 @@
 		}
 		{
 			dependencies: ["456239275544A789"]
-			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r. You can fuel them with &6Sugar Cane&r. The &3Arc Furnace&r doubles your glass though. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
+			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r, which you can fuel with &6Sugar Cane&r. However, using an &3Arc Furnace&r doubles your glass output. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
 			id: "749281AED88852C2"
-			subtitle: "&oThis step requires a Furnace"
+			subtitle: "&oThis step requires a Furnace."
 			tasks: [{
 				id: "5CB8E13112A61401"
 				item: "minecraft:glass"
@@ -533,9 +533,9 @@
 		}
 		{
 			dependencies: ["749281AED88852C2"]
-			description: ["Break up your &6Sand&r into &6Quartz&r. An &3Arc Furnace&r making &6Glass&r supports 2.5 &3Electrolysers&r of the same tier. You will need a lot of &6Quartz&r, so its crucial that you passive this."]
+			description: ["Turn your &6Glass&r into &6Quartz&r. An &3Arc Furnace&r making &6Glass&r supports 2.5 &3Electrolyzers&r of the same tier. You will need a lot of &6Quartz&r, so it's crucial that you passive this."]
 			id: "3BC7B5321B707F78"
-			subtitle: "&oThis step requires a Electrolyser at voltage &lLV&r&o or higher.&r"
+			subtitle: "&oThis step requires an Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "13EDE5C42D7590D4"
 				item: "minecraft:quartz"
@@ -601,7 +601,7 @@
 		{
 			dependencies: ["57E7182198B2EA9A"]
 			description: [
-				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow, but cheap, &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster, &bGregTech &6Infinite Water Covers&r, which is much more expensive, but is a cover, therefore saving space, and makes water 16x faster than &6Accumulators&r."
+				"&9Water&r can be achieved in many ways, but the most notable are: &6Water Collectors&r, which are very slow but cheap; &bThermal &6Aqueous Accumulators&r, which are a bit more expensive but way faster; and &bGregTech &6Infinite Water Covers&r, which are much more expensive, but save space because they're covers, and make water 16x faster than &6Accumulators&r."
 				""
 				"Right now, you should probably use the &6Aqueous Accumulator&r."
 				""
