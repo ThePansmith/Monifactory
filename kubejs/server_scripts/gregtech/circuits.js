@@ -57,18 +57,24 @@ ServerEvents.recipes(event => {
 
     // WIP: Matter Circuits
     event.recipes.gtceu.circuit_assembler('matter_circuit_board')
-        .itemInputs('16x gtceu:omnium_plate', '32x gtceu:activated_netherite_foil', '32x gtceu:crystal_matrix_foil', '#gtceu:circuits/luv', 'gtceu:iv_emitter', 
-            '8x gtceu:omnic_acid_dust')
-        .inputFluids('minecraft:water 500')
+        .itemInputs(
+            '16x gcyr:kapton_k_plate',
+            '16x gtceu:omnium_plate',
+            '#gtceu:circuits/luv',
+            'gtceu:iv_emitter', 
+            '2x gtceu:omnic_acid_dust',
+            '3x gtceu:exquisite_monazite_gem'
+        )
+        .inputFluids('gtceu:distilled_water 500')
         .itemOutputs('16x kubejs:matter_circuit_board')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(250000)
 
-    event.recipes.gtceu.circuit_assembler('matter_processing_unit')
-        .itemInputs('2x kubejs:matter_circuit_board', '2x gtceu:crystal_matrix_plate', '2x gtceu:activated_netherite_double_wire', 'gtceu:highly_advanced_soc')
-        .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('2x kubejs:matter_processing_unit')
+    event.recipes.gtceu.large_chemical_reactor('matter_processing_unit')
+        .itemInputs('1x kubejs:matter_circuit_board', '20x gtceu:activated_netherite_foil', '12x gtceu:crystal_matrix_foil')
+        .inputFluids('gtceu:iron_iii_chloride 8000')
+        .itemOutputs('1x kubejs:matter_processing_unit')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
         .EUt(250000)
@@ -138,19 +144,24 @@ ServerEvents.recipes(event => {
 
     // WIP: Dimensional Circuits
     event.recipes.gtceu.circuit_assembler('dimensional_circuit_board')
-        .itemInputs('16x kubejs:matter_circuit_board', '32x gtceu:holmium_foil', '#gtceu:circuits/zpm', 'gtceu:luv_field_generator', 
-            '8x gtceu:nether_star_lens')
+        .itemInputs(
+            '16x kubejs:matter_circuit_board',
+            '4x gtceu:infinity_plate',
+            '#gtceu:circuits/zpm',
+            'gtceu:luv_sensor',
+            '3x kubejs:the_ultimate_material',
+            '2x gtceu:nether_star_lens'
+        )
         .inputFluids('gtceu:omnium 288')
         .itemOutputs('16x kubejs:dimensional_circuit_board')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(500000)
 
-    event.recipes.gtceu.circuit_assembler('dimensional_processing_unit')
-        .itemInputs('4x kubejs:dimensional_circuit_board', 'gtceu:infinity_plate', '4x kubejs:the_ultimate_material', 
-            '4x gtceu:activated_netherite_double_wire', '2x gtceu:flawless_monazite_gem',  '2x gtceu:flawless_glass_gem')
-        .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('2x kubejs:dimensional_processing_unit')
+    event.recipes.gtceu.large_chemical_reactor('dimensional_processing_unit')
+        .itemInputs('1x kubejs:dimensional_circuit_board', '24x gtceu:holmium_foil', '8x gtceu:activated_netherite_foil')
+        .inputFluids('gtceu:iron_iii_chloride 12000')
+        .itemOutputs('1x kubejs:dimensional_processing_unit')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
         .EUt(1966080)
@@ -225,19 +236,23 @@ ServerEvents.recipes(event => {
 
     // Monic Circuits
     event.recipes.gtceu.circuit_assembler('monic_circuit_board')
-        .itemInputs('16x kubejs:dimensional_circuit_board', '16x gtceu:activated_netherite_plate', '8x gtceu:holmium_plate', 
-            '#gtceu:circuits/uv', 'gtceu:zpm_field_generator', '4x kubejs:quasi_stable_neutron_star')
+        .itemInputs('16x kubejs:dimensional_circuit_board',
+            '2x gtceu:monium_plate',
+            '#gtceu:circuits/uv',
+            'gtceu:zpm_field_generator',
+            '1x kubejs:quasi_stable_neutron_star',
+            '2x kubejs:ultimate_gem'
+        )
         .inputFluids('gtceu:omnium 576')
         .itemOutputs('16x kubejs:monic_circuit_board')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(2000000)
 
-    event.recipes.gtceu.circuit_assembler('monic_processing_unit')
-        .itemInputs('8x kubejs:monic_circuit_board', '1x gtceu:monium_plate', '16x gtceu:holmium_double_wire', '4x kubejs:ultimate_gem',  
-            '4x gtceu:exquisite_glass_gem')
-        .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('2x kubejs:monic_processing_unit')
+    event.recipes.gtceu.large_chemical_reactor('monic_processing_unit')
+        .itemInputs('1x kubejs:monic_circuit_board', '8x gtceu:monium_single_wire', '16x gtceu:holmium_foil')
+        .inputFluids('gtceu:iron_iii_chloride 16000')
+        .itemOutputs('1x kubejs:monic_processing_unit')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
         .EUt(3932160)
