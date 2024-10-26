@@ -979,11 +979,14 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["115B96B2092D671E"]
+			dependencies: [
+				"115B96B2092D671E"
+				"0562D9F4C441EAF9"
+			]
 			description: [
-				"Once you scan and make make your first &6UV Circuits&r and &6ZPM Field Generators&r, you can upgrade your &3HPCA Computing Components&r to &3Advanced Components&r. These produce &d16 CWU/t&r each and require &d4 Cooling&r each."
+				"Once you scan and make your first &6UV Circuits&r and &6ZPM Field Generators&r, you can upgrade your &3HPCA Computing Components&r to &3Advanced Components&r. These produce &d16 CWU/t&r each and require &d4 Cooling&r each."
 				""
-				"With them, you can upgrade a single HPCA to produce &d32 CWU/t&r total - enough for basic &6UV components&r, and the &3Network Switch&r, which will allow you to go higher."
+				"With them, you can upgrade a single HPCA to produce &d32 CWU/t&r total - enough for basic &6UV components&r and the &3Network Switch&r, which will allow you to go higher."
 			]
 			id: "0CEF53164D8B6496"
 			rewards: [{

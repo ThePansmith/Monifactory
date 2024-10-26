@@ -965,7 +965,7 @@
 			description: [
 				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
 				""
-				"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in each of the Jetplates so if you want either of them you'll need to make one eventually."
+				"Up to you if you want to use it over a jetpack for day-to-day stuff, but it's an ingredient in each of the Jetplates so if you want either of them you'll need to make one eventually."
 			]
 			disable_toast: true
 			id: "2923E98849358E16"
@@ -2550,6 +2550,7 @@
 				""
 				"Later coils will give similar bonuses. Additionally, the EBF's temperature will increase by &9100K&r for each voltage tier above MV, which could make a difference for future materials."
 			]
+			disable_toast: true
 			id: "544E87F5E356FE10"
 			shape: "hexagon"
 			tasks: [{
@@ -2563,7 +2564,10 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["7A65459E4DFAAC2D"]
+			dependencies: [
+				"7A65459E4DFAAC2D"
+				"069773756716E192"
+			]
 			description: [
 				"To make &9Tritanium&r, you first need to make &9Duranium&r. This is done by fusing &9Liquid Gallium&r and &9Radon&r in a &3Fusion Reactor MK I&r or better."
 				""
@@ -2571,6 +2575,7 @@
 				""
 				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into &aEMI&r."
 			]
+			disable_toast: true
 			id: "6C199A6CBC13A481"
 			shape: "hexagon"
 			tasks: [{
@@ -2585,6 +2590,7 @@
 		{
 			dependencies: ["6C199A6CBC13A481"]
 			description: ["&2Tritanium Coils are the eighth coil material. At 10800K, it's capable of smelting nearly every material."]
+			disable_toast: true
 			id: "2E87146C82EF941C"
 			shape: "hexagon"
 			tasks: [{
@@ -2599,6 +2605,7 @@
 		{
 			dependencies: ["6DF2C1E88BE7CE5F"]
 			description: ["&6Omnium Coils&r, made in the &dOmnic Forge&r, are the final coil type you will need. At &a15000K&r, they're capable of smelting every material and make your EBF look &4f&6a&eb&au&2l&3o&9u&ds&5."]
+			disable_toast: true
 			id: "6EA130B04FDE6868"
 			shape: "hexagon"
 			tasks: [{
