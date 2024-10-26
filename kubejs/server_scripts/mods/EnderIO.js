@@ -433,9 +433,9 @@ if (isExpertMode) {
             "cost_multiplier": 1,
             "enchantment": "ensorcellation:air_affinity",
             "input": {
-              "count": 8,
+              "count": 1,
               "ingredient": {
-                "item": "minecraft:glass"
+                "item": "quark:bottled_cloud"
               }
             }
           }
@@ -449,7 +449,7 @@ if (isExpertMode) {
             "input": {
               "count": 1,
               "ingredient": {
-                "item": "effortlessbuilding:reach_upgrade1"
+                "item": "ulvcovm:ulv_robot_arm"
               }
             }
           }
