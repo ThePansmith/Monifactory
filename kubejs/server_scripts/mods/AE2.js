@@ -304,15 +304,15 @@ ServerEvents.recipes(event => {
         '256m'
     ]
     const storage_component_ingredients = [
-        ['minecraft:glass', 'ae2:calculation_processor', 'gtceu:polyethylene', 1],
-        ['minecraft:glass', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
-        ['ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
-        ['ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polytetrafluoroethylene', 1],
-        ['ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
-        ['ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
-        ['megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polytetrafluoroethylene', 2],
-        ['megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
-        ['megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
+        ['mv', 'minecraft:glass', 'ae2:calculation_processor', 'gtceu:polyethylene', 1],
+        ['hv', 'minecraft:glass', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
+        ['ev', 'ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
+        ['iv', 'ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polytetrafluoroethylene', 1],
+        ['iv', 'ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
+        ['luv', 'ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
+        ['luv', 'megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polytetrafluoroethylene', 2],
+        ['zpm', 'megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
+        ['zpm', 'megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
     ]
     for (let index = 0; index < storage_component_ingredients.length; index++) {
         let curTier;
@@ -336,9 +336,9 @@ ServerEvents.recipes(event => {
             'SCS',
             'ASA'
         ], {
-            A: curIngredients[0],
-            B: curIngredients[1],
-            C: '#gtceu:circuits/' + GTValues.VN[index+2].toLowerCase(),
+            A: curIngredients[1],
+            B: curIngredients[2],
+            C: '#gtceu:circuits/' + curIngredients[0],
             S: Item.of(prevTier)
         }
         ).id('kubejs:ae2/storage_component_' + storage_tiers[index+1])
@@ -347,11 +347,11 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.assembler(`kubejs:ae2/${storage_tiers[index+1]}_storage_assembler`)
             .itemInputs(
                 Item.of(prevTier, 2),
-                Item.of(curIngredients[0], 2),
-                Item.of(curIngredients[1], 1),
-                '#gtceu:circuits/' + GTValues.VN[index+2].toLowerCase()
+                Item.of(curIngredients[1], 2),
+                Item.of(curIngredients[2], 1),
+                '#gtceu:circuits/' + curIngredients[0]
             )
-            .inputFluids(Fluid.of(curIngredients[2], 144*curIngredients[3]))
+            .inputFluids(Fluid.of(curIngredients[3], 144*curIngredients[4]))
             .itemOutputs(curTier)
             .EUt(240)
             .duration(200)
