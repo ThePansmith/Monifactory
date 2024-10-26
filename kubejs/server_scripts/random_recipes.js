@@ -931,7 +931,7 @@ ServerEvents.recipes(event => {
         .circuit(4)
 
     event.recipes.gtceu.chemical_reactor('kubejs:tetraethyllead')
-        .itemInputs('4x gtceu:sodium_lead_alloy_dust')
+        .itemInputs('8x gtceu:sodium_lead_alloy_dust')
         .inputFluids('gtceu:chloroethane 4000')
         .outputFluids('gtceu:tetraethyllead 1000')
         .itemOutputs('4x gtceu:salt_dust', '3x gtceu:lead_dust')
