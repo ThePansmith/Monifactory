@@ -186,6 +186,43 @@
 			x: 1.5d
 			y: 8.75d
 		}
+		{
+			id: "69230B4A261BC806"
+			linked_quest: "53EC3831D66769CA"
+			shape: "hexagon"
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			id: "42EF3BF182FB8BFB"
+			linked_quest: "0B9D5F865C3F8B31"
+			shape: "hexagon"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			id: "14A584E86F0C39DA"
+			linked_quest: "798889BE3819EB4D"
+			shape: "hexagon"
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			id: "51714F7845582B70"
+			linked_quest: "38791476E970C57D"
+			shape: "hexagon"
+			size: 1.5d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "5ABE18BA5747E465"
+			linked_quest: "51A463024F35DC2E"
+			shape: "hexagon"
+			size: 2.0d
+			x: 0.0d
+			y: -2.0d
+		}
 	]
 	quests: [
 		{
@@ -997,7 +1034,7 @@
 		{
 			dependencies: [
 				"14F1FF4656693711"
-				"29026AF7BEB27202"
+				"53EC3831D66769CA"
 			]
 			description: ["&6HSS-G&r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials, such as &6Naquadah&r."]
 			id: "3DD8D9EEA7189186"
@@ -1411,7 +1448,7 @@
 				""
 				"First is by &9processing ores&r from the &6Tier Five Micro Miner&r. &6Naquadah Ore&r yields &6Enriched Naquadah&r (through the &3Magnetic Separator&r) and &6Kaemanite Ore&r yields &6Trinium&r."
 				""
-				"Second is by combining &6Naquadah Dust&r with certain heavy elements and EnderIO crystal grains. This can provide &6Enriched Naquadah&r and &6Naquadria&r."
+				"Second is by combining &6Naquadah Dust&r with certain heavy elements and Ender IO crystal grains. This can provide &6Enriched Naquadah&r and &6Naquadria&r."
 				""
 				"Finally, you can do the full CEu processing of &6Naquadah Dust&r with &9Fluoroantimonic Acid&r, the strongest acid known to man. This is a decently involved process, but not only does it yield all 2 other Nq materials, it also grants byproducts of &6Titanium, Sulfur, Indium, Phosphorus, Barium, and Gallium&r. "
 				""
@@ -2438,141 +2475,6 @@
 			}]
 			x: 3.0d
 			y: 24.0d
-		}
-		{
-			dependencies: ["53EC3831D66769CA"]
-			description: [
-				"&6HSS-G&r is an alloy of &6Tungstensteel&r, &6Chrome&r, &6Molybdenum&r, and &6Vanadium&r."
-				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
-			]
-			disable_toast: true
-			id: "29026AF7BEB27202"
-			shape: "hexagon"
-			tasks: [{
-				id: "1FD1F10098E24654"
-				item: "gtceu:hssg_ingot"
-				type: "item"
-			}]
-			title: "High Speed Steel Type G"
-			x: 11.0d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"0B9D5F865C3F8B31"
-				"29026AF7BEB27202"
-			]
-			description: ["Made by adding some Iridium and Osmium to your HSS-G."]
-			disable_toast: true
-			id: "7615FABC8B262803"
-			shape: "hexagon"
-			tasks: [{
-				id: "5764E126F85A8864"
-				item: "gtceu:hsss_ingot"
-				type: "item"
-			}]
-			title: "High Speed Steel Type S"
-			x: 9.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["51A463024F35DC2E"]
-			description: [
-				"&2This is the highest tier of polymer. It is used in crafting Advanced SMD components, ZPM+ Machine Hulls, among other things."
-				""
-				"This polymer requires at least 14 processing steps to craft. Good luck!"
-			]
-			disable_toast: true
-			icon: "gtceu:polybenzimidazole_bucket"
-			id: "4FBA5D4C7ADB1CD1"
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "5CED3A6311FFA3B4"
-				item: "gtceu:polybenzimidazole_bucket"
-				type: "item"
-			}]
-			title: "&2Polybenzimidazole (PBI)"
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"798889BE3819EB4D"
-				"29026AF7BEB27202"
-			]
-			description: ["Made by adding some Cobalt, Manganese and Silicon to your HSS-G."]
-			disable_toast: true
-			id: "36E4AD11927664C8"
-			shape: "hexagon"
-			tasks: [{
-				id: "30E5F95356EB0E4C"
-				item: "gtceu:hsse_ingot"
-				type: "item"
-			}]
-			title: "High Speed Steel Type E"
-			x: 13.0d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"4FBA5D4C7ADB1CD1"
-				"36E4AD11927664C8"
-				"7615FABC8B262803"
-				"38791476E970C57D"
-			]
-			description: [
-				"&2Advanced SMD Components&r are new to CEu and are required for &6Crystal, Wetware, and Matter circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Nano and Quantum circuits."
-				""
-				"All of these components require &1IV&r power and liquid PBI."
-				""
-				"Advanced SMD Transistor: Vanadium-Gallium Foil and Fine HSS-G Wire"
-				""
-				"Advanced SMD Resistor: Graphene Dust and Fine Platinum Wire"
-				""
-				"Advanced SMD Capacitor: Thin PBI Sheet and HSS-S Foil"
-				""
-				"Advanced SMD Diode: InGaP Dust and Fine Niobium-Titanium Wire"
-				""
-				"Advanced SMD Inductor: HSS-E Ring and Fine Palladium Wire"
-				""
-				"As with the normal SMD components, invest in an extremely robust automation system for these, as you won't stop needing them."
-			]
-			disable_toast: true
-			id: "5374CA06645C2DC9"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "436D792B8F5ABA36"
-					item: "gtceu:advanced_smd_transistor"
-					type: "item"
-				}
-				{
-					id: "4603763137747A62"
-					item: "gtceu:advanced_smd_resistor"
-					type: "item"
-				}
-				{
-					id: "1063C82DC737B298"
-					item: "gtceu:advanced_smd_capacitor"
-					type: "item"
-				}
-				{
-					id: "2CC9FD13A6E3DF38"
-					item: "gtceu:advanced_smd_diode"
-					type: "item"
-				}
-				{
-					id: "6FDBE88445D2E0E4"
-					item: "gtceu:advanced_smd_inductor"
-					type: "item"
-				}
-			]
-			title: "&2Advanced SMD Components"
-			x: 0.0d
-			y: 1.0d
 		}
 		{
 			dependencies: ["7A7FFE9E89D19A2F"]

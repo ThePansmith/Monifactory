@@ -99,6 +99,20 @@
 			x: 37.0d
 			y: 8.5d
 		}
+		{
+			id: "3402D483AEEB7A4B"
+			linked_quest: "3115EAF1F70A613E"
+			shape: "hexagon"
+			x: 21.5d
+			y: -0.5d
+		}
+		{
+			id: "5138206A04C3BBCD"
+			linked_quest: "5C78349343BA40D7"
+			shape: "hexagon"
+			x: 21.5d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
@@ -751,7 +765,7 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["772004D5792ACC4C"]
+			dependencies: ["5C78349343BA40D7"]
 			description: [
 				"A more advanced type of &6Silicon Boule&r, formed by doping the &6Silicon&r crystal lattice with &6Phosphorus&r."
 				""
@@ -777,62 +791,8 @@
 		}
 		{
 			dependencies: [
-				"061904A6FEED5B66"
-				"776199B37A19A592"
-			]
-			description: [
-				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
-				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r."
-			]
-			id: "74832ED7B78A6AEA"
-			rewards: [{
-				id: "1E886FEB3DA0D886"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "293633608B7EDDA0"
-				item: "gtceu:kanthal_ingot"
-				type: "item"
-			}]
-			title: "Kanthal Ingots"
-			x: 21.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["74832ED7B78A6AEA"]
-			description: [
-				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
-				""
-				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Copper fluid&r."
-				""
-				"&2In CEu, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &9temperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%&r energy."
-				""
-				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
-			]
-			id: "772004D5792ACC4C"
-			rewards: [{
-				id: "22AB433442991A13"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				count: 16L
-				id: "5E6B6DF65B03DD17"
-				item: "gtceu:kanthal_coil_block"
-				type: "item"
-			}]
-			title: "&2Kanthal Coil Blocks"
-			x: 21.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"772004D5792ACC4C"
 				"3000798ACA51BFDC"
+				"5C78349343BA40D7"
 			]
 			description: [
 				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
@@ -1746,7 +1706,7 @@
 				""
 				"It is only found from &6Tungstate Dust &2and &6Scheelite Dust&2, obtained from their respective ores.&r Tungstate is also obtainable in small quantities from centrifuging &6Endstone Dust&r."
 				""
-				"Scheelite and Tungstate need to be &2bathed in Hydrochloric Acid to make Tungstic Acid, then electrolyzed&r to get to the Tungsten, which then needs to be cooked in the EBF for Tungsten ingots."
+				"Scheelite and Tungstate need to be &2bathed in Hydrochloric Acid to make Tungstic Acid, then electrolyzed&r to get to the Tungsten, which then needs to be cooked in the EBF for Tungsten Ingots."
 			]
 			id: "3B3F46345D39CAE2"
 			rewards: [{
@@ -1868,7 +1828,7 @@
 				"&2* Chromite Ore"
 				"&2* Pyrope Ore"
 				""
-				"When equipped with Gemstone Sensor:"
+				"When equipped with a Gemstone Sensor:"
 				"&2* Perfect Diamonds"
 				"&6* Perfect Rubies"
 				"&6* Perfect Topaz"
@@ -1877,7 +1837,7 @@
 				"&6* Gold Ore"
 				"&6* Silver Ore"
 				""
-				"The Tier Three Micro Miner will also be used to obtain &2Netherite&r in the endgame."
+				"The Tier Three Micro Miner will also be used to obtain &2Netherite&r in the End Game."
 			]
 			id: "664107ED03A944CD"
 			rewards: [{
@@ -2424,7 +2384,7 @@
 		{
 			dependencies: ["634E056463ED1532"]
 			description: [
-				"The &3Slice'N'Splice&r is a machine from &bEnderIO&r."
+				"The &3Slice'N'Splice&r is a machine from &bEnder IO&r."
 				""
 				"It is used for making monster-head-related items that are components for various things."
 				""
@@ -2448,7 +2408,7 @@
 		{
 			dependencies: ["634E056463ED1532"]
 			description: [
-				"The &3Soul Binder&r is an &bEnderIO&r machine which uses &aSoul Vials&r and Experience to enhance specific items."
+				"The &3Soul Binder&r is an &bEnder IO&r machine which uses &aSoul Vials&r and Experience to enhance specific items."
 				""
 				"It may be prudent to store &9Liquid XP&r in an adjacent &3Obelisk&r, which the Soul Binder can draw from directly, or you can insert it using other standard means of fluid routing."
 			]
@@ -2496,9 +2456,9 @@
 		{
 			dependencies: ["1349044BF8C04A12"]
 			description: [
-				"The &6Powered Spawner&r is a machine from &bEnderIO&r."
+				"The &6Powered Spawner&r is a machine from &bEnder IO&r."
 				""
-				"It is used to automate the spawning and capture of mobs. As with all &bEnderIO&r machines, it requires a capacitor, with a higher tier capacitor increasing the range, spawning rate, and capture rate."
+				"It is used to automate the spawning and capture of mobs. As with all &bEnder IO&r machines, it requires a capacitor, with a higher tier capacitor increasing the range, spawning rate, and capture rate."
 				""
 				"In order to create a &6Powered Spawner&r for the mob type that you want, you must craft it using a &6Broken Spawner&r for that specific mob type. Once created, the mob type cannot be changed. "
 				""
@@ -3127,7 +3087,7 @@
 		}
 		{
 			dependencies: ["46C6F922B4ADCC8C"]
-			description: ["The &3Sequential Fabricator&r is an alternative to the &bEnderIO&r &3Crafter&r and the &bExtendedCrafting&r &3Auto Crafting Table&r. It is the most intuitive of the three, and can handle bucket crafting using Fluids."]
+			description: ["The &3Sequential Fabricator&r is an alternative to the &bEnder IO&r &3Crafter&r and the &bExtendedCrafting&r &3Auto Crafting Table&r. It is the most intuitive of the three, and can handle bucket crafting using Fluids."]
 			id: "62C8DB9874421C79"
 			subtitle: "More reliable than a Crafter"
 			tasks: [{

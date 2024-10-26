@@ -14,7 +14,7 @@
 				"72861B317663600B"
 			]
 			description: [
-				"The final step. Combine &6Pulsating Dust&r and &6Resonant Clathrate&r to make &6Pulsating Prediction Matrix&r. "
+				"The final step. Combine &6Pulsating Dust&r and &6Clay&r to make &6Pulsating Prediction Matrix&r. "
 				""
 				"Take note that a &3&3Chemical Reactor&r making &6Resonant Clathrate&r will supply 1 &3Alloy Smelter&r of the same tier, and that one &bMV &3Alloy Smelter&r making &6Pulsating Prediction Matrix&r supports 10.03 &3Simulation Chambers&r, with each higher tier doubling the amount of &3Simulation Chambers&r it supports."
 			]
@@ -375,7 +375,7 @@
 		}
 		{
 			dependencies: ["3380CBA4E4010EEC"]
-			description: ["Compact your &6Sand&r into &6Sandstone&r. It is recommended to use &3EnderIO Crafters&r or &6Compacting Drawers&r."]
+			description: ["Compact your &6Sand&r into &6Sandstone&r. It is recommended to use &3Ender IO Crafters&r or &6Compacting Drawers&r."]
 			id: "21654B6E703A2923"
 			tasks: [{
 				id: "105B371C4873CAEB"

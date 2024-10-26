@@ -468,7 +468,7 @@
 				""
 				"The &3Dark Steel Enchanter&r is a device that uses &6Book and Quill&r, experience levels, lapis, and enchant-specific items to create an &6Enchanted Book&r with an enchantment of your choosing. Then you can just use an Anvil to enchant your item like usual."
 				""
-				"You can also make the &9Mending&r enchant which allows you to infinitely repair the item when damaged using &9Liquid XP&r in an &bEnderIO &aFluid Tank&r or &aPressurized Fluid Tank&r. Keep in mind that &9Mending&r does not work on &3Gregtech Tools&r."
+				"You can also make the &9Mending&r enchant which allows you to infinitely repair the item when damaged using &9Liquid XP&r in an &bEnder IO &aFluid Tank&r or &aPressurized Fluid Tank&r. Keep in mind that &9Mending&r does not work on &3Gregtech Tools&r."
 			]
 			id: "4D6AC14CAEEFC793"
 			rewards: [{
@@ -672,7 +672,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["776199B37A19A592"]
+			dependencies: [
+				"776199B37A19A592"
+				"061904A6FEED5B66"
+				"1BC6DDC2D50F9C46"
+			]
 			description: [
 				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
 				""
@@ -1374,7 +1378,7 @@
 			description: [
 				"&6Capacitors&r are devices that store electrical energy, which is useful for circuits."
 				""
-				"Not to be confused with &bEnderIO&r's capacitors&r, which store redstone flux."
+				"Not to be confused with &bEnder IO&r's capacitors&r, which store redstone flux."
 			]
 			id: "7D0351942F4DB8E0"
 			rewards: [{
@@ -1944,7 +1948,7 @@
 				""
 				"Shift + right-click after aiming to warp to one, or point it anywhere to teleport forward a short distance (works through walls)."
 				""
-				"These are powered with RF, and can be further enchanted through &bEnderIO&r's enchanting mechanics."
+				"These are powered with RF, and can be further enchanted through &bEnder IO&r's enchanting mechanics."
 				""
 				"The &6Vibrant Crystal&r will require an &3Autoclave&r."
 			]
@@ -1975,7 +1979,7 @@
 		{
 			dependencies: ["73C1AB31431B5C11"]
 			description: [
-				"&aEnder Fluid Conduits&r are the most powerful fluid transportation mechanism offered by &bEnderIO&r."
+				"&aEnder Fluid Conduits&r are the most powerful fluid transportation mechanism offered by &bEnder IO&r."
 				""
 				"Not only are these faster than &aPressurized Fluid Conduits&r, but because they teleport fluids instead of flowing them in the conduits, it possible to have a large number of fluids moving through a single line."
 				""
@@ -2025,7 +2029,7 @@
 				"64F45D98FA48D834"
 				"73C1AB31431B5C11"
 			]
-			description: ["A pair of &6Double-Layer RF Capacitors&r combined with some &6Vibrant Alloy&r and &6Glowstone&r creates an &6Octadic RF Capacitor&r, which is a tier three &bEnderIO&r capacitor."]
+			description: ["A pair of &6Double-Layer RF Capacitors&r combined with some &6Vibrant Alloy&r and &6Glowstone&r creates an &6Octadic RF Capacitor&r, which is a tier three &bEnder IO&r capacitor."]
 			id: "0607A59215F0F8B3"
 			rewards: [{
 				id: "19758A42D6370AF6"
@@ -2046,7 +2050,7 @@
 			description: [
 				"Combining &6Basic RF Capacitors&r with some &6Coal Dust&r and &6Energetic Alloy&r produces a &6Double-Layer RF Capacitor&r."
 				""
-				"This is a tier two capacitor. Higher tier RF Capacitors will make &bEnderIO&r machines process faster and depending on the machine will expand their capabilities further (like area of effect)."
+				"This is a tier two capacitor. Higher tier RF Capacitors will make &bEnder IO&r machines process faster and depending on the machine will expand their capabilities further (like area of effect)."
 			]
 			id: "64F45D98FA48D834"
 			rewards: [{
@@ -2135,7 +2139,7 @@
 			description: [
 				"&eSuperconductor wires won't kill you when touched now. In fact, you have to use Wires for Superconductors, because they don't even have cables!"
 				""
-				"&bEnderIO&r and &bThermal&r alloys are a bit more expensive than the normal wires, but they come with the huge advantage of being &2superconductors&r. Lossy cables like &6Tin&r and &6Copper&r will bleed out energy for every block they travel, but &2superconductors&r do not."
+				"&bEnder IO&r and &bThermal&r alloys are a bit more expensive than the normal wires, but they come with the huge advantage of being &2superconductors&r. Lossy cables like &6Tin&r and &6Copper&r will bleed out energy for every block they travel, but &2superconductors&r do not."
 				""
 				"The &2cheap superconductors&r for each tier are:"
 				""
@@ -2271,7 +2275,7 @@
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
-				"Also important to note that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
+				"Also important to note is that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
 				""
 				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, 'connecting' the gadget to the inventory."
 				""
