@@ -426,14 +426,43 @@ if (isExpertMode) {
     }
     ).id('kubejs:enchanter')
 
-    // Enchanter
+    //Custom enchanter books
+      event.custom(
+        {
+            "type": "enderio:enchanting",
+            "cost_multiplier": 1,
+            "enchantment": "ensorcellation:air_affinity",
+            "input": {
+              "count": 8,
+              "ingredient": {
+                "item": "minecraft:glass"
+              }
+            }
+          }
+      )
+
+      event.custom(
+        {
+            "type": "enderio:enchanting",
+            "cost_multiplier": 1,
+            "enchantment": "ensorcellation:reach",
+            "input": {
+              "count": 1,
+              "ingredient": {
+                "item": "effortlessbuilding:reach_upgrade1"
+              }
+            }
+          }
+      )
+
+    // Yeta Wrench
     event.remove({ output: ['enderio:yeta_wrench'] })
     event.shaped(
         'enderio:yeta_wrench', [
         'I I',
         ' G ',
         ' I '
-    ], {
+    ], { 
         I: '#forge:ingots/iron',
         G: '#forge:gears/iron'
     }
