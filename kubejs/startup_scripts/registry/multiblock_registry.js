@@ -532,6 +532,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('subatomic_digital_assembler', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('subatomic_digital_assembly')
+        .noRecipeModifier()
         .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#CCCCC#", "#CCCCC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CCCCC#", "#CCCCC#")
