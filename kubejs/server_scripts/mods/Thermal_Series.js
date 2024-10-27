@@ -5,14 +5,47 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer']})
 
     event.remove({ id: /thermal:[A-Za-z]+_dust_/ }) //I don't even know what recipes this line of code is supposed to target
+    event.remove({ id: /thermal:.*_cast/ })
     event.remove({ id: 'thermal:fire_charge/obsidian_glass_2' })
     event.remove({ id: 'thermal:fire_charge/signalum_glass_2' })
     event.remove({ id: 'thermal:fire_charge/lumium_glass_2' })
     event.remove({ id: 'thermal:fire_charge/enderium_glass_2' })
 
     //Unify Thermal with GT rubber
-    event.smelting('gtceu:sticky_resin', 'thermal:tar');
+    event.smelting('gtceu:sticky_resin', 'thermal:tar')
     event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['gtceu:rubber_plate'])
+    //Unify Thermal dies
+    
+    event.shaped('thermal:press_packing_2x2_die', [
+        ' A ',
+        'BCB',
+        ' A '
+    ], {
+        A: 'gtceu:invar_plate',
+        B: 'gtceu:cupronickel_plate',
+        C: '#minecraft:planks'
+    }).id('thermal:press_packing_2x2_die')
+
+    event.shaped('thermal:press_packing_3x3_die', [
+        ' B ',
+        'ACA',
+        ' B '
+    ], {
+        A: 'gtceu:invar_plate',
+        B: 'gtceu:cupronickel_plate',
+        C: '#minecraft:planks'
+    }).id('thermal:press_packing_3x3_die')
+
+    event.shaped('thermal:press_unpacking_die', [
+        'B A',
+        ' C ',
+        'A B'
+    ], {
+        A: 'gtceu:invar_plate',
+        B: 'gtceu:cupronickel_plate',
+        C: '#minecraft:planks'
+    }).id('thermal:press_unpacking_die')
+
 
     //Centrifuging Recipes for Arboreal Extractor products
     event.recipes.gtceu.centrifuge('kubejs:latex_centrifuging')
