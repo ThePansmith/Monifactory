@@ -84,6 +84,25 @@ ServerEvents.recipes(event => {
         .duration(1000)
         .EUt(1966080)
 
+    //Infinity Ingots
+    event.recipes.gtceu.omnic_forge('kubejs:infinity_ingot_1x')
+        .itemInputs('12x gtceu:neutronium_ingot', '10x gtceu:activated_netherite_ingot', '10x kubejs:eternal_catalyst', 'kubejs:infinity_catalyst')
+        .itemOutputs('gtceu:infinity_ingot')
+		.duration(400)
+		.EUt(50000)
+
+    event.recipes.gtceu.omnic_forge('kubejs:infinity_ingot_8x')
+        .itemInputs('48x gtceu:neutronium_ingot', '40x gtceu:activated_netherite_ingot', '40x kubejs:eternal_catalyst', 'kubejs:furious_infinity_catalyst')
+        .itemOutputs('8x gtceu:infinity_ingot', 'kubejs:dormant_furious_infinity_catalyst')
+		.duration(400)
+		.EUt(250000)
+        
+    event.recipes.gtceu.omnic_forge('kubejs:infinity_ingot_64x')
+        .itemInputs('64x gtceu:neutronium_ingot', '64x gtceu:neutronium_ingot', '64x gtceu:neutronium_ingot', '64x gtceu:activated_netherite_ingot', '64x gtceu:activated_netherite_ingot', '32x gtceu:activated_netherite_ingot', '64x kubejs:eternal_catalyst', '64x kubejs:eternal_catalyst', '32x kubejs:eternal_catalyst', 'kubejs:serene_infinity_catalyst')
+        .itemOutputs('64x gtceu:infinity_ingot', 'kubejs:inert_serene_infinity_catalyst')
+        .duration(400)
+        .EUt(1000000)
+
     //Simplified Crafting
     event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_dark_soularium_thruster')
         .itemInputs('4x gtceu:dark_soularium_plate', '6x gtceu:vibrant_alloy_plate', '2x enderio:ender_crystal', '2x enderio:prescient_crystal', 'enderio:cryolobus_conduit', 'kubejs:flight_control_unit')

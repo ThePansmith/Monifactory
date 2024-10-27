@@ -152,7 +152,6 @@ StartupEvents.registry('item', event => {
     event.create('furious_infinity_catalyst').rarity("epic")
     event.create('inert_serene_infinity_catalyst')
     event.create('serene_infinity_catalyst').rarity("epic")
-    event.create('dormant_infinity_compound_ingot')
 
 
     // Monium

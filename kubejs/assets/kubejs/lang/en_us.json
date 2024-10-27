@@ -235,7 +235,7 @@
   "item.kubejs.omnic_data": "Omnic Data",
   "item.kubejs.creative_tank_data": "Creative Quantum Tank Data",
   "item.kubejs.creative_storage_data": "Creative Storage Data",
-  "item.kubejs.creative_computation_data": "Creative Computation Data",
+  "item.kubejs.creative_computation_data": "Creative Research Data",
   "item.kubejs.creative_energy_data": "Creative Energy Data",
 
   "item.kubejs.diamond_lattice": "Diamond Lattice",
@@ -250,7 +250,6 @@
   "item.kubejs.furious_infinity_catalyst": "§dFurious Infinity Catalyst",
   "item.kubejs.inert_serene_infinity_catalyst": "Inert Serene Infinity Catalyst",
   "item.kubejs.serene_infinity_catalyst": "§dSerene Infinity Catalyst",
-  "item.kubejs.dormant_infinity_compound_ingot": "Dormant Infinity Compound Ingot",
 
   "item.kubejs.field_stabilised_omnic_pulsar_compound": "Field Stabilised Omnic Pulsar Compound",
   "item.kubejs.quasi_stable_neutron_star": "Quasi-Stable Neutron Star",

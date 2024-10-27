@@ -49,51 +49,6 @@ ServerEvents.recipes(event => {
             H: 'kubejs:heart_of_a_universe'
         }).id('kubejs:extended/infinity_catalyst');
 
-	// infinity ingot
-	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:dormant_infinity_compound_ingot', [
-            '         ',
-            '     BAAA',
-            '  BAAADCA',
-            'AAACDCCDA',
-            'ACDDCDDCA',
-            'ADCCDCAAA',
-            'ACDAAAB  ',
-            'AAAB     ',
-            '         '
-		], {
-			A: 'gtceu:neutronium_ingot',
-			B: 'gtceu:neutronium_nugget',
-			C: 'gtceu:activated_netherite_ingot',
-			D: 'kubejs:eternal_catalyst'
-		}
-	).id('kubejs:extended/infinity_compound')
-
-	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation')
-		.itemInputs('kubejs:dormant_infinity_compound_ingot', 'kubejs:infinity_catalyst')
-		.inputFluids(Fluid.of('gtceu:omnium', 576))
-		.itemOutputs('gtceu:infinity_ingot')
-		.duration(400)
-		.EUt(50000)
-		.blastFurnaceTemp(12000)
-
-	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation_t2')
-		.itemInputs('4x kubejs:dormant_infinity_compound_ingot', 'kubejs:furious_infinity_catalyst')
-		.inputFluids(Fluid.of('gtceu:omnium', 576))
-		.itemOutputs('8x gtceu:infinity_ingot', 'kubejs:dormant_furious_infinity_catalyst')
-		.duration(300)
-		.EUt(250000)
-		.blastFurnaceTemp(12000)
-
-	event.recipes.gtceu.electric_blast_furnace('infinity_ingot_activation_t3')
-		.itemInputs('16x kubejs:dormant_infinity_compound_ingot', 'kubejs:serene_infinity_catalyst')
-		.inputFluids(Fluid.of('gtceu:omnium', 576))
-		.itemOutputs('64x gtceu:infinity_ingot', 'kubejs:inert_serene_infinity_catalyst')
-		.duration(200)
-		.EUt(1000000)
-		.blastFurnaceTemp(12000)
-
-
 	// mote of omnium
 	event.recipes.extendedcrafting.shapeless_table(
 		'kubejs:mote_of_omnium', [
