@@ -55,6 +55,15 @@ ServerEvents.recipes(event => {
             P: 'kubejs:moni_penny'
         }).noMirror().noShrink()
 
+        // Bonemeal
+        event.shaped(
+            Item.of('minecraft:bone', 32), [
+            ' PP',
+            '   ',
+            ' P '
+        ], {
+            P: 'kubejs:moni_penny'
+        }).noMirror().noShrink()
 
         event.shaped(
             Item.of('minecraft:honeycomb', 32), [
