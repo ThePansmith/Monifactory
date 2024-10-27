@@ -139,7 +139,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('omnic_forge')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(12, 2, 0, 0)
+        .setMaxIOSize(6, 2, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_CRYSTALLIZATION, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC)
