@@ -533,7 +533,7 @@
 				""
 				"Unfortunately, it is super hot. You'll need to cool it in a &3Vacuum Freezer&r for it to be usable."
 				""
-				"If you haven't set one up yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set an Tag Storage Bus on the input bus of the freezer, set it to 'forge:hot_ingots', and set it to a high priority. This will accept any new Hot Ingots entering your system, and eliminates the need for a big conduit network."
+				"If you haven't set one up yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set a Tag Storage Bus on the input bus of the freezer, set it to 'forge:hot_ingots', and set it to a high priority. This will accept any new Hot Ingots entering your system, and eliminates the need for a big conduit network."
 				""
 				"Don't encode the Hot Ingot in a pattern though!"
 			]
@@ -1545,20 +1545,14 @@
 				""
 				"Even if you're otherwise going all in on petrochemistry for Epoxy, you'll probably end up with some Bio Diesel as a result of making Glycerol, unless you're using &6TNT&r."
 				""
-				"Bio Diesel can be used for power, but is probably better to convert it to &2Cetane-Boosted Diesel&r."
+				"Bio Diesel can be used for power, but it is probably better to convert it to &2Cetane-Boosted Diesel&r."
 			]
 			icon: "gtceu:glycerol_bucket"
 			id: "502AB887CB316377"
-			rewards: [{
-				id: "3904B31C25EB8F3B"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "7E764A4FD6AE4DE7"
-				item: "gtceu:glycerol_bucket"
-				type: "item"
+				id: "525BCFACC82E3A60"
+				type: "checkmark"
 			}]
 			title: "Bio Diesel and Glycerol"
 			x: 37.0d
@@ -1622,6 +1616,7 @@
 			icon: "gtceu:epichlorohydrin_bucket"
 			id: "7174484A926682F3"
 			rewards: [{
+				count: 2
 				id: "66BDFCA2BC6CD3F8"
 				item: "kubejs:moni_nickel"
 				type: "item"
@@ -2199,7 +2194,10 @@
 			y: 15.5d
 		}
 		{
-			dependencies: ["634E056463ED1532"]
+			dependencies: [
+				"634E056463ED1532"
+				"08B36E2C37C417E5"
+			]
 			description: [
 				"With &6Tungstensteel&r achieved, you can now make hulls for Insane Voltage (IV) &bGregTech&r machines."
 				""
@@ -2222,7 +2220,6 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["605062720747B482"]
 			description: [
 				"&9Rubber&r has been sufficient for making cables so far, but you will soon discover that this basic type of rubber won't withstand more than &2Extreme Voltage&r. Higher quality rubber is necessary to properly insulate your wires."
 				""
@@ -2930,23 +2927,27 @@
 				""
 				"For the purposes of this particular quest, you'll be building a breeder reactor to make &6Plutonium&r and other nuclear elements. While this reactor may seem very expensive, it will be worth it, and you will probably expand it soon. "
 				"{@pagebreak}"
-				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster. Alternatively, reactors can be designed to produce a decent amount of power for the mid game of the pack."
+				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster."
 				""
-				"First, set up your 215 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r."
-				"{@pagebreak}"
-				"The Casings should  cover the faces of the interior cube, &9as well as the edges and corners&r. You should have exactly the right number of Casings to encase a 5x5x5 space (with space for the controller and ports)."
+				"First, set up your 215 &6Fission Reactor Casings&r to encase a 5x5x5 cube of air. Any of these casings can be changed to &6Transparent Fission Reactor Casings&r."
+				""
+				"The Casings should cover the faces of the interior cube, &9as well as the edges and corners&r. You should have exactly the right number of Casings to encase a 5x5x5 space (with spots for the controller and ports)."
 				""
 				"Next, create a hole so you can get inside the cube."
 				"{@pagebreak}"
-				"Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
-				"{@pagebreak}"
+				"Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the empty holes with &6Cryotheum Coolers&r."
+				""
+				"Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one."
+				""
+				"The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
+				""
 				"Finally, place the &3Fission Reactor Controller&r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong."
-				""
-				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r"
 				"{@pagebreak}"
-				"You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
+				"A redstone signal is required for the reactor to start working. &cReactors can overheat and melt if their temperature exceeds their ability to cool.&r"
 				""
-				"Info on what exactly you are going to be doing with you fancy new reactor can be found in the &bFission and Fusion&r Chapter."
+				"You can make a safety loop on the controller to automatically shut off the reactor when it starts getting hot. Place a Comparator facing a &aRedstone Conduit&r's input, and a &aRedstone NOT Filter&r outputting the result towards the reactor."
+				""
+				"[\"Info on what exactly you are going to be doing with your fancy new reactor can be found in the \",{\"text\":\"Fission and Fusion\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"40F7695BE1E65C41\"}},\" chapter.\"]"
 			]
 			disable_toast: true
 			icon: "nuclearcraft:fission_reactor_controller"
@@ -3023,7 +3024,7 @@
 		}
 		{
 			dependencies: ["53C00EA9D9BEE776"]
-			description: ["&9While not required for progression, the space station serves as both a cool place to build a base, and opens the door to a variety of other space-related options, including even making a dyson sphere!"]
+			description: ["&9While not required for progression, the space station serves as both a cool place to build a base, and opens the door to a variety of other space-related options!"]
 			id: "059A9B12C8478025"
 			rewards: [{
 				id: "62FD649920864137"

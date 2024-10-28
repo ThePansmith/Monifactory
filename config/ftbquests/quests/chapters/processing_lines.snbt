@@ -375,7 +375,7 @@
 		}
 		{
 			dependencies: ["3380CBA4E4010EEC"]
-			description: ["Compact your &6Sand&r into &6Sandstone&r. It is recommended to use &3Ender IO Crafters&r or &6Compacting Drawers&r."]
+			description: ["Compact your &6Sand&r into &6Sandstone&r. It is recommended to use &3Ender IO Crafters&r or a &6Compressor&r."]
 			id: "21654B6E703A2923"
 			tasks: [{
 				id: "105B371C4873CAEB"
@@ -423,7 +423,7 @@
 			dependencies: ["3380CBA4E4010EEC"]
 			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r, which you can fuel with &6Sugar Cane&r. However, using an &3Arc Furnace&r doubles your glass output. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
 			id: "33351123F08D92BE"
-			subtitle: "&oThis step requires a Furnace."
+			subtitle: "&oThis step requires a Furnace or Arc Furnace at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "70D37DC6A4C89B21"
 				item: {
@@ -522,7 +522,7 @@
 			dependencies: ["456239275544A789"]
 			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r, which you can fuel with &6Sugar Cane&r. However, using an &3Arc Furnace&r doubles your glass output. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
 			id: "749281AED88852C2"
-			subtitle: "&oThis step requires a Furnace."
+			subtitle: "&oThis step requires a Furnace or Arc Furnace at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "5CB8E13112A61401"
 				item: "minecraft:glass"

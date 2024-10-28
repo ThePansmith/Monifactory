@@ -1054,7 +1054,7 @@
 				"{@pagebreak}"
 				"Now, stuff the ME Pattern Provider with processing patterns. The next time you order an item, the ME Pattern Provider will push ingredients into the machine, and the machine will push outputs back into the Pattern Provider once they're ready, completing the craft. No need to use conduits or import buses!"
 				""
-				"Furthermore, you can use Blocking Mode, which ensures that no items are in the inventory before placing the items in, which is a handy way to prevent conflicts. Even better, blocking mode now ignores Programmable Circuits and Molds! Please note that non-consumable items should stay in the machine, and not be included in the pattern made. Yes, this means you should make a separate machine for each non-consumable, as well as fluids, at least until you get Large Machines."
+				"Furthermore, you can use Blocking Mode, which ensures that no items are in the inventory before placing the items in, which is a handy way to prevent conflicts. Even better, blocking mode now ignores Programmable Circuits and Molds! Please note that non-consumable items should stay in the machine, and not be included in the pattern made. Yes, this means you should make a separate machine for each non-consumable, at least until you get Large Machines."
 			]
 			icon: "minecraft:book"
 			id: "6E27B9938B280291"

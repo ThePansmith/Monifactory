@@ -506,8 +506,6 @@
 				""
 				"This suit lets you breathe in space, which is kind of important."
 				""
-				"You can also make yourself some &9space upgrade trims&r, and use them to turn any armor of your choice into a spacesuit."
-				""
 				"If you wish, you can hide the spacesuit from your playermodel via the cosmetic armor buttons."
 			]
 			icon: {
@@ -673,7 +671,7 @@
 				"3547762BC39A0B8F"
 				"4146B73F27D24131"
 			]
-			description: ["&9Dimethylamine&r and &9Chloramine&r combine together into &9Dimethylhydrazine&r. &2You can also combine Methanol, Ammonia and Hypochlorous Acid."]
+			description: ["&9Dimethylamine&r and &9Monochloramine&r combine together into &9Dimethylhydrazine&r. &2You can also combine Methanol, Ammonia, and Hypochlorous Acid."]
 			id: "5E2489DE2E840738"
 			rewards: [{
 				id: "1C076188D1C62B2C"
