@@ -136,6 +136,9 @@ StartupEvents.registry('item', event => {
     event.create('creative_energy_data')
     if (!isNormalMode) event.create('omnic_data')
 
+    //Infinity Fluid Cell Base
+    event.create('creative_fluid_cell_base')
+
 
     // Endgame Items
     event.create('diamond_lattice')
