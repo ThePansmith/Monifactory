@@ -522,9 +522,11 @@
 				"65C40A41F29687F4"
 			]
 			description: [
-				"Changing the circuit value on your newfound &3Subatomic Digital Assembler&r will allow you to assemble &9Infinity Cell Bases&r."
+				"Changing the circuit value on your newfound &3Subatomic Digital Assembler&r will allow you to assemble &9ME Infinity Cell Bases&r."
 				""
-				"These can be combined with a &efilled&r &6Fluid Cell&r in a &3Crafting Table&r to assign the cell to that fluid."
+				"[\"These can be used to make infinite sources of fluid in ME cell form like the \", {\"text\": \"ME Infinity Water Cell,\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"26C9F1514FD08C81\" } },\" but for any fluid.\"]"
+				""
+				"To do so, combine the &9ME Infinity Cell Base&r with a &efilled&r &6Fluid Cell&r in a &3Crafting Table&r to assign the cell to that fluid."
 			]
 			hide_until_deps_visible: true
 			id: "2F21C6B6F145EA81"
@@ -534,7 +536,7 @@
 				item: "kubejs:infinity_cell_base"
 				type: "item"
 			}]
-			title: "&9Infinity Cell Base"
+			title: "&9ME Infinity Cell Base"
 			x: 31.0d
 			y: -9.5d
 		}
