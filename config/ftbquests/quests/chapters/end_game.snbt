@@ -522,19 +522,19 @@
 				"65C40A41F29687F4"
 			]
 			description: [
-				"Changing the circuit value on your newfound &9Subatomic Digital Assembler&r will allow you to assemble &9Creative ME Fluid Cells&r."
+				"Changing the circuit value on your newfound &3Subatomic Digital Assembler&r will allow you to assemble &9Creative Fluid Cell Bases&r."
 				""
-				"These are kind of like the previous &9infinite cells&r, but you can partition this one in a &6cell workbench&r to tell what fluids it should stock."
+				"These can be combined with a &efilled&r &6Fluid Cell&r in a &3Crafting Table&r to assign the cell to that fluid."
 			]
 			hide_until_deps_visible: true
 			id: "2F21C6B6F145EA81"
 			optional: true
 			tasks: [{
 				id: "390C1F547BDF7D2B"
-				item: "ae2:creative_fluid_cell"
+				item: "kubejs:creative_fluid_cell_base"
 				type: "item"
 			}]
-			title: "&9Creative Fluid Cell"
+			title: "&9Creative Fluid Cell Base"
 			x: 31.0d
 			y: -9.5d
 		}
