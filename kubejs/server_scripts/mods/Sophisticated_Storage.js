@@ -8,6 +8,9 @@ ServerEvents.recipes(event => {
     //Remove XP pump upgrades
     event.remove({ id: "sophisticatedstorage:xp_pump_upgrade"})
     event.remove({ id: "sophisticatedbackpacks:xp_pump_upgrade"})
+
+    //Remove Limited barrels
+    event.remove(/^sophisticatedstorage:limited.+barrel.+$/)
     
     //Standard backpack recipe if you don't want to loot it
     event.shaped(
@@ -34,10 +37,6 @@ ServerEvents.recipes(event => {
     ]
     const sophStorageTypes = [
         ['', 'barrel'],
-        ['limited_', 'barrel_1'],
-        ['limited_', 'barrel_2'],
-        ['limited_', 'barrel_3'],
-        ['limited_', 'barrel_4'],
         ['', 'chest'],
         ['', 'shulker_box']
     ]
