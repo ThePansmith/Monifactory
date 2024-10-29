@@ -177,14 +177,12 @@ ServerEvents.recipes(event => {
         .EUt(30)
 })
 
+//Add Primal Mana to Mana ingot recipe
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.electric_blast_furnace("kubejs:mythril")
-        .itemInputs('gtceu:mythril_dust')
-        .itemOutputs('gtceu:mythril_ingot')
-        .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
-        .duration(400)
-        .EUt(400)
-        .blastFurnaceTemp(2141)
+    event.findRecipes({ id: /^gtceu:electric_blast_furnace\/blast_mythril/ }).forEach(recipe=> {
+        const text = '[{"content":{"amount":250,"value":{"fluid":"kubejs:molten_primal_mana"}},"chance":10000,"maxChance":10000,"tierChanceBoost":0}]'
+        recipe.json.getAsJsonObject("inputs").add("fluid", JSON.parse(text))
+    })
 })
 
 ServerEvents.recipes(event => {
