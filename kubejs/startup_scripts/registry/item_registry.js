@@ -218,15 +218,15 @@ StartupEvents.registry('item', event => {
 
     // Stabilized Elements
     const stabilized_elements = [
-        ['einsteinium', '#ffea00'],
-        ['berkelium', '#ff8400'],
-        ['neptunium', '#2e66ff'],
-        ['plutonium', '#ff0066'],
-        ['uranium', '#04ff00'],
-        ['curium', '#c800ff'],
-        ['californium', '#ad0232'],
-        ['americium', '#875800'],
-        ['oganesson', '#cda79a']
+        ['einsteinium', '#ce9f00'],
+        ['berkelium', '#a33f20'],
+        ['neptunium', '#486d7b'],
+        ['plutonium', '#ba2727'],
+        ['uranium', '#1d891d'],
+        ['curium', '#58307f'],
+        ['californium', '#7d0222'],
+        ['americium', '#287869'],
+        ['oganesson', '#443936']
     ]
 
     for (const [element, elemColor] of stabilized_elements) {

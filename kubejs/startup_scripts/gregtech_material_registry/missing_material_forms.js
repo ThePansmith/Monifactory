@@ -42,10 +42,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID);
     GTMaterials.Americium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.PLASMA, new GTFluidBuilder())
     addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID);
-    GTMaterials.Berkelium.setMaterialARGB(0x992600);
+    GTMaterials.Berkelium.setMaterialARGB(0xa33f20);
     addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID);
+    GTMaterials.Californium.setMaterialARGB(0x7d0222)
     addFluid(GTMaterials.Neptunium, $FluidStorageKeys.LIQUID);
+    GTMaterials.Neptunium.setMaterialARGB(0x486d7b)
     addFluid(GTMaterials.Curium, $FluidStorageKeys.LIQUID);
+    GTMaterials.Curium.setMaterialARGB(0x58307f)
     addFluid(GTMaterials.Ruridit, $FluidStorageKeys.LIQUID);
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID);
 

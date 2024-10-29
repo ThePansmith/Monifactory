@@ -45,6 +45,7 @@ ServerEvents.recipes(event => {
     fabricator('guardian', 4, '8x minecraft:gold_ingot')
     fabricator('guardian', 5, '12x gtceu:aluminium_dust')
     fabricator('guardian', 6, '4x kubejs:guardian_scale')
+    fabricator('guardian', 7, '2x minecraft:wet_sponge')
     fabricator('shulker', 1, '6x minecraft:shulker_shell')
     fabricator('shulker', 2, '6x minecraft:diamond')
     fabricator('skeleton', 1, '64x minecraft:arrow')

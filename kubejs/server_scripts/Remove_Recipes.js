@@ -13,8 +13,6 @@ ServerEvents.recipes(event => {
     //GT
     event.remove({ output: 'gtceu:ender_fluid_link_cover'})
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
-    event.remove({ id: 'gtceu:smelting/dust_mythril__demagnetize_from_dust' })
-    event.remove({ id: 'gtceu:smelting/smelt_dust_mythril_to_ingot'})
     event.remove({ id: 'gtceu:mixer/rhodium_plated_palladium' })
     
     //FIXME will get fixed

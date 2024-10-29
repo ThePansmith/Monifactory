@@ -97,12 +97,6 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(7680)
 
-    event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_ultra_dense_hydrogen')
-        .itemInputs('64x kubejs:solidified_hydrogen')
-        .itemOutputs('kubejs:ultra_dense_hydrogen')
-        .duration(20)
-        .EUt(120)
-
     event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_quantum_flux')
         .itemInputs('redstone_arsenal:flux_gem', '4x kubejs:primal_mana', '2x minecraft:dragon_breath', 'gtceu:nether_star_dust')
         .itemOutputs('64x kubejs:quantum_flux')

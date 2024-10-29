@@ -47,6 +47,30 @@ ServerEvents.recipes(event => {
     }).id('thermal:press_unpacking_die')
 
 
+    // Hardened Glass recipes
+    event.recipes.gtceu.alloy_smelter('kubejs:hardened_glass')
+        .itemInputs('1x #forge:dusts/lead', '4x #forge:dusts/obsidian')
+        .itemOutputs('2x thermal:obsidian_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.alloy_smelter('kubejs:signalum_glass')
+        .itemInputs('1x #forge:dusts/signalum', '2x thermal:obsidian_glass')
+        .itemOutputs('2x thermal:signalum_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.alloy_smelter('kubejs:lumium_glass')
+        .itemInputs('1x #forge:dusts/lumium', '2x thermal:obsidian_glass')
+        .itemOutputs('2x thermal:lumium_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.alloy_smelter('kubejs:enderium_glass')
+        .itemInputs('1x #forge:dusts/enderium', '2x thermal:obsidian_glass')
+        .itemOutputs('2x thermal:enderium_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV])
+
+
     //Centrifuging Recipes for Arboreal Extractor products
     event.recipes.gtceu.centrifuge('kubejs:latex_centrifuging')
         .inputFluids(Fluid.of('thermal:latex', 500))
