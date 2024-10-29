@@ -3,7 +3,7 @@
  * see https://github.com/Team-EnderIO/EnderIO/issues/852#issuecomment-2395092479
  */
 ServerEvents.tags('block', event => {
-    [
+    const list = [
         // All GT tiered blocks
         /^gtceu:(steam|u?lv|mv|hv|ev|iv|luv|zpm|uv|uhv|uev|uiv|max|creative)_.*$/,
 
@@ -30,5 +30,7 @@ ServerEvents.tags('block', event => {
         /^quark:.*_lamp$/,
         /^chipped:.*_lamp$/,
         'xtonesreworked:flat_lamp',
-    ].forEach(target => event.add('enderio:redstone_connectable', target))
+    ]
+
+    event.add('enderio:redstone_connectable', list)
 })
