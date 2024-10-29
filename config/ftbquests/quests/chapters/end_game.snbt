@@ -517,6 +517,28 @@
 			y: -16.0d
 		}
 		{
+			dependencies: [
+				"57E7182198B2EA9A"
+				"65C40A41F29687F4"
+			]
+			description: [
+				"Changing the circuit value on your newfound &9Subatomic Digital Assembler&r will allow you to assemble &9Creative ME Fluid Cells&r."
+				""
+				"These are kind of like the previous &9infinite cells&r, but you can partition this one in a &6cell workbench&r to tell what fluids it should stock."
+			]
+			hide_until_deps_visible: true
+			id: "2F21C6B6F145EA81"
+			optional: true
+			tasks: [{
+				id: "390C1F547BDF7D2B"
+				item: "ae2:creative_fluid_cell"
+				type: "item"
+			}]
+			title: "&9Creative Fluid Cell"
+			x: 31.0d
+			y: -9.5d
+		}
+		{
 			dependencies: ["5A70898C99B828E3"]
 			description: [
 				"The &3Loot Superfabricator&r is a multiblock structure that is made to match the incredible speeds of the &3Simulation Supercomputer&r."
