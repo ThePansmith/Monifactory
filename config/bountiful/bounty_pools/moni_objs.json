@@ -74,8 +74,8 @@
 			"rarity": "EPIC"
 		},
 		"all_obj_lv_circuit": {
-			"type": "item",
-			"content": "gtceu:basic_electronic_circuit",
+			"type": "item_tag",
+			"content": "gtceu:circuits/lv",
 			"amount": {
 				"min": 2,
 				"max": 8
