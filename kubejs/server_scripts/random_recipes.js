@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.vacuum_freezer("cryolobus_ingot_cooling")
         .itemInputs('gtceu:hot_cryolobus_ingot')
         .itemOutputs('gtceu:cryolobus_ingot')
-        .inputFluids(Fluid.of('kubejs:molten_cryotheum', 2000))
+        .inputFluids(Fluid.of('kubejs:molten_cryotheum', 250))
         .duration(600)
         .EUt(1920)
 
