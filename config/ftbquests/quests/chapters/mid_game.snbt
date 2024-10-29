@@ -582,6 +582,7 @@
 				}
 			]
 			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "52DA77396FBEFC90"
 				item: "gtceu:titanium_ingot"
@@ -2118,6 +2119,7 @@
 				}
 			]
 			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "214A71696449A9A4"
 				item: "gtceu:tungsten_steel_ingot"

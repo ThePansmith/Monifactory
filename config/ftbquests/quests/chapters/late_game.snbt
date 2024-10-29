@@ -464,7 +464,7 @@
 				"Make sure your power generation and circuit production are up to the challenge. &2None of the Assembly Line recipes require programmed circuits anymore.&r It is &anot required&r to insert items or fluids in the correct order."
 				""
 				"This quest calls for an Assembly Line that's 10 units long, allowing for 9 inputs and one output. This is a large enough Assembly Line to make &6LuV components&r, but you'll need to expand to more inputs for later projects."
-				""
+				"{@pagebreak}"
 				"The structure of the Assembly Line is a little stricter than other multiblocks:"
 				""
 				"- The &aInput Buses&r can only be placed along the bottom, must all be &8ULV&r tier, and must face downwards. The &aOutput Bus&r must be placed at the very end of the row of Input Buses, and can be any tier."
@@ -749,6 +749,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "0A1E55B5F54F0B7B"
 				item: "gtceu:rhodium_plated_palladium_ingot"
