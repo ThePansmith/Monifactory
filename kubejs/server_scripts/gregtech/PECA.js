@@ -54,7 +54,8 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(30)
 
-    event.recipes.gtceu.chemical_reactor('polyethyl_cyanoacrylate')
+    // Needs to be LCR to fit all the fluids
+    event.recipes.gtceu.large_chemical_reactor('polyethyl_cyanoacrylate')
         .notConsumableFluid('gtceu:dimethyl_sulfoxide 50')
         .inputFluids('gtceu:ethyl_cyanoacrylate 1000', 'gtceu:acetone 3000', 'gtceu:air 750')
         .itemOutputs('gtceu:polyethyl_cyanoacrylate_dust')
