@@ -130,6 +130,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red("Negation operator [!] is nonfunctional."))
 
     tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
+    tooltip.add('gcyr:space_chestplate', '§7Fill with Oxygen in a Canner.')
     tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
     tooltip.add('gtceu:ender_fluid_link_cover', '§4Not yet implemented.')
 
