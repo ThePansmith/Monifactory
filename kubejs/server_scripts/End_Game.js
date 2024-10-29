@@ -224,7 +224,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:diamond_perfect', '2x gtceu:diamond_plate', '4x gtceu:diamond_screw')
         .itemOutputs('kubejs:diamond_lattice')
         .duration(100)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:crystal_matrix_ingot', [
