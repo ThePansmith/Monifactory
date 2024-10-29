@@ -126,13 +126,15 @@ ItemEvents.tooltip(tooltip => {
     //Converters
     tooltip.add(/^gtceu:.*a_energy_converter$/, "§7Cannot be extracted from in EU->FE mode!\nUse an FE buffer for this to push into.")
     
-    // GT filters
+    // Gregtech
     tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red("Negation operator [!] is nonfunctional."))
-
-    tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
-    tooltip.add('gcyr:space_chestplate', '§7Fill with Oxygen in a Canner.')
     tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
     tooltip.add('gtceu:ender_fluid_link_cover', '§4Not yet implemented.')
+    tooltip.add('gtceu:nightvision_goggles', '§7Toggle with the [Armor Mode Switch] key.')
+
+    // GCYR
+    tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
+    tooltip.add('gcyr:space_chestplate', '§7Fill with Oxygen in a Canner.')
 
     // Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
