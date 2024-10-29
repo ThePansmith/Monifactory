@@ -60,6 +60,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 	event.create("mythril")
         .ingot()
         .color(0x428fdb).iconSet('dull')
+        .blastTemp(2141, null)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
 		.components('titanium', 'mana');
 })

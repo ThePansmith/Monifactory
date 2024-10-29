@@ -36,6 +36,10 @@
         {
             "item": "kubejs:guardian_scale",
             "count": 4
+        },
+        {
+            "item": "minecraft:wet_sponge",
+            "count": 2
         }
     ]
 }

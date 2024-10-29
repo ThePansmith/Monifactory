@@ -1007,7 +1007,19 @@ ServerEvents.recipes(event => {
     event.shapeless('expatternprovider:me_packing_tape', ['gtceu:basic_tape', 'gtceu:fluix_dust']).id('expatternprovider:tape')
 
     //Misc stuff
-    event.replaceInput({ id: 'expatternprovider:ingredient_buffer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
+    event.shaped('expatternprovider:ingredient_buffer',
+        [
+            'ISI',
+            'GCG',
+            'ISI'
+        ], {
+            I: 'gtceu:iron_plate',
+            S: 'ae2:cell_component_1k',
+            G: 'ae2:quartz_glass',
+            C: 'gtceu:lv_hermetic_casing'
+        }
+    ).id('expatternprovider:ingredient_buffer')
+
     event.replaceInput({ id: 'expatternprovider:crystal_fixer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
 
     event.remove({ id: 'expatternprovider:ex_drive' })

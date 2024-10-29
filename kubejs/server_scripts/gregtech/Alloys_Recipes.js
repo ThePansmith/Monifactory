@@ -177,33 +177,17 @@ ServerEvents.recipes(event => {
         .EUt(30)
 })
 
+//Add Primal Mana to Mana ingot recipe
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.electric_blast_furnace("kubejs:mythril")
-        .itemInputs('gtceu:mythril_dust')
-        .itemOutputs('gtceu:mythril_ingot')
-        .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
-        .duration(400)
-        .EUt(400)
-        .blastFurnaceTemp(2141)
+    event.findRecipes({ id: /^gtceu:electric_blast_furnace\/blast_mythril/ }).forEach(recipe=> {
+        const text = '[{"content":{"amount":250,"value":{"fluid":"kubejs:molten_primal_mana"}},"chance":10000,"maxChance":10000,"tierChanceBoost":0}]'
+        recipe.json.getAsJsonObject("inputs").add("fluid", JSON.parse(text))
+    })
 })
 
+//Replace hot ingot EBF output with regular for Kanthal
 ServerEvents.recipes(event => {
-    event.remove(['gtceu:electric_blast_furnace/blast_kanthal','gtceu:electric_blast_furnace/blast_kanthal_gas'])
-    event.recipes.gtceu.electric_blast_furnace("kubejs:kanthal")
-        .itemInputs('gtceu:kanthal_dust')
-        .itemOutputs('gtceu:kanthal_ingot')
-        .duration(700)
-        .EUt(480)
-        .circuit(1)
-        .blastFurnaceTemp(1800)
-    event.recipes.gtceu.electric_blast_furnace("kubejs:kanthal_gas")
-        .itemInputs('gtceu:kanthal_dust')
-        .itemOutputs('gtceu:kanthal_ingot')
-        .inputFluids(Fluid.of('gtceu:nitrogen', 1000))
-        .duration(469)
-        .EUt(480)
-        .circuit(2)
-        .blastFurnaceTemp(1800)
+    event.replaceOutput({ id: /^gtceu:electric_blast_furnace\/blast_kanthal/ }, 'gtceu:hot_kanthal_ingot', 'gtceu:kanthal_ingot')
 })
 
 ServerEvents.recipes(event => {

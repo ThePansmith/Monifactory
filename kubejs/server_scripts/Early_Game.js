@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .blastFurnaceTemp(1700)
 
-event.recipes.gtceu.electric_blast_furnace("aluminium_ingot_gas")
+    event.recipes.gtceu.electric_blast_furnace("aluminium_ingot_gas")
         .itemInputs('gtceu:aluminium_dust')
         .inputFluids('gtceu:nitrogen 1000')
         .itemOutputs('gtceu:aluminium_ingot')
@@ -37,6 +37,14 @@ event.recipes.gtceu.electric_blast_furnace("aluminium_ingot_gas")
         ], { A: ballIngredient })
     });
 
+    //Bronze Machine Casing
+    event.recipes.gtceu.assembler('bronze_machine_casing_assembler')
+        .itemInputs('8x gtceu:bronze_plate')
+        .itemOutputs('gtceu:bronze_machine_casing')
+        .circuit(8)
+        .duration(25)
+        .EUt(16)
+
     // Hand-crushing
     event.shapeless("minecraft:gravel", ['#forge:cobblestone/normal', "#forge:tools/mortars"])
     event.shapeless("minecraft:sand", ["minecraft:gravel", "#forge:tools/hammers"])
@@ -62,6 +70,24 @@ event.recipes.gtceu.electric_blast_furnace("aluminium_ingot_gas")
         .itemOutputs('gtceu:phenolic_circuit_board')
         .duration(100)
         .EUt(8)
+
+    
+    //Resin Board stuff
+    event.recipes.gtceu.assembler('kubejs:resin_board_assembler')
+        .itemInputs('#minecraft:planks')
+        .inputFluids('gtceu:glue 100')
+        .itemOutputs('gtceu:resin_circuit_board')
+        .circuit(1)
+        .duration(150)
+        .EUt(7)
+
+    event.recipes.gtceu.assembler('gtceu:basic_circuit_board')
+        .itemInputs('#minecraft:planks', '4x gtceu:copper_foil')
+        .inputFluids('gtceu:glue 100')
+        .itemOutputs('gtceu:resin_printed_circuit_board')
+        .circuit(2)
+        .duration(200)
+        .EUt(7)
 
     //phenol
 
