@@ -185,23 +185,9 @@ ServerEvents.recipes(event => {
     })
 })
 
+//Replace hot ingot EBF output with regular for Kanthal
 ServerEvents.recipes(event => {
-    event.remove(['gtceu:electric_blast_furnace/blast_kanthal','gtceu:electric_blast_furnace/blast_kanthal_gas'])
-    event.recipes.gtceu.electric_blast_furnace("kubejs:kanthal")
-        .itemInputs('gtceu:kanthal_dust')
-        .itemOutputs('gtceu:kanthal_ingot')
-        .duration(700)
-        .EUt(480)
-        .circuit(1)
-        .blastFurnaceTemp(1800)
-    event.recipes.gtceu.electric_blast_furnace("kubejs:kanthal_gas")
-        .itemInputs('gtceu:kanthal_dust')
-        .itemOutputs('gtceu:kanthal_ingot')
-        .inputFluids(Fluid.of('gtceu:nitrogen', 1000))
-        .duration(469)
-        .EUt(480)
-        .circuit(2)
-        .blastFurnaceTemp(1800)
+    event.replaceOutput({ id: /^gtceu:electric_blast_furnace\/blast_kanthal/ }, 'gtceu:hot_kanthal_ingot', 'gtceu:kanthal_ingot')
 })
 
 ServerEvents.recipes(event => {
