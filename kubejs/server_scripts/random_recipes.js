@@ -893,8 +893,8 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
-    // Dragon Breath caning and extracting
-    event.recipes.gtceu.extractor('dragon_breath_fluid')
+    // Dragon Breath canning and uncanning
+    event.recipes.gtceu.canner('dragon_breath_unbottling')
         .itemInputs('minecraft:dragon_breath')
         .itemOutputs('minecraft:glass_bottle')
         .outputFluids('gtceu:dragon_breath 250')
