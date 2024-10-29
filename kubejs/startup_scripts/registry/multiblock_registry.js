@@ -318,7 +318,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                     .or(Predicates.blocks(GCyMBlocks.CASING_ATOMIC.get())))
                 .where('E', Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(16).setPreviewCount(16)
                     .or(Predicates.blocks(GCyMBlocks.CASING_ATOMIC.get())))
-                .where('C', Predicates.blocks(GCyMBlocks.CASING_ATOMIC.get())
+                .where('C', Predicates.blocks(GCyMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(130)
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(2))
                     .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMinGlobalLimited(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
