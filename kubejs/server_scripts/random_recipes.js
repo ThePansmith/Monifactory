@@ -747,11 +747,18 @@ ServerEvents.recipes(event => {
     .duration(120)
     .EUt(75)
 
-    event.recipes.gtceu.extractor('resonant_ender')
-    .itemInputs('minecraft:ender_pearl')
-    .outputFluids(Fluid.of('thermal:ender', 250))
-    .duration(40)
-    .EUt(30)
+    event.recipes.gtceu.extractor('resonant_ender_from_pearl')
+        .itemInputs('1x minecraft:ender_pearl')
+        .outputFluids(Fluid.of('thermal:ender', 250))
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.fluid_solidifier('pearl_from_resonant_ender')
+        .notConsumable('gtceu:ball_casting_mold')
+        .inputFluids(Fluid.of('thermal:ender', 250))
+        .itemOutputs('1x minecraft:ender_pearl')
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     //Cleanroom Hatch
     event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning'})
