@@ -5,9 +5,10 @@
 * [Contributing Guidelines](#contributing-guidelines)
   * [Introduction](#introduction)
   * [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
-  * [Ground Rules](#ground-rules)
   * [Getting Started](#getting-started)
-    * [Things to Watch Out For](#things-to-watch-out-for)
+    * [Setting up an instance repository](#setting-up-an-instance-repository-for-use-in-dev)
+  * [Things to Watch Out For](#things-to-watch-out-for)
+    * [Questbook Highlighting](#questbook-highlighting)
 
 ## Introduction ##
 
@@ -36,19 +37,42 @@ Specifically, we are not looking for:
 
 ## Getting Started ##
 
-To begin making contributions to this project, you will likely want to create
-your own fork of this repository. This can be done via the GitHub web UI. Please
-see [this GitHub help article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
-for more information.
+### Setting up an instance repository for use in dev ###
+If this is your first time using github, see [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) on how to create a fork and clone it to your desktop.
 
-Once you have forked the repository you may make the changes you want, either in
-the web UI or by cloning the repository locally.
+The following guide was written with prism launcher in mind, see [here](<https://discord.com/channels/914926812948234260/1229929078547550238/1298732957204221965>) for curselauncher instructions.
 
-After you have made your changes, please create a pull request. Once again, see
-[this GitHub help article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) for
-more details.
+1. Create a new Monifactory instance from the latest release, in this example, the instance folder will be named Monifactory
+2. Open the `instances\Monifactory` folder, take everything contained within it and store it in a temporary folder (`temp`).
+3. Clone your fork of the Monifactory repository into `instances\Monifactory`, with the repository's folder being named `minecraft`. (If using the desktop app, see [here](https://cdn.discordapp.com/attachments/1229929078547550238/1298722566264848424/image.png?ex=671b41e4&is=6719f064&hm=136130e4025ea3c04f92a19888b8969615806686c97707c44b57885e40f91ac2&) for an image example.)
+4. Once the repo is installed,  go back to your temporary folder and move the files from the `temp` root folder and `temp\minecraft\mods` folder back into the Monifactory folder.
+
+Once those files are moved back in place, you should be able to launch the instance as a modpack while also being to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance. 
+
+
 
 ## Things to Watch Out For ##
+
+### Questbook Highlighting ###
+
+| Color  | Info Highlighted |
+| ------------- | ------------- |
+| Black (0)  | Currently Unused |
+| Dark Blue (l)  | Currently Unused  |
+| Dark Green (2)  | Currently Unused  |
+| Cyan (3)  | Machines & other processing  |
+| Red (4)  | Warnings  |
+| Dark Purple (5) | Notes about things in Beta  |
+| Orange (6) | Items AND fluids  |
+| Light Gray (7) | Currently Unused  |
+| Gray (8)  | Keyboard/mouse controls  |
+| Light Blue (9)  | Content new to Monifactory |
+| Lime (A) | RF and EU Power |
+| Aqua (B) | Mod names |
+| Light Red (C) | HM/EM exclusive info |
+| Pink (D) | CWU & Data |
+| Yellow (E) | Supplemental Information |
+| White (F) | Default text |
 
 ### Config Overrides ###
 
@@ -77,8 +101,18 @@ KubeJS offers a feature to automatically load resource packs & datapacks put int
 2. On a similar note, we use `4 Spaces` to indent, `UTF-8` character encoding, and end lines with `CRLF`. This information is visible on the bottom-right if you're using VSCode.
 3. Label things with comments! Every file should have a C-style comment at the top explaining what that file does, (Reference existing files if you don't know what that is) and please sprinkle in one-line comments throughout to explain what certain blocks of code do. _Nobody's_ code is self-explanatory.
 4. On that note, please add a space between the double line comment and its text to form comments `// like this.`
-5. When possible, use a  list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
-6. Use either one or two empty lines to delineate between distinct blocks of code in the same file.
+5. When possible, use a list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
+6. Use empty lines to delineate between distinct blocks of code in the same file - one line if the two blocks work together to perform the same function, two otherwise.
 7. When dealing with long concatenated method calls or extended lists of parameters, indent any continuations of that statement on a new line, in the same way that one would indent the body of an if statement or for loop.
 8. All mod-focused scripts' filenames should be the same as that mod's namespace. (Visible when viewing item IDs) Furthermore all scripts' filenames should be entirely lowercase.
 9. For Multiblock pattern builders, always use `@` char for the controller, ` ` (space) for air and `#` for the 'any' predicate.
+
+## Updating Mods ##
+
+If you're updating mods, please make sure to test the basic functionality of every mod you're updating.
+It's easy to forget, but mod updates can break as many things as they fix - don't let that happen to Moni's updates as well!
+
+DO NOT UPDATE:
+- Crafting Station to 1.20.1-0
+- Nuclearcraft: Neoteric
+- Not Enough Recipe Book

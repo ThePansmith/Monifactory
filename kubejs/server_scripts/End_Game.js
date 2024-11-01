@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     // Assembly Line
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line('dimensional_superassembler')
-            .itemInputs('gtceu:assembly_line', '4x kubejs:dimensional_processor_mainframe', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '6x gtceu:uiv_conveyor_module', '4x gtceu:uiv_robot_arm', '4x gtceu:uiv_emitter', '2x gtceu:infinity_frame', '24x gtceu:polyethyl_cyanoacrylate_plate')
+            .itemInputs('gtceu:assembly_line', '4x #gtceu:circuits/uiv', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '6x gtceu:uev_conveyor_module', '4x gtceu:uev_robot_arm', '4x gtceu:uev_emitter', '2x gtceu:infinity_frame', '24x gtceu:polyethyl_cyanoacrylate_plate')
             .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
             .itemOutputs('gtceu:dimensional_superassembler')
             .duration(6000)
@@ -14,19 +14,21 @@ ServerEvents.recipes(event => {
                 .EUt(1200000)
             )
 
-    // Helical Fusion Reactor
-    event.recipes.gtceu.assembly_line('gtceu:helical_fusion_reactor')
-            .itemInputs('gtceu:uv_fusion_reactor', '4x #gtceu:circuits/uev', 'gtceu:gravi_star', '2x gtceu:double_activated_netherite_plate', '4x gtceu:uhv_field_generator', '64x kubejs:multidimensional_cpu_chip', '64x kubejs:multidimensional_cpu_chip', '64x gtceu:sculk_superconductor_single_wire', '24x gtceu:polyethyl_cyanoacrylate_plate')
-            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
-            .itemOutputs('gtceu:helical_fusion_reactor')
-            .duration(6000)
-            .EUt(13920000)
-
-            .stationResearch(b => b
-                .researchStack('gtceu:uv_fusion_reactor')
-                .CWUt(160, 1024000)
-                .EUt(1200000)
-    )
+    if(!isNormalMode) {
+        // Helical Fusion Reactor
+        event.recipes.gtceu.assembly_line('gtceu:helical_fusion_reactor')
+        .itemInputs('gtceu:uv_fusion_reactor', '4x #gtceu:circuits/uev', 'gtceu:gravi_star', '2x gtceu:double_activated_netherite_plate', '4x gtceu:uhv_field_generator', '64x kubejs:multidimensional_cpu_chip', '64x kubejs:multidimensional_cpu_chip', '64x gtceu:ruthenium_trinium_americium_neutronate_single_wire', '24x gtceu:polyethyl_cyanoacrylate_plate')
+        .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
+        .itemOutputs('gtceu:helical_fusion_reactor')
+        .duration(6000)
+        .EUt(13920000)
+        .stationResearch(b => b
+            .researchStack('gtceu:uv_fusion_reactor')
+            .CWUt(160, 1024000)
+            .EUt(1200000)
+        )
+    }
+    
 
     // Extra Large Chemical Reactor
     event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
@@ -129,6 +131,11 @@ ServerEvents.recipes(event => {
             P: 'gtceu:electrum_flux_plate'
         }
     ).id('redstone_arsenal:materials/flux_plating')
+    event.recipes.gtceu.omnic_forge('kubejs:flux_plating_assembly')
+        .itemInputs('redstone_arsenal:flux_gem', '4x gtceu:electrum_flux_plate')
+        .itemOutputs('4x redstone_arsenal:flux_plating')
+        .duration(60)
+        .EUt(7680)
 
 	// Vacuum Freezer
 	// kubejs Superconductor Wire
@@ -208,11 +215,16 @@ ServerEvents.recipes(event => {
             'BGB',
             'PBP'
         ], {
-            B: 'minecraft:diamond_block',
+            P: 'minecraft:diamond',
             G: 'gtceu:diamond_perfect',
-            P: 'gtceu:diamond_plate'
+            B: 'gtceu:diamond_screw'
         }
     ).id('kubejs:diamond_lattice')
+    event.recipes.gtceu.assembler('kubejs:diamond_lattice')
+        .itemInputs('gtceu:diamond_perfect', '2x gtceu:diamond_plate', '4x gtceu:diamond_screw')
+        .itemOutputs('kubejs:diamond_lattice')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:crystal_matrix_ingot', [

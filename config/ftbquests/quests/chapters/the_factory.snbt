@@ -44,6 +44,14 @@
 			x: 4.5d
 			y: 6.25d
 		}
+		{
+			id: "6EFDF0495132F8EC"
+			linked_quest: "715BC5C7DAC53B7B"
+			shape: "hexagon"
+			size: 1.5d
+			x: 6.5d
+			y: -5.5d
+		}
 	]
 	quests: [
 		{
@@ -317,7 +325,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["7A12743F5ECCED90"]
+			dependencies: [
+				"68CB6AD16F1041E5"
+				"7A12743F5ECCED90"
+			]
 			description: [
 				"Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with &9monicoins&r."
 				""
@@ -513,6 +524,55 @@
 			y: -6.0d
 		}
 		{
+			dependencies: [
+				"2EC4EF1BEEA578F3"
+				"47094A5717952699"
+				"273F3F8DD6A3DCC5"
+			]
+			description: [
+				"This pack has &aSnad&r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block update or a redstone update."
+				""
+				"The sugar cane it produces can be used as a fuel for your dynamos, and later you can even brew it for &9Biomass&r."
+				""
+				"This quest calls for a &aRedstone Clock&r, but there are other ways to make snad grow sugar cane even faster (like a vanilla observer clock pointing into the Snad). Make sure to set the timer to pulse as fast as possible."
+				""
+				"To collect the sugar cane, you can use a piston and an observer."
+				""
+				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
+			]
+			hide_until_deps_visible: true
+			icon: "snad:snad"
+			id: "63ADD9B48834AA39"
+			optional: true
+			shape: "hexagon"
+			subtitle: "Yes, Snad."
+			tasks: [
+				{
+					id: "677A2551088FF511"
+					item: "snad:snad"
+					type: "item"
+				}
+				{
+					id: "73A6A78D037587CE"
+					item: "enderio:vacuum_chest"
+					type: "item"
+				}
+				{
+					id: "37B26D17B2B13DDE"
+					item: "redstone_clock:redstone_clock"
+					type: "item"
+				}
+				{
+					id: "0B29F722B1B4D328"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+			]
+			title: "Snad"
+			x: -4.5d
+			y: -9.5d
+		}
+		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
 				"&aMolds&r are used in a &3Fluid Solidifier&r or &3Alloy Smelter&r to form materials into specific shapes. These are not consumed or damaged during crafting, so you can leave them in a machine to dedicate it to that shape."
@@ -643,11 +703,18 @@
 			}]
 			shape: "hexagon"
 			subtitle: "Copper... Nickel... Cupronickel?"
-			tasks: [{
-				id: "708858A9BC1F9ABE"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "708858A9BC1F9ABE"
+					item: "gtceu:cupronickel_ingot"
+					type: "item"
+				}
+				{
+					id: "7ECBEB3D39F5DFD2"
+					item: "gtceu:invar_ingot"
+					type: "item"
+				}
+			]
 			title: "Cupronickel"
 			x: 2.5d
 			y: 2.0d
@@ -703,7 +770,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["29A487F0BC43AAF9"]
+			dependencies: [
+				"68CB6AD16F1041E5"
+				"29A487F0BC43AAF9"
+			]
 			description: [
 				"Using plain &3Steam Dynamos&f is pretty inefficient."
 				""
@@ -711,6 +781,7 @@
 				""
 				"This greatly increases the overall efficiency and the amount of power produced, from &a40 RF/t&r per basic steam dynamo to &a320 RF/t&r per set of three augmented dynamos."
 			]
+			hide_until_deps_visible: true
 			icon: "systeams:steam_dynamo"
 			id: "545CCC24D9401794"
 			tasks: [
@@ -801,14 +872,19 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["30EBD4E7BBFFEF2C"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"30EBD4E7BBFFEF2C"
+			]
 			description: [
 				"&6&6String&r and &6Coal Dust&r can be baked together into a &6Carbon Mesh&r in an &3Alloy Furnace&r."
 				""
 				"Combine that with &6Pulsating Dust&r to get a &6Pulsating Mesh&r."
 			]
+			hide_until_deps_visible: true
 			icon: "kubejs:pulsating_mesh"
 			id: "645B1DCB3DA7198A"
+			optional: true
 			rewards: [{
 				id: "2D12B468C7630D14"
 				item: "kubejs:moni_nickel"
@@ -833,39 +909,6 @@
 		}
 		{
 			dependencies: [
-				"645B1DCB3DA7198A"
-				"3BD20358F137E7C6"
-			]
-			description: [
-				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
-				""
-				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron, gold, tin, copper, diamonds&r and many more!), through pristine matter."
-				""
-				"Setting up &bHNN&r automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
-				""
-				"&bHNN&r machines are not sided, so you can input and output from any side."
-				""
-				"Yes, you can also use it for generating power... &owith &6Diamonds&r."
-			]
-			id: "715BC5C7DAC53B7B"
-			rewards: [{
-				id: "518DD0C9237B4DBC"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "15A06F5EF4CADA4C"
-				item: "hostilenetworks:sim_chamber"
-				type: "item"
-			}]
-			title: "&9Simulating Mobs"
-			x: 6.5d
-			y: -5.5d
-		}
-		{
-			dependencies: [
 				"5301E546BAA69844"
 				"74B5CA5A48CE7B39"
 			]
@@ -880,16 +923,23 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["545CCC24D9401794"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"545CCC24D9401794"
+			]
 			description: [
 				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
 				""
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
+				""
+				"&4Does not generate byproducts!&r You need an HV-tier macerator or higher to get some."
 			]
+			hide_until_deps_visible: true
 			icon: "gtceu:steam_grinder"
 			id: "41C2E49E70D76330"
+			optional: true
 			rewards: [
 				{
 					count: 7
@@ -1714,12 +1764,16 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["273F3F8DD6A3DCC5"]
+			dependencies: [
+				"68CB6AD16F1041E5"
+				"273F3F8DD6A3DCC5"
+			]
 			description: [
 				"Item conduits are useful for moving items between inventories over moderate distances."
 				""
 				"Crafting them in an Assembling Machine instead of by hand gives twice as many conduits."
 			]
+			hide_until_deps_visible: true
 			id: "4F239316765C7CA1"
 			rewards: [{
 				id: "189732EC89DA656B"
@@ -1842,14 +1896,19 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["3EDD0A986384F2A7"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"3EDD0A986384F2A7"
+			]
 			description: [
 				"Now that you have a &3Wiremill&f and a &2Bender&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &9monicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
 				""
 				"With renewable &9monicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "3E69E1949316BD0C"
+			optional: true
 			rewards: [{
 				id: "09A5BDC0CF107A1C"
 				item: "kubejs:moni_nickel"
@@ -1880,8 +1939,12 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["545CCC24D9401794"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"545CCC24D9401794"
+			]
 			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
+			hide_until_deps_visible: true
 			icon: "steamadditions:steam_foundry"
 			id: "5D60CAE3A33000C3"
 			rewards: [{
@@ -2010,6 +2073,7 @@
 		}
 		{
 			dependencies: [
+				"57E7182198B2EA9A"
 				"6FB3E3D9CA0F4B30"
 				"29A487F0BC43AAF9"
 			]
@@ -2020,6 +2084,7 @@
 				""
 				"This quest accepts a &aSoft Mallet&r made from any material."
 			]
+			hide_until_deps_visible: true
 			icon: {
 				Count: 1
 				id: "gtceu:rubber_mallet"
@@ -2034,16 +2099,17 @@
 					}
 				}
 			}
-			id: "78B5D55A3560B98E"
+			id: "7EA737163230F984"
+			optional: true
 			rewards: [{
-				id: "16EF260235D12825"
+				id: "56897FB11AB023CB"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			subtitle: "Bonk!"
 			tasks: [{
-				id: "253D34B000F903DD"
+				id: "56A2D430950E2112"
 				item: {
 					Count: 1
 					id: "itemfilters:or"

@@ -77,11 +77,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.multiblock.subatomic_digital_assembler.description'))
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.multiblock.actualization_chamber.description'))
 
-    tooltip.addAdvanced('gtceu:universal_crystallizer', (item, adv, text) => {
-        text.add(1, Text.darkGray('An immense device, capable of turning raw materials into complex matters'))
-        text.add(2, [Text.gray('Can be parallelized with '), Text.aqua('Parallel Control Hatches')])
-    })
-
     tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
         text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
         text.add(2, [Text.white('Produces exactly 3 amps of '), Text.red('ZPM'), Text.white('.')])
@@ -106,7 +101,8 @@ ItemEvents.tooltip(tooltip => {
         'extra_large_chemical_reactor',
         'quintessence_infuser',
         'hyperbolic_microverse_projector',
-        'dimensional_superassembler'
+        'dimensional_superassembler',
+        'universal_crystallizer'
     ]
 
     parallelMultis.forEach(multi => {
@@ -127,8 +123,18 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
-    tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
+    //Converters
+    tooltip.add(/^gtceu:.*a_energy_converter$/, "§7Cannot be extracted from in EU->FE mode!\nUse an FE buffer for this to push into.")
+    
+    // Gregtech
+    tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red("Negation operator [!] is nonfunctional."))
     tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
+    tooltip.add('gtceu:ender_fluid_link_cover', '§4Not yet implemented.')
+    tooltip.add('gtceu:nightvision_goggles', '§7Toggle with the [Armor Mode Switch] key.')
+
+    // GCYR
+    tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
+    tooltip.add('gcyr:space_chestplate', '§7Fill with Oxygen in a Canner.')
 
     // Sophisticated Storage
     tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
@@ -139,6 +145,10 @@ ItemEvents.tooltip(tooltip => {
     // AE2
     tooltip.add('ae2:facade', Text.gray('Crafted with Cable Anchors'))
     tooltip.add('ae2:memory_card', Text.gray('Hold in offhand to set additional inputs on Multi P2Ps.'))
+    tooltip.add('ae2:creative_fluid_cell', Text.red('Cannot be made using Creative Tank data!\nAE2 devs will not fix a bug that allows this to make items as well.'))
+
+    //EIO Cap Banks
+    tooltip.add(/^enderio:.*_bank$/, "§4Currently TPS intensive, look into other options for power storage.")
 
     // Misc
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray('Gaze into the Abyss...'))
@@ -150,10 +160,19 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add('extendedcrafting:auto_flux_crafter',("§7Uses large amounts of energy to convert Sculk into Sculk Cores."))
     tooltip.add('extendedcrafting:flux_alternator', ("§7Provides Energy to the Sculk Charger, from up to 3 blocks away."))
-    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table'], ['§7Cannot be inserted into!', '§7Put them in an inventory atop the table instead.'])
+    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table', 'extendedcrafting:auto_flux_crafter'], ['§7Cannot be inserted into!', '§7Put items in an inventory atop the table instead.'])
     
     tooltip.add('kubejs:excitationcoil', '§7Used for Crafting.')
     tooltip.add('gtceu:terminal', '§7Can autobuild multiblocks by shift-right-clicking a controller.')
+
+    tooltip.add(['gtceu:prospector.lv', 'gtceu:prospector.hv', 'gtceu:prospector.luv'], "§7Only shows ores in the immediate vicinity.\nIf you're looking for a specific ore, you may need to go exploring!")
+
+    // TelePastries
+    tooltip.add('telepastries:nether_cake', '§6Teleports you to the Nether\n§7Refill by right-clicking with 2 or more Obsidian.')
+    tooltip.add('telepastries:overworld_cake', '§6Teleports you to the Overworld\n§7Refill by right-clicking with 2 or more vanilla Saplings.')
+    tooltip.add('telepastries:end_cake', '§6Teleports you to the End\n§7Refill by right-clicking with 2 or more Eyes of Ender.')
+    tooltip.add('telepastries:custom_cake', '§6Teleports you to the Void World\n§7Refill by right-clicking with 2 or more Pulsating Dust.')
+    tooltip.add('telepastries:lost_city_cake', '§6Teleports you to the Lost Cities\n§7Teleport without consuming by right-clicking with a Diamond.')
 
 
     // NuclearCraft
@@ -184,7 +203,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
     // Macerator byproduct warning
-    tooltip.add(['gtceu:lv_macerator', 'gtceu:mv_macerator'], '§4You must use a HV-tier macerator or higher for byproducts.')
+    tooltip.add(['gtceu:lp_steam_macerator', 'gtceu:hp_steam_macerator', 'gtceu:steam_grinder', 'gtceu:lv_macerator', 'gtceu:mv_macerator'], '§4You must use a HV-tier macerator or higher for byproducts.')
 
     // Wooden pipe, tank warning
     tooltip.add([

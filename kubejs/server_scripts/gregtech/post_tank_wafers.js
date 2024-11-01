@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:unactivated_multidimensional_cpu_wafer')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
-        .EUt(128000)
+        .EUt(GTValues.VA[GTValues.LuV])
 
         event.recipes.gtceu.large_chemical_reactor("multidimensional_cpu_wafer")
         .itemInputs('16x kubejs:unactivated_multidimensional_cpu_wafer', '64x kubejs:quantum_flux', 'kubejs:quasi_stable_neutron_star')
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('16x kubejs:multidimensional_cpu_wafer')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(900)
-        .EUt(250000)
+        .EUt(GTValues.VA[GTValues.ZPM])
 
         event.recipes.gtceu.cutter("multidimensional_cpu_chip")
         .itemInputs('kubejs:multidimensional_cpu_wafer')
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('8x kubejs:multidimensional_cpu_chip')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1800)
-        .EUt(128000)
+        .EUt(GTValues.VA[GTValues.IV])
 
         event.recipes.gtceu.cutter("multidimensional_cpu_chip_distilled")
         .itemInputs('kubejs:multidimensional_cpu_wafer')
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('8x kubejs:multidimensional_cpu_chip')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
-        .EUt(128000)
+        .EUt(GTValues.VA[GTValues.IV])
 
         event.recipes.gtceu.cutter("multidimensional_cpu_chip_lubricant")
         .itemInputs('kubejs:multidimensional_cpu_wafer')
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('8x kubejs:multidimensional_cpu_chip')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(900)
-        .EUt(128000)
+        .EUt(GTValues.VA[GTValues.IV])
 
         //Hyperdynamic RAM
 
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:hyperdynamic_ram_wafer')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
-        .EUt(128000)
+        .EUt(GTValues.VA[GTValues.ZPM])
 
         event.recipes.gtceu.cutter("hyperdynamic_ram_chip")
         .itemInputs('kubejs:hyperdynamic_ram_wafer')
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('12x kubejs:hyperdynamic_ram_chip_base')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1800)
-        .EUt(128000)
+        .EUt(GTValues.VA[GTValues.IV])
 
         event.recipes.gtceu.cutter("hyperdynamic_ram_chip_distilled")
         .itemInputs('kubejs:hyperdynamic_ram_wafer')
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('12x kubejs:hyperdynamic_ram_chip_base')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
-        .EUt(128000)
+        .EUt(GTValues.VA[GTValues.IV])
 
         event.recipes.gtceu.cutter("hyperdynamic_ram_chip_lubricant")
         .itemInputs('kubejs:hyperdynamic_ram_wafer')
@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('12x kubejs:hyperdynamic_ram_chip_base')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(900)
-        .EUt(128000)
+        .EUt(GTValues.VA[GTValues.IV])
 
         event.recipes.gtceu.circuit_assembler("activated_hyperdynamic_ram_chip")
         .itemInputs('4x kubejs:hyperdynamic_ram_chip_base', '2x kubejs:matter_processing_unit', '4x gtceu:advanced_smd_transistor', '12x gtceu:fine_holmium_wire')
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x kubejs:hyperdynamic_ram_chip')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(300)
-        .EUt(524288)
+        .EUt(GTValues.VA[GTValues.UV])
 
  //Quantum SoC
  event.recipes.gtceu.laser_engraver('quantum_soc_wafer')
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
  .itemOutputs('kubejs:quantum_soc_wafer')
  .cleanroom(CleanroomType.CLEANROOM)
  .duration(1200)
- .EUt(256000)
+ .EUt(GTValues.VA[GTValues.UV])
 
  event.recipes.gtceu.cutter("quantum_soc_chip")
  .itemInputs('kubejs:quantum_soc_wafer')
@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
  .itemOutputs('6x kubejs:quantum_soc_chip_base')
  .cleanroom(CleanroomType.CLEANROOM)
  .duration(1800)
- .EUt(256000)
+ .EUt(GTValues.VA[GTValues.LuV])
 
  event.recipes.gtceu.cutter("quantum_soc_chip_distilled")
  .itemInputs('kubejs:quantum_soc_wafer')
@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
  .itemOutputs('12x kubejs:quantum_soc_chip_base')
  .cleanroom(CleanroomType.CLEANROOM)
  .duration(1200)
- .EUt(256000)
+ .EUt(GTValues.VA[GTValues.LuV])
 
  event.recipes.gtceu.cutter("quantum_soc_chip_lubricant")
  .itemInputs('kubejs:quantum_soc_wafer')
@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
  .itemOutputs('12x kubejs:quantum_soc_chip_base')
  .cleanroom(CleanroomType.CLEANROOM)
  .duration(900)
- .EUt(256000)
+ .EUt(GTValues.VA[GTValues.LuV])
 
  event.recipes.gtceu.circuit_assembler("activated_quantum_soc_chip")
  .itemInputs('8x kubejs:quantum_soc_chip_base', '4x #gtceu:circuits/uhv', '4x kubejs:complex_smd_transistor', '64x gtceu:holmium_foil')
@@ -178,5 +178,5 @@ ServerEvents.recipes(event => {
  .itemOutputs('8x kubejs:quantum_soc_chip')
  .cleanroom(CleanroomType.CLEANROOM)
  .duration(300)
- .EUt(5000000)
+ .EUt(GTValues.VA[GTValues.UEV])
 })

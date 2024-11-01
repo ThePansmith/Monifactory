@@ -31,8 +31,7 @@ event.recipes.gtceu.mixer('kubejs:unsweetened_chocolate')
 
     event.recipes.gtceu.chemical_reactor('kubejs:milk_pasteurization')
     .inputFluids(Fluid.of('minecraft:milk', 1000), Fluid.of('gtceu:steam', 500))//TODO Change to forge tags for steam
-    .itemInputs('2x gtceu:stainless_steel_plate')
-    .itemOutputs('2x gtceu:stainless_steel_plate')
+    .notConsumable('2x gtceu:stainless_steel_plate')
     .outputFluids(Fluid.of('nuclearcraft:pasteurized_milk', 1000))
     .EUt(480)
     .duration(250)
@@ -96,7 +95,7 @@ event.recipes.gtceu.extractor('kubejs:gelatin')
     .duration(100)
 
 event.recipes.gtceu.extractor('kubejs:extract_milk')
-    .itemInputs('minecraft:cow_spawn_egg')
+    .notConsumable('minecraft:cow_spawn_egg')
     .outputFluids(Fluid.of('minecraft:milk',5000))
     .EUt(32)
     .duration(1000)

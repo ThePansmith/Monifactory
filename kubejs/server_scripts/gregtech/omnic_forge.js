@@ -33,17 +33,10 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:omnic_matrix_coil_block')
         .duration(1000)
         .EUt(65520)
-        
-    event.remove({output: 'gcyr:dyson_sphere_casing'})
-    event.recipes.gtceu.omnic_forge('kubejs:dyson_casing')
-        .itemInputs('32x gcyr:bisalloy_400_plate', '12x gtceu:activated_netherite_frame', '12x gtceu:dense_naquadah_alloy_plate', '12x gtceu:omnium_rod', '4x gtceu:uv_field_generator')
-        .itemOutputs('4x gcyr:dyson_sphere_casing')
-        .duration(2000)
-        .EUt(65520)
    
     event.recipes.gtceu.omnic_forge('kubejs:netherite_casing')
-        .itemInputs('16x gtceu:neutronium_plate', '12x gtceu:large_scale_assembler_casing', '6x gtceu:dense_activated_netherite_plate', '12x gtceu:tungsten_steel_rod')
-        .itemOutputs('3x kubejs:dimensional_stabilization_netherite_casing')
+        .itemInputs('8x gtceu:neutronium_plate', '8x gtceu:large_scale_assembler_casing', '2x gtceu:dense_activated_netherite_plate', '6x gtceu:tungsten_steel_rod')
+        .itemOutputs('4x kubejs:dimensional_stabilization_netherite_casing')
         .duration(2000)
         .EUt(65520)
 
@@ -104,15 +97,21 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(7680)
 
-    event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_ultra_dense_hydrogen')
-        .itemInputs('64x kubejs:solidified_hydrogen')
-        .itemOutputs('kubejs:ultra_dense_hydrogen')
-        .duration(20)
-        .EUt(120)
-
     event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_quantum_flux')
         .itemInputs('redstone_arsenal:flux_gem', '4x kubejs:primal_mana', '2x minecraft:dragon_breath', 'gtceu:nether_star_dust')
         .itemOutputs('64x kubejs:quantum_flux')
         .duration(50)
         .EUt(1920)
+    
+    event.recipes.gtceu.omnic_forge('fieldstabilizedcompound')
+        .itemInputs('4x gtceu:uiv_field_generator', '3x gtceu:uev_field_generator', '2x gtceu:uhv_field_generator',  '12x gtceu:omnic_acid_dust', '10x kubejs:quasi_stable_neutron_star')
+        .itemOutputs('kubejs:field_stabilised_omnic_pulsar_compound')
+        .duration(255)
+        .EUt(16380)
+
+    event.recipes.gtceu.omnic_forge('singularity_containment_unit')
+        .itemInputs('4x gtceu:monium_plate', '4x gtceu:neutron_reflector', '1x gtceu:uev_sensor', '2x gtceu:uhv_sensor', 'gtceu:uev_field_generator')
+        .itemOutputs('64x kubejs:singularity_containment_unit')
+        .duration(300)
+        .EUt(16380)
 })

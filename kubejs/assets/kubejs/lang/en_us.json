@@ -87,7 +87,7 @@
   "item.kubejs.ender_star": "§dEnder Star",
   "item.kubejs.endest_star": "§dEndest Star",
   "item.kubejs.grains_of_innocence": "Grains of Innocence",
-  "item.kubejs.radium_salt": "Radium Salt",
+  "item.kubejs.radium_salt": "Radon Salt",
   "item.kubejs.moon_dust": "Moon Dust",
 
   "item.kubejs.aerotheum_dust": "§7Aerotheum Dust",
@@ -165,11 +165,9 @@
 
   "item.kubejs.matter_processing_unit": "Matter Processing Unit",
   "item.kubejs.matter_circuit_board": "Matter Circuit Board",
-
   "item.kubejs.matter_processor": "Matter Processor",
   "item.kubejs.matter_processor_assembly": "Matter Processor Assembly",
   "item.kubejs.matter_processor_computer": "Matter Processor Computer",
-
   "item.kubejs.matter_processor_mainframe": "Matter Processor Mainframe",
 
   "item.kubejs.dimensional_processing_unit": "Dimensional Processing Unit",
@@ -286,6 +284,7 @@
   "item.kubejs.solidified_oxygen": "Solidified Oxygen",
   "item.kubejs.solidified_radon": "Solidified Radon",
   "item.kubejs.solidified_xenon": "Solidified Xenon",
+  "item.kubejs.solidified_bromine": "Solidified Bromine",
   "item.kubejs.solidified_experience": "Solidified Experience",
 
   "item.kubejs.dense_hydrogen": "Dense Hydrogen",

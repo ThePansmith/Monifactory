@@ -605,7 +605,7 @@
 			]
 			title: "&2Advanced LuV Alloys"
 			x: 1.5d
-			y: 14.5d
+			y: 14.25d
 		}
 		{
 			dependencies: ["78DCEF2FF2E1AC8C"]
@@ -1274,7 +1274,7 @@
 				""
 				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Horns&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
+				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Tendrils&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1331,11 +1331,11 @@
 					type: "item"
 				}
 			]
-			x: 17.25d
+			x: 19.0d
 			y: 6.25d
 		}
 		{
-			dependencies: ["1CC092A2F2CD4589"]
+			dependencies: ["0562D9F4C441EAF9"]
 			description: [
 				"Coating &6Cryococcus&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
@@ -1354,8 +1354,8 @@
 				type: "item"
 			}]
 			title: "Superconductor Wire"
-			x: 19.25d
-			y: 6.25d
+			x: 25.25d
+			y: 17.0d
 		}
 		{
 			dependencies: ["424413BBCE3FD3BF"]
@@ -1428,7 +1428,7 @@
 				type: "item"
 			}]
 			title: "&2Enriched Naquadah"
-			x: 13.0d
+			x: 11.0d
 			y: 14.0d
 		}
 		{
@@ -1618,7 +1618,7 @@
 			description: [
 				"The source of &9Warden Hearts&r and the valuable &9Lair of The Warden Data&r."
 				""
-				"As a bonus, brings &9Sculk Catalysts, Warden Horns, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+				"As a bonus, brings &9Sculk Catalysts, Warden Tendrils, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
 			]
 			id: "5FE96C30454A0374"
 			rewards: [{
@@ -2738,6 +2738,148 @@
 			title: "&9Sculk Core"
 			x: 27.25d
 			y: 8.25d
+		}
+		{
+			dependencies: [
+				"1F7F73BF81570F3C"
+				"15DBB22E3DC0AFB7"
+				"7E3A179376673590"
+			]
+			description: [
+				"&cThe 4.5th Micro Miner.&r"
+				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Aerotheum Dust&r."
+				""
+				"This miner will be your primary source of mob drops, for all, if not most, of your game."
+				""
+				"When equipped with a &6Sapling&r:"
+				"* Creeper, Skeleton and Zombie skulls"
+				"* Bone"
+				"* Rotten Flesh"
+				"* Gunpowder"
+				"* Slime Block"
+				"* Guardian Scale&r"
+				"When equipped with a &6Block of Netherrack:"
+				"* Wither Skeleton Skull and Bones"
+				"* Blaze Rod"
+				"* Blizz, Blitz and Basalz Rods"
+				"* Ghast Tear"
+				"* Magma Cream"
+				"* Drop of Evil&r"
+				"When equipped with a &6Block of Endstone:"
+				"* Enderman Skull"
+				"* Enderpearl Block"
+				"* Shulker Shell"
+				"* Shulker Pearl&r"
+				"When equipped with &6Ender Eyes:"
+				"* Dragon Lair Data"
+				"* Ender Dragon Head&r"
+				""
+				"When equipped with &6Wither Bones&r:"
+				"&6* Wither Realm Data\\n* Nether Star Block"
+			]
+			hide_until_deps_visible: true
+			id: "19C2D208A2FC9968"
+			optional: true
+			rewards: [{
+				id: "7003E20DD8EE9891"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0A014ADA1BC753F1"
+				item: "kubejs:microminer_t4half"
+				type: "item"
+			}]
+			title: "Tier Four and a Half Microminer"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F7F73BF81570F3C"
+				"2D47BFA44BDB5E6A"
+				"22E50A6923EBF5CB"
+			]
+			description: [
+				"The Eighth and a Half Micro Miner."
+				"An alternative source for &6Duranium&r (via &6Dulysite Ore&r, mission with &aGemstone Sensors&r), and an alternative source for &6Darmstadtium&r (via &6Darmstadtite Ore&r, mission with &aIridium Neutron Reflectors&r)."
+				""
+				"Minimizes waiting for the &3Fusion Reactor&r."
+			]
+			hide_until_deps_visible: true
+			id: "0C9E7E4644084C94"
+			rewards: [{
+				id: "171A48800572C311"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "769EE75FA2394FBD"
+				item: "kubejs:microminer_t8half"
+				type: "item"
+			}]
+			x: 29.25d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"1349044BF8C04A12"
+				"458FF3F9BC8E025B"
+			]
+			description: [
+				"&9Upgraded form of the Soul Binder&r"
+				""
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!."
+			]
+			icon: "gtceu:quintessence_infuser"
+			id: "0608EE0A3BDE58D5"
+			rewards: [{
+				id: "61D7174842FE7D36"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0235FA500D9F953C"
+					item: "gtceu:quintessence_infuser"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "181FE76CD595DF04"
+					item: { Count: 12, id: "enderio:ensouled_chassis" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "7375E5C90B542A1E"
+					item: { Count: 24, id: "gtceu:tungsten_frame" }
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "5BF59752E9522F50"
+					item: { Count: 36, id: "gtceu:fusion_glass" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "47FEFD33C0AFB1A0"
+					item: { Count: 5, id: "gtceu:tungstensteel_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 67L
+					id: "2E43A58DB1519CB2"
+					item: { Count: 67, id: "kubejs:dark_soularium_casing" }
+					type: "item"
+				}
+			]
+			title: "&9Quintessence Infuser"
+			x: 1.5d
+			y: 16.25d
 		}
 	]
 	title: "Late Game"

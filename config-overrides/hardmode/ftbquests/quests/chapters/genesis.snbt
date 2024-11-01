@@ -45,7 +45,6 @@
 				""
 				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that the issue can not be replicated with the mod on it's own, and if it can, report it to the mod's repository instead."
 			]
-			hide: false
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
 			size: 1.5d
@@ -612,7 +611,7 @@
 		{
 			dependencies: ["58566C7BF4C22D86"]
 			description: [
-				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
+				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
 				""
 				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
@@ -792,7 +791,7 @@
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
-			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
+			description: ["&9Gregtech Axes are able to veinmine an entire tree at once!"]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_axe"
@@ -1069,9 +1068,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
+				""
+				"&4Does not generate byproducts!&r You need an HV-tier macerator or higher to get some."
 				""
 				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
