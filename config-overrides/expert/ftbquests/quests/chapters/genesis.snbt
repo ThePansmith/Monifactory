@@ -29,6 +29,12 @@
 			x: -4.0d
 			y: 15.5d
 		}
+		{
+			id: "412B0192D3658F7C"
+			linked_quest: "2280472741683581"
+			x: 4.0d
+			y: 15.5d
+		}
 	]
 	quests: [
 		{
@@ -39,7 +45,6 @@
 				""
 				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that the issue can not be replicated with the mod on it's own, and if it can, report it to the mod's repository instead."
 			]
-			hide: false
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
 			size: 1.5d
@@ -575,7 +580,7 @@
 		{
 			dependencies: ["58566C7BF4C22D86"]
 			description: [
-				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
+				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
 				""
 				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you... six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
@@ -786,7 +791,7 @@
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
-			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
+			description: ["&9Gregtech Axes are able to veinmine an entire tree at once!"]
 			id: "527F56DFAD5E20EC"
 			tasks: [{
 				id: "254A555916313F70"
@@ -1040,15 +1045,14 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"545CCC24D9401794"
-				"34CA940B412284F2"
-			]
+			dependencies: ["34CA940B412284F2"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
+				""
+				"&4Does not generate byproducts!&r You need an HV-tier macerator or higher to get some."
 				""
 				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
@@ -1131,9 +1135,9 @@
 					type: "item"
 				}
 				{
-					count: 13L
+					count: 14L
 					id: "6394A3C7C39ABEAA"
-					item: { Count: 13, id: "gtceu:steam_machine_casing" }
+					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
@@ -1718,8 +1722,8 @@
 				type: "item"
 			}]
 			title: "LV Power Storage"
-			x: 1.5d
-			y: 16.75d
+			x: 2.75d
+			y: 15.5d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
@@ -1930,7 +1934,7 @@
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
 				""
-				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"chanced byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
+				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"Macerators' byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
 				""
 				"The obvious exception would be rare materials; Those are worth doubling, if possible."
 				""

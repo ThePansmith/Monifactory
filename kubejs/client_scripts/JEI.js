@@ -27,7 +27,7 @@ JEIEvents.hideItems(event => {
 
     //snad
     event.hide('snad:soul_snad')
-    if(isHarderMode) {
+    if(isExpertMode) {
         event.hide(['snad:snad', 'snad:red_snad'])
     }
 
@@ -50,6 +50,7 @@ JEIEvents.hideItems(event => {
     event.hide(/thermal:.*_glass/)
     event.hide(/thermal:.*_gear/)
     event.hide('thermal:creosote_bucket')
+    event.hide(/thermal:.*_cast/)
 
     //EnderIO
     event.hide(['enderio:conduit', 'enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block', "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])

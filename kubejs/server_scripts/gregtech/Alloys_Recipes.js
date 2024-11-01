@@ -89,6 +89,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__black_steel" })
     event.remove({ id: "gtceu:mixer/black_steel" })
 
+    event.recipes.gtceu.mixer("kubejs:dark_steel_dust")
+        .itemInputs('#forge:dusts/steel', '#forge:dusts/obsidian')
+        .itemOutputs('gtceu:dark_steel_dust')
+        .duration(80)
+        .EUt(15)
+
 	event.shapeless('gtceu:conductive_alloy_dust', ['#forge:dusts/iron', '#forge:dusts/redstone']).id('kubejs:conductive_alloy_dust_handcraft')
     event.recipes.gtceu.mixer("kubejs:conductive_alloy_dust")
         .itemInputs('#forge:dusts/iron', '#forge:dusts/redstone')
@@ -171,33 +177,17 @@ ServerEvents.recipes(event => {
         .EUt(30)
 })
 
+//Add Primal Mana to Mana ingot recipe
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.electric_blast_furnace("kubejs:mythril")
-        .itemInputs('gtceu:mythril_dust')
-        .itemOutputs('gtceu:mythril_ingot')
-        .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
-        .duration(400)
-        .EUt(400)
-        .blastFurnaceTemp(2141)
+    event.findRecipes({ id: /^gtceu:electric_blast_furnace\/blast_mythril/ }).forEach(recipe=> {
+        const text = '[{"content":{"amount":250,"value":{"fluid":"kubejs:molten_primal_mana"}},"chance":10000,"maxChance":10000,"tierChanceBoost":0}]'
+        recipe.json.getAsJsonObject("inputs").add("fluid", JSON.parse(text))
+    })
 })
 
+//Replace hot ingot EBF output with regular for Kanthal
 ServerEvents.recipes(event => {
-    event.remove(['gtceu:electric_blast_furnace/blast_kanthal','gtceu:electric_blast_furnace/blast_kanthal_gas'])
-    event.recipes.gtceu.electric_blast_furnace("kubejs:kanthal")
-        .itemInputs('gtceu:kanthal_dust')
-        .itemOutputs('gtceu:kanthal_ingot')
-        .duration(700)
-        .EUt(480)
-        .circuit(1)
-        .blastFurnaceTemp(1800)
-    event.recipes.gtceu.electric_blast_furnace("kubejs:kanthal_gas")
-        .itemInputs('gtceu:kanthal_dust')
-        .itemOutputs('gtceu:kanthal_ingot')
-        .inputFluids(Fluid.of('gtceu:nitrogen', 1000))
-        .duration(469)
-        .EUt(480)
-        .circuit(2)
-        .blastFurnaceTemp(1800)
+    event.replaceOutput({ id: /^gtceu:electric_blast_furnace\/blast_kanthal/ }, 'gtceu:hot_kanthal_ingot', 'gtceu:kanthal_ingot')
 })
 
 ServerEvents.recipes(event => {
@@ -237,7 +227,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1200)
     event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_alternate')
     .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coal_perfect')
-		.circuit(3)
+		.circuit(4)
         .outputFluids(Fluid.of('gtceu:black_steel', 6480))
         .duration(14400) // 720s
         .EUt(240)
@@ -245,7 +235,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_alternate_gas')
     .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coal_perfect')
 		.inputFluids(Fluid.of('gtceu:nitrogen', 9000))
-        .circuit(13)
+        .circuit(14)
         .outputFluids(Fluid.of('gtceu:black_steel', 6480))
         .duration(9645) // 482.25s
         .EUt(240)

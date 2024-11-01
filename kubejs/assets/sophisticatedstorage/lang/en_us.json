@@ -1,6 +1,7 @@
 {
   "block.sophisticatedstorage.gold_barrel": "%s%sIron Barrel",
   "block.sophisticatedstorage.diamond_barrel": "%s%sAluminium Barrel",
+  "block.sophisticatedstorage.netherite_barrel": "%s%sStainless Steel Barrel",
   "block.sophisticatedstorage.gold_chest": "%s%sIron Chest",
   "block.sophisticatedstorage.diamond_chest": "%s%sAluminium Chest",
   "block.sophisticatedstorage.netherite_chest": "%s%sStainless Steel Chest",

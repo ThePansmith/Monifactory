@@ -722,11 +722,11 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         Item.of('gtceu:molybdenum_ore', 32), [
-        '  A',
-        '   ',
-        '   '
+        ' AA',
+        'AA ',
+        'A  '
     ], {
-        A: 'kubejs:moni_quarter'
+        A: 'kubejs:moni_nickel'
     }).noMirror().noShrink()
 
  

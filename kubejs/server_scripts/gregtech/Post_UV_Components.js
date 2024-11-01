@@ -4,6 +4,11 @@ ServerEvents.recipes(event => {
         ['uiv', 'holmium', 'holmium', '3932160'],
         ['max', 'monium', 'monium', '80000000'],
     ]
+    const transformer = [
+        ['uhv', 'europium', 'omnium'],
+        ['uev', 'omnium', 'holmium'],
+        ['uiv', 'holmium', 'monium'],
+    ]
     // no MAX tier laserhatch :1984:
     const laserhatch = [
         ['uev', 'activated_netherite', '1966080'],
@@ -12,7 +17,6 @@ ServerEvents.recipes(event => {
 
         converter.forEach(([tier, mat1, mat2, eut]) => {
             event.remove({ output:[`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter` ] })
-            if (!isHarderMode) {
             event.shaped(Item.of(`gtceu:${tier}_1a_energy_converter`), [
                 ' BB',
                 'AHC',
@@ -101,10 +105,42 @@ ServerEvents.recipes(event => {
                .itemOutputs(`gtceu:${tier}_energy_input_hatch_16a`)
                .duration(100)
                .EUt(eut)
-        }
         })
 
+        transformer.forEach(([tier, mat1, mat2]) => {
+            event.shaped(Item.of(`gtceu:${tier}_transformer_1a`), [
+                'WBB',
+                'AH ',
+                'WBB'
+            ], {
+                A: `gtceu:${mat1}_single_wire`,
+                B: `gtceu:${mat2}_single_wire`,
+                H: `gtceu:${tier}_machine_hull`,
+                W: 'gtceu:uhpic_chip'
+            })
 
+            event.shaped(Item.of(`gtceu:${tier}_transformer_2a`), [
+                'WBB',
+                'AH ',
+                'WBB'
+            ], {
+                A: `gtceu:${mat1}_double_wire`,
+                B: `gtceu:${mat2}_double_wire`,
+                H: `gtceu:${tier}_machine_hull`,
+                W: 'gtceu:uhpic_chip'
+            })
+
+            event.shaped(Item.of(`gtceu:${tier}_transformer_4a`), [
+                'WBB',
+                'AH ',
+                'WBB'
+            ], {
+                A: `gtceu:${mat1}_quadruple_wire`,
+                B: `gtceu:${mat2}_quadruple_wire`,
+                H: `gtceu:${tier}_machine_hull`,
+                W: 'gtceu:uhpic_chip'
+            })
+        })
 
 
     laserhatch.forEach(([tier, mat1, eut]) => {

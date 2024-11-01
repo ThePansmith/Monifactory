@@ -132,6 +132,14 @@
 		#Range: 0.001 ~ 1.7976931348623157E308
 		generation = 1.0
 
+	[energy.aversion]
+		#The base energy capacity in uI.
+		#Range: > 1
+		capacity = 64000
+		#The base energy consumption in uI/t.
+		#Range: > 1
+		usage = 10
+
 [enchanter]
 	#The lapis cost is enchant level multiplied by this value.
 	lapisCostFactor = 3.0

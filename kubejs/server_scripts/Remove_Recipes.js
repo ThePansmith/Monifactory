@@ -11,9 +11,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['extendedcrafting:black_iron_nugget', 'extendedcrafting:redstone_nugget', 'extendedcrafting:enhanced_redstone_nugget', 'extendedcrafting:ender_nugget', 'extendedcrafting:enhanced_ender_nugget'] })
 
     //GT
+    event.remove({ output: 'gtceu:ender_fluid_link_cover'})
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
-    event.remove({ id: 'gtceu:smelting/dust_mythril__demagnetize_from_dust' })
-    event.remove({ id: 'gtceu:smelting/smelt_dust_mythril_to_ingot'})
     event.remove({ id: 'gtceu:mixer/rhodium_plated_palladium' })
     
     //FIXME will get fixed

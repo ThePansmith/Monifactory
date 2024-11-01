@@ -163,8 +163,8 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO');
 
     // Scaleline intermediates
-    GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HC)2Mn2TaC?');
-    GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HC)2Mn2');
+    GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HCl)2Mn2TaC?');
+    GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HCl)2Mn2');
     GTMaterials.get('graphitic_tantalum').setFormula('TaC')
     GTMaterials.get('hydrofluoric_graphitic_tantalum_solution').setFormula('(HF)2TaC')
     GTMaterials.get('hydrofluoric_tantalum_solution').setFormula('(HF)2Ta')

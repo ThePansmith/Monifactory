@@ -107,13 +107,13 @@ StartupEvents.registry('item', event => {
 
 
     // Spacefaring Items
-    event.create('radiation_layer').displayName("Radiaton Layer")
-    event.create('pressure_layer').displayName("Pressure Layer")
-    event.create('thermal_cloth').displayName("Thermal Cloth")
-    event.create('unprepared_space_helmet').displayName("Unprepared Space Helmet")
-    event.create('unprepared_space_chestpiece').displayName("Unprepared Space Chestpiece")
-    event.create('unprepared_space_leggings').displayName("Unprepared Space Leggings")
-    event.create('unprepared_space_boots').displayName("Unprepared Space Boots")
+    event.create('radiation_layer')
+    event.create('pressure_layer')
+    event.create('thermal_cloth')
+    event.create('unprepared_space_helmet')
+    event.create('unprepared_space_chestpiece')
+    event.create('unprepared_space_leggings')
+    event.create('unprepared_space_boots')
 
 
     // Data
@@ -130,11 +130,14 @@ StartupEvents.registry('item', event => {
 
 
     // Creative Data
-    event.create('creative_tank_data').displayName("Creative Quantum Tank Data")
-    event.create('creative_storage_data').displayName("Creative Storage Data")
-    event.create('creative_computation_data').displayName("Creative Computation Data")
-    event.create('creative_energy_data').displayName("Creative Energy Data")
+    event.create('creative_tank_data')
+    event.create('creative_storage_data')
+    event.create('creative_computation_data')
+    event.create('creative_energy_data')
     if (!isNormalMode) event.create('omnic_data')
+
+    //Infinity Fluid Cell Base
+    event.create('infinity_cell_base').displayName("ME Infinity Cell Base")
 
 
     // Endgame Items
@@ -203,53 +206,51 @@ StartupEvents.registry('item', event => {
 
     for (const [element, elemColor] of solidified_elements) {
         event.create(`solidified_${element}`)
-            .displayName(`Solidified ${element.split('_').map(v => capitalize(v)).join(" ")}`)
             .textureJson({ layer0: 'kubejs:item/solidified_element' })
             .color(0, elemColor);
     }
 
 
     // Dense Hydrogen (Solidified Hydrogen is part of Solidified Elements section)
-    event.create('dense_hydrogen').displayName("Dense Hydrogen").rarity('Uncommon')
-    event.create('ultra_dense_hydrogen').displayName("Ultra Dense Hydrogen").rarity('Rare')
+    event.create('dense_hydrogen').rarity('Uncommon')
+    event.create('ultra_dense_hydrogen').rarity('Rare')
 
 
     // Stabilized Elements
     const stabilized_elements = [
-        ['einsteinium', '#ffea00'],
-        ['berkelium', '#ff8400'],
-        ['neptunium', '#2e66ff'],
-        ['plutonium', '#ff0066'],
-        ['uranium', '#04ff00'],
-        ['curium', '#c800ff'],
-        ['californium', '#ad0232'],
-        ['americium', '#875800'],
-        ['oganesson', '#cda79a']
+        ['einsteinium', '#ce9f00'],
+        ['berkelium', '#a33f20'],
+        ['neptunium', '#486d7b'],
+        ['plutonium', '#ba2727'],
+        ['uranium', '#1d891d'],
+        ['curium', '#58307f'],
+        ['californium', '#7d0222'],
+        ['americium', '#287869'],
+        ['oganesson', '#443936']
     ]
 
     for (const [element, elemColor] of stabilized_elements) {
         event.create(`stabilized_${element}`)
-            .displayName(`Stabilized ${element.split('_').map(v => capitalize(v)).join(" ")}`)
             .textureJson({ layer0: 'kubejs:item/stabilized_element' })
             .color(0, elemColor);
     }
 
 
     // Misc Items
-    event.create('dilithium_crystal').displayName("Dilithium Crystal")
-    event.create('ender_star').displayName('§dEnder Star').glow(true)
-    event.create('endest_star').displayName('§dEndest Star').glow(true)
-    event.create('grains_of_innocence').displayName("Grains of Innocence")
-    event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
-    event.create('moon_dust').displayName("Moon Dust")
+    event.create('dilithium_crystal')
+    event.create('ender_star').glow(true)
+    event.create('endest_star').glow(true)
+    event.create('grains_of_innocence')
+    event.create('radium_salt').rarity('Epic')
+    event.create('moon_dust')
 
 
     // Thermal Series item ports
-    event.create('aerotheum_dust').texture('kubejs:item/aerotheum_blend').displayName('§7Aerotheum Dust')
-    event.create('cryotheum_dust').texture('kubejs:item/cryotheum_blend').displayName('§bCryotheum Dust')
-    event.create('petrotheum_dust').texture('kubejs:item/petrotheum_blend').displayName('§8Petrotheum Dust')
-    event.create('pyrotheum_dust').texture('kubejs:item/pyrotheum_blend').displayName('§6Pyrotheum Dust')
-    event.create('primal_mana').displayName("Primal Mana Dust").rarity('epic')
+    event.create('aerotheum_dust').texture('kubejs:item/aerotheum_blend')
+    event.create('cryotheum_dust').texture('kubejs:item/cryotheum_blend')
+    event.create('petrotheum_dust').texture('kubejs:item/petrotheum_blend')
+    event.create('pyrotheum_dust').texture('kubejs:item/pyrotheum_blend')
+    event.create('primal_mana').rarity('epic')
 
     event.create('destabilized_clathrate').rarity('uncommon')
     event.create('energized_clathrate').rarity('uncommon')
@@ -271,21 +272,21 @@ StartupEvents.registry('item', event => {
 
 
     // Jetpack Units
-    event.create('empty_fluxed_jetpack_unit').displayName('Empty Fluxed Jetpack Unit')
-    event.create('empty_soularium_jetpack_unit').displayName('Empty Soularium Jetpack Unit')
-    event.create('flight_control_unit').displayName('Ensouled Flight Control Unit')
-    event.create('glowstone_elevation_unit').displayName('Glowstone Elevation Unit')
-    event.create('cryotheum_coolant_unit').displayName('Cryotheum Coolant Unit')
+    event.create('empty_fluxed_jetpack_unit')
+    event.create('empty_soularium_jetpack_unit')
+    event.create('flight_control_unit')
+    event.create('glowstone_elevation_unit')
+    event.create('cryotheum_coolant_unit')
 
 
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
-    event.create('compressed_octadic_capacitor').displayName("Compressed Octadic Capacitor")
-    event.create('double_compressed_octadic_capacitor').displayName("Double Compressed Octadic Capacitor")
+    event.create('compressed_octadic_capacitor')
+    event.create('double_compressed_octadic_capacitor')
 
 
     // Extra Utilities 2
-    event.create('resonating_crystal').displayName("Resonating Redstone Crystal")
+    event.create('resonating_crystal')
     event.create('ender_shard')
 
 
@@ -298,20 +299,20 @@ StartupEvents.registry('item', event => {
 
 
     // ArmorPlus monster drops
-    event.create('guardian_scale').rarity('rare').displayName("Guardian Scale")
-    event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
+    event.create('guardian_scale').rarity('rare')
+    event.create('ender_dragon_scale').rarity('epic')
     event.create('ender_dragon_scale_dust')
-    event.create('wither_bone').displayName("Wither Bone")
-    event.create('the_ultimate_material').displayName("The Ultimate Material")
+    event.create('wither_bone')
+    event.create('the_ultimate_material')
 
 
     // Pulsating Items
-    event.create('pulsating_mesh').displayName("Pulsating Mesh")
-    event.create('pulsating_dust').displayName("Pulsating Dust")
+    event.create('pulsating_mesh')
+    event.create('pulsating_dust')
 
 
     // Sculk Items
-    event.create('warden_horn').displayName("Warden Tendril")
+    event.create('warden_horn')
     event.create('sculk_core')
     event.create('mesol_energy_core')
     event.create('bathyal_energy_core')
@@ -372,50 +373,46 @@ StartupEvents.registry('item', event => {
 
     for (const name of smds) {
         event.create(`complex_smd_${name}`)
-            .displayName(`Complex SMD ${name.split('_').map(v => capitalize(v)).join(" ")}`)
     }
 
 
     // Post-tank circuits, circuit boards, processing units
     function Circuit(theme, type, volt) {
         event.create(`${theme}_${type}`)
-            .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} ${type.split('_').map(v => capitalize(v)).join(" ")}`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_${type}` })
+            .tag(`gtceu:circuits/${volt}`)
     }
 
     function Mainframe(theme, volt) {
         event.create(`${theme}_processor_mainframe`)
-            .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processor Mainframe`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_processor_mainframe_base`, layer1: `kubejs:item/circuits/${theme}_processor_mainframe_lights` })
+            .tag(`gtceu:circuits/${volt}`)
     }
 
     function Unit(theme) {
         event.create(`${theme}_processing_unit`)
-            .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Processing Unit`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_processing_unit` })
         event.create(`${theme}_circuit_board`)
-            .displayName(`${theme.split('_').map(v => capitalize(v)).join(" ")} Circuit Board`)
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_circuit_board` })
     }
 
     Unit('matter')
-    Circuit('matter', 'processor', "ZPM")
-    Circuit('matter', 'processor_assembly', "UV")
-    Circuit('matter', 'processor_computer', "UHV")
-    Mainframe('matter', "UEV")
+    Circuit('matter', 'processor', "zpm")
+    Circuit('matter', 'processor_assembly', "uv")
+    Circuit('matter', 'processor_computer', "uhv")
+    Mainframe('matter', "uev")
 
     Unit('dimensional')
-    Circuit('dimensional', 'processor', "UV")
-    Circuit('dimensional', 'processor_assembly', "UHV")
-    Circuit('dimensional', 'processor_computer', "UEV")
-    Mainframe('dimensional', "UIV")
+    Circuit('dimensional', 'processor', "uv")
+    Circuit('dimensional', 'processor_assembly', "uhv")
+    Circuit('dimensional', 'processor_computer', "uev")
+    Mainframe('dimensional', "uiv")
 
     Unit('monic')
-    Circuit('monic', 'processor', "UHV")
-    Circuit('monic', 'processor_assembly', "UEV")
-    Circuit('monic', 'processor_computer', "UIV")
-    Mainframe('monic', "§9MAX")
-
+    Circuit('monic', 'processor', "uhv")
+    Circuit('monic', 'processor_assembly', "uev")
+    Circuit('monic', 'processor_computer', "uiv")
+    Mainframe('monic', "max")
 
     // Smores
     const smoreHunger = [
@@ -445,6 +442,17 @@ StartupEvents.registry('item', event => {
 
         effDuration *= 2;
     }
+
+    //Universal Circuits
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+    tiers.forEach((universal_circuit) => {
+        event.create(universal_circuit + "_universal_circuit")
+            .tag("gtceu:circuits/" + universal_circuit)
+            .tag("gtceu:circuits/universal")
+            .displayName(universal_circuit.toUpperCase() + " Universal Circuit")
+            .tooltip("§7A Universal Circuit")
+            .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
+    })
 })
 
 ItemEvents.toolTierRegistry(event => {

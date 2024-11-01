@@ -5,14 +5,71 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer']})
 
     event.remove({ id: /thermal:[A-Za-z]+_dust_/ }) //I don't even know what recipes this line of code is supposed to target
+    event.remove({ id: /thermal:.*_cast/ })
     event.remove({ id: 'thermal:fire_charge/obsidian_glass_2' })
     event.remove({ id: 'thermal:fire_charge/signalum_glass_2' })
     event.remove({ id: 'thermal:fire_charge/lumium_glass_2' })
     event.remove({ id: 'thermal:fire_charge/enderium_glass_2' })
 
     //Unify Thermal with GT rubber
-    event.smelting('gtceu:sticky_resin', 'thermal:tar');
+    event.smelting('gtceu:sticky_resin', 'thermal:tar')
     event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['gtceu:rubber_plate'])
+    //Unify Thermal dies
+    
+    event.shaped('thermal:press_packing_2x2_die', [
+        ' A ',
+        'BCB',
+        ' A '
+    ], {
+        A: 'gtceu:invar_plate',
+        B: 'gtceu:cupronickel_plate',
+        C: '#minecraft:planks'
+    }).id('thermal:press_packing_2x2_die')
+
+    event.shaped('thermal:press_packing_3x3_die', [
+        ' B ',
+        'ACA',
+        ' B '
+    ], {
+        A: 'gtceu:invar_plate',
+        B: 'gtceu:cupronickel_plate',
+        C: '#minecraft:planks'
+    }).id('thermal:press_packing_3x3_die')
+
+    event.shaped('thermal:press_unpacking_die', [
+        'B A',
+        ' C ',
+        'A B'
+    ], {
+        A: 'gtceu:invar_plate',
+        B: 'gtceu:cupronickel_plate',
+        C: '#minecraft:planks'
+    }).id('thermal:press_unpacking_die')
+
+
+    // Hardened Glass recipes
+    event.recipes.gtceu.alloy_smelter('kubejs:hardened_glass')
+        .itemInputs('1x #forge:dusts/lead', '4x #forge:dusts/obsidian')
+        .itemOutputs('2x thermal:obsidian_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.alloy_smelter('kubejs:signalum_glass')
+        .itemInputs('1x #forge:dusts/signalum', '2x thermal:obsidian_glass')
+        .itemOutputs('2x thermal:signalum_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.alloy_smelter('kubejs:lumium_glass')
+        .itemInputs('1x #forge:dusts/lumium', '2x thermal:obsidian_glass')
+        .itemOutputs('2x thermal:lumium_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.alloy_smelter('kubejs:enderium_glass')
+        .itemInputs('1x #forge:dusts/enderium', '2x thermal:obsidian_glass')
+        .itemOutputs('2x thermal:enderium_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV])
+
 
     //Centrifuging Recipes for Arboreal Extractor products
     event.recipes.gtceu.centrifuge('kubejs:latex_centrifuging')
@@ -61,6 +118,7 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Coil Ingredients
     event.shaped(
         'thermal:rf_coil', [
             ' BA',
@@ -71,6 +129,11 @@ ServerEvents.recipes(event => {
             B: 'minecraft:redstone'
         }
     )
+    event.recipes.gtceu.assembler('thermal:rf_coil_assembly')
+        .itemInputs('#forge:rods/gold', '2x #forge:rings/gold', '3x #forge:dusts/redstone')
+        .itemOutputs('thermal:rf_coil')
+        .duration(200)
+        .EUt(30)
 
     event.shaped(
         'kubejs:redstone_transmission_coil', [
@@ -82,6 +145,11 @@ ServerEvents.recipes(event => {
             B: 'minecraft:redstone'
         }
     )
+    event.recipes.gtceu.assembler('kubejs:rf_transmission_coil_assembly')
+        .itemInputs('#forge:rods/silver', '2x #forge:rings/silver', '3x #forge:dusts/redstone')
+        .itemOutputs('kubejs:redstone_transmission_coil')
+        .duration(200)
+        .EUt(30)
 
     /*=== AUGMENTS/UPGRADES ===*/
     event.shaped(
@@ -187,6 +255,11 @@ ServerEvents.recipes(event => {
             B: 'gtceu:red_alloy_plate'
         }
     )
+    event.recipes.gtceu.assembler('kubejs:excitationcoil_assembly')
+        .itemInputs('thermal:rf_coil', '2x gtceu:red_alloy_plate')
+        .itemOutputs('kubejs:excitationcoil')
+        .duration(180)
+        .EUt(30)
 
     event.shaped(
         'steamdynamo:steam_dynamo', [

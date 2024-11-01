@@ -298,24 +298,6 @@
 		}
 		{
 			dependencies: ["56BAC68878E11DF4"]
-			description: ["Combine several components into a catalyst."]
-			id: "3729FBA4FA7E9C12"
-			rewards: [{
-				id: "57FA704F8C1854B9"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "15E4AC502D8DC0AF"
-				item: "extendedcrafting:advanced_catalyst"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["3729FBA4FA7E9C12"]
 			description: [
 				"With the Advanced Crafting Table, you can now craft 5x5 recipes."
 				""
@@ -892,9 +874,14 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6C1AAFF54A2ADB45"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"6C1AAFF54A2ADB45"
+			]
 			description: ["&6Hellish Matter&r and &6Ender Pearl&r can be crafted into Extraterrestrial Matter."]
+			hide_until_deps_visible: true
 			id: "790E3275E88265E3"
+			optional: true
 			shape: "hexagon"
 			tasks: [{
 				id: "479BA190EDA1D5F0"
@@ -949,7 +936,7 @@
 					type: "item"
 				}
 				{
-					count: 15L
+					count: 16L
 					id: "17E44DB94862D5B7"
 					item: "kubejs:microverse_casing"
 					type: "item"
@@ -990,6 +977,7 @@
 				"7DE2C9292A09FC76"
 				"790E3275E88265E3"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Very fluxy."
 				""

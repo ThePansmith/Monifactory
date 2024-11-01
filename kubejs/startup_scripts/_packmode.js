@@ -1,7 +1,7 @@
 //priority: 1000
 /**
  * Handles the interpretation of mode.json 
- * to determine the global pack mode booleans: isNormalMode, isHardMode, and isHarderMode.
+ * to determine the global pack mode booleans: isNormalMode, isHardMode, and isExpertMode.
  * These are used in other scripts to define pack mode-specific behavior.
  */
 
@@ -42,9 +42,9 @@ global.packmode = packMode;
 
 // Global mode booleans. Note that isHardMode is also true if the pack is in Expert
 global.isNormalMode = packMode == 'normal';
-global.isHarderMode = packMode == 'expert';
-global.isHardMode = (packMode == 'hard') || global.isHarderMode;
+global.isExpertMode = packMode == 'expert';
+global.isHardMode = (packMode == 'hard') || global.isExpertMode;
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
 const isNormalMode = !!global.isNormalMode;
-const isHarderMode = !!global.isHarderMode;
+const isExpertMode = !!global.isExpertMode;
 const isHardMode = !!global.isHardMode;

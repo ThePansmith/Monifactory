@@ -20,7 +20,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("manyullyn")
         .ingot().fluid()
         .color(0x9949cc).iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_DENSE)
+        .blastTemp(4800, 'high')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
 		.components('4x ardite', '4x cobalt', 'mana')
 
     event.create("signalum")
@@ -59,6 +60,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 	event.create("mythril")
         .ingot()
         .color(0x428fdb).iconSet('dull')
+        .blastTemp(2141, null)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
 		.components('titanium', 'mana');
 })

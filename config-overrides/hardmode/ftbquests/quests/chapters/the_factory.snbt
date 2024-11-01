@@ -44,6 +44,14 @@
 			x: 4.5d
 			y: 6.25d
 		}
+		{
+			id: "6EFDF0495132F8EC"
+			linked_quest: "715BC5C7DAC53B7B"
+			shape: "hexagon"
+			size: 1.5d
+			x: 6.5d
+			y: -5.5d
+		}
 	]
 	quests: [
 		{
@@ -61,7 +69,7 @@
 				""
 				"&2If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer, &9or mute the sound entirely in the ESM menu, accessable from your inventory."
 			]
-			icon: "gtceu:lv_electric_motor"
+			icon: "gtceu:lv_wiremill"
 			id: "62BBD1F6767A4D90"
 			rewards: [{
 				count: 2
@@ -317,7 +325,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["7A12743F5ECCED90"]
+			dependencies: [
+				"68CB6AD16F1041E5"
+				"7A12743F5ECCED90"
+			]
 			description: [
 				"Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with &9monicoins&r."
 				""
@@ -514,6 +525,7 @@
 		}
 		{
 			dependencies: [
+				"2EC4EF1BEEA578F3"
 				"47094A5717952699"
 				"273F3F8DD6A3DCC5"
 			]
@@ -528,28 +540,30 @@
 				""
 				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
 			]
+			hide_until_deps_visible: true
 			icon: "snad:snad"
-			id: "529D50CE814AF449"
+			id: "63ADD9B48834AA39"
+			optional: true
 			shape: "hexagon"
 			subtitle: "Yes, Snad."
 			tasks: [
 				{
-					id: "77ADD3B3DA61DC55"
+					id: "677A2551088FF511"
 					item: "snad:snad"
 					type: "item"
 				}
 				{
-					id: "719FAF0F70FA25E5"
+					id: "73A6A78D037587CE"
 					item: "enderio:vacuum_chest"
 					type: "item"
 				}
 				{
-					id: "2DCBDFF5EB0F7CD9"
+					id: "37B26D17B2B13DDE"
 					item: "redstone_clock:redstone_clock"
 					type: "item"
 				}
 				{
-					id: "3DBB91C93688C4FC"
+					id: "0B29F722B1B4D328"
 					item: "functionalstorage:void_upgrade"
 					type: "item"
 				}
@@ -647,7 +661,7 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for Steel and other useful things."]
+			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for other alloys."]
 			id: "5301E546BAA69844"
 			rewards: [{
 				id: "424A2A6FAB412F69"
@@ -664,13 +678,13 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
+			subtitle: "&9Steel&r is the main material in &9LV&r"
 			tasks: [{
 				id: "17210F38B40BAAD7"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&9Alloying Steel"
+			title: "&9Steel"
 			x: 2.5d
 			y: -3.0d
 		}
@@ -689,22 +703,26 @@
 			}]
 			shape: "hexagon"
 			subtitle: "Copper... Nickel... Cupronickel?"
-			tasks: [{
-				id: "708858A9BC1F9ABE"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "708858A9BC1F9ABE"
+					item: "gtceu:cupronickel_ingot"
+					type: "item"
+				}
+				{
+					id: "7ECBEB3D39F5DFD2"
+					item: "gtceu:invar_ingot"
+					type: "item"
+				}
+			]
 			title: "Cupronickel"
 			x: 2.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
-			description: [
-				"&3Alloy Smelters&r are used to create alloys by melting and reforming items together."
-				""
-				"Now you won't need to grind up metals into dusts and mix them for alloy dusts! Plus, many of the more complex alloys you couldn't make that way are now possible."
-			]
+			description: ["The &6LV Alloy Smelter&r offers an electrical alternative to your &6Steam Alloy Smelter&r."]
+			icon: "gtceu:lv_alloy_smelter"
 			id: "29A487F0BC43AAF9"
 			rewards: [{
 				id: "0C69338204BAC2F3"
@@ -714,8 +732,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "1E91BE2938B1B8CE"
-				item: "gtceu:lv_alloy_smelter"
-				type: "item"
+				type: "checkmark"
 			}]
 			title: "LV Alloy Smelter"
 			x: 2.5d
@@ -749,7 +766,10 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["29A487F0BC43AAF9"]
+			dependencies: [
+				"68CB6AD16F1041E5"
+				"29A487F0BC43AAF9"
+			]
 			description: [
 				"Using plain &3Steam Dynamos&f is pretty inefficient."
 				""
@@ -757,6 +777,7 @@
 				""
 				"This greatly increases the overall efficiency and the amount of power produced, from &a40 RF/t&r per basic steam dynamo to &a320 RF/t&r per set of three augmented dynamos."
 			]
+			hide_until_deps_visible: true
 			icon: "systeams:steam_dynamo"
 			id: "545CCC24D9401794"
 			tasks: [
@@ -848,6 +869,42 @@
 		}
 		{
 			dependencies: [
+				"57E7182198B2EA9A"
+				"30EBD4E7BBFFEF2C"
+			]
+			description: [
+				"&6&6String&r and &6Coal Dust&r can be baked together into a &6Carbon Mesh&r in an &3Alloy Furnace&r."
+				""
+				"Combine that with &6Pulsating Dust&r to get a &6Pulsating Mesh&r."
+			]
+			hide_until_deps_visible: true
+			icon: "kubejs:pulsating_mesh"
+			id: "645B1DCB3DA7198A"
+			optional: true
+			rewards: [{
+				id: "2D12B468C7630D14"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3FB8F2F8B1867430"
+					item: "kubejs:pulsating_mesh"
+					type: "item"
+				}
+				{
+					id: "6684545526C4AD44"
+					item: "gtceu:carbon_fiber_mesh"
+					type: "item"
+				}
+			]
+			title: "Pulsating Mesh"
+			x: 6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
 				"5301E546BAA69844"
 				"74B5CA5A48CE7B39"
 			]
@@ -862,16 +919,23 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["545CCC24D9401794"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"545CCC24D9401794"
+			]
 			description: [
 				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
 				""
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
+				""
+				"&4Does not generate byproducts!&r You need an HV-tier macerator or higher to get some."
 			]
+			hide_until_deps_visible: true
 			icon: "gtceu:steam_grinder"
 			id: "41C2E49E70D76330"
+			optional: true
 			rewards: [
 				{
 					count: 7
@@ -1133,7 +1197,7 @@
 			description: [
 				"&3Electrolyzers&r use electricity to separate items into their more basic components."
 				""
-				"For example, you can break down Water into &9Hydrogen Gas&r and &9Oxygen Gas&r, or break down &6Clay Dust&r into &6Sodium Dust&r, &6Silicon Dust&r, &6Lithium Dust&r, and &6Aluminium Dust&r."
+				"For example, you can break down Water into &9Hydrogen Gas&r and &9Oxygen Gas&r."
 			]
 			id: "5B0200011DF8E1B6"
 			rewards: [{
@@ -1226,7 +1290,7 @@
 			description: [
 				"With your EBF running, start to create a supply of &6Aluminium Ingots&r. These are crucial ingredients for MV machines, including &bApplied Energistics&r."
 				""
-				"&2With LV power, you can only get Aluminium Dust from electrolyzing Clay Dust, Sapphire Dust or Green Sapphire Dust. Clay Dust is recommended. Once you make an MV Electrolyzer, you can get it from a plethora of other raw resources.&r"
+				"&2With LV power, you can only get Aluminium Dust from electrolyzing Sapphire Dust or Green Sapphire Dust. Once you make an MV Electrolyzer, you can get it from a plethora of other raw resources, such as Clay.&r"
 				""
 				"If you find your power supply is faltering, you may want to make additional dynamos and turn them into steam boilers and turbines. Upgrading your dynamos is also advisable."
 				""
@@ -1696,12 +1760,16 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["273F3F8DD6A3DCC5"]
+			dependencies: [
+				"68CB6AD16F1041E5"
+				"273F3F8DD6A3DCC5"
+			]
 			description: [
 				"Item conduits are useful for moving items between inventories over moderate distances."
 				""
 				"Crafting them in an Assembling Machine instead of by hand gives twice as many conduits."
 			]
+			hide_until_deps_visible: true
 			id: "4F239316765C7CA1"
 			rewards: [{
 				id: "189732EC89DA656B"
@@ -1824,14 +1892,19 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["3EDD0A986384F2A7"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"3EDD0A986384F2A7"
+			]
 			description: [
 				"Now that you have a &3Wiremill&f and a &2Bender&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &9monicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
 				""
 				"With renewable &9monicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_visible: true
 			id: "3E69E1949316BD0C"
+			optional: true
 			rewards: [{
 				id: "09A5BDC0CF107A1C"
 				item: "kubejs:moni_nickel"
@@ -1862,8 +1935,12 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["545CCC24D9401794"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"545CCC24D9401794"
+			]
 			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
+			hide_until_deps_visible: true
 			icon: "steamadditions:steam_foundry"
 			id: "5D60CAE3A33000C3"
 			rewards: [{
@@ -1879,13 +1956,13 @@
 					type: "item"
 				}
 				{
-					count: 13L
+					count: 14L
 					id: "505B1290E3042129"
-					item: { Count: 13, id: "gtceu:steam_machine_casing" }
+					item: "gtceu:steam_machine_casing"
 					type: "item"
 				}
 				{
-					count: 9L
+					count: 8L
 					id: "5B5968BA75F69B32"
 					item: "gtceu:bronze_firebox_casing"
 					type: "item"
@@ -1989,6 +2066,131 @@
 			title: "&9Muting and Muffling"
 			x: 17.25d
 			y: 9.375d
+		}
+		{
+			dependencies: [
+				"57E7182198B2EA9A"
+				"6FB3E3D9CA0F4B30"
+				"29A487F0BC43AAF9"
+			]
+			description: [
+				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. This is useful when you have two machines running and both are unable to keep going because of a lack of power... let one finish then turn the other one back on with a second hit from the mallet."
+				""
+				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r now that you can."
+				""
+				"This quest accepts a &aSoft Mallet&r made from any material."
+			]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "gtceu:rubber_mallet"
+				tag: {
+					Damage: 0
+					GT.Behaviours: { }
+					GT.Tool: {
+						AttackDamage: 0.0f
+						AttackSpeed: -2.4f
+						Damage: 0
+						MaxDamage: 128
+					}
+				}
+			}
+			id: "7EA737163230F984"
+			optional: true
+			rewards: [{
+				id: "56897FB11AB023CB"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "Bonk!"
+			tasks: [{
+				id: "56A2D430950E2112"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:wood_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:rubber_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polytetrafluoroethylene_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polyethylene_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polybenzimidazole_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+						]
+					}
+				}
+				title: "Any Soft Mallet"
+				type: "item"
+			}]
+			title: "Soft Mallet"
+			x: 1.0d
+			y: -2.0d
 		}
 	]
 	title: "The Factory"

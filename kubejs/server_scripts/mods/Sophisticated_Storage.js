@@ -44,8 +44,8 @@ ServerEvents.recipes(event => {
             ], {
                 I: "#forge:plates/steel",
                 C: "#gtceu:circuits/lv",
-                D: "#moni:SophContainer",
-                E: "#moni:SophGemBlock"
+                D: "#moni:sophcontainer",
+                E: "#moni:sophgemblock"
             })
             event.shaped(
                 'sophisticatedstorage:storage_input', [
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
             ], {
                 I: "#forge:plates/steel",
                 C: "#gtceu:circuits/lv",
-                D: "#moni:SophContainer",
+                D: "#moni:sophcontainer",
                 E: "#forge:storage_blocks/gold"
             })
             event.shaped(
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
             ], {
                 I: "#forge:plates/steel",
                 C: "#gtceu:circuits/lv",
-                D: "#moni:SophContainer",
+                D: "#moni:sophcontainer",
                 E: "#forge:storage_blocks/gold"
             })
 
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
                 I: "#forge:plates/steel",
                 S: "sophisticatedstorage:storage_input",
                 T: "sophisticatedstorage:storage_output",
-                D: "#moni:SophContainer",
+                D: "#moni:sophcontainer",
         })
 
 
@@ -88,8 +88,8 @@ ServerEvents.recipes(event => {
 
     var backpacks = [
         ['sophisticatedbackpacks:backpack', 'minecraft:leather', 'gtceu:tin_ingot', '#forge:chests/wooden'],
-        ['sophisticatedbackpacks:iron_backpack', 'minecraft:gold_nugget', 'gtceu:invar_ingot', 'sophisticatedbackpacks:copper_backpack'],
-        ['sophisticatedbackpacks:iron_backpack', 'minecraft:gold_nugget', 'gtceu:invar_ingot', 'sophisticatedbackpacks:backpack'],
+        ['sophisticatedbackpacks:iron_backpack', 'gtceu:tin_nugget', 'gtceu:invar_ingot', 'sophisticatedbackpacks:copper_backpack'],
+        ['sophisticatedbackpacks:iron_backpack', 'gtceu:tin_nugget', 'gtceu:invar_ingot', 'sophisticatedbackpacks:backpack'],
         ['sophisticatedbackpacks:gold_backpack', 'gtceu:electrum_nugget', 'gtceu:aluminium_ingot', 'sophisticatedbackpacks:iron_backpack'],
         ['sophisticatedbackpacks:diamond_backpack', 'gtceu:electrum_nugget', 'gtceu:signalum_ingot', 'sophisticatedbackpacks:gold_backpack'],
         ['sophisticatedbackpacks:netherite_backpack', 'gtceu:signalum_nugget', 'gtceu:enderium_ingot', 'sophisticatedbackpacks:diamond_backpack'],

@@ -137,8 +137,8 @@ ServerEvents.recipes(event => {
 			'gtceu:molybdenum_ingot',
 			'gtceu:ruthenium_ingot',
 			'gtceu:rhodium_ingot',
-			'gtceu:palladium_ingot',
 			'kubejs:exotic_materials_catalyst',
+			'gtceu:palladium_ingot',
 			'gtceu:silver_ingot',
 			'gtceu:cadmium_dust',
 			'gtceu:indium_ingot',
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
 		], {
 			A: 'gtceu:rose_gold_ingot',
 			B: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),
-			C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(),
+			C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
 		} //, 2 // remove this comment to force t2 crafting only.
 	).id('kubejs:extended/angel_ring')
 })

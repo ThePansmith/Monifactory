@@ -44,14 +44,14 @@
 			"unitWorth": 100,
 			"rarity": "EPIC"
 		},
-		"all_rew_moni_dollar_legendary": {
+		"all_rew_xp_bottle": {
 			"type": "item",
-			"content": "kubejs:moni_dollar",
+			"content": "minecraft:experience_bottle",
 			"amount": {
 				"min": 2,
-				"max": 3
+				"max": 5
 			},
-			"unitWorth": 100,
+			"unitWorth": 20,
 			"rarity": "LEGENDARY"
 		}
 	}

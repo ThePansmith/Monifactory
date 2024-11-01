@@ -59,6 +59,15 @@ ServerEvents.recipes(event => {
             .EUt(eut)
     })
 
+    // Universal Circuits
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+        tiers.forEach((level) => {
+        event.recipes.gtceu.atomic_reconstruction("kubejs:" + level + "_universal_circuit")
+            .itemInputs("#gtceu:circuits/" + level)
+            .itemOutputs("kubejs:" + level + "_universal_circuit")
+            .EUt(32)
+            .duration(5)
+    })
 
     const reconstructorrecipe = [
         ['lv', 'lead'],

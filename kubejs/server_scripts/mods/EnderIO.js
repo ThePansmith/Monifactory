@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
             .EUt(16)
     }
     if (isHardMode) {
-        if (!isHarderMode) {
+        if (!isExpertMode) {
         // Manual item conduit
         event.shaped(
             "4x enderio:item_conduit", [
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
             .EUt(16)
     }
 }
-if (isHarderMode) {
+if (isExpertMode) {
 
     event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
     event.remove({ output: "enderio:pressurized_fluid_conduit" })
@@ -426,14 +426,43 @@ if (isHarderMode) {
     }
     ).id('kubejs:enchanter')
 
-    // Enchanter
+    //Custom enchanter books
+      event.custom(
+        {
+            "type": "enderio:enchanting",
+            "cost_multiplier": 1,
+            "enchantment": "ensorcellation:air_affinity",
+            "input": {
+              "count": 1,
+              "ingredient": {
+                "item": "quark:bottled_cloud"
+              }
+            }
+          }
+      )
+
+      event.custom(
+        {
+            "type": "enderio:enchanting",
+            "cost_multiplier": 1,
+            "enchantment": "ensorcellation:reach",
+            "input": {
+              "count": 1,
+              "ingredient": {
+                "item": "ulvcovm:ulv_robot_arm"
+              }
+            }
+          }
+      )
+
+    // Yeta Wrench
     event.remove({ output: ['enderio:yeta_wrench'] })
     event.shaped(
         'enderio:yeta_wrench', [
         'I I',
         ' G ',
         ' I '
-    ], {
+    ], { 
         I: '#forge:ingots/iron',
         G: '#forge:gears/iron'
     }
@@ -569,7 +598,7 @@ if (isHarderMode) {
 
     // Crafter
     event.remove({ id: 'enderio:crafter' })
-    if(!isHarderMode) {
+    if(!isExpertMode) {
         event.shaped('enderio:crafter', [
             'RCR',
             'GFG',

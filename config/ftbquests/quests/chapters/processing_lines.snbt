@@ -14,9 +14,9 @@
 				"72861B317663600B"
 			]
 			description: [
-				"The final step. Combine &6Pulsating Dust&r and &6Resonant Clathrate&r to make &6Pulsating Polymer Clay&r. "
+				"The final step. Combine &6Pulsating Dust&r and &6Resonant Clathrate&r to make &6Pulsating Prediction Matrix&r. "
 				""
-				"Take note that a &3&3Chemical Reactor&r making &6Resonant Clathrate&r will supply 1 &3Alloy Smelter&r of the same tier, and that one &bMV &3Alloy Smelter&r making &6Pulsating Polymer Clay&r supports 10.03 &3Simulation Chambers&r, with each higher tier doubling the amount of &3Simulation Chambers&r it supports."
+				"Take note that a &3&3Chemical Reactor&r making &6Resonant Clathrate&r will supply 1 &3Alloy Smelter&r of the same tier, and that one &bMV &3Alloy Smelter&r making &6Pulsating Prediction Matrix&r supports 10.03 &3Simulation Chambers&r, with each higher tier doubling the amount of &3Simulation Chambers&r it supports."
 			]
 			id: "261F7D50E23B0789"
 			size: 2.0d
@@ -75,7 +75,7 @@
 		}
 		{
 			dependencies: ["57E7182198B2EA9A"]
-			description: ["Your first source of &6Ender Pearls&r could be &6Ender Lillies&r. However, that is too manual and slow for the purpose &6Ender Pearls&r are needed for here. Instead, you can make a net-positive &6Pulsating Polymer Clay&r setup that uses &6Enderman Data Models&r to produce &6Ender Pearls&r. A Self-Aware &6Enderman Data Model&r can supply enough &6Ender Pearls&r to support the running of 6.2 other models."]
+			description: ["Your first source of &6Ender Pearls&r could be &6Ender Lillies&r. However, that is too manual and slow for the purpose &6Ender Pearls&r are needed for here. Instead, you can make a net-positive &6Pulsating Prediction Matrix&r setup that uses &6Enderman Data Models&r to produce &6Ender Pearls&r. A Self-Aware &6Enderman Data Model&r can supply enough &6Ender Pearls&r to support the running of 6.2 other models."]
 			id: "50FB5E0B0E0B142F"
 			tasks: [{
 				id: "3B35A9161911CB96"

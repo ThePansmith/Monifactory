@@ -178,6 +178,14 @@
 			x: -6.0d
 			y: 8.25d
 		}
+		{
+			id: "26C607D68B1B1404"
+			linked_quest: "1C1B1E1BBFA079F5"
+			shape: "hexagon"
+			size: 1.5d
+			x: 1.5d
+			y: 8.75d
+		}
 	]
 	quests: [
 		{
@@ -536,8 +544,8 @@
 		}
 		{
 			dependencies: [
-				"072DB633006E78B7"
-				"67A4F273A29043D4"
+				"6DC635766CD40FFF"
+				"1C1B1E1BBFA079F5"
 			]
 			description: [
 				"Coming into &9Ludicrous Voltage&r, many new advanced materials will be required to craft items and components. Most of these materials require &6Tungstensteel Coils&r."
@@ -596,8 +604,8 @@
 				}
 			]
 			title: "&2Advanced LuV Alloys"
-			x: -4.0d
-			y: 16.25d
+			x: 1.5d
+			y: 14.25d
 		}
 		{
 			dependencies: ["78DCEF2FF2E1AC8C"]
@@ -830,7 +838,9 @@
 				""
 				"You'll need to mix &6Mincemeat&r, &2Calcium, Salt, Agar, and Mutagen&r with water in a mixer to make &9Raw Growth Medium&r, then use a &3Fluid Heater&r to sterilize it. &2This is a significantly more involved process than before.&r"
 				""
-				"Mincemeat comes from pulverizing any kind of animal meat. A &aPowered Spawner&r might be useful for this endeavor. &2Agar is produced from Mincemeat through multiple steps."
+				"Mincemeat comes from pulverizing any kind of animal meat."
+				"A &aFisher&r might be useful for this endeavor - especially &bThermal's&r &6Aquatic Entangler&r which can operate passively, produces only &6Fishes&r, and &eaccepts augments&r."
+				"&2Agar is produced from Mincemeat through multiple steps."
 			]
 			icon: "gtceu:sterilized_growth_medium_bucket"
 			id: "2F6EC962007FA9FB"
@@ -883,8 +893,8 @@
 		}
 		{
 			dependencies: [
+				"6DC635766CD40FFF"
 				"27A80F018F59EF1E"
-				"072DB633006E78B7"
 			]
 			description: ["&2Double Plates&r required for the next two tiers of Micro Miners."]
 			id: "27B3EB82ED638620"
@@ -1018,7 +1028,7 @@
 			description: [
 				"A complex material from &bThermal Expansion&r cooked in an &3Electric Blast Furnace&r, or a &2Alloy Blast Smelter&r."
 				""
-				"&6Enderium&r doesn't require much power (running on as little as MV) but it does need a lot of heat and is incredibly slow without overclocking. &2You can use small amounts of Krypton from Liquid Ender Air distillation to significantly decrease the smelting time.&r"
+				"&6Enderium&r needs a lot of heat and is incredibly slow without overclocking. &2You can use small amounts of Krypton from Liquid Ender Air distillation to significantly decrease the smelting time.&r"
 				""
 				"&9Enderium also requires Tantalum, which can be renewably created by macerating and processing dragon scales."
 				""
@@ -1264,7 +1274,7 @@
 				""
 				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Horns&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
+				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Tendrils&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1321,11 +1331,11 @@
 					type: "item"
 				}
 			]
-			x: 17.25d
+			x: 19.0d
 			y: 6.25d
 		}
 		{
-			dependencies: ["1CC092A2F2CD4589"]
+			dependencies: ["0562D9F4C441EAF9"]
 			description: [
 				"Coating &6Cryococcus&r with &9Molten Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
 				""
@@ -1344,8 +1354,8 @@
 				type: "item"
 			}]
 			title: "Superconductor Wire"
-			x: 19.25d
-			y: 6.25d
+			x: 25.25d
+			y: 17.0d
 		}
 		{
 			dependencies: ["424413BBCE3FD3BF"]
@@ -1418,7 +1428,7 @@
 				type: "item"
 			}]
 			title: "&2Enriched Naquadah"
-			x: 13.0d
+			x: 11.0d
 			y: 14.0d
 		}
 		{
@@ -1608,7 +1618,7 @@
 			description: [
 				"The source of &9Warden Hearts&r and the valuable &9Lair of The Warden Data&r."
 				""
-				"As a bonus, brings &9Sculk Catalysts, Warden Horns, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+				"As a bonus, brings &9Sculk Catalysts, Warden Tendrils, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
 			]
 			id: "5FE96C30454A0374"
 			rewards: [{
@@ -2217,7 +2227,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["521977C7165229F1"]
+			dependencies: ["4DB622A78605A2EB"]
 			description: [
 				"The &3Power Substation&r is GregTech's native mass power storage solution."
 				""
@@ -2674,36 +2684,6 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["595F205B551A53C9"]
-			description: [
-				"&2A rudimentary version of Platinum Group Sludge (PGS) processing existed in the base pack. Here, it is a strong source of the Platinum Group Metals - Ruthenium, Rhodium, Palladium, Osmium, Iridium, and Platinum - as well as Gold. All of these elements will be used in IV-tier and above materials."
-				""
-				"&rYou will need to treat certain ores with &9Nitric Acid&r to yield &6PGS&r - &6Sheldonite&r is the best. Then, using an &3HV+ Centrifuge&r and &9Aqua Regia&r, break it down into the PGS salts, and reduce those salts to the metals."
-				""
-				"This is still optional, and you can get &6Ruthenium&r and &6Rhodium&r from &6Osmiridium 80/20 Ore&r and &6Iridosmine 80/20 Ore&r from Microverse adventures instead."
-			]
-			icon: "gtceu:platinum_dust"
-			id: "67A4F273A29043D4"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
-			tasks: [
-				{
-					id: "5C370E547650A61F"
-					item: "gtceu:ruthenium_dust"
-					type: "item"
-				}
-				{
-					id: "1F8AC42325E15B02"
-					item: "gtceu:rhodium_dust"
-					type: "item"
-				}
-			]
-			title: "&2Platinum Group Processing"
-			x: -6.0d
-			y: 16.25d
-		}
-		{
 			dependencies: [
 				"0B6196692F9E176D"
 				"5199E6FAA4B699CD"
@@ -2758,6 +2738,148 @@
 			title: "&9Sculk Core"
 			x: 27.25d
 			y: 8.25d
+		}
+		{
+			dependencies: [
+				"1F7F73BF81570F3C"
+				"15DBB22E3DC0AFB7"
+				"7E3A179376673590"
+			]
+			description: [
+				"&cThe 4.5th Micro Miner.&r"
+				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Aerotheum Dust&r."
+				""
+				"This miner will be your primary source of mob drops, for all, if not most, of your game."
+				""
+				"When equipped with a &6Sapling&r:"
+				"* Creeper, Skeleton and Zombie skulls"
+				"* Bone"
+				"* Rotten Flesh"
+				"* Gunpowder"
+				"* Slime Block"
+				"* Guardian Scale&r"
+				"When equipped with a &6Block of Netherrack:"
+				"* Wither Skeleton Skull and Bones"
+				"* Blaze Rod"
+				"* Blizz, Blitz and Basalz Rods"
+				"* Ghast Tear"
+				"* Magma Cream"
+				"* Drop of Evil&r"
+				"When equipped with a &6Block of Endstone:"
+				"* Enderman Skull"
+				"* Enderpearl Block"
+				"* Shulker Shell"
+				"* Shulker Pearl&r"
+				"When equipped with &6Ender Eyes:"
+				"* Dragon Lair Data"
+				"* Ender Dragon Head&r"
+				""
+				"When equipped with &6Wither Bones&r:"
+				"&6* Wither Realm Data\\n* Nether Star Block"
+			]
+			hide_until_deps_visible: true
+			id: "19C2D208A2FC9968"
+			optional: true
+			rewards: [{
+				id: "7003E20DD8EE9891"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0A014ADA1BC753F1"
+				item: "kubejs:microminer_t4half"
+				type: "item"
+			}]
+			title: "Tier Four and a Half Microminer"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1F7F73BF81570F3C"
+				"2D47BFA44BDB5E6A"
+				"22E50A6923EBF5CB"
+			]
+			description: [
+				"The Eighth and a Half Micro Miner."
+				"An alternative source for &6Duranium&r (via &6Dulysite Ore&r, mission with &aGemstone Sensors&r), and an alternative source for &6Darmstadtium&r (via &6Darmstadtite Ore&r, mission with &aIridium Neutron Reflectors&r)."
+				""
+				"Minimizes waiting for the &3Fusion Reactor&r."
+			]
+			hide_until_deps_visible: true
+			id: "0C9E7E4644084C94"
+			rewards: [{
+				id: "171A48800572C311"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "769EE75FA2394FBD"
+				item: "kubejs:microminer_t8half"
+				type: "item"
+			}]
+			x: 29.25d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"1349044BF8C04A12"
+				"458FF3F9BC8E025B"
+			]
+			description: [
+				"&9Upgraded form of the Soul Binder&r"
+				""
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!."
+			]
+			icon: "gtceu:quintessence_infuser"
+			id: "0608EE0A3BDE58D5"
+			rewards: [{
+				id: "61D7174842FE7D36"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0235FA500D9F953C"
+					item: "gtceu:quintessence_infuser"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "181FE76CD595DF04"
+					item: { Count: 12, id: "enderio:ensouled_chassis" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "7375E5C90B542A1E"
+					item: { Count: 24, id: "gtceu:tungsten_frame" }
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "5BF59752E9522F50"
+					item: { Count: 36, id: "gtceu:fusion_glass" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "47FEFD33C0AFB1A0"
+					item: { Count: 5, id: "gtceu:tungstensteel_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 67L
+					id: "2E43A58DB1519CB2"
+					item: { Count: 67, id: "kubejs:dark_soularium_casing" }
+					type: "item"
+				}
+			]
+			title: "&9Quintessence Infuser"
+			x: 1.5d
+			y: 16.25d
 		}
 	]
 	title: "Late Game"

@@ -31,7 +31,7 @@
 			id: "63280C5F37A22345"
 			linked_quest: "2EBB9A154522348F"
 			size: 2.0d
-			x: 9.0d
+			x: 8.5d
 			y: 13.0d
 		}
 		{
@@ -1035,6 +1035,7 @@
 			dependencies: [
 				"3B3F46345D39CAE2"
 				"4133AC6062B00994"
+				"1C1B1E1BBFA079F5"
 			]
 			description: [
 				"&6RTM Alloy&r is an alloy of &6Ruthenium&r, &6Tungsten&r and &6Molybdenum&r."
@@ -1043,6 +1044,11 @@
 			]
 			disable_toast: true
 			id: "5D0A642048AF909B"
+			rewards: [{
+				id: "3B897E2EDE9863CC"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "1B62381FBD08C4A9"
@@ -1062,6 +1068,11 @@
 			]
 			disable_toast: true
 			id: "6DC635766CD40FFF"
+			rewards: [{
+				id: "1E12312DDA4B31D0"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				count: 16L
@@ -1372,36 +1383,13 @@
 		}
 		{
 			dependencies: [
-				"1349044BF8C04A12"
-				"15A43AB700CADF2D"
-			]
-			description: ["Give me a little juice, FRIDAY!"]
-			disable_toast: true
-			id: "1FE8D35B4A5BFA16"
-			tasks: [{
-				id: "47722FD59AD2C4E3"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:vibrant"
-					}
-				}
-				type: "item"
-			}]
-			title: "Infinity War"
-			x: 14.0d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"1FE8D35B4A5BFA16"
 				"28854E7AC91786E9"
+				"15A43AB700CADF2D"
 			]
 			description: [
 				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
 				""
-				"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in the next jetpack, so if you want that you'll need to make one eventually."
+				"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in each of the Jetplates so if you want either of them you'll need to make one eventually."
 			]
 			disable_toast: true
 			id: "2923E98849358E16"
@@ -1418,32 +1406,8 @@
 				type: "item"
 			}]
 			title: "&9Captain... Marvel? IDK"
-			x: 15.5d
+			x: 14.75d
 			y: -4.0d
-		}
-		{
-			dependencies: [
-				"7A65459E4DFAAC2D"
-				"2923E98849358E16"
-			]
-			description: ["This is the flight of our lives."]
-			disable_toast: true
-			id: "5EE4F76D1F237A13"
-			shape: "square"
-			tasks: [{
-				id: "798E10A74B24D6B4"
-				item: {
-					Count: 1
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:dark_soularium"
-					}
-				}
-				type: "item"
-			}]
-			title: "Endgame"
-			x: 15.5d
-			y: -2.5d
 		}
 		{
 			dependencies: ["6F5BB99060FF03AC"]
@@ -1470,7 +1434,7 @@
 				type: "item"
 			}]
 			title: "&9The Third Tier Nine Circuit"
-			x: 7.25d
+			x: 7.0d
 			y: 6.5d
 		}
 		{
@@ -1505,7 +1469,7 @@
 				type: "item"
 			}]
 			title: "&9The Second Tier Ten Circuit"
-			x: 7.25d
+			x: 7.0d
 			y: 8.0d
 		}
 		{
@@ -1522,7 +1486,7 @@
 				type: "item"
 			}]
 			title: "&9The First Tier Eleven Circuit"
-			x: 7.25d
+			x: 7.0d
 			y: 9.5d
 		}
 		{
@@ -1540,7 +1504,7 @@
 				type: "item"
 			}]
 			title: "&9The First Tier Twelve Circuit"
-			x: 9.0d
+			x: 8.5d
 			y: 11.0d
 		}
 		{
@@ -1557,7 +1521,7 @@
 				type: "item"
 			}]
 			title: "&9The Fourth And Final Tier Eight Circuits"
-			x: 7.25d
+			x: 7.0d
 			y: 5.0d
 		}
 		{
@@ -1578,6 +1542,7 @@
 			dependencies: [
 				"0F56F4E642BC2B85"
 				"2D5677EA9F47AA83"
+				"44E2C12FC4C26CA9"
 			]
 			description: ["At this point, if you are not already using a &2Multiblock&r to perform your circuit assembler recipes, you really should."]
 			id: "248ABB7F26EB72EE"
@@ -1609,7 +1574,7 @@
 				type: "item"
 			}]
 			title: "&9MAX Circuit"
-			x: 7.25d
+			x: 7.0d
 			y: 11.0d
 		}
 		{
@@ -1672,7 +1637,7 @@
 				type: "item"
 			}]
 			title: "&9The Second Tier Eleven Circuit"
-			x: 9.0d
+			x: 8.5d
 			y: 9.5d
 		}
 		{
@@ -1686,7 +1651,7 @@
 				type: "item"
 			}]
 			title: "&9The Third Tier Ten Circuit"
-			x: 9.0d
+			x: 8.5d
 			y: 8.0d
 		}
 		{
@@ -1705,13 +1670,14 @@
 				type: "item"
 			}]
 			title: "&9The Fourth And Final Tier Nine Circuits"
-			x: 9.0d
+			x: 8.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["5A07988F5AD20A06"]
 			description: ["Crafted from the aforementioned Circuit Boards, these Processing Units will be used to create &6Matter Circuits&r."]
 			id: "0F56F4E642BC2B85"
+			shape: "hexagon"
 			tasks: [{
 				id: "0AB88809F545701F"
 				item: "kubejs:matter_processing_unit"
@@ -1729,13 +1695,14 @@
 			]
 			description: ["&6Infinity&r and &6Ultimate Material&r are needed for these."]
 			id: "5054D3FA7E96EB83"
+			shape: "hexagon"
 			tasks: [{
 				id: "61502A1FCAC431BA"
 				item: "kubejs:dimensional_processing_unit"
 				type: "item"
 			}]
 			title: "&9Dimensional Processing Unit"
-			x: 7.25d
+			x: 7.0d
 			y: -8.5d
 		}
 		{
@@ -1745,13 +1712,14 @@
 			]
 			description: ["The final processing unit, these require &6Ultimate Gems&r."]
 			id: "7979D07FBDC6D170"
+			shape: "hexagon"
 			tasks: [{
 				id: "3B038F650DFA2526"
 				item: "kubejs:monic_processing_unit"
 				type: "item"
 			}]
 			title: "&9Monic Processing Unit"
-			x: 9.0d
+			x: 8.5d
 			y: -8.5d
 		}
 		{
@@ -2005,7 +1973,7 @@
 				"7D3FAEA5E0071BDC"
 			]
 			description: [
-				"&2You can start to churn out Microprocessors&r. These are the best kind of Tier One circuits you can make, and you won't unlock the better recipes for quite a while."
+				"&2You can start to churn out Microprocessors&r. These are the best kind of Tier One circuits you can make, and you won't unlock the better recipes for them until &5EV&r."
 				""
 				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
 			]
@@ -2056,7 +2024,7 @@
 				"7D3FAEA5E0071BDC"
 			]
 			description: [
-				"&2Unique to this tier of Circuit, this MV circuit doesn't require the previous tier to craft.&r These are the best kind of Tier Two circuits you can make, and you won't unlock the better recipes for quite a while."
+				"&2Unique to this tier of Circuit, this MV circuit doesn't require the previous tier to craft.&r These are the best kind of Tier Two circuits you can make, and you won't unlock the better recipes for them until &9IV&r."
 				""
 				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
 			]
@@ -2116,7 +2084,7 @@
 				""
 				"- Your AE network through &bGregTech&r &3Hulls&r (of any tier)."
 				""
-				"- Players through &3Iron Doors&r. The room remains clean when doors are opened."
+				"- Players through &3Doors&r of any kind. The room remains clean when doors are opened."
 				"{@pagebreak}"
 				"Apart from the \"official\" solutions, non-physical methods of transfer such as &3Ender Chests&r might be effective. &bApplied Energistics&r &3P2P Tunnels&r may also fit your liking."
 				""
@@ -2155,7 +2123,23 @@
 				{
 					count: 44L
 					id: "2BD9B381C408FF8B"
-					item: "gtceu:plascrete"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:plascrete"
+								}
+								{
+									Count: 1b
+									id: "gtceu:cleanroom_glass"
+								}
+							]
+						}
+					}
+					title: "Cleanroom Blocks"
 					type: "item"
 				}
 			]
@@ -2168,6 +2152,7 @@
 				"013C3CD6D8C727CE"
 				"73C1AB31431B5C11"
 				"244F2CC5484A7B21"
+				"5759E8587624BEF1"
 			]
 			description: [
 				"This is the first Tier Four circuit, which is used for EV-tier machinery. Requires some Vibrant Alloy."
@@ -2269,7 +2254,7 @@
 				"5B9F1EE13E397DEE"
 			]
 			description: [
-				"&2You can start to churn out Nanoprocessors&r. These are the best kind of Tier One circuits you can make, and you won't unlock the better recipes for quite a while."
+				"&2You can start to churn out Nanoprocessors&r. These are the best kind of Tier Three circuits you can make, and you won't unlock the better recipes for them until &dLuV&r."
 				""
 				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
 			]
@@ -2425,7 +2410,10 @@
 				"With your &6Tungstensteel&r-based machine hulls and &6Nanoprocessor Mainframes&r squared away, you can finally get on the path to making an Insane Voltage &3Circuit Assembling Machine&r."
 				""
 				"This tier of Assembling Machine unlocks &6Quantum Circuits&r, as well as handling crafting recipes up to 8192 EU/t. It can also optionally overclock recipes that consume up to 2048 EU/t for improved speed at the cost of relatively more power."
+				""
+				"Alternatively, you can make an &6IV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
 			]
+			icon: "gtceu:iv_circuit_assembler"
 			id: "4E63CE9607E3B792"
 			rewards: [{
 				id: "27B7D626B6433CAA"
@@ -2436,7 +2424,22 @@
 			size: 1.0d
 			tasks: [{
 				id: "781C7E03F26807E5"
-				item: "gtceu:iv_circuit_assembler"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:iv_circuit_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_energy_input_hatch"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "&2IV Circuit Assembler"
@@ -2540,12 +2543,16 @@
 				"6DAB13A7BDECE94E"
 				"76BAC72CC89F390E"
 				"521977C7165229F1"
+				"458FF3F9BC8E025B"
 			]
 			description: [
 				"With your &2Rhodium Plated Lumium-Palladium&r-based machine hulls, Assembling Machine built, and &6Quantum Processor Mainframes&r squared away, you can finally get on the path to making a Ludicrous Voltage &3Circuit Assembling Machine&r."
 				""
 				"This tier of Assembling Machine unlocks &6Crystal Circuits&r, as well as handling crafting recipes up to 32768 EU/t. It can also optionally overclock recipes that consume up to 8192 EU/t for improved speed at the cost of relatively more power."
+				""
+				"Alternatively, you can make an &6LuV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
 			]
+			icon: "gtceu:luv_circuit_assembler"
 			id: "0BB798ACFE684AA9"
 			rewards: [{
 				id: "567C3A5591D491DB"
@@ -2556,7 +2563,22 @@
 			size: 1.0d
 			tasks: [{
 				id: "2DD4546958B22D50"
-				item: "gtceu:luv_circuit_assembler"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:luv_circuit_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_energy_input_hatch"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "&2LuV Circuit Assembler"
@@ -2571,7 +2593,7 @@
 				"7E51D15F38C3B356"
 			]
 			description: [
-				"With your &6Crystal CPUs&r and the &3LuV Assembling Machine&r crafted, you can make the final type of Tier Five Circuit: the &6Crystal Circuit&r."
+				"With your &6Crystal CPUs&r and the &3LuV Assembling Machine&r crafted, you can make the final type of Tier Five Circuit: the &6Crystal Processor&r."
 				""
 				"&2This is the first Circuit which strictly requires Advanced SMD components. All of them will from now on.&r"
 				""
@@ -2702,7 +2724,10 @@
 				"With your &2Naquadah Alloy&r-based machine hulls and &6Crystal Processor Mainframes&r squared away, you can finally get on the path to making a ZPM &3Circuit Assembling Machine&r."
 				""
 				"This tier of Assembling Machine unlocks &6Wetware Circuits&r, as well as handling crafting recipes up to 131072 EU/t. It can also optionally overclock recipes that consume up to 32768 EU/t for improved speed at the cost of relatively more power."
+				""
+				"Alternatively, you can make an &6ZPM Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
 			]
+			icon: "gtceu:zpm_circuit_assembler"
 			id: "49E9A178F6A52A62"
 			rewards: [{
 				id: "134FCF48C07467D9"
@@ -2713,7 +2738,22 @@
 			size: 1.0d
 			tasks: [{
 				id: "5B00974DF9D25C96"
-				item: "gtceu:zpm_circuit_assembler"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:zpm_circuit_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_energy_input_hatch"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "&2ZPM Circuit Assembler"
@@ -2926,6 +2966,51 @@
 			}]
 			x: 15.5d
 			y: -5.5d
+		}
+		{
+			dependencies: [
+				"217F85D6FE2A467D"
+				"01E542E1C9DAF5B4"
+			]
+			description: [
+				"With your &2Darmstadium&r-based machine hulls and &6Wetware Mainframes&r squared away, you can finally get on the path to making a UV &3Circuit Assembling Machine&r."
+				""
+				"This tier of Assembling Machine unlocks &6Matter Circuits&r, as well as handling crafting recipes up to 524288 EU/t. It can also optionally overclock recipes that consume up to 131072 EU/t for improved speed at the cost of relatively more power."
+				""
+				"Alternatively, you can make an &6UV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
+			]
+			icon: "gtceu:uv_circuit_assembler"
+			id: "44E2C12FC4C26CA9"
+			rewards: [{
+				id: "23649A4A31004979"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "235B36401FAF51B0"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uv_circuit_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_energy_input_hatch"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "&2UV Circuit Assembler"
+			x: 5.5d
+			y: -7.0d
 		}
 	]
 	title: "Progression"
