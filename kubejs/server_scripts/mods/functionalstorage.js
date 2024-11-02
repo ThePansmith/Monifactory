@@ -131,26 +131,23 @@ ServerEvents.recipes(event => {
 
     // Storage Upgrades
     let upgradeTiers = [
-        ['copper', ['gtceu:aluminium_drum', 'gtceu:aluminium_crate'], 'copper'],
-        ['gold', ['gtceu:tungsten_steel_drum', 'gtceu:tungsten_steel_crate'], 'gold'],
-        ['diamond', ['gtceu:mv_super_tank', 'gtceu:mv_super_chest'], 'diamond'],
-        ['netherite', ['gtceu:iv_quantum_tank', 'gtceu:iv_quantum_chest'], 'emerald']
+        ['copper', 'lead', 'bronze'],
+        ['gold', 'invar', 'steel'],
+        ['diamond', 'electrum', 'aluminium'],
+        ['netherite', 'signalum', 'stainless_steel']
     ]
 	upgradeTiers.forEach((tier, tierIndex) => {
         event.remove({ id: 'functionalstorage:' + tier[0] + '_upgrade'})
-        for (var index = 0; index < 2; index++) {
-            event.shaped(
-                '2x functionalstorage:' + tier[0] + '_upgrade', [
-                'PBP',
-                'UCU',
-                'PBP'
-            ], {
-                P: '#forge:plates/' + tier[2],
-                B: '#forge:storage_blocks/' + tier[2],
-                U: tierIndex == 0 ? '#functionalstorage:drawer' : ('functionalstorage:' + upgradeTiers[tierIndex-1][0] + '_upgrade'),
-                C: tier[1][index],
-            }).id('functionalstorage:' + tier[2] + '_upgrade_' + (index == 0 ? 'tank' : 'chest'))
-        }
+        event.shaped(
+            '2x functionalstorage:' + tier[0] + '_upgrade', [
+            'PUP',
+            'PGP',
+            'PUP'
+        ], {
+            P: '#forge:plates/' + tier[2],
+            G: '#forge:double_plates/' + tier[1],
+            U: tierIndex == 0 ? '#functionalstorage:drawer' : ('functionalstorage:' + upgradeTiers[tierIndex-1][0] + '_upgrade'),
+        }).id('functionalstorage:' + tier[2] + '_upgrade')
     })
 
 
