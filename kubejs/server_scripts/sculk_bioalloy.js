@@ -1,0 +1,31 @@
+ServerEvents.recipes(event => {
+
+    event.recipes.gtceu.omnic_forge('sculk-compatible_trellis_microstructure_forging')
+        .itemInputs('2x extendedcrafting:crystaltine_ingot', 'kubejs:the_ultimate_material', '6x gtceu:lanthanum_dust', '9x gtceu:potassium_cyanide_dust')
+        .itemOutputs('18x kubejs:sculk-compatible_trellis_microstructure')
+        .duration(140)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    event.recipes.gtceu.large_chemical_reactor('fibrinogenic_sculk_ball')
+        .itemInputs('64x minecraft:sculk_vein', '13x kubejs:warden_horn', '29x gtceu:collagen_dust')
+        .inputFluids('gtceu:raw_growth_medium 600', 'gtceu:mutagen 900')
+        .itemOutputs('7x kubejs:fibrinogenic_sculk_ball')
+        .duration(540)
+        .EUt(GTValues.VHA[GTValues.IV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    event.recipes.gtceu.forming_press('sculk-saturated_microstructure_pulp_press')
+        .itemInputs('2x kubejs:sculk-compatible_trellis_microstructure', '3x kubejs:fibrinogenic_sculk_ball')
+        .itemOutputs('2x kubejs:sculk-saturated_microstructure_pulp')
+        .duration(51200)
+        .EUt(GTValues.VHA[GTValues.LV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+
+    event.recipes.gtceu.large_chemical_reactor('kubejs:animated_bioalloy_pulp_reacting')
+        .itemInputs('1x kubejs:sculk-saturated_microstructure_pulp', '1x gtceu:small_prussian_blue_dust', '1x minecraft:sculk_catalyst')
+        .inputFluids('enderio:xp_juice 5000')
+        .itemOutputs('kubejs:animated_bioalloy_pulp')
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+})

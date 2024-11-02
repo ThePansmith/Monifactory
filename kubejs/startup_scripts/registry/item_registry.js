@@ -334,6 +334,13 @@ StartupEvents.registry('item', event => {
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
 
+    // Sculk bioalloy processing intermediate products
+    event.create('sculk-compatible_trellis_microstructure')
+    event.create('fibrinogenic_sculk_ball')
+    event.create('sculk-saturated_microstructure_pulp')
+    event.create('animated_bioalloy_pulp')
+
+
     // Alien Scrapline
     event.create('alien_scrap')
     event.create('ruined_hull')
