@@ -1,9 +1,14 @@
 ServerEvents.recipes(event => {
     //Remove bugged Oak Drawer recipes
     event.remove({ id: /functionalstorage:oak_drawer_alternate/ })
-    
-    event.remove({ id: "functionalstorage:storage_controller" })
 
+
+    // Fluid Drawers
+    event.replaceInput({ output: /fluid/, mod: 'functionalstorage'}, '#minecraft:planks', '#forge:plates/iron')
+    event.replaceInput({ output: /fluid/, mod: 'functionalstorage'}, 'minecraft:bucket', 'gtceu:lv_hermetic_casing')
+
+
+    // Compacting drawers
     event.shaped(
         "functionalstorage:compacting_drawer", [
         'III',
@@ -26,6 +31,9 @@ ServerEvents.recipes(event => {
         D: "#functionalstorage:drawer"
     }
     ).id('functionalstorage:simple_compacting_drawer')
+
+
+    // Specialized Drawers
     event.shaped(
         "functionalstorage:controller_extension", [
         'III',
@@ -63,6 +71,9 @@ ServerEvents.recipes(event => {
     }
     ).id('functionalstorage:ender_drawer')
 
+
+    //Storage Controller
+    event.remove({ id: "functionalstorage:storage_controller" })
     const controllerCore = ["#forge:storage_blocks/diamond", "#forge:storage_blocks/emerald"]
     controllerCore.forEach(coreBlock => {
         event.shaped(
@@ -78,6 +89,8 @@ ServerEvents.recipes(event => {
         })
     })
 
+
+    // Framed Drawers
     const miscframing = ["storage_controller", "simple_compacting_drawer", "controller_extension"]
     miscframing.forEach(Block => {
         event.shaped(
@@ -102,6 +115,8 @@ ServerEvents.recipes(event => {
 		B: 'functionalstorage:compacting_drawer'
 	}).id('functionalstorage:compacting_framed_drawer')
 
+
+    // Collector Upgrade
 	event.shaped(
 		'functionalstorage:collector_upgrade', [
 		'SRS',
@@ -113,19 +128,28 @@ ServerEvents.recipes(event => {
 		R: 'minecraft:redstone'
 	}).id('functionalstorage:collector_upgrade')
 
-	event.shaped(
-		'functionalstorage:netherite_upgrade', [
-		'EBE',
-		'CDC',
-		'EBE'
-	], {
-		E: 'minecraft:emerald',
-		B: "#forge:storage_blocks/emerald",
-		C: '#forge:chests/wooden',
-		D: 'functionalstorage:diamond_upgrade'
-	}).id('functionalstorage:netherite_upgrade')
 
-	event.replaceInput({ id: /functionalstorage:fluid/ }, 'minecraft:bucket', 'gtceu:hv_super_tank')
+    // Storage Upgrades
+    let upgradeTiers = [
+        ['copper', 'lead', 'bronze'],
+        ['gold', 'invar', 'steel'],
+        ['diamond', 'electrum', 'aluminium'],
+        ['netherite', 'signalum', 'stainless_steel']
+    ]
+	upgradeTiers.forEach((tier, tierIndex) => {
+        event.remove({ id: 'functionalstorage:' + tier[0] + '_upgrade'})
+        event.shaped(
+            '2x functionalstorage:' + tier[0] + '_upgrade', [
+            'PUP',
+            'PGP',
+            'PUP'
+        ], {
+            P: '#forge:plates/' + tier[2],
+            G: '#forge:double_plates/' + tier[1],
+            U: tierIndex == 0 ? '#functionalstorage:drawer' : ('functionalstorage:' + upgradeTiers[tierIndex-1][0] + '_upgrade'),
+        }).id('functionalstorage:' + tier[2] + '_upgrade')
+    })
+
 
 	if (isNormalMode) {
 		// Custom coin compacting recipes
