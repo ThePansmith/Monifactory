@@ -147,6 +147,9 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('ae2:memory_card', Text.gray('Hold in offhand to set additional inputs on Multi P2Ps.'))
     tooltip.add('ae2:creative_fluid_cell', Text.red('Cannot be made using Creative Tank data!\nAE2 devs will not fix a bug that allows this to make items as well.'))
 
+    //EIO Cap Banks
+    tooltip.add(/^enderio:.*_bank$/, "§4Currently TPS intensive, look into other options for power storage.")
+
     // Misc
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray('Gaze into the Abyss...'))
     tooltip.add('kubejs:infinity_catalyst', Text.darkGray('One is all, and all is one.'))
