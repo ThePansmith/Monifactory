@@ -20,7 +20,12 @@ let addFluid = (mat, key, temp) => {
 }
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
+    //Existing materials that get an item form
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+
+    GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    GTMaterials.Actinium.setMaterialARGB(0xaa3399)
+    GTMaterials.Actinium.addFlags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW)
 
     GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 0, true))
@@ -28,6 +33,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, 'highest', 1000000, 1000));
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
+    //Existing materials that get new material forms
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL)
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
     GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
@@ -39,6 +45,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
 
+    //Radioactive materials that get liquid forms and/or a new color
     addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID, 1133);
     GTMaterials.Americium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.PLASMA, new GTFluidBuilder())
     addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID, 1259);

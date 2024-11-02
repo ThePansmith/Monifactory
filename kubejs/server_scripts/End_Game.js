@@ -1,4 +1,12 @@
 ServerEvents.recipes(event => {
+    event.recipes.gtceu.electrolyzer('actinium_from_uranium_hexafluoride')
+        .inputFluids('gtceu:uranium_hexafluoride 1000')
+        .notConsumable('gtceu:neutron_reflector')
+        .outputFluids('gtceu:enriched_uranium_hexafluoride 50', 'gtceu:depleted_uranium_hexafluoride 450', 'gtceu:fluorine 800')
+        .chancedOutput('gtceu:small_actinium_dust', 100, 500)
+        .duration(160)
+        .EUt(GTValues.VHA[GTValues.UV])
+
     // Assembly Line
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line('dimensional_superassembler')

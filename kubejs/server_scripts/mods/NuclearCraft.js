@@ -64,13 +64,12 @@ ServerEvents.recipes(event => {
     }
 
 
-    decompdepleted('californium_hecf_251', '2x nuclearcraft:californium_251', '2x nuclearcraft:californium_252', '2x nuclearcraft:californium_252', '2x nuclearcraft:californium_252')
-    decompdepleted('neptunium_len_236', 'nuclearcraft:neptunium_237', '4x nuclearcraft:plutonium_242', 'nuclearcraft:americium_242', '3x nuclearcraft:americium_243')
     decompdepleted('thorium_tbu', '2x nuclearcraft:uranium_233', '8x gtceu:uranium_235_nugget', 'nuclearcraft:neptunium_236', '4x nuclearcraft:neptunium_237')
     decompdepleted('uranium_leu_233', '4x nuclearcraft:plutonium_242', '4x gtceu:plutonium_nugget', '4x gtceu:plutonium_241_nugget', '3x nuclearcraft:americium_243')
     decompdepleted('uranium_heu_233', '4x nuclearcraft:neptunium_236', 'nuclearcraft:neptunium_237', '2x nuclearcraft:plutonium_242', 'nuclearcraft:americium_243')
     decompdepleted('uranium_leu_235', 'nuclearcraft:neptunium_237', '40x gtceu:uranium_nugget', '8x gtceu:plutonium_nugget', '8x gtceu:plutonium_241_nugget')
     decompdepleted('uranium_heu_235', '2x nuclearcraft:neptunium_237', '20x gtceu:uranium_nugget', '4x gtceu:plutonium_nugget', '3x nuclearcraft:plutonium_242')
+    decompdepleted('neptunium_len_236', 'nuclearcraft:neptunium_237', '4x nuclearcraft:plutonium_242', 'nuclearcraft:americium_242', '3x nuclearcraft:americium_243')
     decompdepleted('neptunium_hen_236', 'nuclearcraft:plutonium_238', '16x gtceu:uranium_nugget', '8x gtceu:plutonium_nugget', '4x nuclearcraft:plutonium_242')
     decompdepleted('plutonium_lep_239', '3x nuclearcraft:plutonium_242', 'nuclearcraft:curium_243', '8x gtceu:plutonium_nugget', '3x nuclearcraft:curium_246')
     decompdepleted('plutonium_hep_239', 'nuclearcraft:americium_241', '3x nuclearcraft:americium_242', 'nuclearcraft:curium_245', '3x nuclearcraft:curium_246')
@@ -86,10 +85,10 @@ ServerEvents.recipes(event => {
     decompdepleted('curium_hecm_247', 'nuclearcraft:berkelium_248', 'nuclearcraft:californium_249', '3x nuclearcraft:californium_251', '3x nuclearcraft:californium_252')
     decompdepleted('berkelium_leb_248', 'nuclearcraft:californium_249', 'nuclearcraft:californium_251', '3x nuclearcraft:californium_252', '3x nuclearcraft:californium_252')
     decompdepleted('berkelium_heb_248', 'nuclearcraft:californium_250', 'nuclearcraft:californium_251', '3x nuclearcraft:californium_252', '3x nuclearcraft:californium_252')
-    decompdepleted('californium_lecf_249', '2x nuclearcraft:californium_250', 'nuclearcraft:californium_251', '2x nuclearcraft:californium_252', '2x nuclearcraft:californium_252')
-    decompdepleted('californium_hecf_249', '4x nuclearcraft:californium_250', '2x nuclearcraft:californium_251', 'nuclearcraft:californium_252', 'nuclearcraft:californium_252')
-    decompdepleted('californium_lecf_251', 'nuclearcraft:californium_251', '2x nuclearcraft:californium_252', '2x nuclearcraft:californium_252', '2x nuclearcraft:californium_252')
-
+    decompdepleted('californium_lecf_249', '2x nuclearcraft:californium_250', 'nuclearcraft:californium_251', '2x nuclearcraft:californium_252', '2x gtceu:actinium_nugget')
+    decompdepleted('californium_hecf_249', '4x nuclearcraft:californium_250', '2x nuclearcraft:californium_251', '2x nuclearcraft:californium_252', '4x gtceu:actinium_nugget')
+    decompdepleted('californium_lecf_251', 'nuclearcraft:californium_251', '2x nuclearcraft:californium_252', '2x nuclearcraft:californium_252', '2x gtceu:actinium_nugget')
+    decompdepleted('californium_hecf_251', '2x nuclearcraft:californium_251', '2x nuclearcraft:californium_252', '2x nuclearcraft:californium_252', '4x gtceu:actinium_nugget')
 
 
     function cansolid(name, input) {
