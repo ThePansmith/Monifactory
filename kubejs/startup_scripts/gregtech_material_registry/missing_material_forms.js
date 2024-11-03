@@ -24,6 +24,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 
     GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    addFluid(GTMaterials.Actinium, $FluidStorageKeys.LIQUID, 1500);
     GTMaterials.Actinium.setMaterialARGB(0xaa3399)
     GTMaterials.Actinium.addFlags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW)
 
