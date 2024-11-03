@@ -355,6 +355,11 @@ StartupEvents.registry('item', event => {
     event.create('holmium_oxide_glass_dust')
 
 
+    //Uru metal processing intermediate products
+    event.create('reactive_dust_mixture')
+    event.create('inert_dust_mixture')
+
+
     // Post-Tank Wafer items
     event.create('universe_boule').texture('kubejs:item/universalwafer/universal_boule').displayName('Universe-doped Monocrystalline Silicon Boule')
     event.create('universe_wafer').texture('kubejs:item/universalwafer/universal_wafer').displayName('Universe-doped Wafer')

@@ -171,6 +171,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xD29092)
         .components('2x holmium', '3x oxygen')
 
+    event.create('waste_gas_mixture')
+        .fluid()
+        .color(0x666677)
+        .components('10x carbon_monoxide', '5x chloroethane', '7x ammonium_formate', '9x dinitrogen_tetroxide', '2x neon', '1x tritium')
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 })
 
 GTCEuStartupEvents.materialModification(event => {
