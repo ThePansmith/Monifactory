@@ -358,6 +358,15 @@ StartupEvents.registry('item', event => {
     //Uru metal processing intermediate products
     event.create('reactive_dust_mixture')
     event.create('inert_dust_mixture')
+    event.create('dusty_inert_powder')
+    event.create('centrifuged_inert_powder')
+    event.create('cured_inert_powder')
+    event.create('shiny_powder_mixture')
+    event.create('shiny_metal_powder')
+    event.create('inert_clumps')
+    event.create('saturated_inert_clumps')
+    event.create('clean_inert_cluster')
+    event.create('uric_crystal_seed')
 
 
     // Post-Tank Wafer items

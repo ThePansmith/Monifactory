@@ -154,6 +154,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0xACB279)
         .components('2x carbon', '6x hydrogen', '1x sulfur')
+
+    // Saturated water (Uru line midproduct)
+    event.create('saturated_water')
+        .liquid()
+        .color(0x857049)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
 
 

@@ -86,6 +86,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffcc22).secondaryColor(0x991105)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.PHOSPHORESCENT)
+       
+    event.create('uric_actinate')
+        .gem()
+        .color(0xbb9966).secondaryColor(0x881105)
+        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+        .components('1x uru', '2x actinium', '6x oxygen')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING)
+
+    event.create('actinium_iron_oxide')
+        .dust()
+        .color(0xC3D1FF)    //Old actinium color for fun
+        .components('1x actinium', '2x iron', '3x oxygen')
 
     event.create('monium')
         .ingot()
