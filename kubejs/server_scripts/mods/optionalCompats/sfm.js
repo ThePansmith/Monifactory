@@ -22,7 +22,7 @@ if (Platform.isLoaded('sfm')) {
     // Re-add Inventory Cable
     event.recipes.gtceu
       .assembler('kubejs:sfm_cable')
-      .itemOutputs('4x sfm:cable')
+      .itemOutputs('8x sfm:cable')
       .itemInputs([
         'gtceu:cupronickel_large_item_pipe',
         'gtceu:aluminium_large_fluid_pipe',
