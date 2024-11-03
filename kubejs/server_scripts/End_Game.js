@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:enriched_uranium_hexafluoride 50', 'gtceu:depleted_uranium_hexafluoride 450', 'gtceu:fluorine 800')
         .chancedOutput('gtceu:small_actinium_dust', 100, 500)
         .duration(160)
-        .EUt(GTValues.VHA[GTValues.UV])
+        .EUt(GTValues.VHA[GTValues.ZPM])
 
     // Assembly Line
     // Dimensional Superassembler
