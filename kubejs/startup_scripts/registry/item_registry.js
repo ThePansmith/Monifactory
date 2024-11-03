@@ -336,7 +336,7 @@ StartupEvents.registry('item', event => {
 
     // Sculk bioalloy processing intermediate products
     event.create('sculk-compatible_trellis_microstructure')
-    event.create('fibrinogenic_sculk_ball')
+    event.create('fibrinogenic_sculk_goo')
     event.create('sculk-saturated_microstructure_pulp')
     event.create('animated_bioalloy_pulp')
 
