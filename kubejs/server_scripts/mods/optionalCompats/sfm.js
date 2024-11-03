@@ -24,8 +24,8 @@ if (Platform.isLoaded('sfm')) {
       .assembler('kubejs:sfm_cable')
       .itemOutputs('4x sfm:cable')
       .itemInputs([
-        'gtceu:cupronickel_huge_item_pipe',
-        'gtceu:aluminium_huge_fluid_pipe',
+        'gtceu:cupronickel_large_item_pipe',
+        'gtceu:aluminium_large_fluid_pipe',
         '4x minecraft:iron_bars',
       ])
       .inputFluids(Fluid.of('gtceu:black_steel', 288))
@@ -51,8 +51,10 @@ if (Platform.isLoaded('sfm')) {
       .itemOutputs('4x sfm:disk')
       .itemInputs([
         'gtceu:ruby_plate',
-        'gtceu:data_stick',
+        '4x gtceu:ram_chip',
+        '2x gtceu:cpu_chip',
         'kubejs:resonating_crystal',
+        '16x gtceu:fine_red_alloy_wire',
       ])
       .duration(200)
       .EUt(120);
