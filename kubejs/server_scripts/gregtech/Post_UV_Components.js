@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler(`${tier}_256a_laser_source_hatch`)
             .itemInputs(`gtceu:${tier}_machine_hull`, 'gtceu:diamond_lens', `gtceu:${tier}_sensor`, `gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
-            .itemOutputs(`gtceu:${tier}_256a_laser_target_hatch`)
+            .itemOutputs(`gtceu:${tier}_256a_laser_source_hatch`)
             .circuit(1)
             .duration(400)
             .EUt(eut)
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler(`${tier}_1024a_laser_source_hatch`)
             .itemInputs(`gtceu:${tier}_machine_hull`, '2x gtceu:diamond_lens', `2x gtceu:${tier}_sensor`, `2x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_double_wire`)
-            .itemOutputs(`gtceu:${tier}_1024a_laser_target_hatch`)
+            .itemOutputs(`gtceu:${tier}_1024a_laser_source_hatch`)
             .circuit(2)
             .duration(400)
             .EUt(eut)
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.assembler(`${tier}_4096a_laser_source_hatch`)
             .itemInputs(`gtceu:${tier}_machine_hull`, '4x gtceu:diamond_lens', `4x gtceu:${tier}_sensor`, `4x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_quadruple_wire`)
-            .itemOutputs(`gtceu:${tier}_4096a_laser_target_hatch`)
+            .itemOutputs(`gtceu:${tier}_4096a_laser_source_hatch`)
             .circuit(3)
             .duration(400)
             .EUt(eut)
