@@ -1,0 +1,141 @@
+
+/**
+ * Unlike how screret showcases the functionality of this event in his discord messge:
+ * https://discord.com/channels/914926812948234260/1229854271613436066/1279802878822711407
+ * there is no "Map.of()" to create map objects out of varargs.
+ * 
+ * Worse still, I could not find an analog to that function.
+ * Therefore we declare empty maps and then populate them afterwards.
+ */
+
+GTCEuStartupEvents.craftingComponents(event => {
+
+    //Make LuV+ electrolyzer wires not osmium for funsies :)
+    let wireElectricMap = {};
+    wireElectricMap[GTValues.LuV] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.VanadiumGallium);
+    wireElectricMap[GTValues.ZPM] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.NaquadahAlloy);
+    wireElectricMap[GTValues.UV] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.get('sculk_superconductor'));
+    wireElectricMap[GTValues.UHV] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.get('activated_netherite'));
+    wireElectricMap[GTValues.UEV] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.Holmium);
+    wireElectricMap[GTValues.UIV] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.get('monium'));
+    event.modify(CraftingComponent.WIRE_ELECTRIC, wireElectricMap)
+
+    //Netherite & Holmium for wires/cables
+    let wireCableComponentPrefixes = [
+        [TagPrefix.wireGtQuadruple, CraftingComponent.WIRE_QUAD],
+        [TagPrefix.wireGtOctal, CraftingComponent.WIRE_OCT],
+        [TagPrefix.wireGtHex, CraftingComponent.WIRE_HEX],
+        [TagPrefix.wireGtSingle, CraftingComponent.CABLE],
+        [TagPrefix.wireGtDouble, CraftingComponent.CABLE_DOUBLE],
+        [TagPrefix.wireGtQuadruple, CraftingComponent.CABLE_QUAD],
+        [TagPrefix.wireGtOctal, CraftingComponent.CABLE_OCT],
+        //[TagPrefix.wireGtHex, CraftingComponent.CABLE_HEX] //seems borked?
+    ]
+
+    wireCableComponentPrefixes.forEach(prefixComponentPair => {
+        let wireMap = {};
+        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('activated_netherite'));
+        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[0], GTMaterials.Holmium);
+        event.modify(prefixComponentPair[1], wireMap)
+    })
+
+    //Netherite, Holmium, and Monium for tier up wires/cables
+    let wireCableTierUpComponentPrefixes = [
+        //[TagPrefix.wireGtSingle, CraftingComponent.CABLE_TIER_UP],
+        //[TagPrefix.wireGtDouble, CraftingComponent.CABLE_TIER_UP_DOUBLE],
+        //[TagPrefix.wireGtQuadruple, CraftingComponent.CABLE_TIER_UP_QUAD],
+        //[TagPrefix.wireGtOctal, CraftingComponent.CABLE_TIER_UP_OCT],
+        //[TagPrefix.wireGtHex, CraftingComponent.CABLE_TIER_UP_HEX] //seems borked.
+    ]
+
+    wireCableTierUpComponentPrefixes.forEach(prefixComponentPair => {
+        let wireMap = {};
+        wireMap[GTValues.UHV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('activated_netherite'));
+        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.Holmium);
+        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('monium'));
+        event.modify(prefixComponentPair[1], wireMap)
+    })
+
+    // Pipes
+    let pipeComponentPrefixes = [
+        [TagPrefix.pipeNormalFluid, CraftingComponent.PIPE_NORMAL],
+        [TagPrefix.pipeLargeFluid, CraftingComponent.PIPE_LARGE],
+        [TagPrefix.pipeNonupleFluid, CraftingComponent.PIPE_NONUPLE]
+    ]
+
+    pipeComponentPrefixes.forEach(prefixComponentPair => {
+        let pipeMap = {};
+        pipeMap[GTValues.UHV] = UnificationEntry(prefixComponentPair[0], GTMaterials.Neutronium);
+        pipeMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('crystal_matrix'));
+        pipeMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[0], GTMaterials.Holmium);
+        event.modify(prefixComponentPair[1], pipeMap)
+    })
+
+    // Glass
+    let glassMap = {};
+    glassMap[GTValues.UHV] = Item.of('gtceu:fusion_glass');
+    glassMap[GTValues.UEV] = Item.of('gtceu:fusion_glass');
+    glassMap[GTValues.UIV] = Item.of('gtceu:fusion_glass');
+    event.modify(CraftingComponent.GLASS, glassMap)
+
+    // Plates
+    let plateMap = {};
+    plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get('omnium'))
+    plateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get('infinity'))
+    plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get('holmium'))
+    event.modifyUnificationEntry(CraftingComponent.PLATE, plateMap)
+
+    // Hull plates
+    let hullPlateMap = {};
+    plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get('polyethyl_cyanoacrylate'))
+    plateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get('polyethyl_cyanoacrylate'))
+    plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get('polyethyl_cyanoacrylate'))
+    event.modifyUnificationEntry(CraftingComponent.HULL_PLATE, hullPlateMap)
+
+    // Resistive heating wires
+    let heatingCoilComponentPrefixes = [
+        [TagPrefix.wireGtDouble, CraftingComponent.COIL_HEATING],
+        [TagPrefix.wireGtQuadruple, CraftingComponent.COIL_HEATING_DOUBLE],
+    ]
+
+    heatingCoilComponentPrefixes.forEach(prefixComponentPair => {
+        let heaterMap = {};
+        heaterMap[GTValues.UHV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('omnium'));
+        heaterMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('omnium'));
+        heaterMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('omnium'));
+        event.modify(prefixComponentPair[1], heaterMap)
+    })
+
+    //TODO: Coil electric | small springs (for transformers)
+
+    // Magnetic Rods (Use Samarium for UV+, two tiers after Nomi)
+    let magneticRodMap = {};
+    magneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
+    magneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
+    magneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
+    magneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
+    event.modifyUnificationEntry(CraftingComponent.STICK_MAGNETIC, magneticRodMap)
+
+    // Distillation Rods
+    let distillationRodMap = {};
+    distillationRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.get('neutronium'))
+    distillationRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rod, GTMaterials.get('omnium'))
+    distillationRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rod, GTMaterials.get('infinity'))
+    event.modifyUnificationEntry(CraftingComponent.STICK_DISTILLATION, distillationRodMap)
+
+    //TODO: Electromagnetic stick (for electromagnetic separator)
+
+    // Chem reactor pipe ingredient
+    let reactorPipeMap = {};
+    reactorPipeMap[GTValues.UHV] = UnificationEntry(TagPrefix.pipeNormalFluid, GTMaterials.Polybenzimidazole)
+    reactorPipeMap[GTValues.UEV] = UnificationEntry(TagPrefix.pipeLargeFluid, GTMaterials.Polybenzimidazole)
+    reactorPipeMap[GTValues.UIV] = UnificationEntry(TagPrefix.pipeLargeFluid, GTMaterials.Polybenzimidazole)
+    event.modifyUnificationEntry(CraftingComponent.PIPE_REACTOR, reactorPipeMap)
+
+    // Frame
+    let frameMap = {};
+    frameMap[GTValues.UHV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.Neutronium)
+    frameMap[GTValues.UEV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get('omnium'))
+    frameMap[GTValues.UIV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get('infinity'))
+    event.modifyUnificationEntry(CraftingComponent.FRAME, frameMap)
+})

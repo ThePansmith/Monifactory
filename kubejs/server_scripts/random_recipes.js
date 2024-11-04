@@ -647,6 +647,7 @@ ServerEvents.recipes(event => {
         });
     }); 
 
+    /*
     //LUV Components
     event.remove({ id: 'gtceu:assembly_line/electric_motor_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_motor_luv')
@@ -702,6 +703,7 @@ ServerEvents.recipes(event => {
             .duration(600)
             .EUt(6000)
             ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_robot_arm').EUt(480).duration(4800))
+    */
     event.remove({ id: 'gtceu:shaped/mega_blast_furnace'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_blast_furnace')
         .itemInputs('gtceu:electric_blast_furnace','4x #gtceu:circuits/zpm','4x gtceu:luv_field_generator','4x gtceu:naquadah_alloy_spring','4x gtceu:dense_naquadah_alloy_plate','4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
@@ -775,6 +777,7 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/iv"
     })
     
+    /*
     //ZPM Field Gen
     event.remove({ id: 'gtceu:assembly_line/field_generator_zpm'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/zpm_field_generator')
@@ -784,6 +787,7 @@ ServerEvents.recipes(event => {
     .duration(600)
     .EUt(24000)
     .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
+    */
 
     // Dragon Scaleline
     event.recipes.gtceu.macerator('dragon_scale_crushing')
