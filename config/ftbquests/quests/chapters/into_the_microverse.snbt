@@ -671,7 +671,7 @@
 				"3547762BC39A0B8F"
 				"4146B73F27D24131"
 			]
-			description: ["&9Dimethylamine&r and &9Monochloramine&r combine together into &9Dimethylhydrazine&r. &2You can also combine Methanol, Ammonia, and Hypochlorous Acid."]
+			description: ["This needs an &6HV&r Chemical Reactor. &9Dimethylamine&r and &9Monochloramine&r combine together into &9Dimethylhydrazine&r. &2You can also combine Methanol, Ammonia, and Hypochlorous Acid."]
 			id: "5E2489DE2E840738"
 			rewards: [{
 				id: "1C076188D1C62B2C"
@@ -738,7 +738,7 @@
 		{
 			dependencies: ["7A09229ACC000B09"]
 			description: [
-				"&9Hydrogen&r and &9Nitrogen&r combine together to make &9Ammonia&r."
+				"&9Hydrogen&r and &9Nitrogen&r combine together to make &9Ammonia&r in an &6HV&r Chemical Reactor."
 				""
 				"An easy way to get Nitrogen is to centrifuge &9Air&r, which will require you to build an &3Air Collector&r. You could also electrolyze &6Saltpeter&r, distill &9Fermented Biomass&r in a &3Distillation Tower&r, or get huge amounts from &2distlling Liquid Air in a Distillation Tower.&r."
 			]

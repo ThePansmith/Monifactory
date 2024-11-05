@@ -831,11 +831,11 @@
 				"14F1FF4656693711"
 				"51A463024F35DC2E"
 				"025092551C0A20B6"
-				"115B96B2092D671E"
 				"069773756716E192"
+				"79EFCD8E01384C0C"
 			]
 			description: [
-				"&2Wetware and crystal-related processes require some stronger sterilization.&r"
+				"&2Wetware- and Crystal-related processes require some stronger sterilization.&r"
 				""
 				"You will need to build another &3Cleanroom&r to run these recipes inside. Instead of &3Filter Casings&r, use &3Sterilizing Filter Casings&r in the top face."
 				""
@@ -1328,7 +1328,7 @@
 			description: [
 				"Cryolobus is a complex material needed in vast quantities."
 				""
-				"You'll likely have come by some dust while mining in the End, but you can also create it with a &9Sculk Catalyst&r and &6Manyullyn&r."
+				"You can create it with a &9Sculk Catalyst&r and &6Manyullyn&r."
 			]
 			id: "7F669657313F2E62"
 			rewards: [{
@@ -1452,8 +1452,6 @@
 				"Second is by combining &6Naquadah Dust&r with certain heavy elements and Ender IO crystal grains. This can provide &6Enriched Naquadah&r and &6Naquadria&r."
 				""
 				"Finally, you can do the full CEu processing of &6Naquadah Dust&r with &9Fluoroantimonic Acid&r, the strongest acid known to man. This is a decently involved process, but not only does it yield all 2 other Nq materials, it also grants byproducts of &6Titanium, Sulfur, Indium, Phosphorus, Barium, and Gallium&r. "
-				""
-				"This quest accepts either &6Fluoroantimonic Acid&r, for those doing the recommended full processing, or &6Trinium Dust, Enriched Naquadah Dust&r and &6Naquadria Dust&r, for those doing the mixer recipes."
 			]
 			icon: "gtceu:naquadria_dust"
 			id: "0508D3CCB6C876A3"
@@ -1463,24 +1461,34 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "You only need to complete one of this quest's tasks to move on"
-			tasks: [
-				{
-					id: "1BA846C616A1DCF3"
-					item: "gtceu:trinium_dust"
-					type: "item"
+			tasks: [{
+				id: "15E690653306B02C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:enriched_naquadah_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:enriched_naquadah_ingot"
+							}
+							{
+								Count: 1b
+								id: "gtceu:trinium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:trinium_ingot"
+							}
+						]
+					}
 				}
-				{
-					id: "2ECFFA8C2BB912BF"
-					item: "gtceu:enriched_naquadah_dust"
-					type: "item"
-				}
-				{
-					id: "42C2D7CD2FF1F4D2"
-					item: "gtceu:naquadria_dust"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Naquadah Processing"
 			x: 11.0d
 			y: 12.25d
@@ -1756,11 +1764,11 @@
 				""
 				"The &bEMI&r preview shows &eall valid hatch locations&r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with &2Fusion Machine Casings&r as long as you have at least &atwo Fluid Input Hatches&r and &aone Fluid Output Hatch&r. It's possible to use input/output hatches in every valid location, if you prefer."
 				"{@pagebreak}"
-				"Because of this, the quest only asks for &248 Fusion Machine Casings&r. If you want to use the minimum number of fluid hatches, you'll need to craft an additional &229 Fusion Machine Casings&r. In addition to the &a48 Fusion Machine Casings&r, you will also need &631 Fusion Glass&r or &631 Fusion Machne Casings&r. &bFusion Glass is cheaper, and looks cooler&r, but it's your choice."
+				"Because of this, the quest only asks for &248 Fusion Machine Casings&r. If you want to use the minimum number of fluid hatches, you'll need to craft an additional &229 Fusion Machine Casings&r. In addition to the &a48 Fusion Machine Casings&r, you will also need &631 Fusion Glass&r or &631 Fusion Machine Casings&r. &bFusion Glass is cheaper, and looks cooler&r, but it's your choice."
 				""
 				"Each &aEnergy Hatch&r increases the reactor's power buffer. &cYou cannot use 4x or 16x Energy Hatches in Fusion Reactors. &aAll 16 Energy Hatches&r are required to be able to process all Mark 1 recipes and give a power buffer of &e160M EU&r. &2However, not all energy hatches need to be connected to power. For example, a recipe that requires LuV power draw would only need one or more hatches connected to power, but a recipe that needs ZPM power draw would need at least two hatches connected to power.&r &cThey still need to be present on the structure!&r"
 				"{@pagebreak}"
-				"In addition to the recipe power drain, Fusion Reactors have a &eheat&r mechanic related to the recipe's &e\"Eu to Start\"&r. This amount of power is drained from the reactor's buffer before starting the recipe to heat up the reactor to the necessary temperature, and is independent of the recipe's EU/t cost. As such, this determines the minimum tier of reactor you need for a recipe."
+				"In addition to the recipe power drain, Fusion Reactors have a &eheat&r mechanic related to the recipe's &e\"EU To Start\"&r. This amount of power is drained from the reactor's buffer before starting the recipe to heat up the reactor to the necessary temperature, and is independent of the recipe's EU/t cost. As such, this determines the minimum tier of reactor you need for a recipe."
 				""
 				"If the reactor stops processing, it will &erapidly lose heat&r, even if you pause it with a soft hammer. On the other hand, if the reactor is already at the required temperature for a recipe, &eno additional power&r is required to heat up the reactor! This is true even if you switch between different recipes. This mechanic incentivizes continuous use of the reactor."
 				"{@pagebreak}"
@@ -1834,7 +1842,7 @@
 		}
 		{
 			dependencies: ["1CC092A2F2CD4589"]
-			description: ["&2Double Plates&r used exclusively for the Tier Seven Micro Miner. "]
+			description: ["&2Double Plates&r used for the Tier Seven Micro Miner. "]
 			id: "0B6196692F9E176D"
 			rewards: [{
 				id: "7EEF2F27174D6E74"
@@ -2775,7 +2783,7 @@
 		{
 			dependencies: [
 				"1349044BF8C04A12"
-				"458FF3F9BC8E025B"
+				"0562D9F4C441EAF9"
 			]
 			description: [
 				"&9The upgraded form of the Soul Binder.&r"
@@ -2828,8 +2836,8 @@
 				}
 			]
 			title: "&9Quintessence Infuser"
-			x: 1.5d
-			y: 16.25d
+			x: 27.75d
+			y: 19.875d
 		}
 	]
 	title: "Late Game"

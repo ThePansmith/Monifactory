@@ -884,7 +884,7 @@
 				""
 				"&2After liquefaction, Overworld Air grants Helium and Argon; Nether Air grants Helium-3 and Neon; Ender Air grants Helium, Krypton, Xenon, and Radon."
 				""
-				"Certain Noble Gases can also boost the speed of EBF processes."
+				"Certain Noble Gases (as well as Nitrogen) can also boost the speed of EBF processes."
 			]
 			icon: "gtceu:argon_bucket"
 			id: "4C475D22CC95EB93"
@@ -896,7 +896,35 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "32ABC9C584E278E7"
-				item: "gtceu:argon_bucket"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:helium_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:argon_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:krypton_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:xenon_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:radon_bucket"
+							}
+						]
+					}
+				}
+				title: "Any Noble Gas Bucket"
 				type: "item"
 			}]
 			title: "&2Noble Gases"
@@ -2222,6 +2250,7 @@
 			y: 10.5d
 		}
 		{
+			dependencies: ["6FB3E3D9CA0F4B30"]
 			description: [
 				"&9Rubber&r has been sufficient for making cables so far, but you will soon discover that this basic type of rubber won't withstand more than &2Extreme Voltage&r. Higher quality rubber is necessary to properly insulate your wires."
 				""
@@ -3033,6 +3062,7 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
+			subtitle: "&cThis is NOT YET IMPLEMENTED"
 			tasks: [{
 				id: "186C8FE63F7C723E"
 				item: "gcyr:space_station_packager"

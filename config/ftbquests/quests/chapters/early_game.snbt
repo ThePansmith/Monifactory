@@ -1163,6 +1163,7 @@
 				""
 				"You're going to use them as a component for better circuits. This one is a bit pricey, requiring &2PE, Silicon Plates and Fine Tin Wire."
 			]
+			icon: "gtceu:transistor"
 			id: "13035465E07E34CF"
 			rewards: [{
 				id: "1192C721D08CF8B4"
@@ -1172,10 +1173,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6B68D20D0B8C8886"
-				item: "gtceu:transistor"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:transistors"
+					}
+				}
+				title: "Any #gtceu:transistors"
 				type: "item"
 			}]
-			title: "&2Transistor"
+			title: "&2Transistors"
 			x: -3.0d
 			y: 16.0d
 		}
@@ -1377,6 +1385,7 @@
 				""
 				"Not to be confused with &bEnder IO&r's capacitors&r, which store redstone flux."
 			]
+			icon: "gtceu:capacitor"
 			id: "7D0351942F4DB8E0"
 			rewards: [{
 				id: "258264528D30B707"
@@ -1386,7 +1395,14 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7766ABA36439522B"
-				item: "gtceu:capacitor"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:capacitors"
+					}
+				}
+				title: "Any #gtceu:capacitors"
 				type: "item"
 			}]
 			title: "Capacitors"
@@ -1737,6 +1753,7 @@
 				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &bEMI&r and the Processing Lines Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
 			]
 			disable_toast: true
+			hide_until_deps_visible: true
 			id: "0C10EC03A01E7334"
 			shape: "hexagon"
 			tasks: [{
@@ -1852,7 +1869,7 @@
 				""
 				"The first tier holds &68,000 buckets&r, and higher tiers hold more. They can also be used like Drums to put fluids in and out of machines."
 				""
-				"You can conveniently configure &cvoiding&r for them to always void, start voiding at 95%% capacity, or never void."
+				"You can conveniently configure &cvoiding&r for them to always void, start voiding at 95% capacity, or never void."
 				""
 				"The item equivalent are &3Super Chests&r, which are used in certain &6Micro Miner&r recipes."
 				""
@@ -1926,6 +1943,7 @@
 				""
 				"&2But depending on which setups you build first, you may not need to make many of the basic version over the SMD version."
 			]
+			icon: "gtceu:inductor"
 			id: "013C3CD6D8C727CE"
 			rewards: [{
 				id: "1406FFBCF26D86E7"
@@ -1935,9 +1953,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75E2B7E59A591067"
-				item: "gtceu:inductor"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:inductors"
+					}
+				}
+				title: "Any #gtceu:inductors"
 				type: "item"
 			}]
+			title: "Inductors"
 			x: 3.0d
 			y: 25.0d
 		}
@@ -2007,7 +2033,7 @@
 			description: [
 				"Conduits to carry even MORE RF power."
 				""
-				"You're making these in the &3Assembling Machine&r, right?"
+				"You're making these in an &3Assembling Machine&r, right?"
 			]
 			id: "53205E306EE07F6F"
 			rewards: [{

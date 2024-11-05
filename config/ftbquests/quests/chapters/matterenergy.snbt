@@ -922,7 +922,7 @@
 		{
 			dependencies: ["6F32A8739D8E792A"]
 			description: [
-				"This quest teaches you the basics about &bApplied Energistics 2&r autocrafting. If you are new to this mod, it is highly recommended that you watch a video or &9&lread the built-in guide&r&r. Just remember that channels are disabled by default in this pack."
+				"This quest teaches you the basics about &bApplied Energistics 2&r autocrafting. If you are new to this mod, it is highly recommended that you watch a video or &3&lread the built-in guide&r&r. Just remember that channels are disabled by default in this pack."
 				""
 				"By now, you should have &6ME Pattern Providers, &6Molecular Assemblers, Crafting Units, Patterns&r and a &6Pattern Encoding Terminal&r. "
 				"{@pagebreak}"

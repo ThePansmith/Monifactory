@@ -1638,7 +1638,7 @@
 				""
 				"You'll most likely want to locate your power quite near to the EBF. It is very power hungry, and if it cannot get enough energy, progress on the current item smelting will start to regress. Be careful to ensure the EBF has enough power, and keep a Soft Hammer nearby to pause it by tapping the controller if you run out of power."
 				""
-				"&2In GTCEu, all hatches except Maintenance can be shared between Multiblocks!"
+				"&2In GTCEu, all hatches except Maintenance and Parallel Control can be shared between Multiblocks!"
 			]
 			icon: "gtceu:electric_blast_furnace"
 			id: "1BC6DDC2D50F9C46"
@@ -1896,7 +1896,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&2Certain multiblocks in CEu will require a Maintenance Hatch and/or Muffler Hatch. These cannot be shared between multiblocks. If you knew Maintenance in GT5u, fret not - Maintenance mechanics are far less punishing in CEu."
+				"&2Certain multiblocks in CEu will require a Maintenance Hatch and/or Muffler Hatch. &cThese cannot be shared between multiblocks. &2If you knew Maintenance in GT5u, fret not - Maintenance mechanics are far less punishing in CEu."
 				""
 				"&r- &aMuffler&r: This hatch must be &cunobstructed&r so it can output its beautiful smoke particles. When a recipe is performed, there is a small chance for the &3Muffler Hatch&r to give bonus items, typically tiny Dusts of Ash. It voids excess when full, so do not worry about it stopping machines from running."
 				"{@pagebreak}"
