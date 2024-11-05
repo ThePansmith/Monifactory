@@ -647,63 +647,6 @@ ServerEvents.recipes(event => {
         });
     }); 
 
-    /*
-    //LUV Components
-    event.remove({ id: 'gtceu:assembly_line/electric_motor_luv'})
-    event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_motor_luv')
-        .itemInputs('gtceu:long_magnetic_samarium_rod','2x gtceu:long_hsss_rod','2x gtceu:hsss_ring','4x gtceu:hsss_round','64x gtceu:fine_ruridit_wire','2x gtceu:niobium_titanium_single_cable')
-        .inputFluids('gtceu:soldering_alloy 144','gtceu:lubricant 250')
-        .itemOutputs('gtceu:luv_electric_motor')
-        .duration(600)
-        .EUt(6000)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_electric_motor').EUt(480).duration(4800))
-    
-    event.remove({ id: 'gtceu:assembly_line/electric_pump_luv'})
-    event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_pump_luv')
-        .itemInputs('1x gtceu:luv_electric_motor','1x gtceu:niobium_titanium_small_fluid_pipe','2x gtceu:hsss_plate','8x gtceu:hsss_screw','4x gtceu:silicone_rubber_ring','1x gtceu:hsss_rotor','2x gtceu:niobium_titanium_single_cable')
-        .inputFluids('gtceu:soldering_alloy 144','gtceu:lubricant 250')
-        .itemOutputs('gtceu:luv_electric_pump')
-        . duration(600)
-        .EUt(6000)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_electric_pump').EUt(480).duration(4800))
-   
-    event.remove({ id: 'gtceu:assembly_line/conveyor_module_luv'})
-    event.recipes.gtceu.assembly_line('gtceu:assembly_line/conveyor_module_luv')
-        .itemInputs('2x gtceu:luv_electric_motor','2x gtceu:hsss_plate','4x gtceu:hsss_ring','16x gtceu:hsss_round','4x gtceu:hsss_screw','2x gtceu:niobium_titanium_single_cable')
-        .inputFluids('gtceu:soldering_alloy 144','gtceu:lubricant 250','gtceu:styrene_butadiene_rubber 1152')
-        .itemOutputs('gtceu:luv_conveyor_module')
-        .duration(600)
-        .EUt(6000)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_conveyor_module').EUt(480).duration(4800))
-
-    
-    event.remove({ id: 'gtceu:assembly_line/electric_piston_luv'})
-    event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_piston_luv')
-            .itemInputs('1x gtceu:luv_electric_motor','4x gtceu:hsss_plate','2x gtceu:hsss_ring','16x gtceu:hsss_round','4x gtceu:hsss_rod','1x gtceu:hsss_gear','2x gtceu:small_hsss_gear','2x gtceu:niobium_titanium_single_cable')
-            .inputFluids('gtceu:soldering_alloy 144','gtceu:lubricant 250')
-            .itemOutputs('gtceu:luv_electric_piston')
-            .duration(600)
-            .EUt(6000)
-            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_electric_piston').EUt(480).duration(4800))
-        
-    event.remove({ id: 'gtceu:assembly_line/dynamo_hatch_luv'})
-    event.recipes.gtceu.assembly_line('gtceu:assembly_line/dynamo_hatch_luv')
-            .itemInputs('1x gtceu:luv_machine_hull','4x gtceu:niobium_titanium_spring','2x gtceu:hpic_chip','1x #gtceu:circuits/luv','2x gtceu:luv_voltage_coil')
-            .inputFluids('gtceu:sodium_potassium 6000','gtceu:soldering_alloy 720')
-            .itemOutputs('gtceu:luv_energy_output_hatch')
-            .duration(400)
-            .EUt(30720)
-            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_energy_output_hatch').EUt(480).duration(4800))
-
-    event.remove({ id: 'gtceu:assembly_line/robot_arm_luv'})
-    event.recipes.gtceu.assembly_line('gtceu:assembly_line/robot_arm_luv')
-            .itemInputs('4x gtceu:long_hsss_rod','1x gtceu:hsss_gear','3x gtceu:small_hsss_gear','2x gtceu:luv_electric_motor','1x gtceu:luv_electric_piston','1x #gtceu:circuits/luv','2x #gtceu:circuits/iv','4x #gtceu:circuits/ev','4x gtceu:niobium_titanium_single_cable')
-            .inputFluids('gtceu:soldering_alloy 576','gtceu:lubricant 250')
-            .itemOutputs('gtceu:luv_robot_arm')
-            .duration(600)
-            .EUt(6000)
-            ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_robot_arm').EUt(480).duration(4800))
-    */
     event.remove({ id: 'gtceu:shaped/mega_blast_furnace'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_blast_furnace')
         .itemInputs('gtceu:electric_blast_furnace','4x #gtceu:circuits/zpm','4x gtceu:luv_field_generator','4x gtceu:naquadah_alloy_spring','4x gtceu:dense_naquadah_alloy_plate','4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
@@ -777,7 +720,6 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/iv"
     })
     
-    /*
     //ZPM Field Gen
     event.remove({ id: 'gtceu:assembly_line/field_generator_zpm'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/zpm_field_generator')
@@ -787,7 +729,6 @@ ServerEvents.recipes(event => {
     .duration(600)
     .EUt(24000)
     .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
-    */
 
     // Dragon Scaleline
     event.recipes.gtceu.macerator('dragon_scale_crushing')

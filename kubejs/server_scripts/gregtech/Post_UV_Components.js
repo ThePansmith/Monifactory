@@ -159,12 +159,6 @@ ServerEvents.recipes(event => {
 
 
     })
-
-
-    // UEV/UIV/MAX Hulls and Casing
-    //event.remove({ id: 'gtceu:shaped/uev_machine_hull'})
-    //event.remove({ id: 'gtceu:shaped/uiv_machine_hull'})
-    //event.remove({ id: 'gtceu:shaped/opv_machine_hull'})
     
     event.recipes.gtceu.assembler('uev_hull')
         .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
