@@ -19,7 +19,7 @@
 				""
 				"Putting Pristine matter into a &3Loot Fabricator&r will allow you to obtain one of various items related to that mob."
 				""
-				"Much like &3Simulation Chambers&r, Loot Fabricators are &asided&r, accepting input from &athe top side&r and allowing extraction from &aall sides except the top&r."
+				"Unlike &3Simulation Chambers&r, Loot Fabricators are &asided&r, accepting input from &athe top side&r and allowing extraction from &aall sides except the top&r."
 			]
 			hide_until_deps_visible: true
 			id: "0006FEA1843FEA0A"
