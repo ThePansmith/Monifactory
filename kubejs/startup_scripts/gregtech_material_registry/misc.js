@@ -31,6 +31,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('2x lithium')
         .addOreByproducts('lithium', 'cobalt', 'platinum')
 
+    event.create('calcium_perchlorate')
+        .dust()
+        .color(0xf9fbda)
+        .components('1x calcium', '2x chlorine', '8x oxygen')
 })
 
 

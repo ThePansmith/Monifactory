@@ -111,21 +111,6 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(30)
 
-
-    //SPACE STUFF
-
-    event.recipes.gtceu.centrifuge('moon_deuterium')
-        .itemInputs('kubejs:moon_dust')
-        .chancedOutput('gtceu:small_stone_dust', 2500, 0)
-        .chancedOutput('gtceu:small_aluminium_dust', 1700, 20)
-        .chancedOutput('gtceu:small_quicklime_dust', 950, 15)
-        .chancedOutput('gtceu:small_glass_dust', 700, 30)
-        .chancedOutput('gtceu:small_pyrolusite_dust', 700, 10)
-        .chancedOutput('gtceu:small_iron_dust', 550, 5)
-        .outputFluids(Fluid.of('gtceu:deuterium', 100))
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
-
     event.shaped(
         'kubejs:quantum_flux', [
             ' B ',
@@ -134,18 +119,6 @@ ServerEvents.recipes(event => {
         ], {
             A: 'enderio:pulsating_crystal',
             B: 'hostilenetworks:end_prediction'
-        }
-    )
-
-
-    event.shaped(
-        'kubejs:quantum_flux', [
-            ' B ',
-            'BAB',
-            ' B '
-        ], {
-            A: 'minecraft:diamond',
-            B: 'kubejs:moon_dust'
         }
     )
 
