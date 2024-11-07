@@ -39,7 +39,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("omnium"))
         .color(0xffffff).iconSet('omnium')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME)
-        .cableProperties(2147483647, 64, 0, true)
+        .cableProperties(GTValues.V[GTValues.UEV], 64, 8, false)
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
     event.create('omnic_acid')
@@ -55,14 +55,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('shiny')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
-        .cableProperties(2097152, 8, 0, true)
+        .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
     
     event.create('activated_netherite')
         .ingot()
         .element(GTElements.get("activated_netherite"))
         .color(0x4C484C)
         .iconSet('dull')
-        .cableProperties(8388608, 16, 0, true)
+        .cableProperties(GTValues.V[GTValues.UEV], 16, 0, true)
         .fluidPipeProperties(120000, 96000, true, true, true, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
@@ -104,5 +104,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('monium')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING)
-        .cableProperties(2147483647, 134217727, 0, true)
+        .cableProperties(GTValues.V[GTValues.MAX], 134217727, 0, true)
 })

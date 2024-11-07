@@ -20,23 +20,23 @@ GTCEuStartupEvents.craftingComponents(event => {
     wireElectricMap[GTValues.UIV] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.get('monium'));
     event.modify(CraftingComponent.WIRE_ELECTRIC, wireElectricMap)
 
-    //Netherite & Holmium for wires/cables
+    //Omnium & Holmium for wires/cables
     let wireCableComponentPrefixes = [
-        [TagPrefix.wireGtQuadruple, CraftingComponent.WIRE_QUAD],
-        [TagPrefix.wireGtOctal, CraftingComponent.WIRE_OCT],
-        [TagPrefix.wireGtHex, CraftingComponent.WIRE_HEX],
-        [TagPrefix.wireGtSingle, CraftingComponent.CABLE],
-        [TagPrefix.wireGtDouble, CraftingComponent.CABLE_DOUBLE],
-        [TagPrefix.wireGtQuadruple, CraftingComponent.CABLE_QUAD],
-        [TagPrefix.wireGtOctal, CraftingComponent.CABLE_OCT],
-        //[TagPrefix.wireGtHex, CraftingComponent.CABLE_HEX] // Seems borked? Causes crashes when uncommented
+        [TagPrefix.wireGtQuadruple, TagPrefix.wireGtQuadruple, CraftingComponent.WIRE_QUAD],
+        [TagPrefix.wireGtOctal, TagPrefix.wireGtOctal, CraftingComponent.WIRE_OCT],
+        [TagPrefix.wireGtHex, TagPrefix.wireGtHex, CraftingComponent.WIRE_HEX],
+        [TagPrefix.cableGtSingle, TagPrefix.wireGtSingle, CraftingComponent.CABLE],
+        [TagPrefix.cableGtDouble, TagPrefix.wireGtDouble, CraftingComponent.CABLE_DOUBLE],
+        [TagPrefix.cableGtQuadruple, TagPrefix.wireGtQuadruple, CraftingComponent.CABLE_QUAD],
+        [TagPrefix.cableGtOctal, TagPrefix.wireGtOctal, CraftingComponent.CABLE_OCT],
+        //[TagPrefix.wireGtHex, TagPrefix.cableGtHex, CraftingComponent.CABLE_HEX] // Seems borked? Causes crashes when uncommented
     ]
 
     wireCableComponentPrefixes.forEach(prefixComponentPair => {
         let wireMap = {};
-        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('activated_netherite'));
-        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[0], GTMaterials.Holmium);
-        event.modify(prefixComponentPair[1], wireMap)
+        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('omnium'));
+        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[1], GTMaterials.Holmium);
+        event.modify(prefixComponentPair[2], wireMap)
     })
 
     //Netherite, Holmium, and Monium for tier up wires/cables
