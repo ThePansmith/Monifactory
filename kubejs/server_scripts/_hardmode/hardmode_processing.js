@@ -717,7 +717,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor('ultraacidic_residue_to_dusty_helium')
         .inputFluids('gtceu:xenon 1000', 'gtceu:oxygen 4000', 'gtceu:ultraacidic_residue 2000')
         .notConsumable('kubejs:abyssal_energy_core')
-        .itemOutputs('2x gtceu:europium_dust', 'gtceu:kaemanite_dust', 'gtceu:small_osmiridiumyes_dust')
+        .itemOutputs('2x gtceu:europium_dust', 'gtceu:trinium_sulfide_dust', 'gtceu:small_rarest_metal_mixture_dust')
         .outputFluids('gtceu:xenic_acid 1000', 'gtceu:dusty_helium 2000')
         .duration(1000).EUt(1920)
 

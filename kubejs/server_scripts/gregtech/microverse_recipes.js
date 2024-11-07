@@ -118,8 +118,7 @@ ServerEvents.recipes(event => {
             '64x gtceu:netherrack_almandine_ore', 
             '64x gtceu:netherrack_lepidolite_ore',
             '64x gtceu:netherrack_cobaltite_ore',
-            '16x gtceu:netherrack_laurite_ore',
-            '8x gtceu:netherrack_cuprorhodsite_ore',
+            '24x gtceu:inert_metal_mixture_dust',
         )
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 20000))
         .duration(700)
@@ -186,9 +185,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', '4x kubejs:wither_realm_data', '64x kubejs:petrotheum_dust')
         .itemOutputs(
-            '64x gtceu:iridosmineyes_ore', 
-            '64x gtceu:iridosmineyes_ore', 
-            '16x gtceu:osmiridiumyes_ore')
+            '64x gtceu:rarest_metal_mixture_dust',
+            '64x gtceu:rarest_metal_mixture_dust', 
+            '64x gtceu:rarest_metal_mixture_dust')
         .duration(800)
         .EUt(3750)
 
@@ -224,7 +223,7 @@ ServerEvents.recipes(event => {
 				'64x gtceu:naquadah_ore', 
 				'64x gtceu:naquadah_ore', 
 				'64x gtceu:naquadah_ore', 
-				'48x gtceu:kaemanite_ore'
+				'48x gtceu:trinium_sulfide_dust'
 			)
 			.duration(1000)
 			.EUt(7500)
@@ -238,7 +237,7 @@ ServerEvents.recipes(event => {
 				'64x gtceu:snowchestite_ore', 
 				'64x gtceu:snowchestite_ore',
 				'64x gtceu:snowchestite_ore',				
-				'48x gtceu:kaemanite_ore'
+				'48x gtceu:trinium_sulfide_dust'
 			)
 			.duration(1000)
 			.EUt(7500)	
@@ -254,7 +253,7 @@ ServerEvents.recipes(event => {
             '64x gtceu:sphalerite_ore', 
             '64x gtceu:monazite_ore', 
             '64x gtceu:ender_pearl_block', 
-            '16x gtceu:osmiridiumyes_ore', 
+            '16x gtceu:rarest_metal_mixture_dust', 
             '64x gtceu:boron_dust', 
             '64x gtceu:molybdenite_ore', 
             '64x gtceu:beryllium_ore', 
@@ -270,11 +269,11 @@ ServerEvents.recipes(event => {
             '64x gtceu:uraninite_ore', 
             '64x gtceu:uraninite_ore', 
             '64x gtceu:uraninite_ore', 
-            '64x gtceu:osmiridiumyes_ore', 
-            '64x gtceu:osmiridiumyes_ore', 
-            '64x gtceu:osmiridiumyes_ore', 
-            '64x gtceu:iridosmineyes_ore', 
-            '64x gtceu:iridosmineyes_ore'
+            '64x gtceu:rarest_metal_mixture_dust', 
+            '64x gtceu:rarest_metal_mixture_dust', 
+            '64x gtceu:rarest_metal_mixture_dust', 
+            '64x gtceu:rarest_metal_mixture_dust', 
+            '64x gtceu:rarest_metal_mixture_dust'
         )
         .duration(1250)
         .EUt(18750)
