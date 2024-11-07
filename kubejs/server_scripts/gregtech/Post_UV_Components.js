@@ -472,7 +472,7 @@ ServerEvents.recipes(event => {
 
     // Pumps
     event.recipes.gtceu.assembly_line('uhv_pump')
-        .itemInputs('gtceu:uhv_electric_motor', 'gtceu:crystal_matrix_huge_fluid_pipe', '2x gtceu:actinium_plate', '8x gtceu:actinium_screw', '16x gtceu:silicone_rubber_ring', '24x gtceu:actinium_ring', 'gtceu:crystal_matrix_rotor', '2x gtceu:europium_double_cable')
+        .itemInputs('gtceu:uhv_electric_motor', 'gtceu:neutronium_huge_fluid_pipe', '2x gtceu:actinium_plate', '8x gtceu:actinium_screw', '16x gtceu:silicone_rubber_ring', '24x gtceu:actinium_ring', 'gtceu:neutronium_rotor', '2x gtceu:europium_double_cable')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 2000', 'gtceu:crystal_matrix 1152', 'gtceu:naquadria 576')
         .itemOutputs('gtceu:uhv_electric_pump')
         .duration(600)
