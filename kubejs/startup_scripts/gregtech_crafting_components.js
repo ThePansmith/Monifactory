@@ -106,9 +106,9 @@ GTCEuStartupEvents.craftingComponents(event => {
         event.modify(prefixComponentPair[1], heaterMap)
     })
 
-    //TODO: Coil electric | small springs (for transformers)
+    //TODO: Coil electric | small springs
 
-    // Magnetic Rods (Use Samarium for UV+, two tiers after Nomi)
+    // Magnetic Rods (Uses Samarium for UV+, two tiers after the same for Nomi)
     let magneticRodMap = {};
     magneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
     magneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
@@ -131,6 +131,12 @@ GTCEuStartupEvents.craftingComponents(event => {
     reactorPipeMap[GTValues.UEV] = UnificationEntry(TagPrefix.pipeLargeFluid, GTMaterials.Polybenzimidazole)
     reactorPipeMap[GTValues.UIV] = UnificationEntry(TagPrefix.pipeLargeFluid, GTMaterials.Polybenzimidazole)
     event.modifyUnificationEntry(CraftingComponent.PIPE_REACTOR, reactorPipeMap)
+
+    //PIC ingredient
+    let powerComponentMap = {};
+    powerComponentMap[GTValues.UEV] = Item.of('kubejs:uxpic_chip')
+    powerComponentMap[GTValues.UIV] = Item.of('kubejs:uxpic_chip')
+    event.modifyUnificationEntry(CraftingComponent.POWER_COMPONENT, powerComponentMap)
 
     // Frame
     let frameMap = {};

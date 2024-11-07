@@ -64,14 +64,14 @@ ServerEvents.recipes(event => {
 
 
             event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_output_hatch`)
-                .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_spring`, `2x gtceu:uhpic_chip`, `#gtceu:circuits/${tier}`, `2x gtceu:${mat1}_double_wire`)
+                .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_spring`, `2x kubejs:uxpic_chip`, `#gtceu:circuits/${tier}`, `2x gtceu:${mat1}_double_wire`)
                 .itemOutputs(`gtceu:${tier}_energy_output_hatch`)
                 .inputFluids('gtceu:crystal_matrix 11520', 'gtceu:soldering_alloy 5760')
                 .duration(1000)
                 .EUt(eut)
 
             event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_input_hatch`)
-                .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_single_wire`, '16x gtceu:uhpic_chip', `#gtceu:circuits/${tier}`, `2x gtceu:${mat2}_double_wire`)
+                .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_single_wire`, '16x kubejs:uxpic_chip', `#gtceu:circuits/${tier}`, `2x gtceu:${mat2}_double_wire`)
                 .itemOutputs(`gtceu:${tier}_energy_input_hatch`)
                 .inputFluids('gtceu:sodium_potassium 12000', 'gtceu:omnium 1152', 'gtceu:soldering_alloy 576')
                 .duration(100)
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
                 A: `gtceu:${mat1}_single_wire`,
                 B: `gtceu:${mat2}_single_wire`,
                 H: `gtceu:${tier}_machine_hull`,
-                W: 'gtceu:uhpic_chip'
+                W: 'kubejs:uxpic_chip'
             })
 
             event.shaped(Item.of(`gtceu:${tier}_transformer_2a`), [
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
                 A: `gtceu:${mat1}_double_wire`,
                 B: `gtceu:${mat2}_double_wire`,
                 H: `gtceu:${tier}_machine_hull`,
-                W: 'gtceu:uhpic_chip'
+                W: 'kubejs:uxpic_chip'
             })
 
             event.shaped(Item.of(`gtceu:${tier}_transformer_4a`), [
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
                 A: `gtceu:${mat1}_quadruple_wire`,
                 B: `gtceu:${mat2}_quadruple_wire`,
                 H: `gtceu:${tier}_machine_hull`,
-                W: 'gtceu:uhpic_chip'
+                W: 'kubejs:uxpic_chip'
             })
         })
 

@@ -370,6 +370,8 @@ StartupEvents.registry('item', event => {
 
 
     // Post-Tank Wafer items
+    event.create('uxpic_wafer').texture('kubejs:item/uxpic/uxpic_wafer').displayName('UXPIC Wafer')
+    event.create('uxpic_chip').texture('kubejs:item/uxpic/uxpic_chip').displayName('UXPIC Chip')
     event.create('universe_boule').texture('kubejs:item/universalwafer/universal_boule').displayName('Universe-doped Monocrystalline Silicon Boule')
     event.create('universe_wafer').texture('kubejs:item/universalwafer/universal_wafer').displayName('Universe-doped Wafer')
     event.create('unactivated_multidimensional_cpu_wafer').texture('kubejs:item/multidimensionalcpu/unactivated_multidimensional_cpu_wafer').displayName('Unactivated Multidimensional CPU Wafer')

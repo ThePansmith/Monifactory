@@ -131,6 +131,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
     tooltip.add('gtceu:ender_fluid_link_cover', '§4Not yet implemented.')
     tooltip.add('gtceu:nightvision_goggles', '§7Toggle with the [Armor Mode Switch] key.')
+    tooltip.add('kubejs:uxpic_wafer', '§7Raw Ultra Extreme Power Circuit')
+    tooltip.add('kubejs:uxpic_chip', '§7Ultra Extreme Power IC')
 
     // GCYR
     tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
