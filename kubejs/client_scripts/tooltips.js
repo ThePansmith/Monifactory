@@ -28,6 +28,9 @@ ItemEvents.tooltip(tooltip => {
     // Endgame Items
     tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
 
+    // Questbook
+    tooltip.addAdvanced(`ftbquests:book`, (item, adv, text) => {text.add(2, Text.gray('The quest window can also be opened with a keybind.'))})
+
     // DML Data Model
     tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
     tooltip.add('hostilenetworks:data_model', '§7Upgrades when used in the §3Simulation Chamber')

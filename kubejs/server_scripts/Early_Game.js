@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(8)
 
-    
+
     //Resin Board stuff
     event.recipes.gtceu.assembler('kubejs:resin_board_assembler')
         .itemInputs('#minecraft:planks')
@@ -91,11 +91,11 @@ ServerEvents.recipes(event => {
 
     //phenol
 
-	let steam = new JSONObject()
-	steam.add('amount', 4000)
-	steam.add('value', {tag:'forge:steam'})
+    let steam = new JSONObject()
+    steam.add('amount', 4000)
+    steam.add('value', { tag: 'forge:steam' })
 
-		//JSON object and FluidIngredientJS are loaded in server script _initial.js
+    //JSON object and FluidIngredientJS are loaded in server script _initial.js
     event.recipes.gtceu.pyrolyse_oven('phenol_coal')
         .itemInputs('16x minecraft:coal')
         .inputFluids(FluidIngredientJS.of(steam))
@@ -132,18 +132,12 @@ ServerEvents.recipes(event => {
     //Toolbelts
     event.replaceInput({ output: 'toolbelt:pouch' }, 'minecraft:gold_ingot', 'gtceu:steel_ingot')
 
-	// early canning (using this explicitly as it has types)
-	// lithium, cadmium, sodium
-	event.recipes.minecraft.crafting_shapeless('gtceu:lv_lithium_battery', [
-		'gtceu:lv_battery_hull', '2x #forge:dusts/lithium'
-	]).id('moni:lv_lithium_battery')
-	event.recipes.minecraft.crafting_shapeless('gtceu:lv_cadmium_battery', [
-		'gtceu:lv_battery_hull', '2x #forge:dusts/cadmium'
-	]).id('moni:lv_cadmium_battery')
-	event.recipes.minecraft.crafting_shapeless('gtceu:lv_sodium_battery', [
-		'gtceu:lv_battery_hull', '2x #forge:dusts/sodium'
-	]).id('moni:lv_sodium_battery')
+    // early canning (using this explicitly as it has types)
+    // lithium, cadmium, sodium
+    event.recipes.minecraft.crafting_shapeless('gtceu:lv_lithium_battery', ['gtceu:lv_battery_hull', '2x #forge:dusts/lithium']).id('moni:lv_lithium_battery')
+    event.recipes.minecraft.crafting_shapeless('gtceu:lv_cadmium_battery', ['gtceu:lv_battery_hull', '2x #forge:dusts/cadmium']).id('moni:lv_cadmium_battery')
+    event.recipes.minecraft.crafting_shapeless('gtceu:lv_sodium_battery', ['gtceu:lv_battery_hull', '2x #forge:dusts/sodium']).id('moni:lv_sodium_battery')
 
     //Battery Alloy Dust
-	event.shapeless("4x gtceu:battery_alloy_dust", ["4x gtceu:lead_dust", "gtceu:antimony_dust"])
+    event.shapeless("4x gtceu:battery_alloy_dust", ["4x gtceu:lead_dust", "gtceu:antimony_dust"])
 })
