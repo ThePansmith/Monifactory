@@ -96,6 +96,10 @@ ServerEvents.recipes(event => {
         .duration(700)
         .EUt(2000)
 
+    //Platline is different in Hard and Expert, so we must change the midproduct that gives Ruthenium
+    var ruthenium_source;
+    if(isNormalMode) ruthenium_source = '24x gtceu:inert_metal_mixture_dust';
+    else ruthenium_source = '24x gtceu:sodium_ruthenate_dust'
 
     event.recipes.gtceu.basic_microverse('kubejs:t_three_one')
         .itemInputs('kubejs:microminer_t3', '4x kubejs:quantum_flux', 'gtceu:mv_super_chest')
@@ -118,7 +122,7 @@ ServerEvents.recipes(event => {
             '64x gtceu:netherrack_almandine_ore', 
             '64x gtceu:netherrack_lepidolite_ore',
             '64x gtceu:netherrack_cobaltite_ore',
-            '24x gtceu:inert_metal_mixture_dust',
+            ruthenium_source,
         )
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 20000))
         .duration(700)
