@@ -1,3 +1,4 @@
+// Reverts the GTM 1.4.1 hatch recipe nerf for NM and HM
 ServerEvents.recipes(event => {
     if (!isExpertMode) {
         event.remove({ id: /item_import_bus_/})
