@@ -180,7 +180,7 @@
 				""
 				"This quest is repeatable and gives you a free cake to the &2Overworld&r or &7Void World&r every hour. You can also refill your cakes with the items indicated in their tooltips."
 				""
-				"&cDon't forget to have a way to get back!&r If you don't, click on the Emergency Items heart on the right side of the quest book screen."
+				"&cDon't forget to have a way to get back!&r If you do forget, click on the Emergency Items heart on the right side of the quest book screen."
 			]
 			disable_toast: true
 			icon: "telepastries:overworld_cake"
@@ -345,7 +345,7 @@
 			description: [
 				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at your base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
-				"&bSophisticated Storage&r in particular is great for cheap storage. It's able to store 3 barrels worth of items at its lowest tier (which costs only a bit of iron to craft), and can be upgraded to hold even more items."
+				"&bSophisticated Storage&r in particular is great for cheap storage. It's able to store 3 barrels' worth of items at its lowest tier (which costs only a bit of iron to craft), and can be upgraded to hold even more items."
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
@@ -658,7 +658,7 @@
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
-			description: ["It smelts items at a blazing quick &a5 ticks&r. At this point, you might as well just make a &3Multi Smelter&r."]
+			description: ["It smelts items at a blazing quick &a5 ticks&r each. At this point, you might as well just make a &3Multi Smelter&r."]
 			hide_until_deps_complete: true
 			id: "69E77BD01CFF65EB"
 			rewards: [{
@@ -952,7 +952,7 @@
 			description: [
 				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
 				""
-				"Put a damaged tool and some material it's made of inside. For example, you'll need to put &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the mortar and the plunger."
+				"Put a damaged tool and some material it's made of inside. For example, you'll need to use &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the Mortar and the Plunger."
 				""
 				"Also, you can now repair your free &6Mining Hammers&r with some &6Diamonds&r!"
 			]
@@ -1998,7 +1998,7 @@
 				""
 				"There are lots of ways to upgrade and improve your &aGrappling Hook&r, so play around with it."
 				""
-				"Open your inventory and look for the &3Curios&r button, click it to reveal the additional curio slots and put the hook in the hook-shaped slot."
+				"Open your inventory and look for the &3Curios&r button, click it to reveal the additional curio slots, and put the hook in the hook-shaped slot."
 				""
 				"The default key to fire a hook is &6C&r, however if you want to change it, simply search for &5category:ReHooked&r in the key binds screen and change it to whatever you want."
 				""
