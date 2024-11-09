@@ -12,7 +12,10 @@
 !/.github
 !.editorconfig
 !/pack-mode-switcher*
-
+!/CONTRIBUTING.md
+!/FAQ.md
+!/KNOWN-ISSUES.md
+!/config/lostcities/profiles/monidefault.json
 !/mods/systeams*
 !/mods/ExtendedCrafting*
 
@@ -54,6 +57,7 @@ config/embeddium++.toml
 config/emi.css
 config\darkmodeeverywhereshaders.json
 config\darkmodeeverywhereshaders.toml
+config/ichunutil/themes
 /config/**/*client.*
 !/config/**/darkmodeeverywhere-client.toml
 
@@ -100,3 +104,7 @@ kubejs/assets/gtceu/textures/item/material_sets/infinity/infinity_plate.xcf
 config/packmode.json
 config/gtceu.yaml
 config/darkmodeeverywhereshaders.json
+
+#Don't ignore the Create client config so we can remove the Main Menu config button
+#it gets in the way of the beautiful FancyMenu
+!/config/create-client.toml

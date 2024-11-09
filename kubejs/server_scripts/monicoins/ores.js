@@ -273,15 +273,6 @@ ServerEvents.recipes(event => {
     }).noMirror().noShrink()
 
     event.shaped(
-        Item.of('minecraft:sheep_spawn_egg', 2), [
-        'AAA',
-        'A  ',
-        ' A '
-    ], {
-        A: 'kubejs:moni_nickel'
-    }).noMirror().noShrink()
-
-    event.shaped(
         Item.of('gtceu:sphalerite_ore', 32), [
         'AA ',
         '   ',
@@ -691,6 +682,16 @@ ServerEvents.recipes(event => {
     ], {
         A: 'kubejs:moni_nickel'
     }).noMirror().noShrink()
+
+    event.shaped(
+        Item.of('gtceu:gypsum_ore', 32), [
+        '   ',
+        '  A',
+        'A  '
+    ], {
+        A: 'kubejs:moni_nickel'
+    }).noMirror().noShrink()
+
     //moniQUARTER RECIPES
     event.shaped(
         Item.of('gtceu:gold_ore', 32), [
@@ -728,32 +729,7 @@ ServerEvents.recipes(event => {
         A: 'kubejs:moni_quarter'
     }).noMirror().noShrink()
 
-    event.shaped(
-        Item.of('minecraft:chicken_spawn_egg', 2), [
-        ' A ',
-        '   ',
-        '  A'
-    ], {
-        A: 'kubejs:moni_quarter'
-    }).noMirror().noShrink()
-
-    event.shaped(
-        Item.of('minecraft:cow_spawn_egg', 2), [
-        '   ',
-        'AA ',
-        '   '
-    ], {
-        A: 'kubejs:moni_quarter'
-    }).noMirror().noShrink()
-
-    event.shaped(
-        Item.of('minecraft:pig_spawn_egg', 2), [
-        'A  ',
-        '  A',
-        '   '
-    ], {
-        A: 'kubejs:moni_quarter'
-    }).noMirror().noShrink()
+ 
 
     event.shaped(
         Item.of('gtceu:ilmenite_ore', 32), [

@@ -99,11 +99,10 @@ ServerEvents.recipes(event => {
     )
 
     // T2-6
-
     var cellCrafting = [
         [2, 'enderio:photovoltaic_plate', 'gtceu:battery_alloy_plate'],
         [3, 'minecraft:ender_pearl' /* Temporary, TODO: add lens as type of ender pearl material */, 'gtceu:annealed_copper_plate'],
-        [4, 'gtceu:light_blue_glass_lens', 'kubejs:pulsating_mesh'],
+        [4, 'gtceu:light_blue_glass_lens', 'gtceu:vibrant_alloy_plate'],
         [5, 'gtceu:sunnarium_plate', 'gtceu:sunnarium_plate'],
         [6, 'gtceu:enriched_sunnarium_plate', 'gtceu:enriched_sunnarium_plate']
     ]
@@ -121,4 +120,51 @@ ServerEvents.recipes(event => {
             }
         )
     })
+
+    //Sunnarium
+    event.shaped(
+        '3x gtceu:sunnarium_dust', [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'kubejs:stabilized_plutonium',
+            B: 'kubejs:stabilized_curium',
+            C: 'minecraft:glowstone'
+        }
+    )
+    event.recipes.gtceu.mixer('kubejs:sunnarium_dust_mixer')
+        .inputFluids('gtceu:plutonium 144', 'gtceu:curium 72')
+        .itemInputs('minecraft:glowstone_dust')
+        .itemOutputs('2x gtceu:sunnarium_dust')
+        .duration(4000)
+        .EUt(4000);
+    event.recipes.gtceu.mixer('kubejs:sunnarium_dust_mixer_alt')
+        .inputFluids('gtceu:plutonium_241 144', 'gtceu:curium 72')
+        .itemInputs('minecraft:glowstone_dust')
+        .itemOutputs('2x gtceu:sunnarium_dust')
+        .duration(4000)
+        .EUt(4000);
+    event.remove({ id: 'gtceu:macerator/macerate_sunnarium_plate'})
+
+    //Enriched Sunnarium
+    event.shaped(
+        '4x gtceu:enriched_sunnarium_dust', [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'kubejs:stabilized_neptunium',
+            B: 'kubejs:stabilized_americium',
+            C: 'gtceu:sunnarium_dust'
+        }
+    )
+    event.recipes.gtceu.mixer('kubejs:enriched_sunnarium_dust_mixer')
+        .inputFluids('gtceu:neptunium 288', 'gtceu:americium 144')
+        .itemInputs('gtceu:sunnarium_dust')
+        .itemOutputs('6x gtceu:enriched_sunnarium_dust')
+        .duration(2000)
+        .EUt(16000);
+    event.remove({ id: 'gtceu:macerator/macerate_enriched_sunnarium_plate'})
+    event.remove({ id: 'gtceu:macerator/macerate_dense_enriched_sunnarium_plate'})
 })

@@ -1,3 +1,0 @@
-StartupEvents.registry('item', event => {
-    //Placeholders go here...
-})

@@ -3,4 +3,5 @@
 
 {
     force_load_mode: "always"
+    max_force_loaded_chunks: 100
 }

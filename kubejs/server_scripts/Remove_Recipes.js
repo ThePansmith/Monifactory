@@ -4,16 +4,16 @@ ServerEvents.recipes(event => {
     // Snad
     event.remove('snad:snadrecipe')
     event.remove('snad:red_snad')
+    
     //Extended Crafting
     event.remove({ output: [Item.of('extendedcrafting:recipe_maker', '{Shapeless:0b,Type:"CraftTweaker"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:tin"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:copper"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:iron"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:coal"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:steel"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:invar"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:silver"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:platinum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lead"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:glowstone"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lapis_lazuli"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:electrum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:redstone"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:diamond"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:nickel"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:gold"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:emerald"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:bronze"}')] })
-    event.remove({ output: ['extendedcrafting:enhanced_ender_catalyst', 'extendedcrafting:enhanced_redstone_catalyst', 'extendedcrafting:enhanced_redstone_component', 'extendedcrafting:enhanced_ender_component', 'extendedcrafting:ender_component', 'extendedcrafting:black_iron_block', 'extendedcrafting:black_iron_ingot', 'extendedcrafting:redstone_ingot_block', 'extendedcrafting:redstone_ingot', 'extendedcrafting:enhanced_redstone_ingot_block', 'extendedcrafting:enhanced_redstone_ingot', 'extendedcrafting:ender_ingot_block', 'extendedcrafting:ender_ingot', 'extendedcrafting:enhanced_ender_ingot_block', 'extendedcrafting:enhanced_ender_ingot', 'extendedcrafting:ender_star_block', 'extendedcrafting:ender_star', 'extendedcrafting:flux_star_block', 'extendedcrafting:flux_star', 'extendedcrafting:frame', 'extendedcrafting:basic_auto_table', 'extendedcrafting:compressor', 'extendedcrafting:ender_alternator', 'extendedcrafting:ender_crafter', 'extendedcrafting:auto_ender_crafter', 'extendedcrafting:flux_alternator', 'extendedcrafting:flux_crafter', 'extendedcrafting:auto_flux_crafter', 'extendedcrafting:black_iron_slate', 'extendedcrafting:ender_catalyst', 'extendedcrafting:pedestal'] })
+    event.remove({ output: ['extendedcrafting:enhanced_ender_catalyst', 'extendedcrafting:enhanced_redstone_catalyst', 'extendedcrafting:enhanced_redstone_component', 'extendedcrafting:enhanced_ender_component', 'extendedcrafting:ender_component', 'extendedcrafting:black_iron_block', 'extendedcrafting:black_iron_ingot', 'extendedcrafting:redstone_ingot_block', 'extendedcrafting:redstone_ingot', 'extendedcrafting:enhanced_redstone_ingot_block', 'extendedcrafting:enhanced_redstone_ingot', 'extendedcrafting:ender_ingot_block', 'extendedcrafting:ender_ingot', 'extendedcrafting:enhanced_ender_ingot_block', 'extendedcrafting:enhanced_ender_ingot', 'extendedcrafting:ender_star_block', 'extendedcrafting:ender_star', 'extendedcrafting:flux_star_block', 'extendedcrafting:flux_star', 'extendedcrafting:frame', 'extendedcrafting:compressor', 'extendedcrafting:ender_alternator', 'extendedcrafting:ender_crafter', 'extendedcrafting:auto_ender_crafter', 'extendedcrafting:flux_alternator', 'extendedcrafting:flux_crafter', 'extendedcrafting:auto_flux_crafter', 'extendedcrafting:black_iron_slate', 'extendedcrafting:ender_catalyst', 'extendedcrafting:pedestal'] })
     event.remove({ output: ['extendedcrafting:black_iron_nugget', 'extendedcrafting:redstone_nugget', 'extendedcrafting:enhanced_redstone_nugget', 'extendedcrafting:ender_nugget', 'extendedcrafting:enhanced_ender_nugget'] })
-    event.remove({ output: ['extendedcrafting:basic_table', 'extendedcrafting:basic_auto_table'] })
-
 
     //GT
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
     event.remove({ id: 'gtceu:smelting/dust_mythril__demagnetize_from_dust' })
+    event.remove({ id: 'gtceu:smelting/smelt_dust_mythril_to_ingot'})
     event.remove({ id: 'gtceu:mixer/rhodium_plated_palladium' })
     
     //FIXME will get fixed
@@ -26,9 +26,12 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'thermal:cured_rubber' })
     event.remove({ input: 'forge:nuggets/netherite'})
     event.remove({ id: 'thermal:gunpowder_4' })
+    event.remove({ id: 'thermal:device_xp_condenser'})
+
     //Redstone arsenal
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_smelting' })
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_blasting' })
+    event.remove({ id: 'redstone_arsenal:materials/flux_ingot_fire_charge' })
     event.remove({ id: 'redstone_arsenal:materials/flux_ingot_fire_charge_from_dust' })
     event.remove({ id: 'redstone_arsenal:storage/flux_metal_block' })
     event.remove({ id: 'redstone_arsenal:storage/flux_ingot_from_block' })
@@ -39,7 +42,6 @@ ServerEvents.recipes(event => {
 
     // Misc broken recipes
     event.remove({ id: 'minecraft:netherite_spikes_smithing' })
-    event.remove({ id: 'storagedrawers:conversion_upgrade' })
     event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/copper'] })
 
     // Angel Ring
@@ -61,9 +63,11 @@ ServerEvents.recipes(event => {
     //Hides useless items
     event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'] })
 
-    //i really hate these kind of mods
+    //Iron Furnace
     event.remove({ output: ["ironfurnaces:million_furnace"] })
     event.remove({ output: ['ironfurnaces:crystal_furnace', 'ironfurnaces:emerald_furnace', 'ironfurnaces:item_spooky', 'ironfurnaces:item_xmas', 'ironfurnaces:item_copy', 'ironfurnaces:item_linker', 'ironfurnaces:rainbow_core', 'ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_coal', 'ironfurnaces:upgrade_iron', 'ironfurnaces:upgrade_gold', 'ironfurnaces:upgrade_diamond', 'ironfurnaces:upgrade_emerald', 'ironfurnaces:upgrade_obsidian', 'ironfurnaces:upgrade_crystal', 'ironfurnaces:upgrade_netherite', 'ironfurnaces:upgrade_copper', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_silver', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_iron2', 'ironfurnaces:upgrade_gold2', 'ironfurnaces:upgrade_silver2', 'ironfurnaces:allthemodium_furnace', 'ironfurnaces:vibranium_furnace', 'ironfurnaces:unobtainium_furnace', 'ironfurnaces:upgrade_allthemodium', 'ironfurnaces:upgrade_vibranium', 'ironfurnaces:upgrade_unobtainium', 'ironfurnaces:item_heater', 'ironfurnaces:augment_blasting', 'ironfurnaces:augment_smoking', 'ironfurnaces:heater', 'ironfurnaces:augment_generator'] })
+
+    event.remove({ output: ['sophisticatedstorage:storage_io', 'sophisticatedstorage:storage_input', 'sophisticatedstorage:storage_output'] });
 
     //dml
     event.remove({ output: ["hostilenetworks:twilight_prediction"] })
@@ -73,7 +77,7 @@ ServerEvents.recipes(event => {
 
     //EnderIO (grinding balls)
     event.remove({ output: ['enderio:soularium_grinding_ball', 'enderio:conductive_alloy_grinding_ball', 'enderio:pulsating_alloy_grinding_ball', 'enderio:redstone_alloy_grinding_ball', 'enderio:energetic_alloy_grinding_ball', 'enderio:vibrant_alloy_grinding_ball', 'enderio:copper_alloy_grinding_ball', 'enderio:dark_steel_grinding_ball', 'enderio:end_steel_grinding_ball'] })
-
+    
     //TelePastries
     event.remove({ output: ['telepastries:lost_city_cake', 'telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'] })
 
@@ -101,19 +105,13 @@ ServerEvents.recipes(event => {
     // Posttank stuff
     event.remove({ id: /gtceu:uxv/ })
     event.remove({ id: /gtceu:opv/ })
-
-    // LaserIO
-    event.remove({ output: ['laserio:card_energy', 'laserio:overclocker_card', 'laserio:overclocker_node', 'laserio:laser_connector_advanced', 'laserio:logic_chip_raw', 'laserio:logic_chip'] })
+    event.remove({ id: 'gtceu:shaped/max_machine_hull'})
 
     //Default Fluxed Electrum recipe (Redstone Arsenal)
     event.remove({ id: 'redstone_arsenal:materials/flux_dust'})
 
     // PEX
     event.remove({ output: ['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'] })
-
-    // Utilitarian
-    event.remove({ id: /utilitarian:.*_soliciting_carpet/ })
-    event.remove({ output: ['utilitarian:snad', 'utilitarian:red_snad', 'utilitarian:soul_snad', 'utilitarian:fluid_hopper', 'utilitarian:no_soliciting_banner']})
 
     // Shrink
     event.remove({ output: 'shrink:shrinking_device'})

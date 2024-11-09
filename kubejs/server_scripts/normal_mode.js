@@ -6,9 +6,8 @@ ServerEvents.recipes(event => {
     if (isNormalMode) {
         // Moni Steel
         event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
+        event.remove({ type: "gtceu:primitive_blast_furnace", output: "gtceu:steel_ingot" })
         event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
-        
-        event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
         event.remove({ id: /fireclay/ })
         event.remove({ output: ['gtceu:firebrick', 'gtceu:firebricks', 'gtceu:primitive_blast_furnace'] })
 
@@ -31,9 +30,6 @@ ServerEvents.recipes(event => {
         // Wrought iron per ingot
         event.remove({ type: "minecraft:smelting", output: "gtceu:wrought_iron_nugget" })
         event.smelting("gtceu:wrought_iron_ingot", "minecraft:iron_ingot")
-
-        // Dust hydration
-        event.shapeless("minecraft:clay", ["kubejs:dust", "minecraft:water_bucket"])
 
         // Make clay electrolysis an LV recipe
         event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_clay" })
@@ -59,7 +55,8 @@ ServerEvents.recipes(event => {
         }
         )
 
-        // Steam multis
+        // Normal Mode recipes for Steam multis
+        event.remove({ output: 'gtceu:steam_oven'})
         event.shaped(
             "gtceu:steam_oven", [
             'BGB',
@@ -73,6 +70,7 @@ ServerEvents.recipes(event => {
         }
         )
 
+        event.remove({ output: 'gtceu:steam_grinder'})
         event.shaped(
             "gtceu:steam_grinder", [
             'BGB',
@@ -85,6 +83,7 @@ ServerEvents.recipes(event => {
         }
         )
 
+        event.remove({ output: 'steamadditions:steam_foundry'})
         event.shaped(
             "steamadditions:steam_foundry", [
             'BGB',
@@ -108,7 +107,7 @@ ServerEvents.recipes(event => {
             R: "gtceu:sticky_resin"
         }
         )
-
+        
         // Compressor rubber - better, but not perfect - that's chemical reactor rubber
         event.recipes.gtceu.compressor("compressor_rubber_sheet")
             .itemInputs("gtceu:sticky_resin")
@@ -135,17 +134,6 @@ ServerEvents.recipes(event => {
         }
         )
 
-        event.remove({ id: "watercollector:watercollector" })
-        event.shaped(
-            "watercollector:watercollector", [
-            "AAA",
-            "B B",
-            "AAA"
-        ], {
-            A: "gtceu:wrought_iron_plate",
-            B: "minecraft:water_bucket"
-        }
-        )
         event.recipes.gtceu.assembler("lv_motor")
             .itemInputs("2x gtceu:tin_single_cable", "2x gtceu:iron_rod", "gtceu:magnetic_iron_rod", "4x gtceu:fine_copper_wire")
             .itemOutputs("gtceu:lv_electric_motor")
@@ -177,16 +165,6 @@ ServerEvents.recipes(event => {
         }
         ).id('gtceu:shaped/distillation_tower')
 
-
-        event.remove({ id: 'gtceu:assembler/cover_infinite_water' })
-        event.recipes.gtceu.assembler("kubejs:infinite_water_cover")
-            .itemInputs("2x gtceu:mv_electric_pump", "thermal:device_water_gen", "#gtceu:circuits/mv")
-            .itemOutputs('gtceu:infinite_water_cover')
-            .duration(100)
-            .EUt(128)
-
-        event.remove({ type: "minecraft:smelting", output: "gtceu:firebrick" })
-
         //GT Steam Age
         gtMachines.forEach(machine => {
             event.remove({ output: ['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine] })
@@ -205,25 +183,24 @@ ServerEvents.recipes(event => {
         E: 'kubejs:redstone_transmission_coil'
     }
     )
-
-    event.remove({ id: "thermal:device_rock_gen" })
-    event.shaped(
-        "thermal:device_rock_gen", [
-        'PPP',
-        'B B',
-        'PPP'
-    ], {
-        P: "gtceu:steel_plate",
-        B: "minecraft:bucket"
-    }
-    )
     
-    event.remove({ output: 'systeams:stirling_boiler' })
-    event.shapeless('systeams:stirling_boiler', ['steamdynamo:steam_dynamo', 'systeams:boiler_pipe'])
-
     //Bounty board recipes only accept oak. The dev has stated this is intended. https://github.com/ejektaflex/Bountiful/issues/271
     event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_log", "#minecraft:logs")
     event.replaceInput({ id: "bountiful:crafting/bountyboard" }, "minecraft:oak_planks", "#minecraft:planks")
+
+    event.remove({ output: 'gtceu:lv_item_magnet'})
+    event.shaped(
+        Item.of('gtceu:lv_item_magnet', '{Charge:120000L}'), 
+        [
+            'R R',
+            'R R',
+            'CPC'
+        ], {
+            C: 'gtceu:tin_single_cable',
+            R: 'gtceu:magnetic_iron_rod',
+            P: 'gtceu:iron_plate'
+        }
+    )
 }
 
 

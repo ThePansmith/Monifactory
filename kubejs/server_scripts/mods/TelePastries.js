@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
 
-    event.remove({ output: ["telepastries:nether_cake", 'telepastries:overworld_cake', 'telepastries:end_cake'] })
+    event.remove({ output: ["telepastries:nether_cake", 'telepastries:overworld_cake', 'telepastries:lost_city_cake', 'telepastries:end_cake'] })
 
-    // cake base
+    // Cake Base
     event.shaped(
         'enderio:cake_base', [
         'SMS',
@@ -29,9 +29,20 @@ ServerEvents.recipes(event => {
         K: 'gtceu:gold_dust'
     }
     )
+	
+    event.shaped(
+        'telepastries:lost_city_cake', [
+        'NNN',
+        'SBS',
+        'SSS'
+    ], {
+        N: 'minecraft:redstone',
+        B: "enderio:cake_base",
+        S: 'minecraft:diamond',
+    }
+    )
 
     //Void Cake
-
     event.shaped(
         'telepastries:custom_cake', [
         'ABC',
@@ -53,7 +64,7 @@ ServerEvents.recipes(event => {
             'OBO',
             'SSS'
         ], {
-            N: "gtceu:netherrack_dust",
+            N: "hostilenetworks:nether_prediction",
             O: "minecraft:obsidian",
             B: "enderio:cake_base",
             S: "minecraft:soul_sand"
@@ -65,7 +76,7 @@ ServerEvents.recipes(event => {
         'OBO',
         'SSS'
     ], {
-        N: 'gtceu:endstone_dust',
+        N: 'hostilenetworks:end_prediction',
         O: 'minecraft:ender_eye',
         B: "enderio:cake_base",
         S: 'gtceu:black_steel_plate'

@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         .EUt(65520)
    
     event.recipes.gtceu.omnic_forge('kubejs:netherite_casing')
-        .itemInputs('16x gtceu:neutronium_plate', '12x gtceu:large_scale_assembler_casing', '12x gtceu:dense_activated_netherite_plate', '12x gtceu:tungsten_steel_rod')
+        .itemInputs('16x gtceu:neutronium_plate', '12x gtceu:large_scale_assembler_casing', '6x gtceu:dense_activated_netherite_plate', '12x gtceu:tungsten_steel_rod')
         .itemOutputs('3x kubejs:dimensional_stabilization_netherite_casing')
         .duration(2000)
         .EUt(65520)
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         .EUt(65520)
     
     event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_casing')
-        .itemInputs('gtceu:uiv_machine_hull', '2x kubejs:cryococcus_fusion_coil', '12x gtceu:cryococcus_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uev_field_generator')
+        .itemInputs('gtceu:uhv_machine_hull', '2x kubejs:cryococcus_fusion_coil', '12x gtceu:cryococcus_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uhv_field_generator')
         .itemOutputs('4x kubejs:cryococcus_fusion_casing')
         .duration(2000)
         .EUt(65520)

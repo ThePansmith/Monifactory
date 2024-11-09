@@ -59,7 +59,7 @@
 		# 200 ticks is what a regular furnace takes.
 		# Default: 120
 		#Range: 2 ~ 72000
-		speed = 60
+		speed = 40
 		# How much RF to generate per tick
 		# Default: 160
 		#Range: 1 ~ 100000
@@ -259,7 +259,7 @@
 
 	[misc.misc]
 		# Enable or disable the Rainbow Content
-		rainbow = true
+		rainbow = false
 		# Show furnace settings errors in chat, used for debugging
 		errors = false
 		# Enable or disable version checking and player identification through the web, true = disabled, if your server is using firewall software you might want to disable this
@@ -273,5 +273,5 @@
 	[updates.check_updates]
 		# true = check for updates, false = don't check for updates.
 		# Default: true.
-		updates = true
+		updates = false
 

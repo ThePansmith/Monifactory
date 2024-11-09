@@ -3,10 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "matterenergy"
-	group: ""
+	group: "0D5BFFD0A5E49312"
 	icon: "ae2:controller"
 	id: "118959024F296F70"
-	order_index: 3
+	order_index: 0
 	quest_links: [
 		{
 			id: "20253D681F399A92"
@@ -27,7 +27,7 @@
 			id: "14426BB19924AD5E"
 			linked_quest: "5C4E189A3E401566"
 			shape: "hexagon"
-			x: 2.5d
+			x: 5.5d
 			y: -1.5d
 		}
 	]
@@ -81,7 +81,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Calculation Processor."]
+			description: ["Run the materials through &3Inscribers&r with &aPresses&r to make the printed variant, then combine the printed materials and circuit to form the Calculation Processor."]
 			id: "133FB7996362498C"
 			rewards: [{
 				id: "035F2955DB950CCA"
@@ -89,7 +89,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Calculation Processors&r are made from a &6Certus Plate&r, a &6Silicon Plate&r, and any &6tier one circuit&r."
+			subtitle: "&6Calculation Processors&r are made from &6Printed Calculation Circuit&r, &6Printed Silicon&r, and any &6tier one circuit&r."
 			tasks: [{
 				id: "63ED16CB8306DC8C"
 				item: "ae2:calculation_processor"
@@ -154,7 +154,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Logic Processor."]
+			description: ["Run the materials through &3Inscribers&r with &aPresses&r to make the printed variant, then combine the printed materials and circuit to form the Logic Processor."]
 			id: "1F4D2DAF4267DB77"
 			rewards: [{
 				id: "52D7FCB9D1EC2573"
@@ -162,7 +162,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Logic Processors&r are made from a &6Gold Plate&r, a &6Silicon Plate&r, and any tier one circuit."
+			subtitle: "&6Logic Processors&r are made from &6Printed Logic Circuit&r, &6Printed Silicon&r, and any tier one circuit."
 			tasks: [{
 				id: "3A650FC102D75669"
 				item: "ae2:logic_processor"
@@ -341,7 +341,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Engineering Processor."]
+			description: ["Run the materials through &3Inscribers&r with &aPresses&r to make the printed variant, then combine the printed materials and circuit to form the Engineering Processor."]
 			id: "0FD703A1A1E5055E"
 			rewards: [{
 				id: "128EF2992A9B077F"
@@ -349,7 +349,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Engineering Processors&r are made from a &6Diamond Plate&r, a &6Silicon Plate&r, and any tier one circuit."
+			subtitle: "&6Engineering Processors&r are made from &6Printed Engineering Circuit&r, &6Printed Silicon&r, and any tier one circuit."
 			tasks: [{
 				id: "2D4C3E3A6D443BB0"
 				item: "ae2:engineering_processor"
@@ -362,11 +362,11 @@
 		{
 			dependencies: ["0FD703A1A1E5055E"]
 			description: [
-				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, RF/EU or fluids from one location to another, using your ME system, without the need to use any disk storage space. &cTransporting RF/EU has a 5%% tax on the input energy.&r"
+				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, RF/EU or fluids from one location to another, using your ME system, without the need to use any disk storage space. &cTransporting RF/EU has a 5% tax on the input energy.&r"
 				""
 				"Each P2P tunnel system may have only &cone input&r but &eany number of outputs&r. There is no limit on how many P2P tunnels, or P2P tunnel systems, you can have on one network."
 				""
-				"By default, a P2P tunnel is an &6ME tunnel&r, which transmits Applied Energistics channels and power. Since channels are disabled, you will most likely not be using the default tunnel. You can change the mode of your P2P tunnels by right clicking the tunnel with the respective item seen in &bREI&r."
+				"By default, a P2P tunnel is an &6ME tunnel&r, which transmits Applied Energistics channels and power. Since channels are disabled, you will most likely not be using the default tunnel. You can change the mode of your P2P tunnels by right clicking the tunnel with the respective item seen in &bEMI&r."
 				"{@pagebreak}"
 				"To configure your P2P tunnels, take a &6Memory Card&r. While holding the memory card, &ashift-right click&r the unconfigured tunnel, to set the frequency of the input, and save the frequency to the memory card. Once the first tunnel has been set up this way and the memory card is configured with the frequency, any subsequent tunnel you &aright-click&r with the memory card will be set as the output of the most recent frequency used."
 				""
@@ -384,7 +384,7 @@
 			tasks: [{
 				id: "10CF79220AE28192"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "ae2:memory_card"
 					tag: { }
 				}
@@ -456,7 +456,7 @@
 			tasks: [{
 				id: "1FE9B2CBA70D22B9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "expatternprovider:extended_pattern_provider"
@@ -476,7 +476,7 @@
 				""
 				"These can be filled with encoded &aPatterns&r to perform on-demand autocrafting. Any item pushed into an &aME Pattern Provider&r is digitized and placed in your ME Network storage."
 				""
-				"When adjacent to one or more &aMolecular Assemblers&r, crafting table patterns can be crafted. It will use as many adjacent &aMolecular Assemblers&r as possible, restricted by availability and number of &aCo-processors&r in your crafting CPU multiblock."
+				"When adjacent to one or more &aMolecular Assemblers&r, &3Crafting Table&r and &3Stonecutter&r patterns can be crafted. It will use as many adjacent &aMolecular Assemblers&r as possible, restricted by availability and number of &aCo-processors&r in your crafting CPU multiblock."
 				"{@pagebreak}"
 				"When adjacent to any other block, you can use &aprocessing patterns&r with a machine to insert items into the machine. Processing patterns require that the finished item is inserted back into the ME Network through &aInterfaces&r or &aPattern Providers&r."
 				""
@@ -484,7 +484,7 @@
 				""
 				"Also, if you connect a gadget from &bBuilding Gadgets&r to the Pattern Provider, the gadget will pull materials straight from the attached AE2 network, &aNOT&r the Pattern Provider."
 				""
-				"There is information of the Gadgets, and how to connect them to inventories, in the &eInspector Gadget&r quest in &cGenesis&r in &cMatter Energy&r or &cThe Beginning&r."
+				"There is information of the Gadgets, and how to connect them to inventories, in the &eInspector Gadget&r quest in &cGenesis&r in &cMatter Energy&r or &cThe Factory&r."
 			]
 			icon: "ae2:pattern_provider"
 			id: "1040D941027962B1"
@@ -498,7 +498,7 @@
 			tasks: [{
 				id: "24069DF90AE106FD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "ae2:pattern_provider"
@@ -609,7 +609,7 @@
 				"If you've opted to enable channels in your AE2 configs, you will innately have some energy storage from the &3ME Controller&r, but we assume you know what you're doing at that point. &eAE2 Channels mechanics are outside the scope of the quest book, and this is the only time it will be mentioned."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ae2:energy_cell"
 				tag: { }
 			}
@@ -618,7 +618,7 @@
 			tasks: [{
 				id: "714C125E0ED99334"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -656,7 +656,7 @@
 				"The &64k ME Storage Cell&r is the next size up. With four times the bytes it holds substantially more items per type, but it requires a more advanced technology than you currently have available: AE &6Processors&r made in an &3Inscriber&r."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "ae2:item_storage_cell_1k"
 				tag: { }
 			}
@@ -672,7 +672,7 @@
 			tasks: [{
 				id: "631B9DD6D42ECBE4"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -708,13 +708,13 @@
 				type: "item"
 			}]
 			title: "Digital Storage At Last"
-			x: 2.25d
-			y: -4.0d
+			x: 1.125d
+			y: -1.5d
 		}
 		{
 			dependencies: [
 				"680C4363C268B223"
-				"1F4D2DAF4267DB77"
+				"133FB7996362498C"
 			]
 			description: ["Unformatted disks always have a hard limit of 63 distinct types of items, but each step up has roughly four times the total storage space of the prior disk."]
 			id: "72AFBEFCEAE86EC1"
@@ -730,8 +730,8 @@
 				type: "item"
 			}]
 			title: "4k Item Storage"
-			x: 5.5d
-			y: -4.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["72AFBEFCEAE86EC1"]
@@ -748,8 +748,8 @@
 				type: "item"
 			}]
 			title: "16k Item Storage"
-			x: 5.5d
-			y: -6.5d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["15AE607E2EDD0369"]
@@ -767,7 +767,7 @@
 				type: "item"
 			}]
 			title: "64k Item Storage"
-			x: 3.5d
+			x: 2.5d
 			y: -6.5d
 		}
 		{
@@ -778,7 +778,7 @@
 			description: [
 				"Firstly, you will need a &3Matter Condenser&r. Stick a &664k ME Storage Component&r in, change the mode to 'Singularity', and stuff lots of items (or fluids) in, &9done easily with a infinity cell&r."
 				""
-				"If you don't have that, you can surround it with &6Dense Cobblestone Generators&r."
+				"If you don't have that, you can provide it with the output of regular &6Water&r or &6Cobblestone&r generation methods."
 				"{@pagebreak}"
 				"After you have made the &eSingularity&r you will need from the &3Matter Condenser&r, you need to setup a &aQuantum Ring Multiblock&r. Build a 3 by 3 vertical ring with your &6Quantum Rings&r, leaving a hole in the middle. Finally, stick your &6Quantum Link Chamber&r in the hole, and connect it to your ME system. If you built it correctly, the textures of the rings should combine, leaving you with a &aMultiblock&r."
 				""
@@ -829,7 +829,7 @@
 				}
 			]
 			title: "&9AE2 Everywhere!"
-			x: 1.5d
+			x: 1.25d
 			y: -6.5d
 		}
 		{
@@ -856,7 +856,7 @@
 			tasks: [{
 				id: "564AFB42CC6805FF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -916,8 +916,8 @@
 				type: "item"
 			}]
 			title: "&9256k Item Storage"
-			x: 3.5d
-			y: -8.0d
+			x: 5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["6F32A8739D8E792A"]
@@ -934,7 +934,7 @@
 				"{@pagebreak}"
 				"Second, you'll need the place for the autocrafting. For Crafting Table recipes, you'll need &6Molecular Assemblers&r. &6Pattern Providers&r are placed next to them. Autocrafting with &bGregTech&r is explained later, in the quest following this one."
 				""
-				"Finally, you'll need a &6Pattern&r. In order to make this, put empty &6Patterns&r in the &6Pattern Encoding Terminal&r, and find the recipe in &bREI&r, while still in the &6Pattern Encoding Terminal&r. Then, click '+' in &bREI&r, and press the arrow to encode the recipe. This goes in the &6Interface&r that you set up in the last step. You can use &6Interface Terminals&r to access &6Interfaces'&r pattern slots."
+				"Finally, you'll need a &6Pattern&r. In order to make this, put empty &6Patterns&r in the &6Pattern Encoding Terminal&r, and find the recipe in &bEMI&r, while still in the &6Pattern Encoding Terminal&r. Then, click '+' in &bEMI&r, and press the arrow to encode the recipe. This goes in the &6Interface&r that you set up in the last step. You can use &6Interface Terminals&r to access &6Interfaces'&r pattern slots."
 				""
 				"Eventually, you'll need a lot of &6Patterns&r, lots of CPUs, and ones with more storage, and lots of &6&6&6Pattern Providers&r&r&r. If you run out of pattern slots in an &6Pattern Provider&r, you can add more &6Pattern Providers&r, or use &6Extended Pattern Providers&r, which have 36 slots each."
 			]
@@ -984,7 +984,7 @@
 				"{@pagebreak}"
 				"Next, right-click the &3Package Recipe Encoder&r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You'll have to choose the appropriate table for the recipe you want to encode."
 				""
-				"&6Holders&r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press &6[+]&r in &bREI&r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines."
+				"&6Holders&r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press &6[+]&r in &bEMI&r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines."
 				""
 				"If you've done everything correctly, you should see the item appear as craftable in a Terminal."
 				""
@@ -1101,7 +1101,7 @@
 				{
 					id: "4EFDB9B627864D5D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "expatternprovider:infinity_cell"
 						tag: {
 							record: {
@@ -1115,7 +1115,7 @@
 				{
 					id: "215932AC4E4A4995"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "expatternprovider:infinity_cell"
 						tag: {
 							record: {
@@ -1128,8 +1128,8 @@
 				}
 			]
 			title: "&9Infinitest Water and Stone"
-			x: 5.5d
-			y: -8.0d
+			x: 1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6F32A8739D8E792A"]
@@ -1170,7 +1170,7 @@
 				{
 					id: "3EBBAF2494BBA8A8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
@@ -1224,7 +1224,7 @@
 			tasks: [{
 				id: "713C7B1C67D4771E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "ae2:interface"
@@ -1251,7 +1251,7 @@
 			tasks: [{
 				id: "53C8B8B483EF6121"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "expatternprovider:extended_interface"
@@ -1388,7 +1388,7 @@
 			tasks: [{
 				id: "75CE8F67A574D433"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "betterp2p:advanced_memory_card"
 					tag: {
 						gui: 3b
@@ -1451,7 +1451,7 @@
 			}]
 			title: "&9MEGA Cells"
 			x: 7.25d
-			y: -8.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["295E3D32083676E6"]

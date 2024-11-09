@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     const converter = [
         ['uev', 'omnium', 'activated_netherite', '1966080'],
-        ['uiv', 'infinity', 'holmium', '3932160'],
+        ['uiv', 'holmium', 'holmium', '3932160'],
         ['max', 'monium', 'monium', '80000000'],
     ]
     // no MAX tier laserhatch :1984:
@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
     ]
 
         converter.forEach(([tier, mat1, mat2, eut]) => {
+            event.remove({ output:[`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter` ] })
             if (!isHarderMode) {
             event.shaped(Item.of(`gtceu:${tier}_1a_energy_converter`), [
                 ' BB',
@@ -60,14 +61,28 @@ ServerEvents.recipes(event => {
             })
 
 
-
+            event.remove({ output:[`gtceu:${tier}_energy_output_hatch`, `gtceu:${tier}_energy_output_hatch_4a`, `gtceu:${tier}_energy_output_hatch_16a`] })
             event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_output_hatch`)
                 .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_spring`, `2x gtceu:uhpic_chip`, `#gtceu:circuits/${tier}`, `2x gtceu:${mat1}_double_wire`)
                 .itemOutputs(`gtceu:${tier}_energy_output_hatch`)
                 .inputFluids('gtceu:crystal_matrix 11520', 'gtceu:soldering_alloy 5760')
                 .duration(1000)
                 .EUt(eut)
-                
+
+                event.recipes.gtceu.assembler(`gtceu:${tier}_energy_output_hatch_4a`)
+               .itemInputs(`gtceu:${tier}_energy_output_hatch`, `2x gtceu:${mat1}_plate`, `2x gtceu:${mat2}_quadruple_wire`)
+                .itemOutputs(`gtceu:${tier}_energy_output_hatch_4a`)
+               .duration(100)
+               .EUt(eut)
+
+               event.recipes.gtceu.assembler(`gtceu:${tier}_energy_output_hatch_16a`)
+               .itemInputs(`gtceu:${tier}_energy_output_hatch_4a`, `2x gtceu:${mat1}_plate`, `2x gtceu:${mat2}_octal_wire`)
+                .itemOutputs(`gtceu:${tier}_energy_output_hatch_16a`)
+               .duration(100)
+               .EUt(eut)
+
+
+            event.remove({ output:[`gtceu:${tier}_energy_input_hatch`, `gtceu:${tier}_energy_input_hatch_4a`, `gtceu:${tier}_energy_input_hatch_16a`] })
             event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_input_hatch`)
                 .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_single_wire`, '16x gtceu:uhpic_chip', `#gtceu:circuits/${tier}`, `2x gtceu:${mat2}_double_wire`)
                 .itemOutputs(`gtceu:${tier}_energy_input_hatch`)
@@ -75,17 +90,17 @@ ServerEvents.recipes(event => {
                 .duration(100)
                 .EUt(eut)
 
-                //event.recipes.gtceu.assembler(`gtceu:${tier}_energy_input_hatch_4a`)
-               // .itemInputs(`gtceu:${tier}_energy_input_hatch`, `2x gtceu:${mat1}_plate`, `2x gtceu:${mat2}_quadruple_wire`)
-                //.itemOutputs(`gtceu:${tier}_energy_input_hatch_4a`)
-              //  .duration(100)
-               // .EUt(eut)
+                event.recipes.gtceu.assembler(`gtceu:${tier}_energy_input_hatch_4a`)
+               .itemInputs(`gtceu:${tier}_energy_input_hatch`, `2x gtceu:${mat1}_plate`, `2x gtceu:${mat2}_quadruple_wire`)
+                .itemOutputs(`gtceu:${tier}_energy_input_hatch_4a`)
+               .duration(100)
+               .EUt(eut)
 
-              //  event.recipes.gtceu.assembler(`gtceu:${tier}_energy_input_hatch_16a`)
-              //  .itemInputs(`2x gtceu:${tier}_energy_input_hatch_4a`, `4x gtceu:${mat1}_plate`, `2x gtceu:${mat2}_octal_wire`, `2x gtceu:uhpic_chip`)
-              //  .itemOutputs(`gtceu:${tier}_energy_input_hatch_16a`)
-              //  .duration(100)
-             //   .EUt(eut)
+               event.recipes.gtceu.assembler(`gtceu:${tier}_energy_input_hatch_16a`)
+               .itemInputs(`2x gtceu:${tier}_energy_input_hatch_4a`, `4x gtceu:${mat1}_plate`, `2x gtceu:${mat2}_octal_wire`, `2x gtceu:uhpic_chip`)
+               .itemOutputs(`gtceu:${tier}_energy_input_hatch_16a`)
+               .duration(100)
+               .EUt(eut)
         }
         })
 
@@ -140,10 +155,12 @@ ServerEvents.recipes(event => {
 
 
     // UEV/UIV/MAX Hulls and Casing
-
+    event.remove({ id: 'gtceu:shaped/uev_machine_hull'})
+    event.remove({ id: 'gtceu:shaped/uiv_machine_hull'})
+    event.remove({ id: 'gtceu:shaped/opv_machine_hull'})
+    
     event.recipes.gtceu.assembler('uev_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire')
-        .inputFluids('gtceu:polybenzimidazole 576')
+        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
         .itemOutputs('gtceu:uev_machine_hull')
         .duration(50)
         .EUt(16)
@@ -156,8 +173,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     event.recipes.gtceu.assembler('uiv_hull')
-        .itemInputs('gtceu:uiv_machine_casing', '2x gtceu:activated_netherite_single_wire')
-        .inputFluids('gtceu:polybenzimidazole 576')
+        .itemInputs('gtceu:uiv_machine_casing', '2x gtceu:activated_netherite_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
         .itemOutputs('gtceu:uiv_machine_hull')
         .duration(50)
         .EUt(16)
@@ -386,7 +402,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_field_generator')
-        .itemInputs('gtceu:omnium_frame', '6x gtceu:omnium_plate', 'kubejs:quasi_stable_neutron_star', '2x gtceu:uev_emitter', '2x #gtceu:circuits/uev', '64x gtceu:fine_netherite_wire', '64x gtceu:fine_netherite_wire', '4x gtceu:activated_netherite_double_wire')
+        .itemInputs('gtceu:omnium_frame', '6x gtceu:omnium_plate', 'kubejs:quasi_stable_neutron_star', '2x gtceu:uev_emitter', '2x #gtceu:circuits/uev', '64x gtceu:fine_activated_netherite_wire', '64x gtceu:fine_activated_netherite_wire', '4x gtceu:activated_netherite_double_wire')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_field_generator')
         .duration(600)

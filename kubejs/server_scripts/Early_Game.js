@@ -42,6 +42,9 @@ event.recipes.gtceu.electric_blast_furnace("aluminium_ingot_gas")
     event.shapeless("minecraft:sand", ["minecraft:gravel", "#forge:tools/hammers"])
     event.shapeless("kubejs:dust", ["minecraft:sand", "#forge:tools/hammers"])
 
+    // Dust hydration
+    event.shapeless("minecraft:clay", ["kubejs:dust", "minecraft:water_bucket"])
+
     // EIO Solar
     event.recipes.gtceu.alloy_smelter("photovoltaic_plate")
         .itemInputs("2x enderio:photovoltaic_composite", "gtceu:electrical_steel_plate")

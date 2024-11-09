@@ -2,7 +2,7 @@
 
 ServerEvents.recipes(event => {
     if (!isHarderMode) {
-        // Recipes that are the same in both normal and hardmode, but shouldn't exist in Harder
+        // Recipes that are the same in both normal and hardmode, but shouldn't exist in Expert
         event.shapeless('systeams:stirling_boiler', ['steamdynamo:steam_dynamo', 'systeams:boiler_pipe'])
         event.shaped(
             'systeams:boiler_pipe', [

@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
     event.shapeless('5x kubejs:moni_penny', 'kubejs:moni_nickel')
-
     event.shaped('kubejs:moni_nickel', [
             ' A ',
             'AAA',
@@ -30,5 +28,4 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_quarter'
         }
     )
-}
 })

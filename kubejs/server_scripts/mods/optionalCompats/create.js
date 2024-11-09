@@ -1,5 +1,5 @@
 if (Platform.isLoaded('create')) {
-    console.log("create found and scripts loaded")
+    console.log("Create found, loading compat scripts...")
     ServerEvents.recipes(event => {
 
         // Removes any machines related to processing, the point of this compat is fun not functionality, 
@@ -13,6 +13,7 @@ if (Platform.isLoaded('create')) {
         event.remove({output: 'create:mechanical_harvester'})
         event.remove({output: 'create:mechanical_press'})
         event.remove({output: 'create:mechanical_roller'})
+        event.remove({output: 'create:encased_fan'})
 
         /* Removes recipes for machines that were not removed, deployers and mechanical crafters are fun!
         Most recipe categories that are removed machines are hidden in 
@@ -34,10 +35,17 @@ if (Platform.isLoaded('create')) {
         event.remove({ id: 'gtceu:shaped/ev_kinetic_mixer' })
 
         //belts made with rubber
-        let kelpRecipes = ["create:crafting/kinetics/belt_connector", "create:crafting/logistics/andesite_funnel", "create:crafting/logistics/brass_funnel", "create:crafting/logistics/andesite_tunnel", "create:crafting/logistics/brass_tunnel"]
+        let kelpRecipes = [
+			"create:crafting/kinetics/belt_connector",
+			"create:crafting/logistics/andesite_funnel",
+			"create:crafting/logistics/brass_funnel",
+			"create:crafting/logistics/andesite_tunnel",
+			"create:crafting/logistics/brass_tunnel"
+		]
         kelpRecipes.forEach(id => { event.replaceInput({ id: id }, 'minecraft:dried_kelp', 'gtceu:rubber_plate') })
-        event.replaceInput({ id: "create:crafting/kinetics/spout" }, 'minecraft:dried_kelp', 'gtceu:rubber_ring')
-        // Adds some create recipes to gt machines
+		event.replaceInput({ id: "create:crafting/kinetics/spout" }, 'minecraft:dried_kelp', 'gtceu:rubber_ring')
+        
+		// Adds some create recipes to gt machines
         event.recipes.gtceu.mixer("kubejs:andesite_alloy_from_iron")
             .itemInputs('#forge:nuggets/iron', 'minecraft:andesite')
             .itemOutputs('create:andesite_alloy')
@@ -179,32 +187,34 @@ if (Platform.isLoaded('create')) {
 
 
         // Tracks
-        event.remove({ output: 'create:track' })
-        event.shaped(
-            "create:track", [
-            '   ',
-            'IHI',
-            'SSS'
-        ], {
-            H: "#forge:tools/hammers",
-            I: "minecraft:iron_nugget",
-            S: "#create:sleepers"
-        }
-        )
-        event.recipes.gtceu.assembler('kubejs:createtracks')
-            .itemInputs('3x #create:sleepers', "2x minecraft:iron_nugget")
-            .itemOutputs('create:track')
-            .duration(5)
-            .EUt(16)
-
+		if (!Platform.isLoaded('railways')) {
+			// Only do this block if Steam and Rails is not loaded. Else, let the Steam and Rails KJS file handle the track recipes.
+			event.remove({ output: 'create:track' })
+			event.shaped(
+				"create:track", [
+					'   ',
+					'IHI',
+					'SSS'
+				], {
+					H: "#forge:tools/hammers",
+					I: "minecraft:iron_nugget",
+					S: "#create:sleepers"
+				}
+			)
+			event.recipes.gtceu.assembler('kubejs:createtracks')
+				.itemInputs('3x #create:sleepers', "2x minecraft:iron_nugget")
+				.itemOutputs('2x create:track')
+				.duration(5)
+				.EUt(16)
+		} else {console.log("Steam and Rails is present, letting its compat script handle the track recipes.")}
 
         // stone variant rock crusher recipes
         let rockCrushing = function (modName, itemName, EUt) {
             return event.recipes.gtceu.rock_breaker(`kubejs:${itemName}`)
                 .notConsumable(`${modName}:${itemName}`)
                 .itemOutputs(`${modName}:${itemName}`)
-            ["addData(java.lang.String,java.lang.String)"]("fluidA", "minecraft:lava")
-            ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:water")
+                .addDataString("fluidA", "minecraft:lava")
+                .addDataString("fluidB", "minecraft:water")
                 .duration(16)
                 .EUt(EUt)
                 .addCondition(RockBreakerCondition.INSTANCE)
@@ -245,45 +255,6 @@ if (Platform.isLoaded('create')) {
         //Deploying recipes are fine
         //Remove sawing recipes. Mechanical saws can still be used for stonecutting and in world tree cutting
         event.remove({ type: 'create:cutting' })
-
-        //remove splashing and replace them with some ulv gregtech recipes from the ore washer and chemical bath
-        event.remove({ type: 'create:splashing' }) //We don't want any of these
-        event.forEachRecipe([{ type: 'gtceu:ore_washer' }, { type: 'gtceu:chemical_bath' }],
-            (recipe) => {
-                let r = JSON.parse(recipe.json)
-
-                let EUt = (r.tickInputs && r.tickInputs.eu) ? r.tickInputs.eu[0].content : null
-                if (!(EUt <= 8)) { //Reject recipes that cost more than 8 eu/t, check is done like this to filter out null
-                    return
-                }
-                if (!r.inputs) { return } //There are no inputless/outputless recipes by default. But it may be possible to create one
-                let fluidInputs = r.inputs.fluid
-                if (!fluidInputs || fluidInputs[0].content.value[0].tag != "forge:water") { //Reject recipes that do not use water
-                    return
-                }
-                let inputs = r.inputs.item
-                if (!inputs || inputs[0].content.count != 1) { //Reject recipes with input amounts other than 1 (due to a create issue)
-                    return
-                }
-                let outputs = r.outputs.item
-                if (!outputs || outputs[0].content.type != "gtceu:sized" || !outputs[0].content.ingredient.item) { //Not sure if outputs other than "item" are possible. Check to be safe
-                    return
-                }
-                if (inputs.length > 1 && (inputs[1].content.type != "gtceu:circuit" || inputs[1].content.configuration != 2)) { //Reject recipes with a second ingredient that isn't a (2) circuit
-                    return
-                }
-                //let duration = r.duration
-                event.custom({
-                    "type": "create:splashing",
-                    "ingredients": [inputs[0].content.ingredient],
-                    "results": [
-                        {
-                            "item": outputs[0].content.ingredient.item,
-                            "count": outputs[0].content.count
-                        }
-                    ]
-                }).id(`kubejs:create/splashing/${recipe.getId().split(':')[1]}`)
-            })
     })
-}
-else { console.log("create not found") }
+    console.log("Create compat scripts successfully loaded!")
+} else { console.log("Create was not found, skipping its compat scripts.")}

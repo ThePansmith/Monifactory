@@ -2,9 +2,6 @@
 //? Keep in sync with
 //? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsPlatLine.java
 
-/**
- * Chemical Materials
- */
 GTCEuStartupEvents.registry('gtceu:material', event => {
     if (!isHardMode) {
         return;
@@ -19,14 +16,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('chloroplatinic_acid')
         .fluid()
         .color(0xfef0c2)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('2x hydrogen', 'platinum', '6x chlorine')
 
     event.create('palladium_rich_ammonia')
         .fluid()
         .color(0x808080)
         .components('2x ammonia', 'palladium', 'chlorine')
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('rhodium_sulfate_solution')
         .fluid()
@@ -37,19 +34,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('acidic_iridium_dioxide_solution')
         .fluid()
         .color(0x27284e)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.components('iridium_dioxide_residue', '4x hydrochloric_acid')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components('iridium_dioxide_residue', '4x hydrochloric_acid')
 
     event.create('platinum_palladium_leachate')
         .fluid()
         .color(0xffffc5)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-		.components('platinum', 'palladium', 'aqua_regia')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components('platinum', 'palladium', 'aqua_regia')
 
     event.create('methyl_formate')
         .fluid()
         .color(0xffaaaa)
-		.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('2x carbon', '4x hydrogen', '2x oxygen')
 
     event.create('platinum_metallic')
@@ -156,13 +153,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('carbon', '3x hydrogen', 'oxygen', 'sodium');
 });
 
-// modify material names etc here
 GTCEuStartupEvents.materialModification(() => {
     if (!isHardMode) {
         return;
     }
-	GTMaterials.get('ammonium_hexachloroplatinate').setFormula('(NH4)2PtCl6');
-	GTMaterials.get('rhodium_nitrate').setFormula('Rh(NO3)3');
-	GTMaterials.get('ammonium_hexachloroiridiate').setFormula('(NH4)2IrCl6');
-	GTMaterials.get('rhodium_salt').setFormula('(NaCl)2(RhCl3)2');
+    GTMaterials.get('ammonium_hexachloroplatinate').setFormula('(NH4)2PtCl6');
+    GTMaterials.get('rhodium_nitrate').setFormula('Rh(NO3)3');
+    GTMaterials.get('ammonium_hexachloroiridiate').setFormula('(NH4)2IrCl6');
+    GTMaterials.get('rhodium_salt').setFormula('(NaCl)2(RhCl3)2');
 })

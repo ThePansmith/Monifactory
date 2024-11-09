@@ -3,10 +3,10 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "genesis"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "gtceu:vacuum_tube"
 	id: "0654B76C306712BE"
-	order_index: 1
+	order_index: 0
 	quest_links: [
 		{
 			id: "7FB8EA3900C4D89D"
@@ -22,6 +22,12 @@
 			shape: "hexagon"
 			x: 1.5d
 			y: 11.0d
+		}
+		{
+			id: "070539F2FEF35EF9"
+			linked_quest: "712023557B5B1812"
+			x: -4.0d
+			y: 15.5d
 		}
 	]
 	quests: [
@@ -50,11 +56,15 @@
 		{
 			dependencies: ["2A511DB40C66CF35"]
 			description: [
-				"This pack is intended to be played in a &bLost cities/Overworld dimension&r."
+				"This pack is intended to be played in the &bOverworld and Lost City Dimensions&r."
 				""
-				"If you're playing with friends, don't forget to invite them to a &eFTB Teams party&r. "
+				"If you wish to build your base in total safety, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the &7Void World&r. "
 				""
-				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid World&r."
+				"The &2Overworld&r has ores to mine, and is a great place to gather resources."
+				""
+				"Simply place down and eat any dimensional cake for access to that dimension."
+				""
+				"If you're playing with friends, don't forget to invite them to an &eFTB Teams party&r. "
 				"{@pagebreak}"
 				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
 				""
@@ -73,14 +83,14 @@
 					type: "item"
 				}
 				{
-					id: "48B3D498AC0B2BE0"
+					id: "7539BE70E1B3DB39"
 					item: "telepastries:overworld_cake"
 					type: "item"
 				}
 				{
-					id: "3451D4471E82E65A"
+					id: "4227D8CC87BE7710"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:prospector.hv"
 						tag: {
 							Charge: 1600000L
@@ -90,9 +100,9 @@
 				}
 				{
 					count: 4
-					id: "3316656A4E9DA8BF"
+					id: "1C580CB98F808631"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:diamond_mining_hammer"
 						tag: {
 							DisallowContainerItem: 0b
@@ -116,9 +126,9 @@
 					type: "item"
 				}
 				{
-					id: "19598A860287E726"
+					id: "22786EAAD70B619D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:diamond_axe"
 						tag: {
 							DisallowContainerItem: 0b
@@ -138,15 +148,15 @@
 					type: "item"
 				}
 				{
-					auto: "no_toast"
+					auto: "invisible"
 					icon: "enderio:cake_base"
-					id: "612FEB595285D353"
+					id: "392C56C1DA9D7978"
 					title: "&6Infinite Cakes!"
 					type: "custom"
 				}
 				{
 					auto: "invisible"
-					id: "75FD5BC7147B8397"
+					id: "1BCE4323D97D9083"
 					ignore_reward_blocking: true
 					stage: "intro_complete"
 					type: "gamestage"
@@ -167,7 +177,13 @@
 		{
 			can_repeat: true
 			dependencies: ["66FCC26399376B55"]
-			description: ["This quest is repeatable and gives you a free cake to the &6Void World&r or &2Overworld&r every hour. You can also refill your cakes with the items indicated in their tooltips."]
+			description: [
+				"In &9Monifactory&r, all dimensional transit is done through the power of &6TelePastries&r. No Portals here!"
+				""
+				"This quest is repeatable and gives you a free cake to the &2Overworld&r, &3Lost City&r, or &7Void World&r every hour. You can also refill your cakes with the items indicated in their tooltips."
+				""
+				"&cDon't forget to have a way to get back!&r If you do, click on the Emergency Items heart on the right side of the quest book screen."
+			]
 			disable_toast: true
 			icon: "telepastries:overworld_cake"
 			id: "542F0090D8975D3C"
@@ -178,7 +194,7 @@
 				table_id: 7942624913962637807L
 				type: "choice"
 			}]
-			subtitle: "Cakes are magical!"
+			subtitle: "Cakes are quantum objects!"
 			tags: ["moni_cakequest"]
 			tasks: [
 				{
@@ -218,7 +234,7 @@
 			tasks: [{
 				id: "02543E826A43185A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "functionalstorage:drawer"
@@ -296,7 +312,7 @@
 			rewards: [{
 				id: "318894ADCA9CF9DB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "trofers:large_pillar"
 					tag: {
 						BlockEntityTag: {
@@ -312,13 +328,13 @@
 				{
 					count: 12L
 					id: "674259A69F1EEC1C"
-					item: { Count: 12b, id: "minecraft:iron_ingot" }
+					item: { Count: 12, id: "minecraft:iron_ingot" }
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "02A10A7E907718D5"
-					item: { Count: 12b, id: "gtceu:wrought_iron_ingot" }
+					item: { Count: 12, id: "gtceu:wrought_iron_ingot" }
 					type: "item"
 				}
 			]
@@ -335,8 +351,9 @@
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
-				id: "404D91696592F318"
-				item: "kubejs:moni_nickel"
+				count: 4
+				id: "269E89EDD3A32100"
+				item: "sophisticatedstorage:hopper_upgrade"
 				type: "item"
 			}]
 			subtitle: "Bags of holding"
@@ -344,10 +361,10 @@
 				{
 					id: "46CA42CF7D0730E6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "sophisticatedstorage:gold_barrel"
 						tag: {
-							woodType: "oak"
+							woodType: "spruce"
 						}
 					}
 					type: "item"
@@ -355,7 +372,7 @@
 				{
 					id: "3A3F4984E9A1A81E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni_quest:backpack"
@@ -395,9 +412,9 @@
 				""
 				"There are also &6Quadruple and Nonuple Pipes&r for transporting multiple fluid types through the same block."
 				""
-				"&bEnderIO&r&6 Fluid Conduits&r are also an option. They have the advantage of being &6Conduits&r, allowing them to fit in the same block as other &6Conduits&r. "
+				"&bEnderIO&r&6 Fluid Conduits&r are also an option. They have the advantage of being &6Conduits&r, allowing them to fit in the same block as other &6Conduits&r. However, they are &every slow&r to compensate."
 				""
-				"Later on, you also gain access to &9LaserIO&r, which trades some speed in exchange for allowing rather complex and compact filtering."
+				"You also have access to &9LaserIO&r, which while a little costly, allows for some rather complex and compact filtering."
 			]
 			id: "64AAF0CD958D836A"
 			rewards: [{
@@ -409,21 +426,50 @@
 			tasks: [{
 				id: "150F57D9BEE7CCEE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "gtceu:steel_tiny_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_small_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_normal_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_large_fluid_pipe"
+										}
+										{
+											Count: 1b
+											id: "gtceu:steel_huge_fluid_pipe"
+										}
+									]
+								}
+							}
 							{
 								Count: 1b
 								id: "enderio:pressurized_fluid_conduit"
 							}
 							{
 								Count: 1b
-								id: "gtceu:steel_normal_fluid_pipe"
+								id: "laserio:card_fluid"
 							}
 						]
 					}
 				}
+				title: "Fluid Transport item"
 				type: "item"
 			}]
 			title: "&9Fluid Transport"
@@ -443,12 +489,12 @@
 				""
 				"&c[❤]&r and &a[┴]&r are used in tandem to create &arecipe trees&r. Pressing &a[┴]&r will pull up a &arecipe tree&r for that given item. Pressing &c[❤]&r on a recipe will mark it as the &cdefault recipe&r for that item, and will show that recipe (and the items used to craft it) in &arecipe trees&r. You can then add &cdefault recipes&r for the items used to craft that recipe, repeat ad nauseam. Note that you can click on a item in the &arecipe tree&r and it's recipes will be pulled up."
 				"{@pagebreak}"
-				"In the &arecipe tree&r GUI, you can change the batch size by scrolling on the number to the right of the final result. Finally, and most importantly, you can press the &6Magnifying Glass&r to switch to &6Crafting Tree Mode&r, this will &edisplay the items that you need for every step to craft the number of items that you specified&r in your sidebar, and will dynamically update as you craft items. You can click on these &6Synethic Favorites&r with your Craft to Inventory bind (unbinded by default) to &eautomatically craft and then push items back into your inventory&r when using a crafting table, or push the exact number of items needed if using a different inventory.&r"
+				"In the &arecipe tree&r GUI, you can change the batch size by scrolling on the number to the right of the final result. Finally, and most importantly, you can press the &6Magnifying Glass&r to switch to &6Crafting Tree Mode&r, this will &edisplay the items that you need for every step to craft the number of items that you specified&r in your sidebar, and will dynamically update as you craft items. You can click on these &6Synthetic Favorites&r with your Craft to Inventory bind (unbinded by default) to &eautomatically craft and then push items back into your inventory&r when using a crafting table, or push the exact number of items needed if using a different inventory.&r"
 				""
 				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the &a[┴]&r button found in the bottom left of your screen and it will pull up the &arecipe tree&r GUI as well."
 			]
 			disable_toast: true
-			icon: "gtceu:crafting_table_cover"
+			icon: "quark:crafter"
 			id: "58566C7BF4C22D86"
 			shape: "hexagon"
 			size: 1.25d
@@ -641,7 +687,7 @@
 				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:wrought_iron_wire_cutter"
 				tag: {
 					DisallowContainerItem: 0b
@@ -668,7 +714,7 @@
 				{
 					id: "04ED9B749EA44142"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_hammer"
 						tag: {
 							Damage: 0
@@ -682,7 +728,7 @@
 				{
 					id: "514CE965C8FB1452"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_file"
 						tag: {
 							Damage: 0
@@ -696,7 +742,7 @@
 				{
 					id: "7226082DB71F551A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_saw"
 						tag: {
 							Damage: 0
@@ -710,7 +756,7 @@
 				{
 					id: "705CACC01AD1C68E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_wrench"
 						tag: {
 							Damage: 0
@@ -724,7 +770,7 @@
 				{
 					id: "290A0FE8C389AF05"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_screwdriver"
 						tag: {
 							Damage: 0
@@ -738,7 +784,7 @@
 				{
 					id: "7B41907A63748FCA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_wire_cutter"
 						tag: {
 							Damage: 0
@@ -752,7 +798,7 @@
 				{
 					id: "7298CFD7BA970AA8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_mortar"
 						tag: {
 							Damage: 0
@@ -778,7 +824,7 @@
 				"Your free 4 Diamond Mining Hammers should last you a while, and you can always fix them using an anvil and some diamonds."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:iron_mining_hammer"
 				tag: {
 					Damage: 0
@@ -798,7 +844,7 @@
 				consume_items: false
 				id: "589A0779F965D77A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:tools/mining_hammers"
@@ -815,27 +861,35 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: ["&9Gregtech Axes are able to vienmine an entire tree at once!"]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_axe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						DisableShields: 1b
+						TreeFelling: 1b
+					}
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 4.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "527F56DFAD5E20EC"
 			tasks: [{
 				id: "254A555916313F70"
 				item: {
-					Count: 1b
-					id: "gtceu:flint_axe"
+					Count: 1
+					id: "itemfilters:id_regex"
 					tag: {
-						DisallowContainerItem: 0b
-						GT.Behaviours: {
-							DisableShields: 1b
-							TreeFelling: 1b
-						}
-						GT.Tool: {
-							Damage: 0
-							HarvestLevel: 2
-							MaxDamage: 63
-							ToolSpeed: 3.5f
-						}
-						HideFlags: 2
+						value: "^gtceu:.*_axe$"
 					}
 				}
+				title: "Any Lumber Axe"
 				type: "item"
 			}]
 			title: "&9Tree chopping"
@@ -870,7 +924,7 @@
 				{
 					id: "1F3EDCBF5EB70229"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gtceu:wrought_iron_wrench"
 						tag: {
 							Damage: 0
@@ -884,7 +938,7 @@
 				{
 					id: "20854F1345AB6B1E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "thermal:wrench"
 						tag: { }
 					}
@@ -953,25 +1007,25 @@
 				{
 					count: 36L
 					id: "102B3966BE895F45"
-					item: { Count: 36b, id: "minecraft:copper_ingot" }
+					item: { Count: 36, id: "minecraft:copper_ingot" }
 					type: "item"
 				}
 				{
 					count: 20L
 					id: "3CEB53996CBB7381"
-					item: { Count: 20b, id: "gtceu:tin_ingot" }
+					item: { Count: 20, id: "gtceu:tin_ingot" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "5A94EE9BCBADE6BF"
-					item: { Count: 16b, id: "minecraft:coal" }
+					item: { Count: 16, id: "minecraft:coal" }
 					type: "item"
 				}
 				{
 					count: 6L
 					id: "77FEEB10E7B091B8"
-					item: { Count: 6b, id: "minecraft:gold_ingot" }
+					item: { Count: 6, id: "minecraft:gold_ingot" }
 					type: "item"
 				}
 			]
@@ -982,8 +1036,6 @@
 		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
-				"&rThis quest accepts a item pipe of any material, any size, whether restrictive or normal."
-				""
 				"For now, the best material to make these pipes out of is probably &6Tin&r."
 				""
 				"Their advantage over &5EnderIO &3Item Conduits&r is their far higher &6throughput&r. An unupgraded EIO Item Conduit transports &98 items per second&r, and up to &9128&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9multiple stacks per second&r."
@@ -996,8 +1048,9 @@
 			]
 			id: "57D1B1D74391A05F"
 			rewards: [{
+				count: 2
 				id: "04FB020A78370641"
-				item: "kubejs:moni_nickel"
+				item: "ulvcovm:ulv_conveyor_module"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -1012,7 +1065,7 @@
 			y: 7.25d
 		}
 		{
-			dependencies: ["1229234A71CE0A99"]
+			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
 				"Although most &ealloys&f require an &3Alloy Smelter&f, some alloys can be made simply by mixing the correct metal dusts together. "
 				""
@@ -1081,7 +1134,7 @@
 			tasks: [{
 				id: "7B4500A4503F2F6D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "hangglider:hang_glider"
 					tag: {
 						Damage: 0
@@ -1112,7 +1165,7 @@
 			tasks: [{
 				count: 3L
 				id: "7BA753DF38DEC329"
-				item: { Count: 3b, id: "gtceu:rubber_plate" }
+				item: { Count: 3, id: "gtceu:rubber_plate" }
 				type: "item"
 			}]
 			title: "Rubber Sheets"
@@ -1124,12 +1177,12 @@
 			description: [
 				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. This is useful when you have two machines running and both are unable to keep going because of a lack of power... let one finish then turn the other one back on with a second hit from the mallet."
 				""
-				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r."
+				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r once you can."
 				""
 				"This quest accepts a &aSoft Mallet&r made from any material."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gtceu:rubber_mallet"
 				tag: {
 					Damage: 0
@@ -1153,7 +1206,7 @@
 			tasks: [{
 				id: "253D34B000F903DD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1261,49 +1314,49 @@
 				{
 					count: 16L
 					id: "6FE4A0D51F6AF22F"
-					item: { Count: 16b, id: "gtceu:copper_dust" }
+					item: { Count: 16, id: "gtceu:copper_dust" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "6449998172457471"
-					item: { Count: 16b, id: "gtceu:red_alloy_dust" }
+					item: { Count: 16, id: "gtceu:red_alloy_dust" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "16D7046417209756"
-					item: { Count: 16b, id: "gtceu:red_alloy_ingot" }
+					item: { Count: 16, id: "gtceu:red_alloy_ingot" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "57A26AF688B59DAB"
-					item: { Count: 32b, id: "gtceu:iron_dust" }
+					item: { Count: 32, id: "gtceu:iron_dust" }
 					type: "item"
 				}
 				{
 					count: 32L
 					id: "5627DEBC5B168743"
-					item: { Count: 32b, id: "gtceu:conductive_alloy_ingot" }
+					item: { Count: 32, id: "gtceu:conductive_alloy_ingot" }
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "15CAA2C5B513BFC2"
-					item: { Count: 8b, id: "gtceu:red_alloy_plate" }
+					item: { Count: 8, id: "gtceu:red_alloy_plate" }
 					type: "item"
 				}
 				{
 					count: 3L
 					id: "14B188414BF825E6"
-					item: { Count: 3b, id: "gtceu:red_alloy_single_wire" }
+					item: { Count: 3, id: "gtceu:red_alloy_single_wire" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "7B8835F95B9739D6"
-					item: { Count: 16b, id: "gtceu:conductive_alloy_single_wire" }
+					item: { Count: 16, id: "gtceu:conductive_alloy_single_wire" }
 					type: "item"
 				}
 			]
@@ -1336,7 +1389,7 @@
 			tasks: [{
 				count: 12L
 				id: "24A84AB536BB27B0"
-				item: { Count: 12b, id: "gtceu:red_alloy_single_cable" }
+				item: { Count: 12, id: "gtceu:red_alloy_single_cable" }
 				type: "item"
 			}]
 			title: "&2Cables"
@@ -1385,7 +1438,7 @@
 			tasks: [{
 				count: 2L
 				id: "66B9B329F6ED7939"
-				item: { Count: 2b, id: "thermal:dynamo_fuel_augment" }
+				item: { Count: 2, id: "thermal:dynamo_fuel_augment" }
 				type: "item"
 			}]
 			title: "&9More Efficient"
@@ -1424,6 +1477,8 @@
 				"The &2Energy Converter&r is a special device that &econverts &2between &aRF power&r and &aEU power&r. They come in &2four sizes: 1A, 4A, 8A, and 16A."
 				""
 				"&aRF&r converts into &aEU&r at a &e4 to 1 ratio&r. &a100 RF&r becomes &a25 EU&r, and vice-versa. &2Use a Soft Hammer to change the conversion direction."
+				""
+				"&eNote that you need an RF buffer to output into when you convert EU->RF!&r"
 			]
 			icon: "gtceu:lv_4a_energy_converter"
 			id: "297B523B6C503957"
@@ -1436,7 +1491,7 @@
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1477,7 +1532,26 @@
 			}]
 			tasks: [{
 				id: "0527876D6287634B"
-				item: "gtceu:lv_battery_buffer_4x"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_4x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_8x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_battery_buffer_16x"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Charging Batteries"
@@ -1491,7 +1565,7 @@
 				""
 				"Although there are several types of rechargeable batteries you can make, &2Lithium Batteries&r are the best ones, and the only ones you should really consider making."
 				""
-				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are fairly rare. Consider \"buying\" some Lithium with &9Monicoins&r."
+				"&6Lithium&r is possible to find inside of &6Tungsten&r veins, however, they are only found in the End dimension. Consider \"buying\" some Lithium with &9Monicoins&r."
 			]
 			id: "077AA27F26B7831F"
 			rewards: [{
@@ -1502,7 +1576,7 @@
 			tasks: [{
 				count: 4L
 				id: "7923DEDAB3298371"
-				item: { Count: 4b, id: "gtceu:lv_battery_hull" }
+				item: { Count: 4, id: "gtceu:lv_battery_hull" }
 				type: "item"
 			}]
 			title: "LV Power Storage"
@@ -1526,7 +1600,7 @@
 			tasks: [{
 				id: "0560C9C2C5EC9998"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -1553,63 +1627,6 @@
 			y: 15.5d
 		}
 		{
-			dependencies: ["06E9B9DDDB245F38"]
-			description: [
-				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
-				""
-				"Also important to note that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
-				""
-				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, `connecting' the gadget to the inventory."
-				""
-				"For example, if you shift-right click a chest full of cobblestone, the gadget will use cobblestone from that chest to place blocks."
-				""
-				"By default, the config GUI is bound to &6G&r."
-			]
-			icon: "buildinggadgets2:gadget_building"
-			id: "5F9C7FB40AD2640B"
-			subtitle: "This pack has &bBuilding Gadgets&r."
-			tasks: [
-				{
-					id: "449B547CDED79AE3"
-					item: "buildinggadgets2:gadget_building"
-					type: "item"
-				}
-				{
-					id: "30A321B32CDAF437"
-					item: "buildinggadgets2:gadget_exchanging"
-					type: "item"
-				}
-				{
-					id: "4763F5F3C0771FFA"
-					item: {
-						Count: 1b
-						id: "buildinggadgets2:gadget_copy_paste"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "284A671CC5192B50"
-					item: {
-						Count: 1b
-						id: "buildinggadgets2:gadget_cut_paste"
-						tag: {
-							pastereplace: 1b
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "51485964CFCB26B9"
-					item: "buildinggadgets2:gadget_destruction"
-					type: "item"
-				}
-			]
-			title: "Inspector Gadget"
-			x: -2.75d
-			y: 16.75d
-		}
-		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
 				"&6Sulfur Ore&r is the only source of &6Sulfur Dust&r that's currently available to you."
@@ -1624,7 +1641,7 @@
 			rewards: [{
 				id: "4C3153B1874D58D5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:player_head"
 					tag: {
 						SkullOwner: {
@@ -1650,7 +1667,7 @@
 			tasks: [{
 				id: "0161A7D4C24DC421"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ores/sulfur"
@@ -1674,11 +1691,9 @@
 				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
 				""
 				"The Flux Capacitor is a &bBauble&r, so open your inventory and look for the Baubles button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
-				""
-				"Finally, you can charge up all those depleted &m&6Dark Boots&r&r and &6The Ender&r swords you've looted."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "thermal:flux_capacitor"
 				tag: { }
 			}
@@ -1692,7 +1707,7 @@
 				{
 					id: "5EF5A8A2767A69E3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "thermal:flux_capacitor"
 						tag: { }
 					}
@@ -1701,7 +1716,7 @@
 				{
 					id: "63EE7A1364F6888B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:dusts/sulfur"
@@ -1716,69 +1731,12 @@
 			y: 15.5d
 		}
 		{
-			dependencies: ["3A5387B2003177B2"]
-			description: [
-				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
-				""
-				"There's also a quest chain for &bEnderIO&r Jetpacks (starting with the &6Conductive Iron Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
-			]
-			id: "7E66445087E82F65"
-			rewards: [{
-				id: "24ED21C395B4B39F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			subtitle: "Being able to fly is pretty sick. It's also pretty expensive."
-			tasks: [{
-				id: "7CE647770625D692"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:leadstone"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			x: -4.0d
-			y: 15.5d
-		}
-		{
-			dependencies: ["06E9B9DDDB245F38"]
-			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
-			id: "39394D5596FF8BC8"
-			rewards: [{
-				id: "20D8F149F414F950"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "36817E3C33876798"
-				item: {
-					Count: 1b
-					id: "enderio:electromagnet"
-					tag: {
-						Energy: {
-							EnergyStored: 0
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "Electromagnet"
-			x: -1.5d
-			y: 16.75d
-		}
-		{
 			dependencies: ["297B523B6C503957"]
 			description: [
 				"Unlike &aRF power&r, which is safe to transport in any &6conduit&r, &aEU power &erequires caution&r. The key is to always &amatch or exceed&r the &eVoltage &rand&e Amperage&r of your power source with your &6cables&r and machines."
 				""
 				"&cNEVER &rhook up your Energy Converter&r to a cable that has fewer &eAmps&r than your Energy Converter or Battery Buffer generates. For example, you must use &64x cable&r for a 4A Converter&r, and &616x cable&r for a filled 16-slot Battery Buffer&r. Cables with insufficient amperage rating will &cburn and be destroyed&r. &2Both the multiple-amp-source and multiple-face-input bugs from CE have been fixed - the Energy network now works as intended.&r"
-				""
+				"{@pagebreak}"
 				"Similarly, your cable must match or exceed the &eVoltage&r of your machines, or they will &cburn and be destroyed&r."
 				""
 				"&cNEVER&r connect a machine to excessive &eVoltage&r or it will &cvaporize&r. Touching a &6wire&r with connected &aEU power&r will &cinjure or kill you&r, so for your safety, &euse &6cables&e instead&r!"
@@ -1804,14 +1762,14 @@
 				"Your Steam Dynamo needs burnable fuel (like &6Coal&r) and &9water&r. It will output RF power through the Excitation Coil (the red bit at the top). The orientation of the Steam Dynamo can be adjusted with a &aCrescent Hammer&r, if needed."
 				""
 				"&6Energy Conduits&r can be used to transfer that RF power, but the dynamo can also output RF directly into an Energy Converter by making the Excitation Coil touch the Energy Converter."
+				"{@pagebreak}"
+				"The Energy Converter transforms RF power into EU, outputting the resulting EU through the side with a red dot. The orientation can be adjusted using a &aWrench&r. Attach your &6Conductive Iron Wires&r to the output side of the Energy Converter."
 				""
-				"The Energy Converter transforms RF power into EU, outputting the resulting EU through the side with a red dot. The orientation can be adjusted using a &aWrench&r. Attach your &6Conductive Iron Cables&r to the output side of the Energy Converter."
-				""
-				"Now all you need are some &bGregTech&r machines to hook up to the cables! You can make whatever you want, but its recommended that you get these two first:"
+				"Now all you need are some &bGregTech&r machines to power up! You can make whatever you want, but its recommended that you get these two first:"
 				""
 				"The &6Wiremill&r will make crafting wires much, much easier."
 				""
-				"The &2Bending Machine&r will make Plates from one ingot instead of two."
+				"The &2Bender&r will make Plates from one ingot instead of two."
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
@@ -1871,7 +1829,7 @@
 			rewards: [{
 				id: "43415141DBD13CDD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "nomowanderer:no_mo_wanderer_totem"
 					tag: {
 						Enabled: 1b
@@ -1889,7 +1847,7 @@
 					disable_toast: true
 					id: "34ADCB8BA7F14B03"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:coins"
@@ -1921,7 +1879,7 @@
 				""
 				"&cMake sure you return to Normal mode when you're done building shapes, since the special building modes will interfere with normal gameplay.&r"
 				"{@pagebreak}"
-				"The size of shapes you can make in special building modes is limited by your &ereach&r, which is how far away you can click from yourself to start building, or from the previous location to complete a shape. You can craft and eat several tiers of &areach upgrades&r in succession to increase your reach to very high numbers."
+				"The size of shapes you can make in special building modes is limited by your &eReach&r, which is how far away you can click from yourself to build, and your &eBuilding Power&r, a measure of how large you can make a shape. You can craft and eat several tiers of &aReach Upgrades&r in succession to increase your reach to very high numbers, and loot &aBuilding Power upgrades&r from the &bLost Cities.&r"
 				""
 				"Overall, &bEffortless Building&r is a powerful mod that is very useful for construction. Experiment with it and you'll see how much time it can save you!"
 			]
@@ -1943,11 +1901,11 @@
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
 				""
-				"[\"\",{\"text\":\"You shouldn't feel any pressure to do that in monifactory, though\",\"color\":\"yellow\"},\". Ore veins are massive, and mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},\". What's more, even once you get access to \",{\"text\":\"Macerators\",\"color\":\"dark_aqua\"},\", they initially process ore slowly and require power to operate.\"]"
+				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"chanced byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
 				""
 				"Obvious exceptions would be rare materials or anything you buy with &9Monicoins &fbecause you can't find it. Those are worth doubling, if possible."
 				""
-				"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! &eOre doubling can be safely ignored until you have the &2Steam Grinder&r&e, or Medium Voltage machines or even later.&r"
+				"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! &eOre doubling can be safely ignored until you have the &2Steam Grinder&r&e or High Voltage machines.&r"
 			]
 			icon: "gtceu:crushed_redstone_ore"
 			id: "17E92ED356B6737F"
@@ -1962,63 +1920,26 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"Whether or not you (or your server admin) picked the default &bLost Cities&r overworld type, you have the option of teleporting yourself to the &eLost Cities Dimension&r. This is useful if you like other world types but want to still be able to explore cities for things like &eloot and spawners&r."
+				"If your server admin allows it, you can use JourneyMap to create and teleport to waypoints you set. You can access JourneyMap waypoints by hitting the N key by default. Use this feature to gather resources quickly."
 				""
-				"To create a portal, you must place a &aBed&r down on two &6Blocks of Diamond&r. Then, you surround the bed with any kind of &eMonster Skulls&r. Sleep in this bed and you will be teleported there."
+				"If JourneyMap teleportation is disabled, you can still use the &e/sethome&r command to register where your house is, and &e/home&r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There are some &erestrictions&r on this though: there is a limit on the number of homes you can set, &eit takes a few seconds of standing still to activate&r and there is a &ecooldown&r between uses."
 				""
-				"&cDon't forget to have a way to get back!&r You can use the &e/sethome&r command to register where your house is, and &e/home&r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There are some &erestrictions&r on this though: &eit takes a few seconds of standing still to activate&r and there is a &ecooldown&r between uses."
-				""
-				"Later on you'll have other means of teleportation."
-				""
-				"Monster Skulls might take a little while to get if you're playing in &ePeaceful&r&r. &6Skeleton Skulls&r would be the way to go in that case."
+				"Later on you'll discover other means of teleportation."
 			]
 			disable_toast: true
 			hide_dependency_lines: true
-			icon: "minecraft:purple_bed"
+			icon: "minecraft:blue_bed"
 			id: "33195ED6D7008E5F"
 			optional: true
-			rewards: [{
-				id: "3DE844F3B9CF2903"
-				item: "kubejs:moni_nickel"
-				type: "item"
+			subtitle: "Make returning home easy!"
+			tasks: [{
+				id: "1FE7AB8BD6D25B47"
+				title: "Checkmark"
+				type: "checkmark"
 			}]
-			subtitle: "Free materials!"
-			tasks: [
-				{
-					count: 10L
-					id: "0221039A21A1C266"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:heads"
-						}
-					}
-					title: "Any Heads"
-					type: "item"
-				}
-				{
-					id: "0E70B83A51A0ADEC"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:beds"
-						}
-					}
-					title: "Any Bed"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "0DA16402F8B9CC9B"
-					item: "minecraft:diamond_block"
-					type: "item"
-				}
-			]
-			title: "Lost Cities and Registering Homes"
+			title: "JourneyMap and Registering Homes"
 			x: -10.5d
-			y: 5.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2129,8 +2050,8 @@
 				type: "checkmark"
 			}]
 			title: "Inventory Sorting"
-			x: -9.0d
-			y: 8.5d
+			x: -10.5d
+			y: 5.5d
 		}
 		{
 			can_repeat: true
@@ -2148,7 +2069,7 @@
 			rewards: [{
 				id: "21CED765A341AC89"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gtceu:prospector.hv"
 					tag: {
 						Charge: 1600000L
@@ -2176,8 +2097,134 @@
 				}
 			]
 			title: "Recharge Your Prospector!"
-			x: -10.5d
+			x: -9.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1229234A71CE0A99"]
+			description: [
+				"This pack has &aSnad&r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block update or a redstone update."
+				""
+				"The sugar cane it produces can be used as a fuel for your dynamos, and later you can even brew it for &9Biomass&r."
+				""
+				"This quest calls for a &aRedstone Clock&r, but there are other ways to make snad grow sugar cane even faster (like a vanilla observer clock pointing into the Snad). Make sure to set the timer to pulse as fast as possible."
+				""
+				"To collect the sugar cane, you can use a piston and an observer."
+				""
+				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
+			]
+			icon: "snad:snad"
+			id: "529D50CE814AF449"
+			shape: "hexagon"
+			subtitle: "Yes, Snad."
+			tasks: [
+				{
+					id: "77ADD3B3DA61DC55"
+					item: "snad:snad"
+					type: "item"
+				}
+				{
+					id: "719FAF0F70FA25E5"
+					item: "enderio:vacuum_chest"
+					type: "item"
+				}
+				{
+					id: "2DCBDFF5EB0F7CD9"
+					item: "redstone_clock:redstone_clock"
+					type: "item"
+				}
+				{
+					id: "3DBB91C93688C4FC"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+			]
+			title: "Snad"
+			x: -1.5d
+			y: 9.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"You may wish to &aautomatically sprint&r instead of having to press &eControl + W&r or &eW twice&r."
+				"To achieve this, change the &bSprint&r keybind to &eW&r. (or the same keybind as Walk Forward)"
+				""
+				"A &aGrappling Hook&r is also very useful in an urban environment, allowing you to climb buildings with ease!"
+				""
+				"There are lots of ways to upgrade and improve your &aGrappling Hook&r, so play around with it."
+				""
+				"Open your inventory and look for the &3Curios&r button, click it to reveal the additional curio slots and put the hook in the hook shaped slot."
+				""
+				"The default key to fire a hook is &6C&r, however you might want to change it, simply search for &5category:ReHooked&r in the key binds screen and change them to whatever you want."
+				"Just be careful of &4Keybind Conflicts&r"
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "rehooked:wood_hook"
+			id: "372BE3F076893D71"
+			min_width: 300
+			rewards: [{
+				id: "3A1EB6268A778123"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "&oFaster is better!"
+			tasks: [{
+				id: "2FDEDCA3D120121B"
+				item: "rehooked:wood_hook"
+				type: "item"
+			}]
+			title: "Movin' Around"
+			x: -9.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["7865CDE5CFE005DC"]
+			description: ["All furnaces from &bIron Furnaces&r can be augmented to have be &afaster&r, more &afuel efficient&r, and &asmelt multiple items at once&r!"]
+			id: "5D5C24BACC649253"
+			optional: true
+			rewards: [{
+				id: "7021A7413D938814"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Modular furnaces!"
+			tasks: [
+				{
+					id: "154872CDC7976802"
+					item: "ironfurnaces:augment_speed"
+					type: "item"
+				}
+				{
+					id: "29E0DC2E3B5B4A0F"
+					item: "ironfurnaces:augment_fuel"
+					type: "item"
+				}
+			]
+			title: "Furnace Augments"
+			x: 7.25d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7865CDE5CFE005DC"]
+			description: ["You can copy and paste settings from different &eFurnaces&r using a &6Furnaces Setting Linker&r"]
+			id: "07508736CEE01C7F"
+			optional: true
+			rewards: [{
+				id: "7455123A87C45A7E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "Copying your furnace's settings"
+			tasks: [{
+				id: "4FF735E089FC1BA8"
+				item: "ironfurnaces:item_copy"
+				type: "item"
+			}]
+			title: "Ctrl + C, Ctrl + V"
+			x: 7.25d
+			y: 3.75d
 		}
 	]
 	title: "Genesis"

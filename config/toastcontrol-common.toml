@@ -18,7 +18,7 @@
 		#If all toasts are blocked.
 		global = false
 		#Toast Classes that are blocked from being shown.
-		blocked_classes = []
+		blocked_classes = ["mod.chiselsandbits.client.screens.components.toasts.ChiselsAndBitsNotificationToast"]
 
 	[client.visual_options]
 		#How long a toast must be on the screen for, in ticks.  Use 0 to use the default time.

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/cryococcus_fusion_coil.json"
+    }
+  }
+}

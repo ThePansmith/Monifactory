@@ -3,33 +3,6 @@
 ServerEvents.recipes(event => {
     if (isHardMode) {
 
-    // Table with various burn time lengths
-    const pbfTimes = [
-        // material | fuel | length in ticks
-        ["wrought_iron", "coal", 400],
-        ["wrought_iron", "charcoal", 400],
-        ["wrought_iron", "coke", 600],
-        ["iron", "coal", 900],
-        ["iron", "charcoal", 900],
-        ["iron", "coke", 1500]
-    ]
-
-    for (const [material, fuel, time] of pbfTimes) {
-        let efficient = (fuel === "coke");
-        // Ingot form
-        event.recipes.gtceu.primitive_blast_furnace(`pbf_${material}_${fuel}`)
-            .itemInputs(`${efficient ? '2x ' : ''}#forge:ingots/${material}`, [`#forge:gems/${fuel}`, `#forge:dusts/${fuel}`])
-            .itemOutputs(`${efficient ? '2x ' : ''}gtceu:steel_ingot`, `gtceu:tiny_${efficient ? "" : "dark_"}ash_dust`)
-            .duration(time)
-
-        // Block form
-        event.recipes.gtceu.primitive_blast_furnace(`pbf_block_${material}_${fuel}`)
-            .itemInputs(`${efficient ? '2x ' : ''}#forge:storage_blocks/${material}`, `#forge:storage_blocks/${fuel}`)
-            .itemOutputs(`${efficient ? '2x ' : ''}gtceu:steel_block`, `gtceu:${efficient ? "" : "dark_"}ash_dust`)
-            .duration(time * 9)
-    }
-
-
         event.remove({ id: /hostilenetworks/ })
 
         const xpjuice = [
@@ -49,16 +22,12 @@ ServerEvents.recipes(event => {
             .duration(100)
         }
 
-        event.replaceInput({ output: 'buildinggadgets2:gadget_exchanging' }, 'minecraft:redstone', 'gtceu:iv_emitter')
-
         event.remove({ output: 'gtceu:extractor/tank_data' })
         event.recipes.gtceu.extractor('omnicdata')
         .itemInputs('kubejs:heart_of_a_universe')
         .itemOutputs('kubejs:omnic_data')
         .duration(1000).EUt(180000)
 
-        event.remove({ id: "watercollector:watercollector" })
-        event.remove({ id: "thermal:device_rock_gen" })
         event.remove({ output: 'systeams:stirling_boiler' })
         event.remove({ id: "bountiful:crafting/bountyboard" })
 
@@ -107,35 +76,7 @@ ServerEvents.recipes(event => {
             .itemOutputs('8x kubejs:ender_spore')
             .duration(640)
             .EUt(120)
-
-// Anything that shouldn't apply to hardermode
-        if (!isHarderMode) {
-            event.shaped(
-                "watercollector:watercollector", [
-                    "AAA",
-                    "B B",
-                    "AAA"
-                ], {
-                    A: "gtceu:double_steel_plate",
-                    B: "minecraft:water_bucket"
-                }
-            )
-
-            event.remove({ id: "thermal:device_rock_gen" })
-            event.shaped(
-                "thermal:device_rock_gen", [
-                'PPP',
-                'B B',
-                'PPP'
-            ], {
-                P: "gtceu:black_steel_plate",
-                B: "minecraft:bucket"
-            }
-            )
-}}
-
-
-})
+}})
 
 // HM Ore Gen
 

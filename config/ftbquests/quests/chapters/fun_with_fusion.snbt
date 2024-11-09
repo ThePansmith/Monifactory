@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "fun_with_fusion"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "gtceu:luv_fusion_reactor"
 	id: "40F7695BE1E65C41"
-	order_index: 9
+	order_index: 6
 	quest_links: [
 		{
 			id: "569E4C671C9A4419"
@@ -37,6 +37,13 @@
 			linked_quest: "69034B168B5134ED"
 			shape: "square"
 			x: -4.0d
+			y: -9.5d
+		}
+		{
+			id: "6888572487BED5D5"
+			linked_quest: "745628397790ED7A"
+			size: 1.5d
+			x: -5.5d
 			y: -9.5d
 		}
 	]
@@ -189,7 +196,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK2"
+			title: "&2Fusion Reactor Mk.II"
 			x: 0.5d
 			y: -3.4928571428571473d
 		}
@@ -223,7 +230,7 @@
 				{
 					id: "3FF03AD6F80784C3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "trofers:large_pillar"
 						tag: {
 							BlockEntityTag: {
@@ -354,7 +361,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK3"
+			title: "&2Fusion Reactor Mk.III"
 			x: 5.0d
 			y: -3.4928571428571473d
 		}
@@ -383,10 +390,7 @@
 			y: -3.4928571428571473d
 		}
 		{
-			dependencies: [
-				"069773756716E192"
-				"5585B254BA2D708C"
-			]
+			dependencies: ["069773756716E192"]
 			description: [
 				"&6Americium Ingots&r are obtained by placing &9NuclearCraft&r Americium isotopes into an &3Extractor&r and solidifying the fluid. As with other GT materials, use the ingot or fluid to forge the other forms."
 				""
@@ -409,36 +413,6 @@
 		}
 		{
 			dependencies: ["745628397790ED7A"]
-			description: [
-				"The full complexity of &bNuclearCraft&r is far too much for the scope of this quest guide, so &eyou're encouraged to watch a tutorial or read a guide online&r. "
-				""
-				"For the purposes of this particular quest, you'll be building a breeder reactor to make &6Plutonium&r, and other nuclear elements. While this reactor may seem very expensive, it will be worth it, and you will probably expand it soon. "
-				""
-				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster. Alternatively, reactors can be designed to produce a decent amount of power for the mid game of the pack."
-				""
-				"First, set up your 150 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r. The Casings should only cover the faces of the interior cube, not the edges or corners. You should have exactly the right number of Casings to encase a 5x5x5 space."
-				""
-				"{@pagebreak}"
-				"Next, create a hole so you can get inside the cube. Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
-				""
-				"Finally, place the &3Fission Reactor Controller&r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong."
-				""
-				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
-			]
-			disable_toast: true
-			id: "07482E45FCEE7937"
-			size: 1.5d
-			tasks: [{
-				id: "1A6A15D246D28076"
-				item: "nuclearcraft:fission_reactor_controller"
-				type: "item"
-			}]
-			title: "Fission Reactor"
-			x: -5.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["07482E45FCEE7937"]
 			description: [
 				"Climbing the ladder of fissile materials will require some specific raw materials and machinery."
 				""
@@ -470,7 +444,7 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["07482E45FCEE7937"]
+			dependencies: ["745628397790ED7A"]
 			description: [
 				"Thorium is a basic fissile material that can be used to get into the fissile chain. Thorium comes from &6Pitchblende Ore&r, &6Thorium Ore&r, and even &9Deepslate&r (with a few processing steps)."
 				""
@@ -604,7 +578,7 @@
 			tasks: [{
 				id: "5CF757A158365EEF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -659,7 +633,7 @@
 			tasks: [{
 				id: "2EBA27CDC31F4FD7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -709,7 +683,7 @@
 			tasks: [{
 				id: "4B9300AA8500D15F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -755,7 +729,7 @@
 			tasks: [{
 				id: "1D40001351115DEA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -798,7 +772,7 @@
 			tasks: [{
 				id: "0D3D5AC8CBB48681"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:or"
 					tag: {
 						items: [
@@ -830,11 +804,11 @@
 		{
 			dependencies: ["7D7B34CF5145F971"]
 			description: [
-				"&6Sunnarium&r is an alloy formed from &6Stabilized Plutonium&r and &6Stabilized Curium&r in an IV or better &3Alloy Smelter&r."
+				"&6Sunnarium&r is an alloy formed using &6Plutonium&r, &6Glowstone,&r and &6Curium&r on the &3Crafting Table.&r"
 				""
 				"It is a common ingredient in higher tier &6Solar Panels&r."
 				""
-				"This stuff takes a long time to produce so consider stocking it passively."
+				"There is a more efficient recipe made in an IV or better &3Mixer&r, but it'll take a long time to produce so consider stocking it passively."
 			]
 			id: "171EE3A4129F19A5"
 			rewards: [{
@@ -912,7 +886,7 @@
 					count: 2L
 					id: "19392B2E76B8C49C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:input_hatch"
@@ -924,7 +898,7 @@
 				{
 					id: "67D16E6904489436"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "moni:output_hatch"
@@ -952,55 +926,9 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK1"
+			title: "&2Fusion Reactor Mk.I"
 			x: -4.0d
 			y: -3.5d
-		}
-		{
-			dependencies: ["6728FB92FD3A2084"]
-			dependency_requirement: "one_completed"
-			description: [
-				"&oNote: this quest accepts Americium 241, 242, or 243."
-				""
-				"&6Americium 242&r and &6Americium 243&r are used to make &6LEA-242 Fuel&r."
-				""
-				"There's also &6Americium 241&r, but this is only useful for making RTGs (which produce small amounts of RF continuously) or decaying down into &6Neptunium&r."
-				""
-				"&6Depleted LEA 242 Fuels&r&r will return a lot of &6Curium 246&r, and small amounts of the other three isotopes."
-			]
-			hide_dependency_lines: true
-			hide_dependent_lines: true
-			icon: "nuclearcraft:fuel_americium_hea_242"
-			id: "5585B254BA2D708C"
-			subtitle: "You only need one of this quest's dependencies"
-			tasks: [{
-				id: "16F29EB016AF9A04"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "nuclearcraft:americium_241"
-							}
-							{
-								Count: 1b
-								id: "nuclearcraft:americium_242"
-							}
-							{
-								Count: 1b
-								id: "nuclearcraft:americium_243"
-							}
-						]
-					}
-				}
-				title: "Americium"
-				type: "item"
-			}]
-			title: "Americium Fission"
-			x: -1.0d
-			y: -8.75d
 		}
 		{
 			dependencies: ["3A69EE21B3089929"]

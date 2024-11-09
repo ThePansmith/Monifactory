@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "processing_lines"
-	group: ""
+	group: "0D5BFFD0A5E49312"
 	icon: "gtceu:lv_chemical_reactor"
 	id: "055C0B43FE14258F"
-	order_index: 12
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -62,7 +62,7 @@
 		{
 			dependencies: ["50FB5E0B0E0B142F"]
 			description: ["Melt your &6Ender Pearls&r into &6Resonant Ender&r."]
-			icon: "kubejs:resonant_ender_bucket"
+			icon: "thermal:ender_bucket"
 			id: "500B77982B9CDF9B"
 			subtitle: "&oThis step requires an Extractor of tier &lLV&r&o or higher.&r"
 			tasks: [{
@@ -104,7 +104,7 @@
 			tasks: [{
 				id: "6A1B4224E18DC3EC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:cobblestone"
@@ -359,7 +359,7 @@
 		{
 			dependencies: ["21654B6E703A2923"]
 			description: [
-				"Break up your &6Sandstone&r into &6Saltpeter&r. This is probably the best way to get &6Saltpeter&r, which you'll need a lot for &6Aerotheum Dust&r. You can also get &6Saltpeter&r from &bDeep Mob Evolution&r."
+				"Break up your &6Sandstone&r into &6Saltpeter&r. This is probably the best way to get &6Saltpeter&r, which you'll need a lot for &6Aerotheum Dust&r. You can also get &6Saltpeter&r from &bHostile Neural Networks&r."
 				""
 				"You can also electrolyse it for &6Potassium&r, although it isn't recommended because of how easily you can get &6Potassium&r, such as from &9Deepslate &3Processing&r, and how much &6Saltpeter&r it costs."
 			]
@@ -427,7 +427,7 @@
 			tasks: [{
 				id: "70D37DC6A4C89B21"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:glass"
@@ -586,7 +586,7 @@
 			tasks: [{
 				id: "44F09B9F2D173993"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:cobblestone"

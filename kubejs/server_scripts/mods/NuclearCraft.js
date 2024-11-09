@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: "nuclearcraft:plate_basic" })
     event.shaped(
-        "nuclearcraft:plate_basic", [
+        "2x nuclearcraft:plate_basic", [
             "TST",
             "SDS",
             "TST"
@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: "nuclearcraft:plate_advanced" })
     event.shaped(
-        "nuclearcraft:plate_advanced", [
+        "2x nuclearcraft:plate_advanced", [
             "TST",
             "SDS",
             "TST"
@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
 
 	event.remove({ id: "nuclearcraft:plate_elite" })
     event.shaped(
-        "nuclearcraft:plate_elite", [
+        "2x nuclearcraft:plate_elite", [
             "TST",
             "SDS",
             "TST"
@@ -402,6 +402,7 @@ ServerEvents.recipes(event => {
 	event.replaceInput({ input: 'nuclearcraft:basic_electronic_circuit' }, 'nuclearcraft:basic_electric_circuit', '#gtceu:circuits/hv')
 	event.replaceInput({ input: 'nuclearcraft:gelatin' }, 'nuclearcraft:gelatin', '#forge:rubber_plates')
 	event.replaceInput({ input: 'nuclearcraft:lithium_ion_cell' }, 'nuclearcraft:lithium_ion_cell', '#gtceu:batteries/hv')
+	event.replaceInput({ output: /nuclearcraft:hev/ }, 'nuclearcraft:plate_extreme', 'nuclearcraft:plate_advanced')
 	
 	event.remove({ id: 'nuclearcraft:heavy_shielding' })
 	event.shaped(

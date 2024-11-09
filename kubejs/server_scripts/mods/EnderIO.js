@@ -541,7 +541,7 @@ if (isHarderMode) {
 
     event.recipes.gtceu.chemical_reactor('kubejs:dew_of_the_void')
         .itemInputs('enderio:pulsating_powder', 'enderio:vibrant_powder')
-        .inputFluids('kubejs:resonant_ender 4000')
+        .inputFluids('thermal:ender 4000')
         .outputFluids('enderio:dew_of_the_void 2000')
         .duration(84)
         .EUt(15)
@@ -569,17 +569,32 @@ if (isHarderMode) {
 
     // Crafter
     event.remove({ id: 'enderio:crafter' })
-    event.shaped('enderio:crafter', [
-        'RCR',
-        'GFG',
-        'SSS'
-    ], {
-        C: 'minecraft:crafting_table',
-        F: 'gtceu:lv_machine_hull',
-        G: 'enderio:iron_gear',
-        R: 'kubejs:resonating_crystal',
-        S: 'enderio:item_conduit'
-    }).id('kubejs:crafter')
+    if(!isHarderMode) {
+        event.shaped('enderio:crafter', [
+            'RCR',
+            'GFG',
+            'SSS'
+        ], {
+            C: 'minecraft:crafting_table',
+            F: 'gtceu:lv_machine_hull',
+            G: 'enderio:iron_gear',
+            R: 'kubejs:resonating_crystal',
+            S: 'enderio:item_conduit'
+        }).id('enderio:crafter')
+    } else {
+        event.shaped('enderio:crafter', [
+            'RCR',
+            'GFG',
+            'SSS'
+        ], {
+            C: 'minecraft:crafting_table',
+            F: 'gtceu:lv_machine_hull',
+            G: 'enderio:iron_gear',
+            R: 'kubejs:resonating_crystal',
+            S: 'gtceu:pulsating_alloy_single_wire'
+        }).id('enderio:crafter')
+    }
+    
 
     //Z-Logic Controller
     event.shaped('enderio:z_logic_controller', [

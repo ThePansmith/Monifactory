@@ -7,16 +7,16 @@ ServerEvents.recipes(event => {
     // event.replaceInput({ output: /gold_barrel/ }, 'minecraft:gold_ingot', 'minecraft:iron_ingot')
     // event.replaceInput({ output: /diamond_barrel/ }, 'minecraft:diamond', 'gtceu:vibrant_alloy_ingot')
     // event.replaceInput({ output: /netherite_barrel/ }, 'minecraft:netherite_ingot', 'gtceu:dark_soularium_ingot')
-
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_barrel/ })
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_chest/ })
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_shulker_box/ })
     event.remove(/^sophisticatedstorage:limited.+barrel.+/)
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_to_[A-Za-z]+_tier_upgrade/ })
-    event.remove({ input: 'minecraft:redstone_torch', mod: 'sophisticatedstorage'})
+    event.remove({ id: "sophisticatedstorage:xp_pump_upgrade"})
+    event.remove({ id: "sophisticatedbackpacks:xp_pump_upgrade"})
     
     var barrelupgrade = [
-        [Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'), 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:barrel'],
+        [Item.of('sophisticatedstorage:gold_barrel', '{woodType:"spruce"}'), 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:barrel'],
         ['sophisticatedstorage:basic_to_gold_tier_upgrade', 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:iron_ingot'],
         ['sophisticatedstorage:gold_to_diamond_tier_upgrade', 'gtceu:aluminium_ingot', 'gtceu:aluminium_ingot', 'sophisticatedstorage:basic_to_gold_tier_upgrade'],
         ['sophisticatedstorage:diamond_to_netherite_tier_upgrade', 'gtceu:stainless_steel_ingot', 'gtceu:stainless_steel_ingot', 'sophisticatedstorage:gold_to_diamond_tier_upgrade'],
@@ -35,6 +35,53 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'sophisticatedstorage:controller' })
+
+            event.shaped(
+                'sophisticatedstorage:controller', [
+                'III',
+                'CDC',
+                'IEI'
+            ], {
+                I: "#forge:plates/steel",
+                C: "#gtceu:circuits/lv",
+                D: "#moni:SophContainer",
+                E: "#moni:SophGemBlock"
+            })
+            event.shaped(
+                'sophisticatedstorage:storage_input', [
+                'III',
+                'CDC',
+                'IEI'
+            ], {
+                I: "#forge:plates/steel",
+                C: "#gtceu:circuits/lv",
+                D: "#moni:SophContainer",
+                E: "#forge:storage_blocks/gold"
+            })
+            event.shaped(
+                'sophisticatedstorage:storage_output', [
+                'IEI',
+                'CDC',
+                'III'
+            ], {
+                I: "#forge:plates/steel",
+                C: "#gtceu:circuits/lv",
+                D: "#moni:SophContainer",
+                E: "#forge:storage_blocks/gold"
+            })
+
+            event.shaped(
+                'sophisticatedstorage:storage_io', [
+                'III',
+                'SDT',
+                'III'
+            ], {
+                I: "#forge:plates/steel",
+                S: "sophisticatedstorage:storage_input",
+                T: "sophisticatedstorage:storage_output",
+                D: "#moni:SophContainer",
+        })
+
 
     // Backpacks
     event.remove({ output: 'sophisticatedbackpacks:copper_backpack' })
@@ -139,7 +186,8 @@ ServerEvents.recipes(event => {
         })
 
         event.remove({ output: 'sophisticatedstorage:compression_upgrade' })
-
+        event.remove({ id: 'sophisticatedbackpacks:advanced_magnet_upgrade' })
+        event.remove({ id: 'sophisticatedstorage:advanced_magnet_upgrade' })
 
 
 

@@ -11,8 +11,6 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(16)
 
-    event.smelting('2x minecraft:slime_ball', 'gtceu:plant_ball')
-
     event.shaped(
         'minecraft:wither_skeleton_skull', [
             "AA ",
@@ -61,7 +59,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:dark_steel_machine_hull')
         .duration(50)
         .EUt(16)
-				.circuit(8)
+				.circuit(6)
 
     event.shaped(
         'hostilenetworks:sim_chamber', [
@@ -108,19 +106,6 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(20)
 
-    event.recipes.gtceu.forge_hammer('dust')
-        .itemInputs('minecraft:sand')
-        .itemOutputs('kubejs:dust')
-        .duration(16)
-        .EUt(10)
-
-    event.recipes.gtceu.chemical_reactor('gt_clay')
-        .itemInputs('kubejs:dust')
-        .itemOutputs('minecraft:clay')
-        .inputFluids('water')
-        .duration(20)
-        .EUt(15)
-
     event.recipes.gtceu.alloy_smelter('carbon_fiber_mesh_coal')
         .itemInputs(['4x minecraft:string', 'gtceu:coal_dust'])
         .itemOutputs('gtceu:carbon_fiber_mesh')
@@ -138,20 +123,99 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:pulsating_mesh')
         .duration(200)
         .EUt(16)
+
+        //IMPOSSIBLE REALM DATA
+        let predictions = [
+            ['overworld', 1],
+            ['nether', 2],
+            ['end', 4]
+        ]
+        predictions.forEach(item => {
+            event.shaped(
+                Item.of('kubejs:impossible_realm_data', item[1]), [
+                    'ABA',
+                    'BAB',
+                    'ABA'
+                ], {
+                    A: `hostilenetworks:${item[0]}_prediction`,
+                    B: 'kubejs:solidified_experience'
+                }
+            )
+        })
+        
+        event.shaped(
+            '2x kubejs:impossible_realm_data', [
+                'ABA',
+                'BAB',
+                'ABA'
+            ], {
+                A: 'hostilenetworks:nether_prediction',
+                B: 'kubejs:solidified_experience'
+            }
+        )
+        event.shaped(
+            '4x kubejs:impossible_realm_data', [
+                'ABA',
+                'BAB',
+                'ABA'
+            ], {
+                A: 'hostilenetworks:end_prediction',
+                B: 'kubejs:solidified_experience'
+            }
+        )
+
+        event.recipes.gtceu.extractor('extract_quantum_flux')
+            .itemInputs('kubejs:impossible_realm_data')
+            .itemOutputs('kubejs:quantum_flux')
+            .duration(100)
+            .EUt(3000)
+
+        //LAIR DATA
+        let lairs = [
+            ['deep_dark', 'overworld', 'deepslate'],
+            ['wither_realm', 'nether', 'netherrack'],
+            ['dragon_lair', 'end', 'endstone']
+        ]
+        lairs.forEach(item =>{
+            event.shaped(
+                `kubejs:${item[0]}_data`, [
+                    'ABB',
+                    'BBB',
+                    'BBB'
+                ], {
+                    A: 'kubejs:impossible_realm_data',
+                    B: `hostilenetworks:${item[1]}_prediction`
+                }
+            )
+            event.recipes.gtceu.canner(`canning_${item[0]}_data`)
+                .itemInputs('1x kubejs:impossible_realm_data', `6x hostilenetworks:${item[1]}_prediction`)
+                .inputFluids(Fluid.of('enderio:xp_juice', 140))
+                .itemOutputs(`1x kubejs:${item[0]}_data`)
+                .duration(20)
+                .EUt(60)
+            event.recipes.gtceu.canner(`advanced_canning_${item[0]}_data`)
+                .itemInputs([`3x gtceu:small_${item[2]}_dust`, `8x hostilenetworks:${item[1]}_prediction`])
+                .inputFluids(Fluid.of('enderio:xp_juice', 500))
+                .itemOutputs(`2x kubejs:${item[0]}_data`)
+                .duration(20)
+                .EUt(960)
+        })
+
+
     }
 })
 
 ItemEvents.rightClicked(event => {
     if (event.item.id === 'hostilenetworks:overworld_prediction') {
-        event.player.xp += 10
+        event.player.addXP(10)
         event.item.count--
     }
     if (event.item.id === 'hostilenetworks:nether_prediction') {
-        event.player.xp += 20
+        event.player.addXP(20)
         event.item.count--
     }
     if (event.item.id === 'hostilenetworks:end_prediction') {
-        event.player.xp += 25
+        event.player.addXP(25)
         event.item.count--
     }
 })

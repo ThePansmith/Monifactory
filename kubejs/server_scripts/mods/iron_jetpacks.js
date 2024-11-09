@@ -197,8 +197,8 @@ ServerEvents.recipes(event => {
         C: 'enderio:fused_quartz'
     }).id('kubejs:ironjetpacks/misc/empty_soularium_jetpack_unit');
 
-    event.recipes.gtceu.alloy_smelter('kubejs:ironjetpacks/misc/flight_control_unit')
-        .itemInputs('4x minecraft:ghast_tear', 'kubejs:empty_soularium_jetpack_unit')
+    event.recipes.gtceu.canner('kubejs:ironjetpacks/misc/flight_control_unit')
+        .itemInputs('kubejs:empty_soularium_jetpack_unit', '4x minecraft:ghast_tear')
         .itemOutputs('kubejs:flight_control_unit')
         .duration(100)
         .EUt(2000)
@@ -208,14 +208,14 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:glowstone 4032')
         .itemOutputs('kubejs:glowstone_elevation_unit')
         .duration(100)
-        .EUt(7)
+        .EUt(2000)
 
     event.recipes.gtceu.canner('kubejs:ironjetpacks/misc/cyrotheum_coolant_unit')
         .itemInputs('kubejs:empty_fluxed_jetpack_unit')
         .inputFluids('kubejs:molten_cryotheum 6000')
         .itemOutputs('kubejs:cryotheum_coolant_unit')
         .duration(100)
-        .EUt(7)
+        .EUt(2000)
 
 
     //Cells, thermal exp.

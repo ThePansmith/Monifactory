@@ -2,7 +2,7 @@ type = slideshow
 
 slideshow-meta {
     name = moni
-    width = 1920
+    width = 1080
     height = 1080
     x = 0
     y = 0

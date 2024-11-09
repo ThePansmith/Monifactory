@@ -1,5 +1,5 @@
 if (Platform.isLoaded('tempad')) {
-    console.log("Tempad found, loading compat script")
+    console.log("Tempad found, loading compat scripts...")
     LootJS.modifiers((event) => {
         event.addLootTableModifier("minecraft:chests/simple_dungeon")
             .randomChance(0.02)
@@ -30,4 +30,5 @@ if (Platform.isLoaded('tempad')) {
             .duration(100)
             .EUt(512)
     })
-}
+    console.log("Tempad compat scripts successfully loaded!")
+} else { console.log("Tempad was not found, skipping its compat scripts.")}

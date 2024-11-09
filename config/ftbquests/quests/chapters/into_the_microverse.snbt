@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "into_the_microverse"
-	group: ""
+	group: "18F0ED1F9A002C08"
 	icon: "kubejs:microminer_t1"
 	id: "68F29871402A6B1B"
-	order_index: 6
+	order_index: 3
 	quest_links: [{
 		id: "3494A1A9317B9F3B"
 		linked_quest: "5F688F22A3DB2ADD"
@@ -521,7 +521,7 @@
 				"You can also hide the spacesuit from your playermodel via the cosmetic armor buttons, if you wish."
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "gcyr:space_helmet"
 				tag: {
 					Damage: 0
@@ -538,7 +538,7 @@
 				{
 					id: "0DFC776179D464C1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gcyr:space_helmet"
 						tag: {
 							Damage: 0
@@ -549,7 +549,7 @@
 				{
 					id: "0399F0828F49C6DF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gcyr:space_chestplate"
 						tag: {
 							Damage: 0
@@ -560,7 +560,7 @@
 				{
 					id: "19B6A6B00F982087"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gcyr:space_leggings"
 						tag: {
 							Damage: 0
@@ -571,7 +571,7 @@
 				{
 					id: "03A19D83B2062391"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "gcyr:space_boots"
 						tag: {
 							Damage: 0
@@ -604,7 +604,7 @@
 			tasks: [{
 				id: "1227AEB2B7B46115"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gcyr:id_chip"
 					tag: { }
 				}
@@ -661,7 +661,7 @@
 		}
 		{
 			dependencies: ["5E2489DE2E840738"]
-			description: ["Mix &9Oxygen&r and &91,1-Dimethylhydrazine&r together to make &9Rocket Fuel&r."]
+			description: ["Mix &9Oxygen&r and &9Dimethylhydrazine&r together to make &9Rocket Fuel&r."]
 			id: "24415A26E5A0FD72"
 			rewards: [{
 				count: 2
@@ -1026,7 +1026,7 @@
 				"* Cassiterite Ore"
 				"* Redstone Ore"
 				"* Nickel Ore"
-				"&2* Imenite Ore&r"
+				"&2* Ilmenite Ore&r"
 				"&6* Uraninite Ore"
 				"* Galena Ore"
 				"&2* Molybdenum Ore&r"
@@ -1095,6 +1095,58 @@
 			title: "Exploration can pay off!"
 			x: 9.0d
 			y: -8.5d
+		}
+		{
+			dependencies: ["555BEBF7FD6012B7"]
+			description: [
+				"With access to &6Crystaltine components&r, &3Auto Crafting Tables&r are now an option for automation of any size of crafting table - including 3x3."
+				""
+				"Every &3Auto Crafting Table&r comes with three recipe slots in the top-right corner. To configure a recipe, the crafting grid must be filled with the recipe you wish to automate, and then saved to the table by &8Shift-Left-Clicking&r one of those recipe slots."
+				""
+				"Saved recipes must then be selected with a &8Left-Click&r to indicate that that recipe should be crafted. Only one recipe can be selected at a time."
+				"{@pagebreak}"
+				"Lastly, place an inventory atop the table - The &3Auto Crafting Table&r cannot be inserted to, and &ecan only pull items from that inventory&r. At this point you can put ingredients in the inventory and &aRF&r power in the table to begin automated crafting."
+				""
+				"In compensation for the cost of the &6Crystaltine Ingots&r and confusing logistics, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
+			]
+			icon: "extendedcrafting:basic_auto_table"
+			id: "0DB8063A7972E1C0"
+			tasks: [{
+				id: "583E42747EFEE1D3"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "extendedcrafting:basic_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:advanced_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:elite_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:ultimate_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:epic_auto_table"
+							}
+						]
+					}
+				}
+				title: "Any Auto Crafting Table"
+				type: "item"
+			}]
+			title: "Auto Crafting Tables"
+			x: -3.0d
+			y: -8.25d
 		}
 	]
 	title: "Into The Microverse"

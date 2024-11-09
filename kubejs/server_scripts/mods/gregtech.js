@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(32)
 
-    //Sunnarium
+    //Sunnarium plates
     event.remove({ id: 'gtceu:compressor/compress_plate_dust_sunnarium_'})
     event.shaped(
         '4x gtceu:sunnarium_plate', [
@@ -20,18 +20,6 @@ ServerEvents.recipes(event => {
         ], {
             P: 'gtceu:hastelloy_c_276_plate',
             S: 'gtceu:sunnarium_dust'
-        }
-    )
-
-    event.shaped(
-        '4x gtceu:enriched_sunnarium_dust', [
-            'ABA',
-            'BCB',
-            'ABA'
-        ], {
-            A: 'kubejs:stabilized_neptunium',
-            B: 'kubejs:stabilized_americium',
-            C: 'gtceu:sunnarium_dust'
         }
     )
 
@@ -107,38 +95,6 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(16)
 
-    //IMPOSSIBLE REALM DATA
-    event.shaped(
-        'kubejs:impossible_realm_data', [
-            'ABA',
-            'BAB',
-            'ABA'
-        ], {
-            A: 'hostilenetworks:overworld_prediction',
-            B: 'kubejs:solidified_experience'
-        }
-    )
-    event.shaped(
-        '2x kubejs:impossible_realm_data', [
-            'ABA',
-            'BAB',
-            'ABA'
-        ], {
-            A: 'hostilenetworks:nether_prediction',
-            B: 'kubejs:solidified_experience'
-        }
-    )
-    event.shaped(
-        '4x kubejs:impossible_realm_data', [
-            'ABA',
-            'BAB',
-            'ABA'
-        ], {
-            A: 'hostilenetworks:end_prediction',
-            B: 'kubejs:solidified_experience'
-        }
-    )
-
     //NETHER STAR RECIPES
     event.remove({ id: "hostilenetworks:living_matter/extraterrestrial/nether_star" })
     event.remove({ id: "gtceu:implosion_compressor/implodedust_nether_star_tnt" })
@@ -187,47 +143,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.recipes.gtceu.extractor('extract_quantum_flux')
-        .itemInputs('kubejs:impossible_realm_data')
-        .itemOutputs('kubejs:quantum_flux')
-        .duration(100)
-        .EUt(3000)
-
-
-    //LAIR DATA
-    event.shaped(
-        'kubejs:deep_dark_data', [
-            'ABB',
-            'BBB',
-            'BBB'
-        ], {
-            A: 'kubejs:impossible_realm_data',
-            B: 'hostilenetworks:overworld_prediction'
-        }
-    )
-
-    event.shaped(
-        'kubejs:dragon_lair_data', [
-            'ABB',
-            'BBB',
-            'BBB'
-        ], {
-            A: 'kubejs:impossible_realm_data',
-            B: 'hostilenetworks:end_prediction'
-        }
-    )
-
-    event.shaped(
-        'kubejs:wither_realm_data', [
-            'ABB',
-            'BBB',
-            'BBB'
-        ], {
-            A: 'kubejs:impossible_realm_data',
-            B: 'hostilenetworks:nether_prediction'
-        }
-    )
-
     //Hot MV ingots
     event.remove({ input: ['gtceu:hot_kanthal_ingot', "gtceu:hot_silicon_ingot"]})
     event.replaceOutput(
@@ -243,5 +158,22 @@ ServerEvents.recipes(event => {
     //Ender Pearl dust Electrolysis
     //event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })
 
+    // rock breaker
+    const generateRockBreakerStoneRecipe = (stoneItem) => {
+        event.recipes.gtceu.rock_breaker('kubejs:rock_breaker_' + stoneItem.replace(':', '_'))
+            .notConsumable(stoneItem)
+            .itemOutputs(stoneItem)
+            .duration(16)
+            .EUt(60)
+            .addData('fluidA', 'minecraft:lava')
+            .addData('fluidB', 'minecraft:water')
+    }
 
+    generateRockBreakerStoneRecipe('minecraft:calcite')
+    generateRockBreakerStoneRecipe('minecraft:tuff')
+    generateRockBreakerStoneRecipe('quark:jasper')
+    generateRockBreakerStoneRecipe('quark:limestone')
+    generateRockBreakerStoneRecipe('quark:permafrost')
+    generateRockBreakerStoneRecipe('quark:shale')
+    generateRockBreakerStoneRecipe('quark:myalite')
 })

@@ -3,10 +3,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "simulating_resources"
-	group: ""
+	group: "0D5BFFD0A5E49312"
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
-	order_index: 4
+	order_index: 2
 	quest_links: [
 		{
 			id: "1344E3300C29A4CF"
@@ -25,35 +25,7 @@
 	]
 	quests: [
 		{
-			dependencies: ["715BC5C7DAC53B7B"]
-			description: [
-				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
-				""
-				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron, gold, tin, copper, diamonds&r and many more!), through pristine matter."
-				""
-				"Setting up HNN automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
-				""
-				"HNN changes machines, making them no longer sided, so you can input and output from any side, as well as allowing them to be controlled by redstone."
-				""
-				"Yes, you can also use it for generating power... &owith Diamonds."
-			]
-			disable_toast: true
-			id: "05B3758B509861B8"
-			shape: "hexagon"
-			tasks: [{
-				id: "148FF0671E07B839"
-				item: "hostilenetworks:sim_chamber"
-				type: "item"
-			}]
-			title: "Simulating Mobs"
-			x: -1.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"05B3758B509861B8"
-				"6A914B240E1A7BCB"
-			]
+			dependencies: ["6A914B240E1A7BCB"]
 			description: [
 				"Simulating mob kills will occasionally result in &6Pristine Matter&r of that mob's type."
 				""
@@ -81,7 +53,7 @@
 			description: [
 				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack."
 				""
-				"Paired with a self-sustaining &bDeep Mob Evolution&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
+				"Paired with a self-sustaining &bHostile Neural Networks&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
 				""
 				"Just like other &bThermal Expansion&r dynamos, the &6Numismatic Dynamo&r can be given &eAugments&r to produce more power."
 			]
@@ -92,6 +64,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "552C09235D8FE4F1"
 				item: "thermal:dynamo_numismatic"
@@ -151,7 +124,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["05B3758B509861B8"]
 			description: ["You can combine various items with a &6Model Framework&r for a completed &6Data Model&r that you can run inside the &3Simulation Chamber&r."]
 			icon: "hostilenetworks:blank_data_model"
 			id: "73C6E2724EBEC997"
@@ -192,7 +164,7 @@
 				{
 					id: "39BB37A04BD2A17D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -207,7 +179,7 @@
 				{
 					id: "02A84CAF628AA38A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -222,7 +194,7 @@
 				{
 					id: "7CD80AE13126B3DC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -258,7 +230,7 @@
 				{
 					id: "392C69C0A027A256"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -273,7 +245,7 @@
 				{
 					id: "5AE0806274510B68"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -288,7 +260,7 @@
 				{
 					id: "3D6D1F055EE8FCCF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -303,7 +275,7 @@
 				{
 					id: "044CAD01DB09EE97"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -318,7 +290,7 @@
 				{
 					id: "1FE91F62FA6DBFDC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -333,7 +305,7 @@
 				{
 					id: "29EBB069295CAC7A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -348,7 +320,7 @@
 				{
 					id: "4353BDD964D462FA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -444,7 +416,7 @@
 				{
 					id: "4F5F5198F39BABCA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -459,7 +431,7 @@
 				{
 					id: "1BA5BE35C701AC5C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -474,7 +446,7 @@
 				{
 					id: "2D300F4677701B59"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -489,7 +461,7 @@
 				{
 					id: "1C75BB7AF0616CD8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
@@ -504,7 +476,7 @@
 				{
 					id: "0A2B07B076638423"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {

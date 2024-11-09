@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
     event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil', 'thermal:dynamo_output_augment'] })
     event.remove({ output: ['thermal:dynamo_throttle_augment', 'thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
-    event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame', 'thermal:fluid_cell_frame'] })
-    event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter']})
+    event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame'] })
+    event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer']})
 
     event.remove({ id: /thermal:[A-Za-z]+_dust_/ }) //I don't even know what recipes this line of code is supposed to target
     event.remove({ id: 'thermal:fire_charge/obsidian_glass_2' })
@@ -296,6 +296,22 @@ ServerEvents.recipes(event => {
         E: 'thermal:rf_coil'
     }).id('kubejs:charge_bench')
 
+    //Phytogenic Insolator
+    event.remove({ id: "thermal:machine_insolator" })
+    event.shaped(
+        "thermal:machine_insolator", [
+        " A ",
+        "SBS",
+        "CRC"
+    ], {
+        A: "gtceu:double_steel_plate",
+        B: "minecraft:bucket",
+        S: '#minecraft:saplings',
+        R: 'thermal:rf_coil',
+        C: '#forge:gears/copper'
+    }
+    ).id("thermal:machine_insolator")
+
     event.shaped(
         'thermal:device_potion_diffuser', [
             ' A ',
@@ -342,11 +358,11 @@ ServerEvents.recipes(event => {
         'ABA'
     ], {
         A: '#forge:plates/lead',
-        B: '#forge:rods/lead',
-        C: 'enderio:vibrant_capacitor_bank'
+        B: '#forge:rods/electrum',
+        C: 'enderio:advanced_capacitor_bank'
     }).id('kubejs:energy_cell_frame')
     event.remove('thermal:energy_cell');
-    event.recipes.gtceu.alloy_smelter('kubejs:energy_cell')
+    event.recipes.gtceu.canner('kubejs:energy_cell')
         .itemInputs('thermal:energy_cell_frame', '#forge:storage_blocks/redstone')
         .itemOutputs('thermal:energy_cell')
         .duration(500)
@@ -416,6 +432,11 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.recipes.gtceu.mixer("mixer_primal_mana")
+    .itemInputs("2x kubejs:petrotheum_dust", "2x kubejs:pyrotheum_dust", "2x kubejs:aerotheum_dust", "2x kubejs:cryotheum_dust", "1x gtceu:diamond_dust")
+    .itemOutputs("4x kubejs:primal_mana")
+    .duration(100)
+    .EUt(100)
 
     event.shaped(
         '2x kubejs:petrotheum_dust', [
@@ -429,6 +450,12 @@ ServerEvents.recipes(event => {
         }
     ).noMirror().noShrink()
 
+    event.recipes.gtceu.mixer("mixer_petrotheum")
+    .itemInputs("2x thermal:basalz_powder", "minecraft:redstone",  "gtceu:obsidian_dust")
+    .itemOutputs("2x kubejs:petrotheum_dust")
+    .duration(40)
+    .EUt(20)
+
     event.shaped(
         '2x kubejs:pyrotheum_dust', [
             'AA ',
@@ -441,6 +468,11 @@ ServerEvents.recipes(event => {
         }
     ).noMirror().noShrink()
 
+    event.recipes.gtceu.mixer("mixer_pyrotheum")
+    .itemInputs("2x minecraft:blaze_powder", "minecraft:redstone",  "gtceu:sulfur_dust")
+    .itemOutputs("2x kubejs:pyrotheum_dust")
+    .duration(40)
+    .EUt(20)
 
     event.shaped(
         '2x kubejs:aerotheum_dust', [
@@ -454,6 +486,11 @@ ServerEvents.recipes(event => {
         }
     ).noMirror().noShrink()
 
+    event.recipes.gtceu.mixer("mixer_aerotheum")
+    .itemInputs("2x thermal:blitz_powder", "minecraft:redstone",  "gtceu:saltpeter_dust")
+    .itemOutputs("2x kubejs:aerotheum_dust")
+    .duration(40)
+    .EUt(20)
 
     event.shaped(
         '2x kubejs:cryotheum_dust', [
@@ -467,6 +504,11 @@ ServerEvents.recipes(event => {
         }
     ).noMirror().noShrink()
 
+    event.recipes.gtceu.mixer("mixer_cryotheum")
+    .itemInputs("2x thermal:blizz_powder", "minecraft:redstone",  "minecraft:snowball")
+    .itemOutputs("2x kubejs:cryotheum_dust")
+    .duration(40)
+    .EUt(20)
 
     event.recipes.gtceu.chemical_reactor('energized_clathrate')
         .itemInputs('minecraft:quartz')
@@ -501,19 +543,26 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(16);
 
-    // Devices
-    event.remove({ id: "thermal:device_water_gen" }) // aqua accumulator
-    event.shaped(
-        "thermal:device_water_gen", [
-            'BBB',
-            'BCB',
-            'BBB'
-        ], {
-            B: "enderio:fused_quartz",
-            C: "watercollector:watercollector"
-        }
-    ).id('kubejs:device_water_gen');
+    // Thermal Mobdrops (for HM nether star recipe mostly)
+    event.recipes.gtceu.compressor('blitz_rod')
+        .itemInputs('4x thermal:blitz_powder')
+        .itemOutputs('thermal:blitz_rod')
+        .duration(200)
+        .EUt(2)
 
+    event.recipes.gtceu.compressor('blizz_rod')
+        .itemInputs('4x thermal:blizz_powder')
+        .itemOutputs('thermal:blizz_rod')
+        .duration(200)
+        .EUt(2)
+
+    event.recipes.gtceu.compressor('basalz_rod')
+        .itemInputs('4x thermal:basalz_powder')
+        .itemOutputs('thermal:basalz_rod')
+        .duration(200)
+        .EUt(2)
+
+    // Devices
     event.remove({ type: "thermal:rock_gen", not: { output: "minecraft:cobblestone" } })
 
     event.remove({ id: 'thermal:device_nullifier' });
@@ -528,32 +577,6 @@ ServerEvents.recipes(event => {
         D: '#forge:gears/iron',
         E: 'thermal:redstone_servo'
     }).id('kubejs:device_nullifier');
-
-    event.remove({ id: 'thermal:device_fisher' });
-    event.shaped('thermal:device_fisher', [
-        ' A ',
-        'BCB',
-        'DED'
-    ], {
-        A: 'fishing_rod',
-        B: 'iron_bars',
-        C: 'thermal:machine_frame', // casing
-        D: '#forge:gears/iron',
-        E: 'thermal:redstone_servo'
-    }).id('kubejs:device_fisher');
-
-    event.remove({ id: 'thermal:device_xp_condenser' });
-    event.shaped('thermal:device_xp_condenser', [
-        ' A ',
-        'BCB',
-        'DED'
-    ], {
-        A: 'thermal:xp_crystal',
-        B: '#forge:ingots/gold',
-        C: 'thermal:machine_frame', // casing
-        D: '#forge:gears/iron',
-        E: 'thermal:redstone_servo'
-    }).id('kubejs:device_xp_condenser');
 
     event.remove({ id: 'thermal:device_collector' });
     event.shaped('thermal:device_collector', [
