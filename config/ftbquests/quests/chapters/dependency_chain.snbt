@@ -90,7 +90,7 @@
 			y: -3.0d
 		}
 		{
-			hide_until_deps_visible: true
+			hide: true
 			id: "6BBACA979DF9BA30"
 			rewards: [{
 				auto: "invisible"
@@ -109,7 +109,7 @@
 			y: -1.5d
 		}
 		{
-			hide_until_deps_visible: true
+			hide: true
 			id: "7F34A1A10CD8E058"
 			rewards: [{
 				auto: "invisible"
@@ -128,7 +128,7 @@
 			y: -1.5d
 		}
 		{
-			hide_until_deps_visible: true
+			hide: true
 			id: "57AB012919A985A2"
 			rewards: [{
 				auto: "invisible"
