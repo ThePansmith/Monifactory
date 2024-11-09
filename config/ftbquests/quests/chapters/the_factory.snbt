@@ -283,7 +283,7 @@
 			description: [
 				"&6Robot Arms&r are components of several powerful machines, and are also useful as a machine cover for precise item movement."
 				""
-				"It's one of the most expensive components, as it requires motors, a piston, and a circuit."
+				"It's one of the more expensive components, as it requires motors, a piston, and a circuit."
 			]
 			id: "055193574D203872"
 			rewards: [{
@@ -1000,9 +1000,9 @@
 			description: [
 				"Using plain &3Steam Dynamos&f is pretty inefficient."
 				""
-				"It's strongly recommended to upgrade your Dynamos into &3Steam Boilers&f and &3Steam Turbines&f. The ratio is always &a1:2&r if all Dynamos are equally upgraded."
+				"It's strongly recommended to upgrade your Dynamos into &3Steam Boilers&f and &3Steam Turbines&f. The ratio is always &a1:2&r if all machines are equally upgraded."
 				""
-				"This greatly increases the overall efficiency and the amount of power produced, from &a40 RF/t&r per basic steam dynamo to &a320 RF/t&r per set of three augmented dynamos."
+				"This greatly increases the overall efficiency and the amount of power produced, from &a40 RF/t&r per basic steam dynamo to &a320 RF/t&r per set of three augmented machines."
 			]
 			hide_until_deps_visible: true
 			icon: "systeams:steam_dynamo"
@@ -1199,7 +1199,7 @@
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
 				""
-				"&4Does not generate byproducts!&r You need an HV-tier macerator or higher to get those."
+				"&4Does not generate byproducts!&r You need an HV-tier macerator or better to get those."
 			]
 			hide_until_deps_visible: true
 			icon: "gtceu:steam_grinder"
@@ -1955,7 +1955,7 @@
 				""
 				"Here's a list of some covers there are in the game, and what they do:"
 				""
-				"- &lConveyor&r: transfers items continuously to or from an adjacent inventory; capable of round robin."
+				"- &lConveyor&r: transfers items continuously to or from an adjacent inventory; is capable of round robin."
 				""
 				"- &lPump&r: is much like a &aConveyor&f, but for fluids."
 				""
