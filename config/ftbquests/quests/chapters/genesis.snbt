@@ -43,7 +43,7 @@
 				""
 				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"blue\"},{\"text\":\"Monifactory repository\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"blue\"}]"
 				""
-				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that the issue can not be replicated with the mod on it's own, and if it can, report it to the mod's repository instead."
+				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that the issue can not be replicated with the mod on its own, and if it can, report it to the mod's repository instead."
 			]
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
@@ -61,7 +61,7 @@
 		{
 			dependencies: ["2A511DB40C66CF35"]
 			description: [
-				"This pack is intended to be played in the &bOverworld and Lost City Dimensions&r."
+				"This pack is intended to be played in the &bOverworld&r and &bLost City Dimensions&r."
 				""
 				"If you wish to build your base in total safety, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the &7Void World&r. "
 				""
@@ -159,13 +159,6 @@
 					title: "&6Infinite Cakes!"
 					type: "custom"
 				}
-				{
-					auto: "invisible"
-					id: "1BCE4323D97D9083"
-					ignore_reward_blocking: true
-					stage: "intro_complete"
-					type: "gamestage"
-				}
 			]
 			shape: "hexagon"
 			size: 2.0d
@@ -185,9 +178,9 @@
 			description: [
 				"In &9Monifactory&r, all dimensional transit is done through the power of &6TelePastries&r. No Portals here!"
 				""
-				"This quest is repeatable and gives you a free cake to the &2Overworld&r, &3Lost City&r, or &7Void World&r every hour. You can also refill your cakes with the items indicated in their tooltips."
+				"This quest is repeatable and gives you a free cake to the &2Overworld&r or &7Void World&r every hour. You can also refill your cakes with the items indicated in their tooltips."
 				""
-				"&cDon't forget to have a way to get back!&r If you do, click on the Emergency Items heart on the right side of the quest book screen."
+				"&cDon't forget to have a way to get back!&r If you do forget, click on the Emergency Items heart on the right side of the quest book screen."
 			]
 			disable_toast: true
 			icon: "telepastries:overworld_cake"
@@ -306,7 +299,7 @@
 			description: [
 				"&c&rOres in &9Monifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area!"
 				"&r"
-				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
+				"While the Prospector requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
 				"{@pagebreak}"
 				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &9Goethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
 				""
@@ -350,9 +343,9 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at base and on the go, as well as offering a variety of both helpful and fun upgrades."
+				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at your base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
-				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 3 barrels worth of items at it's lowest tier, costing only a bit of iron to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
+				"&bSophisticated Storage&r in particular is great for cheap storage. It's able to store 3 barrels' worth of items at its lowest tier (which costs only a bit of iron to craft), and can be upgraded to hold even more items."
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
@@ -396,9 +389,9 @@
 			description: [
 				"[\"Take a peek at the \",{\"text\":\"Elements and Alloys quest book tab\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"25FEB9E61EEC1A96\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the chapter\"}},\". This might seem a bit premature to suggest, but it has a reason.\"]"
 				""
-				"These are quests for a full stack of many of the materials in the game. Those are the materials you'll need to synthesize &5Omnium&r, the basic end game resource. It's the pack's way of letting you know what materials you should be prepared to mass produce as you approach the end."
+				"These are quests for a full stack of many of the materials in the game. Those are the materials you'll need to synthesize &5Omnium&r, the basic endgame resource. It's the pack's way of letting you know what materials you should be prepared to mass produce as you approach the end."
 				""
-				"Of course, it's not necessary or even advisable to try to finish up all of these quests the moment they become available. Some will be incredibly easy (like &6Iron&f and &6Copper&f), others will be brutally grindy at early tech levels. The rewards are all the same: &925 Monicoins each&f, so use your best judgement on which ones to complete and which to ignore for later."
+				"Of course, it's not necessary or even advisable to try to finish up all of these quests the moment they become available. Some will be incredibly easy (like &6Iron&f and &6Copper&f), while others will be brutally grindy at early tech levels. The rewards are all the same: &91 Moniquarter each&f, so use your best judgement on which ones to complete and which to ignore for later."
 			]
 			icon: "kubejs:mote_of_omnium"
 			id: "0C173EF148EFEF8E"
@@ -486,17 +479,17 @@
 			description: [
 				"&6Gregtech&r adds a decent bit of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
 				""
-				"[\"On the topic of crafting, if you are not already familiar with how \", {\"text\": \"recipe viewers\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B200AD6EFF90DFA\" } },\" like EMI or JEI, read that quest first.\"]"
+				"[\"On the topic of crafting, if you are not already familiar with how \", {\"text\": \"recipe viewers\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B200AD6EFF90DFA\" } },\" like EMI or JEI work, read that quest first.\"]"
 				""
 				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
 				""
 				"Let's start with &9[+]&r, as it's the simplest: right-click a crafting table, look up the recipe you need and press the &9[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
 				""
-				"&c[❤]&r and &a[┴]&r are used in tandem to create &arecipe trees&r. Pressing &a[┴]&r will pull up a &arecipe tree&r for that given item. Pressing &c[❤]&r on a recipe will mark it as the &cdefault recipe&r for that item, and will show that recipe (and the items used to craft it) in &arecipe trees&r. You can then add &cdefault recipes&r for the items used to craft that recipe, repeat ad nauseam. Note that you can click on a item in the &arecipe tree&r and it's recipes will be pulled up."
+				"&c[❤]&r and &a[┴]&r are used in tandem to create &arecipe trees&r. Pressing &a[┴]&r will pull up a &arecipe tree&r for that given item. Pressing &c[❤]&r on a recipe will mark it as the &cdefault recipe&r for that item, and will show that recipe (and the items used to craft it) in &arecipe trees&r. You can then add &cdefault recipes&r for the items used to craft that recipe, repeat ad nauseam. Note that you can click on a item in the &arecipe tree&r and its recipes will be pulled up."
 				"{@pagebreak}"
-				"In the &arecipe tree&r GUI, you can change the batch size by scrolling on the number to the right of the final result. Finally, and most importantly, you can press the &6Magnifying Glass&r to switch to &6Crafting Tree Mode&r, this will &edisplay the items that you need for every step to craft the number of items that you specified&r in your sidebar, and will dynamically update as you craft items. You can click on these &6Synthetic Favorites&r with your Craft to Inventory bind (unbinded by default) to &eautomatically craft and then push items back into your inventory&r when using a crafting table, or push the exact number of items needed if using a different inventory.&r"
+				"In the &arecipe tree&r GUI, you can change the batch size by scrolling on the number to the right of the final result. Finally, and most importantly, you can press the &6Magnifying Glass&r to switch to &6Crafting Tree Mode&r, this will &edisplay the items that you need for every step to craft the number of items that you specified&r in your sidebar, and will dynamically update as you craft items. You can click on these &6Synthetic Favorites&r with your Craft to Inventory bind (unbound by default) to &eautomatically craft and then push items back into your inventory&r when using a crafting table, or push the exact number of items needed if using a different inventory.&r"
 				""
-				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the &a[┴]&r button found in the bottom left of your screen and it will pull up the &arecipe tree&r GUI as well."
+				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the &a[┴]&r button found in the bottom left of your inventory screen and it will pull up the &arecipe tree&r GUI as well."
 			]
 			disable_toast: true
 			icon: "quark:crafter"
@@ -515,17 +508,17 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"The &eTool Belt&r is a item, which can store your tools, and exchange them easily! Right now, it has 2 slots, but later, once you unlock &6Steel&r, you can upgrade it with &6Belt Pouches&r, all the way to 9 slots, with an &3Anvil&r and some &aXP&r!"
+				"The &eTool Belt&r is a item which can store your tools and exchange them easily! Right now, it has 2 slots, but later, once you unlock &6Steel&r, you can upgrade it all the way to 9 slots with &6Belt Pouches&r, an &3Anvil&r, and some &aXP&r!"
 				""
-				"Make the Tool Belt, and you can use the keybind (default is `R'), while the belt is in your inventory or Bauble Slots &cand you are holding something, or the belt is not empty&r, to open its GUI. "
+				"Make the Tool Belt, and you can use the keybind (default is &6R&r), while the belt is in your inventory or Bauble Slots &cand you are holding something, or the belt is not empty&r, to open its GUI. "
 				""
 				"Alternatively, you can right click while holding the belt to open its inventory."
 				"{@pagebreak}"
-				"The Tool Belt is equipable as a &bBauble&r. Open your inventory and look for the Baubles button, and click it to reveal the additional bauble slots menu, and then put it in the Belt Slot. Or, just click in every bauble slot until it goes in, if you can't tell which bauble slot looks like a belt."
+				"The Tool Belt is equippable as a &bBauble&r. Open your inventory and look for the Baubles button, then click it to reveal the additional bauble slots menu, and put it in the Belt Slot. Or, if you can't tell which bauble slot looks like a belt, just click in every bauble slot until it goes in."
 				""
 				"The Tool Belt can store anything with a stack size of 1, like swords, pickaxes, &bGregTech&r tools, and the &6Terminal&r. It has also been modified a bit, so it also allows any &bStorage Drawers&r key, and &cdoesn't allow any Thermal Satchel&r."
 				""
-				"Now, you can insert and extract from the belt! You can also use the Keybinds `&eCycle Tool Left&r' and `&eCycle Tool Right&r' whilst you are in the GUI."
+				"Now, you can insert and extract from the belt! You can also use the Keybinds '&eCycle Tool Left&r' and '&eCycle Tool Right&r' whilst you are in the GUI."
 			]
 			id: "1B86EF5A24286787"
 			rewards: [{
@@ -665,9 +658,9 @@
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
-			description: ["At this point, you might as well just make a &3Multi Smelter&r. But it does smelt items at a blazing quick 5 ticks"]
+			description: ["It smelts items at a blazing quick &a5 ticks&r each. At this point, you might as well just make a &3Multi Smelter&r."]
+			hide_until_deps_complete: true
 			id: "69E77BD01CFF65EB"
-			invisible: true
 			rewards: [{
 				id: "2BBD659B19ED9807"
 				item: "kubejs:moni_nickel"
@@ -822,7 +815,7 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"&aMining Hammers&r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 of blocks (unless you're crouching) and mine quickly."
+				"&aMining Hammers&r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 area of blocks (unless you're crouching) and mine quickly."
 				""
 				"&2GTCEu now has Mining Hammers natively! You can craft them with any GT tool material. &r"
 				""
@@ -904,9 +897,9 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"The &aCrescent Hammer&r is for use on machines from &bThermal Expansion&f, but can be used for basic wrench interactions with blocks from almost every mod. &9It can also now adjust Gregtech pipes,"
+				"The &aCrescent Hammer&r is for use on machines from &bThermal Expansion&f, but can be used for basic wrench interactions with blocks from almost every mod. &9It can also now adjust Gregtech pipes."
 				""
-				"The &aYeta Wrench&r is used with machines and conduits from &bEnderIO&f, and has several special display modes (&6sneak-mouse wheel&f to switch between them)."
+				"The &aYeta Wrench&r is used with machines and conduits from &bEnder IO&f, and has several special display modes (&6sneak-mouse wheel&f to switch between them)."
 				""
 				"The &aGregTech Wrench&r is used to rotate GregTech machines and redefine their output sides. &2It also has some of the capabilities of the other Wrenches now.&r"
 				""
@@ -959,7 +952,7 @@
 			description: [
 				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
 				""
-				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the mortar and the plunger."
+				"Put a damaged tool and some material it's made of inside. For example, you'll need to use &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the Mortar and the Plunger."
 				""
 				"Also, you can now repair your free &6Mining Hammers&r with some &6Diamonds&r!"
 			]
@@ -984,7 +977,7 @@
 			description: [
 				"&6Redstone&f: Found only deep in the world, in massive veins paired with &6Cinnabar&f and &6Ruby&f."
 				""
-				"&6Copper&f: Two primary sources. &6Tetrahedrite&f veins are higher up, while &6Chalcopyrite&f veins are lower, paired with some small amounts of &6Iron&f. You'll also find &6Malachite&f inside of Iron veins, this is another type of copper ore."
+				"&6Copper&f: Two primary sources. &6Tetrahedrite&f veins are higher up, while &6Chalcopyrite&f veins are lower, paired with some small amounts of &6Iron&f. You'll also find &6Malachite&f inside of Iron veins; this is another type of copper ore."
 				""
 				"&6Tin&f: Found essentially at ground level. &6Cassiterite&f is another type of tin ore, and they're always found together. If you cannot find a vein of tin, there are small amounts of tin inside veins of &6Aluminium&f and &6Rock Salt&f, which might be enough to hold you over until you find a proper tin vein."
 				""
@@ -1043,9 +1036,9 @@
 			description: [
 				"For now, the best material to make these pipes out of is probably &6Tin&r."
 				""
-				"Their advantage over &5EnderIO &3Item Conduits&r is their far higher &6throughput&r. An unupgraded EIO Item Conduit transports &98 items per second&r, and up to &9128&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9multiple stacks per second&r."
+				"Their advantage over &bEnder IO &3Item Conduits&r is their far higher &6throughput&r. An unupgraded EIO Item Conduit transports &98 items per second&r, and up to &9128&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9multiple stacks per second&r."
 				""
-				"They don't auto-extract by themselves, so you have to use &3Conveyor covers&r etc. with them."
+				"They don't auto-extract by themselves, so you have to use &3Conveyor Covers&r etc. with them."
 				""
 				"The priority mechanics are more complicated, so skip ahead if you are not interested:"
 				"A Destination will have a Routing Value calculated, which is the sum of all Routing Values of the individual Pipes to that Destination. Whichever Destination has the lowest Routing Value will be the one selected for Insertion."
@@ -1074,7 +1067,7 @@
 			description: [
 				"Although most &ealloys&f require an &3Alloy Smelter&f, some alloys can be made simply by mixing the correct metal dusts together. "
 				""
-				"&9Steel is one of these alloys, being made by mixing wrought iron dust with coal dust or charcoal dust&r. &2Steel forms the basis of LV Machine Hulls&r, and allows you to make &6Belt Pouches&r, for upgrading your &eTool Belt&r."
+				"&9Steel is one of these alloys, being made by mixing Wrought Iron dust with Coal dust or Charcoal dust&r. &2Steel forms the basis of LV Machine Hulls&r, and allows you to make &6Belt Pouches&r for upgrading your &eTool Belt&r."
 			]
 			id: "17312BF0197B87A8"
 			rewards: [{
@@ -1096,11 +1089,9 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"&9Monifactory replaces this with a water collector from the Water Collector mod, as the NuclearCraft Infinite Water Source was overhauled.&f"
-				""
 				"Feeding a &3Steam Dynamo&f with water by hand is a pretty silly idea."
 				""
-				"A &6Water Collector&f will take care of that for you, albeit slowly. It does, however, auto-output the water to making it simple to use."
+				"A &6Water Collector&f will take care of that for you, albeit slowly. It does, however, auto-output the water, making it simple to use."
 				""
 				"&2GTCEu has a Primitive Water Pump, which can do it faster. However, it requires Treated Wood, which requires Creosote from a Coke Oven."
 			]
@@ -1158,7 +1149,7 @@
 				""
 				"You'll want to transition to Rubber Trees at some point, though, since the &eratio of leaves to rubber is quite poor&f."
 				""
-				"Rubber can be hammered into sheets just like metals can be turned to plates. It's quite inefficient to do it this way, but such is the life of early game &bGregTech&f. At least rubber isn't particularly hard to come by."
+				"Rubber can be hammered into sheets just like metals can be turned into plates. It's quite inefficient to do it this way, but such is the life of early game &bGregTech&f. At least rubber isn't particularly hard to come by."
 			]
 			id: "6FB3E3D9CA0F4B30"
 			rewards: [{
@@ -1288,7 +1279,6 @@
 				"7FA0E6F3B466576C"
 			]
 			description: [
-				""
 				"The &6Steam Dynamo&r will be your source of &9power&r for the early game. It requires &9Water&r and burnable fuel like &6Coal&r or &6Sugar Cane&r to produce power."
 				""
 				"You'll need a small bit of &6Silver&f for this dynamo. If you haven't found a &6Galena vein&f yet (which is where Silver is), then consider \"buying\" some &6Silver Ore&r using &9Monicoins&r. You won't need a ton of silver and lead just yet, so it won't bankrupt you."
@@ -1341,7 +1331,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "The most basic tier of &aRF&r energy conduits from &bEnderIO&r."
+			subtitle: "The most basic tier of &aRF&r energy conduits from &bEnder IO&r."
 			tasks: [{
 				id: "7D0E23630A562F6A"
 				item: "enderio:conductive_conduit"
@@ -1374,7 +1364,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "Green=Input, Red=Output"
+			subtitle: "Green = Input, Red = Output"
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
 				item: {
@@ -1473,7 +1463,7 @@
 		{
 			dependencies: ["297B523B6C503957"]
 			description: [
-				"The &9Tinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r. &9This is also used for upgrading thermal items&r."
+				"The &9Tinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r. &9This is also used for upgrading &bThermal&9 items&r."
 				""
 				"The Turbo Charger is a little more expensive, but is able to charge items at a &omuch&r faster rate and is able to charge items that use &aRF&r and &aEU&r."
 			]
@@ -1573,7 +1563,7 @@
 				"081101DEE6227D87"
 			]
 			description: [
-				"Basic &aFlux Capacitors&r hold a whopping lot of energy - &9500 kRF&r - and are useful for keeping your &aRF-powered&r equipment and tools charged."
+				"Basic &aFlux Capacitors&r hold a whopping &9500 kRF&r of energy and are useful for keeping your &aRF-powered&r equipment and tools charged."
 				""
 				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
 				""
@@ -1646,7 +1636,7 @@
 			description: [
 				"Now that you have everything you need to power your machines, it's time to put it all together."
 				""
-				"Your Steam Dynamo needs burnable fuel (like &6Coal&r) and &9water&r. It will output RF power through the Excitation Coil (the red bit at the top). The orientation of the Steam Dynamo can be adjusted with a &aCrescent Hammer&r, if needed."
+				"Your Steam Dynamo needs burnable fuel (like &6Coal&r) and &9water&r. It will output RF power through the Excitation Coil (the red bit at the top). The orientation of the Steam Dynamo can be adjusted with a &aCrescent Hammer&r if needed."
 				""
 				"&6Energy Conduits&r can be used to transfer that RF power, but the dynamo can also output RF directly into an Energy Converter by making the Excitation Coil touch the Energy Converter."
 				"{@pagebreak}"
@@ -1678,7 +1668,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"Open your inventory and look at the top-left corner of the screen. Click the map-looking icon called &eClaimed Chunks&r."
+				"Open your inventory and look at the top-left corner of the screen. Click the map-looking icon called &eClaim Manager&r."
 				""
 				"&6Click a chunk&r to claim it as yours. This will prevent unwanted creeper explosions and other players from interacting with your base."
 				""
@@ -1706,9 +1696,9 @@
 			description: [
 				"While there are no types of veins that are extremely rare, you're likely to struggle with finding at least one of the less common vein types. This isn't really avoidable."
 				""
-				"[\"You will accumulate a lot of \",{\"text\":\"Monicoins\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"kubejs:moni_quarter\"}}},\" from quest turn-ins while playing monifactory. Do not be hesitant to spend them on things you need!\"]"
+				"[\"You will accumulate a lot of \",{\"text\":\"Monicoins\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"kubejs:moni_quarter\"}}},\" from quest turn-ins while playing \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\". Do not be hesitant to spend them on things you need!\"]"
 				""
-				"[\"Search for various ores (generally the first one listed in \",{\"text\":\"EMI\",\"color\":\"aqua\"},\") to find the coin recipes for them. Alternatively, hover your cursor over a coin and press \",{\"keybind\":\"key.jei.showRecipe\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"\\\"Show Recipe\\\" in keybind option\"}},\" to see what you can buy with it.\"]"
+				"[\"Search for various ores (generally the first one listed in \",{\"text\":\"EMI\",\"color\":\"aqua\"},\") to find the coin recipes for them. Alternatively, hover your cursor over a coin and press \",{\"keybind\":\"key.jei.showUses\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"\\\"Show Uses\\\" in keybind option\"}},\" to see what you can buy with it.\"]"
 			]
 			hide_dependency_lines: true
 			icon: "kubejs:moni_dollar"
@@ -1750,45 +1740,11 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
-			description: [
-				"&bEffortless Building&r is a mod that makes it much easier to build. You can create large platforms or various other shapes in just a few clicks, and even build multiple identical structures at the same time!"
-				""
-				"To use &bEffortless Building&r, start by pressing and holding the &6Alt&r key. This opens a wheel-shaped menu displaying &especial building modes&r. With this menu open, simply move your cursor over the desired building mode and release &6Alt&r. This will select that mode and you can begin building."
-				""
-				"Choose the starting location for your shape by &6right-clicking&r on a blockspace while holding your desired building block. Next, move your cursor to another blockspace to see a preview of the final structure. &6Right-click&r again on the desired ending block to actually build the shape from blocks in your inventory."
-				"{@pagebreak}"
-				"Most shapes are flat and are defined using a starting and ending location, but 3D shapes have a third location to complete the shape. Some special modes also have &eoptions&r, like making a &ehollow cube&r instead of a &efilled cube&r."
-				""
-				"If you made a mistake, you can use the &aUndo&r button in the menu to break the blocks you just placed so you can collect them and try again."
-				""
-				"To change building modes, just open the menu with &6Alt&r as before and pick a different one. To exit the special building modes, select the &eNormal&r mode."
-				""
-				"&cMake sure you return to Normal mode when you're done building shapes, since the special building modes will interfere with normal gameplay.&r"
-				"{@pagebreak}"
-				"The size of shapes you can make in special building modes is limited by your &eReach&r, which is how far away you can click from yourself to build, and your &eBuilding Power&r, a measure of how large you can make a shape. You can craft and eat several tiers of &aReach Upgrades&r in succession to increase your reach to very high numbers, and loot &aBuilding Power upgrades&r from the &bLost Cities.&r"
-				""
-				"Overall, &bEffortless Building&r is a powerful mod that is very useful for construction. Experiment with it and you'll see how much time it can save you!"
-			]
-			disable_toast: true
-			hide_dependency_lines: true
-			icon: "effortlessbuilding:reach_upgrade1"
-			id: "0137ECCCD7A11A15"
-			optional: true
-			tasks: [{
-				id: "23ED12507CA3130E"
-				type: "checkmark"
-			}]
-			title: "Effortless Building"
-			x: -10.5d
-			y: 4.0d
-		}
-		{
 			dependencies: ["115D2BEB18929C7C"]
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
 				""
-				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"Macerators' byproducts aren't available until HV.\",\"color\":\"yellow\"}] "
+				"[\"You shouldn't feel any pressure to do that in \",{\"text\":\"Monifactory\",\"color\":\"blue\"},\", though. Ore veins are massive, mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},{\"text\":\", and \"},{\"text\":\"Macerators' byproducts aren't available until HV.\",\"color\":\"red\"}] "
 				""
 				"Obvious exceptions would be rare materials or anything you buy with &9Monicoins &fbecause you can't find it. Those are worth doubling, if possible."
 				""
@@ -1833,11 +1789,11 @@
 			description: [
 				"&n&9Monifactory&r&r shares an official Discord server with Pansmith's other projects, which serves as a useful community resource."
 				""
-				"On the server, there are flowcharts and guides to help you with many parts of the pack accessable via the server's helpful bot, development announcements and more are available in the &nMoni-News&r channel, and the community helps with tech support questions, and investigates possible bug reports."
+				"On the server, there are flowcharts and guides to help you with many parts of the pack accessable via the server's helpful bot, development announcements and more are available in the &n#announcements&r channel, and the community helps with tech support questions, and investigates possible bug reports."
 				""
 				"You can also chat with many fellow players there if you like, who are largely willing to help with general questions one might have."
 				"{@pagebreak}"
-				"[\"To join the server, you can use the button on the Main Menu to go to the join URL, or if you're not into Discord you can find my projects on GitHub on my page \", {\"text\": \"here.\", \"color\": \"blue\", \"underlined\": \"true\", \"clickEvent\": {\"action\": \"open_url\", \"value\": \"https://github.com/ThePansmith\"}}, \".\"]"
+				"[\"To join the server, you can use the button on the Main Menu to go to the join URL, or if you're not into Discord you can find other projects from the modpack author on \", {\"text\": \"this\", \"color\": \"blue\", \"underlined\": \"true\", \"clickEvent\": {\"action\": \"open_url\", \"value\": \"https://github.com/ThePansmith\"}}, \" GitHub page.\"]"
 				""
 				"[\"Issue tracking and development is handled on the respective GitHub project repositories. The repository for this pack is \", {\"text\": \"here\", \"color\": \"blue\", \"underlined\": \"true\", \"clickEvent\": {\"action\": \"open_url\", \"value\": \"https://github.com/ThePansmith/Monifactory\"}}, \".\"]"
 			]
@@ -1860,7 +1816,7 @@
 			description: [
 				"[\"\",{\"text\":\"This tab\",\"color\":\"dark_green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"395B849AC6294153\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"055C0B43FE14258F\",\"contents\":\"Click to go to the chapter\"}},{\"text\":\" was added to help you visualise and give you tips on making chemicals, among other important things to automate. Use it wisely!\",\"color\":\"dark_green\"}]"
 				""
-				"Each quest in the tab will give you a description of the machine and the minimum voltage required to run the recipe. Furthermore, although each quest can be completed via a checkbox, all quests in a processing line will auto-complete once you get the item positioned on the right. Either the checkbox or achieving the product will complete the quests."
+				"Each quest in the tab will give you a description of the machine and the minimum voltage required to run the recipe."
 			]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -1880,7 +1836,7 @@
 			description: [
 				"[\"The \",{\"text\":\"Progression tab\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"395B849AC6294153\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the chapter\"}},\" was added so you can keep track of the important bits of the pack.\"]"
 				""
-				"Circuits are the baseline of the entire Monifactory progression, so keep climbing!"
+				"Circuits are the baseline of the entire &9Monifactory&r progression, so keep climbing!"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -1925,7 +1881,7 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["[\"This pack has \",{\"text\":\"Inventory Tweaks\",\"color\":\"aqua\"},\", allowing for quick, customizable, and easy sorting of any inventory! The keybind is \",{\"keybind\":\"key.invtweaks_sort_player.desc\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"\\\"Sort Player Inventory\\\" in keybind option\"}}]"]
+			description: ["[\"This pack has \",{\"text\":\"Inventory Tweaks\",\"color\":\"aqua\"},\", allowing for quick, customizable, and easy sorting of any inventory! The keybind is \",{\"keybind\":\"key.invtweaks_sort_player.desc\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"\\\"Sort Player Inventory\\\" in keybind option\"}},\".\"]"]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:chest"
@@ -1944,7 +1900,7 @@
 			can_repeat: true
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"If you &osomehow&r run out of charge on your prospector. Simply submit it back in, and we'll give you a fresh one!"
+				"If you &osomehow&r run out of charge on your prospector, simply submit it back in and we'll give you a fresh one!"
 				""
 				"Available once per hour."
 			]
@@ -2035,16 +1991,18 @@
 			dependencies: ["66FCC26399376B55"]
 			description: [
 				"You may wish to &aautomatically sprint&r instead of having to press &eControl + W&r or &eW twice&r."
+				""
 				"To achieve this, change the &bSprint&r keybind to &eW&r. (or the same keybind as Walk Forward)"
 				""
 				"A &aGrappling Hook&r is also very useful in an urban environment, allowing you to climb buildings with ease!"
 				""
 				"There are lots of ways to upgrade and improve your &aGrappling Hook&r, so play around with it."
 				""
-				"Open your inventory and look for the &3Curios&r button, click it to reveal the additional curio slots and put the hook in the hook shaped slot."
+				"Open your inventory and look for the &3Curios&r button, click it to reveal the additional curio slots, and put the hook in the hook-shaped slot."
 				""
-				"The default key to fire a hook is &6C&r, however you might want to change it, simply search for &5category:ReHooked&r in the key binds screen and change them to whatever you want."
-				"Just be careful of &4Keybind Conflicts&r"
+				"The default key to fire a hook is &6C&r, however if you want to change it, simply search for &5category:ReHooked&r in the key binds screen and change it to whatever you want."
+				""
+				"Just be careful of &4Keybind Conflicts&r!"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -2063,12 +2021,12 @@
 				type: "item"
 			}]
 			title: "Movin' Around"
-			x: -9.0d
-			y: 10.0d
+			x: -10.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7865CDE5CFE005DC"]
-			description: ["All furnaces from &bIron Furnaces&r can be augmented to have be &afaster&r, more &afuel efficient&r, and &asmelt multiple items at once&r!"]
+			description: ["All furnaces from &bIron Furnaces&r can be augmented to be &afaster&r, more &afuel efficient&r, and &asmelt multiple items at once&r!"]
 			id: "5D5C24BACC649253"
 			optional: true
 			rewards: [{
@@ -2095,7 +2053,7 @@
 		}
 		{
 			dependencies: ["7865CDE5CFE005DC"]
-			description: ["You can copy and paste settings from different &eFurnaces&r using a &6Furnaces Setting Linker&r"]
+			description: ["You can copy and paste settings from different &eFurnaces&r using a &6Furnace Setting Linker&r."]
 			id: "07508736CEE01C7F"
 			optional: true
 			rewards: [{
