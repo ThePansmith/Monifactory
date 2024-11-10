@@ -17,6 +17,10 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'sophisticatedstorage:iron_barrel' })
     event.remove({ output: 'sophisticatedstorage:iron_chest' })
     event.remove({ output: 'sophisticatedstorage:iron_shulker_box' })
+
+    //Remove Iron tier upgrades
+    event.remove({ output: /^sophisticatedstorage:.*iron.*tier_upgrade$/ })
+    event.remove({ input: /^sophisticatedstorage:.*iron.*tier_upgrade$/ })
     
     //Standard backpack recipe if you don't want to loot it
     event.shaped(
@@ -66,7 +70,7 @@ ServerEvents.recipes(event => {
                     "tag": ('forge:nuggets/' + material[1])
                 },
                 "I": {
-                    "tag": index == 1 ? 'forge:ingots/lead' : ('forge:ingots/' + material[2]),
+                    "tag": ('forge:ingots/' + material[2]),
                 },
                 "C": {
                     "item": inputBackpack
@@ -81,7 +85,7 @@ ServerEvents.recipes(event => {
     // Barrel, Chest, Shulker Box upgrading
     const sophStorageMaterials = [
         ["", null, null],
-        ['copper_', 'bronze', null],
+        ['copper_', 'bronze', 'lead'],
         ['gold_', 'steel', 'invar'],
         ['diamond_', 'aluminium', 'electrum'],
         ['netherite_', 'stainless_steel', 'signalum'],
@@ -91,13 +95,32 @@ ServerEvents.recipes(event => {
         ['', 'chest'],
         ['', 'shulker_box']
     ]
-    sophStorageMaterials.forEach((material, index) => {
-        if(index == 0) return;
+    sophStorageMaterials.forEach((material, toIndex) => {
+        if(toIndex == 0) return;
 
+        // Tier upgrade items
+        for (let fromIndex = 0; fromIndex < toIndex; fromIndex++) {
+            let fromTierName = (fromIndex == 0 ? "basic_" : sophStorageMaterials[fromIndex][0]);
+            let prevTierName = (toIndex-1 == 0 ? "basic_" : sophStorageMaterials[toIndex-1][0]);
+            let toTierName = material[0];
+            
+            event.shaped(
+                'sophisticatedstorage:' + fromTierName + 'to_' + toTierName + 'tier_upgrade', [
+                "IPI",
+                "ICI",
+                "IPI"
+            ], {
+                I: '#forge:ingots/' + material[1],
+                P: '#forge:plates/' + material[2],
+                C: (fromTierName == prevTierName ? 'minecraft:redstone_torch' : 'sophisticatedstorage:' + fromTierName + 'to_' + prevTierName + 'tier_upgrade')
+            }).id('sophisticatedstorage:' + fromTierName + 'to_' + toTierName + 'tier_upgrade')
+        }
+
+        // Barrel-in-table upgrades
         sophStorageTypes.forEach(storageType => {
             //Works for upgrades as the recipe type implies, but doesn't work for making new barrels/chests/boxes from scratch
             let outputStorage = 'sophisticatedstorage:' + storageType[0] + material[0] + storageType[1]
-            let inputStorage = 'sophisticatedstorage:' + storageType[0] + sophStorageMaterials[index-1][0] + storageType[1]
+            let inputStorage = 'sophisticatedstorage:' + storageType[0] + sophStorageMaterials[toIndex-1][0] + storageType[1]
             event.remove({ mod: 'sophisticatedstorage', output: outputStorage })
             event.custom({
                 "type": "sophisticatedstorage:storage_tier_upgrade",
@@ -117,7 +140,7 @@ ServerEvents.recipes(event => {
                         "tag": ('forge:ingots/' + material[1])
                     },
                     "P": {
-                        "tag": index == 1 ? 'forge:plates/lead' : ('forge:plates/' + material[2])
+                        "tag": ('forge:plates/' + material[2])
                     },
                     "C": {
                         "item": inputStorage

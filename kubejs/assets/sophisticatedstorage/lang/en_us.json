@@ -16,5 +16,16 @@
   "item.sophisticatedstorage.diamond_shulker_box": "Aluminium Shulker Box",
   "block.sophisticatedstorage.diamond_shulker_box": "Aluminium Shulker Box",
   "item.sophisticatedstorage.netherite_shulker_box": "Stainless Steel Shulker Box",
-  "block.sophisticatedstorage.netherite_shulker_box": "Stainless Steel Shulker Box"
+  "block.sophisticatedstorage.netherite_shulker_box": "Stainless Steel Shulker Box",
+
+  "item.sophisticatedstorage.basic_to_copper_tier_upgrade": "Basic to Bronze Tier Upgrade",
+  "item.sophisticatedstorage.basic_to_gold_tier_upgrade": "Basic to Steel Tier Upgrade",
+  "item.sophisticatedstorage.basic_to_diamond_tier_upgrade": "Basic to Aluminium Tier Upgrade",
+  "item.sophisticatedstorage.basic_to_netherite_tier_upgrade": "Basic to Stainless Steel Tier Upgrade",
+  "item.sophisticatedstorage.copper_to_gold_tier_upgrade": "Bronze to Steel Tier Upgrade",
+  "item.sophisticatedstorage.copper_to_diamond_tier_upgrade": "Bronze to Aluminium Tier Upgrade",
+  "item.sophisticatedstorage.copper_to_netherite_tier_upgrade": "Bronze to Stainless Steel Tier Upgrade",
+  "item.sophisticatedstorage.gold_to_diamond_tier_upgrade": "Steel to Aluminium Tier Upgrade",
+  "item.sophisticatedstorage.gold_to_netherite_tier_upgrade": "Steel to Stainless Steel Tier Upgrade",
+  "item.sophisticatedstorage.diamond_to_netherite_tier_upgrade": "Aluminium to Stainless Steel Tier Upgrade"
 }

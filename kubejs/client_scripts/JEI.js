@@ -152,8 +152,8 @@ JEIEvents.hideItems(event => {
     event.hide('sophisticatedstorage:iron_chest')
     event.hide('sophisticatedstorage:iron_shulker_box')
     
-    //Sophisticated tier upgrades
-    event.hide(/^sophisticatedstorage:.+tier_upgrade$/)
+    //Sophisticated iron tier upgrades
+    event.hide(/^sophisticatedstorage:.*iron.*tier_upgrade$/)
 
     //Unused Sophisticated stack upgrades
     event.hide("sophisticatedstorage:stack_upgrade_tier_1_plus")
