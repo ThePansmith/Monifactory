@@ -1,0 +1,22 @@
+[
+  {
+    "group": "berkelium",
+    "name": "heb-248",
+    "forge_energy": 1080,
+    "heat": 312,
+    "criticality": 32,
+    "depletion": 92,
+    "efficiency": 170,
+    "isotopes": [248, 247]
+  },
+  {
+    "group": "berkelium",
+    "name": "leb-248",
+    "forge_energy": 270,
+    "heat": 52,
+    "criticality": 73,
+    "depletion": 108,
+    "efficiency": 165,
+    "isotopes": [248, 247]
+  }
+]

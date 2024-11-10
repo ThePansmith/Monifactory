@@ -1,0 +1,5 @@
+[{
+  "type": "nether_brick",
+  "heat": 70,
+  "placement_rule": ["obsidian_heat_sink"]
+}]
