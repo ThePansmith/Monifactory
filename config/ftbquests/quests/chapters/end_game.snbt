@@ -1190,7 +1190,7 @@
 				""
 				"It only works with a handful of highly energy-dense items and consumes a wealth of &6Cryococcus,&r so you'll need to find a way to produce these consistently and in bulk."
 				""
-				"If you manage to accomplish this, you'll be awarded with up to &a64A UIV&r while avoiding the explosive risk of &elarge spheres of superheated dragon metal.&r"
+				"If you manage to supply it with &6Contained Singularities&r, you'll be awarded with enough energy to saturate a &6UIV 4,096A Laser Source Hatch&r while avoiding the explosive risk of &elarge spheres of superheated dragon metal.&r"
 			]
 			icon: "gtceu:cryococcal_reverberator"
 			id: "25A7BC39C30139DA"
