@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
     // Backpack upgrading
     const sophBackpacksMaterials = [
         ["", null, null],
-        ['copper_', 'bronze', null],
+        ['copper_', 'bronze', 'lead'],
         ['iron_', 'steel', 'invar'],
         ['gold_', 'aluminium', 'electrum'],
         ['diamond_', 'stainless_steel', 'signalum'],
