@@ -252,7 +252,15 @@ ServerEvents.recipes(event => {
                     break;
             }
         }
-        event.shapeless(`gtceu:${tiername}_solar_panel`, solarFluxPanel).id(`gtceu:solar_panel_${tiername}_conversion`)
-        event.shapeless(solarFluxPanel, `gtceu:${tiername}_solar_panel`).id(`gtceu:solar_panel_${tiername}_reversion`)
+        event.recipes.gtceu.atomic_reconstruction(`gtceu:solar_panel_${tiername}_conversion`)
+            .itemInputs(solarFluxPanel)
+            .itemOutputs(`gtceu:${tiername}_solar_panel`)
+            .duration(5)
+            .EUt(32)
+        event.recipes.gtceu.atomic_reconstruction(`gtceu:solar_panel_${tiername}_reversion`)
+            .itemInputs(`gtceu:${tiername}_solar_panel`)
+            .itemOutputs(solarFluxPanel)
+            .duration(5)
+            .EUt(32)
     }
 })
