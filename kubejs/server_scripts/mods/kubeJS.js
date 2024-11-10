@@ -74,25 +74,4 @@ ServerEvents.recipes(event => {
         S: 'minecraft:nether_star'
     }
     )
-
-    //Space Stuff
-    event.recipes.gtceu.macerator('moon_dust')
-        .itemInputs('gcyr:moon_sand')
-        .itemOutputs('kubejs:moon_dust')
-        .duration(200)
-        .EUt(400)
-
-    event.recipes.gtceu.macerator('moon_stone')
-        .itemInputs('gcyr:moon_stone')
-        .itemOutputs('kubejs:moon_dust')
-        .duration(200)
-        .EUt(400)
-
-    event.recipes.gtceu.autoclave('dilithium_helium')
-        .itemInputs('4x gtceu:dilithium_dust')
-        .inputFluids('gtceu:helium 1000')
-        .itemOutputs('4x kubejs:dilithium_crystal')
-        .duration(400)
-        .EUt(110)
-
 })
