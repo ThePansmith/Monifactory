@@ -495,17 +495,17 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_third')
         .itemInputs(
-            'kubejs:microminer_t10', 
-            'kubejs:infinity_catalyst', 
+            'kubejs:microminer_t11', 
+            'kubejs:furious_infinity_catalyst',
+            '8x gtceu:uev_sensor', 
             '8x gtceu:network_switch', 
             '8x gtceu:data_bank', 
             '16x gtceu:advanced_data_access_hatch', 
-            '16x gtceu:computation_receiver_hatch',
-            '64x kubejs:stellar_creation_data'
+            'kubejs:shattered_universe_data'
         )
         .itemOutputs('kubejs:creative_computation_data')
         .duration(3000)
-        .EUt(1000000)
+        .EUt(8000000)
 
 })
 
