@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.centrifuge(fuelType + "decompdepleted")
             .itemInputs('nuclearcraft:depleted_fuel_' + fuelType)
             .itemOutputs(out, out2, out3, out4)
-            .duration(1600)
+            .duration(400)
             .EUt(GTValues.VHA[voltageTier])
     }
 
