@@ -41,5 +41,5 @@
 	boiling_mult = 15.0
 	#Affects how much energy reactors produce.
 	#Range: 0.01 ~ 1000000.0
-	fe_generation_multiplier = 10.0
+	fe_generation_multiplier = 400.0
 
