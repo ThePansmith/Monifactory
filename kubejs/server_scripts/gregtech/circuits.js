@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.assembler(`complex_smd_${item}`)
         //PECA foil is used since other electronic component recipes use fluid polymers
         .itemInputs(primary, secondary, Item.of('gtceu:polyethyl_cyanoacrylate_foil', foil_amount))
-        .itemOutputs(`32x kubejs:complex_smd_${item}`)
+        .itemOutputs(`64x kubejs:complex_smd_${item}`)
         .duration(160)
         .EUt(245760)
     }
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
             '3x gtceu:exquisite_monazite_gem'
         )
         .inputFluids('gtceu:distilled_water 500')
-        .itemOutputs('16x kubejs:matter_circuit_board')
+        .itemOutputs('32x kubejs:matter_circuit_board')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(250000)
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
     // WIP: Dimensional Circuits
     event.recipes.gtceu.circuit_assembler('dimensional_circuit_board')
         .itemInputs(
-            '16x kubejs:matter_circuit_board',
+            '32x kubejs:matter_circuit_board',
             '4x gtceu:infinity_plate',
             '#gtceu:circuits/zpm',
             'gtceu:luv_sensor',
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:nether_star_lens'
         )
         .inputFluids('gtceu:omnium 288')
-        .itemOutputs('16x kubejs:dimensional_circuit_board')
+        .itemOutputs('32x kubejs:dimensional_circuit_board')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(500000)
@@ -236,7 +236,7 @@ ServerEvents.recipes(event => {
 
     // Monic Circuits
     event.recipes.gtceu.circuit_assembler('monic_circuit_board')
-        .itemInputs('16x kubejs:dimensional_circuit_board',
+        .itemInputs('32x kubejs:dimensional_circuit_board',
             '2x gtceu:monium_plate',
             '#gtceu:circuits/uv',
             'gtceu:zpm_field_generator',
@@ -244,7 +244,7 @@ ServerEvents.recipes(event => {
             '2x kubejs:ultimate_gem'
         )
         .inputFluids('gtceu:omnium 576')
-        .itemOutputs('16x kubejs:monic_circuit_board')
+        .itemOutputs('32x kubejs:monic_circuit_board')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(2000000)
@@ -302,7 +302,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:infinity_plate'
         )
         .inputFluids('gtceu:soldering_alloy 1152')
-        .itemOutputs('2x kubejs:monic_processor_computer')
+        .itemOutputs('1x kubejs:monic_processor_computer')
         .duration(20*20)
         .EUt(3932160)
 

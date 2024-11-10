@@ -334,10 +334,11 @@ ServerEvents.recipes(event => {
         'thermal:machine_frame', [
             'SSS',
             'SMS',
-            'SSS'
+            'III'
         ], {
-            M: 'gtceu:mythril_block',
-            S: 'gtceu:stainless_steel_plate'
+            M: '#forge:gears/mythril',
+            S: '#forge:plates/stainless_steel',
+            I: '#forge:ingots/invar'
         }
     )
 
