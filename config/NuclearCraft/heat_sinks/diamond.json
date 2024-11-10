@@ -1,0 +1,5 @@
+[{
+  "type": "diamond",
+  "heat": 150,
+  "placement_rule": ["copper_heat_sink", "quartz_heat_sink"]
+}]

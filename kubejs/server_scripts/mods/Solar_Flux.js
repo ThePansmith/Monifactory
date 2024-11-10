@@ -176,21 +176,21 @@ ServerEvents.recipes(event => {
             'ABA'
         ], {
             A: 'kubejs:stabilized_plutonium',
-            B: 'kubejs:stabilized_curium',
+            B: 'kubejs:stabilized_americium',
             C: 'minecraft:glowstone'
         }
     )
     event.recipes.gtceu.mixer('kubejs:sunnarium_dust_mixer')
-        .inputFluids('gtceu:plutonium 144', 'gtceu:curium 72')
+        .inputFluids('gtceu:plutonium 144', 'gtceu:americium 72')
         .itemInputs('minecraft:glowstone_dust')
         .itemOutputs('2x gtceu:sunnarium_dust')
-        .duration(2000)
+        .duration(1800)
         .EUt(GTValues.VHA[GTValues.IV]);
     event.recipes.gtceu.mixer('kubejs:sunnarium_dust_mixer_alt')
-        .inputFluids('gtceu:plutonium_241 144', 'gtceu:curium 72')
+        .inputFluids('gtceu:plutonium_241 144', 'gtceu:americium 72')
         .itemInputs('minecraft:glowstone_dust')
         .itemOutputs('2x gtceu:sunnarium_dust')
-        .duration(2000)
+        .duration(1800)
         .EUt(GTValues.VHA[GTValues.IV]);
 
     event.remove({ id: 'gtceu:macerator/macerate_sunnarium_plate'})
@@ -204,15 +204,15 @@ ServerEvents.recipes(event => {
             'ABA'
         ], {
             A: 'kubejs:stabilized_neptunium',
-            B: 'kubejs:stabilized_americium',
+            B: 'kubejs:stabilized_curium',
             C: 'gtceu:sunnarium_dust'
         }
     )
     event.recipes.gtceu.mixer('kubejs:enriched_sunnarium_dust_mixer')
-        .inputFluids('gtceu:neptunium 288', 'gtceu:americium 144')
+        .inputFluids('gtceu:neptunium 288', 'gtceu:curium 144')
         .itemInputs('gtceu:sunnarium_dust')
         .itemOutputs('6x gtceu:enriched_sunnarium_dust')
-        .duration(2000)
+        .duration(2400)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.remove({ id: 'gtceu:macerator/macerate_enriched_sunnarium_plate'})

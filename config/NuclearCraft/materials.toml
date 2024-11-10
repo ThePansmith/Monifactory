@@ -265,7 +265,6 @@
 	vein_size = 7
 	min_height = -60
 	max_height = 60
-	veins_in_chunk = 3
 
 [platinum]
 	register = true
@@ -273,7 +272,6 @@
 	vein_size = 7
 	min_height = -60
 	max_height = 0
-	veins_in_chunk = 3
 
 [thorium]
 	register = true
@@ -281,7 +279,6 @@
 	vein_size = 7
 	min_height = -60
 	max_height = 60
-	veins_in_chunk = 3
 
 [tin]
 	register = true
@@ -289,7 +286,6 @@
 	vein_size = 7
 	min_height = 4
 	max_height = 60
-	veins_in_chunk = 3
 
 [magnesium]
 	register = true
@@ -297,7 +293,6 @@
 	vein_size = 7
 	min_height = -60
 	max_height = 60
-	veins_in_chunk = 3
 
 [silver]
 	register = true
@@ -305,7 +300,6 @@
 	vein_size = 7
 	min_height = -60
 	max_height = 60
-	veins_in_chunk = 3
 
 [cobalt]
 	register = true
@@ -313,7 +307,6 @@
 	vein_size = 7
 	min_height = -60
 	max_height = 60
-	veins_in_chunk = 3
 
 [uranium]
 	register = true
@@ -321,7 +314,6 @@
 	vein_size = 7
 	min_height = -60
 	max_height = 60
-	veins_in_chunk = 3
 
 [zinc]
 	register = true
@@ -329,7 +321,6 @@
 	vein_size = 7
 	min_height = 4
 	max_height = 60
-	veins_in_chunk = 3
 
 [boron]
 	register = true
@@ -337,7 +328,6 @@
 	vein_size = 7
 	min_height = -60
 	max_height = 60
-	veins_in_chunk = 3
 
 [lead]
 	register = true
@@ -345,5 +335,23 @@
 	vein_size = 7
 	min_height = 4
 	max_height = 60
-	veins_in_chunk = 3
+
+[nuggets]
+	steel = true
+	electrum = true
+	magnesium = true
+	cobalt = true
+	aluminum = true
+	lead = true
+	bronze = true
+	lithium = true
+	platinum = true
+	thorium = true
+	tin = true
+	beryllium = true
+	silver = true
+	uranium = true
+	zirconium = true
+	zinc = true
+	boron = true
 

@@ -1,0 +1,12 @@
+[
+  {
+    "group": "thorium",
+    "name": "tbu",
+    "forge_energy": 120,
+    "heat": 18,
+    "criticality": 234,
+    "depletion": 720,
+    "efficiency": 125,
+    "isotopes": [232, 232]
+  }
+]

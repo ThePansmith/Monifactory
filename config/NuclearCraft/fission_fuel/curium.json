@@ -1,0 +1,62 @@
+[
+  {
+    "group": "curium",
+    "name": "hecm-243",
+    "forge_energy": 1680,
+    "heat": 672,
+    "criticality": 33,
+    "depletion": 75,
+    "efficiency": 150,
+    "isotopes": [243, 246]
+  },
+  {
+    "group": "curium",
+    "name": "hecm-245",
+    "forge_energy": 1296,
+    "heat": 408,
+    "criticality": 37,
+    "depletion": 121,
+    "efficiency": 155,
+    "isotopes": [245, 246]
+  },
+  {
+    "group": "curium",
+    "name": "hecm-247",
+    "forge_energy": 1104,
+    "heat": 324,
+    "criticality": 36,
+    "depletion": 108,
+    "efficiency": 160,
+    "isotopes": [247, 246]
+  },
+  {
+    "group": "curium",
+    "name": "lecm-243",
+    "forge_energy": 420,
+    "heat": 112,
+    "criticality": 66,
+    "depletion": 75,
+    "efficiency": 145,
+    "isotopes": [243, 246]
+  },
+  {
+    "group": "curium",
+    "name": "lecm-245",
+    "forge_energy": 324,
+    "heat": 68,
+    "criticality": 75,
+    "depletion": 121,
+    "efficiency": 150,
+    "isotopes": [245, 246]
+  },
+  {
+    "group": "curium",
+    "name": "lecm-247",
+    "forge_energy": 276,
+    "heat": 54,
+    "criticality": 72,
+    "depletion": 108,
+    "efficiency": 155,
+    "isotopes": [247, 246]
+  }
+]
