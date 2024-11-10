@@ -21,7 +21,7 @@
     "trivia": "hostilenetworks.trivia.zombie",
     "fabricator_drops": [{
             "item": "minecraft:rotten_flesh",
-            "count": 64
+            "count": 40
         },
         {
             "item": "minecraft:iron_ingot",

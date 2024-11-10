@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
     fabricator('wither', 2, 'kubejs:wither_bone')
     fabricator('wither_skeleton', 1, 'minecraft:wither_skeleton_skull')
     fabricator('wither_skeleton', 2, '12x gtceu:lead_ingot')
-    fabricator('zombie', 1, '64x minecraft:rotten_flesh')
+    fabricator('zombie', 1, '40x minecraft:rotten_flesh')
     fabricator('zombie', 2, '12x minecraft:iron_ingot')
     fabricator('zombie', 3, '32x minecraft:carrot')
     fabricator('zombie', 4, '32x minecraft:potato')
