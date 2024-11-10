@@ -31,6 +31,9 @@ ItemEvents.tooltip(tooltip => {
     // Questbook
     tooltip.addAdvanced(`ftbquests:book`, (item, adv, text) => {text.add(2, Text.gray('The quest window can also be opened with a keybind.'))})
 
+    // Redstone Clock 
+    tooltip.add('redstoneclock:redstone_clock', '§7Needs a redstone signal on a dotted side to work.')
+    
     // DML Data Model
     tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
     tooltip.add('hostilenetworks:data_model', '§7Upgrades when used in the §3Simulation Chamber')
