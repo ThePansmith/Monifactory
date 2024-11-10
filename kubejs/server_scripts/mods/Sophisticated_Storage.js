@@ -32,24 +32,21 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // Backpack and Barrel Upgrading
-    const sophMaterials = [
+    // Backpack upgrading
+    const sophBackpacksMaterials = [
         ["", null, null],
         ['copper_', 'bronze', null],
-        ['gold_', 'steel', 'invar'],
-        ['diamond_', 'aluminium', 'electrum'],
-        ['netherite_', 'stainless_steel', 'signalum'],
+        ['iron_', 'steel', 'invar'],
+        ['gold_', 'aluminium', 'electrum'],
+        ['diamond_', 'stainless_steel', 'signalum'],
+        ['netherite_', 'tungsten_steel', 'enderium']
     ]
-    const sophStorageTypes = [
-        ['', 'barrel'],
-        ['', 'chest'],
-        ['', 'shulker_box']
-    ]
-    sophMaterials.forEach((material, index) => {
+    sophBackpacksMaterials.forEach((material, index) => {
         if(index == 0) return;
+
         //Works for upgrades as the recipe type implies, but doesn't work for making new backpacks from scratch
         let outputBackpack = `sophisticatedbackpacks:${material[0]}backpack`
-        let inputBackpack = `sophisticatedbackpacks:${sophMaterials[index-1][0]}backpack`
+        let inputBackpack = `sophisticatedbackpacks:${sophBackpacksMaterials[index-1][0]}backpack`
         event.remove({ mod: 'sophisticatedbackpacks', output: outputBackpack })
         event.custom({
             "type": "sophisticatedbackpacks:backpack_upgrade",
@@ -79,11 +76,28 @@ ServerEvents.recipes(event => {
                 "item": outputBackpack
             }
         });
+    })
+
+    // Barrel, Chest, Shulker Box upgrading
+    const sophStorageMaterials = [
+        ["", null, null],
+        ['copper_', 'bronze', null],
+        ['gold_', 'steel', 'invar'],
+        ['diamond_', 'aluminium', 'electrum'],
+        ['netherite_', 'stainless_steel', 'signalum'],
+    ]
+    const sophStorageTypes = [
+        ['', 'barrel'],
+        ['', 'chest'],
+        ['', 'shulker_box']
+    ]
+    sophStorageMaterials.forEach((material, index) => {
+        if(index == 0) return;
 
         sophStorageTypes.forEach(storageType => {
             //Works for upgrades as the recipe type implies, but doesn't work for making new barrels/chests/boxes from scratch
             let outputStorage = 'sophisticatedstorage:' + storageType[0] + material[0] + storageType[1]
-            let inputStorage = 'sophisticatedstorage:' + storageType[0] + sophMaterials[index-1][0] + storageType[1]
+            let inputStorage = 'sophisticatedstorage:' + storageType[0] + sophStorageMaterials[index-1][0] + storageType[1]
             event.remove({ mod: 'sophisticatedstorage', output: outputStorage })
             event.custom({
                 "type": "sophisticatedstorage:storage_tier_upgrade",
