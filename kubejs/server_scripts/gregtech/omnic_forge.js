@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .itemInputs('8x gtceu:omnium_double_wire', '8x gtceu:crystal_matrix_foil')
         .itemOutputs('kubejs:omnic_matrix_coil_block')
         .duration(1000)
-        .EUt(65520)
+        .EUt(GTValues.VA[GTValues.UHV])
    
     event.recipes.gtceu.omnic_forge('kubejs:netherite_casing')
         .itemInputs('8x gtceu:neutronium_plate', '8x gtceu:large_scale_assembler_casing', '2x gtceu:dense_activated_netherite_plate', '6x gtceu:tungsten_steel_rod')
