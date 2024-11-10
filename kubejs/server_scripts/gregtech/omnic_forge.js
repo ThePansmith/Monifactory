@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
 
     event.recipes.gtceu.omnic_forge('kubejs:serene_infinity_catalyst_crafting')
-        .itemInputs('kubejs:infinity_catalyst', 'kubejs:heart_of_a_universe', 'gtceu:monium_plate', '8x kubejs:contained_singularity')
+        .itemInputs('kubejs:infinity_catalyst', 'kubejs:heart_of_a_universe', 'gtceu:monium_frame', '16x kubejs:contained_singularity')
         .itemOutputs('kubejs:serene_infinity_catalyst')
         .duration(1000)
         .EUt(1966080)
