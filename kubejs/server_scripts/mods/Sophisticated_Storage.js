@@ -12,6 +12,11 @@ ServerEvents.recipes(event => {
     //Remove Limited barrels
     event.remove({ id: /^sophisticatedstorage:.*limited.+barrel.+$/})
     event.remove({ output: /^sophisticatedstorage:limited_barrel.+$/})
+
+    //Remove Iron tier storage (We jump straight from copper to gold to avoid excess gating)
+    event.remove({ output: 'sophisticatedstorage:iron_barrel' })
+    event.remove({ output: 'sophisticatedstorage:iron_chest' })
+    event.remove({ output: 'sophisticatedstorage:iron_shulker_box' })
     
     //Standard backpack recipe if you don't want to loot it
     event.shaped(
@@ -31,10 +36,9 @@ ServerEvents.recipes(event => {
     const sophMaterials = [
         ["", null, null],
         ['copper_', 'bronze', null],
-        ['iron_', 'steel', 'invar'],
-        ['gold_', 'aluminium', 'electrum'],
-        ['diamond_', 'stainless_steel', 'signalum'],
-        ['netherite_', 'tungsten_steel', 'enderium']
+        ['gold_', 'steel', 'invar'],
+        ['diamond_', 'aluminium', 'electrum'],
+        ['netherite_', 'stainless_steel', 'signalum'],
     ]
     const sophStorageTypes = [
         ['', 'barrel'],
@@ -65,7 +69,7 @@ ServerEvents.recipes(event => {
                     "tag": ('forge:nuggets/' + material[1])
                 },
                 "I": {
-                    "tag": index == 1 ? 'forge:leather' : ('forge:ingots/' + material[2]),
+                    "tag": index == 1 ? 'forge:ingots/lead' : ('forge:ingots/' + material[2]),
                 },
                 "C": {
                     "item": inputBackpack
@@ -99,7 +103,7 @@ ServerEvents.recipes(event => {
                         "tag": ('forge:ingots/' + material[1])
                     },
                     "P": {
-                        "tag": index == 1 ? 'forge:plates/wood' : ('forge:plates/' + material[2])
+                        "tag": index == 1 ? 'forge:plates/lead' : ('forge:plates/' + material[2])
                     },
                     "C": {
                         "item": inputStorage
