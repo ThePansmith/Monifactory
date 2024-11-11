@@ -184,6 +184,9 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.Glowstone.setComponents("1x tricalcium_phosphate", "1x gold")
     GTMaterials.Glowstone.setFormula('AuCa3(PO4)2', true)
 
+    GTMaterials.RTMAlloy.setComponents("2x ruthenium", "2x tungsten", "1x molybdenum")
+    GTMaterials.RTMAlloy.setFormula('Ru2W2Mo', true)
+
     GTMaterials.get('energetic_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)');
     GTMaterials.get('vibrant_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5)');
     GTMaterials.get('end_steel').setFormula('Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5))');
