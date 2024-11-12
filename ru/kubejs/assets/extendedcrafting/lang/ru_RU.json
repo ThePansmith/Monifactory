@@ -1,0 +1,12 @@
+{
+  "block.extendedcrafting.flux_alternator": "Sculk Pylon",
+  "block.extendedcrafting.flux_crafter": "Sculk Charger",
+  "block.extendedcrafting.auto_flux_crafter": "Sculk Charger",
+  "container.extendedcrafting.flux_alternator": "Sculk Pylon",
+  "container.extendedcrafting.flux_crafter": "Sculk Charging",
+  "jei.category.extendedcrafting.flux_crafting": "Sculk Charging",
+  "config.jade.plugin_extendedcrafting.flux_crafter": "Flux Crafter info",
+  "book.extendedcrafting.entry.flux_crafting": "Sculk Charging",
+  "book.extendedcrafting.entry.flux_crafting.page.1": "Sculk Charging is crafting using both the power of waiting, and the power of energy. A Sculk Crafting setup consists of a Sculk Charger and Sculk Pylons. The charger will take energy from the pylons. The more pylons you have, the faster it will craft.",
+  "book.extendedcrafting.entry.flux_crafting.page.2": "Sculk Pylons can be placed anywhere around the Sculk Charger in a $(bold)3 block radius$(). Even above or below!"
+}
