@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
             '  NN NN  ',
             '  NN NN  ',
             ' NUNNNUN ',
-            'PNCNBNCNP',
+            'PNCNNNCNP',
             'NNRNANRNN',
             ' NNNNNNN ',
             'NW W W WN'
@@ -230,8 +230,7 @@ ServerEvents.recipes(event => {
             C: 'kubejs:universal_warp_controller',
             P: 'solarflux:sp_custom_neutronium',
             A: 'gtceu:iv_quantum_chest',
-            W: 'kubejs:hadal_warp_engine',
-            B: 'gtceu:max_battery'
+            W: 'kubejs:hadal_warp_engine'
         }
     )
 
