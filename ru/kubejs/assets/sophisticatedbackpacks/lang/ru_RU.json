@@ -1,0 +1,14 @@
+{
+    "item.sophisticatedbackpacks.backpack": "Backpack",
+    "item.sophisticatedbackpacks.copper_backpack": "Leadstone Backpack",
+    "item.sophisticatedbackpacks.iron_backpack": "Hardened Backpack",
+    "item.sophisticatedbackpacks.gold_backpack": "Reinforced Backpack",
+    "item.sophisticatedbackpacks.diamond_backpack": "Signalum Backpack",
+    "item.sophisticatedbackpacks.netherite_backpack": "Resonant Backpack",
+    "block.sophisticatedbackpacks.backpack": "Backpack",
+    "block.sophisticatedbackpacks.copper_backpack": "Leadstone Backpack",
+    "block.sophisticatedbackpacks.iron_backpack": "Hardened Backpack",
+    "block.sophisticatedbackpacks.gold_backpack": "Reinforced Backpack",
+    "block.sophisticatedbackpacks.diamond_backpack": "Signalum Backpack",
+    "block.sophisticatedbackpacks.netherite_backpack": "Resonant Backpack"
+}
