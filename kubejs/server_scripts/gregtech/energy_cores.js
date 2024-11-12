@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
         event.recipes.gtceu.assembler("kubejs:bathyal_energy_core")
-        .itemInputs("3x kubejs:mesol_energy_core", "8x gtceu:emeradic_empowered_gem", "2x gtceu:nether_star_block")
+        .itemInputs("3x kubejs:mesol_energy_core", "8x gtceu:emeradic_empowered_gem", "1x gtceu:nether_star_block", "6x gtceu:diamatine_empowered_gem")
         .inputFluids('enderio:xp_juice 1000')
         .itemOutputs("2x kubejs:bathyal_energy_core")
         .duration(100)

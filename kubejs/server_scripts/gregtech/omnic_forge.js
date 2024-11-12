@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .itemInputs('8x gtceu:omnium_double_wire', '8x gtceu:crystal_matrix_foil')
         .itemOutputs('kubejs:omnic_matrix_coil_block')
         .duration(1000)
-        .EUt(65520)
+        .EUt(GTValues.VA[GTValues.UHV])
    
     event.recipes.gtceu.omnic_forge('kubejs:netherite_casing')
         .itemInputs('8x gtceu:neutronium_plate', '8x gtceu:large_scale_assembler_casing', '2x gtceu:dense_activated_netherite_plate', '6x gtceu:tungsten_steel_rod')
@@ -43,14 +43,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_coil')
         .itemInputs('2x gtceu:fusion_coil', '8x gtceu:dense_cryococcus_plate', '2x gtceu:activated_netherite_frame', '2x #gtceu:circuits/uhv', 'gtceu:uhv_field_generator')
         .itemOutputs('2x kubejs:cryococcus_fusion_coil')
-        .duration(2000)
-        .EUt(65520)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UV])
     
     event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_casing')
         .itemInputs('gtceu:uhv_machine_hull', '2x kubejs:cryococcus_fusion_coil', '12x gtceu:cryococcus_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uhv_field_generator')
         .itemOutputs('4x kubejs:cryococcus_fusion_casing')
-        .duration(2000)
-        .EUt(65520)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.omnic_forge('kubejs:timeless_monic_heavy_plating')
         .itemInputs('10x gtceu:monium_plate', '8x kubejs:quantum_fluxed_eternium_heavy_plating', '4x kubejs:universe_resistant_neutronium_heavy_plating', '4x kubejs:elementally_infused_omnic_matrix_heavy_plating', '2x kubejs:dimensionally_stabilized_infinity_heavy_plating', '16x kubejs:contained_singularity')

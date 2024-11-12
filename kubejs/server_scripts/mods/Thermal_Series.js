@@ -204,9 +204,9 @@ ServerEvents.recipes(event => {
     )
 
     //Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}')
-    event.recipes.gtceu.assembler('triple_power_augment')
+    event.recipes.gtceu.assembler('power_augment')
         .itemInputs('6x gtceu:conductive_alloy_block', '6x gtceu:sterling_silver_ingot', '3x kubejs:redstone_transmission_coil', '12x gtceu:energetic_alloy_ingot')
-        .itemOutputs(Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,DynamoEnergy:0.7f,Type:"Dynamo"}}'))
+        .itemOutputs(Item.of('thermal:dynamo_output_augment'))
         .duration(80)
         .EUt(32)
 
@@ -334,10 +334,11 @@ ServerEvents.recipes(event => {
         'thermal:machine_frame', [
             'SSS',
             'SMS',
-            'SSS'
+            'III'
         ], {
-            M: 'gtceu:mythril_block',
-            S: 'gtceu:stainless_steel_plate'
+            M: '#forge:gears/mythril',
+            S: '#forge:plates/stainless_steel',
+            I: '#forge:ingots/invar'
         }
     )
 

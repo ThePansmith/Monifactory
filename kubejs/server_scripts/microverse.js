@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
             '  NN NN  ',
             '  NN NN  ',
             ' NUNNNUN ',
-            'PNCN NCNP',
+            'PNCNBNCNP',
             'NNRNANRNN',
             ' NNNNNNN ',
             'NW W W WN'
@@ -230,7 +230,8 @@ ServerEvents.recipes(event => {
             C: 'kubejs:universal_warp_controller',
             P: 'solarflux:sp_custom_neutronium',
             A: 'gtceu:iv_quantum_chest',
-            W: 'kubejs:hadal_warp_engine'
+            W: 'kubejs:hadal_warp_engine',
+            B: 'gtceu:max_battery'
         }
     )
 
@@ -335,7 +336,7 @@ ServerEvents.recipes(event => {
             B: 'minecraft:quartz_block',
             Q: 'minecraft:quartz',
             C: '#gtceu:circuits/hv',
-            E: 'enderio:advanced_capacitor_bank'
+            E: 'enderio:octadic_capacitor'
         }
     )
 

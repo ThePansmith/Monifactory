@@ -10,6 +10,8 @@
 	rtg_radiation = [56, 57800, 200000, 1900000]
 	#Steam turbine (one block) base power gen
 	steam_turbine_power_gen = 50
+	#Decay Generator base power gen
+	decay_generator_power_gen = 100
 
 [energy_storage]
 	#Allow block registration: basic_voltaic_pile, elite_voltaic_pile, advanced_voltaic_pile, basic_lithium_ion_battery, elite_lithium_ion_battery, du_lithium_ion_battery, du_voltaic_pile, advanced_lithium_ion_battery
@@ -19,6 +21,7 @@
 	lithium_ion_battery_storage = 1000000
 	qnp_energy_storage = 2000000
 	qnp_energy_per_block = 200
+	ligtning_rod_charge = 1000000
 
 [storage_blocks]
 	#Blocks to store items, fluids, etc...

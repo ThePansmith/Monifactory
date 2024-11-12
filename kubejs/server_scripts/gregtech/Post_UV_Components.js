@@ -111,6 +111,17 @@ ServerEvents.recipes(event => {
                 H: `gtceu:${tier}_machine_hull`,
                 W: 'kubejs:uxpic_chip'
             })
+
+            event.shaped(Item.of(`gtceu:${tier}_transformer_16a`), [
+                'WBB',
+                'AH ',
+                'WBB'
+            ], {
+                A: `gtceu:${mat1}_hex_wire`,
+                B: `gtceu:${mat2}_hex_wire`,
+                H: `gtceu:${tier}_machine_hull`,
+                W: 'gtceu:uhpic_chip'
+            })
         })
 
 

@@ -30,8 +30,8 @@ ServerEvents.recipes(event => {
             .duration(duration)
     }
 
-    Reverberate('omnic_acid_resonating', ['1x gtceu:cryococcus_block', '5x gtceu:omnic_acid_dust'], 33554432, 15*60*20)
-    Reverberate('infinity_resonating', ['2x gtceu:cryococcus_block', '1x gtceu:infinity_ingot'], 134217728, 30*60*20)
-    Reverberate('fsopc_resonating', ['4x gtceu:cryococcus_block', '1x kubejs:field_stabilised_omnic_pulsar_compound'], 536870912, 1*60*60*20)
-    Reverberate('singularity_resonating', ['8x gtceu:cryococcus_block', '16x kubejs:contained_singularity'], 2147483647, 2*60*60*20)
+    Reverberate('omnic_acid_resonating', ['1x gtceu:cryococcus_block', '20x gtceu:omnic_acid_dust'], 0.5*GTValues.V[GTValues.UIV], 15*60*20)
+    Reverberate('infinity_resonating', ['2x gtceu:cryococcus_block', '1x gtceu:infinity_ingot'], 8*GTValues.V[GTValues.UIV], 30*60*20)
+    Reverberate('fsopc_resonating', ['4x gtceu:cryococcus_block', '1x kubejs:field_stabilised_omnic_pulsar_compound'], 128*GTValues.V[GTValues.UIV], 1*60*60*20)
+    Reverberate('singularity_resonating', ['8x gtceu:cryococcus_block', '8x kubejs:contained_singularity'], 2048*GTValues.V[GTValues.UIV], 2*60*60*20)
 })

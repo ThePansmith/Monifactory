@@ -329,7 +329,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('naquadah_oxide_aero_solution')
         .itemInputs('4x kubejs:aerotheum_dust')
         .inputFluids('gtceu:naquadah_oxide_petro_solution 1000')
-        .itemOutputs('4x thermal:basalz_powder')
+        .itemOutputs('4x kubejs:petrotheum_dust')
         .outputFluids('gtceu:naquadah_oxide_aero_solution 1000')
         .duration(300).EUt(240)
 
@@ -352,7 +352,7 @@ ServerEvents.recipes(event => {
         .notConsumable('2x gtceu:ruthenium_rod')
         .itemOutputs('2x gtceu:naquadah_dust')
         .outputFluids('gtceu:neocryolite 3750', 'gtceu:oxygen 3000')
-        .duration(750).EUt(7680)
+        .duration(250).EUt(7680)
 
     event.recipes.gtceu.chemical_bath('bathe_molten_aerotheum_to_aerotheum_dust')
         .inputFluids('kubejs:molten_aerotheum 250')

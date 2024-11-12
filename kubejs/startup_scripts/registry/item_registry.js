@@ -242,7 +242,12 @@ StartupEvents.registry('item', event => {
     event.create('endest_star').glow(true)
     event.create('grains_of_innocence')
     event.create('radium_salt').rarity('Epic')
+
+    // Planet dusts
     event.create('moon_dust')
+    event.create('mars_dust')
+    event.create('venus_dust')
+    event.create('mercury_dust')
 
 
     // Thermal Series item ports

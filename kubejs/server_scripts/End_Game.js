@@ -128,6 +128,19 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(400)
 
+    // Ultimate Material
+    event.recipes.gtceu.assembly_line("kubejs:the_ultimate_material")
+        .itemInputs('kubejs:warden_heart', '4x kubejs:guardian_scale', '8x kubejs:wither_bone', '12x kubejs:ender_dragon_scale')
+        .itemOutputs('kubejs:the_ultimate_material')
+        .duration(600)
+        .EUt(491520)
+
+        .stationResearch(b => b
+            .researchStack('kubejs:warden_heart')
+            .CWUt(96, 384000)
+            .EUt(491520)
+        )
+
     // Flux Plating
     event.shaped(
         '4x redstone_arsenal:flux_plating', [
@@ -349,7 +362,7 @@ ServerEvents.recipes(event => {
     )
 
     event.recipes.gtceu.assembly_line('luv_world_accelerator')
-    .itemInputs('gtceu:uhv_machine_hull', '64x gtceu:uhv_field_generator', '16x gtceu:uhv_field_generator', '20x gtceu:uhv_sensor', '20x gtceu:uhv_emitter', '16x #gtceu:circuits/uhv', '4x gtceu:double_netherite_plate', '2x gtceu:dense_neutronium_plate')
+    .itemInputs('gtceu:uhv_machine_hull', '64x gtceu:uhv_field_generator', '16x gtceu:uhv_field_generator', '20x gtceu:uhv_sensor', '20x gtceu:uhv_emitter', '16x #gtceu:circuits/uhv', '4x gtceu:double_activated_netherite_plate', '2x gtceu:dense_neutronium_plate')
     .inputFluids('gtceu:omnium 1152', 'gtceu:soldering_alloy 1152')
     .itemOutputs('gtceu:luv_world_accelerator')
     .duration(6000)

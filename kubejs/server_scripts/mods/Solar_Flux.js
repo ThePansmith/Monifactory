@@ -176,21 +176,21 @@ ServerEvents.recipes(event => {
             'ABA'
         ], {
             A: 'kubejs:stabilized_plutonium',
-            B: 'kubejs:stabilized_curium',
+            B: 'kubejs:stabilized_americium',
             C: 'minecraft:glowstone'
         }
     )
     event.recipes.gtceu.mixer('kubejs:sunnarium_dust_mixer')
-        .inputFluids('gtceu:plutonium 144', 'gtceu:curium 72')
+        .inputFluids('gtceu:plutonium 144', 'gtceu:americium 72')
         .itemInputs('minecraft:glowstone_dust')
         .itemOutputs('2x gtceu:sunnarium_dust')
-        .duration(2000)
+        .duration(1800)
         .EUt(GTValues.VHA[GTValues.IV]);
     event.recipes.gtceu.mixer('kubejs:sunnarium_dust_mixer_alt')
-        .inputFluids('gtceu:plutonium_241 144', 'gtceu:curium 72')
+        .inputFluids('gtceu:plutonium_241 144', 'gtceu:americium 72')
         .itemInputs('minecraft:glowstone_dust')
         .itemOutputs('2x gtceu:sunnarium_dust')
-        .duration(2000)
+        .duration(1800)
         .EUt(GTValues.VHA[GTValues.IV]);
 
     event.remove({ id: 'gtceu:macerator/macerate_sunnarium_plate'})
@@ -204,15 +204,15 @@ ServerEvents.recipes(event => {
             'ABA'
         ], {
             A: 'kubejs:stabilized_neptunium',
-            B: 'kubejs:stabilized_americium',
+            B: 'kubejs:stabilized_curium',
             C: 'gtceu:sunnarium_dust'
         }
     )
     event.recipes.gtceu.mixer('kubejs:enriched_sunnarium_dust_mixer')
-        .inputFluids('gtceu:neptunium 288', 'gtceu:americium 144')
+        .inputFluids('gtceu:neptunium 288', 'gtceu:curium 144')
         .itemInputs('gtceu:sunnarium_dust')
         .itemOutputs('6x gtceu:enriched_sunnarium_dust')
-        .duration(2000)
+        .duration(2400)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.remove({ id: 'gtceu:macerator/macerate_enriched_sunnarium_plate'})
@@ -225,31 +225,42 @@ ServerEvents.recipes(event => {
     event.remove({ id: /gtceu:shaped\/solar_panel_/ })
 
     // Basic conversion & reversion
-    event.shapeless('2x gtceu:solar_panel', 'solarflux:sp_2').id('gtceu:solar_panel_basic_conversion')
-    event.shapeless('solarflux:sp_2', '2x gtceu:solar_panel').id('gtceu:solar_panel_basic_reversion')
+    event.shapeless('2x gtceu:solar_panel', 'solarflux:sp_3').id('gtceu:solar_panel_basic_conversion')
+    event.shapeless('solarflux:sp_3', '2x gtceu:solar_panel').id('gtceu:solar_panel_basic_reversion')
 
     // Generic conversion & reversion (Note the switch for Sculk solars)
     for (let index = 0; index <= 8; index++) {
         let tiername = TIER_ID_MAPPING[index].toLowerCase();
         let solarFluxPanel;
-        if(index <= 5) {
-            solarFluxPanel = `solarflux:sp_${index+3}`;
+        if(index <= 4) {
+            solarFluxPanel = `solarflux:sp_${index+4}`;
         } else {
             switch (index) {
-                case 6:
+                case 5:
                     solarFluxPanel = 'solarflux:sp_custom_bathyal'
                     break;
-                case 7:
+                case 6:
                     solarFluxPanel = 'solarflux:sp_custom_abyssal'
                     break;
-                case 8:
+                case 7:
                     solarFluxPanel = 'solarflux:sp_custom_hadal'
+                    break;
+                case 8:
+                    solarFluxPanel = 'solarflux:sp_custom_neutronium'
                     break;
                 default:
                     break;
             }
         }
-        event.shapeless(`gtceu:${tiername}_solar_panel`, solarFluxPanel).id(`gtceu:solar_panel_${tiername}_conversion`)
-        event.shapeless(solarFluxPanel, `gtceu:${tiername}_solar_panel`).id(`gtceu:solar_panel_${tiername}_reversion`)
+        event.recipes.gtceu.atomic_reconstruction(`gtceu:solar_panel_${tiername}_conversion`)
+            .itemInputs(solarFluxPanel)
+            .itemOutputs(`gtceu:${tiername}_solar_panel`)
+            .duration(5)
+            .EUt(32)
+        event.recipes.gtceu.atomic_reconstruction(`gtceu:solar_panel_${tiername}_reversion`)
+            .itemInputs(`gtceu:${tiername}_solar_panel`)
+            .itemOutputs(solarFluxPanel)
+            .duration(5)
+            .EUt(32)
     }
 })

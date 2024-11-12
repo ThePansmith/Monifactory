@@ -99,11 +99,25 @@
 			x: 37.0d
 			y: 8.5d
 		}
+		{
+			id: "3402D483AEEB7A4B"
+			linked_quest: "3115EAF1F70A613E"
+			shape: "hexagon"
+			x: 21.5d
+			y: -0.5d
+		}
+		{
+			id: "5138206A04C3BBCD"
+			linked_quest: "5C78349343BA40D7"
+			shape: "hexagon"
+			x: 21.5d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
 			dependencies: ["004344AC70AE88F1"]
-			description: ["&6Luminessence&r is used in a number of things beyond just Extended Crafting Tables, such as nether stars."]
+			description: ["&6Luminessence&r is used in a number of things beyond just Extended Crafting Tables, such as Nether Stars."]
 			disable_toast: true
 			id: "588048A00A6250FB"
 			shape: "hexagon"
@@ -124,7 +138,7 @@
 				"588048A00A6250FB"
 			]
 			description: [
-				"Yeah you get to craft &6Nether Stars&r. Cool huh?"
+				"Yeah, you get to craft &6Nether Stars&r. Cool, huh?"
 				""
 				"Over the course of the pack, Nether Stars are going to be needed in quantities that far exceed a reasonable player's ability to farm Withers. &eCraft them, don't bother trying to farm them."
 			]
@@ -450,7 +464,7 @@
 		{
 			dependencies: ["3E12862AD553EB8A"]
 			description: [
-				"&6Thermal Device Casings&r are upgradable to a &6Machine Frame&r with some &6Stainless Steel Plates&r."
+				"Combining a &6Block of Mana Infused Metal&r with some &6Stainless Steel Plates&r gets you a &6Machine Frame&r."
 				""
 				"These frames form the basis of &bThermal Expansion&r's more advanced machinery."
 			]
@@ -515,11 +529,11 @@
 			description: [
 				"Combining &9Titanium Tetrachloride&r with &6Magnesium&r in an &3Electric Blast Furnace&r (approximating the Kroll process) will net you your first &6Titanium&r. "
 				""
-				"This process is a loop, and therefore will not cost you any resources, apart from &6Rutile&r, if you process it correctly. "
+				"This process is a loop, and therefore will not cost you any resources (apart from &6Rutile&r) if you process it correctly."
 				""
 				"Unfortunately, it is super hot. You'll need to cool it in a &3Vacuum Freezer&r for it to be usable."
 				""
-				"You should have set up a &3Vaccum Freezer&r for &6Kanthal&r, but if you haven't done it yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set an Tag Storage Bus on the input bus of the freezer, set it to 'forge:hot_ingots', and set it to a high piority. This will accept any new Hot Ingots entering you're system, and eliminates the need for a big conduit network."
+				"If you haven't set one up yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set a Tag Storage Bus on the input bus of the freezer, set it to 'forge:hot_ingots', and set it to a high priority. This will accept any new Hot Ingots entering your system, and eliminates the need for a big conduit network."
 				""
 				"Don't encode the Hot Ingot in a pattern though!"
 			]
@@ -568,6 +582,7 @@
 				}
 			]
 			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "52DA77396FBEFC90"
 				item: "gtceu:titanium_ingot"
@@ -580,7 +595,7 @@
 		{
 			dependencies: ["78DCEF2FF2E1AC8C"]
 			description: [
-				"&6Rutile&r is a &6Titanium&r precursor found in &6Ilmenite Ore&r and &6Bauxite Ore&r, which spawn uncommonly in the Overworld."
+				"&6Rutile&r is a &6Titanium&r precursor found in &6Ilmenite Ore&r and &6Bauxite Ore&r, which spawn uncommonly in the End."
 				""
 				"&6&rLarger quantities of Ilmenite and Bauxite may be found on the Moon and other planets."
 			]
@@ -680,13 +695,13 @@
 				"&6* Cassiterite Ore"
 				"&6* Scheelite Ore"
 				"&6* Tungstate Ore"
-				"&6* Radium Salt&r"
+				"&6* Radon Salt&r"
 				""
 				"It is also a primary source of &6Stellar Creation Data&r, which will be useful much, much later."
 				""
 				"When you eventually obtain the &aAdvanced Microverse Projector II&r, this Micro Miner can perform a mission that gives you large amounts of &6Dilithium Ore&r, as well as &6Certus Quartz, Nether Quartz, and Monazite Ore.&r"
 				""
-				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, as of the useful byproducts you get, and the tiny amount of each element you get in this mission.&r"
+				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, because of their useful byproducts and the tiny amount of each element you get in this mission.&r"
 			]
 			id: "53C00EA9D9BEE776"
 			rewards: [{
@@ -710,9 +725,9 @@
 			description: [
 				"&9Radon&r will be needed in large quantities."
 				""
-				"For now, you'll need to obtain it from Tier Two Micro Miner missions, in the form of &6Radium Salt&r. Electrolyze it for Radon and &6Rock Salt&r. &2You can also get it from distilling liquid Ender Air.&r"
+				"For now, you'll need to obtain it from Tier Two Micro Miner missions, in the form of &6Radon Salt&r. Electrolyze it for Radon and &6Rock Salt&r. &2You can also get it from distilling liquid Ender Air.&r"
 				""
-				"Later it will be possible to make Radon using a &bGregTech &3Fusion Reactor&r."
+				"Later, it will be possible to make Radon using a &bGregTech &3Fusion Reactor&r."
 			]
 			icon: "gtceu:radon_bucket"
 			id: "49D33146A1F417E8"
@@ -751,7 +766,7 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["772004D5792ACC4C"]
+			dependencies: ["5C78349343BA40D7"]
 			description: [
 				"A more advanced type of &6Silicon Boule&r, formed by doping the &6Silicon&r crystal lattice with &6Phosphorus&r."
 				""
@@ -777,66 +792,15 @@
 		}
 		{
 			dependencies: [
-				"061904A6FEED5B66"
-				"776199B37A19A592"
+				"3000798ACA51BFDC"
+				"5C78349343BA40D7"
 			]
-			description: [
-				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
-				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Kanthal Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Chemical Bath&r or &3Vacuum Freezer&r."
-				""
-				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Tag Filter&r set to 'forge:hot_ingots' with a high piority."
-			]
-			id: "74832ED7B78A6AEA"
-			rewards: [{
-				id: "1E886FEB3DA0D886"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "293633608B7EDDA0"
-				item: "gtceu:kanthal_ingot"
-				type: "item"
-			}]
-			title: "Kanthal Ingots"
-			x: 21.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["74832ED7B78A6AEA"]
-			description: [
-				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
-				""
-				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Copper fluid&r."
-				""
-				"&2In CEu, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &9temperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%&r energy."
-				""
-				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
-			]
-			id: "772004D5792ACC4C"
-			rewards: [{
-				id: "22AB433442991A13"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				count: 16L
-				id: "5E6B6DF65B03DD17"
-				item: "gtceu:kanthal_coil_block"
-				type: "item"
-			}]
-			title: "&2Kanthal Coil Blocks"
-			x: 21.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["772004D5792ACC4C"]
 			description: [
 				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
 				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Nichrome Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Vacuum Freezer&r."
+				""
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or a &6Tag Filter&r set to 'forge:hot_ingots' with a high piority."
 			]
 			id: "1DB3CCC10C0EB1A8"
 			rewards: [{
@@ -859,7 +823,7 @@
 			description: [
 				"&6Nichrome&r is the third coil material available, increasing your EBF's operating temperature to 3600K so it can process more advanced materials."
 				""
-				"Notice that an &6HV&r &3Assembler&r is required to make them. Each tier of coil requires their tier of Assembler - we won't remind you again."
+				"Note that an &6HV&r &3Assembler&r is required to make them. &cEach tier of coil requires their tier of Assembler&r - we won't remind you again."
 				""
 				"&93600K&r is now also hot enough to grant a single &9100% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
 				""
@@ -891,7 +855,7 @@
 				""
 				"They're also capable of freezing air into a liquid, and making superconductors."
 				""
-				"At minimum you will need an energy input hatch, an input bus, an output bus, and 22 &6Frost Proof Machine Casings&r for forming the multiblock for processing Hot Ingots."
+				"At minimum you will need an energy input hatch, an input bus, an output bus, a maintenance hatch, and 21 &6Frost Proof Machine Casings&r for forming the multiblock for processing Hot Ingots."
 				""
 				"If you want to deal with fluids as well, subtract two casings and use a fluid input and fluid output in their place."
 				""
@@ -916,11 +880,11 @@
 		{
 			dependencies: ["77CEA89E47BB3B7A"]
 			description: [
-				"You'll be needing large quantities of the various Noble Gasses so you should get this automated and running continuously. "
+				"You'll be needing large quantities of the various Noble Gases so you should get this automated and running continuously. "
 				""
-				"&2After liquefication, Overworld Air grants Helium and Argon; Nether Air grants Helium-3 and Neon; Ender Air grants Helium, Krypton, Xenon, and Radon."
+				"&2After liquefaction, Overworld Air grants Helium and Argon; Nether Air grants Helium-3 and Neon; Ender Air grants Helium, Krypton, Xenon, and Radon."
 				""
-				"Certain Noble Gases can also boost the speed of EBF processes."
+				"Certain Noble Gases (as well as Nitrogen) can also boost the speed of EBF processes."
 			]
 			icon: "gtceu:argon_bucket"
 			id: "4C475D22CC95EB93"
@@ -932,10 +896,38 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "32ABC9C584E278E7"
-				item: "gtceu:argon_bucket"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:helium_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:argon_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:krypton_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:xenon_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:radon_bucket"
+							}
+						]
+					}
+				}
+				title: "Any Noble Gas Bucket"
 				type: "item"
 			}]
-			title: "&2Noble Gasses"
+			title: "&2Noble Gases"
 			x: 32.0d
 			y: -0.5d
 		}
@@ -1026,7 +1018,7 @@
 				"77CEA89E47BB3B7A"
 			]
 			description: [
-				"&9Nitrogen&r comprises 78%% of the atmosphere. Because of this, after the first few processes of &9Liquid Air&r, you'll probably have more Nitrogen than you know what to do with."
+				"&9Nitrogen&r comprises 78% of the atmosphere. Because of this, after the first few processes of &9Liquid Air&r, you'll probably have more Nitrogen than you know what to do with."
 				""
 				"If you got here centrifuging air, then it's gonna take you longer to get to that point."
 				""
@@ -1089,7 +1081,7 @@
 				title: "A Centrifuge"
 				type: "item"
 			}]
-			title: "Air Cetrifuging"
+			title: "Air Centrifuging"
 			x: 34.0d
 			y: -4.5d
 		}
@@ -1254,13 +1246,13 @@
 				""
 				"&bGregTech&r's petrochemistry may seem daunting at first, given the sheer number of chemicals and processing options, but it's actually easier to get into than you think."
 				"{@pagebreak}"
-				"Oil is the starting point, and can be found in several variants which you can pump from finite natural wells on the Overworld, as well as coming renewably from &6Oilsands Ore&r and &6Soul Sand&r, and directly in liquid form from a &3Fluid Rig&r."
+				"Oil is the starting point, and can be found in several variants which you can pump from finite natural wells in the Overworld, as well as coming renewably from &6Oilsands Ore&r and &6Soul Sand&r, and directly in liquid form from a &3Fluid Rig&r."
 				""
-				"&2The Fluid Rig can also harvest Raw Oil, Heavy Oil and Light Oil depending on your fluid vein. Raw Oil is similar to Oil, giving the same ratios when distilled but needing double the fluid. Heavy Oil and Light Oil give different ratios when distilled.&r "
+				"&2The Fluid Rig can also harvest Raw Oil, Heavy Oil, and Light Oil depending on your fluid vein. Raw Oil is similar to Oil, giving the same ratios when distilled but needing double the fluid. Heavy Oil and Light Oil give different ratios when distilled.&r "
 				"{@pagebreak}"
 				"Start off by distilling the Oil. This will result in &9Sulfuric Heavy Fuel&r, &9Sulfuric Light Fuel&r, &9Sulfuric Naphtha&r, and/or &9Sulfuric Gas&r."
 				""
-				"These will all need to be hydrodesulfurized using &9Hydrogen&r in a &3Chemical Reactor&r or &2Oil Cracking Unit&r, which produces the non-Sulfuric versions."
+				"These will all need to be hydrodesulfurized using &9Hydrogen&r in a &3Chemical Reactor&r, which produces the non-Sulfuric versions."
 				"{@pagebreak}"
 				"All of these products are useful, so figure out how you want to store the variety and large quantities of fluids."
 				""
@@ -1284,9 +1276,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"No, your monitor doesn't have a dead pixel on it, this just a quest to track if you've made Diesel or Bio-Diesel cause FTB quests can't do proper logicgates. "
+				"No, your monitor doesn't have a dead pixel on it, this is just a quest to track if you've made Diesel or Bio-Diesel cause FTB quests can't do proper logic gates. "
 				""
-				"(Yeah I could just make this quest invisible, but then the dependacy lines don't render, kind of a lose lose here)"
+				"(Yeah I could just make this quest invisible, but then the dependency lines don't render, kind of a lose-lose here)"
 				""
 				""
 				"Now get back to making that (bio)diesel!"
@@ -1317,7 +1309,7 @@
 			description: [
 				"&9Diesel&r is a mixture of &9Light Fuel&r and &9Heavy Fuel&r."
 				""
-				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6cryolobus &2(unless you use Gasoline instead)."
+				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6Cryolobus &2(unless you use Gasoline instead)."
 				""
 				"The performance of Combustion Generators is also improved, but you probably want to refine Diesel anyway."
 				""
@@ -1412,7 +1404,7 @@
 			description: [
 				"Like other petroleum products, &9Sulfuric Gas&r &2or Natural Gas&r is hydrodesulfurized into &9Refinery Gas&r using &9Hydrogen&r in a &3Chemical Reactor&r."
 				""
-				"Refinery Gas can be cracked and further distilled for its constituents, but it is also useful as fuel for &3Gas Turbines&r. While it can be burned directly, centrifuging Refinery Gas produces &9LPG&r (Liquefied Petroleum Gas), which is an ideal fuel for Gas Turbines, and &9Methane&r which is a potential suboptimal turbine fuel but is also useful for various chemical reactions."
+				"Refinery Gas can be cracked and further distilled for its constituents, but it is also useful as fuel for &3Gas Turbines&r. While it can be burned directly, centrifuging Refinery Gas produces &9LPG&r (Liquefied Petroleum Gas), which is an ideal fuel for Gas Turbines, and &9Methane&r which is a potential (suboptimal) turbine fuel but is also useful for various chemical reactions."
 			]
 			id: "2396EF225839C65D"
 			rewards: [{
@@ -1435,7 +1427,7 @@
 			description: [
 				"&9Naphtha&r is best utilized for Steam-Cracking and distilling for its constituents."
 				""
-				"Notably it contains &9Light Fuel&r and &9Heavy Fuel&r for making more &9Diesel&r, as well as many other useful chemicals for a variety of purposes."
+				"Notably, it contains &9Light Fuel&r and &9Heavy Fuel&r for making more &9Diesel&r, as well as many other useful chemicals for a variety of purposes."
 			]
 			icon: "gtceu:naphtha_bucket"
 			id: "04BDE09518C184E4"
@@ -1470,7 +1462,7 @@
 				""
 				"Any other recipe which could be done in a normal &9Chemical Reactor&r, as well as certain &9Mixer&r recipes, can also be done in an &3LCR&r."
 				""
-				"All &9Overclocks&r in the &3LCR&r are &6100%% efficient&r; each overclock will &5quadruple the speed&r, as opposed to doubling it."
+				"All &9Overclocks&r in the &3LCR&r are &6100% efficient&r; each overclock will &5quadruple the speed&r, as opposed to doubling it."
 			]
 			icon: "gtceu:large_chemical_reactor"
 			id: "21B16C005E9E3B0E"
@@ -1511,12 +1503,12 @@
 		{
 			dependencies: ["21B16C005E9E3B0E"]
 			description: [
-				"&2Gasoline is a powerful combustion fuel, generating 1600 EU per mB of fluid. It can also be substituted for Cetane-Boosted Diesel in cryolobus production."
+				"&2Gasoline is a powerful combustion fuel, generating 1600 EU per mB of fluid. It can also be substituted for Cetane-Boosted Diesel in Cryolobus production."
 				""
 				"Gasoline is made of:"
 				"- 16 parts Naphtha"
 				"- 2 parts Refinery Gas"
-				"- 1 part Toluene"
+				"- 2 parts Toluene"
 				"- 1 part Methanol"
 				"- 1 part Acetone"
 				""
@@ -1543,14 +1535,14 @@
 		{
 			dependencies: ["4C76017864258EA9"]
 			description: [
-				"&2High-Octane Gasoline is a even more powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in cryolobus production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
+				"&2High-Octane Gasoline is a even more powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in Cryolobus production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it."
 				""
 				"To refine Gasoline to High-Octane Gasoline, you will need:"
 				"- 20 parts Gasoline"
 				"- 2 parts Octane"
 				"- 2 parts Nitrous Oxide"
 				"- 1 part Toluene"
-				"- 1 part Ethyl Tert-Butyl Ether"
+				"- 1 part Ethyl Tertbutyl Ether"
 				""
 				"To get the most out of this, run it in an Extreme Combustion Engine with Liquid Oxygen."
 			]
@@ -1580,22 +1572,16 @@
 				""
 				"&9Glycerol&r is also used in the production of &9Glyceryl Trinitrate&r, an important step in making &6Dynamite&r, which can be used later in the &3Implosion Compressor&r."
 				""
-				"Even if you're otherwise going all in on petrochemistry for Epoxy, you'll probably end up with some Bio Diesel as a result of making Glycerol, unless your're using &6TNT&r."
+				"Even if you're otherwise going all in on petrochemistry for Epoxy, you'll probably end up with some Bio Diesel as a result of making Glycerol, unless you're using &6TNT&r."
 				""
-				"Bio Diesel can be used for power, but is probably better to convert it to &2Cetane-Boosted Diesel&r."
+				"Bio Diesel can be used for power, but it is probably better to convert it to &2Cetane-Boosted Diesel&r."
 			]
 			icon: "gtceu:glycerol_bucket"
 			id: "502AB887CB316377"
-			rewards: [{
-				id: "3904B31C25EB8F3B"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "7E764A4FD6AE4DE7"
-				item: "gtceu:glycerol_bucket"
-				type: "item"
+				id: "525BCFACC82E3A60"
+				type: "checkmark"
 			}]
 			title: "Bio Diesel and Glycerol"
 			x: 37.0d
@@ -1626,7 +1612,7 @@
 		{
 			dependencies: ["038D06BCA022C1BF"]
 			description: [
-				"You will need either &9Seed Oil&r or &9Fish Oil&r in the process of creating &9Biodiesel&r, created by extracting seeds or fish."
+				"You will need either &9Seed Oil&r or &9Fish Oil&r in the process of making &9Bio Diesel&r, created by extracting seeds or fish."
 				""
 				"The easiest ways to get seeds are with a &9Greenhouse&r."
 				""
@@ -1641,7 +1627,7 @@
 				id: "0948D3609E8F3E64"
 				type: "checkmark"
 			}]
-			title: "&9Biodiesel Feedstock"
+			title: "&9Bio Diesel Feedstock"
 			x: 37.0d
 			y: -0.5d
 		}
@@ -1659,6 +1645,7 @@
 			icon: "gtceu:epichlorohydrin_bucket"
 			id: "7174484A926682F3"
 			rewards: [{
+				count: 2
 				id: "66BDFCA2BC6CD3F8"
 				item: "kubejs:moni_nickel"
 				type: "item"
@@ -1698,7 +1685,7 @@
 				""
 				"&9Allyl Chloride&r provides an alternative means of producing &9Epichlorohydrin&r for &9Epoxy&r."
 				""
-				"Reacting &9Chlorine&r and &9Propene&r will produce Allyl Chloride. Propene is distilled in a &3Distillation Tower&r from any of various cracked petroleum products like &9Steam-Cracked Naphtha&r."
+				"Reacting &9Chlorine&r and &9Propene&r will produce Allyl Chloride. Propene is distilled in a &3Distillation Tower&r from any one of various cracked petroleum products like &9Steam-Cracked Naphtha&r."
 			]
 			icon: "gtceu:allyl_chloride_bucket"
 			id: "2EFC9DDA09527638"
@@ -1741,9 +1728,9 @@
 			description: [
 				"&6Tungsten&r is a material that requires an &3EV Electrolyzer,&2 Chemical Bath&r and an &3Electric Blast Furnace&r with at least &6Nichrome Coils&r."
 				""
-				"It is only found from &6Tungstate&r &2Dust and Scheelite Dust, obtained from their respective ores.&r Tungstate is also obtainable in small quantities from centrifuging &6Endstone Dust&r."
+				"It is only found from &6Tungstate Dust &2and &6Scheelite Dust&2, obtained from their respective ores.&r Tungstate is also obtainable in small quantities from centrifuging &6Endstone Dust&r."
 				""
-				"Scheelite and Tungstate needs to be &2bathed in Hydrochloric Acid to make Tungstic Acid, then electrolyzed&r to get to the Tungsten, which then needs to be cooked in the EBF for Tungsten ingots."
+				"Scheelite and Tungstate need to be &2bathed in Hydrochloric Acid to make Tungstic Acid, then electrolyzed&r to get to the Tungsten, which then needs to be cooked in the EBF for Tungsten Ingots."
 			]
 			id: "3B3F46345D39CAE2"
 			rewards: [{
@@ -1860,21 +1847,21 @@
 				"Or with a Super Chest III:"
 				"&6* Salt Ore"
 				"&2* Barite Ore"
-				"&2* Neodymium Ore"
 				"&2* Apatite Ore"
+				"&2* Neodymium Ore"
 				"&2* Chromite Ore"
 				"&2* Pyrope Ore"
 				""
-				"When equipped with Gemstone Sensor:"
+				"When equipped with a Gemstone Sensor:"
 				"&2* Perfect Diamonds"
 				"&6* Perfect Rubies"
 				"&6* Perfect Topaz"
 				"&6* Perfect Emeralds"
 				"&6* Sapphire Ore"
-				"&6* Silver Ore"
 				"&6* Gold Ore"
+				"&6* Silver Ore"
 				""
-				"The Tier Three Micro Miner will also be used to obtain &2Netherite&r in the endgame."
+				"The Tier Three Micro Miner will also be used to obtain &2Netherite&r in the End Game."
 			]
 			id: "664107ED03A944CD"
 			rewards: [{
@@ -1944,7 +1931,7 @@
 		{
 			dependencies: ["5B9F1EE13E397DEE"]
 			description: [
-				"&2Systems on Chip can be engraved with HV power and Phosphorus Boules. This unlocks the ultimate tier one circuit recipe in the EV Circuit Assembler."
+				"&2A System-on-Chip can be engraved with HV power and Phosphorus Boules. This unlocks the ultimate tier one circuit recipe in the EV Circuit Assembler."
 				""
 				"The ultimate tier two circuit recipe requires an IV Circuit Assembler."
 			]
@@ -1967,9 +1954,9 @@
 			description: [
 				"With &6Titanium&r smelting automated, you can now build Machine Hulls for Extreme Voltage machines."
 				""
-				"EV motors require a better material than &6Steel&r for its magnetism. &6"
+				"EV motors require a better material than &6Steel&r for its magnetism."
 				""
-				"Neodynium&r is required, which is mainly achieved from &6Rare Earth&r. The main sources of this are &6Redstone&r, and everything inside of &6Bastnasite&r veins."
+				"&6Neodymium&r is required, which is mainly achieved from &6Rare Earth&r. The main sources of this are &6Redstone&r, and everything inside of &6Bastnasite&r veins."
 				""
 				"&2Starting at EV, 4A Energy and Dynamo hatches are available at each tier."
 			]
@@ -2006,7 +1993,7 @@
 			shape: "square"
 			tasks: [{
 				id: "0A5BDCBE998FAA19"
-				item: "gtceu:lapotron_gem"
+				item: "gtceu:lapotron_crystal"
 				type: "item"
 			}]
 			title: "&2EV Power Storage"
@@ -2022,11 +2009,11 @@
 				""
 				"&3Rock Breakers&r are first used to achieve renewable &6Deepslate&r. This recipe runs at &9EV&r or higher."
 				""
-				"After this, &3Macerators&r should pulverise the &9Deepslate&r into &9Deepslate Dust&r and a chance of &6Thorium&r. It is recommended to overclock this recipe as much as you can, in order to maximize output of &6Thorium&r."
+				"After this, &3Macerators&r should pulverise the &9Deepslate&r into &9Deepslate Dust&r and a chance of &6Thorium&r. It is recommended to overclock this recipe as much as you can, in order to maximize the amount of &6Thorium&r you get."
 				""
 				"A &3Centrifuge&r then turns &6Deepslate Dust&r into &6Biotite Dust&r and &6Silicon Dioxide Dust&r. The latter can be electrolysed, yielding &6Silicon&r and &6Oxygen&r."
 				""
-				"&6Biotite Dust &ris then finally put into a &3Electrolyser&r. This yeilds &6Potassium, Magnesium, Aluminium&r and &6Silicon Dust&r, as well as some &6Fluorine&r."
+				"&6Biotite Dust &ris then finally put into a &3Electrolyser&r. This yields &6Potassium, Magnesium, Aluminium&r and &6Silicon Dust&r, as well as some &6Fluorine&r."
 			]
 			id: "5FB696EF1D2412F5"
 			rewards: [{
@@ -2053,7 +2040,7 @@
 				""
 				"&rThis is the only way to create some of the advanced alloys used in multiblock machines. You can also use it for most normal alloys if you want. In particular, &ethe speed and energy efficiency are better than the equivalent EBF recipe.&r"
 				""
-				"You can also use the ABS for most Alloy Smelter alloys, apart from &6Steel&r, like &eInvar&r, &e&eConductive Iron&r&r, and &e&eDark Steel&r&r."
+				"You can also use the ABS for most Alloy Smelter alloys (apart from &6Steel&r) like &eInvar&r, &e&eConductive Iron&r&r, and &e&eDark Steel&r&r."
 			]
 			icon: "gtceu:alloy_blast_smelter"
 			id: "0FA959478905FFF3"
@@ -2160,6 +2147,7 @@
 				}
 			]
 			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "214A71696449A9A4"
 				item: "gtceu:tungsten_steel_ingot"
@@ -2177,7 +2165,7 @@
 			description: [
 				"&2With advanced alloys from the Alloy Blast Smelter and IV Machines, you can make large versions of most GT machines."
 				""
-				"&rThese are formed like multiblocks. You can add a &3Parallel Control Hatch&r in order to allow them to process &9more recipes&r at the same time, similarly to a &3Processing Array&r. The highest tier of Parallel Control Hatch can facilitate processing &9256 recipes&r at once!"
+				"&rThese are formed like multiblocks. You can add a &3Parallel Control Hatch&r in order to allow them to process &9more recipes&r at the same time. The highest tier of Parallel Control Hatch can facilitate processing &94096 recipes&r at once!"
 				""
 				"&9Crafting Co-Processers increase the rate that your ME network will \"push\" batches of items out, perfect for machines like these.&r"
 				""
@@ -2217,6 +2205,14 @@
 								Count: 1b
 								id: "gtceu:uv_parallel_hatch"
 							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_uhv_parallel_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uev_uev_parallel_hatch"
+							}
 						]
 					}
 				}
@@ -2228,7 +2224,10 @@
 			y: 15.5d
 		}
 		{
-			dependencies: ["634E056463ED1532"]
+			dependencies: [
+				"634E056463ED1532"
+				"08B36E2C37C417E5"
+			]
 			description: [
 				"With &6Tungstensteel&r achieved, you can now make hulls for Insane Voltage (IV) &bGregTech&r machines."
 				""
@@ -2251,7 +2250,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["605062720747B482"]
+			dependencies: ["6FB3E3D9CA0F4B30"]
 			description: [
 				"&9Rubber&r has been sufficient for making cables so far, but you will soon discover that this basic type of rubber won't withstand more than &2Extreme Voltage&r. Higher quality rubber is necessary to properly insulate your wires."
 				""
@@ -2299,7 +2298,7 @@
 		}
 		{
 			dependencies: ["605062720747B482"]
-			description: ["An Insane Voltage tier &bGregTech&r battery. &2Equivalent to 40 Vibrant Capacitor Banks!"]
+			description: ["An Insane Voltage tier &bGregTech&r battery. &2Equivalent to 125 Vibrant Capacitor Banks!"]
 			id: "46A56A5E3CC2403F"
 			rewards: [{
 				id: "265B4D5F6DAD55AC"
@@ -2413,7 +2412,7 @@
 		{
 			dependencies: ["634E056463ED1532"]
 			description: [
-				"The &3Slice'N'Splice&r is a machine from &bEnderIO&r."
+				"The &3Slice'N'Splice&r is a machine from &bEnder IO&r."
 				""
 				"It is used for making monster-head-related items that are components for various things."
 				""
@@ -2437,7 +2436,7 @@
 		{
 			dependencies: ["634E056463ED1532"]
 			description: [
-				"The &3Soul Binder&r is an &bEnderIO&r machine which uses &aSoul Vials&r and Experience to enhance specific items."
+				"The &3Soul Binder&r is an &bEnder IO&r machine which uses &aSoul Vials&r and Experience to enhance specific items."
 				""
 				"It may be prudent to store &9Liquid XP&r in an adjacent &3Obelisk&r, which the Soul Binder can draw from directly, or you can insert it using other standard means of fluid routing."
 			]
@@ -2485,9 +2484,9 @@
 		{
 			dependencies: ["1349044BF8C04A12"]
 			description: [
-				"The &6Powered Spawner&r is a machine from &bEnderIO&r."
+				"The &6Powered Spawner&r is a machine from &bEnder IO&r."
 				""
-				"It is used to automate the spawning and capture of mobs. As with all &bEnderIO&r machines, it requires a capacitor, with a higher tier capacitor increasing the range, spawning rate, and capture rate."
+				"It is used to automate the spawning and capture of mobs. As with all &bEnder IO&r machines, it requires a capacitor, with a higher tier capacitor increasing the range, spawning rate, and capture rate."
 				""
 				"In order to create a &6Powered Spawner&r for the mob type that you want, you must craft it using a &6Broken Spawner&r for that specific mob type. Once created, the mob type cannot be changed. "
 				""
@@ -2498,8 +2497,6 @@
 				"In capture mode, you insert a &6Soul Vial&r into the machine, and the soul vial captures the &asoul&r of the set mob. This does not spawn any mobs, and thus works with any mob, even on peaceful."
 				""
 				"In spawn mode, the spawner will spawn the mob that it is set to, until there is no space for them, or there are too many mobs in the area."
-				""
-				"Now you don't have to craft Soul Vials, but simply make them! It is also useful in certain crafts, such as the &aFlight Control Unit&r, in saving you a ton of XP."
 			]
 			id: "0A24D3A038861936"
 			rewards: [{
@@ -2565,7 +2562,7 @@
 				"0B9D5F865C3F8B31"
 			]
 			description: [
-				"&2Advanced SMD Components&r are new to CEu and are required for &6Crystal and Wetware circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Nano and Quantum circuits."
+				"&2Advanced SMD Components&r are new to CEu and are required for &6Crystal, Wetware, and Matter circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Nano and Quantum circuits."
 				""
 				"All of these components require &1IV&r power and liquid PBI."
 				""
@@ -2724,7 +2721,7 @@
 				""
 				"That's right-- it's time to get into &bNuclearCraft&r."
 				""
-				"Enhancing basic plating with &6YBCO&r and &6Hard Carbon alloy&r results in a better plating material for more advanced &bNuclearCraft&r blocks."
+				"Enhancing basic plating with &6YBCO&r and &6Hard Carbon Alloy&r results in a better plating material for more advanced &bNuclearCraft&r blocks."
 			]
 			id: "3039269E43788431"
 			rewards: [{
@@ -2745,7 +2742,7 @@
 		}
 		{
 			dependencies: ["517A89E954C7EA74"]
-			description: ["&6Boron&r is currently obtainable by doing ore processing on &6Lepidolite Ore&r and &6Salt Ore&r (via &6Borax&r), and later on, it can be obtained via the Tier Five micro miner."]
+			description: ["&6Boron&r is currently obtainable by doing ore processing on &6Lepidolite Ore&r and &6Salt Ore&r (via &6Borax&r), and later on, it can be obtained via the Tier Five Micro Miner."]
 			id: "7DACCCE935194E39"
 			rewards: [{
 				id: "5AFE5394391AF067"
@@ -2846,7 +2843,7 @@
 			description: [
 				"As you continue to progress, crafting times for more advanced &3Electric Blast Furnace&r recipes will continue to increase. More advanced coils increase the operating temperature so you can smelt more advanced materials, &2and they also grant energy efficiency bonuses and speed bonuses to overclocking.&r"
 				""
-				"Despite this, you'll still need to get your infrastructure for smelting, as well as for power generation, up to snuff."
+				"Despite this, you'll still need to get your infrastructure for smelting, as well as power generation, up to par."
 				""
 				"You don't need to get all eight of these completed and running just yet, but plan to at some point in the future. Instead of upgrading existing EBFs, have them passively automating a stock of materials and build new EBFs with higher specifications for new materials."
 			]
@@ -2959,25 +2956,29 @@
 			description: [
 				"The full complexity of &bNuclearCraft&r is far too much for the scope of this quest guide, so &eyou're encouraged to watch a tutorial or read a guide online&r. "
 				""
-				"For the purposes of this particular quest, you'll be building a breeder reactor to make &6Plutonium&r, and other nuclear elements. While this reactor may seem very expensive, it will be worth it, and you will probably expand it soon. "
+				"For the purposes of this particular quest, you'll be building a breeder reactor to make &6Plutonium&r and other nuclear elements. While this reactor may seem very expensive, it will be worth it, and you will probably expand it soon. "
 				"{@pagebreak}"
-				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster. Alternatively, reactors can be designed to produce a decent amount of power for the mid game of the pack."
+				"This reactor is capable of running any Low-Enriched fuel, such as TBU and LEU-235. This is a basic reactor and can be expanded, following the same pattern, to run faster."
 				""
-				"First, set up your 215 &6Fission Reactor Casings&r to encase a 5x5x5 cube shape of empty air. Any of these reactor casings can be changed to &6Transparent Fission Reactor Casings&r."
-				"{@pagebreak}"
-				"The Casings should  cover the faces of the interior cube, &9as well as the edges and corners&r. You should have exactly the right number of Casings to encase a 5x5x5 space (with space for the controller and ports)."
+				"First, set up your 215 &6Fission Reactor Casings&r to encase a 5x5x5 cube of air. Any of these casings can be changed to &6Transparent Fission Reactor Casings&r."
+				""
+				"The Casings should cover the faces of the interior cube, &9as well as the edges and corners&r. You should have exactly the right number of Casings to encase a 5x5x5 space (with spots for the controller and ports)."
 				""
 				"Next, create a hole so you can get inside the cube."
 				"{@pagebreak}"
-				"Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the &6Cryotheum Coolers&r between, in the empty holes. Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one. The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
-				"{@pagebreak}"
+				"Place the &6Reactor Cells&r in an alternating pattern, with the reactor cells at the corners, and spaces between each one. Alternate between each row, creating a grid pattern. Fill in the empty holes with &6Cryotheum Coolers&r."
+				""
+				"Do this for every layer, alternating between &6Cryotheum Coolers&r on the corners and &6Reactor Cells&r on the corners. You should have the perfect amount of &6Reactor Cells&r and &6Cryotheum Coolers&r for this, and the third and final layers should be the same as the first one."
+				""
+				"The reactor will now be complete when you reseal it up with the Casings you removed to access the interior."
+				""
 				"Finally, place the &3Fission Reactor Controller&r along any edge or corner of the reactor. Opening the Reactor Controller GUI should let you know that the structure was properly formed; if not, go back and check what you did wrong."
-				""
-				"The lever is placed on the reactor, as a redstone signal is required for it to start working. &cReactors can overheat and melt if the temperature exceeds its ability to cool.&r"
 				"{@pagebreak}"
-				"You can make a safety loop on the controller (instead of the lever) to automatically shut off the reactor when it starts getting hot using a &aRedstone Conduit&r, a &aRedstone Sensor Filter&r (on the input channel), and a &aRedstone NOT Filter&r (on the output channel). Make sure input and output are on the same channel color."
+				"A redstone signal is required for the reactor to start working. &cReactors can overheat and melt if their temperature exceeds their ability to cool.&r"
 				""
-				"Info on what exactly you are going to be doing with you fancy new reactor can be found in the &bFission and Fusion&r Chapter."
+				"You can make a safety loop on the controller to automatically shut off the reactor when it starts getting hot. Place a Comparator facing a &aRedstone Conduit&r's input, and a &aRedstone NOT Filter&r outputting the result towards the reactor."
+				""
+				"[\"Info on what exactly you are going to be doing with your fancy new reactor can be found in the \",{\"text\":\"Fission and Fusion\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"40F7695BE1E65C41\"}},\" chapter.\"]"
 			]
 			disable_toast: true
 			icon: "nuclearcraft:fission_reactor_controller"
@@ -3030,7 +3031,7 @@
 				"10C4A6FF23A4DF17"
 			]
 			description: [
-				"Mixing &9Diesel&r (or less efficiently, &9Bio Diesel&r) with &9Tetranitromethane&r in an &3HV Mixer&r &2or Large Chemical Reactor&r produces &2Cetane-Boosted Diesel&r, an extremely potent fuel needed later for &6cryolobus&r production."
+				"Mixing &9Diesel&r (or less efficiently, &9Bio Diesel&r) with &9Tetranitromethane&r in an &3HV Mixer&r &2or Large Chemical Reactor&r produces &2Cetane-Boosted Diesel&r, an extremely potent fuel needed later for &6Cryolobus&r production."
 				""
 				"If you have a very robust petrochemical infrastructure and can afford to burn it, this fuel along with proper oxygenation &2is a potent fuel in the Large Combustion Engine and Extreme Combustion Engine, producing &2720 EU/mB of fuel."
 			]
@@ -3054,13 +3055,14 @@
 		}
 		{
 			dependencies: ["53C00EA9D9BEE776"]
-			description: ["&9While not required for progression, the space station serves as both a cool place to build a base, and opens the door to a variety of other space related options, including even making a dyson sphere!"]
+			description: ["&9While not required for progression, the space station serves as both a cool place to build a base, and opens the door to a variety of other space-related options!"]
 			id: "059A9B12C8478025"
 			rewards: [{
 				id: "62FD649920864137"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
+			subtitle: "&cThis is NOT YET IMPLEMENTED"
 			tasks: [{
 				id: "186C8FE63F7C723E"
 				item: "gcyr:space_station_packager"
@@ -3097,10 +3099,10 @@
 			description: [
 				"&9JEAN Gasoline is the most powerful combustion fuel, using some anomalous ingredients to generate a staggering 81920 EU per mB of fuel. The trade-off is the extremely complex processing lines you must set up for it."
 				""
-				"To refine High-Octane Gasoline, to JEAN Gasoline, you will need:"
+				"To refine High-Octane Gasoline to JEAN Gasoline, you will need:"
 				"- 8 parts High Octane Gasoline"
 				"- 5 parts Rocket Fuel"
-				"- 2 parts Cholorine Triflorine"
+				"- 2 parts Chlorine Trifluoride"
 				"- 1 part Tetraethyllead"
 				"- 1 part dragon's breath"
 				""
@@ -3118,7 +3120,7 @@
 		}
 		{
 			dependencies: ["46C6F922B4ADCC8C"]
-			description: ["The &3Sequential Fabricator&r is an alternative to the &bEnderIO&r &3Crafter&r and the &bExtendedCrafting&r &3Auto Crafting Table&r. It is the most intuitive of the three, and can handle bucket crafting using Fluids."]
+			description: ["The &3Sequential Fabricator&r is an alternative to the &bEnder IO&r &3Crafter&r and the &bExtendedCrafting&r &3Auto Crafting Table&r. It is the most intuitive of the three, and can handle bucket crafting using Fluids."]
 			id: "62C8DB9874421C79"
 			subtitle: "More reliable than a Crafter"
 			tasks: [{

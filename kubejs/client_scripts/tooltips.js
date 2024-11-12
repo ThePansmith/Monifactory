@@ -28,6 +28,12 @@ ItemEvents.tooltip(tooltip => {
     // Endgame Items
     tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
 
+    // Questbook
+    tooltip.addAdvanced(`ftbquests:book`, (item, adv, text) => {text.add(2, Text.gray('The quest window can also be opened with a keybind.'))})
+
+    // Redstone Clock 
+    tooltip.add('redstoneclock:redstone_clock', '§7Needs a redstone signal on a dotted side to work.')
+    
     // DML Data Model
     tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
     tooltip.add('hostilenetworks:data_model', '§7Upgrades when used in the §3Simulation Chamber')
@@ -139,8 +145,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gcyr:space_chestplate', '§7Fill with Oxygen in a Canner.')
 
     // Sophisticated Storage
-    tooltip.add(['sophisticatedstorage:diamond_barrel', 'sophisticatedstorage:diamond_chest', 'sophisticatedstorage:diamond_shulker_box'], 'Use an Iron to Aluminium Tier Upgrade on the previous tier to obtain')
-    tooltip.add(['sophisticatedstorage:netherite_barrel', 'sophisticatedstorage:netherite_chest', 'sophisticatedstorage:netherite_shulker_box'], 'Use an Aluminium to Stainless Steel Tier Upgrade on the previous tier to obtain')
     tooltip.add('functionalstorage:storage_controller', '§7Previously known as a Storage Controller')
     tooltip.add('functionalstorage:framed_storage_controller', '§7Previously known as a Framed Storage Controller')
 
