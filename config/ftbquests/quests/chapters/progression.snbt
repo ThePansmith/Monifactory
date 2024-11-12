@@ -189,13 +189,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are LV, and can all be substituted in recipes."
+				"{ftbquests.chapter.progression.quest1.description1}"
 				""
-				"&2Electronic Circuits&r are the worst in terms of cost and effort required to produce, but you have to start with something."
+				"{ftbquests.chapter.progression.quest1.description2}"
 				""
-				"&2Integrated Circuits&r are the middle layer between &2Electronic Circuits and Microprocessors.&r"
+				"{ftbquests.chapter.progression.quest1.description3}"
 				""
-				"And finally, &2Microprocessors&r, which take the lowest effort."
+				"{ftbquests.chapter.progression.quest1.description4}"
 			]
 			icon: "gtceu:lv_machine_hull"
 			id: "5B6811964444497F"
@@ -214,10 +214,10 @@
 						value: "gtceu:circuits/lv"
 					}
 				}
-				title: "Any #gtceu:circuits/lv"
+				title: "{ftbquests.chapter.progression.quest1.task.title1}"
 				type: "item"
 			}]
-			title: "LV Circuits"
+			title: "{ftbquests.chapter.progression.quest1.title}"
 			x: -8.0d
 			y: -5.5d
 		}
@@ -229,9 +229,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are MV, and can all be substituted in recipes."
+				"{ftbquests.chapter.progression.quest2.description1}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+				"{ftbquests.chapter.progression.quest2.description2}"
 			]
 			icon: "gtceu:mv_machine_hull"
 			id: "1510DC51CDC3F609"
@@ -249,10 +249,10 @@
 						value: "gtceu:circuits/mv"
 					}
 				}
-				title: "Any #gtceu:circuits/mv"
+				title: "{ftbquests.chapter.progression.quest2.task.title1}"
 				type: "item"
 			}]
-			title: "MV Circuits"
+			title: "{ftbquests.chapter.progression.quest2.title}"
 			x: -8.0d
 			y: -4.0d
 		}
@@ -264,9 +264,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are HV, and can all be substituted in recipes."
+				"{ftbquests.chapter.progression.quest3.description1}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+				"{ftbquests.chapter.progression.quest3.description2}"
 			]
 			icon: "gtceu:hv_machine_hull"
 			id: "01CC71429CFCAE0B"
@@ -284,10 +284,10 @@
 						value: "gtceu:circuits/hv"
 					}
 				}
-				title: "Any #gtceu:circuits/hv"
+				title: "{ftbquests.chapter.progression.quest3.task.title1}"
 				type: "item"
 			}]
-			title: "HV Circuits"
+			title: "{ftbquests.chapter.progression.quest3.title}"
 			x: -6.5d
 			y: -2.5d
 		}
@@ -299,9 +299,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are EV, and can all be substituted in recipes."
+				"{ftbquests.chapter.progression.quest4.description1}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+				"{ftbquests.chapter.progression.quest4.description2}"
 			]
 			icon: "gtceu:ev_machine_hull"
 			id: "22B3F2351CB4B7D8"
@@ -319,10 +319,10 @@
 						value: "gtceu:circuits/ev"
 					}
 				}
-				title: "Any #gtceu:circuits/ev"
+				title: "{ftbquests.chapter.progression.quest4.task.title1}"
 				type: "item"
 			}]
-			title: "EV Circuits"
+			title: "{ftbquests.chapter.progression.quest4.title}"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -335,9 +335,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are IV, and can all be substituted in recipes."
+				"{ftbquests.chapter.progression.quest5.description1}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+				"{ftbquests.chapter.progression.quest5.description2}"
 			]
 			icon: "gtceu:iv_machine_hull"
 			id: "2179B83440CEF343"
@@ -350,10 +350,10 @@
 						value: "gtceu:circuits/iv"
 					}
 				}
-				title: "Any #gtceu:circuits/iv"
+				title: "{ftbquests.chapter.progression.quest5.task.title1}"
 				type: "item"
 			}]
-			title: "IV Circuits"
+			title: "{ftbquests.chapter.progression.quest5.title}"
 			x: -3.5d
 			y: 0.5d
 		}
@@ -366,13 +366,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are LuV, and can all be substituted in recipes."
+				"{ftbquests.chapter.progression.quest6.description1}"
 				""
-				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
+				"{ftbquests.chapter.progression.quest6.description2}"
 				""
-				"Make sure to set up wetware board production as soon as possible! They take a very long time to make."
+				"{ftbquests.chapter.progression.quest6.description3}"
 				""
-				"It's LuV, not LUV."
+				"{ftbquests.chapter.progression.quest6.description4}"
 			]
 			icon: "gtceu:luv_machine_hull"
 			id: "536CEDA3142BCE63"
@@ -385,10 +385,10 @@
 						value: "gtceu:circuits/luv"
 					}
 				}
-				title: "Any #gtceu:circuits/luv"
+				title: "{ftbquests.chapter.progression.quest6.task.title1}"
 				type: "item"
 			}]
-			title: "LuV Circuits"
+			title: "{ftbquests.chapter.progression.quest6.title}"
 			x: -2.0d
 			y: 2.0d
 		}
@@ -400,7 +400,7 @@
 				"1289F9FE461BFE01"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Circuits along this line are ZPM, and can all be substituted in recipes."]
+			description: ["{ftbquests.chapter.progression.quest7.description1}"]
 			disable_toast: true
 			icon: "gtceu:zpm_machine_hull"
 			id: "0472A05CFBF4A2F0"
@@ -413,10 +413,10 @@
 						value: "gtceu:circuits/zpm"
 					}
 				}
-				title: "Any #gtceu:circuits/zpm"
+				title: "{ftbquests.chapter.progression.quest7.task.title1}"
 				type: "item"
 			}]
-			title: "ZPM Circuits"
+			title: "{ftbquests.chapter.progression.quest7.title}"
 			x: -0.5d
 			y: 3.5d
 		}
@@ -428,7 +428,7 @@
 				"67663B49B80849C1"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Circuits along this line are UV, and can all be substituted in recipes."]
+			description: ["{ftbquests.chapter.progression.quest8.description1}"]
 			icon: "gtceu:uv_machine_hull"
 			id: "519A11FDC6A7EF21"
 			tasks: [{
@@ -440,16 +440,16 @@
 						value: "gtceu:circuits/uv"
 					}
 				}
-				title: "Any #gtceu:circuits/uv"
+				title: "{ftbquests.chapter.progression.quest8.task.title1}"
 				type: "item"
 			}]
-			title: "UV Circuits"
+			title: "{ftbquests.chapter.progression.quest8.title}"
 			x: 1.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["01E542E1C9DAF5B4"]
-			description: ["Circuits along this line are UHV, and can all be substituted in recipes."]
+			description: ["{ftbquests.chapter.progression.quest9.description1}"]
 			icon: "gtceu:uhv_machine_hull"
 			id: "0C50D78D8F63CAFE"
 			tasks: [{
@@ -461,29 +461,29 @@
 						value: "gtceu:circuits/uhv"
 					}
 				}
-				title: "Any #gtceu:circuits/uhv"
+				title: "{ftbquests.chapter.progression.quest9.task.title1}"
 				type: "item"
 			}]
-			title: "&9UHV Circuits"
+			title: "{ftbquests.chapter.progression.quest9.title}"
 			x: 2.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["077AA27F26B7831F"]
 			description: [
-				"&oNote: this quest accepts a Power Unit of any voltage (LV, MV, HV, EV \\& IV).&r"
+				"{ftbquests.chapter.progression.quest10.description1}"
 				""
-				"With &bGregTech &6Power Storage&r unlocked, you can make &aPower Units&r for electric GT tools."
+				"{ftbquests.chapter.progression.quest10.description2}"
 				""
-				"Check if that tool has that tier first! &6Drills&r are available at all tiers, the &6Wrench&r is available at &7LV&r, &6HV&r and &1IV&r, and the other electric tools, such as &6Chainsaws&r and &6Screwdrivers&r are only available at &7LV&r. "
+				"{ftbquests.chapter.progression.quest10.description3}"
 				""
-				"&2A new addition among them is the Drill, which at LV tier can mine a 3x3x1 area of blocks, and at MV tier can mine a 3x3x3 area of blocks."
+				"{ftbquests.chapter.progression.quest10.description4}"
 				""
-				"Higher tier drills can mine 5x5x5, 7x7x7 and 9x9x9 areas! Shift-right-click to change the breaking area.&r"
+				"{ftbquests.chapter.progression.quest10.description5}"
 				""
-				"Charge these with a &6Battery&r of appropriate tier, or in an appropriately tiered &3Machine&r, &3Battery Buffer&r or &3Turbo Charger&r. "
+				"{ftbquests.chapter.progression.quest10.description6}"
 				""
-				"You may want to look into &6Chainsaws&r for mass tree felling as well, or a &6Wrench&r for breaking machines very quickly. The other electric tools are probably not worth making."
+				"{ftbquests.chapter.progression.quest10.description7}"
 			]
 			id: "2280472741683581"
 			tasks: [{
@@ -516,16 +516,16 @@
 						]
 					}
 				}
-				title: "Any Power Unit"
+				title: "{ftbquests.chapter.progression.quest10.task.title1}"
 				type: "item"
 			}]
-			title: "GregTech Electric Tools"
+			title: "{ftbquests.chapter.progression.quest10.title}"
 			x: 17.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["Carry stuff."]
+			description: ["{ftbquests.chapter.progression.quest11.description1}"]
 			disable_toast: true
 			id: "3270496124969A51"
 			tasks: [{
@@ -533,7 +533,7 @@
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
-			title: "&9Backpack"
+			title: "{ftbquests.chapter.progression.quest11.title}"
 			x: 10.5d
 			y: -8.5d
 		}
@@ -542,7 +542,7 @@
 				"0A9BC922CF76F48A"
 				"7DB174443D7FAFA0"
 			]
-			description: ["Carry &3&l&o&neven more&r stuff."]
+			description: ["{ftbquests.chapter.progression.quest12.description1}"]
 			disable_toast: true
 			id: "6DEA5CE28A667453"
 			tasks: [{
@@ -550,7 +550,7 @@
 				item: "sophisticatedbackpacks:netherite_backpack"
 				type: "item"
 			}]
-			title: "&9Resonant Backpack"
+			title: "{ftbquests.chapter.progression.quest12.title}"
 			x: 10.5d
 			y: -2.5d
 		}
@@ -562,11 +562,11 @@
 				"55074143B559493F"
 			]
 			description: [
-				"The final tier of Integral Components!"
+				"{ftbquests.chapter.progression.quest13.description1}"
 				""
-				"Dynamos operate at &a1000% of base power generation and fuel burn rate&r."
+				"{ftbquests.chapter.progression.quest13.description2}"
 				""
-				"Machines operate at &a1000% of base speed&r."
+				"{ftbquests.chapter.progression.quest13.description3}"
 			]
 			disable_toast: true
 			id: "15B1277EF8657C65"
@@ -588,7 +588,7 @@
 				"3F6EDC2481D5877F"
 				"3270496124969A51"
 			]
-			description: ["Carry &oeven more&r stuff."]
+			description: ["{ftbquests.chapter.progression.quest14.description1}"]
 			icon: {
 				Count: 1
 				id: "sophisticatedbackpacks:iron_backpack"
@@ -628,7 +628,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&9Hardened Backpack"
+			title: "{ftbquests.chapter.progression.quest14.title}"
 			x: 10.5d
 			y: -7.0d
 		}
@@ -637,7 +637,7 @@
 				"3AB0402B19DD5BA8"
 				"1F976B197DEFF654"
 			]
-			description: ["Carry &o&leven more&r stuff."]
+			description: ["{ftbquests.chapter.progression.quest15.description1}"]
 			disable_toast: true
 			id: "503CA19637471E6E"
 			rewards: [{
@@ -663,7 +663,7 @@
 				}
 				type: "item"
 			}]
-			title: "&9Reinforced Backpack"
+			title: "{ftbquests.chapter.progression.quest15.title}"
 			x: 10.5d
 			y: -5.5d
 		}
@@ -672,7 +672,7 @@
 				"27A80F018F59EF1E"
 				"503CA19637471E6E"
 			]
-			description: ["Carry &l&o&neven more&r stuff."]
+			description: ["{ftbquests.chapter.progression.quest16.description1}"]
 			disable_toast: true
 			id: "0A9BC922CF76F48A"
 			shape: "square"
@@ -694,18 +694,18 @@
 				}
 				type: "item"
 			}]
-			title: "&9Signalum Backpack"
+			title: "{ftbquests.chapter.progression.quest16.title}"
 			x: 10.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["025543EDB0A4AC22"]
 			description: [
-				"Upgrade kits can be applied to &bThermal Expansion&r Dynamos, machines, and even Portable Tanks. Machines and dynamos get additional augment slots."
+				"{ftbquests.chapter.progression.quest17.description1}"
 				""
-				"When applied to a dynamo, it increases the &apower generation and fuel burn rate to 150%&r."
+				"{ftbquests.chapter.progression.quest17.description2}"
 				""
-				"Allows machines to operate at &a150% of their base power per tick&r. The more power a machine can use, the faster it works."
+				"{ftbquests.chapter.progression.quest17.description3}"
 			]
 			disable_toast: true
 			id: "126ED4A0AEA05DCD"
@@ -714,7 +714,7 @@
 				type: "xp_levels"
 				xp_levels: 5
 			}]
-			subtitle: "What?! &6STEAM DYNAMO&r is evolving!"
+			subtitle: "{ftbquests.chapter.progression.quest17.subtitle}"
 			tasks: [{
 				id: "78E3752A857221D8"
 				item: "thermal:upgrade_augment_1"
@@ -727,11 +727,11 @@
 		{
 			dependencies: ["126ED4A0AEA05DCD"]
 			description: [
-				"Same deal as Hardened Components, but even faster."
+				"{ftbquests.chapter.progression.quest18.description1}"
 				""
-				"Dynamos operate at &a250% of base power generation and fuel burn rate&r."
+				"{ftbquests.chapter.progression.quest18.description2}"
 				""
-				"Machines operate at &a250% of base speed&r."
+				"{ftbquests.chapter.progression.quest18.description3}"
 			]
 			disable_toast: true
 			id: "5CFBAB5F83E33064"
@@ -752,11 +752,11 @@
 				"5CFBAB5F83E33064"
 			]
 			description: [
-				"Having unlocked &6Signalum&r, at long last you can make &aSignalum Integral Components&r!"
+				"{ftbquests.chapter.progression.quest19.description1}"
 				""
-				"Dynamos operate at &a500% of base power generation and fuel burn rate&r."
+				"{ftbquests.chapter.progression.quest19.description2}"
 				""
-				"Machines operate at &a500% of base speed&r."
+				"{ftbquests.chapter.progression.quest19.description3}"
 			]
 			disable_toast: true
 			id: "55074143B559493F"
@@ -782,9 +782,9 @@
 				"544E87F5E356FE10"
 			]
 			description: [
-				"&6RTM Alloy&r is an alloy of &6Ruthenium&r, &6Tungsten&r and &6Molybdenum&r."
+				"{ftbquests.chapter.progression.quest20.description1}"
 				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+				"{ftbquests.chapter.progression.quest20.description2}"
 			]
 			disable_toast: true
 			id: "5D0A642048AF909B"
@@ -799,16 +799,16 @@
 				item: "gtceu:rtm_alloy_ingot"
 				type: "item"
 			}]
-			title: "&9RTM Alloy"
+			title: "{ftbquests.chapter.progression.quest20.title}"
 			x: 20.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["5D0A642048AF909B"]
 			description: [
-				"&6RTM Alloy&r is the fourth coil material available, increasing your EBF's operating temperature to 4500K so it can process more advanced materials."
+				"{ftbquests.chapter.progression.quest21.description1}"
 				""
-				"&9In Monifactory, RTM Alloy replaces Tungstensteel in coil progression."
+				"{ftbquests.chapter.progression.quest21.description2}"
 			]
 			disable_toast: true
 			id: "6DC635766CD40FFF"
@@ -824,20 +824,20 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			title: "&9RTM Alloy Coil Blocks"
+			title: "{ftbquests.chapter.progression.quest21.title}"
 			x: 18.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["3A5387B2003177B2"]
 			description: [
-				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
+				"{ftbquests.chapter.progression.quest22.description1}"
 				""
-				"There's also a quest chain for &bEnder IO&r Jetpacks (starting with the &6Conductive Iron Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you &oreally&r like flying."
+				"{ftbquests.chapter.progression.quest22.description2}"
 			]
 			disable_toast: true
 			id: "712023557B5B1812"
-			subtitle: "Being able to fly is pretty sick. It's also pretty expensive."
+			subtitle: "{ftbquests.chapter.progression.quest22.subtitle}"
 			tasks: [{
 				id: "0AEBB08D9E593A5B"
 				item: {
@@ -855,9 +855,9 @@
 		{
 			dependencies: ["7842EC1C389C4B7E"]
 			description: [
-				"Being able to fly is nice. This is the first jetpack that uses &bEnder IO&r materials."
+				"{ftbquests.chapter.progression.quest23.description1}"
 				""
-				"There's also a quest chain for &bThermal Expansion&r Jetpacks (starting with the &6Leadstone Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you &oreally&r like flying."
+				"{ftbquests.chapter.progression.quest23.description2}"
 			]
 			disable_toast: true
 			id: "6ABF927014F8B79D"
@@ -885,7 +885,7 @@
 				"64F45D98FA48D834"
 				"6ABF927014F8B79D"
 			]
-			description: ["Flying faster is nice."]
+			description: ["{ftbquests.chapter.progression.quest24.description1}"]
 			disable_toast: true
 			id: "7B1D349ADD9D1140"
 			rewards: [{
@@ -904,7 +904,7 @@
 				}
 				type: "item"
 			}]
-			title: "Ironman 2"
+			title: "{ftbquests.chapter.progression.quest24.title}"
 			x: 14.0d
 			y: -7.0d
 		}
@@ -913,7 +913,7 @@
 				"0607A59215F0F8B3"
 				"7B1D349ADD9D1140"
 			]
-			description: ["Flying faster, even nicer."]
+			description: ["{ftbquests.chapter.progression.quest25.description1}"]
 			disable_toast: true
 			id: "15A43AB700CADF2D"
 			rewards: [{
@@ -933,7 +933,7 @@
 				}
 				type: "item"
 			}]
-			title: "Ironman 3"
+			title: "{ftbquests.chapter.progression.quest25.title}"
 			x: 14.0d
 			y: -5.5d
 		}
@@ -943,7 +943,7 @@
 				"3BD20358F137E7C6"
 				"712023557B5B1812"
 			]
-			description: ["Better flying."]
+			description: ["{ftbquests.chapter.progression.quest26.description1}"]
 			disable_toast: true
 			id: "4542BF5E00FCBEA1"
 			tasks: [{
@@ -966,9 +966,9 @@
 				"15A43AB700CADF2D"
 			]
 			description: [
-				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
+				"{ftbquests.chapter.progression.quest27.description1}"
 				""
-				"Up to you if you want to use it over a jetpack for day-to-day stuff, but it's an ingredient in each of the Jetplates so if you want either of them you'll need to make one eventually."
+				"{ftbquests.chapter.progression.quest27.description2}"
 			]
 			disable_toast: true
 			id: "2923E98849358E16"
@@ -978,19 +978,19 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			subtitle: "I'm running out of MCU puns."
+			subtitle: "{ftbquests.chapter.progression.quest27.subtitle}"
 			tasks: [{
 				id: "1E1C020C525B7F47"
 				item: "better_angel_ring:angel_ring"
 				type: "item"
 			}]
-			title: "&9Captain... Marvel? IDK"
+			title: "{ftbquests.chapter.progression.quest27.title}"
 			x: 14.75d
 			y: -4.0d
 		}
 		{
 			dependencies: ["6F5BB99060FF03AC"]
-			description: ["May be worth setting up a line for &9Multidimensional CPU Chip&r Processing."]
+			description: ["{ftbquests.chapter.progression.quest28.description1}"]
 			id: "4EB9D1ADC4814330"
 			shape: "hexagon"
 			tasks: [{
@@ -998,13 +998,13 @@
 				item: "kubejs:matter_processor_computer"
 				type: "item"
 			}]
-			title: "&9The Second Tier Nine Circuit"
+			title: "{ftbquests.chapter.progression.quest28.title}"
 			x: 5.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["4612D36D22AB4B34"]
-			description: ["Some of the elements that can be found in &9Scrap Processing&r are used to create this, funny how the world works."]
+			description: ["{ftbquests.chapter.progression.quest29.description1}"]
 			id: "7704A934F89E4FD9"
 			shape: "hexagon"
 			tasks: [{
@@ -1012,7 +1012,7 @@
 				item: "kubejs:dimensional_processor_assembly"
 				type: "item"
 			}]
-			title: "&9The Third Tier Nine Circuit"
+			title: "{ftbquests.chapter.progression.quest29.title}"
 			x: 7.0d
 			y: 6.5d
 		}
@@ -1022,9 +1022,9 @@
 				"6F9041F256F517A3"
 			]
 			description: [
-				"These mainframes are far more expensive than previous circuit tiers, requiring silicon chips imbued with &6Hearts of the Universe&r."
+				"{ftbquests.chapter.progression.quest30.description1}"
 				""
-				"Don't let that discourage you, though, they also unlock many useful tools to add to your factory."
+				"{ftbquests.chapter.progression.quest30.description2}"
 			]
 			id: "07057CDE4E021BA7"
 			shape: "hexagon"
@@ -1033,13 +1033,13 @@
 				item: "kubejs:matter_processor_mainframe"
 				type: "item"
 			}]
-			title: "&9The First Tier Ten Circuit"
+			title: "{ftbquests.chapter.progression.quest30.title}"
 			x: 5.5d
 			y: 8.0d
 		}
 		{
 			dependencies: ["7704A934F89E4FD9"]
-			description: ["At this point, making circuits is beyond second nature for you, so you know what to do."]
+			description: ["{ftbquests.chapter.progression.quest31.description1}"]
 			id: "5E829641B6FE96E5"
 			shape: "hexagon"
 			tasks: [{
@@ -1047,7 +1047,7 @@
 				item: "kubejs:dimensional_processor_computer"
 				type: "item"
 			}]
-			title: "&9The Second Tier Ten Circuit"
+			title: "{ftbquests.chapter.progression.quest31.title}"
 			x: 7.0d
 			y: 8.0d
 		}
@@ -1056,7 +1056,7 @@
 				"5E829641B6FE96E5"
 				"7AF06CB391779388"
 			]
-			description: ["With these circuits, you have unlocked &aUIV&r, the pentultimate voltage. UIV circuits allow you to craft a variety of things to help improve and redefine your base as you push on."]
+			description: ["{ftbquests.chapter.progression.quest32.description1}"]
 			id: "1B1D3A66B847D129"
 			shape: "hexagon"
 			tasks: [{
@@ -1064,7 +1064,7 @@
 				item: "kubejs:dimensional_processor_mainframe"
 				type: "item"
 			}]
-			title: "&9The First Tier Eleven Circuit"
+			title: "{ftbquests.chapter.progression.quest32.title}"
 			x: 7.0d
 			y: 9.5d
 		}
@@ -1073,16 +1073,16 @@
 				"0C9A9F33EEA3AB5E"
 				"4DED2A24CB1A56F5"
 			]
-			description: ["&6Monic Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Twelve circuits. Unlike past Mainframes, you will need to craft more than just a few of them."]
+			description: ["{ftbquests.chapter.progression.quest33.description1}"]
 			id: "5601A05D8361551D"
 			shape: "hexagon"
-			subtitle: "The Final Circuit!"
+			subtitle: "{ftbquests.chapter.progression.quest33.subtitle}"
 			tasks: [{
 				id: "7C6BFAE0BEAADEA4"
 				item: "kubejs:monic_processor_mainframe"
 				type: "item"
 			}]
-			title: "&9The First Tier Twelve Circuit"
+			title: "{ftbquests.chapter.progression.quest33.title}"
 			x: 8.5d
 			y: 11.0d
 		}
@@ -1091,7 +1091,7 @@
 				"5054D3FA7E96EB83"
 				"1E36AFB19932C805"
 			]
-			description: ["The first circuit to require complex SMDs."]
+			description: ["{ftbquests.chapter.progression.quest34.description1}"]
 			id: "4612D36D22AB4B34"
 			shape: "hexagon"
 			tasks: [{
@@ -1099,13 +1099,13 @@
 				item: "kubejs:dimensional_processor"
 				type: "item"
 			}]
-			title: "&9The Fourth And Final Tier Eight Circuits"
+			title: "{ftbquests.chapter.progression.quest34.title}"
 			x: 7.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["248ABB7F26EB72EE"]
-			description: ["Now with superconductors!"]
+			description: ["{ftbquests.chapter.progression.quest35.description1}"]
 			id: "6F5BB99060FF03AC"
 			shape: "hexagon"
 			tasks: [{
@@ -1113,7 +1113,7 @@
 				item: "kubejs:matter_processor_assembly"
 				type: "item"
 			}]
-			title: "&9The Third Tier Eight Circuit"
+			title: "{ftbquests.chapter.progression.quest35.title}"
 			x: 5.5d
 			y: 5.0d
 		}
@@ -1123,7 +1123,7 @@
 				"2D5677EA9F47AA83"
 				"44E2C12FC4C26CA9"
 			]
-			description: ["At this point, if you are not already using a &2Multiblock&r to perform your Circuit Assembler recipes, you really should be."]
+			description: ["{ftbquests.chapter.progression.quest36.description1}"]
 			id: "248ABB7F26EB72EE"
 			shape: "hexagon"
 			tasks: [{
@@ -1131,16 +1131,16 @@
 				item: "kubejs:matter_processor"
 				type: "item"
 			}]
-			title: "&9The Fourth And Final Tier Seven Circuits"
+			title: "{ftbquests.chapter.progression.quest36.title}"
 			x: 5.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["5601A05D8361551D"]
-			description: ["The MAX voltage lacks machines to call its own, with the primary usage of its circuits being to craft the &9Creative Quantum Chest&r."]
+			description: ["{ftbquests.chapter.progression.quest37.description1}"]
 			icon: "gtceu:max_machine_hull"
 			id: "11FDFB08CD48D66E"
-			subtitle: "There can be only one!"
+			subtitle: "{ftbquests.chapter.progression.quest37.subtitle}"
 			tasks: [{
 				id: "703CDB7D8BF05A55"
 				item: {
@@ -1152,7 +1152,7 @@
 				}
 				type: "item"
 			}]
-			title: "&9MAX Circuit"
+			title: "{ftbquests.chapter.progression.quest37.title}"
 			x: 7.0d
 			y: 11.0d
 		}
@@ -1162,7 +1162,7 @@
 				"1B1D3A66B847D129"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Circuits along this line are UIV, and can all be substituted in recipes."]
+			description: ["{ftbquests.chapter.progression.quest38.description1}"]
 			icon: "gtceu:uiv_machine_hull"
 			id: "4177C4BD329C38DA"
 			tasks: [{
@@ -1176,7 +1176,7 @@
 				}
 				type: "item"
 			}]
-			title: "&9UIV Circuits"
+			title: "{ftbquests.chapter.progression.quest38.title}"
 			x: 5.5d
 			y: 9.5d
 		}
@@ -1187,7 +1187,7 @@
 				"3D7924B550A1BBA0"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Circuits along this line are UEV, and can all be substituted in recipes."]
+			description: ["{ftbquests.chapter.progression.quest39.description1}"]
 			icon: "gtceu:uev_machine_hull"
 			id: "0B923E8ED6161CA8"
 			tasks: [{
@@ -1201,13 +1201,13 @@
 				}
 				type: "item"
 			}]
-			title: "&9UEV Circuits"
+			title: "{ftbquests.chapter.progression.quest39.title}"
 			x: 4.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["3D7924B550A1BBA0"]
-			description: ["Possibly strong enough to run vanilla Minecraft at a decent FPS."]
+			description: ["{ftbquests.chapter.progression.quest40.description1}"]
 			id: "0C9A9F33EEA3AB5E"
 			shape: "hexagon"
 			tasks: [{
@@ -1215,13 +1215,13 @@
 				item: "kubejs:monic_processor_computer"
 				type: "item"
 			}]
-			title: "&9The Second Tier Eleven Circuit"
+			title: "{ftbquests.chapter.progression.quest40.title}"
 			x: 8.5d
 			y: 9.5d
 		}
 		{
 			dependencies: ["5A8D2BFAF02E6325"]
-			description: ["Infinite power in a circuit."]
+			description: ["{ftbquests.chapter.progression.quest41.description1}"]
 			id: "3D7924B550A1BBA0"
 			shape: "hexagon"
 			tasks: [{
@@ -1229,7 +1229,7 @@
 				item: "kubejs:monic_processor_assembly"
 				type: "item"
 			}]
-			title: "&9The Third Tier Ten Circuit"
+			title: "{ftbquests.chapter.progression.quest41.title}"
 			x: 8.5d
 			y: 8.0d
 		}
@@ -1239,16 +1239,16 @@
 				"68734C70E2D19616"
 				"1E36AFB19932C805"
 			]
-			description: ["Let's put all of this together to create the final circuit tier."]
+			description: ["{ftbquests.chapter.progression.quest42.description1}"]
 			id: "5A8D2BFAF02E6325"
 			shape: "hexagon"
-			subtitle: "The Beginning of The End"
+			subtitle: "{ftbquests.chapter.progression.quest42.subtitle}"
 			tasks: [{
 				id: "3EFB11DA4735807C"
 				item: "kubejs:monic_processor"
 				type: "item"
 			}]
-			title: "&9The Fourth And Final Tier Nine Circuits"
+			title: "{ftbquests.chapter.progression.quest42.title}"
 			x: 8.5d
 			y: 6.5d
 		}
@@ -1257,7 +1257,7 @@
 				"5A07988F5AD20A06"
 				"113E9543ADB1666B"
 			]
-			description: ["Crafted from the aforementioned Circuit Boards, these Processing Units will be used to create &6Matter Circuits&r."]
+			description: ["{ftbquests.chapter.progression.quest43.description1}"]
 			id: "0F56F4E642BC2B85"
 			shape: "hexagon"
 			tasks: [{
@@ -1265,7 +1265,7 @@
 				item: "kubejs:matter_processing_unit"
 				type: "item"
 			}]
-			title: "&9Matter Processing Unit"
+			title: "{ftbquests.chapter.progression.quest43.title}"
 			x: 5.5d
 			y: -8.5d
 		}
@@ -1275,7 +1275,7 @@
 				"7E93D88827F83E1A"
 				"4DF92773C82F4AAC"
 			]
-			description: ["An &6Infinity Ingot&r and &6The Ultimate Material&r are needed for these."]
+			description: ["{ftbquests.chapter.progression.quest44.description1}"]
 			id: "5054D3FA7E96EB83"
 			shape: "hexagon"
 			tasks: [{
@@ -1283,7 +1283,7 @@
 				item: "kubejs:dimensional_processing_unit"
 				type: "item"
 			}]
-			title: "&9Dimensional Processing Unit"
+			title: "{ftbquests.chapter.progression.quest44.title}"
 			x: 7.0d
 			y: -8.5d
 		}
@@ -1292,7 +1292,7 @@
 				"2343B68110805282"
 				"434142F777A2CCBE"
 			]
-			description: ["The final processing unit. These require &6Ultimate Gems&r."]
+			description: ["{ftbquests.chapter.progression.quest45.description1}"]
 			id: "7979D07FBDC6D170"
 			shape: "hexagon"
 			tasks: [{
@@ -1300,7 +1300,7 @@
 				item: "kubejs:monic_processing_unit"
 				type: "item"
 			}]
-			title: "&9Monic Processing Unit"
+			title: "{ftbquests.chapter.progression.quest45.title}"
 			x: 8.5d
 			y: -8.5d
 		}
@@ -1308,11 +1308,11 @@
 			dependencies: ["17312BF0197B87A8"]
 			dependency_requirement: "one_completed"
 			description: [
-				"A \"&esubstrate&f\" is the \"board\" part of a circuit board... the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
+				"{ftbquests.chapter.progression.quest46.description1}"
 				""
-				"&2CEu circuit progression means you also have to put wires on your substrates for them to be usable. In this case, use some Fine Copper Wires.&r"
+				"{ftbquests.chapter.progression.quest46.description2}"
 				""
-				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
+				"{ftbquests.chapter.progression.quest46.description3}"
 			]
 			disable_toast: true
 			icon: "gtceu:resistor"
@@ -1337,7 +1337,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Electronics Subcomponents"
+			title: "{ftbquests.chapter.progression.quest46.title}"
 			x: -6.5d
 			y: -8.5d
 		}
@@ -1348,9 +1348,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&9This is where &bEMI&9 really shines! Using it alongside &3Crafting Stations&9, you should be able to easily calculate the amount of raw resources and intermediate components you'll need to &ebatch craft &9electronic circuits quickly."
+				"{ftbquests.chapter.progression.quest47.description1}"
 				""
-				"You'll be making a LOT&r of circuits, so take advantage of the improved crafting efficiency."
+				"{ftbquests.chapter.progression.quest47.description2}"
 			]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "1A30472430354F1E"
@@ -1360,22 +1360,22 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "With all of the components made, it's time to craft an &2Electronic Circuit&r."
+			subtitle: "{ftbquests.chapter.progression.quest47.subtitle}"
 			tasks: [{
 				id: "5DED56006806D2E0"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			title: "Your First Circuit"
+			title: "{ftbquests.chapter.progression.quest47.title}"
 			x: -6.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["71C7B47DC85AA016"]
 			description: [
-				"&2Phenolic Substrates need to be turned into Circuit Boards with Silver before being usable in Circuit production."
+				"{ftbquests.chapter.progression.quest48.description1}"
 				""
-				"&2Sodium Persulfate and Iron III Chloride are troublesome to get right now, but using them in making Circuit Boards will reduce the amount of Silver required by 4 times."
+				"{ftbquests.chapter.progression.quest48.description2}"
 			]
 			id: "3650EF39B5AB4A7D"
 			rewards: [{
@@ -1389,7 +1389,7 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			title: "&2Good Circuit Boards"
+			title: "{ftbquests.chapter.progression.quest48.title}"
 			x: -5.0d
 			y: -8.5d
 		}
@@ -1400,9 +1400,9 @@
 				"1A30472430354F1E"
 			]
 			description: [
-				"Your first &6Tier Two Circuits&r will require three &6Tier One Circuits&r plus two &6Diodes&r."
+				"{ftbquests.chapter.progression.quest49.description1}"
 				""
-				"These are rather expensive... Always be on the lookout for a cheaper way to make your circuits - new sets of recipes become available each time you make a new tier of &2Circuit Assembler&r. Conveniently, this tier of Circuit unlocks one now!"
+				"{ftbquests.chapter.progression.quest49.description2}"
 			]
 			id: "3B639F4061B00F1A"
 			rewards: [{
@@ -1417,7 +1417,7 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			title: "&2The First Tier Two Circuits"
+			title: "{ftbquests.chapter.progression.quest49.title}"
 			x: -6.5d
 			y: -4.0d
 		}
@@ -1427,13 +1427,13 @@
 				"3B639F4061B00F1A"
 			]
 			description: [
-				"&3Circuit Assemblers&r are the linchpin of your factory, gating progression through the &6Circuits&r. "
+				"{ftbquests.chapter.progression.quest50.description1}"
 				""
-				"Each time you upgrade to a new voltage of Circuit Assembler, you will be able to craft more advanced &ethemes&r of circuits. These use more complex ingredients and require new infrastructure to be in place, but are more efficient to craft overall than the same tier of circuit from the prior theme."
+				"{ftbquests.chapter.progression.quest50.description2}"
 				""
-				"&2The LV Circuit Assembler allows you to make Electronic Circuits far more easily."
+				"{ftbquests.chapter.progression.quest50.description3}"
 				""
-				"The circuit progression has been largely replaced with the progression native to CEu, with a few minor changes to reflect the progression of this pack better.&r Check out the &9Progression quest book tab&r to see the flow of circuit progression."
+				"{ftbquests.chapter.progression.quest50.description4}"
 			]
 			id: "73F8EA8E7DCC94E9"
 			rewards: [{
@@ -1443,13 +1443,13 @@
 			}]
 			shape: "hexagon"
 			size: 1.0d
-			subtitle: "Pick-n-Place"
+			subtitle: "{ftbquests.chapter.progression.quest50.subtitle}"
 			tasks: [{
 				id: "7E8AC4BB3E3E0461"
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2LV Circuit Assembler"
+			title: "{ftbquests.chapter.progression.quest50.title}"
 			x: -5.0d
 			y: -7.0d
 		}
@@ -1459,9 +1459,9 @@
 				"73F8EA8E7DCC94E9"
 			]
 			description: [
-				"These are easier to mass produce than &6Electronic Circuits&r, and they're required to produce the &6Advanced Integrated Circuit&r, your first &6HV&r circuit."
+				"{ftbquests.chapter.progression.quest51.description1}"
 				""
-				"Otherwise, they fulfill the same requirements."
+				"{ftbquests.chapter.progression.quest51.description2}"
 			]
 			id: "27FAD6A8FCFAB543"
 			rewards: [{
@@ -1475,13 +1475,13 @@
 				item: "gtceu:basic_integrated_circuit"
 				type: "item"
 			}]
-			title: "&2The Second Tier One Circuits"
+			title: "{ftbquests.chapter.progression.quest51.title}"
 			x: -5.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["27FAD6A8FCFAB543"]
-			description: ["&2Two Integrated Circuits&r and various other components will create a &2Good Integrated Circuit."]
+			description: ["{ftbquests.chapter.progression.quest52.description1}"]
 			id: "2AC61192BCD459F2"
 			rewards: [{
 				id: "447C6A40A5BA0F42"
@@ -1494,7 +1494,7 @@
 				item: "gtceu:good_integrated_circuit"
 				type: "item"
 			}]
-			title: "&2The Second Tier Two Circuits"
+			title: "{ftbquests.chapter.progression.quest52.title}"
 			x: -5.0d
 			y: -4.0d
 		}
@@ -1505,11 +1505,11 @@
 				"2AC61192BCD459F2"
 			]
 			description: [
-				"Your first Tier Three circuit, formed from &2two Good Integrated Circuits&r, &6RAM&r, and &6Transistors&r, among other ingredients."
+				"{ftbquests.chapter.progression.quest53.description1}"
 				""
-				"As you'll realize is the pattern, it is expensive and unwieldy to make the first forms of each tier of circuits. Fortunately, you don't have to make many of them."
+				"{ftbquests.chapter.progression.quest53.description2}"
 				""
-				"Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each tier through nine will have a circuit recipe instead of requiring processors, arrays, or mainframes."
+				"{ftbquests.chapter.progression.quest53.description3}"
 			]
 			id: "6169C04DF463502F"
 			rewards: [{
@@ -1524,13 +1524,13 @@
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			title: "&2The First Tier Three Circuits"
+			title: "{ftbquests.chapter.progression.quest53.title}"
 			x: -5.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["6169C04DF463502F"]
-			description: ["With the &3Advanced Circuit Assembling Machine&r, a new theme of Circuits is available."]
+			description: ["{ftbquests.chapter.progression.quest54.description1}"]
 			id: "1F101D4F758ACECB"
 			rewards: [{
 				id: "1C6128ACCE36223A"
@@ -1544,7 +1544,7 @@
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2MV Circuit Assembler"
+			title: "{ftbquests.chapter.progression.quest54.title}"
 			x: -3.5d
 			y: -7.0d
 		}
@@ -1555,9 +1555,9 @@
 				"7D3FAEA5E0071BDC"
 			]
 			description: [
-				"&2You can start to churn out Microprocessors&r. These are the best kind of Tier One circuits you can make, and you won't unlock the better recipes for them until &5EV&r."
+				"{ftbquests.chapter.progression.quest55.description1}"
 				""
-				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
+				"{ftbquests.chapter.progression.quest55.description2}"
 			]
 			id: "2FD1AE24CD8BEBEB"
 			rewards: [{
@@ -1572,16 +1572,16 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			title: "&2The Third And Final Tier One Circuits"
+			title: "{ftbquests.chapter.progression.quest55.title}"
 			x: -3.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
 			description: [
-				"Better substrates. Using &6Polyvinyl Chloride&r (PVC) instead of &6Polyethylene&r (PE) doubles your yield."
+				"{ftbquests.chapter.progression.quest56.description1}"
 				""
-				"The &2other three material options&r are much more difficult to make and probably not worth considering for now."
+				"{ftbquests.chapter.progression.quest56.description2}"
 			]
 			id: "7D3FAEA5E0071BDC"
 			rewards: [{
@@ -1595,7 +1595,7 @@
 				item: "gtceu:plastic_printed_circuit_board"
 				type: "item"
 			}]
-			title: "&2Plastic Substrate"
+			title: "{ftbquests.chapter.progression.quest56.title}"
 			x: -3.5d
 			y: -8.5d
 		}
@@ -1606,9 +1606,9 @@
 				"7D3FAEA5E0071BDC"
 			]
 			description: [
-				"&2Unique to this tier of Circuit, this MV circuit doesn't require the previous tier to craft.&r These are the best kind of Tier Two circuits you can make, and you won't unlock the better recipes for them until &9IV&r."
+				"{ftbquests.chapter.progression.quest57.description1}"
 				""
-				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
+				"{ftbquests.chapter.progression.quest57.description2}"
 			]
 			id: "7308924C9A481443"
 			rewards: [{
@@ -1623,7 +1623,7 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			title: "&2The Third And Final Tier Two Circuits"
+			title: "{ftbquests.chapter.progression.quest57.title}"
 			x: -3.5d
 			y: -4.0d
 		}
@@ -1632,7 +1632,7 @@
 				"013C3CD6D8C727CE"
 				"7308924C9A481443"
 			]
-			description: ["Marginally cheaper to make than &2Advanced Integrated Circuits&r, and also the only way to make the &2Microprocessor Supercomputer&r, which is the first Tier Four circuit."]
+			description: ["{ftbquests.chapter.progression.quest58.description1}"]
 			id: "5759E8587624BEF1"
 			rewards: [{
 				id: "07F79912C88F145F"
@@ -1645,40 +1645,40 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			title: "&2The Second Tier Three Circuits"
+			title: "{ftbquests.chapter.progression.quest58.title}"
 			x: -3.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["15E34DEC491FAB81"]
 			description: [
-				"The &2Cleanroom&r is a hollow multiblock free of contaminants. Going forward, most new circuit-related recipes, as well as some unique things like &3Fusion Casings&r, will need to be run in machines inside a Cleanroom. This is another ported &5GT5u&r feature, but just like with &aMaintenance&r, it won't be nearly as harsh."
+				"{ftbquests.chapter.progression.quest59.description1}"
 				""
-				"Once built, it must be well-maintained and powered for a while to clean the inside. The Cleanroom's power draw will decrease once it fully cleans itself. Recipes requiring the Cleanroom will &conly&r run when inside a &cfully-cleaned&r Cleanroom; if not, the recipe will not start, or recipe progress might be lost. (Recipe inputs will &enever be voided&r.)"
+				"{ftbquests.chapter.progression.quest59.description2}"
 				"{@pagebreak}"
-				"The Cleanroom can be built in any size between 5x5x5 and 15x15x15. The Controller is placed in the center of the top face, and the rest of the top face is built from &3Filter Casings&r, save for the edges and corners. The rest of the wall and floor space is filled with &3Plascrete&r."
+				"{ftbquests.chapter.progression.quest59.description3}"
 				""
-				"For transfer between the clean environment and the outside world:"
+				"{ftbquests.chapter.progression.quest59.description4}"
 				""
-				"- Items and fluids through &3Passthrough Hatches&r. They automatically input from one side and output from the opposite side."
+				"{ftbquests.chapter.progression.quest59.description5}"
 				""
-				"- Energy through &bGregTech &3Hulls&r or &3Diodes&r (of any tier). Note that Diodes can transport up to &e16 amps&r, whilst Hulls can only transport &e1 amp&r."
+				"{ftbquests.chapter.progression.quest59.description6}"
 				""
-				"- Your AE network through &bGregTech&r &3Hulls&r (of any tier)."
+				"{ftbquests.chapter.progression.quest59.description7}"
 				""
-				"- Players through &3Doors&r of any kind. The room remains clean when doors are opened."
+				"{ftbquests.chapter.progression.quest59.description8}"
 				"{@pagebreak}"
-				"Apart from the \"official\" solutions, non-physical methods of transfer such as &3Ender Chests&r might be effective. &bApplied Energistics&r &3P2P Tunnels&r may also fit your liking."
+				"{ftbquests.chapter.progression.quest59.description9}"
 				""
-				"You will also need an &3Energy &rand &3Maintenance Hatch &rfor cleaning. &3Cleanroom Glass&r can replace any &3Plascrete&r, apart from the edges."
+				"{ftbquests.chapter.progression.quest59.description10}"
 				""
-				"If you're facing issues forming the Cleanroom:"
+				"{ftbquests.chapter.progression.quest59.description11}"
 				""
-				"- The wall space must be at least 75% &3Plascrete&r or &3Cleanroom Glass&r. The floor block directly under the controller must also be &3Plascrete&r or &3Cleanroom Glass&r."
+				"{ftbquests.chapter.progression.quest59.description12}"
 				""
-				"- GT generators and Muffler Hatches are &cnot allowed&r in Cleanrooms."
+				"{ftbquests.chapter.progression.quest59.description13}"
 				""
-				"- Try rotating the controller with a wrench, or for even side lengths, try the other central positions."
+				"{ftbquests.chapter.progression.quest59.description14}"
 			]
 			icon: "gtceu:cleanroom"
 			id: "244F2CC5484A7B21"
@@ -1721,11 +1721,11 @@
 							]
 						}
 					}
-					title: "Cleanroom Blocks"
+					title: "{ftbquests.chapter.progression.quest59.task.title1}"
 					type: "item"
 				}
 			]
-			title: "&2Cleanroom"
+			title: "{ftbquests.chapter.progression.quest59.title}"
 			x: -2.0d
 			y: -8.5d
 		}
@@ -1737,9 +1737,9 @@
 				"5759E8587624BEF1"
 			]
 			description: [
-				"This is the first Tier Four circuit, which is used for EV-tier machinery. Requires some Vibrant Alloy."
+				"{ftbquests.chapter.progression.quest60.description1}"
 				""
-				"&2The HV Circuit Assembler only unlocks one circuit type, the Mainframe. There is no circuit theme associated with the HV Circuit Assembler; instead, the HV (non-Circuit) Assembler unlocks easier Circuit components. The next circuit theme is not until EV."
+				"{ftbquests.chapter.progression.quest60.description2}"
 			]
 			id: "7E09D4E00BFA4970"
 			rewards: [{
@@ -1755,16 +1755,16 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			title: "&2The First Tier Four Circuits"
+			title: "{ftbquests.chapter.progression.quest60.title}"
 			x: -2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["7E09D4E00BFA4970"]
 			description: [
-				"The &3HV Circuit Assembling Machine&r unlocks &2the Mainframe. That's it.&r"
+				"{ftbquests.chapter.progression.quest61.description1}"
 				""
-				"It can also optionally overclock recipes up to 128 EU/t, gaining additional speed for relatively more power."
+				"{ftbquests.chapter.progression.quest61.description2}"
 			]
 			id: "6B908DECFA46C8E0"
 			require_sequential_tasks: false
@@ -1780,7 +1780,7 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2HV Circuit Assembler"
+			title: "{ftbquests.chapter.progression.quest61.title}"
 			x: -2.0d
 			y: -7.0d
 		}
@@ -1790,9 +1790,9 @@
 				"6B908DECFA46C8E0"
 			]
 			description: [
-				"The first Mainframe you'll have to contend with."
+				"{ftbquests.chapter.progression.quest62.description1}"
 				""
-				"This is the first Tier Five circuit available, and consequently the most expensive to make. As always, invest in the next circuit theme to get to cheaper recipes as soon as possible."
+				"{ftbquests.chapter.progression.quest62.description2}"
 			]
 			id: "39FD6F1076559156"
 			rewards: [{
@@ -1806,13 +1806,13 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			title: "&2The First Tier Five Circuit"
+			title: "{ftbquests.chapter.progression.quest62.title}"
 			x: -2.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["26ECEC06CCAB3E56"]
-			description: ["&6Epoxy Circuit Boards&r are a more advanced substrate type that gives you access to &2Nanocircuits, which span tiers three through six."]
+			description: ["{ftbquests.chapter.progression.quest63.description1}"]
 			id: "0B8CE3FBF62B099D"
 			rewards: [{
 				id: "0161DA06BA4790AF"
@@ -1825,7 +1825,7 @@
 				item: "gtceu:epoxy_printed_circuit_board"
 				type: "item"
 			}]
-			title: "&2Epoxy Substrate"
+			title: "{ftbquests.chapter.progression.quest63.title}"
 			x: -0.5d
 			y: -8.5d
 		}
@@ -1836,9 +1836,9 @@
 				"5B9F1EE13E397DEE"
 			]
 			description: [
-				"&2You can start to churn out Nanoprocessors&r. These are the best kind of Tier Three circuits you can make, and you won't unlock the better recipes for them until &dLuV&r."
+				"{ftbquests.chapter.progression.quest64.description1}"
 				""
-				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
+				"{ftbquests.chapter.progression.quest64.description2}"
 			]
 			id: "5672773780EE8267"
 			rewards: [{
@@ -1852,7 +1852,7 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			title: "&2The Third And Final Tier Three Circuits"
+			title: "{ftbquests.chapter.progression.quest64.title}"
 			x: -0.5d
 			y: -2.5d
 		}
@@ -1863,9 +1863,9 @@
 				"39FD6F1076559156"
 			]
 			description: [
-				"With your &6Titanium&r-based machine hulls and &6Mainframes&r squared away, you can finally get on the path to making an Extreme Voltage &3Circuit Assembling Machine&r."
+				"{ftbquests.chapter.progression.quest65.description1}"
 				""
-				"This tier of Assembling Machine unlocks &6Nanocircuits&r, as well as handling crafting recipes up to 2048 EU/t. It can also optionally overclock recipes that consume up to 512 EU/t for improved speed at the cost of relatively more power."
+				"{ftbquests.chapter.progression.quest65.description2}"
 			]
 			id: "5B9F1EE13E397DEE"
 			rewards: [{
@@ -1880,13 +1880,13 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2EV Circuit Assembler"
+			title: "{ftbquests.chapter.progression.quest65.title}"
 			x: -0.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["5672773780EE8267"]
-			description: ["Nothing you haven't seen here: just combine some standard circuit components and &6Nanocircuits&r to make a &6Nanoprocessor&r."]
+			description: ["{ftbquests.chapter.progression.quest66.description1}"]
 			id: "1DFF7C35B5B26B80"
 			rewards: [{
 				count: 2
@@ -1900,13 +1900,13 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			title: "The Second Tier Four Circuits"
+			title: "{ftbquests.chapter.progression.quest66.title}"
 			x: -0.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1DFF7C35B5B26B80"]
-			description: ["Upgrading to the &6Nano Supercomputer&r requires some standard circuit components, but also some &6Lumium Wire&r and &2Fine Tungstensteel Wire."]
+			description: ["{ftbquests.chapter.progression.quest67.description1}"]
 			id: "2DD1E2391DA3170C"
 			rewards: [{
 				count: 2
@@ -1920,16 +1920,16 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			title: "The Second Tier Five Circuits"
+			title: "{ftbquests.chapter.progression.quest67.title}"
 			x: -0.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["2DD1E2391DA3170C"]
 			description: [
-				"The first and most expensive Tier Six Circuit, needed for crafting the &3IV Assembling Machine&r."
+				"{ftbquests.chapter.progression.quest68.description1}"
 				""
-				"Requires a bunch of standard circuit components."
+				"{ftbquests.chapter.progression.quest68.description2}"
 			]
 			id: "4DB622A78605A2EB"
 			rewards: [{
@@ -1943,16 +1943,16 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			title: "The First Tier Six Ciruits"
+			title: "{ftbquests.chapter.progression.quest68.title}"
 			x: -0.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0B8CE3FBF62B099D"]
 			description: [
-				"A &6Reinforced Epoxy Resin Sheet&r is made in a &3Chemical Bath&r, not a &3Chemical Reactor&r. The board itself is made in a Chemical Reactor though."
+				"{ftbquests.chapter.progression.quest69.description1}"
 				""
-				"Other than that, it's very similar to the other substrates you've made so far. This board type unlocks &2Quantum Circuits, which span tiers four through seven."
+				"{ftbquests.chapter.progression.quest69.description2}"
 			]
 			icon: "gtceu:fiber_reinforced_printed_circuit_board"
 			id: "57A6FE885489C3ED"
@@ -1979,7 +1979,7 @@
 					type: "item"
 				}
 			]
-			title: "Fiber-Reinforced Printed Circuit Board"
+			title: "{ftbquests.chapter.progression.quest69.title}"
 			x: 1.0d
 			y: -8.5d
 		}
@@ -1989,11 +1989,11 @@
 				"4DB622A78605A2EB"
 			]
 			description: [
-				"With your &6Tungstensteel&r-based machine hulls and &6Nanoprocessor Mainframes&r squared away, you can finally get on the path to making an Insane Voltage &3Circuit Assembling Machine&r."
+				"{ftbquests.chapter.progression.quest70.description1}"
 				""
-				"This tier of Assembling Machine unlocks &6Quantum Circuits&r, as well as handling crafting recipes up to 8192 EU/t. It can also optionally overclock recipes that consume up to 2048 EU/t for improved speed at the cost of relatively more power."
+				"{ftbquests.chapter.progression.quest70.description2}"
 				""
-				"Alternatively, you can make an &6IV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
+				"{ftbquests.chapter.progression.quest70.description3}"
 			]
 			icon: "gtceu:iv_circuit_assembler"
 			id: "4E63CE9607E3B792"
@@ -2024,7 +2024,7 @@
 				}
 				type: "item"
 			}]
-			title: "&2IV Circuit Assembler"
+			title: "{ftbquests.chapter.progression.quest70.title}"
 			x: 1.0d
 			y: -7.0d
 		}
@@ -2035,9 +2035,9 @@
 				"4E63CE9607E3B792"
 			]
 			description: [
-				"With your new &6Epoxy Circuit Boards, &6QBit CPUs&r, and some standard components, you can make the final type of Tier Four Circuit: the &6Quantum Circuit&r."
+				"{ftbquests.chapter.progression.quest71.description1}"
 				""
-				"As the best form of Tier Four circuit, these should be automated and stockpiled. The variant recipe requiring &6Advanced System-on-Chip&r won't be available until ZPM."
+				"{ftbquests.chapter.progression.quest71.description2}"
 			]
 			id: "47D092CBA484C0DE"
 			rewards: [{
@@ -2052,13 +2052,13 @@
 				item: "gtceu:quantum_processor"
 				type: "item"
 			}]
-			title: "The Third and Final Tier Four Circuits"
+			title: "{ftbquests.chapter.progression.quest71.title}"
 			x: 1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["47D092CBA484C0DE"]
-			description: ["Nothing new here, just use more standard circuit stuff and you can upgrade several &6Quantum Circuits&r into a &6Quantum Processor&r."]
+			description: ["{ftbquests.chapter.progression.quest72.description1}"]
 			id: "1FF5C2A3CAB76088"
 			rewards: [{
 				count: 2
@@ -2072,13 +2072,13 @@
 				item: "gtceu:quantum_processor_assembly"
 				type: "item"
 			}]
-			title: "The Third Tier Five Circuit"
+			title: "{ftbquests.chapter.progression.quest72.title}"
 			x: 1.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["1FF5C2A3CAB76088"]
-			description: ["Nothing special about this tier either."]
+			description: ["{ftbquests.chapter.progression.quest73.description1}"]
 			id: "6CE6674C20500023"
 			rewards: [{
 				count: 2
@@ -2092,16 +2092,16 @@
 				item: "gtceu:quantum_processor_computer"
 				type: "item"
 			}]
-			title: "The Second Tier Six Circuits"
+			title: "{ftbquests.chapter.progression.quest73.title}"
 			x: 1.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6CE6674C20500023"]
 			description: [
-				"Now you can craft the &6Quantum Processor Mainframe&r, the first Tier Seven circuit."
+				"{ftbquests.chapter.progression.quest74.description1}"
 				""
-				"These are required for crafting the Ludicrous Voltage (LuV) &3Assembling Machine&r."
+				"{ftbquests.chapter.progression.quest74.description2}"
 			]
 			id: "521977C7165229F1"
 			rewards: [{
@@ -2116,7 +2116,7 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			title: "&2The First Tier Seven Circuits"
+			title: "{ftbquests.chapter.progression.quest74.title}"
 			x: 1.0d
 			y: 3.5d
 		}
@@ -2128,11 +2128,11 @@
 				"458FF3F9BC8E025B"
 			]
 			description: [
-				"With your &2Rhodium Plated Lumium-Palladium&r-based machine hulls, Assembling Machine built, and &6Quantum Processor Mainframes&r squared away, you can finally get on the path to making a Ludicrous Voltage &3Circuit Assembling Machine&r."
+				"{ftbquests.chapter.progression.quest75.description1}"
 				""
-				"This tier of Assembling Machine unlocks &6Crystal Circuits&r, as well as handling crafting recipes up to 32768 EU/t. It can also optionally overclock recipes that consume up to 8192 EU/t for improved speed at the cost of relatively more power."
+				"{ftbquests.chapter.progression.quest75.description2}"
 				""
-				"Alternatively, you can make a &6LuV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
+				"{ftbquests.chapter.progression.quest75.description3}"
 			]
 			icon: "gtceu:luv_circuit_assembler"
 			id: "0BB798ACFE684AA9"
@@ -2163,7 +2163,7 @@
 				}
 				type: "item"
 			}]
-			title: "&2LuV Circuit Assembler"
+			title: "{ftbquests.chapter.progression.quest75.title}"
 			x: 2.5d
 			y: -7.0d
 		}
@@ -2175,11 +2175,11 @@
 				"38791476E970C57D"
 			]
 			description: [
-				"With your &6Crystal CPUs&r and the &3LuV Assembling Machine&r crafted, you can make the final type of Tier Five Circuit: the &6Crystal Processor&r."
+				"{ftbquests.chapter.progression.quest76.description1}"
 				""
-				"&2This is the first Circuit which strictly requires Advanced SMD components. All of them will from now on.&r"
+				"{ftbquests.chapter.progression.quest76.description2}"
 				""
-				"As the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring &6Crystal System-on-Chip&r won't be available until you can make a &3ZPM Circuit Assembling Machine&r."
+				"{ftbquests.chapter.progression.quest76.description3}"
 			]
 			id: "3C3B5875FCD6B5B7"
 			rewards: [{
@@ -2193,13 +2193,13 @@
 				item: "gtceu:crystal_processor"
 				type: "item"
 			}]
-			title: "&2The Fourth and Final Tier Five Circuits"
+			title: "{ftbquests.chapter.progression.quest76.title}"
 			x: 2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["3C3B5875FCD6B5B7"]
-			description: ["With some now-standard components you can upgrade a few &6Crystal Proessors&r into a &6Crystal Processor Assembly&r."]
+			description: ["{ftbquests.chapter.progression.quest77.description1}"]
 			id: "64C33333ECCAABC7"
 			rewards: [{
 				id: "190E006926FD0AAE"
@@ -2212,16 +2212,16 @@
 				item: "gtceu:crystal_processor_assembly"
 				type: "item"
 			}]
-			title: "The Third Tier Six Circuits"
+			title: "{ftbquests.chapter.progression.quest77.title}"
 			x: 2.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["57A6FE885489C3ED"]
 			description: [
-				"That's a lot of foil. &2These use Palladium Foil instead of Electrum now.&r"
+				"{ftbquests.chapter.progression.quest78.description1}"
 				""
-				"These boards are required for &6Crystal Circuits&r, as well as the future basis of &6Wetware Lifesupport Circuit Boards&r. These will get you from tier five to tier eight."
+				"{ftbquests.chapter.progression.quest78.description2}"
 			]
 			icon: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
 			id: "7E51D15F38C3B356"
@@ -2248,7 +2248,7 @@
 					type: "item"
 				}
 			]
-			title: "Multi-Layer Fiber-Reinforced Printed Circuit Board"
+			title: "{ftbquests.chapter.progression.quest78.title}"
 			x: 2.5d
 			y: -8.5d
 		}
@@ -2257,7 +2257,7 @@
 				"7DB174443D7FAFA0"
 				"64C33333ECCAABC7"
 			]
-			description: ["With &6Enderium&r, you can assemble a &6Crystal Processor Supercomputer&r."]
+			description: ["{ftbquests.chapter.progression.quest79.description1}"]
 			id: "26CA20E74A62FA6E"
 			shape: "hexagon"
 			tasks: [{
@@ -2265,7 +2265,7 @@
 				item: "gtceu:crystal_processor_computer"
 				type: "item"
 			}]
-			title: "&2The Second Tier Seven Circuits"
+			title: "{ftbquests.chapter.progression.quest79.title}"
 			x: 2.5d
 			y: 3.5d
 		}
@@ -2275,11 +2275,11 @@
 				"26CA20E74A62FA6E"
 			]
 			description: [
-				"The &6Crystal Processor Mainframe&r is the first Tier Eight circuit."
+				"{ftbquests.chapter.progression.quest80.description1}"
 				""
-				"Along with things you already know how to make, this needs &6HSS-E Frames&r."
+				"{ftbquests.chapter.progression.quest80.description2}"
 				""
-				"These are required for crafting the &3ZPM Circuit Assembling Machine&r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these."
+				"{ftbquests.chapter.progression.quest80.description3}"
 			]
 			id: "115B96B2092D671E"
 			rewards: [{
@@ -2293,7 +2293,7 @@
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			title: "&2The First Tier Eight Circuits"
+			title: "{ftbquests.chapter.progression.quest80.title}"
 			x: 2.5d
 			y: 5.0d
 		}
@@ -2303,11 +2303,11 @@
 				"115B96B2092D671E"
 			]
 			description: [
-				"With your &2Naquadah Alloy&r-based machine hulls and &6Crystal Processor Mainframes&r squared away, you can finally get on the path to making a ZPM &3Circuit Assembling Machine&r."
+				"{ftbquests.chapter.progression.quest81.description1}"
 				""
-				"This tier of Assembling Machine unlocks &6Wetware Circuits&r, as well as handling crafting recipes up to 131072 EU/t. It can also optionally overclock recipes that consume up to 32768 EU/t for improved speed at the cost of relatively more power."
+				"{ftbquests.chapter.progression.quest81.description2}"
 				""
-				"Alternatively, you can make a &6ZPM Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
+				"{ftbquests.chapter.progression.quest81.description3}"
 			]
 			icon: "gtceu:zpm_circuit_assembler"
 			id: "49E9A178F6A52A62"
@@ -2338,7 +2338,7 @@
 				}
 				type: "item"
 			}]
-			title: "&2ZPM Circuit Assembler"
+			title: "{ftbquests.chapter.progression.quest81.title}"
 			x: 4.0d
 			y: -7.0d
 		}
@@ -2347,7 +2347,7 @@
 				"0F6B344C265D1FBB"
 				"4AC51394FB5152E5"
 			]
-			description: ["&2Use the Stem Cells and more advanced materials to build a Neuro Processing Unit. This is used in the first Wetware Circuit."]
+			description: ["{ftbquests.chapter.progression.quest82.description1}"]
 			id: "4FABACAB7C4A74AC"
 			rewards: [{
 				id: "5A005B4C81258B80"
@@ -2360,7 +2360,7 @@
 				item: "gtceu:neuro_processing_unit"
 				type: "item"
 			}]
-			title: "&2Neuro Processing Unit"
+			title: "{ftbquests.chapter.progression.quest82.title}"
 			x: 4.0d
 			y: -8.5d
 		}
@@ -2370,11 +2370,11 @@
 				"4FABACAB7C4A74AC"
 			]
 			description: [
-				"The final form of Tier Six circuits."
+				"{ftbquests.chapter.progression.quest83.description1}"
 				""
-				"Using your &2Neuro Processing Units&r, you can craft (grow?) these circuits in a ZPM or better &3Circuit Assembling Machine&r."
+				"{ftbquests.chapter.progression.quest83.description2}"
 				""
-				"These are fairly slow to craft and you're going to need considerable quantities, so make sure you have a good parallelized infrastructure for keeping these stocked."
+				"{ftbquests.chapter.progression.quest83.description3}"
 			]
 			id: "5ECF0A787D861C89"
 			rewards: [{
@@ -2388,13 +2388,13 @@
 				item: "gtceu:wetware_processor"
 				type: "item"
 			}]
-			title: "&2The Fourth And Final Tier Six Circuits"
+			title: "{ftbquests.chapter.progression.quest83.title}"
 			x: 4.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["5ECF0A787D861C89"]
-			description: ["&6Wetware Processors&r are made in &2the ZPM+ Circuit Assembler still."]
+			description: ["{ftbquests.chapter.progression.quest84.description1}"]
 			id: "1289F9FE461BFE01"
 			rewards: [{
 				id: "7027E316193CFB45"
@@ -2407,16 +2407,16 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			title: "&2The Third Tier Seven Circuits"
+			title: "{ftbquests.chapter.progression.quest84.title}"
 			x: 4.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["1289F9FE461BFE01"]
 			description: [
-				"&6Wetware Supercomputers&r are made in an &3Assembly Line&r at ZPM or better power."
+				"{ftbquests.chapter.progression.quest85.description1}"
 				""
-				"You'll need &6Europium&r from the &3Fusion Reactor&r to craft these."
+				"{ftbquests.chapter.progression.quest85.description2}"
 			]
 			id: "67663B49B80849C1"
 			rewards: [{
@@ -2430,7 +2430,7 @@
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			title: "The Second Tier Eight Circuits"
+			title: "{ftbquests.chapter.progression.quest85.title}"
 			x: 4.0d
 			y: 5.0d
 		}
@@ -2440,7 +2440,7 @@
 				"67663B49B80849C1"
 				"75DD12FBC8AA39FC"
 			]
-			description: ["The only novel ingredient is &6Tritanium Frames&r."]
+			description: ["{ftbquests.chapter.progression.quest86.description1}"]
 			id: "01E542E1C9DAF5B4"
 			rewards: [{
 				count: 10
@@ -2454,16 +2454,16 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			title: "The First Tier Nine Circuit"
+			title: "{ftbquests.chapter.progression.quest86.title}"
 			x: 4.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["2E87146C82EF941C"]
 			description: [
-				"The prelude to the final coil tier. "
+				"{ftbquests.chapter.progression.quest87.description1}"
 				""
-				"Traditionally made by combining 9 &9Omnium Nuggets&r into an ingot, but by the time you are making &6Omnic Matrix Coils&r, you will probably already have the &3Creative Quantum Tank&r and be able to simply solidify all the required ingots."
+				"{ftbquests.chapter.progression.quest87.description2}"
 			]
 			id: "6DF2C1E88BE7CE5F"
 			shape: "hexagon"
@@ -2478,9 +2478,9 @@
 		{
 			dependencies: ["4542BF5E00FCBEA1"]
 			description: [
-				"Even better flying."
+				"{ftbquests.chapter.progression.quest88.description1}"
 				""
-				"You're not getting up to Resonant for a long time, just FYI."
+				"{ftbquests.chapter.progression.quest88.description2}"
 			]
 			disable_toast: true
 			id: "28854E7AC91786E9"
@@ -2504,11 +2504,11 @@
 				"01E542E1C9DAF5B4"
 			]
 			description: [
-				"With your &2Darmstadtium&r-based machine hulls and &6Wetware Mainframes&r squared away, you can finally get on the path to making a UV &3Circuit Assembling Machine&r."
+				"{ftbquests.chapter.progression.quest89.description1}"
 				""
-				"This tier of Assembling Machine unlocks &6Matter Circuits&r, as well as handling crafting recipes up to 524288 EU/t. It can also optionally overclock recipes that consume up to 131072 EU/t for improved speed at the cost of relatively more power."
+				"{ftbquests.chapter.progression.quest89.description2}"
 				""
-				"Alternatively, you can make an &6UV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
+				"{ftbquests.chapter.progression.quest89.description3}"
 			]
 			icon: "gtceu:uv_circuit_assembler"
 			id: "44E2C12FC4C26CA9"
@@ -2539,22 +2539,22 @@
 				}
 				type: "item"
 			}]
-			title: "&2UV Circuit Assembler"
+			title: "{ftbquests.chapter.progression.quest89.title}"
 			x: 5.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["1DB3CCC10C0EB1A8"]
 			description: [
-				"&6Nichrome&r is the third coil material available, increasing your EBF's operating temperature to 3600K so it can process more advanced materials."
+				"{ftbquests.chapter.progression.quest90.description1}"
 				""
-				"Notice that an &6HV&r &3Assembler&r is required to make them. Each tier of coil requires their tier of Assembler - we won't remind you again."
+				"{ftbquests.chapter.progression.quest90.description2}"
 				""
-				"&93600K&r is now also hot enough to grant a single &9100% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
+				"{ftbquests.chapter.progression.quest90.description3}"
 				""
-				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at HV. Once you upgrade your EBF to EV power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to &6Nichrome&r once you can afford it. "
+				"{ftbquests.chapter.progression.quest90.description4}"
 				""
-				"Later coils will give similar bonuses. Additionally, the EBF's temperature will increase by &9100K&r for each voltage tier above MV, which could make a difference for future materials."
+				"{ftbquests.chapter.progression.quest90.description5}"
 			]
 			disable_toast: true
 			id: "544E87F5E356FE10"
@@ -2565,7 +2565,7 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			title: "&2Nichrome Coil Blocks"
+			title: "{ftbquests.chapter.progression.quest90.title}"
 			x: 18.5d
 			y: -5.5d
 		}
@@ -2575,11 +2575,11 @@
 				"069773756716E192"
 			]
 			description: [
-				"To make &9Tritanium&r, you first need to make &9Duranium&r. This is done by fusing &9Liquid Gallium&r and &9Radon&r in a &3Fusion Reactor MK I&r or better."
+				"{ftbquests.chapter.progression.quest91.description1}"
 				""
-				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor MK II&r using the Duranium and &9Liquid Titanium&r."
+				"{ftbquests.chapter.progression.quest91.description2}"
 				""
-				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into &aEMI&r."
+				"{ftbquests.chapter.progression.quest91.description3}"
 			]
 			disable_toast: true
 			id: "6C199A6CBC13A481"
@@ -2589,13 +2589,13 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			title: "&2Tritanium Ingot"
+			title: "{ftbquests.chapter.progression.quest91.title}"
 			x: 20.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6C199A6CBC13A481"]
-			description: ["&2Tritanium Coils are the eighth coil material. At 10800K, it's capable of smelting nearly every material."]
+			description: ["{ftbquests.chapter.progression.quest92.description1}"]
 			disable_toast: true
 			id: "2E87146C82EF941C"
 			shape: "hexagon"
@@ -2604,13 +2604,13 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			title: "&2Tritanium Coils"
+			title: "{ftbquests.chapter.progression.quest92.title}"
 			x: 18.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6DF2C1E88BE7CE5F"]
-			description: ["&6Omnium Coils&r, made in the &dOmnic Forge&r, are the final coil type you will need. At &a15000K&r, they're capable of smelting every material and make your EBF look &4f&6a&eb&au&2l&3o&9u&ds&5."]
+			description: ["{ftbquests.chapter.progression.quest93.description1}"]
 			disable_toast: true
 			id: "6EA130B04FDE6868"
 			shape: "hexagon"
@@ -2619,7 +2619,7 @@
 				item: "kubejs:omnic_matrix_coil_block"
 				type: "item"
 			}]
-			title: "&9Omnic Matrix Coil"
+			title: "{ftbquests.chapter.progression.quest93.title}"
 			x: 18.5d
 			y: 3.5d
 		}
@@ -2627,9 +2627,9 @@
 			dependencies: ["33F610CF136278AE"]
 			dependency_requirement: "one_started"
 			description: [
-				"Taking a look at the &6Corrupted Universe Data&r has given you a couple of ideas, but to properly take advantage of it, a new Micro Miner is needed."
+				"{ftbquests.chapter.progression.quest94.description1}"
 				""
-				"This Micro Miner requires an Epic Extended Crafting Table to fit all the things required for a foray into a corrupted universe."
+				"{ftbquests.chapter.progression.quest94.description2}"
 			]
 			disable_toast: true
 			id: "7C22CDB22492916F"
@@ -2640,27 +2640,27 @@
 				item: "kubejs:microminer_t11"
 				type: "item"
 			}]
-			title: "&9Tier Eleven Micro Miner"
+			title: "{ftbquests.chapter.progression.quest94.title}"
 			x: 22.0d
 			y: 10.5d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
-			description: ["The IPMEPS is capable of altering the laws of physics on a microversal scale, thus allowing the production of previously impossible materials."]
+			description: ["{ftbquests.chapter.progression.quest95.description1}"]
 			disable_toast: true
 			id: "54B7849F647CE74B"
 			shape: "square"
 			size: 2.0d
-			subtitle: "The final Micro Miner!"
+			subtitle: "{ftbquests.chapter.progression.quest95.subtitle}"
 			tasks: [{
 				id: "2F744773E507F2E9"
 				item: "kubejs:microminer_t12"
 				type: "item"
 			}]
-			title: "&9Tier Twelve Micro Miner"
+			title: "{ftbquests.chapter.progression.quest95.title}"
 			x: 22.0d
 			y: 13.0d
 		}
 	]
-	title: "Progression"
+	title: "{ftbquests.chapter.progression.title}"
 }

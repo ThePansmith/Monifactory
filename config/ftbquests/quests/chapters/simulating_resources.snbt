@@ -15,11 +15,11 @@
 				"715BC5C7DAC53B7B"
 			]
 			description: [
-				"Simulating mob kills will occasionally result in &6Predictions&r of that mob's type."
+				"{ftbquests.chapter.simulating_resources.quest1.description1}"
 				""
-				"Putting &6Mob Predictions&r into a &3Loot Fabricator&r will allow you to obtain one of various items related to that mob."
+				"{ftbquests.chapter.simulating_resources.quest1.description2}"
 				""
-				"Unlike &3Simulation Chambers&r, Loot Fabricators are &asided&r, accepting input from &athe top side&r and allowing extraction from &aall sides except the top&r."
+				"{ftbquests.chapter.simulating_resources.quest1.description3}"
 			]
 			hide_until_deps_visible: true
 			id: "0006FEA1843FEA0A"
@@ -43,11 +43,11 @@
 				"0006FEA1843FEA0A"
 			]
 			description: [
-				"The &6Numismatic Dynamo&r is the main source of power through the Mid Game of the pack."
+				"{ftbquests.chapter.simulating_resources.quest2.description1}"
 				""
-				"Paired with a self-sustaining &bHostile Neural Networks&r setup, this dynamo can burn through &6Diamonds&r to produce large amounts of &eRF power&r."
+				"{ftbquests.chapter.simulating_resources.quest2.description2}"
 				""
-				"Just like other &bThermal Expansion&r dynamos, the &6Numismatic Dynamo&r can be given &eAugments&r to produce more power."
+				"{ftbquests.chapter.simulating_resources.quest2.description3}"
 			]
 			hide_until_deps_visible: true
 			id: "6FDF37EE046349F7"
@@ -63,13 +63,13 @@
 				item: "thermal:dynamo_numismatic"
 				type: "item"
 			}]
-			title: "Numismatic Power"
+			title: "{ftbquests.chapter.simulating_resources.quest2.title}"
 			x: 3.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["715BC5C7DAC53B7B"]
-			description: ["You can combine various items with a &6Model Framework&r for a completed &6Data Model&r that you can run inside the &3Simulation Chamber&r."]
+			description: ["{ftbquests.chapter.simulating_resources.quest3.description1}"]
 			icon: "hostilenetworks:blank_data_model"
 			id: "73C6E2724EBEC997"
 			rewards: [{
@@ -90,13 +90,13 @@
 					type: "item"
 				}
 			]
-			title: "Simulated Mobs"
+			title: "{ftbquests.chapter.simulating_resources.quest3.title}"
 			x: -2.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["72D61AFACC53A34A"]
-			description: ["Just as with Overworldian mob data, there's no huge rush or need to focus on these. Just run them while you work on other projects."]
+			description: ["{ftbquests.chapter.simulating_resources.quest4.description1}"]
 			id: "1062A387E899434C"
 			rewards: [{
 				count: 10
@@ -152,16 +152,16 @@
 					type: "item"
 				}
 			]
-			title: "&4Nether&r Mobs"
+			title: "{ftbquests.chapter.simulating_resources.quest4.title}"
 			x: -0.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["2201391DEEBE79E4"]
 			description: [
-				"There's no rush to get these all done and leveled up, but they do provide a good source of some of the basic resources in exchange for RF."
+				"{ftbquests.chapter.simulating_resources.quest5.description1}"
 				""
-				"Look at what the &6Prediction&r for each mob provides, and set up simulators for all the ones you're interested in. If your power can handle it, it can even be advantageous to run several of the same model."
+				"{ftbquests.chapter.simulating_resources.quest5.description2}"
 			]
 			id: "61E018C3BAB05818"
 			rewards: [{
@@ -277,16 +277,16 @@
 					type: "item"
 				}
 			]
-			title: "&2Overworld&r Mobs"
+			title: "{ftbquests.chapter.simulating_resources.quest5.title}"
 			x: -4.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["73C6E2724EBEC997"]
 			description: [
-				"Provide your &3Simulation Chamber&r with RF power and &6Pulsating Prediction Matrixes&r. Then insert a &6Data Model&r of your choice. The Simulation Chamber will consume Prediction Matrixes and a decent amount of power to begin simulating mob kills. This will generate &6Overworldian Matter&r and may occasionally provide you with &6Mob Predictions&r."
+				"{ftbquests.chapter.simulating_resources.quest6.description1}"
 				""
-				"&6Overworldian Matter&r can be eaten to gain experience, or combined with other materials to obtain drops from Overworld mobs, as well as other forms of matter. With these drops and the other kinds of matter, you can then create Data Models for lots of other mob types!"
+				"{ftbquests.chapter.simulating_resources.quest6.description2}"
 			]
 			id: "2201391DEEBE79E4"
 			rewards: [{
@@ -300,16 +300,16 @@
 				item: "hostilenetworks:overworld_prediction"
 				type: "item"
 			}]
-			title: "&2Overworld&r Matter"
+			title: "{ftbquests.chapter.simulating_resources.quest6.title}"
 			x: -2.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["2201391DEEBE79E4"]
 			description: [
-				"&6Overworldian Matter&r and &6Netherrack&r can be crafted into &6Hellish Matter&r."
+				"{ftbquests.chapter.simulating_resources.quest7.description1}"
 				""
-				"Netherrack can be obtained by combining a &6Dust Block&r and &cLava&r in a &3Chemical Reactor&r."
+				"{ftbquests.chapter.simulating_resources.quest7.description2}"
 			]
 			id: "72D61AFACC53A34A"
 			rewards: [{
@@ -323,13 +323,13 @@
 				item: "hostilenetworks:nether_prediction"
 				type: "item"
 			}]
-			title: "&4Nether&r Matter"
+			title: "{ftbquests.chapter.simulating_resources.quest7.title}"
 			x: -0.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["72D61AFACC53A34A"]
-			description: ["&6Hellish Matter&r and &6Ender Pearls&r can be crafted into Extraterrestrial Matter."]
+			description: ["{ftbquests.chapter.simulating_resources.quest8.description1}"]
 			id: "09F8678BBA41D15E"
 			rewards: [{
 				id: "1F5EA736BD59C447"
@@ -342,13 +342,13 @@
 				item: "hostilenetworks:end_prediction"
 				type: "item"
 			}]
-			title: "&5End&r Matter"
+			title: "{ftbquests.chapter.simulating_resources.quest8.title}"
 			x: 1.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["09F8678BBA41D15E"]
-			description: ["Some of these simulations will start to consume tremendous amounts of power at this point, so if you're finding it a struggle, don't be afraid to hold off on progressing through these data models until a later time."]
+			description: ["{ftbquests.chapter.simulating_resources.quest9.description1}"]
 			id: "637953544CE66BDB"
 			rewards: [{
 				count: 10
@@ -432,7 +432,7 @@
 					type: "item"
 				}
 			]
-			title: "&8End&r Mobs"
+			title: "{ftbquests.chapter.simulating_resources.quest9.title}"
 			x: 3.5d
 			y: 2.5d
 		}
@@ -443,16 +443,16 @@
 				"3F39E9B829DAE2F2"
 			]
 			description: [
-				"Once you have obtained your first piece of &6Hellish Matter&r, or unlocked the &3Atomic Reconstructor&r, travel to the &eNether&r becomes available."
+				"{ftbquests.chapter.simulating_resources.quest10.description1}"
 				""
-				"The &eNether&r contains quite a few useful resources:"
-				"- Some initial pieces of &6Sulfur&r"
-				"- &6Glowstone&r and &6Soul Sand&r"
-				"- &6Fluorine&r, &6Certus Quartz&r, &6Molybdenum&r, &6Antimony&r, and &6Gold&r-bearing ores"
-				"- &2Nether Air&r, which can be distilled for useful gases"
-				"- &eLava&r and &eNatural Gas&r from &2Fluid Rigs&r"
+				"{ftbquests.chapter.simulating_resources.quest10.description2}"
+				"{ftbquests.chapter.simulating_resources.quest10.description3}"
+				"{ftbquests.chapter.simulating_resources.quest10.description4}"
+				"{ftbquests.chapter.simulating_resources.quest10.description5}"
+				"{ftbquests.chapter.simulating_resources.quest10.description6}"
+				"{ftbquests.chapter.simulating_resources.quest10.description7}"
 				""
-				"Despite all this, &eNether&r travel is still strictly optional in the pack, although it is recommended."
+				"{ftbquests.chapter.simulating_resources.quest10.description8}"
 			]
 			hide_until_deps_visible: true
 			id: "7A67E519745A8361"
@@ -476,11 +476,11 @@
 				"3000798ACA51BFDC"
 			]
 			description: [
-				"&9Nether Air&r, collected from &3Gas Collectors&r, can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Nether Air&r."
+				"{ftbquests.chapter.simulating_resources.quest11.description1}"
 				""
-				"&9Liquid Nether Air&r can be sent into a &2Distillation Tower&r to break it down into its components."
+				"{ftbquests.chapter.simulating_resources.quest11.description2}"
 				""
-				"&2Liquid Air and Liquid Ender Air give different useful components too."
+				"{ftbquests.chapter.simulating_resources.quest11.description3}"
 			]
 			icon: "gtceu:liquid_nether_air_bucket"
 			id: "45DD07F2BB9C6A59"
@@ -494,7 +494,7 @@
 				item: "gtceu:liquid_nether_air_bucket"
 				type: "item"
 			}]
-			title: "&2Distilling the Nether"
+			title: "{ftbquests.chapter.simulating_resources.quest11.title}"
 			x: -2.5d
 			y: 4.5d
 		}
@@ -505,15 +505,15 @@
 				"3BD20358F137E7C6"
 			]
 			description: [
-				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
+				"{ftbquests.chapter.simulating_resources.quest12.description1}"
 				""
-				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron&r, &6gold&r, &6tin&r, &6copper&r, &6diamonds&r and much more!), through pristine matter."
+				"{ftbquests.chapter.simulating_resources.quest12.description2}"
 				""
-				"Setting up &bHNN&r automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
+				"{ftbquests.chapter.simulating_resources.quest12.description3}"
 				""
-				"&3Simulation Chambers&r are not sided, so you can input and output from any side."
+				"{ftbquests.chapter.simulating_resources.quest12.description4}"
 				""
-				"Yes, you can also use it for generating power... &owith &6Diamonds&r."
+				"{ftbquests.chapter.simulating_resources.quest12.description5}"
 			]
 			hide_until_deps_visible: true
 			id: "715BC5C7DAC53B7B"
@@ -529,10 +529,10 @@
 				item: "hostilenetworks:sim_chamber"
 				type: "item"
 			}]
-			title: "&9Simulating Mobs"
+			title: "{ftbquests.chapter.simulating_resources.quest12.title}"
 			x: -0.5d
 			y: -1.5d
 		}
 	]
-	title: "Simulating Resources"
+	title: "{ftbquests.chapter.simulating_resources.title}"
 }

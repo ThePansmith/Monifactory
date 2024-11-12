@@ -231,11 +231,11 @@
 				"7E09D4E00BFA4970"
 			]
 			description: [
-				"The &3Advanced Microverse Projector&r is a more powerful projector required for sending &6Tier Four&r through &6Tier Six Micro Miners&r into microverses."
+				"{ftbquests.chapter.late_game.quest1.description1}"
 				""
-				"Initial missions can operate on &eIV power&r, while &eLuV power&r is required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any &6Microverse Projector Casing&r."
+				"{ftbquests.chapter.late_game.quest1.description2}"
 				""
-				"&6Sneak-right click&r the controller to enable the in-world preview."
+				"{ftbquests.chapter.late_game.quest1.description3}"
 			]
 			icon: "gtceu:advanced_microverse_projector"
 			id: "52F1953ED72A8AA6"
@@ -284,7 +284,7 @@
 							value: "moni:input_bus"
 						}
 					}
-					title: "Any #moni:input_bus"
+					title: "{ftbquests.chapter.late_game.quest1.task.title1}"
 					type: "item"
 				}
 				{
@@ -293,7 +293,7 @@
 					type: "item"
 				}
 			]
-			title: "Advanced Microverse Projector"
+			title: "{ftbquests.chapter.late_game.quest1.title}"
 			x: 3.0d
 			y: -2.0d
 		}
@@ -305,22 +305,22 @@
 				"77582C534A994D7C"
 			]
 			description: [
-				"The Fourth Micro Miner."
+				"{ftbquests.chapter.late_game.quest2.description1}"
 				""
-				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Petrotheum Dust&r."
+				"{ftbquests.chapter.late_game.quest2.description2}"
 				""
-				"This miner is the first convenient source of &6Osmium&r and &6Iridium&r, via a mission requiring &6Wither Realm Data&r."
+				"{ftbquests.chapter.late_game.quest2.description3}"
 				""
-				"A &6Composition Sensor&r instead directs the miner to obtain &6Dense Oilsands Ore&r, equivalent to &232&r stacks of &6End Oilsands Ore&r, and 32 &6Compressed Infinity Dust Blocks&r, equivalent to 2592 &6Infinity Dust&r."
+				"{ftbquests.chapter.late_game.quest2.description4}"
 				""
-				"When equipped with a &6Gemstone Sensor&r:"
-				"&6* Dense Lapis Ore"
-				"* Dense Diamond Ore"
-				"* Dense Coal Ore"
-				"* Dense Emerald Ore"
-				"* Dense Redstone Ore&r"
+				"{ftbquests.chapter.late_game.quest2.description5}"
+				"{ftbquests.chapter.late_game.quest2.description6}"
+				"{ftbquests.chapter.late_game.quest2.description7}"
+				"{ftbquests.chapter.late_game.quest2.description8}"
+				"{ftbquests.chapter.late_game.quest2.description9}"
+				"{ftbquests.chapter.late_game.quest2.description10}"
 				""
-				"Eventually, when you unlock the &aHyperbolic Microverse Projector&r, you can also use it to gain a massive amount of &bStellar Creation Data&r at once."
+				"{ftbquests.chapter.late_game.quest2.description11}"
 			]
 			id: "15DBB22E3DC0AFB7"
 			rewards: [{
@@ -335,20 +335,20 @@
 				item: "kubejs:microminer_t4"
 				type: "item"
 			}]
-			title: "Tier Four Micro Miner"
+			title: "{ftbquests.chapter.late_game.quest2.title}"
 			x: 3.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["53C00EA9D9BEE776"]
 			description: [
-				"&6Indium&r is a rare material requiring specialized bulk ore processing to acquire. It is useful for making &6Indium Gallium Phosphide&r (InGaP)."
+				"{ftbquests.chapter.late_game.quest3.description1}"
 				""
-				"You will need to purify (with a &3Washer&r or &3Chemical Bath&r) &6Galena&r and &6Sphalerite&r to get &6Crushed Purified&r dusts. These need to be placed together in a &3Chemical Reactor&r along with &9Sulfuric Acid&r, which will result in &9Indium Concentrate&r."
+				"{ftbquests.chapter.late_game.quest3.description2}"
 				""
-				"This in turn needs to be reacted with &6Aluminium&r in another Chemical Reactor, to create &2Small Piles of Indium Dust, Aluminium Sulfite and &9Lead-Zinc Solution&r. The latter two can be centrifuged into various useful materials, and the Indium piles can be combined into full dusts."
+				"{ftbquests.chapter.late_game.quest3.description3}"
 				""
-				"&2Indium can also be obtained from the Naquadah processing chain in LuV."
+				"{ftbquests.chapter.late_game.quest3.description4}"
 			]
 			id: "6E5343E45E99CBAD"
 			rewards: [{
@@ -362,7 +362,7 @@
 				item: "gtceu:indium_dust"
 				type: "item"
 			}]
-			title: "Indium"
+			title: "{ftbquests.chapter.late_game.quest3.title}"
 			x: -4.0d
 			y: 6.25d
 		}
@@ -372,15 +372,15 @@
 				"11154356854B64DA"
 			]
 			description: [
-				"&6QBit CPUs&r are an advanced Circuit Wafer crucial for &6Quantum Circuits&r."
+				"{ftbquests.chapter.late_game.quest4.description1}"
 				""
-				"There are two methods of creating them:"
+				"{ftbquests.chapter.late_game.quest4.description2}"
 				""
-				"The simpler recipe uses two &6Quantum Eyes&r and two ingots' worth of molten &9Gallium Arsenide&r to enhance a &6NanoCPU Wafer&r. This recipe is slow and requires substantially more &9Radon&r per craft."
+				"{ftbquests.chapter.late_game.quest4.description3}"
 				""
-				"The other route instead uses &6Indium Gallium Phosphide&r and a tiny amount of Radon. This skips the slow-crafting Quantum Eyes, using far less Radon in the process, but requires the infrastructure in place for obtaining &6Indium&r."
+				"{ftbquests.chapter.late_game.quest4.description4}"
 				""
-				"The second route is overall better, and you will need Indium processing to complete the pack so might as well do it."
+				"{ftbquests.chapter.late_game.quest4.description5}"
 			]
 			id: "1903B26C95DD325A"
 			rewards: [{
@@ -395,7 +395,7 @@
 				item: "gtceu:qbit_cpu_chip"
 				type: "item"
 			}]
-			title: "QBit Processing Unit"
+			title: "{ftbquests.chapter.late_game.quest4.title}"
 			x: -4.0d
 			y: 8.25d
 		}
@@ -406,11 +406,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&2Your first few Raw Crystal Chips must be grown in an Autoclave from liquid Enderium, or more efficiently with Europium, and Exquisite Emeralds or Exquisite Olivine."
+				"{ftbquests.chapter.late_game.quest5.description1}"
 				""
-				"After the first few, you can smash them into pieces using a Forge Hammer, and duplicate them with Bacterial Sludge, Mutagen, or more Europium or Enderium."
+				"{ftbquests.chapter.late_game.quest5.description2}"
 				""
-				"Bacterial Sludge can later be obtained in the byproducts of getting Stem Cells."
+				"{ftbquests.chapter.late_game.quest5.description3}"
 			]
 			icon: "gtceu:raw_crystal_chip"
 			id: "40E8C7CEE285D702"
@@ -425,16 +425,16 @@
 				item: "gtceu:raw_crystal_chip"
 				type: "item"
 			}]
-			title: "Crystal Growing"
+			title: "{ftbquests.chapter.late_game.quest5.title}"
 			x: 0.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["40E8C7CEE285D702"]
 			description: [
-				"By baking a &2Raw Crystal Chip &rand &6Emerald&r or &6Olivine Plates&r with &9Helium&r in an &3Electric Blast Furnace&r, you can create an &6Engraved Crystal Chip&r."
+				"{ftbquests.chapter.late_game.quest6.description1}"
 				""
-				"This is a material needed for &6Crystal Circuits&r."
+				"{ftbquests.chapter.late_game.quest6.description2}"
 			]
 			hide_dependency_lines: false
 			id: "2E6BA621B265C3A8"
@@ -449,7 +449,7 @@
 				item: "gtceu:engraved_crystal_chip"
 				type: "item"
 			}]
-			title: "&2Engraved Crystal Chip"
+			title: "{ftbquests.chapter.late_game.quest6.title}"
 			x: 0.0d
 			y: 14.25d
 		}
@@ -459,23 +459,23 @@
 				"605062720747B482"
 			]
 			description: [
-				"The &3Assembly Line&r is a large multiblock structure that crafts complex materials, similar to an &3Assembling Machine&r. These will be crucial going forward for making a variety of components and machinery."
+				"{ftbquests.chapter.late_game.quest7.description1}"
 				""
-				"Make sure your power generation and circuit production are up to the challenge. &2None of the Assembly Line recipes require programmed circuits anymore.&r It is &anot required&r to insert items or fluids in the correct order."
+				"{ftbquests.chapter.late_game.quest7.description2}"
 				""
-				"This quest calls for an Assembly Line that's 10 units long, allowing for 9 inputs and one output. This is a large enough Assembly Line to make &6LuV components&r, but you'll need to expand to more inputs for later projects."
+				"{ftbquests.chapter.late_game.quest7.description3}"
 				"{@pagebreak}"
-				"The structure of the Assembly Line is a little stricter than other multiblocks:"
+				"{ftbquests.chapter.late_game.quest7.description4}"
 				""
-				"- The &aInput Buses&r can only be placed along the bottom, must all be &8ULV&r tier, and must face downwards. The &aOutput Bus&r must be placed at the very end of the row of Input Buses, and can be any tier."
+				"{ftbquests.chapter.late_game.quest7.description5}"
 				""
-				"- &aFluid Hatches&r can only replace the &6Steel Casings&r along the bottom."
+				"{ftbquests.chapter.late_game.quest7.description6}"
 				""
-				"- &aEnergy Hatches&r can only be placed within the top row of &6Steel Casings&r."
+				"{ftbquests.chapter.late_game.quest7.description7}"
 				""
-				"- The &2Data Access Hatch&r must replace a &6Grate Casing&r on the same side as the Assembly Line controller block. Later, you can replace this with an &2Optical Data Reception Hatch&r. Refer to adjacent quests for how the Assembly Line data system works."
+				"{ftbquests.chapter.late_game.quest7.description8}"
 				""
-				"If your recipe is not running, ensure you have the corresponding &edata&r for the recipe in a &2Data Access Hatch&r or connected &3Data Bank&r."
+				"{ftbquests.chapter.late_game.quest7.description9}"
 			]
 			icon: "gtceu:assembly_line"
 			id: "6DAB13A7BDECE94E"
@@ -559,30 +559,30 @@
 							]
 						}
 					}
-					title: "Any IV Energy Hatch"
+					title: "{ftbquests.chapter.late_game.quest7.task.title1}"
 					type: "item"
 				}
 			]
-			title: "&2Assembly Line"
+			title: "{ftbquests.chapter.late_game.quest7.title}"
 			x: -6.0d
 			y: 12.25d
 		}
 		{
 			dependencies: ["39FD6F1076559156"]
 			description: [
-				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r and the &3Fusion Reactor&r, among other things."
+				"{ftbquests.chapter.late_game.quest8.description1}"
 				"{@pagebreak}"
-				"To begin, craft a &3Scanner&r and a few &6Data Sticks&r. The initial Scanner recipes run at &6HV&r, but &1IV&r is required relatively soon so might as well make that one."
+				"{ftbquests.chapter.late_game.quest8.description2}"
 				""
-				"Press &bR&r on the item you want to craft in the and navigate to the &bScanner tab&r. This will tell you which item needs to be scanned to make the data for the new item. For example, &9LuV &6Electric Motors&r will require an &1IV&r &6Electric Motor&r to be scanned."
+				"{ftbquests.chapter.late_game.quest8.description3}"
 				"{@pagebreak}"
-				"Place a &6Data Stick&r with the item to be scanned in the &3Scanner&r. The item will be &cconsumed&r and its data will be written to the &6Data Stick&r. Each &6Data item&r can only hold a &csingle recipe&r."
+				"{ftbquests.chapter.late_game.quest8.description4}"
 				""
-				"Finally, place the &6Data Stick&r into the &aData Access Hatch&r of your &3Assembly Line&r. It will now be able to craft that item."
+				"{ftbquests.chapter.late_game.quest8.description5}"
 				""
-				"Later, you will need more advanced &6Data Orbs&r and &6Data Modules&r to store data, and a &3Data Bank&r to read them."
+				"{ftbquests.chapter.late_game.quest8.description6}"
 				""
-				"If you need to create duplicate Data items, you can copy the data to a blank data item of the same type using the Scanner."
+				"{ftbquests.chapter.late_game.quest8.description7}"
 			]
 			icon: "gtceu:data_stick"
 			id: "672D43BD113251EA"
@@ -596,16 +596,16 @@
 				id: "7BFFD184B42E366A"
 				type: "checkmark"
 			}]
-			title: "&9Assembly Line Data"
+			title: "{ftbquests.chapter.late_game.quest8.title}"
 			x: -8.0d
 			y: 12.25d
 		}
 		{
 			dependencies: ["2E6BA621B265C3A8"]
 			description: [
-				"&6Crystal CPUs&r are the cores of &6Crystal Circuits&r."
+				"{ftbquests.chapter.late_game.quest9.description1}"
 				""
-				"You'll need a &2LuV Laser Engraver&r to craft this."
+				"{ftbquests.chapter.late_game.quest9.description2}"
 			]
 			id: "67833AE5421E10D4"
 			rewards: [{
@@ -619,7 +619,7 @@
 				item: "gtceu:crystal_cpu"
 				type: "item"
 			}]
-			title: "&2Crystal Processing Unit"
+			title: "{ftbquests.chapter.late_game.quest9.title}"
 			x: 0.0d
 			y: 16.25d
 		}
@@ -629,21 +629,21 @@
 				"1C1B1E1BBFA079F5"
 			]
 			description: [
-				"Coming into &9Ludicrous Voltage&r, many new advanced materials will be required to craft items and components. Most of these materials require &6RTM Alloy Coils&r."
+				"{ftbquests.chapter.late_game.quest10.description1}"
 				""
-				"&6Ruridit&r is an alloy of Ruthenium and Iridium. It is used in LuV components alongside &6HSS-S&r."
+				"{ftbquests.chapter.late_game.quest10.description2}"
 				""
-				"&6Niobium-Titanium&r is the main LuV cable material. Later on, large quantities are required for &6Wetware Circuits&r."
+				"{ftbquests.chapter.late_game.quest10.description3}"
 				""
-				"&6Vanadium-Gallium&r is the main ZPM cable material, but it is used now as an advanced conductive material for certain recipes."
+				"{ftbquests.chapter.late_game.quest10.description4}"
 				""
-				"&6Osmiridium&r (not from the ore) is used to make the &6Ludicrous Voltage Coil&r, for LuV-tier energy I/O. It is later used to make ZPM components."
+				"{ftbquests.chapter.late_game.quest10.description5}"
 				""
-				"&6Indium Tin Barium Titanium Cuprate&r is a LuV superconductor. Its uses are more limited, but it is used in places like the &3Fusion Reactor&r."
+				"{ftbquests.chapter.late_game.quest10.description6}"
 				""
-				"Finally, &6Samarium&r is used for LuV+ motors. It is obtained from &6Rare Earth&r."
+				"{ftbquests.chapter.late_game.quest10.description7}"
 				""
-				"These materials take a long time at high temperatures to smelt, so find a way to keep a stock of them."
+				"{ftbquests.chapter.late_game.quest10.description8}"
 			]
 			id: "458FF3F9BC8E025B"
 			rewards: [{
@@ -684,13 +684,13 @@
 					type: "item"
 				}
 			]
-			title: "&2Advanced LuV Alloys"
+			title: "{ftbquests.chapter.late_game.quest10.title}"
 			x: 1.5d
 			y: 14.25d
 		}
 		{
 			dependencies: ["78DCEF2FF2E1AC8C"]
-			description: ["&2Thin Polyphenylene Sulfide Sheets are required for wrapping LuV+ cables."]
+			description: ["{ftbquests.chapter.late_game.quest11.description1}"]
 			icon: "gtceu:polyphenylene_sulfide_foil"
 			id: "6BE1CD77618EC6C7"
 			rewards: [{
@@ -704,7 +704,7 @@
 				item: "gtceu:polyphenylene_sulfide_bucket"
 				type: "item"
 			}]
-			title: "&2Polyphenylene Sulfide"
+			title: "{ftbquests.chapter.late_game.quest11.title}"
 			x: -2.0d
 			y: 18.25d
 		}
@@ -713,7 +713,7 @@
 				"6BE1CD77618EC6C7"
 				"2B336FD89B15F98E"
 			]
-			description: ["With &6&2Rhodium Plated Lumium-Palladium&r,&6 Niobium-Titanium&r, &2and Polyphenylene Sulfide&r, you can now make hulls for Ludicrous Voltage (LuV) &bGregTech&r machines."]
+			description: ["{ftbquests.chapter.late_game.quest12.description1}"]
 			id: "76BAC72CC89F390E"
 			rewards: [{
 				id: "566D0537EF1F4803"
@@ -727,13 +727,13 @@
 				item: "gtceu:luv_machine_hull"
 				type: "item"
 			}]
-			title: "&2LuV Machine Hulls"
+			title: "{ftbquests.chapter.late_game.quest12.title}"
 			x: -4.0d
 			y: 18.25d
 		}
 		{
 			dependencies: ["23A867EC14368388"]
-			description: ["&2Rhodium Plated Lumium-Palladium is a mixture of Rhodium, Lumium and Palladium. It forms the basis of LuV Machine Hulls."]
+			description: ["{ftbquests.chapter.late_game.quest13.description1}"]
 			id: "2B336FD89B15F98E"
 			rewards: [{
 				id: "12C3AFEE397AB67E"
@@ -755,18 +755,18 @@
 				item: "gtceu:rhodium_plated_palladium_ingot"
 				type: "item"
 			}]
-			title: "&2Rhodium Plated Lumium-Palladium"
+			title: "{ftbquests.chapter.late_game.quest13.title}"
 			x: -6.0d
 			y: 18.25d
 		}
 		{
 			dependencies: ["54C3B1B782FDF57F"]
 			description: [
-				"Glowing! &9But all the GTM machines glow already if Shimmer is installed, so...&r"
+				"{ftbquests.chapter.late_game.quest14.description1}"
 				""
-				"This one takes a significant amount of time to cook, so make sure to have it going constantly."
+				"{ftbquests.chapter.late_game.quest14.description2}"
 				""
-				"Wires made from &6Lumium&r transmit IV power losslessly, and it forms part of the basis for &6LuV Machine Hulls&r."
+				"{ftbquests.chapter.late_game.quest14.description3}"
 			]
 			disable_toast: true
 			id: "23A867EC14368388"
@@ -785,11 +785,11 @@
 				"1C1B1E1BBFA079F5"
 			]
 			description: [
-				"&6Iridium&r is an advanced material used for Micro Miners, and for alloying with &6Osmium&r into &6Osmiridium&r."
+				"{ftbquests.chapter.late_game.quest15.description1}"
 				""
-				"You can also get tons of this from &6Platinum Group Sludge&r."
+				"{ftbquests.chapter.late_game.quest15.description2}"
 				""
-				"&2Osmiridium 80/20 Ore and Iridosmine 80/20 Ore&r is available renewably from the Tier Four and Tier Six micro miners, as well as semi-renewably from the Tier Five micro miner."
+				"{ftbquests.chapter.late_game.quest15.description3}"
 			]
 			id: "025092551C0A20B6"
 			rewards: [{
@@ -803,13 +803,13 @@
 				item: "gtceu:iridium_ingot"
 				type: "item"
 			}]
-			title: "Iridium"
+			title: "{ftbquests.chapter.late_game.quest15.title}"
 			x: 3.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["025092551C0A20B6"]
-			description: ["&2Double Plates&r made from &6Iridium&r for Tier Five and Tier Eight Micro Miners."]
+			description: ["{ftbquests.chapter.late_game.quest16.description1}"]
 			id: "4F8B4DCE7C340418"
 			rewards: [{
 				id: "368C85F6578FE58D"
@@ -822,7 +822,7 @@
 				item: "gtceu:double_iridium_plate"
 				type: "item"
 			}]
-			title: "&2Iridium Double Plates"
+			title: "{ftbquests.chapter.late_game.quest16.title}"
 			x: 3.0d
 			y: 6.25d
 		}
@@ -835,13 +835,13 @@
 				"79EFCD8E01384C0C"
 			]
 			description: [
-				"&2Wetware- and Crystal-related processes require some stronger sterilization.&r"
+				"{ftbquests.chapter.late_game.quest17.description1}"
 				""
-				"You will need to build another &3Cleanroom&r to run these recipes inside. Instead of &3Filter Casings&r, use &3Sterilizing Filter Casings&r in the top face."
+				"{ftbquests.chapter.late_game.quest17.description2}"
 				""
-				"These casings are expensive! You'll need &3Fusion MK II&r to get the &6Tritanium&r."
+				"{ftbquests.chapter.late_game.quest17.description3}"
 				""
-				"Note that a Sterile Cleanroom cannot handle recipes which require regular Cleanrooms."
+				"{ftbquests.chapter.late_game.quest17.description4}"
 			]
 			id: "04EABD3D2C72D2C5"
 			rewards: [{
@@ -856,7 +856,7 @@
 				item: "gtceu:sterilizing_filter_casing"
 				type: "item"
 			}]
-			title: "&2Cleaner Room"
+			title: "{ftbquests.chapter.late_game.quest17.title}"
 			x: 3.0d
 			y: 12.25d
 		}
@@ -866,11 +866,11 @@
 				"785C6332FC7A07A5"
 			]
 			description: [
-				"&2Bacterial Sludge will be used in the Crystal and Wetware processes."
+				"{ftbquests.chapter.late_game.quest18.description1}"
 				""
-				"Plant Balls can be macerated to obtain Bio Chaff, which can be further broken down to Bacteria. Then, combine it with Biomass to get Bacterial Sludge."
+				"{ftbquests.chapter.late_game.quest18.description2}"
 				""
-				"You will also get a bit back from growing Stem Cells later."
+				"{ftbquests.chapter.late_game.quest18.description3}"
 			]
 			icon: "gtceu:bacterial_sludge_bucket"
 			id: "1AC91A3E05215569"
@@ -885,16 +885,16 @@
 				item: "gtceu:bacterial_sludge_bucket"
 				type: "item"
 			}]
-			title: "&2Bacterial Sludge"
+			title: "{ftbquests.chapter.late_game.quest18.title}"
 			x: 3.0d
 			y: 14.25d
 		}
 		{
 			dependencies: ["1AC91A3E05215569"]
 			description: [
-				"&2Use Uranium-238 (or more efficiently, Uranium-235) to enrich Bacterial Sludge, and distill it to Mutagen. You can also use Naquadria to double your Enriched Bacterial Sludge yield."
+				"{ftbquests.chapter.late_game.quest19.description1}"
 				""
-				"Mutagen is used in Growth Medium production."
+				"{ftbquests.chapter.late_game.quest19.description2}"
 			]
 			icon: "gtceu:mutagen_bucket"
 			id: "35D128D56DAFDFAA"
@@ -909,20 +909,20 @@
 				item: "gtceu:mutagen_bucket"
 				type: "item"
 			}]
-			title: "&2Mutagen"
+			title: "{ftbquests.chapter.late_game.quest19.title}"
 			x: 3.0d
 			y: 16.25d
 		}
 		{
 			dependencies: ["35D128D56DAFDFAA"]
 			description: [
-				"&9Sterilized Growth Medium&r is needed for &6Wetware Circuits&r."
+				"{ftbquests.chapter.late_game.quest20.description1}"
 				""
-				"You'll need to mix &6Mincemeat&r, &2Calcium, Salt, Agar, and Mutagen&r in a mixer to make &9Raw Growth Medium&r, then use a &3Fluid Heater&r to sterilize it. &2This is a significantly more involved process than before.&r"
+				"{ftbquests.chapter.late_game.quest20.description2}"
 				""
-				"Mincemeat comes from pulverizing any kind of animal meat."
-				"A &aFisher&r might be useful for this endeavor - especially &bThermal's&r &6Aquatic Entangler&r which can operate passively, produces only &6Fishes&r, and &eaccepts augments&r."
-				"&2Agar is produced from Mincemeat through multiple steps."
+				"{ftbquests.chapter.late_game.quest20.description3}"
+				"{ftbquests.chapter.late_game.quest20.description4}"
+				"{ftbquests.chapter.late_game.quest20.description5}"
 			]
 			icon: "gtceu:sterilized_growth_medium_bucket"
 			id: "2F6EC962007FA9FB"
@@ -937,7 +937,7 @@
 				item: "gtceu:sterilized_growth_medium_bucket"
 				type: "item"
 			}]
-			title: "&2Sterilized Growth Medium"
+			title: "{ftbquests.chapter.late_game.quest20.title}"
 			x: 3.0d
 			y: 20.25d
 		}
@@ -947,9 +947,9 @@
 				"7E51D15F38C3B356"
 			]
 			description: [
-				"The most advanced substrate available, prepared for bleeding-edge bioengineering technology."
+				"{ftbquests.chapter.late_game.quest21.description1}"
 				""
-				"&6Wetware Circuit Boards&r are the basis of &6Wetware&r circuits."
+				"{ftbquests.chapter.late_game.quest21.description2}"
 			]
 			icon: "gtceu:wetware_printed_circuit_board"
 			id: "4AC51394FB5152E5"
@@ -978,7 +978,7 @@
 				"6DC635766CD40FFF"
 				"27A80F018F59EF1E"
 			]
-			description: ["&2Double Plates&r required for the next two tiers of Micro Miners."]
+			description: ["{ftbquests.chapter.late_game.quest22.description1}"]
 			id: "27B3EB82ED638620"
 			rewards: [{
 				id: "27C6087F332CE7C1"
@@ -991,29 +991,29 @@
 				item: "gtceu:double_signalum_plate"
 				type: "item"
 			}]
-			title: "&2Signalum Double Plates"
+			title: "{ftbquests.chapter.late_game.quest22.title}"
 			x: 6.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["4F8B4DCE7C340418"]
 			description: [
-				"The only source of &6Naquadah &2Ore&r. Along with it, &2Sheldonite Ore&r (for &6PGS&r) and &2Kaemanite Ore&r (for &6Trinium&r), via a mission with &6Stabilized Plutonium&r."
+				"{ftbquests.chapter.late_game.quest23.description1}"
 				""
-				"When provided with &6Stabilized Uranium&r, brings:"
-				"&2* Uraninite Ore&6"
-				"* Palladium Ore"
-				"&2* Realgar Ore"
-				"&6* Bastnasite Ore"
-				"* Sphalerite Ore"
-				"* Monazite Ore"
-				"&2* Blocks of Ender Pearl"
-				"* Osmiridium 80/20 Ore"
-				"&6* Boron Dust"
-				"* Molybdenite Ore"
-				"* Beryllium Ore"
+				"{ftbquests.chapter.late_game.quest23.description2}"
+				"{ftbquests.chapter.late_game.quest23.description3}"
+				"{ftbquests.chapter.late_game.quest23.description4}"
+				"{ftbquests.chapter.late_game.quest23.description5}"
+				"{ftbquests.chapter.late_game.quest23.description6}"
+				"{ftbquests.chapter.late_game.quest23.description7}"
+				"{ftbquests.chapter.late_game.quest23.description8}"
+				"{ftbquests.chapter.late_game.quest23.description9}"
+				"{ftbquests.chapter.late_game.quest23.description10}"
+				"{ftbquests.chapter.late_game.quest23.description11}"
+				"{ftbquests.chapter.late_game.quest23.description12}"
+				"{ftbquests.chapter.late_game.quest23.description13}"
 				""
-				"This microminer will also be important much later, as the sole source of &2Stabilized Oganesson&r."
+				"{ftbquests.chapter.late_game.quest23.description14}"
 			]
 			id: "023197AB7CDBDD6E"
 			rewards: [{
@@ -1028,7 +1028,7 @@
 				item: "kubejs:microminer_t5"
 				type: "item"
 			}]
-			title: "&2Tier Five Micro Miner"
+			title: "{ftbquests.chapter.late_game.quest23.title}"
 			x: 6.0d
 			y: 6.25d
 		}
@@ -1037,7 +1037,7 @@
 				"14F1FF4656693711"
 				"53EC3831D66769CA"
 			]
-			description: ["&6HSS-G&r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials, such as &6Naquadah&r."]
+			description: ["{ftbquests.chapter.late_game.quest24.description1}"]
 			id: "3DD8D9EEA7189186"
 			rewards: [{
 				id: "0A5B1F97951B104A"
@@ -1051,7 +1051,7 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			title: "HSS-G Coil Blocks"
+			title: "{ftbquests.chapter.late_game.quest24.title}"
 			x: 11.0d
 			y: 3.0d
 		}
@@ -1062,9 +1062,9 @@
 				"745628397790ED7A"
 			]
 			description: [
-				"An otherworldly material exclusive to Microverses, &6Naquadah&r is an important material in the late game."
+				"{ftbquests.chapter.late_game.quest25.description1}"
 				""
-				"It can be alloyed and enriched to various forms, and is the eventual source of &6Neutronium&r in a &3MK III Fusion Reactor&r."
+				"{ftbquests.chapter.late_game.quest25.description2}"
 			]
 			id: "424413BBCE3FD3BF"
 			rewards: [{
@@ -1078,16 +1078,16 @@
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			title: "Naquadah Ingots"
+			title: "{ftbquests.chapter.late_game.quest25.title}"
 			x: 11.0d
 			y: 6.25d
 		}
 		{
 			dependencies: ["424413BBCE3FD3BF"]
 			description: [
-				"The &6Naquadah-doped Boule&r produces even more wafers per boule. It also is relatively cheap, due to the abundance of Naquadah that is gained from the &eTier 5 Micro Miner Mission&r."
+				"{ftbquests.chapter.late_game.quest26.description1}"
 				""
-				"This boule also allows the production of &6Advanced System-on-Chip&r wafers, which are used to make the final forms of &6Quantum&r and &2Nanocircuits&r very cheaply. However, you might not be able to take advantage of the &6Advanced System-on-Chip&r yet, due to the power requirements."
+				"{ftbquests.chapter.late_game.quest26.description2}"
 			]
 			id: "0889C9E0DD0FDF06"
 			rewards: [{
@@ -1101,22 +1101,22 @@
 				item: "gtceu:naquadah_boule"
 				type: "item"
 			}]
-			title: "Naquadah Boules"
+			title: "{ftbquests.chapter.late_game.quest26.title}"
 			x: 13.0d
 			y: 6.25d
 		}
 		{
 			dependencies: ["28CA4E5308EC0BB9"]
 			description: [
-				"A complex material from &bThermal Expansion&r cooked in an &3Electric Blast Furnace&r, or an &2Alloy Blast Smelter&r."
+				"{ftbquests.chapter.late_game.quest27.description1}"
 				""
-				"&6Enderium&r needs a lot of heat and is incredibly slow without overclocking. &2You can use small amounts of Krypton from Liquid Ender Air distillation to significantly decrease the smelting time.&r"
+				"{ftbquests.chapter.late_game.quest27.description2}"
 				""
-				"&9Enderium also requires Tantalum, which can be renewably created by macerating and processing dragon scales."
+				"{ftbquests.chapter.late_game.quest27.description3}"
 				""
-				"As with all later blast furnace materials, dedicate a furnace to keeping these in stock and have it running constantly to ensure a stable supply (turning it off when you have an acceptably vast stockpile)."
+				"{ftbquests.chapter.late_game.quest27.description4}"
 				""
-				"In addition to its other uses, Enderium gets you access to &aResonant Integral Components&r for machines. These quests can be found on the &eProgression&r tab."
+				"{ftbquests.chapter.late_game.quest27.description5}"
 			]
 			id: "7DB174443D7FAFA0"
 			rewards: [{
@@ -1136,9 +1136,9 @@
 		{
 			dependencies: ["424413BBCE3FD3BF"]
 			description: [
-				"&6Naquadah&r is the sixth coil material available, increasing your EBF's operating temperature to 7200K so it can process more advanced materials."
+				"{ftbquests.chapter.late_game.quest28.description1}"
 				""
-				"&2You cannot skip a coil material anymore."
+				"{ftbquests.chapter.late_game.quest28.description2}"
 			]
 			id: "28CA4E5308EC0BB9"
 			rewards: [{
@@ -1154,13 +1154,13 @@
 				item: "gtceu:naquadah_coil_block"
 				type: "item"
 			}]
-			title: "Naquadah Coil Blocks"
+			title: "{ftbquests.chapter.late_game.quest28.title}"
 			x: 11.0d
 			y: 8.25d
 		}
 		{
 			dependencies: ["7DB174443D7FAFA0"]
-			description: ["&2Double Plates&r made from &6Enderium&r used for the Tier Six Micro Miner."]
+			description: ["{ftbquests.chapter.late_game.quest29.description1}"]
 			id: "4F2A97487AE923CE"
 			rewards: [{
 				id: "13790035CAE4177C"
@@ -1173,25 +1173,25 @@
 				item: "gtceu:double_enderium_plate"
 				type: "item"
 			}]
-			title: "&2Enderium Double Plates"
+			title: "{ftbquests.chapter.late_game.quest29.title}"
 			x: 9.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["4F2A97487AE923CE"]
 			description: [
-				"The first decent source of &6Dragon Eggs&r and &6Stabilized Einsteinium&r."
+				"{ftbquests.chapter.late_game.quest30.description1}"
 				""
-				"Is also useful for:"
-				"&2* Uraninite Ore"
-				"* Osmiridium 80/20 Ore"
-				"* Iridosmine 80/20 Ore"
+				"{ftbquests.chapter.late_game.quest30.description2}"
+				"{ftbquests.chapter.late_game.quest30.description3}"
+				"{ftbquests.chapter.late_game.quest30.description4}"
+				"{ftbquests.chapter.late_game.quest30.description5}"
 				""
-				"Once you reach the &aHyperbolic Microverse Projector&r, this microminer can also get the following:"
+				"{ftbquests.chapter.late_game.quest30.description6}"
 				""
-				"&6* Perfect Diamonds"
-				"&6* Perfect Rubies"
-				"&6* Perfect Cinnabar"
+				"{ftbquests.chapter.late_game.quest30.description7}"
+				"{ftbquests.chapter.late_game.quest30.description8}"
+				"{ftbquests.chapter.late_game.quest30.description9}"
 			]
 			id: "49B872B193268554"
 			rewards: [{
@@ -1206,7 +1206,7 @@
 				item: "kubejs:microminer_t6"
 				type: "item"
 			}]
-			title: "&2Tier Six Micro Miner"
+			title: "{ftbquests.chapter.late_game.quest30.title}"
 			x: 9.0d
 			y: 15.25d
 		}
@@ -1215,10 +1215,10 @@
 				"2F6EC962007FA9FB"
 				"039F70814051413E"
 			]
-			description: ["Each craft in an &3LuV Chemical Reactor&r takes five minutes, so it's probably a good idea to have more than one machine running this recipe. At least you get &2128 from a single craft."]
+			description: ["{ftbquests.chapter.late_game.quest31.description1}"]
 			id: "0F6B344C265D1FBB"
 			shape: "hexagon"
-			subtitle: "Just ignore the protesters outside your base."
+			subtitle: "{ftbquests.chapter.late_game.quest31.subtitle}"
 			tasks: [{
 				id: "360EB81FFBAF3EFD"
 				item: "gtceu:stem_cells"
@@ -1230,11 +1230,11 @@
 		{
 			dependencies: ["49B872B193268554"]
 			description: [
-				"\"&6Dragon Eggs&r?\" You might ask. Yep."
+				"{ftbquests.chapter.late_game.quest32.description1}"
 				""
-				"The next circuit theme, Wetware, will require a lot of them."
+				"{ftbquests.chapter.late_game.quest32.description2}"
 				""
-				"Tier Six Micro Miners are the first option to get some eggs (enough for this quest, as it happens). Later on, you'll also get substantial quantities from Tier Eight Micro Miners while you accumulate &6Dragon Scales&r."
+				"{ftbquests.chapter.late_game.quest32.description3}"
 			]
 			id: "039F70814051413E"
 			rewards: [{
@@ -1249,7 +1249,7 @@
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
-			title: "Breaking Some Eggs"
+			title: "{ftbquests.chapter.late_game.quest32.title}"
 			x: 9.0d
 			y: 20.25d
 		}
@@ -1258,7 +1258,7 @@
 				"49B872B193268554"
 				"62AC7103FF9D25FD"
 			]
-			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
+			description: ["{ftbquests.chapter.late_game.quest33.description1}"]
 			icon: "kubejs:mote_of_omnium"
 			id: "7A7FFE9E89D19A2F"
 			rewards: [{
@@ -1280,7 +1280,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Synthesizing Your First Omnium"
+			title: "{ftbquests.chapter.late_game.quest33.title}"
 			x: 9.0d
 			y: 24.0d
 		}
@@ -1290,11 +1290,11 @@
 				"115B96B2092D671E"
 			]
 			description: [
-				"&2Upgraded forms of the EBF and Vacuum Freezer.&r"
+				"{ftbquests.chapter.late_game.quest34.description1}"
 				""
-				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!"
+				"{ftbquests.chapter.late_game.quest34.description2}"
 				""
-				"The &aRotary Hearth Furnace&r is quite big!"
+				"{ftbquests.chapter.late_game.quest34.description3}"
 			]
 			id: "2836DDEE49C3CCFB"
 			rewards: [{
@@ -1315,7 +1315,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Upgraded EBF and Freezer"
+			title: "{ftbquests.chapter.late_game.quest34.title}"
 			x: 13.0d
 			y: 15.25d
 		}
@@ -1326,9 +1326,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Cryolobus is a complex material needed in vast quantities."
+				"{ftbquests.chapter.late_game.quest35.description1}"
 				""
-				"You can create it with a &9Sculk Catalyst&r and &6Manyullyn&r."
+				"{ftbquests.chapter.late_game.quest35.description2}"
 			]
 			id: "7F669657313F2E62"
 			rewards: [{
@@ -1342,7 +1342,7 @@
 				item: "gtceu:cryolobus_dust"
 				type: "item"
 			}]
-			title: "&9Cryolobus Dust"
+			title: "{ftbquests.chapter.late_game.quest35.title}"
 			x: 15.25d
 			y: 6.25d
 		}
@@ -1352,13 +1352,13 @@
 				"7F669657313F2E62"
 			]
 			description: [
-				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Cryolobus&r, as well as a healthy supply of &2Cetane-Boosted Diesel&r or &2Gasoline&r to reach the immense heat it takes to liquefy."
+				"{ftbquests.chapter.late_game.quest36.description1}"
 				""
-				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
+				"{ftbquests.chapter.late_game.quest36.description2}"
 				""
-				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Tendrils&r, which contain Cryolobus, directly into ingots. It uses a lot of&2 combustion fuel&r, but is the most efficient way to craft cryolobus."
+				"{ftbquests.chapter.late_game.quest36.description3}"
 				""
-				"You've been stockpiling fuel, right?"
+				"{ftbquests.chapter.late_game.quest36.description4}"
 			]
 			id: "1CC092A2F2CD4589"
 			rewards: [{
@@ -1373,7 +1373,7 @@
 				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
-			title: "&9Cryolobus Ingots"
+			title: "{ftbquests.chapter.late_game.quest36.title}"
 			x: 17.25d
 			y: 8.25d
 		}
@@ -1383,15 +1383,15 @@
 				"1CC092A2F2CD4589"
 			]
 			description: [
-				"A much more efficient version of the &3Empowerer&r."
+				"{ftbquests.chapter.late_game.quest37.description1}"
 				""
-				"This is a digital upgrade to the &3Crafting Core&r, allowing you to craft Empowerer recipes directly through &bPackagedAuto&r."
+				"{ftbquests.chapter.late_game.quest37.description2}"
 				""
-				"The &aMarked Pedestals&r can be placed freely within three blocks' distance of the Crafting block, as long as they are on the same Y-level."
+				"{ftbquests.chapter.late_game.quest37.description3}"
 				""
-				"As usual with PackagedAuto crafters, you need to encode the recipe in the correct mode and place a copy in two places: a &3Packager&r somewhere on your network, and an &3Unpackager&r adjacent to the &3Combination Package Crafter&r."
+				"{ftbquests.chapter.late_game.quest37.description4}"
 				""
-				"These recipes require large amounts of RF and it &ewill not use power from your &aME Network&r, so you must also connect the package crafter directly to energy conduits."
+				"{ftbquests.chapter.late_game.quest37.description5}"
 			]
 			icon: "packagedexcrafting:combination_crafter"
 			id: "13B12457AA9BF90D"
@@ -1419,9 +1419,9 @@
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"Coating &6Cryococcus&r with &9Liquid Nether Star&r and freezing it solid results in a superconductive material capable of transmitting enormous amounts of energy."
+				"{ftbquests.chapter.late_game.quest38.description1}"
 				""
-				"These wires losslessly transmit &4UHV&r power, and can also be made into the final form of RF conduits that can transmit a whopping &a134 million RF/t&r."
+				"{ftbquests.chapter.late_game.quest38.description2}"
 			]
 			id: "186C14C113B6F3AD"
 			rewards: [{
@@ -1435,7 +1435,7 @@
 				item: "gtceu:sculk_superconductor_single_wire"
 				type: "item"
 			}]
-			title: "Superconductor Wire"
+			title: "{ftbquests.chapter.late_game.quest38.title}"
 			x: 25.25d
 			y: 17.0d
 		}
@@ -1443,15 +1443,15 @@
 			dependencies: ["424413BBCE3FD3BF"]
 			dependency_requirement: "one_completed"
 			description: [
-				"&2There are 3 materials you will need from processing Naquadah: Enriched Naquadah (Nq+), Naquadria (Nq*), and Trinium (Ke). "
+				"{ftbquests.chapter.late_game.quest39.description1}"
 				""
-				"There are 3 different ways to process Naquadah, each resulting in different materials.&r"
+				"{ftbquests.chapter.late_game.quest39.description2}"
 				""
-				"First is by &9processing ores&r from the &6Tier Five Micro Miner&r. &6Naquadah Ore&r yields &6Enriched Naquadah&r (through the &3Magnetic Separator&r) and &6Kaemanite Ore&r yields &6Trinium&r."
+				"{ftbquests.chapter.late_game.quest39.description3}"
 				""
-				"Second is by combining &6Naquadah Dust&r with certain heavy elements and Ender IO crystal grains. This can provide &6Enriched Naquadah&r and &6Naquadria&r."
+				"{ftbquests.chapter.late_game.quest39.description4}"
 				""
-				"Finally, you can do the full CEu processing of &6Naquadah Dust&r with &9Fluoroantimonic Acid&r, the strongest acid known to man. This is a decently involved process, but not only does it yield all 2 other Nq materials, it also grants byproducts of &6Titanium, Sulfur, Indium, Phosphorus, Barium, and Gallium&r. "
+				"{ftbquests.chapter.late_game.quest39.description5}"
 			]
 			icon: "gtceu:naquadria_dust"
 			id: "0508D3CCB6C876A3"
@@ -1489,7 +1489,7 @@
 				}
 				type: "item"
 			}]
-			title: "Naquadah Processing"
+			title: "{ftbquests.chapter.late_game.quest39.title}"
 			x: 11.0d
 			y: 12.25d
 		}
@@ -1499,11 +1499,11 @@
 				"28CA4E5308EC0BB9"
 			]
 			description: [
-				"&2A heavy Naquadah isotope with more nuclear capability."
+				"{ftbquests.chapter.late_game.quest40.description1}"
 				""
-				"&6Enriched Naquadah&r is meant to be used in as-of-yet-unimplemented CEu-native reactors. It's used in small amounts for &3Trinium Coil blocks&r, or in Moni reactors, though Naquadria is better for that purpose."
+				"{ftbquests.chapter.late_game.quest40.description2}"
 				""
-				"At least it's the easiest to obtain, and you can get it by mixing, the full Naquadah chain, or by passing Purified Naquadah Dust through an Electromagnetic Separator."
+				"{ftbquests.chapter.late_game.quest40.description3}"
 			]
 			id: "41FA85A3920EB334"
 			rewards: [{
@@ -1517,7 +1517,7 @@
 				item: "gtceu:enriched_naquadah_ingot"
 				type: "item"
 			}]
-			title: "&2Enriched Naquadah"
+			title: "{ftbquests.chapter.late_game.quest40.title}"
 			x: 11.0d
 			y: 14.0d
 		}
@@ -1527,11 +1527,11 @@
 				"0508D3CCB6C876A3"
 			]
 			description: [
-				"&2A strong heavy element obtained from the Naquadah chain."
+				"{ftbquests.chapter.late_game.quest41.description1}"
 				""
-				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &91 Trinium per 6 Naquadah processed&r."
+				"{ftbquests.chapter.late_game.quest41.description2}"
 				""
-				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, and &6Naquadah Alloy&r, among other things. You will need at least 5.5 stacks for a &3Fusion Reactor MK I&r, so stock up on it!"
+				"{ftbquests.chapter.late_game.quest41.description3}"
 			]
 			id: "15FAEE3F625265F4"
 			rewards: [{
@@ -1546,7 +1546,7 @@
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
-			title: "&2Trinium"
+			title: "{ftbquests.chapter.late_game.quest41.title}"
 			x: 17.25d
 			y: 12.25d
 		}
@@ -1555,7 +1555,7 @@
 				"41FA85A3920EB334"
 				"15FAEE3F625265F4"
 			]
-			description: ["&2Trinium&r is the seventh coil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."]
+			description: ["{ftbquests.chapter.late_game.quest42.description1}"]
 			id: "7A65459E4DFAAC2D"
 			rewards: [{
 				id: "0F124B2E02F2BD4E"
@@ -1569,13 +1569,13 @@
 				item: "gtceu:trinium_coil_block"
 				type: "item"
 			}]
-			title: "&2Trinium Coils"
+			title: "{ftbquests.chapter.late_game.quest42.title}"
 			x: 19.25d
 			y: 14.0d
 		}
 		{
 			dependencies: ["15FAEE3F625265F4"]
-			description: ["&2Naquadah Alloy is different in CEu. It requires Naquadah, Osmiridium and Trinium."]
+			description: ["{ftbquests.chapter.late_game.quest43.description1}"]
 			id: "1B07DB4D58D43B7C"
 			rewards: [
 				{
@@ -1603,16 +1603,16 @@
 				item: "gtceu:naquadah_alloy_ingot"
 				type: "item"
 			}]
-			title: "&2Naquadah Alloy"
+			title: "{ftbquests.chapter.late_game.quest43.title}"
 			x: 17.25d
 			y: 15.25d
 		}
 		{
 			dependencies: ["7A65459E4DFAAC2D"]
 			description: [
-				"&2A lighter and unstable Naquadah isotope."
+				"{ftbquests.chapter.late_game.quest44.description1}"
 				""
-				"&6Naquadria&o&r is used in the construction of &6UV components&r, the &3Fusion Reactor MK II&r, and in fusing &6Neutronium&r. Each piece of Naquadria also makes &94 times&r more power than &6Enriched Naquadah&r in &3Naquadah Reactors&r."
+				"{ftbquests.chapter.late_game.quest44.description2}"
 			]
 			id: "5792330C6E5B87A3"
 			rewards: [{
@@ -1626,18 +1626,18 @@
 				item: "gtceu:naquadria_ingot"
 				type: "item"
 			}]
-			title: "&2Naquadria"
+			title: "{ftbquests.chapter.late_game.quest44.title}"
 			x: 19.25d
 			y: 15.25d
 		}
 		{
 			dependencies: ["1B07DB4D58D43B7C"]
 			description: [
-				"&6ZPM Machine Hulls&r are made with &2Naquadah Alloy Plates,&r but you'll notice they also need &2Polybenzimidazole&r."
+				"{ftbquests.chapter.late_game.quest45.description1}"
 				""
-				"ZPM stands for Zero Point Module."
+				"{ftbquests.chapter.late_game.quest45.description2}"
 				""
-				"This is the last tier of machine that's sensible to produce before you reach the &9Creative Tank&r. Multiblock hatches are a different matter: feel free to upgrade your &3EBF&rs to Ultimate Voltage, if you can handle the power drain."
+				"{ftbquests.chapter.late_game.quest45.description3}"
 			]
 			id: "217F85D6FE2A467D"
 			rewards: [{
@@ -1651,7 +1651,7 @@
 				item: "gtceu:zpm_machine_hull"
 				type: "item"
 			}]
-			title: "&2ZPM Machine Hulls"
+			title: "{ftbquests.chapter.late_game.quest45.title}"
 			x: 17.25d
 			y: 16.75d
 		}
@@ -1660,7 +1660,7 @@
 				"0562D9F4C441EAF9"
 				"7A65459E4DFAAC2D"
 			]
-			description: ["A complex plating material used exclusively for the Tier Nine Micro Miner."]
+			description: ["{ftbquests.chapter.late_game.quest46.description1}"]
 			id: "57D9FA04817CB92F"
 			rewards: [{
 				id: "6ABD44B2AE43E4E3"
@@ -1673,16 +1673,16 @@
 				item: "kubejs:quantum_fluxed_eternium_heavy_plating"
 				type: "item"
 			}]
-			title: "Quantum Fluxed Eternium Heavy Plating"
+			title: "{ftbquests.chapter.late_game.quest46.title}"
 			x: 19.25d
 			y: 18.25d
 		}
 		{
 			dependencies: ["7FAB6FD0A054443E"]
 			description: [
-				"You don't need it just yet, but you can make it now."
+				"{ftbquests.chapter.late_game.quest47.description1}"
 				""
-				"This is a critical material for the End Game."
+				"{ftbquests.chapter.late_game.quest47.description2}"
 			]
 			id: "4DF92773C82F4AAC"
 			rewards: [{
@@ -1691,7 +1691,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "...Did it just move?"
+			subtitle: "{ftbquests.chapter.late_game.quest47.subtitle}"
 			tasks: [{
 				id: "19750B567D0D0ABC"
 				item: "kubejs:the_ultimate_material"
@@ -1707,9 +1707,9 @@
 				"20CB8F878CADA235"
 			]
 			description: [
-				"The source of &9Warden Hearts&r and the valuable &9Lair of The Warden Data&r."
+				"{ftbquests.chapter.late_game.quest48.description1}"
 				""
-				"As a bonus, brings &9Sculk Catalysts, Warden Tendrils, &2Blocks of Ruthenium&r, and plenty of different precious metals and gems."
+				"{ftbquests.chapter.late_game.quest48.description2}"
 			]
 			id: "5FE96C30454A0374"
 			rewards: [{
@@ -1724,18 +1724,18 @@
 				item: "kubejs:microminer_t7"
 				type: "item"
 			}]
-			title: "&9Tier Seven Micro Miner"
+			title: "{ftbquests.chapter.late_game.quest48.title}"
 			x: 23.25d
 			y: 15.25d
 		}
 		{
 			dependencies: ["2D10F2E538486624"]
 			description: [
-				"With a &3Fusion Reactor&r, you can make Europium!"
+				"{ftbquests.chapter.late_game.quest49.description1}"
 				""
-				"This element is needed for making &9Sculk-related items&r, as well as the &6Fusion Reactor Computer MK II&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
+				"{ftbquests.chapter.late_game.quest49.description2}"
 				""
-				"You make it by fusing molten &9Neodymium&r and &9Hydrogen&r."
+				"{ftbquests.chapter.late_game.quest49.description3}"
 			]
 			id: "2A6E9E7C80754936"
 			rewards: [{
@@ -1749,7 +1749,7 @@
 				item: "gtceu:europium_ingot"
 				type: "item"
 			}]
-			title: "&2Europium Ingot"
+			title: "{ftbquests.chapter.late_game.quest49.title}"
 			x: 23.25d
 			y: 11.0d
 		}
@@ -1760,21 +1760,21 @@
 				"15FAEE3F625265F4"
 			]
 			description: [
-				"The &3Fusion Reactor&r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows. &6Sneak-right click&r the controller to enable the in-world preview."
+				"{ftbquests.chapter.late_game.quest50.description1}"
 				""
-				"The &bEMI&r preview shows &eall valid hatch locations&r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with &2Fusion Machine Casings&r as long as you have at least &atwo Fluid Input Hatches&r and &aone Fluid Output Hatch&r. It's possible to use input/output hatches in every valid location, if you prefer."
+				"{ftbquests.chapter.late_game.quest50.description2}"
 				"{@pagebreak}"
-				"Because of this, the quest only asks for &248 Fusion Machine Casings&r. If you want to use the minimum number of fluid hatches, you'll need to craft an additional &229 Fusion Machine Casings&r. In addition to the &a48 Fusion Machine Casings&r, you will also need &631 Fusion Glass&r or &631 Fusion Machine Casings&r. &bFusion Glass is cheaper, and looks cooler&r, but it's your choice."
+				"{ftbquests.chapter.late_game.quest50.description3}"
 				""
-				"Each &aEnergy Hatch&r increases the reactor's power buffer. &cYou cannot use 4x or 16x Energy Hatches in Fusion Reactors. &aAll 16 Energy Hatches&r are required to be able to process all Mark 1 recipes and give a power buffer of &e160M EU&r. &2However, not all energy hatches need to be connected to power. For example, a recipe that requires LuV power draw would only need one or more hatches connected to power, but a recipe that needs ZPM power draw would need at least two hatches connected to power.&r &cThey still need to be present on the structure!&r"
+				"{ftbquests.chapter.late_game.quest50.description4}"
 				"{@pagebreak}"
-				"In addition to the recipe power drain, Fusion Reactors have a &eheat&r mechanic related to the recipe's &e\"EU To Start\"&r. This amount of power is drained from the reactor's buffer before starting the recipe to heat up the reactor to the necessary temperature, and is independent of the recipe's EU/t cost. As such, this determines the minimum tier of reactor you need for a recipe."
+				"{ftbquests.chapter.late_game.quest50.description5}"
 				""
-				"If the reactor stops processing, it will &erapidly lose heat&r, even if you pause it with a soft hammer. On the other hand, if the reactor is already at the required temperature for a recipe, &eno additional power&r is required to heat up the reactor! This is true even if you switch between different recipes. This mechanic incentivizes continuous use of the reactor."
+				"{ftbquests.chapter.late_game.quest50.description6}"
 				"{@pagebreak}"
-				"If you switch to a recipe that requires more heat, &eonly the difference&r in heat values is consumed as EU to reach the target heat (up to a maximum heat equal to the reactor's current buffer)."
+				"{ftbquests.chapter.late_game.quest50.description7}"
 				""
-				"Fusion Reactors &2overclock, but only once per fusion tier, instead of based on energy input.&r They gate the next tier of materials, so you will eventually want to make more than one."
+				"{ftbquests.chapter.late_game.quest50.description8}"
 			]
 			icon: "gtceu:luv_fusion_reactor"
 			id: "2D10F2E538486624"
@@ -1785,7 +1785,7 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "Time to get fusing!"
+			subtitle: "{ftbquests.chapter.late_game.quest50.subtitle}"
 			tasks: [
 				{
 					id: "58C69AD21BA53BEB"
@@ -1802,7 +1802,7 @@
 							value: "moni:input_hatch"
 						}
 					}
-					title: "Any #moni:input_hatch"
+					title: "{ftbquests.chapter.late_game.quest50.task.title1}"
 					type: "item"
 				}
 				{
@@ -1814,7 +1814,7 @@
 							value: "moni:output_hatch"
 						}
 					}
-					title: "Any #moni:output_hatch"
+					title: "{ftbquests.chapter.late_game.quest50.task.title2}"
 					type: "item"
 				}
 				{
@@ -1857,13 +1857,13 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK I"
+			title: "{ftbquests.chapter.late_game.quest50.title}"
 			x: 22.0d
 			y: 12.25d
 		}
 		{
 			dependencies: ["1CC092A2F2CD4589"]
-			description: ["&2Double Plates&r used for the Tier Seven Micro Miner. "]
+			description: ["{ftbquests.chapter.late_game.quest51.description1}"]
 			id: "0B6196692F9E176D"
 			rewards: [{
 				id: "7EEF2F27174D6E74"
@@ -1876,16 +1876,16 @@
 				item: "gtceu:double_cryolobus_plate"
 				type: "item"
 			}]
-			title: "&9Cryolobus Double Plates"
+			title: "{ftbquests.chapter.late_game.quest51.title}"
 			x: 23.25d
 			y: 8.25d
 		}
 		{
 			dependencies: ["22144A6785524FDF"]
 			description: [
-				"&9Mesol Energy Cores&r are your first proper &9Energy Cores&r."
+				"{ftbquests.chapter.late_game.quest52.description1}"
 				""
-				"They (as well as future Energy Cores) require XP Juice to craft."
+				"{ftbquests.chapter.late_game.quest52.description2}"
 			]
 			id: "7C89BC235C988689"
 			rewards: [{
@@ -1899,7 +1899,7 @@
 				item: "kubejs:mesol_energy_core"
 				type: "item"
 			}]
-			title: "&9Mesol Energy Core"
+			title: "{ftbquests.chapter.late_game.quest52.title}"
 			x: 27.25d
 			y: 12.25d
 		}
@@ -1908,7 +1908,7 @@
 				"2A6E9E7C80754936"
 				"46A56A5E3CC2403F"
 			]
-			description: ["A Ludicrous Voltage tier &bGregTech&r battery."]
+			description: ["{ftbquests.chapter.late_game.quest53.description1}"]
 			id: "5199E6FAA4B699CD"
 			rewards: [{
 				id: "627320094BB964B3"
@@ -1921,13 +1921,13 @@
 				item: "gtceu:lapotronic_energy_orb_cluster"
 				type: "item"
 			}]
-			title: "LuV Power Storage"
+			title: "{ftbquests.chapter.late_game.quest53.title}"
 			x: 23.25d
 			y: 9.75d
 		}
 		{
 			dependencies: ["5FE96C30454A0374"]
-			description: ["&9Warden Hearts&r are needed for both &9Cryococcus&r and &6The Ultimate Material&r."]
+			description: ["{ftbquests.chapter.late_game.quest54.description1}"]
 			id: "7FAB6FD0A054443E"
 			rewards: [{
 				id: "2AA894050D239DEE"
@@ -1935,22 +1935,22 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "It continues to beat, even after removal from its host."
+			subtitle: "{ftbquests.chapter.late_game.quest54.subtitle}"
 			tasks: [{
 				id: "7615C990816E6132"
 				item: "kubejs:warden_heart"
 				type: "item"
 			}]
-			title: "&9Warden Hearts"
+			title: "{ftbquests.chapter.late_game.quest54.title}"
 			x: 23.25d
 			y: 18.25d
 		}
 		{
 			dependencies: ["22144A6785524FDF"]
 			description: [
-				"The multiblock uses energy cores to &erelease extremely large amounts of energy at once&r to craft things. While the batteries themselves are lost, you are able to recover some of the spent energy. "
+				"{ftbquests.chapter.late_game.quest55.description1}"
 				""
-				"&5...once energy voiding is implemented in GTm."
+				"{ftbquests.chapter.late_game.quest55.description2}"
 			]
 			icon: "gtceu:discharger"
 			id: "713FAECEE5046121"
@@ -1961,19 +1961,19 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "What good is a battery if you don't use it?"
+			subtitle: "{ftbquests.chapter.late_game.quest55.subtitle}"
 			tasks: [{
 				id: "3C9333ECA3F6B5F9"
 				item: "gtceu:discharger"
 				type: "item"
 			}]
-			title: "&9Discharger"
+			title: "{ftbquests.chapter.late_game.quest55.title}"
 			x: 27.25d
 			y: 18.25d
 		}
 		{
 			dependencies: ["7C89BC235C988689"]
-			description: ["&9Bathyal Energy Cores&r are the second tier of core, used for intermediate crafting recipes."]
+			description: ["{ftbquests.chapter.late_game.quest56.description1}"]
 			id: "20CB8F878CADA235"
 			rewards: [{
 				id: "6C1605F1E280EA28"
@@ -1986,7 +1986,7 @@
 				item: "kubejs:bathyal_energy_core"
 				type: "item"
 			}]
-			title: "&9Bathyal Energy Core"
+			title: "{ftbquests.chapter.late_game.quest56.title}"
 			x: 25.25d
 			y: 12.25d
 		}
@@ -1998,9 +1998,9 @@
 				"20CB8F878CADA235"
 			]
 			description: [
-				"The main source of &9Hadal Shards&r."
+				"{ftbquests.chapter.late_game.quest57.description1}"
 				""
-				"&9This Micro Miner also brings back Dragon Eggs and Ender Dragon Scales, as well as Neutronium, depending on the mission&r."
+				"{ftbquests.chapter.late_game.quest57.description2}"
 			]
 			id: "2D47BFA44BDB5E6A"
 			rewards: [{
@@ -2015,18 +2015,18 @@
 				item: "kubejs:microminer_t8"
 				type: "item"
 			}]
-			title: "&9Tier Eight Micro Miner"
+			title: "{ftbquests.chapter.late_game.quest57.title}"
 			x: 27.25d
 			y: 15.25d
 		}
 		{
 			dependencies: ["39FD6F1076559156"]
 			description: [
-				"The &3Advanced Microverse Projector II&r is an even more powerful projector required for sending &6Tier Seven&r through &6Tier Ten Micro Miners&r into microverses."
+				"{ftbquests.chapter.late_game.quest58.description1}"
 				""
-				"Tier Seven missions will operate on &eLuV power&r, but higher energy tiers will be required for later missions. As with the previous projector, this structure supports overclocking and the position of buses and hatches can be swapped with any &6Microverse Projector Casing&r."
+				"{ftbquests.chapter.late_game.quest58.description2}"
 				""
-				"&6Sneak-right click&r the controller to enable the in-world preview."
+				"{ftbquests.chapter.late_game.quest58.description3}"
 			]
 			id: "7E3A179376673590"
 			rewards: [{
@@ -2050,9 +2050,9 @@
 				"713FAECEE5046121"
 			]
 			description: [
-				"&6Cryococcus&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r."
+				"{ftbquests.chapter.late_game.quest59.description1}"
 				""
-				"Five &6Cryolobus Blocks&r can be processed in the Discharger to create an equal output of five &6Cryococcus Blocks&r."
+				"{ftbquests.chapter.late_game.quest59.description2}"
 			]
 			id: "0562D9F4C441EAF9"
 			rewards: [{
@@ -2066,16 +2066,16 @@
 				item: "gtceu:cryococcus_block"
 				type: "item"
 			}]
-			title: "&9Cryococcus"
+			title: "{ftbquests.chapter.late_game.quest59.title}"
 			x: 25.25d
 			y: 18.25d
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
 			description: [
-				"&6Cryococcus&r, &9Bathyal Energy Cores&r, and &6Stabilized Einsteinium&r can be used to create a &9Abyssal Energy Core&r."
+				"{ftbquests.chapter.late_game.quest60.description1}"
 				""
-				"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some End Game items."
+				"{ftbquests.chapter.late_game.quest60.description2}"
 			]
 			id: "6ABD83B58FADD4DF"
 			rewards: [{
@@ -2089,7 +2089,7 @@
 				item: "kubejs:abyssal_energy_core"
 				type: "item"
 			}]
-			title: "&9Abyssal Energy Core"
+			title: "{ftbquests.chapter.late_game.quest60.title}"
 			x: 23.25d
 			y: 21.5d
 		}
@@ -2101,11 +2101,11 @@
 				"01E542E1C9DAF5B4"
 			]
 			description: [
-				"Combines &bStellar Creation Data&r into &9Universe Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
+				"{ftbquests.chapter.late_game.quest61.description1}"
 				""
-				"The alternate mission brings a decent quantity of &6Neutronium&r. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
+				"{ftbquests.chapter.late_game.quest61.description2}"
 				""
-				"The Tier Nine Micro Miner will also be important later on, as it will be your main source of &9Quasi-Stable Neutron Stars&r."
+				"{ftbquests.chapter.late_game.quest61.description3}"
 			]
 			id: "6BF4A76C5B84EEE9"
 			rewards: [{
@@ -2120,7 +2120,7 @@
 				item: "kubejs:microminer_t9"
 				type: "item"
 			}]
-			title: "Tier Nine Micro Miner"
+			title: "{ftbquests.chapter.late_game.quest61.title}"
 			x: 19.25d
 			y: 24.0d
 		}
@@ -2130,7 +2130,7 @@
 				"6ABD83B58FADD4DF"
 				"235C1E5B2C58B5AF"
 			]
-			description: ["&9Hadal Warp Engines&r are components needed for the Tier Nine and Tier Ten Micro Miners, as well as a few End Game recipes."]
+			description: ["{ftbquests.chapter.late_game.quest62.description1}"]
 			id: "483652BAEF59E125"
 			rewards: [{
 				id: "6D6D92F23F1DCEA5"
@@ -2143,7 +2143,7 @@
 				item: "kubejs:hadal_warp_engine"
 				type: "item"
 			}]
-			title: "&9Hadal Warp Engine"
+			title: "{ftbquests.chapter.late_game.quest62.title}"
 			x: 25.25d
 			y: 24.0d
 		}
@@ -2153,9 +2153,9 @@
 				"6ABD83B58FADD4DF"
 			]
 			description: [
-				"&6Hadal Shards&r are a component in &9Hadal Energy Cores&r and &9Hadal Warp Engines&r."
+				"{ftbquests.chapter.late_game.quest63.description1}"
 				""
-				"They come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Warden Data&r."
+				"{ftbquests.chapter.late_game.quest63.description2}"
 			]
 			id: "235C1E5B2C58B5AF"
 			rewards: [{
@@ -2169,7 +2169,7 @@
 				item: "kubejs:hadal_shard"
 				type: "item"
 			}]
-			title: "&9Hadal Shards"
+			title: "{ftbquests.chapter.late_game.quest63.title}"
 			x: 27.25d
 			y: 21.5d
 		}
@@ -2180,13 +2180,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the Sun."
+				"{ftbquests.chapter.late_game.quest64.description1}"
 				""
-				"Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
+				"{ftbquests.chapter.late_game.quest64.description2}"
 				""
-				"Neutronium is obtained by fusing &9Liquid Naquadria&r with &9Liquid Americium&r, &2or from the Tier Eight Micro Miner.&r"
+				"{ftbquests.chapter.late_game.quest64.description3}"
 				""
-				"You might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
+				"{ftbquests.chapter.late_game.quest64.description4}"
 			]
 			id: "22E50A6923EBF5CB"
 			rewards: [
@@ -2217,7 +2217,7 @@
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			title: "&2Neutronium Ingot"
+			title: "{ftbquests.chapter.late_game.quest64.title}"
 			x: 29.25d
 			y: 18.25d
 		}
@@ -2227,11 +2227,11 @@
 				"235C1E5B2C58B5AF"
 			]
 			description: [
-				"The highest tier of &9energy core&r. You will need these to reach the &9Creative Tank&r."
+				"{ftbquests.chapter.late_game.quest65.description1}"
 				""
-				"Each core requires two ingots of &6Neutronium&r and a &6Hadal Shard&r, as well as plenty of the previous energy cores."
+				"{ftbquests.chapter.late_game.quest65.description2}"
 				""
-				"Hope you've got those Tier Eight Micro Miners automated."
+				"{ftbquests.chapter.late_game.quest65.description3}"
 			]
 			id: "738A141D31AD7CE3"
 			rewards: [{
@@ -2247,13 +2247,13 @@
 				item: "kubejs:hadal_energy_core"
 				type: "item"
 			}]
-			title: "&9Hadal Energy Core"
+			title: "{ftbquests.chapter.late_game.quest65.title}"
 			x: 29.25d
 			y: 24.0d
 		}
 		{
 			dependencies: ["524E7A937C2D9DDD"]
-			description: ["&2For making Wetware Circuits more easily. You need UV-tier power to make them that way."]
+			description: ["{ftbquests.chapter.late_game.quest66.description1}"]
 			id: "485CEA4199AAD352"
 			rewards: [{
 				id: "223E9ECE8A5FA09D"
@@ -2266,13 +2266,13 @@
 				item: "gtceu:highly_advanced_soc_wafer"
 				type: "item"
 			}]
-			title: "&2Highly Advanced SoCs"
+			title: "{ftbquests.chapter.late_game.quest66.title}"
 			x: 31.25d
 			y: 22.5d
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
-			description: ["Allows for the creation of HASoCs."]
+			description: ["{ftbquests.chapter.late_game.quest67.description1}"]
 			id: "524E7A937C2D9DDD"
 			rewards: [{
 				id: "088BB71A2B6A615E"
@@ -2285,18 +2285,18 @@
 				item: "gtceu:neutronium_boule"
 				type: "item"
 			}]
-			title: "&2Neutronium Boules"
+			title: "{ftbquests.chapter.late_game.quest67.title}"
 			x: 31.25d
 			y: 20.25d
 		}
 		{
 			dependencies: ["6DAB13A7BDECE94E"]
 			description: [
-				"&3World Accelerators&r accelerate the ticks of any non-GregTech machine adjacent to them."
+				"{ftbquests.chapter.late_game.quest68.description1}"
 				""
-				"The &6HV&r WA accelerates by 8x, the &5EV&r WA accelerates by 16x, and the &1IV&r WA accelerates by 32x. They require an input of 8A of their voltage tier. Be sure to right-click the WA once with a &aScrewdriver&r to set it to &eTile Entity Mode&r, otherwise it will accelerate random ticks in a radius around it instead."
+				"{ftbquests.chapter.late_game.quest68.description2}"
 				""
-				"Make them in an &3Assembly Line&r with some very advanced components."
+				"{ftbquests.chapter.late_game.quest68.description3}"
 			]
 			hide_dependency_lines: true
 			id: "72FFB2AAB5EA049D"
@@ -2311,16 +2311,16 @@
 				item: "gtceu:ev_world_accelerator"
 				type: "item"
 			}]
-			title: "Right Hand of Chronos"
+			title: "{ftbquests.chapter.late_game.quest68.title}"
 			x: 23.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["521977C7165229F1"]
 			description: [
-				"The &3Active Transformer&r is a device which can convert any number and type of &9GT Energy Inputs&r into any number and type of &9GT Energy Outputs&r. That includes &664A Substation Hatches&r, as well as &aLaser Hatches&r - refer to the nearby quests for more details on those."
+				"{ftbquests.chapter.late_game.quest69.description1}"
 				""
-				"With &9RF Conduits&r and &3Energy Converters&r in this pack, this probably has limited use, but you can build it if you want."
+				"{ftbquests.chapter.late_game.quest69.description2}"
 			]
 			hide_dependency_lines: true
 			id: "2BBAF93506DD79C1"
@@ -2335,20 +2335,20 @@
 				item: "gtceu:active_transformer"
 				type: "item"
 			}]
-			title: "&2Active Transformer"
+			title: "{ftbquests.chapter.late_game.quest69.title}"
 			x: 23.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["4DB622A78605A2EB"]
 			description: [
-				"The &3Power Substation&r is GregTech's native mass power storage solution."
+				"{ftbquests.chapter.late_game.quest70.description1}"
 				""
-				"The structure can accept up to 18 layers of 3x3 &aLapotronic Capacitor&r blocks. GT batteries can hold &96x&r the EU their item counterparts can hold when crafted into a &aLapotronic Capacitor&r. The structure need not be made of all of the same tier blocks, but it must be full, so fill any empty space with &aEmpty Capacitor Blocks&r."
+				"{ftbquests.chapter.late_game.quest70.description2}"
 				""
-				"Insert power through &6Energy Hatches&r and extract from &6Dynamo Hatches&r, each of any tier. The Power Substation can accept special &664A Substation Hatches&r, as well as &aLaser Hatches&r."
+				"{ftbquests.chapter.late_game.quest70.description3}"
 				""
-				"The Power Substation will &cpassively lose 1%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
+				"{ftbquests.chapter.late_game.quest70.description4}"
 			]
 			hide_dependency_lines: true
 			id: "36B1B083B4FA439F"
@@ -2363,18 +2363,18 @@
 				item: "gtceu:power_substation"
 				type: "item"
 			}]
-			title: "&2Power Substation"
+			title: "{ftbquests.chapter.late_game.quest70.title}"
 			x: 27.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["521977C7165229F1"]
 			description: [
-				"&aLasers&r are &9GregTech&r's native solution to high-volume power transfer. Each power tier starting at &1IV&r has &aLaser Hatches&r capable of transferring &9256A&r, &91,024A&r and &94,096A&r of their voltage's power!"
+				"{ftbquests.chapter.late_game.quest71.description1}"
 				""
-				"Energy in the Laser Network flows from &aLaser Sources&r through &6Laser Transmitting Cables&r to &aLaser Targets&r. All these must be in a straight line - lasers don't bend, after all. Similarly to other power-related blocks, the tier of the &aLaser Target&r must not be lower than the tier of the &aLaser Source&r."
+				"{ftbquests.chapter.late_game.quest71.description2}"
 				""
-				"You can choose to use these when moving power between &3Active Transformers&r and your &3Power Substation&r."
+				"{ftbquests.chapter.late_game.quest71.description3}"
 			]
 			hide_dependency_lines: true
 			id: "20745EB9A695E365"
@@ -2389,13 +2389,13 @@
 				item: "gtceu:normal_laser_pipe"
 				type: "item"
 			}]
-			title: "&2Laser Network"
+			title: "{ftbquests.chapter.late_game.quest71.title}"
 			x: 25.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["56EFA6A07C7291F7"]
-			description: ["Double Plates used exclusively for the Tier Eight and Tier Eleven Micro Miners."]
+			description: ["{ftbquests.chapter.late_game.quest72.description1}"]
 			id: "6391447F1A411281"
 			rewards: [{
 				id: "1DAE2A0FADC5CC24"
@@ -2408,16 +2408,16 @@
 				item: "gtceu:double_crystal_matrix_plate"
 				type: "item"
 			}]
-			title: "Crystal Matrix Double Plates"
+			title: "{ftbquests.chapter.late_game.quest72.title}"
 			x: 29.25d
 			y: 15.25d
 		}
 		{
 			dependencies: ["2D0DF78F71760F00"]
 			description: [
-				"&2Perfect Gems are equivalent to 8 of the base gem."
+				"{ftbquests.chapter.late_game.quest73.description1}"
 				""
-				"&211 Perfect Diamonds are used in crafting each Crystal Matrix Ingot."
+				"{ftbquests.chapter.late_game.quest73.description2}"
 			]
 			id: "56EFA6A07C7291F7"
 			rewards: [{
@@ -2431,7 +2431,7 @@
 				item: "gtceu:diamond_perfect"
 				type: "item"
 			}]
-			title: "&2Perfect Gems"
+			title: "{ftbquests.chapter.late_game.quest73.title}"
 			x: 30.25d
 			y: 15.25d
 		}
@@ -2441,9 +2441,9 @@
 				"39FD6F1076559156"
 			]
 			description: [
-				"Some Micro Miner missions use a &6Gemstone Sensor&r to scout out gems instead of ores."
+				"{ftbquests.chapter.late_game.quest74.description1}"
 				""
-				"&6&2Perfect Gems&r can be obtained from such missions."
+				"{ftbquests.chapter.late_game.quest74.description2}"
 			]
 			hide_dependency_lines: true
 			id: "2D0DF78F71760F00"
@@ -2464,11 +2464,11 @@
 		{
 			dependencies: ["25B0271106684DF7"]
 			description: [
-				"The &aImplosion Compressor&f is like an autoclave that uses explosions instead of water. "
+				"{ftbquests.chapter.late_game.quest75.description1}"
 				""
-				"It is the only way to turn some gem dusts into gemstones. However, for some gemstones, like &6Apatite&r, it is much more efficient to use an &3Autoclave&r&r with &9Distilled Water&r."
+				"{ftbquests.chapter.late_game.quest75.description2}"
 				""
-				"It will also be vital for processing &5Motes of Omnium&f."
+				"{ftbquests.chapter.late_game.quest75.description3}"
 			]
 			id: "62AC7103FF9D25FD"
 			rewards: [{
@@ -2484,13 +2484,13 @@
 				item: "gtceu:implosion_compressor"
 				type: "item"
 			}]
-			title: "&2Implosion Compressor"
+			title: "{ftbquests.chapter.late_game.quest75.title}"
 			x: 5.9375d
 			y: 24.0625d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
-			description: ["&6TNT&r is an explosive made from &9Toluene&r, a distillation byproduct of &9Wood Tar&r or various &eSteam-Cracked Fuels&r. Besides its typical uses in Minecraft, it is a crafting ingredient you can use in the &3Implosion Compressor&r."]
+			description: ["{ftbquests.chapter.late_game.quest76.description1}"]
 			id: "25B0271106684DF7"
 			rewards: [{
 				id: "3025735A47D591DE"
@@ -2509,9 +2509,9 @@
 		{
 			dependencies: ["7A7FFE9E89D19A2F"]
 			description: [
-				"The &3Naquadah Reactor&r is a structure used to generate considerable amounts of EU power from decaying &6Enriched Naquadah&r or &6Naquadria&r into &6Lead&r."
+				"{ftbquests.chapter.late_game.quest77.description1}"
 				""
-				"&6Sneak-right click&r the controller to enable the in-world preview."
+				"{ftbquests.chapter.late_game.quest77.description2}"
 			]
 			icon: "gtceu:naquadah_reactor_i"
 			id: "425D1C34A82B054D"
@@ -2561,16 +2561,16 @@
 					type: "item"
 				}
 			]
-			title: "Naquadah Reactor I"
+			title: "{ftbquests.chapter.late_game.quest77.title}"
 			x: 11.0d
 			y: 24.0d
 		}
 		{
 			dependencies: ["425D1C34A82B054D"]
 			description: [
-				"The &3Naquadah Reactor II&r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the MK I. The materials it requires are similar to the MK I, and you can almost reuse the same structure. Make sure you are prepared for the UV power output by adding a &6UV Energy Output Hatch&r."
+				"{ftbquests.chapter.late_game.quest78.description1}"
 				""
-				"This is a pretty expensive structure though, as it needs a block of &9Omnium&r."
+				"{ftbquests.chapter.late_game.quest78.description2}"
 			]
 			icon: "gtceu:naquadah_reactor_ii"
 			id: "2E8AFA6B42E939B4"
@@ -2594,7 +2594,7 @@
 							value: "forge:storage_blocks/omnium"
 						}
 					}
-					title: "Omnium Block"
+					title: "{ftbquests.chapter.late_game.quest78.task.title1}"
 					type: "item"
 				}
 				{
@@ -2609,16 +2609,16 @@
 					type: "item"
 				}
 			]
-			title: "Naquadah Reactor II"
+			title: "{ftbquests.chapter.late_game.quest78.title}"
 			x: 13.0d
 			y: 24.0d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
 			description: [
-				"The &6Advanced System-on-Chip&r (or &6ASoC&r) is the &2penultimate&r component miniaturization. These unlock the most efficient recipe for producing &2Nanocircuits&r and &6Quantum Circuits&r."
+				"{ftbquests.chapter.late_game.quest79.description1}"
 				""
-				"The latter circuits must be made in a &aZPM Assembling Machine&r."
+				"{ftbquests.chapter.late_game.quest79.description2}"
 			]
 			id: "7ECA688A91A1392A"
 			rewards: [{
@@ -2631,13 +2631,13 @@
 				item: "gtceu:advanced_soc_wafer"
 				type: "item"
 			}]
-			title: "Advanced System-on-Chip"
+			title: "{ftbquests.chapter.late_game.quest79.title}"
 			x: 13.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["7A65459E4DFAAC2D"]
-			description: ["This is the flight of our lives."]
+			description: ["{ftbquests.chapter.late_game.quest80.description1}"]
 			id: "747A3DEA569CB6C9"
 			rewards: [{
 				count: 2
@@ -2657,7 +2657,7 @@
 				}
 				type: "item"
 			}]
-			title: "Endgame"
+			title: "{ftbquests.chapter.late_game.quest80.title}"
 			x: 20.5d
 			y: 14.0d
 		}
@@ -2667,11 +2667,11 @@
 				"5199E6FAA4B699CD"
 			]
 			description: [
-				"Interestingly enough, &eSculk itself functions great as a biobattery&r, being able to store and quickly release mass amounts of energy. The &3Sculk Charger&r should be able to get you started in taking advantage of it."
+				"{ftbquests.chapter.late_game.quest81.description1}"
 				""
-				"To use it, set the recipe in the same way you would for an &3Auto Crafting Table&r, then place an inventory (such as a Barrel) on top, and connect power to &eboth the charger and a nearby pylon&r. Items can be extacted from the charger in any manner."
+				"{ftbquests.chapter.late_game.quest81.description2}"
 				""
-				"The charger and pylon themselves &ehave extreme throughput&r, so don't worry about having to wait for it to craft items."
+				"{ftbquests.chapter.late_game.quest81.description3}"
 			]
 			icon: "extendedcrafting:auto_flux_crafter"
 			id: "7F75D961B102A72D"
@@ -2694,13 +2694,13 @@
 					type: "item"
 				}
 			]
-			title: "&9Sculk Charging"
+			title: "{ftbquests.chapter.late_game.quest81.title}"
 			x: 25.25d
 			y: 8.25d
 		}
 		{
 			dependencies: ["7F75D961B102A72D"]
-			description: ["[\"While the charger itself has extreme throughput, it is recommended to either create a \",{ \"text\": \"power substation\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"36B1B083B4FA439F\" }},\" or keep the cores themselves in stock, as a single core requires 200 million RF to craft.\"]"]
+			description: ["[\"\",{\"translate\":\"ftbquests.chapter.late_game.quest82.rich_description1\"},{\"underlined\":1,\"translate\":\"ftbquests.chapter.late_game.quest82.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"36B1B083B4FA439F\"}},{\"translate\":\"ftbquests.chapter.late_game.quest82.rich_description3\"}]"]
 			id: "22144A6785524FDF"
 			rewards: [{
 				id: "5B1FA1A9ACBC0EB7"
@@ -2713,7 +2713,7 @@
 				item: "kubejs:sculk_core"
 				type: "item"
 			}]
-			title: "&9Sculk Core"
+			title: "{ftbquests.chapter.late_game.quest82.title}"
 			x: 27.25d
 			y: 8.25d
 		}
@@ -2724,36 +2724,36 @@
 				"7E3A179376673590"
 			]
 			description: [
-				"&cThe 4.5th Micro Miner.&r"
-				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Aerotheum Dust&r."
+				"{ftbquests.chapter.late_game.quest83.description1}"
+				"{ftbquests.chapter.late_game.quest83.description2}"
 				""
-				"This miner will be your primary source of mob drops, for all, if not most, of your game."
+				"{ftbquests.chapter.late_game.quest83.description3}"
 				""
-				"When equipped with a &6Sapling&r:"
-				"* Creeper, Skeleton and Zombie skulls"
-				"* Bone"
-				"* Rotten Flesh"
-				"* Gunpowder"
-				"* Slime Block"
-				"* Guardian Scale&r"
-				"When equipped with a &6Block of Netherrack:"
-				"* Wither Skeleton Skull and Bones"
-				"* Blaze Rod"
-				"* Blizz, Blitz and Basalz Rods"
-				"* Ghast Tear"
-				"* Magma Cream"
-				"* Drop of Evil&r"
-				"When equipped with a &6Block of Endstone:"
-				"* Enderman Skull"
-				"* Enderpearl Block"
-				"* Shulker Shell"
-				"* Shulker Pearl&r"
-				"When equipped with &6Ender Eyes:"
-				"* Dragon Lair Data"
-				"* Ender Dragon Head&r"
+				"{ftbquests.chapter.late_game.quest83.description4}"
+				"{ftbquests.chapter.late_game.quest83.description5}"
+				"{ftbquests.chapter.late_game.quest83.description6}"
+				"{ftbquests.chapter.late_game.quest83.description7}"
+				"{ftbquests.chapter.late_game.quest83.description8}"
+				"{ftbquests.chapter.late_game.quest83.description9}"
+				"{ftbquests.chapter.late_game.quest83.description10}"
+				"{ftbquests.chapter.late_game.quest83.description11}"
+				"{ftbquests.chapter.late_game.quest83.description12}"
+				"{ftbquests.chapter.late_game.quest83.description13}"
+				"{ftbquests.chapter.late_game.quest83.description14}"
+				"{ftbquests.chapter.late_game.quest83.description15}"
+				"{ftbquests.chapter.late_game.quest83.description16}"
+				"{ftbquests.chapter.late_game.quest83.description17}"
+				"{ftbquests.chapter.late_game.quest83.description18}"
+				"{ftbquests.chapter.late_game.quest83.description19}"
+				"{ftbquests.chapter.late_game.quest83.description20}"
+				"{ftbquests.chapter.late_game.quest83.description21}"
+				"{ftbquests.chapter.late_game.quest83.description22}"
+				"{ftbquests.chapter.late_game.quest83.description23}"
+				"{ftbquests.chapter.late_game.quest83.description24}"
+				"{ftbquests.chapter.late_game.quest83.description25}"
 				""
-				"When equipped with &6Wither Bones&r:"
-				"&6* Wither Realm Data\\n* Nether Star Block"
+				"{ftbquests.chapter.late_game.quest83.description26}"
+				"{ftbquests.chapter.late_game.quest83.description27}"
 			]
 			hide_until_deps_visible: true
 			id: "19C2D208A2FC9968"
@@ -2769,7 +2769,7 @@
 				item: "kubejs:microminer_t4half"
 				type: "item"
 			}]
-			title: "Tier Four and a Half Microminer"
+			title: "{ftbquests.chapter.late_game.quest83.title}"
 			x: 6.0d
 			y: 4.0d
 		}
@@ -2780,10 +2780,10 @@
 				"22E50A6923EBF5CB"
 			]
 			description: [
-				"The Eighth and a Half Micro Miner."
-				"An alternative source for &6Duranium&r (via &6Dulysite Ore&r, mission with &aGemstone Sensors&r), and an alternative source for &6Darmstadtium&r (via &6Darmstadtite Ore&r, mission with &aIridium Neutron Reflectors&r)."
+				"{ftbquests.chapter.late_game.quest84.description1}"
+				"{ftbquests.chapter.late_game.quest84.description2}"
 				""
-				"Minimizes waiting for the &3Fusion Reactor&r."
+				"{ftbquests.chapter.late_game.quest84.description3}"
 			]
 			hide_until_deps_visible: true
 			id: "0C9E7E4644084C94"
@@ -2807,9 +2807,9 @@
 				"0562D9F4C441EAF9"
 			]
 			description: [
-				"&9The upgraded form of the Soul Binder.&r"
+				"{ftbquests.chapter.late_game.quest85.description1}"
 				""
-				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!"
+				"{ftbquests.chapter.late_game.quest85.description2}"
 			]
 			icon: "gtceu:quintessence_infuser"
 			id: "0608EE0A3BDE58D5"
@@ -2856,10 +2856,10 @@
 					type: "item"
 				}
 			]
-			title: "&9Quintessence Infuser"
+			title: "{ftbquests.chapter.late_game.quest85.title}"
 			x: 27.75d
 			y: 19.875d
 		}
 	]
-	title: "Late Game"
+	title: "{ftbquests.chapter.late_game.title}"
 }

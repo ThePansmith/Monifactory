@@ -421,7 +421,7 @@
 				item: "kubejs:solidified_hydrogen"
 				type: "item"
 			}]
-			title: "Element 001: Hydrogen"
+			title: "{ftbquests.chapter.omnium.quest26.title}"
 			x: -13.0d
 			y: 4.25d
 		}
@@ -438,7 +438,7 @@
 				item: "kubejs:solidified_helium"
 				type: "item"
 			}]
-			title: "Element 002: Helium"
+			title: "{ftbquests.chapter.omnium.quest27.title}"
 			x: 12.5d
 			y: 4.25d
 		}
@@ -455,7 +455,7 @@
 				item: "gtceu:lithium_dust"
 				type: "item"
 			}]
-			title: "Element 003: Lithium"
+			title: "{ftbquests.chapter.omnium.quest28.title}"
 			x: -13.0d
 			y: 5.75d
 		}
@@ -472,7 +472,7 @@
 				item: "gtceu:beryllium_ingot"
 				type: "item"
 			}]
-			title: "Element 004: Beryllium"
+			title: "{ftbquests.chapter.omnium.quest29.title}"
 			x: -11.5d
 			y: 5.75d
 		}
@@ -489,7 +489,7 @@
 				item: "gtceu:boron_dust"
 				type: "item"
 			}]
-			title: "Element 005: Boron"
+			title: "{ftbquests.chapter.omnium.quest30.title}"
 			x: 5.0d
 			y: 5.75d
 		}
@@ -506,7 +506,7 @@
 				item: "gtceu:carbon_dust"
 				type: "item"
 			}]
-			title: "Element 006: Carbon"
+			title: "{ftbquests.chapter.omnium.quest31.title}"
 			x: 6.5d
 			y: 5.75d
 		}
@@ -523,7 +523,7 @@
 				item: "kubejs:solidified_nitrogen"
 				type: "item"
 			}]
-			title: "Element 007: Nitrogen"
+			title: "{ftbquests.chapter.omnium.quest32.title}"
 			x: 8.0d
 			y: 5.75d
 		}
@@ -540,7 +540,7 @@
 				item: "kubejs:solidified_oxygen"
 				type: "item"
 			}]
-			title: "Element 008: Oxygen"
+			title: "{ftbquests.chapter.omnium.quest33.title}"
 			x: 9.5d
 			y: 5.75d
 		}
@@ -557,7 +557,7 @@
 				item: "kubejs:solidified_fluorine"
 				type: "item"
 			}]
-			title: "Element 009: Fluorine"
+			title: "{ftbquests.chapter.omnium.quest34.title}"
 			x: 11.0d
 			y: 5.75d
 		}
@@ -574,7 +574,7 @@
 				item: "kubejs:solidified_neon"
 				type: "item"
 			}]
-			title: "Element 010: Neon"
+			title: "{ftbquests.chapter.omnium.quest35.title}"
 			x: 12.5d
 			y: 5.75d
 		}
@@ -591,7 +591,7 @@
 				item: "gtceu:sodium_dust"
 				type: "item"
 			}]
-			title: "Element 011: Sodium"
+			title: "{ftbquests.chapter.omnium.quest36.title}"
 			x: -13.0d
 			y: 7.25d
 		}
@@ -608,7 +608,7 @@
 				item: "gtceu:magnesium_dust"
 				type: "item"
 			}]
-			title: "Element 012: Magnesium"
+			title: "{ftbquests.chapter.omnium.quest37.title}"
 			x: -11.5d
 			y: 7.25d
 		}
@@ -625,7 +625,7 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			title: "Element 013: Aluminium"
+			title: "{ftbquests.chapter.omnium.quest38.title}"
 			x: 5.0d
 			y: 7.25d
 		}
@@ -642,7 +642,7 @@
 				item: "gtceu:silicon_dust"
 				type: "item"
 			}]
-			title: "Element 014: Silicon"
+			title: "{ftbquests.chapter.omnium.quest39.title}"
 			x: 6.5d
 			y: 7.25d
 		}
@@ -659,7 +659,7 @@
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
-			title: "Element 015: Phosphorus"
+			title: "{ftbquests.chapter.omnium.quest40.title}"
 			x: 8.0d
 			y: 7.25d
 		}
@@ -676,7 +676,7 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			title: "Element 016: Sulfur"
+			title: "{ftbquests.chapter.omnium.quest41.title}"
 			x: 9.5d
 			y: 7.25d
 		}
@@ -693,7 +693,7 @@
 				item: "kubejs:solidified_chlorine"
 				type: "item"
 			}]
-			title: "Element 017: Chlorine"
+			title: "{ftbquests.chapter.omnium.quest42.title}"
 			x: 11.0d
 			y: 7.25d
 		}
@@ -710,7 +710,7 @@
 				item: "kubejs:solidified_argon"
 				type: "item"
 			}]
-			title: "Element 018: Argon"
+			title: "{ftbquests.chapter.omnium.quest43.title}"
 			x: 12.5d
 			y: 7.25d
 		}
@@ -727,7 +727,7 @@
 				item: "gtceu:potassium_dust"
 				type: "item"
 			}]
-			title: "Element 019: Potassium"
+			title: "{ftbquests.chapter.omnium.quest44.title}"
 			x: -13.0d
 			y: 8.75d
 		}
@@ -744,7 +744,7 @@
 				item: "gtceu:calcium_dust"
 				type: "item"
 			}]
-			title: "Element 020: Calcium"
+			title: "{ftbquests.chapter.omnium.quest45.title}"
 			x: -11.5d
 			y: 8.75d
 		}
@@ -761,7 +761,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			title: "Element 022: Titanium"
+			title: "{ftbquests.chapter.omnium.quest46.title}"
 			x: -8.5d
 			y: 8.75d
 		}
@@ -778,7 +778,7 @@
 				item: "gtceu:vanadium_ingot"
 				type: "item"
 			}]
-			title: "Element 023: Vanadium"
+			title: "{ftbquests.chapter.omnium.quest47.title}"
 			x: -7.0d
 			y: 8.75d
 		}
@@ -793,7 +793,7 @@
 				count: 64L
 				id: "64E4171E8B8F7956"
 				item: "gtceu:chromium_ingot"
-				title: "Element 024: Chromium"
+				title: "{ftbquests.chapter.omnium.quest48.task.title1}"
 				type: "item"
 			}]
 			x: -5.5d
@@ -812,7 +812,7 @@
 				item: "gtceu:manganese_ingot"
 				type: "item"
 			}]
-			title: "Element 025: Manganese"
+			title: "{ftbquests.chapter.omnium.quest49.title}"
 			x: -4.0d
 			y: 8.75d
 		}
@@ -829,7 +829,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "Element 026: Iron"
+			title: "{ftbquests.chapter.omnium.quest50.title}"
 			x: -2.5d
 			y: 8.75d
 		}
@@ -846,7 +846,7 @@
 				item: "gtceu:cobalt_ingot"
 				type: "item"
 			}]
-			title: "Element 027: Cobalt"
+			title: "{ftbquests.chapter.omnium.quest51.title}"
 			x: -1.0d
 			y: 8.75d
 		}
@@ -863,7 +863,7 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			title: "Element 028: Nickel"
+			title: "{ftbquests.chapter.omnium.quest52.title}"
 			x: 0.5d
 			y: 8.75d
 		}
@@ -880,7 +880,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "Element 029: Copper"
+			title: "{ftbquests.chapter.omnium.quest53.title}"
 			x: 2.0d
 			y: 8.75d
 		}
@@ -897,7 +897,7 @@
 				item: "gtceu:zinc_ingot"
 				type: "item"
 			}]
-			title: "Element 030: Zinc"
+			title: "{ftbquests.chapter.omnium.quest54.title}"
 			x: 3.5d
 			y: 8.75d
 		}
@@ -914,7 +914,7 @@
 				item: "gtceu:gallium_ingot"
 				type: "item"
 			}]
-			title: "Element 031: Gallium"
+			title: "{ftbquests.chapter.omnium.quest55.title}"
 			x: 5.0d
 			y: 8.75d
 		}
@@ -931,7 +931,7 @@
 				item: "gtceu:arsenic_dust"
 				type: "item"
 			}]
-			title: "Element 033: Arsenic"
+			title: "{ftbquests.chapter.omnium.quest56.title}"
 			x: 8.0d
 			y: 8.75d
 		}
@@ -948,7 +948,7 @@
 				item: "kubejs:solidified_bromine"
 				type: "item"
 			}]
-			title: "Element 035: Bromine"
+			title: "{ftbquests.chapter.omnium.quest57.title}"
 			x: 11.0d
 			y: 8.75d
 		}
@@ -965,7 +965,7 @@
 				item: "kubejs:solidified_krypton"
 				type: "item"
 			}]
-			title: "Element 036: Krypton"
+			title: "{ftbquests.chapter.omnium.quest58.title}"
 			x: 12.5d
 			y: 8.75d
 		}
@@ -982,7 +982,7 @@
 				item: "gtceu:yttrium_ingot"
 				type: "item"
 			}]
-			title: "Element 039: Yttrium"
+			title: "{ftbquests.chapter.omnium.quest59.title}"
 			x: -10.0d
 			y: 10.25d
 		}
@@ -999,7 +999,7 @@
 				item: "gtceu:palladium_ingot"
 				type: "item"
 			}]
-			title: "Element 046: Palladium"
+			title: "{ftbquests.chapter.omnium.quest60.title}"
 			x: 0.5d
 			y: 10.25d
 		}
@@ -1016,7 +1016,7 @@
 				item: "gtceu:silver_ingot"
 				type: "item"
 			}]
-			title: "Element 047: Silver"
+			title: "{ftbquests.chapter.omnium.quest61.title}"
 			x: 2.0d
 			y: 10.25d
 		}
@@ -1033,7 +1033,7 @@
 				item: "gtceu:indium_ingot"
 				type: "item"
 			}]
-			title: "Element 049: Indium"
+			title: "{ftbquests.chapter.omnium.quest62.title}"
 			x: 5.0d
 			y: 10.25d
 		}
@@ -1050,7 +1050,7 @@
 				item: "gtceu:tin_ingot"
 				type: "item"
 			}]
-			title: "Element 050: Tin"
+			title: "{ftbquests.chapter.omnium.quest63.title}"
 			x: 6.5d
 			y: 10.25d
 		}
@@ -1067,7 +1067,7 @@
 				item: "gtceu:antimony_ingot"
 				type: "item"
 			}]
-			title: "Element 051: Antimony"
+			title: "{ftbquests.chapter.omnium.quest64.title}"
 			x: 8.0d
 			y: 10.25d
 		}
@@ -1084,7 +1084,7 @@
 				item: "kubejs:solidified_xenon"
 				type: "item"
 			}]
-			title: "Element 054: Xenon"
+			title: "{ftbquests.chapter.omnium.quest65.title}"
 			x: 12.5d
 			y: 10.25d
 		}
@@ -1099,7 +1099,7 @@
 				count: 64L
 				id: "2D438909DE308C35"
 				item: "gtceu:lanthanum_dust"
-				title: "Element 057: Lanthanum"
+				title: "{ftbquests.chapter.omnium.quest66.task.title1}"
 				type: "item"
 			}]
 			x: -10.0d
@@ -1118,7 +1118,7 @@
 				item: "gtceu:tungsten_ingot"
 				type: "item"
 			}]
-			title: "Element 074: Tungsten"
+			title: "{ftbquests.chapter.omnium.quest67.title}"
 			x: -5.5d
 			y: 11.75d
 		}
@@ -1135,7 +1135,7 @@
 				item: "gtceu:osmium_ingot"
 				type: "item"
 			}]
-			title: "Element 076: Osmium"
+			title: "{ftbquests.chapter.omnium.quest68.title}"
 			x: -2.5d
 			y: 11.75d
 		}
@@ -1152,7 +1152,7 @@
 				item: "gtceu:iridium_ingot"
 				type: "item"
 			}]
-			title: "Element 077: Iridium"
+			title: "{ftbquests.chapter.omnium.quest69.title}"
 			x: -1.0d
 			y: 11.75d
 		}
@@ -1169,7 +1169,7 @@
 				item: "gtceu:platinum_ingot"
 				type: "item"
 			}]
-			title: "Element 078: Platinum"
+			title: "{ftbquests.chapter.omnium.quest70.title}"
 			x: 0.5d
 			y: 11.75d
 		}
@@ -1186,7 +1186,7 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			title: "Element 079: Gold"
+			title: "{ftbquests.chapter.omnium.quest71.title}"
 			x: 2.0d
 			y: 11.75d
 		}
@@ -1203,7 +1203,7 @@
 				item: "kubejs:solidified_mercury"
 				type: "item"
 			}]
-			title: "Element 080: Mercury"
+			title: "{ftbquests.chapter.omnium.quest72.title}"
 			x: 3.5d
 			y: 11.75d
 		}
@@ -1220,7 +1220,7 @@
 				item: "kubejs:solidified_radon"
 				type: "item"
 			}]
-			title: "Element 086: Radon"
+			title: "{ftbquests.chapter.omnium.quest73.title}"
 			x: 12.5d
 			y: 11.75d
 		}
@@ -1237,7 +1237,7 @@
 				item: "gtceu:thorium_ingot"
 				type: "item"
 			}]
-			title: "Element 090: Thorium"
+			title: "{ftbquests.chapter.omnium.quest74.title}"
 			x: -8.5d
 			y: 17.0d
 		}
@@ -1254,7 +1254,7 @@
 				item: "kubejs:stabilized_uranium"
 				type: "item"
 			}]
-			title: "Element 092: Uranium"
+			title: "{ftbquests.chapter.omnium.quest75.title}"
 			x: -5.5d
 			y: 17.0d
 		}
@@ -1271,7 +1271,7 @@
 				item: "kubejs:stabilized_neptunium"
 				type: "item"
 			}]
-			title: "Element 093: Neptunium"
+			title: "{ftbquests.chapter.omnium.quest76.title}"
 			x: -4.0d
 			y: 17.0d
 		}
@@ -1288,7 +1288,7 @@
 				item: "kubejs:stabilized_plutonium"
 				type: "item"
 			}]
-			title: "Element 094: Plutonium"
+			title: "{ftbquests.chapter.omnium.quest77.title}"
 			x: -2.5d
 			y: 17.0d
 		}
@@ -1305,7 +1305,7 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
-			title: "Element 095: Americium"
+			title: "{ftbquests.chapter.omnium.quest78.title}"
 			x: -1.0d
 			y: 17.0d
 		}
@@ -1322,7 +1322,7 @@
 				item: "kubejs:stabilized_curium"
 				type: "item"
 			}]
-			title: "Element 096: Curium"
+			title: "{ftbquests.chapter.omnium.quest79.title}"
 			x: 0.5d
 			y: 17.0d
 		}
@@ -1339,7 +1339,7 @@
 				item: "kubejs:stabilized_berkelium"
 				type: "item"
 			}]
-			title: "Element 097: Berkelium"
+			title: "{ftbquests.chapter.omnium.quest80.title}"
 			x: 2.0d
 			y: 17.0d
 		}
@@ -1356,7 +1356,7 @@
 				item: "kubejs:stabilized_californium"
 				type: "item"
 			}]
-			title: "Element 098: Californium"
+			title: "{ftbquests.chapter.omnium.quest81.title}"
 			x: 3.5d
 			y: 17.0d
 		}
@@ -1373,7 +1373,7 @@
 				item: "kubejs:stabilized_einsteinium"
 				type: "item"
 			}]
-			title: "Element 099: Einsteinium"
+			title: "{ftbquests.chapter.omnium.quest82.title}"
 			x: 5.0d
 			y: 17.0d
 		}
@@ -1390,7 +1390,7 @@
 				item: "gtceu:niobium_ingot"
 				type: "item"
 			}]
-			title: "Element 041: Niobium"
+			title: "{ftbquests.chapter.omnium.quest83.title}"
 			x: -7.0d
 			y: 10.25d
 		}
@@ -1407,7 +1407,7 @@
 				item: "gtceu:cadmium_dust"
 				type: "item"
 			}]
-			title: "Element 048: Cadmium"
+			title: "{ftbquests.chapter.omnium.quest84.title}"
 			x: 3.5d
 			y: 10.25d
 		}
@@ -1424,7 +1424,7 @@
 				item: "gtceu:neodymium_ingot"
 				type: "item"
 			}]
-			title: "Element 060: Neodymium"
+			title: "{ftbquests.chapter.omnium.quest85.title}"
 			x: -5.5d
 			y: 15.5d
 		}
@@ -1441,7 +1441,7 @@
 				item: "gtceu:tantalum_ingot"
 				type: "item"
 			}]
-			title: "Element 073: Tantalum"
+			title: "{ftbquests.chapter.omnium.quest86.title}"
 			x: -7.0d
 			y: 11.75d
 		}
@@ -1458,7 +1458,7 @@
 				item: "gtceu:duranium_ingot"
 				type: "item"
 			}]
-			title: "Element ???: Duranium"
+			title: "{ftbquests.chapter.omnium.quest87.title}"
 			x: -2.5d
 			y: 19.25d
 		}
@@ -1475,7 +1475,7 @@
 				item: "gtceu:molybdenum_ingot"
 				type: "item"
 			}]
-			title: "Element 042: Molybdenum"
+			title: "{ftbquests.chapter.omnium.quest88.title}"
 			x: -5.5d
 			y: 10.25d
 		}
@@ -1492,7 +1492,7 @@
 				item: "gtceu:caesium_dust"
 				type: "item"
 			}]
-			title: "Element 055: Caesium"
+			title: "{ftbquests.chapter.omnium.quest89.title}"
 			x: -13.0d
 			y: 11.75d
 		}
@@ -1509,7 +1509,7 @@
 				item: "gtceu:samarium_ingot"
 				type: "item"
 			}]
-			title: "Element 062: Samarium"
+			title: "{ftbquests.chapter.omnium.quest90.title}"
 			x: -2.5d
 			y: 15.5d
 		}
@@ -1526,7 +1526,7 @@
 				item: "gtceu:lead_ingot"
 				type: "item"
 			}]
-			title: "Element 082: Lead"
+			title: "{ftbquests.chapter.omnium.quest91.title}"
 			x: 6.5d
 			y: 11.75d
 		}
@@ -1543,7 +1543,7 @@
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
-			title: "Element ???: Trinium"
+			title: "{ftbquests.chapter.omnium.quest92.title}"
 			x: 0.5d
 			y: 19.25d
 		}
@@ -1560,7 +1560,7 @@
 				item: "gtceu:ruthenium_ingot"
 				type: "item"
 			}]
-			title: "Element 044: Ruthenium"
+			title: "{ftbquests.chapter.omnium.quest93.title}"
 			x: -2.5d
 			y: 10.25d
 		}
@@ -1577,7 +1577,7 @@
 				item: "gtceu:barium_dust"
 				type: "item"
 			}]
-			title: "Element 056: Barium"
+			title: "{ftbquests.chapter.omnium.quest94.title}"
 			x: -11.5d
 			y: 11.75d
 		}
@@ -1594,7 +1594,7 @@
 				item: "gtceu:europium_ingot"
 				type: "item"
 			}]
-			title: "Element 063: Europium"
+			title: "{ftbquests.chapter.omnium.quest95.title}"
 			x: -1.0d
 			y: 15.5d
 		}
@@ -1611,7 +1611,7 @@
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
-			title: "Element 110: Darmstadtium"
+			title: "{ftbquests.chapter.omnium.quest96.title}"
 			x: 0.5d
 			y: 13.25d
 		}
@@ -1628,7 +1628,7 @@
 				item: "gtceu:rhodium_ingot"
 				type: "item"
 			}]
-			title: "Element 045: Rhodium"
+			title: "{ftbquests.chapter.omnium.quest97.title}"
 			x: -1.0d
 			y: 10.25d
 		}
@@ -1645,7 +1645,7 @@
 				item: "gtceu:cerium_dust"
 				type: "item"
 			}]
-			title: "Element 058: Cerium"
+			title: "{ftbquests.chapter.omnium.quest98.title}"
 			x: -8.5d
 			y: 15.5d
 		}
@@ -1662,7 +1662,7 @@
 				item: "gtceu:lutetium_ingot"
 				type: "item"
 			}]
-			title: "Element 071: Lutetium"
+			title: "{ftbquests.chapter.omnium.quest99.title}"
 			x: 11.0d
 			y: 15.5d
 		}
@@ -1679,7 +1679,7 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			title: "Element ???: Tritanium"
+			title: "{ftbquests.chapter.omnium.quest100.title}"
 			x: -1.0d
 			y: 19.25d
 		}
@@ -1696,12 +1696,12 @@
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			title: "Element ???: Naquadah"
+			title: "{ftbquests.chapter.omnium.quest101.title}"
 			x: 2.0d
 			y: 19.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest102.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "63CFADCCE0688239"
@@ -1710,16 +1710,16 @@
 				icon: "enderio:painted_fence"
 				id: "4436AE0DF3B78649"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest102.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest102.title}"
 			x: -7.0d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest103.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7D50B0E825F8D70B"
@@ -1728,16 +1728,16 @@
 				icon: "enderio:painted_fence"
 				id: "415231D9E79ADF76"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest103.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest103.title}"
 			x: -8.5d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest104.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6564ADDBABF7DB49"
@@ -1746,16 +1746,16 @@
 				icon: "enderio:painted_fence"
 				id: "5DB657A9EF012D12"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest104.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest104.title}"
 			x: -4.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest105.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "75FDDFCD19B1614C"
@@ -1764,16 +1764,16 @@
 				icon: "enderio:painted_fence"
 				id: "05487BA8EF0D19C6"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest105.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest105.title}"
 			x: -7.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest106.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1DD6F43254B077E1"
@@ -1782,16 +1782,16 @@
 				icon: "enderio:painted_fence"
 				id: "1BE1DA02DDB3277C"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest106.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest106.title}"
 			x: 0.5d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest107.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "3CFF422D1BAAEB65"
@@ -1800,16 +1800,16 @@
 				icon: "enderio:painted_fence"
 				id: "4212B218BA04DBA1"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest107.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest107.title}"
 			x: 2.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest108.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7BEAC81200BD7563"
@@ -1818,16 +1818,16 @@
 				icon: "enderio:painted_fence"
 				id: "4035A62968461C40"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest108.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest108.title}"
 			x: 3.5d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest109.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "441BD16D32E88974"
@@ -1836,16 +1836,16 @@
 				icon: "enderio:painted_fence"
 				id: "73AB7C76A6C3B1E7"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest109.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest109.title}"
 			x: -4.0d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest110.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "275EB687F851025B"
@@ -1854,16 +1854,16 @@
 				icon: "enderio:painted_fence"
 				id: "4D78E0F0784E30B1"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest110.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest110.title}"
 			x: 11.0d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest111.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7978CD633112BE89"
@@ -1872,16 +1872,16 @@
 				icon: "enderio:painted_fence"
 				id: "20B30658AB28C786"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest111.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest111.title}"
 			x: 11.0d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest112.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "721D1C6CA8C2AF22"
@@ -1890,16 +1890,16 @@
 				icon: "enderio:painted_fence"
 				id: "1F7AC5B831F7860B"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest112.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest112.title}"
 			x: 9.5d
 			y: 8.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest113.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "39999DC07696B3FC"
@@ -1908,16 +1908,16 @@
 				icon: "enderio:painted_fence"
 				id: "107456F9C5FC6932"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest113.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest113.title}"
 			x: -4.0d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest114.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "47E4558362202D5D"
@@ -1926,16 +1926,16 @@
 				icon: "enderio:painted_fence"
 				id: "1624AC337BD63AAA"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest114.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest114.title}"
 			x: -8.5d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest115.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "21000D112770C852"
@@ -1944,16 +1944,16 @@
 				icon: "enderio:painted_fence"
 				id: "7DC386F41AA01A9B"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest115.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest115.title}"
 			x: -13.0d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest116.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "28558A445F62D737"
@@ -1962,16 +1962,16 @@
 				icon: "enderio:painted_fence"
 				id: "376026CA732087F5"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest116.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest116.title}"
 			x: -8.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest117.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1D5D25F52BE6709E"
@@ -1980,16 +1980,16 @@
 				icon: "enderio:painted_fence"
 				id: "7546DF93889C5CA8"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest117.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest117.title}"
 			x: -10.0d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest118.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "65F05B1B1A57D341"
@@ -1998,16 +1998,16 @@
 				icon: "enderio:painted_fence"
 				id: "2E59B36D918C425C"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest118.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest118.title}"
 			x: -10.0d
 			y: 8.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest119.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "62AAA344BBAA638C"
@@ -2016,16 +2016,16 @@
 				icon: "enderio:painted_fence"
 				id: "12FABD7054200201"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest119.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest119.title}"
 			x: -11.5d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest120.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "76B613A95DFDD41D"
@@ -2034,16 +2034,16 @@
 				icon: "enderio:painted_fence"
 				id: "4CF6E6523CA5A137"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest120.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest120.title}"
 			x: -13.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest121.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "44F585590EB4C28C"
@@ -2052,16 +2052,16 @@
 				icon: "enderio:painted_fence"
 				id: "572DAB92CDAB9261"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest121.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest121.title}"
 			x: 9.5d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest122.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "26E51AB9E31378EE"
@@ -2070,16 +2070,16 @@
 				icon: "enderio:painted_fence"
 				id: "794A760D4D9F5CD0"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest122.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest122.title}"
 			x: -7.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest123.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1E752C53A107FFF1"
@@ -2088,16 +2088,16 @@
 				icon: "enderio:painted_fence"
 				id: "288EBED516DBF375"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest123.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest123.title}"
 			x: -5.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest124.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "494F5DDE304AB43E"
@@ -2106,16 +2106,16 @@
 				icon: "enderio:painted_fence"
 				id: "4B0AE90670F19AB1"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest124.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest124.title}"
 			x: 9.5d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest125.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "32326CF76577DCA2"
@@ -2124,16 +2124,16 @@
 				icon: "enderio:painted_fence"
 				id: "5C462084D069B744"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest125.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest125.title}"
 			x: 5.0d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest126.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "07C3BF79504A9213"
@@ -2142,16 +2142,16 @@
 				icon: "enderio:painted_fence"
 				id: "6272A48A09750CDC"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest126.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest126.title}"
 			x: -4.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest127.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "28D99F6FE6773536"
@@ -2160,16 +2160,16 @@
 				icon: "enderio:painted_fence"
 				id: "45B2AD5AD02BE4FD"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest127.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest127.title}"
 			x: 8.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest128.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1DAA388973010872"
@@ -2178,16 +2178,16 @@
 				icon: "enderio:painted_fence"
 				id: "781FDA6CB07765FB"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest128.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest128.title}"
 			x: 9.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest129.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6B0F050E08449326"
@@ -2196,16 +2196,16 @@
 				icon: "enderio:painted_fence"
 				id: "676F242143EEB857"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest129.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest129.title}"
 			x: 12.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest130.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "46D5DFC5AFEC58AD"
@@ -2214,16 +2214,16 @@
 				icon: "enderio:painted_fence"
 				id: "7CB68870DFB04D70"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest130.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest130.title}"
 			x: -2.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest131.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "3ACAFC347DACFC8D"
@@ -2232,16 +2232,16 @@
 				icon: "enderio:painted_fence"
 				id: "7A5056203D757251"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest131.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest131.title}"
 			x: -1.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest132.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "041AFDD081C8054C"
@@ -2250,16 +2250,16 @@
 				icon: "enderio:painted_fence"
 				id: "763AA80756A03962"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest132.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest132.title}"
 			x: 5.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest133.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "62D5330EF33F11E7"
@@ -2268,16 +2268,16 @@
 				icon: "enderio:painted_fence"
 				id: "5EBA4602A8B727B1"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest133.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest133.title}"
 			x: 2.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest134.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1B3F950BEE44BAEC"
@@ -2286,16 +2286,16 @@
 				icon: "enderio:painted_fence"
 				id: "46A695F2ACF8AA05"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest134.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest134.title}"
 			x: 3.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest135.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "20573874CE130F4B"
@@ -2304,16 +2304,16 @@
 				icon: "enderio:painted_fence"
 				id: "34BCA11F206EBB29"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest135.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest135.title}"
 			x: 6.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest136.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "13E958AA3A6CCE85"
@@ -2322,16 +2322,16 @@
 				icon: "enderio:painted_fence"
 				id: "7158443EAB25140A"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest136.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest136.title}"
 			x: 11.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest137.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7E34C410DF281917"
@@ -2340,16 +2340,16 @@
 				icon: "enderio:painted_fence"
 				id: "7F61249273A9E0CB"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest137.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest137.title}"
 			x: 5.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest138.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "19813D769E0693EA"
@@ -2358,16 +2358,16 @@
 				icon: "enderio:painted_fence"
 				id: "4348AEED28459C0F"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest138.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest138.title}"
 			x: 6.5d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest139.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "247CCB1BC2E7C27C"
@@ -2376,16 +2376,16 @@
 				icon: "enderio:painted_fence"
 				id: "58F4FFB270CEA21B"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest139.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest139.title}"
 			x: 6.5d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest140.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6F28EB00ECF74C9D"
@@ -2394,16 +2394,16 @@
 				icon: "enderio:painted_fence"
 				id: "7C82CA9F8892828F"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest140.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest140.title}"
 			x: 8.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest141.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "69DEA8612D70B2DE"
@@ -2412,16 +2412,16 @@
 				icon: "enderio:painted_fence"
 				id: "3117E58BBBA2F84C"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest141.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest141.title}"
 			x: 8.0d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest142.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6AB1F7A04FF5D1B5"
@@ -2430,16 +2430,16 @@
 				icon: "enderio:painted_fence"
 				id: "5CAAB07517C865BD"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest142.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest142.title}"
 			x: 9.5d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest143.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "31125F2DDD953CDD"
@@ -2448,16 +2448,16 @@
 				icon: "enderio:painted_fence"
 				id: "67B8DFBE1AE7297F"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest143.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest143.title}"
 			x: 9.5d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{ftbquests.chapter.omnium.quest144.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1465C7BE81304747"
@@ -2466,16 +2466,16 @@
 				icon: "enderio:painted_fence"
 				id: "3A1227F656C3CA65"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest144.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest144.title}"
 			x: 11.0d
 			y: 17.0d
 		}
 		{
-			description: ["This element exists but is not required for the Mote of Omnium."]
+			description: ["{ftbquests.chapter.omnium.quest145.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "4CF5155563E346BE"
@@ -2484,16 +2484,16 @@
 				icon: "enderio:painted_fence"
 				id: "51A37F29775DF2AA"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest145.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest145.title}"
 			x: -11.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element exists but is not needed for the Mote of Omnium."]
+			description: ["{ftbquests.chapter.omnium.quest146.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "5D1DAC23C6B89AC3"
@@ -2502,16 +2502,16 @@
 				icon: "enderio:painted_fence"
 				id: "555011C2A9D2CC5D"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest146.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest146.title}"
 			x: 8.0d
 			y: 11.75d
 		}
 		{
-			description: ["This element exists but is not needed for the Mote of Omnium."]
+			description: ["{ftbquests.chapter.omnium.quest147.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "2D788BE1CA9A2D69"
@@ -2520,11 +2520,11 @@
 				icon: "enderio:painted_fence"
 				id: "1565FA8942925060"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{ftbquests.chapter.omnium.quest147.task.title1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{ftbquests.chapter.omnium.quest147.title}"
 			x: 6.5d
 			y: 8.75d
 		}
@@ -2556,10 +2556,10 @@
 				"18EF39D0C5B55C34"
 				"0B5B7A15B7FD684C"
 			]
-			description: ["As the name suggests, this catalyst is formed from exotic non-elemental materials and alloys."]
+			description: ["{ftbquests.chapter.omnium.quest148.description1}"]
 			id: "67591B6025C03130"
 			size: 2.0d
-			subtitle: "A small appetizer, before the &9Omnium&r main course."
+			subtitle: "{ftbquests.chapter.omnium.quest148.subtitle}"
 			tasks: [{
 				id: "4E828B100CB2362F"
 				item: "kubejs:exotic_materials_catalyst"
@@ -2648,11 +2648,11 @@
 				"67591B6025C03130"
 				"5928FCBF99CF031B"
 			]
-			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
+			description: ["{ftbquests.chapter.omnium.quest149.description1}"]
 			id: "739F7BF2A90B278A"
 			shape: "hexagon"
 			size: 3.0d
-			subtitle: "Man, that's a LOT of quests linked to this one."
+			subtitle: "{ftbquests.chapter.omnium.quest149.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "6E908CE0BA9547C5"
@@ -2663,5 +2663,5 @@
 			y: 0.0d
 		}
 	]
-	title: "Elements and Alloys"
+	title: "{ftbquests.chapter.omnium.title}"
 }

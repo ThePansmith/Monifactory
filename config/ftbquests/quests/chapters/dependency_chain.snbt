@@ -34,13 +34,13 @@
 					type: "command"
 				}
 			]
-			subtitle: "unlocks nm only quests"
+			subtitle: "{ftbquests.chapter.dependency_chain.quest1.subtitle}"
 			tasks: [{
 				id: "114368F6DCC624B8"
 				stage: "mode_normal"
 				type: "gamestage"
 			}]
-			title: "&eNormal Mode"
+			title: "{ftbquests.chapter.dependency_chain.quest1.title}"
 			x: -1.25d
 			y: -0.25d
 		}
@@ -67,27 +67,27 @@
 					type: "command"
 				}
 			]
-			subtitle: "unlocks hm only quests"
+			subtitle: "{ftbquests.chapter.dependency_chain.quest2.subtitle}"
 			tasks: [{
 				id: "61ED97728A33334E"
 				stage: "mode_hard"
 				type: "gamestage"
 			}]
-			title: "&eHard Mode"
+			title: "{ftbquests.chapter.dependency_chain.quest2.title}"
 			x: 0.0d
 			y: -0.25d
 		}
 		{
-			description: ["This little setup is used to unlock quests specific to certain modes, such as HNN chain."]
+			description: ["{ftbquests.chapter.dependency_chain.quest3.description1}"]
 			icon: "minecraft:oak_sign"
 			id: "7DC209D400BCD708"
-			subtitle: "uh oh"
+			subtitle: "{ftbquests.chapter.dependency_chain.quest3.subtitle}"
 			tasks: [{
 				id: "424451AEEE23C1AF"
-				title: "nevercomplete"
+				title: "{ftbquests.chapter.dependency_chain.quest3.task.title1}"
 				type: "custom"
 			}]
-			title: "&l&cREAD ME!!"
+			title: "{ftbquests.chapter.dependency_chain.quest3.title}"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -106,7 +106,7 @@
 				id: "47C0B69BD9EE8C6E"
 				type: "checkmark"
 			}]
-			title: "debug: undo hm"
+			title: "{ftbquests.chapter.dependency_chain.quest4.title}"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -125,7 +125,7 @@
 				id: "123F9074DAF40100"
 				type: "checkmark"
 			}]
-			title: "debug: undo nm"
+			title: "{ftbquests.chapter.dependency_chain.quest5.title}"
 			x: -1.25d
 			y: -1.5d
 		}
@@ -144,7 +144,7 @@
 				id: "4CF502F8C9521549"
 				type: "checkmark"
 			}]
-			title: "debug: undo em"
+			title: "{ftbquests.chapter.dependency_chain.quest6.title}"
 			x: 1.25d
 			y: -1.5d
 		}
@@ -173,13 +173,13 @@
 					type: "command"
 				}
 			]
-			subtitle: "unlocks em only quests"
+			subtitle: "{ftbquests.chapter.dependency_chain.quest7.subtitle}"
 			tasks: [{
 				id: "63D27F02DE8A233E"
 				stage: "mode_expert"
 				type: "gamestage"
 			}]
-			title: "&eExpert Mode"
+			title: "{ftbquests.chapter.dependency_chain.quest7.title}"
 			x: 1.25d
 			y: -0.25d
 		}
@@ -193,7 +193,7 @@
 			hide_dependency_lines: false
 			id: "1F7F73BF81570F3C"
 			invisible: true
-			subtitle: "unlocks hm and em quests"
+			subtitle: "{ftbquests.chapter.dependency_chain.quest8.subtitle}"
 			tasks: [
 				{
 					id: "687DA6CB154FCAA2"
@@ -208,7 +208,7 @@
 					type: "gamestage"
 				}
 			]
-			title: "&eNot NM"
+			title: "{ftbquests.chapter.dependency_chain.quest8.title}"
 			x: 0.625d
 			y: 1.0d
 		}
@@ -222,7 +222,7 @@
 			hide_dependency_lines: false
 			id: "68CB6AD16F1041E5"
 			invisible: true
-			subtitle: "unlocks nm and hm quests"
+			subtitle: "{ftbquests.chapter.dependency_chain.quest9.subtitle}"
 			tasks: [
 				{
 					id: "6E983E54F3EDE9D9"
@@ -237,10 +237,10 @@
 					type: "gamestage"
 				}
 			]
-			title: "&eNot EM"
+			title: "{ftbquests.chapter.dependency_chain.quest9.title}"
 			x: -0.675d
 			y: 1.0d
 		}
 	]
-	title: "dependencies"
+	title: "{ftbquests.chapter.dependency_chain.title}"
 }

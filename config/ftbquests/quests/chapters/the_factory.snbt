@@ -57,17 +57,17 @@
 		{
 			dependencies: ["2D31856F6EF1ED69"]
 			description: [
-				"The &3Wiremill&r is a major efficiency boost, giving you double the amount of &6wires&r per ingot. But first, you'll need to make some &6Motors&r."
+				"{ftbquests.chapter.the_factory.quest1.description1}"
 				""
-				"&bGregTech&r machines are built from a number of components, many of which are shared between the machines. Motors&r are used in a great number of things, including other components."
+				"{ftbquests.chapter.the_factory.quest1.description2}"
 				""
-				"The Wiremill requires a &6Programmed Circuit&r to run. Each machine comes with a free one - click on the circuit slot in the &9bottom left&r of the GUI. For making single wires, leave the circuit at &econfiguration 1&r. Refer to &eEMI&r for which circuit config a recipe calls for, and refer to the adjacent quest for more information."
+				"{ftbquests.chapter.the_factory.quest1.description3}"
 				"{@pagebreak}"
-				"After you make the Wiremill, &econsider making a few stacks&r of LV motors. This might sound extreme, but &ebatch crafting&r in this manner is an important habit to pick up. This way you won't have to craft more for a while, and you &owill &ruse all those motors eventually, so you're not wasting materials."
+				"{ftbquests.chapter.the_factory.quest1.description4}"
 				""
-				"As you get access to more machinery, you will no longer need to craft things manually. Instead, you will engineer factories to automate the production for you. It is useful to keep a stockpile of frequently used things like circuits and components crafted so you don't have to wait for them when you need them."
+				"{ftbquests.chapter.the_factory.quest1.description5}"
 				""
-				"&2If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer, &9or mute the sound entirely in the ESM menu, accessible from your inventory."
+				"{ftbquests.chapter.the_factory.quest1.description6}"
 			]
 			icon: "gtceu:lv_wiremill"
 			id: "62BBD1F6767A4D90"
@@ -79,7 +79,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "The factory begins"
+			subtitle: "{ftbquests.chapter.the_factory.quest1.subtitle}"
 			tasks: [
 				{
 					id: "298288137C88DDFF"
@@ -103,7 +103,7 @@
 							]
 						}
 					}
-					title: "LV, MV, or HV Wiremill"
+					title: "{ftbquests.chapter.the_factory.quest1.task.title1}"
 					type: "item"
 				}
 				{
@@ -113,16 +113,16 @@
 					type: "item"
 				}
 			]
-			title: "&2LV Wiremill"
+			title: "{ftbquests.chapter.the_factory.quest1.title}"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
 			description: [
-				"Although you could &emagnetize&r &6Iron Ingots&r by hand using &6Redstone&r, doing that consumes considerable amounts of dust and that's not an option for more advanced materials. This machine will let you magnetize &6Steel Rods&r, as well as even more advanced materials later."
+				"{ftbquests.chapter.the_factory.quest2.description1}"
 				""
-				"&2Polarizer recipes in GTCEu go up to UV."
+				"{ftbquests.chapter.the_factory.quest2.description2}"
 			]
 			icon: "gtceu:lv_polarizer"
 			id: "19233A97579E0BDD"
@@ -132,7 +132,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "Automatic magnetizers"
+			subtitle: "{ftbquests.chapter.the_factory.quest2.subtitle}"
 			tasks: [{
 				id: "2AAE22F760F73AD8"
 				item: {
@@ -155,16 +155,16 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Polarizer"
+				title: "{ftbquests.chapter.the_factory.quest2.task.title1}"
 				type: "item"
 			}]
-			title: "&2Polarizer"
+			title: "{ftbquests.chapter.the_factory.quest2.title}"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
-			description: ["[\"Also useful as a machine cover for continuously moving items. Read the \",{\"text\":\"Machine Covers\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1A427A8CB43C8B59\"}},\" quest for more info on the various covers.\"]"]
+			description: ["[\"\",{\"translate\":\"ftbquests.chapter.the_factory.quest3.rich_description1\"},{\"color\":\"yellow\",\"underlined\":1,\"translate\":\"ftbquests.chapter.the_factory.quest3.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1A427A8CB43C8B59\"}},{\"translate\":\"ftbquests.chapter.the_factory.quest3.rich_description3\"}]"]
 			id: "1FF652D16CE97C79"
 			rewards: [{
 				id: "718769C41EB34A2D"
@@ -172,13 +172,13 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "Not as common a component, but used in a number of critical machines."
+			subtitle: "{ftbquests.chapter.the_factory.quest3.subtitle}"
 			tasks: [{
 				id: "766F95CEB364086E"
 				item: "gtceu:lv_conveyor_module"
 				type: "item"
 			}]
-			title: "LV Conveyor"
+			title: "{ftbquests.chapter.the_factory.quest3.title}"
 			x: 0.0d
 			y: 5.0d
 		}
@@ -188,17 +188,17 @@
 				"62BBD1F6767A4D90"
 			]
 			description: [
-				"A &6Programmed Circuit&r is an item used to configure machines. In essence, they tell a machine what to make if there's multiple things it could make from a certain input."
+				"{ftbquests.chapter.the_factory.quest4.description1}"
 				""
-				"For example, the &3Wiremill&r produces different thicknesses of &6wires&r depending on the config - &ecircuit 1&r produces &61x wires&r, &ecircuit 4&r produces &64x wires&r, etc. The &eEMI&r recipe will tell you which circuit configuration is required."
+				"{ftbquests.chapter.the_factory.quest4.description2}"
 				"{@pagebreak}"
-				"Each machine and item input bus comes with a &2free \"ghost circuit\"&r. Click the circuit slot on the &9bottom left&r of the GUI to configure this ghost circuit. "
+				"{ftbquests.chapter.the_factory.quest4.description3}"
 				""
-				"That said, the Programmed Circuit item (crafted from a single &6LV Circuit&r) still has its uses:"
+				"{ftbquests.chapter.the_factory.quest4.description4}"
 				""
-				"- Whilst holding a programmed circuit, shift-right click the machine to set a &bGhost Circuit&r of the same configuration in the machine's circuit slot."
+				"{ftbquests.chapter.the_factory.quest4.description5}"
 				""
-				"- When you're sure that the items you put into a machine won't have any conflicts, you can put &emultiple circuit configs&r into a machine, and it will be able to handle recipes which call for any of those configs. This is useful for machines such as the &3Alloy Blast Smelter&r, but you won't encounter that for a while."
+				"{ftbquests.chapter.the_factory.quest4.description6}"
 			]
 			icon: {
 				Count: 1
@@ -224,20 +224,20 @@
 				id: "381F87172DB87754"
 				type: "checkmark"
 			}]
-			title: "&9Programmed Circuits"
+			title: "{ftbquests.chapter.the_factory.quest4.title}"
 			x: -1.9047619047619193d
 			y: 3.720238095238088d
 		}
 		{
 			dependencies: ["055193574D203872"]
 			description: [
-				"&2Assembling Machines come early in CEu! Circuit recipes are handled through a separate machine, the Circuit Assembler.&r"
+				"{ftbquests.chapter.the_factory.quest5.description1}"
 				""
-				"Assembling Machines open up a plethora of &eequal or more efficient recipes that don't require hand tools&r. &2For example, you can make up to 4 Vacuum Tubes in a single craft! &rCheck &eEMI&r for all the components you've been making to see if the Assembler can improve their recipes."
+				"{ftbquests.chapter.the_factory.quest5.description2}"
 				""
-				"Many of the Assembler's recipes require &9fluids&r. Hence, the &3Extractor&r will be required to take full advantage of this machine. "
+				"{ftbquests.chapter.the_factory.quest5.description3}"
 				""
-				"Hand tool recipes also don't play nice with &bApplied Energistics&r. Take advantage of Assembling Machines: &cphase out all use of hand tools for crafting items in your automation going forward.&r Once you have all the important machines, you will never need hand tools for crafting."
+				"{ftbquests.chapter.the_factory.quest5.description4}"
 			]
 			icon: "gtceu:lv_assembler"
 			id: "6197C51E04761371"
@@ -248,7 +248,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Assembling Machine 1"
+			subtitle: "{ftbquests.chapter.the_factory.quest5.subtitle}"
 			tasks: [{
 				id: "4FEE8532736A49E2"
 				item: {
@@ -271,19 +271,19 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Assembler"
+				title: "{ftbquests.chapter.the_factory.quest5.task.title1}"
 				type: "item"
 			}]
-			title: "&2LV Assembling Machine"
+			title: "{ftbquests.chapter.the_factory.quest5.title}"
 			x: -4.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"&6Robot Arms&r are components of several powerful machines, and are also useful as a machine cover for precise item movement."
+				"{ftbquests.chapter.the_factory.quest6.description1}"
 				""
-				"It's one of the more expensive components, as it requires motors, a piston, and a circuit."
+				"{ftbquests.chapter.the_factory.quest6.description2}"
 			]
 			id: "055193574D203872"
 			rewards: [{
@@ -297,13 +297,13 @@
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			title: "LV Robot Arm"
+			title: "{ftbquests.chapter.the_factory.quest6.title}"
 			x: -4.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
-			description: ["One of the more intricate components, as it is made using a motor."]
+			description: ["{ftbquests.chapter.the_factory.quest7.description1}"]
 			id: "7A12743F5ECCED90"
 			rewards: [{
 				id: "60DD7C7B1FC64B80"
@@ -312,24 +312,24 @@
 			}]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "A piston is a specialized motor which is needed to make certain machines."
+			subtitle: "{ftbquests.chapter.the_factory.quest7.subtitle}"
 			tasks: [{
 				id: "7341F3ADD0737579"
 				item: "gtceu:lv_electric_piston"
 				type: "item"
 			}]
-			title: "LV Pistons"
+			title: "{ftbquests.chapter.the_factory.quest7.title}"
 			x: -4.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"The &3Lathe&r is an important machine that makes &6Rods&r less expensive to craft. One ingot will yield two rods, doubling your output compared to manually crafting it."
+				"{ftbquests.chapter.the_factory.quest8.description1}"
 				""
-				"In addition to this, it can also be used to craft &6Screws&r and &6Buzzsaw Blades&r."
+				"{ftbquests.chapter.the_factory.quest8.description2}"
 				""
-				"You will need it later on to craft &6Lenses&r."
+				"{ftbquests.chapter.the_factory.quest8.description3}"
 			]
 			icon: "gtceu:lv_lathe"
 			id: "2A84013C14085C7B"
@@ -361,28 +361,28 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Lathe"
+				title: "{ftbquests.chapter.the_factory.quest8.task.title1}"
 				type: "item"
 			}]
-			title: "LV Lathe"
+			title: "{ftbquests.chapter.the_factory.quest8.title}"
 			x: -2.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"The &3Bender&r improves the yield of a great deal of items. Most notably, you can use it to get one &6Plate&r from a single ingot, instead of having to spend two ingots for a single plate."
+				"{ftbquests.chapter.the_factory.quest9.description1}"
 				""
-				"As with the &3Wiremill&r, this requires a &6Programmed Circuit&r to tell it what to make. For plates, this is &econfiguration 1&r. Refer to &eEMI&r for which configuration to use for your recipe."
-				" "
-				"Other materials it can produce include:"
-				"- 4 &6Foils&r from a Plate"
-				"- &6Double Plates&r from two Plates"
-				"- &6Dense Plates&r from nine Plates"
-				"- &6Small Springs&r from one Rod"
-				"- &6Springs&r from one Long Rod. "
-				"&r"
-				"If you played the CE version of &9Nomifactory&r, note that the functions of the &3Compressor&r (for making Plates) and &3Cluster Mill&r are merged into this machine."
+				"{ftbquests.chapter.the_factory.quest9.description2}"
+				""
+				"{ftbquests.chapter.the_factory.quest9.description3}"
+				"{ftbquests.chapter.the_factory.quest9.description4}"
+				"{ftbquests.chapter.the_factory.quest9.description5}"
+				"{ftbquests.chapter.the_factory.quest9.description6}"
+				"{ftbquests.chapter.the_factory.quest9.description7}"
+				"{ftbquests.chapter.the_factory.quest9.description8}"
+				"{ftbquests.chapter.the_factory.quest9.description9}"
+				"{ftbquests.chapter.the_factory.quest9.description10}"
 			]
 			icon: "gtceu:lv_bender"
 			id: "3EDD0A986384F2A7"
@@ -414,10 +414,10 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Bender"
+				title: "{ftbquests.chapter.the_factory.quest9.task.title1}"
 				type: "item"
 			}]
-			title: "&2LV Bender"
+			title: "{ftbquests.chapter.the_factory.quest9.title}"
 			x: -7.0d
 			y: -0.5d
 		}
@@ -427,9 +427,9 @@
 				"7A12743F5ECCED90"
 			]
 			description: [
-				"Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with &9Monicoins&r."
+				"{ftbquests.chapter.the_factory.quest10.description1}"
 				""
-				"The appearance can be customized by crafting the drawer into a &aFramed Compacting Drawer&r and then using a &9Framing Template&r or your crafting grid."
+				"{ftbquests.chapter.the_factory.quest10.description2}"
 			]
 			id: "7460F22545A4EFB2"
 			rewards: [{
@@ -442,16 +442,16 @@
 				item: "functionalstorage:compacting_drawer"
 				type: "item"
 			}]
-			title: "&9Compacting Drawers"
+			title: "{ftbquests.chapter.the_factory.quest10.title}"
 			x: -7.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"&2Most plates are made in the Bender instead of here."
+				"{ftbquests.chapter.the_factory.quest11.description1}"
 				""
-				"However, this machine will still see use for compressing &eNuggets&r into&e Ingots&r, &eIngots&r into &eBlocks&r, &eGem Dusts&r into &ePlates&r (such as &6Certus Quartz&r), as well as various other useful recipes."
+				"{ftbquests.chapter.the_factory.quest11.description2}"
 			]
 			icon: "gtceu:lv_compressor"
 			id: "5795EE147D4879B7"
@@ -478,10 +478,10 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Compressor"
+				title: "{ftbquests.chapter.the_factory.quest11.task.title1}"
 				type: "item"
 			}]
-			title: "&2LV Compressor"
+			title: "{ftbquests.chapter.the_factory.quest11.title}"
 			x: -9.5d
 			y: -0.5d
 		}
@@ -491,14 +491,14 @@
 				"7A12743F5ECCED90"
 			]
 			description: [
-				"&3Extractors&r are useful for melting things into liquids. For example, you can melt down ingots into molten metals, or &6Rubber Sheets&r into liquid &9Rubber&r."
+				"{ftbquests.chapter.the_factory.quest12.description1}"
 				""
-				"You can make molds from &6Steel&r and use &3Fluid Solidifiers&r to form various components more efficiently from fluids, like &6Gears&r."
+				"{ftbquests.chapter.the_factory.quest12.description2}"
 			]
 			icon: "gtceu:lv_extractor"
 			id: "038D06BCA022C1BF"
 			shape: "hexagon"
-			subtitle: "&2The functions of the Extractor and Fluid Extractor have been combined into a single machine!"
+			subtitle: "{ftbquests.chapter.the_factory.quest12.subtitle}"
 			tasks: [{
 				id: "302CBE00E5451E5E"
 				item: {
@@ -521,29 +521,29 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Extractor"
+				title: "{ftbquests.chapter.the_factory.quest12.task.title1}"
 				type: "item"
 			}]
-			title: "&2LV Extractor"
+			title: "{ftbquests.chapter.the_factory.quest12.title}"
 			x: -4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"&3Macerators&r are useful for grinding things down, replacing the &aMortars&r you've needed until now. This is an important machine you will be using for many things in the future."
+				"{ftbquests.chapter.the_factory.quest13.description1}"
 				""
-				"You don't really need an LV one, as you can use the superior &3Steam Grinder&r. LV or MV ones could be used for automation. However, HV ones provide chanced outputs, extremely important for &eOre Processing&r and other processes."
+				"{ftbquests.chapter.the_factory.quest13.description2}"
 				""
-				"One useful application for a Macerator in the near future is grinding down &6Clay&r or &6Terracotta&r into &6Clay Dust&f."
+				"{ftbquests.chapter.the_factory.quest13.description3}"
 				""
-				"Besides not having limited durability, a key advantage of Macerators over Mortars is the chance to get additional materials when grinding things down. These are called &ebyproducts&r, and HV or better Macerators will allow byproducts to appear."
+				"{ftbquests.chapter.the_factory.quest13.description4}"
 				"{@pagebreak}"
-				"When reading Macerator recipes in &bEMI&r, you can tell which outputs are byproducts by seeing if &ethe tooltip tells you it has a chance to appear&r: guaranteed outputs do not list a chance. &2The chance increases by a certain amount for each tier of machine you have above the recipe's required tier. This chance is also listed in the tooltip."
+				"{ftbquests.chapter.the_factory.quest13.description5}"
 				""
-				"Macerators can now also recycle your old Machines for some extra materials.&r"
+				"{ftbquests.chapter.the_factory.quest13.description6}"
 				""
-				"Finally, a Macerator will only start processing if there is room for all possible outputs. Make sure you empty them so they can keep working."
+				"{ftbquests.chapter.the_factory.quest13.description7}"
 			]
 			icon: "gtceu:lv_macerator"
 			id: "4685AC9E6CD87B77"
@@ -575,19 +575,19 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Macerator"
+				title: "{ftbquests.chapter.the_factory.quest13.task.title1}"
 				type: "item"
 			}]
-			title: "&2Macerator"
+			title: "{ftbquests.chapter.the_factory.quest13.title}"
 			x: -7.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
 			description: [
-				"Another common component of any machine that uses fluids. Also usable as a cover for moving fluids between &bGregTech&r machines and adjacent tanks or machines."
+				"{ftbquests.chapter.the_factory.quest14.description1}"
 				""
-				"These need &6Rubber Rings&r, which require a &aKnife&r to craft. A stick and a piece of flint will make a Knife with low durability, or you can check &bEMI&r for better ones."
+				"{ftbquests.chapter.the_factory.quest14.description2}"
 			]
 			id: "6A262AA410619C23"
 			shape: "hexagon"
@@ -596,7 +596,7 @@
 				item: "gtceu:lv_electric_pump"
 				type: "item"
 			}]
-			title: "LV Pumps"
+			title: "{ftbquests.chapter.the_factory.quest14.title}"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -607,9 +607,9 @@
 				"404C9497C46E7608"
 			]
 			description: [
-				"If you don't want to mine Obsidian by hand, consider using a Fluid Solidifier to turn &cLava&r into &6Obsidian Blocks&r for you. The process is slow and energy intensive, though."
+				"{ftbquests.chapter.the_factory.quest15.description1}"
 				""
-				"&3Fluid Solidifiers&r are useful for lots of other things too, of course. Look through the various molds to see what you can make with one."
+				"{ftbquests.chapter.the_factory.quest15.description2}"
 			]
 			icon: "gtceu:lv_fluid_solidifier"
 			id: "4EAD8756BAAC6B2E"
@@ -640,16 +640,16 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Fluid Solidifier"
+				title: "{ftbquests.chapter.the_factory.quest15.task.title1}"
 				type: "item"
 			}]
-			title: "LV Fluid Solidifier"
+			title: "{ftbquests.chapter.the_factory.quest15.title}"
 			x: 0.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["6A262AA410619C23"]
-			description: ["&2Pumps are now available in GT. Useful for gathering Oil or perhaps Lava from the Nether."]
+			description: ["{ftbquests.chapter.the_factory.quest16.description1}"]
 			icon: "gtceu:lv_pump"
 			id: "09C0CDC1DFA7842D"
 			rewards: [{
@@ -679,19 +679,19 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Pump"
+				title: "{ftbquests.chapter.the_factory.quest16.task.title1}"
 				type: "item"
 			}]
-			title: "&2Pumps"
+			title: "{ftbquests.chapter.the_factory.quest16.title}"
 			x: 0.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["038D06BCA022C1BF"]
 			description: [
-				"An &3Autoclave&r is a machine that uses liquids (usually water) to polish stones, carve gems into lenses, infuse gems with special liquids, and crystallize various dusts."
+				"{ftbquests.chapter.the_factory.quest17.description1}"
 				""
-				"You'll need an Autoclave for many recipes, but most presently you will need it to make &6Pulsating Crystals&r and &6Vibrant Crystals&r from &bEnderIO&r."
+				"{ftbquests.chapter.the_factory.quest17.description2}"
 			]
 			icon: "gtceu:lv_autoclave"
 			id: "47094A5717952699"
@@ -718,10 +718,10 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Autoclave"
+				title: "{ftbquests.chapter.the_factory.quest17.task.title1}"
 				type: "item"
 			}]
-			title: "LV Autoclave"
+			title: "{ftbquests.chapter.the_factory.quest17.title}"
 			x: -4.5d
 			y: -6.0d
 		}
@@ -732,22 +732,22 @@
 				"273F3F8DD6A3DCC5"
 			]
 			description: [
-				"This pack has &aSnad&r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block update or a redstone update."
+				"{ftbquests.chapter.the_factory.quest18.description1}"
 				""
-				"The sugar cane it produces can be used as fuel for your dynamos, and later you can even brew &9Biomass&r with it."
+				"{ftbquests.chapter.the_factory.quest18.description2}"
 				""
-				"This quest calls for a &aRedstone Clock&r, but there are other ways to make Snad grow sugar cane even faster (like a vanilla observer clock pointing into the Snad). Make sure to set the timer to pulse as fast as possible."
+				"{ftbquests.chapter.the_factory.quest18.description3}"
 				""
-				"To harvest the sugar cane, you can use a piston and an observer."
+				"{ftbquests.chapter.the_factory.quest18.description4}"
 				""
-				"For now, a &3Vacuum Chest&r should help keep the floor clean, and will cause less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
+				"{ftbquests.chapter.the_factory.quest18.description5}"
 			]
 			hide_until_deps_visible: true
 			icon: "snad:snad"
 			id: "63ADD9B48834AA39"
 			optional: true
 			shape: "hexagon"
-			subtitle: "Yes, Snad."
+			subtitle: "{ftbquests.chapter.the_factory.quest18.subtitle}"
 			tasks: [
 				{
 					id: "677A2551088FF511"
@@ -770,18 +770,18 @@
 					type: "item"
 				}
 			]
-			title: "Snad"
+			title: "{ftbquests.chapter.the_factory.quest18.title}"
 			x: -4.5d
 			y: -9.5d
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
-				"&aMolds&r are used in a &3Fluid Solidifier&r or &3Alloy Smelter&r to form materials into specific shapes. These are not consumed or damaged during crafting, so you can leave them in a machine to dedicate it to that shape."
+				"{ftbquests.chapter.the_factory.quest19.description1}"
 				""
-				"The Fluid Solidifier tends to be the more efficient option: for example, you can use &e8 ingots&r to make one &6Gear&r in an Alloy Smelter, but with an Extractor and Solidifier you can accomplish the same result with &e4 ingots&r."
+				"{ftbquests.chapter.the_factory.quest19.description2}"
 				""
-				"Be careful not to accidentally make &aExtruder Shapes&r. Those are for a machine you will get access to later. The three molds in this quest are ones you will find useful right away."
+				"{ftbquests.chapter.the_factory.quest19.description3}"
 			]
 			icon: "gtceu:gear_casting_mold"
 			id: "404C9497C46E7608"
@@ -808,16 +808,16 @@
 					type: "item"
 				}
 			]
-			title: "Molds"
+			title: "{ftbquests.chapter.the_factory.quest19.title}"
 			x: 2.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
 			description: [
-				"&6Pulsating Dust&r is a mysterious magical material that taps into the power of Ender. It has all sorts of strange (and potentially dangerous) applications, including the ability to make &6Pulsating Iron&r and &6Ender Pearls&r."
+				"{ftbquests.chapter.the_factory.quest20.description1}"
 				""
-				"Your first source of Pulsating Dust is &6Uraninite&r, which you can get from &6Uraninite Ore&r. Later on, you'll be able to produce Pulsating Dust by smelting &6Resonant Clathrates&r."
+				"{ftbquests.chapter.the_factory.quest20.description2}"
 			]
 			icon: "kubejs:pulsating_dust"
 			id: "30EBD4E7BBFFEF2C"
@@ -834,17 +834,17 @@
 					type: "item"
 				}
 			]
-			title: "Pulsating Dust"
+			title: "{ftbquests.chapter.the_factory.quest20.title}"
 			x: 2.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["30EBD4E7BBFFEF2C"]
-			description: ["If you can't find one otherwise, &6Ender Pearls&r can be crafted using Pulsating Dust and a &6Diamond&r in an &3Alloy Smelter&r."]
+			description: ["{ftbquests.chapter.the_factory.quest21.description1}"]
 			icon: "gtceu:pulsating_alloy_ingot"
 			id: "273F3F8DD6A3DCC5"
 			shape: "hexagon"
-			subtitle: "A mysterious alloy, made from &6Pulsating Dust&r and &6Iron&r."
+			subtitle: "{ftbquests.chapter.the_factory.quest21.subtitle}"
 			tasks: [
 				{
 					id: "22A4BABD40C1A481"
@@ -857,13 +857,13 @@
 					type: "item"
 				}
 			]
-			title: "Pulsating Iron and Ender Pearls"
+			title: "{ftbquests.chapter.the_factory.quest21.title}"
 			x: 2.5d
 			y: -9.5d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either &6Coal Coke Dust&r or &2Diamond Dust&r into &6Carbon Dust&r, which can be used for other alloys."]
+			description: ["{ftbquests.chapter.the_factory.quest22.description1}"]
 			id: "5301E546BAA69844"
 			rewards: [{
 				id: "424A2A6FAB412F69"
@@ -880,22 +880,22 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
+			subtitle: "{ftbquests.chapter.the_factory.quest22.subtitle}"
 			tasks: [{
 				id: "17210F38B40BAAD7"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&9Alloying Steel"
+			title: "{ftbquests.chapter.the_factory.quest22.title}"
 			x: 2.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
 			description: [
-				"Nickel comes from several different ores, including Pentlandite and Garnierite, but they're all found in the same vein."
+				"{ftbquests.chapter.the_factory.quest23.description1}"
 				""
-				"Nickel is used mostly for several very important alloys, including Invar and Cupronickel."
+				"{ftbquests.chapter.the_factory.quest23.description2}"
 			]
 			id: "3F6EDC2481D5877F"
 			rewards: [{
@@ -904,7 +904,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "Copper... Nickel... Cupronickel?"
+			subtitle: "{ftbquests.chapter.the_factory.quest23.subtitle}"
 			tasks: [
 				{
 					id: "708858A9BC1F9ABE"
@@ -917,16 +917,16 @@
 					type: "item"
 				}
 			]
-			title: "Cupronickel"
+			title: "{ftbquests.chapter.the_factory.quest23.title}"
 			x: 2.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
 			description: [
-				"&3Alloy Smelters&r are used to create alloys by melting and reforming items together."
+				"{ftbquests.chapter.the_factory.quest24.description1}"
 				""
-				"Now you won't need to grind up metals into dusts and mix them for alloy dusts! Plus, many of the more complex alloys you couldn't make that way are now possible."
+				"{ftbquests.chapter.the_factory.quest24.description2}"
 			]
 			icon: "gtceu:lv_alloy_smelter"
 			id: "29A487F0BC43AAF9"
@@ -958,16 +958,16 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Alloy Smelter"
+				title: "{ftbquests.chapter.the_factory.quest24.task.title1}"
 				type: "item"
 			}]
-			title: "LV Alloy Smelter"
+			title: "{ftbquests.chapter.the_factory.quest24.title}"
 			x: 2.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["Needs 2 &6Water Source Blocks&r around it to generate water. You will also need a way to pull the water out of the accumulator, such as using an &5LV pump&f as a &acover&f."]
+			description: ["{ftbquests.chapter.the_factory.quest25.description1}"]
 			icon: {
 				Count: 1
 				id: "thermal:device_water_gen"
@@ -988,7 +988,7 @@
 				}
 				type: "item"
 			}]
-			title: "&9Infiniter Water"
+			title: "{ftbquests.chapter.the_factory.quest25.title}"
 			x: 1.0d
 			y: -0.5d
 		}
@@ -998,11 +998,11 @@
 				"29A487F0BC43AAF9"
 			]
 			description: [
-				"Using plain &3Steam Dynamos&f is pretty inefficient."
+				"{ftbquests.chapter.the_factory.quest26.description1}"
 				""
-				"It's strongly recommended to upgrade your Dynamos into &3Steam Boilers&f and &3Steam Turbines&f. The ratio is always &a1:2&r if all machines are equally upgraded."
+				"{ftbquests.chapter.the_factory.quest26.description2}"
 				""
-				"This greatly increases the overall efficiency and the amount of power produced, from &a40 RF/t&r per basic steam dynamo to &a320 RF/t&r per set of three augmented machines."
+				"{ftbquests.chapter.the_factory.quest26.description3}"
 			]
 			hide_until_deps_visible: true
 			icon: "systeams:steam_dynamo"
@@ -1020,22 +1020,22 @@
 					type: "item"
 				}
 			]
-			title: "Boilers and Turbines"
+			title: "{ftbquests.chapter.the_factory.quest26.title}"
 			x: 4.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
-				"&2Technically not new to CEu, but it was disabled in the original version, and it had much less functionality in CE.&r"
+				"{ftbquests.chapter.the_factory.quest27.description1}"
 				""
-				"The Arc Furnace allows you to make &6Annealed Copper&r, which will be used in the MV Age. It can also make 2 pieces of Glass from 1 Sand. Later, it can make &2Tempered Glass&r for use in higher-tier recipes."
+				"{ftbquests.chapter.the_factory.quest27.description2}"
 				""
-				"The Arc Furnace also functions as a &auniversal recycling machine&r. Pretty much anything can be recycled into ingots and dusts of its base components."
+				"{ftbquests.chapter.the_factory.quest27.description3}"
 				""
-				"All of its recipes require Oxygen."
+				"{ftbquests.chapter.the_factory.quest27.description4}"
 				""
-				"Most Arc Furnace recipes use exactly 30 EU/t, so you can get a lot of mileage out of an LV one. However, many recipes take long enough that you may want to upgrade at some point."
+				"{ftbquests.chapter.the_factory.quest27.description5}"
 			]
 			icon: "gtceu:lv_arc_furnace"
 			id: "500E619D568C07C2"
@@ -1066,21 +1066,21 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Arc Furnace"
+				title: "{ftbquests.chapter.the_factory.quest27.task.title1}"
 				type: "item"
 			}]
-			title: "&2Arc Furnace"
+			title: "{ftbquests.chapter.the_factory.quest27.title}"
 			x: 4.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
-				"&oThis is part of a Processing Line. Visit the Processing Lines tab to have more info, useful tips and a visual representation.&r"
+				"{ftbquests.chapter.the_factory.quest28.description1}"
 				""
-				"Now that you have acquired &6Steel&r, your path to infinite cobblestone awaits! The &6Igneous Extruder&r continuously generates cobblestone for free."
+				"{ftbquests.chapter.the_factory.quest28.description2}"
 				""
-				"Later on, you could look into the &6Rock Crusher&r, which can do it faster at the cost of requiring power."
+				"{ftbquests.chapter.the_factory.quest28.description3}"
 			]
 			id: "4624889F738AB21B"
 			rewards: [{
@@ -1093,13 +1093,13 @@
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
-			title: "&9Infinite Cobblestone"
+			title: "{ftbquests.chapter.the_factory.quest28.title}"
 			x: 4.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["4624889F738AB21B"]
-			description: ["&2This isn't new in CEu either, but in this version, you will use this to break Cobblestone into Gravel and Gravel into Sand. It's also used to combine 2 Rods into 1 Long Rod."]
+			description: ["{ftbquests.chapter.the_factory.quest29.description1}"]
 			icon: "gtceu:lv_forge_hammer"
 			id: "0EDFB0C24B9129AB"
 			rewards: [{
@@ -1129,10 +1129,10 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Forge Hammer"
+				title: "{ftbquests.chapter.the_factory.quest29.task.title1}"
 				type: "item"
 			}]
-			title: "&2Forge Hammer"
+			title: "{ftbquests.chapter.the_factory.quest29.title}"
 			x: 4.5d
 			y: -7.0d
 		}
@@ -1142,9 +1142,9 @@
 				"30EBD4E7BBFFEF2C"
 			]
 			description: [
-				"&6&6String&r and &6Coal Dust&r can be baked together into &6Carbon Fiber Mesh&r in an &3Alloy Smelter&r."
+				"{ftbquests.chapter.the_factory.quest30.description1}"
 				""
-				"Combine that with &6Pulsating Dust&r to get &6Pulsating Mesh&r."
+				"{ftbquests.chapter.the_factory.quest30.description2}"
 			]
 			hide_until_deps_visible: true
 			icon: "kubejs:pulsating_mesh"
@@ -1168,7 +1168,7 @@
 					type: "item"
 				}
 			]
-			title: "Pulsating Mesh"
+			title: "{ftbquests.chapter.the_factory.quest30.title}"
 			x: 6.5d
 			y: -8.0d
 		}
@@ -1193,13 +1193,13 @@
 				"545CCC24D9401794"
 			]
 			description: [
-				"&2This Steam multiblock was intended for use in the Steam Age. This pack skips the Steam Age, but it may still be worth using.&r"
+				"{ftbquests.chapter.the_factory.quest32.description1}"
 				""
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
+				"{ftbquests.chapter.the_factory.quest32.description2}"
 				""
-				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
+				"{ftbquests.chapter.the_factory.quest32.description3}"
 				""
-				"&4Does not generate byproducts!&r You need an HV-tier macerator or better to get those."
+				"{ftbquests.chapter.the_factory.quest32.description4}"
 			]
 			hide_until_deps_visible: true
 			icon: "gtceu:steam_grinder"
@@ -1256,7 +1256,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Steam Grinder"
+			title: "{ftbquests.chapter.the_factory.quest32.title}"
 			x: 4.5d
 			y: 0.0d
 		}
@@ -1266,9 +1266,9 @@
 				"5B0200011DF8E1B6"
 			]
 			description: [
-				"A refined type of steel, made from &6Silicon Dust&r and &6Steel&r."
+				"{ftbquests.chapter.the_factory.quest33.description1}"
 				""
-				"This material is frequently used in electronics and digital equipment."
+				"{ftbquests.chapter.the_factory.quest33.description2}"
 			]
 			id: "025543EDB0A4AC22"
 			rewards: [{
@@ -1287,13 +1287,13 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"You'll need &6Obsidian&r to make &6Dark Steel&r. Most of the tools you can make cannot mine Obsidian, but you do have a few potential options for ones that will work. The options you're most likely to have access to at this point are:"
+				"{ftbquests.chapter.the_factory.quest34.description1}"
 				""
-				"1) A &aDiamond Pickaxe&r or &aDiamond Mining Hammer&r."
+				"{ftbquests.chapter.the_factory.quest34.description2}"
 				""
-				"2) A &aSteel Pickaxe&r."
+				"{ftbquests.chapter.the_factory.quest34.description3}"
 				""
-				"Later, you can use a &3Rock Breaker&r at voltage &aHV&r or higher to make &6Obsidian&r without spending &6Lava&r!"
+				"{ftbquests.chapter.the_factory.quest34.description4}"
 			]
 			id: "74B5CA5A48CE7B39"
 			rewards: [{
@@ -1312,9 +1312,9 @@
 		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
-				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
+				"{ftbquests.chapter.the_factory.quest35.description1}"
 				""
-				"&5You can automate grains via the Atomic Reconstructor, as current automation methods are nonfunctional."
+				"{ftbquests.chapter.the_factory.quest35.description2}"
 			]
 			icon: "enderio:grains_of_infinity"
 			id: "1CA6D620309F2B9E"
@@ -1342,20 +1342,20 @@
 					type: "item"
 				}
 			]
-			title: "Grains Of Infinity"
+			title: "{ftbquests.chapter.the_factory.quest35.title}"
 			x: 8.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["3BD20358F137E7C6"]
 			description: [
-				"The main purpose for this device is to turn &6Certus Quartz&r into &6Charged Certus Quartz&r."
+				"{ftbquests.chapter.the_factory.quest36.description1}"
 				""
-				"This device can be powered with RF via energy conduits or AE energy from a network via ME conduits or cables."
+				"{ftbquests.chapter.the_factory.quest36.description2}"
 				""
-				"It accepts power from &9five&r sides. Which &9five&r sides? It's pretty easy to guess."
+				"{ftbquests.chapter.the_factory.quest36.description3}"
 				""
-				"You can also easily automate charging by having hoppers input items from the top or sides, and pull items from the bottom."
+				"{ftbquests.chapter.the_factory.quest36.description4}"
 			]
 			icon: "ae2:charger"
 			id: "6D03BB4A6A4BBA27"
@@ -1370,22 +1370,22 @@
 				item: "ae2:charger"
 				type: "item"
 			}]
-			title: "Charging Quartz"
+			title: "{ftbquests.chapter.the_factory.quest36.title}"
 			x: 10.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6D03BB4A6A4BBA27"]
 			description: [
-				"Fluix is initially made via in-world crafting, by dropping &6Redstone&r, &6Nether Quartz&r, and a &6Charged Certus Quartz Crystal&r in the same block of &9Water&r. You'll see some sparks then the items will merge into a &6Fluix Crystal&r. Be sure to turn off any nearby item magnets/collectors or they might interrupt this crafting process."
+				"{ftbquests.chapter.the_factory.quest37.description1}"
 				""
-				"The &3Energy Acceptor&r converts RF power into AE power that Applied Energistics uses, in a 2 RF to 1 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected &6ME Cables&r, &6ME Conduits&r, and &6Quartz Fibers&r. "
+				"{ftbquests.chapter.the_factory.quest37.description2}"
 				""
-				"Quartz Fibers are &emicroparts&r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
+				"{ftbquests.chapter.the_factory.quest37.description3}"
 				"{@pagebreak}"
-				"Applied Energistics 2 can be complicated for a new player, so it is recommended to either &l&3use the in-game guide&r &e(Press G while hovering over a compatible item)&r or a video as a supplement to this chapter if need be. "
+				"{ftbquests.chapter.the_factory.quest37.description4}"
 				""
-				"[\"You can look at \",{\"text\": \"Pansmith's guide to Applied Energistics 2\",\"color\": \"blue\",\"underlined\": true,\"clickEvent\": {\"action\": \"copy_to_clipboard\",\"value\": \"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\": {\"action\": \"show_text\",\"contents\": \"Click to copy to clipboard!\"}}, \". While written for the 1.12 verison of AE2, most of the infomation is the exact same between the versions.\"]"
+				"[\"\",{\"translate\":\"ftbquests.chapter.the_factory.quest37.rich_description1\"},{\"color\":\"blue\",\"underlined\":1,\"translate\":\"ftbquests.chapter.the_factory.quest37.rich_description2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"}},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbquests.chapter.the_factory.quest37.rich_description.hover_text.2\"}},{\"translate\":\"ftbquests.chapter.the_factory.quest37.rich_description3\"}]"
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"
@@ -1421,9 +1421,9 @@
 		{
 			dependencies: ["025543EDB0A4AC22"]
 			description: [
-				"The first tier of &6capacitors&r. These (or stronger versions) are required to make &bEnder IO&r machines run. They're also used as components in a variety of recipes."
+				"{ftbquests.chapter.the_factory.quest38.description1}"
 				""
-				"Higher tier capacitors will significantly increase the speed at which these machines operate, among other machine-specific properties."
+				"{ftbquests.chapter.the_factory.quest38.description2}"
 			]
 			id: "7842EC1C389C4B7E"
 			rewards: [{
@@ -1436,16 +1436,16 @@
 				item: "enderio:basic_capacitor"
 				type: "item"
 			}]
-			title: "Basic Capacitors"
+			title: "{ftbquests.chapter.the_factory.quest38.title}"
 			x: 8.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["7842EC1C389C4B7E"]
 			description: [
-				"Expandable multi-block storage for RF power."
+				"{ftbquests.chapter.the_factory.quest39.description1}"
 				""
-				"This first tier isn't much, but you can upgrade them over time to hold substantial amounts of power."
+				"{ftbquests.chapter.the_factory.quest39.description2}"
 			]
 			id: "2845151447537433"
 			rewards: [{
@@ -1464,9 +1464,9 @@
 		{
 			dependencies: ["62BBD1F6767A4D90"]
 			description: [
-				"&3Electrolyzers&r use electricity to separate items into their more basic components."
+				"{ftbquests.chapter.the_factory.quest40.description1}"
 				""
-				"For example, you can break down Water into &9Hydrogen Gas&r and &9Oxygen Gas&r, or break down &6Clay Dust&r into &6Sodium Dust&r, &6Silicon Dust&r, &6Lithium Dust&r, and &6Aluminium Dust&r."
+				"{ftbquests.chapter.the_factory.quest40.description2}"
 			]
 			icon: "gtceu:lv_electrolyzer"
 			id: "5B0200011DF8E1B6"
@@ -1498,27 +1498,27 @@
 						]
 					}
 				}
-				title: "LV, MV, or HV Electrolyzer"
+				title: "{ftbquests.chapter.the_factory.quest40.task.title1}"
 				type: "item"
 			}]
-			title: "LV Electrolyzer"
+			title: "{ftbquests.chapter.the_factory.quest40.title}"
 			x: 6.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["5B0200011DF8E1B6"]
 			description: [
-				"&oSilicon Dioxide is an important part of a Processing Line. Visit the Processing Lines Tab to have more info, useful tips and a visual representation of how to passively automate this.&r"
+				"{ftbquests.chapter.the_factory.quest41.description1}"
 				""
-				"Around this point, you will need large quantities of &6Hydrogen&r and &6Oxygen&r. "
+				"{ftbquests.chapter.the_factory.quest41.description2}"
 				""
-				"The first way that comes to mind is electrolyzing &9Water&r, but that is slow. "
+				"{ftbquests.chapter.the_factory.quest41.description3}"
 				""
-				"Instead, the best way of making early game &6Oxygen&r is &6Silicon Dioxide&r."
+				"{ftbquests.chapter.the_factory.quest41.description4}"
 				""
-				"&6Hydrogen&r is a bit trickier, but you can put &6Methane&r and &6Water&r together in a &3Chemical Reactor&r. &6Methane&r can be achieved by centrifuging &6Food&r and &6Wood&r, processing &6Pyrolyse Byproducts&r, or through &6Petroleum&r. "
+				"{ftbquests.chapter.the_factory.quest41.description5}"
 				""
-				"Right now, for the small quantities you need, you can simply electrolyze &9Water&r. Just keep those other ways in mind, for later in the game."
+				"{ftbquests.chapter.the_factory.quest41.description6}"
 			]
 			icon: "gtceu:oxygen_bucket"
 			id: "6FE99EDDC6223F2E"
@@ -1540,7 +1540,7 @@
 					type: "item"
 				}
 			]
-			title: "Hydrogen and Oxygen"
+			title: "{ftbquests.chapter.the_factory.quest41.title}"
 			x: 8.5d
 			y: 2.0d
 		}
@@ -1550,11 +1550,11 @@
 				"6197C51E04761371"
 			]
 			description: [
-				"&6Cupronickel Coils&r form part of the structure of a few multiblocks. Presently, those are the &3Electric Blast Furnace&r and &3Pyrolyse Oven&r. Each tier of coil unlocks new recipes and provides various bonuses to the multiblock they are attached to."
+				"{ftbquests.chapter.the_factory.quest42.description1}"
 				""
-				"Cupronickel Coils are produced in the &3Assembler&r with &62x Cupronickel Wire&r, &6Bronze Foil&r, and &9Liquid Tin Alloy&r."
+				"{ftbquests.chapter.the_factory.quest42.description2}"
 				""
-				"For now, you need 16 coils for the &3Electric Blast Furnace&r and 16 for the &3Pyrolyse Oven&r. That totals to 176 Copper, 128 Nickel, 32 Tin, and 16 Iron."
+				"{ftbquests.chapter.the_factory.quest42.description3}"
 			]
 			id: "4CD6C60CBEFFA317"
 			rewards: [{
@@ -1568,7 +1568,7 @@
 				item: "gtceu:cupronickel_coil_block"
 				type: "item"
 			}]
-			title: "&2Cupronickel Coils"
+			title: "{ftbquests.chapter.the_factory.quest42.title}"
 			x: 2.5d
 			y: 5.0d
 		}
@@ -1578,15 +1578,15 @@
 				"1BC6DDC2D50F9C46"
 			]
 			description: [
-				"With your EBF running, start to create a supply of &6Aluminium Ingots&r. These are a crucial ingredient for MV machines, including &bApplied Energistics&r."
+				"{ftbquests.chapter.the_factory.quest43.description1}"
 				""
-				"&2With LV power, you can only get Aluminium Dust from electrolyzing Clay Dust, Sapphire Dust or Green Sapphire Dust. Clay Dust is recommended. Once you make an MV Electrolyzer, you can get it from a plethora of other raw resources.&r"
+				"{ftbquests.chapter.the_factory.quest43.description2}"
 				""
-				"If you find your power supply is faltering, you may want to make additional dynamos and turn them into steam boilers and turbines. Upgrading your dynamos is also advisable."
+				"{ftbquests.chapter.the_factory.quest43.description3}"
 				""
-				"However, you're also about to reach MV. You're bound to discover a better power source than steam before long."
+				"{ftbquests.chapter.the_factory.quest43.description4}"
 				""
-				"&2You can cut the smelting time of Aluminium and some other smelting processes by a third with Nitrogen gas. Higher-tier processes may take different gases."
+				"{ftbquests.chapter.the_factory.quest43.description5}"
 			]
 			id: "3AB0402B19DD5BA8"
 			rewards: [
@@ -1616,29 +1616,29 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			title: "&2Aluminium Ingots"
+			title: "{ftbquests.chapter.the_factory.quest43.title}"
 			x: 6.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["4CD6C60CBEFFA317"]
 			description: [
-				"The &3Electric Blast Furnace&r is a major, major milestone in your &bGregTech&r career. It has the power to smelt more advanced materials. The first of these, &6Aluminium&r, is going to be important in the immediate future."
+				"{ftbquests.chapter.the_factory.quest44.description1}"
 				""
-				"Since smelting &6Aluminium&r requires MV power, you're going to have to power this with 2 LV Energy Input Hatches."
+				"{ftbquests.chapter.the_factory.quest44.description2}"
 				""
-				"There is a diagram of how to build the EBF in &bEMI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &6sneak-right click&r the controller to enable the in-world preview."
+				"{ftbquests.chapter.the_factory.quest44.description3}"
 				""
-				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact middle of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all the gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &29&e Heatproof Machine Casings in your layout or the structure will not form&r."
+				"{ftbquests.chapter.the_factory.quest44.description4}"
 				""
 				"{@pagebreak}"
-				"This quest calls for a &2maintenance hatch&r, two energy hatches, a fluid input and output, and an item input and output, which is a total of 7 positions. Their specific order and placement don't matter, as long as you can access them. The 8th position is your EBF controller, leaving 9 gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the colors on its hatches and casings will unify, and the controller will say \"Idling.\""
+				"{ftbquests.chapter.the_factory.quest44.description5}"
 				""
-				"Hatches and Buses can be replaced by Hatches and Buses of any tier, although the Input Bus must be at least LV, as there are 2 inputs."
+				"{ftbquests.chapter.the_factory.quest44.description6}"
 				""
-				"You'll most likely want to locate your power quite near to the EBF. It is very power hungry, and if it cannot get enough energy, progress on the current item smelting will start to regress. Be careful to ensure the EBF has enough power, and keep a Soft Hammer nearby to pause it by tapping the controller if you run out of power."
+				"{ftbquests.chapter.the_factory.quest44.description7}"
 				""
-				"&2In GTCEu, all hatches except Maintenance and Parallel Control can be shared between Multiblocks!"
+				"{ftbquests.chapter.the_factory.quest44.description8}"
 			]
 			icon: "gtceu:electric_blast_furnace"
 			id: "1BC6DDC2D50F9C46"
@@ -1704,7 +1704,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Blast Furnace Fun"
+			title: "{ftbquests.chapter.the_factory.quest44.title}"
 			x: 2.5d
 			y: 7.5d
 		}
@@ -1714,9 +1714,9 @@
 				"1BC6DDC2D50F9C46"
 			]
 			description: [
-				"This alloy is made from &2mixing 2 Gold Dust, 1 Redstone, and 1 Glowstone Dust in a Mixer, creating Energetic Alloy Dust,&r and putting it in your new &3Electric Blast Furnace&r."
+				"{ftbquests.chapter.the_factory.quest45.description1}"
 				""
-				"Throw &2the prepared dust into the input bus&r and in twenty seconds your &6Energetic Alloy Ingot&r will be in the output bus."
+				"{ftbquests.chapter.the_factory.quest45.description2}"
 			]
 			id: "6A914B240E1A7BCB"
 			rewards: [{
@@ -1735,7 +1735,7 @@
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
-			description: ["Another alloy."]
+			description: ["{ftbquests.chapter.the_factory.quest46.description1}"]
 			id: "73C1AB31431B5C11"
 			rewards: [{
 				id: "461858A607CACCE1"
@@ -1754,11 +1754,11 @@
 		{
 			dependencies: ["6A914B240E1A7BCB"]
 			description: [
-				"Now that you have &6Energetic Alloy&r, it's time to make some better conduits!"
+				"{ftbquests.chapter.the_factory.quest47.description1}"
 				""
-				"Each time you upgrade your conduits, you'll also get more of them. Neat!"
+				"{ftbquests.chapter.the_factory.quest47.description2}"
 				""
-				"Make sure you're using an &3Assembling Machine&r to craft these things. Making them by hand isn't as efficient as the machine."
+				"{ftbquests.chapter.the_factory.quest47.description3}"
 			]
 			id: "4F4F120AFB3A9250"
 			rewards: [{
@@ -1772,20 +1772,20 @@
 				item: "enderio:energetic_conduit"
 				type: "item"
 			}]
-			title: "Energetic Alloy Energy Conduits"
+			title: "{ftbquests.chapter.the_factory.quest47.title}"
 			x: 1.0d
 			y: 10.5d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
 			description: [
-				"The &aAuxiliary Reaction Chamber&r is an augment that will work in all types of dynamos. It will consume fuel faster to produce a correspondingly higher RF per tick."
+				"{ftbquests.chapter.the_factory.quest48.description1}"
 				""
-				"Each augment increases both base power production and fuel consumption by 300%, additively (so the second is 600%, third is 900%, etc.)."
+				"{ftbquests.chapter.the_factory.quest48.description2}"
 				""
-				"Consider the tradeoffs however, as you could just make another dynamo, and you miss out on &aMulti-cycle Injectors&r augments that make fuels burn longer for more total RF generated. The Auxiliary Reaction Chamber will also put additional stress on your fuel production infrastructure."
+				"{ftbquests.chapter.the_factory.quest48.description3}"
 				""
-				"If that's an acceptable tradeoff, then Auxiliary Reaction Chambers are a cheap and effective way to boost your power production."
+				"{ftbquests.chapter.the_factory.quest48.description4}"
 			]
 			id: "780706A4C4AEB9CE"
 			tasks: [{
@@ -1805,18 +1805,18 @@
 				match_nbt: false
 				type: "item"
 			}]
-			title: "Auxiliary Reaction Chambers"
+			title: "{ftbquests.chapter.the_factory.quest48.title}"
 			x: 4.0d
 			y: 10.5d
 		}
 		{
 			dependencies: ["3AB0402B19DD5BA8"]
 			description: [
-				"You might notice that these hulls can be made more cheaply in an &3Assembling Machine&r, but you don't have that weird fluid. Don't worry, you'll be able to make that soon."
+				"{ftbquests.chapter.the_factory.quest49.description1}"
 				""
-				"&2Overclocking mechanics have changed in CEu. All overclocks now multiply the speed by 2.0x (instead of the 2.0/2.8 split in CE). This means that to save energy, you should build more low-tier machines over overclocking a high-tier machine, especially for passive processes."
+				"{ftbquests.chapter.the_factory.quest49.description2}"
 				""
-				"Additionally, ULV recipes will not overclock to LV. A ≤8 EU/t recipe won't overclock at all in an LV machine, will only overclock once in an MV machine, etc."
+				"{ftbquests.chapter.the_factory.quest49.description3}"
 			]
 			id: "5C4E189A3E401566"
 			rewards: [{
@@ -1826,26 +1826,26 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "Your first MV hull is as good of a place as any to consider yourself graduated from LV."
+			subtitle: "{ftbquests.chapter.the_factory.quest49.subtitle}"
 			tasks: [{
 				id: "3F0884D8F0926142"
 				item: "gtceu:mv_machine_hull"
 				type: "item"
 			}]
-			title: "&2MV Machine Hulls"
+			title: "{ftbquests.chapter.the_factory.quest49.title}"
 			x: 6.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
 			description: [
-				"Mixes dusts together."
+				"{ftbquests.chapter.the_factory.quest50.description1}"
 				""
-				"For now, you'll be using it to make &6Energetic Alloy Dust&r."
+				"{ftbquests.chapter.the_factory.quest50.description2}"
 				""
-				"Energetic Alloy Dust is made from &6Redstone&r, &6Gold Dust&r and &6Glowstone Dust&r. "
+				"{ftbquests.chapter.the_factory.quest50.description3}"
 				""
-				"You should have some Glowstone from your adventures in the &cNether&r, but you can also make it by mixing &6Tricalcium Phosphate Dust&r&r&r and &6&6&6Gold Dust&r&r&r."
+				"{ftbquests.chapter.the_factory.quest50.description4}"
 			]
 			id: "1DBBE96165C7987D"
 			rewards: [{
@@ -1854,24 +1854,24 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "Will it blend?"
+			subtitle: "{ftbquests.chapter.the_factory.quest50.subtitle}"
 			tasks: [{
 				id: "0199D55D895EDDC9"
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			title: "LV Mixer"
+			title: "{ftbquests.chapter.the_factory.quest50.title}"
 			x: 0.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["1DBBE96165C7987D"]
 			description: [
-				"When making circuits, you'll need either &9Liquid Tin&r, or &9Liquid Soldering Alloy&r&r&r. &2Soldering Alloy is made in the Mixer with 6 parts Tin Dust, 3 parts Lead Dust and 1 part Antimony Dust.&r You then process it in an &3Extractor &rfor the usual 144mB of fluid per unit."
+				"{ftbquests.chapter.the_factory.quest51.description1}"
 				""
-				"The &2Circuit Assembler&r will only consume half as much Soldering Alloy as it would have consumed Liquid Tin per craft (72mB vs 144mB), so it's very efficient to use this stuff."
+				"{ftbquests.chapter.the_factory.quest51.description2}"
 				""
-				"&2Antimony can be directly smelted from Stibnite Ore, allowing you to skip ore processing for this."
+				"{ftbquests.chapter.the_factory.quest51.description3}"
 			]
 			icon: "gtceu:soldering_alloy_bucket"
 			id: "56924FC6B029BA0F"
@@ -1885,7 +1885,7 @@
 				item: "gtceu:soldering_alloy_dust"
 				type: "item"
 			}]
-			title: "Soldering Alloy"
+			title: "{ftbquests.chapter.the_factory.quest51.title}"
 			x: -2.0d
 			y: 9.5d
 		}
@@ -1896,21 +1896,21 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&2Certain multiblocks in CEu will require a Maintenance Hatch and/or Muffler Hatch. &cThese cannot be shared between multiblocks. &2If you knew Maintenance in GT5u, fret not - Maintenance mechanics are far less punishing in CEu."
+				"{ftbquests.chapter.the_factory.quest52.description1}"
 				""
-				"&r- &aMuffler&r: This hatch must be &cunobstructed&r so it can output its beautiful smoke particles. When a recipe is performed, there is a small chance for the &3Muffler Hatch&r to give bonus items, typically tiny Dusts of Ash. It voids excess when full, so do not worry about it stopping machines from running."
+				"{ftbquests.chapter.the_factory.quest52.description2}"
 				"{@pagebreak}"
-				"- &aMaintenance&r: You will need to do Maintenance for the Multiblock to begin operating. This is done by having a &9Wrench&r, a &9Screwdriver&r, a &9Soft Mallet&r, a &9Hammer&r, a &9Wire Cutter&r, and a &9Crowbar&r in your inventory, opening the Maintenance Hatch and &eclicking the center spot once&r. &cNo need to move tools individually&r. Alternatively, you can fix problems by placing &9Tape&r in the Maintenance Hatch. "
+				"{ftbquests.chapter.the_factory.quest52.description3}"
 				""
-				"Maintenance problems may occur after &948 real hours of activity&r. Needless to say, they are very rare. Each problem increases recipe durations by 10%. Fixing the problems is done the same way as above."
+				"{ftbquests.chapter.the_factory.quest52.description4}"
 				"{@pagebreak}"
-				"Later, you will unlock other Maintenance Hatches that do not enforce fixing the problems manually. Both start with &6no Maintenance required&r:"
+				"{ftbquests.chapter.the_factory.quest52.description5}"
 				""
-				"- &3Configurable Maintenance Hatch&r (&6HV&r): You can configure it to cut off &a10% duration&r on recipes, at the cost of making Maintenance issues happen three times as fast. That is &916 real hours&r of activity. &9Tape&r can fix problems in this Hatch as well."
+				"{ftbquests.chapter.the_factory.quest52.description6}"
 				""
-				"- &3Automatic Maintenance Hatch&r (&9HV&r): Eliminates the need for Maintenance, &6forever&r."
+				"{ftbquests.chapter.the_factory.quest52.description7}"
 				""
-				"- &3Cleaning Maintenance Hatch&r (&9IV&r): Functions as an &3Automatic Maintenance Hatch&r, and allows the multiblock to perform recipes that would otherwise need be performed in a &2Cleanroom&r."
+				"{ftbquests.chapter.the_factory.quest52.description8}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:maintenance_hatch"
@@ -1920,22 +1920,22 @@
 				id: "44CBD475F0332E0C"
 				type: "checkmark"
 			}]
-			title: "&2Maintenance and Muffler Mechanics"
+			title: "{ftbquests.chapter.the_factory.quest52.title}"
 			x: 10.5d
 			y: 9.375d
 		}
 		{
 			dependencies: ["2D31856F6EF1ED69"]
 			description: [
-				"&9GregTech Power&r can be tricky to handle. Luckily, there are several tools you can use to tackle some of the problems."
+				"{ftbquests.chapter.the_factory.quest53.description1}"
 				""
-				"- &aDiode&r: A block which accepts energy on 5 sides, and outputs it on a single side. Its main purpose is to limit Amperage flow through it - adjust it by right-clicking it with a Soft Hammer, &2and to transport power into Cleanrooms.&r Not to be confused with the Diodes used as crafting components."
+				"{ftbquests.chapter.the_factory.quest53.description2}"
 				""
-				"- &aTransformer&r: A block which changes between 4A of a lower voltage and 1A of a voltage one tier higher."
+				"{ftbquests.chapter.the_factory.quest53.description3}"
 				""
-				"- &2Adjustable Transformer&r: Similar to the Transformer, but can be configured to transform up to 64A Low <-> 16A High."
+				"{ftbquests.chapter.the_factory.quest53.description4}"
 				""
-				"- &aBattery Buffer&r: A block which can hold GregTech Batteries. Each battery accepts up to 2A and can provide up to 1A. &2They have been reworked in CEu to not be as terrible to use."
+				"{ftbquests.chapter.the_factory.quest53.description5}"
 			]
 			icon: "gtceu:mv_transformer_1a"
 			id: "18D8D18C4494C587"
@@ -1944,35 +1944,35 @@
 				id: "14E359BEBFB23558"
 				type: "checkmark"
 			}]
-			title: "&2GT Power Management"
+			title: "{ftbquests.chapter.the_factory.quest53.title}"
 			x: 12.75d
 			y: 7.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are seperate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine."
+				"{ftbquests.chapter.the_factory.quest54.description1}"
 				""
-				"Here's a list of some covers there are in the game, and what they do:"
+				"{ftbquests.chapter.the_factory.quest54.description2}"
 				""
-				"- &lConveyor&r: transfers items continuously to or from an adjacent inventory; is capable of round robin."
+				"{ftbquests.chapter.the_factory.quest54.description3}"
 				""
-				"- &lPump&r: is much like a &aConveyor&f, but for fluids."
+				"{ftbquests.chapter.the_factory.quest54.description4}"
 				""
-				"- &lRobotic Arm&r: is much like a &aConveyor&r, but has two additional modes:"
-				"    * &eKeep Exact&r: moves items to keep a stock of at most the specified number of items"
-				"    * &eSupply Exact&r: transfers precisely the specified number of items per operation."
-				"This cover is very useful for crafting automation."
+				"{ftbquests.chapter.the_factory.quest54.description5}"
+				"{ftbquests.chapter.the_factory.quest54.description6}"
+				"{ftbquests.chapter.the_factory.quest54.description7}"
+				"{ftbquests.chapter.the_factory.quest54.description8}"
 				""
-				"- &lFluid Regulator&r: is like a &aRobotic Arm&r, but works with fluids instead of items."
+				"{ftbquests.chapter.the_factory.quest54.description9}"
 				""
-				"- &lShutter&r: prevents automation from interacting with a specific side of a machine."
+				"{ftbquests.chapter.the_factory.quest54.description10}"
 				""
-				"- Detector&2: Available in Item, Fluid, Energy, Activity, and Advanced Activity flavours. Emits a Redstone signal depending on the status of whatever it's detecting."
+				"{ftbquests.chapter.the_factory.quest54.description11}"
 				""
-				"- &lDigital Interface&r: &2A graphical display for the machine's current status. Can display things like contained fluids, energy levels, etc.&r"
+				"{ftbquests.chapter.the_factory.quest54.description12}"
 				""
-				"Covers that move items or fluids can have a &aFilter&r placed inside them. These modify the functionality of covers in ways explained in their own quests."
+				"{ftbquests.chapter.the_factory.quest54.description13}"
 			]
 			icon: "gtceu:lv_electric_pump"
 			id: "1A427A8CB43C8B59"
@@ -1981,41 +1981,41 @@
 				id: "550495EAC8E9629D"
 				type: "checkmark"
 			}]
-			title: "&9Machine Covers"
+			title: "{ftbquests.chapter.the_factory.quest54.title}"
 			x: 15.0d
 			y: 9.375d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["&9Pressing the second tab in any given machine's GUI will open up a view showing the machine and any blocks it is touching.&r From there, you can click on a side of the machine and easily add, edit and remove &acovers&r, and configure if the machine should &3automatically output&r and which side it should output to. "]
+			description: ["{ftbquests.chapter.the_factory.quest55.description1}"]
 			icon: "minecraft:hopper"
 			id: "431BB650AC492C84"
 			size: 1.5d
 			tasks: [{
 				id: "65EF130C1913A8AD"
-				title: "Screwdrive Output Sides!"
+				title: "{ftbquests.chapter.the_factory.quest55.task.title1}"
 				type: "checkmark"
 			}]
-			title: "&9 Machine Auto-Output"
+			title: "{ftbquests.chapter.the_factory.quest55.title}"
 			x: 12.75d
 			y: 9.375d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&aFilters&r are a type of machine cover that controls what items or fluids are allowed to pass through it. They can be used directly on the side of a machine to affect external automation or the machine's &aauto-output functionality&r."
+				"{ftbquests.chapter.the_factory.quest56.description1}"
 				""
-				"You can also &eplace filters inside of other covers&r to control what items or fluids that cover will interact with. When used in a &6Robot Arm&r, &aItem Filters&r make for a powerful automation tool for &ekeeping specific items in stock&r in specific quantities in Machines. With &6Fluid Regulators&r, similar behavior is possible with fluids using a &aFluid Filter&r. For &6Conveyors&r and &6Pumps&r, it simply limits what that cover will move."
+				"{ftbquests.chapter.the_factory.quest56.description2}"
 				"{@pagebreak}"
-				"&aFilters&r all have 9 configurable slots and whitelist/blacklist modes, and can be applied to multiple sides of machines. When placed inside a &6Robot Arm&r in &eKeep Exact&r or &eSupply Exact&r mode&r, the item count in a filter can be incremented by &eright clicking&r and decremented by &eleft clicking&r. Holding &eShift&r causes the count to increase/decrease by a factor of 2. This controls the number of each type of item that will be kept in stock or moved at a time."
+				"{ftbquests.chapter.the_factory.quest56.description3}"
 				""
-				"Similar controls are available for the &aFluid Filter&r when placed inside a &6Fluid Regulator&r."
+				"{ftbquests.chapter.the_factory.quest56.description4}"
 				""
-				"Additionally, the &aTag Filter&r&r is a powerful tool that has a specialized filter which uses Tags and &rboolean expressions &r, e. g. '&6forge:hot_ingots&r' will match all hot ingots, '&6forge:dusts&r' will match all regular dusts, and '&6forge:tiny_dusts&r' will match all tiny piles."
+				"{ftbquests.chapter.the_factory.quest56.description5}"
 				""
-				"Tags are used similarly in the &eTag Export Bus&r."
+				"{ftbquests.chapter.the_factory.quest56.description6}"
 				""
-				"All &bGregTech&r Filters can be configured using ghost items from &bEMI&r."
+				"{ftbquests.chapter.the_factory.quest56.description7}"
 			]
 			id: "5F6B13DBCABA5078"
 			size: 1.5d
@@ -2041,7 +2041,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Filters"
+			title: "{ftbquests.chapter.the_factory.quest56.title}"
 			x: 15.0d
 			y: 7.5d
 		}
@@ -2051,9 +2051,9 @@
 				"273F3F8DD6A3DCC5"
 			]
 			description: [
-				"Item conduits are useful for moving items between inventories over moderate distances."
+				"{ftbquests.chapter.the_factory.quest57.description1}"
 				""
-				"Crafting them in an Assembling Machine instead of by hand gives twice as many conduits."
+				"{ftbquests.chapter.the_factory.quest57.description2}"
 			]
 			hide_until_deps_visible: true
 			id: "4F239316765C7CA1"
@@ -2068,22 +2068,22 @@
 				item: "enderio:item_conduit"
 				type: "item"
 			}]
-			title: "Item Conduits"
+			title: "{ftbquests.chapter.the_factory.quest57.title}"
 			x: 4.5d
 			y: -9.5d
 		}
 		{
 			dependencies: ["4CD6C60CBEFFA317"]
 			description: [
-				"The main function of this oven is to increase the fuel values of your wood and coal while also recovering some of the various potentially useful waste products."
+				"{ftbquests.chapter.the_factory.quest58.description1}"
 				""
-				"Turning &6Coal&r into &6Coal Coke&r will not only make it more useful as fuel, but will also produce &9Phenol&r, which you'll need for circuits."
+				"{ftbquests.chapter.the_factory.quest58.description2}"
 				""
-				"The Pyrolyse Oven is also the source of several other fluids that can be distilled for useful ingredients."
+				"{ftbquests.chapter.the_factory.quest58.description3}"
 				""
-				"Remember that Hatches and Buses can be replaced by Hatches and Buses of any tier, although the Input Bus must be at least LV, as there are 2 inputs, and that you can &6sneak-right click&r the controller to enable the in-world preview."
+				"{ftbquests.chapter.the_factory.quest58.description4}"
 				""
-				"&2As stated in the tooltip, higher tier coils will make this faster."
+				"{ftbquests.chapter.the_factory.quest58.description5}"
 			]
 			icon: "gtceu:pyrolyse_oven"
 			id: "0D6C8FFD01BE5C21"
@@ -2148,18 +2148,18 @@
 					type: "item"
 				}
 			]
-			title: "&2Pyrolyse Oven"
+			title: "{ftbquests.chapter.the_factory.quest58.title}"
 			x: 10.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
-				"The &bPhytogenic Insolator&r is a way to &9passively produce wood in the earlygame&r. While somewhat slow, it only requires &a10 rf/t&r to operate, meaning you can just set it down and not have to worry about it, and then come back to wood when you need some for crafting or steel production."
+				"{ftbquests.chapter.the_factory.quest59.description1}"
 				""
-				"Using &bHardened Integral Components&r in it will cause it to work 1.5x faster, while only requiring an extra &a5 rf/t&r to operate, and using &6Bonemeal&r or otherwise will boost how much wood you get per cycle."
+				"{ftbquests.chapter.the_factory.quest59.description2}"
 				""
-				"By the way, &bThermal&r Machines are capable of Automatic I/O, try placing a 2x2 drawer beside your &bPhytogenic Insolator&r and configuring it to both push to and pull from the side with the drawer."
+				"{ftbquests.chapter.the_factory.quest59.description3}"
 			]
 			id: "2607F8404B56773B"
 			rewards: [{
@@ -2167,13 +2167,13 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "...and crops as well, I guess."
+			subtitle: "{ftbquests.chapter.the_factory.quest59.subtitle}"
 			tasks: [{
 				id: "4ED486548C376854"
 				item: "thermal:machine_insolator"
 				type: "item"
 			}]
-			title: "&9Infinite Wood"
+			title: "{ftbquests.chapter.the_factory.quest59.title}"
 			x: 4.5d
 			y: -5.0d
 		}
@@ -2183,9 +2183,9 @@
 				"3EDD0A986384F2A7"
 			]
 			description: [
-				"Now that you have a &3Wiremill&f and a &2Bender&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &9Monicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
+				"{ftbquests.chapter.the_factory.quest60.description1}"
 				""
-				"With renewable &9Monicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
+				"{ftbquests.chapter.the_factory.quest60.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
@@ -2197,26 +2197,26 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "Money!"
+			subtitle: "{ftbquests.chapter.the_factory.quest60.subtitle}"
 			tasks: [{
 				id: "79EF1B91285482AB"
 				item: "bountiful:bountyboard"
 				type: "item"
 			}]
-			title: "&2Bounties For monicoins!"
+			title: "{ftbquests.chapter.the_factory.quest60.title}"
 			x: 10.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["3AB0402B19DD5BA8"]
-			description: ["Bigger barrels."]
+			description: ["{ftbquests.chapter.the_factory.quest61.description1}"]
 			id: "3E4DEA4FFD019AB9"
 			tasks: [{
 				id: "4355F32860B92456"
 				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
 				type: "item"
 			}]
-			title: "&9Upgrades, people, upgrades."
+			title: "{ftbquests.chapter.the_factory.quest61.title}"
 			x: 8.5d
 			y: 7.5d
 		}
@@ -2225,7 +2225,7 @@
 				"57E7182198B2EA9A"
 				"545CCC24D9401794"
 			]
-			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
+			description: ["{ftbquests.chapter.the_factory.quest62.description1}"]
 			hide_until_deps_visible: true
 			icon: "steamadditions:steam_foundry"
 			id: "5D60CAE3A33000C3"
@@ -2269,16 +2269,16 @@
 					type: "item"
 				}
 			]
-			title: "&9Steam Foundry"
+			title: "{ftbquests.chapter.the_factory.quest62.title}"
 			x: 4.517857142857139d
 			y: 1.4285714285714306d
 		}
 		{
 			dependencies: ["47094A5717952699"]
 			description: [
-				"This relatively inexpensive item will suck nearby items into your inventory."
+				"{ftbquests.chapter.the_factory.quest63.description1}"
 				""
-				"The &6GregTech Magnet&r, &6Ender IO Electromagnet&r, and &6Thermal FluxoMagnet&r can all be placed in a &dCurio slot&r to save inventory space."
+				"{ftbquests.chapter.the_factory.quest63.description2}"
 			]
 			id: "39394D5596FF8BC8"
 			rewards: [{
@@ -2319,21 +2319,21 @@
 						]
 					}
 				}
-				title: "Any Magnet"
+				title: "{ftbquests.chapter.the_factory.quest63.task.title1}"
 				type: "item"
 			}]
-			title: "Magnet"
+			title: "{ftbquests.chapter.the_factory.quest63.title}"
 			x: -2.75d
 			y: -6.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"To mute a Gregtech machine, right-click it with a &6Hammer&r. (Not the Mining kind!)"
+				"{ftbquests.chapter.the_factory.quest64.description1}"
 				""
-				"For other sounds, there is a button in the &etop-left&r of your inventory that looks like a speaker. Clicking it brings you to the &bExtreme Sound Muffler&r menu."
+				"{ftbquests.chapter.the_factory.quest64.description2}"
 				""
-				"In this menu you can &eattenuate the volume of sounds that were recently played&r, or set an \"Anchor\" to reduce the volume of sounds in that area - most of the controls in this menu have a tooltip to tell you what they do."
+				"{ftbquests.chapter.the_factory.quest64.description3}"
 			]
 			icon: {
 				Count: 1
@@ -2344,12 +2344,12 @@
 			}
 			id: "5B52FFEBF5D65C20"
 			size: 1.5d
-			subtitle: "My poor ears!"
+			subtitle: "{ftbquests.chapter.the_factory.quest64.subtitle}"
 			tasks: [{
 				id: "2D68D336FAC66CCE"
 				type: "checkmark"
 			}]
-			title: "&9Muting and Muffling"
+			title: "{ftbquests.chapter.the_factory.quest64.title}"
 			x: 17.25d
 			y: 9.375d
 		}
@@ -2360,11 +2360,11 @@
 				"29A487F0BC43AAF9"
 			]
 			description: [
-				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. This is useful when you have two machines running and both are unable to keep going because of a lack of power... let one finish then turn the other one back on with a second hit from the mallet."
+				"{ftbquests.chapter.the_factory.quest65.description1}"
 				""
-				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r now that you can."
+				"{ftbquests.chapter.the_factory.quest65.description2}"
 				""
-				"This quest accepts a &aSoft Mallet&r made from any material."
+				"{ftbquests.chapter.the_factory.quest65.description3}"
 			]
 			hide_until_deps_visible: true
 			icon: {
@@ -2389,7 +2389,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "Bonk!"
+			subtitle: "{ftbquests.chapter.the_factory.quest65.subtitle}"
 			tasks: [{
 				id: "56A2D430950E2112"
 				item: {
@@ -2471,13 +2471,13 @@
 						]
 					}
 				}
-				title: "Any Soft Mallet"
+				title: "{ftbquests.chapter.the_factory.quest65.task.title1}"
 				type: "item"
 			}]
-			title: "Soft Mallet"
+			title: "{ftbquests.chapter.the_factory.quest65.title}"
 			x: 1.0d
 			y: -2.0d
 		}
 	]
-	title: "The Factory"
+	title: "{ftbquests.chapter.the_factory.title}"
 }
