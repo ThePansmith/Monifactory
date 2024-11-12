@@ -1,0 +1,11 @@
+{
+    "item.hostilenetworks.prediction_matrix": "Pulsating Prediction Matrix",
+    "item.hostilenetworks.overworld_prediction": "§aOverworldian§f Matter",
+    "item.hostilenetworks.nether_prediction": "§cHellish§f Matter",
+    "item.hostilenetworks.end_prediction": "§dExtraterrestial§f Matter",
+    "hostilenetworks.name.thermal_elemental": "Thermal Elemental",
+    "hostilenetworks.trivia.basalz": "The much bulkier cousin\nof our flammable friend.\nBestowed with earthen strength.",
+    "hostilenetworks.trivia.blitz": "A wind elemental\nby another name.\nFortunately, they lack control\nof thunder.",
+    "hostilenetworks.trivia.blizz": "Take a Blaze\nand remove the heat.\nThe resulting husk is\nthe icy Blizz.",
+    "hostilenetworks.trivia.thermal_elemental": "A combination of all\nthe Thermal mobs into one.\nIt is only stable\n in a simulation."
+}
