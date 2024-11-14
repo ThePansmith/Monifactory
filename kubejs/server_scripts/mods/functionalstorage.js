@@ -1,8 +1,4 @@
 ServerEvents.recipes(event => {
-    //Remove bugged Oak Drawer recipes
-    event.remove({ id: /functionalstorage:oak_drawer_alternate/ })
-
-
     // Fluid Drawers
     event.replaceInput({ output: /fluid/, mod: 'functionalstorage'}, '#minecraft:planks', '#forge:plates/iron')
     event.replaceInput({ output: /fluid/, mod: 'functionalstorage'}, 'minecraft:bucket', 'gtceu:lv_hermetic_casing')
