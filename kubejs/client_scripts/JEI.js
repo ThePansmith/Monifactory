@@ -167,6 +167,9 @@ JEIEvents.hideItems(event => {
     //Sophisticated Experience
     event.hide(/xp_pump_upgrade/)
 
+    // Temp remove packing tape (involved in a dupe glitch)
+    event.hide(/sophisticatedstorage:packing_tape/)
+
     //Greg Milk
     event.hide('gtceu:milk')
 
