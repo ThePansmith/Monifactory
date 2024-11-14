@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
 
     fabricator('blaze', 1, '10x minecraft:blaze_rod')
     fabricator('blaze', 2, '32x gtceu:sulfur_dust')
+    fabricator('blaze', 3, '32x minecraft:magma_block')
     fabricator('creeper', 1, '32x minecraft:gunpowder')
     fabricator('creeper', 2, '6x minecraft:creeper_head')
     fabricator('creeper', 3, '32x minecraft:coal')
