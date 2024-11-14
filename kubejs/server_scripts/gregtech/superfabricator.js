@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
     fabricator('witch', 3, '16x minecraft:sugar')
     fabricator('wither', 1, 'kubejs:wither_realm_data')
     fabricator('wither', 2, 'kubejs:wither_bone')
-    fabricator('wither_skeleton', 1, 'minecraft:wither_skeleton_skull')
+    fabricator('wither_skeleton', 1, '4x minecraft:wither_skeleton_skull')
     fabricator('wither_skeleton', 2, '12x gtceu:lead_ingot')
     fabricator('zombie', 1, '40x minecraft:rotten_flesh')
     fabricator('zombie', 2, '12x minecraft:iron_ingot')
