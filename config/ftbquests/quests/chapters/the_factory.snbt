@@ -2360,7 +2360,7 @@
 				"29A487F0BC43AAF9"
 			]
 			description: [
-				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. This is useful when you have two machines running and both are unable to keep going because of a lack of power... let one finish then turn the other one back on with a second hit from the mallet."
+				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. While &9this can also be done by pressing the pause button within the machine's GUI&r, the Soft Mallet has a special function where &9it can pause the machine after it finishes it's current recipe&r if you &6sneak-right click&r it. This can be helpful if you are low on power, but is mostly useful when you need to upgrade a multiblock (more on those later)."
 				""
 				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r now that you can."
 				""
@@ -2474,7 +2474,7 @@
 				title: "Any Soft Mallet"
 				type: "item"
 			}]
-			title: "Soft Mallet"
+			title: "&9Soft Mallet"
 			x: 1.0d
 			y: -2.0d
 		}
