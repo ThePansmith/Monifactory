@@ -954,12 +954,12 @@ ServerEvents.recipes(event => {
         .EUt(128)
         .circuit(4)
 
-	event.remove({ id: 'expatternprovider:epp_upgrade' })
-	event.recipes.gtceu.assembler("kubejs:epp/ex_pattern_provider_upgrade")
-		.itemInputs("ae2:pattern_provider", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
-		.itemOutputs("expatternprovider:pattern_provider_upgrade")
-		.duration(180)
-		.EUt(128)
+    event.remove({ id: 'expatternprovider:epp_upgrade' })
+    event.recipes.gtceu.assembler("kubejs:epp/ex_pattern_provider_upgrade")
+        .itemInputs("ae2:pattern_provider", "2x ae2:capacity_card", "4x gtceu:aluminium_plate")
+        .itemOutputs("expatternprovider:pattern_provider_upgrade")
+        .duration(180)
+        .EUt(128)
         .circuit(3)
 
     // Extended Interface
@@ -978,6 +978,14 @@ ServerEvents.recipes(event => {
         .duration(180)
         .EUt(128)
         .circuit(3)
+    
+    // Oversize Interface
+    event.remove({ id: 'expatternprovider:oversize_interface' })
+    event.recipes.gtceu.assembler("kubejs:epp/oversize_interface")
+        .itemInputs("8x expatternprovider:ex_interface", "8x ae2:capacity_card", "8x gtceu:stainless_steel_plate")
+        .itemOutputs("expatternprovider:oversize_interface")
+        .duration(240)
+        .EUt(512)
 
     // Extended MA
     event.remove({ id: 'expatternprovider:ex_molecular_assembler' })
@@ -1005,6 +1013,51 @@ ServerEvents.recipes(event => {
 
     //ME packing tape
     event.shapeless('expatternprovider:me_packing_tape', ['gtceu:basic_tape', 'gtceu:fluix_dust']).id('expatternprovider:tape')
+
+    // Assembler Matrix
+    // Assembler Matrix Frame
+    event.remove({ id: 'expatternprovider:assembler_matrix_frame' })
+    event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_frame")
+        .itemInputs("4x gtceu:mythril_plate", "4x gtceu:blue_steel_frame", "gtceu:plascrete", "#gtceu:circuits/hv")
+        .inputFluids('gtceu:polyethylene 288')
+        .itemOutputs("expatternprovider:assembler_matrix_frame")
+        .duration(150)
+        .EUt(1920)
+
+    // Assembler Matrix Wall
+    event.remove({ id: 'expatternprovider:assembler_matrix_wall' })
+    event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_wall")
+        .itemInputs("expatternprovider:assembler_matrix_frame", "gtceu:hv_electric_motor")
+        .itemOutputs("expatternprovider:assembler_matrix_wall")
+        .duration(100)
+        .EUt(1920)
+    
+    // Assembler Matrix Pattern Core
+    event.remove({ id: 'expatternprovider:assembler_matrix_pattern' })
+    event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_pattern")
+        .itemInputs("4x expatternprovider:assembler_matrix_frame", "4x ae2:engineering_processor", "expatternprovider:ex_pattern_provider", "6x ae2:blue_lumen_paint_ball")
+        .inputFluids('gtceu:polyethylene 288')
+        .itemOutputs("expatternprovider:assembler_matrix_pattern")
+        .duration(150)
+        .EUt(1920)
+
+    // Assembler Matrix Craft Core
+    event.remove({ id: 'expatternprovider:assembler_matrix_crafter' })
+    event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_crafter")
+        .itemInputs("4x expatternprovider:assembler_matrix_frame", "4x ae2:engineering_processor", "expatternprovider:ex_molecular_assembler", "6x ae2:purple_lumen_paint_ball")
+        .inputFluids('gtceu:polyethylene 288')
+        .itemOutputs("expatternprovider:assembler_matrix_crafter")
+        .duration(150)
+        .EUt(1920)
+
+    // Assembler Matrix Speed Core
+    event.remove({ id: 'expatternprovider:assembler_matrix_speed' })
+    event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_speed")
+        .itemInputs("4x expatternprovider:assembler_matrix_frame", "4x megacells:accumulation_processor", "mae2:4x_crafting_accelerator", "expatternprovider:ex_pattern_provider", "expatternprovider:ex_molecular_assembler", "6x ae2:red_lumen_paint_ball")
+        .inputFluids('gtceu:polyethylene 288')
+        .itemOutputs("expatternprovider:assembler_matrix_speed")
+        .duration(150)
+        .EUt(1920)
 
     //Misc stuff
     event.shaped('expatternprovider:ingredient_buffer',
