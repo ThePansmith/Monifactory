@@ -75,7 +75,7 @@ ServerEvents.tags('item', event => {
     event.add('forge:microminers', '/kubejs:stabilized_microminer_t/')
 
     // For stonecutting Marble
-    event.add('moni:marble', /^(gtceu:(marble|polished_marble|marble_bricks|cracked_marble_bricks|chisel_marble|marble_tile|marble_small_tile|marble_windmill_a|marble_windmill_b|small_marble_bricks|square_marble_bricks))$/)
+    event.add('moni:marble', /^(gtceu:(marble|polished_marble|marble_bricks|cracked_marble_bricks|chiseled_marble|marble_tile|marble_small_tile|marble_windmill_a|marble_windmill_b|small_marble_bricks|square_marble_bricks))$/)
 
     unifyChisel(event);
 })
