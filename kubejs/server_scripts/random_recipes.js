@@ -645,7 +645,19 @@ ServerEvents.recipes(event => {
                     event.stonecutting(output, input); // Make the recipe
             });
         });
-    }); 
+    });
+
+    // Stonecutting Marble
+    let MarbleTag = ['#moni:marble']; // What item tags to go through (change this so you have your tags)
+    MarbleTag.forEach(tag => {
+        let Marbles = Ingredient.of(tag).stacks; // Get all of the items with that tag
+        Marbles.forEach(input => {
+            Marbles.forEach(output => { // Loop through the items so all combination of input and output are met
+                if (input != output) // Ignore recipes where input and output are the same item
+                    event.stonecutting(output, input); // Make the recipe
+            });
+        });
+    });
 
     //LUV Components
     event.remove({ id: 'gtceu:assembly_line/electric_motor_luv'})
