@@ -30,7 +30,7 @@
 #Settings for general things.
 [General]
 	#Should the Handheld Crafting Table be enabled?
-	handheldWorkbench = true
+	handheldWorkbench = false
 
 #Settings for the Extended Crafting Tables.
 ["Table Crafting"]
