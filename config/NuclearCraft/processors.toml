@@ -2,7 +2,7 @@
 #Settings for In situ leaching
 [in_situ_leaching]
 	#Enable veins generation.
-	enable_veins = true
+	enable_veins = false
 	#Min and max values of blocks per vein.
 	#Result amount will be random value in this range.
 	blocks_per_vein = [30000, 70000]

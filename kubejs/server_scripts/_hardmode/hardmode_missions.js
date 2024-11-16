@@ -265,7 +265,7 @@ ServerEvents.recipes(event => {
             'kubejs:microminer_t6',
             '16x kubejs:quantum_flux',
             '16x kubejs:stabilized_curium',
-            '8x kubejs:impossible_realm_data',
+            '8x gtceu:manyullyn_ingot',
             '4x gtceu:void_empowered_block'
         )
         .itemOutputs(
