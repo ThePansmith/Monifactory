@@ -1020,7 +1020,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_frame")
         .itemInputs("4x gtceu:mythril_plate", "4x gtceu:blue_steel_frame", "gtceu:plascrete", "#gtceu:circuits/hv")
         .inputFluids('gtceu:polyethylene 288')
-        .itemOutputs("expatternprovider:assembler_matrix_frame")
+        .itemOutputs("4x expatternprovider:assembler_matrix_frame")
         .duration(150)
         .EUt(1920)
 
