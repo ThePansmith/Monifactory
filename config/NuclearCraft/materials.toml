@@ -1,11 +1,4 @@
 
-[slurries]
-	#List of available slurries (dissolved ores in acid)
-	#Color for slurry will be calculate from average texture color
-	#Texture location has to be: nuclearcraft:textures/block/ore/(slurry_name)_ore.png
-	#If no texture found it will generate random color
-	register_slurries = ["uranium", "iron", "gold", "aluminum", "thorium", "boron", "silver", "lead", "tin", "copper", "zinc", "cobalt", "platinum", "lithium", "magnesium"]
-
 [raw_chunks]
 	lithium = false
 	platinum = false
@@ -254,87 +247,9 @@
 	rhodochrosite = true
 	boron_nitride = true
 
-#Forge Tag priority
 [forge_tag_priority]
 	#Priority of mods to resolve forge tags to itemstack and fluidstack.
 	mods_priority = ["gtceu", "nuclearcraft"]
-
-[lithium]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = -60
-	max_height = 60
-
-[platinum]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = -60
-	max_height = 0
-
-[thorium]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = -60
-	max_height = 60
-
-[tin]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = 4
-	max_height = 60
-
-[magnesium]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = -60
-	max_height = 60
-
-[silver]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = -60
-	max_height = 60
-
-[cobalt]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = -60
-	max_height = 60
-
-[uranium]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = -60
-	max_height = 60
-
-[zinc]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = 4
-	max_height = 60
-
-[boron]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = -60
-	max_height = 60
-
-[lead]
-	register = true
-	dimensions = [0, -4848]
-	vein_size = 7
-	min_height = 4
-	max_height = 60
 
 [nuggets]
 	steel = true
