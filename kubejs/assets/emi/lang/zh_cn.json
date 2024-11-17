@@ -1,4 +1,5 @@
 {
+	"tag.item.gtceu.circuits": "电路板",
     "tag.item.gtceu.circuits.ulv": "ULV电路板",
     "tag.item.gtceu.circuits.lv": "LV电路板",
     "tag.item.gtceu.circuits.mv": "MV电路板",
@@ -8,9 +9,9 @@
     "tag.item.gtceu.circuits.luv": "LuV电路板",
     "tag.item.gtceu.circuits.zpm": "ZPM电路板",
     "tag.item.moni_quest.backpack": "背包",
-    "tag.item.moni.output_bus": "输出总线",
-    "tag.item.moni.input_bus": "输入总线",
-    "tag.item.moni.input_hatch": "输入仓",
-    "tag.item.moni.output_hatch": "输出仓",
+    "tag.item.moni.output_bus": "物品输出总线",
+    "tag.item.moni.input_bus": "物品输入总线",
+    "tag.item.moni.input_hatch": "流体输入仓",
+    "tag.item.moni.output_hatch": "流体输出仓",
     "tag.item.moni.coins": "货币"
 }
