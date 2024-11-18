@@ -88,6 +88,10 @@
 		containerClass = "com.direwolf20.laserio.client.screens.*"
 		sortRange = ""
 
+	[[sorting.containerOverrides]]
+		containerClass = "com.glodblock.github.extendedae.client.gui.*"
+		sortRange = ""
+
 	#Categor(y/ies) for sorting
 	#
 	#name: the name of the category
