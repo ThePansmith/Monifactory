@@ -970,7 +970,7 @@ ServerEvents.recipes(event => {
         .EUt(15)
     
     // Vanilla Ender Chest
-    event.remove({ output: 'minecraft:ender_chest', type: 'gregtech:assembler' })
+    event.remove({ id: 'gtceu:assembler/ender_chest' })
     event.recipes.gtceu.assembler('ender_chest')
         .itemInputs('8x minecraft:obsidian','minecraft:ender_eye')
         .itemOutputs('minecraft:ender_chest')
