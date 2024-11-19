@@ -22,7 +22,6 @@ if (Platform.isLoaded('fluxnetworks')) {
             .itemInputs('1x minecraft:ender_eye', '4x minecraft:obsidian', '4x fluxnetworks:flux_dust', '1x gtceu:luv_sensor', '1x gtceu:luv_emitter', '4x enderio:cryolobus_conduit')
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(200)
-            .circuit(1)
 
         //Flux Controller
         event.shaped('fluxnetworks:flux_controller', [

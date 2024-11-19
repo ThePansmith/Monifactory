@@ -968,5 +968,14 @@ ServerEvents.recipes(event => {
         .itemOutputs('minecraft:pearlescent_froglight')
         .duration(20)
         .EUt(15)
+    
+    // Vanilla Ender Chest
+    event.remove({ output: 'minecraft:ender_chest', type: 'gregtech:assembler' })
+    event.recipes.gtceu.assembler('ender_chest')
+        .itemInputs('8x minecraft:obsidian','minecraft:ender_eye')
+        .itemOutputs('minecraft:ender_chest')
+        .duration(100)
+        .EUt(4)
+        .circuit(1)
 })
  
