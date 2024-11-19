@@ -125,16 +125,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
-    // Large Material Press
-    event.create('large_material_press')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(6, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_COMPRESS, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COMPRESSOR)
-        .setIconSupplier(() => Item.of('gtceu:large_material_press'))
-
     // Omnic Forge
     event.create('omnic_forge')
         .category('multiblock')
@@ -182,8 +172,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-
-    GCyMMachines.LARGE_MATERIAL_PRESS.setRecipeTypes([GTRecipeTypes.BENDER_RECIPES, GTRecipeTypes.COMPRESSOR_RECIPES, GTRecipeTypes.FORGE_HAMMER_RECIPES, GTRecipeTypes.FORMING_PRESS_RECIPES])
 
     // Normal mode-exclusive multis            
     if (!isHardMode) {

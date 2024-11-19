@@ -18,5 +18,5 @@ placeholder = true
 	#Note that EU-to-FE conversion is provided by GTCEU, instead of Flux Networks.
 	#Ensure you have enabled GTCEU's nativeEUToPlatformNative and euToPlatformRatio = 4.
 	#A game/server restart is required to reload this setting.
-	enableGTCEU = false
+	enableGTCEU = true
 
