@@ -28,6 +28,12 @@ ItemEvents.tooltip(tooltip => {
     // Endgame Items
     tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
 
+    // Funny
+    tooltip.addAdvanced(['kubejs:meowni_plush'], (item, adv, text) => {
+        text.add(1, Text.blue('Requires nearly all the coins that you can possibly gather.'))
+        text.add(2, Text.blue('Exclusive to Hardmode and Expertmode players.'))
+    })
+
     // Questbook
     tooltip.addAdvanced(`ftbquests:book`, (item, adv, text) => {text.add(2, Text.gray('The quest window can also be opened with a keybind.'))})
 
