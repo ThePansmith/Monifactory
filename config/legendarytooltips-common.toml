@@ -65,7 +65,7 @@
 		level11_entries = ["%UEV", "^UEV"]
 		level12_entries = ["%UIV", "^UIV"]
 		level13_entries = ["%MAX", "^MAX"]
-		level14_entries = ["gtceu:creative_chest"]
+		level14_entries = ["gtceu:creative_chest", "kubejs:meowni_plush"]
 		level15_entries = ["%Creative", "^Creative"]
 		# Enter blacklist selectors here using the same format as above. Any items that match these selectors will NOT show a border.
 		blacklist = []

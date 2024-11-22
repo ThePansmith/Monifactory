@@ -9,6 +9,7 @@ JEIEvents.hideItems(event => {
     })
     event.hide(['gtceu:firebrick', 'gtceu:firebricks', 'gtceu:primitive_blast_furnace'])
     event.hide(/fireclay/)
+    event.hide('kubejs:meowni_plush')
 }
 
         if (isHardMode) {
