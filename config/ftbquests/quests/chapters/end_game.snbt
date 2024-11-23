@@ -1293,16 +1293,17 @@
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
-			description: [""]
+			description: ["&9Eltz&r is made by processing &6Eltic Actinate Gems&r in a Electric Blast Furnace, which in turn are created from &6Eltic Crystal Seeds&r, and some other materials."]
 			id: "786AECA42F53B45A"
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "Ez, right?"
 			tasks: [{
 				id: "3197EF56CDB20130"
-				item: "gtceu:uru_ingot"
+				item: "gtceu:eltz_ingot"
 				type: "item"
 			}]
-			title: "&9Uru"
+			title: "&9Eltz"
 			x: 43.75d
 			y: -26.75d
 		}
