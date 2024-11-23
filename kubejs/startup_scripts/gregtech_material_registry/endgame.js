@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('infinity', 168, 316, -1, null, '∞', false);
     event.create('monium', 69, 420, -1, null, 'Mu', false);
     event.create('crystal_matrix', 6, 6, -1, null, 'C*', false);
-    event.create('uru', 15, 15, -1, null, 'Ur', false)
+    event.create('eltz', 15, 15, -1, null, 'Ez', false)
 })
 
 // Omnium, Infinity, and Monium have animations and thus custom material icon sets.
@@ -79,18 +79,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('infinity')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE)
 
-    event.create('uru')
+    event.create('eltz')
         .ingot()
-        .element(GTElements.get('uru'))
+        .element(GTElements.get('eltz'))
         .color(0xffcc22).secondaryColor(0x991105)
         .iconSet(GTMaterialIconSet.BRIGHT)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.PHOSPHORESCENT)
        
-    event.create('uric_actinate')
+    event.create('eltic_actinate')
         .gem()
         .color(0xbb9966).secondaryColor(0x881105)
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
-        .components('1x uru', '2x actinium', '6x oxygen')
+        .components('1x eltz', '2x actinium', '6x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING)
 
     event.create('actinium_iron_oxide')

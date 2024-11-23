@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(GTValues.VHA[GTValues.EV])
 
-    //Uric actinate clump half
+    //Eltic actinate clump half
     event.recipes.gtceu.chemical_bath('inert_clump_bath')
         .itemInputs('3x kubejs:inert_clumps')
         .inputFluids('gtceu:distilled_water 2000')
@@ -74,21 +74,21 @@ ServerEvents.recipes(event => {
     
     event.recipes.gtceu.electromagnetic_separator('clean_cluster_separating')
         .itemInputs('kubejs:clean_inert_cluster')
-        .chancedOutput('kubejs:uric_crystal_seed', 1500, 500)
+        .chancedOutput('kubejs:eltic_crystal_seed', 1500, 500)
         .duration(2500)
         .EUt(GTValues.VA[GTValues.LuV])
 
     // Converge here
-    event.recipes.gtceu.autoclave('uric_actinide_crystal_growing')
-        .itemInputs('kubejs:uric_crystal_seed', '2x kubejs:shiny_metal_powder')
+    event.recipes.gtceu.autoclave('eltic_actinide_crystal_growing')
+        .itemInputs('kubejs:eltic_crystal_seed', '2x kubejs:shiny_metal_powder')
         .inputFluids('gtceu:saturated_water 500')
-        .itemOutputs('gtceu:uric_actinate_gem')
+        .itemOutputs('gtceu:eltic_actinate_gem')
         .duration(1200)
         .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.electric_blast_furnace('uru_ingot_blasting')
-        .itemInputs('gtceu:exquisite_uric_actinate_gem', '16x #forge:dusts/pulsating_alloy')
-        .itemOutputs('1x gtceu:uru_ingot', '8x gtceu:actinium_iron_oxide_dust')
+    event.recipes.gtceu.electric_blast_furnace('eltz_ingot_blasting')
+        .itemInputs('gtceu:exquisite_eltic_actinate_gem', '16x #forge:dusts/pulsating_alloy')
+        .itemOutputs('1x gtceu:eltz_ingot', '8x gtceu:actinium_iron_oxide_dust')
         .duration(1540)
         .blastFurnaceTemp(13600)
         .EUt(GTValues.VA[GTValues.UEV])

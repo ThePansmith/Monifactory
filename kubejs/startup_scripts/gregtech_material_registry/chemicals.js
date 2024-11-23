@@ -155,7 +155,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xACB279)
         .components('2x carbon', '6x hydrogen', '1x sulfur')
 
-    // Saturated water (Uru line midproduct)
+    // Saturated water (Eltz line midproduct)
     event.create('saturated_water')
         .liquid()
         .color(0x857049)

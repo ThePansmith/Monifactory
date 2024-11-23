@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uiv_motor')
-        .itemInputs('gtceu:long_magnetic_samarium_rod', '12x gtceu:long_uru_rod', '12x gtceu:uru_ring', '24x gtceu:uru_round', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '2x gtceu:holmium_single_wire')
+        .itemInputs('gtceu:long_magnetic_samarium_rod', '12x gtceu:long_eltz_rod', '12x gtceu:eltz_ring', '24x gtceu:eltz_round', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '2x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_electric_motor')
         .duration(1200)
@@ -265,7 +265,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uiv_piston')
-        .itemInputs('gtceu:uiv_electric_motor', '4x gtceu:uru_plate', '4x gtceu:uru_ring', '16x gtceu:uru_round', '4x gtceu:uru_rod', 'gtceu:uru_gear', '2x gtceu:small_uru_gear', '2x gtceu:holmium_single_wire')
+        .itemInputs('gtceu:uiv_electric_motor', '4x gtceu:eltz_plate', '4x gtceu:eltz_ring', '16x gtceu:eltz_round', '4x gtceu:eltz_rod', 'gtceu:eltz_gear', '2x gtceu:small_eltz_gear', '2x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_electric_piston')
         .duration(1200)
@@ -305,7 +305,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uiv_robot_arm')
-        .itemInputs('4x gtceu:long_uru_rod', 'gtceu:uru_gear', '3x gtceu:small_uru_gear', '3x gtceu:uiv_electric_motor', 'gtceu:uiv_electric_piston', '#gtceu:circuits/uiv', '2x #gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '4x gtceu:holmium_single_wire')
+        .itemInputs('4x gtceu:long_eltz_rod', 'gtceu:eltz_gear', '3x gtceu:small_eltz_gear', '3x gtceu:uiv_electric_motor', 'gtceu:uiv_electric_piston', '#gtceu:circuits/uiv', '2x #gtceu:circuits/uev', '4x #gtceu:circuits/uhv', '4x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_robot_arm')
         .duration(1200)
@@ -345,7 +345,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uiv_sensor')
-        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:uru_plate', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_single_wire')
+        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:eltz_plate', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_sensor')
         .duration(1200)
@@ -386,7 +386,7 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.assembly_line('uiv_emitter')
-        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:uru_rod', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_single_wire')
+        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:eltz_rod', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_emitter')
         .duration(1200)
@@ -429,7 +429,7 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.assembly_line('uiv_field_generator')
-        .itemInputs('gtceu:infinity_frame', '6x gtceu:uru_plate', '2x kubejs:quasi_stable_neutron_star', '2x gtceu:uiv_emitter', '2x #gtceu:circuits/uiv', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '4x gtceu:holmium_single_wire')
+        .itemInputs('gtceu:infinity_frame', '6x gtceu:eltz_plate', '2x kubejs:quasi_stable_neutron_star', '2x gtceu:uiv_emitter', '2x #gtceu:circuits/uiv', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '4x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_field_generator')
         .duration(1200)
@@ -469,7 +469,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uiv_conveyor')
-        .itemInputs('2x gtceu:uiv_electric_motor', '2x gtceu:infinity_plate', '4x gtceu:uru_ring', '16x gtceu:uru_round', '4x gtceu:uru_screw', '2x gtceu:holmium_single_wire')
+        .itemInputs('2x gtceu:uiv_electric_motor', '2x gtceu:infinity_plate', '4x gtceu:eltz_ring', '16x gtceu:eltz_round', '4x gtceu:eltz_screw', '2x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:styrene_butadiene_rubber 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_conveyor_module')
         .duration(1200)
@@ -509,7 +509,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uiv_pump')
-        .itemInputs('gtceu:uiv_electric_motor', 'gtceu:holmium_large_fluid_pipe', '2x gtceu:uru_plate', '8x gtceu:uru_screw', '16x gtceu:silicone_rubber_ring', '24x gtceu:uru_ring', 'gtceu:holmium_rotor', '2x gtceu:holmium_single_wire')
+        .itemInputs('gtceu:uiv_electric_motor', 'gtceu:holmium_large_fluid_pipe', '2x gtceu:eltz_plate', '8x gtceu:eltz_screw', '16x gtceu:silicone_rubber_ring', '24x gtceu:eltz_ring', 'gtceu:holmium_rotor', '2x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_electric_pump')
         .duration(1200)

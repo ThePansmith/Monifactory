@@ -360,7 +360,7 @@ StartupEvents.registry('item', event => {
     event.create('holmium_oxide_glass_dust')
 
 
-    //Uru metal processing intermediate products
+    //Eltz metal processing intermediate products
     event.create('reactive_dust_mixture')
     event.create('inert_dust_mixture')
     event.create('dusty_inert_powder')
@@ -371,7 +371,7 @@ StartupEvents.registry('item', event => {
     event.create('inert_clumps')
     event.create('saturated_inert_clumps')
     event.create('clean_inert_cluster')
-    event.create('uric_crystal_seed')
+    event.create('eltic_crystal_seed')
 
 
     // Post-Tank Wafer items
