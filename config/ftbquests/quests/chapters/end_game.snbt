@@ -118,8 +118,8 @@
 			id: "20F44ACD2F91FD2A"
 			linked_quest: "4DF92773C82F4AAC"
 			shape: "hexagon"
-			x: 40.25d
-			y: -20.0d
+			x: 41.75d
+			y: -16.0d
 		}
 		{
 			id: "3F8FC1CF9A8083E1"
@@ -292,7 +292,7 @@
 			id: "4EA1E0D437528747"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "I bet we could make robot arms out of this."
+			subtitle: "I bet we could make hulls out of this."
 			tasks: [{
 				id: "67517FC01121D069"
 				item: "gtceu:infinity_ingot"
@@ -637,7 +637,10 @@
 			y: -13.5d
 		}
 		{
-			dependencies: ["07057CDE4E021BA7"]
+			dependencies: [
+				"07057CDE4E021BA7"
+				"07E757AAA1C7435D"
+			]
 			description: [
 				"The &3Hyperbolic Microverse Projector&r is the most powerful projector, capable of running hundreds of missions in parallel. It can perform all previous Micro Miner missions, and opens the door to many new ones."
 				""
@@ -680,6 +683,7 @@
 			dependencies: [
 				"1B1D3A66B847D129"
 				"040B3FCD82533BD9"
+				"786AECA42F53B45A"
 			]
 			description: ["The IPMEPS is capable of altering the laws of physics on a microversal scale, thus allowing the production of previously impossible materials."]
 			id: "13578427FD9CC2CE"
@@ -1139,7 +1143,7 @@
 			description: [
 				"&9Ruined Hull&r is more abundant than &9Ruined Machine Parts&r but gives less &9Holmium&r overall. "
 				""
-				"It also drops high-end materials such as &6Neutronium&r, &6Tritanium&r, and &6Crystal Matrix Dust&r, although these are mostly irrelevant to you as you already have the &9Creative Quantum Tank.&r"
+				"It also drops high-end materials such as &6Neutronium&r, &6Tritanium&r, and &6Crystal Matrix Dust&r."
 			]
 			id: "72996D5B09AC57CF"
 			shape: "hexagon"
@@ -1286,6 +1290,72 @@
 			title: "Polyethyl Cyanoacrylate"
 			x: 48.0d
 			y: -24.25d
+		}
+		{
+			dependencies: ["1B1D3A66B847D129"]
+			description: [""]
+			id: "786AECA42F53B45A"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "3197EF56CDB20130"
+				item: "gtceu:uru_ingot"
+				type: "item"
+			}]
+			title: "&9Uru"
+			x: 43.75d
+			y: -26.75d
+		}
+		{
+			dependencies: [
+				"4DF92773C82F4AAC"
+				"07057CDE4E021BA7"
+			]
+			description: [
+				"A bioalloy, this material sees use in UEV Tier components."
+				""
+				"This material is primarly made up of a &6Sculk Microstructure Pulp&r and a bit &6Prussian Blue&r, and is activated in a discharger."
+			]
+			id: "0ED041E2114F7C84"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Slightly... Gooey?"
+			tasks: [{
+				id: "21D7458960FAB5AE"
+				item: "gtceu:sculk_bioalloy_ingot"
+				type: "item"
+			}]
+			title: "&9S.C.U.L.K. Bioalloy"
+			x: 45.75d
+			y: -16.0d
+		}
+		{
+			dependencies: ["01E542E1C9DAF5B4"]
+			description: [
+				"&9Actinium&r is a radioactive material, and be obtained by a reaction between a &6Iridium Neutron Reflector&r and &6Uranium Hexafluoride&r, having a chance of creating small piles of &9Actinium&r. "
+				""
+				"Keep in mind, though, that such volatile reaction could cause the reflector &eto break&r, so keeping spares is important."
+			]
+			icon: "gtceu:actinium_ingot"
+			id: "07E757AAA1C7435D"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Radioactive!"
+			tasks: [
+				{
+					id: "450DAA4FF933F49A"
+					item: "gtceu:actinium_ingot"
+					type: "item"
+				}
+				{
+					id: "65DF1406D1FBC1EA"
+					item: "gtceu:small_actinium_dust"
+					type: "item"
+				}
+			]
+			title: "&9Actinium"
+			x: 50.0d
+			y: -10.75d
 		}
 	]
 	title: "End Game"

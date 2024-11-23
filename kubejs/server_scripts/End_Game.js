@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.electrolyzer('actinium_from_uranium_hexafluoride')
         .inputFluids('gtceu:uranium_hexafluoride 1000')
-        .notConsumable('gtceu:neutron_reflector')
+        .chancedInput('gtceu:neutron_reflector', 100, 0)
         .outputFluids('gtceu:enriched_uranium_hexafluoride 50', 'gtceu:depleted_uranium_hexafluoride 450', 'gtceu:fluorine 800')
         .chancedOutput('gtceu:small_actinium_dust', 100, 500)
         .duration(160)
