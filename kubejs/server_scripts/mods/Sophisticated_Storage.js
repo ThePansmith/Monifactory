@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             'N N'
         ], {
             "N": '#forge:leather',
-            "I": '#forge:plates/wood',
+            "I": 'minecraft:iron_ingot',
             "C": '#forge:chests/wooden'
         }
     )
