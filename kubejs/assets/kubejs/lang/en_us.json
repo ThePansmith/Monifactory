@@ -361,6 +361,12 @@
   "item.kubejs.uev_tier_circuit": "UEV-Tier Circuit",
   "item.kubejs.uiv_tier_circuit": "UIV-Tier Circuit",
   "item.kubejs.max_tier_circuit": "MAX-Tier Circuit",
+  "item.kubejs.matter_circuit.tooltip" : "Omnicapable Circuits!",
+  "item.kubejs.dimensional_circuit.tooltip" : "Powered by Microverses!",
+  "item.kubejs.monic_processor.tooltip" : "The Beginning of The End",
+  "item.kubejs.monic_processor_assembly.tooltip" : "Can run vanilla Minecraft at a decent FPS",
+  "item.kubejs.monic_processor_computer.tooltip" : "Infinite Power",
+  "item.kubejs.monic_processor_mainframe.tooltip" : "The be-all end-all.",
   "item.kubejs.infinity_dust_block.tooltip": "§7§oNot quite solid"
 }
 

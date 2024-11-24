@@ -27,12 +27,21 @@ ItemEvents.tooltip(tooltip => {
 
     // Endgame Items
     tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
-
-    // Funny
-    tooltip.addAdvanced(['kubejs:meowni_plush'], (item, adv, text) => {
-        text.add(1, Text.blue('Requires nearly all the coins that you can possibly gather.'))
-        text.add(2, Text.blue('Exclusive to Hardmode and Expertmode players.'))
-    })
+    
+    //Hardmode+ Stuff
+    if (!isNormalMode) {
+        tooltip.add('gtceu:assembly_line', 'Items and fluids in must be inserted in the correct order.')
+        tooltip.addAdvanced(['kubejs:meowni_plush'], (item, adv, text) => {
+            text.add(1, Text.blue('Requires nearly all the coins that you can possibly gather.'))
+            text.add(2, Text.blue('Exclusive to Hardmode and Expertmode players.')) 
+        })
+    } else {
+        tooltip.add('gtceu:assembly_line', 'Items and fluids do not have to be in the correct order.')
+        tooltip.addAdvanced(['kubejs:meowni_plush'], (item, adv, text) => {
+            text.add(1, Text.blue('How did you get your hands on this? Friend of a dev?'))
+            text.add(2, Text.blue('(Normally) exclusive to Hardmode and Expertmode players.')) 
+        })
+    }
 
     // Questbook
     tooltip.addAdvanced(`ftbquests:book`, (item, adv, text) => {text.add(2, Text.gray('The quest window can also be opened with a keybind.'))})
@@ -79,6 +88,12 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(`kubejs:monic_processor_assembly`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uev_tier_circuit')))})
     tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uhv_tier_circuit')))})
 
+    tooltip.addAdvanced([`kubejs:matter_processor_mainframe`, `kubejs:matter_processor_computer`, `kubejs:matter_processor_assembly`, `kubejs:matter_processor`], (item, adv, text) => {text.add(1, Text.gray(Text.translatable('item.kubejs.matter_circuit.tooltip')))})
+    tooltip.addAdvanced([`kubejs:dimensional_processor_mainframe`, `kubejs:dimensional_processor_computer`, `kubejs:dimensional_processor_assembly`, `kubejs:dimensional_processor`], (item, adv, text) => {text.add(1, Text.gray(Text.translatable('item.kubejs.dimensional_circuit.tooltip')))})
+    tooltip.addAdvanced(`kubejs:monic_processor_mainframe`, (item, adv, text) => {text.add(1, Text.gray(Text.translatable('item.kubejs.monic_processor_mainframe.tooltip')))})
+    tooltip.addAdvanced(`kubejs:monic_processor_computer`, (item, adv, text) => {text.add(1, Text.gray(Text.translatable('item.kubejs.monic_processor_computer.tooltip')))})
+    tooltip.addAdvanced(`kubejs:monic_processor_assembly`, (item, adv, text) => {text.add(1, Text.gray(Text.translatable('item.kubejs.monic_processor_assembly.tooltip')))})
+    tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => {text.add(1, Text.gray(Text.translatable('item.kubejs.monic_processor.tooltip')))})
 
     // Multiblocks
     tooltip.add('gtceu:discharger', Text.translatable('gtceu.multiblock.discharger.description'))
@@ -88,6 +103,11 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.multiblock.advanced_microverse_projector_ii.description'))
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.multiblock.subatomic_digital_assembler.description'))
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.multiblock.actualization_chamber.description'))
+
+    //Singleblocks
+    tooltip.addAdvanced([`gtceu:lv_atomic_reconstructor`, `gtceu:mv_atomic_reconstructor`, `gtceu:hv_atomic_reconstructor`, `gtceu:ev_atomic_reconstructor`], (item, adv, text) => {text.add(1, Text.gray(Text.translatable('block.gtceu.lvev_atomic_reconstructor.desc')))})
+    tooltip.addAdvanced([`gtceu:iv_atomic_reconstructor`, `gtceu:luv_atomic_reconstructor`, `gtceu:zpm_atomic_reconstructor`], (item, adv, text) => {text.add(1, Text.gray(Text.translatable('block.gtceu.ivzpm_atomic_reconstructor.desc')))})
+    tooltip.addAdvanced([`gtceu:uv_atomic_reconstructor`, `gtceu:uhv_atomic_reconstructor`, `gtceu:uev_atomic_reconstructor`, `gtceu:uiv_atomic_reconstructor`], (item, adv, text) => {text.add(1, Text.gray(Text.translatable('block.gtceu.uvuiv_atomic_reconstructor.desc')))})
 
     tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
         text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
@@ -136,8 +156,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
     //Converters
-    tooltip.add(/^gtceu:.*a_energy_converter$/, "§7Cannot be extracted from in EU->FE mode!\nUse an FE buffer for this to push into.")
-    
+    tooltip.add(/^gtceu:.*a_energy_converter$/, "§7EU wires will convert to RF if plugged into a RF Machine")
+
     // Gregtech
     tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red("Negation operator [!] is nonfunctional."))
     tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')

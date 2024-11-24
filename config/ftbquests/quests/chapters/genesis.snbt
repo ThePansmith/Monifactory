@@ -345,7 +345,7 @@
 			description: [
 				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at your base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
-				"&bSophisticated Storage&r in particular is great for cheap storage. It's able to store 3 barrels' worth of items at its lowest tier (which costs only a bit of iron to craft), and can be upgraded to hold even more items."
+				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 2 barrels worth of items at it's lowest tier, costing only a bit of bronze and lead to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
@@ -360,11 +360,94 @@
 					id: "46CA42CF7D0730E6"
 					item: {
 						Count: 1
-						id: "sophisticatedstorage:gold_barrel"
+						id: "itemfilters:or"
 						tag: {
-							woodType: "spruce"
+							items: [
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "acacia"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "birch"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "crimson"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "dark_oak"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "jungle"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "oak"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "spruce"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "warped"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "mangrove"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "cherry"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:copper_barrel"
+									tag: {
+										woodType: "bamboo"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:basic_to_copper_tier_upgrade"
+								}
+							]
 						}
 					}
+					title: "Any Sophisticated Storage Bronze Barrel"
 					type: "item"
 				}
 				{
