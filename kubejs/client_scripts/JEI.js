@@ -194,6 +194,12 @@ JEIEvents.hideItems(event => {
     // PEX
     event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
 
+   // GCYr
+   event.hide(/gcyr:dyson/)
+   event.hide(/gcyr:.*_marker/)
+   event.hide(/gcyr:.*_casing/)
+   event.hide(['gcyr:beam_receiver', 'gcyr:space_elevator_support', 'gcyr:drone_hangar', 'gcyr:space_elevator'])
+
     // Hide debug item(s)
     event.hide('kubejs:debug_ctm_block')
     

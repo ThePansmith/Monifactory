@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             'N N'
         ], {
             "N": '#forge:leather',
-            "I": '#forge:plates/wood',
+            "I": 'minecraft:iron_ingot',
             "C": '#forge:chests/wooden'
         }
     )
@@ -264,6 +264,17 @@ ServerEvents.recipes(event => {
         I: 'minecraft:iron_ingot',
         H: 'minecraft:hopper',
         R: 'gtceu:red_alloy_plate'
+    })
+
+    event.remove({ output: 'sophisticatedstorage:advanced_hopper_upgrade' })
+    event.shaped('sophisticatedstorage:advanced_hopper_upgrade', [
+        ' R ',
+        'IUI',
+        'RRR'
+    ], {
+        U: 'sophisticatedstorage:upgrade_base',
+        I: 'gtceu:lv_conveyor_module',
+        R: 'gtceu:steel_plate'
     })
 
 

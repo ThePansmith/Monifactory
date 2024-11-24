@@ -297,7 +297,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&c&rOres in &9Monifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area!"
+				"&c&rOres in &9Monifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area! &9You can also click on a ore vein to mark it on your map!"
 				"&r"
 				"While the Prospector requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
 				"{@pagebreak}"
@@ -516,7 +516,7 @@
 				"{@pagebreak}"
 				"The Tool Belt is equippable as a &bBauble&r. Open your inventory and look for the Baubles button, then click it to reveal the additional bauble slots menu, and put it in the Belt Slot. Or, if you can't tell which bauble slot looks like a belt, just click in every bauble slot until it goes in."
 				""
-				"The Tool Belt can store anything with a stack size of 1, like swords, pickaxes, &bGregTech&r tools, and the &6Terminal&r. It has also been modified a bit, so it also allows any &bStorage Drawers&r key, and &cdoesn't allow any Thermal Satchel&r."
+				"The Tool Belt can store anything with a stack size of 1, like swords, pickaxes, &bGregTech&r tools, &bFunctional Storage&r Cards, and the like."
 				""
 				"Now, you can insert and extract from the belt! You can also use the Keybinds '&eCycle Tool Left&r' and '&eCycle Tool Right&r' whilst you are in the GUI."
 			]
@@ -1955,6 +1955,9 @@
 				"To collect the sugar cane, you can use a piston and an observer."
 				""
 				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
+				""
+				""
+				"[\"If the noises are annoying to you, take a look at \", {\"text\": \"this\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B52FFEBF5D65C20\" } },\" quest to see how to mute them.\"]"
 			]
 			icon: "snad:snad"
 			id: "529D50CE814AF449"
