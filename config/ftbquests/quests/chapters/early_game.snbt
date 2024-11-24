@@ -2249,9 +2249,11 @@
 		{
 			dependencies: ["61AD3760E271B431"]
 			description: [
-				"The &6Steam Separator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				"The &6Steam Separator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses only some Steam."
 				""
 				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
+				""
+				"&5Currently, Gregtech Modern Steam Multiblocks do not properly account for chanced outputs, see GregTech-Modern#2425 for more info."
 			]
 			icon: "steamadditions:steam_separator"
 			id: "45FA4FF0B16B3879"
