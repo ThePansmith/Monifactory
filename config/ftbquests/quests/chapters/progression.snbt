@@ -1207,7 +1207,7 @@
 		}
 		{
 			dependencies: ["3D7924B550A1BBA0"]
-			description: ["Possibly strong enough to run vanilla Minecraft at a decent FPS."]
+			description: ["Nearing the limits of circuitry."]
 			id: "0C9A9F33EEA3AB5E"
 			shape: "hexagon"
 			tasks: [{
@@ -1221,7 +1221,7 @@
 		}
 		{
 			dependencies: ["5A8D2BFAF02E6325"]
-			description: ["Infinite power in a circuit."]
+			description: ["A feat previously thought impossible."]
 			id: "3D7924B550A1BBA0"
 			shape: "hexagon"
 			tasks: [{
