@@ -266,6 +266,17 @@ ServerEvents.recipes(event => {
         R: 'gtceu:red_alloy_plate'
     })
 
+    event.remove({ output: 'sophisticatedstorage:advanced_hopper_upgrade' })
+    event.shaped('sophisticatedstorage:advanced_hopper_upgrade', [
+        ' R ',
+        'IUI',
+        'RRR'
+    ], {
+        U: 'sophisticatedstorage:upgrade_base',
+        I: 'gtceu:lv_conveyor_module',
+        R: 'gtceu:steel_plate'
+    })
+
 
     // Compression upgrades are removed in EM like Compacting Drawers
     if(isExpertMode) {

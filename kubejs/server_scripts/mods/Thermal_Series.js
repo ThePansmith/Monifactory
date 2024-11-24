@@ -742,6 +742,9 @@ ServerEvents.recipes(event => {
         B: '#forge:ingots/signalum'
     }).id('kubejs:lock');
 
+    // Workbench
+    event.replaceInput({ id: 'thermal:tinker_bench' }, 'minecraft:crafting_table', 'gtceu:lv_machine_hull')
+
     /*=== misc thermals ===*/
     event.remove({ output: 'thermal:phytogro' });
     event.shapeless('16x thermal:phytogro', [
