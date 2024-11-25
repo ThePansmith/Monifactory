@@ -458,12 +458,3 @@ StartupEvents.registry('item', event => {
             .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
     })
 })
-
-ItemEvents.toolTierRegistry(event => {
-    event.add("dev", (tier) => {
-        tier.enchantmentValue = 42
-        tier.level = 42
-        tier.uses = 42690
-        tier.speed = 12
-    })
-})
