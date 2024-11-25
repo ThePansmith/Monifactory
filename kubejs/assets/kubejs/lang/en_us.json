@@ -393,14 +393,16 @@
   "gtceu.assembly_line.tooltip.normal": "Items and fluids do not have to be in the correct order.",
   "gtceu.assembly_line.tooltip.hardmode": "Items and fluids must be inserted in the correct order.",
 
-  "kubejs.meowni_plush.tooltip.normal": "§9How did you get your hands on this?\n(Normally) exclusive to Hardmode and Expertmode players.",
-  "kubejs.meowni_plush.tooltip.hardmode": "§9Requires nearly all the coins that you can possibly gather.\nExclusive to Hardmode and Expertmode players.",
+  "kubejs.meowni_plush.tooltip.normal.1": "§9How did you get your hands on this?",
+  "kubejs.meowni_plush.tooltip.normal.2": "§9(Normally) exclusive to Hardmode and Expertmode players.",
+  "kubejs.meowni_plush.tooltip.hardmode.1": "§9Requires nearly all the coins that you can possibly gather.",
+  "kubejs.meowni_plush.tooltip.hardmode.2": "§9Exclusive to Hardmode and Expertmode players.",
 
   "ftbquests.book.tooltip": "The quest window can also be opened with a keybind.",
 
   "redstoneclock.redstone_clock.tooltip": "§7Needs a redstone signal on a dotted side to work.",
 
-  "hostilenetworks.blank_data_model.tooltip": "§7use it in the crafting table instead!",
+  "hostilenetworks.blank_data_model.tooltip": "§7Use it in the crafting table instead!",
   "hostilenetworks.data_model.tooltip": "§7Upgrades when used in the §3Simulation Chamber",
 
   "hostilenetworks.overworld_prediction.tooltip": "§7Experience per item: 10",
@@ -428,7 +430,7 @@
   "gtceu.ender_fluid_link_cover.tooltip": "§4Not yet implemented.",
   "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
 
-  "gcyr.rocket_scanner.tooltip": "§7Rotate the multiblock if your rocket doesnt build.",
+  "gcyr.rocket_scanner.tooltip": "§7Rotate the multiblock if your rocket doesn't build.",
   "gcyr.space_chestplate.tooltip": "§7Fill with Oxygen in a Canner.",
 
   "functionalstorage.storage_controller.tooltip": "§7Previously known as a Storage Controller",
@@ -436,7 +438,8 @@
 
   "ae2.facade.tooltip": "Crafted with Cable Anchors",
   "ae2.memory_card.tooltip": "Hold in offhand to set additional inputs on Multi P2Ps.",
-  "ae2.creative_fluid_cell.tooltip": "Cannot be made using Creative Tank data!\nAE2 devs will not fix a bug that allows this to make items as well.",
+  "ae2.creative_fluid_cell.tooltip.1": "Cannot be made using Creative Tank data!",
+  "ae2.creative_fluid_cell.tooltip.2": "§7AE2 devs will not fix a bug that allows this to make items as well.",
   "enderio.cap_bank.tooltip": "§4Currently TPS intensive, look into other options for power storage.",
   "kubejs.eternal_catalyst.tooltip": "Gaze into the Abyss...",
   "kubejs.infinity_catalyst.tooltip": "One is all, and all is one.",
@@ -446,19 +449,27 @@
   "extendedcrafting.the_ultimate_component.tooltip": "There is none better than I...",
   "extendedcrafting.auto_flux_crafter.tooltip": "§7Uses large amounts of energy to convert Sculk into Sculk Cores.",
   "extendedcrafting.flux_alternator.tooltip": "§7Provides Energy to the Sculk Charger, from up to 3 blocks away.",
-  "extendedcrafting.auto_table_instructions": "§7Cannot be directly inserted into!\nPut items in an inventory atop the table.",
+  "extendedcrafting.auto_table.tooltip.1": "§7Cannot be inserted into!",
+  "extendedcrafting.auto_table.tooltip.2": "§7Put items in an inventory atop the table instead.",
   "kubejs.excitationcoil.tooltip": "§7Used for Crafting.",
   "gtceu.terminal.tooltip": "§7Can autobuild multiblocks by shift-right-clicking a controller.",
-  "gtceu.prospector.tooltip": "§7Only shows ores in the immediate vicinity. \nIf you're looking for a specific ore, you may need to go exploring!",
-  "telepastries.nether_cake.tooltip": "§6Teleports you to the Nether§7 \nRefill by right-clicking with 2 or more Obsidian.",
-  "telepastries.overworld_cake.tooltip": "§6Teleports you to the Overworld§7 \nRefill by right-clicking with 2 or more vanilla Saplings.",
-  "telepastries.end_cake.tooltip": "§6Teleports you to the End§7 \nRefill by right-clicking with 2 or more Eyes of Ender.",
-  "telepastries.custom_cake.tooltip": "§6Teleports you to the Void World§7 \nRefill by right-clicking with 2 or more Pulsating Dust.",
-  "telepastries.lost_city_cake.tooltip": "§6Teleports you to the Lost Cities§7 \nTeleport without consuming by right-clicking with a Diamond.",
+  "gtceu.prospector.tooltip.1": "§7Only shows ores in the immediate vicinity.",
+  "gtceu.prospector.tooltip.2": "§7If you're looking for a specific ore, you may need to go exploring!",
+  "telepastries.nether_cake.tooltip.1": "§6Teleports you to the Nether§7",
+  "telepastries.nether_cake.tooltip.2": "§7Refill by right-clicking with 2 or more Obsidian.",
+  "telepastries.overworld_cake.tooltip.1": "§6Teleports you to the Overworld§7",
+  "telepastries.overworld_cake.tooltip.2": "§7Refill by right-clicking with 2 or more vanilla Saplings.",
+  "telepastries.end_cake.tooltip.1": "§6Teleports you to the End§7",
+  "telepastries.end_cake.tooltip.2": "§7Refill by right-clicking with 2 or more Eyes of Ender.",
+  "telepastries.custom_cake.tooltip.1": "§6Teleports you to the Void World§7",
+  "telepastries.custom_cake.tooltip.2": "§7Refill by right-clicking with 2 or more Pulsating Dust.",
+  "telepastries.lost_city_cake.tooltip.1": "§6Teleports you to the Lost Cities§7",
+  "telepastries.lost_city_cake.tooltip.2": "§7Teleport without consuming by right-clicking with a Diamond.",
 
-  "gtceu.macerator_byrproduct_warning.tooltip": "§4You must use a HV-tier macerator or higher for byproducts.",
+  "gtceu.macerator_byrproduct_warning.tooltip": "§4You must use an HV-tier macerator or higher for byproducts.",
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
-  "chipped.workbenches.tooltip": "§7Recipes can also be performed in the §3Stonecutter§7,\nwhich can be automated with §bAE2§7's §3Molecular Assemblers§7.",
+  "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
+  "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",
   "tempad.tempad.tooltip": "§6Uses Monipennies as fuel"
 }
 
