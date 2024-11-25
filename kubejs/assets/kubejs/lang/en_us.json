@@ -391,7 +391,7 @@
   "kubejs.ultimate_gem.tooltip": "§eRecipe is shapeless.",
 
   "gtceu.assembly_line.tooltip.normal": "Items and fluids do not have to be in the correct order.",
-  "gtceu.assembly_line.tooltip.hardmode": "Items and fluids in must be inserted in the correct order.",
+  "gtceu.assembly_line.tooltip.hardmode": "Items and fluids must be inserted in the correct order.",
 
   "kubejs.meowni_plush.tooltip.normal": "§9How did you get your hands on this?\n(Normally) exclusive to Hardmode and Expertmode players.",
   "kubejs.meowni_plush.tooltip.hardmode": "§9Requires nearly all the coins that you can possibly gather.\nExclusive to Hardmode and Expertmode players.",
