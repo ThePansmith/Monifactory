@@ -8,7 +8,6 @@ ServerEvents.recipes(event => {
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand']).id('snad:red_snad')
 
         //If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
-        //Otherwise, people will leave laggy items everywhere on the ground.
         event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
     } else if(!isExpertMode) { 
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
@@ -968,5 +967,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('minecraft:pearlescent_froglight')
         .duration(20)
         .EUt(15)
+
+    // Patchouli Books that needed tweaking
+    event.replaceInput({ id: 'laserio:my_book_recipe_shapeless'}, 'laserio:logic_chip', 'laserio:card_item')
 })
- 
