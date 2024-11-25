@@ -161,7 +161,7 @@ machines:
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
-  doTerrainExplosion: false
+  shouldWeatherOrTerrainExplosion: false
 
   # Energy use multiplier for electric items.
   # Default: 100
@@ -492,24 +492,24 @@ gameplay:
 compat:
   # Config options regarding GTEU compatibility with other energy systems
   energy:
-    # Enable Native GTEU to Platform native Energy (RF and alike) on GT Cables and Wires.
+    # Enable Native GTEU to Forge Energy (RF and alike) on GT Cables and Wires.
     # This does not enable nor disable Converters.
     # Default: true
-    nativeEUToPlatformNative: true
+    nativeEUToFE: true
 
-    # Enable GTEU to Platform native (and vice versa) Converters.
+    # Enable GTEU to FE (and vice versa) Converters.
     # Default: false
-    enablePlatformConverters: true
+    enableFEConverters: false
 
-    # Platform native Energy to GTEU ratio for converting FE to EU.
+    # Forge Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
-    # Default: 4 FE/Energy == 1 EU
-    platformToEuRatio: 4
+    # Default: 4 FE == 1 EU
+    feToEuRatio: 4
 
-    # GTEU to Platform native Energy ratio for converting EU to FE.
+    # GTEU to Forge Energy ratio for converting EU to FE.
     # Affects native conversion and Converters.
-    # Default: 4 FE/Energy == 1 EU
-    euToPlatformRatio: 4
+    # Default: 4 FE == 1 EU
+    euToFeRatio: 4
 
   # Config options regarding GTCEu compatibility with AE2
   ae2:
@@ -565,15 +565,15 @@ compat:
 
     # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
     # Default: true
-    rightToolbar: true
+    rightToolbar: false
 
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true
-  hideFacadesInJEI: true
+  hideFacadesInRecipeViewer: true
 
   # Whether to hide filled cells in JEI and creative search menu.
   # Default: true
-  hideFilledCellsInJEI: true
+  hideFilledCellsInRecipeViewer: true
 
   # Whether to hide the ore processing diagrams in JEI
   # Default: false
@@ -583,7 +583,7 @@ compat:
   # Default: true
   removeSmeltingForEBFMetals: true
 
-  # Whether dimension marker should show dimension tier.
+  # Whether dimension markers should show the dimension tier value.
   # Default: false
   showDimensionTier: false
 
