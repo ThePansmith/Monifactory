@@ -31,10 +31,12 @@ ItemEvents.tooltip(tooltip => {
     //Hardmode+ Stuff
     if (!isNormalMode) {
         tooltip.add('gtceu:assembly_line', Text.translatable('gtceu.assembly_line.tooltip.hardmode'))
-        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.hardmode'))
+        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.hardmode.1'))
+        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.hardmode.2'))
     } else {
         tooltip.add('gtceu:assembly_line', Text.translatable('gtceu.assembly_line.tooltip.normal'))
-        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.normal'))
+        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.normal.1'))
+        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.normal.2'))
     }
 
     // Questbook
@@ -166,7 +168,8 @@ ItemEvents.tooltip(tooltip => {
     // AE2
     tooltip.add('ae2:facade', Text.gray(Text.translatable('ae2.facade.tooltip')));
     tooltip.add('ae2:memory_card', Text.gray(Text.translatable('ae2.memory_card.tooltip')));
-    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip')));
+    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip.1')));
+    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip.2')));
 
     // EIO Cap Banks
     tooltip.add(/^enderio:.*_bank$/, Text.translatable("enderio.cap_bank.tooltip"));
@@ -181,20 +184,25 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add('extendedcrafting:auto_flux_crafter', Text.translatable('extendedcrafting.auto_flux_crafter.tooltip'));
     tooltip.add('extendedcrafting:flux_alternator', Text.translatable('extendedcrafting.flux_alternator.tooltip'));
-    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table', 'extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table', 'extendedcrafting:auto_flux_crafter'], [Text.translatable('extendedcrafting.auto_table_instructions_1')]);
+    tooltip.addAdvanced(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table', 'extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table', 'extendedcrafting:auto_flux_crafter'], (item, adv, text) => {
+        text.add(1, Text.translatable('extendedcrafting.auto_table.tooltip.1'))
+        text.add(2, Text.translatable('extendedcrafting.auto_table.tooltip.2'))
+    })
 
     tooltip.add('kubejs:excitationcoil', Text.translatable('kubejs.excitationcoil.tooltip'));
     tooltip.add('gtceu:terminal', Text.translatable('gtceu.terminal.tooltip'));
 
-    tooltip.add(['gtceu:prospector.lv', 'gtceu:prospector.hv', 'gtceu:prospector.luv'], Text.translatable("gtceu.prospector.tooltip"));
+    tooltip.add(['gtceu:prospector.lv', 'gtceu:prospector.hv', 'gtceu:prospector.luv'], Text.translatable("gtceu.prospector.tooltip.1"));
+    tooltip.add(['gtceu:prospector.lv', 'gtceu:prospector.hv', 'gtceu:prospector.luv'], Text.translatable("gtceu.prospector.tooltip.2"));
 
     // TelePastries
-    tooltip.add('telepastries:nether_cake', Text.translatable('telepastries.nether_cake.tooltip'));
-    tooltip.add('telepastries:overworld_cake', Text.translatable('telepastries.overworld_cake.tooltip'));
-    tooltip.add('telepastries:end_cake', Text.translatable('telepastries.end_cake.tooltip'));
-    tooltip.add('telepastries:custom_cake', Text.translatable('telepastries.custom_cake.tooltip'));
-    tooltip.add('telepastries:lost_city_cake', Text.translatable('telepastries.lost_city_cake.tooltip'));
-
+    const TelePastries = ['nether', 'overworld', 'end', 'custom', 'lost_city']
+    TelePastries.forEach(dim => {
+        tooltip.addAdvanced(`telepastries:${dim}_cake`, (item, adv, text) => {
+            text.add(1, Text.translatable(`telepastries.${dim}_cake.tooltip.1`))
+            text.add(2, Text.translatable(`telepastries.${dim}_cake.tooltip.2`))
+        })
+    })
 
     // NuclearCraft
     tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
@@ -238,15 +246,18 @@ ItemEvents.tooltip(tooltip => {
     ], Text.translatable("gtceu.wood_pipe_warning.tooltip"))
 
     // Chipped workbenches
-    tooltip.add([
+    tooltip.addAdvanced([
         'chipped:botanist_workbench',
         'chipped:glassblower',
         'chipped:carpenters_table',
         'chipped:loom_table',
         'chipped:mason_table',
         'chipped:alchemy_bench',
-        'chipped:tinkering_table'
-    ], Text.translatable("chipped.workbenches.tooltip"))
+        'chipped:tinkering_table'],  (item, adv, text) => {
+        text.add(1, Text.translatable('chipped.workbenches.tooltip.1'))
+        text.add(2, Text.translatable('chipped.workbenches.tooltip.2'))
+    })
+
 
     // Tempad
     if (Platform.isLoaded('tempad')) {
