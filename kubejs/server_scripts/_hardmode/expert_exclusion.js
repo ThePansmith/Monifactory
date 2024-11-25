@@ -1,4 +1,4 @@
-// 
+//
 
 ServerEvents.recipes(event => {
     if (!isExpertMode) {
@@ -16,9 +16,5 @@ ServerEvents.recipes(event => {
                 D: '#enderio:fused_quartz'
             }
         )
-
-
-}
-
-
+    }
 })
