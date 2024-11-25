@@ -446,7 +446,7 @@
   "extendedcrafting.the_ultimate_component.tooltip": "There is none better than I...",
   "extendedcrafting.auto_flux_crafter.tooltip": "§7Uses large amounts of energy to convert Sculk into Sculk Cores.",
   "extendedcrafting.flux_alternator.tooltip": "§7Provides Energy to the Sculk Charger, from up to 3 blocks away.",
-  "extendedcrafting.auto_table_instructions": "§7Cannot be inserted into!\nPut items in an inventory atop the table instead.",
+  "extendedcrafting.auto_table_instructions": "§7Cannot be directly inserted into!\nPut items in an inventory atop the table.",
   "kubejs.excitationcoil.tooltip": "§7Used for Crafting.",
   "gtceu.terminal.tooltip": "§7Can autobuild multiblocks by shift-right-clicking a controller.",
   "gtceu.prospector.tooltip": "§7Only shows ores in the immediate vicinity. \nIf you're looking for a specific ore, you may need to go exploring!",

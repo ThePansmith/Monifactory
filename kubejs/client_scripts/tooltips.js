@@ -181,7 +181,7 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add('extendedcrafting:auto_flux_crafter', Text.translatable('extendedcrafting.auto_flux_crafter.tooltip'));
     tooltip.add('extendedcrafting:flux_alternator', Text.translatable('extendedcrafting.flux_alternator.tooltip'));
-    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table', 'extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table', 'extendedcrafting:auto_flux_crafter'], [Text.translatable('extendedcrafting.auto_table_instructions_1')]);
+    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table', 'extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table', 'extendedcrafting:auto_flux_crafter'], [Text.translatable('extendedcrafting.auto_table_instructions')]);
 
     tooltip.add('kubejs:excitationcoil', Text.translatable('kubejs.excitationcoil.tooltip'));
     tooltip.add('gtceu:terminal', Text.translatable('gtceu.terminal.tooltip'));
