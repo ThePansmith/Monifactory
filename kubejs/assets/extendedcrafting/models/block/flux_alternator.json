@@ -1,0 +1,54 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "extendedcrafting:block/flux_alternator_base_side",
+		"1": "extendedcrafting:block/flux_alternator_base_top",
+		"2": "extendedcrafting:block/redstone_ingot_block",
+		"3": "extendedcrafting:block/flux_alternator_side",
+		"4": "extendedcrafting:block/flux_alternator_top",
+		"particle": "extendedcrafting:block/redstone_ingot_block"
+	},
+	"elements": [
+		{
+			"name": "Cube",
+			"from": [0, 0, 0],
+			"to": [16, 9, 16],
+			"faces": {
+				"north": {"uv": [0, 7, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 7, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 7, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 7, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [4, 9, 5],
+			"to": [12, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 3, 1]},
+			"faces": {
+				"north": {"uv": [6, 0, 14, 7], "texture": "#3"},
+				"east": {"uv": [0, 0, 6, 7], "texture": "#3"},
+				"south": {"uv": [6, 0, 14, 7], "texture": "#3"},
+				"west": {"uv": [0, 0, 6, 7], "texture": "#3"},
+				"up": {"uv": [0, 0, 6, 8], "rotation": 90, "texture": "#4"},
+				"down": {"uv": [0, 0, 6, 8], "rotation": 90, "texture": "#4"}
+			}
+		},
+		{
+			"name": "Cube",
+			"from": [5, 9, 4],
+			"to": [11, 15.999, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, -6, 1]},
+			"faces": {
+				"north": {"uv": [0, 0, 6, 7], "texture": "#3"},
+				"east": {"uv": [6, 0, 14, 7], "texture": "#3"},
+				"south": {"uv": [0, 0, 6, 7], "texture": "#3"},
+				"west": {"uv": [6, 0, 14, 7], "texture": "#3"},
+				"up": {"uv": [6, 0, 14, 6], "rotation": 90, "texture": "#4", "cullface": "up"},
+				"down": {"uv": [6, 0, 14, 6], "rotation": 90, "texture": "#4"}
+			}
+		}
+	]
+}
