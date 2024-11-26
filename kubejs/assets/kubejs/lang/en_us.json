@@ -470,6 +470,8 @@
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
   "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",
+  "packagedexcrafting.crafterspeed.tooltip": "Slower than autotables, but can support up to 20 recipes at once.",
+
   "tempad.tempad.tooltip": "§6Uses Monipennies as fuel"
 }
 
