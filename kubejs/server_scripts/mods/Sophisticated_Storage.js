@@ -17,14 +17,22 @@ ServerEvents.recipes(event => {
     event.remove({ id: /^sophisticatedstorage:.*limited.+barrel.+$/})
     event.remove({ output: /^sophisticatedstorage:limited_barrel.+$/})
 
-    //Remove Iron tier storage (We jump straight from copper to gold to avoid excess gating)
+    //Remove Copper tier storage (not used)
+    event.remove({ output: 'sophisticatedstorage:copper_barrel' })
+    event.remove({ output: 'sophisticatedstorage:copper_chest' })
+    event.remove({ output: 'sophisticatedstorage:copper_shulker_box' })
+    //Remove Copper tier upgrades
+    event.remove({ output: /^sophisticatedstorage:.*copper.*tier_upgrade$/ })
+    event.remove({ input: /^sophisticatedstorage:.*copper.*tier_upgrade$/ })
+
+    //Remove iron (bronze) tier storage in NM
+    if (isNormalMode) {
     event.remove({ output: 'sophisticatedstorage:iron_barrel' })
     event.remove({ output: 'sophisticatedstorage:iron_chest' })
     event.remove({ output: 'sophisticatedstorage:iron_shulker_box' })
-
-    //Remove Iron tier upgrades
     event.remove({ output: /^sophisticatedstorage:.*iron.*tier_upgrade$/ })
     event.remove({ input: /^sophisticatedstorage:.*iron.*tier_upgrade$/ })
+    }
     
     //Standard backpack recipe if you don't want to loot it
     event.shaped(
@@ -89,7 +97,7 @@ ServerEvents.recipes(event => {
     // Barrel, Chest, Shulker Box upgrading
     const sophStorageMaterials = [
         ["", null, null],
-        ['copper_', 'bronze', 'lead'],
+        ['iron_', 'bronze', 'lead'],
         ['gold_', 'steel', 'invar'],
         ['diamond_', 'aluminium', 'electrum'],
         ['netherite_', 'stainless_steel', 'signalum'],
@@ -99,6 +107,12 @@ ServerEvents.recipes(event => {
         ['', 'chest'],
         ['', 'shulker_box']
     ]
+
+    //Skip bronze tier storage in NM
+    if (isNormalMode) {
+        sophStorageMaterials.splice(1, 1); 
+    }
+
     sophStorageMaterials.forEach((material, toIndex) => {
         if(toIndex == 0) return;
 
