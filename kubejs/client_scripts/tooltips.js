@@ -108,7 +108,8 @@ ItemEvents.tooltip(tooltip => {
         'quintessence_infuser',
         'hyperbolic_microverse_projector',
         'dimensional_superassembler',
-        'universal_crystallizer'
+        'universal_crystallizer',
+        'biobalance_charger'
     ]
 
     parallelMultis.forEach(multi => {

@@ -126,6 +126,11 @@
   "gtceu.discharger": "Dischargement",
   "gtceu.multiblock.discharger.description": "§7Discharges a massive amount of energy to perform recipes",
 
+  "block.gtceu.biobalance_charger": "Biobalance Charger",
+  "gtceu.charger": "Advanced Sculk Charging",
+  "gtceu.multiblock.biobalance_charger.description": "§7A Balance Charger, capable of both Charging and Discharging",
+
+
   "block.gtceu.implosion_collider": "Implosion Collider",
   "gtceu.multiblock.implosion_collider.description": "§7Capable of smashing things together even faster than before.",
 
@@ -252,7 +257,7 @@
   "material.gtceu.eltz": "Eltz",
   "material.gtceu.eltic_actinate": "Eltic Actinate",
   "material.gtceu.actinium_iron_oxide": "Actinium Iron Oxide",
-  "material.gtceu.saturated_water": "Saturated Water"
+  "material.gtceu.saturated_water": "Saturated Water",
 
   "__HM_PROCESSING__.header": "========================",
   "__HM_PROCESSING__.flufff": "> Hard Mode Processing <",
