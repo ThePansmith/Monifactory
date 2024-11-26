@@ -152,7 +152,7 @@ JEIEvents.hideItems(event => {
     //Sophisticated Limited Drawers
     event.hide(/^sophisticatedstorage:limited.+barrel.+$/)
 
-    //Copper tier sophisticated storage (We jump straight to iron to avoid excess gating)
+    //Copper tier sophisticated storage (unused)
     event.hide('sophisticatedstorage:copper_barrel')
     event.hide('sophisticatedstorage:copper_chest')
     event.hide('sophisticatedstorage:copper_shulker_box')
