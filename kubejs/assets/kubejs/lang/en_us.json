@@ -300,6 +300,17 @@
   "item.kubejs.stabilized_americium": "Stabilized Americium",
   "item.kubejs.stabilized_oganesson": "Stabilized Oganesson",
 
+  "item.kubejs.conductive_iron_thruster": "Conductive Iron Thruster",
+  "item.kubejs.leadstone_thruster": "Leadstone Thruster",
+  "item.kubejs.electrical_steel_thruster": "Electrical Steel Thruster",
+  "item.kubejs.hardened_thruster": "Hardened Thruster",
+  "item.kubejs.energetic_thruster": "Energetic Thruster",
+  "item.kubejs.reinforced_thruster": "Reinforced Thruster",
+  "item.kubejs.resonant_thruster": "Resonant Thruster",
+  "item.kubejs.vibrant_thruster": "Vibrant Thruster",
+  "item.kubejs.dark_soularium_thruster": "Dark Soularium Thruster",
+  "item.kubejs.fluxed_thruster": "Fluxed Thruster",
+
   "fluid.kubejs.molten_pyrotheum": "§6Blazing Pyrotheum",
   "fluid.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "fluid.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
