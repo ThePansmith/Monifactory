@@ -2669,7 +2669,7 @@
 			description: [
 				"Interestingly enough, &eSculk itself functions great as a biobattery&r, being able to store and quickly release mass amounts of energy. The &3Sculk Charger&r should be able to get you started in taking advantage of it."
 				""
-				"To use it, set the recipe in the same way you would for an &3Auto Crafting Table&r, then place an inventory (such as a Barrel) on top, and connect power to &eboth the charger and a nearby pylon&r. Items can be extacted from the charger in any manner."
+				"[\"They are automated in the same way as Autocrafting tables, refer to \", {\"text\": \"this quest\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0DB8063A7972E1C0\" } },\" for how to automate it.\"]"
 				""
 				"The charger and pylon themselves &ehave extreme throughput&r, so don't worry about having to wait for it to craft items."
 			]

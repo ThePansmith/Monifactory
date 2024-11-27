@@ -243,6 +243,13 @@ StartupEvents.registry('item', event => {
     event.create('grains_of_innocence')
     event.create('radium_salt').rarity('Epic')
 
+    // Thrusters
+    const thrusters = ['conductive_iron','leadstone','electrical_steel','hardened','energetic','reinforced','resonant','vibrant','dark_soularium','fluxed']
+
+    thrusters.forEach(thruster => {
+    event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
+    })
+
     // Planet dusts
     event.create('moon_dust')
     event.create('mars_dust')
@@ -282,7 +289,6 @@ StartupEvents.registry('item', event => {
     event.create('flight_control_unit')
     event.create('glowstone_elevation_unit')
     event.create('cryotheum_coolant_unit')
-
 
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
@@ -454,6 +460,7 @@ StartupEvents.registry('item', event => {
         event.create(universal_circuit + "_universal_circuit")
             .tag("gtceu:circuits/" + universal_circuit)
             .tag("gtceu:circuits/universal")
+            .displayName(universal_circuit.toUpperCase() + " Universal Circuit")
             .tooltip("§7A Universal Circuit")
             .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
     })

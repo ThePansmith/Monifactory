@@ -300,6 +300,17 @@
   "item.kubejs.stabilized_americium": "Stabilized Americium",
   "item.kubejs.stabilized_oganesson": "Stabilized Oganesson",
 
+  "item.kubejs.conductive_iron_thruster": "Conductive Iron Thruster",
+  "item.kubejs.leadstone_thruster": "Leadstone Thruster",
+  "item.kubejs.electrical_steel_thruster": "Electrical Steel Thruster",
+  "item.kubejs.hardened_thruster": "Hardened Thruster",
+  "item.kubejs.energetic_thruster": "Energetic Thruster",
+  "item.kubejs.reinforced_thruster": "Reinforced Thruster",
+  "item.kubejs.resonant_thruster": "Resonant Thruster",
+  "item.kubejs.vibrant_thruster": "Vibrant Thruster",
+  "item.kubejs.dark_soularium_thruster": "Dark Soularium Thruster",
+  "item.kubejs.fluxed_thruster": "Fluxed Thruster",
+
   "fluid.kubejs.molten_pyrotheum": "§6Blazing Pyrotheum",
   "fluid.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "fluid.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
@@ -450,7 +461,7 @@
   "extendedcrafting.auto_flux_crafter.tooltip": "§7Uses large amounts of energy to convert Sculk into Sculk Cores.",
   "extendedcrafting.flux_alternator.tooltip": "§7Provides Energy to the Sculk Charger, from up to 3 blocks away.",
   "extendedcrafting.auto_table.tooltip.1": "§7Cannot be inserted into!",
-  "extendedcrafting.auto_table.tooltip.2": "§7Put items in an inventory atop the table instead.",
+  "extendedcrafting.auto_table.tooltip.2": "§7Read Questbook to see how to automate!",
   "kubejs.excitationcoil.tooltip": "§7Used for Crafting.",
   "gtceu.terminal.tooltip": "§7Can autobuild multiblocks by shift-right-clicking a controller.",
   "gtceu.prospector.tooltip.1": "§7Only shows ores in the immediate vicinity.",
@@ -470,6 +481,8 @@
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
   "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",
+  "packagedexcrafting.crafterspeed.tooltip": "§7Slower than autotables, but can support up to 20 recipes at once.",
+
   "tempad.tempad.tooltip": "§6Uses Monipennies as fuel"
 }
 

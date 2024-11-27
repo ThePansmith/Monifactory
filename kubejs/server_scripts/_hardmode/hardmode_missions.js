@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
                 c: 'kubejs:signalum_micro_miner_core',
                 f: 'gtceu:hv_field_generator',
                 d: 'thermal:dynamo_compression',
-                T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').weakNBT()
+                T: 'kubejs:energetic_thruster'
             }
         ).id('kubejs:microminer/t4half')
 
