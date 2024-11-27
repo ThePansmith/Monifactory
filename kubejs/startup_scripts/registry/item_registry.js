@@ -243,6 +243,13 @@ StartupEvents.registry('item', event => {
     event.create('grains_of_innocence')
     event.create('radium_salt').rarity('Epic')
 
+    // Thrusters
+    const thrusters = ['conductive_iron','leadstone','electrical_steel','hardened','energetic','reinforced','resonant','vibrant','dark_soularium','fluxed']
+
+    thrusters.forEach(thruster => {
+    event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
+    })
+
     // Planet dusts
     event.create('moon_dust')
     event.create('mars_dust')

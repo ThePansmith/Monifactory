@@ -69,6 +69,7 @@ JEIEvents.hideItems(event => {
     //Jetpacks
     event.hide([Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:dark_soularium"}').strongNBT(), Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:fluxed"}').strongNBT(), 'ironjetpacks:capacitor', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:creative"}').strongNBT()])
     event.hide(['ironjetpacks:basic_coil', 'ironjetpacks:advanced_coil', 'ironjetpacks:elite_coil', 'ironjetpacks:ultimate_coil'])
+    event.hide(/ironjetpacks:thruster/)
 
     // Chisels&Bits
     event.hide('chiselsandbits:block_bit')
