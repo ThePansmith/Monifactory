@@ -250,6 +250,8 @@ StartupEvents.registry('item', event => {
     event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
     })
 
+    event.create('dilithium_crystal')
+    event.create('flight_control_unit')
     // Planet dusts
     event.create('moon_dust')
     event.create('mars_dust')
@@ -289,7 +291,6 @@ StartupEvents.registry('item', event => {
     event.create('flight_control_unit')
     event.create('glowstone_elevation_unit')
     event.create('cryotheum_coolant_unit')
-
 
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK

@@ -167,7 +167,88 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:soldering_alloy 1152')
         .itemOutputs(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').strongNBT())
         .duration(3000)
-        .EUt(32768)
-        .stationResearch(b => b.researchStack(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}')).EUt(3686).CWUt(64))
-        .modifyResult(copyOldJetpackData)
+        .EUt(30720)
+        .stationResearch(b => b
+            .researchStack(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}'))
+            .EUt(3686)
+            .CWUt(64))
+		.modifyResult(copyOldJetpackData)
+
+    //
+    // Misc
+    //
+    event.shaped('kubejs:empty_fluxed_jetpack_unit', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:electrum_flux_ingot',
+        B: 'gtceu:signalum_ingot',
+        C: 'enderio:fused_quartz'
+    }).id('kubejs:ironjetpacks/misc/empty_fluxed_jetpack_unit');
+
+    event.shaped('kubejs:empty_soularium_jetpack_unit', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:dark_soularium_ingot',
+        B: 'gtceu:electrical_steel_ingot',
+        C: 'enderio:fused_quartz'
+    }).id('kubejs:ironjetpacks/misc/empty_soularium_jetpack_unit');
+
+    event.recipes.gtceu.canner('kubejs:ironjetpacks/misc/flight_control_unit')
+        .itemInputs('kubejs:empty_soularium_jetpack_unit', '4x minecraft:ghast_tear')
+        .itemOutputs('kubejs:flight_control_unit')
+        .duration(100)
+        .EUt(2000)
+
+    event.recipes.gtceu.canner('kubejs:ironjetpacks/misc/glowstone_elevation_unit')
+        .itemInputs('kubejs:empty_fluxed_jetpack_unit')
+        .inputFluids('gtceu:glowstone 4032')
+        .itemOutputs('kubejs:glowstone_elevation_unit')
+        .duration(100)
+        .EUt(2000)
+
+    event.recipes.gtceu.canner('kubejs:ironjetpacks/misc/cyrotheum_coolant_unit')
+        .itemInputs('kubejs:empty_fluxed_jetpack_unit')
+        .inputFluids('kubejs:molten_cryotheum 6000')
+        .itemOutputs('kubejs:cryotheum_coolant_unit')
+        .duration(100)
+        .EUt(2000)
+
+
+    //Cells, thermal exp.
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:hardened"}').strongNBT(), [
+        ' A ',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'minecraft:redstone',
+        B: 'gtceu:invar_ingot',
+        C: 'thermal:flux_capacitor',
+        D: 'gtceu:tin_ingot'
+    }).id('kubejs:ironjetpacks/cells/hardened');
+
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:reinforced"}').strongNBT(), [
+        ' A ',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'minecraft:redstone',
+        B: 'gtceu:electrum_ingot',
+        C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:hardened"}').weakNBT(),
+        D: '#enderio:fused_quartz'
+    }).id('kubejs:ironjetpacks/cells/reinforced');
+
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:resonant"}').strongNBT(), [
+        ' A ',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'minecraft:redstone',
+        B: 'gtceu:enderium_ingot',
+        C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
+        D: 'kubejs:pyrotheum_dust'
+    }).id('kubejs:ironjetpacks/cells/resonant');
 })
