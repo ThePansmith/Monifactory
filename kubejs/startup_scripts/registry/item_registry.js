@@ -250,8 +250,6 @@ StartupEvents.registry('item', event => {
     event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
     })
 
-    event.create('dilithium_crystal')
-    event.create('flight_control_unit')
     // Planet dusts
     event.create('moon_dust')
     event.create('mars_dust')
