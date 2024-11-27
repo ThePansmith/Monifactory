@@ -454,6 +454,7 @@ StartupEvents.registry('item', event => {
         event.create(universal_circuit + "_universal_circuit")
             .tag("gtceu:circuits/" + universal_circuit)
             .tag("gtceu:circuits/universal")
+            .displayName(universal_circuit.toUpperCase() + " Universal Circuit")
             .tooltip("§7A Universal Circuit")
             .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
     })
