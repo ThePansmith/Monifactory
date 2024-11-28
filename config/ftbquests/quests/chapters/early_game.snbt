@@ -452,7 +452,22 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3F39E9B829DAE2F2"
-				item: "gtceu:mv_atomic_reconstructor"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_atomic_reconstructor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_atomic_reconstructor"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Reconstruction of Atoms"
