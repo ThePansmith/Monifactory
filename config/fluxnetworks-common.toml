@@ -1,0 +1,22 @@
+#Most configs are moved to /serverconfig/fluxnetworks-server.toml
+#Copy to /defaultconfig/fluxnetworks-server.toml for modpacks
+placeholder = true
+
+#The One Probe
+[OneProbe]
+	#Displays: Network Name, Live Transfer Rate & Internal Buffer
+	enableOneProbeBasicInfo = true
+	#Displays: Transfer Limit & Priority etc
+	enableOneProbeAdvancedInfo = true
+	#Displays Advanced Info when sneaking only
+	enableOneProbeSneaking = true
+
+#Integration
+[integration]
+	#Whether to enable GTCEU integration if GregTech CE Unofficial Modern is installed.
+	#4 FE = 1 GTEU, not configurable.
+	#Note that EU-to-FE conversion is provided by GTCEU, instead of Flux Networks.
+	#Ensure you have enabled GTCEU's nativeEUToPlatformNative and euToPlatformRatio = 4.
+	#A game/server restart is required to reload this setting.
+	enableGTCEU = true
+

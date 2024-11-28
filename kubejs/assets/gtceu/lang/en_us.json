@@ -1,4 +1,4 @@
-{ 
+{
   "__HM_RARE_EARTH__.header": "========================",
   "__HM_RARE_EARTH__.flufff": "> Hard Mode Rare Earth <",
   "__HM_RARE_EARTH__.footer": "========================",
@@ -47,7 +47,7 @@
 
   "material.gtceu.darmstadtite": "Darmstadtite",
   "material.gtceu.dulysite": "Dulysite",
-  
+
 
   "__PARALLEL_HATCHES__.header": "====================",
   "__PARALLEL_HATCHES__.flufff": "> Parallel Hatches <",
@@ -73,7 +73,11 @@
   "block.gtceu.uv_atomic_reconstructor": "§3Ultimate Atomic Reconstructor",
   "block.gtceu.uhv_atomic_reconstructor": "§4Epic Atomic Reconstructor",
   "block.gtceu.uev_atomic_reconstructor": "§aEpic Atomic Reconstructor II",
+  "block.gtceu.uiv_atomic_reconstructor": "§2Epic Atomic Reconstructor II",
 
+  "block.gtceu.lvev_atomic_reconstructor.desc": "§7Disassembles and Reassembles on the atomic level",
+  "block.gtceu.ivzpm_atomic_reconstructor.desc": "§7Circuit Rewriter",
+  "block.gtceu.uvuiv_atomic_reconstructor.desc": "§7Two steps away from being a nuke",
 
   "__CUSTOM_MULTIS__.header": "=====================================",
   "__CUSTOM_MULTIS__.flufff": "> Custom Multiblocks & Recipe Types <",
@@ -145,7 +149,7 @@
   "block.gtceu.loot_superfabricator": "Loot Superfabricator",
   "gtceu.loot_superfabricator": "Loot Superfabricator",
   "gtceu.multiblock.loot_superfabricator.description": "§7A high powered fabrication device, capable of fabricating loot faster than ever",
-  
+
   "block.gtceu.dimensional_superassembler":"Dimensional Superassembler",
   "gtceu.multiblock.dimensional_superassembler.description": "§7Uses dimensional warping to process hundreds of assembly line recipes at once.",
 
@@ -156,32 +160,33 @@
   "block.gtceu.rock_cycle_simulator":"Rock Cycle Simulator",
   "gtceu.rock_cycle_simulator":"Rock Cycle Simulation",
   "gtceu.multiblock.rock_cycle_simulator.description": "§7A powerful machine that can fabricate and harvest hundreds of cubic meters of igneous rock per second.",
-  
+
 
   "block.gtceu.universal_crystallizer": "Universal Crystallizer",
   "gtceu.universal_crystallizer": "Crystallization",
+  "gtceu.multiblock.universal_crystallizer.description":"§7An immense device, capable of turning raw materials into complex matters.",
 
   "block.gtceu.actualization_chamber": "Actualization Chamber",
   "gtceu.actualization_chamber": "Actualization",
   "gtceu.multiblock.actualization_chamber.description": "§7A powerful machine that harnesses the most complex of matters and turns it into raw materials",
-  
+
   "block.gtceu.cryococcal_reverberator": "Cryococcal Reverberator",
   "gtceu.reverberation": "Reverberation",
-  
+
   "block.gtceu.atmospheric_accumulator": "Atmospheric Accumulator",
   "gtceu.multiblock.atmospheric_accumulator.description": "§7A large machine that can suck up large amounts of air at once.",
 
   "block.gtceu.helical_fusion_reactor": "Helical Fusion Reactor",
   "gtceu.multiblock.helical_fusion_reactor.description": "§7The Helical Fusion Reactor is a very large multiblock structure used for fusing elements into heavier ones in parallel. For every Hatch it has, its buffer increases by 80M EU, and has a maximum of 1280M.",
-  
+
 
   "__CREATIVE_MACHINES__.header": "=====================",
   "__CREATIVE_MACHINES__.flufff": "> Creative Machines <",
   "__CREATIVE_MACHINES__.footer": "=====================",
-  
+
   "block.gtceu.creative_energy": "Infinite GT Energy Unit Emitter",
   "block.gtceu.creative_chest": "Creative Quantum Chest",
-  "block.gtceu.creative_tank": "Creative Quantum Tank",  
+  "block.gtceu.creative_tank": "Creative Quantum Tank",
 
 
   "__GENERIC_MATERIALS__.header": "=====================",
@@ -219,6 +224,7 @@
   "material.gtceu.dark_soularium": "Dark Soularium",
 
   "material.gtceu.dilithium": "Dilithium",
+  "material.gtceu.calcium_perchlorate": "Calcium Perchlorate",
   "material.gtceu.restonia": "§cRestonia Crystal",
   "material.gtceu.enori": "§7Enori Crystal",
   "material.gtceu.void": "§8Void Crystal",
@@ -264,7 +270,7 @@
 
   "material.gtceu.molybdenum_trioxide": "Molybdenum Trioxide",
   "material.gtceu.lead_chloride": "Lead Chloride",
-  
+
 
   "__HM_GRAPHITE__.header": "================================",
   "__HM_GRAPHITE__.flufff": "> Hard Mode Graphite/Hydrazine <",
@@ -277,7 +283,7 @@
   "material.gtceu.hydrazine": "Hydrazine",
   "material.gtceu.acetone_azine": "Acetone Azine",
   "material.gtceu.graphene_oxide": "Graphene Oxide",
-  
+
 
   "__KAPTON_K__.header": "============",
   "__KAPTON_K__.flufff": "> Kapton K <",
@@ -342,7 +348,7 @@
   "material.gtceu.polyethyl_cyanoacrylate": "Polyethyl Cyanoacrylate",
   "material.gtceu.dimethyl_sulfoxide": "Dimethyl Sulfoxide",
   "material.gtceu.dimethyl_sulfide": "Dimethyl Sulfide",
-  
+
 
   "__PLATLINE__.header": "=======================",
   "__PLATLINE__.flufff": "> Platinum line items <",
@@ -378,7 +384,7 @@
   "material.gtceu.formic_acid": "Formic Acid",
   "material.gtceu.sodium_methoxide": "Sodium Methoxide",
 
-  
+
   "__HM_PLATLINE__.header": "======================",
   "__HM_PLATLINE__.flufff": "> Hard Mode Platline <",
   "__HM_PLATLINE__.footer": "======================",
@@ -428,6 +434,7 @@
   "tagprefix.perfect": "Perfect %s",
   "block.gtceu.shock_proof_cutting_casing": "Shock Proof Casing",
   "curios.identifier.gtceu_magnet": "Magnet",
+  "item.gtceu.wetware_processor_mainframe.tooltip.0": "§7No Mouth, and Must Scream",
 
 
   "__HM_MISC__.header": "============",
@@ -437,6 +444,19 @@
   "material.gtceu.beryllium_oxide": "Beryllium Oxide",
   "material.gtceu.fluorite": "Fluorite",
 
+  "__ORE_VEINS__.header": "=============",
+  "__ORE_VEINS__.flufff": "> Ore Veins <",
+  "__ORE_VEINS__.footer": "=============",
+
+  "gtceu.jei.ore_vein.luna/diamond": "Diamond Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/fluorite": "Fluorite Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/gold": "Gold Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/manganese": "Manganese Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/molybdenum": "Molybdenum Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/tetrahedrite": "Tetrahedrite Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/tungsten": "Tungsten Vein (Lunar)",
+  "gtceu.jei.ore_vein.overworld/tetrahedrite": "Tetrahedrite Vein",
+  "gtceu.jei.ore_vein.overworld/uraninite": "Uraninite Vein",
 
   "__UNUSED__.header": "==========",
   "__UNUSED__.flufff": "> Unused <",

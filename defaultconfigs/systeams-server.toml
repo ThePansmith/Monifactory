@@ -10,9 +10,9 @@ steam_dynamo_output_multiplier = 4.0
 #This doesn't have as much support for translations (it can still be translated with the key info.systeams.augment.type.DynamoBoiler)
 replace_dynamo_augment_tooltips = true
 
-#For future reference: Boilers are 16x as efficient as Dynamos by default.
-#This means that Numismatic Boilers are 16 * 0.5 = 8x as efficient as Numismatic Dynamos,
-#While Stirling Boilers are 16 * 0.25 = 4x as efficient as Stirling Dynamos.
+# For future reference: Boilers are 16x as efficient as Dynamos by default.
+# This means that Boilers are 16 * 0.5 * 4.0 = 32x as efficient as Dynamos in practice,
+# thanks to the steam_dynamo_output_multiplier and "Steam Values" multiplier.
 # -Xefyr
 
 ["Steam Values"]
@@ -40,23 +40,23 @@ replace_dynamo_augment_tooltips = true
 ["Boiler Speed Multipliers"]
 	#The speed multiplier on each boiler's mB/t
 	#Range: 0.05 ~ 20.0
-	stirling = 8.0
+	stirling = 16.0
 	#Range: 0.05 ~ 20.0
-	magmatic = 8.0
+	magmatic = 16.0
 	#Range: 0.05 ~ 20.0
-	compression = 8.0
+	compression = 16.0
 	#Range: 0.05 ~ 20.0
-	numismatic = 8.0
+	numismatic = 16.0
 	#Range: 0.05 ~ 20.0
-	lapidary = 8.0
+	lapidary = 16.0
 	#Range: 0.05 ~ 20.0
-	disenchantment = 8.0
+	disenchantment = 16.0
 	#Range: 0.05 ~ 20.0
-	gourmand = 8.0
+	gourmand = 16.0
 	#Range: 0.05 ~ 20.0
-	pneumatic = 8.0
+	pneumatic = 16.0
 	#Range: 0.05 ~ 20.0
-	frost = 8.0
+	frost = 16.0
 
 ["Integration settings"]
 	#If you can shift right click a Pneumatic Boiler with an Advanced Pneumatic Tube to convert it to a Pneumatic Dynamo

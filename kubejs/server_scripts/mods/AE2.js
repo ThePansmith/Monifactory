@@ -304,15 +304,15 @@ ServerEvents.recipes(event => {
         '256m'
     ]
     const storage_component_ingredients = [
-        ['minecraft:glass', 'ae2:calculation_processor', 'gtceu:polyethylene', 1],
-        ['minecraft:glass', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
-        ['ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
-        ['ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polytetrafluoroethylene', 1],
-        ['ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
-        ['ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
-        ['megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polytetrafluoroethylene', 2],
-        ['megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
-        ['megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
+        ['mv', 'minecraft:glass', 'ae2:calculation_processor', 'gtceu:polyethylene', 1],
+        ['hv', 'minecraft:glass', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
+        ['ev', 'ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polyethylene', 1],
+        ['iv', 'ae2:logic_processor', 'ae2:engineering_processor', 'gtceu:polytetrafluoroethylene', 1],
+        ['iv', 'ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
+        ['luv', 'ae2:engineering_processor', 'megacells:accumulation_processor', 'gtceu:polytetrafluoroethylene', 2],
+        ['luv', 'megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polytetrafluoroethylene', 2],
+        ['zpm', 'megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
+        ['zpm', 'megacells:accumulation_processor', 'gtceu:quantum_eye', 'gtceu:polybenzimidazole', 2],
     ]
     for (let index = 0; index < storage_component_ingredients.length; index++) {
         let curTier;
@@ -336,9 +336,9 @@ ServerEvents.recipes(event => {
             'SCS',
             'ASA'
         ], {
-            A: curIngredients[0],
-            B: curIngredients[1],
-            C: '#gtceu:circuits/' + GTValues.VN[index+2].toLowerCase(),
+            A: curIngredients[1],
+            B: curIngredients[2],
+            C: '#gtceu:circuits/' + curIngredients[0],
             S: Item.of(prevTier)
         }
         ).id('kubejs:ae2/storage_component_' + storage_tiers[index+1])
@@ -347,11 +347,11 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.assembler(`kubejs:ae2/${storage_tiers[index+1]}_storage_assembler`)
             .itemInputs(
                 Item.of(prevTier, 2),
-                Item.of(curIngredients[0], 2),
-                Item.of(curIngredients[1], 1),
-                '#gtceu:circuits/' + GTValues.VN[index+2].toLowerCase()
+                Item.of(curIngredients[1], 2),
+                Item.of(curIngredients[2], 1),
+                '#gtceu:circuits/' + curIngredients[0]
             )
-            .inputFluids(Fluid.of(curIngredients[2], 144*curIngredients[3]))
+            .inputFluids(Fluid.of(curIngredients[3], 144*curIngredients[4]))
             .itemOutputs(curTier)
             .EUt(240)
             .duration(200)
@@ -910,24 +910,24 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler("ae2_engineering_processor_greg_1x")
         .itemInputs("ae2:printed_engineering_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
         .inputFluids("gtceu:soldering_alloy 72")
-        .itemOutputs("ae2:engineering_processor")
-        .duration(10)
+        .itemOutputs("2x ae2:engineering_processor")
+        .duration(100)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg_1x")
         .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
         .inputFluids("gtceu:soldering_alloy 72")
-        .itemOutputs("ae2:logic_processor")
-        .duration(10)
+        .itemOutputs("2x ae2:logic_processor")
+        .duration(100)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.circuit_assembler("ae2_calculation_processor_greg_1x")
         .itemInputs("ae2:printed_calculation_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
         .inputFluids("gtceu:soldering_alloy 72")
-        .itemOutputs("ae2:calculation_processor")
-        .duration(10)
+        .itemOutputs("2x ae2:calculation_processor")
+        .duration(100)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
     
@@ -1007,7 +1007,19 @@ ServerEvents.recipes(event => {
     event.shapeless('expatternprovider:me_packing_tape', ['gtceu:basic_tape', 'gtceu:fluix_dust']).id('expatternprovider:tape')
 
     //Misc stuff
-    event.replaceInput({ id: 'expatternprovider:ingredient_buffer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
+    event.shaped('expatternprovider:ingredient_buffer',
+        [
+            'ISI',
+            'GCG',
+            'ISI'
+        ], {
+            I: 'gtceu:iron_plate',
+            S: 'ae2:cell_component_1k',
+            G: 'ae2:quartz_glass',
+            C: 'gtceu:lv_hermetic_casing'
+        }
+    ).id('expatternprovider:ingredient_buffer')
+
     event.replaceInput({ id: 'expatternprovider:crystal_fixer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
 
     event.remove({ id: 'expatternprovider:ex_drive' })
@@ -1158,4 +1170,7 @@ ServerEvents.recipes(event => {
     colors.forEach(coloredCoveredCable)
     colors.forEach(coveredDenseCable)
     colors.forEach(smartDenseCable)
+
+    // BetterP2P
+    event.shapeless('betterp2p:advanced_memory_card', ['ae2:memory_card', 'ae2:network_tool'])
 })

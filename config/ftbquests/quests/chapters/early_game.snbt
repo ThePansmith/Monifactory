@@ -162,12 +162,18 @@
 			x: 9.5d
 			y: 26.5d
 		}
+		{
+			id: "7FC84014DAAD0025"
+			linked_quest: "6D434F3B0E720A5A"
+			x: 17.5d
+			y: 22.5d
+		}
 	]
 	quests: [
 		{
 			dependencies: ["5C4E189A3E401566"]
 			description: [
-				"Remember to keep the MV area separate from your LV area. &eHooking up an LV machine to MV current will result in the machine being destroyed! Also LV cables will burn up if you put MV current through them&r. That's why it's probably best to keep the areas separate until you're comfortable and confident with voltages. Eventually you can use transformers to switch voltages within a single setup, but don't feel forced to try that until you've got a grasp on the basics."
+				"Remember to keep the MV area separate from your LV area. &eHooking up an LV machine to MV current will result in the machine being destroyed! Also, LV cables will burn up if you put MV current through them&r. That's why it's probably best to keep the areas separate until you're comfortable and confident with voltages. Eventually, you can use transformers to switch voltages within a single setup, but don't feel forced to try that until you've got a grasp on the basics."
 				""
 				"All RF power is the same (it has no voltages), so you can use RF conduits to route power from wherever you're generating and converting to EU with &3Energy Converters&r for each voltage. You don't have to use this setup, but it's the most foolproof one for a beginner. And if you're an expert, well... you don't need my advice."
 				""
@@ -219,7 +225,7 @@
 				"0B62AD25CDD86A6B"
 				"74935A3553451178"
 			]
-			description: ["&aMV Batteries&r function essentially the same as &aLV Batteries&r, only stronger. They also need to be put into an &3MV Machines, MV Battery Buffers&r or &3MV Turbo Chargers&r."]
+			description: ["&aMV Batteries&r function essentially the same as &aLV Batteries&r, only stronger. They also need to be put into &3MV Machines, MV Battery Buffers&r or &3MV Turbo Chargers&r."]
 			icon: {
 				Count: 1
 				id: "gtceu:mv_lithium_battery"
@@ -247,7 +253,7 @@
 			description: [
 				"&3Centrifuges&r have a chance of creating additional materials when processing ore dusts. Sometimes it's the main dust, but often it's a different useful material that is otherwise unobtainable."
 				""
-				"Instead of washing &6impure dusts&r (made from macerating or hammering ores) in a cauldron, you can get more out of each dust by centrifuging it. The same is true of &6pure dusts&r, when you eventually make a &3Washer&r or &3Chemical Bath&r. Note however that pure and impure dusts will usually give different byproducts (always check in &bEMI&r)."
+				"Instead of washing &6impure dusts&r (made from macerating or hammering ores) in a cauldron, you can get more out of each dust by centrifuging it. The same is true of &6pure dusts&r, when you eventually make a &3Washer&r or &3Chemical Bath&r. Note, however, that pure and impure dusts will usually give different byproducts (always check in &bEMI&r)."
 				""
 				"Centrifuges also have other uses like unmixing compound dusts and fluids, or getting &6Rubber Pulp&r, which can be chemically reacted with &6Sulfur&r to efficiently make &9liquid Rubber&r."
 			]
@@ -273,7 +279,7 @@
 				""
 				"&aLV Batteries&r were very simple to make, but more effective forms of power storage will be more complex to build, so we'll need to lay the groundwork now."
 				""
-				"Put your &3Centrifuge&r to work for the &6Antimony&r you'll need, which comes in tiny piles from processing &6Tetrahedrite Ore&r and &6Stibnite Ore&r."
+				"Put your &3Centrifuge&r to work for the &6Antimony&r you'll need, which comes from &6Stibnite Ore&r and processing &6Tetrahedrite Ore&r and &6Realgar Ore&r."
 			]
 			icon: "gtceu:lv_canner"
 			id: "74935A3553451178"
@@ -321,7 +327,7 @@
 		{
 			dependencies: ["5B0200011DF8E1B6"]
 			description: [
-				"When you first started the pack, we told you that ore doubling can wait, and that's true... But you will need to start doing some rudimentary ore processing for &ebyproducts&r."
+				"When you first started the pack, we told you that ore doubling can wait, and that's true... But you &owill&r need to start doing some rudimentary ore processing for &ebyproducts&r."
 				""
 				"Byproducts are additional materials that can only be obtained from processing ores in certain machines. For example, there is no \"Gallium Ore\" or \"Arsenic Ore\". You get &6Gallium&r and &6Arsenic &ras a byproduct from processing other ores &ein a machine that is HV or higher.&r"
 				""
@@ -332,16 +338,16 @@
 				" "
 				"- &3Macerator&r: turns ores into &6Crushed Ores&r, Crushed Ores into &6Impure Dusts&r, and &6Purified Crushed Ores&r into &6Pure Dusts&r. Higher tiers of macerators have byproduct slots and gain a chance to get a full pile of byproduct from ores and both types of crushed ores."
 				""
-				"- &3Ore Washer&r: cleans Crushed Ores with &9Water&r, making Purified Crushed Ores&r, and a guaranteed 3 tiny piles of byproduct. Using &9Distilled Water&r makes them go faster. &2You can also perform a simple wash with this similar to Cauldron washing, which is extremely fast, but grants no byproducts.&r"
+				"- &3Ore Washer&r: cleans Crushed Ores with &9Water&r, making Purified Crushed Ores&r, and a chance for a full pile of byproduct. Using &9Distilled Water&r makes them go faster. &2You can also perform a simple wash that is similar to Cauldron washing. It is extremely fast, but grants no byproducts.&r"
 				""
 				"- &3Chemical Bath&r: &2uses Sodium Persulfate or Mercury to purify certain ores, granting a chance to yield a full pile of a byproduct."
 				""
-				"&r- &3Centrifuge&r: separates Pure or Impure dusts into the final material, producing a guaranteed &21 (nerfed from 3) tiny pile of byproduct&r."
+				"&r- &3Centrifuge&r: separates Pure or Impure dusts into the final material, with a chance for a full pile of byproduct."
 				""
 				"{@pagebreak}"
 				"- &3Electrolyzer&r: uses power to split compounds into individual elements, sometimes gaining useful byproducts in the process. &2Be warned that certain dusts may be better to directly smelt instead of electrolyze!&r"
 				""
-				"- &3Thermal Centrifuge&r: not to be confused with the regular Centrifuge. &2Less slow and power-hungry now, but still so. However, it yields 3 additional tiny piles of byproduct, and macerating the Centrifuged Ore can grant a special third byproduct."
+				"- &3Thermal Centrifuge&r: not to be confused with the regular Centrifuge. &2Less slow and power-hungry now, but still so. However, it yields a chance for byproduct, and macerating the Centrifuged Ore can grant a special third byproduct."
 				""
 				"&2- Sifter: filters high-quality Gems from Purified Crushed gem Ores for an overall higher yield."
 				""
@@ -406,7 +412,7 @@
 			description: [
 				"&2Initial circuit components are a bit more difficult in CEu, and you need Arsenic in addition to Gallium.&r"
 				""
-				"For &9Gallium&r, you may, ranged from worst to best:"
+				"For &9Gallium&r, you may, ranked from worst to best:"
 				""
 				"- &3Electrolyze &aSphalerite&r for a low chance of small dust. Note that you lose on direct smelting value."
 				""
@@ -462,7 +468,7 @@
 				""
 				"The &3Dark Steel Enchanter&r is a device that uses &6Book and Quill&r, experience levels, lapis, and enchant-specific items to create an &6Enchanted Book&r with an enchantment of your choosing. Then you can just use an Anvil to enchant your item like usual."
 				""
-				"You can also make the &9Mending&r enchant which allows you to infinitely repair the item when damaged using &9Liquid XP&r in an &bEnderIO &aFluid Tank&r or &aPressurized Fluid Tank&r. Keep in mind that &9Mending&r does not work on &3Gregtech Tools&r."
+				"You can also make the &9Mending&r enchant which allows you to infinitely repair the item when damaged using &9Liquid XP&r in an &bEnder IO &aFluid Tank&r or &aPressurized Fluid Tank&r. Keep in mind that &9Mending&r does not work on &3Gregtech Tools&r."
 			]
 			id: "4D6AC14CAEEFC793"
 			rewards: [{
@@ -646,7 +652,7 @@
 			description: [
 				"You'll need a variety of &alenses&r for use in &3Precision Laser Engravers&r, all of which are made in the &2Lathe&r."
 				""
-				"Initially you'll need a &a&3&2Ruby Lens&r. Soon you will need &2Diamond, Emerald, Topaz, and Sapphire Lenses&r. &2You can choose to use an MV Lathe to get a lens from a plate, or sift for an Exquisite Gem and use an LV Lathe."
+				"Initially you'll need a &a&3&2Ruby Lens&r. Soon you will need &2Diamond, Emerald, and Sapphire Lenses. &2You can choose to use an MV Lathe to get a lens from a plate, or sift for an Exquisite Gem and use an LV Lathe."
 			]
 			icon: "gtceu:ruby_lens"
 			id: "21B917932F5B25BA"
@@ -666,11 +672,15 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["776199B37A19A592"]
+			dependencies: [
+				"776199B37A19A592"
+				"061904A6FEED5B66"
+				"1BC6DDC2D50F9C46"
+			]
 			description: [
 				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
 				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r"
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r."
 			]
 			id: "3115EAF1F70A613E"
 			rewards: [{
@@ -715,12 +725,9 @@
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"517A89E954C7EA74"
-				"776199B37A19A592"
-			]
+			dependencies: ["517A89E954C7EA74"]
 			description: [
-				"&6Chromium&r is used in the production of many alloys. &6Stainless Steel&r, &6Vanadiumsteel&r and &6Kanthal&r are the ones you will encounter soon. "
+				"&6Chromium&r is used in the production of many alloys. &6Stainless Steel&r, &6Vanadiumsteel&r, and &6Kanthal&r are the ones you will encounter soon. "
 				""
 				"It is primarily obtained by electrolyzing &6Ruby Dust&r, although you can also mine some &6Chromite&r in The End. You will need a lot of this soon, so be sure to accumulate a lot of it."
 			]
@@ -770,7 +777,7 @@
 			description: [
 				"&2In GTCEu, higher-tier blends of dusts require higher-tier Mixers to mix. The MV Mixer is required for making Vanadiumsteel and Stainless Steel."
 				""
-				"&2 There will not be more mixer quests above this one. Remember this when making higher-tier dust blends."
+				"There will not be more mixer quests after this one. Remember this when making higher-tier dust blends."
 			]
 			id: "776199B37A19A592"
 			rewards: [{
@@ -848,7 +855,7 @@
 				"The &6Machine Controller&r is a cover that manages the operation of &bGregTech&r machines, similar to a &aSoft Hammer&r. These are crucial for &epassive automation&r, where a machine is dedicated to keeping something in stock for you."
 				""
 				"\"Machines\" here is broader than you might think. It of course works on single-block machines, but can also be used on &eMultiblock Controllers&r like your &3Electronic Blast Furnace&r. But it's even more flexible than that: you can use it on any &bGregTech&r block that accepts transfer covers, as long as the controllable cover is placed on it first! This means it also works for things like &6Chests&r, &6Drums&r, and Multiblock inputs."
-				""
+				"{@pagebreak}"
 				"The cover works by detecting a &eredstone signal&r. By default, the entire machine will be disabled if a sufficiently strong signal is detected by the cover."
 				""
 				"When you open the Machine Controller's GUI with a &aScrewdriver&r, you will see several options for configuring its behavior:"
@@ -949,9 +956,9 @@
 			description: [
 				"&2Sodium Persulfate and Iron III Chloride&r are used to make cheaper &9Good Circuit Boards&r, as it cuts the Silver amount by a factor of four. They are also &9required&r to make &9Plastic Circuit Boards&r, and circuit boards afterwards."
 				""
-				"Making &aSodium Persulfate&r with &6Salt&r will yield &aHydrochloric Acid&r as a coproduct, which you may re-use to make &aIron III Chloride&r. This should the best approach right now, but the decision is entirely yours. With more automation later in the game, Iron III Chloride will be the cheaper and more straight forward path."
+				"Making &aSodium Persulfate&r with &6Salt&r will yield &aHydrochloric Acid&r as a coproduct, which you may re-use to make &aIron III Chloride&r. This is the best approach right now, but the decision is entirely yours. With more automation later in the game, Iron III Chloride will be the cheaper and more straightforward path."
 				""
-				"Sodium Persulfate&r can also be used in &9Ore Processing&r in the &3Chemical Bath&r, to get various bonus outputs you would not normally obtain. It is completely optional, but pretty rewarding."
+				"Sodium Persulfate&r can also be used in &9Ore Processing&r in the &3Chemical Bath&r to get various bonus outputs you would not normally obtain. It is completely optional, but pretty rewarding."
 			]
 			id: "4F4D0F44B615AF4C"
 			rewards: [{
@@ -962,8 +969,23 @@
 			shape: "hexagon"
 			subtitle: "Iron The Third"
 			tasks: [{
-				id: "678C2DC44ECEC7D1"
-				item: "gtceu:sodium_persulfate_bucket"
+				id: "51BA79F86129325D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:sodium_persulfate_bucket"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iron_iii_chloride_bucket"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "&2Sodium Persulfate and Iron III Chloride"
@@ -1038,7 +1060,7 @@
 		{
 			dependencies: ["2C6BEB5BBE5A91DC"]
 			description: [
-				"The &2MV Assembling Machine&r allows you to craft &6Medium Voltage Coils&r, and your &3Precision Laser Engraver&r can make &2Ultra Low Power ICs with a Sapphire Lens.&r"
+				"The &2MV Assembling Machine&r allows you to craft &6Medium Voltage Coils&r, and your &3Laser Engraver&r can make &2Ultra Low Power ICs with a Sapphire Lens.&r"
 				""
 				"Combine them with some MV parts and you can finally craft an &6MV Energy Hatch&r."
 				""
@@ -1091,9 +1113,9 @@
 			description: [
 				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
 				""
-				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Copper fluid&r."
+				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Liquid Copper&r."
 				""
-				"&2In CEu, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &9temperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%%&r energy."
+				"&2In CEu, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &9temperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%&r energy."
 				""
 				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
 			]
@@ -1141,6 +1163,7 @@
 				""
 				"You're going to use them as a component for better circuits. This one is a bit pricey, requiring &2PE, Silicon Plates and Fine Tin Wire."
 			]
+			icon: "gtceu:transistor"
 			id: "13035465E07E34CF"
 			rewards: [{
 				id: "1192C721D08CF8B4"
@@ -1150,10 +1173,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6B68D20D0B8C8886"
-				item: "gtceu:transistor"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:transistors"
+					}
+				}
+				title: "Any #gtceu:transistors"
 				type: "item"
 			}]
-			title: "&2Transistor"
+			title: "&2Transistors"
 			x: -3.0d
 			y: 16.0d
 		}
@@ -1165,10 +1195,10 @@
 				"It's a 3x3x3 multiblock machine capable of &esmelting huge amounts of items per second&r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second."
 				""
 				"Shift and hover over different coil blocks: they tell you the number of items a Multi Smelter can smelt per operation: &e32 items per level&r. The most basic Multi Smelter essentially does 32 items in the same time as a furnace does one. With a set of &9RTM Alloy&r coil blocks, that jumps to 128 items per operation."
-				""
+				"{@pagebreak}"
 				"This quest doesn't ask for coils, hatches or buses: feel free to choose whatever combination you want. You'll need &a8 coil blocks&r, &a1 input bus&r, &a1 output bus&r, and &21 maintenance hatch&r, &21 muffler hatch&r, and at least &a1 energy hatch&r, all of any tier."
 				""
-				"&9The multismelter can have it's mode swapped between processing furnace and alloy smelter recipes by pressing the robot arm button in it's GUI&r. Some other multiblocks use this mechanic as well."
+				"&9The Multi Smelter can have its mode swapped between Electric Furnace and Alloy Smelter recipes by pressing the robot arm button in its GUI&r. Some other multiblocks use this mechanic as well."
 			]
 			icon: "gtceu:multi_smelter"
 			id: "2C3C6D2038B01948"
@@ -1193,7 +1223,7 @@
 					type: "item"
 				}
 			]
-			title: "&9Multismelter"
+			title: "&9Multi Smelter"
 			x: 5.25d
 			y: 16.0d
 		}
@@ -1247,9 +1277,9 @@
 				"6169C04DF463502F"
 			]
 			description: [
-				"With tier three circuits in hand, it's time to make a &3Distillation Tower&r, which is the gatekeeper for more advanced plastics like &6Epoxy&r and doing petrochemistry."
+				"With tier three circuits in hand, it's time to make a &3Distillation Tower&r, which gates petrochemistry and more advanced plastics like &6Epoxy&r."
 				""
-				"The Distillation Tower is a highly flexible multiblock structure, able to be anywhere from &62 blocks high to up to 13 high&r (12 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. &cIf the number of fluid outputs from the recipe exceeds the number of available hatches or those hatches are too small to hold the output, the recipe will not run&r. "
+				"The Distillation Tower is a highly flexible multiblock structure, able to be anywhere from &62 blocks high to 13 high&r (12 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. &cIf the number of fluid outputs from the recipe exceeds the number of available hatches or those hatches are too small to hold the output, the recipe will not run&r. "
 				"{@pagebreak}"
 				"What you need the Distillation Tower for initially is to break down &9Oil&r and &9Fermented Biomass&r into useful resources.&9 Oil&r distillation, with its four outputs, will require a &efive-block-high Distillation Tower&r (the quest materials are for such a tower; if you want to build it bigger, you will need &ean additional 7 casings and 1 fluid output per floor&r)."
 				""
@@ -1353,8 +1383,9 @@
 			description: [
 				"&6Capacitors&r are devices that store electrical energy, which is useful for circuits."
 				""
-				"Not to be confused with &bEnderIO&r's capacitors&r, which store redstone flux."
+				"Not to be confused with &bEnder IO&r's capacitors&r, which store redstone flux."
 			]
+			icon: "gtceu:capacitor"
 			id: "7D0351942F4DB8E0"
 			rewards: [{
 				id: "258264528D30B707"
@@ -1364,7 +1395,14 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7766ABA36439522B"
-				item: "gtceu:capacitor"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:capacitors"
+					}
+				}
+				title: "Any #gtceu:capacitors"
 				type: "item"
 			}]
 			title: "Capacitors"
@@ -1419,7 +1457,7 @@
 			description: [
 				"&2With Silver, LPICs, NaK, and an HV Assembler, you can finally make HV Energy and Dynamo hatches."
 				""
-				"&2You should get the gist of making these now, so there will not be further quests on Energy and Dynamo hatches."
+				"You should get the gist of making these now, so there will not be further quests on Energy and Dynamo hatches."
 			]
 			id: "5BC6DB754207D4A8"
 			rewards: [{
@@ -1463,7 +1501,7 @@
 		{
 			dependencies: ["0C4E18B05F9E68DE"]
 			description: [
-				"&6Surface Mounted Devices&r, or &6SMD&rs for short, are &2more efficient ways to produce the Circuit components you've been making. They will be used until the second-to-last theme of circuits.&r"
+				"&6Surface Mounted Devices&r, or &6SMD&rs for short, are &2more efficient ways to produce the Circuit components you've been making.&r"
 				""
 				"All SMD components must be produced in at least a &2HV Assembling Machine&r, and they all will require liquid &9Polyethylene&r."
 				""
@@ -1582,7 +1620,7 @@
 			dependencies: [
 				"0E010F5348FC89BF"
 				"48E83C38B37DFEE6"
-				"024C0A84C054ED4B"
+				"6D434F3B0E720A5A"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1641,7 +1679,7 @@
 				""
 				"You can turn &6Plant Balls&r and other various &6sugary crops&r into &9Biomass&r with a &3Brewery&r. Biomass is the first step towards making Plastic in the form of &9Polyethylene&r."
 				""
-				"The Brewery is a very very slow machine, but it requires almost no power. Building &2many Breweries&r is necessary to brew enough Biomass for plastics. &2An alternative and more resource efficient way of making biomass is with a Pyrolyse Oven, Water, and Bio Chaff."
+				"The Brewery is a &overy&r slow machine, but it requires almost no power. Building &2many Breweries&r is necessary to brew enough Biomass for plastics. &2An alternative and more resource efficient way of making biomass is with a Pyrolyse Oven, Water, and Bio Chaff."
 			]
 			icon: "gtceu:mv_brewery"
 			id: "383FADC5E8BC4E91"
@@ -1699,9 +1737,12 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["5357A16B5BF62C96"]
+			dependencies: [
+				"5357A16B5BF62C96"
+				"57E7182198B2EA9A"
+			]
 			description: [
-				"&oThis is an important part of a Processing Line. Visit the Processing Lines Tab to have more info, useful tips and a visual representation of how to passively automate this."
+				"[\"This is an important part of a Processing Line. Visit the \",{\"text\":\"Processing Lines\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"}},\" tab to have more info, useful tips, and a visual representation of how to passively automate this.\"]"
 				""
 				"&6Uraninite Ore&r is the first source of &6Pulsating Dust&r but is not a very good one in the long term. Instead you should make &6Resonant Clathrates&r, which are an infinitely-renewable and effective source of Pulsating Dust."
 				""
@@ -1712,6 +1753,7 @@
 				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &bEMI&r and the Processing Lines Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
 			]
 			disable_toast: true
+			hide_until_deps_visible: true
 			id: "0C10EC03A01E7334"
 			shape: "hexagon"
 			tasks: [{
@@ -1794,35 +1836,6 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["48E83C38B37DFEE6"]
-			description: [
-				"Petrochemistry is the category of organic chemistry pertaining to petroleum, otherwise known as &9Oil&r."
-				""
-				"&bGregTech&r's petrochemistry may seem daunting at first, given the sheer number of chemicals and processing options, but it's actually easier to get into than you think."
-				""
-				"Oil is the starting point, and can be found in several variants which you can pump from finite natural wells on the Overworld, as well as coming renewably from &6Oilsands Ore&r and &6Soul Sand&r, and directly in liquid form from a &3Fluid Rig&r."
-				""
-				"&2The Fluid Rig can also harvest Raw Oil, Heavy Oil and Light Oil depending on your fluid vein. Raw Oil is similar to Oil, giving the same ratios when distilled but needing double the fluid. Heavy Oil and Light Oil give different ratios when distilled.&r "
-				""
-				"Start off by distilling the Oil. This will result in &9Sulfuric Heavy Fuel&r, &9Sulfuric Light Fuel&r, &9Sulfuric Naphtha&r, and/or &9Sulfuric Gas&r."
-				""
-				"These will all need to be hydrodesulfurized using &9Hydrogen&r in a &3Chemical Reactor&r or &2Oil Cracking Unit&r, which produces the non-Sulfuric versions."
-				""
-				"All of these products are useful, so figure out how you want to store the variety and large quantities of fluids."
-				""
-				"The upcoming quests will guide you through the basics of petrochemistry. Once you've mastered that, feel free to explore further."
-			]
-			icon: "gtceu:oil_bucket"
-			id: "024C0A84C054ED4B"
-			tasks: [{
-				id: "30E326A41DA04A3B"
-				type: "checkmark"
-			}]
-			title: "&2Navigating Petrochem"
-			x: 17.5d
-			y: 22.5d
-		}
-		{
 			dependencies: ["5B0200011DF8E1B6"]
 			description: [
 				"You'll need &9Chlorine&r at this point. It is an important ingredient in many chemical processes, and you can currently get it from electrolyzing either &6Salt&r or &6Rock Salt&r."
@@ -1856,7 +1869,7 @@
 				""
 				"The first tier holds &68,000 buckets&r, and higher tiers hold more. They can also be used like Drums to put fluids in and out of machines."
 				""
-				"You can conveniently configure &cvoiding&r for them to always void, start voiding at 95%% capacity, or never void."
+				"You can conveniently configure &cvoiding&r for them to always void, start voiding at 95% capacity, or never void."
 				""
 				"The item equivalent are &3Super Chests&r, which are used in certain &6Micro Miner&r recipes."
 				""
@@ -1930,6 +1943,7 @@
 				""
 				"&2But depending on which setups you build first, you may not need to make many of the basic version over the SMD version."
 			]
+			icon: "gtceu:inductor"
 			id: "013C3CD6D8C727CE"
 			rewards: [{
 				id: "1406FFBCF26D86E7"
@@ -1939,9 +1953,17 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75E2B7E59A591067"
-				item: "gtceu:inductor"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "gtceu:inductors"
+					}
+				}
+				title: "Any #gtceu:inductors"
 				type: "item"
 			}]
+			title: "Inductors"
 			x: 3.0d
 			y: 25.0d
 		}
@@ -1952,7 +1974,7 @@
 				""
 				"Shift + right-click after aiming to warp to one, or point it anywhere to teleport forward a short distance (works through walls)."
 				""
-				"These are powered with RF, and can be further enchanted through &bEnderIO&r's enchanting mechanics."
+				"These are powered with RF, and can be further enchanted through &bEnder IO&r's enchanting mechanics."
 				""
 				"The &6Vibrant Crystal&r will require an &3Autoclave&r."
 			]
@@ -1983,7 +2005,7 @@
 		{
 			dependencies: ["73C1AB31431B5C11"]
 			description: [
-				"&aEnder Fluid Conduits&r are the most powerful fluid transportation mechanism offered by &bEnderIO&r."
+				"&aEnder Fluid Conduits&r are the most powerful fluid transportation mechanism offered by &bEnder IO&r."
 				""
 				"Not only are these faster than &aPressurized Fluid Conduits&r, but because they teleport fluids instead of flowing them in the conduits, it possible to have a large number of fluids moving through a single line."
 				""
@@ -2011,7 +2033,7 @@
 			description: [
 				"Conduits to carry even MORE RF power."
 				""
-				"You're making these in the &3Assembling Machine&r, right?"
+				"You're making these in an &3Assembling Machine&r, right?"
 			]
 			id: "53205E306EE07F6F"
 			rewards: [{
@@ -2033,7 +2055,7 @@
 				"64F45D98FA48D834"
 				"73C1AB31431B5C11"
 			]
-			description: ["A pair of &6Double-Layer RF Capacitors&r combined with some &6Vibrant Alloy&r and &6Glowstone&r creates an &6Octadic RF Capacitor&r, which is a tier three &bEnderIO&r capacitor."]
+			description: ["A pair of &6Double-Layer RF Capacitors&r combined with some &6Vibrant Alloy&r and &6Glowstone&r creates an &6Octadic RF Capacitor&r, which is a tier three &bEnder IO&r capacitor."]
 			id: "0607A59215F0F8B3"
 			rewards: [{
 				id: "19758A42D6370AF6"
@@ -2054,7 +2076,7 @@
 			description: [
 				"Combining &6Basic RF Capacitors&r with some &6Coal Dust&r and &6Energetic Alloy&r produces a &6Double-Layer RF Capacitor&r."
 				""
-				"This is a tier two capacitor. Higher tier RF Capacitors will make &bEnderIO&r machines process faster and depending on the machine will expand their capabilities further (like area of effect)."
+				"This is a tier two capacitor. Higher tier RF Capacitors will make &bEnder IO&r machines process faster and depending on the machine will expand their capabilities further (like area of effect)."
 			]
 			id: "64F45D98FA48D834"
 			rewards: [{
@@ -2141,9 +2163,9 @@
 		{
 			dependencies: ["6A914B240E1A7BCB"]
 			description: [
-				"&eSuperconductor wires also won't kill you when touched now. In fact, you have to use Wires for Superconductors, because they don't even have cables!"
+				"&eSuperconductor wires won't kill you when touched now. In fact, you have to use Wires for Superconductors, because they don't even have cables!"
 				""
-				"&bEnderIO&r and &bThermal&r alloys are a bit more expensive than the normal wires, but they come with the huge advantage of being &2superconductors&r. Lossy cables like &6Tin&r and &6Copper&r will bleed out energy for every block they travel, but &2superconductors&r do not."
+				"&bEnder IO&r and &bThermal&r alloys are a bit more expensive than the normal wires, but they come with the huge advantage of being &2superconductors&r. Lossy cables like &6Tin&r and &6Copper&r will bleed out energy for every block they travel, but &2superconductors&r do not."
 				""
 				"The &2cheap superconductors&r for each tier are:"
 				""
@@ -2154,8 +2176,9 @@
 				"IV - Lumium "
 				"LuV - Signalum "
 				"ZPM - Enderium "
-				"UV - cryolobus "
-				"MAX - &2kubejs Superconductor&r, Omnium"
+				"UV - Cryolobus "
+				"UHV - Sculk Superconductor"
+				"MAX - Omnium"
 				""
 				"&2There are an additional set of superconductors, one for each tier, which are the CEu default superconductors. Their advantage is their higher amperage rating, reaching the hundreds of amps for higher tier 16x wires. They are also used in crafting Field Generators. They are:"
 				""
@@ -2187,7 +2210,7 @@
 			description: [
 				"All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."
 				""
-				"Providing it with &6Fertilizer&r will significantly increase it's output."
+				"Providing it with &6Fertilizer&r will significantly increase its output."
 			]
 			id: "3A71D736AE5C17E2"
 			rewards: [{
@@ -2206,7 +2229,7 @@
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
-			description: ["Placing a &9Wireless Charger&r in a area that you frequent (as such where you do your crafting) will ensure that your items are always topped off on energy."]
+			description: ["Placing a &9Wireless Charger&r in a area that you frequent (such as where you do your crafting) will ensure that your items are always topped off on energy."]
 			id: "1AA0A089DCA17FC8"
 			rewards: [{
 				id: "67EDE8C53008B226"
@@ -2226,7 +2249,7 @@
 		{
 			dependencies: ["61AD3760E271B431"]
 			description: [
-				"The &6Steam Seperator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				"The &6Steam Separator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses only some Steam."
 				""
 				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
 			]
@@ -2271,16 +2294,13 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"3E42B4AAA6D2A05B"
-				"1EBF9D9EADB7C451"
-			]
+			dependencies: ["3E42B4AAA6D2A05B"]
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
-				"Also important to note that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
+				"Also important to note is that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
 				""
-				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, `connecting' the gadget to the inventory."
+				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, 'connecting' the gadget to the inventory."
 				""
 				"For example, if you shift-right click a chest full of cobblestone, the gadget will use cobblestone from that chest to place blocks."
 				""
@@ -2289,43 +2309,38 @@
 			icon: "buildinggadgets2:gadget_building"
 			id: "5F9C7FB40AD2640B"
 			subtitle: "This pack has &bBuilding Gadgets&r."
-			tasks: [
-				{
-					id: "449B547CDED79AE3"
-					item: "buildinggadgets2:gadget_building"
-					type: "item"
-				}
-				{
-					id: "30A321B32CDAF437"
-					item: "buildinggadgets2:gadget_exchanging"
-					type: "item"
-				}
-				{
-					id: "4763F5F3C0771FFA"
-					item: {
-						Count: 1
-						id: "buildinggadgets2:gadget_copy_paste"
-						tag: { }
+			tasks: [{
+				id: "512BC0AAD462E586"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_building"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_exchanging"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_copy_paste"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_cut_paste"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_destruction"
+							}
+						]
 					}
-					type: "item"
 				}
-				{
-					id: "284A671CC5192B50"
-					item: {
-						Count: 1
-						id: "buildinggadgets2:gadget_cut_paste"
-						tag: {
-							pastereplace: 1b
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "51485964CFCB26B9"
-					item: "buildinggadgets2:gadget_destruction"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Inspector Gadget"
 			x: 9.0d
 			y: 12.0d

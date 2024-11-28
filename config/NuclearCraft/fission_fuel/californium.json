@@ -1,0 +1,42 @@
+[
+  {
+    "group": "californium",
+    "name": "hecf-249",
+    "forge_energy": 1728,
+    "heat": 696,
+    "criticality": 30,
+    "depletion": 53,
+    "efficiency": 180,
+    "isotopes": [249, 252]
+  },
+  {
+    "group": "californium",
+    "name": "hecf-251",
+    "forge_energy": 1800,
+    "heat": 720,
+    "criticality": 35,
+    "depletion": 100,
+    "efficiency": 185,
+    "isotopes": [251, 252]
+  },
+  {
+    "group": "californium",
+    "name": "lecf-249",
+    "forge_energy": 432,
+    "heat": 116,
+    "criticality": 60,
+    "depletion": 53,
+    "efficiency": 175,
+    "isotopes": [249, 252]
+  },
+  {
+    "group": "californium",
+    "name": "lecf-251",
+    "forge_energy": 450,
+    "heat": 120,
+    "criticality": 71,
+    "depletion": 100,
+    "efficiency": 180,
+    "isotopes": [251, 252]
+  }
+]

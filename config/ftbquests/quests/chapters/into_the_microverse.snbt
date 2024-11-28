@@ -6,12 +6,20 @@
 	icon: "kubejs:microminer_t1"
 	id: "68F29871402A6B1B"
 	order_index: 3
-	quest_links: [{
-		id: "3494A1A9317B9F3B"
-		linked_quest: "5F688F22A3DB2ADD"
-		x: -11.0d
-		y: -4.0d
-	}]
+	quest_links: [
+		{
+			id: "3494A1A9317B9F3B"
+			linked_quest: "5F688F22A3DB2ADD"
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			id: "04AA239F2D5B0B3A"
+			linked_quest: "5F109188BE4D9767"
+			x: 2.0d
+			y: -4.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["5F688F22A3DB2ADD"]
@@ -400,7 +408,7 @@
 				""
 				"- &eMake sure you're wearing your Space Suit&r (all four pieces) and that it has a full tank of Oxygen."
 				""
-				"- Two &aEnder Crystals&r and &aTeleporters&r, with one set up to bring you back home."
+				"- Two &aWaystones&r, with one set up to bring you back home."
 				""
 				"When you're sure you're prepared, sit in your rocket and press &eSpace&r."
 				""
@@ -498,9 +506,7 @@
 				""
 				"This suit lets you breathe in space, which is kind of important."
 				""
-				"You can also make yourself some &9space upgrade trims&r, and it to any armor of your choice into a spacesuit."
-				""
-				"You can also hide the spacesuit from your playermodel via the cosmetic armor buttons, if you wish."
+				"If you wish, you can hide the spacesuit from your playermodel via the cosmetic armor buttons."
 			]
 			icon: {
 				Count: 1
@@ -573,7 +579,7 @@
 				""
 				"In this case, you want to go to the &7Overworld's Moon&r, so select that."
 				""
-				"Then, place it in the rocket's inventory, accessed by right-clicking the rocket with an empty hand."
+				"Then, place it in the rocket's inventory, accessed by shift-right-clicking the rocket with an empty hand."
 			]
 			id: "0400F3BAB236F259"
 			rewards: [{
@@ -665,7 +671,7 @@
 				"3547762BC39A0B8F"
 				"4146B73F27D24131"
 			]
-			description: ["&9Dimethylamine&r and &9Chloramine&r combine together into &9Dimethylhydrazine&r. &2Or, combine Methanol, Ammonia and Hypochlorous Acid in a LCR."]
+			description: ["This needs an &6HV&r Chemical Reactor. &9Dimethylamine&r and &9Monochloramine&r combine together into &9Dimethylhydrazine&r. &2You can also combine Methanol, Ammonia, and Hypochlorous Acid."]
 			id: "5E2489DE2E840738"
 			rewards: [{
 				id: "1C076188D1C62B2C"
@@ -691,8 +697,6 @@
 				"&9Methanol&r and &9Ammonia&r combine together to make &9Dimethylamine&r."
 				""
 				"I know you're expecting a Breaking Bad joke here, but I don't walt to go for such low hanging fruit."
-				""
-				"&2This step can be skipped with a Large Chemical Reactor."
 			]
 			id: "4146B73F27D24131"
 			rewards: [{
@@ -727,14 +731,14 @@
 				item: "gtceu:monochloramine_bucket"
 				type: "item"
 			}]
-			title: "Chloramine"
+			title: "Monochloramine"
 			x: 1.5d
 			y: -13.5d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
 			description: [
-				"&9Hydrogen&r and &9Nitrogen&r combine together to make &9Ammonia&r."
+				"&9Hydrogen&r and &9Nitrogen&r combine together to make &9Ammonia&r in an &6HV&r Chemical Reactor."
 				""
 				"An easy way to get Nitrogen is to centrifuge &9Air&r, which will require you to build an &3Air Collector&r. You could also electrolyze &6Saltpeter&r, distill &9Fermented Biomass&r in a &3Distillation Tower&r, or get huge amounts from &2distlling Liquid Air in a Distillation Tower.&r."
 			]
@@ -817,29 +821,9 @@
 			y: -14.5d
 		}
 		{
-			dependencies: ["61AD3760E271B431"]
-			description: [
-				"&3Centrifuges&r provide you with &21 tiny pile&r of additional materials when processing ore dusts (&e9 tiny piles=1 dust&r). Sometimes it's the main dust, but often it's a different useful material that is otherwise unobtainable."
-				""
-				"Instead of washing &6impure dusts&r (made from macerating or hammering ores) in a cauldron, you can get more out of each dust by centrifuging it. The same is true of &6pure dusts&r, when you eventually make a &3Washer&r or &3Chemical Bath&r. Note however that pure and impure dusts will usually give different byproducts (always check in &bEMI&r)."
-				""
-				"Centrifuges also have other uses like unmixing compound dusts and fluids, or getting &6Rubber Pulp&r, which can be chemically reacted with &6Sulfur&r to efficiently make &9liquid Rubber&r."
-			]
-			id: "7890528B5B23980B"
-			shape: "hexagon"
-			tasks: [{
-				id: "14743A06F87B4B60"
-				item: "gtceu:lv_centrifuge"
-				type: "item"
-			}]
-			title: "&2Centrifuge"
-			x: 2.0d
-			y: -4.0d
-		}
-		{
 			dependencies: [
 				"281C7940CD437B69"
-				"7890528B5B23980B"
+				"5F109188BE4D9767"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1022,7 +1006,7 @@
 				"* Dilithium"
 				"* Salt Ore&r"
 				""
-				"When equipped with a Gemstone Sensor (which may currently not be available to you yet):"
+				"When equipped with a Gemstone Sensor (which may not be available to you yet):"
 				"&2* Perfect Diamond"
 				"&6* Apatite Ore"
 				"* Tricalcium Phosphate Ore"
@@ -1053,7 +1037,7 @@
 				"6A8764DDD3489EE8"
 			]
 			dependency_requirement: "one_completed"
-			description: ["Place down a &6Waystone&r and set a memorable name and enable &6Global&r if you want other players to access it, in order to be able to easily warp to that location, either using a &6Warp Scroll&r, a &6Warp Stone&r or a second Waystone."]
+			description: ["Place down a &6Waystone&r, set a memorable name (and enable &6Global&r if you want other players to access it), in order to be able to easily warp to that location, either using a &6Warp Scroll&r, a &6Warp Stone&r or a second Waystone."]
 			icon: "waystones:waystone"
 			id: "5EB185AD9BD0D069"
 			rewards: [{
@@ -1085,7 +1069,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["555BEBF7FD6012B7"]
+			dependencies: ["77582C534A994D7C"]
 			description: [
 				"With access to &6Crystaltine components&r, &3Auto Crafting Tables&r are now an option for automation of any size of crafting table - including 3x3."
 				""
@@ -1133,8 +1117,8 @@
 				type: "item"
 			}]
 			title: "Auto Crafting Tables"
-			x: -3.0d
-			y: -8.25d
+			x: -1.5d
+			y: -8.0d
 		}
 	]
 	title: "Into The Microverse"

@@ -1,9 +1,18 @@
 ## Other Frequently Asked Questions:
 See more at [FAQ.md](FAQ.md)
 
-**Fluid Drilling Rig or Multiblock Miner not working**
+**Unable to Join Multiplayer Server**
 
-Ensure you're using exactly one energy hatch of the allowed voltage tiers.
+Nuclearcraft issue, see [here](https://github.com/ThePansmith/Monifactory/commit/9144c1c2938c5251816e3bc7e536ae6069681d74#diff-e49803c96d7fa99d827b8beab31aad194abf477365548a757dd297c5a525fa16L32) on how to bandaid fix it. Note that the reason for this not being default is that it in turn introduces some problems of it's own, mainly allowing some ingots to be unintentionally smelted in a furnace.
+
+**Gregtech machine GUI mostly missing**
+
+Most frequently found on the Large boilers and Rocket Scanner, this is a bug with Gregtech: Modern.
+There is nothing that can be done until the mod updates - feel free to try downgrading until then but you may encounter even *more* issues in the attempt.
+
+**KubeJS errors when updating on Prism Launcher**
+
+Update to Prism 9.0. Previous versions of Prism don't delete files from the previous version of Moni when updating, so any file that should be removed in a modpack update won't necessarily be deleted on your end. This can cause problems.
 
 **EMI and/or AE2 having issues with GregTech tools**
 

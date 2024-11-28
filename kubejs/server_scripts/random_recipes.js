@@ -8,7 +8,6 @@ ServerEvents.recipes(event => {
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand']).id('snad:red_snad')
 
         //If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
-        //Otherwise, people will leave laggy items everywhere on the ground.
         event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
     } else if(!isExpertMode) { 
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
@@ -170,16 +169,18 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
     const cryolobusFuels = [
-        [2000, "gtceu:cetane_boosted_diesel"],
-        [2000, "gtceu:gasoline"],
+        [2000, 1800, "gtceu:cetane_boosted_diesel"],
+        [2000, 1800, "gtceu:gasoline"],
+        [500, 1200, "gtceu:high_octane_gasoline"],
+        [400, 900, "gtceu:jean_gasoline"]
     ]
 
-    for (const [mB, id] of cryolobusFuels) {
+    for (const [mB, duration, id] of cryolobusFuels) {
         event.recipes.gtceu.electric_blast_furnace("cryolobus_" + id.replace(/\W/g, ''))
             .itemInputs("gtceu:cryolobus_dust")
             .inputFluids(`${id} ${mB}`)
             .itemOutputs("gtceu:hot_cryolobus_ingot")
-            .duration(1800)
+            .duration(duration)
             .blastFurnaceTemp(6800)
             .EUt(30720)
 
@@ -187,52 +188,17 @@ ServerEvents.recipes(event => {
             .itemInputs("4x kubejs:warden_horn")
             .inputFluids(`${id} ${mB * 4}`)
             .itemOutputs("2x gtceu:hot_cryolobus_ingot")
-            .duration(3600)
+            .duration(duration * 2)
             .blastFurnaceTemp(6800)
             .EUt(30720)
-
     }
-    
-    //HOG Cryolobus Recipes
-    event.recipes.gtceu.electric_blast_furnace("cryolobus_hog")
-        .itemInputs("gtceu:cryolobus_dust")
-        .inputFluids("gtceu:high_octane_gasoline 500")
-        .itemOutputs("gtceu:hot_cryolobus_ingot")
-        .duration(1200)
-        .blastFurnaceTemp(6800)
-        .EUt(30720)
-
-    event.recipes.gtceu.electric_blast_furnace("cryolobus_scale_hog")
-        .itemInputs("4x kubejs:warden_horn")
-        .inputFluids("gtceu:high_octane_gasoline 2000")
-        .itemOutputs("2x gtceu:hot_cryolobus_ingot")
-        .duration(2400)
-        .blastFurnaceTemp(6800)
-        .EUt(30720)
-
-    //JEAN Cryolobus Recipes
-    event.recipes.gtceu.electric_blast_furnace("cryolobus_jean")
-        .itemInputs("gtceu:cryolobus_dust")
-        .inputFluids("gtceu:jean_gasoline 400")
-        .itemOutputs("gtceu:hot_cryolobus_ingot")
-        .duration(900)
-        .blastFurnaceTemp(6800)
-        .EUt(30720)
-
-    event.recipes.gtceu.electric_blast_furnace("cryolobus_scale_jean")
-        .itemInputs("4x kubejs:warden_horn")
-        .inputFluids("gtceu:jean_gasoline 1600")
-        .itemOutputs("2x gtceu:hot_cryolobus_ingot")
-        .duration(1800)
-        .blastFurnaceTemp(6800)
-        .EUt(30720)
 
     //Cryolobus Vac Freezer recipe
     event.remove({ id: "gtceu:vacuum_freezer/cool_hot_cryolobus_ingot" }) 
     event.recipes.gtceu.vacuum_freezer("cryolobus_ingot_cooling")
         .itemInputs('gtceu:hot_cryolobus_ingot')
         .itemOutputs('gtceu:cryolobus_ingot')
-        .inputFluids(Fluid.of('kubejs:molten_cryotheum', 2000))
+        .inputFluids(Fluid.of('kubejs:molten_cryotheum', 250))
         .duration(600)
         .EUt(1920)
 
@@ -780,11 +746,18 @@ ServerEvents.recipes(event => {
     .duration(120)
     .EUt(75)
 
-    event.recipes.gtceu.extractor('resonant_ender')
-    .itemInputs('minecraft:ender_pearl')
-    .outputFluids(Fluid.of('thermal:ender', 250))
-    .duration(40)
-    .EUt(30)
+    event.recipes.gtceu.extractor('resonant_ender_from_pearl')
+        .itemInputs('1x minecraft:ender_pearl')
+        .outputFluids(Fluid.of('thermal:ender', 250))
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.fluid_solidifier('pearl_from_resonant_ender')
+        .notConsumable('gtceu:ball_casting_mold')
+        .inputFluids(Fluid.of('thermal:ender', 250))
+        .itemOutputs('1x minecraft:ender_pearl')
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     //Cleanroom Hatch
     event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning'})
@@ -893,8 +866,8 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
-    // Dragon Breath caning and extracting
-    event.recipes.gtceu.extractor('dragon_breath_fluid')
+    // Dragon Breath canning and uncanning
+    event.recipes.gtceu.canner('dragon_breath_unbottling')
         .itemInputs('minecraft:dragon_breath')
         .itemOutputs('minecraft:glass_bottle')
         .outputFluids('gtceu:dragon_breath 250')
@@ -931,7 +904,7 @@ ServerEvents.recipes(event => {
         .circuit(4)
 
     event.recipes.gtceu.chemical_reactor('kubejs:tetraethyllead')
-        .itemInputs('4x gtceu:sodium_lead_alloy_dust')
+        .itemInputs('8x gtceu:sodium_lead_alloy_dust')
         .inputFluids('gtceu:chloroethane 4000')
         .outputFluids('gtceu:tetraethyllead 1000')
         .itemOutputs('4x gtceu:salt_dust', '3x gtceu:lead_dust')
@@ -994,5 +967,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('minecraft:pearlescent_froglight')
         .duration(20)
         .EUt(15)
+
+    // Patchouli Books that needed tweaking
+    event.replaceInput({ id: 'laserio:my_book_recipe_shapeless'}, 'laserio:logic_chip', 'laserio:card_item')
 })
- 

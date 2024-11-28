@@ -9,6 +9,14 @@ JEIEvents.hideItems(event => {
     })
     event.hide(['gtceu:firebrick', 'gtceu:firebricks', 'gtceu:primitive_blast_furnace'])
     event.hide(/fireclay/)
+    event.hide('kubejs:meowni_plush')
+    
+    //Bronze tier storage
+    event.hide('sophisticatedstorage:iron_barrel')
+    event.hide('sophisticatedstorage:iron_chest')
+    event.hide('sophisticatedstorage:iron_shulker_box')
+    event.hide(/^sophisticatedstorage:.*iron.*tier_upgrade$/)
+    
 }
 
         if (isHardMode) {

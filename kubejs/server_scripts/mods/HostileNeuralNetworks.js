@@ -143,27 +143,6 @@ ServerEvents.recipes(event => {
             )
         })
         
-        event.shaped(
-            '2x kubejs:impossible_realm_data', [
-                'ABA',
-                'BAB',
-                'ABA'
-            ], {
-                A: 'hostilenetworks:nether_prediction',
-                B: 'kubejs:solidified_experience'
-            }
-        )
-        event.shaped(
-            '4x kubejs:impossible_realm_data', [
-                'ABA',
-                'BAB',
-                'ABA'
-            ], {
-                A: 'hostilenetworks:end_prediction',
-                B: 'kubejs:solidified_experience'
-            }
-        )
-
         event.recipes.gtceu.extractor('extract_quantum_flux')
             .itemInputs('kubejs:impossible_realm_data')
             .itemOutputs('kubejs:quantum_flux')

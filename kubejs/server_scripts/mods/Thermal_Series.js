@@ -5,14 +5,71 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer']})
 
     event.remove({ id: /thermal:[A-Za-z]+_dust_/ }) //I don't even know what recipes this line of code is supposed to target
+    event.remove({ id: /thermal:.*_cast/ })
     event.remove({ id: 'thermal:fire_charge/obsidian_glass_2' })
     event.remove({ id: 'thermal:fire_charge/signalum_glass_2' })
     event.remove({ id: 'thermal:fire_charge/lumium_glass_2' })
     event.remove({ id: 'thermal:fire_charge/enderium_glass_2' })
 
     //Unify Thermal with GT rubber
-    event.smelting('gtceu:sticky_resin', 'thermal:tar');
+    event.smelting('gtceu:sticky_resin', 'thermal:tar')
     event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['gtceu:rubber_plate'])
+    //Unify Thermal dies
+    
+    event.shaped('thermal:press_packing_2x2_die', [
+        ' A ',
+        'BCB',
+        ' A '
+    ], {
+        A: 'gtceu:invar_plate',
+        B: 'gtceu:cupronickel_plate',
+        C: '#minecraft:planks'
+    }).id('thermal:press_packing_2x2_die')
+
+    event.shaped('thermal:press_packing_3x3_die', [
+        ' B ',
+        'ACA',
+        ' B '
+    ], {
+        A: 'gtceu:invar_plate',
+        B: 'gtceu:cupronickel_plate',
+        C: '#minecraft:planks'
+    }).id('thermal:press_packing_3x3_die')
+
+    event.shaped('thermal:press_unpacking_die', [
+        'B A',
+        ' C ',
+        'A B'
+    ], {
+        A: 'gtceu:invar_plate',
+        B: 'gtceu:cupronickel_plate',
+        C: '#minecraft:planks'
+    }).id('thermal:press_unpacking_die')
+
+
+    // Hardened Glass recipes
+    event.recipes.gtceu.alloy_smelter('kubejs:hardened_glass')
+        .itemInputs('1x #forge:dusts/lead', '4x #forge:dusts/obsidian')
+        .itemOutputs('2x thermal:obsidian_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.alloy_smelter('kubejs:signalum_glass')
+        .itemInputs('1x #forge:dusts/signalum', '2x thermal:obsidian_glass')
+        .itemOutputs('2x thermal:signalum_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.alloy_smelter('kubejs:lumium_glass')
+        .itemInputs('1x #forge:dusts/lumium', '2x thermal:obsidian_glass')
+        .itemOutputs('2x thermal:lumium_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.alloy_smelter('kubejs:enderium_glass')
+        .itemInputs('1x #forge:dusts/enderium', '2x thermal:obsidian_glass')
+        .itemOutputs('2x thermal:enderium_glass')
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.HV])
+
 
     //Centrifuging Recipes for Arboreal Extractor products
     event.recipes.gtceu.centrifuge('kubejs:latex_centrifuging')
@@ -147,9 +204,9 @@ ServerEvents.recipes(event => {
     )
 
     //Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}')
-    event.recipes.gtceu.assembler('triple_power_augment')
+    event.recipes.gtceu.assembler('power_augment')
         .itemInputs('6x gtceu:conductive_alloy_block', '6x gtceu:sterling_silver_ingot', '3x kubejs:redstone_transmission_coil', '12x gtceu:energetic_alloy_ingot')
-        .itemOutputs(Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,DynamoEnergy:0.7f,Type:"Dynamo"}}'))
+        .itemOutputs(Item.of('thermal:dynamo_output_augment'))
         .duration(80)
         .EUt(32)
 
@@ -277,10 +334,11 @@ ServerEvents.recipes(event => {
         'thermal:machine_frame', [
             'SSS',
             'SMS',
-            'SSS'
+            'III'
         ], {
-            M: 'gtceu:mythril_block',
-            S: 'gtceu:stainless_steel_plate'
+            M: '#forge:gears/mythril',
+            S: '#forge:plates/stainless_steel',
+            I: '#forge:ingots/invar'
         }
     )
 
@@ -683,6 +741,9 @@ ServerEvents.recipes(event => {
         A: '#forge:nuggets/signalum',
         B: '#forge:ingots/signalum'
     }).id('kubejs:lock');
+
+    // Workbench
+    event.replaceInput({ id: 'thermal:tinker_bench' }, 'minecraft:crafting_table', 'gtceu:lv_machine_hull')
 
     /*=== misc thermals ===*/
     event.remove({ output: 'thermal:phytogro' });

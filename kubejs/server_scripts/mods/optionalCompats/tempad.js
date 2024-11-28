@@ -25,7 +25,7 @@ if (Platform.isLoaded('tempad')) {
 
         event.recipes.gtceu.assembler('tempad:he_who_remains_tempad')
             .itemInputs('tempad:tempad', 'gtceu:lapotron_crystal', '4x #gtceu:circuits/ev', '16x kubejs:quantum_flux', '8x gtceu:tungsten_carbide_plate', '2x gtceu:signalum_plate')
-            .inputFluids('kubejs:primal_mana 1000')
+            .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
             .itemOutputs('tempad:he_who_remains_tempad')
             .duration(100)
             .EUt(512)

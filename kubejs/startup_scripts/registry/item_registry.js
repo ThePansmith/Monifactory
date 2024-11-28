@@ -136,6 +136,9 @@ StartupEvents.registry('item', event => {
     event.create('creative_energy_data')
     if (!isNormalMode) event.create('omnic_data')
 
+    //Infinity Fluid Cell Base
+    event.create('infinity_cell_base').displayName("ME Infinity Cell Base")
+
 
     // Endgame Items
     event.create('diamond_lattice')
@@ -215,15 +218,15 @@ StartupEvents.registry('item', event => {
 
     // Stabilized Elements
     const stabilized_elements = [
-        ['einsteinium', '#ffea00'],
-        ['berkelium', '#ff8400'],
-        ['neptunium', '#2e66ff'],
-        ['plutonium', '#ff0066'],
-        ['uranium', '#04ff00'],
-        ['curium', '#c800ff'],
-        ['californium', '#ad0232'],
-        ['americium', '#875800'],
-        ['oganesson', '#cda79a']
+        ['einsteinium', '#ce9f00'],
+        ['berkelium', '#a33f20'],
+        ['neptunium', '#486d7b'],
+        ['plutonium', '#ba2727'],
+        ['uranium', '#1d891d'],
+        ['curium', '#58307f'],
+        ['californium', '#7d0222'],
+        ['americium', '#287869'],
+        ['oganesson', '#443936']
     ]
 
     for (const [element, elemColor] of stabilized_elements) {
@@ -239,7 +242,19 @@ StartupEvents.registry('item', event => {
     event.create('endest_star').glow(true)
     event.create('grains_of_innocence')
     event.create('radium_salt').rarity('Epic')
+
+    // Thrusters
+    const thrusters = ['conductive_iron','leadstone','electrical_steel','hardened','energetic','reinforced','resonant','vibrant','dark_soularium','fluxed']
+
+    thrusters.forEach(thruster => {
+    event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
+    })
+
+    // Planet dusts
     event.create('moon_dust')
+    event.create('mars_dust')
+    event.create('venus_dust')
+    event.create('mercury_dust')
 
 
     // Thermal Series item ports
@@ -274,7 +289,6 @@ StartupEvents.registry('item', event => {
     event.create('flight_control_unit')
     event.create('glowstone_elevation_unit')
     event.create('cryotheum_coolant_unit')
-
 
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
@@ -471,14 +485,5 @@ StartupEvents.registry('item', event => {
             .displayName(universal_circuit.toUpperCase() + " Universal Circuit")
             .tooltip("§7A Universal Circuit")
             .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
-    })
-})
-
-ItemEvents.toolTierRegistry(event => {
-    event.add("dev", (tier) => {
-        tier.enchantmentValue = 42
-        tier.level = 42
-        tier.uses = 42690
-        tier.speed = 12
     })
 })

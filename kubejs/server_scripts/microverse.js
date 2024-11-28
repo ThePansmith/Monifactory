@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:basic_micro_miner_guidance_system',
             L: 'kubejs:basic_mining_laser',
             A: 'gtceu:lv_field_generator',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:conductive_iron"}').weakNBT(),
+            T: 'kubejs:conductive_iron_thruster',
             M: 'gtceu:lv_combustion'
         }
     )
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:lv_field_generator',
             F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:mv_combustion',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').weakNBT()
+            T: 'kubejs:electrical_steel_thruster'
         }
     )
 
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
             L: 'kubejs:reinforced_mining_laser',
             F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:hv_combustion',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:reinforced"}').weakNBT()
+            T: 'kubejs:reinforced_thruster'
         }
     )
 
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:tungsten_steel_crate',
             B: 'gtceu:hv_field_generator',
             F: 'kubejs:signalum_micro_miner_core',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').weakNBT(),
+            T: 'kubejs:energetic_thruster',
             D: 'thermal:dynamo_compression'
         }
     )
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
             F: 'kubejs:signalum_micro_miner_core',
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').weakNBT()
+            T: 'kubejs:vibrant_thruster',
         }
     )
 
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:iv_field_generator',
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:resonant"}').weakNBT()
+            T: 'kubejs:resonant_thruster'
         }
     )
 
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
             '  NN NN  ',
             '  NN NN  ',
             ' NUNNNUN ',
-            'PNCN NCNP',
+            'PNCNNNCNP',
             'NNRNANRNN',
             ' NNNNNNN ',
             'NW W W WN'
@@ -335,7 +335,7 @@ ServerEvents.recipes(event => {
             B: 'minecraft:quartz_block',
             Q: 'minecraft:quartz',
             C: '#gtceu:circuits/hv',
-            E: 'enderio:advanced_capacitor_bank'
+            E: 'enderio:octadic_capacitor'
         }
     )
 
@@ -415,8 +415,8 @@ ServerEvents.recipes(event => {
             'ae2:quantum_link',
             '2x #forge:plates/crystal_matrix',
             '2x gtceu:iv_field_generator',
-            Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:fluxed"}').weakNBT(),
-            Item.of('ironjetpacks:thruster', 2, '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
+            'kubejs:fluxed_thruster',
+            'kubejs:dark_soularium_thruster')
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('ae2:quantum_ring').EUt(480).duration(1200))
         .itemOutputs('kubejs:warp_engine')
         .inputFluids('gtceu:soldering_alloy 1152')

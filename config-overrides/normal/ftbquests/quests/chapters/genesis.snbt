@@ -304,7 +304,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&c&rOres in &9Monifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area!"
+				"&c&rOres in &9Monifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area! &9You can also click on a ore vein to mark it on your map!"
 				"&r"
 				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
 				"{@pagebreak}"
@@ -665,9 +665,9 @@
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
-			description: ["At this point, you might as well just make a &3Multi Smelter&r. But it does smelt items at a blazing quick 5 ticks"]
+			description: ["At this point, you might as well just make a &3Multi Smelter&r. But it does smelt items at a blazing quick 5 ticks."]
+			hide_until_deps_complete: true
 			id: "69E77BD01CFF65EB"
-			invisible: true
 			rewards: [{
 				id: "2BBD659B19ED9807"
 				item: "kubejs:moni_nickel"

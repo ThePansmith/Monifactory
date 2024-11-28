@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
     //Sunnarium plates
-    event.remove({ id: 'gtceu:compressor/compress_plate_dust_sunnarium_'})
+    event.remove({ id: 'gtceu:compressor/compress_plate_dust_sunnarium'})
     event.shaped(
         '4x gtceu:sunnarium_plate', [
             'PPP',
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.remove({ id: 'gtceu:compressor/compress_plate_dust_enriched_sunnarium_'})
+    event.remove({ id: 'gtceu:compressor/compress_plate_dust_enriched_sunnarium'})
     event.shaped(
         'gtceu:enriched_sunnarium_plate', [
             ' A ',
@@ -111,18 +111,6 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(30)
 
-
-    //SPACE STUFF
-
-    event.recipes.gtceu.centrifuge('moon_deuterium')
-        .itemInputs('kubejs:moon_dust')
-        .chancedOutput('gtceu:stone_dust', 3000, 500)
-        .chancedOutput('kubejs:dust', 1000, 100)
-        .chancedOutput('minecraft:sand', 500, 200)
-        .outputFluids(Fluid.of('gtceu:deuterium', 100))
-        .duration(200)
-        .EUt(20)
-
     event.shaped(
         'kubejs:quantum_flux', [
             ' B ',
@@ -131,18 +119,6 @@ ServerEvents.recipes(event => {
         ], {
             A: 'enderio:pulsating_crystal',
             B: 'hostilenetworks:end_prediction'
-        }
-    )
-
-
-    event.shaped(
-        'kubejs:quantum_flux', [
-            ' B ',
-            'BAB',
-            ' B '
-        ], {
-            A: 'minecraft:diamond',
-            B: 'kubejs:moon_dust'
         }
     )
 

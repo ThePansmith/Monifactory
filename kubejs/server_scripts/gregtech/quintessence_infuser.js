@@ -36,10 +36,10 @@ ServerEvents.recipes(event => {
     }
     
 
-    Soulbinding('enderio:prescient_crystal', 'shulker', 'enderio:vibrant_crystal', 170, 16000, ['enderio:prescient_crystal', 'enderio:empty_soul_vial']) 
-    Soulbinding('enderio:ender_crystal', 'enderman', 'enderio:vibrant_crystal', 128, 12000, ['enderio:ender_crystal', 'enderio:empty_soul_vial']) 
-    Soulbinding('enderio:enticing_crystal', 'villager', 'minecraft:emerald', 100, 8000, ['enderio:enticing_crystal', 'enderio:empty_soul_vial']) 
-    Soulbinding('enderio:frank_n_zombie', 'zombie', 'enderio:z_logic_controller', 128, 8000, ['enderio:frank_n_zombie', 'enderio:empty_soul_vial']) 
-    Soulbinding('enderio:sentient_ender', 'witch', 'enderio:ender_resonator', 128, 8000, ['enderio:sentient_ender', 'enderio:empty_soul_vial']) 
+    Soulbinding('enderio:prescient_crystal', 'shulker', 'enderio:vibrant_crystal', 170, 2240, ['enderio:prescient_crystal', 'enderio:empty_soul_vial']) 
+    Soulbinding('enderio:ender_crystal', 'enderman', 'enderio:vibrant_crystal', 128, 1440, ['enderio:ender_crystal', 'enderio:empty_soul_vial']) 
+    Soulbinding('enderio:enticing_crystal', 'villager', 'minecraft:emerald', 100, 800, ['enderio:enticing_crystal', 'enderio:empty_soul_vial']) 
+    Soulbinding('enderio:frank_n_zombie', 'zombie', 'enderio:z_logic_controller', 128, 800, ['enderio:frank_n_zombie', 'enderio:empty_soul_vial']) 
+    Soulbinding('enderio:sentient_ender', 'witch', 'enderio:ender_resonator', 128, 800, ['enderio:sentient_ender', 'enderio:empty_soul_vial']) 
 
 })

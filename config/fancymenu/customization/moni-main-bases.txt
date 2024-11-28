@@ -1,0 +1,33 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = menu_base_fullscreen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1731716932163
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:b32bc484-7615-494a-9b4f-472562d12070-1731716848845] = [groups:][instances:]
+}
+
+menu_background {
+  slideshow_name = moni
+  background_type = slideshow
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+

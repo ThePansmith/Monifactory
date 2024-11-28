@@ -3,3 +3,12 @@ type = custom_gui_screens
 overridden_screens {
 }
 
+custom_gui {
+  identifier = menu_base_fullscreen
+  title = 
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = true
+  pause_game = true
+}
+

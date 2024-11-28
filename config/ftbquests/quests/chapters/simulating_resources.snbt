@@ -15,11 +15,11 @@
 				"715BC5C7DAC53B7B"
 			]
 			description: [
-				"Simulating mob kills will occasionally result in &6Pristine Matter&r of that mob's type."
+				"Simulating mob kills will occasionally result in &6Predictions&r of that mob's type."
 				""
-				"Putting Pristine matter into a &3Loot Fabricator&r will allow you to obtain one of various items related to that mob."
+				"Putting &6Mob Predictions&r into a &3Loot Fabricator&r will allow you to obtain one of various items related to that mob."
 				""
-				"Much like &3Simulation Chambers&r, Loot Fabricators are &asided&r, accepting input from &athe top side&r and allowing extraction from &aall sides except the top&r."
+				"Unlike &3Simulation Chambers&r, Loot Fabricators are &asided&r, accepting input from &athe top side&r and allowing extraction from &aall sides except the top&r."
 			]
 			hide_until_deps_visible: true
 			id: "0006FEA1843FEA0A"
@@ -161,7 +161,7 @@
 			description: [
 				"There's no rush to get these all done and leveled up, but they do provide a good source of some of the basic resources in exchange for RF."
 				""
-				"Look at what the &6Pristine Matter&r for each mob provides, and set up simulators for all the ones you're interested in. If your power can handle it, it can even be advantageous to run several of the same model."
+				"Look at what the &6Prediction&r for each mob provides, and set up simulators for all the ones you're interested in. If your power can handle it, it can even be advantageous to run several of the same model."
 			]
 			id: "61E018C3BAB05818"
 			rewards: [{
@@ -284,9 +284,9 @@
 		{
 			dependencies: ["73C6E2724EBEC997"]
 			description: [
-				"Provide your &3Simulation Chamber&r with RF power and &6Pulsating Prediction Matrix&r. Then insert a &6Data Model&r of your choice. The Simulation Chamber will consume Prediction Matrix and a decent amount of power to begin simulating mob kills. This will generate &6Overworldian Matter&r and may occasionally provide you with &6Pristine Matter&r."
+				"Provide your &3Simulation Chamber&r with RF power and &6Pulsating Prediction Matrixes&r. Then insert a &6Data Model&r of your choice. The Simulation Chamber will consume Prediction Matrixes and a decent amount of power to begin simulating mob kills. This will generate &6Overworldian Matter&r and may occasionally provide you with &6Mob Predictions&r."
 				""
-				"&6Overworldian Matter&r can be eaten to gain experience, or can be combined with other materials to obtain drops from Overworld mobs, and other forms of matter. With these drops and the other kinds of matter, you can then create Data Models for lots of other mob types!"
+				"&6Overworldian Matter&r can be eaten to gain experience, or combined with other materials to obtain drops from Overworld mobs, as well as other forms of matter. With these drops and the other kinds of matter, you can then create Data Models for lots of other mob types!"
 			]
 			id: "2201391DEEBE79E4"
 			rewards: [{
@@ -329,7 +329,7 @@
 		}
 		{
 			dependencies: ["72D61AFACC53A34A"]
-			description: ["&6Hellish Matter&r and &6Ender Pearl&r can be crafted into Extraterrestrial Matter."]
+			description: ["&6Hellish Matter&r and &6Ender Pearls&r can be crafted into Extraterrestrial Matter."]
 			id: "09F8678BBA41D15E"
 			rewards: [{
 				id: "1F5EA736BD59C447"
@@ -471,7 +471,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["7A67E519745A8361"]
+			dependencies: [
+				"7A67E519745A8361"
+				"3000798ACA51BFDC"
+			]
 			description: [
 				"&9Nether Air&r, collected from &3Gas Collectors&r, can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Nether Air&r."
 				""
@@ -479,6 +482,7 @@
 				""
 				"&2Liquid Air and Liquid Ender Air give different useful components too."
 			]
+			hide_until_deps_visible: true
 			icon: "gtceu:liquid_nether_air_bucket"
 			id: "45DD07F2BB9C6A59"
 			rewards: [{
@@ -504,11 +508,11 @@
 			description: [
 				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
 				""
-				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron, gold, tin, copper, diamonds&r and many more!), through pristine matter."
+				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron&r, &6gold&r, &6tin&r, &6copper&r, &6diamonds&r and much more!), through pristine matter."
 				""
 				"Setting up &bHNN&r automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
 				""
-				"&bHNN&r machines are not sided, so you can input and output from any side."
+				"&3Simulation Chambers&r are not sided, so you can input and output from any side."
 				""
 				"Yes, you can also use it for generating power... &owith &6Diamonds&r."
 			]

@@ -47,7 +47,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "The &aME Controller&r acts as the `brain' and a bit of power storage for an &eME Network&r."
+			subtitle: "The &aME Controller&r acts as the 'brain' and a bit of power storage for an &eME Network&r."
 			tasks: [{
 				id: "34FE8D1065808917"
 				item: "ae2:controller"
@@ -87,7 +87,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Calculation Processors&r are made from &6Printed Calculation Circuit&r, &6Printed Silicon&r, and any &6tier one circuit&r."
+			subtitle: "&6Calculation Processors&r are made from a &6Printed Calculation Circuit&r, &6Printed Silicon&r, and any &6tier one circuit&r."
 			tasks: [{
 				id: "63ED16CB8306DC8C"
 				item: "ae2:calculation_processor"
@@ -129,8 +129,6 @@
 				"&3Inscribers&r are machines used to make &6inscribed circuits&r for &bApplied Energistics&r."
 				""
 				"&9Inscribers can be set to automatically export items, can hold up to a stack of items within, as well as a variety of other features to aid in automation."
-				""
-				"&9The silicon used in inscribed circuits no longer requires an EBF with HV power."
 			]
 			id: "295E3D32083676E6"
 			rewards: [{
@@ -160,7 +158,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Logic Processors&r are made from &6Printed Logic Circuit&r, &6Printed Silicon&r, and any tier one circuit."
+			subtitle: "&6Logic Processors&r are made from a &6Printed Logic Circuit&r, &6Printed Silicon&r, and any tier one circuit."
 			tasks: [{
 				id: "3A650FC102D75669"
 				item: "ae2:logic_processor"
@@ -174,9 +172,9 @@
 			description: [
 				"These are the basic cables used by &3Applied Energistics&r to transport network connectivity. Due to the fact that channels are disabled, these cables will be your main method of transporting network connectivity, rather than the dense cables."
 				""
-				"These cables do not share blockspace with conduits or cables for other mods, so they can be somewhat unweildy to build with, but they do accept &3Applied Energistics &6Facades&r, so they can be hidden very easily. Keep in mind that a large number of facades leads to FPS lag."
+				"These cables do not share blockspace with conduits or cables for other mods, so they can be somewhat unwieldy to build with, but they do accept &3Applied Energistics &6Facades&r, so they can be hidden very easily. Keep in mind that a large number of facades leads to FPS lag."
 				""
-				"Later you can make a variant of the cable that can share blockspace with &3Ender IO&r conduits."
+				"Later, you can make a variant of the cable that can share blockspace with &3Ender IO&r conduits."
 			]
 			id: "1D3A5DCCE1B40D29"
 			rewards: [{
@@ -239,9 +237,9 @@
 		{
 			dependencies: ["670C69611ECFF5C8"]
 			description: [
-				"If you like exploring you can find them in meteors with a &aMeteor Compass&r."
+				"If you like exploring, you can find them in meteors with a &aMeteor Compass&r."
 				""
-				"If you don't want to do that, or are having trouble finding one you need, feel free to etch them yourself with a &3Precision Laser Engraver&r."
+				"If you don't want to do that, or are having trouble finding one you need, feel free to etch them yourself with a &3Laser Engraver&r."
 			]
 			id: "7FC4297F2BC90F55"
 			rewards: [{
@@ -347,7 +345,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&6Engineering Processors&r are made from &6Printed Engineering Circuit&r, &6Printed Silicon&r, and any tier one circuit."
+			subtitle: "&6Engineering Processors&r are made from a &6Printed Engineering Circuit&r, &6Printed Silicon&r, and any tier one circuit."
 			tasks: [{
 				id: "2D4C3E3A6D443BB0"
 				item: "ae2:engineering_processor"
@@ -360,7 +358,7 @@
 		{
 			dependencies: ["0FD703A1A1E5055E"]
 			description: [
-				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, RF/EU or fluids from one location to another, using your ME system, without the need to use any disk storage space. &cTransporting RF/EU has a 5% tax on the input energy.&r"
+				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, RF/EU or fluids from one location to another using your ME system, without the need to use any disk storage space. &cTransporting RF/EU has a 5% tax on the input energy.&r"
 				""
 				"Each P2P tunnel system may have only &cone input&r but &eany number of outputs&r. There is no limit on how many P2P tunnels, or P2P tunnel systems, you can have on one network."
 				""
@@ -487,7 +485,7 @@
 				""
 				"Also, if you connect a gadget from &bBuilding Gadgets&r to the Pattern Provider, the gadget will pull materials straight from the attached AE2 network, &aNOT&r the Pattern Provider."
 				""
-				"There is information of the Gadgets, and how to connect them to inventories, in the &eInspector Gadget&r quest in &cGenesis&r in &cMatter Energy&r or &cThe Factory&r."
+				"[\"There is information about the Gadgets, and how to connect them to inventories, in the \",{\"text\":\"Inspector Gadget\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5F9C7FB40AD2640B\"}},\" quest in \",{\"text\":\"Early Game\",\"color\":\"red\"},\".\"]"
 			]
 			icon: "ae2:pattern_provider"
 			id: "1040D941027962B1"
@@ -497,7 +495,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&lNot&r An Interface"
+			subtitle: "&lNot&r an Interface"
 			tasks: [{
 				id: "24069DF90AE106FD"
 				item: {
@@ -602,14 +600,13 @@
 		{
 			dependencies: ["4174A6C6403DD245"]
 			description: [
-				"If you've tried to insert or remove a lot of items quickly, you might notice your ME network"
-				"&eflickers offline&r briefly. This is because digitizing and re-materializing items requires energy!"
+				"If you've tried to insert or remove a lot of items quickly, you might notice your ME network &eflickers offline&r briefly. This is because digitizing and re-materializing items requires energy!"
 				""
 				"Your network doesn't naturally store very much energy and the &6Energy Acceptor&r only intermittently refills the network's power. To keep things stable, you will need to add some energy storage in your network using &6Energy Cells&r."
 				""
-				"Just place one anywhere in your network and it will fill up with AE energy received from the Energy Acceptor. Now, you should have enough energy in your network to prevent these power losses. Feel free to add more energy cells, or upgrade to &6Dense Energy Cells&r, if you continue to experience problems."
+				"Just place one anywhere in your network and it will fill up with AE energy received from the Energy Acceptor. Now, you should have enough energy in your network to prevent these power losses. Feel free to add more energy cells, or upgrade to &6Dense Energy Cells&r if you continue to experience problems."
 				""
-				"If you've opted to enable channels in your AE2 configs, you will innately have some energy storage from the &3ME Controller&r, but we assume you know what you're doing at that point. &eAE2 Channels mechanics are outside the scope of the quest book, and this is the only time it will be mentioned."
+				"If you've opted to enable channels in your AE2 configs, you will innately have some energy storage from the &3ME Controller&r, but we assume you know what you're doing at that point. &eThe mechanics of AE2 Channels are outside the scope of the quest book, and this is the only time it will be mentioned."
 			]
 			icon: {
 				Count: 1
@@ -617,7 +614,7 @@
 				tag: { }
 			}
 			id: "5A83E1115F965393"
-			subtitle: "Oops... A Blackout!"
+			subtitle: "Oops... a blackout!"
 			tasks: [{
 				id: "714C125E0ED99334"
 				item: {
@@ -744,7 +741,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "The third component for AE item &6Storage Cells&r."
+			subtitle: "The third component for AE &6Storage Cells&r."
 			tasks: [{
 				id: "25D1BDBF3A962C46"
 				item: "ae2:cell_component_16k"
@@ -779,15 +776,15 @@
 				"1175ED9EF0AB82F6"
 			]
 			description: [
-				"Firstly, you will need a &3Matter Condenser&r. Stick a &664k ME Storage Component&r in, change the mode to 'Singularity', and stuff lots of items (or fluids) in, &9done easily with a infinity cell&r."
+				"Firstly, you will need a &3Matter Condenser&r. Stick a &664k ME Storage Component&r in, change the mode to 'Singularity', and stuff lots of items (or fluids) in, &9done easily with an infinity cell&r."
 				""
 				"If you don't have that, you can provide it with the output of regular &6Water&r or &6Cobblestone&r generation methods."
 				"{@pagebreak}"
-				"After you have made the &eSingularity&r you will need from the &3Matter Condenser&r, you need to setup a &aQuantum Ring Multiblock&r. Build a 3 by 3 vertical ring with your &6Quantum Rings&r, leaving a hole in the middle. Finally, stick your &6Quantum Link Chamber&r in the hole, and connect it to your ME system. If you built it correctly, the textures of the rings should combine, leaving you with a &aMultiblock&r."
+				"After you have made the &eSingularity&r you will need from the &3Matter Condenser&r, you need to set up a &aQuantum Ring Multiblock&r. Build a 3 by 3 vertical ring with your &6Quantum Rings&r, leaving a hole in the middle. Finally, stick your &6Quantum Link Chamber&r in the hole, and connect it to your ME system. If you built it correctly, the textures of the rings should combine, leaving you with a &aMultiblock&r."
 				""
-				"Once you have the &eSingularity&r, you have to link them by throwing Ender Dust, The Singularity into any explosion."
+				"Next, create a pair of &eQuantum Entangled Singularities&r by throwing Ender Dust and a Singularity into the vicinity of an explosion."
 				""
-				"&9With your Quantum-entangled Singularity, put one into the&r &6Quantum Link Chamber&r&9 of the &r&aQuantum Ring&r&9, and the other in the&r &6Wireless Terminal&r! "
+				"&9Now that you have Quantum Entangled Singularities, put one into the&r &6Quantum Link Chamber&r&9 of the &r&aQuantum Ring&r&9, and the other in the&r &6Wireless Terminal&r! "
 				""
 				"You should be good to go! You can now access AE2 anywhere, including in different dimensions!"
 			]
@@ -799,7 +796,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "Accessing AE2 from anywhere is a bit more expensive and complex, but its well worth it."
+			subtitle: "Accessing AE2 from anywhere is a bit more expensive and complex, but it's well worth the effort."
 			tasks: [
 				{
 					count: 3L
@@ -845,17 +842,17 @@
 				""
 				"First, you will need a &6Wireless Access Point&r. Connect it to your network. Like the &6Terminal&r, the Wireless Access Point is a &emicropart&r, so you must place it on a &6ME Cable&r."
 				""
-				"Next, you need a &6Wireless Terminal&r, or its varients. You can have as many Wireless Terminals or their varients on the system at the same time."
+				"Next, you need a &6Wireless Terminal&r, or any of its variants. You can have as many Wireless Terminals connected to the system as you want."
 				""
 				"Finally, put your &6Wireless Terminal&r into the &6Wireless Access Point&r. This will connect it to the system. "
 				"{@pagebreak}"
 				"You can equip these as a bauble, and use a hotkey to open them. Search 'Applied Energistics' as a &ecategory&r to see and edit these hotkeys."
 				""
-				"You can only go 16 blocks away. However, you can put &6Wireless Boosters&r into the &6Wireless Access Point&r to increase the range. A better, but more expensive solution, that allows access from anyhere, will be explained in the following quest, 'AE2 Everywhere!'."
+				"The default range is only 16 blocks. However, you can put &6Wireless Boosters&r into the &6Wireless Access Point&r to increase the range. A better (but more expensive) solution that allows access from anywhere will be explained in the following quest, 'AE2 Everywhere!'."
 			]
 			id: "1175ED9EF0AB82F6"
 			shape: "hexagon"
-			subtitle: "AE2 From Anywhere... Almost"
+			subtitle: "AE2 from anywhere... almost"
 			tasks: [{
 				id: "564AFB42CC6805FF"
 				item: {
@@ -925,15 +922,19 @@
 		{
 			dependencies: ["6F32A8739D8E792A"]
 			description: [
-				"This quest teaches you the basics about &bApplied Energistics 2&r autocrafting. If you are new this mod, it is highly recommended that you watch a video or &9&lread the builtin guide&r&r. Just remember that channels are disabled by default in this pack."
+				"This quest teaches you the basics about &bApplied Energistics 2&r autocrafting. If you are new to this mod, it is highly recommended that you watch a video or &3&lread the built-in guide&r&r. Just remember that channels are disabled by default in this pack."
 				""
 				"By now, you should have &6ME Pattern Providers, &6Molecular Assemblers, Crafting Units, Patterns&r and a &6Pattern Encoding Terminal&r. "
+				"{@pagebreak}"
+				"First, for all crafts, you'll need a &eCrafting CPU&r. These are structures that must be in a solid rectangular prism composed of:"
 				""
-				"First, for all crafts, you'll need a &eCrafting CPU&r. These are structures that must be in a rectangular prism, and can be only one block. These compose of:"
-				"* &6Crafting Storages&r, which determine how big a craft can be. For now, &64K Crafting Storages&r should be enough. You must have at least one per CPU."
-				"* &6Co-Processing Units&r, which are used to craft multiple things at once. These are optional."
-				"* &6Crafting Monitors&r, used to see what is crafting. Not needed, and you can right-click on the CPU to find out what is crafting anyways, so this is pretty much just decoration."
-				"* &6Crafting Units&r, which aren't needed at all, and are just used to fill holes, if you have a lack of materials."
+				"&6* Crafting Storages&r, which determine how big a craft can be. For now, &64k Crafting Storages&r should be enough. You must have at least one per CPU."
+				""
+				"&6* Co-Processing Units&r, which are used to craft multiple things at once. These are optional."
+				""
+				"&6* Crafting Monitors&r, used to see what is crafting. Not needed, and you can right-click on the CPU to find out what is crafting anyways, so this is pretty much just decoration."
+				""
+				"&6* Crafting Units&r, which aren't needed at all, and are just used to fill holes if you have a lack of materials."
 				"{@pagebreak}"
 				"Second, you'll need the place for the autocrafting. For Crafting Table recipes, you'll need &6Molecular Assemblers&r. &6Pattern Providers&r are placed next to them. Autocrafting with &bGregTech&r is explained later, in the quest following this one."
 				""
@@ -958,7 +959,7 @@
 				"41B4EA53D6D7AE37"
 			]
 			dependency_requirement: "one_completed"
-			description: ["It's a micropart, so you need to place it on &6ME Cable&r (not a conduit)."]
+			description: ["It's a micropart, so you need to place it on an &6ME Cable&r (not a conduit)."]
 			id: "480EE330E12084E8"
 			rewards: [{
 				id: "26AC32A839C6603B"
@@ -1045,7 +1046,7 @@
 			description: [
 				"You can easily automate most &bGregTech&r machines with &aME Pattern Providers&r and processing &aPatterns&r early on by using the machines' auto-output feature."
 				""
-				"Use &9the Machine's GUI&r to relocate the output side of a machine where you want it to be, then press the auto output and permit input buttons, then put an ME Pattern Provider on that side of the machine."
+				"Use &9the Machine's GUI&r to relocate the output side of a machine where you want it to be, then press the \"Auto Output\" and \"Permit Input\" buttons, and put an ME Pattern Provider on that side of the machine."
 				""
 				"You can also permit input from the output side by shift-right-clicking with a screwdriver on the output side via the machine grid."
 				""
@@ -1053,7 +1054,7 @@
 				"{@pagebreak}"
 				"Now, stuff the ME Pattern Provider with processing patterns. The next time you order an item, the ME Pattern Provider will push ingredients into the machine, and the machine will push outputs back into the Pattern Provider once they're ready, completing the craft. No need to use conduits or import buses!"
 				""
-				"Furthermore, you can use Blocking Mode, which ensures that no items are in the inventory before placing the items in, which is a handy way to prevent conflicts. Even better, blocking mode now ignores Programmable Circuits and Molds! Please note that non-consumable items should stay in the machine, and not be included in the pattern made. Yes, this means you should make a seperate machine for each non-consumable, as well as fluids, at least until you get PAs and Large Machines."
+				"Furthermore, you can use Blocking Mode, which ensures that no items are in the inventory before placing the items in, which is a handy way to prevent conflicts. Even better, blocking mode now ignores Programmable Circuits and Molds! Please note that non-consumable items should stay in the machine, and not be included in the pattern made. Yes, this means you should make a separate machine for each non-consumable, at least until you get Large Machines."
 			]
 			icon: "minecraft:book"
 			id: "6E27B9938B280291"
@@ -1095,7 +1096,7 @@
 				"15AE607E2EDD0369"
 				"6169C04DF463502F"
 			]
-			description: ["Placing these in one of your &6ME Drives&r will provide your ME network with an &ainfinite&r amount of water or cobblestone. Use &6interfaces&r or &6export busses&r to provide said substances to whereever you need it."]
+			description: ["Placing these in one of your &6ME Drives&r will provide your ME network with an &ainfinite&r amount of water or cobblestone. Use &6Interfaces&r or &6Export Buses&r to provide said substances to wherever you need it."]
 			id: "26C9F1514FD08C81"
 			rewards: [{
 				id: "144A810C0576A3E0"
@@ -1160,9 +1161,9 @@
 		{
 			dependencies: ["4174A6C6403DD245"]
 			description: [
-				"&6Certus quartz&r can be grown from &6Budding Certus Quartz&r blocks!"
+				"&6Certus Quartz&r can be grown from &6Budding Certus Quartz&r blocks!"
 				""
-				"Check out the &9&lingame guide&r&r or &eG&r on the item for specifics on how to get this set up."
+				"Check out the &9&lin-game guide&r&r or &eG&r on the item for specifics on how to get this set up."
 				""
 				"Note that Monifactory adds a crafting recipe for Flawless Budding Certus Quartz — check EMI for details!"
 			]
@@ -1173,7 +1174,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "Just Like Amethyst"
+			subtitle: "Just like Amethyst"
 			tasks: [
 				{
 					id: "3EBBAF2494BBA8A8"
@@ -1219,7 +1220,7 @@
 				"6F32A8739D8E792A"
 				"1F4D2DAF4267DB77"
 			]
-			description: ["These can be configured to stock up to &99 item stacks (or 576 items)&r or &99 fluid types, 4 buckets each&r for passive autocrafting and to push into other inventories&r. Any item pushed into an &aME Interface&r is digitized and placed in your ME Network storage."]
+			description: ["These can be configured to stock up to &99 item stacks (576 items)&r or &936 buckets (9 types, 4 buckets each)&r for passive autocrafting and to push into other inventories&r. Any item pushed into an &aME Interface&r is digitized and placed in your ME Network storage."]
 			icon: "ae2:interface"
 			id: "3A26187DC3FAD6B1"
 			rewards: [{
@@ -1228,7 +1229,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&9I dont hold patterns!"
+			subtitle: "&9I don't hold patterns!"
 			tasks: [{
 				id: "713C7B1C67D4771E"
 				item: {
@@ -1247,7 +1248,7 @@
 		}
 		{
 			dependencies: ["3A26187DC3FAD6B1"]
-			description: ["This version of &aME Interface&r acts like four ME Interfaces in one block, allowing for 1152 items or 72 buckets of fluids."]
+			description: ["This version of &aME Interface&r acts like two of them at once, allowing for 1152 items or 72 buckets of fluids."]
 			icon: "expatternprovider:ex_interface"
 			id: "5B3AF79FBDF80C51"
 			rewards: [{
@@ -1280,7 +1281,7 @@
 			description: [
 				"Crafting in a digital grid is heaven after using primitive wooden tables for so long."
 				""
-				"It's a micropart, so you need to place it on &6ME Cable&r (not a conduit)."
+				"It's a micropart, so you need to place it on an &6ME Cable&r (not a conduit)."
 			]
 			id: "4BEC129D530376BF"
 			rewards: [{
@@ -1340,7 +1341,7 @@
 		}
 		{
 			dependencies: ["52837FD72580F141"]
-			description: ["The &aExtended Drive&r allows to store up to 20 Storage Disks"]
+			description: ["The &aME Extended Drive&r can store up to 20 Storage Disks."]
 			id: "58F73E3D1069F52C"
 			rewards: [{
 				count: 2
@@ -1354,16 +1355,16 @@
 				item: "expatternprovider:ex_drive"
 				type: "item"
 			}]
-			title: "&9Extended Drive"
+			title: "&9ME Extended Drive"
 			x: -2.0d
 			y: 8.5d
 		}
 		{
 			dependencies: ["6E27B9938B280291"]
 			description: [
-				"&bApplied Energistics&r does not allow you to use tags when creating &6Processing Patterns&r, this can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
+				"&bApplied Energistics&r does not allow you to use tags when creating &6Processing Patterns&r. This can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
 				""
-				"Instead, use &9Universal Circuits&r when creating your Processing Patterns, as all normal circuits can be converted to to their &9Universal Circuit&r equivalent, which can be used in all the same recipes as regular circuits."
+				"Instead, use &9Universal Circuits&r when creating your Processing Patterns, as all normal circuits can be converted to their &9Universal Circuit&r equivalent, which can be used in all the same recipes as regular circuits."
 			]
 			icon: "kubejs:hv_universal_circuit"
 			id: "0D1A64EBBA742196"
@@ -1377,7 +1378,7 @@
 		}
 		{
 			dependencies: ["410EA68D6EF15CEC"]
-			description: ["Managing P2P tunnels can be a pain in large numbers, thankfully, the &6Advanced Memory Card&r fixes that, by allowing you to manage all of your connections within a single card, and bind and unbind things on the fly, among other features."]
+			description: ["Managing P2P tunnels can be a pain in large numbers. Thankfully, the &6Advanced Memory Card&r fixes that by allowing you to manage all of your connections within a single card, as well as bind and unbind things on the fly, among other features."]
 			id: "1AC8700C190E84BC"
 			rewards: [{
 				count: 3
@@ -1410,7 +1411,7 @@
 			description: [
 				"&3Pattern P2P&r is somewhat like the other &aP2P&r types, but is able to copy a pattern provider's patterns to all of its outputs."
 				""
-				"For example, you could have a Pattern P2P Input placed on a pattern provider, then 5 Outputs with the same ID placed on assemblers. All 5 of those assemblers would then &6act as if they each had their own pattern provider that all just so happened to have the same exact patterns&r, and will obey blocking rules, parallelize, and such. "
+				"For example, you could have a Pattern P2P Input placed on a pattern provider, then 5 Outputs with the same ID placed on Assemblers. All 5 of those Assemblers would then &6act as if they each had their own pattern provider that all just so happened to have the same exact patterns&r, and will obey blocking rules, parallelize, and such. "
 			]
 			id: "6646E6DBEF368924"
 			rewards: [{
@@ -1435,9 +1436,9 @@
 				"4FAFF184242F5EB8"
 			]
 			description: [
-				"If somehow being able to store over a million items in a single &9256k Item Storage Cell&r isn't enough for you, there is now &9MEGA Cells&r!"
+				"If somehow being able to store over a million items in a single &9256k Item Storage Cell&r isn't enough for you, there are now &9MEGA Cells&r!"
 				""
-				"&eMEGA Cells&r go up to 256M bytes, allowing them to store an insane amount of items. You will need high end materials to make the housings for these cells."
+				"&eMEGA Cells&r go up to 256M bytes, allowing them to store an insane amount of items. You will need high-end materials to make the housings for these cells."
 			]
 			id: "31A4355401B03644"
 			rewards: [{

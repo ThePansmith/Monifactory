@@ -1,0 +1,5 @@
+[{
+  "type": "iron",
+  "heat": 80,
+  "placement_rule": ["gold_heat_sink"]
+}]

@@ -1,6 +1,5 @@
 {
-	"animation": {
-		"interpolate": true,
-		"frametime": 60
-	}
+    "ldlib": {
+        "connection": "kubejs:block/cryolobus/cryococcus_fusion_casing_ctm"
+    }
 }

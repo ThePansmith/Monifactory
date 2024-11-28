@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     // Assembly Line
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line('dimensional_superassembler')
-            .itemInputs('gtceu:assembly_line', '4x #gtceu:circuits/uiv', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '6x gtceu:uiv_conveyor_module', '4x gtceu:uiv_robot_arm', '4x gtceu:uiv_emitter', '2x gtceu:infinity_frame', '24x gtceu:polyethyl_cyanoacrylate_plate')
+            .itemInputs('gtceu:assembly_line', '4x #gtceu:circuits/uiv', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '6x gtceu:uev_conveyor_module', '4x gtceu:uev_robot_arm', '4x gtceu:uev_emitter', '2x gtceu:infinity_frame', '24x gtceu:polyethyl_cyanoacrylate_plate')
             .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
             .itemOutputs('gtceu:dimensional_superassembler')
             .duration(6000)
@@ -120,6 +120,19 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(400)
 
+    // Ultimate Material
+    event.recipes.gtceu.assembly_line("kubejs:the_ultimate_material")
+        .itemInputs('kubejs:warden_heart', '4x kubejs:guardian_scale', '8x kubejs:wither_bone', '12x kubejs:ender_dragon_scale')
+        .itemOutputs('kubejs:the_ultimate_material')
+        .duration(600)
+        .EUt(491520)
+
+        .stationResearch(b => b
+            .researchStack('kubejs:warden_heart')
+            .CWUt(96, 384000)
+            .EUt(491520)
+        )
+
     // Flux Plating
     event.shaped(
         '4x redstone_arsenal:flux_plating', [
@@ -224,7 +237,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:diamond_perfect', '2x gtceu:diamond_plate', '4x gtceu:diamond_screw')
         .itemOutputs('kubejs:diamond_lattice')
         .duration(100)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:crystal_matrix_ingot', [
@@ -341,7 +354,7 @@ ServerEvents.recipes(event => {
     )
 
     event.recipes.gtceu.assembly_line('luv_world_accelerator')
-    .itemInputs('gtceu:uhv_machine_hull', '64x gtceu:uhv_field_generator', '16x gtceu:uhv_field_generator', '20x gtceu:uhv_sensor', '20x gtceu:uhv_emitter', '16x #gtceu:circuits/uhv', '4x gtceu:double_netherite_plate', '2x gtceu:dense_neutronium_plate')
+    .itemInputs('gtceu:uhv_machine_hull', '64x gtceu:uhv_field_generator', '16x gtceu:uhv_field_generator', '20x gtceu:uhv_sensor', '20x gtceu:uhv_emitter', '16x #gtceu:circuits/uhv', '4x gtceu:double_activated_netherite_plate', '2x gtceu:dense_neutronium_plate')
     .inputFluids('gtceu:omnium 1152', 'gtceu:soldering_alloy 1152')
     .itemOutputs('gtceu:luv_world_accelerator')
     .duration(6000)
