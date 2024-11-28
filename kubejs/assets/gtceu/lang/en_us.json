@@ -104,9 +104,13 @@
 
   "block.gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
   "gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
+  "gtceu.multiblock.large_naquadah_reactor.description": "§7A highly advanced multiblock capable of generating massive amounts of energy from Naquadaric Decay.",
+
 
   "block.gtceu.naquadah_refinery": "Naquadah Refinery",
-  "gtceu.naquadah_refinery": "Naquadah Refinery",
+  "gtceu.naquadah_refinery": "Naquadah Refining",
+  "gtceu.multiblock.naquadah_refinery.description": "§7Refines crude naquadaric fuels into more potent fuels.",
+
 
   "block.gtceu.matter_alterator": "Matter Alterator",
   "gtceu.atomic_reconstruction": "Atomic Reconstruction",

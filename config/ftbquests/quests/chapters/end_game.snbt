@@ -745,7 +745,7 @@
 		{
 			dependencies: ["739F7BF2A90B278A"]
 			description: [
-				"&fThe Omnic Forge will allow you to produce post-tank coils and casings. It is also part of the Netherite processing line."
+				"&fThe &9Omnic Forge&r will allow you to &eproduce post-tank coils and casings&r. It is also part of the Netherite processing line."
 				""
 				"Note that Omnic Matrix Machine Casings are twice as expensive when crafted using the Assembler, so make sure to use your first Omnic Forge to build any extra ones."
 				""
@@ -1184,67 +1184,6 @@
 			y: -11.5d
 		}
 		{
-			dependencies: ["113E9543ADB1666B"]
-			description: [
-				"The &9Cryococcal Reverberator&r is a means of using &6Cryococcus&r to convert matter directly into energy more efficiently than any other means."
-				""
-				"It only works with a handful of highly energy-dense items and consumes a wealth of &6Cryococcus,&r so you'll need to find a way to produce these consistently and in bulk."
-				""
-				"If you manage to supply it with &6Contained Singularities&r, you'll be awarded with enough energy to saturate a &6UIV 4,096A Laser Source Hatch&r while avoiding the explosive risk of &elarge spheres of superheated dragon metal.&r"
-			]
-			icon: "gtceu:cryococcal_reverberator"
-			id: "25A7BC39C30139DA"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "WARNING: Recipes subject to change!"
-			tasks: [
-				{
-					id: "009824CA79D811CC"
-					item: "gtceu:cryococcal_reverberator"
-					type: "item"
-				}
-				{
-					count: 152L
-					id: "13BFBC913CC929D9"
-					item: { Count: 152, id: "gtceu:naquadah_alloy_frame" }
-					type: "item"
-				}
-				{
-					count: 1063L
-					id: "22523AC6932FC851"
-					item: "gtceu:atomic_casing"
-					type: "item"
-				}
-				{
-					count: 52L
-					id: "7B8B5E74E7A5C1A0"
-					item: { Count: 52, id: "kubejs:cryococcus_fusion_coil" }
-					type: "item"
-				}
-				{
-					count: 124L
-					id: "1FFF2FDB7B3FE718"
-					item: { Count: 124, id: "kubejs:cryococcus_fusion_casing" }
-					type: "item"
-				}
-				{
-					count: 88L
-					id: "5EFC3A7D1AA28C88"
-					item: { Count: 88, id: "kubejs:cryococcus_casing" }
-					type: "item"
-				}
-				{
-					count: 380L
-					id: "31FC71C05028D375"
-					item: { Count: 380, id: "kubejs:cryolobus_casing" }
-					type: "item"
-				}
-			]
-			title: "Cryococcal Reverberator"
-			x: 33.5d
-			y: -8.75d
-		}
-		{
 			dependencies: [
 				"1F7F73BF81570F3C"
 				"07057CDE4E021BA7"
@@ -1286,6 +1225,69 @@
 			title: "Polyethyl Cyanoacrylate"
 			x: 48.0d
 			y: -24.25d
+		}
+		{
+			dependencies: ["7C4E04E3EA603000"]
+			description: ["The &9Large Naquadah Reactor&r is an upgraded reactor that can generate immense amounts of EU energy from Naquadric Reactions. The fuels used in it are more complicated, but will generate massive amounts of power in return."]
+			icon: "gtceu:large_naquadah_reactor"
+			id: "21E10888F52A3C73"
+			rewards: [{
+				id: "0EAC9C8EA00645D3"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "51C99B20F637AA2C"
+					item: "gtceu:large_naquadah_reactor"
+					type: "item"
+				}
+				{
+					id: "50D6A908FA1219AC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/omnium"
+						}
+					}
+					title: "Omnium Block"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "45590F6CC64C83CE"
+					item: "gtceu:ruthenium_trinium_americium_neutronate_block"
+					type: "item"
+				}
+				{
+					id: "2D55A07E5C289245"
+					item: "gtceu:uv_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "&9Large Naquadah Reactor"
+			x: 35.0d
+			y: -8.75d
+		}
+		{
+			dependencies: [
+				"21E10888F52A3C73"
+				"1F7F73BF81570F3C"
+			]
+			description: ["Refines Naquadah Fuels into more potent varients."]
+			hide_until_deps_visible: true
+			id: "4E9530E62A4B673B"
+			tasks: [{
+				id: "1A12706752D1F8FC"
+				item: "gtceu:naquadah_refinery"
+				type: "item"
+			}]
+			title: "&9Naquadah Refining"
+			x: 33.0d
+			y: -8.75d
 		}
 	]
 	title: "End Game"
