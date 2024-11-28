@@ -330,6 +330,28 @@ StartupEvents.registry('item', event => {
     event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
+    //Solid Naquadah Fuel Line
+    event.create('pellet_extruder_mold').texture('kubejs:item/naquadah/pellet_extruder_mold')
+    event.create('empty_fuel_rod').texture('kubejs:item/naquadah/empty_fuel_rod')
+    event.create('naquadah_fuel_pellet').texture('kubejs:item/naquadah/naquadah_fuel_pellet')
+    event.create('naquadah_fuel_rod').texture('kubejs:item/naquadah/naquadah_fuel_rod')
+    event.create('hot_depleted_naquadah_fuel_rod').texture('kubejs:item/naquadah/hot_depleted_naquadah_fuel_rod')
+    event.create('depleted_naquadah_fuel_rod').texture('kubejs:item/naquadah/depleted_naquadah_fuel_rod')
+    event.create('unsintered_naquadah_fuel_pellet').texture('kubejs:item/naquadah/unsintered_naquadah_fuel_pellet')
+    event.create('depleted_naquadah_fuel_pellet').texture('kubejs:item/naquadah/depleted_naquadah_fuel_pellet')
+    event.create('naquadah_fuel_dust').texture('kubejs:item/naquadah/naquadah_fuel_dust')
+    event.create('raw_naquadah_fuel_dust').texture('kubejs:item/naquadah/raw_naquadah_fuel_dust')
+    event.create('nuclear_waste').texture('kubejs:item/naquadah/nuclear_waste')
+    event.create('inactivated_naquadah_fuel_dust').texture('kubejs:item/naquadah/inactivated_naquadah_fuel_dust')
+    event.create('depleted_naquadah_fuel_dust').texture('kubejs:item/naquadah/depleted_naquadah_fuel_dust')
+    event.create('crude_naquadah_fuel_blend').texture('kubejs:item/naquadah/crude_naquadah_fuel_blend')
+    event.create('hot_naquadah_fuel_crystal').texture('kubejs:item/naquadah/hot_naquadah_fuel_crystal')
+    event.create('naquadah_fuel_crystal').texture('kubejs:item/naquadah/naquadah_fuel_crystal')
+    event.create('naquadah_fuel_mixture_dust').texture('kubejs:item/naquadah/naquadah_fuel_mixture_dust')
+
+
+
+
 
     // Alien Scrapline
     event.create('alien_scrap')

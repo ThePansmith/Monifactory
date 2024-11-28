@@ -143,6 +143,83 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x nitrogen', '6x carbon', '7x hydrogen', '2x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
 
+    //Liquid Naquadah Fuels and their ingredients (HM+ Only)
+    if (!isNormalMode) {
+
+        event.create('naq_fuel_t1')
+        .liquid()
+        .color(0xB9E364)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('naq_fuel_t1_depleted')
+        .liquid()
+        .color(0x323D1C)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('naq_fuel_t2')
+        .liquid()
+        .color(0x56F075)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('naq_fuel_t2_depleted')
+        .liquid()
+        .color(0x123619)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('raw_naquadah_solution')
+        .liquid()
+        .color(0x5E7855)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('piranha_solution')
+        .liquid()
+        .color(0xFFF382)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('hot_piranha_solution')
+        .liquid()
+        .color(0xFFC582)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('tritium_radon_difluoride')
+        .gas()
+        .color(0xFF5462)
+        .components('1x tritium', '1x radon', '2x fluorine')
+
+        event.create('inert_naquadah_blend')
+        .liquid()
+        .color(0x80D463)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('active_naquadah_blend')
+        .gas().plasma()
+        .color(0xBBFF00)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('light_naquadah_isotope_fraction')
+        .liquid()
+        .color(0xDCFF7a)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('medium_naquadah_isotope_fraction')
+        .liquid()
+        .color(0xB0D93F)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('heavy_naquadah_isotope_fraction')
+        .liquid()
+        .color(0x698A11)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create('naquadah_isotope_sludge')
+        .liquid()
+        .color(0x253005)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        
+    }
+
+    //Solid Naquadah Fuels
+
 
     // Dimethyl sulfoxide sub-chain (PECA catalyst)
     event.create('dimethyl_sulfoxide')

@@ -101,6 +101,12 @@
   "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
   "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
 
+  "block.gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
+  "gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
+
+  "block.gtceu.naquadah_refinery": "Naquadah Refinery",
+  "gtceu.naquadah_refinery": "Naquadah Refinery",
+
   "block.gtceu.matter_alterator": "Matter Alterator",
   "gtceu.atomic_reconstruction": "Atomic Reconstruction",
   "gtceu.multiblock.matter_alterator.description": "§7Uses a high-powered laser to modify the material and chemical properties of large batches at once.",
@@ -390,6 +396,28 @@
   "material.gtceu.tetraethyllead": "Tetraethyllead",
   "material.gtceu.chloroethane": "Chloroethane",
   "material.gtceu.sodium_lead_alloy": "Sodium-Lead Alloy",
+
+
+  "__NAQFUEL__.header": "========================",
+  "__NAQFUEL__.flufff": "> Liquid Naquadah Fuel Line <",
+  "__NAQFUEL__.footer": "========================",
+
+  "material.gtceu.naq_fuel_t1": "Crude Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t1_depleted": "Depleted Crude Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t2": "Basic Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t2_depleted": "Depleted Basic Liquid Naquadah Fuel",
+  "material.gtceu.nuclear_waste": "Nuclear Waste",
+  "material.gtceu.raw_naquadah_solution": "Raw Naquadah Solution",
+  "material.gtceu.piranha_solution": "Piranha Solution",
+  "material.gtceu.hot_piranha_solution": "Hot Piranha Solution",
+  "material.gtceu.tritium_radon_difluoride": "Tritium Radon Difluoride",
+  "material.gtceu.inert_naquadah_blend": "Inert Naquadah Blend",
+  "material.gtceu.active_naquadah_blend": "Activated Naquadah Isotope Blend",
+  "material.gtceu.light_naquadah_isotope_fraction": "Light Naquadah Isotope Fraction",
+  "material.gtceu.medium_naquadah_isotope_fraction": "Medium Naquadah Isotope Fraction",
+  "material.gtceu.heavy_naquadah_isotope_fraction": "Heavy Naquadah Isotope Fraction",
+  "material.gtceu.naquadah_isotope_sludge": "Naquadah Isotope Sludge",
+
 
 
   "__MISC__.header": "=========",
