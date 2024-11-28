@@ -99,11 +99,8 @@
   "gtceu.advanced_microverse_iii": "Hyperbolic Microverse Projector",
   "gtceu.multiblock.hyperbolic_microverse_projector.description": "§7An epic machine capable of stabilizing projection into hundreds of microverses at once.\nCan perform all Microverse Missions.",
 
-  "block.gtceu.naquadah_reactor_i": "Naquadah Reactor I",
-  "gtceu.naquadah_reactor_i": "Naquadah Reactor I",
-
-  "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
-  "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
+  "block.gtceu.naquadah_reactor": "Naquadah Reactor",
+  "gtceu.naquadah_reactor": "Naquadah Reactor",
 
   "block.gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
   "gtceu.large_naquadah_reactor": "Large Naquadah Reactor",

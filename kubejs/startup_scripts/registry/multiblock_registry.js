@@ -90,7 +90,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.COOLING);
 
     // Naquadah Reactor I Recipe type
-    event.create('naquadah_reactor_i')
+    event.create('naquadah_reactor')
         .category('multiblock')
         .setEUIO('out')
         .setMaxIOSize(1, 1, 0, 0)
@@ -708,9 +708,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
     // Naquadah Reactor I
-    event.create('naquadah_reactor_i', 'multiblock')
+    event.create('naquadah_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('naquadah_reactor_i')
+        .recipeTypes('naquadah_reactor')
         .appearanceBlock(GCyMBlocks.CASING_REACTION_SAFE)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    // Modern#2015
         .generator(true)

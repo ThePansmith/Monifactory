@@ -2507,7 +2507,7 @@
 			y: 24.0d
 		}
 		{
-			dependencies: ["7A7FFE9E89D19A2F"]
+			dependencies: ["7A65459E4DFAAC2D"]
 			description: [
 				"The &3Naquadah Reactor&r is a structure used to generate considerable amounts of EU power from decaying &6Enriched Naquadah&r or &6Naquadria&r into &6Lead&r."
 				""
@@ -2561,18 +2561,17 @@
 					type: "item"
 				}
 			]
-			title: "Naquadah Reactor I"
-			x: 11.0d
-			y: 24.0d
+			title: "&9 Naquadah Reactor"
+			x: 20.5d
+			y: 15.25d
 		}
 		{
-			dependencies: ["425D1C34A82B054D"]
 			description: [
 				"The &3Naquadah Reactor II&r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the MK I. The materials it requires are similar to the MK I, and you can almost reuse the same structure. Make sure you are prepared for the UV power output by adding a &6UV Energy Output Hatch&r."
 				""
 				"This is a pretty expensive structure though, as it needs a block of &9Omnium&r."
 			]
-			icon: "gtceu:naquadah_reactor_ii"
+			icon: "gtceu:large_naquadah_reactor"
 			id: "2E8AFA6B42E939B4"
 			rewards: [{
 				id: "08A490626FF2A96E"
@@ -2582,7 +2581,7 @@
 			tasks: [
 				{
 					id: "134557DDF5E22B0B"
-					item: "gtceu:naquadah_reactor_ii"
+					item: "gtceu:large_naquadah_reactor"
 					type: "item"
 				}
 				{
