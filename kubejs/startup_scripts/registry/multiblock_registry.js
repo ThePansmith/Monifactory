@@ -749,7 +749,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
             .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(150)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.OUTPUT_LASER)))
+                .or(Predicates.abilities(PartAbility.OUTPUT_LASER).setMaxGlobalLimited(1)))
 
             .where('H', Predicates.blocks("gtceu:heat_vent"))
             .where('K', Predicates.blocks("gtceu:fusion_coi"))
