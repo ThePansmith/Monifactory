@@ -346,10 +346,10 @@ StartupEvents.registry('item', event => {
 
 
     // Sculk bioalloy processing intermediate products
-    event.create('sculk-compatible_trellis_microstructure')
-    event.create('fibrinogenic_sculk_goo')
-    event.create('sculk-saturated_microstructure_pulp')
-    event.create('animated_bioalloy_pulp')
+    event.create('sculk-compatible_trellis_microstructure').texture('kubejs:item/bioalloy/sculk-compatible_trellis_microstructure')
+    event.create('fibrinogenic_sculk_goo').texture('kubejs:item/bioalloy/fibrinogenic_sculk_goo')
+    event.create('sculk-saturated_microstructure_pulp').texture('kubejs:item/bioalloy/sculk-saturated_microstructure_pulp')
+    event.create('animated_bioalloy_pulp').texture('kubejs:item/bioalloy/animated_bioalloy_pulp')
 
 
     // Alien Scrapline
@@ -367,17 +367,17 @@ StartupEvents.registry('item', event => {
 
 
     //Eltz metal processing intermediate products
-    event.create('reactive_dust_mixture')
-    event.create('inert_dust_mixture')
-    event.create('dusty_inert_powder')
-    event.create('centrifuged_inert_powder')
-    event.create('cured_inert_powder')
-    event.create('shiny_powder_mixture')
-    event.create('shiny_metal_powder')
-    event.create('inert_clumps')
-    event.create('saturated_inert_clumps')
-    event.create('clean_inert_cluster')
-    event.create('eltic_crystal_seed')
+    event.create('reactive_dust_mixture').texture('kubejs:item/eltz/reactive_dust_mixture')
+    event.create('inert_dust_mixture').texture('kubejs:item/eltz/inert_dust_mixture')
+    event.create('dusty_inert_powder').texture('kubejs:item/eltz/dusty_inert_powder')
+    event.create('centrifuged_inert_powder').texture('kubejs:item/eltz/centrifuged_inert_powder')
+    event.create('cured_inert_powder').texture('kubejs:item/eltz/cured_inert_powder')
+    event.create('shiny_powder_mixture').texture('kubejs:item/eltz/shiny_powder_mixture')
+    event.create('shiny_metal_powder').texture('kubejs:item/eltz/shiny_metal_powder')
+    event.create('inert_clumps').texture('kubejs:item/eltz/inert_clumps')
+    event.create('saturated_inert_clumps').texture('kubejs:item/eltz/saturated_inert_clumps')
+    event.create('clean_inert_cluster').texture('kubejs:item/eltz/clean_inert_cluster')
+    event.create('eltic_crystal_seed').texture('kubejs:item/eltz/eltic_crystal_seed')
 
 
     // Post-Tank Wafer items
