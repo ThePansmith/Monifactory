@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         .EUt(65520)
 
     event.recipes.gtceu.omnic_forge('kubejs:biosourced_sculk_casing')
-        .itemInputs('8x gtceu:sculk_bioalloy_plate', '2x gtceu:activated_netherite_frame', '4x kubejs:warden_horn', '6x gtceu:actinium_rod')
+        .itemInputs('4x gtceu:sculk_bioalloy_plate', '2x gtceu:cryolobus_frame', '4x kubejs:warden_horn', '6x gtceu:actinium_rod')
         .itemOutputs('2x kubejs:biosourced_sculk_casing')
         .duration(100)
         .EUt(GTValues.VA[GTValues.UV])
