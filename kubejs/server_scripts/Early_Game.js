@@ -128,6 +128,8 @@ ServerEvents.recipes(event => {
         H: 'gtceu:ulv_machine_hull'
     }
     ).id('gtceu:shaped/pyrolyse_oven')
+    event.remove({ id: 'gtceu:arc_furnace/arc_pyrolyse_oven' })
+    event.remove({ id: 'gtceu:macerator/macerate_pyrolyse_oven' })
 
     //Toolbelts
     event.replaceInput({ output: 'toolbelt:pouch' }, 'minecraft:gold_ingot', 'gtceu:steel_ingot')

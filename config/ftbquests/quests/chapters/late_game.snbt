@@ -461,7 +461,7 @@
 			description: [
 				"The &3Assembly Line&r is a large multiblock structure that crafts complex materials, similar to an &3Assembling Machine&r. These will be crucial going forward for making a variety of components and machinery."
 				""
-				"Make sure your power generation and circuit production are up to the challenge. &2None of the Assembly Line recipes require programmed circuits anymore.&r It is &anot required&r to insert items or fluids in the correct order."
+				"Make sure your power generation and circuit production are up to the challenge. &2None of the Assembly Line recipes require programmed circuits anymore.&r"
 				""
 				"This quest calls for an Assembly Line that's 10 units long, allowing for 9 inputs and one output. This is a large enough Assembly Line to make &6LuV components&r, but you'll need to expand to more inputs for later projects."
 				"{@pagebreak}"
@@ -2669,7 +2669,7 @@
 			description: [
 				"Interestingly enough, &eSculk itself functions great as a biobattery&r, being able to store and quickly release mass amounts of energy. The &3Sculk Charger&r should be able to get you started in taking advantage of it."
 				""
-				"To use it, set the recipe in the same way you would for an &3Auto Crafting Table&r, then place an inventory (such as a Barrel) on top, and connect power to &eboth the charger and a nearby pylon&r. Items can be extacted from the charger in any manner."
+				"[\"They are automated in the same way as Autocrafting tables, refer to \", {\"text\": \"this quest\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0DB8063A7972E1C0\" } },\" for how to automate it.\"]"
 				""
 				"The charger and pylon themselves &ehave extreme throughput&r, so don't worry about having to wait for it to craft items."
 			]

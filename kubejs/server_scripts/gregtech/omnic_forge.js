@@ -93,13 +93,13 @@ ServerEvents.recipes(event => {
     //Simplified Crafting
     event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_dark_soularium_thruster')
         .itemInputs('4x gtceu:dark_soularium_plate', '6x gtceu:vibrant_alloy_plate', '2x enderio:ender_crystal', '2x enderio:prescient_crystal', 'enderio:cryolobus_conduit', 'kubejs:flight_control_unit')
-        .itemOutputs(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}'))
+        .itemOutputs('kubejs:dark_soularium_thruster')
         .duration(100)
         .EUt(7680)
 
     event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_flux_thruster')
         .itemInputs('3x redstone_arsenal:flux_plating', '4x gtceu:enderium_plate', '2x gtceu:signalum_plate', 'thermal:dynamo_numismatic', 'kubejs:glowstone_elevation_unit', 'kubejs:cryotheum_coolant_unit')
-        .itemOutputs(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}'))
+        .itemOutputs('kubejs:fluxed_thruster')
         .duration(50)
         .EUt(7680)
 

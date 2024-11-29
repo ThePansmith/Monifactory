@@ -482,6 +482,7 @@
 				""
 				"&2Liquid Air and Liquid Ender Air give different useful components too."
 			]
+			hide_until_deps_visible: true
 			icon: "gtceu:liquid_nether_air_bucket"
 			id: "45DD07F2BB9C6A59"
 			rewards: [{

@@ -256,4 +256,12 @@ StartupEvents.registry("block", event => {
         .tagBlock("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .soundType('metal')
+
+        event.create('meowni_plush', 'cardinal')
+        .displayName("Meowni Plush")
+        .soundType('wool')
+        .renderType('cutout')
+        .tag("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .defaultCutout();
 });

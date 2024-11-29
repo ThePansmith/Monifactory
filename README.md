@@ -78,7 +78,7 @@ To spice up your Monifactory experience, you can add one of the following mods t
 1. [Create](https://www.curseforge.com/minecraft/mc-mods/create)
     1a. [Create: Steam and Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)
-2. [ComputerCraft: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)
+2. [ComputerCraft: Tweaked](https://modrinth.com/mod/cc-tweaked)
 3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
 4. [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
 5. [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)

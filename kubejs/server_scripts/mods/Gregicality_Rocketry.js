@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
             'TTT'
         ], {
             P: 'gtceu:double_steel_plate',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').weakNBT()
+            T: 'kubejs:electrical_steel_thruster'
         })
 
     
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
             'TTT'
         ], {
             P: 'gtceu:double_tungsten_carbide_plate',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').weakNBT()
+            T: 'kubejs:energetic_thruster'
         })
 
     event.shaped(
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
             'TTT'
         ], {
             P: 'gtceu:double_titanium_tungsten_carbide_plate',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').weakNBT()
+            T: 'kubejs:vibrant_thruster'
         })
 
     event.shaped(

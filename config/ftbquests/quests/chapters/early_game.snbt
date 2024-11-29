@@ -452,7 +452,22 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3F39E9B829DAE2F2"
-				item: "gtceu:mv_atomic_reconstructor"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_atomic_reconstructor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_atomic_reconstructor"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Reconstruction of Atoms"
@@ -2249,7 +2264,7 @@
 		{
 			dependencies: ["61AD3760E271B431"]
 			description: [
-				"The &6Steam Separator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
+				"The &6Steam Separator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses only some Steam."
 				""
 				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
 			]

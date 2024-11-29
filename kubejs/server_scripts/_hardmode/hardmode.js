@@ -76,4 +76,10 @@ ServerEvents.recipes(event => {
             .itemOutputs('8x kubejs:ender_spore')
             .duration(640)
             .EUt(120)
+
+        event.recipes.gtceu.omnic_forge('kubejs:meowni_plush')
+            .itemInputs('64x kubejs:moni_dollar', '64x kubejs:moni_dollar', '64x kubejs:moni_dollar', '16x kubejs:moni_dollar',) // Not exact atm, I don't run linux (so i cant use the awk script) and this value is gonna change regardless.
+            .itemOutputs('kubejs:meowni_plush')
+            .duration(2000)
+            .EUt(65520)
 }})
