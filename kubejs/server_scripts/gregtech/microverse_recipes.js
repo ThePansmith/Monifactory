@@ -182,16 +182,6 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(7500)
 
-
-    event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
-        .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', '4x kubejs:wither_realm_data', '64x kubejs:petrotheum_dust')
-        .itemOutputs(
-            '64x gtceu:iridosmineyes_ore',
-            '64x gtceu:iridosmineyes_ore',
-            '16x gtceu:osmiridiumyes_ore')
-        .duration(800)
-        .EUt(3750)
-
     event.recipes.gtceu.advanced_microverse('kubejs:t_four_second')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', 'kubejs:gem_sensor', '64x kubejs:petrotheum_dust')
         .itemOutputs(
