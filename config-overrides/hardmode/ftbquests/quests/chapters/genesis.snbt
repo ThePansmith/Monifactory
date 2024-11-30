@@ -310,84 +310,84 @@
 							items: [
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "acacia"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "birch"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "crimson"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "dark_oak"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "jungle"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "oak"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "spruce"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "warped"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "mangrove"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "cherry"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:copper_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "bamboo"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:basic_to_copper_tier_upgrade"
+									id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
 								}
 							]
 						}
