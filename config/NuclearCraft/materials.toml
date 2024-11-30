@@ -70,6 +70,7 @@
 	boron = false
 	magnesium_diboride = false
 	hafnium = false
+	iridium = false
 
 [plates]
 	tough_alloy = false
@@ -212,6 +213,7 @@
 	hsla_steel = false
 	boron = false
 	bismuth = false
+	iridium = false
 
 [blocks]
 	steel = false
