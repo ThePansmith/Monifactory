@@ -161,7 +161,7 @@ machines:
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
-  shouldWeatherOrTerrainExplosion: false
+  shouldWeatherOrTerrainExplosion: true
 
   # Energy use multiplier for electric items.
   # Default: 100
