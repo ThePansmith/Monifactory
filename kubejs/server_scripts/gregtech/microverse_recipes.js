@@ -1,23 +1,6 @@
 // Small Microverse Projector Recipes
 ServerEvents.recipes(event => {
 
-    if (isNormalMode) { // Normal mode-specific recipes
-        event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
-            .itemInputs(
-                'kubejs:microminer_t9',
-                '8x gtceu:neutron_reflector',
-                '4x gtceu:cryococcus_block',
-                'kubejs:stellar_creation_data'
-            )
-            .itemOutputs(
-                '64x gtceu:neutronium_ingot',
-                '64x gtceu:neutronium_ingot',
-                '32x gtceu:neutronium_ingot'
-            )
-            .duration(3000)
-            .EUt(250000)
-    }
-
     event.recipes.gtceu.basic_microverse('kubejs:t_one_first')
         .itemInputs('kubejs:microminer_t1', 'kubejs:ultra_dense_hydrogen')
         .itemOutputs('kubejs:stellar_creation_data')
@@ -446,6 +429,27 @@ ServerEvents.recipes(event => {
             '64x kubejs:stellar_creation_data'
         )
         .itemOutputs('kubejs:universe_creation_data')
+        .duration(3000)
+        .EUt(250000)
+
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
+        .itemInputs(
+            'kubejs:microminer_t9', 
+            '8x gtceu:neutron_reflector', 
+            '4x gtceu:cryococcus_block', 
+            'kubejs:stellar_creation_data'
+        )
+        .itemOutputs(
+            '64x gtceu:neutronium_nugget', 
+            '64x gtceu:neutronium_nugget',
+            '64x gtceu:neutronium_nugget', 
+            '64x gtceu:neutronium_nugget',
+            '64x gtceu:neutronium_nugget', 
+            '64x gtceu:neutronium_nugget',
+            '64x gtceu:neutronium_nugget', 
+            '64x gtceu:neutronium_nugget',
+            '64x gtceu:neutronium_nugget'
+        )
         .duration(3000)
         .EUt(250000)
 
