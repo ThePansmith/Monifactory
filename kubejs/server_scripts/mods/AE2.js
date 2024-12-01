@@ -645,23 +645,15 @@ ServerEvents.recipes(event => {
             "item": "ae2:flawed_budding_quartz"
         }
     })
-    event.custom({
-        "type": "ae2:transform",
-        "ingredients": [
-            {
-                "item": "gtceu:charged_certus_quartz_block"
-            },
-            {
-                "item": "ae2:flawed_budding_quartz"
-            }
-        ],
-        "result": {
-            "count": 1,
-            "item": "ae2:flawless_budding_quartz"
-        }
-    })
 
-            
+
+    event.recipes.gtceu.autoclave("flawless_budding")
+        .itemInputs(["ae2:flawed_budding_quartz"])
+        .inputFluids("gtceu:distilled_water 100")
+        .itemOutputs('ae2:flawless_budding_quartz')
+        .duration(20)
+        .EUt(480)
+
     // Fluix
 
     event.remove({ id: 'ae2:transform/fluix_crystal' })
@@ -728,7 +720,6 @@ ServerEvents.recipes(event => {
         .EUt(7)
     event.recipes.gtceu.assembler("kubejs:ae2/fluix_covered_cable_styrene_butadiene")
         .itemInputs("#ae2:glass_cable")
-        .inputFluids('gtceu:styrene_butadiene_rubber 36')
         .itemOutputs("ae2:fluix_covered_cable")
         .duration(100)
         .EUt(7)
