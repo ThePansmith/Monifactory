@@ -17,7 +17,7 @@
 	#To do so, you need to put IE core sample into leacher.
 	allow_to_leach_ie_veins = true
 
-[Processor]
+["Common settings"]
 	#Ticks
 	base_time = 240
 	#FE per Tick
@@ -38,10 +38,129 @@
 	#May lead to unknown issues, Please test first
 	#Range: 0 ~ 10
 	skip_ticks = 0
-	#Allow processor registration: rock_crusher, decay_hastener, irradiator, nuclear_furnace, extractor, electrolyzer, pressurizer, alloy_smelter, melter, analyzer, ingot_former, pump, fuel_reprocessor, leacher, crystallizer, assembler, steam_turbine, supercooler, centrifuge, chemical_reactor, fluid_infuser, isotope_separator, fluid_enricher, gas_scrubber, manufactory
-	register_processor = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
-	#Processor power: rock_crusher, decay_hastener, irradiator, nuclear_furnace, extractor, electrolyzer, pressurizer, alloy_smelter, melter, analyzer, ingot_former, pump, fuel_reprocessor, leacher, crystallizer, assembler, steam_turbine, supercooler, centrifuge, chemical_reactor, fluid_infuser, isotope_separator, fluid_enricher, gas_scrubber, manufactory
-	processor_power = [20, 20, 0, 0, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
-	#Time for processor to proceed recipe: rock_crusher, decay_hastener, irradiator, nuclear_furnace, extractor, electrolyzer, pressurizer, alloy_smelter, melter, analyzer, ingot_former, pump, fuel_reprocessor, leacher, crystallizer, assembler, steam_turbine, supercooler, centrifuge, chemical_reactor, fluid_infuser, isotope_separator, fluid_enricher, gas_scrubber, manufactory
-	processor_time = [200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200]
+
+[rock_crusher]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[decay_hastener]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[irradiator]
+	register = true
+	base_power = 0
+	base_time = 200
+
+[nuclear_furnace]
+	register = true
+	base_power = 0
+	base_time = 200
+
+[extractor]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[electrolyzer]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[pressurizer]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[alloy_smelter]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[melter]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[analyzer]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[ingot_former]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[pump]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[fuel_reprocessor]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[leacher]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[crystallizer]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[assembler]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[steam_turbine]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[supercooler]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[centrifuge]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[chemical_reactor]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[fluid_infuser]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[isotope_separator]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[fluid_enricher]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[gas_scrubber]
+	register = true
+	base_power = 50
+	base_time = 200
+
+[manufactory]
+	register = true
+	base_power = 50
+	base_time = 200
 
