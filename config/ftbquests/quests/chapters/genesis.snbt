@@ -153,6 +153,32 @@
 					type: "item"
 				}
 				{
+					id: "651C872D23C1E650"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_spade"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 2303
+								ToolSpeed: 6.4f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
 					auto: "invisible"
 					icon: "enderio:cake_base"
 					id: "392C56C1DA9D7978"

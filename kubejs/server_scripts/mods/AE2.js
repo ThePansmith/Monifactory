@@ -677,6 +677,7 @@ ServerEvents.recipes(event => {
             "item": "gtceu:fluix_gem"
         }
     }).id('kubejs:ae2/fluix_gem')
+
     event.replaceInput({ id: /ae2/ }, 'ae2:fluix_block', 'gtceu:fluix_block')
 
     event.recipes.gtceu.mixer('fluix')
@@ -686,6 +687,12 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(7)
         .circuit(3)
+
+        event.recipes.gtceu.compressor('fluix_plate')
+        .itemInputs('gtceu:fluix_dust')
+        .itemOutputs('gtceu:fluix_plate')
+        .duration(400)
+        .EUt(2)
 
     // cable recipes
     event.remove({ id: "ae2:network/cables/covered_fluix" })
@@ -993,6 +1000,31 @@ ServerEvents.recipes(event => {
         .itemOutputs("expatternprovider:ex_charger")
         .duration(180)
         .EUt(32)
+
+    //Tag storage bus
+    event.remove({ id: 'expatternprovider:tag_storage_bus' })
+    event.recipes.gtceu.assembler("kubejs:epp/tag_storage_bus")
+        .itemInputs("ae2:storage_bus", "2x gtceu:aluminium_plate", 'ae2:logic_processor')
+        .itemOutputs("expatternprovider:tag_storage_bus")
+        .duration(180)
+        .EUt(32)
+
+    //Mod storage bus
+    event.remove({ id: 'expatternprovider:mod_storage_bus' })
+    event.recipes.gtceu.assembler("kubejs:epp/mod_storage_bus")
+        .itemInputs("ae2:storage_bus", "2x gtceu:aluminium_plate", 'ae2:calculation_processor')
+        .itemOutputs("expatternprovider:mod_storage_bus")
+        .duration(180)
+        .EUt(32)
+
+    // Extended Pattern Access Terminal
+    // I do want to eventually just outright remove the default one in favor of this one, but will happen once EPAT gets a fullblock eng block
+    event.remove({ id: 'expatternprovider:epa' })
+    event.shapeless('expatternprovider:ex_pattern_access_part', ['ae2:pattern_access_terminal', 'ae2:logic_processor']).id('kubejs:epp/epa')
+    event.remove({ id: 'expatternprovider:epa_upgrade' })
+    event.shapeless('expatternprovider:ex_pattern_access_part', ['#ae2:illuminated_panel', 'ae2:logic_processor']).id('kubejs:epp/epa_upgrade')
+
+
 
     //ME packing tape
     event.shapeless('expatternprovider:me_packing_tape', ['gtceu:basic_tape', 'gtceu:fluix_dust']).id('expatternprovider:tape')

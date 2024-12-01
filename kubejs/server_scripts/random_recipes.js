@@ -970,4 +970,7 @@ ServerEvents.recipes(event => {
 
     // Patchouli Books that needed tweaking
     event.replaceInput({ id: 'laserio:my_book_recipe_shapeless'}, 'laserio:logic_chip', 'laserio:card_item')
+
+    // Chipped tinker's table
+    event.replaceInput({ id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', '#forge:chests')
 })
