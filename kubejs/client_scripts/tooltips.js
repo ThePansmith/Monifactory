@@ -257,6 +257,7 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('chipped.workbenches.tooltip.1'))
         text.add(2, Text.translatable('chipped.workbenches.tooltip.2'))
     })
+    tooltip.add('chisel_chipped_integration:drill', Text.translatable('chipped.drill.tooltip'))
 
     // Note about PEX crafter speed
     tooltip.add([

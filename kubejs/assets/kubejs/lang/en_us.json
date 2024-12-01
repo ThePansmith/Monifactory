@@ -409,7 +409,7 @@
   "kubejs.meowni_plush.tooltip.hardmode.1": "§9Requires nearly all the coins that you can possibly gather.",
   "kubejs.meowni_plush.tooltip.hardmode.2": "§9Exclusive to Hardmode and Expertmode players.",
 
-  "ftbquests.book.tooltip": "The quest window can also be opened with a keybind.",
+  "ftbquests.book.tooltip": "The quest window can also be opened with [`].",
 
   "redstoneclock.redstone_clock.tooltip": "§7Needs a redstone signal on a dotted side to work.",
 
@@ -481,6 +481,7 @@
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
   "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",
+  "chipped.drill.tooltip": "Unbound by default!",
   "packagedexcrafting.crafterspeed.tooltip": "§7Slower than autotables, but can support up to 20 recipes at once.",
 
   "tempad.tempad.tooltip": "§6Uses Monipennies as fuel"
