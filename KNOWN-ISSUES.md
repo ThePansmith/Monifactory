@@ -5,11 +5,6 @@ See more at [FAQ.md](FAQ.md)
 
 Nuclearcraft issue, see [here](https://github.com/ThePansmith/Monifactory/commit/9144c1c2938c5251816e3bc7e536ae6069681d74#diff-e49803c96d7fa99d827b8beab31aad194abf477365548a757dd297c5a525fa16L32) on how to bandaid fix it. Note that the reason for this not being default is that it in turn introduces some problems of it's own, mainly allowing some ingots to be unintentionally smelted in a furnace.
 
-**Gregtech machine GUI mostly missing**
-
-Most frequently found on the Large boilers and Rocket Scanner, this is a bug with Gregtech: Modern.
-There is nothing that can be done until the mod updates - feel free to try downgrading until then but you may encounter even *more* issues in the attempt.
-
 **KubeJS errors when updating on Prism Launcher**
 
 Update to Prism 9.0. Previous versions of Prism don't delete files from the previous version of Moni when updating, so any file that should be removed in a modpack update won't necessarily be deleted on your end. This can cause problems.
@@ -17,6 +12,11 @@ Update to Prism 9.0. Previous versions of Prism don't delete files from the prev
 **EMI and/or AE2 having issues with GregTech tools**
 
 These mods don't handle NBT or tool-based crafting perfectly all the time, so you may encounter this issue occasionally. Try to transition to Assemblers or other machines ASAP. Machine crafting also offers improved material efficiency over tool crafting
+
+**FTBQuests not showing as completed**
+
+Check all dependencies and ensure they are completed with a green checkmark. Some dependencies may not be on the same quest page, and will therefore not be connected with a line.
+If that does not work, then go into edit mode by changing the game mode to Creative, then clicking the pencil in the bottom right of the quest UI. In edit mode, you can right-click a quest and select "Complete Instantly".
 
 **UI elements overlapping with EMI**
 
@@ -28,7 +28,7 @@ Lost Cities has issues with forcing players to spawn in a Lost City, and crashes
 
 **Game crashes on MacOS**
 
-Remove Spark and ensure you are using an ARM64 version of Java 17 or higher
+Remove Spark and ensure you are using an ARM64 version of Java 17 or higher.
 
 **Mod versions do not match when connecting to server ([example pictured here](https://imgur.com/GL1GdwW))**
 
@@ -37,6 +37,11 @@ Odds are your config doesn't match the ones on the server. If the server is runn
 **GregTech textures are all switched around**
 
 GregTech uses dynamically generated textures - reloading your resource packs may break this. Restart your game to fix it
+
+**Discord Rich Presence integration doesn't match my voltage tier**
+
+The Rich Presence integration relies on the completion of certain quests in the Progression tab to track your voltage tier. Ensure that the quest with the Machine Hull corresponding to your tier is completed, and then wait a few minutes for it to update.
+Additionally, there are some reports of problems from players that use Java 22 - consider switching to Java 17 if it remains an issue.
 
 ## Other Issues with Mods
 Monifactory contains multiple mods that are at different stages of completion - it is not uncommon for a bug to be caused by one of these mods instead of Monifactory specifically.
