@@ -2,7 +2,7 @@
   {
     "group": "curium",
     "name": "hecm-243",
-    "forge_energy": 1680,
+    "forge_energy": 67200,
     "heat": 672,
     "criticality": 33,
     "depletion": 75,
@@ -12,7 +12,7 @@
   {
     "group": "curium",
     "name": "hecm-245",
-    "forge_energy": 1296,
+    "forge_energy": 51840,
     "heat": 408,
     "criticality": 37,
     "depletion": 121,
@@ -22,7 +22,7 @@
   {
     "group": "curium",
     "name": "hecm-247",
-    "forge_energy": 1104,
+    "forge_energy": 44160,
     "heat": 324,
     "criticality": 36,
     "depletion": 108,
@@ -32,7 +32,7 @@
   {
     "group": "curium",
     "name": "lecm-243",
-    "forge_energy": 420,
+    "forge_energy": 16800,
     "heat": 112,
     "criticality": 66,
     "depletion": 75,
@@ -42,7 +42,7 @@
   {
     "group": "curium",
     "name": "lecm-245",
-    "forge_energy": 324,
+    "forge_energy": 12960,
     "heat": 68,
     "criticality": 75,
     "depletion": 121,
@@ -52,7 +52,7 @@
   {
     "group": "curium",
     "name": "lecm-247",
-    "forge_energy": 276,
+    "forge_energy": 11040,
     "heat": 54,
     "criticality": 72,
     "depletion": 108,
