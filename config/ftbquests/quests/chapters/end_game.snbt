@@ -118,8 +118,8 @@
 			id: "20F44ACD2F91FD2A"
 			linked_quest: "4DF92773C82F4AAC"
 			shape: "hexagon"
-			x: 40.25d
-			y: -20.0d
+			x: 37.5d
+			y: -17.0d
 		}
 		{
 			id: "3F8FC1CF9A8083E1"
@@ -656,10 +656,7 @@
 			y: -13.5d
 		}
 		{
-			dependencies: [
-				"1B1D3A66B847D129"
-				"5911900438648430"
-			]
+			dependencies: ["1B1D3A66B847D129"]
 			description: [
 				"The &6Dimensional Superassembler&r uses dimensional warping to process hundreds of Assembly Line recipes at once. "
 				""
@@ -697,7 +694,7 @@
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
-			description: ["Infinity can be manipulated to create Monium, the strongest possible material."]
+			description: ["Infinity can be manipulated to create &9Monium&r, the strongest possible material."]
 			id: "060A5766B021FC77"
 			shape: "hexagon"
 			size: 1.5d
@@ -714,7 +711,7 @@
 		{
 			dependencies: ["060A5766B021FC77"]
 			description: [
-				"Turns out corrupting a Microverse has some other interesting consequences, including creating singularities. These impossibilities may just be what you need to create an impossibly perfect circuit line, but you do need to be able to contain it in some way."
+				"Turns out corrupting a Microverse has some other interesting consequences, including creating &6Singularities&r. These impossibilities may just be what you need to create an impossibly perfect circuit line, but you do need to be able to contain it in some way."
 				""
 				"Thankfully, you already have a metal that bends the rules, so that should be a good starting place."
 			]
@@ -888,11 +885,7 @@
 		}
 		{
 			dependencies: ["6DF2C1E88BE7CE5F"]
-			description: [
-				"The precursor to &9Matter Processing Units&r. Note that these boards require circuits themselves to craft."
-				""
-				"These circuit boards will also find use in all of the remaining circuit tiers, as they will be upgraded into their respective circuit boards. "
-			]
+			description: ["The precursor to &9Matter Processing Units&r. Note that these boards require circuits themselves to craft, like with Wetware."]
 			id: "5A07988F5AD20A06"
 			shape: "hexagon"
 			tasks: [{
@@ -902,14 +895,18 @@
 			}]
 			title: "&9Matter Circuit Board"
 			x: 38.75d
-			y: -8.75d
+			y: -11.75d
 		}
 		{
 			dependencies: [
 				"39A09DA3903C5564"
 				"601A47A727AC3BD2"
 			]
-			description: ["A &9Multidimentional CPU Wafer&r needs to be enhanced and cut before it is usable in circuit recipes."]
+			description: [
+				"A &9Multidimentional CPU Wafer&r needs to be enhanced and cut before it is usable in circuit recipes."
+				""
+				"It may be worth setting up a line for these. They'll be seeing frequent use from here on out."
+			]
 			id: "2D5677EA9F47AA83"
 			shape: "hexagon"
 			subtitle: "Technically, all CPU Chips are multidimensional."
@@ -937,8 +934,11 @@
 			y: -6.75d
 		}
 		{
-			dependencies: ["060A5766B021FC77"]
-			description: ["The last circuit board. These require UV circuits, but at this point it shouldn't be an issue for you."]
+			dependencies: [
+				"060A5766B021FC77"
+				"2343B68110805282"
+			]
+			description: ["The last circuit board. These require UV circuits, &6Dimensional Circuit Boards&r, and &6Ultimate Gems&r, but at this point it shouldn't be an issue for you."]
 			id: "434142F777A2CCBE"
 			shape: "hexagon"
 			tasks: [{
@@ -952,9 +952,10 @@
 		{
 			dependencies: [
 				"5A07988F5AD20A06"
-				"0DE1BF1648CAF6D6"
+				"4EA1E0D437528747"
+				"4DF92773C82F4AAC"
 			]
-			description: ["The precursor to &6Dimensional Processing Units&r. These will be your first major use for &6Holmium&r."]
+			description: ["The precursor to &6Dimensional Processing Units&r. On top of requiring &6Infinity Plates&r and &6The Ultimate Material&r, these need a lot of &6Polyethyl Cyanoacrylate&r. Make sure you can produce enough to feed the demand."]
 			id: "7E93D88827F83E1A"
 			shape: "hexagon"
 			tasks: [{
@@ -1076,7 +1077,7 @@
 		}
 		{
 			dependencies: ["39A09DA3903C5564"]
-			description: ["These RAM chips will find use in the remaining Mainframe recipes."]
+			description: ["These RAM chips will find use in the remaining circuit recipes."]
 			id: "7AF06CB391779388"
 			shape: "hexagon"
 			tasks: [{
@@ -1085,7 +1086,7 @@
 				type: "item"
 			}]
 			x: 43.75d
-			y: -8.75d
+			y: -12.25d
 		}
 		{
 			dependencies: ["39A09DA3903C5564"]
@@ -1248,7 +1249,6 @@
 			dependencies: [
 				"1F7F73BF81570F3C"
 				"07057CDE4E021BA7"
-				"5911900438648430"
 			]
 			description: [
 				"The &9Helical Fusion Reactor&r is a very large multiblock structure used for fusing elements into heavier ones &ein parallel&r. "
@@ -1271,9 +1271,9 @@
 		{
 			dependencies: ["739F7BF2A90B278A"]
 			description: [
-				"As the most advanced polymer you will need to make, Polyethyl Cyanoacrylate is required for a few endgame crafts."
+				"As the most advanced polymer you will need to make, &6Polyethyl Cyanoacrylate&r is required for a few endgame crafts."
 				""
-				"Fortunately, you won't need too much of it."
+				"It's a little different from previous polymers, but you'll be fine."
 			]
 			hide_dependency_lines: true
 			id: "5911900438648430"
@@ -1284,8 +1284,8 @@
 				type: "item"
 			}]
 			title: "Polyethyl Cyanoacrylate"
-			x: 48.0d
-			y: -24.25d
+			x: 51.5d
+			y: -10.75d
 		}
 	]
 	title: "End Game"

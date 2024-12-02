@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
                 '#gtceu:circuits/iv',
                 '16x gtceu:niobium_titanium_foil'
             )
-            .inputFluids(Fluid.of('gtceu:tin', 288))
+            .inputFluids(Fluid.of('gtceu:sterilized_growth_medium', 4000))
             .itemOutputs('16x gtceu:wetware_circuit_board')
             .cleanroom(CleanroomType.CLEANROOM)
             .duration(1200)
@@ -786,7 +786,7 @@ ServerEvents.recipes(event => {
             .itemOutputs('8x kubejs:quantum_flux')
             .duration(100)
             .EUt(480)
-
+        
         //Commented out in favor of GCYM's chain
 
         // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')

@@ -646,6 +646,20 @@ ServerEvents.recipes(event => {
         });
     });
 
+
+    // Stonecutting Marble
+    let MarbleTag = ['#moni:marble']; // What item tags to go through (change this so you have your tags)
+    MarbleTag.forEach(tag => {
+        let Marbles = Ingredient.of(tag).stacks; // Get all of the items with that tag
+        Marbles.forEach(input => {
+            Marbles.forEach(output => { // Loop through the items so all combination of input and output are met
+                if (input != output) // Ignore recipes where input and output are the same item
+                    event.stonecutting(output, input); // Make the recipe
+            });
+        });
+    });
+
+
     //LUV Components
     event.remove({ id: 'gtceu:assembly_line/electric_motor_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_motor_luv')
@@ -884,8 +898,8 @@ ServerEvents.recipes(event => {
     // JEAN Gasoline consumption
     event.recipes.gtceu.combustion_generator('jean_gasoline_generator')
         .inputFluids('gtceu:jean_gasoline 1')
-        .duration(320)
-        .EUt(-256)
+        .duration(2560)
+        .EUt(-32)
 
     // JEAN Gasoline
     event.recipes.gtceu.large_chemical_reactor('kubejs:jean_gasoline')
@@ -970,4 +984,7 @@ ServerEvents.recipes(event => {
 
     // Patchouli Books that needed tweaking
     event.replaceInput({ id: 'laserio:my_book_recipe_shapeless'}, 'laserio:logic_chip', 'laserio:card_item')
+
+    // Chipped tinker's table
+    event.replaceInput({ id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', '#forge:chests')
 })
