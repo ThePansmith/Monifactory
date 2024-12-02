@@ -41,7 +41,7 @@
 	boiling_mult = 15.0
 	#Affects how much energy reactors produce.
 	#Range: 0.01 ~ 1000000.0
-	fe_generation_multiplier = 400.0
+	fe_generation_multiplier = 10.0
 	#If true, active coolers will be counted in placement rules for other heat sinks.
 	active_heatsink_prime = true
 	#How much coolant active heat sink will consume per tick.

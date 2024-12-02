@@ -2,7 +2,7 @@
   {
     "group": "plutonium",
     "name": "hep-239",
-    "forge_energy": 840,
+    "forge_energy": 33600,
     "heat": 240,
     "criticality": 49,
     "depletion": 229,
@@ -12,7 +12,7 @@
   {
     "group": "plutonium",
     "name": "hep-241",
-    "forge_energy": 1320,
+    "forge_energy": 52800,
     "heat": 420,
     "criticality": 42,
     "depletion": 158,
@@ -22,7 +22,7 @@
   {
     "group": "plutonium",
     "name": "lep-239",
-    "forge_energy": 210,
+    "forge_energy": 8400,
     "heat": 40,
     "criticality": 99,
     "depletion": 229,
@@ -32,7 +32,7 @@
   {
     "group": "plutonium",
     "name": "lep-241",
-    "forge_energy": 330,
+    "forge_energy": 13200,
     "heat": 70,
     "criticality": 84,
     "depletion": 158,

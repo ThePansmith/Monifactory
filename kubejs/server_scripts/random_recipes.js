@@ -896,8 +896,8 @@ ServerEvents.recipes(event => {
     // JEAN Gasoline consumption
     event.recipes.gtceu.combustion_generator('jean_gasoline_generator')
         .inputFluids('gtceu:jean_gasoline 1')
-        .duration(320)
-        .EUt(-256)
+        .duration(2560)
+        .EUt(-32)
 
     // JEAN Gasoline
     event.recipes.gtceu.large_chemical_reactor('kubejs:jean_gasoline')

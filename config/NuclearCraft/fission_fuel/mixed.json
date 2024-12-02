@@ -2,7 +2,7 @@
   {
     "group": "mixed",
     "name": "mix-239",
-    "forge_energy": 310,
+    "forge_energy": 12400,
     "heat": 57.5,
     "criticality": 94,
     "depletion": 218,
@@ -12,7 +12,7 @@
   {
     "group": "mixed",
     "name": "mix-241",
-    "forge_energy": 468,
+    "forge_energy": 18720,
     "heat": 97.5,
     "criticality": 80,
     "depletion": 151,
