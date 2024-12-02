@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
     if (isNormalMode) {
         sda_print('creative_tank_data', 1, 'gtceu:creative_tank', 64)
         //sda_print('creative_tank_data', 2, 'ae2:creative_fluid_cell', 64) //The fluid cell can output items as a bug. See #8193 on the AE2 Github.
-    
+
         //Replacement solution with ExtendedAE's Infinity Cells
         sda_print('creative_tank_data', 2, 'kubejs:infinity_cell_base', 64)
         Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}')
@@ -72,12 +72,12 @@ ServerEvents.recipes(event => {
 
     if (!isNormalMode) {
         event.recipes.gtceu.subatomic_digital_assembly("omnicdata")
-        .notConsumable('kubejs:omnic_data')
-        .itemOutputs('gtceu:omnium_nugget')
-        .EUt(16000)
-        .circuit(1)
-        .totalCWU(160)
-        .CWUt(16)
+            .notConsumable('kubejs:omnic_data')
+            .itemOutputs('gtceu:omnium_nugget')
+            .EUt(16000)
+            .circuit(1)
+            .totalCWU(160)
+            .CWUt(16)
     }
 
 })

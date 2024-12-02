@@ -9,14 +9,14 @@ ServerEvents.recipes(event => {
 
         //If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
         event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
-    } else if(!isExpertMode) { 
+    } else if(!isExpertMode) {
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
     } else {
         event.remove({ id: 'snad:snad' })
         event.remove({ id: 'snad:red_snad' })
     }
-    
+
 
     // snaded sand snad
     comapcting(event, 'kubejs:compressed_sand', 'minecraft:sand');
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:blaze_rod', 'minecraft:brewing_stand')
     event.replaceInput({ input: 'gtceu:wood_plate' }, 'gtceu:wood_plate', '#minecraft:planks')
 
-    // Sculk LCR recipes 
+    // Sculk LCR recipes
 
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst")
         .notConsumable("minecraft:sculk_catalyst")
@@ -137,13 +137,13 @@ ServerEvents.recipes(event => {
     }
     ).id('gtceu:shaped/mv_macerator')
     // Data Stuff
-    
+
     if (isNormalMode) {
-    event.recipes.gtceu.extractor("tank_data")
-        .itemInputs("kubejs:heart_of_a_universe")
-        .itemOutputs("kubejs:creative_tank_data")
-        .duration(1000)
-        .EUt(180000)
+        event.recipes.gtceu.extractor("tank_data")
+            .itemInputs("kubejs:heart_of_a_universe")
+            .itemOutputs("kubejs:creative_tank_data")
+            .duration(1000)
+            .EUt(180000)
     }
 
     // Crystal Chip shit
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
     }
 
     //Cryolobus Vac Freezer recipe
-    event.remove({ id: "gtceu:vacuum_freezer/cool_hot_cryolobus_ingot" }) 
+    event.remove({ id: "gtceu:vacuum_freezer/cool_hot_cryolobus_ingot" })
     event.recipes.gtceu.vacuum_freezer("cryolobus_ingot_cooling")
         .itemInputs('gtceu:hot_cryolobus_ingot')
         .itemOutputs('gtceu:cryolobus_ingot')
@@ -633,7 +633,7 @@ ServerEvents.recipes(event => {
     multi_p2p.forEach(type => {
         event.stonecutting('mae2:'+type+'_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel')
     })
-    
+
     // Stonecutting CCI blocks
     let sameItemsTags = ['#chisel_chipped_integration:factory_block', '#chisel_chipped_integration:technical_block', '#chisel_chipped_integration:laboratory_block', '#chisel_chipped_integration:tyrian']; // What item tags to go through (change this so you have your tags)
     sameItemsTags.forEach(tag => {
@@ -645,6 +645,7 @@ ServerEvents.recipes(event => {
             });
         });
     });
+
 
     // Stonecutting Marble
     let MarbleTag = ['#moni:marble']; // What item tags to go through (change this so you have your tags)
@@ -658,6 +659,7 @@ ServerEvents.recipes(event => {
         });
     });
 
+
     //LUV Components
     event.remove({ id: 'gtceu:assembly_line/electric_motor_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_motor_luv')
@@ -667,7 +669,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(6000)
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_electric_motor').EUt(480).duration(4800))
-    
+
     event.remove({ id: 'gtceu:assembly_line/electric_pump_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_pump_luv')
         .itemInputs('1x gtceu:luv_electric_motor','1x gtceu:niobium_titanium_small_fluid_pipe','2x gtceu:hsss_plate','8x gtceu:hsss_screw','4x gtceu:silicone_rubber_ring','1x gtceu:hsss_rotor','2x gtceu:niobium_titanium_single_cable')
@@ -676,7 +678,7 @@ ServerEvents.recipes(event => {
         . duration(600)
         .EUt(6000)
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_electric_pump').EUt(480).duration(4800))
-   
+
     event.remove({ id: 'gtceu:assembly_line/conveyor_module_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/conveyor_module_luv')
         .itemInputs('2x gtceu:luv_electric_motor','2x gtceu:hsss_plate','4x gtceu:hsss_ring','16x gtceu:hsss_round','4x gtceu:hsss_screw','2x gtceu:niobium_titanium_single_cable')
@@ -686,7 +688,7 @@ ServerEvents.recipes(event => {
         .EUt(6000)
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_conveyor_module').EUt(480).duration(4800))
 
-    
+
     event.remove({ id: 'gtceu:assembly_line/electric_piston_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/electric_piston_luv')
             .itemInputs('1x gtceu:luv_electric_motor','4x gtceu:hsss_plate','2x gtceu:hsss_ring','16x gtceu:hsss_round','4x gtceu:hsss_rod','1x gtceu:hsss_gear','2x gtceu:small_hsss_gear','2x gtceu:niobium_titanium_single_cable')
@@ -695,7 +697,7 @@ ServerEvents.recipes(event => {
             .duration(600)
             .EUt(6000)
             ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:iv_electric_piston').EUt(480).duration(4800))
-        
+
     event.remove({ id: 'gtceu:assembly_line/dynamo_hatch_luv'})
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/dynamo_hatch_luv')
             .itemInputs('1x gtceu:luv_machine_hull','4x gtceu:niobium_titanium_spring','2x gtceu:hpic_chip','1x #gtceu:circuits/luv','2x gtceu:luv_voltage_coil')
@@ -785,7 +787,7 @@ ServerEvents.recipes(event => {
         H: "gtceu:iv_machine_hull",
         C: "#gtceu:circuits/iv"
     })
-    
+
     //ZPM Field Gen
     event.remove({ id: 'gtceu:assembly_line/field_generator_zpm'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/zpm_field_generator')
@@ -812,7 +814,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrochloric_dragon_scale_solution 2000')
         .duration(240)
         .EUt(120)
-    
+
     event.recipes.gtceu.centrifuge('scale_acid_centrifuge')
         .inputFluids('gtceu:hydrochloric_dragon_scale_solution 1000')
         .itemOutputs('gtceu:graphitic_tantalum_dust')
@@ -833,7 +835,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrofluoric_graphitic_tantalum_solution 2000')
         .duration(240)
         .EUt(120)
-        
+
     event.recipes.gtceu.centrifuge('tantalum_acid_graphite_centrifuge')
         .inputFluids('gtceu:hydrofluoric_graphitic_tantalum_solution 1000')
         .itemOutputs('gtceu:graphite_dust')

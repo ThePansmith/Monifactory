@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
             ["enderio:prescient_powder", 35840],
             ["enderio:ender_crystal_powder", 44800],
         ]
-    
+
         for (const [input, output] of xpjuice) {
             event.recipes.gtceu.mixer('kubejs:xpjuice_' + output)
             .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         event.remove({id: "gtceu:electric_blast_furnace/blast_cryolobus_gas"})
         event.remove({id: "gtceu:circuit_assembler/wetware_board"})
         event.remove({id: "enderio:stick"})
-		
+
 		// Processing for Ender Spores
 		event.custom({
 			'type': 'thermal:insolator',
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
 			],
 			'energy_mod': 3.0
 		})
-		
+
 		event.shapeless('kubejs:ender_spore', ['minecraft:chorus_flower', 'minecraft:ender_pearl', 'thermal:phytogro', 'minecraft:experience_bottle'])
 		event.smelting('minecraft:ender_pearl', 'kubejs:ender_spore')
 
@@ -82,4 +82,5 @@ ServerEvents.recipes(event => {
             .itemOutputs('kubejs:meowni_plush')
             .duration(2000)
             .EUt(65520)
-}})
+    }
+})
