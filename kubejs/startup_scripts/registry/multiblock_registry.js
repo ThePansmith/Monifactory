@@ -700,7 +700,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('naquadah_reactor_i')
         .appearanceBlock(GCyMBlocks.CASING_REACTION_SAFE)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    // Modern#2015
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCC", "PGP", "PGP", "PGP", "CCC")
@@ -722,7 +721,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('naquadah_reactor_ii')
         .appearanceBlock(GCyMBlocks.CASING_REACTION_SAFE)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    // Modern#2015
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCC", "PGP", "PGP", "PGP", "PGP", "CCC")
@@ -825,7 +823,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('cryococcal_reverberator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('reverberation')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH]) // Modern#2015
         .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
