@@ -11,7 +11,28 @@ function replaceCircassItem(event, idRegex, tagOrItem, toReplace, replaceWith) {
             if(curItemIngredient.getAsJsonPrimitive(tagOrItem) != null && curItemIngredient.getAsJsonPrimitive(tagOrItem).asString == toReplace) {
                 // Change item ingredient if it does match
                 curItemIngredient.remove(tagOrItem)
-                curItemIngredient["addProperty(java.lang.String,java.lang.String)"](tagOrItem, replaceWith)   
+                curItemIngredient["addProperty(java.lang.String,java.lang.String)"](tagOrItem, replaceWith)
+            }
+        }
+    })
+}
+
+function replaceGTRecipeAmount(event, recipeType, idRegex, tagOrItem, toAlter, multiplier) {
+    // Get all GTCEu Circuit Assembler recipes with an ID matching the regex
+    event.forEachRecipe({ id: idRegex, type: recipeType }, circuit_recipe => {
+        // Get the JSON array object representing all of the item ingredients
+        let itemIngredients = circuit_recipe.json.getAsJsonObject("inputs").getAsJsonArray("item")
+        for (let i = 0; i < itemIngredients.size(); i++) {
+            // Item ingredient to alter
+            let curItemContent = itemIngredients.get(i).getAsJsonObject("content")
+            let curItemIngredient = curItemContent.getAsJsonObject("ingredient")
+            
+
+            if(curItemIngredient.getAsJsonPrimitive(tagOrItem) != null && curItemIngredient.getAsJsonPrimitive(tagOrItem).asString == toAlter) {
+                // Change item ingredient if it does match
+                let prevCount = curItemContent.getAsJsonPrimitive("count").asInt
+                curItemContent.remove("count")
+                curItemContent["addProperty(java.lang.String,java.lang.Number)"]("count", prevCount*multiplier)
             }
         }
     })
@@ -23,6 +44,10 @@ ServerEvents.recipes(event => {
     replaceCircassItem(event, /workstation_ev/, "tag", "forge:bolts/blue_alloy", "forge:bolts/vibrant_alloy")
     replaceCircassItem(event, /nano_computer_iv/, "tag", "forge:fine_wires/electrum", "forge:fine_wires/lumium")
     replaceCircassItem(event, /crystal_computer_zpm/, "tag", "forge:fine_wires/niobium_titanium", "forge:fine_wires/enderium")
+
+    //Recipe categories seem to be separate when not using builders
+    replaceGTRecipeAmount(event, "gtceu:chemical_reactor", /wetware_circuit_board/, "tag", "forge:foils/niobium_titanium", 0.75)
+    replaceGTRecipeAmount(event, "gtceu:large_chemical_reactor", /wetware_circuit_board/, "tag", "forge:foils/niobium_titanium", 0.75)
 
 
     // Complex SMDs
@@ -63,7 +88,7 @@ ServerEvents.recipes(event => {
             '#gtceu:circuits/luv',
             'gtceu:iv_emitter', 
             '2x gtceu:omnic_acid_dust',
-            '3x gtceu:exquisite_monazite_gem'
+            '3x gtceu:flawless_monazite_gem'
         )
         .inputFluids('gtceu:distilled_water 500')
         .itemOutputs('32x kubejs:matter_circuit_board')
@@ -72,8 +97,8 @@ ServerEvents.recipes(event => {
         .EUt(250000)
 
     event.recipes.gtceu.large_chemical_reactor('matter_processing_unit')
-        .itemInputs('1x kubejs:matter_circuit_board', '20x gtceu:activated_netherite_foil', '12x gtceu:crystal_matrix_foil')
-        .inputFluids('gtceu:iron_iii_chloride 8000')
+        .itemInputs('1x kubejs:matter_circuit_board', '10x gtceu:activated_netherite_foil', '6x gtceu:crystal_matrix_foil')
+        .inputFluids('gtceu:iron_iii_chloride 7500')
         .itemOutputs('1x kubejs:matter_processing_unit')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
@@ -114,6 +139,7 @@ ServerEvents.recipes(event => {
             '2x kubejs:matter_processor_assembly',
             '12x gtceu:advanced_smd_diode',
             '24x gtceu:nor_memory_chip',
+            '8x kubejs:multidimensional_cpu_chip',
             '8x gtceu:uhpic_chip',
             '24x gtceu:fine_europium_wire',
             '8x gtceu:polyethyl_cyanoacrylate_foil',
@@ -133,6 +159,7 @@ ServerEvents.recipes(event => {
             '32x gtceu:advanced_smd_resistor',
             '32x gtceu:advanced_smd_inductor', 
             '32x gtceu:ram_chip',
+            '16x kubejs:multidimensional_cpu_chip',
             '16x gtceu:ruthenium_trinium_americium_neutronate_double_wire',
             '16x gtceu:polyethyl_cyanoacrylate_foil',
             '8x gtceu:crystal_matrix_plate') // could replace with omnium frame
@@ -145,7 +172,7 @@ ServerEvents.recipes(event => {
     // WIP: Dimensional Circuits
     event.recipes.gtceu.circuit_assembler('dimensional_circuit_board')
         .itemInputs(
-            '32x kubejs:matter_circuit_board',
+            '32x gtceu:polyethyl_cyanoacrylate_plate',
             '4x gtceu:infinity_plate',
             '#gtceu:circuits/zpm',
             'gtceu:luv_sensor',
@@ -159,8 +186,8 @@ ServerEvents.recipes(event => {
         .EUt(500000)
 
     event.recipes.gtceu.large_chemical_reactor('dimensional_processing_unit')
-        .itemInputs('1x kubejs:dimensional_circuit_board', '24x gtceu:holmium_foil', '8x gtceu:activated_netherite_foil')
-        .inputFluids('gtceu:iron_iii_chloride 12000')
+        .itemInputs('1x kubejs:dimensional_circuit_board', '12x gtceu:holmium_foil', '6x gtceu:activated_netherite_foil')
+        .inputFluids('gtceu:iron_iii_chloride 10000')
         .itemOutputs('1x kubejs:dimensional_processing_unit')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
@@ -169,7 +196,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler('dimensional_processor')
         .itemInputs(
             'kubejs:dimensional_processing_unit',
-            '4x kubejs:multidimensional_cpu_chip',
+            '3x kubejs:multidimensional_cpu_chip',
             '4x kubejs:complex_smd_resistor',
             '4x kubejs:complex_smd_capacitor',
             '4x kubejs:complex_smd_transistor', 
@@ -202,6 +229,7 @@ ServerEvents.recipes(event => {
             '2x kubejs:dimensional_processor_assembly',
             '8x kubejs:complex_smd_diode',
             '32x gtceu:nor_memory_chip',
+            '12x kubejs:multidimensional_cpu_chip',
             '16x kubejs:hyperdynamic_ram_chip',
             '16x gtceu:uhpic_chip',
             '24x gtceu:fine_activated_netherite_wire',
@@ -223,6 +251,7 @@ ServerEvents.recipes(event => {
             '32x kubejs:complex_smd_resistor',
             '32x kubejs:complex_smd_inductor', 
             '32x gtceu:nand_memory_chip',
+            '24x kubejs:multidimensional_cpu_chip',
             '32x kubejs:hyperdynamic_ram_chip',
             '16x gtceu:activated_netherite_double_wire',
             '16x gtceu:polyethyl_cyanoacrylate_foil',
@@ -250,8 +279,8 @@ ServerEvents.recipes(event => {
         .EUt(2000000)
 
     event.recipes.gtceu.large_chemical_reactor('monic_processing_unit')
-        .itemInputs('1x kubejs:monic_circuit_board', '8x gtceu:monium_single_wire', '16x gtceu:holmium_foil')
-        .inputFluids('gtceu:iron_iii_chloride 16000')
+        .itemInputs('1x kubejs:monic_circuit_board', '6x gtceu:monium_single_wire', '8x gtceu:holmium_foil')
+        .inputFluids('gtceu:iron_iii_chloride 12000')
         .itemOutputs('1x kubejs:monic_processing_unit')
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
@@ -294,6 +323,7 @@ ServerEvents.recipes(event => {
             '4x kubejs:contained_singularity', 
             '16x kubejs:complex_smd_diode',
             '48x gtceu:nor_memory_chip',
+            '16x kubejs:multidimensional_cpu_chip', 
             '24x kubejs:hyperdynamic_ram_chip',
             '16x kubejs:quantum_soc_chip',
             '24x gtceu:uhpic_chip',
