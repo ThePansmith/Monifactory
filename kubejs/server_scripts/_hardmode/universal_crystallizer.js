@@ -70,5 +70,12 @@ ServerEvents.recipes(event => {
             .itemOutputs('1x gtceu:crystal_matrix_ingot')
             .duration(7)
             .EUt(1000000)
+        
+        event.recipes.gtceu.universal_crystallizer('nether_star_crystallization')
+            .itemInputs('16x minecraft:blaze_rod', '16x thermal:blitz_rod', '16x thermal:blizz_rod', '16x thermal:basalz_rod', '4x #forge:storage_blocks/luminessence', '64x #forge:storage_blocks/nether_quartz', '4x #forge:storage_blocks/redstone')
+            .inputFluids('gtceu:enriched_naquadah 3')
+            .itemOutputs('16x minecraft:nether_star')
+            .duration(7)
+            .EUt(1000000)
     }
 })
