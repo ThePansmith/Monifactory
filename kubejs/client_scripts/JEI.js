@@ -50,7 +50,6 @@ JEIEvents.hideItems(event => {
     event.hide(/thermal:.*_dust/)
     event.hide(/thermal:.*_plate/)
     event.hide(/thermal:.*_nugget/)
-    event.hide(/thermal:.*_glass/)
     event.hide(/thermal:.*_gear/)
     event.hide('thermal:creosote_bucket')
     event.hide(/thermal:.*_cast/)
