@@ -1445,13 +1445,11 @@
 			description: [
 				"&2There are 3 materials you will need from processing Naquadah: Enriched Naquadah (Nq+), Naquadria (Nq*), and Trinium (Ke). "
 				""
-				"There are 3 different ways to process Naquadah, each resulting in different materials.&r"
+				"There are 2 different ways to process Naquadah, each resulting in different materials.&r"
 				""
-				"First is by &9processing ores&r from the &6Tier Five Micro Miner&r. &6Naquadah Ore&r yields &6Enriched Naquadah&r (through the &3Magnetic Separator&r) and &6Kaemanite Ore&r yields &6Trinium&r."
+				"The first option is to &9process ores&r from the &6Tier Five Micro Miner&r. &6Naquadah Ore&r yields &6Enriched Naquadah&r (through the &3Magnetic Separator&r) and &6Kaemanite Ore&r yields &6Trinium&r."
 				""
-				"Second is by combining &6Naquadah Dust&r with certain heavy elements and Ender IO crystal grains. This can provide &6Enriched Naquadah&r and &6Naquadria&r."
-				""
-				"Finally, you can do the full CEu processing of &6Naquadah Dust&r with &9Fluoroantimonic Acid&r, the strongest acid known to man. This is a decently involved process, but not only does it yield all 2 other Nq materials, it also grants byproducts of &6Titanium, Sulfur, Indium, Phosphorus, Barium, and Gallium&r. "
+				"The second option is to do the full CEu processing of &6Naquadah Dust&r with &9Fluoroantimonic Acid&r, the strongest acid known to man. This is a decently involved process, but not only does it yield all 2 other Nq materials, it also grants byproducts of &6Titanium, Sulfur, Indium, Phosphorus, Barium, and Gallium&r. "
 			]
 			icon: "gtceu:naquadria_dust"
 			id: "0508D3CCB6C876A3"
@@ -1503,7 +1501,7 @@
 				""
 				"&6Enriched Naquadah&r is meant to be used in as-of-yet-unimplemented CEu-native reactors. It's used in small amounts for &3Trinium Coil blocks&r, or in Moni reactors, though Naquadria is better for that purpose."
 				""
-				"At least it's the easiest to obtain, and you can get it by mixing, the full Naquadah chain, or by passing Purified Naquadah Dust through an Electromagnetic Separator."
+				"At least it's the easiest to obtain, and you can get it by the full Naquadah processing chain or by passing &6Purified Naquadah Dust&r through an &3Electromagnetic Separator&r."
 			]
 			id: "41FA85A3920EB334"
 			rewards: [{
