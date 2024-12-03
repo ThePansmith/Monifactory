@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.chemical_bath('bathe_pyrochlore_dust')
             .itemInputs('11x gtceu:pyrochlore_dust')
             .inputFluids('gtceu:hydrofluoric_acid 2000')
-            .itemOutputs('7x gtceu:niobium_pentoxide_dust', 'gtceu:tantalum_pentoxide_dust', '6x gtceu:fluorite_dust')
+            .itemOutputs('7x gtceu:niobium_pentoxide_dust', 'gtceu:tantalum_pentoxide_dust', '6x gcyr:fluorite_dust')
             .outputFluids('minecraft:water 2000')
             .duration(200).EUt(480)
 
