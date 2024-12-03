@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil', 'thermal:dynamo_output_augment'] })
+    event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil'] })
     event.remove({ output: ['thermal:dynamo_throttle_augment', 'thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
     event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame'] })
     event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer']})
@@ -203,12 +203,16 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}')
-    event.recipes.gtceu.assembler('power_augment')
-        .itemInputs('6x gtceu:conductive_alloy_block', '6x gtceu:sterling_silver_ingot', '3x kubejs:redstone_transmission_coil', '12x gtceu:energetic_alloy_ingot')
-        .itemOutputs(Item.of('thermal:dynamo_output_augment'))
-        .duration(80)
-        .EUt(32)
+    event.shaped('thermal:dynamo_output_augment', [
+        'SEI',
+        'ECE',
+        'IES'
+    ], {
+        S: '#forge:ingots/sterling_silver',
+        E: '#forge:ingots/energetic_alloy',
+        I: '#forge:storage_blocks/conductive_alloy',
+        C: 'kubejs:redstone_transmission_coil'
+    }).id('thermal:augments/dynamo_output_augment');
 
     event.remove({ id: 'thermal:augments/machine_speed_augment'})
     event.shaped('thermal:machine_speed_augment', [
