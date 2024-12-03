@@ -191,6 +191,22 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
+    event.recipes.gtceu.alloy_blast_smelter("kubejs:conductive_alloy_abs")
+        .itemInputs('#forge:dusts/iron', '#forge:dusts/redstone')
+        .outputFluids(Fluid.of('gtceu:conductive_alloy', 288))
+        .duration(112)
+        .EUt(16)
+        .circuit(2)
+        .blastFurnaceTemp(1400)
+
+    event.recipes.gtceu.alloy_blast_smelter('kubejs:soularium_abs')
+        .itemInputs('#forge:dusts/gold', 'soul_sand')
+		.circuit(2)
+        .outputFluids(Fluid.of('gtceu:soularium', 144))
+        .duration(90) // 4.5s
+        .EUt(16)
+        .blastFurnaceTemp(1200)
+
     //Black steel recipes. Has both regular & advanced recipe, each with a noble gas version.
     event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel'})
     event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel_gas'})
