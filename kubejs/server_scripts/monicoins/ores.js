@@ -407,23 +407,11 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_nickel'
         }).noMirror().noShrink()
 
-        /*event.shaped(
-
-          Item.of('gtceu:banded_iron_ore', 32),
-          [
-            '   ',
-            '   ',
-            ' AA'
-          ],
-          {
-            A: 'kubejs:moni_nickel'
-          }).noMirror().noShrink()*/
-
         event.shaped(
             Item.of('gtceu:galena_ore', 32), [
-            'AA ',
             '   ',
-            '   '
+            '   ',
+            'AA '
         ], {
             A: 'kubejs:moni_nickel'
         }).noMirror().noShrink()
@@ -704,9 +692,9 @@ ServerEvents.recipes(event => {
 
         event.shaped(
             Item.of('gtceu:emerald_ore', 32), [
-            'A  ',
+            ' A ',
             '   ',
-            'A  '
+            ' A '
         ], {
             A: 'kubejs:moni_quarter'
         }).noMirror().noShrink()

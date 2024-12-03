@@ -50,7 +50,6 @@ JEIEvents.hideItems(event => {
     event.hide(/thermal:.*_dust/)
     event.hide(/thermal:.*_plate/)
     event.hide(/thermal:.*_nugget/)
-    event.hide(/thermal:.*_glass/)
     event.hide(/thermal:.*_gear/)
     event.hide('thermal:creosote_bucket')
     event.hide(/thermal:.*_cast/)
@@ -131,7 +130,7 @@ JEIEvents.hideItems(event => {
     event.hide(/water_collector/);
     event.hide(/nuclearcraft:.*electromagnet.*/)
     // Hides all unused blocks
-    event.hide(['nuclearcraft:empty_active_heat_sink', 'nuclearcraft:villiaumite_heat_sink', 'nuclearcraft:carobbiite_heat_sink', 'nuclearcraft:empty_frame', 'nuclearcraft:supercooler', 'nuclearcraft:steel_block', 'nuclearcraft:electrum_block', 'nuclearcraft:supercold_ice_block', 'nuclearcraft:magnesium_block', 'nuclearcraft:cobalt_block', 'nuclearcraft:aluminum_block', 'nuclearcraft:graphite_block', 'nuclearcraft:lead_block', 'nuclearcraft:bronze_block', 'nuclearcraft:californium250_block', 'nuclearcraft:lithium_block', 'nuclearcraft:platinum_block', 'nuclearcraft:thorium_block', 'nuclearcraft:americium241_block', 'nuclearcraft:plutonium238_block', 'nuclearcraft:tin_block', 'nuclearcraft:beryllium_block', 'nuclearcraft:uranium238_block', 'nuclearcraft:silver_block', 'nuclearcraft:uranium_block', 'nuclearcraft:zirconium_block', 'nuclearcraft:zinc_block', 'nuclearcraft:boron_block',])
+    event.hide(['nuclearcraft:empty_active_heat_sink', 'nuclearcraft:villiaumite_heat_sink', 'nuclearcraft:carobbiite_heat_sink', 'nuclearcraft:empty_frame', 'nuclearcraft:supercooler', 'nuclearcraft:steel_block', 'nuclearcraft:electrum_block', 'nuclearcraft:supercold_ice_block', 'nuclearcraft:magnesium_block', 'nuclearcraft:cobalt_block', 'nuclearcraft:aluminum_block', 'nuclearcraft:lead_block', 'nuclearcraft:bronze_block', 'nuclearcraft:californium250_block', 'nuclearcraft:lithium_block', 'nuclearcraft:platinum_block', 'nuclearcraft:thorium_block', 'nuclearcraft:americium241_block', 'nuclearcraft:plutonium238_block', 'nuclearcraft:tin_block', 'nuclearcraft:uranium238_block', 'nuclearcraft:silver_block', 'nuclearcraft:uranium_block', 'nuclearcraft:zirconium_block', 'nuclearcraft:zinc_block', 'nuclearcraft:boron_block',])
     // Hides all unused items
     event.hide(['nuclearcraft:rad_x', 'nuclearcraft:research_paper', 'nuclearcraft:plate_extreme', 'nuclearcraft:gelatin', 'nuclearcraft:actuator', 'nuclearcraft:basic_electric_circuit', 'nuclearcraft:sic_fiber', 'nuclearcraft:tough_helmet', 'nuclearcraft:tough_chest', 'nuclearcraft:tough_pants', 'nuclearcraft:tough_boots', 'nuclearcraft:spaxelhoe_tough', 'nuclearcraft:spaxelhoe_thorium', 'nuclearcraft:multitool', 'nuclearcraft:qnp', 'nuclearcraft:lithium_ion_cell', 'nuclearcraft:dps', 'nuclearcraft:servo', 'nuclearcraft:bioplastic', 'nuclearcraft:empty_sink', 'nuclearcraft:radaway_slow', 'nuclearcraft:motor', 'nuclearcraft:salt', 'nuclearcraft:cocoa_butter', 'nuclearcraft:sawdust', 'nuclearcraft:flour', 'nuclearcraft:dominos', 'nuclearcraft:radaway'])
 
