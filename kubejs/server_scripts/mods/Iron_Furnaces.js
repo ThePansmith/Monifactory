@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('ironfurnaces:iron_furnace')
         .duration(200)
         .EUt(30)
-        .circuit(4)
+        .circuit(5)
 
     var furnaceupgrade = [
         ['copper', 'iron'],
