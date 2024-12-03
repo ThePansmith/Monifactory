@@ -181,13 +181,13 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.RhodiumPlatedPalladium.setComponents("3x palladium", "1x rhodium", "2x lumium")
     GTMaterials.RhodiumPlatedPalladium.setFormula('Pd3Rh(SnFe)4(CuAg4)2', true)
 
-    GTMaterials.Glowstone.setComponents("1x tricalcium_phosphate", "1x gold")
-    GTMaterials.Glowstone.setFormula('AuCa3(PO4)2', true)
+    GTMaterials.Glowstone.setComponents("1x tricalcium_phosphate", "1x barite", "1x gold")
+    GTMaterials.Glowstone.setFormula('AuCa3(PO4)2BaSO4', true)
 
-    GTMaterials.get('energetic_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)');
-    GTMaterials.get('vibrant_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5)');
-    GTMaterials.get('end_steel').setFormula('Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5))');
+    GTMaterials.get('energetic_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)');
+    GTMaterials.get('vibrant_alloy').setFormula('Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)(BeK4N5)');
+    GTMaterials.get('end_steel').setFormula('Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)(BeK4N5))');
 
-    GTMaterials.get('microversium').setFormula('Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D')
+    GTMaterials.get('microversium').setFormula('Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)D')
 })
 

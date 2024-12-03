@@ -120,13 +120,17 @@ ServerEvents.recipes(event => {
         .duration(140)
         .EUt(30)
 
-    //Replace default GTCEu glowstone separation recipe to match mixing recipe
-    event.replaceOutput({ id: "gtceu:centrifuge/glowstone_separation" }, 'minecraft:redstone', 'gtceu:tricalcium_phosphate_dust')
-    event.recipes.gtceu.mixer("kubejs:glowstone_dust")
-        .itemInputs('gtceu:tricalcium_phosphate_dust', '#forge:dusts/gold')
-        .itemOutputs('2x minecraft:glowstone_dust')
+    //Replace default GTCEu glowstone mixing/separation recipes
+    event.recipes.gtceu.mixer("gtceu:mixer/glowstone_mixing")
+        .itemInputs('gtceu:tricalcium_phosphate_dust', 'gtceu:barite_dust', '#forge:dusts/gold')
+        .itemOutputs('3x minecraft:glowstone_dust')
         .duration(80)
         .EUt(15)
+    event.recipes.gtceu.centrifuge("gtceu:centrifuge/glowstone_separation")
+        .itemInputs('3x minecraft:glowstone_dust')
+        .itemOutputs('gtceu:tricalcium_phosphate_dust', 'gtceu:barite_dust', '#forge:dusts/gold')
+        .duration(976)
+        .EUt(80)
 
     event.recipes.gtceu.mixer("kubejs:mana_infused_dust")
         .itemInputs('kubejs:primal_mana', '#forge:dusts/titanium')
