@@ -310,7 +310,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:uhv_electric_pump',
             '16x kubejs:stabilized_americium',
             '16x kubejs:quantum_flux',
-            '16x kubejs:shattered_star_data', )
+            '8x kubejs:shattered_star_data', )
         .itemOutputs('32x kubejs:stabilized_oganesson')
         .duration(900)
         .EUt(180000)
@@ -466,7 +466,7 @@ ServerEvents.recipes(event => {
             'kubejs:microminer_t9',
             '64x gtceu:gravi_star',
             '64x gtceu:gravi_star',
-            '32x kubejs:shattered_star_data'
+            '16x kubejs:shattered_star_data'
         )
         .itemOutputs('32x kubejs:quasi_stable_neutron_star')
         .duration(900)
@@ -559,9 +559,6 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t9',
             'kubejs:shattered_universe_data',
-            '64x kubejs:shattered_star_data',
-            '64x kubejs:shattered_star_data',
-            '64x kubejs:shattered_star_data',
             '64x kubejs:shattered_star_data'
         )
         .itemOutputs('kubejs:corrupted_universe_data')
@@ -582,7 +579,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_first')
         .itemInputs('kubejs:microminer_t11', 'kubejs:infinity_catalyst', 'kubejs:shattered_universe_data', )
-        .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
+        .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
         .duration(600)
         .EUt(2000000)
 

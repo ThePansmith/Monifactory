@@ -38,6 +38,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.get('gcyr:bisalloy_400').addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
+    
+    //Gears for Thermal Expansion
+    GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)
+    GTMaterials.Copper.addFlags(GTMaterialFlags.GENERATE_GEAR)
+    GTMaterials.Silver.addFlags(GTMaterialFlags.GENERATE_GEAR)
+    GTMaterials.Lead.addFlags(GTMaterialFlags.GENERATE_GEAR)
 
     addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID, 1133);
     GTMaterials.Americium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.PLASMA, new GTFluidBuilder())

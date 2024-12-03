@@ -876,6 +876,15 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x ae2:printed_silicon")
         .duration(10)
         .EUt(2048)
+    
+    wafers.forEach((wafer, tier) => {
+        event.recipes.gtceu.forming_press("ae2_printed_" + wafer[1] + "greg")
+            .notConsumable("ae2:silicon_press")
+            .itemInputs("4x " + wafer[0] + wafer[1])
+            .itemOutputs(Item.of("ae2:printed_silicon", 4*2**tier))
+            .duration(10)
+            .EUt(2048)
+    })
 
     event.recipes.gtceu.forming_press("ae2_printed_engineering_greg")
         .notConsumable("ae2:engineering_processor_press")
@@ -913,7 +922,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
-
+    
     event.recipes.gtceu.circuit_assembler("ae2_logic_processor_greg_1x")
         .itemInputs("ae2:printed_logic_processor", "ae2:printed_silicon", "#gtceu:circuits/lv")
         .inputFluids("gtceu:soldering_alloy 72")
@@ -929,7 +938,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
-    
+
     event.recipes.gtceu.circuit_assembler("mega_accumulation_processor_greg_1x")
         .itemInputs("megacells:printed_accumulation_processor", "ae2:printed_silicon", "#gtceu:circuits/hv")
         .inputFluids("gtceu:soldering_alloy 72")
@@ -937,7 +946,6 @@ ServerEvents.recipes(event => {
         .duration(10)
         .EUt(2560)
         .cleanroom(CleanroomType.CLEANROOM)
-
     // ExtendedAE
 
     //Pattern Modifier (NAE2's Pattern Multitool)

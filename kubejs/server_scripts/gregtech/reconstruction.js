@@ -109,4 +109,36 @@ ServerEvents.recipes(event => {
             .duration(80)
             .EUt(56)
     })
+
+    // Flower cycle convenience recipes
+    const flowerCycle = [
+        'dandelion',
+        'poppy',
+        'blue_orchid',
+        'allium',
+        'azure_bluet',
+        'red_tulip',
+        'orange_tulip',
+        'white_tulip',
+        'pink_tulip',
+        'oxeye_daisy',
+        'cornflower',
+        'lily_of_the_valley',
+        //'sunflower',  //Flowers that give 2x as much dye are excluded. Sorry!
+        //'lilac',
+        //'rose_bush',
+        //'peony',
+        'spore_blossom',
+        'wither_rose',
+        'dead_bush'
+    ] 
+    flowerCycle.forEach((flower, index) => {
+        let curFlower = flowerCycle[index];
+        let nextFlower = flowerCycle[(index+1)%flowerCycle.length];
+        event.recipes.gtceu.atomic_reconstruction("gtceu:" + curFlower + "_to_" + nextFlower)
+            .itemInputs("minecraft:" + curFlower)
+            .itemOutputs("minecraft:" + nextFlower)
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(30)
+    })
 })
