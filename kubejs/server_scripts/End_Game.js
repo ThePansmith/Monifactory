@@ -202,7 +202,7 @@ ServerEvents.recipes(event => {
         .EUt(1000000)
 
     event.recipes.gtceu.omnic_forge("dimensionally_stabilized_infinity_heavy_plating")
-        .itemInputs('gtceu:infinity_plate', 'gtceu:dense_activated_netherite_plate', 'kubejs:quasi_stable_neutron_star', '8x gtceu:neutron_reflector', '16x kubejs:the_ultimate_material')
+        .itemInputs('gtceu:infinity_plate', 'gtceu:dense_activated_netherite_plate', 'kubejs:quasi_stable_neutron_star', '8x gtceu:neutron_reflector', '12x kubejs:the_ultimate_material')
         .itemOutputs('kubejs:dimensionally_stabilized_infinity_heavy_plating')
         .duration(100)
         .EUt(4000000)
