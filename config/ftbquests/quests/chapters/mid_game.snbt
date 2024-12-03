@@ -1133,7 +1133,7 @@
 				""
 				"&rYou will need to treat certain ores with &9Nitric Acid&r to yield &6PGS&r - &6Sheldonite&r is the best. Then, using an &3HV+ Centrifuge&r and &9Aqua Regia&r, break it down into the PGS salts, and reduce those salts to the metals."
 				""
-				"This is still optional, and you can get &6Ruthenium&r and &6Rhodium&r from &6Osmiridium 80/20 Ore&r and &6Iridosmine 80/20 Ore&r from Microverse adventures instead."
+				"&9This is not optional - Platinum Group sludge processing is necessary to get your first &6Iridium&9 and &6Osmium&9.&r However, you can get &6Ruthenium&r and &6Rhodium&r from &6Laurite&r and &6Cuprorhodsite&r in the Microverse before then."
 			]
 			icon: "gtceu:platinum_dust"
 			id: "1C1B1E1BBFA079F5"
