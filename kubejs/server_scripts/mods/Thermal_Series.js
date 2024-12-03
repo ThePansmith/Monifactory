@@ -143,50 +143,51 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('thermal:upgrade_augment_1', '{AugmentData:{BaseMod:1.5f,Type:"Upgrade"}}'), [
             'ABA',
-            'BCB',
+            'RGR',
             'ABA'
         ], {
-            A: 'gtceu:invar_gear',
-            B: 'gtceu:invar_plate',
-            C: 'gtceu:electrical_steel_block'
+            A: 'gtceu:invar_screw',
+            B: 'gtceu:double_invar_plate',
+            G: 'gtceu:electrical_steel_gear',
+            R: 'gtceu:fine_red_alloy_wire'
         }
     )
 
     event.shaped(
         Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:2.5f,Type:"Upgrade"}}'), [
-            'ABA',
+            'PGP',
             'BCB',
-            'ABA'
+            'PGP'
         ], {
-            A: 'gtceu:electrum_gear',
-            B: 'gtceu:electrum_plate',
+            B: 'gtceu:cobalt_brass_gear',
+            P: 'gtceu:double_electrum_plate',
+            G: 'thermal:obsidian_glass',
             C: 'thermal:upgrade_augment_1'
         }
     )
 
     event.shaped(
         Item.of('thermal:upgrade_augment_4', '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
-            'ABA',
-            'BCB',
-            'ABA'
+            'RSR',
+            'SCS',
+            'RSR'
         ], {
-            A: 'gtceu:restonia_gear',
-            B: 'gtceu:signalum_plate',
+            R: 'gtceu:restonia_gear',
+            S: 'gtceu:signalum_plate',
             C: 'thermal:upgrade_augment_2'
         }
     )
 
-    //FIXME: Temporary Recipe until DE comes out
     event.shaped(
         Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:10.0f,Type:"Upgrade"}}'), [
-            'ABD',
+            'ABG',
             'BCB',
-            'DBA'
+            'GBA'
         ], {
-            A: 'gtceu:cryolobus_plate',
+            A: 'gtceu:double_cryolobus_plate',
             B: 'gtceu:enderium_plate',
             C: 'thermal:upgrade_augment_4',
-            D: 'gtceu:tungsten_carbide_plate'
+            G: 'gtceu:small_tungsten_carbide_gear'
         }
     )
 
