@@ -1363,7 +1363,7 @@
 				"&2CEu has GT6-style pipes and cables on by default. &rYou will need to use &aWire Cutters&r to connect each side of a cable to machines or other cables. Placing it against the machine or cable automatically connects it as well. The same behaviour follows for GT pipes, whose tool is the &aWrench&r."
 				"This can save you from energy or fluids going the wrong way. But if you don't like this, disable the config option for \"GT6 style pipes and cables\" in the GregTech config file."
 				""
-				"&2GT cables now support RF conversion natively! &rYou can plug an &9RF&r machine into an &9EU&r cable directly and it will convert the energy. You cannot, however, plug an &9RF&r power souce directly into an &9EU&r cable."
+				"&2GT cables now support RF conversion natively! &eYou can plug an &9RF&e machine into an &9EU&e cable directly and it will convert the energy.&r You cannot, however, plug an &9RF&r power souce directly into an &9EU&r cable."
 			]
 			id: "12B95158E4C792DB"
 			rewards: [{
