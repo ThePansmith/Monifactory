@@ -521,8 +521,12 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["33351123F08D92BE"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"33351123F08D92BE"
+			]
 			description: ["Turn your &6Glass&r into &6Quartz&r. An &3Arc Furnace&r making &6Glass&r supports 2.5 &3Electrolyzers&r of the same tier. You will need a lot of &6Quartz&r, so it's crucial that you passive this."]
+			hide_until_deps_visible: true
 			id: "6792DF5F9F320B98"
 			subtitle: "&oThis step requires a Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
