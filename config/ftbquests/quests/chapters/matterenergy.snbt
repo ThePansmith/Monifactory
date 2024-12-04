@@ -495,10 +495,6 @@
 				"When adjacent to any other block, you can use &aprocessing patterns&r with a machine to insert items into the machine. Processing patterns require that the finished item is inserted back into the ME Network through &aInterfaces&r or &aPattern Providers&r."
 				""
 				"&aME Pattern Providers&r can be wrenched to ensure they only communicate with a particular adjacent block, or can be crafted into a micropart form to fit multiple in the same block space (each micropart only interacting with the adjacent block face)."
-				""
-				"Also, if you connect a gadget from &bBuilding Gadgets&r to the Pattern Provider, the gadget will pull materials straight from the attached AE2 network, &aNOT&r the Pattern Provider."
-				""
-				"[\"There is information about the Gadgets, and how to connect them to inventories, in the \",{\"text\":\"Inspector Gadget\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5F9C7FB40AD2640B\"}},\" quest in \",{\"text\":\"Early Game\",\"color\":\"red\"},\".\"]"
 			]
 			icon: "ae2:pattern_provider"
 			id: "1040D941027962B1"
