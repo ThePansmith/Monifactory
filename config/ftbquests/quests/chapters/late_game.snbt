@@ -835,13 +835,13 @@
 				"79EFCD8E01384C0C"
 			]
 			description: [
-				"&2Wetware- and Crystal-related processes require some stronger sterilization.&r"
+				"&2Wetware- and Crystal-related processes require a different kind of sterilization.&r"
 				""
 				"You will need to build another &3Cleanroom&r to run these recipes inside. Instead of &3Filter Casings&r, use &3Sterilizing Filter Casings&r in the top face."
 				""
 				"These casings are expensive! You'll need &3Fusion MK II&r to get the &6Tritanium&r."
 				""
-				"Note that a Sterile Cleanroom cannot handle recipes which require regular Cleanrooms."
+				"&eNote that a Sterile Cleanroom cannot handle recipes which require regular Cleanrooms.&r"
 			]
 			id: "04EABD3D2C72D2C5"
 			rewards: [{
@@ -856,7 +856,7 @@
 				item: "gtceu:sterilizing_filter_casing"
 				type: "item"
 			}]
-			title: "&2Cleaner Room"
+			title: "&2A Different Type of Clean"
 			x: 3.0d
 			y: 12.25d
 		}
