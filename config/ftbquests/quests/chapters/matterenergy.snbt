@@ -1049,8 +1049,8 @@
 				}
 			]
 			title: "&9Automating Extended Crafting"
-			x: 2.5d
-			y: 11.5d
+			x: 1.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0EF85170074E70B3"]
@@ -1099,7 +1099,7 @@
 				type: "item"
 			}]
 			title: "&9Mastering Patterns"
-			x: 4.0d
+			x: 2.5d
 			y: 11.5d
 		}
 		{
@@ -1150,7 +1150,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6F32A8739D8E792A"]
+			dependencies: ["3C3E015DFA8FDECE"]
 			description: ["The &6Extended Molecular Assembler&r is able to perform &a8 crafts at a time&r, and does each of those crafts &atwice as fast&r, meaning this assembler can do some serious work."]
 			id: "631F5DFF43F7A289"
 			rewards: [{
@@ -1167,7 +1167,7 @@
 			}]
 			title: "&9Extended Assembling"
 			x: 4.0d
-			y: 10.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["4174A6C6403DD245"]
@@ -1641,6 +1641,24 @@
 			title: "&9Extended Pattern Access Terminal"
 			x: 6.75d
 			y: 4.0d
+		}
+		{
+			dependencies: ["6F32A8739D8E792A"]
+			description: [
+				"The &6Molecular Assembler&r is the most flexible way to autocraft recipes that would otherwise be done in the &3Crafting Table&r, &3Stonecutter&r, or &3Smithing Table&r."
+				""
+				"Place one next to a &6Pattern Provider&r with a compatible &6Pattern&r and it will perform those recipe types when requested, no further configuration required."
+				""
+				"It can also craft recipes passively if supplied with a compatible &6Pattern&r and &aAE&r power."
+			]
+			id: "3C3E015DFA8FDECE"
+			tasks: [{
+				id: "1FE22A73493AA6D9"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
 		}
 	]
 	title: "Matter-Energy"
