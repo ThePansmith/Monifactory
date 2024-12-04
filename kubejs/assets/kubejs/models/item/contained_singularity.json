@@ -2,6 +2,6 @@
     "parent":"item/generated",
     "textures": {
       "layer0":"kubejs:item/contained_singularity",
-      "layer1":"kubejs:item/singularity_containment_unit"
+      "layer1":"kubejs:item/contained_singularity_fg"
     }
 }
