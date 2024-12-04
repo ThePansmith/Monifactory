@@ -2318,13 +2318,13 @@
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
-				"Also important to note is that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
+				"Also important to note is that it won't work with Tile Entities, so it pretty much only works with simple blocks (not stuff like machines)."
+				"{@pagebreak}"
+				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will pull items from the inventory, 'connecting' the gadget to the inventory."
 				""
-				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, 'connecting' the gadget to the inventory."
+				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r, the gadget will use &6Cobblestone&r from that chest to place blocks."
 				""
-				"For example, if you shift-right click a chest full of cobblestone, the gadget will use cobblestone from that chest to place blocks."
-				""
-				"By default, the config GUI is bound to &6G&r."
+				"By default, the config GUI is bound to &8G&r."
 			]
 			icon: "buildinggadgets2:gadget_building"
 			id: "5F9C7FB40AD2640B"

@@ -862,6 +862,8 @@
 				"You can equip these as a bauble, and use a hotkey to open them. Search 'Applied Energistics' as a &ecategory&r to see and edit these hotkeys."
 				""
 				"The default range is only 16 blocks. However, you can put &6Wireless Boosters&r into the &6Wireless Access Point&r to increase the range. A better (but more expensive) solution that allows access from anywhere will be explained in the following quest, 'AE2 Everywhere!'."
+				""
+				"&9Building Gadgets can be bound to the ME system by &8Shift-right-clicking&9 with it on an online ME Wireless Access Point.&r"
 			]
 			id: "1175ED9EF0AB82F6"
 			shape: "hexagon"
