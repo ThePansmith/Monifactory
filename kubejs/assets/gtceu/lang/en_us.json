@@ -411,9 +411,10 @@
 
   "material.gtceu.naq_fuel_t1": "Crude Liquid Naquadah Fuel",
   "material.gtceu.naq_fuel_t1_depleted": "Depleted Crude Liquid Naquadah Fuel",
-  "material.gtceu.naq_fuel_t2": "Basic Liquid Naquadah Fuel",
-  "material.gtceu.naq_fuel_t2_depleted": "Depleted Basic Liquid Naquadah Fuel",
-  "material.gtceu.nuclear_waste": "Nuclear Waste",
+  "material.gtceu.naq_fuel_t2": "Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t2_depleted": "Depleted Liquid Naquadah Fuel",
+  "material.gtceu.naquadah_superfuel": "Naquadah Superfuel",
+  "material.gtceu.naquadah_superfuel_depleted": "Depleted Naquadah Superfuel",
   "material.gtceu.raw_naquadah_solution": "Raw Naquadah Solution",
   "material.gtceu.piranha_solution": "Piranha Solution",
   "material.gtceu.hot_piranha_solution": "Hot Piranha Solution",
@@ -424,6 +425,18 @@
   "material.gtceu.medium_naquadah_isotope_fraction": "Medium Naquadah Isotope Fraction",
   "material.gtceu.heavy_naquadah_isotope_fraction": "Heavy Naquadah Isotope Fraction",
   "material.gtceu.naquadah_isotope_sludge": "Naquadah Isotope Sludge",
+  "material.gtceu.cracked_light_naquadah_isotope_fraction": "Neutronium-Cracked Light Naquadah Isotope Fraction",
+  "material.gtceu.cracked_medium_naquadah_isotope_fraction": "Neutronium-Cracked Medium Naquadah Isotope Fraction",
+  "material.gtceu.cracked_heavy_naquadah_isotope_fraction": "Neutronium-Cracked Heavy Naquadah Isotope Fraction",
+  "material.gtceu.cracked_naquadah_isotope_sludge": "Neutronium-Cracked Naquadah Isotope Sludge",
+  "material.gtceu.superheavy_atomic_residue": "Superheavy Atomic Residue",
+  "material.gtceu.heavy_atomic_residue": "Heavy Atomic Residue", 
+  "material.gtceu.purified_heavy_residue": "Purified Heavy Atomic Residue",
+  "material.gtceu.purified_superheavy_residue": "Purified Superheavy Atomic Residue",
+  "material.gtceu.quadium": "Quadium",
+  "material.gtceu.hyperdegenerate_matter":"Hyperdegenerate Matter",
+  "material.gtceu.exotic_particle_solution": "Exotic Particle Solution",
+
 
 
 
