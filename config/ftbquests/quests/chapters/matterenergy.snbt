@@ -1407,13 +1407,72 @@
 			description: [
 				"&bApplied Energistics&r does not allow you to use tags when creating &6Processing Patterns&r. This can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
 				""
-				"Instead, use &9Universal Circuits&r when creating your Processing Patterns, as all normal circuits can be converted to their &9Universal Circuit&r equivalent, which can be used in all the same recipes as regular circuits."
+				"&eIf you find this to be an issue, use &9Universal Circuits&e for Processing Patterns that would otherwise use GregTech circuits.&r"
+				""
+				"All normal circuits can be converted to their &9Universal Circuit&r equivalent, and thus when a more efficient circuit can be made, only the recipe for the &9Universal Circuit&r needs to be changed."
 			]
 			icon: "kubejs:hv_universal_circuit"
 			id: "0D1A64EBBA742196"
 			tasks: [{
-				id: "21D1CA04E224F57A"
-				type: "checkmark"
+				id: "2EEC0D825A18FE85"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:ulv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:lv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:mv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:ev_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:iv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:luv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:zpm_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:uv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:uhv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:uev_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:uiv_universal_circuit"
+							}
+						]
+					}
+				}
+				title: "Any Universal Circuit"
+				type: "item"
 			}]
 			title: "&9Universal Circuits"
 			x: 6.75d
