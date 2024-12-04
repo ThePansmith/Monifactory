@@ -1087,30 +1087,15 @@
 		}
 		{
 			dependencies: ["6203088E30E34B45"]
-			description: ["A simple combination of &9Nitrogen&r and &9Oxygen&r, the two most common elements in the air, yet this substance is very toxic. Chemistry is weird."]
-			icon: "gtceu:nitrogen_dioxide_bucket"
-			id: "41F026E4C649A2FA"
-			rewards: [{
-				id: "5DE32B0206E33A60"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "3D6E3632D49E05CE"
-				item: "gtceu:nitrogen_dioxide_bucket"
-				type: "item"
-			}]
-			title: "Nitrogen Dioxide"
-			x: 36.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["41F026E4C649A2FA"]
-			description: ["&9Nitrogen Dioxide&r, &9Oxygen&r, and &9Water&r will create &9Nitric Acid&r, the next step in your chemical journey."]
+			description: [
+				"&9Nitrogen Dioxide&r, &9Oxygen&r, and &9Water&r will create &9Nitric Acid&r, the next step in your chemical journey."
+				""
+				"&9Nitrogen Dioxide&r can be made with a simple combination of &9Nitrogen&r and &9Oxygen&r, or skipped entirely with the &3Large Chemical Reactor.&r"
+			]
 			icon: "gtceu:nitric_acid_bucket"
 			id: "595F205B551A53C9"
 			rewards: [{
+				count: 2
 				id: "39FA46859D2FA9B6"
 				item: "kubejs:moni_nickel"
 				type: "item"
