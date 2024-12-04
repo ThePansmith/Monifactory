@@ -83,7 +83,9 @@ StartupEvents.registry('item', event => {
 
 
     // Monicoins
-    event.create('moni_penny')
+    if (isNormalMode) {
+        event.create('moni_penny')
+    }
     event.create('moni_nickel')
     event.create('moni_quarter')
     event.create('moni_dollar').glow(true)
