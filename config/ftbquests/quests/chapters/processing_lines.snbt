@@ -205,7 +205,31 @@
 			subtitle: "&oThis step requires a Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "78F2F922F7B7F0EA"
-				item: "gtceu:sodium_dust"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:sodium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lithium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:aluminium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:silicon_dust"
+							}
+						]
+					}
+				}
+				title: "Sodium, Silicon, Lithium, or Aluminium Dust"
 				type: "item"
 			}]
 			title: "Sodium, Silicon, Lithium and Aluminium"
@@ -473,9 +497,26 @@
 			subtitle: "&oThis step requires a Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "5E475348CEFAFBBF"
-				item: "gtceu:silicon_dust"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:silicon_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:oxygen_bucket"
+							}
+						]
+					}
+				}
+				title: "Silicon Dust or Oxygen Bucket"
 				type: "item"
 			}]
+			title: "Silicon and Oxygen"
 			x: 11.5d
 			y: 3.0d
 		}
