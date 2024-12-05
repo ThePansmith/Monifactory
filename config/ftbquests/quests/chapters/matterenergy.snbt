@@ -970,7 +970,11 @@
 				"41B4EA53D6D7AE37"
 			]
 			dependency_requirement: "one_completed"
-			description: ["It's a micropart, so you need to place it on an &6ME Cable&r (not a conduit)."]
+			description: [
+				"It's a micropart, so you need to place it on an &6ME Cable&r (not a conduit)."
+				""
+				"When encoding Processing Patterns, note the scrollbar on the left - you can encode up to 81 types of items and fluids!"
+			]
 			id: "480EE330E12084E8"
 			rewards: [{
 				id: "26AC32A839C6603B"
