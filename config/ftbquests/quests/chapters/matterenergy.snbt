@@ -495,10 +495,6 @@
 				"When adjacent to any other block, you can use &aprocessing patterns&r with a machine to insert items into the machine. Processing patterns require that the finished item is inserted back into the ME Network through &aInterfaces&r or &aPattern Providers&r."
 				""
 				"&aME Pattern Providers&r can be wrenched to ensure they only communicate with a particular adjacent block, or can be crafted into a micropart form to fit multiple in the same block space (each micropart only interacting with the adjacent block face)."
-				""
-				"Also, if you connect a gadget from &bBuilding Gadgets&r to the Pattern Provider, the gadget will pull materials straight from the attached AE2 network, &aNOT&r the Pattern Provider."
-				""
-				"[\"There is information about the Gadgets, and how to connect them to inventories, in the \",{\"text\":\"Inspector Gadget\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5F9C7FB40AD2640B\"}},\" quest in \",{\"text\":\"Early Game\",\"color\":\"red\"},\".\"]"
 			]
 			icon: "ae2:pattern_provider"
 			id: "1040D941027962B1"
@@ -862,6 +858,8 @@
 				"You can equip these as a bauble, and use a hotkey to open them. Search 'Applied Energistics' as a &ecategory&r to see and edit these hotkeys."
 				""
 				"The default range is only 16 blocks. However, you can put &6Wireless Boosters&r into the &6Wireless Access Point&r to increase the range. A better (but more expensive) solution that allows access from anywhere will be explained in the following quest, 'AE2 Everywhere!'."
+				""
+				"&9Building Gadgets can be bound to the ME system by &8Shift-right-clicking&9 with it on an online ME Wireless Access Point.&r"
 			]
 			id: "1175ED9EF0AB82F6"
 			shape: "hexagon"
@@ -972,7 +970,11 @@
 				"41B4EA53D6D7AE37"
 			]
 			dependency_requirement: "one_completed"
-			description: ["It's a micropart, so you need to place it on an &6ME Cable&r (not a conduit)."]
+			description: [
+				"It's a micropart, so you need to place it on an &6ME Cable&r (not a conduit)."
+				""
+				"When encoding Processing Patterns, note the scrollbar on the left - you can encode up to 81 types of items and fluids!"
+			]
 			id: "480EE330E12084E8"
 			rewards: [{
 				id: "26AC32A839C6603B"
@@ -1051,8 +1053,8 @@
 				}
 			]
 			title: "&9Automating Extended Crafting"
-			x: 2.5d
-			y: 11.5d
+			x: 1.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0EF85170074E70B3"]
@@ -1101,7 +1103,7 @@
 				type: "item"
 			}]
 			title: "&9Mastering Patterns"
-			x: 4.0d
+			x: 2.5d
 			y: 11.5d
 		}
 		{
@@ -1152,7 +1154,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["6F32A8739D8E792A"]
+			dependencies: ["3C3E015DFA8FDECE"]
 			description: ["The &6Extended Molecular Assembler&r is able to perform &a8 crafts at a time&r, and does each of those crafts &atwice as fast&r, meaning this assembler can do some serious work."]
 			id: "631F5DFF43F7A289"
 			rewards: [{
@@ -1169,7 +1171,7 @@
 			}]
 			title: "&9Extended Assembling"
 			x: 4.0d
-			y: 10.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["4174A6C6403DD245"]
@@ -1407,13 +1409,72 @@
 			description: [
 				"&bApplied Energistics&r does not allow you to use tags when creating &6Processing Patterns&r. This can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
 				""
-				"Instead, use &9Universal Circuits&r when creating your Processing Patterns, as all normal circuits can be converted to their &9Universal Circuit&r equivalent, which can be used in all the same recipes as regular circuits."
+				"&eIf you find this to be an issue, use &9Universal Circuits&e for Processing Patterns that would otherwise use GregTech circuits.&r"
+				""
+				"All normal circuits can be converted to their &9Universal Circuit&r equivalent, and thus when a more efficient circuit can be made, only the recipe for the &9Universal Circuit&r needs to be changed."
 			]
 			icon: "kubejs:hv_universal_circuit"
 			id: "0D1A64EBBA742196"
 			tasks: [{
-				id: "21D1CA04E224F57A"
-				type: "checkmark"
+				id: "2EEC0D825A18FE85"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:ulv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:lv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:mv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:ev_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:iv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:luv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:zpm_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:uv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:uhv_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:uev_universal_circuit"
+							}
+							{
+								Count: 1b
+								id: "kubejs:uiv_universal_circuit"
+							}
+						]
+					}
+				}
+				title: "Any Universal Circuit"
+				type: "item"
 			}]
 			title: "&9Universal Circuits"
 			x: 6.75d
@@ -1584,6 +1645,24 @@
 			title: "&9Extended Pattern Access Terminal"
 			x: 6.75d
 			y: 4.0d
+		}
+		{
+			dependencies: ["6F32A8739D8E792A"]
+			description: [
+				"The &6Molecular Assembler&r is the most flexible way to autocraft recipes that would otherwise be done in the &3Crafting Table&r, &3Stonecutter&r, or &3Smithing Table&r."
+				""
+				"Place one next to a &6Pattern Provider&r with a compatible &6Pattern&r and it will perform those recipe types when requested, no further configuration required."
+				""
+				"It can also craft recipes passively if supplied with a compatible &6Pattern&r and &aAE&r power."
+			]
+			id: "3C3E015DFA8FDECE"
+			tasks: [{
+				id: "1FE22A73493AA6D9"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
 		}
 	]
 	title: "Matter-Energy"

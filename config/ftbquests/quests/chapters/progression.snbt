@@ -1508,7 +1508,7 @@
 				""
 				"As you'll realize is the pattern, it is expensive and unwieldy to make the first forms of each tier of circuits. Fortunately, you don't have to make many of them."
 				""
-				"Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each tier through nine will have a circuit recipe instead of requiring processors, arrays, or mainframes."
+				"Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each circuit tier through Tier Nine will have a Processor recipe instead of requiring Processor Assemblies, Supercomputers, or Mainframes."
 			]
 			id: "6169C04DF463502F"
 			rewards: [{
@@ -1926,7 +1926,7 @@
 		{
 			dependencies: ["2DD1E2391DA3170C"]
 			description: [
-				"The first and most expensive Tier Six Circuit, needed for crafting the &3IV Assembling Machine&r."
+				"The first and most expensive Tier Six Circuit, needed for crafting the &3IV Circuit Assembler&r."
 				""
 				"Requires a bunch of standard circuit components."
 			]
@@ -2100,7 +2100,7 @@
 			description: [
 				"Now you can craft the &6Quantum Processor Mainframe&r, the first Tier Seven circuit."
 				""
-				"These are required for crafting the Ludicrous Voltage (LuV) &3Assembling Machine&r."
+				"These are required for crafting the Ludicrous Voltage (LuV) &3Circuit Assembler&r."
 			]
 			id: "521977C7165229F1"
 			rewards: [{
@@ -2278,7 +2278,7 @@
 				""
 				"Along with things you already know how to make, this needs &6HSS-E Frames&r."
 				""
-				"These are required for crafting the &3ZPM Circuit Assembling Machine&r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these."
+				"These are required for crafting the &3ZPM Circuit Assembler&r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these."
 			]
 			id: "115B96B2092D671E"
 			rewards: [{

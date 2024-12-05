@@ -835,13 +835,13 @@
 				"79EFCD8E01384C0C"
 			]
 			description: [
-				"&2Wetware- and Crystal-related processes require some stronger sterilization.&r"
+				"&2Wetware- and Crystal-related processes require a different kind of sterilization.&r"
 				""
 				"You will need to build another &3Cleanroom&r to run these recipes inside. Instead of &3Filter Casings&r, use &3Sterilizing Filter Casings&r in the top face."
 				""
 				"These casings are expensive! You'll need &3Fusion MK II&r to get the &6Tritanium&r."
 				""
-				"Note that a Sterile Cleanroom cannot handle recipes which require regular Cleanrooms."
+				"&eNote that a Sterile Cleanroom cannot handle recipes which require regular Cleanrooms.&r"
 			]
 			id: "04EABD3D2C72D2C5"
 			rewards: [{
@@ -856,7 +856,7 @@
 				item: "gtceu:sterilizing_filter_casing"
 				type: "item"
 			}]
-			title: "&2Cleaner Room"
+			title: "&2A Different Type of Clean"
 			x: 3.0d
 			y: 12.25d
 		}
@@ -2669,9 +2669,17 @@
 			description: [
 				"Interestingly enough, &eSculk itself functions great as a biobattery&r, being able to store and quickly release mass amounts of energy. The &3Sculk Charger&r should be able to get you started in taking advantage of it."
 				""
-				"[\"They are automated in the same way as Autocrafting tables, refer to \", {\"text\": \"this quest\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0DB8063A7972E1C0\" } },\" for how to automate it.\"]"
+				"[\"It is automated in a similar fashion to \", {\"text\": \"Auto Crafting Tables\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0DB8063A7972E1C0\" } },\".\"]"
 				""
-				"The charger and pylon themselves &ehave extreme throughput&r, so don't worry about having to wait for it to craft items."
+				"Every &3Sculk Charger&r comes with three recipe slots in the top-right corner. To configure a recipe, the crafting grid must be filled with the recipe you wish to automate, and then saved to the table by &8Shift-Left-Clicking&r one of those recipe slots."
+				"{@pagebreak}"
+				"Saved recipes must then be selected with a &8Left-Click&r to indicate that that recipe should be crafted. Only one recipe can be selected at a time."
+				""
+				"Lastly, place a regular &6Barrel&r atop the table. &eThe &3Sculk Charger&e cannot be inserted to, and can only pull items from an inventory&r."
+				""
+				"At this point you can put ingredients in the inventory and supply &aRF&r power to &eboth the &3Sculk Charger&e and a &3Sculk Pylon&e nearby&r to begin automated charging."
+				""
+				"The charger and pylon themselves have extreme energy throughput, so &ethe &3Sculk Charger&e can charge up to one &6Sculk Core&e per tick.&r"
 			]
 			icon: "extendedcrafting:auto_flux_crafter"
 			id: "7F75D961B102A72D"

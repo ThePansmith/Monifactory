@@ -2052,9 +2052,9 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"[\"\",{\"text\":\"This tab\",\"color\":\"dark_green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"395B849AC6294153\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"055C0B43FE14258F\",\"contents\":\"Click to go to the chapter\"}},{\"text\":\" was added to help you visualise and give you tips on making chemicals, among other important things to automate. Use it wisely!\",\"color\":\"dark_green\"}]"
+				"[\"\",{\"text\":\"This tab\",\"color\":\"dark_green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"055C0B43FE14258F\",\"contents\":\"Click to go to the chapter\"}},{\"text\":\" was added to help you visualise and give you tips on making chemicals, among other important things to automate. Use it wisely!\",\"color\":\"dark_green\"}]"
 				""
-				"Each quest in the tab will give you a description of the machine and the minimum voltage required to run the recipe. Furthermore, although each quest can be completed via a checkbox, all quests in a processing line will auto-complete once you get the item positioned on the right. Either the checkbox or achieving the product will complete the quests."
+				"Each quest in the tab will give you a description of the machine and the minimum voltage required to run the recipe."
 			]
 			disable_toast: true
 			hide_dependency_lines: true
