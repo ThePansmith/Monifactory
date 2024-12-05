@@ -2968,7 +2968,7 @@
 				"{@pagebreak}"
 				"A redstone signal is required for the reactor to start working. &cReactors can overheat and melt if their temperature exceeds their ability to cool.&r"
 				""
-				"You can make a safety loop on the controller to automatically shut off the reactor when it starts getting hot. Place a Comparator facing a &aRedstone Conduit&r's input, and a &aRedstone NOT Filter&r outputting the result towards the reactor."
+				"You can make a safety loop to automatically shut off the reactor when it starts getting hot. Place a &6Comparator&r with the input facing a Reactor Port, and direct the output of the Comparator into a NOT gate. Finally, route the output of the NOT gate into the &6Reactor Controller&r."
 				""
 				"[\"Info on what exactly you are going to be doing with your fancy new reactor can be found in the \",{\"text\":\"Fission and Fusion\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"40F7695BE1E65C41\"}},\" chapter.\"]"
 			]
