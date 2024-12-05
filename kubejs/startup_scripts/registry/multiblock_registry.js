@@ -113,7 +113,7 @@ if (!isNormalMode) {
     event.create('naquadah_refinery')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(6,2,4,2)
+        .setMaxIOSize(6,0,4,1)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
