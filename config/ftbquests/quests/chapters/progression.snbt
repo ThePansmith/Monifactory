@@ -1508,7 +1508,7 @@
 				""
 				"As you'll realize is the pattern, it is expensive and unwieldy to make the first forms of each tier of circuits. Fortunately, you don't have to make many of them."
 				""
-				"Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each tier through nine will have a circuit recipe instead of requiring processors, arrays, or mainframes."
+				"Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each circuit tier through Tier Nine will have a Processor recipe instead of requiring Processor Assemblies, Supercomputers, or Mainframes."
 			]
 			id: "6169C04DF463502F"
 			rewards: [{
