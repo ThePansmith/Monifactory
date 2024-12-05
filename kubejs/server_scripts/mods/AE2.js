@@ -727,6 +727,7 @@ ServerEvents.recipes(event => {
         .EUt(7)
     event.recipes.gtceu.assembler("kubejs:ae2/fluix_covered_cable_styrene_butadiene")
         .itemInputs("#ae2:glass_cable")
+        .inputFluids('gtceu:styrene_butadiene_rubber 36')
         .itemOutputs("ae2:fluix_covered_cable")
         .duration(100)
         .EUt(7)

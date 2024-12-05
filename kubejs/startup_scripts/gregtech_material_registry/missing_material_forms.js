@@ -51,9 +51,4 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Curium.setMaterialARGB(0x58307f)
     addFluid(GTMaterials.Ruridit, $FluidStorageKeys.LIQUID, 1515);
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID, 1337);
-
-    const missingGears = ['Electrum', 'Lead', 'Silver', 'Nickel', 'Ruby', 'Sapphire', 'Gold', 'Copper', 'Lapis', 'Emerald', 'NetherQuartz']
-    missingGears.forEach(missingGears => {
-        GTMaterials[missingGears].addFlags(GTMaterialFlags.GENERATE_GEAR)
-    })
 })

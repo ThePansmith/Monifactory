@@ -13,4 +13,6 @@ ServerEvents.recipes(event => {
             event.shaped(`gtceu:${volt}_output_bus`, [ '   ', ' T ', ' S ' ], {S: '#forge:chests/wooden', T: `gtceu:${volt}_machine_hull` })
             event.shaped(`gtceu:${volt}_input_hatch`, [' S ', ' T ', '   ' ], { S: '#forge:glass', T: `gtceu:${volt}_machine_hull` })
             event.shaped(`gtceu:${volt}_output_hatch`, [ '   ', ' T ', ' S ' ], { S: '#forge:glass', T: `gtceu:${volt}_machine_hull` })
-})}})
+        })
+    }
+})

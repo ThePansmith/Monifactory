@@ -7,11 +7,11 @@ const unifyChisel = (event) => {
     // regex here means
     // `^` = beginning, `$` = end, `.+` = anything that isnt whitespace, any length
 
-	const IRON_BLOCKLIKES = /^chipped:(?!.+_raw_).+_iron_block$/;
-	const GOLD_BLOCKLIKES = /^chipped:(?!.+_raw_).+_gold_block$/;
-	// event.add('forge:glass/colorless', /^chipped:.+_glass$/) // most of the glass here only have fancy trims, but they are all not dyed
+    const IRON_BLOCKLIKES = /^chipped:(?!.+_raw_).+_iron_block$/;
+    const GOLD_BLOCKLIKES = /^chipped:(?!.+_raw_).+_gold_block$/;
+    // event.add('forge:glass/colorless', /^chipped:.+_glass$/) // most of the glass here only have fancy trims, but they are all not dyed
     event.add('forge:cobblestone/normal', /^chipped:.+(?!_mossy)_cobblestone(_bricks)?$/)
-	event.add('forge:cobblestone/mossy', /^chipped:.+_mossy_cobblestone(_bricks)?$/)
+    event.add('forge:cobblestone/mossy', /^chipped:.+_mossy_cobblestone(_bricks)?$/)
     event.add('forge:cobblestone', /^chipped:.+_cobblestone(_bricks)?$/)
     event.add('forge:storage_blocks/glowstone', /^chipped:.+_glowstone$/)
     event.add('forge:storage_blocks/redstone', /^chipped:.+_redstone_block$/)
@@ -68,12 +68,14 @@ ServerEvents.tags('item', event => {
     // generic unification
     event.add('forge:dusts', ['kubejs:pulsating_dust'])
 
-	  // enderio!!!!
-	  event.add('forge:heads', 'enderio:enderman_head')
+    // enderio!!!!
+    event.add('forge:heads', 'enderio:enderman_head')
 
     event.add('forge:microminers', '/kubejs:microminer_t/')
     event.add('forge:microminers', '/kubejs:stabilized_microminer_t/')
 
+    // For stonecutting Marble
+    event.add('moni:marble', /^(gtceu:(marble|polished_marble|marble_bricks|cracked_marble_bricks|chiseled_marble|marble_tile|marble_small_tile|marble_windmill_a|marble_windmill_b|small_marble_bricks|square_marble_bricks))$/)
 
     unifyChisel(event);
 })
