@@ -1,23 +1,6 @@
 // Small Microverse Projector Recipes
 ServerEvents.recipes(event => {
 
-    if (isNormalMode) { // Normal mode-specific recipes
-        event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
-            .itemInputs(
-                'kubejs:microminer_t9',
-                '8x gtceu:neutron_reflector',
-                '4x gtceu:cryococcus_block',
-                'kubejs:stellar_creation_data'
-            )
-            .itemOutputs(
-                '64x gtceu:neutronium_ingot',
-                '64x gtceu:neutronium_ingot',
-                '32x gtceu:neutronium_ingot'
-            )
-            .duration(3000)
-            .EUt(250000)
-    }
-
     event.recipes.gtceu.basic_microverse('kubejs:t_one_first')
         .itemInputs('kubejs:microminer_t1', 'kubejs:ultra_dense_hydrogen')
         .itemOutputs('kubejs:stellar_creation_data')
@@ -167,7 +150,6 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(2000)
 })
-//ALL OF THE ABOVE IS DONE
 
 // Advanced Microverse Projector Recipes
 ServerEvents.recipes(event => {
@@ -182,13 +164,19 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(7500)
 
-
-    event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
+        event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', '4x kubejs:wither_realm_data', '64x kubejs:petrotheum_dust')
         .itemOutputs(
-            '64x gtceu:iridosmineyes_ore',
-            '64x gtceu:iridosmineyes_ore',
-            '16x gtceu:osmiridiumyes_ore')
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:platinum_group_sludge_dust',
+            '64x gtceu:rock_salt_dust',
+            '64x gtceu:rock_salt_dust'
+        )
         .duration(800)
         .EUt(3750)
 
@@ -456,6 +444,20 @@ ServerEvents.recipes(event => {
             '64x kubejs:stellar_creation_data'
         )
         .itemOutputs('kubejs:universe_creation_data')
+        .duration(3000)
+        .EUt(250000)
+
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
+        .itemInputs(
+            'kubejs:microminer_t9', 
+            '8x gtceu:neutron_reflector', 
+            '4x gtceu:cryococcus_block', 
+            'kubejs:stellar_creation_data'
+        )
+        .itemOutputs(
+            '64x gtceu:neutronium_ingot',
+            '32x gtceu:neutronium_ingot'
+        )
         .duration(3000)
         .EUt(250000)
 

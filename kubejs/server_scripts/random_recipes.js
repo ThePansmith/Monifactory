@@ -292,21 +292,6 @@ ServerEvents.recipes(event => {
     }
     ).id('gtceu:shaped/casing_assembly_line')
 
-    // Mixer naquadah enrichment
-    event.recipes.gtceu.mixer("mixer_enriched_naquadah")
-        .itemInputs("2x gtceu:naquadah_dust", "4x enderio:grains_of_infinity", "kubejs:grains_of_innocence", "enderio:pulsating_powder")
-        .inputFluids("gtceu:pulsating_alloy 576", "gtceu:neptunium 144")
-        .itemOutputs("gtceu:enriched_naquadah_dust")
-        .duration(400)
-        .EUt(8000)
-
-    event.recipes.gtceu.mixer("mixer_naquadria")
-        .itemInputs("2x gtceu:naquadah_dust", "enderio:prescient_powder", "4x enderio:vibrant_powder", "enderio:ender_crystal_powder")
-        .inputFluids("gtceu:enderium 576", "gtceu:curium 144")
-        .itemOutputs("gtceu:naquadria_dust")
-        .duration(400)
-        .EUt(30000)
-
     //Netherstar Crafting
     event.shaped('kubejs:nether_star_south', [
         "ADA",
@@ -751,6 +736,15 @@ ServerEvents.recipes(event => {
     .outputFluids('gtceu:americium 1')
     .duration(320)
     .EUt(-2048)
+
+    // Neutronium Buff
+    event.remove({ id: "gtceu:fusion_reactor/americium_and_naquadria_to_neutronium_plasma" })
+    event.recipes.gtceu.fusion_reactor('neutronium_buffed')
+    .inputFluids('gtceu:americium 128', 'gtceu:naquadah 128')
+    .outputFluids('gtceu:neutronium 32')
+    .duration(130)
+    .EUt(98304)
+    .fusionStartEU(600000000)
 
     //Resonant Clathrate
     event.recipes.gtceu.chemical_reactor('resonant_clathrate')
