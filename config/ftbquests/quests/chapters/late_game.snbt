@@ -179,14 +179,6 @@
 			y: 8.25d
 		}
 		{
-			id: "26C607D68B1B1404"
-			linked_quest: "1C1B1E1BBFA079F5"
-			shape: "hexagon"
-			size: 1.5d
-			x: 1.5d
-			y: 8.75d
-		}
-		{
 			id: "69230B4A261BC806"
 			linked_quest: "53EC3831D66769CA"
 			shape: "hexagon"
@@ -309,7 +301,7 @@
 				""
 				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Petrotheum Dust&r."
 				""
-				"This miner is the first convenient source of &6Osmium&r and &6Iridium&r, via a mission requiring &6Wither Realm Data&r."
+				"This miner is the first convenient source of &6Sheldonite&r, the best choice for creating &6Platinum Group Sludge&r, via a mission requiring &6Wither Realm Data&r."
 				""
 				"A &6Composition Sensor&r instead directs the miner to obtain &6Dense Oilsands Ore&r, equivalent to &232&r stacks of &6End Oilsands Ore&r, and 32 &6Compressed Infinity Dust Blocks&r, equivalent to 2592 &6Infinity Dust&r."
 				""
@@ -626,7 +618,7 @@
 		{
 			dependencies: [
 				"6DC635766CD40FFF"
-				"1C1B1E1BBFA079F5"
+				"044553423097C3C7"
 			]
 			description: [
 				"Coming into &9Ludicrous Voltage&r, many new advanced materials will be required to craft items and components. Most of these materials require &6RTM Alloy Coils&r."
@@ -780,10 +772,7 @@
 			y: 18.25d
 		}
 		{
-			dependencies: [
-				"15DBB22E3DC0AFB7"
-				"1C1B1E1BBFA079F5"
-			]
+			dependencies: ["044553423097C3C7"]
 			description: [
 				"&6Iridium&r is an advanced material used for Micro Miners, and for alloying with &6Osmium&r into &6Osmiridium&r."
 				""
@@ -2857,6 +2846,45 @@
 			title: "&9Quintessence Infuser"
 			x: 27.75d
 			y: 19.875d
+		}
+		{
+			dependencies: [
+				"595F205B551A53C9"
+				"15DBB22E3DC0AFB7"
+			]
+			description: [
+				"&2A rudimentary version of Platinum Group Sludge (PGS) processing existed in the base pack. Here, it is a strong source of the Platinum Group Metals - Ruthenium, Rhodium, Palladium, Osmium, Iridium, and Platinum - as well as Gold. All of these elements will be used in IV-tier and above materials."
+				""
+				"&rYou will need to treat certain ores with &9Nitric Acid&r to yield &6PGS&r - &6Sheldonite&r is the best. Then, using an &3HV+ Centrifuge&r and &9Aqua Regia&r, break it down into the PGS salts, and reduce those salts to the metals."
+				""
+				"&9This is not optional - Platinum Group sludge processing is necessary to get your first &6Iridium&9 and &6Osmium&9.&r However, you can get &6Ruthenium&r and &6Rhodium&r from &6Laurite&r and &6Cuprorhodsite&r in the Microverse before then."
+			]
+			icon: "gtceu:platinum_dust"
+			id: "044553423097C3C7"
+			rewards: [{
+				count: 2
+				id: "400B871C9C2B5830"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
+			tasks: [
+				{
+					id: "1CA9B9FE385B774C"
+					item: "gtceu:ruthenium_dust"
+					type: "item"
+				}
+				{
+					id: "18237021D2F3D527"
+					item: "gtceu:rhodium_dust"
+					type: "item"
+				}
+			]
+			title: "&2Platinum Group Processing"
+			x: 1.5d
+			y: 3.0d
 		}
 	]
 	title: "Late Game"

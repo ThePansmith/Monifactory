@@ -737,6 +737,15 @@ ServerEvents.recipes(event => {
     .duration(320)
     .EUt(-2048)
 
+    // Neutronium Buff
+    event.remove({ id: "gtceu:fusion_reactor/americium_and_naquadria_to_neutronium_plasma" })
+    event.recipes.gtceu.fusion_reactor('neutronium_buffed')
+    .inputFluids('gtceu:americium 128', 'gtceu:naquadah 128')
+    .outputFluids('gtceu:neutronium 32')
+    .duration(130)
+    .EUt(98304)
+    .fusionStartEU(600000000)
+
     //Resonant Clathrate
     event.recipes.gtceu.chemical_reactor('resonant_clathrate')
     .itemInputs('minecraft:quartz')
