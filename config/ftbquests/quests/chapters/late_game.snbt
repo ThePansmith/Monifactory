@@ -2515,7 +2515,7 @@
 				""
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
-			icon: "gtceu:naquadah_reactor_i"
+			icon: "gtceu:naquadah_reactor"
 			id: "425D1C34A82B054D"
 			rewards: [{
 				id: "01C277FEA61EBA19"
@@ -2525,7 +2525,7 @@
 			tasks: [
 				{
 					id: "7890B705137B8EA5"
-					item: "gtceu:naquadah_reactor_i"
+					item: "gtceu:naquadah_reactor"
 					type: "item"
 				}
 				{
@@ -2566,53 +2566,6 @@
 			title: "&9 Naquadah Reactor"
 			x: 20.5d
 			y: 15.25d
-		}
-		{
-			description: [
-				"The &3Naquadah Reactor II&r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the MK I. The materials it requires are similar to the MK I, and you can almost reuse the same structure. Make sure you are prepared for the UV power output by adding a &6UV Energy Output Hatch&r."
-				""
-				"This is a pretty expensive structure though, as it needs a block of &9Omnium&r."
-			]
-			icon: "gtceu:large_naquadah_reactor"
-			id: "2E8AFA6B42E939B4"
-			rewards: [{
-				id: "08A490626FF2A96E"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "134557DDF5E22B0B"
-					item: "gtceu:large_naquadah_reactor"
-					type: "item"
-				}
-				{
-					id: "5B267E479790306D"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:storage_blocks/omnium"
-						}
-					}
-					title: "Omnium Block"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "3405F2EC601908BB"
-					item: "gtceu:ruthenium_trinium_americium_neutronate_block"
-					type: "item"
-				}
-				{
-					id: "3B162FA985E74B6A"
-					item: "gtceu:uv_energy_output_hatch"
-					type: "item"
-				}
-			]
-			title: "Naquadah Reactor II"
-			x: 13.0d
-			y: 24.0d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
