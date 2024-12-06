@@ -561,7 +561,7 @@
 				}
 				{
 					id: "37B26D17B2B13DDE"
-					item: "redstone_clock:redstone_clock"
+					item: "redstoneclock:redstone_clock"
 					type: "item"
 				}
 				{
