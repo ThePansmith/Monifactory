@@ -46,6 +46,9 @@ global.manualUnification = [
     'extendedcrafting:the_ultimate_nugget',
     'extendedcrafting:the_ultimate_ingot',
     'extendedcrafting:the_ultimate_block',
+    'thermal:sawdust',
+    'thermal:sawdust_block',
+    'extendedcrafting:nether_star_block',
 ];
 global.UnificationExcludedItems = [
     'nuclearcraft:hard_carbon_ingot',

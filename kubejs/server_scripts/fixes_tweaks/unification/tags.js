@@ -109,6 +109,9 @@ ServerEvents.tags('fluid', event => {
     event.removeAllTagsFrom('thermal:creosote')
     event.removeAllTagsFrom('thermal:experience')
     event.removeAllTagsFrom('sophisticatedcore:xp_still')
+    event.removeAllTagsFrom('thermal:glowstone')
+    event.removeAllTagsFrom('thermal:redstone')
+    event.removeAllTagsFrom('cofh_core:experience')
 })
 
 // Unification regexes are definited in startup script _initial.js
