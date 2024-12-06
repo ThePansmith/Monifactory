@@ -91,7 +91,8 @@ ServerEvents.recipes(event => {
         .itemOutputs(
             '10x kubejs:solidified_neon',
             '10x kubejs:solidified_krypton',
-            '10x kubejs:solidified_xenon')
+            '10x kubejs:solidified_xenon'
+        )
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 12000))
         .duration(700)
         .EUt(2000)
@@ -215,6 +216,14 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(3750)
 
+        event.recipes.gtceu.advanced_microverse('kubejs:t_four_forth')
+        .itemInputs('kubejs:microminer_t4', '4x kubejs:quantum_flux', '64x kubejs:solidified_chlorine', '64x kubejs:petrotheum_dust')
+        .itemOutputs(
+            '64x kubejs:solidified_bromine'
+        )
+        .duration(600)
+        .EUt(2000)
+
     if (isNormalMode) {
         event.recipes.gtceu.advanced_microverse('kubejs:t_five_first')
             .itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
@@ -228,7 +237,7 @@ ServerEvents.recipes(event => {
             )
             .duration(1000)
             .EUt(7500)
-    } else  {
+    } else {
         event.recipes.gtceu.advanced_microverse('kubejs:t_five_first')
             .itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
             .itemOutputs(
@@ -322,7 +331,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:uhv_electric_pump',
             '16x kubejs:stabilized_americium',
             '16x kubejs:quantum_flux',
-            '16x kubejs:shattered_star_data', )
+            '16x kubejs:shattered_star_data',)
         .itemOutputs('32x kubejs:stabilized_oganesson')
         .duration(900)
         .EUt(180000)
@@ -573,13 +582,13 @@ ServerEvents.recipes(event => {
         .EUt(2000000)
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_ten_third')
-        .itemInputs('kubejs:microminer_t10', '64x kubejs:singularity_containment_unit', 'kubejs:shattered_universe_data', ) // could be increased
+        .itemInputs('kubejs:microminer_t10', '64x kubejs:singularity_containment_unit', 'kubejs:shattered_universe_data',) // could be increased
         .itemOutputs('64x kubejs:contained_singularity')
         .duration(400)
         .EUt(2000000)
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_first')
-        .itemInputs('kubejs:microminer_t11', 'kubejs:infinity_catalyst', 'kubejs:shattered_universe_data', )
+        .itemInputs('kubejs:microminer_t11', 'kubejs:infinity_catalyst', 'kubejs:shattered_universe_data',)
         .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
         .duration(600)
         .EUt(2000000)
@@ -591,7 +600,7 @@ ServerEvents.recipes(event => {
         .EUt(180000)
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_second')
-        .itemInputs('kubejs:microminer_t11','4x gtceu:max_battery', '2x solarflux:sp_custom_infinity', 'gtceu:uiv_4096a_laser_source_hatch','4x kubejs:universe_creation_data',  '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data') // could be increased
+        .itemInputs('kubejs:microminer_t11', '4x gtceu:max_battery', '2x solarflux:sp_custom_infinity', 'gtceu:uiv_4096a_laser_source_hatch', '4x kubejs:universe_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data', '64x kubejs:stellar_creation_data') // could be increased
         .itemOutputs('kubejs:creative_energy_data')
         .duration(1200)
         .EUt(8000000)
@@ -642,13 +651,13 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         '2x kubejs:microverse_casing', [
-            'PPP',
-            'PWP',
-            'PPP'
-        ], {
-            P: 'gtceu:microversium_plate',
-            W: '#forge:tools/wrenches'
-        }).id('kubejs:shapeless/microverse_casing')
+        'PPP',
+        'PWP',
+        'PPP'
+    ], {
+        P: 'gtceu:microversium_plate',
+        W: '#forge:tools/wrenches'
+    }).id('kubejs:shapeless/microverse_casing')
     event.recipes.gtceu.assembler("kubejs:microverse_casing")
         .itemInputs("4x gtceu:microversium_plate")
         .itemOutputs("kubejs:microverse_casing")
@@ -665,32 +674,32 @@ ServerEvents.recipes(event => {
     projector.forEach(projector => {
         event.shaped(
             `gtceu:${projector[0]}`, [
-                'CMC',
-                'MAM',
-                'CMC'
-            ], {
-                C: projector[1],
-                M: 'kubejs:microverse_casing',
-                A: 'gtceu:computer_monitor_cover'
-            }
+            'CMC',
+            'MAM',
+            'CMC'
+        ], {
+            C: projector[1],
+            M: 'kubejs:microverse_casing',
+            A: 'gtceu:computer_monitor_cover'
+        }
         ).id(`kubejs:${projector[0]}`)
     })
 
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:hyperbolic_microverse_projector', [
-            'EPFPE',
-            'PALAP',
-            'FLRLF',
-            'PALAP',
-            'EPFPE'
-        ], {
-            E: 'gtceu:uv_field_generator',
-            P: 'gtceu:double_microversium_plate',
-            F: 'gtceu:uhv_emitter',
-            L: 'kubejs:microverse_casing',
-            A: '#gtceu:circuits/uev',
-            R: 'gtceu:computer_monitor_cover'
-        }
+        'EPFPE',
+        'PALAP',
+        'FLRLF',
+        'PALAP',
+        'EPFPE'
+    ], {
+        E: 'gtceu:uv_field_generator',
+        P: 'gtceu:double_microversium_plate',
+        F: 'gtceu:uhv_emitter',
+        L: 'kubejs:microverse_casing',
+        A: '#gtceu:circuits/uev',
+        R: 'gtceu:computer_monitor_cover'
+    }
     ).id('kubejs:shaped/hyperbolic_microverse_projector')
 
 })

@@ -321,6 +321,8 @@
 				"* Dense Redstone Ore&r"
 				""
 				"Eventually, when you unlock the &aHyperbolic Microverse Projector&r, you can also use it to gain a massive amount of &bStellar Creation Data&r at once."
+				""
+				"This microminer can also return &9Solidifed Bromine&r."
 			]
 			id: "15DBB22E3DC0AFB7"
 			rewards: [{
@@ -335,7 +337,7 @@
 				item: "kubejs:microminer_t4"
 				type: "item"
 			}]
-			title: "Tier Four Micro Miner"
+			title: "&9Tier Four Micro Miner"
 			x: 3.0d
 			y: 1.0d
 		}
