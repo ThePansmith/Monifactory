@@ -458,9 +458,22 @@
 				id: "1FE9B2CBA70D22B9"
 				item: {
 					Count: 1
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					tag: {
-						value: "expatternprovider:extended_pattern_provider"
+						items: [
+							{
+								Count: 1b
+								id: "expatternprovider:ex_pattern_provider_part"
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:ex_pattern_provider"
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:pattern_provider_upgrade"
+							}
+						]
 					}
 				}
 				title: "Any Extended Pattern Provider"
@@ -1165,7 +1178,7 @@
 				""
 				"Check out the &9&lin-game guide&r&r or &eG&r on the item for specifics on how to get this set up."
 				""
-				"Note that Monifactory adds a crafting recipe for Flawless Budding Certus Quartz — check EMI for details!"
+				"With enough power, you can even create your own &6Flawless Budding Certus Quartz&r, which works without ever decaying!"
 			]
 			icon: "ae2:flawless_budding_quartz"
 			id: "62356B88D5366D33"
@@ -1261,9 +1274,22 @@
 				id: "53C8B8B483EF6121"
 				item: {
 					Count: 1
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					tag: {
-						value: "expatternprovider:extended_interface"
+						items: [
+							{
+								Count: 1b
+								id: "expatternprovider:ex_interface"
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:ex_interface_part"
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:interface_upgrade"
+							}
+						]
 					}
 				}
 				title: "Any Extended Interface"
@@ -1342,6 +1368,7 @@
 		{
 			dependencies: ["52837FD72580F141"]
 			description: ["The &aME Extended Drive&r can store up to 20 Storage Disks."]
+			icon: "expatternprovider:ex_drive"
 			id: "58F73E3D1069F52C"
 			rewards: [{
 				count: 2
@@ -1351,8 +1378,24 @@
 			}]
 			subtitle: "Dense Storage"
 			tasks: [{
-				id: "6553F798A482EEDE"
-				item: "expatternprovider:ex_drive"
+				id: "2DE418578F762ADE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "expatternprovider:ex_drive"
+							}
+							{
+								Count: 1b
+								id: "expatternprovider:drive_upgrade"
+							}
+						]
+					}
+				}
+				title: "Any ME Extended Drive"
 				type: "item"
 			}]
 			title: "&9ME Extended Drive"
@@ -1523,6 +1566,24 @@
 			title: "&9ME Packing Tape"
 			x: 6.75d
 			y: 5.5d
+		}
+		{
+			dependencies: ["2E079747A46D48CF"]
+			description: ["This works like the pattern access terminal, but can also &9search for patterns&r, and &9highlight interfaces in world&r."]
+			id: "2341171A4123D584"
+			rewards: [{
+				id: "28AC866654AE9C02"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BD68985130DD924"
+				item: "expatternprovider:ex_pattern_access_part"
+				type: "item"
+			}]
+			title: "&9Extended Pattern Access Terminal"
+			x: 6.75d
+			y: 4.0d
 		}
 	]
 	title: "Matter-Energy"

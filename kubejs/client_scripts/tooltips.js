@@ -68,7 +68,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('thermal:device_rock_gen', Text.translatable('thermal.device_rock_gen.tooltip'))
     tooltip.add('thermal:device_water_gen', Text.translatable('thermal.device_water_gen.tooltip'))
 
-    tooltip.add(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_4', 'thermal:upgrade_augment_3', 'thermal:dynamo_output_augment'], Text.translatable('§athermal.emi.tooltip.'))
+    tooltip.add(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_4', 'thermal:upgrade_augment_3', 'thermal:dynamo_output_augment'], Text.translatable('thermal.emi.tooltip'))
 
     // Circuits
     tooltip.addAdvanced(`kubejs:matter_processor_mainframe`, (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uev_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000))) })
@@ -99,21 +99,17 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.multiblock.advanced_microverse_projector_ii.description'))
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.multiblock.subatomic_digital_assembler.description'))
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.multiblock.actualization_chamber.description'))
+    tooltip.add('gtceu:large_naquadah_reactor', Text.translatable('gtceu.multiblock.large_naquadah_reactor.description'))
+    tooltip.add('gtceu:naquadah_refinery', Text.translatable('gtceu.multiblock.naquadah_refinery.description'))
 
     //Singleblocks
     tooltip.addAdvanced([`gtceu:lv_atomic_reconstructor`, `gtceu:mv_atomic_reconstructor`, `gtceu:hv_atomic_reconstructor`, `gtceu:ev_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.lvev_atomic_reconstructor.desc'))) })
     tooltip.addAdvanced([`gtceu:iv_atomic_reconstructor`, `gtceu:luv_atomic_reconstructor`, `gtceu:zpm_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.ivzpm_atomic_reconstructor.desc'))) })
     tooltip.addAdvanced([`gtceu:uv_atomic_reconstructor`, `gtceu:uhv_atomic_reconstructor`, `gtceu:uev_atomic_reconstructor`, `gtceu:uiv_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.uvuiv_atomic_reconstructor.desc'))) })
 
-    tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
-        text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
+    tooltip.addAdvanced('gtceu:naquadah_reactor', (item, adv, text) => {
+        text.add(1, Text.gray('An reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
         text.add(2, [Text.white('Produces exactly 3 amps of '), Text.red('ZPM'), Text.white('.')])
-        text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
-    })
-
-    tooltip.addAdvanced('gtceu:naquadah_reactor_ii', (item, adv, text) => {
-        text.add(1, Text.gray('An elite reactor capable of capturing more energy from the decay of Enriched Naquadah and Naquadria bolt'))
-        text.add(2, [Text.white('Produces exactly 3 amps of '), Text.translatable('\u00a73UV'), Text.white('.')])
         text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
@@ -258,6 +254,7 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('chipped.workbenches.tooltip.1'))
         text.add(2, Text.translatable('chipped.workbenches.tooltip.2'))
     })
+    tooltip.add('chisel_chipped_integration:drill', Text.translatable('chipped.drill.tooltip'))
 
     // Note about PEX crafter speed
     tooltip.add([

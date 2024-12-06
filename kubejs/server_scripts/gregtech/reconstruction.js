@@ -23,6 +23,8 @@ ServerEvents.recipes(event => {
         ['gtceu:obsidian_dust', 'enderio:grains_of_infinity', 32, 'temp_grains'],
         ['minecraft:poppy', 'minecraft:red_mushroom', 32, 'red_mushroom'],
         ['minecraft:dried_kelp', 'minecraft:wither_rose', 32, 'wither_rose'],
+        ['gtceu:plant_ball', 'minecraft:kelp', 32, 'kelp'],
+        ['minecraft:obsidian', 'minecraft:crying_obsidian', 32, 'crying_obsidian'],
         ['#forge:dyes/black', 'minecraft:ink_sac', 32, 'ink_sac'],
         ['minecraft:ink_sac', 'minecraft:glow_ink_sac', 32, 'glow_ink_sac']
     ]

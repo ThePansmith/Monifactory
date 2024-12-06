@@ -18,13 +18,12 @@ JEIEvents.hideItems(event => {
     event.hide(/^sophisticatedstorage:.*iron.*tier_upgrade$/)
     
 }
+    if (isHardMode) {
+        event.hide(/hostilenetworks/)
+        event.hide("watercollector:watercollector")
+    }
 
-        if (isHardMode) {
-event.hide(/hostilenetworks/)
-event.hide("watercollector:watercollector")
-}
-
-if (isExpertMode) {
-    event.hide(/gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter/)
+    if (isExpertMode) {
+        event.hide(/gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter/)
     }
 })

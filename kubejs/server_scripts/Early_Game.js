@@ -85,7 +85,6 @@ ServerEvents.recipes(event => {
         .itemInputs('#minecraft:planks', '4x gtceu:copper_foil')
         .inputFluids('gtceu:glue 100')
         .itemOutputs('gtceu:resin_printed_circuit_board')
-        .circuit(2)
         .duration(200)
         .EUt(7)
 

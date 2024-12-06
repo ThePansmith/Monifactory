@@ -96,11 +96,8 @@
   "gtceu.advanced_microverse_iii": "高级微型宇宙投影仪 III",
   "gtceu.multiblock.hyperbolic_microverse_projector.description": "§7一种能够同时稳定投影进入数百个微型宇宙中的史诗机器。\n可执行所有类型的微型宇宙任务。",
 
-  "block.gtceu.naquadah_reactor_i": "硅岩反应堆 I",
-  "gtceu.naquadah_reactor_i": "硅岩反应堆 I",
-
-  "block.gtceu.naquadah_reactor_ii": "硅岩反应堆 II",
-  "gtceu.naquadah_reactor_ii": "硅岩反应堆 II",
+  "block.gtceu.naquadah_reactor": "硅岩反应堆",
+  "gtceu.naquadah_reactor": "硅岩反应堆",
 
   "block.gtceu.matter_alterator": "物质转变器",
   "gtceu.atomic_reconstruction": "原子重构",

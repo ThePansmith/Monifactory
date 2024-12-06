@@ -275,19 +275,21 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.shaped(
-        'systeams:steam_dynamo', [
-            ' A ',
-            'BCB',
-            'DED'
-        ], {
-            A: 'kubejs:excitationcoil',
-            B: 'gtceu:copper_plate',
-            C: 'ironfurnaces:iron_furnace',
-            D: 'gtceu:wrought_iron_gear',
-            E: 'systeams:boiler_pipe'
-        }
-    )
+    if(!isExpertMode) {
+        event.shaped(
+            'systeams:steam_dynamo', [
+                ' A ',
+                'BCB',
+                'DED'
+            ], {
+                A: 'kubejs:excitationcoil',
+                B: 'gtceu:copper_plate',
+                C: 'ironfurnaces:iron_furnace',
+                D: 'gtceu:wrought_iron_gear',
+                E: 'systeams:boiler_pipe'
+            }
+        )
+    }
 
     event.shaped(
         'thermal:dynamo_magmatic', [

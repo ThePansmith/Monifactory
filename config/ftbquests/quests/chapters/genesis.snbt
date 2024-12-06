@@ -153,6 +153,32 @@
 					type: "item"
 				}
 				{
+					id: "651C872D23C1E650"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_spade"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 2303
+								ToolSpeed: 6.4f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
 					auto: "invisible"
 					icon: "enderio:cake_base"
 					id: "392C56C1DA9D7978"
@@ -345,7 +371,7 @@
 			description: [
 				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at your base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
-				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 2 barrels worth of items at it's lowest tier, costing only a bit of bronze and lead to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
+				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 3 barrels worth of items at it's lowest tier, costing only a bit of steel and invar to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{

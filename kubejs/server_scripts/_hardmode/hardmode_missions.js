@@ -12,19 +12,19 @@ ServerEvents.recipes(event => {
 
     //Manual fix for half tier miners
     if (isHardMode) {
-    event.recipes.gtceu.assembly_line(`stable_t4half`)
-        .itemInputs(`kubejs:microminer_t4half`, 'kubejs:heart_of_a_universe', '4x kubejs:hadal_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
-        .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
-        .itemOutputs(`kubejs:stabilized_microminer_t4half`)
-        .duration(125)
-        .EUt(1966080)
+        event.recipes.gtceu.assembly_line(`stable_t4half`)
+            .itemInputs(`kubejs:microminer_t4half`, 'kubejs:heart_of_a_universe', '4x kubejs:hadal_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
+            .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
+            .itemOutputs(`kubejs:stabilized_microminer_t4half`)
+            .duration(125)
+            .EUt(1966080)
 
-    event.recipes.gtceu.assembly_line(`stable_t8half`)
-        .itemInputs(`kubejs:microminer_t8half`, 'kubejs:heart_of_a_universe', '4x kubejs:hadal_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
-        .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
-        .itemOutputs(`kubejs:stabilized_microminer_t8half`)
-        .duration(125)
-        .EUt(1966080)
+        event.recipes.gtceu.assembly_line(`stable_t8half`)
+            .itemInputs(`kubejs:microminer_t8half`, 'kubejs:heart_of_a_universe', '4x kubejs:hadal_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
+            .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
+            .itemOutputs(`kubejs:stabilized_microminer_t8half`)
+            .duration(125)
+            .EUt(1966080)
     }
 
     // Pristine matter recipe
@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
             )
             .duration(100*20)
             .EUt(30720)
-        
+
         //Initial Sculk Catalyst Mission
 
         event.recipes.gtceu.advanced_microverse_ii('t6_five_hm')
@@ -315,19 +315,19 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
         .itemInputs(
-            'kubejs:microminer_t9', 
-            '8x gtceu:neutron_reflector', 
-            '4x gtceu:cryococcus_block', 
+            'kubejs:microminer_t9',
+            '8x gtceu:neutron_reflector',
+            '4x gtceu:cryococcus_block',
             'kubejs:stellar_creation_data'
         )
         .itemOutputs(
-            '64x gtceu:neutronium_nugget', 
             '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget', 
             '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget', 
             '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget', 
+            '64x gtceu:neutronium_nugget',
+            '64x gtceu:neutronium_nugget',
+            '64x gtceu:neutronium_nugget',
+            '64x gtceu:neutronium_nugget',
             '64x gtceu:neutronium_nugget',
             '64x gtceu:neutronium_nugget'
         )

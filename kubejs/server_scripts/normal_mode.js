@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
             R: "gtceu:sticky_resin"
         }
         )
-        
+
         // Compressor rubber - better, but not perfect - that's chemical reactor rubber
         event.recipes.gtceu.compressor("compressor_rubber_sheet")
             .itemInputs("gtceu:sticky_resin")
@@ -170,34 +170,33 @@ ServerEvents.recipes(event => {
             event.remove({ output: ['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine] })
         })
 
-    event.shaped(
-        'thermal:dynamo_numismatic', [
-        ' A ',
-        'BCB',
-        'DED'
-    ], {
-        A: 'kubejs:excitationcoil',
-        B: 'gtceu:vibrant_alloy_plate',
-        C: 'ironfurnaces:diamond_furnace',
-        D: 'enderio:vibrant_gear',
-        E: 'kubejs:redstone_transmission_coil'
-    }
-    )
-    
-    event.remove({ output: 'gtceu:lv_item_magnet'})
-    event.shaped(
-        Item.of('gtceu:lv_item_magnet', '{Charge:120000L}'), 
-        [
-            'R R',
-            'R R',
-            'CPC'
+        event.shaped(
+            'thermal:dynamo_numismatic', [
+            ' A ',
+            'BCB',
+            'DED'
         ], {
-            C: 'gtceu:tin_single_cable',
-            R: 'gtceu:magnetic_iron_rod',
-            P: 'gtceu:iron_plate'
+            A: 'kubejs:excitationcoil',
+            B: 'gtceu:vibrant_alloy_plate',
+            C: 'ironfurnaces:diamond_furnace',
+            D: 'enderio:vibrant_gear',
+            E: 'kubejs:redstone_transmission_coil'
         }
-    )
-}
+        )
 
+        event.remove({ output: 'gtceu:lv_item_magnet'})
+        event.shaped(
+            Item.of('gtceu:lv_item_magnet', '{Charge:120000L}'),
+            [
+                'R R',
+                'R R',
+                'CPC'
+            ], {
+                C: 'gtceu:tin_single_cable',
+                R: 'gtceu:magnetic_iron_rod',
+                P: 'gtceu:iron_plate'
+            }
+        )
+    }
 
 })

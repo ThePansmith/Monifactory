@@ -2,7 +2,7 @@
   {
     "group": "thorium",
     "name": "tbu",
-    "forge_energy": 120,
+    "forge_energy": 4800,
     "heat": 18,
     "criticality": 234,
     "depletion": 720,

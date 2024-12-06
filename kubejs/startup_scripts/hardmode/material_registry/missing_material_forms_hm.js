@@ -12,4 +12,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     GTMaterials.Berkelium.addFlags(GTMaterialFlags.GENERATE_FRAME)
+    addFluid(GTMaterials.Oganesson, $FluidStorageKeys.GAS, 7777);
+    GTMaterials.Oganesson.setMaterialARGB(0x443936)
 })

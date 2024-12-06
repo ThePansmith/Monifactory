@@ -157,6 +157,25 @@
   "item.kubejs.inert_netherite_scrap": "Inert Netherite Scrap",
   "item.kubejs.inert_nether_compound_ingot": "Inert Nether Compound Ingot",
 
+  "item.kubejs.empty_fuel_rod": "Empty Fuel Rod",
+  "item.kubejs.naquadah_fuel_pellet": "Naquadah Fuel Pellet",
+  "item.kubejs.naquadah_fuel_rod": "Naquadah Fuel Rod",
+  "item.kubejs.hot_depleted_naquadah_fuel_rod": "Hot Depleted Naquadah Fuel Rod",
+  "item.kubejs.depleted_naquadah_fuel_rod": "Depleted Naquadah Fuel Rod",
+  "item.kubejs.unsintered_naquadah_fuel_pellet": "Unsintered Naquadah Fuel Pellet",
+  "item.kubejs.depleted_naquadah_fuel_pellet": "Depleted Naquadah Fuel Pellet",
+  "item.kubejs.naquadah_fuel_dust": "Naquadah Fuel Dust",
+  "item.kubejs.raw_naquadah_fuel_dust": "Raw Naquadah Fuel Dust",
+  "item.kubejs.nuclear_waste": "Nuclear Waste",
+  "item.kubejs.inactivated_naquadah_fuel_dust": "Inactivated Naquadah Fuel Dust",
+  "item.kubejs.pellet_extruder_mold": "Extruder Mold (Pellet)",
+  "item.kubejs.depleted_naquadah_fuel_dust": "Depleted Naquadah Fuel Dust",
+  "item.kubejs.crude_naquadah_fuel_blend": "Crude Naquadah Fuel Blend",
+  "item.kubejs.hot_naquadah_fuel_crystal": "Hot Naquadah Fuel Crystal",
+  "item.kubejs.naquadah_fuel_crystal": "Naquadah Fuel Crystal",
+  "item.kubejs.naquadah_fuel_mixture_dust": "Naquadah Fuel Mixture Dust",
+
+
   "item.kubejs.complex_smd_transistor": "Complex SMD Transistor",
   "item.kubejs.complex_smd_resistor": "Complex SMD Resistor",
   "item.kubejs.complex_smd_capacitor": "Complex SMD Capacitor",
@@ -409,7 +428,7 @@
   "kubejs.meowni_plush.tooltip.hardmode.1": "§9Requires nearly all the coins that you can possibly gather.",
   "kubejs.meowni_plush.tooltip.hardmode.2": "§9Exclusive to Hardmode and Expertmode players.",
 
-  "ftbquests.book.tooltip": "The quest window can also be opened with a keybind.",
+  "ftbquests.book.tooltip": "The quest window can also be opened with [`].",
 
   "redstoneclock.redstone_clock.tooltip": "§7Needs a redstone signal on a dotted side to work.",
 
@@ -481,6 +500,7 @@
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
   "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",
+  "chipped.drill.tooltip": "Unbound by default!",
   "packagedexcrafting.crafterspeed.tooltip": "§7Slower than autotables, but can support up to 20 recipes at once.",
 
   "tempad.tempad.tooltip": "§6Uses Monipennies as fuel"

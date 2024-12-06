@@ -99,11 +99,18 @@
   "gtceu.advanced_microverse_iii": "Hyperbolic Microverse Projector",
   "gtceu.multiblock.hyperbolic_microverse_projector.description": "§7An epic machine capable of stabilizing projection into hundreds of microverses at once.\nCan perform all Microverse Missions.",
 
-  "block.gtceu.naquadah_reactor_i": "Naquadah Reactor I",
-  "gtceu.naquadah_reactor_i": "Naquadah Reactor I",
+  "block.gtceu.naquadah_reactor": "Naquadah Reactor",
+  "gtceu.naquadah_reactor": "Naquadah Reactor",
 
-  "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
-  "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
+  "block.gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
+  "gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
+  "gtceu.multiblock.large_naquadah_reactor.description": "§7A highly advanced multiblock capable of generating massive amounts of energy from Naquadaric Decay.",
+
+
+  "block.gtceu.naquadah_refinery": "Naquadah Refinery",
+  "gtceu.naquadah_refinery": "Naquadah Refining",
+  "gtceu.multiblock.naquadah_refinery.description": "§7Refines crude naquadaric fuels into more potent fuels.",
+
 
   "block.gtceu.matter_alterator": "Matter Alterator",
   "gtceu.atomic_reconstruction": "Atomic Reconstruction",
@@ -406,6 +413,41 @@
   "material.gtceu.tetraethyllead": "Tetraethyllead",
   "material.gtceu.chloroethane": "Chloroethane",
   "material.gtceu.sodium_lead_alloy": "Sodium-Lead Alloy",
+
+
+  "__NAQFUEL__.header": "========================",
+  "__NAQFUEL__.flufff": "> Liquid Naquadah Fuel Line <",
+  "__NAQFUEL__.footer": "========================",
+
+  "material.gtceu.naq_fuel_t1": "Crude Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t1_depleted": "Depleted Crude Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t2": "Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t2_depleted": "Depleted Liquid Naquadah Fuel",
+  "material.gtceu.naquadah_superfuel": "Naquadah Superfuel",
+  "material.gtceu.naquadah_superfuel_depleted": "Depleted Naquadah Superfuel",
+  "material.gtceu.raw_naquadah_solution": "Raw Naquadah Solution",
+  "material.gtceu.piranha_solution": "Piranha Solution",
+  "material.gtceu.hot_piranha_solution": "Hot Piranha Solution",
+  "material.gtceu.tritium_radon_difluoride": "Tritium Radon Difluoride",
+  "material.gtceu.inert_naquadah_blend": "Inert Naquadah Blend",
+  "material.gtceu.active_naquadah_blend": "Activated Naquadah Isotope Blend",
+  "material.gtceu.light_naquadah_isotope_fraction": "Light Naquadah Isotope Fraction",
+  "material.gtceu.medium_naquadah_isotope_fraction": "Medium Naquadah Isotope Fraction",
+  "material.gtceu.heavy_naquadah_isotope_fraction": "Heavy Naquadah Isotope Fraction",
+  "material.gtceu.naquadah_isotope_sludge": "Naquadah Isotope Sludge",
+  "material.gtceu.cracked_light_naquadah_isotope_fraction": "Neutronium-Cracked Light Naquadah Isotope Fraction",
+  "material.gtceu.cracked_medium_naquadah_isotope_fraction": "Neutronium-Cracked Medium Naquadah Isotope Fraction",
+  "material.gtceu.cracked_heavy_naquadah_isotope_fraction": "Neutronium-Cracked Heavy Naquadah Isotope Fraction",
+  "material.gtceu.cracked_naquadah_isotope_sludge": "Neutronium-Cracked Naquadah Isotope Sludge",
+  "material.gtceu.superheavy_atomic_residue": "Superheavy Atomic Residue",
+  "material.gtceu.heavy_atomic_residue": "Heavy Atomic Residue", 
+  "material.gtceu.purified_heavy_residue": "Purified Heavy Atomic Residue",
+  "material.gtceu.purified_superheavy_residue": "Purified Superheavy Atomic Residue",
+  "material.gtceu.quadium": "Quadium",
+  "material.gtceu.hyperdegenerate_matter":"Hyperdegenerate Matter",
+  "material.gtceu.exotic_particle_solution": "Exotic Particle Solution",
+
+
 
 
   "__MISC__.header": "=========",

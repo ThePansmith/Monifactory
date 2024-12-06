@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('ironfurnaces:iron_furnace')
         .duration(200)
         .EUt(30)
-        .circuit(4)
+        .circuit(5)
 
     var furnaceupgrade = [
         ['copper', 'iron'],
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`ironfurnaces:${tier}_furnace`)
             .duration(300)
             .EUt(30)
-            .circuit(4)
+            .circuit(5)
     })
 
     event.recipes.gtceu.assembler('kubejs:diamond_to_obsidian_furnace')
@@ -132,14 +132,14 @@ ServerEvents.recipes(event => {
         .itemOutputs('ironfurnaces:obsidian_furnace')
         .duration(200)
         .EUt(30)
-        .circuit(4)
+        .circuit(5)
 
     event.recipes.gtceu.assembler('kubejs:obsidian_to_netherite_furnace')
         .itemInputs('5x ironfurnaces:obsidian_furnace', '4x minecraft:netherite_ingot')
         .itemOutputs('ironfurnaces:netherite_furnace')
         .duration(200)
         .EUt(30)
-        .circuit(4)
+        .circuit(5)
 
 
     // Direct assembler recipes for Iron Furnaces
