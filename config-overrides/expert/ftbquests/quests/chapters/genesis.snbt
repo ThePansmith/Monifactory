@@ -1833,6 +1833,18 @@
 							}
 							{
 								Count: 1b
+								id: "gtceu:mv_charger_4x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_charger_4x"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_charger_4x"
+							}
+							{
+								Count: 1b
 								id: "thermal:tinker_bench"
 							}
 							{
