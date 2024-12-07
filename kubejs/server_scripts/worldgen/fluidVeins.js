@@ -5,16 +5,29 @@ const martianPolarCapsResourceKey = ResourceKey.create(Registries.BIOME, 'gcyr:m
 GTCEuServerEvents.fluidVeins(event => {
 
     // Void dim oil
-    event.add('kubejs:void/oil', vein => {
+    event.add('kubejs:void/raw_oil', vein => {
         vein.dimensions('javd:void')
         vein.fluid(() => Fluid.of("gtceu:oil_medium").fluid)
-        vein.weight(1000)
+        vein.weight(100)
         vein.minimumYield(300)
-        vein.maximumYield(300)
-        vein.depletionAmount(0)
-        vein.depletionChance(0)
-        vein.depletedYield(300)
+        vein.maximumYield(200)
+        vein.depletionAmount(1)
+        vein.depletionChance(25)
+        vein.depletedYield(100)
     })
+
+    event.add('kubejs:void/oil', vein => {
+        vein.dimensions('javd:void')
+        vein.fluid(() => Fluid.of("gtceu:oil").fluid)
+        vein.weight(20)
+        vein.minimumYield(350)
+        vein.maximumYield(225)
+        vein.depletionAmount(1)
+        vein.depletionChance(25)
+        vein.depletedYield(100)
+    })
+
+    
 
     // Luna fluid veins	
 	event.add('kubejs:moon/deuterium', vein => {
