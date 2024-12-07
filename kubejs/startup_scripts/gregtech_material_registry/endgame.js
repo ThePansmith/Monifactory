@@ -22,7 +22,9 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 // Omnium, Infinity, and Monium have animations and thus custom material icon sets.
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('omnium').parent(GTMaterialIconSet.SHINY)
+    event.create('sculk_alloy').parent(GTMaterialIconSet.DULL)
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
+    event.create('uru').parent(GTMaterialIconSet.SHINY)
     event.create('monium').parent(GTMaterialIconSet.SHINY)
 })
 
@@ -68,8 +70,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('sculk_bioalloy')
         .ingot()
-        .color(0x33bbd1).secondaryColor(0x0011ff)
-        .iconSet(GTMaterialIconSet.DULL)
+        .color(0xffffff)
+        .iconSet('sculk_alloy')
         .flags(GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_WORKING)
 
     event.create('infinity')
@@ -82,8 +84,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('eltz')
         .ingot()
         .element(GTElements.get('eltz'))
-        .color(0xffcc22).secondaryColor(0x991105)
-        .iconSet(GTMaterialIconSet.BRIGHT)
+        .color(0xffffff)
+        .iconSet('uru')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.PHOSPHORESCENT)
        
     event.create('eltic_actinate')
