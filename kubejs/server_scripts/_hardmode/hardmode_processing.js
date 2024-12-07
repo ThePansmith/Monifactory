@@ -564,7 +564,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.chemical_reactor('rhodium_salt_to_rhodium_nitrate')
             .itemInputs('30x gtceu:sodium_nitrate_dust', 'gtceu:rhodium_salt_dust')
-            .chancedFluidInput('minecraft:water 8000', 0, 0)
+            .notConsumableFluid('minecraft:water 8000')
             .itemOutputs('26x gtceu:rhodium_nitrate_dust', '16x gtceu:salt_dust')
             .duration(300).EUt(30)
 
@@ -701,7 +701,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.centrifuge('centrifuging_refined_residue')
             .itemInputs('10x gtceu:refined_residue_dust')
             .notConsumable('kubejs:bathyal_energy_core')
-            .chancedFluidInput('gtceu:fluoroantimonic_acid 1000', 0, 0)
+            .notConsumableFluid('gtceu:fluoroantimonic_acid 1000')
             .itemOutputs('10x gtceu:pitchblende_dust', '6x gtceu:borax_dust', '5x gtceu:rare_earth_dust', '4x gtceu:snowchestite_dust', '3x gtceu:diamond_dust', 'gtceu:clean_inert_residue_dust')
             .duration(2000).EUt(400)
 
@@ -786,7 +786,7 @@ ServerEvents.recipes(event => {
             .itemOutputs('8x kubejs:quantum_flux')
             .duration(100)
             .EUt(480)
-        
+
         //Commented out in favor of GCYM's chain
 
         // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
