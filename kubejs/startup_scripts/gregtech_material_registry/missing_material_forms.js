@@ -24,14 +24,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 
     GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
-    addFluid(GTMaterials.Actinium, $FluidStorageKeys.LIQUID, 1500);
     GTMaterials.Actinium.setMaterialARGB(0xaa3399)
     GTMaterials.Actinium.addFlags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW)
 
     GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 0, true))
     GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(120000, 128000, true, true, true, true))
-    GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, 'highest', 1000000, 1000));
+    GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, 'highest', 1000000, 1000, -1, -1));
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
     //Existing materials that get new material forms
@@ -59,9 +58,4 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Curium.setMaterialARGB(0x58307f)
     addFluid(GTMaterials.Ruridit, $FluidStorageKeys.LIQUID, 1515);
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID, 1337);
-
-    const missingGears = ['Electrum', 'Lead', 'Silver', 'Nickel', 'Ruby', 'Sapphire', 'Gold', 'Copper', 'Lapis', 'Emerald', 'NetherQuartz']
-    missingGears.forEach(missingGears => {
-        GTMaterials[missingGears].addFlags(GTMaterialFlags.GENERATE_GEAR)
-    })
 })

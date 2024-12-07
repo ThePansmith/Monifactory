@@ -90,7 +90,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.COOLING);
 
     // Naquadah Reactor I Recipe type
-    event.create('naquadah_reactor_i')
+    event.create('naquadah_reactor')
         .category('multiblock')
         .setEUIO('out')
         .setMaxIOSize(1, 1, 0, 0)
@@ -98,14 +98,26 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
 
-    // Naqudah Reactor II Recipe Type
-    event.create('naquadah_reactor_ii')
+// Large Naquadah Reactor Recipe Type
+    event.create('large_naquadah_reactor')
+    .category('multiblock')
+    .setEUIO('out')
+    .setMaxIOSize(1, 1, 2, 2)
+    .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+    .setSound(GTSoundEntries.ARC)
+
+// Naquadah Fuel Refinery
+if (!isNormalMode) {
+
+    event.create('naquadah_refinery')
         .category('multiblock')
-        .setEUIO('out')
-        .setMaxIOSize(1, 1, 0, 0)
+        .setEUIO('in')
+        .setMaxIOSize(6,0,4,1)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ARC);
+        .setSound(GTSoundEntries.COOLING)
+}
 
     // Greenhouse
     event.create('greenhouse')
@@ -124,16 +136,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
-
-    // Large Material Press
-    event.create('large_material_press')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(6, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_COMPRESS, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COMPRESSOR)
-        .setIconSupplier(() => Item.of('gtceu:large_material_press'))
 
     // Omnic Forge
     event.create('omnic_forge')
@@ -165,8 +167,17 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     // Discharger
     event.create('discharger')
         .category('multiblock')
-        .setEUIO('out')
+        .setEUIO('in')
         .setMaxIOSize(9, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
+
+    // Charger
+    event.create('Charger')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(3, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
@@ -182,8 +193,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-
-    GCyMMachines.LARGE_MATERIAL_PRESS.setRecipeTypes([GTRecipeTypes.BENDER_RECIPES, GTRecipeTypes.COMPRESSOR_RECIPES, GTRecipeTypes.FORGE_HAMMER_RECIPES, GTRecipeTypes.FORMING_PRESS_RECIPES])
 
     // Normal mode-exclusive multis            
     if (!isHardMode) {
@@ -708,48 +717,97 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/multiblock/implosion_compressor", false)
 
     // Naquadah Reactor I
-    event.create('naquadah_reactor_i', 'multiblock')
+    event.create('naquadah_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('naquadah_reactor_i')
+        .recipeTypes('naquadah_reactor')
         .appearanceBlock(GCyMBlocks.CASING_REACTION_SAFE)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    // Modern#2015
-        .generator(true)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCC", "PGP", "PGP", "PGP", "CCC")
-            .aisle("CCC", "GNG", "GNG", "GOG", "CCC")
-            .aisle("C@C", "PGP", "PGP", "PGP", "CCC")
-            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-            .where('C', Predicates.blocks(GCyMBlocks.CASING_REACTION_SAFE.get()).setMinGlobalLimited(12)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
-            .where('P', Predicates.blocks("ae2:spatial_pylon"))
-            .where('N', Predicates.blocks("gtceu:duranium_block"))
-            .where('O', Predicates.blocks("gtceu:black_steel_block"))
-            .build())
-        .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
-            "gtceu:block/multiblock/generator/large_steam_turbine", false)
-
-    // Naquadah Reactor II
-    event.create('naquadah_reactor_ii', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('naquadah_reactor_ii')
-        .appearanceBlock(GCyMBlocks.CASING_REACTION_SAFE)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    // Modern#2015
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCC", "PGP", "PGP", "PGP", "PGP", "CCC")
-            .aisle("CCC", "GNG", "GNG", "GNG", "GOG", "CCC")
+            .aisle("CCC", "GNG", "GNG", "GNG", "GNG", "CCC")
             .aisle("C@C", "PGP", "PGP", "PGP", "PGP", "CCC")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
             .where('C', Predicates.blocks(GCyMBlocks.CASING_REACTION_SAFE.get()).setMinGlobalLimited(12)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('P', Predicates.blocks("ae2:spatial_pylon"))
-            .where('N', Predicates.blocks('gtceu:ruthenium_trinium_americium_neutronate_block'))
-            .where('O', Predicates.blocks("gtceu:omnium_block"))
+            .where('N', Predicates.blocks('gtceu:trinium_coil_block'))
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
             "gtceu:block/multiblock/generator/large_steam_turbine", false)
+
+    // Large Naquadah Reactor 
+    event.create('large_naquadah_reactor', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('large_naquadah_reactor')
+        .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
+        .generator(true)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("##CCCCC##","##CGGGC##","##CCCCC##","#########","#########","#########","#########","#########","#########","#########","##CCCCC##")
+            .aisle("#CCCCCCC#","#CC   CC#","#CCCCCCC#","#A#####A#","#A#####A#","#A#####A#","#A#####A#","#A#####A#","#A#####A#","#A#####A#","#CCCCCCC#")
+            .aisle("CCCHHHCCC","CCN   NCC","CCCSSSCCC","##DGGGD##","##DGGGD##","##DGGGD##","##DGGGD##","##DGGGD##","##DGGGD##","##DGGGD##","CCCSSSCCC")
+            .aisle("CCHCCCHCC","G  OOO  G","CCSOOOSCC","##GOOOG##","##GOOOG##","##GOOOG##","##GOOOG##","##GOOOG##","##GOOOG##","##GOOOG##","CCSHHHSCC")
+            .aisle("CCHCCCHCC","G  OKO  G","CCSOKOSCC","##GOKOG##","##GOKOG##","##GOKOG##","##GOKOG##","##GOKOG##","##GOKOG##","##GOKOG##","CCSHHHSCC")
+            .aisle("CCHCCCHCC","G  OOO  G","CCSOOOSCC","##GOOOG##","##GOOOG##","##GOOOG##","##GOOOG##","##GOOOG##","##GOOOG##","##GOOOG##","CCSHHHSCC")
+            .aisle("CCCHHHCCC","CCN   NCC","CCCSSSCCC","##DGGGD##","##DGGGD##","##DGGGD##","##DGGGD##","##DGGGD##","##DGGGD##","##DGGGD##","CCCSSSCCC")
+            .aisle("#CCCCCCC#","#CC   CC#","#CCCCCCC#","#A#####A#","#A#####A#","#A#####A#","#A#####A#","#A#####A#","#A#####A#","#A#####A#","#CCCCCCC#")
+            .aisle("##CC@CC##","##CGGGC##","##CCCCC##","#########","#########","#########","#########","#########","#########","#########","##CCCCC##")
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+            .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
+            .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(150)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.OUTPUT_LASER).setMaxGlobalLimited(1)))
+
+            .where('H', Predicates.blocks("gtceu:heat_vent"))
+            .where('K', Predicates.blocks("gtceu:fusion_coi"))
+            .where('N', Predicates.blocks("gtceu:tungsten_frame"))
+            .where('S', Predicates.blocks("ae2:spatial_pylon"))
+            .where('O', Predicates.blocks("kubejs:omnic_matrix_coil_block"))
+            .where('D', Predicates.blocks("gtceu:high_temperature_smelting_casing"))
+            .where("A", Predicates.blocks("gtceu:naquadah_alloy_frame"))
+            .where(" ", Predicates.air())
+            .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
+            "gtceu:block/multiblock/generator/large_steam_turbine", false)
+
+    // Naquadah Fuel Refinery
+    if (!isNormalMode) {
+
+        event.create('naquadah_refinery', 'multiblock')
+            .rotationState(RotationState.NON_Y_AXIS)
+            .recipeTypes('naquadah_refinery')
+            .appearanceBlock(() => Block.getBlock('gtceu:stress_proof_casing'))
+            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+            .pattern(definition => FactoryBlockPattern.start()
+                .aisle("##CCCCC##","##CCCCC##","#########","#########","#########","#########","#########","#########","#########","#########","#########")
+                .aisle("#CCCCCCC#","#CC#P#CC#","####P####","####P####","###SSS###","###VVV###","###GGG###","###VVV###","###SSS###","#########","#########")
+                .aisle("CCCCCCCCC","CCF###FCC","##F###F##","##FSSSF##","##S   S##","##V   V##","##G   G##","##V   V##","##S   S##","###SSS###","#########")
+                .aisle("CCCCCCCCC","C##III##C","###SSS###","##SPPPS##","#S K K S#","#V K K V#","#G K K G#","#V K K V#","#S K K S#","##SPPPS##","###SSS###")
+                .aisle("CCCCCCCCC","CP#III#PC","#P#SSS#P#","#PSPPPSP#","#S  E  S#","#V  E  V#","#G  E  G#","#V  E  V#","#S  E  S#","##SPPPS##","###SMS###")
+                .aisle("CCCCCCCCC","C##III##C","###SSS###","##SPPPS##","#S K K S#","#V K K V#","#G K K G#","#V K K V#","#S K K S#","##SPPPS##","###SSS###")
+                .aisle("CCCCCCCCC","CCF###FCC","##F###F##","##FSSSF##","##S   S##","##V   V##","##G   G##","##V   V##","##S   S##","###SSS###","#########")
+                .aisle("#CCCCCCC#"," CC#P#CC ","####P####","####P####","###SSS###","###VVV###","###GGG###","###VVV###","###SSS###","#########","#########")
+                .aisle("##CC@CC##","##CCCCC##","#########","#########","#########","#########","#########","#########","#########","#########","#########") 
+                .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+                .where('C', Predicates.blocks("gtceu:stress_proof_casing").setMinGlobalLimited(85)
+                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .where('S', Predicates.blocks("gtceu:high_temperature_smelting_casing"))
+                .where('I', Predicates.blocks("gtceu:extreme_engine_intake_casing"))
+                .where('P', Predicates.blocks("gtceu:tungstensteel_pipe_casing"))
+                .where('K', Predicates.blocks("gtceu:superconducting_coil"))
+                .where('V', Predicates.blocks("gtceu:heat_vent"))
+                .where('G', Predicates.blocks("gtceu:laminated_glass"))
+                .where('E', Predicates.blocks("gtceu:ptfe_pipe_casing"))
+                .where('F', Predicates.blocks("gtceu:tungsten_frame"))
+                .where('M', Predicates.abilities(PartAbility.MUFFLER))
+                .where(' ', Predicates.air())
+                .where('#', Predicates.any())
+                .build())
+            .workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
+                    "gtceu:block/multiblock/fusion_reactor", false)
+        }
 
     // Omnic Forge
     event.create('omnic_forge', 'multiblock')
@@ -782,6 +840,42 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer(new ResourceLocation('kubejs', 'block/omnium/casing'),
             "gtceu:block/machines/reconstructor", false)
+
+    // SCULK
+    event.create('biobalance_charger', 'multiblock') //Come up with a better name
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes(['discharger', 'charger'])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .appearanceBlock(() => Block.getBlock('kubejs:biosourced_sculk_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("####CCC####", "####CCC####", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "####CCC####", "####CCC####")
+            .aisle("##CCNNNCC##", "##CCcccCC##", "####GGG####", "####GGG####", "####GGG####", "####GGG####", "####GGG####", "####GGG####", "####GGG####", "##CCcccCC##", "##CCNNNCC##")
+            .aisle("#CNNCNCNNC#", "#CNcScScNC#", "##NG c GN##", "##NG c GN##", "##NG   GN##", "##NG   GN##", "##NG   GN##", "##NG c GN##", "##NG c GN##", "#CNcScScNC#", "#CNNCNCNNC#")
+            .aisle("#CNCCNCCNC#", "#CcSSSSScC#", "##G     G##", "##G     G##", "##G  E  G##", "##G     G##", "##G  E  G##", "##G     G##", "##G     G##", "#CcSSSSScC#", "#CNCCNCCNC#")
+            .aisle("CNCCCNCCCNC", "CcSScNcSScC", "#G  cLc  G#", "#G       G#", "#G       G#", "#G       G#", "#G       G#", "#G       G#", "#G  cLc  G#", "CcSScNcSScC", "CNCCCNCCCNC")
+            .aisle("CNNNNNNNNNC", "CccSNNNSccC", "#Gc LNL cG#", "#Gc  N  cG#", "#G E N E G#", "#G   T   G#", "#G E N E G#", "#Gc  N  cG#", "#Gc LNL cG#", "CccSNNNSccC", "CNNNNNNNNNC")
+            .aisle("CNCCCNCCCNC", "CcSScNcSScC", "#G  cLc  G#", "#G       G#", "#G       G#", "#G       G#", "#G       G#", "#G       G#", "#G  cLc  G#", "CcSScNcSScC", "CNCCCNCCCNC")
+            .aisle("#CNCCNCCNC#", "#CcSSSSScC#", "##G     G##", "##G     G##", "##G  E  G##", "##G     G##", "##G  E  G##", "##G     G##", "##G     G##", "#CcSSSSScC#", "#CNCCNCCNC#")
+            .aisle("#CNNCNCNNC#", "#CNcScScNC#", "##NG c GN##", "##NG c GN##", "##NG   GN##", "##NG   GN##", "##NG   GN##", "##NG c GN##", "##NG c GN##", "#CNcScScNC#", "#CNNCNCNNC#")
+            .aisle("##CCNNNCC##", "##CCcccCC##", "####GGG####", "####GGG####", "####GGG####", "####GGG####", "####GGG####", "####GGG####", "####GGG####", "##CCcccCC##", "##CCNNNCC##")
+            .aisle("####CCC####", "####C@C####", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "####CCC####", "####CCC####")
+            .where('@', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('C', Predicates.blocks("kubejs:biosourced_sculk_casing").setMinGlobalLimited(150)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+            )
+            .where('c', Predicates.blocks("kubejs:biosourced_sculk_casing"))
+            .where('N', Predicates.blocks(GCyMBlocks.CASING_NONCONDUCTING.get()))
+            .where('G', Predicates.blocks(GTBlocks.CASING_LAMINATED_GLASS.get()))
+            .where('S', Predicates.blocks("minecraft:sculk"))
+            .where('T', Predicates.blocks("minecraft:sculk_catalyst"))
+            .where('L', Predicates.blocks("gtceu:black_lamp"))
+            .where('E', Predicates.blocks(GCyMBlocks.ELECTROLYTIC_CELL.get()))
+            .where(' ', Predicates.air())
+            .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("kubejs:block/biosculk/casing",
+            "gtceu:block/machines/electrolyzer", false)
 
     // Advanced Assembly line (Dimensional Superassembler)
     event.create('dimensional_superassembler', 'multiblock')
@@ -837,7 +931,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('cryococcal_reverberator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('reverberation')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH]) // Modern#2015
         .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()

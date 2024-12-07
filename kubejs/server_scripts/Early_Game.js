@@ -85,7 +85,6 @@ ServerEvents.recipes(event => {
         .itemInputs('#minecraft:planks', '4x gtceu:copper_foil')
         .inputFluids('gtceu:glue 100')
         .itemOutputs('gtceu:resin_printed_circuit_board')
-        .circuit(2)
         .duration(200)
         .EUt(7)
 
@@ -128,6 +127,8 @@ ServerEvents.recipes(event => {
         H: 'gtceu:ulv_machine_hull'
     }
     ).id('gtceu:shaped/pyrolyse_oven')
+    event.remove({ id: 'gtceu:arc_furnace/arc_pyrolyse_oven' })
+    event.remove({ id: 'gtceu:macerator/macerate_pyrolyse_oven' })
 
     //Toolbelts
     event.replaceInput({ output: 'toolbelt:pouch' }, 'minecraft:gold_ingot', 'gtceu:steel_ingot')

@@ -135,7 +135,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     let distillationRodMap = {};
     distillationRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.spring, GTMaterials.Actinium)
     distillationRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.spring, GTMaterials.get('sculk_bioalloy'))
-    distillationRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.spring, GTMaterials.get('uru'))
+    distillationRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.spring, GTMaterials.get('eltz'))
     event.modifyUnificationEntry(CraftingComponent.STICK_DISTILLATION, distillationRodMap)
 
     // Electromagnetic Rods (Uses Samarium for UV+, two tiers after the same for Nomi)

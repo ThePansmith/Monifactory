@@ -1,18 +1,4 @@
 
-[energy_generation]
-	#Allow rtg registration: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
-	register_panel = [false, false, false, false]
-	#Panel power generation: du, elite, advanced, basic
-	panel_power = [400, 1500, 100, 25]
-	#rtg generation: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
-	rtg_power = [20, 200, 800, 4000]
-	#rtg radiation: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
-	rtg_radiation = [56, 57800, 200000, 1900000]
-	#Steam turbine (one block) base power gen
-	steam_turbine_power_gen = 50
-	#Decay Generator base power gen
-	decay_generator_power_gen = 100
-
 [energy_storage]
 	#Allow block registration: basic_voltaic_pile, elite_voltaic_pile, advanced_voltaic_pile, basic_lithium_ion_battery, elite_lithium_ion_battery, du_lithium_ion_battery, du_voltaic_pile, advanced_lithium_ion_battery
 	energy_block_registration = [false, false, false, false, false, false, false, false]
@@ -24,9 +10,30 @@
 	ligtning_rod_charge = 1000000
 
 [storage_blocks]
-	#Blocks to store items, fluids, etc...
-	#Allow barrel registration: advanced_barrel, basic_barrel, elite_barrel, du_barrel
-	energy_block_registration = [false, false, false, false]
 	#Barrel capacity in Buckets: advanced_barrel, basic_barrel, elite_barrel, du_barrel
 	barrel_capacity = [512000, 128000, 8192000, 2048000]
+	#Blocks to store items, fluids, etc...
+	#Allow container registration: advanced_barrel, basic_barrel, elite_barrel, du_barrel
+	container_block_registration = [true, true, true, true]
+	#Allow barrel registration: advanced_barrel, basic_barrel, elite_barrel, du_barrel
+	barrel_block_registration = [true, true, true, true]
+
+[Energy]
+	#Multiplier for all power generation in the mod
+	#Range: 0.001 ~ 1000.0
+	generation_multiplier = 1.0
+	#Allow solar panel registration: du, elite, advanced, basic
+	register_panel = [true, true, true, true]
+	#Solar panel power generation: du, elite, advanced, basic
+	panel_power = [400, 1500, 100, 25]
+	#Allow rtg registration: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
+	register_rtg = [true, true, true, true]
+	#rtg generation: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
+	rtg_power = [100, 400, 1200, 4000]
+	#rtg radiation: uranium_rtg, americium_rtg, plutonium_rtg, californium_rtg
+	rtg_radiation = [560, 57800, 200000, 1900000]
+	#Steam turbine (one block) base power gen
+	steam_turbine_power_gen = 50
+	#Decay Generator base power gen
+	decay_generator_power_gen = 100
 

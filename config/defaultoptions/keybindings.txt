@@ -92,7 +92,7 @@ key_key.ftbchunks.minimap.zoomIn:key.keyboard.equal:NONE
 key_key.ftbchunks.minimap.zoomOut:key.keyboard.minus:NONE
 key_key.ftbchunks.add_waypoint:key.keyboard.unknown:NONE
 key_key.ftbchunks.waypoint_manager:key.keyboard.unknown:NONE
-key_key.ftbquests.quests:key.keyboard.unknown:NONE
+key_key.ftbquests.quests:key.keyboard.grave.accent
 key_key.jei.toggleWildcardHideIngredient:key.mouse.right:CONTROL
 key_key.jei.previousPage:key.keyboard.unknown:NONE
 key_key.jei.clearSearchBar:key.mouse.right:NONE
@@ -192,3 +192,4 @@ key_key.buildinggadgets2.range:key.keyboard.r:NONE
 key_key.entityculling.toggle:key.keyboard.unknown:NONE
 key_jecalculation.key.gui_craft:key.keyboard.unknown:NONE
 key_jecalculation.key.gui_math:key.keyboard.unknown:NONE
+key_key.chisel_chipped_integration.drill_gui_keybind:key.keyboard.unknown:NONE

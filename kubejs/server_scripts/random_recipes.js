@@ -8,16 +8,15 @@ ServerEvents.recipes(event => {
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand']).id('snad:red_snad')
 
         //If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
-        //Otherwise, people will leave laggy items everywhere on the ground.
         event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
-    } else if(!isExpertMode) { 
+    } else if(!isExpertMode) {
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
     } else {
         event.remove({ id: 'snad:snad' })
         event.remove({ id: 'snad:red_snad' })
     }
-    
+
 
     // snaded sand snad
     comapcting(event, 'kubejs:compressed_sand', 'minecraft:sand');
@@ -74,7 +73,7 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:blaze_rod', 'minecraft:brewing_stand')
     event.replaceInput({ input: 'gtceu:wood_plate' }, 'gtceu:wood_plate', '#minecraft:planks')
 
-    // Sculk LCR recipes 
+    // Sculk LCR recipes
 
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst")
         .notConsumable("minecraft:sculk_catalyst")
@@ -138,13 +137,13 @@ ServerEvents.recipes(event => {
     }
     ).id('gtceu:shaped/mv_macerator')
     // Data Stuff
-    
+
     if (isNormalMode) {
-    event.recipes.gtceu.extractor("tank_data")
-        .itemInputs("kubejs:heart_of_a_universe")
-        .itemOutputs("kubejs:creative_tank_data")
-        .duration(1000)
-        .EUt(180000)
+        event.recipes.gtceu.extractor("tank_data")
+            .itemInputs("kubejs:heart_of_a_universe")
+            .itemOutputs("kubejs:creative_tank_data")
+            .duration(1000)
+            .EUt(180000)
     }
 
     // Crystal Chip shit
@@ -195,7 +194,7 @@ ServerEvents.recipes(event => {
     }
 
     //Cryolobus Vac Freezer recipe
-    event.remove({ id: "gtceu:vacuum_freezer/cool_hot_cryolobus_ingot" }) 
+    event.remove({ id: "gtceu:vacuum_freezer/cool_hot_cryolobus_ingot" })
     event.recipes.gtceu.vacuum_freezer("cryolobus_ingot_cooling")
         .itemInputs('gtceu:hot_cryolobus_ingot')
         .itemOutputs('gtceu:cryolobus_ingot')
@@ -634,7 +633,7 @@ ServerEvents.recipes(event => {
     multi_p2p.forEach(type => {
         event.stonecutting('mae2:'+type+'_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel')
     })
-    
+
     // Stonecutting CCI blocks
     let sameItemsTags = ['#chisel_chipped_integration:factory_block', '#chisel_chipped_integration:technical_block', '#chisel_chipped_integration:laboratory_block', '#chisel_chipped_integration:tyrian']; // What item tags to go through (change this so you have your tags)
     sameItemsTags.forEach(tag => {
@@ -645,7 +644,21 @@ ServerEvents.recipes(event => {
                     event.stonecutting(output, input); // Make the recipe
             });
         });
-    }); 
+    });
+
+
+    // Stonecutting Marble
+    let MarbleTag = ['#moni:marble']; // What item tags to go through (change this so you have your tags)
+    MarbleTag.forEach(tag => {
+        let Marbles = Ingredient.of(tag).stacks; // Get all of the items with that tag
+        Marbles.forEach(input => {
+            Marbles.forEach(output => { // Loop through the items so all combination of input and output are met
+                if (input != output) // Ignore recipes where input and output are the same item
+                    event.stonecutting(output, input); // Make the recipe
+            });
+        });
+    });
+
 
     event.remove({ id: 'gtceu:shaped/mega_blast_furnace'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_blast_furnace')
@@ -719,7 +732,7 @@ ServerEvents.recipes(event => {
         H: "gtceu:iv_machine_hull",
         C: "#gtceu:circuits/iv"
     })
-    
+
     //ZPM Field Gen
     event.remove({ id: 'gtceu:assembly_line/field_generator_zpm'})
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/zpm_field_generator')
@@ -746,7 +759,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrochloric_dragon_scale_solution 2000')
         .duration(240)
         .EUt(120)
-    
+
     event.recipes.gtceu.centrifuge('scale_acid_centrifuge')
         .inputFluids('gtceu:hydrochloric_dragon_scale_solution 1000')
         .itemOutputs('gtceu:graphitic_tantalum_dust')
@@ -767,7 +780,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrofluoric_graphitic_tantalum_solution 2000')
         .duration(240)
         .EUt(120)
-        
+
     event.recipes.gtceu.centrifuge('tantalum_acid_graphite_centrifuge')
         .inputFluids('gtceu:hydrofluoric_graphitic_tantalum_solution 1000')
         .itemOutputs('gtceu:graphite_dust')
@@ -830,8 +843,8 @@ ServerEvents.recipes(event => {
     // JEAN Gasoline consumption
     event.recipes.gtceu.combustion_generator('jean_gasoline_generator')
         .inputFluids('gtceu:jean_gasoline 1')
-        .duration(320)
-        .EUt(-256)
+        .duration(2560)
+        .EUt(-32)
 
     // JEAN Gasoline
     event.recipes.gtceu.large_chemical_reactor('kubejs:jean_gasoline')
@@ -913,5 +926,10 @@ ServerEvents.recipes(event => {
         .itemOutputs('minecraft:pearlescent_froglight')
         .duration(20)
         .EUt(15)
+
+    // Patchouli Books that needed tweaking
+    event.replaceInput({ id: 'laserio:my_book_recipe_shapeless'}, 'laserio:logic_chip', 'laserio:card_item')
+
+    // Chipped tinker's table
+    event.replaceInput({ id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', '#forge:chests')
 })
- 

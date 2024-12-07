@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
     //Sunnarium plates
-    event.remove({ id: 'gtceu:compressor/compress_plate_dust_sunnarium_'})
+    event.remove({ id: 'gtceu:compressor/compress_plate_dust_sunnarium'})
     event.shaped(
         '4x gtceu:sunnarium_plate', [
             'PPP',
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.remove({ id: 'gtceu:compressor/compress_plate_dust_enriched_sunnarium_'})
+    event.remove({ id: 'gtceu:compressor/compress_plate_dust_enriched_sunnarium'})
     event.shaped(
         'gtceu:enriched_sunnarium_plate', [
             ' A ',

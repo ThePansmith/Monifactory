@@ -23,56 +23,73 @@ ItemEvents.tooltip(tooltip => {
     })
 
     // Microminer Components
-    tooltip.add('kubejs:universal_navigator', '§9See You Later, navigator!')
+    tooltip.add('kubejs:universal_navigator', Text.translatable('kubejs.universal_navigator.tooltip'))
 
     // Endgame Items
-    tooltip.add('kubejs:ultimate_gem', '§eRecipe is shapeless.')
+    tooltip.add('kubejs:ultimate_gem', Text.translatable('kubejs.ultimate_gem.tooltip'))
+
+    //Hardmode+ Stuff
+    if (!isNormalMode) {
+        tooltip.add('gtceu:assembly_line', Text.translatable('gtceu.assembly_line.tooltip.hardmode'))
+        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.hardmode.1'))
+        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.hardmode.2'))
+    } else {
+        tooltip.add('gtceu:assembly_line', Text.translatable('gtceu.assembly_line.tooltip.normal'))
+        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.normal.1'))
+        tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.normal.2'))
+    }
 
     // Questbook
-    tooltip.addAdvanced(`ftbquests:book`, (item, adv, text) => {text.add(2, Text.gray('The quest window can also be opened with a keybind.'))})
+    tooltip.addAdvanced(`ftbquests:book`, (item, adv, text) => { text.add(2, Text.gray(Text.translatable('ftbquests.book.tooltip'))) })
 
     // Redstone Clock 
-    tooltip.add('redstoneclock:redstone_clock', '§7Needs a redstone signal on a dotted side to work.')
-    
+    tooltip.add('redstoneclock:redstone_clock', Text.translatable('redstoneclock.redstone_clock.tooltip'))
+
     // DML Data Model
-    tooltip.add('hostilenetworks:blank_data_model', '§7use it in the crafting table instead!')
-    tooltip.add('hostilenetworks:data_model', '§7Upgrades when used in the §3Simulation Chamber')
-    
+    tooltip.add('hostilenetworks:blank_data_model', Text.translatable('hostilenetworks.blank_data_model.tooltip'))
+    tooltip.add('hostilenetworks:data_model', Text.translatable('hostilenetworks.data_model.tooltip'))
+
     // DML Matters
-    tooltip.add('hostilenetworks:overworld_prediction', '§7Experience per item: 10')
-    tooltip.add('hostilenetworks:nether_prediction', '§7Experience per item: 20')
-    tooltip.add('hostilenetworks:end_prediction', '§7Experience per item: 25')
+    tooltip.add('hostilenetworks:overworld_prediction', Text.translatable('hostilenetworks.overworld_prediction.tooltip'))
+    tooltip.add('hostilenetworks:nether_prediction', Text.translatable('hostilenetworks.nether_prediction.tooltip'))
+    tooltip.add('hostilenetworks:end_prediction', Text.translatable('hostilenetworks.end_prediction.tooltip'))
 
     // Conduits
-    tooltip.add('enderio:conductive_conduit', '§7Max Output 512 RF/t')
-    tooltip.add('enderio:energetic_conduit', '§7Max Output 2,048 RF/t')
-    tooltip.add('enderio:vibrant_conduit', '§7Max Output 8,192 RF/t')
-    tooltip.add('enderio:endsteel_conduit', '§7Max Output 32,768 RF/t')
-    tooltip.add('enderio:lumium_conduit', '§7Max Output 131,072 RF/t')
-    tooltip.add('enderio:signalum_conduit', '§7Max Output 524,288 RF/t')
-    tooltip.add('enderio:enderium_conduit', '§7Max Output 2,097,152 RF/t')
-    tooltip.add('enderio:cryolobus_conduit', '§7Max Output 8,388,608 RF/t')
-    tooltip.add('enderio:sculk_superconductor_conduit', '§7Max Output 134,217,728 RF/t')
+    tooltip.add('enderio:conductive_conduit', Text.translatable('enderio.conductive_conduit.tooltip'))
+    tooltip.add('enderio:energetic_conduit', Text.translatable('enderio.energetic_conduit.tooltip'))
+    tooltip.add('enderio:vibrant_conduit', Text.translatable('enderio.vibrant_conduit.tooltip'))
+    tooltip.add('enderio:endsteel_conduit', Text.translatable('enderio.endsteel_conduit.tooltip'))
+    tooltip.add('enderio:lumium_conduit', Text.translatable('enderio.lumium_conduit.tooltip'))
+    tooltip.add('enderio:signalum_conduit', Text.translatable('enderio.signalum_conduit.tooltip'))
+    tooltip.add('enderio:enderium_conduit', Text.translatable('enderio.enderium_conduit.tooltip'))
+    tooltip.add('enderio:cryolobus_conduit', Text.translatable('enderio.cryolobus_conduit.tooltip'))
+    tooltip.add('enderio:sculk_superconductor_conduit', Text.translatable('enderio.sculk_superconductor_conduit.tooltip'))
 
-    tooltip.add("thermal:device_rock_gen", "§7Must be placed next to lava and water to produce cobblestone.")
-    tooltip.add("thermal:device_water_gen", "§7Must be placed next to two water source blocks to work.")
+    tooltip.add('thermal:device_rock_gen', Text.translatable('thermal.device_rock_gen.tooltip'))
+    tooltip.add('thermal:device_water_gen', Text.translatable('thermal.device_water_gen.tooltip'))
 
-    tooltip.add(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_4', 'thermal:upgrade_augment_3', 'thermal:dynamo_output_augment'], '§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.')
+    tooltip.add(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_4', 'thermal:upgrade_augment_3', 'thermal:dynamo_output_augment'], Text.translatable('thermal.emi.tooltip'))
 
     // Circuits
-    tooltip.addAdvanced(`kubejs:matter_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uev_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
-    tooltip.addAdvanced(`kubejs:matter_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uhv_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
-    tooltip.addAdvanced(`kubejs:matter_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uv_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
-    tooltip.addAdvanced(`kubejs:matter_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.zpm_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000)))})
-    tooltip.addAdvanced(`kubejs:dimensional_processor_mainframe`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uiv_tier_circuit'), Math.round(Client.lastNanoTime / 100000000)))})
-    tooltip.addAdvanced(`kubejs:dimensional_processor_computer`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uev_tier_circuit'), Math.round(Client.lastNanoTime / 100000000)))})
-    tooltip.addAdvanced(`kubejs:dimensional_processor_assembly`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uhv_tier_circuit'), Math.round(Client.lastNanoTime / 100000000)))})
-    tooltip.addAdvanced(`kubejs:dimensional_processor`, (item, adv, text) => {text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uv_tier_circuit'), Math.round(Client.lastNanoTime / 100000000)))})
-    tooltip.addAdvanced(`kubejs:monic_processor_mainframe`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.max_tier_circuit')))})
-    tooltip.addAdvanced(`kubejs:monic_processor_computer`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uiv_tier_circuit')))})
-    tooltip.addAdvanced(`kubejs:monic_processor_assembly`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uev_tier_circuit')))})
-    tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => {text.add(1, Text.blue(Text.translatable('item.kubejs.uhv_tier_circuit')))})
+    tooltip.addAdvanced(`kubejs:matter_processor_mainframe`, (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uev_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000))) })
+    tooltip.addAdvanced(`kubejs:matter_processor_computer`, (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uhv_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000))) })
+    tooltip.addAdvanced(`kubejs:matter_processor_assembly`, (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uv_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000))) })
+    tooltip.addAdvanced(`kubejs:matter_processor`, (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable('item.kubejs.zpm_tier_circuit'), Math.round(Client.lastNanoTime / 1000000000))) })
+    tooltip.addAdvanced(`kubejs:dimensional_processor_mainframe`, (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uiv_tier_circuit'), Math.round(Client.lastNanoTime / 100000000))) })
+    tooltip.addAdvanced(`kubejs:dimensional_processor_computer`, (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uev_tier_circuit'), Math.round(Client.lastNanoTime / 100000000))) })
+    tooltip.addAdvanced(`kubejs:dimensional_processor_assembly`, (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uhv_tier_circuit'), Math.round(Client.lastNanoTime / 100000000))) })
+    tooltip.addAdvanced(`kubejs:dimensional_processor`, (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable('item.kubejs.uv_tier_circuit'), Math.round(Client.lastNanoTime / 100000000))) })
+    tooltip.addAdvanced(`kubejs:monic_processor_mainframe`, (item, adv, text) => { text.add(1, Text.blue(Text.translatable('item.kubejs.max_tier_circuit'))) })
+    tooltip.addAdvanced(`kubejs:monic_processor_computer`, (item, adv, text) => { text.add(1, Text.blue(Text.translatable('item.kubejs.uiv_tier_circuit'))) })
+    tooltip.addAdvanced(`kubejs:monic_processor_assembly`, (item, adv, text) => { text.add(1, Text.blue(Text.translatable('item.kubejs.uev_tier_circuit'))) })
+    tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => { text.add(1, Text.blue(Text.translatable('item.kubejs.uhv_tier_circuit'))) })
 
+    tooltip.addAdvanced([`kubejs:matter_processor_mainframe`, `kubejs:matter_processor_computer`, `kubejs:matter_processor_assembly`, `kubejs:matter_processor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('item.kubejs.matter_circuit.tooltip'))) })
+    tooltip.addAdvanced([`kubejs:dimensional_processor_mainframe`, `kubejs:dimensional_processor_computer`, `kubejs:dimensional_processor_assembly`, `kubejs:dimensional_processor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('item.kubejs.dimensional_circuit.tooltip'))) })
+    tooltip.addAdvanced(`kubejs:monic_processor_mainframe`, (item, adv, text) => { text.add(1, Text.gray(Text.translatable('item.kubejs.monic_processor_mainframe.tooltip'))) })
+    tooltip.addAdvanced(`kubejs:monic_processor_computer`, (item, adv, text) => { text.add(1, Text.gray(Text.translatable('item.kubejs.monic_processor_computer.tooltip'))) })
+    tooltip.addAdvanced(`kubejs:monic_processor_assembly`, (item, adv, text) => { text.add(1, Text.gray(Text.translatable('item.kubejs.monic_processor_assembly.tooltip'))) })
+    tooltip.addAdvanced(`kubejs:monic_processor`, (item, adv, text) => { text.add(1, Text.gray(Text.translatable('item.kubejs.monic_processor.tooltip'))) })
 
     // Multiblocks
     tooltip.add('gtceu:discharger', Text.translatable('gtceu.multiblock.discharger.description'))
@@ -82,16 +99,17 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.multiblock.advanced_microverse_projector_ii.description'))
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.multiblock.subatomic_digital_assembler.description'))
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.multiblock.actualization_chamber.description'))
+    tooltip.add('gtceu:large_naquadah_reactor', Text.translatable('gtceu.multiblock.large_naquadah_reactor.description'))
+    tooltip.add('gtceu:naquadah_refinery', Text.translatable('gtceu.multiblock.naquadah_refinery.description'))
 
-    tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
-        text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
+    //Singleblocks
+    tooltip.addAdvanced([`gtceu:lv_atomic_reconstructor`, `gtceu:mv_atomic_reconstructor`, `gtceu:hv_atomic_reconstructor`, `gtceu:ev_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.lvev_atomic_reconstructor.desc'))) })
+    tooltip.addAdvanced([`gtceu:iv_atomic_reconstructor`, `gtceu:luv_atomic_reconstructor`, `gtceu:zpm_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.ivzpm_atomic_reconstructor.desc'))) })
+    tooltip.addAdvanced([`gtceu:uv_atomic_reconstructor`, `gtceu:uhv_atomic_reconstructor`, `gtceu:uev_atomic_reconstructor`, `gtceu:uiv_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.uvuiv_atomic_reconstructor.desc'))) })
+
+    tooltip.addAdvanced('gtceu:naquadah_reactor', (item, adv, text) => {
+        text.add(1, Text.gray('An reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
         text.add(2, [Text.white('Produces exactly 3 amps of '), Text.red('ZPM'), Text.white('.')])
-        text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
-    })
-
-    tooltip.addAdvanced('gtceu:naquadah_reactor_ii', (item, adv, text) => {
-        text.add(1, Text.gray('An elite reactor capable of capturing more energy from the decay of Enriched Naquadah and Naquadria bolt'))
-        text.add(2, [Text.white('Produces exactly 3 amps of '), Text.translatable('\u00a73UV'), Text.white('.')])
         text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
@@ -108,7 +126,8 @@ ItemEvents.tooltip(tooltip => {
         'quintessence_infuser',
         'hyperbolic_microverse_projector',
         'dimensional_superassembler',
-        'universal_crystallizer'
+        'universal_crystallizer',
+        'biobalance_charger'
     ]
 
     parallelMultis.forEach(multi => {
@@ -129,57 +148,58 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
-    //Converters
-    tooltip.add(/^gtceu:.*a_energy_converter$/, "§7Cannot be extracted from in EU->FE mode!\nUse an FE buffer for this to push into.")
-    
-    // Gregtech
-    tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red("Negation operator [!] is nonfunctional."))
-    tooltip.add('gtceu:basic_tape', '§7Used to wrap up Crates for transport.')
-    tooltip.add('gtceu:ender_fluid_link_cover', '§4Not yet implemented.')
-    tooltip.add('gtceu:nightvision_goggles', '§7Toggle with the [Armor Mode Switch] key.')
-    tooltip.add('kubejs:uxpic_wafer', '§7Raw Ultra Extreme Power Circuit')
-    tooltip.add('kubejs:uxpic_chip', '§7Ultra Extreme Power IC')
+    tooltip.add(/^gtceu:.*a_energy_converter$/, Text.translatable("gtceu.energy_converter.tooltip"));
+    tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red(Text.translatable("gtceu.negation_operator.tooltip")));
+    tooltip.add('gtceu:basic_tape', Text.translatable('gtceu.basic_tape.tooltip'));
+    tooltip.add('gtceu:ender_fluid_link_cover', Text.translatable('gtceu.ender_fluid_link_cover.tooltip'));
+    tooltip.add('gtceu:nightvision_goggles', Text.translatable('gtceu.nightvision_goggles.tooltip'));
 
     // GCYR
-    tooltip.add('gcyr:rocket_scanner', '§7Rotate the multiblock if your rocket doesnt build.')
-    tooltip.add('gcyr:space_chestplate', '§7Fill with Oxygen in a Canner.')
+    tooltip.add('gcyr:rocket_scanner', Text.translatable('gcyr.rocket_scanner.tooltip'));
+    tooltip.add('gcyr:space_chestplate', Text.translatable('gcyr.space_chestplate.tooltip'));
 
     // Sophisticated Storage
-    tooltip.add('functionalstorage:storage_controller', '§7Previously known as a Storage Controller')
-    tooltip.add('functionalstorage:framed_storage_controller', '§7Previously known as a Framed Storage Controller')
+    tooltip.add('functionalstorage:storage_controller', Text.translatable('functionalstorage.storage_controller.tooltip'));
+    tooltip.add('functionalstorage:framed_storage_controller', Text.translatable('functionalstorage.framed_storage_controller.tooltip'));
 
     // AE2
-    tooltip.add('ae2:facade', Text.gray('Crafted with Cable Anchors'))
-    tooltip.add('ae2:memory_card', Text.gray('Hold in offhand to set additional inputs on Multi P2Ps.'))
-    tooltip.add('ae2:creative_fluid_cell', Text.red('Cannot be made using Creative Tank data!\nAE2 devs will not fix a bug that allows this to make items as well.'))
+    tooltip.add('ae2:facade', Text.gray(Text.translatable('ae2.facade.tooltip')));
+    tooltip.add('ae2:memory_card', Text.gray(Text.translatable('ae2.memory_card.tooltip')));
+    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip.1')));
+    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip.2')));
 
-    //EIO Cap Banks
-    tooltip.add(/^enderio:.*_bank$/, "§4Currently TPS intensive, look into other options for power storage.")
+    // EIO Cap Banks
+    tooltip.add(/^enderio:.*_bank$/, Text.translatable("enderio.cap_bank.tooltip"));
 
     // Misc
-    tooltip.add('kubejs:eternal_catalyst', Text.darkGray('Gaze into the Abyss...'))
-    tooltip.add('kubejs:infinity_catalyst', Text.darkGray('One is all, and all is one.'))
-    tooltip.add('gtceu:infinity_ingot', Text.darkGray('The fury of the universe in the palm of your hand.'))
-    tooltip.add('gtceu:monium_ingot', Text.darkGray('The serenity of the universe in the palm of your hand.'))
-    tooltip.add('extendedcrafting:the_ultimate_catalyst', Text.darkGray("I'm the real ultimate catalyst..."))
-    tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray("There is none better than I..."))
+    tooltip.add('kubejs:eternal_catalyst', Text.darkGray(Text.translatable('kubejs.eternal_catalyst.tooltip')));
+    tooltip.add('kubejs:infinity_catalyst', Text.darkGray(Text.translatable('kubejs.infinity_catalyst.tooltip')));
+    tooltip.add('gtceu:infinity_ingot', Text.darkGray(Text.translatable('gtceu.infinity_ingot.tooltip')));
+    tooltip.add('gtceu:monium_ingot', Text.darkGray(Text.translatable('gtceu.monium_ingot.tooltip')));
+    tooltip.add('extendedcrafting:the_ultimate_catalyst', Text.darkGray(Text.translatable("extendedcrafting.the_ultimate_catalyst.tooltip")));
+    tooltip.add('extendedcrafting:the_ultimate_component', Text.darkGray(Text.translatable("extendedcrafting.the_ultimate_component.tooltip")));
 
-    tooltip.add('extendedcrafting:auto_flux_crafter',("§7Uses large amounts of energy to convert Sculk into Sculk Cores."))
-    tooltip.add('extendedcrafting:flux_alternator', ("§7Provides Energy to the Sculk Charger, from up to 3 blocks away."))
-    tooltip.add(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table','extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table', 'extendedcrafting:auto_flux_crafter'], ['§7Cannot be inserted into!', '§7Put items in an inventory atop the table instead.'])
-    
-    tooltip.add('kubejs:excitationcoil', '§7Used for Crafting.')
-    tooltip.add('gtceu:terminal', '§7Can autobuild multiblocks by shift-right-clicking a controller.')
+    tooltip.add('extendedcrafting:auto_flux_crafter', Text.translatable('extendedcrafting.auto_flux_crafter.tooltip'));
+    tooltip.add('extendedcrafting:flux_alternator', Text.translatable('extendedcrafting.flux_alternator.tooltip'));
+    tooltip.addAdvanced(['extendedcrafting:basic_auto_table', 'extendedcrafting:advanced_auto_table', 'extendedcrafting:elite_auto_table', 'extendedcrafting:ultimate_auto_table', 'extendedcrafting:epic_auto_table', 'extendedcrafting:auto_flux_crafter'], (item, adv, text) => {
+        text.add(1, Text.translatable('extendedcrafting.auto_table.tooltip.1'))
+        text.add(2, Text.translatable('extendedcrafting.auto_table.tooltip.2'))
+    })
 
-    tooltip.add(['gtceu:prospector.lv', 'gtceu:prospector.hv', 'gtceu:prospector.luv'], "§7Only shows ores in the immediate vicinity.\nIf you're looking for a specific ore, you may need to go exploring!")
+    tooltip.add('kubejs:excitationcoil', Text.translatable('kubejs.excitationcoil.tooltip'));
+    tooltip.add('gtceu:terminal', Text.translatable('gtceu.terminal.tooltip'));
+
+    tooltip.add(['gtceu:prospector.lv', 'gtceu:prospector.hv', 'gtceu:prospector.luv'], Text.translatable("gtceu.prospector.tooltip.1"));
+    tooltip.add(['gtceu:prospector.lv', 'gtceu:prospector.hv', 'gtceu:prospector.luv'], Text.translatable("gtceu.prospector.tooltip.2"));
 
     // TelePastries
-    tooltip.add('telepastries:nether_cake', '§6Teleports you to the Nether\n§7Refill by right-clicking with 2 or more Obsidian.')
-    tooltip.add('telepastries:overworld_cake', '§6Teleports you to the Overworld\n§7Refill by right-clicking with 2 or more vanilla Saplings.')
-    tooltip.add('telepastries:end_cake', '§6Teleports you to the End\n§7Refill by right-clicking with 2 or more Eyes of Ender.')
-    tooltip.add('telepastries:custom_cake', '§6Teleports you to the Void World\n§7Refill by right-clicking with 2 or more Pulsating Dust.')
-    tooltip.add('telepastries:lost_city_cake', '§6Teleports you to the Lost Cities\n§7Teleport without consuming by right-clicking with a Diamond.')
-
+    const TelePastries = ['nether', 'overworld', 'end', 'custom', 'lost_city']
+    TelePastries.forEach(dim => {
+        tooltip.addAdvanced(`telepastries:${dim}_cake`, (item, adv, text) => {
+            text.add(1, Text.translatable(`telepastries.${dim}_cake.tooltip.1`))
+            text.add(2, Text.translatable(`telepastries.${dim}_cake.tooltip.2`))
+        })
+    })
 
     // NuclearCraft
     tooltip.add('nuclearcraft:rhodochrosite_dust', '§eMnCO₃');
@@ -209,7 +229,7 @@ ItemEvents.tooltip(tooltip => {
     })
 
     // Macerator byproduct warning
-    tooltip.add(['gtceu:lp_steam_macerator', 'gtceu:hp_steam_macerator', 'gtceu:steam_grinder', 'gtceu:lv_macerator', 'gtceu:mv_macerator'], '§4You must use a HV-tier macerator or higher for byproducts.')
+    tooltip.add(['gtceu:lp_steam_macerator', 'gtceu:hp_steam_macerator', 'gtceu:steam_grinder', 'gtceu:lv_macerator', 'gtceu:mv_macerator'], Text.translatable("gtceu.macerator_byrproduct_warning.tooltip"))
 
     // Wooden pipe, tank warning
     tooltip.add([
@@ -220,21 +240,32 @@ ItemEvents.tooltip(tooltip => {
         'gtceu:wood_large_fluid_pipe',
         'gtceu:treated_wood_large_fluid_pipe',
         'gtceu:wooden_multiblock_tank'
-    ], '§4Can\'t hold Steam or other gases!')
+    ], Text.translatable("gtceu.wood_pipe_warning.tooltip"))
 
     // Chipped workbenches
-    tooltip.add([
+    tooltip.addAdvanced([
         'chipped:botanist_workbench',
         'chipped:glassblower',
         'chipped:carpenters_table',
         'chipped:loom_table',
         'chipped:mason_table',
         'chipped:alchemy_bench',
-        'chipped:tinkering_table'
-    ], '§7Recipes can also be performed in the §3Stonecutter§7,\nwhich can be automated with §bAE2§7\'s §3Molecular Assemblers§7.')
+        'chipped:tinkering_table'],  (item, adv, text) => {
+        text.add(1, Text.translatable('chipped.workbenches.tooltip.1'))
+        text.add(2, Text.translatable('chipped.workbenches.tooltip.2'))
+    })
+    tooltip.add('chisel_chipped_integration:drill', Text.translatable('chipped.drill.tooltip'))
 
+    // Note about PEX crafter speed
+    tooltip.add([
+        'packagedexcrafting:advanced_crafter',
+        'packagedexcrafting:elite_crafter',
+        'packagedexcrafting:ultimate_crafter',
+        'packagedexexcrafting:epic_crafter'
+        ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
+    
     // Tempad
     if (Platform.isLoaded('tempad')) {
-        tooltip.add('tempad:tempad', '§6Uses Monipennies as fuel');
+        tooltip.add('tempad:tempad', Text.translatable("tempad.tempad.tooltip"))
     }
 })

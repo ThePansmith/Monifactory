@@ -1,0 +1,7 @@
+{
+  "modifyDefaultItemDuration": false,
+  "defaultItemDuration": 300,
+  "despawnDurations": {
+    "minecraft:sugar_cane": 20
+  }
+}

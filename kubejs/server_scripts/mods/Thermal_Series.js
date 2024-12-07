@@ -275,19 +275,21 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.shaped(
-        'systeams:steam_dynamo', [
-            ' A ',
-            'BCB',
-            'DED'
-        ], {
-            A: 'kubejs:excitationcoil',
-            B: 'gtceu:copper_plate',
-            C: 'ironfurnaces:iron_furnace',
-            D: 'gtceu:wrought_iron_gear',
-            E: 'systeams:boiler_pipe'
-        }
-    )
+    if(!isExpertMode) {
+        event.shaped(
+            'systeams:steam_dynamo', [
+                ' A ',
+                'BCB',
+                'DED'
+            ], {
+                A: 'kubejs:excitationcoil',
+                B: 'gtceu:copper_plate',
+                C: 'ironfurnaces:iron_furnace',
+                D: 'gtceu:wrought_iron_gear',
+                E: 'systeams:boiler_pipe'
+            }
+        )
+    }
 
     event.shaped(
         'thermal:dynamo_magmatic', [
@@ -741,6 +743,9 @@ ServerEvents.recipes(event => {
         A: '#forge:nuggets/signalum',
         B: '#forge:ingots/signalum'
     }).id('kubejs:lock');
+
+    // Workbench
+    event.replaceInput({ id: 'thermal:tinker_bench' }, 'minecraft:crafting_table', 'gtceu:lv_machine_hull')
 
     /*=== misc thermals ===*/
     event.remove({ output: 'thermal:phytogro' });

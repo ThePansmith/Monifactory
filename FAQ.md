@@ -34,9 +34,17 @@ Technically? Yes. In a practical sense? No. Loading the 1.12 world in 1.20.1 Mon
 
 Monifactory will not be backported to any versions before 1.20.1. Porting the pack to a future version of Minecraft may or may not happen, but **do not ask or pester the devs**.
 
+**Q. Will Monifactory be ported to Fabric?**
+
+Monifactory will not be ported to Fabric. Some mods necessary to the modpack are not available on Fabric, so a port to Fabric is not an option available to us.
+
+**Q. Will Monifactory be released on Modrinth?**
+
+Monifactory will not be released on Modrinth. Some mods necessary to the modpack are not available on Modrinth, so releasing on their platform is not an option available to us.
+
 **Q. Is Create in the modpack?**
 
-No, Create is not in Monifactory by default.
+No, Create is not in Monifactory by default. There is a compatibility script for it as described in the README.
 
 **Q. Are Lithium and Sodium in the modpack?**
 

@@ -118,8 +118,8 @@
 			id: "20F44ACD2F91FD2A"
 			linked_quest: "4DF92773C82F4AAC"
 			shape: "hexagon"
-			x: 40.25d
-			y: -20.0d
+			x: 37.5d
+			y: -17.0d
 		}
 		{
 			id: "3F8FC1CF9A8083E1"
@@ -292,7 +292,7 @@
 			id: "4EA1E0D437528747"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "I bet we could make robot arms out of this."
+			subtitle: "I bet we could make hulls out of this."
 			tasks: [{
 				id: "67517FC01121D069"
 				item: "gtceu:infinity_ingot"
@@ -637,7 +637,10 @@
 			y: -13.5d
 		}
 		{
-			dependencies: ["07057CDE4E021BA7"]
+			dependencies: [
+				"07057CDE4E021BA7"
+				"07E757AAA1C7435D"
+			]
 			description: [
 				"The &3Hyperbolic Microverse Projector&r is the most powerful projector, capable of running hundreds of missions in parallel. It can perform all previous Micro Miner missions, and opens the door to many new ones."
 				""
@@ -656,10 +659,7 @@
 			y: -13.5d
 		}
 		{
-			dependencies: [
-				"1B1D3A66B847D129"
-				"5911900438648430"
-			]
+			dependencies: ["1B1D3A66B847D129"]
 			description: [
 				"The &6Dimensional Superassembler&r uses dimensional warping to process hundreds of Assembly Line recipes at once. "
 				""
@@ -680,6 +680,7 @@
 			dependencies: [
 				"1B1D3A66B847D129"
 				"040B3FCD82533BD9"
+				"786AECA42F53B45A"
 			]
 			description: ["The IPMEPS is capable of altering the laws of physics on a microversal scale, thus allowing the production of previously impossible materials."]
 			id: "13578427FD9CC2CE"
@@ -697,7 +698,7 @@
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
-			description: ["Infinity can be manipulated to create Monium, the strongest possible material."]
+			description: ["Infinity can be manipulated to create &9Monium&r, the strongest possible material."]
 			id: "060A5766B021FC77"
 			shape: "hexagon"
 			size: 1.5d
@@ -714,7 +715,7 @@
 		{
 			dependencies: ["060A5766B021FC77"]
 			description: [
-				"Turns out corrupting a Microverse has some other interesting consequences, including creating singularities. These impossibilities may just be what you need to create an impossibly perfect circuit line, but you do need to be able to contain it in some way."
+				"Turns out corrupting a Microverse has some other interesting consequences, including creating &6Singularities&r. These impossibilities may just be what you need to create an impossibly perfect circuit line, but you do need to be able to contain it in some way."
 				""
 				"Thankfully, you already have a metal that bends the rules, so that should be a good starting place."
 			]
@@ -745,7 +746,7 @@
 		{
 			dependencies: ["739F7BF2A90B278A"]
 			description: [
-				"&fThe Omnic Forge will allow you to produce post-tank coils and casings. It is also part of the Netherite processing line."
+				"&fThe &9Omnic Forge&r will allow you to &eproduce post-tank coils and casings&r. It is also part of the Netherite processing line."
 				""
 				"Note that Omnic Matrix Machine Casings are twice as expensive when crafted using the Assembler, so make sure to use your first Omnic Forge to build any extra ones."
 				""
@@ -888,11 +889,7 @@
 		}
 		{
 			dependencies: ["6DF2C1E88BE7CE5F"]
-			description: [
-				"The precursor to &9Matter Processing Units&r. Note that these boards require circuits themselves to craft."
-				""
-				"These circuit boards will also find use in all of the remaining circuit tiers, as they will be upgraded into their respective circuit boards. "
-			]
+			description: ["The precursor to &9Matter Processing Units&r. Note that these boards require circuits themselves to craft, like with Wetware."]
 			id: "5A07988F5AD20A06"
 			shape: "hexagon"
 			tasks: [{
@@ -902,14 +899,18 @@
 			}]
 			title: "&9Matter Circuit Board"
 			x: 38.75d
-			y: -8.75d
+			y: -11.75d
 		}
 		{
 			dependencies: [
 				"39A09DA3903C5564"
 				"601A47A727AC3BD2"
 			]
-			description: ["A &9Multidimentional CPU Wafer&r needs to be enhanced and cut before it is usable in circuit recipes."]
+			description: [
+				"A &9Multidimentional CPU Wafer&r needs to be enhanced and cut before it is usable in circuit recipes."
+				""
+				"It may be worth setting up a line for these. They'll be seeing frequent use from here on out."
+			]
 			id: "2D5677EA9F47AA83"
 			shape: "hexagon"
 			subtitle: "Technically, all CPU Chips are multidimensional."
@@ -937,8 +938,11 @@
 			y: -6.75d
 		}
 		{
-			dependencies: ["060A5766B021FC77"]
-			description: ["The last circuit board. These require UV circuits, but at this point it shouldn't be an issue for you."]
+			dependencies: [
+				"060A5766B021FC77"
+				"2343B68110805282"
+			]
+			description: ["The last circuit board. These require UV circuits, &6Dimensional Circuit Boards&r, and &6Ultimate Gems&r, but at this point it shouldn't be an issue for you."]
 			id: "434142F777A2CCBE"
 			shape: "hexagon"
 			tasks: [{
@@ -952,9 +956,10 @@
 		{
 			dependencies: [
 				"5A07988F5AD20A06"
-				"0DE1BF1648CAF6D6"
+				"4EA1E0D437528747"
+				"4DF92773C82F4AAC"
 			]
-			description: ["The precursor to &6Dimensional Processing Units&r. These will be your first major use for &6Holmium&r."]
+			description: ["The precursor to &6Dimensional Processing Units&r. On top of requiring &6Infinity Plates&r and &6The Ultimate Material&r, these need a lot of &6Polyethyl Cyanoacrylate&r. Make sure you can produce enough to feed the demand."]
 			id: "7E93D88827F83E1A"
 			shape: "hexagon"
 			tasks: [{
@@ -1076,7 +1081,7 @@
 		}
 		{
 			dependencies: ["39A09DA3903C5564"]
-			description: ["These RAM chips will find use in the remaining Mainframe recipes."]
+			description: ["These RAM chips will find use in the remaining circuit recipes."]
 			id: "7AF06CB391779388"
 			shape: "hexagon"
 			tasks: [{
@@ -1085,7 +1090,7 @@
 				type: "item"
 			}]
 			x: 43.75d
-			y: -8.75d
+			y: -12.25d
 		}
 		{
 			dependencies: ["39A09DA3903C5564"]
@@ -1139,7 +1144,7 @@
 			description: [
 				"&9Ruined Hull&r is more abundant than &9Ruined Machine Parts&r but gives less &9Holmium&r overall. "
 				""
-				"It also drops high-end materials such as &6Neutronium&r, &6Tritanium&r, and &6Crystal Matrix Dust&r, although these are mostly irrelevant to you as you already have the &9Creative Quantum Tank.&r"
+				"It also drops high-end materials such as &6Neutronium&r, &6Tritanium&r, and &6Crystal Matrix Dust&r."
 			]
 			id: "72996D5B09AC57CF"
 			shape: "hexagon"
@@ -1184,71 +1189,9 @@
 			y: -11.5d
 		}
 		{
-			dependencies: ["113E9543ADB1666B"]
-			description: [
-				"The &9Cryococcal Reverberator&r is a means of using &6Cryococcus&r to convert matter directly into energy more efficiently than any other means."
-				""
-				"It only works with a handful of highly energy-dense items and consumes a wealth of &6Cryococcus,&r so you'll need to find a way to produce these consistently and in bulk."
-				""
-				"If you manage to supply it with &6Contained Singularities&r, you'll be awarded with enough energy to saturate a &6UIV 4,096A Laser Source Hatch&r while avoiding the explosive risk of &elarge spheres of superheated dragon metal.&r"
-			]
-			icon: "gtceu:cryococcal_reverberator"
-			id: "25A7BC39C30139DA"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "WARNING: Recipes subject to change!"
-			tasks: [
-				{
-					id: "009824CA79D811CC"
-					item: "gtceu:cryococcal_reverberator"
-					type: "item"
-				}
-				{
-					count: 152L
-					id: "13BFBC913CC929D9"
-					item: { Count: 152, id: "gtceu:naquadah_alloy_frame" }
-					type: "item"
-				}
-				{
-					count: 1063L
-					id: "22523AC6932FC851"
-					item: "gtceu:atomic_casing"
-					type: "item"
-				}
-				{
-					count: 52L
-					id: "7B8B5E74E7A5C1A0"
-					item: { Count: 52, id: "kubejs:cryococcus_fusion_coil" }
-					type: "item"
-				}
-				{
-					count: 124L
-					id: "1FFF2FDB7B3FE718"
-					item: { Count: 124, id: "kubejs:cryococcus_fusion_casing" }
-					type: "item"
-				}
-				{
-					count: 88L
-					id: "5EFC3A7D1AA28C88"
-					item: { Count: 88, id: "kubejs:cryococcus_casing" }
-					type: "item"
-				}
-				{
-					count: 380L
-					id: "31FC71C05028D375"
-					item: { Count: 380, id: "kubejs:cryolobus_casing" }
-					type: "item"
-				}
-			]
-			title: "Cryococcal Reverberator"
-			x: 33.5d
-			y: -8.75d
-		}
-		{
 			dependencies: [
 				"1F7F73BF81570F3C"
 				"07057CDE4E021BA7"
-				"5911900438648430"
 			]
 			description: [
 				"The &9Helical Fusion Reactor&r is a very large multiblock structure used for fusing elements into heavier ones &ein parallel&r. "
@@ -1271,9 +1214,9 @@
 		{
 			dependencies: ["739F7BF2A90B278A"]
 			description: [
-				"As the most advanced polymer you will need to make, Polyethyl Cyanoacrylate is required for a few endgame crafts."
+				"As the most advanced polymer you will need to make, &6Polyethyl Cyanoacrylate&r is required for a few endgame crafts."
 				""
-				"Fortunately, you won't need too much of it."
+				"It's a little different from previous polymers, but you'll be fine."
 			]
 			hide_dependency_lines: true
 			id: "5911900438648430"
@@ -1284,8 +1227,138 @@
 				type: "item"
 			}]
 			title: "Polyethyl Cyanoacrylate"
-			x: 48.0d
-			y: -24.25d
+			x: 51.5d
+			y: -10.75d
+		}
+		{
+			dependencies: ["7C4E04E3EA603000"]
+			description: ["The &9Large Naquadah Reactor&r is an upgraded reactor that can generate immense amounts of EU energy from Naquadric Reactions. The fuels used in it are more complicated, but will generate massive amounts of power in return."]
+			icon: "gtceu:large_naquadah_reactor"
+			id: "21E10888F52A3C73"
+			rewards: [{
+				id: "0EAC9C8EA00645D3"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "51C99B20F637AA2C"
+					item: "gtceu:large_naquadah_reactor"
+					type: "item"
+				}
+				{
+					id: "50D6A908FA1219AC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/omnium"
+						}
+					}
+					title: "Omnium Block"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "45590F6CC64C83CE"
+					item: "gtceu:ruthenium_trinium_americium_neutronate_block"
+					type: "item"
+				}
+				{
+					id: "2D55A07E5C289245"
+					item: "gtceu:uv_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "&9Large Naquadah Reactor"
+			x: 35.0d
+			y: -8.75d
+		}
+		{
+			dependencies: [
+				"21E10888F52A3C73"
+				"1F7F73BF81570F3C"
+			]
+			description: ["Refines Naquadah Fuels into more potent varients."]
+			hide_until_deps_visible: true
+			id: "4E9530E62A4B673B"
+			tasks: [{
+				id: "1A12706752D1F8FC"
+				item: "gtceu:naquadah_refinery"
+				type: "item"
+			}]
+			title: "&9Naquadah Refining"
+			x: 33.0d
+			y: -8.75d
+		}
+		{
+			dependencies: ["1B1D3A66B847D129"]
+			description: ["&9Eltz&r is made by processing &6Eltic Actinate Gems&r in a Electric Blast Furnace, which in turn are created from &6Eltic Crystal Seeds&r, and some other materials."]
+			id: "786AECA42F53B45A"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Ez, right?"
+			tasks: [{
+				id: "3197EF56CDB20130"
+				item: "gtceu:eltz_ingot"
+				type: "item"
+			}]
+			title: "&9Eltz"
+			x: 43.75d
+			y: -26.75d
+		}
+		{
+			dependencies: [
+				"4DF92773C82F4AAC"
+				"07057CDE4E021BA7"
+			]
+			description: [
+				"A bioalloy, this material sees use in UEV Tier components."
+				""
+				"This material is primarly made up of a &6Sculk Microstructure Pulp&r and a bit &6Prussian Blue&r, and is activated in a discharger."
+			]
+			id: "0ED041E2114F7C84"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Slightly... Gooey?"
+			tasks: [{
+				id: "21D7458960FAB5AE"
+				item: "gtceu:sculk_bioalloy_ingot"
+				type: "item"
+			}]
+			title: "&9S.C.U.L.K. Bioalloy"
+			x: 45.75d
+			y: -16.0d
+		}
+		{
+			dependencies: ["01E542E1C9DAF5B4"]
+			description: [
+				"&9Actinium&r is a radioactive material, and be obtained by a reaction between a &6Iridium Neutron Reflector&r and &6Uranium Hexafluoride&r, having a chance of creating small piles of &9Actinium&r. "
+				""
+				"Keep in mind, though, that such volatile reaction could cause the reflector &eto break&r, so keeping spares is important."
+			]
+			icon: "gtceu:actinium_ingot"
+			id: "07E757AAA1C7435D"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Radioactive!"
+			tasks: [
+				{
+					id: "450DAA4FF933F49A"
+					item: "gtceu:actinium_ingot"
+					type: "item"
+				}
+				{
+					id: "65DF1406D1FBC1EA"
+					item: "gtceu:small_actinium_dust"
+					type: "item"
+				}
+			]
+			title: "&9Actinium"
+			x: 50.0d
+			y: -10.75d
 		}
 	]
 	title: "End Game"

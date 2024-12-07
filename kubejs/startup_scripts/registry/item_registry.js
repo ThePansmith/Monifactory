@@ -83,7 +83,9 @@ StartupEvents.registry('item', event => {
 
 
     // Monicoins
-    event.create('moni_penny')
+    if (isNormalMode) {
+        event.create('moni_penny')
+    }
     event.create('moni_nickel')
     event.create('moni_quarter')
     event.create('moni_dollar').glow(true)
@@ -243,6 +245,13 @@ StartupEvents.registry('item', event => {
     event.create('grains_of_innocence')
     event.create('radium_salt').rarity('Epic')
 
+    // Thrusters
+    const thrusters = ['conductive_iron','leadstone','electrical_steel','hardened','energetic','reinforced','resonant','vibrant','dark_soularium','fluxed']
+
+    thrusters.forEach(thruster => {
+    event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
+    })
+
     // Planet dusts
     event.create('moon_dust')
     event.create('mars_dust')
@@ -282,7 +291,6 @@ StartupEvents.registry('item', event => {
     event.create('flight_control_unit')
     event.create('glowstone_elevation_unit')
     event.create('cryotheum_coolant_unit')
-
 
     // EnderIO Capacitors
     // TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
@@ -338,12 +346,34 @@ StartupEvents.registry('item', event => {
     event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
+    //Solid Naquadah Fuel Line
+    event.create('pellet_extruder_mold').texture('kubejs:item/naquadah/pellet_extruder_mold')
+    event.create('empty_fuel_rod').texture('kubejs:item/naquadah/empty_fuel_rod')
+    event.create('naquadah_fuel_pellet').texture('kubejs:item/naquadah/naquadah_fuel_pellet')
+    event.create('naquadah_fuel_rod').texture('kubejs:item/naquadah/naquadah_fuel_rod')
+    event.create('hot_depleted_naquadah_fuel_rod').texture('kubejs:item/naquadah/hot_depleted_naquadah_fuel_rod')
+    event.create('depleted_naquadah_fuel_rod').texture('kubejs:item/naquadah/depleted_naquadah_fuel_rod')
+    event.create('unsintered_naquadah_fuel_pellet').texture('kubejs:item/naquadah/unsintered_naquadah_fuel_pellet')
+    event.create('depleted_naquadah_fuel_pellet').texture('kubejs:item/naquadah/depleted_naquadah_fuel_pellet')
+    event.create('naquadah_fuel_dust').texture('kubejs:item/naquadah/naquadah_fuel_dust')
+    event.create('raw_naquadah_fuel_dust').texture('kubejs:item/naquadah/raw_naquadah_fuel_dust')
+    event.create('nuclear_waste').texture('kubejs:item/naquadah/nuclear_waste')
+    event.create('inactivated_naquadah_fuel_dust').texture('kubejs:item/naquadah/inactivated_naquadah_fuel_dust')
+    event.create('depleted_naquadah_fuel_dust').texture('kubejs:item/naquadah/depleted_naquadah_fuel_dust')
+    event.create('crude_naquadah_fuel_blend').texture('kubejs:item/naquadah/crude_naquadah_fuel_blend')
+    event.create('hot_naquadah_fuel_crystal').texture('kubejs:item/naquadah/hot_naquadah_fuel_crystal')
+    event.create('naquadah_fuel_crystal').texture('kubejs:item/naquadah/naquadah_fuel_crystal')
+    event.create('naquadah_fuel_mixture_dust').texture('kubejs:item/naquadah/naquadah_fuel_mixture_dust')
+
+
+
+
 
     // Sculk bioalloy processing intermediate products
-    event.create('sculk-compatible_trellis_microstructure')
-    event.create('fibrinogenic_sculk_goo')
-    event.create('sculk-saturated_microstructure_pulp')
-    event.create('animated_bioalloy_pulp')
+    event.create('sculk-compatible_trellis_microstructure').texture('kubejs:item/bioalloy/sculk-compatible_trellis_microstructure')
+    event.create('fibrinogenic_sculk_goo').texture('kubejs:item/bioalloy/fibrinogenic_sculk_goo')
+    event.create('sculk-saturated_microstructure_pulp').texture('kubejs:item/bioalloy/sculk-saturated_microstructure_pulp')
+    event.create('animated_bioalloy_pulp').texture('kubejs:item/bioalloy/animated_bioalloy_pulp')
 
 
     // Alien Scrapline
@@ -360,18 +390,18 @@ StartupEvents.registry('item', event => {
     event.create('holmium_oxide_glass_dust')
 
 
-    //Uru metal processing intermediate products
-    event.create('reactive_dust_mixture')
-    event.create('inert_dust_mixture')
-    event.create('dusty_inert_powder')
-    event.create('centrifuged_inert_powder')
-    event.create('cured_inert_powder')
-    event.create('shiny_powder_mixture')
-    event.create('shiny_metal_powder')
-    event.create('inert_clumps')
-    event.create('saturated_inert_clumps')
-    event.create('clean_inert_cluster')
-    event.create('uric_crystal_seed')
+    //Eltz metal processing intermediate products
+    event.create('reactive_dust_mixture').texture('kubejs:item/eltz/reactive_dust_mixture')
+    event.create('inert_dust_mixture').texture('kubejs:item/eltz/inert_dust_mixture')
+    event.create('dusty_inert_powder').texture('kubejs:item/eltz/dusty_inert_powder')
+    event.create('centrifuged_inert_powder').texture('kubejs:item/eltz/centrifuged_inert_powder')
+    event.create('cured_inert_powder').texture('kubejs:item/eltz/cured_inert_powder')
+    event.create('shiny_powder_mixture').texture('kubejs:item/eltz/shiny_powder_mixture')
+    event.create('shiny_metal_powder').texture('kubejs:item/eltz/shiny_metal_powder')
+    event.create('inert_clumps').texture('kubejs:item/eltz/inert_clumps')
+    event.create('saturated_inert_clumps').texture('kubejs:item/eltz/saturated_inert_clumps')
+    event.create('clean_inert_cluster').texture('kubejs:item/eltz/clean_inert_cluster')
+    event.create('eltic_crystal_seed').texture('kubejs:item/eltz/eltic_crystal_seed')
 
 
     // Post-Tank Wafer items
@@ -480,14 +510,5 @@ StartupEvents.registry('item', event => {
             .displayName(universal_circuit.toUpperCase() + " Universal Circuit")
             .tooltip("§7A Universal Circuit")
             .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
-    })
-})
-
-ItemEvents.toolTierRegistry(event => {
-    event.add("dev", (tier) => {
-        tier.enchantmentValue = 42
-        tier.level = 42
-        tier.uses = 42690
-        tier.speed = 12
     })
 })

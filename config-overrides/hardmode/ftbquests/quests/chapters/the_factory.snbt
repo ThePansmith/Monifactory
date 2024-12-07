@@ -538,7 +538,9 @@
 				""
 				"To collect the sugar cane, you can use a piston and an observer."
 				""
-				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
+				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile."
+				""
+				"If the noises are annoying to you, take a look at the muffling quest to see how to mute them."
 			]
 			hide_until_deps_visible: true
 			icon: "snad:snad"

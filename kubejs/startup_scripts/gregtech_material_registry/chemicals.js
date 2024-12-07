@@ -143,7 +143,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('1x nitrogen', '6x carbon', '7x hydrogen', '2x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
 
-
     // Dimethyl sulfoxide sub-chain (PECA catalyst)
     event.create('dimethyl_sulfoxide')
         .liquid()
@@ -155,13 +154,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xACB279)
         .components('2x carbon', '6x hydrogen', '1x sulfur')
 
-    // Saturated water (Uru line midproduct)
+    // Saturated water (Eltz line midproduct)
     event.create('saturated_water')
         .liquid()
         .color(0x857049)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
-
 
 // Modify materials' compositions
 GTCEuStartupEvents.materialModification(() => {

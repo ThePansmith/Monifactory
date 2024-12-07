@@ -184,14 +184,14 @@ StartupEvents.registry("block", event => {
 
     // Machine Casings
     const casings = [
-        'empowerer',
         'microverse',
         'cryolobus',
         'cryococcus',
         'cryococcus_fusion',
         'dark_soularium',
         'omnic_matrix_machine',
-        'dimensional_stabilization_netherite'
+        'dimensional_stabilization_netherite',
+        'biosourced_sculk'
     ]
 
     casings.forEach(casing => {
@@ -256,4 +256,12 @@ StartupEvents.registry("block", event => {
         .tagBlock("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .soundType('metal')
+
+        event.create('meowni_plush', 'cardinal')
+        .displayName("Meowni Plush")
+        .soundType('wool')
+        .renderType('cutout')
+        .tag("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .defaultCutout();
 });

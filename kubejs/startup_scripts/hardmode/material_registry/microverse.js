@@ -3,12 +3,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         return;
     }
 
-    event.create("fluorite") // Hardmode only
-        .dust().ore()
-        .color(0xFFFC9E).iconSet('rough')
-        .components('calcium', '2x fluorine')
-        .addOreByproducts('sphalerite', 'bastnasite', 'topaz')
-
     event.create("darmstadtite") // Hardmode only
         .dust().ore(2, 1)
         .iconSet('dull')

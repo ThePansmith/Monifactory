@@ -1,27 +1,27 @@
 ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.shaped_table(
         'gtceu:omnic_forge', [
-            'ASESA',
-            'SCRCS',
-            'EVTVE',
-            'SCRCS',
-            'ASESA'
-        ], {
-            A: '#gtceu:circuits/uhv',
-            S: 'gtceu:double_neutronium_plate',
-            E: 'gtceu:uv_field_generator',
-            C: 'kubejs:omnic_matrix_machine_casing',
-            R: 'gtceu:uv_robot_arm',
-            V: 'gtceu:uv_conveyor_module',
-            T: 'gtceu:uv_machine_hull'
-        }
+        'ASESA',
+        'SCRCS',
+        'EVTVE',
+        'SCRCS',
+        'ASESA'
+    ], {
+        A: '#gtceu:circuits/uhv',
+        S: 'gtceu:double_neutronium_plate',
+        E: 'gtceu:uv_field_generator',
+        C: 'kubejs:omnic_matrix_machine_casing',
+        R: 'gtceu:uv_robot_arm',
+        V: 'gtceu:uv_conveyor_module',
+        T: 'gtceu:uv_machine_hull'
+    }
     )
     event.recipes.gtceu.assembler('kubejs:omnic_matrix_machine_casing')
         .itemInputs('12x gtceu:omnium_plate', '2x gtceu:crystal_matrix_frame', '2x gtceu:zpm_field_generator', '2x #gtceu:circuits/uv')
         .itemOutputs('2x kubejs:omnic_matrix_machine_casing')
         .duration(2000)
         .EUt(65520)
-    
+
     event.recipes.gtceu.omnic_forge('kubejs:omnic_matrix_machine_casing_forge')
         .itemInputs('6x gtceu:omnium_plate', 'gtceu:crystal_matrix_frame', 'gtceu:zpm_field_generator', '#gtceu:circuits/uv')
         .itemOutputs('2x kubejs:omnic_matrix_machine_casing')
@@ -33,19 +33,25 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:omnic_matrix_coil_block')
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UHV])
-   
+
     event.recipes.gtceu.omnic_forge('kubejs:netherite_casing')
         .itemInputs('8x gtceu:neutronium_plate', '8x gtceu:large_scale_assembler_casing', '2x gtceu:dense_activated_netherite_plate', '6x gtceu:tungsten_steel_rod')
         .itemOutputs('4x kubejs:dimensional_stabilization_netherite_casing')
         .duration(2000)
         .EUt(65520)
 
-    event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_coil')
+    event.recipes.gtceu.omnic_forge('kubejs:biosourced_sculk_casing')
+        .itemInputs('4x gtceu:sculk_bioalloy_plate', '2x gtceu:cryolobus_frame', '4x kubejs:warden_horn', '6x gtceu:actinium_rod')
+        .itemOutputs('2x kubejs:biosourced_sculk_casing')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UV])
+
+        event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_coil')
         .itemInputs('2x gtceu:fusion_coil', '8x gtceu:dense_cryococcus_plate', '2x gtceu:activated_netherite_frame', '2x #gtceu:circuits/uhv', 'gtceu:uhv_field_generator')
         .itemOutputs('2x kubejs:cryococcus_fusion_coil')
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
-    
+
     event.recipes.gtceu.omnic_forge('kubejs:cryococcus_fusion_casing')
         .itemInputs('gtceu:uhv_machine_hull', '2x kubejs:cryococcus_fusion_coil', '12x gtceu:cryococcus_plate', '4x gtceu:fusion_casing_mk3', 'gtceu:uhv_field_generator')
         .itemOutputs('4x kubejs:cryococcus_fusion_casing')
@@ -87,13 +93,13 @@ ServerEvents.recipes(event => {
     //Simplified Crafting
     event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_dark_soularium_thruster')
         .itemInputs('4x gtceu:dark_soularium_plate', '6x gtceu:vibrant_alloy_plate', '2x enderio:ender_crystal', '2x enderio:prescient_crystal', 'enderio:cryolobus_conduit', 'kubejs:flight_control_unit')
-        .itemOutputs(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}'))
+        .itemOutputs('kubejs:dark_soularium_thruster')
         .duration(100)
         .EUt(7680)
 
     event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_flux_thruster')
         .itemInputs('3x redstone_arsenal:flux_plating', '4x gtceu:enderium_plate', '2x gtceu:signalum_plate', 'thermal:dynamo_numismatic', 'kubejs:glowstone_elevation_unit', 'kubejs:cryotheum_coolant_unit')
-        .itemOutputs(Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}'))
+        .itemOutputs('kubejs:fluxed_thruster')
         .duration(50)
         .EUt(7680)
 
@@ -102,9 +108,9 @@ ServerEvents.recipes(event => {
         .itemOutputs('64x kubejs:quantum_flux')
         .duration(50)
         .EUt(1920)
-    
+
     event.recipes.gtceu.omnic_forge('fieldstabilizedcompound')
-        .itemInputs('4x gtceu:uiv_field_generator', '3x gtceu:uev_field_generator', '2x gtceu:uhv_field_generator',  '12x gtceu:omnic_acid_dust', '10x kubejs:quasi_stable_neutron_star')
+        .itemInputs('4x gtceu:uiv_field_generator', '3x gtceu:uev_field_generator', '2x gtceu:uhv_field_generator', '12x gtceu:omnic_acid_dust', '10x kubejs:quasi_stable_neutron_star')
         .itemOutputs('kubejs:field_stabilised_omnic_pulsar_compound')
         .duration(255)
         .EUt(16380)

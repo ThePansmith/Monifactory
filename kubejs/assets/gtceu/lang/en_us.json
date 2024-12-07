@@ -1,4 +1,4 @@
-{ 
+{
   "__HM_RARE_EARTH__.header": "========================",
   "__HM_RARE_EARTH__.flufff": "> Hard Mode Rare Earth <",
   "__HM_RARE_EARTH__.footer": "========================",
@@ -47,7 +47,7 @@
 
   "material.gtceu.darmstadtite": "Darmstadtite",
   "material.gtceu.dulysite": "Dulysite",
-  
+
 
   "__PARALLEL_HATCHES__.header": "====================",
   "__PARALLEL_HATCHES__.flufff": "> Parallel Hatches <",
@@ -75,6 +75,9 @@
   "block.gtceu.uev_atomic_reconstructor": "§aEpic Atomic Reconstructor II",
   "block.gtceu.uiv_atomic_reconstructor": "§2Epic Atomic Reconstructor II",
 
+  "block.gtceu.lvev_atomic_reconstructor.desc": "§7Disassembles and Reassembles on the atomic level",
+  "block.gtceu.ivzpm_atomic_reconstructor.desc": "§7Circuit Rewriter",
+  "block.gtceu.uvuiv_atomic_reconstructor.desc": "§7Two steps away from being a nuke",
 
   "__CUSTOM_MULTIS__.header": "=====================================",
   "__CUSTOM_MULTIS__.flufff": "> Custom Multiblocks & Recipe Types <",
@@ -96,11 +99,18 @@
   "gtceu.advanced_microverse_iii": "Hyperbolic Microverse Projector",
   "gtceu.multiblock.hyperbolic_microverse_projector.description": "§7An epic machine capable of stabilizing projection into hundreds of microverses at once.\nCan perform all Microverse Missions.",
 
-  "block.gtceu.naquadah_reactor_i": "Naquadah Reactor I",
-  "gtceu.naquadah_reactor_i": "Naquadah Reactor I",
+  "block.gtceu.naquadah_reactor": "Naquadah Reactor",
+  "gtceu.naquadah_reactor": "Naquadah Reactor",
 
-  "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
-  "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
+  "block.gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
+  "gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
+  "gtceu.multiblock.large_naquadah_reactor.description": "§7A highly advanced multiblock capable of generating massive amounts of energy from Naquadaric Decay.",
+
+
+  "block.gtceu.naquadah_refinery": "Naquadah Refinery",
+  "gtceu.naquadah_refinery": "Naquadah Refining",
+  "gtceu.multiblock.naquadah_refinery.description": "§7Refines crude naquadaric fuels into more potent fuels.",
+
 
   "block.gtceu.matter_alterator": "Matter Alterator",
   "gtceu.atomic_reconstruction": "Atomic Reconstruction",
@@ -126,6 +136,11 @@
   "gtceu.discharger": "Dischargement",
   "gtceu.multiblock.discharger.description": "§7Discharges a massive amount of energy to perform recipes",
 
+  "block.gtceu.biobalance_charger": "Biobalance Charger",
+  "gtceu.charger": "Advanced Sculk Charging",
+  "gtceu.multiblock.biobalance_charger.description": "§7A Balance Charger, capable of both Charging and Discharging",
+
+
   "block.gtceu.implosion_collider": "Implosion Collider",
   "gtceu.multiblock.implosion_collider.description": "§7Capable of smashing things together even faster than before.",
 
@@ -140,7 +155,7 @@
   "block.gtceu.loot_superfabricator": "Loot Superfabricator",
   "gtceu.loot_superfabricator": "Loot Superfabricator",
   "gtceu.multiblock.loot_superfabricator.description": "§7A high powered fabrication device, capable of fabricating loot faster than ever",
-  
+
   "block.gtceu.dimensional_superassembler":"Dimensional Superassembler",
   "gtceu.multiblock.dimensional_superassembler.description": "§7Uses dimensional warping to process hundreds of assembly line recipes at once.",
 
@@ -151,7 +166,7 @@
   "block.gtceu.rock_cycle_simulator":"Rock Cycle Simulator",
   "gtceu.rock_cycle_simulator":"Rock Cycle Simulation",
   "gtceu.multiblock.rock_cycle_simulator.description": "§7A powerful machine that can fabricate and harvest hundreds of cubic meters of igneous rock per second.",
-  
+
 
   "block.gtceu.universal_crystallizer": "Universal Crystallizer",
   "gtceu.universal_crystallizer": "Crystallization",
@@ -160,24 +175,24 @@
   "block.gtceu.actualization_chamber": "Actualization Chamber",
   "gtceu.actualization_chamber": "Actualization",
   "gtceu.multiblock.actualization_chamber.description": "§7A powerful machine that harnesses the most complex of matters and turns it into raw materials",
-  
+
   "block.gtceu.cryococcal_reverberator": "Cryococcal Reverberator",
   "gtceu.reverberation": "Reverberation",
-  
+
   "block.gtceu.atmospheric_accumulator": "Atmospheric Accumulator",
   "gtceu.multiblock.atmospheric_accumulator.description": "§7A large machine that can suck up large amounts of air at once.",
 
   "block.gtceu.helical_fusion_reactor": "Helical Fusion Reactor",
   "gtceu.multiblock.helical_fusion_reactor.description": "§7The Helical Fusion Reactor is a very large multiblock structure used for fusing elements into heavier ones in parallel. For every Hatch it has, its buffer increases by 80M EU, and has a maximum of 1280M.",
-  
+
 
   "__CREATIVE_MACHINES__.header": "=====================",
   "__CREATIVE_MACHINES__.flufff": "> Creative Machines <",
   "__CREATIVE_MACHINES__.footer": "=====================",
-  
+
   "block.gtceu.creative_energy": "Infinite GT Energy Unit Emitter",
   "block.gtceu.creative_chest": "Creative Quantum Chest",
-  "block.gtceu.creative_tank": "Creative Quantum Tank",  
+  "block.gtceu.creative_tank": "Creative Quantum Tank",
 
 
   "__GENERIC_MATERIALS__.header": "=====================",
@@ -249,10 +264,10 @@
   "material.gtceu.holmium_oxide": "Holmium Oxide",
   "material.gtceu.sculk_bioalloy": "S.C.U.L.K. Bioalloy",
   "material.gtceu.waste_gas_mixture": "Waste Gas Mixture",
-  "material.gtceu.uru": "Uru",
-  "material.gtceu.uric_actinate": "Uric Actinate",
+  "material.gtceu.eltz": "Eltz",
+  "material.gtceu.eltic_actinate": "Eltic Actinate",
   "material.gtceu.actinium_iron_oxide": "Actinium Iron Oxide",
-
+  "material.gtceu.saturated_water": "Saturated Water",
 
   "__HM_PROCESSING__.header": "========================",
   "__HM_PROCESSING__.flufff": "> Hard Mode Processing <",
@@ -266,7 +281,7 @@
 
   "material.gtceu.molybdenum_trioxide": "Molybdenum Trioxide",
   "material.gtceu.lead_chloride": "Lead Chloride",
-  
+
 
   "__HM_GRAPHITE__.header": "================================",
   "__HM_GRAPHITE__.flufff": "> Hard Mode Graphite/Hydrazine <",
@@ -279,7 +294,7 @@
   "material.gtceu.hydrazine": "Hydrazine",
   "material.gtceu.acetone_azine": "Acetone Azine",
   "material.gtceu.graphene_oxide": "Graphene Oxide",
-  
+
 
   "__KAPTON_K__.header": "============",
   "__KAPTON_K__.flufff": "> Kapton K <",
@@ -344,7 +359,7 @@
   "material.gtceu.polyethyl_cyanoacrylate": "Polyethyl Cyanoacrylate",
   "material.gtceu.dimethyl_sulfoxide": "Dimethyl Sulfoxide",
   "material.gtceu.dimethyl_sulfide": "Dimethyl Sulfide",
-  
+
 
   "__PLATLINE__.header": "=======================",
   "__PLATLINE__.flufff": "> Platinum line items <",
@@ -380,7 +395,7 @@
   "material.gtceu.formic_acid": "Formic Acid",
   "material.gtceu.sodium_methoxide": "Sodium Methoxide",
 
-  
+
   "__HM_PLATLINE__.header": "======================",
   "__HM_PLATLINE__.flufff": "> Hard Mode Platline <",
   "__HM_PLATLINE__.footer": "======================",
@@ -400,6 +415,41 @@
   "material.gtceu.sodium_lead_alloy": "Sodium-Lead Alloy",
 
 
+  "__NAQFUEL__.header": "========================",
+  "__NAQFUEL__.flufff": "> Liquid Naquadah Fuel Line <",
+  "__NAQFUEL__.footer": "========================",
+
+  "material.gtceu.naq_fuel_t1": "Crude Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t1_depleted": "Depleted Crude Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t2": "Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t2_depleted": "Depleted Liquid Naquadah Fuel",
+  "material.gtceu.naquadah_superfuel": "Naquadah Superfuel",
+  "material.gtceu.naquadah_superfuel_depleted": "Depleted Naquadah Superfuel",
+  "material.gtceu.raw_naquadah_solution": "Raw Naquadah Solution",
+  "material.gtceu.piranha_solution": "Piranha Solution",
+  "material.gtceu.hot_piranha_solution": "Hot Piranha Solution",
+  "material.gtceu.tritium_radon_difluoride": "Tritium Radon Difluoride",
+  "material.gtceu.inert_naquadah_blend": "Inert Naquadah Blend",
+  "material.gtceu.active_naquadah_blend": "Activated Naquadah Isotope Blend",
+  "material.gtceu.light_naquadah_isotope_fraction": "Light Naquadah Isotope Fraction",
+  "material.gtceu.medium_naquadah_isotope_fraction": "Medium Naquadah Isotope Fraction",
+  "material.gtceu.heavy_naquadah_isotope_fraction": "Heavy Naquadah Isotope Fraction",
+  "material.gtceu.naquadah_isotope_sludge": "Naquadah Isotope Sludge",
+  "material.gtceu.cracked_light_naquadah_isotope_fraction": "Neutronium-Cracked Light Naquadah Isotope Fraction",
+  "material.gtceu.cracked_medium_naquadah_isotope_fraction": "Neutronium-Cracked Medium Naquadah Isotope Fraction",
+  "material.gtceu.cracked_heavy_naquadah_isotope_fraction": "Neutronium-Cracked Heavy Naquadah Isotope Fraction",
+  "material.gtceu.cracked_naquadah_isotope_sludge": "Neutronium-Cracked Naquadah Isotope Sludge",
+  "material.gtceu.superheavy_atomic_residue": "Superheavy Atomic Residue",
+  "material.gtceu.heavy_atomic_residue": "Heavy Atomic Residue", 
+  "material.gtceu.purified_heavy_residue": "Purified Heavy Atomic Residue",
+  "material.gtceu.purified_superheavy_residue": "Purified Superheavy Atomic Residue",
+  "material.gtceu.quadium": "Quadium",
+  "material.gtceu.hyperdegenerate_matter":"Hyperdegenerate Matter",
+  "material.gtceu.exotic_particle_solution": "Exotic Particle Solution",
+
+
+
+
   "__MISC__.header": "=========",
   "__MISC__.flufff": "> Misc. <",
   "__MISC__.footer": "=========",
@@ -408,6 +458,7 @@
   "tagprefix.perfect": "Perfect %s",
   "block.gtceu.shock_proof_cutting_casing": "Shock Proof Casing",
   "curios.identifier.gtceu_magnet": "Magnet",
+  "item.gtceu.wetware_processor_mainframe.tooltip.0": "§7No Mouth, and Must Scream",
 
 
   "__HM_MISC__.header": "============",
@@ -417,6 +468,19 @@
   "material.gtceu.beryllium_oxide": "Beryllium Oxide",
   "material.gtceu.fluorite": "Fluorite",
 
+  "__ORE_VEINS__.header": "=============",
+  "__ORE_VEINS__.flufff": "> Ore Veins <",
+  "__ORE_VEINS__.footer": "=============",
+
+  "gtceu.jei.ore_vein.luna/diamond": "Diamond Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/fluorite": "Fluorite Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/gold": "Gold Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/manganese": "Manganese Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/molybdenum": "Molybdenum Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/tetrahedrite": "Tetrahedrite Vein (Lunar)",
+  "gtceu.jei.ore_vein.luna/tungsten": "Tungsten Vein (Lunar)",
+  "gtceu.jei.ore_vein.overworld/tetrahedrite": "Tetrahedrite Vein",
+  "gtceu.jei.ore_vein.overworld/uraninite": "Uraninite Vein",
 
   "__UNUSED__.header": "==========",
   "__UNUSED__.flufff": "> Unused <",

@@ -13,7 +13,20 @@ ServerEvents.recipes(event => {
         H: 'gtceu:hsse_frame'
 
     }).id('kubejs:shaped/discharger')
-    
+
+    event.recipes.gtceu.assembly_line('gtceu:biobalance_charger')
+            .itemInputs('gtceu:discharger', '4x #gtceu:circuits/uev', '4x extendedcrafting:auto_flux_crafter', '16x kubejs:dischargement_core', '24x gtceu:polyethyl_cyanoacrylate_plate')
+            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
+            .itemOutputs('gtceu:biobalance_charger')
+            .duration(3000)
+            .EUt(1966000)
+
+            .stationResearch(b => b
+                .researchStack('gtceu:discharger')
+                .CWUt(160, 1024000)
+                .EUt(1200000)
+            )
+
     event.recipes.gtceu.assembler('kubejs:cryolobus_casing')
         .itemInputs('6x gtceu:cryolobus_plate', 'gtceu:cryolobus_frame')
         .itemOutputs('2x kubejs:cryolobus_casing')
@@ -27,7 +40,7 @@ ServerEvents.recipes(event => {
             .itemInputs(input)
             .itemOutputs(output)
             .duration(10) //wip
-            // .EUt(-(refund / 4)) Enable once that gets fixed.
+        // .EUt(-(refund / 4)) Enable once that gets fixed.
     }
 
     Discharge('hadal_solar', '2x solarflux:sp_custom_hadal', ['kubejs:hadal_energy_core', '2x solarflux:sp_custom_abyssal', '2x kubejs:abyssal_energy_core'], 1000000)
@@ -37,4 +50,10 @@ ServerEvents.recipes(event => {
     Discharge('cryococcus_block', '5x gtceu:cryococcus_block', ['5x gtceu:cryolobus_block', '4x kubejs:bathyal_energy_core', '2x kubejs:warden_heart'], 40000000)
     Discharge('hadal_warp_engine', 'kubejs:hadal_warp_engine', ['gtceu:cryococcus_frame', 'kubejs:warp_engine', 'gtceu:cryococcus_plate', '2x gtceu:cryolobus_plate', 'kubejs:hadal_energy_core', 'gtceu:zpm_field_generator', 'kubejs:abyssal_energy_core', 'kubejs:hadal_shard'], 40000000)
     Discharge('sculk_bioalloy', 'gtceu:sculk_bioalloy_block', ['9x kubejs:animated_bioalloy_pulp', '18x gtceu:electrotine_dust', '1x kubejs:warden_heart', 'kubejs:abyssal_core'], 10000000)
+
+    event.recipes.gtceu.charger(`kubejs:sculk_core_charge`)
+        .itemInputs(['4x gtceu:cryolobus_ingot', '4x gtceu:tungsten_carbide_ingot', 'minecraft:sculk_catalyst'])
+        .itemOutputs('kubejs:sculk_core')
+        .EUt(524288)
+        .duration(100)
 })
