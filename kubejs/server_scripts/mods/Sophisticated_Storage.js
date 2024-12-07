@@ -98,9 +98,9 @@ ServerEvents.recipes(event => {
     const sophStorageMaterials = [
         ["", null, null],
         ['iron_', 'bronze', 'lead'],
-        ['gold_', 'steel', 'invar'],
-        ['diamond_', 'aluminium', 'electrum'],
-        ['netherite_', 'stainless_steel', 'signalum'],
+        ['gold_', 'steel', 'tin'],
+        ['diamond_', 'aluminium', 'copper'],
+        ['netherite_', 'stainless_steel', 'gold'],
     ]
     const sophStorageTypes = [
         ['', 'barrel'],
