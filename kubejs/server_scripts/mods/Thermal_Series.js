@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     event.smelting('gtceu:sticky_resin', 'thermal:tar')
     event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['gtceu:rubber_plate'])
     //Unify Thermal dies
-    
+
     event.shaped('thermal:press_packing_2x2_die', [
         ' A ',
         'BCB',
@@ -668,7 +668,7 @@ ServerEvents.recipes(event => {
         A: 'minecraft:lava_bucket',
         B: '#chipped:bricks',
         C: 'thermal:machine_frame', // casing
-        D: '#forge:gears/iron',
+        D: 'gtceu:iron_gear',
         E: 'thermal:redstone_servo'
     }).id('kubejs:device_nullifier');
 
@@ -681,7 +681,7 @@ ServerEvents.recipes(event => {
         A: 'minecraft:hopper',
         B: '#forge:ingots/tin',
         C: 'enderio:vacuum_chest', // casing
-        D: '#forge:gears/iron',
+        D: 'gtceu:iron_gear',
         E: 'thermal:redstone_servo'
     }).id('kubejs:device_collector');
 
@@ -709,7 +709,7 @@ ServerEvents.recipes(event => {
         B: '#forge:ingots/silver',
         C: 'gtceu:lv_power_unit',
         D: '#forge:ingots/tin',
-        E: '#forge:gears/iron'
+        E: 'gtceu:iron_gear'
     }).id('kubejs:flux_drill');
 
     event.remove({ id: 'thermal:flux_saw' })
@@ -722,7 +722,7 @@ ServerEvents.recipes(event => {
         B: '#forge:ingots/silver',
         C: 'gtceu:lv_power_unit',
         D: '#forge:ingots/tin',
-        E: '#forge:gears/iron'
+        E: 'gtceu:iron_gear'
     }).id('kubejs:flux_saw');
 
     event.remove({ id: 'thermal:flux_capacitor' });

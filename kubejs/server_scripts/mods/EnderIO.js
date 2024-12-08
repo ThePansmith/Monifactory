@@ -463,7 +463,7 @@ ServerEvents.recipes(event => {
         ' I '
     ], {
         I: '#forge:ingots/iron',
-        G: '#forge:gears/iron'
+        G: 'gtceu:iron_gear'
     }
     ).id('kubejs:yeta_wrench')
     event.remove({ output: 'enderio:void_chassis' })

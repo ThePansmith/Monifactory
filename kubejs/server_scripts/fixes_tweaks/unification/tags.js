@@ -127,4 +127,11 @@ ServerEvents.recipes(event => {
     event.remove({ output: global.manualUnification })
     event.remove({ output: global.nuclearcraftFuelPattern })
     event.remove({ output: global.nuclearcraftMaterialPattern })
+
+    // Tags cannot be removed from items in HammerLib (see https://github.com/dragon-forge/HammerLib/issues/71).
+    // Thus, we replace the input of any recipe that uses one of the tags of those items with the corresponding GT item.
+    let hammerLibGears = ["iron", "diamond"]
+    hammerLibGears.forEach(material => {
+        event.replaceInput({ input: `#forge:gears/${material}` }, `#forge:gears/${material}`, `gtceu:${material}_gear`)
+    })
 })
