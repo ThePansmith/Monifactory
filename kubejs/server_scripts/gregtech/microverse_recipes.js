@@ -1,23 +1,6 @@
 // Small Microverse Projector Recipes
 ServerEvents.recipes(event => {
 
-    if (isNormalMode) { // Normal mode-specific recipes
-        event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
-            .itemInputs(
-                'kubejs:microminer_t9',
-                '8x gtceu:neutron_reflector',
-                '4x gtceu:cryococcus_block',
-                'kubejs:stellar_creation_data'
-            )
-            .itemOutputs(
-                '64x gtceu:neutronium_ingot',
-                '64x gtceu:neutronium_ingot',
-                '32x gtceu:neutronium_ingot'
-            )
-            .duration(3000)
-            .EUt(250000)
-    }
-
     event.recipes.gtceu.basic_microverse('kubejs:t_one_first')
         .itemInputs('kubejs:microminer_t1', 'kubejs:ultra_dense_hydrogen')
         .itemOutputs('kubejs:stellar_creation_data')
@@ -167,7 +150,6 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(2000)
 })
-//ALL OF THE ABOVE IS DONE
 
 // Advanced Microverse Projector Recipes
 ServerEvents.recipes(event => {
@@ -182,13 +164,19 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(7500)
 
-
-    event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
+        event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', '4x kubejs:wither_realm_data', '64x kubejs:petrotheum_dust')
         .itemOutputs(
-            '64x gtceu:iridosmineyes_ore',
-            '64x gtceu:iridosmineyes_ore',
-            '16x gtceu:osmiridiumyes_ore')
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:platinum_group_sludge_dust',
+            '64x gtceu:rock_salt_dust',
+            '64x gtceu:rock_salt_dust'
+        )
         .duration(800)
         .EUt(3750)
 
@@ -322,7 +310,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:uhv_electric_pump',
             '16x kubejs:stabilized_americium',
             '16x kubejs:quantum_flux',
-            '16x kubejs:shattered_star_data', )
+            '8x kubejs:shattered_star_data', )
         .itemOutputs('32x kubejs:stabilized_oganesson')
         .duration(900)
         .EUt(180000)
@@ -459,12 +447,26 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(250000)
 
+    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
+        .itemInputs(
+            'kubejs:microminer_t9', 
+            '8x gtceu:neutron_reflector', 
+            '4x gtceu:cryococcus_block', 
+            'kubejs:stellar_creation_data'
+        )
+        .itemOutputs(
+            '64x gtceu:neutronium_ingot',
+            '32x gtceu:neutronium_ingot'
+        )
+        .duration(3000)
+        .EUt(250000)
+
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_third')
         .itemInputs(
             'kubejs:microminer_t9',
             '64x gtceu:gravi_star',
             '64x gtceu:gravi_star',
-            '32x kubejs:shattered_star_data'
+            '16x kubejs:shattered_star_data'
         )
         .itemOutputs('32x kubejs:quasi_stable_neutron_star')
         .duration(900)
@@ -557,9 +559,6 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t9',
             'kubejs:shattered_universe_data',
-            '64x kubejs:shattered_star_data',
-            '64x kubejs:shattered_star_data',
-            '64x kubejs:shattered_star_data',
             '64x kubejs:shattered_star_data'
         )
         .itemOutputs('kubejs:corrupted_universe_data')
@@ -580,7 +579,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_first')
         .itemInputs('kubejs:microminer_t11', 'kubejs:infinity_catalyst', 'kubejs:shattered_universe_data', )
-        .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
+        .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
         .duration(600)
         .EUt(2000000)
 

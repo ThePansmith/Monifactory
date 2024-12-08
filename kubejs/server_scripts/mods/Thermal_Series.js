@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil', 'thermal:dynamo_output_augment'] })
+    event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:rf_coil'] })
     event.remove({ output: ['thermal:dynamo_throttle_augment', 'thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
     event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame'] })
     event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer']})
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     event.smelting('gtceu:sticky_resin', 'thermal:tar')
     event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['gtceu:rubber_plate'])
     //Unify Thermal dies
-    
+
     event.shaped('thermal:press_packing_2x2_die', [
         ' A ',
         'BCB',
@@ -106,18 +106,6 @@ ServerEvents.recipes(event => {
         'gtceu:vanadium_steel_drill_head'
     ]).id('kubejs:drill_head');
 
-    event.shaped(
-        'thermal:dynamo_fuel_augment', [
-            'ABA',
-            'BCB',
-            'ABA'
-        ], {
-            A: 'gtceu:wrought_iron_ingot',
-            B: 'gtceu:wrought_iron_plate',
-            C: 'thermal:rf_coil'
-        }
-    )
-
     //Coil Ingredients
     event.shaped(
         'thermal:rf_coil', [
@@ -155,94 +143,161 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('thermal:upgrade_augment_1', '{AugmentData:{BaseMod:1.5f,Type:"Upgrade"}}'), [
             'ABA',
-            'BCB',
+            'RGR',
             'ABA'
         ], {
-            A: 'gtceu:invar_gear',
-            B: 'gtceu:invar_plate',
-            C: 'gtceu:electrical_steel_block'
+            A: 'gtceu:invar_screw',
+            B: 'gtceu:double_invar_plate',
+            G: 'gtceu:electrical_steel_gear',
+            R: 'gtceu:fine_red_alloy_wire'
         }
     )
 
     event.shaped(
         Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:2.5f,Type:"Upgrade"}}'), [
-            'ABA',
+            'PGP',
             'BCB',
-            'ABA'
+            'PGP'
         ], {
-            A: 'gtceu:electrum_gear',
-            B: 'gtceu:electrum_plate',
+            B: 'gtceu:cobalt_brass_gear',
+            P: 'gtceu:double_electrum_plate',
+            G: 'thermal:obsidian_glass',
             C: 'thermal:upgrade_augment_1'
         }
     )
 
     event.shaped(
         Item.of('thermal:upgrade_augment_4', '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
-            'ABA',
-            'BCB',
-            'ABA'
+            'RSR',
+            'SCS',
+            'RSR'
         ], {
-            A: 'gtceu:restonia_gear',
-            B: 'gtceu:signalum_plate',
+            R: 'gtceu:restonia_gear',
+            S: 'gtceu:signalum_plate',
             C: 'thermal:upgrade_augment_2'
         }
     )
 
-    //FIXME: Temporary Recipe until DE comes out
-
     event.shaped(
         Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:10.0f,Type:"Upgrade"}}'), [
-            'ABD',
+            'ABG',
             'BCB',
-            'DBA'
+            'GBA'
         ], {
-            A: 'gtceu:cryolobus_plate',
+            A: 'gtceu:double_cryolobus_plate',
             B: 'gtceu:enderium_plate',
             C: 'thermal:upgrade_augment_4',
-            D: 'gtceu:tungsten_carbide_plate'
+            G: 'gtceu:small_tungsten_carbide_gear'
         }
     )
 
-    //Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}')
-    event.recipes.gtceu.assembler('power_augment')
-        .itemInputs('6x gtceu:conductive_alloy_block', '6x gtceu:sterling_silver_ingot', '3x kubejs:redstone_transmission_coil', '12x gtceu:energetic_alloy_ingot')
-        .itemOutputs(Item.of('thermal:dynamo_output_augment'))
-        .duration(80)
-        .EUt(32)
+    event.shaped(
+        'thermal:dynamo_fuel_augment', [
+            'PIP',
+            'GCG',
+            'PIP'
+        ], {
+            I: '#forge:ingots/wrought_iron',
+            P: 'gtceu:wrought_iron_plate',
+            C: 'thermal:rf_coil',
+            G: 'gtceu:small_copper_gear'
+        }
+    ).id('thermal:augments/dynamo_fuel_augment')
 
-    event.remove({ id: 'thermal:augments/machine_speed_augment'})
+    event.shaped('thermal:dynamo_output_augment', [
+        'SEI',
+        'ECE',
+        'IES'
+    ], {
+        S: '#forge:ingots/sterling_silver',
+        E: '#forge:ingots/energetic_alloy',
+        I: '#forge:storage_blocks/conductive_alloy',
+        C: 'kubejs:redstone_transmission_coil'
+    }).id('thermal:augments/dynamo_output_augment');
+
     event.shaped('thermal:machine_speed_augment', [
-        'ABA',
-        'BCB',
-        'ABA'
+        'NGN',
+        'PCP',
+        'NGN'
     ], {
-        A: '#forge:ingots/mythril',
-        B: '#forge:plates/mythril',
+        N: '#forge:nuggets/mythril',
+        G: '#forge:gears/black_steel',
+        P: '#forge:plates/electrum',
         C: 'thermal:rf_coil'
-    }).id('kubejs:machine_speed_augment');
+    }).id('thermal:augments/machine_speed_augment');
 
-    event.remove({ id: 'thermal:augments/machine_output_augment'})
+    event.shaped('thermal:machine_efficiency_augment', [
+        'NGN',
+        'PCP',
+        'NGN'
+    ], {
+        N: '#forge:nuggets/mythril',
+        G: '#forge:gears/nickel',
+        P: '#forge:plates/lumium',
+        C: 'thermal:rf_coil'
+    }).id('thermal:augments/machine_efficiency_augment');
+
     event.shaped('thermal:machine_output_augment', [
-        'ABA',
-        'BCB',
-        'ABA'
+        'MGM',
+        'PCP',
+        'MGM'
     ], {
-        A: '#forge:ingots/mythril',
-        B: '#forge:plates/mythril',
+        M: '#forge:ingots/mythril',
+        G: '#forge:gears/bronze',
+        P: '#forge:plates/invar',
         C: 'thermal:redstone_servo'
-    }).id('kubejs:machine_output_augment');
+    }).id('thermal:augments/machine_output_augment');
 
-    // null augment
-    event.remove({ id: 'thermal:augments/machine_null_augment'})
     event.shaped('thermal:machine_null_augment', [
-        'ABA',
-        'BCB',
-        'ABA'
+        'ONO',
+        'NCN',
+        'ONO'
     ], {
-        A: '#forge:ingots/mythril',
-        B: '#forge:nuggets/mythril',
+        O: '#forge:plates/obsidian',
+        N: '#forge:nuggets/mythril',
         C: 'minecraft:cactus' // since we use cactus to delete items now
-    }).id('kubejs:machine_null_augment');
+    }).id('thermal:augments/machine_null_augment');
+
+    event.shaped(
+        'thermal:dynamo_throttle_augment', [
+            'SES',
+            'NCN',
+            'SES'
+        ], {
+            S: '#forge:plates/stainless_steel',
+            E: '#forge:ingots/electrum',
+            N: '#forge:springs/lead',
+            C: 'kubejs:excitationcoil'
+        }
+    ).id('thermal:augments/dynamo_throttle_augment');
+
+    event.shaped(
+        'thermal:machine_catalyst_augment', [
+            ' A ',
+            'BCB',
+            ' A '
+        ], {
+            A: 'gtceu:cupronickel_spring',
+            B: 'gtceu:lead_plate',
+            C: 'thermal:redstone_servo'
+        }
+    ).id('thermal:augments/machine_catalyst_augment')
+
+    event.shaped(
+        'thermal:machine_cycle_augment', [
+            'DAD',
+            'BCB',
+            'DAD'
+        ], {
+            A: 'gtceu:signalum_gear',
+            B: 'gtceu:bronze_plate',
+            C: 'thermal:redstone_servo',
+            D: 'gtceu:silver_plate'
+        }
+    ).id('thermal:augments/machine_cycle_augment')
+
+    event.replaceInput({ id: 'thermal:augments/item_filter_augment' }, '#forge:ingots/signalum', 'gtceu:item_filter')
+    event.replaceInput({ id: 'thermal:augments/fluid_filter_augment' }, '#forge:ingots/signalum', 'gtceu:fluid_filter')
 
     //Dynamos
     event.shaped(
@@ -319,18 +374,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.shaped(
-        'thermal:dynamo_throttle_augment', [
-            'ABA',
-            'BCB',
-            'ABA'
-        ], {
-            A: 'minecraft:iron_ingot',
-            B: 'gtceu:iron_plate',
-            C: 'kubejs:excitationcoil'
-        }
-    )
-
     //Machines
     event.shaped(
         'thermal:machine_frame', [
@@ -401,31 +444,6 @@ ServerEvents.recipes(event => {
             E: 'thermal:redstone_servo'
         }
     ).id('thermal:device_potion_diffuser')
-
-    event.shaped(
-        'thermal:machine_catalyst_augment', [
-            ' A ',
-            'BCB',
-            ' A '
-        ], {
-            A: 'gtceu:bronze_gear',
-            B: 'gtceu:lead_plate',
-            C: 'thermal:redstone_servo'
-        }
-    ).id('thermal:augments/machine_catalyst_augment')
-
-    event.shaped(
-        'thermal:machine_cycle_augment', [
-            'DAD',
-            'BCB',
-            'DAD'
-        ], {
-            A: 'gtceu:signalum_gear',
-            B: 'gtceu:bronze_plate',
-            C: 'thermal:redstone_servo',
-            D: 'gtceu:silver_plate'
-        }
-    ).id('thermal:augments/machine_cycle_augment')
 
     // energy cell
     event.shaped('thermal:energy_cell_frame', [
@@ -650,7 +668,7 @@ ServerEvents.recipes(event => {
         A: 'minecraft:lava_bucket',
         B: '#chipped:bricks',
         C: 'thermal:machine_frame', // casing
-        D: '#forge:gears/iron',
+        D: 'gtceu:iron_gear',
         E: 'thermal:redstone_servo'
     }).id('kubejs:device_nullifier');
 
@@ -663,20 +681,9 @@ ServerEvents.recipes(event => {
         A: 'minecraft:hopper',
         B: '#forge:ingots/tin',
         C: 'enderio:vacuum_chest', // casing
-        D: '#forge:gears/iron',
+        D: 'gtceu:iron_gear',
         E: 'thermal:redstone_servo'
     }).id('kubejs:device_collector');
-
-    event.remove({ output: ['thermal:item_filter_augment'] })
-    event.shaped(
-        'thermal:item_filter_augment', [
-            ' I ',
-            'IVI',
-            ' I '
-        ], {
-            I: 'gtceu:invar_nugget',
-            V: 'gtceu:item_filter',
-        })
 
     /*=== THERMAL TOOLS ===*/
     event.remove({ id: 'thermal:tools/wrench' })
@@ -702,7 +709,7 @@ ServerEvents.recipes(event => {
         B: '#forge:ingots/silver',
         C: 'gtceu:lv_power_unit',
         D: '#forge:ingots/tin',
-        E: '#forge:gears/iron'
+        E: 'gtceu:iron_gear'
     }).id('kubejs:flux_drill');
 
     event.remove({ id: 'thermal:flux_saw' })
@@ -715,7 +722,7 @@ ServerEvents.recipes(event => {
         B: '#forge:ingots/silver',
         C: 'gtceu:lv_power_unit',
         D: '#forge:ingots/tin',
-        E: '#forge:gears/iron'
+        E: 'gtceu:iron_gear'
     }).id('kubejs:flux_saw');
 
     event.remove({ id: 'thermal:flux_capacitor' });

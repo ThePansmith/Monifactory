@@ -12,7 +12,8 @@ JEIEvents.hideItems(event => {
     event.hide('enderio:broken_spawner')
 
     //Hides useless items
-    event.hide(['hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'thermal:constantan_coin'])
+    event.hide(/hammerlib:.*/)
+    event.hide('thermal:constantan_coin')
 
     // Iron Furnace
     event.hide('ironfurnaces:million_furnace') // rainbow furnace
@@ -35,7 +36,7 @@ JEIEvents.hideItems(event => {
     event.hide([Item.of('extendedcrafting:recipe_maker', '{Shapeless:0b,Type:"CraftTweaker"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:tin"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:copper"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:iron"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:coal"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:steel"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:invar"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:silver"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:platinum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lead"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:glowstone"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:lapis_lazuli"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:electrum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:redstone"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:aluminum"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:diamond"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:nickel"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:gold"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:emerald"}'), Item.of('extendedcrafting:singularity', '{Id:"extendedcrafting:bronze"}')])
     event.hide(['extendedcrafting:enhanced_ender_catalyst', 'extendedcrafting:enhanced_redstone_catalyst', 'extendedcrafting:enhanced_redstone_component', 'extendedcrafting:enhanced_ender_component', 'extendedcrafting:ender_component', 'extendedcrafting:black_iron_block', 'extendedcrafting:black_iron_ingot', 'extendedcrafting:redstone_ingot_block', 'extendedcrafting:redstone_ingot', 'extendedcrafting:enhanced_redstone_ingot_block', 'extendedcrafting:enhanced_redstone_ingot', 'extendedcrafting:ender_ingot_block', 'extendedcrafting:ender_ingot', 'extendedcrafting:enhanced_ender_ingot_block', 'extendedcrafting:enhanced_ender_ingot', 'extendedcrafting:ender_star_block', 'extendedcrafting:ender_star', 'extendedcrafting:flux_star_block', 'extendedcrafting:flux_star', 'extendedcrafting:frame', 'extendedcrafting:compressor', 'extendedcrafting:ender_alternator', 'extendedcrafting:ender_crafter', 'extendedcrafting:auto_ender_crafter', 'extendedcrafting:flux_crafter', 'extendedcrafting:black_iron_slate', 'extendedcrafting:ender_catalyst'])
     event.hide(['extendedcrafting:black_iron_nugget', 'extendedcrafting:redstone_nugget', 'extendedcrafting:enhanced_redstone_nugget', 'extendedcrafting:ender_nugget', 'extendedcrafting:enhanced_ender_nugget'])
-    
+
     // PEX
     event.hide('packagedexcrafting:ender_crafter')
 
@@ -53,6 +54,7 @@ JEIEvents.hideItems(event => {
     event.hide(/thermal:.*_gear/)
     event.hide('thermal:creosote_bucket')
     event.hide(/thermal:.*_cast/)
+    event.hide(['thermal:sawdust', 'thermal:sawdust_block'])
 
     //EnderIO
     event.hide(['enderio:conduit', 'enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block', "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])
@@ -156,7 +158,7 @@ JEIEvents.hideItems(event => {
     event.hide('sophisticatedstorage:copper_barrel')
     event.hide('sophisticatedstorage:copper_chest')
     event.hide('sophisticatedstorage:copper_shulker_box')
-    
+
     //Sophisticated iron tier upgrades
     event.hide(/^sophisticatedstorage:.*copper.*tier_upgrade$/)
 
@@ -207,7 +209,7 @@ JEIEvents.hideItems(event => {
 
     // Hide debug item(s)
     event.hide('kubejs:debug_ctm_block')
-    
+
     // Hide GT ores to prevent clutter
     GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
         event.hide([
@@ -230,7 +232,7 @@ JEIEvents.hideItems(event => {
         ])
       })
 
-    
+
     // Hides GCYR ores as its not part of GTMaterialRegistry
     event.hide(/gcyr:(!netherrack|endstone).*_ore/)
 })
@@ -274,6 +276,8 @@ JEIEvents.hideFluids(event => {
     //Hide Thermal fluids
     event.hide("thermal:creosote")
     event.hide("cofh_core:experience")
+    event.hide("thermal:glowstone")
+    event.hide("thermal:redstone")
 
     //Hide Soph Core fluids
     event.hide("sophisticatedcore:xp_still")

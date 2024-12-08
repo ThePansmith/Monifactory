@@ -1115,42 +1115,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["595F205B551A53C9"]
-			description: [
-				"&2A rudimentary version of Platinum Group Sludge (PGS) processing existed in the base pack. Here, it is a strong source of the Platinum Group Metals - Ruthenium, Rhodium, Palladium, Osmium, Iridium, and Platinum - as well as Gold. All of these elements will be used in IV-tier and above materials."
-				""
-				"&rYou will need to treat certain ores with &9Nitric Acid&r to yield &6PGS&r - &6Sheldonite&r is the best. Then, using an &3HV+ Centrifuge&r and &9Aqua Regia&r, break it down into the PGS salts, and reduce those salts to the metals."
-				""
-				"This is still optional, and you can get &6Ruthenium&r and &6Rhodium&r from &6Osmiridium 80/20 Ore&r and &6Iridosmine 80/20 Ore&r from Microverse adventures instead."
-			]
-			icon: "gtceu:platinum_dust"
-			id: "1C1B1E1BBFA079F5"
-			rewards: [{
-				count: 2
-				id: "79E180C05B68E313"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
-			tasks: [
-				{
-					id: "1185F72BA982FE56"
-					item: "gtceu:ruthenium_dust"
-					type: "item"
-				}
-				{
-					id: "42B1F1F92647E29C"
-					item: "gtceu:rhodium_dust"
-					type: "item"
-				}
-			]
-			title: "&2Platinum Group Processing"
-			x: 38.0d
-			y: 3.0d
-		}
-		{
 			dependencies: ["5357A16B5BF62C96"]
 			description: [
 				"There are several paths to &9Acetic Acid&r... probably the simplest is combining &9Oxygen&r, &9Hydrogen&r, and &6Carbon&r, but one of the several other methods may appeal to you more, especially if you have a &3Distillation Tower&r."

@@ -778,13 +778,14 @@
 		{
 			dependencies: [
 				"3B3F46345D39CAE2"
-				"1C1B1E1BBFA079F5"
 				"544E87F5E356FE10"
 			]
 			description: [
 				"&6RTM Alloy&r is an alloy of &6Ruthenium&r, &6Tungsten&r and &6Molybdenum&r."
 				""
 				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+				""
+				"&6Ruthenium&r can be processed from &6Laurite&r, or &6Platinum Group Sludge&r, if you wish to start that chain early."
 			]
 			disable_toast: true
 			id: "5D0A642048AF909B"

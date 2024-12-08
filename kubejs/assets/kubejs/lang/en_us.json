@@ -394,6 +394,18 @@
   "item.kubejs.uev_universal_circuit": "UEV Universal Circuit",
   "item.kubejs.uiv_universal_circuit": "UIV Universal Circuit",
 
+  "jetpack.conductiveiron.name": "Conductive Iron",
+  "jetpack.creative.name": "Creative",
+  "jetpack.darksoularium.name": "Dark Soularium",
+  "jetpack.electricalsteel.name": "Electrical Steel",
+  "jetpack.energetic.name": "Energetic",
+  "jetpack.fluxed.name": "Fluxed",
+  "jetpack.hardened.name": "Hardened",
+  "jetpack.leadstone.name": "Leadstone",
+  "jetpack.reinforced.name": "Reinforced",
+  "jetpack.resonant.name": "Resonant",
+  "jetpack.vibrant.name": "Vibrant",
+
   "__MISC_TOOLTIPS__.header": "=========================",
   "__MISC_TOOLTIPS__.flufff": "> Miscellaneous Tooltips<",
   "__MISC_TOOLTIPS__.footer": "=========================",

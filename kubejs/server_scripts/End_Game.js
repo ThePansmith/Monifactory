@@ -202,7 +202,7 @@ ServerEvents.recipes(event => {
         .EUt(1000000)
 
     event.recipes.gtceu.omnic_forge("dimensionally_stabilized_infinity_heavy_plating")
-        .itemInputs('gtceu:infinity_plate', 'gtceu:dense_activated_netherite_plate', 'kubejs:quasi_stable_neutron_star', '8x gtceu:neutron_reflector', '16x kubejs:the_ultimate_material')
+        .itemInputs('gtceu:infinity_plate', 'gtceu:dense_activated_netherite_plate', 'kubejs:quasi_stable_neutron_star', '8x gtceu:neutron_reflector', '12x kubejs:the_ultimate_material')
         .itemOutputs('kubejs:dimensionally_stabilized_infinity_heavy_plating')
         .duration(100)
         .EUt(4000000)
@@ -438,38 +438,22 @@ ServerEvents.recipes(event => {
     )
 
     // Creative Chest
-	event.recipes.extendedcrafting.shaped_table(
-		'gtceu:max_machine_casing', [
-            "ABBBA",
-            "BCCCB",
-            "BCDCB",
-            "BCCCB",
-            "ABBBA"
-		], {
-			A: 'kubejs:causality_exempt_monic_heavy_plating',
-            B: 'kubejs:timeless_monic_heavy_plating',
-			C: 'kubejs:dimensionally_stabilized_infinity_heavy_plating',
-            D: 'kubejs:infinity_wrench'
-		}
-	).id('kubejs:endgame/max_casing')
+    event.shaped(
+        'gtceu:max_machine_casing', [
+        'MMM',
+        'MWM',
+        'MMM'
+    ], {
+        M: 'gtceu:monium_plate',
+        W: 'kubejs:infinity_wrench'
+    }
+    ).id('kubejs:endgame/max_casing')
 
-    event.recipes.extendedcrafting.shaped_table(
-		'gtceu:max_machine_hull', [
-            "ABBBA",
-            "BEFEB",
-            "BDGDB",
-            "BCCCB",
-            "ABBBA"
-		], {
-			A: 'kubejs:causality_exempt_monic_heavy_plating',
-            B: 'kubejs:timeless_monic_heavy_plating',
-			C: 'gtceu:holmium_hex_wire',
-            D: 'gtceu:monium_octal_wire',
-            E: 'gtceu:monium_quadruple_wire',
-            F: 'gtceu:monium_double_wire',
-            G: 'gtceu:max_machine_casing'
-		}
-	).id('kubejs:endgame/max_hull')
+    event.recipes.gtceu.assembler('kubejs:endgame/max_hull')
+        .itemInputs('gtceu:max_machine_casing', '2x gtceu:monium_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
+        .itemOutputs('gtceu:max_machine_hull')
+        .duration(1980)
+        .EUt(GTValues.VA[GTValues.MAX])
 
     if (isNormalMode) {
         event.recipes.extendedcrafting.shaped_table(
