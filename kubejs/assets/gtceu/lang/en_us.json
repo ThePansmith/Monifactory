@@ -343,6 +343,14 @@
   "material.gtceu.guardian_scale_slurry": "Guardian Scale Slurry",
 
 
+  "__CM__.header": "=================",
+  "__CM__.flufff": "> Crystal Matrix Line <",
+  "__CM__.footer": "=================",
+
+  "material.gtceu.acetylene": "Acetylene",
+  "material.gtceu.calcium_carbide": "Calcium Carbide",
+  
+
   "__PECA__.header": "==================",
   "__PECA__.flufff": "> PECA chemicals <",
   "__PECA__.footer": "==================",
@@ -414,7 +422,7 @@
   "material.gtceu.chloroethane": "Chloroethane",
   "material.gtceu.sodium_lead_alloy": "Sodium-Lead Alloy",
 
-
+  
   "__NAQFUEL__.header": "========================",
   "__NAQFUEL__.flufff": "> Liquid Naquadah Fuel Line <",
   "__NAQFUEL__.footer": "========================",

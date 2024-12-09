@@ -246,24 +246,6 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:crystal_matrix_ingot', [
-            '         ',
-            '      DDD',
-            '   DDDSLD',
-            'DDDLSLLSD',
-            'DLSSLSSLD',
-            'DSLLSLDDD',
-            'DLSDDD   ',
-            'DDD      ',
-            '         '
-        ], {
-            D: 'minecraft:diamond',
-            L: 'kubejs:diamond_lattice',
-            S: 'minecraft:nether_star'
-        }
-    )
-
     // Ultimate Gem
 	event.recipes.extendedcrafting.shapeless_table(
 		'kubejs:ultimate_gem',
