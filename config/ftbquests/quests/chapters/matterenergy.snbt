@@ -811,6 +811,7 @@
 					count: 3L
 					id: "65D3CCCAFE21F394"
 					item: "ae2:singularity"
+					optional_task: true
 					type: "item"
 				}
 				{
