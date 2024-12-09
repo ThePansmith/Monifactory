@@ -877,15 +877,6 @@ ServerEvents.recipes(event => {
         .duration(10)
         .EUt(2048)
     
-    wafers.forEach((wafer, tier) => {
-        event.recipes.gtceu.forming_press("ae2_printed_" + wafer[1] + "greg")
-            .notConsumable("ae2:silicon_press")
-            .itemInputs("4x " + wafer[0] + wafer[1])
-            .itemOutputs(Item.of("ae2:printed_silicon", 4*2**tier))
-            .duration(10)
-            .EUt(2048)
-    })
-
     event.recipes.gtceu.forming_press("ae2_printed_engineering_greg")
         .notConsumable("ae2:engineering_processor_press")
         .itemInputs("4x minecraft:diamond")
