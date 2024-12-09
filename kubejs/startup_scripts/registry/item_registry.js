@@ -365,8 +365,15 @@ StartupEvents.registry('item', event => {
     event.create('naquadah_fuel_crystal').texture('kubejs:item/naquadah/naquadah_fuel_crystal')
     event.create('naquadah_fuel_mixture_dust').texture('kubejs:item/naquadah/naquadah_fuel_mixture_dust')
 
-
-
+    // Crystal Matrix Line
+    event.create('raw_nanotube_substrate')
+    event.create('prepared_nanotube_substrate')
+    event.create('cobalt_nanoparticles')
+    event.create('grown_nanotube_substrate')
+    event.create('carbon_nanotubes')
+    event.create('porous_matrix_mesh')
+    event.create('dense_matrix_mesh')
+    
 
 
     // Sculk bioalloy processing intermediate products
