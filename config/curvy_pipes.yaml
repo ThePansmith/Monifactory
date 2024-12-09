@@ -1,0 +1,161 @@
+# If true, unknown pipes in save data will be deleted instead of crashing.
+ignore_unknown_pipes: false
+
+pipe_types:
+  # - # ID of the pipe item
+  #   id: tiny_item_pipe
+  #   # Default translation of item.curvy_pipes.large_item_pipe
+  #   name: Tiny Item Pipe
+  #   # Texture must be in the `block` directory.
+  #   texture: curvy_pipes:block/item_pipe
+  #   # Smaller diameter allows more pipes to fit in tight (e.g. single block) space.
+  #   # There is no upper limit on diameter: pipes can be multiple blocks wide.
+  #   diameter: 0.1
+  #   # Items per tick (can be smaller than 1)
+  #   variant: { Item: { rate: 0.1 } }
+
+  - { id: ulv_item_pipe, name: ULV Item Pipe, texture: curvy_pipes:block/ulv_item_pipe, diameter: 0.2, variant: { Item: { rate: 1. } } }
+  - { id: lv_item_pipe, name: LV Item Pipe, texture: curvy_pipes:block/lv_item_pipe,    diameter: 0.2, variant: { Item: { rate: 2. } } }
+  - { id: mv_item_pipe, name: MV Item Pipe, texture: curvy_pipes:block/mv_item_pipe,    diameter: 0.2, variant: { Item: { rate: 4. } } }
+  - { id: hv_item_pipe, name: HV Item Pipe, texture: curvy_pipes:block/hv_item_pipe,    diameter: 0.2, variant: { Item: { rate: 8. } } }
+  - { id: ev_item_pipe, name: EV Item Pipe, texture: curvy_pipes:block/ev_item_pipe,    diameter: 0.2, variant: { Item: { rate: 16. } } }
+  - { id: iv_item_pipe, name: IV Item Pipe, texture: curvy_pipes:block/iv_item_pipe,    diameter: 0.2, variant: { Item: { rate: 32. } } }
+  - { id: luv_item_pipe, name: LuV Item Pipe, texture: curvy_pipes:block/luv_item_pipe, diameter: 0.2, variant: { Item: { rate: 64. } } }
+  - { id: zpm_item_pipe, name: ZPM Item Pipe, texture: curvy_pipes:block/zpm_item_pipe, diameter: 0.2, variant: { Item: { rate: 128. } } }
+  - { id: uv_item_pipe, name: UV Item Pipe, texture: curvy_pipes:block/uv_item_pipe,    diameter: 0.2, variant: { Item: { rate: 256. } } }
+
+  # Fluid transfer rate is mB per tick.
+  - { id: ulv_fluid_pipe, name: ULV fluid Pipe, texture: curvy_pipes:block/ulv_fluid_pipe, diameter: 0.2, variant: { Fluid: { rate: 32. } } }
+  - { id: lv_fluid_pipe, name: LV fluid Pipe, texture: curvy_pipes:block/lv_fluid_pipe,    diameter: 0.2, variant: { Fluid: { rate: 64. } } }
+  - { id: mv_fluid_pipe, name: MV fluid Pipe, texture: curvy_pipes:block/mv_fluid_pipe,    diameter: 0.2, variant: { Fluid: { rate: 256. } } }
+  - { id: hv_fluid_pipe, name: HV fluid Pipe, texture: curvy_pipes:block/hv_fluid_pipe,    diameter: 0.2, variant: { Fluid: { rate: 1024. } } }
+  - { id: ev_fluid_pipe, name: EV fluid Pipe, texture: curvy_pipes:block/ev_fluid_pipe,    diameter: 0.2, variant: { Fluid: { rate: 4096. } } }
+  - { id: iv_fluid_pipe, name: IV fluid Pipe, texture: curvy_pipes:block/iv_fluid_pipe,    diameter: 0.2, variant: { Fluid: { rate: 16384. } } }
+  - { id: luv_fluid_pipe, name: LuV fluid Pipe, texture: curvy_pipes:block/luv_fluid_pipe, diameter: 0.2, variant: { Fluid: { rate: 65536. } } }
+  - { id: zpm_fluid_pipe, name: ZPM fluid Pipe, texture: curvy_pipes:block/zpm_fluid_pipe, diameter: 0.2, variant: { Fluid: { rate: 262144. } } }
+  - { id: uv_fluid_pipe, name: UV fluid Pipe, texture: curvy_pipes:block/uv_fluid_pipe,    diameter: 0.2, variant: { Fluid: { rate: 1048576. } } }
+
+  # Energy transfer rate is FE per tick.
+
+# You can customize recipes here.
+# You can also remove them entirely if you want to use other mods to manage recipes.
+recipes:
+    lv_fluid_pipe:
+      result: { count: 4, item: curvy_pipes:lv_fluid_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:bronze_normal_fluid_pipe }, B: { item: gtceu:lv_electric_pump  }, C: { item: gtceu:steel_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    mv_fluid_pipe:
+      result: { count: 4, item: curvy_pipes:mv_fluid_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:steel_normal_fluid_pipe }, B: { item: gtceu:mv_electric_pump  }, C: { item: gtceu:aluminium_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    hv_fluid_pipe:
+      result: { count: 4, item: curvy_pipes:hv_fluid_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:stainless_steel_normal_fluid_pipe }, B: { item: gtceu:hv_electric_pump  }, C: { item: gtceu:stainless_steel_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    ev_fluid_pipe:
+      result: { count: 4, item: curvy_pipes:ev_fluid_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:titanium_normal_fluid_pipe }, B: { item: gtceu:ev_electric_pump  }, C: { item: gtceu:titanium_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    iv_fluid_pipe:
+      result: { count: 4, item: curvy_pipes:iv_fluid_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:bronze_normal_fluid_pipe }, B: { item: gtceu:iv_electric_pump  }, C: { item: gtceu:tungsten_steel_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    luv_fluid_pipe:
+      result: { count: 4, item: curvy_pipes:luv_fluid_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:niobium_titanium_small_fluid_pipe }, B: { item: gtceu:luv_electric_pump  }, C: { item: gtceu:rhodium_plated_palladium_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    zpm_fluid_pipe:
+      result: { count: 4, item: curvy_pipes:zpm_fluid_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:polybenzimidazole_normal_fluid_pipe }, B: { item: gtceu:zpm_electric_pump  }, C: { item: gtceu:naquadah_alloy_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    uv_fluid_pipe:
+      result: { count: 4, item: curvy_pipes:uv_fluid_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:naquadah_large_fluid_pipe }, B: { item: gtceu:uv_electric_pump  }, C: { item: gtceu:darmstadtium_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    lv_item_pipe:
+      result: { count: 8, item: curvy_pipes:lv_item_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:lv_electric_motor }, B: { item: gtceu:lv_robot_arm  }, C: { item: gtceu:steel_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    mv_item_pipe:
+      result: { count: 8, item: curvy_pipes:mv_item_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:mv_electric_motor }, B: { item: gtceu:mv_robot_arm  }, C: { item: gtceu:aluminium_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    hv_item_pipe:
+      result: { count: 8, item: curvy_pipes:hv_item_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:hv_electric_motor }, B: { item: gtceu:hv_robot_arm  }, C: { item: gtceu:stainless_steel_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    ev_item_pipe:
+      result: { count: 8, item: curvy_pipes:ev_item_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:ev_electric_motor }, B: { item: gtceu:ev_robot_arm  }, C: { item: gtceu:titanium_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    iv_item_pipe: 
+      result: { count: 8, item: curvy_pipes:iv_item_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:iv_electric_motor }, B: { item: gtceu:iv_robot_arm  }, C: { item: gtceu:tungsten_steel_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    luv_item_pipe:
+      result: { count: 8, item: curvy_pipes:luv_item_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:luv_electric_motor }, B: { item: gtceu:luv_robot_arm  }, C: { item: gtceu:rhodium_plated_palladium_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    zpm_item_pipe:
+      result: { count: 8, item: curvy_pipes:zpm_item_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:zpm_electric_motor }, B: { item: gtceu:zpm_robot_arm  }, C: { item: gtceu:naquadah_alloy_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+    uv_item_pipe:
+      result: { count: 8, item: curvy_pipes:uv_item_pipe }
+      type: crafting_shaped
+      key: { A: { item: gtceu:uv_electric_motor }, B: { item: gtceu:uv_robot_arm  }, C: { item: gtceu:darmstadtium_plate }}
+      pattern: [ ' A ', 'CBC', ' A ' ]
+#   item_base:
+#     result: { count: 1, item: curvy_pipes:small_item_pipe }
+#     type: crafting_shaped
+#     key: { A: { tag: forge:nuggets/gold }, B: { tag: forge:stone } }
+#     pattern: [ 'AAA', 'ABA', 'AAA' ]
+#   fluid_base:
+#     result: { count: 1, item: curvy_pipes:small_fluid_pipe }
+#     type: crafting_shaped
+#     key: { A: { tag: forge:gems/lapis }, B: { tag: forge:stone } }
+#     pattern: [ ' A ', 'ABA', ' A ' ]
+#   energy_base:
+#     result: { count: 1, item: curvy_pipes:small_energy_pipe }
+#     type: crafting_shaped
+#     key: { A: { tag: forge:dusts/redstone }, B: { tag: forge:stone } }
+#     pattern: [ ' A ', 'ABA', ' A ' ]
+#   item_t2s: { result: { count: 1, item: curvy_pipes:small_fluid_pipe }, type: crafting_shapeless, ingredients: [ &tf { item: curvy_pipes:tiny_fluid_pipe }, *tf, *tf, *tf ] }
+#   item_s2m: { result: { count: 1, item: curvy_pipes:medium_fluid_pipe }, type: crafting_shapeless, ingredients: [ &sf { item: curvy_pipes:small_fluid_pipe }, *sf, *sf, *sf ] }
+#   item_m2l: { result: { count: 1, item: curvy_pipes:large_fluid_pipe }, type: crafting_shapeless, ingredients: [ &mf { item: curvy_pipes:medium_fluid_pipe }, *mf, *mf, *mf ] }
+#   item_l2h: { result: { count: 1, item: curvy_pipes:huge_fluid_pipe }, type: crafting_shapeless, ingredients: [ &lf { item: curvy_pipes:large_fluid_pipe }, *lf, *lf, *lf ] }
+#   item_h2l: { result: { count: 4, item: curvy_pipes:large_fluid_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:huge_fluid_pipe } ] }
+#   item_l2m: { result: { count: 4, item: curvy_pipes:medium_fluid_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:large_fluid_pipe } ] }
+#   item_m2s: { result: { count: 4, item: curvy_pipes:small_fluid_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:medium_fluid_pipe } ] }
+#   item_s2t: { result: { count: 4, item: curvy_pipes:tiny_fluid_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:small_fluid_pipe } ] }
+#   fluid_t2s: { result: { count: 1, item: curvy_pipes:small_item_pipe }, type: crafting_shapeless, ingredients: [ &ti { item: curvy_pipes:tiny_item_pipe }, *ti, *ti, *ti ] }
+#   fluid_s2m: { result: { count: 1, item: curvy_pipes:medium_item_pipe }, type: crafting_shapeless, ingredients: [ &si { item: curvy_pipes:small_item_pipe }, *si, *si, *si ] }
+#   fluid_m2l: { result: { count: 1, item: curvy_pipes:large_item_pipe }, type: crafting_shapeless, ingredients: [ &mi { item: curvy_pipes:medium_item_pipe }, *mi, *mi, *mi ] }
+#   fluid_l2h: { result: { count: 1, item: curvy_pipes:huge_item_pipe }, type: crafting_shapeless, ingredients: [ &li { item: curvy_pipes:large_item_pipe }, *li, *li, *li ] }
+#   fluid_h2l: { result: { count: 4, item: curvy_pipes:large_item_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:huge_item_pipe } ] }
+#   fluid_l2m: { result: { count: 4, item: curvy_pipes:medium_item_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:large_item_pipe } ] }
+#   fluid_m2s: { result: { count: 4, item: curvy_pipes:small_item_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:medium_item_pipe } ] }
+#   fluid_s2t: { result: { count: 4, item: curvy_pipes:tiny_item_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:small_item_pipe } ] }
+#   energy_t2s: { result: { count: 1, item: curvy_pipes:small_energy_pipe }, type: crafting_shapeless, ingredients: [ &te { item: curvy_pipes:tiny_energy_pipe }, *te, *te, *te ] }
+#   energy_s2m: { result: { count: 1, item: curvy_pipes:medium_energy_pipe }, type: crafting_shapeless, ingredients: [ &se { item: curvy_pipes:small_energy_pipe }, *se, *se, *se ] }
+#   energy_m2l: { result: { count: 1, item: curvy_pipes:large_energy_pipe }, type: crafting_shapeless, ingredients: [ &me { item: curvy_pipes:medium_energy_pipe }, *me, *me, *me ] }
+#   energy_l2h: { result: { count: 1, item: curvy_pipes:huge_energy_pipe }, type: crafting_shapeless, ingredients: [ &le { item: curvy_pipes:large_energy_pipe }, *le, *le, *le ] }
+#   energy_h2l: { result: { count: 4, item: curvy_pipes:large_energy_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:huge_energy_pipe } ] }
+#   energy_l2m: { result: { count: 4, item: curvy_pipes:medium_energy_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:large_energy_pipe } ] }
+#   energy_m2s: { result: { count: 4, item: curvy_pipes:small_energy_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:medium_energy_pipe } ] }
+#   energy_s2t: { result: { count: 4, item: curvy_pipes:tiny_energy_pipe }, type: crafting_shapeless, ingredients: [ { item: curvy_pipes:small_energy_pipe } ] }
