@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 
     wafers.forEach((wafer, index) => {
         event.recipes.gtceu.assembler("raw_substrate_" + wafer[1])
-            .itemInputs(wafer[0] + wafer[1], '4x gtceu:carbon_fibers', '4x gtceu:gold_foil', '4x gtceu:graphene_dust', '32x gtceu:diamond_dust')
+            .itemInputs(wafer[0] + wafer[1], '4x gtceu:carbon_fibers', '4x gtceu:gold_foil', '4x gtceu:graphene_dust', '64x gtceu:diamond_dust')
             .itemOutputs(Item.of('kubejs:raw_nanotube_substrate', 4**(index+1)))
             .inputFluids('gtceu:neon 10')
             .duration(320)
