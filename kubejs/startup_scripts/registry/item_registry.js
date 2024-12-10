@@ -366,13 +366,14 @@ StartupEvents.registry('item', event => {
     event.create('naquadah_fuel_mixture_dust').texture('kubejs:item/naquadah/naquadah_fuel_mixture_dust')
 
     // Crystal Matrix Line
-    event.create('raw_nanotube_substrate')
-    event.create('prepared_nanotube_substrate')
-    event.create('cobalt_nanoparticles')
-    event.create('grown_nanotube_substrate')
-    event.create('carbon_nanotubes')
-    event.create('porous_matrix_mesh')
-    event.create('dense_matrix_mesh')
+    event.create('raw_nanotube_substrate').texture('kubejs:item/matrix/raw_nanotube_substrate')
+    event.create('prepared_nanotube_substrate').texture('kubejs:item/matrix/prepared_nanotube_substrate')
+    event.create('cobalt_nanoparticles').texture('kubejs:item/matrix/cobalt_nanoparticles')
+    event.create('grown_nanotube_substrate').texture('kubejs:item/matrix/grown_nanotube_substrate')
+    event.create('carbon_nanotubes').texture('kubejs:item/matrix/carbon_nanotubes')
+    event.create('porous_matrix_mesh').texture('kubejs:item/matrix/porous_matrix_mesh')
+    event.create('dense_matrix_mesh').texture('kubejs:item/matrix/dense_matrix_mesh')
+    
     
 
 
