@@ -176,6 +176,15 @@
   "item.kubejs.naquadah_fuel_mixture_dust": "Naquadah Fuel Mixture Dust",
 
 
+  "item.kubejs.raw_nanotube_substrate": "Raw Nanotube Substrate",
+  "item.kubejs.prepared_nanotube_substrate": "Prepared Nanotube Substrate",
+  "item.kubejs.cobalt_nanoparticles": "Cobalt Nanoparticles",
+  "item.kubejs.grown_nanotube_substrate": "Grown Nanotube Substrate",
+  "item.kubejs.carbon_nanotubes": "Carbon Nanotubes",
+  "item.kubejs.porous_matrix_mesh": "Porous Matrix Mesh",
+  "item.kubejs.dense_matrix_mesh": "Dense Matrix Mesh",
+
+
   "item.kubejs.complex_smd_transistor": "Complex SMD Transistor",
   "item.kubejs.complex_smd_resistor": "Complex SMD Resistor",
   "item.kubejs.complex_smd_capacitor": "Complex SMD Capacitor",

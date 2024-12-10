@@ -85,7 +85,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x58649B)
         .components('1x lead', '1x sodium')
+    
+    // Crystal Matrix Line
+    event.create('acetylene')
+        .gas()
+        .color(0xFF4F4F)
+        .components('2x carbon', '2x hydrogen')
 
+    event.create('calcium_carbide')
+        .dust()
+        .color(0xCFC870)
+        .components('1x calcium', '2x carbon')
 
     // Ingredients to create Polyethyl Cyanoacrylate, (PECA) a post-tank polymer
     event.create('sodium_cyanide')
