@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.basic_microverse('kubejs:t_one_second')
         .itemInputs('kubejs:microminer_t1', 'kubejs:quantum_flux', 'kubejs:gem_sensor')
         .itemOutputs(
-            '64x gtceu:diamond_perfect',
+            '64x gtceu:diamond_ore',
             '64x gtceu:apatite_ore',
             '64x gtceu:tricalcium_phosphate_ore',
             '64x gtceu:quartzite_ore')
@@ -129,11 +129,11 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.basic_microverse('kubejs:t_three_second')
         .itemInputs('kubejs:microminer_t3', '4x kubejs:quantum_flux', 'kubejs:gem_sensor')
         .itemOutputs(
-            '64x gtceu:diamond_perfect',
-            '32x gtceu:diamond_perfect',
-            '64x gtceu:ruby_perfect',
-            '48x gtceu:topaz_perfect',
-            '32x gtceu:emerald_perfect',
+            '64x gtceu:diamond_ore',
+            '32x gtceu:diamond_ore',
+            '64x gtceu:ruby_ore',
+            '48x gtceu:topaz_ore',
+            '32x gtceu:emerald_ore',
             '64x gtceu:netherrack_sapphire_ore',
             '64x gtceu:netherrack_gold_ore',
             '64x gtceu:netherrack_silver_ore'
@@ -527,17 +527,17 @@ ServerEvents.recipes(event => {
             '16x kubejs:quantum_flux',
         )
         .itemOutputs(
-            '64x gtceu:diamond_perfect',
-            '64x gtceu:diamond_perfect',
-            '64x gtceu:diamond_perfect',
-            '64x gtceu:diamond_perfect',
-            '64x gtceu:diamond_perfect',
-            '64x gtceu:ruby_perfect',
-            '64x gtceu:ruby_perfect',
-            '64x gtceu:ruby_perfect',
-            '64x gtceu:ruby_perfect',
-            '64x gtceu:cinnabar_perfect',
-            '64x gtceu:cinnabar_perfect'
+            '64x gtceu:diamond_ore',
+            '64x gtceu:diamond_ore',
+            '64x gtceu:diamond_ore',
+            '64x gtceu:diamond_ore',
+            '64x gtceu:diamond_ore',
+            '64x gtceu:ruby_ore',
+            '64x gtceu:ruby_ore',
+            '64x gtceu:ruby_ore',
+            '64x gtceu:ruby_ore',
+            '64x gtceu:cinnabar_ore',
+            '64x gtceu:cinnabar_ore'
         )
         .duration(500)
         .EUt(62500)

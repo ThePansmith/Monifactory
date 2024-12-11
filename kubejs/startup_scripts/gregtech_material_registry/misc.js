@@ -38,24 +38,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 
-// GT Perfect Gem material type
-GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
-    event.create('perfect')
-})
-
-GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
-    event.create('perfect').parent(GTMaterialIconSet.SHINY)
-})
-
-GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
-    event.create('perfect')
-        .unificationEnabled(true)
-        .generateItem(true)
-        .materialIconType(GTMaterialIconType.getByName('perfect'))
-        .generationCondition(ItemGenerationCondition.hasGemProperty)
-})
-
-
 // Actually Additions Crystals
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('restonia')

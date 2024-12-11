@@ -19,7 +19,6 @@ ServerEvents.recipes(event => {
         ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 128, 'prismarine_crystals'],
         ['gtceu:steel_ingot', 'gtceu:damascus_steel_ingot', 128, 'damascus_steel'],
         ['gtceu:diamatine_block', 'kubejs:starry_diamond_block', 128, 'starry_diamond'],
-        ['gtceu:coke_gem', 'gtceu:coal_perfect', 128, 'perfect_coal'],
         ['gtceu:obsidian_dust', 'enderio:grains_of_infinity', 32, 'temp_grains'],
         ['minecraft:poppy', 'minecraft:red_mushroom', 32, 'red_mushroom'],
         ['minecraft:dried_kelp', 'minecraft:wither_rose', 32, 'wither_rose'],
