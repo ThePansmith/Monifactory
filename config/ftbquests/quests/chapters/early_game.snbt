@@ -2259,7 +2259,22 @@
 			subtitle: "Because waiting for items to charge is so last version"
 			tasks: [{
 				id: "6BB55ED56C49A2B0"
-				item: "wirelesschargers:basic_wireless_player_charger"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "wirelesschargers:basic_wireless_player_charger"
+							}
+							{
+								Count: 1b
+								id: "wirelesschargers:advanced_wireless_player_charger"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "&9Charging Items Wirelessly"
