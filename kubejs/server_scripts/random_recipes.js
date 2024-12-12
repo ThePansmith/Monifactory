@@ -92,14 +92,16 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
     event.recipes.gtceu.large_chemical_reactor("sculk_vein")
-        .itemInputs('minecraft:sculk_catalyst', '16x minecraft:vine')
+        .chancedInput('minecraft:sculk_catalyst', 500, 0)
+        .itemInputs('16x minecraft:vine')
         .inputFluids("enderio:xp_juice 2000")
         .itemOutputs("16x minecraft:sculk_vein")
         .duration(1000)
         .EUt(2000)
 
     event.recipes.gtceu.large_chemical_reactor("sculk_block")
-        .itemInputs('minecraft:sculk_catalyst', '64x minecraft:moss_block')
+        .chancedInput('minecraft:sculk_catalyst', 500, 0)
+        .itemInputs('64x minecraft:moss_block')
         .inputFluids("enderio:xp_juice 2000")
         .itemOutputs("64x minecraft:sculk")
         .duration(1000)
