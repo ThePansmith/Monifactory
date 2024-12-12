@@ -442,9 +442,9 @@
 				"63F438F7033521C3"
 			]
 			description: [
-				"Mixing &6Titanium&r with &6Mana Dust&r creates &6Mana Infused Metal Dust&r. This can be smelted into ingots in an &3Electric Blast Furnace&r equipped with &6Kanthal Coils&r or better."
+				"Mixing &6Titanium&r with &6Mana Dust&r creates &6Mythril Dust&r. This can be smelted into ingots in an &3Electric Blast Furnace&r equipped with &6Kanthal Coils&r or better."
 				""
-				"Mana Infused Metal is the basis of &bThermal Expansion&r device casings, and is used for many advanced &aAugments&r."
+				"Mythril is the basis of &bThermal Expansion&r device casings, and is used for many advanced &aAugments&r."
 			]
 			id: "3E12862AD553EB8A"
 			rewards: [{
@@ -464,7 +464,7 @@
 		{
 			dependencies: ["3E12862AD553EB8A"]
 			description: [
-				"Combining a &6Block of Mana Infused Metal&r with some &6Stainless Steel Plates&r gets you a &6Machine Frame&r."
+				"Combining a &6Block of Mythril&r with some &6Stainless Steel Plates&r gets you a &6Machine Frame&r."
 				""
 				"These frames form the basis of &bThermal Expansion&r's more advanced machinery."
 			]
