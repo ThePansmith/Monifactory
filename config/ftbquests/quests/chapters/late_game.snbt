@@ -1995,7 +1995,6 @@
 		{
 			dependencies: [
 				"7E3A179376673590"
-				"56EFA6A07C7291F7"
 				"6391447F1A411281"
 				"20CB8F878CADA235"
 			]
@@ -2396,7 +2395,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["56EFA6A07C7291F7"]
+			dependencies: ["3574ABD41E90CA00"]
 			description: ["Double Plates used exclusively for the Tier Eight and Tier Eleven Micro Miners."]
 			id: "6391447F1A411281"
 			rewards: [{
@@ -2415,29 +2414,6 @@
 			y: 15.25d
 		}
 		{
-			dependencies: ["2D0DF78F71760F00"]
-			description: [
-				"&2Perfect Gems are equivalent to 8 of the base gem."
-				""
-				"&211 Perfect Diamonds are used in crafting each Crystal Matrix Ingot."
-			]
-			id: "56EFA6A07C7291F7"
-			rewards: [{
-				id: "50912497381111B9"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "78B7AF390BA27B08"
-				item: "gtceu:diamond_perfect"
-				type: "item"
-			}]
-			title: "&2Perfect Gems"
-			x: 30.25d
-			y: 15.25d
-		}
-		{
 			dependencies: [
 				"11154356854B64DA"
 				"39FD6F1076559156"
@@ -2445,9 +2421,8 @@
 			description: [
 				"Some Micro Miner missions use a &6Gemstone Sensor&r to scout out gems instead of ores."
 				""
-				"&6&2Perfect Gems&r can be obtained from such missions."
+				"&6&2Perfect Gems&r, equivalent to 8 of the base gem, can be obtained from such missions."
 			]
-			hide_dependency_lines: true
 			id: "2D0DF78F71760F00"
 			rewards: [{
 				id: "6F3E0BE43F386D11"
@@ -2460,8 +2435,9 @@
 				item: "kubejs:gem_sensor"
 				type: "item"
 			}]
-			x: 31.25d
-			y: 15.25d
+			title: "&9Gemstone Sensors"
+			x: -6.0d
+			y: 10.25d
 		}
 		{
 			dependencies: ["25B0271106684DF7"]
@@ -2813,6 +2789,21 @@
 			title: "&9Quintessence Infuser"
 			x: 27.75d
 			y: 19.875d
+		}
+		{
+			dependencies: ["41FA85A3920EB334"]
+			hide_dependent_lines: true
+			id: "3574ABD41E90CA00"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "6B4151BDED561D55"
+				item: "gtceu:crystal_matrix_ingot"
+				type: "item"
+			}]
+			title: "&9Crystal Matrix"
+			x: 11.0d
+			y: 15.25d
 		}
 	]
 	title: "Late Game"
