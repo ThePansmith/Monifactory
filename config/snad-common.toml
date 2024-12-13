@@ -1,0 +1,7 @@
+#Number of growth ticks on the snad block (default 6)
+#Range: 1 ~ 32
+growthAttempts = 6
+#Speed at which Kelp and Bamboo grow on snad (default 2)
+#Range: 1 ~ 32
+growthSpeed = 2
+
