@@ -1151,16 +1151,6 @@ ServerEvents.recipes(event => {
         )
     }
     
-    function coloredCoveredCable(color) {
-        event.shapeless(
-            `ae2:${color}_covered_cable`,
-            [
-              `ae2:${color}_glass_cable`,
-              `minecraft:${color}_wool`
-            ]
-          )
-    }
-
     function coveredDenseCable(color) {
         event.shaped(
             `ae2:${color}_covered_dense_cable`, 
@@ -1185,16 +1175,19 @@ ServerEvents.recipes(event => {
         )
     }
 
+
+
     washToFluix('covered')
     washToFluix('covered_dense')
     washToFluix('smart_dense')
     washToFluix('glass')
     washToFluix('smart')
 
-    colors.forEach(coloredCoveredCable)
+//    colors.forEach(coloredCoveredCable)
     colors.forEach(coveredDenseCable)
     colors.forEach(smartDenseCable)
 
+    
     // BetterP2P
     event.shapeless('betterp2p:advanced_memory_card', ['ae2:memory_card', 'ae2:network_tool'])
 })
