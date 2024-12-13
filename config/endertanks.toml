@@ -1,5 +1,9 @@
 #With this disabled tanks are essentially locked to the crafted color as dyes will no longer work
 enable_in_world_coloring = true
+#When linking stacked buckets:
+#True = all of them will be linked
+#False = one at a time will be linked
+full_stack_linking = true
 
 #Items used to upgrade the EnderTanks
 [upgrade_items]

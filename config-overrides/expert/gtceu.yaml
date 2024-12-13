@@ -549,10 +549,22 @@ compat:
 
     # Which part of the screen to anchor buttons to
     # Default: "BOTTOM_LEFT"
+    # Allowed values:
+    # - TOP_LEFT
+    # - TOP_CENTER
+    # - TOP_RIGHT
+    # - RIGHT_CENTER
+    # - BOTTOM_RIGHT
+    # - BOTTOM_CENTER
+    # - BOTTOM_LEFT
+    # - LEFT_CENTER
     buttonAnchor: BOTTOM_LEFT
 
     # Which direction the buttons will go
     # Default: "HORIZONTAL"
+    # Allowed values:
+    # - VERTICAL
+    # - HORIZONTAL
     direction: HORIZONTAL
 
     # How horizontally far away from the anchor to place the buttons
