@@ -118,5 +118,5 @@ It's easy to forget, but mod updates can break as many things as they fix - don'
 
 DO NOT UPDATE:
 - Crafting Station to 1.20.1-0
-- Nuclearcraft: Neoteric
 - Not Enough Recipe Book
+- Thermal Systeams
