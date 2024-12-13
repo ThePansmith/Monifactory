@@ -789,6 +789,10 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: 'enderio:extraction_speed_upgrade_3' }, 'gtceu:soularium_ingot', 'gtceu:aluminium_ingot')
 
     // Conduit Probe recipe
-    event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:energy_conduit', 'enderio:conductive_conduit')
     event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:conductive_alloy_ingot', 'gtceu:conductive_alloy_ingot')
+    if(!isExpertMode)
+        event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:energy_conduit', 'enderio:conductive_conduit')
+    if(isExpertMode)
+        event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:energy_conduit', 'gtceu:conductive_alloy_single_wire')
+    
 })
