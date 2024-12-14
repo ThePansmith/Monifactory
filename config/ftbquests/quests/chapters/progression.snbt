@@ -701,7 +701,7 @@
 		{
 			dependencies: ["025543EDB0A4AC22"]
 			description: [
-				"Upgrade kits can be applied to &bThermal Expansion&r Dynamos, machines, and even Portable Tanks. Machines and dynamos get additional augment slots."
+				"Components can be applied to &bThermal Expansion&r Dynamos and machines."
 				""
 				"When applied to a dynamo, it increases the &apower generation and fuel burn rate to 150%&r."
 				""
