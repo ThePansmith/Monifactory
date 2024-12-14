@@ -184,15 +184,15 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t4half')
             .circuit(1)
             .itemOutputs(
-                '48x minecraft:skeleton_skull',
                 '64x minecraft:bone',
                 '64x minecraft:bone',
                 '64x minecraft:bone',
-                '48x minecraft:zombie_head',
+                '64x minecraft:bone',
                 '64x minecraft:rotten_flesh',
                 '64x minecraft:rotten_flesh',
                 '64x minecraft:rotten_flesh',
-                '48x minecraft:creeper_head',
+                '64x minecraft:rotten_flesh',
+                '64x minecraft:gunpowder',
                 '64x minecraft:gunpowder',
                 '64x minecraft:slime_block',
                 '64x kubejs:guardian_scale'
@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
                 '50x thermal:basalz_rod',
                 '50x thermal:basalz_rod',
                 '64x minecraft:ghast_tear',
-                '48x minecraft:wither_skeleton_skull',
+                '64x kubejs:wither_bone',
                 '64x kubejs:wither_bone',
                 '64x kubejs:wither_bone', // drops of evil aren't in the pack
                 '64x minecraft:magma_cream',
@@ -244,7 +244,6 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dragon_lair_data',
                 '64x minecraft:dragon_breath',
                 '64x minecraft:dragon_breath',
-                'minecraft:dragon_head'
             )
             .duration(780)
             .EUt(30720)
