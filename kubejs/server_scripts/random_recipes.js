@@ -981,4 +981,15 @@ ServerEvents.recipes(event => {
 
     // Chipped tinker's table
     event.replaceInput({ id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', '#forge:chests')
+
+    // Phantom Paste
+    event.shaped(
+        "framedblocks:phantom_paste", [
+            'SSS',
+            'SCS',
+            'SSS'
+        ], {
+            S: "#forge:slimeballs",
+            C: "minecraft:chorus_fruit",
+        })
 })
