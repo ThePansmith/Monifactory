@@ -260,6 +260,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         event.create('actualization_chamber', 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes('actualization_chamber')
+            .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
             .appearanceBlock(GTBlocks.FUSION_CASING)
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("XXX", "GGG", "XXX")
