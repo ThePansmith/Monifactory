@@ -86,3 +86,11 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(110)
 })
+
+// Add regolith dusts to ores' loot pool
+LootJS.modifiers((event) => {
+    event.addBlockLootModifier(/.*moon_.*_ore$/).randomChance(0.5).addLoot('kubejs:moon_dust');
+    event.addBlockLootModifier(/.*mars_.*_ore$/).randomChance(0.5).addLoot('kubejs:mars_dust');
+    event.addBlockLootModifier(/.*venus_.*_ore$/).randomChance(0.5).addLoot('kubejs:venus_dust');
+    event.addBlockLootModifier(/.*mercury_.*_ore$/).randomChance(0.5).addLoot('kubejs:mercury_dust');
+});
