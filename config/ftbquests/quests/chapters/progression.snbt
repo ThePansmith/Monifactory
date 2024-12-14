@@ -701,7 +701,7 @@
 		{
 			dependencies: ["025543EDB0A4AC22"]
 			description: [
-				"Upgrade kits can be applied to &bThermal Expansion&r Dynamos, machines, and even Portable Tanks. Machines and dynamos get additional augment slots."
+				"Components can be applied to &bThermal Expansion&r Dynamos and machines."
 				""
 				"When applied to a dynamo, it increases the &apower generation and fuel burn rate to 150%&r."
 				""
@@ -1926,7 +1926,7 @@
 		{
 			dependencies: ["2DD1E2391DA3170C"]
 			description: [
-				"The first and most expensive Tier Six Circuit, needed for crafting the &3IV Assembling Machine&r."
+				"The first and most expensive Tier Six Circuit, needed for crafting the &3IV Circuit Assembling Machine&r."
 				""
 				"Requires a bunch of standard circuit components."
 			]
