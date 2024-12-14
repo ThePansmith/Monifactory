@@ -4,6 +4,14 @@ if (Platform.isLoaded('fluxnetworks')) {
     ServerEvents.recipes(event => {
         event.replaceInput({ id: 'fluxnetworks:fluxconfigurator'}, 'minecraft:obsidian', 'enderio:infinity_rod');
 
+        // Flux Dust
+        event.recipes.gtceu.chemical_bath('fluxnetworks:flux_dust')
+            .itemInputs('1x gtceu:obsidian_dust')
+            .inputFluids('gtceu:redstone 144')
+            .itemOutputs('fluxnetworks:flux_dust')
+            .duration(40)
+            .EUt(16)
+
         //Flux Block
         event.shaped('fluxnetworks:flux_block', [
             'FFF',
