@@ -115,10 +115,6 @@
   "gtceu.greenhouse": "温室",
   "gtceu.multiblock.greenhouse.description": "§7一个高能紫外线室，即使是最难以想象的植物也能够快速大规模培育。",
 
-  "block.gtceu.extra_large_chemical_reactor": "超大型化学反应堆",
-  "gtceu.extra_large_chemical_reactor": "超大型化学反应堆",
-  "gtceu.multiblock.extra_large_chemical_reactor.description": "§7以前所未有的速度和效率执行所有类型的化学反应。",
-
   "block.gtceu.discharger": "放电器",
   "gtceu.discharger": "放电器",
   "gtceu.multiblock.discharger.description": "§7释放大量能量以完成配方。",
