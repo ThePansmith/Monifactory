@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t1')
             .circuit(2)
             .itemOutputs(
-                '64x gtceu:diamond_perfect', 
+                '64x gtceu:diamond_ore', 
                 '64x gtceu:apatite_ore', 
                 '64x gtceu:tricalcium_phosphate_ore', 
                 '64x gtceu:quartzite_ore'
@@ -91,11 +91,11 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t3')
             .circuit(1)
             .itemOutputs(
-                '64x gtceu:diamond_perfect',
-                '32x gtceu:diamond_perfect',
-                '64x gtceu:ruby_perfect',
-                '48x gtceu:topaz_perfect',
-                '32x gtceu:emerald_perfect',
+                '64x gtceu:diamond_ore',
+                '32x gtceu:diamond_ore',
+                '64x gtceu:ruby_ore',
+                '48x gtceu:topaz_ore',
+                '32x gtceu:emerald_ore',
                 '64x gtceu:netherrack_sapphire_ore',
                 '64x gtceu:netherrack_gold_ore',
                 '64x gtceu:netherrack_silver_ore'
