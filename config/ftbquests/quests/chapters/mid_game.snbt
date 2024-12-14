@@ -349,45 +349,38 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["4685AC9E6CD87B77"]
-			description: [
-				"Use it to craft a &aThermal Elemental Model&r. The rest of the dusts can be crafted from pristine matter."
-				""
-				"Saves you from having to make a bucket of &9Elemental Reduction Fluid&r if you're not playing on Peaceful."
-			]
-			icon: "thermal:blizz_rod"
+			dependencies: ["0006FEA1843FEA0A"]
+			description: ["&6Pyrotheum Dust&r can be crafted from &6Blaze Powder&r, which you already have means of crafting. Use it to craft a &aThermal Elemental Model&r. The rest of the dusts can then be crafted from pristine matter."]
+			icon: "hostilenetworks:blank_data_model"
 			id: "47A81FADD828772D"
+			optional: true
 			rewards: [{
 				id: "76C5C1CA73A3AB1B"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "...or, well, you might just do some exploration and kill a wild thermal elemental for a rod."
+			subtitle: "An alterative route"
 			tasks: [{
 				id: "28D34F773FBF78A8"
 				type: "checkmark"
 			}]
-			title: "I Don't Like Chemistry"
+			title: "&9Neural Networking"
 			x: 9.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["476F71CC0B0AC2A4"]
-			description: [
-				"If you don't feel like searching for a Thermal Elemental, or can't because you're playing on Peaceful, you will need to make &eone&r batch of &9Elemental Reduction Fluid&r."
-				""
-				"This will bootstrap being able to craft a &aThermal Elemental Model&r for HNN, and you can get all of the rods from &6Thermal Elemental Pristine Matter&r going forward."
-			]
+			description: ["&9Elemental Reduction Fluid&r is the main method of &6Thermal Elemental Dust&r production in Hardmode, but can also see some use in Normal Mode."]
+			icon: "gtceu:elemental_reduction_fluid_bucket"
 			id: "58FCAC329B09FEB0"
 			rewards: [{
-				id: "67F39832C727C042"
+				id: "6CB97C9998423632"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			tasks: [{
-				id: "152EDE00EF972708"
-				item: "gtceu:elemental_reduction_fluid_bucket"
-				type: "item"
+				id: "74FE595844AC8C3C"
+				type: "checkmark"
 			}]
 			title: "Elemental Reduction Fluid"
 			x: 5.0d
