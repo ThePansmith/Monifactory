@@ -56,7 +56,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
 		.components('6x electrum', 'lumium', 'signalum');
 
-    // Mana Infused Metal
+    // Mythril
 	event.create("mythril")
         .ingot()
         .color(0x428fdb).iconSet('dull')

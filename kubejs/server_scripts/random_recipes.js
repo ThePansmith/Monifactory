@@ -19,12 +19,12 @@ ServerEvents.recipes(event => {
 
 
     // snaded sand snad
-    comapcting(event, 'kubejs:compressed_sand', 'minecraft:sand');
-    comapcting(event, 'kubejs:double_compressed_sand', 'kubejs:compressed_sand');
+    compacting(event, 'kubejs:compressed_sand', 'minecraft:sand');
+    compacting(event, 'kubejs:double_compressed_sand', 'kubejs:compressed_sand');
 
     // red snaded red sand red snad
-    comapcting(event, 'kubejs:compressed_red_sand', 'minecraft:red_sand');
-    comapcting(event, 'kubejs:double_compressed_red_sand', 'kubejs:compressed_red_sand');
+    compacting(event, 'kubejs:compressed_red_sand', 'minecraft:red_sand');
+    compacting(event, 'kubejs:double_compressed_red_sand', 'kubejs:compressed_red_sand');
 
     // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
@@ -65,9 +65,9 @@ ServerEvents.recipes(event => {
     event.smelting('2x minecraft:slime_ball', 'gtceu:plant_ball')
 
     // Infinity Dust Blocks
-    comapcting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
-    comapcting(event, 'kubejs:compressed_infinity_dust_block', 'kubejs:infinity_dust_block');
-    comapcting(event, 'kubejs:double_compressed_infinity_dust_block', 'kubejs:compressed_infinity_dust_block');
+    compacting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
+    compacting(event, 'kubejs:compressed_infinity_dust_block', 'kubejs:infinity_dust_block');
+    compacting(event, 'kubejs:double_compressed_infinity_dust_block', 'kubejs:compressed_infinity_dust_block');
 
     // Blazerod Shenanigans
     event.shapeless('minecraft:blaze_rod', 'minecraft:brewing_stand')
@@ -492,11 +492,11 @@ ServerEvents.recipes(event => {
     ).damageIngredient('#minecraft:swords')
 
     //Avaritia Replacement recipes
-    comapcting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
+    compacting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
 
     //Dense Hydrogen conversion
-    comapcting(event, 'kubejs:dense_hydrogen', 'kubejs:solidified_hydrogen');
-    comapcting(event, 'kubejs:ultra_dense_hydrogen', 'kubejs:dense_hydrogen');
+    compacting(event, 'kubejs:dense_hydrogen', 'kubejs:solidified_hydrogen');
+    compacting(event, 'kubejs:ultra_dense_hydrogen', 'kubejs:dense_hydrogen');
 
     //Recipe from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
@@ -928,7 +928,7 @@ ServerEvents.recipes(event => {
         .EUt(15)
 
     // Patchouli Books that needed tweaking
-    event.replaceInput({ id: 'laserio:my_book_recipe_shapeless'}, 'laserio:logic_chip', 'laserio:card_item')
+    event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"laserio:laseriobook"}'), ['minecraft:book', 'laserio:card_item']).id('laserio:my_book_recipe_shapeless')
 
     // Chipped tinker's table
     event.replaceInput({ id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', '#forge:chests')

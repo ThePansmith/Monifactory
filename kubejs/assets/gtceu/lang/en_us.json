@@ -225,7 +225,7 @@
   "material.gtceu.iridosmineyes": "Iridiosmine 80/20",
   "material.gtceu.osmiridiumyes": "Osmiridium 80/20",
   "material.gtceu.kaemanite": "Kaemanite",
-  "material.gtceu.mythril": "§bMana Infused Metal§r",
+  "material.gtceu.mythril": "§bMythril§r",
   "material.gtceu.mana": "Mana Infused",
   "material.gtceu.dark_soularium": "Dark Soularium",
 
@@ -462,7 +462,7 @@
   "__MISC__.flufff": "> Misc. <",
   "__MISC__.footer": "=========",
 
-  "item.gtceu.mythril_ingot": "§bMana Infused Metal§r",
+  "item.gtceu.mythril_ingot": "§bMythril§r",
   "tagprefix.perfect": "Perfect %s",
   "block.gtceu.shock_proof_cutting_casing": "Shock Proof Casing",
   "curios.identifier.gtceu_magnet": "Magnet",

@@ -2478,6 +2478,29 @@
 			x: 1.0d
 			y: -2.0d
 		}
+		{
+			dependencies: [
+				"66FCC26399376B55"
+				"1BC6DDC2D50F9C46"
+			]
+			description: ["&9Sneak-right-click a Multiblock controller with a terminal to have it automatically pull blocks from your inventory to build the multiblock."]
+			disable_toast: true
+			icon: "gtceu:terminal"
+			id: "74A7ABF43D6A403F"
+			rewards: [{
+				id: "5D7CCB89EDB215C7"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "534697B293609E6F"
+				title: "Terminal"
+				type: "checkmark"
+			}]
+			title: "&9Terminal"
+			x: 1.0d
+			y: 7.5d
+		}
 	]
 	title: "The Factory"
 }

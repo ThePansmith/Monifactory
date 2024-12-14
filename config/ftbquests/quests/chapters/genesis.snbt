@@ -301,27 +301,6 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["&9Can be used to autobuild multiblocks&r."]
-			disable_toast: true
-			icon: "gtceu:terminal"
-			id: "07DC7FC23332B847"
-			rewards: [{
-				id: "280FA1B26199881B"
-				item: "gtceu:terminal"
-				type: "item"
-			}]
-			subtitle: "GT Guide book"
-			tasks: [{
-				id: "380954E57B7C36EC"
-				title: "Terminal"
-				type: "checkmark"
-			}]
-			title: "&9Terminal"
-			x: 1.75d
-			y: 0.5d
-		}
-		{
-			dependencies: ["66FCC26399376B55"]
 			description: [
 				"&c&rOres in &9Monifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area! &9You can also click on a ore vein to mark it on your map!"
 				"&r"
@@ -524,12 +503,25 @@
 				"You also have access to &9LaserIO&r, which while a little costly, allows for some rather complex and compact filtering."
 			]
 			id: "64AAF0CD958D836A"
-			rewards: [{
-				count: 2
-				id: "56EDDA9AEA7F1EBA"
-				item: "ulvcovm:ulv_electric_pump"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "56EDDA9AEA7F1EBA"
+					item: "ulvcovm:ulv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "3E84D62A9490A941"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "laserio:laseriobook"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "150F57D9BEE7CCEE"
 				item: {
@@ -1890,8 +1882,8 @@
 				type: "checkmark"
 			}]
 			title: "JourneyMap and Registering Homes"
-			x: -10.5d
-			y: 10.0d
+			x: -9.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1907,7 +1899,6 @@
 				"[\"Issue tracking and development is handled on the respective GitHub project repositories. The repository for this pack is \", {\"text\": \"here\", \"color\": \"blue\", \"underlined\": \"true\", \"clickEvent\": {\"action\": \"open_url\", \"value\": \"https://github.com/ThePansmith/Monifactory\"}}, \".\"]"
 			]
 			disable_toast: true
-			hide_dependency_lines: true
 			icon: "minecraft:writable_book"
 			id: "70026930847E8EC0"
 			optional: true
@@ -1917,8 +1908,8 @@
 				type: "checkmark"
 			}]
 			title: "Discord and GitHub"
-			x: -9.0d
-			y: 5.5d
+			x: 1.75d
+			y: 0.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]

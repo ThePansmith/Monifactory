@@ -20,7 +20,7 @@ const capitalize = (word) => (word[0].toUpperCase() + word.substring(1));
  * @param {boolean} make_uncompacting make uncompacting recipie (default true)
  * @returns {Internal.RecipeTypeFunction}
  */
-const comapcting = (ev, output, input, make_uncompacting) => {
+const compacting = (ev, output, input, make_uncompacting) => {
     // kubejs doesnt support nullish coalescing :(
     if (make_uncompacting === undefined || make_uncompacting === null) {
         make_uncompacting = true;
