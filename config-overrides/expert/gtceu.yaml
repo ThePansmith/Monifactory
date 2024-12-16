@@ -119,7 +119,7 @@ worldgen:
 
     # The maximum random offset (in blocks) from the grid for generating an ore vein.
     # Default: 12
-    oreVeinRandomOffset: 0
+    oreVeinRandomOffset: 4
 
     # Prevents regular vanilla ores from being generated outside GregTech ore veins
     # Default: true
