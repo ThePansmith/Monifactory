@@ -357,7 +357,7 @@ StartupEvents.registry('item', event => {
     event.create('depleted_naquadah_fuel_pellet').texture('kubejs:item/naquadah/depleted_naquadah_fuel_pellet')
     event.create('naquadah_fuel_dust').texture('kubejs:item/naquadah/naquadah_fuel_dust')
     event.create('raw_naquadah_fuel_dust').texture('kubejs:item/naquadah/raw_naquadah_fuel_dust')
-    event.create('nuclear_waste').texture('kubejs:item/naquadah/nuclear_waste')
+    event.create('naquadah_waste').texture('kubejs:item/naquadah/naquadah_waste')
     event.create('inactivated_naquadah_fuel_dust').texture('kubejs:item/naquadah/inactivated_naquadah_fuel_dust')
     event.create('depleted_naquadah_fuel_dust').texture('kubejs:item/naquadah/depleted_naquadah_fuel_dust')
     event.create('crude_naquadah_fuel_blend').texture('kubejs:item/naquadah/crude_naquadah_fuel_blend')

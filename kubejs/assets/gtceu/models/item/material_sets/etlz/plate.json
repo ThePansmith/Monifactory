@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "gtceu:item/material_sets/uru/nugget"
+    "layer0": "gtceu:item/material_sets/etlz/plate"
   }
 }

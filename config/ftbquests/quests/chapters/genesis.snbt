@@ -521,6 +521,20 @@
 					}
 					type: "item"
 				}
+				{
+					id: "420A85E5ED94C564"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 15
+							}
+						}
+						id: "laserio:card_holder"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "150F57D9BEE7CCEE"

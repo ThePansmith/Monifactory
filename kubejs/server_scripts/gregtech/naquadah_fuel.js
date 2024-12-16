@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         // Naquadah Fuel Feedstock
         event.recipes.gtceu.electric_blast_furnace("raw_naquadah_solution")
             .itemInputs('10x gtceu:naquadah_dust')
-            .itemOutputs('kubejs:nuclear_waste')
+            .itemOutputs('kubejs:naquadah_waste')
             .inputFluids('gtceu:helium_hydride 500')
             .outputFluids('gtceu:raw_naquadah_solution 1000')
             .duration(400)
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         // Naquadah Distillation
         event.recipes.gtceu.distillation_tower('naquadah_isotope_distillation')
             .inputFluids('gtceu:active_naquadah_blend 1000')
-            .chancedOutput('kubejs:nuclear_waste', 1000, 0)
+            .chancedOutput('kubejs:naquadah_waste', 1000, 0)
             .outputFluids('gtceu:naquadah_isotope_sludge 100', 'gtceu:heavy_naquadah_isotope_fraction 300', 'gtceu:medium_naquadah_isotope_fraction 400', 'gtceu:light_naquadah_isotope_fraction 200')
             .duration(200)
             .EUt(15360)
@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.distillation_tower('sludge_distillation')
             .inputFluids('gtceu:cracked_naquadah_isotope_sludge 1000')
-            .itemOutputs('kubejs:nuclear_waste')
+            .itemOutputs('kubejs:naquadah_waste')
             .outputFluids('gtceu:superheavy_atomic_residue 600', 'gtceu:heavy_naquadah_isotope_fraction 200', 'gtceu:neutronium 200')
             .duration(200)
             .EUt(15360)
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
             .chancedOutput('3x gtceu:thorium_dust', 5000, 0)
             .chancedOutput('gtceu:neutronium_dust', 3300, 0)
             .chancedOutput('gtceu:duranium_dust', 3300, 0)
-            .chancedOutput('3x kubejs:nuclear_waste', 6600, 0)
+            .chancedOutput('3x kubejs:naquadah_waste', 6600, 0)
             .chancedFluidOutput('gtceu:americium 100', 3300,0)
             .duration(1200)
             .EUt(122800)
@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
             .outputFluids('gtceu:einsteinium 200')
             .itemOutputs('12x gtceu:lead_dust', 'gtceu:trinium_dust')
             .chancedOutput('16x gtceu:enriched_naquadah_dust', 5000, 0)
-            .chancedOutput('3x kubejs:nuclear_waste', 6600, 0)
+            .chancedOutput('3x kubejs:naquadah_waste', 6600, 0)
             .chancedFluidOutput('gtceu:exotic_particle_solution 100', 3300, 0)
             .duration(1200)
             .EUt(491520)
@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:naquadah_superfuel_depleted 12000')
             .itemOutputs('12x gtceu:lead_dust', '3x gtceu:activated_netherite_dust')
             .chancedOutput('gtceu:infinity_dust', 5000, 0)
-            .chancedOutput('3x kubejs:nuclear_waste', 6600, 0)
+            .chancedOutput('3x kubejs:naquadah_waste', 6600, 0)
             .chancedOutput('16x gtceu:naquadria_dust', 5000, 0)
             .chancedFluidOutput('gtceu:taranium 288', 5000, 0)
             .chancedFluidOutput('gtceu:hyperdegenerate_matter 100', 3300, 0)
@@ -237,8 +237,8 @@ ServerEvents.recipes(event => {
         .EUt(30720)
 
     event.recipes.gtceu.forming_press('pellet_pressing')
-        .itemInputs('kubejs:naquadah_fuel_dust')
         .notConsumable('kubejs:pellet_extruder_mold')
+        .itemInputs('kubejs:naquadah_fuel_dust')
         .itemOutputs('kubejs:unsintered_naquadah_fuel_pellet')
         .duration(100)
         .EUt(122880)
@@ -293,7 +293,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.centrifuge('fuel_mixture_centrifuging')
         .itemInputs('4x kubejs:naquadah_fuel_mixture_dust')
         .inputFluids('gcyr:hydrobromic_acid 1000')
-        .itemOutputs('4x kubejs:raw_naquadah_fuel_dust', 'kubejs:nuclear_waste')
+        .itemOutputs('4x kubejs:raw_naquadah_fuel_dust', 'kubejs:naquadah_waste')
         .duration(100)
         .EUt(122880)
 
@@ -309,8 +309,8 @@ ServerEvents.recipes(event => {
         ).id('kubejs:pellet_mold')
 
     // Solid Waste Processing
-    event.recipes.gtceu.centrifuge('nuclear_waste_centrifuging')
-        .itemInputs('4x kubejs:nuclear_waste')
+    event.recipes.gtceu.centrifuge('naquadah_waste_centrifuging')
+        .itemInputs('4x kubejs:naquadah_waste')
         .inputFluids('gtceu:hydrofluoric_acid 2000')
         .itemOutputs('4x gtceu:lead_dust')
         .itemOutputs('2x gtceu:naquadah_dust')
@@ -322,10 +322,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.sifter('depleted_fuel_sifting')
         .itemInputs('kubejs:depleted_naquadah_fuel_dust')
-        .chancedOutput('kubejs:nuclear_waste', 3300, 0)
-        .chancedOutput('kubejs:nuclear_waste', 3300, 0)
-        .chancedOutput('kubejs:nuclear_waste', 3300, 0)
-        .chancedOutput('kubejs:nuclear_waste', 3300, 0)
+        .chancedOutput('kubejs:naquadah_waste', 3300, 0)
+        .chancedOutput('kubejs:naquadah_waste', 3300, 0)
+        .chancedOutput('kubejs:naquadah_waste', 3300, 0)
+        .chancedOutput('kubejs:naquadah_waste', 3300, 0)
         .duration(80)
         .EUt(30720)
 
