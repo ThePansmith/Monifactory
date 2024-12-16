@@ -128,6 +128,12 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(15)
 
+    event.recipes.gtceu.mixer("rtm_alloy")
+        .itemInputs('2x #forge:dusts/ruthenium', '2x #forge:dusts/tungsten', '1x #forge:dusts/molybdenum')
+        .itemOutputs('5x gtceu:rtm_alloy_dust')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.EV])
+
     event.recipes.gtceu.mixer("kubejs:mana_infused_dust")
         .itemInputs('kubejs:primal_mana', '#forge:dusts/titanium')
         .itemOutputs('2x gtceu:mythril_dust')
