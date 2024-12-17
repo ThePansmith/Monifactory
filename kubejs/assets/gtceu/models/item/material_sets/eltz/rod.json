@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "gtceu:item/material_sets/etlz/round"
+    "layer0": "gtceu:item/material_sets/eltz/rod"
   }
 }

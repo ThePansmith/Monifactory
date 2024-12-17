@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "gtceu:item/material_sets/etlz/bolt"
+    "layer0": "gtceu:item/material_sets/eltz/gear"
   }
 }

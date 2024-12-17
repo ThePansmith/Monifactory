@@ -24,7 +24,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('omnium').parent(GTMaterialIconSet.SHINY)
     event.create('sculk_alloy').parent(GTMaterialIconSet.DULL)
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
-    event.create('etlz').parent(GTMaterialIconSet.SHINY)
+    event.create('eltz').parent(GTMaterialIconSet.SHINY)
     event.create('monium').parent(GTMaterialIconSet.SHINY)
 })
 
@@ -86,7 +86,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .element(GTElements.get('eltz'))
         .color(0xffffff)
-        .iconSet('etlz')
+        .iconSet('eltz')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.PHOSPHORESCENT)
        
     event.create('eltic_actinate')
