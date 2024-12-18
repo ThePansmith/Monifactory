@@ -1132,6 +1132,7 @@
 				item: "gtceu:enderium_ingot"
 				type: "item"
 			}]
+			title: "&9Enderium"
 			x: 9.0d
 			y: 8.25d
 		}
