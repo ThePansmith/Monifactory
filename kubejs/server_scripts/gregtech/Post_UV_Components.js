@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
 
     // Motors
     event.recipes.gtceu.assembly_line('uhv_motor')
-        .itemInputs('gtceu:magnetic_terbium_rod', '8x gtceu:long_actinium_rod', '8x gtceu:actinium_ring', '16x gtceu:actinium_round', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '2x gtceu:europium_single_cable')
+        .itemInputs('gtceu:long_magnetic_terbium_rod', '8x gtceu:long_actinium_rod', '8x gtceu:actinium_ring', '16x gtceu:actinium_round', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '2x gtceu:europium_single_cable')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 2000', 'gtceu:crystal_matrix 1152', 'gtceu:naquadria 576')
         .itemOutputs('gtceu:uhv_electric_motor')
         .duration(600)
