@@ -71,42 +71,15 @@
 			x: 5.0d
 			y: -2.0d
 		}
+		{
+			id: "50BE763190346D54"
+			linked_quest: "1405D08C6A87B3BB"
+			shape: "square"
+			x: -4.0d
+			y: -2.0d
+		}
 	]
 	quests: [
-		{
-			dependencies: ["2D10F2E538486624"]
-			description: ["&3Large Plasma Turbines&r are a powerful late game method of generating power. One Large Plasma Turbine produces &2a base of 16384 EU/t when using an IV Rotor Holder&r."]
-			icon: "gtceu:plasma_large_turbine"
-			id: "1405D08C6A87B3BB"
-			rewards: [{
-				id: "265F8AF395C89377"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					id: "5CA6A3EE3EF632F5"
-					item: "gtceu:plasma_large_turbine"
-					type: "item"
-				}
-				{
-					count: 28L
-					id: "6324614154FC58BF"
-					item: "gtceu:tungstensteel_turbine_casing"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "3D5916D81DAB1BCC"
-					item: "gtceu:tungstensteel_gearbox"
-					type: "item"
-				}
-			]
-			title: "&2Plasma Turbine"
-			x: -4.0d
-			y: -1.75d
-		}
 		{
 			dependencies: ["2A6E9E7C80754936"]
 			description: ["&6Fusion Coils&r are used in the &2Fusion Reactor MK II&r and &2Fusion Reactor MK III&r."]
