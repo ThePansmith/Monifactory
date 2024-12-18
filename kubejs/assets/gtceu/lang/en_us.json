@@ -451,8 +451,14 @@
   "material.gtceu.hyperdegenerate_matter":"Hyperdegenerate Matter",
   "material.gtceu.exotic_particle_solution": "Exotic Particle Solution",
 
+  "__Terbium__.header": "=================",
+  "__Terbium__.flufff": ">    Terbium    <",
+  "__Terbium__.footer": "=================",
 
-
+  "material.gtceu.ammonium_oxalate": "Ammonium Oxalate",
+  "material.gtceu.ammonium_nitrate": "Ammonium Nitrate",
+  "material.gtceu.thorium_hydroxite": "Thorium Hydroxite",
+  "material.gtceu.magnetic_terbium": "Magnetic Terbium",
 
   "__MISC__.header": "=========",
   "__MISC__.flufff": "> Misc. <",

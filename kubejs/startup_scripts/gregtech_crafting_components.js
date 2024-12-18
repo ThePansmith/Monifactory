@@ -126,9 +126,9 @@ GTCEuStartupEvents.craftingComponents(event => {
     // Magnetic Rods (Uses Samarium for UV+, two tiers after the same for Nomi)
     let magneticRodMap = {};
     magneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
-    magneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
-    magneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
-    magneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
+    magneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.Terbium)
+    magneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Terbium)
+    magneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Terbium)
     event.modifyUnificationEntry(CraftingComponent.STICK_MAGNETIC, magneticRodMap)
 
     // Distillation Rods
@@ -145,8 +145,8 @@ GTCEuStartupEvents.craftingComponents(event => {
     electromagneticRodMap[GTValues.ZPM] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Neodymium)
     electromagneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
     electromagneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
-    electromagneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
-    electromagneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
+    electromagneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Terbium)
+    electromagneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Terbium)
     event.modifyUnificationEntry(CraftingComponent.STICK_ELECTROMAGNETIC, electromagneticRodMap)
 
     // Chem reactor pipe ingredient

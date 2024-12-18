@@ -136,7 +136,33 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
 })
 
+// Terbium
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('ammonium_oxalate')
+        .dust()
+        .color(0x2596be)
+        .components('2x ammonia', '2x carbon', '4x oxygen')
 
+    event.create('ammonium_nitrate')
+        .dust()
+        .color(0xF5F5F5)
+        .components('1x ammonia', '1x nitric_acid')
+
+        event.create('thorium_hydroxite')
+        .dust()
+        .color(0x243e1c)
+        .components('1x thorium', '4x carbon', '4x oxygen')
+
+        event.create('magnetic_terbium')
+        .ingot()
+        .components('1x terbium')
+        .color(0x8C8F7A)
+        .iconSet(GTMaterialIconSet.MAGNETIC)
+        .ingotSmeltInto(GTMaterials.get('terbium'))
+        .arcSmeltInto(GTMaterials.get('terbium'))
+        .macerateInto(GTMaterials.get('terbium'))
+        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
+})
 // Misc
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('elemental_reduction_fluid')
