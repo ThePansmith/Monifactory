@@ -66,7 +66,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x4C484C)
         .iconSet('dull')
         .cableProperties(GTValues.V[GTValues.UEV], 16, 0, true)
-        .fluidPipeProperties(120000, 96000, true, true, true, true)
+        .fluidPipeProperties(11000, 8500, true, false, true, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
     event.create('sculk_bioalloy')
