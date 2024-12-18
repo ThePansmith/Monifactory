@@ -1529,7 +1529,22 @@
 			tasks: [{
 				count: 2L
 				id: "3D2DBB6C527CF870"
-				item: "mae2:pattern_p2p_tunnel"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mae2:pattern_p2p_tunnel"
+							}
+							{
+								Count: 1b
+								id: "mae2:pattern_multi_p2p_tunnel"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "&9Pattern P2P"
