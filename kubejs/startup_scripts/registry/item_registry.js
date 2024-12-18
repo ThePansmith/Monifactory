@@ -374,7 +374,13 @@ StartupEvents.registry('item', event => {
     event.create('porous_matrix_mesh').texture('kubejs:item/matrix/porous_matrix_mesh')
     event.create('dense_matrix_mesh').texture('kubejs:item/matrix/dense_matrix_mesh')
     
-    
+    // Terbium Line
+    event.create('rare_earth_sulfate').texture('kubejs:item/terbium/rare_earth_sulfate')
+    event.create('rare_earth_oxide').texture('kubejs:item/terbium/rare_earth_oxide')
+    event.create('rare_earth_salt').texture('kubejs:item/terbium/rare_earth_salt')
+    event.create('terbium_salt').texture('kubejs:item/terbium/terbium_salt')
+
+
 
 
     // Sculk bioalloy processing intermediate products

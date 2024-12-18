@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
 
     // Motors
     event.recipes.gtceu.assembly_line('uhv_motor')
-        .itemInputs('gtceu:magnetic_samarium_rod', '8x gtceu:long_actinium_rod', '8x gtceu:actinium_ring', '16x gtceu:actinium_round', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '2x gtceu:europium_single_cable')
+        .itemInputs('gtceu:magnetic_terbium_rod', '8x gtceu:long_actinium_rod', '8x gtceu:actinium_ring', '16x gtceu:actinium_round', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '2x gtceu:europium_single_cable')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 2000', 'gtceu:crystal_matrix 1152', 'gtceu:naquadria 576')
         .itemOutputs('gtceu:uhv_electric_motor')
         .duration(600)
@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_motor')
-        .itemInputs('gtceu:long_magnetic_samarium_rod', '8x gtceu:long_sculk_bioalloy_rod', '8x gtceu:sculk_bioalloy_ring', '16x gtceu:sculk_bioalloy_round', '64x gtceu:fine_activated_netherite_wire', '64x gtceu:fine_activated_netherite_wire', '48x gtceu:fine_activated_netherite_wire', '2x gtceu:omnium_single_cable')
+        .itemInputs('gtceu:long_magnetic_terbium_rod', '8x gtceu:long_sculk_bioalloy_rod', '8x gtceu:sculk_bioalloy_ring', '16x gtceu:sculk_bioalloy_round', '64x gtceu:fine_activated_netherite_wire', '64x gtceu:fine_activated_netherite_wire', '48x gtceu:fine_activated_netherite_wire', '2x gtceu:omnium_single_cable')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:lubricant 3000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_electric_motor')
         .duration(600)
@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uiv_motor')
-        .itemInputs('gtceu:long_magnetic_samarium_rod', '12x gtceu:long_eltz_rod', '12x gtceu:eltz_ring', '24x gtceu:eltz_round', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '2x gtceu:holmium_single_wire')
+        .itemInputs('gtceu:long_magnetic_terbium_rod', '12x gtceu:long_eltz_rod', '12x gtceu:eltz_ring', '24x gtceu:eltz_round', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '2x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_electric_motor')
         .duration(1200)
