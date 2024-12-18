@@ -797,8 +797,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer(new ResourceLocation('kubejs', 'block/omnium/casing'),
             "gtceu:block/machines/reconstructor", false)
 
-    // SCULK
-    event.create('biobalance_charger', 'multiblock') //Come up with a better name
+    // Sculk Biocharger
+    event.create('sculk_biocharger', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['discharger', 'charger'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])

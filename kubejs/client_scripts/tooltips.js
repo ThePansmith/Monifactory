@@ -126,7 +126,7 @@ ItemEvents.tooltip(tooltip => {
         'hyperbolic_microverse_projector',
         'dimensional_superassembler',
         'universal_crystallizer',
-        'biobalance_charger'
+        'sculk_biocharger'
     ]
 
     parallelMultis.forEach(multi => {

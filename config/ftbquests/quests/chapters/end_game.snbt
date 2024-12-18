@@ -1347,7 +1347,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "2D75D49AE835131E"
-				item: "gtceu:biobalance_charger"
+				item: "gtceu:sculk_biocharger"
 				type: "item"
 			}]
 			title: "&9Biobalance Charger"

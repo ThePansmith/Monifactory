@@ -132,9 +132,9 @@
   "gtceu.discharger": "Dischargement",
   "gtceu.multiblock.discharger.description": "§7Discharges a massive amount of energy to perform recipes",
 
-  "block.gtceu.biobalance_charger": "Biobalance Charger",
+  "block.gtceu.sculk_biocharger": "Sculk Biocharger",
   "gtceu.charger": "Advanced Sculk Charging",
-  "gtceu.multiblock.biobalance_charger.description": "§7A Balance Charger, capable of both Charging and Discharging",
+  "gtceu.multiblock.sculk_biocharger.description": "§7A Balance Charger, capable of both Charging and Discharging",
 
 
   "block.gtceu.implosion_collider": "Implosion Collider",
