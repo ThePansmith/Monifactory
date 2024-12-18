@@ -185,13 +185,11 @@ StartupEvents.registry("block", event => {
     // Machine Casings
     const casings = [
         'microverse',
-        'cryolobus',
-        'cryococcus',
-        'cryococcus_fusion',
         'dark_soularium',
         'omnic_matrix_machine',
         'dimensional_stabilization_netherite',
-        'biosourced_sculk'
+        'bioalloy',
+        'bioalloy_fusion',
     ]
 
     casings.forEach(casing => {
@@ -235,15 +233,6 @@ StartupEvents.registry("block", event => {
         .tag("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
-
-    event.create('cryococcus_fusion_coil')
-        .displayName("Cryococcus Fusion Coil")
-        .soundType('metal')
-        .resistance(6)
-        .hardness(5)
-        .tagBlock("mineable/pickaxe")
-        .tagBlock("forge:mineable/wrench")
-        .requiresTool(true)
 
     event.create('omnic_matrix_coil_block', 'gtceu:coil')
         .temperature(15000)
