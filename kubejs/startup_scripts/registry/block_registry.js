@@ -188,6 +188,7 @@ StartupEvents.registry("block", event => {
         'dark_soularium',
         'omnic_matrix_machine',
         'dimensional_stabilization_netherite',
+        'cryolobus',
         'bioalloy',
         'bioalloy_fusion',
     ]
