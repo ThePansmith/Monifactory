@@ -151,6 +151,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .polymer()
         .color(0x708787)
         .components('1x nitrogen', '6x carbon', '7x hydrogen', '2x oxygen')
+        .fluidPipeProperties(3000, 12000, true, true, true, false)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
 
     // Dimethyl sulfoxide sub-chain (PECA catalyst)
