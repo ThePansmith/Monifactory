@@ -788,6 +788,14 @@ ServerEvents.recipes(event => {
             .EUt(480)
         
         //Rocketry
+        
+    event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
+        .inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000), Fluid.of('gtceu:chloromethane', 1000))
+        .itemOutputs('24x gtceu:durene_dust')
+        .outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
+        .EUt(120)
+        .duration(120)
+
     event.recipes.gtceu.chemical_reactor('dimethylformamide')
         .inputFluids('gtceu:carbon_monoxide 1000', 'gtceu:dimethylamine 1000')
         .outputFluids('gtceu:dimethylformamide 1000')
@@ -870,7 +878,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:oxydianiline_sludge 250', 'minecraft:water 1500')
         .duration(400).EUt(480);
     
-    event.recipes.gtceu.distillery('distill_oxydianiline_sludge')
+    event.recipes.gtceu.distillation_tower('distill_oxydianiline_sludge')
         .inputFluids('gtceu:oxydianiline_sludge 1000')
         .outputFluids('gtceu:dimethylformamide 1000', 'gtceu:oxydianiline 144')
         .duration(200).EUt(480);

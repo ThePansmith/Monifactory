@@ -1,7 +1,6 @@
 /**
  * Registry for Gregtech Modern-style ore veins.
  */
-// const GCYRMaterials = Java.loadClass("argent_matter.gcyr.common.data.GCYRMaterials")
 
 GTCEuServerEvents.oreVeins(event => {
     // Overworld veins
