@@ -274,6 +274,61 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xF8EBBE)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    // GCYr 
+
+    event.create('cobalt_bromide')
+    .fluid()
+    .color(0x0c9949)
+    .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+    .components('1x cobalt', '1x bromine', '1x acetic_acid')
+
+event.create('kapton_k')
+    .polymer()
+    .fluid()
+    .color(0x915A23)
+//       .components('1x pyromellitic_dianhydride', '1x oxydianiline')
+    .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
+
+// Kevlar
+event.create('bis_trichloromethyl_benzene')
+    .fluid()
+    .color(0xB48C63)
+    .components('8x carbon', '4x hydrogen', '6x chlorine')
+//    .setFormula("C6H4(CCl3)2", true);
+
+event.create('terephthalic_acid')
+    .fluid()
+    .color(0xDB9374)
+    .components('6x carbon', '4x hydrogen', '2x carbon_dioxide', '2x hydrogen')
+//    .setFormula("C6H4(CO2H)2", true);
+
+event.create('terephthaloyl_chloride')
+    .fluid()
+    .color(0xB883DE)
+    .components('8x carbon', '4x hydrogen', '2x chlorine', '2x oxygen')
+
+event.create('nitroaniline')
+    .fluid()
+    .color(0xC3DE83)
+    .components('8x carbon', '4x hydrogen', '2x chlorine', '2x oxygen')
+
+event.create('co_mn_br_catalyst')
+    .fluid()
+    .color(0xB48C63)
+
+event.create('para_phenylenediamine')
+    .fluid()
+    .color(0xC3DE83)
+    .components('1x nitrochlorobenzene', '1x ammonia')
+
+
+event.create('para_aramid')
+    .polymer()
+    .fluid()
+    .color(0xE6ED7B)
+    // .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
+    .components('1x para_phenylenediamine', '1x terephthaloyl_chloride')
+//   .fluidPipeProperties(1500, 450, true, true, true, false);
 
 })
 

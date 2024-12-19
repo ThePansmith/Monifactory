@@ -52,7 +52,7 @@ GTCEuServerEvents.fluidVeins(event => {
 
     // Venus fluid veins
     event.add('kubejs:venus/sulfuric_acid', vein => {
-        vein.dimensions('gcyr:venus')
+        vein.dimensions('ad_astra:venus')
         vein.fluid(() => Fluid.of("gtceu:sulfuric_acid").fluid)
         vein.weight(1)
         vein.minimumYield(10)
