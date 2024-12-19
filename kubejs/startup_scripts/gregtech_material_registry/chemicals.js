@@ -172,28 +172,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     // GCYr
-
-    event.create('potassium_chloride')
-        .dust()
-        .color(0xF6F1AE)
-        .components('1x potassium', '1x chlorine')
-
-    event.create('bisalloy_400')
-        .fluid()
-        .ingot()
-        .color(0x0ca819)
-        .components('3x carbon', '4x manganese', '2x silicon', '3x chromium', '1x molybdenum', '11x iron')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE)
-    //   .blastTemp(10800, BlastProperty.GasTier.HIGHER);
-
-    event.create('chromic_acid')
-        .fluid()
-        .color(0xE5D8F2)
-        .components('2x hydrogen', '1x chromium', '4x oxygen')
-
     event.create('trinaquadalloy')
         .fluid()
-        .dust()
+        .ingot()
         .color(0x281832)
         .iconSet('bright')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
@@ -205,7 +186,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ore()
         .color(0x0c9949)
         .iconSet('diamond')
-        .components('1x calcium', '2x fluorine');
+        .components('1x calcium', '2x fluorine')
+        .addOreByproducts('calcium', 'fluorine')
 
     event.create('cobalt_bromide')
         .fluid()
@@ -213,33 +195,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
         .components('1x cobalt', '1x bromine', '1x acetic_acid')
 
-    event.create('iron_oxide')
-        .dust()
-        .color(0xBD3514)
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
-        .components('2x iron', '3x oxygen')
-
-    event.create('fiberglass')
-        .polymer()
-        .fluid()
-        .color(0xC7D9D1)
-        .iconSet('shiny')
-        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING)
-        .components('2x epoxy', '7x silicon_dioxide')
-
     event.create('kapton_k')
         .polymer()
         .fluid()
         .color(0x915A23)
-        .flags(GTMaterialFlags.GENERATE_FOIL)
-        .components('1x pyromellitic_dianhydride', '1x oxydianiline')
+ //       .components('1x pyromellitic_dianhydride', '1x oxydianiline')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
 
     // Kevlar
-    event.create('para_xylene')
-        .fluid()
-        .colorAverage()
-        .components('8x carbon', '10x hydrogen')
-
     event.create('bis_trichloromethyl_benzene')
         .fluid()
         .color(0xB48C63)
@@ -259,19 +222,24 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('nitroaniline')
         .fluid()
-        .colorAverage()
+        .color(0xC3DE83)
         .components('8x carbon', '4x hydrogen', '2x chlorine', '2x oxygen')
+
+    event.create('co_mn_br_catalyst')
+        .fluid()
+        .color(0xB48C63)
 
     event.create('para_phenylenediamine')
         .fluid()
         .color(0xC3DE83)
         .components('1x nitrochlorobenzene', '1x ammonia')
 
+
     event.create('para_aramid')
         .polymer()
         .fluid()
         .color(0xE6ED7B)
-        .flags(GTMaterialFlags.GENERATE_FOIL)
+        // .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
         .components('1x para_phenylenediamine', '1x terephthaloyl_chloride')
     //   .fluidPipeProperties(1500, 450, true, true, true, false);
 

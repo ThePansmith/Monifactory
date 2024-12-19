@@ -109,6 +109,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('durene')
         .dust()
+        .fluid()
         .color(0x336040).iconSet('fine')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('10x carbon', '14x hydrogen')
@@ -126,6 +127,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('oxydianiline')
         .dust()
+        .fluid()
         .color(0xf0e130).iconSet('dull')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('12x carbon', '12x hydrogen', '2x nitrogen', 'oxygen')

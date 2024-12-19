@@ -10,7 +10,6 @@ ServerEvents.recipes(event => {
         .itemInputs('3x kubejs:reactive_dust_mixture')
         .notConsumable('extendedcrafting:ultimate_catalyst')
         .inputFluids('gtceu:chlorine_triflouride 200', 'kubejs:molten_primal_mana 150', 'gtceu:dragon_breath 100')
-        .notConsumableFluid('gcyr:co_mn_br_catalyst 1000')
         .itemOutputs('2x kubejs:inert_dust_mixture')
         .outputFluids('gtceu:waste_gas_mixture 1000')
         .duration(15)

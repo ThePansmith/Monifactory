@@ -153,10 +153,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:ender_fluid_link_cover', Text.translatable('gtceu.ender_fluid_link_cover.tooltip'));
     tooltip.add('gtceu:nightvision_goggles', Text.translatable('gtceu.nightvision_goggles.tooltip'));
 
-    // GCYR
-    tooltip.add('gcyr:rocket_scanner', Text.translatable('gcyr.rocket_scanner.tooltip'));
-    tooltip.add('gcyr:space_chestplate', Text.translatable('gcyr.space_chestplate.tooltip'));
-
     // Sophisticated Storage
     tooltip.add('functionalstorage:storage_controller', Text.translatable('functionalstorage.storage_controller.tooltip'));
     tooltip.add('functionalstorage:framed_storage_controller', Text.translatable('functionalstorage.framed_storage_controller.tooltip'));

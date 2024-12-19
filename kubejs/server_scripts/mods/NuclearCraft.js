@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
     cansolid('boron', "gtceu:boron_dust")
     cansolid('silver', "gtceu:silver_dust")
     canfluid('liquid_nitrogen', "gtceu:nitrogen")
-    cansolid('fluorite', "gcyr:fluorite_dust")
+    cansolid('fluorite', "gtceu:fluorite_dust")
     cansolid('tin', "gtceu:tin_dust")
     cansolid('aluminum', "gtceu:aluminium_dust")
     cansolid('manganese', "gtceu:manganese_dust")

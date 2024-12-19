@@ -1,7 +1,7 @@
 /**
  * Registry for Gregtech Modern-style ore veins.
  */
-const GCYRMaterials = Java.loadClass("argent_matter.gcyr.common.data.GCYRMaterials")
+// const GCYRMaterials = Java.loadClass("argent_matter.gcyr.common.data.GCYRMaterials")
 
 GTCEuServerEvents.oreVeins(event => {
     // Overworld veins
@@ -47,7 +47,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.weight(20)
         vein.clusterSize(25)
         vein.layer("moon")
-        vein.dimensions("gcyr:luna")
+        vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(-40, 20)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -65,7 +65,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.weight(40)
         vein.clusterSize(25)
         vein.layer("moon")
-        vein.dimensions("gcyr:luna")
+        vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(10, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -85,7 +85,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.weight(30)
         vein.clusterSize(70)
         vein.layer("moon")
-        vein.dimensions("gcyr:luna")
+        vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(20, 100)
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.Grossular, 3)
@@ -109,7 +109,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.weight(20)
         vein.clusterSize(80)
         vein.layer("moon")
-        vein.dimensions("gcyr:luna")
+        vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(20, 100)
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.Wulfenite, 3)
@@ -132,7 +132,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.weight(40)
         vein.clusterSize(45)
         vein.layer("moon")
-        vein.dimensions("gcyr:luna")
+        vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(40, 120)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -151,7 +151,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.weight(45)
         vein.clusterSize(25)
         vein.layer("moon")
-        vein.dimensions("gcyr:luna")
+        vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(-40, 20)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -169,7 +169,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.weight(30)
         vein.clusterSize(30)
         vein.layer("moon")
-        vein.dimensions("gcyr:luna")
+        vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(40, 120)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -188,17 +188,17 @@ GTCEuServerEvents.oreVeins(event => {
         vein.weight(40)
         vein.clusterSize(25)
         vein.layer("moon")
-        vein.dimensions("gcyr:luna")
+        vein.dimensions("ad_astra:moon")
         vein.heightRangeUniform(-40, 50)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(5).mat(GCYRMaterials.Fluorite).size(1, 1))
+                .layer(l => l.weight(5).mat(GTMaterials.get('fluorite')).size(1, 1))
                 .layer(l => l.weight(3).mat(GTMaterials.Sphalerite).size(2, 4))
                 .layer(l => l.weight(2).mat(GTMaterials.Bastnasite).size(2, 4))
             )
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-			.surfaceRock(GCYRMaterials.Fluorite)
+			.surfaceRock(GTMaterials.get('fluorite'))
 			.placement("above")
 		)
 	})

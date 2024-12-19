@@ -24,7 +24,6 @@ const placeHolder = (registry, name) => {
     registry.create(name).texture('kubejs:item/barrier').displayName(`§eT. B. I. §r- §d${name.split('_').map(v => capitalize(v))}`);
 }
 
-
 // Unification regexes
 // MODS TO FIX: (cool line name tbd), THERMAL SERIES, NUCLEARCRAFT
 global.manualUnification = [
