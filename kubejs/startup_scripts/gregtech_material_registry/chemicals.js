@@ -170,6 +170,75 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0x857049)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    // GCYr
+
+event.create('pyromellitic_dianhydride')
+    .dust()
+    .fluid()
+    .color(0xB48C63)
+    .components('10x carbon','2x hydrogen', '6x oxygen')
+event.create('durene')
+    .fluid()
+    .color(0xB48C63)
+    .components('10x carbon', '14x hydrogen')
+
+event.create('dimethylformamide')
+    .fluid()
+    .color(0x554469)
+    .iconSet('shiny')
+    .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    .components('3x carbon', '7x hydrogen', '1x nitrogen', '1x oxygen')
+
+event.create('oxydianiline')
+    .fluid()
+    .color(0xfAAEE0)
+    .components('12x carbon', '12x hydrogen', '2x nitrogen', '1x oxygen')
+
+event.create('oxydianiline_sludge')
+    .fluid()
+    .color(0xD9CCBF)
+    .components('oxydianiline', 'dimethylformamide')
+
+event.create('kapton_k')
+    .fluid()
+    .color(0x915A23)
+    .iconSet('shiny')
+    .appendFlags(GTMaterialFlags.GENERATE_FOIL)
+    .components('pyromellitic_dianhydride', 'oxydianiline')
+
+event.create('bis_trichloromethyl_benzene')
+    .fluid()
+    .color(0xB48C63)
+    .iconSet('shiny')
+    .components('carbon', '8x hydrogen', '4x chlorine')
+
+event.create('terephthalic_acid')
+    .fluid()
+    .color(0xDB9374)
+    .components('carbon', '6x hydrogen', '4x carbon_dioxide', '2x hydrogen')
+
+event.create('terephthaloyl_chloride')
+    .fluid()
+    .color(0xB883DE)
+    .components('carbon', '8x hydrogen', '4x chlorine', '2x oxygen')
+
+event.create('nitroaniline')
+    .fluid()
+    .color(0x554469)
+    .iconSet('shiny')
+    .components('carbon', '8x hydrogen', '4x chlorine', '2x oxygen')
+
+event.create('para_phenylenediamine')
+    .fluid()
+    .color(0xC3DE83)
+    .components('nitrochlorobenzene', 'ammonia')
+
+event.create('para_aramid')
+    .fluid()
+    .color(0xE6ED7B)
+    .iconSet('shiny')
+    .components('para_phenylenediamine', 'terephthaloyl_chloride')
 })
 
 // Modify materials' compositions

@@ -112,6 +112,12 @@ ServerEvents.tags('fluid', event => {
     event.removeAllTagsFrom('thermal:glowstone')
     event.removeAllTagsFrom('thermal:redstone')
     event.removeAllTagsFrom('cofh_core:experience')
+    
+    // Rocket Fuels
+    const fuels = ['ad_astra:fuel', 'ad_astra:cryo_fuel', 'gtceu:diesel'];
+    event.removeAllTagsFrom(fuels)
+    event.add('ad_astra:fuel', 'gtceu:rocket_fuel')
+
 })
 
 // Unification regexes are definited in startup script _initial.js
