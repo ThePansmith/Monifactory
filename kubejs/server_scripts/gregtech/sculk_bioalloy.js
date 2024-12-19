@@ -7,15 +7,15 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.large_chemical_reactor('fibrinogenic_sculk_goo')
-        .itemInputs('64x minecraft:sculk_vein', '13x kubejs:warden_horn', '29x gtceu:collagen_dust')
-        .inputFluids('gtceu:raw_growth_medium 600', 'gtceu:mutagen 900')
+        .itemInputs('12x minecraft:sculk_vein', '4x kubejs:warden_horn', '8x gtceu:collagen_dust')
+        .inputFluids('gtceu:raw_growth_medium 60', 'gtceu:mutagen 90')
         .itemOutputs('7x kubejs:fibrinogenic_sculk_goo')
         .duration(540)
         .EUt(GTValues.VHA[GTValues.IV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.forming_press('sculk-saturated_microstructure_pulp_press')
-        .itemInputs('2x kubejs:sculk-compatible_trellis_microstructure', '3x kubejs:fibrinogenic_sculk_goo')
+        .itemInputs('2x kubejs:sculk-compatible_trellis_microstructure', '1x kubejs:fibrinogenic_sculk_goo')
         .itemOutputs('2x kubejs:sculk-saturated_microstructure_pulp')
         .duration(51200)
         .EUt(GTValues.VHA[GTValues.LV])
