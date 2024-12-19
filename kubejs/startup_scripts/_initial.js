@@ -24,7 +24,6 @@ const placeHolder = (registry, name) => {
     registry.create(name).texture('kubejs:item/barrier').displayName(`§eT. B. I. §r- §d${name.split('_').map(v => capitalize(v))}`);
 }
 
-
 // Unification regexes
 // MODS TO FIX: (cool line name tbd), THERMAL SERIES, NUCLEARCRAFT
 global.manualUnification = ['hammerlib:gears/netherite', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'hammerlib:gears/copper', 'hammerlib:gears/iron', 'hammerlib:gears/gold', 'hammerlib:gears/diamond', 'kubejs:cryolobus_ingot', 'kubejs:cryolobus_nugget', 'kubejs:cryolobus_dust', 'kubejs:cryococcus_ingot', 'kubejs:cryococcus_nugget', 'kubejs:cryococcus_dust', 'hammerlib:gears/stone', 'hammerlib:gears/wooden', 'extendedcrafting:the_ultimate_nugget', 'extendedcrafting:the_ultimate_ingot', 'extendedcrafting:the_ultimate_block']

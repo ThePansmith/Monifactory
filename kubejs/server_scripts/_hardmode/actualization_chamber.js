@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:molybdenite_ore',
                 '64x gtceu:beryllium_ore',
                 '64x gtceu:beryllium_ore',
-                '64x gcyr:fluorite_ore'
+                '64x gtceu:fluorite_ore'
             )
             .duration(780)
             .EUt(30720)

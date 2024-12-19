@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
     // WIP: Matter Circuits
     event.recipes.gtceu.circuit_assembler('matter_circuit_board')
         .itemInputs(
-            '16x gcyr:kapton_k_plate',
+            '16x gtceu:kapton_k_plate',
             '16x gtceu:omnium_plate',
             '#gtceu:circuits/luv',
             'gtceu:iv_emitter', 

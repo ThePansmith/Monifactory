@@ -1,6 +1,5 @@
 const Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-const martianPolarCapsResourceKey = ResourceKey.create(Registries.BIOME, 'gcyr:martian_polar_caps')
 
 GTCEuServerEvents.fluidVeins(event => {
 
@@ -18,7 +17,7 @@ GTCEuServerEvents.fluidVeins(event => {
 
     // Luna fluid veins	
 	event.add('kubejs:moon/deuterium', vein => {
-        vein.dimensions('gcyr:luna')
+        vein.dimensions('ad_astra:moon')
         vein.fluid(() => Fluid.of("gtceu:deuterium").fluid)
         vein.weight(60)
         vein.minimumYield(10)
@@ -29,7 +28,7 @@ GTCEuServerEvents.fluidVeins(event => {
     })
 	
 	event.add('kubejs:moon/helium_3', vein => {
-        vein.dimensions('gcyr:luna')
+        vein.dimensions('ad_astra:moon')
         vein.fluid(() => Fluid.of("gtceu:helium_3").fluid)
         vein.weight(35)
         vein.minimumYield(5)
@@ -41,8 +40,7 @@ GTCEuServerEvents.fluidVeins(event => {
 
     // Mars fluid veins (haha water on Mars)
     event.add('kubejs:mars/ice', vein => {
-        vein.dimensions('gcyr:mars')
-        vein.biomes(1, martianPolarCapsResourceKey)   //TODO: add back in when GTCEu Modern fixes it
+        vein.dimensions('ad_astra:mars')
         vein.fluid(() => Fluid.of("gtceu:ice").fluid)
         vein.weight(0)
         vein.minimumYield(10)
@@ -66,7 +64,7 @@ GTCEuServerEvents.fluidVeins(event => {
 
     //Mercury fluid veins (Haha Mercury is made of Mercury)
     event.add('kubejs:mercury/mercury', vein => {
-        vein.dimensions('gcyr:mercury')
+        vein.dimensions('ad_astra:mercury')
         vein.fluid(() => Fluid.of("gtceu:mercury").fluid)
         vein.weight(1)
         vein.minimumYield(10)

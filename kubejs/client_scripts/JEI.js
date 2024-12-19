@@ -177,8 +177,6 @@ JEIEvents.hideItems(event => {
     // Posttank stuff
     event.hide(/gtceu:uxv/)
     event.hide(/gtceu:opv/)
-    event.hide(/gcyr:uxv/)
-    event.hide(/gcyr:opv/)
 
     //Greg Hot MV ingots
     event.hide(['gtceu:hot_kanthal_ingot', 'gtceu:hot_silicon_ingot'])
@@ -194,12 +192,6 @@ JEIEvents.hideItems(event => {
 
     // PEX
     event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
-
-   // GCYr
-   event.hide(/gcyr:dyson/)
-   event.hide(/gcyr:.*_marker/)
-   event.hide(/gcyr:.*_casing/)
-   event.hide(['gcyr:beam_receiver', 'gcyr:space_elevator_support', 'gcyr:drone_hangar', 'gcyr:space_elevator'])
 
     // Hide debug item(s)
     event.hide('kubejs:debug_ctm_block')
@@ -227,8 +219,7 @@ JEIEvents.hideItems(event => {
       })
 
     
-    // Hides GCYR ores as its not part of GTMaterialRegistry
-    event.hide(/gcyr:(!netherrack|endstone).*_ore/)
+
 })
 
 JEIEvents.addItems(event => {
