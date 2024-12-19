@@ -115,8 +115,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('pyromellitic_dianhydride')
         .dust()
-        .color(0xf0ead6).iconSet('rough')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .fluid()
+        .color(0xB48C63)
         .components('10x carbon', '2x hydrogen', '6x oxygen')
 
     event.create('dimethylformamide')
@@ -129,6 +129,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xf0e130).iconSet('dull')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('12x carbon', '12x hydrogen', '2x nitrogen', 'oxygen')
+
+    event.create('oxydianiline_sludge')
+        .fluid()
+        .color(0xD9CCBF)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components('1x oxydianiline', '1x dimethylformamide')
 
     event.create('antimony_pentafluoride')
         .fluid()
@@ -181,7 +187,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xFFF382)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-        event.create('hot_piranha_solution')
+    event.create('hot_piranha_solution')
         .liquid()
         .color(0xFFC582)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -220,7 +226,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0x253005)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    
+
     event.create('cracked_light_naquadah_isotope_fraction')
         .liquid()
         .color(0xFFFF7A)
@@ -230,7 +236,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0xD9D93F)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    
+
     event.create('cracked_heavy_naquadah_isotope_fraction')
         .liquid()
         .color(0x888811)
@@ -266,7 +272,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xF8EBBE)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-        
+
 })
 
 GTCEuStartupEvents.materialModification(() => {
