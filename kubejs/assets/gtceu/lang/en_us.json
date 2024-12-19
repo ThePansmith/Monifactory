@@ -482,6 +482,7 @@
   "__ORE_VEINS__.flufff": "> Ore Veins <",
   "__ORE_VEINS__.footer": "=============",
 
+  "tagprefix.moon": "Moon %s Ore",
   "gtceu.jei.ore_vein.luna/diamond": "Diamond Vein (Lunar)",
   "gtceu.jei.ore_vein.luna/fluorite": "Fluorite Vein (Lunar)",
   "gtceu.jei.ore_vein.luna/gold": "Gold Vein (Lunar)",
