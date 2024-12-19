@@ -20,12 +20,12 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('atomic_reconstructor', 'simple')
         .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV)
-        .definition((tier, builder) => (
+        .definition((tier, builder) =>
             builder
                 .langValue(GTValues.VLVH[tier] + " Atomic Reconstructor")
-                .recipeType('atomic_reconstruction', true, true)
+                .recipeType('atomic_reconstruction')
                 .workableTieredHullRenderer('gtceu:block/machines/reconstructor')
-        ))
+        )
 })
 
 
@@ -36,18 +36,24 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             return new $ParallelHatchPartMachine(holder, tier);
         })
         .tiers(GTValues.UHV)
-        .rotationState(RotationState.ALL)
-        .abilities(PartAbility.PARALLEL_HATCH)
-        .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk9"))
+        .definition((tier, builder) =>
+            builder
+                .rotationState(RotationState.ALL)
+                .abilities(PartAbility.PARALLEL_HATCH)
+                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk9"))
+        )
 
     event.create("uev_parallel_hatch", "custom")
         .machine((holder, tier) => {
             return new $ParallelHatchPartMachine(holder, tier);
         })
         .tiers(GTValues.UEV)
-        .rotationState(RotationState.ALL)
-        .abilities(PartAbility.PARALLEL_HATCH)
-        .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk10"))
+        .definition((tier, builder) =>
+            builder
+                .rotationState(RotationState.ALL)
+                .abilities(PartAbility.PARALLEL_HATCH)
+                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk10"))
+        )
 })
 
 
