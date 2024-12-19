@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(30)
 
-    // Rocket Scanner
+    // Nasa Work Bench
     event.recipes.extendedcrafting.shaped_table(
         'ad_astra:nasa_workbench', [
         "RPEPR",
@@ -174,6 +174,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:hsse_plate',
         T: 'enderio:fluid_tank'
     })
+
     // Launch Pad
     event.remove({ id: 'ad_astra:launch_pad' })
     event.recipes.gtceu.assembler("ad_astra:launch_pad")
@@ -182,6 +183,47 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(30)
 
+    event.remove({ id: /oxygen_from_oxygen_loading_water/ })
+    event.remove({ id: 'ad_astra:oxygen_distributor' })
+    event.shaped(
+        'ad_astra:oxygen_distributor', [
+        'BRB',
+        'PHP',
+        'BCB'
+    ], {
+        R: 'gtceu:steel_rotor',
+        H: 'gtceu:hv_machine_hull',
+        P: 'gtceu:hv_electric_pump',
+        B: 'minecraft:iron_bars',
+        C: '#gtceu:circuits/hv'
+    })
+
+    event.remove({ id: 'ad_astra:oxygen_loader' })
+    event.shaped(
+        'ad_astra:oxygen_loader', [
+            'BCB',
+            'PHP',
+            'BRB'
+        ], {
+            R: 'gtceu:steel_rotor',
+            H: 'gtceu:hv_machine_hull',
+            P: 'gtceu:hv_electric_pump',
+            B: 'minecraft:iron_bars',
+            C: '#gtceu:circuits/hv'
+    })
+
+    event.remove({ id: 'ad_astra:gravity_normalizer' })
+    event.shaped(
+        'ad_astra:gravity_normalizer', [
+        'BEB',
+        'CHC',
+        'BCB'
+    ], {
+        E: 'gtceu:ev_emitter',
+        H: 'gtceu:ev_machine_hull',
+        B: 'gtceu:titanium_plate',
+        C: '#gtceu:circuits/ev'
+    })
 
     // Rockets
     event.remove({ id: /nasa_workbench/ })
@@ -249,38 +291,38 @@ ServerEvents.recipes(event => {
 
     // Space Stations
     event.remove({ id: /space_station/ })
-    const spacestations = [ "earth", "moon", "mars", "venus", "glacio", "mercury"]
+    const spacestations = ["earth", "moon", "mars", "venus", "glacio", "mercury"]
     spacestations.forEach(dim => {
         event.custom({
-        "type": "ad_astra:space_station_recipe",
-        "dimension": `ad_astra:${dim}_orbit`,
-        "ingredients": [
-          {
-            "count": 16,
-            "ingredient": {
-              "item": "gtceu:double_titanium_plate"
-            }
-          },
-          {
-            "count": 8,
-            "ingredient": {
-              "tag": "gtceu:circuits/ev"
-            }
-          },
-          {
-            "count": 4,
-            "ingredient": {
-              "item": "gtceu:ev_robot_arm"
-            }
-          },
-          {
-            "count": 2,
-            "ingredient": {
-              "item": "gtceu:ev_emitter"
-            }
-          }
-        ],
-        "structure": "ad_astra:space_station"
-      })
+            "type": "ad_astra:space_station_recipe",
+            "dimension": `ad_astra:${dim}_orbit`,
+            "ingredients": [
+                {
+                    "count": 16,
+                    "ingredient": {
+                        "item": "gtceu:double_titanium_plate"
+                    }
+                },
+                {
+                    "count": 8,
+                    "ingredient": {
+                        "tag": "gtceu:circuits/ev"
+                    }
+                },
+                {
+                    "count": 4,
+                    "ingredient": {
+                        "item": "gtceu:ev_robot_arm"
+                    }
+                },
+                {
+                    "count": 2,
+                    "ingredient": {
+                        "item": "gtceu:ev_emitter"
+                    }
+                }
+            ],
+            "structure": "ad_astra:space_station"
+        })
     })
 })  
