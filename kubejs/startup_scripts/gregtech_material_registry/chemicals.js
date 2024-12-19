@@ -85,7 +85,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x58649B)
         .components('1x lead', '1x sodium')
-    
+
     // Crystal Matrix Line
     event.create('acetylene')
         .gas()
@@ -173,88 +173,124 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // GCYr
 
-event.create('pyromellitic_dianhydride')
-    .dust()
-    .fluid()
-    .color(0xB48C63)
-    .components('10x carbon','2x hydrogen', '6x oxygen')
-event.create('durene')
-    .fluid()
-    .color(0xB48C63)
-    .components('10x carbon', '14x hydrogen')
+    event.create('potassium_chloride')
+        .dust()
+        .color(0xF6F1AE)
+        .components('1x potassium', '1x chlorine')
 
-event.create('dimethylformamide')
-    .fluid()
-    .color(0x554469)
-    .iconSet('shiny')
-    .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    .components('3x carbon', '7x hydrogen', '1x nitrogen', '1x oxygen')
+    event.create('bisalloy_400')
+        .fluid()
+        .ingot()
+        .color(0x0ca819)
+        .components('3x carbon', '4x manganese', '2x silicon', '3x chromium', '1x molybdenum', '11x iron')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE)
+    //   .blastTemp(10800, BlastProperty.GasTier.HIGHER);
 
-event.create('oxydianiline')
-    .fluid()
-    .color(0xfAAEE0)
-    .components('12x carbon', '12x hydrogen', '2x nitrogen', '1x oxygen')
+    event.create('chromic_acid')
+        .fluid()
+        .color(0xE5D8F2)
+        .components('2x hydrogen', '1x chromium', '4x oxygen')
 
-event.create('oxydianiline_sludge')
-    .fluid()
-    .color(0xD9CCBF)
-    .components('oxydianiline', 'dimethylformamide')
+    event.create('trinaquadalloy')
+        .fluid()
+        .dust()
+        .color(0x281832)
+        .iconSet('bright')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
+        .components('6x trinium', '2x naquadah', '1x carbon')
+    //    .blastTemp(8747, BlastProperty.GasTier.HIGHER, GTValues.VA[GTValues.ZPM], 1200);
 
-event.create('kapton_k')
-    .fluid()
-    .color(0x915A23)
-    .iconSet('shiny')
-    .appendFlags(GTMaterialFlags.GENERATE_FOIL)
-    .components('pyromellitic_dianhydride', 'oxydianiline')
+    event.create('fluorite')
+        .gem()
+        .ore()
+        .color(0x0c9949)
+        .iconSet('diamond')
+        .components('1x calcium', '2x fluorine');
 
-event.create('bis_trichloromethyl_benzene')
-    .fluid()
-    .color(0xB48C63)
-    .iconSet('shiny')
-    .components('carbon', '8x hydrogen', '4x chlorine')
+    event.create('cobalt_bromide')
+        .fluid()
+        .color(0x0c9949)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .components('1x cobalt', '1x bromine', '1x acetic_acid')
 
-event.create('terephthalic_acid')
-    .fluid()
-    .color(0xDB9374)
-    .components('carbon', '6x hydrogen', '4x carbon_dioxide', '2x hydrogen')
+    event.create('iron_oxide')
+        .dust()
+        .color(0xBD3514)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+        .components('2x iron', '3x oxygen')
 
-event.create('terephthaloyl_chloride')
-    .fluid()
-    .color(0xB883DE)
-    .components('carbon', '8x hydrogen', '4x chlorine', '2x oxygen')
+    event.create('fiberglass')
+        .polymer()
+        .fluid()
+        .color(0xC7D9D1)
+        .iconSet('shiny')
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING)
+        .components('2x epoxy', '7x silicon_dioxide')
 
-event.create('nitroaniline')
-    .fluid()
-    .color(0x554469)
-    .iconSet('shiny')
-    .components('carbon', '8x hydrogen', '4x chlorine', '2x oxygen')
+    event.create('kapton_k')
+        .polymer()
+        .fluid()
+        .color(0x915A23)
+        .flags(GTMaterialFlags.GENERATE_FOIL)
+        .components('1x pyromellitic_dianhydride', '1x oxydianiline')
 
-event.create('para_phenylenediamine')
-    .fluid()
-    .color(0xC3DE83)
-    .components('nitrochlorobenzene', 'ammonia')
+    // Kevlar
+    event.create('para_xylene')
+        .fluid()
+        .colorAverage()
+        .components('8x carbon', '10x hydrogen')
 
-event.create('para_aramid')
-    .fluid()
-    .color(0xE6ED7B)
-    .iconSet('shiny')
-    .components('para_phenylenediamine', 'terephthaloyl_chloride')
+    event.create('bis_trichloromethyl_benzene')
+        .fluid()
+        .color(0xB48C63)
+        .components('8x carbon', '4x hydrogen', '6x chlorine')
+    //    .setFormula("C6H4(CCl3)2", true);
+
+    event.create('terephthalic_acid')
+        .fluid()
+        .color(0xDB9374)
+        .components('6x carbon', '4x hydrogen', '2x carbon_dioxide', '2x hydrogen')
+    //    .setFormula("C6H4(CO2H)2", true);
+
+    event.create('terephthaloyl_chloride')
+        .fluid()
+        .color(0xB883DE)
+        .components('8x carbon', '4x hydrogen', '2x chlorine', '2x oxygen')
+
+    event.create('nitroaniline')
+        .fluid()
+        .colorAverage()
+        .components('8x carbon', '4x hydrogen', '2x chlorine', '2x oxygen')
+
+    event.create('para_phenylenediamine')
+        .fluid()
+        .color(0xC3DE83)
+        .components('1x nitrochlorobenzene', '1x ammonia')
+
+    event.create('para_aramid')
+        .polymer()
+        .fluid()
+        .color(0xE6ED7B)
+        .flags(GTMaterialFlags.GENERATE_FOIL)
+        .components('1x para_phenylenediamine', '1x terephthaloyl_chloride')
+    //   .fluidPipeProperties(1500, 450, true, true, true, false);
+
 })
 
 // Modify materials' compositions
 GTCEuStartupEvents.materialModification(() => {
-    GTMaterials.get('butanol').setFormula('C4H9OH');
-    GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO');
+    GTMaterials.get('butanol').setFormula('C4H9OH')
+    GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO')
 
     // Scaleline intermediates
-    GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HCl)2Mn2TaC?');
-    GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HCl)2Mn2');
+    GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HCl)2Mn2TaC?')
+    GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HCl)2Mn2')
     GTMaterials.get('graphitic_tantalum').setFormula('TaC')
     GTMaterials.get('hydrofluoric_graphitic_tantalum_solution').setFormula('(HF)2TaC')
     GTMaterials.get('hydrofluoric_tantalum_solution').setFormula('(HF)2Ta')
 
     // JEAN gasoline intermediates
-    GTMaterials.get('tetraethyllead').setFormula('Pb(CH3CH2)4');
+    GTMaterials.get('tetraethyllead').setFormula('Pb(CH3CH2)4')
 
     // PECA intermediates
     GTMaterials.get('sodium_cyanide').setFormula('NaCN')
