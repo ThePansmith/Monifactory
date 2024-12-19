@@ -2,7 +2,10 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     if (!isHardMode) {
         return;
     }
-    event.create('taranium', 149, 264, -1, null, 'Tn', false)
+    event.create('taranium')
+        .protons(149)
+        .neutrons(264)
+        .symbol('Tn')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {

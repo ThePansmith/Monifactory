@@ -173,14 +173,14 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-    // Normal mode-exclusive multis            
+    // Normal mode-exclusive multis
     if (!isHardMode) {
 
         // Simulation Supercomputer
         event.create('simulation_supercomputer', 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes('simulation_supercomputer')
-            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
             .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
@@ -207,7 +207,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         event.create('loot_superfabricator', 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes('loot_superfabricator')
-            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
             .appearanceBlock(GCyMBlocks.CASING_ATOMIC)
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("CCCCC", "VEEEV", "VEEEV", "VEEEV", "CCCCC")
@@ -232,7 +232,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     }
 
 
-    // Expert mode-exclusive multis            
+    // Expert mode-exclusive multis
     if (isHardMode) {
 
         // Actualization Chamber
@@ -283,9 +283,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
                 "gtceu:block/multiblock/gcym/large_autoclave", false)
-        
+
         // Helical Fusion Reactor
-        event.create('helical_fusion_reactor', 'multiblock', (holder) => new FusionReactorMachine(holder, GTValues.UHV))
+        event.create('helical_fusion_reactor', 'multiblock')
+            .machine((holder) => new FusionReactorMachine(holder, GTValues.UHV))
             .rotationState(RotationState.ALL)
             .recipeTypes(GTRecipeTypes.FUSION_RECIPES)
             .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
@@ -352,7 +353,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('rock_cycle_simulator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('rock_cycle_simulator')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(GCyMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCCCC", "CCCCCCC", "CCCCCCC", "CCCCCCC")
@@ -377,7 +378,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('atmospheric_accumulator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(GTRecipeTypes.GAS_COLLECTOR_RECIPES)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(GCyMBlocks.CASING_CORROSION_PROOF)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
@@ -403,7 +404,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('matter_alterator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('atomic_reconstruction')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(GCyMBlocks.CASING_LASER_SAFE_ENGRAVING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#CCC#######", "#CGC#######", "#CGC#######", "#CGC#######", "#CCC#######",)
@@ -430,7 +431,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('implosion_collider', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(GTRecipeTypes.IMPLOSION_RECIPES)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#########", "####E####", "###EEE###", "####E####", "#########", "#########")
@@ -466,7 +467,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('extra_large_chemical_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('large_chemical_reactor')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(GTBlocks.CASING_PTFE_INERT)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#CCCCC#", "#A###A#", "#A###A#", "#A###A#", "#A###A#", "#CCCCC#")
@@ -500,7 +501,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('quintessence_infuser', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('quintessence_infuser')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:dark_soularium_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#CCC#", "CCCCC", "HGGGH", "HGGGH", "HGGGH", "CCCCC", "#CCC#")
@@ -661,11 +662,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("kubejs:block/microverse/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-    // Microverse Projector III (Hyperbolic Microverse Projector) 
+    // Microverse Projector III (Hyperbolic Microverse Projector)
     event.create('hyperbolic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['basic_microverse', 'advanced_microverse', 'advanced_microverse_ii', 'advanced_microverse_iii'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###CCCCC###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###CCCCC###")
@@ -742,7 +743,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('omnic_forge')
         .appearanceBlock(() => Block.getBlock('kubejs:omnic_matrix_machine_casing'))
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#########", "#########", "####O####", "###CCC###", "##OCCCO##", "###CCC###", "####O####", "#########", "#########")
             .aisle("#########", "####O####", "##GGOGG##", "##GODOG##", "#OODNDOO#", "##GODOG##", "##GGOGG##", "####O####", "#########")
@@ -773,7 +774,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('dimensional_superassembler', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeTypes('assembly_line')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:dimensional_stabilization_netherite_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#########", "###CCC###", "##CCCCC##", "#CCCCCCC#", "#CCCCCCC#", "#CCCCCCC#", "##CCCCC##", "###CCC###", "#########")

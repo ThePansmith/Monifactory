@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.get('gcyr:bisalloy_400').addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
-    
+
     //Gears for Thermal Expansion
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)
     GTMaterials.Copper.addFlags(GTMaterialFlags.GENERATE_GEAR)
@@ -55,6 +55,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Neptunium.setMaterialARGB(0x486d7b)
     addFluid(GTMaterials.Curium, $FluidStorageKeys.LIQUID, 1618);
     GTMaterials.Curium.setMaterialARGB(0x58307f)
-    addFluid(GTMaterials.Ruridit, $FluidStorageKeys.LIQUID, 1515);
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID, 1337);
 })
