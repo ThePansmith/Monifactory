@@ -236,11 +236,29 @@ ServerEvents.recipes(event => {
         T: 'gtceu:lv_sensor',
         O: 'ad_astra:oxygen_loader'
     })
+    Item.of('ad_astra:tier_1_rover', '{BotariumData:{StoredFluids:[{Amount:0L,Fluid:"minecraft:empty"}]}}')
 
+    event.remove({ id: "ad_astra:tier_1_rover" })
+    event.recipes.gtceu.assembler("ad_astra:tier_1_rover")
+        .itemInputs(['8x gtceu:steel_plate', '4x ad_astra:wheel', '2x gtceu:lv_electric_motor', 'ad_astra:radio', 'gtceu:lv_sensor'])
+        .itemOutputs("ad_astra:tier_1_rover")
+        .duration(600)
+        .EUt(32)
+
+   // Stonecutting Marble
+   let MarbleTag = ['#moni:marble']; // What item tags to go through (change this so you have your tags)
+   MarbleTag.forEach(tag => {
+       let Marbles = Ingredient.of(tag).stacks; // Get all of the items with that tag
+       Marbles.forEach(input => {
+           Marbles.forEach(output => { // Loop through the items so all combination of input and output are met
+               if (input != output) // Ignore recipes where input and output are the same item
+                   event.stonecutting(output, input); // Make the recipe
+           });
+       });
+   });
 
     // Rockets
     event.remove({ id: /nasa_workbench/ })
-
     const rocket = [ // Plate mats currently just based on color of rocket for testing
         ['tier_1_rocket', "steel", 'steel'],
         ['tier_2_rocket', "desh", 'energetic_alloy'],
