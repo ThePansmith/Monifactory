@@ -206,10 +206,10 @@ ServerEvents.recipes(event => {
             'BRB'
         ], {
             R: 'gtceu:steel_rotor',
-            H: 'gtceu:hv_machine_hull',
-            P: 'gtceu:hv_electric_pump',
+            H: 'gtceu:lv_machine_hull',
+            P: 'gtceu:lv_electric_pump',
             B: 'minecraft:iron_bars',
-            C: '#gtceu:circuits/hv'
+            C: '#gtceu:circuits/lv'
     })
 
     event.remove({ id: 'ad_astra:gravity_normalizer' })
@@ -217,13 +217,26 @@ ServerEvents.recipes(event => {
         'ad_astra:gravity_normalizer', [
         'BEB',
         'CHC',
-        'BCB'
+        'BBB'
     ], {
         E: 'gtceu:ev_emitter',
         H: 'gtceu:ev_machine_hull',
         B: 'gtceu:titanium_plate',
         C: '#gtceu:circuits/ev'
     })
+
+    event.remove({ id: 'ad_astra:oxygen_sensor' })
+    event.shaped(
+        'ad_astra:oxygen_sensor', [
+        'RRR',
+        'TOT',
+        'RRR'
+    ], {
+        R: 'gtceu:red_alloy_plate',
+        T: 'gtceu:lv_sensor',
+        O: 'ad_astra:oxygen_loader'
+    })
+
 
     // Rockets
     event.remove({ id: /nasa_workbench/ })
