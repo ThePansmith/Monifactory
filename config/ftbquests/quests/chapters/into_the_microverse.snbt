@@ -398,13 +398,13 @@
 		}
 		{
 			dependencies: [
-				"0400F3BAB236F259"
 				"2BD54071AD23C73C"
 				"4669C1DCEE4AA563"
 				"5EB185AD9BD0D069"
+				"4672EE66D51C32FF"
 			]
 			description: [
-				"With your Rocket built, fuel loaded, and destination set, it's time for the prelaunch checklist."
+				"With your Rocket built and fuel loaded, it's time for the prelaunch checklist."
 				""
 				"- &eMake sure you're wearing your Space Suit&r (all four pieces) and that it has a full tank of Oxygen."
 				""
@@ -414,6 +414,7 @@
 				""
 				"Liftoff!"
 			]
+			icon: "ad_astra:moon_globe"
 			id: "281C7940CD437B69"
 			rewards: [{
 				id: "46FEAACBB5D75703"
@@ -424,11 +425,13 @@
 			size: 2.0d
 			subtitle: "Let me play among the stars"
 			tasks: [{
-				id: "4A70A666FB5A4A55"
-				item: "gcyr:moon_sand"
-				type: "item"
+				dimension: "ad_astra:moon"
+				icon: "ad_astra:moon_globe"
+				id: "3458BC33000F9D0A"
+				title: "Reach the Moon"
+				type: "dimension"
 			}]
-			title: "Fly Me To The Moon"
+			title: "&9Fly Me To The Moon"
 			x: 3.5d
 			y: -6.0d
 		}
@@ -456,19 +459,29 @@
 				item: "minecraft:chorus_flower"
 				type: "item"
 			}]
+			title: "Chorus Flowering"
 			x: 9.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
 			description: [
-				"&6Engines&r provide thrust, and &6Tanks&r provide fuel for your engines, make sure to have a decent amount of both."
+				"A &9Tier One Rocket&r will be more than enough to reach the moon, and a launch pad will be needed to set the rocket on."
 				""
-				"Being able to ride your rocket is important, too, so don't forget to add a &6seat&r."
-				""
-				"While sitting on a rocket, you can open your inventory to open check the rocket's thrust, and insert fuel and a ID Chip."
+				"While placed, the rocket can be sneak-right-clicked to open a GUI, where you can insert the fuel and access the rocket's inventory."
 			]
-			icon: "gcyr:basic_rocket_motor"
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_1_rocket"
+				tag: {
+					BotariumData: {
+						StoredFluids: [{
+							Amount: 0L
+							Fluid: "minecraft:empty"
+						}]
+					}
+				}
+			}
 			id: "4669C1DCEE4AA563"
 			rewards: [{
 				id: "558D57ABDD9D65EC"
@@ -478,24 +491,28 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					count: 5L
-					id: "36AC33D59E419A30"
-					item: "gcyr:basic_rocket_motor"
+					id: "424E9CDF84333ED6"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_1_rocket"
+						tag: {
+							BotariumData: {
+								StoredFluids: [{
+									Amount: 0L
+									Fluid: "minecraft:empty"
+								}]
+							}
+						}
+					}
 					type: "item"
 				}
 				{
-					count: 3L
-					id: "141B8A11234EF26D"
-					item: "gcyr:basic_fuel_tank"
-					type: "item"
-				}
-				{
-					id: "5E5CBFA3F32780BE"
-					item: "gcyr:seat"
+					id: "54E7FCF98F491577"
+					item: "ad_astra:launch_pad"
 					type: "item"
 				}
 			]
-			title: "&9Rocket Parts"
+			title: "&9The Rocket"
 			x: 2.5d
 			y: -8.5d
 		}
@@ -510,7 +527,7 @@
 			]
 			icon: {
 				Count: 1
-				id: "gcyr:space_helmet"
+				id: "ad_astra:space_helmet"
 				tag: {
 					Damage: 0
 				}
@@ -527,7 +544,7 @@
 					id: "0DFC776179D464C1"
 					item: {
 						Count: 1
-						id: "gcyr:space_helmet"
+						id: "ad_astra:space_helmet"
 						tag: {
 							Damage: 0
 						}
@@ -538,7 +555,7 @@
 					id: "0399F0828F49C6DF"
 					item: {
 						Count: 1
-						id: "gcyr:space_chestplate"
+						id: "ad_astra:space_suit"
 						tag: {
 							Damage: 0
 						}
@@ -549,7 +566,7 @@
 					id: "19B6A6B00F982087"
 					item: {
 						Count: 1
-						id: "gcyr:space_leggings"
+						id: "ad_astra:space_pants"
 						tag: {
 							Damage: 0
 						}
@@ -560,7 +577,7 @@
 					id: "03A19D83B2062391"
 					item: {
 						Count: 1
-						id: "gcyr:space_boots"
+						id: "ad_astra:space_boots"
 						tag: {
 							Damage: 0
 						}
@@ -569,36 +586,6 @@
 				}
 			]
 			title: "&9Space Suit"
-			x: 3.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["193B7038EAB6EFA3"]
-			description: [
-				"&6Right-click &rwhile holding this to bring up a catalog of various locations. "
-				""
-				"In this case, you want to go to the &7Overworld's Moon&r, so select that."
-				""
-				"Then, place it in the rocket's inventory, accessed by shift-right-clicking the rocket with an empty hand."
-			]
-			id: "0400F3BAB236F259"
-			rewards: [{
-				id: "352FEDC82096150A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "Tells your rocket where to go"
-			tasks: [{
-				id: "1227AEB2B7B46115"
-				item: {
-					Count: 1
-					id: "gcyr:id_chip"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "&9Planet ID"
 			x: 4.5d
 			y: -8.5d
 		}
@@ -607,11 +594,7 @@
 				"247F4985B9ACE568"
 				"2181102841205407"
 			]
-			description: [
-				"The &9Rocket Scanner&r is used to create rockets from various blocks."
-				""
-				"To use it, build the multiblock (facing either east or west), then place &6engines&r and &6tanks&r (as well as other blocks) within the given area. Once you are satisfied, press the &eBuild Rocket&r text in the Rocket Scanner's GUI."
-			]
+			description: ["The &9Nasa Workbench&r is used to create rockets from various parts."]
 			id: "193B7038EAB6EFA3"
 			rewards: [{
 				id: "241FC93655A20BDE"
@@ -622,10 +605,10 @@
 			subtitle: "Now it's time to think vertically"
 			tasks: [{
 				id: "6A2347A15D82ED0A"
-				item: "gcyr:rocket_scanner"
+				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			title: "&9Gregtech Rockets"
+			title: "&9Gregtech Rocketery"
 			x: 3.5d
 			y: -10.5d
 		}
@@ -883,8 +866,8 @@
 				"These structures are used to project &6Micro Miners&r into a &eMicroverse&r to obtain valuable loot such as &6ores&r, &6gems&r, and otherwise unobtainable items&r like &6Radium Salt&r and &6Naquadah Dust&r. &cKeep in mind that Micro Miners are single-use!&r"
 				""
 				"Microverse Projectors are &bGregTech&r multiblocks, which means that they're just as flexible as other machines in terms of the I/O block placement: &epositions of Buses and Hatches can be swapped with any Microverse Projector Casing&r."
-				"{@pagebreak}"
-				"A single &6HV Energy Input Hatch&r supports missions up to 512 EU/t. To process the rest, you'll need to upgrade the multiblock to at least &eEV power&r, which is either &6two HV Energy Inputs&r or &6one EV Energy Input&r. Missions will also overclock, increasing in speed each time the projector's energy tier increases and available power reaches the next multiple of four times the base mission power."
+				""
+				"A single &6HV Energy Input&r supports missions up to 1024 EU/t. To process the rest, you'll need to upgrade the multiblock to at least &eEV power&r, which is either &6two HV Energy Inputs&r or &6one EV Energy Input&r. Missions will also overclock, increasing in speed each time the projector's energy tier increases and available power reaches the next multiple of four times the base mission power."
 				""
 				"Hover your mouse over the Small Microverse Projector and press &bU&r to see all available missions."
 				""
@@ -1052,7 +1035,7 @@
 				item: "waystones:waystone"
 				type: "item"
 			}]
-			title: "Thinking with Waystones"
+			title: "&9Thinking with Waystones"
 			x: 9.0d
 			y: -6.0d
 		}
@@ -1075,11 +1058,9 @@
 				""
 				"Every &3Auto Crafting Table&r comes with three recipe slots in the top-right corner. To configure a recipe, the crafting grid must be filled with the recipe you wish to automate, and then saved to the table by &8Shift-Left-Clicking&r one of those recipe slots."
 				""
-				"Saved recipes must then be selected with a &8Left-Click&r to indicate that that recipe should be crafted."
-				""
-				"Only one recipe can be selected at a time, and changing the selected recipe must be done manually."
+				"Saved recipes must then be selected with a &8Left-Click&r to indicate that that recipe should be crafted. Only one recipe can be selected at a time."
 				"{@pagebreak}"
-				"Lastly, place regular &6Barrel&r atop the table - &eThe &3Auto Crafting Table&e cannot be inserted to, and can only pull items from an inventory&r. At this point you can put ingredients in the inventory and &aRF&r power in the table to begin automated crafting."
+				"Lastly, place an inventory atop the table - The &3Auto Crafting Table&r cannot be inserted to, and &ecan only pull items from that inventory&r. At this point you can put ingredients in the inventory and &aRF&r power in the table to begin automated crafting."
 				""
 				"In compensation for the cost of the &6Crystaltine Ingots&r and confusing logistics, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
 			]
@@ -1121,6 +1102,44 @@
 			title: "Auto Crafting Tables"
 			x: -1.5d
 			y: -8.0d
+		}
+		{
+			dependencies: ["193B7038EAB6EFA3"]
+			description: [
+				"The &9Oxygen Loader&r is used to Load Oxygen into your Space Suit, making it usable for exploring the great beyond."
+				""
+				"If you wish to create a base on the moon, it's worth looking into the &9Oxygen Distibutor&r and &9Oxygen Sensor&r."
+			]
+			icon: "ad_astra:oxygen_loader"
+			id: "4672EE66D51C32FF"
+			rewards: [{
+				id: "1275BF28D76C3304"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3B048AD7B91B4F7C"
+					item: "ad_astra:oxygen_loader"
+					type: "item"
+				}
+				{
+					id: "5E9025FFB64F653A"
+					item: "ad_astra:oxygen_distributor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "56DF465E7E18B202"
+					item: "ad_astra:oxygen_sensor"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "&9Breathing in Space"
+			x: 3.5d
+			y: -8.5d
 		}
 	]
 	title: "Into The Microverse"
