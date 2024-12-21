@@ -2,9 +2,19 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     if (!isHardMode) {
         return;
     }
-    event.create('taranium', 149, 264, -1, null, 'Tn', false)
-    event.create('quadium', 1, 3, -1, null, 'Qd', true)
-    event.create('hyperdegenerate_matter', 250, 1000, -1, null, 'Ω', false);
+    event.create('taranium')
+        .protons(149)
+        .neutrons(264)
+        .symbol('Tn');
+    event.create('quadium')
+        .protons(1)
+        .neutrons(3)
+        .symbol('Qd')
+        .isIsotope(true);
+    event.create('hyperdegenerate_matter')
+        .protons(250)
+        .neutrons(1000)
+        .symbol('Ω');
 })
 
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
@@ -37,5 +47,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("hyperdegenerate_matter"))
         .color(0xffffff).iconSet('hyperdegenerate_matter')
         .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
-        
+
 })
