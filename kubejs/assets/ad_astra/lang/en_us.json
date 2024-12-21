@@ -46,5 +46,5 @@
     "block.ad_astra.raw_calorite_block": "Raw Red Alloy Block",
     "block.ad_astra.raw_desh_block": "Raw Bronze Block",
     "block.ad_astra.raw_ostrum_block": "Raw Lead Block",
-    "info.ad_astra.oxygen_loader": " Fills up space suits and gas tanks."
+    "info.ad_astra.oxygen_loader": " Uses Gregtech Oxygen to fill up space suits and gas tanks."
 }

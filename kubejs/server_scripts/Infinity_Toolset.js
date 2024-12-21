@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
 			A: 'kubejs:the_ultimate_material',
             B: 'enderio:reinforced_obsidian_block',
             C: 'gtceu:dense_blue_alloy_plate',
-            D: 'gcyr:dense_bisalloy_400_plate',
+            D: 'gtceu:dense_cryolobus_plate',
             E: 'gtceu:dense_dark_soularium_plate',
             F: 'gtceu:dense_zeron_100_plate',
             G: 'gtceu:dense_manyullyn_plate',

@@ -170,24 +170,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0x857049)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    // GCYr
-    event.create('trinaquadalloy')
-        .fluid()
-        .ingot()
-        .color(0x281832)
-        .iconSet('bright')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
-        .components('6x trinium', '2x naquadah', '1x carbon')
-    //    .blastTemp(8747, BlastProperty.GasTier.HIGHER, GTValues.VA[GTValues.ZPM], 1200);
-
-    event.create('fluorite')
-        .gem()
-        .ore()
-        .color(0x0c9949)
-        .iconSet('diamond')
-        .components('1x calcium', '2x fluorine')
-        .addOreByproducts('calcium', 'fluorine')
 })
 
 // Modify materials' compositions
