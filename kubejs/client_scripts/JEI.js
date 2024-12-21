@@ -103,6 +103,7 @@ JEIEvents.hideItems(event => {
     event.hide(/ad_astra:.*_ingot/)
     event.hide(/ad_astra:.*_plate/)
     event.hide(/ad_astra:.*_nugget/)
+    event.hide(/ad_astra:.*_rod/)
     event.hide(/ad_astra:.*_ore/)
     event.hide(/ad_astra:raw_.*/)
 

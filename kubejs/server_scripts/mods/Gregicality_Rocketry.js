@@ -65,33 +65,41 @@ ServerEvents.recipes(event => {
         P: 'gtceu:lead_plate'
     })
 
-    event.remove({ id: "ad_astra:space_helmet" })
-    event.recipes.gtceu.assembler("space_helmet")
-        .itemInputs("kubejs:unprepared_space_helmet", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
-        .itemOutputs("ad_astra:space_helmet")
-        .duration(300)
-        .EUt(30)
+    const spacesuit = ['helmet', 'suit', 'pants', 'boots']
+    spacesuit.forEach(part => {
+        event.remove({ id: `ad_astra:space_${part}` })
+        event.recipes.gtceu.assembler(`space_${part}`)
+            .itemInputs(`kubejs:unprepared_space_${part}`, "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
+            .itemOutputs(`ad_astra:space_${part}`)
+            .duration(300)
+            .EUt(30)
 
-    event.remove({ id: "ad_astra:space_suit" })
-    event.recipes.gtceu.assembler("space_chestplate")
-        .itemInputs("kubejs:unprepared_space_chestpiece", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
-        .itemOutputs("ad_astra:space_suit")
-        .duration(300)
-        .EUt(30)
+        event.remove({ id: `ad_astra:netherite_space_${part}` })
+        event.recipes.gtceu.assembler(`netherite_space_${part}`)
+            .itemInputs(`ad_astra:space_${part}`, "4x minecraft:netherite_scrap", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
+            .itemOutputs(`ad_astra:netherite_space_${part}`)
+            .duration(400)
+            .EUt(128)
+    })
 
-    event.remove({ id: "ad_astra:space_pants" })
-    event.recipes.gtceu.assembler("space_leggings")
-        .itemInputs("kubejs:unprepared_space_leggings", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
-        .itemOutputs("ad_astra:space_pants")
-        .duration(300)
-        .EUt(30)
+    const jetsuit = ['helmet', 'pants', 'boots']
+    jetsuit.forEach(part => {
+        event.remove({ id: `ad_astra:jet_suit_${part}` })
+        event.recipes.gtceu.assembler(`jet_suit_${part}`)
+            .itemInputs(`ad_astra:netherite_space_${part}`, "4x gtceu:titanium_carbide_plate", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
+            .itemOutputs(`ad_astra:jet_suit_${part}`)
+            .duration(400)
+            .EUt(480)
+    })
 
-    event.remove({ id: "ad_astra:space_boots" })
-    event.recipes.gtceu.assembler("space_boots")
-        .itemInputs("kubejs:unprepared_space_boots", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
-        .itemOutputs("ad_astra:space_boots")
-        .duration(300)
-        .EUt(30)
+    event.remove({ id: `ad_astra:jet_suit` })
+    event.recipes.gtceu.assembler(`jet_suit`)
+        .itemInputs(`ad_astra:netherite_space_suit`, "4x gtceu:titanium_carbide_plate", "2x kubejs:vibrant_thruster", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
+        .itemOutputs(`ad_astra:jet_suit`)
+        .duration(400)
+        .EUt(480)
+
+
 
     // Nasa Work Bench
     event.recipes.extendedcrafting.shaped_table(
@@ -130,7 +138,7 @@ ServerEvents.recipes(event => {
         'PTP',
         'PTP'
     ], {
-        P: 'gtceu:cupronickel_plate',
+        P: 'gtceu:double_steel_plate',
         T: 'enderio:fluid_tank'
     })
 
@@ -150,7 +158,7 @@ ServerEvents.recipes(event => {
         'PTP',
         'PTP'
     ], {
-        P: 'gtceu:tungsten_steel_plate',
+        P: 'gtceu:double_tungsten_carbide_plate',
         T: 'enderio:fluid_tank'
     })
 
@@ -161,7 +169,7 @@ ServerEvents.recipes(event => {
         'PPP',
         'TTT'
     ], {
-        P: 'gtceu:double_titanium_tungsten_carbide_plate',
+        P: 'gtceu:double_lumium_plate',
         T: 'kubejs:vibrant_thruster'
     })
 
@@ -171,9 +179,43 @@ ServerEvents.recipes(event => {
         'PTP',
         'PTP'
     ], {
-        P: 'gtceu:hsse_plate',
+        P: 'gtceu:double_lumium_plate',
         T: 'enderio:fluid_tank'
     })
+
+    event.shaped(
+        'ad_astra:calorite_engine', [
+        ' P ',
+        'PPP',
+        'TTT'
+    ], {
+        P: 'gtceu:double_cryolobus_plate',
+        T: 'kubejs:dark_soularium_thruster'
+    })
+
+    event.shaped(
+        'ad_astra:calorite_tank', [
+        'PTP',
+        'PTP',
+        'PTP'
+    ], {
+        P: 'gtceu:double_cryolobus_plate',
+        T: 'enderio:fluid_tank'
+    })
+
+    event.recipes.gtceu.assembler('gas_tank')
+        .itemInputs('gtceu:fluid_cell', '4x gtceu:steel_plate')
+        .itemOutputs('ad_astra:gas_tank')
+        .duration(100)
+        .EUt(32)
+
+    event.recipes.gtceu.assembler('large_gas_tank')
+        .itemInputs('3x gtceu:fluid_cell', '12x gtceu:steel_plate')
+        .itemOutputs('ad_astra:large_gas_tank')
+        .duration(100)
+        .EUt(32)
+    event.replaceInput({ id: /ad_astra:.*_flag/ }, 'ad_astra:steel_rod', 'gtceu:steel_rod')
+
 
     // Launch Pad
     event.remove({ id: 'ad_astra:launch_pad' })
@@ -201,15 +243,15 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ad_astra:oxygen_loader' })
     event.shaped(
         'ad_astra:oxygen_loader', [
-            'BCB',
-            'PHP',
-            'BRB'
-        ], {
-            R: 'gtceu:steel_rotor',
-            H: 'gtceu:lv_machine_hull',
-            P: 'gtceu:lv_electric_pump',
-            B: 'minecraft:iron_bars',
-            C: '#gtceu:circuits/lv'
+        'BCB',
+        'PHP',
+        'BRB'
+    ], {
+        R: 'gtceu:steel_rotor',
+        H: 'gtceu:lv_machine_hull',
+        P: 'gtceu:lv_electric_pump',
+        B: 'minecraft:iron_bars',
+        C: '#gtceu:circuits/lv'
     })
 
     event.remove({ id: 'ad_astra:gravity_normalizer' })
@@ -246,29 +288,29 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
     const decormaterials = ['iron', 'etrium', 'steel', 'desh', 'ostrum', 'calorite']
-        decormaterials.forEach(material => {
-            event.stonecutting(`ad_astra:${material}_plateblock`, `ad_astra:${material}_panel`)
-            event.stonecutting(`ad_astra:encased_${material}_block`, `ad_astra:${material}_panel`)
-            event.stonecutting(`ad_astra:${material}_factory_block`, `ad_astra:${material}_panel`)
-        })
-   
-        event.shaped(
-            '64x ad_astra:etrium_panel', [
-            'PDP',
-            'DDD',
-            'PDP'
-        ], {
-            D: 'minecraft:diamond',
-            P: 'gtceu:diamond_plate'
-        })
+    decormaterials.forEach(material => {
+        event.stonecutting(`ad_astra:${material}_plateblock`, `ad_astra:${material}_panel`)
+        event.stonecutting(`ad_astra:encased_${material}_block`, `ad_astra:${material}_panel`)
+        event.stonecutting(`ad_astra:${material}_factory_block`, `ad_astra:${material}_panel`)
+    })
+
+    event.shaped(
+        '64x ad_astra:etrium_panel', [
+        'PDP',
+        'DDD',
+        'PDP'
+    ], {
+        D: 'minecraft:diamond',
+        P: 'gtceu:diamond_plate'
+    })
 
     // Rockets
     event.remove({ id: /nasa_workbench/ })
     const rocket = [ // Plate mats currently just based on color of rocket for testing
         ['tier_1_rocket', "steel", 'steel'],
-        ['tier_2_rocket', "desh", 'energetic_alloy'],
-        ['tier_3_rocket', "ostrum", 'hsss'],
-        ['tier_4_rocket', "calorite", 'tritanium'],
+        ['tier_2_rocket', "desh", 'tungsten_carbide'],
+        ['tier_3_rocket', "ostrum", 'lumium'],
+        ['tier_4_rocket', "calorite", 'cryolobus'],
     ]
 
     rocket.forEach(([rocket, tier, platematerial]) => {
