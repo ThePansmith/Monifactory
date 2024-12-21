@@ -245,17 +245,22 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(32)
 
-   // Stonecutting Marble
-   let MarbleTag = ['#moni:marble']; // What item tags to go through (change this so you have your tags)
-   MarbleTag.forEach(tag => {
-       let Marbles = Ingredient.of(tag).stacks; // Get all of the items with that tag
-       Marbles.forEach(input => {
-           Marbles.forEach(output => { // Loop through the items so all combination of input and output are met
-               if (input != output) // Ignore recipes where input and output are the same item
-                   event.stonecutting(output, input); // Make the recipe
-           });
-       });
-   });
+    const decormaterials = ['iron', 'etrium', 'steel', 'desh', 'ostrum', 'calorite']
+        decormaterials.forEach(material => {
+            event.stonecutting(`ad_astra:${material}_plateblock`, `ad_astra:${material}_panel`)
+            event.stonecutting(`ad_astra:encased_${material}_block`, `ad_astra:${material}_panel`)
+            event.stonecutting(`ad_astra:${material}_factory_block`, `ad_astra:${material}_panel`)
+        })
+   
+        event.shaped(
+            '64x ad_astra:etrium_panel', [
+            'PDP',
+            'DDD',
+            'PDP'
+        ], {
+            D: 'minecraft:diamond',
+            P: 'gtceu:diamond_plate'
+        })
 
     // Rockets
     event.remove({ id: /nasa_workbench/ })
