@@ -311,7 +311,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('hydrobromic_acid')
         .fluid()
         .color(0x612C0D)
-        .flags(DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
         .components('1x hydrogen', '1x bromine', '1x water')
 
     event.create('co_mn_br_catalyst')
