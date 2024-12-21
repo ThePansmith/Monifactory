@@ -347,7 +347,6 @@ StartupEvents.registry('item', event => {
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
     //Solid Naquadah Fuel Line
-    event.create('pellet_extruder_mold').texture('kubejs:item/naquadah/pellet_extruder_mold')
     event.create('empty_fuel_rod').texture('kubejs:item/naquadah/empty_fuel_rod')
     event.create('naquadah_fuel_pellet').texture('kubejs:item/naquadah/naquadah_fuel_pellet')
     event.create('naquadah_fuel_rod').texture('kubejs:item/naquadah/naquadah_fuel_rod')
