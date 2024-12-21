@@ -1108,7 +1108,7 @@
 			description: [
 				"The &9Oxygen Loader&r is used to Load Oxygen into your Space Suit, making it usable for exploring the great beyond."
 				""
-				"If you wish to create a base on the moon, it's worth looking into the &9Oxygen Distibutor&r and &9Oxygen Sensor&r."
+				"If you wish to create a base on the moon, it's worth looking into the &9Oxygen Distibutor&r and &9Oxygen Sensor&r. Later on, you can even create the &9Gravity Normalizer&r, which allows you to control gravity itself!"
 			]
 			icon: "ad_astra:oxygen_loader"
 			id: "4672EE66D51C32FF"
@@ -1133,6 +1133,12 @@
 				{
 					id: "56DF465E7E18B202"
 					item: "ad_astra:oxygen_sensor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4F363B5679515717"
+					item: "ad_astra:gravity_normalizer"
 					optional_task: true
 					type: "item"
 				}

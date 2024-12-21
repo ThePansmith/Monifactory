@@ -3004,19 +3004,50 @@
 		}
 		{
 			dependencies: ["53C00EA9D9BEE776"]
-			description: ["&9While not required for progression, the space station serves as both a cool place to build a base, and opens the door to a variety of other space-related options!"]
+			description: [
+				"While not required for progression, the space station serves as a cool place to build a base! The resources shown above are what are required to create a space station, &9which can be done from the planet section menu&r."
+				""
+				"[\"You can refer to \", {\"text\": \"this quest\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4672EE66D51C32FF\" } },\" for a refresher on various things that would be helpful in any space base.\"]"
+			]
+			icon: "ad_astra:oxygen_distributor"
 			id: "059A9B12C8478025"
 			rewards: [{
 				id: "62FD649920864137"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			subtitle: "&cThis is NOT YET IMPLEMENTED"
-			tasks: [{
-				id: "186C8FE63F7C723E"
-				item: "gcyr:space_station_packager"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 16L
+					id: "2C7FA22F196AD3AD"
+					item: { Count: 16, id: "gtceu:double_titanium_plate" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "16A56B62395607C9"
+					item: {
+						Count: 8
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:circuits/ev"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "09CCE89FB8D6FD03"
+					item: { Count: 4, id: "gtceu:ev_robot_arm" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "31BF9A11512D0FAE"
+					item: { Count: 2, id: "gtceu:ev_sensor" }
+					type: "item"
+				}
+			]
 			title: "&9Space Stationing"
 			x: 9.5d
 			y: 10.5d
