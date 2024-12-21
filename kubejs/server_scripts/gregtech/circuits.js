@@ -139,8 +139,7 @@ ServerEvents.recipes(event => {
             '2x kubejs:matter_processor_assembly',
             '12x gtceu:advanced_smd_diode',
             '24x gtceu:nor_memory_chip',
-            '8x kubejs:multidimensional_cpu_chip',
-            '8x gtceu:uhpic_chip',
+            '8x kubejs:uxpic_chip',
             '24x gtceu:fine_europium_wire',
             '8x gtceu:polyethyl_cyanoacrylate_foil',
             '4x gtceu:crystal_matrix_plate'
@@ -231,7 +230,7 @@ ServerEvents.recipes(event => {
             '32x gtceu:nor_memory_chip',
             '12x kubejs:multidimensional_cpu_chip',
             '16x kubejs:hyperdynamic_ram_chip',
-            '16x gtceu:uhpic_chip',
+            '16x kubejs:uxpic_chip',
             '24x gtceu:fine_activated_netherite_wire',
             '16x gtceu:polyethyl_cyanoacrylate_foil',
             '4x gtceu:holmium_plate'
@@ -326,7 +325,7 @@ ServerEvents.recipes(event => {
             '16x kubejs:multidimensional_cpu_chip', 
             '24x kubejs:hyperdynamic_ram_chip',
             '16x kubejs:quantum_soc_chip',
-            '24x gtceu:uhpic_chip',
+            '24x kubejs:uxpic_chip',
             '24x gtceu:fine_holmium_wire', 
             '32x gtceu:polyethyl_cyanoacrylate_foil',
             '4x gtceu:infinity_plate'

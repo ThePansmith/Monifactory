@@ -685,6 +685,30 @@ ServerEvents.recipes(event => {
         E: 'thermal:redstone_servo'
     }).id('kubejs:device_collector');
 
+    event.remove({ id: 'thermal:device_fisher' });
+    event.shaped('thermal:device_fisher', [
+        'DAD',
+        'BCB',
+        'DED'
+    ], {
+        A: 'minecraft:fishing_rod',
+        B: '#forge:glass',
+        C: 'thermal:machine_frame', // casing
+        D: '#minecraft:planks',
+        E: 'thermal:redstone_servo'
+    }).id('thermal:device_fisher');
+
+    event.remove({ output: ['thermal:item_filter_augment'] })
+    event.shaped(
+        'thermal:item_filter_augment', [
+            ' I ',
+            'IVI',
+            ' I '
+        ], {
+            I: 'gtceu:invar_nugget',
+            V: 'gtceu:item_filter',
+        })
+
     /*=== THERMAL TOOLS ===*/
     event.remove({ id: 'thermal:tools/wrench' })
     event.shaped('thermal:wrench', [

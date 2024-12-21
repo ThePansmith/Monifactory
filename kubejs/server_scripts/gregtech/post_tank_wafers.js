@@ -1,4 +1,28 @@
 ServerEvents.recipes(event => {
+	// Post-tank PIC
+	event.recipes.gtceu.laser_engraver("uxpic_wafer_neutronium")
+		.itemInputs('gtceu:neutronium_wafer')
+		.notConsumable('#forge:lenses/lime')
+		.itemOutputs('kubejs:uxpic_wafer')
+		.cleanroom(CleanroomType.CLEANROOM)
+		.duration(25 * 20)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.laser_engraver("uxpic_wafer_universe")
+		.itemInputs('kubejs:universe_wafer')
+		.notConsumable('#forge:lenses/lime')
+		.itemOutputs('2x kubejs:uxpic_wafer')
+		.cleanroom(CleanroomType.CLEANROOM)
+		.duration(25 * 20)
+		.EUt(GTValues.VA[GTValues.IV])
+
+	event.recipes.gtceu.cutter("uxpic_chip")
+		.itemInputs('kubejs:uxpic_wafer')
+		.itemOutputs('1x kubejs:uxpic_chip')
+		.cleanroom(CleanroomType.CLEANROOM)
+		.duration(45 * 20)
+		.EUt(GTValues.VHA[GTValues.ZPM])
+
         // WIP: Post Tank Boule
         event.recipes.gtceu.electric_blast_furnace("universe_doped_boule")
         .itemInputs('kubejs:heart_of_a_universe', '64x gtceu:silicon_block', '16x kubejs:stabilized_oganesson')

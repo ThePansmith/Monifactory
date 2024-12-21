@@ -96,11 +96,8 @@
   "gtceu.advanced_microverse_iii": "高级微型宇宙投影仪 III",
   "gtceu.multiblock.hyperbolic_microverse_projector.description": "§7一种能够同时稳定投影进入数百个微型宇宙中的史诗机器。\n可执行所有类型的微型宇宙任务。",
 
-  "block.gtceu.naquadah_reactor_i": "硅岩反应堆 I",
-  "gtceu.naquadah_reactor_i": "硅岩反应堆 I",
-
-  "block.gtceu.naquadah_reactor_ii": "硅岩反应堆 II",
-  "gtceu.naquadah_reactor_ii": "硅岩反应堆 II",
+  "block.gtceu.naquadah_reactor": "硅岩反应堆",
+  "gtceu.naquadah_reactor": "硅岩反应堆",
 
   "block.gtceu.matter_alterator": "物质转变器",
   "gtceu.atomic_reconstruction": "原子重构",
@@ -117,10 +114,6 @@
   "block.gtceu.greenhouse": "温室",
   "gtceu.greenhouse": "温室",
   "gtceu.multiblock.greenhouse.description": "§7一个高能紫外线室，即使是最难以想象的植物也能够快速大规模培育。",
-
-  "block.gtceu.extra_large_chemical_reactor": "超大型化学反应堆",
-  "gtceu.extra_large_chemical_reactor": "超大型化学反应堆",
-  "gtceu.multiblock.extra_large_chemical_reactor.description": "§7以前所未有的速度和效率执行所有类型的化学反应。",
 
   "block.gtceu.discharger": "放电器",
   "gtceu.discharger": "放电器",

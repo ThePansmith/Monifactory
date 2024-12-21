@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t1')
             .circuit(2)
             .itemOutputs(
-                '64x gtceu:diamond_perfect', 
+                '64x gtceu:diamond_ore', 
                 '64x gtceu:apatite_ore', 
                 '64x gtceu:tricalcium_phosphate_ore', 
                 '64x gtceu:quartzite_ore'
@@ -91,11 +91,11 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t3')
             .circuit(1)
             .itemOutputs(
-                '64x gtceu:diamond_perfect',
-                '32x gtceu:diamond_perfect',
-                '64x gtceu:ruby_perfect',
-                '48x gtceu:topaz_perfect',
-                '32x gtceu:emerald_perfect',
+                '64x gtceu:diamond_ore',
+                '32x gtceu:diamond_ore',
+                '64x gtceu:ruby_ore',
+                '48x gtceu:topaz_ore',
+                '32x gtceu:emerald_ore',
                 '64x gtceu:netherrack_sapphire_ore',
                 '64x gtceu:netherrack_gold_ore',
                 '64x gtceu:netherrack_silver_ore'
@@ -184,15 +184,15 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t4half')
             .circuit(1)
             .itemOutputs(
-                '48x minecraft:skeleton_skull',
                 '64x minecraft:bone',
                 '64x minecraft:bone',
                 '64x minecraft:bone',
-                '48x minecraft:zombie_head',
+                '64x minecraft:bone',
                 '64x minecraft:rotten_flesh',
                 '64x minecraft:rotten_flesh',
                 '64x minecraft:rotten_flesh',
-                '48x minecraft:creeper_head',
+                '64x minecraft:rotten_flesh',
+                '64x minecraft:gunpowder',
                 '64x minecraft:gunpowder',
                 '64x minecraft:slime_block',
                 '64x kubejs:guardian_scale'
@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
                 '50x thermal:basalz_rod',
                 '50x thermal:basalz_rod',
                 '64x minecraft:ghast_tear',
-                '48x minecraft:wither_skeleton_skull',
+                '64x kubejs:wither_bone',
                 '64x kubejs:wither_bone',
                 '64x kubejs:wither_bone', // drops of evil aren't in the pack
                 '64x minecraft:magma_cream',
@@ -244,7 +244,6 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dragon_lair_data',
                 '64x minecraft:dragon_breath',
                 '64x minecraft:dragon_breath',
-                'minecraft:dragon_head'
             )
             .duration(780)
             .EUt(30720)

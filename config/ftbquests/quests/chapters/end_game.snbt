@@ -54,7 +54,7 @@
 			id: "64A590345841C96D"
 			linked_quest: "6F5BB99060FF03AC"
 			shape: "hexagon"
-			x: 45.25d
+			x: 45.75d
 			y: -10.75d
 		}
 		{
@@ -68,7 +68,7 @@
 			id: "253B127314F09EF5"
 			linked_quest: "0F56F4E642BC2B85"
 			shape: "hexagon"
-			x: 39.75d
+			x: 38.75d
 			y: -10.75d
 		}
 		{
@@ -118,8 +118,8 @@
 			id: "20F44ACD2F91FD2A"
 			linked_quest: "4DF92773C82F4AAC"
 			shape: "hexagon"
-			x: 37.5d
-			y: -17.0d
+			x: 41.75d
+			y: -16.0d
 		}
 		{
 			id: "3F8FC1CF9A8083E1"
@@ -292,7 +292,7 @@
 			id: "4EA1E0D437528747"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "I bet we could make robot arms out of this."
+			subtitle: "I bet we could make hulls out of this."
 			tasks: [{
 				id: "67517FC01121D069"
 				item: "gtceu:infinity_ingot"
@@ -637,7 +637,10 @@
 			y: -13.5d
 		}
 		{
-			dependencies: ["07057CDE4E021BA7"]
+			dependencies: [
+				"07057CDE4E021BA7"
+				"07E757AAA1C7435D"
+			]
 			description: [
 				"The &3Hyperbolic Microverse Projector&r is the most powerful projector, capable of running hundreds of missions in parallel. It can perform all previous Micro Miner missions, and opens the door to many new ones."
 				""
@@ -677,6 +680,7 @@
 			dependencies: [
 				"1B1D3A66B847D129"
 				"040B3FCD82533BD9"
+				"786AECA42F53B45A"
 			]
 			description: ["The IPMEPS is capable of altering the laws of physics on a microversal scale, thus allowing the production of previously impossible materials."]
 			id: "13578427FD9CC2CE"
@@ -742,7 +746,7 @@
 		{
 			dependencies: ["739F7BF2A90B278A"]
 			description: [
-				"&fThe Omnic Forge will allow you to produce post-tank coils and casings. It is also part of the Netherite processing line."
+				"&fThe &9Omnic Forge&r will allow you to &eproduce post-tank coils and casings&r. It is also part of the Netherite processing line."
 				""
 				"Note that Omnic Matrix Machine Casings are twice as expensive when crafted using the Assembler, so make sure to use your first Omnic Forge to build any extra ones."
 				""
@@ -765,6 +769,7 @@
 			dependencies: [
 				"63CC578C3558E0AF"
 				"07057CDE4E021BA7"
+				"0ED041E2114F7C84"
 			]
 			description: [
 				"Taking a look at the &6Corrupted Universe Data&r has given you a couple of ideas, but to properly take advantage of it, a new Micro Miner is needed."
@@ -895,7 +900,7 @@
 			}]
 			title: "&9Matter Circuit Board"
 			x: 38.75d
-			y: -11.75d
+			y: -12.25d
 		}
 		{
 			dependencies: [
@@ -930,7 +935,7 @@
 				type: "item"
 			}]
 			title: "&9Universe Boules"
-			x: 42.75d
+			x: 40.25d
 			y: -6.75d
 		}
 		{
@@ -978,8 +983,8 @@
 				item: "kubejs:ultimate_gem"
 				type: "item"
 			}]
-			x: 52.5d
-			y: -18.0d
+			x: 48.0d
+			y: -20.0d
 		}
 		{
 			dependencies: [
@@ -1085,8 +1090,8 @@
 				item: "kubejs:hyperdynamic_ram_chip"
 				type: "item"
 			}]
-			x: 43.75d
-			y: -12.25d
+			x: 40.25d
+			y: -22.75d
 		}
 		{
 			dependencies: ["39A09DA3903C5564"]
@@ -1112,6 +1117,7 @@
 			]
 			description: ["An upgraded form of the &6Infinity Catalyst&r. It processes 4 &cDormant Infinity Compound Ingots&r at a time, essentially increasing your &6Infinity Ingot&r output per &6Heart of a Universe&r by &e4x&r. They also are recyclable afterwards."]
 			id: "06849E067C88C0E9"
+			size: 1.0d
 			subtitle: "Gee, that's a lot of Infinity Ingots"
 			tasks: [{
 				id: "0BB7A824F7B03BDC"
@@ -1125,6 +1131,7 @@
 			dependencies: ["68734C70E2D19616"]
 			description: ["The final form of the &6Infinity Catalyst&r. It processes 16 &cDormant Infinity Compound Ingots&r at a time, essentially increasing your &6Infinity Ingot&r output per &6Heart of a Universe&r by &e16x&r."]
 			id: "65B610CF9324F6B2"
+			size: 1.0d
 			subtitle: "Spend Monium to make Monium"
 			tasks: [{
 				id: "2A554D0488C990D6"
@@ -1140,7 +1147,7 @@
 			description: [
 				"&9Ruined Hull&r is more abundant than &9Ruined Machine Parts&r but gives less &9Holmium&r overall. "
 				""
-				"It also drops high-end materials such as &6Neutronium&r, &6Tritanium&r, and &6Crystal Matrix Dust&r, although these are mostly irrelevant to you as you already have the &9Creative Quantum Tank.&r"
+				"It also drops high-end materials such as &6Neutronium&r, &6Tritanium&r, and &6Crystal Matrix Dust&r."
 			]
 			id: "72996D5B09AC57CF"
 			shape: "hexagon"
@@ -1150,7 +1157,7 @@
 				type: "item"
 			}]
 			x: 45.75d
-			y: -20.25d
+			y: -20.0d
 		}
 		{
 			dependencies: ["0FD9B533BB402B17"]
@@ -1185,67 +1192,6 @@
 			y: -11.5d
 		}
 		{
-			dependencies: ["113E9543ADB1666B"]
-			description: [
-				"The &9Cryococcal Reverberator&r is a means of using &6Cryococcus&r to convert matter directly into energy more efficiently than any other means."
-				""
-				"It only works with a handful of highly energy-dense items and consumes a wealth of &6Cryococcus,&r so you'll need to find a way to produce these consistently and in bulk."
-				""
-				"If you manage to supply it with &6Contained Singularities&r, you'll be awarded with enough energy to saturate a &6UIV 4,096A Laser Source Hatch&r while avoiding the explosive risk of &elarge spheres of superheated dragon metal.&r"
-			]
-			icon: "gtceu:cryococcal_reverberator"
-			id: "25A7BC39C30139DA"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "WARNING: Recipes subject to change!"
-			tasks: [
-				{
-					id: "009824CA79D811CC"
-					item: "gtceu:cryococcal_reverberator"
-					type: "item"
-				}
-				{
-					count: 152L
-					id: "13BFBC913CC929D9"
-					item: { Count: 152, id: "gtceu:naquadah_alloy_frame" }
-					type: "item"
-				}
-				{
-					count: 1063L
-					id: "22523AC6932FC851"
-					item: "gtceu:atomic_casing"
-					type: "item"
-				}
-				{
-					count: 52L
-					id: "7B8B5E74E7A5C1A0"
-					item: { Count: 52, id: "kubejs:cryococcus_fusion_coil" }
-					type: "item"
-				}
-				{
-					count: 124L
-					id: "1FFF2FDB7B3FE718"
-					item: { Count: 124, id: "kubejs:cryococcus_fusion_casing" }
-					type: "item"
-				}
-				{
-					count: 88L
-					id: "5EFC3A7D1AA28C88"
-					item: { Count: 88, id: "kubejs:cryococcus_casing" }
-					type: "item"
-				}
-				{
-					count: 380L
-					id: "31FC71C05028D375"
-					item: { Count: 380, id: "kubejs:cryolobus_casing" }
-					type: "item"
-				}
-			]
-			title: "Cryococcal Reverberator"
-			x: 33.5d
-			y: -8.75d
-		}
-		{
 			dependencies: [
 				"1F7F73BF81570F3C"
 				"07057CDE4E021BA7"
@@ -1266,7 +1212,7 @@
 			}]
 			title: "&9Helical Fusion Reactor"
 			x: 48.0d
-			y: -16.875d
+			y: -17.0d
 		}
 		{
 			dependencies: ["739F7BF2A90B278A"]
@@ -1284,8 +1230,129 @@
 				type: "item"
 			}]
 			title: "Polyethyl Cyanoacrylate"
-			x: 51.5d
+			x: 48.0d
+			y: -8.75d
+		}
+		{
+			dependencies: ["7C4E04E3EA603000"]
+			description: ["The &9Large Naquadah Reactor&r is an upgraded reactor that can generate immense amounts of EU energy from Naquadric Reactions. The fuels used in it are more complicated, but will generate massive amounts of power in return."]
+			icon: "gtceu:large_naquadah_reactor"
+			id: "21E10888F52A3C73"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "51C99B20F637AA2C"
+				item: "gtceu:large_naquadah_reactor"
+				type: "item"
+			}]
+			title: "&9Large Naquadah Reactor"
+			x: 35.0d
+			y: -8.75d
+		}
+		{
+			dependencies: [
+				"21E10888F52A3C73"
+				"1F7F73BF81570F3C"
+			]
+			description: ["Refines &6Liquid Naquadah Fuels&r into more potent varients."]
+			hide_until_deps_visible: true
+			id: "4E9530E62A4B673B"
+			tasks: [{
+				id: "1A12706752D1F8FC"
+				item: "gtceu:naquadah_refinery"
+				type: "item"
+			}]
+			title: "&9Naquadah Fuel Refining"
+			x: 33.0d
+			y: -8.75d
+		}
+		{
+			dependencies: ["1B1D3A66B847D129"]
+			description: ["&9Eltz&r is made by processing &6Eltic Actinate Gems&r in a Electric Blast Furnace, which in turn are created from &6Eltic Crystal Seeds&r, and some other materials."]
+			id: "786AECA42F53B45A"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Ez, right?"
+			tasks: [{
+				id: "3197EF56CDB20130"
+				item: "gtceu:eltz_ingot"
+				type: "item"
+			}]
+			title: "&9Eltz"
+			x: 43.75d
+			y: -26.75d
+		}
+		{
+			dependencies: [
+				"4DF92773C82F4AAC"
+				"07057CDE4E021BA7"
+			]
+			description: [
+				"A bioalloy, this material sees use in UEV Tier components."
+				""
+				"This material is primarly made up of a &6Sculk Microstructure Pulp&r and a bit &6Prussian Blue&r, and is activated in a discharger."
+			]
+			id: "0ED041E2114F7C84"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Slightly... Gooey?"
+			tasks: [{
+				id: "21D7458960FAB5AE"
+				item: "gtceu:sculk_bioalloy_ingot"
+				type: "item"
+			}]
+			title: "&9S.C.U.L.K. Bioalloy"
+			x: 45.75d
+			y: -16.0d
+		}
+		{
+			dependencies: ["01E542E1C9DAF5B4"]
+			description: [
+				"&9Actinium&r is a radioactive material, and be obtained by a reaction between a &6Iridium Neutron Reflector&r and &6Uranium Hexafluoride&r, having a chance of creating small piles of &9Actinium&r. "
+				""
+				"Keep in mind, though, that such volatile reaction could cause the reflector &eto break&r, so keeping spares is important."
+			]
+			icon: "gtceu:actinium_ingot"
+			id: "07E757AAA1C7435D"
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Radioactive!"
+			tasks: [
+				{
+					id: "450DAA4FF933F49A"
+					item: "gtceu:actinium_ingot"
+					type: "item"
+				}
+				{
+					id: "65DF1406D1FBC1EA"
+					item: "gtceu:small_actinium_dust"
+					type: "item"
+				}
+			]
+			title: "&9Actinium"
+			x: 50.0d
 			y: -10.75d
+		}
+		{
+			dependencies: ["0ED041E2114F7C84"]
+			description: [
+				"&6S.C.U.L.K Bioalloy&r unlocks the means to set up the &3Biobalance Charger&r, a much improved version of the &6Sculk Charger&r. "
+				""
+				"This multiblock is capable of both Charging and Discharging recipes, and can do these in parallel."
+				""
+				"&6Sneak-right click&r the controller to enable the in-world preview."
+			]
+			id: "198C5A6A8ED38803"
+			shape: "square"
+			size: 1.25d
+			tasks: [{
+				id: "2D75D49AE835131E"
+				item: "gtceu:sculk_biocharger"
+				type: "item"
+			}]
+			title: "&9Biobalance Charger"
+			x: 45.75d
+			y: -14.625d
 		}
 	]
 	title: "End Game"

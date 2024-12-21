@@ -148,10 +148,10 @@ ServerEvents.recipes(event => {
         'CDC',
         'AAA'
     ], {
-        A: 'gtceu:rhodium_plated_palladium_plate',
-        B: 'gtceu:luv_robot_arm',
-        C: '#gtceu:circuits/luv',
-        D: 'gtceu:luv_machine_hull',
+        A: 'gtceu:naquadah_alloy_plate',
+        B: 'gtceu:zpm_robot_arm',
+        C: '#gtceu:circuits/zpm',
+        D: 'gtceu:zpm_machine_hull',
     }
     ).id('kubejs:ae2/requster')
 
@@ -1203,16 +1203,6 @@ ServerEvents.recipes(event => {
         )
     }
     
-    function coloredCoveredCable(color) {
-        event.shapeless(
-            `ae2:${color}_covered_cable`,
-            [
-              `ae2:${color}_glass_cable`,
-              `minecraft:${color}_wool`
-            ]
-          )
-    }
-
     function coveredDenseCable(color) {
         event.shaped(
             `ae2:${color}_covered_dense_cable`, 
@@ -1237,16 +1227,19 @@ ServerEvents.recipes(event => {
         )
     }
 
+
+
     washToFluix('covered')
     washToFluix('covered_dense')
     washToFluix('smart_dense')
     washToFluix('glass')
     washToFluix('smart')
 
-    colors.forEach(coloredCoveredCable)
+//    colors.forEach(coloredCoveredCable)
     colors.forEach(coveredDenseCable)
     colors.forEach(smartDenseCable)
 
+    
     // BetterP2P
     event.shapeless('betterp2p:advanced_memory_card', ['ae2:memory_card', 'ae2:network_tool'])
 })

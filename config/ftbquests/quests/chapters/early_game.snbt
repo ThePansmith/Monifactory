@@ -441,7 +441,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["517A89E954C7EA74"]
+			dependencies: ["776199B37A19A592"]
 			description: ["The &3Atomic Reconstructor&r is capable of reconstructing standard materials into special variants."]
 			id: "5F688F22A3DB2ADD"
 			rewards: [{
@@ -471,7 +471,7 @@
 				type: "item"
 			}]
 			title: "Reconstruction of Atoms"
-			x: 7.5d
+			x: 6.25d
 			y: -1.0d
 		}
 		{
@@ -807,7 +807,7 @@
 				type: "item"
 			}]
 			title: "&2MV Mixer"
-			x: 9.0d
+			x: 6.25d
 			y: 7.0d
 		}
 		{

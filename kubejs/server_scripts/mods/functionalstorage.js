@@ -132,9 +132,9 @@ ServerEvents.recipes(event => {
     // Storage Upgrades
     let upgradeTiers = [
         ['copper', 'lead', 'bronze'],
-        ['gold', 'invar', 'steel'],
-        ['diamond', 'electrum', 'aluminium'],
-        ['netherite', 'signalum', 'stainless_steel']
+        ['gold', 'tin', 'steel'],
+        ['diamond', 'copper', 'aluminium'],
+        ['netherite', 'gold', 'stainless_steel']
     ]
 	upgradeTiers.forEach((tier, tierIndex) => {
         event.remove({ id: 'functionalstorage:' + tier[0] + '_upgrade'})

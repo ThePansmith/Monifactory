@@ -9,9 +9,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: "sophisticatedstorage:xp_pump_upgrade"})
     event.remove({ id: "sophisticatedbackpacks:xp_pump_upgrade"})
 
-    // Temp remove packing tape (involved in a dupe glitch)
-    // https://cdn.discordapp.com/attachments/1229854271613436066/1304934280094289971/2024-11-09_14-21-24.mov?ex=67347e00&is=67332c80&hm=68962ee307ceb1f69f385a88b9185d50a6b3a108377b3fa252be7bbb8964837c&
-    event.remove({ id: 'sophisticatedstorage:packing_tape'})
+    // Public server owners: uncomment this, there is dupe glitch involving this.
+    // event.remove({ id: 'sophisticatedstorage:packing_tape'})
 
     //Remove Limited barrels
     event.remove({ id: /^sophisticatedstorage:.*limited.+barrel.+$/})
@@ -98,9 +97,9 @@ ServerEvents.recipes(event => {
     const sophStorageMaterials = [
         ["", null, null],
         ['iron_', 'bronze', 'lead'],
-        ['gold_', 'steel', 'invar'],
-        ['diamond_', 'aluminium', 'electrum'],
-        ['netherite_', 'stainless_steel', 'signalum'],
+        ['gold_', 'steel', 'tin'],
+        ['diamond_', 'aluminium', 'copper'],
+        ['netherite_', 'stainless_steel', 'gold'],
     ]
     const sophStorageTypes = [
         ['', 'barrel'],

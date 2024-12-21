@@ -85,7 +85,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x58649B)
         .components('1x lead', '1x sodium')
+    
+    // Crystal Matrix Line
+    event.create('acetylene')
+        .gas()
+        .color(0xFF4F4F)
+        .components('2x carbon', '2x hydrogen')
 
+    event.create('calcium_carbide')
+        .dust()
+        .color(0xCFC870)
+        .components('1x calcium', '2x carbon')
 
     // Ingredients to create Polyethyl Cyanoacrylate, (PECA) a post-tank polymer
     event.create('sodium_cyanide')
@@ -141,8 +151,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .polymer()
         .color(0x708787)
         .components('1x nitrogen', '6x carbon', '7x hydrogen', '2x oxygen')
+        .fluidPipeProperties(3000, 12000, true, true, true, false)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
-
 
     // Dimethyl sulfoxide sub-chain (PECA catalyst)
     event.create('dimethyl_sulfoxide')
@@ -154,8 +164,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0xACB279)
         .components('2x carbon', '6x hydrogen', '1x sulfur')
-})
 
+    // Saturated water (Eltz line midproduct)
+    event.create('saturated_water')
+        .liquid()
+        .color(0x857049)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+})
 
 // Modify materials' compositions
 GTCEuStartupEvents.materialModification(() => {

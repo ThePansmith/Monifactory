@@ -99,11 +99,18 @@
   "gtceu.advanced_microverse_iii": "Hyperbolic Microverse Projector",
   "gtceu.multiblock.hyperbolic_microverse_projector.description": "§7An epic machine capable of stabilizing projection into hundreds of microverses at once.\nCan perform all Microverse Missions.",
 
-  "block.gtceu.naquadah_reactor_i": "Naquadah Reactor I",
-  "gtceu.naquadah_reactor_i": "Naquadah Reactor I",
+  "block.gtceu.naquadah_reactor": "Naquadah Reactor",
+  "gtceu.naquadah_reactor": "Naquadah Reactor",
 
-  "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
-  "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
+  "block.gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
+  "gtceu.large_naquadah_reactor": "Large Naquadah Reactor",
+  "gtceu.multiblock.large_naquadah_reactor.description": "§7A highly advanced multiblock capable of generating massive amounts of energy from Naquadaric Decay.",
+
+
+  "block.gtceu.naquadah_refinery": "Naquadah Refinery",
+  "gtceu.naquadah_refinery": "Naquadah Refining",
+  "gtceu.multiblock.naquadah_refinery.description": "§7Refines crude naquadaric fuels into more potent fuels.",
+
 
   "block.gtceu.matter_alterator": "Matter Alterator",
   "gtceu.atomic_reconstruction": "Atomic Reconstruction",
@@ -121,13 +128,14 @@
   "gtceu.greenhouse": "Greenhouse",
   "gtceu.multiblock.greenhouse.description": "§7A high powered UV ray chamber, capable of mass-growing even the most incomprehensible plants",
 
-  "block.gtceu.extra_large_chemical_reactor": "Extra Large Chemical Reactor",
-  "gtceu.extra_large_chemical_reactor": "Extra Large Chemical Reactor",
-  "gtceu.multiblock.extra_large_chemical_reactor.description": "§7Performs all kinds of chemical reactions at a rate and efficiency previously thought impossible.",
-
   "block.gtceu.discharger": "Discharger",
   "gtceu.discharger": "Dischargement",
   "gtceu.multiblock.discharger.description": "§7Discharges a massive amount of energy to perform recipes",
+
+  "block.gtceu.sculk_biocharger": "Sculk Biocharger",
+  "gtceu.charger": "Advanced Sculk Charging",
+  "gtceu.multiblock.sculk_biocharger.description": "§7A Balance Charger, capable of both Charging and Discharging",
+
 
   "block.gtceu.implosion_collider": "Implosion Collider",
   "gtceu.multiblock.implosion_collider.description": "§7Capable of smashing things together even faster than before.",
@@ -213,7 +221,7 @@
   "material.gtceu.iridosmineyes": "Iridiosmine 80/20",
   "material.gtceu.osmiridiumyes": "Osmiridium 80/20",
   "material.gtceu.kaemanite": "Kaemanite",
-  "material.gtceu.mythril": "§bMana Infused Metal§r",
+  "material.gtceu.mythril": "§bMythril§r",
   "material.gtceu.mana": "Mana Infused",
   "material.gtceu.dark_soularium": "Dark Soularium",
 
@@ -250,7 +258,12 @@
   "material.gtceu.activated_netherite": "Activated Netherite",
   "material.gtceu.omnic_acid": "Omnic Acid",
   "material.gtceu.holmium_oxide": "Holmium Oxide",
-
+  "material.gtceu.sculk_bioalloy": "S.C.U.L.K. Bioalloy",
+  "material.gtceu.waste_gas_mixture": "Waste Gas Mixture",
+  "material.gtceu.eltz": "Eltz",
+  "material.gtceu.eltic_actinate": "Eltic Actinate",
+  "material.gtceu.actinium_iron_oxide": "Actinium Iron Oxide",
+  "material.gtceu.saturated_water": "Saturated Water",
 
   "__HM_PROCESSING__.header": "========================",
   "__HM_PROCESSING__.flufff": "> Hard Mode Processing <",
@@ -326,6 +339,14 @@
   "material.gtceu.guardian_scale_slurry": "Guardian Scale Slurry",
 
 
+  "__CM__.header": "=================",
+  "__CM__.flufff": "> Crystal Matrix Line <",
+  "__CM__.footer": "=================",
+
+  "material.gtceu.acetylene": "Acetylene",
+  "material.gtceu.calcium_carbide": "Calcium Carbide",
+  
+
   "__PECA__.header": "==================",
   "__PECA__.flufff": "> PECA chemicals <",
   "__PECA__.footer": "==================",
@@ -397,12 +418,53 @@
   "material.gtceu.chloroethane": "Chloroethane",
   "material.gtceu.sodium_lead_alloy": "Sodium-Lead Alloy",
 
+  
+  "__NAQFUEL__.header": "========================",
+  "__NAQFUEL__.flufff": "> Liquid Naquadah Fuel Line <",
+  "__NAQFUEL__.footer": "========================",
+
+  "material.gtceu.naq_fuel_t1": "Crude Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t1_depleted": "Depleted Crude Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t2": "Liquid Naquadah Fuel",
+  "material.gtceu.naq_fuel_t2_depleted": "Depleted Liquid Naquadah Fuel",
+  "material.gtceu.naquadah_superfuel": "Naquadah Superfuel",
+  "material.gtceu.naquadah_superfuel_depleted": "Depleted Naquadah Superfuel",
+  "material.gtceu.raw_naquadah_solution": "Raw Naquadah Solution",
+  "material.gtceu.piranha_solution": "Piranha Solution",
+  "material.gtceu.hot_piranha_solution": "Hot Piranha Solution",
+  "material.gtceu.tritium_radon_difluoride": "Tritium Radon Difluoride",
+  "material.gtceu.inert_naquadah_blend": "Inert Naquadah Blend",
+  "material.gtceu.active_naquadah_blend": "Activated Naquadah Isotope Blend",
+  "material.gtceu.light_naquadah_isotope_fraction": "Light Naquadah Isotope Fraction",
+  "material.gtceu.medium_naquadah_isotope_fraction": "Medium Naquadah Isotope Fraction",
+  "material.gtceu.heavy_naquadah_isotope_fraction": "Heavy Naquadah Isotope Fraction",
+  "material.gtceu.naquadah_isotope_sludge": "Naquadah Isotope Sludge",
+  "material.gtceu.cracked_light_naquadah_isotope_fraction": "Neutronium-Cracked Light Naquadah Isotope Fraction",
+  "material.gtceu.cracked_medium_naquadah_isotope_fraction": "Neutronium-Cracked Medium Naquadah Isotope Fraction",
+  "material.gtceu.cracked_heavy_naquadah_isotope_fraction": "Neutronium-Cracked Heavy Naquadah Isotope Fraction",
+  "material.gtceu.cracked_naquadah_isotope_sludge": "Neutronium-Cracked Naquadah Isotope Sludge",
+  "material.gtceu.superheavy_atomic_residue": "Superheavy Atomic Residue",
+  "material.gtceu.heavy_atomic_residue": "Heavy Atomic Residue", 
+  "material.gtceu.purified_heavy_residue": "Purified Heavy Atomic Residue",
+  "material.gtceu.purified_superheavy_residue": "Purified Superheavy Atomic Residue",
+  "material.gtceu.quadium": "Quadium",
+  "material.gtceu.hyperdegenerate_matter":"Hyperdegenerate Matter",
+  "material.gtceu.exotic_particle_solution": "Exotic Particle Solution",
+
+  "__Terbium__.header": "=================",
+  "__Terbium__.flufff": ">    Terbium    <",
+  "__Terbium__.footer": "=================",
+
+  "material.gtceu.ammonium_oxalate": "Ammonium Oxalate",
+  "material.gtceu.ammonium_nitrate": "Ammonium Nitrate",
+  "material.gtceu.thorium_hydroxite": "Thorium Hydroxite",
+  "material.gtceu.magnetic_terbium": "Magnetic Terbium",
 
   "__MISC__.header": "=========",
   "__MISC__.flufff": "> Misc. <",
   "__MISC__.footer": "=========",
 
-  "item.gtceu.mythril_ingot": "§bMana Infused Metal§r",
+  "item.gtceu.mythril_ingot": "§bMythril§r",
   "tagprefix.perfect": "Perfect %s",
   "block.gtceu.shock_proof_cutting_casing": "Shock Proof Casing",
   "curios.identifier.gtceu_magnet": "Magnet",

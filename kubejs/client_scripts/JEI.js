@@ -60,8 +60,7 @@ JEIEvents.hideItems(event => {
     event.hide(['enderio:conduit', 'enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block', "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])
     //EnderIO (grinding balls)
     event.hide(['enderio:soularium_grinding_ball', 'enderio:conductive_alloy_grinding_ball', 'enderio:pulsating_alloy_grinding_ball', 'enderio:redstone_alloy_grinding_ball', 'enderio:energetic_alloy_grinding_ball', 'enderio:vibrant_alloy_grinding_ball', 'enderio:copper_alloy_grinding_ball', 'enderio:dark_steel_grinding_ball', 'enderio:end_steel_grinding_ball'])
-    // Guidebook is just placeholder text
-    event.hide([Item.of('patchouli:guide_book', '{"patchouli:book":"enderio:guide"}')])
+
 
 
     //TelePastries
@@ -173,9 +172,6 @@ JEIEvents.hideItems(event => {
 
     //Sophisticated Experience
     event.hide(/xp_pump_upgrade/)
-
-    // Temp remove packing tape (involved in a dupe glitch)
-    event.hide(/sophisticatedstorage:packing_tape/)
 
     //Greg Milk
     event.hide('gtceu:milk')
