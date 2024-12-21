@@ -577,7 +577,7 @@ compat:
 
     # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
     # Default: true
-    rightToolbar: false
+    rightToolbar: true
 
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true
