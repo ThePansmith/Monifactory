@@ -180,10 +180,6 @@ machines:
   # Default: false
   harmlessActiveTransformers: false
 
-  # Divisor for Recipe Duration per Overclock.
-  # Default: 2.0
-  overclockDivisor: 2.0
-
   # Whether to play machine sounds while machines are active.
   # Default: true
   machineSounds: true
@@ -406,6 +402,11 @@ client:
     # Default: 0
     hudOffsetY: 0
 
+  renderer:
+    # Render fluids in multiblocks that support them?
+    # Default: true
+    renderFluids: true
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage
@@ -482,11 +483,6 @@ gameplay:
   # How much environmental hazards decay per chunk, per tick.
   # Default: 0.001
   environmentalHazardDecayRate: 0.001
-
-  # Whether the GTCEu's ingame guidebook, 'Compass', be enabled.
-  # WARNING: INCOMPLETE
-  # Default: false
-  enableCompass: false
 
 # Config options for Mod Compatibility
 compat:
