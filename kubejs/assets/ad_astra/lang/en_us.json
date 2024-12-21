@@ -31,6 +31,9 @@
     "block.ad_astra.etrium_factory_block": "Diamond Factory Block",
     "block.ad_astra.etrium_panel": "Diamond Panel",
     "block.ad_astra.etrium_plateblock": "Diamond Plateblock",
+    "block.ad_astra.glowing_calorite_pillar": "Glowing Red Alloy Pillar",
+    "block.ad_astra.glowing_desh_pillar": "Glowing Bronze Pillar",
+    "block.ad_astra.glowing_ostrum_pillar": "Glowing Lead Pillar",
     "block.ad_astra.ostrum_block": "Lead Block",
     "block.ad_astra.ostrum_factory_block": "Lead Factory Block",
     "block.ad_astra.ostrum_fluid_pipe": "Lead Fluid Pipe",
@@ -46,5 +49,11 @@
     "block.ad_astra.raw_calorite_block": "Raw Red Alloy Block",
     "block.ad_astra.raw_desh_block": "Raw Bronze Block",
     "block.ad_astra.raw_ostrum_block": "Raw Lead Block",
-    "info.ad_astra.oxygen_loader": " Uses Gregtech Oxygen to fill up space suits and gas tanks."
+    "item.ad_astra.desh_engine": "Tungsten Carbide Engine",
+    "item.ad_astra.ostrum_engine": "Lumium Engine",
+    "item.ad_astra.calorite_engine": "Cryolobus Engine",
+    "item.ad_astra.desh_tank": "Tungsten Carbide Tank",
+    "item.ad_astra.ostrum_tank": "Lumium Tank",
+    "item.ad_astra.calorite_tank": "Cryolobus Tank",
+    "info.ad_astra.oxygen_loader": "Uses Gregtech Oxygen to fill up space suits and gas tanks."
 }
