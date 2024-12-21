@@ -28,7 +28,7 @@ JEIEvents.hideItems(event => {
 
     //snad
     event.hide('snad:soul_snad')
-    if(isExpertMode) {
+    if (isExpertMode) {
         event.hide(['snad:snad', 'snad:red_snad'])
     }
 
@@ -95,6 +95,18 @@ JEIEvents.hideItems(event => {
     event.hide(['gtceu:small_emeradic_empowered_dust', 'gtceu:small_diamatine_empowered_dust', 'gtceu:small_palis_empowered_dust', 'gtceu:small_void_empowered_dust', 'gtceu:small_enori_empowered_dust', 'gtceu:small_restonia_empowered_dust'])
     event.hide(['gtceu:diamatine_perfect', 'gtceu:exquisite_diamatine_gem', 'gtceu:diamatine_dust', 'gtceu:tiny_diamatine_dust', 'gtceu:flawless_diamatine_gem', 'gtceu:diamatine_rod', 'gtceu:diamatine_plate', 'gtceu:small_diamatine_dust', 'gtceu:void_perfect', 'gtceu:exquisite_void_gem', 'gtceu:void_dust', 'gtceu:tiny_void_dust', 'gtceu:flawless_void_gem', 'gtceu:void_rod', 'gtceu:void_plate', 'gtceu:small_void_dust', 'gtceu:emeradic_perfect', 'gtceu:exquisite_emeradic_gem', 'gtceu:emeradic_dust', 'gtceu:tiny_emeradic_dust', 'gtceu:flawless_emeradic_gem', 'gtceu:emeradic_rod', 'gtceu:emeradic_plate', 'gtceu:small_emeradic_dust', 'gtceu:enori_perfect', 'gtceu:exquisite_enori_gem', 'gtceu:enori_dust', 'gtceu:tiny_enori_dust', 'gtceu:flawless_enori_gem', 'gtceu:enori_rod', 'gtceu:enori_plate', 'gtceu:small_enori_dust'])
     event.hide(['gtceu:restonia_perfect', 'gtceu:exquisite_restonia_gem', 'gtceu:restonia_dust', 'gtceu:tiny_restonia_dust', 'gtceu:flawless_restonia_gem', 'gtceu:restonia_rod', 'gtceu:restonia_plate', 'gtceu:small_restonia_dust', 'gtceu:palis_perfect', 'gtceu:exquisite_palis_gem', 'gtceu:palis_dust', 'gtceu:tiny_palis_dust', 'gtceu:flawless_palis_gem', 'gtceu:palis_rod', 'gtceu:palis_plate', 'gtceu:small_palis_dust'])
+
+    // Ad Astra
+    event.hide(['ad_astra:desh_fluid_pipe', 'ad_astra:ostrum_fluid_pipe', 'ad_astra:photovoltaic_etrium_cell', 'ad_astra:photovoltaic_vesnium_cell', 'ad_astra:oxygen_gear', 'ad_astra:engine_frame', 'ad_astra:fan', 'ad_astra:etrionic_capacitor', 'ad_astra:energizer', 'ad_astra:steel_cable', 'ad_astra:desh_cable', 'ad_astra:cable_duct', 'ad_astra:fluid_pipe_duct', 'ad_astra:coal_generator', 'ad_astra:compressor', 'ad_astra:etrionic_blast_furnace', 'ad_astra:fuel_refinery', 'ad_astra:solar_panel', 'ad_astra:water_pump', 'ad_astra:energizer', 'ad_astra:cryo_freezer'])
+    event.hide(/ad_astra:.*_bucket/)
+    event.hide(/ad_astra:.*_block/)
+    event.hide(/ad_astra:.*_ingot/)
+    event.hide(/ad_astra:.*_plate/)
+    event.hide(/ad_astra:.*_nugget/)
+    event.hide(/ad_astra:.*_rod/)
+    event.hide(/ad_astra:.*_ore/)
+    event.hide(/ad_astra:raw_.*/)
+
 
     //NuclearCraft
     event.hide(['nuclearcraft:diosmeter', 'nuclearcraft:steel_frame', 'nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
@@ -166,7 +178,7 @@ JEIEvents.hideItems(event => {
     event.hide("sophisticatedbackpacks:stack_upgrade_starter_tier")
 
     //Sophisticated compacting upgrades
-    if(isExpertMode) {
+    if (isExpertMode) {
         event.hide(/^sophisticated.*(compacting|compression)_upgrade$/)
     }
 
@@ -179,8 +191,6 @@ JEIEvents.hideItems(event => {
     // Posttank stuff
     event.hide(/gtceu:uxv/)
     event.hide(/gtceu:opv/)
-    event.hide(/gcyr:uxv/)
-    event.hide(/gcyr:opv/)
 
     //Greg Hot MV ingots
     event.hide(['gtceu:hot_kanthal_ingot', 'gtceu:hot_silicon_ingot'])
@@ -197,40 +207,30 @@ JEIEvents.hideItems(event => {
     // PEX
     event.hide(['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'])
 
-   // GCYr
-   event.hide(/gcyr:dyson/)
-   event.hide(/gcyr:.*_marker/)
-   event.hide(/gcyr:.*_casing/)
-   event.hide(['gcyr:beam_receiver', 'gcyr:space_elevator_support', 'gcyr:drone_hangar', 'gcyr:space_elevator'])
-
     // Hide debug item(s)
     event.hide('kubejs:debug_ctm_block')
 
     // Hide GT ores to prevent clutter
     GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
         event.hide([
-          `gtceu:granite_${id.name}_ore`,
-          `gtceu:diorite_${id.name}_ore`,
-          `gtceu:andesite_${id.name}_ore`,
-          `gtceu:red_granite_${id.name}_ore`,
-          `gtceu:marble_${id.name}_ore`,
-          `gtceu:deepslate_${id.name}_ore`,
-          `gtceu:tuff_${id.name}_ore`,
-          `gtceu:sand_${id.name}_ore`,
-          `gtceu:red_sand_${id.name}_ore`,
-          `gtceu:gravel_${id.name}_ore`,
-          `gtceu:basalt_${id.name}_ore`,
-          `gtceu:blackstone_${id.name}_ore`,
-          `gtceu:moon_${id.name}_ore`,
-          `gtceu:venus_${id.name}_ore`,
-          `gtceu:mercury_${id.name}_ore`,
-          `gtceu:mars_${id.name}_ore`
+            `gtceu:granite_${id.name}_ore`,
+            `gtceu:diorite_${id.name}_ore`,
+            `gtceu:andesite_${id.name}_ore`,
+            `gtceu:red_granite_${id.name}_ore`,
+            `gtceu:marble_${id.name}_ore`,
+            `gtceu:deepslate_${id.name}_ore`,
+            `gtceu:tuff_${id.name}_ore`,
+            `gtceu:sand_${id.name}_ore`,
+            `gtceu:red_sand_${id.name}_ore`,
+            `gtceu:gravel_${id.name}_ore`,
+            `gtceu:basalt_${id.name}_ore`,
+            `gtceu:blackstone_${id.name}_ore`,
+            `gtceu:moon_${id.name}_ore`,
+            `gtceu:venus_${id.name}_ore`,
+            `gtceu:mercury_${id.name}_ore`,
+            `gtceu:mars_${id.name}_ore`
         ])
-      })
-
-
-    // Hides GCYR ores as its not part of GTMaterialRegistry
-    event.hide(/gcyr:(!netherrack|endstone).*_ore/)
+    })
 })
 
 JEIEvents.addItems(event => {
@@ -268,6 +268,10 @@ JEIEvents.hideFluids(event => {
     ncFluids.forEach(element => {
         event.hide(element)
     })
+
+    // Hide Ad Astra fluids
+    let AAUseless = ['ad_astra:oxygen', 'ad_astra:hydrogen', 'ad_astra:oil', 'ad_astra:fuel', 'ad_astra:cryo_fuel']
+    AAUseless.forEach(liquid => { event.hide(liquid) })
 
     //Hide Thermal fluids
     event.hide("thermal:creosote")

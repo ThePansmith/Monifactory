@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
             '64x gtceu:galena_ore',
             '64x gtceu:galena_ore',
             '64x gtceu:molybdenum_ore',
-            '64x gcyr:moon_sand',
+            '64x ad_astra:moon_sand',
             '64x gtceu:dilithium_ore',
             '64x gtceu:salt_ore')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 8000))

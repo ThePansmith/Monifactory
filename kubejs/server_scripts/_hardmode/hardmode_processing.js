@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         // Kapton K Wetwares
         event.recipes.gtceu.circuit_assembler('kubejs:circuit_assembler/wetware_hm')
             .itemInputs(
-                '16x gcyr:kapton_k_plate',
+                '16x gtceu:kapton_k_plate',
                 'gtceu:petri_dish',
                 'gtceu:luv_electric_pump',
                 'gtceu:iv_sensor',
@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.chemical_bath('bathe_pyrochlore_dust')
             .itemInputs('11x gtceu:pyrochlore_dust')
             .inputFluids('gtceu:hydrofluoric_acid 2000')
-            .itemOutputs('7x gtceu:niobium_pentoxide_dust', 'gtceu:tantalum_pentoxide_dust', '6x gcyr:fluorite_dust')
+            .itemOutputs('7x gtceu:niobium_pentoxide_dust', 'gtceu:tantalum_pentoxide_dust', '6x gtceu:fluorite_dust')
             .outputFluids('minecraft:water 2000')
             .duration(200).EUt(480)
 
@@ -786,43 +786,111 @@ ServerEvents.recipes(event => {
             .itemOutputs('8x kubejs:quantum_flux')
             .duration(100)
             .EUt(480)
+        
+        //Rocketry
+        
+    event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
+        .inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000), Fluid.of('gtceu:chloromethane', 1000))
+        .itemOutputs('24x gtceu:durene_dust')
+        .outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
+        .EUt(120)
+        .duration(120)
 
-        //Commented out in favor of GCYM's chain
+    event.recipes.gtceu.chemical_reactor('dimethylformamide')
+        .inputFluids('gtceu:carbon_monoxide 1000', 'gtceu:dimethylamine 1000')
+        .outputFluids('gtceu:dimethylformamide 1000')
+        .duration(200).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('pyrometillic_dianhydride')
+        .inputFluids('gtceu:durene 250', 'gtceu:oxygen 1500')
+        .outputFluids('gtceu:pyromellitic_dianhydride 250', 'minecraft:water 1500')
+        .duration(400).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('cobalt_bromide')
+        .itemInputs('gtceu:cobalt_dust')
+        .inputFluids('gtceu:bromine 1000', 'gtceu:acetic_acid 1000')
+        .outputFluids('gtceu:cobalt_bromide 1000')
+        .duration(60).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('manganese_bromide')
+        .itemInputs('gtceu:manganese_dust')
+        .inputFluids('gtceu:bromine 1000', 'gtceu:acetic_acid 1000')
+        .outputFluids('gtceu:manganese_bromide 1000')
+        .duration(60).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('manganese_acetate')
+        .itemInputs('gtceu:manganese_dust')
+        .inputFluids('gtceu:acetic_acid 1000')
+        .outputFluids('gtceu:manganese_acetate 1000')
+        .duration(60).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('hydrobromic_acid')
+        .notConsumable('gtceu:platinum_dust')
+        .inputFluids('gtceu:hydrogen 1000', 'gtceu:bromine 1000', 'minecraft:water 1000')
+        .outputFluids('gtceu:hydrobromic_acid 1000')
+        .duration(60).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('co_mn_br_catalyst')
+        .inputFluids('gtceu:cobalt_bromide 1000', 'gtceu:manganese_bromide 1000', 'gtceu:manganese_acetate 1000', 'gtceu:hydrobromic_acid 1000')
+        .outputFluids('gtceu:co_mn_br_catalyst 4000')
+        .duration(100).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('bis_trichloromethyl_benzene')
+        .inputFluids('gtceu:paraxylene 1000', 'gtceu:chlorine 12000')
+        .outputFluids('gtceu:bis_trichloromethyl_benzene 1000', 'gtceu:hydrochloric_acid 6000')
+        .duration(60).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('therephthalic_acid')
+        .inputFluids('gtceu:paraxylene 1000', 'gtceu:oxygen 2000', 'gtceu:co_mn_br_catalyst 1000')
+        .outputFluids('gtceu:terephthalic_acid 1000', 'minecraft:water 1000')
+        .duration(60).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('terephthaloyl_chloride')
+        .inputFluids('gtceu:bis_trichloromethyl_benzene 1000', 'gtceu:terephthalic_acid 1000')
+        .outputFluids('gtceu:terephthaloyl_chloride 2000', 'gtceu:hydrochloric_acid 2000')
+        .duration(60).EUt(480);
+    
+    
+    event.recipes.gtceu.chemical_reactor('para_phenylenediamine')
+        .inputFluids('gtceu:nitroaniline 1000', 'gtceu:hydrogen 6000')
+        .outputFluids('gtceu:para_phenylenediamine 1000', 'minecraft:water 3000')
+        .duration(60).EUt(480);
+    
+    event.recipes.gtceu.chemical_reactor('para_aramid')
+        .inputFluids('gtceu:para_phenylenediamine 1000', 'gtceu:terephthaloyl_chloride 1000')
+        .outputFluids('gtceu:para_aramid 1000', 'gtceu:hydrochloric_acid 2000')
+        .duration(200).EUt(480);
 
-        // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
-        // .inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000), Fluid.of('gtceu:chloromethane', 1000))
-        // .itemOutputs('24x gtceu:durene_dust')
-        // .outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
-        // .EUt(120)
-        // .duration(120)
+        event.recipes.gtceu.chemical_reactor('chloronitrobenzene')
+        .inputFluids('gtceu:chlorobenzene 1000', 'gtceu:nitric_acid 1000')
+        .outputFluids('gtceu:nitrochlorobenzene 1000', 'minecraft:water 1000')
+        .duration(400).EUt(480);
 
-        // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/pyrom_hm')
-        // .inputFluids(Fluid.of('gtceu:oxygen', 6000))
-        // .itemInputs('24x gtceu:durene_dust')
-        // .outputFluids(Fluid.of('minecraft:water', 3000))
-        // .itemOutputs('9x gcyr:pyrometillic_dianhydride_dust')
-        // .EUt(480)
-        // .duration(100)
+        event.recipes.gtceu.chemical_reactor('nitroaniline')
+        .inputFluids('gtceu:nitrochlorobenzene 1000', 'gtceu:ammonia 2000')
+        .outputFluids('gtceu:nitroaniline 1000')
+        .itemOutputs('1x gtceu:ammonium_chloride_dust')
+        .duration(60).EUt(480);
 
-        // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/aminophenol_hm')
-        // .inputFluids(Fluid.of('gtceu:nitrobenzene', 1000), Fluid.of('gtceu:hydrogen', 4000))
-        // .outputFluids(Fluid.of('gtceu:aminophenol', 1000), Fluid.of('minecraft:water', 1000))
-        // .circuit(1)
-        // .EUt(30)
-        // .duration(300)
+        event.recipes.gtceu.chemical_reactor('oxydianiline_sludge')
+        .inputFluids('gtceu:aminophenol 1000', 'gtceu:nitrochlorobenzene 1000', 'gtceu:dimethylformamide 1000')
+        .itemInputs('1x gtceu:potassium_carbonate_dust')
+        .outputFluids('gtceu:oxydianiline_sludge 250', 'minecraft:water 1500')
+        .duration(400).EUt(480);
+    
+    event.recipes.gtceu.distillation_tower('distill_oxydianiline_sludge')
+        .inputFluids('gtceu:oxydianiline_sludge 1000')
+        .outputFluids('gtceu:dimethylformamide 1000', 'gtceu:oxydianiline 144')
+        .duration(200).EUt(480);
 
-        // event.recipes.gtceu.large_chemical_reactor("kubejs:large_chemical_reactor/oxydianiline_dust")
-        // .notConsumable("gtceu:saltpeter_dust")
-        // .inputFluids(Fluid.of('gtceu:aminophenol', 1000), Fluid.of('gtceu:nitrochlorobenzene', 1000), Fluid.of('gtceu:water', 1000))
-        // .outputFluids(Fluid.of('gtceu:oxygen', 3000), Fluid.of('gtceu:hydrochloric_acid', 1000))
-        // .itemOutputs('27x gtceu:oxydianiline_dust')
-        // .duration(200)
-        // .EUt(21000)
+        event.recipes.gtceu.chemical_reactor('potassium_hydroxide')
+        .inputFluids('gtceu:durene 250', 'gtceu:oxygen 1500')
+        .outputFluids('gtceu:pyromellitic_dianhydride 250', 'minecraft:water 1500')
+        .duration(400).EUt(480);
 
-        // event.recipes.gtceu.alloy_smelter('kubejs:kaptonk')
-        // .itemInputs('3x gtceu:oxydianiline_dust', '2x gcyr:pyrometillic_dianhydride_dust')
-        // .itemOutputs('gtceu:kapton_k_ingot')
-        // .duration(30)
-        // .EUt(7680)
+        event.recipes.gtceu.chemical_reactor('kapton_k')
+        .inputFluids('gtceu:pyromellitic_dianhydride 1000', 'gtceu:oxydianiline 1000')
+        .outputFluids('gtceu:kapton_k 1000')
+        .duration(400).EUt(480);
     }
 });

@@ -252,12 +252,6 @@
             "category": "create:block_cutting" 
         },
         {
-            "category": "gcyr:dyson_controller" 
-        },
-        {
-            "category": "gcyr:space_elevator" 
-        },
-        {
             "category": "enderio:sagmilling" 
         }
     ]
