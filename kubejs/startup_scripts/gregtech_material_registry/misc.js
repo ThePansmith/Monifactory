@@ -35,6 +35,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xf9fbda)
         .components('1x calcium', '2x chlorine', '8x oxygen')
+
+    event.create('fluorite')
+        .gem()
+        .ore()
+        .color(0x0c9949)
+        .iconSet('diamond')
+        .components('1x calcium', '2x fluorine')
+        .addOreByproducts('calcium', 'fluorine')
 })
 
 
@@ -188,6 +196,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x666677)
         .components('10x carbon_monoxide', '5x chloroethane', '7x ammonium_formate', '9x dinitrogen_tetroxide', '2x neon', '1x tritium')
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+
+        event.create('trinaquadalloy')
+        .fluid()
+        .ingot()
+        .color(0x281832)
+        .iconSet('bright')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
+        .components('6x trinium', '2x naquadah', '1x carbon')
+        .blastTemp(8747, 'higher', 131072, 1200)
 })
 
 GTCEuStartupEvents.materialModification(event => {
