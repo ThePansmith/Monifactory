@@ -199,13 +199,41 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["7A3F3FB2774A4632"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"7A3F3FB2774A4632"
+			]
 			description: ["Split your &6Clay Dust&r to make &6Sodium Dust&r, &6Silicon Dust&r, &6Lithium Dust&r, and &6Aluminium Dust&r.&r This is extremely important to passive, as you will need a lot of these resources, and this is the best way to get them."]
+			hide_until_deps_visible: true
 			id: "1D4B663AD87CA3C1"
 			subtitle: "&oThis step requires a Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "78F2F922F7B7F0EA"
-				item: "gtceu:sodium_dust"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:sodium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lithium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:aluminium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:silicon_dust"
+							}
+						]
+					}
+				}
+				title: "Sodium, Silicon, Lithium, or Aluminium Dust"
 				type: "item"
 			}]
 			title: "Sodium, Silicon, Lithium and Aluminium"
@@ -473,15 +501,36 @@
 			subtitle: "&oThis step requires a Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "5E475348CEFAFBBF"
-				item: "gtceu:silicon_dust"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:silicon_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:oxygen_bucket"
+							}
+						]
+					}
+				}
+				title: "Silicon Dust or Oxygen Bucket"
 				type: "item"
 			}]
+			title: "Silicon and Oxygen"
 			x: 11.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["33351123F08D92BE"]
+			dependencies: [
+				"57E7182198B2EA9A"
+				"33351123F08D92BE"
+			]
 			description: ["Turn your &6Glass&r into &6Quartz&r. An &3Arc Furnace&r making &6Glass&r supports 2.5 &3Electrolyzers&r of the same tier. You will need a lot of &6Quartz&r, so it's crucial that you passive this."]
+			hide_until_deps_visible: true
 			id: "6792DF5F9F320B98"
 			subtitle: "&oThis step requires a Electrolyzer at voltage &lLV&r&o or higher.&r"
 			tasks: [{
@@ -617,6 +666,48 @@
 			title: "Water"
 			x: 3.5d
 			y: -6.0d
+		}
+		{
+			dependencies: [
+				"1F7F73BF81570F3C"
+				"7A3F3FB2774A4632"
+			]
+			description: ["Split your &6Clay Dust&r to make &6Sodium Dust&r, &6Silicon Dust&r, &6Lithium Dust&r, and &6Aluminium Dust&r.&r This is extremely important to passive, as you will need a lot of these resources, and this is the best way to get them."]
+			hide_until_deps_visible: true
+			id: "2664406B3CD20703"
+			subtitle: "&oThis step requires a Electrolyzer at voltage &lMV&r&o or higher.&r"
+			tasks: [{
+				id: "4F2994BE3E9A9D23"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:sodium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lithium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:aluminium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:silicon_dust"
+							}
+						]
+					}
+				}
+				title: "Sodium, Silicon, Lithium, or Aluminium Dust"
+				type: "item"
+			}]
+			title: "Sodium, Silicon, Lithium and Aluminium"
+			x: 11.5d
+			y: -7.5d
 		}
 	]
 	title: "Processing Lines"

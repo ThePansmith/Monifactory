@@ -1,5 +1,9 @@
 #With this disabled chests are essentially locked to the crafted color as dyes will no longer work
 enable_in_world_coloring = true
+#When linking stacked bags:
+#True = all of them will be linked
+#False = one at a time will be linked
+full_stack_linking = true
 
 #Item used to upgrade the EnderChests
 [upgrade_item_tags]

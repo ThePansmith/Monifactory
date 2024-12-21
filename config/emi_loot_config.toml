@@ -1,0 +1,38 @@
+# Don't change this! Version used to track needed updates.
+version = 1
+debugMode = false
+parseChestLoot = true
+parseBlockLoot = false
+parseMobLoot = true
+parseGameplayLoot = true
+parseArchaeologyLoot = true
+skippedKeys = [
+    "emi_loot.function.fill_player_head",
+    "emi_loot.function.set_count_add",
+    "emi_loot.function.limit_count",
+    "emi_loot.no_conditions",
+    "emi_loot.function.set_count_set"
+]
+chestLootAlwaysStackSame = false
+mobLootIncludeDirectDrops = true
+chanceDecimalPlaces = 1
+conditionStyle = "default"
+
+[debugModes]
+block = false
+chest = false
+mob = false
+gameplay = false
+archaeology = false
+
+[compactLoot]
+block = true
+chest = true
+mob = true
+gameplay = true
+archaeology = true
+
+[logUnstranslatedTables]
+chest = false
+gameplay = false
+archaeology = false

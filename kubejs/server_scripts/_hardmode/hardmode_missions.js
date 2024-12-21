@@ -311,26 +311,5 @@ ServerEvents.recipes(event => {
             )
             .duration(450*20)
             .EUt(250000)
-
-    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
-        .itemInputs(
-            'kubejs:microminer_t9',
-            '8x gtceu:neutron_reflector',
-            '4x gtceu:cryococcus_block',
-            'kubejs:stellar_creation_data'
-        )
-        .itemOutputs(
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget'
-        )
-        .duration(3000)
-        .EUt(250000)
     }
 })

@@ -12,6 +12,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			id: "57E7182198B2EA9A"
 			invisible: true
 			rewards: [
@@ -45,6 +46,7 @@
 			y: -0.25d
 		}
 		{
+			disable_toast: true
 			id: "2EC4EF1BEEA578F3"
 			invisible: true
 			rewards: [
@@ -79,6 +81,7 @@
 		}
 		{
 			description: ["This little setup is used to unlock quests specific to certain modes, such as HNN chain."]
+			disable_toast: true
 			icon: "minecraft:oak_sign"
 			id: "7DC209D400BCD708"
 			subtitle: "uh oh"
@@ -92,6 +95,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			hide_until_deps_visible: true
 			id: "6BBACA979DF9BA30"
 			rewards: [{
@@ -111,6 +115,7 @@
 			y: -1.5d
 		}
 		{
+			disable_toast: true
 			hide_until_deps_visible: true
 			id: "7F34A1A10CD8E058"
 			rewards: [{
@@ -130,6 +135,7 @@
 			y: -1.5d
 		}
 		{
+			disable_toast: true
 			hide_until_deps_visible: true
 			id: "57AB012919A985A2"
 			rewards: [{
@@ -149,6 +155,7 @@
 			y: -1.5d
 		}
 		{
+			disable_toast: true
 			id: "0B37518A984D386F"
 			invisible: true
 			rewards: [
@@ -190,6 +197,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [""]
+			disable_toast: true
 			hide_dependency_lines: false
 			id: "1F7F73BF81570F3C"
 			invisible: true
@@ -209,7 +217,7 @@
 				}
 			]
 			title: "&eNot NM"
-			x: 0.625d
+			x: 1.25d
 			y: 1.0d
 		}
 		{
@@ -219,6 +227,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [""]
+			disable_toast: true
 			hide_dependency_lines: false
 			id: "68CB6AD16F1041E5"
 			invisible: true
@@ -238,7 +247,7 @@
 				}
 			]
 			title: "&eNot EM"
-			x: -0.675d
+			x: -1.25d
 			y: 1.0d
 		}
 	]

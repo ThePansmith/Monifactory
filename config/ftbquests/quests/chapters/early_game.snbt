@@ -1153,7 +1153,7 @@
 		{
 			dependencies: ["5C78349343BA40D7"]
 			description: [
-				"&6Silicon&r in its solid form is required to produce &6Transistors&r, which are required for &6HV Circuits&r. Notice that the recipe for a &6Hot Silicon Ingot&r calls for &d2,273 K&r. This is why we built &6Kanthal Coils&r earlier - &6Cupronickel Coils&r can't reach that temperature."
+				"&6Silicon&r in its solid form is required to produce &6Transistors&r, which are required for &6HV Circuits&r. Notice that the recipe for a &6Silicon Ingot&r calls for &d2,273 K&r. This is why we built &6Kanthal Coils&r earlier - &6Cupronickel Coils&r can't reach that temperature."
 				""
 				"Directly heating &6Silicon Dust&r you get from Electrolyzing various materials is an option, but a slow and energy-hungry one. An alterative method is to obtain &6Silicon Dioxide Dust&r by repurposing &6Glass&r you're producing, and heating it with &6Carbon Dust&r. This produces &6Silicon Ingots &dover 5x&r faster, with a side of &eCarbon Monoxide&r for use in various chemical processes."
 			]
@@ -2259,7 +2259,22 @@
 			subtitle: "Because waiting for items to charge is so last version"
 			tasks: [{
 				id: "6BB55ED56C49A2B0"
-				item: "wirelesschargers:basic_wireless_player_charger"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "wirelesschargers:basic_wireless_player_charger"
+							}
+							{
+								Count: 1b
+								id: "wirelesschargers:advanced_wireless_player_charger"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "&9Charging Items Wirelessly"
@@ -2318,13 +2333,13 @@
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
-				"Also important to note is that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
+				"Also important to note is that it won't work with Tile Entities, so it pretty much only works with simple blocks (not stuff like machines)."
+				"{@pagebreak}"
+				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will pull items from the inventory, 'connecting' the gadget to the inventory."
 				""
-				"A very cool feature of this mod is how you can &9shift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &9pull items from the inventory&r, 'connecting' the gadget to the inventory."
+				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r, the gadget will use &6Cobblestone&r from that chest to place blocks."
 				""
-				"For example, if you shift-right click a chest full of cobblestone, the gadget will use cobblestone from that chest to place blocks."
-				""
-				"By default, the config GUI is bound to &6G&r."
+				"By default, the config GUI is bound to &8G&r."
 			]
 			icon: "buildinggadgets2:gadget_building"
 			id: "5F9C7FB40AD2640B"

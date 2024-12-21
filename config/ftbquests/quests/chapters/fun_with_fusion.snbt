@@ -1041,7 +1041,7 @@
 				}
 				{
 					id: "09E3C1019A70EAB5"
-					item: "gtceu:data_transmitter_hatch"
+					item: "gtceu:computation_transmitter_hatch"
 					type: "item"
 				}
 			]

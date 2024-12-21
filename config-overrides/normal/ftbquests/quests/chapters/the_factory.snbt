@@ -761,7 +761,7 @@
 				}
 				{
 					id: "37B26D17B2B13DDE"
-					item: "redstone_clock:redstone_clock"
+					item: "redstoneclock:redstone_clock"
 					type: "item"
 				}
 				{
@@ -2213,7 +2213,26 @@
 			id: "3E4DEA4FFD019AB9"
 			tasks: [{
 				id: "4355F32860B92456"
-				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedstorage:basic_to_diamond_tier_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:iron_to_diamond_tier_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "&9Upgrades, people, upgrades."
