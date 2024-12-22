@@ -113,8 +113,8 @@ StartupEvents.registry('item', event => {
     event.create('pressure_layer')
     event.create('thermal_cloth')
     event.create('unprepared_space_helmet')
-    event.create('unprepared_space_chestpiece')
-    event.create('unprepared_space_leggings')
+    event.create('unprepared_space_suit')
+    event.create('unprepared_space_pants')
     event.create('unprepared_space_boots')
 
 
@@ -373,7 +373,7 @@ StartupEvents.registry('item', event => {
     event.create('carbon_nanotubes').texture('kubejs:item/matrix/carbon_nanotubes')
     event.create('porous_matrix_mesh').texture('kubejs:item/matrix/porous_matrix_mesh')
     event.create('dense_matrix_mesh').texture('kubejs:item/matrix/dense_matrix_mesh')
-    
+
     // Terbium Line
     event.create('rare_earth_sulfate').texture('kubejs:item/terbium/rare_earth_sulfate')
     event.create('rare_earth_oxide').texture('kubejs:item/terbium/rare_earth_oxide')
