@@ -1701,7 +1701,7 @@
 			y: 19.25d
 		}
 		{
-			description: ["{moni.quest.63CFADCCE0688239.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "63CFADCCE0688239"
@@ -1714,12 +1714,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.63CFADCCE0688239.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -7.0d
 			y: 17.0d
 		}
 		{
-			description: ["{moni.quest.7D50B0E825F8D70B.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7D50B0E825F8D70B"
@@ -1732,12 +1732,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.7D50B0E825F8D70B.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -8.5d
 			y: 11.75d
 		}
 		{
-			description: ["{moni.quest.6564ADDBABF7DB49.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6564ADDBABF7DB49"
@@ -1750,12 +1750,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.6564ADDBABF7DB49.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -4.0d
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.75FDDFCD19B1614C.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "75FDDFCD19B1614C"
@@ -1768,12 +1768,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.75FDDFCD19B1614C.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -7.0d
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.1DD6F43254B077E1.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1DD6F43254B077E1"
@@ -1786,12 +1786,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.1DD6F43254B077E1.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 0.5d
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.3CFF422D1BAAEB65.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "3CFF422D1BAAEB65"
@@ -1804,12 +1804,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.3CFF422D1BAAEB65.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 2.0d
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.7BEAC81200BD7563.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7BEAC81200BD7563"
@@ -1822,12 +1822,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.7BEAC81200BD7563.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 3.5d
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.441BD16D32E88974.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "441BD16D32E88974"
@@ -1840,12 +1840,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.441BD16D32E88974.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -4.0d
 			y: 11.75d
 		}
 		{
-			description: ["{moni.quest.275EB687F851025B.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "275EB687F851025B"
@@ -1858,12 +1858,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.275EB687F851025B.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
 			y: 11.75d
 		}
 		{
-			description: ["{moni.quest.7978CD633112BE89.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7978CD633112BE89"
@@ -1876,12 +1876,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.7978CD633112BE89.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
 			y: 10.25d
 		}
 		{
-			description: ["{moni.quest.721D1C6CA8C2AF22.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "721D1C6CA8C2AF22"
@@ -1894,12 +1894,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.721D1C6CA8C2AF22.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 8.75d
 		}
 		{
-			description: ["{moni.quest.39999DC07696B3FC.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "39999DC07696B3FC"
@@ -1912,12 +1912,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.39999DC07696B3FC.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -4.0d
 			y: 10.25d
 		}
 		{
-			description: ["{moni.quest.47E4558362202D5D.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "47E4558362202D5D"
@@ -1930,12 +1930,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.47E4558362202D5D.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -8.5d
 			y: 10.25d
 		}
 		{
-			description: ["{moni.quest.21000D112770C852.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "21000D112770C852"
@@ -1948,12 +1948,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.21000D112770C852.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -13.0d
 			y: 10.25d
 		}
 		{
-			description: ["{moni.quest.28558A445F62D737.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "28558A445F62D737"
@@ -1966,12 +1966,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.28558A445F62D737.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -8.5d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.1D5D25F52BE6709E.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1D5D25F52BE6709E"
@@ -1984,12 +1984,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.1D5D25F52BE6709E.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -10.0d
 			y: 17.0d
 		}
 		{
-			description: ["{moni.quest.65F05B1B1A57D341.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "65F05B1B1A57D341"
@@ -2002,12 +2002,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.65F05B1B1A57D341.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -10.0d
 			y: 8.75d
 		}
 		{
-			description: ["{moni.quest.62AAA344BBAA638C.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "62AAA344BBAA638C"
@@ -2020,12 +2020,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.62AAA344BBAA638C.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -11.5d
 			y: 10.25d
 		}
 		{
-			description: ["{moni.quest.76B613A95DFDD41D.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "76B613A95DFDD41D"
@@ -2038,12 +2038,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.76B613A95DFDD41D.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -13.0d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.44F585590EB4C28C.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "44F585590EB4C28C"
@@ -2056,12 +2056,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.44F585590EB4C28C.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 10.25d
 		}
 		{
-			description: ["{moni.quest.26E51AB9E31378EE.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "26E51AB9E31378EE"
@@ -2074,12 +2074,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.26E51AB9E31378EE.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -7.0d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.1E752C53A107FFF1.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1E752C53A107FFF1"
@@ -2092,12 +2092,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.1E752C53A107FFF1.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -5.5d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.494F5DDE304AB43E.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "494F5DDE304AB43E"
@@ -2110,12 +2110,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.494F5DDE304AB43E.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 11.75d
 		}
 		{
-			description: ["{moni.quest.32326CF76577DCA2.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "32326CF76577DCA2"
@@ -2128,12 +2128,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.32326CF76577DCA2.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 5.0d
 			y: 11.75d
 		}
 		{
-			description: ["{moni.quest.07C3BF79504A9213.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "07C3BF79504A9213"
@@ -2146,12 +2146,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.07C3BF79504A9213.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -4.0d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.28D99F6FE6773536.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "28D99F6FE6773536"
@@ -2164,12 +2164,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.28D99F6FE6773536.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 8.0d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.1DAA388973010872.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1DAA388973010872"
@@ -2182,12 +2182,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.1DAA388973010872.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.6B0F050E08449326.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6B0F050E08449326"
@@ -2200,12 +2200,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.6B0F050E08449326.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 12.5d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.46D5DFC5AFEC58AD.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "46D5DFC5AFEC58AD"
@@ -2218,12 +2218,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.46D5DFC5AFEC58AD.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -2.5d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.3ACAFC347DACFC8D.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "3ACAFC347DACFC8D"
@@ -2236,12 +2236,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.3ACAFC347DACFC8D.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -1.0d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.041AFDD081C8054C.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "041AFDD081C8054C"
@@ -2254,12 +2254,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.041AFDD081C8054C.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 5.0d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.62D5330EF33F11E7.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "62D5330EF33F11E7"
@@ -2272,12 +2272,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.62D5330EF33F11E7.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 2.0d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.1B3F950BEE44BAEC.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1B3F950BEE44BAEC"
@@ -2290,12 +2290,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.1B3F950BEE44BAEC.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 3.5d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.20573874CE130F4B.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "20573874CE130F4B"
@@ -2308,12 +2308,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.20573874CE130F4B.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 6.5d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.13E958AA3A6CCE85.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "13E958AA3A6CCE85"
@@ -2326,12 +2326,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.13E958AA3A6CCE85.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.7E34C410DF281917.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7E34C410DF281917"
@@ -2344,12 +2344,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.7E34C410DF281917.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 5.0d
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.19813D769E0693EA.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "19813D769E0693EA"
@@ -2362,12 +2362,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.19813D769E0693EA.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 6.5d
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.247CCB1BC2E7C27C.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "247CCB1BC2E7C27C"
@@ -2380,12 +2380,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.247CCB1BC2E7C27C.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 6.5d
 			y: 17.0d
 		}
 		{
-			description: ["{moni.quest.6F28EB00ECF74C9D.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6F28EB00ECF74C9D"
@@ -2398,12 +2398,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.6F28EB00ECF74C9D.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 8.0d
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.69DEA8612D70B2DE.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "69DEA8612D70B2DE"
@@ -2416,12 +2416,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.69DEA8612D70B2DE.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 8.0d
 			y: 17.0d
 		}
 		{
-			description: ["{moni.quest.6AB1F7A04FF5D1B5.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6AB1F7A04FF5D1B5"
@@ -2434,12 +2434,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.6AB1F7A04FF5D1B5.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.31125F2DDD953CDD.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "31125F2DDD953CDD"
@@ -2452,12 +2452,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.31125F2DDD953CDD.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 17.0d
 		}
 		{
-			description: ["{moni.quest.1465C7BE81304747.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1465C7BE81304747"
@@ -2470,12 +2470,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.1465C7BE81304747.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
 			y: 17.0d
 		}
 		{
-			description: ["{moni.quest.4CF5155563E346BE.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "4CF5155563E346BE"
@@ -2488,7 +2488,7 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "{moni.quest.4CF5155563E346BE.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: -11.5d
 			y: 13.25d
 		}
