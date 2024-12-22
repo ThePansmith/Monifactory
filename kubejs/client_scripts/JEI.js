@@ -83,7 +83,8 @@ JEIEvents.hideItems(event => {
     event.hide('solarflux:blazing_coating')
 
     // AE
-    event.hide(['ae2:facade', 'ae2:vibration_chamber'])
+    event.hide('ae2:vibration_chamber')
+    event.hide(/ae2:facade/)
     event.hide(/megacells:.*mega_interface/)
     event.hide(/megacells:.*mega_pattern_provider/)
     event.hide(/megacells:sky_steel/)

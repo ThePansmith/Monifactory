@@ -8,22 +8,11 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.dimensions('javd:void')
         vein.fluid(() => Fluid.of("gtceu:oil_medium").fluid)
         vein.weight(100)
-        vein.minimumYield(300)
-        vein.maximumYield(200)
+        vein.minimumYield(200)
+        vein.maximumYield(250)
         vein.depletionAmount(1)
-        vein.depletionChance(25)
-        vein.depletedYield(100)
-    })
-
-    event.add('kubejs:void/oil', vein => {
-        vein.dimensions('javd:void')
-        vein.fluid(() => Fluid.of("gtceu:oil").fluid)
-        vein.weight(20)
-        vein.minimumYield(350)
-        vein.maximumYield(225)
-        vein.depletionAmount(1)
-        vein.depletionChance(25)
-        vein.depletedYield(100)
+        vein.depletionChance(50)
+        vein.depletedYield(3)
     })
 
     
