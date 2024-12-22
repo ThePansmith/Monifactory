@@ -271,8 +271,7 @@ JEIEvents.hideFluids(event => {
     })
 
     // Hide Ad Astra fluids
-    let AAUseless = ['ad_astra:oxygen', 'ad_astra:hydrogen', 'ad_astra:oil', 'ad_astra:fuel', 'ad_astra:cryo_fuel']
-    AAUseless.forEach(liquid => { event.hide(liquid) })
+    Fluid.getTypes().filter(id=>id.includes("ad_astra")).forEach(id => event.hide(id))
 
     //Hide Thermal fluids
     event.hide("thermal:creosote")
