@@ -1741,7 +1741,11 @@
 		}
 		{
 			dependencies: ["14F1FF4656693711"]
-			description: ["{moni.quest.49C8716030809478.description1}"]
+			description: [
+				"{moni.quest.49C8716030809478.description1}"
+				""
+				"{moni.quest.49C8716030809478.description2}"
+			]
 			icon: "extendedcrafting:crafting_core"
 			id: "49C8716030809478"
 			rewards: [{
