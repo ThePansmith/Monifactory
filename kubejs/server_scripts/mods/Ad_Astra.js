@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped(
-        'kubejs:unprepared_space_chestpiece', [
+        'kubejs:unprepared_space_suit', [
         'T T',
         'TTT',
         'TTT'
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped(
-        'kubejs:unprepared_space_leggings', [
+        'kubejs:unprepared_space_pants', [
         'TTT',
         'T T',
         'T T'
@@ -403,4 +403,4 @@ ServerEvents.recipes(event => {
             "structure": "ad_astra:space_station"
         })
     })
-})  
+})

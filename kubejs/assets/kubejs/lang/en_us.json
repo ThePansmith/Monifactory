@@ -249,8 +249,8 @@
   "item.kubejs.pressure_layer": "Pressure Layer",
   "item.kubejs.thermal_cloth": "Thermal Cloth",
   "item.kubejs.unprepared_space_helmet": "Unprepared Space Helmet",
-  "item.kubejs.unprepared_space_chestpiece": "Unprepared Space Chestpiece",
-  "item.kubejs.unprepared_space_leggings": "Unprepared Space Leggings",
+  "item.kubejs.unprepared_space_chestpiece": "Unprepared Space Suit",
+  "item.kubejs.unprepared_space_leggings": "Unprepared Space Pants",
   "item.kubejs.unprepared_space_boots": "Unprepared Space Boots",
 
   "item.kubejs.impossible_realm_data": "§bImpossible Realm Data",
