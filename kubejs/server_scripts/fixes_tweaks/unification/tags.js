@@ -119,10 +119,10 @@ ServerEvents.tags('fluid', event => {
     event.removeAllTagsFrom('thermal:glowstone')
     event.removeAllTagsFrom('thermal:redstone')
     event.removeAllTagsFrom('cofh_core:experience')
-    
+
+    Fluid.getTypes().filter(id=>id.includes("ad_astra")).forEach(id => event.removeAllTagsFrom(id))
     // Rocket Fuels
-    const fuels = ['ad_astra:fuel', 'ad_astra:cryo_fuel', 'gtceu:diesel'];
-    event.removeAllTagsFrom(fuels)
+    event.removeAll('ad_astra:fuel');
     event.add('ad_astra:fuel', 'gtceu:rocket_fuel')
 
 })
