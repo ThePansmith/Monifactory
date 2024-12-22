@@ -14,7 +14,7 @@ because the Infinity material had infinite mass.
 GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('omnium', 130, 234, -1, null, 'Nm', false)
     event.create('infinity', 168, 316, -1, null, '∞', false);
-    event.create('monium', 69, 420, -1, null, 'Mu', false);
+    event.create('monium', 169, 317, -1, null, 'Mu', false);
     event.create('crystal_matrix', 6, 6, -1, null, 'C*', false);
     event.create('eltz', 15, 15, -1, null, 'Ez', false)
 })
