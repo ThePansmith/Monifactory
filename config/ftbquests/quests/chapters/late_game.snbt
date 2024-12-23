@@ -2383,7 +2383,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["3574ABD41E90CA00"]
 			description: ["Double Plates used exclusively for the Tier Eight and Tier Eleven Micro Miners."]
 			id: "6391447F1A411281"
 			rewards: [{
