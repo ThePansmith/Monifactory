@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
     // Launch Pad
     event.remove({ id: 'ad_astra:launch_pad' })
     event.recipes.gtceu.assembler("ad_astra:launch_pad")
-        .itemInputs("9x gtceu:dense_steel_plate", "9x gtceu:concrete_dust")
+        .itemInputs("9x gtceu:dense_steel_plate", "27x gtceu:concrete_dust")
         .itemOutputs("ad_astra:launch_pad")
         .duration(300)
         .EUt(30)
