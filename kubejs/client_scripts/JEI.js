@@ -98,7 +98,7 @@ JEIEvents.hideItems(event => {
     event.hide(['gtceu:restonia_perfect', 'gtceu:exquisite_restonia_gem', 'gtceu:restonia_dust', 'gtceu:tiny_restonia_dust', 'gtceu:flawless_restonia_gem', 'gtceu:restonia_rod', 'gtceu:restonia_plate', 'gtceu:small_restonia_dust', 'gtceu:palis_perfect', 'gtceu:exquisite_palis_gem', 'gtceu:palis_dust', 'gtceu:tiny_palis_dust', 'gtceu:flawless_palis_gem', 'gtceu:palis_rod', 'gtceu:palis_plate', 'gtceu:small_palis_dust'])
 
     // Ad Astra
-    event.hide(['ad_astra:desh_fluid_pipe', 'ad_astra:ostrum_fluid_pipe', 'ad_astra:photovoltaic_etrium_cell', 'ad_astra:photovoltaic_vesnium_cell', 'ad_astra:engine_frame', 'ad_astra:fan', 'ad_astra:etrionic_capacitor', 'ad_astra:energizer', 'ad_astra:steel_cable', 'ad_astra:desh_cable', 'ad_astra:cable_duct', 'ad_astra:fluid_pipe_duct', 'ad_astra:coal_generator', 'ad_astra:compressor', 'ad_astra:etrionic_blast_furnace', 'ad_astra:fuel_refinery', 'ad_astra:solar_panel', 'ad_astra:water_pump', 'ad_astra:energizer', 'ad_astra:cryo_freezer'])
+    event.hide(['ad_astra:desh_fluid_pipe', 'ad_astra:ostrum_fluid_pipe', 'ad_astra:photovoltaic_etrium_cell', 'ad_astra:photovoltaic_vesnium_cell', 'ad_astra:engine_frame', 'ad_astra:fan', 'ad_astra:etrionic_capacitor', 'ad_astra:etrionic_core', 'ad_astra:energizer', 'ad_astra:steel_cable', 'ad_astra:desh_cable', 'ad_astra:cable_duct', 'ad_astra:fluid_pipe_duct', 'ad_astra:coal_generator', 'ad_astra:compressor', 'ad_astra:etrionic_blast_furnace', 'ad_astra:fuel_refinery', 'ad_astra:solar_panel', 'ad_astra:water_pump', 'ad_astra:energizer', 'ad_astra:cryo_freezer'])
     event.hide(/ad_astra:.*_bucket/)
     event.hide(/ad_astra:.*_block/)
     event.hide(/ad_astra:.*_ingot/)
