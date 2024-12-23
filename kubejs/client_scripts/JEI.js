@@ -100,9 +100,8 @@ JEIEvents.hideItems(event => {
     // Ad Astra
     event.hide(['ad_astra:desh_fluid_pipe', 'ad_astra:ostrum_fluid_pipe', 'ad_astra:photovoltaic_etrium_cell', 'ad_astra:photovoltaic_vesnium_cell', 'ad_astra:engine_frame', 'ad_astra:fan', 'ad_astra:etrionic_capacitor', 'ad_astra:etrionic_core', 'ad_astra:energizer', 'ad_astra:steel_cable', 'ad_astra:desh_cable', 'ad_astra:cable_duct', 'ad_astra:fluid_pipe_duct', 'ad_astra:coal_generator', 'ad_astra:compressor', 'ad_astra:etrionic_blast_furnace', 'ad_astra:fuel_refinery', 'ad_astra:solar_panel', 'ad_astra:water_pump', 'ad_astra:energizer', 'ad_astra:cryo_freezer'])
     event.hide(/ad_astra:.*_bucket/)
-    event.hide(/ad_astra:.*_block/)
     event.hide(/ad_astra:.*_ingot/)
-    event.hide(/ad_astra:.*_plate/)
+    event.hide(/ad_astra:.*_plate$/)
     event.hide(/ad_astra:.*_nugget/)
     event.hide(/ad_astra:.*_rod/)
     event.hide(/ad_astra:.*_ore/)

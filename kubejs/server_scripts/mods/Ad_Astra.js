@@ -346,6 +346,7 @@ ServerEvents.recipes(event => {
         event.stonecutting(`ad_astra:${material}_plateblock`, `ad_astra:${material}_panel`)
         event.stonecutting(`ad_astra:encased_${material}_block`, `ad_astra:${material}_panel`)
         event.stonecutting(`ad_astra:${material}_factory_block`, `ad_astra:${material}_panel`)
+        if(material != 'iron') event.stonecutting(`ad_astra:${material}_block`, `ad_astra:${material}_panel`)
     })
 
     event.shaped(
