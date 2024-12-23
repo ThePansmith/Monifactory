@@ -177,6 +177,9 @@
             "category": "emi_loot:gameplay_drops"
         },
         {
+            "category": "emi_loot:block_drops"
+        },
+        {
             "category": "minecraft:alchemy_bench"
         },
         {
@@ -250,12 +253,6 @@
         },
         {
             "category": "create:block_cutting" 
-        },
-        {
-            "category": "gcyr:dyson_controller" 
-        },
-        {
-            "category": "gcyr:space_elevator" 
         },
         {
             "category": "enderio:sagmilling" 

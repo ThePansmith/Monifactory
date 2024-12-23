@@ -85,7 +85,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0x58649B)
         .components('1x lead', '1x sodium')
-    
+
     // Crystal Matrix Line
     event.create('acetylene')
         .gas()
@@ -174,18 +174,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 // Modify materials' compositions
 GTCEuStartupEvents.materialModification(() => {
-    GTMaterials.get('butanol').setFormula('C4H9OH');
-    GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO');
+    GTMaterials.get('butanol').setFormula('C4H9OH')
+    GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO')
 
     // Scaleline intermediates
-    GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HCl)2Mn2TaC?');
-    GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HCl)2Mn2');
+    GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HCl)2Mn2TaC?')
+    GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HCl)2Mn2')
     GTMaterials.get('graphitic_tantalum').setFormula('TaC')
     GTMaterials.get('hydrofluoric_graphitic_tantalum_solution').setFormula('(HF)2TaC')
     GTMaterials.get('hydrofluoric_tantalum_solution').setFormula('(HF)2Ta')
 
     // JEAN gasoline intermediates
-    GTMaterials.get('tetraethyllead').setFormula('Pb(CH3CH2)4');
+    GTMaterials.get('tetraethyllead').setFormula('Pb(CH3CH2)4')
 
     // PECA intermediates
     GTMaterials.get('sodium_cyanide').setFormula('NaCN')

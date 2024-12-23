@@ -50,6 +50,13 @@ ServerEvents.tags('item', event => {
     event.add('forge:ingots/redstone_alloy', 'gtceu:red_alloy_ingot')
     event.add('forge:ingots/copper_alloy', 'gtceu:electrical_steel_ingot')
 
+    const decorremap = [ ['etrium', 'diamond'], ['desh', 'bronze'], ['ostrum', 'lead'], ['calorite', 'red_alloy']]
+    decorremap.forEach(([mat, remat]) => {
+        event.add(`ad_astra:${mat}_plates`, `gtceu:${remat}_plate`)
+        event.add(`ad_astra:${mat}_ingots`, `gtceu:${remat}_ingot`)
+        event.add(`ad_astra:${mat}_blocks`, `gtceu:${remat}_block`)
+    })
+
     event.remove('forge:gears/wood', 'enderio:wood_gear')
     event.remove('forge:gears/stone', 'enderio:stone_gear')
     event.remove('forge:gears/iron', 'enderio:iron_gear')
@@ -112,6 +119,12 @@ ServerEvents.tags('fluid', event => {
     event.removeAllTagsFrom('thermal:glowstone')
     event.removeAllTagsFrom('thermal:redstone')
     event.removeAllTagsFrom('cofh_core:experience')
+
+    Fluid.getTypes().filter(id=>id.includes("ad_astra")).forEach(id => event.removeAllTagsFrom(id))
+    // Rocket Fuels
+    event.removeAll('ad_astra:fuel');
+    event.add('ad_astra:fuel', 'gtceu:rocket_fuel')
+
 })
 
 // Unification regexes are definited in startup script _initial.js

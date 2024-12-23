@@ -21,8 +21,8 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .neutrons(316)
         .symbol('∞');
     event.create('monium')
-        .protons(69)
-        .neutrons(420)
+        .protons(169)
+        .neutrons(317)
         .symbol('Mu');
     event.create('crystal_matrix')
         .protons(6)

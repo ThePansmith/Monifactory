@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
             .notConsumable('kubejs:magnetron')
             .inputFluids('gtceu:heavy_atomic_residue 200')
             .itemInputs('8x gtceu:activated_carbon_dust', '4x gtceu:omnic_acid_dust')
-            .inputFluids('gcyr:hydrobromic_acid 2000', 'gtceu:distilled_water 4000')
+            .inputFluids('gtceu:hydrobromic_acid 2000', 'gtceu:distilled_water 4000')
             .outputFluids('gtceu:purified_heavy_residue 200')
             .duration(40)
             .EUt(8388608)
@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
             .notConsumable('kubejs:magnetron')
             .inputFluids('gtceu:superheavy_atomic_residue 200')
             .itemInputs('8x gtceu:activated_carbon_dust', '4x gtceu:omnic_acid_dust')
-            .inputFluids('gcyr:hydrobromic_acid 2000', 'gtceu:distilled_water 4000')
+            .inputFluids('gtceu:hydrobromic_acid 2000', 'gtceu:distilled_water 4000')
             .outputFluids('gtceu:purified_superheavy_residue 200')
             .duration(40)
             .EUt(8388608)
@@ -211,14 +211,14 @@ ServerEvents.recipes(event => {
         .EUt(122880)
 
     event.recipes.gtceu.canner('naquadah_fuel_rod')
-        .itemInputs('kubejs:empty_fuel_rod', '4x kubejs:naquadah_fuel_pellet')
+        .itemInputs('kubejs:empty_fuel_rod', '16x kubejs:naquadah_fuel_pellet')
         .itemOutputs('kubejs:naquadah_fuel_rod')
         .duration(200)
         .EUt(30720)
 
     event.recipes.gtceu.canner('depleted_naquadah_fuel_rod')
         .itemInputs('kubejs:depleted_naquadah_fuel_rod')
-        .itemOutputs('kubejs:empty_fuel_rod', '4x kubejs:depleted_naquadah_fuel_pellet')
+        .itemOutputs('kubejs:empty_fuel_rod', '16x kubejs:depleted_naquadah_fuel_pellet')
         .duration(200)
         .EUt(30720)
 
@@ -232,14 +232,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.arc_furnace('pellet_sintering')
         .itemInputs('kubejs:unsintered_naquadah_fuel_pellet')
         .itemOutputs('kubejs:naquadah_fuel_pellet')
-        .inputFluids('gtceu:xenon 500')
-        .duration(100)
+        .inputFluids('gtceu:xenon 100')
+        .duration(20)
         .EUt(30720)
 
     event.recipes.gtceu.forming_press('pellet_pressing')
-        .notConsumable('kubejs:pellet_extruder_mold')
+        .notConsumable('gtceu:pill_casting_mold')
         .itemInputs('kubejs:naquadah_fuel_dust')
-        .itemOutputs('kubejs:unsintered_naquadah_fuel_pellet')
+        .itemOutputs('4x kubejs:unsintered_naquadah_fuel_pellet')
         .duration(100)
         .EUt(122880)
 
@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
         .EUt(61440)
 
     event.recipes.gtceu.macerator('depleted_fuel_maceration')
-        .itemInputs('kubejs:depleted_naquadah_fuel_pellet')
+        .itemInputs('4x kubejs:depleted_naquadah_fuel_pellet')
         .itemOutputs('kubejs:depleted_naquadah_fuel_dust')
         .duration(80)
         .EUt(30720)
@@ -292,21 +292,11 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge('fuel_mixture_centrifuging')
         .itemInputs('4x kubejs:naquadah_fuel_mixture_dust')
-        .inputFluids('gcyr:hydrobromic_acid 1000')
+        .inputFluids('gtceu:hydrobromic_acid 1000')
         .itemOutputs('4x kubejs:raw_naquadah_fuel_dust', 'kubejs:naquadah_waste')
         .duration(100)
         .EUt(122880)
 
-    event.shaped(
-            "kubejs:pellet_extruder_mold", [
-            '   ',
-            ' MC',
-            '   '
-        ], {
-            M: "gtceu:cell_extruder_mold",
-            C: "#forge:tools/wire_cutters",
-        }
-        ).id('kubejs:pellet_mold')
 
     // Solid Waste Processing
     event.recipes.gtceu.centrifuge('naquadah_waste_centrifuging')

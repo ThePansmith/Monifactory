@@ -249,8 +249,8 @@
   "item.kubejs.pressure_layer": "Pressure Layer",
   "item.kubejs.thermal_cloth": "Thermal Cloth",
   "item.kubejs.unprepared_space_helmet": "Unprepared Space Helmet",
-  "item.kubejs.unprepared_space_chestpiece": "Unprepared Space Chestpiece",
-  "item.kubejs.unprepared_space_leggings": "Unprepared Space Leggings",
+  "item.kubejs.unprepared_space_chestpiece": "Unprepared Space Suit",
+  "item.kubejs.unprepared_space_leggings": "Unprepared Space Pants",
   "item.kubejs.unprepared_space_boots": "Unprepared Space Boots",
 
   "item.kubejs.impossible_realm_data": "§bImpossible Realm Data",
@@ -484,8 +484,6 @@
   "gtceu.ender_fluid_link_cover.tooltip": "§4Not yet implemented.",
   "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
 
-  "gcyr.rocket_scanner.tooltip": "§7Rotate the multiblock if your rocket doesn't build.",
-  "gcyr.space_chestplate.tooltip": "§7Fill with Oxygen in a Canner.",
 
   "functionalstorage.storage_controller.tooltip": "§7Previously known as a Storage Controller",
   "functionalstorage.framed_storage_controller.tooltip": "§7Previously known as a Framed Storage Controller",

@@ -113,8 +113,8 @@ StartupEvents.registry('item', event => {
     event.create('pressure_layer')
     event.create('thermal_cloth')
     event.create('unprepared_space_helmet')
-    event.create('unprepared_space_chestpiece')
-    event.create('unprepared_space_leggings')
+    event.create('unprepared_space_suit')
+    event.create('unprepared_space_pants')
     event.create('unprepared_space_boots')
 
 
@@ -347,7 +347,6 @@ StartupEvents.registry('item', event => {
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
     //Solid Naquadah Fuel Line
-    event.create('pellet_extruder_mold').texture('kubejs:item/naquadah/pellet_extruder_mold')
     event.create('empty_fuel_rod').texture('kubejs:item/naquadah/empty_fuel_rod')
     event.create('naquadah_fuel_pellet').texture('kubejs:item/naquadah/naquadah_fuel_pellet')
     event.create('naquadah_fuel_rod').texture('kubejs:item/naquadah/naquadah_fuel_rod')
@@ -373,7 +372,7 @@ StartupEvents.registry('item', event => {
     event.create('carbon_nanotubes').texture('kubejs:item/matrix/carbon_nanotubes')
     event.create('porous_matrix_mesh').texture('kubejs:item/matrix/porous_matrix_mesh')
     event.create('dense_matrix_mesh').texture('kubejs:item/matrix/dense_matrix_mesh')
-    
+
     // Terbium Line
     event.create('rare_earth_sulfate').texture('kubejs:item/terbium/rare_earth_sulfate')
     event.create('rare_earth_oxide').texture('kubejs:item/terbium/rare_earth_oxide')

@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     // Trinaquadalloy Mixer Recipe
     event.recipes.gtceu.mixer("mixer_trinaquadalloy")
         .itemInputs("6x gtceu:trinium_dust", "2x gtceu:naquadah_dust",  "gtceu:carbon_dust")
-        .itemOutputs("9x gcyr:trinaquadalloy_dust")
+        .itemOutputs("9x gtceu:trinaquadalloy_dust")
         .circuit(1)
         .duration(300)
         .EUt(491250)
@@ -68,9 +68,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(129)
 
-    // Atomic Casing Buff
-    event.remove({ id: 'gcyr:shaped/casing_atomic' })
-    event.remove({ id: 'gcyr:assembler/casing_atomic' })
+    // Atomic Casings
 
     event.shaped(
         '2x gtceu:atomic_casing', [
@@ -78,7 +76,7 @@ ServerEvents.recipes(event => {
             'PFP',
             'PWP'
         ], {
-            P: 'gcyr:trinaquadalloy_plate',
+            P: 'gtceu:trinaquadalloy_plate',
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches',
             F: 'gtceu:naquadah_alloy_frame',
@@ -86,7 +84,7 @@ ServerEvents.recipes(event => {
     ).id('gtceu:shaped/atomic_casing')
 
     event.recipes.gtceu.assembler("atomic_casing")
-        .itemInputs("6x gcyr:trinaquadalloy_plate", "gtceu:naquadah_alloy_frame")
+        .itemInputs("6x gtceu:trinaquadalloy_plate", "gtceu:naquadah_alloy_frame")
         .itemOutputs("2x gtceu:atomic_casing")
         .duration(100)
         .EUt(16)

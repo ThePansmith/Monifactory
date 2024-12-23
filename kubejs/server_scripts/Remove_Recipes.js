@@ -35,9 +35,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'redstone_arsenal:storage/flux_metal_block' })
     event.remove({ id: 'redstone_arsenal:storage/flux_ingot_from_block' })
 
+    // Ad Astra
+    event.remove({ output: ['ad_astra:desh_fluid_pipe', 'ad_astra:ostrum_fluid_pipe', 'ad_astra:photovoltaic_etrium_cell', 'ad_astra:photovoltaic_vesnium_cell', 'ad_astra:oxygen_gear', 'ad_astra:engine_frame', 'ad_astra:fan','ad_astra:etrionic_capacitor', 'ad_astra:energizer', 'ad_astra:steel_cable', 'ad_astra:desh_cable', 'ad_astra:cable_duct', 'ad_astra:fluid_pipe_duct', 'ad_astra:coal_generator', 'ad_astra:compressor', 'ad_astra:etrionic_blast_furnace', 'ad_astra:fuel_refinery', 'ad_astra:solar_panel', 'ad_astra:water_pump', 'ad_astra:energizer', 'ad_astra:cryo_freezer'] })
+    event.remove({ id: /refining_oil/ })
+    event.remove({ id: /plate_from_compressing/ })
+    event.remove({ id: /steel_ingot_from_alloying/ })
 
     //ArmorPlus
-    event.remove({ output: ["armorplus:the_ultimate_material"] });
+    event.remove({ output: ["armorplus:the_ultimate_material"] })
 
     // Misc broken recipes
     event.remove({ id: 'minecraft:netherite_spikes_smithing' })

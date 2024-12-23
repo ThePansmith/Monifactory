@@ -2,16 +2,16 @@ ServerEvents.recipes(event => {
     //Regolith dusts
     let regolithDustResources = [
         [['moon_sand', 'moon_cobblestone', 'moon_stone'], 'moon_dust', 'minecraft:diamond'],
-        [['mars_regolith', 'martian_cobblestone', 'martian_rock'], 'mars_dust', 'gtceu:monazite_gem'],
-        [['venus_sand', 'venusian_regolith', 'venus_cobblestone', 'venus_rock'], 'venus_dust', 'gtceu:olivine_gem'],
-        [['mercury_rock'], 'mercury_dust', 'gtceu:cinnabar_gem']
+        [['mars_sand', 'mars_cobblestone', 'mars_stone'], 'mars_dust', 'gtceu:monazite_gem'],
+        [['venus_sand', 'venus_cobblestone', 'venus_stone'], 'venus_dust', 'gtceu:olivine_gem'],
+        [['mercury_cobblestone', 'mercury_stone'], 'mercury_dust', 'gtceu:cinnabar_gem']
     ]
 
     regolithDustResources.forEach((planetResources, fluxCount) => {
         //Planetary dust maceration recipe
         planetResources[0].forEach(rocksToMacerate => {
             event.recipes.gtceu.macerator(rocksToMacerate)
-                .itemInputs('gcyr:' + rocksToMacerate)
+                .itemInputs('ad_astra:' + rocksToMacerate)
                 .itemOutputs('kubejs:' + planetResources[1])
                 .duration(200)
                 .EUt(GTValues.VHA[GTValues.HV])
