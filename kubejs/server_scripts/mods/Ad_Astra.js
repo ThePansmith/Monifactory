@@ -1,4 +1,9 @@
 ServerEvents.recipes(event => {
+    //Replace all Steel plates & rods
+    event.replaceInput({ id: /^ad_astra:.*/ }, 'ad_astra:steel_rod', 'gtceu:steel_rod')
+    event.replaceInput({ id: /^ad_astra:.*/ }, 'ad_astra:steel_plate', 'gtceu:steel_plate')
+
+
     // Space Suit
     event.shaped(
         '4x kubejs:thermal_cloth', [
@@ -267,8 +272,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('ad_astra:large_gas_tank')
         .duration(100)
         .EUt(32)
-
-    event.replaceInput({ id: /ad_astra:.*_flag/ }, 'ad_astra:steel_rod', 'gtceu:steel_rod')
 
 
     // Launch Pad
