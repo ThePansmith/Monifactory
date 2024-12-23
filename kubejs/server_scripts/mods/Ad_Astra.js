@@ -65,39 +65,79 @@ ServerEvents.recipes(event => {
         P: 'gtceu:lead_plate'
     })
 
-    const spacesuit = ['helmet', 'suit', 'pants', 'boots']
+    const spacesuit = ['pants', 'boots']
+
+    //Space Suit
+    event.remove({ id: `ad_astra:space_helmet` })
+    event.recipes.gtceu.assembler(`space_helmet`)
+        .itemInputs(`kubejs:unprepared_space_helmet`, "#forge:double_plates/steel", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/lv", "#forge:glass")
+        .itemOutputs(`ad_astra:space_helmet`)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.remove({ id: `ad_astra:space_suit` })
+    event.recipes.gtceu.assembler(`space_suit`)
+        .itemInputs(`kubejs:unprepared_space_suit`, "#forge:double_plates/steel", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer","ad_astra:oxygen_gear", "2x ad_astra:gas_tank")
+        .itemOutputs(`ad_astra:space_suit`)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.LV])
+    
     spacesuit.forEach(part => {
         event.remove({ id: `ad_astra:space_${part}` })
         event.recipes.gtceu.assembler(`space_${part}`)
-            .itemInputs(`kubejs:unprepared_space_${part}`, "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
+            .itemInputs(`kubejs:unprepared_space_${part}`, "#forge:double_plates/steel", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
             .itemOutputs(`ad_astra:space_${part}`)
             .duration(300)
-            .EUt(30)
-
-        event.remove({ id: `ad_astra:netherite_space_${part}` })
-        event.recipes.gtceu.assembler(`netherite_space_${part}`)
-            .itemInputs(`ad_astra:space_${part}`, "4x minecraft:netherite_scrap", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
-            .itemOutputs(`ad_astra:netherite_space_${part}`)
-            .duration(400)
-            .EUt(128)
+            .EUt(GTValues.VA[GTValues.LV])
     })
 
-    const jetsuit = ['helmet', 'pants', 'boots']
-    jetsuit.forEach(part => {
+    //Netherite space suit
+    event.remove({ id: `ad_astra:netherite_space_helmet` })
+    event.recipes.gtceu.assembler(`netherite_space_helmet`)
+            .itemInputs(`kubejs:unprepared_space_helmet`, "minecraft:netherite_ingot", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/mv", "#forge:glass/tinted", "#forge:foils/gold")
+            .itemOutputs(`ad_astra:netherite_space_helmet`)
+            .duration(400)
+            .EUt(GTValues.VA[GTValues.MV])
+
+    event.remove({ id: `ad_astra:netherite_space_suit` })
+    event.recipes.gtceu.assembler(`netherite_space_suit`)
+        .itemInputs(`kubejs:unprepared_space_suit`, "minecraft:netherite_ingot", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "ad_astra:oxygen_gear", "2x ad_astra:large_gas_tank")
+        .itemOutputs(`ad_astra:netherite_space_suit`)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    spacesuit.forEach(part => {
+        event.remove({ id: `ad_astra:netherite_space_${part}` })
+        event.recipes.gtceu.assembler(`netherite_space_${part}`)
+            .itemInputs(`kubejs:unprepared_space_${part}`, "minecraft:netherite_ingot", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
+            .itemOutputs(`ad_astra:netherite_space_${part}`)
+            .duration(400)
+            .EUt(GTValues.VA[GTValues.MV])
+    })
+    
+    //Jet Suit
+    event.remove({ id: `ad_astra:jet_suit_helmet` })
+    event.recipes.gtceu.assembler(`jet_suit_helmet`)
+        .itemInputs(`ad_astra:netherite_space_helmet`, "4x gtceu:titanium_carbide_plate", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/ev")
+        .itemOutputs(`ad_astra:jet_suit_helmet`)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.remove({ id: `ad_astra:jet_suit` })
+    event.recipes.gtceu.assembler(`jet_suit`)
+        .itemInputs(`ad_astra:netherite_space_suit`, "4x gtceu:titanium_carbide_plate", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "ad_astra:oxygen_gear", "2x ad_astra:large_gas_tank", "2x kubejs:vibrant_thruster")
+        .itemOutputs(`ad_astra:jet_suit`)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.EV])
+    
+    spacesuit.forEach(part => {
         event.remove({ id: `ad_astra:jet_suit_${part}` })
         event.recipes.gtceu.assembler(`jet_suit_${part}`)
             .itemInputs(`ad_astra:netherite_space_${part}`, "4x gtceu:titanium_carbide_plate", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
             .itemOutputs(`ad_astra:jet_suit_${part}`)
             .duration(400)
-            .EUt(480)
+            .EUt(GTValues.VA[GTValues.EV])
     })
-
-    event.remove({ id: `ad_astra:jet_suit` })
-    event.recipes.gtceu.assembler(`jet_suit`)
-        .itemInputs(`ad_astra:netherite_space_suit`, "4x gtceu:titanium_carbide_plate", "2x kubejs:vibrant_thruster", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
-        .itemOutputs(`ad_astra:jet_suit`)
-        .duration(400)
-        .EUt(480)
 
 
 
@@ -118,6 +158,20 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/hv'
     }
     ).id('ad_astra:nasa_workbench')
+
+    //Oxygen Gear
+    event.remove({ output: 'ad_astra:oxygen_gear'})
+    event.shaped(
+        'ad_astra:oxygen_gear', [
+        ' R ',
+        'PCP',
+        'F F'
+    ], {
+        R: 'kubejs:resonating_crystal',
+        P: 'gtceu:lv_electric_pump',
+        C: '#gtceu:circuits/lv',
+        F: 'gtceu:steel_fluid_cell'
+    })
 
     //Engines and Tanks
     event.remove({ output: /ad_astra:.*_engine/ })
@@ -203,17 +257,17 @@ ServerEvents.recipes(event => {
         T: 'enderio:fluid_tank'
     })
 
-    event.recipes.gtceu.assembler('gas_tank')
-        .itemInputs('gtceu:fluid_cell', '4x gtceu:steel_plate')
+    event.recipes.gtceu.assembler('ad_astra/gas_tank')
+        .itemInputs('gtceu:fluid_cell', '4x gtceu:iron_plate')
         .itemOutputs('ad_astra:gas_tank')
         .duration(100)
         .EUt(32)
-
-    event.recipes.gtceu.assembler('large_gas_tank')
+    event.recipes.gtceu.assembler('ad_astra/large_gas_tank')
         .itemInputs('3x gtceu:fluid_cell', '12x gtceu:steel_plate')
         .itemOutputs('ad_astra:large_gas_tank')
         .duration(100)
         .EUt(32)
+
     event.replaceInput({ id: /ad_astra:.*_flag/ }, 'ad_astra:steel_rod', 'gtceu:steel_rod')
 
 
