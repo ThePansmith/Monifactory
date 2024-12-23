@@ -3,13 +3,13 @@
 ServerEvents.recipes(event => {
 
     // snad
-    if(isNormalMode) {
+    if (isNormalMode) {
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand']).id('snad:snad')
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand']).id('snad:red_snad')
 
         //If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
-        event.replaceInput({ id: 'enderio:vacuum_chest'}, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
-    } else if(!isExpertMode) {
+        event.replaceInput({ id: 'enderio:vacuum_chest' }, 'enderio:pulsating_crystal', 'gtceu:tin_rotor')
+    } else if (!isExpertMode) {
         event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand', 'enderio:pulsating_crystal']).id('snad:snad')
         event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand', 'enderio:pulsating_crystal']).id('snad:red_snad')
     } else {
@@ -92,14 +92,16 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
     event.recipes.gtceu.large_chemical_reactor("sculk_vein")
-        .itemInputs('minecraft:sculk_catalyst', '16x minecraft:vine')
+        .chancedInput('minecraft:sculk_catalyst', 500, 0)
+        .itemInputs('16x minecraft:vine')
         .inputFluids("enderio:xp_juice 2000")
         .itemOutputs("16x minecraft:sculk_vein")
         .duration(1000)
         .EUt(2000)
 
     event.recipes.gtceu.large_chemical_reactor("sculk_block")
-        .itemInputs('minecraft:sculk_catalyst', '64x minecraft:moss_block')
+        .chancedInput('minecraft:sculk_catalyst', 500, 0)
+        .itemInputs('64x minecraft:moss_block')
         .inputFluids("enderio:xp_juice 2000")
         .itemOutputs("64x minecraft:sculk")
         .duration(1000)
@@ -363,14 +365,14 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(2)
 
-        event.recipes.gtceu.macerator("saltpeter_dust")
+    event.recipes.gtceu.macerator("saltpeter_dust")
         .itemInputs("4x #forge:sandstone")
         .itemOutputs("gtceu:saltpeter_dust")
         .duration(300)
         .EUt(30)
 
-     // UHV+ Parallel Control Hatch
-     event.shaped('gtceu:uhv_uhv_parallel_hatch', [
+    // UHV+ Parallel Control Hatch
+    event.shaped('gtceu:uhv_uhv_parallel_hatch', [
         'SCE',
         'CHC',
         'WCW'
@@ -586,37 +588,37 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         'waterframes:big_tv', [
-            'III',
-            'GFG',
-            'III'
-        ], {
-            F: 'waterframes:tv',
-            I: 'gtceu:iron_plate',
-            G: '#forge:glass_panes'
+        'III',
+        'GFG',
+        'III'
+    ], {
+        F: 'waterframes:tv',
+        I: 'gtceu:iron_plate',
+        G: '#forge:glass_panes'
     }
     ).id('waterframes:big_tv')
 
     event.shaped(
         'waterframes:remote', [
-            'IRI',
-            'ICI',
-            'ICI'
-        ], {
-            R: 'minecraft:redstone',
-            I: 'gtceu:iron_plate',
-            C: 'gtceu:copper_plate'
+        'IRI',
+        'ICI',
+        'ICI'
+    ], {
+        R: 'minecraft:redstone',
+        I: 'gtceu:iron_plate',
+        C: 'gtceu:copper_plate'
     }
     ).id('waterframes:remote')
 
     // Stonecut p2p tunnels, attunement sucks
     const p2p = ["redstone", "item", "fluid", "fe", "light"]
     p2p.forEach(type => {
-        event.stonecutting('ae2:'+type+'_p2p_tunnel', 'ae2:me_p2p_tunnel')
+        event.stonecutting('ae2:' + type + '_p2p_tunnel', 'ae2:me_p2p_tunnel')
     })
     event.stonecutting('mae2:pattern_p2p_tunnel', 'ae2:me_p2p_tunnel')
     const multi_p2p = ["pattern", "redstone", "fluid", "fe"]
     multi_p2p.forEach(type => {
-        event.stonecutting('mae2:'+type+'_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel')
+        event.stonecutting('mae2:' + type + '_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel')
     })
 
     // Stonecutting CCI blocks
@@ -645,17 +647,17 @@ ServerEvents.recipes(event => {
     });
 
 
-    event.remove({ id: 'gtceu:shaped/mega_blast_furnace'})
+    event.remove({ id: 'gtceu:shaped/mega_blast_furnace' })
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_blast_furnace')
-        .itemInputs('gtceu:electric_blast_furnace','4x #gtceu:circuits/zpm','4x gtceu:luv_field_generator','4x gtceu:naquadah_alloy_spring','4x gtceu:dense_naquadah_alloy_plate','4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
+        .itemInputs('gtceu:electric_blast_furnace', '4x #gtceu:circuits/zpm', '4x gtceu:luv_field_generator', '4x gtceu:naquadah_alloy_spring', '4x gtceu:dense_naquadah_alloy_plate', '4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
         .inputFluids('gtceu:soldering_alloy 9216')
         .itemOutputs('gtceu:mega_blast_furnace')
         .duration(3000)
         .EUt(30720)
         .stationResearch(b => b.researchStack('gtceu:electric_blast_furnace').CWUt(16, 64000).EUt(30720))
-    event.remove({ id: 'gtceu:shaped/mega_vacuum_freezer'})
+    event.remove({ id: 'gtceu:shaped/mega_vacuum_freezer' })
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_vacuum_freezer')
-        .itemInputs('gtceu:vacuum_freezer','4x #gtceu:circuits/zpm','4x gtceu:luv_field_generator','4x gtceu:naquadah_normal_fluid_pipe','4x gtceu:dense_naquadah_alloy_plate','4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
+        .itemInputs('gtceu:vacuum_freezer', '4x #gtceu:circuits/zpm', '4x gtceu:luv_field_generator', '4x gtceu:naquadah_normal_fluid_pipe', '4x gtceu:dense_naquadah_alloy_plate', '4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
         .inputFluids('gtceu:soldering_alloy 9216')
         .itemOutputs('gtceu:mega_vacuum_freezer')
         .duration(3000)
@@ -670,34 +672,34 @@ ServerEvents.recipes(event => {
 
     // Americium Plasma
     event.recipes.gtceu.fusion_reactor('americium_plasma')
-    .inputFluids('gtceu:plutonium_241 144', 'gtceu:hydrogen 2000')
-    .outputFluids('gtceu:americium_plasma 144')
-    .duration(64)
-    .EUt(98304)
-    .fusionStartEU(500000000)
+        .inputFluids('gtceu:plutonium_241 144', 'gtceu:hydrogen 2000')
+        .outputFluids('gtceu:americium_plasma 144')
+        .duration(64)
+        .EUt(98304)
+        .fusionStartEU(500000000)
 
     event.recipes.gtceu.plasma_generator('americium_plasma_generator')
-    .inputFluids('gtceu:americium_plasma 1')
-    .outputFluids('gtceu:americium 1')
-    .duration(320)
-    .EUt(-2048)
+        .inputFluids('gtceu:americium_plasma 1')
+        .outputFluids('gtceu:americium 1')
+        .duration(320)
+        .EUt(-2048)
 
     // Neutronium Buff
     event.remove({ id: "gtceu:fusion_reactor/americium_and_naquadria_to_neutronium_plasma" })
     event.recipes.gtceu.fusion_reactor('neutronium_buffed')
-    .inputFluids('gtceu:americium 128', 'gtceu:naquadah 128')
-    .outputFluids('gtceu:neutronium 32')
-    .duration(130)
-    .EUt(98304)
-    .fusionStartEU(600000000)
+        .inputFluids('gtceu:americium 128', 'gtceu:naquadah 128')
+        .outputFluids('gtceu:neutronium 32')
+        .duration(130)
+        .EUt(98304)
+        .fusionStartEU(600000000)
 
     //Resonant Clathrate
     event.recipes.gtceu.chemical_reactor('resonant_clathrate')
-    .itemInputs('minecraft:quartz')
-    .inputFluids(Fluid.of('thermal:ender', 250))
-    .itemOutputs('kubejs:resonant_clathrate')
-    .duration(120)
-    .EUt(75)
+        .itemInputs('minecraft:quartz')
+        .inputFluids(Fluid.of('thermal:ender', 250))
+        .itemOutputs('kubejs:resonant_clathrate')
+        .duration(120)
+        .EUt(75)
 
     event.recipes.gtceu.extractor('resonant_ender_from_pearl')
         .itemInputs('1x minecraft:ender_pearl')
@@ -713,7 +715,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.LV])
 
     //Cleanroom Hatch
-    event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning'})
+    event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning' })
     event.shaped(
         "gtceu:cleaning_maintenance_hatch", [
         'CMC',
@@ -728,14 +730,14 @@ ServerEvents.recipes(event => {
     })
 
     //ZPM Field Gen
-    event.remove({ id: 'gtceu:assembly_line/field_generator_zpm'})
+    event.remove({ id: 'gtceu:assembly_line/field_generator_zpm' })
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/zpm_field_generator')
-    .itemInputs('gtceu:naquadah_alloy_frame','6x gtceu:naquadah_alloy_plate', 'gtceu:quantum_star','2x gtceu:zpm_emitter','2x #gtceu:circuits/zpm','64x gtceu:fine_uranium_rhodium_dinaquadide_wire', '64x gtceu:fine_uranium_rhodium_dinaquadide_wire','4x gtceu:vanadium_gallium_single_cable')
-    .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:cryococcus 1152')
-    .itemOutputs('gtceu:zpm_field_generator')
-    .duration(600)
-    .EUt(24000)
-    .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
+        .itemInputs('gtceu:naquadah_alloy_frame', '6x gtceu:naquadah_alloy_plate', 'gtceu:quantum_star', '2x gtceu:zpm_emitter', '2x #gtceu:circuits/zpm', '64x gtceu:fine_uranium_rhodium_dinaquadide_wire', '64x gtceu:fine_uranium_rhodium_dinaquadide_wire', '4x gtceu:vanadium_gallium_single_cable')
+        .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:cryococcus 1152')
+        .itemOutputs('gtceu:zpm_field_generator')
+        .duration(600)
+        .EUt(24000)
+        .stationResearch(b => b.researchStack('gtceu:luv_field_generator').CWUt(4, 16000).EUt(30720))
 
     // Dragon Scaleline
     event.recipes.gtceu.macerator('dragon_scale_crushing')
@@ -895,12 +897,12 @@ ServerEvents.recipes(event => {
 
     //Parallel Implosion Compressor
     event.recipes.gtceu.assembly_line('gtceu:assembly_line/implosion_collider')
-        .itemInputs('4x enderio:reinforced_obsidian_block','2x #gtceu:circuits/zpm','gtceu:solid_machine_casing','3x gtceu:niobium_nitride_double_cable', '2x gtceu:zpm_electric_piston')
+        .itemInputs('4x enderio:reinforced_obsidian_block', '2x #gtceu:circuits/zpm', 'gtceu:solid_machine_casing', '3x gtceu:niobium_nitride_double_cable', '2x gtceu:zpm_electric_piston')
         .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:osmium 1152')
         .itemOutputs('gtceu:implosion_collider')
         .duration(900)
         .EUt(32000)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:implosion_compressor').EUt(6000).duration(1800))
+    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:implosion_compressor').EUt(6000).duration(1800))
 
     // Froglights
     event.recipes.gtceu.atomic_reconstruction('ochre_froglight')
@@ -925,5 +927,5 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"laserio:laseriobook"}'), ['minecraft:book', 'laserio:card_item']).id('laserio:my_book_recipe_shapeless')
 
     // Chipped tinker's table
-    event.replaceInput({ id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', '#forge:chests')
+    event.replaceInput({ id: 'chipped:benches/mechanist_workbench' }, 'minecraft:tnt', '#forge:chests')
 })

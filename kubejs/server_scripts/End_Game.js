@@ -162,14 +162,15 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(2000)
 
-    //kubejs Stem Cells
+    //Kubejs Stem Cells
     event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
     event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells' })
     event.recipes.gtceu.chemical_reactor("kubejs_stem_cells")
         .itemInputs('minecraft:dragon_egg')
-        .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500')
-        .itemOutputs('64x gtceu:stem_cells', '64x gtceu:stem_cells')
-        .outputFluids('gtceu:bacterial_sludge 500')
+        .chancedInput('minecraft:sculk_catalyst', 500, 0)
+        .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500', 'enderio:xp_juice 2000')
+        .itemOutputs('64x gtceu:stem_cells')
+        .itemOutputsRanged('gtceu:stem_cells', 0, 64)
         .duration(6000)
         .EUt(30720)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
