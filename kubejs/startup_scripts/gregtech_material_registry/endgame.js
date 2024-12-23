@@ -12,11 +12,26 @@ This led to the infamous recipe bug where Infinity Screws in the Lathe had integ
 because the Infinity material had infinite mass.
 */
 GTCEuStartupEvents.registry('gtceu:element', event => {
-    event.create('omnium', 130, 234, -1, null, 'Nm', false)
-    event.create('infinity', 168, 316, -1, null, '∞', false);
-    event.create('monium', 169, 317, -1, null, 'Mu', false);
-    event.create('crystal_matrix', 6, 6, -1, null, 'C*', false);
-    event.create('eltz', 15, 15, -1, null, 'Ez', false)
+    event.create('omnium')
+        .protons(130)
+        .neutrons(234)
+        .symbol('Nm');
+    event.create('infinity')
+        .protons(168)
+        .neutrons(316)
+        .symbol('∞');
+    event.create('monium')
+        .protons(169)
+        .neutrons(317)
+        .symbol('Mu');
+    event.create('crystal_matrix')
+        .protons(6)
+        .neutrons(6)
+        .symbol('C*');
+    event.create('eltz')
+        .protons(15)
+        .neutrons(15)
+        .symbol('Ez')
 })
 
 // Omnium, Infinity, and Monium have animations and thus custom material icon sets.
@@ -59,7 +74,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('shiny')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
         .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
-    
+
     event.create('activated_netherite')
         .ingot()
         .element(GTElements.get("activated_netherite"))
@@ -88,7 +103,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xffffff)
         .iconSet('eltz')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.PHOSPHORESCENT)
-       
+
     event.create('eltic_actinate')
         .gem()
         .color(0xbb9966).secondaryColor(0x881105)
