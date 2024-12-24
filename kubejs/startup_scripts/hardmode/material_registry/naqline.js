@@ -56,7 +56,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x274c9f).iconSet('shiny')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('3x naquadah_oxide', 'pyromorphite')
-        .addOreByproducts('chalcopyrite', 'vanadium_magnetite', 'naquadah') // Naquadah is replaced with naquadah hydroxide in expert_processing.js
 
 })
 
@@ -65,4 +64,7 @@ GTCEuStartupEvents.materialModification(() => {
         return;
     }
     GTMaterials.get('naquadah_hydroxide').setFormula('Nq(OH)3');
+    // Use `.setOreByProducts` here instead of `.addOreByproducts` because of https://github.com/GregTechCEu/GregTech-Modern/issues/2633
+    GTMaterials.get('snowchestite').getProperty(PropertyKey.ORE)
+        .setOreByProducts('chalcopyrite', 'vanadium_magnetite', 'naquadah_hydroxide')
 })
