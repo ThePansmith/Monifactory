@@ -193,5 +193,9 @@
     "material.gtceu.wollastonite": "Волластонит",
     "material.gtceu.xenic_acid": "Ксеноновая кислота",
     "material.gtceu.zinc_sulfate": "Сульфат цинка",
-    "tagprefix.perfect": "Идеальный %s"
+    "tagprefix.perfect": "Идеальный %s",
+    "__HM_RARE_EARTH__.footer": "========================",
+    "__TARANIUM_LINE__.header": "=================",
+    "__HM_RARE_EARTH__.header": "========================",
+    "__TARANIUM_LINE__.footer": "================="
 }
