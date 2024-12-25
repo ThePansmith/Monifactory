@@ -52,6 +52,11 @@ The following guide was written with prism launcher in mind, see [here](<https:/
 3. Clone your fork of the Monifactory repository into `instances\Monifactory`, with the repository's folder being named `minecraft`. (If using the desktop app, see [here](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) for an image example.)
 4. Once the repo is installed,  go back to your temporary folder and move the files from the `temp` root folder and `temp\minecraft\mods` folder back into the Monifactory folder.
 
+If you encounter a problem and there have been mod updates since the latest release, you may need to update your mods using the mod manifest file.
+1. Look for a file named `manifest.json` in your instance and make a .zip with it inside.
+2. Use your launcher to import the zipped manifest as a new pack - this will download a bunch of updated mod .jars from Curseforge.
+3. Delete the contents of your instance's `mods` folder, and replace them with the mod .jars that were just downloaded.
+
 Once those files are moved back in place, you should be able to launch the instance as a modpack while also being to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance. 
 
 ## Localization ##
