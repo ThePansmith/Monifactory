@@ -6,17 +6,15 @@
     "item.kubejs.smore_16": "SixteenS'more HexadecaS'mingot",
     "item.kubejs.smore_32": "Half-stack-o'-S'more TriacontadyoS'mingot",
     "item.kubejs.smore_64": "Stack-o'-S'more HexecontatessaraS'mingot",
-  
     "item.kubejs.moni_penny": "Monicentavo §7[1]",
     "item.kubejs.moni_nickel": "§eMoniníquel §r§7[5]",
     "item.kubejs.moni_quarter": "§bMoniquadra §r§7[25]",
     "item.kubejs.moni_dollar": "§dMonidólar §r§7[100]",
-  
     "item.kubejs.microminer_t1": "§eMicro minerador chapeado com aço [Nível Um]",
     "item.kubejs.microminer_t1.desc": "§7§oExtrai titânio e outros metais leves de asteroides no microverso.",
     "item.kubejs.microminer_t2": "§eMicro minerador chapeado com titânio [Nível Dois]",
     "item.kubejs.microminer_t2.desc": "§7§oExtrai tungstênio e outros metais pesados de asteroides no microverso.",
-    "item.kubejs.microminer_t3": "§eMicro minerador chapeado com carboneto de titânio [Nível Três]",	
+    "item.kubejs.microminer_t3": "§eMicro minerador chapeado com carboneto de titânio [Nível Três]",
     "item.kubejs.microminer_t3.desc": "§7§oExtrai metais extremamente quentes e gemas de microversos do Nether.",
     "item.kubejs.microminer_t4": "§eMicro minerador chapeado com signálio [Nível Quatro]",
     "item.kubejs.microminer_t4.desc": "§7§oExtrai materiais extremamente frios das partes mais profundas do vazio espacial.",
@@ -40,7 +38,6 @@
     "item.kubejs.microminer_t11.desc": "§7§oVarre ruínas necrosadas de microversos corruptos para recuperar material alienígena.",
     "item.kubejs.microminer_t12": "§dMicro deslocador extradimensional chapeado com infinito [Nível Doze]",
     "item.kubejs.microminer_t12.desc": "§7§oAltera as leis da física numa escala microversal, permitindo a produção de materiais previamente impossíveis.",
-  
     "item.kubejs.stabilized_microminer_t1": "§dMicro minerador chapeado com aço estabilizado [Nível Um]",
     "item.kubejs.stabilized_microminer_t2": "§dMicro minerador chapeado com titânio estabilizado [Nível Dois]",
     "item.kubejs.stabilized_microminer_t3": "§dMicro minerador chapeado com carboneto de titânio estabilizado [Nível Três]",
@@ -53,11 +50,9 @@
     "item.kubejs.stabilized_microminer_t8half": "§dMicro escavador chapeado com trínio estabilizado [Nível Oito e Meio]",
     "item.kubejs.stabilized_microminer_t9": "§dMicro devorador de sóis chapeado com etérnio estabilizado [Nível Nove]",
     "item.kubejs.stabilized_microminer_t10": "§dMicro extrator de universos chapeado com neutrônio estabilizado [Nível Dez]",
-  
     "item.kubejs.stabilized_microminer.tooltip.1": "§7§oUma versão estabilizada, injetada com um Coração de um universo.",
     "item.kubejs.stabilized_microminer.tooltip.2": "§7§oDura indefinidamente. Reusável. Nem um pouco op.",
     "item.kubejs.stabilized_microminer.tooltip.3": "§7§oIsto é muito familiar.",
-  
     "item.kubejs.pristine_matter_t1": "§dMatéria do microverso de aço imaculado [Nível Um]",
     "item.kubejs.pristine_matter_t2": "§dMatéria do microverso de titânio imaculado [Nível Dois]",
     "item.kubejs.pristine_matter_t3": "§dMatéria do microverso de tungstênio imaculado [Nível Três]",
@@ -68,9 +63,7 @@
     "item.kubejs.pristine_matter_t7": "§dMatéria do microverso de cryobulus imaculado [Nível Sete]",
     "item.kubejs.pristine_matter_t8": "§dMatéria do microverso de cristal imaculado [Nível Oito]",
     "item.kubejs.pristine_matter_t8half": "§dMatéria do microverso de trínio imaculado [Nível Oito e Meio]",
-  
     "item.kubejs.pristine_matter.desc": "§7§oUm abismo infinito e incompreensível de materiais.",
-  
     "item.kubejs.pulsating_dust": "Pó pulsante",
     "item.kubejs.pulsating_mesh": "Malha pulsante",
     "item.kubejs.warden_horn": "Gavinha de defensor",
@@ -82,48 +75,39 @@
     "item.kubejs.reverberation_core": "Núcleo de reverberação",
     "item.kubejs.warden_heart": "Coração de defensor",
     "item.kubejs.hadal_shard": "Fragmento hadal",
-  
     "item.kubejs.dilithium_crystal": "Cristal de dilítio",
     "item.kubejs.ender_star": "§dEstrela de ender",
     "item.kubejs.endest_star": "§dEstrela de endest",
     "item.kubejs.grains_of_innocence": "Grãos de inocência",
     "item.kubejs.radium_salt": "Sal de radônio",
     "item.kubejs.moon_dust": "Pó lunar",
-  
     "item.kubejs.aerotheum_dust": "§7Pó de aeroteu",
     "item.kubejs.cryotheum_dust": "§bPó de crioteu",
     "item.kubejs.petrotheum_dust": "§8Pó de petroteu",
     "item.kubejs.pyrotheum_dust": "§6Pó de piroteu",
     "item.kubejs.primal_mana": "Pó de mana primal",
-  
     "item.kubejs.destabilized_clathrate": "Clarato desestabilizado",
     "item.kubejs.energized_clathrate": "Clarato energizado",
     "item.kubejs.resonant_clathrate": "Clarato ressonante",
-  
     "item.kubejs.empty_fluxed_jetpack_unit": "Unidade de mochila a jato fluxada vazia",
     "item.kubejs.empty_soularium_jetpack_unit": "Unidade de mochila a jato de almário vazia",
     "item.kubejs.flight_control_unit": "Unidade de controle de voo almada",
     "item.kubejs.glowstone_elevation_unit": "Unidade de elevação de pedra luminosa",
     "item.kubejs.cryotheum_coolant_unit": "Unidade de resfriamento de crioteu",
-  
     "item.kubejs.compressed_octadic_capacitor": "Capacitor octádico comprimido",
     "item.kubejs.double_compressed_octadic_capacitor": "Capacitor octádico duplamente comprimido",
-  
     "item.kubejs.resonating_crystal": "Cristal de redstônia ressonante",
     "item.kubejs.ender_shard": "Fragmento de ender",
-  
     "item.kubejs.nether_star_north": "Ponta norte da estrela do Nether",
     "item.kubejs.nether_star_south": "Ponta sul da estrela do Nether",
     "item.kubejs.nether_star_east": "Ponta leste da estrela do Nether",
     "item.kubejs.nether_star_west": "Ponta oeste da estrela do Nether",
     "item.kubejs.nether_star_center": "Meio da estrela do Nether",
-  
     "item.kubejs.guardian_scale": "Escama de guardião",
     "item.kubejs.ender_dragon_scale": "Escama de dragão do ender",
     "item.kubejs.ender_dragon_scale_dust": "Pó de escama de dragão do ender",
     "item.kubejs.wither_bone": "Osso de Wither",
     "item.kubejs.the_ultimate_material": "O material ultimate",
-  
     "item.kubejs.alien_scrap": "Sucata alienígena",
     "item.kubejs.ruined_hull": "Casco arruinado",
     "item.kubejs.ruined_machine_parts": "Peças de máquina arruinadas",
@@ -135,7 +119,6 @@
     "item.kubejs.crushed_sensor": "Sensor amassado",
     "item.kubejs.holmium_compound": "Composto de hólmio",
     "item.kubejs.holmium_oxide_glass_dust": "Pó de vidro de óxido de hólmio",
-  
     "item.kubejs.universe_boule": "Lingote de silício monocristalino dopado com universo",
     "item.kubejs.universe_wafer": "Wafer dopado com universo",
     "item.kubejs.unactivated_multidimensional_cpu_wafer": "Wafer de CPU multidimensional inativado",
@@ -147,7 +130,6 @@
     "item.kubejs.quantum_soc_wafer": "Wafer de SoC quântico",
     "item.kubejs.quantum_soc_chip_base": "Base de chip de SoC quântico",
     "item.kubejs.quantum_soc_chip": "Chip de SoC quântico",
-  
     "item.kubejs.crushed_ancient_debris": "Detritos ancestrais esmagados",
     "item.kubejs.purified_ancient_debris": "Detritos ancestrais purificados",
     "item.kubejs.refined_ancient_debris": "Detritos ancestrais refinados",
@@ -156,7 +138,6 @@
     "item.kubejs.processed_ancient_debris_dust": "Pó de detritos ancestrais processado",
     "item.kubejs.inert_netherite_scrap": "Fragmentos de netherita inertes",
     "item.kubejs.inert_nether_compound_ingot": "Barra de composto do Nether inerte",
-  
     "item.kubejs.empty_fuel_rod": "Haste de combustível vazia",
     "item.kubejs.naquadah_fuel_pellet": "Pastilha de combustível de naquadah",
     "item.kubejs.naquadah_fuel_rod": "Haste de combustível de naquadah",
@@ -174,8 +155,6 @@
     "item.kubejs.hot_naquadah_fuel_crystal": "Cristal de combustível de naquadah quente",
     "item.kubejs.naquadah_fuel_crystal": "Cristal de combustível de naquadah",
     "item.kubejs.naquadah_fuel_mixture_dust": "Pó de mistura de combustível de naquadah",
-  
-  
     "item.kubejs.raw_nanotube_substrate": "Substrato de nanotubos bruto",
     "item.kubejs.prepared_nanotube_substrate": "Substrato de nanotubos preparado",
     "item.kubejs.cobalt_nanoparticles": "Nanopartículas de cobalto",
@@ -183,39 +162,33 @@
     "item.kubejs.carbon_nanotubes": "Nanotubos de carbono",
     "item.kubejs.porous_matrix_mesh": "Malha de matriz porosa",
     "item.kubejs.dense_matrix_mesh": "Malha de matriz densa",
-  
     "item.kubejs.rare_earth_sulfate": "Sulfato de terra rara",
     "item.kubejs.rare_earth_oxide": "Óxido de terra rara",
     "item.kubejs.rare_earth_salt": "Sal de terra rara",
     "item.kubejs.terbium_salt": "Sal de térbio",
-  
     "item.kubejs.complex_smd_transistor": "Transistor SMD complexo",
     "item.kubejs.complex_smd_resistor": "Resistor SMD complexo",
     "item.kubejs.complex_smd_capacitor": "Capacitor SMD complexo",
     "item.kubejs.complex_smd_diode": "Diodo SMD complexo",
     "item.kubejs.complex_smd_inductor": "Indutor SMD complexo",
-  
     "item.kubejs.matter_processing_unit": "Unidade de processamento de matéria",
     "item.kubejs.matter_circuit_board": "Placa de circuito de matéria",
     "item.kubejs.matter_processor": "Processador de matéria",
     "item.kubejs.matter_processor_assembly": "Conjunto de processador de matéria",
     "item.kubejs.matter_processor_computer": "Supercomputador de processador de matéria",
     "item.kubejs.matter_processor_mainframe": "Mainframe de processador de matéria",
-  
     "item.kubejs.dimensional_processing_unit": "Unidade de processamento dimensional",
     "item.kubejs.dimensional_circuit_board": "Placa de circuito dimensional",
     "item.kubejs.dimensional_processor": "Processador dimensional",
     "item.kubejs.dimensional_processor_assembly": "Conjunto de processador dimensional",
     "item.kubejs.dimensional_processor_computer": "Supercomputador de processador dimensional",
     "item.kubejs.dimensional_processor_mainframe": "Mainframe de processador dimensional",
-  
     "item.kubejs.monic_processing_unit": "Unidade de processamento mônico",
     "item.kubejs.monic_circuit_board": "Placa de circuito mônico",
     "item.kubejs.monic_processor": "Processador mônico",
     "item.kubejs.monic_processor_assembly": "Conjunto de processador mônico",
     "item.kubejs.monic_processor_computer": "Supercomputador de processador mônico",
     "item.kubejs.monic_processor_mainframe": "Mainframe de processador mônico",
-  
     "item.kubejs.basic_mining_laser": "§eLaser de mineração básico",
     "item.kubejs.reinforced_mining_laser": "§bLaser de mineração reforçado",
     "item.kubejs.supercharged_laser_array": "§eMatriz de lasers super carregados",
@@ -233,7 +206,6 @@
     "item.kubejs.timeless_monic_heavy_plating": "§dPlaca pesada mônica atemporal",
     "item.kubejs.causality_exempt_monic_heavy_plating": "§1Placa pesada mônica imune a causalidades",
     "item.kubejs.quantum_flux": "§dQuantum Flux",
-  
     "item.kubejs.wooden_widget": "Componente de madeira",
     "item.kubejs.wooden_widget_left": "Parte esquerda do componente de madeira",
     "item.kubejs.wooden_widget_right": "Parte direita do componente de madeira",
@@ -242,9 +214,7 @@
     "item.kubejs.stone_widget_down": "Parte de baixo do componente de pedra",
     "item.kubejs.alloy_widget": "Componente de liga",
     "item.kubejs.ender_widget": "Componente de ender",
-  
     "item.kubejs.magnetron": "Magnétron",
-  
     "item.kubejs.radiation_layer": "Camada de radiação",
     "item.kubejs.pressure_layer": "Camada de pressão",
     "item.kubejs.thermal_cloth": "Tecido térmico",
@@ -252,7 +222,6 @@
     "item.kubejs.unprepared_space_chestpiece": "Peitoral espacial não preparado",
     "item.kubejs.unprepared_space_leggings": "Calças espaciais não preparadas",
     "item.kubejs.unprepared_space_boots": "Botas espaciais não preparadas",
-  
     "item.kubejs.impossible_realm_data": "§bDados de reino impossível",
     "item.kubejs.dragon_lair_data": "§dDados de lar do dragão",
     "item.kubejs.wither_realm_data": "§dDados de reino do Wither",
@@ -263,47 +232,39 @@
     "item.kubejs.shattered_star_data": "§dDados de estrela despedaçada",
     "item.kubejs.shattered_universe_data": "§dDados de universo despedaçado",
     "item.kubejs.corrupted_universe_data": "§dDados de universo corrupto",
-  
     "item.kubejs.omnic_data": "Dados ômnicos",
     "item.kubejs.creative_tank_data": "Dados de tanque quântico criativo",
     "item.kubejs.creative_storage_data": "Dados de armazenamento criativo",
     "item.kubejs.creative_computation_data": "Dados de computação criativa",
     "item.kubejs.creative_energy_data": "Dados de energia criativa",
-  
     "item.kubejs.diamond_lattice": "Treliça de diamante",
     "item.kubejs.ultimate_gem": "§dGema ultimate",
     "item.kubejs.mote_of_omnium": "Montículo de ômnio",
     "item.kubejs.heart_of_a_universe": "§dCoração de um universo",
     "item.kubejs.exotic_materials_catalyst": "Catalisador de materiais exóticos",
     "item.kubejs.eternal_catalyst": "Catalisador eterno",
-  
     "item.kubejs.infinity_catalyst": "§dCatalisador infinito",
     "item.kubejs.dormant_furious_infinity_catalyst": "Catalisador infinito dormente furioso",
     "item.kubejs.furious_infinity_catalyst": "§dCatalisador infinito furioso",
     "item.kubejs.inert_serene_infinity_catalyst": "Catalisador infinito serene inerte",
     "item.kubejs.serene_infinity_catalyst": "§dCatalisador infinito serene",
     "item.kubejs.dormant_infinity_compound_ingot": "Barra de composto infinito dormente",
-  
     "item.kubejs.field_stabilised_omnic_pulsar_compound": "Composto pulsante ômnico com campo estabilizado",
     "item.kubejs.quasi_stable_neutron_star": "Estrela de nêutrons quase-estável",
-  
     "item.kubejs.singularity_containment_unit": "Unidade de contenção de singularidades",
     "item.kubejs.contained_singularity": "Singularidade contida",
-  
     "item.kubejs.ultimate_core": "Núcleo ultimate",
     "item.kubejs.ultimate_file": "Lima ultimate",
     "item.kubejs.ultimate_hammer": "Martelo ultimate",
     "item.kubejs.ultimate_screwdriver": "Chave de fenda ultimate",
     "item.kubejs.ultimate_wrench": "Chave inglesa ultimate",
     "item.kubejs.ultimate_wire_cutter": "Alicate ultimate",
-  
     "item.kubejs.infinity_file": "Lima infinita",
     "item.kubejs.infinity_hammer": "Martelo infinito",
     "item.kubejs.infinity_screwdriver": "Chave de fenda infinita",
     "item.kubejs.infinity_wrench": "Chave inglesa infinita",
     "item.kubejs.infinity_wire_cutter": "Alicate infinito",
     "item.kubejs.infinity_power_unit": "Unidade motriz infinita",
-  
     "item.kubejs.solidified_argon": "Argônio solidificado",
     "item.kubejs.solidified_chlorine": "Cloro solidificado",
     "item.kubejs.solidified_fluorine": "Flúor solidificado",
@@ -318,10 +279,8 @@
     "item.kubejs.solidified_xenon": "Xenônio solidificado",
     "item.kubejs.solidified_bromine": "Bromo solidificado",
     "item.kubejs.solidified_experience": "Experiência solidificada",
-  
     "item.kubejs.dense_hydrogen": "Hidrogênio denso",
     "item.kubejs.ultra_dense_hydrogen": "Hidrogênio super denso",
-  
     "item.kubejs.stabilized_einsteinium": "Einstênio estabilizado",
     "item.kubejs.stabilized_berkelium": "Berquélio estabilizado",
     "item.kubejs.stabilized_neptunium": "Neptúnio estabilizado",
@@ -331,7 +290,6 @@
     "item.kubejs.stabilized_californium": "Califórnio estabilizado",
     "item.kubejs.stabilized_americium": "Amerício estabilizado",
     "item.kubejs.stabilized_oganesson": "Oganessônio estabilizado",
-  
     "item.kubejs.conductive_iron_thruster": "Propulsor de ferro condutivo",
     "item.kubejs.leadstone_thruster": "Propulsor de chumbo",
     "item.kubejs.electrical_steel_thruster": "Propulsor de aço elétrico",
@@ -342,19 +300,16 @@
     "item.kubejs.vibrant_thruster": "Propulsor vibrante",
     "item.kubejs.dark_soularium_thruster": "Propulsor de almário sombrio",
     "item.kubejs.fluxed_thruster": "Propulsor fluxado",
-  
     "fluid.kubejs.molten_pyrotheum": "§6Piroteu ardente",
     "fluid.kubejs.molten_cryotheum": "§bCrioteu gélido",
     "fluid.kubejs.molten_petrotheum": "§8Petroteu tectônico",
     "fluid.kubejs.molten_aerotheum": "§7Aeroteu zéfiro",
     "fluid.kubejs.molten_primal_mana": "§dMana primal",
-  
     "block.kubejs.molten_pyrotheum": "§6Piroteu ardente",
     "block.kubejs.molten_cryotheum": "§bCrioteu gélido",
     "block.kubejs.molten_petrotheum": "§8Petroteu tectônico",
     "block.kubejs.molten_aerotheum": "§7Aeroteu zéfiro",
     "block.kubejs.molten_primal_mana": "§dMana primal",
-  
     "block.kubejs.starry_diamond_block": "Bloco de diamante estrelado",
     "block.kubejs.dense_oilsands_ore": "Minério de areias petrolíferas",
     "block.kubejs.empowerer_casing": "Carcaça de carregador",
@@ -397,21 +352,19 @@
     "block.kubejs.dimensional_stabilization_netherite_casing": "Invólucro de netherita de estabilização dimensional",
     "block.kubejs.omnic_matrix_coil_block": "Bloco de bobina de matriz ômnica",
     "block.kubejs.meowni_plush": "Pelúcia do Meowni",
-  
     "item.kubejs.uv_tier_circuit": "Circuito de nível UV",
     "item.kubejs.zpm_tier_circuit": "Circuito de nível ZPM",
     "item.kubejs.uhv_tier_circuit": "Circuito de nível UHV",
     "item.kubejs.uev_tier_circuit": "Circuito de nível UEV",
     "item.kubejs.uiv_tier_circuit": "Circuito de nível UIV",
     "item.kubejs.max_tier_circuit": "Circuito de nível MAX",
-    "item.kubejs.matter_circuit.tooltip" : "Circuitos omnicapazes!",
-    "item.kubejs.dimensional_circuit.tooltip" : "Alimentados por microversos!",
-    "item.kubejs.monic_processor.tooltip" : "O início do fim",
-    "item.kubejs.monic_processor_assembly.tooltip" : "Consegue rodar o minecraft vanilla a uma taxa decente de FPS",
-    "item.kubejs.monic_processor_computer.tooltip" : "Poder infinito",
-    "item.kubejs.monic_processor_mainframe.tooltip" : "O seja tudo e acabe tudo.",
+    "item.kubejs.matter_circuit.tooltip": "Circuitos omnicapazes!",
+    "item.kubejs.dimensional_circuit.tooltip": "Alimentados por microversos!",
+    "item.kubejs.monic_processor.tooltip": "O início do fim",
+    "item.kubejs.monic_processor_assembly.tooltip": "Consegue rodar o minecraft vanilla a uma taxa decente de FPS",
+    "item.kubejs.monic_processor_computer.tooltip": "Poder infinito",
+    "item.kubejs.monic_processor_mainframe.tooltip": "O seja tudo e acabe tudo.",
     "item.kubejs.infinity_dust_block.tooltip": "§7§oNão exatamente um sólido",
-  
     "item.kubejs.ulv_universal_circuit": "Circuito universal ULV",
     "item.kubejs.lv_universal_circuit": "Circuito universal LV",
     "item.kubejs.mv_universal_circuit": "Circuito universal MV",
@@ -424,7 +377,6 @@
     "item.kubejs.uhv_universal_circuit": "Circuito universal UHV",
     "item.kubejs.uev_universal_circuit": "Circuito universal UEV",
     "item.kubejs.uiv_universal_circuit": "Circuito universal UIV",
-  
     "jetpack.conductiveiron.name": "de ferro condutivo",
     "jetpack.creative.name": "criativa",
     "jetpack.darksoularium.name": "de almário sombrio",
@@ -436,33 +388,24 @@
     "jetpack.reinforced.name": "reforçada",
     "jetpack.resonant.name": "ressonante",
     "jetpack.vibrant.name": "vibrante",
-  
     "__MISC_TOOLTIPS__.header": "=========================",
     "__MISC_TOOLTIPS__.flufff": "> Miscellaneous Tooltips<",
     "__MISC_TOOLTIPS__.footer": "=========================",
-  
     "kubejs.universal_navigator.tooltip": "§9Te vejo depois, navegador!",
     "kubejs.ultimate_gem.tooltip": "§eReceita não tem forma definida.",
-  
     "gtceu.assembly_line.tooltip.normal": "Itens e fluidos não precisam estar na ordem correta.",
     "gtceu.assembly_line.tooltip.hardmode": "Itens e fluidos devem estar na ordem correta.",
-  
     "kubejs.meowni_plush.tooltip.normal.1": "§9Como você colocou suas mãos nisso?",
     "kubejs.meowni_plush.tooltip.normal.2": "§9(Normalmente) exclusivo para jogadores no Hardmode e Expertmode.",
     "kubejs.meowni_plush.tooltip.hardmode.1": "§9Necessita de quase todas as moedas que você pode conseguir.",
     "kubejs.meowni_plush.tooltip.hardmode.2": "§9Exclusivo para jogadores no Hardmode e Expertmode.",
-  
     "ftbquests.book.tooltip": "A janela de quest também pode ser aberta com [`].",
-  
     "redstoneclock.redstone_clock.tooltip": "§7Precisa de um sinal de redstone em um lado pontilhado para funcionar.",
-  
     "hostilenetworks.blank_data_model.tooltip": "§7Use em uma bancada de trabalho!",
     "hostilenetworks.data_model.tooltip": "§7É melhorado quando usado em uma §3Câmara de simulação",
-  
     "hostilenetworks.overworld_prediction.tooltip": "§7Experiência por item: 10",
     "hostilenetworks.nether_prediction.tooltip": "§7Experiência por item: 20",
     "hostilenetworks.end_prediction.tooltip": "§7Experiência por item: 25",
-  
     "enderio.conductive_conduit.tooltip": "§7Saída máxima 512 RF/t",
     "enderio.energetic_conduit.tooltip": "§7Saída máxima 2,048 RF/t",
     "enderio.vibrant_conduit.tooltip": "§7Saída máxima 8,192 RF/t",
@@ -472,22 +415,16 @@
     "enderio.enderium_conduit.tooltip": "§7Saída máxima 2,097,152 RF/t",
     "enderio.cryolobus_conduit.tooltip": "§7Saída máxima 8,388,608 RF/t",
     "enderio.sculk_superconductor_conduit.tooltip": "§7Saída máxima 134,217,728 RF/t",
-  
     "thermal.device_rock_gen.tooltip": "§7Deve ser colocado perto de lava e água para produzir pedregulho.",
     "thermal.device_water_gen.tooltip": "§7Deve ser colocado ao lado de duas fontes de água para funcionar.",
-  
     "thermal.emi.tooltip": "§aNão puxe os itens do EMI! Use a bancada de trabalho para pegar os dados NBT corretos.",
-  
     "gtceu.energy_converter.tooltip": "§7Cabos de EU irão converter para RF se conectados a uma máquina de RF",
     "gtceu.negation_operator.tooltip": "O operador de negação [!] não está funcionando.",
     "gtceu.basic_tape.tooltip": "§7Usado para empacotar caixas para transporte.",
     "gtceu.ender_fluid_link_cover.tooltip": "§4Não implementado ainda.",
     "gtceu.nightvision_goggles.tooltip": "§7Alterne com a tecla de [Armor Mode Switch].",
-  
-  
     "functionalstorage.storage_controller.tooltip": "§7Previamente conhecido como Controlador de armazenamento",
     "functionalstorage.framed_storage_controller.tooltip": "§7Previamente conhecido como Controlador de armazenamento armado",
-  
     "ae2.facade.tooltip": "Fabricado com âncoras para cabos",
     "ae2.memory_card.tooltip": "Segure na mão auxiliar para definir entradas adicionais em P2Ps multi.",
     "ae2.creative_fluid_cell.tooltip.1": "Não pode ser feito usando dados de Tanque criativo!",
@@ -517,15 +454,10 @@
     "telepastries.custom_cake.tooltip.2": "§7Reabasteça ao clicar direito com 2 ou mais Pós pulsantes.",
     "telepastries.lost_city_cake.tooltip.1": "§6Te teletransporta para as Cidades Perdidas§7",
     "telepastries.lost_city_cake.tooltip.2": "§7Teletransporte sem consumi-lo ao clicar direito com um Diamante.",
-  
-    "gtceu.macerator_byrproduct_warning.tooltip": "§4Você deve usar um triturador de nível HV ou maior para conseguir subprodutos.",
     "gtceu.wood_pipe_warning.tooltip": "§4Não consegue transportar Vapor ou outros gases!",
     "chipped.workbenches.tooltip.1": "§7Receitas também podem ser feitas no §3Cortador de pedras§7,",
     "chipped.workbenches.tooltip.2": "§7que pode ser automatizado com §3Montadores moleculares§7 do §bAE2§7.",
     "chipped.drill.tooltip": "Não vinculado por padrão!",
     "packagedexcrafting.crafterspeed.tooltip": "§7Mais lento que automesas, mas pode executar até 20 receitas ao mesmo tempo.",
-  
     "tempad.tempad.tooltip": "§6Utiliza Monicentavos como combustível"
-  }
-  
-  
+}

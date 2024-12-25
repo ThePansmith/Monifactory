@@ -1,7 +1,13 @@
 // Elements
 GTCEuStartupEvents.registry('gtceu:element', event => {
-    event.create('cryolobus', 149, 234, -1, null, 'Cy', false)
-    event.create('cryococcus', 149, 264, -1, null, 'Cy*', false)
+    event.create('cryolobus')
+        .protons(149)
+        .neutrons(234)
+        .symbol('Cy')
+    event.create('cryococcus')
+        .protons(149)
+        .neutrons(264)
+        .symbol('Cy*')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {

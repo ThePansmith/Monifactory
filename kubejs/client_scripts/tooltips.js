@@ -223,9 +223,6 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('item.kubejs.infinity_dust_block.tooltip'))
     })
 
-    // Macerator byproduct warning
-    tooltip.add(['gtceu:lp_steam_macerator', 'gtceu:hp_steam_macerator', 'gtceu:steam_grinder', 'gtceu:lv_macerator', 'gtceu:mv_macerator'], Text.translatable("gtceu.macerator_byrproduct_warning.tooltip"))
-
     // Wooden pipe, tank warning
     tooltip.add([
         'gtceu:wood_small_fluid_pipe',

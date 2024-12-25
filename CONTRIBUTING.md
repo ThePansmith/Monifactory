@@ -2,13 +2,17 @@
 
 <!-- omit in toc -->
 ## Table of Contents ##
-* [Contributing Guidelines](#contributing-guidelines)
-  * [Introduction](#introduction)
-  * [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
-  * [Getting Started](#getting-started)
-    * [Setting up an instance repository](#setting-up-an-instance-repository-for-use-in-dev)
-  * [Things to Watch Out For](#things-to-watch-out-for)
-    * [Questbook Highlighting](#questbook-highlighting)
+* [Introduction](#introduction)
+* [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
+* [Getting Started](#getting-started)
+   * [Setting up an instance repository](#setting-up-an-instance-repository-for-use-in-dev)
+* [Localizations](#localization)
+* [Things to Watch Out For](#things-to-watch-out-for)
+   * [Questbook Highlighting](#questbook-highlighting)
+   * [Config Overrides](#config-overrides)
+   * [Style Guides](#kubejs-style-guide)
+* [Optional Compats and Mods](#optional-compats)
+  
 
 ## Introduction ##
 
@@ -29,6 +33,7 @@ We are currently looking for the following kinds of contributions:
 * Documentation improvements
 * Small quality of life improvements
 * Spelling/grammar fixes
+* Localizations
 
 Specifically, we are not looking for:
 
@@ -49,7 +54,10 @@ The following guide was written with prism launcher in mind, see [here](<https:/
 
 Once those files are moved back in place, you should be able to launch the instance as a modpack while also being to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance. 
 
+## Localization ##
+Monifactory supports localization for nearly everything, including the questbook. Our weblate instance can be found [here](https://hosted.weblate.org/engage/monifactory/), and guide for using weblate can be found [here](<https://docs.weblate.org/en/latest/user/translating.html>). The site also has a [minimalist mode](<https://docs.weblate.org/en/latest/user/translating.html#zen-mode>), and supports uploading raw language files, if your prefer other options.
 
+If you wish to add a language for localization, either ask Pansmith to add it, or make a pull request with some translations already done in that language. (Weblate will automatically add lang files for everything upon detecting a new language). Also note that the discord has a thread for Monifactory's Translations in the #moni-dev channel for easy communication with other contributors.
 
 ## Things to Watch Out For ##
 
@@ -87,15 +95,7 @@ any files you are working on are do not also exist inside the `config-overrides`
 folder. If they do you will need to copy your changes over into them and adjust
 them as appropriate for the difficulty setting that folder represents.
 
-### Asset & Data folder Organization ###
-
-KubeJS offers a feature to automatically load resource packs & datapacks put into the `kubejs/assets` and `kubejs/data` folders respectively. These can get messy, so please try to follow the standards set by other items in that folder:
-1. Avoid sub-folders that aren't strictly necessary! For example, the Sculk Energy Core item models should not go into `kubejs/assets/kubejs/models/item/sculk_energy_cores` or similar, they just go into `kubejs/assets/kubejs/models/item`. This may result in folders with many files in them! That is okay. The one exception to this rule are the contents of `kubejs/assets/kubejs/textures`.
-2. Keep large lang files organized! one example of where this is necessary is `kubejs/assets/lang/gtceu/en_us.json`. Categories are separated and labelled as best as can be done without comments since JSON has no capacity for them. If you need to add to a large lang file, _find the relevant category and add to the bottom of it_, following the spacing established by other members of that category.
-3. Do not include any redundant lang file entries! One thing that used to be a common practice was to copy mods' entire lang files into the directory used to override mods' internal resource packs and _only changing the relevant entries_. This clogs up things with large amounts of useless information.
-4. Do not leave any unused files or assets in these folders! One example is how there used to be an entire suite of Draconic Evolution-themed casings before the theming was switched to the Deep Dark instead. Those unused assets were left in the folder for _months_ after the switch. Debug assets such as those in `kubejs\assets\kubejs\textures\block\debug` are exempt.
-
-## KubeJS Style Guide ##
+### KubeJS Style Guide ###
 Keeping the KubeJS files clean and easy to read is important for a couple reasons; outside of making fellow contributor's lives easier, it lets people who are new to KubeJS be able to easily reference Monifactory when getting started with learning how to packdev. This might seem like a lot, but if you take a look at how the other files do it, it comes fairly naturally; the list below is a reference in case you are not sure.
 
 1. If you're using VSCode as an editor, use its `Format Document` feature before submitting a PR or pushing changes to keep things organized. It can be accessed with the right-click context menu or the keyboard shortcut `Shift+Alt+F`
@@ -108,6 +108,15 @@ Keeping the KubeJS files clean and easy to read is important for a couple reason
 8. All mod-focused scripts' filenames should be the same as that mod's namespace. (Visible when viewing item IDs) Furthermore all scripts' filenames should be entirely lowercase.
 9. For Multiblock pattern builders, always use `@` char for the controller, ` ` (space) for air and `#` for the 'any' predicate.
 
+### Asset & Data folder Organization ###
+
+KubeJS offers a feature to automatically load resource packs & datapacks put into the `kubejs/assets` and `kubejs/data` folders respectively. Like with the above style guide, most of this comes naturally, this just serves as a reference guide when needed.
+
+1. Avoid sub-folders that aren't strictly necessary! For example, the Sculk Energy Core item models should not go into `kubejs/assets/kubejs/models/item/sculk_energy_cores` or similar, they just go into `kubejs/assets/kubejs/models/item`. This may result in folders with many files in them! That is okay. The one exception to this rule are the contents of `kubejs/assets/kubejs/textures`.
+2. Keep large lang files organized! one example of where this is necessary is `kubejs/assets/lang/gtceu/en_us.json`. Categories are separated and labelled as best as can be done without comments since JSON has no capacity for them. If you need to add to a large lang file, _find the relevant category and add to the bottom of it_, following the spacing established by other members of that category.
+3. Do not include any redundant lang file entries! One thing that used to be a common practice was to copy mods' entire lang files into the directory used to override mods' internal resource packs and _only changing the relevant entries_. This clogs up things with large amounts of useless information.
+4. Do not leave any unused files or assets in these folders! One example is how there used to be an entire suite of Draconic Evolution-themed casings before the theming was switched to the Deep Dark instead. Those unused assets were left in the folder for _months_ after the switch. Debug assets such as those in `kubejs\assets\kubejs\textures\block\debug` are exempt.
+   
 ## Optional Compats ##
 Optional Compatiblities for mods should be balanced so that they fit naturally in the modpack's progression without overshadowing existing options. For example, an optional compatability should not have wireless be unlocked before it's possible in the base modpack. Optional Compatibilies serve to extend and add additional options, not replace. 
 

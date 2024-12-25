@@ -70,6 +70,16 @@ ServerEvents.recipes(event => {
 
 
     // Wetware tweaks are more invasive than a 1-item swapout
+
+    event.remove({ output: 'gtceu:wetware_printed_circuit_board' })
+    event.recipes.gtceu.large_chemical_reactor("kubejs:wetware_printed_circuit_board")
+        .itemInputs('gtceu:wetware_circuit_board', '24x minecraft:sculk_vein', '8x gtceu:stem_cells')
+        .inputFluids('gtceu:sodium_persulfate 3000', 'gtceu:iron_iii_chloride 1500', 'enderio:xp_juice 1000')
+        .itemOutputs('gtceu:wetware_printed_circuit_board')
+        .EUt(480)
+        .duration(1800)
+        .cleanroom(CleanroomType.CLEANROOM)
+        
     event.remove({output: 'gtceu:neuro_processing_unit'})
     event.recipes.gtceu.circuit_assembler('neuro_processing_unit')
         .itemInputs('gtceu:wetware_printed_circuit_board', '4x gtceu:stem_cells', '8x gtceu:polybenzimidazole_small_fluid_pipe', '4x gtceu:enderium_plate', '16x gtceu:silicone_rubber_foil', '8x gtceu:hsse_bolt')
