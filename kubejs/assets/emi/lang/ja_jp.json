@@ -1,0 +1,17 @@
+{
+	"tag.item.gtceu.circuits": "回路",
+	"tag.item.gtceu.circuits.ulv": "ULV 回路",
+	"tag.item.gtceu.circuits.lv": "LV 回路",
+	"tag.item.gtceu.circuits.mv": "MV 回路",
+	"tag.item.gtceu.circuits.hv": "HV 回路",
+	"tag.item.gtceu.circuits.ev": "EV 回路",
+	"tag.item.gtceu.circuits.iv": "IV 回路",
+	"tag.item.gtceu.circuits.luv": "LuV 回路",
+	"tag.item.gtceu.circuits.zpm": "ZPM 回路",
+	"tag.item.moni_quest.backpack": "バックパック",
+	"tag.item.moni.output_bus": "アイテム搬出バス",
+	"tag.item.moni.input_bus": "アイテム搬入バス",
+	"tag.item.moni.input_hatch": "液体搬入ハッチ",
+	"tag.item.moni.output_hatch": "液体搬出ハッチ",
+	"tag.item.moni.coins": "コイン"
+}
