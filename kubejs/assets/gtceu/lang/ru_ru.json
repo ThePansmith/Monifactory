@@ -82,7 +82,7 @@
     "material.gtceu.diamatine_empowered": "§bУсиленный кристалл диаматина",
     "material.gtceu.dilithium": "Дилитий",
     "material.gtceu.dimethylformamide": "Диметилформамид",
-    "material.gtceu.dioxygen_difluoride": "Диоксид фторида",
+    "material.gtceu.dioxygen_difluoride": "Диоксидифторид",
     "material.gtceu.dirty_hexafluorosilicic_acid": "Грязная гексафторкремниевая кислота",
     "material.gtceu.dulysite": "Дюлезит",
     "material.gtceu.durene": "Дурол",
@@ -197,5 +197,6 @@
     "__HM_RARE_EARTH__.footer": "========================",
     "__TARANIUM_LINE__.header": "=================",
     "__HM_RARE_EARTH__.header": "========================",
-    "__TARANIUM_LINE__.footer": "================="
+    "__TARANIUM_LINE__.footer": "=================",
+    "material.gtceu.cyanoacetic_acid": "Циануксусная кислота"
 }
