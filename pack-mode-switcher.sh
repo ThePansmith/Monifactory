@@ -32,7 +32,7 @@ fi
 printf "\n\n${YELLOW}Current Mode: ${CURRENT_MODE}${NORMAL}\n"
 
 if [ -z "$1" ]; then
-  printf "${POWDER_BLUE}Set Pack Mode: [Normal / Hardmode / Expert]: ${NORMAL}"
+  printf "${POWDER_BLUE}Set Pack Mode:\nN: Normal    (The Default mode) \nH: Hardmode  (Adds more lines and progression, removes HNN and Monicoin spending) \nE: Expert    (A modifier for Hardmode, enables some of the more extreme GTm settings among other things) \nSelection: [Normal / Hardmode / Expert]:"
   read MODE
 else
   MODE="$1"
