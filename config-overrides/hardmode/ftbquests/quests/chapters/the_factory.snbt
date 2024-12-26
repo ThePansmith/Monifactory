@@ -57,17 +57,17 @@
 		{
 			dependencies: ["2D31856F6EF1ED69"]
 			description: [
-				"{moni.quest.62BBD1F6767A4D90.description1.hardmode}"
+				"{moni.quest.62BBD1F6767A4D90.description1}"
 				""
-				"{moni.quest.62BBD1F6767A4D90.description2.hardmode}"
+				"{moni.quest.62BBD1F6767A4D90.description2}"
 				""
-				"{moni.quest.62BBD1F6767A4D90.description3.hardmode}"
+				"{moni.quest.62BBD1F6767A4D90.description3}"
 				"{@pagebreak}"
 				"{moni.quest.62BBD1F6767A4D90.description4}"
 				""
-				"{moni.quest.62BBD1F6767A4D90.description5.hardmode}"
+				"{moni.quest.62BBD1F6767A4D90.description5}"
 				""
-				"{moni.quest.62BBD1F6767A4D90.description6.hardmode}"
+				"{moni.quest.62BBD1F6767A4D90.description6}"
 			]
 			icon: "gtceu:lv_wiremill"
 			id: "62BBD1F6767A4D90"
@@ -197,7 +197,7 @@
 		{
 			dependencies: ["055193574D203872"]
 			description: [
-				"{moni.quest.6197C51E04761371.description1.hardmode}"
+				"{moni.quest.6197C51E04761371.description1}"
 				""
 				"{moni.quest.6197C51E04761371.description2}"
 				""
@@ -257,7 +257,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "{moni.quest.7A12743F5ECCED90.subtitle.hardmode}"
+			subtitle: "{moni.quest.7A12743F5ECCED90.subtitle}"
 			tasks: [{
 				id: "7341F3ADD0737579"
 				item: "gtceu:lv_electric_piston"
@@ -270,11 +270,11 @@
 		{
 			dependencies: ["7A12743F5ECCED90"]
 			description: [
-				"{moni.quest.2A84013C14085C7B.description1.hardmode}"
+				"{moni.quest.2A84013C14085C7B.description1}"
 				""
-				"{moni.quest.2A84013C14085C7B.description2.hardmode}"
+				"{moni.quest.2A84013C14085C7B.description2}"
 				""
-				"{moni.quest.2A84013C14085C7B.description3.hardmode}"
+				"{moni.quest.2A84013C14085C7B.description3}"
 			]
 			id: "2A84013C14085C7B"
 			rewards: [{
@@ -330,9 +330,9 @@
 				"7A12743F5ECCED90"
 			]
 			description: [
-				"{moni.quest.7460F22545A4EFB2.description1.hardmode}"
+				"{moni.quest.7460F22545A4EFB2.description1}"
 				""
-				"{moni.quest.7460F22545A4EFB2.description2.hardmode}"
+				"{moni.quest.7460F22545A4EFB2.description2}"
 			]
 			id: "7460F22545A4EFB2"
 			rewards: [{
@@ -394,13 +394,13 @@
 			description: [
 				"{moni.quest.4685AC9E6CD87B77.description1}"
 				""
-				"{moni.quest.4685AC9E6CD87B77.description2.hardmode}"
+				"{moni.quest.4685AC9E6CD87B77.description2}"
 				""
 				"{moni.quest.4685AC9E6CD87B77.description3}"
 				""
-				"{moni.quest.4685AC9E6CD87B77.description4.hardmode}"
+				"{moni.quest.4685AC9E6CD87B77.description4}"
 				""
-				"{moni.quest.4685AC9E6CD87B77.description5.hardmode}"
+				"{moni.quest.4685AC9E6CD87B77.description5}"
 				""
 				"{moni.quest.4685AC9E6CD87B77.description6}"
 				""
@@ -449,7 +449,7 @@
 			description: [
 				"{moni.quest.6A262AA410619C23.description1}"
 				""
-				"{moni.quest.6A262AA410619C23.description2.hardmode}"
+				"{moni.quest.6A262AA410619C23.description2}"
 			]
 			id: "6A262AA410619C23"
 			shape: "hexagon"
@@ -532,13 +532,13 @@
 			description: [
 				"{moni.quest.63ADD9B48834AA39.description1}"
 				""
-				"{moni.quest.63ADD9B48834AA39.description2.hardmode}"
+				"{moni.quest.63ADD9B48834AA39.description2}"
 				""
-				"{moni.quest.63ADD9B48834AA39.description3.hardmode}"
+				"{moni.quest.63ADD9B48834AA39.description3}"
 				""
-				"{moni.quest.63ADD9B48834AA39.description4.hardmode}"
+				"{moni.quest.63ADD9B48834AA39.description4}"
 				""
-				"{moni.quest.63ADD9B48834AA39.description5.hardmode}"
+				"{moni.quest.63ADD9B48834AA39.description5}"
 				""
 				"{moni.quest.63ADD9B48834AA39.description6.hardmode}"
 			]
@@ -742,7 +742,7 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["{moni.quest.46AF35D4EECA5BDB.description1.hardmode}"]
+			description: ["{moni.quest.46AF35D4EECA5BDB.description1}"]
 			icon: {
 				Count: 1
 				id: "thermal:device_water_gen"
@@ -775,9 +775,9 @@
 			description: [
 				"{moni.quest.545CCC24D9401794.description1}"
 				""
-				"{moni.quest.545CCC24D9401794.description2.hardmode}"
+				"{moni.quest.545CCC24D9401794.description2}"
 				""
-				"{moni.quest.545CCC24D9401794.description3.hardmode}"
+				"{moni.quest.545CCC24D9401794.description3}"
 			]
 			hide_until_deps_visible: true
 			icon: "systeams:steam_dynamo"
@@ -810,7 +810,7 @@
 				""
 				"{moni.quest.500E619D568C07C2.description4}"
 				""
-				"{moni.quest.500E619D568C07C2.description5.hardmode}"
+				"{moni.quest.500E619D568C07C2.description5}"
 			]
 			id: "500E619D568C07C2"
 			rewards: [{
@@ -830,7 +830,7 @@
 		{
 			dependencies: ["5301E546BAA69844"]
 			description: [
-				"{moni.quest.4624889F738AB21B.description1.hardmode}"
+				"{moni.quest.4624889F738AB21B.description1}"
 				""
 				"{moni.quest.4624889F738AB21B.description2}"
 				""
@@ -875,9 +875,9 @@
 				"30EBD4E7BBFFEF2C"
 			]
 			description: [
-				"{moni.quest.645B1DCB3DA7198A.description1.hardmode}"
+				"{moni.quest.645B1DCB3DA7198A.description1}"
 				""
-				"{moni.quest.645B1DCB3DA7198A.description2.hardmode}"
+				"{moni.quest.645B1DCB3DA7198A.description2}"
 			]
 			hide_until_deps_visible: true
 			icon: "kubejs:pulsating_mesh"
@@ -932,7 +932,7 @@
 				""
 				"{moni.quest.41C2E49E70D76330.description3}"
 				""
-				"{moni.quest.41C2E49E70D76330.description4.hardmode}"
+				"{moni.quest.41C2E49E70D76330.description4}"
 			]
 			hide_until_deps_visible: true
 			icon: "gtceu:steam_grinder"
@@ -1024,9 +1024,9 @@
 				""
 				"{moni.quest.74B5CA5A48CE7B39.description2}"
 				""
-				"{moni.quest.74B5CA5A48CE7B39.description3.hardmode}"
+				"{moni.quest.74B5CA5A48CE7B39.description3}"
 				""
-				"{moni.quest.74B5CA5A48CE7B39.description4.hardmode}"
+				"{moni.quest.74B5CA5A48CE7B39.description4}"
 			]
 			id: "74B5CA5A48CE7B39"
 			rewards: [{
@@ -1082,13 +1082,13 @@
 		{
 			dependencies: ["3BD20358F137E7C6"]
 			description: [
-				"{moni.quest.6D03BB4A6A4BBA27.description1.hardmode}"
+				"{moni.quest.6D03BB4A6A4BBA27.description1}"
 				""
-				"{moni.quest.6D03BB4A6A4BBA27.description2.hardmode}"
+				"{moni.quest.6D03BB4A6A4BBA27.description2}"
 				""
 				"{moni.quest.6D03BB4A6A4BBA27.description3}"
 				""
-				"{moni.quest.6D03BB4A6A4BBA27.description4.hardmode}"
+				"{moni.quest.6D03BB4A6A4BBA27.description4}"
 			]
 			icon: "ae2:charger"
 			id: "6D03BB4A6A4BBA27"
@@ -1112,13 +1112,13 @@
 			description: [
 				"{moni.quest.4174A6C6403DD245.description1}"
 				""
-				"{moni.quest.4174A6C6403DD245.description2.hardmode}"
+				"{moni.quest.4174A6C6403DD245.description2}"
 				""
-				"{moni.quest.4174A6C6403DD245.description3.hardmode}"
+				"{moni.quest.4174A6C6403DD245.description3}"
 				"{@pagebreak}"
-				"{moni.quest.4174A6C6403DD245.description4.hardmode}"
+				"{moni.quest.4174A6C6403DD245.description4}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description1.hardmode\"},{\"color\":\"blue\",\"underlined\":1,\"translate\":\"moni.quest.4174A6C6403DD245.rich_description2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"}},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description.hover_text2\"}},{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description3.hardmode\"}]"
+				"[\"\",{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description1.hardmode\"},{\"color\":\"blue\",\"underlined\":1,\"translate\":\"moni.quest.4174A6C6403DD245.rich_description2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"}},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description.hover_text2\"}},{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description3\"}]"
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"
@@ -1154,7 +1154,7 @@
 		{
 			dependencies: ["025543EDB0A4AC22"]
 			description: [
-				"{moni.quest.7842EC1C389C4B7E.description1.hardmode}"
+				"{moni.quest.7842EC1C389C4B7E.description1}"
 				""
 				"{moni.quest.7842EC1C389C4B7E.description2}"
 			]
@@ -1224,13 +1224,13 @@
 				""
 				"{moni.quest.6FE99EDDC6223F2E.description2}"
 				""
-				"{moni.quest.6FE99EDDC6223F2E.description3.hardmode}"
+				"{moni.quest.6FE99EDDC6223F2E.description3}"
 				""
 				"{moni.quest.6FE99EDDC6223F2E.description4}"
 				""
-				"{moni.quest.6FE99EDDC6223F2E.description5.hardmode}"
+				"{moni.quest.6FE99EDDC6223F2E.description5}"
 				""
-				"{moni.quest.6FE99EDDC6223F2E.description6.hardmode}"
+				"{moni.quest.6FE99EDDC6223F2E.description6}"
 			]
 			icon: "gtceu:oxygen_bucket"
 			id: "6FE99EDDC6223F2E"
@@ -1264,7 +1264,7 @@
 			description: [
 				"{moni.quest.4CD6C60CBEFFA317.description1}"
 				""
-				"{moni.quest.4CD6C60CBEFFA317.description2.hardmode}"
+				"{moni.quest.4CD6C60CBEFFA317.description2}"
 				""
 				"{moni.quest.4CD6C60CBEFFA317.description3}"
 			]
@@ -1290,7 +1290,7 @@
 				"1BC6DDC2D50F9C46"
 			]
 			description: [
-				"{moni.quest.3AB0402B19DD5BA8.description1.hardmode}"
+				"{moni.quest.3AB0402B19DD5BA8.description1}"
 				""
 				"{moni.quest.3AB0402B19DD5BA8.description2.hardmode}"
 				""
@@ -1298,7 +1298,7 @@
 				""
 				"{moni.quest.3AB0402B19DD5BA8.description4}"
 				""
-				"{moni.quest.3AB0402B19DD5BA8.description5.hardmode}"
+				"{moni.quest.3AB0402B19DD5BA8.description5}"
 			]
 			id: "3AB0402B19DD5BA8"
 			rewards: [
@@ -1334,13 +1334,13 @@
 		{
 			dependencies: ["4CD6C60CBEFFA317"]
 			description: [
-				"{moni.quest.1BC6DDC2D50F9C46.description1.hardmode}"
+				"{moni.quest.1BC6DDC2D50F9C46.description1}"
 				""
 				"{moni.quest.1BC6DDC2D50F9C46.description2}"
 				""
 				"{moni.quest.1BC6DDC2D50F9C46.description3}"
 				""
-				"{moni.quest.1BC6DDC2D50F9C46.description4.hardmode}"
+				"{moni.quest.1BC6DDC2D50F9C46.description4}"
 				""
 				"{@pagebreak}"
 				"{moni.quest.1BC6DDC2D50F9C46.description5}"
@@ -1532,7 +1532,7 @@
 				"{moni.quest.5C4E189A3E401566.description1}"
 				""
 				"{moni.quest.5C4E189A3E401566.description2}"
-				"{moni.quest.5C4E189A3E401566.description3.hardmode}"
+				"{moni.quest.5C4E189A3E401566.description3}"
 			]
 			id: "5C4E189A3E401566"
 			rewards: [{
@@ -1583,7 +1583,7 @@
 		{
 			dependencies: ["1DBBE96165C7987D"]
 			description: [
-				"{moni.quest.56924FC6B029BA0F.description1.hardmode}"
+				"{moni.quest.56924FC6B029BA0F.description1}"
 				""
 				"{moni.quest.56924FC6B029BA0F.description2.hardmode}"
 				""
@@ -1671,11 +1671,11 @@
 				""
 				"{moni.quest.1A427A8CB43C8B59.description2}"
 				""
-				"{moni.quest.1A427A8CB43C8B59.description3.hardmode}"
+				"{moni.quest.1A427A8CB43C8B59.description3}"
 				""
 				"{moni.quest.1A427A8CB43C8B59.description4}"
 				""
-				"{moni.quest.1A427A8CB43C8B59.description5.hardmode}"
+				"{moni.quest.1A427A8CB43C8B59.description5}"
 				"{moni.quest.1A427A8CB43C8B59.description6}"
 				"{moni.quest.1A427A8CB43C8B59.description7}"
 				"{moni.quest.1A427A8CB43C8B59.description8}"
@@ -1703,7 +1703,7 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["{moni.quest.431BB650AC492C84.description1.hardmode}"]
+			description: ["{moni.quest.431BB650AC492C84.description1}"]
 			icon: "minecraft:hopper"
 			id: "431BB650AC492C84"
 			size: 1.5d
@@ -1719,17 +1719,17 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.5F6B13DBCABA5078.description1.hardmode}"
+				"{moni.quest.5F6B13DBCABA5078.description1}"
 				""
 				"{moni.quest.5F6B13DBCABA5078.description2}"
 				"{@pagebreak}"
-				"{moni.quest.5F6B13DBCABA5078.description3.hardmode}"
+				"{moni.quest.5F6B13DBCABA5078.description3}"
 				""
 				"{moni.quest.5F6B13DBCABA5078.description4}"
 				""
-				"{moni.quest.5F6B13DBCABA5078.description5.hardmode}"
+				"{moni.quest.5F6B13DBCABA5078.description5}"
 				""
-				"{moni.quest.5F6B13DBCABA5078.description6.hardmode}"
+				"{moni.quest.5F6B13DBCABA5078.description6}"
 				""
 				"{moni.quest.5F6B13DBCABA5078.description7}"
 			]
@@ -1797,7 +1797,7 @@
 				""
 				"{moni.quest.0D6C8FFD01BE5C21.description3}"
 				""
-				"{moni.quest.0D6C8FFD01BE5C21.description4.hardmode}"
+				"{moni.quest.0D6C8FFD01BE5C21.description4}"
 				""
 				"{moni.quest.0D6C8FFD01BE5C21.description5}"
 			]
@@ -1899,9 +1899,9 @@
 				"3EDD0A986384F2A7"
 			]
 			description: [
-				"{moni.quest.3E69E1949316BD0C.description1.hardmode}"
+				"{moni.quest.3E69E1949316BD0C.description1}"
 				""
-				"{moni.quest.3E69E1949316BD0C.description2.hardmode}"
+				"{moni.quest.3E69E1949316BD0C.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
@@ -2095,7 +2095,7 @@
 				"29A487F0BC43AAF9"
 			]
 			description: [
-				"{moni.quest.7EA737163230F984.description1.hardmode}"
+				"{moni.quest.7EA737163230F984.description1}"
 				""
 				"{moni.quest.7EA737163230F984.description2}"
 				""
@@ -2209,7 +2209,7 @@
 				title: "{moni.task.56A2D430950E2112}"
 				type: "item"
 			}]
-			title: "{moni.quest.7EA737163230F984.title.hardmode}"
+			title: "{moni.quest.7EA737163230F984.title}"
 			x: 1.0d
 			y: -2.0d
 		}
