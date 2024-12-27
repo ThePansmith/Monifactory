@@ -29,20 +29,20 @@ ServerEvents.recipes(event => {
 
     // Generate EnderIO thruster recipes
     const eioThrusters = [
-        ['conductive_iron', 'conductive_alloy', 'conductive', 'kubejs:resonating_crystal', 'gtceu:red_alloy_plate'],
-        ['electrical_steel', 'electrical_steel', 'conductive', 'enderio:pulsating_crystal', Item.of('kubejs:conductive_iron_thruster').weakNBT()],
-        ['energetic', 'energetic_alloy', 'energetic', 'enderio:vibrant_crystal', Item.of('kubejs:electrical_steel_thruster').weakNBT()],
-        ['vibrant', 'vibrant_alloy', 'vibrant', 'enderio:prescient_crystal', Item.of('kubejs:energetic_thruster').weakNBT()]
+        ['conductive_iron', 'conductive_alloy', '1', 'kubejs:resonating_crystal', 'gtceu:red_alloy_plate'],
+        ['electrical_steel', 'electrical_steel', '1', 'enderio:pulsating_crystal', Item.of('kubejs:conductive_iron_thruster').weakNBT()],
+        ['energetic', 'energetic_alloy', '2', 'enderio:vibrant_crystal', Item.of('kubejs:electrical_steel_thruster').weakNBT()],
+        ['vibrant', 'vibrant_alloy', '3', 'enderio:prescient_crystal', Item.of('kubejs:energetic_thruster').weakNBT()]
     ]
 
-    eioThrusters.forEach(([newTier, plate, conduit, crystal, lastTier]) => {
+    eioThrusters.forEach(([newTier, plate, card, crystal, lastTier]) => {
         event.shaped(Item.of('kubejs:' + newTier + '_thruster'), [
             'PCP',
             'PRP',
             'BTB'
         ], {
             P: `#forge:plates/${plate}`,
-            C: `enderio:${conduit}_conduit`,
+            C: `laserio:energy_overclocker_card_tier_${card}`,
             R: crystal,
             T: lastTier,
             B: 'gtceu:red_alloy_plate'
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         'TTT'
     ], {
         I: 'gtceu:dark_soularium_ingot',
-        C: 'enderio:cryolobus_conduit',
+        C: 'laserio:energy_overclocker_card_tier_8',
         F: 'kubejs:flight_control_unit',
         T: Item.of('kubejs:vibrant_thruster').weakNBT()
     }).id('kubejs:ironjetpacks/thrusters/dark_soularium');

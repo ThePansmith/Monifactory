@@ -2019,32 +2019,6 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: 23.5d
-		}
-		{
-			dependencies: ["73C1AB31431B5C11"]
-			description: [
-				"{moni.quest.63F3FC4EDC1B428A.description1}"
-				""
-				"{moni.quest.63F3FC4EDC1B428A.description2}"
-				""
-				"{moni.quest.63F3FC4EDC1B428A.description3}"
-				""
-				"{moni.quest.63F3FC4EDC1B428A.description4}"
-			]
-			id: "63F3FC4EDC1B428A"
-			rewards: [{
-				id: "069CB49C9B878CF5"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6B21291E0F84A11A"
-				item: "enderio:ender_fluid_conduit"
-				type: "item"
-			}]
-			title: "{moni.quest.63F3FC4EDC1B428A.title}"
 			x: 11.0d
 			y: 23.5d
 		}
@@ -2063,7 +2037,7 @@
 			}]
 			tasks: [{
 				id: "2F9C846B8ABD620C"
-				item: "enderio:vibrant_conduit"
+				item: "laserio:energy_overclocker_card_tier_3"
 				type: "item"
 			}]
 			title: "{moni.quest.53205E306EE07F6F.title}"

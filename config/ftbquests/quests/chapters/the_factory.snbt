@@ -2065,7 +2065,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6DEB6911246BA1D9"
-				item: "enderio:item_conduit"
+				item: "laserio:card_item"
 				type: "item"
 			}]
 			title: "{moni.quest.4F239316765C7CA1.title}"

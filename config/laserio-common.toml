@@ -1,0 +1,43 @@
+
+#Card settings
+[card]
+
+	#Energy Card
+	[card.energy_card]
+		#Maximum FE/t for Energy Cards (if Energy Overclockers are defined, this value is used if no overclocker is in the card)
+		#Range: > 0
+		max_fe_no_tiers = 0
+
+		#Energy Overclocker Card Tiers
+		[card.energy_card.energy_overclockers]
+			#By adding values to this list, Energy Overclockers will be generated (1 tier for each value).
+			#The maximum FE/t for each tier is specified using this list.
+			#Note: this is a feature meant for pack developers, so default recipes won't be generated
+			max_fe_tiers = [512, 2048, 8192, 32768, 131072, 524288, 2097152, 8388608, 134217728]
+			#By adding values to this list, Energy Overclockers' name can be chosen (1 value for each tier).
+			#Each name must be provided as a string, so it must be contained within quotation marks.
+			#Note: if this list is empty/doesn't contain enough elements, the missing names will be replaced with the default ones
+			name_tiers = ["Conductive Iron Energy Overclocker", "Energetic Alloy Energy Overclocker", "Vibrant Alloy Energy Overclocker", "End Steel Energy Overclocker", "Lumium Energy Overclocker", "Signalum Energy Overclocker", "Enderium Energy Overclocker", "Cryolobus Energy Overclocker", "Sculk Superconductor Energy Overclocker"]
+			#By adding values to this list, Energy Overclockers' color can be chosen (1 value for each tier).
+			#Each color must be provided as a string using either its decimal, octal or hexadecimal representation.
+			#Note: if this list is empty/doesn't contain enough elements, the missing colors will be replaced with the default ones
+			color_tiers = ["0xf7b29b", "0xffb545", "0xa4ff70", "0xd6d980", "0xf6ff99", "0xff7f0f", "0x1f6b62", "0x022C34", "0xffffff"]
+
+	#Fluid Card
+	[card.fluid_card]
+		#Millibuckets for Fluid Cards without Overclockers installed
+		#Range: > 0
+		base_milli_buckets_fluid = 5000
+		#Multiplier for Overclocker Cards - Number of Overclockers * this value = max millibuckets
+		#Range: > 0
+		multiplier_milli_buckets_fluid = 10000
+
+	#Chemical Card
+	[card.chemical_card]
+		#Millibuckets for Chemical Cards without Overclockers installed (only if Mekanism is installed)
+		#Range: > 0
+		base_milli_buckets_chemical = 15000
+		#Multiplier for Overclocker Cards - Number of Overclockers * this value = max millibuckets  (only if Mekanism is installed)
+		#Range: > 0
+		multiplier_milli_buckets_chemical = 60000
+

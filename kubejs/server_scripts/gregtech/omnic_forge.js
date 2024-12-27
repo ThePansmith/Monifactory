@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
 
     //Simplified Crafting
     event.recipes.gtceu.omnic_forge('kubejs:omnic_forge_dark_soularium_thruster')
-        .itemInputs('4x gtceu:dark_soularium_plate', '6x gtceu:vibrant_alloy_plate', '2x enderio:ender_crystal', '2x enderio:prescient_crystal', 'enderio:cryolobus_conduit', 'kubejs:flight_control_unit')
+        .itemInputs('4x gtceu:dark_soularium_plate', '6x gtceu:vibrant_alloy_plate', '2x enderio:ender_crystal', '2x enderio:prescient_crystal', 'laserio:energy_overclocker_card_tier_8', 'kubejs:flight_control_unit')
         .itemOutputs('kubejs:dark_soularium_thruster')
         .duration(100)
         .EUt(7680)
