@@ -17,7 +17,7 @@
 			#By adding values to this list, Energy Overclockers' name can be chosen (1 value for each tier).
 			#Each name must be provided as a string, so it must be contained within quotation marks.
 			#Note: if this list is empty/doesn't contain enough elements, the missing names will be replaced with the default ones
-			name_tiers = ["Conductive Iron Energy Overclocker", "Energetic Alloy Energy Overclocker", "Vibrant Alloy Energy Overclocker", "End Steel Energy Overclocker", "Lumium Energy Overclocker", "Signalum Energy Overclocker", "Enderium Energy Overclocker", "Cryolobus Energy Overclocker", "Sculk Superconductor Energy Overclocker"]
+			name_tiers = ["Conductive Iron FE Overclocker", "Energetic Alloy FE Overclocker", "Vibrant Alloy FE Overclocker", "End Steel FE Overclocker", "Lumium FE Overclocker", "Signalum FE Overclocker", "Enderium FE Overclocker", "Cryolobus FE Overclocker", "Sculk Superconductor FE Overclocker"]
 			#By adding values to this list, Energy Overclockers' color can be chosen (1 value for each tier).
 			#Each color must be provided as a string using either its decimal, octal or hexadecimal representation.
 			#Note: if this list is empty/doesn't contain enough elements, the missing colors will be replaced with the default ones

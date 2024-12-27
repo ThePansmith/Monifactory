@@ -1769,7 +1769,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "45561FC8024BD7F3"
-				item: "enderio:energetic_conduit"
+				item: "laserio:energy_overclocker_card_tier_2"
 				type: "item"
 			}]
 			title: "{moni.quest.4F4F120AFB3A9250.title}"

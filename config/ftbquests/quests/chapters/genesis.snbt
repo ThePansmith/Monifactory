@@ -1458,7 +1458,6 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{moni.quest.08948A23B3A17923.subtitle}"
 			tasks: [
 				{
 					count: 2L
