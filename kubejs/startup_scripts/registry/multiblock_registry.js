@@ -174,7 +174,7 @@ if (!isNormalMode) {
         .setSound(GTSoundEntries.ELECTROLYZER)
 
     // Charger
-    event.create('Charger')
+    event.create('charger')
         .category('multiblock')
         .setEUIO('in')
         .setMaxIOSize(3, 1, 0, 0)
