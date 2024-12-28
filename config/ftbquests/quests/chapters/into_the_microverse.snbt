@@ -495,16 +495,11 @@
 					item: {
 						Count: 1
 						id: "ad_astra:tier_1_rocket"
-						tag: {
-							BotariumData: {
-								StoredFluids: [{
-									Amount: 0L
-									Fluid: "minecraft:empty"
-								}]
-							}
-						}
+						tag: { }
 					}
+					optional_task: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "54E7FCF98F491577"
