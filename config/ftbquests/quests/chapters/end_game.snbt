@@ -328,7 +328,7 @@
 			]
 			id: "27EBB5AAF8A40F3D"
 			shape: "hexagon"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "624B7498A1144A6F"
 				item: "kubejs:microminer_t10"
@@ -473,6 +473,7 @@
 				"{moni.quest.4CF399EC00A65E3A.description2}"
 			]
 			id: "4CF399EC00A65E3A"
+			size: 1.5d
 			tasks: [{
 				id: "639C72FD2123C478"
 				item: "kubejs:creative_storage_data"
@@ -483,7 +484,7 @@
 			y: -4.75d
 		}
 		{
-			dependencies: ["1B1D3A66B847D129"]
+			dependencies: ["13578427FD9CC2CE"]
 			description: [
 				"{moni.quest.19084E91F357C8C2.description1}"
 				""
@@ -497,11 +498,11 @@
 				type: "item"
 			}]
 			title: "{moni.quest.19084E91F357C8C2.title}"
-			x: 41.75d
+			x: 45.75d
 			y: -26.75d
 		}
 		{
-			dependencies: ["1D00150456DEF379"]
+			dependencies: ["0DE1BF1648CAF6D6"]
 			description: ["{moni.quest.1C861E0C62D5B97D.description1}"]
 			id: "1C861E0C62D5B97D"
 			size: 1.5d
@@ -511,8 +512,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1C861E0C62D5B97D.title}"
-			x: 33.25d
-			y: -16.0d
+			x: 52.5d
+			y: -18.0d
 		}
 		{
 			dependencies: [
@@ -673,7 +674,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.73A44214C2B44D53.title}"
-			x: 45.75d
+			x: 41.75d
 			y: -26.75d
 		}
 		{
