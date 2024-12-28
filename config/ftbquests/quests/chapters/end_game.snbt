@@ -484,7 +484,7 @@
 			y: -4.75d
 		}
 		{
-			dependencies: ["1B1D3A66B847D129"]
+			dependencies: ["13578427FD9CC2CE"]
 			description: [
 				"{moni.quest.19084E91F357C8C2.description1}"
 				""
@@ -498,7 +498,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.19084E91F357C8C2.title}"
-			x: 41.75d
+			x: 45.75d
 			y: -26.75d
 		}
 		{
@@ -674,7 +674,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.73A44214C2B44D53.title}"
-			x: 45.75d
+			x: 41.75d
 			y: -26.75d
 		}
 		{
