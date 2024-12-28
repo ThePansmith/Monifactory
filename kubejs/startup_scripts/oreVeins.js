@@ -24,14 +24,14 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
 
-        event.create(',ars', 'ore')
+        event.create('mars', 'ore')
         .stateSupplier(() => Block.getBlock('ad_astra:mars_stone').defaultBlockState())
         .baseModelLocation('ad_astra:block/mars_stone')
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
 
-        event.create(',ercury', 'ore')
+        event.create('mercury', 'ore')
         .stateSupplier(() => Block.getBlock('ad_astra:mercury_stone').defaultBlockState())
         .baseModelLocation('ad_astra:block/mercury_stone')
         .unificationEnabled(true)
