@@ -15,6 +15,17 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletedYield(20)
     })
 
+    event.add('kubejs:void/oil', vein => {
+        vein.dimensions('javd:void')
+        vein.fluid(() => Fluid.of("gtceu:oil").fluid)
+        vein.weight(20)
+        vein.minimumYield(200)
+        vein.maximumYield(250)
+        vein.depletionAmount(1)
+        vein.depletionChance(50)
+        vein.depletedYield(20)
+    })
+
     
 
     // Luna fluid veins	
