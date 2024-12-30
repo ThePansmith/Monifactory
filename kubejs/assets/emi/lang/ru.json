@@ -1,17 +1,17 @@
 {
     "tag.item.gtceu.circuits": "Микросхемы",
     "tag.item.gtceu.circuits.ulv": "ULV Микросхемы",
-    "tag.item.gtceu.circuits.lv": "",
-    "tag.item.gtceu.circuits.mv": "",
-    "tag.item.gtceu.circuits.hv": "",
-    "tag.item.gtceu.circuits.ev": "",
-    "tag.item.gtceu.circuits.iv": "",
-    "tag.item.gtceu.circuits.luv": "",
-    "tag.item.gtceu.circuits.zpm": "",
-    "tag.item.moni_quest.backpack": "",
+    "tag.item.gtceu.circuits.lv": "LV Микросхемы",
+    "tag.item.gtceu.circuits.mv": "MV Микросхемы",
+    "tag.item.gtceu.circuits.hv": "HV Микросхемы",
+    "tag.item.gtceu.circuits.ev": "EV Микросхемы",
+    "tag.item.gtceu.circuits.iv": "IV Микросхемы",
+    "tag.item.gtceu.circuits.luv": "LuV Микросхемы",
+    "tag.item.gtceu.circuits.zpm": "ZPM Микросхемы",
+    "tag.item.moni_quest.backpack": "Рюкзаки",
     "tag.item.moni.output_bus": "",
     "tag.item.moni.input_bus": "",
     "tag.item.moni.input_hatch": "",
     "tag.item.moni.output_hatch": "",
-    "tag.item.moni.coins": ""
+    "tag.item.moni.coins": "Монеты"
 }
