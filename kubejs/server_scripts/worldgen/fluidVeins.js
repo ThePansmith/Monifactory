@@ -12,7 +12,7 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.maximumYield(250)
         vein.depletionAmount(1)
         vein.depletionChance(50)
-        vein.depletedYield(3)
+        vein.depletedYield(20)
     })
 
     
