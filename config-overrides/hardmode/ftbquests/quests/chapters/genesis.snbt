@@ -41,7 +41,7 @@
 			description: [
 				"{moni.quest.2A511DB40C66CF35.description1}"
 				""
-				"[\"\",{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description1\"},{\"color\":\"blue\",\"underlined\":1,\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description3\"}]"
+				"[\"\",{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description3\"}]"
 				""
 				"{moni.quest.2A511DB40C66CF35.description3}"
 			]
@@ -77,7 +77,7 @@
 				""
 				"{moni.quest.66FCC26399376B55.description8}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.66FCC26399376B55.rich_description1\"},{\"underlined\":1,\"translate\":\"moni.quest.66FCC26399376B55.rich_description2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.66FCC26399376B55.rich_description.hover_text2\"}},{\"translate\":\"moni.quest.66FCC26399376B55.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.66FCC26399376B55.rich_description1\"},{\"underlined\":true,\"translate\":\"moni.quest.66FCC26399376B55.rich_description2\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.66FCC26399376B55.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.66FCC26399376B55.rich_description3\"}]"
 			]
 			icon: "minecraft:crafting_table"
 			id: "66FCC26399376B55"
@@ -210,13 +210,13 @@
 				""
 				"{moni.quest.3B200AD6EFF90DFA.description2}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description1\"},{\"color\":\"gold\",\"underlined\":1,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text2\"}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description1\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description2\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description3\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description4\"},{\"color\":\"gold\",\"underlined\":1,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description5\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text5\"}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description6\"}]"
+				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description4\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description5\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text5\"}}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description6\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description7\"},{\"color\":\"gold\",\"underlined\":1,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description8\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text8\"}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description9\"},{\"color\":\"gold\",\"underlined\":1,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description10\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text10\"}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description11\"}]"
+				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description7\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description8\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text8\"}}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description9\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description10\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text10\"}}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description11\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description12\"},{\"underlined\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description13\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"58566C7BF4C22D86\"}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description14\"}]"
+				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description12\"},{\"underlined\":true,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description13\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"58566C7BF4C22D86\"}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description14\"}]"
 			]
 			disable_toast: true
 			icon: "ftbquests:book"
@@ -415,7 +415,7 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description1\"},{\"color\":\"yellow\",\"underlined\":1,\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"25FEB9E61EEC1A96\"}},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description.hover_text2\"}},{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"25FEB9E61EEC1A96\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description3\"}]"
 				""
 				"{moni.quest.0C173EF148EFEF8E.description2}"
 				""
@@ -491,7 +491,7 @@
 			description: [
 				"{moni.quest.58566C7BF4C22D86.description1}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.58566C7BF4C22D86.rich_description1\"},{\"underlined\":1,\"translate\":\"moni.quest.58566C7BF4C22D86.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3B200AD6EFF90DFA\"}},{\"translate\":\"moni.quest.58566C7BF4C22D86.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.58566C7BF4C22D86.rich_description1\"},{\"underlined\":true,\"translate\":\"moni.quest.58566C7BF4C22D86.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3B200AD6EFF90DFA\"}},{\"translate\":\"moni.quest.58566C7BF4C22D86.rich_description3\"}]"
 				""
 				"{moni.quest.58566C7BF4C22D86.description3}"
 				""
@@ -2115,7 +2115,7 @@
 			description: [
 				"{moni.quest.17E92ED356B6737F.description1}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description1\"},{\"color\":\"blue\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description2\"},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description3\"},{\"color\":\"green\",\"underlined\":1,\"translate\":\"moni.quest.17E92ED356B6737F.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"}},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description.hover_text4\"}},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description5\"},{\"color\":\"yellow\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description6\"}]"
+				"[\"\",{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description1\"},{\"color\":\"blue\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description2\"},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description3\"},{\"color\":\"green\",\"underlined\":true,\"translate\":\"moni.quest.17E92ED356B6737F.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description.hover_text4\"}}},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description5\"},{\"color\":\"yellow\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description6\"}]"
 				""
 				"{moni.quest.17E92ED356B6737F.description3.hardmode}"
 				""
@@ -2165,9 +2165,9 @@
 				""
 				"{moni.quest.70026930847E8EC0.description3}"
 				"{@pagebreak}"
-				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description1\"},{\"color\":\"blue\",\"underlined\":1,\"translate\":\"moni.quest.70026930847E8EC0.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/ThePansmith\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/ThePansmith\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description3\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description4\"},{\"color\":\"blue\",\"underlined\":1,\"translate\":\"moni.quest.70026930847E8EC0.rich_description5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/ThePansmith/Monifactory\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description6\"}]"
+				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description4\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/ThePansmith/Monifactory\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description6\"}]"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -2186,7 +2186,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"[\"\",{\"color\":\"dark_green\",\"underlined\":1,\"translate\":\"moni.quest.73C713703AB6387C.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"}},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.73C713703AB6387C.rich_description.hover_text1\"}},{\"color\":\"dark_green\",\"translate\":\"moni.quest.73C713703AB6387C.rich_description2\"}]"
+				"[\"\",{\"color\":\"dark_green\",\"underlined\":true,\"translate\":\"moni.quest.73C713703AB6387C.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.73C713703AB6387C.rich_description.hover_text1\"}}},{\"color\":\"dark_green\",\"translate\":\"moni.quest.73C713703AB6387C.rich_description2\"}]"
 				""
 				"{moni.quest.73C713703AB6387C.description2}"
 			]
@@ -2206,7 +2206,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.400AD2B735FF135D.rich_description1\"},{\"color\":\"yellow\",\"underlined\":1,\"translate\":\"moni.quest.400AD2B735FF135D.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"395B849AC6294153\"}},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.400AD2B735FF135D.rich_description.hover_text2\"}},{\"translate\":\"moni.quest.400AD2B735FF135D.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.400AD2B735FF135D.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.400AD2B735FF135D.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"395B849AC6294153\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.400AD2B735FF135D.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.400AD2B735FF135D.rich_description3\"}]"
 				""
 				"{moni.quest.400AD2B735FF135D.description2.hardmode}"
 			]
@@ -2253,7 +2253,7 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["[\"\",{\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description1\"},{\"color\":\"aqua\",\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description2\"},{\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description3\"},{\"color\":\"gold\",\"underlined\":1,\"bold\":1,\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description.hover_text4\"}}]"]
+			description: ["[\"\",{\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description1\"},{\"color\":\"aqua\",\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description2\"},{\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description3\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description4\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description.hover_text4\"}}}]"]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:chest"

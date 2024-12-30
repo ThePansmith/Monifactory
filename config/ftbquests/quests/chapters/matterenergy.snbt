@@ -1011,7 +1011,7 @@
 				"{moni.quest.70D9B3C6539720DE.description6}"
 				""
 				"{moni.quest.70D9B3C6539720DE.description7}"
-				"[\"\",{\"underlined\":1,\"translate\":\"moni.quest.70D9B3C6539720DE.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0DB8063A7972E1C0\"}}]"
+				"[\"\",{\"underlined\":true,\"translate\":\"moni.quest.70D9B3C6539720DE.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0DB8063A7972E1C0\"}}]"
 			]
 			icon: "packagedexcrafting:ultimate_crafter"
 			id: "70D9B3C6539720DE"

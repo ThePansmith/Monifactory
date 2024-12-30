@@ -1762,7 +1762,7 @@
 				"57E7182198B2EA9A"
 			]
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description1\"},{\"color\":\"yellow\",\"underlined\":1,\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"}},{\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"}},{\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description3\"}]"
 				""
 				"{moni.quest.0C10EC03A01E7334.description2}"
 				""

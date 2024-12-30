@@ -1118,7 +1118,7 @@
 				"{@pagebreak}"
 				"{moni.quest.4174A6C6403DD245.description4}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description1.hardmode\"},{\"color\":\"blue\",\"underlined\":1,\"translate\":\"moni.quest.4174A6C6403DD245.rich_description2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"}},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description.hover_text2\"}},{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description1.hardmode\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.4174A6C6403DD245.rich_description2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description3\"}]"
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"

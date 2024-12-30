@@ -164,7 +164,7 @@
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
-			description: ["[\"\",{\"translate\":\"moni.quest.1FF652D16CE97C79.rich_description1\"},{\"color\":\"yellow\",\"underlined\":1,\"translate\":\"moni.quest.1FF652D16CE97C79.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1A427A8CB43C8B59\"}},{\"translate\":\"moni.quest.1FF652D16CE97C79.rich_description3\"}]"]
+			description: ["[\"\",{\"translate\":\"moni.quest.1FF652D16CE97C79.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.1FF652D16CE97C79.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1A427A8CB43C8B59\"}},{\"translate\":\"moni.quest.1FF652D16CE97C79.rich_description3\"}]"]
 			id: "1FF652D16CE97C79"
 			rewards: [{
 				id: "718769C41EB34A2D"
@@ -1385,7 +1385,7 @@
 				"{@pagebreak}"
 				"{moni.quest.4174A6C6403DD245.description4}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description1\"},{\"color\":\"blue\",\"underlined\":1,\"translate\":\"moni.quest.4174A6C6403DD245.rich_description2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"}},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description.hover_text2\"}},{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.4174A6C6403DD245.rich_description2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description3\"}]"
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"
