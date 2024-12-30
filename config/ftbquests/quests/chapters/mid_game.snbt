@@ -2931,7 +2931,7 @@
 				""
 				"{moni.quest.745628397790ED7A.description14}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.745628397790ED7A.rich_description1\"},{\"color\":\"yellow\",\"underlined\":1,\"translate\":\"moni.quest.745628397790ED7A.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"40F7695BE1E65C41\"}},{\"translate\":\"moni.quest.745628397790ED7A.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.745628397790ED7A.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.745628397790ED7A.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"40F7695BE1E65C41\"}},{\"translate\":\"moni.quest.745628397790ED7A.rich_description3\"}]"
 			]
 			disable_toast: true
 			icon: "nuclearcraft:fission_reactor_controller"
@@ -3011,7 +3011,7 @@
 			description: [
 				"{moni.quest.059A9B12C8478025.description1}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.059A9B12C8478025.rich_description1\"},{\"underlined\":1,\"translate\":\"moni.quest.059A9B12C8478025.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4672EE66D51C32FF\"}},{\"translate\":\"moni.quest.059A9B12C8478025.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.059A9B12C8478025.rich_description1\"},{\"underlined\":true,\"translate\":\"moni.quest.059A9B12C8478025.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4672EE66D51C32FF\"}},{\"translate\":\"moni.quest.059A9B12C8478025.rich_description3\"}]"
 			]
 			icon: "ad_astra:oxygen_distributor"
 			id: "059A9B12C8478025"

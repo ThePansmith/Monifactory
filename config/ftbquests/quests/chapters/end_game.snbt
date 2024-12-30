@@ -523,7 +523,7 @@
 			description: [
 				"{moni.quest.2F21C6B6F145EA81.description1}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.2F21C6B6F145EA81.rich_description1\"},{\"underlined\":1,\"translate\":\"moni.quest.2F21C6B6F145EA81.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"26C9F1514FD08C81\"}},{\"translate\":\"moni.quest.2F21C6B6F145EA81.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.2F21C6B6F145EA81.rich_description1\"},{\"underlined\":true,\"translate\":\"moni.quest.2F21C6B6F145EA81.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"26C9F1514FD08C81\"}},{\"translate\":\"moni.quest.2F21C6B6F145EA81.rich_description3\"}]"
 				""
 				"{moni.quest.2F21C6B6F145EA81.description3}"
 			]
