@@ -168,12 +168,12 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', '4x kubejs:wither_realm_data', '64x kubejs:petrotheum_dust')
         .itemOutputs(
-            '64x gtceu:raw_cooperite',
-            '64x gtceu:raw_cooperite',
-            '64x gtceu:raw_cooperite',
-            '64x gtceu:raw_cooperite',
-            '64x gtceu:raw_cooperite',
-            '64x gtceu:raw_cooperite',
+            '64x gtceu:endstone_cooperite_ore',
+            '64x gtceu:endstone_cooperite_ore',
+            '64x gtceu:endstone_cooperite_ore',
+            '64x gtceu:endstone_cooperite_ore',
+            '64x gtceu:endstone_cooperite_ore',
+            '64x gtceu:endstone_cooperite_ore',
             '64x gtceu:platinum_group_sludge_dust',
             '64x gtceu:rock_salt_dust',
             '64x gtceu:rock_salt_dust'
