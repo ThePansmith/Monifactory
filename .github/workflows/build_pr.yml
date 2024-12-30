@@ -5,7 +5,7 @@ on:
       target:
         description: "Build what"
         required: true
-        default: "build-client"
+        default: "build-all"
         type: choice
         options:
           - build-client
@@ -22,6 +22,8 @@ on:
         required: true
 
 jobs:
+  pre-build:
+    uses: ./.github/workflows/get_version_info.yml
   pack_pr:
     if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Pack PR
