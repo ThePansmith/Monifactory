@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
 
     function canfluid(name, input) {
         event.remove({ output: `nuclearcraft:${name}_heat_sink` })
-        event.recipes.gtceu.canner(name)
+        event.recipes.gtceu.canner(`${name}_heat_sink`)
             .itemInputs('nuclearcraft:empty_heat_sink')
             .inputFluids(Fluid.of(input, 1000))
             .itemOutputs(`nuclearcraft:${name}_heat_sink`)
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
 
     function canmod(name, input) {
         event.remove({ output: `nuclearcraft:${name}_block` })
-        event.recipes.gtceu.canner(name)
+        event.recipes.gtceu.canner(`${name}_heat_sink`)
             .itemInputs('nuclearcraft:empty_heat_sink', `9x ${input}`)
             .itemOutputs(`nuclearcraft:${name}_block`)
             .duration(400)
@@ -162,6 +162,43 @@ ServerEvents.recipes(event => {
         ], {
             T: 'nuclearcraft:tough_alloy_ingot',
             S: 'gtceu:steel_ingot'
+        }
+    )
+
+    function cansolidactive(name, input) {
+        event.remove({ output: `nuclearcraft:active_${name}_heat_sink` })
+        event.recipes.gtceu.canner(`active_${name}_heat_sink`)
+            .itemInputs('nuclearcraft:empty_active_heat_sink', `16x ${input}`)
+            .itemOutputs(`nuclearcraft:active_${name}_heat_sink`)
+            .duration(400)
+            .EUt(2)
+    }
+
+    function canfluidactive(name, input) {
+        event.remove({ output: `nuclearcraft:active_${name}_heat_sink` })
+        event.recipes.gtceu.canner(`active_${name}heat_sink`)
+            .itemInputs('nuclearcraft:empty_active_heat_sink')
+            .inputFluids(Fluid.of(input, 1000))
+            .itemOutputs(`nuclearcraft:active_${name}_heat_sink`)
+            .duration(400)
+            .EUt(2)
+    }
+
+    canfluidactive('water', "minecraft:water")
+    cansolidactive('redstone', "minecraft:redstone")
+    canfluidactive('liquid_helium', "gtceu:helium")
+    cansolidactive('enderium', "gtceu:enderium_dust")
+    canfluidactive('cryotheum', "kubejs:molten_cryotheum")
+
+    event.remove({ id: "nuclearcraft:empty_active_heat_sink" })
+    event.shaped(
+        "nuclearcraft:empty_active_heat_sink", [
+            "TST",
+            "S S",
+            "TST"
+        ], {
+            T: 'nuclearcraft:tough_alloy_ingot',
+            S: 'gtceu:dark_steel_ingot'
         }
     )
 
