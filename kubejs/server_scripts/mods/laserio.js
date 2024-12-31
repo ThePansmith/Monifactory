@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
 
     //Replace Logic chips with circuits.
     event.remove({ output: ['laserio:logic_chip_raw', 'laserio:logic_chip'] })
-    event.replaceInput({ mod: 'laserio', not: [{ id: 'laserio:card_item' }, { id: 'laserio:card_fluid' }, { id: 'laserio:card_energy' }, { id: 'laserio:card_redstone' }] }, 'laserio:logic_chip', 'cardChip')
+    event.replaceInput({ mod: 'laserio', not: [{ id: 'laserio:card_item' }, { id: 'laserio:card_fluid' }, { id: 'laserio:card_energy' }, { id: 'laserio:card_redstone' }] }, 'laserio:logic_chip', cardChip)
     
     const Cards = [
         ['item', 'gtceu:pulsating_alloy_plate'],
