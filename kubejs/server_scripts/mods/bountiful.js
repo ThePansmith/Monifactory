@@ -76,9 +76,9 @@ ServerEvents.recipes(event => {
     ], {
         P: 'gtceu:vibrant_alloy_plate',
         G: 'gtceu:electrical_steel_gear',
-        A: 'enderio:item_conduit',
-        B: 'enderio:redstone_conduit',
-        C: 'enderio:conductive_conduit',
-        D: 'enderio:pressurized_fluid_conduit'
+        A: 'laserio:item_card',
+        B: 'laserio:fluid_card',
+        C: 'laserio:energy_card',
+        D: 'laserio:redstone_card'
     }).id("kubejs:bountiful/ender_widget")
 })

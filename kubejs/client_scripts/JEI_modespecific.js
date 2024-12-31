@@ -24,6 +24,12 @@ JEIEvents.hideItems(event => {
     }
 
     if (isExpertMode) {
+        event.hide(/laserio:laser/)
+        event.hide(/laserio:filter/)
+        event.hide(/laserio:card_/)
+        event.hide('laserio:overclocker_node')
+        event.hide('laserio:logistic_overclocker_card')
+        event.hide(/gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter/)
         event.hide(/gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter/)
     }
 })

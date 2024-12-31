@@ -206,14 +206,14 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    //cryolobus
+    //Cryolobus
     event.recipes.gtceu.assembler('kubejs:cryolobus_conduit')
         .itemInputs('2x gtceu:cryolobus_single_wire', 'enderio:enderium_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:cryolobus_conduit')
         .duration(80)
         .EUt(16)
 
-    //kubejs Superconductor
+    //Sculk Superconductor
     event.recipes.gtceu.assembler('kubejs:sculk_superconductor_conduit')
         .itemInputs('2x gtceu:sculk_superconductor_single_wire', 'enderio:cryolobus_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:sculk_superconductor_conduit')
