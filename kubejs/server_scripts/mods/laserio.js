@@ -172,9 +172,9 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     //Overclockers
-    event.remove({ output: ['laserio:logistic_overclocker_card', 'laserio:overclocker_node'] })
+    event.remove({ output: ['laserio:overclocker_card', 'laserio:overclocker_node'] })
     event.shaped(
-        "laserio:logistic_overclocker_card", [
+        "laserio:overclocker_card", [
         "E",
         "P",
         "A"
