@@ -768,7 +768,7 @@ ServerEvents.recipes(event => {
             .chancedOutput('gtceu:lanthanum_dust', 1500, 0)
             .chancedOutput('gtceu:lutetium_dust', 600, 0)
             .chancedOutput('gtceu:europium_dust', 600, 0)
-            .duration(50).EUt(1966080)
+            .duration(50).EUt(GTValues.VA[GTValues.UV])
 
         // Quantum Flux Recipe
         event.recipes.gtceu.mixer('quantum_flux_hm')
