@@ -302,7 +302,8 @@ ServerEvents.recipes(event => {
             .duration(5).EUt(7)
 
         event.recipes.gtceu.large_chemical_reactor('neocryolite')
-            .itemInputs('9x gtceu:caesium_hydroxide_dust', '3x gtceu:naquadah_hydroxide_dust', 'gtceu:signalum_dust')
+            .itemInputs('9x gtceu:caesium_hydroxide_dust', '3x gtceu:naquadah_hydroxide_dust')
+            .notConsumable('gtceu:signalum_dust')
             .inputFluids('gtceu:hydrofluoric_acid 6000')
             .outputFluids('gtceu:neocryolite 1000', 'minecraft:water 6000')
             .duration(250).EUt(7680)
