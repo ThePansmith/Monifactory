@@ -775,16 +775,22 @@ ServerEvents.recipes(event => {
     event.shapeless('enderio:pressurized_fluid_tank', ['enderio:pressurized_fluid_tank'])
 
     //Cheaper me conduit recipes
-    event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
+    if(!isExpertMode) {
+        event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
         .itemInputs("4x enderio:me_conduit", "5x enderio:conduit_binder")
-        .itemOutputs("2x enderio:dense_me_conduit")
-        .duration(80)
-        .EUt(16)
-    event.recipes.gtceu.assembler("kubejs:me_conduit")
-        .itemInputs("3x ae2:fluix_covered_cable", "6x enderio:conduit_binder")
-        .itemOutputs("8x enderio:me_conduit")
-        .duration(100)
-        .EUt(16)
+            .itemOutputs("2x enderio:dense_me_conduit")
+            .duration(80)
+            .EUt(16)
+        event.recipes.gtceu.assembler("kubejs:me_conduit")
+            .itemInputs("3x ae2:fluix_covered_cable", "6x enderio:conduit_binder")
+            .itemOutputs("8x enderio:me_conduit")
+            .duration(100)
+            .EUt(16)
+    } else {
+        event.remove({ output: "enderio:me_conduit" })
+        event.remove({ output: "enderio:dense_me_conduit" })
+    }
+    
 
     event.replaceInput({ output: 'enderio:extraction_speed_upgrade_3' }, 'gtceu:soularium_ingot', 'gtceu:aluminium_ingot')
 

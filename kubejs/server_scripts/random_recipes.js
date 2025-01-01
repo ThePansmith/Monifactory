@@ -863,7 +863,7 @@ ServerEvents.recipes(event => {
         .itemInputs('8x gtceu:sodium_lead_alloy_dust')
         .inputFluids('gtceu:chloroethane 4000')
         .outputFluids('gtceu:tetraethyllead 1000')
-        .itemOutputs('4x gtceu:salt_dust', '3x gtceu:lead_dust')
+        .itemOutputs('8x gtceu:salt_dust', '3x gtceu:lead_dust')
         .duration(300)
         .EUt(480)
 

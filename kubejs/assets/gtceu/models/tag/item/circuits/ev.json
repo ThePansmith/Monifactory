@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "kubejs:item/circuits/universal/ev_universal_circuit"
+    }
+  }

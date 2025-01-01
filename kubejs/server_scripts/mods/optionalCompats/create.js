@@ -105,13 +105,6 @@ if (Platform.isLoaded('create')) {
             .duration(200)
             .EUt(7)
 
-        event.recipes.gtceu.mixer("kubejs:mud")
-            .itemInputs('minecraft:dirt')
-            .inputFluids(Fluid.of('minecraft:water', 250))
-            .itemOutputs('minecraft:mud')
-            .duration(40)
-            .EUt(7)
-
         event.recipes.gtceu.mixer("kubejs:dough")
             .itemInputs('gtceu:wheat_dust')
             .inputFluids(Fluid.of('minecraft:water', 1000))
@@ -157,9 +150,10 @@ if (Platform.isLoaded('create')) {
             .duration(600)
             .EUt(120)
 
-        event.recipes.gtceu.mixer("kubejs:rose_quartz")
-            .itemInputs('8x minecraft:redstone', 'minecraft:quartz')
+        event.recipes.gtceu.autoclave("kubejs:rose_quartz")
+            .itemInputs('minecraft:quartz')
             .itemOutputs('create:rose_quartz')
+            .inputFluids('gtceu:redstone 1152')
             .duration(200)
             .EUt(16)
             .circuit(6)
