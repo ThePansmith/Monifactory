@@ -479,7 +479,6 @@
   "thermal.emi.tooltip": "§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.",
 
   "gtceu.energy_converter.tooltip": "§7EU wires will convert to RF if plugged into a RF Machine",
-  "gtceu.negation_operator.tooltip": "Negation operator [!] is nonfunctional.",
   "gtceu.basic_tape.tooltip": "§7Used to wrap up Crates for transport.",
   "gtceu.ender_fluid_link_cover.tooltip": "§4Not yet implemented.",
   "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
