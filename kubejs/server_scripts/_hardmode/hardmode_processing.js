@@ -439,6 +439,13 @@ ServerEvents.recipes(event => {
             .outputFluids('minecraft:water 1000')
             .duration(5).EUt(60)
 
+        event.recipes.gtceu.chemical_reactor('sodium_nitrate_alternate')
+            .itemInputs('gtceu:sodium_dust')
+            .inputFluids('gtceu:nitric_acid 1000')
+            .itemOutputs('5x gtceu:sodium_nitrate_dust')
+            .outputFluids('gtceu:hydrogen 1000')
+            .duration(5).EUt(60)
+
         // Platinum Group Sludge
         event.recipes.gtceu.chemical_bath('bathe_platinum_group_sludge_dust')
             .itemInputs('2x gtceu:platinum_group_sludge_dust')
@@ -517,7 +524,7 @@ ServerEvents.recipes(event => {
             .itemInputs('3x gtceu:palladium_raw_dust')
             .inputFluids('gtceu:formic_acid 1000')
             .itemOutputs('gtceu:palladium_dust')
-            .outputFluids('gtceu:hydrochloric_acid 2000', 'gtceu:carbon_dioxide 1000')
+            .outputFluids('gtceu:hydrochloric_acid 4000', 'gtceu:carbon_dioxide 1000')
             .duration(250).EUt(30)
 
         event.recipes.gtceu.sifter('sift_crude_palladium_residue_dust')
@@ -528,7 +535,7 @@ ServerEvents.recipes(event => {
         // Rhodium
         event.recipes.gtceu.electric_blast_furnace('platinum_group_residue_to_iridium_group_sludge')
             .itemInputs('gtceu:platinum_group_residue_dust', '11x gtceu:potassium_pyrosulfate_dust')
-            .itemOutputs('gtceu:rhodium_sulfate_dust', '14x gtceu:potassium_sulfate_dust', 'gtceu:iridium_group_sludge_dust')
+            .itemOutputs('gtceu:rhodium_sulfate_dust', '7x gtceu:potassium_sulfate_dust', 'gtceu:iridium_group_sludge_dust')
             .duration(200).EUt(120)
             .blastFurnaceTemp(1048)
 
@@ -627,10 +634,10 @@ ServerEvents.recipes(event => {
             .duration(300).EUt(30)
 
         event.recipes.gtceu.chemical_reactor('ammonium_hexachloroiridiate_to_iridium')
-            .itemInputs('9x gtceu:ammonium_hexachloroiridiate_dust')
-            .inputFluids('gtceu:hydrogen 4000')
+            .itemInputs('8x gtceu:ammonium_hexachloroiridiate_dust')
+            .inputFluids('gtceu:hydrogen 12000')
             .itemOutputs('gtceu:iridium_dust')
-            .outputFluids('gtceu:hydrochloric_acid 6000', 'gtceu:ammonia 2000')
+            .outputFluids('gtceu:hydrochloric_acid 18000', 'gtceu:ammonia 2000')
             .duration(150).EUt(7680)
 
         // Dioxygen Difluoride
