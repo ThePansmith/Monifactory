@@ -296,8 +296,9 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.chemical_reactor('caesium_hydroxide')
             .itemInputs('gtceu:caesium_dust')
-            .inputFluids('minecraft:water 1000')
+            .inputFluids('minecraft:water 3000')
             .itemOutputs('3x gtceu:caesium_hydroxide_dust')
+            .outputFluids('gtceu:hydrogen 3000')
             .duration(5).EUt(7)
 
         event.recipes.gtceu.large_chemical_reactor('neocryolite')
