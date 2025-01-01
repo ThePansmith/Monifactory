@@ -148,7 +148,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
     tooltip.add(/^gtceu:.*a_energy_converter$/, Text.translatable("gtceu.energy_converter.tooltip"));
-    tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red(Text.translatable("gtceu.negation_operator.tooltip")));
     tooltip.add('gtceu:basic_tape', Text.translatable('gtceu.basic_tape.tooltip'));
     tooltip.add('gtceu:ender_fluid_link_cover', Text.translatable('gtceu.ender_fluid_link_cover.tooltip'));
     tooltip.add('gtceu:nightvision_goggles', Text.translatable('gtceu.nightvision_goggles.tooltip'));
