@@ -161,6 +161,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x243e1c)
         .components('1x thorium', '4x carbon', '4x oxygen')
 
+        event.create('terbium_salt')
+        .dust()
+        .color(0x7f7367)
+        .components('1x terbium', '2x chlorine')
+        .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.DISABLE_DECOMPOSITION)
+
         event.create('magnetic_terbium')
         .ingot()
         .components('1x terbium')

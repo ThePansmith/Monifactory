@@ -379,9 +379,6 @@ StartupEvents.registry('item', event => {
     event.create('rare_earth_sulfate').texture('kubejs:item/terbium/rare_earth_sulfate')
     event.create('rare_earth_oxide').texture('kubejs:item/terbium/rare_earth_oxide')
     event.create('rare_earth_salt').texture('kubejs:item/terbium/rare_earth_salt')
-    event.create('terbium_salt').texture('kubejs:item/terbium/terbium_salt')
-
-
 
 
     // Sculk bioalloy processing intermediate products
