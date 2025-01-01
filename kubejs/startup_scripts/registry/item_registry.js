@@ -139,7 +139,9 @@ StartupEvents.registry('item', event => {
     if (!isNormalMode) event.create('omnic_data')
 
     //Infinity Fluid Cell Base
-    event.create('infinity_cell_base').displayName("ME Infinity Cell Base")
+    if(isNormalMode) {
+        event.create('infinity_cell_base').displayName("ME Infinity Cell Base")
+    }
 
 
     // Endgame Items
