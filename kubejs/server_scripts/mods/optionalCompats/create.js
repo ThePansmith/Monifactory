@@ -150,9 +150,10 @@ if (Platform.isLoaded('create')) {
             .duration(600)
             .EUt(120)
 
-        event.recipes.gtceu.mixer("kubejs:rose_quartz")
-            .itemInputs('8x minecraft:redstone', 'minecraft:quartz')
+        event.recipes.gtceu.autoclave("kubejs:rose_quartz")
+            .itemInputs('minecraft:quartz')
             .itemOutputs('create:rose_quartz')
+            .inputFluids('gtceu:redstone 1152')
             .duration(200)
             .EUt(16)
             .circuit(6)
