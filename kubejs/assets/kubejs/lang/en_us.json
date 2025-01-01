@@ -482,7 +482,8 @@
   "gtceu.basic_tape.tooltip": "§7Used to wrap up Crates for transport.",
   "gtceu.ender_fluid_link_cover.tooltip": "§4Not yet implemented.",
   "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
-
+  "gtceu.robot_arm.tooltip": "§4Advanced control over item transfer not possible with pipes.",
+  "gtceu.fluid_regulator.tooltip": "§4Advanced control over fluid transfer not possible with pipes.",
 
   "functionalstorage.storage_controller.tooltip": "§7Previously known as a Storage Controller",
   "functionalstorage.framed_storage_controller.tooltip": "§7Previously known as a Framed Storage Controller",
