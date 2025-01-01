@@ -105,13 +105,6 @@ if (Platform.isLoaded('create')) {
             .duration(200)
             .EUt(7)
 
-        event.recipes.gtceu.mixer("kubejs:mud")
-            .itemInputs('minecraft:dirt')
-            .inputFluids(Fluid.of('minecraft:water', 250))
-            .itemOutputs('minecraft:mud')
-            .duration(40)
-            .EUt(7)
-
         event.recipes.gtceu.mixer("kubejs:dough")
             .itemInputs('gtceu:wheat_dust')
             .inputFluids(Fluid.of('minecraft:water', 1000))
