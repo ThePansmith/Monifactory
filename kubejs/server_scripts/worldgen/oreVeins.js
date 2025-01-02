@@ -224,7 +224,7 @@ GTCEuServerEvents.oreVeins(event => {
     // Mars veins
     event.add("kubejs:mars/tungstate_vein_mars", vein => {
         vein.weight(40)
-        vein.clusterSize(30)
+        vein.clusterSize(35)
         vein.layer("mars")
         vein.dimensions("ad_astra:mars")
         vein.heightRangeUniform(10, 80)
@@ -350,7 +350,7 @@ GTCEuServerEvents.oreVeins(event => {
     // Venus veins
     event.add("kubejs:venus/tungstotitanate_vein_venus", vein => {
         vein.weight(40)
-        vein.clusterSize(30)
+        vein.clusterSize(50)
         vein.layer("venus")
         vein.dimensions("ad_astra:venus")
         vein.heightRangeUniform(10, 80)
