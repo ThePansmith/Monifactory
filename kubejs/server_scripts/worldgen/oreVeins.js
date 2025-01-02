@@ -458,11 +458,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
-    
-})
-
-// Increase vein density
-GTCEuServerEvents.oreVeins(event => {
+    // Increase vein density
     event.modifyAll((id, vein) => {
         vein.density(0.5)
         vein.discardChanceOnAirExposure(0.3)
