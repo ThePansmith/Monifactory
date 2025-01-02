@@ -1,5 +1,5 @@
 /**
- * Registry for Gregtech Modern-style ore veins.
+ * Definitions for new ore veins using the GregTech: Modern API & tweaks for existing veins.
  */
 
 GTCEuServerEvents.oreVeins(event => {
@@ -221,6 +221,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
+    // Mars veins
     event.add("kubejs:mars/tungstate_vein_mars", vein => {
         vein.weight(40)
         vein.clusterSize(30)
@@ -346,6 +347,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
+    // Venus veins
     event.add("kubejs:venus/tungstotitanate_vein_venus", vein => {
         vein.weight(40)
         vein.clusterSize(30)
@@ -434,6 +436,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
+    // Mercury veins
     event.add("kubejs:mercury/mercury_vein_mercury", vein => {
         vein.weight(40)
         vein.clusterSize(30)
@@ -467,7 +470,7 @@ GTCEuServerEvents.oreVeins(event => {
 // Remove Naquadah veins
 GTCEuServerEvents.oreVeins(event => {
     event.remove("gtceu:naquadah_vein") 
-})  
+})
 
 
 GTCEuServerEvents.oreVeins(event => {
