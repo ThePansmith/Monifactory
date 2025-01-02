@@ -240,7 +240,7 @@ GTCEuServerEvents.oreVeins(event => {
     
     event.add("kubejs:mars/iron_vein_mars", vein => {
         vein.weight(40)
-        vein.clusterSize(30)
+        vein.clusterSize(50)
         vein.layer("mars")
         vein.dimensions("ad_astra:mars")
         vein.heightRangeUniform(10, 80)
@@ -252,8 +252,8 @@ GTCEuServerEvents.oreVeins(event => {
             .rareBlockChance(0.33)
             .veininessThreshold(0.1)
             .maxRichnessThreshold(0.4)
-            .minRichness(0.2)
-            .maxRichness(0.5)
+            .minRichness(0.3)
+            .maxRichness(0.6)
             .edgeRoundoffBegin(12)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
@@ -302,7 +302,7 @@ GTCEuServerEvents.oreVeins(event => {
     
     event.add("kubejs:mars/copper_vein_mars", vein => {
         vein.weight(40)
-        vein.clusterSize(30)
+        vein.clusterSize(35)
         vein.layer("mars")
         vein.dimensions("ad_astra:mars")
         vein.heightRangeUniform(10, 80)
@@ -314,8 +314,8 @@ GTCEuServerEvents.oreVeins(event => {
             .rareBlockChance(0.33)
             .veininessThreshold(0.1)
             .maxRichnessThreshold(0.4)
-            .minRichness(0.2)
-            .maxRichness(0.5)
+            .minRichness(0.4)
+            .maxRichness(0.7)
             .edgeRoundoffBegin(12)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
@@ -337,7 +337,7 @@ GTCEuServerEvents.oreVeins(event => {
             .rareBlockChance(0.33)
             .veininessThreshold(0.1)
             .maxRichnessThreshold(0.4)
-            .minRichness(0.2)
+            .minRichness(0.4)
             .maxRichness(0.5)
             .edgeRoundoffBegin(12)
         )
@@ -367,7 +367,7 @@ GTCEuServerEvents.oreVeins(event => {
     
     event.add("kubejs:venus/sulfur_vein_venus", vein => {
         vein.weight(40)
-        vein.clusterSize(30)
+        vein.clusterSize(75)
         vein.layer("venus")
         vein.dimensions("ad_astra:venus")
         vein.heightRangeUniform(10, 80)
@@ -378,8 +378,8 @@ GTCEuServerEvents.oreVeins(event => {
             .rareBlockChance(0.33)
             .veininessThreshold(0.1)
             .maxRichnessThreshold(0.4)
-            .minRichness(0.2)
-            .maxRichness(0.5)
+            .minRichness(0.3)
+            .maxRichness(0.7)
             .edgeRoundoffBegin(12)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
@@ -390,7 +390,7 @@ GTCEuServerEvents.oreVeins(event => {
     
     event.add("kubejs:venus/copper_vein_venus", vein => {
         vein.weight(40)
-        vein.clusterSize(30)
+        vein.clusterSize(60)
         vein.layer("venus")
         vein.dimensions("ad_astra:venus")
         vein.heightRangeUniform(10, 80)
@@ -402,7 +402,7 @@ GTCEuServerEvents.oreVeins(event => {
             .rareBlockChance(0.33)
             .veininessThreshold(0.1)
             .maxRichnessThreshold(0.4)
-            .minRichness(0.2)
+            .minRichness(0.4)
             .maxRichness(0.5)
             .edgeRoundoffBegin(12)
         )
@@ -426,8 +426,8 @@ GTCEuServerEvents.oreVeins(event => {
             .rareBlockChance(0.33)
             .veininessThreshold(0.1)
             .maxRichnessThreshold(0.4)
-            .minRichness(0.2)
-            .maxRichness(0.5)
+            .minRichness(0.4)
+            .maxRichness(0.6)
             .edgeRoundoffBegin(12)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
@@ -439,7 +439,7 @@ GTCEuServerEvents.oreVeins(event => {
     // Mercury veins
     event.add("kubejs:mercury/mercury_vein_mercury", vein => {
         vein.weight(40)
-        vein.clusterSize(30)
+        vein.clusterSize(60)
         vein.layer("mercury")
         vein.dimensions("ad_astra:mercury")
         vein.heightRangeUniform(10, 80)
@@ -450,8 +450,8 @@ GTCEuServerEvents.oreVeins(event => {
             .oreBlock(GTMaterials.Ruby, 1)
             .veininessThreshold(0.1)
             .maxRichnessThreshold(0.4)
-            .minRichness(0.2)
-            .maxRichness(0.5)
+            .minRichness(0.5)
+            .maxRichness(0.9)
             .edgeRoundoffBegin(12)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
