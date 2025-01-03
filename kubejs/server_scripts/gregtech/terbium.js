@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electrolyzer('rare_earth_sulfate_electrolyze')
         .itemInputs('gtceu:rare_earth_dust')
         .inputFluids(Fluid.of('gtceu:sulfuric_acid', 100))
-        .itemOutputs('kubejs:rare_earth_sulfate', 'gtceu:thorium_hydroxite_dust')
+        .itemOutputs('kubejs:rare_earth_sulfate', 'gtceu:thorium_hydroxide_dust')
         .duration(600)
         .EUt(37020)
 

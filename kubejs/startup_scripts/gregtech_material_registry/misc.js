@@ -156,7 +156,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xF5F5F5)
         .components('1x ammonia', '1x nitric_acid')
 
-        event.create('thorium_hydroxite')
+        event.create('thorium_hydroxide')
         .dust()
         .color(0x243e1c)
         .components('1x thorium', '4x oxygen', '4x hydrogen')
@@ -226,6 +226,6 @@ GTCEuStartupEvents.materialModification(event => {
 
     GTMaterials.get('microversium').setFormula('Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D')
 
-    GTMaterials.get('thorium_hydroxite').setFormula('Th(OH)4')
+    GTMaterials.get('thorium_hydroxide').setFormula('Th(OH)4')
 })
 
