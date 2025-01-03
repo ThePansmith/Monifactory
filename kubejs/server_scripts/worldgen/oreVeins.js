@@ -712,7 +712,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("glacio/iridosmine", vein => {
+    event.add("glacio/osmiridium", vein => {
         vein.weight(30)
         vein.clusterSize(60)
         vein.layer("glacio")
