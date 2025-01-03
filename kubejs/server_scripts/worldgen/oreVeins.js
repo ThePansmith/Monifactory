@@ -6,7 +6,7 @@ const WorldGenLayers = Java.loadClass("com.gregtechceu.gtceu.api.data.worldgen.W
 
 GTCEuServerEvents.oreVeins(event => {
     // Overworld veins
-    event.add("kubejs:overworld/uraninite", vein => {
+    event.add("overworld/uraninite", vein => {
         vein.weight(30)
         vein.clusterSize(30)
         vein.layer("stone")
@@ -24,7 +24,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })
 
-    event.add("kubejs:overworld/tetrahedrite", vein => {
+    event.add("overworld/tetrahedrite", vein => {
         vein.weight(50)
         vein.clusterSize(40)
         vein.layer("stone")
@@ -44,7 +44,7 @@ GTCEuServerEvents.oreVeins(event => {
     })
 	
 	// Moon veins
-    event.add("kubejs:moon/diamond", vein => {
+    event.add("moon/diamond", vein => {
         vein.weight(20)
         vein.clusterSize(25)
         vein.layer("moon")
@@ -62,7 +62,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })	
 	
-    event.add("kubejs:moon/gold", vein => {
+    event.add("moon/gold", vein => {
         vein.weight(40)
         vein.clusterSize(25)
         vein.layer("moon")
@@ -82,7 +82,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })
 
-    event.add("kubejs:moon/manganese", vein => {
+    event.add("moon/manganese", vein => {
         vein.weight(30)
         vein.clusterSize(70)
         vein.layer("moon")
@@ -106,7 +106,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })	
 	
-    event.add("kubejs:moon/molybdenum", vein => {
+    event.add("moon/molybdenum", vein => {
         vein.weight(20)
         vein.clusterSize(80)
         vein.layer("moon")
@@ -129,7 +129,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })	
 	
-    event.add("kubejs:moon/quartz", vein => {
+    event.add("moon/quartz", vein => {
         vein.weight(40)
         vein.clusterSize(45)
         vein.layer("moon")
@@ -148,7 +148,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })
 	
-	event.add("kubejs:moon/tungsten", vein => {
+	event.add("moon/tungsten", vein => {
         vein.weight(45)
         vein.clusterSize(15)
         vein.layer("moon")
@@ -166,7 +166,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })	
 	
-    event.add("kubejs:moon/tetrahedrite", vein => {
+    event.add("moon/tetrahedrite", vein => {
         vein.weight(30)
         vein.clusterSize(30)
         vein.layer("moon")
@@ -185,7 +185,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
     })
 
-    event.add("kubejs:moon/fluorite", vein => {
+    event.add("moon/fluorite", vein => {
         vein.weight(40)
         vein.clusterSize(25)
         vein.layer("moon")
@@ -204,7 +204,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
 	})
 
-    event.add("kubejs:moon/bauxite_vein_moon", vein => {
+    event.add("moon/bauxite", vein => {
         vein.weight(40)
         vein.clusterSize(30)
         vein.layer("moon")
@@ -224,7 +224,7 @@ GTCEuServerEvents.oreVeins(event => {
     })
     
     // Mars veins
-    event.add("kubejs:mars/tungstate_vein_mars", vein => {
+    event.add("mars/tungstate", vein => {
         vein.weight(50)
         vein.clusterSize(35)
         vein.layer("mars")
@@ -240,7 +240,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
-    event.add("kubejs:mars/iron_vein_mars", vein => {
+    event.add("mars/iron", vein => {
         vein.weight(40)
         vein.clusterSize(50)
         vein.layer("mars")
@@ -264,7 +264,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
-    event.add("kubejs:mars/nickel_vein_mars", vein => {
+    event.add("mars/nickel", vein => {
         vein.weight(40)
         vein.clusterSize(30)
         vein.layer("mars")
@@ -284,7 +284,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
-    event.add("kubejs:mars/rare_earth_metal_vein_mars", vein => {
+    event.add("mars/rare_earth_metal", vein => {
         vein.weight(40)
         vein.clusterSize(30)
         vein.layer("mars")
@@ -302,7 +302,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
-    event.add("kubejs:mars/copper_vein_mars", vein => {
+    event.add("mars/copper", vein => {
         vein.weight(30)
         vein.clusterSize(45)
         vein.layer("mars")
@@ -326,7 +326,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
-    event.add("kubejs:mars/zinc_vein_mars", vein => {
+    event.add("mars/zinc", vein => {
         vein.weight(45)
         vein.clusterSize(40)
         vein.layer("mars")
@@ -349,7 +349,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:mars/beryllium", vein => {
+    event.add("mars/beryllium", vein => {
         vein.weight(30)
         vein.clusterSize(70)
         vein.layer("mars")
@@ -365,7 +365,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:mars/cassiterite", vein => {
+    event.add("mars/cassiterite", vein => {
         vein.weight(65)
         vein.clusterSize(60)
         vein.layer("mars")
@@ -390,7 +390,7 @@ GTCEuServerEvents.oreVeins(event => {
     })
     
     // Venus veins
-    event.add("kubejs:venus/tungstotitanate_vein_venus", vein => {
+    event.add("venus/tungstotitanate", vein => {
         vein.weight(40)
         vein.clusterSize(50)
         vein.layer("venus")
@@ -407,7 +407,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
-    event.add("kubejs:venus/sulfur_vein_venus", vein => {
+    event.add("venus/sulfur", vein => {
         vein.weight(40)
         vein.clusterSize(75)
         vein.layer("venus")
@@ -430,7 +430,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
-    event.add("kubejs:venus/copper_vein_venus", vein => {
+    event.add("venus/copper", vein => {
         vein.weight(40)
         vein.clusterSize(60)
         vein.layer("venus")
@@ -454,7 +454,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
     
-    event.add("kubejs:venus/iron_vein_venus", vein => {
+    event.add("venus/iron", vein => {
         vein.weight(40)
         vein.clusterSize(40)
         vein.layer("venus")
@@ -478,7 +478,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:venus/tricalcium_phosphate", vein => {
+    event.add("venus/tricalcium_phosphate", vein => {
         vein.weight(40)
         vein.clusterSize(45)
         vein.layer("venus")
@@ -497,7 +497,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
 	})
 
-    event.add("kubejs:venus/galena", vein => {
+    event.add("venus/galena", vein => {
         vein.weight(40)
         vein.clusterSize(50)
         vein.layer("venus")
@@ -516,7 +516,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
 	})
 
-    event.add("kubejs:venus/sheldonite", vein => {
+    event.add("venus/sheldonite", vein => {
         vein.weight(10)
         vein.clusterSize(30)
         vein.layer("venus")
@@ -536,7 +536,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
 	})
 
-    event.add("kubejs:venus/lubricant", vein => {
+    event.add("venus/lubricant", vein => {
         vein.weight(40)
         vein.clusterSize(30)
         vein.layer("venus")
@@ -557,7 +557,7 @@ GTCEuServerEvents.oreVeins(event => {
 	})
     
     // Mercury veins
-    event.add("kubejs:mercury/mercury_vein_mercury", vein => {
+    event.add("mercury/mercury", vein => {
         vein.weight(100)
         vein.clusterSize(60)
         vein.layer("mercury")
@@ -580,7 +580,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:mercury/fluorite", vein => {
+    event.add("mercury/fluorite", vein => {
         vein.weight(40)
         vein.clusterSize(25)
         vein.layer("mercury")
@@ -599,7 +599,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
 	})
 
-    event.add("kubejs:mercury/mineral_sands", vein => {
+    event.add("mercury/mineral_sands", vein => {
         vein.weight(60)
         vein.clusterSize(40)
         vein.layer("mercury")
@@ -618,7 +618,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
 	})
 
-    event.add("kubejs:mercury/lithium_salts", vein => {
+    event.add("mercury/lithium_salts", vein => {
         vein.weight(50)
         vein.clusterSize(40)
         vein.layer("mercury")
@@ -638,7 +638,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
 	})
 
-    event.add("kubejs:mercury/garnet_tin", vein => {
+    event.add("mercury/garnet_tin", vein => {
         vein.weight(70)
         vein.clusterSize(40)
         vein.layer("mercury")
@@ -657,7 +657,7 @@ GTCEuServerEvents.oreVeins(event => {
 		)
 	})
 
-    event.add("kubejs:mercury/platinum_group", vein => {
+    event.add("mercury/platinum_group", vein => {
         vein.weight(40)
         vein.clusterSize(30)
         vein.layer("mercury")
@@ -675,7 +675,7 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     // Glacio Veins
-    event.add("kubejs:glacio/oilsands", vein => {
+    event.add("glacio/oilsands", vein => {
         vein.weight(20)
         vein.clusterSize(35)
         vein.layer("glacio")
@@ -693,7 +693,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:glacio/electrotine", vein => {
+    event.add("glacio/electrotine", vein => {
         vein.weight(40)
         vein.clusterSize(40)
         vein.layer("glacio")
@@ -712,7 +712,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:glacio/iridosmine", vein => {
+    event.add("glacio/iridosmine", vein => {
         vein.weight(30)
         vein.clusterSize(60)
         vein.layer("glacio")
@@ -733,7 +733,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:glacio/rare_earth_phosphate", vein => {
+    event.add("glacio/rare_earth_phosphate", vein => {
         vein.weight(40)
         vein.clusterSize(30)
         vein.layer("glacio")
@@ -752,7 +752,7 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     // Glacio Deepslate Veins
-    event.add("kubejs:glacio/lapis", vein => {
+    event.add("glacio/lapis", vein => {
         vein.weight(40)
         vein.clusterSize(70)
         vein.layer("glacio_deepslate")
@@ -769,7 +769,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:glacio/pollucite", vein => {
+    event.add("glacio/pollucite", vein => {
         vein.weight(20)
         vein.clusterSize(50)
         vein.layer("glacio_deepslate")
@@ -788,7 +788,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:glacio/naquadah", vein => {
+    event.add("glacio/naquadah", vein => {
         vein.weight(30)
         vein.clusterSize(70)
         vein.layer("glacio_deepslate")
@@ -806,7 +806,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:glacio/thorium", vein => {
+    event.add("glacio/thorium", vein => {
         vein.weight(30)
         vein.clusterSize(60)
         vein.layer("glacio_deepslate")
@@ -824,7 +824,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("kubejs:glacio/titanotungstate", vein => {
+    event.add("glacio/titanotungstate", vein => {
         vein.weight(50)
         vein.clusterSize(50)
         vein.layer("glacio_deepslate")
@@ -842,7 +842,7 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     // End Veins
-    event.add("kubejs:end/magnesite", vein => {
+    event.add("end/magnesite", vein => {
         vein.weight(20)
         vein.clusterSize(60)
         vein.layer(WorldGenLayers.ENDSTONE)
