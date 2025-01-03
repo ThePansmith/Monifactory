@@ -280,11 +280,6 @@ machines:
   # Default: false
   orderedAssemblyLineFluids: false
 
-  # Let Dual Hatch has more ability. (DEPRECATED: does nothing now)
-  # When enabled it, Dual Hatch will can used to assemble line and so on.
-  # Need restart Minecraft to apply.
-  enableMoreDualHatchAbility: false
-
   # Default maximum parallel of steam multiblocks
   # Default: 8
   steamMultiParallelAmount: 8

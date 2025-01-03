@@ -1,5 +1,6 @@
 const Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
+const martianPolarCapsResourceKey = ResourceKey.create(Registries.BIOME, 'ad_astra:martian_polar_caps')
 
 GTCEuServerEvents.fluidVeins(event => {
 
@@ -54,6 +55,7 @@ GTCEuServerEvents.fluidVeins(event => {
     // Mars fluid veins (haha water on Mars)
     event.add('kubejs:mars/ice', vein => {
         vein.dimensions('ad_astra:mars')
+        vein.biomes(1, martianPolarCapsResourceKey)
         vein.fluid(() => Fluid.of("gtceu:ice").fluid)
         vein.weight(0)
         vein.minimumYield(10)

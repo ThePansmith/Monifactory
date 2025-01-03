@@ -24,12 +24,12 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electrolyzer('rare_earth_salt_electrolyzer')
         .itemInputs('kubejs:rare_earth_salt', 'gtceu:ammonium_nitrate_dust')
-        .itemOutputs('kubejs:terbium_salt')
+        .itemOutputs('gtceu:terbium_salt_dust')
         .duration(300)
         .EUt(1200)
 
     event.recipes.gtceu.autoclave('terbium_salt_autoclave')
-        .itemInputs('3x kubejs:terbium_salt', 'gtceu:calcium_dust')
+        .itemInputs('3x gtceu:terbium_salt_dust', 'gtceu:calcium_dust')
         .inputFluids(Fluid.of('gtceu:steam', 3840))
         .itemOutputs('gtceu:terbium_dust', '3x gtceu:calcium_chloride_dust')
         .outputFluids(Fluid.of('water', 24))

@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
 		.itemOutputs('kubejs:uxpic_wafer')
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(25 * 20)
-		.EUt(GTValues.VA[GTValues.IV])
+		.EUt(GTValues.VA[GTValues.ZPM])
 
 	event.recipes.gtceu.laser_engraver("uxpic_wafer_universe")
 		.itemInputs('kubejs:universe_wafer')
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
 		.itemOutputs('2x kubejs:uxpic_wafer')
 		.cleanroom(CleanroomType.CLEANROOM)
 		.duration(25 * 20)
-		.EUt(GTValues.VA[GTValues.IV])
+		.EUt(GTValues.VA[GTValues.UV])
 
 	event.recipes.gtceu.cutter("uxpic_chip")
 		.itemInputs('kubejs:uxpic_wafer')

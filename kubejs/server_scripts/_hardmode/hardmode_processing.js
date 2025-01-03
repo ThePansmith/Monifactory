@@ -296,12 +296,14 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.chemical_reactor('caesium_hydroxide')
             .itemInputs('gtceu:caesium_dust')
-            .inputFluids('minecraft:water 1000')
+            .inputFluids('minecraft:water 3000')
             .itemOutputs('3x gtceu:caesium_hydroxide_dust')
+            .outputFluids('gtceu:hydrogen 3000')
             .duration(5).EUt(7)
 
         event.recipes.gtceu.large_chemical_reactor('neocryolite')
-            .itemInputs('9x gtceu:caesium_hydroxide_dust', '3x gtceu:naquadah_hydroxide_dust', 'gtceu:signalum_dust')
+            .itemInputs('9x gtceu:caesium_hydroxide_dust', '3x gtceu:naquadah_hydroxide_dust')
+            .notConsumable('gtceu:signalum_dust')
             .inputFluids('gtceu:hydrofluoric_acid 6000')
             .outputFluids('gtceu:neocryolite 1000', 'minecraft:water 6000')
             .duration(250).EUt(7680)
@@ -775,7 +777,7 @@ ServerEvents.recipes(event => {
             .chancedOutput('gtceu:lanthanum_dust', 1500, 0)
             .chancedOutput('gtceu:lutetium_dust', 600, 0)
             .chancedOutput('gtceu:europium_dust', 600, 0)
-            .duration(50).EUt(1966080)
+            .duration(50).EUt(GTValues.VA[GTValues.UV])
 
         // Quantum Flux Recipe
         event.recipes.gtceu.mixer('quantum_flux_hm')
