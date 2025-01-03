@@ -674,6 +674,23 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
+    event.add("mercury/titanotungstate", vein => {
+        vein.weight(50)
+        vein.clusterSize(50)
+        vein.layer("mercury")
+        vein.dimensions("ad_astra:mercury")
+        vein.heightRangeUniform(-50, -20)
+        vein.dikeVeinGenerator(generator => generator
+            .withBlock(GTMaterials.Wulfenite, 8, -50, -30)
+            .withBlock(GTMaterials.Ilmenite, 4, -40, -20)
+            .withBlock(GTMaterials.Bauxite, 2, -50, -20)
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Wulfenite)
+            .placement("above")
+        )
+    })
+
     // Glacio Veins
     event.add("glacio/oilsands", vein => {
         vein.weight(20)
@@ -820,23 +837,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Thorium)
-            .placement("above")
-        )
-    })
-
-    event.add("glacio/titanotungstate", vein => {
-        vein.weight(50)
-        vein.clusterSize(50)
-        vein.layer("glacio_deepslate")
-        vein.dimensions("ad_astra:glacio")
-        vein.heightRangeUniform(-50, -20)
-        vein.dikeVeinGenerator(generator => generator
-            .withBlock(GTMaterials.Wulfenite, 8, -50, -30)
-            .withBlock(GTMaterials.Ilmenite, 4, -40, -20)
-            .withBlock(GTMaterials.Bauxite, 2, -50, -20)
-        )
-        vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Wulfenite)
             .placement("above")
         )
     })
