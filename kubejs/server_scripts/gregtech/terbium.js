@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electrolyzer('rare_earth_sulfate_electrolyze')
         .itemInputs('gtceu:rare_earth_dust')
         .inputFluids(Fluid.of('gtceu:sulfuric_acid', 100))
-        .itemOutputs('kubejs:rare_earth_sulfate', 'gtceu:thorium_hydroxite_dust')
+        .itemOutputs('kubejs:rare_earth_sulfate', 'gtceu:thorium_hydroxide_dust')
         .duration(600)
         .EUt(37020)
 
@@ -29,9 +29,9 @@ ServerEvents.recipes(event => {
         .EUt(1200)
 
     event.recipes.gtceu.autoclave('terbium_salt_autoclave')
-        .itemInputs('3x gtceu:terbium_salt_dust', 'gtceu:calcium_dust')
+        .itemInputs('2x gtceu:terbium_salt_dust', '3x gtceu:calcium_dust')
         .inputFluids(Fluid.of('gtceu:steam', 3840))
-        .itemOutputs('gtceu:terbium_dust', '3x gtceu:calcium_chloride_dust')
+        .itemOutputs('2x gtceu:terbium_dust', '3x gtceu:calcium_chloride_dust')
         .outputFluids(Fluid.of('water', 24))
         .duration(300)
         .EUt(480)
