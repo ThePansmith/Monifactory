@@ -924,6 +924,15 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(15)
 
+    //Sodium to Sodium Hydroxide
+    event.recipes.gtceu.chemical_reactor('na_to_naoh')
+        .itemInputs('gtceu:sodium_dust')
+        .inputFluids('minecraft:water 1000')
+        .itemOutputs('3x gtceu:sodium_hydroxide_dust')
+        .outputFluids('gtceu:hydrogen 1000')
+        .duration(50)
+        .EUt(120)
+
     // Patchouli Books that needed tweaking
     event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"laserio:laseriobook"}'), ['minecraft:book', 'laserio:card_item']).id('laserio:my_book_recipe_shapeless')
 

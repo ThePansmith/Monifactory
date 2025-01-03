@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x0c9949)
         .iconSet('diamond')
         .components('1x calcium', '2x fluorine')
-        .addOreByproducts('calcium', 'fluorine')
+        .addOreByproducts('calcite', 'barite')
 })
 
 
