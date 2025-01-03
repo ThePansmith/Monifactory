@@ -1,5 +1,7 @@
 // /kjs inventory will be your friend.
 
+const PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey')
+
 JEIEvents.hideItems(event => {
 
     //Enderio cleanup
@@ -211,25 +213,27 @@ JEIEvents.hideItems(event => {
     event.hide('kubejs:debug_ctm_block')
 
     // Hide GT ores to prevent clutter
-    GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
-        event.hide([
-            `gtceu:granite_${id.name}_ore`,
-            `gtceu:diorite_${id.name}_ore`,
-            `gtceu:andesite_${id.name}_ore`,
-            `gtceu:red_granite_${id.name}_ore`,
-            `gtceu:marble_${id.name}_ore`,
-            `gtceu:deepslate_${id.name}_ore`,
-            `gtceu:tuff_${id.name}_ore`,
-            `gtceu:sand_${id.name}_ore`,
-            `gtceu:red_sand_${id.name}_ore`,
-            `gtceu:gravel_${id.name}_ore`,
-            `gtceu:basalt_${id.name}_ore`,
-            `gtceu:blackstone_${id.name}_ore`,
-            `gtceu:moon_${id.name}_ore`,
-            `gtceu:venus_${id.name}_ore`,
-            `gtceu:mercury_${id.name}_ore`,
-            `gtceu:mars_${id.name}_ore`
-        ])
+    GTMaterialRegistry.getRegisteredMaterials().forEach(material => {
+        if(material.hasProperty(PropertyKey.ORE)) {
+            event.hide([
+                `gtceu:granite_${material.name}_ore`,
+                `gtceu:diorite_${material.name}_ore`,
+                `gtceu:andesite_${material.name}_ore`,
+                `gtceu:red_granite_${material.name}_ore`,
+                `gtceu:marble_${material.name}_ore`,
+                `gtceu:deepslate_${material.name}_ore`,
+                `gtceu:tuff_${material.name}_ore`,
+                `gtceu:sand_${material.name}_ore`,
+                `gtceu:red_sand_${material.name}_ore`,
+                `gtceu:gravel_${material.name}_ore`,
+                `gtceu:basalt_${material.name}_ore`,
+                `gtceu:blackstone_${material.name}_ore`,
+                `gtceu:moon_${material.name}_ore`,
+                `gtceu:venus_${material.name}_ore`,
+                `gtceu:mercury_${material.name}_ore`,
+                `gtceu:mars_${material.name}_ore`
+            ])
+        }
     })
 })
 
