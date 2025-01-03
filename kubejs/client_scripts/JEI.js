@@ -229,6 +229,7 @@ JEIEvents.hideItems(event => {
             `gtceu:venus_${id.name}_ore`,
             `gtceu:mercury_${id.name}_ore`,
             `gtceu:mars_${id.name}_ore`
+            `gtceu:glacio_${id.name}_ore`
         ])
     })
 })
