@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.autoclave('terbium_salt_autoclave')
         .itemInputs('2x gtceu:terbium_salt_dust', '3x gtceu:calcium_dust')
-        .inputFluids(Fluid.of('gtceu:steam', 3200))
+        .inputFluids(Fluid.of('gtceu:steam', 3840))
         .itemOutputs('2x gtceu:terbium_dust', '3x gtceu:calcium_chloride_dust')
         .outputFluids(Fluid.of('water', 24))
         .duration(300)
