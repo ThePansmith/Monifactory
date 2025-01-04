@@ -1,7 +1,15 @@
 ServerEvents.recipes(event => {
+    
+    event.recipes.gtceu.assembler('neutron_emitter')
+        .itemInputs('4x gtceu:double_neutronium_plate', '4x gtceu:polyethyl_cyanoacrylate_plate')
+        .inputFluids('gtceu:tin_alloy 4680')
+        .itemOutputs('kubejs:neutron_emitter')
+        .duration(4000)
+        .EUt(GTValues.VHA[GTValues.UV])
+
     event.recipes.gtceu.electrolyzer('actinium_from_uranium_hexafluoride')
         .inputFluids('gtceu:uranium_hexafluoride 1000')
-        .chancedInput('gtceu:neutron_reflector', 100, 0)
+        .chancedInput('kubejs:neutron_emitter', 100, 0)
         .outputFluids('gtceu:enriched_uranium_hexafluoride 50', 'gtceu:depleted_uranium_hexafluoride 450', 'gtceu:fluorine 800')
         .chancedOutput('gtceu:small_actinium_dust', 1000, 400)
         .duration(160)
