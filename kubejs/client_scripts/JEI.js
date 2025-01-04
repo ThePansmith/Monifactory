@@ -1,5 +1,7 @@
 // /kjs inventory will be your friend.
 
+const PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey')
+
 JEIEvents.hideItems(event => {
 
     //Enderio cleanup
