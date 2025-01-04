@@ -5,6 +5,7 @@
  */
 const Tags = Java.loadClass('dev.latvian.mods.kubejs.util.Tags')
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
+const $GTCEu = Java.loadClass("com.gregtechceu.gtceu.GTCEu")
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
@@ -884,3 +885,17 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("kubejs:block/netherite/casing",
             "gtceu:block/multiblock/assembly_line", false)
 })
+
+
+// Insane Combustion Engine
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    GTMachineUtils.registerLargeCombustionEngine(
+        "insane_combustion_engine",
+        GTValues.LuV,
+        () => Block.getBlock('kubejs:hardened_machine_casing'),
+        () => Block.getBlock('kubejs:naquadah_gearbox'),
+        () => Block.getBlock('kubejs:insane_engine_intake_casing'),
+        $GTCEu.id("block/casings/solid/machine_casing_hardened_naquadah"),
+        $GTCEu.id("block/multiblock/generator/extreme_combustion_engine")
+    );
+});

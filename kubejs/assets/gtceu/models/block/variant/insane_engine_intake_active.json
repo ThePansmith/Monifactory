@@ -1,0 +1,6 @@
+{
+  "parent": "gtceu:block/cube/all",
+  "textures": {
+    "all": "gtceu:block/casings/pipe/machine_casing_insane_engine_intake_active"
+  }
+}
