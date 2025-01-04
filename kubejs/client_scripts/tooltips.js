@@ -101,6 +101,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.multiblock.actualization_chamber.description'))
     tooltip.add('gtceu:large_naquadah_reactor', Text.translatable('gtceu.multiblock.large_naquadah_reactor.description'))
     tooltip.add('gtceu:naquadah_refinery', Text.translatable('gtceu.multiblock.naquadah_refinery.description'))
+    tooltip.add('gtceu:insane_combustion_engine', Text.translatable('gtceu.multiblock.insane_combustion_engine.description'))
 
     //Singleblocks
     tooltip.addAdvanced([`gtceu:lv_atomic_reconstructor`, `gtceu:mv_atomic_reconstructor`, `gtceu:hv_atomic_reconstructor`, `gtceu:ev_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.lvev_atomic_reconstructor.desc'))) })
