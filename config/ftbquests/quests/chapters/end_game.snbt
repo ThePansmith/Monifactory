@@ -1307,7 +1307,10 @@
 			y: -16.0d
 		}
 		{
-			dependencies: ["01E542E1C9DAF5B4"]
+			dependencies: [
+				"01E542E1C9DAF5B4"
+				"5911900438648430"
+			]
 			description: [
 				"{moni.quest.07E757AAA1C7435D.description1}"
 				""

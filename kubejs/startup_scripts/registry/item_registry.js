@@ -146,6 +146,7 @@ StartupEvents.registry('item', event => {
 
     // Endgame Items
     event.create('diamond_lattice')
+    event.create('neutron_emitter')
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
     event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
     event.create('heart_of_a_universe').displayName("§dHeart Of A Universe")
