@@ -129,7 +129,6 @@ if (Platform.isLoaded('xnet')) {
         event.recipes.gtceu.assembler('xnet:antenna')
                 .itemOutputs('xnet:antenna')
                 .itemInputs(['3x #forge:rods/iron', '2x minecraft:iron_bars', 'gtceu:ev_emitter', '3x gtceu:fine_annealed_copper_wire'])
-                .inputFluids(Fluid.of('kubejs:resonant_ender', 250))
                 .EUt(GTValues.VA[GTValues.EV])
                 .duration(140)
         event.recipes.gtceu.assembler('xnet:antenna_base')
