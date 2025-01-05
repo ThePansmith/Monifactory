@@ -1,7 +1,8 @@
 ServerEvents.recipes(event => {
     //Disable LIO transportation in Expert (Cards are used in recipes)
     if (isExpertMode) {
-        event.remove({ output: "laserio:laser_connector" })
+        event.remove({ id: /laserio:laser_/ })
+        event.remove({ id: /laserio:card_/ })
     }
 
     //Harder recipes in Hard Mode
