@@ -1788,20 +1788,72 @@
 				"7FA0E6F3B466576C"
 				"39D4174834F3879D"
 			]
-			description: ["{moni.quest.08948A23B3A17923.description1}"]
+			description: [
+				"{moni.quest.08948A23B3A17923.description1}"
+				""
+				"{moni.quest.08948A23B3A17923.description2}"
+				""
+				"{moni.quest.08948A23B3A17923.description3}"
+			]			icon: "laserio:energy_overclocker_card_tier_1"
 			id: "08948A23B3A17923"
-			rewards: [{
-				id: "188CE9F6FC9651C5"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "188CE9F6FC9651C5"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "576F8362A4A48428"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+				{
+					id: "4687EABAFD3E5842"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 15
+							}
+						}
+						id: "laserio:card_holder"
+					}
+					type: "item"
+				}
+				{
+					id: "788E688147A8B83B"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "laserio:laseriobook"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "{moni.quest.08948A23B3A17923.subtitle.hardmode}"
-			tasks: [{
-				id: "7D0E23630A562F6A"
-				item: "enderio:conductive_conduit"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 2L
+					id: "7D0E23630A562F6A"
+					item: "laserio:laser_node"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "252F1286D3A46E4E"
+					item: { Count: 2, id: "laserio:card_energy" }
+					type: "item"
+				}
+				{
+					id: "450A8E8955EDBB51"
+					item: "laserio:energy_overclocker_card_tier_1"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.08948A23B3A17923.title}"
 			x: -1.75d
 			y: 13.75d
