@@ -134,7 +134,7 @@
     "item.kubejs.depleted_naquadah_fuel_rod": "Обедненный Наквадовый Топливный Стержень",
     "item.kubejs.unsintered_naquadah_fuel_pellet": "Необоженная Наквадовая Топливная Гранула",
     "item.kubejs.naquadah_fuel_dust": "Кучка Наквадового Топлива",
-    "item.kubejs.raw_naquadah_fuel_dust": "Кучка Сырого Наквадового Топлива",
+    "item.kubejs.naquadah_fuel_primer_dust": "Кучка Сырого Наквадового Топлива",
     "item.kubejs.naquadah_waste": "Наквадовые Отходы",
     "item.kubejs.inactivated_naquadah_fuel_dust": "Кучка Неактивированного Наквадового Топлива",
     "item.kubejs.pellet_extruder_mold": "Форма экструдера (Гранула)",

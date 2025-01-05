@@ -145,7 +145,7 @@
     "item.kubejs.unsintered_naquadah_fuel_pellet": "未焼結ナクアダ燃料ペレット",
     "item.kubejs.depleted_naquadah_fuel_pellet": "劣化ナクアダ燃料ペレット",
     "item.kubejs.naquadah_fuel_dust": "ナクアダ燃料粉",
-    "item.kubejs.raw_naquadah_fuel_dust": "生のナクアダ燃料粉",
+    "item.kubejs.naquadah_fuel_primer_dust": "生のナクアダ燃料粉",
     "item.kubejs.naquadah_waste": "ナクアダ廃棄物",
     "item.kubejs.inactivated_naquadah_fuel_dust": "不活性化ナクアダ燃料粉",
     "item.kubejs.pellet_extruder_mold": "押出形成用金型 (ペレット)",
