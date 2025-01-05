@@ -91,9 +91,12 @@ ServerEvents.recipes(event => {
 
 
     // WIP: Matter Circuits
+    var plasticBoard;
+    if(isNormalMode) plasticBoard = '16x gtceu:polyethyl_cyanoacrylate_plate'
+    else plasticBoard = '16x gtceu:kapton_k_plate'
     event.recipes.gtceu.circuit_assembler('matter_circuit_board')
         .itemInputs(
-            '16x gtceu:kapton_k_plate',
+            plasticBoard,
             '16x gtceu:omnium_plate',
             '#gtceu:circuits/luv',
             'gtceu:iv_emitter', 
