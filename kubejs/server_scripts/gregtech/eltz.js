@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('reactive_dust_mixture_mixer')
-        .itemInputs('12x extendedcrafting:luminessence', '7x gtceu:enriched_sunnarium_dust', '8x kubejs:primal_mana', '13x gtceu:cadmium_dust', '3x gtceu:nether_star_dust', '21x ae2:sky_dust')
+        .itemInputs('12x extendedcrafting:luminessence', '7x gtceu:enriched_sunnarium_dust', '8x kubejs:primal_mana', '13x gtceu:cadmium_dust', '3x gtceu:nether_star_dust', '21x gtceu:ender_eye_dust')
         .itemOutputs('64x kubejs:reactive_dust_mixture')
         .duration(4800)
         .EUt(GTValues.VHA[GTValues.UHV])

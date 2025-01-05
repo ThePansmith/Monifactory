@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x0c9949)
         .iconSet('diamond')
         .components('1x calcium', '2x fluorine')
-        .addOreByproducts('calcium', 'fluorine')
+        .addOreByproducts('calcite', 'barite')
 })
 
 
@@ -164,7 +164,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create('terbium_salt')
         .dust()
         .color(0x7f7367)
-        .components('1x terbium', '2x chlorine')
+        .components('1x terbium', '3x chlorine')
         .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.DISABLE_DECOMPOSITION)
 
         event.create('magnetic_terbium')

@@ -16,6 +16,14 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', event => {
     event.create('venus')
         .targets('#ad_astra:venus_stone_replaceables')
         .dimensions('ad_astra:venus')
+
+    event.create('glacio')
+        .targets('#ad_astra:glacio_stone_replaceables')
+        .dimensions('ad_astra:glacio')
+
+    event.create('glacio_deepslate')
+        .targets('#minecraft:deepslate_ore_replaceables')
+        .dimensions('ad_astra:glacio')
 })
 
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
@@ -46,6 +54,14 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
     event.create('venus', 'ore')
         .stateSupplier(() => Block.getBlock('ad_astra:venus_stone').defaultBlockState())
         .baseModelLocation('ad_astra:block/venus_stone')
+        .unificationEnabled(true)
+        .materialIconType(GTMaterialIconType.ore)
+        .generationCondition(ItemGenerationCondition.hasOreProperty)
+        .miningToolTag('forge:mineable/pickaxe')
+
+    event.create('glacio', 'ore')
+        .stateSupplier(() => Block.getBlock('ad_astra:glacio_stone').defaultBlockState())
+        .baseModelLocation('ad_astra:block/glacio_stone')
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)

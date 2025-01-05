@@ -1,5 +1,7 @@
 // /kjs inventory will be your friend.
 
+const PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey')
+
 JEIEvents.hideItems(event => {
 
     //Enderio cleanup
@@ -145,7 +147,7 @@ JEIEvents.hideItems(event => {
     // Hides all unused blocks
     event.hide(['nuclearcraft:empty_active_heat_sink', 'nuclearcraft:villiaumite_heat_sink', 'nuclearcraft:carobbiite_heat_sink', 'nuclearcraft:empty_frame', 'nuclearcraft:supercooler', 'nuclearcraft:steel_block', 'nuclearcraft:electrum_block', 'nuclearcraft:supercold_ice_block', 'nuclearcraft:magnesium_block', 'nuclearcraft:cobalt_block', 'nuclearcraft:aluminum_block', 'nuclearcraft:lead_block', 'nuclearcraft:bronze_block', 'nuclearcraft:californium250_block', 'nuclearcraft:lithium_block', 'nuclearcraft:platinum_block', 'nuclearcraft:thorium_block', 'nuclearcraft:americium241_block', 'nuclearcraft:plutonium238_block', 'nuclearcraft:tin_block', 'nuclearcraft:uranium238_block', 'nuclearcraft:silver_block', 'nuclearcraft:uranium_block', 'nuclearcraft:zirconium_block', 'nuclearcraft:zinc_block', 'nuclearcraft:boron_block',])
     // Hides all unused items
-    event.hide(['nuclearcraft:rad_x', 'nuclearcraft:research_paper', 'nuclearcraft:plate_extreme', 'nuclearcraft:gelatin', 'nuclearcraft:actuator', 'nuclearcraft:basic_electric_circuit', 'nuclearcraft:sic_fiber', 'nuclearcraft:tough_helmet', 'nuclearcraft:tough_chest', 'nuclearcraft:tough_pants', 'nuclearcraft:tough_boots', 'nuclearcraft:spaxelhoe_tough', 'nuclearcraft:spaxelhoe_thorium', 'nuclearcraft:multitool', 'nuclearcraft:qnp', 'nuclearcraft:lithium_ion_cell', 'nuclearcraft:dps', 'nuclearcraft:servo', 'nuclearcraft:bioplastic', 'nuclearcraft:empty_sink', 'nuclearcraft:radaway_slow', 'nuclearcraft:motor', 'nuclearcraft:salt', 'nuclearcraft:cocoa_butter', 'nuclearcraft:sawdust', 'nuclearcraft:flour', 'nuclearcraft:dominos', 'nuclearcraft:radaway'])
+    event.hide(['nuclearcraft:quantum_flux_regulator', 'nuclearcraft:chamber_port', 'nuclearcraft:fission_reactor_irradiation_chamber', 'nuclearcraft:chamber_terminal', 'nuclearcraft:event_horizon_stabilizer', 'nuclearcraft:quantum_transformer', 'nuclearcraft:black_hole', 'nuclearcraft:neutronium_frame', 'nuclearcraft:photon_concentrator', 'nuclearcraft:redstone_dimmer', 'nuclearcraft:rad_x', 'nuclearcraft:research_paper', 'nuclearcraft:plate_extreme', 'nuclearcraft:gelatin', 'nuclearcraft:actuator', 'nuclearcraft:basic_electric_circuit', 'nuclearcraft:sic_fiber', 'nuclearcraft:tough_helmet', 'nuclearcraft:tough_chest', 'nuclearcraft:tough_pants', 'nuclearcraft:tough_boots', 'nuclearcraft:spaxelhoe_tough', 'nuclearcraft:spaxelhoe_thorium', 'nuclearcraft:multitool', 'nuclearcraft:qnp', 'nuclearcraft:lithium_ion_cell', 'nuclearcraft:dps', 'nuclearcraft:servo', 'nuclearcraft:bioplastic', 'nuclearcraft:empty_sink', 'nuclearcraft:radaway_slow', 'nuclearcraft:motor', 'nuclearcraft:salt', 'nuclearcraft:cocoa_butter', 'nuclearcraft:sawdust', 'nuclearcraft:flour', 'nuclearcraft:dominos', 'nuclearcraft:radaway'])
 
     //JAVD
     event.hide(["javd:portal_block"])
@@ -229,6 +231,7 @@ JEIEvents.hideItems(event => {
             `gtceu:venus_${id.name}_ore`,
             `gtceu:mercury_${id.name}_ore`,
             `gtceu:mars_${id.name}_ore`
+            `gtceu:glacio_${id.name}_ore`
         ])
     })
 })
