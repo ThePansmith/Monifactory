@@ -35,42 +35,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //Cutting Perfect Gemstones
-    event.recipes.gtceu.cutter('cut_perfect_diamond')
-        .itemInputs('gtceu:diamond_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_diamond_gem')
-        .duration(100)
-        .EUt(1920)
-
-    event.recipes.gtceu.cutter('cut_perfect_emerald')
-        .itemInputs('gtceu:emerald_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_emerald_gem')
-        .duration(100)
-        .EUt(1920)
-
-    event.recipes.gtceu.cutter('cut_perfect_ruby')
-        .itemInputs('gtceu:ruby_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_ruby_gem')
-        .duration(100)
-        .EUt(1920)
-
-    event.recipes.gtceu.cutter('cut_perfect_topaz')
-        .itemInputs('gtceu:topaz_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_topaz_gem')
-        .duration(100)
-        .EUt(1920)
-
-        event.recipes.gtceu.cutter('cut_perfect_cinnabar')
-        .itemInputs('gtceu:cinnabar_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_cinnabar_gem')
-        .duration(100)
-        .EUt(1920)
-
     // HNN MATTERS
     if (isNormalMode) {
         event.recipes.gtceu.extractor('overworld_fluid')
