@@ -59,6 +59,9 @@ global.UnificationExcludedItems = [
     'enderio:energized_gear',
     'enderio:vibrant_gear',
     'enderio:dark_bimetal_gear',
+    'thermal:basalz_rod',
+    'thermal:blitz_rod',
+    'thermal:blizz_rod',
 ];
 // Server Owners: Remove nuclearcraft from the following line to allow joining servers, as NC:N currently has issues when you remove tags from items and try to join a MP server
 // The reason for this not being default is that it in turn introduces some problems of it's own, mainly allowing some ingots to be unintentionally smelted in a furnace.
