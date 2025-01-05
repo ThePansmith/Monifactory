@@ -74,7 +74,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 2. Follow the prompt to select your mode.
 
 ### Addon Mods (AKA Optional Compats)
-To spice up your Monifactory experience, you can add one of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
+To spice up your Monifactory experience, you can add any of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
 1. [Create](https://www.curseforge.com/minecraft/mc-mods/create)
     1a. [Create: Steam and Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)

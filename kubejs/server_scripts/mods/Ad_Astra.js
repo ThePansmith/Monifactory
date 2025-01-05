@@ -282,7 +282,10 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(30)
 
-    event.remove({ id: /oxygen_from_oxygen_loading_water/ })
+    // Oxygen Loading
+    event.custom('{"type": "ad_astra:oxygen_loading","cookingtime": 1,"energy": 30,"input": {"ingredient": {"tag": "forge:oxygen"},"millibuckets": 25},"result": {"fluid": "gtceu:oxygen","millibuckets": 25}}');
+    event.remove({ id: /oxygen_from_oxygen_loading/ })
+    
     event.remove({ id: 'ad_astra:oxygen_distributor' })
     event.shaped(
         'ad_astra:oxygen_distributor', [
