@@ -883,7 +883,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:dimethylformamide 1000', 'gtceu:oxydianiline 144')
         .duration(200).EUt(480);
 
-        event.recipes.gtceu.chemical_reactor('potassium_hydroxide')
+        event.recipes.gtceu.chemical_reactor('pyromellitic_dianhydride')
         .inputFluids('gtceu:durene 250', 'gtceu:oxygen 1500')
         .outputFluids('gtceu:pyromellitic_dianhydride 250', 'minecraft:water 1500')
         .duration(400).EUt(480);
