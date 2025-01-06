@@ -304,12 +304,9 @@
     "item.kubejs.lv_universal_circuit": "Универсальная LV Схема",
     "item.kubejs.iv_universal_circuit": "Универсальная IV Схема",
     "item.kubejs.luv_universal_circuit": "Универсальная LUV Схема",
-    "jetpack.conductiveiron.name": "Проводящее Железо",
     "item.kubejs.zpm_universal_circuit": "Универсальная ZPM Схема",
     "item.kubejs.uev_universal_circuit": "Универсальная UEV Схема",
     "jetpack.creative.name": "Творческий",
-    "jetpack.electricalsteel.name": "Электротехническая сталь",
-    "jetpack.darksoularium.name": "Тёмный Душий",
     "jetpack.energetic.name": "Энергетический",
     "jetpack.hardened.name": "Закалённый",
     "jetpack.leadstone.name": "Свинцовый",
@@ -457,5 +454,6 @@
     "extendedcrafting.flux_alternator.tooltip": "§7Передает энергию Скалковому Зарядному Устройству, до 3 блоков в расстоянии.",
     "gtceu.prospector.tooltip.1": "§7Показывает руды только в непосредственной близости.",
     "tempad.tempad.tooltip": "§6Сжигает Мониценты как топливо",
-    "packagedexcrafting.crafterspeed.tooltip": "§7Медленнее автоматических верстаков, но может выполнять до 20 рецептов сразу."
+    "packagedexcrafting.crafterspeed.tooltip": "§7Медленнее автоматических верстаков, но может выполнять до 20 рецептов сразу.",
+    "item.kubejs.neutron_emitter": "Нейтронный излучатель"
 }
