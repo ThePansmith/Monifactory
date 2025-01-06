@@ -821,6 +821,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks("kubejs:bioalloy_casing").setMinGlobalLimited(150)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
             )
             .where('c', Predicates.blocks("kubejs:bioalloy_casing"))
             .where('N', Predicates.blocks(GCYMBlocks.CASING_NONCONDUCTING.get()))
