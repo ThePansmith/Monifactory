@@ -677,6 +677,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('naquadah_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('naquadah_reactor')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    //Fix for generator "overclocking" as long as the actual hatch invalidates the structure
         .appearanceBlock(GCYMBlocks.CASING_REACTION_SAFE)
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
@@ -686,9 +687,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
             .where('C', Predicates.blocks(GCYMBlocks.CASING_REACTION_SAFE.get()).setMinGlobalLimited(12)
-            .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1))
-            .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1))
-            .or(Predicates.blocks('gtceu:zpm_energy_output_hatch_4a').setMaxGlobalLimited(1)))
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('P', Predicates.blocks("ae2:spatial_pylon"))
             .where('N', Predicates.blocks('gtceu:trinium_coil_block'))
             .build())
@@ -699,6 +698,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_naquadah_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('large_naquadah_reactor')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    //Fix for generator "overclocking" as long as the actual hatch invalidates the structure
         .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
@@ -716,7 +716,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks("gtceu:atomic_casing").setMinGlobalLimited(150)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.OUTPUT_LASER).setMaxGlobalLimited(1)))
-
             .where('H', Predicates.blocks("gtceu:heat_vent"))
             .where('K', Predicates.blocks("gtceu:fusion_coi"))
             .where('N', Predicates.blocks("gtceu:tungsten_frame"))
@@ -737,7 +736,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes('naquadah_refinery')
             .appearanceBlock(() => Block.getBlock('gtceu:stress_proof_casing'))
-            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
+            .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK)])
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("##CCCCC##","##CCCCC##","#########","#########","#########","#########","#########","#########","#########","#########","#########")
                 .aisle("#CCCCCCC#","#CC#P#CC#","####P####","####P####","###SSS###","###VVV###","###GGG###","###VVV###","###SSS###","#########","#########")
