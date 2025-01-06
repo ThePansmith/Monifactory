@@ -19,7 +19,7 @@
     "item.kubejs.microminer_t4": "§e信素外壳微型采掘机 [四级]",
     "item.kubejs.microminer_t4.desc": "§7§o从空旷空间的最深处开采超冷材料。",
     "item.kubejs.microminer_t4half": "§e流明外壳微型屠宰机 [四级改]",
-    "item.kubejs.microminer_t4half.desc": "§7§o在危险的微观宇宙中杀死怪物，并收集它们珍贵的骨骼和部件。",
+    "item.kubejs.microminer_t4half.desc": "§7§o在危险的微观宇宙中杀死怪物，并收集它们珍贵的骨骼和部件",
     "item.kubejs.microminer_t5": "§b铱制外壳微型采掘机 [五级]",
     "item.kubejs.microminer_t5.desc": "§7§o从末地微观宇宙中开采奇异材料。",
     "item.kubejs.microminer_t6": "§b末影外壳微型采掘机 [六级]",
@@ -29,7 +29,7 @@
     "item.kubejs.microminer_t8": "§d水晶矩阵外壳级微型利维坦歼灭者 [八级]",
     "item.kubejs.microminer_t8.desc": "§7§o猎杀超出末地之外的不可思议的怪物，并带回奇异的战利品。",
     "item.kubejs.microminer_t8half": "§d三元金属外壳级微型采掘机 [八级改]",
-    "item.kubejs.microminer_t8half.desc": "§7§o从未探索的角落开采独特的宝石和金属，超越微观宇宙。",
+    "item.kubejs.microminer_t8half.desc": "§7§o从未探索的角落开采独特的宝石和金属，超越微观宇宙",
     "item.kubejs.microminer_t9": "§d永恒外壳微型噬日者 [九级]",
     "item.kubejs.microminer_t9.desc": "§7§o摧毁微观宇宙的恒星，并收割它们美味的中子核心。",
     "item.kubejs.microminer_t10": "§d中子素外壳微型宇宙收割者 [十级]",
@@ -50,8 +50,8 @@
     "item.kubejs.stabilized_microminer_t8half": "§d稳定的三元金属外壳微型挖掘机 [八级改]",
     "item.kubejs.stabilized_microminer_t9": "§d稳定的永恒外壳微型噬阳者 [九级]",
     "item.kubejs.stabilized_microminer_t10": "§d稳定的中子素外壳微型宇宙收割者 [十级]",
-    "item.kubejs.stabilized_microminer.tooltip.1": "§7§o注入了宇宙之心的一种稳定版本",
-    "item.kubejs.stabilized_microminer.tooltip.2": "§7§o永恒、不灭，实力深不可测",
+    "item.kubejs.stabilized_microminer.tooltip.1": "§7§o注入了宇宙之心的一种稳定版本。",
+    "item.kubejs.stabilized_microminer.tooltip.2": "§7§o永恒、不灭，实力深不可测。",
     "item.kubejs.stabilized_microminer.tooltip.3": "§7§o有种莫名的熟悉感。",
     "item.kubejs.pristine_matter_t1": "§d完美的钢质微观宇宙物质 [一级]",
     "item.kubejs.pristine_matter_t2": "§d完美的钛质微观宇宙物质 [二级]",
@@ -457,5 +457,8 @@
     "telepastries.nether_cake.tooltip.1": "§6可以将你传送到地狱§7",
     "jetpack.resonant.name": "谐振",
     "gtceu.monium_ingot.tooltip": "§7 宇宙的宁静就在你掌心。",
-    "gtceu.prospector.tooltip.2": "§7如果想要特定的矿石，可能需要探索一番才能发现！"
+    "gtceu.prospector.tooltip.2": "§7如果想要特定的矿石，可能需要探索一番才能发现！",
+    "jetpack.conductive_iron.name": "导电铁",
+    "jetpack.dark_soularium.name": "玄色魂金",
+    "jetpack.electrical_steel.name": "磁钢"
 }
