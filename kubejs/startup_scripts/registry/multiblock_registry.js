@@ -717,7 +717,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.OUTPUT_LASER).setMaxGlobalLimited(1)))
             .where('H', Predicates.blocks("gtceu:heat_vent"))
-            .where('K', Predicates.blocks("gtceu:fusion_coi"))
+            .where('K', Predicates.blocks("gtceu:fusion_coil"))
             .where('N', Predicates.blocks("gtceu:tungsten_frame"))
             .where('S', Predicates.blocks("ae2:spatial_pylon"))
             .where('O', Predicates.blocks("kubejs:omnic_matrix_coil_block"))
