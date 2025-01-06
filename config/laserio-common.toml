@@ -10,17 +10,22 @@
 		#Multiplier for Overclocker Cards - Number of Overclockers * multiplier_milli_buckets_fluid = max millibuckets
 		#Range: > 0
 		multiplier_milli_buckets_fluid = 10000
+		#Minimum ticks/operation, the first element is with no Logistic Overclockers, the last one is with all four
+		min_ticks_fluid = [20, 15, 10, 5, 1]
 
 	#Energy Card
 	[card.energy_card]
-		#Maximum FE/t for Energy Cards (without Overclockers, if they are defined)
+		#Maximum FE/operation for Energy Cards (without Energy Overclockers, if they are defined)
 		#Range: > 0
 		max_fe_no_tiers = 0
+		#Minimum ticks/operation
+		#Range: > 1
+		min_ticks_energy = 1
 
 		#Energy Overclocker Card Tiers (for pack developers)
 		[card.energy_card.energy_overclockers]
 			#By adding values to this list, Energy Overclocker(s') will be generated (1 tier for each value).
-			#The maximum FE/t for each tier is specified using this list. Ex: [512, 2000, 51873]
+			#The maximum FE/operation for each tier is specified using this list. Ex: [512, 2000, 51873]
 			#Note: Since this is a feature meant for pack developers, no recipes will be generated
 			max_fe_tiers = [512, 2048, 8192, 32768, 131072, 524288, 2097152, 8388608, 134217728]
 			#By adding values to this list, Energy Overclocker(s') name(s) can be chosen (1 value for each tier).
@@ -41,4 +46,20 @@
 		#Multiplier for Overclocker Cards - Number of Overclockers * multiplier_milli_buckets_chemical = max millibuckets
 		#Range: > 0
 		multiplier_milli_buckets_chemical = 60000
+		#Minimum ticks/operation, the first element is with no Logistic Overclockers, the last one is with all four
+		min_ticks_chemical = [20, 16, 12, 8, 4]
+
+	#Item Card
+	[card.item_card]
+		#Minimum ticks/operation, the first element is with no Logistic Overclockers, the last one is with all four
+		min_ticks_item = [20, 15, 10, 5, 1]
+
+#General settings
+[general]
+	#Maximum interaction range with nodes when using a Laser Wrench
+	#Range: > 1
+	max_interaction_range = 10
+	#Maximum distance between two linked nodes
+	#Range: > 2
+	max_nodes_distance = 8
 
