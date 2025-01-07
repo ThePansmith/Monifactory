@@ -2687,7 +2687,7 @@
   "moni.quest.6F11E32BA70CA38C.title": "Blitz Powder",
   "moni.quest.6F32A8739D8E792A.description1": "Encode them in a \u0026aPattern Encoding Terminal\u0026r.",
   "moni.quest.6F32A8739D8E792A.description2": "Note that recipes encoded with Substitutions on will use existing equivalent items, but \u0026ewill only automatically craft the exact item specified in the recipe.\u0026r",
-  "moni.quest.6F32A8739D8E792A.description3": "\u00262Preferably aim for recipes without tools.\u0026r",
+  "moni.quest.6F32A8739D8E792A.description3": "\u00262Don't encode recipes that use hand tools.\u0026r Otherwise, you risk jamming your system due to durability or NBT mismatches.",
   "moni.quest.6F32A8739D8E792A.description4": "Use recipes that use machines instead!",
   "moni.quest.6F32A8739D8E792A.subtitle": "\u0026aPatterns\u0026r are used to encode a single crafting table or processing recipe for on-demand automation with \u0026bApplied Energistics\u0026r.",
   "moni.quest.6F32A8739D8E792A.title": "Autocrafting Patterns",
