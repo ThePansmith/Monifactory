@@ -171,7 +171,10 @@
 	]
 	quests: [
 		{
-			dependencies: ["5C4E189A3E401566"]
+			dependencies: [
+				"5C4E189A3E401566"
+				"68CB6AD16F1041E5"
+			]
 			description: [
 				"{moni.quest.0B62AD25CDD86A6B.description1}"
 				""
@@ -179,8 +182,10 @@
 				""
 				"{moni.quest.0B62AD25CDD86A6B.description3}"
 			]
+			hide_until_deps_visible: true
 			icon: "gtceu:mv_4a_energy_converter"
 			id: "0B62AD25CDD86A6B"
+			optional: true
 			rewards: [{
 				id: "0328A56626F1B919"
 				item: "kubejs:moni_nickel"
@@ -225,6 +230,7 @@
 				"0B62AD25CDD86A6B"
 				"74935A3553451178"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{moni.quest.5543D84CB5E37E01.description1}"]
 			icon: {
 				Count: 1
