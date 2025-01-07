@@ -543,6 +543,7 @@
 				title: "{moni.task.5CF757A158365EEF}"
 				type: "item"
 			}]
+			title: "{moni.quest.7D7B34CF5145F971.title}"
 			x: -1.0d
 			y: -10.25d
 		}
@@ -648,6 +649,7 @@
 				title: "{moni.task.4B9300AA8500D15F}"
 				type: "item"
 			}]
+			title: "{moni.quest.0E5E5E647F378D02.title}"
 			x: 0.5d
 			y: -9.5d
 		}
@@ -737,6 +739,7 @@
 				title: "{moni.task.0D3D5AC8CBB48681}"
 				type: "item"
 			}]
+			title: "{moni.quest.79197A2CD8E435B2.title}"
 			x: 2.0d
 			y: -8.75d
 		}
