@@ -99,6 +99,9 @@
     "jade_chamber": true,
     "jade_wireless": true
   },
+  "mcjtylib": {
+    "jadeaddons": true
+  },
   "telepastries": {
     "bites": true
   },
