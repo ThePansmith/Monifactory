@@ -1769,7 +1769,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "45561FC8024BD7F3"
-				item: "enderio:energetic_conduit"
+				item: "laserio:energy_overclocker_card_tier_2"
 				type: "item"
 			}]
 			title: "{moni.quest.4F4F120AFB3A9250.title}"
@@ -1971,8 +1971,6 @@
 				"{moni.quest.1A427A8CB43C8B59.description11}"
 				""
 				"{moni.quest.1A427A8CB43C8B59.description12}"
-				""
-				"{moni.quest.1A427A8CB43C8B59.description13}"
 			]
 			icon: "gtceu:lv_electric_pump"
 			id: "1A427A8CB43C8B59"
@@ -2065,7 +2063,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6DEB6911246BA1D9"
-				item: "enderio:item_conduit"
+				item: "laserio:card_item"
 				type: "item"
 			}]
 			title: "{moni.quest.4F239316765C7CA1.title}"
