@@ -1421,7 +1421,7 @@
 							}
 							{
 								Count: 1b
-								id: "gtceu:lp_steam_liquid_boiler"
+								id: "gtceu:hp_steam_solid_boiler"
 							}
 						]
 					}
