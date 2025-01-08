@@ -646,12 +646,14 @@
 		}
 		{
 			dependencies: [
-				"3547762BC39A0B8F"
-				"4146B73F27D24131"
+				"5DA5231489336B1B"
+				"374EB1BB1E2F6B9C"
+				"5878D53EB85F3881"
 			]
 			description: ["{moni.quest.5E2489DE2E840738.description1}"]
 			id: "5E2489DE2E840738"
 			rewards: [{
+				count: 3
 				id: "1C076188D1C62B2C"
 				item: "kubejs:moni_nickel"
 				type: "item"
@@ -665,53 +667,6 @@
 			title: "{moni.quest.5E2489DE2E840738.title}"
 			x: 2.5d
 			y: -14.5d
-		}
-		{
-			dependencies: [
-				"5878D53EB85F3881"
-				"374EB1BB1E2F6B9C"
-			]
-			description: [
-				"{moni.quest.4146B73F27D24131.description1}"
-				""
-				"{moni.quest.4146B73F27D24131.description2}"
-			]
-			id: "4146B73F27D24131"
-			rewards: [{
-				id: "0708288A50560FE6"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "7D061F50186D2747"
-				item: "gtceu:dimethylamine_bucket"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -15.5d
-		}
-		{
-			dependencies: [
-				"5DA5231489336B1B"
-				"374EB1BB1E2F6B9C"
-			]
-			description: ["{moni.quest.3547762BC39A0B8F.description1}"]
-			id: "3547762BC39A0B8F"
-			rewards: [{
-				id: "75C58EF83EDFB4A3"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "173C4E78E0772B0C"
-				item: "gtceu:monochloramine_bucket"
-				type: "item"
-			}]
-			title: "{moni.quest.3547762BC39A0B8F.title}"
-			x: 1.5d
-			y: -13.5d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
@@ -757,7 +712,7 @@
 				item: "gtceu:hypochlorous_acid_bucket"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: -13.5d
 		}
 		{
@@ -776,7 +731,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5878D53EB85F3881.title}"
-			x: -1.5d
+			x: 0.0d
 			y: -15.5d
 		}
 		{
@@ -795,7 +750,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7A09229ACC000B09.title}"
-			x: -3.0d
+			x: -1.5d
 			y: -14.5d
 		}
 		{
