@@ -215,6 +215,12 @@
 			x: 0.0d
 			y: -2.0d
 		}
+		{
+			id: "29366415E2B146BA"
+			linked_quest: "739F7BF2A90B278A"
+			x: 11.0d
+			y: 17.0d
+		}
 	]
 	quests: [
 		{
@@ -1247,37 +1253,6 @@
 		}
 		{
 			dependencies: [
-				"49B872B193268554"
-				"62AC7103FF9D25FD"
-			]
-			description: ["{moni.quest.7A7FFE9E89D19A2F.description1}"]
-			icon: "kubejs:mote_of_omnium"
-			id: "7A7FFE9E89D19A2F"
-			rewards: [{
-				id: "722444CB8E93D6CF"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [
-				{
-					id: "69983BE8E7F45F6E"
-					item: "kubejs:mote_of_omnium"
-					type: "item"
-				}
-				{
-					id: "70E21F11ED5BDBBB"
-					item: "kubejs:stabilized_einsteinium"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.7A7FFE9E89D19A2F.title}"
-			x: 9.0d
-			y: 24.0d
-		}
-		{
-			dependencies: [
 				"1B07DB4D58D43B7C"
 				"115B96B2092D671E"
 			]
@@ -2214,6 +2189,7 @@
 			dependencies: [
 				"22E50A6923EBF5CB"
 				"235C1E5B2C58B5AF"
+				"61301FBD825F8280"
 			]
 			description: [
 				"{moni.quest.738A141D31AD7CE3.description1}"
@@ -2231,6 +2207,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
+			subtitle: "{moni.quest.738A141D31AD7CE3.subtitle}"
 			tasks: [{
 				id: "140C83AB5FE8450E"
 				item: "kubejs:hadal_energy_core"
@@ -2823,6 +2800,37 @@
 			title: "{moni.quest.044553423097C3C7.title}"
 			x: 1.5d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"62AC7103FF9D25FD"
+				"739F7BF2A90B278A"
+				"49B872B193268554"
+			]
+			description: [
+				"{moni.quest.61301FBD825F8280.description1}"
+				""
+				"{moni.quest.61301FBD825F8280.description2}"
+				""
+				"{moni.quest.61301FBD825F8280.description3}"
+			]
+			icon: "gtceu:omnium_ingot"
+			id: "61301FBD825F8280"
+			tasks: [
+				{
+					id: "4205D04F8EFE2D7D"
+					item: "gtceu:omnium_nugget"
+					type: "item"
+				}
+				{
+					id: "56970BBAFAB8BEB7"
+					item: "gtceu:omnium_ingot"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.61301FBD825F8280.title}"
+			x: 11.0d
+			y: 20.25d
 		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"
