@@ -1089,11 +1089,19 @@
 				"{moni.quest.17312BF0197B87A8.description3.hardmode}"
 			]
 			id: "17312BF0197B87A8"
-			tasks: [{
-				id: "75E2F87C0D4B99E1"
-				item: "gtceu:primitive_blast_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "75E2F87C0D4B99E1"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "15F1FB08EE4E9EB6"
+					item: { Count: 32, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
 			title: "{moni.quest.17312BF0197B87A8.title.hardmode}"
 			x: 1.75d
 			y: 10.25d
