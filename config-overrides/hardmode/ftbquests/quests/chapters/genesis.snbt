@@ -1446,10 +1446,6 @@
 								Count: 1b
 								id: "gtceu:lp_steam_liquid_boiler"
 							}
-							{
-								Count: 1b
-								id: "gtceu:lp_steam_solar_boiler"
-							}
 						]
 					}
 				}
