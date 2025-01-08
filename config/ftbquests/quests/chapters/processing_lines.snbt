@@ -449,9 +449,14 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3380CBA4E4010EEC"]
+			dependencies: [
+				"3380CBA4E4010EEC"
+				"57E7182198B2EA9A"
+			]
 			description: ["{moni.quest.33351123F08D92BE.description1}"]
+			hide_until_deps_visible: true
 			id: "33351123F08D92BE"
+			optional: true
 			subtitle: "{moni.quest.33351123F08D92BE.subtitle}"
 			tasks: [{
 				id: "70D37DC6A4C89B21"
@@ -470,7 +475,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["33351123F08D92BE"]
+			dependencies: [
+				"33351123F08D92BE"
+				"747A07B8142E9B49"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{moni.quest.69BFFF8BFB3B3B5C.description1}"]
 			id: "69BFFF8BFB3B3B5C"
 			subtitle: "{moni.quest.69BFFF8BFB3B3B5C.subtitle}"
@@ -533,6 +542,7 @@
 			description: ["{moni.quest.6792DF5F9F320B98.description1}"]
 			hide_until_deps_visible: true
 			id: "6792DF5F9F320B98"
+			optional: true
 			subtitle: "{moni.quest.6792DF5F9F320B98.subtitle}"
 			tasks: [{
 				id: "79199213561E6E2C"
@@ -710,6 +720,32 @@
 			title: "{moni.quest.2664406B3CD20703.title}"
 			x: 11.5d
 			y: -7.5d
+		}
+		{
+			dependencies: [
+				"3380CBA4E4010EEC"
+				"1F7F73BF81570F3C"
+			]
+			description: ["{moni.quest.33351123F08D92BE.description1}"]
+			hide_until_deps_visible: true
+			id: "747A07B8142E9B49"
+			optional: true
+			subtitle: "{moni.quest.33351123F08D92BE.subtitle.hardmode}"
+			tasks: [{
+				id: "6D27870CD7F95683"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:glass"
+					}
+				}
+				title: "{moni.task.70D37DC6A4C89B21}"
+				type: "item"
+			}]
+			title: "{moni.quest.33351123F08D92BE.title}"
+			x: 7.0d
+			y: 3.0d
 		}
 	]
 	title: "{moni.chapter.055C0B43FE14258F.title}"
