@@ -2756,7 +2756,7 @@
 				""
 				"{moni.quest.6FB0357E12499B5F.description2}"
 			]
-			icon: "gtceu:iv_large_miner"
+			icon: "gtceu:ev_large_miner"
 			id: "6FB0357E12499B5F"
 			rewards: [{
 				id: "5E4EF45EDC85A4AE"
@@ -2767,7 +2767,7 @@
 			tasks: [
 				{
 					id: "26BECEC8E8BA08A3"
-					item: "gtceu:iv_large_miner"
+					item: "gtceu:ev_large_miner"
 					type: "item"
 				}
 				{
@@ -2884,7 +2884,7 @@
 					type: "item"
 				}
 				{
-					count: 7L
+					count: 8L
 					id: "47241D10077393C2"
 					item: "gtceu:solid_machine_casing"
 					type: "item"
