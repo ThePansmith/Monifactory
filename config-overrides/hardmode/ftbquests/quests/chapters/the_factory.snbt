@@ -1565,6 +1565,7 @@
 				""
 				"{moni.quest.1DBBE96165C7987D.description4}"
 			]
+			icon: "gtceu:lv_mixer"
 			id: "1DBBE96165C7987D"
 			rewards: [{
 				id: "34F7C473C934087B"
@@ -1575,7 +1576,27 @@
 			subtitle: "{moni.quest.1DBBE96165C7987D.subtitle}"
 			tasks: [{
 				id: "0199D55D895EDDC9"
-				item: "gtceu:lv_mixer"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_mixer"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_mixer"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_mixer"
+							}
+						]
+					}
+				}
+				title: "{moni.task.0199D55D895EDDC9}"
 				type: "item"
 			}]
 			title: "{moni.quest.1DBBE96165C7987D.title}"
