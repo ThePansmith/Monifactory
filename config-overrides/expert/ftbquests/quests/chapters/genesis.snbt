@@ -1355,7 +1355,7 @@
 				{
 					count: 3L
 					id: "14B188414BF825E6"
-					item: { Count: 3, id: "gtceu:red_alloy_single_wire" }
+					item: { Count: 12, id: "gtceu:red_alloy_single_wire" }
 					type: "item"
 				}
 				{
