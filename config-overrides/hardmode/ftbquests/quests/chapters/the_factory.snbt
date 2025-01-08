@@ -334,7 +334,9 @@
 				""
 				"{moni.quest.7460F22545A4EFB2.description2}"
 			]
+			hide_until_deps_visible: true
 			id: "7460F22545A4EFB2"
+			optional: true
 			rewards: [{
 				id: "46EA0B4F09642C8E"
 				item: "kubejs:moni_nickel"
