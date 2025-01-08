@@ -1847,6 +1847,7 @@
 				""
 				"{moni.quest.1DBBE96165C7987D.description4}"
 			]
+			icon: "gtceu:lv_mixer"
 			id: "1DBBE96165C7987D"
 			rewards: [{
 				id: "34F7C473C934087B"
@@ -1857,7 +1858,27 @@
 			subtitle: "{moni.quest.1DBBE96165C7987D.subtitle}"
 			tasks: [{
 				id: "0199D55D895EDDC9"
-				item: "gtceu:lv_mixer"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_mixer"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_mixer"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_mixer"
+							}
+						]
+					}
+				}
+				title: "{moni.task.0199D55D895EDDC9}"
 				type: "item"
 			}]
 			title: "{moni.quest.1DBBE96165C7987D.title}"
@@ -2296,6 +2317,8 @@
 				"{moni.quest.39394D5596FF8BC8.description1}"
 				""
 				"{moni.quest.39394D5596FF8BC8.description2}"
+				""
+				"{moni.quest.39394D5596FF8BC8.description3}"
 			]
 			id: "39394D5596FF8BC8"
 			rewards: [{
@@ -2313,25 +2336,26 @@
 							{
 								Count: 1b
 								id: "thermal:flux_magnet"
-								tag: { }
 							}
 							{
 								Count: 1b
 								id: "gtceu:lv_item_magnet"
-								tag: {
-									Charge: 120000L
-								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_item_magnet"
 							}
 							{
 								Count: 1b
 								id: "enderio:electromagnet"
-								tag: {
-									Energy: {
-										EnergyStored: 0
-										MaxEnergyStored: 100000
-										MaxEnergyUse: 100000
-									}
-								}
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:magnet_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:advanced_magnet_upgrade"
 							}
 						]
 					}
@@ -2380,8 +2404,6 @@
 				"{moni.quest.7EA737163230F984.description1}"
 				""
 				"{moni.quest.7EA737163230F984.description2}"
-				""
-				"{moni.quest.7EA737163230F984.description3}"
 			]
 			hide_until_deps_visible: true
 			icon: {

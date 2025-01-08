@@ -1315,7 +1315,7 @@
 				{
 					count: 3L
 					id: "14B188414BF825E6"
-					item: { Count: 3, id: "gtceu:red_alloy_single_wire" }
+					item: { Count: 12, id: "gtceu:red_alloy_single_wire" }
 					type: "item"
 				}
 				{
@@ -1849,7 +1849,7 @@
 				"{moni.quest.115D2BEB18929C7C.description1}"
 				""
 				""
-				"[\"\",{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description3\"},{\"color\":\"aqua\",\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description4\"},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description5\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description.hover_text6\"}},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description7\"}]"
+				"[\"\",{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description2\"},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description3\"},{\"color\":\"aqua\",\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description4\"},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description5\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description6\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description.hover_text6\"}}},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description7\"}]"
 			]
 			hide_dependency_lines: true
 			icon: "kubejs:moni_dollar"

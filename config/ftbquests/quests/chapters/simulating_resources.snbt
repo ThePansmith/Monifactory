@@ -113,13 +113,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:blaze"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "02A84CAF628AA38A"
@@ -128,13 +128,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:wither_skeleton"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "7CD80AE13126B3DC"
@@ -143,13 +143,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:ghast"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{moni.quest.1062A387E899434C.title}"
@@ -179,13 +179,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:zombie"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "5AE0806274510B68"
@@ -194,13 +194,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:creeper"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "3D6D1F055EE8FCCF"
@@ -209,13 +209,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:witch"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "044CAD01DB09EE97"
@@ -224,13 +224,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:skeleton"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "1FE91F62FA6DBFDC"
@@ -239,13 +239,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:spider"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "29EBB069295CAC7A"
@@ -254,13 +254,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:guardian"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "4353BDD964D462FA"
@@ -269,12 +269,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:slime"
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{moni.quest.61E018C3BAB05818.title}"
@@ -365,13 +366,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:enderman"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "1BA5BE35C701AC5C"
@@ -380,13 +381,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:shulker"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "2D300F4677701B59"
@@ -395,13 +396,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:wither"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "1C75BB7AF0616CD8"
@@ -410,13 +411,13 @@
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
-								data: 6
 								id: "hostilenetworks:ender_dragon"
 							}
 						}
 					}
 					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 				{
 					id: "0A2B07B076638423"
@@ -429,7 +430,9 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
+					weak_nbt_match: true
 				}
 			]
 			title: "{moni.quest.637953544CE66BDB.title}"
