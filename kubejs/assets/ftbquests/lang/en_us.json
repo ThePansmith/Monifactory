@@ -1279,7 +1279,7 @@
   "moni.quest.32E44FFD602C98DF.title": "\u00262Uranium Fuel Infrastructure",
   "moni.quest.33131617D0919A5B.title": "Element 049: Indium",
   "moni.quest.33195ED6D7008E5F.description1": "If your server admin allows it, you can use JourneyMap to create and teleport to waypoints you set. You can access JourneyMap waypoints by hitting the N key by default. Use this feature to gather resources quickly.",
-  "moni.quest.33195ED6D7008E5F.description2": "If JourneyMap teleportation is disabled, you can still use the \u0026e/sethome\u0026r command to register where your house is, and \u0026e/home\u0026r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There are some \u0026erestrictions\u0026r on this though: there is a limit on the number of homes you can set, \u0026eit takes a few seconds of standing still to activate\u0026r and there is a \u0026ecooldown\u0026r between uses.",
+  "moni.quest.33195ED6D7008E5F.description2": "If JourneyMap teleportation is disabled, you can still use the \u0026e/sethome\u0026r command to register where your house is, and \u0026e/home\u0026r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There is a limit on the number of homes you can set, though.",
   "moni.quest.33195ED6D7008E5F.description3": "Later on you\u0027ll discover other means of teleportation.",
   "moni.quest.33195ED6D7008E5F.subtitle": "Make returning home easy!",
   "moni.quest.33195ED6D7008E5F.title": "JourneyMap and Registering Homes",
