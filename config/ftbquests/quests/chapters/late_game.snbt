@@ -2382,11 +2382,7 @@
 				"11154356854B64DA"
 				"39FD6F1076559156"
 			]
-			description: [
-				"{moni.quest.2D0DF78F71760F00.description1}"
-				""
-				"{moni.quest.2D0DF78F71760F00.description2}"
-			]
+			description: ["{moni.quest.2D0DF78F71760F00.description1}"]
 			id: "2D0DF78F71760F00"
 			rewards: [{
 				id: "6F3E0BE43F386D11"
