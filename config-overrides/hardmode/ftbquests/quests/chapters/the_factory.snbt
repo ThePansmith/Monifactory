@@ -1475,7 +1475,7 @@
 				""
 				"{moni.quest.4F4F120AFB3A9250.description2}"
 				""
-				"{moni.quest.4F4F120AFB3A9250.description3.hardmode}"
+				"{moni.quest.4F4F120AFB3A9250.description3}"
 			]
 			id: "4F4F120AFB3A9250"
 			rewards: [{
