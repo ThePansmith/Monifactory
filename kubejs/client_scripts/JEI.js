@@ -261,7 +261,7 @@ JEIEvents.hideFluids(event => {
     // list of used fluids to not remove
     let ncUsedFluid = ['nuclearcraft:hydrated_gelatin', 'nuclearcraft:gelatin', 'nuclearcraft:sugar', 'nuclearcraft:marshmallow', 'nuclearcraft:cocoa_butter', 'nuclearcraft:pasteurized_milk', 'nuclearcraft:chocolate_liquor', 'nuclearcraft:unsweetened_chocolate', 'nuclearcraft:dark_chocolate', 'nuclearcraft:milk_chocolate', 'nuclearcraft:technical_water', 'nuclearcraft:high_pressure_steam', 'nuclearcraft:exhaust_steam']
 
-    // adds flowing fluid variants to the l ist so they aren't hidden
+    // adds flowing fluid variants to the list so they aren't hidden
     ncUsedFluid.forEach(fluid => { ncUsedFluid.push(`${fluid}_flowing`) })
 
     // remove used fluids from the full list
