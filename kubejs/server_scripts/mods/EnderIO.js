@@ -32,8 +32,7 @@ ServerEvents.recipes(event => {
             B: "enderio:conduit_binder",
             W: "gtceu:vibrant_alloy_single_wire",
             P: "enderio:pressurized_fluid_conduit"
-        }
-        ).id("kubejs:ender_fluid_conduit_upgrade")
+        }).id("kubejs:ender_fluid_conduit_upgrade")
 
         event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
 
@@ -83,8 +82,7 @@ ServerEvents.recipes(event => {
                 W: "gtceu:vibrant_alloy_single_wire",
                 P: "enderio:pressurized_fluid_conduit",
                 C: "gtceu:polyvinyl_chloride_foil"
-            }
-            ).id("kubejs:ender_fluid_conduit_upgrade")
+            }).id("kubejs:ender_fluid_conduit_upgrade")
 
             event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
 
@@ -119,8 +117,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'enderio:conduit_binder',
         B: 'gtceu:conductive_alloy_single_wire'
-    }
-    ).id("kubejs:conductive_conduit")
+    }).id("kubejs:conductive_conduit")
 
     event.recipes.gtceu.assembler('kubejs:conductive_conduit')
         .itemInputs('3x gtceu:conductive_alloy_single_wire', '6x enderio:conduit_binder')
@@ -137,8 +134,7 @@ ServerEvents.recipes(event => {
         A: 'enderio:conduit_binder',
         B: 'gtceu:energetic_alloy_single_wire',
         C: 'enderio:conductive_conduit'
-    }
-    ).id("kubejs:energetic_conduit")
+    }).id("kubejs:energetic_conduit")
 
     event.recipes.gtceu.assembler('kubejs:energetic_conduit')
         .itemInputs('2x gtceu:energetic_alloy_single_wire', 'enderio:conductive_conduit', '6x enderio:conduit_binder')
@@ -156,8 +152,7 @@ ServerEvents.recipes(event => {
         A: 'enderio:conduit_binder',
         B: 'gtceu:vibrant_alloy_single_wire',
         C: 'enderio:energetic_conduit'
-    }
-    ).id("kubejs:vibrant_conduit")
+    }).id("kubejs:vibrant_conduit")
 
     event.recipes.gtceu.assembler('kubejs:vibrant_conduit')
         .itemInputs('2x gtceu:vibrant_alloy_single_wire', 'enderio:energetic_conduit', '6x enderio:conduit_binder')
@@ -273,7 +268,7 @@ ServerEvents.recipes(event => {
 
     capacitorCores.forEach(core => {
         event.shaped(
-            core[1] + 'x enderio:basic_capacitor', [
+            `${core[1]}x enderio:basic_capacitor`, [
             ' N ',
             'NCN',
             'W W'

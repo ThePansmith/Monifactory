@@ -198,7 +198,6 @@ ServerEvents.recipes(event => {
     }
 
     //Solid Fuel Recipes
-
     event.recipes.gtceu.assembler('fuel_rod')
         .itemInputs('gtceu:fluid_cell', '2x gtceu:rhodium_plated_palladium_ring', '2x gtceu:neutron_reflector', '2x gtceu:rhodium_plated_palladium_plate')
         .inputFluids('gtceu:lead 288')

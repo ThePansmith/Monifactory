@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-
     // Scrap
     event.recipes.gtceu.sifter('scrap_sifting')
         .itemInputs('kubejs:alien_scrap')

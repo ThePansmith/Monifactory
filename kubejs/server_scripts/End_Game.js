@@ -366,8 +366,7 @@ ServerEvents.recipes(event => {
     //! Creative Items !//
 
     //Creative Jetpack
-    event.recipes.extendedcrafting.shaped_table(
-        Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}').weakNBT(), [
+    event.recipes.extendedcrafting.shaped_table(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}').weakNBT(), [
         '  C   L  ',
         ' CCC LLL ',
         ' CVCFLEL ',

@@ -11,8 +11,7 @@ ServerEvents.recipes(event => {
         ], {
             A: "gtceu:wrought_iron_plate",
             B: "minecraft:water_bucket"
-        }
-        )
+        })
         event.shaped('thermal:device_water_gen', [
             ' B ',
             'CWC',
@@ -23,8 +22,8 @@ ServerEvents.recipes(event => {
             W: "watercollector:watercollector",
             S: "enderio:fused_quartz",
             C: "#forge:ingots/copper"
-        }
-        ).id('kubejs:device_water_gen');
+        }).id('kubejs:device_water_gen');
+        
         event.shaped('thermal:device_rock_gen', [
             ' P ',
             'PNP',
@@ -34,8 +33,8 @@ ServerEvents.recipes(event => {
             P: "#forge:plates/steel",
             N: "#forge:pistons",
             H: "minecraft:hopper"
-        }
-        ).id('kubejs:device_rock_gen');
+        }).id('kubejs:device_rock_gen');
+
     } else {
         event.shaped('thermal:device_water_gen', [
             ' B ',
@@ -47,8 +46,8 @@ ServerEvents.recipes(event => {
             W: "#enderio:fused_quartz",
             S: "thermal:redstone_servo",
             C: "#forge:ingots/copper"
-        }
-        ).id('kubejs:device_water_gen');
+        }).id('kubejs:device_water_gen');
+
         event.shaped('thermal:device_rock_gen', [
             ' P ',
             'INI',
@@ -59,8 +58,7 @@ ServerEvents.recipes(event => {
             P: "#forge:plates/steel",
             I: "#forge:plates/invar",
             N: "#forge:pistons"
-        }
-        ).id('kubejs:device_rock_gen');
+        }).id('kubejs:device_rock_gen');
     }
 
     //Infinite Cobble/Water cells

@@ -4,8 +4,7 @@
 
 ServerEvents.recipes(event => {
 	//ETERNAL CATALYST
-	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:eternal_catalyst', [
+	event.recipes.extendedcrafting.shaped_table('kubejs:eternal_catalyst', [
 		'    A    ',
 		' A  A  A ',
 		'  AAPAA  ',
@@ -31,8 +30,7 @@ ServerEvents.recipes(event => {
 	}).id('kubejs:extended/eternal_catalyst');
 
 	//INFINITY CATALYST
-	event.recipes.extendedcrafting.shaped_table(
-		"kubejs:infinity_catalyst", [
+	event.recipes.extendedcrafting.shaped_table("kubejs:infinity_catalyst", [
 		'PPPPEPPPP',
 		'PEPPEPPEP',
 		'PPEEEEEPP',
@@ -50,8 +48,7 @@ ServerEvents.recipes(event => {
 	}).id('kubejs:extended/infinity_catalyst');
 
 	// infinity ingot
-	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:dormant_infinity_compound_ingot', [
+	event.recipes.extendedcrafting.shaped_table('kubejs:dormant_infinity_compound_ingot', [
 		'         ',
 		'     BAAA',
 		'  BAAADCA',
@@ -181,8 +178,7 @@ ServerEvents.recipes(event => {
 	).id('kubejs:extended/mote_of_omnium')
 
 	// exotic material catalyst
-	event.recipes.extendedcrafting.shaped_table(
-		'kubejs:exotic_materials_catalyst', [
+	event.recipes.extendedcrafting.shaped_table('kubejs:exotic_materials_catalyst', [
 		"A  B  C",
 		" D E F ",
 		"  GHI  ",
@@ -219,8 +215,7 @@ ServerEvents.recipes(event => {
 	}).id('kubejs:extended/exotic_materials_catalyst')
 
 	// Angel Ring
-	event.recipes.extendedcrafting.shaped_table(
-		'better_angel_ring:angel_ring', [
+	event.recipes.extendedcrafting.shaped_table('better_angel_ring:angel_ring', [
 		" AAA ",
 		"A B A",
 		"AC CA",

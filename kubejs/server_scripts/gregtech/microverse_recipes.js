@@ -679,12 +679,10 @@ ServerEvents.recipes(event => {
             C: projector[1],
             M: 'kubejs:microverse_casing',
             A: 'gtceu:computer_monitor_cover'
-        }
-        ).id(`kubejs:${projector[0]}`)
+        }).id(`kubejs:${projector[0]}`)
     })
 
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:hyperbolic_microverse_projector', [
+    event.recipes.extendedcrafting.shaped_table('gtceu:hyperbolic_microverse_projector', [
         'EPFPE',
         'PALAP',
         'FLRLF',

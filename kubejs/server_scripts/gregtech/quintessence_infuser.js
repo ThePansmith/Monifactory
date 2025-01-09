@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:quintessence_infuser', [
+    event.recipes.extendedcrafting.shaped_table('gtceu:quintessence_infuser', [
         'SCFCS',
         'CALAC',
         'GLBLG',
@@ -26,7 +25,7 @@ ServerEvents.recipes(event => {
 
     function Soulbinding(id, mob, input2, EUt, fluid, output) {
         event.recipes.gtceu.quintessence_infuser(`${id}_${mob}`)
-            .itemInputs(Item.of('enderio:filled_soul_vial', '{BlockEntityTag:{EntityStorage:{Entity:{id:"minecraft:' + mob + '"}}}}').weakNBT())
+            .itemInputs(Item.of('enderio:filled_soul_vial', `{BlockEntityTag:{EntityStorage:{Entity:{id:"minecraft:${mob}"}}}}`).weakNBT())
             .itemInputs(Item.of(input2))
             .inputFluids(Fluid.of('enderio:xp_juice', fluid))
             .itemOutputs(output)

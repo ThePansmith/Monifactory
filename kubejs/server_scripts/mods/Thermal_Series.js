@@ -401,8 +401,7 @@ ServerEvents.recipes(event => {
         S: '#minecraft:saplings',
         R: 'thermal:rf_coil',
         C: '#forge:gears/copper'
-    }
-    ).id("thermal:machine_insolator")
+    }).id("thermal:machine_insolator")
 
     event.shaped('thermal:device_potion_diffuser', [
         ' A ',
@@ -426,6 +425,7 @@ ServerEvents.recipes(event => {
         B: '#forge:rods/electrum',
         C: 'enderio:advanced_capacitor_bank'
     }).id('kubejs:energy_cell_frame')
+    
     event.remove('thermal:energy_cell');
     event.recipes.gtceu.canner('kubejs:energy_cell')
         .itemInputs('thermal:energy_cell_frame', '#forge:storage_blocks/redstone')

@@ -322,8 +322,7 @@ ServerEvents.recipes(event => {
             B: curIngredients[2],
             C: '#gtceu:circuits/' + curIngredients[0],
             S: Item.of(prevTier)
-        }
-        ).id('kubejs:ae2/storage_component_' + storage_tiers[index + 1])
+        }).id('kubejs:ae2/storage_component_' + storage_tiers[index + 1])
 
         //Cheaper ramp up to reduce exponential effect
         event.recipes.gtceu.assembler(`kubejs:ae2/${storage_tiers[index + 1]}_storage_assembler`)

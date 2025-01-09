@@ -141,20 +141,20 @@ ServerEvents.recipes(event => {
     // Photovoltaic Cells T2-6
     var cellCrafting = [
         [2, 'enderio:photovoltaic_plate', 'gtceu:battery_alloy_plate'],
-        [3, 'minecraft:ender_pearl' /* Temporary, TODO: add lens as type of ender pearl material */, 'gtceu:annealed_copper_plate'],
+        [3, 'minecraft:ender_pearl', 'gtceu:annealed_copper_plate'],
         [4, 'gtceu:light_blue_glass_lens', 'gtceu:vibrant_alloy_plate'],
         [5, 'gtceu:sunnarium_plate', 'gtceu:sunnarium_plate'],
         [6, 'gtceu:enriched_sunnarium_plate', 'gtceu:enriched_sunnarium_plate']
     ]
 
     cellCrafting.forEach(cell => {
-        event.shaped('6x solarflux:photovoltaic_cell_' + cell[0], [
+        event.shaped(`6x solarflux:photovoltaic_cell_${cell[0]}`, [
             'TTT',
             'PPP',
             'BBB'
         ], {
             T: cell[1],
-            P: 'solarflux:photovoltaic_cell_' + (cell[0] - 1),
+            P: `solarflux:photovoltaic_cell_${cell[0] - 1}`,
             B: cell[2]
         }
         )

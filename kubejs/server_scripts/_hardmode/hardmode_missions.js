@@ -54,8 +54,7 @@ ServerEvents.recipes(event => {
 
     if (isHardMode) {
         // T4.5  Microminer
-        event.recipes.extendedcrafting.shaped_table(
-            'kubejs:microminer_t4half', [
+        event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t4half', [
             '  LGL  ',
             'F ltl F',
             'AllcllA',
@@ -77,8 +76,7 @@ ServerEvents.recipes(event => {
         }).id('kubejs:microminer/t4half')
 
         // T8.5  Microminer
-        event.recipes.extendedcrafting.shaped_table(
-            'kubejs:microminer_t8half', [
+        event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t8half', [
             '   AAA   ',
             '  ANNNA  ',
             ' GNTTTNG ',

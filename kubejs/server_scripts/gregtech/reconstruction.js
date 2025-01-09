@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
 
     // Reconstruction
     reconstructedItems.forEach(([input, output, eut, id]) => {
-        event.recipes.gtceu.atomic_reconstruction('kubejs:' + id)
+        event.recipes.gtceu.atomic_reconstruction(`kubejs:${id}`)
             .itemInputs(input)
             .itemOutputs(output)
             .duration(20)
@@ -65,9 +65,9 @@ ServerEvents.recipes(event => {
     // Universal Circuits
     const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
     tiers.forEach((level) => {
-        event.recipes.gtceu.atomic_reconstruction("kubejs:" + level + "_universal_circuit")
-            .itemInputs("#gtceu:circuits/" + level)
-            .itemOutputs("kubejs:" + level + "_universal_circuit")
+        event.recipes.gtceu.atomic_reconstruction(`kubejs:${level}_universal_circuit`)
+            .itemInputs(`#gtceu:circuits/${level}`)
+            .itemOutputs(`kubejs:${level}_universal_circuit`)
             .EUt(32)
             .duration(5)
     })
@@ -102,9 +102,9 @@ ServerEvents.recipes(event => {
 
     //Crystal Gears
     crystals.forEach(crystal => {
-        event.recipes.gtceu.extruder("kubejs:" + crystal + "_gear")
-            .itemInputs('4x gtceu:' + crystal + '_gem')
-            .itemOutputs('gtceu:' + crystal + '_gear')
+        event.recipes.gtceu.extruder(`kubejs:${crystal}_gear`)
+            .itemInputs(`4x gtceu:${crystal}_gem`)
+            .itemOutputs(`gtceu:${crystal}_gear`)
             .notConsumable('gtceu:gear_extruder_mold')
             .duration(80)
             .EUt(56)
@@ -135,9 +135,9 @@ ServerEvents.recipes(event => {
     flowerCycle.forEach((flower, index) => {
         let curFlower = flowerCycle[index];
         let nextFlower = flowerCycle[(index + 1) % flowerCycle.length];
-        event.recipes.gtceu.atomic_reconstruction("gtceu:" + curFlower + "_to_" + nextFlower)
-            .itemInputs("minecraft:" + curFlower)
-            .itemOutputs("minecraft:" + nextFlower)
+        event.recipes.gtceu.atomic_reconstruction(`gtceu:${curFlower}_to_${nextFlower}`)
+            .itemInputs(`minecraft:${curFlower}`)
+            .itemOutputs(`minecraft:${nextFlower}`)
             .EUt(GTValues.VA[GTValues.LV])
             .duration(30)
     })

@@ -12,13 +12,13 @@ ServerEvents.recipes(event => {
         event.remove({ output: ['gtceu:firebrick', 'gtceu:firebricks', 'gtceu:primitive_blast_furnace'] })
 
         carbonSources.forEach(carbonSource => {
-            event.recipes.gtceu.alloy_smelter("steel_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
+            event.recipes.gtceu.alloy_smelter(`steel_${carbonSource.replace(/\W/g, '')}`) // The replace line removes non alphanumeric chars, regex is magic
                 .itemInputs("#forge:ingots/iron", carbonSource)
                 .itemOutputs("gtceu:steel_ingot")
                 .duration(150)
                 .EUt(16)
 
-            event.recipes.gtceu.alloy_smelter("steel_wrought_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
+            event.recipes.gtceu.alloy_smelter(`steel_wrought_${carbonSource.replace(/\W/g, '')}`) // The replace line removes non alphanumeric chars, regex is magic
                 .itemInputs("#forge:ingots/wrought_iron", carbonSource)
                 .itemOutputs("gtceu:steel_ingot")
                 .duration(100)
@@ -143,8 +143,6 @@ ServerEvents.recipes(event => {
             P: '#forge:glass_panes'
         }).id('kubejs:glass_tube')
 
-        //TODO: AE2 crystal growth accelerator goes here
-
         // Monified distill tower
         event.shaped('gtceu:distillation_tower', [
             'LPL',
@@ -159,7 +157,7 @@ ServerEvents.recipes(event => {
 
         //GT Steam Age
         gtMachines.forEach(machine => {
-            event.remove({ output: ['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine] })
+            event.remove({ output: [`gtceu:lp_steam_${machine}`, `gtceu:hp_steam_${machine}`] })
         })
 
         event.shaped('thermal:dynamo_numismatic', [

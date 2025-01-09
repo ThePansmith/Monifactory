@@ -2,16 +2,15 @@ ServerEvents.recipes(event => {
 
     ////// Machine Recipe //////
 
-    event.shaped(
-        'gtceu:greenhouse',
-        ['AWA',
-            'ASA',
-            'WAW'],
-        {
-            A: '#gtceu:circuits/mv',
-            W: 'gtceu:copper_single_cable',
-            S: 'gtceu:solid_machine_casing'
-        }).id('kubejs:shaped/greenhouse')
+    event.shaped('gtceu:greenhouse', [
+        'AWA',
+        'ASA',
+        'WAW'
+    ], {
+        A: '#gtceu:circuits/mv',
+        W: 'gtceu:copper_single_cable',
+        S: 'gtceu:solid_machine_casing'
+    }).id('kubejs:shaped/greenhouse')
 
 
     ////// Greenhouse Recipes //////

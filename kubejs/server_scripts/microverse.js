@@ -241,8 +241,7 @@ ServerEvents.recipes(event => {
     })
 
     // T12 Microminer
-    event.recipes.extendedcrafting.shaped_table(
-        'kubejs:microminer_t12', [ // temp
+    event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t12', [
         '     I     ',
         '    IEI    ',
         '    III    ',

@@ -11,8 +11,7 @@ ServerEvents.recipes(event => {
     }
 
 
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:subatomic_digital_assembler', [
+    event.recipes.extendedcrafting.shaped_table('gtceu:subatomic_digital_assembler', [
         'ECFCE',
         'CALAC',
         'GLRLG',

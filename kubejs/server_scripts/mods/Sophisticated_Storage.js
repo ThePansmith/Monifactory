@@ -135,8 +135,8 @@ ServerEvents.recipes(event => {
         // Barrel-in-table upgrades
         sophStorageTypes.forEach(storageType => {
             //Works for upgrades as the recipe type implies, but doesn't work for making new barrels/chests/boxes from scratch
-            let outputStorage = 'sophisticatedstorage:' + storageType[0] + material[0] + storageType[1]
-            let inputStorage = 'sophisticatedstorage:' + storageType[0] + sophStorageMaterials[toIndex - 1][0] + storageType[1]
+            let outputStorage = `sophisticatedstorage:${storageType[0]}${material[0]}${storageType[1]}`
+            let inputStorage = `sophisticatedstorage:${storageType[0]}${sophStorageMaterials[toIndex - 1][0]}${storageType[1]}`
             event.remove({ mod: 'sophisticatedstorage', output: outputStorage })
             event.custom({
                 "type": "sophisticatedstorage:storage_tier_upgrade",
@@ -153,10 +153,10 @@ ServerEvents.recipes(event => {
                 ],
                 "key": {
                     "I": {
-                        "tag": ('forge:ingots/' + material[1])
+                        "tag": (`forge:ingots/${material[1]}`)
                     },
                     "P": {
-                        "tag": ('forge:plates/' + material[2])
+                        "tag": (`forge:plates/${material[2]}`)
                     },
                     "C": {
                         "item": inputStorage
@@ -235,15 +235,15 @@ ServerEvents.recipes(event => {
 
     stackupgrade.forEach(material => {
         modids.forEach(mod => {
-            event.remove({ output: mod + ':' + material[0] })
-            event.shaped(mod + ':' + material[0], [
+            event.remove({ output: `${mod}:${material[0]}` })
+            event.shaped(`${mod}:${material[0]}`, [
                 'III',
                 'IUI',
                 'BIB'
             ], {
-                I: material[1] + '_plate',
-                B: material[1] + '_gear',
-                U: mod + ':' + material[2]
+                I: `${material[1]}_plate`,
+                B: `${material[1]}_gear`,
+                U: `${mod}:${material[2]}`
             })
         })
     })
@@ -291,13 +291,13 @@ ServerEvents.recipes(event => {
 
     // Magnet upgrades
     modids.forEach(mod => {
-        event.remove({ output: mod + ':magnet_upgrade' })
-        event.shaped(mod + ':magnet_upgrade', [
+        event.remove({ output: `${mod}:magnet_upgrade` })
+        event.shaped(`${mod}:magnet_upgrade`, [
             'IAI',
             'IUI',
             'I I'
         ], {
-            U: mod + ':pickup_upgrade',
+            U: `${mod}:pickup_upgrade`,
             I: 'minecraft:iron_ingot',
             A: 'enderio:vacuum_chest',
         })

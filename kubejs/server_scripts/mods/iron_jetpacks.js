@@ -1,8 +1,4 @@
 ServerEvents.recipes(event => {
-    //
-    // Thrusters
-    //
-
     // Thermal
 
     // Generate thermal thruster recipes
@@ -14,7 +10,7 @@ ServerEvents.recipes(event => {
     ]
 
     thermalThrusters.forEach(([newTier, plate1, plate2, dynamo]) => {
-        event.shaped(Item.of('kubejs:' + newTier + '_thruster'), [
+        event.shaped(Item.of(`kubejs:${newTier}_thruster`), [
             'PCP',
             'MDM',
             'BBB'
@@ -36,7 +32,7 @@ ServerEvents.recipes(event => {
     ]
 
     eioThrusters.forEach(([newTier, plate, card, crystal, lastTier]) => {
-        event.shaped(Item.of('kubejs:' + newTier + '_thruster'), [
+        event.shaped(Item.of(`kubejs:${newTier}_thruster`), [
             'PCP',
             'PRP',
             'BTB'
@@ -136,7 +132,7 @@ ServerEvents.recipes(event => {
             P: `#forge:plates/${plate}`,
             E: energyCapacitor,
             S: middlePart,
-            T: Item.of('kubejs:' + newTier + '_thruster').weakNBT()
+            T: Item.of(`kubejs:${newTier}_thruster`).weakNBT()
         }).id(`kubejs:ironjetpacks/base/${newTier}`);
     })
 
@@ -149,7 +145,7 @@ ServerEvents.recipes(event => {
             P: `#forge:plates/${plate}`,
             E: energyCapacitor,
             S: Item.of('ironjetpacks:jetpack', `{Id:"ironjetpacks:${previousTier}"}`).weakNBT(),
-            T: Item.of('kubejs:' + newTier + '_thruster').weakNBT()
+            T: Item.of(`kubejs:${newTier}_thruster`).weakNBT()
         }).modifyResult(copyOldJetpackData).id(`kubejs:ironjetpacks/upgrade/${newTier}`);
     })
 

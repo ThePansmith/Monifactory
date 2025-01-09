@@ -455,8 +455,7 @@ ServerEvents.recipes(event => {
     ], {
         A: '#minecraft:saplings',
         B: '#minecraft:swords'
-    }
-    ).damageIngredient('#minecraft:swords')
+    }).damageIngredient('#minecraft:swords')
 
     //Avaritia Replacement recipes
     compacting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
@@ -625,6 +624,7 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(30720)
         .stationResearch(b => b.researchStack('gtceu:electric_blast_furnace').CWUt(16, 64000).EUt(30720))
+        
     event.remove({ id: 'gtceu:shaped/mega_vacuum_freezer' })
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_vacuum_freezer')
         .itemInputs('gtceu:vacuum_freezer', '4x #gtceu:circuits/zpm', '4x gtceu:luv_field_generator', '4x gtceu:naquadah_normal_fluid_pipe', '4x gtceu:dense_naquadah_alloy_plate', '4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')

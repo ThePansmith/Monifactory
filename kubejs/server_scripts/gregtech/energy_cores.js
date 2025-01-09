@@ -8,8 +8,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(30720)
 
-    event.recipes.extendedcrafting.shaped_table(
-        'extendedcrafting:auto_flux_crafter', [
+    event.recipes.extendedcrafting.shaped_table('extendedcrafting:auto_flux_crafter', [
         "RPEPR",
         "PXCXP",
         "PCACP",
@@ -24,8 +23,7 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/luv'
     })
 
-    event.recipes.extendedcrafting.shaped_table(
-        'extendedcrafting:flux_alternator', [
+    event.recipes.extendedcrafting.shaped_table('extendedcrafting:flux_alternator', [
         " PEP ",
         " PCP ",
         " PCP ",
@@ -76,5 +74,4 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:hadal_energy_core")
         .duration(100)
         .EUt(32)
-
 })

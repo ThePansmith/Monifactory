@@ -1,11 +1,9 @@
 ServerEvents.recipes(event => {
-    event.shaped(
-        'gtceu:discharger',
-        [
-            'PLP',
-            'CFC',
-            'PHP'
-        ], {
+    event.shaped('gtceu:discharger', [
+        'PLP',
+        'CFC',
+        'PHP'
+    ], {
         P: 'gtceu:cryolobus_plate',
         F: 'kubejs:dischargement_core',
         C: 'gtceu:niobium_titanium_single_cable',

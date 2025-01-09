@@ -139,8 +139,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:elite_table' })
-    event.recipes.extendedcrafting.shaped_table(
-        'extendedcrafting:elite_table', [
+    event.recipes.extendedcrafting.shaped_table('extendedcrafting:elite_table', [
         'ASESA',
         'SCCCS',
         'ECTCE',
@@ -155,8 +154,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:ultimate_table' })
-    event.recipes.extendedcrafting.shaped_table(
-        'extendedcrafting:ultimate_table', [
+    event.recipes.extendedcrafting.shaped_table('extendedcrafting:ultimate_table', [
         'ESSCSSE',
         'SUUUUUS',
         'SUSRSUS',
@@ -175,8 +173,7 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ output: 'extendedcrafting:epic_table' })
-    event.recipes.extendedcrafting.shaped_table(
-        'extendedcrafting:epic_table', [
+    event.recipes.extendedcrafting.shaped_table('extendedcrafting:epic_table', [
         'ESSSCSSSE',
         'SUUUUUUUS',
         'SUSSRSSUS',
@@ -211,8 +208,7 @@ ServerEvents.recipes(event => {
             A: `#forge:storage_blocks/${value[1]}`,
             B: `extendedcrafting:${value[0]}_catalyst`,
             C: `extendedcrafting:${value[0]}_table`
-        }
-        ).id(`${value[0]}_table_dupe`)
+        }).id(`${value[0]}_table_dupe`)
     })
 
     event.remove({ output: 'extendedcrafting:crafting_core' })

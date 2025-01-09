@@ -28,5 +28,4 @@ ServerEvents.recipes(event => {
         H: 'gtceu:hv_machine_hull',
         C: 'gtceu:gold_quadruple_wire',
     })
-
 })

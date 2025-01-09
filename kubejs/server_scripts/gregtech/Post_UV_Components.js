@@ -124,7 +124,6 @@ ServerEvents.recipes(event => {
         })
     })
 
-
     laserhatch.forEach(([tier, mat1, eut]) => {
         event.recipes.gtceu.assembler(`${tier}_256a_laser_target_hatch`)
             .itemInputs(`gtceu:${tier}_machine_hull`, 'gtceu:diamond_lens', `gtceu:${tier}_emitter`, `gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
@@ -167,8 +166,6 @@ ServerEvents.recipes(event => {
             .circuit(3)
             .duration(400)
             .EUt(eut)
-
-
     })
 
     event.recipes.gtceu.assembler('uev_hull')

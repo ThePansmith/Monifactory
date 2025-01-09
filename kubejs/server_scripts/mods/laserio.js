@@ -33,8 +33,7 @@ ServerEvents.recipes(event => {
                 C: cardChip,
                 G: 'minecraft:gold_nugget',
                 T: 'gtceu:tin_plate'
-            }
-            ).id(`laserio:card_${card[0]}`)
+            }).id(`laserio:card_${card[0]}`)
         })
 
 
@@ -81,8 +80,7 @@ ServerEvents.recipes(event => {
     ], {
         A: 'gtceu:iron_plate',
         B: 'gtceu:conductive_alloy_single_wire'
-    }
-    ).id("kubejs:conductive_card")
+    }).id("kubejs:conductive_card")
 
     event.recipes.gtceu.assembler('kubejs:conductive_card')
         .itemInputs('3x gtceu:conductive_alloy_single_wire', '6x gtceu:iron_plate')
@@ -99,8 +97,7 @@ ServerEvents.recipes(event => {
         A: 'gtceu:iron_plate',
         B: 'gtceu:energetic_alloy_single_wire',
         C: 'laserio:energy_overclocker_card_tier_1'
-    }
-    ).id("kubejs:energetic_card")
+    }).id("kubejs:energetic_card")
 
     event.recipes.gtceu.assembler('kubejs:energetic_card')
         .itemInputs('2x gtceu:energetic_alloy_single_wire', 'laserio:energy_overclocker_card_tier_1', '6x gtceu:iron_plate')
@@ -117,8 +114,7 @@ ServerEvents.recipes(event => {
         A: 'gtceu:iron_plate',
         B: 'gtceu:vibrant_alloy_single_wire',
         C: 'laserio:energy_overclocker_card_tier_2'
-    }
-    ).id("kubejs:vibrant_card")
+    }).id("kubejs:vibrant_card")
 
     event.recipes.gtceu.assembler('kubejs:vibrant_card')
         .itemInputs('2x gtceu:vibrant_alloy_single_wire', 'laserio:energy_overclocker_card_tier_2', '6x gtceu:iron_plate')
