@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
                 'CWC',
                 'GSG'
             ], {
-                G: "#forge:gears/iron",
+                G: "gtceu:iron_gear",
                 B: "minecraft:bucket",
                 W: "watercollector:watercollector",
                 S: "enderio:fused_quartz",
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
                 'PNP',
                 'GHG'
             ], {
-                G: "#forge:gears/iron",
+                G: "gtceu:iron_gear",
                 P: "#forge:plates/steel",
                 N: "#forge:pistons",
                 H: "minecraft:hopper"
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
                 'CWC',
                 'GSG'
             ], {
-                G: "#forge:gears/iron",
+                G: "gtceu:iron_gear",
                 B: "minecraft:bucket",
                 W: "#enderio:fused_quartz",
                 S: "thermal:redstone_servo",
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
                 'INI',
                 'GSG'
             ], {
-                G: "#forge:gears/iron",
+                G: "gtceu:iron_gear",
                 S: "thermal:redstone_servo",
                 P: "#forge:plates/steel",
                 I: "#forge:plates/invar",

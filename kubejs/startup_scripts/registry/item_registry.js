@@ -113,8 +113,8 @@ StartupEvents.registry('item', event => {
     event.create('pressure_layer')
     event.create('thermal_cloth')
     event.create('unprepared_space_helmet')
-    event.create('unprepared_space_chestpiece')
-    event.create('unprepared_space_leggings')
+    event.create('unprepared_space_suit')
+    event.create('unprepared_space_pants')
     event.create('unprepared_space_boots')
 
 
@@ -139,11 +139,14 @@ StartupEvents.registry('item', event => {
     if (!isNormalMode) event.create('omnic_data')
 
     //Infinity Fluid Cell Base
-    event.create('infinity_cell_base').displayName("ME Infinity Cell Base")
+    if(isNormalMode) {
+        event.create('infinity_cell_base').displayName("ME Infinity Cell Base")
+    }
 
 
     // Endgame Items
     event.create('diamond_lattice')
+    event.create('neutron_emitter')
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
     event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
     event.create('heart_of_a_universe').displayName("§dHeart Of A Universe")
@@ -347,7 +350,6 @@ StartupEvents.registry('item', event => {
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
     //Solid Naquadah Fuel Line
-    event.create('pellet_extruder_mold').texture('kubejs:item/naquadah/pellet_extruder_mold')
     event.create('empty_fuel_rod').texture('kubejs:item/naquadah/empty_fuel_rod')
     event.create('naquadah_fuel_pellet').texture('kubejs:item/naquadah/naquadah_fuel_pellet')
     event.create('naquadah_fuel_rod').texture('kubejs:item/naquadah/naquadah_fuel_rod')
@@ -356,8 +358,8 @@ StartupEvents.registry('item', event => {
     event.create('unsintered_naquadah_fuel_pellet').texture('kubejs:item/naquadah/unsintered_naquadah_fuel_pellet')
     event.create('depleted_naquadah_fuel_pellet').texture('kubejs:item/naquadah/depleted_naquadah_fuel_pellet')
     event.create('naquadah_fuel_dust').texture('kubejs:item/naquadah/naquadah_fuel_dust')
-    event.create('raw_naquadah_fuel_dust').texture('kubejs:item/naquadah/raw_naquadah_fuel_dust')
-    event.create('nuclear_waste').texture('kubejs:item/naquadah/nuclear_waste')
+    event.create('naquadah_fuel_primer_dust').texture('kubejs:item/naquadah/naquadah_fuel_primer_dust')
+    event.create('naquadah_waste').texture('kubejs:item/naquadah/naquadah_waste')
     event.create('inactivated_naquadah_fuel_dust').texture('kubejs:item/naquadah/inactivated_naquadah_fuel_dust')
     event.create('depleted_naquadah_fuel_dust').texture('kubejs:item/naquadah/depleted_naquadah_fuel_dust')
     event.create('crude_naquadah_fuel_blend').texture('kubejs:item/naquadah/crude_naquadah_fuel_blend')
@@ -373,8 +375,11 @@ StartupEvents.registry('item', event => {
     event.create('carbon_nanotubes').texture('kubejs:item/matrix/carbon_nanotubes')
     event.create('porous_matrix_mesh').texture('kubejs:item/matrix/porous_matrix_mesh')
     event.create('dense_matrix_mesh').texture('kubejs:item/matrix/dense_matrix_mesh')
-    
-    
+
+    // Terbium Line
+    event.create('rare_earth_sulfate').texture('kubejs:item/terbium/rare_earth_sulfate')
+    event.create('rare_earth_oxide').texture('kubejs:item/terbium/rare_earth_oxide')
+    event.create('rare_earth_salt').texture('kubejs:item/terbium/rare_earth_salt')
 
 
     // Sculk bioalloy processing intermediate products
@@ -403,7 +408,6 @@ StartupEvents.registry('item', event => {
     event.create('inert_dust_mixture').texture('kubejs:item/eltz/inert_dust_mixture')
     event.create('dusty_inert_powder').texture('kubejs:item/eltz/dusty_inert_powder')
     event.create('centrifuged_inert_powder').texture('kubejs:item/eltz/centrifuged_inert_powder')
-    event.create('cured_inert_powder').texture('kubejs:item/eltz/cured_inert_powder')
     event.create('shiny_powder_mixture').texture('kubejs:item/eltz/shiny_powder_mixture')
     event.create('shiny_metal_powder').texture('kubejs:item/eltz/shiny_metal_powder')
     event.create('inert_clumps').texture('kubejs:item/eltz/inert_clumps')

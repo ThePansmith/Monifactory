@@ -12,11 +12,26 @@ This led to the infamous recipe bug where Infinity Screws in the Lathe had integ
 because the Infinity material had infinite mass.
 */
 GTCEuStartupEvents.registry('gtceu:element', event => {
-    event.create('omnium', 130, 234, -1, null, 'Nm', false)
-    event.create('infinity', 168, 316, -1, null, '∞', false);
-    event.create('monium', 69, 420, -1, null, 'Mu', false);
-    event.create('crystal_matrix', 6, 6, -1, null, 'C*', false);
-    event.create('eltz', 15, 15, -1, null, 'Ez', false)
+    event.create('omnium')
+        .protons(130)
+        .neutrons(234)
+        .symbol('Nm');
+    event.create('infinity')
+        .protons(168)
+        .neutrons(316)
+        .symbol('∞');
+    event.create('monium')
+        .protons(169)
+        .neutrons(317)
+        .symbol('Mu');
+    event.create('crystal_matrix')
+        .protons(6)
+        .neutrons(6)
+        .symbol('C*');
+    event.create('eltz')
+        .protons(15)
+        .neutrons(15)
+        .symbol('Ez')
 })
 
 // Omnium, Infinity, and Monium have animations and thus custom material icon sets.
@@ -24,7 +39,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('omnium').parent(GTMaterialIconSet.SHINY)
     event.create('sculk_alloy').parent(GTMaterialIconSet.DULL)
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
-    event.create('uru').parent(GTMaterialIconSet.SHINY)
+    event.create('eltz').parent(GTMaterialIconSet.SHINY)
     event.create('monium').parent(GTMaterialIconSet.SHINY)
 })
 
@@ -59,14 +74,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('shiny')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
         .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
-    
     event.create('activated_netherite')
         .ingot()
         .element(GTElements.get("activated_netherite"))
         .color(0x4C484C)
         .iconSet('dull')
         .cableProperties(GTValues.V[GTValues.UEV], 16, 0, true)
-        .fluidPipeProperties(120000, 96000, true, true, true, true)
+        .fluidPipeProperties(11000, 8500, true, false, true, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
     event.create('sculk_bioalloy')
@@ -86,9 +100,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .element(GTElements.get('eltz'))
         .color(0xffffff)
-        .iconSet('uru')
+        .iconSet('eltz')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.PHOSPHORESCENT)
-       
+
     event.create('eltic_actinate')
         .gem()
         .color(0xbb9966).secondaryColor(0x881105)

@@ -22,6 +22,8 @@ ServerEvents.recipes(event => {
             }
         ).noMirror().noShrink()
 
+        event.shapeless("minecraft:feather", ["hostilenetworks:overworld_prediction", "minecraft:string"])
+        
         event.recipes.gtceu.compressor('calcium_to_bonemeal')
             .itemInputs('2x gtceu:calcium_dust')
             .itemOutputs('minecraft:bone_meal')

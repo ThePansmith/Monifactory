@@ -35,58 +35,24 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //Cutting Perfect Gemstones
-    event.recipes.gtceu.cutter('cut_perfect_diamond')
-        .itemInputs('gtceu:diamond_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_diamond_gem')
-        .duration(100)
-        .EUt(1920)
-
-    event.recipes.gtceu.cutter('cut_perfect_emerald')
-        .itemInputs('gtceu:emerald_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_emerald_gem')
-        .duration(100)
-        .EUt(1920)
-
-    event.recipes.gtceu.cutter('cut_perfect_ruby')
-        .itemInputs('gtceu:ruby_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_ruby_gem')
-        .duration(100)
-        .EUt(1920)
-
-    event.recipes.gtceu.cutter('cut_perfect_topaz')
-        .itemInputs('gtceu:topaz_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_topaz_gem')
-        .duration(100)
-        .EUt(1920)
-
-        event.recipes.gtceu.cutter('cut_perfect_cinnabar')
-        .itemInputs('gtceu:cinnabar_perfect')
-        .inputFluids('gtceu:lubricant 100')
-        .itemOutputs('2x gtceu:exquisite_cinnabar_gem')
-        .duration(100)
-        .EUt(1920)
-
-    //DML MATTERS
-    event.recipes.gtceu.extractor('overworld_fluid')
-        .itemInputs('hostilenetworks:overworld_prediction')
-        .outputFluids(Fluid.of('enderio:xp_juice', 200))
-        .duration(40)
-        .EUt(32)
-    event.recipes.gtceu.extractor('nether_experience_fluid')
-        .itemInputs('hostilenetworks:nether_prediction')
-        .outputFluids(Fluid.of('enderio:xp_juice', 400))
-        .duration(80)
-        .EUt(32)
-    event.recipes.gtceu.extractor('ender_experience_fluid')
-        .itemInputs('hostilenetworks:end_prediction')
-        .outputFluids(Fluid.of('enderio:xp_juice', 500))
-        .duration(100)
-        .EUt(32)
+    // HNN MATTERS
+    if (isNormalMode) {
+        event.recipes.gtceu.extractor('overworld_fluid')
+            .itemInputs('hostilenetworks:overworld_prediction')
+            .outputFluids(Fluid.of('enderio:xp_juice', 200))
+            .duration(40)
+            .EUt(32)
+        event.recipes.gtceu.extractor('nether_experience_fluid')
+            .itemInputs('hostilenetworks:nether_prediction')
+            .outputFluids(Fluid.of('enderio:xp_juice', 400))
+            .duration(80)
+            .EUt(32)
+        event.recipes.gtceu.extractor('ender_experience_fluid')
+            .itemInputs('hostilenetworks:end_prediction')
+            .outputFluids(Fluid.of('enderio:xp_juice', 500))
+            .duration(100)
+            .EUt(32)
+    }
 
     event.recipes.gtceu.fluid_solidifier('one_experience_solid')
         .itemOutputs('kubejs:solidified_experience')
@@ -111,16 +77,18 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(30)
 
-    event.shaped(
-        'kubejs:quantum_flux', [
-            ' B ',
-            'BAB',
-            ' B '
-        ], {
-            A: 'enderio:pulsating_crystal',
-            B: 'hostilenetworks:end_prediction'
-        }
-    )
+    if (isNormalMode) {
+        event.shaped(
+            'kubejs:quantum_flux', [
+                ' B ',
+                'BAB',
+                ' B '
+            ], {
+                A: 'enderio:pulsating_crystal',
+                B: 'hostilenetworks:end_prediction'
+            }
+        )
+    }
 
     //Hot MV ingots
     event.remove({ input: ['gtceu:hot_kanthal_ingot', "gtceu:hot_silicon_ingot"]})

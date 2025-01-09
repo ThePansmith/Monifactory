@@ -122,12 +122,11 @@ ItemEvents.tooltip(tooltip => {
         'atmospheric_accumulator',
         'matter_alterator',
         'implosion_collider',
-        'extra_large_chemical_reactor',
         'quintessence_infuser',
         'hyperbolic_microverse_projector',
         'dimensional_superassembler',
         'universal_crystallizer',
-        'biobalance_charger'
+        'sculk_biocharger'
     ]
 
     parallelMultis.forEach(multi => {
@@ -148,15 +147,13 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
+    //Assorted info & warnings for GT machines
     tooltip.add(/^gtceu:.*a_energy_converter$/, Text.translatable("gtceu.energy_converter.tooltip"));
-    tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red(Text.translatable("gtceu.negation_operator.tooltip")));
     tooltip.add('gtceu:basic_tape', Text.translatable('gtceu.basic_tape.tooltip'));
     tooltip.add('gtceu:ender_fluid_link_cover', Text.translatable('gtceu.ender_fluid_link_cover.tooltip'));
     tooltip.add('gtceu:nightvision_goggles', Text.translatable('gtceu.nightvision_goggles.tooltip'));
-
-    // GCYR
-    tooltip.add('gcyr:rocket_scanner', Text.translatable('gcyr.rocket_scanner.tooltip'));
-    tooltip.add('gcyr:space_chestplate', Text.translatable('gcyr.space_chestplate.tooltip'));
+    tooltip.add(/^gtceu:.*_robot_arm$/, Text.translatable("gtceu:robot_arm.tooltip"))
+    tooltip.add(/^gtceu:.*_fluid_regulator$/, Text.translatable("gtceu:fluid_regulator.tooltip"))
 
     // Sophisticated Storage
     tooltip.add('functionalstorage:storage_controller', Text.translatable('functionalstorage.storage_controller.tooltip'));
@@ -227,9 +224,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(['/^kubejs:.+infinity_dust_block$/', 'kubejs:infinity_dust_block'], (item, adv, text) => {
         text.add(1, Text.translatable('item.kubejs.infinity_dust_block.tooltip'))
     })
-
-    // Macerator byproduct warning
-    tooltip.add(['gtceu:lp_steam_macerator', 'gtceu:hp_steam_macerator', 'gtceu:steam_grinder', 'gtceu:lv_macerator', 'gtceu:mv_macerator'], Text.translatable("gtceu.macerator_byrproduct_warning.tooltip"))
 
     // Wooden pipe, tank warning
     tooltip.add([

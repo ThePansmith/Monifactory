@@ -5,6 +5,18 @@
  */
 const $ItemBuilder = Java.loadClass("dev.latvian.mods.kubejs.item.custom.BasicItemJS$Builder")
 
+const $Rarity = Java.loadClass("net.minecraft.world.item.Rarity")
+const $UnaryOperator = Java.loadClass("java.util.function.UnaryOperator")
+const $UtilsJS = Java.loadClass("dev.latvian.mods.kubejs.util.UtilsJS")
+const $Style = Java.loadClass("net.minecraft.network.chat.Style")
+
+// All Items that need to have a different rarity
+let itemRarityMap = Utils.newMap()
+itemRarityMap.put("functionalstorage:copper_upgrade", createRarity("bronze", 0xa47b47))
+itemRarityMap.put("functionalstorage:gold_upgrade", createRarity("steel", 0x69696b))
+itemRarityMap.put("functionalstorage:diamond_upgrade", createRarity("aluminum", 0x4e748b))
+itemRarityMap.put("functionalstorage:netherite_upgrade", createRarity("stainless_steel", 0x9695a3))
+
 ItemEvents.modification(event => {
 
     // Make it so Sugar Cane can be used as fuel in the Furnace
@@ -23,6 +35,12 @@ ItemEvents.modification(event => {
         /empowered/,
         /activated_netherite/
     ]
+
+
+    // Change rarities
+    itemRarityMap.forEach((item, rarity) => {
+        event.modify(item, i => i.rarity = rarity)
+    })
 
     itemsToModify.forEach(itemName => {
         event.modify(itemName, item => {
@@ -51,3 +69,11 @@ ItemEvents.modification(event => {
         event.modify('kubejs:ultimate_' + type, item => { item.craftingRemainder = Item.of('kubejs:ultimate_' + type).item })
     })
 })
+
+const withColorMethod = $Style.EMPTY.class.declaredMethods.filter((method) => method.name.includes("m_131148_"))[0]
+function createRarity (/** @type {string} */ name, /** @type {number} */ colorCode) {
+    let color = $UtilsJS.makeFunctionProxy("startup", $UnaryOperator, (style) => {
+        return withColorMethod.invoke(style, Color.of(colorCode).createTextColorJS())
+    })
+    return $Rarity["create(java.lang.String,java.util.function.UnaryOperator)"](name, color)
+}

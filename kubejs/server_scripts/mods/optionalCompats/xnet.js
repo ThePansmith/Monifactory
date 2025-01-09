@@ -66,7 +66,7 @@ if (Platform.isLoaded('xnet')) {
         //Routing
         event.recipes.gtceu.assembler('xnet:netcable_routing')
             .itemOutputs('16x xnet:netcable_routing')
-            .itemInputs(['2x gtceu:fine_red_alloy_wire', 'gtceu:fine_gold_wire', 'gcyr:fine_fiberglass_wire', 'gtceu:pulsating_alloy_single_wire', '2x gtceu:carbon_fiber_mesh'])
+            .itemInputs(['2x gtceu:fine_red_alloy_wire', 'gtceu:fine_gold_wire', 'gtceu:fine_borosilicate_glass_wire', 'gtceu:pulsating_alloy_single_wire', '2x gtceu:carbon_fiber_mesh'])
             .EUt(GTValues.VHA[GTValues.HV])
             .duration(100)
         event.recipes.gtceu.assembler('xnet:connector_routing')
@@ -129,7 +129,6 @@ if (Platform.isLoaded('xnet')) {
         event.recipes.gtceu.assembler('xnet:antenna')
                 .itemOutputs('xnet:antenna')
                 .itemInputs(['3x #forge:rods/iron', '2x minecraft:iron_bars', 'gtceu:ev_emitter', '3x gtceu:fine_annealed_copper_wire'])
-                .inputFluids(Fluid.of('kubejs:resonant_ender', 250))
                 .EUt(GTValues.VA[GTValues.EV])
                 .duration(140)
         event.recipes.gtceu.assembler('xnet:antenna_base')

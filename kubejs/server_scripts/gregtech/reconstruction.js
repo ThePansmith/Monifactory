@@ -19,7 +19,6 @@ ServerEvents.recipes(event => {
         ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 128, 'prismarine_crystals'],
         ['gtceu:steel_ingot', 'gtceu:damascus_steel_ingot', 128, 'damascus_steel'],
         ['gtceu:diamatine_block', 'kubejs:starry_diamond_block', 128, 'starry_diamond'],
-        ['gtceu:coke_gem', 'gtceu:coal_perfect', 128, 'perfect_coal'],
         ['gtceu:obsidian_dust', 'enderio:grains_of_infinity', 32, 'temp_grains'],
         ['minecraft:poppy', 'minecraft:red_mushroom', 32, 'red_mushroom'],
         ['minecraft:dried_kelp', 'minecraft:wither_rose', 32, 'wither_rose'],
@@ -76,8 +75,8 @@ ServerEvents.recipes(event => {
         ['lv', 'lead'],
         ['mv', 'rose_gold'],
         ['hv', 'beryllium'],
-        ['ev', 'rhodium'],
-        ['iv', 'platinum'],
+        ['ev', 'platinum'],
+        ['iv', 'rhodium'],
         ['luv', 'osmiridium'],
         ['zpm', 'naquadah'],
         ['uv', 'duranium'],
@@ -108,5 +107,37 @@ ServerEvents.recipes(event => {
             .notConsumable('gtceu:gear_extruder_mold')
             .duration(80)
             .EUt(56)
+    })
+
+    // Flower cycle convenience recipes
+    const flowerCycle = [
+        'dandelion',
+        'poppy',
+        'blue_orchid',
+        'allium',
+        'azure_bluet',
+        'red_tulip',
+        'orange_tulip',
+        'white_tulip',
+        'pink_tulip',
+        'oxeye_daisy',
+        'cornflower',
+        'lily_of_the_valley',
+        //'sunflower',  //Flowers that give 2x as much dye are excluded. Sorry!
+        //'lilac',
+        //'rose_bush',
+        //'peony',
+        'spore_blossom',
+        'wither_rose',
+        'dead_bush'
+    ] 
+    flowerCycle.forEach((flower, index) => {
+        let curFlower = flowerCycle[index];
+        let nextFlower = flowerCycle[(index+1)%flowerCycle.length];
+        event.recipes.gtceu.atomic_reconstruction("gtceu:" + curFlower + "_to_" + nextFlower)
+            .itemInputs("minecraft:" + curFlower)
+            .itemOutputs("minecraft:" + nextFlower)
+            .EUt(GTValues.VA[GTValues.LV])
+            .duration(30)
     })
 })

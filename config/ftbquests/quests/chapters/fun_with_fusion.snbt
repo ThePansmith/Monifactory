@@ -75,7 +75,7 @@
 	quests: [
 		{
 			dependencies: ["2D10F2E538486624"]
-			description: ["&3Large Plasma Turbines&r are a powerful late game method of generating power. One Large Plasma Turbine produces &2a base of 16384 EU/t when using an IV Rotor Holder&r."]
+			description: ["{moni.quest.1405D08C6A87B3BB.description1}"]
 			icon: "gtceu:plasma_large_turbine"
 			id: "1405D08C6A87B3BB"
 			rewards: [{
@@ -103,13 +103,13 @@
 					type: "item"
 				}
 			]
-			title: "&2Plasma Turbine"
+			title: "{moni.quest.1405D08C6A87B3BB.title}"
 			x: -4.0d
 			y: -1.75d
 		}
 		{
 			dependencies: ["2A6E9E7C80754936"]
-			description: ["&6Fusion Coils&r are used in the &2Fusion Reactor MK II&r and &2Fusion Reactor MK III&r."]
+			description: ["{moni.quest.1183B96529D08326.description1}"]
 			id: "1183B96529D08326"
 			rewards: [{
 				id: "064FF89D54EB9137"
@@ -121,7 +121,7 @@
 				item: "gtceu:fusion_coil"
 				type: "item"
 			}]
-			title: "&2Fusion Coils"
+			title: "{moni.quest.1183B96529D08326.title}"
 			x: -1.0d
 			y: -3.4928571428571473d
 		}
@@ -132,18 +132,18 @@
 				"5792330C6E5B87A3"
 			]
 			description: [
-				"Upgrade time! "
-				"...or building a new one, which is probably better."
+				"{moni.quest.069773756716E192.description1}"
+				"{moni.quest.069773756716E192.description2}"
 				""
-				"Yet again this quest asks for the minimal number of casings. Make an extra &229&r if you don't want more than &a2 Fluid Inputs&r&r and &a1 Fluid Output&r. Don't forget the extra &e31 Fusion Glass&r or &6Fusion Machine Casings&r!"
+				"{moni.quest.069773756716E192.description3}"
 				""
-				"&bYes, the Fusion Glass is the same tier as last time, but the Fusion Machine Casings are more expensive.&r"
+				"{moni.quest.069773756716E192.description4}"
 				""
-				"Make sure you're using &6ZPM Energy Hatches&r!"
+				"{moni.quest.069773756716E192.description5}"
 				""
-				"If you insist on upgrading instead of making a new one, don't dismantle the current one before you're sure you've got everything you need to upgrade it, or you might end up having to rebuild the &3MK I Fusion Reactor&r again."
+				"{moni.quest.069773756716E192.description6}"
 				""
-				"The &3MK II Fusion Reactor&r has an energy buffer of &e320M EU&r."
+				"{moni.quest.069773756716E192.description7}"
 			]
 			icon: "gtceu:zpm_fusion_reactor"
 			id: "069773756716E192"
@@ -179,13 +179,13 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK II"
+			title: "{moni.quest.069773756716E192.title}"
 			x: 0.5d
 			y: -3.4928571428571473d
 		}
 		{
 			dependencies: ["069773756716E192"]
-			description: ["&9Darmstadtium&r is formed by fusing Arsenic and Ruthenium, and is the main material for UV machines."]
+			description: ["{moni.quest.3FFC053E3E11D586.description1}"]
 			id: "3FFC053E3E11D586"
 			rewards: [
 				{
@@ -212,18 +212,18 @@
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
-			title: "&2Darmstadtium"
+			title: "{moni.quest.3FFC053E3E11D586.title}"
 			x: 2.0d
 			y: -3.4928571428571473d
 		}
 		{
 			dependencies: ["069773756716E192"]
 			description: [
-				"To make &9Tritanium&r, you first need to make &9Duranium&r. This is done by fusing &9Liquid Gallium&r and &9Radon&r in a &3Fusion Reactor MK I&r or better."
+				"{moni.quest.79EFCD8E01384C0C.description1}"
 				""
-				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor MK II&r using the Duranium and &9Liquid Titanium&r."
+				"{moni.quest.79EFCD8E01384C0C.description2}"
 				""
-				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into &aEMI&r."
+				"{moni.quest.79EFCD8E01384C0C.description3}"
 			]
 			id: "79EFCD8E01384C0C"
 			rewards: [{
@@ -236,13 +236,13 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			title: "&2Tritanium Ingot"
+			title: "{moni.quest.79EFCD8E01384C0C.title}"
 			x: 2.0d
 			y: -1.9928571428571473d
 		}
 		{
 			dependencies: ["79EFCD8E01384C0C"]
-			description: ["&2Tritanium Coils are the eighth coil material. At 10800K, it's capable of smelting nearly every material."]
+			description: ["{moni.quest.15607184B546F5EE.description1}"]
 			id: "15607184B546F5EE"
 			rewards: [{
 				id: "4D377BF47452A80F"
@@ -254,7 +254,7 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			title: "&2Tritanium Coils"
+			title: "{moni.quest.15607184B546F5EE.title}"
 			x: 2.0d
 			y: -0.5d
 		}
@@ -265,13 +265,13 @@
 				"01E542E1C9DAF5B4"
 			]
 			description: [
-				"This baby can do any fusion recipe, notably giving you access to &6Neutronium&r."
+				"{moni.quest.7D29C79DE1CCA2A2.description1}"
 				""
-				"The multiblock layout is the same as the MK I and MK II, with the same hatch and casing substitutions permitted."
+				"{moni.quest.7D29C79DE1CCA2A2.description2}"
 				""
-				"Obviously though, this one uses &6Fusion Machine Casing MK &2III&r and only works with &aUV Energy Hatches&r."
+				"{moni.quest.7D29C79DE1CCA2A2.description3}"
 				""
-				"The &3MK III Fusion Reactor&r has an energy buffer of &e640M EU&r."
+				"{moni.quest.7D29C79DE1CCA2A2.description4}"
 			]
 			icon: "gtceu:uv_fusion_reactor"
 			id: "7D29C79DE1CCA2A2"
@@ -282,7 +282,7 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "FUSION!"
+			subtitle: "{moni.quest.7D29C79DE1CCA2A2.subtitle}"
 			tasks: [
 				{
 					id: "3816F5546D4E770F"
@@ -302,18 +302,18 @@
 					type: "item"
 				}
 			]
-			title: "&2Fusion Reactor MK III"
+			title: "{moni.quest.7D29C79DE1CCA2A2.title}"
 			x: 5.0d
 			y: -3.4928571428571473d
 		}
 		{
 			dependencies: ["3FFC053E3E11D586"]
 			description: [
-				"&bUV&r stands for &bUltimate Voltage&r."
+				"{moni.quest.5BADF536443E712D.description1}"
 				""
-				"This Hull is made with &2Darmstadtium, Yttrium Barium Cuprate Cables, and Polybenzimidazole.&r"
+				"{moni.quest.5BADF536443E712D.description2}"
 				""
-				"You'll need it mainly for the &6Fusion Reactor MK III&r."
+				"{moni.quest.5BADF536443E712D.description3}"
 			]
 			id: "5BADF536443E712D"
 			rewards: [{
@@ -326,16 +326,16 @@
 				item: "gtceu:uv_machine_hull"
 				type: "item"
 			}]
-			title: "&2UV Machine Hulls"
+			title: "{moni.quest.5BADF536443E712D.title}"
 			x: 3.5d
 			y: -3.4928571428571473d
 		}
 		{
 			dependencies: ["069773756716E192"]
 			description: [
-				"&6Americium Ingots&r are obtained by placing &9NuclearCraft&r Americium isotopes into an &3Extractor&r and solidifying the fluid. As with other GT materials, use the ingot or fluid to forge the other forms."
+				"{moni.quest.4A8FB1EF600F0882.description1}"
 				""
-				"&2You're gonna need quite a bit of Americium.&r You cannot convert this form of Americium back to NuclearCraft Americium isotopes. These are also the best &aItem Pipe&r material, in terms of throughput."
+				"{moni.quest.4A8FB1EF600F0882.description2}"
 			]
 			id: "4A8FB1EF600F0882"
 			rewards: [{
@@ -348,18 +348,18 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
-			title: "&2Americium Ingot"
+			title: "{moni.quest.4A8FB1EF600F0882.title}"
 			x: 2.75d
 			y: -5.0d
 		}
 		{
 			dependencies: ["745628397790ED7A"]
 			description: [
-				"Climbing the ladder of fissile materials will require some specific raw materials and machinery."
+				"{moni.quest.32E44FFD602C98DF.description1}"
 				""
-				"&2Uraninite is the base resource you will need, which comes from Uraninite and Pitchblende Ore. You will need to react it with Fluorine and Hydrofluoric Acid in a Chemical Reactor to form Uranium Hexafluoride."
+				"{moni.quest.32E44FFD602C98DF.description2}"
 				""
-				"The Uranium Hexafluoride must then be separated into Depleted and Enriched Uranium Hexafluoride in a Centrifuge. The Depleted UF₆ will grant Uranium 238, while the Enriched UF₆ will grant Uranium 235."
+				"{moni.quest.32E44FFD602C98DF.description3}"
 			]
 			icon: "gtceu:uranium_235_ingot"
 			id: "32E44FFD602C98DF"
@@ -380,20 +380,20 @@
 					type: "item"
 				}
 			]
-			title: "&2Uranium Fuel Infrastructure"
+			title: "{moni.quest.32E44FFD602C98DF.title}"
 			x: -4.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["745628397790ED7A"]
 			description: [
-				"Thorium is a basic fissile material that can be used to get into the fissile chain. Thorium comes from &6Pitchblende Ore&r, &6Thorium Ore&r, and even &9Deepslate&r (with a few processing steps)."
+				"{moni.quest.4BE6C4E7FDF7C71B.description1}"
 				""
-				"Thorium-Bred Uranium, or &6TBU&r for short, is made from nine clumps of &6Thorium 232&r, made from Thorium enriched in a &3Thermal Centrifuge&r."
+				"{moni.quest.4BE6C4E7FDF7C71B.description2}"
 				""
-				"This fuel is processed in your &3Fission Reactor&r by placing it in the controller. When a redstone signal is applied it will burn the fuel, generating some power from the reactor and after a while you'll get &6Depleted TBU Fuel&r&r."
+				"{moni.quest.4BE6C4E7FDF7C71B.description3}"
 				""
-				"The depleted fuel provides tiny clumps of &6Uranium 233&r, &6Uranium 235&r, &6Neptunium 236&r, and &6Neptunium 237&r."
+				"{moni.quest.4BE6C4E7FDF7C71B.description4}"
 			]
 			icon: "nuclearcraft:fuel_thorium_tbu"
 			id: "4BE6C4E7FDF7C71B"
@@ -407,18 +407,18 @@
 				item: "nuclearcraft:fuel_thorium_tbu"
 				type: "item"
 			}]
-			title: "&2Thorium Fission"
+			title: "{moni.quest.4BE6C4E7FDF7C71B.title}"
 			x: -4.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["32E44FFD602C98DF"]
 			description: [
-				"When you have enough materials, you can craft Uranium isotope clumps into Low-Enriched Uranium-235 Fuel (or &6LEU-235&r, for short). This fuel uses an 8:1 ratio of U238 to U235."
+				"{moni.quest.64B145DC53023119.description1}"
 				""
-				"This fuel is processed in your &3Fission Reactor&r by placing it in the controller. When a redstone signal is applied it will burn the fuel, generating some power from the reactor and after a while you'll get &6Depleted LEU-235 Fuel&r."
+				"{moni.quest.64B145DC53023119.description2}"
 				""
-				"The depleted fuel is separated in a regular &3Centrifuge&r, resulting in many tiny clumps of fissile materials: &6Uranium 238&r, &6Neptunium 237&r, &6Plutonium 239&r, and &6Plutonium 241&r."
+				"{moni.quest.64B145DC53023119.description3}"
 			]
 			id: "64B145DC53023119"
 			rewards: [{
@@ -431,20 +431,20 @@
 				item: "nuclearcraft:fuel_uranium_leu_235"
 				type: "item"
 			}]
-			title: "Uranium 235 Fission"
+			title: "{moni.quest.64B145DC53023119.title}"
 			x: -2.5d
 			y: -11.0d
 		}
 		{
 			dependencies: ["4BE6C4E7FDF7C71B"]
 			description: [
-				"Low-Enriched Neptunium 236, or &6LEN-236&r, is the next step in the fissile material fuel chain."
+				"{moni.quest.490F04B181217B28.description1}"
 				""
-				"This fuel requires an 8:1 ratio of &6Neptunium 237&r to &6Neptunium 236&r. Using only the results from Thorium fission, it will take two batches of &6Depleted TBU Fuel&r to make your first LEN fuel."
+				"{moni.quest.490F04B181217B28.description2}"
 				""
-				"Of course, higher order reactions also will result in small amounts of Neptunium that you can work with as well."
+				"{moni.quest.490F04B181217B28.description3}"
 				""
-				"&6Depleted LEN-236&r gives a small bit of Neptunium 237 back, but principally provides &6Plutonium&r and &6Americium&r isotopes."
+				"{moni.quest.490F04B181217B28.description4}"
 			]
 			id: "490F04B181217B28"
 			rewards: [{
@@ -457,7 +457,7 @@
 				item: "nuclearcraft:fuel_neptunium_len_236"
 				type: "item"
 			}]
-			title: "Neptunium Fusion"
+			title: "{moni.quest.490F04B181217B28.title}"
 			x: -2.5d
 			y: -8.0d
 		}
@@ -467,11 +467,11 @@
 				"32E44FFD602C98DF"
 			]
 			description: [
-				"&6Uranium 233&r is obtained exclusively from the fission of &6TBU Fuels&r."
+				"{moni.quest.3065F950BCA5C461.description1}"
 				""
-				"&6LEU-233&r is made from one &6U233&r and eight &6U238&r."
+				"{moni.quest.3065F950BCA5C461.description2}"
 				""
-				"&6Depleted LEU-233&r will give you various &6Plutonium&r isotopes and some &6Americium&r."
+				"{moni.quest.3065F950BCA5C461.description3}"
 			]
 			id: "3065F950BCA5C461"
 			rewards: [{
@@ -484,7 +484,7 @@
 				item: "nuclearcraft:fuel_uranium_leu_233"
 				type: "item"
 			}]
-			title: "Uranium 233 Fission"
+			title: "{moni.quest.3065F950BCA5C461.title}"
 			x: -2.5d
 			y: -9.5d
 		}
@@ -496,15 +496,15 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&oNote: this quest accepts Plutonium 238, 239, 241 or 242.&r"
+				"{moni.quest.7D7B34CF5145F971.description1}"
 				""
-				"Low-Enriched Plutonium 239, or &6LEP-239&r, is made from the usual 8:1 ratio of two isotopes of &6Plutonium&r, 242 and 239, acquired from earlier depleted fuels. You will also need &6Plutonium&r in large amounts for &eSunnarium&r."
+				"{moni.quest.7D7B34CF5145F971.description2}"
 				""
-				"The two sources of Plutonium are Uranium-based fuels and Neptunium-based fuels."
+				"{moni.quest.7D7B34CF5145F971.description3}"
 				""
-				"&6Depleted LEP-239&r will give you some different isotopes of &6Curium&r for further enrichment."
+				"{moni.quest.7D7B34CF5145F971.description4}"
 				""
-				"High-Enriched Plutonium fuels will give better results, but &cgenerate a lot more heat&r. Make sure your reactor cooling is up to the task."
+				"{moni.quest.7D7B34CF5145F971.description5}"
 			]
 			icon: "nuclearcraft:fuel_plutonium_hep_241"
 			id: "7D7B34CF5145F971"
@@ -513,7 +513,7 @@
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
-			subtitle: "You only need one of this quest's dependencies"
+			subtitle: "{moni.quest.7D7B34CF5145F971.subtitle}"
 			tasks: [{
 				id: "5CF757A158365EEF"
 				item: {
@@ -540,9 +540,10 @@
 						]
 					}
 				}
-				title: "Plutonium"
+				title: "{moni.task.5CF757A158365EEF}"
 				type: "item"
 			}]
+			title: "{moni.quest.7D7B34CF5145F971.title}"
 			x: -1.0d
 			y: -10.25d
 		}
@@ -553,13 +554,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&oNote: this quest accepts Americium 241, 242, or 243."
+				"{moni.quest.6728FB92FD3A2084.description1}"
 				""
-				"&6Americium 242&r and &6Americium 243&r are used to make &6LEA-242 Fuel&r."
+				"{moni.quest.6728FB92FD3A2084.description2}"
 				""
-				"There's also &6Americium 241&r, but this is only useful for making RTGs (which produce small amounts of RF continuously) or decaying down into &6Neptunium&r."
+				"{moni.quest.6728FB92FD3A2084.description3}"
 				""
-				"&6Depleted LEA 242 Fuels&r&r will return a lot of &6Curium 246&r, and small amounts of the other three isotopes."
+				"{moni.quest.6728FB92FD3A2084.description4}"
 			]
 			icon: "nuclearcraft:fuel_americium_hea_242"
 			id: "6728FB92FD3A2084"
@@ -568,7 +569,7 @@
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
-			subtitle: "You only need one of this quest's dependencies"
+			subtitle: "{moni.quest.6728FB92FD3A2084.subtitle}"
 			tasks: [{
 				id: "2EBA27CDC31F4FD7"
 				item: {
@@ -591,10 +592,10 @@
 						]
 					}
 				}
-				title: "Americium"
+				title: "{moni.task.2EBA27CDC31F4FD7}"
 				type: "item"
 			}]
-			title: "Americium Fission"
+			title: "{moni.quest.6728FB92FD3A2084.title}"
 			x: -1.0d
 			y: -8.75d
 		}
@@ -604,13 +605,13 @@
 				"6728FB92FD3A2084"
 			]
 			description: [
-				"&oNote: this quest accepts Curium 243, 245, 246 or 247.&r"
+				"{moni.quest.0E5E5E647F378D02.description1}"
 				""
-				"Low-Enriched Curium 243, or &6LECM-243&r, is made from &6Curium 243&r and &6Curium 246&r. You will also need &6Curium&r in large amounts for &eSunnarium&r."
+				"{moni.quest.0E5E5E647F378D02.description2}"
 				""
-				"&6Depleted LECm-243 Fuel&r gives mostly Curium 246 back, but also small quantities of &6Berkelium&r and &6Californium&r isotopes."
+				"{moni.quest.0E5E5E647F378D02.description3}"
 				""
-				"&6HECM-247&r is a better alternative for strictly Californium, if your reactor can withstand the heat."
+				"{moni.quest.0E5E5E647F378D02.description4}"
 			]
 			icon: "nuclearcraft:fuel_curium_lecm_245"
 			id: "0E5E5E647F378D02"
@@ -645,18 +646,19 @@
 						]
 					}
 				}
-				title: "Curium"
+				title: "{moni.task.4B9300AA8500D15F}"
 				type: "item"
 			}]
+			title: "{moni.quest.0E5E5E647F378D02.title}"
 			x: 0.5d
 			y: -9.5d
 		}
 		{
 			dependencies: ["0E5E5E647F378D02"]
 			description: [
-				"&oNote: this quest accepts Berkelium 247 or 248."
+				"{moni.quest.18B28DC43ACAF768.description1}"
 				""
-				"&6LEB-248 Fuel&r is made with &e8 &6Berkelium 247&r and &e1 &6Berkelium 248&r. When depleted, it results in several different isotopes of &6Californium&r."
+				"{moni.quest.18B28DC43ACAF768.description2}"
 			]
 			icon: "nuclearcraft:fuel_berkelium_heb_248"
 			id: "18B28DC43ACAF768"
@@ -683,23 +685,23 @@
 						]
 					}
 				}
-				title: "Berkelium"
+				title: "{moni.task.1D40001351115DEA}"
 				type: "item"
 			}]
-			title: "Berkelium Fission"
+			title: "{moni.quest.18B28DC43ACAF768.title}"
 			x: 2.0d
 			y: -10.25d
 		}
 		{
 			dependencies: ["0E5E5E647F378D02"]
 			description: [
-				"&oNote: this quest accepts Californium 249, 250, 251 or 252."
+				"{moni.quest.79197A2CD8E435B2.description1}"
 				""
-				"&6Californium&r is the final fissile material in the NuclearCraft processing chain."
+				"{moni.quest.79197A2CD8E435B2.description2}"
 				""
-				"&6LECf-249 Fuel&r is made with the 8:1 ratio of &6Californium 252&r and &6Californium 249&r. When depleted, it results in... different isotopes of Californium."
+				"{moni.quest.79197A2CD8E435B2.description3}"
 				""
-				"Unless you want &6Californium RTGs&r or are experimenting with further fission routes, this step is probably unnecessary for general materials processing."
+				"{moni.quest.79197A2CD8E435B2.description4}"
 			]
 			icon: "nuclearcraft:fuel_californium_hecf_251"
 			id: "79197A2CD8E435B2"
@@ -734,20 +736,21 @@
 						]
 					}
 				}
-				title: "Californium"
+				title: "{moni.task.0D3D5AC8CBB48681}"
 				type: "item"
 			}]
+			title: "{moni.quest.79197A2CD8E435B2.title}"
 			x: 2.0d
 			y: -8.75d
 		}
 		{
 			dependencies: ["7D7B34CF5145F971"]
 			description: [
-				"&6Sunnarium&r is an alloy formed using &6Plutonium&r, &6Glowstone,&r and &6Curium&r on the &3Crafting Table.&r"
+				"{moni.quest.171EE3A4129F19A5.description1}"
 				""
-				"It is a common ingredient in higher tier &6Solar Panels&r."
+				"{moni.quest.171EE3A4129F19A5.description2}"
 				""
-				"There is a more efficient recipe made in an IV or better &3Mixer&r, but it'll take a long time to produce so consider stocking it passively."
+				"{moni.quest.171EE3A4129F19A5.description3}"
 			]
 			id: "171EE3A4129F19A5"
 			rewards: [{
@@ -769,13 +772,13 @@
 				"18B28DC43ACAF768"
 			]
 			description: [
-				"Now that you have all the basic building blocks of nuclear fission, you'll need to start creating breeding chains to mass produced stabilized versions of each element, for the synthesis of &9Omnium&r."
+				"{moni.quest.3616092A2954FEE0.description1}"
 				""
-				"Please note that stabilized versions of each element cannot be turned back into fluids, nor turned back into their original &bNuclearCraft&r isotopes."
+				"{moni.quest.3616092A2954FEE0.description2}"
 				""
-				"Experiment around with larger breeder reactors that can handle highly enriched fuels."
+				"{moni.quest.3616092A2954FEE0.description3}"
 				""
-				"You'll probably want to build multiple reactors to make all the fissile elements in any reasonable amount of time."
+				"{moni.quest.3616092A2954FEE0.description4}"
 			]
 			icon: "nuclearcraft:plutonium_rtg"
 			id: "3616092A2954FEE0"
@@ -784,28 +787,28 @@
 				id: "4DE6C946EF4B947F"
 				type: "checkmark"
 			}]
-			title: "Further Adventures In Fission"
+			title: "{moni.quest.3616092A2954FEE0.title}"
 			x: 3.5d
 			y: -9.5d
 		}
 		{
 			dependencies: ["3A69EE21B3089929"]
 			description: [
-				"The &3Data Bank&r acts as a mass storage for &6Data Sticks&r and &6Data Orbs&r. It is also required for reading &6Data Modules&r."
+				"{moni.quest.57C75A5756F62D17.description1}"
 				""
-				"Connect an &3Optical Data Transmission Hatch&r on the Data Bank to an &3Optical Data Reception Hatch&r (replacing the &3Data Access Hatch&r) on your &3Assembly Line&r using &aOptical Cables&r, and it will be able to read the data of all data items within the Data Bank."
+				"{moni.quest.57C75A5756F62D17.description2}"
 				""
-				"You can connect multiple &3Assembly Lines&r to a single Data Bank, but each one will need its own &3Transmission Hatch&r on the Data Bank."
+				"{moni.quest.57C75A5756F62D17.description3}"
 				"{@pagebreak}"
-				"&3Data Access Hatches&r and &3Optical Hatches&r can replace any of the &aComputer Casings&r in the structure, but it must have a minimum of &e3&r &aComputer Casings&r. Each &3Data Access Hatch&r and &3Optical Hatch&r within the structure will consume &d1,920 EU/t&r regardless of their usage."
+				"{moni.quest.57C75A5756F62D17.description4}"
 				""
-				"You will also need a &aMaintenance&r and &aEnergy Hatch&r, which can replace the &aHigh Power Casings&r in front."
+				"{moni.quest.57C75A5756F62D17.description5}"
 				""
 				"{@pagebreak}"
 				""
-				"Although this is not strictly required until you need to make and read &6Data Modules&r, your single &3Data Access Hatch&r on your &3Assembly Line&r will not have space to hold all the items you need to craft otherwise."
+				"{moni.quest.57C75A5756F62D17.description6}"
 				""
-				"If your Assembly Line setups grow enough, you may need to &echain&r Data Banks. Connect the &3Transmission Hatch&r on the Data Bank with data to the &3Reception Hatch&r of a second Data Bank. The &ereceiving&r Data Bank will be able to read all the data within the transmitting Data Bank, and can send that data to more Assembly Lines or more Data Banks. However, this comes at a greatly increased energy cost for the transmitting Data Bank."
+				"{moni.quest.57C75A5756F62D17.description7}"
 			]
 			icon: "gtceu:data_bank"
 			id: "57C75A5756F62D17"
@@ -845,16 +848,16 @@
 					type: "item"
 				}
 			]
-			title: "&2Data Bank"
+			title: "{moni.quest.57C75A5756F62D17.title}"
 			x: -4.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["672D43BD113251EA"]
 			description: [
-				"&2Optical Fiber Cables&r are used to transfer &eResearch Data&r&r between &3Data Banks&r and &3Assembly Lines&r, or &eComputation Data&r between &3High Performance Computation Arrays&r, &3Network Switches&r, and &3Research Stations&r."
+				"{moni.quest.3A69EE21B3089929.description1}"
 				""
-				"Note that Optical connections are limited to one &aTransmission Hatch&r to one &aReception Hatch&r."
+				"{moni.quest.3A69EE21B3089929.description2}"
 			]
 			id: "3A69EE21B3089929"
 			tasks: [{
@@ -862,28 +865,28 @@
 				item: "gtceu:normal_optical_pipe"
 				type: "item"
 			}]
-			title: "&2Optical Fiber Cables"
+			title: "{moni.quest.3A69EE21B3089929.title}"
 			x: -5.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3A69EE21B3089929"]
 			description: [
-				"The &3High Performance Computing Array (HPCA)&r is a computer which provides &dComputation Work&r to be used in the &3Research Station&r. The amount of &dComputation Work&r it provides depends on the type of HPCA parts within it. It also needs to receive adequate &dCooling&r provided by Coolers within its structure."
+				"{moni.quest.37BE175EEC2ABD59.description1}"
 				""
-				"Connect the &3Computation Data Transmission Hatch&r to the &3Reception Hatch&r on your &3Research Station&r to transfer the &dCWU/t&r produced to it."
+				"{moni.quest.37BE175EEC2ABD59.description2}"
 				"{@pagebreak}"
-				"The HPCA accepts almost any combination of &3Computation Components&r, &3Coolers&r, &3Bridges&r and &3Empty Components&r within the 3x3 area behind the &aComputer Heat Vents&r. The suggested components will build a &d16 CWU/t&r HPCA, enough for scanning the &3Fusion Reactor Mk2&r, &6UV Circuits&r, and all &6ZPM Components&r. You can get away with less at first, but you will eventually need to upgrade to this computing power. Refer to &eEMI&r for some other possible setups."
+				"{moni.quest.37BE175EEC2ABD59.description3}"
 				""
-				"The &dCWU/t&r of the HPCA is determined by the sum of the outputs of the &3HPCA Computation Components&r within it. Regular &3Computation Components&r produce &d4 CWU/t&r each, and require &d2 Cooling&r each. &3Advanced Computation Components&r, which you do not have access to yet, produce &d16 CWU/t&r each and require &d4 Cooling&r each."
+				"{moni.quest.37BE175EEC2ABD59.description4}"
 				""
 				"{@pagebreak}"
 				""
-				"&dCooling&r is provided by &3Cooler&r blocks within the structure. &3Passive Coolers&r provide &d1 Cooling&r each for free, whereas &3Active Coolers&r provide &d2 Cooling&r each with a steady flow of &9Dielectric PCB Coolant&r, provided through an &3Input Hatch&r. If the Cooling within the HPCA is insufficient, the components may be &cdamaged&r from overheating. The physical position of the components within the HPCA does not matter."
+				"{moni.quest.37BE175EEC2ABD59.description5}"
 				""
-				"A &3Bridge Component&r may be installed, allowing the HPCA to connect to &3Network Switches&r."
+				"{moni.quest.37BE175EEC2ABD59.description6}"
 				""
-				"The energy consumption of the HPCA is determined by the sum of its parts. 'Max Energy' refers to the power draw while the HPCA is computing, while 'Upkeep Energy' refers to the power draw when the HPCA is idling."
+				"{moni.quest.37BE175EEC2ABD59.description7}"
 			]
 			icon: "gtceu:high_performance_computation_array"
 			id: "37BE175EEC2ABD59"
@@ -922,20 +925,20 @@
 					type: "item"
 				}
 			]
-			title: "&2High Performance Computing Array"
+			title: "{moni.quest.37BE175EEC2ABD59.title}"
 			x: -2.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["37BE175EEC2ABD59"]
 			description: [
-				"The &3Research Station&r is an advanced Scanner which consumes &dComputation Work&r provided by connected &3High Performance Computing Arrays&r to research &cZPM&r and higher items."
+				"{moni.quest.1109CFC5D47FC011.description1}"
 				""
-				"The function of this multiblock is similar to the Scanner. Place the &6Data Orb&r or &6Data Module&r into the &3Object Holder&r alongside the item to be scanned. After sufficient &dCWU&r has been drawn, the item will be &cconsumed&r and the corresponding data will be written to the data item. Ensure your &3HPCA&r is supplying sufficient &dCWU/t&r - check the scan recipe in &eEMI&r for how much is required."
+				"{moni.quest.1109CFC5D47FC011.description2}"
 				"{@pagebreak}"
-				"&3Energy&r, &3Maintenance&r, and &3Computation Hatches&r can only replace the 9 &aComputer Casings&r between the &aComputer Heat Vents&r at the back of the structure. The &3Object Holder&r &cmust face&r the &3Research Station&r controller block."
+				"{moni.quest.1109CFC5D47FC011.description3}"
 				""
-				"The Research Station can be accelerated with excess &dCWU/t&r, but it &cdoes not overclock&r with extra &dEU/t&r. Initial recipes run on &dLuV&r power, but &cZPM&r will be required soon, and higher tiers of energy will be required for more advanced scans. As most Research scans take a long time, you should start this process early."
+				"{moni.quest.1109CFC5D47FC011.description4}"
 			]
 			icon: "gtceu:research_station"
 			id: "1109CFC5D47FC011"
@@ -974,7 +977,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Research Station"
+			title: "{moni.quest.1109CFC5D47FC011.title}"
 			x: -1.0d
 			y: 1.0d
 		}
@@ -984,9 +987,9 @@
 				"0562D9F4C441EAF9"
 			]
 			description: [
-				"Once you scan and make your first &6UV Circuits&r and &6ZPM Field Generators&r, you can upgrade your &3HPCA Computing Components&r to &3Advanced Components&r. These produce &d16 CWU/t&r each and require &d4 Cooling&r each."
+				"{moni.quest.0CEF53164D8B6496.description1}"
 				""
-				"With them, you can upgrade a single HPCA to produce &d32 CWU/t&r total - enough for basic &6UV components&r and the &3Network Switch&r, which will allow you to go higher."
+				"{moni.quest.0CEF53164D8B6496.description2}"
 			]
 			id: "0CEF53164D8B6496"
 			rewards: [{
@@ -999,20 +1002,20 @@
 				item: "gtceu:hpca_advanced_computation_component"
 				type: "item"
 			}]
-			title: "&2Advanced HPCA"
+			title: "{moni.quest.0CEF53164D8B6496.title}"
 			x: 2.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["0CEF53164D8B6496"]
 			description: [
-				"The &3Network Switch&r combines any number of &3Computation Data Reception Hatches&r into any number of &3Computation Data Transmission Hatches&r. This will be required when the &dCWU/t&r requirements of your &3Research Station&r exceed what a single &3HPCA&r can provide."
+				"{moni.quest.75DD12FBC8AA39FC.description1}"
 				""
-				"Connect the &3Computation Data Reception Hatches&r&r to your &3HPCAs&r with &3Bridge Components&r within them, and connect a single &3Computation Data Transmission Hatch&r to your &3Research Station&r, and it will receive the sum of &dCWU/t&r from all of your HPCAs!"
+				"{moni.quest.75DD12FBC8AA39FC.description2}"
 				""
-				"Now, all &3Assembly Line&r recipes are available to you, given you have the &dCWU/t&r to research them. The most computationally demanding scan, for the &6Ultimate Battery&r, requires &d144 CWU/t&r."
+				"{moni.quest.75DD12FBC8AA39FC.description3}"
 				""
-				"The Network Switch consumes &d7,680 EU/t&r per &3Computation Hatch&r in its structure."
+				"{moni.quest.75DD12FBC8AA39FC.description4}"
 			]
 			icon: "gtceu:network_switch"
 			id: "75DD12FBC8AA39FC"
@@ -1041,14 +1044,14 @@
 				}
 				{
 					id: "09E3C1019A70EAB5"
-					item: "gtceu:data_transmitter_hatch"
+					item: "gtceu:computation_transmitter_hatch"
 					type: "item"
 				}
 			]
-			title: "&2Network Switch"
+			title: "{moni.quest.75DD12FBC8AA39FC.title}"
 			x: 3.5d
 			y: 1.0d
 		}
 	]
-	title: "Fission and Fusion"
+	title: "{moni.chapter.40F7695BE1E65C41.title}"
 }

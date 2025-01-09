@@ -1,9 +1,17 @@
 ServerEvents.recipes(event => {
+    
+    event.recipes.gtceu.assembler('neutron_emitter')
+        .itemInputs('4x gtceu:double_neutronium_plate', '4x gtceu:polyethyl_cyanoacrylate_plate')
+        .inputFluids('gtceu:tin_alloy 4680')
+        .itemOutputs('kubejs:neutron_emitter')
+        .duration(4000)
+        .EUt(GTValues.VHA[GTValues.UV])
+
     event.recipes.gtceu.electrolyzer('actinium_from_uranium_hexafluoride')
         .inputFluids('gtceu:uranium_hexafluoride 1000')
-        .chancedInput('gtceu:neutron_reflector', 100, 0)
+        .chancedInput('kubejs:neutron_emitter', 100, 0)
         .outputFluids('gtceu:enriched_uranium_hexafluoride 50', 'gtceu:depleted_uranium_hexafluoride 450', 'gtceu:fluorine 800')
-        .chancedOutput('gtceu:small_actinium_dust', 100, 500)
+        .chancedOutput('gtceu:small_actinium_dust', 1000, 400)
         .duration(160)
         .EUt(GTValues.VHA[GTValues.ZPM])
 
@@ -37,16 +45,6 @@ ServerEvents.recipes(event => {
         )
     }
 
-
-    // Extra Large Chemical Reactor
-    event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
-        .itemInputs('gtceu:large_chemical_reactor', "8x gtceu:naquadah_large_fluid_pipe", '8x gtceu:luv_hermetic_casing', '4x gtceu:luv_field_generator', '8x gtceu:luv_electric_pump', '8x gtceu:luv_fluid_regulator', '4x #gtceu:circuits/zpm')
-        .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polybenzimidazole 1152')
-        .itemOutputs('gtceu:extra_large_chemical_reactor')
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:large_chemical_reactor').EUt(7680).duration(600))
-        .duration(1200)
-        .EUt(131072)
-
     // Blacklight
     event.shaped(
         'gtceu:blacklight', [
@@ -65,7 +63,7 @@ ServerEvents.recipes(event => {
     // Trinaquadalloy Mixer Recipe
     event.recipes.gtceu.mixer("mixer_trinaquadalloy")
         .itemInputs("6x gtceu:trinium_dust", "2x gtceu:naquadah_dust",  "gtceu:carbon_dust")
-        .itemOutputs("9x gcyr:trinaquadalloy_dust")
+        .itemOutputs("9x gtceu:trinaquadalloy_dust")
         .circuit(1)
         .duration(300)
         .EUt(491250)
@@ -78,9 +76,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(129)
 
-    // Atomic Casing Buff
-    event.remove({ id: 'gcyr:shaped/casing_atomic' })
-    event.remove({ id: 'gcyr:assembler/casing_atomic' })
+    // Atomic Casings
 
     event.shaped(
         '2x gtceu:atomic_casing', [
@@ -88,7 +84,7 @@ ServerEvents.recipes(event => {
             'PFP',
             'PWP'
         ], {
-            P: 'gcyr:trinaquadalloy_plate',
+            P: 'gtceu:trinaquadalloy_plate',
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches',
             F: 'gtceu:naquadah_alloy_frame',
@@ -96,7 +92,7 @@ ServerEvents.recipes(event => {
     ).id('gtceu:shaped/atomic_casing')
 
     event.recipes.gtceu.assembler("atomic_casing")
-        .itemInputs("6x gcyr:trinaquadalloy_plate", "gtceu:naquadah_alloy_frame")
+        .itemInputs("6x gtceu:trinaquadalloy_plate", "gtceu:naquadah_alloy_frame")
         .itemOutputs("2x gtceu:atomic_casing")
         .duration(100)
         .EUt(16)
@@ -155,7 +151,7 @@ ServerEvents.recipes(event => {
         .itemInputs('redstone_arsenal:flux_gem', '4x gtceu:electrum_flux_plate')
         .itemOutputs('4x redstone_arsenal:flux_plating')
         .duration(60)
-        .EUt(7680)
+        .EUt(GTValues.VA[GTValues.EV])
 
 	// Vacuum Freezer
 	// kubejs Superconductor Wire
@@ -212,7 +208,7 @@ ServerEvents.recipes(event => {
         .EUt(1000000)
 
     event.recipes.gtceu.omnic_forge("dimensionally_stabilized_infinity_heavy_plating")
-        .itemInputs('gtceu:infinity_plate', 'gtceu:dense_activated_netherite_plate', 'kubejs:quasi_stable_neutron_star', '8x gtceu:neutron_reflector', '16x kubejs:the_ultimate_material')
+        .itemInputs('gtceu:infinity_plate', 'gtceu:dense_activated_netherite_plate', 'kubejs:quasi_stable_neutron_star', '8x gtceu:neutron_reflector', '12x kubejs:the_ultimate_material')
         .itemOutputs('kubejs:dimensionally_stabilized_infinity_heavy_plating')
         .duration(100)
         .EUt(4000000)
@@ -238,12 +234,12 @@ ServerEvents.recipes(event => {
             'PBP'
         ], {
             P: 'minecraft:diamond',
-            G: 'gtceu:diamond_perfect',
+            G: 'gtceu:exquisite_diamond_gem',
             B: 'gtceu:diamond_screw'
         }
     ).id('kubejs:diamond_lattice')
     event.recipes.gtceu.assembler('kubejs:diamond_lattice')
-        .itemInputs('gtceu:diamond_perfect', '2x gtceu:diamond_plate', '4x gtceu:diamond_screw')
+        .itemInputs('gtceu:flawless_diamond_gem', '2x gtceu:diamond_plate', '4x gtceu:diamond_screw')
         .itemOutputs('kubejs:diamond_lattice')
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -430,38 +426,22 @@ ServerEvents.recipes(event => {
     )
 
     // Creative Chest
-	event.recipes.extendedcrafting.shaped_table(
-		'gtceu:max_machine_casing', [
-            "ABBBA",
-            "BCCCB",
-            "BCDCB",
-            "BCCCB",
-            "ABBBA"
-		], {
-			A: 'kubejs:causality_exempt_monic_heavy_plating',
-            B: 'kubejs:timeless_monic_heavy_plating',
-			C: 'kubejs:dimensionally_stabilized_infinity_heavy_plating',
-            D: 'kubejs:infinity_wrench'
-		}
-	).id('kubejs:endgame/max_casing')
+    event.shaped(
+        'gtceu:max_machine_casing', [
+        'MMM',
+        'MWM',
+        'MMM'
+    ], {
+        M: 'gtceu:monium_plate',
+        W: 'kubejs:infinity_wrench'
+    }
+    ).id('kubejs:endgame/max_casing')
 
-    event.recipes.extendedcrafting.shaped_table(
-		'gtceu:max_machine_hull', [
-            "ABBBA",
-            "BEFEB",
-            "BDGDB",
-            "BCCCB",
-            "ABBBA"
-		], {
-			A: 'kubejs:causality_exempt_monic_heavy_plating',
-            B: 'kubejs:timeless_monic_heavy_plating',
-			C: 'gtceu:holmium_hex_wire',
-            D: 'gtceu:monium_octal_wire',
-            E: 'gtceu:monium_quadruple_wire',
-            F: 'gtceu:monium_double_wire',
-            G: 'gtceu:max_machine_casing'
-		}
-	).id('kubejs:endgame/max_hull')
+    event.recipes.gtceu.assembler('kubejs:endgame/max_hull')
+        .itemInputs('gtceu:max_machine_casing', '2x gtceu:monium_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
+        .itemOutputs('gtceu:max_machine_hull')
+        .duration(1980)
+        .EUt(GTValues.VA[GTValues.MAX])
 
     if (isNormalMode) {
         event.recipes.extendedcrafting.shaped_table(

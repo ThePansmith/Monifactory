@@ -35,6 +35,7 @@ ServerEvents.recipes(event => {
     sda_print('creative_storage_data', 3, 'gtceu:uev_quantum_chest', 32)
     sda_print('creative_storage_data', 4, 'gtceu:uev_quantum_tank', 32)
     sda_print('creative_computation_data', 1, 'gtceu:creative_data_access_hatch', 256)
+    sda_print('creative_computation_data', 2, 'gtceu:creative_computation_provider', 256)
     sda_print('creative_energy_data', 1, 'enderio:creative_power', 256)
     sda_print('creative_energy_data', 2, 'ae2:creative_energy_cell', 256)
     sda_print('creative_energy_data', 3, 'gtceu:creative_energy', 256)
@@ -73,7 +74,7 @@ ServerEvents.recipes(event => {
     if (!isNormalMode) {
         event.recipes.gtceu.subatomic_digital_assembly("omnicdata")
             .notConsumable('kubejs:omnic_data')
-            .itemOutputs('gtceu:omnium_nugget')
+            .itemOutputs('gtceu:omnium_ingot')
             .EUt(16000)
             .circuit(1)
             .totalCWU(160)

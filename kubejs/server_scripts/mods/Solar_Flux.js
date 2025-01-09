@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
             M: 'solarflux:mirror',
             W: 'gtceu:fine_copper_wire',
             S: 'minecraft:stone_slab',
-            C: 'enderio:conductive_conduit'
+            C: 'laserio:energy_overclocker_card_tier_1'
         }
     )
     event.recipes.gtceu.assembler('sp_1')
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             Item.of('solarflux:mirror', 3),
             Item.of('gtceu:fine_copper_wire', 3),
             Item.of('minecraft:stone_slab', 2),
-            Item.of('enderio:conductive_conduit', 1)
+            Item.of('laserio:energy_overclocker_card_tier_1', 1)
         ])
         .itemOutputs('2x solarflux:sp_1')
         .duration(2400)
@@ -38,11 +38,11 @@ ServerEvents.recipes(event => {
     
     // All the other panels follow a pattern until 7
     var solarCrafting = [
-        ['gtceu:tin_single_cable', 'minecraft:redstone_block', 'gtceu:cupronickel_plate', 'enderio:energetic_conduit'],
-        ['gtceu:electrical_steel_plate', 'gtceu:conductive_alloy_block', 'gtceu:electrical_steel_gear', 'enderio:vibrant_conduit'],
-        ['gtceu:microversium_ingot', 'gtceu:end_steel_block', 'gtceu:microversium_ingot', 'enderio:endsteel_conduit'],
-        ['gtceu:lumium_plate', 'gtceu:sunnarium_dust', 'gtceu:lumium_plate', 'enderio:lumium_conduit'],
-        ['gtceu:signalum_plate', 'gtceu:enriched_sunnarium_dust', 'gtceu:signalum_plate', 'enderio:signalum_conduit']
+        ['gtceu:tin_single_cable', 'minecraft:redstone_block', 'gtceu:cupronickel_plate', 'laserio:energy_overclocker_card_tier_2'],
+        ['gtceu:electrical_steel_plate', 'gtceu:conductive_alloy_block', 'gtceu:electrical_steel_gear', 'laserio:energy_overclocker_card_tier_3'],
+        ['gtceu:microversium_ingot', 'gtceu:end_steel_block', 'gtceu:microversium_ingot', 'laserio:energy_overclocker_card_tier_4'],
+        ['gtceu:lumium_plate', 'gtceu:sunnarium_dust', 'gtceu:lumium_plate', 'laserio:energy_overclocker_card_tier_5'],
+        ['gtceu:signalum_plate', 'gtceu:enriched_sunnarium_dust', 'gtceu:signalum_plate', 'laserio:energy_overclocker_card_tier_6']
     ]
     
     solarCrafting.forEach((ingredients, index) => {
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
 
     // T7
     event.recipes.gtceu.assembler('sp_7')
-    .itemInputs('2x solarflux:sp_6', '3x solarflux:photovoltaic_cell_5', '2x gtceu:osmium_plate', 'enderio:signalum_conduit')
+    .itemInputs('2x solarflux:sp_6', '3x solarflux:photovoltaic_cell_5', '2x gtceu:osmium_plate', 'laserio:energy_overclocker_card_tier_7')
     .inputFluids('gtceu:signalum 1296')
     .itemOutputs('2x solarflux:sp_7')
     .duration(2400)
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
 
     // T8
     event.recipes.gtceu.assembly_line('sp_8')
-    .itemInputs('2x solarflux:sp_7', '3x solarflux:photovoltaic_cell_6', '2x gtceu:osmiridium_plate', 'enderio:enderium_conduit')
+    .itemInputs('2x solarflux:sp_7', '3x solarflux:photovoltaic_cell_6', '2x gtceu:osmiridium_plate', 'laserio:energy_overclocker_card_tier_8')
     .inputFluids('gtceu:enderium 1296')
     .itemOutputs('2x solarflux:sp_8')
     ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('solarflux:sp_7').EUt(480).duration(1200))
@@ -218,7 +218,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:macerator/macerate_enriched_sunnarium_plate'})
     event.remove({ id: 'gtceu:macerator/macerate_dense_enriched_sunnarium_plate'})
 })
-
 
 /* Gregtech Solar conversion/reversion */
 ServerEvents.recipes(event => {

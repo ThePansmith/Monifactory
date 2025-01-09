@@ -129,15 +129,15 @@ ServerEvents.recipes(event => {
                 'minecraft:oak_sapling'
             )
             .itemOutputs(
-                '48x minecraft:skeleton_skull',
                 '64x minecraft:bone',
                 '64x minecraft:bone',
                 '64x minecraft:bone',
-                '48x minecraft:zombie_head',
+                '64x minecraft:bone',
                 '64x minecraft:rotten_flesh',
                 '64x minecraft:rotten_flesh',
                 '64x minecraft:rotten_flesh',
-                '48x minecraft:creeper_head',
+                '64x minecraft:rotten_flesh',
+                '64x minecraft:gunpowder',
                 '64x minecraft:gunpowder',
                 '64x minecraft:slime_block',
                 '64x kubejs:guardian_scale'
@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
                 '50x thermal:basalz_rod',
                 '50x thermal:basalz_rod',
                 '64x minecraft:ghast_tear',
-                '48x minecraft:wither_skeleton_skull',
+                '64x kubejs:wither_bone',
                 '64x kubejs:wither_bone',
                 '64x kubejs:wither_bone', // drops of evil aren't in the pack
                 '64x minecraft:magma_cream',
@@ -201,7 +201,6 @@ ServerEvents.recipes(event => {
                 '64x kubejs:dragon_lair_data',
                 '64x minecraft:dragon_breath',
                 '64x kubejs:ender_dragon_scale',
-                'minecraft:dragon_head'
             )
             .duration(100*20)
             .EUt(30720)
@@ -312,26 +311,5 @@ ServerEvents.recipes(event => {
             )
             .duration(450*20)
             .EUt(250000)
-
-    event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
-        .itemInputs(
-            'kubejs:microminer_t9',
-            '8x gtceu:neutron_reflector',
-            '4x gtceu:cryococcus_block',
-            'kubejs:stellar_creation_data'
-        )
-        .itemOutputs(
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget',
-            '64x gtceu:neutronium_nugget'
-        )
-        .duration(3000)
-        .EUt(250000)
     }
 })

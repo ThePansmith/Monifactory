@@ -5,7 +5,7 @@ on:
       target:
         description: "Build what"
         required: true
-        default: "build-client"
+        default: "build-all"
         type: choice
         options:
           - build-client

@@ -32,7 +32,11 @@ Remove Spark and ensure you are using an ARM64 version of Java 17 or higher.
 
 **Mod versions do not match when connecting to server ([example pictured here](https://imgur.com/GL1GdwW))**
 
-Odds are your config doesn't match the ones on the server. If the server is running on Hard Mode, make sure that you've updated your client too
+Odds are your config doesn't match the ones on the server. Pack modes (Normal, Hard, Expert) change configs, so double-check and make sure that the client and server are on the same mode!
+
+**"Connection Lost - Invalid player data" error message**
+
+No cause has been identified, but the leading theory is that you may have favorited or bookmarked a recipe or item that no longer exists in EMI. Download a new instance of Monifactory from scratch, test it to ensure it works, and if so then transfer over your files in chunks while repeatedly checking to ensure the error doesn't re-occur.
 
 **GregTech textures are all switched around**
 

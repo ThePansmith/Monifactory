@@ -123,12 +123,12 @@ GTCEuStartupEvents.craftingComponents(event => {
     electricCoilMap[GTValues.UIV] = UnificationEntry(TagPrefix.wireGtHex, GTMaterials.get('holmium'))
     event.modifyUnificationEntry(CraftingComponent.COIL_ELECTRIC, electricCoilMap)
 
-    // Magnetic Rods (Uses Samarium for UV+, two tiers after the same for Nomi)
+    // Magnetic Rods
     let magneticRodMap = {};
-    magneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
-    magneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
-    magneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
-    magneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
+    magneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.SamariumMagnetic)
+    magneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get('magnetic_terbium'))
+    magneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get('magnetic_terbium'))
+    magneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get('magnetic_terbium'))
     event.modifyUnificationEntry(CraftingComponent.STICK_MAGNETIC, magneticRodMap)
 
     // Distillation Rods
@@ -138,15 +138,15 @@ GTCEuStartupEvents.craftingComponents(event => {
     distillationRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.spring, GTMaterials.get('eltz'))
     event.modifyUnificationEntry(CraftingComponent.STICK_DISTILLATION, distillationRodMap)
 
-    // Electromagnetic Rods (Uses Samarium for UV+, two tiers after the same for Nomi)
+    // Electromagnetic Rods
     let electromagneticRodMap = {};
     electromagneticRodMap[GTValues.IV] = UnificationEntry(TagPrefix.rod, GTMaterials.Neodymium)
-    electromagneticRodMap[GTValues.LuV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Neodymium)
-    electromagneticRodMap[GTValues.ZPM] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Neodymium)
+    electromagneticRodMap[GTValues.LuV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
+    electromagneticRodMap[GTValues.ZPM] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
     electromagneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
-    electromagneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
-    electromagneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
-    electromagneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.Samarium)
+    electromagneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.Terbium)
+    electromagneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rod, GTMaterials.Terbium)
+    electromagneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rod, GTMaterials.Terbium)
     event.modifyUnificationEntry(CraftingComponent.STICK_ELECTROMAGNETIC, electromagneticRodMap)
 
     // Chem reactor pipe ingredient

@@ -206,14 +206,14 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    //cryolobus
+    //Cryolobus
     event.recipes.gtceu.assembler('kubejs:cryolobus_conduit')
         .itemInputs('2x gtceu:cryolobus_single_wire', 'enderio:enderium_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:cryolobus_conduit')
         .duration(80)
         .EUt(16)
 
-    //kubejs Superconductor
+    //Sculk Superconductor
     event.recipes.gtceu.assembler('kubejs:sculk_superconductor_conduit')
         .itemInputs('2x gtceu:sculk_superconductor_single_wire', 'enderio:cryolobus_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:sculk_superconductor_conduit')
@@ -463,7 +463,7 @@ ServerEvents.recipes(event => {
         ' I '
     ], {
         I: '#forge:ingots/iron',
-        G: '#forge:gears/iron'
+        G: 'gtceu:iron_gear'
     }
     ).id('kubejs:yeta_wrench')
     event.remove({ output: 'enderio:void_chassis' })
@@ -775,16 +775,30 @@ ServerEvents.recipes(event => {
     event.shapeless('enderio:pressurized_fluid_tank', ['enderio:pressurized_fluid_tank'])
 
     //Cheaper me conduit recipes
-    event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
+    if(!isExpertMode) {
+        event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
         .itemInputs("4x enderio:me_conduit", "5x enderio:conduit_binder")
-        .itemOutputs("2x enderio:dense_me_conduit")
-        .duration(80)
-        .EUt(16)
-    event.recipes.gtceu.assembler("kubejs:me_conduit")
-        .itemInputs("3x ae2:fluix_covered_cable", "6x enderio:conduit_binder")
-        .itemOutputs("8x enderio:me_conduit")
-        .duration(100)
-        .EUt(16)
+            .itemOutputs("2x enderio:dense_me_conduit")
+            .duration(80)
+            .EUt(16)
+        event.recipes.gtceu.assembler("kubejs:me_conduit")
+            .itemInputs("3x ae2:fluix_covered_cable", "6x enderio:conduit_binder")
+            .itemOutputs("8x enderio:me_conduit")
+            .duration(100)
+            .EUt(16)
+    } else {
+        event.remove({ output: "enderio:me_conduit" })
+        event.remove({ output: "enderio:dense_me_conduit" })
+    }
+    
 
     event.replaceInput({ output: 'enderio:extraction_speed_upgrade_3' }, 'gtceu:soularium_ingot', 'gtceu:aluminium_ingot')
+
+    // Conduit Probe recipe
+    event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:conductive_alloy_ingot', 'gtceu:conductive_alloy_ingot')
+    if(!isExpertMode)
+        event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:energy_conduit', 'enderio:conductive_conduit')
+    if(isExpertMode)
+        event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:energy_conduit', 'gtceu:conductive_alloy_single_wire')
+    
 })

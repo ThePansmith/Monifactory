@@ -4,6 +4,14 @@ if (Platform.isLoaded('fluxnetworks')) {
     ServerEvents.recipes(event => {
         event.replaceInput({ id: 'fluxnetworks:fluxconfigurator'}, 'minecraft:obsidian', 'enderio:infinity_rod');
 
+        // Flux Dust
+        event.recipes.gtceu.chemical_bath('fluxnetworks:flux_dust')
+            .itemInputs('1x gtceu:obsidian_dust')
+            .inputFluids('gtceu:redstone 144')
+            .itemOutputs('fluxnetworks:flux_dust')
+            .duration(40)
+            .EUt(16)
+
         //Flux Block
         event.shaped('fluxnetworks:flux_block', [
             'FFF',
@@ -19,7 +27,7 @@ if (Platform.isLoaded('fluxnetworks')) {
         event.remove({ id: 'fluxnetworks:fluxcore'})
         event.recipes.gtceu.assembler('fluxnetworks:fluxcore')
             .itemOutputs('2x fluxnetworks:flux_core')
-            .itemInputs('1x minecraft:ender_eye', '4x enderio:reinforced_obsidian_block', '4x fluxnetworks:flux_dust', '1x gtceu:luv_sensor', '1x gtceu:luv_emitter', '4x enderio:cryolobus_conduit')
+            .itemInputs('1x minecraft:ender_eye', '4x enderio:reinforced_obsidian_block', '4x fluxnetworks:flux_dust', '1x gtceu:luv_sensor', '1x gtceu:luv_emitter', '4x laserio:energy_overclocker_card_tier_8')
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(200)
 

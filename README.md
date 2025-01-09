@@ -25,7 +25,6 @@
 - README.md adapted from [GregTech CEu](https://github.com/GregTechCEu/GregTech).  
 - Meowni (mascot) by Mutso  
 - Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
-- Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
 Thank you!
 
 ## Hard/Expert Mode
@@ -74,7 +73,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 2. Follow the prompt to select your mode.
 
 ### Addon Mods (AKA Optional Compats)
-To spice up your Monifactory experience, you can add one of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
+To spice up your Monifactory experience, you can add any of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
 1. [Create](https://www.curseforge.com/minecraft/mc-mods/create)
     1a. [Create: Steam and Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)
@@ -84,6 +83,7 @@ To spice up your Monifactory experience, you can add one of the following mods t
 5. [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)
 6. [Project Red: Transmission](https://www.curseforge.com/minecraft/mc-mods/project-red-transmission)
 7. [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
+8. [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.

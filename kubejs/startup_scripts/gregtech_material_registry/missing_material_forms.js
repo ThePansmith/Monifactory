@@ -27,9 +27,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Actinium.setMaterialARGB(0xaa3399)
     GTMaterials.Actinium.addFlags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW)
 
+    GTMaterials.Terbium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    GTMaterials.Terbium.setMaterialARGB(0x8C8F7A)
+    GTMaterials.Terbium.setProperty($PropertyKey.BLAST, new $BlastProperty(7200, 'higher', 524288, 900, -1, -1));
+    GTMaterials.Terbium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD)
+
     GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 0, true))
-    GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(120000, 128000, true, true, true, true))
+    GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(10000, 18000, true, false, true, true))
     GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, 'highest', 1000000, 1000, -1, -1));
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
@@ -41,9 +46,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.MagnesiumDiboride.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.Zeron100.addFlags(GTMaterialFlags.GENERATE_DENSE)
-    GTMaterials.get('gcyr:bisalloy_400').addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
+
+    //Gears for Thermal Expansion
+    GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)
+    GTMaterials.Copper.addFlags(GTMaterialFlags.GENERATE_GEAR)
+    GTMaterials.Silver.addFlags(GTMaterialFlags.GENERATE_GEAR)
+    GTMaterials.Lead.addFlags(GTMaterialFlags.GENERATE_GEAR)
 
     //Radioactive materials that get liquid forms and/or a new color
     addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID, 1133);
@@ -56,6 +66,5 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Neptunium.setMaterialARGB(0x486d7b)
     addFluid(GTMaterials.Curium, $FluidStorageKeys.LIQUID, 1618);
     GTMaterials.Curium.setMaterialARGB(0x58307f)
-    addFluid(GTMaterials.Ruridit, $FluidStorageKeys.LIQUID, 1515);
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID, 1337);
 })

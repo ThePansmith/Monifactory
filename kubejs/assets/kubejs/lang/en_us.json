@@ -165,8 +165,8 @@
   "item.kubejs.unsintered_naquadah_fuel_pellet": "Unsintered Naquadah Fuel Pellet",
   "item.kubejs.depleted_naquadah_fuel_pellet": "Depleted Naquadah Fuel Pellet",
   "item.kubejs.naquadah_fuel_dust": "Naquadah Fuel Dust",
-  "item.kubejs.raw_naquadah_fuel_dust": "Raw Naquadah Fuel Dust",
-  "item.kubejs.nuclear_waste": "Nuclear Waste",
+  "item.kubejs.naquadah_fuel_primer_dust": "Naquadah Fuel Primer Dust",
+  "item.kubejs.naquadah_waste": "Naquadah Waste",
   "item.kubejs.inactivated_naquadah_fuel_dust": "Inactivated Naquadah Fuel Dust",
   "item.kubejs.pellet_extruder_mold": "Extruder Mold (Pellet)",
   "item.kubejs.depleted_naquadah_fuel_dust": "Depleted Naquadah Fuel Dust",
@@ -184,6 +184,9 @@
   "item.kubejs.porous_matrix_mesh": "Porous Matrix Mesh",
   "item.kubejs.dense_matrix_mesh": "Dense Matrix Mesh",
 
+  "item.kubejs.rare_earth_sulfate": "Rare Earth Sulfate",
+  "item.kubejs.rare_earth_oxide": "Rare Earth Oxide",
+  "item.kubejs.rare_earth_salt": "Rare Earth Salt",
 
   "item.kubejs.complex_smd_transistor": "Complex SMD Transistor",
   "item.kubejs.complex_smd_resistor": "Complex SMD Resistor",
@@ -245,8 +248,8 @@
   "item.kubejs.pressure_layer": "Pressure Layer",
   "item.kubejs.thermal_cloth": "Thermal Cloth",
   "item.kubejs.unprepared_space_helmet": "Unprepared Space Helmet",
-  "item.kubejs.unprepared_space_chestpiece": "Unprepared Space Chestpiece",
-  "item.kubejs.unprepared_space_leggings": "Unprepared Space Leggings",
+  "item.kubejs.unprepared_space_chestpiece": "Unprepared Space Suit",
+  "item.kubejs.unprepared_space_leggings": "Unprepared Space Pants",
   "item.kubejs.unprepared_space_boots": "Unprepared Space Boots",
 
   "item.kubejs.impossible_realm_data": "§bImpossible Realm Data",
@@ -267,6 +270,7 @@
   "item.kubejs.creative_energy_data": "Creative Energy Data",
 
   "item.kubejs.diamond_lattice": "Diamond Lattice",
+  "item.kubejs.neutron_emitter": "Neutron Emitter",
   "item.kubejs.ultimate_gem": "§dUltimate Gem",
   "item.kubejs.mote_of_omnium": "Mote of Omnium",
   "item.kubejs.heart_of_a_universe": "§dHeart Of A Universe",
@@ -387,8 +391,7 @@
   "block.kubejs.microverse_casing": "Microverse Casing",
   "block.kubejs.cryolobus_casing": "Cryolobus Casing",
   "block.kubejs.cryococcus_casing": "Cryococcus Casing",
-  "block.kubejs.cryococcus_fusion_casing": "Cryococcus Fusion Casing",
-  "block.kubejs.cryococcus_fusion_coil": "Cryococcus Fusion Coil",
+  "block.kubejs.bioalloy_fusion_casing": "Bioalloy Fusion Casing",
   "block.kubejs.dark_soularium_casing": "Dark Soularium Casing",
   "block.kubejs.omnic_matrix_machine_casing": "Omnic Matrix Machine Casing",
   "block.kubejs.dimensional_stabilization_netherite_casing": "Dimensional Stabilization Netherite Casing",
@@ -421,6 +424,18 @@
   "item.kubejs.uhv_universal_circuit": "UHV Universal Circuit",
   "item.kubejs.uev_universal_circuit": "UEV Universal Circuit",
   "item.kubejs.uiv_universal_circuit": "UIV Universal Circuit",
+
+  "jetpack.conductive_iron.name": "Conductive Iron",
+  "jetpack.creative.name": "Creative",
+  "jetpack.dark_soularium.name": "Dark Soularium",
+  "jetpack.electrical_steel.name": "Electrical Steel",
+  "jetpack.energetic.name": "Energetic",
+  "jetpack.fluxed.name": "Fluxed",
+  "jetpack.hardened.name": "Hardened",
+  "jetpack.leadstone.name": "Leadstone",
+  "jetpack.reinforced.name": "Reinforced",
+  "jetpack.resonant.name": "Resonant",
+  "jetpack.vibrant.name": "Vibrant",
 
   "__MISC_TOOLTIPS__.header": "=========================",
   "__MISC_TOOLTIPS__.flufff": "> Miscellaneous Tooltips<",
@@ -463,14 +478,12 @@
 
   "thermal.emi.tooltip": "§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.",
 
-  "gtceu.energy_converter.tooltip": "§7EU wires will convert to RF if plugged into a RF Machine",
-  "gtceu.negation_operator.tooltip": "Negation operator [!] is nonfunctional.",
+  "gtceu.energy_converter.tooltip": "§4Cannot be used with conduits in EU->FE mode.\n§7Use GT wires or cables instead. They will convert to FE if plugged into a FE Machine.",
   "gtceu.basic_tape.tooltip": "§7Used to wrap up Crates for transport.",
   "gtceu.ender_fluid_link_cover.tooltip": "§4Not yet implemented.",
   "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
-
-  "gcyr.rocket_scanner.tooltip": "§7Rotate the multiblock if your rocket doesn't build.",
-  "gcyr.space_chestplate.tooltip": "§7Fill with Oxygen in a Canner.",
+  "gtceu.robot_arm.tooltip": "§4Advanced control over item transfer not possible with pipes.",
+  "gtceu.fluid_regulator.tooltip": "§4Advanced control over fluid transfer not possible with pipes.",
 
   "functionalstorage.storage_controller.tooltip": "§7Previously known as a Storage Controller",
   "functionalstorage.framed_storage_controller.tooltip": "§7Previously known as a Framed Storage Controller",
@@ -505,7 +518,6 @@
   "telepastries.lost_city_cake.tooltip.1": "§6Teleports you to the Lost Cities§7",
   "telepastries.lost_city_cake.tooltip.2": "§7Teleport without consuming by right-clicking with a Diamond.",
 
-  "gtceu.macerator_byrproduct_warning.tooltip": "§4You must use an HV-tier macerator or higher for byproducts.",
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
   "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",

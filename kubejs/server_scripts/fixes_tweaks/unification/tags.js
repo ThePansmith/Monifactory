@@ -50,6 +50,13 @@ ServerEvents.tags('item', event => {
     event.add('forge:ingots/redstone_alloy', 'gtceu:red_alloy_ingot')
     event.add('forge:ingots/copper_alloy', 'gtceu:electrical_steel_ingot')
 
+    const decorremap = [ ['etrium', 'diamond'], ['desh', 'bronze'], ['ostrum', 'lead'], ['calorite', 'red_alloy']]
+    decorremap.forEach(([mat, remat]) => {
+        event.add(`ad_astra:${mat}_plates`, `gtceu:${remat}_plate`)
+        event.add(`ad_astra:${mat}_ingots`, `gtceu:${remat}_ingot`)
+        event.add(`ad_astra:${mat}_blocks`, `gtceu:${remat}_block`)
+    })
+
     event.remove('forge:gears/wood', 'enderio:wood_gear')
     event.remove('forge:gears/stone', 'enderio:stone_gear')
     event.remove('forge:gears/iron', 'enderio:iron_gear')
@@ -71,8 +78,8 @@ ServerEvents.tags('item', event => {
     // enderio!!!!
     event.add('forge:heads', 'enderio:enderman_head')
 
-    event.add('forge:microminers', '/kubejs:microminer_t/')
-    event.add('forge:microminers', '/kubejs:stabilized_microminer_t/')
+    event.add('forge:microminers', /kubejs:microminer_t/)
+    event.add('forge:microminers', /kubejs:stabilized_microminer_t/)
 
     // For stonecutting Marble
     event.add('moni:marble', /^(gtceu:(marble|polished_marble|marble_bricks|cracked_marble_bricks|chiseled_marble|marble_tile|marble_small_tile|marble_windmill_a|marble_windmill_b|small_marble_bricks|square_marble_bricks))$/)
@@ -109,6 +116,15 @@ ServerEvents.tags('fluid', event => {
     event.removeAllTagsFrom('thermal:creosote')
     event.removeAllTagsFrom('thermal:experience')
     event.removeAllTagsFrom('sophisticatedcore:xp_still')
+    event.removeAllTagsFrom('thermal:glowstone')
+    event.removeAllTagsFrom('thermal:redstone')
+    event.removeAllTagsFrom('cofh_core:experience')
+
+    Fluid.getTypes().filter(id=>id.includes("ad_astra")).forEach(id => event.removeAllTagsFrom(id))
+    // Rocket Fuels
+    event.removeAll('ad_astra:fuel');
+    event.add('ad_astra:fuel', 'gtceu:rocket_fuel')
+
 })
 
 // Unification regexes are definited in startup script _initial.js
@@ -124,4 +140,11 @@ ServerEvents.recipes(event => {
     event.remove({ output: global.manualUnification })
     event.remove({ output: global.nuclearcraftFuelPattern })
     event.remove({ output: global.nuclearcraftMaterialPattern })
+
+    // Tags cannot be removed from items in HammerLib (see https://github.com/dragon-forge/HammerLib/issues/71).
+    // Thus, we replace the input of any recipe that uses one of the tags of those items with the corresponding GT item.
+    let hammerLibGears = ["iron", "diamond"]
+    hammerLibGears.forEach(material => {
+        event.replaceInput({ input: `#forge:gears/${material}` }, `#forge:gears/${material}`, `gtceu:${material}_gear`)
+    })
 })
