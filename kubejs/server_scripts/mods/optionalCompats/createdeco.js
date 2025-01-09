@@ -2,7 +2,7 @@ if (Platform.isLoaded('createdeco')) {
   console.log("createdeco found and scripts loaded")
   ServerEvents.recipes(event => {
     function sheets(output, sheetsInput) {
-      event.shaped('createdeco:' + output, [
+      event.shaped(`createdeco:${output}`, [
         'H',
         'I',
         'I'
@@ -11,23 +11,23 @@ if (Platform.isLoaded('createdeco')) {
         I: sheetsInput
       })
 
-      event.recipes.gtceu.forge_hammer(output + '_sheet')
-        .itemInputs('3x ' + sheetsInput)
-        .itemOutputs('2x createdeco:' + output)
+      event.recipes.gtceu.forge_hammer(`${output}_sheet`)
+        .itemInputs(`3x ${sheetsInput}`)
+        .itemOutputs(`2x createdeco:${output}`)
         .duration(56)
         .EUt(16)
 
-      event.recipes.gtceu.bender(output + '_sheet')
+      event.recipes.gtceu.bender(`${output}_sheet`)
         .itemInputs(sheetsInput)
-        .itemOutputs('createdeco:' + output)
+        .itemOutputs(`createdeco:${output}`)
         .circuit(1)
         .duration(56)
         .EUt(24)
 
-      event.recipes.gtceu.extruder(output + '_sheet')
+      event.recipes.gtceu.extruder(`${output}_sheet`)
         .itemInputs(sheetsInput)
         .notConsumable('gtceu:plate_extruder_mold')
-        .itemOutputs('createdeco:' + output)
+        .itemOutputs(`createdeco:${output}`)
         .duration(56)
         .EUt(56)
     }
@@ -49,8 +49,8 @@ if (Platform.isLoaded('createdeco')) {
 
     function decor(sheet, ingot, bars, decorOutput, block) {
       // Windows
-      event.remove({ output: 'createdeco:' + decorOutput + '_window' })
-      event.shaped('2x createdeco:' + decorOutput + '_window', [
+      event.remove({ output: `createdeco:${decorOutput}_window` })
+      event.shaped(`2x createdeco:${decorOutput}_window`, [
         ' I ',
         'IGI'
       ], {
@@ -58,8 +58,8 @@ if (Platform.isLoaded('createdeco')) {
         G: 'minecraft:glass'
       })
       // Overlay
-      event.remove({ output: 'createdeco:' + decorOutput + '_bars_overlay' })
-      event.shaped('8x createdeco:' + decorOutput + '_bars_overlay', [
+      event.remove({ output: `createdeco:${decorOutput}_bars_overlay` })
+      event.shaped(`8x createdeco:${decorOutput}_bars_overlay`, [
         ' H ',
         'SSS',
         'SSS'
@@ -67,15 +67,15 @@ if (Platform.isLoaded('createdeco')) {
         S: sheet,
         H: '#forge:tools/hammers'
       })
-      event.recipes.gtceu.assembler('createdeco:' + decorOutput + '_bars_overlay')
-        .itemInputs('3x ' + sheet)
-        .itemOutputs('4x createdeco:' + decorOutput + '_bars_overlay')
+      event.recipes.gtceu.assembler(`createdeco:${decorOutput}_bars_overlay`)
+        .itemInputs(`3x ${sheet}`)
+        .itemOutputs(`4x createdeco:${decorOutput}_bars_overlay`)
         .circuit(3)
         .duration(300)
         .EUt(4)
       // Mesh
-      event.remove({ output: 'createdeco:' + decorOutput + '_mesh_fence' })
-      event.shaped('8x createdeco:' + decorOutput + '_mesh_fence', [
+      event.remove({ output: `createdeco:${decorOutput}_mesh_fence` })
+      event.shaped(`8x createdeco:${decorOutput}_mesh_fence`, [
         ' H ',
         'SsS',
         'SsS'
@@ -84,16 +84,16 @@ if (Platform.isLoaded('createdeco')) {
         s: '#forge:string',
         H: '#forge:tools/hammers'
       })
-      event.recipes.gtceu.assembler('createdeco:' + decorOutput + '_mesh_fence')
-        .itemInputs('2x ' + sheet)
+      event.recipes.gtceu.assembler(`createdeco:${decorOutput}_mesh_fence`)
+        .itemInputs(`2x ${sheet}`)
         .itemInputs('#forge:string')
-        .itemOutputs('4x createdeco:' + decorOutput + '_mesh_fence')
+        .itemOutputs(`4x createdeco:${decorOutput}_mesh_fence`)
         .circuit(32)
         .duration(300)
         .EUt(4)
       // Catwalk
-      event.remove({ output: 'createdeco:' + decorOutput + '_catwalk' })
-      event.shaped('4x createdeco:' + decorOutput + '_catwalk', [
+      event.remove({ output: `createdeco:${decorOutput}_catwalk` })
+      event.shaped(`4x createdeco:${decorOutput}_catwalk`, [
         'sSH',
         'SBS',
         'DSs'
@@ -104,35 +104,35 @@ if (Platform.isLoaded('createdeco')) {
         H: '#forge:tools/hammers',
         D: '#forge:tools/screwdrivers'
       })
-      event.recipes.gtceu.assembler('createdeco:' + decorOutput + '_catwalk')
-        .itemInputs('4x ' + sheet)
+      event.recipes.gtceu.assembler(`createdeco:${decorOutput}_catwalk`)
+        .itemInputs(`4x ${sheet}`)
         .itemInputs(bars)
-        .itemOutputs('4x createdeco:' + decorOutput + '_catwalk')
+        .itemOutputs(`4x createdeco:${decorOutput}_catwalk`)
         .circuit(31)
         .duration(300)
         .EUt(4)
       // Catwalk Stairs
-      event.remove({ output: 'createdeco:' + decorOutput + '_catwalk_stairs' })
-      event.shaped('2x createdeco:' + decorOutput + '_catwalk_stairs', [
+      event.remove({ output: `createdeco:${decorOutput}_catwalk_stairs` })
+      event.shaped(`2x createdeco:${decorOutput}_catwalk_stairs`, [
         '  H',
         'DCs',
         'sBC'
       ], {
         B: bars,
-        C: 'createdeco:' + decorOutput + '_catwalk',
+        C: `createdeco:${decorOutput}_catwalk`,
         s: '#forge:screws/iron',
         H: '#forge:tools/hammers',
         D: '#forge:tools/screwdrivers'
       })
-      event.recipes.gtceu.bender('createdeco:' + decorOutput + '_catwalk_stairs')
-        .itemInputs('createdeco:' + decorOutput + '_catwalk')
-        .itemOutputs('createdeco:' + decorOutput + '_catwalk_stairs')
+      event.recipes.gtceu.bender(`createdeco:${decorOutput}_catwalk_stairs`)
+        .itemInputs(`createdeco:${decorOutput}_catwalk`)
+        .itemOutputs(`createdeco:${decorOutput}_catwalk_stairs`)
         .circuit(1)
         .duration(240)
         .EUt(24)
       // Catwalk Railing
-      event.remove({ output: 'createdeco:' + decorOutput + '_catwalk_railing' })
-      event.shaped('4x createdeco:' + decorOutput + '_catwalk_railing', [
+      event.remove({ output: `createdeco:${decorOutput}_catwalk_railing` })
+      event.shaped(`4x createdeco:${decorOutput}_catwalk_railing`, [
         'sDs',
         'SSS',
         'BHB'
@@ -143,31 +143,31 @@ if (Platform.isLoaded('createdeco')) {
         H: '#forge:tools/hammers',
         D: '#forge:tools/screwdrivers'
       })
-      event.recipes.gtceu.assembler('createdeco:' + decorOutput + '_catwalk_railing')
-        .itemInputs('2x ' + bars)
-        .itemInputs('2x ' + sheet)
-        .itemOutputs('4x createdeco:' + decorOutput + '_catwalk_railing')
+      event.recipes.gtceu.assembler(`createdeco:${decorOutput}_catwalk_railing`)
+        .itemInputs(`2x ${bars}`)
+        .itemInputs(`2x ${sheet}`)
+        .itemOutputs(`4x createdeco:${decorOutput}_catwalk_railing`)
         .circuit(30)
         .duration(300)
         .EUt(4)
       // Support Wedges
-      event.remove({ output: 'createdeco:' + decorOutput + '_support_wedge' })
-      event.shaped('3x createdeco:' + decorOutput + '_support_wedge', [
+      event.remove({ output: `createdeco:${decorOutput}_support_wedge` })
+      event.shaped(`3x createdeco:${decorOutput}_support_wedge`, [
         'SS',
         'HS'
       ], {
         S: sheet,
         H: '#forge:tools/hammers'
       })
-      event.recipes.gtceu.bender('createdeco:' + decorOutput + '_support_wedge')
+      event.recipes.gtceu.bender(`createdeco:${decorOutput}_support_wedge`)
         .itemInputs(sheet)
-        .itemOutputs('createdeco:' + decorOutput + '_support_wedge')
+        .itemOutputs(`createdeco:${decorOutput}_support_wedge`)
         .circuit(32)
         .duration(240)
         .EUt(24)
       // Train Hull
-      event.remove({ output: 'createdeco:' + decorOutput + '_hull' })
-      event.shaped('createdeco:' + decorOutput + '_hull', [
+      event.remove({ output: `createdeco:${decorOutput}_hull` })
+      event.shaped(`createdeco:${decorOutput}_hull`, [
         'HS ',
         'SbS',
         ' SF'
@@ -178,8 +178,8 @@ if (Platform.isLoaded('createdeco')) {
         F: '#forge:tools/files'
       })
       // Support
-      event.remove({ output: 'createdeco:' + decorOutput + '_support' })
-      event.shaped('4x createdeco:' + decorOutput + '_support', [
+      event.remove({ output: `createdeco:${decorOutput}_support` })
+      event.shaped(`4x createdeco:${decorOutput}_support`, [
         'IBI',
         'BHB',
         'IBI'
@@ -188,19 +188,19 @@ if (Platform.isLoaded('createdeco')) {
         B: bars,
         H: '#forge:tools/hammers'
       })
-      event.recipes.gtceu.assembler('createdeco:' + decorOutput + '_support')
+      event.recipes.gtceu.assembler(`createdeco:${decorOutput}_support`)
         .itemInputs(bars)
         .itemInputs(ingot)
-        .itemOutputs('2x createdeco:' + decorOutput + '_support')
+        .itemOutputs(`2x createdeco:${decorOutput}_support`)
         .circuit(32)
         .duration(300)
         .EUt(4)
       // Lamps
-      event.remove({ output: 'createdeco:yellow_' + decorOutput + '_lamp' })
-      event.remove({ output: 'createdeco:red_' + decorOutput + '_lamp' })
-      event.remove({ output: 'createdeco:green_' + decorOutput + '_lamp' })
-      event.remove({ output: 'createdeco:blue_' + decorOutput + '_lamp' })
-      event.shaped('createdeco:yellow_' + decorOutput + '_lamp', [
+      event.remove({ output: `createdeco:yellow_${decorOutput}_lamp` })
+      event.remove({ output: `createdeco:red_${decorOutput}_lamp` })
+      event.remove({ output: `createdeco:green_${decorOutput}_lamp` })
+      event.remove({ output: `createdeco:blue_${decorOutput}_lamp` })
+      event.shaped(`createdeco:yellow_${decorOutput}_lamp`, [
         ' I ',
         'WLD',
         'sSs'
@@ -212,13 +212,13 @@ if (Platform.isLoaded('createdeco')) {
         D: '#forge:tools/screwdrivers',
         L: 'minecraft:torch'
       })
-      event.recipes.gtceu.assembler('createdeco:yellow_' + decorOutput + '_lamp')
-        .itemInputs('2x ' + ingot)
+      event.recipes.gtceu.assembler(`createdeco:yellow_${decorOutput}_lamp`)
+        .itemInputs(`2x ${ingot}`)
         .itemInputs('minecraft:torch')
-        .itemOutputs('createdeco:yellow_' + decorOutput + '_lamp')
+        .itemOutputs(`createdeco:yellow_${decorOutput}_lamp`)
         .duration(300)
         .EUt(7)
-      event.shaped('createdeco:red_' + decorOutput + '_lamp', [
+      event.shaped(`createdeco:red_${decorOutput}_lamp`, [
         ' I ',
         'WLD',
         'sSs'
@@ -230,13 +230,13 @@ if (Platform.isLoaded('createdeco')) {
         D: '#forge:tools/screwdrivers',
         L: 'minecraft:redstone_torch'
       })
-      event.recipes.gtceu.assembler('createdeco:red_' + decorOutput + '_lamp')
-        .itemInputs('2x ' + ingot)
+      event.recipes.gtceu.assembler(`createdeco:red_${decorOutput}_lamp`)
+        .itemInputs(`2x ${ingot}`)
         .itemInputs('minecraft:redstone_torch')
-        .itemOutputs('createdeco:red_' + decorOutput + '_lamp')
+        .itemOutputs(`createdeco:red_${decorOutput}_lamp`)
         .duration(300)
         .EUt(7)
-      event.shaped('createdeco:green_' + decorOutput + '_lamp', [
+      event.shaped(`createdeco:green_${decorOutput}_lamp`, [
         ' I ',
         'WLD',
         'sSs'
@@ -248,13 +248,13 @@ if (Platform.isLoaded('createdeco')) {
         D: '#forge:tools/screwdrivers',
         L: 'minecraft:glow_berries'
       })
-      event.recipes.gtceu.assembler('createdeco:green_' + decorOutput + '_lamp')
-        .itemInputs('2x ' + ingot)
+      event.recipes.gtceu.assembler(`createdeco:green_${decorOutput}_lamp`)
+        .itemInputs(`2x ${ingot}`)
         .itemInputs('minecraft:glow_berries')
-        .itemOutputs('createdeco:green_' + decorOutput + '_lamp')
+        .itemOutputs(`createdeco:green_${decorOutput}_lamp`)
         .duration(300)
         .EUt(7)
-      event.shaped('createdeco:blue_' + decorOutput + '_lamp', [
+      event.shaped(`createdeco:blue_${decorOutput}_lamp`, [
         ' I ',
         'WLD',
         'sSs'
@@ -266,15 +266,15 @@ if (Platform.isLoaded('createdeco')) {
         D: '#forge:tools/screwdrivers',
         L: 'minecraft:soul_torch'
       })
-      event.recipes.gtceu.assembler('createdeco:blue_' + decorOutput + '_lamp')
-        .itemInputs('2x ' + ingot)
+      event.recipes.gtceu.assembler(`createdeco:blue_${decorOutput}_lamp`)
+        .itemInputs(`2x ${ingot}`)
         .itemInputs('minecraft:soul_torch')
-        .itemOutputs('createdeco:blue_' + decorOutput + '_lamp')
+        .itemOutputs(`createdeco:blue_${decorOutput}_lamp`)
         .duration(300)
         .EUt(7)
       // Sheetmetal
-      event.remove({ output: 'createdeco:' + decorOutput + '_sheet_metal' })
-      event.shaped('4x createdeco:' + decorOutput + '_sheet_metal', [
+      event.remove({ output: `createdeco:${decorOutput}_sheet_metal` })
+      event.shaped(`4x createdeco:${decorOutput}_sheet_metal`, [
         ' S ',
         'SHS',
         ' S '
@@ -282,9 +282,9 @@ if (Platform.isLoaded('createdeco')) {
         S: sheet,
         H: '#forge:tools/hammers',
       })
-      event.recipes.gtceu.assembler('createdeco:' + decorOutput + '_sheet_metal')
+      event.recipes.gtceu.assembler(`createdeco:${decorOutput}_sheet_metal`)
         .itemInputs(sheet)
-        .itemOutputs('createdeco:' + decorOutput + '_sheet_metal')
+        .itemOutputs(`createdeco:${decorOutput}_sheet_metal`)
         .circuit(1)
         .duration(100)
         .EUt(4)
@@ -299,8 +299,8 @@ if (Platform.isLoaded('createdeco')) {
 
     function ironlessDecor(sheet, ingot, decorOutput) {
       // Bars
-      event.remove({ output: 'createdeco:' + decorOutput + '_bars' })
-      event.shaped('8x createdeco:' + decorOutput + '_bars', [
+      event.remove({ output: `createdeco:${decorOutput}_bars` })
+      event.shaped(`8x createdeco:${decorOutput}_bars`, [
         ' H ',
         'SSS',
         'SSS'
@@ -308,23 +308,23 @@ if (Platform.isLoaded('createdeco')) {
         S: ingot,
         H: '#forge:tools/hammers'
       })
-      event.recipes.gtceu.assembler('createdeco:' + decorOutput + '_bars')
-        .itemInputs('3x ' + ingot)
-        .itemOutputs('4x createdeco:' + decorOutput + '_bars')
+      event.recipes.gtceu.assembler(`createdeco:${decorOutput}_bars`)
+        .itemInputs(`3x ${ingot}`)
+        .itemOutputs(`4x createdeco:${decorOutput}_bars`)
         .circuit(3)
         .duration(300)
         .EUt(4)
       // Trap Doors
-      event.recipes.gtceu.assembler('createdeco:' + decorOutput + '_trapdoor')
-        .itemInputs('4x ' + sheet)
-        .itemOutputs('createdeco:' + decorOutput + '_trapdoor')
+      event.recipes.gtceu.assembler(`createdeco:${decorOutput}_trapdoor`)
+        .itemInputs(`4x ${sheet}`)
+        .itemOutputs(`createdeco:${decorOutput}_trapdoor`)
         .circuit(4)
         .duration(100)
         .EUt(16)
       // Doors
-      event.recipes.gtceu.assembler('createdeco:' + decorOutput + '_door')
-        .itemInputs('6x ' + sheet)
-        .itemOutputs('createdeco:' + decorOutput + '_door')
+      event.recipes.gtceu.assembler(`createdeco:${decorOutput}_door`)
+        .itemInputs(`6x ${sheet}`)
+        .itemOutputs(`createdeco:${decorOutput}_door`)
         .circuit(4)
         .duration(100)
         .EUt(16)
@@ -337,10 +337,10 @@ if (Platform.isLoaded('createdeco')) {
     ironlessDecor('#forge:plates/zinc', '#forge:ingots/zinc', 'zinc')
 
     function bricks(forEach) {
-      event.recipes.gtceu.assembler('createdeco:mossy_' + forEach + '_bricks')
-        .itemInputs('createdeco:' + forEach + '_bricks')
+      event.recipes.gtceu.assembler(`createdeco:mossy_${forEach}_bricks`)
+        .itemInputs(`createdeco:${forEach}_bricks`)
         .itemInputs('minecraft:vine')
-        .itemOutputs('createdeco:mossy_' + forEach + '_bricks')
+        .itemOutputs(`createdeco:mossy_${forEach}_bricks`)
         .duration(40)
         .EUt(1)
     }

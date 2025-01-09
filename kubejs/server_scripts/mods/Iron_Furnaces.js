@@ -10,7 +10,11 @@ ServerEvents.recipes(event => {
     ];
 
     furnaces.forEach(([furnace, mat, base]) => {
-        event.shaped(Item.of("ironfurnaces:" + furnace), ["AAA", "BAB", "AAA"], {
+        event.shaped(Item.of(`ironfurnaces:${furnace}`), [
+            "AAA",
+            "BAB",
+            "AAA"
+        ], {
             A: mat,
             B: base,
         });
@@ -71,7 +75,7 @@ ServerEvents.recipes(event => {
     ]
 
     furnaceupgrade.forEach(([tier, mat1]) => {
-        event.recipes.gtceu.assembler('kubejs:' + mat1 + '_to_' + tier + '_furnace')
+        event.recipes.gtceu.assembler(`kubejs:${mat1}_to_${tier}_furnace`)
             .itemInputs(`ironfurnaces:${mat1}_furnace`, `4x gtceu:${tier}_plate`)
             .itemOutputs(`ironfurnaces:${tier}_furnace`)
             .duration(300)
@@ -103,7 +107,7 @@ ServerEvents.recipes(event => {
         let mat2 = stonefurnaceupgrade[index - 1];
         let mat3 = stonefurnaceupgrade[index - 2];
 
-        event.recipes.gtceu.assembler('kubejs:stone_to_' + mat1 + '_furnace')
+        event.recipes.gtceu.assembler(`kubejs:stone_to_${mat1}_furnace`)
             .itemInputs('minecraft:furnace', `4x gtceu:${mat1}_plate`, `4x gtceu:${mat2}_plate`, `2x gtceu:${mat3}_plate`)
             .itemOutputs(`ironfurnaces:${mat1}_furnace`)
             .duration(300)

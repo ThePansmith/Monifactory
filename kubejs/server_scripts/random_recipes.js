@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
     ]
 
     for (const [mB, duration, id] of cryolobusFuels) {
-        event.recipes.gtceu.electric_blast_furnace("cryolobus_" + id.replace(/\W/g, ''))
+        event.recipes.gtceu.electric_blast_furnace(`cryolobus_${id.replace(/\W/g, '')}`)
             .itemInputs("gtceu:cryolobus_dust")
             .inputFluids(`${id} ${mB}`)
             .itemOutputs("gtceu:hot_cryolobus_ingot")
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
             .blastFurnaceTemp(6800)
             .EUt(30720)
 
-        event.recipes.gtceu.electric_blast_furnace("cryolobus_scale_" + id.replace(/\W/g, ''))
+        event.recipes.gtceu.electric_blast_furnace(`cryolobus_scale_${id.replace(/\W/g, '')}`)
             .itemInputs("4x kubejs:warden_horn")
             .inputFluids(`${id} ${mB * 4}`)
             .itemOutputs("2x gtceu:hot_cryolobus_ingot")
@@ -582,12 +582,12 @@ ServerEvents.recipes(event => {
     // Stonecut p2p tunnels, attunement sucks
     const p2p = ["redstone", "item", "fluid", "fe", "light"]
     p2p.forEach(type => {
-        event.stonecutting('ae2:' + type + '_p2p_tunnel', 'ae2:me_p2p_tunnel')
+        event.stonecutting(`ae2:${type}_p2p_tunnel`, 'ae2:me_p2p_tunnel')
     })
     event.stonecutting('mae2:pattern_p2p_tunnel', 'ae2:me_p2p_tunnel')
     const multi_p2p = ["pattern", "redstone", "fluid", "fe"]
     multi_p2p.forEach(type => {
-        event.stonecutting('mae2:' + type + '_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel')
+        event.stonecutting(`mae2:${type}_multi_p2p_tunnel`, 'mae2:item_multi_p2p_tunnel')
     })
 
     // Stonecutting CCI blocks

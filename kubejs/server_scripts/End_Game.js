@@ -75,7 +75,6 @@ ServerEvents.recipes(event => {
         .EUt(129)
 
     // Atomic Casings
-
     event.shaped('2x gtceu:atomic_casing', [
         'PHP',
         'PFP',
@@ -139,6 +138,7 @@ ServerEvents.recipes(event => {
         G: 'redstone_arsenal:flux_gem',
         P: 'gtceu:electrum_flux_plate'
     }).id('redstone_arsenal:materials/flux_plating')
+
     event.recipes.gtceu.omnic_forge('kubejs:flux_plating_assembly')
         .itemInputs('redstone_arsenal:flux_gem', '4x gtceu:electrum_flux_plate')
         .itemOutputs('4x redstone_arsenal:flux_plating')
@@ -307,7 +307,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:ev_world_accelerator')
         .duration(6000)
         .EUt(122880)
-
         .stationResearch(b => b
             .researchStack('gtceu:hv_world_accelerator')
             .CWUt(32, 128000)

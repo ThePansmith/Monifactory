@@ -298,8 +298,8 @@ ServerEvents.recipes(event => {
     ]
     for (let index = 0; index < storage_component_ingredients.length; index++) {
         let curTier;
-        if (index < 4) curTier = Item.of('ae2:cell_component_' + storage_tiers[index + 1])
-        else curTier = Item.of('megacells:cell_component_' + storage_tiers[index + 1])
+        if (index < 4) curTier = Item.of(`ae2:cell_component_${storage_tiers[index + 1]}`)
+        else curTier = Item.of(`megacells:cell_component_${storage_tiers[index + 1]}`)
 
         let curIngredients = storage_component_ingredients[index];
 
@@ -308,8 +308,8 @@ ServerEvents.recipes(event => {
         else toRemove = `megacells:cells/cell_component_${storage_tiers[index + 1]}`
 
         let prevTier;
-        if (index <= 4) prevTier = Item.of('ae2:cell_component_' + storage_tiers[index])
-        else prevTier = Item.of('megacells:cell_component_' + storage_tiers[index])
+        if (index <= 4) prevTier = Item.of(`ae2:cell_component_${storage_tiers[index]}`)
+        else prevTier = Item.of(`megacells:cell_component_${storage_tiers[index]}`)
 
         event.remove({ id: toRemove })
         event.shaped(
@@ -320,9 +320,9 @@ ServerEvents.recipes(event => {
         ], {
             A: curIngredients[1],
             B: curIngredients[2],
-            C: '#gtceu:circuits/' + curIngredients[0],
+            C: `#gtceu:circuits/${curIngredients[0]}`,
             S: Item.of(prevTier)
-        }).id('kubejs:ae2/storage_component_' + storage_tiers[index + 1])
+        }).id(`kubejs:ae2/storage_component_${storage_tiers[index + 1]}`)
 
         //Cheaper ramp up to reduce exponential effect
         event.recipes.gtceu.assembler(`kubejs:ae2/${storage_tiers[index + 1]}_storage_assembler`)
@@ -330,7 +330,7 @@ ServerEvents.recipes(event => {
                 Item.of(prevTier, 2),
                 Item.of(curIngredients[1], 2),
                 Item.of(curIngredients[2], 1),
-                '#gtceu:circuits/' + curIngredients[0]
+                `#gtceu:circuits/${curIngredients[0]}`
             )
             .inputFluids(Fluid.of(curIngredients[3], 144 * curIngredients[4]))
             .itemOutputs(curTier)
@@ -342,10 +342,9 @@ ServerEvents.recipes(event => {
     // 1K Storage Component recipes
     event.remove({ id: 'ae2:network/cells/item_storage_components_cell_1k_part' })
     for (let index = 0; index < 5; index++) {
-        let circuit = '#gtceu:circuits/' + GTValues.VN[index + 1].toLowerCase()
+        let circuit = `#gtceu:circuits/${GTValues.VN[index + 1].toLowerCase()}`
         let glass = index == 0 ? 'minecraft:glass' : 'gtceu:tempered_glass'
-        event.shaped(
-            Item.of('ae2:cell_component_1k', Math.pow(2, index)),
+        event.shaped(Item.of('ae2:cell_component_1k', Math.pow(2, index)),
             [
                 'ABA',
                 'BCB',
@@ -355,13 +354,12 @@ ServerEvents.recipes(event => {
             B: 'gtceu:red_alloy_plate',
             C: circuit
         }
-        ).id('kubejs:ae2/storage_component_1k_' + Math.pow(2, index))
+        ).id(`kubejs:ae2/storage_component_1k_${Math.pow(2, index)}`)
     }
 
     // Wireless Receiver
     event.remove({ id: 'ae2:network/wireless_part' })
-    event.shaped(
-        Item.of('ae2:wireless_receiver'), [
+    event.shaped(Item.of('ae2:wireless_receiver'), [
         ' A ',
         'BCB',
         ' B '

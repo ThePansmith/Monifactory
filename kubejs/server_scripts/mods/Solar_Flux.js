@@ -49,15 +49,15 @@ ServerEvents.recipes(event => {
         if (index == 0) {
             photovoltaic = 'gtceu:tempered_glass'
         } else {
-            photovoltaic = 'solarflux:photovoltaic_cell_' + index;
+            photovoltaic = `solarflux:photovoltaic_cell_${index}`;
         }
         event.shaped(
-            '2x solarflux:sp_' + (index + 2), [
+            `2x solarflux:sp_${index + 2}`, [
             'SCS',
             'WBW',
             'PEP'
         ], {
-            S: 'solarflux:sp_' + (index + 1),
+            S: `solarflux:sp_${index + 1}`,
             C: photovoltaic,
             W: ingredients[0],
             B: ingredients[1],
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         let assemblerInputs;
         if (ingredients[0] == ingredients[2]) {
             assemblerInputs = [
-                '2x solarflux:sp_' + (index + 1),
+                `2x solarflux:sp_${index + 1}`,
                 Item.of(photovoltaic, 1),
                 Item.of(ingredients[0], 4),
                 Item.of(ingredients[1], 1),
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
             ]
         } else {
             assemblerInputs = [
-                '2x solarflux:sp_' + (index + 1),
+                `2x solarflux:sp_${index + 1}`,
                 Item.of(photovoltaic, 1),
                 Item.of(ingredients[0], 2),
                 Item.of(ingredients[1], 1),
@@ -85,9 +85,9 @@ ServerEvents.recipes(event => {
                 Item.of(ingredients[3], 1)
             ]
         }
-        event.recipes.gtceu.assembler('sp_' + (index + 2))
+        event.recipes.gtceu.assembler(`sp_${index + 2}`)
             .itemInputs(assemblerInputs)
-            .itemOutputs('2x solarflux:sp_' + (index + 2))
+            .itemOutputs(`2x solarflux:sp_${index + 2}`)
             .duration(2400)
             .EUt(GTValues.VA[index])
     })

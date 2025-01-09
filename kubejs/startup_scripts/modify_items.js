@@ -65,8 +65,8 @@ ItemEvents.modification(event => {
         'wire_cutter'
     ]
     toolTypes.forEach(type => {
-        event.modify('kubejs:infinity_' + type, item => { item.craftingRemainder = Item.of('kubejs:infinity_' + type).item })
-        event.modify('kubejs:ultimate_' + type, item => { item.craftingRemainder = Item.of('kubejs:ultimate_' + type).item })
+        event.modify(`kubejs:infinity_${type}`, item => { item.craftingRemainder = Item.of(`kubejs:infinity_${type}`).item })
+        event.modify(`kubejs:ultimate_${type}`, item => { item.craftingRemainder = Item.of(`kubejs:ultimate_${type}`).item })
     })
 })
 

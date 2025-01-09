@@ -77,10 +77,10 @@ ServerEvents.recipes(event => {
             ],
             "key": {
                 "N": {
-                    "tag": ('forge:nuggets/' + material[1])
+                    "tag": (`forge:nuggets/${material[1]}`)
                 },
                 "I": {
-                    "tag": ('forge:ingots/' + material[2]),
+                    "tag": (`forge:ingots/${material[2]}`),
                 },
                 "C": {
                     "item": inputBackpack
@@ -121,15 +121,15 @@ ServerEvents.recipes(event => {
             let toTierName = material[0];
 
             event.shaped(
-                'sophisticatedstorage:' + fromTierName + 'to_' + toTierName + 'tier_upgrade', [
+                `sophisticatedstorage:${fromTierName}to_${toTierName}tier_upgrade`, [
                 "IPI",
                 "ICI",
                 "IPI"
             ], {
-                I: '#forge:ingots/' + material[1],
-                P: '#forge:plates/' + material[2],
-                C: (fromTierName == prevTierName ? 'minecraft:redstone_torch' : 'sophisticatedstorage:' + fromTierName + 'to_' + prevTierName + 'tier_upgrade')
-            }).id('sophisticatedstorage:' + fromTierName + 'to_' + toTierName + 'tier_upgrade')
+                I: `#forge:ingots/${material[1]}`,
+                P: `#forge:plates/${material[2]}`,
+                C: (fromTierName == prevTierName ? 'minecraft:redstone_torch' : `sophisticatedstorage:${fromTierName}to_${prevTierName}tier_upgrade`)
+            }).id(`sophisticatedstorage:${fromTierName}to_${toTierName}tier_upgrade`)
         }
 
         // Barrel-in-table upgrades

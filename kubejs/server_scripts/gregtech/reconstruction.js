@@ -30,8 +30,8 @@ ServerEvents.recipes(event => {
 
     const crystals = ['enori', 'void', 'palis', 'diamatine', 'restonia', 'emeradic']
     crystals.forEach(crystal => {
-        event.remove({ id: 'gtceu:shaped/gear_' + crystal })
-        event.remove({ id: 'gtceu:shaped/gear_' + crystal + '_empowered' })
+        event.remove({ id: `gtceu:shaped/gear_${crystal}` })
+        event.remove({ id: `gtceu:shaped/gear_${crystal}_empowered` })
     })
 
     // Black Quartz

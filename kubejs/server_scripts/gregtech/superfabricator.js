@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     function fabricator(prediction, circuit, output) {
         event.recipes.gtceu.loot_superfabricator(`kubejs:${prediction}_${circuit}`)
-            .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + prediction + '"}}').weakNBT())
+            .itemInputs(Item.of('hostilenetworks:prediction', `{data_model:{id:"hostilenetworks:${prediction}"}}`).weakNBT())
             .circuit(circuit)
             .itemOutputs(output)
             .duration(60) // same for all recipes

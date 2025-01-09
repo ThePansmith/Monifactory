@@ -226,11 +226,11 @@ ServerEvents.recipes(event => {
             ]
 
             if (modeldata[3]) {
-                recipeIngredients.push('7x hostilenetworks:' + modeldata[2] + '_prediction')
+                recipeIngredients.push(`7x hostilenetworks:${modeldata[2]}_prediction`)
             }
 
             event.shapeless(
-                Item.of('hostilenetworks:data_model', '{data_model:{data:6,id:\"hostilenetworks:' + modeldata[0] + '\"}}'),
+                Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:\"hostilenetworks:${modeldata[0]}\"}}`),
                 recipeIngredients
             )
         })

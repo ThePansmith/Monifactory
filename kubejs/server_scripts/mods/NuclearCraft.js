@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
 
     function decomp(name, fuel, ing1, ing2) {
-        event.recipes.gtceu.thermal_centrifuge(name + "decomp")
+        event.recipes.gtceu.thermal_centrifuge(`kubejs:${name}_decomp`)
             .itemInputs(fuel)
             .itemOutputs(ing1, ing2)
             .duration(3200)
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     }
 
     function decomp_single(name, fuel, ing) {
-        event.recipes.gtceu.thermal_centrifuge(name + "decomp")
+        event.recipes.gtceu.thermal_centrifuge(`kubejs:${name}_decomp`)
             .itemInputs(fuel)
             .itemOutputs(ing)
             .duration(3200)
@@ -56,8 +56,8 @@ ServerEvents.recipes(event => {
 
     function decompdepleted(fuelType, out, out2, out3, out4, voltageTier) {
 
-        event.recipes.gtceu.centrifuge(fuelType + "decompdepleted")
-            .itemInputs('nuclearcraft:depleted_fuel_' + fuelType)
+        event.recipes.gtceu.centrifuge(`${fuelType}decompdepleted`)
+            .itemInputs(`nuclearcraft:depleted_fuel_${fuelType}`)
             .itemOutputs(out, out2, out3, out4)
             .duration(400)
             .EUt(GTValues.VHA[voltageTier])

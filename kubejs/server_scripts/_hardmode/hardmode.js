@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     ]
 
     for (const [input, output] of xpjuice) {
-      event.recipes.gtceu.mixer('kubejs:xpjuice_' + output)
+      event.recipes.gtceu.mixer(`kubejs:xpjuice_${output}`)
         .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
         .itemInputs(input)
         .outputFluids(Fluid.of('enderio:xp_juice', output))

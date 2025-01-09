@@ -7,7 +7,7 @@ StartupEvents.registry('item', event => {
 
     // Regular Microminers
     for (let index = 1; index <= 12; index++) {
-        event.create('microminer_t' + index).maxStackSize(16).texture('kubejs:item/microverse/microminer_t' + index)
+        event.create(`microminer_t${index}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${index}`)
     }
 
 
