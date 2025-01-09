@@ -11,21 +11,19 @@ ServerEvents.recipes(event => {
         C: 'gtceu:niobium_titanium_single_cable',
         L: 'gtceu:iv_field_generator',
         H: 'gtceu:hsse_frame'
-
     }).id('kubejs:shaped/discharger')
 
     event.recipes.gtceu.assembly_line('gtceu:sculk_biocharger')
-            .itemInputs('gtceu:discharger', '4x #gtceu:circuits/uev', '4x extendedcrafting:auto_flux_crafter', '16x kubejs:dischargement_core', '24x gtceu:polyethyl_cyanoacrylate_plate')
-            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
-            .itemOutputs('gtceu:sculk_biocharger')
-            .duration(3000)
-            .EUt(1966000)
-
-            .stationResearch(b => b
-                .researchStack('gtceu:discharger')
-                .CWUt(160, 1024000)
-                .EUt(1200000)
-            )
+        .itemInputs('gtceu:discharger', '4x #gtceu:circuits/uev', '4x extendedcrafting:auto_flux_crafter', '16x kubejs:dischargement_core', '24x gtceu:polyethyl_cyanoacrylate_plate')
+        .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
+        .itemOutputs('gtceu:sculk_biocharger')
+        .duration(3000)
+        .EUt(1966000)
+        .stationResearch(b => b
+            .researchStack('gtceu:discharger')
+            .CWUt(160, 1024000)
+            .EUt(1200000)
+        )
 
     event.recipes.gtceu.assembler('kubejs:cryolobus_casing')
         .itemInputs('6x gtceu:cryolobus_plate', 'gtceu:cryolobus_frame')
@@ -33,7 +31,6 @@ ServerEvents.recipes(event => {
         .duration(50)
         .circuit(6)
         .EUt(16)
-
 
     function Discharge(id, output, input, refund) {
         event.recipes.gtceu.discharger(`kubejs:${id}`)
@@ -51,7 +48,7 @@ ServerEvents.recipes(event => {
     Discharge('hadal_warp_engine', 'kubejs:hadal_warp_engine', ['gtceu:cryococcus_frame', 'kubejs:warp_engine', 'gtceu:cryococcus_plate', '2x gtceu:cryolobus_plate', 'kubejs:hadal_energy_core', 'gtceu:zpm_field_generator', 'kubejs:abyssal_energy_core', 'kubejs:hadal_shard'], 40000000)
     Discharge('sculk_bioalloy', 'gtceu:sculk_bioalloy_block', ['9x kubejs:animated_bioalloy_pulp', '18x gtceu:electrotine_dust', '1x kubejs:warden_heart', '2x kubejs:abyssal_energy_core'], 10000000)
 
-    event.recipes.gtceu.charger(`kubejs:sculk_core_charge`)
+    event.recipes.gtceu.charger("kubejs:sculk_core_charge")
         .itemInputs(['4x gtceu:cryolobus_ingot', '4x gtceu:tungsten_carbide_ingot', 'minecraft:sculk_catalyst'])
         .itemOutputs('kubejs:sculk_core')
         .EUt(524288)

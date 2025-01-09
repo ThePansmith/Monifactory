@@ -24,14 +24,14 @@ ServerEvents.recipes(event => {
 
     //Remove overlapping raw ore to ingot recipes
     event.remove({ id: "minecraft:nuclearcraft_silver_raw" })
-        //event.remove({ id: "" })
+    //event.remove({ id: "" })
 
     //redstone and lapis ores now drop multiple raw ore per ore block. They are tedious to smelt so we speed them up
     const quickSmelt = (oreName, output) => {
-        event.remove({ id: "gtceu:smelting/smelt_raw_" + oreName + "_ore_to_ingot" })
-        event.remove({ id: "gtceu:blasting/smelt_raw_" + oreName + "_ore_to_ingot" })
-        event.smelting(output, "gtceu:raw_" + oreName).id("gtceu:smelting/smelt_raw_" + oreName + "_ore_to_ingot").cookingTime(50).xp(0.9)
-        event.blasting(output, "gtceu:raw_" + oreName).id("gtceu:blasting/smelt_raw_" + oreName + "_ore_to_ingot").cookingTime(50).xp(0.9)
+        event.remove({ id: `gtceu:smelting/smelt_raw_${oreName}_ore_to_ingot` })
+        event.remove({ id: `gtceu:blasting/smelt_raw_${oreName}_ore_to_ingot` })
+        event.smelting(output, `gtceu:raw_${oreName}`).id(`gtceu:smelting/smelt_raw_${oreName}_ore_to_ingot`).cookingTime(50).xp(0.9)
+        event.blasting(output, `gtceu:raw_${oreName}`).id(`gtceu:blasting/smelt_raw_${oreName}_ore_to_ingot`).cookingTime(50).xp(0.9)
     }
     quickSmelt("redstone", "3x minecraft:redstone")
     quickSmelt("electrotine", "gtceu:electrotine_dust")

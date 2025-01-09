@@ -27,8 +27,7 @@ ServerEvents.recipes(event => {
         G: 'gtceu:zpm_field_generator',
         R: 'gtceu:research_station',
         U: 'gtceu:uv_field_generator'
-    }
-    ).id('kubejs:shaped/subatomic_digital_assembler')
+    }).id('kubejs:shaped/subatomic_digital_assembler')
 
     sda_print('creative_storage_data', 1, 'functionalstorage:max_storage_upgrade', 128)
     sda_print('creative_storage_data', 2, 'megacells:bulk_item_cell', 128)
@@ -66,9 +65,9 @@ ServerEvents.recipes(event => {
         event.shapeless('expatternprovider:infinity_cell', ['kubejs:infinity_cell_base', 'gtceu:fluid_cell']).modifyResult((grid, result) => {
             let item = grid.find('gtceu:fluid_cell')
             if (item.nbt != null && item.nbt.Fluid != null && item.nbt.Fluid.FluidName != null) {
-                return result.withNBT({record:{"#c":"ae2:f",id:item.nbt.Fluid.FluidName}})
+                return result.withNBT({ record: { "#c": "ae2:f", id: item.nbt.Fluid.FluidName } })
             }
-		})
+        })
     }
 
     if (!isNormalMode) {

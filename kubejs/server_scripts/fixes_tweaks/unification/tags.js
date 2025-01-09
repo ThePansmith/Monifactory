@@ -50,7 +50,7 @@ ServerEvents.tags('item', event => {
     event.add('forge:ingots/redstone_alloy', 'gtceu:red_alloy_ingot')
     event.add('forge:ingots/copper_alloy', 'gtceu:electrical_steel_ingot')
 
-    const decorremap = [ ['etrium', 'diamond'], ['desh', 'bronze'], ['ostrum', 'lead'], ['calorite', 'red_alloy']]
+    const decorremap = [['etrium', 'diamond'], ['desh', 'bronze'], ['ostrum', 'lead'], ['calorite', 'red_alloy']]
     decorremap.forEach(([mat, remat]) => {
         event.add(`ad_astra:${mat}_plates`, `gtceu:${remat}_plate`)
         event.add(`ad_astra:${mat}_ingots`, `gtceu:${remat}_ingot`)
@@ -102,9 +102,9 @@ ServerEvents.tags('fluid', event => {
     // removing tags from nc fluids so they stop showing up in ae2 and emi
     // reused code from JEI hiding script
     // get all nc fluids from index
-    let ncFluids = Fluid.getTypes().filter(id=>id.includes("nuclearcraft"))
+    let ncFluids = Fluid.getTypes().filter(id => id.includes("nuclearcraft"))
     // list of used fluids to not remove
-    let ncUsedFluid = ['nuclearcraft:hydrated_gelatin', 'nuclearcraft:gelatin', 'nuclearcraft:sugar', 'nuclearcraft:marshmallow', 'nuclearcraft:cocoa_butter',     'nuclearcraft:chocolate_liquor', 'nuclearcraft:unsweetened_chocolate', 'nuclearcraft:dark_chocolate', 'nuclearcraft:milk_chocolate', 'nuclearcraft:technical_water', 'nuclearcraft:high_pressure_steam', 'nuclearcraft:exhaust_steam']
+    let ncUsedFluid = ['nuclearcraft:hydrated_gelatin', 'nuclearcraft:gelatin', 'nuclearcraft:sugar', 'nuclearcraft:marshmallow', 'nuclearcraft:cocoa_butter', 'nuclearcraft:chocolate_liquor', 'nuclearcraft:unsweetened_chocolate', 'nuclearcraft:dark_chocolate', 'nuclearcraft:milk_chocolate', 'nuclearcraft:technical_water', 'nuclearcraft:high_pressure_steam', 'nuclearcraft:exhaust_steam']
     // remove used fluids from the full list
     ncFluids = ncFluids.filter((el) => !ncUsedFluid.includes(el))
     // loops through the list and hides all the unwanted fluids for nc
@@ -120,7 +120,7 @@ ServerEvents.tags('fluid', event => {
     event.removeAllTagsFrom('thermal:redstone')
     event.removeAllTagsFrom('cofh_core:experience')
 
-    Fluid.getTypes().filter(id=>id.includes("ad_astra")).forEach(id => event.removeAllTagsFrom(id))
+    Fluid.getTypes().filter(id => id.includes("ad_astra")).forEach(id => event.removeAllTagsFrom(id))
     // Rocket Fuels
     event.removeAll('ad_astra:fuel');
     event.add('ad_astra:fuel', 'gtceu:rocket_fuel')

@@ -10,8 +10,8 @@ if (Platform.isLoaded('xnet')) {
     console.log("XNet found, loading compat scripts...")
     ServerEvents.recipes(event => {
         //Remove all recipes from RFToolsBase and XNet
-        event.remove({ mod: 'rftoolsbase'})
-        event.remove({ mod: 'xnet'})
+        event.remove({ mod: 'rftoolsbase' })
+        event.remove({ mod: 'xnet' })
 
         //Add back in RFTools' information screen for the funsies
         event.shapeless('rftoolsbase:information_screen', ['gtceu:computer_monitor_cover']);
@@ -57,11 +57,11 @@ if (Platform.isLoaded('xnet')) {
                 .duration(120)
         })
         event.recipes.gtceu.assembler('xnet:connector_upgrade')
-                .itemOutputs('xnet:connector_upgrade')
-                .itemInputs(['#forge:paper', 'gtceu:diamond_plate', 'gtceu:enori_gear'])
-                .inputFluids(Fluid.of('thermal:ender', 250))
-                .EUt(GTValues.VA[GTValues.MV])
-                .duration(140)
+            .itemOutputs('xnet:connector_upgrade')
+            .itemInputs(['#forge:paper', 'gtceu:diamond_plate', 'gtceu:enori_gear'])
+            .inputFluids(Fluid.of('thermal:ender', 250))
+            .EUt(GTValues.VA[GTValues.MV])
+            .duration(140)
 
         //Routing
         event.recipes.gtceu.assembler('xnet:netcable_routing')
@@ -124,24 +124,24 @@ if (Platform.isLoaded('xnet')) {
             P: '#forge:plates/ender_pearl',
             S: 'gtceu:platinum_single_cable'
         })
-        
+
         //Wireless Routing Antennas
         event.recipes.gtceu.assembler('xnet:antenna')
-                .itemOutputs('xnet:antenna')
-                .itemInputs(['3x #forge:rods/iron', '2x minecraft:iron_bars', 'gtceu:ev_emitter', '3x gtceu:fine_annealed_copper_wire'])
-                .EUt(GTValues.VA[GTValues.EV])
-                .duration(140)
+            .itemOutputs('xnet:antenna')
+            .itemInputs(['3x #forge:rods/iron', '2x minecraft:iron_bars', 'gtceu:ev_emitter', '3x gtceu:fine_annealed_copper_wire'])
+            .EUt(GTValues.VA[GTValues.EV])
+            .duration(140)
         event.recipes.gtceu.assembler('xnet:antenna_base')
-                .itemOutputs('xnet:antenna_base')
-                .itemInputs(['1x #forge:rods/iron', '2x #forge:plates/iron', 'gtceu:ev_emitter', '2x gtceu:fine_annealed_copper_wire'])
-                .EUt(GTValues.VHA[GTValues.EV])
-                .duration(100)
+            .itemOutputs('xnet:antenna_base')
+            .itemInputs(['1x #forge:rods/iron', '2x #forge:plates/iron', 'gtceu:ev_emitter', '2x gtceu:fine_annealed_copper_wire'])
+            .EUt(GTValues.VHA[GTValues.EV])
+            .duration(100)
         event.recipes.gtceu.assembler('xnet:antenna_dish')
-                .itemOutputs('xnet:antenna_dish')
-                .itemInputs(['1x #forge:rods/iron', 'gtceu:iv_sensor', 'gtceu:iv_emitter', '2x #forge:plates/tungsten_steel', '2x gtceu:fine_annealed_copper_wire'])
-                .EUt(GTValues.VA[GTValues.IV])
-                .duration(240)
-        
+            .itemOutputs('xnet:antenna_dish')
+            .itemInputs(['1x #forge:rods/iron', 'gtceu:iv_sensor', 'gtceu:iv_emitter', '2x #forge:plates/tungsten_steel', '2x gtceu:fine_annealed_copper_wire'])
+            .EUt(GTValues.VA[GTValues.IV])
+            .duration(240)
+
         //Redstone Proxies
         event.shapeless('2x xnet:redstone_proxy', ['gtceu:lv_machine_hull', 'kubejs:resonating_crystal', '2x #forge:dusts/redstone', '#xnet:cables'])
         event.shapeless('xnet:redstone_proxy_upd', ['xnet:redstone_proxy'])

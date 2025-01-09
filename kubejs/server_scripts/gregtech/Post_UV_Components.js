@@ -15,114 +15,114 @@ ServerEvents.recipes(event => {
         ['uiv', 'holmium', '3932160'],
     ]
 
-        converter.forEach(([tier, mat1, mat2, eut]) => {
-            event.remove({ output:[`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter` ] })
-            event.shaped(Item.of(`gtceu:${tier}_1a_energy_converter`), [
-                ' BB',
-                'AHC',
-                ' BB'
-            ], {
-                A: `gtceu:red_alloy_single_wire`,
-                B: `gtceu:${mat2}_single_wire`,
-                H: `gtceu:${tier}_machine_hull`,
-                C: `#gtceu:circuits/${tier}`
-            })
-
-
-            event.shaped(Item.of(`gtceu:${tier}_4a_energy_converter`), [
-                ' BB',
-                'AHC',
-                ' BB'
-            ], {
-                A: `gtceu:red_alloy_quadruple_wire`,
-                B: `gtceu:${mat2}_quadruple_wire`,
-                H: `gtceu:${tier}_machine_hull`,
-                C: `#gtceu:circuits/${tier}`
-            })
-
-            event.shaped(Item.of(`gtceu:${tier}_8a_energy_converter`), [
-                ' BB',
-                'AHC',
-                ' BB'
-            ], {
-                A: `gtceu:red_alloy_octal_wire`,
-                B: `gtceu:${mat2}_octal_wire`,
-                H: `gtceu:${tier}_machine_hull`,
-                C: `#gtceu:circuits/${tier}`
-            })
-
-            event.shaped(Item.of(`gtceu:${tier}_16a_energy_converter`), [
-                ' BB',
-                'AHC',
-                ' BB'
-            ], {
-                A: `gtceu:red_alloy_hex_wire`,
-                B: `gtceu:${mat2}_hex_wire`,
-                H: `gtceu:${tier}_machine_hull`,
-                C: `#gtceu:circuits/${tier}`
-            })
-
-
-            event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_output_hatch`)
-                .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_spring`, `2x kubejs:uxpic_chip`, `#gtceu:circuits/${tier}`, `2x gtceu:${mat1}_double_wire`)
-                .itemOutputs(`gtceu:${tier}_energy_output_hatch`)
-                .inputFluids('gtceu:crystal_matrix 11520', 'gtceu:soldering_alloy 5760')
-                .duration(1000)
-                .EUt(eut)
-
-            event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_input_hatch`)
-                .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_single_wire`, '16x kubejs:uxpic_chip', `#gtceu:circuits/${tier}`, `2x gtceu:${mat2}_double_wire`)
-                .itemOutputs(`gtceu:${tier}_energy_input_hatch`)
-                .inputFluids('gtceu:sodium_potassium 12000', 'gtceu:omnium 1152', 'gtceu:soldering_alloy 576')
-                .duration(100)
-                .EUt(eut)
+    converter.forEach(([tier, mat1, mat2, eut]) => {
+        event.remove({ output: [`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter`] })
+        event.shaped(Item.of(`gtceu:${tier}_1a_energy_converter`), [
+            ' BB',
+            'AHC',
+            ' BB'
+        ], {
+            A: `gtceu:red_alloy_single_wire`,
+            B: `gtceu:${mat2}_single_wire`,
+            H: `gtceu:${tier}_machine_hull`,
+            C: `#gtceu:circuits/${tier}`
         })
 
-        transformer.forEach(([tier, mat1, mat2]) => {
-            event.shaped(Item.of(`gtceu:${tier}_transformer_1a`), [
-                'WBB',
-                'AH ',
-                'WBB'
-            ], {
-                A: `gtceu:${mat1}_single_wire`,
-                B: `gtceu:${mat2}_single_wire`,
-                H: `gtceu:${tier}_machine_hull`,
-                W: 'kubejs:uxpic_chip'
-            })
 
-            event.shaped(Item.of(`gtceu:${tier}_transformer_2a`), [
-                'WBB',
-                'AH ',
-                'WBB'
-            ], {
-                A: `gtceu:${mat1}_double_wire`,
-                B: `gtceu:${mat2}_double_wire`,
-                H: `gtceu:${tier}_machine_hull`,
-                W: 'kubejs:uxpic_chip'
-            })
-
-            event.shaped(Item.of(`gtceu:${tier}_transformer_4a`), [
-                'WBB',
-                'AH ',
-                'WBB'
-            ], {
-                A: `gtceu:${mat1}_quadruple_wire`,
-                B: `gtceu:${mat2}_quadruple_wire`,
-                H: `gtceu:${tier}_machine_hull`,
-                W: 'kubejs:uxpic_chip'
-            })
-
-            event.shaped(Item.of(`gtceu:${tier}_transformer_16a`), [
-                'WBB',
-                'AH ',
-                'WBB'
-            ], {
-                A: `gtceu:${mat1}_hex_wire`,
-                B: `gtceu:${mat2}_hex_wire`,
-                H: `gtceu:${tier}_machine_hull`,
-                W: 'gtceu:uhpic_chip'
-            })
+        event.shaped(Item.of(`gtceu:${tier}_4a_energy_converter`), [
+            ' BB',
+            'AHC',
+            ' BB'
+        ], {
+            A: `gtceu:red_alloy_quadruple_wire`,
+            B: `gtceu:${mat2}_quadruple_wire`,
+            H: `gtceu:${tier}_machine_hull`,
+            C: `#gtceu:circuits/${tier}`
         })
+
+        event.shaped(Item.of(`gtceu:${tier}_8a_energy_converter`), [
+            ' BB',
+            'AHC',
+            ' BB'
+        ], {
+            A: `gtceu:red_alloy_octal_wire`,
+            B: `gtceu:${mat2}_octal_wire`,
+            H: `gtceu:${tier}_machine_hull`,
+            C: `#gtceu:circuits/${tier}`
+        })
+
+        event.shaped(Item.of(`gtceu:${tier}_16a_energy_converter`), [
+            ' BB',
+            'AHC',
+            ' BB'
+        ], {
+            A: `gtceu:red_alloy_hex_wire`,
+            B: `gtceu:${mat2}_hex_wire`,
+            H: `gtceu:${tier}_machine_hull`,
+            C: `#gtceu:circuits/${tier}`
+        })
+
+
+        event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_output_hatch`)
+            .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_spring`, `2x kubejs:uxpic_chip`, `#gtceu:circuits/${tier}`, `2x gtceu:${mat1}_double_wire`)
+            .itemOutputs(`gtceu:${tier}_energy_output_hatch`)
+            .inputFluids('gtceu:crystal_matrix 11520', 'gtceu:soldering_alloy 5760')
+            .duration(1000)
+            .EUt(eut)
+
+        event.recipes.gtceu.assembly_line(`gtceu:${tier}_energy_input_hatch`)
+            .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${mat2}_single_wire`, '16x kubejs:uxpic_chip', `#gtceu:circuits/${tier}`, `2x gtceu:${mat2}_double_wire`)
+            .itemOutputs(`gtceu:${tier}_energy_input_hatch`)
+            .inputFluids('gtceu:sodium_potassium 12000', 'gtceu:omnium 1152', 'gtceu:soldering_alloy 576')
+            .duration(100)
+            .EUt(eut)
+    })
+
+    transformer.forEach(([tier, mat1, mat2]) => {
+        event.shaped(Item.of(`gtceu:${tier}_transformer_1a`), [
+            'WBB',
+            'AH ',
+            'WBB'
+        ], {
+            A: `gtceu:${mat1}_single_wire`,
+            B: `gtceu:${mat2}_single_wire`,
+            H: `gtceu:${tier}_machine_hull`,
+            W: 'kubejs:uxpic_chip'
+        })
+
+        event.shaped(Item.of(`gtceu:${tier}_transformer_2a`), [
+            'WBB',
+            'AH ',
+            'WBB'
+        ], {
+            A: `gtceu:${mat1}_double_wire`,
+            B: `gtceu:${mat2}_double_wire`,
+            H: `gtceu:${tier}_machine_hull`,
+            W: 'kubejs:uxpic_chip'
+        })
+
+        event.shaped(Item.of(`gtceu:${tier}_transformer_4a`), [
+            'WBB',
+            'AH ',
+            'WBB'
+        ], {
+            A: `gtceu:${mat1}_quadruple_wire`,
+            B: `gtceu:${mat2}_quadruple_wire`,
+            H: `gtceu:${tier}_machine_hull`,
+            W: 'kubejs:uxpic_chip'
+        })
+
+        event.shaped(Item.of(`gtceu:${tier}_transformer_16a`), [
+            'WBB',
+            'AH ',
+            'WBB'
+        ], {
+            A: `gtceu:${mat1}_hex_wire`,
+            B: `gtceu:${mat2}_hex_wire`,
+            H: `gtceu:${tier}_machine_hull`,
+            W: 'gtceu:uhpic_chip'
+        })
+    })
 
 
     laserhatch.forEach(([tier, mat1, eut]) => {
@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
 
 
     })
-    
+
     event.recipes.gtceu.assembler('uev_hull')
         .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
         .itemOutputs('gtceu:uev_machine_hull')
@@ -420,7 +420,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(1966080)
 
-        
+
         .stationResearch(b => b
             .researchStack('gtceu:uhv_field_generator')
             .CWUt(128, 512000)

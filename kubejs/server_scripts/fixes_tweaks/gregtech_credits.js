@@ -4,7 +4,7 @@ replacing the singular one for Cupronickel.
 */
 ServerEvents.recipes(event => {
     //Remove the one forming press recipe for Cupronickel
-    event.remove({ id: 'gtceu:forming_press/credit_cupronickel'})
+    event.remove({ id: 'gtceu:forming_press/credit_cupronickel' })
 
     const metals = [
         'copper',
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
             .notConsumable('gtceu:credit_casting_mold')
             .itemInputs(`gtceu:${metals[index]}_plate`)
             .itemOutputs(`4x gtceu:${metals[index]}_credit`)
-            .EUt(energyIn/(20 * 5))
+            .EUt(energyIn / (20 * 5))
             .duration(20 * 5)
     }
 })

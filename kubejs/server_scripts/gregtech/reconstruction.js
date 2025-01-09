@@ -33,6 +33,7 @@ ServerEvents.recipes(event => {
         event.remove({ id: 'gtceu:shaped/gear_' + crystal })
         event.remove({ id: 'gtceu:shaped/gear_' + crystal + '_empowered' })
     })
+
     // Black Quartz
     event.recipes.gtceu.electrolyzer("kubejs:black_quartz_dust")
         .itemInputs("4x gtceu:quartzite_dust")
@@ -63,7 +64,7 @@ ServerEvents.recipes(event => {
 
     // Universal Circuits
     const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
-        tiers.forEach((level) => {
+    tiers.forEach((level) => {
         event.recipes.gtceu.atomic_reconstruction("kubejs:" + level + "_universal_circuit")
             .itemInputs("#gtceu:circuits/" + level)
             .itemOutputs("kubejs:" + level + "_universal_circuit")
@@ -85,18 +86,18 @@ ServerEvents.recipes(event => {
         ['uiv', 'holmium']
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
-    event.shaped(
-        `gtceu:${tier}_atomic_reconstructor`, [
-        'CPC',
-        'EHE',
-        'PPM'
-    ], {
-        P: `gtceu:${plate}_plate`,
-        E: `gtceu:${tier}_emitter`,
-        H: `gtceu:${tier}_machine_hull`,
-        C: `#gtceu:circuits/${tier}`,
-        M: `gtceu:${tier}_electric_motor`
-    }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
+        event.shaped(
+            `gtceu:${tier}_atomic_reconstructor`, [
+            'CPC',
+            'EHE',
+            'PPM'
+        ], {
+            P: `gtceu:${plate}_plate`,
+            E: `gtceu:${tier}_emitter`,
+            H: `gtceu:${tier}_machine_hull`,
+            C: `#gtceu:circuits/${tier}`,
+            M: `gtceu:${tier}_electric_motor`
+        }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
     })
 
     //Crystal Gears
@@ -130,10 +131,10 @@ ServerEvents.recipes(event => {
         'spore_blossom',
         'wither_rose',
         'dead_bush'
-    ] 
+    ]
     flowerCycle.forEach((flower, index) => {
         let curFlower = flowerCycle[index];
-        let nextFlower = flowerCycle[(index+1)%flowerCycle.length];
+        let nextFlower = flowerCycle[(index + 1) % flowerCycle.length];
         event.recipes.gtceu.atomic_reconstruction("gtceu:" + curFlower + "_to_" + nextFlower)
             .itemInputs("minecraft:" + curFlower)
             .itemOutputs("minecraft:" + nextFlower)

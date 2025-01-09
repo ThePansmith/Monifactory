@@ -19,14 +19,14 @@ ServerEvents.recipes(event => {
 
         //Recipes to make quantum flux from planets' rock dusts
         event.shaped(
-            (fluxCount+1) + 'x kubejs:quantum_flux', [
-                ' B ',
-                'BAB',
-                ' B '
-            ], {
-                A: planetResources[2],
-                B: 'kubejs:' + planetResources[1]
-            }
+            (fluxCount + 1) + 'x kubejs:quantum_flux', [
+            ' B ',
+            'BAB',
+            ' B '
+        ], {
+            A: planetResources[2],
+            B: 'kubejs:' + planetResources[1]
+        }
         )
     })
 

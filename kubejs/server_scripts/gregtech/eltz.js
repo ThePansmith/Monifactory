@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('64x kubejs:reactive_dust_mixture')
         .duration(4800)
         .EUt(GTValues.VHA[GTValues.UHV])
-    
+
     event.recipes.gtceu.large_chemical_reactor('literal_alchemy')
         .itemInputs('3x kubejs:reactive_dust_mixture')
         .notConsumable('extendedcrafting:ultimate_catalyst')
@@ -57,14 +57,14 @@ ServerEvents.recipes(event => {
         .outputFluids('minecraft:water 1500')
         .duration(5000)
         .EUt(GTValues.VHA[GTValues.HV])
-    
+
     event.recipes.gtceu.extractor('saturated_inert_clump_extracting')
         .itemInputs('3x kubejs:saturated_inert_clumps')
         .itemOutputs('kubejs:clean_inert_cluster')
         .outputFluids('gtceu:saturated_water 100')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.IV])
-    
+
     event.recipes.gtceu.electromagnetic_separator('clean_cluster_separating')
         .itemInputs('kubejs:clean_inert_cluster')
         .chancedOutput('kubejs:eltic_crystal_seed', 2700, 500)

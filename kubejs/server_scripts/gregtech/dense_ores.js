@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
 ServerEvents.tags('item', event => {
     // dense ore mod is gone, so we tag it
     ores.forEach(ore => {
-        event.add("forge:ores/dense", `forge:ores/dense/${ore}`,  `kubejs:dense_${ore}`);
+        event.add("forge:ores/dense", `forge:ores/dense/${ore}`, `kubejs:dense_${ore}`);
         // event.add('forge:dense_ores', "kubejs:dense_" + ore);
     })
 })
@@ -50,7 +50,7 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('block', event => {
     // might as well
     ores.forEach(ore => {
-        event.add("forge:ores/dense", `forge:ores/dense/${ore}`,  `kubejs:dense_${ore}`);
+        event.add("forge:ores/dense", `forge:ores/dense/${ore}`, `kubejs:dense_${ore}`);
     })
 })
 
