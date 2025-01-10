@@ -1,8 +1,8 @@
 CapeJS.addCapes(event => {
 
     // Devs
-/*{{CODEGEN_DEVS}}*/
+//{{CODEGEN_DEVS}}
 
     //Contributors
-/*{{CODEGEN_CONTRIBUTORS}}*/
+//{{CODEGEN_CONTRIBUTORS}}
 })
