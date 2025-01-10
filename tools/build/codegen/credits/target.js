@@ -48,7 +48,7 @@ export const CodegenCreditsTarget = new Juke.Target({
      * @typedef ContributorsFile
      * @prop {Record<string, Contributor>} people
      * @prop {Record<Contributor["role"], string>} cape_name_of_role
-     * @prop {Partial<Contributor>} defaults
+     * @prop {Pick<Contributor, "role"|"description"> & {skin: string}} defaults
      */
 
     /** @type {ContributorsFile} */
@@ -112,7 +112,7 @@ export const CodegenCreditsTarget = new Juke.Target({
         const elements = fillTemplates(
           creditScreenContributorTemplate,
           {
-            '{{MC_UUID}}': data.mcuuid ?? 'justenoughitems',
+            '{{MC_UUID}}': data.mcuuid ?? defaults.skin,
             '{{V4_UUID}}': data.mcuuid ?? randomUUID(),
             '{{PLAYERNAME}}': name,
             // "NAME - DESC" if description exists, just "NAME" otherwise
