@@ -5,9 +5,9 @@ const UUID = Java.loadClass('java.util.UUID');
 StartupEvents.registry("item", event => {
     const exoskeletonTiers = ['lv', 'mv', 'hv', 'ev', 'iv']
     exoskeletonTiers.forEach((tier) => {
-        event.create(tier + "_exoskeleton_legs")
+        event.create(`${tier}_exoskeleton_legs`)
             .tag("curios:exoskeleton_legs")
-            .texture("kubejs:item/exoskeleton/" + tier + "_exoskeleton_legs")
+            .texture(`kubejs:item/exoskeleton/${tier}_exoskeleton_legs`)
             .maxStackSize(1)
     })
 })
@@ -47,10 +47,6 @@ const removeExoskeletonLegsEffects = (player, exoskeleton) => {
 ForgeEvents.onEvent("top.theillusivec4.curios.api.event.CurioChangeEvent", event => {
     const oldItem = event.getFrom().id;
     const newItem = event.getTo().id;
-
-    console.log("Type: " + event.getIdentifier())
-    console.log("Old item: " + oldItem)
-    console.log("New item: " + newItem)
 
     if(event.getIdentifier() === "exoskeleton_legs") {
         if(oldItem) removeExoskeletonLegsEffects(event.entity, oldItem)
