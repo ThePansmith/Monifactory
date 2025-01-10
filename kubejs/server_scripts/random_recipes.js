@@ -109,8 +109,7 @@ ServerEvents.recipes(event => {
 
 
     // Change recipes for LV and MV macerators
-    event.shaped(
-        "gtceu:lv_macerator", [
+    event.shaped('gtceu:lv_macerator', [
         'PMB',
         'WWH',
         'CCW'
@@ -121,11 +120,9 @@ ServerEvents.recipes(event => {
         W: "gtceu:tin_single_cable",
         H: "gtceu:lv_machine_hull",
         C: "#gtceu:circuits/lv"
-    }
-    ).id('gtceu:shaped/lv_macerator')
+    }).id('gtceu:shaped/lv_macerator')
 
-    event.shaped(
-        "gtceu:mv_macerator", [
+    event.shaped('gtceu:mv_macerator', [
         'PMB',
         'WWH',
         'CCW'
@@ -136,8 +133,7 @@ ServerEvents.recipes(event => {
         W: "gtceu:copper_single_cable",
         H: "gtceu:mv_machine_hull",
         C: "#gtceu:circuits/mv"
-    }
-    ).id('gtceu:shaped/mv_macerator')
+    }).id('gtceu:shaped/mv_macerator')
     // Data Stuff
 
     if (isNormalMode) {
@@ -178,7 +174,7 @@ ServerEvents.recipes(event => {
     ]
 
     for (const [mB, duration, id] of cryolobusFuels) {
-        event.recipes.gtceu.electric_blast_furnace("cryolobus_" + id.replace(/\W/g, ''))
+        event.recipes.gtceu.electric_blast_furnace(`cryolobus_${id.replace(/\W/g, '')}`)
             .itemInputs("gtceu:cryolobus_dust")
             .inputFluids(`${id} ${mB}`)
             .itemOutputs("gtceu:hot_cryolobus_ingot")
@@ -186,7 +182,7 @@ ServerEvents.recipes(event => {
             .blastFurnaceTemp(6800)
             .EUt(30720)
 
-        event.recipes.gtceu.electric_blast_furnace("cryolobus_scale_" + id.replace(/\W/g, ''))
+        event.recipes.gtceu.electric_blast_furnace(`cryolobus_scale_${id.replace(/\W/g, '')}`)
             .itemInputs("4x kubejs:warden_horn")
             .inputFluids(`${id} ${mB * 4}`)
             .itemOutputs("2x gtceu:hot_cryolobus_ingot")
@@ -205,8 +201,7 @@ ServerEvents.recipes(event => {
         .EUt(1920)
 
     // Alternative hv cutter
-    event.shaped(
-        "gtceu:hv_cutter", [
+    event.shaped('gtceu:hv_cutter', [
         'WCG',
         'DHS',
         'CGM'
@@ -218,12 +213,10 @@ ServerEvents.recipes(event => {
         H: "gtceu:hv_machine_hull",
         S: "gtceu:end_steel_gear", // TODO: FIX (likely requires registering end steel as a tool material, and idk how to do that)
         M: "gtceu:hv_electric_motor"
-    }
-    )
+    })
 
     // Atmospheric Accumulator
-    event.shaped(
-        "gtceu:atmospheric_accumulator", [
+    event.shaped('gtceu:atmospheric_accumulator', [
         'WRW',
         'THT',
         'COC'
@@ -234,12 +227,10 @@ ServerEvents.recipes(event => {
         H: "gtceu:iv_gas_collector",
         R: "gtceu:tungsten_steel_rotor",
         O: "gtceu:iv_electric_pump"
-    }
-    ).id('gtceu:shaped/atmospheric_accumulator')
+    }).id('gtceu:shaped/atmospheric_accumulator')
 
     // Matter Alterator
-    event.shaped(
-        "gtceu:matter_alterator", [
+    event.shaped('gtceu:matter_alterator', [
         'WEW',
         'THT',
         'PCV'
@@ -251,8 +242,7 @@ ServerEvents.recipes(event => {
         E: "gtceu:iv_emitter",
         P: "gtceu:iv_electric_piston",
         V: "gtceu:iv_conveyor_module"
-    }
-    ).id('gtceu:shaped/matter_alterator')
+    }).id('gtceu:shaped/matter_alterator')
 
     // Prevent cleanroom casings from being usable for free resources
     event.remove({ input: "gtceu:sterilizing_filter_casing" })
@@ -279,8 +269,7 @@ ServerEvents.recipes(event => {
         .EUt(7680)
 
     // Ass control casing
-    event.shaped(
-        "4x gtceu:assembly_line_unit", [
+    event.shaped('4x gtceu:assembly_line_unit', [
         'CHC',
         'SFE',
         'CMC'
@@ -291,8 +280,7 @@ ServerEvents.recipes(event => {
         F: "gtceu:tungsten_steel_frame",
         E: "gtceu:iv_emitter",
         M: "gtceu:iv_electric_motor"
-    }
-    ).id('gtceu:shaped/casing_assembly_line')
+    }).id('gtceu:shaped/casing_assembly_line')
 
     //Netherstar Crafting
     event.shaped('kubejs:nether_star_south', [
@@ -344,8 +332,7 @@ ServerEvents.recipes(event => {
         F: 'thermal:basalz_rod'
     })
 
-    event.shaped(
-        'minecraft:nether_star', [
+    event.shaped('minecraft:nether_star', [
         ' A ',
         'DEB',
         ' C '
@@ -355,8 +342,7 @@ ServerEvents.recipes(event => {
         C: 'kubejs:nether_star_south',
         D: 'kubejs:nether_star_west',
         E: 'kubejs:nether_star_center'
-    }
-    )
+    })
 
     // Obby grinding
     event.recipes.gtceu.macerator('obsidian_dust')
@@ -383,8 +369,7 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/uev',
         E: 'gtceu:uhv_emitter',
         W: 'gtceu:activated_netherite_quadruple_wire'
-    }
-    )
+    })
 
     event.shaped('gtceu:uev_uev_parallel_hatch', [
         'SCE',
@@ -396,8 +381,7 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/uiv',
         E: 'gtceu:uev_emitter',
         W: 'gtceu:holmium_quadruple_wire'
-    }
-    )
+    })
 
     //
     // Recycling below here
@@ -438,8 +422,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['endertanks:ender_tank', 'enderchests:ender_chest'] })
 
     //Chest
-    event.shaped(
-        'enderchests:ender_chest', [ // these default to 000 anyways
+    event.shaped('enderchests:ender_chest', [
         'ABA',
         'DED',
         'AFA'
@@ -449,12 +432,10 @@ ServerEvents.recipes(event => {
         D: 'minecraft:obsidian',
         E: 'gtceu:steel_crate',
         F: 'minecraft:ender_pearl'
-    }
-    )
+    })
 
     //Tank
-    event.shaped(
-        'endertanks:ender_tank', [
+    event.shaped('endertanks:ender_tank', [
         'ABA',
         'DED',
         'AFA'
@@ -464,20 +445,17 @@ ServerEvents.recipes(event => {
         D: 'minecraft:obsidian',
         E: 'enderio:pressurized_fluid_tank',
         F: 'gtceu:ender_pearl_block'
-    }
-    )
+    })
 
     //Strings Recipe
-    event.shaped(
-        '6x minecraft:string', [
+    event.shaped('6x minecraft:string', [
         ' A ',
         'ABA',
         ' A '
     ], {
         A: '#minecraft:saplings',
         B: '#minecraft:swords'
-    }
-    ).damageIngredient('#minecraft:swords')
+    }).damageIngredient('#minecraft:swords')
 
     //Avaritia Replacement recipes
     compacting(event, 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget')
@@ -551,8 +529,7 @@ ServerEvents.recipes(event => {
         .EUt(12)
 
     // Waterframes
-    event.shaped(
-        'waterframes:frame', [
+    event.shaped('waterframes:frame', [
         'IGI',
         'GSG',
         'IGI'
@@ -560,11 +537,9 @@ ServerEvents.recipes(event => {
         I: 'gtceu:iron_plate',
         S: 'gtceu:steel_plate',
         G: '#forge:glass_panes'
-    }
-    ).id('waterframes:frame')
+    }).id('waterframes:frame')
 
-    event.shaped(
-        'waterframes:projector', [
+    event.shaped('waterframes:projector', [
         'III',
         'IFG',
         'III'
@@ -572,11 +547,9 @@ ServerEvents.recipes(event => {
         F: 'waterframes:frame',
         I: 'gtceu:iron_plate',
         G: '#forge:glass_panes'
-    }
-    ).id('waterframes:projector')
+    }).id('waterframes:projector')
 
-    event.shaped(
-        'waterframes:tv', [
+    event.shaped('waterframes:tv', [
         'III',
         'GFG',
         'III'
@@ -584,11 +557,9 @@ ServerEvents.recipes(event => {
         F: 'waterframes:frame',
         I: 'gtceu:iron_plate',
         G: '#forge:glass_panes'
-    }
-    ).id('waterframes:tv')
+    }).id('waterframes:tv')
 
-    event.shaped(
-        'waterframes:big_tv', [
+    event.shaped('waterframes:big_tv', [
         'III',
         'GFG',
         'III'
@@ -596,11 +567,9 @@ ServerEvents.recipes(event => {
         F: 'waterframes:tv',
         I: 'gtceu:iron_plate',
         G: '#forge:glass_panes'
-    }
-    ).id('waterframes:big_tv')
+    }).id('waterframes:big_tv')
 
-    event.shaped(
-        'waterframes:remote', [
+    event.shaped('waterframes:remote', [
         'IRI',
         'ICI',
         'ICI'
@@ -608,18 +577,17 @@ ServerEvents.recipes(event => {
         R: 'minecraft:redstone',
         I: 'gtceu:iron_plate',
         C: 'gtceu:copper_plate'
-    }
-    ).id('waterframes:remote')
+    }).id('waterframes:remote')
 
     // Stonecut p2p tunnels, attunement sucks
     const p2p = ["redstone", "item", "fluid", "fe", "light"]
     p2p.forEach(type => {
-        event.stonecutting('ae2:' + type + '_p2p_tunnel', 'ae2:me_p2p_tunnel')
+        event.stonecutting(`ae2:${type}_p2p_tunnel`, 'ae2:me_p2p_tunnel')
     })
     event.stonecutting('mae2:pattern_p2p_tunnel', 'ae2:me_p2p_tunnel')
     const multi_p2p = ["pattern", "redstone", "fluid", "fe"]
     multi_p2p.forEach(type => {
-        event.stonecutting('mae2:' + type + '_multi_p2p_tunnel', 'mae2:item_multi_p2p_tunnel')
+        event.stonecutting(`mae2:${type}_multi_p2p_tunnel`, 'mae2:item_multi_p2p_tunnel')
     })
 
     // Stonecutting CCI blocks
@@ -656,6 +624,7 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(30720)
         .stationResearch(b => b.researchStack('gtceu:electric_blast_furnace').CWUt(16, 64000).EUt(30720))
+        
     event.remove({ id: 'gtceu:shaped/mega_vacuum_freezer' })
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_vacuum_freezer')
         .itemInputs('gtceu:vacuum_freezer', '4x #gtceu:circuits/zpm', '4x gtceu:luv_field_generator', '4x gtceu:naquadah_normal_fluid_pipe', '4x gtceu:dense_naquadah_alloy_plate', '4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
@@ -717,8 +686,7 @@ ServerEvents.recipes(event => {
 
     //Cleanroom Hatch
     event.remove({ id: 'gtceu:shaped/maintenance_hatch_cleaning' })
-    event.shaped(
-        "gtceu:cleaning_maintenance_hatch", [
+    event.shaped('gtceu:cleaning_maintenance_hatch', [
         'CMC',
         'RHR',
         'WCW'

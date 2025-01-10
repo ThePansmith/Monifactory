@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
     if (!isNormalMode) {
         solidify('stabilized_oganesson', Fluid.of('gtceu:oganesson', 144), 'kubejs:stabilized_oganesson');
     }
-    
+
     function solidify(recipename, input, output) {
         event.recipes.gtceu.fluid_solidifier(recipename)
             .inputFluids(input)
@@ -67,14 +67,12 @@ ServerEvents.recipes(event => {
     }
 
     // Endest Star
-    event.shaped(
-        'kubejs:endest_star', [
+    event.shaped('kubejs:endest_star', [
         ' E ',
         'ESE',
         ' E '
     ], {
         E: 'minecraft:ender_eye',
         S: 'minecraft:nether_star'
-    }
-    )
+    })
 })

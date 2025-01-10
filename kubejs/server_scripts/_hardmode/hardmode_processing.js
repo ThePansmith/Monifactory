@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     if (isHardMode) {
         // Tungsten
-        event.remove({id: 'gtceu:electrolyzer/tungstic_acid_electrolysis'})
+        event.remove({ id: 'gtceu:electrolyzer/tungstic_acid_electrolysis' })
 
         event.recipes.gtceu.extractor('kubejs:tungsten_trioxide_dust')
             .itemInputs('7x #forge:dusts/tungstic_acid')
@@ -359,25 +359,25 @@ ServerEvents.recipes(event => {
             .duration(600).EUt(1200)
 
         // Platinum Group
-        event.remove({id: 'gtceu:centrifuge/pgs_separation'})
-        event.remove({id: 'gtceu:electrolyzer/raw_platinum_separation'})
-        event.remove({id: 'gtceu:chemical_reactor/raw_palladium_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/raw_palladium_separation'})
-        event.remove({id: 'gtceu:chemical_reactor/inert_metal_mixture_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/inert_metal_mixture_separation'})
-        event.remove({id: 'gtceu:chemical_reactor/ruthenium_tetroxide_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/ruthenium_tetroxide_separation'})
-        event.remove({id: 'gtceu:electrolyzer/rhodium_sulfate_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/rarest_metal_mixture_separation'})
-        event.remove({id: 'gtceu:centrifuge/iridium_metal_residue_separation'})
-        event.remove({id: 'gtceu:chemical_reactor/iridium_chloride_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/iridium_chloride_separation'})
-        event.remove({id: 'gtceu:distillation_tower/acidic_osmium_solution_separation'})
-        event.remove({id: 'gtceu:distillery/acidic_osmium_solution_separation_to_hydrochloric_acid'})
-        event.remove({id: 'gtceu:distillery/acidic_osmium_solution_separation_to_water'})
-        event.remove({id: 'gtceu:chemical_reactor/osmium_tetroxide_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/osmium_tetroxide_separation'})
-        event.remove({id: 'gtceu:centrifuge/decomposition_centrifuging__platinum_sludge_residue'})
+        event.remove({ id: 'gtceu:centrifuge/pgs_separation' })
+        event.remove({ id: 'gtceu:electrolyzer/raw_platinum_separation' })
+        event.remove({ id: 'gtceu:chemical_reactor/raw_palladium_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/raw_palladium_separation' })
+        event.remove({ id: 'gtceu:chemical_reactor/inert_metal_mixture_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/inert_metal_mixture_separation' })
+        event.remove({ id: 'gtceu:chemical_reactor/ruthenium_tetroxide_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/ruthenium_tetroxide_separation' })
+        event.remove({ id: 'gtceu:electrolyzer/rhodium_sulfate_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/rarest_metal_mixture_separation' })
+        event.remove({ id: 'gtceu:centrifuge/iridium_metal_residue_separation' })
+        event.remove({ id: 'gtceu:chemical_reactor/iridium_chloride_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/iridium_chloride_separation' })
+        event.remove({ id: 'gtceu:distillation_tower/acidic_osmium_solution_separation' })
+        event.remove({ id: 'gtceu:distillery/acidic_osmium_solution_separation_to_hydrochloric_acid' })
+        event.remove({ id: 'gtceu:distillery/acidic_osmium_solution_separation_to_water' })
+        event.remove({ id: 'gtceu:chemical_reactor/osmium_tetroxide_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/osmium_tetroxide_separation' })
+        event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__platinum_sludge_residue' })
 
         // Formic Acid
         event.recipes.gtceu.chemical_reactor('sodium_methoxide')
@@ -661,7 +661,7 @@ ServerEvents.recipes(event => {
             .duration(800).EUt(192)
 
         // Stone Dust Processing
-        event.remove({id: 'gtceu:centrifuge/stone_dust_separation'})
+        event.remove({ id: 'gtceu:centrifuge/stone_dust_separation' })
 
         event.recipes.gtceu.chemical_bath('stone_dust_to_dirty_hexafluorosilicic_acid')
             .itemInputs('24x gtceu:stone_dust')
@@ -788,66 +788,65 @@ ServerEvents.recipes(event => {
             .EUt(480)
 
         //Rocketry
+        event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
+            .inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000), Fluid.of('gtceu:chloromethane', 1000))
+            .itemOutputs('24x gtceu:durene_dust')
+            .outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
+            .EUt(120)
+            .duration(120)
 
-    event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
-        .inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000), Fluid.of('gtceu:chloromethane', 1000))
-        .itemOutputs('24x gtceu:durene_dust')
-        .outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
-        .EUt(120)
-        .duration(120)
+        event.recipes.gtceu.chemical_reactor('dimethylformamide')
+            .inputFluids('gtceu:carbon_monoxide 1000', 'gtceu:dimethylamine 1000')
+            .outputFluids('gtceu:dimethylformamide 1000')
+            .duration(200).EUt(480);
 
-    event.recipes.gtceu.chemical_reactor('dimethylformamide')
-        .inputFluids('gtceu:carbon_monoxide 1000', 'gtceu:dimethylamine 1000')
-        .outputFluids('gtceu:dimethylformamide 1000')
-        .duration(200).EUt(480);
+        event.recipes.gtceu.chemical_reactor('pyrometillic_dianhydride')
+            .inputFluids('gtceu:durene 250', 'gtceu:oxygen 1500')
+            .outputFluids('gtceu:pyromellitic_dianhydride 250', 'minecraft:water 1500')
+            .duration(400).EUt(480);
 
-    event.recipes.gtceu.chemical_reactor('pyrometillic_dianhydride')
-        .inputFluids('gtceu:durene 250', 'gtceu:oxygen 1500')
-        .outputFluids('gtceu:pyromellitic_dianhydride 250', 'minecraft:water 1500')
-        .duration(400).EUt(480);
+        event.recipes.gtceu.chemical_reactor('manganese_bromide')
+            .itemInputs('gtceu:manganese_dust')
+            .inputFluids('gtceu:bromine 1000', 'gtceu:acetic_acid 1000')
+            .outputFluids('gtceu:manganese_bromide 1000')
+            .duration(60).EUt(480);
 
-    event.recipes.gtceu.chemical_reactor('manganese_bromide')
-        .itemInputs('gtceu:manganese_dust')
-        .inputFluids('gtceu:bromine 1000', 'gtceu:acetic_acid 1000')
-        .outputFluids('gtceu:manganese_bromide 1000')
-        .duration(60).EUt(480);
+        event.recipes.gtceu.chemical_reactor('manganese_acetate')
+            .itemInputs('gtceu:manganese_dust')
+            .inputFluids('gtceu:acetic_acid 1000')
+            .outputFluids('gtceu:manganese_acetate 1000')
+            .duration(60).EUt(480);
 
-    event.recipes.gtceu.chemical_reactor('manganese_acetate')
-        .itemInputs('gtceu:manganese_dust')
-        .inputFluids('gtceu:acetic_acid 1000')
-        .outputFluids('gtceu:manganese_acetate 1000')
-        .duration(60).EUt(480);
-
-    event.recipes.gtceu.chemical_reactor('hydrobromic_acid')
-        .notConsumable('gtceu:platinum_dust')
-        .inputFluids('gtceu:hydrogen 1000', 'gtceu:bromine 1000', 'minecraft:water 1000')
-        .outputFluids('gtceu:hydrobromic_acid 1000')
-        .duration(60).EUt(480);
+        event.recipes.gtceu.chemical_reactor('hydrobromic_acid')
+            .notConsumable('gtceu:platinum_dust')
+            .inputFluids('gtceu:hydrogen 1000', 'gtceu:bromine 1000', 'minecraft:water 1000')
+            .outputFluids('gtceu:hydrobromic_acid 1000')
+            .duration(60).EUt(480);
 
         event.recipes.gtceu.chemical_reactor('chloronitrobenzene')
-        .inputFluids('gtceu:chlorobenzene 1000', 'gtceu:nitric_acid 1000')
-        .outputFluids('gtceu:nitrochlorobenzene 1000', 'minecraft:water 1000')
-        .duration(400).EUt(480);
+            .inputFluids('gtceu:chlorobenzene 1000', 'gtceu:nitric_acid 1000')
+            .outputFluids('gtceu:nitrochlorobenzene 1000', 'minecraft:water 1000')
+            .duration(400).EUt(480);
 
         event.recipes.gtceu.chemical_reactor('oxydianiline_sludge')
-        .inputFluids('gtceu:aminophenol 1000', 'gtceu:nitrochlorobenzene 1000', 'gtceu:dimethylformamide 1000')
-        .itemInputs('1x gtceu:potassium_carbonate_dust')
-        .outputFluids('gtceu:oxydianiline_sludge 250', 'minecraft:water 1500')
-        .duration(400).EUt(480);
+            .inputFluids('gtceu:aminophenol 1000', 'gtceu:nitrochlorobenzene 1000', 'gtceu:dimethylformamide 1000')
+            .itemInputs('1x gtceu:potassium_carbonate_dust')
+            .outputFluids('gtceu:oxydianiline_sludge 250', 'minecraft:water 1500')
+            .duration(400).EUt(480);
 
-    event.recipes.gtceu.distillation_tower('distill_oxydianiline_sludge')
-        .inputFluids('gtceu:oxydianiline_sludge 1000')
-        .outputFluids('gtceu:dimethylformamide 1000', 'gtceu:oxydianiline 144')
-        .duration(200).EUt(480);
+        event.recipes.gtceu.distillation_tower('distill_oxydianiline_sludge')
+            .inputFluids('gtceu:oxydianiline_sludge 1000')
+            .outputFluids('gtceu:dimethylformamide 1000', 'gtceu:oxydianiline 144')
+            .duration(200).EUt(480);
 
         event.recipes.gtceu.chemical_reactor('pyromellitic_dianhydride')
-        .inputFluids('gtceu:durene 250', 'gtceu:oxygen 1500')
-        .outputFluids('gtceu:pyromellitic_dianhydride 250', 'minecraft:water 1500')
-        .duration(400).EUt(480);
+            .inputFluids('gtceu:durene 250', 'gtceu:oxygen 1500')
+            .outputFluids('gtceu:pyromellitic_dianhydride 250', 'minecraft:water 1500')
+            .duration(400).EUt(480);
 
         event.recipes.gtceu.chemical_reactor('kapton_k')
-        .inputFluids('gtceu:pyromellitic_dianhydride 1000', 'gtceu:oxydianiline 1000')
-        .outputFluids('gtceu:kapton_k 1000')
-        .duration(400).EUt(480);
+            .inputFluids('gtceu:pyromellitic_dianhydride 1000', 'gtceu:oxydianiline 1000')
+            .outputFluids('gtceu:kapton_k 1000')
+            .duration(400).EUt(480);
     }
 });

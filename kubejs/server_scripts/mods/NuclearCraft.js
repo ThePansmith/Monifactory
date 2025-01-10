@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
 
     function decomp(name, fuel, ing1, ing2) {
-        event.recipes.gtceu.thermal_centrifuge(name + "decomp")
+        event.recipes.gtceu.thermal_centrifuge(`kubejs:${name}_decomp`)
             .itemInputs(fuel)
             .itemOutputs(ing1, ing2)
             .duration(3200)
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     }
 
     function decomp_single(name, fuel, ing) {
-        event.recipes.gtceu.thermal_centrifuge(name + "decomp")
+        event.recipes.gtceu.thermal_centrifuge(`kubejs:${name}_decomp`)
             .itemInputs(fuel)
             .itemOutputs(ing)
             .duration(3200)
@@ -55,9 +55,9 @@ ServerEvents.recipes(event => {
     decomp("californium_hecf_251", "nuclearcraft:fuel_californium_hecf_251", "5x nuclearcraft:californium_252", "4x nuclearcraft:californium_251");
 
     function decompdepleted(fuelType, out, out2, out3, out4, voltageTier) {
-        
-        event.recipes.gtceu.centrifuge(fuelType + "decompdepleted")
-            .itemInputs('nuclearcraft:depleted_fuel_' + fuelType)
+
+        event.recipes.gtceu.centrifuge(`${fuelType}decompdepleted`)
+            .itemInputs(`nuclearcraft:depleted_fuel_${fuelType}`)
             .itemOutputs(out, out2, out3, out4)
             .duration(400)
             .EUt(GTValues.VHA[voltageTier])
@@ -154,16 +154,14 @@ ServerEvents.recipes(event => {
     canmod('beryllium', "gtceu:beryllium_dust")
 
     event.remove({ id: "nuclearcraft:empty_heat_sink" })
-    event.shaped(
-        "nuclearcraft:empty_heat_sink", [
-            "TST",
-            "S S",
-            "TST"
-        ], {
-            T: 'nuclearcraft:tough_alloy_ingot',
-            S: 'gtceu:steel_ingot'
-        }
-    )
+    event.shaped('nuclearcraft:empty_heat_sink', [
+        "TST",
+        "S S",
+        "TST"
+    ], {
+        T: 'nuclearcraft:tough_alloy_ingot',
+        S: 'gtceu:steel_ingot'
+    })
 
     function cansolidactive(name, input) {
         event.remove({ output: `nuclearcraft:active_${name}_heat_sink` })
@@ -191,100 +189,86 @@ ServerEvents.recipes(event => {
     canfluidactive('cryotheum', "kubejs:molten_cryotheum")
 
     event.remove({ id: "nuclearcraft:empty_active_heat_sink" })
-    event.shaped(
-        "nuclearcraft:empty_active_heat_sink", [
-            "TST",
-            "S S",
-            "TST"
-        ], {
-            T: 'nuclearcraft:tough_alloy_ingot',
-            S: 'gtceu:dark_steel_ingot'
-        }
-    )
+    event.shaped('nuclearcraft:empty_active_heat_sink', [
+        "TST",
+        "S S",
+        "TST"
+    ], {
+        T: 'nuclearcraft:tough_alloy_ingot',
+        S: 'gtceu:dark_steel_ingot'
+    })
 
     event.remove({ output: "nuclearcraft:plate_basic" })
-    event.shaped(
-        "2x nuclearcraft:plate_basic", [
-            "TST",
-            "SDS",
-            "TST"
-        ], {
-            T: 'nuclearcraft:tough_alloy_ingot',
-            S: 'gtceu:tungsten_plate',
-            D: 'gtceu:double_steel_plate'
-        }
-    )
+    event.shaped('2x nuclearcraft:plate_basic', [
+        "TST",
+        "SDS",
+        "TST"
+    ], {
+        T: 'nuclearcraft:tough_alloy_ingot',
+        S: 'gtceu:tungsten_plate',
+        D: 'gtceu:double_steel_plate'
+    })
 
     event.remove({ id: "nuclearcraft:plate_advanced" })
-    event.shaped(
-        "2x nuclearcraft:plate_advanced", [
-            "TST",
-            "SDS",
-            "TST"
-        ], {
-            T: 'nuclearcraft:hard_carbon_ingot',
-            S: 'gtceu:yttrium_barium_cuprate_plate',
-            D: 'nuclearcraft:plate_basic'
-        }
-    )
+    event.shaped('2x nuclearcraft:plate_advanced', [
+        "TST",
+        "SDS",
+        "TST"
+    ], {
+        T: 'nuclearcraft:hard_carbon_ingot',
+        S: 'gtceu:yttrium_barium_cuprate_plate',
+        D: 'nuclearcraft:plate_basic'
+    })
 
-	event.remove({ id: 'nuclearcraft:plate_du'})
+    event.remove({ id: 'nuclearcraft:plate_du' })
     event.recipes.gtceu.alloy_smelter('du_plating')
         .itemInputs('nuclearcraft:plate_advanced', 'kubejs:stabilized_uranium')
         .itemOutputs('2x nuclearcraft:plate_du')
         .duration(400)
         .EUt(2000)
 
-	event.remove({ id: "nuclearcraft:plate_elite" })
-    event.shaped(
-        "2x nuclearcraft:plate_elite", [
-            "TST",
-            "SDS",
-            "TST"
-        ], {
-            T: 'nuclearcraft:rhodochrosite_dust',
-            S: 'gtceu:enderium_plate',
-            D: 'nuclearcraft:plate_du'
-        }
-    )
+    event.remove({ id: "nuclearcraft:plate_elite" })
+    event.shaped('2x nuclearcraft:plate_elite', [
+        "TST",
+        "SDS",
+        "TST"
+    ], {
+        T: 'nuclearcraft:rhodochrosite_dust',
+        S: 'gtceu:enderium_plate',
+        D: 'nuclearcraft:plate_du'
+    })
 
 
     event.remove({ id: "nuclearcraft:fission_reactor_casing" })
-    event.shaped(
-        "8x nuclearcraft:fission_reactor_casing", [
-            "DDD",
-            "DFD",
-            "DDD"
-        ], {
-            F: 'gtceu:robust_machine_casing',
-            D: 'nuclearcraft:plate_basic'
-        }
-    )
+    event.shaped('8x nuclearcraft:fission_reactor_casing', [
+        "DDD",
+        "DFD",
+        "DDD"
+    ], {
+        F: 'gtceu:robust_machine_casing',
+        D: 'nuclearcraft:plate_basic'
+    })
 
     event.remove({ id: 'nuclearcraft:fission_reactor_solid_fuel_cell' })
-    event.shaped(
-        'nuclearcraft:fission_reactor_solid_fuel_cell', [
-            "TST",
-            "S S",
-            "TST"
-        ], {
-            T: 'nuclearcraft:tough_alloy_ingot',
-            S: 'gtceu:tempered_glass'
-        }
-    )
+    event.shaped('nuclearcraft:fission_reactor_solid_fuel_cell', [
+        "TST",
+        "S S",
+        "TST"
+    ], {
+        T: 'nuclearcraft:tough_alloy_ingot',
+        S: 'gtceu:tempered_glass'
+    })
 
     event.remove({ id: 'nuclearcraft:fission_reactor_controller' })
-    event.shaped(
-        'nuclearcraft:fission_reactor_controller', [
-            "DED",
-            "EFE",
-            "DED"
-        ], {
-            F: 'gtceu:robust_machine_casing',
-            E: '#gtceu:circuits/ev',
-            D: 'nuclearcraft:plate_advanced'
-        }
-    )
+    event.shaped('nuclearcraft:fission_reactor_controller', [
+        "DED",
+        "EFE",
+        "DED"
+    ], {
+        F: 'gtceu:robust_machine_casing',
+        E: '#gtceu:circuits/ev',
+        D: 'nuclearcraft:plate_advanced'
+    })
 
     event.remove({ id: 'nuclearcraft:fission_reactor_port' })
     event.shapeless('nuclearcraft:fission_reactor_port', ['nuclearcraft:fission_reactor_casing', "minecraft:hopper"])
@@ -297,11 +281,11 @@ ServerEvents.recipes(event => {
         .EUt(2000)
         .duration(200)
 
-        event.recipes.gtceu.thermal_centrifuge("thoriumdecomp")
-            .itemInputs('gtceu:thorium_dust')
-            .itemOutputs('nuclearcraft:thorium_232')
-            .duration(1100)
-            .EUt(48)
+    event.recipes.gtceu.thermal_centrifuge("thoriumdecomp")
+        .itemInputs('gtceu:thorium_dust')
+        .itemOutputs('nuclearcraft:thorium_232')
+        .duration(1100)
+        .EUt(48)
 
     event.remove({
         output: [
@@ -380,8 +364,8 @@ ServerEvents.recipes(event => {
     event.shaped('nuclearcraft:fuel_plutonium_hep_241', ['AAA', 'ABB', 'BBB'], { A: 'gtceu:plutonium_241_ingot', B: 'nuclearcraft:plutonium_242' })
     event.shaped('nuclearcraft:fuel_americium_lea_242', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:americium_242', B: 'nuclearcraft:americium_243' })
     event.shaped('nuclearcraft:fuel_americium_hea_242', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:americium_242', B: 'nuclearcraft:americium_243' })
-	event.shaped('nuclearcraft:fuel_curium_lecm_243', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:curium_243', B: 'nuclearcraft:curium_246' })   
-	event.shaped('nuclearcraft:fuel_curium_hecm_243', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:curium_243', B: 'nuclearcraft:curium_246' })
+    event.shaped('nuclearcraft:fuel_curium_lecm_243', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:curium_243', B: 'nuclearcraft:curium_246' })
+    event.shaped('nuclearcraft:fuel_curium_hecm_243', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:curium_243', B: 'nuclearcraft:curium_246' })
     event.shaped('nuclearcraft:fuel_curium_lecm_245', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:curium_245', B: 'nuclearcraft:curium_246' })
     event.shaped('nuclearcraft:fuel_curium_hecm_245', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:curium_245', B: 'nuclearcraft:curium_246' })
     event.shaped('nuclearcraft:fuel_curium_lecm_247', ['ABB', 'BBB', 'BBB'], { A: 'nuclearcraft:curium_247', B: 'nuclearcraft:curium_246' })
@@ -394,60 +378,58 @@ ServerEvents.recipes(event => {
     event.shaped('nuclearcraft:fuel_californium_hecf_251', ['AAA', 'ABB', 'BBB'], { A: 'nuclearcraft:californium_251', B: 'nuclearcraft:californium_252' })
 
 
-        event.recipes.gtceu.distillery('distill_tech_water')
-            .inputFluids('gtceu:distilled_water 20')
-            .circuit(5)
-            .outputFluids('nuclearcraft:technical_water 20')
-            .duration(20).EUt(120)
-			
-	function rtg(name, input) {
-		event.remove({ output: `nuclearcraft:${name}_rtg` })
-		event.recipes.gtceu.assembler(name)
-			.itemInputs('4x gtceu:graphite_plate', '4x nuclearcraft:plate_advanced', `4x ${input}`)
-			.itemOutputs(`nuclearcraft:${name}_rtg`)
-			.duration(200)
-			.EUt(1920)
-	}
-	
-	rtg('americium', 'nuclearcraft:americium_241')
-	rtg('plutonium', 'nuclearcraft:plutonium_238')
-	rtg('uranium', 'gtceu:uranium_ingot')
-	rtg('californium', 'nuclearcraft:californium_250')
-	
-	function coils(name) {
-		event.remove({ output: `nuclearcraft:coil_${name}` })
-		event.recipes.gtceu.assembler(name)
-			.itemInputs('1x gtceu:magnetic_steel_rod', `16x gtceu:fine_${name}_wire`)
-			.itemOutputs(`nuclearcraft:coil_${name}`)
-			.circuit(1)
-			.duration(200)
-			.EUt(480)
-	}
-	
-	coils('copper')
-	coils('magnesium_diboride')
-	
-	event.replaceInput({ input: 'nuclearcraft:bioplastic' }, 'nuclearcraft:bioplastic', '#forge:plastic_plates')
-	event.replaceInput({ input: 'nuclearcraft:basic_electronic_circuit' }, 'nuclearcraft:basic_electric_circuit', '#gtceu:circuits/hv')
-	event.replaceInput({ input: 'nuclearcraft:gelatin' }, 'nuclearcraft:gelatin', '#forge:rubber_plates')
-	event.replaceInput({ input: 'nuclearcraft:lithium_ion_cell' }, 'nuclearcraft:lithium_ion_cell', '#gtceu:batteries/hv')
-	event.replaceInput({ output: /nuclearcraft:hev/ }, 'nuclearcraft:plate_extreme', 'nuclearcraft:plate_advanced')
-	
-	event.remove({ id: 'nuclearcraft:heavy_shielding' })
-	event.shaped(
-        'nuclearcraft:heavy', [
-            "BBB",
-            "MPM",
-            "DDD"
-        ], {
-            B: '#forge:plates/beryllium',
-            M: 'nuclearcraft:medium',
-            P: '#forge:plastic_plates',
-            D: 'nuclearcraft:plate_du'
-        }
-    )
-	
-	event.remove({
+    event.recipes.gtceu.distillery('distill_tech_water')
+        .inputFluids('gtceu:distilled_water 20')
+        .circuit(5)
+        .outputFluids('nuclearcraft:technical_water 20')
+        .duration(20).EUt(120)
+
+    function rtg(name, input) {
+        event.remove({ output: `nuclearcraft:${name}_rtg` })
+        event.recipes.gtceu.assembler(name)
+            .itemInputs('4x gtceu:graphite_plate', '4x nuclearcraft:plate_advanced', `4x ${input}`)
+            .itemOutputs(`nuclearcraft:${name}_rtg`)
+            .duration(200)
+            .EUt(1920)
+    }
+
+    rtg('americium', 'nuclearcraft:americium_241')
+    rtg('plutonium', 'nuclearcraft:plutonium_238')
+    rtg('uranium', 'gtceu:uranium_ingot')
+    rtg('californium', 'nuclearcraft:californium_250')
+
+    function coils(name) {
+        event.remove({ output: `nuclearcraft:coil_${name}` })
+        event.recipes.gtceu.assembler(name)
+            .itemInputs('1x gtceu:magnetic_steel_rod', `16x gtceu:fine_${name}_wire`)
+            .itemOutputs(`nuclearcraft:coil_${name}`)
+            .circuit(1)
+            .duration(200)
+            .EUt(480)
+    }
+
+    coils('copper')
+    coils('magnesium_diboride')
+
+    event.replaceInput({ input: 'nuclearcraft:bioplastic' }, 'nuclearcraft:bioplastic', '#forge:plastic_plates')
+    event.replaceInput({ input: 'nuclearcraft:basic_electronic_circuit' }, 'nuclearcraft:basic_electric_circuit', '#gtceu:circuits/hv')
+    event.replaceInput({ input: 'nuclearcraft:gelatin' }, 'nuclearcraft:gelatin', '#forge:rubber_plates')
+    event.replaceInput({ input: 'nuclearcraft:lithium_ion_cell' }, 'nuclearcraft:lithium_ion_cell', '#gtceu:batteries/hv')
+    event.replaceInput({ output: /nuclearcraft:hev/ }, 'nuclearcraft:plate_extreme', 'nuclearcraft:plate_advanced')
+
+    event.remove({ id: 'nuclearcraft:heavy_shielding' })
+    event.shaped('nuclearcraft:heavy', [
+        "BBB",
+        "MPM",
+        "DDD"
+    ], {
+        B: '#forge:plates/beryllium',
+        M: 'nuclearcraft:medium',
+        P: '#forge:plastic_plates',
+        D: 'nuclearcraft:plate_du'
+    })
+
+    event.remove({
         output: [
             'nuclearcraft:motor',
             'nuclearcraft:plate_extreme',
@@ -456,50 +438,49 @@ ServerEvents.recipes(event => {
             'nuclearcraft:tough_chest',
             'nuclearcraft:tough_pants',
             'nuclearcraft:tough_boots',
-			'nuclearcraft:solar_panel_basic',
-			'nuclearcraft:solar_panel_advanced',
-			'nuclearcraft:solar_panel_du',
-			'nuclearcraft:solar_panel_elite',
-			'nuclearcraft:basic_voltaic_pile',
-			'nuclearcraft:elite_voltaic_pile',
-			'nuclearcraft:advanced_voltaic_pile',
-			'nuclearcraft:du_voltaic_pile',
-			'nuclearcraft:basic_storage_container',
-			'nuclearcraft:elite_storage_container',
-			'nuclearcraft:advanced_storage_container',
-			'nuclearcraft:du_storage_container',
-			'nuclearcraft:empty_frame',
-			'nuclearcraft:dps',
-			'nuclearcraft:rad_x',
-			'nuclearcraft:servo',
-			'nuclearcraft:bscco_electromagnet',
-			'nuclearcraft:bscco_rf_amplifier',
-			'nuclearcraft:niobium_tin_electromagnet',
-			'nuclearcraft:niobium_tin_rf_amplifier',
-			'nuclearcraft:lithium_ion_cell',
-			'nuclearcraft:basic_lithium_ion_battery',
-			'nuclearcraft:advanced_lithium_ion_battery',
-			'nuclearcraft:du_lithium_ion_battery',
-			'nuclearcraft:elite_lithium_ion_battery',
-			'nuclearcraft:basic_barrel',
-			'nuclearcraft:elite_barrel',
-			'nuclearcraft:advanced_barrel',
-			'nuclearcraft:du_barrel'
+            'nuclearcraft:solar_panel_basic',
+            'nuclearcraft:solar_panel_advanced',
+            'nuclearcraft:solar_panel_du',
+            'nuclearcraft:solar_panel_elite',
+            'nuclearcraft:basic_voltaic_pile',
+            'nuclearcraft:elite_voltaic_pile',
+            'nuclearcraft:advanced_voltaic_pile',
+            'nuclearcraft:du_voltaic_pile',
+            'nuclearcraft:basic_storage_container',
+            'nuclearcraft:elite_storage_container',
+            'nuclearcraft:advanced_storage_container',
+            'nuclearcraft:du_storage_container',
+            'nuclearcraft:empty_frame',
+            'nuclearcraft:dps',
+            'nuclearcraft:rad_x',
+            'nuclearcraft:servo',
+            'nuclearcraft:bscco_electromagnet',
+            'nuclearcraft:bscco_rf_amplifier',
+            'nuclearcraft:niobium_tin_electromagnet',
+            'nuclearcraft:niobium_tin_rf_amplifier',
+            'nuclearcraft:lithium_ion_cell',
+            'nuclearcraft:basic_lithium_ion_battery',
+            'nuclearcraft:advanced_lithium_ion_battery',
+            'nuclearcraft:du_lithium_ion_battery',
+            'nuclearcraft:elite_lithium_ion_battery',
+            'nuclearcraft:basic_barrel',
+            'nuclearcraft:elite_barrel',
+            'nuclearcraft:advanced_barrel',
+            'nuclearcraft:du_barrel'
         ]
     })
-    
+
 });
 
 ServerEvents.tags('item', event => {
-	
-	event.add('forge:plastic_plates', 'gtceu:polyvinyl_chloride_plate')
-	event.add('forge:plastic_plates', 'gtceu:polybenzimidazole_plate')
-	event.add('forge:plastic_plates', 'gtceu:polyethylene_plate')
-	event.add('forge:plastic_plates', 'gtceu:polytetrafluoroethylene_plate')
+
+    event.add('forge:plastic_plates', 'gtceu:polyvinyl_chloride_plate')
+    event.add('forge:plastic_plates', 'gtceu:polybenzimidazole_plate')
+    event.add('forge:plastic_plates', 'gtceu:polyethylene_plate')
+    event.add('forge:plastic_plates', 'gtceu:polytetrafluoroethylene_plate')
     event.add('forge:plastic_plates', 'gtceu:polyethyl_cyanoacrylate_plate')
-	
-	event.add('forge:rubber_plates', 'gtceu:silicone_rubber_plate')
-	event.add('forge:rubber_plates', 'gtceu:styrene_butadiene_rubber_plate')
-	event.add('forge:rubber_plates', 'gtceu:rubber_plate')
-	
+
+    event.add('forge:rubber_plates', 'gtceu:silicone_rubber_plate')
+    event.add('forge:rubber_plates', 'gtceu:styrene_butadiene_rubber_plate')
+    event.add('forge:rubber_plates', 'gtceu:rubber_plate')
 });

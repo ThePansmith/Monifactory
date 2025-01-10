@@ -12,8 +12,8 @@ ServerEvents.recipes(event => {
             )
             .duration(45)
             .EUt(1966080)
-     
-            
+
+
         ////// Crystallization recipes /////
         event.recipes.gtceu.universal_crystallizer('diamond_crystallization')
             .itemInputs('64x gtceu:carbon_dust', '64x gtceu:carbon_dust', '64x gtceu:carbon_dust', '64x gtceu:carbon_dust', '64x gtceu:carbon_dust', '64x gtceu:carbon_dust', '64x gtceu:carbon_dust', '64x gtceu:carbon_dust')
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
             .itemOutputs('7x gtceu:palis_empowered_block')
             .duration(7)
             .EUt(1000000)
-        
+
         event.recipes.gtceu.universal_crystallizer('void_crystallization')
             .itemInputs('63x gtceu:coal_dust')
             .inputFluids('gtceu:enriched_naquadah 3')

@@ -1,92 +1,91 @@
 ServerEvents.recipes(event => {
     if (isHardMode) {
         ////// Machine Recipe //////
-        event.recipes.extendedcrafting.shaped_table(
-            'gtceu:actualization_chamber', [
-                'PPPPP',
-                'PEBSP',
-                'PCFCP',
-                'PSBEP',
-                'PPPPP'
-            ], {
-                P: 'gtceu:americium_plate',
-                E: 'gtceu:uv_emitter',
-                B: 'gtceu:fusion_coil',
-                S: 'gtceu:uv_sensor',
-                F: 'gtceu:uv_field_generator',
-                C: '#gtceu:circuits/uv'
-            }
+        event.recipes.extendedcrafting.shaped_table('gtceu:actualization_chamber', [
+            'PPPPP',
+            'PEBSP',
+            'PCFCP',
+            'PSBEP',
+            'PPPPP'
+        ], {
+            P: 'gtceu:americium_plate',
+            E: 'gtceu:uv_emitter',
+            B: 'gtceu:fusion_coil',
+            S: 'gtceu:uv_sensor',
+            F: 'gtceu:uv_field_generator',
+            C: '#gtceu:circuits/uv'
+        }
         )
         ////// Actualization recipes /////
         event.recipes.gtceu.actualization_chamber('pristine_t1_one')
             .itemInputs('kubejs:pristine_matter_t1')
             .circuit(1)
             .itemOutputs(
-                '64x kubejs:dense_iron_ore', 
-                '64x gtceu:cassiterite_ore', 
-                '64x gtceu:redstone_ore', 
-                '64x gtceu:nickel_ore', 
+                '64x kubejs:dense_iron_ore',
+                '64x gtceu:cassiterite_ore',
+                '64x gtceu:redstone_ore',
+                '64x gtceu:nickel_ore',
                 '64x gtceu:ilmenite_ore',
-                '64x gtceu:ilmenite_ore', 
-                '64x gtceu:ilmenite_ore', 
-                '64x gtceu:uraninite_ore', 
-                '64x gtceu:galena_ore', 
+                '64x gtceu:ilmenite_ore',
+                '64x gtceu:ilmenite_ore',
+                '64x gtceu:uraninite_ore',
                 '64x gtceu:galena_ore',
-                '64x gtceu:molybdenum_ore', 
-                '64x ad_astra:moon_sand', 
-                '64x gtceu:dilithium_ore', 
+                '64x gtceu:galena_ore',
+                '64x gtceu:molybdenum_ore',
+                '64x ad_astra:moon_sand',
+                '64x gtceu:dilithium_ore',
                 '64x gtceu:salt_ore'
             )
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t1_two')
             .itemInputs('kubejs:pristine_matter_t1')
             .circuit(2)
             .itemOutputs(
-                '64x gtceu:diamond_ore', 
-                '64x gtceu:apatite_ore', 
-                '64x gtceu:tricalcium_phosphate_ore', 
+                '64x gtceu:diamond_ore',
+                '64x gtceu:apatite_ore',
+                '64x gtceu:tricalcium_phosphate_ore',
                 '64x gtceu:quartzite_ore'
             )
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t1_three')
             .itemInputs('kubejs:pristine_matter_t1')
             .circuit(3)
             .itemOutputs('kubejs:stellar_creation_data')
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t2_one')
             .itemInputs('kubejs:pristine_matter_t2')
             .circuit(1)
             .itemOutputs(
-                '64x gtceu:endstone_bauxite_ore', 
-                '64x gtceu:endstone_pyrochlore_ore', 
+                '64x gtceu:endstone_bauxite_ore',
+                '64x gtceu:endstone_pyrochlore_ore',
                 '64x gtceu:endstone_pyrochlore_ore',
                 '64x gtceu:endstone_tantalite_ore', // replace with dense copper? idk wait for response
-                '64x gtceu:endstone_copper_ore', 
-                '64x gtceu:endstone_copper_ore', 
                 '64x gtceu:endstone_copper_ore',
-                '64x gtceu:endstone_sphalerite_ore', 
-                '64x gtceu:endstone_cassiterite_ore', 
-                '64x gtceu:endstone_scheelite_ore', 
+                '64x gtceu:endstone_copper_ore',
+                '64x gtceu:endstone_copper_ore',
+                '64x gtceu:endstone_sphalerite_ore',
+                '64x gtceu:endstone_cassiterite_ore',
                 '64x gtceu:endstone_scheelite_ore',
-                '64x gtceu:endstone_tungstate_ore', 
+                '64x gtceu:endstone_scheelite_ore',
+                '64x gtceu:endstone_tungstate_ore',
                 '64x kubejs:radium_salt'
             )
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t2_two')
             .itemInputs('kubejs:pristine_matter_t2')
             .circuit(2)
             .itemOutputs('4x kubejs:stellar_creation_data')
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t3_one')
             .itemInputs('kubejs:pristine_matter_t3')
             .circuit(1)
@@ -102,7 +101,7 @@ ServerEvents.recipes(event => {
             )
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t3_two')
             .itemInputs('kubejs:pristine_matter_t3')
             .circuit(2)
@@ -130,7 +129,7 @@ ServerEvents.recipes(event => {
             )
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t3_three')
             .itemInputs('kubejs:pristine_matter_t3')
             .circuit(3)
@@ -147,11 +146,11 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '64x kubejs:dense_oilsands_ore',
                 '64x kubejs:dense_oilsands_ore',
-                'kubejs:compressed_infinity_dust_block'                
+                'kubejs:compressed_infinity_dust_block'
             )
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t4_two')
             .itemInputs('kubejs:pristine_matter_t4')
             .circuit(2)
@@ -165,7 +164,7 @@ ServerEvents.recipes(event => {
             )
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t4_three')
             .itemInputs('kubejs:pristine_matter_t4')
             .circuit(3)
@@ -179,7 +178,7 @@ ServerEvents.recipes(event => {
             )
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t4half_one')
             .itemInputs('kubejs:pristine_matter_t4half')
             .circuit(1)
@@ -276,7 +275,7 @@ ServerEvents.recipes(event => {
             )
             .duration(780)
             .EUt(30720)
-        
+
         event.recipes.gtceu.actualization_chamber('pristine_t4half_seven')
             .itemInputs('kubejs:pristine_matter_t4half')
             .circuit(7)
@@ -361,8 +360,8 @@ ServerEvents.recipes(event => {
             )
             .duration(780)
             .EUt(30720)
-        
-            event.recipes.gtceu.actualization_chamber('pristine_t6_five')
+
+        event.recipes.gtceu.actualization_chamber('pristine_t6_five')
             .itemInputs('kubejs:pristine_matter_t6')
             .circuit(5)
             .itemOutputs(
@@ -375,21 +374,21 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t7')
             .circuit(1)
             .itemOutputs(
-                '32x kubejs:warden_heart', 
-                '64x minecraft:sculk_catalyst', 
-                '64x minecraft:sculk_catalyst', 
-                '64x kubejs:warden_horn', 
-                '64x kubejs:warden_horn', 
-                '64x kubejs:warden_horn', 
-                '64x kubejs:warden_horn', 
-                '64x minecraft:gold_block', 
-                '64x minecraft:gold_block', 
-                '64x minecraft:gold_block', 
-                '64x gtceu:silver_block', 
-                '64x gtceu:silver_block', 
-                '64x minecraft:diamond_block', 
-                '64x minecraft:diamond_block', 
-                '64x gtceu:platinum_block', 
+                '32x kubejs:warden_heart',
+                '64x minecraft:sculk_catalyst',
+                '64x minecraft:sculk_catalyst',
+                '64x kubejs:warden_horn',
+                '64x kubejs:warden_horn',
+                '64x kubejs:warden_horn',
+                '64x kubejs:warden_horn',
+                '64x minecraft:gold_block',
+                '64x minecraft:gold_block',
+                '64x minecraft:gold_block',
+                '64x gtceu:silver_block',
+                '64x gtceu:silver_block',
+                '64x minecraft:diamond_block',
+                '64x minecraft:diamond_block',
+                '64x gtceu:platinum_block',
                 '16x gtceu:ruthenium_block'
             )
             .duration(780)
@@ -425,12 +424,12 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t8')
             .circuit(2)
             .itemOutputs(
-                '64x minecraft:dragon_egg', 
-                '64x minecraft:dragon_egg', 
-                '64x minecraft:dragon_egg', 
-                '64x minecraft:dragon_egg', 
-                '64x minecraft:dragon_egg', 
-                '64x minecraft:dragon_egg', 
+                '64x minecraft:dragon_egg',
+                '64x minecraft:dragon_egg',
+                '64x minecraft:dragon_egg',
+                '64x minecraft:dragon_egg',
+                '64x minecraft:dragon_egg',
+                '64x minecraft:dragon_egg',
                 '64x kubejs:ender_dragon_scale'
             )
             .duration(780)
@@ -440,9 +439,9 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:pristine_matter_t8')
             .circuit(3)
             .itemOutputs(
-                '32x gtceu:quantum_star', 
-                '64x gtceu:quantum_eye', 
-                '16x gtceu:neutronium_ingot', 
+                '32x gtceu:quantum_star',
+                '64x gtceu:quantum_eye',
+                '16x gtceu:neutronium_ingot',
                 'gtceu:gravi_star'
             )
             .duration(780)
@@ -465,7 +464,7 @@ ServerEvents.recipes(event => {
             .duration(780)
             .EUt(30720)
 
-    event.recipes.gtceu.advanced_microverse_iii('pristine_t8half_two')
+        event.recipes.gtceu.advanced_microverse_iii('pristine_t8half_two')
             .itemInputs(
                 'kubejs:pristine_matter_t8half'
             )
