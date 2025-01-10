@@ -425,6 +425,12 @@
   "item.kubejs.uev_universal_circuit": "UEV Universal Circuit",
   "item.kubejs.uiv_universal_circuit": "UIV Universal Circuit",
 
+  "item.kubejs.lv_exoskeleton_legs": "LV Exoskeleton Legs",
+  "item.kubejs.mv_exoskeleton_legs": "MV Exoskeleton Legs",
+  "item.kubejs.hv_exoskeleton_legs": "HV Exoskeleton Legs",
+  "item.kubejs.ev_exoskeleton_legs": "EV Exoskeleton Legs",
+  "item.kubejs.iv_exoskeleton_legs": "IV Exoskeleton Legs",
+
   "jetpack.conductive_iron.name": "Conductive Iron",
   "jetpack.creative.name": "Creative",
   "jetpack.dark_soularium.name": "Dark Soularium",
