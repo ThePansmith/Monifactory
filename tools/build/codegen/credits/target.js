@@ -112,7 +112,7 @@ export const CodegenCreditsTarget = new Juke.Target({
         const elements = fillTemplates(
           creditScreenContributorTemplate,
           {
-            '{{MC_UUID}}': data.mcuuid ?? 'meowni',
+            '{{MC_UUID}}': data.mcuuid ?? 'justenoughitems',
             '{{V4_UUID}}': data.mcuuid ?? randomUUID(),
             '{{PLAYERNAME}}': name,
             // "NAME - DESC" if description exists, just "NAME" otherwise
