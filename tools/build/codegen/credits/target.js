@@ -23,7 +23,15 @@ const creditScreenLayoutTemplateFilePath = resolveNeighbourFilePath('pack_credit
 const creditScreenContributorTemplateFilePath = resolveNeighbourFilePath('pack_credit_screen_contributor.template.txt');
 
 export const CodegenCreditsTarget = new Juke.Target({
-  inputs: [contributorsFilePath],
+  inputs: [
+    devCapeTemplateFilePath,
+    devCapesTemplateFilePath,
+
+    creditScreenLayoutTemplateFilePath,
+    creditScreenContributorTemplateFilePath,
+
+    contributorsFilePath
+  ],
   outputs: [
     devCapesFilePath,
     creditScreenLayoutFilePath,
@@ -104,7 +112,7 @@ export const CodegenCreditsTarget = new Juke.Target({
         const elements = fillTemplates(
           creditScreenContributorTemplate,
           {
-            '{{MC_UUID}}': data.mcuuid ?? 'steve',
+            '{{MC_UUID}}': data.mcuuid ?? 'meowni',
             '{{V4_UUID}}': data.mcuuid ?? randomUUID(),
             '{{PLAYERNAME}}': name,
             // "NAME - DESC" if description exists, just "NAME" otherwise
