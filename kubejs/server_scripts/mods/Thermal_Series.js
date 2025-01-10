@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:rf_coil'] })
+    event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'thermal:dynamo_gourmand', 'systeams:boiler_pipe', 'thermal:rf_coil'] })
     event.remove({ output: ['thermal:dynamo_throttle_augment', 'thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
     event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame'] })
     event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer'] })
@@ -347,6 +347,18 @@ ServerEvents.recipes(event => {
         B: 'gtceu:energetic_alloy_plate',
         C: 'ironfurnaces:gold_furnace',
         D: 'enderio:energized_gear',
+        E: 'kubejs:redstone_transmission_coil'
+    })
+
+    event.shaped('thermal:dynamo_gourmand', [
+        ' A ',
+        'BCB',
+        'DED'
+    ], {
+        A: 'kubejs:excitationcoil',
+        B: 'gtceu:blue_alloy_plate',
+        C: 'ironfurnaces:silver_furnace',
+        D: 'enderio:iron_gear',
         E: 'kubejs:redstone_transmission_coil'
     })
 
