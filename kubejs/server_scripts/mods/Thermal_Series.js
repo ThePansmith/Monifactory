@@ -489,7 +489,7 @@ ServerEvents.recipes(event => {
         .EUt(90)
 
     event.recipes.gtceu.chemical_reactor('elemental_reduction_blizz')
-        .itemInputs('minecraft:snow_block')
+        .itemInputs('gtceu:ice_dust')
         .inputFluids(Fluid.of('gtceu:elemental_reduction_fluid', 100))
         .itemOutputs('thermal:blizz_powder')
         .duration(80)
