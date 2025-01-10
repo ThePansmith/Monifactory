@@ -32,6 +32,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Terbium.setProperty($PropertyKey.BLAST, new $BlastProperty(7200, 'higher', 524288, 900, -1, -1));
     GTMaterials.Terbium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD)
 
+    GTMaterials.Californium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+
     GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 0, true))
     GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(10000, 18000, true, false, true, true))

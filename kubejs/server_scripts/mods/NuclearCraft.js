@@ -393,10 +393,10 @@ ServerEvents.recipes(event => {
             .EUt(1920)
     }
 
-    rtg('americium', 'nuclearcraft:americium_241')
-    rtg('plutonium', 'nuclearcraft:plutonium_238')
+    rtg('americium', 'gtceu:americium_ingot')
+    rtg('plutonium', 'gtceu:plutonium_ingot')
     rtg('uranium', 'gtceu:uranium_ingot')
-    rtg('californium', 'nuclearcraft:californium_250')
+    rtg('californium', 'gtceu:californium_ingot')
 
     function coils(name) {
         event.remove({ output: `nuclearcraft:coil_${name}` })
