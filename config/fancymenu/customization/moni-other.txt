@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_link_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736539444184
+  last_edited_time = 1736549886735
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:35f0a4ba-ccfc-4cf3-b5fd-6f199dce8aa6-1736539279915] = [groups:][instances:]
+  [loading_requirement_container_meta:fe843270-7e18-4ada-9972-096b70033f4a-1736549828140] = [groups:][instances:]
 }
 
 customization {
@@ -226,7 +226,7 @@ element {
   auto_sizing_base_screen_height = 1017
   sticky_anchor = false
   anchor_point = top-centered
-  x = -101
+  x = -102
   y = -4
   width = 203
   height = 64
@@ -270,8 +270,8 @@ element {
   anchor_point = mid-left
   advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*0.062","decimal":"false"}}
   x = 64
-  y = -34
-  width = 112
+  y = 38
+  width = 111
   height = 11
   stretch_x = false
   stretch_y = false
@@ -312,8 +312,8 @@ element {
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -13
-  y = 18
+  x = -14
+  y = -74
   width = 96
   height = 10
   stretch_x = false
@@ -355,8 +355,8 @@ element {
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -6
-  y = 28
+  x = -7
+  y = -64
   width = 96
   height = 10
   stretch_x = false
@@ -398,8 +398,8 @@ element {
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -7
-  y = 58
+  x = -8
+  y = -34
   width = 96
   height = 10
   stretch_x = false
@@ -441,8 +441,8 @@ element {
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -10
-  y = 38
+  x = -11
+  y = -54
   width = 96
   height = 10
   stretch_x = false
@@ -484,8 +484,8 @@ element {
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -5
-  y = 68
+  x = -6
+  y = -24
   width = 96
   height = 10
   stretch_x = false
@@ -527,8 +527,8 @@ element {
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = 10
-  y = 48
+  x = 9
+  y = -44
   width = 96
   height = 10
   stretch_x = false
