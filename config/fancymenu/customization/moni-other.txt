@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_link_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736536984922
+  last_edited_time = 1736539444184
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:f512789f-ad44-4b80-ba79-6687ff778eeb-1736536934229] = [groups:][instances:]
+  [loading_requirement_container_meta:35f0a4ba-ccfc-4cf3-b5fd-6f199dce8aa6-1736539279915] = [groups:][instances:]
 }
 
 customization {
@@ -76,9 +76,54 @@ element {
 }
 
 element {
+  button_element_executable_block_identifier = 20425c46-1eaa-419c-9307-381504146c63-1731716577421
+  [executable_action_instance:cb708578-9075-432b-a694-afdc65f3975b-1731716714299][action_type:opengui] = menu_base_fullscreen
+  [executable_block:20425c46-1eaa-419c-9307-381504146c63-1731716577421][type:generic] = [executables:cb708578-9075-432b-a694-afdc65f3975b-1731716714299;]
+  backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  description = Click to view bases!
+  label = 
+  navigatable = false
+  widget_active_state_requirement_container_identifier = d05d4dde-2544-44a4-9fda-04a2e3094fae-1736463655841
+  [loading_requirement_container_meta:d05d4dde-2544-44a4-9fda-04a2e3094fae-1736463655841] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = 54799c9d-785f-4463-9d6e-ea4f5b457250-1736535806373
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1921
+  auto_sizing_base_screen_height = 1017
+  sticky_anchor = false
+  anchor_point = mid-centered
+  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*0.69","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*0.25","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*0.19","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*0.33","decimal":"false"}}
+  x = 32
+  y = -59
+  width = 143
+  height = 50
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 7638707c-5d28-4bd9-8ece-bee3ac414278-1731716577421
+  [loading_requirement_container_meta:7638707c-5d28-4bd9-8ece-bee3ac414278-1731716577421] = [groups:][instances:]
+}
+
+element {
   interactable = true
-  source = # 1%n%## 2%n%### 3%n%4%n%5%n%6%n%7%n%8%n%9%n%10%n%11%n%12%n%13%n%14%n%15%n%
-  source_mode = direct
+  source = [source:web]https://gist.githubusercontent.com/ThePansmith/99767cf11961eab4c91171de402101d8/raw/Moni%2520Menu%2520Text.md
+  source_mode = resource
   shadow = true
   scale = 0.5
   base_color = #FFFFFFFF
@@ -104,7 +149,7 @@ element {
   instance_identifier = 13ea394d-bb4f-42f2-98b8-be77816e8d1d-1736535806372
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
-  fade_in_v2 = first_time
+  fade_in_v2 = no_fading
   fade_in_speed = 1.0
   fade_out = no_fading
   fade_out_speed = 1.0
@@ -491,51 +536,6 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
   [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
-}
-
-element {
-  button_element_executable_block_identifier = 20425c46-1eaa-419c-9307-381504146c63-1731716577421
-  [executable_action_instance:cb708578-9075-432b-a694-afdc65f3975b-1731716714299][action_type:opengui] = menu_base_fullscreen
-  [executable_block:20425c46-1eaa-419c-9307-381504146c63-1731716577421][type:generic] = [executables:cb708578-9075-432b-a694-afdc65f3975b-1731716714299;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  description = Can be scrolled!%n%Click to view bases!
-  label = 
-  navigatable = false
-  widget_active_state_requirement_container_identifier = d05d4dde-2544-44a4-9fda-04a2e3094fae-1736463655841
-  [loading_requirement_container_meta:d05d4dde-2544-44a4-9fda-04a2e3094fae-1736463655841] = [groups:][instances:]
-  element_type = custom_button
-  instance_identifier = 54799c9d-785f-4463-9d6e-ea4f5b457250-1736535806373
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 1921
-  auto_sizing_base_screen_height = 1017
-  sticky_anchor = false
-  anchor_point = mid-centered
-  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*0.69","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*0.25","decimal":"false"}}
-  advanced_width = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*0.19","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*0.33","decimal":"false"}}
-  x = 32
-  y = -59
-  width = 143
-  height = 50
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 7638707c-5d28-4bd9-8ece-bee3ac414278-1731716577421
-  [loading_requirement_container_meta:7638707c-5d28-4bd9-8ece-bee3ac414278-1731716577421] = [groups:][instances:]
 }
 
 element {
