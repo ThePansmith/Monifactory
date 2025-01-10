@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_link_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736469598448
+  last_edited_time = 1736474876462
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:c46dc4dc-efc2-4fcd-90b6-0bba141c3563-1736469462675] = [groups:][instances:]
+  [loading_requirement_container_meta:f9807989-f7a2-4241-9621-eda5d7815187-1736474867623] = [groups:][instances:]
 }
 
 customization {
@@ -223,13 +223,13 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1924
-  auto_sizing_base_screen_height = 1083
+  auto_sizing_base_screen_width = 1848
+  auto_sizing_base_screen_height = 1060
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = mc_titlescreen_singleplayer_button
-  x = 32
-  y = 85
+  x = 35
+  y = 87
   width = 96
   height = 10
   stretch_x = false
@@ -241,8 +241,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797][action_type:closegui] = 
-  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797;]
+  [executable_action_instance:143400da-a8ba-4fad-be7b-941722b6ce45-1736470073791][action_type:openlink] = https://github.com/ThePansmith/Monifactory/blob/main/FAQ.md
+  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:143400da-a8ba-4fad-be7b-941722b6ce45-1736470073791;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
@@ -266,13 +266,13 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1924
-  auto_sizing_base_screen_height = 1083
+  auto_sizing_base_screen_width = 1848
+  auto_sizing_base_screen_height = 1060
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -17
-  y = 15
+  x = -21
+  y = 18
   width = 96
   height = 10
   stretch_x = false
@@ -284,8 +284,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797][action_type:closegui] = 
-  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797;]
+  [executable_action_instance:7ecdd4f3-7d21-4354-9615-f43ebeb3af08-1736470116664][action_type:openlink] = https://discord.com/invite/pC8eZQpWqK
+  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:7ecdd4f3-7d21-4354-9615-f43ebeb3af08-1736470116664;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
@@ -309,13 +309,13 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1924
-  auto_sizing_base_screen_height = 1083
+  auto_sizing_base_screen_width = 1848
+  auto_sizing_base_screen_height = 1060
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -10
-  y = 26
+  x = -14
+  y = 28
   width = 96
   height = 10
   stretch_x = false
@@ -327,8 +327,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797][action_type:closegui] = 
-  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797;]
+  [executable_action_instance:7366e83b-8449-4285-8f55-027568fed821-1736470766925][action_type:opengui] = pack_credit_screen
+  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:7366e83b-8449-4285-8f55-027568fed821-1736470766925;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
@@ -352,12 +352,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1924
-  auto_sizing_base_screen_height = 1083
+  auto_sizing_base_screen_width = 1848
+  auto_sizing_base_screen_height = 1060
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -11
+  x = -15
   y = 48
   width = 96
   height = 10
@@ -370,8 +370,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797][action_type:closegui] = 
-  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797;]
+  [executable_action_instance:0606b6c8-533b-48d6-a249-69bdd82e51a3-1736470167779][action_type:openlink] = https://github.com/ThePansmith/Monifactory
+  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:0606b6c8-533b-48d6-a249-69bdd82e51a3-1736470167779;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
@@ -395,13 +395,13 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1924
-  auto_sizing_base_screen_height = 1083
+  auto_sizing_base_screen_width = 1848
+  auto_sizing_base_screen_height = 1060
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -14
-  y = 37
+  x = -18
+  y = 38
   width = 96
   height = 10
   stretch_x = false
@@ -413,8 +413,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797][action_type:closegui] = 
-  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797;]
+  [executable_action_instance:1407d125-f552-4801-83d2-c1c8d9503998-1736470220017][action_type:openlink] = https://www.patreon.com/Pansmith
+  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:1407d125-f552-4801-83d2-c1c8d9503998-1736470220017;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
@@ -438,13 +438,13 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1924
-  auto_sizing_base_screen_height = 1083
+  auto_sizing_base_screen_width = 1848
+  auto_sizing_base_screen_height = 1060
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -9
-  y = 59
+  x = -13
+  y = 58
   width = 96
   height = 10
   stretch_x = false
