@@ -356,7 +356,7 @@ ServerEvents.recipes(event => {
 
     // Emitters
     event.recipes.gtceu.assembly_line('uhv_emitter')
-        .itemInputs('gtceu:neutronium_frame', 'gtceu:uhv_electric_motor', '4x gtceu:actinium_rod', '2x gtceu:gravi_star', '#gtceu:circuits/uhv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:europium_single_cable')
+        .itemInputs('gtceu:neutronium_frame', 'gtceu:uhv_electric_motor', '4x gtceu:long_actinium_rod', '2x gtceu:gravi_star', '#gtceu:circuits/uhv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:europium_single_cable')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 1152', 'gtceu:naquadria 576')
         .itemOutputs('gtceu:uhv_emitter')
         .duration(600)
@@ -369,7 +369,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('uev_emitter')
-        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:sculk_bioalloy_rod', 'kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:omnium_single_cable')
+        .itemInputs('gtceu:omnium_frame', 'gtceu:uev_electric_motor', '4x gtceu:long_sculk_bioalloy_rod', 'kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uev', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:omnium_single_cable')
         .inputFluids('gtceu:soldering_alloy 5760', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 1152')
         .itemOutputs('gtceu:uev_emitter')
         .duration(600)
@@ -383,7 +383,7 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.assembly_line('uiv_emitter')
-        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:eltz_rod', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_single_wire')
+        .itemInputs('gtceu:infinity_frame', 'gtceu:uiv_electric_motor', '4x gtceu:long_eltz_rod', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/uiv', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:holmium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:naquadria 2304')
         .itemOutputs('gtceu:uiv_emitter')
         .duration(1200)

@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VHA[GTValues.HV])
 
-    event.recipes.gtceu.chemical_reactor("cyanoacetic_acid")
+    event.recipes.gtceu.large_chemical_reactor("cyanoacetic_acid")
         .itemInputs('2x gtceu:chloroacetate_dust', '2x gtceu:sodium_cyanide_dust', '1x gtceu:soda_ash_dust')
         .inputFluids('gtceu:hydrochloric_acid 700', 'minecraft:water 700')
         .itemOutputs('2x gtceu:cyanoacetic_acid_dust')

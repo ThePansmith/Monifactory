@@ -55,15 +55,12 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(16)
 
-    //Grham Cracker
+    //Graham Cracker
     event.recipes.gtceu.compressor('kubejs:graham_cracker')
         .itemInputs('2x gtceu:wheat_dust')
         .itemOutputs('nuclearcraft:graham_cracker')
         .EUt(20)
         .duration(200)
-    event.recipes.gtceu.macerator('kubejs:wheat_dust')
-        .itemInputs('minecraft:wheat')
-        .itemOutputs('gtceu:wheat_dust')
 
     //Marshmellow
     event.recipes.gtceu.fluid_solidifier('kubejs:solid_marshmallow')
@@ -90,7 +87,7 @@ ServerEvents.recipes(event => {
         .duration(45)
     event.recipes.gtceu.extractor('kubejs:gelatin')
         .itemInputs('gtceu:gelatin_dust')
-        .outputFluids('nuclearcraft:gelatin', 144)
+        .outputFluids('nuclearcraft:gelatin 144')
         .EUt(7)
         .duration(100)
 
