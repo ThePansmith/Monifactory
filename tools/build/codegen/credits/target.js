@@ -43,6 +43,7 @@ export const CodegenCreditsTarget = new Juke.Target({
      * @prop {string?} mcuuid
      * @prop {"dev"|"contributor"|"dev-alt"|"contributor-alt"} role
      * @prop {string?} description
+     * @prop {string?} link
      */
     /**
      * @typedef ContributorsFile
@@ -86,8 +87,8 @@ export const CodegenCreditsTarget = new Juke.Target({
       devCapesTemplateFilePath,
       devCapesFilePath,
       {
-        '/\*{{CODEGEN_DEVS}}\*/': getCapesByRole('dev'),
-        '/\*{{CODEGEN_CONTRIBUTORS}}\*/': getCapesByRole('contributor'),
+        '//{{CODEGEN_DEVS}}': getCapesByRole('dev'),
+        '//{{CODEGEN_CONTRIBUTORS}}': getCapesByRole('contributor'),
       },
     );
 
@@ -108,7 +109,7 @@ export const CodegenCreditsTarget = new Juke.Target({
       .filter(([_, data]) => !data.role.includes('alt'))
       // Bubble up people with skins, as they would be more interesting
       .sort((a, b) => Number(!!b[1].mcuuid) - Number(!!a[1].mcuuid))
-      .map(([name, data], i) => {
+      .map(([name, data]) => {
         const elements = fillTemplates(
           creditScreenContributorTemplate,
           {
@@ -121,6 +122,10 @@ export const CodegenCreditsTarget = new Juke.Target({
             '{{Y_SKIN}}': y,
             '{{X_BUTTON}}': x + hoverOffsetX,
             '{{Y_BUTTON}}': y + hoverOffsetY,
+            '{{IF_HAS_LINK}}([^]*?){{IF_HAS_LINK_END}}\n': data.link ? (_, match) => match : '',
+            '{{LINK}}': data.link ?? '',
+            '{{BUTTON_EXEC_ACTION_UUID}}': randomUUID(),
+            '{{BUTTON_EXEC_BLOCK_UUID}}': randomUUID(),
           },
         );
         x += stepX;

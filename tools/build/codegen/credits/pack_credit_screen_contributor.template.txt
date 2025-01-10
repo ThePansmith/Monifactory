@@ -52,4 +52,9 @@ element {
     width = 21
     height = 19
     anchor_point = top-left
+{{IF_HAS_LINK}}
+    [executable_action_instance:{{BUTTON_EXEC_ACTION_UUID}}][action_type:openlink] = {{LINK}}
+    [executable_block:{{BUTTON_EXEC_BLOCK_UUID}}][type:generic] = [executables:{{BUTTON_EXEC_ACTION_UUID}};]
+    button_element_executable_block_identifier = {{BUTTON_EXEC_BLOCK_UUID}}
+{{IF_HAS_LINK_END}}
 }
