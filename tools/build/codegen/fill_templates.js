@@ -4,12 +4,12 @@ import fs from 'fs';
 /**
  * Replaces all specified marker substrings in a string.
  * @param {string} template Original string that contains markers.
- * @param {Record<string, {toString(): string}>} filler Dictionary of markers and corresponding fillers.
- * @returns {string} Modified string with all specified markers replaced.
+ * @param {Record<string, {toString(): string}>} filler Dictionary of markers' regular expressions and corresponding fillers.
+ * @returns {string} Modified string with all matches replaced.
  */
 export const fillTemplates = (template, filler) =>
   Object.entries(filler)
-    .reduce((t, [key, value]) => t.replaceAll(key, value.toString()), template);
+    .reduce((t, [key, value]) => t.replaceAll(new RegExp(key, 'g'), value.toString()), template);
 
 /**
  * Replaces all specified marker substrings in a file and saves to another file.

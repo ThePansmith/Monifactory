@@ -30,7 +30,7 @@ export const CodegenCreditsTarget = new Juke.Target({
     creditScreenLayoutTemplateFilePath,
     creditScreenContributorTemplateFilePath,
 
-    contributorsFilePath
+    contributorsFilePath,
   ],
   outputs: [
     devCapesFilePath,
@@ -86,8 +86,8 @@ export const CodegenCreditsTarget = new Juke.Target({
       devCapesTemplateFilePath,
       devCapesFilePath,
       {
-        '/*{{CODEGEN_DEVS}}*/': getCapesByRole('dev'),
-        '/*{{CODEGEN_CONTRIBUTORS}}*/': getCapesByRole('contributor'),
+        '/\*{{CODEGEN_DEVS}}\*/': getCapesByRole('dev'),
+        '/\*{{CODEGEN_CONTRIBUTORS}}\*/': getCapesByRole('contributor'),
       },
     );
 
