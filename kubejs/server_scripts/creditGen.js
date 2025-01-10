@@ -11,29 +11,29 @@ let credits = [
     { name: "WithersChat", uuid: "13d0aeda-c1e9-4d91-a9b7-4d4e6a19128e", creditHover: "Contributor" },
     { name: "JuiceyBeans", uuid: "d7dfa467-51b9-4beb-9a40-24ec2c2b8759", creditHover: "Contributor" },
     { name: "Xefyr0", uuid: "a3b08192-f19b-4037-abcd-15093454d905", creditHover: "Contributor" },
-    // { name: "SparkedTheorem", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "IamNotBrianZ", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "tomprince", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "StarskyXIII", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "glektarssza", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "zcarp7220", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "Echoloquate", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "Titop54", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "owleee", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "lzzc87", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "Spicierspace153", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "globalista-dev", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "omergunr100", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "Blackalf14", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "threefold", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "RushanM", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "Midius", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "eve336", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "Zhaocl1997", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "Giovanni-NL", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "SillyAsriel", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "AubreyFumo", uuid: placeholder, creditHover: "Contributor" },
-    // { name: "esmenard", uuid: placeholder, creditHover: "Contributor" },
+    { name: "SparkedTheorem", uuid: placeholder, creditHover: "Contributor" },
+    { name: "IamNotBrianZ", uuid: placeholder, creditHover: "Contributor" },
+    { name: "tomprince", uuid: placeholder, creditHover: "Contributor" },
+    { name: "StarskyXIII", uuid: placeholder, creditHover: "Contributor" },
+    { name: "glektarssza", uuid: placeholder, creditHover: "Contributor" },
+    { name: "zcarp7220", uuid: placeholder, creditHover: "Contributor" },
+    { name: "Echoloquate", uuid: placeholder, creditHover: "Contributor" },
+    { name: "Titop54", uuid: placeholder, creditHover: "Contributor" },
+    { name: "owleee", uuid: placeholder, creditHover: "Contributor" },
+    { name: "lzzc87", uuid: placeholder, creditHover: "Contributor" },
+    { name: "Spicierspace153", uuid: placeholder, creditHover: "Contributor" },
+    { name: "globalista-dev", uuid: placeholder, creditHover: "Contributor" },
+    { name: "omergunr100", uuid: placeholder, creditHover: "Contributor" },
+    { name: "Blackalf14", uuid: placeholder, creditHover: "Contributor" },
+    { name: "threefold", uuid: placeholder, creditHover: "Contributor" },
+    { name: "RushanM", uuid: placeholder, creditHover: "Contributor" },
+    { name: "Midius", uuid: placeholder, creditHover: "Contributor" },
+    { name: "eve336", uuid: placeholder, creditHover: "Contributor" },
+    { name: "Zhaocl1997", uuid: placeholder, creditHover: "Contributor" },
+    { name: "Giovanni-NL", uuid: placeholder, creditHover: "Contributor" },
+    { name: "SillyAsriel", uuid: placeholder, creditHover: "Contributor" },
+    { name: "AubreyFumo", uuid: placeholder, creditHover: "Contributor" },
+    { name: "esmenard", uuid: placeholder, creditHover: "Contributor" },
 ]
 
 let startX = 20; // Initial x position
@@ -88,18 +88,13 @@ credits.forEach(contributor => {
         y = ${startY}
         width = 9
         height = 27
-        anchor_point = mid-centered
+        anchor_point = top-left
     }
     `;
 
     // Add Button Element
     result += `
     element {
-        nine_slice_custom_background = false
-        restartbackgroundanimations = true
-        loopbackgroundanimations = true
-        nine_slice_border_x = 5
-        nine_slice_border_y = 5
         description = ${name}
         element_type = custom_button
         instance_identifier = ${generateUUID()}-button
@@ -113,12 +108,7 @@ credits.forEach(contributor => {
         y = ${startY + hoverOffsetY}
         width = 21
         height = 19
-        auto_sizing = true
-        auto_sizing_base_screen_width = 1920
-        auto_sizing_base_screen_height = 1080
-        stay_on_screen = true
         anchor_point = top-left
-        sticky_anchor = false
         creditHover = ${creditHover}
     }
     `;
