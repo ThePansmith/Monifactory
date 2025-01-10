@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_link_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736498617100
+  last_edited_time = 1736530245846
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:78ba51b1-1400-4697-85ba-39343fd7e13b-1736498561716] = [groups:][instances:]
+  [loading_requirement_container_meta:0c57dcd5-7769-40e9-a3f3-bc947c4e1a7e-1736530236788] = [groups:][instances:]
 }
 
 customization {
@@ -102,12 +102,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1848
-  auto_sizing_base_screen_height = 1060
+  auto_sizing_base_screen_width = 1921
+  auto_sizing_base_screen_height = 1017
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = mc_titlescreen_singleplayer_button
-  x = 35
+  x = 34
   y = 87
   width = 96
   height = 10
@@ -145,12 +145,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1848
-  auto_sizing_base_screen_height = 1060
+  auto_sizing_base_screen_width = 1921
+  auto_sizing_base_screen_height = 1017
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -21
+  x = -20
   y = 18
   width = 96
   height = 10
@@ -188,12 +188,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1848
-  auto_sizing_base_screen_height = 1060
+  auto_sizing_base_screen_width = 1921
+  auto_sizing_base_screen_height = 1017
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -14
+  x = -13
   y = 28
   width = 96
   height = 10
@@ -231,13 +231,13 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1848
-  auto_sizing_base_screen_height = 1060
+  auto_sizing_base_screen_width = 1921
+  auto_sizing_base_screen_height = 1017
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -15
-  y = 48
+  x = -14
+  y = 58
   width = 96
   height = 10
   stretch_x = false
@@ -274,12 +274,12 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1848
-  auto_sizing_base_screen_height = 1060
+  auto_sizing_base_screen_width = 1921
+  auto_sizing_base_screen_height = 1017
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -18
+  x = -17
   y = 38
   width = 96
   height = 10
@@ -317,13 +317,13 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1848
-  auto_sizing_base_screen_height = 1060
+  auto_sizing_base_screen_width = 1921
+  auto_sizing_base_screen_height = 1017
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -13
-  y = 58
+  x = -12
+  y = 68
   width = 96
   height = 10
   stretch_x = false
@@ -352,7 +352,7 @@ element {
   advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"}*2.07 / 3 ","decimal":"false"}}
   x = 21
   y = -60
-  width = 80
+  width = 143
   height = 79
   stretch_x = false
   stretch_y = false
@@ -451,5 +451,48 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 0a37cdde-b073-457f-8679-254778fc9902-1717255141153
   [loading_requirement_container_meta:0a37cdde-b073-457f-8679-254778fc9902-1717255141153] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
+  [executable_action_instance:1407d125-f552-4801-83d2-c1c8d9503998-1736470220017][action_type:openlink] = https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#installation
+  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:1407d125-f552-4801-83d2-c1c8d9503998-1736470220017;]
+  backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  hoverlabel = &9Set Mode
+  label = Set Mode
+  navigatable = true
+  widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
+  [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = 89c7ca09-0fd3-4486-a42c-4fce9752f064-1736529939598
+  custom_element_layer_name = Patreon
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1921
+  auto_sizing_base_screen_height = 1017
+  sticky_anchor = false
+  anchor_point = element
+  anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
+  x = -10
+  y = 48
+  width = 96
+  height = 10
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
+  [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
 }
 
