@@ -45,7 +45,6 @@ element {
     backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
     backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
     navigatable = true
-    custom_element_layer_name = Patreon
     appearance_delay_seconds = 1.0
     base_opacity = 1.0
     x = {{X_BUTTON}}
