@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     //Replace Logic chips with circuits.
     event.remove({ output: ['laserio:logic_chip_raw', 'laserio:logic_chip'] })
     event.replaceInput({ mod: 'laserio', not: [{ id: 'laserio:card_item' }, { id: 'laserio:card_fluid' }, { id: 'laserio:card_energy' }, { id: 'laserio:card_redstone' }] }, 'laserio:logic_chip', cardChip)
- 
+
     const Cards = [
         ['item', 'gtceu:pulsating_alloy_plate'],
         ['fluid', 'gtceu:iron_plate'],
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     ]
 
     if (!isExpertMode) {
-        
+
 
         Cards.forEach(card => {
             event.shaped(
@@ -33,13 +33,12 @@ ServerEvents.recipes(event => {
                 C: cardChip,
                 G: 'minecraft:gold_nugget',
                 T: 'gtceu:tin_plate'
-            }
-            ).id(`laserio:card_${card[0]}`)
+            }).id(`laserio:card_${card[0]}`)
         })
 
 
         //Laser Connectors
-        event.shaped("4x laserio:laser_connector", [
+        event.shaped('4x laserio:laser_connector', [
             " E ",
             "RRR",
             "SSS"
@@ -47,9 +46,8 @@ ServerEvents.recipes(event => {
             S: 'gtceu:steel_plate',
             E: 'gtceu:glass_tube',
             R: 'gtceu:red_alloy_plate'
-        }
-        ).id('laserio:laser_connector')
-        event.shaped("laserio:laser_node", [
+        }).id('laserio:laser_connector')
+        event.shaped('laserio:laser_node', [
             "PGP",
             "GRG",
             "PGP"
@@ -57,10 +55,9 @@ ServerEvents.recipes(event => {
             P: 'gtceu:steel_plate',
             G: '#forge:glass_panes/colorless',
             R: 'laserio:laser_connector'
-        }
-        ).id('laserio:laser_node')
+        }).id('laserio:laser_node')
 
-        event.shaped("2x laserio:laser_connector_advanced", [
+        event.shaped('2x laserio:laser_connector_advanced', [
             " E ",
             "RCR",
             "FFF"
@@ -69,24 +66,21 @@ ServerEvents.recipes(event => {
             E: 'gtceu:luv_emitter',
             C: '#gtceu:circuits/luv',
             R: 'gtceu:red_alloy_plate'
-        }
-        ).id('laserio:laser_connector_advanced')
+        }).id('laserio:laser_connector_advanced')
     }
 
 
     // Energy Overclockers  //
 
     //Conductive Iron
-    event.shaped(
-        '3x laserio:energy_overclocker_card_tier_1', [
+    event.shaped('3x laserio:energy_overclocker_card_tier_1', [
         'AAA',
         'BBB',
         'AAA'
     ], {
         A: 'gtceu:iron_plate',
         B: 'gtceu:conductive_alloy_single_wire'
-    }
-    ).id("kubejs:conductive_card")
+    }).id("kubejs:conductive_card")
 
     event.recipes.gtceu.assembler('kubejs:conductive_card')
         .itemInputs('3x gtceu:conductive_alloy_single_wire', '6x gtceu:iron_plate')
@@ -95,8 +89,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     //Energetic Alloy
-    event.shaped(
-        '3x laserio:energy_overclocker_card_tier_2', [
+    event.shaped('3x laserio:energy_overclocker_card_tier_2', [
         'AAA',
         'BCB',
         'AAA'
@@ -104,8 +97,7 @@ ServerEvents.recipes(event => {
         A: 'gtceu:iron_plate',
         B: 'gtceu:energetic_alloy_single_wire',
         C: 'laserio:energy_overclocker_card_tier_1'
-    }
-    ).id("kubejs:energetic_card")
+    }).id("kubejs:energetic_card")
 
     event.recipes.gtceu.assembler('kubejs:energetic_card')
         .itemInputs('2x gtceu:energetic_alloy_single_wire', 'laserio:energy_overclocker_card_tier_1', '6x gtceu:iron_plate')
@@ -114,8 +106,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     //Vibrant Alloy
-    event.shaped(
-        '3x laserio:energy_overclocker_card_tier_3', [
+    event.shaped('3x laserio:energy_overclocker_card_tier_3', [
         'AAA',
         'BCB',
         'AAA'
@@ -123,8 +114,7 @@ ServerEvents.recipes(event => {
         A: 'gtceu:iron_plate',
         B: 'gtceu:vibrant_alloy_single_wire',
         C: 'laserio:energy_overclocker_card_tier_2'
-    }
-    ).id("kubejs:vibrant_card")
+    }).id("kubejs:vibrant_card")
 
     event.recipes.gtceu.assembler('kubejs:vibrant_card')
         .itemInputs('2x gtceu:vibrant_alloy_single_wire', 'laserio:energy_overclocker_card_tier_2', '6x gtceu:iron_plate')
@@ -176,8 +166,7 @@ ServerEvents.recipes(event => {
 
     //Overclockers
     event.remove({ output: ['laserio:overclocker_card', 'laserio:overclocker_node'] })
-    event.shaped(
-        "laserio:overclocker_card", [
+    event.shaped('laserio:overclocker_card', [
         "E",
         "P",
         "A"
@@ -185,10 +174,8 @@ ServerEvents.recipes(event => {
         E: '#forge:double_plates/electrical_steel',
         P: '#forge:plates/electrum',
         A: 'ae2:basic_card'
-    }
-    )
-    event.shaped(
-        "laserio:overclocker_node", [
+    })
+    event.shaped('laserio:overclocker_node', [
         "E",
         "P",
         "A"
@@ -196,6 +183,5 @@ ServerEvents.recipes(event => {
         E: '#forge:double_plates/electrical_steel',
         P: 'enderio:pulsating_crystal',
         A: 'ae2:advanced_card'
-    }
-    )
+    })
 })

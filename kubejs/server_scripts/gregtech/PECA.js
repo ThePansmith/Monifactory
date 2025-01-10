@@ -20,14 +20,14 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:dichloroacetate 200', 'gtceu:trichloroacetate 100', 'gtceu:hydrochloric_acid 450')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.HV])
-    
+
     event.recipes.gtceu.chemical_reactor("cyanoacetic_acid")
         .itemInputs('2x gtceu:chloroacetate_dust', '2x gtceu:sodium_cyanide_dust', '1x gtceu:soda_ash_dust')
         .inputFluids('gtceu:hydrochloric_acid 700', 'minecraft:water 700')
         .itemOutputs('2x gtceu:cyanoacetic_acid_dust')
         .duration(600)
         .EUt(GTValues.VA[GTValues.LuV])
-    
+
     event.recipes.gtceu.chemical_reactor("ethyl_cyanoacetate")
         .notConsumableFluid('gtceu:fluoroantimonic_acid 2000')
         .inputFluids('gtceu:ethanol 1000')
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:dimethyl_sulfoxide 1000', 'gtceu:nitric_oxide 1000')
         .duration(10000)
         .EUt(GTValues.VA[GTValues.LuV])
-    
+
     event.recipes.gtceu.chemical_reactor('dimethyl_sulfide')
         .notConsumable('gtceu:aluminium_dust')
         .inputFluids('gtceu:hydrogen_sulfide 1000', 'gtceu:methanol 2000')
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.ULV])
         .circuit(12)
-    
+
     event.recipes.gtceu.chemical_reactor('plastic_board_peca')
         .itemInputs('gtceu:polyethyl_cyanoacrylate_plate', '4x gtceu:copper_foil')
         .inputFluids('gtceu:sulfuric_acid 250')

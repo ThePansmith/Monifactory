@@ -2,12 +2,12 @@ ServerEvents.recipes(event => {
 
     // Acetylene
     event.recipes.gtceu.electric_blast_furnace('calcium_carbide')
-    .itemInputs('2x gtceu:quicklime_dust', '3x gtceu:carbon_dust')
-    .itemOutputs('3x gtceu:calcium_carbide_dust')
-    .outputFluids('gtceu:carbon_monoxide 1000')
-    .duration(100)
-    .EUt(GTValues.VA[GTValues.IV])
-    .blastFurnaceTemp(5400)
+        .itemInputs('2x gtceu:quicklime_dust', '3x gtceu:carbon_dust')
+        .itemOutputs('3x gtceu:calcium_carbide_dust')
+        .outputFluids('gtceu:carbon_monoxide 1000')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.IV])
+        .blastFurnaceTemp(5400)
 
     event.recipes.gtceu.autoclave('hydroxide_to_quicklime')
         .itemInputs('3x gtceu:calcium_hydroxide_dust')
@@ -32,12 +32,12 @@ ServerEvents.recipes(event => {
     ]
 
     wafers.forEach((wafer, index) => {
-        event.recipes.gtceu.assembler("raw_substrate_" + wafer[1])
+        event.recipes.gtceu.assembler(`raw_substrate_${wafer[1]}`)
             .itemInputs(wafer[0] + wafer[1], '4x gtceu:carbon_fibers', '4x gtceu:gold_foil', '4x gtceu:graphene_dust', '64x gtceu:diamond_dust')
-            .itemOutputs(Item.of('kubejs:raw_nanotube_substrate', 4**(index+1)))
+            .itemOutputs(Item.of('kubejs:raw_nanotube_substrate', 4 ** (index + 1)))
             .inputFluids('gtceu:neon 10')
             .duration(320)
-            .EUt((4**index)*GTValues.VA[GTValues.LuV])
+            .EUt((4 ** index) * GTValues.VA[GTValues.LuV])
             .cleanroom(CleanroomType.CLEANROOM)
     })
 
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
         .duration(1000)
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(6800)
-    
+
 
 
 

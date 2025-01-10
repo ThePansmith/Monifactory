@@ -28,34 +28,34 @@ if (Platform.isLoaded('compactmachines')) {
 
         // Recipes for all tiers of Compact Machine
         const machineSizes = [
-            {size: "tiny", material: "#forge:storage_blocks/copper"},
-            {size: "small", material: "#forge:storage_blocks/iron"},
-            {size: "normal", material: "#forge:storage_blocks/gold"},
-            {size: "large", material: "minecraft:obsidian"}, 
-            {size: "giant", material: "#forge:storage_blocks/diamond"},
-            {size: "maximum", material: "#forge:storage_blocks/netherite"},
+            { size: "tiny", material: "#forge:storage_blocks/copper" },
+            { size: "small", material: "#forge:storage_blocks/iron" },
+            { size: "normal", material: "#forge:storage_blocks/gold" },
+            { size: "large", material: "minecraft:obsidian" },
+            { size: "giant", material: "#forge:storage_blocks/diamond" },
+            { size: "maximum", material: "#forge:storage_blocks/netherite" },
         ]
 
         machineSizes.forEach((value, index) => {
-            event.recipes.gtceu.assembler("compactmachines:machine_" + value.size)
-                .itemInputs(Item.of("compactmachines:wall", 4*(index+1)), (index > 2 ? 'gtceu:tungsten_frame' : 'gtceu:dark_steel_frame'), value.material, '2x gtceu:' + GTValues.VN[index+1].toLowerCase() + '_field_generator', (index > 2 ? Item.of('gtceu:quantum_eye', 2**(index-2)) : Item.of('minecraft:ender_eye', 2**index)))
-                .inputFluids('gtceu:styrene_butadiene_rubber ' + 144*(index+1))
-                .itemOutputs("compactmachines:machine_" + value.size)
+            event.recipes.gtceu.assembler(`compactmachines:machine_${value.size}`)
+                .itemInputs(Item.of("compactmachines:wall", 4 * (index + 1)), (index > 2 ? 'gtceu:tungsten_frame' : 'gtceu:dark_steel_frame'), value.material, `2x gtceu:${GTValues.VN[index + 1].toLowerCase()}_field_generator`, (index > 2 ? Item.of('gtceu:quantum_eye', 2 ** (index - 2)) : Item.of('minecraft:ender_eye', 2 ** index)))
+                .inputFluids(`gtceu:styrene_butadiene_rubber ${144 * (index + 1)}`)
+                .itemOutputs(`compactmachines:machine_${value.size}`)
                 .duration(200)
-                .EUt(GTValues.VA[index+1])
+                .EUt(GTValues.VA[index + 1])
         })
 
         // Recipes for tunnels
         const tunnelTypes = [
-            {type: "item", hatch: "gtceu:hv_item_passthrough_hatch", nbt: '{definition:{id:"compactmachines:item"}}'},
-            {type: "fluid", hatch: "gtceu:hv_fluid_passthrough_hatch", nbt: '{definition:{id:"compactmachines:fluid"}}'},
-            {type: "energy", hatch: "gtceu:hv_diode", nbt: '{definition:{id:"compactmachines:energy"}}'},
+            { type: "item", hatch: "gtceu:hv_item_passthrough_hatch", nbt: '{definition:{id:"compactmachines:item"}}' },
+            { type: "fluid", hatch: "gtceu:hv_fluid_passthrough_hatch", nbt: '{definition:{id:"compactmachines:fluid"}}' },
+            { type: "energy", hatch: "gtceu:hv_diode", nbt: '{definition:{id:"compactmachines:energy"}}' },
             //{type: "redstone", hatch: "enderio:redstone_conduit", nbt: '{definition:{id:"compactmachines:redstone"}}'}    // Redstone tunnel NYI :(
         ]
 
         tunnelTypes.forEach(value => {
-            event.remove({ id: "compactmachines:tunnels/" + value.type })
-            event.recipes.gtceu.assembler("compactmachines:tunnel_" + value.type)
+            event.remove({ id: `compactmachines:tunnels/${value.type}` })
+            event.recipes.gtceu.assembler(`compactmachines:tunnel_${value.type}`)
                 .itemInputs("2x compactmachines:wall", value.hatch, 'gtceu:quantum_eye')
                 .itemOutputs(Item.of("compactmachines:tunnel", 2, value.nbt))
                 .duration(100)

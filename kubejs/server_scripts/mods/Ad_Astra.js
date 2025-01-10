@@ -5,8 +5,7 @@ ServerEvents.recipes(event => {
 
 
     // Space Suit
-    event.shaped(
-        '4x kubejs:thermal_cloth', [
+    event.shaped('4x kubejs:thermal_cloth', [
         'SSS',
         'SSS',
         'SSS'
@@ -14,8 +13,7 @@ ServerEvents.recipes(event => {
         S: 'minecraft:string'
     })
 
-    event.shaped(
-        'kubejs:unprepared_space_helmet', [
+    event.shaped('kubejs:unprepared_space_helmet', [
         'TTT',
         'T T',
         '   '
@@ -23,8 +21,7 @@ ServerEvents.recipes(event => {
         T: 'kubejs:thermal_cloth'
     })
 
-    event.shaped(
-        'kubejs:unprepared_space_suit', [
+    event.shaped('kubejs:unprepared_space_suit', [
         'T T',
         'TTT',
         'TTT'
@@ -32,8 +29,7 @@ ServerEvents.recipes(event => {
         T: 'kubejs:thermal_cloth'
     })
 
-    event.shaped(
-        'kubejs:unprepared_space_pants', [
+    event.shaped('kubejs:unprepared_space_pants', [
         'TTT',
         'T T',
         'T T'
@@ -41,8 +37,7 @@ ServerEvents.recipes(event => {
         T: 'kubejs:thermal_cloth'
     })
 
-    event.shaped(
-        'kubejs:unprepared_space_boots', [
+    event.shaped('kubejs:unprepared_space_boots', [
         '   ',
         'T T',
         'T T'
@@ -50,8 +45,7 @@ ServerEvents.recipes(event => {
         T: 'kubejs:thermal_cloth'
     })
 
-    event.shaped(
-        'kubejs:pressure_layer', [
+    event.shaped('kubejs:pressure_layer', [
         'CPC',
         'CPC',
         'CPC'
@@ -60,8 +54,7 @@ ServerEvents.recipes(event => {
         P: 'gtceu:black_steel_plate'
     })
 
-    event.shaped(
-        'kubejs:radiation_layer', [
+    event.shaped('kubejs:radiation_layer', [
         'CPC',
         'CPC',
         'CPC'
@@ -82,11 +75,11 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: `ad_astra:space_suit` })
     event.recipes.gtceu.assembler(`space_suit`)
-        .itemInputs(`kubejs:unprepared_space_suit`, "#forge:double_plates/steel", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer","ad_astra:oxygen_gear", "2x ad_astra:gas_tank")
+        .itemInputs(`kubejs:unprepared_space_suit`, "#forge:double_plates/steel", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "ad_astra:oxygen_gear", "2x ad_astra:gas_tank")
         .itemOutputs(`ad_astra:space_suit`)
         .duration(300)
         .EUt(GTValues.VA[GTValues.LV])
-    
+
     spacesuit.forEach(part => {
         event.remove({ id: `ad_astra:space_${part}` })
         event.recipes.gtceu.assembler(`space_${part}`)
@@ -99,10 +92,10 @@ ServerEvents.recipes(event => {
     //Netherite space suit
     event.remove({ id: `ad_astra:netherite_space_helmet` })
     event.recipes.gtceu.assembler(`netherite_space_helmet`)
-            .itemInputs(`kubejs:unprepared_space_helmet`, "minecraft:netherite_ingot", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/mv", "#forge:glass/tinted", "#forge:foils/gold")
-            .itemOutputs(`ad_astra:netherite_space_helmet`)
-            .duration(400)
-            .EUt(GTValues.VA[GTValues.MV])
+        .itemInputs(`kubejs:unprepared_space_helmet`, "minecraft:netherite_ingot", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/mv", "#forge:glass/tinted", "#forge:foils/gold")
+        .itemOutputs(`ad_astra:netherite_space_helmet`)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.remove({ id: `ad_astra:netherite_space_suit` })
     event.recipes.gtceu.assembler(`netherite_space_suit`)
@@ -119,7 +112,7 @@ ServerEvents.recipes(event => {
             .duration(400)
             .EUt(GTValues.VA[GTValues.MV])
     })
-    
+
     //Jet Suit
     event.remove({ id: `ad_astra:jet_suit_helmet` })
     event.recipes.gtceu.assembler(`jet_suit_helmet`)
@@ -134,7 +127,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(`ad_astra:jet_suit`)
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV])
-    
+
     spacesuit.forEach(part => {
         event.remove({ id: `ad_astra:jet_suit_${part}` })
         event.recipes.gtceu.assembler(`jet_suit_${part}`)
@@ -147,8 +140,7 @@ ServerEvents.recipes(event => {
 
 
     // Nasa Work Bench
-    event.recipes.extendedcrafting.shaped_table(
-        'ad_astra:nasa_workbench', [
+    event.recipes.extendedcrafting.shaped_table('ad_astra:nasa_workbench', [
         "RPEPR",
         "PXCXP",
         "PCACP",
@@ -161,13 +153,11 @@ ServerEvents.recipes(event => {
         A: 'gtceu:mv_assembler',
         E: 'gtceu:hv_emitter',
         C: '#gtceu:circuits/hv'
-    }
-    ).id('ad_astra:nasa_workbench')
+    }).id('ad_astra:nasa_workbench')
 
     //Oxygen Gear
-    event.remove({ output: 'ad_astra:oxygen_gear'})
-    event.shaped(
-        'ad_astra:oxygen_gear', [
+    event.remove({ output: 'ad_astra:oxygen_gear' })
+    event.shaped('ad_astra:oxygen_gear', [
         ' R ',
         'PCP',
         'F F'
@@ -181,8 +171,7 @@ ServerEvents.recipes(event => {
     //Engines and Tanks
     event.remove({ output: /ad_astra:.*_engine/ })
     event.remove({ output: /ad_astra:.*_tank/ })
-    event.shaped(
-        'ad_astra:steel_engine', [
+    event.shaped('ad_astra:steel_engine', [
         ' P ',
         'PPP',
         'TTT'
@@ -191,8 +180,7 @@ ServerEvents.recipes(event => {
         T: 'kubejs:electrical_steel_thruster'
     })
 
-    event.shaped(
-        'ad_astra:steel_tank', [
+    event.shaped('ad_astra:steel_tank', [
         'PTP',
         'PTP',
         'PTP'
@@ -201,8 +189,7 @@ ServerEvents.recipes(event => {
         T: 'enderio:fluid_tank'
     })
 
-    event.shaped(
-        'ad_astra:desh_engine', [
+    event.shaped('ad_astra:desh_engine', [
         ' P ',
         'PPP',
         'TTT'
@@ -211,8 +198,7 @@ ServerEvents.recipes(event => {
         T: 'kubejs:energetic_thruster'
     })
 
-    event.shaped(
-        'ad_astra:desh_tank', [
+    event.shaped('ad_astra:desh_tank', [
         'PTP',
         'PTP',
         'PTP'
@@ -222,8 +208,7 @@ ServerEvents.recipes(event => {
     })
 
 
-    event.shaped(
-        'ad_astra:ostrum_engine', [
+    event.shaped('ad_astra:ostrum_engine', [
         ' P ',
         'PPP',
         'TTT'
@@ -232,8 +217,7 @@ ServerEvents.recipes(event => {
         T: 'kubejs:vibrant_thruster'
     })
 
-    event.shaped(
-        'ad_astra:ostrum_tank', [
+    event.shaped('ad_astra:ostrum_tank', [
         'PTP',
         'PTP',
         'PTP'
@@ -242,8 +226,7 @@ ServerEvents.recipes(event => {
         T: 'enderio:fluid_tank'
     })
 
-    event.shaped(
-        'ad_astra:calorite_engine', [
+    event.shaped('ad_astra:calorite_engine', [
         ' P ',
         'PPP',
         'TTT'
@@ -252,8 +235,7 @@ ServerEvents.recipes(event => {
         T: 'kubejs:dark_soularium_thruster'
     })
 
-    event.shaped(
-        'ad_astra:calorite_tank', [
+    event.shaped('ad_astra:calorite_tank', [
         'PTP',
         'PTP',
         'PTP'
@@ -285,10 +267,9 @@ ServerEvents.recipes(event => {
     // Oxygen Loading
     event.custom('{"type": "ad_astra:oxygen_loading","cookingtime": 1,"energy": 30,"input": {"ingredient": {"tag": "forge:oxygen"},"millibuckets": 25},"result": {"fluid": "gtceu:oxygen","millibuckets": 25}}');
     event.remove({ id: /oxygen_from_oxygen_loading/ })
-    
+
     event.remove({ id: 'ad_astra:oxygen_distributor' })
-    event.shaped(
-        'ad_astra:oxygen_distributor', [
+    event.shaped('ad_astra:oxygen_distributor', [
         'BRB',
         'PHP',
         'BCB'
@@ -301,8 +282,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: 'ad_astra:oxygen_loader' })
-    event.shaped(
-        'ad_astra:oxygen_loader', [
+    event.shaped('ad_astra:oxygen_loader', [
         'BCB',
         'PHP',
         'BRB'
@@ -315,8 +295,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: 'ad_astra:gravity_normalizer' })
-    event.shaped(
-        'ad_astra:gravity_normalizer', [
+    event.shaped('ad_astra:gravity_normalizer', [
         'BEB',
         'CHC',
         'BBB'
@@ -328,8 +307,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: 'ad_astra:oxygen_sensor' })
-    event.shaped(
-        'ad_astra:oxygen_sensor', [
+    event.shaped('ad_astra:oxygen_sensor', [
         'RRR',
         'TOT',
         'RRR'
@@ -352,11 +330,10 @@ ServerEvents.recipes(event => {
         event.stonecutting(`ad_astra:${material}_plateblock`, `ad_astra:${material}_panel`)
         event.stonecutting(`ad_astra:encased_${material}_block`, `ad_astra:${material}_panel`)
         event.stonecutting(`ad_astra:${material}_factory_block`, `ad_astra:${material}_panel`)
-        if(material != 'iron') event.stonecutting(`ad_astra:${material}_block`, `ad_astra:${material}_panel`)
+        if (material != 'iron') event.stonecutting(`ad_astra:${material}_block`, `ad_astra:${material}_panel`)
     })
 
-    event.shaped(
-        '64x ad_astra:etrium_panel', [
+    event.shaped('64x ad_astra:etrium_panel', [
         'PDP',
         'DDD',
         'PDP'

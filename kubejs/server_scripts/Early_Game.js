@@ -29,8 +29,7 @@ ServerEvents.recipes(event => {
 
     const plantMaterial = ["#minecraft:leaves", "#minecraft:saplings", "minecraft:vine"]
     plantMaterial.forEach(ballIngredient => {
-        event.shaped(
-            "gtceu:plant_ball", [
+        event.shaped('gtceu:plant_ball', [
             'AAA',
             'A A',
             'AAA'
@@ -114,8 +113,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // Pyro Oven
-    event.shaped(
-        'gtceu:pyrolyse_oven', [
+    event.shaped('gtceu:pyrolyse_oven', [
         'PCW',
         'CHC',
         'PUW'
@@ -125,8 +123,7 @@ ServerEvents.recipes(event => {
         U: 'gtceu:lv_electric_pump',
         W: 'gtceu:cupronickel_quadruple_wire',
         H: 'gtceu:ulv_machine_hull'
-    }
-    ).id('gtceu:shaped/pyrolyse_oven')
+    }).id('gtceu:shaped/pyrolyse_oven')
     event.remove({ id: 'gtceu:arc_furnace/arc_pyrolyse_oven' })
     event.remove({ id: 'gtceu:macerator/macerate_pyrolyse_oven' })
 

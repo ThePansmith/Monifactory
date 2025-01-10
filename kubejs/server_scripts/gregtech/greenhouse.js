@@ -2,17 +2,15 @@ ServerEvents.recipes(event => {
 
     ////// Machine Recipe //////
 
-    event.shaped(
-        'gtceu:greenhouse',
-        ['AWA',
-            'ASA',
-            'WAW'],
-        {
-            A: '#gtceu:circuits/mv',
-            W: 'gtceu:copper_single_cable',
-            S: 'gtceu:solid_machine_casing'
-        }
-    ).id('kubejs:shaped/greenhouse')
+    event.shaped('gtceu:greenhouse', [
+        'AWA',
+        'ASA',
+        'WAW'
+    ], {
+        A: '#gtceu:circuits/mv',
+        W: 'gtceu:copper_single_cable',
+        S: 'gtceu:solid_machine_casing'
+    }).id('kubejs:shaped/greenhouse')
 
 
     ////// Greenhouse Recipes //////
@@ -23,11 +21,11 @@ ServerEvents.recipes(event => {
             let item = Item.of(element);
             let curCount = item.getCount() * factor;
             let type = item.getId();
-            while(curCount > item.maxStackSize) {
+            while (curCount > item.maxStackSize) {
                 boosted.push(Item.of(type, item.maxStackSize));
                 curCount -= item.maxStackSize;
             }
-            if(curCount > 0) boosted.push(Item.of(type, curCount));
+            if (curCount > 0) boosted.push(Item.of(type, curCount));
         })
         return boosted;
     }
@@ -37,7 +35,7 @@ ServerEvents.recipes(event => {
         let boostedOutputs = boost(output, 2)
 
         //Push sapling/seed inputs (unboosted) onto output arrays
-        if(inputFeedbackAmount > 0) {
+        if (inputFeedbackAmount > 0) {
             output.push(Item.of(`${mod}:${input}`, inputFeedbackAmount));
             boostedOutputs.push(Item.of(`${mod}:${input}`, inputFeedbackAmount));
         }
@@ -97,7 +95,7 @@ ServerEvents.recipes(event => {
     Greenhouse('minecraft', 'red_mushroom', 640, ['16x minecraft:red_mushroom'], 0)
     Greenhouse('minecraft', 'brown_mushroom', 640, ['16x minecraft:brown_mushroom'], 0)
 
-    
+
     ////// Flowers & Cosmetic Blocks //////
     let flowers = [
         'wither_rose',

@@ -161,13 +161,13 @@ StartupEvents.registry("block", event => {
     ]
 
     ores.forEach(ore => {
-        event.create('dense_' + ore)
+        event.create(`dense_${ore}`)
             .soundType('stone')
             .resistance(6)
             .hardness(5)
             .tagBlock('mineable/pickaxe')
             .tagBlock('forge:ores/dense')
-            .tagBlock('forge:ores/dense_' + ore)
+            .tagBlock(`forge:ores/dense_${ore}`)
             .requiresTool(true);
     });
 

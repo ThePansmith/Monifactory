@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
             .duration(80)
             .EUt(480)
 
-            event.recipes.gtceu.fluid_heater("hot_piranha_solution")
+        event.recipes.gtceu.fluid_heater("hot_piranha_solution")
             .inputFluids('gtceu:piranha_solution 100')
             .outputFluids('gtceu:hot_piranha_solution 100')
             .duration(40)
@@ -65,14 +65,14 @@ ServerEvents.recipes(event => {
             .EUt(491520)
 
         event.recipes.gtceu.naquadah_refinery('t2_naquadah_fuel')
-            .itemInputs('4x gtceu:actinium_dust', '32x gtceu:enriched_naquadah_dust',  '8x gtceu:omnic_acid_dust')
+            .itemInputs('4x gtceu:actinium_dust', '32x gtceu:enriched_naquadah_dust', '8x gtceu:omnic_acid_dust')
             .inputFluids('gtceu:naq_fuel_t1 11000', 'gtceu:oganesson 800', 'gtceu:exotic_particle_solution 300', 'gtceu:einsteinium 1000')
             .outputFluids('gtceu:naq_fuel_t2 12000')
             .duration(800)
             .EUt(1966080)
 
         event.recipes.gtceu.naquadah_refinery('naquadah_superfuel')
-            .itemInputs('1x gtceu:infinity_dust','16x kubejs:naquadah_fuel_dust', '64x gtceu:naquadria_dust', '64x gtceu:neutronium_dust')
+            .itemInputs('1x gtceu:infinity_dust', '16x kubejs:naquadah_fuel_dust', '64x gtceu:naquadria_dust', '64x gtceu:neutronium_dust')
             .inputFluids('gtceu:hyperdegenerate_matter 200', 'gtceu:naq_fuel_t2 11000', 'gtceu:taranium 576', 'gtceu:quadium 600')
             .outputFluids('gtceu:naquadah_superfuel 12000')
             .duration(800)
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
             .outputFluids('gtceu:cracked_light_naquadah_isotope_fraction 1000')
             .duration(80)
             .EUt(122880)
-        
+
         event.recipes.gtceu.cracker('medium_isotope_cracking')
             .inputFluids('gtceu:medium_naquadah_isotope_fraction 1000', 'gtceu:neutronium 100')
             .outputFluids('gtceu:cracked_medium_naquadah_isotope_fraction 1000')
@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
             .outputFluids('gtceu:heavy_naquadah_isotope_fraction 200', 'gtceu:light_naquadah_isotope_fraction 250', 'gtceu:oganesson 400', 'gtceu:plutonium 150')
             .duration(200)
             .EUt(15360)
-        
+
         event.recipes.gtceu.distillation_tower('heavy_isotope_distillation')
             .inputFluids('gtceu:cracked_heavy_naquadah_isotope_fraction')
             .outputFluids('gtceu:naquadah_isotope_sludge 200', 'gtceu:medium_naquadah_isotope_fraction 200', 'gtceu:heavy_atomic_residue 300', 'gtceu:einsteinium 150', 'gtceu:tritanium 100')
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
             .duration(40)
             .EUt(8388608)
 
-            event.recipes.gtceu.large_chemical_reactor('superheavy_residue_purification')
+        event.recipes.gtceu.large_chemical_reactor('superheavy_residue_purification')
             .notConsumable('kubejs:magnetron')
             .inputFluids('gtceu:superheavy_atomic_residue 200')
             .itemInputs('8x gtceu:activated_carbon_dust', '4x gtceu:omnic_acid_dust')
@@ -164,14 +164,14 @@ ServerEvents.recipes(event => {
             .fusionStartEU(640000000)
 
         // Liquid Waste Processing
-        
+
         event.recipes.gtceu.centrifuge('t1_waste_processing')
             .inputFluids('gtceu:naq_fuel_t1_depleted 12000')
-            .outputFluids('gtceu:neptunium 200', )
-            .itemOutputs('4x gtceu:lead_dust', 'gtceu:sunnarium_dust', )
+            .outputFluids('gtceu:neptunium 200',)
+            .itemOutputs('4x gtceu:lead_dust', 'gtceu:sunnarium_dust',)
             .chancedOutput('3x gtceu:thorium_dust', 5000, 0)
             .chancedOutput('3x kubejs:naquadah_waste', 6600, 0)
-            .chancedFluidOutput('gtceu:americium 100', 3300,0)
+            .chancedFluidOutput('gtceu:americium 100', 3300, 0)
             .duration(1200)
             .EUt(122800)
 
@@ -196,9 +196,8 @@ ServerEvents.recipes(event => {
             .duration(1200)
             .EUt(1966080)
     }
-    
-    //Solid Fuel Recipes
 
+    //Solid Fuel Recipes
     event.recipes.gtceu.assembler('fuel_rod')
         .itemInputs('gtceu:fluid_cell', '2x gtceu:rhodium_plated_palladium_ring', '2x gtceu:neutron_reflector', '2x gtceu:rhodium_plated_palladium_plate')
         .inputFluids('gtceu:lead 288')
@@ -286,7 +285,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:naquadah_fuel_mixture_dust')
         .duration(80)
         .EUt(30720)
-    
+
     event.recipes.gtceu.electric_blast_furnace('naquadah_fuel_primer_synthesis')
         .itemInputs('12x gtceu:enriched_naquadah_dust', '4x gtceu:cerium_dust', '3x gtceu:omnium_dust')
         .inputFluids('gtceu:helium_3 1000')
@@ -316,10 +315,10 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(30720)
 
-        
 
 
-        
+
+
 
 
 

@@ -11,29 +11,25 @@ ServerEvents.recipes(event => {
         .EUt(32)
 
     //Sunnarium plates
-    event.remove({ id: 'gtceu:compressor/compress_plate_dust_sunnarium'})
-    event.shaped(
-        '4x gtceu:sunnarium_plate', [
-            'PPP',
-            'PSP',
-            'PPP'
-        ], {
-            P: 'gtceu:hastelloy_c_276_plate',
-            S: 'gtceu:sunnarium_dust'
-        }
-    )
+    event.remove({ id: 'gtceu:compressor/compress_plate_dust_sunnarium' })
+    event.shaped('4x gtceu:sunnarium_plate', [
+        'PPP',
+        'PSP',
+        'PPP'
+    ], {
+        P: 'gtceu:hastelloy_c_276_plate',
+        S: 'gtceu:sunnarium_dust'
+    })
 
-    event.remove({ id: 'gtceu:compressor/compress_plate_dust_enriched_sunnarium'})
-    event.shaped(
-        'gtceu:enriched_sunnarium_plate', [
-            ' A ',
-            'ABA',
-            ' A '
-        ], {
-            A: 'gtceu:enriched_sunnarium_dust',
-            B: 'gtceu:sunnarium_plate'
-        }
-    )
+    event.remove({ id: 'gtceu:compressor/compress_plate_dust_enriched_sunnarium' })
+    event.shaped('gtceu:enriched_sunnarium_plate', [
+        ' A ',
+        'ABA',
+        ' A '
+    ], {
+        A: 'gtceu:enriched_sunnarium_dust',
+        B: 'gtceu:sunnarium_plate'
+    })
 
     // HNN MATTERS
     if (isNormalMode) {
@@ -78,36 +74,31 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     if (isNormalMode) {
-        event.shaped(
-            'kubejs:quantum_flux', [
-                ' B ',
-                'BAB',
-                ' B '
-            ], {
-                A: 'enderio:pulsating_crystal',
-                B: 'hostilenetworks:end_prediction'
-            }
+        event.shaped('kubejs:quantum_flux', [
+            ' B ',
+            'BAB',
+            ' B '
+        ], {
+            A: 'enderio:pulsating_crystal',
+            B: 'hostilenetworks:end_prediction'
+        }
         )
     }
 
     //Hot MV ingots
-    event.remove({ input: ['gtceu:hot_kanthal_ingot', "gtceu:hot_silicon_ingot"]})
-    event.replaceOutput(
-        { output: 'gtceu:hot_silicon_ingot' },
-        'gtceu:hot_silicon_ingot',
-        'gtceu:silicon_ingot'
-    )
+    event.remove({ input: ['gtceu:hot_kanthal_ingot', "gtceu:hot_silicon_ingot"] })
+    event.replaceOutput({ output: 'gtceu:hot_silicon_ingot' }, 'gtceu:hot_silicon_ingot', 'gtceu:silicon_ingot')
 
     //Steel Machine Casing
-    event.remove({input: 'gtceu:steel_machine_casing'})
-    event.remove({output: 'gtceu:steel_machine_casing'})
+    event.remove({ input: 'gtceu:steel_machine_casing' })
+    event.remove({ output: 'gtceu:steel_machine_casing' })
 
     //Ender Pearl dust Electrolysis
     //event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })
 
     // rock breaker
     const generateRockBreakerStoneRecipe = (stoneItem) => {
-        event.recipes.gtceu.rock_breaker('kubejs:rock_breaker_' + stoneItem.replace(':', '_'))
+        event.recipes.gtceu.rock_breaker(`kubejs:rock_breaker_${stoneItem.replace(':', '_')}`)
             .notConsumable(stoneItem)
             .itemOutputs(stoneItem)
             .duration(16)
