@@ -29,7 +29,7 @@ export const CodegenCreditsTarget = new Juke.Target({
 
     creditScreenLayoutTemplateFilePath,
     creditScreenContributorTemplateFilePath,
-    
+
     contributorsFilePath
   ],
   outputs: [
@@ -112,7 +112,7 @@ export const CodegenCreditsTarget = new Juke.Target({
         const elements = fillTemplates(
           creditScreenContributorTemplate,
           {
-            '{{MC_UUID}}': data.mcuuid ?? 'steve',
+            '{{MC_UUID}}': data.mcuuid ?? 'meowni',
             '{{V4_UUID}}': data.mcuuid ?? randomUUID(),
             '{{PLAYERNAME}}': name,
             // "NAME - DESC" if description exists, just "NAME" otherwise

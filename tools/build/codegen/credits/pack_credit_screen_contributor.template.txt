@@ -1,6 +1,6 @@
 element {
     copy_client_player = false
-    playername = {{PLAYERNAME}}
+    playername = {{MC_UUID}}
     auto_skin = true
     auto_cape = true
     slim = false
