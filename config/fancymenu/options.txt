@@ -44,7 +44,7 @@ B:show_singleplayer_screen_world_icons = 'true';
 ##[layout_editor]
 
 B:anchor_overlay_change_anchor_on_area_hover = 'true';
-B:show_layout_editor_grid = 'true';
+B:show_layout_editor_grid = 'false';
 B:anchor_overlay_change_anchor_on_element_hover = 'true';
 S:anchor_overlay_visibility_mode = 'dragging';
 B:anchor_overlay_show_all_connection_lines = 'false';
