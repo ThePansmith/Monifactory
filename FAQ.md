@@ -72,9 +72,10 @@ By default, Monifactory only supports the mods included with it, and has *option
 
 **Q. How do I update the modpack?**
 *Make a backup first.*
-Your launcher's built-in update function should work most of the time.
+Many players have faced difficulties trying to update using their launcher.
+As such, doing so is no longer recommended.
 
-If it doesn't:
+Instead:
 1. Download an entirely new copy of Monifactory
 2. Copy the following folders from your old instance of Monifactory to the new instance:
     `backups`
