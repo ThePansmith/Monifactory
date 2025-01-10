@@ -23,7 +23,15 @@ const creditScreenLayoutTemplateFilePath = resolveNeighbourFilePath('pack_credit
 const creditScreenContributorTemplateFilePath = resolveNeighbourFilePath('pack_credit_screen_contributor.template.txt');
 
 export const CodegenCreditsTarget = new Juke.Target({
-  inputs: [contributorsFilePath],
+  inputs: [
+    devCapeTemplateFilePath,
+    devCapesTemplateFilePath,
+
+    creditScreenLayoutTemplateFilePath,
+    creditScreenContributorTemplateFilePath,
+    
+    contributorsFilePath
+  ],
   outputs: [
     devCapesFilePath,
     creditScreenLayoutFilePath,
