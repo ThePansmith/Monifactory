@@ -25,8 +25,8 @@ const creditScreenContributorTemplateFilePath = resolveNeighbourFilePath('pack_c
 export const CodegenCreditsTarget = new Juke.Target({
   inputs: [contributorsFilePath],
   outputs: [
-    // devCapesFilePath,
-    // creditScreenLayoutFilePath,
+    devCapesFilePath,
+    creditScreenLayoutFilePath,
   ],
   executes: () => {
     /* TODO: Replace JSDoc by a schema validator with static type inference. */
