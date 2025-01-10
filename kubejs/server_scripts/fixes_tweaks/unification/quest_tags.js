@@ -8,8 +8,8 @@ ServerEvents.tags('item', event => {
     //Output busses
     event.add('moni:output_bus', /^gtceu:(?!steam)(?!me).{1,3}_output_bus$/)
 
-    //'moni_quest:backpack'
-    event.add('moni_quest:backpack', 'sophisticatedbackpacks:backpack')
+	  //'moni_quest:backpack'
+	  event.add('moni_quest:backpack', ['sophisticatedbackpacks:backpack', 'sophisticatedbackpacks:copper_backpack', 'sophisticatedbackpacks:iron_backpack', 'sophisticatedbackpacks:gold_backpack', 'sophisticatedbackpacks:diamond_backpack', 'sophisticatedbackpacks:netherite_backpack'])
 
     // Monicoin, mostly cosmetic
     event.add('moni:coins', ['kubejs:moni_penny', 'kubejs:moni_nickel', 'kubejs:moni_quarter', 'kubejs:moni_dollar'])

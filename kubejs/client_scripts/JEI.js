@@ -155,9 +155,6 @@ JEIEvents.hideItems(event => {
     //Ender Storage
     event.hide(['endertanks:ender_bucket'])
 
-    //Backpacks
-    event.hide('sophisticatedbackpacks:copper_backpack')
-
     // Angel Ring
     event.hide('better_angel_ring:ring')
 

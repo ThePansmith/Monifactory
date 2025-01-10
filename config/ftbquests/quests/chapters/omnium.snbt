@@ -2650,6 +2650,11 @@
 			]
 			description: ["{moni.quest.739F7BF2A90B278A.description1}"]
 			id: "739F7BF2A90B278A"
+			rewards: [{
+				id: "7B426B4EE9DC90AC"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "{moni.quest.739F7BF2A90B278A.subtitle}"
