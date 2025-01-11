@@ -170,6 +170,24 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.LV])
     })
 
+    const rotorHolderMaterials = [
+        {tier:"uhv", large_gear:"actinium", small_gear:"neutronium"},
+        {tier:"uev", large_gear:"sculk_bioalloy", small_gear:"omnium"},
+        {tier:"uiv", large_gear:"eltz", small_gear:"infinity"}
+    ]
+
+    rotorHolderMaterials.forEach((value) => {
+        event.shaped(`gtceu:${value.tier}_rotor_holder`, [
+            'SLS',
+            'LHL',
+            'SLS'
+        ], {
+            S: `gtceu:small_${value.small_gear}_gear`,
+            L: `gtceu:${value.large_gear}_gear`,
+            H: `gtceu:${value.tier}_machine_hull`
+        }).id(`shaped/rotor_holder_${value.tier}`)
+    })
+
     // Motors
     event.recipes.gtceu.assembly_line('uhv_motor')
         .itemInputs('gtceu:long_magnetic_terbium_rod', '8x gtceu:long_actinium_rod', '8x gtceu:actinium_ring', '16x gtceu:actinium_round', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '2x gtceu:europium_single_cable')
