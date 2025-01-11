@@ -11,7 +11,7 @@ const configName = 'config/packmode.json';
 
 // Default mode.json
 const defaultConfig = {
-    mode: 'normal',
+    mode: 'Normal',
     message: 'This tells KubeJS what mode the pack is currently in, packmode is changed in pack-mode-switcher'
 };
 
@@ -27,12 +27,12 @@ if (!config || !config.mode) {
 let invalidConfig = function (configMode) {
     JsonIO.write(configName, defaultConfig);
     config.mode = defaultConfig.mode;
-    console.error(`Overwrote ${configName}, because the mode ${configMode} was found. Valid modes are 'normal', 'hard' and 'expert'.`);
+    console.error(`Overwrote ${configName}, because the mode ${configMode} was found. Valid modes are 'Normal', 'Hard' and 'Expert'.`);
 }
 
 let packMode = config.mode;
 switch (packMode) {
-    case 'normal': case 'hard': case 'expert': break;
+    case 'Normal': case 'Hard': case 'Expert': break;
     default: invalidConfig(); packMode = config.mode;
 }
 
@@ -41,9 +41,9 @@ switch (packMode) {
 global.packmode = packMode;
 
 // Global mode booleans. Note that isHardMode is also true if the pack is in Expert
-global.isNormalMode = packMode == 'normal';
-global.isExpertMode = packMode == 'expert';
-global.isHardMode = (packMode == 'hard') || global.isExpertMode;
+global.isNormalMode = packMode == 'Normal';
+global.isExpertMode = packMode == 'Expert';
+global.isHardMode = (packMode == 'Hard') || global.isExpertMode;
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
 const isNormalMode = !!global.isNormalMode;
 const isExpertMode = !!global.isExpertMode;
