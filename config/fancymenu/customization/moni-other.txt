@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_link_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736549886735
+  last_edited_time = 1736628591265
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:fe843270-7e18-4ada-9972-096b70033f4a-1736549828140] = [groups:][instances:]
+  [loading_requirement_container_meta:9a018fb4-15e1-49d7-ac9f-557f7714f33d-1736628556428] = [groups:][instances:]
 }
 
 customization {
@@ -147,6 +147,7 @@ element {
   parse_markdown = true
   element_type = text_v2
   instance_identifier = 13ea394d-bb4f-42f2-98b8-be77816e8d1d-1736535806372
+  custom_element_layer_name = Changelog
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -183,6 +184,7 @@ element {
   nine_slice_texture_border_y = 5
   element_type = image
   instance_identifier = c8f4ae94-7f08-4871-b5c4-bade7fe7e2e0-1736535821454
+  custom_element_layer_name = BG Fallback
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -207,6 +209,38 @@ element {
 }
 
 element {
+  source = [source:web]https://raw.githubusercontent.com/ThePansmith/MonifactoryAssets/refs/heads/main/menubg/monibgoverride.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  element_type = image
+  instance_identifier = 0486b591-88cd-442f-95ac-70a386981b77-1736627922816
+  custom_element_layer_name = BG
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1921
+  auto_sizing_base_screen_height = 1017
+  sticky_anchor = false
+  anchor_point = mid-centered
+  x = -60
+  y = -21
+  width = 100
+  height = 100
+  stretch_x = true
+  stretch_y = true
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 4b1c2854-64c9-43fb-b3f4-0be603d76ced-1736531604045
+  [loading_requirement_container_meta:4b1c2854-64c9-43fb-b3f4-0be603d76ced-1736531604045] = [groups:][instances:]
+}
+
+element {
   source = [source:local]/config/fancymenu/assets/moni_title.png
   repeat_texture = false
   nine_slice_texture = false
@@ -214,6 +248,7 @@ element {
   nine_slice_texture_border_y = 5
   element_type = image
   instance_identifier = b9e582e8-5211-488e-b547-90280fd04c8d-1726866126353
+  custom_element_layer_name = Logo
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -255,7 +290,7 @@ element {
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  custom_element_layer_name = Patreon
+  custom_element_layer_name = Back to Menu
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -298,7 +333,7 @@ element {
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = 928292af-7f5c-4faf-9d53-1ae9c4e408e5-1736469394736
-  custom_element_layer_name = Patreon
+  custom_element_layer_name = FAQ
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -341,7 +376,7 @@ element {
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = 4f7806b6-d0d9-46f5-be26-62b0637619b0-1736469424505
-  custom_element_layer_name = Patreon
+  custom_element_layer_name = Disc
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -384,7 +419,7 @@ element {
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = 425ab0e4-2708-4e4c-ad96-9723489321f5-1736469441481
-  custom_element_layer_name = Patreon
+  custom_element_layer_name = Credits
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -427,7 +462,7 @@ element {
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = b35ab85d-866c-4149-af07-66a112910f97-1736469447417
-  custom_element_layer_name = Patreon
+  custom_element_layer_name = Github
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
@@ -513,7 +548,7 @@ element {
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = 89c7ca09-0fd3-4486-a42c-4fce9752f064-1736529939598
-  custom_element_layer_name = Patreon
+  custom_element_layer_name = Mode (Moni readme)
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in_v2 = no_fading
