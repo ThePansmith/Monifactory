@@ -1306,7 +1306,22 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75321CAE019C190A"
-				item: "gtceu:cryolobus_dust"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:cryolobus_dust"
+							}
+							{
+								Count: 1b
+								id: "kubejs:warden_horn"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "{moni.quest.7F669657313F2E62.title}"
