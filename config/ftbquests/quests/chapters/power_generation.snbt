@@ -51,7 +51,7 @@
 	quests: [
 		{
 			description: [
-				"Steam Turbines are the easiest way to start generating &eRF&r. &9Steam&r can be input on any side other than the direction the red Excitation Coil faces, since it's reserved for &eRF&r output."
+				"&6Steam Turbines&r are the easiest way to start generating &aRF&r. &9Steam&r can be input on any side other than the direction the red Excitation Coil faces, since it's reserved for &aRF&r output."
 				""
 				"Note that all steam turbines accept any type of &9Steam&r, including those from &bGregTech&r boilers."
 			]
@@ -67,27 +67,42 @@
 		{
 			dependencies: ["1B04AA7D9AEB2CFA"]
 			description: [
-				"Although it requires &6Blue Steel&r to make and takes up far more space, the Large Steam Turbine is far more scalable than its predecessor."
+				"Although it requires &6Blue Steel&r to make and takes up far more space, the &6Large Steam Turbine&r is far more scalable than its predecessor."
 				""
 				"Only the &6Rotor Holder&r needs upgrading every tier, improving power generation by &e2x&r each time."
 				""
 				"You should also look into the &3Large Titanium Boiler&r in the near future to produce enough &9Steam&r to feed it."
 				""
-				"Your pipes will likely be a bottleneck with this level of &9Steam&r throughput however, so make sure to upgrade them!"
+				"Your pipes may be a bottleneck with this level of &9Steam&r throughput however, so make sure to upgrade them!"
 			]
+			icon: "gtceu:steam_large_turbine"
 			id: "15A5B4C632836306"
 			progression_mode: "flexible"
-			tasks: [{
-				id: "227F0649FD458B2E"
-				item: "gtceu:steam_large_turbine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "227F0649FD458B2E"
+					item: "gtceu:steam_large_turbine"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "49363E4CC67FE532"
+					item: { Count: 24, id: "gtceu:steel_turbine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "42BBECB34497F4A4"
+					item: { Count: 2, id: "gtceu:steel_gearbox" }
+					type: "item"
+				}
+			]
 			x: -5.0d
 			y: -3.0d
 		}
 		{
 			description: [
-				"Steam Turbines are the easiest way to start generating &aEU&r with &bGregTech&r. &9Steam&r can be input on any side other than the side with the red square around a wire, which is reserved for &aEU&r output."
+				"&6Steam Turbine Generators&r are the easiest way to start generating &eEU&r with &bGregTech&r. &9Steam&r can be input on any side other than the side with the red square around a wire, which is reserved for &eEU&r output."
 				""
 				"Note that all steam turbines accept any type of &9Steam&r, including those from &bThermal Systeams&r boilers."
 			]
@@ -106,11 +121,11 @@
 			description: [
 				"The Large Combustion Engine is much like an &5EV&r upgrade to an &6HV&r combustion Generator, but with a few differences."
 				""
-				"First, it's a multiblock. This means it takes up more space, requires a Maintenance Hatch, and costs a significant amount of Titanium."
+				"First, it's a multiblock. This means it takes up more space, requires a &6Maintenance Hatch&r, and costs a significant amount of Titanium."
 				""
 				"Second, it consumes &9Lubricant&r in addition to regular combustion fuels."
 				""
-				"Third, it can be supercharged with liquid &9Oxygen&r to produce 3x more energy from 2x more fuel."
+				"Third, it can be supercharged with liquid &9Oxygen&r to produce &e3x&r more energy from &e2x&r more fuel."
 				"{@pagebreak}"
 				"[\"While you're at it, you should also look into switching to \",{ \"text\": \"Cetane Boosted Diesel\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0D0A0C18ED958511\" }},\" or \",{ \"text\": \"High Octane Gasoline\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CC50101A39EA2C0\" }},\".\"]"
 				""
@@ -138,9 +153,9 @@
 					type: "item"
 				}
 				{
-					count: 21L
+					count: 19L
 					id: "1A63BEB000BBBEC7"
-					item: { Count: 21, id: "gtceu:stable_machine_casing" }
+					item: "gtceu:stable_machine_casing"
 					type: "item"
 				}
 			]
@@ -156,7 +171,7 @@
 				""
 				"Additionally, supercharging with &9Oxygen&r is more efficient."
 				"{@pagebreak}"
-				"[\"As for fuels, you should look into \",{ \"text\": \"JEAN Gasoline\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"053DDDCD2505E20B\" }},\". It's a potent concoction of exotic and dangerous ingredients, but will last for quite some time even in an Extreme Combustion Engine.\"]"
+				"[\"As for fuels, you should look into \",{ \"text\": \"JEAN Gasoline\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"053DDDCD2505E20B\" }},\". It's a potent concoction of exotic and dangerous ingredients, but will last for quite some time even in these generators.\"]"
 			]
 			icon: "gtceu:extreme_combustion_engine"
 			id: "0BFAE16A8B131E84"
@@ -180,9 +195,9 @@
 					type: "item"
 				}
 				{
-					count: 21L
+					count: 19L
 					id: "50CADE7BF4DB9D98"
-					item: { Count: 21, id: "gtceu:robust_machine_casing" }
+					item: "gtceu:robust_machine_casing"
 					type: "item"
 				}
 			]
@@ -192,36 +207,51 @@
 		{
 			dependencies: ["7E276DF48E9085A4"]
 			description: [
-				"The Large Gas Turbine is a big upgrade to Advanced Gas Turbine Generator IIs, providing &e8x&r as much power for &e8x&r the fuel consumption."
+				"The &6Large Gas Turbine&r is a big upgrade to &6Advanced Gas Turbine Generator II&rs, providing &e8x&r as much power for &e8x&r the fuel consumption."
 				""
 				"This can be further increased by upgrading the &6Rotor Holder&r, which multiplicatively stacks another &e2x&r per tier."
 				""
 				"It requires a &6Maintenance Hatch&r, though."
 			]
+			icon: "gtceu:gas_large_turbine"
 			id: "7D72B3FF808CE13C"
 			progression_mode: "flexible"
-			tasks: [{
-				id: "5CF9C8B149D39265"
-				item: "gtceu:gas_large_turbine"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5CF9C8B149D39265"
+					item: "gtceu:gas_large_turbine"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "4967F0BFCEDB782F"
+					item: "gtceu:stainless_steel_turbine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "018B4A4FCCF4C006"
+					item: "gtceu:stainless_steel_gearbox"
+					type: "item"
+				}
+			]
 			x: -4.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["745628397790ED7A"]
 			description: [
-				"It is recommended you read the Fission Reactor quest before trying to make power using one."
+				"[\"It is recommended you read the \",{ \"text\": \"Fission Reactor\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"745628397790ED7A\" }},\" quest before trying to make power using one.\"]"
 				""
-				"Unlike a breeder reactor, fission reactor designs for power need a high fuel efficiency. Fissile fuel is an energy-intensive process to produce, especially with the constant production needed for reliable power."
+				"Unlike a breeder reactor, fission reactor designs for power need a high &afuel efficiency&r. Fissile fuel is an energy-intensive process to produce, so making profits in energy requires some effort."
 				""
-				"Fuel efficiency is displayed as a percentage in the GUI of an active Fission Reactor Controller, and sits at 99% for most breeder designs."
+				"Fuel efficiency is displayed as a percentage in the GUI of an active &6Fission Reactor Controller&r, and sits at 99% for most breeder designs."
 				""
 				"When designing a reactor, you want to push this as high as you can, while still producing enough power to suit your needs and managing heat to avoid explosions, of course."
 				"{@pagebreak}"
 				"Once you have a suitable reactor design, the next problem is procuring fuel. &6Uranium&r and &6Thorium&r can be used directly or put in your breeder reactor to produce more powerful fissile fuels, and both can be renewably produced in tiny amounts by macerating &6Red Granite&r and &6Deepslate&r respectively."
 				""
-				"It is recommended you get a Rock Cycle Simulator and a Large Maceration Tower if you choose to take this approach."
+				"It is recommended you get a &6Rock Cycle Simulator&r and a &6Large Maceration Tower&r if you choose to take this approach."
 			]
 			id: "2053CCD1FF775DD5"
 			tasks: [{
@@ -236,11 +266,11 @@
 		{
 			dependencies: ["1F7F73BF81570F3C"]
 			description: [
-				"In the Steam age, &9Steam&r is used for power instead of &aEnergy Units&r."
+				"In the Steam age, &9Steam&r is used for power instead of &eEnergy Units&r."
 				""
-				"You can generate it by burning solid fuel, burning liquid fuel, or by harnessing the power of the sun."
+				"You can generate it by burning solid fuel, burning liquid fuel, or by harnessing the power of the sun as long as you have the respective boiler."
 				""
-				"All three approaches can be upgraded to High Pressure boilers upon gaining access to &6Steel&r, which more than doubles their &9Steam&r production."
+				"All three boilers can be upgraded to High Pressure boilers upon gaining access to &6Steel&r, which more than doubles their &9Steam&r production."
 			]
 			id: "68E87B959F6E9216"
 			optional: true
@@ -405,9 +435,9 @@
 				""
 				"They can be made starting in &5EV&r and are hands-down &ethe simplest way of generating FE.&r"
 				""
-				"All you need to do is place them. The more radioactive the isotope you put in 'em, the more power they make."
+				"All you need to do is place them. The more radioactive the isotope they're made with, the more power they make."
 				""
-				"The easiest kind to make, the Uranium RTG, makes &e100 FE/t&r."
+				"The easiest kind to make, the Uranium RTG, makes &a100 FE/t&r."
 			]
 			id: "50E12E97AC174194"
 			tasks: [{
@@ -423,7 +453,7 @@
 				"07AFEBBC23C2B1E2"
 				"7D7B34CF5145F971"
 			]
-			description: ["Plutonium RTGs are the next tier, and they produce &e1200 FE/t&r, equivalent to a little over two amps of &bMV&r."]
+			description: ["Plutonium RTGs are the next tier, and they produce &a1200 FE/t&r, equivalent to a little over two amps of &bMV&r."]
 			id: "75B6A5541A4D6E49"
 			tasks: [{
 				id: "0FC3257A7BD2D967"
@@ -440,7 +470,8 @@
 			]
 			description: [
 				"The highest tier of RTG."
-				"Californium RTGs generate &e4000 FE/t&r, which equates to almost 2 amps of &6HV&r."
+				"Californium RTGs generate &a4000 FE/t&r, which equates to almost 2 amps of &6HV&r."
+				""
 				"You'll need to explore deep into fission and have a &cZPM&r-tier centrifuge to get them though, by which point they will produce comparatively little energy."
 			]
 			id: "186031BE152824C7"
@@ -458,7 +489,7 @@
 				"6728FB92FD3A2084"
 			]
 			description: [
-				"The Americium RTG is the first RTG 'upgrade' you can get, producing &e400 FE/t&r."
+				"The Americium RTG is the first RTG 'upgrade' you can get, producing &a400 FE/t&r."
 				""
 				"RTGs don't use the previous 'tier' in their recipe and cannot be recycled, so there's no need to craft more than you plan to use."
 			]
@@ -473,7 +504,7 @@
 		}
 		{
 			description: [
-				"Despite &2Solar Panel IV&rs only providing 1 amp of &8ULV&r apiece, they don't unlock until &6HV&r."
+				"Despite &2Solar Panel IV&rs only providing one amp of &8ULV&r apiece, they don't unlock until &6HV&r."
 				""
 				"The previous tiers of panels used in the recipe, however, unlock earlier:"
 				""
@@ -481,7 +512,7 @@
 				"Solar Panel II: &7LV&r"
 				"Solar Panel III: &bMV&r"
 				""
-				"In short, you'll need &e64&r of each tier's solar panel to produce 1 amp of that voltage."
+				"In short, you'll need &e64&r of each tier's Solar Panel to produce one amp of that voltage."
 			]
 			id: "2B67C83223AFB5B0"
 			tasks: [{
@@ -499,7 +530,7 @@
 			]
 			description: [
 				"For this tier of Solar panels, you'll need &6Sunnarium&r."
-				"This in turn requires delving into Fission with &bNuclearcraft&r, so it's quite the detour if you're not prepared for it."
+				"This in turn requires delving into &aFission&r with &bNuclearcraft&r, so it's quite the detour if you're not prepared for it."
 			]
 			id: "68CA2F751276F219"
 			tasks: [{
@@ -514,9 +545,9 @@
 			dependencies: ["68CA2F751276F219"]
 			description: [
 				"Hope you liked Fission, because this Solar panel requires a lot more of it."
-				"You'll need &6Curium&r and &6Neptunium&r specifically to make &6Enriched Sunnarium&r."
+				"You'll need &9Curium&r and &9Neptunium&r specifically to make &6Enriched Sunnarium&r."
 				""
-				"This is also the last tier you can make the solar on a regular &2Crafting Table&r, so be prepared."
+				"This is also the last tier you can make on a regular &2Crafting Table&r, so be prepared."
 			]
 			id: "33DEFDF888BEBE67"
 			tasks: [{
@@ -530,11 +561,11 @@
 		{
 			dependencies: ["33DEFDF888BEBE67"]
 			description: [
-				"Be warned that it's quite the challenge - Solar power is better suited for no-maintenance, low-power outposts like mining, drilling, and air collection operations in other dimensions."
+				"If you want to use Solar Power as your main energy source, be warned that it's quite the challenge - Solar is better suited for no-maintenance, low-power outposts like mining, pumping, and air collection operations in other dimensions."
 				""
-				"If you want to use solars for your primary power generation anyways, then &cdon't place conduits under every solar panel!&r"
+				"If you want to use solars for your primary power generation anyways, then &cdon't waste your time extracting energy from every solar panel!&r"
 				""
-				"Solar panels have the capability to transfer FE between one another on their own, so you can have &esix or more panels per conduit connection&r depending on the tier!"
+				"Solar panels have can transfer &aFE&r between one another on their own, so you can have &esix or more panels per Laser Node or Conduit connection&r depending on the tier!"
 			]
 			id: "03EA9B7B09B88244"
 			tasks: [{
@@ -547,7 +578,7 @@
 		}
 		{
 			dependencies: ["03EA9B7B09B88244"]
-			description: ["&2Solar Panels&r used to be the best option for power generation before Fusion, until they were nerfed and Fission buffed in their place."]
+			description: ["A historical fun fact: &aSolar Panels&r used to be the best option for power generation before Fusion, until they were nerfed and &aFission&r buffed in their place."]
 			id: "0EAD0ACBDD153198"
 			tasks: [{
 				id: "6F5C8AA2908F4D32"
@@ -577,7 +608,9 @@
 			description: [
 				"If you've been using exclusively solar panels for power until this point, then you've accomplished quite the feat."
 				""
-				"Be warned, however: &cit'll become very difficult from now on&r. Solar panels' costs skyrocket, and yet the most powerful solar only produces slightly more than 1 amp of &4UHV&r."
+				"Be warned, however: &cit'll become very difficult from now on&r. Solar panels' costs skyrocket, and yet the most powerful solar only produces slightly more than one amp of &4UHV&r."
+				""
+				"There's only so much energy in one square meter of sunlight, after all!"
 			]
 			id: "2E269D0B496C380C"
 			tasks: [{
@@ -593,7 +626,7 @@
 			description: [
 				"You'll need both &6Omnium&r and &6Neutronium&r to make this solar panel."
 				""
-				"Those are quite time-consuming, so you'd best get started early!"
+				"Those materials can be quite expensive, so you'd best get started early!"
 			]
 			id: "0F048CED8D4C6A43"
 			tasks: [{
@@ -622,7 +655,7 @@
 					type: "item"
 				}
 				{
-					count: 27L
+					count: 24L
 					id: "6324614154FC58BF"
 					item: "gtceu:tungstensteel_turbine_casing"
 					type: "item"
@@ -635,11 +668,11 @@
 				}
 			]
 			title: "{moni.quest.1405D08C6A87B3BB.title}"
-			x: 0.0d
+			x: -1.0d
 			y: -2.0d
 		}
 		{
-			description: ["If you're looking to get into Gas generation as early as &7LV&r, your best options are &9Methane Gas&r centrifuged from biomatter, or &9Coal Gas&r from the Pyrolyse Oven."]
+			description: ["If you're looking to get into power generation with a &6Gas Turbine Generator&r as early as &7LV&r, your best fuel options are &9Methane Gas&r centrifuged from biomatter, or &9Coal Gas&r from the &3Pyrolyse Oven&r."]
 			id: "34F0E33D33EB82E2"
 			tasks: [{
 				id: "18C84802C176E92E"
@@ -651,9 +684,9 @@
 		}
 		{
 			description: [
-				"It's a little difficult to produce energy using combustion in &7LV&r, but if you have easy access to a nearby &9Oil&r spout it may be beneficial to you; Combustion engines can use both &9Raw Oil&r and &9Light Oil&r for power."
+				"It's a little difficult to produce energy using combustion in &7LV&r, but if you have easy access to a nearby &9Oil&r spout it may be beneficial to you; &6Combustion Generators&r can use both &9Raw Oil&r and &9Light Oil&r for power."
 				""
-				"However, using &9Oil&r for power isn't very efficient. You'll want to distill the &9Oil&r if you want to make better use of the stuff."
+				"However, burning &9Oil&r for power isn't very efficient. You'll want to distill the &9Oil&r if you want to make better use of the stuff."
 			]
 			id: "685330660E88E827"
 			tasks: [{
@@ -667,8 +700,9 @@
 		{
 			dependencies: ["685330660E88E827"]
 			description: [
-				"&bMV&r opens doors in chemistry, unlocking more efficient fuels."
-				"[\"In particular, you should aim for \",{ \"text\": \"Naphtha\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"04BDE09518C184E4\" }},\" or \",{ \"text\": \"Diesel\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"74EDAE84246C7228\" }},\" as they're easy to produce in large quantities.\"]"
+				"&bMV&r opens up chemistry and distillation, unlocking more efficient fuels."
+				""
+				"[\"In particular, you should aim for oil distillates like \",{ \"text\": \"Light Fuel\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0E20199737DFE4AC\" }},\", \",{ \"text\": \"Heavy Fuel\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1F2E76FA4B2C2E84\" }},\", or \",{ \"text\": \"Naphtha.\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"04BDE09518C184E4\" }}]"
 			]
 			id: "63B27CA5BB60B740"
 			tasks: [{
@@ -686,7 +720,7 @@
 				""
 				"This enables you to produce all byproducts from &9Oil&r instead of just one."
 				""
-				"[\"At this point, you should consider producing \",{ \"text\": \"Gasoline\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4C76017864258EA9\" }},\" if your generators consume too much fuel - it lasts for longer than less refined fuels.\"]"
+				"[\"At this point, you should consider producing \",{ \"text\": \"Gasoline\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4C76017864258EA9\" }},\" or \",{ \"text\": \"Diesel\", \"color\":\"blue\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"74EDAE84246C7228\" }},\" if your generators consume too much of your current fuel - they'll last longer than less sophisticated fuels.\"]"
 			]
 			id: "6974AA409CC355E6"
 			tasks: [{
@@ -700,7 +734,7 @@
 		{
 			dependencies: ["7976402E2E5FD625"]
 			description: [
-				"[\"This tier of Steam Turbine Generator may be worth skipping. If you can make one, you're not far off from the \",{ \"text\": \"Large Steam Turbine\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"15A5B4C632836306\" }},\", which is much more scalable.\"]"
+				"[\"The Advanced \",{\"color\":\"gold\",\"text\":\"Steam Turbine Generator II\"},\" may be worth skipping. If you can make one, you're not far off from the \",{\"color\":\"gold\",\"text\": \"Large Steam Turbine\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"15A5B4C632836306\" }},\", which is much more scalable.\"]"
 				" "
 			]
 			id: "1B04AA7D9AEB2CFA"
@@ -715,9 +749,9 @@
 		{
 			dependencies: ["34876F54406B6A04"]
 			description: [
-				"To upgrade power production in &bGregTech&r, you can either make better generators, or use more of them and transform the combined output to the voltage you need."
+				"To upgrade power production in &bGregTech&r, you can either make better generators, or make more of them. The &6Advanced Steam Turbine Generator&r consumes 4x as much &9Steam&r, but in exchange produces 4x as much &eEU&r."
 				""
-				"Either way, you'll need more &9Steam&r. For this reason, you should look into using a &3Large Steel Boiler&r. It's the best way to produce steam in &bMV&r."
+				"For this reason, you should look into using a &3Large Steel Boiler&r. It's the best way to produce steam in &bMV&r."
 			]
 			id: "7976402E2E5FD625"
 			tasks: [{
@@ -730,7 +764,7 @@
 		}
 		{
 			dependencies: ["34F0E33D33EB82E2"]
-			description: ["In &bMV&r, you unlock additional gasses that can be more potent or cheaper to produce. In particular, &9Wood Gas&r, &9Benzene&r and &9LPG&r are good options at this stage."]
+			description: ["In &bMV&r, you unlock new gasses that are cheaper to produce or last longer in your generators. In particular, &9Wood Gas&r, &9Benzene&r and &9LPG&r are good options at this stage. You'll likely need one of them, as &6Advanced Gas Turbine Generators&r consume 4x as much fuel to generate 4x as much &eEU&r."]
 			id: "2BCE3E3E0B8180F7"
 			tasks: [{
 				id: "2D43432E922A6B74"
@@ -743,8 +777,9 @@
 		{
 			dependencies: ["2BCE3E3E0B8180F7"]
 			description: [
-				"[\"This tier of Gas Turbine Generator may be worth skipping. If you can make one and have a solid \",{ \"text\": \"Stainless Steel\", \"color\":\"blue\" },\" production, you're not far off from the \",{ \"text\": \"Large Gas Turbine\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7D72B3FF808CE13C\" }},\", which is much more scalable.\"]"
-				" "
+				"[\"The \",{\"color\":\"gold\",\"text\":\"Advanced Gas Turbine Generator II\"},\" may be worth skipping. If you can make one and have a solid \",{ \"text\": \"Stainless Steel\", \"color\":\"blue\" },\" production, you're not far off from the \",{\"color\":\"gold\",\"text\": \"Large Gas Turbine\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7D72B3FF808CE13C\" }},\", which is much more scalable.\"]"
+				""
+				"You'll need a better fuel either way, though. &9Nitrobenzene&r is far and away the best option, and will remain so for a while."
 			]
 			id: "7E276DF48E9085A4"
 			tasks: [{
@@ -756,7 +791,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["2E8AFA6B42E939B4"]
+			dependencies: ["21E10888F52A3C73"]
 			id: "3DD98BBF240F54D0"
 			size: 0.2d
 			tasks: [{
@@ -768,7 +803,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["7A7FFE9E89D19A2F", "7A65459E4DFAAC2D"]
+			dependencies: ["7A65459E4DFAAC2D"]
 			description: [
 				"{moni.quest.425D1C34A82B054D.description1}"
 				""
@@ -788,37 +823,27 @@
 					type: "item"
 				}
 				{
-					id: "3C8BD4187F47FBC9"
-					item: "gtceu:black_steel_block"
-					type: "item"
-				}
-				{
-					count: 2L
+					count: 4L
 					id: "4F11D4069AEF06CA"
-					item: "gtceu:duranium_block"
+					item: "gtceu:trinium_coil_block"
 					type: "item"
 				}
 				{
-					count: 12L
+					count: 16L
 					id: "2FF2B4C219053E6A"
 					item: "ae2:spatial_pylon"
 					type: "item"
 				}
 				{
-					count: 12L
+					count: 16L
 					id: "27B323E3ADED4829"
 					item: "gtceu:fusion_glass"
 					type: "item"
 				}
 				{
-					count: 14L
+					count: 12L
 					id: "2D40468415EA637F"
 					item: "gtceu:reaction_safe_mixing_casing"
-					type: "item"
-				}
-				{
-					id: "1685A72D65A02E82"
-					item: "gtceu:luv_energy_output_hatch"
 					type: "item"
 				}
 			]
@@ -827,57 +852,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["425D1C34A82B054D"]
-			description: [
-				"The &3Naquadah Reactor II&r is an upgraded reactor that can generate immense amounts of EU energy from the same types of fuels as the MK I. The materials it requires are similar to the MK I, and you can almost reuse the same structure. Make sure you are prepared for the UV power output by adding a &6UV Energy Output Hatch&r."
-				""
-				"This is a pretty expensive structure though, as it needs a block of &9Omnium&r."
-			]
-			icon: "gtceu:naquadah_reactor_ii"
-			id: "2E8AFA6B42E939B4"
-			rewards: [{
-				id: "08A490626FF2A96E"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "134557DDF5E22B0B"
-					item: "gtceu:naquadah_reactor_ii"
-					type: "item"
-				}
-				{
-					id: "5B267E479790306D"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:storage_blocks/omnium"
-						}
-					}
-					title: "Omnium Block"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "3405F2EC601908BB"
-					item: "gtceu:ruthenium_trinium_americium_neutronate_block"
-					type: "item"
-				}
-				{
-					id: "3B162FA985E74B6A"
-					item: "gtceu:uv_energy_output_hatch"
-					type: "item"
-				}
-			]
-			title: "Naquadah Reactor II"
-			x: 8.0d
-			y: -1.0d
-		}
-		{
 			dependencies: [
 				"73C1AB31431B5C11"
 				"0006FEA1843FEA0A"
+				"57E7182198B2EA9A"
 			]
 			description: [
 				"{moni.quest.6FDF37EE046349F7.description1}"
@@ -888,6 +866,7 @@
 			]
 			hide_until_deps_visible: true
 			id: "6FDF37EE046349F7"
+			optional: true
 			rewards: [{
 				id: "00CF22695EBB0588"
 				item: "kubejs:moni_quarter"
@@ -903,7 +882,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1B1D3A66B847D129", "13578427FD9CC2CE"]
+			dependencies: ["13578427FD9CC2CE"]
 			description: [
 				"{moni.quest.19084E91F357C8C2.description1}"
 				""
@@ -922,7 +901,6 @@
 		}
 		{
 			dependencies: [
-				"3171F83E24C8F740"
 				"0F048CED8D4C6A43"
 				"738A141D31AD7CE3"
 			]
@@ -968,6 +946,28 @@
 			title: "{moni.quest.3B57A9816A61C1DC.title}"
 			x: 6.25d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7C4E04E3EA603000"
+				"425D1C34A82B054D"
+			]
+			description: ["{moni.quest.21E10888F52A3C73.description1}"]
+			icon: "gtceu:large_naquadah_reactor"
+			id: "21E10888F52A3C73"
+			rewards: [{
+				id: "50D8FC0D09DC8FDC"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "51C99B20F637AA2C"
+				item: "gtceu:large_naquadah_reactor"
+				type: "item"
+			}]
+			title: "{moni.quest.21E10888F52A3C73.title}"
+			x: 8.0d
+			y: -1.0d
 		}
 	]
 	title: "Power Generation"

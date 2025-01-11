@@ -1181,22 +1181,6 @@
 			y: -8.75d
 		}
 		{
-			dependencies: ["7C4E04E3EA603000"]
-			description: ["{moni.quest.21E10888F52A3C73.description1}"]
-			icon: "gtceu:large_naquadah_reactor"
-			id: "21E10888F52A3C73"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "51C99B20F637AA2C"
-				item: "gtceu:large_naquadah_reactor"
-				type: "item"
-			}]
-			title: "{moni.quest.21E10888F52A3C73.title}"
-			x: 35.0d
-			y: -8.75d
-		}
-		{
 			dependencies: [
 				"21E10888F52A3C73"
 				"1F7F73BF81570F3C"
