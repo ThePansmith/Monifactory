@@ -242,7 +242,7 @@ JEIEvents.addItems(event => {
     event.add('enderio:reinforced_obsidian_block')
 
     //NuclearCraft
-    event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust', 'nuclearcraft:beryllium_block', 'nuclearcraft:graphite_block'])
+    event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust'])
 })
 
 JEIEvents.hideFluids(event => {

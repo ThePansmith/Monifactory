@@ -87,6 +87,11 @@ ServerEvents.tags('item', event => {
     // For stonecutting Marble
     event.add('moni:marble', /^(gtceu:(marble|polished_marble|marble_bricks|cracked_marble_bricks|chiseled_marble|marble_tile|marble_small_tile|marble_windmill_a|marble_windmill_b|small_marble_bricks|square_marble_bricks))$/)
 
+    // We're making these Nuclearcraft storage blocks function solely as moderators, so they should not have the tags
+    event.remove('forge:storage_blocks', ['nuclearcraft:beryllium_block', 'nuclearcraft:graphite_block']);
+    event.remove('forge:storage_blocks/beryllium', 'nuclearcraft:beryllium_block');
+    event.remove('forge:storage_blocks/graphite', 'nuclearcraft:graphite_block');
+
     unifyChisel(event);
 })
 
@@ -97,6 +102,11 @@ ServerEvents.tags('block', event => {
     event.add('minecraft:bamboo_plantable_on', compacted_sand);
     event.add('minecraft:azalea_grows_on', compacted_sand);
     event.add('framedblocks:camo_sustain_plant', compacted_sand);
+
+    // We're making these Nuclearcraft storage blocks function solely as moderators, so they should not have the tags
+    event.remove('forge:storage_blocks', ['nuclearcraft:beryllium_block', 'nuclearcraft:graphite_block']);
+    event.remove('forge:storage_blocks/beryllium', 'nuclearcraft:beryllium_block');
+    event.remove('forge:storage_blocks/graphite', 'nuclearcraft:graphite_block');
 
     unifyChisel(event);
 })

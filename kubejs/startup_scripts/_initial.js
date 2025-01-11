@@ -50,6 +50,8 @@ global.manualUnification = [
     'extendedcrafting:nether_star_block',
 ];
 global.UnificationExcludedItems = [
+    'nuclearcraft:beryllium_block',
+    'nuclearcraft:graphite_block',
     'nuclearcraft:hard_carbon_ingot',
     'nuclearcraft:ferroboron_ingot',
     'nuclearcraft:tough_alloy_ingot',
