@@ -9,11 +9,6 @@ ServerEvents.recipes(event => {
         ['uev', 'omnium', 'holmium'],
         ['uiv', 'holmium', 'monium'],
     ]
-    // no MAX tier laserhatch :1984:
-    const laserhatch = [
-        ['uev', 'activated_netherite', '1966080'],
-        ['uiv', 'holmium', '3932160'],
-    ]
 
     converter.forEach(([tier, mat1, mat2, eut]) => {
         event.remove({ output: [`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter`] })
@@ -122,50 +117,6 @@ ServerEvents.recipes(event => {
             H: `gtceu:${tier}_machine_hull`,
             W: 'gtceu:uhpic_chip'
         })
-    })
-
-    laserhatch.forEach(([tier, mat1, eut]) => {
-        event.recipes.gtceu.assembler(`${tier}_256a_laser_target_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, 'gtceu:diamond_lens', `gtceu:${tier}_emitter`, `gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
-            .itemOutputs(`gtceu:${tier}_256a_laser_target_hatch`)
-            .circuit(1)
-            .duration(400)
-            .EUt(eut)
-
-        event.recipes.gtceu.assembler(`${tier}_256a_laser_source_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, 'gtceu:diamond_lens', `gtceu:${tier}_sensor`, `gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
-            .itemOutputs(`gtceu:${tier}_256a_laser_source_hatch`)
-            .circuit(1)
-            .duration(400)
-            .EUt(eut)
-
-        event.recipes.gtceu.assembler(`${tier}_1024a_laser_target_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, '2x gtceu:diamond_lens', `2x gtceu:${tier}_emitter`, `2x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
-            .itemOutputs(`gtceu:${tier}_1024a_laser_target_hatch`)
-            .circuit(2)
-            .duration(400)
-            .EUt(eut)
-
-        event.recipes.gtceu.assembler(`${tier}_1024a_laser_source_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, '2x gtceu:diamond_lens', `2x gtceu:${tier}_sensor`, `2x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_double_wire`)
-            .itemOutputs(`gtceu:${tier}_1024a_laser_source_hatch`)
-            .circuit(2)
-            .duration(400)
-            .EUt(eut)
-
-        event.recipes.gtceu.assembler(`${tier}_4096a_laser_target_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, '4x gtceu:diamond_lens', `4x gtceu:${tier}_emitter`, `4x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_quadruple_wire`)
-            .itemOutputs(`gtceu:${tier}_4096a_laser_target_hatch`)
-            .circuit(3)
-            .duration(400)
-            .EUt(eut)
-
-        event.recipes.gtceu.assembler(`${tier}_4096a_laser_source_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, '4x gtceu:diamond_lens', `4x gtceu:${tier}_sensor`, `4x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_quadruple_wire`)
-            .itemOutputs(`gtceu:${tier}_4096a_laser_source_hatch`)
-            .circuit(3)
-            .duration(400)
-            .EUt(eut)
     })
 
     // UHV hulls have missing crafting table recipe
