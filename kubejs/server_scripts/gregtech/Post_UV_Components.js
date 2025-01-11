@@ -168,31 +168,56 @@ ServerEvents.recipes(event => {
             .EUt(eut)
     })
 
-    event.recipes.gtceu.assembler('uev_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
-        .itemOutputs('gtceu:uev_machine_hull')
-        .duration(50)
-        .EUt(16)
+    // UHV hulls have missing crafting table recipe
+    event.shaped('gtceu:uhv_machine_hull', [
+        'PMP',
+        'WCW'
+    ], {
+        P: 'gtceu:polybenzimidazole_plate',
+        M: 'gtceu:neutronium_plate',
+        W: 'gtceu:europium_single_cable',
+        C: 'gtceu:uhv_machine_casing'
+    }).id('gtceu:shaped/hull_uhv')
 
-    event.recipes.gtceu.assembler('uev_casing')
-        .itemInputs('8x gtceu:omnium_plate')
-        .itemOutputs('gtceu:uev_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
+    const hullMaterials = [
+        {tier: "uev", material: "omnium", wire: "omnium_single_cable", plastic: "polyethyl_cyanoacrylate"},
+        {tier: "uiv", material: "infinity", wire: "holmium_single_wire", plastic: "polyethyl_cyanoacrylate"},
+        {tier: "max", material: "monium", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate"},
+    ]
 
-    event.recipes.gtceu.assembler('uiv_hull')
-        .itemInputs('gtceu:uiv_machine_casing', '2x gtceu:activated_netherite_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
-        .itemOutputs('gtceu:uiv_machine_hull')
-        .duration(50)
-        .EUt(16)
+    hullMaterials.forEach((value) => {
+        event.shaped(`gtceu:${value.tier}_machine_casing`, [
+            'PPP',
+            'PWP',
+            'PPP'
+        ], {
+            P: `gtceu:${value.material}_plate`,
+            W: '#forge:tools/wrenches'
+        }).id(`shaped/casing_${value.tier}`)
 
-    event.recipes.gtceu.assembler('uiv_casing')
-        .itemInputs('8x gtceu:infinity_plate')
-        .itemOutputs('gtceu:uiv_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
+        event.recipes.gtceu.assembler(`casing_${value.tier}`)
+            .itemInputs(`8x gtceu:${value.material}_plate`)
+            .itemOutputs(`gtceu:${value.tier}_machine_casing`)
+            .circuit(8)
+            .duration(50)
+            .EUt(GTValues.VHA[GTValues.LV])
+
+        event.shaped(`gtceu:${value.tier}_machine_hull`, [
+            'PMP',
+            'WCW'
+        ], {
+            P: `gtceu:${value.plastic}_plate`,
+            M: `gtceu:${value.material}_plate`,
+            W: `gtceu:${value.wire}`,
+            C: `gtceu:${value.tier}_machine_casing`
+        }).id(`shaped/hull_${value.tier}`)
+    
+        event.recipes.gtceu.assembler(`hull_${value.tier}`)
+            .itemInputs(`gtceu:${value.tier}_machine_casing`, `2x gtceu:${value.wire}`, `2x gtceu:${value.plastic}_plate`)
+            .itemOutputs(`gtceu:${value.tier}_machine_hull`)
+            .duration(50)
+            .EUt(GTValues.VHA[GTValues.LV])
+    })
 
     // Motors
     event.recipes.gtceu.assembly_line('uhv_motor')
