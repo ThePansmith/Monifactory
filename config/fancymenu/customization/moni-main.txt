@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1736555865662
+  last_edited_time = 1736627899558
   is_enabled = true
   randommode = true
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:cc7fba58-ddaa-4094-a4c6-5f36c26e5a8d-1736555574729] = [groups:][instances:]
+  [loading_requirement_container_meta:4c745c16-2a3a-4566-b801-8cef9bf3b018-1736627836228] = [groups:][instances:]
 }
 
 customization {
@@ -164,7 +164,7 @@ element {
 }
 
 element {
-  source = [source:web]https://raw.githubusercontent.com/ThePansmith/MonifactoryAssets/refs/heads/main/monibgseasonal.png
+  source = [source:web]https://raw.githubusercontent.com/ThePansmith/MonifactoryAssets/refs/heads/main/menubg/monibgoverride.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
