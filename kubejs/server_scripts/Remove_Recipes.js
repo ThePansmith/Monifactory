@@ -45,7 +45,6 @@ ServerEvents.recipes(event => {
 
     // Misc broken recipes
     event.remove({ id: 'minecraft:netherite_spikes_smithing' })
-    event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/copper'] })
 
     // Angel Ring
     event.remove({ id: 'better_angel_ring:angel_ring' })
