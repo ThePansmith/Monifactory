@@ -680,6 +680,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    //Fix for generator "overclocking" as long as the actual hatch invalidates the structure
         .appearanceBlock(GCYMBlocks.CASING_REACTION_SAFE)
         .generator(true)
+        .regressWhenWaiting(false)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCC", "PGP", "PGP", "PGP", "PGP", "CCC")
             .aisle("CCC", "GNG", "GNG", "GNG", "GNG", "CCC")
@@ -699,6 +700,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('large_naquadah_reactor')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    //Fix for generator "overclocking" as long as the actual hatch invalidates the structure
+        .regressWhenWaiting(false)
         .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
         .generator(true)
         .pattern(definition => FactoryBlockPattern.start()
