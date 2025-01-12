@@ -12,7 +12,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'gtceu:ender_fluid_link_cover' })
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
     event.remove({ id: 'gtceu:mixer/rhodium_plated_palladium' })
-    event.remove({ id: /gtceu:cutter\/cut_quartz_into_slab.*/ });
 
     //FIXME will get fixed
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__fireclay" })
