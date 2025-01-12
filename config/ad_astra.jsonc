@@ -2,7 +2,7 @@
     // Allow players to set custom flag images for their rockets.
     "allowFlagImages": true,
     // Allow rockets to be launched from any dimension, even if it's not considered a planet.
-    "launchAnywhere": false,
+    "launchAnywhere": true,
     /*
      * The random tick speed for breaking plants, torches, freezing water, etc. on planets.
      * Type: Integer

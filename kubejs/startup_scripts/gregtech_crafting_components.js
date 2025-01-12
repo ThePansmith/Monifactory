@@ -29,13 +29,14 @@ GTCEuStartupEvents.craftingComponents(event => {
         [TagPrefix.cableGtDouble, TagPrefix.wireGtDouble, CraftingComponent.CABLE_DOUBLE],
         [TagPrefix.cableGtQuadruple, TagPrefix.wireGtQuadruple, CraftingComponent.CABLE_QUAD],
         [TagPrefix.cableGtOctal, TagPrefix.wireGtOctal, CraftingComponent.CABLE_OCT],
-        //[TagPrefix.wireGtHex, TagPrefix.cableGtHex, CraftingComponent.CABLE_HEX] // Seems borked? Causes crashes when uncommented
+        //[TagPrefix.cableGtHex, TagPrefix.wireGtHex, CraftingComponent.CABLE_HEX] // Seems borked? Causes crashes when uncommented
     ]
 
     wireCableComponentPrefixes.forEach(prefixComponentPair => {
         let wireMap = {};
         wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get('omnium'));
         wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[1], GTMaterials.Holmium);
+        wireMap[GTValues.MAX] = UnificationEntry(prefixComponentPair[1], GTMaterials.get('monium'));
         event.modify(prefixComponentPair[2], wireMap)
     })
 
@@ -83,7 +84,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     let plateMap = {};
     plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get('omnium'))
     plateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get('infinity'))
-    plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get('holmium'))
+    plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get('monium'))
     event.modifyUnificationEntry(CraftingComponent.PLATE, plateMap)
 
     // Hull plates
@@ -151,21 +152,23 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     // Chem reactor pipe ingredient
     let reactorPipeMap = {};
-    reactorPipeMap[GTValues.UHV] = UnificationEntry(TagPrefix.pipeNormalFluid, GTMaterials.Polybenzimidazole)
-    reactorPipeMap[GTValues.UEV] = UnificationEntry(TagPrefix.pipeLargeFluid, GTMaterials.Polybenzimidazole)
-    reactorPipeMap[GTValues.UIV] = UnificationEntry(TagPrefix.pipeLargeFluid, GTMaterials.Polybenzimidazole)
+    reactorPipeMap[GTValues.UHV] = UnificationEntry(TagPrefix.pipeNormalFluid, GTMaterials.get('polyethyl_cyanoacrylate'))
+    reactorPipeMap[GTValues.UEV] = UnificationEntry(TagPrefix.pipeLargeFluid, GTMaterials.get('polyethyl_cyanoacrylate'))
+    reactorPipeMap[GTValues.UIV] = UnificationEntry(TagPrefix.pipeHugeFluid, GTMaterials.get('polyethyl_cyanoacrylate'))
     event.modifyUnificationEntry(CraftingComponent.PIPE_REACTOR, reactorPipeMap)
 
     // PIC ingredient
     let powerComponentMap = {};
     powerComponentMap[GTValues.UEV] = Item.of('kubejs:uxpic_chip')
     powerComponentMap[GTValues.UIV] = Item.of('kubejs:uxpic_chip')
+    powerComponentMap[GTValues.MAX] = Item.of('kubejs:uxpic_chip')
     event.modifyItem(CraftingComponent.POWER_COMPONENT, powerComponentMap)
 
     // Spring
     let springMap = {};
     springMap[GTValues.UEV] = UnificationEntry(TagPrefix.spring, GTMaterials.get('activated_netherite'))
     springMap[GTValues.UIV] = UnificationEntry(TagPrefix.spring, GTMaterials.get('holmium'))
+    springMap[GTValues.MAX] = UnificationEntry(TagPrefix.spring, GTMaterials.get('monium'))
     event.modifyUnificationEntry(CraftingComponent.SPRING, springMap)
 
     // Frame
@@ -173,5 +176,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     frameMap[GTValues.UHV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.Neutronium)
     frameMap[GTValues.UEV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get('omnium'))
     frameMap[GTValues.UIV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get('infinity'))
+    frameMap[GTValues.MAX] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get('monium'))
     event.modifyUnificationEntry(CraftingComponent.FRAME, frameMap)
 })
