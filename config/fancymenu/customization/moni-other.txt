@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_link_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736628591265
+  last_edited_time = 1736696913696
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:9a018fb4-15e1-49d7-ac9f-557f7714f33d-1736628556428] = [groups:][instances:]
+  [loading_requirement_container_meta:ab9a9707-95f9-4530-b1ce-a6131be3cbab-1736696899230] = [groups:][instances:]
 }
 
 customization {
@@ -360,49 +360,6 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:7ecdd4f3-7d21-4354-9615-f43ebeb3af08-1736470116664][action_type:openlink] = https://discord.com/invite/pC8eZQpWqK
-  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:7ecdd4f3-7d21-4354-9615-f43ebeb3af08-1736470116664;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  hoverlabel = &9Discord
-  label = Discord
-  navigatable = true
-  widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
-  [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
-  element_type = custom_button
-  instance_identifier = 4f7806b6-d0d9-46f5-be26-62b0637619b0-1736469424505
-  custom_element_layer_name = Disc
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in_v2 = no_fading
-  fade_in_speed = 1.0
-  fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  auto_sizing = false
-  auto_sizing_base_screen_width = 1921
-  auto_sizing_base_screen_height = 1017
-  sticky_anchor = false
-  anchor_point = element
-  anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
-  x = -7
-  y = -64
-  width = 96
-  height = 10
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
-  [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
-}
-
-element {
-  button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
   [executable_action_instance:7366e83b-8449-4285-8f55-027568fed821-1736470766925][action_type:opengui] = pack_credit_screen
   [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:7366e83b-8449-4285-8f55-027568fed821-1736470766925;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
@@ -434,7 +391,7 @@ element {
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
   x = -8
-  y = -34
+  y = -41
   width = 96
   height = 10
   stretch_x = false
@@ -477,7 +434,7 @@ element {
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
   x = -11
-  y = -54
+  y = -63
   width = 96
   height = 10
   stretch_x = false
@@ -520,7 +477,7 @@ element {
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
   x = -6
-  y = -24
+  y = -30
   width = 96
   height = 10
   stretch_x = false
@@ -563,7 +520,7 @@ element {
   anchor_point = element
   anchor_point_element = 29761ffa-a98e-4def-a4a4-fa78ec2a1c64-1736468843168
   x = 9
-  y = -44
+  y = -52
   width = 96
   height = 10
   stretch_x = false
