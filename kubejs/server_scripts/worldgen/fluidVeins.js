@@ -57,7 +57,7 @@ GTCEuServerEvents.fluidVeins(event => {
     // Mars fluid veins (haha water on Mars)
     event.add('kubejs:mars/ice', vein => {
         vein.dimensions('ad_astra:mars')
-        vein.biomes(1, martianPolarCapsResourceKey)
+        vein.biomes(20, martianPolarCapsResourceKey)
         vein.fluid(() => Fluid.of("gtceu:ice").fluid)
         vein.weight(0)
         vein.minimumYield(100)
@@ -65,6 +65,28 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletionAmount(1)
         vein.depletionChance(50)
         vein.depletedYield(3)
+    })
+
+    event.add('kubejs:mars/ethylene', vein => {
+        vein.dimensions('ad_astra:mars')
+        vein.fluid(() => Fluid.of("gtceu:ethylene").fluid)
+        vein.weight(2)
+        vein.minimumYield(150)
+        vein.maximumYield(400)
+        vein.depletionAmount(1)
+        vein.depletionChance(50)
+        vein.depletedYield(10)
+    })
+
+    event.add('kubejs:mars/fluorine', vein => {
+        vein.dimensions('ad_astra:mars')
+        vein.fluid(() => Fluid.of("gtceu:fluorine").fluid)
+        vein.weight(1)
+        vein.minimumYield(100)
+        vein.maximumYield(250)
+        vein.depletionAmount(1)
+        vein.depletionChance(50)
+        vein.depletedYield(5)
     })
 
     // Venus fluid veins
@@ -147,6 +169,17 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletionAmount(2)
         vein.depletionChance(100)
         vein.depletedYield(40)
+    })
+
+    event.add('kubejs:glacio/chlorobenzene', vein => {
+        vein.dimensions('ad_astra:glacio')
+        vein.fluid(() => Fluid.of("gtceu:chlorobenzene").fluid)
+        vein.weight(3)
+        vein.minimumYield(200)
+        vein.maximumYield(300)
+        vein.depletionAmount(1)
+        vein.depletionChance(30)
+        vein.depletedYield(10)
     })
 
     event.add('kubejs:glacio/cryotheum', vein => {
