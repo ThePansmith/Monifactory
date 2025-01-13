@@ -70,9 +70,7 @@
 			"minecraft:disk_clay",
 			"minecraft:disk_gravel"
 		],
-		[
-			"wythers:vegetation/local/other/fungal_sculk_vein"
-		],
+		[],
 		[
 			"minecraft:spring_water",
 			"minecraft:spring_lava"
