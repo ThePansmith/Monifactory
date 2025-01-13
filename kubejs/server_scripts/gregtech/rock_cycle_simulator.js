@@ -42,16 +42,16 @@ ServerEvents.recipes(event => {
     RockCycle('shale', 'quark:shale', 'quark:shale', 60)
     RockCycle('myalite', 'quark:myalite', 'quark:myalite', 60)
 
-        //Ad Astra Recipe Function
-        function AdAstraRockCycle(id, input, output, EUt, dimension) {
-            event.recipes.gtceu.rock_cycle_simulator(`kubejs:${id}`)
-                .notConsumable(Item.of(input))
-                .itemOutputs(output)
-                .duration(16)
-                .EUt(EUt)
-                .dimension(dimension)
-        }
-    
+    //Ad Astra Recipe Function
+    function AdAstraRockCycle(id, input, output, EUt, dimension) {
+        event.recipes.gtceu.rock_cycle_simulator(`kubejs:${id}`)
+            .notConsumable(Item.of(input))
+            .itemOutputs(output)
+            .duration(16)
+            .EUt(EUt)
+            .dimension(dimension)
+    }
+
     AdAstraRockCycle('moonstone', 'ad_astra:moon_stone', 'ad_astra:moon_stone', 240, 'ad_astra:moon')
     AdAstraRockCycle('moondeepslate', 'ad_astra:moon_deepslate', 'ad_astra:moon_deepslate', 240, 'ad_astra:moon')
     AdAstraRockCycle('marsstone', 'ad_astra:mars_stone', 'ad_astra:mars_stone', 240, 'ad_astra:mars')

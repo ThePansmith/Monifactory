@@ -457,7 +457,7 @@ ServerEvents.tags("item", event => {
 })
 
 ServerEvents.recipes(event => {
-    //Ad Astra Rock Breaker
+    // Ad Astra Rock Breaker
     function AdAstraRockBreaker(id, input, output, EUt, dimension) {
         event.recipes.gtceu.rock_breaker(`kubejs:${id}`)
             .notConsumable(Item.of(input))
@@ -479,7 +479,7 @@ ServerEvents.recipes(event => {
     AdAstraRockBreaker('glaciostone', 'ad_astra:glacio_stone', 'ad_astra:glacio_stone', 2160, 'ad_astra:glacio')
     AdAstraRockBreaker('permafrost', 'ad_astra:permafrost', 'ad_astra:permafrost', 2160, 'ad_astra:glacio')
 
-    //Ad Astra Rock Forge Hammers
+    // Ad Astra Rock Forge Hammers
     function AdAstraForgeHammer(id, input, output, duration, EUt) {
         event.recipes.gtceu.forge_hammer(`kubejs:${id}`)
             .itemInputs(Item.of(input))
