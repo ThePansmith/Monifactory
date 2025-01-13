@@ -89,6 +89,8 @@
 		],
 		[
 			"minecraft:glow_lichen",
+			"minecraft:forest_flowers",
+      		"minecraft:flower_default",
 			"wythers:vegetation/local/patch/grass_standard",
 			"minecraft:brown_mushroom_normal",
 			"minecraft:red_mushroom_normal",
