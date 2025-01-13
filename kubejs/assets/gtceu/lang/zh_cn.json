@@ -1,4 +1,9 @@
 {
+    "__GTCEuNative__.header": "================",
+    "__GTCEuNative__.flufff": ">   GTCEu 原生  <",
+    "__GTCEuNative__.footer": "================",
+    "gtceu.multiblock.parallel.exact": "并行执行 %d 个配方",
+    "metaitem.electric.discharge_mode.tooltip": "潜行使用以切换释能模式",
     "__HM_RARE_EARTH__.header": "========================",
     "__HM_RARE_EARTH__.flufff": "> 困难模式稀土 <",
     "__HM_RARE_EARTH__.footer": "========================",

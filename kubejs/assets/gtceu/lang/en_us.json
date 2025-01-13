@@ -1,4 +1,9 @@
 {
+    "__GTCEuNative__.header": "================",
+    "__GTCEuNative__.flufff": "> GTCEu Native <",
+    "__GTCEuNative__.footer": "================",
+    "gtceu.multiblock.parallel.exact": "Performing %d Recipes in Parallel",
+    "metaitem.electric.discharge_mode.tooltip": "Use while sneaking to toggle discharge mode",
     "__HM_RARE_EARTH__.header": "========================",
     "__HM_RARE_EARTH__.flufff": "> Hard Mode Rare Earth <",
     "__HM_RARE_EARTH__.footer": "========================",
