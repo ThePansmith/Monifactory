@@ -186,11 +186,6 @@
 			"minecraft:disk_sand",
 			"minecraft:disk_clay",
 			"minecraft:disk_gravel",
-			"wythers:ores/ore_iron_windswept",
-			"wythers:ores/ore_coal_windswept",
-			"wythers:ores/ore_redstone_windswept",
-			"wythers:ores/ore_gold_volcanic",
-			"wythers:ores/ore_diamond_volcanic",
 			"wythers:ores/ore_lava_volcanic"
 		],
 		[

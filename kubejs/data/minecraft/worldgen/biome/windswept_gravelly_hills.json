@@ -189,9 +189,6 @@
 			"minecraft:disk_sand",
 			"minecraft:disk_clay",
 			"minecraft:disk_gravel",
-			"wythers:ores/ore_iron_windswept",
-			"wythers:ores/ore_coal_windswept",
-			"wythers:ores/ore_redstone_windswept",
 			"wythers:terrain/local/replace_grass_to_mycelium",
 			"wythers:vegetation/local/patch/dead_corals_on_gravel"
 		],
