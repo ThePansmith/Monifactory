@@ -42,4 +42,24 @@ ServerEvents.recipes(event => {
     RockCycle('shale', 'quark:shale', 'quark:shale', 60)
     RockCycle('myalite', 'quark:myalite', 'quark:myalite', 60)
 
+        //Ad Astra Recipe Function
+        function AdAstraRockCycle(id, input, output, EUt, dimension) {
+            event.recipes.gtceu.rock_cycle_simulator(`kubejs:${id}`)
+                .notConsumable(Item.of(input))
+                .itemOutputs(output)
+                .duration(16)
+                .EUt(EUt)
+                .dimension(dimension)
+        }
+    
+    AdAstraRockCycle('moonstone', 'ad_astra:moon_stone', 'ad_astra:moon_stone', 240, 'ad_astra:moon')
+    AdAstraRockCycle('moondeepslate', 'ad_astra:moon_deepslate', 'ad_astra:moon_deepslate', 240, 'ad_astra:moon')
+    AdAstraRockCycle('marsstone', 'ad_astra:mars_stone', 'ad_astra:mars_stone', 240, 'ad_astra:mars')
+    AdAstraRockCycle('conglomerate', 'ad_astra:conglomerate', 'ad_astra:conglomerate', 240, 'ad_astra:mars')
+    AdAstraRockCycle('venusstone', 'ad_astra:venus_stone', 'ad_astra:venus_stone', 960, 'ad_astra:venus')
+    AdAstraRockCycle('infernalspireblock', 'ad_astra:infernal_spire_block', 'ad_astra:infernal_spire_block', 960, 'ad_astra:venus')
+    AdAstraRockCycle('mercurystone', 'ad_astra:mercury_stone', 'ad_astra:mercury_stone', 960, 'ad_astra:mercury')
+    AdAstraRockCycle('glaciostone', 'ad_astra:glacio_stone', 'ad_astra:glacio_stone', 2160, 'ad_astra:glacio')
+    AdAstraRockCycle('permafrostadastra', 'ad_astra:permafrost', 'ad_astra:permafrost', 2160, 'ad_astra:glacio')
+
 })
