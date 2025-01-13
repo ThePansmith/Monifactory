@@ -25,6 +25,18 @@ customization {
   keepaspectratio = false
 }
 
+customization {
+  action = setscale
+  scale = 4.0
+}
+
+customization {
+  action = autoscale
+  basewidth = 1920
+  baseheight = 1017
+}
+
+
 scroll_list_customization {
   preserve_scroll_list_header_footer_aspect_ratio = true
   render_scroll_list_header_shadow = true
