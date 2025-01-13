@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('xenic_acid')
         .fluid()
         .color(0xa567db)
-        .components('xenon', 'water', '5x oxygen', 'hydrogen_peroxide')
+        .components('xenon', 'water', '3x oxygen')
 
     event.create('dusty_helium')
         .gas()

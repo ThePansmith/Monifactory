@@ -495,10 +495,10 @@
   "functionalstorage.framed_storage_controller.tooltip": "§7Previously known as a Framed Storage Controller",
 
   "ae2.facade.tooltip": "Crafted with Cable Anchors",
-  "ae2.memory_card.tooltip": "Hold in offhand to set additional inputs on Multi P2Ps.",
-  "ae2.creative_fluid_cell.tooltip.1": "Cannot be made using Creative Tank data!",
-  "ae2.creative_fluid_cell.tooltip.2": "§7AE2 devs will not fix a bug that allows this to make items as well.",
-  "enderio.cap_bank.tooltip": "§4Currently TPS intensive, look into other options for power storage.",
+  "ae2.memory_card.tooltip": "Hold in offhand with an empty main hand to set additional inputs on Multi P2Ps",
+  "ae2.creative_fluid_cell.tooltip": "Cannot be made using Creative Tank data!\nAfflicted with a bug that the AE2 devs will not fix",
+  "betterp2p.advanced_memory_card.tooltip": "Not compatible with Multi P2Ps.",
+  "enderio.cap_bank.tooltip": "Large multiblock banks are TPS intensive!\nLook into the Power Substiation for industrial energy storage.",
   "kubejs.eternal_catalyst.tooltip": "Gaze into the Abyss...",
   "kubejs.infinity_catalyst.tooltip": "One is all, and all is one.",
   "gtceu.infinity_ingot.tooltip": "§7The fury of the universe in the palm of your hand.",
@@ -523,6 +523,8 @@
   "telepastries.custom_cake.tooltip.2": "§7Refill by right-clicking with 2 or more Pulsating Dust.",
   "telepastries.lost_city_cake.tooltip.1": "§6Teleports you to the Lost Cities§7",
   "telepastries.lost_city_cake.tooltip.2": "§7Teleport without consuming by right-clicking with a Diamond.",
+  "travellersbootsreloaded.deprecation.tooltip": "Deprecated. Craft into an Exoskeleton!",
+  "gtceu.sterilizing_filter_casing.tooltip": "Sterilized Cleanrooms can't be used as a \"regular\" Cleanroom. You'll want one of each.",
 
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",

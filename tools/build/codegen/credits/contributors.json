@@ -28,6 +28,10 @@
       "mcuuid": "56db0044-9fc8-4ae3-83d6-1adee75aa799",
       "description": "Artist"
     },
+    "Mutso": {
+      "mcuuid": "099b7514-f521-48f6-8f96-e1487801b5de",
+      "description": "Meowni Artist"
+    },
     "Deepacat": {
       "mcuuid": "15d2f1b4-dd16-405e-a4d4-a89ecbeeb593",
       "description": "Script fixes, Menu work"

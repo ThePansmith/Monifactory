@@ -408,21 +408,6 @@ ServerEvents.recipes(event => {
     })
 
     // Creative Chest
-    event.shaped('gtceu:max_machine_casing', [
-        'MMM',
-        'MWM',
-        'MMM'
-    ], {
-        M: 'gtceu:monium_plate',
-        W: 'kubejs:infinity_wrench'
-    }).id('kubejs:endgame/max_casing')
-
-    event.recipes.gtceu.assembler('kubejs:endgame/max_hull')
-        .itemInputs('gtceu:max_machine_casing', '2x gtceu:monium_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
-        .itemOutputs('gtceu:max_machine_hull')
-        .duration(1980)
-        .EUt(GTValues.VA[GTValues.MAX])
-
     if (isNormalMode) {
         event.recipes.extendedcrafting.shaped_table('2x gtceu:creative_chest', [
             'BMMMMMMMMMB',
