@@ -172,6 +172,9 @@ ItemEvents.tooltip(tooltip => {
     // Travellers' Boots
     tooltip.add(/travellersbootsreloaded/, Text.red(Text.translatable("travellersbootsreloaded.deprecation.tooltip")))
 
+    // Exoskeleton Legs
+    tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.gray(Text.translatable('kubejs.exoskeleton_legs.tooltip')))
+
     // Misc
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray(Text.translatable('kubejs.eternal_catalyst.tooltip')));
     tooltip.add('kubejs:infinity_catalyst', Text.darkGray(Text.translatable('kubejs.infinity_catalyst.tooltip')));
