@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     //Netherite space suit
     event.remove({ id: `ad_astra:netherite_space_helmet` })
     event.recipes.gtceu.assembler(`netherite_space_helmet`)
-        .itemInputs(`kubejs:unprepared_space_helmet`, "minecraft:netherite_ingot", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/mv", "#forge:glass/tinted", "#forge:foils/gold")
+        .itemInputs(`kubejs:unprepared_space_helmet`, "minecraft:netherite_ingot", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/hv", "#forge:glass/tinted", "#forge:foils/gold")
         .itemOutputs(`ad_astra:netherite_space_helmet`)
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
     //Jet Suit
     event.remove({ id: `ad_astra:jet_suit_helmet` })
     event.recipes.gtceu.assembler(`jet_suit_helmet`)
-        .itemInputs(`ad_astra:netherite_space_helmet`, "4x gtceu:titanium_carbide_plate", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/ev")
+        .itemInputs(`ad_astra:netherite_space_helmet`, "4x gtceu:titanium_carbide_plate", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/iv")
         .itemOutputs(`ad_astra:jet_suit_helmet`)
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV])
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
         'PPP',
         'TTT'
     ], {
-        P: 'gtceu:double_steel_plate',
+        P: 'gtceu:double_black_steel_plate',
         T: 'kubejs:electrical_steel_thruster'
     })
 
@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
         'PTP',
         'PTP'
     ], {
-        P: 'gtceu:double_steel_plate',
+        P: 'gtceu:double_black_steel_plate',
         T: 'enderio:fluid_tank'
     })
 
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         'PPP',
         'TTT'
     ], {
-        P: 'gtceu:double_tungsten_carbide_plate',
+        P: 'gtceu:double_signalum_plate',
         T: 'kubejs:energetic_thruster'
     })
 
@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
         'PTP',
         'PTP'
     ], {
-        P: 'gtceu:double_tungsten_carbide_plate',
+        P: 'gtceu:double_signalum_plate',
         T: 'enderio:fluid_tank'
     })
 
@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
         'PPP',
         'TTT'
     ], {
-        P: 'gtceu:double_lumium_plate',
+        P: 'gtceu:double_hsss_plate',
         T: 'kubejs:vibrant_thruster'
     })
 
@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
         'PTP',
         'PTP'
     ], {
-        P: 'gtceu:double_lumium_plate',
+        P: 'gtceu:double_hsss_plate',
         T: 'enderio:fluid_tank'
     })
 
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
         'PPP',
         'TTT'
     ], {
-        P: 'gtceu:double_cryolobus_plate',
+        P: 'gtceu:double_tritanium_plate',
         T: 'kubejs:dark_soularium_thruster'
     })
 
@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
         'PTP',
         'PTP'
     ], {
-        P: 'gtceu:double_cryolobus_plate',
+        P: 'gtceu:double_tritanium_plate',
         T: 'enderio:fluid_tank'
     })
 
@@ -345,10 +345,10 @@ ServerEvents.recipes(event => {
     // Rockets
     event.remove({ id: /nasa_workbench/ })
     const rocket = [ // Plate mats currently just based on color of rocket for testing
-        ['tier_1_rocket', "steel", 'steel'],
-        ['tier_2_rocket', "desh", 'tungsten_carbide'],
-        ['tier_3_rocket', "ostrum", 'lumium'],
-        ['tier_4_rocket', "calorite", 'cryolobus'],
+        ['tier_1_rocket', "steel", 'black_steel'],
+        ['tier_2_rocket', "desh", 'signalum'],
+        ['tier_3_rocket', "ostrum", 'hsss'],
+        ['tier_4_rocket', "calorite", 'tritanium'],
     ]
 
     rocket.forEach(([rocket, tier, platematerial]) => {
