@@ -536,11 +536,10 @@ ServerEvents.recipes(event => {
     }).id('kubejs:ae2/p2p_tunnel')
 
     // Cable Anchor
-    event.remove({ id: 'ae2:network/parts/cable_anchor' })
     event.recipes.gtceu.wiremill('ae2:cable_anchor')
         .itemInputs('gtceu:steel_bolt')
         .itemOutputs('2x ae2:cable_anchor')
-        .duration(50)
+        .duration(20)
         .EUt(16)
 
     // Cables
