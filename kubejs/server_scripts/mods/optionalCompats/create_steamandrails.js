@@ -169,7 +169,7 @@ if (Platform.isLoaded('railways')) {
 		};
 		{
 			/* normal tracks */{
-				// normalTrackRecipes('#create:sleepers', 'create:track', 'minecraft:iron_nugget', 1);
+				normalTrackRecipes('#create:sleepers', 'create:track', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:acacia_slab', 'railways:track_acacia', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:birch_slab', 'railways:track_birch', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:dark_oak_slab', 'railways:track_dark_oak', 'minecraft:iron_nugget', 1);
