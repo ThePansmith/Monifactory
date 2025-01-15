@@ -535,6 +535,14 @@ ServerEvents.recipes(event => {
         C: 'gtceu:fluix_plate'
     }).id('kubejs:ae2/p2p_tunnel')
 
+    // Cable Anchor
+    event.remove({ id: 'ae2:network/parts/cable_anchor' })
+    event.recipes.gtceu.wiremill('ae2:cable_anchor')
+        .itemInputs('gtceu:steel_bolt')
+        .itemOutputs('2x ae2:cable_anchor')
+        .duration(50)
+        .EUt(16)
+
     // Cables
     event.remove({ id: 'ae2:network/parts/quartz_fiber_part' })
     event.remove({ id: 'gtceu:shapeless/gem_to_gem_flawedgem_nether_quartz' })
