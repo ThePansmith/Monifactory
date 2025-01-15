@@ -302,7 +302,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .machine((holder) => new FusionReactorMachine(holder, GTValues.UHV))
             .rotationState(RotationState.ALL)
             .recipeTypes(GTRecipeTypes.FUSION_RECIPES)
-            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, MachineModifiers.FUSION_REACTOR])
             .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle("#######################", "#######################", "#######################", "###F##F#N#####N#F##F###", "###FNNFNN#####NNFNNF###", "###F##F#N#####N#F##F###", "#######################", "#######################", "#######################")
