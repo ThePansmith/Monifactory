@@ -698,6 +698,12 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/iv"
     })
 
+    //Cleanroom Hatch Decomp fix
+    event.replaceOutput({ id: 'gtceu:arc_furnace/arc_cleaning_maintenance_hatch' }, 'gtceu:darmstadtium_ingot', '8x gtceu:tungsten_steel_ingot')
+    event.replaceOutput({ id: 'gtceu:arc_furnace/arc_cleaning_maintenance_hatch' }, 'gtceu:yttrium_barium_cuprate_ingot', '2x gtceu:graphene_ingot')
+    event.replaceOutput({ id: 'gtceu:macerator/macerate_cleaning_maintenance_hatch' }, 'gtceu:darmstadtium_dust', '8x gtceu:tungsten_steel_dust')
+    event.replaceOutput({ id: 'gtceu:macerator/macerate_cleaning_maintenance_hatch' }, 'gtceu:yttrium_barium_cuprate_dust', '2x gtceu:graphene_dust')
+
     //ZPM Field Gen
     event.remove({ id: 'gtceu:assembly_line/field_generator_zpm' })
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/zpm_field_generator')
