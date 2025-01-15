@@ -725,6 +725,16 @@ ServerEvents.recipes(event => {
         E: '#forge:plates/electrical_steel'
     }).id('kubejs:wired_charger')
 
+    // Experience Rod
+    event.shaped('enderio:experience_rod', [
+        '  V',
+        ' S ',
+        'V  ',
+    ], {
+        S: '#forge:ingots/soularium',
+        V: '#forge:ingots/vibrant_alloy'
+    })
+
     // xp obelisk
     event.remove({ id: 'enderio:xp_obelisk' })
     event.shaped('enderio:xp_obelisk', [
