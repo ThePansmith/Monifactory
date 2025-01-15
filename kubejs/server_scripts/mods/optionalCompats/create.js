@@ -105,13 +105,6 @@ if (Platform.isLoaded('create')) {
             .duration(200)
             .EUt(7)
 
-        event.recipes.gtceu.mixer("kubejs:dough")
-            .itemInputs('gtceu:wheat_dust')
-            .inputFluids(Fluid.of('minecraft:water', 1000))
-            .itemOutputs('create:dough')
-            .duration(200)
-            .EUt(7)
-
         event.recipes.gtceu.extractor("kubejs:extract_bar_of_chocolate")
             .itemInputs('create:bar_of_chocolate')
             .outputFluids(Fluid.of('create:chocolate', 250))
