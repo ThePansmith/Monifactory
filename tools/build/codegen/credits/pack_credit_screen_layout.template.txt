@@ -94,7 +94,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = And you!%n%Thanks for playing%n%Monifactory
+  description = {"placeholder":"local","values":{"key":"moni_credits_screen_player_tooltip_1"}}%n%{"placeholder":"local","values":{"key":"moni_credits_screen_player_tooltip_2"}}%n%{"placeholder":"local","values":{"key":"moni_credits_screen_player_tooltip_3"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = d5bba0d9-fd0e-4a98-99af-41d35ba30194-1736533287997
   [loading_requirement_container_meta:d5bba0d9-fd0e-4a98-99af-41d35ba30194-1736533287997] = [groups:][instances:]
@@ -135,8 +135,8 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  hoverlabel = &9Back to menu
-  label = Back to menu
+  hoverlabel = {"placeholder":"local","values":{"key":"moni_credits_screen_back_to_menu_button_hover"}}
+  label = {"placeholder":"local","values":{"key":"moni_credits_screen_back_to_menu_button"}}
   navigatable = true
   widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
