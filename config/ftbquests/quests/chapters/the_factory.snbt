@@ -2540,6 +2540,54 @@
 			x: 1.0d
 			y: 7.5d
 		}
+		{
+			dependencies: ["7A12743F5ECCED90"]
+			description: ["{moni.quest.6BA0B1B3AB853F9A.description1}"]
+			icon: "kubejs:lv_exoskeleton_legs"
+			id: "6BA0B1B3AB853F9A"
+			rewards: [{
+				id: "4493B1DEE6BCC5A4"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.6BA0B1B3AB853F9A.subtitle}"
+			tasks: [{
+				id: "53DCEF454DF9FFFD"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:lv_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "kubejs:mv_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hv_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "kubejs:ev_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "kubejs:iv_exoskeleton_legs"
+							}
+						]
+					}
+				}
+				title: "Any Exoskeleton"
+				type: "item"
+			}]
+			title: "{moni.quest.6BA0B1B3AB853F9A.title}"
+			x: -2.0d
+			y: -2.0d
+		}
 	]
 	title: "{moni.chapter.2763DAD954E0EED8.title}"
 }
