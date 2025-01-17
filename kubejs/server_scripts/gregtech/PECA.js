@@ -5,21 +5,21 @@ ServerEvents.recipes(event => {
         .outputFluids('minecraft:water 1000')
         .itemOutputs('gtceu:sodium_cyanide_dust')
         .duration(50)
-        .EUt(GTValues.VHA[GTValues.IV])
+        .EUt(GTValues.VHA[GTValues.HV])
 
-    event.recipes.gtceu.chemical_reactor("chloroacetatic_mixture")
+    event.recipes.gtceu.chemical_reactor("chloroacetic_mixture")
         .notConsumableFluid('gtceu:acetic_anhydride 500')
         .inputFluids('gtceu:acetic_acid 1000', 'gtceu:chlorine 3000')
         .outputFluids('gtceu:chloroacetic_mixture 1000')
         .duration(20)
-        .EUt(GTValues.VA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.distillation_tower("chloroacetate_distillation")
         .inputFluids('gtceu:chloroacetic_mixture 2000')
         .itemOutputs('gtceu:small_chloroacetate_dust')
         .outputFluids('gtceu:dichloroacetate 500', 'gtceu:trichloroacetate 250', 'gtceu:hydrochloric_acid 1000')
         .duration(200)
-        .EUt(GTValues.VHA[GTValues.EV])
+        .EUt(GTValues.VHA[GTValues.IV])
 
     event.recipes.gtceu.large_chemical_reactor("cyanoacetic_acid")
         .itemInputs('gtceu:chloroacetate_dust', 'gtceu:sodium_cyanide_dust')
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor("uncracked_ethyl_cyanoacrylate")
         .inputFluids('gtceu:ethyl_cyanoacetate 1000', 'gtceu:formaldehyde 1000')
         .outputFluids('gtceu:uncracked_ethyl_cyanoacrylate 1000', 'minecraft:water 1000')
-        .duration(320)
+        .duration(800)
         .EUt(GTValues.VA[GTValues.HV])
 
     //Cracking recipes - CR
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
 
     // Polymerization recipe
     event.recipes.gtceu.chemical_reactor('polyethyl_cyanoacrylate')
-        .chancedFluidInput('gtceu:dimethyl_sulfoxide 500', 200, -40)
+        .chancedFluidInput('gtceu:dimethyl_sulfoxide 200', 200, -40)
         .inputFluids('gtceu:ethyl_cyanoacrylate 144', 'minecraft:water 1000')
         .itemOutputs('gtceu:polyethyl_cyanoacrylate_dust')
         .duration(300)
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
 
     // Polymerization recipe with distilled water
     event.recipes.gtceu.chemical_reactor('polyethyl_cyanoacrylate_distilled')
-        .chancedFluidInput('gtceu:dimethyl_sulfoxide 500', 200, -40)
+        .chancedFluidInput('gtceu:dimethyl_sulfoxide 200', 200, -40)
         .inputFluids('gtceu:ethyl_cyanoacrylate 96', 'gtceu:distilled_water 1000')
         .itemOutputs('gtceu:polyethyl_cyanoacrylate_dust')
         .duration(300)
@@ -89,8 +89,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor('dimethyl_sulfoxide')
         .inputFluids('gtceu:dimethyl_sulfide 1000', 'gtceu:nitrogen_dioxide 1000')
         .outputFluids('gtceu:dimethyl_sulfoxide 1000', 'gtceu:nitric_oxide 1000')
-        .duration(10000)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.chemical_reactor('dimethyl_sulfide')
         .notConsumable('gtceu:aluminium_dust')
