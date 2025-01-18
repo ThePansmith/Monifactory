@@ -17,3 +17,11 @@ export const readDatafileJSON = (path) => {
     throw new Juke.ExitCode(1);
   }
 };
+
+/**
+ * Writes JSON to a file.
+ * @param {string} path File path.
+ * @param {*} data JSON
+ */
+export const writeDatafileJSON = (path, data) => 
+  fs.writeFileSync(path, JSON.stringify(data, null, 2), 'utf8');
