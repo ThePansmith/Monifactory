@@ -52,10 +52,10 @@
     "item.ad_astra.steel_engine": "Black Steel Engine",
     "item.ad_astra.desh_engine": "Signalum Engine",
     "item.ad_astra.ostrum_engine": "HSS-S Engine",
-    "item.ad_astra.calorite_engine": "Tritanium Engine",
+    "item.ad_astra.calorite_engine": "Cryolobus Engine",
     "item.ad_astra.steel_tank": "Black Steel Tank",
     "item.ad_astra.desh_tank": "Signalum Tank",
     "item.ad_astra.ostrum_tank": "HSS-S Tank",
-    "item.ad_astra.calorite_tank": "Tritanium Tank",
+    "item.ad_astra.calorite_tank": "Cryolobus Tank",
     "info.ad_astra.oxygen_loader": "Uses Gregtech Oxygen to fill up space suits and gas tanks."
 }

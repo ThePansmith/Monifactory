@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
         'PPP',
         'TTT'
     ], {
-        P: 'gtceu:double_tritanium_plate',
+        P: 'gtceu:double_cryolobus_plate',
         T: 'kubejs:dark_soularium_thruster'
     })
 
@@ -240,7 +240,7 @@ ServerEvents.recipes(event => {
         'PTP',
         'PTP'
     ], {
-        P: 'gtceu:double_tritanium_plate',
+        P: 'gtceu:double_cryolobus_plate',
         T: 'enderio:fluid_tank'
     })
 
@@ -348,7 +348,7 @@ ServerEvents.recipes(event => {
         ['tier_1_rocket', "steel", 'black_steel'],
         ['tier_2_rocket', "desh", 'signalum'],
         ['tier_3_rocket', "ostrum", 'hsss'],
-        ['tier_4_rocket', "calorite", 'tritanium'],
+        ['tier_4_rocket', "calorite", 'cryolobus'],
     ]
 
     rocket.forEach(([rocket, tier, platematerial]) => {
