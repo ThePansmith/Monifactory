@@ -395,7 +395,7 @@
     "thermal.device_rock_gen.tooltip": "§7紧挨着水和岩浆才能产出圆石。",
     "gtceu.ender_fluid_link_cover.tooltip": "§4暂未移植。",
     "functionalstorage.storage_controller.tooltip": "§7就是1.12的抽屉控制器喵",
-    "ae2.memory_card.tooltip": "右手拿着内存卡可以给多对多的P2P添加更多输入端。",
+    "ae2.memory_card.tooltip": "副手拿着内存卡，主手空手右键可以给多对多的P2P添加更多输入端",
     "gtceu.infinity_ingot.tooltip": "§7 宇宙的怒火尽在你的掌心。",
     "kubejs.infinity_catalyst.tooltip": "一即一切，一切既一。",
     "extendedcrafting.flux_alternator.tooltip": "§7为幽匿充能器提供能量，最多可以放3格远。",
@@ -445,7 +445,7 @@
     "gtceu.robot_arm.tooltip": "§4管道无法对物品传输进行高级控制。",
     "kubejs.meowni_plush.tooltip.normal.2": "§9(通常来说) 困难模式和专家模式玩家独享。",
     "functionalstorage.framed_storage_controller.tooltip": "§7镶框的抽屉控制器",
-    "enderio.cap_bank.tooltip": "§4可能会对TPS造成很大的影响，寻求其他的存电方式。",
+    "enderio.cap_bank.tooltip": "大型多方块存储库可能会对TPS造成很大的影响！\n查看用于工业储能的变电站。",
     "kubejs.eternal_catalyst.tooltip": "凝视深渊……",
     "item.kubejs.uev_universal_circuit": "UEV 通用电路",
     "gtceu.energy_converter.tooltip": "§4在EU->FE模式下不能使用导管。\n§7使用GT的线或者线缆。在连接到FE机器的时候，它们会自动转换EU为FE。",
@@ -463,5 +463,10 @@
     "item.kubejs.iv_exoskeleton_legs": "IV 外骨骼",
     "item.kubejs.mv_exoskeleton_legs": "MV 外骨骼",
     "item.kubejs.lv_exoskeleton_legs": "LV 外骨骼",
-    "item.kubejs.hv_exoskeleton_legs": "HV 外骨骼"
+    "item.kubejs.hv_exoskeleton_legs": "HV 外骨骼",
+    "kubejs.exoskeleton_legs.tooltip": "提供移动速度提升和自动上坡功能",
+    "ae2.creative_fluid_cell.tooltip": "无法使用Creative Tank数据制作！\n遇到AE2开发人员无法修复的错误",
+    "betterp2p.advanced_memory_card.tooltip": "与Multi-P2P不兼容。",
+    "travellersbootsreloaded.deprecation.tooltip": "已弃用。打造外骨骼！",
+    "gtceu.sterilizing_filter_casing.tooltip": "无菌超净间不能用作“常规”超净间。你每个都得来一个。"
 }
