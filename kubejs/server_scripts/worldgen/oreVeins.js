@@ -881,7 +881,7 @@ GTCEuServerEvents.oreVeins(event => {
 
     // Increase vein density
     event.modifyAll((id, vein) => {
-        vein.density(sqrt(vein.getDensity()))
+        vein.density(Math.sqrt(vein.density()))
         vein.discardChanceOnAirExposure(0.3)
     })
 })
