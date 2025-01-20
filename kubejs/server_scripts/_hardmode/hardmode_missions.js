@@ -12,6 +12,13 @@ ServerEvents.recipes(event => {
 
     //Manual fix for half tier miners
     if (isHardMode) {
+        event.recipes.gtceu.assembly_line("stable_t2half")
+            .itemInputs("kubejs:microminer_t2half", 'kubejs:heart_of_a_universe', '4x kubejs:hadal_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
+            .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
+            .itemOutputs("kubejs:stabilized_microminer_t2half")
+            .duration(125)
+            .EUt(1966080)
+
         event.recipes.gtceu.assembly_line("stable_t4half")
             .itemInputs("kubejs:microminer_t4half", 'kubejs:heart_of_a_universe', '4x kubejs:hadal_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
             .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
@@ -53,6 +60,24 @@ ServerEvents.recipes(event => {
     }
 
     if (isHardMode) {
+        // T2.5 Microminer
+        event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t2half', [
+            '  G  ',
+            ' CQC ',
+            'PPAPP',
+            'PMBMP',
+            ' T T ',
+        ], {
+            G: 'kubejs:basic_micro_miner_guidance_system',
+            P: 'gtceu:double_dark_steel_plate',
+            A: 'gtceu:mv_field_generator',
+            C: 'minecraft:crossbow',
+            Q: 'thermal:potion_quiver',
+            B: 'gtceu:bronze_crate',
+            T: 'kubejs:hardened_thruster',
+            M: 'thermal:dynamo_magmatic'
+        })
+
         // T4.5  Microminer
         event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t4half', [
             '  LGL  ',
@@ -113,6 +138,7 @@ ServerEvents.recipes(event => {
         for (let i = 6; i <= 8; i++) {
             pristine_matter(i, 3)
         }
+        pristine_matter('2half', 1)
         pristine_matter('4half', 2)
         pristine_matter('8half', 3)
 

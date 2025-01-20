@@ -13,6 +13,7 @@ StartupEvents.registry('item', event => {
 
     // HM/EM Microminers
     if (!isNormalMode) {
+        event.create('microminer_t2half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half")
         event.create('microminer_t4half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
         event.create('microminer_t8half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
     }
@@ -22,7 +23,8 @@ StartupEvents.registry('item', event => {
     const pristine_matter = [
         ['1', '#c0c0b0'],
         ['2', '#f5f5f1'],
-        ['3', '#736055'],
+        ['2half', '#414751'],
+        ['3', '#635480'],
         ['4', '#f17d3d'],
         ['4half', '#eef487'],
         ['5', '#fccc6a'],

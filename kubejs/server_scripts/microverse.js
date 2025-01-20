@@ -8,7 +8,6 @@ ServerEvents.recipes(event => {
     //
 
     // T1 Microminer
-
     event.shaped('kubejs:microminer_t1', [
         ' G ',
         'LAL',
@@ -40,14 +39,13 @@ ServerEvents.recipes(event => {
     })
 
     // T3 Microminer
-
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t3', [
         '  G G  ',
         '  PPP  ',
         '  ABA  ',
-        ' LPBPL ',
+        'LPPBPPL',
         'PPFBFPP',
-        'PPPCPPP',
+        'P PCP P',
         '  TTT  '
     ], {
         G: 'kubejs:basic_micro_miner_guidance_system',
@@ -61,7 +59,6 @@ ServerEvents.recipes(event => {
     })
 
     // T4 Microminer
-
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t4', [
         '   G   ',
         '  LWL  ',
@@ -171,7 +168,6 @@ ServerEvents.recipes(event => {
     })
 
     // T9 Microminer
-
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t9', [
         '    Q    ',
         '   QQQ   ',
@@ -193,7 +189,6 @@ ServerEvents.recipes(event => {
     })
 
     // T10 Microminer
-
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t10', [
         '   N N   ',
         '  NN NN  ',
@@ -264,12 +259,12 @@ ServerEvents.recipes(event => {
         S: 'kubejs:dimensional_stabilization_netherite_casing',
         Q: 'kubejs:field_stabilised_omnic_pulsar_compound'
     })
+
     //
     // Miner Components
     //
 
     // Basic Guidance
-
     event.shaped('kubejs:basic_micro_miner_guidance_system', [
         'GPG',
         'PCP',
@@ -281,7 +276,6 @@ ServerEvents.recipes(event => {
     })
 
     // Basic laser
-
     event.shaped('kubejs:basic_mining_laser', [
         ' R ',
         'QGQ',
@@ -408,7 +402,7 @@ ServerEvents.recipes(event => {
         .duration(6000)
         .EUt(491520)
 
-
+    // Extradimensional Navigator
     event.recipes.gtceu.assembly_line('extradimensional_navigator')
         .itemInputs('gtceu:infinity_frame',
             '4x kubejs:universal_navigator',

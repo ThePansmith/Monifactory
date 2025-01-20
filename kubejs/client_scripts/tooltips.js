@@ -9,6 +9,7 @@ ItemEvents.tooltip(tooltip => {
         microminer_tooltip(i)
     }
 
+    tooltip.add('kubejs:microminer_t2half', Text.translatable('item.kubejs.microminer_t2half.desc'))
     tooltip.add('kubejs:microminer_t4half', Text.translatable('item.kubejs.microminer_t4half.desc'))
     tooltip.add('kubejs:microminer_t8half', Text.translatable('item.kubejs.microminer_t8half.desc'))
 
