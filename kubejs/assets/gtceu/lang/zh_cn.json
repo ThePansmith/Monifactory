@@ -431,5 +431,6 @@
     "tagprefix.moon": "月球 %s 矿物",
     "gtceu.jei.ore_vein.venus/tricalcium_phosphate": "磷酸三钙矿脉（金星）",
     "gtceu.jei.ore_vein.mars/zinc": "锌矿脉（火星）",
-    "gtceu.jei.ore_vein.glacio/oilsands": "油砂矿脉（霜原星）"
+    "gtceu.jei.ore_vein.glacio/oilsands": "油砂矿脉（霜原星）",
+    "material.gtceu.rhodium_plated_palladium": "镀铑铝钯"
 }
