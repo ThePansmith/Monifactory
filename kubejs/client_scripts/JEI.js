@@ -43,7 +43,7 @@ JEIEvents.hideItems(event => {
     event.hide('packagedexcrafting:ender_crafter')
 
     //Thermal
-    event.hide(['thermal:dynamo_stirling', 'thermal:dynamo_gourmand', 'thermal:dynamo_disenchantment', 'thermal:dynamo_lapidary', 'systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'])
+    event.hide(['thermal:dynamo_stirling', 'thermal:dynamo_disenchantment', 'thermal:dynamo_lapidary', 'systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'])
     //event.hide(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3', 'thermal:upgrade_augment_4', 'thermal:dynamo_output_augment'])
     event.hide(['thermal:coal_coke', 'thermal:coal_coke_block'])
     event.hide(['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:device_xp_condenser'])
@@ -242,7 +242,7 @@ JEIEvents.addItems(event => {
     event.add('enderio:reinforced_obsidian_block')
 
     //NuclearCraft
-    event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust', 'nuclearcraft:beryllium_block', 'nuclearcraft:graphite_block'])
+    event.add(['nuclearcraft:tough_alloy_ingot', 'nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:rhodochrosite_dust'])
 })
 
 JEIEvents.hideFluids(event => {
@@ -258,8 +258,8 @@ JEIEvents.hideFluids(event => {
     // list of used fluids to not remove
     let ncUsedFluid = ['nuclearcraft:hydrated_gelatin', 'nuclearcraft:gelatin', 'nuclearcraft:sugar', 'nuclearcraft:marshmallow', 'nuclearcraft:cocoa_butter', 'nuclearcraft:pasteurized_milk', 'nuclearcraft:chocolate_liquor', 'nuclearcraft:unsweetened_chocolate', 'nuclearcraft:dark_chocolate', 'nuclearcraft:milk_chocolate', 'nuclearcraft:technical_water', 'nuclearcraft:high_pressure_steam', 'nuclearcraft:exhaust_steam']
 
-    // adds flowing fluid variants to the l ist so they aren't hidden
-    ncUsedFluid.forEach(fluid => { ncUsedFluid.push(fluid + "_flowing") })
+    // adds flowing fluid variants to the list so they aren't hidden
+    ncUsedFluid.forEach(fluid => { ncUsedFluid.push(`${fluid}_flowing`) })
 
     // remove used fluids from the full list
     ncFluids = ncFluids.filter((el) => !ncUsedFluid.includes(el))

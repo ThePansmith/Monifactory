@@ -20,7 +20,7 @@ BlockEvents.placed(event => {
 	if (block.getId().startsWith('gtceu:')) {
 		//Set energy converters to feToEu mode when placed
 		if (block.getId().endsWith('_energy_converter')) {
-			block.mergeEntityData({energyContainer: {feToEu: true}})
+			block.mergeEntityData({ energyContainer: { feToEu: true } })
 		}
 	}
 

@@ -1,0 +1,42 @@
+forge_titlescreen_mods_button = Mods
+forge_titlescreen_mods_button_hover =  &9Mods
+
+mc_titlescreen_multiplayer_button = Multiplayer
+mc_titlescreen_multiplayer_button_hover =  &9Multiplayer
+mc_titlescreen_options_button = Options...
+mc_titlescreen_options_button_hover =  &9Options...
+mc_titlescreen_quit_button = Quit Game
+mc_titlescreen_quit_button_hover =  &9Quit &9Game
+mc_titlescreen_singleplayer_button = Singleplayer
+mc_titlescreen_singleplayer_button_hover =  &9Singleplayer
+
+moni_titlescreen_back_to_menu_button = Back to Menu
+moni_titlescreen_back_to_menu_button_hover =  &9Back &9to &9Menu
+moni_titlescreen_change_mode_button = Change Mode...
+moni_titlescreen_change_mode_button_hover =  &9Change &9Mode...
+moni_titlescreen_credits_button = Credits
+moni_titlescreen_credits_button_hover =  &9Credits
+moni_titlescreen_discord_button = Discord
+moni_titlescreen_discord_button_hover =  &9Discord
+moni_titlescreen_faq_button = F.A.Q.
+moni_titlescreen_faq_button_hover =  &9F.A.Q.
+moni_titlescreen_github_button = GitHub
+moni_titlescreen_github_button_hover =  &9GitHub
+moni_titlescreen_info_button = Info...
+moni_titlescreen_info_button_hover =  &9Info...
+moni_titlescreen_patreon_button = Patreon
+moni_titlescreen_patreon_button_hover =  &9Patreon
+moni_titlescreen_projector_button_tooltip = Click to view bases!
+
+moni_titlescreen_difficulty_text_normal = Playing &9&lNormal&r Mode
+moni_titlescreen_difficulty_text_hard = Playing &9&lHard&r Mode
+moni_titlescreen_difficulty_text_expert = Playing &9&lExpert&r Mode
+
+moni_bases_screen_back_to_menu_button = Back to Menu
+moni_bases_screen_back_to_menu_button_hover = &9Back to Menu
+
+moni_credits_screen_back_to_menu_button = Back to Menu
+moni_credits_screen_back_to_menu_button_hover = &9Back to Menu
+moni_credits_screen_player_tooltip_1 = And you!
+moni_credits_screen_player_tooltip_2 = Thanks for playing
+moni_credits_screen_player_tooltip_3 = Monifactory

@@ -4,8 +4,7 @@ ServerEvents.recipes(event => {
 
     //Components
     event.remove({ output: 'extendedcrafting:basic_component' })
-    event.shaped(
-        'extendedcrafting:basic_component', [
+    event.shaped('extendedcrafting:basic_component', [
         'SL ',
         'AB ',
         '   '
@@ -17,8 +16,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:advanced_component' })
-    event.shaped(
-        'extendedcrafting:advanced_component', [
+    event.shaped('extendedcrafting:advanced_component', [
         'SL ',
         'AB ',
         '   '
@@ -30,8 +28,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:elite_component' })
-    event.shaped(
-        'extendedcrafting:elite_component', [
+    event.shaped('extendedcrafting:elite_component', [
         'SL ',
         'AB ',
         '   '
@@ -43,8 +40,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:ultimate_component' })
-    event.shaped(
-        'extendedcrafting:ultimate_component', [
+    event.shaped('extendedcrafting:ultimate_component', [
         'SL ',
         'AB ',
         '   '
@@ -54,10 +50,9 @@ ServerEvents.recipes(event => {
         A: 'gtceu:uranium_plate',
         B: 'gtceu:emerald_plate'
     })
-    
+
     event.remove({ output: 'extendedcrafting:epic_component' })
-    event.shaped(
-        'extendedcrafting:epic_component', [
+    event.shaped('extendedcrafting:epic_component', [
         'SL ',
         'AB ',
         '   '
@@ -69,8 +64,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:the_ultimate_component' })
-    event.shaped(
-        'extendedcrafting:the_ultimate_component', [
+    event.shaped('extendedcrafting:the_ultimate_component', [
         ' B ',
         'ACE',
         ' U '
@@ -83,8 +77,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:crystaltine_component' })
-    event.shaped(
-        'extendedcrafting:crystaltine_component', [
+    event.shaped('extendedcrafting:crystaltine_component', [
         'SL ',
         'AB ',
         '   '
@@ -96,8 +89,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:redstone_component' })
-    event.shaped(
-        'extendedcrafting:redstone_component', [
+    event.shaped('extendedcrafting:redstone_component', [
         'SL ',
         'AB ',
         '   '
@@ -112,8 +104,7 @@ ServerEvents.recipes(event => {
 
     //Catalysts
     event.remove({ output: 'extendedcrafting:the_ultimate_catalyst' })
-    event.shaped(
-        'extendedcrafting:the_ultimate_catalyst', [
+    event.shaped('extendedcrafting:the_ultimate_catalyst', [
         ' B ',
         'ACE',
         ' U '
@@ -127,8 +118,7 @@ ServerEvents.recipes(event => {
 
     // Tables
     event.remove({ output: 'extendedcrafting:basic_table' })
-    event.shaped(
-        'extendedcrafting:basic_table', [
+    event.shaped('extendedcrafting:basic_table', [
         ' B ',
         'BCB',
         ' B '
@@ -138,8 +128,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:advanced_table' })
-    event.shaped(
-        'extendedcrafting:advanced_table', [
+    event.shaped('extendedcrafting:advanced_table', [
         'EAE',
         'ABA',
         'EAE'
@@ -150,8 +139,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ output: 'extendedcrafting:elite_table' })
-    event.recipes.extendedcrafting.shaped_table(
-        'extendedcrafting:elite_table', [
+    event.recipes.extendedcrafting.shaped_table('extendedcrafting:elite_table', [
         'ASESA',
         'SCCCS',
         'ECTCE',
@@ -163,12 +151,10 @@ ServerEvents.recipes(event => {
         E: 'extendedcrafting:elite_catalyst',
         C: 'extendedcrafting:elite_component',
         T: 'extendedcrafting:advanced_table'
-    }
-    )
+    })
 
     event.remove({ output: 'extendedcrafting:ultimate_table' })
-    event.recipes.extendedcrafting.shaped_table(
-        'extendedcrafting:ultimate_table', [
+    event.recipes.extendedcrafting.shaped_table('extendedcrafting:ultimate_table', [
         'ESSCSSE',
         'SUUUUUS',
         'SUSRSUS',
@@ -183,13 +169,11 @@ ServerEvents.recipes(event => {
         U: 'extendedcrafting:ultimate_component',
         R: 'extendedcrafting:crystaltine_component',
         T: 'extendedcrafting:elite_table'
-    }
-    )
+    })
 
 
     event.remove({ output: 'extendedcrafting:epic_table' })
-    event.recipes.extendedcrafting.shaped_table(
-        'extendedcrafting:epic_table', [
+    event.recipes.extendedcrafting.shaped_table('extendedcrafting:epic_table', [
         'ESSSCSSSE',
         'SUUUUUUUS',
         'SUSSRSSUS',
@@ -206,8 +190,7 @@ ServerEvents.recipes(event => {
         U: 'extendedcrafting:epic_component',
         R: 'extendedcrafting:crystaltine_component',
         T: 'extendedcrafting:ultimate_table'
-    }
-    )
+    })
 
     //Table duping. Only for more nested, higher-tier tables
     let dupable_tables = [
@@ -218,20 +201,18 @@ ServerEvents.recipes(event => {
     dupable_tables.forEach((value) => {
         event.shaped(
             `2x extendedcrafting:${value[0]}_table`, [
-                'ABA',
-                'BCB',
-                'ABA'
-            ], {
-                A: `#forge:storage_blocks/${value[1]}`,
-                B: `extendedcrafting:${value[0]}_catalyst`,
-                C: `extendedcrafting:${value[0]}_table`
-            }
-        ).id(`${value[0]}_table_dupe`)
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: `#forge:storage_blocks/${value[1]}`,
+            B: `extendedcrafting:${value[0]}_catalyst`,
+            C: `extendedcrafting:${value[0]}_table`
+        }).id(`${value[0]}_table_dupe`)
     })
 
     event.remove({ output: 'extendedcrafting:crafting_core' })
-    event.shaped(
-        'extendedcrafting:crafting_core', [
+    event.shaped('extendedcrafting:crafting_core', [
         'ABA',
         'CDC',
         'ABA'
@@ -242,15 +223,14 @@ ServerEvents.recipes(event => {
         D: 'gtceu:tungsten_carbide_block'
     })
 
-    event.shaped(
-        'extendedcrafting:pedestal', [
-            ' P ',
-            ' P ',
-            'PBP'
-        ], {
-            P: 'gtceu:black_steel_plate',
-            B: 'gtceu:black_steel_block'
-        })
+    event.shaped('extendedcrafting:pedestal', [
+        ' P ',
+        ' P ',
+        'PBP'
+    ], {
+        P: 'gtceu:black_steel_plate',
+        B: 'gtceu:black_steel_block'
+    })
 
     // Combination Crafts
     event.recipes.extendedcrafting.combination(
@@ -291,7 +271,7 @@ ServerEvents.recipes(event => {
 
     //Luminessence
     event.remove({ id: 'extendedcrafting:luminessence' })
-    event.remove({id: /phosphoric_acid_from_apatite/ })
+    event.remove({ id: /phosphoric_acid_from_apatite/ })
 
     event.recipes.gtceu.chemical_reactor('phosphoric_acid_apatite')
         .itemInputs('9x gtceu:apatite_dust')

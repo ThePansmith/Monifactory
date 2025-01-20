@@ -7,7 +7,7 @@ StartupEvents.registry('item', event => {
 
     // Regular Microminers
     for (let index = 1; index <= 12; index++) {
-        event.create('microminer_t' + index).maxStackSize(16).texture('kubejs:item/microverse/microminer_t' + index)
+        event.create(`microminer_t${index}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${index}`)
     }
 
 
@@ -34,9 +34,9 @@ StartupEvents.registry('item', event => {
 
     if (!isNormalMode) {
         for (const [tier, color] of pristine_matter) {
-            event.create('stabilized_microminer_t' + tier)
+            event.create(`stabilized_microminer_t${tier}`)
                 .maxStackSize(16)
-                .texture('kubejs:item/microverse/microminer_t' + tier)
+                .texture(`kubejs:item/microverse/microminer_t${tier}`)
                 .glow(true);
             event.create(`pristine_matter_t${tier}`)
                 .textureJson({ layer0: 'kubejs:item/prediction' })
@@ -516,10 +516,10 @@ StartupEvents.registry('item', event => {
     //Universal Circuits
     const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
     tiers.forEach((universal_circuit) => {
-        event.create(universal_circuit + "_universal_circuit")
-            .tag("gtceu:circuits/" + universal_circuit)
+        event.create(`${universal_circuit}_universal_circuit`)
+            .tag(`gtceu:circuits/${universal_circuit}`)
             .tag("gtceu:circuits/universal")
-            .displayName(universal_circuit.toUpperCase() + " Universal Circuit")
+            .displayName(`${universal_circuit.toUpperCase()} Universal Circuit`)
             .tooltip("§7A Universal Circuit")
             .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
     })

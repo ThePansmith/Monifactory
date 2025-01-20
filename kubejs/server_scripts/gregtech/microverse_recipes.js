@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(7500)
 
-        event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
+    event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', '4x kubejs:wither_realm_data', '64x kubejs:petrotheum_dust')
         .itemOutputs(
             '64x gtceu:endstone_cooperite_ore',
@@ -204,7 +204,7 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(3750)
 
-        event.recipes.gtceu.advanced_microverse('kubejs:t_four_forth')
+    event.recipes.gtceu.advanced_microverse('kubejs:t_four_forth')
         .itemInputs('kubejs:microminer_t4', '4x kubejs:quantum_flux', '64x kubejs:solidified_chlorine', '64x kubejs:petrotheum_dust')
         .itemOutputs(
             '64x kubejs:solidified_bromine'
@@ -319,7 +319,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:uhv_electric_pump',
             '16x kubejs:stabilized_americium',
             '16x kubejs:quantum_flux',
-            '8x kubejs:shattered_star_data', )
+            '8x kubejs:shattered_star_data',)
         .itemOutputs('32x kubejs:stabilized_oganesson')
         .duration(900)
         .EUt(180000)
@@ -458,9 +458,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_nine_second')
         .itemInputs(
-            'kubejs:microminer_t9', 
-            '8x gtceu:neutron_reflector', 
-            '4x gtceu:cryococcus_block', 
+            'kubejs:microminer_t9',
+            '8x gtceu:neutron_reflector',
+            '4x gtceu:cryococcus_block',
             'kubejs:stellar_creation_data'
         )
         .itemOutputs(
@@ -573,7 +573,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_first')
         .itemInputs('kubejs:microminer_t11', 'kubejs:infinity_catalyst', 'kubejs:shattered_universe_data',)
-        .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
+        .itemOutputs('64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap', '64x kubejs:alien_scrap')
         .duration(600)
         .EUt(2000000)
 
@@ -603,7 +603,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(1000000)
 
-        event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_forth')
+    event.recipes.gtceu.advanced_microverse_iii('kubejs:t_eleven_forth')
         .itemInputs(
             'kubejs:microminer_t11',
             '16x gtceu:holmium_block',
@@ -648,8 +648,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(120)
 
-    event.shaped(
-        '2x kubejs:microverse_casing', [
+    event.shaped('2x kubejs:microverse_casing', [
         'PPP',
         'PWP',
         'PPP'
@@ -680,12 +679,10 @@ ServerEvents.recipes(event => {
             C: projector[1],
             M: 'kubejs:microverse_casing',
             A: 'gtceu:computer_monitor_cover'
-        }
-        ).id(`kubejs:${projector[0]}`)
+        }).id(`kubejs:${projector[0]}`)
     })
 
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:hyperbolic_microverse_projector', [
+    event.recipes.extendedcrafting.shaped_table('gtceu:hyperbolic_microverse_projector', [
         'EPFPE',
         'PALAP',
         'FLRLF',
@@ -698,7 +695,6 @@ ServerEvents.recipes(event => {
         L: 'kubejs:microverse_casing',
         A: '#gtceu:circuits/uev',
         R: 'gtceu:computer_monitor_cover'
-    }
-    ).id('kubejs:shaped/hyperbolic_microverse_projector')
+    }).id('kubejs:shaped/hyperbolic_microverse_projector')
 
 })

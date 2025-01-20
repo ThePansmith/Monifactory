@@ -101,7 +101,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('sodium_cyanide')
         .dust()
         .color(0x7FB4C7)
-        .components('1x sodium', '1x carbon', '1x oxygen')
+        .components('1x sodium', '1x carbon', '1x nitrogen')
 
     event.create('chloroacetic_mixture')
         .fluid()
@@ -188,7 +188,6 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('tetraethyllead').setFormula('Pb(CH3CH2)4')
 
     // PECA intermediates
-    GTMaterials.get('sodium_cyanide').setFormula('NaCN')
     GTMaterials.get('chloroacetate').setFormula('ClCH2CO2H')
     GTMaterials.get('dichloroacetate').setFormula('Cl2CH2CO2H')
     GTMaterials.get('trichloroacetate').setFormula('Cl3CH2CO2H')

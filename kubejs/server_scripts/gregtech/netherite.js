@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of('gtceu:hydrogen', 2000))
         .duration(300)
         .EUt(65520)
-    
+
     // Scrapline
     event.recipes.gtceu.macerator('ancient_debris_crushing')
         .itemInputs('minecraft:ancient_debris')
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:obsidian_dust')
         .duration(300)
         .EUt(16380)
-    
+
     event.recipes.gtceu.centrifuge('ancient_debris_dust_purifying')
         .itemInputs('kubejs:impure_ancient_debris_dust')
         .itemOutputs('kubejs:purified_ancient_debris_dust', 'gtceu:obsidian_dust')
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(250000)
         .blastFurnaceTemp(12000)
-    
+
     //Activated Nethline
     event.recipes.gtceu.forming_press('inert_nether_compound_ingot')
         .itemInputs('gtceu:hot_europium_ingot', '16x kubejs:wither_bone', '4x gtceu:dark_soularium_dust', '4x kubejs:primal_mana')

@@ -1,6 +1,4 @@
 ServerEvents.recipes(event => {
-
-
     // Snad
     event.remove('snad:snadrecipe')
     event.remove('snad:red_snad')
@@ -11,22 +9,21 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['extendedcrafting:black_iron_nugget', 'extendedcrafting:redstone_nugget', 'extendedcrafting:enhanced_redstone_nugget', 'extendedcrafting:ender_nugget', 'extendedcrafting:enhanced_ender_nugget'] })
 
     //GT
-    event.remove({ output: 'gtceu:ender_fluid_link_cover'})
+    event.remove({ output: 'gtceu:ender_fluid_link_cover' })
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
     event.remove({ id: 'gtceu:mixer/rhodium_plated_palladium' })
-    event.remove({ id: /gtceu:cutter\/cut_quartz_into_slab.*/ });
 
     //FIXME will get fixed
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__fireclay" })
 
     //Thermal
-    event.remove({ output: ['thermal:dynamo_stirling', 'thermal:dynamo_gourmand', 'thermal:dynamo_lapidary', 'thermal:dynamo_disenchantment', 'systeams:numismatic_boiler', 'systeams:stirling_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler', 'thermal:constantan_coin'] })
+    event.remove({ output: ['thermal:dynamo_stirling', 'thermal:dynamo_lapidary', 'thermal:dynamo_disenchantment', 'systeams:numismatic_boiler', 'systeams:stirling_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler', 'thermal:constantan_coin'] })
     event.remove({ id: /thermal:parts.*_gear/ })
     event.remove({ output: 'thermal:rubber' })
     event.remove({ output: 'thermal:cured_rubber' })
-    event.remove({ input: 'forge:nuggets/netherite'})
+    event.remove({ input: 'forge:nuggets/netherite' })
     event.remove({ id: 'thermal:gunpowder_4' })
-    event.remove({ id: 'thermal:device_xp_condenser'})
+    event.remove({ id: 'thermal:device_xp_condenser' })
 
     //Redstone arsenal
     event.remove({ id: 'redstone_arsenal:smelting/flux_ingot_from_dust_smelting' })
@@ -37,7 +34,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'redstone_arsenal:storage/flux_ingot_from_block' })
 
     // Ad Astra
-    event.remove({ output: ['ad_astra:desh_fluid_pipe', 'ad_astra:ostrum_fluid_pipe', 'ad_astra:photovoltaic_etrium_cell', 'ad_astra:photovoltaic_vesnium_cell', 'ad_astra:oxygen_gear', 'ad_astra:engine_frame', 'ad_astra:fan','ad_astra:etrionic_capacitor', 'ad_astra:energizer', 'ad_astra:steel_cable', 'ad_astra:desh_cable', 'ad_astra:cable_duct', 'ad_astra:fluid_pipe_duct', 'ad_astra:coal_generator', 'ad_astra:compressor', 'ad_astra:etrionic_blast_furnace', 'ad_astra:fuel_refinery', 'ad_astra:solar_panel', 'ad_astra:water_pump', 'ad_astra:energizer', 'ad_astra:cryo_freezer'] })
+    event.remove({ output: ['ad_astra:desh_fluid_pipe', 'ad_astra:ostrum_fluid_pipe', 'ad_astra:photovoltaic_etrium_cell', 'ad_astra:photovoltaic_vesnium_cell', 'ad_astra:oxygen_gear', 'ad_astra:engine_frame', 'ad_astra:fan', 'ad_astra:etrionic_capacitor', 'ad_astra:energizer', 'ad_astra:steel_cable', 'ad_astra:desh_cable', 'ad_astra:cable_duct', 'ad_astra:fluid_pipe_duct', 'ad_astra:coal_generator', 'ad_astra:compressor', 'ad_astra:etrionic_blast_furnace', 'ad_astra:fuel_refinery', 'ad_astra:solar_panel', 'ad_astra:water_pump', 'ad_astra:energizer', 'ad_astra:cryo_freezer'] })
     event.remove({ id: /refining_oil/ })
     event.remove({ id: /plate_from_compressing/ })
     event.remove({ id: /steel_ingot_from_alloying/ })
@@ -47,16 +44,16 @@ ServerEvents.recipes(event => {
 
     // Misc broken recipes
     event.remove({ id: 'minecraft:netherite_spikes_smithing' })
-    event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/copper'] })
 
     // Angel Ring
     event.remove({ id: 'better_angel_ring:angel_ring' })
     event.remove({ id: 'better_angel_ring:ring' })
+    
     //AA
     event.remove({ output: ['gtceu:flawless_palis_empowered_gem', 'gtceu:flawless_diamatine_empowered_gem', 'gtceu:flawless_emeradic_empowered_gem', 'gtceu:restonia_empowered_rod', 'gtceu:enori_empowered_rod', 'gtceu:void_empowered_rod', 'gtceu:palis_empowered_rod', 'gtceu:diamatine_empowered_rod', 'gtceu:emeradic_empowered_rod', 'gtceu:exquisite_restonia_empowered_gem', 'gtceu:exquisite_enori_empowered_gem', 'gtceu:exquisite_void_empowered_gem', 'gtceu:exquisite_palis_empowered_gem', 'gtceu:exquisite_diamatine_empowered_gem', 'gtceu:exquisite_emeradic_empowered_gem', 'gtceu:restonia_empowered_dust', 'gtceu:enori_empowered_dust', 'gtceu:void_empowered_dust', 'gtceu:palis_empowered_dust', 'gtceu:diamatine_empowered_dust', 'gtceu:emeradic_empowered_dust', 'gtceu:tiny_restonia_empowered_dust', 'gtceu:tiny_enori_empowered_dust', 'gtceu:tiny_void_empowered_dust', 'gtceu:tiny_palis_empowered_dust', 'gtceu:tiny_diamatine_empowered_dust', 'gtceu:tiny_emeradic_empowered_dust', 'gtceu:flawless_restonia_empowered_gem', 'gtceu:flawless_enori_empowered_gem', 'gtceu:flawless_void_empowered_gem'] })
     event.remove({ output: ['gtceu:small_emeradic_empowered_dust', 'gtceu:small_diamatine_empowered_dust', 'gtceu:small_palis_empowered_dust', 'gtceu:small_void_empowered_dust', 'gtceu:small_enori_empowered_dust', 'gtceu:small_restonia_empowered_dust'] })
     event.remove({ output: ['gtceu:exquisite_diamatine_gem', 'gtceu:diamatine_dust', 'gtceu:tiny_diamatine_dust', 'gtceu:flawless_diamatine_gem', 'gtceu:diamatine_rod', 'gtceu:diamatine_plate', 'gtceu:small_diamatine_dust', 'gtceu:exquisite_void_gem', 'gtceu:void_dust', 'gtceu:tiny_void_dust', 'gtceu:flawless_void_gem', 'gtceu:void_rod', 'gtceu:void_plate', 'gtceu:small_void_dust', 'gtceu:exquisite_emeradic_gem', 'gtceu:emeradic_dust', 'gtceu:tiny_emeradic_dust', 'gtceu:flawless_emeradic_gem', 'gtceu:emeradic_rod', 'gtceu:emeradic_plate', 'gtceu:small_emeradic_dust', 'gtceu:exquisite_enori_gem', 'gtceu:enori_dust', 'gtceu:tiny_enori_dust', 'gtceu:flawless_enori_gem', 'gtceu:enori_rod', 'gtceu:enori_plate', 'gtceu:small_enori_dust'] })
-    event.remove({ output: ['gtceu:exquisite_restonia_gem', 'gtceu:restonia_dust', 'gtceu:tiny_restonia_dust', 'gtceu:flawless_restonia_gem', 'gtceu:restonia_rod', 'gtceu:restonia_plate', 'gtceu:small_restonia_dust','gtceu:exquisite_palis_gem', 'gtceu:palis_dust', 'gtceu:tiny_palis_dust', 'gtceu:flawless_palis_gem', 'gtceu:palis_rod', 'gtceu:palis_plate', 'gtceu:small_palis_dust'] })
+    event.remove({ output: ['gtceu:exquisite_restonia_gem', 'gtceu:restonia_dust', 'gtceu:tiny_restonia_dust', 'gtceu:flawless_restonia_gem', 'gtceu:restonia_rod', 'gtceu:restonia_plate', 'gtceu:small_restonia_dust', 'gtceu:exquisite_palis_gem', 'gtceu:palis_dust', 'gtceu:tiny_palis_dust', 'gtceu:flawless_palis_gem', 'gtceu:palis_rod', 'gtceu:palis_plate', 'gtceu:small_palis_dust'] })
 
     //NC
     event.remove(/nuclearcraft:fusion.*/)
@@ -102,7 +99,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['nuclearcraft:magnesium_deepslate_ore', 'nuclearcraft:thorium_deepslate_ore', 'nuclearcraft:uranium_deepslate_ore', 'nuclearcraft:magnesium_ore', 'nuclearcraft:boron_deepslate_ore', 'nuclearcraft:cobalt_ore', 'nuclearcraft:platinum_deepslate_ore', 'nuclearcraft:silver_deepslate_ore', 'nuclearcraft:lead_ore', 'nuclearcraft:lithium_ore', 'nuclearcraft:thorium_ore', 'nuclearcraft:tin_ore', 'nuclearcraft:cobalt_deepslate_ore', 'nuclearcraft:silver_ore', 'nuclearcraft:uranium_ore', 'nuclearcraft:zinc_ore', 'nuclearcraft:boron_ore', 'nuclearcraft:lithium_deepslate_ore'] })
     event.remove({ output: ['nuclearcraft:foursmore', 'nuclearcraft:evenmoresmore', 'nuclearcraft:moresmore', 'nuclearcraft:smore'] })
     event.remove({ output: ['nuclearcraft:quantum_flux_regulator', 'nuclearcraft:fission_reactor_irradiation_chamber', 'nuclearcraft:chamber_port', 'nuclearcraft:chamber_terminal', 'nuclearcraft:event_horizon_stabilizer', 'nuclearcraft:quantum_transformer', 'nuclearcraft:black_hole', 'nuclearcraft:neutronium_frame', 'nuclearcraft:photon_concentrator', 'nuclearcraft:redstone_dimmer'] })
-    event.remove({ id: 'minecraft:nuclearcraft_hard_carbon_dust'})
+    event.remove({ id: 'minecraft:nuclearcraft_hard_carbon_dust' })
     //Nugget fix
     // event.remove({id: 'minecraft:iron_nugget'})
     // event.remove({id: 'minecraft:gold_nugget'})
@@ -112,14 +109,14 @@ ServerEvents.recipes(event => {
     // Posttank stuff
     event.remove({ id: /gtceu:uxv/ })
     event.remove({ id: /gtceu:opv/ })
-    event.remove({ id: 'gtceu:shaped/max_machine_hull'})
+    event.remove({ id: 'gtceu:shaped/max_machine_hull' })
 
     //Default Fluxed Electrum recipe (Redstone Arsenal)
-    event.remove({ id: 'redstone_arsenal:materials/flux_dust'})
+    event.remove({ id: 'redstone_arsenal:materials/flux_dust' })
 
     // PEX
     event.remove({ output: ['packagedexcrafting:flux_crafter', 'packagedexcrafting:basic_crafter'] })
 
     // Shrink
-    event.remove({ output: 'shrink:shrinking_device'})
+    event.remove({ output: 'shrink:shrinking_device' })
 })

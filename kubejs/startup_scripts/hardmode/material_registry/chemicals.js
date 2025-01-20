@@ -106,7 +106,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x777777).iconSet('rough')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('graphene', 'oxygen')
-
+    
+    // Kapton K
     event.create('durene')
         .dust()
         .fluid()
@@ -138,6 +139,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('1x oxydianiline', '1x dimethylformamide')
 
+    event.create('kapton_k')
+        .polymer()
+        .fluid()
+        .color(0x915A23)
+        .components('1x pyromellitic_dianhydride', '1x oxydianiline')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
+
+    // Harder Fluorantimonic Acid
     event.create('antimony_pentafluoride')
         .fluid()
         .color(0xe3f1f1)
@@ -274,63 +283,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xF8EBBE)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    // Kapton K
-    event.create('cobalt_bromide')
-        .fluid()
-        .color(0x0c9949)
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-        .components('1x cobalt', '1x bromine', '1x acetic_acid')
-
-    event.create('kapton_k')
-        .polymer()
-        .fluid()
-        .color(0x915A23)
-        //.components('1x pyromellitic_dianhydride', '1x oxydianiline')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
-
-    event.create('bis_trichloromethyl_benzene')
-        .fluid()
-        .color(0xB48C63)
-        .components('8x carbon', '4x hydrogen', '6x chlorine')
-
-    event.create('terephthalic_acid')
-        .fluid()
-        .color(0xDB9374)
-        .components('6x carbon', '4x hydrogen', '2x carbon_dioxide', '2x hydrogen')
-
-    event.create('terephthaloyl_chloride')
-        .fluid()
-        .color(0xB883DE)
-        .components('8x carbon', '4x hydrogen', '2x chlorine', '2x oxygen')
-
-    event.create('nitroaniline')
-        .fluid()
-        .color(0xC3DE83)
-        .components('8x carbon', '4x hydrogen', '2x chlorine', '2x oxygen')
-
     event.create('hydrobromic_acid')
         .fluid()
         .color(0x612C0D)
         .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
         .components('1x hydrogen', '1x bromine', '1x water')
-
-    event.create('co_mn_br_catalyst')
-        .fluid()
-        .color(0xB48C63)
-
-    event.create('para_phenylenediamine')
-        .fluid()
-        .color(0xC3DE83)
-        .components('1x nitrochlorobenzene', '1x ammonia')
-
-
-    event.create('para_aramid')
-        .polymer()
-        .fluid()
-        .color(0xE6ED7B)
-        //.flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
-        .components('1x para_phenylenediamine', '1x terephthaloyl_chloride')
-
 })
 
 GTCEuStartupEvents.materialModification(() => {
@@ -343,6 +300,4 @@ GTCEuStartupEvents.materialModification(() => {
     GTMaterials.get('durene').setFormula('C6H2(CH3)4');
     GTMaterials.get('pyromellitic_dianhydride').setFormula('C6H2(C2O3)2');
     GTMaterials.get('oxydianiline').setFormula('O(C6H4NH2)2');
-    GTMaterials.get('bis_trichloromethyl_benzene').setFormula('C6H4(CCl3)2');
-    GTMaterials.get('terephthalic_acid').setFormula('C6H4(CO2H)2');
 })

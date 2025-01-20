@@ -5,31 +5,26 @@ ServerEvents.recipes(event => {
     event.remove({ id: "enderio:fluid_conduit" })
     if (isNormalMode) {
         // Manual item conduit
-        event.shaped(
-            "4x enderio:item_conduit", [
+        event.shaped('4x enderio:item_conduit', [
             'BBB',
             'WWW',
             'BBB'
         ], {
             B: "enderio:conduit_binder",
             W: "gtceu:pulsating_alloy_single_wire"
-        }
-        ).id('kubejs:item_conduit')
+        }).id('kubejs:item_conduit')
 
-        event.shaped(
-            "4x enderio:pressurized_fluid_conduit", [
+        event.shaped('4x enderio:pressurized_fluid_conduit', [
             'BBB',
             'GGG',
             'BBB'
         ], {
             B: "enderio:conduit_binder",
             G: '#forge:glass/colorless'
-        }
-        ).id('kubejs:pressurized_fluid_conduit')
+        }).id('kubejs:pressurized_fluid_conduit')
 
         // Manual ender fluid conduit
-        event.shaped(
-            "4x enderio:ender_fluid_conduit", [
+        event.shaped('4x enderio:ender_fluid_conduit', [
             'BBB',
             'WPW',
             'BBB'
@@ -37,8 +32,7 @@ ServerEvents.recipes(event => {
             B: "enderio:conduit_binder",
             W: "gtceu:vibrant_alloy_single_wire",
             P: "enderio:pressurized_fluid_conduit"
-        }
-        ).id("kubejs:ender_fluid_conduit_upgrade")
+        }).id("kubejs:ender_fluid_conduit_upgrade")
 
         event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
 
@@ -59,42 +53,36 @@ ServerEvents.recipes(event => {
     if (isHardMode) {
         if (!isExpertMode) {
             // Manual item conduit
-            event.shaped(
-                "4x enderio:item_conduit", [
-                    'BPB',
-                    'WWW',
-                    'BPB'
-                ], {
-                    B: "enderio:conduit_binder",
-                    W: "gtceu:pulsating_alloy_single_wire",
-                    P: "gtceu:polyvinyl_chloride_foil"
-                }
-            ).id('kubejs:item_conduit')
+            event.shaped('4x enderio:item_conduit', [
+                'BPB',
+                'WWW',
+                'BPB'
+            ], {
+                B: "enderio:conduit_binder",
+                W: "gtceu:pulsating_alloy_single_wire",
+                P: "gtceu:polyvinyl_chloride_foil"
+            }).id('kubejs:item_conduit')
 
-            event.shaped(
-                "4x enderio:pressurized_fluid_conduit", [
-                    'BBB',
-                    'GGG',
-                    'BBB'
-                ], {
-                    B: "enderio:conduit_binder",
-                    G: '#forge:glass/colorless'
-                }
-            ).id('kubejs:pressurized_fluid_conduit')
+            event.shaped('4x enderio:pressurized_fluid_conduit', [
+                'BBB',
+                'GGG',
+                'BBB'
+            ], {
+                B: "enderio:conduit_binder",
+                G: '#forge:glass/colorless'
+            }).id('kubejs:pressurized_fluid_conduit')
 
             // Manual ender fluid conduit
-            event.shaped(
-                "4x enderio:ender_fluid_conduit", [
-                    'BCB',
-                    'WPW',
-                    'BCB'
-                ], {
-                    B: "enderio:conduit_binder",
-                    W: "gtceu:vibrant_alloy_single_wire",
-                    P: "enderio:pressurized_fluid_conduit",
-                    C: "gtceu:polyvinyl_chloride_foil"
-                }
-            ).id("kubejs:ender_fluid_conduit_upgrade")
+            event.shaped('4x enderio:ender_fluid_conduit', [
+                'BCB',
+                'WPW',
+                'BCB'
+            ], {
+                B: "enderio:conduit_binder",
+                W: "gtceu:vibrant_alloy_single_wire",
+                P: "enderio:pressurized_fluid_conduit",
+                C: "gtceu:polyvinyl_chloride_foil"
+            }).id("kubejs:ender_fluid_conduit_upgrade")
 
             event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
 
@@ -122,16 +110,14 @@ ServerEvents.recipes(event => {
     // Energy Conduits //
 
     //Conductive Iron
-    event.shaped(
-        '3x enderio:conductive_conduit', [
+    event.shaped('3x enderio:conductive_conduit', [
         'AAA',
         'BBB',
         'AAA'
     ], {
         A: 'enderio:conduit_binder',
         B: 'gtceu:conductive_alloy_single_wire'
-    }
-    ).id("kubejs:conductive_conduit")
+    }).id("kubejs:conductive_conduit")
 
     event.recipes.gtceu.assembler('kubejs:conductive_conduit')
         .itemInputs('3x gtceu:conductive_alloy_single_wire', '6x enderio:conduit_binder')
@@ -140,8 +126,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     //Energetic Alloy
-    event.shaped(
-        '3x enderio:energetic_conduit', [
+    event.shaped('3x enderio:energetic_conduit', [
         'AAA',
         'BCB',
         'AAA'
@@ -149,8 +134,7 @@ ServerEvents.recipes(event => {
         A: 'enderio:conduit_binder',
         B: 'gtceu:energetic_alloy_single_wire',
         C: 'enderio:conductive_conduit'
-    }
-    ).id("kubejs:energetic_conduit")
+    }).id("kubejs:energetic_conduit")
 
     event.recipes.gtceu.assembler('kubejs:energetic_conduit')
         .itemInputs('2x gtceu:energetic_alloy_single_wire', 'enderio:conductive_conduit', '6x enderio:conduit_binder')
@@ -160,8 +144,7 @@ ServerEvents.recipes(event => {
 
     //Vibrant Alloy
 
-    event.shaped(
-        '3x enderio:vibrant_conduit', [
+    event.shaped('3x enderio:vibrant_conduit', [
         'AAA',
         'BCB',
         'AAA'
@@ -169,8 +152,7 @@ ServerEvents.recipes(event => {
         A: 'enderio:conduit_binder',
         B: 'gtceu:vibrant_alloy_single_wire',
         C: 'enderio:energetic_conduit'
-    }
-    ).id("kubejs:vibrant_conduit")
+    }).id("kubejs:vibrant_conduit")
 
     event.recipes.gtceu.assembler('kubejs:vibrant_conduit')
         .itemInputs('2x gtceu:vibrant_alloy_single_wire', 'enderio:energetic_conduit', '6x enderio:conduit_binder')
@@ -286,7 +268,7 @@ ServerEvents.recipes(event => {
 
     capacitorCores.forEach(core => {
         event.shaped(
-            core[1] + 'x enderio:basic_capacitor', [
+            `${core[1]}x enderio:basic_capacitor`, [
             ' N ',
             'NCN',
             'W W'
@@ -299,25 +281,21 @@ ServerEvents.recipes(event => {
     })
 
     // Compressed caps
-    event.shaped(
-        'kubejs:compressed_octadic_capacitor', [
+    event.shaped('kubejs:compressed_octadic_capacitor', [
         'CCC',
         'CCC',
         'CCC'
     ], {
         C: 'enderio:octadic_capacitor'
-    }
-    ).id('kubejs:compressed_octadic_capacitor')
+    }).id('kubejs:compressed_octadic_capacitor')
 
-    event.shaped(
-        'kubejs:double_compressed_octadic_capacitor', [
+    event.shaped('kubejs:double_compressed_octadic_capacitor', [
         'CCC',
         'CCC',
         'CCC'
     ], {
         C: 'kubejs:compressed_octadic_capacitor'
-    }
-    ).id('kubejs:double_compressed_octadic_capacitor')
+    }).id('kubejs:double_compressed_octadic_capacitor')
 
     // make it use tags
     event.replaceInput({ id: 'enderio:octadic_capacitor' }, 'minecraft:glowstone', '#forge:storage_blocks/glowstone')
@@ -412,8 +390,7 @@ ServerEvents.recipes(event => {
 
     // Enchanter
     event.remove({ output: ['enderio:enchanter'] })
-    event.shaped(
-        'enderio:enchanter', [
+    event.shaped('enderio:enchanter', [
         'DCD',
         'BBB',
         ' A '
@@ -422,50 +399,45 @@ ServerEvents.recipes(event => {
         B: 'gtceu:dark_steel_ingot',
         C: 'minecraft:book',
         D: 'minecraft:diamond'
-    }
-    ).id('kubejs:enchanter')
+    }).id('kubejs:enchanter')
 
     //Custom enchanter books
-      event.custom(
+    event.custom(
         {
             "type": "enderio:enchanting",
             "cost_multiplier": 1,
             "enchantment": "ensorcellation:air_affinity",
             "input": {
-              "count": 1,
-              "ingredient": {
-                "item": "quark:bottled_cloud"
-              }
+                "count": 1,
+                "ingredient": {
+                    "item": "quark:bottled_cloud"
+                }
             }
-          }
-      )
+        })
 
-      event.custom(
+    event.custom(
         {
             "type": "enderio:enchanting",
             "cost_multiplier": 1,
             "enchantment": "ensorcellation:reach",
             "input": {
-              "count": 1,
-              "ingredient": {
-                "item": "ulvcovm:ulv_robot_arm"
-              }
+                "count": 1,
+                "ingredient": {
+                    "item": "ulvcovm:ulv_robot_arm"
+                }
             }
-          }
-      )
+        })
 
     // Yeta Wrench
     event.remove({ output: ['enderio:yeta_wrench'] })
-    event.shaped(
-        'enderio:yeta_wrench', [
+    event.shaped('enderio:yeta_wrench', [
         'I I',
         ' G ',
         ' I '
     ], {
         I: '#forge:ingots/iron',
         G: 'gtceu:iron_gear'
-    }
-    ).id('kubejs:yeta_wrench')
+    }).id('kubejs:yeta_wrench')
     event.remove({ output: 'enderio:void_chassis' })
 
     //Redstone Conduit
@@ -597,7 +569,7 @@ ServerEvents.recipes(event => {
 
     // Crafter
     event.remove({ id: 'enderio:crafter' })
-    if(!isExpertMode) {
+    if (!isExpertMode) {
         event.shaped('enderio:crafter', [
             'RCR',
             'GFG',
@@ -753,6 +725,16 @@ ServerEvents.recipes(event => {
         E: '#forge:plates/electrical_steel'
     }).id('kubejs:wired_charger')
 
+    // Experience Rod
+    event.shaped('enderio:experience_rod', [
+        '  V',
+        ' S ',
+        'V  ',
+    ], {
+        S: '#forge:ingots/soularium',
+        V: '#forge:ingots/vibrant_alloy'
+    })
+
     // xp obelisk
     event.remove({ id: 'enderio:xp_obelisk' })
     event.shaped('enderio:xp_obelisk', [
@@ -775,9 +757,9 @@ ServerEvents.recipes(event => {
     event.shapeless('enderio:pressurized_fluid_tank', ['enderio:pressurized_fluid_tank'])
 
     //Cheaper me conduit recipes
-    if(!isExpertMode) {
+    if (!isExpertMode) {
         event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
-        .itemInputs("4x enderio:me_conduit", "5x enderio:conduit_binder")
+            .itemInputs("4x enderio:me_conduit", "5x enderio:conduit_binder")
             .itemOutputs("2x enderio:dense_me_conduit")
             .duration(80)
             .EUt(16)
@@ -790,15 +772,15 @@ ServerEvents.recipes(event => {
         event.remove({ output: "enderio:me_conduit" })
         event.remove({ output: "enderio:dense_me_conduit" })
     }
-    
+
 
     event.replaceInput({ output: 'enderio:extraction_speed_upgrade_3' }, 'gtceu:soularium_ingot', 'gtceu:aluminium_ingot')
 
     // Conduit Probe recipe
     event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:conductive_alloy_ingot', 'gtceu:conductive_alloy_ingot')
-    if(!isExpertMode)
+    if (!isExpertMode)
         event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:energy_conduit', 'enderio:conductive_conduit')
-    if(isExpertMode)
+    if (isExpertMode)
         event.replaceInput({ id: 'enderio:conduit_probe' }, 'enderio:energy_conduit', 'gtceu:conductive_alloy_single_wire')
-    
+
 })

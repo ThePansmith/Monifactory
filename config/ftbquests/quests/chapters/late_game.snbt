@@ -1306,7 +1306,22 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75321CAE019C190A"
-				item: "gtceu:cryolobus_dust"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:cryolobus_dust"
+							}
+							{
+								Count: 1b
+								id: "kubejs:warden_horn"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "{moni.quest.7F669657313F2E62.title}"
@@ -2465,24 +2480,19 @@
 					type: "item"
 				}
 				{
-					id: "3C8BD4187F47FBC9"
-					item: "gtceu:black_steel_block"
+					count: 4L
+					id: "435C35B1F49B7B2C"
+					item: "gtceu:trinium_coil_block"
 					type: "item"
 				}
 				{
-					count: 2L
-					id: "4F11D4069AEF06CA"
-					item: "gtceu:duranium_block"
-					type: "item"
-				}
-				{
-					count: 12L
+					count: 16L
 					id: "2FF2B4C219053E6A"
 					item: "ae2:spatial_pylon"
 					type: "item"
 				}
 				{
-					count: 12L
+					count: 16L
 					id: "27B323E3ADED4829"
 					item: "gtceu:fusion_glass"
 					type: "item"
@@ -2495,7 +2505,7 @@
 				}
 				{
 					id: "1685A72D65A02E82"
-					item: "gtceu:luv_energy_output_hatch"
+					item: "gtceu:zpm_energy_output_hatch_4a"
 					type: "item"
 				}
 			]

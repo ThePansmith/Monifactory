@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     function fabricator(prediction, circuit, output) {
         event.recipes.gtceu.loot_superfabricator(`kubejs:${prediction}_${circuit}`)
-            .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + prediction + '"}}').weakNBT())
+            .itemInputs(Item.of('hostilenetworks:prediction', `{data_model:{id:"hostilenetworks:${prediction}"}}`).weakNBT())
             .circuit(circuit)
             .itemOutputs(output)
             .duration(60) // same for all recipes
@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         ////// Machine Recipe //////
 
         event.recipes.gtceu.assembly_line('loot_superfabricator')
-            .itemInputs('gtceu:atomic_casing', '6x gtceu:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', 'kubejs:heart_of_a_universe', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter',  'kubejs:abyssal_energy_core')
+            .itemInputs('gtceu:atomic_casing', '6x gtceu:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', 'kubejs:heart_of_a_universe', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter', 'kubejs:abyssal_energy_core')
             .inputFluids('gtceu:soldering_alloy 1152')
             .itemOutputs('gtceu:loot_superfabricator')
             .stationResearch(b => b

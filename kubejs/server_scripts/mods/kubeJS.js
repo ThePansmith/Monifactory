@@ -7,7 +7,6 @@ ServerEvents.recipes(event => {
         .EUt(15360)
         .fusionStartEU(400000000)
 
-    solidify('einsteinium_fusion', [Fluid.of('gtceu:berkelium', 16), Fluid.of('gtceu:californium', 16)], Fluid.of('gtceu:einsteinium', 16));
     solidify('stabilized_einsteinium', Fluid.of('gtceu:einsteinium', 144), '16x kubejs:stabilized_einsteinium');
     solidify('stabilized_berkelium', Fluid.of('gtceu:berkelium', 144), '8x kubejs:stabilized_berkelium');
     solidify('stabilized_neptunium', Fluid.of('gtceu:neptunium', 144), '2x kubejs:stabilized_neptunium');
@@ -35,7 +34,7 @@ ServerEvents.recipes(event => {
     if (!isNormalMode) {
         solidify('stabilized_oganesson', Fluid.of('gtceu:oganesson', 144), 'kubejs:stabilized_oganesson');
     }
-    
+
     function solidify(recipename, input, output) {
         event.recipes.gtceu.fluid_solidifier(recipename)
             .inputFluids(input)
@@ -68,14 +67,12 @@ ServerEvents.recipes(event => {
     }
 
     // Endest Star
-    event.shaped(
-        'kubejs:endest_star', [
+    event.shaped('kubejs:endest_star', [
         ' E ',
         'ESE',
         ' E '
     ], {
         E: 'minecraft:ender_eye',
         S: 'minecraft:nether_star'
-    }
-    )
+    })
 })

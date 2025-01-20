@@ -153,7 +153,7 @@
 	electrum = false
 	caesium_137 = false
 	strontium = false
-	rhodochrosite = false
+	rhodochrosite = true
 	lead = false
 	boron_arsenide = false
 	neodymium = false
@@ -222,7 +222,7 @@
 	magnesium = false
 	cobalt = false
 	aluminum = false
-	graphite = false
+	graphite = true
 	lead = false
 	bronze = false
 	californium250 = false
@@ -232,7 +232,7 @@
 	americium241 = false
 	plutonium238 = false
 	tin = false
-	beryllium = false
+	beryllium = true
 	uranium238 = false
 	silver = false
 	uranium = false

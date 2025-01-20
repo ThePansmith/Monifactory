@@ -85,27 +85,27 @@ if (Platform.isLoaded('railways')) {
 		}
 	})
 	ServerEvents.recipes(event => {
-		event.remove({ output: '#kubejs:create_tracks'})
+		event.remove({ output: '#kubejs:create_tracks' })
 		let normalTrackRecipes = function (sleeperItem, outputItem, railItem, outputCount) {
-		/* 	
-			This function makes normal-gauge track recipes for shaped crafting and the Gregtech Assembler based on 4 arguments:
-			[STRING] sleeperItem is the item used as the sleeper for the track, typically a slab.
-			[STRING] outputItem is the track that the recipe gives.
-			[STRING] railItem is the item used for the rails themselves, typically iron or gold nuggets.
-			[INT]	 outputCount is the amount of tracks given from the recipe.
-		*/
+			/* 	
+				This function makes normal-gauge track recipes for shaped crafting and the Gregtech Assembler based on 4 arguments:
+				[STRING] sleeperItem is the item used as the sleeper for the track, typically a slab.
+				[STRING] outputItem is the track that the recipe gives.
+				[STRING] railItem is the item used for the rails themselves, typically iron or gold nuggets.
+				[INT]	 outputCount is the amount of tracks given from the recipe.
+			*/
 			event.shaped(
 				`${outputCount}x ${outputItem}`, [
-					'   ',
-					'IHI',
-					'SSS'
-				], {
-					H: "#forge:tools/hammers",
-					I: `${railItem}`,
-					S: `${sleeperItem}`
-				}
+				'   ',
+				'IHI',
+				'SSS'
+			], {
+				H: "#forge:tools/hammers",
+				I: `${railItem}`,
+				S: `${sleeperItem}`
+			}
 			);
-			event.recipes.gtceu.assembler(`kubejs:${outputItem.replace(/^.*:/,'')}`)
+			event.recipes.gtceu.assembler(`kubejs:${outputItem.replace(/^.*:/, '')}`)
 				.itemInputs(
 					`3x ${sleeperItem}`,
 					`2x ${railItem}`
@@ -115,25 +115,25 @@ if (Platform.isLoaded('railways')) {
 				.EUt(16);
 		};
 		let wideTrackRecipes = function (inputTrackItem, sleeperItem, outputItem, outputCount) {
-		/* 	
-			This function makes wide-gauge track recipes for shaped crafting and the Gregtech Assembler based on 4 arguments:
-			[STRING] inputTrackItem is the track used in the recipe. 
-			[STRING] sleeperItem is the item used as the sleeper for the track, typically a slab.
-			[STRING] outputItem is the track that the recipe gives.
-			[INT]	 outputCount is the amount of tracks given from the recipe.
-		*/
+			/* 	
+				This function makes wide-gauge track recipes for shaped crafting and the Gregtech Assembler based on 4 arguments:
+				[STRING] inputTrackItem is the track used in the recipe. 
+				[STRING] sleeperItem is the item used as the sleeper for the track, typically a slab.
+				[STRING] outputItem is the track that the recipe gives.
+				[INT]	 outputCount is the amount of tracks given from the recipe.
+			*/
 			event.shaped(
 				`${outputCount}x ${outputItem}`, [
-					'   ',
-					' H ',
-					'STS'
-				], {
-					H: "#forge:tools/hammers",
-					S: `${sleeperItem}`,
-					T: `${inputTrackItem}`
-				}
+				'   ',
+				' H ',
+				'STS'
+			], {
+				H: "#forge:tools/hammers",
+				S: `${sleeperItem}`,
+				T: `${inputTrackItem}`
+			}
 			);
-			event.recipes.gtceu.assembler(`kubejs:${outputItem.replace(/^.*:/,'')}`)
+			event.recipes.gtceu.assembler(`kubejs:${outputItem.replace(/^.*:/, '')}`)
 				.itemInputs(
 					`2x ${sleeperItem}`,
 					`1x ${inputTrackItem}`
@@ -143,24 +143,24 @@ if (Platform.isLoaded('railways')) {
 				.EUt(16);
 		};
 		let narrowTrackRecipes = function (inputTrackItem, outputItem, sleeperOutputItem, outputCount) {
-		/* 	
-			This function makes narrow-gauge track recipes for shaped crafting and the Gregtech Assembler based on 3 arguments:
-			[STRING] inputTrackItem is the track used in the recipe.
-			[STRING] outputItem is the track that the recipe gives.
-			[STRING] sleeperOutputItem is the sleeper that the recipe can give back as an output.
-			[INT] 	 outputCount is the amount of tracks given from the recipe.
-		*/
+			/* 	
+				This function makes narrow-gauge track recipes for shaped crafting and the Gregtech Assembler based on 3 arguments:
+				[STRING] inputTrackItem is the track used in the recipe.
+				[STRING] outputItem is the track that the recipe gives.
+				[STRING] sleeperOutputItem is the sleeper that the recipe can give back as an output.
+				[INT] 	 outputCount is the amount of tracks given from the recipe.
+			*/
 			event.shaped(
 				`${outputCount}x ${outputItem}`, [
-					'   ',
-					' H ',
-					' T '
-				], {
-					H: "#forge:tools/saws",
-					T: `${inputTrackItem}`,
-				}
+				'   ',
+				' H ',
+				' T '
+			], {
+				H: "#forge:tools/saws",
+				T: `${inputTrackItem}`,
+			}
 			);
-			event.recipes.gtceu.cutter(`kubejs:${outputItem.replace(/^.*:/,'')}`)
+			event.recipes.gtceu.cutter(`kubejs:${outputItem.replace(/^.*:/, '')}`)
 				.itemInputs(`${inputTrackItem}`)
 				.itemOutputs(`${outputCount}x ${outputItem}`)
 				.chancedOutput(`${sleeperOutputItem}`, 3000, 500)
@@ -169,7 +169,7 @@ if (Platform.isLoaded('railways')) {
 		};
 		{
 			/* normal tracks */{
-				// normalTrackRecipes('#create:sleepers', 'create:track', 'minecraft:iron_nugget', 1);
+				normalTrackRecipes('#create:sleepers', 'create:track', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:acacia_slab', 'railways:track_acacia', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:birch_slab', 'railways:track_birch', 'minecraft:iron_nugget', 1);
 				normalTrackRecipes('minecraft:dark_oak_slab', 'railways:track_dark_oak', 'minecraft:iron_nugget', 1);
@@ -262,4 +262,4 @@ if (Platform.isLoaded('railways')) {
 		}
 	});
 	console.log("Create: Steam and Rails compat scripts successfully loaded!")
-} else { console.log("Create: Steam and Rails was not found, skipping its compat scripts.")};
+} else { console.log("Create: Steam and Rails was not found, skipping its compat scripts.") };

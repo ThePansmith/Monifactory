@@ -1,4 +1,4 @@
 {
-	"mode": "hard",
+	"mode": "Hard",
 	"message": "This tells KubeJS what mode the pack is currently in, packmode is changed in pack-mode-switcher"
 }

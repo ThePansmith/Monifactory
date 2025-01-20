@@ -29,10 +29,10 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletedYield(20)
     })
 
-    
+
 
     // Luna fluid veins	
-	event.add('kubejs:moon/deuterium', vein => {
+    event.add('kubejs:moon/deuterium', vein => {
         vein.dimensions('ad_astra:moon')
         vein.fluid(() => Fluid.of("gtceu:deuterium").fluid)
         vein.weight(60)
@@ -42,8 +42,8 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletionChance(50)
         vein.depletedYield(5)
     })
-	
-	event.add('kubejs:moon/helium_3', vein => {
+
+    event.add('kubejs:moon/helium_3', vein => {
         vein.dimensions('ad_astra:moon')
         vein.fluid(() => Fluid.of("gtceu:helium_3").fluid)
         vein.weight(35)

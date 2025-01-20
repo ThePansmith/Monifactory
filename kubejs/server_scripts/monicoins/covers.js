@@ -1,8 +1,7 @@
 ServerEvents.recipes(event => {
     if (isNormalMode) {
         //-- ULV Covers
-        event.shaped(
-            Item.of('ulvcovm:ulv_conveyor_module', 2), [
+        event.shaped(Item.of('ulvcovm:ulv_conveyor_module', 2), [
             '   ',
             '   ',
             'A A'
@@ -10,8 +9,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_nickel'
         }).noMirror().noShrink()
 
-        event.shaped(
-            Item.of('ulvcovm:ulv_electric_pump', 2), [
+        event.shaped(Item.of('ulvcovm:ulv_electric_pump', 2), [
             '   ',
             '   ',
             ' AA'

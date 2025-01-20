@@ -18,5 +18,5 @@ PlayerEvents.loggedIn(event => {
     event.removeGameStage('mode_hard')
     event.removeGameStage('mode_expert')
 
-    event.addGameStage(`mode_${global.packmode}`);
+    event.addGameStage(`mode_${global.packmode.toLowerCase()}`);
 })
