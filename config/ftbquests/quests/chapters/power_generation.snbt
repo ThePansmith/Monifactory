@@ -42,6 +42,7 @@
 		}
 	]
 	order_index: 5
+	progression_mode: "flexible"
 	quest_links: [{
 		id: "1C4BA5C05BD7D1C3"
 		linked_quest: "19084E91F357C8C2"
@@ -65,7 +66,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1B04AA7D9AEB2CFA"]
+			dependencies: [
+				"1B04AA7D9AEB2CFA"
+				"15E34DEC491FAB81"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.15A5B4C632836306.description1}"
 				""
@@ -101,6 +106,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["1A30472430354F1E"]
 			description: [
 				"{moni.quest.34876F54406B6A04.description1}"
 				""
@@ -117,7 +123,11 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["6974AA409CC355E6"]
+			dependencies: [
+				"6974AA409CC355E6"
+				"785C6332FC7A07A5"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.677D081CD7612FB0.description1}"
 				""
@@ -163,7 +173,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["677D081CD7612FB0"]
+			dependencies: [
+				"677D081CD7612FB0"
+				"605062720747B482"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.0BFAE16A8B131E84.description1}"
 				""
@@ -205,7 +219,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["7E276DF48E9085A4"]
+			dependencies: [
+				"7E276DF48E9085A4"
+				"785C6332FC7A07A5"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.7D72B3FF808CE13C.description1}"
 				""
@@ -436,6 +454,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["32E44FFD602C98DF"]
 			description: [
 				"{moni.quest.50E12E97AC174194.description1}"
 				""
@@ -459,6 +478,7 @@
 				"07AFEBBC23C2B1E2"
 				"7D7B34CF5145F971"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{moni.quest.75B6A5541A4D6E49.description1}"]
 			id: "75B6A5541A4D6E49"
 			tasks: [{
@@ -474,6 +494,7 @@
 				"75B6A5541A4D6E49"
 				"79197A2CD8E435B2"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.186031BE152824C7.description1}"
 				""
@@ -495,6 +516,7 @@
 				"50E12E97AC174194"
 				"6728FB92FD3A2084"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.07AFEBBC23C2B1E2.description1}"
 				""
@@ -552,7 +574,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["68CA2F751276F219"]
+			dependencies: [
+				"68CA2F751276F219"
+				"27A80F018F59EF1E"
+			]
 			description: [
 				"{moni.quest.33DEFDF888BEBE67.description1}"
 				""
@@ -570,7 +595,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["33DEFDF888BEBE67"]
+			dependencies: [
+				"33DEFDF888BEBE67"
+				"7DB174443D7FAFA0"
+			]
 			description: [
 				"{moni.quest.03EA9B7B09B88244.description1}"
 				""
@@ -588,7 +616,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["03EA9B7B09B88244"]
+			dependencies: [
+				"03EA9B7B09B88244"
+				"6DAB13A7BDECE94E"
+			]
 			description: ["{moni.quest.0EAD0ACBDD153198.description1}"]
 			id: "0EAD0ACBDD153198"
 			tasks: [{
@@ -615,7 +646,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["79DAB629275B7806"]
+			dependencies: [
+				"79DAB629275B7806"
+				"6ABD83B58FADD4DF"
+			]
 			description: [
 				"{moni.quest.2E269D0B496C380C.description1}"
 				""
@@ -633,7 +667,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["2E269D0B496C380C"]
+			dependencies: [
+				"2E269D0B496C380C"
+				"738A141D31AD7CE3"
+			]
 			description: [
 				"{moni.quest.0F048CED8D4C6A43.description1}"
 				""
@@ -649,7 +686,11 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["2D10F2E538486624"]
+			dependencies: [
+				"2D10F2E538486624"
+				"76BAC72CC89F390E"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{moni.quest.1405D08C6A87B3BB.description1}"]
 			icon: "gtceu:plasma_large_turbine"
 			id: "1405D08C6A87B3BB"
@@ -683,6 +724,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["1A30472430354F1E"]
 			description: ["{moni.quest.34F0E33D33EB82E2.description1}"]
 			id: "34F0E33D33EB82E2"
 			tasks: [{
@@ -694,6 +736,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["1A30472430354F1E"]
 			description: [
 				"{moni.quest.685330660E88E827.description1}"
 				""
@@ -709,7 +752,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["685330660E88E827"]
+			dependencies: [
+				"685330660E88E827"
+				"5C4E189A3E401566"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.63B27CA5BB60B740.description1}"
 				""
@@ -725,7 +772,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["63B27CA5BB60B740"]
+			dependencies: [
+				"63B27CA5BB60B740"
+				"15E34DEC491FAB81"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"[\"\",{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.6974AA409CC355E6.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7641AE777370BE1A\"}},{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description3\"}]"
 				""
@@ -743,7 +794,11 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["7976402E2E5FD625"]
+			dependencies: [
+				"7976402E2E5FD625"
+				"15E34DEC491FAB81"
+			]
+			dependency_requirement: "one_completed"
 			description: ["[\"\",{\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description2\"},{\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description3\"},{\"color\":\"gold\",\"underlined\":\"true\",\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"15A5B4C632836306\"}},{\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description5\"}]"]
 			id: "1B04AA7D9AEB2CFA"
 			tasks: [{
@@ -755,7 +810,11 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["34876F54406B6A04"]
+			dependencies: [
+				"34876F54406B6A04"
+				"5C4E189A3E401566"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.7976402E2E5FD625.description1}"
 				""
@@ -771,7 +830,11 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["34F0E33D33EB82E2"]
+			dependencies: [
+				"34F0E33D33EB82E2"
+				"5C4E189A3E401566"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{moni.quest.2BCE3E3E0B8180F7.description1}"]
 			id: "2BCE3E3E0B8180F7"
 			tasks: [{
@@ -783,7 +846,11 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["2BCE3E3E0B8180F7"]
+			dependencies: [
+				"2BCE3E3E0B8180F7"
+				"15E34DEC491FAB81"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"[\"\",{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description2\"},{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description3\"},{\"color\":\"blue\",\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description4\"},{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description5\"},{\"color\":\"gold\",\"underlined\":\"true\",\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D72B3FF808CE13C\"}},{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description7\"}]"
 				""
@@ -911,7 +978,7 @@
 		{
 			dependencies: [
 				"0F048CED8D4C6A43"
-				"738A141D31AD7CE3"
+				"61301FBD825F8280"
 			]
 			description: [
 				"{moni.quest.22DC32C2B67EFD25.description1}"
