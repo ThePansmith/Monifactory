@@ -51,10 +51,10 @@
     "block.ad_astra.raw_ostrum_block": "粗铅块",
     "item.ad_astra.desh_engine": "信素火箭引擎",
     "item.ad_astra.ostrum_engine": "高速钢-S火箭引擎",
-    "item.ad_astra.calorite_engine": "三钛合金火箭引擎",
+    "item.ad_astra.calorite_engine": "寒触合金引擎",
     "item.ad_astra.desh_tank": "信素燃料储罐",
     "item.ad_astra.ostrum_tank": "高速钢-S燃料储罐",
-    "item.ad_astra.calorite_tank": "三钛合金储罐",
+    "item.ad_astra.calorite_tank": "寒触合金储罐",
     "info.ad_astra.oxygen_loader": "使用格雷科技的氧气来填充太空服和气罐。",
     "item.ad_astra.steel_engine": "黑钢火箭引擎",
     "item.ad_astra.steel_tank": "黑钢燃料储罐"
