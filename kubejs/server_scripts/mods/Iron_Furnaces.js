@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     furnaces.forEach(([furnace, mat, base]) => {
         event.shaped(Item.of(`ironfurnaces:${furnace}`), [
             "AAA",
-            "BAB",
+            "ABA",
             "AAA"
         ], {
             A: mat,

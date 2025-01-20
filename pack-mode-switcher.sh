@@ -70,6 +70,7 @@ case $MODE in
 
   E|e|expert|Expert)
 
+    cp -rf "$HARDMODE_CFG/." ${TARGET}
     cp -rf "$EXPERT_CFG/." ${TARGET}
 
     if [ -f "server.properties" ]; then

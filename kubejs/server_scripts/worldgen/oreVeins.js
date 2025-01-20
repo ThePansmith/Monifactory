@@ -264,26 +264,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("mars/nickel", vein => {
-        vein.weight(40)
-        vein.clusterSize(30)
-        vein.layer("mars")
-        vein.dimensions("ad_astra:mars")
-        vein.heightRangeUniform(10, 80)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Nickel).size(1, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Garnierite).size(1, 8))
-                .layer(l => l.weight(2).mat(GTMaterials.Pentlandite).size(1, 5))
-                .layer(l => l.weight(2).mat(GTMaterials.Cobaltite).size(1, 16))
-            )
-        )
-        vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Garnierite)
-            .placement("above")
-        )
-    })
-
     event.add("mars/rare_earth_metal", vein => {
         vein.weight(40)
         vein.clusterSize(30)
@@ -556,6 +536,45 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
+    event.add("venus/nickel", vein => {
+        vein.weight(40)
+        vein.clusterSize(30)
+        vein.layer("venus")
+        vein.dimensions("ad_astra:venus")
+        vein.heightRangeUniform(10, 80)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.Nickel).size(1, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.Garnierite).size(1, 8))
+                .layer(l => l.weight(2).mat(GTMaterials.Pentlandite).size(1, 5))
+                .layer(l => l.weight(2).mat(GTMaterials.Cobaltite).size(1, 16))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Garnierite)
+            .placement("above")
+        )
+    })
+
+    event.add("venus/dilithium", vein => {
+        vein.weight(40)
+        vein.clusterSize(50)
+        vein.layer("venus")
+        vein.dimensions("ad_astra:venus")
+        vein.heightRangeUniform(30, 70)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(5).mat(GTMaterials.get('dilithium')).size(2, 4))
+                .layer(l => l.weight(3).mat(GTMaterials.Lepidolite).size(1, 1))
+                .layer(l => l.weight(1).mat(GTMaterials.Spodumene).size(1, 2))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get('dilithium'))
+            .placement("above")
+        )
+    })
+
     // Mercury veins
     event.add("mercury/mercury", vein => {
         vein.weight(100)
@@ -691,6 +710,24 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
+    event.add("mercury/thorium", vein => {
+        vein.weight(30)
+        vein.clusterSize(50)
+        vein.layer("mercury")
+        vein.dimensions("ad_astra:mercury")
+        vein.heightRangeUniform(-60, -30)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(4).mat(GTMaterials.Thorium).size(2, 4))
+                .layer(l => l.weight(1).mat(GTMaterials.Plutonium239).size(1, 1))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.Thorium)
+            .placement("above")
+        )
+    })
+
     // Glacio Veins
     event.add("glacio/oilsands", vein => {
         vein.weight(20)
@@ -712,7 +749,7 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("glacio/electrotine", vein => {
         vein.weight(40)
-        vein.clusterSize(40)
+        vein.clusterSize(30)
         vein.layer("glacio")
         vein.dimensions("ad_astra:glacio")
         vein.heightRangeUniform(5, 45)
@@ -731,7 +768,7 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("glacio/osmiridium", vein => {
         vein.weight(30)
-        vein.clusterSize(60)
+        vein.clusterSize(50)
         vein.layer("glacio")
         vein.dimensions("ad_astra:glacio")
         vein.heightRangeUniform(10, 90)
@@ -769,9 +806,9 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     // Glacio Deepslate Veins
-    event.add("glacio/lapis", vein => {
+    event.add("glacio/sodalite", vein => {
         vein.weight(40)
-        vein.clusterSize(70)
+        vein.clusterSize(100)
         vein.layer("glacio_deepslate")
         vein.dimensions("ad_astra:glacio")
         vein.heightRangeUniform(-60, 10)
@@ -781,7 +818,7 @@ GTCEuServerEvents.oreVeins(event => {
             .withBlock(GTMaterials.Lazurite, 1, -60, -10)
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Lapis)
+            .surfaceRock(GTMaterials.Sodalite)
             .placement("above")
         )
     })
@@ -805,38 +842,21 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
+    var naqMaterial = !isHardMode ? GTMaterials.Naquadah : GTMaterials.get('snowchestite')
     event.add("glacio/naquadah", vein => {
-        vein.weight(30)
-        vein.clusterSize(70)
-        vein.layer("glacio_deepslate")
-        vein.dimensions("ad_astra:glacio")
-        vein.heightRangeUniform(-45, 10)
-        vein.cuboidVeinGenerator(generator => generator
-            .top(b => b.mat(GTMaterials.Naquadah).size(2))
-            .middle(b => b.mat(GTMaterials.Naquadah).size(3))
-            .bottom(b => b.mat(GTMaterials.Naquadah).size(2))
-            .spread(b => b.mat(GTMaterials.get('kaemanite')))
-        )
-        vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Naquadah)
-            .placement("above")
-        )
-    })
-
-    event.add("glacio/thorium", vein => {
         vein.weight(30)
         vein.clusterSize(60)
         vein.layer("glacio_deepslate")
         vein.dimensions("ad_astra:glacio")
-        vein.heightRangeUniform(-60, -30)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(3).mat(GTMaterials.Thorium).size(2, 4))
-                .layer(l => l.weight(1).mat(GTMaterials.Plutonium239).size(1, 1))
-            )
+        vein.heightRangeUniform(-45, 10)
+        vein.cuboidVeinGenerator(generator => generator
+            .top(b => b.mat(naqMaterial).size(2))
+            .middle(b => b.mat(naqMaterial).size(3))
+            .bottom(b => b.mat(naqMaterial).size(2))
+            .spread(b => b.mat(GTMaterials.get('kaemanite')))
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Thorium)
+            .surfaceRock(naqMaterial)
             .placement("above")
         )
     })
@@ -861,7 +881,7 @@ GTCEuServerEvents.oreVeins(event => {
 
     // Increase vein density
     event.modifyAll((id, vein) => {
-        vein.density(0.5)
+        vein.density(Math.sqrt(vein.density()))
         vein.discardChanceOnAirExposure(0.3)
     })
 })

@@ -12,13 +12,12 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'gtceu:ender_fluid_link_cover' })
     event.remove({ id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore' })
     event.remove({ id: 'gtceu:mixer/rhodium_plated_palladium' })
-    event.remove({ id: /gtceu:cutter\/cut_quartz_into_slab.*/ });
 
     //FIXME will get fixed
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__fireclay" })
 
     //Thermal
-    event.remove({ output: ['thermal:dynamo_stirling', 'thermal:dynamo_gourmand', 'thermal:dynamo_lapidary', 'thermal:dynamo_disenchantment', 'systeams:numismatic_boiler', 'systeams:stirling_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler', 'thermal:constantan_coin'] })
+    event.remove({ output: ['thermal:dynamo_stirling', 'thermal:dynamo_lapidary', 'thermal:dynamo_disenchantment', 'systeams:numismatic_boiler', 'systeams:stirling_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler', 'thermal:constantan_coin'] })
     event.remove({ id: /thermal:parts.*_gear/ })
     event.remove({ output: 'thermal:rubber' })
     event.remove({ output: 'thermal:cured_rubber' })
@@ -45,7 +44,6 @@ ServerEvents.recipes(event => {
 
     // Misc broken recipes
     event.remove({ id: 'minecraft:netherite_spikes_smithing' })
-    event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/copper'] })
 
     // Angel Ring
     event.remove({ id: 'better_angel_ring:angel_ring' })

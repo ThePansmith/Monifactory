@@ -103,19 +103,6 @@ ServerEvents.recipes(event => {
         B: 'functionalstorage:compacting_drawer'
     }).id('functionalstorage:compacting_framed_drawer')
 
-
-    // Collector Upgrade
-    event.shaped('functionalstorage:collector_upgrade', [
-        'SRS',
-        'SVS',
-        'SRS'
-    ], {
-        S: '#forge:stone',
-        V: 'enderio:vacuum_chest',
-        R: 'minecraft:redstone'
-    }).id('functionalstorage:collector_upgrade')
-
-
     // Storage Upgrades
     let upgradeTiers = [
         ['copper', 'lead', 'bronze'],

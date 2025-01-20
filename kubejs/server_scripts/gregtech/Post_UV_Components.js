@@ -9,11 +9,6 @@ ServerEvents.recipes(event => {
         ['uev', 'omnium', 'holmium'],
         ['uiv', 'holmium', 'monium'],
     ]
-    // no MAX tier laserhatch :1984:
-    const laserhatch = [
-        ['uev', 'activated_netherite', '1966080'],
-        ['uiv', 'holmium', '3932160'],
-    ]
 
     converter.forEach(([tier, mat1, mat2, eut]) => {
         event.remove({ output: [`gtceu:${tier}_1a_energy_converter`, `gtceu:${tier}_4a_energy_converter`, `gtceu:${tier}_8a_energy_converter`, `gtceu:${tier}_16a_energy_converter`] })
@@ -124,75 +119,74 @@ ServerEvents.recipes(event => {
         })
     })
 
-    laserhatch.forEach(([tier, mat1, eut]) => {
-        event.recipes.gtceu.assembler(`${tier}_256a_laser_target_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, 'gtceu:diamond_lens', `gtceu:${tier}_emitter`, `gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
-            .itemOutputs(`gtceu:${tier}_256a_laser_target_hatch`)
-            .circuit(1)
-            .duration(400)
-            .EUt(eut)
+    // UHV hulls have missing crafting table recipe
+    event.shaped('gtceu:uhv_machine_hull', [
+        'PMP',
+        'WCW'
+    ], {
+        P: 'gtceu:polybenzimidazole_plate',
+        M: 'gtceu:neutronium_plate',
+        W: 'gtceu:europium_single_cable',
+        C: 'gtceu:uhv_machine_casing'
+    }).id('gtceu:shaped/hull_uhv')
 
-        event.recipes.gtceu.assembler(`${tier}_256a_laser_source_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, 'gtceu:diamond_lens', `gtceu:${tier}_sensor`, `gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
-            .itemOutputs(`gtceu:${tier}_256a_laser_source_hatch`)
-            .circuit(1)
-            .duration(400)
-            .EUt(eut)
+    const hullMaterials = [
+        {tier: "uev", material: "omnium", wire: "omnium_single_cable", plastic: "polyethyl_cyanoacrylate"},
+        {tier: "uiv", material: "infinity", wire: "holmium_single_wire", plastic: "polyethyl_cyanoacrylate"},
+        {tier: "max", material: "monium", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate"},
+    ]
 
-        event.recipes.gtceu.assembler(`${tier}_1024a_laser_target_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, '2x gtceu:diamond_lens', `2x gtceu:${tier}_emitter`, `2x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_single_wire`)
-            .itemOutputs(`gtceu:${tier}_1024a_laser_target_hatch`)
-            .circuit(2)
-            .duration(400)
-            .EUt(eut)
+    hullMaterials.forEach((value) => {
+        event.shaped(`gtceu:${value.tier}_machine_casing`, [
+            'PPP',
+            'PWP',
+            'PPP'
+        ], {
+            P: `gtceu:${value.material}_plate`,
+            W: '#forge:tools/wrenches'
+        }).id(`shaped/casing_${value.tier}`)
 
-        event.recipes.gtceu.assembler(`${tier}_1024a_laser_source_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, '2x gtceu:diamond_lens', `2x gtceu:${tier}_sensor`, `2x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_double_wire`)
-            .itemOutputs(`gtceu:${tier}_1024a_laser_source_hatch`)
-            .circuit(2)
-            .duration(400)
-            .EUt(eut)
+        event.recipes.gtceu.assembler(`casing_${value.tier}`)
+            .itemInputs(`8x gtceu:${value.material}_plate`)
+            .itemOutputs(`gtceu:${value.tier}_machine_casing`)
+            .circuit(8)
+            .duration(50)
+            .EUt(GTValues.VHA[GTValues.LV])
 
-        event.recipes.gtceu.assembler(`${tier}_4096a_laser_target_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, '4x gtceu:diamond_lens', `4x gtceu:${tier}_emitter`, `4x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_quadruple_wire`)
-            .itemOutputs(`gtceu:${tier}_4096a_laser_target_hatch`)
-            .circuit(3)
-            .duration(400)
-            .EUt(eut)
-
-        event.recipes.gtceu.assembler(`${tier}_4096a_laser_source_hatch`)
-            .itemInputs(`gtceu:${tier}_machine_hull`, '4x gtceu:diamond_lens', `4x gtceu:${tier}_sensor`, `4x gtceu:${tier}_electric_pump`, `4x gtceu:${mat1}_quadruple_wire`)
-            .itemOutputs(`gtceu:${tier}_4096a_laser_source_hatch`)
-            .circuit(3)
-            .duration(400)
-            .EUt(eut)
+        event.shaped(`gtceu:${value.tier}_machine_hull`, [
+            'PMP',
+            'WCW'
+        ], {
+            P: `gtceu:${value.plastic}_plate`,
+            M: `gtceu:${value.material}_plate`,
+            W: `gtceu:${value.wire}`,
+            C: `gtceu:${value.tier}_machine_casing`
+        }).id(`shaped/hull_${value.tier}`)
+    
+        event.recipes.gtceu.assembler(`hull_${value.tier}`)
+            .itemInputs(`gtceu:${value.tier}_machine_casing`, `2x gtceu:${value.wire}`, `2x gtceu:${value.plastic}_plate`)
+            .itemOutputs(`gtceu:${value.tier}_machine_hull`)
+            .duration(50)
+            .EUt(GTValues.VHA[GTValues.LV])
     })
 
-    event.recipes.gtceu.assembler('uev_hull')
-        .itemInputs('gtceu:uev_machine_casing', '2x gtceu:omnium_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
-        .itemOutputs('gtceu:uev_machine_hull')
-        .duration(50)
-        .EUt(16)
+    const rotorHolderMaterials = [
+        {tier:"uhv", large_gear:"actinium", small_gear:"neutronium"},
+        {tier:"uev", large_gear:"sculk_bioalloy", small_gear:"omnium"},
+        {tier:"uiv", large_gear:"eltz", small_gear:"infinity"}
+    ]
 
-    event.recipes.gtceu.assembler('uev_casing')
-        .itemInputs('8x gtceu:omnium_plate')
-        .itemOutputs('gtceu:uev_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('uiv_hull')
-        .itemInputs('gtceu:uiv_machine_casing', '2x gtceu:activated_netherite_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
-        .itemOutputs('gtceu:uiv_machine_hull')
-        .duration(50)
-        .EUt(16)
-
-    event.recipes.gtceu.assembler('uiv_casing')
-        .itemInputs('8x gtceu:infinity_plate')
-        .itemOutputs('gtceu:uiv_machine_casing')
-        .circuit(8)
-        .duration(50)
-        .EUt(16)
+    rotorHolderMaterials.forEach((value) => {
+        event.shaped(`gtceu:${value.tier}_rotor_holder`, [
+            'SLS',
+            'LHL',
+            'SLS'
+        ], {
+            S: `gtceu:small_${value.small_gear}_gear`,
+            L: `gtceu:${value.large_gear}_gear`,
+            H: `gtceu:${value.tier}_machine_hull`
+        }).id(`shaped/rotor_holder_${value.tier}`)
+    })
 
     // Motors
     event.recipes.gtceu.assembly_line('uhv_motor')

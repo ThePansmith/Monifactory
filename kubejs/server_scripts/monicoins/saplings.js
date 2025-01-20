@@ -18,9 +18,9 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
         event.shaped(Item.of('minecraft:acacia_sapling', 64), [
-            'AA ',
-            '  A',
-            '   '
+            'A  ',
+            ' A ',
+            '  A'
         ], {
             A: 'kubejs:moni_penny'
         }).noMirror().noShrink()

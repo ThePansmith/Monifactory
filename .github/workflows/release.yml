@@ -53,8 +53,14 @@ jobs:
   pre-build:
     uses: ./.github/workflows/get_version_info.yml
 
-  build:
+  replace_version:
     needs: pre-build
+    uses: ./.github/workflows/replace_version.yml
+    with:
+      version: ${{ needs.pre-build.outputs.version }}
+
+  build:
+    needs: [replace_version, pre-build]
     if: inputs.skip_build != true
     permissions:
       id-token: write

@@ -1,0 +1,212 @@
+{
+	"carvers": {
+		"air": [
+			"minecraft:cave",
+			"minecraft:cave_extra_underground",
+			"minecraft:canyon"
+		]
+	},
+	"downfall": 0.0,
+	"effects": {
+		"fog_color": 12638463,
+		"mood_sound": {
+			"block_search_extent": 8,
+			"offset": 2.0,
+			"sound": "minecraft:ambient.cave",
+			"tick_delay": 6000
+		},
+		"music": {
+			"max_delay": 24000,
+			"min_delay": 12000,
+			"replace_current_music": false,
+			"sound": "minecraft:music.overworld.desert"
+		},
+		"sky_color": 6269917,
+		"water_color": 4445678,
+		"water_fog_color": 270131,
+		"foliage_color": 11123575,
+		"grass_color": 16765810
+	},
+	"features": [
+		[
+			"wythers:terrain/local/replace_sandstone_to_smooth_sandstone",
+			"wythers:terrain/extended/replace_gravel_to_sand",
+			"wythers:terrain/extended/disk_sand",
+			"wythers:terrain/local/danakil_mud",
+			"wythers:terrain/local/danakil_terracotta",
+			"wythers:terrain/local/danakil_red",
+			"wythers:terrain/local/danakil_orange",
+			"wythers:terrain/local/danakil_yellow",
+			"wythers:terrain/local/danakil_yellow_2",
+			"wythers:terrain/local/danakil_water",
+			"wythers:terrain/local/oasis_grass",
+			"wythers:terrain/local/oasis_moss",
+			"wythers:terrain/local/oasis_water",
+			"wythers:terrain/local/oasis_clay"
+		],
+		[
+			"minecraft:lake_lava_underground",
+			"wythers:terrain/feature/lake_salt",
+			"wythers:terrain/extended/base_mangrove_swamp_arid",
+			"wythers:terrain/extended/base_mangrove_swamp_sudd"
+		],
+		[
+			"minecraft:amethyst_geode"
+		],
+		[
+			"minecraft:fossil_upper",
+			"minecraft:fossil_lower",
+			"minecraft:monster_room",
+			"minecraft:monster_room_deep",
+			"wythers:terrain/extended/sandify_rooted_dirt"
+		],
+		[
+			"minecraft:desert_well"
+		],
+		[],
+		[
+			"minecraft:ore_dirt",
+			"minecraft:ore_gravel",
+			"minecraft:ore_granite_upper",
+			"minecraft:ore_granite_lower",
+			"minecraft:ore_diorite_upper",
+			"minecraft:ore_diorite_lower",
+			"minecraft:ore_andesite_upper",
+			"minecraft:ore_andesite_lower",
+			"minecraft:ore_tuff",
+			"minecraft:ore_coal_upper",
+			"minecraft:ore_coal_lower",
+			"minecraft:ore_iron_upper",
+			"minecraft:ore_iron_middle",
+			"minecraft:ore_iron_small",
+			"minecraft:ore_gold",
+			"minecraft:ore_gold_lower",
+			"minecraft:ore_redstone",
+			"minecraft:ore_redstone_lower",
+			"minecraft:ore_diamond",
+			"minecraft:ore_diamond_large",
+			"minecraft:ore_diamond_buried",
+			"minecraft:ore_lapis",
+			"minecraft:ore_lapis_buried",
+			"minecraft:ore_copper",
+			"minecraft:underwater_magma",
+			"minecraft:disk_sand",
+			"minecraft:disk_clay",
+			"minecraft:disk_gravel"
+		],
+		[],
+		[
+			"minecraft:spring_water",
+			"minecraft:spring_lava"
+		],
+		[
+			"wythers:vegetation/local/trees/oasis_palms",
+			"wythers:vegetation/local/patch/oasis_vegetation_moss",
+			"minecraft:glow_lichen",
+			"wythers:terrain/feature/danakil_desert_mounds",
+			"minecraft:flower_default",
+			"wythers:vegetation/local/patch/grass_desert",
+			"wythers:vegetation/local/patch/grass_standard",
+			"minecraft:patch_dead_bush_2",
+			"minecraft:brown_mushroom_normal",
+			"minecraft:red_mushroom_normal",
+			"wythers:vegetation/local/patch/sugar_cane_desert",
+			"wythers:vegetation/local/other/cocoanuts",
+			"minecraft:patch_cactus_desert"
+		],
+		[
+			"minecraft:freeze_top_layer",
+			"wythers:decor/dense_steam",
+			"wythers:decor/desert"
+		]
+	],
+	"has_precipitation": false,
+	"spawn_costs": { },
+	"spawners": {
+		"ambient": [
+			{
+				"type": "minecraft:bat",
+				"maxCount": 8,
+				"minCount": 8,
+				"weight": 10
+			}
+		],
+		"axolotls": [],
+		"creature": [
+			{
+				"type": "minecraft:rabbit",
+				"maxCount": 3,
+				"minCount": 2,
+				"weight": 4
+			}
+		],
+		"misc": [],
+		"monster": [
+			{
+				"type": "minecraft:spider",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:zombie",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 19
+			},
+			{
+				"type": "minecraft:zombie_villager",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 1
+			},
+			{
+				"type": "minecraft:skeleton",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:creeper",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:slime",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 100
+			},
+			{
+				"type": "minecraft:enderman",
+				"maxCount": 4,
+				"minCount": 1,
+				"weight": 10
+			},
+			{
+				"type": "minecraft:witch",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 5
+			},
+			{
+				"type": "minecraft:husk",
+				"maxCount": 4,
+				"minCount": 4,
+				"weight": 80
+			}
+		],
+		"underground_water_creature": [
+			{
+				"type": "minecraft:glow_squid",
+				"maxCount": 6,
+				"minCount": 4,
+				"weight": 10
+			}
+		],
+		"water_ambient": [],
+		"water_creature": []
+	},
+	"temperature": 2.0
+}

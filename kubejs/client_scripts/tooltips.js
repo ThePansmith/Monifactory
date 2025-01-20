@@ -106,6 +106,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced([`gtceu:lv_atomic_reconstructor`, `gtceu:mv_atomic_reconstructor`, `gtceu:hv_atomic_reconstructor`, `gtceu:ev_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.lvev_atomic_reconstructor.desc'))) })
     tooltip.addAdvanced([`gtceu:iv_atomic_reconstructor`, `gtceu:luv_atomic_reconstructor`, `gtceu:zpm_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.ivzpm_atomic_reconstructor.desc'))) })
     tooltip.addAdvanced([`gtceu:uv_atomic_reconstructor`, `gtceu:uhv_atomic_reconstructor`, `gtceu:uev_atomic_reconstructor`, `gtceu:uiv_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.uvuiv_atomic_reconstructor.desc'))) })
+    tooltip.add('gtceu:sterilizing_filter_casing', Text.gray(Text.translatable("gtceu.sterilizing_filter_casing.tooltip")))
 
     tooltip.addAdvanced('gtceu:naquadah_reactor', (item, adv, text) => {
         text.add(1, Text.gray('An reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
@@ -162,11 +163,17 @@ ItemEvents.tooltip(tooltip => {
     // AE2
     tooltip.add('ae2:facade', Text.gray(Text.translatable('ae2.facade.tooltip')));
     tooltip.add('ae2:memory_card', Text.gray(Text.translatable('ae2.memory_card.tooltip')));
-    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip.1')));
-    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip.2')));
+    tooltip.add('betterp2p:advanced_memory_card', Text.gray(Text.translatable('betterp2p.advanced_memory_card.tooltip')));
+    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip')));
 
     // EIO Cap Banks
-    tooltip.add(/^enderio:.*_bank$/, Text.translatable("enderio.cap_bank.tooltip"));
+    tooltip.add(/^enderio:.*_bank$/, Text.red(Text.translatable("enderio.cap_bank.tooltip")));
+
+    // Travellers' Boots
+    tooltip.add(/travellersbootsreloaded/, Text.red(Text.translatable("travellersbootsreloaded.deprecation.tooltip")))
+
+    // Exoskeleton Legs
+    tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.gray(Text.translatable('kubejs.exoskeleton_legs.tooltip')))
 
     // Misc
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray(Text.translatable('kubejs.eternal_catalyst.tooltip')));

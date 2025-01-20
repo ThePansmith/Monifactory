@@ -421,8 +421,6 @@
     "functionalstorage.framed_storage_controller.tooltip": "§7以前はフレーム付きストレージコントローラーと呼ばれていました",
     "ae2.facade.tooltip": "ケーブルアンカーとクラフト",
     "ae2.memory_card.tooltip": "オフハンドに持つと、マルチP2Pに追加の入力を設定できます。",
-    "ae2.creative_fluid_cell.tooltip.1": "クリエイティブタンクのデータを使用して作成することはできません!",
-    "ae2.creative_fluid_cell.tooltip.2": "§7AE2の開発者は、これがアイテムを作ることを可能にするバグを修正しません。",
     "enderio.cap_bank.tooltip": "§4現在、TPSが低下したりしている方は他の電力ストレージを検討してみてください",
     "kubejs.eternal_catalyst.tooltip": "深淵を覗く時...",
     "kubejs.infinity_catalyst.tooltip": "一つが全て、全てが一つ。",

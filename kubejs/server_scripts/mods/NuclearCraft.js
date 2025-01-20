@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
     cansolid('redstone', "minecraft:redstone")
     cansolid('quartz', "gtceu:nether_quartz_dust")
     cansolid('gold', "gtceu:gold_dust")
-    cansolid('glowstone', "minecraft:glowstone")
+    cansolid('glowstone', "minecraft:glowstone_dust")
     cansolid('lapis', "gtceu:lapis_dust")
     cansolid('diamond', "gtceu:diamond_dust")
     canfluid('liquid_helium', "gtceu:helium")

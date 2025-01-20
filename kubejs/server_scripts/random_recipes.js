@@ -584,8 +584,11 @@ ServerEvents.recipes(event => {
     p2p.forEach(type => {
         event.stonecutting(`ae2:${type}_p2p_tunnel`, 'ae2:me_p2p_tunnel')
     })
-    event.stonecutting('mae2:pattern_p2p_tunnel', 'ae2:me_p2p_tunnel')
-    const multi_p2p = ["pattern", "redstone", "fluid", "fe"]
+    const mae2_p2p = ["pattern", "eu"]
+    mae2_p2p.forEach(type => {
+        event.stonecutting(`mae2:${type}_p2p_tunnel`, 'ae2:me_p2p_tunnel')
+    })
+    const multi_p2p = ["pattern", "redstone", "fluid", "fe", "eu"]
     multi_p2p.forEach(type => {
         event.stonecutting(`mae2:${type}_multi_p2p_tunnel`, 'mae2:item_multi_p2p_tunnel')
     })
@@ -697,6 +700,12 @@ ServerEvents.recipes(event => {
         H: "gtceu:iv_machine_hull",
         C: "#gtceu:circuits/iv"
     })
+
+    //Cleanroom Hatch Decomp fix
+    event.replaceOutput({ id: 'gtceu:arc_furnace/arc_cleaning_maintenance_hatch' }, 'gtceu:darmstadtium_ingot', '8x gtceu:tungsten_steel_ingot')
+    event.replaceOutput({ id: 'gtceu:arc_furnace/arc_cleaning_maintenance_hatch' }, 'gtceu:yttrium_barium_cuprate_ingot', '2x gtceu:graphene_ingot')
+    event.replaceOutput({ id: 'gtceu:macerator/macerate_cleaning_maintenance_hatch' }, 'gtceu:darmstadtium_dust', '8x gtceu:tungsten_steel_dust')
+    event.replaceOutput({ id: 'gtceu:macerator/macerate_cleaning_maintenance_hatch' }, 'gtceu:yttrium_barium_cuprate_dust', '2x gtceu:graphene_dust')
 
     //ZPM Field Gen
     event.remove({ id: 'gtceu:assembly_line/field_generator_zpm' })
