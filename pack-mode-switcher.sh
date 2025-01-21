@@ -93,7 +93,7 @@ esac
 
 if [ -t 0 ]; then
   # Interactive stdin
-  printf "\n${GREEN}Complete!${NORMAL}\n"
+  printf "${GREEN}Switched pack mode to $(cat .mode)!${NORMAL}\n"
 else
   # Explicitly signify success
   exit 0
