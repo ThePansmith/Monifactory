@@ -48,11 +48,7 @@ fi
 
 function move_server_properties () {
   # Only copy server.properties if it exists.
-  if [ -f "server.properties" ]; then
-    mv "${TARGET}/server.properties" ./
-  else
-    rm -f "${TARGET}/server.properties"
-  fi
+  mv "$TARGET/server.properties" ./ 2> /dev/null || true
 } 
 
 case $MODE in
