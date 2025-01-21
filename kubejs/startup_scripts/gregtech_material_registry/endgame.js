@@ -74,7 +74,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('shiny')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
         .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
-
     event.create('activated_netherite')
         .ingot()
         .element(GTElements.get("activated_netherite"))
