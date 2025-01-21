@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # Colors
 RED=$(tput setaf 1)
@@ -27,7 +27,9 @@ if [ -z "$1" ]; then
   CURRENT_MODE="$(head .mode)"
   CURRENT_MODE=${CURRENT_MODE:="normal"}
   # Capitalise First Letter (only works in bash 4+)
-  [ "${BASH_VERSINFO:-0}" -ge 4 ] && CURRENT_MODE=${CURRENT_MODE^}
+  if ((BASH_VERSINFO[0] >= 4 )); then
+    CURRENT_MODE=${CURRENT_MODE^}
+  fi
 
   if [ -t 0 ]; then
     # Interactive stdin
