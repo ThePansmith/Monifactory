@@ -46,17 +46,20 @@ else
   MODE="$1"
 fi
 
+function move_server_properties () {
+  # Only copy server.properties if it exists.
+  if [ -f "server.properties" ]; then
+    mv "${TARGET}/server.properties" ./
+  else
+    rm -f "${TARGET}/server.properties"
+  fi
+} 
+
 case $MODE in
     N|n|normal|Normal)
 
-    cp -rf "$NORMAL_CFG/." ${TARGET} 
-
-    # Only copy server.properties if it exists.
-    if [ -f "server.properties" ]; then
-        mv "${TARGET}/server.properties" ./
-    else
-        rm "${TARGET}/server.properties" || true
-    fi
+    cp -rf "$NORMAL_CFG/." ${TARGET}
+    move_server_properties
 
     # Update Mode
     echo normal > .mode
@@ -65,12 +68,7 @@ case $MODE in
   H|h|hardmode|Hardmode)
 
     cp -rf "$HARDMODE_CFG/." ${TARGET}
-
-    if [ -f "server.properties" ]; then
-        mv "${TARGET}/server.properties" ./
-    else
-        rm "${TARGET}/server.properties" || true
-    fi
+    move_server_properties
 
     # Update Mode
     echo hard > .mode
@@ -80,12 +78,7 @@ case $MODE in
 
     cp -rf "$HARDMODE_CFG/." ${TARGET}
     cp -rf "$EXPERT_CFG/." ${TARGET}
-
-    if [ -f "server.properties" ]; then
-        mv "${TARGET}/server.properties" ./
-    else
-        rm "${TARGET}/server.properties" || true
-    fi
+    move_server_properties
 
     # Update Mode
     echo expert > .mode
