@@ -113,7 +113,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('actinium_iron_oxide')
         .dust()
         .color(0xC3D1FF)    //Old actinium color for fun
-        .components('1x actinium', '2x iron', '3x oxygen')
+        .components('1x actinium', '4x iron', '3x oxygen')
 
     event.create('monium')
         .ingot()
