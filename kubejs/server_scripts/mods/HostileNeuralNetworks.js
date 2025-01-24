@@ -1,9 +1,9 @@
 ServerEvents.recipes(event => {
     if (isNormalMode) {
-        //remove dml iems
+        // remove dml iems
         event.remove({ output: ['hostilenetworks:blank_data_model', 'hostilenetworks:deep_learner', 'hostilenetworks:loot_fabricator', 'hostilenetworks:sim_chamber'] })
 
-        //Issue #84
+        // Issue #84
         event.recipes.gtceu.assembler('bones_to_skull')
             .itemInputs('4x minecraft:bone')
             .itemOutputs('minecraft:skeleton_skull')
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
 
         event.replaceInput({ id: 'hostilenetworks:living_matter/nether_to_ender' }, 'minecraft:end_stone', 'minecraft:ender_pearl')
 
-        //PPC
+        // PPC
         event.remove({ output: 'hostilenetworks:prediction_matrix' })
 
         event.recipes.gtceu.alloy_smelter('pulsating_polymer_clay')
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
             .duration(200)
             .EUt(16)
 
-        //IMPOSSIBLE REALM DATA
+        // IMPOSSIBLE REALM DATA
         let predictions = [
             ['overworld', 1],
             ['nether', 2],
@@ -129,13 +129,13 @@ ServerEvents.recipes(event => {
         predictions.forEach(item => {
             event.shaped(
                 Item.of('kubejs:impossible_realm_data', item[1]), [
-                'ABA',
-                'BAB',
-                'ABA'
-            ], {
-                A: `hostilenetworks:${item[0]}_prediction`,
-                B: 'kubejs:solidified_experience'
-            }
+                    'ABA',
+                    'BAB',
+                    'ABA'
+                ], {
+                    A: `hostilenetworks:${item[0]}_prediction`,
+                    B: 'kubejs:solidified_experience'
+                }
             )
         })
 
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(3000)
 
-        //LAIR DATA
+        // LAIR DATA
         let lairs = [
             ['deep_dark', 'overworld', 'deepslate'],
             ['wither_realm', 'nether', 'netherrack'],
@@ -155,13 +155,13 @@ ServerEvents.recipes(event => {
         lairs.forEach(item => {
             event.shaped(
                 `kubejs:${item[0]}_data`, [
-                'ABB',
-                'BBB',
-                'BBB'
-            ], {
-                A: 'kubejs:impossible_realm_data',
-                B: `hostilenetworks:${item[1]}_prediction`
-            }
+                    'ABB',
+                    'BBB',
+                    'BBB'
+                ], {
+                    A: 'kubejs:impossible_realm_data',
+                    B: `hostilenetworks:${item[1]}_prediction`
+                }
             )
             event.recipes.gtceu.canner(`canning_${item[0]}_data`)
                 .itemInputs('1x kubejs:impossible_realm_data', `6x hostilenetworks:${item[1]}_prediction`)

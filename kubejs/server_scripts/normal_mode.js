@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
             H: "gtceu:hv_machine_hull"
         }).id('gtceu:shaped/distillation_tower')
 
-        //GT Steam Age
+        // GT Steam Age
         gtMachines.forEach(machine => {
             event.remove({ output: [`gtceu:lp_steam_${machine}`, `gtceu:hp_steam_${machine}`] })
         })
@@ -181,10 +181,10 @@ ServerEvents.recipes(event => {
                 'R R',
                 'CPC'
             ], {
-            C: 'gtceu:tin_single_cable',
-            R: 'gtceu:magnetic_iron_rod',
-            P: 'gtceu:iron_plate'
-        }
+                C: 'gtceu:tin_single_cable',
+                R: 'gtceu:magnetic_iron_rod',
+                P: 'gtceu:iron_plate'
+            }
         )
     }
 })

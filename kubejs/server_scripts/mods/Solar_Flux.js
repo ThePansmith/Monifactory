@@ -44,25 +44,25 @@ ServerEvents.recipes(event => {
     ]
 
     solarCrafting.forEach((ingredients, index) => {
-        //Account for the first recipe, which doesn't use a photovoltaic cell
+        // Account for the first recipe, which doesn't use a photovoltaic cell
         const photovoltaic = index == 0? 
-             'gtceu:tempered_glass'
+            'gtceu:tempered_glass'
             :`solarflux:photovoltaic_cell_${index}`
         event.shaped(
             `2x solarflux:sp_${index + 2}`, [
-            'SCS',
-            'WBW',
-            'PEP'
-        ], {
-            S: `solarflux:sp_${index + 1}`,
-            C: photovoltaic,
-            W: ingredients[0],
-            B: ingredients[1],
-            P: ingredients[2],
-            E: ingredients[3]
-        }
+                'SCS',
+                'WBW',
+                'PEP'
+            ], {
+                S: `solarflux:sp_${index + 1}`,
+                C: photovoltaic,
+                W: ingredients[0],
+                B: ingredients[1],
+                P: ingredients[2],
+                E: ingredients[3]
+            }
         )
-        //Account for when the same ingredients are used twice
+        // Account for when the same ingredients are used twice
         let assemblerInputs;
         if (ingredients[0] == ingredients[2]) {
             assemblerInputs = [
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         .itemInputs('2x solarflux:sp_7', '3x solarflux:photovoltaic_cell_6', '2x gtceu:osmiridium_plate', 'laserio:energy_overclocker_card_tier_8')
         .inputFluids('gtceu:enderium 1296')
         .itemOutputs('2x solarflux:sp_8')
-    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('solarflux:sp_7').EUt(480).duration(1200))
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('solarflux:sp_7').EUt(480).duration(1200))
         .duration(4800)
         .EUt(30720)
 
@@ -221,20 +221,20 @@ ServerEvents.recipes(event => {
             solarFluxPanel = `solarflux:sp_${index + 4}`;
         } else {
             switch (index) {
-                case 5:
-                    solarFluxPanel = 'solarflux:sp_custom_bathyal'
-                    break;
-                case 6:
-                    solarFluxPanel = 'solarflux:sp_custom_abyssal'
-                    break;
-                case 7:
-                    solarFluxPanel = 'solarflux:sp_custom_hadal'
-                    break;
-                case 8:
-                    solarFluxPanel = 'solarflux:sp_custom_neutronium'
-                    break;
-                default:
-                    break;
+            case 5:
+                solarFluxPanel = 'solarflux:sp_custom_bathyal'
+                break;
+            case 6:
+                solarFluxPanel = 'solarflux:sp_custom_abyssal'
+                break;
+            case 7:
+                solarFluxPanel = 'solarflux:sp_custom_hadal'
+                break;
+            case 8:
+                solarFluxPanel = 'solarflux:sp_custom_neutronium'
+                break;
+            default:
+                break;
             }
         }
         event.recipes.gtceu.atomic_reconstruction(`gtceu:solar_panel_${tiername}_conversion`)

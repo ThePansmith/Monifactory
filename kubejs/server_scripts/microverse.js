@@ -377,7 +377,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:iv_field_generator',
             'kubejs:fluxed_thruster',
             'kubejs:dark_soularium_thruster')
-    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('ae2:quantum_ring').EUt(480).duration(1200))
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('ae2:quantum_ring').EUt(480).duration(1200))
         .itemOutputs('kubejs:warp_engine')
         .inputFluids('gtceu:soldering_alloy 1152')
         .duration(1800)

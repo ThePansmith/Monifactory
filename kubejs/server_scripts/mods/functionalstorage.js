@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    //Remove bugged Oak Drawer recipes
+    // Remove bugged Oak Drawer recipes
     event.remove({ id: /functionalstorage:oak_drawer_alternate/ })
 
 
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
     }).id('functionalstorage:ender_drawer')
 
 
-    //Storage Controller
+    // Storage Controller
     event.remove({ id: "functionalstorage:storage_controller" })
     const controllerCore = ["#forge:storage_blocks/diamond", "#forge:storage_blocks/emerald"]
     controllerCore.forEach(coreBlock => {
@@ -84,13 +84,13 @@ ServerEvents.recipes(event => {
     miscframing.forEach(Block => {
         event.shaped(
             `functionalstorage:framed_${Block}`, [
-            'III',
-            'IBI',
-            'III'
-        ], {
-            I: 'minecraft:iron_nugget',
-            B: `functionalstorage:${Block}`
-        }).id(`functionalstorage:framed_${Block}`)
+                'III',
+                'IBI',
+                'III'
+            ], {
+                I: 'minecraft:iron_nugget',
+                B: `functionalstorage:${Block}`
+            }).id(`functionalstorage:framed_${Block}`)
     })
 
     // Framed Compacting Drawer has a nonstandard ID for some reason
@@ -114,14 +114,14 @@ ServerEvents.recipes(event => {
         event.remove({ id: `functionalstorage:${tier[0]}_upgrade` })
         event.shaped(
             `2x functionalstorage:${tier[0]}_upgrade`, [
-            'PUP',
-            'PGP',
-            'PUP'
-        ], {
-            P: `#forge:plates/${tier[2]}`,
-            G: `#forge:double_plates/${tier[1]}`,
-            U: tierIndex == 0 ? '#functionalstorage:drawer' : (`functionalstorage:${upgradeTiers[tierIndex - 1][0]}_upgrade`),
-        }).id(`functionalstorage:${tier[2]}_upgrade`)
+                'PUP',
+                'PGP',
+                'PUP'
+            ], {
+                P: `#forge:plates/${tier[2]}`,
+                G: `#forge:double_plates/${tier[1]}`,
+                U: tierIndex == 0 ? '#functionalstorage:drawer' : (`functionalstorage:${upgradeTiers[tierIndex - 1][0]}_upgrade`),
+            }).id(`functionalstorage:${tier[2]}_upgrade`)
     })
 
     // Custom coin compacting recipes

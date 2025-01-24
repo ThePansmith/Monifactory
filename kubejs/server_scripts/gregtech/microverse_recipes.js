@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
 // Advanced Microverse Projector Recipes
 ServerEvents.recipes(event => {
 
-    //Post-Tank
+    // Post-Tank
     event.recipes.gtceu.advanced_microverse('kubejs:t_three_third')
         .itemInputs('kubejs:microminer_t3', '16x kubejs:quantum_flux', '32x kubejs:wither_realm_data')
         .itemOutputs(
@@ -672,14 +672,14 @@ ServerEvents.recipes(event => {
     projector.forEach(projector => {
         event.shaped(
             `gtceu:${projector[0]}`, [
-            'CMC',
-            'MAM',
-            'CMC'
-        ], {
-            C: projector[1],
-            M: 'kubejs:microverse_casing',
-            A: 'gtceu:computer_monitor_cover'
-        }).id(`kubejs:${projector[0]}`)
+                'CMC',
+                'MAM',
+                'CMC'
+            ], {
+                C: projector[1],
+                M: 'kubejs:microverse_casing',
+                A: 'gtceu:computer_monitor_cover'
+            }).id(`kubejs:${projector[0]}`)
     })
 
     event.recipes.extendedcrafting.shaped_table('gtceu:hyperbolic_microverse_projector', [

@@ -5,73 +5,73 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:network/blocks/controller' })
     event.shaped(
         Item.of('ae2:controller'), [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'gtceu:dark_steel_plate',
-        B: 'gtceu:fluix_plate',
-        C: 'ae2:energy_acceptor'
-    }).id('kubejs:ae2/controller')
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'gtceu:dark_steel_plate',
+            B: 'gtceu:fluix_plate',
+            C: 'ae2:energy_acceptor'
+        }).id('kubejs:ae2/controller')
 
     // Energy Acceptor
     event.remove({ id: 'ae2:network/blocks/energy_energy_acceptor' })
     event.shaped(
         Item.of('ae2:energy_acceptor'), [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'gtceu:electrical_steel_plate',
-        B: 'gtceu:fluix_plate',
-        C: 'gtceu:lv_machine_hull'
-    }).id('kubejs:ae2/energy_acceptor')
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'gtceu:electrical_steel_plate',
+            B: 'gtceu:fluix_plate',
+            C: 'gtceu:lv_machine_hull'
+        }).id('kubejs:ae2/energy_acceptor')
 
     // ME Chest
     event.remove({ id: 'ae2:network/blocks/storage_chest' })
     event.shaped(
         Item.of('ae2:chest'), [
-        'ABA',
-        'CDE',
-        'FGF'
-    ], {
-        A: 'ae2:quartz_glass',
-        B: '#ae2:illuminated_panel',
-        C: 'gtceu:certus_quartz_plate',
-        D: 'gtceu:aluminium_crate',
-        E: 'gtceu:fluix_plate',
-        F: 'gtceu:dark_steel_block',
-        G: 'gtceu:nether_quartz_plate'
-    }).id('kubejs:ae2/chest')
+            'ABA',
+            'CDE',
+            'FGF'
+        ], {
+            A: 'ae2:quartz_glass',
+            B: '#ae2:illuminated_panel',
+            C: 'gtceu:certus_quartz_plate',
+            D: 'gtceu:aluminium_crate',
+            E: 'gtceu:fluix_plate',
+            F: 'gtceu:dark_steel_block',
+            G: 'gtceu:nether_quartz_plate'
+        }).id('kubejs:ae2/chest')
 
     // ME Drive
     event.remove({ id: 'ae2:network/blocks/storage_drive' })
     event.shaped(
         Item.of('ae2:drive'), [
-        'ABA',
-        'CDC',
-        'AEA'
-    ], {
-        A: 'gtceu:aluminium_plate',
-        B: 'gtceu:mv_emitter',
-        C: '#gtceu:circuits/lv',
-        D: 'ae2:chest',
-        E: 'gtceu:mv_sensor'
-    }).id('kubejs:ae2/storage_drive')
+            'ABA',
+            'CDC',
+            'AEA'
+        ], {
+            A: 'gtceu:aluminium_plate',
+            B: 'gtceu:mv_emitter',
+            C: '#gtceu:circuits/lv',
+            D: 'ae2:chest',
+            E: 'gtceu:mv_sensor'
+        }).id('kubejs:ae2/storage_drive')
 
     // Inscriber
     event.remove({ id: 'ae2:network/blocks/inscribers' })
     event.shaped(
         Item.of('ae2:inscriber'), [
-        'ABA',
-        'CDA',
-        'ABA'
-    ], {
-        A: 'gtceu:dark_steel_plate',
-        B: 'gtceu:mv_electric_piston',
-        C: 'gtceu:fluix_gem',
-        D: 'gtceu:mv_machine_hull'
-    }).id('kubejs:ae2/inscriber')
+            'ABA',
+            'CDA',
+            'ABA'
+        ], {
+            A: 'gtceu:dark_steel_plate',
+            B: 'gtceu:mv_electric_piston',
+            C: 'gtceu:fluix_gem',
+            D: 'gtceu:mv_machine_hull'
+        }).id('kubejs:ae2/inscriber')
 
     // Patterns
     event.remove({ id: 'ae2:network/crafting/patterns_blank' })
@@ -89,87 +89,87 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:network/blocks/pattern_providers_interface' })
     event.shaped(
         Item.of('ae2:pattern_provider'), [
-        'ABA',
-        'CDE',
-        'AAA'
-    ], {
-        A: 'gtceu:aluminium_plate',
-        B: 'gtceu:mv_robot_arm',
-        C: 'ae2:annihilation_core',
-        D: 'gtceu:mv_machine_hull',
-        E: 'ae2:formation_core'
-    }).id('kubejs:ae2/pattern_provider')
+            'ABA',
+            'CDE',
+            'AAA'
+        ], {
+            A: 'gtceu:aluminium_plate',
+            B: 'gtceu:mv_robot_arm',
+            C: 'ae2:annihilation_core',
+            D: 'gtceu:mv_machine_hull',
+            E: 'ae2:formation_core'
+        }).id('kubejs:ae2/pattern_provider')
 
     // Molecular Assembler
     event.remove({ id: 'ae2:network/crafting/molecular_assembler' })
     event.shaped(
         Item.of('ae2:molecular_assembler'), [
-        'ABA',
-        'CDE',
-        'ABA'
-    ], {
-        A: 'gtceu:aluminium_plate',
-        B: 'ae2:quartz_glass',
-        C: 'ae2:annihilation_core',
-        D: 'minecraft:crafting_table',
-        E: 'ae2:formation_core'
-    }).id('kubejs:ae2/molecular_assembler')
+            'ABA',
+            'CDE',
+            'ABA'
+        ], {
+            A: 'gtceu:aluminium_plate',
+            B: 'ae2:quartz_glass',
+            C: 'ae2:annihilation_core',
+            D: 'minecraft:crafting_table',
+            E: 'ae2:formation_core'
+        }).id('kubejs:ae2/molecular_assembler')
 
     // Interface
     event.remove({ id: 'ae2:network/blocks/interfaces_interface' })
     event.shaped(
         Item.of('ae2:interface'), [
-        'ABA',
-        'CDE',
-        'AAA'
-    ], {
-        A: 'gtceu:aluminium_plate',
-        B: 'gtceu:mv_conveyor_module',
-        C: 'ae2:annihilation_core',
-        D: 'gtceu:mv_machine_hull',
-        E: 'ae2:formation_core'
-    }).id('kubejs:ae2/interface')
+            'ABA',
+            'CDE',
+            'AAA'
+        ], {
+            A: 'gtceu:aluminium_plate',
+            B: 'gtceu:mv_conveyor_module',
+            C: 'ae2:annihilation_core',
+            D: 'gtceu:mv_machine_hull',
+            E: 'ae2:formation_core'
+        }).id('kubejs:ae2/interface')
 
     // Requester
     event.remove({ id: 'merequester:requester' })
     event.shaped(
         Item.of('merequester:requester'), [
-        'ABA',
-        'CDC',
-        'AAA'
-    ], {
-        A: 'gtceu:naquadah_alloy_plate',
-        B: 'gtceu:zpm_robot_arm',
-        C: '#gtceu:circuits/zpm',
-        D: 'gtceu:zpm_machine_hull',
-    }).id('kubejs:ae2/requster')
+            'ABA',
+            'CDC',
+            'AAA'
+        ], {
+            A: 'gtceu:naquadah_alloy_plate',
+            B: 'gtceu:zpm_robot_arm',
+            C: '#gtceu:circuits/zpm',
+            D: 'gtceu:zpm_machine_hull',
+        }).id('kubejs:ae2/requster')
 
     // Quantum Ring
     event.remove({ id: 'ae2:network/blocks/quantum_ring' })
     event.shaped(
         Item.of('ae2:quantum_ring'), [
-        'ABA',
-        'DCD',
-        'ABA'
-    ], {
-        A: 'gtceu:stainless_steel_plate',
-        B: 'ae2:calculation_processor',
-        C: 'gtceu:quantum_star',
-        D: 'ae2:engineering_processor'
-    }).id('kubejs:ae2/quantum_ring')
+            'ABA',
+            'DCD',
+            'ABA'
+        ], {
+            A: 'gtceu:stainless_steel_plate',
+            B: 'ae2:calculation_processor',
+            C: 'gtceu:quantum_star',
+            D: 'ae2:engineering_processor'
+        }).id('kubejs:ae2/quantum_ring')
 
     // Quantum Link Chamber
     event.remove({ id: 'ae2:network/blocks/quantum_link' })
     event.shaped(
         Item.of('ae2:quantum_link'), [
-        'ABA',
-        'BCB',
-        'ABA'
-    ], {
-        A: 'ae2:quartz_glass',
-        B: 'ae2:fluix_pearl',
-        C: 'gtceu:certus_quartz_plate'
-    }).id('kubejs:ae2/quantum_link')
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'ae2:quartz_glass',
+            B: 'ae2:fluix_pearl',
+            C: 'gtceu:certus_quartz_plate'
+        }).id('kubejs:ae2/quantum_link')
 
     // Storage Cell Removal
     event.remove({ id: 'ae2:network/cells/item_storage_cell_1k' })
@@ -194,50 +194,50 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:network/cells/item_cell_housing' })
     event.shaped(
         Item.of('ae2:item_cell_housing'), [
-        'ABA',
-        'B B',
-        'ABA'
-    ], {
-        A: 'gtceu:fine_red_alloy_wire',
-        B: 'gtceu:electrical_steel_plate'
-    }).id('kubejs:ae2/item_cell_housing')
+            'ABA',
+            'B B',
+            'ABA'
+        ], {
+            A: 'gtceu:fine_red_alloy_wire',
+            B: 'gtceu:electrical_steel_plate'
+        }).id('kubejs:ae2/item_cell_housing')
 
     event.remove({ id: 'ae2:network/cells/fluid_cell_housing' })
     event.shaped(
         Item.of('ae2:fluid_cell_housing'), [
-        'ABA',
-        'B B',
-        'ABA'
-    ], {
-        A: 'gtceu:fine_red_alloy_wire',
-        B: 'gtceu:energetic_alloy_plate'
-    })
+            'ABA',
+            'B B',
+            'ABA'
+        ], {
+            A: 'gtceu:fine_red_alloy_wire',
+            B: 'gtceu:energetic_alloy_plate'
+        })
 
     // CPUs
     event.remove({ id: 'ae2:network/crafting/cpu_crafting_unit' })
     event.shaped(
         Item.of('ae2:crafting_unit'), [
-        'ABA',
-        'CDC',
-        'ABA'
-    ], {
-        A: 'gtceu:aluminium_plate',
-        B: 'ae2:calculation_processor',
-        C: 'ae2:fluix_glass_cable',
-        D: 'ae2:logic_processor'
-    }).id('kubejs:ae2/cpu_crafting_unit')
+            'ABA',
+            'CDC',
+            'ABA'
+        ], {
+            A: 'gtceu:aluminium_plate',
+            B: 'ae2:calculation_processor',
+            C: 'ae2:fluix_glass_cable',
+            D: 'ae2:logic_processor'
+        }).id('kubejs:ae2/cpu_crafting_unit')
 
     // Charger
     event.remove({ id: 'ae2:network/blocks/crystal_processing_charger' })
     event.shaped(
         Item.of('ae2:charger'), [
-        'ABA',
-        'A  ',
-        'ABA'
-    ], {
-        A: 'gtceu:dark_steel_plate',
-        B: 'gtceu:certus_quartz_plate'
-    }).id('kubejs:ae2/charger')
+            'ABA',
+            'A  ',
+            'ABA'
+        ], {
+            A: 'gtceu:dark_steel_plate',
+            B: 'gtceu:certus_quartz_plate'
+        }).id('kubejs:ae2/charger')
 
     // Charged Certus
     event.remove({ id: 'ae2:charger/charged_certus_quartz_crystal' })
@@ -263,13 +263,13 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'ae2:network/blocks/io_condenser' })
     event.shaped(
         Item.of('ae2:condenser'), [
-        'AAA',
-        'ABA',
-        'AAA'
-    ], {
-        A: 'gtceu:titanium_plate',
-        B: 'gtceu:quantum_star'
-    }).id('kubejs:ae2/matter_condensor')
+            'AAA',
+            'ABA',
+            'AAA'
+        ], {
+            A: 'gtceu:titanium_plate',
+            B: 'gtceu:quantum_star'
+        }).id('kubejs:ae2/matter_condensor')
 
     // Storage Components
     const storage_tiers = [
@@ -313,17 +313,17 @@ ServerEvents.recipes(event => {
         event.remove({ id: toRemove })
         event.shaped(
             Item.of(curTier), [
-            'ABA',
-            'SCS',
-            'ASA'
-        ], {
-            A: curIngredients[1],
-            B: curIngredients[2],
-            C: `#gtceu:circuits/${curIngredients[0]}`,
-            S: Item.of(prevTier)
-        }).id(`kubejs:ae2/storage_component_${storage_tiers[index + 1]}`)
+                'ABA',
+                'SCS',
+                'ASA'
+            ], {
+                A: curIngredients[1],
+                B: curIngredients[2],
+                C: `#gtceu:circuits/${curIngredients[0]}`,
+                S: Item.of(prevTier)
+            }).id(`kubejs:ae2/storage_component_${storage_tiers[index + 1]}`)
 
-        //Cheaper ramp up to reduce exponential effect
+        // Cheaper ramp up to reduce exponential effect
         event.recipes.gtceu.assembler(`kubejs:ae2/${storage_tiers[index + 1]}_storage_assembler`)
             .itemInputs(
                 Item.of(prevTier, 2),
@@ -349,10 +349,10 @@ ServerEvents.recipes(event => {
                 'BCB',
                 'ABA'
             ], {
-            A: glass,
-            B: 'gtceu:red_alloy_plate',
-            C: circuit
-        }
+                A: glass,
+                B: 'gtceu:red_alloy_plate',
+                C: circuit
+            }
         ).id(`kubejs:ae2/storage_component_1k_${Math.pow(2, index)}`)
     }
 
@@ -708,7 +708,7 @@ ServerEvents.recipes(event => {
     pressengrave("kubejs:ae2/logic_processor_press", 'ae2:logic_processor_press', '#forge:lenses/green');
     pressengrave("kubejs:ae2/name_press", 'ae2:name_press', '#forge:lenses/white');
 
-    //MEGA cells
+    // MEGA cells
     event.remove({ id: 'megacells:inscriber/accumulation_processor_press' })
     event.recipes.gtceu.laser_engraver("kubejs:mega/accumulation_processor_press")
         .itemInputs('gtceu:stainless_steel_block')
@@ -760,26 +760,26 @@ ServerEvents.recipes(event => {
     event.remove({ id: "megacells:cells/mega_item_cell_housing" })
     event.shaped(
         Item.of('megacells:mega_item_cell_housing'), [
-        'ABA',
-        'B B',
-        'ABA'
-    ], {
-        A: 'gtceu:fine_lumium_wire',
-        B: 'gtceu:naquadah_plate'
-    }).id('kubejs:mega/item_cell_housing')
+            'ABA',
+            'B B',
+            'ABA'
+        ], {
+            A: 'gtceu:fine_lumium_wire',
+            B: 'gtceu:naquadah_plate'
+        }).id('kubejs:mega/item_cell_housing')
 
     event.remove({ id: "megacells:cells/mega_fluid_cell_housing" })
     event.shaped(
         Item.of('megacells:mega_fluid_cell_housing'), [
-        'ABA',
-        'B B',
-        'ABA'
-    ], {
-        A: 'gtceu:fine_lumium_wire',
-        B: 'gtceu:crystal_matrix_plate'
-    }).id('kubejs:mega/fluid_cell_housing')
+            'ABA',
+            'B B',
+            'ABA'
+        ], {
+            A: 'gtceu:fine_lumium_wire',
+            B: 'gtceu:crystal_matrix_plate'
+        }).id('kubejs:mega/fluid_cell_housing')
 
-    event.remove({ id: "megacells:cells/standard/bulk_item_cell" }) //recipe in SDA
+    event.remove({ id: "megacells:cells/standard/bulk_item_cell" }) // recipe in SDA
     event.remove({ id: "megacells:crafting/bulk_cell_component" })
 
     event.remove({ id: "megacells:network/cell_dock" })
@@ -793,15 +793,15 @@ ServerEvents.recipes(event => {
     event.remove({ id: "megacells:crafting/mega_crafting_unit" })
     event.shaped(
         Item.of('megacells:mega_crafting_unit'), [
-        'ABA',
-        'CDC',
-        'ABA'
-    ], {
-        A: 'gtceu:black_steel_plate',
-        B: 'ae2:logic_processor',
-        C: 'ae2:crafting_unit',
-        D: 'megacells:accumulation_processor'
-    }).id('kubejs:mega/cpu_crafting_unit')
+            'ABA',
+            'CDC',
+            'ABA'
+        ], {
+            A: 'gtceu:black_steel_plate',
+            B: 'ae2:logic_processor',
+            C: 'ae2:crafting_unit',
+            D: 'megacells:accumulation_processor'
+        }).id('kubejs:mega/cpu_crafting_unit')
 
     // Remove Duplicates
     event.remove({ id: "megacells:crafting/mega_crafting_accelerator" })
@@ -1044,11 +1044,11 @@ ServerEvents.recipes(event => {
             'GCG',
             'ISI'
         ], {
-        I: 'gtceu:iron_plate',
-        S: 'ae2:cell_component_1k',
-        G: 'ae2:quartz_glass',
-        C: 'gtceu:lv_hermetic_casing'
-    }).id('expatternprovider:ingredient_buffer')
+            I: 'gtceu:iron_plate',
+            S: 'ae2:cell_component_1k',
+            G: 'ae2:quartz_glass',
+            C: 'gtceu:lv_hermetic_casing'
+        }).id('expatternprovider:ingredient_buffer')
 
     event.replaceInput({ id: 'expatternprovider:crystal_fixer' }, 'minecraft:iron_ingot', 'gtceu:iron_plate')
 
@@ -1120,11 +1120,11 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         Item.of('gtceu:certus_quartz_block'), [
-        'AA',
-        'AA'
-    ], {
-        A: '#forge:gems/certus_quartz'
-    }).id('kubejs:gtceu/certus_quartz_block')
+            'AA',
+            'AA'
+        ], {
+            A: '#forge:gems/certus_quartz'
+        }).id('kubejs:gtceu/certus_quartz_block')
 
     // Vibrant Quartz Glass
     event.remove({ output: 'ae2:quartz_vibrant_glass' })
@@ -1149,9 +1149,9 @@ ServerEvents.recipes(event => {
                 'CDC',
                 'CCC'
             ], {
-            C: `#ae2:${wash}_cable`,
-            D: '#ae2:can_remove_color'
-        }
+                C: `#ae2:${wash}_cable`,
+                D: '#ae2:can_remove_color'
+            }
         )
     }
 
@@ -1162,8 +1162,8 @@ ServerEvents.recipes(event => {
                 'CC',
                 'CC'
             ], {
-            C: `ae2:${color}_covered_cable`
-        }
+                C: `ae2:${color}_covered_cable`
+            }
         )
     }
 
@@ -1174,8 +1174,8 @@ ServerEvents.recipes(event => {
                 'CC',
                 'CC'
             ], {
-            C: `ae2:${color}_smart_cable`
-        }
+                C: `ae2:${color}_smart_cable`
+            }
         )
     }
 

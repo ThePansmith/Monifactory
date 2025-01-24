@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    //Replace all Steel plates & rods
+    // Replace all Steel plates & rods
     event.replaceInput({ id: /^ad_astra:.*/ }, 'ad_astra:steel_rod', 'gtceu:steel_rod')
     event.replaceInput({ id: /^ad_astra:.*/ }, 'ad_astra:steel_plate', 'gtceu:steel_plate')
 
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
 
     const spacesuit = ['pants', 'boots']
 
-    //Space Suit
+    // Space Suit
     event.remove({ id: `ad_astra:space_helmet` })
     event.recipes.gtceu.assembler(`space_helmet`)
         .itemInputs(`kubejs:unprepared_space_helmet`, "#forge:double_plates/steel", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/lv", "#forge:glass")
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.LV])
     })
 
-    //Netherite space suit
+    // Netherite space suit
     event.remove({ id: `ad_astra:netherite_space_helmet` })
     event.recipes.gtceu.assembler(`netherite_space_helmet`)
         .itemInputs(`kubejs:unprepared_space_helmet`, "minecraft:netherite_ingot", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/hv", "#forge:glass/tinted", "#forge:foils/gold")
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.MV])
     })
 
-    //Jet Suit
+    // Jet Suit
     event.remove({ id: `ad_astra:jet_suit_helmet` })
     event.recipes.gtceu.assembler(`jet_suit_helmet`)
         .itemInputs(`ad_astra:netherite_space_helmet`, "4x gtceu:titanium_carbide_plate", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer", "#gtceu:circuits/iv")
@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/hv'
     }).id('ad_astra:nasa_workbench')
 
-    //Oxygen Gear
+    // Oxygen Gear
     event.remove({ output: 'ad_astra:oxygen_gear' })
     event.shaped('ad_astra:oxygen_gear', [
         ' R ',
@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
         F: 'gtceu:steel_fluid_cell'
     })
 
-    //Engines and Tanks
+    // Engines and Tanks
     event.remove({ output: /ad_astra:.*_engine/ })
     event.remove({ output: /ad_astra:.*_tank/ })
     event.shaped('ad_astra:steel_engine', [

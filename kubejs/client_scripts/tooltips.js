@@ -28,7 +28,7 @@ ItemEvents.tooltip(tooltip => {
     // Endgame Items
     tooltip.add('kubejs:ultimate_gem', Text.translatable('kubejs.ultimate_gem.tooltip'))
 
-    //Hardmode+ Stuff
+    // Hardmode+ Stuff
     if (!isNormalMode) {
         tooltip.add('gtceu:assembly_line', Text.translatable('gtceu.assembly_line.tooltip.hardmode'))
         tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.hardmode.1'))
@@ -102,7 +102,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:large_naquadah_reactor', Text.translatable('gtceu.multiblock.large_naquadah_reactor.description'))
     tooltip.add('gtceu:naquadah_refinery', Text.translatable('gtceu.multiblock.naquadah_refinery.description'))
 
-    //Singleblocks
+    // Singleblocks
     tooltip.addAdvanced([`gtceu:lv_atomic_reconstructor`, `gtceu:mv_atomic_reconstructor`, `gtceu:hv_atomic_reconstructor`, `gtceu:ev_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.lvev_atomic_reconstructor.desc'))) })
     tooltip.addAdvanced([`gtceu:iv_atomic_reconstructor`, `gtceu:luv_atomic_reconstructor`, `gtceu:zpm_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.ivzpm_atomic_reconstructor.desc'))) })
     tooltip.addAdvanced([`gtceu:uv_atomic_reconstructor`, `gtceu:uhv_atomic_reconstructor`, `gtceu:uev_atomic_reconstructor`, `gtceu:uiv_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.uvuiv_atomic_reconstructor.desc'))) })
@@ -148,7 +148,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
-    //Assorted info & warnings for GT machines
+    // Assorted info & warnings for GT machines
     tooltip.add(/^gtceu:.*a_energy_converter$/, Text.translatable("gtceu.energy_converter.tooltip"));
     tooltip.add('gtceu:basic_tape', Text.translatable('gtceu.basic_tape.tooltip'));
     tooltip.add('gtceu:ender_fluid_link_cover', Text.translatable('gtceu.ender_fluid_link_cover.tooltip'));
@@ -263,7 +263,7 @@ ItemEvents.tooltip(tooltip => {
         'packagedexcrafting:elite_crafter',
         'packagedexcrafting:ultimate_crafter',
         'packagedexexcrafting:epic_crafter'
-        ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
+    ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
     
     // Tempad
     if (Platform.isLoaded('tempad')) {

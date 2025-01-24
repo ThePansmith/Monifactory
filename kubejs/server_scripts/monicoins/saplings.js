@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     if (isNormalMode) {
-        //-- Saplings
+        // -- Saplings
         event.shaped(Item.of('minecraft:oak_sapling', 64), [
             'AAA',
             '   ',

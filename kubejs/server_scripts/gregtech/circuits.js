@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     replaceCircassItem(event, /nano_computer_iv/, "tag", "forge:fine_wires/electrum", "forge:fine_wires/lumium")
     replaceCircassItem(event, /crystal_computer_zpm/, "tag", "forge:fine_wires/niobium_titanium", "forge:fine_wires/enderium")
 
-    //Recipe categories seem to be separate when not using builders
+    // Recipe categories seem to be separate when not using builders
     replaceGTRecipeAmount(event, "gtceu:chemical_reactor", /wetware_circuit_board/, "tag", "forge:foils/niobium_titanium", 0.75)
     replaceGTRecipeAmount(event, "gtceu:large_chemical_reactor", /wetware_circuit_board/, "tag", "forge:foils/niobium_titanium", 0.75)
 
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
 
     for (const [item, primary, secondary, foil_amount] of smds) {
         event.recipes.gtceu.assembler(`complex_smd_${item}`)
-            //PECA foil is used since other electronic component recipes use fluid polymers
+            // PECA foil is used since other electronic component recipes use fluid polymers
             .itemInputs(primary, secondary, Item.of('gtceu:polyethyl_cyanoacrylate_foil', foil_amount))
             .itemOutputs(`64x kubejs:complex_smd_${item}`)
             .duration(160)
@@ -374,7 +374,7 @@ ServerEvents.recipes(event => {
         .duration(3200)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    //SoC recipe for cheaper matter processor
+    // SoC recipe for cheaper matter processor
     event.recipes.gtceu.circuit_assembler('matter_processor_soc')
         .itemInputs(
             'kubejs:matter_processing_unit',

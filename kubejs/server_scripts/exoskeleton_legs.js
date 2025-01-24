@@ -12,6 +12,6 @@ ServerEvents.recipes(event => {
                 C: `#gtceu:circuits/${tier}`,
                 L: "#forge:plates/tin_alloy",
                 D: "#forge:double_plates/tin_alloy",
-        })
+            })
     }
 })

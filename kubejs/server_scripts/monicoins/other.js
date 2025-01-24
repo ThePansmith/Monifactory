@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     if (isNormalMode) {
-        //-- Other stuff
+        // -- Other stuff
 
     }
 })

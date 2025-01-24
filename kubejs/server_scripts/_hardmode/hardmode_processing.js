@@ -787,7 +787,7 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(480)
 
-        //Rocketry
+        // Rocketry
         event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
             .inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000), Fluid.of('gtceu:chloromethane', 1000))
             .itemOutputs('24x gtceu:durene_dust')

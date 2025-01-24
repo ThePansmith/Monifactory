@@ -22,10 +22,10 @@ if (Platform.isLoaded('create')) {
         event.remove({ type: 'create:milling' })
         event.remove({ type: 'create:crushing' })
         event.remove({ id: 'create:crafting/kinetics/millstone' })
-        //event.remove({id: 'create:mechanical_crafting/crushing_wheel'}) //mechanical roller uses this for now
+        // event.remove({id: 'create:mechanical_crafting/crushing_wheel'}) //mechanical roller uses this for now
         event.remove({ id: 'create:crafting/kinetics/mechanical_mixer' })
         event.remove({ id: 'create:crafting/kinetics/mechanical_press' })
-        //Remove the hand crank since it's easy to abuse contraptions using it
+        // Remove the hand crank since it's easy to abuse contraptions using it
         event.remove({ id: 'create:crafting/kinetics/hand_crank' })
 
         // w h a t ?
@@ -34,7 +34,7 @@ if (Platform.isLoaded('create')) {
         event.remove({ id: 'gtceu:shaped/hv_kinetic_mixer' })
         event.remove({ id: 'gtceu:shaped/ev_kinetic_mixer' })
 
-        //belts made with rubber
+        // belts made with rubber
         let kelpRecipes = [
             "create:crafting/kinetics/belt_connector",
             "create:crafting/logistics/andesite_funnel",
@@ -160,7 +160,7 @@ if (Platform.isLoaded('create')) {
         let assembleCasing = function (input, casingName, logInput, casingModId) {
             logInput = (logInput) ? logInput : '#minecraft:logs'
             casingModId = (casingModId) ? casingModId : 'create'
-            //recipes can use unstripped logs since gt has no way to strip wood
+            // recipes can use unstripped logs since gt has no way to strip wood
             return event.recipes.gtceu.assembler(`kubejs:${casingName}`)
                 .itemInputs(input, logInput)
                 .itemOutputs(`${casingModId}:${casingName}`)
@@ -232,14 +232,14 @@ if (Platform.isLoaded('create')) {
                 .duration(20)
                 .EUt(32)
         }
-        //remove unused recipe types
+        // remove unused recipe types
         event.remove({ type: 'create:pressing' })
         event.remove({ type: 'create:compacting' })
         event.remove({ type: 'create:milling' })
         event.remove({ type: 'create:crushing' })
         event.remove({ type: 'create:mixing' })
-        //Deploying recipes are fine
-        //Remove sawing recipes. Mechanical saws can still be used for stonecutting and in world tree cutting
+        // Deploying recipes are fine
+        // Remove sawing recipes. Mechanical saws can still be used for stonecutting and in world tree cutting
         event.remove({ type: 'create:cutting' })
     })
     console.log("Create compat scripts successfully loaded!")

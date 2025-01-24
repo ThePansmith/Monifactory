@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(GTValues.VA[GTValues.HV])
 
-    //Cracking recipes - CR
+    // Cracking recipes - CR
     event.recipes.gtceu.chemical_reactor('ethyl_cyanoacrylate_hydro')
         .inputFluids('gtceu:uncracked_ethyl_cyanoacrylate 500', 'gtceu:hydrogen 3000')
         .outputFluids('gtceu:ethyl_cyanoacrylate 250')
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.LV])
 
-    //Cracking recipes - Cracker
+    // Cracking recipes - Cracker
     event.recipes.gtceu.cracker('ethyl_cyanoacrylate_hydro')
         .inputFluids('gtceu:uncracked_ethyl_cyanoacrylate 1000', 'gtceu:hydrogen 6000')
         .outputFluids('gtceu:ethyl_cyanoacrylate 1000')
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    //Dimethyl sulfoxide (catalyst) chain below
+    // Dimethyl sulfoxide (catalyst) chain below
     event.recipes.gtceu.chemical_reactor('dimethyl_sulfoxide')
         .inputFluids('gtceu:dimethyl_sulfide 1000', 'gtceu:nitrogen_dioxide 1000')
         .outputFluids('gtceu:dimethyl_sulfoxide 1000', 'gtceu:nitric_oxide 1000')
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(GTValues.VHA[GTValues.LuV])
 
-    //Uses for PECA with higher efficiency than PBI
+    // Uses for PECA with higher efficiency than PBI
     event.recipes.gtceu.bender('fluid_cell_peca')
         .itemInputs('gtceu:polyethyl_cyanoacrylate_plate')
         .itemOutputs('32x gtceu:fluid_cell')

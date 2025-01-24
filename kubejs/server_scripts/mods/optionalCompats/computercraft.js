@@ -2,7 +2,7 @@ if (Platform.isLoaded('computercraft')) {
     console.log("Computercraft Tweaked found, loading compat scripts...")
     ServerEvents.recipes(event => {
 
-        //Nomral Computer
+        // Nomral Computer
         event.remove({ id: 'computercraft:computer_normal' })
         event.shaped('computercraft:computer_normal', [
             'SSS',
@@ -14,7 +14,7 @@ if (Platform.isLoaded('computercraft')) {
             N: '#gtceu:circuits/hv',
         })
 
-        //Advanced Computer
+        // Advanced Computer
         event.remove({ id: 'computercraft:computer_advanced' })
         event.remove({ id: 'computercraft:computer_advanced_upgrade' })
         event.shaped('computercraft:computer_advanced', [
@@ -27,7 +27,7 @@ if (Platform.isLoaded('computercraft')) {
             N: '#gtceu:circuits/ev',
         })
 
-        //Turtle
+        // Turtle
         event.remove({ id: 'computercraft:turtle_normal' })
         event.shaped('computercraft:turtle_normal', [
             '   ',
@@ -40,7 +40,7 @@ if (Platform.isLoaded('computercraft')) {
             E: 'gtceu:hv_conveyor_module',
         })
 
-        //Advanced Turtle
+        // Advanced Turtle
         event.remove({ id: 'computercraft:turtle_advanced' })
         event.remove({ id: 'computercraft:turtle_advanced_upgrade' })
         event.shaped('computercraft:turtle_advanced', [
@@ -54,7 +54,7 @@ if (Platform.isLoaded('computercraft')) {
             E: 'gtceu:ev_conveyor_module',
         })
 
-        //Ender Modem
+        // Ender Modem
         event.remove({ id: 'computercraft:wireless_modem_advanced' })
         event.shaped('computercraft:wireless_modem_advanced', [
             ' E ',
@@ -67,7 +67,7 @@ if (Platform.isLoaded('computercraft')) {
             E: 'gtceu:hv_emitter',
         })
 
-        //Wireless Modem
+        // Wireless Modem
         event.remove({ id: 'computercraft:wireless_modem_normal' })
         event.shaped('computercraft:wireless_modem_normal', [
             ' E ',
@@ -80,7 +80,7 @@ if (Platform.isLoaded('computercraft')) {
             E: 'gtceu:mv_emitter',
         })
 
-        //Speaker
+        // Speaker
         event.remove({ id: 'computercraft:speaker' })
         event.shaped('computercraft:speaker', [
             'PWP',
@@ -93,7 +93,7 @@ if (Platform.isLoaded('computercraft')) {
             C: 'gtceu:carbon_fiber_mesh',
         })
 
-        //Monitor
+        // Monitor
         event.remove({ id: 'computercraft:monitor_normal' })
         event.shaped('computercraft:monitor_normal', [
             'PHP',
@@ -105,7 +105,7 @@ if (Platform.isLoaded('computercraft')) {
             H: 'gtceu:mv_machine_hull',
         })
 
-        //Advanced Monitor
+        // Advanced Monitor
         event.remove({ id: 'computercraft:monitor_advanced' })
         event.shaped('computercraft:monitor_advanced', [
             'PHP',
@@ -117,7 +117,7 @@ if (Platform.isLoaded('computercraft')) {
             H: 'gtceu:hv_machine_hull',
         })
 
-        //Pocket Computer
+        // Pocket Computer
         event.remove({ id: 'computercraft:pocket_computer_normal' })
         event.shaped('computercraft:pocket_computer_normal', [
             '   ',
@@ -129,7 +129,7 @@ if (Platform.isLoaded('computercraft')) {
 
         })
 
-        //Advanced Pocket Computer
+        // Advanced Pocket Computer
         event.remove({ id: 'computercraft:pocket_computer_advanced' })
         event.remove({ id: 'computercraft:pocket_computer_advanced_upgrade' })
         event.shaped('computercraft:pocket_computer_advanced', [
@@ -142,7 +142,7 @@ if (Platform.isLoaded('computercraft')) {
 
         })
 
-        //Printer
+        // Printer
         event.remove({ id: 'computercraft:printer' })
         event.shaped('computercraft:printer', [
             'PHP',
@@ -157,7 +157,7 @@ if (Platform.isLoaded('computercraft')) {
 
         })
 
-        //Wired Modem
+        // Wired Modem
         event.remove({ id: 'computercraft:wired_modem' })
         event.shaped('computercraft:wired_modem', [
             'PPP',
@@ -170,7 +170,7 @@ if (Platform.isLoaded('computercraft')) {
 
         })
 
-        //Netowrking Cable
+        // Netowrking Cable
         event.remove({ id: 'computercraft:cable' })
         event.recipes.gtceu.assembler("computercraft_cable")
             .itemInputs('3x gtceu:steel_foil', '6x gtceu:fine_copper_wire')
@@ -180,7 +180,7 @@ if (Platform.isLoaded('computercraft')) {
             .EUt(7)
 
 
-        //Disk Drive
+        // Disk Drive
         event.remove({ id: 'computercraft:disk_drive' })
         event.shaped('computercraft:disk_drive', [
             'PHP',

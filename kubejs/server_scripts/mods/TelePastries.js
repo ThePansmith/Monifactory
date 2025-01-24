@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         M: "minecraft:milk_bucket"
     })
 
-    //Overworld Cake
+    // Overworld Cake
     event.shaped('telepastries:overworld_cake', [
         'NKN',
         'OBO',
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         S: 'minecraft:diamond',
     })
 
-    //Void Cake
+    // Void Cake
     event.shaped('telepastries:custom_cake', [
         'ABC',
         'DED',

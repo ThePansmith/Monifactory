@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
     // Direct assembler recipes for Iron Furnaces
     const stonefurnaceupgrade = ['iron', 'copper', 'silver', 'gold', 'diamond']
 
-    //Start from silver furnace
+    // Start from silver furnace
     for (let index = 2; index < stonefurnaceupgrade.length; index++) {
         let mat1 = stonefurnaceupgrade[index];
         let mat2 = stonefurnaceupgrade[index - 1];

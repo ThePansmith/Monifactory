@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         B: 'enderio:soul_binder'
     }).id('kubejs:shaped/quintessence_infuser')
 
-    //Warding Dark Soularium Casing Recipe
+    // Warding Dark Soularium Casing Recipe
 
     event.recipes.gtceu.assembler('kubejs:dark_soularium_casing')
         .itemInputs('6x gtceu:dark_soularium_plate', '1x gtceu:tungsten_frame')

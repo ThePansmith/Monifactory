@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
     // All of the event.remove() here should REALLY be moved to Remove_Recipes.js for consistency
 
-    //Components
+    // Components
     event.remove({ output: 'extendedcrafting:basic_component' })
     event.shaped('extendedcrafting:basic_component', [
         'SL ',
@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({ id: /extendedcrafting/ }, 'extendedcrafting:black_iron_ingot', 'gtceu:black_steel_plate')
 
-    //Catalysts
+    // Catalysts
     event.remove({ output: 'extendedcrafting:the_ultimate_catalyst' })
     event.shaped('extendedcrafting:the_ultimate_catalyst', [
         ' B ',
@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
         T: 'extendedcrafting:ultimate_table'
     })
 
-    //Table duping. Only for more nested, higher-tier tables
+    // Table duping. Only for more nested, higher-tier tables
     let dupable_tables = [
         ['elite', 'aluminium'],
         ['ultimate', 'emerald'],
@@ -201,14 +201,14 @@ ServerEvents.recipes(event => {
     dupable_tables.forEach((value) => {
         event.shaped(
             `2x extendedcrafting:${value[0]}_table`, [
-            'ABA',
-            'BCB',
-            'ABA'
-        ], {
-            A: `#forge:storage_blocks/${value[1]}`,
-            B: `extendedcrafting:${value[0]}_catalyst`,
-            C: `extendedcrafting:${value[0]}_table`
-        }).id(`${value[0]}_table_dupe`)
+                'ABA',
+                'BCB',
+                'ABA'
+            ], {
+                A: `#forge:storage_blocks/${value[1]}`,
+                B: `extendedcrafting:${value[0]}_catalyst`,
+                C: `extendedcrafting:${value[0]}_table`
+            }).id(`${value[0]}_table_dupe`)
     })
 
     event.remove({ output: 'extendedcrafting:crafting_core' })
@@ -269,7 +269,7 @@ ServerEvents.recipes(event => {
         4000000, 400000
     )
 
-    //Luminessence
+    // Luminessence
     event.remove({ id: 'extendedcrafting:luminessence' })
     event.remove({ id: /phosphoric_acid_from_apatite/ })
 

@@ -105,21 +105,21 @@ ServerEvents.recipes(event => {
         I: '#gtceu:circuits/ev'
     })
 
-    //Packaged Ex Crafters
+    // Packaged Ex Crafters
     let tiers = ['advanced', 'elite', 'ultimate']
     tiers.forEach((tier) => {
         event.remove({ output: `packagedexcrafting:${tier}_crafter` })
         event.shaped(
             `packagedexcrafting:${tier}_crafter`, [
-            'ACA',
-            'BEB',
-            'ACA'
-        ], {
-            A: `extendedcrafting:${tier}_component`,
-            B: 'gtceu:black_steel_plate',
-            C: 'packagedauto:me_package_component',
-            E: `extendedcrafting:${tier}_auto_table`
-        }
+                'ACA',
+                'BEB',
+                'ACA'
+            ], {
+                A: `extendedcrafting:${tier}_component`,
+                B: 'gtceu:black_steel_plate',
+                C: 'packagedauto:me_package_component',
+                E: `extendedcrafting:${tier}_auto_table`
+            }
         )
     })
 
