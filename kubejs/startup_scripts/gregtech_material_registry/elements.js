@@ -1,3 +1,7 @@
+/**
+ * Registration of custom chemical elements
+ */
+
 // Elements
 GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('cryolobus')

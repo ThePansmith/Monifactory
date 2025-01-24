@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for the waystones mod
+ */
 ServerEvents.recipes(event => {
     event.remove({ output: 'waystones:warp_stone' })
     event.recipes.gtceu.autoclave("warp_stone")

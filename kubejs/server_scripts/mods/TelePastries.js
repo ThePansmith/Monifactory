@@ -1,3 +1,6 @@
+/**
+ * Custom teleportation cakes recipes
+ */
 ServerEvents.recipes(event => {
 
     event.remove({ output: ["telepastries:nether_cake", 'telepastries:overworld_cake', 'telepastries:lost_city_cake', 'telepastries:end_cake'] })
@@ -12,7 +15,7 @@ ServerEvents.recipes(event => {
         M: "minecraft:milk_bucket"
     })
 
-    //Overworld Cake
+    // Overworld Cake
     event.shaped('telepastries:overworld_cake', [
         'NKN',
         'OBO',
@@ -36,7 +39,7 @@ ServerEvents.recipes(event => {
         S: 'minecraft:diamond',
     })
 
-    //Void Cake
+    // Void Cake
     event.shaped('telepastries:custom_cake', [
         'ABC',
         'DED',

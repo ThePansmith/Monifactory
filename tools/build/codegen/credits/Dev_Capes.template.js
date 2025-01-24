@@ -1,8 +1,12 @@
+/**
+ * CODEGENERATED! To edit go to /tools/build/codegen/credits/Dev_Capes.template.js
+ * Adds our fancy capes to contributors
+ */
 CapeJS.addCapes(event => {
 
-    // Devs
+    /* Devs */
 //{{CODEGEN_DEVS}}
 
-    //Contributors
+    /* Contributors */
 //{{CODEGEN_CONTRIBUTORS}}
 })

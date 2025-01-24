@@ -1,4 +1,4 @@
-// Reverts the GTM 1.4.1 hatch recipe nerf for NM and HM
+/** Reverts the GTM 1.4.1 hatch recipe nerf for NM and HM */
 ServerEvents.recipes(event => {
     if (!isExpertMode) {
         event.remove({ id: /item_import_bus_/ })
@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         event.remove({ id: /fluid_hatch_/, type: 'gtceu:assembler' })
         event.remove({ id: /fluid_export_hatch_/, type: 'gtceu:assembler' })
 
-        var hatchtier = ['ulv', 'lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv', 'max']
+        let hatchtier = ['ulv', 'lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv', 'uev', 'uiv', 'max']
         hatchtier.forEach(volt => {
             event.shaped(`gtceu:${volt}_input_bus`, [' S ', ' T ', '   '], { S: '#forge:chests/wooden', T: `gtceu:${volt}_machine_hull` })
             event.shaped(`gtceu:${volt}_output_bus`, ['   ', ' T ', ' S '], { S: '#forge:chests/wooden', T: `gtceu:${volt}_machine_hull` })

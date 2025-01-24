@@ -23,11 +23,21 @@
 /mods/.connector
 /mods/memoryleakfix*
 
-/config/fml.toml
-/config/jei/world/local/*
+# VSCode
+!/.vscode
+/.vscode/*
+!/.vscode/*.code-workspace
+
+# Probe js
 /kubejs/probe
 /kubejs/config/probejs.json
+/kubejs/config/probe-settings.json
+/kubejs/*/jsconfig.json
+/config/iconexporter-common.toml
 
+# Configs we don't want to keep
+config/fml.toml
+config/jei/world/local/*
 config/fabric/indigo-renderer.properties
 config/roughlyenoughitems/pinyin.properties
 config/roughlyenoughitems/pinyin_double.properties
@@ -115,3 +125,6 @@ config/darkmodeeverywhereshaders.json
 #Don't ignore the Create client config so we can remove the Main Menu config button
 #it gets in the way of the beautiful FancyMenu
 !/config/create-client.toml
+
+# Downloadable dependencies
+**/node_modules

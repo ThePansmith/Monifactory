@@ -1,3 +1,7 @@
+/**
+ * Adds exoskeleton legs that help players get places quicker.
+ */
+
 const UUID = Java.loadClass('java.util.UUID');
 /**
  * Item definitions for exoskeleton Curios
@@ -43,7 +47,7 @@ const removeExoskeletonLegsEffects = (player, exoskeleton) => {
     })
 }
 
-//Event for equipping/unequipping the curio
+// Event for equipping/unequipping the curio
 ForgeEvents.onEvent("top.theillusivec4.curios.api.event.CurioChangeEvent", event => {
     const oldItem = event.getFrom().id;
     const newItem = event.getTo().id;

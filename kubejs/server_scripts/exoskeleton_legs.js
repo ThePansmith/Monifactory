@@ -1,6 +1,9 @@
+/**
+ * Register all exoskeleton legs tiers recipes
+ */
 ServerEvents.recipes(event => {
-    for(var i = 1; i <= 5; i++) {
-        var tier = GTValues.VN[i].toLowerCase()
+    for(let i = 1; i <= 5; i++) {
+        let tier = GTValues.VN[i].toLowerCase()
         event.shaped(
             `kubejs:${tier}_exoskeleton_legs`, [
                 "MDM",
@@ -12,6 +15,6 @@ ServerEvents.recipes(event => {
                 C: `#gtceu:circuits/${tier}`,
                 L: "#forge:plates/tin_alloy",
                 D: "#forge:double_plates/tin_alloy",
-        })
+            })
     }
 })

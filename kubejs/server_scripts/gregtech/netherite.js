@@ -1,3 +1,7 @@
+/**
+ * Netherite processing line
+ */
+
 ServerEvents.recipes(event => {
 
 
@@ -65,7 +69,7 @@ ServerEvents.recipes(event => {
         .EUt(250000)
         .blastFurnaceTemp(12000)
 
-    //Activated Nethline
+    // Activated Nethline
     event.recipes.gtceu.forming_press('inert_nether_compound_ingot')
         .itemInputs('gtceu:hot_europium_ingot', '16x kubejs:wither_bone', '4x gtceu:dark_soularium_dust', '4x kubejs:primal_mana')
         .itemOutputs('kubejs:inert_nether_compound_ingot')

@@ -842,7 +842,7 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    var naqMaterial = !isHardMode ? GTMaterials.Naquadah : GTMaterials.get('snowchestite')
+    let naqMaterial = !isHardMode ? GTMaterials.Naquadah : GTMaterials.get('snowchestite')
     event.add("glacio/naquadah", vein => {
         vein.weight(30)
         vein.clusterSize(60)

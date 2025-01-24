@@ -1,3 +1,7 @@
+/**
+ * Smoreline :tr:
+ */
+
 ServerEvents.recipes(event => {
     // Milk Chocolate Making
 
@@ -30,7 +34,7 @@ ServerEvents.recipes(event => {
         .duration(100)
 
     event.recipes.gtceu.chemical_reactor('kubejs:milk_pasteurization')
-        .inputFluids(Fluid.of('minecraft:milk', 1000), Fluid.of('gtceu:steam', 500))//TODO Change to forge tags for steam
+        .inputFluids(Fluid.of('minecraft:milk', 1000), Fluid.of('gtceu:steam', 500))// TODO Change to forge tags for steam
         .notConsumable('2x gtceu:stainless_steel_plate')
         .outputFluids(Fluid.of('nuclearcraft:pasteurized_milk', 1000))
         .EUt(480)
@@ -55,14 +59,14 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(16)
 
-    //Graham Cracker
+    // Graham Cracker
     event.recipes.gtceu.compressor('kubejs:graham_cracker')
         .itemInputs('2x gtceu:wheat_dust')
         .itemOutputs('nuclearcraft:graham_cracker')
         .EUt(20)
         .duration(200)
 
-    //Marshmellow
+    // Marshmellow
     event.recipes.gtceu.fluid_solidifier('kubejs:solid_marshmallow')
         .inputFluids(Fluid.of('nuclearcraft:marshmallow', 144))
         .itemOutputs('nuclearcraft:marshmallow')
@@ -97,7 +101,7 @@ ServerEvents.recipes(event => {
         .EUt(32)
         .duration(1000)
 
-    //Smores
+    // Smores
     event.shapeless('kubejs:smore_1', ['2x nuclearcraft:graham_cracker', 'nuclearcraft:milk_chocolate', 'nuclearcraft:marshmallow']).id('kubejs:smore_1');
     event.shapeless('kubejs:smore_2', ['2x kubejs:smore_1', 'nuclearcraft:milk_chocolate', 'nuclearcraft:marshmallow']).id('kubejs:smore_2');
     event.shapeless('kubejs:smore_4', ['2x kubejs:smore_2', 'nuclearcraft:milk_chocolate', 'nuclearcraft:marshmallow']).id('kubejs:smore_4');

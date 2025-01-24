@@ -1,3 +1,7 @@
+/**
+ * Registration of hardmore-only chemical elements
+ */
+
 GTCEuStartupEvents.registry('gtceu:element', event => {
     if (!isHardMode) {
         return;

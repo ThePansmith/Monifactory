@@ -1,3 +1,6 @@
+/**
+ * Processing lines for post-tank Wafers
+ */
 ServerEvents.recipes(event => {
     // Post-tank PIC
     event.recipes.gtceu.laser_engraver("uxpic_wafer_neutronium")
@@ -79,7 +82,7 @@ ServerEvents.recipes(event => {
     UniverseEngrave("nand_wafer", 'gtceu:gray_glass_lens', '16x gtceu:nand_memory_wafer', 100);
     UniverseEngrave("nor_wafer", 'gtceu:pink_glass_lens', '16x gtceu:nor_memory_wafer', 100);
 
-    //Multidimensional CPU
+    // Multidimensional CPU
 
     event.recipes.gtceu.laser_engraver('unactivated_dimensional_cpu_wafer')
         .itemInputs('kubejs:universe_wafer')
@@ -121,7 +124,7 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt(GTValues.VA[GTValues.IV])
 
-    //Hyperdynamic RAM
+    // Hyperdynamic RAM
     event.recipes.gtceu.laser_engraver('hyperdynamic_ram_wafer')
         .itemInputs('kubejs:universe_wafer')
         .notConsumable('gtceu:magenta_glass_lens')
@@ -162,7 +165,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.UV])
 
-    //Quantum SoC
+    // Quantum SoC
     event.recipes.gtceu.laser_engraver('quantum_soc_wafer')
         .itemInputs('kubejs:universe_wafer')
         .notConsumable('gtceu:nether_star_lens')

@@ -1,3 +1,7 @@
+/**
+ * Registration of Monicoin conversion recipes
+ */
+
 ServerEvents.recipes(event => {
     if (isNormalMode) {
         event.shapeless('5x kubejs:moni_penny', 'kubejs:moni_nickel')

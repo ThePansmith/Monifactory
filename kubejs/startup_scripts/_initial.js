@@ -1,5 +1,5 @@
-//priority: 999
-//! This script loads first before the other startup scripts
+// priority: 999
+// ! This script loads first before the other startup scripts
 /**
  * This script loads first before the other startup scripts.
  * Put your utility functions or global vars here so that you can access them in other scripts

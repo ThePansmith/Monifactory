@@ -1,3 +1,7 @@
+/**
+ * Registration of GT fluid veins on Ad Astra planets and in the void
+ */
+
 const Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
 const martianPolarCapsResourceKey = ResourceKey.create(Registries.BIOME, 'ad_astra:martian_polar_caps')
@@ -103,7 +107,7 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletedYield(0)
     })
 
-    //Mercury fluid veins (Haha Mercury is made of Mercury)
+    // Mercury fluid veins (Haha Mercury is made of Mercury)
     event.add('kubejs:mercury/mercury', vein => {
         vein.dimensions('ad_astra:mercury')
         vein.fluid(() => Fluid.of("gtceu:mercury").fluid)
@@ -137,7 +141,7 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletedYield(0)
     })
 
-    //Glacio fluid veins
+    // Glacio fluid veins
     event.add('kubejs:glacio/oil_heavy', vein => {
         vein.dimensions('ad_astra:glacio')
         vein.fluid(() => Fluid.of("gtceu:oil_heavy").fluid)

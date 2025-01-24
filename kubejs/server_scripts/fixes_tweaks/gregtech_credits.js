@@ -3,7 +3,7 @@ Creates Forming Press recipes for all tiers of Gregtech Credits,
 replacing the singular one for Cupronickel.
 */
 ServerEvents.recipes(event => {
-    //Remove the one forming press recipe for Cupronickel
+    // Remove the one forming press recipe for Cupronickel
     event.remove({ id: 'gtceu:forming_press/credit_cupronickel' })
 
     const metals = [
@@ -18,10 +18,10 @@ ServerEvents.recipes(event => {
     ]
 
     for (let index = 0; index < metals.length; index++) {
-        //Total energy cost (default 1600 EU for Cupronickel)
+        // Total energy cost (default 1600 EU for Cupronickel)
         let energyIn = 1600 * Math.pow(4, index);
 
-        //Create recipes for all coin types
+        // Create recipes for all coin types
         event.recipes.gtceu.forming_press(`gtceu:forming_press/${metals[index]}_credit`)
             .notConsumable('gtceu:credit_casting_mold')
             .itemInputs(`gtceu:${metals[index]}_plate`)

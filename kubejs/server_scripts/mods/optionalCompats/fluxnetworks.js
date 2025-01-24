@@ -1,3 +1,6 @@
+/**
+ * Compat for the fluxnetworks mod
+ */
 if (Platform.isLoaded('fluxnetworks')) {
     console.log("Flux Networks found, loading compat scripts...");
 
@@ -12,7 +15,7 @@ if (Platform.isLoaded('fluxnetworks')) {
             .duration(40)
             .EUt(16)
 
-        //Flux Block
+        // Flux Block
         event.shaped('fluxnetworks:flux_block', [
             'FFF',
             'FFF',
@@ -23,7 +26,7 @@ if (Platform.isLoaded('fluxnetworks')) {
 
         event.shapeless('9x fluxnetworks:flux_dust', ['fluxnetworks:flux_block']).id('fluxnetworks:fluxdust')
 
-        //Flux Core
+        // Flux Core
         event.remove({ id: 'fluxnetworks:fluxcore' })
         event.recipes.gtceu.assembler('fluxnetworks:fluxcore')
             .itemOutputs('2x fluxnetworks:flux_core')
@@ -31,7 +34,7 @@ if (Platform.isLoaded('fluxnetworks')) {
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(200)
 
-        //Flux Controller
+        // Flux Controller
         event.shaped('fluxnetworks:flux_controller', [
             'PCP',
             'RWR',
@@ -44,11 +47,11 @@ if (Platform.isLoaded('fluxnetworks')) {
             B: 'fluxnetworks:flux_block'
         }).id('fluxnetworks:fluxcontroller')
 
-        //Flux Plug & Point
+        // Flux Plug & Point
         event.shapeless('fluxnetworks:flux_plug', ['fluxnetworks:flux_core', 'fluxnetworks:flux_block']).id('fluxnetworks:fluxplug');
         event.shapeless('fluxnetworks:flux_point', ['fluxnetworks:flux_core', 'minecraft:redstone_block']).id('fluxnetworks:fluxpoint');
 
-        //Flux Storages
+        // Flux Storages
         event.shaped('fluxnetworks:basic_flux_storage', [
             'RBR',
             'GCG',

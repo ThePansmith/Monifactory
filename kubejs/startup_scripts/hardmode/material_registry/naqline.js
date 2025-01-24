@@ -1,6 +1,8 @@
-//! Hardcore mode naquadah line
-//? Keep in sync with
-//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsNaqLine.java
+/**
+ ! Hardcore mode naquadah line
+ ? Keep in sync with
+ ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsNaqLine.java
+ */
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     if (!isHardMode) {

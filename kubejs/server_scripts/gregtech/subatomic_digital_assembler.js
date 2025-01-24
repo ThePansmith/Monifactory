@@ -1,3 +1,6 @@
+/**
+ * Subatomic Digital Assembler multiblock
+ */
 ServerEvents.recipes(event => {
 
     function sda_print(input, circuit, output, cwut) {
@@ -56,9 +59,9 @@ ServerEvents.recipes(event => {
 
     if (isNormalMode) {
         sda_print('creative_tank_data', 1, 'gtceu:creative_tank', 64)
-        //sda_print('creative_tank_data', 2, 'ae2:creative_fluid_cell', 64) //The fluid cell can output items as a bug. See #8193 on the AE2 Github.
+        // sda_print('creative_tank_data', 2, 'ae2:creative_fluid_cell', 64) //The fluid cell can output items as a bug. See #8193 on the AE2 Github.
 
-        //Replacement solution with ExtendedAE's Infinity Cells
+        // Replacement solution with ExtendedAE's Infinity Cells
         sda_print('creative_tank_data', 2, 'kubejs:infinity_cell_base', 64)
         Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}')
         event.shapeless('expatternprovider:infinity_cell', ['kubejs:infinity_cell_base', 'gtceu:fluid_cell']).modifyResult((grid, result) => {

@@ -1,3 +1,7 @@
+/**
+ * Eltz processing line
+ */
+
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('reactive_dust_mixture_mixer')
@@ -45,7 +49,7 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(GTValues.VHA[GTValues.EV])
 
-    //Eltic actinate clump half
+    // Eltic actinate clump half
     event.recipes.gtceu.chemical_bath('inert_clump_bath')
         .itemInputs('4x kubejs:inert_clumps')
         .inputFluids('gtceu:distilled_water 125')

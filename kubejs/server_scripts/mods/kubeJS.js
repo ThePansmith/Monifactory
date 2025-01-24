@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for Monifactory
+ */
 ServerEvents.recipes(event => {
     // Stablized
     event.recipes.gtceu.fusion_reactor('einsteinium_fusion')
@@ -51,7 +54,7 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(7)
 
-    //Thermal Fluids
+    // Thermal Fluids
     thermalextract('primal_mana', 'kubejs:primal_mana', Fluid.of('kubejs:molten_primal_mana', 250));
     thermalextract('cryotheum', 'kubejs:cryotheum_dust', Fluid.of('kubejs:molten_cryotheum', 250));
     thermalextract('pyrotheum', 'kubejs:pyrotheum_dust', Fluid.of('kubejs:molten_pyrotheum', 250));

@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for the Iron Jetpacks mod
+ */
 ServerEvents.recipes(event => {
     // Thermal
 
@@ -214,7 +217,7 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
 
-    //Cells, thermal exp.
+    // Cells, thermal exp.
     event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:hardened"}').strongNBT(), [
         ' A ',
         'BCB',
