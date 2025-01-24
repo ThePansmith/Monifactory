@@ -1,14 +1,16 @@
 // Small Microverse Projector Recipes
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.basic_microverse('kubejs:t_one_first')
+    event.recipes.gtceu.microverse('kubejs:t_one_first')
+        .addData("microverse_tier", 0)
         .itemInputs('kubejs:microminer_t1', 'kubejs:ultra_dense_hydrogen')
         .itemOutputs('kubejs:stellar_creation_data')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 2000))
         .duration(100)
         .EUt(500)
 
-    event.recipes.gtceu.basic_microverse('kubejs:t_one_second')
+    event.recipes.gtceu.microverse('kubejs:t_one_second')
+        .addData("microverse_tier", 0)
         .itemInputs('kubejs:microminer_t1', 'kubejs:quantum_flux', 'kubejs:gem_sensor')
         .itemOutputs(
             '64x gtceu:diamond_ore',
@@ -19,7 +21,8 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(500)
 
-    event.recipes.gtceu.basic_microverse('kubejs:t_one_third')
+    event.recipes.gtceu.microverse('kubejs:t_one_third')
+        .addData("microverse_tier", 0)
         .itemInputs('kubejs:microminer_t1', 'kubejs:quantum_flux', 'minecraft:chest')
         .itemOutputs(
             '64x kubejs:dense_iron_ore',
@@ -40,14 +43,16 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(500)
 
-    event.recipes.gtceu.basic_microverse('kubejs:t_two_first')
+    event.recipes.gtceu.microverse('kubejs:t_two_first')
+        .addData("microverse_tier", 0)
         .itemInputs('kubejs:microminer_t2', '4x kubejs:ultra_dense_hydrogen')
         .itemOutputs('4x kubejs:stellar_creation_data')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 3000))
         .duration(120)
         .EUt(1000)
 
-    event.recipes.gtceu.basic_microverse('kubejs:t_two_second')
+    event.recipes.gtceu.microverse('kubejs:t_two_second')
+        .addData("microverse_tier", 0)
         .itemInputs('kubejs:microminer_t2', '2x kubejs:quantum_flux')
         .itemOutputs(
             '64x gtceu:endstone_bauxite_ore',
@@ -69,7 +74,8 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(1000)
 
-    event.recipes.gtceu.basic_microverse('kubejs:t_two_third')
+    event.recipes.gtceu.microverse('kubejs:t_two_third')
+        .addData("microverse_tier", 0)
         .itemInputs('kubejs:microminer_t2', '4x gtceu:hv_electric_pump', '64x kubejs:cryotheum_dust')
         .itemOutputs(
             '10x kubejs:solidified_neon',
@@ -81,7 +87,8 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
 
-    event.recipes.gtceu.basic_microverse('kubejs:t_three_one')
+    event.recipes.gtceu.microverse('kubejs:t_three_one')
+        .addData("microverse_tier", 0)
         .itemInputs('kubejs:microminer_t3', '4x kubejs:quantum_flux', 'gtceu:mv_super_chest')
         .itemOutputs(
             '64x gtceu:netherrack_scheelite_ore',
@@ -109,7 +116,8 @@ ServerEvents.recipes(event => {
         .duration(700)
         .EUt(2000)
 
-    event.recipes.gtceu.basic_microverse('kubejs:t_three_second')
+    event.recipes.gtceu.microverse('kubejs:t_three_second')
+        .addData("microverse_tier", 0)
         .itemInputs('kubejs:microminer_t3', '4x kubejs:quantum_flux', 'kubejs:gem_sensor')
         .itemOutputs(
             '64x gtceu:diamond_ore',
@@ -125,7 +133,8 @@ ServerEvents.recipes(event => {
         .duration(700)
         .EUt(2000)
 
-    event.recipes.gtceu.basic_microverse('t_three_third')
+    event.recipes.gtceu.microverse('t_three_third')
+        .addData("microverse_tier", 0)
         .itemInputs(
             'kubejs:microminer_t3',
             '4x kubejs:quantum_flux',
@@ -156,7 +165,8 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
 
     //Post-Tank
-    event.recipes.gtceu.advanced_microverse('kubejs:t_three_third')
+    event.recipes.gtceu.microverse('kubejs:t_three_third')
+        .addData("microverse_tier", 1)
         .itemInputs('kubejs:microminer_t3', '16x kubejs:quantum_flux', '32x kubejs:wither_realm_data')
         .itemOutputs(
             '16x minecraft:ancient_debris',
@@ -165,7 +175,8 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(7500)
 
-    event.recipes.gtceu.advanced_microverse('kubejs:t_four_first')
+    event.recipes.gtceu.microverse('kubejs:t_four_first')
+        .addData("microverse_tier", 1)
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', '4x kubejs:wither_realm_data', '64x kubejs:petrotheum_dust')
         .itemOutputs(
             '64x gtceu:endstone_cooperite_ore',
@@ -181,7 +192,8 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(3750)
 
-    event.recipes.gtceu.advanced_microverse('kubejs:t_four_second')
+    event.recipes.gtceu.microverse('kubejs:t_four_second')
+        .addData("microverse_tier", 1)
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', 'kubejs:gem_sensor', '64x kubejs:petrotheum_dust')
         .itemOutputs(
             '64x kubejs:dense_lapis_ore',
@@ -194,7 +206,8 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(3750)
 
-    event.recipes.gtceu.advanced_microverse('kubejs:t_four_third')
+    event.recipes.gtceu.microverse('kubejs:t_four_third')
+        .addData("microverse_tier", 1)
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', 'gtceu:advanced_power_thruster', '64x kubejs:petrotheum_dust')
         .itemOutputs(
             '64x kubejs:dense_oilsands_ore',
@@ -204,7 +217,8 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(3750)
 
-    event.recipes.gtceu.advanced_microverse('kubejs:t_four_forth')
+    event.recipes.gtceu.microverse('kubejs:t_four_forth')
+        .addData("microverse_tier", 1)
         .itemInputs('kubejs:microminer_t4', '4x kubejs:quantum_flux', '64x kubejs:solidified_chlorine', '64x kubejs:petrotheum_dust')
         .itemOutputs(
             '64x kubejs:solidified_bromine'
@@ -213,7 +227,8 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
     if (isNormalMode) {
-        event.recipes.gtceu.advanced_microverse('kubejs:t_five_first')
+        event.recipes.gtceu.microverse('kubejs:t_five_first')
+        .addData("microverse_tier", 1)
             .itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
             .itemOutputs(
                 '64x gtceu:endstone_cooperite_ore',
@@ -226,7 +241,8 @@ ServerEvents.recipes(event => {
             .duration(1000)
             .EUt(7500)
     } else {
-        event.recipes.gtceu.advanced_microverse('kubejs:t_five_first')
+        event.recipes.gtceu.microverse('kubejs:t_five_first')
+        .addData("microverse_tier", 1)
             .itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
             .itemOutputs(
                 '64x gtceu:pollucite_ore',
@@ -241,7 +257,8 @@ ServerEvents.recipes(event => {
             .EUt(7500)
     }
 
-    event.recipes.gtceu.advanced_microverse('kubejs:t_five_second')
+    event.recipes.gtceu.microverse('kubejs:t_five_second')
+        .addData("microverse_tier", 1)
         .itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_uranium')
         .itemOutputs(
             '64x gtceu:uraninite_ore',
@@ -259,7 +276,8 @@ ServerEvents.recipes(event => {
         .duration(1000)
         .EUt(7500)
 
-    event.recipes.gtceu.advanced_microverse('kubejs:t_six_first')
+    event.recipes.gtceu.microverse('kubejs:t_six_first')
+        .addData("microverse_tier", 1)
         .itemInputs('kubejs:microminer_t6', '16x kubejs:quantum_flux', '32x kubejs:stabilized_uranium', '16x kubejs:wither_realm_data')
         .itemOutputs(
             '64x gtceu:uraninite_ore',
@@ -275,13 +293,15 @@ ServerEvents.recipes(event => {
         .duration(1250)
         .EUt(18750)
 
-    event.recipes.gtceu.advanced_microverse('kubejs:t_six_second')
+    event.recipes.gtceu.microverse('kubejs:t_six_second')
+        .addData("microverse_tier", 1)
         .itemInputs('kubejs:microminer_t6', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium', '64x kubejs:wither_realm_data')
         .itemOutputs('32x kubejs:stabilized_einsteinium')
         .duration(1250)
         .EUt(18750)
 
-    event.recipes.gtceu.advanced_microverse('kubejs:t_six_third')
+    event.recipes.gtceu.microverse('kubejs:t_six_third')
+        .addData("microverse_tier", 1)
         .itemInputs('kubejs:microminer_t6', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium', '16x kubejs:dragon_lair_data')
         .itemOutputs('64x minecraft:dragon_egg',
             '64x kubejs:ender_dragon_scale',

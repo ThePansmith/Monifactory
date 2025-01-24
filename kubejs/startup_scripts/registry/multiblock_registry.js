@@ -54,22 +54,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 
     // Small Microverse Projector Recipe Type
-    event.create('basic_microverse')
+    event.create('microverse')
         .category('multiblock')
         .setEUIO('in')
         .setMaxIOSize(4, 20, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
-
-    // Advanced Microverse Projector Recipe Type
-    event.create('advanced_microverse')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(4, 16, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
+        .setSound(GTSoundEntries.COOLING)
 
     // Advanced Microverse Projector II Recipe Type
     event.create('advanced_microverse_ii')
@@ -184,6 +175,9 @@ if (!isNormalMode) {
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
+    GTRecipeTypes.get('microverse')
+        .addDataInfo((data) => ("Microverse tier " + data.getLong('microverse_tier'))); // todo: Text.translatable
 
     // Normal mode-exclusive multis
     if (!isHardMode) {
@@ -573,7 +567,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Basic Microverse Projector
     event.create('basic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('basic_microverse')
+        .recipeTypes('microverse')
+        .recipeModifiers([(machine, recipe) => {
+            if (recipe.data.getLong('microverse_tier') > 0) {
+                return ModifierFunction.NULL;
+            } else {
+                return ModifierFunction.IDENTITY;
+            }
+        }])
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CMC", "CVC", "CCC")
@@ -593,7 +594,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Advanced Microverse Projector
     event.create('advanced_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('advanced_microverse')
+        .recipeTypes('microverse')
+        .recipeModifiers([(machine, recipe) => {
+            if (recipe.data.getLong("microverse_tier") > 1) {
+                return ModifierFunction.NULL;
+            } else {
+                return ModifierFunction.IDENTITY;
+            }
+        }])
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCC", "CGGGC", "CGGGC", "CGGGC", "CCCCC")
@@ -642,7 +650,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Microverse Projector III (Hyperbolic Microverse Projector)
     event.create('hyperbolic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes(['basic_microverse', 'advanced_microverse', 'advanced_microverse_ii', 'advanced_microverse_iii'])
+        .recipeTypes(['microverse', 'advanced_microverse_ii', 'advanced_microverse_iii'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
