@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin-js";
+import { MoniLabs } from "./dx/eslint-plugin/custom-plugin.mjs";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -19,4 +20,5 @@ export default [
             "@stylistic/js/linebreak-style": ["error", "windows"],
         },
     },
+    MoniLabs
 ];

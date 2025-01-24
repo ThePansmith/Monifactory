@@ -6,6 +6,9 @@
         },{
             "name": "KubeJS",
             "path": "../kubejs"
+        },{
+            "name": "Build",
+            "path": "../tools/build"
         }
     ],
     "settings": {}

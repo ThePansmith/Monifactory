@@ -108,7 +108,7 @@ Keeping the KubeJS files clean and easy to read is important for a couple reason
 
 1. If you're using VSCode as an editor, open workspace `.vscode/moni.code-workspace` and install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Make sure to install ESLint with [`npm install`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) in `kubejs` directory beforehand. This will ensure code quality in the scripts you are writing. *If you use a unix-like system, copy `.github/hooks` directory into `.git/` as well.*
 2. On a similar note, we use `UTF-8` character encoding. This information is visible on the bottom-right if you're using VSCode.
-3. Label things with comments! Every file should have a C-style comment at the top explaining what that file does, (Reference existing files if you don't know what that is) and please sprinkle in one-line comments throughout to explain what certain blocks of code do. _Nobody's_ code is self-explanatory.
+3. Please sprinkle in one-line comments throughout to explain what certain blocks of code do. _Nobody's_ code is self-explanatory.
 4. When possible, use a list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
 5. Use empty lines to delineate between distinct blocks of code in the same file - one line if the two blocks work together to perform the same function, two otherwise.
 6. When dealing with long concatenated method calls or extended lists of parameters, indent any continuations of that statement on a new line, in the same way that one would indent the body of an if statement or for loop.
