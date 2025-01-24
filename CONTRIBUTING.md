@@ -1,17 +1,20 @@
+<!-- omit in toc -->
 # Contributing Guidelines #
 
 <!-- omit in toc -->
 ## Table of Contents ##
-* [Introduction](#introduction)
-* [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
-* [Getting Started](#getting-started)
-   * [Setting up an instance repository](#setting-up-an-instance-repository-for-use-in-dev)
-* [Localizations](#localization)
-* [Things to Watch Out For](#things-to-watch-out-for)
-   * [Questbook Highlighting](#questbook-highlighting)
-   * [Config Overrides](#config-overrides)
-   * [Style Guides](#kubejs-style-guide)
-* [Optional Compats and Mods](#optional-compats)
+- [Introduction](#introduction)
+- [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
+- [Getting Started](#getting-started)
+  - [Setting up an instance repository for use in dev](#setting-up-an-instance-repository-for-use-in-dev)
+- [Localization](#localization)
+- [Things to Watch Out For](#things-to-watch-out-for)
+  - [Questbook Highlighting](#questbook-highlighting)
+  - [Config Overrides](#config-overrides)
+  - [KubeJS Style Guide](#kubejs-style-guide)
+  - [Asset \& Data folder Organization](#asset--data-folder-organization)
+- [Optional Compats](#optional-compats)
+- [Updating Mods](#updating-mods)
   
 
 ## Introduction ##
