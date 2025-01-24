@@ -1,3 +1,7 @@
+/**
+ * Eltz processing line
+ */
+
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('reactive_dust_mixture_mixer')

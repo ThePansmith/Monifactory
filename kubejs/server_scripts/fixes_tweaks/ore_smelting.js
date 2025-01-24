@@ -1,3 +1,7 @@
+/**
+ * Rework for ore smelting recipes
+ */
+
 ServerEvents.recipes(event => {
     // Remvoe overlapping ore blocks to ingot/dust recipes
     event.remove({ id: "minecraft:nuclearcraft_lithium_ore" })

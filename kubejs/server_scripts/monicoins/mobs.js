@@ -1,3 +1,7 @@
+/**
+ * Registration of Monicoin trades for spawn eggs
+ */
+
 ServerEvents.recipes(event => {
     if (isNormalMode) {
         event.shaped(Item.of('minecraft:chicken_spawn_egg', 2), [

@@ -1,3 +1,7 @@
+/**
+ * Makes recipes harder in.. hard mode
+ */
+
 ServerEvents.recipes(event => {
     if (isHardMode) {
         // Tungsten

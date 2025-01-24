@@ -1,3 +1,7 @@
+/**
+ * Registration of GT fluid veins on Ad Astra planets and in the void
+ */
+
 const Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
 const martianPolarCapsResourceKey = ResourceKey.create(Registries.BIOME, 'ad_astra:martian_polar_caps')

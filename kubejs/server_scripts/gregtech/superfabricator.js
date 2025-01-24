@@ -1,3 +1,6 @@
+/**
+ * Loot Superfabricator multiblock
+ */
 ServerEvents.recipes(event => {
     function fabricator(prediction, circuit, output) {
         event.recipes.gtceu.loot_superfabricator(`kubejs:${prediction}_${circuit}`)

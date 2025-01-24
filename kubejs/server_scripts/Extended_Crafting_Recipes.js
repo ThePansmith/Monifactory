@@ -1,6 +1,8 @@
-// Anything that is an extended crafting recipe comes here
-// ! DO NOT PUT CREATIVE STUFF, PUT IT ON END_GAME.js
-// ? For end game intermediates (ingots plates..) that uses ectendedcrafting, put it here
+/**
+ * Anything that is an extended crafting recipe comes here
+ ! DO NOT PUT CREATIVE STUFF, PUT IT ON END_GAME.js
+ ? For end game intermediates (ingots plates..) that uses ectendedcrafting, put it here
+ */
 
 ServerEvents.recipes(event => {
     // ETERNAL CATALYST

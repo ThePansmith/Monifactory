@@ -1,4 +1,7 @@
 // priority: 0
+/**
+ * NuclearCraft configuration
+ */
 
 ServerEvents.recipes(event => {
 

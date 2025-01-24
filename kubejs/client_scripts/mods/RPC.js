@@ -1,3 +1,7 @@
+/**
+ * Discord RPC status
+ */
+
 global.tier = 0; // this is clientside tier anyways
 ClientEvents.loggedIn(() => {
     SDRP.setState('sdrp.ulv', "ULV", 'ulv')

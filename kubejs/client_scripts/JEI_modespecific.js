@@ -1,4 +1,4 @@
-// /kjs inventory will be your friend.
+/** /kjs inventory will be your friend. */
 
 JEIEvents.hideItems(event => {
     const gtMachines = ['extractor', 'macerator', 'compressor', 'forge_hammer', 'furnace', 'alloy_smelter']

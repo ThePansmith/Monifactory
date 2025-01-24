@@ -1,3 +1,7 @@
+/**
+ * Universal Crystallizer multiblock
+ */
+
 ServerEvents.recipes(event => {
     if (isHardMode) {
         // //// Machine Recipe //////

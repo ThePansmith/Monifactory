@@ -1,4 +1,4 @@
-// alloys go brrr - ima go insane :)
+/** alloys go brrr - ima go insane :) */
 
 
 ServerEvents.recipes(event => {

@@ -1,3 +1,6 @@
+/**
+ * Custom extended crafting recipes
+ */
 ServerEvents.recipes(event => {
 
     // All of the event.remove() here should REALLY be moved to Remove_Recipes.js for consistency

@@ -1,4 +1,4 @@
-// Infinity Toolset recipes and subrecipes
+/** Infinity Toolset recipes and subrecipes */
 
 
 

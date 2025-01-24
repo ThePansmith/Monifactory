@@ -1,3 +1,7 @@
+/**
+ * Netherite processing line
+ */
+
 ServerEvents.recipes(event => {
 
 

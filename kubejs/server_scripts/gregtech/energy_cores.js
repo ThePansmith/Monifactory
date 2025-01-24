@@ -1,4 +1,4 @@
-// Pre Release
+/** Pre Release */
 ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('kubejs_fusion_crafting_core')
         .itemInputs('gtceu:hsse_frame', '6x gtceu:tungsten_carbide_plate', '4x kubejs:mesol_energy_core', '4x minecraft:nether_star', '2x gtceu:iv_sensor', '#gtceu:circuits/iv', '8x #forge:storage_blocks/diamatine_empowered')

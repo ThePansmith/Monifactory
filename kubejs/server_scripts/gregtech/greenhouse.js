@@ -1,6 +1,10 @@
+/**
+ * Greenhouse multiblock
+ */
+
 ServerEvents.recipes(event => {
 
-    // //// Machine Recipe //////
+    /*   Machine Recipe  */
 
     event.shaped('gtceu:greenhouse', [
         'AWA',
@@ -13,7 +17,7 @@ ServerEvents.recipes(event => {
     }).id('kubejs:shaped/greenhouse')
 
 
-    // //// Greenhouse Recipes //////
+    /*  Greenhouse Recipes  */
 
     function boost(input, factor) {
         let boosted = [];

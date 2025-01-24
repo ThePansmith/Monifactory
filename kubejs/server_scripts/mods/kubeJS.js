@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for Monifactory
+ */
 ServerEvents.recipes(event => {
     // Stablized
     event.recipes.gtceu.fusion_reactor('einsteinium_fusion')

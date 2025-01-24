@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for GT
+ */
 ServerEvents.recipes(event => {
 
     event.shapeless('gtceu:red_alloy_dust', ['gtceu:copper_dust', '4x minecraft:redstone']).id('kubejs:shapeless/red_alloy_dust')

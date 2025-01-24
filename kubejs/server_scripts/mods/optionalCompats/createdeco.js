@@ -1,3 +1,6 @@
+/**
+ * Compat for the createdeco mod
+ */
 if (Platform.isLoaded('createdeco')) {
     console.log("createdeco found and scripts loaded")
     ServerEvents.recipes(event => {

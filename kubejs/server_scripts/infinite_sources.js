@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for stuff that generates infinite amount of something
+ */
 ServerEvents.recipes(event => {
     event.remove({ id: "watercollector:watercollector" })
     event.remove({ id: "thermal:device_water_gen" })

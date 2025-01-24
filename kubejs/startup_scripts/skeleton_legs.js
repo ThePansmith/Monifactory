@@ -1,3 +1,7 @@
+/**
+ * Adds exoskeleton legs that help players get places quicker.
+ */
+
 const UUID = Java.loadClass('java.util.UUID');
 /**
  * Item definitions for exoskeleton Curios

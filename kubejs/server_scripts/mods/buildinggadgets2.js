@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for the Building Gadgets mod
+ */
 ServerEvents.recipes(event => {
     if (isHardMode) {
         event.remove({ id: /buildinggadgets2/ })

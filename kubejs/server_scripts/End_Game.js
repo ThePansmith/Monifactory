@@ -1,3 +1,7 @@
+/**
+ * Various end-game recipes
+ */
+
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('neutron_emitter')

@@ -1,4 +1,4 @@
-// Shamelessly stolen from A&B :)
+/** Shamelessly stolen from A&B :) */
 function opposite(face) {
     if (face.equals('down'))
         return 'up'

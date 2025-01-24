@@ -1,4 +1,4 @@
-// Small Microverse Projector Recipes
+/** Small Microverse Projector Recipes */
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.basic_microverse('kubejs:t_one_first')

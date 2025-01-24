@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for EnderIO
+ */
 ServerEvents.recipes(event => {
     // Item and Fluid Conduits //
 

@@ -1,3 +1,7 @@
+/**
+ * Registration of Monicoin trades for saplings
+ */
+
 ServerEvents.recipes(event => {
     if (isNormalMode) {
         // -- Saplings

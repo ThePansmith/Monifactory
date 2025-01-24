@@ -1,3 +1,6 @@
+/**
+ * Registration of Monicoin trades for ULV covers
+ */
 ServerEvents.recipes(event => {
     if (isNormalMode) {
         // -- ULV Covers

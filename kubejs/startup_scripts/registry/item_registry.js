@@ -1,4 +1,3 @@
-
 /**
  * Item Registry - defines ID, name, texture
  * and certain other properties of custom items.

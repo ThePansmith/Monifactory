@@ -1,3 +1,6 @@
+/**
+ * Extraction and solidification recipes for NC and GT
+ */
 ServerEvents.recipes(event => {
     // Solidified to Gas
     extractgas('neon', 'kubejs:solidified_neon', Fluid.of('gtceu:neon', 1000));

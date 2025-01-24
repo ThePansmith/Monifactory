@@ -1,3 +1,7 @@
+/**
+ * Registration of Monicoin trades for ores
+ */
+
 ServerEvents.recipes(event => {
     if (isNormalMode) {
         // moniPENNY RECIPES

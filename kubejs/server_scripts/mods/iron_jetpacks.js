@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for the Iron Jetpacks mod
+ */
 ServerEvents.recipes(event => {
     // Thermal
 

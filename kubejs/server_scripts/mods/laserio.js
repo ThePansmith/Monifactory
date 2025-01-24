@@ -1,3 +1,7 @@
+/**
+ * Custom recipes for the LaserIO mod
+ */
+
 ServerEvents.recipes(event => {
     // Disable LIO transportation in Expert (Cards are used in recipes)
     if (isExpertMode) {

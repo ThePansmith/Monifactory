@@ -1,3 +1,6 @@
+/**
+ * Compat for the fluxnetworks mod
+ */
 if (Platform.isLoaded('fluxnetworks')) {
     console.log("Flux Networks found, loading compat scripts...");
 

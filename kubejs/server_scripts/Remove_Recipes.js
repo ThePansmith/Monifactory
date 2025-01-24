@@ -1,3 +1,5 @@
+/* Removes existing recipes */
+
 ServerEvents.recipes(event => {
     // Snad
     event.remove('snad:snadrecipe')

@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for Ad Astra
+ */
 ServerEvents.recipes(event => {
     // Replace all Steel plates & rods
     event.replaceInput({ id: /^ad_astra:.*/ }, 'ad_astra:steel_rod', 'gtceu:steel_rod')

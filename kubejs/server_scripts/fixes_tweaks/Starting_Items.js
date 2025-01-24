@@ -1,3 +1,7 @@
+/**
+ * One-time give of items to new players
+ */
+
 PlayerEvents.loggedIn(event => {
     // Check if player doesn't have "starting_items" stage yet
     if (!event.player.stages.has('starting_items')) {

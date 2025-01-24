@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for the wirelesschargers mod
+ */
 ServerEvents.recipes(event => {
 
     event.remove({ id: 'wirelesschargers:basic_wireless_block_charger' })

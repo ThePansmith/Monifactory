@@ -1,3 +1,6 @@
+/**
+ * ALL HNN-related stuff
+ */
 ServerEvents.recipes(event => {
     if (isNormalMode) {
         // remove dml iems

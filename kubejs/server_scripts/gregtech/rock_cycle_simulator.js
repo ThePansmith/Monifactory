@@ -1,3 +1,6 @@
+/**
+ * Rock Cycle Simulator multiblock
+ */
 ServerEvents.recipes(event => {
 
     // Recipe

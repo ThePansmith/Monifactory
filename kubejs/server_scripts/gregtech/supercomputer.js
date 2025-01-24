@@ -1,3 +1,6 @@
+/**
+ * Simulation Supercomputer multiblock
+ */
 ServerEvents.recipes(event => {
     function supercomp(model, prediction, EUt) {
         event.recipes.gtceu.simulation_supercomputer(`kubejs:${model}`)

@@ -1,5 +1,7 @@
-// Recipes for micro miners and stuff
-// Not to be confused with gregtech/microverse_recipes.js, that defines what is mined, this file defines how to make things
+/**
+ * Recipes for micro miners and stuff
+ * Not to be confused with gregtech/microverse_recipes.js, that defines what is mined, this file defines how to make things
+ */
 
 ServerEvents.recipes(event => {
 

@@ -1,3 +1,6 @@
+/**
+ * Processing lines for post-tank Wafers
+ */
 ServerEvents.recipes(event => {
     // Post-tank PIC
     event.recipes.gtceu.laser_engraver("uxpic_wafer_neutronium")

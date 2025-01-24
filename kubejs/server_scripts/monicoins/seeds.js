@@ -1,3 +1,7 @@
+/**
+ * Registration of Monicoin trades for seeds
+ */
+
 ServerEvents.recipes(event => {
     if (isNormalMode) {
         // -- "Seeds"

@@ -1,3 +1,7 @@
+/**
+ * ESLint configuration file.
+ */
+
 import js from "@eslint/js";
 import stylistic from "@stylistic/eslint-plugin-js";
 import { MoniLabs } from "./dx/eslint-plugin/custom-plugin.mjs";

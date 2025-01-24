@@ -1,3 +1,7 @@
+/**
+ * Tooltips under item names
+ */
+
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 
 ItemEvents.tooltip(tooltip => {

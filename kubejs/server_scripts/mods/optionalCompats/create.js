@@ -1,3 +1,6 @@
+/**
+ * Compat for the create mod
+ */
 if (Platform.isLoaded('create')) {
     console.log("Create found, loading compat scripts...")
     ServerEvents.recipes(event => {

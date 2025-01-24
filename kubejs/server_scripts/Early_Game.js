@@ -1,3 +1,7 @@
+/**
+ * Various early-game recipes
+ */
+
 ServerEvents.recipes(event => {
     // Aluminum EBF recipe rebuild
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_aluminium' })

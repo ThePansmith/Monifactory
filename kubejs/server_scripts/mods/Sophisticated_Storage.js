@@ -1,4 +1,6 @@
-
+/**
+ * Configuration of Sophisticated Storage
+ */
 ServerEvents.recipes(event => {
     const modids = ["sophisticatedstorage", "sophisticatedbackpacks"]
 

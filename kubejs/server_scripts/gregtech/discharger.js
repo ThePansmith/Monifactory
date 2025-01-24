@@ -1,3 +1,7 @@
+/**
+ * Draconic Evolution Fusion recipes
+ */
+
 ServerEvents.recipes(event => {
     event.shaped('gtceu:discharger', [
         'PLP',

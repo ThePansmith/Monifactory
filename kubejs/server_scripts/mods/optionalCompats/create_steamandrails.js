@@ -1,3 +1,7 @@
+/**
+ * Compat for the railways mod
+ */
+
 if (Platform.isLoaded('railways')) {
     console.log("Create: Steam and Rails found, loading compat scripts...")
     ServerEvents.tags('item', event => {

@@ -1,3 +1,8 @@
+/**
+ * Hardmode-only Microminers and MM missions
+ * Also stabilized microminers
+ */
+
 ServerEvents.recipes(event => {
 
     // Stabilized miners recipe

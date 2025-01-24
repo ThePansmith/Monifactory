@@ -1,3 +1,7 @@
+/**
+ * Atomic Reconstructor singleblock
+ */
+
 ServerEvents.recipes(event => {
     const reconstructedItems = [
         ['minecraft:redstone', 'gtceu:restonia_gem', 128, 'restonia'],

@@ -1,3 +1,6 @@
+/**
+ * PECA processing line
+ */
 ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_reactor("sodium_cyanide")
         .inputFluids('gtceu:hydrogen_cyanide 1000')

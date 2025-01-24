@@ -1,3 +1,7 @@
+/**
+ * Custom GT circuit recipes
+ */
+
 // Function for replacing items in circuit assembler recipes without changing the order
 function replaceCircassItem(event, idRegex, tagOrItem, toReplace, replaceWith) {
     // Get all GTCEu Circuit Assembler recipes with an ID matching the regex

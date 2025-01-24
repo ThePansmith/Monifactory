@@ -1,3 +1,7 @@
+/**
+ * Naquadah Reactor multiblock
+ */
+
 ServerEvents.recipes(event => {
     // Reactor Crafting
     event.recipes.gtceu.assembly_line('kubejs:naquadah_reactor')

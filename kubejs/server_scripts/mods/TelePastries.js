@@ -1,3 +1,6 @@
+/**
+ * Custom teleportation cakes recipes
+ */
 ServerEvents.recipes(event => {
 
     event.remove({ output: ["telepastries:nether_cake", 'telepastries:overworld_cake', 'telepastries:lost_city_cake', 'telepastries:end_cake'] })

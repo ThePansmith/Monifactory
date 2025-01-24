@@ -1,3 +1,6 @@
+/**
+ * Naquadah fuel processing line
+ */
 ServerEvents.recipes(event => {
 
     // Liquid Fuel recipes 

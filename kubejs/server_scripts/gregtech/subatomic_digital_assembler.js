@@ -1,3 +1,6 @@
+/**
+ * Subatomic Digital Assembler multiblock
+ */
 ServerEvents.recipes(event => {
 
     function sda_print(input, circuit, output, cwut) {

@@ -1,3 +1,8 @@
+/**
+ * Makes Ad Astra rock dusts drop from ores
+ * Also centrifuge recipes for dusts
+ */
+
 ServerEvents.recipes(event => {
     // Regolith dusts
     let regolithDustResources = [

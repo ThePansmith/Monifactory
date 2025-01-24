@@ -1,3 +1,6 @@
+/**
+ * Terbium processing line
+ */
 ServerEvents.recipes(event => {
 
     // Terbium

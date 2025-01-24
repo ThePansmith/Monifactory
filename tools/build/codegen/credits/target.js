@@ -81,7 +81,7 @@ export const CodegenCreditsTarget = new Juke.Target({
             },
           )
         )
-        .join('\n');
+        .join('\r\n');
 
     fillTemplateFile(
       devCapesTemplateFilePath,

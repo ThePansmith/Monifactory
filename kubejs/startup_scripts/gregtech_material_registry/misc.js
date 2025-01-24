@@ -1,5 +1,7 @@
-// ? Misc modern materials we have to add
-// ? Place non-nomifactory materials here
+/**
+ ? Misc modern materials we have to add
+ ? Place non-nomifactory materials here
+ */
 
 // AE2 Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {

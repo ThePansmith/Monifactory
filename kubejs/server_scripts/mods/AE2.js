@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for AE2
+ */
 ServerEvents.recipes(event => {
 
     // Base AE2

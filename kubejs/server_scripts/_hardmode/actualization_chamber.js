@@ -1,3 +1,7 @@
+/**
+ * Actualization Chamber multiblock
+ */
+
 ServerEvents.recipes(event => {
     if (isHardMode) {
         // //// Machine Recipe //////

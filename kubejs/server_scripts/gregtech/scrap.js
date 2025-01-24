@@ -1,3 +1,6 @@
+/**
+ * Alien scrap processing line
+ */
 ServerEvents.recipes(event => {
     // Scrap
     event.recipes.gtceu.sifter('scrap_sifting')

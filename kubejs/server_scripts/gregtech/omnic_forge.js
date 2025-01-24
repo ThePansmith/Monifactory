@@ -1,3 +1,6 @@
+/**
+ * Omnic Forge multiblock
+ */
 ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.shaped_table('gtceu:omnic_forge', [
         'ASESA',

@@ -1,3 +1,7 @@
+/**
+ * Soul Binder multiblock
+ */
+
 ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.shaped_table('gtceu:quintessence_infuser', [
         'SCFCS',

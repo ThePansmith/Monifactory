@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for the Functional Storage mod
+ */
 ServerEvents.recipes(event => {
     // Remove bugged Oak Drawer recipes
     event.remove({ id: /functionalstorage:oak_drawer_alternate/ })

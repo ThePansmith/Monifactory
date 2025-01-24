@@ -1,6 +1,8 @@
 // priority: 999
-// ! This script loads first before the other startup scripts
-// put your util or patches here so that you can access them at other scripts
+/**
+ ! This script loads first before the other startup scripts
+ * put your util or patches here so that you can access them at other scripts
+ */
 
 // see quest_scripts.js
 const cake_reset_time = 60; // in seconds

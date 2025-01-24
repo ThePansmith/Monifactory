@@ -1,3 +1,6 @@
+/**
+ * Compat for the computercraft mod
+ */
 if (Platform.isLoaded('computercraft')) {
     console.log("Computercraft Tweaked found, loading compat scripts...")
     ServerEvents.recipes(event => {
