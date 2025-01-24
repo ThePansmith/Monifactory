@@ -30,14 +30,16 @@ ServerEvents.recipes(event => {
     // Pristine matter recipe
     function pristine_matter(tier, microtier) {
         if (microtier == 1) {
-            event.recipes.gtceu.basic_microverse(`pristine_${tier}`)
+            event.recipes.gtceu.microverse(`pristine_${tier}`)
+                .addData("microverse_tier", 0)
                 .notConsumable(`kubejs:stabilized_microminer_t${tier}`)
                 .itemOutputs(`kubejs:pristine_matter_t${tier}`)
                 .duration(470.4 * 20)
                 .EUt(30720)
         }
         if (microtier == 2) {
-            event.recipes.gtceu.advanced_microverse(`pristine_${tier}`)
+            event.recipes.gtceu.microverse(`pristine_${tier}`)
+                .addData("microverse_tier", 1)
                 .notConsumable(`kubejs:stabilized_microminer_t${tier}`)
                 .itemOutputs(`kubejs:pristine_matter_t${tier}`)
                 .duration(470.4 * 20)
