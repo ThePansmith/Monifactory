@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
         .circuit(5)
 
-    const furnaceupgrade = [
+    let furnaceupgrade = [
         ['copper', 'iron'],
         ['silver', 'copper'],
         ['gold', 'silver'],

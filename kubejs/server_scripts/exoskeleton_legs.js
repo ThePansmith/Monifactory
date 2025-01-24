@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     for(let i = 1; i <= 5; i++) {
-        const tier = GTValues.VN[i].toLowerCase()
+        let tier = GTValues.VN[i].toLowerCase()
         event.shaped(
             `kubejs:${tier}_exoskeleton_legs`, [
                 "MDM",

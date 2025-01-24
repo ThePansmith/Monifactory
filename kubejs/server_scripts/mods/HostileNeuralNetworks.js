@@ -199,7 +199,7 @@ ItemEvents.rightClicked(event => {
 // Crafting recipes for the models
 ServerEvents.recipes(event => {
     if (isNormalMode) {
-        const dataModelData = [
+        let dataModelData = [
             ['blaze', 'minecraft:blaze_powder', 'nether', true],
             ['creeper', 'minecraft:gunpowder', 'overworld', true],
             ['ender_dragon', 'kubejs:dragon_lair_data', 'end', true],
@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
 
         dataModelData.forEach(modeldata => {
             // Is this hacky? Yes. Do i care? No.
-            const recipeIngredients = [
+            let recipeIngredients = [
                 'hostilenetworks:blank_data_model',
                 modeldata[1]
             ]

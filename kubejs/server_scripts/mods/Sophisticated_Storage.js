@@ -224,7 +224,7 @@ ServerEvents.recipes(event => {
     })
 
     // Stack upgrades
-    const stackupgrade = [
+    let stackupgrade = [
         ['stack_upgrade_tier_1', 'gtceu:energetic_alloy', 'upgrade_base'],
         ['stack_upgrade_tier_2', 'gtceu:stainless_steel', 'stack_upgrade_tier_1'],
         ['stack_upgrade_tier_3', 'gtceu:tungsten_steel', 'stack_upgrade_tier_2'],

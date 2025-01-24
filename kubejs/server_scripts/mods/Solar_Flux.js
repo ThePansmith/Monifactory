@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         .EUt(2)
 
     // All the other panels follow a pattern until 7
-    const solarCrafting = [
+    let solarCrafting = [
         ['gtceu:tin_single_cable', 'minecraft:redstone_block', 'gtceu:cupronickel_plate', 'laserio:energy_overclocker_card_tier_2'],
         ['gtceu:electrical_steel_plate', 'gtceu:conductive_alloy_block', 'gtceu:electrical_steel_gear', 'laserio:energy_overclocker_card_tier_3'],
         ['gtceu:microversium_ingot', 'gtceu:end_steel_block', 'gtceu:microversium_ingot', 'laserio:energy_overclocker_card_tier_4'],
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
 
     solarCrafting.forEach((ingredients, index) => {
         // Account for the first recipe, which doesn't use a photovoltaic cell
-        const photovoltaic = index == 0? 
+        let photovoltaic = index == 0? 
             'gtceu:tempered_glass'
             :`solarflux:photovoltaic_cell_${index}`
         event.shaped(
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
     })
 
     // Photovoltaic Cells T2-6
-    const cellCrafting = [
+    let cellCrafting = [
         [2, 'enderio:photovoltaic_plate', 'gtceu:battery_alloy_plate'],
         [3, 'minecraft:ender_pearl', 'gtceu:annealed_copper_plate'],
         [4, 'gtceu:light_blue_glass_lens', 'gtceu:vibrant_alloy_plate'],
