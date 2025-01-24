@@ -224,7 +224,7 @@ ServerEvents.recipes(event => {
     })
 
     // Stack upgrades
-    var stackupgrade = [
+    const stackupgrade = [
         ['stack_upgrade_tier_1', 'gtceu:energetic_alloy', 'upgrade_base'],
         ['stack_upgrade_tier_2', 'gtceu:stainless_steel', 'stack_upgrade_tier_1'],
         ['stack_upgrade_tier_3', 'gtceu:tungsten_steel', 'stack_upgrade_tier_2'],
@@ -260,8 +260,8 @@ ServerEvents.recipes(event => {
     }),
 
 
-        // Upgrades
-        event.remove({ output: 'sophisticatedstorage:hopper_upgrade' })
+    // Upgrades
+    event.remove({ output: 'sophisticatedstorage:hopper_upgrade' })
     event.shaped('4x sophisticatedstorage:hopper_upgrade', [
         ' H ',
         'IUI',

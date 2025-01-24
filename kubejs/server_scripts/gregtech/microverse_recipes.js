@@ -663,7 +663,7 @@ ServerEvents.recipes(event => {
         .circuit(6)
         .EUt(16)
 
-    var projector = [
+    const projector = [
         ['basic_microverse_projector', '#gtceu:circuits/hv'],
         ['advanced_microverse_projector', '#gtceu:circuits/ev'],
         ['advanced_microverse_projector_ii', '#gtceu:circuits/iv']

@@ -199,7 +199,7 @@ ItemEvents.rightClicked(event => {
 // Crafting recipes for the models
 ServerEvents.recipes(event => {
     if (isNormalMode) {
-        var dataModelData = [
+        const dataModelData = [
             ['blaze', 'minecraft:blaze_powder', 'nether', true],
             ['creeper', 'minecraft:gunpowder', 'overworld', true],
             ['ender_dragon', 'kubejs:dragon_lair_data', 'end', true],
@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
 
         dataModelData.forEach(modeldata => {
             // Is this hacky? Yes. Do i care? No.
-            var recipeIngredients = [
+            const recipeIngredients = [
                 'hostilenetworks:blank_data_model',
                 modeldata[1]
             ]
@@ -230,7 +230,12 @@ ServerEvents.recipes(event => {
             }
 
             event.shapeless(
-                Item.of('hostilenetworks:data_model', `{data_model:{data:6,id:\"hostilenetworks:${modeldata[0]}\"}}`),
+                Item.of('hostilenetworks:data_model', JSON.stringify({
+                    data_model: {
+                        data: 6,
+                        id: "hostilenetworks:"+modeldata[0],
+                    }
+                })),
                 recipeIngredients
             )
         })
