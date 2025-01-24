@@ -1,7 +1,10 @@
+/**
+ * Script for generating recipes for pristine matters and stabilized microminers.
+ */
 ServerEvents.recipes(event => {
     if(isNormalMode) return;
     
-    // Pristine Matters
+    // Pristine Matter & corresponding projector tier
     const pristine_matter = [
         ['1', 1],
         ['2', 1],
@@ -16,7 +19,10 @@ ServerEvents.recipes(event => {
         ['8half', 3]
     ]
 
-    // Functions for making recipes given a pristine matter tier (and optionally a projector tier)
+    /**
+     * Function for making recipes given a miner tier.
+     * @param {string} minerTier The tier of miner to generate a stabilized matter recipe for. Typically a string representation of a number.
+     */
     function stabilized_miner_recipe(minerTier) {
         event.recipes.gtceu.assembly_line(`stable_t_${minerTier}`)
             .itemInputs(`kubejs:microminer_t${minerTier}`, 'kubejs:heart_of_a_universe', '4x kubejs:hadal_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
