@@ -107,7 +107,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gem()
         .color(0xbb9966).secondaryColor(0x881105)
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
-        .components('1x eltz', '2x actinium', '6x oxygen')
+        .components('4x eltz', '1x actinium', '3x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING)
 
     event.create('actinium_iron_oxide')
