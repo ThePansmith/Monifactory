@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     if (isHardMode) {
-        basic_microverse_mission(event, "2half", 40, GTValues.VHA, GTValues.IV, 100, GTValues.MAX).forEach(builder => {
+        basic_microverse_mission(event, "2half", 40, GTValues.VHA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
                 '8x kubejs:quantum_flux',
@@ -10,64 +10,74 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '64x minecraft:bone',
                 '64x minecraft:bone',
-                '64x minecraft:bone',
-                '64x minecraft:bone',
                 '64x minecraft:rotten_flesh',
                 '64x minecraft:rotten_flesh',
-                '64x minecraft:rotten_flesh',
-                '64x minecraft:rotten_flesh',
-                '64x minecraft:gunpowder',
-                '64x minecraft:gunpowder',
-                '64x minecraft:slime_block',
-                '64x kubejs:guardian_scale'
+                '64x minecraft:gunpowder'
             )
         })
 
-        advanced_microverse_mission(event, "4half", 50, GTValues.VHA, GTValues.IV, 100, GTValues.MAX).forEach(builder => {
+        basic_microverse_mission(event, "2half", 40, GTValues.VHA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
                 '8x kubejs:quantum_flux',
-                '64x kubejs:aerotheum_dust',
+                'minecraft:oak_sapling'
+            )
+            .inputFluids('minecraft:lava 4000')
+            .itemOutputs(
+                '64x minecraft:slime_block',
+                '48x kubejs:guardian_scale'
+            )
+        })
+
+        basic_microverse_mission(event, "2half", 50, GTValues.VHA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {
+            builder
+            .itemInputs(
+                '8x kubejs:quantum_flux',
                 'minecraft:netherrack'
             )
+            .inputFluids('minecraft:lava 8000')
             .itemOutputs(
-                '50x minecraft:blaze_rod',
-                '50x minecraft:blaze_rod',
-                '50x thermal:blizz_rod',
-                '50x thermal:blizz_rod',
-                '50x thermal:blitz_rod',
-                '50x thermal:blitz_rod',
-                '50x thermal:basalz_rod',
-                '50x thermal:basalz_rod',
-                '64x minecraft:ghast_tear',
+                '32x minecraft:ghast_tear',
                 '64x kubejs:wither_bone',
-                '64x kubejs:wither_bone',
-                '64x kubejs:wither_bone', // drops of evil aren't in the pack
-                '64x minecraft:magma_cream',
+                '32x kubejs:wither_bone', // drops of evil aren't in the pack
                 '64x minecraft:magma_cream'
             )
         })
 
-        advanced_microverse_mission(event, "4half", 60, GTValues.VHA, GTValues.IV, 100, GTValues.MAX).forEach(builder => {
+        basic_microverse_mission(event, "2half", 50, GTValues.VHA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
                 '8x kubejs:quantum_flux',
-                '64x kubejs:aerotheum_dust',
+                'minecraft:redstone_block'
+            )
+            .inputFluids('minecraft:lava 8000')
+            .itemOutputs(
+                '50x minecraft:blaze_rod',
+                '50x thermal:blizz_rod',
+                '50x thermal:blitz_rod',
+                '50x thermal:basalz_rod'
+            )
+        })
+
+        basic_microverse_mission(event, "2half", 60, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
+            builder
+            .itemInputs(
+                '8x kubejs:quantum_flux',
                 'minecraft:end_stone'
             )
+            .inputFluids('minecraft:lava 12000')
             .itemOutputs(
-                '48x enderio:enderman_head',
-                '64x gtceu:ender_pearl_block',
-                '64x minecraft:shulker_shell',
+                '24x enderio:enderman_head',
+                '32x gtceu:ender_pearl_block',
                 '64x minecraft:shulker_shell' // shulker pearls aren't in the pack
             )
         })
 
-        advanced_microverse_mission(event, "4half", 100, GTValues.VHA, GTValues.IV, 100, GTValues.MAX).forEach(builder => {
+        advanced_microverse_mission(event, "4half", 100, GTValues.VHA, GTValues.IV, 40, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
                 '8x kubejs:quantum_flux',
-                '64x kubejs:aerotheum_dust',
+                '32x kubejs:aerotheum_dust',
                 '16x minecraft:ender_eye'
             )
             .itemOutputs(
@@ -80,32 +90,27 @@ ServerEvents.recipes(event => {
             )
         })
 
-        advanced_microverse_mission(event, "4half", 100, GTValues.VHA, GTValues.IV, 100, GTValues.MAX).forEach(builder => {
+        advanced_microverse_mission(event, "4half", 100, GTValues.VHA, GTValues.IV, 60, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
-                '16x kubejs:quantum_flux',
-                '64x kubejs:aerotheum_dust',
-                '8x kubejs:dragon_lair_data'
+                '8x kubejs:quantum_flux',
+                '32x kubejs:aerotheum_dust',
+                '4x kubejs:dragon_lair_data'
             )
             .itemOutputs(
                 '64x kubejs:ender_dragon_scale',
                 '64x kubejs:ender_dragon_scale',
                 '64x kubejs:ender_dragon_scale',
-                '64x kubejs:ender_dragon_scale',
-                '64x kubejs:ender_dragon_scale',
-                '64x kubejs:ender_dragon_scale',
-                '64x minecraft:dragon_breath',
-                '64x minecraft:dragon_breath',
                 '64x minecraft:dragon_breath',
                 '64x minecraft:dragon_breath'
             )
         })
 
-        advanced_microverse_mission(event, "4half", 100, GTValues.VHA, GTValues.IV, 100, GTValues.MAX).forEach(builder => {
+        advanced_microverse_mission(event, "4half", 100, GTValues.VHA, GTValues.IV, 40, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
                 '8x kubejs:quantum_flux',
-                '64x kubejs:aerotheum_dust',
+                '32x kubejs:aerotheum_dust',
                 '64x kubejs:wither_bone'
             )
             .itemOutputs(
@@ -115,7 +120,7 @@ ServerEvents.recipes(event => {
             )
         })
 
-        advanced_microverse_mission(event, "4half", 100, GTValues.VHA, GTValues.IV, 100, GTValues.MAX).forEach(builder => {
+        advanced_microverse_mission(event, "4half", 100, GTValues.VHA, GTValues.IV, 40, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
                 '8x kubejs:quantum_flux',
@@ -142,7 +147,7 @@ ServerEvents.recipes(event => {
             )
         })
 
-        advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 100, GTValues.MAX).forEach(builder => {
+        advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 20, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
                 '8x gtceu:neutron_reflector',
@@ -161,7 +166,7 @@ ServerEvents.recipes(event => {
             )
         })
 
-        advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 100, GTValues.MAX).forEach(builder => {
+        advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 20, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
                 '8x kubejs:gem_sensor',

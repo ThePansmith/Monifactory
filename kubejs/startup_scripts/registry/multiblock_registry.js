@@ -57,7 +57,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('basic_microverse')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(4, 20, 1, 0)
+        .setMaxIOSize(6, 6, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
@@ -66,7 +66,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('advanced_microverse')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(4, 16, 0, 0)
+        .setMaxIOSize(6, 9, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
@@ -75,7 +75,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('advanced_microverse_ii')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(8, 16, 0, 0)
+        .setMaxIOSize(9, 9, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
@@ -84,7 +84,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('advanced_microverse_iii')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(12, 16, 0, 0)
+        .setMaxIOSize(12, 9, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
