@@ -44,6 +44,13 @@ ServerEvents.recipes(event => {
         .itemOutputs(
             '64x kubejs:hadal_shard',
             '64x kubejs:warden_heart',
+            '64x kubejs:warden_heart',
+            '64x kubejs:warden_heart',
+            '64x kubejs:warden_heart',
+            '64x kubejs:warden_heart',
+            '64x kubejs:warden_heart',
+            '64x kubejs:warden_horn',
+            '64x kubejs:warden_horn',
             '64x kubejs:warden_horn',
             '64x kubejs:warden_horn'
         )
