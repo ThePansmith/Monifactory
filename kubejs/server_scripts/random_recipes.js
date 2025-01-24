@@ -604,7 +604,17 @@ ServerEvents.recipes(event => {
             });
         });
     });
-
+    
+    // Stonecut GTCEU warning blocks into each other
+    let hazardNames = ['acid', 'antimatter', 'bio', 'boss', 'causality', 'explosion', 'fire',
+                       'generic', 'gregification', 'high_pressure', 'high_temperature', 'high_voltage',
+                       'laser', 'magic', 'magnetic', 'mob_infestation', 'mob_spawner', 'noise',
+                       'radioactive', 'spatial_storage', 'turret', 'void'];
+    for (let hazardName of hazardNames) {
+        let hazard = `gtceu:${hazardName}_hazard_sign_block`
+        event.stonecutting(hazard, "gtceu:solid_machine_casing")
+        event.stonecutting("gtceu:solid_machine_casing", hazard)
+    }
 
     // Stonecutting Marble
     let MarbleTag = ['#moni:marble']; // What item tags to go through (change this so you have your tags)
