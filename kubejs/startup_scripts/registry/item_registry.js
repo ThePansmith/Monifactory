@@ -220,7 +220,6 @@ StartupEvents.registry('item', event => {
     event.create('dense_hydrogen').rarity('Uncommon')
     event.create('ultra_dense_hydrogen').rarity('Rare')
 
-
     // Stabilized Elements
     const stabilized_elements = [
         ['einsteinium', '#ce9f00'],
@@ -429,6 +428,22 @@ StartupEvents.registry('item', event => {
     event.create('quantum_soc_chip_base').texture('kubejs:item/quantumsoc/quantum_soc_chip_base').displayName('Quantum SoC Chip Base')
     event.create('quantum_soc_chip').texture('kubejs:item/quantumsoc/quantum_soc_chip').displayName('Quantum SoC Chip')
 
+    // Ultimate Gem
+    event.create('ender_gem_dust')
+    event.create('ender_gem')
+    event.create('gem_of_the_end')
+    event.create('abyss_crystal_mixture')
+    event.create('uncut_abyss_crystal')
+    event.create('abyss_crystal')
+    event.create('pure_shards')
+    event.create('dim_pure_crystal')
+    event.create('pale_pure_crystal')
+    event.create('bright_pure_crystal')
+    event.create('pure_crystal')
+    event.create('extreme_energy_blend')
+    event.create('extreme_energy_crystal') 
+    event.create('wrapped_extreme_energy_crystal')
+    event.create('energized_extreme_energy_crystal')
 
     // Complex SMDs
     const smds = [
