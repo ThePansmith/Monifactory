@@ -74,8 +74,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.electric_blast_furnace('eltz_ingot_blasting')
-        .itemInputs('gtceu:flawless_eltic_actinate_gem', '8x #forge:dusts/pulsating_alloy')
-        .itemOutputs('1x gtceu:eltz_ingot', '4x gtceu:actinium_iron_oxide_dust')
+        .itemInputs('gtceu:flawless_eltic_actinate_gem', '#forge:dusts/pulsating_alloy')
+        .itemOutputs('1x gtceu:eltz_ingot', '2x gtceu:actinium_iron_oxide_dust')
         .duration(1540)
         .blastFurnaceTemp(13600)
         .EUt(GTValues.VA[GTValues.UEV])
