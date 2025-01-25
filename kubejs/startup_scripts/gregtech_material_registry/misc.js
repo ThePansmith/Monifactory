@@ -192,6 +192,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xF16AA5)
 
+    event.create("abyss_crystal_mixture")
+        .fluid()
+        .color(0x281832)
+
     event.create('holmium_oxide')
         .dust()
         .color(0xD29092)

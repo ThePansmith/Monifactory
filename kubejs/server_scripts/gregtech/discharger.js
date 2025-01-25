@@ -51,4 +51,10 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:sculk_core')
         .EUt(524288)
         .duration(100)
+
+    event.recipes.gtceu.charger("kubejs:extreme_energy_crystal_charge")
+        .itemInputs(['kubejs:wrapped_extreme_energy_crystal'])
+        .itemOutputs('kubejs:energized_extreme_energy_crystal')
+        .EUt(GTValues.VHA[GTValues.UEV])
+        .duration(100)
 })
