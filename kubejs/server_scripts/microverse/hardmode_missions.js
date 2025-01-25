@@ -150,36 +150,36 @@ ServerEvents.recipes(event => {
         advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 20, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
-                '8x gtceu:neutron_reflector',
-                '24x gtceu:naquadah_block',
+                '4x gtceu:neutron_reflector',
+                '12x gtceu:naquadah_block',
                 'kubejs:warden_horn'
             )
             .itemOutputs(
-                '64x gtceu:endstone_darmstadtite_ore',
-                '64x gtceu:endstone_darmstadtite_ore',
-                '64x gtceu:endstone_darmstadtite_ore',
-                '64x gtceu:endstone_darmstadtite_ore',
-                '64x gtceu:endstone_darmstadtite_ore',
-                '64x gtceu:endstone_darmstadtite_ore',
-                '64x gtceu:endstone_darmstadtite_ore',
-                '64x gtceu:endstone_darmstadtite_ore'
+                '64x gtceu:raw_darmstadtite',
+                '64x gtceu:raw_darmstadtite',
+                '64x gtceu:raw_darmstadtite',
+                '64x gtceu:raw_darmstadtite',
+                '64x gtceu:raw_darmstadtite',
+                '64x gtceu:raw_darmstadtite',
+                '64x gtceu:raw_darmstadtite',
+                '64x gtceu:raw_darmstadtite'
             )
         })
 
         advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 20, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs(
-                '8x kubejs:gem_sensor',
-                '24x gtceu:naquadah_block',
+                '4x kubejs:gem_sensor',
+                '12x gtceu:naquadah_block',
                 'kubejs:warden_horn'
             )
             .itemOutputs(
-                '64x gtceu:endstone_dulysite_ore',
-                '64x gtceu:endstone_dulysite_ore',
-                '64x gtceu:endstone_dulysite_ore',
-                '64x gtceu:endstone_dulysite_ore',
-                '64x gtceu:endstone_dulysite_ore',
-                '64x gtceu:endstone_dulysite_ore'
+                '64x gtceu:raw_dulysite',
+                '64x gtceu:raw_dulysite',
+                '64x gtceu:raw_dulysite',
+                '64x gtceu:raw_dulysite',
+                '64x gtceu:raw_dulysite',
+                '64x gtceu:raw_dulysite'
             )
         })
     }

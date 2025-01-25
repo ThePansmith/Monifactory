@@ -2,15 +2,14 @@ ServerEvents.recipes(event => {
     // T4MM missions
     advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 15, GTValues.MAX).forEach(builder => {
         builder
-        .itemInputs('8x kubejs:quantum_flux', '4x kubejs:wither_realm_data', '64x kubejs:petrotheum_dust')
+        .itemInputs('4x kubejs:quantum_flux', '2x kubejs:wither_realm_data', '16x kubejs:petrotheum_dust')
         .itemOutputs(
-            '64x gtceu:netherrack_pentlandite_ore',
-            '64x gtceu:netherrack_pentlandite_ore',
-            '64x gtceu:netherrack_chalcocite_ore',
-            '64x gtceu:netherrack_chalcocite_ore',
-            '64x gtceu:netherrack_cooperite_ore',
-            '64x gtceu:netherrack_cooperite_ore',
-            '64x gtceu:rock_salt_dust',
+            '64x gtceu:raw_pentlandite',
+            '64x gtceu:raw_pentlandite',
+            '64x gtceu:raw_chalcocite',
+            '64x gtceu:raw_chalcocite',
+            '64x gtceu:raw_cooperite',
+            '64x gtceu:raw_cooperite',
             '64x gtceu:rock_salt_dust'
         )
     })
@@ -61,25 +60,27 @@ ServerEvents.recipes(event => {
             builder
             .itemInputs('16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
             .itemOutputs(
-                '64x gtceu:endstone_cooperite_ore',
-                '64x gtceu:endstone_cooperite_ore',
-                '64x gtceu:naquadah_ore',
-                '64x gtceu:naquadah_ore',
-                '64x gtceu:naquadah_ore',
-                '48x gtceu:kaemanite_ore'
+                '64x gtceu:raw_cooperite',
+                '64x gtceu:raw_cooperite',
+                '64x gtceu:raw_cooperite',
+                '64x gtceu:raw_cooperite',
+                '64x gtceu:raw_naquadah',
+                '64x gtceu:raw_naquadah',
+                '64x gtceu:raw_naquadah',
+                '48x gtceu:raw_kaemanite'
             )
         } else {
             builder
             .itemInputs('16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
             .itemOutputs(
-                '64x gtceu:pollucite_ore',
-                '64x gtceu:pollucite_ore',
-                '64x gtceu:pollucite_ore',
-                '64x gtceu:snowchestite_ore',
-                '64x gtceu:snowchestite_ore',
-                '64x gtceu:snowchestite_ore',
-                '64x gtceu:snowchestite_ore',
-                '48x gtceu:kaemanite_ore'
+                '64x gtceu:raw_pollucite',
+                '64x gtceu:raw_pollucite',
+                '64x gtceu:raw_pollucite',
+                '64x gtceu:raw_snowchestite',
+                '64x gtceu:raw_snowchestite',
+                '64x gtceu:raw_snowchestite',
+                '64x gtceu:raw_snowchestite',
+                '48x gtceu:raw_kaemanite'
             )
         }
     })
@@ -88,11 +89,11 @@ ServerEvents.recipes(event => {
         builder
         .itemInputs('16x kubejs:quantum_flux', '32x kubejs:stabilized_uranium')
         .itemOutputs(
-            '64x gtceu:palladium_ore',
-            '64x gtceu:realgar_ore',
-            '64x gtceu:monazite_ore',
-            '64x gtceu:molybdenite_ore',
-            '16x gtceu:osmiridiumyes_ore'
+            '64x gtceu:raw_palladium',
+            '64x gtceu:raw_realgar',
+            '64x gtceu:raw_monazite',
+            '64x gtceu:raw_molybdenite',
+            '16x gtceu:raw_osmiridiumyes'
         )
     })
 
@@ -100,13 +101,13 @@ ServerEvents.recipes(event => {
         builder
         .itemInputs('16x kubejs:quantum_flux', '32x kubejs:stabilized_uranium')
         .itemOutputs(
-            '64x gtceu:uraninite_ore',
-            '64x gtceu:bastnasite_ore',
-            '64x gtceu:sphalerite_ore',
+            '64x gtceu:raw_uraninite',
+            '64x gtceu:raw_bastnasite',
+            '64x gtceu:raw_sphalerite',
             '64x gtceu:ender_pearl_block',
             '64x gtceu:boron_dust',
-            '64x gtceu:beryllium_ore',
-            '32x gtceu:fluorite_ore'
+            '64x gtceu:raw_beryllium',
+            '32x gtceu:raw_fluorite'
         )
     })
 
@@ -115,15 +116,15 @@ ServerEvents.recipes(event => {
         builder
         .itemInputs('16x kubejs:quantum_flux', '32x kubejs:stabilized_uranium', '16x kubejs:wither_realm_data')
         .itemOutputs(
-            '64x gtceu:uraninite_ore',
-            '64x gtceu:uraninite_ore',
-            '64x gtceu:uraninite_ore',
-            '64x gtceu:uraninite_ore',
-            '64x gtceu:osmiridiumyes_ore',
-            '64x gtceu:osmiridiumyes_ore',
-            '64x gtceu:iridosmineyes_ore',
-            '64x gtceu:iridosmineyes_ore',
-            '64x gtceu:iridosmineyes_ore'
+            '64x gtceu:raw_uraninite',
+            '64x gtceu:raw_uraninite',
+            '64x gtceu:raw_uraninite',
+            '64x gtceu:raw_uraninite',
+            '64x gtceu:raw_osmiridiumyes',
+            '64x gtceu:raw_osmiridiumyes',
+            '64x gtceu:raw_iridosmineyes',
+            '64x gtceu:raw_iridosmineyes',
+            '64x gtceu:raw_iridosmineyes'
         )
     })
 
@@ -135,12 +136,12 @@ ServerEvents.recipes(event => {
             '8x kubejs:quantum_flux',
         )
         .itemOutputs(
-            '64x gtceu:diamond_ore',
-            '64x gtceu:diamond_ore',
-            '32x gtceu:diamond_ore',
-            '64x gtceu:ruby_ore',
-            '64x gtceu:ruby_ore',
-            '64x gtceu:cinnabar_ore'
+            '64x gtceu:raw_diamond',
+            '64x gtceu:raw_diamond',
+            '32x gtceu:raw_diamond',
+            '64x gtceu:raw_ruby',
+            '64x gtceu:raw_ruby',
+            '64x gtceu:raw_cinnabar'
         )
     })
 

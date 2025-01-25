@@ -12,12 +12,12 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:quantum_flux', 'kubejs:gem_sensor')
         .inputFluids('gtceu:rocket_fuel 2000')
         .itemOutputs(
-            '64x gtceu:diamond_ore',
-            '64x gtceu:apatite_ore',
-            '64x gtceu:apatite_ore',
-            '64x gtceu:tricalcium_phosphate_ore',
-            '64x gtceu:tricalcium_phosphate_ore',
-            '64x gtceu:quartzite_ore'
+            '64x gtceu:raw_diamond',
+            '64x gtceu:raw_apatite',
+            '64x gtceu:raw_apatite',
+            '64x gtceu:raw_tricalcium_phosphate',
+            '64x gtceu:raw_tricalcium_phosphate',
+            '64x gtceu:raw_quartzite'
         )
     })
 
@@ -27,10 +27,10 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:rocket_fuel 2000')
         .itemOutputs(
             '64x kubejs:dense_iron_ore',
-            '64x gtceu:nickel_ore',
-            '64x gtceu:ilmenite_ore',
-            '64x gtceu:ilmenite_ore',
-            '64x gtceu:ilmenite_ore',
+            '64x gtceu:raw_nickel',
+            '64x gtceu:raw_ilmenite',
+            '64x gtceu:raw_ilmenite',
+            '64x gtceu:raw_ilmenite',
             
         )
     })
@@ -40,11 +40,11 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:quantum_flux', 'minecraft:chest')
         .inputFluids('gtceu:rocket_fuel 2000')
         .itemOutputs(
-            '64x gtceu:cassiterite_ore',
-            '64x gtceu:chalcopyrite_ore',
-            '64x gtceu:chalcopyrite_ore',
-            '64x gtceu:galena_ore',
-            '64x gtceu:galena_ore'
+            '64x gtceu:raw_cassiterite',
+            '64x gtceu:raw_chalcopyrite',
+            '64x gtceu:raw_chalcopyrite',
+            '64x gtceu:raw_galena',
+            '64x gtceu:raw_galena'
         )
     })
 
@@ -53,11 +53,11 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:quantum_flux', 'minecraft:chest')
         .inputFluids('gtceu:rocket_fuel 2000')
         .itemOutputs(
-            '64x gtceu:redstone_ore',
-            '64x gtceu:redstone_ore',
-            '64x gtceu:uraninite_ore',
-            '64x gtceu:uraninite_ore',
-            '64x gtceu:salt_ore'
+            '64x gtceu:raw_redstone',
+            '64x gtceu:raw_redstone',
+            '64x gtceu:raw_uraninite',
+            '64x gtceu:raw_uraninite',
+            '64x gtceu:raw_salt'
         )
     })
 
@@ -66,10 +66,10 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:quantum_flux', 'minecraft:chest')
         .inputFluids('gtceu:rocket_fuel 2000')
         .itemOutputs(
-            '64x gtceu:molybdenum_ore',
+            '64x gtceu:raw_molybdenum',
             '64x ad_astra:moon_sand',
-            '64x gtceu:dilithium_ore',
-            '64x gtceu:fluorite_ore'
+            '64x gtceu:raw_dilithium',
+            '64x gtceu:raw_fluorite'
         )
     })
 
@@ -86,10 +86,10 @@ ServerEvents.recipes(event => {
         .itemInputs('2x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
         .itemOutputs(
-            '64x gtceu:endstone_scheelite_ore',
-            '32x gtceu:endstone_scheelite_ore',
-            '64x gtceu:endstone_tungstate_ore',
-            '32x gtceu:endstone_tungstate_ore'
+            '64x gtceu:raw_scheelite',
+            '64x gtceu:raw_scheelite',
+            '64x gtceu:raw_tungstate',
+            '64x gtceu:raw_tungstate'
         )
     })
 
@@ -98,9 +98,11 @@ ServerEvents.recipes(event => {
         .itemInputs('2x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
         .itemOutputs(
-            '64x gtceu:endstone_pyrochlore_ore',
-            '64x gtceu:endstone_copper_ore',
-            '32x gtceu:endstone_cassiterite_ore',
+            '64x gtceu:raw_pyrochlore',
+            '64x gtceu:raw_pyrochlore',
+            '64x minecraft:raw_copper',
+            '64x minecraft:raw_copper',
+            '64x gtceu:raw_cassiterite',
             '64x kubejs:radium_salt'
         )
     })
@@ -110,12 +112,12 @@ ServerEvents.recipes(event => {
         .itemInputs('2x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
         .itemOutputs(
-            '64x gtceu:endstone_bauxite_ore',
-            '64x gtceu:endstone_bauxite_ore',
-            '64x gtceu:endstone_tantalite_ore',
-            '64x gtceu:endstone_tantalite_ore',
-            '64x gtceu:endstone_sphalerite_ore',
-            '64x gtceu:endstone_sphalerite_ore',
+            '64x gtceu:raw_bauxite',
+            '64x gtceu:raw_bauxite',
+            '64x gtceu:raw_tantalite',
+            '64x gtceu:raw_tantalite',
+            '64x gtceu:raw_sphalerite',
+            '64x gtceu:raw_sphalerite',
         )
     })
 
@@ -132,30 +134,30 @@ ServerEvents.recipes(event => {
 
     basic_microverse_mission(event, 2, 30, GTValues.VHA, GTValues.EV, 30, GTValues.MAX).forEach(builder => {
         builder
-        .itemInputs('gtceu:advanced_power_thruster', 'kubejs:gem_sensor', '32x kubejs:quantum_flux')
+        .itemInputs('gtceu:advanced_power_thruster', 'kubejs:gem_sensor', '16x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
         .itemOutputs(
-            '64x gtceu:endstone_dilithium_ore',
-            '64x gtceu:endstone_dilithium_ore',
-            '64x gtceu:endstone_dilithium_ore',
-            '64x gtceu:endstone_certus_quartz_ore',
-            '64x gtceu:endstone_certus_quartz_ore',
-            '64x gtceu:endstone_monazite_ore',
+            '64x gtceu:raw_dilithium',
+            '64x gtceu:raw_dilithium',
+            '64x gtceu:raw_dilithium',
+            '64x gtceu:raw_certus_quartz',
+            '64x gtceu:raw_certus_quartz',
+            '64x gtceu:raw_monazite',
         )
     })
 
     // T3MM missions
     basic_microverse_mission(event, 3, 35, GTValues.VA, GTValues.EV, 10, GTValues.MAX).forEach(builder => {
         builder
-        .itemInputs('4x kubejs:quantum_flux', 'gtceu:mv_super_chest')
+        .itemInputs('2x kubejs:quantum_flux', 'gtceu:mv_super_chest')
         .inputFluids('gtceu:rocket_fuel 5000')
         .itemOutputs(
-            '64x gtceu:netherrack_scheelite_ore',
-            '64x gtceu:netherrack_scheelite_ore',
-            '64x gtceu:netherrack_scheelite_ore',
-            '64x gtceu:netherrack_tungstate_ore',
-            '64x gtceu:netherrack_tungstate_ore',
-            '64x gtceu:netherrack_tungstate_ore'
+            '64x gtceu:raw_scheelite',
+            '64x gtceu:raw_scheelite',
+            '64x gtceu:raw_scheelite',
+            '64x gtceu:raw_tungstate',
+            '64x gtceu:raw_tungstate',
+            '64x gtceu:raw_tungstate'
         )
     })
 
@@ -164,11 +166,11 @@ ServerEvents.recipes(event => {
         .itemInputs('4x kubejs:quantum_flux', 'gtceu:mv_super_chest')
         .inputFluids('gtceu:rocket_fuel 5000')
         .itemOutputs(
-            '64x gtceu:netherrack_vanadium_magnetite_ore',
-            '64x gtceu:netherrack_tetrahedrite_ore',
-            '64x gtceu:netherrack_cobaltite_ore',
-            '16x gtceu:netherrack_laurite_ore',
-            '8x gtceu:netherrack_cuprorhodsite_ore'
+            '64x gtceu:raw_vanadium_magnetite',
+            '64x gtceu:raw_tetrahedrite',
+            '64x gtceu:raw_cobaltite',
+            '16x gtceu:raw_laurite',
+            '8x gtceu:raw_cuprorhodsite'
         )
     })
 
@@ -177,12 +179,12 @@ ServerEvents.recipes(event => {
         .itemInputs('4x kubejs:quantum_flux', 'gtceu:mv_super_chest')
         .inputFluids('gtceu:rocket_fuel 5000')
         .itemOutputs(
-            '64x gtceu:netherrack_ilmenite_ore',
-            '64x gtceu:netherrack_cassiterite_ore',
-            '64x gtceu:netherrack_tin_ore',
-            '64x gtceu:netherrack_certus_quartz_ore',
-            '64x gtceu:netherrack_almandine_ore',
-            '64x gtceu:netherrack_lepidolite_ore'
+            '64x gtceu:raw_ilmenite',
+            '64x gtceu:raw_cassiterite',
+            '64x gtceu:raw_tin',
+            '64x gtceu:raw_certus_quartz',
+            '64x gtceu:raw_almandine',
+            '64x gtceu:raw_lepidolite'
         )
     })
 
@@ -191,11 +193,11 @@ ServerEvents.recipes(event => {
         .itemInputs('4x kubejs:quantum_flux', 'kubejs:gem_sensor')
         .inputFluids('gtceu:rocket_fuel 5000')
         .itemOutputs(
-            '48x gtceu:diamond_ore',
-            '32x gtceu:ruby_ore',
-            '24x gtceu:topaz_ore',
-            '16x gtceu:emerald_ore',
-            '32x gtceu:netherrack_sapphire_ore'
+            '64x gtceu:raw_sapphire',
+            '48x gtceu:raw_diamond',
+            '32x gtceu:raw_ruby',
+            '24x gtceu:raw_topaz',
+            '16x gtceu:raw_emerald'  
         )
     })
 
@@ -204,12 +206,12 @@ ServerEvents.recipes(event => {
         .itemInputs('4x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 5000')
         .itemOutputs(
-            '64x gtceu:netherrack_gold_ore',
-            '64x gtceu:netherrack_gold_ore',
-            '64x gtceu:netherrack_silver_ore',
-            '64x gtceu:netherrack_silver_ore',
-            '64x gtceu:netherrack_redstone_ore',
-            '64x gtceu:netherrack_redstone_ore'
+            '64x minecraft:raw_gold',
+            '64x minecraft:raw_gold',
+            '64x gtceu:raw_silver',
+            '64x gtceu:raw_silver',
+            '64x gtceu:raw_redstone',
+            '64x gtceu:raw_redstone'
         )
     })
 
@@ -218,11 +220,11 @@ ServerEvents.recipes(event => {
         .itemInputs('4x kubejs:quantum_flux', 'gtceu:hv_super_chest')
         .inputFluids('gtceu:rocket_fuel 5000')
         .itemOutputs(
-            '64x gtceu:netherrack_salt_ore',
-            '64x gtceu:netherrack_salt_ore',
-            '64x gtceu:netherrack_barite_ore',
-            '64x gtceu:netherrack_apatite_ore',
-            '32x gtceu:netherrack_neodymium_ore',
+            '64x gtceu:raw_salt',
+            '64x gtceu:raw_salt',
+            '64x gtceu:raw_barite',
+            '64x gtceu:raw_apatite',
+            '32x gtceu:raw_neodymium',
         )
     })
 
@@ -231,11 +233,11 @@ ServerEvents.recipes(event => {
         .itemInputs('4x kubejs:quantum_flux', 'gtceu:hv_super_chest')
         .inputFluids('gtceu:rocket_fuel 5000')
         .itemOutputs(
-            '64x gtceu:netherrack_chromite_ore',
-            '64x gtceu:netherrack_chromite_ore',
-            '64x gtceu:netherrack_chromite_ore',
-            '64x gtceu:netherrack_pyrope_ore',
-            '64x gtceu:netherrack_pyrope_ore'
+            '64x gtceu:raw_chromite',
+            '64x gtceu:raw_chromite',
+            '64x gtceu:raw_chromite',
+            '64x gtceu:raw_pyrope',
+            '64x gtceu:raw_pyrope'
         )
     })
 
