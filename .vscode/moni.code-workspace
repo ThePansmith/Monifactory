@@ -7,9 +7,24 @@
             "name": "KubeJS",
             "path": "../kubejs"
         },{
+            "name": "Configs",
+            "path": "../config"
+        },{
+            "name": "Configs overrides",
+            "path": "../config-overrides"
+        },{
+            "name": "Configs defaults",
+            "path": "../defaultconfigs"
+        },{
+            "name": "Quests",
+            "path": "../config/ftbquests/quests"
+        },{
+            "name": "Logs",
+            "path": "../logs"
+        },{
             "name": "Build",
             "path": "../tools/build"
-        }
+        },
     ],
     "settings": {}
 }
