@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     // T5MM mission
-    microverse_mission(event, 5, 3, 140, GTValues.VA, GTValues.ZPM, 75, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 5, 3, 280, GTValues.VA, GTValues.ZPM, 75, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     })
 
     // T7MM missions
-    microverse_mission(event, 7, 3, 75, GTValues.VA, GTValues.LuV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 7, 3, 140, GTValues.VA, GTValues.LuV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '64x kubejs:dilithium_crystal',
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:lair_of_the_warden_data')
     })
 
-    microverse_mission(event, 7, 3, 75, GTValues.VA, GTValues.LuV, 75, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 7, 3, 160, GTValues.VA, GTValues.LuV, 75, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 7, 3, 75, GTValues.VA, GTValues.LuV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 7, 3, 120, GTValues.VA, GTValues.LuV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
     })
 
     // T8MM missions
-    microverse_mission(event, 8, 3, 75, GTValues.VHA, GTValues.ZPM, 75, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 8, 3, 160, GTValues.VHA, GTValues.ZPM, 75, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '32x kubejs:quantum_flux',
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
             'kubejs:lair_of_the_warden_data'
         )
         .itemOutputs(
-            '4x kubejs:hadal_shard',
+            '6x kubejs:hadal_shard',
             '64x minecraft:sculk_catalyst',
             '48x minecraft:sculk_catalyst',
             '64x kubejs:warden_horn',
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 8, 3, 90, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 8, 3, 160, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '32x kubejs:quantum_flux',
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 8, 3, 100, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 8, 3, 200, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '32x kubejs:quantum_flux',

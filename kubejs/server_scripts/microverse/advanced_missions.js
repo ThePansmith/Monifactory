@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     // T4MM missions
-    microverse_mission(event, 4, 2, 80, GTValues.VHA, GTValues.IV, 40, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 4, 2, 160, GTValues.VHA, GTValues.IV, 40, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .itemInputs('16x kubejs:petrotheum_dust')
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 4, 2, 80, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 4, 2, 160, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .itemInputs('16x kubejs:petrotheum_dust')
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 4, 2, 80, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 4, 2, 160, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .itemInputs('16x kubejs:petrotheum_dust')
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 4, 2, 80, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 4, 2, 160, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .itemInputs('16x kubejs:petrotheum_dust')
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 4, 2, 80, GTValues.VHA, GTValues.IV, 15, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 4, 2, 160, GTValues.VHA, GTValues.IV, 15, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .itemInputs('16x kubejs:petrotheum_dust')
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
     })
 
     // T5MM missions
-    microverse_mission(event, 5, 2, 100, GTValues.VA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 5, 2, 200, GTValues.VA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {
         if(isNormalMode) {
             builder
             .itemInputs('8x kubejs:quantum_flux')
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    microverse_mission(event, 5, 2, 100, GTValues.VA, GTValues.IV, 20, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 5, 2, 200, GTValues.VA, GTValues.IV, 20, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('8x kubejs:quantum_flux')
         .itemInputs('16x kubejs:stabilized_uranium')
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 5, 2, 100, GTValues.VA, GTValues.IV, 10, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 5, 2, 200, GTValues.VA, GTValues.IV, 10, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('8x kubejs:quantum_flux')
         .itemInputs('16x kubejs:stabilized_uranium')
@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
     })
 
     // T6MM missions
-    microverse_mission(event, 6, 2, 120, GTValues.VHA, GTValues.LuV, 40, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 6, 2, 240, GTValues.VHA, GTValues.LuV, 40, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('16x kubejs:quantum_flux')
         .itemInputs('32x kubejs:stabilized_uranium')
@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 6, 2, 120, GTValues.VHA, GTValues.LuV, 75, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 6, 2, 240, GTValues.VHA, GTValues.LuV, 75, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('16x kubejs:quantum_flux')
         .itemInputs('32x kubejs:stabilized_plutonium')
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 6, 2, 120, GTValues.VHA, GTValues.LuV, 40, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 6, 2, 240, GTValues.VHA, GTValues.LuV, 40, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('16x kubejs:quantum_flux')
         .itemInputs('32x kubejs:stabilized_curium')
@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    microverse_mission(event, 6, 2, 120, GTValues.VHA, GTValues.LuV, 75, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 6, 2, 240, GTValues.VHA, GTValues.LuV, 75, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('16x kubejs:quantum_flux')
         .itemInputs('32x kubejs:stabilized_plutonium')
