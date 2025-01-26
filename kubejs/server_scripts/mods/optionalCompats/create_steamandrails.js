@@ -98,17 +98,15 @@ if (Platform.isLoaded('railways')) {
 				[STRING] railItem is the item used for the rails themselves, typically iron or gold nuggets.
 				[INT]	 outputCount is the amount of tracks given from the recipe.
 			*/
-            event.shaped(
-                `${outputCount}x ${outputItem}`, [
-                    '   ',
-                    'IHI',
-                    'SSS'
-                ], {
-                    H: "#forge:tools/hammers",
-                    I: `${railItem}`,
-                    S: `${sleeperItem}`
-                }
-            );
+            event.shaped(`${outputCount}x ${outputItem}`, [
+                '   ',
+                'IHI',
+                'SSS'
+            ], {
+                H: "#forge:tools/hammers",
+                I: `${railItem}`,
+                S: `${sleeperItem}`
+            });
             event.recipes.gtceu.assembler(`kubejs:${outputItem.replace(/^.*:/, '')}`)
                 .itemInputs(
                     `3x ${sleeperItem}`,
@@ -126,17 +124,15 @@ if (Platform.isLoaded('railways')) {
 				[STRING] outputItem is the track that the recipe gives.
 				[INT]	 outputCount is the amount of tracks given from the recipe.
 			*/
-            event.shaped(
-                `${outputCount}x ${outputItem}`, [
-                    '   ',
-                    ' H ',
-                    'STS'
-                ], {
-                    H: "#forge:tools/hammers",
-                    S: `${sleeperItem}`,
-                    T: `${inputTrackItem}`
-                }
-            );
+            event.shaped(`${outputCount}x ${outputItem}`, [
+                '   ',
+                ' H ',
+                'STS'
+            ], {
+                H: "#forge:tools/hammers",
+                S: `${sleeperItem}`,
+                T: `${inputTrackItem}`
+            });
             event.recipes.gtceu.assembler(`kubejs:${outputItem.replace(/^.*:/, '')}`)
                 .itemInputs(
                     `2x ${sleeperItem}`,
@@ -154,16 +150,14 @@ if (Platform.isLoaded('railways')) {
 				[STRING] sleeperOutputItem is the sleeper that the recipe can give back as an output.
 				[INT] 	 outputCount is the amount of tracks given from the recipe.
 			*/
-            event.shaped(
-                `${outputCount}x ${outputItem}`, [
-                    '   ',
-                    ' H ',
-                    ' T '
-                ], {
-                    H: "#forge:tools/saws",
-                    T: `${inputTrackItem}`,
-                }
-            );
+            event.shaped(`${outputCount}x ${outputItem}`, [
+                '   ',
+                ' H ',
+                ' T '
+            ], {
+                H: "#forge:tools/saws",
+                T: `${inputTrackItem}`,
+            });
             event.recipes.gtceu.cutter(`kubejs:${outputItem.replace(/^.*:/, '')}`)
                 .itemInputs(`${inputTrackItem}`)
                 .itemOutputs(`${outputCount}x ${outputItem}`)

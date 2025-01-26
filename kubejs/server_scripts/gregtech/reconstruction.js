@@ -90,18 +90,17 @@ ServerEvents.recipes(event => {
         ['uiv', 'holmium']
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
-        event.shaped(
-            `gtceu:${tier}_atomic_reconstructor`, [
-                'CPC',
-                'EHE',
-                'PPM'
-            ], {
-                P: `gtceu:${plate}_plate`,
-                E: `gtceu:${tier}_emitter`,
-                H: `gtceu:${tier}_machine_hull`,
-                C: `#gtceu:circuits/${tier}`,
-                M: `gtceu:${tier}_electric_motor`
-            }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
+        event.shaped(`gtceu:${tier}_atomic_reconstructor`, [
+            'CPC',
+            'EHE',
+            'PPM'
+        ], {
+            P: `gtceu:${plate}_plate`,
+            E: `gtceu:${tier}_emitter`,
+            H: `gtceu:${tier}_machine_hull`,
+            C: `#gtceu:circuits/${tier}`,
+            M: `gtceu:${tier}_electric_motor`
+        }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
     })
 
     // Crystal Gears

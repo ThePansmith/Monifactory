@@ -20,22 +20,20 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_nickel'
         }).noMirror().noShrink()
 
-        event.shaped(
-            Item.of('ulvcovm:ulv_robot_arm'), [
-                '   ',
-                ' A ',
-                '  A'
-            ], {
-                A: 'kubejs:moni_nickel'
-            }).noMirror().noShrink()
+        event.shaped(Item.of('ulvcovm:ulv_robot_arm'), [
+            '   ',
+            ' A ',
+            '  A'
+        ], {
+            A: 'kubejs:moni_nickel'
+        }).noMirror().noShrink()
 
-        event.shaped(
-            Item.of('ulvcovm:ulv_fluid_regulator'), [
-                '   ',
-                '  A',
-                '  A'
-            ], {
-                A: 'kubejs:moni_nickel'
-            }).noMirror().noShrink()
+        event.shaped(Item.of('ulvcovm:ulv_fluid_regulator'), [
+            '   ',
+            '  A',
+            '  A'
+        ], {
+            A: 'kubejs:moni_nickel'
+        }).noMirror().noShrink()
     }
 })

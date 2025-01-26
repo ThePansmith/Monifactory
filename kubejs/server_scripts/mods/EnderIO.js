@@ -270,17 +270,15 @@ ServerEvents.recipes(event => {
     ]
 
     capacitorCores.forEach(core => {
-        event.shaped(
-            `${core[1]}x enderio:basic_capacitor`, [
-                ' N ',
-                'NCN',
-                'W W'
-            ], {
-                N: '#forge:ingots/electrical_steel',
-                C: core[0],
-                W: 'gtceu:tin_single_wire'
-            }
-        ).id(`kubejs:basic_capacitor_${Item.of(core[0]).idLocation.path}`)
+        event.shaped(`${core[1]}x enderio:basic_capacitor`, [
+            ' N ',
+            'NCN',
+            'W W'
+        ], {
+            N: '#forge:ingots/electrical_steel',
+            C: core[0],
+            W: 'gtceu:tin_single_wire'
+        }).id(`kubejs:basic_capacitor_${Item.of(core[0]).idLocation.path}`)
     })
 
     // Compressed caps

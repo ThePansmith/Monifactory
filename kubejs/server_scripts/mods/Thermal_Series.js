@@ -139,52 +139,48 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     /* === AUGMENTS/UPGRADES ===*/
-    event.shaped(
-        Item.of('thermal:upgrade_augment_1', '{AugmentData:{BaseMod:1.5f,Type:"Upgrade"}}'), [
-            'ABA',
-            'RGR',
-            'ABA'
-        ], {
-            A: 'gtceu:invar_screw',
-            B: 'gtceu:double_invar_plate',
-            G: 'gtceu:electrical_steel_gear',
-            R: 'gtceu:fine_red_alloy_wire'
-        })
+    event.shaped(Item.of('thermal:upgrade_augment_1', '{AugmentData:{BaseMod:1.5f,Type:"Upgrade"}}'), [
+        'ABA',
+        'RGR',
+        'ABA'
+    ], {
+        A: 'gtceu:invar_screw',
+        B: 'gtceu:double_invar_plate',
+        G: 'gtceu:electrical_steel_gear',
+        R: 'gtceu:fine_red_alloy_wire'
+    })
 
-    event.shaped(
-        Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:2.5f,Type:"Upgrade"}}'), [
-            'PGP',
-            'BCB',
-            'PGP'
-        ], {
-            B: 'gtceu:cobalt_brass_gear',
-            P: 'gtceu:double_electrum_plate',
-            G: 'thermal:obsidian_glass',
-            C: 'thermal:upgrade_augment_1'
-        })
+    event.shaped(Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:2.5f,Type:"Upgrade"}}'), [
+        'PGP',
+        'BCB',
+        'PGP'
+    ], {
+        B: 'gtceu:cobalt_brass_gear',
+        P: 'gtceu:double_electrum_plate',
+        G: 'thermal:obsidian_glass',
+        C: 'thermal:upgrade_augment_1'
+    })
 
-    event.shaped(
-        Item.of('thermal:upgrade_augment_4', '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
-            'RSR',
-            'SCS',
-            'RSR'
-        ], {
-            R: 'gtceu:restonia_gear',
-            S: 'gtceu:signalum_plate',
-            C: 'thermal:upgrade_augment_2'
-        })
+    event.shaped(Item.of('thermal:upgrade_augment_4', '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
+        'RSR',
+        'SCS',
+        'RSR'
+    ], {
+        R: 'gtceu:restonia_gear',
+        S: 'gtceu:signalum_plate',
+        C: 'thermal:upgrade_augment_2'
+    })
 
-    event.shaped(
-        Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:10.0f,Type:"Upgrade"}}'), [
-            'ABG',
-            'BCB',
-            'GBA'
-        ], {
-            A: 'gtceu:double_cryolobus_plate',
-            B: 'gtceu:enderium_plate',
-            C: 'thermal:upgrade_augment_4',
-            G: 'gtceu:small_tungsten_carbide_gear'
-        })
+    event.shaped(Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:10.0f,Type:"Upgrade"}}'), [
+        'ABG',
+        'BCB',
+        'GBA'
+    ], {
+        A: 'gtceu:double_cryolobus_plate',
+        B: 'gtceu:enderium_plate',
+        C: 'thermal:upgrade_augment_4',
+        G: 'gtceu:small_tungsten_carbide_gear'
+    })
 
     event.shaped('thermal:dynamo_fuel_augment', [
         'PIP',
@@ -260,8 +256,7 @@ ServerEvents.recipes(event => {
         E: '#forge:ingots/electrum',
         N: '#forge:springs/lead',
         C: 'kubejs:excitationcoil'
-    }
-    ).id('thermal:augments/dynamo_throttle_augment');
+    }).id('thermal:augments/dynamo_throttle_augment');
 
     event.shaped('thermal:machine_catalyst_augment', [
         ' A ',
@@ -325,8 +320,7 @@ ServerEvents.recipes(event => {
             C: 'ironfurnaces:iron_furnace',
             D: 'gtceu:wrought_iron_gear',
             E: 'systeams:boiler_pipe'
-        }
-        )
+        })
     }
 
     event.shaped('thermal:dynamo_magmatic', [
@@ -387,8 +381,7 @@ ServerEvents.recipes(event => {
         C: 'thermal:machine_frame',
         D: '#forge:gears/copper',
         E: 'thermal:rf_coil'
-    }
-    ).id('kubejs:machine_press');
+    }).id('kubejs:machine_press');
 
     // energetic infuser
     event.remove({ id: 'thermal:charge_bench' });
@@ -524,8 +517,7 @@ ServerEvents.recipes(event => {
         A: 'thermal:basalz_powder',
         B: 'minecraft:redstone',
         C: 'gtceu:obsidian_dust'
-    }
-    ).noMirror().noShrink()
+    }).noMirror().noShrink()
 
     event.recipes.gtceu.mixer("mixer_petrotheum")
         .itemInputs("2x thermal:basalz_powder", "minecraft:redstone", "gtceu:obsidian_dust")
@@ -541,8 +533,7 @@ ServerEvents.recipes(event => {
         A: 'minecraft:blaze_powder',
         B: 'minecraft:redstone',
         C: 'gtceu:sulfur_dust'
-    }
-    ).noMirror().noShrink()
+    }).noMirror().noShrink()
 
     event.recipes.gtceu.mixer("mixer_pyrotheum")
         .itemInputs("2x minecraft:blaze_powder", "minecraft:redstone", "gtceu:sulfur_dust")
@@ -558,8 +549,7 @@ ServerEvents.recipes(event => {
         A: 'thermal:blitz_powder',
         B: 'minecraft:redstone',
         C: 'gtceu:saltpeter_dust'
-    }
-    ).noMirror().noShrink()
+    }).noMirror().noShrink()
 
     event.recipes.gtceu.mixer("mixer_aerotheum")
         .itemInputs("2x thermal:blitz_powder", "minecraft:redstone", "gtceu:saltpeter_dust")
@@ -575,8 +565,7 @@ ServerEvents.recipes(event => {
         A: 'thermal:blizz_powder',
         B: 'minecraft:redstone',
         C: 'minecraft:snowball'
-    }
-    ).noMirror().noShrink()
+    }).noMirror().noShrink()
 
     event.recipes.gtceu.mixer("mixer_cryotheum")
         .itemInputs("2x thermal:blizz_powder", "minecraft:redstone", "minecraft:snowball")

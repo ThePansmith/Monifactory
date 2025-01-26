@@ -12,7 +12,6 @@ ServerEvents.recipes(event => {
             B: 'minecraft:bucket',
             C: 'gtceu:iron_gear',
             D: '#enderio:fused_quartz'
-        }
-        )
+        })
     }
 })

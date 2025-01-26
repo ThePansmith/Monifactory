@@ -21,8 +21,7 @@ ServerEvents.recipes(event => {
         C: 'kubejs:ultimate_file',
         D: 'kubejs:infinity_power_unit',
         E: 'gtceu:omnium_ingot'
-    }
-    );
+    });
 
     // Infinity Hammer
     event.recipes.extendedcrafting.shaped_table('kubejs:infinity_hammer', [
@@ -41,8 +40,7 @@ ServerEvents.recipes(event => {
         C: 'kubejs:ultimate_hammer',
         D: 'kubejs:infinity_power_unit',
         E: 'gtceu:omnium_ingot'
-    }
-    );
+    });
 
     // Infinity Screwdriver
     event.recipes.extendedcrafting.shaped_table('kubejs:infinity_screwdriver', [
@@ -61,8 +59,7 @@ ServerEvents.recipes(event => {
         C: 'kubejs:ultimate_screwdriver',
         D: 'kubejs:infinity_power_unit',
         E: 'gtceu:omnium_ingot'
-    }
-    );
+    });
 
     // Infinity Wrench
     event.recipes.extendedcrafting.shaped_table('kubejs:infinity_wrench', [
@@ -80,8 +77,7 @@ ServerEvents.recipes(event => {
         B: 'gtceu:infinity_plate',
         C: 'kubejs:ultimate_wrench',
         D: 'kubejs:infinity_power_unit'
-    }
-    );
+    });
 
     // Infinity Wire Cutter
     event.recipes.extendedcrafting.shaped_table('kubejs:infinity_wire_cutter', [
@@ -100,8 +96,7 @@ ServerEvents.recipes(event => {
         C: 'kubejs:ultimate_wire_cutter',
         D: 'kubejs:infinity_power_unit',
         E: 'gtceu:omnium_ingot'
-    }
-    );
+    });
 
     // Ultimate File
     event.recipes.extendedcrafting.shaped_table('kubejs:ultimate_file', [
@@ -119,8 +114,7 @@ ServerEvents.recipes(event => {
         D: 'kubejs:ultimate_core',
         E: 'kubejs:ultimate_gem',
         F: 'gtceu:crystal_matrix_ingot'
-    }
-    );
+    });
 
     // Ultimate Hammer
     event.recipes.extendedcrafting.shaped_table('kubejs:ultimate_hammer', [
@@ -138,8 +132,7 @@ ServerEvents.recipes(event => {
         D: 'kubejs:ultimate_core',
         E: 'kubejs:ultimate_gem',
         F: 'gtceu:crystal_matrix_ingot'
-    }
-    );
+    });
 
     // Ultimate Screwdriver
     event.recipes.extendedcrafting.shaped_table('kubejs:ultimate_screwdriver', [
@@ -157,8 +150,7 @@ ServerEvents.recipes(event => {
         D: 'kubejs:ultimate_core',
         E: 'kubejs:ultimate_gem',
         F: 'gtceu:crystal_matrix_ingot'
-    }
-    );
+    });
 
     // Ultimate Wrench
     event.recipes.extendedcrafting.shaped_table('kubejs:ultimate_wrench', [
@@ -175,8 +167,7 @@ ServerEvents.recipes(event => {
         A: 'kubejs:the_ultimate_material',
         D: 'kubejs:ultimate_core',
         E: 'kubejs:ultimate_gem'
-    }
-    );
+    });
 
     // Ultimate Wire Cutter
     event.recipes.extendedcrafting.shaped_table('kubejs:ultimate_wire_cutter', [
@@ -194,8 +185,7 @@ ServerEvents.recipes(event => {
         D: 'kubejs:ultimate_core',
         E: 'kubejs:ultimate_gem',
         F: 'gtceu:crystal_matrix_ingot'
-    }
-    );
+    });
 
     // Ultimate Core
     event.recipes.extendedcrafting.shaped_table('kubejs:ultimate_core', [
@@ -220,8 +210,7 @@ ServerEvents.recipes(event => {
         I: 'gtceu:gravi_star',
         J: 'kubejs:quasi_stable_neutron_star',
         K: 'kubejs:wither_bone'
-    }
-    )
+    })
 
     // Infinity Power Unit
     event.recipes.gtceu.assembly_line('infinity_toolset/infinity_power_unit')
@@ -248,8 +237,7 @@ ServerEvents.recipes(event => {
     ], {
         R: "gtceu:dark_steel_rod",
         H: "#forge:tools/hammers"
-    }
-    )
+    })
     event.recipes.gtceu.assembler('dark_steel_bars')
         .itemInputs('6x gtceu:dark_steel_rod')
         .itemOutputs('3x enderio:dark_steel_bars')
@@ -264,6 +252,5 @@ ServerEvents.recipes(event => {
         P: "gtceu:dense_obsidian_plate",
         B: "enderio:dark_steel_bars",
         I: "gtceu:double_titanium_tungsten_carbide_plate"
-    }
-    )
+    })
 })

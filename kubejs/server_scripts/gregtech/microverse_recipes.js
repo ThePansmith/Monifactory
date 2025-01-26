@@ -670,16 +670,15 @@ ServerEvents.recipes(event => {
     ]
 
     projector.forEach(projector => {
-        event.shaped(
-            `gtceu:${projector[0]}`, [
-                'CMC',
-                'MAM',
-                'CMC'
-            ], {
-                C: projector[1],
-                M: 'kubejs:microverse_casing',
-                A: 'gtceu:computer_monitor_cover'
-            }).id(`kubejs:${projector[0]}`)
+        event.shaped(`gtceu:${projector[0]}`, [
+            'CMC',
+            'MAM',
+            'CMC'
+        ], {
+            C: projector[1],
+            M: 'kubejs:microverse_casing',
+            A: 'gtceu:computer_monitor_cover'
+        }).id(`kubejs:${projector[0]}`)
     })
 
     event.recipes.extendedcrafting.shaped_table('gtceu:hyperbolic_microverse_projector', [

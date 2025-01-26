@@ -18,8 +18,7 @@ ServerEvents.recipes(event => {
             S: 'gtceu:uv_sensor',
             F: 'gtceu:uv_field_generator',
             C: '#gtceu:circuits/uv'
-        }
-        )
+        })
         // //// Actualization recipes /////
         event.recipes.gtceu.actualization_chamber('pristine_t1_one')
             .itemInputs('kubejs:pristine_matter_t1')

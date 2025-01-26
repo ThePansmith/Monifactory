@@ -188,8 +188,7 @@ if (Platform.isLoaded('create')) {
                 H: "#forge:tools/hammers",
                 I: "minecraft:iron_nugget",
                 S: "#create:sleepers"
-            }
-            )
+            })
             event.recipes.gtceu.assembler('kubejs:createtracks')
                 .itemInputs('3x #create:sleepers', "2x minecraft:iron_nugget")
                 .itemOutputs('2x create:track')

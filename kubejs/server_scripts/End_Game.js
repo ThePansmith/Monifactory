@@ -449,8 +449,7 @@ ServerEvents.recipes(event => {
             X: 'kubejs:infinity_wrench',
             Y: 'kubejs:infinity_hammer',
             Z: 'kubejs:infinity_wire_cutter'
-        }
-        )
+        })
     } else {
         event.recipes.extendedcrafting.shaped_table('2x gtceu:creative_chest', [
             'BMMMMMMMMMB',
@@ -487,7 +486,6 @@ ServerEvents.recipes(event => {
             X: 'kubejs:infinity_wrench',
             Y: 'kubejs:infinity_hammer',
             Z: 'kubejs:infinity_wire_cutter'
-        }
-        )
+        })
     }
 })

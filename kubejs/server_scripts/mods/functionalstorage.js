@@ -85,15 +85,14 @@ ServerEvents.recipes(event => {
     // Framed Drawers
     const miscframing = ["storage_controller", "simple_compacting_drawer", "controller_extension"]
     miscframing.forEach(Block => {
-        event.shaped(
-            `functionalstorage:framed_${Block}`, [
-                'III',
-                'IBI',
-                'III'
-            ], {
-                I: 'minecraft:iron_nugget',
-                B: `functionalstorage:${Block}`
-            }).id(`functionalstorage:framed_${Block}`)
+        event.shaped(`functionalstorage:framed_${Block}`, [
+            'III',
+            'IBI',
+            'III'
+        ], {
+            I: 'minecraft:iron_nugget',
+            B: `functionalstorage:${Block}`
+        }).id(`functionalstorage:framed_${Block}`)
     })
 
     // Framed Compacting Drawer has a nonstandard ID for some reason
@@ -115,16 +114,15 @@ ServerEvents.recipes(event => {
     ]
     upgradeTiers.forEach((tier, tierIndex) => {
         event.remove({ id: `functionalstorage:${tier[0]}_upgrade` })
-        event.shaped(
-            `2x functionalstorage:${tier[0]}_upgrade`, [
-                'PUP',
-                'PGP',
-                'PUP'
-            ], {
-                P: `#forge:plates/${tier[2]}`,
-                G: `#forge:double_plates/${tier[1]}`,
-                U: tierIndex == 0 ? '#functionalstorage:drawer' : (`functionalstorage:${upgradeTiers[tierIndex - 1][0]}_upgrade`),
-            }).id(`functionalstorage:${tier[2]}_upgrade`)
+        event.shaped(`2x functionalstorage:${tier[0]}_upgrade`, [
+            'PUP',
+            'PGP',
+            'PUP'
+        ], {
+            P: `#forge:plates/${tier[2]}`,
+            G: `#forge:double_plates/${tier[1]}`,
+            U: tierIndex == 0 ? '#functionalstorage:drawer' : (`functionalstorage:${upgradeTiers[tierIndex - 1][0]}_upgrade`),
+        }).id(`functionalstorage:${tier[2]}_upgrade`)
     })
 
     // Custom coin compacting recipes

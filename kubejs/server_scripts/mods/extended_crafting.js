@@ -202,16 +202,15 @@ ServerEvents.recipes(event => {
         ['epic', 'activated_netherite']
     ]
     dupable_tables.forEach((value) => {
-        event.shaped(
-            `2x extendedcrafting:${value[0]}_table`, [
-                'ABA',
-                'BCB',
-                'ABA'
-            ], {
-                A: `#forge:storage_blocks/${value[1]}`,
-                B: `extendedcrafting:${value[0]}_catalyst`,
-                C: `extendedcrafting:${value[0]}_table`
-            }).id(`${value[0]}_table_dupe`)
+        event.shaped(`2x extendedcrafting:${value[0]}_table`, [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: `#forge:storage_blocks/${value[1]}`,
+            B: `extendedcrafting:${value[0]}_catalyst`,
+            C: `extendedcrafting:${value[0]}_table`
+        }).id(`${value[0]}_table_dupe`)
     })
 
     event.remove({ output: 'extendedcrafting:crafting_core' })

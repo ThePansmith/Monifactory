@@ -22,8 +22,7 @@ if (Platform.isLoaded('modularrouters')) {
             P: 'gtceu:dark_steel_plate',
             C: '#gtceu:circuits/lv',
             B: 'enderio:dark_steel_bars'
-        }
-        )
+        })
 
         event.replaceInput(/modularrouters:(sender|puller)_module_2(_x4)?/, 'minecraft:ender_pearl', 'enderio:pulsating_crystal')
 

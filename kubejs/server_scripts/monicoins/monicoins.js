@@ -11,8 +11,7 @@ ServerEvents.recipes(event => {
             ' A '
         ], {
             A: 'kubejs:moni_penny'
-        }
-        )
+        })
     }
 
     event.shapeless('5x kubejs:moni_nickel', 'kubejs:moni_quarter')

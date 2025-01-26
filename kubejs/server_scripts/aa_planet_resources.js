@@ -30,8 +30,7 @@ ServerEvents.recipes(event => {
         ], {
             A: planetResources[2],
             B: `kubejs:${planetResources[1]}`
-        }
-        )
+        })
     })
 
     // Rock dust centrifuging

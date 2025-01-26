@@ -21,8 +21,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'minecraft:skeleton_skull',
             B: 'hostilenetworks:nether_prediction'
-        }
-        ).noMirror().noShrink()
+        }).noMirror().noShrink()
 
         event.shapeless("minecraft:feather", ["hostilenetworks:overworld_prediction", "minecraft:string"])
 
@@ -43,8 +42,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:electrical_steel_plate',
             C: '#gtceu:circuits/lv',
             D: 'kubejs:pulsating_mesh'
-        }
-        )
+        })
 
         event.shaped('kubejs:dark_steel_machine_hull', [
             'AAA',
@@ -53,8 +51,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'gtceu:dark_steel_plate',
             B: 'gtceu:lv_machine_hull'
-        }
-        )
+        })
 
         event.recipes.gtceu.assembler('dark_steel_machine_hull')
             .itemInputs('gtceu:lv_machine_hull', '8x #forge:plates/dark_steel')
@@ -72,8 +69,7 @@ ServerEvents.recipes(event => {
             B: '#gtceu:circuits/lv',
             C: 'minecraft:glass_pane',
             D: 'kubejs:dark_steel_machine_hull'
-        }
-        )
+        })
 
         event.shaped('hostilenetworks:loot_fabricator', [
             'ACA',
@@ -85,8 +81,7 @@ ServerEvents.recipes(event => {
             C: 'minecraft:glass_pane',
             D: 'kubejs:dark_steel_machine_hull',
             H: 'minecraft:hopper'
-        }
-        )
+        })
 
         event.replaceInput({ id: 'hostilenetworks:living_matter/nether_to_ender' }, 'minecraft:end_stone', 'minecraft:ender_pearl')
 
@@ -130,16 +125,14 @@ ServerEvents.recipes(event => {
             ['end', 4]
         ]
         predictions.forEach(item => {
-            event.shaped(
-                Item.of('kubejs:impossible_realm_data', item[1]), [
-                    'ABA',
-                    'BAB',
-                    'ABA'
-                ], {
-                    A: `hostilenetworks:${item[0]}_prediction`,
-                    B: 'kubejs:solidified_experience'
-                }
-            )
+            event.shaped(Item.of('kubejs:impossible_realm_data', item[1]), [
+                'ABA',
+                'BAB',
+                'ABA'
+            ], {
+                A: `hostilenetworks:${item[0]}_prediction`,
+                B: 'kubejs:solidified_experience'
+            })
         })
 
         event.recipes.gtceu.extractor('extract_quantum_flux')
@@ -156,16 +149,14 @@ ServerEvents.recipes(event => {
         ]
 
         lairs.forEach(item => {
-            event.shaped(
-                `kubejs:${item[0]}_data`, [
-                    'ABB',
-                    'BBB',
-                    'BBB'
-                ], {
-                    A: 'kubejs:impossible_realm_data',
-                    B: `hostilenetworks:${item[1]}_prediction`
-                }
-            )
+            event.shaped(`kubejs:${item[0]}_data`, [
+                'ABB',
+                'BBB',
+                'BBB'
+            ], {
+                A: 'kubejs:impossible_realm_data',
+                B: `hostilenetworks:${item[1]}_prediction`
+            })
             event.recipes.gtceu.canner(`canning_${item[0]}_data`)
                 .itemInputs('1x kubejs:impossible_realm_data', `6x hostilenetworks:${item[1]}_prediction`)
                 .inputFluids(Fluid.of('enderio:xp_juice', 140))

@@ -84,8 +84,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'enderio:pulsating_crystal',
             B: 'hostilenetworks:end_prediction'
-        }
-        )
+        })
     }
 
     // Hot MV ingots

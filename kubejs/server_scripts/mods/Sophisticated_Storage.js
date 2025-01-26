@@ -36,17 +36,15 @@ ServerEvents.recipes(event => {
     }
 
     // Standard backpack recipe if you don't want to loot it
-    event.shaped(
-        'sophisticatedbackpacks:backpack',
-        [
-            ' N ',
-            'ICI',
-            'N N'
-        ], {
-            "N": '#forge:leather',
-            "I": 'minecraft:iron_ingot',
-            "C": '#forge:chests/wooden'
-        })
+    event.shaped('sophisticatedbackpacks:backpack', [
+        ' N ',
+        'ICI',
+        'N N'
+    ], {
+        "N": '#forge:leather',
+        "I": 'minecraft:iron_ingot',
+        "C": '#forge:chests/wooden'
+    })
 
     // Backpack upgrading
     const sophBackpacksMaterials = [
@@ -122,16 +120,15 @@ ServerEvents.recipes(event => {
             let prevTierName = (toIndex - 1 == 0 ? "basic_" : sophStorageMaterials[toIndex - 1][0]);
             let toTierName = material[0];
 
-            event.shaped(
-                `sophisticatedstorage:${fromTierName}to_${toTierName}tier_upgrade`, [
-                    "IPI",
-                    "ICI",
-                    "IPI"
-                ], {
-                    I: `#forge:ingots/${material[1]}`,
-                    P: `#forge:plates/${material[2]}`,
-                    C: (fromTierName == prevTierName ? 'minecraft:redstone_torch' : `sophisticatedstorage:${fromTierName}to_${prevTierName}tier_upgrade`)
-                }).id(`sophisticatedstorage:${fromTierName}to_${toTierName}tier_upgrade`)
+            event.shaped(`sophisticatedstorage:${fromTierName}to_${toTierName}tier_upgrade`, [
+                "IPI",
+                "ICI",
+                "IPI"
+            ], {
+                I: `#forge:ingots/${material[1]}`,
+                P: `#forge:plates/${material[2]}`,
+                C: (fromTierName == prevTierName ? 'minecraft:redstone_torch' : `sophisticatedstorage:${fromTierName}to_${prevTierName}tier_upgrade`)
+            }).id(`sophisticatedstorage:${fromTierName}to_${toTierName}tier_upgrade`)
         }
 
         // Barrel-in-table upgrades

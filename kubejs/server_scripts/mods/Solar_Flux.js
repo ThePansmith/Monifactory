@@ -48,20 +48,18 @@ ServerEvents.recipes(event => {
         let photovoltaic = index == 0? 
             'gtceu:tempered_glass'
             :`solarflux:photovoltaic_cell_${index}`
-        event.shaped(
-            `2x solarflux:sp_${index + 2}`, [
-                'SCS',
-                'WBW',
-                'PEP'
-            ], {
-                S: `solarflux:sp_${index + 1}`,
-                C: photovoltaic,
-                W: ingredients[0],
-                B: ingredients[1],
-                P: ingredients[2],
-                E: ingredients[3]
-            }
-        )
+        event.shaped(`2x solarflux:sp_${index + 2}`, [
+            'SCS',
+            'WBW',
+            'PEP'
+        ], {
+            S: `solarflux:sp_${index + 1}`,
+            C: photovoltaic,
+            W: ingredients[0],
+            B: ingredients[1],
+            P: ingredients[2],
+            E: ingredients[3]
+        })
         // Account for when the same ingredients are used twice
         let assemblerInputs;
         if (ingredients[0] == ingredients[2]) {
@@ -153,8 +151,7 @@ ServerEvents.recipes(event => {
             T: cell[1],
             P: `solarflux:photovoltaic_cell_${cell[0] - 1}`,
             B: cell[2]
-        }
-        )
+        })
     })
 
 

@@ -27,17 +27,16 @@ ServerEvents.recipes(event => {
 
 
         Cards.forEach(card => {
-            event.shaped(
-                `laserio:card_${card[0]}`, [
-                    'TNT',
-                    'TCT',
-                    'GGG'
-                ], {
-                    N: card[1],
-                    C: cardChip,
-                    G: 'minecraft:gold_nugget',
-                    T: 'gtceu:tin_plate'
-                }).id(`laserio:card_${card[0]}`)
+            event.shaped(`laserio:card_${card[0]}`, [
+                'TNT',
+                'TCT',
+                'GGG'
+            ], {
+                N: card[1],
+                C: cardChip,
+                G: 'minecraft:gold_nugget',
+                T: 'gtceu:tin_plate'
+            }).id(`laserio:card_${card[0]}`)
         })
 
 

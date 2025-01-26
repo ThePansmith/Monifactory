@@ -473,16 +473,14 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
     // Add the Fluid Tag Filter
-    event.shaped(
-        Item.of('gtceu:fluid_tag_filter', 1),
-        [
-            'ZZZ',
-            'ZLZ',
-            'ZZZ'
-        ], {
-            Z: 'gtceu:zinc_foil',
-            L: 'gtceu:lead_plate'
-        })
+    event.shaped(Item.of('gtceu:fluid_tag_filter', 1), [
+        'ZZZ',
+        'ZLZ',
+        'ZZZ'
+    ], {
+        Z: 'gtceu:zinc_foil',
+        L: 'gtceu:lead_plate'
+    })
     // Making ABS take aluminium rather than osmium so it's obtainable in EV
     event.replaceInput({ id: "gtceu:shaped/blast_alloy_smelter" }, "gtceu:osmium_quadruple_wire", "gtceu:aluminium_single_cable")
 
