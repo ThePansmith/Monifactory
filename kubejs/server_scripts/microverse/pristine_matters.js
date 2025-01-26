@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     ]
 
     /**
-     * Function for making recipes given a miner tier.
+     * Function for making a stabilized miner assembly line recipe.
      * @param {string} minerTier The tier of miner to generate a stabilized matter recipe for. Typically a string representation of a number.
      */
     function stabilized_miner_recipe(minerTier) {
@@ -33,29 +33,13 @@ ServerEvents.recipes(event => {
     }
     
     /**
-     * 
+     * Function for making a pristine matter recipe
      * @param {(string | number)[]} minerTier 
      * @param {number} projectorTier 
      */
     function pristine_matter_recipe(minerTier, projectorTier) {
-        var builder;
-
-        switch (projectorTier) {
-            case 1:
-                builder = event.recipes.gtceu.basic_microverse(`pristine_${minerTier}`);
-                break;
-            case 2:
-                builder = event.recipes.gtceu.advanced_microverse(`pristine_${minerTier}`);
-                break;
-            case 3:
-                builder = event.recipes.gtceu.advanced_microverse_ii(`pristine_${minerTier}`);
-                break;
-            case 4:
-                builder = event.recipes.gtceu.advanced_microverse_iii(`pristine_${minerTier}`);
-                break;
-            default: throw new Error("Invalid Operation. Only projector tiers 1-4 are accepted.")
-        }
-        builder
+        event.recipes.gtceu.basic_microverse(`pristine_${minerTier}`)
+            .addData("Microverse_Tier", projectorTier)
             .notConsumable(`kubejs:stabilized_microminer_t${minerTier}`)
             .itemOutputs(`kubejs:pristine_matter_t${minerTier}`)
             .duration(470.4 * 20)

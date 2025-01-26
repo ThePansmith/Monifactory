@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     // T5MM mission
-    advanced_microverse_ii_mission(event, 5, 45, GTValues.VA, GTValues.ZPM, 50, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 5, 3, 45, GTValues.VA, GTValues.ZPM, 50, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     })
 
     // T7MM missions
-    advanced_microverse_ii_mission(event, 7, 75, GTValues.VA, GTValues.LuV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 7, 3, 75, GTValues.VA, GTValues.LuV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '64x kubejs:dilithium_crystal',
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:lair_of_the_warden_data')
     })
 
-    advanced_microverse_ii_mission(event, 7, 75, GTValues.VA, GTValues.LuV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 7, 3, 75, GTValues.VA, GTValues.LuV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
     })
 
     // T8MM missions
-    advanced_microverse_ii_mission(event, 8, 75, GTValues.VHA, GTValues.ZPM, 60, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 8, 3, 75, GTValues.VHA, GTValues.ZPM, 60, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    advanced_microverse_ii_mission(event, 8, 90, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 8, 3, 90, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    advanced_microverse_ii_mission(event, 8, 100, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 8, 3, 100, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '64x kubejs:quantum_flux',
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
     })
 
     // T9MM missions
-    advanced_microverse_ii_mission(event, 9, 150, GTValues.VA, GTValues.UV, 70, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 9, 3, 150, GTValues.VA, GTValues.UV, 70, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '4x gtceu:cryococcus_block',
@@ -110,26 +110,26 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:universe_creation_data')
     })
 
-    advanced_microverse_ii_mission(event, 9, 150, GTValues.VA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 9, 3, 150, GTValues.VA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('8x gtceu:neutron_reflector', '4x gtceu:cryococcus_block', 'kubejs:stellar_creation_data')
         .itemOutputs('64x gtceu:neutronium_ingot', '32x gtceu:neutronium_ingot')
     })
 
-    advanced_microverse_ii_mission(event, 9, 150, GTValues.VHA, GTValues.UV, 50, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 9, 3, 150, GTValues.VHA, GTValues.UV, 50, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('64x gtceu:gravi_star', '64x gtceu:gravi_star', '16x kubejs:shattered_star_data')
         .itemOutputs('32x kubejs:quasi_stable_neutron_star')
     })
 
     // T10MM missions
-    advanced_microverse_ii_mission(event, 10, 300, GTValues.VA, GTValues.UHV, 100, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 10, 3, 300, GTValues.VA, GTValues.UHV, 100, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('8x gtceu:cryococcus_block', 'kubejs:universe_creation_data')
         .itemOutputs('kubejs:heart_of_a_universe')
     })
 
-    advanced_microverse_ii_mission(event, 10, 150, GTValues.VA, GTValues.UHV, 100, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 10, 3, 150, GTValues.VA, GTValues.UHV, 100, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('16x #forge:storage_blocks/activated_netherite', '64x kubejs:stellar_creation_data')
         .itemOutputs('kubejs:creative_storage_data')

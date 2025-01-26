@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         event.create('actualization_chamber')
             .category('multiblock')
             .setEUIO('in')
-            .setMaxIOSize(2, 20, 0, 0)
+            .setMaxIOSize(2, 12, 0, 0)
             .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COOLING)
@@ -53,38 +53,11 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     }
 
 
-    // Small Microverse Projector Recipe Type
-    event.create('basic_microverse')
+    // Microverse Projector Recipe Type
+    event.create('microverse')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(6, 6, 1, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
-
-    // Advanced Microverse Projector Recipe Type
-    event.create('advanced_microverse')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(6, 9, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
-
-    // Advanced Microverse Projector II Recipe Type
-    event.create('advanced_microverse_ii')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(9, 9, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
-
-    // Advanced Microverse Projector III Recipe Type
-    event.create('advanced_microverse_iii')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(12, 9, 0, 0)
+        .setMaxIOSize(9, 12, 3, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
@@ -184,6 +157,9 @@ if (!isNormalMode) {
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
+    //EMI displays microverse projector tier
+    GTRecipeTypes.get('microverse').addDataInfo((data) => ("Projector Tier: " + data.getByte('projector_tier')));   //todo: get Text.translatable to work
 
     // Normal mode-exclusive multis
     if (!isHardMode) {
@@ -573,7 +549,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Basic Microverse Projector
     event.create('basic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('basic_microverse')
+        .recipeTypes('microverse')
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, 
+            (machine, recipe) => {
+            if (recipe.data.getLong('projector_tier') > 1) {
+                return ModifierFunction.NULL;
+            } else {
+                return ModifierFunction.IDENTITY;
+            }
+        }])
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CMC", "CVC", "CCC")
@@ -593,7 +577,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Advanced Microverse Projector
     event.create('advanced_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('advanced_microverse')
+        .recipeTypes('microverse')
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, 
+            (machine, recipe) => {
+            if (recipe.data.getLong('projector_tier') > 2) {
+                return ModifierFunction.NULL;
+            } else {
+                return ModifierFunction.IDENTITY;
+            }
+        }])
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCC", "CGGGC", "CGGGC", "CGGGC", "CCCCC")
@@ -615,7 +607,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Advanced Microverse Projector II
     event.create('advanced_microverse_projector_ii', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('advanced_microverse_ii')
+        .recipeTypes('microverse')
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, 
+            (machine, recipe) => {
+            if (recipe.data.getLong('projector_tier') > 3) {
+                return ModifierFunction.NULL;
+            } else {
+                return ModifierFunction.IDENTITY;
+            }
+        }])
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#########", "#########", "##CCCCC##", "##CVCVC##", "##CCCCC##", "##CVCVC##", "##CCCCC##", "#########", "#########")
@@ -642,8 +642,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Microverse Projector III (Hyperbolic Microverse Projector)
     event.create('hyperbolic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes(['basic_microverse', 'advanced_microverse', 'advanced_microverse_ii', 'advanced_microverse_iii'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeTypes('microverse')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT,
+            (machine, recipe) => {
+            if (recipe.data.getLong('projector_tier') > 4) {
+                return ModifierFunction.NULL;
+            } else {
+                return ModifierFunction.IDENTITY;
+            }
+        }])
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###CCCCC###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###CCCCC###")

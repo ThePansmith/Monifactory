@@ -10,14 +10,14 @@
  */
 ServerEvents.recipes(event => {
     // T1MM missions
-    basic_microverse_mission(event, 1, 5, GTValues.VA, GTValues.HV, 50, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 1, 1, 5, GTValues.VA, GTValues.HV, 50, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('kubejs:ultra_dense_hydrogen')
         .inputFluids('gtceu:rocket_fuel 2000')
         .itemOutputs('kubejs:stellar_creation_data')
     })
 
-    basic_microverse_mission(event, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.LuV).forEach(builder => {
+    microverse_mission(event, 1, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.LuV).forEach(builder => {
         builder
         .itemInputs('kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 2000')
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 1, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 2000')
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 1, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 2000')
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 1, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 2000')
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 1, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 2000')
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 1, 1, 25, GTValues.VA, GTValues.HV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 2000')
@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 1, 25, GTValues.VA, GTValues.HV, 20, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 1, 1, 25, GTValues.VA, GTValues.HV, 20, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 2000')
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 1, 25, GTValues.VA, GTValues.HV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 1, 1, 25, GTValues.VA, GTValues.HV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('2x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 2000')
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 1, 25, GTValues.VA, GTValues.HV, 40, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 1, 1, 25, GTValues.VA, GTValues.HV, 40, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('3x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 2000')
@@ -149,14 +149,14 @@ ServerEvents.recipes(event => {
     })
 
     // T2MM missions
-    basic_microverse_mission(event, 2, 6, GTValues.VHA, GTValues.EV, 50, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 2, 1, 6, GTValues.VHA, GTValues.EV, 50, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:ultra_dense_hydrogen')
         .inputFluids('gtceu:rocket_fuel 3000')
         .itemOutputs('4x kubejs:stellar_creation_data')
     })
 
-    basic_microverse_mission(event, 2, 30, GTValues.VHA, GTValues.EV, 40, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 2, 1, 30, GTValues.VHA, GTValues.EV, 40, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('3x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
@@ -172,7 +172,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 2, 30, GTValues.VHA, GTValues.EV, 20, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 2, 1, 30, GTValues.VHA, GTValues.EV, 20, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('2x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 2, 30, GTValues.VHA, GTValues.EV, 15, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 2, 1, 30, GTValues.VHA, GTValues.EV, 15, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('2x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 2, 35, GTValues.VHA, GTValues.EV, 5, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 2, 1, 35, GTValues.VHA, GTValues.EV, 5, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 2, 30, GTValues.VHA, GTValues.EV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 2, 1, 30, GTValues.VHA, GTValues.EV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('3x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 2, 30, GTValues.VHA, GTValues.EV, 10, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 2, 1, 30, GTValues.VHA, GTValues.EV, 10, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('2x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
@@ -245,7 +245,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 2, 30, GTValues.VHA, GTValues.EV, 10, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 2, 1, 30, GTValues.VHA, GTValues.EV, 10, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('2x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 3000')
@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 2, 35, GTValues.VHA, GTValues.EV, 20, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 2, 1, 35, GTValues.VHA, GTValues.EV, 20, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('2x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 5000')
@@ -276,7 +276,7 @@ ServerEvents.recipes(event => {
     })
 
     // T3MM missions
-    basic_microverse_mission(event, 3, 35, GTValues.VA, GTValues.EV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 3, 1, 35, GTValues.VA, GTValues.EV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 5000')
@@ -291,7 +291,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 3, 35, GTValues.VA, GTValues.EV, 20, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 3, 1, 35, GTValues.VA, GTValues.EV, 20, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 5000')
@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 3, 35, GTValues.VA, GTValues.EV, 15, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 3, 1, 35, GTValues.VA, GTValues.EV, 15, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 5000')
@@ -320,7 +320,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 3, 40, GTValues.VA, GTValues.EV, 40, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 3, 1, 40, GTValues.VA, GTValues.EV, 40, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 5000')
@@ -335,7 +335,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 3, 40, GTValues.VA, GTValues.EV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 3, 1, 40, GTValues.VA, GTValues.EV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 5000')
@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    basic_microverse_mission(event, 3, 30, GTValues.VA, GTValues.EV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 3, 1, 30, GTValues.VA, GTValues.EV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('16x kubejs:quantum_flux')
         .inputFluids('gtceu:rocket_fuel 5000')
