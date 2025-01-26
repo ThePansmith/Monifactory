@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
     // T11MM missions
     hyperbolic_microverse_mission(event, 11, 30, GTValues.VA, GTValues.UHV, 25, GTValues.MAX).forEach(builder => {
         builder
-        .itemInputs('kubejs:infinity_catalyst', 'kubejs:shattered_universe_data')
+        .itemInputs('kubejs:infinity_catalyst', 'gtceu:neutronium_drill_head', 'kubejs:shattered_universe_data')
         .itemOutputs(
             '64x kubejs:alien_scrap',
             '64x kubejs:alien_scrap',

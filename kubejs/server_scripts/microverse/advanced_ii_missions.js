@@ -6,9 +6,9 @@ ServerEvents.recipes(event => {
     advanced_microverse_ii_mission(event, 5, 45, GTValues.VA, GTValues.ZPM, 50, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
+            '16x kubejs:quantum_flux',
             '4x gtceu:uhv_electric_pump',
             '16x kubejs:stabilized_americium',
-            '16x kubejs:quantum_flux',
             '8x kubejs:shattered_star_data'
         )
         .itemOutputs('32x kubejs:stabilized_oganesson')
