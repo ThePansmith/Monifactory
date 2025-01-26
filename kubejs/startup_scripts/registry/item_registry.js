@@ -406,14 +406,12 @@ StartupEvents.registry('item', event => {
 
 
     //Eltz metal processing intermediate products
-    event.create('reactive_dust_mixture').texture('kubejs:item/eltz/reactive_dust_mixture')
+    event.create('reactive_dust_mixture').textureJson({ layer0: 'kubejs:item/eltz/reactive_dust_mixture_base', layer1: 'kubejs:item/eltz/reactive_dust_mixture_overlay' })
     event.create('inert_dust_mixture').texture('kubejs:item/eltz/inert_dust_mixture')
     event.create('dusty_inert_powder').texture('kubejs:item/eltz/dusty_inert_powder')
-    event.create('centrifuged_inert_powder').texture('kubejs:item/eltz/centrifuged_inert_powder')
     event.create('shiny_powder_mixture').texture('kubejs:item/eltz/shiny_powder_mixture')
     event.create('shiny_metal_powder').texture('kubejs:item/eltz/shiny_metal_powder')
     event.create('inert_clumps').texture('kubejs:item/eltz/inert_clumps')
-    event.create('saturated_inert_clumps').texture('kubejs:item/eltz/saturated_inert_clumps')
     event.create('clean_inert_cluster').texture('kubejs:item/eltz/clean_inert_cluster')
     event.create('eltic_crystal_seed').texture('kubejs:item/eltz/eltic_crystal_seed')
 

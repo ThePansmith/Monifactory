@@ -301,7 +301,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                     .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMinGlobalLimited(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                     .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
-                .where('D', Predicates.blocks(GTBlocks.FUSION_CASING_MK3.get()))
+                .where('D', Predicates.blocks("kubejs:bioalloy_fusion_casing"))
                 .where('F', Predicates.blocks("kubejs:omnic_matrix_coil_block"))
                 .where('T', Predicates.blocks(GTBlocks.COIL_TRITANIUM.get()))
                 .where('N', Predicates.frames(GTMaterials.get('activated_netherite')))

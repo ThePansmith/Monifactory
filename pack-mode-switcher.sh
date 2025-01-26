@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # Colors
 RED=$(tput setaf 1)
@@ -10,45 +10,52 @@ NORMAL=$(tput sgr0)
 
 touch .mode
 set -e
-printf "${POWDER_BLUE}Monifactory | Pack Mode Switcher${NORMAL}"
 
 NORMAL_CFG='./config-overrides/normal'
 HARDMODE_CFG='./config-overrides/hardmode'
 EXPERT_CFG='./config-overrides/expert'
 TARGET='./config'
-CURRENT_MODE="$(head .mode)"
-CURRENT_MODE=${CURRENT_MODE:="normal"}
 
 # Check if config-overrides dir exists
-if [[ ! -d "${NORMAL_CFG}" ]] || [[ ! -d "${HARDMODE_CFG}" ]] || [[ ! -d "${EXPERT_CFG}" ]] ; then
+if ! ([ -d "${NORMAL_CFG}" ] && [ -d "${HARDMODE_CFG}" ] && [ -d "${EXPERT_CFG}" ]); then
   printf "\n\n${RED}Could not find \`config-overrides\` directory! \nMake sure you are in the \`/minecraft\` directory of your instance! (The one containing \`/config\`)${NORMAL}\n"
   printf "${YELLOW}Otherwise, if you are in the \`/minecraft\` directory, please try reinstalling the pack.${NORMAL}\n"
   exit 1
 fi
 
-# Capitalise First Letter (only works in bash 4+)
-[ "${BASH_VERSINFO:-0}" -ge 4 ] && CURRENT_MODE=${CURRENT_MODE^}
-
-printf "\n\n${YELLOW}Current Mode: ${CURRENT_MODE}${NORMAL}\n"
-
 if [ -z "$1" ]; then
-  printf "${POWDER_BLUE}Set Pack Mode:\nN: Normal    (The Default mode) \nH: Hardmode  (Adds more lines and progression, removes HNN and Monicoin spending) \nE: Expert    (A modifier for Hardmode, enables some of the more extreme GTm settings among other things) \nSelection: [Normal / Hardmode / Expert]:"
-  read MODE
+  CURRENT_MODE="$(head .mode)"
+  CURRENT_MODE=${CURRENT_MODE:="normal"}
+  # Capitalise First Letter (only works in bash 4+)
+  if ((BASH_VERSINFO[0] >= 4 )); then
+    CURRENT_MODE=${CURRENT_MODE^}
+  fi
+
+  if [ -t 0 ]; then
+    # Interactive stdin
+    printf "${POWDER_BLUE}Monifactory | Pack Mode Switcher${NORMAL}"
+    printf "\n\n${YELLOW}Current Mode: ${CURRENT_MODE}${NORMAL}\n"
+    printf "${POWDER_BLUE}Set Pack Mode:\nN: Normal    (The Default mode) \nH: Hardmode  (Adds more lines and progression, removes HNN and Monicoin spending) \nE: Expert    (A modifier for Hardmode, enables some of the more extreme GTm settings among other things) \nSelection: [Normal / Hardmode / Expert]:"
+    read MODE
+  else
+    # Non interactive stdin
+    echo $CURRENT_MODE
+    exit 0
+  fi
 else
   MODE="$1"
 fi
 
+function move_server_properties () {
+  # Only copy server.properties if it exists.
+  mv "$TARGET/server.properties" ./ 2> /dev/null || true
+} 
+
 case $MODE in
     N|n|normal|Normal)
 
-    cp -rf "$NORMAL_CFG/." ${TARGET} 
-
-    # Only copy server.properties if it exists.
-    if [ -f "server.properties" ]; then
-        mv "${TARGET}/server.properties" ./
-    else
-        rm "${TARGET}/server.properties" || true
-    fi
+    cp -rf "$NORMAL_CFG/." ${TARGET}
+    move_server_properties
 
     # Update Mode
     echo normal > .mode
@@ -57,12 +64,7 @@ case $MODE in
   H|h|hardmode|Hardmode)
 
     cp -rf "$HARDMODE_CFG/." ${TARGET}
-
-    if [ -f "server.properties" ]; then
-        mv "${TARGET}/server.properties" ./
-    else
-        rm "${TARGET}/server.properties" || true
-    fi
+    move_server_properties
 
     # Update Mode
     echo hard > .mode
@@ -72,12 +74,7 @@ case $MODE in
 
     cp -rf "$HARDMODE_CFG/." ${TARGET}
     cp -rf "$EXPERT_CFG/." ${TARGET}
-
-    if [ -f "server.properties" ]; then
-        mv "${TARGET}/server.properties" ./
-    else
-        rm "${TARGET}/server.properties" || true
-    fi
+    move_server_properties
 
     # Update Mode
     echo expert > .mode
@@ -90,4 +87,10 @@ case $MODE in
   ;;
 esac
 
-printf "\n${GREEN}Complete!${NORMAL}\n"
+if [ -t 0 ]; then
+  # Interactive stdin
+  printf "${GREEN}Switched pack mode to $(cat .mode)!${NORMAL}\n"
+else
+  # Explicitly signify success
+  exit 0
+fi

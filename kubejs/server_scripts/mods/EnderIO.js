@@ -237,7 +237,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.autoclave('kubejs:vibrant_crystal')
         .itemInputs('minecraft:emerald')
-        .inputFluids(Fluid.of('gtceu:pulsating_alloy', 144))
+        .inputFluids(Fluid.of('gtceu:vibrant_alloy', 144))
         .itemOutputs('enderio:vibrant_crystal')
         .duration(200)
         .EUt(30)
@@ -650,7 +650,7 @@ ServerEvents.recipes(event => {
 
     // staff of traveling
     event.replaceInput({ id: 'enderio:staff_of_travelling' }, '#forge:ingots/dark_steel', '#forge:rods/dark_steel')
-    event.replaceInput({ id: 'enderio:staff_of_travelling' }, 'enderio:ender_crystal', 'enderio:vibrant_crystal')
+    event.replaceInput({ id: 'enderio:staff_of_travelling' }, 'enderio:ender_crystal', 'enderio:pulsating_crystal')
 
     // travel anchor
     event.replaceInput({ id: 'enderio:travel_anchor' }, 'enderio:conduit_binder', '#forge:plates/vibrant_alloy')
