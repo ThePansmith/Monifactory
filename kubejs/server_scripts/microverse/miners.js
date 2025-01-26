@@ -1,7 +1,6 @@
 /**
- * 3x3, Extended Crafting Recipes for Micro Miners
+ * 3x3 and Extended Crafting Recipes for Micro Miners
  */
-
 ServerEvents.recipes(event => {
     // T1 Microminer
     event.shaped('kubejs:microminer_t1', [

@@ -1,3 +1,6 @@
+/**
+ * Recipe definitions for hyperbolic microverse projector missions.
+ */
 ServerEvents.recipes(event => {
     // T4MM mission
     hyperbolic_microverse_mission(event, 4, 30, GTValues.VHA, GTValues.UV, 50, GTValues.MAX).forEach(builder => {

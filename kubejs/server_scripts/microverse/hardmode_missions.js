@@ -1,3 +1,6 @@
+/**
+ * Recipe definitions for Hard Mode and Expert Mode-exclusive microverse projector missions.
+ */
 ServerEvents.recipes(event => {
     if (isHardMode) {
         basic_microverse_mission(event, "2half", 40, GTValues.VHA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {

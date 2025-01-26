@@ -1,3 +1,6 @@
+/**
+ * Recipe definitions for advanced microverse projector missions.
+ */
 ServerEvents.recipes(event => {
     // T4MM missions
     advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 15, GTValues.MAX).forEach(builder => {

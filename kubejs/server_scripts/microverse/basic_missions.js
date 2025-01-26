@@ -1,3 +1,12 @@
+/**
+ * Recipe definitions for basic microverse projector missions.
+ * Builder method calls for inputs typically follow a certain order:
+ * - Quantum Flux OR Data
+ * - Fuel
+ * - Drill head (if any)
+ * - Gemstone Sensor/Power Thruster (if any)
+ * - Anything else, in a multiline method call
+ */
 ServerEvents.recipes(event => {
     // T1MM missions
     basic_microverse_mission(event, 1, 5, GTValues.VA, GTValues.HV, 50, GTValues.MAX).forEach(builder => {
