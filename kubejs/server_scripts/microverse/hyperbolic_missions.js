@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
             '64x kubejs:quantum_flux',
             '64x kubejs:dilithium_crystal',
             '64x kubejs:dilithium_crystal',
-            '48x minecraft:sculk_catalyst',
+            '1x kubejs:hadal_energy_core',
             'kubejs:corrupted_universe_data',
             'kubejs:lair_of_the_warden_data'
         )

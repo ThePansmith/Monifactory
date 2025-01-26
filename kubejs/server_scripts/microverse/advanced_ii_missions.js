@@ -68,6 +68,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             '32x kubejs:quantum_flux',
             '64x kubejs:dilithium_crystal',
+            '8x minecraft:sculk_catalyst',
             'kubejs:lair_of_the_warden_data'
         )
         .itemOutputs(
