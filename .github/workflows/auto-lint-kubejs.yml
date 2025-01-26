@@ -2,8 +2,7 @@ name: Lint KubeJS
 on:
   pull_request:
     types: [opened, synchronize]
-    paths: 
-      - 'kubejs/**'
+    paths: 'kubejs/**'
 
 jobs:
   lint:
