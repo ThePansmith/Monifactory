@@ -1,4 +1,4 @@
-import Juke from '../juke/index.js';
+import Juke from 'juke-build';
 import fs from 'fs';
 import https from 'https';
 

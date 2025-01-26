@@ -9,7 +9,7 @@
 import fs from 'fs';
 import path, { resolve } from 'path';
 import { env } from 'process';
-import Juke from './juke/index.js';
+import Juke from 'juke-build';
 import { DownloadCF, GetModInfo } from './lib/curseforge.js';
 import { CodegenAllTarget } from './codegen/target-all.js';
 

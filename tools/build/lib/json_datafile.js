@@ -1,6 +1,6 @@
 //@ts-check
 import fs from 'fs';
-import Juke from '../juke/index.js';
+import Juke from 'juke-build';
 
 /**
  * Reads JSON from a file.

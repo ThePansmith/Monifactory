@@ -1,5 +1,5 @@
 //@ts-check
-import Juke from '../../juke/index.js';
+import Juke from 'juke-build';
 import fs from 'fs';
 import { randomUUID } from 'crypto';
 import { fileURLToPath } from 'url';

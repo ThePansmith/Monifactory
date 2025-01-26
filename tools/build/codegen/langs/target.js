@@ -1,9 +1,10 @@
 //@ts-check
 import { basename, dirname, join } from 'path';
-import Juke from '../../juke/index.js';
+import Juke from 'juke-build';
 import fs from 'fs';
 import { readDatafileJSON, writeDatafileJSON } from '../../lib/json_datafile.js';
 import { UDTransform } from './en_ud.js';
+import { fileURLToPath } from 'url';
 
 /**
  * @param {string} name Input lang file name
@@ -12,7 +13,10 @@ import { UDTransform } from './en_ud.js';
  */
 const getAllInputLangsAndOutputLangs = (name, newName) =>
   fs
-    .readdirSync('../../', { recursive: true, encoding: 'utf8' })
+    .readdirSync(
+      fileURLToPath(import.meta.resolve('../../')),
+      { recursive: true, encoding: 'utf8' }
+    )
     .filter((filePath) => basename(filePath) === name)
     .map((filePath) => ({
       in: filePath,

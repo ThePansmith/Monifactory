@@ -1,4 +1,6 @@
 {
-  "private": true,
+  "dependencies": {
+    "juke-build": "^0.9.0"
+  },
   "type": "module"
 }
