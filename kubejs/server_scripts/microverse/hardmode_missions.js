@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             builder
             .itemInputs(
                 '8x kubejs:quantum_flux',
-                'minecraft:oak_sapling'
+                'minecraft:mossy_cobblestone'
             )
             .inputFluids('minecraft:lava 4000')
             .itemOutputs(
@@ -23,11 +23,12 @@ ServerEvents.recipes(event => {
             builder
             .itemInputs(
                 '8x kubejs:quantum_flux',
-                'minecraft:oak_sapling'
+                'minecraft:mud'
             )
             .inputFluids('minecraft:lava 4000')
             .itemOutputs(
-                '64x minecraft:slime_block',
+                '64x minecraft:slime_ball',
+                '32x minecraft:slime_ball',
                 '48x kubejs:guardian_scale'
             )
         })
@@ -152,10 +153,13 @@ ServerEvents.recipes(event => {
 
         advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 20, GTValues.MAX).forEach(builder => {
             builder
+            .itemInputs('16x kubejs:quantum_flux')
+            .itemInputs('64x kubejs:dilithium_crystal')
+            .itemInputs('gtceu:duranium_drill_head')
+            .itemInputs('4x gtceu:neutron_reflector',)
             .itemInputs(
-                '4x gtceu:neutron_reflector',
-                '12x gtceu:naquadah_block',
-                'kubejs:warden_horn'
+                '12x gtceu:ruridit_block',
+                '4x kubejs:warden_horn'
             )
             .itemOutputs(
                 '64x gtceu:raw_darmstadtite',
@@ -171,10 +175,13 @@ ServerEvents.recipes(event => {
 
         advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 20, GTValues.MAX).forEach(builder => {
             builder
+            .itemInputs('16x kubejs:quantum_flux')
+            .itemInputs('64x kubejs:dilithium_crystal')
+            .itemInputs('gtceu:duranium_drill_head')
+            .itemInputs('4x kubejs:gem_sensor')
             .itemInputs(
-                '4x kubejs:gem_sensor',
                 '12x gtceu:naquadah_block',
-                'kubejs:warden_horn'
+                '4x kubejs:warden_horn'
             )
             .itemOutputs(
                 '64x gtceu:raw_dulysite',
