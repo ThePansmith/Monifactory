@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     // T4MM mission
-    microverse_mission(event, 4, 4, 30, GTValues.VHA, GTValues.UV, 50, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 4, 4, 120, GTValues.VHA, GTValues.UV, 50, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '64x kubejs:ultra_dense_hydrogen',
@@ -22,12 +22,13 @@ ServerEvents.recipes(event => {
     })
 
     // T8MM mission
-    microverse_mission(event, 8, 4, 30, GTValues.VHA, GTValues.UV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 8, 4, 30, GTValues.VHA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
-            '16x kubejs:quantum_flux',
+            '64x kubejs:quantum_flux',
             '64x kubejs:dilithium_crystal',
-            '16x minecraft:sculk_catalyst',
+            '64x kubejs:dilithium_crystal',
+            '48x minecraft:sculk_catalyst',
             'kubejs:corrupted_universe_data',
             'kubejs:lair_of_the_warden_data'
         )
@@ -49,7 +50,7 @@ ServerEvents.recipes(event => {
     })
 
     // T10MM missions
-    microverse_mission(event, 10, 4, 150, GTValues.VA, GTValues.UHV, 100, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 10, 4, 150, GTValues.VA, GTValues.UHV, 90, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('8x kubejs:infinity_catalyst', 'kubejs:corrupted_universe_data')
         .itemOutputs('16x kubejs:heart_of_a_universe')
@@ -57,12 +58,12 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 10, 4, 20, GTValues.VA, GTValues.UHV, 50, GTValues.MAX).forEach(builder => {
         builder
-        .itemInputs('64x kubejs:singularity_containment_unit', 'kubejs:shattered_universe_data',) // could be increased
+        .itemInputs('64x kubejs:singularity_containment_unit', 'kubejs:shattered_universe_data',)
         .itemOutputs('64x kubejs:contained_singularity')
     })
 
     // T11MM missions
-    microverse_mission(event, 11, 4, 30, GTValues.VA, GTValues.UHV, 25, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 11, 4, 30, GTValues.VA, GTValues.UHV, 20, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('kubejs:infinity_catalyst', 'gtceu:neutronium_drill_head', 'kubejs:shattered_universe_data')
         .itemOutputs(
@@ -123,6 +124,7 @@ ServerEvents.recipes(event => {
             '2x solarflux:sp_custom_infinity',
             'gtceu:uiv_4096a_laser_source_hatch',
             '4x kubejs:universe_creation_data',
+            '64x kubejs:stellar_creation_data',
             '64x kubejs:stellar_creation_data',
             '64x kubejs:stellar_creation_data'
         )

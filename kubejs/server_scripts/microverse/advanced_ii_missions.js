@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     // T5MM mission
-    microverse_mission(event, 5, 3, 45, GTValues.VA, GTValues.ZPM, 50, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 5, 3, 140, GTValues.VA, GTValues.ZPM, 75, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -21,23 +21,22 @@ ServerEvents.recipes(event => {
             '64x kubejs:dilithium_crystal',
             'kubejs:gem_sensor',
             '64x kubejs:deep_dark_data',
+            '64x kubejs:deep_dark_data',
             '64x kubejs:deep_dark_data'
         )
         .itemOutputs('kubejs:lair_of_the_warden_data')
     })
 
-    microverse_mission(event, 7, 3, 75, GTValues.VA, GTValues.LuV, 30, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 7, 3, 75, GTValues.VA, GTValues.LuV, 75, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
             '64x kubejs:dilithium_crystal',
-            '32x kubejs:deep_dark_data'
+            'gtceu:tungsten_steel_drill_head',
+            '16x kubejs:deep_dark_data'
         )
         .itemOutputs(
-            '16x kubejs:warden_heart',
             '64x minecraft:sculk_catalyst',
-            '64x kubejs:warden_horn',
-            '64x kubejs:warden_horn',
             '64x minecraft:gold_block',
             '64x gtceu:silver_block',
             '64x minecraft:diamond_block',
@@ -46,17 +45,37 @@ ServerEvents.recipes(event => {
         )
     })
 
-    // T8MM missions
-    microverse_mission(event, 8, 3, 75, GTValues.VHA, GTValues.ZPM, 60, GTValues.MAX).forEach(builder => {
+    microverse_mission(event, 7, 3, 75, GTValues.VA, GTValues.LuV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
+            '64x kubejs:dilithium_crystal',
+            '4x minecraft:sculk_catalyst',
+            '24x kubejs:deep_dark_data'
+        )
+        .itemOutputs(
+            '16x kubejs:warden_heart',
+            '48x minecraft:sculk_catalyst',
+            '64x kubejs:warden_horn',
+            '64x kubejs:warden_horn',
+            '64x kubejs:warden_horn',
+        )
+    })
+
+    // T8MM missions
+    microverse_mission(event, 8, 3, 75, GTValues.VHA, GTValues.ZPM, 75, GTValues.MAX).forEach(builder => {
+        builder
+        .itemInputs(
+            '32x kubejs:quantum_flux',
             '64x kubejs:dilithium_crystal',
             'kubejs:lair_of_the_warden_data'
         )
         .itemOutputs(
             '4x kubejs:hadal_shard',
             '64x minecraft:sculk_catalyst',
+            '48x minecraft:sculk_catalyst',
+            '64x kubejs:warden_horn',
+            '64x kubejs:warden_horn',
             '64x kubejs:warden_horn',
             '64x kubejs:warden_horn',
             '64x kubejs:warden_horn'
@@ -66,9 +85,9 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 8, 3, 90, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
-            '16x kubejs:quantum_flux',
+            '32x kubejs:quantum_flux',
             '64x kubejs:dilithium_crystal',
-            '16x kubejs:dragon_lair_data'
+            '32x kubejs:dragon_lair_data'
         )
         .itemOutputs(
             '64x minecraft:dragon_egg',
@@ -85,7 +104,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 8, 3, 100, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
-            '64x kubejs:quantum_flux',
+            '32x kubejs:quantum_flux',
             '64x kubejs:dilithium_crystal',
             '64x kubejs:wither_realm_data'
         )
@@ -93,7 +112,7 @@ ServerEvents.recipes(event => {
             '16x gtceu:quantum_star',
             '32x gtceu:quantum_eye',
             '8x gtceu:neutronium_ingot',
-            'gtceu:gravi_star'
+            'gtceu:gravi_star',
         )
     })
 
