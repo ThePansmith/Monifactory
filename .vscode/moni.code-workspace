@@ -24,7 +24,10 @@
         },{
             "name": "Build",
             "path": "../tools/build"
-        },
+        },{
+            "name": "Workflows",
+            "path": "../.github/workflows"
+        }
     ],
     "settings": {}
 }

@@ -21,7 +21,7 @@ export default [
             "no-useless-escape": "warn",
             "@stylistic/js/indent": ["error", 4],
             "@stylistic/js/spaced-comment": "error",
-            "@stylistic/js/linebreak-style": ["error", "windows"],
+            "@stylistic/js/linebreak-style": ["error", "unix"],
         },
     },
     MoniLabs
