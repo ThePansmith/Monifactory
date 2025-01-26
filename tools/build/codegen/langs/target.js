@@ -5,6 +5,7 @@ import fs from 'fs';
 import { readDatafileJSON, writeDatafileJSON } from '../../lib/json_datafile.js';
 import { UDTransform } from './en_ud.js';
 import { fileURLToPath } from 'url';
+import z from "zod";
 
 /**
  * @param {string} name Input lang file name
@@ -44,10 +45,10 @@ export const CodegenLangsTarget = new Juke.Target({
             fs.writeFileSync(generated, UD, { encoding: 'utf8' });
         }
 
+        const translationFileSchema = z.record(z.string(), z.string())
         for (const { in: original, out: generated } of UDJSON) {
             // Transforms *.json translation files
-            /** @type {Record<string, string>} */
-            const translations = readDatafileJSON(original);
+            const translations = translationFileSchema.parse(readDatafileJSON(original));
             writeDatafileJSON(
                 generated,
                 Object.fromEntries(

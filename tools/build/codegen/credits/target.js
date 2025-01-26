@@ -3,6 +3,7 @@ import Juke from 'juke-build';
 import fs from 'fs';
 import { randomUUID } from 'crypto';
 import { fileURLToPath } from 'url';
+import z from 'zod';
 
 import { readDatafileJSON } from '../../lib/json_datafile.js';
 import { fillTemplateFile, fillTemplates } from '../fill_templates.js';
@@ -37,23 +38,31 @@ export const CodegenCreditsTarget = new Juke.Target({
         creditScreenLayoutFilePath,
     ],
     executes: () => {
-    /* TODO: Replace JSDoc by a schema validator with static type inference. */
-    /**
-     * @typedef Contributor
-     * @prop {string?} mcuuid
-     * @prop {"dev"|"contributor"|"dev-alt"|"contributor-alt"} role
-     * @prop {string?} description
-     * @prop {string?} link
-     */
-        /**
-     * @typedef ContributorsFile
-     * @prop {Record<string, Contributor>} people
-     * @prop {Record<Contributor["role"], string>} cape_name_of_role
-     * @prop {Pick<Contributor, "role"|"description"> & {skin: string}} defaults
-     */
+        const zRole = z.enum([
+            "dev",
+            "contributor",
+            "dev-alt",
+            "contributor-alt"
+        ]);
 
-        /** @type {ContributorsFile} */
-        const { cape_name_of_role, people, defaults } = readDatafileJSON(contributorsFilePath);
+        const zContributor = z.object({
+            mcuuid: z.string().optional(),
+            role: zRole.optional(),
+            description: z.string().optional(),
+            link: z.string().optional()
+        });
+
+        const zContributorsFile = z.object({
+            people: z.record(z.string(), zContributor),
+            cape_name_of_role: z.record(zRole, z.string()),
+            defaults: z.object({
+                role: zRole,
+                description: z.string(),
+                skin: z.string()
+            })
+        });
+
+        const { cape_name_of_role, people, defaults } = zContributorsFile.parse(readDatafileJSON(contributorsFilePath));
 
         // Apply default values to all people
         for (const [name, data] of Object.entries(people)) {
@@ -66,10 +75,10 @@ export const CodegenCreditsTarget = new Juke.Target({
             { encoding: 'utf8' },
         );
 
-        const getCapesByRole = (/** @type {Contributor["role"]} */ role) =>
+        const getCapesByRole = (/** @type {z.infer<zRole>} */ role) =>
             Object
                 .entries(people)
-                .filter(([, data]) => data.mcuuid && data.role.includes(role))
+                .filter(([, data]) => data.mcuuid && data.role?.includes(role))
                 .map(([name, data]) =>
                     fillTemplates(
                         devCapeTemplate,
@@ -77,6 +86,7 @@ export const CodegenCreditsTarget = new Juke.Target({
                             '{{NAME}}': name,
                             // @ts-ignore See filter above
                             '{{UUID}}': data.mcuuid,
+                            // @ts-ignore See filter above
                             '{{CAPE}}': cape_name_of_role[data.role],
                         },
                     )
@@ -106,7 +116,7 @@ export const CodegenCreditsTarget = new Juke.Target({
 
         const creditScreenContributors = Object
             .entries(people)
-            .filter(([, data]) => !data.role.includes('alt'))
+            .filter(([, data]) => !data.role?.includes('alt'))
         // Bubble up people with skins, as they would be more interesting
             .sort((a, b) => Number(!!b[1].mcuuid) - Number(!!a[1].mcuuid))
             .map(([name, data]) => {
