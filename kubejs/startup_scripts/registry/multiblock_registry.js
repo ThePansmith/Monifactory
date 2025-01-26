@@ -560,7 +560,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         }])
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CMC", "CVC", "CCC")
+            .aisle("CCC", "CVC", "CCC")
             .aisle("CCC", "GDG", "CCC")
             .aisle("C@C", "CGC", "CCC")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
@@ -568,7 +568,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(12)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-            .where('M', Predicates.abilities(PartAbility.MUFFLER))
             .where('V', Predicates.blocks(GTBlocks.CASING_GRATE.get()))
             .build())
         .workableCasingRenderer("kubejs:block/microverse/casing",
