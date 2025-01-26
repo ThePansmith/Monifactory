@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:lair_of_the_warden_data')
     })
 
-    advanced_microverse_ii_mission(event, 7, 75, GTValues.VA, GTValues.LuV, 25, GTValues.MAX).forEach(builder => {
+    advanced_microverse_ii_mission(event, 7, 75, GTValues.VA, GTValues.LuV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
     })
 
     // T8MM missions
-    advanced_microverse_ii_mission(event, 8, 75, GTValues.VHA, GTValues.ZPM, 25, GTValues.MAX).forEach(builder => {
+    advanced_microverse_ii_mission(event, 8, 75, GTValues.VHA, GTValues.ZPM, 60, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    advanced_microverse_ii_mission(event, 8, 90, GTValues.VHA, GTValues.ZPM, 25, GTValues.MAX).forEach(builder => {
+    advanced_microverse_ii_mission(event, 8, 90, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    advanced_microverse_ii_mission(event, 8, 100, GTValues.VHA, GTValues.ZPM, 20, GTValues.MAX).forEach(builder => {
+    advanced_microverse_ii_mission(event, 8, 100, GTValues.VHA, GTValues.ZPM, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '64x kubejs:quantum_flux',

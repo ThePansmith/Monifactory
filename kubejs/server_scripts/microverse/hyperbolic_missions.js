@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     })
 
     // T8MM mission
-    hyperbolic_microverse_mission(event, 8, 30, GTValues.VHA, GTValues.UV, 25, GTValues.MAX).forEach(builder => {
+    hyperbolic_microverse_mission(event, 8, 30, GTValues.VHA, GTValues.UV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs(
             '16x kubejs:quantum_flux',
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:creative_computation_data')
     })
 
-    hyperbolic_microverse_mission(event, 12, 60, GTValues.VA, GTValues.UIV, 50, GTValues.MAX).forEach(builder => {
+    hyperbolic_microverse_mission(event, 12, 60, GTValues.VA, GTValues.UIV, 40, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('64x gtceu:infinity_ingot', '4x kubejs:universe_creation_data')
         .itemOutputs('64x gtceu:monium_ingot')

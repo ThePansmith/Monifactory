@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     // T4MM missions
-    advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 15, GTValues.MAX).forEach(builder => {
+    advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('8x kubejs:quantum_flux')
         .itemInputs('16x kubejs:petrotheum_dust')
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 40, GTValues.MAX).forEach(builder => {
+    advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('8x kubejs:quantum_flux')
         .itemInputs('64x kubejs:petrotheum_dust')
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 40, GTValues.MAX).forEach(builder => {
+    advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('8x kubejs:quantum_flux')
         .itemInputs('64x kubejs:petrotheum_dust')
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 40, GTValues.MAX).forEach(builder => {
+    advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('8x kubejs:quantum_flux')
         .itemInputs('64x kubejs:petrotheum_dust')
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    advanced_microverse_mission(event, 4, 30, GTValues.VA, GTValues.EV, 10, GTValues.MAX).forEach(builder => {
+    advanced_microverse_mission(event, 4, 30, GTValues.VHA, GTValues.IV, 10, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('4x kubejs:quantum_flux')
         .itemInputs('64x kubejs:petrotheum_dust')
@@ -71,8 +71,22 @@ ServerEvents.recipes(event => {
         )
     })
 
+    advanced_microverse_mission(event, 4, 40, GTValues.VHA, GTValues.IV, 15, GTValues.MAX).forEach(builder => {
+        builder
+        .itemInputs('8x kubejs:quantum_flux')
+        .itemInputs('64x kubejs:petrotheum_dust')
+        .itemInputs('gtceu:wrought_iron_drill_head')
+        .itemOutputs(
+            '64x gtceu:raw_thorium',
+            '64x gtceu:raw_thorium',
+            '64x gtceu:raw_thorium',
+            '64x gtceu:raw_thorium',
+            '32x gtceu:raw_uraninite',
+        )
+    })
+
     // T5MM missions
-    advanced_microverse_mission(event, 5, 50, GTValues.VA, GTValues.IV, 15, GTValues.MAX).forEach(builder => {
+    advanced_microverse_mission(event, 5, 50, GTValues.VA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {
         if(isNormalMode) {
             builder
             .itemInputs('16x kubejs:quantum_flux')
@@ -106,7 +120,7 @@ ServerEvents.recipes(event => {
         }
     })
 
-    advanced_microverse_mission(event, 5, 50, GTValues.VA, GTValues.IV, 10, GTValues.MAX).forEach(builder => {
+    advanced_microverse_mission(event, 5, 50, GTValues.VA, GTValues.IV, 20, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('16x kubejs:quantum_flux')
         .itemInputs('32x kubejs:stabilized_uranium')
@@ -116,6 +130,7 @@ ServerEvents.recipes(event => {
             '64x gtceu:raw_realgar',
             '64x gtceu:raw_monazite',
             '64x gtceu:raw_molybdenite',
+            '32x gtceu:raw_powellite',
             '16x gtceu:raw_osmiridiumyes'
         )
     })
@@ -129,6 +144,7 @@ ServerEvents.recipes(event => {
             '64x gtceu:raw_uraninite',
             '64x gtceu:raw_bastnasite',
             '64x gtceu:raw_sphalerite',
+            '64x gtceu:raw_sphalerite',
             '64x gtceu:ender_pearl_block',
             '64x gtceu:boron_dust',
             '64x gtceu:raw_beryllium',
@@ -137,7 +153,7 @@ ServerEvents.recipes(event => {
     })
 
     // T6MM missions
-    advanced_microverse_mission(event, 6, 60, GTValues.VHA, GTValues.LuV, 20, GTValues.MAX).forEach(builder => {
+    advanced_microverse_mission(event, 6, 60, GTValues.VHA, GTValues.LuV, 25, GTValues.MAX).forEach(builder => {
         builder
         .itemInputs('16x kubejs:quantum_flux')
         .itemInputs('32x kubejs:stabilized_uranium')
@@ -161,6 +177,21 @@ ServerEvents.recipes(event => {
         .itemInputs('64x kubejs:wither_realm_data')
         .itemOutputs(
             '32x kubejs:stabilized_einsteinium'
+        )
+    })
+
+    advanced_microverse_mission(event, 6, 60, GTValues.VHA, GTValues.LuV, 35, GTValues.MAX).forEach(builder => {
+        builder
+        .itemInputs('16x kubejs:quantum_flux')
+        .itemInputs('32x kubejs:stabilized_curium')
+        .itemInputs('gtceu:tungsten_carbide_drill_head')
+        .itemInputs('64x kubejs:wither_realm_data')
+        .itemOutputs(
+            '64x gtceu:raw_nether_quartz',
+            '64x gtceu:raw_nether_quartz',
+            '64x gtceu:raw_nether_quartz',
+            '64x minecraft:ancient_debris',
+            '32x minecraft:ancient_debris',
         )
     })
 
