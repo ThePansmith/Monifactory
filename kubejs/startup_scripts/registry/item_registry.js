@@ -147,7 +147,8 @@ StartupEvents.registry('item', event => {
     event.create('diamond_lattice')
     event.create('neutron_emitter')
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
-    event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
+    event.create('mote_of_omnium').displayName("Mote of Omnium")
+        .glow(true).rarity("epic")
     event.create('heart_of_a_universe').displayName("§dHeart Of A Universe")
     event.create('exotic_materials_catalyst').displayName("Exotic Materials Catalyst")
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
@@ -174,11 +175,16 @@ StartupEvents.registry('item', event => {
 
     // Ultimate Tools
     event.create('ultimate_core').texture('kubejs:item/ultimate/core')
-    event.create('ultimate_file').texture('kubejs:item/ultimate/file').rarity("epic").maxStackSize(1)
-    event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer').rarity("epic").maxStackSize(1)
-    event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver').rarity("epic").maxStackSize(1)
-    event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench').rarity("epic").maxStackSize(1)
-    event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter').rarity("epic").maxStackSize(1)
+    event.create('ultimate_file').texture('kubejs:item/ultimate/file')
+        .rarity("epic").maxStackSize(1)
+    event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer')
+        .rarity("epic").maxStackSize(1)
+    event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver')
+        .rarity("epic").maxStackSize(1)
+    event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench')
+        .rarity("epic").maxStackSize(1)
+    event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter')
+        .rarity("epic").maxStackSize(1)
 
 
     // Infinity Tools
