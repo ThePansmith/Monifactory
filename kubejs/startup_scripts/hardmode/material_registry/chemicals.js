@@ -144,7 +144,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0x915A23)
         .components('1x pyromellitic_dianhydride', '1x oxydianiline')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.STICKY)
 
     // Harder Fluorantimonic Acid
     event.create('antimony_pentafluoride')
