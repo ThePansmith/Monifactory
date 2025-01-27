@@ -5,6 +5,7 @@
 import commentHeader from "./comment-header.mjs"
 import recipeSpacing from "./recipe-spacing.mjs"
 import multiblockDeclaration from "./multiblock-declaration.mjs"
+import callChains from "./call-chains.mjs"
 
 /**
  * Creates a custom ESLint plugin
@@ -27,5 +28,6 @@ function customPluginWithAllRulesError(name, rules) {
 export const MoniLabs = customPluginWithAllRulesError("moni-labs", {
     "comment-header": commentHeader,
     "recipe-spacing": recipeSpacing,
-    "multiblock-declaration": multiblockDeclaration
+    "multiblock-declaration": multiblockDeclaration,
+    "call-chains": callChains
 })

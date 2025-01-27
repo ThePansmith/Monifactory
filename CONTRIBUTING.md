@@ -111,8 +111,7 @@ Keeping the KubeJS files clean and easy to read is important for a couple reason
 3. Please sprinkle in one-line comments throughout to explain what certain blocks of code do. _Nobody's_ code is self-explanatory.
 4. When possible, use a list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
 5. Use empty lines to delineate between distinct blocks of code in the same file - one line if the two blocks work together to perform the same function, two otherwise.
-6. When dealing with long concatenated method calls or extended lists of parameters, indent any continuations of that statement on a new line, in the same way that one would indent the body of an if statement or for loop.
-7. All mod-focused scripts' filenames should be the same as that mod's namespace. (Visible when viewing item IDs) Furthermore all scripts' filenames should be entirely lowercase.
+6. All mod-focused scripts' filenames should be the same as that mod's namespace. (Visible when viewing item IDs) Furthermore all scripts' filenames should be entirely lowercase.
 
 ### Asset & Data folder Organization ###
 
