@@ -1258,7 +1258,12 @@
 					type: "item"
 				}
 				{
-					id: "65DF1406D1FBC1EA"
+					id: "6F05D225F1CE30D7"
+					item: "gtceu:actinium_nugget"
+					type: "item"
+				}
+				{
+					id: "01DCEB2E7AE79099"
 					item: "gtceu:small_actinium_dust"
 					type: "item"
 				}
