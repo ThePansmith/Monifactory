@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     if(isNormalMode) return;
-    
+
     // Pristine Matter & corresponding projector tier
     const pristine_matter = [
         ['1', 1],
@@ -31,14 +31,14 @@ ServerEvents.recipes(event => {
             .duration(120)
             .EUt(GTValues.VA[GTValues.UHV])
     }
-    
+
     /**
      * Function for making a pristine matter recipe
-     * @param {(string | number)[]} minerTier 
-     * @param {number} projectorTier 
+     * @param {string} minerTier
+     * @param {number} projectorTier
      */
     function pristine_matter_recipe(minerTier, projectorTier) {
-        event.recipes.gtceu.basic_microverse(`pristine_${minerTier}`)
+        event.recipes.gtceu.microverse(`pristine_${minerTier}`)
             .addData("Microverse_Tier", projectorTier)
             .notConsumable(`kubejs:stabilized_microminer_t${minerTier}`)
             .itemOutputs(`kubejs:pristine_matter_t${minerTier}`)
@@ -47,6 +47,8 @@ ServerEvents.recipes(event => {
     }
 
     // Apply recipe generation functions to each pristine matter tier
-    pristine_matter.forEach((value) => {pristine_matter_recipe(value[0], value[1]);});
-    pristine_matter.forEach((value) => {stabilized_miner_recipe(value[0]);});
+    pristine_matter.forEach(([minerTier, projectorTier]) => {
+        pristine_matter_recipe(minerTier, projectorTier);
+        stabilized_miner_recipe(minerTier);
+    });
 })
