@@ -10,17 +10,14 @@
             "name": "Configs",
             "path": "../config"
         },{
-            "name": "Configs overrides",
+            "name": "Configs Overrides",
             "path": "../config-overrides"
         },{
-            "name": "Configs defaults",
+            "name": "Configs Default",
             "path": "../defaultconfigs"
         },{
             "name": "Quests",
             "path": "../config/ftbquests/quests"
-        },{
-            "name": "Logs",
-            "path": "../logs"
         },{
             "name": "Build",
             "path": "../tools/build"
