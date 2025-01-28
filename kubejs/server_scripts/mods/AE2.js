@@ -1,10 +1,12 @@
+/**
+ * Custom recipes for AE2
+ */
 ServerEvents.recipes(event => {
 
     // Base AE2
     // ME Controller
     event.remove({ id: 'ae2:network/blocks/controller' })
-    event.shaped(
-        Item.of('ae2:controller'), [
+    event.shaped(Item.of('ae2:controller'), [
         'ABA',
         'BCB',
         'ABA'
@@ -16,8 +18,7 @@ ServerEvents.recipes(event => {
 
     // Energy Acceptor
     event.remove({ id: 'ae2:network/blocks/energy_energy_acceptor' })
-    event.shaped(
-        Item.of('ae2:energy_acceptor'), [
+    event.shaped(Item.of('ae2:energy_acceptor'), [
         'ABA',
         'BCB',
         'ABA'
@@ -29,8 +30,7 @@ ServerEvents.recipes(event => {
 
     // ME Chest
     event.remove({ id: 'ae2:network/blocks/storage_chest' })
-    event.shaped(
-        Item.of('ae2:chest'), [
+    event.shaped(Item.of('ae2:chest'), [
         'ABA',
         'CDE',
         'FGF'
@@ -46,8 +46,7 @@ ServerEvents.recipes(event => {
 
     // ME Drive
     event.remove({ id: 'ae2:network/blocks/storage_drive' })
-    event.shaped(
-        Item.of('ae2:drive'), [
+    event.shaped(Item.of('ae2:drive'), [
         'ABA',
         'CDC',
         'AEA'
@@ -61,8 +60,7 @@ ServerEvents.recipes(event => {
 
     // Inscriber
     event.remove({ id: 'ae2:network/blocks/inscribers' })
-    event.shaped(
-        Item.of('ae2:inscriber'), [
+    event.shaped(Item.of('ae2:inscriber'), [
         'ABA',
         'CDA',
         'ABA'
@@ -87,8 +85,7 @@ ServerEvents.recipes(event => {
 
     // Pattern Provider
     event.remove({ id: 'ae2:network/blocks/pattern_providers_interface' })
-    event.shaped(
-        Item.of('ae2:pattern_provider'), [
+    event.shaped(Item.of('ae2:pattern_provider'), [
         'ABA',
         'CDE',
         'AAA'
@@ -102,8 +99,7 @@ ServerEvents.recipes(event => {
 
     // Molecular Assembler
     event.remove({ id: 'ae2:network/crafting/molecular_assembler' })
-    event.shaped(
-        Item.of('ae2:molecular_assembler'), [
+    event.shaped(Item.of('ae2:molecular_assembler'), [
         'ABA',
         'CDE',
         'ABA'
@@ -117,8 +113,7 @@ ServerEvents.recipes(event => {
 
     // Interface
     event.remove({ id: 'ae2:network/blocks/interfaces_interface' })
-    event.shaped(
-        Item.of('ae2:interface'), [
+    event.shaped(Item.of('ae2:interface'), [
         'ABA',
         'CDE',
         'AAA'
@@ -132,8 +127,7 @@ ServerEvents.recipes(event => {
 
     // Requester
     event.remove({ id: 'merequester:requester' })
-    event.shaped(
-        Item.of('merequester:requester'), [
+    event.shaped(Item.of('merequester:requester'), [
         'ABA',
         'CDC',
         'AAA'
@@ -146,8 +140,7 @@ ServerEvents.recipes(event => {
 
     // Quantum Ring
     event.remove({ id: 'ae2:network/blocks/quantum_ring' })
-    event.shaped(
-        Item.of('ae2:quantum_ring'), [
+    event.shaped(Item.of('ae2:quantum_ring'), [
         'ABA',
         'DCD',
         'ABA'
@@ -160,8 +153,7 @@ ServerEvents.recipes(event => {
 
     // Quantum Link Chamber
     event.remove({ id: 'ae2:network/blocks/quantum_link' })
-    event.shaped(
-        Item.of('ae2:quantum_link'), [
+    event.shaped(Item.of('ae2:quantum_link'), [
         'ABA',
         'BCB',
         'ABA'
@@ -192,8 +184,7 @@ ServerEvents.recipes(event => {
 
     // Storage Housing
     event.remove({ id: 'ae2:network/cells/item_cell_housing' })
-    event.shaped(
-        Item.of('ae2:item_cell_housing'), [
+    event.shaped(Item.of('ae2:item_cell_housing'), [
         'ABA',
         'B B',
         'ABA'
@@ -203,8 +194,7 @@ ServerEvents.recipes(event => {
     }).id('kubejs:ae2/item_cell_housing')
 
     event.remove({ id: 'ae2:network/cells/fluid_cell_housing' })
-    event.shaped(
-        Item.of('ae2:fluid_cell_housing'), [
+    event.shaped(Item.of('ae2:fluid_cell_housing'), [
         'ABA',
         'B B',
         'ABA'
@@ -215,8 +205,7 @@ ServerEvents.recipes(event => {
 
     // CPUs
     event.remove({ id: 'ae2:network/crafting/cpu_crafting_unit' })
-    event.shaped(
-        Item.of('ae2:crafting_unit'), [
+    event.shaped(Item.of('ae2:crafting_unit'), [
         'ABA',
         'CDC',
         'ABA'
@@ -229,8 +218,7 @@ ServerEvents.recipes(event => {
 
     // Charger
     event.remove({ id: 'ae2:network/blocks/crystal_processing_charger' })
-    event.shaped(
-        Item.of('ae2:charger'), [
+    event.shaped(Item.of('ae2:charger'), [
         'ABA',
         'A  ',
         'ABA'
@@ -261,8 +249,7 @@ ServerEvents.recipes(event => {
 
     // Matter Condenser
     event.remove({ id: 'ae2:network/blocks/io_condenser' })
-    event.shaped(
-        Item.of('ae2:condenser'), [
+    event.shaped(Item.of('ae2:condenser'), [
         'AAA',
         'ABA',
         'AAA'
@@ -311,8 +298,7 @@ ServerEvents.recipes(event => {
         else prevTier = Item.of(`megacells:cell_component_${storage_tiers[index]}`)
 
         event.remove({ id: toRemove })
-        event.shaped(
-            Item.of(curTier), [
+        event.shaped(Item.of(curTier), [
             'ABA',
             'SCS',
             'ASA'
@@ -323,7 +309,7 @@ ServerEvents.recipes(event => {
             S: Item.of(prevTier)
         }).id(`kubejs:ae2/storage_component_${storage_tiers[index + 1]}`)
 
-        //Cheaper ramp up to reduce exponential effect
+        // Cheaper ramp up to reduce exponential effect
         event.recipes.gtceu.assembler(`kubejs:ae2/${storage_tiers[index + 1]}_storage_assembler`)
             .itemInputs(
                 Item.of(prevTier, 2),
@@ -343,17 +329,15 @@ ServerEvents.recipes(event => {
     for (let index = 0; index < 5; index++) {
         let circuit = `#gtceu:circuits/${GTValues.VN[index + 1].toLowerCase()}`
         let glass = index == 0 ? 'minecraft:glass' : 'gtceu:tempered_glass'
-        event.shaped(Item.of('ae2:cell_component_1k', Math.pow(2, index)),
-            [
-                'ABA',
-                'BCB',
-                'ABA'
-            ], {
+        event.shaped(Item.of('ae2:cell_component_1k', Math.pow(2, index)), [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
             A: glass,
             B: 'gtceu:red_alloy_plate',
             C: circuit
-        }
-        ).id(`kubejs:ae2/storage_component_1k_${Math.pow(2, index)}`)
+        }).id(`kubejs:ae2/storage_component_1k_${Math.pow(2, index)}`)
     }
 
     // Wireless Receiver
@@ -708,7 +692,7 @@ ServerEvents.recipes(event => {
     pressengrave("kubejs:ae2/logic_processor_press", 'ae2:logic_processor_press', '#forge:lenses/green');
     pressengrave("kubejs:ae2/name_press", 'ae2:name_press', '#forge:lenses/white');
 
-    //MEGA cells
+    // MEGA cells
     event.remove({ id: 'megacells:inscriber/accumulation_processor_press' })
     event.recipes.gtceu.laser_engraver("kubejs:mega/accumulation_processor_press")
         .itemInputs('gtceu:stainless_steel_block')
@@ -758,8 +742,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: /megacells:cells\/standard\/.*storage_cell.*m$/ })
 
     event.remove({ id: "megacells:cells/mega_item_cell_housing" })
-    event.shaped(
-        Item.of('megacells:mega_item_cell_housing'), [
+    event.shaped(Item.of('megacells:mega_item_cell_housing'), [
         'ABA',
         'B B',
         'ABA'
@@ -769,8 +752,7 @@ ServerEvents.recipes(event => {
     }).id('kubejs:mega/item_cell_housing')
 
     event.remove({ id: "megacells:cells/mega_fluid_cell_housing" })
-    event.shaped(
-        Item.of('megacells:mega_fluid_cell_housing'), [
+    event.shaped(Item.of('megacells:mega_fluid_cell_housing'), [
         'ABA',
         'B B',
         'ABA'
@@ -779,7 +761,7 @@ ServerEvents.recipes(event => {
         B: 'gtceu:crystal_matrix_plate'
     }).id('kubejs:mega/fluid_cell_housing')
 
-    event.remove({ id: "megacells:cells/standard/bulk_item_cell" }) //recipe in SDA
+    event.remove({ id: "megacells:cells/standard/bulk_item_cell" }) // recipe in SDA
     event.remove({ id: "megacells:crafting/bulk_cell_component" })
 
     event.remove({ id: "megacells:network/cell_dock" })
@@ -791,8 +773,7 @@ ServerEvents.recipes(event => {
         .duration(200)
 
     event.remove({ id: "megacells:crafting/mega_crafting_unit" })
-    event.shaped(
-        Item.of('megacells:mega_crafting_unit'), [
+    event.shaped(Item.of('megacells:mega_crafting_unit'), [
         'ABA',
         'CDC',
         'ABA'
@@ -1038,12 +1019,11 @@ ServerEvents.recipes(event => {
         .EUt(1920)
 
     // Misc stuff
-    event.shaped('expatternprovider:ingredient_buffer',
-        [
-            'ISI',
-            'GCG',
-            'ISI'
-        ], {
+    event.shaped('expatternprovider:ingredient_buffer', [
+        'ISI',
+        'GCG',
+        'ISI'
+    ], {
         I: 'gtceu:iron_plate',
         S: 'ae2:cell_component_1k',
         G: 'ae2:quartz_glass',
@@ -1118,8 +1098,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(2)
 
-    event.shaped(
-        Item.of('gtceu:certus_quartz_block'), [
+    event.shaped(Item.of('gtceu:certus_quartz_block'), [
         'AA',
         'AA'
     ], {
@@ -1142,41 +1121,32 @@ ServerEvents.recipes(event => {
     const colors = ['black', 'blue', 'brown', 'cyan', 'gray', 'green', 'light_blue', 'light_gray', 'lime', 'magenta', 'orange', 'pink', 'purple', 'red', 'white', 'yellow']
 
     function washToFluix(wash) {
-        event.shaped(
-            `8x ae2:fluix_${wash}_cable`,
-            [
-                'CCC',
-                'CDC',
-                'CCC'
-            ], {
+        event.shaped(`8x ae2:fluix_${wash}_cable`, [
+            'CCC',
+            'CDC',
+            'CCC'
+        ], {
             C: `#ae2:${wash}_cable`,
             D: '#ae2:can_remove_color'
-        }
-        )
+        })
     }
 
     function coveredDenseCable(color) {
-        event.shaped(
-            `ae2:${color}_covered_dense_cable`,
-            [
-                'CC',
-                'CC'
-            ], {
+        event.shaped(`ae2:${color}_covered_dense_cable`, [
+            'CC',
+            'CC'
+        ], {
             C: `ae2:${color}_covered_cable`
-        }
-        )
+        })
     }
 
     function smartDenseCable(color) {
-        event.shaped(
-            `ae2:${color}_smart_dense_cable`,
-            [
-                'CC',
-                'CC'
-            ], {
+        event.shaped(`ae2:${color}_smart_dense_cable`, [
+            'CC',
+            'CC'
+        ], {
             C: `ae2:${color}_smart_cable`
-        }
-        )
+        })
     }
 
 

@@ -3273,5 +3273,9 @@
     "moni.quest.383FADC5E8BC4E91.title": "酿造室",
     "moni.quest.39394D5596FF8BC8.description3": "&6高级磁铁升级&r和&6通量磁铁&r可以进行过滤，不过后者需要在 &6工匠工作台&r中应用&6物品过滤增强&r才能实现。",
     "moni.quest.5F688F22A3DB2ADD.description2": "大多数重要的配方都在 &bMV&r，因此您需要一个该级别或更高的机器。",
-    "moni.quest.74935A3553451178.title": "装罐机"
+    "moni.quest.74935A3553451178.title": "装罐机",
+    "moni.chapter.0102198269F850CD.title": "发电",
+    "moni.quest.03EA9B7B09B88244.description1": "如果你想把太阳能作为你的主要能源，请注意，这是一个相当大的挑战——太阳能更适合于无需维护、低功耗的站点，如采矿、泵取和其他维度的空气收集作业。",
+    "moni.quest.03EA9B7B09B88244.description2": "如果你想使用太阳能作为主要发电来源，那么就&c不要浪费时间从每个太阳能电池板中提取能量！&r",
+    "moni.quest.03EA9B7B09B88244.description3": "太阳能电池板可以自行在彼此之间传输 &aFE&r。因此根据等级的不同，每个激光节点或导管可以连接 &e六个或更多的电池板&r！"
 }

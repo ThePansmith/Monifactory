@@ -1,4 +1,4 @@
-//@ts-check
+// @ts-check
 import fs from 'fs';
 
 /**
@@ -12,15 +12,15 @@ import fs from 'fs';
  * @returns {string} Modified string with all matches replaced.
  */
 export const fillTemplates = (template, filler) =>
-  Object.entries(filler)
-    .reduce((t, [key, value]) => {
-      const regex = new RegExp(key, 'g');
-      // TS does not allow for ternary inside replaceAll
-      if (typeof value === 'function') {
-        return t.replaceAll(regex, value);
-      }
-      return t.replaceAll(regex, value.toString());
-    }, template);
+    Object.entries(filler)
+        .reduce((t, [key, value]) => {
+            const regex = new RegExp(key, 'g');
+            // TS does not allow for ternary inside replaceAll
+            if (typeof value === 'function') {
+                return t.replaceAll(regex, value);
+            }
+            return t.replaceAll(regex, value.toString());
+        }, template);
 
 /**
  * Replaces all specified marker substrings in a file and saves to another file.
@@ -30,10 +30,10 @@ export const fillTemplates = (template, filler) =>
  * @returns {void}
  */
 export const fillTemplateFile = (templateFilePath, saveFilePath, filler) =>
-  fs.writeFileSync(
-    saveFilePath,
-    fillTemplates(
-      fs.readFileSync(templateFilePath, { encoding: 'utf8' }),
-      filler,
-    ),
-  );
+    fs.writeFileSync(
+        saveFilePath,
+        fillTemplates(
+            fs.readFileSync(templateFilePath, { encoding: 'utf8' }),
+            filler,
+        ),
+    );

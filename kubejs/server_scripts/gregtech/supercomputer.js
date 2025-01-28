@@ -1,3 +1,6 @@
+/**
+ * Simulation Supercomputer multiblock
+ */
 ServerEvents.recipes(event => {
     function supercomp(model, prediction, EUt) {
         event.recipes.gtceu.simulation_supercomputer(`kubejs:${model}`)
@@ -9,7 +12,7 @@ ServerEvents.recipes(event => {
             .EUt(EUt)
     }
     if (isNormalMode) {
-        ////// Machine Recipe //////
+        // //// Machine Recipe //////
 
         event.recipes.gtceu.assembly_line('simulation_supercomputer')
             .itemInputs('gtceu:atomic_casing', '6x gtceu:trinaquadalloy_plate', '4x hostilenetworks:sim_chamber', 'kubejs:heart_of_a_universe', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_field_generator', 'kubejs:abyssal_energy_core')
@@ -23,7 +26,7 @@ ServerEvents.recipes(event => {
             .duration(1200)
             .EUt(1966080)
 
-        ////// Computer Recipes //////
+        // //// Computer Recipes //////
 
         supercomp('thermal/thermal_elemental', 'overworld', 256)
         supercomp('shulker', 'end', 128)

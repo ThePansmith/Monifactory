@@ -1,0 +1,30 @@
+{
+    "folders": [
+        {
+            "name": "Root",
+            "path": "../",
+        },{
+            "name": "KubeJS",
+            "path": "../kubejs"
+        },{
+            "name": "Configs",
+            "path": "../config"
+        },{
+            "name": "Configs Overrides",
+            "path": "../config-overrides"
+        },{
+            "name": "Configs Default",
+            "path": "../defaultconfigs"
+        },{
+            "name": "Quests",
+            "path": "../config/ftbquests/quests"
+        },{
+            "name": "Build",
+            "path": "../tools/build"
+        },{
+            "name": "Workflows",
+            "path": "../.github/workflows"
+        }
+    ],
+    "settings": {}
+}

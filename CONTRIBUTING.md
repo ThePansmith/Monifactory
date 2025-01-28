@@ -106,15 +106,12 @@ them as appropriate for the difficulty setting that folder represents.
 ### KubeJS Style Guide ###
 Keeping the KubeJS files clean and easy to read is important for a couple reasons; outside of making fellow contributor's lives easier, it lets people who are new to KubeJS be able to easily reference Monifactory when getting started with learning how to packdev. This might seem like a lot, but if you take a look at how the other files do it, it comes fairly naturally; the list below is a reference in case you are not sure.
 
-1. If you're using VSCode as an editor, use its `Format Document` feature before submitting a PR or pushing changes to keep things organized. It can be accessed with the right-click context menu or the keyboard shortcut `Shift+Alt+F`
-2. On a similar note, we use `4 Spaces` to indent, `UTF-8` character encoding, and end lines with `CRLF`. This information is visible on the bottom-right if you're using VSCode.
-3. Label things with comments! Every file should have a C-style comment at the top explaining what that file does, (Reference existing files if you don't know what that is) and please sprinkle in one-line comments throughout to explain what certain blocks of code do. _Nobody's_ code is self-explanatory.
-4. On that note, please add a space between the double line comment and its text to form comments `// like this.`
-5. When possible, use a list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
-6. Use empty lines to delineate between distinct blocks of code in the same file - one line if the two blocks work together to perform the same function, two otherwise.
-7. When dealing with long concatenated method calls or extended lists of parameters, indent any continuations of that statement on a new line, in the same way that one would indent the body of an if statement or for loop.
-8. All mod-focused scripts' filenames should be the same as that mod's namespace. (Visible when viewing item IDs) Furthermore all scripts' filenames should be entirely lowercase.
-9. For Multiblock pattern builders, always use `@` char for the controller, ` ` (space) for air and `#` for the 'any' predicate.
+1. If you're using VSCode as an editor, open workspace `.vscode/moni.code-workspace` and install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Make sure to install ESLint with [`npm install`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) in `kubejs` directory beforehand. This will ensure code quality in the scripts you are writing. *If you use a unix-like system, copy `.github/hooks` directory into `.git/` as well.*
+2. On a similar note, we use `UTF-8` character encoding. This information is visible on the bottom-right if you're using VSCode.
+3. Please sprinkle in one-line comments throughout to explain what certain blocks of code do. _Nobody's_ code is self-explanatory.
+4. When possible, use a list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
+5. Use empty lines to delineate between distinct blocks of code in the same file - one line if the two blocks work together to perform the same function, two otherwise.
+6. All mod-focused scripts' filenames should be the same as that mod's namespace. (Visible when viewing item IDs) Furthermore all scripts' filenames should be entirely lowercase.
 
 ### Asset & Data folder Organization ###
 

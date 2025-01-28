@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for GT
+ */
 ServerEvents.recipes(event => {
 
     event.shapeless('gtceu:red_alloy_dust', ['gtceu:copper_dust', '4x minecraft:redstone']).id('kubejs:shapeless/red_alloy_dust')
@@ -10,7 +13,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(32)
 
-    //Sunnarium plates
+    // Sunnarium plates
     event.remove({ id: 'gtceu:compressor/compress_plate_dust_sunnarium' })
     event.shaped('4x gtceu:sunnarium_plate', [
         'PPP',
@@ -57,7 +60,7 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(16)
 
-    //NETHER STAR RECIPES
+    // NETHER STAR RECIPES
     event.remove({ id: "hostilenetworks:living_matter/extraterrestrial/nether_star" })
     event.remove({ id: "gtceu:implosion_compressor/implodedust_nether_star_tnt" })
 
@@ -81,20 +84,19 @@ ServerEvents.recipes(event => {
         ], {
             A: 'enderio:pulsating_crystal',
             B: 'hostilenetworks:end_prediction'
-        }
-        )
+        })
     }
 
-    //Hot MV ingots
+    // Hot MV ingots
     event.remove({ input: ['gtceu:hot_kanthal_ingot', "gtceu:hot_silicon_ingot"] })
     event.replaceOutput({ output: 'gtceu:hot_silicon_ingot' }, 'gtceu:hot_silicon_ingot', 'gtceu:silicon_ingot')
 
-    //Steel Machine Casing
+    // Steel Machine Casing
     event.remove({ input: 'gtceu:steel_machine_casing' })
     event.remove({ output: 'gtceu:steel_machine_casing' })
 
-    //Ender Pearl dust Electrolysis
-    //event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })
+    // Ender Pearl dust Electrolysis
+    // event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })
 
     // rock breaker
     const generateRockBreakerStoneRecipe = (stoneItem) => {

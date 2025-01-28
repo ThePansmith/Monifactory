@@ -1,5 +1,7 @@
-//? Misc modern materials we have to add
-//? Place non-nomifactory materials here
+/**
+ ? Misc modern materials we have to add
+ ? Place non-nomifactory materials here
+ */
 
 // AE2 Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -156,18 +158,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xF5F5F5)
         .components('1x ammonia', '1x nitric_acid')
 
-        event.create('thorium_hydroxide')
+    event.create('thorium_hydroxide')
         .dust()
         .color(0x243e1c)
         .components('1x thorium', '4x oxygen', '4x hydrogen')
 
-        event.create('terbium_salt')
+    event.create('terbium_salt')
         .dust()
         .color(0x7f7367)
         .components('1x terbium', '3x chlorine')
         .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-        event.create('magnetic_terbium')
+    event.create('magnetic_terbium')
         .ingot()
         .components('1x terbium')
         .color(0x8C8F7A)
@@ -203,7 +205,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('10x carbon_monoxide', '5x chloroethane', '7x ammonium_formate', '9x dinitrogen_tetroxide', '2x neon', '1x tritium')
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 
-        event.create('trinaquadalloy')
+    event.create('trinaquadalloy')
         .fluid()
         .ingot()
         .color(0x281832)
