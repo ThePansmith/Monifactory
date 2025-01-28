@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
             )
         })
 
-        advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "8half", 3, 450, GTValues.VHA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs('16x kubejs:quantum_flux')
             .itemInputs('64x kubejs:dilithium_crystal')
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
             )
         })
 
-        advanced_microverse_ii_mission(event, "8half", 450, GTValues.VHA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "8half", 3, 450, GTValues.VHA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
             builder
             .itemInputs('16x kubejs:quantum_flux')
             .itemInputs('64x kubejs:dilithium_crystal')
