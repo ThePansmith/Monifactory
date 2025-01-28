@@ -1,7 +1,6 @@
 // priority: 1
 /**
  * Utility functions for registering microminer missions,
- * actualization chamber counterparts,
  * and lower-tier projector missions more succinctly.
  */
 
@@ -71,7 +70,7 @@ const missionEUt = {
 }
 
 /**
- * Registers a basic microverse mission and equivalent actualization chamber recipe
+ * Registers a basic microverse mission and equivalent stabilized mission recipe
  * @param {Internal.RecipesEventJS} event Parameter used in consumer for ServerEvents.recipes().
  * @param {number|string} minerTier Miner tier index. Typically 1 through 12.
  * @param {number} duration Recipe duration in seconds. Defaults based on the miner tier if left undefined.
@@ -110,12 +109,12 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
     }
 
     // Register actualization chamber counterparts in Hard Mode and Expert Mode except for T9+
-    if(isHardMode && minerTier < 9 || minerTier == "2half" || minerTier == "4half" || minerTier == "8half") {
-        builders[1] = event.recipes.gtceu.actualization_chamber(`kubejs:pristine_t${minerTier}_${global.mission_counts[minerTier]}`)
-            .itemInputs(`kubejs:pristine_matter_t${minerTier}`)
-            .circuit(global.mission_counts[minerTier])
-            .duration(800)
-            .EUt(GTValues.VA[GTValues.LuV])
+    if(isHardMode && minerTier < 9 || (typeof minerTier === "string" && minerTier.replace("half", "") < 9)) {
+        builders[1] = event.recipes.gtceu.microverse(`kubejs:mission_t${minerTier}_${global.mission_counts[minerTier]}_stabalized`)
+            .addData("projector_tier", projectorTier)
+            .notConsumable(`kubejs:stabilized_microminer_t${minerTier}`)
+            .duration(Math.round(duration * 20))
+            .EUt(EUt)
     }
 
     return builders;

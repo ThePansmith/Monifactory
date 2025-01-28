@@ -1,5 +1,4 @@
 {
-    "block.gtceu.actualization_chamber": "Камера актуализации",
     "block.gtceu.advanced_microverse_projector": "Продвинутый проектор микровселенной",
     "block.gtceu.advanced_microverse_projector_ii": "Продвинутый проектор микровселенной II",
     "block.gtceu.atmospheric_accumulator": "Атмосферный накопитель",
@@ -33,7 +32,6 @@
     "block.gtceu.universal_crystallizer": "Универсальный кристаллизатор",
     "block.gtceu.uv_atomic_reconstructor": "§3Пиковый атомный реконструктор",
     "block.gtceu.zpm_atomic_reconstructor": "§cЭлитный атомный реконструктор III",
-    "gtceu.actualization_chamber": "Актуализация",
     "gtceu.advanced_microverse": "Продвинутый проектор микровселенной",
     "gtceu.advanced_microverse_ii": "Продвинутый проектор микровселенной II",
     "gtceu.advanced_microverse_iii": "Продвинутый проектор микровселенной III",
@@ -276,7 +274,6 @@
     "gtceu.multiblock.quintessence_infuser.description": "§77Использует интенсивные скорости вращения для наполнения большого количества душ в объекты за раз.",
     "gtceu.multiblock.rock_cycle_simulator.description": "§7Мощный механизм, который может производить и собирать сотни кубометров вулканических пород в секунду.",
     "gtceu.multiblock.universal_crystallizer.description": "§7Огромное устройство, способное превращать сырые материалы в сложные вещества.",
-    "gtceu.multiblock.actualization_chamber.description": "§7Мощный механизм, собирающий самые сложные материалы и превращает их в сырьё",
     "block.gtceu.cryococcal_reverberator": "Криококкальный ревербератор",
     "gtceu.multiblock.helical_fusion_reactor.description": "§7Спиральный ядерный реактор это очень большая многоблочная структура, используемая для параллельного синтеза элементов в более тяжёлые. Для каждого люка его буфер увеличивается на 80М EU и имеет лимит в 1280 млн.",
     "material.gtceu.waste_gas_mixture": "Смесь отработанных газов",
