@@ -2459,9 +2459,26 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "74D85DC6D137784C"
-				item: "minecraft:tnt"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:tnt"
+							}
+							{
+								Count: 1b
+								id: "gtceu:industrial_tnt"
+							}
+						]
+					}
+				}
+				title: "{moni.task.74D85DC6D137784C}"
 				type: "item"
 			}]
+			title: "{moni.quest.25B0271106684DF7.title}"
 			x: 3.0d
 			y: 24.0d
 		}
