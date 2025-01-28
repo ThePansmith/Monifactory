@@ -1,3 +1,8 @@
+/**
+ * Hardmode-only Microminers and MM missions
+ * Also stabilized microminers
+ */
+
 ServerEvents.recipes(event => {
 
     // Stabilized miners recipe
@@ -10,7 +15,7 @@ ServerEvents.recipes(event => {
             .EUt(1966080)
     }
 
-    //Manual fix for half tier miners
+    // Manual fix for half tier miners
     if (isHardMode) {
         event.recipes.gtceu.assembly_line("stable_t4half")
             .itemInputs("kubejs:microminer_t4half", 'kubejs:heart_of_a_universe', '4x kubejs:hadal_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
@@ -93,7 +98,6 @@ ServerEvents.recipes(event => {
             T: 'gtceu:double_trinium_plate',
             F: 'gtceu:zpm_field_generator',
             E: 'gtceu:zpm_emitter',
-            C: 'kubejs:energy_core',
             S: 'gtceu:naquadah_alloy_frame',
             Q: 'gtceu:luv_quantum_chest',
             W: 'kubejs:warp_core',
@@ -253,7 +257,7 @@ ServerEvents.recipes(event => {
             .duration(100 * 20)
             .EUt(30720)
 
-        //Initial Sculk Catalyst Mission
+        // Initial Sculk Catalyst Mission
 
         event.recipes.gtceu.advanced_microverse_ii('t6_five_hm')
             .itemInputs(

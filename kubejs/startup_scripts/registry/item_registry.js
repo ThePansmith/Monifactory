@@ -1,4 +1,3 @@
-
 /**
  * Item Registry - defines ID, name, texture
  * and certain other properties of custom items.
@@ -138,7 +137,7 @@ StartupEvents.registry('item', event => {
     event.create('creative_energy_data')
     if (!isNormalMode) event.create('omnic_data')
 
-    //Infinity Fluid Cell Base
+    // Infinity Fluid Cell Base
     if(isNormalMode) {
         event.create('infinity_cell_base').displayName("ME Infinity Cell Base")
     }
@@ -148,7 +147,8 @@ StartupEvents.registry('item', event => {
     event.create('diamond_lattice')
     event.create('neutron_emitter')
     event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
-    event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
+    event.create('mote_of_omnium').displayName("Mote of Omnium")
+        .glow(true).rarity("epic")
     event.create('heart_of_a_universe').displayName("§dHeart Of A Universe")
     event.create('exotic_materials_catalyst').displayName("Exotic Materials Catalyst")
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
@@ -175,11 +175,16 @@ StartupEvents.registry('item', event => {
 
     // Ultimate Tools
     event.create('ultimate_core').texture('kubejs:item/ultimate/core')
-    event.create('ultimate_file').texture('kubejs:item/ultimate/file').rarity("epic").maxStackSize(1)
-    event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer').rarity("epic").maxStackSize(1)
-    event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver').rarity("epic").maxStackSize(1)
-    event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench').rarity("epic").maxStackSize(1)
-    event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter').rarity("epic").maxStackSize(1)
+    event.create('ultimate_file').texture('kubejs:item/ultimate/file')
+        .rarity("epic").maxStackSize(1)
+    event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer')
+        .rarity("epic").maxStackSize(1)
+    event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver')
+        .rarity("epic").maxStackSize(1)
+    event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench')
+        .rarity("epic").maxStackSize(1)
+    event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter')
+        .rarity("epic").maxStackSize(1)
 
 
     // Infinity Tools
@@ -252,7 +257,7 @@ StartupEvents.registry('item', event => {
     const thrusters = ['conductive_iron','leadstone','electrical_steel','hardened','energetic','reinforced','resonant','vibrant','dark_soularium','fluxed']
 
     thrusters.forEach(thruster => {
-    event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
+        event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
     })
 
     // Planet dusts
@@ -349,7 +354,7 @@ StartupEvents.registry('item', event => {
     event.create('inert_netherite_scrap').texture('kubejs:item/netherite/inert_netherite_scrap')
     event.create('inert_nether_compound_ingot').texture('kubejs:item/netherite/inert_nether_compound_ingot')
 
-    //Solid Naquadah Fuel Line
+    // Solid Naquadah Fuel Line
     event.create('empty_fuel_rod').texture('kubejs:item/naquadah/empty_fuel_rod')
     event.create('naquadah_fuel_pellet').texture('kubejs:item/naquadah/naquadah_fuel_pellet')
     event.create('naquadah_fuel_rod').texture('kubejs:item/naquadah/naquadah_fuel_rod')
@@ -403,7 +408,7 @@ StartupEvents.registry('item', event => {
     event.create('holmium_oxide_glass_dust')
 
 
-    //Eltz metal processing intermediate products
+    // Eltz metal processing intermediate products
     event.create('reactive_dust_mixture').textureJson({ layer0: 'kubejs:item/eltz/reactive_dust_mixture_base', layer1: 'kubejs:item/eltz/reactive_dust_mixture_overlay' })
     event.create('inert_dust_mixture').texture('kubejs:item/eltz/inert_dust_mixture')
     event.create('dusty_inert_powder').texture('kubejs:item/eltz/dusty_inert_powder')
@@ -511,7 +516,7 @@ StartupEvents.registry('item', event => {
         effDuration *= 2;
     }
 
-    //Universal Circuits
+    // Universal Circuits
     const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
     tiers.forEach((universal_circuit) => {
         event.create(`${universal_circuit}_universal_circuit`)

@@ -1,3 +1,7 @@
+/**
+ * Various early-game recipes
+ */
+
 ServerEvents.recipes(event => {
     // Aluminum EBF recipe rebuild
     event.remove({ id: 'gtceu:electric_blast_furnace/blast_aluminium' })
@@ -36,7 +40,7 @@ ServerEvents.recipes(event => {
         ], { A: ballIngredient })
     });
 
-    //Bronze Machine Casing
+    // Bronze Machine Casing
     event.recipes.gtceu.assembler('bronze_machine_casing_assembler')
         .itemInputs('8x gtceu:bronze_plate')
         .itemOutputs('gtceu:bronze_machine_casing')
@@ -71,7 +75,7 @@ ServerEvents.recipes(event => {
         .EUt(8)
 
 
-    //Resin Board stuff
+    // Resin Board stuff
     event.recipes.gtceu.assembler('kubejs:resin_board_assembler')
         .itemInputs('#minecraft:planks')
         .inputFluids('gtceu:glue 100')
@@ -87,13 +91,13 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(7)
 
-    //phenol
+    // phenol
 
     let steam = new JSONObject()
     steam.add('amount', 4000)
     steam.add('value', { tag: 'forge:steam' })
 
-    //JSON object and FluidIngredientJS are loaded in server script _initial.js
+    // JSON object and FluidIngredientJS are loaded in server script _initial.js
     event.recipes.gtceu.pyrolyse_oven('phenol_coal')
         .itemInputs('16x minecraft:coal')
         .inputFluids(FluidIngredientJS.of(steam))
@@ -127,7 +131,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:arc_furnace/arc_pyrolyse_oven' })
     event.remove({ id: 'gtceu:macerator/macerate_pyrolyse_oven' })
 
-    //Toolbelts
+    // Toolbelts
     event.replaceInput({ output: 'toolbelt:pouch' }, 'minecraft:gold_ingot', 'gtceu:steel_ingot')
 
     // early canning (using this explicitly as it has types)
@@ -136,6 +140,6 @@ ServerEvents.recipes(event => {
     event.recipes.minecraft.crafting_shapeless('gtceu:lv_cadmium_battery', ['gtceu:lv_battery_hull', '2x #forge:dusts/cadmium']).id('moni:lv_cadmium_battery')
     event.recipes.minecraft.crafting_shapeless('gtceu:lv_sodium_battery', ['gtceu:lv_battery_hull', '2x #forge:dusts/sodium']).id('moni:lv_sodium_battery')
 
-    //Battery Alloy Dust
+    // Battery Alloy Dust
     event.shapeless("4x gtceu:battery_alloy_dust", ["4x gtceu:lead_dust", "gtceu:antimony_dust"])
 })

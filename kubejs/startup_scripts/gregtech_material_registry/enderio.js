@@ -1,5 +1,7 @@
-//? Keep in sync with
-//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEIO.java
+/**
+ ? Keep in sync with
+ ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEIO.java
+ */
 
 // EnderIO Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {

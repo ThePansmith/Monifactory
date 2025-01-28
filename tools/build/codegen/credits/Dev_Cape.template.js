@@ -1,2 +1,2 @@
-        //{{NAME}}
+    // {{NAME}}
     event.register("{{UUID}}", "{{CAPE}}")

@@ -1,3 +1,6 @@
+/**
+ * Rock Cycle Simulator multiblock
+ */
 ServerEvents.recipes(event => {
 
     // Recipe
@@ -14,7 +17,7 @@ ServerEvents.recipes(event => {
         H: 'gtceu:iv_rock_crusher'
     }).id('kubejs:shaped/rock_cycle_simulator')
 
-    //Recipe Function
+    // Recipe Function
     function RockCycle(id, input, output, EUt) {
         event.recipes.gtceu.rock_cycle_simulator(`kubejs:${id}`)
             .notConsumable(Item.of(input))

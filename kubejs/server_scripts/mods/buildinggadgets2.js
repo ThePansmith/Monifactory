@@ -1,7 +1,10 @@
+/**
+ * Custom recipes for the Building Gadgets mod
+ */
 ServerEvents.recipes(event => {
     if (isHardMode) {
         event.remove({ id: /buildinggadgets2/ })
-        //Template Manager
+        // Template Manager
         event.shaped('buildinggadgets2:template_manager', [
             'PMP',
             'CGC',
@@ -13,7 +16,7 @@ ServerEvents.recipes(event => {
             C: '#gtceu:circuits/mv',
             L: '#forge:plates/lapis'
         })
-        //Gadgets
+        // Gadgets
         event.shaped('buildinggadgets2:gadget_building', [
             'PE',
             'CM',

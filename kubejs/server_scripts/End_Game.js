@@ -1,3 +1,7 @@
+/**
+ * Various end-game recipes
+ */
+
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler('neutron_emitter')
@@ -176,7 +180,7 @@ ServerEvents.recipes(event => {
         .EUt(30720)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    //Blast Furnace
+    // Blast Furnace
     event.recipes.gtceu.electric_blast_furnace("quantum_fluxed_eternium_heavy_plating")
         .itemInputs('10x redstone_arsenal:flux_plating', 'gtceu:cryococcus_plate', '16x kubejs:quantum_flux')
         .inputFluids('gtceu:krypton 1000')
@@ -284,7 +288,7 @@ ServerEvents.recipes(event => {
         Z: '#gtceu:circuits/zpm'
     })
 
-    //World Accelerators
+    // World Accelerators
     event.remove({ id: 'gtceu:shaped/lv_world_accelerator' })
     event.remove({ id: 'gtceu:shaped/mv_world_accelerator' })
     event.remove({ id: 'gtceu:shaped/hv_world_accelerator' })
@@ -338,7 +342,7 @@ ServerEvents.recipes(event => {
             .EUt(1966080)
         )
 
-    //Beyond this point we could probably just treat these like joke items
+    // Beyond this point we could probably just treat these like joke items
     event.recipes.gtceu.assembly_line('zpm_world_accelerator')
         .itemInputs('gtceu:uev_machine_hull', '64x gtceu:uev_field_generator', '16x gtceu:uev_field_generator', '20x gtceu:uev_sensor', '20x gtceu:uev_emitter', '16x #gtceu:circuits/uev', '4x gtceu:double_holmium_plate', '2x gtceu:dense_infinity_plate')
         .inputFluids('gtceu:omnium 1152', 'gtceu:soldering_alloy 1152')
@@ -363,9 +367,9 @@ ServerEvents.recipes(event => {
             .EUt(31457280)
         )
 
-    //! Creative Items !//
+    // ! Creative Items !//
 
-    //Creative Jetpack
+    // Creative Jetpack
     event.recipes.extendedcrafting.shaped_table(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}').weakNBT(), [
         '  C   L  ',
         ' CCC LLL ',
@@ -390,7 +394,7 @@ ServerEvents.recipes(event => {
         V: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT()
     })
 
-    //Creative Solar Panel
+    // Creative Solar Panel
     event.recipes.extendedcrafting.shaped_table('solarflux:sp_custom_infinity', [
         'SNNNNNNNS',
         'NPPPNPPPN',
@@ -445,8 +449,7 @@ ServerEvents.recipes(event => {
             X: 'kubejs:infinity_wrench',
             Y: 'kubejs:infinity_hammer',
             Z: 'kubejs:infinity_wire_cutter'
-        }
-        )
+        })
     } else {
         event.recipes.extendedcrafting.shaped_table('2x gtceu:creative_chest', [
             'BMMMMMMMMMB',
@@ -483,7 +486,6 @@ ServerEvents.recipes(event => {
             X: 'kubejs:infinity_wrench',
             Y: 'kubejs:infinity_hammer',
             Z: 'kubejs:infinity_wire_cutter'
-        }
-        )
+        })
     }
 })

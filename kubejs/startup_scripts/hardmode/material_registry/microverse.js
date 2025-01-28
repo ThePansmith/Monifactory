@@ -1,3 +1,7 @@
+/**
+ * Registration of hardmode-only materials
+ */
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     if (!isHardMode) {
         return;

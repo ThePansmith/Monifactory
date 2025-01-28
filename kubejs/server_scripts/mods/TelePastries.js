@@ -1,3 +1,6 @@
+/**
+ * Custom teleportation cakes recipes
+ */
 ServerEvents.recipes(event => {
 
     event.remove({ output: ["telepastries:nether_cake", 'telepastries:overworld_cake', 'telepastries:lost_city_cake', 'telepastries:end_cake'] })
@@ -12,7 +15,7 @@ ServerEvents.recipes(event => {
         M: "minecraft:milk_bucket"
     })
 
-    //Overworld Cake
+    // Overworld Cake
     event.shaped('telepastries:overworld_cake', [
         'NKN',
         'OBO',
@@ -36,7 +39,7 @@ ServerEvents.recipes(event => {
         S: 'minecraft:diamond',
     })
 
-    //Void Cake
+    // Void Cake
     event.shaped('telepastries:custom_cake', [
         'ABC',
         'DED',
@@ -59,8 +62,7 @@ ServerEvents.recipes(event => {
             O: "minecraft:obsidian",
             B: "enderio:cake_base",
             S: "minecraft:soul_sand"
-        }
-        )
+        })
         event.shaped('telepastries:end_cake', [
             'NNN',
             'OBO',
@@ -70,8 +72,7 @@ ServerEvents.recipes(event => {
             O: 'minecraft:ender_eye',
             B: "enderio:cake_base",
             S: 'gtceu:black_steel_plate'
-        }
-        )
+        })
     }
     if (isHardMode) {
         event.shaped('telepastries:nether_cake', [
@@ -83,8 +84,7 @@ ServerEvents.recipes(event => {
             O: "minecraft:obsidian",
             B: "enderio:cake_base",
             S: "minecraft:gold_block"
-        }
-        )
+        })
         event.shaped('telepastries:end_cake', [
             'NNN',
             'OBO',
@@ -94,7 +94,6 @@ ServerEvents.recipes(event => {
             O: 'minecraft:ender_eye',
             B: "enderio:cake_base",
             S: 'gtceu:black_steel_plate'
-        }
-        )
+        })
     }
 })

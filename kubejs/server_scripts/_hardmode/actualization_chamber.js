@@ -1,6 +1,10 @@
+/**
+ * Actualization Chamber multiblock
+ */
+
 ServerEvents.recipes(event => {
     if (isHardMode) {
-        ////// Machine Recipe //////
+        // //// Machine Recipe //////
         event.recipes.extendedcrafting.shaped_table('gtceu:actualization_chamber', [
             'PPPPP',
             'PEBSP',
@@ -14,9 +18,8 @@ ServerEvents.recipes(event => {
             S: 'gtceu:uv_sensor',
             F: 'gtceu:uv_field_generator',
             C: '#gtceu:circuits/uv'
-        }
-        )
-        ////// Actualization recipes /////
+        })
+        // //// Actualization recipes /////
         event.recipes.gtceu.actualization_chamber('pristine_t1_one')
             .itemInputs('kubejs:pristine_matter_t1')
             .circuit(1)
