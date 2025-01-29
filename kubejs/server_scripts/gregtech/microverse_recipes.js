@@ -622,7 +622,7 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:microminer_t12', '64x gtceu:infinity_ingot', '4x kubejs:universe_creation_data')
         .itemOutputs('64x gtceu:monium_ingot')
         .duration(1200)
-        .EUt(32000000)
+        .EUt(32000000)  
 
     event.recipes.gtceu.advanced_microverse_iii('kubejs:t_twelve_second')
         .itemInputs('kubejs:microminer_t12', '8x kubejs:timeless_monic_heavy_plating', '4x kubejs:universe_creation_data', '2x kubejs:shattered_universe_data', '2x kubejs:corrupted_universe_data')
@@ -639,15 +639,6 @@ ServerEvents.recipes(event => {
 
 // Microversium
 ServerEvents.recipes(event => {
-
-    event.recipes.gtceu.electric_blast_furnace("kubejs:microversium_ingot")
-        .itemInputs('2x gtceu:steel_ingot', "minecraft:redstone", "minecraft:glowstone_dust")
-        .inputFluids('gtceu:deuterium 100')
-        .itemOutputs('gtceu:microversium_ingot')
-        .duration(600)
-        .blastFurnaceTemp(1700)
-        .EUt(120)
-
     event.shaped('2x kubejs:microverse_casing', [
         'PPP',
         'PWP',

@@ -175,6 +175,40 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x gtceu:manyullyn_dust')
         .duration(400)
         .EUt(30)
+    
+    event.recipes.gtceu.mixer("kubejs:microversium_dust")
+        .itemInputs('2x gtceu:steel_dust', 'glowstone_dust', 'redstone')
+        .inputFluids('gtceu:deuterium 100')
+        .itemOutputs('gtceu:microversium_dust')
+        .circuit(3)
+        .duration(300)
+        .EUt(30)
+})
+
+// Fix up ratios for Microversium
+ServerEvents.recipes(event => {
+    event.findRecipes({ id: /^gtceu:alloy_blast_smelter\/microversium/ }).forEach(recipe => {
+        recipe.json
+            .getAsJsonObject("inputs")
+            .getAsJsonArray("fluid").get(0)
+            .getAsJsonObject("content")
+            // Deuterium
+            .add("amount", 100)
+        recipe.json
+            .getAsJsonObject("outputs")
+            .getAsJsonArray("fluid").get(0)
+            .getAsJsonObject("content")
+            // Liquid Microversium
+            .add("amount", 144)
+    })
+    event.findRecipes({ id: "gtceu:centrifuge/decomposition_centrifuging__microversium" }).forEach(recipe => {
+        recipe.json
+            .getAsJsonObject("inputs")
+            .getAsJsonArray("item").get(0)
+            .getAsJsonObject("content")
+            // 1 Microversium Dust to components
+            .add("count", 1)
+    })
 })
 
 // Add Primal Mana to Mana ingot recipe
