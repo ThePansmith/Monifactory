@@ -238,38 +238,6 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
 
-    // Ultimate Gem
-    event.recipes.extendedcrafting.shapeless_table(
-        'kubejs:ultimate_gem',
-        [
-            "kubejs:destabilized_clathrate",
-            "gtceu:enori_empowered_gem",
-            "enderio:ender_crystal",
-            "enderio:vibrant_crystal",
-            "kubejs:dilithium_crystal",
-            "enderio:enticing_crystal",
-            "enderio:weather_crystal",
-            "enderio:prescient_crystal",
-            "enderio:pulsating_crystal",
-            "minecraft:prismarine_shard",
-            "gtceu:cinnabar_gem",
-            "kubejs:energized_clathrate",
-            "minecraft:quartz",
-            "gtceu:certus_quartz_gem",
-            "gtceu:fluix_gem",
-            "gtceu:restonia_empowered_gem",
-            "gtceu:palis_empowered_gem",
-            "gtceu:diamatine_empowered_gem",
-            "gtceu:void_empowered_gem",
-            "gtceu:emeradic_empowered_gem",
-            "kubejs:resonating_crystal",
-            "minecraft:emerald",
-            "redstone_arsenal:flux_gem",
-            "minecraft:diamond",
-            "kubejs:resonant_clathrate"
-        ]
-    )
-
     event.recipes.extendedcrafting.shaped_table('gtceu:zero_point_module', [
         '  PPPPP  ',
         '  PBCBP  ',

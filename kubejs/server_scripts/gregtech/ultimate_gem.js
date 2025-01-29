@@ -1,4 +1,7 @@
-// All new processing line for the Ultimate Gem that replaces the original ExCrafting recipe
+/**
+ * Ultimate Gem
+ * This is the all new processing line for the Ultimate Gem, replacing the original extended crafting recipe.
+ */
 
 ServerEvents.recipes(event => {
 
