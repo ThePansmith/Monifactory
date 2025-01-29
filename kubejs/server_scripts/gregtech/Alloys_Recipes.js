@@ -201,6 +201,14 @@ ServerEvents.recipes(event => {
             // Liquid Microversium
             .add("amount", 144)
     })
+    event.findRecipes({ id: "gtceu:alloy_blast_smelter/microversium_gas" }).forEach(recipe => {
+        recipe.json
+            .getAsJsonObject("inputs")
+            .getAsJsonArray("fluid").get(1)
+            .getAsJsonObject("content")
+            // Helium
+            .add("amount", 100)
+    })
     event.findRecipes({ id: "gtceu:centrifuge/decomposition_centrifuging__microversium" }).forEach(recipe => {
         recipe.json
             .getAsJsonObject("inputs")
@@ -208,6 +216,12 @@ ServerEvents.recipes(event => {
             .getAsJsonObject("content")
             // 1 Microversium Dust to components
             .add("count", 1)
+        recipe.json
+            .getAsJsonObject("outputs")
+            .getAsJsonArray("fluid").get(0)
+            .getAsJsonObject("content")
+            // Deuterium
+            .add("amount", 100)
     })
 })
 
