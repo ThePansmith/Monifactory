@@ -55,7 +55,6 @@ ServerEvents.recipes(event => {
         .EUt(7)
 
     // Thermal Fluids
-    thermalextract('primal_mana', 'kubejs:primal_mana', Fluid.of('kubejs:molten_primal_mana', 250));
     thermalextract('cryotheum', 'kubejs:cryotheum_dust', Fluid.of('kubejs:molten_cryotheum', 250));
     thermalextract('pyrotheum', 'kubejs:pyrotheum_dust', Fluid.of('kubejs:molten_pyrotheum', 250));
     thermalextract('aerotheum', 'kubejs:aerotheum_dust', Fluid.of('kubejs:molten_aerotheum', 250));

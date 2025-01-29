@@ -231,6 +231,9 @@ JEIEvents.hideItems(event => {
             `gtceu:glacio_${id.name}_ore`
         ])
     })
+    
+    // Hide small variants of mana dust
+    event.hide(['gtceu:tiny_mana_dust', 'gtceu:small_mana_dust'])
 })
 
 JEIEvents.addItems(event => {

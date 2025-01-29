@@ -491,7 +491,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(90)
 
-    event.shaped('4x kubejs:primal_mana', [
+    event.shaped('4x gtceu:mana_dust', [
         'AAB',
         'DEB',
         'DCC'
@@ -505,7 +505,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer("mixer_primal_mana")
         .itemInputs("2x kubejs:petrotheum_dust", "2x kubejs:pyrotheum_dust", "2x kubejs:aerotheum_dust", "2x kubejs:cryotheum_dust", "1x gtceu:diamond_dust")
-        .itemOutputs("4x kubejs:primal_mana")
+        .itemOutputs("4x gtceu:mana_dust")
         .duration(100)
         .EUt(100)
 
