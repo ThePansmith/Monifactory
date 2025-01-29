@@ -66,13 +66,4 @@ ServerEvents.recipes(event => {
             .EUt(30)
     }
 
-    // Endest Star
-    event.shaped('kubejs:endest_star', [
-        ' E ',
-        'ESE',
-        ' E '
-    ], {
-        E: 'minecraft:ender_eye',
-        S: 'minecraft:nether_star'
-    })
 })

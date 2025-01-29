@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor('gem_of_the_end')
         .itemInputs('kubejs:ender_gem', '2x kubejs:ender_star', 'kubejs:endest_star')
-        .inputFluids('kubejs:molten_aerotheum 1500')
+        .inputFluids('kubejs:molten_aerotheum 1500', 'gtceu:dragon_breath 500')
         .itemOutputs('kubejs:gem_of_the_end')
         .duration(600)
         .EUt(GTValues.VHA[GTValues.UHV])
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
     // Abyss Crystal
 
     event.recipes.gtceu.large_chemical_reactor('abyss_crystal_base')
-        .itemInputs('4x gtceu:black_quartz_dust')
+        .itemInputs('4x gtceu:black_quartz_dust', '2x gtceu:fluix_dust')
         .notConsumable('gtceu:blacklight')
         .inputFluids('gtceu:void_empowered 576')
         .itemOutputs('kubejs:abyss_crystal_base')
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     // Extreme Energy Crystal
 
     event.recipes.gtceu.mixer('extreme_energy_blend')
-        .itemInputs('3x gtceu:lapotron_dust', '3x gtceu:europium_dust', '9x gtceu:darmstadtium_dust')
+        .itemInputs('3x gtceu:lapotron_dust', '3x gtceu:europium_dust', '3x gtceu:dilithium_dust', '6x gtceu:darmstadtium_dust')
         .inputFluids('gtceu:einsteinium 432', 'gtceu:americium 432')
         .itemOutputs('15x kubejs:extreme_energy_blend')
         .duration(1500)
@@ -125,11 +125,17 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(GTValues.VHA[GTValues.UV])
 
+    event.recipes.gtceu.assembler('empowered_stabilization_lattice')
+        .itemInputs('kubejs:diamond_lattice', '4x gtceu:diamatine_empowered_plate', '6x gtceu:enori_empowered_plate', 'redstone_arsenal:flux_gem')
+        .itemOutputs('kubejs:empowered_stabilization_lattice')
+        .duration(500)
+        .EUt(GTValues.VHA[GTValues.EV])
+
     event.recipes.gtceu.forming_press('wrapped_extreme_energy_crystal')
-        .itemInputs('kubejs:extreme_energy_crystal', '2x kubejs:diamond_lattice')
+        .itemInputs('kubejs:extreme_energy_crystal', '2x kubejs:empowered_stabilization_lattice')
         .itemOutputs('kubejs:wrapped_extreme_energy_crystal')
         .duration(900)
-        .EUt(GTValues.VHA[GTValues.IV])
+        .EUt(GTValues.VHA[GTValues.ZPM])
 
     event.recipes.extendedcrafting.shaped_flux_crafter('kubejs:energized_extreme_energy_crystal', [
         '   ',

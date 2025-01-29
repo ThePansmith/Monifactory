@@ -441,6 +441,7 @@ StartupEvents.registry('item', event => {
     event.create('pale_pure_crystal')
     event.create('bright_pure_crystal')
     event.create('pure_crystal')
+    event.create('empowered_stabilization_lattice')
     event.create('extreme_energy_blend')
     event.create('extreme_energy_crystal') 
     event.create('wrapped_extreme_energy_crystal')

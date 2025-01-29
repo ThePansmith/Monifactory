@@ -550,8 +550,16 @@ ServerEvents.recipes(event => {
         .itemInputs('minecraft:nether_star')
         .inputFluids('enderio:dew_of_the_void 8000')
         .itemOutputs('kubejs:ender_star')
-        .duration(2000)
+        .duration(1200)
         .EUt(400)
+
+        event.recipes.gtceu.electric_blast_furnace("endest_star")
+        .itemInputs('kubejs:ender_star', '8x gtceu:ender_eye_dust', '4x gtceu:ender_pearl_plate')
+        .inputFluids(Fluid.of('thermal:ender', 1000))
+        .itemOutputs('kubejs:endest_star')
+        .duration(500)
+        .EUt(GTValues.VHA[GTValues.IV])
+        .blastFurnaceTemp(5000)
 
     //Painting Machine
     event.remove({ id: 'enderio:painting_machine' })
