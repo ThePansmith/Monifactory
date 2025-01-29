@@ -62,6 +62,10 @@ jobs:
           key: ${{ runner.os }}-modlist-${{ hashFiles('manifest.json') }}
           restore-keys: |
             ${{ runner.os }}-modlist-
+      - name: Replace manifest version
+        run: 
+          sed -i s/\"version\":\ \"development\"/\"version\":\ \"${{ inputs.version }}\"/ manifest.json
+        shell: bash
       - name: Pack Modpack
         env:
           CFCORE_API_TOKEN: ${{ secrets.API_TOKEN }}
@@ -69,10 +73,6 @@ jobs:
           cd tools/build
           npm install
           node . ${{ inputs.target }}
-        shell: bash
-      - name: Replace manifest version
-        run: 
-          sed -i s/\"version\":\ \"development\"/\"version\":\ \"${{ inputs.version }}\"/ manifest.json
         shell: bash
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
