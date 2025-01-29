@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
                 '64x gtceu:netherrack_scheelite_ore',
                 '64x gtceu:netherrack_scheelite_ore',
                 '64x gtceu:netherrack_scheelite_ore',
-                '64x gtceu:netherrack_scheelite_ore', // need to add an extra stack to 
+                '64x gtceu:netherrack_scheelite_ore', // need to add an extra stack to
                 '64x gtceu:netherrack_tungstate_ore',
                 '64x gtceu:netherrack_tungstate_ore',
                 '64x gtceu:netherrack_tungstate_ore',
@@ -319,7 +319,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '64x gtceu:pollucite_ore', // why is this replaced with cooperite? shouldn't be end either
                 '64x gtceu:pollucite_ore',
-                '64x gtceu:snowchestite_ore', // why is THIS replaced with naq? 
+                '64x gtceu:snowchestite_ore', // why is THIS replaced with naq?
                 '64x gtceu:snowchestite_ore',
                 '64x gtceu:snowchestite_ore',
                 '64x gtceu:snowchestite_ore',

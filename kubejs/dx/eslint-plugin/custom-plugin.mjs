@@ -15,7 +15,7 @@ import callChains from "./call-chains.mjs"
 function customPluginWithAllRulesError(name, rules) {
     return {
         plugins: {
-            [name]: { rules } 
+            [name]: { rules }
         },
         rules: Object.fromEntries(
             Object.entries(rules).map(([rule]) =>

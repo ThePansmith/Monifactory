@@ -2,7 +2,7 @@
  * Unlike how screret showcases the functionality of this event in his discord messge:
  * https://discord.com/channels/914926812948234260/1229854271613436066/1279802878822711407
  * there is no "Map.of()" to create map objects out of varargs.
- * 
+ *
  * Worse still, I could not find an analog to that function.
  * Therefore we declare empty maps and then populate them afterwards.
  */

@@ -55,9 +55,3 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk10"))
         )
 })
-
-
-
-
-
-

@@ -28,7 +28,7 @@ export function isInMultiblockBuilderCallChain(rootCall) {
         else break
         if(rootCallee.object.type === "CallExpression")
             rootCall = rootCallee.object
-        else break 
+        else break
     }
     if(!rootCallee) return false
     const o = rootCallee.object

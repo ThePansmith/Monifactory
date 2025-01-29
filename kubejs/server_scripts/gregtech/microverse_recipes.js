@@ -482,7 +482,6 @@ ServerEvents.recipes(event => {
         .EUt(194387)
 
 
-
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_first')
         .itemInputs(
             'kubejs:microminer_t10',

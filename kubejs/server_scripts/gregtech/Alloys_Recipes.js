@@ -321,4 +321,4 @@ ServerEvents.recipes(event => {
         .EUt(30720)
         .blastFurnaceTemp(6400)
 
-}) 
+})

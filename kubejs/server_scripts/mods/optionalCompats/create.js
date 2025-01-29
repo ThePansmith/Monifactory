@@ -5,7 +5,7 @@ if (Platform.isLoaded('create')) {
     console.log("Create found, loading compat scripts...")
     ServerEvents.recipes(event => {
 
-        // Removes any machines related to processing, the point of this compat is fun not functionality, 
+        // Removes any machines related to processing, the point of this compat is fun not functionality,
         event.remove({ output: 'create:millstone' })
         event.remove({ output: 'create:crushing_wheel' })
         event.remove({ output: 'create:mechanical_plough' })
@@ -19,7 +19,7 @@ if (Platform.isLoaded('create')) {
         event.remove({ output: 'create:encased_fan' })
 
         /* Removes recipes for machines that were not removed, deployers and mechanical crafters are fun!
-        Most recipe categories that are removed machines are hidden in 
+        Most recipe categories that are removed machines are hidden in
         kubejs/assets/emi/recipe/filters/hidecategories.json as opposed to removing the actual recipes */
         event.remove({ type: 'create:deploying' })
         event.remove({ type: 'create:milling' })
