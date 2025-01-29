@@ -32,7 +32,6 @@ ServerEvents.recipes(event => {
             .EUt(4)
 
 
-
         event.shaped('hostilenetworks:blank_data_model', [
             'BBA',
             'DCA',

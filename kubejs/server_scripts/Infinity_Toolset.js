@@ -1,7 +1,6 @@
 /** Infinity Toolset recipes and subrecipes */
 
 
-
 ServerEvents.recipes(event => {
 
     // Infinity File

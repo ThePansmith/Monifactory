@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
             S: "enderio:fused_quartz",
             C: "#forge:ingots/copper"
         }).id('kubejs:device_water_gen');
-        
+
         event.shaped('thermal:device_rock_gen', [
             ' P ',
             'PNP',

@@ -57,4 +57,3 @@ ServerEvents.tags('block', event => {
         event.add("forge:ores/dense", `forge:ores/dense/${ore}`, `kubejs:dense_${ore}`);
     })
 })
-

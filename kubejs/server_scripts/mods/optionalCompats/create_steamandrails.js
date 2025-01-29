@@ -91,7 +91,7 @@ if (Platform.isLoaded('railways')) {
     ServerEvents.recipes(event => {
         event.remove({ output: '#kubejs:create_tracks' })
         let normalTrackRecipes = function (sleeperItem, outputItem, railItem, outputCount) {
-            /* 	
+            /*
 				This function makes normal-gauge track recipes for shaped crafting and the Gregtech Assembler based on 4 arguments:
 				[STRING] sleeperItem is the item used as the sleeper for the track, typically a slab.
 				[STRING] outputItem is the track that the recipe gives.
@@ -117,9 +117,9 @@ if (Platform.isLoaded('railways')) {
                 .EUt(16);
         };
         let wideTrackRecipes = function (inputTrackItem, sleeperItem, outputItem, outputCount) {
-            /* 	
+            /*
 				This function makes wide-gauge track recipes for shaped crafting and the Gregtech Assembler based on 4 arguments:
-				[STRING] inputTrackItem is the track used in the recipe. 
+				[STRING] inputTrackItem is the track used in the recipe.
 				[STRING] sleeperItem is the item used as the sleeper for the track, typically a slab.
 				[STRING] outputItem is the track that the recipe gives.
 				[INT]	 outputCount is the amount of tracks given from the recipe.
@@ -143,7 +143,7 @@ if (Platform.isLoaded('railways')) {
                 .EUt(16);
         };
         let narrowTrackRecipes = function (inputTrackItem, outputItem, sleeperOutputItem, outputCount) {
-            /* 	
+            /*
 				This function makes narrow-gauge track recipes for shaped crafting and the Gregtech Assembler based on 3 arguments:
 				[STRING] inputTrackItem is the track used in the recipe.
 				[STRING] outputItem is the track that the recipe gives.

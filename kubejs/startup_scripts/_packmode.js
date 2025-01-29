@@ -1,6 +1,6 @@
 // priority: 1000
 /**
- * Handles the interpretation of mode.json 
+ * Handles the interpretation of mode.json
  * to determine the global pack mode booleans: isNormalMode, isHardMode, and isExpertMode.
  * These are used in other scripts to define pack mode-specific behavior.
  */

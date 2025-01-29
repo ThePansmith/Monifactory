@@ -644,7 +644,6 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
 
-
         event.shaped(Item.of('gtceu:ilmenite_ore', 32), [
             'A  ',
             ' A ',

@@ -34,8 +34,7 @@ GTCEuServerEvents.fluidVeins(event => {
     })
 
 
-
-    // Luna fluid veins	
+    // Luna fluid veins
     event.add('kubejs:moon/deuterium', vein => {
         vein.dimensions('ad_astra:moon')
         vein.fluid(() => Fluid.of("gtceu:deuterium").fluid)

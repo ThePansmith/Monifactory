@@ -1,6 +1,6 @@
 /**
  * Optional compat script for Modular Routers
- * 
+ *
  * Midly gated behind LV circuits & alloys. Upgrades gated behind LV cutter.
  * Energy tx gated behind LV Autoclave & MV alloy wires.
  */

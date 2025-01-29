@@ -969,7 +969,6 @@ ServerEvents.recipes(event => {
     event.shapeless('expatternprovider:ex_pattern_access_part', ['#ae2:illuminated_panel', 'ae2:logic_processor']).id('kubejs:epp/epa_upgrade')
 
 
-
     // ME packing tape
     event.shapeless('expatternprovider:me_packing_tape', ['gtceu:basic_tape', 'gtceu:fluix_dust']).id('expatternprovider:tape')
 
@@ -1148,7 +1147,6 @@ ServerEvents.recipes(event => {
             C: `ae2:${color}_smart_cable`
         })
     }
-
 
 
     washToFluix('covered')

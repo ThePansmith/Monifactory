@@ -27,7 +27,7 @@ BlockEvents.placed(event => {
     // Blocks below these line only get their placements altered if they were placed by an entity
     if (event.getEntity() == null) return
 
-    // Reverse placed Dynamos on Sneak 
+    // Reverse placed Dynamos on Sneak
     if (block.getId().startsWith('thermal:dynamo') || (block.getId().startsWith('systeams:'))) { // systeams:steam is not a block thankfully
         let properties = block.getProperties()
         if (event.getEntity().isCrouching()) {
