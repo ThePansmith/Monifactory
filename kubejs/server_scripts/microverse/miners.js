@@ -310,7 +310,7 @@ ServerEvents.recipes(event => {
             ' NTECETN ',
             'NNTSFSTNN',
             'NTTQWQTTN',
-            'NTTCWCTTN',
+            'NTTYWYTTN',
             ' XXX XXX '
         ], {
             A: 'kubejs:supercharged_laser_array',
@@ -323,7 +323,7 @@ ServerEvents.recipes(event => {
             S: 'gtceu:naquadah_alloy_frame',
             Q: 'gtceu:luv_quantum_chest',
             W: 'kubejs:warp_core',
-            C: 'kubejs:warp_controller',
+            Y: 'kubejs:warp_controller',
             X: 'kubejs:warp_engine'
         }).id('kubejs:microminer/t8half')
     }
