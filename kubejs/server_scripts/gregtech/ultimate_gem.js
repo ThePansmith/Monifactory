@@ -1,3 +1,5 @@
+// All new processing line for the Ultimate Gem that replaces the original ExCrafting recipe
+
 ServerEvents.recipes(event => {
 
     // Ender Gem

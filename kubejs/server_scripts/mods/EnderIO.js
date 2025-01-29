@@ -562,7 +562,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.IV])
         .blastFurnaceTemp(5000)
 
-    //Painting Machine
+    // Painting Machine
     event.remove({ id: 'enderio:painting_machine' })
     event.shaped('enderio:painting_machine', [
         'QDQ',
