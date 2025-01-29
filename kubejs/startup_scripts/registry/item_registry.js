@@ -138,7 +138,7 @@ StartupEvents.registry('item', event => {
     if (!isNormalMode) event.create('omnic_data')
 
     // Infinity Fluid Cell Base
-    if(isNormalMode) {
+    if (isNormalMode) {
         event.create('infinity_cell_base').displayName("ME Infinity Cell Base")
     }
 
@@ -253,7 +253,7 @@ StartupEvents.registry('item', event => {
     event.create('radium_salt').rarity('Epic')
 
     // Thrusters
-    const thrusters = ['conductive_iron','leadstone','electrical_steel','hardened','energetic','reinforced','resonant','vibrant','dark_soularium','fluxed']
+    const thrusters = ['conductive_iron', 'leadstone', 'electrical_steel', 'hardened', 'energetic', 'reinforced', 'resonant', 'vibrant', 'dark_soularium', 'fluxed']
 
     thrusters.forEach(thruster => {
         event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
@@ -476,7 +476,7 @@ StartupEvents.registry('item', event => {
     event.create('extreme_energy_blend')
         .displayName("Extreme Energy Blend")
         .texture("kubejs:item/ultimategem/extreme_energy_blend")
-    event.create('extreme_energy_crystal') 
+    event.create('extreme_energy_crystal')
         .displayName("Extreme Energy Crystal")
         .texture("kubejs:item/ultimategem/extreme_energy_crystal")
     event.create('wrapped_extreme_energy_crystal')
