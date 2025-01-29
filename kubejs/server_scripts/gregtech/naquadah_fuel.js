@@ -1,6 +1,9 @@
+/**
+ * Naquadah fuel processing line
+ */
 ServerEvents.recipes(event => {
 
-    //Liquid Fuel recipes 
+    // Liquid Fuel recipes 
     if (!isNormalMode) {
 
         // Piranha Solution
@@ -16,7 +19,7 @@ ServerEvents.recipes(event => {
             .duration(40)
             .EUt(30)
 
-        //Tritium Radon Difluoride
+        // Tritium Radon Difluoride
         event.recipes.gtceu.large_chemical_reactor('tritium_radon_difluoride')
             .notConsumable('gtceu:blacklight')
             .inputFluids('gtceu:tritium 1000', 'gtceu:radon 1000', 'gtceu:fluorine 2000')
@@ -197,7 +200,7 @@ ServerEvents.recipes(event => {
             .EUt(1966080)
     }
 
-    //Solid Fuel Recipes
+    // Solid Fuel Recipes
     event.recipes.gtceu.assembler('fuel_rod')
         .itemInputs('gtceu:fluid_cell', '2x gtceu:rhodium_plated_palladium_ring', '2x gtceu:neutron_reflector', '2x gtceu:rhodium_plated_palladium_plate')
         .inputFluids('gtceu:lead 288')

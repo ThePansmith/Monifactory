@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for EnderIO
+ */
 ServerEvents.recipes(event => {
     // Item and Fluid Conduits //
 
@@ -109,7 +112,7 @@ ServerEvents.recipes(event => {
 
     // Energy Conduits //
 
-    //Conductive Iron
+    // Conductive Iron
     event.shaped('3x enderio:conductive_conduit', [
         'AAA',
         'BBB',
@@ -125,7 +128,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    //Energetic Alloy
+    // Energetic Alloy
     event.shaped('3x enderio:energetic_conduit', [
         'AAA',
         'BCB',
@@ -142,7 +145,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    //Vibrant Alloy
+    // Vibrant Alloy
 
     event.shaped('3x enderio:vibrant_conduit', [
         'AAA',
@@ -160,42 +163,42 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    //Endsteel
+    // Endsteel
     event.recipes.gtceu.assembler('kubejs:endsteel_conduit')
         .itemInputs('2x gtceu:end_steel_single_wire', 'enderio:vibrant_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:endsteel_conduit')
         .duration(80)
         .EUt(16)
 
-    //Lumium
+    // Lumium
     event.recipes.gtceu.assembler('kubejs:lumium_conduit')
         .itemInputs('2x gtceu:lumium_single_wire', 'enderio:endsteel_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:lumium_conduit')
         .duration(80)
         .EUt(16)
 
-    //Signalum
+    // Signalum
     event.recipes.gtceu.assembler('kubejs:signalum_conduit')
         .itemInputs('2x gtceu:signalum_single_wire', 'enderio:lumium_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:signalum_conduit')
         .duration(80)
         .EUt(16)
 
-    //Enderium
+    // Enderium
     event.recipes.gtceu.assembler('kubejs:enderium_conduit')
         .itemInputs('2x gtceu:enderium_single_wire', 'enderio:signalum_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:enderium_conduit')
         .duration(80)
         .EUt(16)
 
-    //Cryolobus
+    // Cryolobus
     event.recipes.gtceu.assembler('kubejs:cryolobus_conduit')
         .itemInputs('2x gtceu:cryolobus_single_wire', 'enderio:enderium_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:cryolobus_conduit')
         .duration(80)
         .EUt(16)
 
-    //Sculk Superconductor
+    // Sculk Superconductor
     event.recipes.gtceu.assembler('kubejs:sculk_superconductor_conduit')
         .itemInputs('2x gtceu:sculk_superconductor_single_wire', 'enderio:cryolobus_conduit', '6x enderio:conduit_binder')
         .itemOutputs('4x enderio:sculk_superconductor_conduit')
@@ -237,7 +240,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.autoclave('kubejs:vibrant_crystal')
         .itemInputs('minecraft:emerald')
-        .inputFluids(Fluid.of('gtceu:pulsating_alloy', 144))
+        .inputFluids(Fluid.of('gtceu:vibrant_alloy', 144))
         .itemOutputs('enderio:vibrant_crystal')
         .duration(200)
         .EUt(30)
@@ -267,8 +270,7 @@ ServerEvents.recipes(event => {
     ]
 
     capacitorCores.forEach(core => {
-        event.shaped(
-            `${core[1]}x enderio:basic_capacitor`, [
+        event.shaped(`${core[1]}x enderio:basic_capacitor`, [
             ' N ',
             'NCN',
             'W W'
@@ -276,8 +278,7 @@ ServerEvents.recipes(event => {
             N: '#forge:ingots/electrical_steel',
             C: core[0],
             W: 'gtceu:tin_single_wire'
-        }
-        ).id(`kubejs:basic_capacitor_${Item.of(core[0]).idLocation.path}`)
+        }).id(`kubejs:basic_capacitor_${Item.of(core[0]).idLocation.path}`)
     })
 
     // Compressed caps
@@ -401,7 +402,7 @@ ServerEvents.recipes(event => {
         D: 'minecraft:diamond'
     }).id('kubejs:enchanter')
 
-    //Custom enchanter books
+    // Custom enchanter books
     event.custom(
         {
             "type": "enderio:enchanting",
@@ -440,12 +441,12 @@ ServerEvents.recipes(event => {
     }).id('kubejs:yeta_wrench')
     event.remove({ output: 'enderio:void_chassis' })
 
-    //Redstone Conduit
+    // Redstone Conduit
     event.replaceInput({ id: 'enderio:redstone_conduit' }, 'gtceu:red_alloy_ingot', 'gtceu:red_alloy_single_wire')
 
     // Soul Vials
 
-    //Villager Soul Vial
+    // Villager Soul Vial
     event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:villager"}}}}').strongNBT(), [
         ' E ',
         'EVE',
@@ -455,7 +456,7 @@ ServerEvents.recipes(event => {
         V: 'enderio:empty_soul_vial'
     }).id('kubejs:villager_soul_vial')
 
-    //Enderman Soul Vial
+    // Enderman Soul Vial
     event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:enderman"}}}}').strongNBT(), [
         ' E ',
         'EVE',
@@ -465,7 +466,7 @@ ServerEvents.recipes(event => {
         V: 'enderio:empty_soul_vial'
     }).id('kubejs:enderman_soul_vial')
 
-    //Shulker Soul Vial
+    // Shulker Soul Vial
     event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:shulker"}}}}').strongNBT(), [
         ' E ',
         'EVE',
@@ -475,7 +476,7 @@ ServerEvents.recipes(event => {
         V: 'enderio:empty_soul_vial'
     }).id('kubejs:shulker_soul_vial')
 
-    //Zombie Soul Vial
+    // Zombie Soul Vial
     event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:zombie"}}}}').strongNBT(), [
         ' E ',
         'EVE',
@@ -485,7 +486,7 @@ ServerEvents.recipes(event => {
         V: 'enderio:empty_soul_vial'
     }).id('kubejs:zombie_soul_vial')
 
-    //Ghast Soul Vial
+    // Ghast Soul Vial
     event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:ghast"}}}}').strongNBT(), [
         ' E ',
         'EVE',
@@ -495,7 +496,7 @@ ServerEvents.recipes(event => {
         V: 'enderio:empty_soul_vial'
     }).id('kubejs:ghast_soul_vial')
 
-    //Witch Soul Vial
+    // Witch Soul Vial
     event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:witch"}}}}').strongNBT(), [
         'GEG',
         'EVE',
@@ -506,7 +507,7 @@ ServerEvents.recipes(event => {
         V: 'enderio:empty_soul_vial'
     }).id('kubejs:witch_soul_vial')
 
-    //Grains
+    // Grains
     event.recipes.gtceu.macerator('kubejs:grains_of_prescience')
         .itemInputs('enderio:prescient_crystal')
         .itemOutputs('enderio:prescient_powder')
@@ -553,7 +554,7 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(400)
 
-        event.recipes.gtceu.electric_blast_furnace("endest_star")
+    event.recipes.gtceu.electric_blast_furnace("endest_star")
         .itemInputs('kubejs:ender_star', '8x gtceu:ender_eye_dust', '4x gtceu:ender_pearl_plate')
         .inputFluids(Fluid.of('thermal:ender', 1000))
         .itemOutputs('kubejs:endest_star')
@@ -604,7 +605,7 @@ ServerEvents.recipes(event => {
     }
 
 
-    //Z-Logic Controller
+    // Z-Logic Controller
     event.shaped('enderio:z_logic_controller', [
         'SHS',
         'SCS',
@@ -658,7 +659,7 @@ ServerEvents.recipes(event => {
 
     // staff of traveling
     event.replaceInput({ id: 'enderio:staff_of_travelling' }, '#forge:ingots/dark_steel', '#forge:rods/dark_steel')
-    event.replaceInput({ id: 'enderio:staff_of_travelling' }, 'enderio:ender_crystal', 'enderio:vibrant_crystal')
+    event.replaceInput({ id: 'enderio:staff_of_travelling' }, 'enderio:ender_crystal', 'enderio:pulsating_crystal')
 
     // travel anchor
     event.replaceInput({ id: 'enderio:travel_anchor' }, 'enderio:conduit_binder', '#forge:plates/vibrant_alloy')
@@ -757,14 +758,14 @@ ServerEvents.recipes(event => {
         E: 'enderio:ensouled_chassis'
     })
 
-    //Whatever
+    // Whatever
     event.replaceInput({ input: '#forge:ingots/copper_alloy' }, 'enderio:copper_alloy_ingot', 'gtceu:pulsating_iron_ingot')
 
-    //Clear tanks
+    // Clear tanks
     event.shapeless('enderio:fluid_tank', ['enderio:fluid_tank'])
     event.shapeless('enderio:pressurized_fluid_tank', ['enderio:pressurized_fluid_tank'])
 
-    //Cheaper me conduit recipes
+    // Cheaper me conduit recipes
     if (!isExpertMode) {
         event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
             .itemInputs("4x enderio:me_conduit", "5x enderio:conduit_binder")

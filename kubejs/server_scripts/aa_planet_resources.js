@@ -1,5 +1,10 @@
+/**
+ * Makes Ad Astra rock dusts drop from ores
+ * Also centrifuge recipes for dusts
+ */
+
 ServerEvents.recipes(event => {
-    //Regolith dusts
+    // Regolith dusts
     let regolithDustResources = [
         [['moon_sand', 'moon_cobblestone', 'moon_stone'], 'moon_dust', 'minecraft:diamond'],
         [['mars_sand', 'mars_cobblestone', 'mars_stone'], 'mars_dust', 'gtceu:monazite_gem'],
@@ -8,7 +13,7 @@ ServerEvents.recipes(event => {
     ]
 
     regolithDustResources.forEach((planetResources, fluxCount) => {
-        //Planetary dust maceration recipe
+        // Planetary dust maceration recipe
         planetResources[0].forEach(rocksToMacerate => {
             event.recipes.gtceu.macerator(rocksToMacerate)
                 .itemInputs(`ad_astra:${rocksToMacerate}`)
@@ -17,7 +22,7 @@ ServerEvents.recipes(event => {
                 .EUt(GTValues.VHA[GTValues.HV])
         })
 
-        //Recipes to make quantum flux from planets' rock dusts
+        // Recipes to make quantum flux from planets' rock dusts
         event.shaped(`${fluxCount + 1}x kubejs:quantum_flux`, [
             ' B ',
             'BAB',
@@ -25,11 +30,10 @@ ServerEvents.recipes(event => {
         ], {
             A: planetResources[2],
             B: `kubejs:${planetResources[1]}`
-        }
-        )
+        })
     })
 
-    //Rock dust centrifuging
+    // Rock dust centrifuging
     event.recipes.gtceu.centrifuge('moon_dust_centrifuging')
         .itemInputs('kubejs:moon_dust')
         .chancedOutput('gtceu:small_stone_dust', 2500, 0)
@@ -77,7 +81,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
 
-    //Dilithium
+    // Dilithium
     event.recipes.gtceu.autoclave('dilithium_helium')
         .itemInputs('4x gtceu:dilithium_dust')
         .inputFluids('gtceu:helium 1000')

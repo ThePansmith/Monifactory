@@ -1,3 +1,7 @@
+/**
+ * Recipes for post-UV GT components
+ */
+
 ServerEvents.recipes(event => {
     const converter = [
         ['uev', 'omnium', 'activated_netherite', '1966080'],

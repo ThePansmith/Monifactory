@@ -1,4 +1,4 @@
-// THIS FILE IS FOR RANDOM RECIPES THAT DOESNT REQUIRE THEIR OWN FILE
+/** THIS FILE IS FOR RANDOM RECIPES THAT DOESNT REQUIRE THEIR OWN FILE */
 
 ServerEvents.recipes(event => {
     const carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
@@ -51,8 +51,7 @@ ServerEvents.recipes(event => {
             R: "gtceu:wrought_iron_rod",
             M: "gtceu:lv_electric_motor",
             G: "gtceu:wrought_iron_gear"
-        }
-        )
+        })
 
         // Normal Mode recipes for Steam multis
         event.remove({ output: 'gtceu:steam_oven' })
@@ -65,8 +64,7 @@ ServerEvents.recipes(event => {
             G: "gtceu:invar_gear",
             F: "gtceu:bronze_firebox_casing",
             C: "ironfurnaces:copper_furnace"
-        }
-        )
+        })
 
         event.remove({ output: 'gtceu:steam_grinder' })
         event.shaped('gtceu:steam_grinder', [
@@ -77,8 +75,7 @@ ServerEvents.recipes(event => {
             B: "gtceu:steam_machine_casing",
             G: "gtceu:potin_gear",
             D: "#forge:gems/diamond"
-        }
-        )
+        })
 
         event.remove({ output: 'steamadditions:steam_foundry' })
         event.shaped('steamadditions:steam_foundry', [
@@ -89,8 +86,7 @@ ServerEvents.recipes(event => {
             B: "gtceu:steam_machine_casing",
             G: "gtceu:bronze_gear",
             D: "gtceu:lv_alloy_smelter"
-        }
-        )
+        })
 
         // Handmade rubber - no match for the power of the factory
         event.shaped('gtceu:rubber_plate', [
@@ -100,8 +96,7 @@ ServerEvents.recipes(event => {
         ], {
             H: "#forge:tools/hammers",
             R: "gtceu:sticky_resin"
-        }
-        )
+        })
 
         // Compressor rubber - better, but not perfect - that's chemical reactor rubber
         event.recipes.gtceu.compressor("compressor_rubber_sheet")
@@ -125,8 +120,7 @@ ServerEvents.recipes(event => {
             W: "gtceu:fine_copper_wire",
             R: "gtceu:iron_rod",
             M: "gtceu:magnetic_iron_rod"
-        }
-        )
+        })
 
         event.recipes.gtceu.assembler("lv_motor")
             .itemInputs("2x gtceu:tin_single_cable", "2x gtceu:iron_rod", "gtceu:magnetic_iron_rod", "4x gtceu:fine_copper_wire")
@@ -155,7 +149,7 @@ ServerEvents.recipes(event => {
             H: "gtceu:hv_machine_hull"
         }).id('gtceu:shaped/distillation_tower')
 
-        //GT Steam Age
+        // GT Steam Age
         gtMachines.forEach(machine => {
             event.remove({ output: [`gtceu:lp_steam_${machine}`, `gtceu:hp_steam_${machine}`] })
         })
@@ -170,21 +164,17 @@ ServerEvents.recipes(event => {
             C: 'ironfurnaces:diamond_furnace',
             D: 'enderio:vibrant_gear',
             E: 'kubejs:redstone_transmission_coil'
-        }
-        )
+        })
 
         event.remove({ output: 'gtceu:lv_item_magnet' })
-        event.shaped(
-            Item.of('gtceu:lv_item_magnet', '{Charge:120000L}'),
-            [
-                'R R',
-                'R R',
-                'CPC'
-            ], {
+        event.shaped(Item.of('gtceu:lv_item_magnet', '{Charge:120000L}'), [
+            'R R',
+            'R R',
+            'CPC'
+        ], {
             C: 'gtceu:tin_single_cable',
             R: 'gtceu:magnetic_iron_rod',
             P: 'gtceu:iron_plate'
-        }
-        )
+        })
     }
 })

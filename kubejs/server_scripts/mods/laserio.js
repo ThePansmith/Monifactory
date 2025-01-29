@@ -1,14 +1,18 @@
+/**
+ * Custom recipes for the LaserIO mod
+ */
+
 ServerEvents.recipes(event => {
-    //Disable LIO transportation in Expert (Cards are used in recipes)
+    // Disable LIO transportation in Expert (Cards are used in recipes)
     if (isExpertMode) {
         event.remove({ id: /laserio:laser_/ })
         event.remove({ id: /laserio:card_/ })
     }
 
-    //Harder recipes in Hard Mode
+    // Harder recipes in Hard Mode
     const cardChip = isHardMode ? '#gtceu:circuits/lv' : '#gtceu:circuits/ulv'
 
-    //Replace Logic chips with circuits.
+    // Replace Logic chips with circuits.
     event.remove({ output: ['laserio:logic_chip_raw', 'laserio:logic_chip'] })
     event.replaceInput({ mod: 'laserio', not: [{ id: 'laserio:card_item' }, { id: 'laserio:card_fluid' }, { id: 'laserio:card_energy' }, { id: 'laserio:card_redstone' }] }, 'laserio:logic_chip', cardChip)
 
@@ -23,8 +27,7 @@ ServerEvents.recipes(event => {
 
 
         Cards.forEach(card => {
-            event.shaped(
-                `laserio:card_${card[0]}`, [
+            event.shaped(`laserio:card_${card[0]}`, [
                 'TNT',
                 'TCT',
                 'GGG'
@@ -37,7 +40,7 @@ ServerEvents.recipes(event => {
         })
 
 
-        //Laser Connectors
+        // Laser Connectors
         event.shaped('4x laserio:laser_connector', [
             " E ",
             "RRR",
@@ -72,7 +75,7 @@ ServerEvents.recipes(event => {
 
     // Energy Overclockers  //
 
-    //Conductive Iron
+    // Conductive Iron
     event.shaped('3x laserio:energy_overclocker_card_tier_1', [
         'AAA',
         'BBB',
@@ -88,7 +91,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    //Energetic Alloy
+    // Energetic Alloy
     event.shaped('3x laserio:energy_overclocker_card_tier_2', [
         'AAA',
         'BCB',
@@ -105,7 +108,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    //Vibrant Alloy
+    // Vibrant Alloy
     event.shaped('3x laserio:energy_overclocker_card_tier_3', [
         'AAA',
         'BCB',
@@ -122,49 +125,49 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    //Endsteel
+    // Endsteel
     event.recipes.gtceu.assembler('kubejs:endsteel_card')
         .itemInputs('2x gtceu:end_steel_single_wire', 'laserio:energy_overclocker_card_tier_3', '6x gtceu:iron_plate')
         .itemOutputs('4x laserio:energy_overclocker_card_tier_4')
         .duration(80)
         .EUt(16)
 
-    //Lumium
+    // Lumium
     event.recipes.gtceu.assembler('kubejs:lumium_card')
         .itemInputs('2x gtceu:lumium_single_wire', 'laserio:energy_overclocker_card_tier_4', '6x gtceu:iron_plate')
         .itemOutputs('4x laserio:energy_overclocker_card_tier_5')
         .duration(80)
         .EUt(16)
 
-    //Signalum
+    // Signalum
     event.recipes.gtceu.assembler('kubejs:signalum_card')
         .itemInputs('2x gtceu:signalum_single_wire', 'laserio:energy_overclocker_card_tier_5', '6x gtceu:iron_plate')
         .itemOutputs('4x laserio:energy_overclocker_card_tier_6')
         .duration(80)
         .EUt(16)
 
-    //Enderium
+    // Enderium
     event.recipes.gtceu.assembler('kubejs:enderium_card')
         .itemInputs('2x gtceu:enderium_single_wire', 'laserio:energy_overclocker_card_tier_6', '6x gtceu:iron_plate')
         .itemOutputs('4x laserio:energy_overclocker_card_tier_7')
         .duration(80)
         .EUt(16)
 
-    //Cryolobus
+    // Cryolobus
     event.recipes.gtceu.assembler('kubejs:cryolobus_card')
         .itemInputs('2x gtceu:cryolobus_single_wire', 'laserio:energy_overclocker_card_tier_7', '6x gtceu:iron_plate')
         .itemOutputs('4x laserio:energy_overclocker_card_tier_8')
         .duration(80)
         .EUt(16)
 
-    //Sculk Superconductor
+    // Sculk Superconductor
     event.recipes.gtceu.assembler('kubejs:sculk_superconductor_card')
         .itemInputs('2x gtceu:sculk_superconductor_single_wire', 'laserio:energy_overclocker_card_tier_8', '6x gtceu:iron_plate')
         .itemOutputs('4x laserio:energy_overclocker_card_tier_9')
         .duration(80)
         .EUt(16)
 
-    //Overclockers
+    // Overclockers
     event.remove({ output: ['laserio:overclocker_card', 'laserio:overclocker_node'] })
     event.shaped('laserio:overclocker_card', [
         "E",

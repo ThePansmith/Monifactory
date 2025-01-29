@@ -1,3 +1,5 @@
+/** TODO */
+
 MoreJSEvents.filterAvailableEnchantments((event) => {
-	event.add("minecraft:unbreaking");
+    event.add("minecraft:unbreaking");
 })

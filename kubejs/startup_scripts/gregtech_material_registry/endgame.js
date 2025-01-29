@@ -3,8 +3,8 @@
  * Used for registering Gregtech Materials
  * that are related post-tank content.
  */
-//? Keep in sync with
-//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEndgame.java
+// ? Keep in sync with
+// ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEndgame.java
 
 /*
 Note: Some GTCEuM recipes handlers calculate duration based on mass.
@@ -107,13 +107,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gem()
         .color(0xbb9966).secondaryColor(0x881105)
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
-        .components('1x eltz', '2x actinium', '6x oxygen')
+        .components('4x eltz', '1x actinium', '3x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING)
 
     event.create('actinium_iron_oxide')
         .dust()
-        .color(0xC3D1FF)    //Old actinium color for fun
-        .components('1x actinium', '2x iron', '3x oxygen')
+        .color(0xC3D1FF)    // Old actinium color for fun
+        .components('1x actinium', '4x iron', '3x oxygen')
 
     event.create('monium')
         .ingot()

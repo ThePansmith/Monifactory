@@ -1,5 +1,8 @@
+/**
+ * Custom recipes for the Functional Storage mod
+ */
 ServerEvents.recipes(event => {
-    //Remove bugged Oak Drawer recipes
+    // Remove bugged Oak Drawer recipes
     event.remove({ id: /functionalstorage:oak_drawer_alternate/ })
 
 
@@ -62,7 +65,7 @@ ServerEvents.recipes(event => {
     }).id('functionalstorage:ender_drawer')
 
 
-    //Storage Controller
+    // Storage Controller
     event.remove({ id: "functionalstorage:storage_controller" })
     const controllerCore = ["#forge:storage_blocks/diamond", "#forge:storage_blocks/emerald"]
     controllerCore.forEach(coreBlock => {
@@ -82,8 +85,7 @@ ServerEvents.recipes(event => {
     // Framed Drawers
     const miscframing = ["storage_controller", "simple_compacting_drawer", "controller_extension"]
     miscframing.forEach(Block => {
-        event.shaped(
-            `functionalstorage:framed_${Block}`, [
+        event.shaped(`functionalstorage:framed_${Block}`, [
             'III',
             'IBI',
             'III'
@@ -112,8 +114,7 @@ ServerEvents.recipes(event => {
     ]
     upgradeTiers.forEach((tier, tierIndex) => {
         event.remove({ id: `functionalstorage:${tier[0]}_upgrade` })
-        event.shaped(
-            `2x functionalstorage:${tier[0]}_upgrade`, [
+        event.shaped(`2x functionalstorage:${tier[0]}_upgrade`, [
             'PUP',
             'PGP',
             'PUP'

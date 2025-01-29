@@ -1,3 +1,7 @@
+/**
+ * Crystal Matrix processing line
+ */
+
 ServerEvents.recipes(event => {
 
     // Acetylene
@@ -24,7 +28,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
-    //Crystal Matrix Line
+    // Crystal Matrix Line
     const wafers = [
         ['gtceu:', 'naquadah_wafer'],
         ['gtceu:', 'neutronium_wafer'],

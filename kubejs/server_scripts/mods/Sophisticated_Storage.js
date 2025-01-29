@@ -1,30 +1,32 @@
-
+/**
+ * Configuration of Sophisticated Storage
+ */
 ServerEvents.recipes(event => {
     const modids = ["sophisticatedstorage", "sophisticatedbackpacks"]
 
-    //Remove default backpack recipe (Loot it!)
+    // Remove default backpack recipe (Loot it!)
     event.remove({ output: 'sophisticatedbackpacks:backpack' })
 
-    //Remove XP pump upgrades
+    // Remove XP pump upgrades
     event.remove({ id: "sophisticatedstorage:xp_pump_upgrade" })
     event.remove({ id: "sophisticatedbackpacks:xp_pump_upgrade" })
 
     // There is dupe glitch involving this.
     event.remove({ id: 'sophisticatedstorage:packing_tape' })
 
-    //Remove Limited barrels
+    // Remove Limited barrels
     event.remove({ id: /^sophisticatedstorage:.*limited.+barrel.+$/ })
     event.remove({ output: /^sophisticatedstorage:limited_barrel.+$/ })
 
-    //Remove Copper tier storage (not used)
+    // Remove Copper tier storage (not used)
     event.remove({ output: 'sophisticatedstorage:copper_barrel' })
     event.remove({ output: 'sophisticatedstorage:copper_chest' })
     event.remove({ output: 'sophisticatedstorage:copper_shulker_box' })
-    //Remove Copper tier upgrades
+    // Remove Copper tier upgrades
     event.remove({ output: /^sophisticatedstorage:.*copper.*tier_upgrade$/ })
     event.remove({ input: /^sophisticatedstorage:.*copper.*tier_upgrade$/ })
 
-    //Remove iron (bronze) tier storage in NM
+    // Remove iron (bronze) tier storage in NM
     if (isNormalMode) {
         event.remove({ output: 'sophisticatedstorage:iron_barrel' })
         event.remove({ output: 'sophisticatedstorage:iron_chest' })
@@ -33,14 +35,12 @@ ServerEvents.recipes(event => {
         event.remove({ input: /^sophisticatedstorage:.*iron.*tier_upgrade$/ })
     }
 
-    //Standard backpack recipe if you don't want to loot it
-    event.shaped(
-        'sophisticatedbackpacks:backpack',
-        [
-            ' N ',
-            'ICI',
-            'N N'
-        ], {
+    // Standard backpack recipe if you don't want to loot it
+    event.shaped('sophisticatedbackpacks:backpack', [
+        ' N ',
+        'ICI',
+        'N N'
+    ], {
         "N": '#forge:leather',
         "I": 'minecraft:iron_ingot',
         "C": '#forge:chests/wooden'
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
     sophBackpacksMaterials.forEach((material, index) => {
         if (index == 0) return;
 
-        //Works for upgrades as the recipe type implies, but doesn't work for making new backpacks from scratch
+        // Works for upgrades as the recipe type implies, but doesn't work for making new backpacks from scratch
         let outputBackpack = `sophisticatedbackpacks:${material[0]}backpack`
         let inputBackpack = `sophisticatedbackpacks:${sophBackpacksMaterials[index - 1][0]}backpack`
         event.remove({ mod: 'sophisticatedbackpacks', output: outputBackpack })
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
         ['', 'shulker_box']
     ]
 
-    //Skip bronze tier storage in NM
+    // Skip bronze tier storage in NM
     if (isNormalMode) {
         sophStorageMaterials.splice(1, 1);
     }
@@ -120,8 +120,7 @@ ServerEvents.recipes(event => {
             let prevTierName = (toIndex - 1 == 0 ? "basic_" : sophStorageMaterials[toIndex - 1][0]);
             let toTierName = material[0];
 
-            event.shaped(
-                `sophisticatedstorage:${fromTierName}to_${toTierName}tier_upgrade`, [
+            event.shaped(`sophisticatedstorage:${fromTierName}to_${toTierName}tier_upgrade`, [
                 "IPI",
                 "ICI",
                 "IPI"
@@ -134,7 +133,7 @@ ServerEvents.recipes(event => {
 
         // Barrel-in-table upgrades
         sophStorageTypes.forEach(storageType => {
-            //Works for upgrades as the recipe type implies, but doesn't work for making new barrels/chests/boxes from scratch
+            // Works for upgrades as the recipe type implies, but doesn't work for making new barrels/chests/boxes from scratch
             let outputStorage = `sophisticatedstorage:${storageType[0]}${material[0]}${storageType[1]}`
             let inputStorage = `sophisticatedstorage:${storageType[0]}${sophStorageMaterials[toIndex - 1][0]}${storageType[1]}`
             event.remove({ mod: 'sophisticatedstorage', output: outputStorage })
@@ -224,7 +223,7 @@ ServerEvents.recipes(event => {
     })
 
     // Stack upgrades
-    var stackupgrade = [
+    let stackupgrade = [
         ['stack_upgrade_tier_1', 'gtceu:energetic_alloy', 'upgrade_base'],
         ['stack_upgrade_tier_2', 'gtceu:stainless_steel', 'stack_upgrade_tier_1'],
         ['stack_upgrade_tier_3', 'gtceu:tungsten_steel', 'stack_upgrade_tier_2'],
@@ -260,8 +259,8 @@ ServerEvents.recipes(event => {
     }),
 
 
-        // Upgrades
-        event.remove({ output: 'sophisticatedstorage:hopper_upgrade' })
+    // Upgrades
+    event.remove({ output: 'sophisticatedstorage:hopper_upgrade' })
     event.shaped('4x sophisticatedstorage:hopper_upgrade', [
         ' H ',
         'IUI',
