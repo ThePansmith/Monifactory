@@ -552,7 +552,7 @@ ServerEvents.recipes(event => {
         .inputFluids('enderio:dew_of_the_void 8000')
         .itemOutputs('kubejs:ender_star')
         .duration(1200)
-        .EUt(400)
+        .EUt(240)
 
     event.recipes.gtceu.electric_blast_furnace("endest_star")
         .itemInputs('kubejs:ender_star', '8x gtceu:ender_eye_dust', '4x gtceu:ender_pearl_plate')

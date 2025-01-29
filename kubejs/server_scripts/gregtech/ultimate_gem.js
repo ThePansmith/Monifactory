@@ -27,16 +27,16 @@ ServerEvents.recipes(event => {
     // Abyss Crystal
 
     event.recipes.gtceu.large_chemical_reactor('abyss_crystal_base')
-        .itemInputs('4x gtceu:black_quartz_dust', '2x gtceu:fluix_dust')
+        .itemInputs('4x gtceu:black_quartz_dust', '2x gtceu:fluix_dust', '10x gtceu:sculk_dust')
         .notConsumable('gtceu:blacklight')
-        .inputFluids('gtceu:void_empowered 576')
-        .itemOutputs('kubejs:abyss_crystal_base')
+        .inputFluids('gtceu:void_empowered 576', 'gtceu:palis_empowered 720')
+        .itemOutputs('2x kubejs:abyss_crystal_base')
         .duration(900)
         .EUt(GTValues.VHA[GTValues.LuV])
 
     event.recipes.gtceu.mixer('abyss_crystal_solution')
         .itemInputs('6x kubejs:abyss_crystal_base')
-        .inputFluids('kubejs:molten_petrotheum 100')
+        .inputFluids('kubejs:molten_petrotheum 300')
         .outputFluids('gtceu:abyss_crystal_mixture 1000')
         .duration(300)
         .EUt(GTValues.VHA[GTValues.UEV])
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.implosion_compressor(name)
             .itemInputs('9x kubejs:pure_shards')
             .itemInputs(explosive)
-            .itemOutputs('kubejs:blank_pure_crystal')
+            .chancedOutput('kubejs:blank_pure_crystal', 5000, 0)
             .duration(30)
             .EUt(GTValues.VHA[GTValues.LV])
     }
@@ -85,30 +85,30 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.laser_engraver('blank_to_dim_pure_crystal')
         .itemInputs('kubejs:blank_pure_crystal')
-        .notConsumable('#forge:lenses/red')
+        .chancedInput('#forge:lenses/red', 1000, 0)
         .itemOutputs('kubejs:dim_pure_crystal')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UV])
 
     event.recipes.gtceu.laser_engraver('dim_to_pale_pure_crystal')
         .itemInputs('kubejs:dim_pure_crystal')
-        .notConsumable('#forge:lenses/blue')
+        .chancedInput('#forge:lenses/blue', 2000, 0)
         .itemOutputs('kubejs:pale_pure_crystal')
         .duration(1800)
         .EUt(GTValues.VHA[GTValues.UHV])
 
     event.recipes.gtceu.laser_engraver('pale_to_bright_pure_crystal')
         .itemInputs('kubejs:pale_pure_crystal')
-        .notConsumable('#forge:lenses/green')
+        .chancedInput('#forge:lenses/green', 3000, 0)
         .itemOutputs('kubejs:bright_pure_crystal')
-        .duration(2400)
+        .duration(2100)
         .EUt(GTValues.VHA[GTValues.UEV])
 
     event.recipes.gtceu.chemical_bath('pure_crystal_final')
         .itemInputs('kubejs:bright_pure_crystal')
-        .inputFluids('gtceu:restonia_empowered 288')
+        .inputFluids('gtceu:emeradic_empowered 288')
         .itemOutputs('kubejs:pure_crystal')
-        .duration(3000)
+        .duration(2400)
         .EUt(GTValues.VHA[GTValues.ZPM])
 
     // Extreme Energy Crystal
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.autoclave('extreme_energy_crystal')
         .itemInputs('15x kubejs:extreme_energy_blend')
-        .inputFluids('gtceu:palis_empowered 288')
+        .inputFluids('gtceu:restonia_empowered 288')
         .itemOutputs('kubejs:extreme_energy_crystal')
         .duration(2000)
         .EUt(GTValues.VHA[GTValues.UV])
