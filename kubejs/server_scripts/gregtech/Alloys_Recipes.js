@@ -227,11 +227,15 @@ ServerEvents.recipes(event => {
 
 ServerEvents.recipes(event => {
     // Add Primal Mana to Mythril recipes
-    const manaInput = JSON.parse('[{"content":{"amount":250,"value":{"fluid":"gtceu:mana"}},"chance":10000,"maxChance":10000,"tierChanceBoost":0}]')
-    event.findRecipes({ id: /^gtceu:.*_blast_.*mythril/ }).forEach(recipe => {
+    const manaInput = n => JSON.parse(`[{"content":{"amount":${n},"value":{"fluid":"gtceu:mana"}},"chance":10000,"maxChance":10000,"tierChanceBoost":0}]`)
+
+    for(const [regex, input] of [
+        [/^gtceu:alloy_blast_smelter\/mythril/, manaInput(500)],
+        [/^gtceu:electric_blast_furnace\/blast_mythril/, manaInput(250)],
+    ]) event.findRecipes({ id: regex }).forEach(recipe => {
         recipe.json
             .getAsJsonObject("inputs")
-            .add("fluid", manaInput)
+            .add("fluid", input)
     })
     // Fix ABS Manyullyn output amount
     event.findRecipes({ id: /^gtceu:alloy_blast_smelter\/.*manyullyn/ }).forEach(recipe => {
