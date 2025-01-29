@@ -1,24 +1,26 @@
+<!-- omit in toc -->
 # Monifactory Changelog (WIP)
 (Coming from Nomifactory CEu)
 
 Like this list, some features here are WIP.
 
+<!-- omit in toc -->
 ### Table of Contents
-* [Post-tank Overhaul](#post-tank-overhaul)
-* [Early-game Changes](#early-game-changes)
-* [Mid-game Changes](#mid-game-changes)
-* [Late-game Changes](#late-game-changes)
-* [Storage Upgrades](#storage-upgrades)
-* [Laser Transportation](#laser-transportation)
-* [Deeper Mob Learning](#deeper-mob-learning)
-* [Draconic Removal](#draconic-removal)
-* [Space Traveling](#space-traveling)
-* [Mods Created for the Pack](#mods-created-for-the-pack)
-* [Worldgen Overhaul](#worldgen-overhaul)
-* [New Pack Mode: Expert](#new-pack-mode-expert)
-* [Textures and Assets](#textures-and-assets)
-* [New Mods](#new-mods)
-* [Optional Compatibility](#optional-compatibility)
+- [Post-Tank Overhaul](#post-tank-overhaul)
+- [Early-game Changes](#early-game-changes)
+- [Mid-game Changes](#mid-game-changes)
+- [Late-game Changes](#late-game-changes)
+- [Storage Upgrades](#storage-upgrades)
+- [Laser Transportation](#laser-transportation)
+- [Deeper Mob Learning](#deeper-mob-learning)
+- [Draconic Removal](#draconic-removal)
+- [Space Traveling](#space-traveling)
+- [Mods created for the pack](#mods-created-for-the-pack)
+- [New Mods](#new-mods)
+- [Worldgen Overhaul](#worldgen-overhaul)
+- [New pack mode: Expert](#new-pack-mode-expert)
+- [Textures and assets](#textures-and-assets)
+- [Optional Compatibility](#optional-compatibility)
 
 
 

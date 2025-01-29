@@ -6,7 +6,14 @@
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [{
+		id: "5D19AC088663AC0B"
+		linked_quest: "6FDF37EE046349F7"
+		shape: "hexagon"
+		size: 2.0d
+		x: 3.5d
+		y: -1.0d
+	}]
 	quests: [
 		{
 			dependencies: [
@@ -35,36 +42,6 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"73C1AB31431B5C11"
-				"0006FEA1843FEA0A"
-			]
-			description: [
-				"{moni.quest.6FDF37EE046349F7.description1}"
-				""
-				"{moni.quest.6FDF37EE046349F7.description2}"
-				""
-				"{moni.quest.6FDF37EE046349F7.description3}"
-			]
-			hide_until_deps_visible: true
-			id: "6FDF37EE046349F7"
-			rewards: [{
-				id: "00CF22695EBB0588"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "552C09235D8FE4F1"
-				item: "thermal:dynamo_numismatic"
-				type: "item"
-			}]
-			title: "{moni.quest.6FDF37EE046349F7.title}"
-			x: 3.5d
 			y: -1.0d
 		}
 		{

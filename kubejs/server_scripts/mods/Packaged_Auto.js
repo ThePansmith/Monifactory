@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for Package Auto
+ */
 ServerEvents.recipes(event => {
 
     event.replaceInput({ id: /packaged/ }, 'extendedcrafting:black_iron_ingot', 'gtceu:black_steel_plate')
@@ -105,12 +108,11 @@ ServerEvents.recipes(event => {
         I: '#gtceu:circuits/ev'
     })
 
-    //Packaged Ex Crafters
+    // Packaged Ex Crafters
     let tiers = ['advanced', 'elite', 'ultimate']
     tiers.forEach((tier) => {
         event.remove({ output: `packagedexcrafting:${tier}_crafter` })
-        event.shaped(
-            `packagedexcrafting:${tier}_crafter`, [
+        event.shaped(`packagedexcrafting:${tier}_crafter`, [
             'ACA',
             'BEB',
             'ACA'
@@ -119,8 +121,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:black_steel_plate',
             C: 'packagedauto:me_package_component',
             E: `extendedcrafting:${tier}_auto_table`
-        }
-        )
+        })
     })
 
     event.remove({ output: 'packagedexexcrafting:epic_crafter' })

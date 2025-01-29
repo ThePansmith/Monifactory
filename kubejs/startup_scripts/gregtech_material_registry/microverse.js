@@ -3,8 +3,8 @@
  * Used for registering Gregtech Materials
  * that are related Microverse projectors, Microminers, or Microminer missions.
  */
-//? Keep in sync with
-//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsMicroverse.java
+// ? Keep in sync with
+// ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsMicroverse.java
 
 // Microverse Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {

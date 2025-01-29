@@ -1,3 +1,6 @@
+/**
+ * Sculk Bioalloy processing line
+ */
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.omnic_forge('sculk-compatible_trellis_microstructure_forging')

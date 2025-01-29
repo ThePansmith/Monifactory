@@ -1,3 +1,6 @@
+/**
+ * Widget recipes for the Bountry Board
+ */
 ServerEvents.recipes(event => {
     event.shaped('kubejs:wooden_widget_left', [
         'SPP',

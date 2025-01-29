@@ -1,3 +1,7 @@
+/**
+ * Atomic Reconstructor singleblock
+ */
+
 ServerEvents.recipes(event => {
     const reconstructedItems = [
         ['minecraft:redstone', 'gtceu:restonia_gem', 128, 'restonia'],
@@ -86,8 +90,7 @@ ServerEvents.recipes(event => {
         ['uiv', 'holmium']
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
-        event.shaped(
-            `gtceu:${tier}_atomic_reconstructor`, [
+        event.shaped(`gtceu:${tier}_atomic_reconstructor`, [
             'CPC',
             'EHE',
             'PPM'
@@ -100,7 +103,7 @@ ServerEvents.recipes(event => {
         }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
     })
 
-    //Crystal Gears
+    // Crystal Gears
     crystals.forEach(crystal => {
         event.recipes.gtceu.extruder(`kubejs:${crystal}_gear`)
             .itemInputs(`4x gtceu:${crystal}_gem`)
@@ -124,10 +127,10 @@ ServerEvents.recipes(event => {
         'oxeye_daisy',
         'cornflower',
         'lily_of_the_valley',
-        //'sunflower',  //Flowers that give 2x as much dye are excluded. Sorry!
-        //'lilac',
-        //'rose_bush',
-        //'peony',
+        // 'sunflower',  //Flowers that give 2x as much dye are excluded. Sorry!
+        // 'lilac',
+        // 'rose_bush',
+        // 'peony',
         'spore_blossom',
         'wither_rose',
         'dead_bush'

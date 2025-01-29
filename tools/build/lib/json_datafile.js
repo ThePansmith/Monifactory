@@ -1,6 +1,6 @@
-//@ts-check
+// @ts-check
 import fs from 'fs';
-import Juke from '../juke/index.js';
+import Juke from 'juke-build';
 
 /**
  * Reads JSON from a file.
@@ -8,14 +8,14 @@ import Juke from '../juke/index.js';
  * @returns Parsed JSON as a JS object.
  */
 export const readDatafileJSON = (path) => {
-  try {
-    return JSON.parse(fs.readFileSync(path, {
-      encoding: 'utf8',
-    }));
-  } catch {
-    Juke.logger.error('Failed to read JSON at ' + path);
-    throw new Juke.ExitCode(1);
-  }
+    try {
+        return JSON.parse(fs.readFileSync(path, {
+            encoding: 'utf8',
+        }));
+    } catch {
+        Juke.logger.error('Failed to read JSON at ' + path);
+        throw new Juke.ExitCode(1);
+    }
 };
 
 /**
@@ -24,4 +24,4 @@ export const readDatafileJSON = (path) => {
  * @param {*} data JSON
  */
 export const writeDatafileJSON = (path, data) => 
-  fs.writeFileSync(path, JSON.stringify(data, null, 2), 'utf8');
+    fs.writeFileSync(path, JSON.stringify(data, null, 2), 'utf8');

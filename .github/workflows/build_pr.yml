@@ -31,13 +31,12 @@ jobs:
       cancel-in-progress: true
     steps:
       - uses: actions/checkout@v4
-      - name: Restore Node cache
-        uses: actions/cache@v4
+      - name: Setup node and npm
+        uses: actions/setup-node@v4
         with:
-          path: ~/.nvm
-          key: ${{ runner.os }}-node-18.19.1
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: 23
+          cache: 'npm'
+          cache-dependency-path: tools/build/package-lock.json
       - name: Restore mods cache
         uses: actions/cache@v4
         with:
@@ -58,7 +57,11 @@ jobs:
       - name: Pack Modpack
         env:
           CFCORE_API_TOKEN: ${{ secrets.API_TOKEN }}
-        run: bash tools/build/build -c ${{ inputs.target }}
+        run: |
+          cd tools/build
+          npm install
+          node . ${{ inputs.target }}
+        shell: bash
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:

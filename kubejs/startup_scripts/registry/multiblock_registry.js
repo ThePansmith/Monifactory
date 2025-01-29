@@ -98,26 +98,26 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
 
-// Large Naquadah Reactor Recipe Type
+    // Large Naquadah Reactor Recipe Type
     event.create('large_naquadah_reactor')
-    .category('multiblock')
-    .setEUIO('out')
-    .setMaxIOSize(1, 1, 2, 2)
-    .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-    .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-    .setSound(GTSoundEntries.ARC)
-
-// Naquadah Fuel Refinery
-if (!isNormalMode) {
-
-    event.create('naquadah_refinery')
         .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(6,0,4,1)
+        .setEUIO('out')
+        .setMaxIOSize(1, 1, 2, 2)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
-}
+        .setSound(GTSoundEntries.ARC)
+
+    // Naquadah Fuel Refinery
+    if (!isNormalMode) {
+
+        event.create('naquadah_refinery')
+            .category('multiblock')
+            .setEUIO('in')
+            .setMaxIOSize(6,0,4,1)
+            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+            .setSound(GTSoundEntries.COOLING)
+    }
 
     // Greenhouse
     event.create('greenhouse')
@@ -318,7 +318,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('B', Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()))
                 .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get())
                     .or(Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get())))
-                .where('E', Predicates.abilities(PartAbility.INPUT_ENERGY).setMinGlobalLimited(1).setMaxGlobalLimited(16).setPreviewCount(16)
+                .where('E', Predicates.abilities(PartAbility.INPUT_ENERGY)
+                    .setMinGlobalLimited(1)
+                    .setMaxGlobalLimited(16)
+                    .setPreviewCount(16)
                     .or(Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get())))
                 .where('C', Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(130)
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(2))
@@ -394,11 +397,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(GCYMBlocks.CASING_CORROSION_PROOF)
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CCCCC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
-            .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
-            .aisle("CCCCC", "#IOI#", "CGOGC", "#IOI#", "CCOCC", "#IOI#", "CIOIC")
-            .aisle("CCCCC", "#GIG#", "CGGGC", "#GIG#", "CCCCC", "#GIG#", "CIIIC")
-            .aisle("CC@CC", "C###C", "CCCCC", "C###C", "CCCCC", "C###C", "CCCCC")
+            .aisle("CCCCC", "C   C", "CCCCC", "C   C", "CCCCC", "C   C", "CCCCC")
+            .aisle("CCCCC", " GIG ", "CGGGC", " GIG ", "CCCCC", " GIG ", "CIIIC")
+            .aisle("CCCCC", " IOI ", "CGOGC", " IOI ", "CCOCC", " IOI ", "CIOIC")
+            .aisle("CCCCC", " GIG ", "CGGGC", " GIG ", "CCCCC", " GIG ", "CIIIC")
+            .aisle("CC@CC", "C   C", "CCCCC", "C   C", "CCCCC", "C   C", "CCCCC")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .where('I', Predicates.blocks(GTBlocks.CASING_ENGINE_INTAKE.get()))
             .where('G', Predicates.blocks(GTBlocks.CASING_GRATE.get()))
@@ -408,7 +411,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
             )
-            .where('#', Predicates.air())
+            .where(' ', Predicates.air())
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/corrosion_proof_casing",
             "gtceu:block/machines/gas_collector", false)
@@ -677,7 +680,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('naquadah_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('naquadah_reactor')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    //Fix for generator "overclocking" as long as the actual hatch invalidates the structure
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    // Fix for generator "overclocking" as long as the actual hatch invalidates the structure
         .appearanceBlock(GCYMBlocks.CASING_REACTION_SAFE)
         .generator(true)
         .regressWhenWaiting(false)
@@ -699,7 +702,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_naquadah_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('large_naquadah_reactor')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    //Fix for generator "overclocking" as long as the actual hatch invalidates the structure
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])    // Fix for generator "overclocking" as long as the actual hatch invalidates the structure
         .regressWhenWaiting(false)
         .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
         .generator(true)
@@ -766,8 +769,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where('#', Predicates.any())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
-                    "gtceu:block/multiblock/fusion_reactor", false)
-        }
+                "gtceu:block/multiblock/fusion_reactor", false)
+    }
 
     // Omnic Forge
     event.create('omnic_forge', 'multiblock')

@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for the Iron Furnaces mod
+ */
 ServerEvents.recipes(event => {
 
     event.remove({ output: ['ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_core', 'ironfurnaces:million_furnace', 'ironfurnaces:augment_factory', 'ironfurnaces:iron_furnace', 'ironfurnaces:silver_furnace', 'ironfurnaces:copper_furnace', 'ironfurnaces:gold_furnace', 'ironfurnaces:diamond_furnace', 'ironfurnaces:obsidian_furnace', 'ironfurnaces:netherite_furnace'] })
@@ -67,7 +70,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
         .circuit(5)
 
-    var furnaceupgrade = [
+    let furnaceupgrade = [
         ['copper', 'iron'],
         ['silver', 'copper'],
         ['gold', 'silver'],
@@ -101,7 +104,7 @@ ServerEvents.recipes(event => {
     // Direct assembler recipes for Iron Furnaces
     const stonefurnaceupgrade = ['iron', 'copper', 'silver', 'gold', 'diamond']
 
-    //Start from silver furnace
+    // Start from silver furnace
     for (let index = 2; index < stonefurnaceupgrade.length; index++) {
         let mat1 = stonefurnaceupgrade[index];
         let mat2 = stonefurnaceupgrade[index - 1];

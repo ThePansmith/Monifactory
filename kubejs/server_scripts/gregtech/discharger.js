@@ -1,3 +1,7 @@
+/**
+ * Draconic Evolution Fusion recipes
+ */
+
 ServerEvents.recipes(event => {
     event.shaped('gtceu:discharger', [
         'PLP',
@@ -34,7 +38,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.discharger(`kubejs:${id}`)
             .itemInputs(input)
             .itemOutputs(output)
-            .duration(10) //wip
+            .duration(10) // wip
         // .EUt(-(refund / 4)) Enable once that gets fixed.
     }
 

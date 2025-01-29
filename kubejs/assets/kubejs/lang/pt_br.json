@@ -421,7 +421,7 @@
     "functionalstorage.framed_storage_controller.tooltip": "§7Previamente conhecido como Controlador de armazenamento armado",
     "ae2.facade.tooltip": "Fabricado com âncoras para cabos",
     "ae2.memory_card.tooltip": "Segure na mão auxiliar para definir entradas adicionais em P2Ps multi.",
-    "enderio.cap_bank.tooltip": "§4No momento pesa bastante no TPS, procure outras maneiras de armazenar energia.",
+    "enderio.cap_bank.tooltip": "Grandes capacitores multiblocos são intensivos em TPS!\nVeja a Subestação de Energia para armazenamento de energia industrial.",
     "kubejs.eternal_catalyst.tooltip": "Olhe para o abismo...",
     "kubejs.infinity_catalyst.tooltip": "Um são todos, e todos são um.",
     "gtceu.infinity_ingot.tooltip": "§7A fúria do universo na palma da sua mão.",
@@ -463,5 +463,10 @@
     "item.kubejs.ev_exoskeleton_legs": "Exoesqueleto EV",
     "item.kubejs.iv_exoskeleton_legs": "Exoesqueleto IV",
     "item.kubejs.lv_exoskeleton_legs": "Exoesqueleto LV",
-    "item.kubejs.hv_exoskeleton_legs": "Exoesqueleto HV"
+    "item.kubejs.hv_exoskeleton_legs": "Exoesqueleto HV",
+    "kubejs.exoskeleton_legs.tooltip": "Fornece um aumento na velocidade de movimento e assistência de pulo",
+    "ae2.creative_fluid_cell.tooltip": "Não pode ser feito usando dados do Creative Tank!\nAfetado com um bug que os desenvolvedores do AE2 não vão consertar",
+    "betterp2p.advanced_memory_card.tooltip": "Não compatível com Multi P2Ps.",
+    "gtceu.sterilizing_filter_casing.tooltip": "Salas Limpas Esterilizadas não podem ser usadas como uma Sala Limpa \"regular\". Você vai querer uma de cada.",
+    "travellersbootsreloaded.deprecation.tooltip": "Obsoleto. Crie um Exoesqueleto!"
 }
