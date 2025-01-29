@@ -136,18 +136,13 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(GTValues.VHA[GTValues.EV])
 
-    event.recipes.gtceu.forming_press('wrapped_extreme_energy_crystal')
-        .itemInputs('kubejs:extreme_energy_crystal', '2x kubejs:empowered_stabilization_lattice')
-        .itemOutputs('kubejs:wrapped_extreme_energy_crystal')
-        .duration(900)
-        .EUt(GTValues.VHA[GTValues.ZPM])
-
     event.recipes.extendedcrafting.shaped_flux_crafter('kubejs:energized_extreme_energy_crystal', [
-        '   ',
+        ' E ',
         ' B ',
-        '   '
+        ' E '
     ], {
-        B: "kubejs:wrapped_extreme_energy_crystal",
+        B: "kubejs:extreme_energy_crystal",
+        E: 'kubejs:empowered_stabilization_lattice',
     }, 500000000).powerRate(500000000);
 
     // Final Combination
