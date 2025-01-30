@@ -1,10 +1,11 @@
 /**
- * Compat for the railways mod
+ * Recipe compat for the funni railways mod
  */
 
 if (Platform.isLoaded('railways')) {
-    console.log("Create: Steam and Rails found, loading compat scripts...")
+    console.log("Create: Steam and Rails found, loading compat script...")
     ServerEvents.tags('item', event => {
+        // normal rails
         event.add('kubejs:create_tracks', 'create:track');
         event.add('kubejs:create_tracks', 'railways:track_oak');
         event.add('kubejs:create_tracks', 'railways:track_birch');
@@ -23,6 +24,7 @@ if (Platform.isLoaded('railways')) {
         event.add('kubejs:create_tracks', 'railways:track_bamboo');
         event.add('kubejs:create_tracks', 'railways:track_stripped_bamboo');
         event.add('kubejs:create_tracks', 'railways:track_monorail');
+        // wide rails
         event.add('kubejs:create_tracks', 'railways:track_create_andesite_wide');
         event.add('kubejs:create_tracks', 'railways:track_acacia_wide');
         event.add('kubejs:create_tracks', 'railways:track_birch_wide');
@@ -39,6 +41,7 @@ if (Platform.isLoaded('railways')) {
         event.add('kubejs:create_tracks', 'railways:track_cherry_wide');
         event.add('kubejs:create_tracks', 'railways:track_bamboo_wide');
         event.add('kubejs:create_tracks', 'railways:track_stripped_bamboo_wide');
+        // narrow rails
         event.add('kubejs:create_tracks', 'railways:track_create_andesite_narrow');
         event.add('kubejs:create_tracks', 'railways:track_acacia_narrow');
         event.add('kubejs:create_tracks', 'railways:track_birch_narrow');
@@ -56,6 +59,7 @@ if (Platform.isLoaded('railways')) {
         event.add('kubejs:create_tracks', 'railways:track_bamboo_narrow');
         event.add('kubejs:create_tracks', 'railways:track_stripped_bamboo_narrow');
         if (Platform.isLoaded('biomesoplenty')) {
+            // normal rails
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_dead');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_fir');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_hellbark');
@@ -66,6 +70,7 @@ if (Platform.isLoaded('railways')) {
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_redwood');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_umbran');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_willow');
+            // wide rails
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_dead_wide');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_fir_wide');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_hellbark_wide');
@@ -76,6 +81,7 @@ if (Platform.isLoaded('railways')) {
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_redwood_wide');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_umbran_wide');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_willow_wide');
+            // narrow rails
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_dead_narrow');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_fir_narrow');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_hellbark_narrow');
