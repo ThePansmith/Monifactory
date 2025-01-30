@@ -58,6 +58,7 @@ if (Platform.isLoaded('railways')) {
         event.add('kubejs:create_tracks', 'railways:track_cherry_narrow');
         event.add('kubejs:create_tracks', 'railways:track_bamboo_narrow');
         event.add('kubejs:create_tracks', 'railways:track_stripped_bamboo_narrow');
+
         if (Platform.isLoaded('biomesoplenty')) {
             // normal rails
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_dead');
@@ -95,15 +96,17 @@ if (Platform.isLoaded('railways')) {
         }
     })
     ServerEvents.recipes(event => {
-        event.remove({ output: '#kubejs:create_tracks' })
+
+        event.remove({ output: '#kubejs:create_tracks' }) // KILL 'EM ALL! - demoman tf2
+
+        /**
+         * Creates a shaped crafting recipe and a Gregtech Assembler recipe, both to make normal-gauge tracks.
+         * @param {string} sleeperItem A ResourceLocation of the item representing the sleeper/tie of the track. Will typically be a slab.
+         * @param {string} outputItem A ResourceLocation of the normal-gauge track item to be output by the recipes.
+         * @param {string} railItem A ResourceLocation of the item used as the rails themselves. Typically an iron or gold nugget, to stay in line with base Create.
+         * @param {int} outputCount How many normal-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation. 
+         */
         let normalTrackRecipes = function (sleeperItem, outputItem, railItem, outputCount) {
-            /*
-				This function makes normal-gauge track recipes for shaped crafting and the Gregtech Assembler based on 4 arguments:
-				[STRING] sleeperItem is the item used as the sleeper for the track, typically a slab.
-				[STRING] outputItem is the track that the recipe gives.
-				[STRING] railItem is the item used for the rails themselves, typically iron or gold nuggets.
-				[INT]	 outputCount is the amount of tracks given from the recipe.
-			*/
             event.shaped(`${outputCount}x ${outputItem}`, [
                 '   ',
                 'IHI',
@@ -120,16 +123,17 @@ if (Platform.isLoaded('railways')) {
                 )
                 .itemOutputs(`${outputCount * 2}x ${outputItem}`)
                 .duration(5)
-                .EUt(16);
+                .EUt(16); // Low Voltage
         };
+
+        /**
+         * Creates a shaped crafting recipe and a Gregtech Assembler recipe, both to make wide-gauge tracks.
+         * @param {string} inputTrackItem A ResourceLocation of the track item used in the recipe, to be 'widened'.
+         * @param {string} sleeperItem A ResourceLocation of the item representing the sleeper/tie of the track. Will typically be a slab.
+         * @param {string} outputItem A ResourceLocation of the wide-gauge track item to be output by the recipes.
+         * @param {int} outputCount How many wide-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation. 
+         */
         let wideTrackRecipes = function (inputTrackItem, sleeperItem, outputItem, outputCount) {
-            /*
-				This function makes wide-gauge track recipes for shaped crafting and the Gregtech Assembler based on 4 arguments:
-				[STRING] inputTrackItem is the track used in the recipe.
-				[STRING] sleeperItem is the item used as the sleeper for the track, typically a slab.
-				[STRING] outputItem is the track that the recipe gives.
-				[INT]	 outputCount is the amount of tracks given from the recipe.
-			*/
             event.shaped(`${outputCount}x ${outputItem}`, [
                 '   ',
                 ' H ',
@@ -146,16 +150,17 @@ if (Platform.isLoaded('railways')) {
                 )
                 .itemOutputs(`${outputCount * 2}x ${outputItem}`)
                 .duration(5)
-                .EUt(16);
+                .EUt(16); // Low Voltage
         };
+
+        /**
+         * Creates a shaped crafting recipe and a Gregtech Cutter recipe, both to make narrow-gauge tracks.
+         * @param {string} inputTrackItem A ResourceLocation of the track item used in the recipe, to be narrowed.
+         * @param {string} outputItem A ResourceLocation of the narrow-gauge track item to be output by the recipes.
+         * @param {string} sleeperOutputItem A ResourceLocation of the item representing the sleeper/tie of the track, to be (sometimes) recovered from the Gregtech Cutter recipe. Will typically be a slab.
+         * @param {int} outputCount How many narrow-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation. 
+         */
         let narrowTrackRecipes = function (inputTrackItem, outputItem, sleeperOutputItem, outputCount) {
-            /*
-				This function makes narrow-gauge track recipes for shaped crafting and the Gregtech Assembler based on 3 arguments:
-				[STRING] inputTrackItem is the track used in the recipe.
-				[STRING] outputItem is the track that the recipe gives.
-				[STRING] sleeperOutputItem is the sleeper that the recipe can give back as an output.
-				[INT] 	 outputCount is the amount of tracks given from the recipe.
-			*/
             event.shaped(`${outputCount}x ${outputItem}`, [
                 '   ',
                 ' H ',
@@ -169,7 +174,7 @@ if (Platform.isLoaded('railways')) {
                 .itemOutputs(`${outputCount}x ${outputItem}`)
                 .chancedOutput(`${sleeperOutputItem}`, 3000, 500)
                 .duration(5)
-                .EUt(16);
+                .EUt(16); // Low Voltage
         };
         {
             /* normal tracks */{
