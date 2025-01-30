@@ -30,19 +30,19 @@ ServerEvents.recipes(event => {
     // Abyss Crystal
 
     event.recipes.gtceu.large_chemical_reactor('abyss_crystal_base')
-        .itemInputs('4x gtceu:black_quartz_dust', '2x gtceu:fluix_dust', '10x gtceu:sculk_dust')
+        .itemInputs('4x gtceu:black_quartz_dust', '2x gtceu:fluix_dust')
         .notConsumable('gtceu:blacklight')
         .inputFluids('gtceu:void_empowered 576', 'gtceu:palis_empowered 720')
-        .itemOutputs('2x kubejs:abyss_crystal_base')
+        .itemOutputs('3x kubejs:abyss_crystal_base')
         .duration(900)
         .EUt(GTValues.VHA[GTValues.LuV])
 
-    event.recipes.gtceu.mixer('abyss_crystal_solution')
-        .itemInputs('6x kubejs:abyss_crystal_base')
+    event.recipes.gtceu.mixer('abyss_crystal_mixture')
+        .itemInputs('6x kubejs:abyss_crystal_base', '10x gtceu:sculk_dust')
         .inputFluids('kubejs:molten_petrotheum 300')
         .outputFluids('gtceu:abyss_crystal_mixture 1000')
         .duration(300)
-        .EUt(GTValues.VHA[GTValues.UEV])
+        .EUt(GTValues.VHA[GTValues.UHV])
 
     event.recipes.gtceu.fluid_solidifier('uncut_abyss_crystal')
         .inputFluids('gtceu:abyss_crystal_mixture 3000')
@@ -137,13 +137,13 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.EV])
 
     event.recipes.extendedcrafting.shaped_flux_crafter('kubejs:energized_extreme_energy_crystal', [
-        ' E ',
-        ' B ',
-        ' E '
+        '   ',
+        'EBE',
+        '   '
     ], {
         B: "kubejs:extreme_energy_crystal",
         E: 'kubejs:empowered_stabilization_lattice',
-    }, 500000000).powerRate(500000000);
+    }, 2000000000).powerRate(2000000000);
 
     // Final Combination
 

@@ -190,8 +190,8 @@ ServerEvents.recipes(event => {
     // Ultimate Core
 
     event.recipes.gtceu.assembly_line('infinity_toolset/ultimate_core')
-        .itemInputs('gtceu:activated_netherite_frame', '12x kubejs:the_ultimate_material', 'kubejs:quasi_stable_neutron_star', '4x gtceu:gravi_star', '4x kubejs:eternal_catalyst', '6x gtceu:dense_cryococcus_plate', '6x gtceu:dense_cryolobus_plate', '6x gtceu:dense_obsidian_plate')
-        .inputFluids('gtceu:nether_star 1152', 'gtceu:omnium 576', 'enderio:xp_juice 20000', 'gtceu:americium_plasma 1000')
+        .itemInputs('gtceu:activated_netherite_frame', '12x kubejs:the_ultimate_material', 'kubejs:quasi_stable_neutron_star', '4x gtceu:gravi_star', '4x kubejs:eternal_catalyst', '6x gtceu:dense_cryococcus_plate', '6x gtceu:dense_cryolobus_plate','6x gtceu:dense_manyullyn_plate', '6x gtceu:dense_obsidian_plate')
+        .inputFluids('gtceu:nether_star 1152', 'gtceu:omnium 576', 'enderio:xp_juice 20000', 'gtceu:americium_plasma 5000')
         .itemOutputs('kubejs:ultimate_core')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UEV])

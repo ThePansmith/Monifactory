@@ -57,8 +57,8 @@ ServerEvents.recipes(event => {
         .duration(100)
 
     event.recipes.gtceu.charger("kubejs:extreme_energy_crystal_charge")
-        .itemInputs(['kubejs:wrapped_extreme_energy_crystal', '2x kubejs:empowered_stabilization_lattice'])
+        .itemInputs(['kubejs:extreme_energy_crystal', '2x kubejs:empowered_stabilization_lattice'])
         .itemOutputs('kubejs:energized_extreme_energy_crystal')
         .EUt(GTValues.VHA[GTValues.UEV])
-        .duration(100)
+        .duration(150)
 })
