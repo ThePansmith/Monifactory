@@ -152,4 +152,5 @@ ServerEvents.recipes(event => {
         "kubejs:ultimate_core", ["kubejs:gem_of_the_end", "kubejs:abyss_crystal", "kubejs:pure_crystal", "kubejs:energized_extreme_energy_crystal"],
         400000000, 40000000
     )
+    
 })
