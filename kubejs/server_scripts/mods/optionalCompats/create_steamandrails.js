@@ -231,7 +231,8 @@ if (Platform.isLoaded('railways')) {
         narrowTrackRecipes('railways:track_bamboo', 'railways:track_bamboo_narrow', 'minecraft:bamboo', 1);
         narrowTrackRecipes('railways:track_stripped_bamboo', 'railways:track_stripped_bamboo_narrow', 'minecraft:bamboo_slab', 1);
     
-        Platform.isLoaded('biomesoplenty')) { // fuck it, we BoP
+        if (Platform.isLoaded('biomesoplenty')) { // fuck it, we BoP
+            // Normal-gauge tracks
             normalTrackRecipes('biomesoplenty:dead_slab', 'railways:track_biomesoplenty_dead', 'minecraft:iron_nugget', 1);
             normalTrackRecipes('biomesoplenty:fir_slab', 'railways:track_biomesoplenty_fir', 'minecraft:iron_nugget', 1);
             normalTrackRecipes('biomesoplenty:hellbark_slab', 'railways:track_biomesoplenty_hellbark', 'minecraft:iron_nugget', 1);
@@ -242,7 +243,7 @@ if (Platform.isLoaded('railways')) {
             normalTrackRecipes('biomesoplenty:redwood_slab', 'railways:track_biomesoplenty_redwood', 'minecraft:iron_nugget', 1);
             normalTrackRecipes('biomesoplenty:umbran_slab', 'railways:track_biomesoplenty_umbran', 'minecraft:iron_nugget', 1);
             normalTrackRecipes('biomesoplenty:willow_slab', 'railways:track_biomesoplenty_willow', 'minecraft:iron_nugget', 1);
-
+            // Wide-gauge tracks
             wideTrackRecipes('railways:track_biomesoplenty_dead', 'biomesoplenty:dead_slab', 'railways:track_biomesoplenty_dead_wide', 1);
             wideTrackRecipes('railways:track_biomesoplenty_fir', 'biomesoplenty:fir_slab', 'railways:track_biomesoplenty_fir_wide', 1);
             wideTrackRecipes('railways:track_biomesoplenty_hellbark', 'biomesoplenty:hellbark_slab', 'railways:track_biomesoplenty_hellbark_wide', 1);
@@ -253,7 +254,7 @@ if (Platform.isLoaded('railways')) {
             wideTrackRecipes('railways:track_biomesoplenty_redwood', 'biomesoplenty:redwood_slab', 'railways:track_biomesoplenty_redwood_wide', 1);
             wideTrackRecipes('railways:track_biomesoplenty_umbran', 'biomesoplenty:umbran_slab', 'railways:track_biomesoplenty_umbran_wide', 1);
             wideTrackRecipes('railways:track_biomesoplenty_willow', 'biomesoplenty:willow_slab', 'railways:track_biomesoplenty_willow_wide', 1);
-
+            // Narrow-gauge tracks
             narrowTrackRecipes('railways:track_biomesoplenty_dead', 'railways:track_biomesoplenty_dead_narrow', 'biomesoplenty:dead_slab', 1);
             narrowTrackRecipes('railways:track_biomesoplenty_fir', 'railways:track_biomesoplenty_fir_narrow', 'biomesoplenty:fir_slab', 1);
             narrowTrackRecipes('railways:track_biomesoplenty_hellbark', 'railways:track_biomesoplenty_hellbark_narrow', 'biomesoplenty:hellbark_slab', 1);
