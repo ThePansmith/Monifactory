@@ -59,7 +59,7 @@ if (Platform.isLoaded('railways')) {
         event.add('kubejs:create_tracks', 'railways:track_bamboo_narrow');
         event.add('kubejs:create_tracks', 'railways:track_stripped_bamboo_narrow');
 
-        if (Platform.isLoaded('biomesoplenty')) {
+        if (Platform.isLoaded('biomesoplenty')) { // fuck it, we BoP
             // normal rails
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_dead');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_fir');
@@ -231,7 +231,7 @@ if (Platform.isLoaded('railways')) {
         narrowTrackRecipes('railways:track_bamboo', 'railways:track_bamboo_narrow', 'minecraft:bamboo', 1);
         narrowTrackRecipes('railways:track_stripped_bamboo', 'railways:track_stripped_bamboo_narrow', 'minecraft:bamboo_slab', 1);
     
-        if (Platform.isLoaded('biomesoplenty')) { // fuck it, we BoP
+        if (Platform.isLoaded('biomesoplenty')) { // fuck it, we BoP again
             // Normal-gauge tracks
             normalTrackRecipes('biomesoplenty:dead_slab', 'railways:track_biomesoplenty_dead', 'minecraft:iron_nugget', 1);
             normalTrackRecipes('biomesoplenty:fir_slab', 'railways:track_biomesoplenty_fir', 'minecraft:iron_nugget', 1);
@@ -267,5 +267,5 @@ if (Platform.isLoaded('railways')) {
             narrowTrackRecipes('railways:track_biomesoplenty_willow', 'railways:track_biomesoplenty_willow_narrow', 'biomesoplenty:willow_slab', 1);
         }
     });
-    console.log("Create: Steam and Rails compat scripts successfully loaded!")
+    console.log("Create: Steam and Rails compat script successfully loaded!")
 } else { console.log("Create: Steam and Rails was not found, skipping its compat scripts.") };
