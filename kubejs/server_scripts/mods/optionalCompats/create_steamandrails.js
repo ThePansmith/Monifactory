@@ -59,7 +59,7 @@ if (Platform.isLoaded('railways')) {
         event.add('kubejs:create_tracks', 'railways:track_bamboo_narrow');
         event.add('kubejs:create_tracks', 'railways:track_stripped_bamboo_narrow');
 
-        if (Platform.isLoaded('biomesoplenty')) {
+        if (Platform.isLoaded('biomesoplenty')) { // fuck it, we BoP
             // normal rails
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_dead');
             event.add('kubejs:create_tracks', 'railways:track_biomesoplenty_fir');
@@ -104,7 +104,7 @@ if (Platform.isLoaded('railways')) {
          * @param {string} sleeperItem A ResourceLocation of the item representing the sleeper/tie of the track. Will typically be a slab.
          * @param {string} outputItem A ResourceLocation of the normal-gauge track item to be output by the recipes.
          * @param {string} railItem A ResourceLocation of the item used as the rails themselves. Typically an iron or gold nugget, to stay in line with base Create.
-         * @param {int} outputCount How many normal-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation. 
+         * @param {int} outputCount How many normal-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation.
          */
         let normalTrackRecipes = function (sleeperItem, outputItem, railItem, outputCount) {
             event.shaped(`${outputCount}x ${outputItem}`, [
@@ -131,7 +131,7 @@ if (Platform.isLoaded('railways')) {
          * @param {string} inputTrackItem A ResourceLocation of the track item used in the recipe, to be 'widened'.
          * @param {string} sleeperItem A ResourceLocation of the item representing the sleeper/tie of the track. Will typically be a slab.
          * @param {string} outputItem A ResourceLocation of the wide-gauge track item to be output by the recipes.
-         * @param {int} outputCount How many wide-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation. 
+         * @param {int} outputCount How many wide-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation.
          */
         let wideTrackRecipes = function (inputTrackItem, sleeperItem, outputItem, outputCount) {
             event.shaped(`${outputCount}x ${outputItem}`, [
@@ -158,7 +158,7 @@ if (Platform.isLoaded('railways')) {
          * @param {string} inputTrackItem A ResourceLocation of the track item used in the recipe, to be narrowed.
          * @param {string} outputItem A ResourceLocation of the narrow-gauge track item to be output by the recipes.
          * @param {string} sleeperOutputItem A ResourceLocation of the item representing the sleeper/tie of the track, to be (sometimes) recovered from the Gregtech Cutter recipe. Will typically be a slab.
-         * @param {int} outputCount How many narrow-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation. 
+         * @param {int} outputCount How many narrow-gauge track items that will be outputted by the recipes. Is multiplied by two for the assembler recipe, to incentivise automation.
          */
         let narrowTrackRecipes = function (inputTrackItem, outputItem, sleeperOutputItem, outputCount) {
             event.shaped(`${outputCount}x ${outputItem}`, [
@@ -230,8 +230,7 @@ if (Platform.isLoaded('railways')) {
         narrowTrackRecipes('railways:track_cherry', 'railways:track_cherry_narrow', 'minecraft:cherry_slab', 1);
         narrowTrackRecipes('railways:track_bamboo', 'railways:track_bamboo_narrow', 'minecraft:bamboo', 1);
         narrowTrackRecipes('railways:track_stripped_bamboo', 'railways:track_stripped_bamboo_narrow', 'minecraft:bamboo_slab', 1);
-    
-        if (Platform.isLoaded('biomesoplenty')) { // fuck it, we BoP
+        if (Platform.isLoaded('biomesoplenty')) { // fuck it, we BoP again
             // Normal-gauge tracks
             normalTrackRecipes('biomesoplenty:dead_slab', 'railways:track_biomesoplenty_dead', 'minecraft:iron_nugget', 1);
             normalTrackRecipes('biomesoplenty:fir_slab', 'railways:track_biomesoplenty_fir', 'minecraft:iron_nugget', 1);
@@ -267,5 +266,5 @@ if (Platform.isLoaded('railways')) {
             narrowTrackRecipes('railways:track_biomesoplenty_willow', 'railways:track_biomesoplenty_willow_narrow', 'biomesoplenty:willow_slab', 1);
         }
     });
-    console.log("Create: Steam and Rails compat scripts successfully loaded!")
+    console.log("Create: Steam and Rails compat script successfully loaded!")
 } else { console.log("Create: Steam and Rails was not found, skipping its compat scripts.") };
