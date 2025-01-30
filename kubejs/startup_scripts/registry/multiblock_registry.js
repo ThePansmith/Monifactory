@@ -158,8 +158,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-    //EMI displays microverse projector tier
-    GTRecipeTypes.get('microverse').addDataInfo((data) => ("Projector Tier: " + data.getByte('projector_tier')));   //todo: get Text.translatable to work
+    // EMI displays microverse projector tier
+    GTRecipeTypes.get('microverse').addDataInfo((data) => ("Projector Tier: " + data.getByte('projector_tier')));   // todo: get Text.translatable to work
 
     // Normal mode-exclusive multis
     if (!isHardMode) {
@@ -550,7 +550,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             "gtceu:block/machines/electrolyzer", false)
 
     let getMicroverseRecipeModifiers = tier => [
-        GTRecipeModifiers.OC_NON_PERFECT, 
+        GTRecipeModifiers.OC_NON_PERFECT,
         (machine, recipe) => recipe.data.getLong('projector_tier') > tier?
             ModifierFunction.NULL : ModifierFunction.IDENTITY
     ]

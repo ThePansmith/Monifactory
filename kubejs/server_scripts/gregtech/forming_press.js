@@ -1,3 +1,7 @@
+/**
+ * Additional forming press recipes.
+ */
+
 ServerEvents.recipes(event => {
     const materials = [
         "aluminium",

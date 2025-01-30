@@ -29,15 +29,14 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     // Single-recipe microverse projectors
-    var projector = [
+    let projector = [
         ['basic_microverse_projector', '#gtceu:circuits/hv'],
         ['advanced_microverse_projector', '#gtceu:circuits/ev'],
         ['advanced_microverse_projector_ii', '#gtceu:circuits/iv']
     ]
 
     projector.forEach(projector => {
-        event.shaped(
-            `gtceu:${projector[0]}`, [
+        event.shaped(`gtceu:${projector[0]}`, [
             'CMC',
             'MAM',
             'CMC'

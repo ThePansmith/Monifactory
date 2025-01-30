@@ -1,7 +1,7 @@
-//priority: 1
+// priority: 1
 /**
  * Utility functions for registering microminer missions,
- * actualization chamber counterparts, 
+ * actualization chamber counterparts,
  * and lower-tier projector missions more succinctly.
  */
 
@@ -56,7 +56,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, voltageAr
             .EUt(voltageArray[voltageTier])
     );
 
-    //Register actualization chamber counterparts in Hard Mode and Expert Mode except for T9+
+    // Register actualization chamber counterparts in Hard Mode and Expert Mode except for T9+
     if(isHardMode && minerTier < 9) {
         builders.push(
             event.recipes.gtceu.actualization_chamber(`kubejs:pristine_t${minerTier}_${global.mission_counts[minerTier]}`)
