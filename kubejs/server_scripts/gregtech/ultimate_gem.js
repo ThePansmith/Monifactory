@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor('gem_of_the_end')
         .itemInputs('kubejs:ender_gem', '2x kubejs:ender_star', 'kubejs:endest_star')
-        .inputFluids('kubejs:molten_aerotheum 1500', 'gtceu:dragon_breath 500')
+        .inputFluids('kubejs:molten_aerotheum 1500')
         .itemOutputs('kubejs:gem_of_the_end')
         .duration(600)
         .EUt(GTValues.VHA[GTValues.UHV])
@@ -30,18 +30,11 @@ ServerEvents.recipes(event => {
     // Abyss Crystal
 
     event.recipes.gtceu.large_chemical_reactor('abyss_crystal_base')
-        .itemInputs('4x gtceu:black_quartz_dust', '2x gtceu:fluix_dust')
+        .itemInputs('12x gtceu:black_quartz_dust', '12x gtceu:fluix_dust')
         .notConsumable('gtceu:blacklight')
-        .inputFluids('gtceu:void_empowered 576', 'gtceu:palis_empowered 720')
-        .itemOutputs('3x kubejs:abyss_crystal_base')
-        .duration(900)
-        .EUt(GTValues.VHA[GTValues.LuV])
-
-    event.recipes.gtceu.mixer('abyss_crystal_mixture')
-        .itemInputs('6x kubejs:abyss_crystal_base', '10x gtceu:sculk_dust')
-        .inputFluids('kubejs:molten_petrotheum 300')
+        .inputFluids('gtceu:void_empowered 576', 'gtceu:palis_empowered 720', 'kubejs:molten_petrotheum 300')
         .outputFluids('gtceu:abyss_crystal_mixture 1000')
-        .duration(300)
+        .duration(1500)
         .EUt(GTValues.VHA[GTValues.UHV])
 
     event.recipes.gtceu.fluid_solidifier('uncut_abyss_crystal')
@@ -86,25 +79,11 @@ ServerEvents.recipes(event => {
     DimPureCrystal("pure_crystal_tnt", '4x minecraft:tnt');
     DimPureCrystal("pure_crystal_powderbarrel", '8x gtceu:powderbarrel');
 
-    event.recipes.gtceu.laser_engraver('blank_to_dim_pure_crystal')
-        .itemInputs('kubejs:blank_pure_crystal')
-        .chancedInput('#forge:lenses/red', 1000, 0)
-        .itemOutputs('kubejs:dim_pure_crystal')
-        .duration(1200)
-        .EUt(GTValues.VHA[GTValues.UV])
-
-    event.recipes.gtceu.laser_engraver('dim_to_pale_pure_crystal')
-        .itemInputs('kubejs:dim_pure_crystal')
-        .chancedInput('#forge:lenses/blue', 2000, 0)
-        .itemOutputs('kubejs:pale_pure_crystal')
-        .duration(1800)
-        .EUt(GTValues.VHA[GTValues.UHV])
-
-    event.recipes.gtceu.laser_engraver('pale_to_bright_pure_crystal')
-        .itemInputs('kubejs:pale_pure_crystal')
-        .chancedInput('#forge:lenses/green', 3000, 0)
+    event.recipes.gtceu.omnic_forge('blank_to_bright_pure_crystal')
+        .itemInputs('kubejs:blank_pure_crystal', '#forge:lenses/red', '#forge:lenses/blue', '#forge:lenses/green')
+        .chancedInput('gtceu:uev_emitter', 2000, 0)
         .itemOutputs('kubejs:bright_pure_crystal')
-        .duration(2100)
+        .duration(1000)
         .EUt(GTValues.VHA[GTValues.UEV])
 
     event.recipes.gtceu.chemical_bath('pure_crystal_final')
