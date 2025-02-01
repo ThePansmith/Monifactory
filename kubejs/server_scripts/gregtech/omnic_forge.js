@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.omnic_forge('kubejs:timeless_monic_heavy_plating')
-        .itemInputs('10x gtceu:monium_plate', '8x kubejs:quantum_fluxed_eternium_heavy_plating', '4x kubejs:universe_resistant_neutronium_heavy_plating', '4x kubejs:elementally_infused_omnic_matrix_heavy_plating', '2x kubejs:dimensionally_stabilized_infinity_heavy_plating', '16x kubejs:contained_singularity')
+        .itemInputs('2x gtceu:monium_plate', '8x kubejs:quantum_fluxed_eternium_heavy_plating', '4x kubejs:universe_resistant_neutronium_heavy_plating', '4x kubejs:elementally_infused_omnic_matrix_heavy_plating', '2x kubejs:dimensionally_stabilized_infinity_heavy_plating', '16x kubejs:contained_singularity')
         .itemOutputs('kubejs:timeless_monic_heavy_plating')
         .duration(800)
         .EUt(134217728)
