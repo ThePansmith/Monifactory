@@ -120,6 +120,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("monium"))
         .color(0xffffff)
         .iconSet('monium')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_RING)
         .cableProperties(GTValues.V[GTValues.MAX], 134217727, 0, true)
 })

@@ -434,6 +434,14 @@ StartupEvents.registry('item', event => {
     event.create('quantum_soc_chip_base').texture('kubejs:item/quantumsoc/quantum_soc_chip_base').displayName('Quantum SoC Chip Base')
     event.create('quantum_soc_chip').texture('kubejs:item/quantumsoc/quantum_soc_chip').displayName('Quantum SoC Chip')
 
+    // MAX components
+
+    event.create('max_electric_motor')
+    event.create('max_electric_piston')
+    event.create('max_robot_arm')
+    event.create('max_emitter')
+    event.create('max_sensor')
+    event.create('max_field_generator')
 
     // Complex SMDs
     const smds = [
