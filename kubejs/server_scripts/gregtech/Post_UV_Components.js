@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('max_motor')
-        .itemInputs('4x gtceu:long_magnetic_terbium_rod', '4x gtceu:long_monium_rod', '12x gtceu:long_infinity_rod', '12x gtceu:infinity_ring', '24x gtceu:infinity_round', '32x gtceu:fine_monium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_activated_netherite_wire', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '2x gtceu:monium_single_wire')
+        .itemInputs('4x gtceu:long_magnetic_terbium_rod', '12x gtceu:long_monium_rod', '12x gtceu:monium_ring', '24x gtceu:monium_round', '64x gtceu:fine_monium_wire', '64x gtceu:fine_monium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_activated_netherite_wire', '4x gtceu:monium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:omnium 2304')
         .itemOutputs('kubejs:max_electric_motor')
         .duration(1800)
@@ -280,7 +280,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('max_piston')
-        .itemInputs('kubejs:max_electric_motor', '4x gtceu:double_infinity_plate', '4x gtceu:infinity_ring', '16x gtceu:infinity_round', '4x gtceu:monium_rod', 'gtceu:infinity_gear', '2x gtceu:small_infinity_gear', '2x gtceu:monium_single_wire')
+        .itemInputs('kubejs:max_electric_motor', '4x gtceu:monium_plate', '4x gtceu:monium_ring', '16x gtceu:monium_round', '4x gtceu:monium_rod', 'gtceu:monium_gear', '2x gtceu:small_monium_gear', '2x gtceu:monium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:omnium 2304')
         .itemOutputs('kubejs:max_electric_piston')
         .duration(1800)
@@ -327,7 +327,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('max_robot_arm')
-        .itemInputs('2x gtceu:long_monium_rod', '6x gtceu:long_infinity_rod', 'gtceu:infinity_gear', '3x gtceu:small_infinity_gear', '3x kubejs:max_electric_motor', 'kubejs:max_electric_piston', '#gtceu:circuits/max', '2x #gtceu:circuits/uiv', '4x #gtceu:circuits/uev', '4x gtceu:monium_single_wire')
+        .itemInputs('4x gtceu:long_monium_rod', 'gtceu:monium_gear', '3x gtceu:small_monium_gear', '3x kubejs:max_electric_motor', 'kubejs:max_electric_piston', '#gtceu:circuits/max', '2x #gtceu:circuits/uiv', '4x #gtceu:circuits/uev', '4x gtceu:monium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:omnium 2304')
         .itemOutputs('kubejs:max_robot_arm')
         .duration(1800)
@@ -422,7 +422,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('max_emitter')
-        .itemInputs('gtceu:monium_frame', 'kubejs:max_electric_motor', '4x gtceu:long_infinity_rod', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/max', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:monium_single_wire')
+        .itemInputs('gtceu:monium_frame', 'kubejs:max_electric_motor', '4x gtceu:long_monium_rod', '2x kubejs:quasi_stable_neutron_star', '#gtceu:circuits/max', '64x gtceu:crystal_matrix_foil', '32x gtceu:crystal_matrix_foil', '4x gtceu:monium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:omnium 2304')
         .itemOutputs('kubejs:max_emitter')
         .duration(1800)
@@ -470,7 +470,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('max_field_generator')
-        .itemInputs('gtceu:monium_frame', '6x gtceu:double_infinity_plate', '2x kubejs:quasi_stable_neutron_star', '2x kubejs:max_emitter', '#gtceu:circuits/max', '4x #gtceu:circuits/uiv', '64x gtceu:fine_monium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_activated_netherite_wire', '64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire', '4x gtceu:monium_single_wire')
+        .itemInputs('gtceu:monium_frame', '6x gtceu:monium_plate', '2x kubejs:quasi_stable_neutron_star', '2x kubejs:max_emitter', '#gtceu:circuits/max', '4x #gtceu:circuits/uiv', '64x gtceu:fine_monium_wire', '64x gtceu:fine_monium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_activated_netherite_wire', '64x gtceu:fine_activated_netherite_wire', '4x gtceu:monium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:crystal_matrix 5760', 'gtceu:omnium 2304')
         .itemOutputs('kubejs:max_field_generator')
         .duration(1800)
