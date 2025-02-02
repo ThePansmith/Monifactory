@@ -148,10 +148,6 @@
   "item.kubejs.quantum_soc_chip_base": "Quantum SoC Chip Base",
   "item.kubejs.quantum_soc_chip": "Quantum SoC Chip",
 
-  "item.kubejs.crushed_ancient_debris": "Crushed Ancient Debris",
-  "item.kubejs.purified_ancient_debris": "Purified Ancient Debris",
-  "item.kubejs.refined_ancient_debris": "Refined Ancient Debris",
-  "item.kubejs.impure_ancient_debris_dust": "Impure Ancient Debris Dust",
   "item.kubejs.purified_ancient_debris_dust": "Purified Ancient Debris Dust",
   "item.kubejs.processed_ancient_debris_dust": "Processed Ancient Debris Dust",
   "item.kubejs.inert_netherite_scrap": "Inert Netherite Scrap",

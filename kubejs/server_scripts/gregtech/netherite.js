@@ -3,7 +3,9 @@
  */
 
 ServerEvents.recipes(event => {
-
+    //We only use GT ores for the oreproc page and autogenned intermediates, not for the in-stone ore
+    event.remove({ not: [{ input: "minecraft:ancient_debris" }, { input: "#forge:ores/netherite_scrap" }], output: "gtceu:crushed_netherite_scrap_ore" })
+    event.remove([{ type: "minecraft:smelting", output: "minecraft:netherite_scrap", id: /gtceu:smelting\/.*netherite_scrap_ore.*/ }, { type: "minecraft:blasting", output: "minecraft:netherite_scrap", id: /gtceu:blasting\/.*netherite_scrap_ore.*/ }])
 
     // Omnic Acid
     event.recipes.gtceu.large_chemical_reactor('omnic_acid')
@@ -14,42 +16,22 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(65520)
 
-    // Scrapline
-    event.recipes.gtceu.macerator('ancient_debris_crushing')
+    // Ancient Debris crushing
+    event.recipes.gtceu.macerator('macerate_ancient_debris_to_crushed_ore')
         .itemInputs('minecraft:ancient_debris')
-        .itemOutputs('2x kubejs:crushed_ancient_debris')
-        .chancedOutput('kubejs:crushed_ancient_debris', 1000, 500)
-        .itemOutputs('gtceu:obsidian_dust')
-        .duration(300)
-        .EUt(32)
+        .itemOutputs('2x gtceu:crushed_netherite_scrap_ore')
+        .chancedOutput('gtceu:obsidian_dust', 1400, 850)
+        .chancedOutput('gtceu:netherrack_dust', 1200, 800)
+        .duration(400)
+        .EUt(2)
+        .category("gtceu:ore_crushing")
 
+    // Omnic Acid Purifying
     event.recipes.gtceu.chemical_reactor('ancient_debris_purifying')
-        .itemInputs('kubejs:crushed_ancient_debris', 'gtceu:omnic_acid_dust')
+        .itemInputs('gtceu:netherite_scrap_dust', 'gtceu:omnic_acid_dust')
         .inputFluids(Fluid.of('water', 2000))
-        .itemOutputs('kubejs:purified_ancient_debris')
+        .itemOutputs('kubejs:purified_ancient_debris_dust')
         .chancedOutput('gtceu:platinum_dust', 3300, 0)
-        .duration(300)
-        .EUt(16380)
-
-    event.recipes.gtceu.thermal_centrifuge('ancient_debris_refining')
-        .itemInputs('kubejs:purified_ancient_debris')
-        .itemOutputs('kubejs:refined_ancient_debris')
-        .chancedOutput('gtceu:iridium_dust', 3300, 0)
-        .itemOutputs('gtceu:obsidian_dust')
-        .duration(300)
-        .EUt(16380)
-
-    event.recipes.gtceu.macerator('ancient_debris_refined_crushing')
-        .itemInputs('kubejs:refined_ancient_debris')
-        .itemOutputs('kubejs:impure_ancient_debris_dust')
-        .chancedOutput('gtceu:osmium_dust', 3300, 0)
-        .itemOutputs('gtceu:obsidian_dust')
-        .duration(300)
-        .EUt(16380)
-
-    event.recipes.gtceu.centrifuge('ancient_debris_dust_purifying')
-        .itemInputs('kubejs:impure_ancient_debris_dust')
-        .itemOutputs('kubejs:purified_ancient_debris_dust', 'gtceu:obsidian_dust')
         .duration(300)
         .EUt(16380)
 
@@ -65,7 +47,7 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:processed_ancient_debris_dust', '16x kubejs:quantum_flux')
         .inputFluids(Fluid.of('gtceu:tritium', 1000))
         .itemOutputs('kubejs:inert_netherite_scrap')
-        .duration(200)
+        .duration(150)
         .EUt(250000)
         .blastFurnaceTemp(12000)
 
@@ -81,10 +63,13 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:activated_netherite_ingot')
         .duration(200)
         .EUt(250000)
+})
 
-    // Regular Netherite
-    // Recipe is handled in alloys_recipes.js
-    event.remove({ output: "minecraft:netherite_ingot" })
-    event.smelting('minecraft:netherite_scrap', 'kubejs:crushed_ancient_debris')
-
+ServerEvents.tags("item", event => {
+    const oresToRemove = event.get("forge:ores/netherite_scrap").getObjectIds();
+    if(!oresToRemove.add("gtceu:raw_netherite_scrap")) console.error("Could not add Raw Netherite Scrap from list of Netherite Scrap ores to nuke")
+    
+    event.removeAllTagsFrom(oresToRemove.filter((value) => {
+        return ResourceLocation.of("minecraft:ancient_debris", ':').compareTo(value) != 0
+    }))
 })
