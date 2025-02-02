@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
     // Monic Circuits
     event.recipes.gtceu.circuit_assembler('monic_circuit_board')
         .itemInputs('32x kubejs:dimensional_circuit_board',
-            '2x gtceu:monium_plate',
+            'gtceu:monium_plate',
             '#gtceu:circuits/uv',
             'gtceu:zpm_field_generator',
             '1x kubejs:quasi_stable_neutron_star',
