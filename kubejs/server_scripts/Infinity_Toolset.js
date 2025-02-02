@@ -187,29 +187,19 @@ ServerEvents.recipes(event => {
     });
 
     // Ultimate Core
-    event.recipes.extendedcrafting.shaped_table('kubejs:ultimate_core', [
-        '    A    ',
-        '  KBCBK  ',
-        ' KABDBAK ',
-        ' BBEIFBB ',
-        'AGHIJIHGA',
-        ' BBFIEBB ',
-        ' KABDBAK ',
-        '  KBCBK  ',
-        '    A    ',
-    ], {
-        A: 'kubejs:the_ultimate_material',
-        B: 'enderio:reinforced_obsidian_block',
-        C: 'gtceu:dense_blue_alloy_plate',
-        D: 'gtceu:dense_cryolobus_plate',
-        E: 'gtceu:dense_dark_soularium_plate',
-        F: 'gtceu:dense_zeron_100_plate',
-        G: 'gtceu:dense_manyullyn_plate',
-        H: 'gtceu:dense_enriched_sunnarium_plate',
-        I: 'gtceu:gravi_star',
-        J: 'kubejs:quasi_stable_neutron_star',
-        K: 'kubejs:wither_bone'
-    })
+
+    event.recipes.gtceu.assembly_line('infinity_toolset/ultimate_core')
+        .itemInputs('gtceu:activated_netherite_frame', '12x kubejs:the_ultimate_material', 'kubejs:quasi_stable_neutron_star', '4x gtceu:gravi_star', '4x kubejs:eternal_catalyst', '6x gtceu:dense_cryococcus_plate', '6x gtceu:dense_cryolobus_plate','6x gtceu:dense_manyullyn_plate', '6x gtceu:dense_obsidian_plate')
+        .inputFluids('gtceu:nether_star 1152', 'gtceu:omnium 576', 'enderio:xp_juice 20000', 'gtceu:americium_plasma 5000')
+        .itemOutputs('kubejs:ultimate_core')
+        .duration(1200)
+        .EUt(GTValues.VHA[GTValues.UEV])
+
+        .stationResearch(b => b
+            .researchStack('kubejs:the_ultimate_material')
+            .CWUt(144, 576000)
+            .EUt(1048576)
+        )
 
     // Infinity Power Unit
     event.recipes.gtceu.assembly_line('infinity_toolset/infinity_power_unit')
