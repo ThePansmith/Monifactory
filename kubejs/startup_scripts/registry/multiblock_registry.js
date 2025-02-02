@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         event.create('actualization_chamber')
             .category('multiblock')
             .setEUIO('in')
-            .setMaxIOSize(2, 20, 0, 0)
+            .setMaxIOSize(2, 12, 0, 0)
             .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COOLING)
@@ -53,38 +53,11 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     }
 
 
-    // Small Microverse Projector Recipe Type
-    event.create('basic_microverse')
+    // Microverse Projector Recipe Type
+    event.create('microverse')
         .category('multiblock')
         .setEUIO('in')
-        .setMaxIOSize(4, 20, 1, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
-
-    // Advanced Microverse Projector Recipe Type
-    event.create('advanced_microverse')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(4, 16, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
-
-    // Advanced Microverse Projector II Recipe Type
-    event.create('advanced_microverse_ii')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(8, 16, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING);
-
-    // Advanced Microverse Projector III Recipe Type
-    event.create('advanced_microverse_iii')
-        .category('multiblock')
-        .setEUIO('in')
-        .setMaxIOSize(12, 16, 0, 0)
+        .setMaxIOSize(9, 12, 3, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
@@ -184,6 +157,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 })
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
+
+    // EMI displays microverse projector tier
+    GTRecipeTypes.get('microverse').addDataInfo((data) => ("Projector Tier: " + data.getByte('projector_tier')));   // todo: get Text.translatable to work
 
     // Normal mode-exclusive multis
     if (!isHardMode) {
@@ -573,13 +549,20 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("kubejs:block/cryolobus/cryolobus_casing",
             "gtceu:block/machines/electrolyzer", false)
 
+    let getMicroverseRecipeModifiers = tier => [
+        GTRecipeModifiers.OC_NON_PERFECT,
+        (machine, recipe) => recipe.data.getLong('projector_tier') > tier?
+            ModifierFunction.NULL : ModifierFunction.IDENTITY
+    ]
+
     // Basic Microverse Projector
     event.create('basic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('basic_microverse')
+        .recipeTypes('microverse')
+        .recipeModifiers(getMicroverseRecipeModifiers(1))
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("CMC", "CVC", "CCC")
+            .aisle("CCC", "CVC", "CCC")
             .aisle("CCC", "GDG", "CCC")
             .aisle("C@C", "CGC", "CCC")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
@@ -587,7 +570,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(12)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
-            .where('M', Predicates.abilities(PartAbility.MUFFLER))
             .where('V', Predicates.blocks(GTBlocks.CASING_GRATE.get()))
             .build())
         .workableCasingRenderer("kubejs:block/microverse/casing",
@@ -596,7 +578,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Advanced Microverse Projector
     event.create('advanced_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('advanced_microverse')
+        .recipeTypes('microverse')
+        .recipeModifiers(getMicroverseRecipeModifiers(2))
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCC", "CGGGC", "CGGGC", "CGGGC", "CCCCC")
@@ -618,7 +601,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Advanced Microverse Projector II
     event.create('advanced_microverse_projector_ii', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes('advanced_microverse_ii')
+        .recipeTypes('microverse')
+        .recipeModifiers(getMicroverseRecipeModifiers(3))
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#########", "#########", "##CCCCC##", "##CVCVC##", "##CCCCC##", "##CVCVC##", "##CCCCC##", "#########", "#########")
@@ -645,8 +629,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Microverse Projector III (Hyperbolic Microverse Projector)
     event.create('hyperbolic_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes(['basic_microverse', 'advanced_microverse', 'advanced_microverse_ii', 'advanced_microverse_iii'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeTypes('microverse')
+        .recipeModifiers(getMicroverseRecipeModifiers(4))
         .appearanceBlock(() => Block.getBlock('kubejs:microverse_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###CCCCC###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###CCCCC###")

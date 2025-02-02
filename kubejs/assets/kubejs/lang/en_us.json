@@ -16,6 +16,8 @@
   "item.kubejs.microminer_t1.desc": "§7§oHarvests Titanium and other light metals from asteroids in the microverse.",
   "item.kubejs.microminer_t2": "§eTitanium Plated Micro Miner [Tier Two]",
   "item.kubejs.microminer_t2.desc": "§7§oHarvests Tungsten and other heavy metals from asteroids in the microverse.",
+  "item.kubejs.microminer_t2half": "§eDark Steel Plated Micro Mob Slayer [Tier Two and a Half]",
+  "item.kubejs.microminer_t2half.desc": "§7§oKills mobs in safer microverses and collects their skeletons and parts",
   "item.kubejs.microminer_t3": "§eTungsten Carbide Plated Micro Miner [Tier Three]",
   "item.kubejs.microminer_t3.desc": "§7§oHarvests ultra hot metals and gems from Nether microverses.",
   "item.kubejs.microminer_t4": "§eSignalum Plated Micro Miner [Tier Four]",
@@ -43,6 +45,7 @@
 
   "item.kubejs.stabilized_microminer_t1": "§dStabilized Steel Plated Micro Miner [Tier One]",
   "item.kubejs.stabilized_microminer_t2": "§dStabilized Titanium Plated Micro Miner [Tier Two]",
+  "item.kubejs.stabilized_microminer_t2half": "§dStabilized Dark Steel Plated Micro Mob Slayer [Tier Two and a Half]",
   "item.kubejs.stabilized_microminer_t3": "§dStabilized Tungsten Carbide Plated Micro Miner [Tier Three]",
   "item.kubejs.stabilized_microminer_t4": "§dStabilized Signalum Plated Micro Miner [Tier Four]",
   "item.kubejs.stabilized_microminer_t4half": "§dStabilized Lumium Plated Micro Mob Slayer [Tier Four and Half]",
