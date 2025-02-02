@@ -319,7 +319,7 @@ ServerEvents.recipes(event => {
             T: 'gtceu:double_trinium_plate',
             F: 'gtceu:zpm_field_generator',
             E: 'gtceu:zpm_emitter',
-            C: 'kubejs:energy_core',
+            C: 'kubejs:abyssal_energy_core',
             S: 'gtceu:naquadah_alloy_frame',
             Q: 'gtceu:luv_quantum_chest',
             W: 'kubejs:warp_core',
