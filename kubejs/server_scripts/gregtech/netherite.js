@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    //We only use GT ores for the oreproc page and autogenned intermediates, not for the in-stone ore
+    // We only use GT ores for the oreproc page and autogenned intermediates, not for the in-stone ore
     event.remove({ not: [{ input: "minecraft:ancient_debris" }, { input: "#forge:ores/netherite_scrap" }], output: "gtceu:crushed_netherite_scrap_ore" })
     event.remove([{ type: "minecraft:smelting", output: "minecraft:netherite_scrap", id: /gtceu:smelting\/.*netherite_scrap_ore.*/ }, { type: "minecraft:blasting", output: "minecraft:netherite_scrap", id: /gtceu:blasting\/.*netherite_scrap_ore.*/ }])
 
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 ServerEvents.tags("item", event => {
     const oresToRemove = event.get("forge:ores/netherite_scrap").getObjectIds();
     if(!oresToRemove.add("gtceu:raw_netherite_scrap")) console.error("Could not add Raw Netherite Scrap from list of Netherite Scrap ores to nuke")
-    
+
     event.removeAllTagsFrom(oresToRemove.filter((value) => {
         return ResourceLocation.of("minecraft:ancient_debris", ':').compareTo(value) != 0
     }))

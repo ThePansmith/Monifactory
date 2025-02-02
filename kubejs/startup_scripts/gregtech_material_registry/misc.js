@@ -241,5 +241,5 @@ GTCEuStartupEvents.materialModification(event => {
     TagPrefix.ingot.setIgnored(GTMaterials.get("netherite_scrap"), Ingredient.of("minecraft:netherite_scrap"))
     tagPrefixes.forEach((prefix) => {
         prefix["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material)"](GTMaterials.get("netherite_scrap"));
-    })   
+    })
 })
