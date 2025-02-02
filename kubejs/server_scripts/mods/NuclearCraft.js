@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
 })
 
 // Live Fuel decomp
-// Could also use this to change how these fuels are created? 
+// Could also use this to change how these fuels are created?
 ServerEvents.recipes(event => {
 
     function decomp(name, fuel, ing1, ing2) {

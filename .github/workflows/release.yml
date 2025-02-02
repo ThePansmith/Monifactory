@@ -53,14 +53,8 @@ jobs:
   pre-build:
     uses: ./.github/workflows/get_version_info.yml
 
-  replace_version:
-    needs: pre-build
-    uses: ./.github/workflows/replace_version.yml
-    with:
-      version: ${{ needs.pre-build.outputs.version }}
-
   build:
-    needs: [replace_version, pre-build]
+    needs: [pre-build]
     if: inputs.skip_build != true
     permissions:
       id-token: write
@@ -69,6 +63,7 @@ jobs:
     uses: ./.github/workflows/build_pr.yml
     with:
       target: build-all
+      version: ${{ needs.pre-build.outputs.version }}
     secrets: inherit
 
   release:
@@ -194,6 +189,6 @@ jobs:
           changelog: "For a detailed changelog, see the GitHub release: ${{ steps.release.outputs.html_url }}"
           changelog-format: "text"
           game-version: "1.20.1"
-          display-name: "Monifactory-${{steps.name.outputs.name}}"
-          server-display-name: "Monifactory-${{steps.name.outputs.name}} Server"
+          display-name: "Monifactory ${{steps.name.outputs.name}}"
+          server-display-name: "Monifactory ${{steps.name.outputs.name}} Server"
           release-type: ${{ github.event.inputs.cf_type }}

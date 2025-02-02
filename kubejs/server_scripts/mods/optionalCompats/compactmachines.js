@@ -1,9 +1,9 @@
 /**
  * Optional compat script for Compact Machines
- * 
+ *
  * Modeled after Nomifactory CEu's script for the same.
  * Gated to HV, with more unlocked at IV.
- * 
+ *
  * Replaces or modifies the recipe for every item in the mod.
  */
 if (Platform.isLoaded('compactmachines')) {

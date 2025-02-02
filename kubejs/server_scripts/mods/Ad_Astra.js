@@ -141,7 +141,6 @@ ServerEvents.recipes(event => {
     })
 
 
-
     // Nasa Work Bench
     event.recipes.extendedcrafting.shaped_table('ad_astra:nasa_workbench', [
         "RPEPR",

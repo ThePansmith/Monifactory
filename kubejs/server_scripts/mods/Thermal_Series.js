@@ -433,7 +433,7 @@ ServerEvents.recipes(event => {
         B: '#forge:rods/electrum',
         C: 'enderio:advanced_capacitor_bank'
     }).id('kubejs:energy_cell_frame')
-    
+
     event.remove('thermal:energy_cell');
     event.recipes.gtceu.canner('kubejs:energy_cell')
         .itemInputs('thermal:energy_cell_frame', '#forge:storage_blocks/redstone')

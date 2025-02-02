@@ -106,7 +106,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x777777).iconSet('rough')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('graphene', 'oxygen')
-    
+
     // Kapton K
     event.create('durene')
         .dust()

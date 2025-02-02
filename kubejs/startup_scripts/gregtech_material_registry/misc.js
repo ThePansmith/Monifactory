@@ -229,4 +229,3 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('microversium').setFormula('Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D')
     GTMaterials.get('thorium_hydroxide').setFormula('Th(OH)4')
 })
-
