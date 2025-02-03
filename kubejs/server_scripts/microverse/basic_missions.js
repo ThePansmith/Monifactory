@@ -225,9 +225,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:gem_sensor', 'gtceu:power_thruster')
             .itemOutputs(
                 '64x gtceu:raw_dilithium',
-                '64x gtceu:raw_dilithium',
-                '64x gtceu:raw_dilithium',
-                '64x gtceu:raw_dilithium',
+                '32x gtceu:raw_dilithium',
                 '64x gtceu:raw_certus_quartz',
                 '64x gtceu:raw_certus_quartz',
                 '64x gtceu:raw_monazite',
