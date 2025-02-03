@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
             .itemInputs('4x kubejs:quantum_flux')
             .itemInputs('16x kubejs:petrotheum_dust')
             .itemInputs('gtceu:diamond_drill_head')
-            .itemInputs('kubejs:gem_sensor')
+            .itemInputs('2x kubejs:gem_sensor')
             .itemOutputs(
                 '32x kubejs:dense_diamond_ore',
                 '16x kubejs:dense_lapis_ore',

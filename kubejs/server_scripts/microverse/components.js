@@ -216,6 +216,16 @@ ServerEvents.recipes(event => {
         'WCW',
         ' W '
     ], {
+        A: 'minecraft:ender_eye',
+        W: 'gtceu:stainless_steel_plate',
+        C: 'gtceu:hv_sensor'
+    })
+
+    event.shaped('4x kubejs:gem_sensor', [
+        ' A ',
+        'WCW',
+        ' W '
+    ], {
         A: 'gtceu:quantum_eye',
         W: 'gtceu:tungsten_carbide_plate',
         C: 'gtceu:iv_sensor'

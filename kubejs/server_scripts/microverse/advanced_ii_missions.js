@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 '64x kubejs:dilithium_crystal',
-                'kubejs:gem_sensor',
+                '3x kubejs:gem_sensor',
                 '64x kubejs:deep_dark_data',
                 '64x kubejs:deep_dark_data',
                 '64x kubejs:deep_dark_data'
