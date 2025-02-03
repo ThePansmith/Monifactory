@@ -112,8 +112,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '16x gtceu:quantum_star',
                 '32x gtceu:quantum_eye',
-                '8x gtceu:neutronium_ingot',
-                'gtceu:gravi_star',
+                '4x gtceu:gravi_star',
             )
     })
 
@@ -133,7 +132,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 9, 3, 150, GTValues.VA, GTValues.UV, 50).forEach(builder => {
         builder
             .itemInputs('8x gtceu:neutron_reflector', '4x gtceu:cryococcus_block', 'kubejs:stellar_creation_data')
-            .itemOutputs('64x gtceu:neutronium_ingot', '32x gtceu:neutronium_ingot')
+            .itemOutputs('64x gtceu:neutronium_ingot')
     })
 
     microverse_mission(event, 9, 3, 150, GTValues.VHA, GTValues.UV, 100).forEach(builder => {
