@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
      * @param {string[]} heavyPlatingList List of the names of the heavy plating materials used to repair the hull.
      */
     function repairing(minerTier, doublePlateList, heavyPlatingList) {
-        var minerTierNumber;
+        let minerTierNumber;
 
         if(minerTier == '2half') minerTierNumber = 2.5;
         else if(minerTier == '4half') minerTierNumber = 4.5;
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
                 builder.chancedInput(`3x kubejs:${name}_heavy_plating`, 9000-1000*index, -1000+200*index)
             })
         }
-        
+
         return builder;
     }
 

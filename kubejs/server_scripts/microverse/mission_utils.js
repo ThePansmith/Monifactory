@@ -104,7 +104,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
     if(minerReturnChance > 0) {
         builders[0].chancedOutput(`kubejs:damaged_microminer_t${minerTier}`, minerReturnChance, minerReturnChance == 10000 ? 0 : 500)
     }
-    
+
     // Register actualization chamber counterparts in Hard Mode and Expert Mode except for T9+
     if(isHardMode && minerTier < 9 || minerTier == "2half" || minerTier == "4half" || minerTier == "8half") {
         builders[1] = event.recipes.gtceu.actualization_chamber(`kubejs:pristine_t${minerTier}_${global.mission_counts[minerTier]}`)
