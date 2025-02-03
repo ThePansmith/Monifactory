@@ -122,17 +122,18 @@ ServerEvents.recipes(event => {
     // T7 Microminer
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t7', [
         ' L  D  L ',
-        ' DDDGDDD ',
-        'LDDDDDDDL',
-        'DDDDPDDDD',
-        'DDDAEADDD',
-        'DDDDPDDDD',
-        'D DDDDD D',
-        'D DDDDD D',
+        ' DDHGHDD ',
+        'LDDHHHDDL',
+        'DHDHPHDHD',
+        'DHDAEADHD',
+        'DDDHPHDDD',
+        'D DHHHD D',
+        'D DHDHD D',
         'D WW WW D'
     ], {
         L: 'kubejs:supercharged_laser_array',
         D: 'gtceu:double_cryolobus_plate',
+        H: 'gtceu:double_hsss_plate',
         G: 'kubejs:advanced_micro_miner_guidance_system',
         P: 'kubejs:bathyal_energy_core',
         A: 'gtceu:luv_field_generator',
@@ -154,7 +155,7 @@ ServerEvents.recipes(event => {
     ], {
         G: 'kubejs:advanced_micro_miner_guidance_system',
         C: 'gtceu:double_crystal_matrix_plate',
-        W: 'gtceu:double_tungsten_carbide_plate',
+        W: 'gtceu:double_duranium_plate',
         L: 'kubejs:supercharged_laser_array',
         I: 'gtceu:double_iridium_plate',
         A: 'gtceu:hv_super_chest',
@@ -293,7 +294,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:basic_micro_miner_guidance_system',
             F: 'redstone_arsenal:flux_sword',
             l: 'gtceu:double_lumium_plate',
-            t: 'gtceu:double_tungsten_carbide_plate',
+            t: 'gtceu:double_hssg_plate',
             A: 'gtceu:hv_robot_arm',
             c: 'kubejs:signalum_micro_miner_core',
             f: 'gtceu:hv_field_generator',
