@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     // T4MM mission
-    microverse_mission(event, 4, 4, 120, GTValues.VHA, GTValues.UV, 50).forEach(builder => {
+    microverse_mission(event, 4, 4, 160, GTValues.VHA, GTValues.UV, 50).forEach(builder => {
         builder
             .itemInputs(
                 '64x kubejs:ultra_dense_hydrogen',
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     })
 
     // T8MM mission
-    microverse_mission(event, 8, 4, 30, GTValues.VHA, GTValues.UV, 100).forEach(builder => {
+    microverse_mission(event, 8, 4, 280, GTValues.VHA, GTValues.UV, 100).forEach(builder => {
         builder
             .itemInputs(
                 '64x kubejs:quantum_flux',
@@ -67,8 +67,6 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs('kubejs:infinity_catalyst', 'gtceu:neutronium_drill_head', 'kubejs:shattered_universe_data')
             .itemOutputs(
-                '64x kubejs:alien_scrap',
-                '64x kubejs:alien_scrap',
                 '64x kubejs:alien_scrap',
                 '64x kubejs:alien_scrap',
                 '64x kubejs:alien_scrap',
