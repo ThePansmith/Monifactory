@@ -7,14 +7,18 @@ StartupEvents.registry('item', event => {
     // Regular Microminers
     for (let index = 1; index <= 12; index++) {
         event.create(`microminer_t${index}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${index}`)
+        event.create(`damaged_microminer_t${index}`).maxStackSize(16).textureJson({ layer0: `kubejs:item/microverse/microminer_t${index}`, layer1: 'minecraft:block/destroy_stage_2' })
     }
 
 
     // HM/EM Microminers
     if (!isNormalMode) {
         event.create('microminer_t2half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half")
+        event.create('damaged_microminer_t2half').maxStackSize(16).textureJson({ layer0: 'kubejs:item/microverse/microminer_t2half', layer1: 'minecraft:block/destroy_stage_2' })
         event.create('microminer_t4half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
+        event.create('damaged_microminer_t4half').maxStackSize(16).textureJson({ layer0: 'kubejs:item/microverse/microminer_t4half', layer1: 'minecraft:block/destroy_stage_2' })
         event.create('microminer_t8half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
+        event.create('damaged_microminer_t8half').maxStackSize(16).textureJson({ layer0: 'kubejs:item/microverse/microminer_t8half', layer1: 'minecraft:block/destroy_stage_2' })
     }
 
 

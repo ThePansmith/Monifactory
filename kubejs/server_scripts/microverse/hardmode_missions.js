@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     if (isHardMode) {
-        microverse_mission(event, "2half", 1, 40, GTValues.VHA, GTValues.IV, 20, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "2half", 1, 40, GTValues.VHA, GTValues.IV, 100).forEach(builder => {
             builder
                 .itemInputs(
                     '8x kubejs:quantum_flux',
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "2half", 1, 40, GTValues.VHA, GTValues.IV, 25, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "2half", 1, 40, GTValues.VHA, GTValues.IV, 100).forEach(builder => {
             builder
                 .itemInputs(
                     '8x kubejs:quantum_flux',
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "2half", 1, 50, GTValues.VHA, GTValues.IV, 30, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "2half", 1, 50, GTValues.VHA, GTValues.IV, 100).forEach(builder => {
             builder
                 .itemInputs(
                     '8x kubejs:quantum_flux',
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "2half", 1, 50, GTValues.VHA, GTValues.IV, 35, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "2half", 1, 50, GTValues.VHA, GTValues.IV, 100).forEach(builder => {
             builder
                 .itemInputs(
                     '8x kubejs:quantum_flux',
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "2half", 1, 60, GTValues.VHA, GTValues.IV, 40, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "2half", 1, 60, GTValues.VHA, GTValues.IV, 100).forEach(builder => {
             builder
                 .itemInputs(
                     '8x kubejs:quantum_flux',
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "4half", 2, 90, GTValues.VHA, GTValues.IV, 50, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "4half", 2, 90, GTValues.VHA, GTValues.IV, 100).forEach(builder => {
             builder
                 .itemInputs(
                     '8x kubejs:quantum_flux',
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "4half", 2, 90, GTValues.VHA, GTValues.IV, 60, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "4half", 2, 90, GTValues.VHA, GTValues.IV, 100).forEach(builder => {
             builder
                 .itemInputs(
                     '8x kubejs:quantum_flux',
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "4half", 2, 90, GTValues.VHA, GTValues.IV, 50, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "4half", 2, 90, GTValues.VHA, GTValues.IV, 100).forEach(builder => {
             builder
                 .itemInputs(
                     '8x kubejs:quantum_flux',
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "4half", 2, 90, GTValues.VHA, GTValues.IV, 50, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "4half", 2, 90, GTValues.VHA, GTValues.IV, 100).forEach(builder => {
             builder
                 .itemInputs(
                     '8x kubejs:quantum_flux',
@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, 6, 3, 100, GTValues.VHA, GTValues.IV, 100, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, 6, 3, 100, GTValues.VHA, GTValues.IV, 0).forEach(builder => {
             builder
                 .itemInputs(
                     '16x kubejs:quantum_flux',
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "8half", 3, 450, GTValues.VHA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "8half", 3, 450, GTValues.VHA, GTValues.UV, 100).forEach(builder => {
             builder
                 .itemInputs('16x kubejs:quantum_flux')
                 .itemInputs('64x kubejs:dilithium_crystal')
@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "8half", 3, 450, GTValues.VHA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "8half", 3, 450, GTValues.VHA, GTValues.UV, 100).forEach(builder => {
             builder
                 .itemInputs('16x kubejs:quantum_flux')
                 .itemInputs('64x kubejs:dilithium_crystal')
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "8half", 3, 450, GTValues.VHA, GTValues.UV, 60, GTValues.MAX).forEach(builder => {
+        microverse_mission(event, "8half", 3, 450, GTValues.VHA, GTValues.UV, 100).forEach(builder => {
             builder
                 .itemInputs('16x kubejs:quantum_flux')
                 .itemInputs('64x kubejs:dilithium_crystal')
