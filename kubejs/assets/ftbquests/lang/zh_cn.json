@@ -3220,11 +3220,11 @@
     "moni.task.584BEA5276908468": "设置自动合成",
     "moni.task.589A0779F965D77A": "任意采矿锤",
     "moni.task.58F4FFB270CEA21B": " ",
-    "moni.task.5C462084D069B744": "",
-    "moni.task.5CAAB07517C865BD": "",
+    "moni.task.5C462084D069B744": " ",
+    "moni.task.5CAAB07517C865BD": " ",
     "moni.task.5CF757A158365EEF": "钚",
     "moni.task.5D06DCFA7A00AE81": "低压、中压或高压车床",
-    "moni.task.5D3D61A04CC17374": "",
+    "moni.task.5D3D61A04CC17374": "任意UV电路#gtceu:circuits/uv",
     "moni.task.5D9E01E9FFB9F05B": "LV、MV或HV卷板机",
     "moni.task.5DB657A9EF012D12": " ",
     "moni.task.5E475348CEFAFBBF": "硅粉或氧气桶",
@@ -3409,5 +3409,7 @@
     "moni.task.15E9864541CF59D6": " ",
     "moni.task.1852A862553D4C79": " ",
     "moni.task.2026CA71AB1F0711": " ",
-    "moni.task.6DD48E23EA3C1FDC": " "
+    "moni.task.6DD48E23EA3C1FDC": " ",
+    "moni.task.5C7471C734001626": " ",
+    "moni.task.5B2F5A3BD09E835A": " "
 }
