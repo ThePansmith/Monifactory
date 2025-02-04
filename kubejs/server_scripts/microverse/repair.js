@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
             .itemInputs(`kubejs:damaged_microminer_t${minerTier}`)
             .itemOutputs(`kubejs:microminer_t${minerTier}`)
             .inputFluids(Fluid.of('gtceu:soldering_alloy', 36*minerTierNumber))
-            .duration(repairDurations[minerTierNumber])
+            .duration(20*repairDurations[minerTierNumber])
 
         if(doublePlateList != undefined) {
             doublePlateList.forEach((name, index) => {
