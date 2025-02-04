@@ -1,6 +1,29 @@
 /**
  * Recipe definitions for repairing microminers.
  */
+
+/**
+ * Durations for repairs of a given microminer tier.
+ * Compare with missionDurations of mission_utils.js.
+ */
+const repairDurations = {
+    "1": 60,
+    "2": 80,
+    "2half": 80,
+    "3": 100,
+    "4": 120,
+    "4half": 120,
+    "5": 150,
+    "6": 160,
+    "7": 180,
+    "8": 200,
+    "8half": 200,
+    "9": 240,
+    "10": 300,
+    "11": 360,
+    "12": 420
+}
+
 ServerEvents.recipes(event => {
     /**
      * Starts a recipe builder for a given microminer tier. Must be completed with more chanced input items.
@@ -17,13 +40,11 @@ ServerEvents.recipes(event => {
         else if(minerTier == '8half') minerTierNumber = 8.5;
         else minerTierNumber = minerTier;
 
-        const duration = 20*(80+(20*minerTierNumber));
-
         const builder = event.recipes.gtceu.assembler(`kubejs:repair_t${minerTier}`)
             .itemInputs(`kubejs:damaged_microminer_t${minerTier}`)
             .itemOutputs(`kubejs:microminer_t${minerTier}`)
             .inputFluids(Fluid.of('gtceu:soldering_alloy', 36*minerTierNumber))
-            .duration(duration)
+            .duration(repairDurations[minerTierNumber])
 
         if(doublePlateList != undefined) {
             doublePlateList.forEach((name, index) => {

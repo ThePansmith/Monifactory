@@ -29,6 +29,7 @@ global.mission_counts = {
 
 /**
  * Default durations for missions of a given microminer tier.
+ * Compare with repairDurations of repair.js.
  */
 const missionDurations = {
     "1": 100,
