@@ -112,7 +112,8 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 '16x gtceu:quantum_star',
                 '32x gtceu:quantum_eye',
-                '4x gtceu:gravi_star',
+                '1x gtceu:gravi_star',
+                '8x gtceu_neutronium_ingot'
             )
     })
 
