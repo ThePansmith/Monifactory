@@ -1,5 +1,5 @@
 {
-    "item.kubejs.smore_1": "饼干巧克力夹棉花糖",
+    "item.kubejs.smore_1": "饼干夹烤棉花糖",
     "item.kubejs.smore_2": "双层饼干夹烤棉花糖",
     "item.kubejs.smore_4": "四层饼干夹烤棉花糖",
     "item.kubejs.smore_6": "八层饼干夹烤棉花糖",
@@ -394,7 +394,7 @@
     "enderio.vibrant_conduit.tooltip": "§7最大输出 8,192 RF/t",
     "thermal.device_rock_gen.tooltip": "§7紧挨着水和岩浆才能产出圆石。",
     "gtceu.ender_fluid_link_cover.tooltip": "§4暂未移植。",
-    "functionalstorage.storage_controller.tooltip": "§7就是1.12的抽屉控制器喵",
+    "functionalstorage.storage_controller.tooltip": "§7就是1.12的抽屉控制器",
     "ae2.memory_card.tooltip": "副手拿着内存卡，主手空手右键可以给多对多的P2P添加更多输入端",
     "gtceu.infinity_ingot.tooltip": "§7 宇宙的怒火尽在你的掌心。",
     "kubejs.infinity_catalyst.tooltip": "一即一切，一切既一。",
