@@ -72,6 +72,110 @@ ServerEvents.recipes(event => {
             .EUt(245760)
     }
 
+    for (const javaRecipe of event.findRecipes({ mod: "gtceu" })) {
+        /** @type {import("../../dx/typings/GTJSONRecipe.d.mts").GTJSONRecipe} */
+        let recipe = JSON.parse(javaRecipe.json.toString())
+
+        // Filter out non-GT-machine recipes
+        if(!recipe?.type.startsWith("gtceu:"))
+            continue
+
+        // Filter out non-item recipes
+        if (!(recipe.duration && recipe.inputs?.item && recipe.outputs))
+            continue
+
+        // Filter out recipes without advanced smd
+        if(!recipe.inputs.item.some(i =>
+            i.content.type === "gtceu:sized" &&
+            "item" in i.content.ingredient &&
+            i.content.ingredient.item.startsWith("gtceu:advanced_smd_")
+        )) continue
+
+        // Filter out recipes without eu
+        if(!recipe.tickInputs?.eu)
+            continue
+        let eut = recipe.tickInputs.eu[0].content
+        if(!eut)
+            continue
+
+        // Extract inputs and outputs data
+        let [newInputItems, newOutputItems] = [recipe.inputs.item, recipe.outputs?.item].map(items =>
+            items && items.map(i => {
+                let c = i.content
+                if (c.type !== "gtceu:sized" || "type" in c.ingredient)
+                    throw new Error("Cannot generate complex SMD recipes")
+                let ing = c.ingredient
+                return {
+                    id: "tag" in ing? "#"+ing.tag : ing.item,
+                    amount: c.count
+                }
+            })
+        )
+        let [newInputFluids, newOutputFluids] = [recipe.inputs.fluid, recipe.outputs?.fluid].map(items =>
+            items && items.map(i => {
+                let c = i.content
+                let [val] = c.value
+                return {
+                    id: "tag" in val? "gtceu:"+val.tag.split(":")[1] : val.fluid,
+                    amount: c.amount
+                }
+            })
+        )
+        let {duration, recipeConditions} = recipe
+
+        /** @param {number} by */
+        let multiplyRecipe = by => {
+            duration *= by
+            eut *= by
+            for(let matters of [newInputItems, newOutputItems, newInputFluids, newOutputFluids])
+                if(matters)
+                    for(let matter of matters)
+                        matter.amount *= by
+        }
+        /** @param {number} by */
+        let isRecipeDivisible = by =>
+            duration % by === 0 &&
+            eut % by === 0 &&
+            [newInputItems, newOutputItems, newInputFluids, newOutputFluids]
+                .filter(matters => matters)
+                .every(matters => matters.every(
+                    matter => matter.amount % by === 0
+                ))
+
+        multiplyRecipe(4)
+        // Replace all advanced smd by complex smd
+        for(let inp of newInputItems) {
+            let match = inp.id.match(/^gtceu:advanced(_smd_.*)$/)
+            if(!match) continue
+            inp.id = "kubejs:complex"+match[1]
+            inp.amount /= 4
+        }
+        // Divide recipe back as much as possible
+        while(isRecipeDivisible(2))
+            multiplyRecipe(0.5)
+
+        let [,machineName] = recipe.type.split(':')
+        let newRecipe = event.recipes.gtceu[machineName]('complex_smd_recipe_'+javaRecipe.hashCode())
+        if(newInputItems)
+            newRecipe = newRecipe.itemInputs.apply(newRecipe, newInputItems.map(i => `${i.amount}x ${i.id}`))
+        if(newInputFluids)
+            newRecipe = newRecipe.inputFluids.apply(newRecipe, newInputFluids.map(i => `${i.id} ${i.amount}`))
+        if(newOutputItems)
+            newRecipe = newRecipe.itemOutputs.apply(newRecipe, newOutputItems.map(i => `${i.amount}x ${i.id}`))
+        if(newOutputFluids)
+            newRecipe = newRecipe.outputFluids.apply(newRecipe, newOutputFluids.map(i => `${i.id} ${i.amount}`))
+        newRecipe = newRecipe.EUt(eut).duration(duration)
+
+        let cleanroomCondition = recipeConditions.find(cond => cond.type === "cleanroom")
+        if(cleanroomCondition)
+            newRecipe = newRecipe.cleanroom(CleanroomType[cleanroomCondition.cleanroom.toUpperCase()])
+
+        let researchCondition = recipeConditions.find(cond => cond.type === "research")
+        if(researchCondition) {
+            let research = researchCondition.research[0]
+            newRecipe = newRecipe.researchWithoutRecipe(research.researchId, research.dataItem.id)
+        }
+    }
 
     // Wetware tweaks are more invasive than a 1-item swapout
 
