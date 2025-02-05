@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
 
     // Activated Nethline
     event.recipes.gtceu.forming_press('inert_nether_compound_ingot')
-        .itemInputs('gtceu:hot_europium_ingot', '16x kubejs:wither_bone', '4x gtceu:dark_soularium_dust', '4x kubejs:primal_mana')
+        .itemInputs('gtceu:hot_europium_ingot', '16x kubejs:wither_bone', '4x gtceu:dark_soularium_dust', '4x gtceu:mana_dust')
         .itemOutputs('kubejs:inert_nether_compound_ingot')
         .duration(300)
         .EUt(16380)

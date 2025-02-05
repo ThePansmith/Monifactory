@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
         .EUt(30720)
 
     event.recipes.gtceu.mixer('crude_naquadah_blend')
-        .itemInputs('6x gtceu:naquadah_dust', '2x gtceu:naquadria_dust', '2x gtceu:plutonium_dust', '4x gtceu:uranium_235_dust', '2x kubejs:primal_mana', '2x gtceu:neutronium_dust')
+        .itemInputs('6x gtceu:naquadah_dust', '2x gtceu:naquadria_dust', '2x gtceu:plutonium_dust', '4x gtceu:uranium_235_dust', '2x gtceu:mana_dust', '2x gtceu:neutronium_dust')
         .inputFluids('gtceu:jean_gasoline 4000')
         .itemOutputs('4x kubejs:crude_naquadah_fuel_blend')
         .duration(300)

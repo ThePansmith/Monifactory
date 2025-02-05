@@ -272,7 +272,6 @@ StartupEvents.registry('item', event => {
     event.create('cryotheum_dust').texture('kubejs:item/cryotheum_blend')
     event.create('petrotheum_dust').texture('kubejs:item/petrotheum_blend')
     event.create('pyrotheum_dust').texture('kubejs:item/pyrotheum_blend')
-    event.create('primal_mana').rarity('epic')
 
     event.create('destabilized_clathrate').rarity('uncommon')
     event.create('energized_clathrate').rarity('uncommon')

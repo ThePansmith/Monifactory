@@ -18,6 +18,8 @@ itemRarityMap.put("functionalstorage:diamond_upgrade", createRarity("aluminum", 
 itemRarityMap.put("functionalstorage:netherite_upgrade", createRarity("stainless_steel", 0x9695a3))
 
 ItemEvents.modification(event => {
+    // Make mana dust epic rarity
+    event.modify('gtceu:mana_dust', item => { item.rarity = 'epic' })
 
     // Make it so Sugar Cane can be used as fuel in the Furnace
     event.modify('minecraft:sugar_cane', item => { item.burnTime = 300 })
