@@ -38,13 +38,13 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:enriched_naquadah_bolt')
         .itemOutputs('gtceu:lead_bolt')
         .duration(938)
-        .EUt(-393216)
+        .EUt(-3*GTValues.V[GTValues.ZPM])
 
     event.recipes.gtceu.naquadah_reactor('kubejs:process_naquadria')
         .itemInputs('gtceu:naquadria_bolt')
         .itemOutputs('gtceu:lead_bolt')
         .duration(3750)
-        .EUt(-393216)
+        .EUt(-3*GTValues.V[GTValues.ZPM])
 
     // Large Naquadah Reactor Fluid Recipes
     if (!isNormalMode) {
@@ -53,20 +53,19 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:naq_fuel_t1 10')
             .outputFluids('gtceu:naq_fuel_t1_depleted 10')
             .duration(20)
-            .EUt(-33554432)
+            .EUt(-GTValues.V[GTValues.UIV])
 
         event.recipes.gtceu.large_naquadah_reactor('kubejs:process_t2_fuel')
             .inputFluids('gtceu:naq_fuel_t2 10')
             .outputFluids('gtceu:naq_fuel_t2_depleted 10')
             .duration(20)
-            .EUt(-536870912)
+            .EUt(-GTValues.V[GTValues.OpV])
 
         event.recipes.gtceu.large_naquadah_reactor('kubejs:process_superfuel')
             .inputFluids('gtceu:naquadah_superfuel 10')
             .outputFluids('gtceu:naquadah_superfuel_depleted 10')
             .duration(20)
-            .EUt(-8589934592)
-
+            .EUt(-4*GTValues.V[GTValues.MAX])
     }
 
     // Solid Large Reactor Recipes
@@ -75,14 +74,13 @@ ServerEvents.recipes(event => {
             .itemInputs('4x kubejs:naquadah_fuel_rod')
             .itemOutputs('4x kubejs:hot_depleted_naquadah_fuel_rod')
             .duration(24000)
-            .EUt(-33554432)
+            .EUt(-GTValues.V[GTValues.UIV])
     }
     else {
         event.recipes.gtceu.large_naquadah_reactor('kubejs:process_solid_fuel')
             .itemInputs('4x kubejs:naquadah_fuel_rod')
             .itemOutputs('4x kubejs:hot_depleted_naquadah_fuel_rod')
             .duration(24000)
-            .EUt(-8388608)
+            .EUt(-GTValues.V[GTValues.UEV])
     }
-
 })
