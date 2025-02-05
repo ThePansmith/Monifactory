@@ -1,0 +1,42 @@
+forge_titlescreen_mods_button = 模组
+forge_titlescreen_mods_button_hover =  &9模组
+
+mc_titlescreen_multiplayer_button = 多人游戏
+mc_titlescreen_multiplayer_button_hover =  &9多人游戏
+mc_titlescreen_options_button = 选项...
+mc_titlescreen_options_button_hover =  &9选项...
+mc_titlescreen_quit_button = 退出游戏
+mc_titlescreen_quit_button_hover =  &9退出游戏
+mc_titlescreen_singleplayer_button = 单人游戏
+mc_titlescreen_singleplayer_button_hover =  &9单人游戏
+
+moni_titlescreen_back_to_menu_button = 返回主菜单
+moni_titlescreen_back_to_menu_button_hover =  &9返回主菜单
+moni_titlescreen_change_mode_button = 更改模式...
+moni_titlescreen_change_mode_button_hover =  &9更改模式...
+moni_titlescreen_credits_button = 致谢 
+moni_titlescreen_credits_button_hover =  &9致谢
+moni_titlescreen_discord_button = Discord
+moni_titlescreen_discord_button_hover =  &9Discord
+moni_titlescreen_faq_button = F.A.Q.
+moni_titlescreen_faq_button_hover =  &9F.A.Q.
+moni_titlescreen_github_button = GitHub
+moni_titlescreen_github_button_hover =  &9GitHub
+moni_titlescreen_info_button = 信息...
+moni_titlescreen_info_button_hover =  &9信息...
+moni_titlescreen_patreon_button = Patreon
+moni_titlescreen_patreon_button_hover =  &9Patreon
+moni_titlescreen_projector_button_tooltip = 看看基地!
+
+moni_titlescreen_difficulty_text_normal = 正在游玩 &9&l普通模式&r
+moni_titlescreen_difficulty_text_hard = 正在游玩 &9&l困难模式&r
+moni_titlescreen_difficulty_text_expert = 正在游玩 &9&l专家模式&r
+
+moni_bases_screen_back_to_menu_button = 返回主菜单
+moni_bases_screen_back_to_menu_button_hover = &9返回主菜单
+
+moni_credits_screen_back_to_menu_button = 返回主菜单
+moni_credits_screen_back_to_menu_button_hover = &9返回主菜单
+moni_credits_screen_player_tooltip_1 = 还有您!
+moni_credits_screen_player_tooltip_2 = 感谢游玩
+moni_credits_screen_player_tooltip_3 = Monifactory
