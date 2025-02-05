@@ -138,7 +138,7 @@ StartupEvents.registry('item', event => {
     if (!isNormalMode) event.create('omnic_data')
 
     // Infinity Fluid Cell Base
-    if(isNormalMode) {
+    if (isNormalMode) {
         event.create('infinity_cell_base').displayName("ME Infinity Cell Base")
     }
 
@@ -146,7 +146,8 @@ StartupEvents.registry('item', event => {
     // Endgame Items
     event.create('diamond_lattice')
     event.create('neutron_emitter')
-    event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
+    event.create('ultimate_gem').displayName("§dUltimate Gem")
+        .texture('kubejs:item/ultimategem/ultimate_gem').glow(true)
     event.create('mote_of_omnium').displayName("Mote of Omnium")
         .glow(true).rarity("epic")
     event.create('heart_of_a_universe').displayName("§dHeart Of A Universe")
@@ -225,7 +226,6 @@ StartupEvents.registry('item', event => {
     event.create('dense_hydrogen').rarity('Uncommon')
     event.create('ultra_dense_hydrogen').rarity('Rare')
 
-
     // Stabilized Elements
     const stabilized_elements = [
         ['einsteinium', '#ce9f00'],
@@ -254,7 +254,7 @@ StartupEvents.registry('item', event => {
     event.create('radium_salt').rarity('Epic')
 
     // Thrusters
-    const thrusters = ['conductive_iron','leadstone','electrical_steel','hardened','energetic','reinforced','resonant','vibrant','dark_soularium','fluxed']
+    const thrusters = ['conductive_iron', 'leadstone', 'electrical_steel', 'hardened', 'energetic', 'reinforced', 'resonant', 'vibrant', 'dark_soularium', 'fluxed']
 
     thrusters.forEach(thruster => {
         event.create(`${thruster}_thruster`).texture(`kubejs:item/thruster/${thruster}`)
@@ -434,6 +434,46 @@ StartupEvents.registry('item', event => {
     event.create('quantum_soc_chip_base').texture('kubejs:item/quantumsoc/quantum_soc_chip_base').displayName('Quantum SoC Chip Base')
     event.create('quantum_soc_chip').texture('kubejs:item/quantumsoc/quantum_soc_chip').displayName('Quantum SoC Chip')
 
+    // Ultimate Gem
+    event.create('ender_gem_dust')
+        .displayName("Ender Gem Dust")
+        .texture("kubejs:item/ultimategem/ender_gem_dust")
+    event.create('ender_gem')
+        .displayName("Ender Gem")
+        .texture("kubejs:item/ultimategem/ender_gem")
+    event.create('gem_of_the_end')
+        .displayName("Gem of the End")
+        .texture("kubejs:item/ultimategem/gem_of_the_end")
+    event.create('uncut_abyss_crystal')
+        .displayName("Uncut Abyss Crystal")
+        .texture("kubejs:item/ultimategem/uncut_abyss_crystal")
+    event.create('abyss_crystal')
+        .displayName("Abyss Crystal")
+        .texture("kubejs:item/ultimategem/abyss_crystal")
+    event.create('pure_shards')
+        .displayName("Pure Shards")
+        .texture("kubejs:item/ultimategem/pure_shards")
+    event.create('blank_pure_crystal')
+        .displayName("Blank Pure Crystal")
+        .texture("kubejs:item/ultimategem/blank_pure_crystal")
+    event.create('bright_pure_crystal')
+        .displayName("Bright Pure Crystal")
+        .texture("kubejs:item/ultimategem/bright_pure_crystal")
+    event.create('pure_crystal')
+        .displayName("Pure Crystal")
+        .texture("kubejs:item/ultimategem/pure_crystal")
+    event.create('empowered_stabilization_lattice')
+        .displayName("Empowered Stabilization Lattice")
+        .texture("kubejs:item/ultimategem/empowered_stabilization_lattice")
+    event.create('extreme_energy_blend')
+        .displayName("Extreme Energy Blend")
+        .texture("kubejs:item/ultimategem/extreme_energy_blend")
+    event.create('extreme_energy_crystal')
+        .displayName("Extreme Energy Crystal")
+        .texture("kubejs:item/ultimategem/extreme_energy_crystal")
+    event.create('energized_extreme_energy_crystal')
+        .displayName("Energized Extreme Energy Crystal")
+        .texture("kubejs:item/ultimategem/energized_extreme_energy_crystal")
 
     // Complex SMDs
     const smds = [
