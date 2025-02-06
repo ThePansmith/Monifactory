@@ -41,6 +41,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
     event.create('eltz').parent(GTMaterialIconSet.SHINY)
     event.create('monium').parent(GTMaterialIconSet.SHINY)
+    event.create('mana').parent(GTMaterialIconSet.SHINY)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {

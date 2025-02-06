@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(10000)
 
     event.recipes.gtceu.omnic_forge("elementally_infused_omnic_matrix_heavy_plating")
-        .itemInputs('4x gtceu:omnium_plate', 'gtceu:dense_crystal_matrix_plate', 'gtceu:gravi_star', '4x gtceu:neutron_reflector', '16x kubejs:primal_mana')
+        .itemInputs('4x gtceu:omnium_plate', 'gtceu:dense_crystal_matrix_plate', 'gtceu:gravi_star', '4x gtceu:neutron_reflector', '16x gtceu:mana_dust')
         .itemOutputs('kubejs:elementally_infused_omnic_matrix_heavy_plating')
         .duration(100)
         .EUt(1000000)

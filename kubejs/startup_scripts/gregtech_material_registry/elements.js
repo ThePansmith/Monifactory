@@ -1,3 +1,4 @@
+// priority: 2
 /**
  * Registration of custom chemical elements
  */
@@ -12,6 +13,8 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .protons(149)
         .neutrons(264)
         .symbol('Cy*')
+    event.create('mana')
+        .symbol('?')
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -28,4 +31,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("cryococcus"))
         .color(0x088286).secondaryColor(0x022C34).iconSet('metallic')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_DENSE)
+
+    event.create("mana")
+        .dust()
+        .element(GTElements.get("mana"))
+        .iconSet('mana')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 })
