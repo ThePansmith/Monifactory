@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.autoclave('dilithium_helium')
         .itemInputs('4x gtceu:dilithium_dust')
         .inputFluids('gtceu:helium 1000')
-        .itemOutputs('4x kubejs:dilithium_crystal')
+        .itemOutputs('4x gtceu:dilithium_gem')
         .duration(400)
         .EUt(110)
 })

@@ -602,12 +602,14 @@ ServerEvents.recipes(event => {
             });
         });
     });
-    
+
     // Stonecut GTCEU warning blocks into each other
-    let hazardNames = ['acid', 'antimatter', 'bio', 'boss', 'causality', 'explosion', 'fire',
-                       'generic', 'gregification', 'high_pressure', 'high_temperature', 'high_voltage',
-                       'laser', 'magic', 'magnetic', 'mob_infestation', 'mob_spawner', 'noise',
-                       'radioactive', 'spatial_storage', 'turret', 'void'];
+    let hazardNames = [
+        'acid', 'antimatter', 'bio', 'boss', 'causality', 'explosion', 'fire',
+        'generic', 'gregification', 'high_pressure', 'high_temperature', 'high_voltage',
+        'laser', 'magic', 'magnetic', 'mob_infestation', 'mob_spawner', 'noise',
+        'radioactive', 'spatial_storage', 'turret', 'void'
+    ];
     for (let hazardName of hazardNames) {
         let hazard = `gtceu:${hazardName}_hazard_sign_block`
         event.stonecutting(hazard, "gtceu:solid_machine_casing")
@@ -917,6 +919,12 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrogen 1000')
         .duration(50)
         .EUt(120)
+
+    event.recipes.gtceu.atomic_reconstruction('dilithium_legacy_updater')
+        .itemInputs('kubejs:dilithium_crystal')
+        .itemOutputs('gtceu:dilithium_gem')
+        .duration(20)
+        .EUt(15)
 
     // Patchouli Books that needed tweaking
     event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"laserio:laseriobook"}'), ['minecraft:book', 'laserio:card_item']).id('laserio:my_book_recipe_shapeless')
