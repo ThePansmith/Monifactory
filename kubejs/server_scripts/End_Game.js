@@ -246,7 +246,7 @@ ServerEvents.recipes(event => {
             "gtceu:enori_empowered_gem",
             "enderio:ender_crystal",
             "enderio:vibrant_crystal",
-            "kubejs:dilithium_crystal",
+            "gtceu:dilithium_gem",
             "enderio:enticing_crystal",
             "enderio:weather_crystal",
             "enderio:prescient_crystal",

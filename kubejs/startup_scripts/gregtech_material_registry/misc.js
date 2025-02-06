@@ -4,6 +4,14 @@
  */
 
 // AE2 Materials
+
+GTCEuStartupEvents.registry('gtceu:element', event => {
+    event.create('dilithium')
+        .protons(119)
+        .neutrons(229)
+        .symbol('Dl')
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('charged_certus_quartz')
         .gem()
@@ -27,10 +35,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("dilithium")
         .dust()
+        .gem()
         .ore(2, 1)
-        .color(0xd1b5b4)
-        .iconSet(GTMaterialIconSet.CERTUS)
-        .components('2x lithium')
+        .element(GTElements.get("dilithium"))
+        .color(0xfdd2df).secondaryColor(0xfa52b5)
+        .iconSet('dilithium')
         .addOreByproducts('lithium', 'cobalt', 'platinum')
 
     event.create('calcium_perchlorate')

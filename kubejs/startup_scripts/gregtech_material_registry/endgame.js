@@ -41,6 +41,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
     event.create('eltz').parent(GTMaterialIconSet.SHINY)
     event.create('monium').parent(GTMaterialIconSet.SHINY)
+    event.create('dilithium').parent(GTMaterialIconSet.DULL)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -106,7 +107,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('eltic_actinate')
         .gem()
         .color(0xbb9966).secondaryColor(0x881105)
-        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+        .iconSet('dilithium')
         .components('4x eltz', '1x actinium', '3x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING)
 
