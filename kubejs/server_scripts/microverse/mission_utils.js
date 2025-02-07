@@ -100,7 +100,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
         .itemInputs(`kubejs:microminer_t${minerTier}`)
         .duration(Math.round(duration*20))
         .EUt(EUt)
-    
+
     if(isNaN(minerReturnChance) || minerReturnChance == undefined) {
         // By default, return the microminer that was passed into the input.
         builders[0].itemOutputs(`kubejs:microminer_t${minerTier}`)
