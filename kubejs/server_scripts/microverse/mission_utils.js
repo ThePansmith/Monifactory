@@ -5,7 +5,10 @@
  * and lower-tier projector missions more succinctly.
  */
 
-// Array to keep track of how many missions are available for each microminer tier
+/**
+ * Array to keep track of how many missions are available for each microminer tier.
+ * Used to generate circuit numbers for each mission.
+ */
 global.mission_counts = {
     "1": 0,
     "2": 0,
@@ -25,46 +28,94 @@ global.mission_counts = {
 }
 
 /**
+ * Default durations for missions of a given microminer tier.
+ * Compare with repairDurations of repair.js.
+ */
+const missionDurations = {
+    "1": 100,
+    "2": 120,
+    "2half": 60,
+    "3": 150,
+    "4": 180,
+    "4half": 180,
+    "5": 200,
+    "6": 220,
+    "7": 240,
+    "8": 280,
+    "8half": 240,
+    "9": 300,
+    "10": 300,
+    "11": 360,
+    "12": 420
+}
+
+/**
+ * Default EU/t costs for missions of a given microminer tier.
+ */
+const missionEUt = {
+    "1": GTValues.VA[GTValues.HV],
+    "2": GTValues.VHA[GTValues.EV],
+    "2half": GTValues.VA[GTValues.EV],
+    "3": GTValues.VA[GTValues.EV],
+    "4": GTValues.VHA[GTValues.IV],
+    "4half": GTValues.VA[GTValues.IV],
+    "5": GTValues.VA[GTValues.IV],
+    "6": GTValues.VHA[GTValues.LuV],
+    "7": GTValues.VA[GTValues.LuV],
+    "8": GTValues.VA[GTValues.ZPM],
+    "8half": GTValues.VA[GTValues.ZPM],
+    "9": GTValues.VA[GTValues.UV],
+    "10": GTValues.VA[GTValues.UHV],
+    "11": GTValues.VA[GTValues.UEV],
+    "12": GTValues.VA[GTValues.UIV]
+}
+
+/**
  * Registers a basic microverse mission and equivalent actualization chamber recipe
  * @param {Internal.RecipesEventJS} event Parameter used in consumer for ServerEvents.recipes().
- * @param {number} minerTier Miner tier index. Typically 1 through 12.
- * @param {number} duration Recipe duration in seconds
- * @param {number[]} voltageArray
- * @param {number} voltageTier Voltage tier. ULV is 0, LV is 1, and so on. Refer to the GTValues class.
- * @param {number} minerUseChance Consumption chance, in percent. [Integer 0-10000]
- * @param {number} nonConsumptionTier Voltage tier at and above which the miner is not consumed.
+ * @param {number|string} minerTier Miner tier index. Typically 1 through 12.
+ * @param {number} duration Recipe duration in seconds. Defaults based on the miner tier if left undefined.
+ * @param {number} EUt The EU per tick consumed by the recipe. Defaults based on the miner tier if left undefined.
+ * @param {number} minerReturnChance Chance a damaged miner is returned, in percent. [Integer 0-100]
  * @returns {Internal.GTRecipeSchema$GTRecipeJS[]} Microverse recipe builders. Use this to add item and fluid I/O.
  */
-function microverse_mission(event, minerTier, projectorTier, duration, voltageArray, voltageTier, minerUseChance, nonConsumptionTier) {
+function microverse_mission(event, minerTier, projectorTier, duration, EUt, minerReturnChance) {
     // Increase global mission counter
     global.mission_counts[minerTier]++;
 
-    // Calculations to help make definitions more readable
-    const GTBaseConsumptionChance = Math.round(minerUseChance*100);
-    const GTChanceDecreasePerTier = -Math.ceil(GTBaseConsumptionChance/(nonConsumptionTier-voltageTier));
+    // Convert miner return chance from percentage to GTM's hundredth-of-a-percent format
+    minerReturnChance = Math.floor(minerReturnChance*100)
+
+    // Use defaults if duration or EU/t not defined
+    if(duration == undefined) duration = missionDurations[minerTier]
+    if(EUt == undefined) EUt = missionEUt[minerTier]
 
     // We return an array of GT recipe builders for the caller to act upon with a .forEach
     // rather than a long parameter list, multiple overloads, or varargs
     const builders = [];
 
     // Register basic microverse mission
-    builders.push(
-        event.recipes.gtceu.microverse(`kubejs:mission_t${minerTier}_${global.mission_counts[minerTier]}`)
-            .addData("projector_tier", projectorTier)
-            .chancedInput(`kubejs:microminer_t${minerTier}`, GTBaseConsumptionChance, GTChanceDecreasePerTier)
-            .duration(Math.round(duration*20))
-            .EUt(voltageArray[voltageTier])
-    );
+    builders[0] = event.recipes.gtceu.microverse(`kubejs:mission_t${minerTier}_${global.mission_counts[minerTier]}`)
+        .addData("projector_tier", projectorTier)
+        .itemInputs(`kubejs:microminer_t${minerTier}`)
+        .duration(Math.round(duration*20))
+        .EUt(EUt)
+    
+    if(isNaN(minerReturnChance) || minerReturnChance == undefined) {
+        // By default, return the microminer that was passed into the input.
+        builders[0].itemOutputs(`kubejs:microminer_t${minerTier}`)
+    } else if(minerReturnChance > 0) {
+        // Only return the damaged miner if the chance to return it is positive and real
+        builders[0].chancedOutput(`kubejs:damaged_microminer_t${minerTier}`, minerReturnChance, minerReturnChance == 10000 ? 0 : 500)
+    }
 
     // Register actualization chamber counterparts in Hard Mode and Expert Mode except for T9+
-    if(isHardMode && minerTier < 9) {
-        builders.push(
-            event.recipes.gtceu.actualization_chamber(`kubejs:pristine_t${minerTier}_${global.mission_counts[minerTier]}`)
-                .itemInputs(`kubejs:pristine_matter_t${minerTier}`)
-                .circuit(global.mission_counts[minerTier])
-                .duration(800)
-                .EUt(GTValues.VA[GTValues.LuV])
-        );
+    if(isHardMode && minerTier < 9 || minerTier == "2half" || minerTier == "4half" || minerTier == "8half") {
+        builders[1] = event.recipes.gtceu.actualization_chamber(`kubejs:pristine_t${minerTier}_${global.mission_counts[minerTier]}`)
+            .itemInputs(`kubejs:pristine_matter_t${minerTier}`)
+            .circuit(global.mission_counts[minerTier])
+            .duration(800)
+            .EUt(GTValues.VA[GTValues.LuV])
     }
 
     return builders;

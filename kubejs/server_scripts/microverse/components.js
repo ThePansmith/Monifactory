@@ -1,5 +1,5 @@
 /**
- * Microminer components.
+ * Microminer components and kits.
  * Each of these are a custom KubeJS item or block used in the creation of Micro Miners.
  */
 ServerEvents.recipes(event => {
@@ -210,14 +210,68 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(8000)
 
-    // Gemstone Sensor - Optical Sensor has been replaced with a Quantum Eye, which is slightly cheaper.
+    // Gemstone Sensor - Optical Sensor has been replaced with a Lens, which is slightly cheaper.
     event.shaped('kubejs:gem_sensor', [
         ' A ',
         'WCW',
         ' W '
     ], {
-        A: 'gtceu:quantum_eye',
+        A: '#forge:lenses',
+        W: 'gtceu:stainless_steel_plate',
+        C: 'gtceu:hv_sensor'
+    })
+
+    event.shaped('4x kubejs:gem_sensor', [
+        ' A ',
+        'WCW',
+        ' W '
+    ], {
+        A: '#forge:lenses',
         W: 'gtceu:tungsten_carbide_plate',
         C: 'gtceu:iv_sensor'
     })
+
+    //Microminer kits are consumed in place of the miner.
+    event.recipes.gtceu.assembler('basic_drill_kit')
+        .itemOutputs('kubejs:basic_drill_kit')
+        .itemInputs('3x gtceu:double_steel_plate', 'gtceu:mv_electric_motor', '2x #gtceu:circuits/lv', '2x minecraft:glass')
+        .inputFluids('gtceu:glue 288')
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(300)
+    
+    event.recipes.gtceu.assembler('advanced_drill_kit')
+        .itemOutputs('kubejs:advanced_drill_kit')
+        .itemInputs('3x gtceu:double_vanadium_steel_plate', 'gtceu:hv_electric_motor', '2x #gtceu:circuits/mv', '2x #forge:plastic_plates', '2x gtceu:tempered_glass')
+        .inputFluids('gtceu:lubricant 100')
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(400)
+    
+    event.recipes.gtceu.assembler('advanced_drill_kit_ii')
+        .itemOutputs('kubejs:advanced_drill_kit_ii')
+        .itemInputs('3x gtceu:double_naquadah_alloy_plate', 'gtceu:iv_electric_motor', '2x #gtceu:circuits/hv', '2x gtceu:carbon_fiber_plate', '2x gtceu:laminated_glass')
+        .inputFluids('gtceu:lubricant 500')
+        .EUt(GTValues.VA[GTValues.LuV])
+        .duration(600)
+    
+    const explosives = [
+        [16, 'gtceu', 'powderbarrel'],
+        [8, 'minecraft', 'tnt'],
+        [4, 'gtceu', 'dynamite'],
+        [2, 'gtceu', 'industrial_tnt']
+    ]
+
+    explosives.forEach(explosive => {
+        event.recipes.gtceu.assembler(`blasting_kit_${explosive[2]}`)
+            .itemOutputs('kubejs:blasting_kit')
+            .itemInputs('3x gtceu:double_black_steel_plate', `${explosive[0]}x ${explosive[1]}:${explosive[2]}`, '3x #gtceu:circuits/lv', '2x #enderio:fused_quartz')
+            .inputFluids('gtceu:reinforced_epoxy_resin 576')
+            .EUt(GTValues.VA[GTValues.EV])
+            .duration(400)
+    })
+
+    event.recipes.gtceu.assembler('microversal_alchemy_kit')
+        .itemOutputs('kubejs:microversal_alchemy_kit')
+        .itemInputs('gtceu:mv_hermetic_casing', '1x gtceu:mv_fluid_regulator', '2x minecraft:brewing_stand', '6x minecraft:glass_bottle')
+        .EUt(GTValues.VA[GTValues.EV])
+        .duration(500)
 })

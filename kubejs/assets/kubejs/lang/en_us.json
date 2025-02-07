@@ -61,6 +61,8 @@
   "item.kubejs.stabilized_microminer.tooltip.2": "§7§oLasts indefinitely. Reusable. Totally not overpowered.",
   "item.kubejs.stabilized_microminer.tooltip.3": "§7§oIt looks oddly familiar.",
 
+  "item.kubejs.damaged_microminer.tooltip": "§7§oCan be repaired in an assembler.",
+
   "item.kubejs.pristine_matter_t1": "§dPristine Steel Microverse Matter [Tier One]",
   "item.kubejs.pristine_matter_t2": "§dPristine Titanium Microverse Matter [Tier Two]",
   "item.kubejs.pristine_matter_t3": "§dPristine Tungsten Microverse Matter [Tier Three]",
