@@ -79,12 +79,12 @@ To spice up your Monifactory experience, you can add any of the following mods t
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)
 2. [ComputerCraft: Tweaked](https://modrinth.com/mod/cc-tweaked)
     2a. [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
-4. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
-5. [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
-6. [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)
-7. [Project Red: Transmission](https://www.curseforge.com/minecraft/mc-mods/project-red-transmission)
-8. [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
-9. [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
+3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
+4. [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
+5. [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)
+6. [Project Red: Transmission](https://www.curseforge.com/minecraft/mc-mods/project-red-transmission)
+7. [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
+8. [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.
