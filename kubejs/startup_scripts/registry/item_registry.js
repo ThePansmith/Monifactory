@@ -5,16 +5,20 @@
 StartupEvents.registry('item', event => {
 
     // Regular Microminers
-    for (let index = 1; index <= 12; index++) {
-        event.create(`microminer_t${index}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${index}`)
+    for (let tier = 1; tier <= 12; tier++) {
+        event.create(`microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}`)
+        if(tier > 5) event.create(`damaged_microminer_t${tier}`).maxStackSize(16).textureJson({ layer0: `kubejs:item/microverse/microminer_t${tier}`, layer1: 'minecraft:block/destroy_stage_2' })
     }
 
 
     // HM/EM Microminers
     if (!isNormalMode) {
         event.create('microminer_t2half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half")
+        event.create('damaged_microminer_t2half').maxStackSize(16).textureJson({ layer0: 'kubejs:item/microverse/microminer_t2half', layer1: 'minecraft:block/destroy_stage_2' })
         event.create('microminer_t4half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
+        event.create('damaged_microminer_t4half').maxStackSize(16).textureJson({ layer0: 'kubejs:item/microverse/microminer_t4half', layer1: 'minecraft:block/destroy_stage_2' })
         event.create('microminer_t8half').maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
+        event.create('damaged_microminer_t8half').maxStackSize(16).textureJson({ layer0: 'kubejs:item/microverse/microminer_t8half', layer1: 'minecraft:block/destroy_stage_2' })
     }
 
 
@@ -47,20 +51,27 @@ StartupEvents.registry('item', event => {
         }
     }
 
-
     // Microminer Components
     event.create('basic_mining_laser').displayName("§eBasic Mining Laser")
     event.create('reinforced_mining_laser').displayName("§bReinforced Mining Laser")
     event.create('supercharged_laser_array').displayName("§eSupercharged Laser Array")
     event.create('basic_micro_miner_guidance_system').displayName("§eBasic Micro Miner Guidance System")
     event.create('advanced_micro_miner_guidance_system').displayName("§eAdvanced Micro Miner Guidance System")
-    event.create('gem_sensor').displayName("Gemstone Sensor")
     event.create('warp_engine').displayName("§dWarp Engine")
     event.create('hadal_warp_engine').displayName("§dHadal Warp Engine")
     event.create('universal_navigator').displayName("§dUniversal Navigator")
     event.create('extradimensional_navigator').displayName("§dExtradimensional Navigator")
+
+    // Quantum Flux
     event.create('quantum_flux').displayName("§dQuantum Flux")
 
+    // Miner kits
+    event.create('gem_sensor').displayName("Gemstone Sensor")
+    event.create('basic_drill_kit')
+    event.create('advanced_drill_kit')
+    event.create('advanced_drill_kit_ii').displayName("Advanced Drill Kit II")
+    event.create('blasting_kit')
+    event.create('microversal_alchemy_kit')
 
     // Heavy platings
     event.create('quantum_fluxed_eternium_heavy_plating')

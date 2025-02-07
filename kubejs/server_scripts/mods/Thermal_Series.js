@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
 
     // Unify Thermal with GT rubber
     event.smelting('gtceu:sticky_resin', 'thermal:tar')
-    event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['gtceu:rubber_plate'])
+    event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['#forge:rubber_plates'])
     // Unify Thermal dies
 
     event.shaped('thermal:press_packing_2x2_die', [
