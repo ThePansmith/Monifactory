@@ -10,17 +10,19 @@
  */
 ServerEvents.recipes(event => {
     // T1MM missions
-    microverse_mission(event, 1, 1, 60, undefined, 50).forEach(builder => {
+    microverse_mission(event, 1, 1, 60).forEach(builder => {
         builder
             .itemInputs('kubejs:ultra_dense_hydrogen')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:blasting_kit')
             .itemOutputs('kubejs:stellar_creation_data')
     })
 
-    microverse_mission(event, 1, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs('kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:diamond_drill_head')
             .itemInputs('kubejs:gem_sensor')
             .itemOutputs(
@@ -32,10 +34,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 1, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs('kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:invar_drill_head')
             .itemOutputs(
                 '64x minecraft:raw_iron',
@@ -48,10 +51,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 1, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs('kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:bronze_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_cassiterite',
@@ -62,10 +66,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 1, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs('kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:sterling_silver_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_silver',
@@ -76,10 +81,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 1, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs('kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:rose_gold_drill_head')
             .itemInputs('kubejs:gem_sensor')
             .itemOutputs(
@@ -93,10 +99,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 1, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs('kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:wrought_iron_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_uraninite',
@@ -106,10 +113,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 1, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs('kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:iron_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_salt',
@@ -120,10 +128,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 1, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs('2x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:steel_drill_head')
             .itemInputs('gtceu:power_thruster')
             .itemOutputs(
@@ -134,10 +143,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 1, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs('3x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:aluminium_drill_head')
             .itemInputs('gtceu:advanced_power_thruster')
             .itemOutputs(
@@ -151,17 +161,19 @@ ServerEvents.recipes(event => {
     })
 
     // T2MM missions
-    microverse_mission(event, 2, 1, 90, undefined, 50).forEach(builder => {
+    microverse_mission(event, 2, 1, 90).forEach(builder => {
         builder
             .itemInputs('4x kubejs:ultra_dense_hydrogen')
             .inputFluids('gtceu:rocket_fuel 3000')
+            .itemInputs('kubejs:blasting_kit')
             .itemOutputs('4x kubejs:stellar_creation_data')
     })
 
-    microverse_mission(event, 2, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 2, 1).forEach(builder => {
         builder
             .itemInputs('3x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 3000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:titanium_drill_head')
             .itemInputs('gtceu:advanced_power_thruster')
             .itemOutputs(
@@ -174,10 +186,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 2, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 2, 1).forEach(builder => {
         builder
             .itemInputs('2x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 3000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:bronze_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_pyrochlore',
@@ -189,10 +202,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 2, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 2, 1).forEach(builder => {
         builder
             .itemInputs('2x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 3000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:stainless_steel_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_tantalite',
@@ -202,25 +216,24 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 2, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 2, 1).forEach(builder => {
         builder
             .itemInputs('kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 3000')
-            .itemInputs(
-                '1x gtceu:hv_electric_pump',
-                '16x kubejs:cryotheum_dust'
-            )
+            .itemInputs('kubejs:microversal_alchemy_kit')
+            .itemInputs('16x kubejs:cryotheum_dust')
             .itemOutputs(
-                '64x kubejs:solidified_neon',
-                '64x kubejs:solidified_krypton',
-                '64x kubejs:solidified_xenon'
+                '16x kubejs:solidified_neon',
+                '16x kubejs:solidified_krypton',
+                '16x kubejs:solidified_xenon'
             )
     })
 
-    microverse_mission(event, 2, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 2, 1).forEach(builder => {
         builder
             .itemInputs('3x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 3000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:diamond_drill_head')
             .itemInputs('kubejs:gem_sensor', 'gtceu:power_thruster')
             .itemOutputs(
@@ -232,10 +245,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 2, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 2, 1).forEach(builder => {
         builder
             .itemInputs('2x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 3000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:red_steel_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_goethite',
@@ -248,10 +262,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 2, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 2, 1).forEach(builder => {
         builder
             .itemInputs('2x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 3000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:blue_steel_drill_head')
             .itemInputs('kubejs:gem_sensor')
             .itemOutputs(
@@ -265,10 +280,11 @@ ServerEvents.recipes(event => {
     })
 
     // T3MM missions
-    microverse_mission(event, 3, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .itemInputs('2x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:vanadium_steel_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_magnetite',
@@ -281,10 +297,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 3, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:cobalt_brass_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_tetrahedrite',
@@ -296,10 +313,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 3, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:diamond_drill_head')
             .itemInputs('kubejs:gem_sensor')
             .itemOutputs(
@@ -311,10 +329,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 3, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:aluminium_drill_head')
             .itemOutputs(
                 '64x minecraft:glowstone',
@@ -325,10 +344,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 3, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:ultimet_drill_head')
             .itemInputs('gtceu:advanced_power_thruster')
             .itemOutputs(
@@ -340,21 +360,22 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 3, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
-            .itemInputs('gtceu:tungsten_carbide_drill_head')
+            .itemInputs('kubejs:blasting_kit')
             .itemOutputs(
                 '64x kubejs:dense_magma_block',
                 '64x kubejs:dense_magma_block'
             )
     })
 
-    microverse_mission(event, 3, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .itemInputs('16x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:tungsten_steel_drill_head')
             .itemInputs('16x kubejs:wither_realm_data')
             .itemOutputs(
@@ -365,10 +386,11 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 3, 1, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .itemInputs('kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('kubejs:basic_drill_kit')
             .itemInputs('gtceu:iron_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_salt',

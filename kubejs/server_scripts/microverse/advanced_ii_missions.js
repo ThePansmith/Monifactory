@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     // T5MM mission
-    microverse_mission(event, 5, 3, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 5, 3).forEach(builder => {
         builder
             .itemInputs(
                 '16x kubejs:quantum_flux',
@@ -27,12 +27,12 @@ ServerEvents.recipes(event => {
             .itemOutputs('kubejs:lair_of_the_warden_data')
     })
 
-    microverse_mission(event, 7, 3, 240, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 7, 3, 240, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
                 '16x kubejs:quantum_flux',
                 '64x kubejs:dilithium_crystal',
-                'gtceu:tungsten_steel_drill_head',
+                'kubejs:blasting_kit',
                 '16x kubejs:deep_dark_data'
             )
             .itemOutputs(

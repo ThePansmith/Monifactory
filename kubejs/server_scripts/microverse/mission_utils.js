@@ -100,9 +100,12 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
         .itemInputs(`kubejs:microminer_t${minerTier}`)
         .duration(Math.round(duration*20))
         .EUt(EUt)
-
-    // Only return the miner if the chance to return it is positive
-    if(minerReturnChance > 0) {
+    
+    if(isNaN(minerReturnChance) || minerReturnChance == undefined) {
+        // By default, return the microminer that was passed into the input.
+        builders[0].itemOutputs(`kubejs:microminer_t${minerTier}`)
+    } else if(minerReturnChance > 0) {
+        // Only return the damaged miner if the chance to return it is positive and real
         builders[0].chancedOutput(`kubejs:damaged_microminer_t${minerTier}`, minerReturnChance, minerReturnChance == 10000 ? 0 : 500)
     }
 

@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
     // T4MM mission
-    microverse_mission(event, 4, 4, 160, undefined, 50).forEach(builder => {
+    microverse_mission(event, 4, 4, 160).forEach(builder => {
         builder
             .itemInputs(
                 '64x kubejs:ultra_dense_hydrogen',
@@ -11,7 +11,8 @@ ServerEvents.recipes(event => {
                 '64x kubejs:ultra_dense_hydrogen',
                 '64x kubejs:ultra_dense_hydrogen',
                 '1x gtceu:data_module',
-                '1x gtceu:uhv_sensor'
+                '1x gtceu:uhv_sensor',
+                'kubejs:blasting_kit'
             )
             .itemOutputs(
                 '64x kubejs:stellar_creation_data',

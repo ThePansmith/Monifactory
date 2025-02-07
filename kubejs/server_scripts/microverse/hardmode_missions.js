@@ -146,18 +146,20 @@ ServerEvents.recipes(event => {
                 .itemInputs(
                     '16x kubejs:quantum_flux',
                     '16x kubejs:stabilized_curium',
+                    'kubejs:microversal_alchemy_kit',
                     '8x gtceu:manyullyn_ingot',
-                    '4x gtceu:void_empowered_block'
+                    '4x gtceu:void_empowered_block',
                 )
                 .itemOutputs(
                     'minecraft:sculk_catalyst'
                 )
         })
 
-        microverse_mission(event, "8half", 3, undefined, undefined, 100).forEach(builder => {
+        microverse_mission(event, "8half", 3).forEach(builder => {
             builder
                 .itemInputs('16x kubejs:quantum_flux')
                 .itemInputs('64x kubejs:dilithium_crystal')
+                .itemInputs('kubejs:advanced_drill_kit_ii')
                 .itemInputs('gtceu:duranium_drill_head')
                 .itemInputs('4x gtceu:neutron_reflector',)
                 .itemInputs(
@@ -176,10 +178,11 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "8half", 3, undefined, undefined, 100).forEach(builder => {
+        microverse_mission(event, "8half", 3).forEach(builder => {
             builder
                 .itemInputs('16x kubejs:quantum_flux')
                 .itemInputs('64x kubejs:dilithium_crystal')
+                .itemInputs('kubejs:advanced_drill_kit_ii')
                 .itemInputs('gtceu:duranium_drill_head')
                 .itemInputs('4x kubejs:gem_sensor')
                 .itemInputs(
@@ -196,10 +199,11 @@ ServerEvents.recipes(event => {
                 )
         })
 
-        microverse_mission(event, "8half", 3, undefined, undefined, 100).forEach(builder => {
+        microverse_mission(event, "8half", 3).forEach(builder => {
             builder
                 .itemInputs('16x kubejs:quantum_flux')
                 .itemInputs('64x kubejs:dilithium_crystal')
+                .itemInputs('kubejs:advanced_drill_kit_ii')
                 .itemInputs('gtceu:duranium_drill_head')
                 .itemInputs('4x nuclearcraft:plate_du')
                 .itemInputs(
