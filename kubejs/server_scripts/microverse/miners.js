@@ -121,22 +121,24 @@ ServerEvents.recipes(event => {
 
     // T7 Microminer
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t7', [
-        ' L  D  L ',
-        ' DDDGDDD ',
-        'LDDDDDDDL',
-        'DDDDPDDDD',
-        'DDDAEADDD',
-        'DDDDPDDDD',
-        'D DDDDD D',
-        'D DDDDD D',
+        ' L G G L ',
+        ' D DDD D ',
+        'LDNDDDNDL',
+        'NDDFPFDDN',
+        'DNDAEADND',
+        'DNDNPNDND',
+        'DNNDFDNND',
+        'D NDDDN D',
         'D WW WW D'
     ], {
         L: 'kubejs:supercharged_laser_array',
         D: 'gtceu:double_cryolobus_plate',
+        N: 'gtceu:double_naquadah_plate',
         G: 'kubejs:advanced_micro_miner_guidance_system',
         P: 'kubejs:bathyal_energy_core',
         A: 'gtceu:luv_field_generator',
         E: 'kubejs:dischargement_core',
+        F: 'kubejs:enderium_micro_miner_core',
         W: 'kubejs:warp_engine'
     })
 
@@ -154,16 +156,15 @@ ServerEvents.recipes(event => {
     ], {
         G: 'kubejs:advanced_micro_miner_guidance_system',
         C: 'gtceu:double_crystal_matrix_plate',
-        W: 'gtceu:double_tungsten_carbide_plate',
+        W: 'gtceu:double_rhodium_plated_palladium_plate',
         L: 'kubejs:supercharged_laser_array',
-        I: 'gtceu:double_iridium_plate',
+        I: 'gtceu:double_duranium_plate',
         A: 'gtceu:hv_super_chest',
         B: 'gtceu:zpm_field_generator',
         D: 'kubejs:warp_core',
         M: 'kubejs:warp_controller',
         E: 'kubejs:warp_engine'
     })
-
     // T9 Microminer
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t9', [
         '    Q    ',
@@ -293,7 +294,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:basic_micro_miner_guidance_system',
             F: 'redstone_arsenal:flux_sword',
             l: 'gtceu:double_lumium_plate',
-            t: 'gtceu:double_tungsten_carbide_plate',
+            t: 'gtceu:double_hsse_plate',
             A: 'gtceu:hv_robot_arm',
             c: 'kubejs:signalum_micro_miner_core',
             f: 'gtceu:hv_field_generator',
