@@ -102,11 +102,11 @@ ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t6', [
         ' LG GL ',
         'LEE EEL',
-        'EEEEEEE',
-        ' EAFAE ',
-        'EBFCFBE',
-        ' EPPPE ',
-        ' ETTTE '
+        'EEAEAEE',
+        ' EFEFE ',
+        'EBECEBE',
+        'EEPPPEE',
+        '  TTT  '
     ], {
         L: 'kubejs:supercharged_laser_array',
         G: 'kubejs:advanced_micro_miner_guidance_system',
