@@ -7,8 +7,9 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 '16x kubejs:quantum_flux',
-                '4x gtceu:uhv_electric_pump',
                 '16x kubejs:stabilized_americium',
+                'kubejs:microversal_alchemy_kit',
+                '4x gtceu:uhv_electric_pump',
                 '8x kubejs:shattered_star_data'
             )
             .itemOutputs('32x kubejs:stabilized_oganesson')

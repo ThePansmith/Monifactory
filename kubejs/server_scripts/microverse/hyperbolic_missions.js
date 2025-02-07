@@ -71,6 +71,7 @@ ServerEvents.recipes(event => {
                 '64x kubejs:alien_scrap',
                 '64x kubejs:alien_scrap',
                 '64x kubejs:alien_scrap',
+                '64x kubejs:alien_scrap',
                 '64x kubejs:alien_scrap'
             )
     })
