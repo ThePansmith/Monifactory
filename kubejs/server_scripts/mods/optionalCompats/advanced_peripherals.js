@@ -1,11 +1,10 @@
+/**
+ * Compat for the computercraft addon Advanced Peripherals
+ */
+
 const modid = "advancedperipherals"
 
-if (Platform.isLoaded(modid)) {
-    if (!Platform.isLoaded("computercraft")) {
-        console.log("Advanced peripherals is installed, but computercraft is not! Not running compat scripts for advanced peripherals.")
-        return
-    }
-
+if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
     console.log("Advanced peripherals found, loading compat scripts...")
     ServerEvents.recipes(event => {
         const replaceRecipe = (output, shape, dictionary) => {
