@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 7, 3, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
-                '64x gtceu:dilihium_gem',
+                '64x gtceu:dilithium_gem',
                 '3x kubejs:gem_sensor',
                 '64x kubejs:deep_dark_data',
                 '64x kubejs:deep_dark_data',
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 '16x kubejs:quantum_flux',
-                '64x gtceu:dilihium_gem',
+                '64x gtceu:dilithium_gem',
                 'kubejs:blasting_kit',
                 '16x kubejs:deep_dark_data'
             )
@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 '16x kubejs:quantum_flux',
-                '64x gtceu:dilihium_gem',
+                '64x gtceu:dilithium_gem',
                 '4x minecraft:sculk_catalyst',
                 '24x kubejs:deep_dark_data'
             )
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 '32x kubejs:quantum_flux',
-                '64x gtceu:dilihium_gem',
+                '64x gtceu:dilithium_gem',
                 '8x minecraft:sculk_catalyst',
                 'kubejs:lair_of_the_warden_data'
             )
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 '32x kubejs:quantum_flux',
-                '64x gtceu:dilihium_gem',
+                '64x gtceu:dilithium_gem',
                 '32x kubejs:dragon_lair_data'
             )
             .itemOutputs(
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 '32x kubejs:quantum_flux',
-                '64x gtceu:dilihium_gem',
+                '64x gtceu:dilithium_gem',
                 '64x kubejs:wither_realm_data'
             )
             .itemOutputs(

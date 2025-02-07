@@ -27,8 +27,8 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 '64x kubejs:quantum_flux',
-                '64x gtceu:dilihium_gem',
-                '64x gtceu:dilihium_gem',
+                '64x gtceu:dilithium_gem',
+                '64x gtceu:dilithium_gem',
                 '1x kubejs:hadal_energy_core',
                 'kubejs:corrupted_universe_data',
                 'kubejs:lair_of_the_warden_data'
