@@ -294,7 +294,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:basic_micro_miner_guidance_system',
             F: 'redstone_arsenal:flux_sword',
             l: 'gtceu:double_lumium_plate',
-            t: 'gtceu:double_hssg_plate',
+            t: 'gtceu:double_hsse_plate',
             A: 'gtceu:hv_robot_arm',
             c: 'kubejs:signalum_micro_miner_core',
             f: 'gtceu:hv_field_generator',
