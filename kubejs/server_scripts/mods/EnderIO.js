@@ -266,7 +266,8 @@ ServerEvents.recipes(event => {
         ['#gtceu:circuits/ulv', 1],
         ['gtceu:capacitor', 2],
         ['gtceu:smd_capacitor', 3],
-        ['gtceu:advanced_smd_capacitor', 12]
+        ['gtceu:advanced_smd_capacitor', 3*4],
+        ['kubejs:complex_smd_capacitor', 3*4*4],
     ]
 
     capacitorCores.forEach(core => {
