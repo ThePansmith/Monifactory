@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
         microverse_mission(event, "8half", 3).forEach(builder => {
             builder
                 .itemInputs('16x kubejs:quantum_flux')
-                .itemInputs('64x kubejs:dilithium_crystal')
+                .itemInputs('64x gtceu:dilihium_gem')
                 .itemInputs('kubejs:advanced_drill_kit_ii')
                 .itemInputs('gtceu:duranium_drill_head')
                 .itemInputs('4x gtceu:neutron_reflector',)
@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
         microverse_mission(event, "8half", 3).forEach(builder => {
             builder
                 .itemInputs('16x kubejs:quantum_flux')
-                .itemInputs('64x kubejs:dilithium_crystal')
+                .itemInputs('64x gtceu:dilihium_gem')
                 .itemInputs('kubejs:advanced_drill_kit_ii')
                 .itemInputs('gtceu:duranium_drill_head')
                 .itemInputs('4x kubejs:gem_sensor')
@@ -202,7 +202,7 @@ ServerEvents.recipes(event => {
         microverse_mission(event, "8half", 3).forEach(builder => {
             builder
                 .itemInputs('16x kubejs:quantum_flux')
-                .itemInputs('64x kubejs:dilithium_crystal')
+                .itemInputs('64x gtceu:dilihium_gem')
                 .itemInputs('kubejs:advanced_drill_kit_ii')
                 .itemInputs('gtceu:duranium_drill_head')
                 .itemInputs('4x nuclearcraft:plate_du')

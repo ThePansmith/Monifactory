@@ -815,11 +815,7 @@
 				"5C4E189A3E401566"
 			]
 			dependency_requirement: "one_completed"
-			description: [
-				"{moni.quest.7976402E2E5FD625.description1}"
-				""
-				"{moni.quest.7976402E2E5FD625.description2}"
-			]
+			description: ["{moni.quest.7976402E2E5FD625.description1}"]
 			id: "7976402E2E5FD625"
 			tasks: [{
 				id: "04357A2098C6F6CC"
@@ -1020,7 +1016,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.3B57A9816A61C1DC.title}"
-			x: 6.25d
+			x: 9.25d
 			y: 5.0d
 		}
 		{

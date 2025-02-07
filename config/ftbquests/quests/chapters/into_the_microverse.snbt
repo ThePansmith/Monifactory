@@ -1097,6 +1097,35 @@
 			x: 3.5d
 			y: -8.5d
 		}
+		{
+			dependencies: ["281C7940CD437B69"]
+			description: [
+				"{moni.quest.7AEA6EF1408B003B.description1}"
+				""
+				"{moni.quest.7AEA6EF1408B003B.description2}"
+				""
+				"{moni.quest.7AEA6EF1408B003B.description3}"
+				""
+				"{moni.quest.7AEA6EF1408B003B.description4}"
+				""
+				"{moni.quest.7AEA6EF1408B003B.description5}"
+			]
+			icon: "ad_astra:glacio_globe"
+			id: "62C85A1F451C4855"
+			rewards: [{
+				id: "148F206D2B3F2EAF"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "One must imagine Frank Sinatra happy."
+			tasks: [{
+				id: "1A50E8C487F936C7"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.7AEA6EF1408B003B.title}"
+			x: 1.75d
+			y: -6.0d
+		}
 	]
 	title: "{moni.chapter.68F29871402A6B1B.title}"
 }
