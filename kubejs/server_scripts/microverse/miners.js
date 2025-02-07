@@ -121,23 +121,24 @@ ServerEvents.recipes(event => {
 
     // T7 Microminer
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t7', [
-        ' L  D  L ',
-        ' DDHGHDD ',
-        'LDDHHHDDL',
-        'DHDHPHDHD',
-        'DHDAEADHD',
-        'DDDHPHDDD',
-        'D DHHHD D',
-        'D DHDHD D',
+        ' L G G L ',
+        ' D DDD D ',
+        'LDNDDDNDL',
+        'NDDFPFDDN',
+        'DNDAEADND',
+        'DNDNPNDND',
+        'DNNDFDNND',
+        'D NDDDN D',
         'D WW WW D'
     ], {
         L: 'kubejs:supercharged_laser_array',
         D: 'gtceu:double_cryolobus_plate',
-        H: 'gtceu:double_hsss_plate',
+        N: 'gtceu:double_naquadah_plate',
         G: 'kubejs:advanced_micro_miner_guidance_system',
         P: 'kubejs:bathyal_energy_core',
         A: 'gtceu:luv_field_generator',
         E: 'kubejs:dischargement_core',
+        F: 'kubejs:enderium_micro_miner_core',
         W: 'kubejs:warp_engine'
     })
 
@@ -155,16 +156,15 @@ ServerEvents.recipes(event => {
     ], {
         G: 'kubejs:advanced_micro_miner_guidance_system',
         C: 'gtceu:double_crystal_matrix_plate',
-        W: 'gtceu:double_duranium_plate',
+        W: 'gtceu:double_rhodium_plated_palladium_plate',
         L: 'kubejs:supercharged_laser_array',
-        I: 'gtceu:double_iridium_plate',
+        I: 'gtceu:double_duranium_plate',
         A: 'gtceu:hv_super_chest',
         B: 'gtceu:zpm_field_generator',
         D: 'kubejs:warp_core',
         M: 'kubejs:warp_controller',
         E: 'kubejs:warp_engine'
     })
-
     // T9 Microminer
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t9', [
         '    Q    ',
