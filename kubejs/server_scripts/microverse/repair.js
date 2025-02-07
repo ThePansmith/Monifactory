@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
         .chancedInput('kubejs:advanced_micro_miner_guidance_system', 3000, -1500)
         .chancedInput('kubejs:enderium_micro_miner_core', 1800, -600)
 
-    repairing(7, ["cryolobus"])
+    repairing(7, ["cryolobus", "naquadah"])
         .EUt(GTValues.VA[GTValues.LuV])
         .chancedInput('kubejs:supercharged_laser_array', 4000, -1000)
         .chancedInput('kubejs:dark_soularium_thruster', 4000, -2000)
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
         .chancedInput('kubejs:enderium_micro_miner_core', 1800, -600)
         .chancedInput('kubejs:bathyal_energy_core', 1200, -400)
 
-    repairing(8, ["crystal_matrix", "tungsten_carbide", "iridium"])
+    repairing(8, ["crystal_matrix", "rhodium_plated_palladium", "duranium"])
         .EUt(GTValues.VA[GTValues.ZPM])
         .chancedInput('kubejs:supercharged_laser_array', 4500, -900)
         .chancedInput('kubejs:warp_engine', 5100, -1700)
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
             .chancedInput('kubejs:hardened_thruster', 2000, -1000)
             .chancedInput('kubejs:basic_micro_miner_guidance_system', 1500, -1500)
 
-        repairing("4half", ["lumium", "tungsten_carbide"])
+        repairing("4half", ["lumium", "hsse"])
             .EUt(GTValues.VHA[GTValues.IV])
             .chancedInput('redstone_arsenal:flux_sword', 2400, -600)
             .chancedInput('kubejs:energetic_thruster', 2000, -1000)
