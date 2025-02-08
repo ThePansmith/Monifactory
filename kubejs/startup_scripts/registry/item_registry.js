@@ -152,7 +152,7 @@ StartupEvents.registry('item', event => {
     event.create('heart_of_a_universe').displayName("§dHeart Of A Universe")
     event.create('exotic_materials_catalyst').displayName("Exotic Materials Catalyst")
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
-
+    event.create('monic_star_of_the_end').texture('kubejs:item/ultimate/core')
 
     // Infinity
     event.create('infinity_catalyst').rarity("epic")
@@ -161,7 +161,6 @@ StartupEvents.registry('item', event => {
     event.create('inert_serene_infinity_catalyst')
     event.create('serene_infinity_catalyst').rarity("epic")
     event.create('dormant_infinity_compound_ingot')
-
 
     // Monium
     event.create('field_stabilised_omnic_pulsar_compound')
@@ -174,7 +173,6 @@ StartupEvents.registry('item', event => {
 
 
     // Ultimate Tools
-    event.create('ultimate_core').texture('kubejs:item/ultimate/core')
     event.create('ultimate_file').texture('kubejs:item/ultimate/file')
         .rarity("epic").maxStackSize(1)
     event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer')

@@ -133,6 +133,21 @@ ServerEvents.recipes(event => {
             .EUt(491520)
         )
 
+    // Monic Star of the End
+
+    event.recipes.gtceu.assembly_line('monic_star_of_the_end')
+        .itemInputs('gtceu:monium_frame', '12x kubejs:the_ultimate_material', 'kubejs:quasi_stable_neutron_star', '4x gtceu:gravi_star', '4x kubejs:eternal_catalyst', '6x gtceu:dense_cryococcus_plate', '6x gtceu:dense_cryolobus_plate','6x gtceu:dense_manyullyn_plate', '6x gtceu:dense_obsidian_plate')
+        .inputFluids('gtceu:nether_star 11520', 'gtceu:omnium 5760', 'enderio:xp_juice 20000', 'gtceu:americium_plasma 5000')
+        .itemOutputs('kubejs:monic_star_of_the_end')
+        .duration(2400)
+        .EUt(GTValues.VHA[GTValues.MAX])
+
+        .stationResearch(b => b
+            .researchStack('kubejs:quasi_stable_neutron_star')
+            .CWUt(144, 576000)
+            .EUt(1048576)
+        )
+
     // Flux Plating
     event.shaped('4x redstone_arsenal:flux_plating', [
         ' P ',
