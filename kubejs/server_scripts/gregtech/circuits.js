@@ -288,7 +288,7 @@ ServerEvents.recipes(event => {
             '#gtceu:circuits/uv',
             'gtceu:zpm_field_generator',
             '1x kubejs:quasi_stable_neutron_star',
-            '2x kubejs:ultimate_gem'
+            '2x kubejs:hadal_energy_core'
         )
         .inputFluids('gtceu:omnium 576')
         .itemOutputs('32x kubejs:monic_circuit_board')

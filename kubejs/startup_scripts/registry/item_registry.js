@@ -146,7 +146,6 @@ StartupEvents.registry('item', event => {
     // Endgame Items
     event.create('diamond_lattice')
     event.create('neutron_emitter')
-    event.create('ultimate_gem').displayName("§dUltimate Gem").glow(true)
     event.create('mote_of_omnium').displayName("Mote of Omnium")
         .glow(true).rarity("epic")
     event.create('heart_of_a_universe').displayName("§dHeart Of A Universe")
@@ -166,24 +165,9 @@ StartupEvents.registry('item', event => {
     event.create('field_stabilised_omnic_pulsar_compound')
     event.create('quasi_stable_neutron_star').displayName('Quasi-Stable Neutron Star')
 
-
     // Singularities
     event.create('singularity_containment_unit')
     event.create('contained_singularity')
-
-
-    // Ultimate Tools
-    event.create('ultimate_file').texture('kubejs:item/ultimate/file')
-        .rarity("epic").maxStackSize(1)
-    event.create('ultimate_hammer').texture('kubejs:item/ultimate/hammer')
-        .rarity("epic").maxStackSize(1)
-    event.create('ultimate_screwdriver').texture('kubejs:item/ultimate/screwdriver')
-        .rarity("epic").maxStackSize(1)
-    event.create('ultimate_wrench').texture('kubejs:item/ultimate/wrench')
-        .rarity("epic").maxStackSize(1)
-    event.create('ultimate_wire_cutter').texture('kubejs:item/ultimate/wire_cutter')
-        .rarity("epic").maxStackSize(1)
-
 
     // Infinity Tools
     event.create('infinity_power_unit').rarity("epic").maxStackSize(1)
@@ -192,7 +176,6 @@ StartupEvents.registry('item', event => {
     event.create('infinity_screwdriver').rarity("epic").maxStackSize(1)
     event.create('infinity_wrench').rarity("epic").maxStackSize(1)
     event.create('infinity_wire_cutter').rarity("epic").maxStackSize(1)
-
 
     // Solidified Elements
     const solidified_elements = [

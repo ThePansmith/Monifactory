@@ -60,6 +60,12 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(134217728)
 
+    event.recipes.gtceu.omnic_forge('kubejs:monic_star_of_the_end')
+        .itemInputs('gtceu:monium_frame', '6x kubejs:contained_singularity', '12x kubejs:the_ultimate_material', 'kubejs:quasi_stable_neutron_star', '4x gtceu:gravi_star', '4x kubejs:eternal_catalyst')
+        .itemOutputs('kubejs:monic_star_of_the_end')
+        .duration(1200)
+        .EUt(134217728)
+
     // Buffed Catalyst Recycling
     event.recipes.gtceu.omnic_forge('kubejs:furious_infinity_catalyst_recycling')
         .itemInputs('kubejs:dormant_furious_infinity_catalyst', 'kubejs:heart_of_a_universe')

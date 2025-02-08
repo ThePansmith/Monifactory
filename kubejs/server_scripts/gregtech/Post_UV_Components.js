@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line('max_motor')
-        .itemInputs('4x gtceu:long_magnetic_terbium_rod', '12x gtceu:long_monium_rod', '12x gtceu:monium_ring', '24x gtceu:monium_round', '64x gtceu:fine_monium_wire', '64x gtceu:fine_monium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_activated_netherite_wire', '4x gtceu:monium_single_wire')
+        .itemInputs('4x gtceu:long_magnetic_terbium_rod', '12x gtceu:long_monium_rod', '12x gtceu:monium_ring', '24x gtceu:monium_round', '64x gtceu:fine_monium_wire', '64x gtceu:fine_monium_wire', '64x gtceu:fine_holmium_wire', '64x gtceu:fine_holmium_wire', '4x gtceu:monium_single_wire')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:lubricant 4000', 'gtceu:crystal_matrix 5760', 'gtceu:omnium 2304')
         .itemOutputs('kubejs:max_electric_motor')
         .duration(1800)

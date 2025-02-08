@@ -14,5 +14,4 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Berkelium.addFlags(GTMaterialFlags.GENERATE_FRAME)
     addFluid(GTMaterials.Oganesson, $FluidStorageKeys.GAS, 7777);
     GTMaterials.Oganesson.setMaterialARGB(0x443936)
-    addFluid(GTMaterials.Monium, $FluidStorageKeys.LIQUID, 9999);
 })
