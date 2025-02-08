@@ -16,6 +16,4 @@ ServerEvents.tags('item', event => {
 
     // Monicoin, mostly cosmetic
     event.add('moni:coins', ['kubejs:moni_penny', 'kubejs:moni_nickel', 'kubejs:moni_quarter', 'kubejs:moni_dollar'])
-
-    event.add('moni:polarizer', ['gtceu:lv_polarizer', 'gtceu:mv_polarizer'])
 })

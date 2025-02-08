@@ -741,6 +741,8 @@
 				"{moni.quest.63ADD9B48834AA39.description4}"
 				""
 				"{moni.quest.63ADD9B48834AA39.description5}"
+				""
+				"{moni.quest.63ADD9B48834AA39.description6}"
 			]
 			hide_until_deps_visible: true
 			icon: "snad:snad"
@@ -1717,6 +1719,8 @@
 				"{moni.quest.6A914B240E1A7BCB.description1}"
 				""
 				"{moni.quest.6A914B240E1A7BCB.description2}"
+				""
+				"{moni.quest.6A914B240E1A7BCB.description3}"
 			]
 			id: "6A914B240E1A7BCB"
 			rewards: [{
@@ -1735,7 +1739,11 @@
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
-			description: ["{moni.quest.73C1AB31431B5C11.description1}"]
+			description: [
+				"{moni.quest.73C1AB31431B5C11.description1}"
+				""
+				"{moni.quest.73C1AB31431B5C11.description2}"
+			]
 			id: "73C1AB31431B5C11"
 			rewards: [{
 				id: "461858A607CACCE1"
