@@ -1,20 +1,23 @@
+/**
+ * Custom recipes for the Thermal Series
+ */
 ServerEvents.recipes(event => {
     event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'thermal:dynamo_gourmand', 'systeams:boiler_pipe', 'thermal:rf_coil'] })
     event.remove({ output: ['thermal:dynamo_throttle_augment', 'thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
     event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame'] })
     event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer'] })
 
-    event.remove({ id: /thermal:[A-Za-z]+_dust_/ }) //I don't even know what recipes this line of code is supposed to target
+    event.remove({ id: /thermal:[A-Za-z]+_dust_/ }) // I don't even know what recipes this line of code is supposed to target
     event.remove({ id: /thermal:.*_cast/ })
     event.remove({ id: 'thermal:fire_charge/obsidian_glass_2' })
     event.remove({ id: 'thermal:fire_charge/signalum_glass_2' })
     event.remove({ id: 'thermal:fire_charge/lumium_glass_2' })
     event.remove({ id: 'thermal:fire_charge/enderium_glass_2' })
 
-    //Unify Thermal with GT rubber
+    // Unify Thermal with GT rubber
     event.smelting('gtceu:sticky_resin', 'thermal:tar')
-    event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['gtceu:rubber_plate'])
-    //Unify Thermal dies
+    event.replaceInput({ id: /thermal:*/ }, ['thermal:cured_rubber'], ['#forge:rubber_plates'])
+    // Unify Thermal dies
 
     event.shaped('thermal:press_packing_2x2_die', [
         ' A ',
@@ -71,7 +74,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
 
-    //Centrifuging Recipes for Arboreal Extractor products
+    // Centrifuging Recipes for Arboreal Extractor products
     event.recipes.gtceu.centrifuge('kubejs:latex_centrifuging')
         .inputFluids(Fluid.of('thermal:latex', 500))
         .itemOutputs('2x gtceu:raw_rubber_dust')
@@ -106,7 +109,7 @@ ServerEvents.recipes(event => {
         'gtceu:vanadium_steel_drill_head'
     ]).id('kubejs:drill_head');
 
-    //Coil Ingredients
+    // Coil Ingredients
     event.shaped('thermal:rf_coil', [
         ' BA',
         'BAB',
@@ -135,9 +138,8 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
 
-    /*=== AUGMENTS/UPGRADES ===*/
-    event.shaped(
-        Item.of('thermal:upgrade_augment_1', '{AugmentData:{BaseMod:1.5f,Type:"Upgrade"}}'), [
+    /* === AUGMENTS/UPGRADES ===*/
+    event.shaped(Item.of('thermal:upgrade_augment_1', '{AugmentData:{BaseMod:1.5f,Type:"Upgrade"}}'), [
         'ABA',
         'RGR',
         'ABA'
@@ -148,8 +150,7 @@ ServerEvents.recipes(event => {
         R: 'gtceu:fine_red_alloy_wire'
     })
 
-    event.shaped(
-        Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:2.5f,Type:"Upgrade"}}'), [
+    event.shaped(Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:2.5f,Type:"Upgrade"}}'), [
         'PGP',
         'BCB',
         'PGP'
@@ -160,8 +161,7 @@ ServerEvents.recipes(event => {
         C: 'thermal:upgrade_augment_1'
     })
 
-    event.shaped(
-        Item.of('thermal:upgrade_augment_4', '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
+    event.shaped(Item.of('thermal:upgrade_augment_4', '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
         'RSR',
         'SCS',
         'RSR'
@@ -171,8 +171,7 @@ ServerEvents.recipes(event => {
         C: 'thermal:upgrade_augment_2'
     })
 
-    event.shaped(
-        Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:10.0f,Type:"Upgrade"}}'), [
+    event.shaped(Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:10.0f,Type:"Upgrade"}}'), [
         'ABG',
         'BCB',
         'GBA'
@@ -257,8 +256,7 @@ ServerEvents.recipes(event => {
         E: '#forge:ingots/electrum',
         N: '#forge:springs/lead',
         C: 'kubejs:excitationcoil'
-    }
-    ).id('thermal:augments/dynamo_throttle_augment');
+    }).id('thermal:augments/dynamo_throttle_augment');
 
     event.shaped('thermal:machine_catalyst_augment', [
         ' A ',
@@ -284,7 +282,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: 'thermal:augments/item_filter_augment' }, '#forge:ingots/signalum', 'gtceu:item_filter')
     event.replaceInput({ id: 'thermal:augments/fluid_filter_augment' }, '#forge:ingots/signalum', 'gtceu:fluid_filter')
 
-    //Dynamos
+    // Dynamos
     event.shaped('kubejs:excitationcoil', [
         ' B ',
         'BAB',
@@ -322,8 +320,7 @@ ServerEvents.recipes(event => {
             C: 'ironfurnaces:iron_furnace',
             D: 'gtceu:wrought_iron_gear',
             E: 'systeams:boiler_pipe'
-        }
-        )
+        })
     }
 
     event.shaped('thermal:dynamo_magmatic', [
@@ -362,7 +359,7 @@ ServerEvents.recipes(event => {
         E: 'kubejs:redstone_transmission_coil'
     })
 
-    //Machines
+    // Machines
     event.shaped('thermal:machine_frame', [
         'SSS',
         'SMS',
@@ -384,8 +381,7 @@ ServerEvents.recipes(event => {
         C: 'thermal:machine_frame',
         D: '#forge:gears/copper',
         E: 'thermal:rf_coil'
-    }
-    ).id('kubejs:machine_press');
+    }).id('kubejs:machine_press');
 
     // energetic infuser
     event.remove({ id: 'thermal:charge_bench' });
@@ -401,7 +397,7 @@ ServerEvents.recipes(event => {
         E: 'thermal:rf_coil'
     }).id('kubejs:charge_bench')
 
-    //Phytogenic Insolator
+    // Phytogenic Insolator
     event.remove({ id: "thermal:machine_insolator" })
     event.shaped('thermal:machine_insolator', [
         " A ",
@@ -437,7 +433,7 @@ ServerEvents.recipes(event => {
         B: '#forge:rods/electrum',
         C: 'enderio:advanced_capacitor_bank'
     }).id('kubejs:energy_cell_frame')
-    
+
     event.remove('thermal:energy_cell');
     event.recipes.gtceu.canner('kubejs:energy_cell')
         .itemInputs('thermal:energy_cell_frame', '#forge:storage_blocks/redstone')
@@ -445,7 +441,7 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(30);
 
-    //Diamond as Fuel
+    // Diamond as Fuel
     event.recipes.thermal.numismatic_fuel('minecraft:diamond').energy(1200000)
     event.recipes.thermal.numismatic_fuel('gtceu:topaz_gem').energy(200000)
     event.recipes.thermal.numismatic_fuel('gtceu:malachite_gem').energy(200000)
@@ -458,7 +454,7 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.numismatic_fuel('redstone_arsenal:flux_gem').energy(1500000)
     event.recipes.thermal.numismatic_fuel('minecraft:lapis_lazuli').energy(80000)
 
-    //Thermal Essences
+    // Thermal Essences
     event.recipes.gtceu.chemical_reactor('elemental_reduction_fluid')
         .itemInputs('kubejs:pulsating_dust')
         .inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 1000))
@@ -466,7 +462,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(90)
 
-    //transformation
+    // transformation
     event.recipes.gtceu.chemical_reactor('elemental_reduction_bazalz')
         .itemInputs('gtceu:coal_dust')
         .inputFluids(Fluid.of('gtceu:elemental_reduction_fluid', 100))
@@ -521,8 +517,7 @@ ServerEvents.recipes(event => {
         A: 'thermal:basalz_powder',
         B: 'minecraft:redstone',
         C: 'gtceu:obsidian_dust'
-    }
-    ).noMirror().noShrink()
+    }).noMirror().noShrink()
 
     event.recipes.gtceu.mixer("mixer_petrotheum")
         .itemInputs("2x thermal:basalz_powder", "minecraft:redstone", "gtceu:obsidian_dust")
@@ -538,8 +533,7 @@ ServerEvents.recipes(event => {
         A: 'minecraft:blaze_powder',
         B: 'minecraft:redstone',
         C: 'gtceu:sulfur_dust'
-    }
-    ).noMirror().noShrink()
+    }).noMirror().noShrink()
 
     event.recipes.gtceu.mixer("mixer_pyrotheum")
         .itemInputs("2x minecraft:blaze_powder", "minecraft:redstone", "gtceu:sulfur_dust")
@@ -555,8 +549,7 @@ ServerEvents.recipes(event => {
         A: 'thermal:blitz_powder',
         B: 'minecraft:redstone',
         C: 'gtceu:saltpeter_dust'
-    }
-    ).noMirror().noShrink()
+    }).noMirror().noShrink()
 
     event.recipes.gtceu.mixer("mixer_aerotheum")
         .itemInputs("2x thermal:blitz_powder", "minecraft:redstone", "gtceu:saltpeter_dust")
@@ -572,8 +565,7 @@ ServerEvents.recipes(event => {
         A: 'thermal:blizz_powder',
         B: 'minecraft:redstone',
         C: 'minecraft:snowball'
-    }
-    ).noMirror().noShrink()
+    }).noMirror().noShrink()
 
     event.recipes.gtceu.mixer("mixer_cryotheum")
         .itemInputs("2x thermal:blizz_powder", "minecraft:redstone", "minecraft:snowball")
@@ -595,7 +587,7 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(75)
 
-    //Thermal Dusts
+    // Thermal Dusts
     event.recipes.gtceu.macerator('dust_blitz')
         .itemInputs('thermal:blitz_rod')
         .itemOutputs('4x thermal:blitz_powder')
@@ -685,7 +677,7 @@ ServerEvents.recipes(event => {
         V: 'gtceu:item_filter',
     })
 
-    /*=== THERMAL TOOLS ===*/
+    /* === THERMAL TOOLS ===*/
     event.remove({ id: 'thermal:tools/wrench' })
     event.shaped('thermal:wrench', [
         'A A',
@@ -754,7 +746,7 @@ ServerEvents.recipes(event => {
     // Workbench
     event.replaceInput({ id: 'thermal:tinker_bench' }, 'minecraft:crafting_table', 'gtceu:lv_machine_hull')
 
-    /*=== misc thermals ===*/
+    /* === misc thermals ===*/
     event.remove({ output: 'thermal:phytogro' });
     event.shapeless('16x thermal:phytogro', [
         '2x #forge:dusts/wood',

@@ -5,11 +5,11 @@
     "moni.chapter.0654B76C306712BE.title": "",
     "moni.chapter.118959024F296F70.title": "",
     "moni.chapter.1956832191841F25.title": "",
-    "moni.chapter.25FEB9E61EEC1A96.title": "",
-    "moni.chapter.2763DAD954E0EED8.title": "",
+    "moni.chapter.25FEB9E61EEC1A96.title": "Elemente und Legierungen",
+    "moni.chapter.2763DAD954E0EED8.title": "Die Fabrik",
     "moni.chapter.2BEB72BC6C6FB4E9.title": "",
     "moni.chapter.395B849AC6294153.title": "",
-    "moni.chapter.40F7695BE1E65C41.title": "",
+    "moni.chapter.40F7695BE1E65C41.title": "Kernspaltung und Kernfusion",
     "moni.chapter.58ABB361EA301019.title": "",
     "moni.chapter.68F29871402A6B1B.title": "",
     "moni.chapter.6D8C988EFB3F7437.title": "",
@@ -2591,7 +2591,6 @@
     "moni.quest.6B121BEFD852BC2D.description1": "",
     "moni.quest.6B121BEFD852BC2D.title": "",
     "moni.quest.6B4A50B6F9F835EF.description1": "",
-    "moni.quest.6B4A50B6F9F835EF.subtitle": "",
     "moni.quest.6B908DECFA46C8E0.description1": "",
     "moni.quest.6B908DECFA46C8E0.description2": "",
     "moni.quest.6B908DECFA46C8E0.title": "",
@@ -3267,5 +3266,6 @@
     "moni.task.7DC386F41AA01A9B": "",
     "moni.task.7EB3B2DC5E5A895E": "",
     "moni.task.7F61249273A9E0CB": "",
-    "moni.task.7FC04E0CB9796A66": ""
+    "moni.task.7FC04E0CB9796A66": "",
+    "moni.chapter.0102198269F850CD.title": "Stromerzeugung"
 }

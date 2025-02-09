@@ -247,7 +247,7 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .soundType('metal')
 
-        event.create('meowni_plush', 'cardinal')
+    event.create('meowni_plush', 'cardinal')
         .displayName("Meowni Plush")
         .soundType('wool')
         .renderType('cutout')

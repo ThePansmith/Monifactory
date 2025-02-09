@@ -11,11 +11,19 @@ on:
           - build-client
           - build-server
           - build-all
+      version:
+        description: "Version"
+        required: true
+        default: "Development Build"
+        type: string
   workflow_call:
     inputs:
       target:
         required: true
         default: "build-all"
+        type: string
+      version:
+        required: true
         type: string
     secrets:
       API_TOKEN:
@@ -31,13 +39,12 @@ jobs:
       cancel-in-progress: true
     steps:
       - uses: actions/checkout@v4
-      - name: Restore Node cache
-        uses: actions/cache@v4
+      - name: Setup node and npm
+        uses: actions/setup-node@v4
         with:
-          path: ~/.nvm
-          key: ${{ runner.os }}-node-18.19.1
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: 23
+          cache: 'npm'
+          cache-dependency-path: tools/build/package-lock.json
       - name: Restore mods cache
         uses: actions/cache@v4
         with:
@@ -55,10 +62,18 @@ jobs:
           key: ${{ runner.os }}-modlist-${{ hashFiles('manifest.json') }}
           restore-keys: |
             ${{ runner.os }}-modlist-
+      - name: Replace manifest version
+        run: 
+          sed -i s/\"version\":\ \"development\"/\"version\":\ \"${{ inputs.version }}\"/ manifest.json
+        shell: bash
       - name: Pack Modpack
         env:
           CFCORE_API_TOKEN: ${{ secrets.API_TOKEN }}
-        run: bash tools/build/build -c ${{ inputs.target }}
+        run: |
+          cd tools/build
+          npm install
+          node . ${{ inputs.target }}
+        shell: bash
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:

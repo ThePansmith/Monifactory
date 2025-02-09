@@ -1,6 +1,8 @@
-//! Hardcore mode platinum line
-//? Keep in sync with
-//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsPlatLine.java
+/**
+ ! Hardcore mode platinum line
+ ? Keep in sync with
+ ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsPlatLine.java
+ */
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     if (!isHardMode) {

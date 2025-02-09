@@ -1,6 +1,6 @@
-//priority: 1000
+// priority: 1000
 /**
- * Handles the interpretation of mode.json 
+ * Handles the interpretation of mode.json
  * to determine the global pack mode booleans: isNormalMode, isHardMode, and isExpertMode.
  * These are used in other scripts to define pack mode-specific behavior.
  */
@@ -32,8 +32,8 @@ let invalidConfig = function (configMode) {
 
 let packMode = config.mode;
 switch (packMode) {
-    case 'Normal': case 'Hard': case 'Expert': break;
-    default: invalidConfig(); packMode = config.mode;
+case 'Normal': case 'Hard': case 'Expert': break;
+default: invalidConfig(); packMode = config.mode;
 }
 
 

@@ -1,3 +1,7 @@
+/**
+ * Eltz processing line
+ */
+
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer('reactive_dust_mixture_mixer')
@@ -16,59 +20,48 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UIV])
 
     event.recipes.gtceu.sifter('inert_dust_mixture_sifting')
-        .itemInputs('2x kubejs:inert_dust_mixture')
-        .itemOutputs('1x kubejs:dusty_inert_powder', '1x kubejs:inert_clumps')
-        .chancedOutput('gtceu:monazite_gem', 3500, 1000)
-        .chancedOutput('kubejs:impure_ancient_debris_dust', 750, 300)
-        .chancedOutput('extendedcrafting:crystaltine_nugget', 450, 450)
-        .duration(320)
+        .itemInputs('4x kubejs:inert_dust_mixture')
+        .itemOutputs('1x kubejs:dusty_inert_powder', '2x kubejs:inert_clumps')
+        .chancedOutput('gtceu:monazite_gem', 7000, 2000)
+        .chancedOutput('kubejs:impure_ancient_debris_dust', 1500, 600)
+        .chancedOutput('extendedcrafting:crystaltine_nugget', 900, 900)
+        .duration(640)
         .EUt(GTValues.VA[GTValues.IV])
 
     // Shiny metal powder half
-    event.recipes.gtceu.thermal_centrifuge('inert_powder_centrifuging')
-        .itemInputs('4x kubejs:dusty_inert_powder')
-        .itemOutputs('3x kubejs:centrifuged_inert_powder')
-        .chancedOutput('kubejs:cryotheum_dust', 1000, 100)
-        .chancedOutput('kubejs:pyrotheum_dust', 1000, 100)
-        .duration(100)
-        .EUt(GTValues.VHA[GTValues.EV])
 
-    event.recipes.gtceu.large_chemical_reactor('centrifuged_inert_powder_reacting')
-        .itemInputs('1x kubejs:centrifuged_inert_powder', 'gtceu:omnic_acid_dust')
+    event.recipes.gtceu.large_chemical_reactor('inert_powder_reacting')
+        .itemInputs('1x kubejs:dusty_inert_powder', 'gtceu:omnic_acid_dust')
         .inputFluids('minecraft:water 1000', 'gtceu:enriched_naquadah 144')
         .itemOutputs('kubejs:shiny_powder_mixture')
-        .outputFluids('gtceu:diluted_hydrochloric_acid 900', 'gtceu:depleted_uranium_hexafluoride 100')
+        .chancedOutput('kubejs:cryotheum_dust', 1000, 100)
+        .chancedOutput('kubejs:pyrotheum_dust', 1000, 100)
+        .outputFluids('gtceu:depleted_uranium_hexafluoride 200')
         .duration(100)
         .EUt(GTValues.VHA[GTValues.ZPM])
 
     event.recipes.gtceu.centrifuge('shiny_powder_mixture_centrifuging')
-        .itemInputs('5x kubejs:shiny_powder_mixture')
-        .itemOutputs('kubejs:shiny_metal_powder', 'kubejs:centrifuged_inert_powder', 'gtceu:crystal_matrix_dust')
-        .chancedOutput('kubejs:aerotheum_dust', 1000, 100)
-        .chancedOutput('kubejs:petrotheum_dust', 1000, 100)
+        .itemInputs('4x kubejs:shiny_powder_mixture')
+        .itemOutputs('kubejs:shiny_metal_powder', 'gtceu:crystal_matrix_dust')
+        .chancedOutput('kubejs:aerotheum_dust', 4000, 400)
+        .chancedOutput('kubejs:petrotheum_dust', 4000, 400)
+        .chancedOutput('kubejs:inert_dust_mixture', 500, 150)
         .duration(500)
         .EUt(GTValues.VHA[GTValues.EV])
 
-    //Eltic actinate clump half
+    // Eltic actinate clump half
     event.recipes.gtceu.chemical_bath('inert_clump_bath')
-        .itemInputs('3x kubejs:inert_clumps')
-        .inputFluids('gtceu:distilled_water 2000')
-        .itemOutputs('2x kubejs:saturated_inert_clumps')
-        .outputFluids('minecraft:water 1500')
+        .itemInputs('4x kubejs:inert_clumps')
+        .inputFluids('gtceu:distilled_water 125')
+        .itemOutputs('kubejs:clean_inert_cluster')
+        .outputFluids('gtceu:saturated_water 125')
         .duration(5000)
         .EUt(GTValues.VHA[GTValues.HV])
 
-    event.recipes.gtceu.extractor('saturated_inert_clump_extracting')
-        .itemInputs('3x kubejs:saturated_inert_clumps')
-        .itemOutputs('kubejs:clean_inert_cluster')
-        .outputFluids('gtceu:saturated_water 100')
-        .duration(200)
-        .EUt(GTValues.VHA[GTValues.IV])
-
     event.recipes.gtceu.electromagnetic_separator('clean_cluster_separating')
         .itemInputs('kubejs:clean_inert_cluster')
-        .chancedOutput('kubejs:eltic_crystal_seed', 2700, 500)
-        .chancedOutput('kubejs:dusty_inert_powder', 500, 150)
+        .chancedOutput('kubejs:eltic_crystal_seed', 2500, 0)
+        .chancedOutput('kubejs:inert_dust_mixture', 500, 150)
         .duration(2500)
         .EUt(GTValues.VA[GTValues.LuV])
 
@@ -81,8 +74,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.electric_blast_furnace('eltz_ingot_blasting')
-        .itemInputs('gtceu:flawless_eltic_actinate_gem', '8x #forge:dusts/pulsating_alloy')
-        .itemOutputs('1x gtceu:eltz_ingot', '4x gtceu:actinium_iron_oxide_dust')
+        .itemInputs('gtceu:flawless_eltic_actinate_gem', '#forge:dusts/pulsating_alloy')
+        .itemOutputs('1x gtceu:eltz_ingot', '2x gtceu:actinium_iron_oxide_dust')
         .duration(1540)
         .blastFurnaceTemp(13600)
         .EUt(GTValues.VA[GTValues.UEV])

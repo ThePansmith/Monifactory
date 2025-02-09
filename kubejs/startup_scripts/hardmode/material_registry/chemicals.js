@@ -1,11 +1,11 @@
-//! Hardcore mode chemicals
+// ! Hardcore mode chemicals
 /**
  * Gregtech Chemical Materials Registry: Hardmode+
  * This file is for custom fluids (And some solids!)
  * used in custom chemlines specific to Hardmode like expert Titanium and Graphite.
  */
 
-//Custom Naquadah Fuel Iconset
+// Custom Naquadah Fuel Iconset
 GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     if (!isHardMode) {
         return;
@@ -106,7 +106,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x777777).iconSet('rough')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('graphene', 'oxygen')
-    
+
     // Kapton K
     event.create('durene')
         .dust()
@@ -144,7 +144,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0x915A23)
         .components('1x pyromellitic_dianhydride', '1x oxydianiline')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.STICKY)
 
     // Harder Fluorantimonic Acid
     event.create('antimony_pentafluoride')
@@ -158,7 +158,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xF7F7E7).iconSet('dull')
         .components('lead', 'silicon', '3x oxygen')
 
-    //Liquid Naquadah Fuels and their ingredients (HM+ Only)
+    // Liquid Naquadah Fuels and their ingredients (HM+ Only)
     event.create('naq_fuel_t1')
         .liquid()
         .color(0xB9E364)

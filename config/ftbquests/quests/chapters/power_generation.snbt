@@ -1,0 +1,1046 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "power_generation"
+	group: "0D5BFFD0A5E49312"
+	icon: "thermal:dynamo_numismatic"
+	id: "0102198269F850CD"
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:textures/gui/gtv_timeline.png"
+			rotation: 0.0d
+			width: 30.083333333333332d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/gui/rf_timeline.png"
+			rotation: 0.0d
+			width: 30.083333333333332d
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			height: 1.5d
+			hover: ["Energy Units are used to power GregTech machines."]
+			image: "kubejs:textures/gui/eu_letters.png"
+			rotation: 0.0d
+			width: 1.95d
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			height: 1.5d
+			hover: ["Forge Energy is easier to produce and transport."]
+			image: "kubejs:textures/gui/fe_letters.png"
+			rotation: 0.0d
+			width: 1.95d
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	order_index: 5
+	progression_mode: "flexible"
+	quest_links: [{
+		id: "1C4BA5C05BD7D1C3"
+		linked_quest: "19084E91F357C8C2"
+		x: 12.0d
+		y: 6.0d
+	}]
+	quests: [
+		{
+			description: [
+				"{moni.quest.0E75B671DAC85309.description1}"
+				""
+				"{moni.quest.0E75B671DAC85309.description2}"
+			]
+			id: "0E75B671DAC85309"
+			tasks: [{
+				id: "36B4AD08FD0B6C09"
+				item: "systeams:steam_dynamo"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1B04AA7D9AEB2CFA"
+				"15E34DEC491FAB81"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.15A5B4C632836306.description1}"
+				""
+				"{moni.quest.15A5B4C632836306.description2}"
+				""
+				"{moni.quest.15A5B4C632836306.description3}"
+				""
+				"{moni.quest.15A5B4C632836306.description4}"
+			]
+			icon: "gtceu:steam_large_turbine"
+			id: "15A5B4C632836306"
+			progression_mode: "flexible"
+			tasks: [
+				{
+					id: "227F0649FD458B2E"
+					item: "gtceu:steam_large_turbine"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "49363E4CC67FE532"
+					item: { Count: 24, id: "gtceu:steel_turbine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "42BBECB34497F4A4"
+					item: { Count: 2, id: "gtceu:steel_gearbox" }
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A30472430354F1E"]
+			description: [
+				"{moni.quest.34876F54406B6A04.description1}"
+				""
+				"{moni.quest.34876F54406B6A04.description2}"
+			]
+			id: "34876F54406B6A04"
+			progression_mode: "flexible"
+			tasks: [{
+				id: "1433B9815BA2C6F1"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6974AA409CC355E6"
+				"785C6332FC7A07A5"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.677D081CD7612FB0.description1}"
+				""
+				"{moni.quest.677D081CD7612FB0.description2}"
+				""
+				"{moni.quest.677D081CD7612FB0.description3}"
+				""
+				"{moni.quest.677D081CD7612FB0.description4}"
+				"{@pagebreak}"
+				"[\"\",{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0D0A0C18ED958511\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description5\"}]"
+				""
+				"{moni.quest.677D081CD7612FB0.description6}"
+			]
+			icon: "gtceu:large_combustion_engine"
+			id: "677D081CD7612FB0"
+			progression_mode: "flexible"
+			tasks: [
+				{
+					id: "6D31EAA378457E31"
+					item: "gtceu:large_combustion_engine"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "55E057B94D78E0B4"
+					item: { Count: 8, id: "gtceu:engine_intake_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4DD5A8C1BCC9D848"
+					item: { Count: 2, id: "gtceu:titanium_gearbox" }
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "1A63BEB000BBBEC7"
+					item: "gtceu:stable_machine_casing"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"677D081CD7612FB0"
+				"605062720747B482"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.0BFAE16A8B131E84.description1}"
+				""
+				"{moni.quest.0BFAE16A8B131E84.description2}"
+				""
+				"{moni.quest.0BFAE16A8B131E84.description3}"
+				"{@pagebreak}"
+				"[\"\",{\"translate\":\"moni.quest.0BFAE16A8B131E84.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.0BFAE16A8B131E84.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"053DDDCD2505E20B\"}},{\"translate\":\"moni.quest.0BFAE16A8B131E84.rich_description3\"}]"
+			]
+			icon: "gtceu:extreme_combustion_engine"
+			id: "0BFAE16A8B131E84"
+			progression_mode: "flexible"
+			tasks: [
+				{
+					id: "29401A9EB6B55637"
+					item: "gtceu:extreme_combustion_engine"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "34F1CEFB649E5CE3"
+					item: { Count: 8, id: "gtceu:extreme_engine_intake_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "02419C5F82366B67"
+					item: { Count: 2, id: "gtceu:tungstensteel_gearbox" }
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "50CADE7BF4DB9D98"
+					item: "gtceu:robust_machine_casing"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7E276DF48E9085A4"
+				"785C6332FC7A07A5"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.7D72B3FF808CE13C.description1}"
+				""
+				"{moni.quest.7D72B3FF808CE13C.description2}"
+				""
+				"{moni.quest.7D72B3FF808CE13C.description3}"
+			]
+			icon: "gtceu:gas_large_turbine"
+			id: "7D72B3FF808CE13C"
+			progression_mode: "flexible"
+			tasks: [
+				{
+					id: "5CF9C8B149D39265"
+					item: "gtceu:gas_large_turbine"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "4967F0BFCEDB782F"
+					item: "gtceu:stainless_steel_turbine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "018B4A4FCCF4C006"
+					item: "gtceu:stainless_steel_gearbox"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["745628397790ED7A"]
+			description: [
+				"[\"\",{\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"745628397790ED7A\"}},{\"translate\":\"moni.quest.2053CCD1FF775DD5.rich_description3\"}]"
+				""
+				"{moni.quest.2053CCD1FF775DD5.description2}"
+				""
+				"{moni.quest.2053CCD1FF775DD5.description3}"
+				""
+				"{moni.quest.2053CCD1FF775DD5.description4}"
+				"{@pagebreak}"
+				"{moni.quest.2053CCD1FF775DD5.description5}"
+				""
+				"{moni.quest.2053CCD1FF775DD5.description6}"
+			]
+			id: "2053CCD1FF775DD5"
+			tasks: [{
+				id: "08A006973D835270"
+				item: "nuclearcraft:fission_reactor_controller"
+				type: "item"
+			}]
+			title: "{moni.quest.2053CCD1FF775DD5.title}"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1F7F73BF81570F3C"]
+			description: [
+				"{moni.quest.68E87B959F6E9216.description1}"
+				""
+				"{moni.quest.68E87B959F6E9216.description2}"
+				""
+				"{moni.quest.68E87B959F6E9216.description3}"
+			]
+			id: "68E87B959F6E9216"
+			optional: true
+			tasks: [
+				{
+					id: "605439A2CADCAF97"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lp_steam_solid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hp_steam_solid_boiler"
+								}
+							]
+						}
+					}
+					title: "{moni.task.605439A2CADCAF97}"
+					type: "item"
+				}
+				{
+					id: "3841F8562D4A3EC1"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lp_steam_liquid_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hp_steam_liquid_boiler"
+								}
+							]
+						}
+					}
+					title: "{moni.task.3841F8562D4A3EC1}"
+					type: "item"
+				}
+				{
+					id: "5439FB3F1821906B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lp_steam_solar_boiler"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hp_steam_solar_boiler"
+								}
+							]
+						}
+					}
+					title: "{moni.task.5439FB3F1821906B}"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.68E87B959F6E9216.title}"
+			x: -12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0BFAE16A8B131E84"]
+			id: "4B8A69BC50C60891"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "2026CA71AB1F0711"
+				title: "{moni.task.2026CA71AB1F0711}"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1405D08C6A87B3BB"]
+			id: "6FBAD17162F9A0DD"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "0CD3D25A52ED3F2F"
+				title: "{moni.task.0CD3D25A52ED3F2F}"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6FDF37EE046349F7"]
+			hide_until_deps_visible: true
+			id: "315E1575528E0B30"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "6DD48E23EA3C1FDC"
+				title: "{moni.task.6DD48E23EA3C1FDC}"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0E75B671DAC85309"]
+			id: "22984820BE9A3068"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "1A05380382832D36"
+				title: "{moni.task.1A05380382832D36}"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["15A5B4C632836306"]
+			id: "26D82380B5107E13"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "1852A862553D4C79"
+				title: "{moni.task.1852A862553D4C79}"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7D72B3FF808CE13C"]
+			id: "26B573257E13389B"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "5B2F5A3BD09E835A"
+				title: "{moni.task.5B2F5A3BD09E835A}"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2053CCD1FF775DD5"]
+			id: "204D94E7B450EED1"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "15E9864541CF59D6"
+				title: "{moni.task.15E9864541CF59D6}"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["32E44FFD602C98DF"]
+			description: [
+				"{moni.quest.50E12E97AC174194.description1}"
+				""
+				"{moni.quest.50E12E97AC174194.description2}"
+				""
+				"{moni.quest.50E12E97AC174194.description3}"
+				""
+				"{moni.quest.50E12E97AC174194.description4}"
+			]
+			id: "50E12E97AC174194"
+			tasks: [{
+				id: "27315D998BCD502D"
+				item: "nuclearcraft:uranium_rtg"
+				type: "item"
+			}]
+			x: -10.25d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"07AFEBBC23C2B1E2"
+				"7D7B34CF5145F971"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{moni.quest.75B6A5541A4D6E49.description1}"]
+			id: "75B6A5541A4D6E49"
+			tasks: [{
+				id: "0FC3257A7BD2D967"
+				item: "nuclearcraft:plutonium_rtg"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"75B6A5541A4D6E49"
+				"79197A2CD8E435B2"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.186031BE152824C7.description1}"
+				""
+				"{moni.quest.186031BE152824C7.description2}"
+				""
+				"{moni.quest.186031BE152824C7.description3}"
+			]
+			id: "186031BE152824C7"
+			tasks: [{
+				id: "581262E6B1F090DC"
+				item: "nuclearcraft:californium_rtg"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"50E12E97AC174194"
+				"6728FB92FD3A2084"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.07AFEBBC23C2B1E2.description1}"
+				""
+				"{moni.quest.07AFEBBC23C2B1E2.description2}"
+			]
+			id: "07AFEBBC23C2B1E2"
+			tasks: [{
+				id: "327B3CE21176A7F0"
+				item: "nuclearcraft:americium_rtg"
+				type: "item"
+			}]
+			x: -8.25d
+			y: 4.0d
+		}
+		{
+			description: [
+				"{moni.quest.2B67C83223AFB5B0.description1}"
+				""
+				"{moni.quest.2B67C83223AFB5B0.description2}"
+				""
+				"{moni.quest.2B67C83223AFB5B0.description3}"
+				"{moni.quest.2B67C83223AFB5B0.description4}"
+				"{moni.quest.2B67C83223AFB5B0.description5}"
+				""
+				"{moni.quest.2B67C83223AFB5B0.description6}"
+				"{@pagebreak}"
+				"{moni.quest.2B67C83223AFB5B0.description7}"
+			]
+			id: "2B67C83223AFB5B0"
+			tasks: [{
+				id: "385C5098959C51DE"
+				item: "solarflux:sp_4"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2B67C83223AFB5B0"
+				"171EE3A4129F19A5"
+			]
+			description: [
+				"{moni.quest.68CA2F751276F219.description1}"
+				""
+				"{moni.quest.68CA2F751276F219.description2}"
+			]
+			id: "68CA2F751276F219"
+			tasks: [{
+				id: "7AB0DA759A4802B4"
+				item: "solarflux:sp_5"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"68CA2F751276F219"
+				"27A80F018F59EF1E"
+			]
+			description: [
+				"{moni.quest.33DEFDF888BEBE67.description1}"
+				""
+				"{moni.quest.33DEFDF888BEBE67.description2}"
+				""
+				"{moni.quest.33DEFDF888BEBE67.description3}"
+			]
+			id: "33DEFDF888BEBE67"
+			tasks: [{
+				id: "41FD2DCB90A2FDA6"
+				item: "solarflux:sp_6"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"33DEFDF888BEBE67"
+				"7DB174443D7FAFA0"
+			]
+			description: [
+				"{moni.quest.03EA9B7B09B88244.description1}"
+				""
+				"{moni.quest.03EA9B7B09B88244.description2}"
+				""
+				"{moni.quest.03EA9B7B09B88244.description3}"
+			]
+			id: "03EA9B7B09B88244"
+			tasks: [{
+				id: "01C9C1FEC5B3BCAF"
+				item: "solarflux:sp_7"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"03EA9B7B09B88244"
+				"6DAB13A7BDECE94E"
+			]
+			description: ["{moni.quest.0EAD0ACBDD153198.description1}"]
+			id: "0EAD0ACBDD153198"
+			tasks: [{
+				id: "6F5C8AA2908F4D32"
+				item: "solarflux:sp_8"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0EAD0ACBDD153198"
+				"713FAECEE5046121"
+			]
+			description: ["{moni.quest.79DAB629275B7806.description1}"]
+			id: "79DAB629275B7806"
+			tasks: [{
+				id: "325FA02A9A465EAD"
+				item: "solarflux:sp_custom_bathyal"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"79DAB629275B7806"
+				"6ABD83B58FADD4DF"
+			]
+			description: [
+				"{moni.quest.2E269D0B496C380C.description1}"
+				""
+				"{moni.quest.2E269D0B496C380C.description2}"
+				""
+				"{moni.quest.2E269D0B496C380C.description3}"
+			]
+			id: "2E269D0B496C380C"
+			tasks: [{
+				id: "3295B5A37BAD9478"
+				item: "solarflux:sp_custom_abyssal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2E269D0B496C380C"
+				"738A141D31AD7CE3"
+			]
+			description: [
+				"{moni.quest.0F048CED8D4C6A43.description1}"
+				""
+				"{moni.quest.0F048CED8D4C6A43.description2}"
+			]
+			id: "0F048CED8D4C6A43"
+			tasks: [{
+				id: "02A6D6D9B2C07CF2"
+				item: "solarflux:sp_custom_hadal"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2D10F2E538486624"
+				"76BAC72CC89F390E"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{moni.quest.1405D08C6A87B3BB.description1}"]
+			icon: "gtceu:plasma_large_turbine"
+			id: "1405D08C6A87B3BB"
+			rewards: [{
+				id: "265F8AF395C89377"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "5CA6A3EE3EF632F5"
+					item: "gtceu:plasma_large_turbine"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "6324614154FC58BF"
+					item: "gtceu:tungstensteel_turbine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3D5916D81DAB1BCC"
+					item: "gtceu:tungstensteel_gearbox"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.1405D08C6A87B3BB.title}"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1A30472430354F1E"]
+			description: ["{moni.quest.34F0E33D33EB82E2.description1}"]
+			id: "34F0E33D33EB82E2"
+			tasks: [{
+				id: "18C84802C176E92E"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1A30472430354F1E"]
+			description: [
+				"{moni.quest.685330660E88E827.description1}"
+				""
+				"{moni.quest.685330660E88E827.description2}"
+			]
+			id: "685330660E88E827"
+			tasks: [{
+				id: "57620380ADE48C1B"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"685330660E88E827"
+				"5C4E189A3E401566"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.63B27CA5BB60B740.description1}"
+				""
+				"[\"\",{\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0E20199737DFE4AC\"}},{\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1F2E76FA4B2C2E84\"}},{\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description5\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"04BDE09518C184E4\"}}]"
+			]
+			id: "63B27CA5BB60B740"
+			tasks: [{
+				id: "3F91A33584716219"
+				item: "gtceu:mv_combustion"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"63B27CA5BB60B740"
+				"15E34DEC491FAB81"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"[\"\",{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.6974AA409CC355E6.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7641AE777370BE1A\"}},{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description3\"}]"
+				""
+				"{moni.quest.6974AA409CC355E6.description2}"
+				""
+				"[\"\",{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description4\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.6974AA409CC355E6.rich_description5\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4C76017864258EA9\"}},{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description6\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.6974AA409CC355E6.rich_description7\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"74EDAE84246C7228\"}},{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description8\"}]"
+			]
+			id: "6974AA409CC355E6"
+			tasks: [{
+				id: "3C450EE0A20FD1D5"
+				item: "gtceu:hv_combustion"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7976402E2E5FD625"
+				"15E34DEC491FAB81"
+			]
+			dependency_requirement: "one_completed"
+			description: ["[\"\",{\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description2\"},{\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description3\"},{\"color\":\"gold\",\"underlined\":\"true\",\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"15A5B4C632836306\"}},{\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description5\"}]"]
+			id: "1B04AA7D9AEB2CFA"
+			tasks: [{
+				id: "149469B15ABAD598"
+				item: "gtceu:hv_steam_turbine"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"34876F54406B6A04"
+				"5C4E189A3E401566"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{moni.quest.7976402E2E5FD625.description1}"]
+			id: "7976402E2E5FD625"
+			tasks: [{
+				id: "04357A2098C6F6CC"
+				item: "gtceu:mv_steam_turbine"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"34F0E33D33EB82E2"
+				"5C4E189A3E401566"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{moni.quest.2BCE3E3E0B8180F7.description1}"]
+			id: "2BCE3E3E0B8180F7"
+			tasks: [{
+				id: "2D43432E922A6B74"
+				item: "gtceu:mv_gas_turbine"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2BCE3E3E0B8180F7"
+				"15E34DEC491FAB81"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"[\"\",{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description2\"},{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description3\"},{\"color\":\"blue\",\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description4\"},{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description5\"},{\"color\":\"gold\",\"underlined\":\"true\",\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D72B3FF808CE13C\"}},{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description7\"}]"
+				""
+				"{moni.quest.7E276DF48E9085A4.description2}"
+			]
+			id: "7E276DF48E9085A4"
+			tasks: [{
+				id: "23848009B2E2FE45"
+				item: "gtceu:hv_gas_turbine"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21E10888F52A3C73"]
+			id: "3DD98BBF240F54D0"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "5C7471C734001626"
+				title: "{moni.task.5C7471C734001626}"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A65459E4DFAAC2D"]
+			description: [
+				"{moni.quest.425D1C34A82B054D.description1}"
+				""
+				"{moni.quest.425D1C34A82B054D.description2}"
+			]
+			icon: "gtceu:naquadah_reactor"
+			id: "425D1C34A82B054D"
+			rewards: [{
+				id: "01C277FEA61EBA19"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7890B705137B8EA5"
+					item: "gtceu:naquadah_reactor"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4F11D4069AEF06CA"
+					item: "gtceu:trinium_coil_block"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2FF2B4C219053E6A"
+					item: "ae2:spatial_pylon"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "27B323E3ADED4829"
+					item: "gtceu:fusion_glass"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "2D40468415EA637F"
+					item: "gtceu:reaction_safe_mixing_casing"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.425D1C34A82B054D.title}"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"73C1AB31431B5C11"
+				"0006FEA1843FEA0A"
+				"57E7182198B2EA9A"
+			]
+			description: [
+				"{moni.quest.6FDF37EE046349F7.description1}"
+				""
+				"{moni.quest.6FDF37EE046349F7.description2}"
+				""
+				"{moni.quest.6FDF37EE046349F7.description3}"
+			]
+			hide_until_deps_visible: true
+			id: "6FDF37EE046349F7"
+			optional: true
+			rewards: [{
+				id: "00CF22695EBB0588"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "552C09235D8FE4F1"
+				item: "thermal:dynamo_numismatic"
+				type: "item"
+			}]
+			title: "{moni.quest.6FDF37EE046349F7.title}"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["13578427FD9CC2CE"]
+			description: [
+				"{moni.quest.19084E91F357C8C2.description1}"
+				""
+				"{moni.quest.19084E91F357C8C2.description2}"
+			]
+			id: "19084E91F357C8C2"
+			size: 1.0d
+			tasks: [{
+				id: "25F7D8080E9B62C1"
+				item: "kubejs:creative_energy_data"
+				type: "item"
+			}]
+			title: "{moni.quest.19084E91F357C8C2.title}"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0F048CED8D4C6A43"
+				"61301FBD825F8280"
+			]
+			description: [
+				"{moni.quest.22DC32C2B67EFD25.description1}"
+				""
+				"{moni.quest.22DC32C2B67EFD25.description2}"
+				""
+				"{moni.quest.22DC32C2B67EFD25.description3}"
+			]
+			id: "22DC32C2B67EFD25"
+			rewards: [{
+				id: "7B7E7F5CE4947127"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "{moni.quest.22DC32C2B67EFD25.subtitle}"
+			tasks: [{
+				count: 2L
+				id: "6F9246E97321EF11"
+				item: "solarflux:sp_custom_neutronium"
+				type: "item"
+			}]
+			title: "{moni.quest.22DC32C2B67EFD25.title}"
+			x: 4.25d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"4EA1E0D437528747"
+				"22DC32C2B67EFD25"
+			]
+			description: ["{moni.quest.3B57A9816A61C1DC.description1}"]
+			id: "3B57A9816A61C1DC"
+			size: 1.0d
+			subtitle: "{moni.quest.3B57A9816A61C1DC.subtitle}"
+			tasks: [{
+				id: "2EE60D5EE1564FCF"
+				item: "solarflux:sp_custom_infinity"
+				type: "item"
+			}]
+			title: "{moni.quest.3B57A9816A61C1DC.title}"
+			x: 9.25d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7C4E04E3EA603000"
+				"425D1C34A82B054D"
+			]
+			description: ["{moni.quest.21E10888F52A3C73.description1}"]
+			icon: "gtceu:large_naquadah_reactor"
+			id: "21E10888F52A3C73"
+			rewards: [{
+				id: "50D8FC0D09DC8FDC"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "51C99B20F637AA2C"
+				item: "gtceu:large_naquadah_reactor"
+				type: "item"
+			}]
+			title: "{moni.quest.21E10888F52A3C73.title}"
+			x: 8.0d
+			y: -1.0d
+		}
+	]
+	title: "{moni.chapter.0102198269F850CD.title}"
+}

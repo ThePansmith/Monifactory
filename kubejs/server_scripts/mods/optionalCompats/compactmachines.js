@@ -1,9 +1,9 @@
 /**
  * Optional compat script for Compact Machines
- * 
+ *
  * Modeled after Nomifactory CEu's script for the same.
  * Gated to HV, with more unlocked at IV.
- * 
+ *
  * Replaces or modifies the recipe for every item in the mod.
  */
 if (Platform.isLoaded('compactmachines')) {
@@ -50,7 +50,7 @@ if (Platform.isLoaded('compactmachines')) {
             { type: "item", hatch: "gtceu:hv_item_passthrough_hatch", nbt: '{definition:{id:"compactmachines:item"}}' },
             { type: "fluid", hatch: "gtceu:hv_fluid_passthrough_hatch", nbt: '{definition:{id:"compactmachines:fluid"}}' },
             { type: "energy", hatch: "gtceu:hv_diode", nbt: '{definition:{id:"compactmachines:energy"}}' },
-            //{type: "redstone", hatch: "enderio:redstone_conduit", nbt: '{definition:{id:"compactmachines:redstone"}}'}    // Redstone tunnel NYI :(
+            // {type: "redstone", hatch: "enderio:redstone_conduit", nbt: '{definition:{id:"compactmachines:redstone"}}'}    // Redstone tunnel NYI :(
         ]
 
         tunnelTypes.forEach(value => {

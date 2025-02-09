@@ -1,3 +1,6 @@
+/**
+ * Compat for the tempad mod
+ */
 if (Platform.isLoaded('tempad')) {
     console.log("Tempad found, loading compat scripts...")
     LootJS.modifiers((event) => {

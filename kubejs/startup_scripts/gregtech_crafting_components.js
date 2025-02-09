@@ -1,16 +1,15 @@
-
 /**
  * Unlike how screret showcases the functionality of this event in his discord messge:
  * https://discord.com/channels/914926812948234260/1229854271613436066/1279802878822711407
  * there is no "Map.of()" to create map objects out of varargs.
- * 
+ *
  * Worse still, I could not find an analog to that function.
  * Therefore we declare empty maps and then populate them afterwards.
  */
 
 GTCEuStartupEvents.craftingComponents(event => {
 
-    //Make LuV+ electrolyzer wires not osmium for funsies :)
+    // Make LuV+ electrolyzer wires not osmium for funsies :)
     let wireElectricMap = {};
     wireElectricMap[GTValues.LuV] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.VanadiumGallium);
     wireElectricMap[GTValues.ZPM] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.NaquadahAlloy);
@@ -20,7 +19,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     wireElectricMap[GTValues.UIV] = UnificationEntry(TagPrefix.wireGtSingle, GTMaterials.get('monium'));
     event.modify(CraftingComponent.WIRE_ELECTRIC, wireElectricMap)
 
-    //Omnium & Holmium for wires/cables
+    // Omnium & Holmium for wires/cables
     let wireCableComponentPrefixes = [
         [TagPrefix.wireGtQuadruple, TagPrefix.wireGtQuadruple, CraftingComponent.WIRE_QUAD],
         [TagPrefix.wireGtOctal, TagPrefix.wireGtOctal, CraftingComponent.WIRE_OCT],
@@ -29,7 +28,7 @@ GTCEuStartupEvents.craftingComponents(event => {
         [TagPrefix.cableGtDouble, TagPrefix.wireGtDouble, CraftingComponent.CABLE_DOUBLE],
         [TagPrefix.cableGtQuadruple, TagPrefix.wireGtQuadruple, CraftingComponent.CABLE_QUAD],
         [TagPrefix.cableGtOctal, TagPrefix.wireGtOctal, CraftingComponent.CABLE_OCT],
-        //[TagPrefix.cableGtHex, TagPrefix.wireGtHex, CraftingComponent.CABLE_HEX] // Seems borked? Causes crashes when uncommented
+        // [TagPrefix.cableGtHex, TagPrefix.wireGtHex, CraftingComponent.CABLE_HEX] // Seems borked? Causes crashes when uncommented
     ]
 
     wireCableComponentPrefixes.forEach(prefixComponentPair => {
@@ -40,13 +39,13 @@ GTCEuStartupEvents.craftingComponents(event => {
         event.modify(prefixComponentPair[2], wireMap)
     })
 
-    //Netherite, Holmium, and Monium for tier up wires/cables
-    //Currently useless because GT only autogenerates transformer recipes up to UV.
+    // Netherite, Holmium, and Monium for tier up wires/cables
+    // Currently useless because GT only autogenerates transformer recipes up to UV.
     let wireCableTierUpComponentPrefixes = [
         [TagPrefix.wireGtSingle, CraftingComponent.CABLE_TIER_UP],
         [TagPrefix.wireGtDouble, CraftingComponent.CABLE_TIER_UP_DOUBLE],
         [TagPrefix.wireGtQuadruple, CraftingComponent.CABLE_TIER_UP_QUAD],
-        //[TagPrefix.wireGtOctal, CraftingComponent.CABLE_TIER_UP_OCT], // Seems borked. Same here as above.
+        // [TagPrefix.wireGtOctal, CraftingComponent.CABLE_TIER_UP_OCT], // Seems borked. Same here as above.
         [TagPrefix.wireGtHex, CraftingComponent.CABLE_TIER_UP_HEX]
     ]
 

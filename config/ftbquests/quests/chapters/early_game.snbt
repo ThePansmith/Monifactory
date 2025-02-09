@@ -155,14 +155,6 @@
 			y: 25.0d
 		}
 		{
-			id: "2AA4038AED6CF93D"
-			linked_quest: "6FDF37EE046349F7"
-			shape: "hexagon"
-			size: 1.25d
-			x: 9.5d
-			y: 26.5d
-		}
-		{
 			id: "7FC84014DAAD0025"
 			linked_quest: "6D434F3B0E720A5A"
 			x: 17.5d
@@ -786,7 +778,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["517A89E954C7EA74"]
 			description: [
 				"{moni.quest.061904A6FEED5B66.description1}"
 				""
@@ -1087,7 +1078,7 @@
 				""
 				"{moni.quest.2823D7B4C8F900CA.description4}"
 			]
-			icon: "gtceu:stainless_steel_plate"
+			icon: "gtceu:stainless_steel_ingot"
 			id: "2823D7B4C8F900CA"
 			rewards: [
 				{

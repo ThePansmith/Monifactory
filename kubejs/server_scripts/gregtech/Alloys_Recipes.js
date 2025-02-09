@@ -1,4 +1,4 @@
-//alloys go brrr - ima go insane :)
+/** alloys go brrr - ima go insane :) */
 
 
 ServerEvents.recipes(event => {
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
 
 
 ServerEvents.recipes(event => {
-    //Different Steel Recipe
+    // Different Steel Recipe
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__black_steel" })
     event.remove({ id: "gtceu:mixer/black_steel" })
 
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
         .duration(140)
         .EUt(30)
 
-    //Replace default GTCEu glowstone separation recipe to match mixing recipe
+    // Replace default GTCEu glowstone separation recipe to match mixing recipe
     event.replaceOutput({ id: "gtceu:centrifuge/glowstone_separation" }, 'minecraft:redstone', 'gtceu:tricalcium_phosphate_dust')
     event.recipes.gtceu.mixer("kubejs:glowstone_dust")
         .itemInputs('gtceu:tricalcium_phosphate_dust', '#forge:dusts/gold')
@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(1920)
 
-    //Remove old rhodium plated palladium recipe
+    // Remove old rhodium plated palladium recipe
     event.remove({ id: "gtceu:mixer/rhodium_plated_palladium" })
     event.recipes.gtceu.mixer("kubejs:rhodium_plated_palladium_dust")
         .itemInputs('3x gtceu:palladium_dust', 'gtceu:rhodium_dust', '2x gtceu:lumium_dust')
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
 })
 
-//Add Primal Mana to Mana ingot recipe
+// Add Primal Mana to Mana ingot recipe
 ServerEvents.recipes(event => {
     event.findRecipes({ id: /^gtceu:electric_blast_furnace\/blast_mythril/ }).forEach(recipe => {
         const text = '[{"content":{"amount":250,"value":{"fluid":"kubejs:molten_primal_mana"}},"chance":10000,"maxChance":10000,"tierChanceBoost":0}]'
@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
     })
 })
 
-//Replace hot ingot EBF output with regular for Kanthal
+// Replace hot ingot EBF output with regular for Kanthal
 ServerEvents.recipes(event => {
     event.replaceOutput({ id: /^gtceu:electric_blast_furnace\/blast_kanthal/ }, 'gtceu:hot_kanthal_ingot', 'gtceu:kanthal_ingot')
 })
@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .blastFurnaceTemp(1200)
 
-    //Black steel recipes. Has both regular & advanced recipe, each with a noble gas version.
+    // Black steel recipes. Has both regular & advanced recipe, each with a noble gas version.
     event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel' })
     event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel_gas' })
     event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel')
@@ -248,7 +248,7 @@ ServerEvents.recipes(event => {
         .duration(260)
         .EUt(120)
 
-    //Dark Soularium recipe (Requires Tritium!)
+    // Dark Soularium recipe (Requires Tritium!)
     event.recipes.gtceu.electric_blast_furnace('kubejs:dark_soularium_ingot')
         .itemInputs('#forge:ingots/soularium', '#forge:ingots/dark_steel')
         .inputFluids(Fluid.of('gtceu:tritium', 1000))
@@ -321,4 +321,4 @@ ServerEvents.recipes(event => {
         .EUt(30720)
         .blastFurnaceTemp(6400)
 
-}) 
+})

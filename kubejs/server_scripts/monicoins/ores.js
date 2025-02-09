@@ -1,6 +1,10 @@
+/**
+ * Registration of Monicoin trades for ores
+ */
+
 ServerEvents.recipes(event => {
     if (isNormalMode) {
-        //moniPENNY RECIPES
+        // moniPENNY RECIPES
         event.shaped(Item.of('minecraft:clay_ball', 64), [
             'AAA',
             '  A',
@@ -177,7 +181,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_penny'
         }).noMirror().noShrink()
 
-        //moniNICKEL RECIPES
+        // moniNICKEL RECIPES
         event.shaped(Item.of('gtceu:rubber_sapling', 32), [
             'A A',
             'A  ',
@@ -562,7 +566,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_nickel'
         }).noMirror().noShrink()
 
-        /*event.shaped(
+        /* event.shaped(
 
           Item.of('gtceu:brown_limonite_ore', 32),
           [
@@ -606,7 +610,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_nickel'
         }).noMirror().noShrink()
 
-        //moniQUARTER RECIPES
+        // moniQUARTER RECIPES
         event.shaped(Item.of('gtceu:gold_ore', 32), [
             'A A',
             '   ',
@@ -638,7 +642,6 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:moni_nickel'
         }).noMirror().noShrink()
-
 
 
         event.shaped(Item.of('gtceu:ilmenite_ore', 32), [

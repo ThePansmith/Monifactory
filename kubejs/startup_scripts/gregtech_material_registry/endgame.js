@@ -3,8 +3,8 @@
  * Used for registering Gregtech Materials
  * that are related post-tank content.
  */
-//? Keep in sync with
-//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEndgame.java
+// ? Keep in sync with
+// ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsEndgame.java
 
 /*
 Note: Some GTCEuM recipes handlers calculate duration based on mass.
@@ -41,6 +41,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('infinity').parent(GTMaterialIconSet.SHINY)
     event.create('eltz').parent(GTMaterialIconSet.SHINY)
     event.create('monium').parent(GTMaterialIconSet.SHINY)
+    event.create('dilithium').parent(GTMaterialIconSet.DULL)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -74,7 +75,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('shiny')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
         .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
-
     event.create('activated_netherite')
         .ingot()
         .element(GTElements.get("activated_netherite"))
@@ -88,7 +88,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .color(0xffffff)
         .iconSet('sculk_alloy')
-        .flags(GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_WORKING)
+        .flags(GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_WORKING)
 
     event.create('infinity')
         .ingot()
@@ -102,19 +102,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get('eltz'))
         .color(0xffffff)
         .iconSet('eltz')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.PHOSPHORESCENT)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.PHOSPHORESCENT)
 
     event.create('eltic_actinate')
         .gem()
         .color(0xbb9966).secondaryColor(0x881105)
-        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
-        .components('1x eltz', '2x actinium', '6x oxygen')
+        .iconSet('dilithium')
+        .components('4x eltz', '1x actinium', '3x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING)
 
     event.create('actinium_iron_oxide')
         .dust()
-        .color(0xC3D1FF)    //Old actinium color for fun
-        .components('1x actinium', '2x iron', '3x oxygen')
+        .color(0xC3D1FF)    // Old actinium color for fun
+        .components('1x actinium', '4x iron', '3x oxygen')
 
     event.create('monium')
         .ingot()

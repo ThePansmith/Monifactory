@@ -1,3 +1,7 @@
+/**
+ * A tale of Dense ores and how you undensify them
+ */
+
 const ores = [
     "redstone_ore",
     'diamond_ore',
@@ -53,4 +57,3 @@ ServerEvents.tags('block', event => {
         event.add("forge:ores/dense", `forge:ores/dense/${ore}`, `kubejs:dense_${ore}`);
     })
 })
-

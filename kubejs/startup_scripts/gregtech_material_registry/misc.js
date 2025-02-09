@@ -1,7 +1,17 @@
-//? Misc modern materials we have to add
-//? Place non-nomifactory materials here
+/**
+ ? Misc modern materials we have to add
+ ? Place non-nomifactory materials here
+ */
 
 // AE2 Materials
+
+GTCEuStartupEvents.registry('gtceu:element', event => {
+    event.create('dilithium')
+        .protons(119)
+        .neutrons(229)
+        .symbol('Dl')
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('charged_certus_quartz')
         .gem()
@@ -25,10 +35,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("dilithium")
         .dust()
+        .gem()
         .ore(2, 1)
-        .color(0xd1b5b4)
-        .iconSet(GTMaterialIconSet.CERTUS)
-        .components('2x lithium')
+        .element(GTElements.get("dilithium"))
+        .color(0xfdd2df).secondaryColor(0xfa52b5)
+        .iconSet('dilithium')
         .addOreByproducts('lithium', 'cobalt', 'platinum')
 
     event.create('calcium_perchlorate')
@@ -156,18 +167,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xF5F5F5)
         .components('1x ammonia', '1x nitric_acid')
 
-        event.create('thorium_hydroxide')
+    event.create('thorium_hydroxide')
         .dust()
         .color(0x243e1c)
         .components('1x thorium', '4x oxygen', '4x hydrogen')
 
-        event.create('terbium_salt')
+    event.create('terbium_salt')
         .dust()
         .color(0x7f7367)
         .components('1x terbium', '3x chlorine')
         .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-        event.create('magnetic_terbium')
+    event.create('magnetic_terbium')
         .ingot()
         .components('1x terbium')
         .color(0x8C8F7A)
@@ -203,7 +214,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .components('10x carbon_monoxide', '5x chloroethane', '7x ammonium_formate', '9x dinitrogen_tetroxide', '2x neon', '1x tritium')
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 
-        event.create('trinaquadalloy')
+    event.create('trinaquadalloy')
         .fluid()
         .ingot()
         .color(0x281832)
@@ -227,4 +238,3 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('microversium').setFormula('Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D')
     GTMaterials.get('thorium_hydroxide').setFormula('Th(OH)4')
 })
-

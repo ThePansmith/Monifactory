@@ -153,7 +153,7 @@
 	electrum = false
 	caesium_137 = false
 	strontium = false
-	rhodochrosite = false
+	rhodochrosite = true
 	lead = false
 	boron_arsenide = false
 	neodymium = false

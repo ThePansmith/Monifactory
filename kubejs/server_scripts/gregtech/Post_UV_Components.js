@@ -1,3 +1,7 @@
+/**
+ * Recipes for post-UV GT components
+ */
+
 ServerEvents.recipes(event => {
     const converter = [
         ['uev', 'omnium', 'activated_netherite', '1966080'],
@@ -162,7 +166,7 @@ ServerEvents.recipes(event => {
             W: `gtceu:${value.wire}`,
             C: `gtceu:${value.tier}_machine_casing`
         }).id(`shaped/hull_${value.tier}`)
-    
+
         event.recipes.gtceu.assembler(`hull_${value.tier}`)
             .itemInputs(`gtceu:${value.tier}_machine_casing`, `2x gtceu:${value.wire}`, `2x gtceu:${value.plastic}_plate`)
             .itemOutputs(`gtceu:${value.tier}_machine_hull`)

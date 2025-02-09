@@ -49,11 +49,13 @@
     "block.ad_astra.raw_calorite_block": "Блок сырого красного сплава",
     "block.ad_astra.raw_desh_block": "Блок сырой бронзы",
     "block.ad_astra.raw_ostrum_block": "Блок сырого свинца",
-    "item.ad_astra.desh_engine": "Двигатель из карбида вольфрама",
-    "item.ad_astra.ostrum_engine": "Люмиевый двигатель",
+    "item.ad_astra.desh_engine": "Двигатель из сигналия",
+    "item.ad_astra.ostrum_engine": "Двигатель из HSS стали",
     "item.ad_astra.calorite_engine": "Двигатель из криолобуса",
-    "item.ad_astra.desh_tank": "Бак из карбида вольфрама",
-    "item.ad_astra.ostrum_tank": "Бак из люмия",
+    "item.ad_astra.desh_tank": "Бак из сигналия",
+    "item.ad_astra.ostrum_tank": "Бак из HSS стали",
     "item.ad_astra.calorite_tank": "Бак из криолобуса",
-    "info.ad_astra.oxygen_loader": "Использует Кислород из GregTech чтобы наполнить скафандры и газовые балоны."
+    "info.ad_astra.oxygen_loader": "Использует Кислород из GregTech чтобы наполнить скафандры и газовые балоны.",
+    "item.ad_astra.steel_engine": "Двигатель из чёрной стали",
+    "item.ad_astra.steel_tank": "Бак из чёрной стали"
 }

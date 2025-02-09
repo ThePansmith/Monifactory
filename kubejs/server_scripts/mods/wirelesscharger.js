@@ -1,11 +1,13 @@
+/**
+ * Custom recipes for the wirelesschargers mod
+ */
 ServerEvents.recipes(event => {
 
     event.remove({ id: 'wirelesschargers:basic_wireless_block_charger' })
     event.remove({ id: 'wirelesschargers:advanced_wireless_block_charger' })
 
     event.remove({ id: 'wirelesschargers:basic_wireless_player_charger' })
-    event.shaped(
-        Item.of('wirelesschargers:basic_wireless_player_charger'), [
+    event.shaped(Item.of('wirelesschargers:basic_wireless_player_charger'), [
         'SES',
         'CHC',
         'SSS'
@@ -17,8 +19,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: 'wirelesschargers:advanced_wireless_player_charger' })
-    event.shaped(
-        Item.of('wirelesschargers:advanced_wireless_player_charger'), [
+    event.shaped(Item.of('wirelesschargers:advanced_wireless_player_charger'), [
         'SES',
         'CHC',
         'SSS'

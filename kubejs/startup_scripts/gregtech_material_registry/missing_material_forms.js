@@ -20,7 +20,7 @@ let addFluid = (mat, key, temp) => {
 }
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    //Existing materials that get an item form
+    // Existing materials that get an item form
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 
     GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, 'highest', 1000000, 1000, -1, -1));
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
-    //Existing materials that get new material forms
+    // Existing materials that get new material forms
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
     GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
@@ -49,13 +49,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
 
-    //Gears for Thermal Expansion
+    // Gears for Thermal Expansion
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)
     GTMaterials.Copper.addFlags(GTMaterialFlags.GENERATE_GEAR)
     GTMaterials.Silver.addFlags(GTMaterialFlags.GENERATE_GEAR)
     GTMaterials.Lead.addFlags(GTMaterialFlags.GENERATE_GEAR)
 
-    //Radioactive materials that get liquid forms and/or a new color
+    // Radioactive materials that get liquid forms and/or a new color
     addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID, 1133);
     GTMaterials.Americium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.PLASMA, new GTFluidBuilder())
     addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID, 1259);

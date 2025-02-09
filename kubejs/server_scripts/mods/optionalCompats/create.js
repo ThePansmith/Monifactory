@@ -1,8 +1,11 @@
+/**
+ * Compat for the create mod
+ */
 if (Platform.isLoaded('create')) {
     console.log("Create found, loading compat scripts...")
     ServerEvents.recipes(event => {
 
-        // Removes any machines related to processing, the point of this compat is fun not functionality, 
+        // Removes any machines related to processing, the point of this compat is fun not functionality,
         event.remove({ output: 'create:millstone' })
         event.remove({ output: 'create:crushing_wheel' })
         event.remove({ output: 'create:mechanical_plough' })
@@ -16,16 +19,16 @@ if (Platform.isLoaded('create')) {
         event.remove({ output: 'create:encased_fan' })
 
         /* Removes recipes for machines that were not removed, deployers and mechanical crafters are fun!
-        Most recipe categories that are removed machines are hidden in 
+        Most recipe categories that are removed machines are hidden in
         kubejs/assets/emi/recipe/filters/hidecategories.json as opposed to removing the actual recipes */
         event.remove({ type: 'create:deploying' })
         event.remove({ type: 'create:milling' })
         event.remove({ type: 'create:crushing' })
         event.remove({ id: 'create:crafting/kinetics/millstone' })
-        //event.remove({id: 'create:mechanical_crafting/crushing_wheel'}) //mechanical roller uses this for now
+        // event.remove({id: 'create:mechanical_crafting/crushing_wheel'}) //mechanical roller uses this for now
         event.remove({ id: 'create:crafting/kinetics/mechanical_mixer' })
         event.remove({ id: 'create:crafting/kinetics/mechanical_press' })
-        //Remove the hand crank since it's easy to abuse contraptions using it
+        // Remove the hand crank since it's easy to abuse contraptions using it
         event.remove({ id: 'create:crafting/kinetics/hand_crank' })
 
         // w h a t ?
@@ -34,7 +37,7 @@ if (Platform.isLoaded('create')) {
         event.remove({ id: 'gtceu:shaped/hv_kinetic_mixer' })
         event.remove({ id: 'gtceu:shaped/ev_kinetic_mixer' })
 
-        //belts made with rubber
+        // belts made with rubber
         let kelpRecipes = [
             "create:crafting/kinetics/belt_connector",
             "create:crafting/logistics/andesite_funnel",
@@ -105,13 +108,6 @@ if (Platform.isLoaded('create')) {
             .duration(200)
             .EUt(7)
 
-        event.recipes.gtceu.mixer("kubejs:dough")
-            .itemInputs('gtceu:wheat_dust')
-            .inputFluids(Fluid.of('minecraft:water', 1000))
-            .itemOutputs('create:dough')
-            .duration(200)
-            .EUt(7)
-
         event.recipes.gtceu.extractor("kubejs:extract_bar_of_chocolate")
             .itemInputs('create:bar_of_chocolate')
             .outputFluids(Fluid.of('create:chocolate', 250))
@@ -167,7 +163,7 @@ if (Platform.isLoaded('create')) {
         let assembleCasing = function (input, casingName, logInput, casingModId) {
             logInput = (logInput) ? logInput : '#minecraft:logs'
             casingModId = (casingModId) ? casingModId : 'create'
-            //recipes can use unstripped logs since gt has no way to strip wood
+            // recipes can use unstripped logs since gt has no way to strip wood
             return event.recipes.gtceu.assembler(`kubejs:${casingName}`)
                 .itemInputs(input, logInput)
                 .itemOutputs(`${casingModId}:${casingName}`)
@@ -192,8 +188,7 @@ if (Platform.isLoaded('create')) {
                 H: "#forge:tools/hammers",
                 I: "minecraft:iron_nugget",
                 S: "#create:sleepers"
-            }
-            )
+            })
             event.recipes.gtceu.assembler('kubejs:createtracks')
                 .itemInputs('3x #create:sleepers', "2x minecraft:iron_nugget")
                 .itemOutputs('2x create:track')
@@ -239,14 +234,14 @@ if (Platform.isLoaded('create')) {
                 .duration(20)
                 .EUt(32)
         }
-        //remove unused recipe types
+        // remove unused recipe types
         event.remove({ type: 'create:pressing' })
         event.remove({ type: 'create:compacting' })
         event.remove({ type: 'create:milling' })
         event.remove({ type: 'create:crushing' })
         event.remove({ type: 'create:mixing' })
-        //Deploying recipes are fine
-        //Remove sawing recipes. Mechanical saws can still be used for stonecutting and in world tree cutting
+        // Deploying recipes are fine
+        // Remove sawing recipes. Mechanical saws can still be used for stonecutting and in world tree cutting
         event.remove({ type: 'create:cutting' })
     })
     console.log("Create compat scripts successfully loaded!")

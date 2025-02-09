@@ -1,0 +1,31 @@
+name: Check ESLint in a folder
+on:
+  workflow_call:
+    inputs:
+      folder:
+        required: true
+        description: Path to the folder to check
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  lint-folder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup node and npm
+        uses: actions/setup-node@v4
+        with:
+          node-version: 23
+          cache: 'npm'
+          cache-dependency-path: ${{ inputs.folder }}/package-lock.json
+      
+      - name: ESLint
+        id: eslint
+        run: |
+          cd ${{ github.workspace }}/${{ inputs.folder }}
+          npm install
+          npx eslint
+        shell: bash

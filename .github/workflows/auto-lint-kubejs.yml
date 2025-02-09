@@ -1,0 +1,11 @@
+name: Lint KubeJS
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: 'kubejs/**'
+
+jobs:
+  lint:
+    uses: ./.github/workflows/eslint.yml
+    with:
+      folder: 'kubejs'

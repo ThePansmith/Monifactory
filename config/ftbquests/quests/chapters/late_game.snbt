@@ -221,6 +221,12 @@
 			x: 11.0d
 			y: 17.0d
 		}
+		{
+			id: "03BAC1C5A779EFAE"
+			linked_quest: "425D1C34A82B054D"
+			x: 21.0d
+			y: 16.5d
+		}
 	]
 	quests: [
 		{
@@ -2453,65 +2459,28 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "74D85DC6D137784C"
-				item: "minecraft:tnt"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:tnt"
+							}
+							{
+								Count: 1b
+								id: "gtceu:industrial_tnt"
+							}
+						]
+					}
+				}
+				title: "{moni.task.74D85DC6D137784C}"
 				type: "item"
 			}]
+			title: "{moni.quest.25B0271106684DF7.title}"
 			x: 3.0d
 			y: 24.0d
-		}
-		{
-			dependencies: ["7A65459E4DFAAC2D"]
-			description: [
-				"{moni.quest.425D1C34A82B054D.description1}"
-				""
-				"{moni.quest.425D1C34A82B054D.description2}"
-			]
-			icon: "gtceu:naquadah_reactor"
-			id: "425D1C34A82B054D"
-			rewards: [{
-				id: "01C277FEA61EBA19"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "7890B705137B8EA5"
-					item: "gtceu:naquadah_reactor"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "435C35B1F49B7B2C"
-					item: "gtceu:trinium_coil_block"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "2FF2B4C219053E6A"
-					item: "ae2:spatial_pylon"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "27B323E3ADED4829"
-					item: "gtceu:fusion_glass"
-					type: "item"
-				}
-				{
-					count: 14L
-					id: "2D40468415EA637F"
-					item: "gtceu:reaction_safe_mixing_casing"
-					type: "item"
-				}
-				{
-					id: "1685A72D65A02E82"
-					item: "gtceu:zpm_energy_output_hatch_4a"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.425D1C34A82B054D.title}"
-			x: 20.5d
-			y: 15.25d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]

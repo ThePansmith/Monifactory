@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for stuff that generates infinite amount of something
+ */
 ServerEvents.recipes(event => {
     event.remove({ id: "watercollector:watercollector" })
     event.remove({ id: "thermal:device_water_gen" })
@@ -23,7 +26,7 @@ ServerEvents.recipes(event => {
             S: "enderio:fused_quartz",
             C: "#forge:ingots/copper"
         }).id('kubejs:device_water_gen');
-        
+
         event.shaped('thermal:device_rock_gen', [
             ' P ',
             'PNP',
@@ -61,7 +64,7 @@ ServerEvents.recipes(event => {
         }).id('kubejs:device_rock_gen');
     }
 
-    //Infinite Cobble/Water cells
+    // Infinite Cobble/Water cells
     event.replaceInput({ id: 'expatternprovider:water_cell' }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
     event.replaceInput({ id: 'expatternprovider:cobblestone_cell' }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
     event.replaceInput({ id: 'expatternprovider:water_cell' }, 'minecraft:diamond', 'gtceu:mythril_plate')

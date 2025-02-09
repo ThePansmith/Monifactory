@@ -1,6 +1,6 @@
 /**
  * Solar Flux mod script.
- * 
+ *
  * Adds recipes for:
  *  Solar Flux Solars
  *  Photovoltaic Cells
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         .EUt(2)
 
     // All the other panels follow a pattern until 7
-    var solarCrafting = [
+    let solarCrafting = [
         ['gtceu:tin_single_cable', 'minecraft:redstone_block', 'gtceu:cupronickel_plate', 'laserio:energy_overclocker_card_tier_2'],
         ['gtceu:electrical_steel_plate', 'gtceu:conductive_alloy_block', 'gtceu:electrical_steel_gear', 'laserio:energy_overclocker_card_tier_3'],
         ['gtceu:microversium_ingot', 'gtceu:end_steel_block', 'gtceu:microversium_ingot', 'laserio:energy_overclocker_card_tier_4'],
@@ -44,15 +44,11 @@ ServerEvents.recipes(event => {
     ]
 
     solarCrafting.forEach((ingredients, index) => {
-        //Account for the first recipe, which doesn't use a photovoltaic cell
-        var photovoltaic;
-        if (index == 0) {
-            photovoltaic = 'gtceu:tempered_glass'
-        } else {
-            photovoltaic = `solarflux:photovoltaic_cell_${index}`;
-        }
-        event.shaped(
-            `2x solarflux:sp_${index + 2}`, [
+        // Account for the first recipe, which doesn't use a photovoltaic cell
+        let photovoltaic = index == 0?
+            'gtceu:tempered_glass'
+            :`solarflux:photovoltaic_cell_${index}`
+        event.shaped(`2x solarflux:sp_${index + 2}`, [
             'SCS',
             'WBW',
             'PEP'
@@ -63,9 +59,8 @@ ServerEvents.recipes(event => {
             B: ingredients[1],
             P: ingredients[2],
             E: ingredients[3]
-        }
-        )
-        //Account for when the same ingredients are used twice
+        })
+        // Account for when the same ingredients are used twice
         let assemblerInputs;
         if (ingredients[0] == ingredients[2]) {
             assemblerInputs = [
@@ -107,7 +102,7 @@ ServerEvents.recipes(event => {
         .itemInputs('2x solarflux:sp_7', '3x solarflux:photovoltaic_cell_6', '2x gtceu:osmiridium_plate', 'laserio:energy_overclocker_card_tier_8')
         .inputFluids('gtceu:enderium 1296')
         .itemOutputs('2x solarflux:sp_8')
-    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('solarflux:sp_7').EUt(480).duration(1200))
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('solarflux:sp_7').EUt(480).duration(1200))
         .duration(4800)
         .EUt(30720)
 
@@ -139,7 +134,7 @@ ServerEvents.recipes(event => {
     })
 
     // Photovoltaic Cells T2-6
-    var cellCrafting = [
+    let cellCrafting = [
         [2, 'enderio:photovoltaic_plate', 'gtceu:battery_alloy_plate'],
         [3, 'minecraft:ender_pearl', 'gtceu:annealed_copper_plate'],
         [4, 'gtceu:light_blue_glass_lens', 'gtceu:vibrant_alloy_plate'],
@@ -156,8 +151,7 @@ ServerEvents.recipes(event => {
             T: cell[1],
             P: `solarflux:photovoltaic_cell_${cell[0] - 1}`,
             B: cell[2]
-        }
-        )
+        })
     })
 
 
@@ -224,20 +218,20 @@ ServerEvents.recipes(event => {
             solarFluxPanel = `solarflux:sp_${index + 4}`;
         } else {
             switch (index) {
-                case 5:
-                    solarFluxPanel = 'solarflux:sp_custom_bathyal'
-                    break;
-                case 6:
-                    solarFluxPanel = 'solarflux:sp_custom_abyssal'
-                    break;
-                case 7:
-                    solarFluxPanel = 'solarflux:sp_custom_hadal'
-                    break;
-                case 8:
-                    solarFluxPanel = 'solarflux:sp_custom_neutronium'
-                    break;
-                default:
-                    break;
+            case 5:
+                solarFluxPanel = 'solarflux:sp_custom_bathyal'
+                break;
+            case 6:
+                solarFluxPanel = 'solarflux:sp_custom_abyssal'
+                break;
+            case 7:
+                solarFluxPanel = 'solarflux:sp_custom_hadal'
+                break;
+            case 8:
+                solarFluxPanel = 'solarflux:sp_custom_neutronium'
+                break;
+            default:
+                break;
             }
         }
         event.recipes.gtceu.atomic_reconstruction(`gtceu:solar_panel_${tiername}_conversion`)

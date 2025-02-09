@@ -1,3 +1,7 @@
+/**
+ * Defines ore generation on Ad Astra planets.
+ */
+
 const BlockTags = Java.loadClass("net.minecraft.tags.BlockTags")
 
 GTCEuStartupEvents.registry('gtceu:world_gen_layer', event => {

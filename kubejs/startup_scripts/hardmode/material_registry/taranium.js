@@ -1,6 +1,8 @@
-//! Hardcore Mode mode taranium line
-//? Keep in sync with
-//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsTaraniumLine.java
+/**
+ ! Hardcore Mode mode taranium line
+ ? Keep in sync with
+ ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsTaraniumLine.java
+ */
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     if (!isHardMode) {

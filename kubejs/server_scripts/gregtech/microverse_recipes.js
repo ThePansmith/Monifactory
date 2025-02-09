@@ -1,4 +1,4 @@
-// Small Microverse Projector Recipes
+/** Small Microverse Projector Recipes */
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.basic_microverse('kubejs:t_one_first')
@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
 // Advanced Microverse Projector Recipes
 ServerEvents.recipes(event => {
 
-    //Post-Tank
+    // Post-Tank
     event.recipes.gtceu.advanced_microverse('kubejs:t_three_third')
         .itemInputs('kubejs:microminer_t3', '16x kubejs:quantum_flux', '32x kubejs:wither_realm_data')
         .itemOutputs(
@@ -327,8 +327,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_seven_first')
         .itemInputs(
             'kubejs:microminer_t7',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
             'kubejs:gem_sensor',
             '64x kubejs:deep_dark_data',
             '64x kubejs:deep_dark_data',
@@ -343,8 +343,8 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t7',
             '32x kubejs:quantum_flux',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
             '32x kubejs:deep_dark_data'
         )
         .itemOutputs(
@@ -372,10 +372,10 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t8',
             '64x kubejs:quantum_flux',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
             'kubejs:lair_of_the_warden_data'
         )
         .itemOutputs(
@@ -396,10 +396,10 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t8',
             '64x kubejs:quantum_flux',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
             '64x kubejs:dragon_lair_data'
         )
         .itemOutputs(
@@ -427,10 +427,10 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t8',
             '64x kubejs:quantum_flux',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
             '64x kubejs:wither_realm_data',
             '64x kubejs:wither_realm_data'
         )
@@ -480,7 +480,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('32x kubejs:quasi_stable_neutron_star')
         .duration(900)
         .EUt(194387)
-
 
 
     event.recipes.gtceu.advanced_microverse_ii('kubejs:t_ten_first')
@@ -533,10 +532,10 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'kubejs:microminer_t8',
             '64x kubejs:quantum_flux',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
-            '64x kubejs:dilithium_crystal',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
+            '64x gtceu:dilithium_gem',
             '64x minecraft:sculk_catalyst',
             'kubejs:corrupted_universe_data',
             'kubejs:lair_of_the_warden_data')
@@ -663,15 +662,14 @@ ServerEvents.recipes(event => {
         .circuit(6)
         .EUt(16)
 
-    var projector = [
+    let projector = [
         ['basic_microverse_projector', '#gtceu:circuits/hv'],
         ['advanced_microverse_projector', '#gtceu:circuits/ev'],
         ['advanced_microverse_projector_ii', '#gtceu:circuits/iv']
     ]
 
     projector.forEach(projector => {
-        event.shaped(
-            `gtceu:${projector[0]}`, [
+        event.shaped(`gtceu:${projector[0]}`, [
             'CMC',
             'MAM',
             'CMC'
