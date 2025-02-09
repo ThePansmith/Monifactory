@@ -17,45 +17,48 @@
 		{
 			id: "7584F9D503A3180E"
 			linked_quest: "4542BF5E00FCBEA1"
-			x: 8.5d
-			y: -5.5d
+			x: 5.0d
+			y: 3.75d
 		}
 		{
 			id: "7AEC3CB9FDF51CB6"
 			linked_quest: "28854E7AC91786E9"
-			x: 8.5d
-			y: -7.0d
+			x: 5.0d
+			y: 10.0d
 		}
 		{
 			id: "12C41B95C25D306A"
 			linked_quest: "126ED4A0AEA05DCD"
-			x: 8.5d
-			y: 0.5d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
 			id: "252271853F4352D1"
 			linked_quest: "1F976B197DEFF654"
-			x: 4.5d
-			y: 3.5d
+			x: 7.0d
+			y: 5.0d
 		}
 		{
 			id: "21BA9CD00A0158CC"
 			linked_quest: "503CA19637471E6E"
-			x: 4.5d
-			y: 6.25d
+			x: 7.0d
+			y: 6.5d
 		}
 		{
 			id: "6EFDF0495132F8EC"
 			linked_quest: "715BC5C7DAC53B7B"
 			shape: "hexagon"
-			size: 1.5d
-			x: 6.5d
-			y: -5.5d
+			size: 2.0d
+			x: 5.0d
+			y: -6.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["2D31856F6EF1ED69"]
+			dependencies: [
+				"2D31856F6EF1ED69"
+				"604CCBE824D03A74"
+			]
 			description: [
 				"{moni.quest.62BBD1F6767A4D90.description1}"
 				""
@@ -78,7 +81,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{moni.quest.62BBD1F6767A4D90.subtitle}"
 			tasks: [
 				{
@@ -179,8 +182,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1FF652D16CE97C79.title}"
-			x: 0.0d
-			y: 5.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -225,11 +228,14 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.0381DCD3FD3C9ED2.title}"
-			x: -1.9047619047619193d
-			y: 3.720238095238088d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["055193574D203872"]
+			dependencies: [
+				"055193574D203872"
+				"1FF652D16CE97C79"
+			]
 			description: [
 				"{moni.quest.6197C51E04761371.description1}"
 				""
@@ -276,7 +282,7 @@
 			}]
 			title: "{moni.quest.6197C51E04761371.title}"
 			x: -4.5d
-			y: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
@@ -443,7 +449,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7460F22545A4EFB2.title}"
-			x: -7.0d
+			x: -5.75d
 			y: 2.0d
 		}
 		{
@@ -482,7 +488,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5795EE147D4879B7.title}"
-			x: -9.5d
+			x: -8.5d
 			y: -0.5d
 		}
 		{
@@ -603,7 +609,6 @@
 		{
 			dependencies: [
 				"6A262AA410619C23"
-				"62BBD1F6767A4D90"
 				"404C9497C46E7608"
 			]
 			description: [
@@ -683,8 +688,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.09C0CDC1DFA7842D.title}"
-			x: 0.0d
-			y: -8.0d
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["038D06BCA022C1BF"]
@@ -723,7 +728,7 @@
 			}]
 			title: "{moni.quest.47094A5717952699.title}"
 			x: -4.5d
-			y: -6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -771,11 +776,11 @@
 				}
 			]
 			title: "{moni.quest.63ADD9B48834AA39.title}"
-			x: -4.5d
-			y: -9.5d
+			x: -2.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["5301E546BAA69844"]
+			dependencies: ["29A487F0BC43AAF9"]
 			description: [
 				"{moni.quest.404C9497C46E7608.description1}"
 				""
@@ -809,11 +814,11 @@
 				}
 			]
 			title: "{moni.quest.404C9497C46E7608.title}"
-			x: 2.5d
+			x: 2.0d
 			y: -5.5d
 		}
 		{
-			dependencies: ["29A487F0BC43AAF9"]
+			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"{moni.quest.30EBD4E7BBFFEF2C.description1}"
 				""
@@ -835,11 +840,14 @@
 				}
 			]
 			title: "{moni.quest.30EBD4E7BBFFEF2C.title}"
-			x: 2.5d
-			y: -8.0d
+			x: 3.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["30EBD4E7BBFFEF2C"]
+			dependencies: [
+				"30EBD4E7BBFFEF2C"
+				"29A487F0BC43AAF9"
+			]
 			description: ["{moni.quest.273F3F8DD6A3DCC5.description1}"]
 			icon: "gtceu:pulsating_alloy_ingot"
 			id: "273F3F8DD6A3DCC5"
@@ -858,13 +866,18 @@
 				}
 			]
 			title: "{moni.quest.273F3F8DD6A3DCC5.title}"
-			x: 2.5d
-			y: -9.5d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["29A487F0BC43AAF9"]
+			dependencies: [
+				"29A487F0BC43AAF9"
+				"57E7182198B2EA9A"
+			]
 			description: ["{moni.quest.5301E546BAA69844.description1}"]
+			hide_until_deps_visible: true
 			id: "5301E546BAA69844"
+			optional: true
 			rewards: [{
 				id: "424A2A6FAB412F69"
 				item: {
@@ -879,7 +892,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			subtitle: "{moni.quest.5301E546BAA69844.subtitle}"
 			tasks: [{
 				id: "17210F38B40BAAD7"
@@ -887,8 +900,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5301E546BAA69844.title}"
-			x: 2.5d
-			y: -3.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
@@ -918,8 +931,8 @@
 				}
 			]
 			title: "{moni.quest.3F6EDC2481D5877F.title}"
-			x: 2.5d
-			y: 2.0d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
@@ -936,6 +949,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "1E91BE2938B1B8CE"
 				item: {
@@ -962,11 +976,11 @@
 				type: "item"
 			}]
 			title: "{moni.quest.29A487F0BC43AAF9.title}"
-			x: 2.5d
-			y: -0.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["29A487F0BC43AAF9"]
+			dependencies: ["404C9497C46E7608"]
 			description: ["{moni.quest.46AF35D4EECA5BDB.description1}"]
 			icon: {
 				Count: 1
@@ -989,8 +1003,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.46AF35D4EECA5BDB.title}"
-			x: 1.0d
-			y: -0.5d
+			x: 2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1021,11 +1035,11 @@
 				}
 			]
 			title: "{moni.quest.545CCC24D9401794.title}"
-			x: 4.5d
-			y: -1.5d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["5301E546BAA69844"]
+			dependencies: ["62BBD1F6767A4D90"]
 			description: [
 				"{moni.quest.500E619D568C07C2.description1}"
 				""
@@ -1070,11 +1084,11 @@
 				type: "item"
 			}]
 			title: "{moni.quest.500E619D568C07C2.title}"
-			x: 4.5d
-			y: -4.0d
+			x: 1.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["5301E546BAA69844"]
+			dependencies: ["0EDFB0C24B9129AB"]
 			description: [
 				"{moni.quest.4624889F738AB21B.description1}"
 				""
@@ -1094,11 +1108,11 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4624889F738AB21B.title}"
-			x: 4.5d
-			y: -6.0d
+			x: -7.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["4624889F738AB21B"]
+			dependencies: ["7A12743F5ECCED90"]
 			description: ["{moni.quest.0EDFB0C24B9129AB.description1}"]
 			icon: "gtceu:lv_forge_hammer"
 			id: "0EDFB0C24B9129AB"
@@ -1133,8 +1147,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0EDFB0C24B9129AB.title}"
-			x: 4.5d
-			y: -7.0d
+			x: -7.0d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -1169,13 +1183,13 @@
 				}
 			]
 			title: "{moni.quest.645B1DCB3DA7198A.title}"
-			x: 6.5d
-			y: -8.0d
+			x: 3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
-				"5301E546BAA69844"
 				"74B5CA5A48CE7B39"
+				"29A487F0BC43AAF9"
 			]
 			id: "3BD20358F137E7C6"
 			shape: "hexagon"
@@ -1184,7 +1198,7 @@
 				item: "gtceu:dark_steel_ingot"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 5.0d
 			y: -3.0d
 		}
 		{
@@ -1227,7 +1241,7 @@
 					type: "item"
 				}
 			]
-			size: 1.75d
+			size: 1.5d
 			tasks: [
 				{
 					id: "7DD0FE0A1E868294"
@@ -1257,13 +1271,13 @@
 				}
 			]
 			title: "{moni.quest.41C2E49E70D76330.title}"
-			x: 4.5d
-			y: 0.0d
+			x: 8.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
-				"5301E546BAA69844"
 				"5B0200011DF8E1B6"
+				"29A487F0BC43AAF9"
 			]
 			description: [
 				"{moni.quest.025543EDB0A4AC22.description1}"
@@ -1281,8 +1295,8 @@
 				item: "gtceu:electrical_steel_ingot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -0.5d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -1306,11 +1320,11 @@
 				item: "minecraft:obsidian"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["5301E546BAA69844"]
+			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"{moni.quest.1CA6D620309F2B9E.description1}"
 				""
@@ -1343,8 +1357,8 @@
 				}
 			]
 			title: "{moni.quest.1CA6D620309F2B9E.title}"
-			x: 8.5d
-			y: -3.0d
+			x: 6.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["3BD20358F137E7C6"]
@@ -1371,7 +1385,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.6D03BB4A6A4BBA27.title}"
-			x: 10.5d
+			x: 7.0d
 			y: -3.0d
 		}
 		{
@@ -1415,8 +1429,8 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
-			y: -3.0d
+			x: 7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["025543EDB0A4AC22"]
@@ -1437,8 +1451,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7842EC1C389C4B7E.title}"
-			x: 8.5d
-			y: -1.5d
+			x: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7842EC1C389C4B7E"]
@@ -1459,7 +1473,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
@@ -1502,7 +1516,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5B0200011DF8E1B6.title}"
-			x: 6.5d
+			x: 9.0d
 			y: 2.0d
 		}
 		{
@@ -1541,7 +1555,7 @@
 				}
 			]
 			title: "{moni.quest.6FE99EDDC6223F2E.title}"
-			x: 8.5d
+			x: 10.0d
 			y: 2.0d
 		}
 		{
@@ -1569,14 +1583,16 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4CD6C60CBEFFA317.title}"
-			x: 2.5d
-			y: 5.0d
+			x: 2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
-				"5B0200011DF8E1B6"
 				"1BC6DDC2D50F9C46"
+				"7A7907EE1F3FCFBF"
+				"0B5613CC79261800"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.3AB0402B19DD5BA8.description1}"
 				""
@@ -1617,8 +1633,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.3AB0402B19DD5BA8.title}"
-			x: 6.5d
-			y: 7.5d
+			x: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4CD6C60CBEFFA317"]
@@ -1705,8 +1721,8 @@
 				}
 			]
 			title: "{moni.quest.1BC6DDC2D50F9C46.title}"
-			x: 2.5d
-			y: 7.5d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -1730,8 +1746,8 @@
 				item: "gtceu:energetic_alloy_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 9.5d
+			x: 2.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
@@ -1748,8 +1764,8 @@
 				item: "gtceu:vibrant_alloy_ingot"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 11.0d
+			x: 2.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
@@ -1773,8 +1789,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4F4F120AFB3A9250.title}"
-			x: 1.0d
-			y: 10.5d
+			x: 0.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
@@ -1806,8 +1822,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.780706A4C4AEB9CE.title}"
-			x: 4.0d
-			y: 10.5d
+			x: 3.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["3AB0402B19DD5BA8"]
@@ -1833,7 +1849,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5C4E189A3E401566.title}"
-			x: 6.5d
+			x: 7.0d
 			y: 10.0d
 		}
 		{
@@ -1883,7 +1899,7 @@
 			}]
 			title: "{moni.quest.1DBBE96165C7987D.title}"
 			x: 0.0d
-			y: 9.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1DBBE96165C7987D"]
@@ -1908,7 +1924,7 @@
 			}]
 			title: "{moni.quest.56924FC6B029BA0F.title}"
 			x: -2.0d
-			y: 9.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -1942,8 +1958,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.0523F4AB9A794390.title}"
-			x: 10.5d
-			y: 9.375d
+			x: -9.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2D31856F6EF1ED69"]
@@ -1966,8 +1982,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.18D8D18C4494C587.title}"
-			x: 12.75d
-			y: 7.5d
+			x: -7.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2001,8 +2017,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.1A427A8CB43C8B59.title}"
-			x: 15.0d
-			y: 9.375d
+			x: -5.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2016,8 +2032,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.431BB650AC492C84.title}"
-			x: 12.75d
-			y: 9.375d
+			x: -7.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2061,8 +2077,8 @@
 				}
 			]
 			title: "{moni.quest.5F6B13DBCABA5078.title}"
-			x: 15.0d
-			y: 7.5d
+			x: -7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -2088,8 +2104,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4F239316765C7CA1.title}"
-			x: 4.5d
-			y: -9.5d
+			x: 1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4CD6C60CBEFFA317"]
@@ -2168,11 +2184,11 @@
 				}
 			]
 			title: "{moni.quest.0D6C8FFD01BE5C21.title}"
-			x: 10.5d
-			y: 5.0d
+			x: 3.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["5301E546BAA69844"]
+			dependencies: ["3EDD0A986384F2A7"]
 			description: [
 				"{moni.quest.2607F8404B56773B.description1}"
 				""
@@ -2193,8 +2209,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2607F8404B56773B.title}"
-			x: 4.5d
-			y: -5.0d
+			x: -7.0d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -2223,8 +2239,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.3E69E1949316BD0C.title}"
-			x: 10.5d
-			y: 7.5d
+			x: -9.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3AB0402B19DD5BA8"]
@@ -2255,8 +2271,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.3E4DEA4FFD019AB9.title}"
-			x: 8.5d
-			y: 7.5d
+			x: 9.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -2272,7 +2288,7 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			size: 1.25d
+			size: 1.5d
 			tasks: [
 				{
 					id: "31167A476BC0B4F1"
@@ -2308,11 +2324,15 @@
 				}
 			]
 			title: "{moni.quest.5D60CAE3A33000C3.title}"
-			x: 4.517857142857139d
-			y: 1.4285714285714306d
+			x: 8.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["47094A5717952699"]
+			dependencies: [
+				"19233A97579E0BDD"
+				"47094A5717952699"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.39394D5596FF8BC8.description1}"
 				""
@@ -2364,8 +2384,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.39394D5596FF8BC8.title}"
-			x: -2.75d
-			y: -6.0d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2391,8 +2411,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.5B52FFEBF5D65C20.title}"
-			x: 17.25d
-			y: 9.375d
+			x: -9.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -2405,7 +2425,6 @@
 				""
 				"{moni.quest.7EA737163230F984.description2}"
 			]
-			hide_until_deps_visible: true
 			icon: {
 				Count: 1
 				id: "gtceu:rubber_mallet"
@@ -2421,7 +2440,6 @@
 				}
 			}
 			id: "7EA737163230F984"
-			optional: true
 			rewards: [{
 				id: "56897FB11AB023CB"
 				item: "kubejs:moni_nickel"
@@ -2514,8 +2532,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7EA737163230F984.title}"
-			x: 1.0d
-			y: -2.0d
+			x: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -2537,8 +2555,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.74A7ABF43D6A403F.title}"
-			x: 1.0d
-			y: 7.5d
+			x: 0.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
@@ -2585,8 +2603,62 @@
 				type: "item"
 			}]
 			title: "{moni.quest.6BA0B1B3AB853F9A.title}"
-			x: -2.0d
-			y: -2.0d
+			x: -5.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["17312BF0197B87A8"]
+			description: [
+				"{moni.quest.604CCBE824D03A74.description1}"
+				""
+				"{moni.quest.604CCBE824D03A74.description2}"
+			]
+			id: "604CCBE824D03A74"
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "{moni.quest.604CCBE824D03A74.subtitle}"
+			tasks: [{
+				id: "5F8474E44C2FB07E"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "{moni.quest.604CCBE824D03A74.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"57E7182198B2EA9A"
+				"5B0200011DF8E1B6"
+			]
+			description: ["{moni.quest.7A7907EE1F3FCFBF.description1}"]
+			hide_until_deps_visible: true
+			id: "7A7907EE1F3FCFBF"
+			optional: true
+			tasks: [{
+				id: "56F724D844E3577A"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1F7F73BF81570F3C"
+				"5B0200011DF8E1B6"
+			]
+			description: ["{moni.quest.0B5613CC79261800.description1}"]
+			hide_until_deps_visible: true
+			id: "0B5613CC79261800"
+			optional: true
+			tasks: [{
+				id: "7D2FC09A6C8B722C"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
 		}
 	]
 	title: "{moni.chapter.2763DAD954E0EED8.title}"

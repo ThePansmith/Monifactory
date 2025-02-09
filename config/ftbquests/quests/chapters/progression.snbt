@@ -699,7 +699,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["025543EDB0A4AC22"]
+			dependencies: [
+				"025543EDB0A4AC22"
+				"3F6EDC2481D5877F"
+			]
 			description: [
 				"{moni.quest.126ED4A0AEA05DCD.description1}"
 				""
@@ -943,6 +946,7 @@
 				"1CA6D620309F2B9E"
 				"3BD20358F137E7C6"
 				"712023557B5B1812"
+				"3F6EDC2481D5877F"
 			]
 			description: ["{moni.quest.4542BF5E00FCBEA1.description1}"]
 			disable_toast: true
@@ -2476,7 +2480,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4542BF5E00FCBEA1"]
+			dependencies: [
+				"4542BF5E00FCBEA1"
+				"6A914B240E1A7BCB"
+			]
 			description: [
 				"{moni.quest.28854E7AC91786E9.description1}"
 				""
