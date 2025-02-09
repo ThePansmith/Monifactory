@@ -1,7 +1,10 @@
+/**
+ * Registration of Monicoin trades for spawn eggs
+ */
+
 ServerEvents.recipes(event => {
     if (isNormalMode) {
-        event.shaped(
-            Item.of('minecraft:chicken_spawn_egg', 2), [
+        event.shaped(Item.of('minecraft:chicken_spawn_egg', 2), [
             ' A ',
             '   ',
             '  A'
@@ -9,8 +12,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_quarter'
         }).noMirror().noShrink()
 
-        event.shaped(
-            Item.of('minecraft:cow_spawn_egg', 2), [
+        event.shaped(Item.of('minecraft:cow_spawn_egg', 2), [
             '   ',
             'AA ',
             '   '
@@ -18,8 +20,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_quarter'
         }).noMirror().noShrink()
 
-        event.shaped(
-            Item.of('minecraft:pig_spawn_egg', 2), [
+        event.shaped(Item.of('minecraft:pig_spawn_egg', 2), [
             'A  ',
             '  A',
             '   '
@@ -27,8 +28,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_quarter'
         }).noMirror().noShrink()
 
-        event.shaped(
-            Item.of('minecraft:sheep_spawn_egg', 2), [
+        event.shaped(Item.of('minecraft:sheep_spawn_egg', 2), [
             'AAA',
             'A  ',
             ' A '
@@ -36,8 +36,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:moni_nickel'
         }).noMirror().noShrink()
 
-        event.shaped(
-            Item.of('minecraft:bee_spawn_egg', 2), [
+        event.shaped(Item.of('minecraft:bee_spawn_egg', 2), [
             'AAA',
             '  A',
             ' A '
@@ -46,8 +45,7 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
         // To jumpstart HNN
-        event.shaped(
-            Item.of('minecraft:rotten_flesh', 32), [
+        event.shaped(Item.of('minecraft:rotten_flesh', 32), [
             ' PP',
             '   ',
             '   '
@@ -56,8 +54,7 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
         // Bonemeal
-        event.shaped(
-            Item.of('minecraft:bone', 32), [
+        event.shaped(Item.of('minecraft:bone', 32), [
             ' PP',
             '   ',
             ' P '
@@ -65,8 +62,7 @@ ServerEvents.recipes(event => {
             P: 'kubejs:moni_penny'
         }).noMirror().noShrink()
 
-        event.shaped(
-            Item.of('minecraft:honeycomb', 32), [
+        event.shaped(Item.of('minecraft:honeycomb', 32), [
             'PPP',
             'P  ',
             '   '

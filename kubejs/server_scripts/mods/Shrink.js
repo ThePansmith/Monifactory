@@ -1,6 +1,8 @@
+/**
+ * Custom recipe for the Shrinking Device
+ */
 ServerEvents.recipes(event => {
-    event.shaped(
-        'shrink:shrinking_device', [
+    event.shaped('shrink:shrinking_device', [
         'PFP',
         'ETS',
         'PPP'

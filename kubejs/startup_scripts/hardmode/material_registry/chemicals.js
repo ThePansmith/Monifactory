@@ -1,9 +1,19 @@
-//! Hardcore mode chemicals
+// ! Hardcore mode chemicals
 /**
  * Gregtech Chemical Materials Registry: Hardmode+
  * This file is for custom fluids (And some solids!)
  * used in custom chemlines specific to Hardmode like expert Titanium and Graphite.
  */
+
+// Custom Naquadah Fuel Iconset
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    if (!isHardMode) {
+        return;
+    }
+
+    event.create('naquadah_superfuel').parent(GTMaterialIconSet.RADIOACTIVE)
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     if (!isHardMode) {
         return;
@@ -97,16 +107,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('graphene', 'oxygen')
 
+    // Kapton K
     event.create('durene')
         .dust()
+        .fluid()
         .color(0x336040).iconSet('fine')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('10x carbon', '14x hydrogen')
 
     event.create('pyromellitic_dianhydride')
         .dust()
-        .color(0xf0ead6).iconSet('rough')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .fluid()
+        .color(0xB48C63)
         .components('10x carbon', '2x hydrogen', '6x oxygen')
 
     event.create('dimethylformamide')
@@ -116,10 +128,25 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('oxydianiline')
         .dust()
+        .fluid()
         .color(0xf0e130).iconSet('dull')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('12x carbon', '12x hydrogen', '2x nitrogen', 'oxygen')
 
+    event.create('oxydianiline_sludge')
+        .fluid()
+        .color(0xD9CCBF)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components('1x oxydianiline', '1x dimethylformamide')
+
+    event.create('kapton_k')
+        .polymer()
+        .fluid()
+        .color(0x915A23)
+        .components('1x pyromellitic_dianhydride', '1x oxydianiline')
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.STICKY)
+
+    // Harder Fluorantimonic Acid
     event.create('antimony_pentafluoride')
         .fluid()
         .color(0xe3f1f1)
@@ -130,6 +157,137 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xF7F7E7).iconSet('dull')
         .components('lead', 'silicon', '3x oxygen')
+
+    // Liquid Naquadah Fuels and their ingredients (HM+ Only)
+    event.create('naq_fuel_t1')
+        .liquid()
+        .color(0xB9E364)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('naq_fuel_t1_depleted')
+        .liquid()
+        .color(0x323D1C)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('naq_fuel_t2')
+        .liquid()
+        .color(0x56F075)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('naq_fuel_t2_depleted')
+        .liquid()
+        .color(0x123619)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('naquadah_superfuel')
+        .color(0xFFFFFF).iconSet('naquadah_superfuel')
+        .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
+
+    event.create('naquadah_superfuel_depleted')
+        .color(0x00002F)
+        .liquid()
+        .flags()
+
+    event.create('raw_naquadah_solution')
+        .liquid()
+        .color(0x5E7855)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('piranha_solution')
+        .liquid()
+        .color(0xFFF382)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('hot_piranha_solution')
+        .liquid()
+        .color(0xFFC582)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('tritium_radon_difluoride')
+        .gas()
+        .color(0xFF5462)
+        .components('1x tritium', '1x radon', '2x fluorine')
+
+    event.create('inert_naquadah_blend')
+        .liquid()
+        .color(0x80D463)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('active_naquadah_blend')
+        .liquid()
+        .color(0xBBFF00)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('light_naquadah_isotope_fraction')
+        .liquid()
+        .color(0xDCFF7a)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('medium_naquadah_isotope_fraction')
+        .liquid()
+        .color(0xB0D93F)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('heavy_naquadah_isotope_fraction')
+        .liquid()
+        .color(0x698A11)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('naquadah_isotope_sludge')
+        .liquid()
+        .color(0x253005)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('cracked_light_naquadah_isotope_fraction')
+        .liquid()
+        .color(0xFFFF7A)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('cracked_medium_naquadah_isotope_fraction')
+        .liquid()
+        .color(0xD9D93F)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('cracked_heavy_naquadah_isotope_fraction')
+        .liquid()
+        .color(0x888811)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('cracked_naquadah_isotope_sludge')
+        .liquid()
+        .color(0x253003)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('heavy_atomic_residue')
+        .liquid()
+        .color(0xb4441F)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('superheavy_atomic_residue')
+        .liquid()
+        .color(0x990000)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('purified_heavy_residue')
+        .liquid()
+        .color(0xDE643B)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('purified_superheavy_residue')
+        .liquid()
+        .color(0xE60000)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('exotic_particle_solution')
+        .liquid()
+        .color(0xF8EBBE)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('hydrobromic_acid')
+        .fluid()
+        .color(0x612C0D)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .components('1x hydrogen', '1x bromine', '1x water')
 })
 
 GTCEuStartupEvents.materialModification(() => {

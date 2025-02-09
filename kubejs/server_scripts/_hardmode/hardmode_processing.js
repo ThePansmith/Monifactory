@@ -1,7 +1,11 @@
+/**
+ * Makes recipes harder in.. hard mode
+ */
+
 ServerEvents.recipes(event => {
     if (isHardMode) {
         // Tungsten
-        event.remove({id: 'gtceu:electrolyzer/tungstic_acid_electrolysis'})
+        event.remove({ id: 'gtceu:electrolyzer/tungstic_acid_electrolysis' })
 
         event.recipes.gtceu.extractor('kubejs:tungsten_trioxide_dust')
             .itemInputs('7x #forge:dusts/tungstic_acid')
@@ -85,7 +89,7 @@ ServerEvents.recipes(event => {
         // Kapton K Wetwares
         event.recipes.gtceu.circuit_assembler('kubejs:circuit_assembler/wetware_hm')
             .itemInputs(
-                '16x gcyr:kapton_k_plate',
+                '16x gtceu:kapton_k_plate',
                 'gtceu:petri_dish',
                 'gtceu:luv_electric_pump',
                 'gtceu:iv_sensor',
@@ -185,7 +189,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.chemical_bath('bathe_pyrochlore_dust')
             .itemInputs('11x gtceu:pyrochlore_dust')
             .inputFluids('gtceu:hydrofluoric_acid 2000')
-            .itemOutputs('7x gtceu:niobium_pentoxide_dust', 'gtceu:tantalum_pentoxide_dust', '6x gcyr:fluorite_dust')
+            .itemOutputs('7x gtceu:niobium_pentoxide_dust', 'gtceu:tantalum_pentoxide_dust', '6x gtceu:fluorite_dust')
             .outputFluids('minecraft:water 2000')
             .duration(200).EUt(480)
 
@@ -296,24 +300,17 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.chemical_reactor('caesium_hydroxide')
             .itemInputs('gtceu:caesium_dust')
-            .inputFluids('minecraft:water 1000')
+            .inputFluids('minecraft:water 3000')
             .itemOutputs('3x gtceu:caesium_hydroxide_dust')
+            .outputFluids('gtceu:hydrogen 3000')
             .duration(5).EUt(7)
 
         event.recipes.gtceu.large_chemical_reactor('neocryolite')
-            .itemInputs('9x gtceu:caesium_hydroxide_dust', '3x gtceu:naquadah_hydroxide_dust', 'gtceu:signalum_dust')
+            .itemInputs('9x gtceu:caesium_hydroxide_dust', '3x gtceu:naquadah_hydroxide_dust')
+            .notConsumable('gtceu:signalum_dust')
             .inputFluids('gtceu:hydrofluoric_acid 6000')
             .outputFluids('gtceu:neocryolite 1000', 'minecraft:water 6000')
             .duration(250).EUt(7680)
-
-        // Refined snowchestite maceration fix
-        event.remove({ id: 'gtceu:macerator/macerate_snowchestite_refined_ore_to_dust' })
-
-        event.recipes.gtceu.macerator('macerate_snowchestite_refined_ore_to_naquadah_hydroxide')
-            .itemInputs('gtceu:refined_snowchestite_ore')
-            .itemOutputs('gtceu:snowchestite_dust')
-            .chancedOutput('gtceu:naquadah_hydroxide_dust', 1400, 850)
-            .duration(400).EUt(2)
 
         // Naquadah
 
@@ -366,25 +363,25 @@ ServerEvents.recipes(event => {
             .duration(600).EUt(1200)
 
         // Platinum Group
-        event.remove({id: 'gtceu:centrifuge/pgs_separation'})
-        event.remove({id: 'gtceu:electrolyzer/raw_platinum_separation'})
-        event.remove({id: 'gtceu:chemical_reactor/raw_palladium_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/raw_palladium_separation'})
-        event.remove({id: 'gtceu:chemical_reactor/inert_metal_mixture_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/inert_metal_mixture_separation'})
-        event.remove({id: 'gtceu:chemical_reactor/ruthenium_tetroxide_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/ruthenium_tetroxide_separation'})
-        event.remove({id: 'gtceu:electrolyzer/rhodium_sulfate_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/rarest_metal_mixture_separation'})
-        event.remove({id: 'gtceu:centrifuge/iridium_metal_residue_separation'})
-        event.remove({id: 'gtceu:chemical_reactor/iridium_chloride_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/iridium_chloride_separation'})
-        event.remove({id: 'gtceu:distillation_tower/acidic_osmium_solution_separation'})
-        event.remove({id: 'gtceu:distillery/acidic_osmium_solution_separation_to_hydrochloric_acid'})
-        event.remove({id: 'gtceu:distillery/acidic_osmium_solution_separation_to_water'})
-        event.remove({id: 'gtceu:chemical_reactor/osmium_tetroxide_separation'})
-        event.remove({id: 'gtceu:large_chemical_reactor/osmium_tetroxide_separation'})
-        event.remove({id: 'gtceu:centrifuge/decomposition_centrifuging__platinum_sludge_residue'})
+        event.remove({ id: 'gtceu:centrifuge/pgs_separation' })
+        event.remove({ id: 'gtceu:electrolyzer/raw_platinum_separation' })
+        event.remove({ id: 'gtceu:chemical_reactor/raw_palladium_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/raw_palladium_separation' })
+        event.remove({ id: 'gtceu:chemical_reactor/inert_metal_mixture_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/inert_metal_mixture_separation' })
+        event.remove({ id: 'gtceu:chemical_reactor/ruthenium_tetroxide_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/ruthenium_tetroxide_separation' })
+        event.remove({ id: 'gtceu:electrolyzer/rhodium_sulfate_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/rarest_metal_mixture_separation' })
+        event.remove({ id: 'gtceu:centrifuge/iridium_metal_residue_separation' })
+        event.remove({ id: 'gtceu:chemical_reactor/iridium_chloride_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/iridium_chloride_separation' })
+        event.remove({ id: 'gtceu:distillation_tower/acidic_osmium_solution_separation' })
+        event.remove({ id: 'gtceu:distillery/acidic_osmium_solution_separation_to_hydrochloric_acid' })
+        event.remove({ id: 'gtceu:distillery/acidic_osmium_solution_separation_to_water' })
+        event.remove({ id: 'gtceu:chemical_reactor/osmium_tetroxide_separation' })
+        event.remove({ id: 'gtceu:large_chemical_reactor/osmium_tetroxide_separation' })
+        event.remove({ id: 'gtceu:centrifuge/decomposition_centrifuging__platinum_sludge_residue' })
 
         // Formic Acid
         event.recipes.gtceu.chemical_reactor('sodium_methoxide')
@@ -446,6 +443,13 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:nitric_acid 1000')
             .itemOutputs('5x gtceu:sodium_nitrate_dust')
             .outputFluids('minecraft:water 1000')
+            .duration(5).EUt(60)
+
+        event.recipes.gtceu.chemical_reactor('sodium_nitrate_alternate')
+            .itemInputs('gtceu:sodium_dust')
+            .inputFluids('gtceu:nitric_acid 1000')
+            .itemOutputs('5x gtceu:sodium_nitrate_dust')
+            .outputFluids('gtceu:hydrogen 1000')
             .duration(5).EUt(60)
 
         // Platinum Group Sludge
@@ -526,7 +530,7 @@ ServerEvents.recipes(event => {
             .itemInputs('3x gtceu:palladium_raw_dust')
             .inputFluids('gtceu:formic_acid 1000')
             .itemOutputs('gtceu:palladium_dust')
-            .outputFluids('gtceu:hydrochloric_acid 2000', 'gtceu:carbon_dioxide 1000')
+            .outputFluids('gtceu:hydrochloric_acid 4000', 'gtceu:carbon_dioxide 1000')
             .duration(250).EUt(30)
 
         event.recipes.gtceu.sifter('sift_crude_palladium_residue_dust')
@@ -537,7 +541,7 @@ ServerEvents.recipes(event => {
         // Rhodium
         event.recipes.gtceu.electric_blast_furnace('platinum_group_residue_to_iridium_group_sludge')
             .itemInputs('gtceu:platinum_group_residue_dust', '11x gtceu:potassium_pyrosulfate_dust')
-            .itemOutputs('gtceu:rhodium_sulfate_dust', '14x gtceu:potassium_sulfate_dust', 'gtceu:iridium_group_sludge_dust')
+            .itemOutputs('gtceu:rhodium_sulfate_dust', '7x gtceu:potassium_sulfate_dust', 'gtceu:iridium_group_sludge_dust')
             .duration(200).EUt(120)
             .blastFurnaceTemp(1048)
 
@@ -636,10 +640,10 @@ ServerEvents.recipes(event => {
             .duration(300).EUt(30)
 
         event.recipes.gtceu.chemical_reactor('ammonium_hexachloroiridiate_to_iridium')
-            .itemInputs('9x gtceu:ammonium_hexachloroiridiate_dust')
-            .inputFluids('gtceu:hydrogen 4000')
+            .itemInputs('8x gtceu:ammonium_hexachloroiridiate_dust')
+            .inputFluids('gtceu:hydrogen 12000')
             .itemOutputs('gtceu:iridium_dust')
-            .outputFluids('gtceu:hydrochloric_acid 6000', 'gtceu:ammonia 2000')
+            .outputFluids('gtceu:hydrochloric_acid 18000', 'gtceu:ammonia 2000')
             .duration(150).EUt(7680)
 
         // Dioxygen Difluoride
@@ -661,7 +665,7 @@ ServerEvents.recipes(event => {
             .duration(800).EUt(192)
 
         // Stone Dust Processing
-        event.remove({id: 'gtceu:centrifuge/stone_dust_separation'})
+        event.remove({ id: 'gtceu:centrifuge/stone_dust_separation' })
 
         event.recipes.gtceu.chemical_bath('stone_dust_to_dirty_hexafluorosilicic_acid')
             .itemInputs('24x gtceu:stone_dust')
@@ -777,7 +781,7 @@ ServerEvents.recipes(event => {
             .chancedOutput('gtceu:lanthanum_dust', 1500, 0)
             .chancedOutput('gtceu:lutetium_dust', 600, 0)
             .chancedOutput('gtceu:europium_dust', 600, 0)
-            .duration(50).EUt(1966080)
+            .duration(50).EUt(GTValues.VA[GTValues.UV])
 
         // Quantum Flux Recipe
         event.recipes.gtceu.mixer('quantum_flux_hm')
@@ -787,42 +791,66 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(480)
 
-        //Commented out in favor of GCYM's chain
+        // Rocketry
+        event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
+            .inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000), Fluid.of('gtceu:chloromethane', 1000))
+            .itemOutputs('24x gtceu:durene_dust')
+            .outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
+            .EUt(120)
+            .duration(120)
 
-        // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/durene_hm')
-        // .inputFluids(Fluid.of('gtceu:dimethylbenzene', 1000), Fluid.of('gtceu:chloromethane', 1000))
-        // .itemOutputs('24x gtceu:durene_dust')
-        // .outputFluids(Fluid.of('gtceu:hydrochloric_acid', 1000))
-        // .EUt(120)
-        // .duration(120)
+        event.recipes.gtceu.chemical_reactor('dimethylformamide')
+            .inputFluids('gtceu:carbon_monoxide 1000', 'gtceu:dimethylamine 1000')
+            .outputFluids('gtceu:dimethylformamide 1000')
+            .duration(200).EUt(480);
 
-        // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/pyrom_hm')
-        // .inputFluids(Fluid.of('gtceu:oxygen', 6000))
-        // .itemInputs('24x gtceu:durene_dust')
-        // .outputFluids(Fluid.of('minecraft:water', 3000))
-        // .itemOutputs('9x gcyr:pyrometillic_dianhydride_dust')
-        // .EUt(480)
-        // .duration(100)
+        event.recipes.gtceu.chemical_reactor('pyrometillic_dianhydride')
+            .inputFluids('gtceu:durene 250', 'gtceu:oxygen 1500')
+            .outputFluids('gtceu:pyromellitic_dianhydride 250', 'minecraft:water 1500')
+            .duration(400).EUt(480);
 
-        // event.recipes.gtceu.chemical_reactor('kubejs:chemical_reactor/aminophenol_hm')
-        // .inputFluids(Fluid.of('gtceu:nitrobenzene', 1000), Fluid.of('gtceu:hydrogen', 4000))
-        // .outputFluids(Fluid.of('gtceu:aminophenol', 1000), Fluid.of('minecraft:water', 1000))
-        // .circuit(1)
-        // .EUt(30)
-        // .duration(300)
+        event.recipes.gtceu.chemical_reactor('manganese_bromide')
+            .itemInputs('gtceu:manganese_dust')
+            .inputFluids('gtceu:bromine 1000', 'gtceu:acetic_acid 1000')
+            .outputFluids('gtceu:manganese_bromide 1000')
+            .duration(60).EUt(480);
 
-        // event.recipes.gtceu.large_chemical_reactor("kubejs:large_chemical_reactor/oxydianiline_dust")
-        // .notConsumable("gtceu:saltpeter_dust")
-        // .inputFluids(Fluid.of('gtceu:aminophenol', 1000), Fluid.of('gtceu:nitrochlorobenzene', 1000), Fluid.of('gtceu:water', 1000))
-        // .outputFluids(Fluid.of('gtceu:oxygen', 3000), Fluid.of('gtceu:hydrochloric_acid', 1000))
-        // .itemOutputs('27x gtceu:oxydianiline_dust')
-        // .duration(200)
-        // .EUt(21000)
+        event.recipes.gtceu.chemical_reactor('manganese_acetate')
+            .itemInputs('gtceu:manganese_dust')
+            .inputFluids('gtceu:acetic_acid 1000')
+            .outputFluids('gtceu:manganese_acetate 1000')
+            .duration(60).EUt(480);
 
-        // event.recipes.gtceu.alloy_smelter('kubejs:kaptonk')
-        // .itemInputs('3x gtceu:oxydianiline_dust', '2x gcyr:pyrometillic_dianhydride_dust')
-        // .itemOutputs('gtceu:kapton_k_ingot')
-        // .duration(30)
-        // .EUt(7680)
+        event.recipes.gtceu.chemical_reactor('hydrobromic_acid')
+            .notConsumable('gtceu:platinum_dust')
+            .inputFluids('gtceu:hydrogen 1000', 'gtceu:bromine 1000', 'minecraft:water 1000')
+            .outputFluids('gtceu:hydrobromic_acid 1000')
+            .duration(60).EUt(480);
+
+        event.recipes.gtceu.chemical_reactor('chloronitrobenzene')
+            .inputFluids('gtceu:chlorobenzene 1000', 'gtceu:nitric_acid 1000')
+            .outputFluids('gtceu:nitrochlorobenzene 1000', 'minecraft:water 1000')
+            .duration(400).EUt(480);
+
+        event.recipes.gtceu.chemical_reactor('oxydianiline_sludge')
+            .inputFluids('gtceu:aminophenol 1000', 'gtceu:nitrochlorobenzene 1000', 'gtceu:dimethylformamide 1000')
+            .itemInputs('1x gtceu:potassium_carbonate_dust')
+            .outputFluids('gtceu:oxydianiline_sludge 250', 'minecraft:water 1500')
+            .duration(400).EUt(480);
+
+        event.recipes.gtceu.distillation_tower('distill_oxydianiline_sludge')
+            .inputFluids('gtceu:oxydianiline_sludge 1000')
+            .outputFluids('gtceu:dimethylformamide 1000', 'gtceu:oxydianiline 144')
+            .duration(200).EUt(480);
+
+        event.recipes.gtceu.chemical_reactor('pyromellitic_dianhydride')
+            .inputFluids('gtceu:durene 250', 'gtceu:oxygen 1500')
+            .outputFluids('gtceu:pyromellitic_dianhydride 250', 'minecraft:water 1500')
+            .duration(400).EUt(480);
+
+        event.recipes.gtceu.chemical_reactor('kapton_k')
+            .inputFluids('gtceu:pyromellitic_dianhydride 1000', 'gtceu:oxydianiline 1000')
+            .outputFluids('gtceu:kapton_k 1000')
+            .duration(400).EUt(480);
     }
 });

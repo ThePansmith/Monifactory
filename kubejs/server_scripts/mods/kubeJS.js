@@ -1,3 +1,6 @@
+/**
+ * Custom recipes for Monifactory
+ */
 ServerEvents.recipes(event => {
     // Stablized
     event.recipes.gtceu.fusion_reactor('einsteinium_fusion')
@@ -7,7 +10,6 @@ ServerEvents.recipes(event => {
         .EUt(15360)
         .fusionStartEU(400000000)
 
-    solidify('einsteinium_fusion', [Fluid.of('gtceu:berkelium', 16), Fluid.of('gtceu:californium', 16)], Fluid.of('gtceu:einsteinium', 16));
     solidify('stabilized_einsteinium', Fluid.of('gtceu:einsteinium', 144), '16x kubejs:stabilized_einsteinium');
     solidify('stabilized_berkelium', Fluid.of('gtceu:berkelium', 144), '8x kubejs:stabilized_berkelium');
     solidify('stabilized_neptunium', Fluid.of('gtceu:neptunium', 144), '2x kubejs:stabilized_neptunium');
@@ -31,7 +33,11 @@ ServerEvents.recipes(event => {
     solidify('solidified_radon', Fluid.of('gtceu:radon'), 'kubejs:solidified_radon');
     solidify('solidified_xenon', Fluid.of('gtceu:xenon'), 'kubejs:solidified_xenon');
     solidify('solidified_bromine', Fluid.of('gtceu:bromine'), 'kubejs:solidified_bromine');
-    
+
+    if (!isNormalMode) {
+        solidify('stabilized_oganesson', Fluid.of('gtceu:oganesson', 144), 'kubejs:stabilized_oganesson');
+    }
+
     function solidify(recipename, input, output) {
         event.recipes.gtceu.fluid_solidifier(recipename)
             .inputFluids(input)
@@ -48,7 +54,7 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(7)
 
-    //Thermal Fluids
+    // Thermal Fluids
     thermalextract('primal_mana', 'kubejs:primal_mana', Fluid.of('kubejs:molten_primal_mana', 250));
     thermalextract('cryotheum', 'kubejs:cryotheum_dust', Fluid.of('kubejs:molten_cryotheum', 250));
     thermalextract('pyrotheum', 'kubejs:pyrotheum_dust', Fluid.of('kubejs:molten_pyrotheum', 250));
@@ -64,14 +70,12 @@ ServerEvents.recipes(event => {
     }
 
     // Endest Star
-    event.shaped(
-        'kubejs:endest_star', [
+    event.shaped('kubejs:endest_star', [
         ' E ',
         'ESE',
         ' E '
     ], {
         E: 'minecraft:ender_eye',
         S: 'minecraft:nether_star'
-    }
-    )
+    })
 })

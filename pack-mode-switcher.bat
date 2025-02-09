@@ -1,7 +1,7 @@
 @echo off
 color 9
 echo Monifactory Pack Mode Switcher
-
+echo Details on each mode can be found on the Curseforge Page
 setlocal
 set normalCfgPath=%~dp0config-overrides\normal
 set hardCfgPath=%~dp0config-overrides\hardmode
@@ -22,9 +22,9 @@ exit 1
 
 :getChoice
 echo Set pack mode:
-echo N: Normal
-echo H: Hardmode
-echo E: Expert
+echo N: Normal    (The Default mode)
+echo H: Hardmode  (Adds more lines and progression, removes HNN and Monicoin spending)
+echo E: Expert    (A modifier for Hardmode, enables some of the more extreme GTm settings among other things)
 choice /c NHE /m "Selection:"
 
 if "%errorlevel%" == "1" goto copyNormal

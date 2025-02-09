@@ -119,7 +119,7 @@ worldgen:
 
     # The maximum random offset (in blocks) from the grid for generating an ore vein.
     # Default: 12
-    oreVeinRandomOffset: 0
+    oreVeinRandomOffset: 4
 
     # Prevents regular vanilla ores from being generated outside GregTech ore veins
     # Default: true
@@ -179,10 +179,6 @@ machines:
   # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
   # Default: false
   harmlessActiveTransformers: false
-
-  # Divisor for Recipe Duration per Overclock.
-  # Default: 2.0
-  overclockDivisor: 2.0
 
   # Whether to play machine sounds while machines are active.
   # Default: true
@@ -279,11 +275,6 @@ machines:
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
   # Default: false
   orderedAssemblyLineFluids: false
-
-  # Let Dual Hatch has more ability. (DEPRECATED: does nothing now)
-  # When enabled it, Dual Hatch will can used to assemble line and so on.
-  # Need restart Minecraft to apply.
-  enableMoreDualHatchAbility: false
 
   # Default maximum parallel of steam multiblocks
   # Default: 8
@@ -406,6 +397,11 @@ client:
     # Default: 0
     hudOffsetY: 0
 
+  renderer:
+    # Render fluids in multiblocks that support them?
+    # Default: true
+    renderFluids: true
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage
@@ -483,11 +479,6 @@ gameplay:
   # Default: 0.001
   environmentalHazardDecayRate: 0.001
 
-  # Whether the GTCEu's ingame guidebook, 'Compass', be enabled.
-  # WARNING: INCOMPLETE
-  # Default: false
-  enableCompass: false
-
 # Config options for Mod Compatibility
 compat:
   # Config options regarding GTEU compatibility with other energy systems
@@ -524,6 +515,17 @@ compat:
 
   # Config options regarding GTCEu compatibility with minimap mods
   minimap:
+    # Toggle specific map mod integration on/off (need to restart for this to take effect)
+    toggle:
+      # FTB Chunks integration enabled
+      ftbChunksIntegration: false
+
+      # Journey Map integration enabled
+      journeyMapIntegration: true
+
+      # Xaerox's map integration enabled
+      xaerosMapIntegration: true
+
     # The radius, in blocks, that picking up a surface rock will search for veins in.
     # -1 to disable.
     # Default: 24
@@ -549,10 +551,22 @@ compat:
 
     # Which part of the screen to anchor buttons to
     # Default: "BOTTOM_LEFT"
+    # Allowed values:
+    # - TOP_LEFT
+    # - TOP_CENTER
+    # - TOP_RIGHT
+    # - RIGHT_CENTER
+    # - BOTTOM_RIGHT
+    # - BOTTOM_CENTER
+    # - BOTTOM_LEFT
+    # - LEFT_CENTER
     buttonAnchor: BOTTOM_LEFT
 
     # Which direction the buttons will go
     # Default: "HORIZONTAL"
+    # Allowed values:
+    # - VERTICAL
+    # - HORIZONTAL
     direction: HORIZONTAL
 
     # How horizontally far away from the anchor to place the buttons

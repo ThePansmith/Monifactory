@@ -1,21 +1,23 @@
+/**
+ * Greenhouse multiblock
+ */
+
 ServerEvents.recipes(event => {
 
-    ////// Machine Recipe //////
+    /*   Machine Recipe  */
 
-    event.shaped(
-        'gtceu:greenhouse',
-        ['AWA',
-            'ASA',
-            'WAW'],
-        {
-            A: '#gtceu:circuits/mv',
-            W: 'gtceu:copper_single_cable',
-            S: 'gtceu:solid_machine_casing'
-        }
-    ).id('kubejs:shaped/greenhouse')
+    event.shaped('gtceu:greenhouse', [
+        'AWA',
+        'ASA',
+        'WAW'
+    ], {
+        A: '#gtceu:circuits/mv',
+        W: 'gtceu:copper_single_cable',
+        S: 'gtceu:solid_machine_casing'
+    }).id('kubejs:shaped/greenhouse')
 
 
-    ////// Greenhouse Recipes //////
+    /*  Greenhouse Recipes  */
 
     function boost(input, factor) {
         let boosted = [];
@@ -23,21 +25,21 @@ ServerEvents.recipes(event => {
             let item = Item.of(element);
             let curCount = item.getCount() * factor;
             let type = item.getId();
-            while(curCount > item.maxStackSize) {
+            while (curCount > item.maxStackSize) {
                 boosted.push(Item.of(type, item.maxStackSize));
                 curCount -= item.maxStackSize;
             }
-            if(curCount > 0) boosted.push(Item.of(type, curCount));
+            if (curCount > 0) boosted.push(Item.of(type, curCount));
         })
         return boosted;
     }
 
     function Greenhouse(mod, input, duration, output, inputFeedbackAmount) {
-        //Create new boosted output item array
+        // Create new boosted output item array
         let boostedOutputs = boost(output, 2)
 
-        //Push sapling/seed inputs (unboosted) onto output arrays
-        if(inputFeedbackAmount > 0) {
+        // Push sapling/seed inputs (unboosted) onto output arrays
+        if (inputFeedbackAmount > 0) {
             output.push(Item.of(`${mod}:${input}`, inputFeedbackAmount));
             boostedOutputs.push(Item.of(`${mod}:${input}`, inputFeedbackAmount));
         }
@@ -60,7 +62,7 @@ ServerEvents.recipes(event => {
     }
 
 
-    ////// Trees //////
+    // //// Trees //////
     Greenhouse('gtceu', 'rubber_sapling', 1280, ['32x gtceu:rubber_log', '8x gtceu:sticky_resin'], 4)
     Greenhouse('minecraft', 'oak_sapling', 1280, ['64x minecraft:oak_log'], 4)
     Greenhouse('minecraft', 'dark_oak_sapling', 1280, ['64x minecraft:dark_oak_log'], 4)
@@ -77,9 +79,9 @@ ServerEvents.recipes(event => {
     Greenhouse('minecraft', 'crimson_fungus', 1280, ['64x minecraft:crimson_stem', '32x minecraft:nether_wart_block', '16x minecraft:shroomlight'], 4)
     Greenhouse('thermal', 'rubberwood_sapling', 1280, ['64x thermal:rubberwood_log'], 4)
 
-    ////// Crops //////
+    // //// Crops //////
     Greenhouse('minecraft', 'sugar_cane', 640, ['32x minecraft:sugar_cane'], 0)
-    //TODO: Increase water requirement for Kelp
+    // TODO: Increase water requirement for Kelp
     Greenhouse('minecraft', 'kelp', 640, ['32x minecraft:kelp'], 0)
     Greenhouse('minecraft', 'bamboo', 640, ['48x minecraft:bamboo'], 0)
     Greenhouse('minecraft', 'cactus', 640, ['32x minecraft:cactus'], 0)
@@ -97,8 +99,8 @@ ServerEvents.recipes(event => {
     Greenhouse('minecraft', 'red_mushroom', 640, ['16x minecraft:red_mushroom'], 0)
     Greenhouse('minecraft', 'brown_mushroom', 640, ['16x minecraft:brown_mushroom'], 0)
 
-    
-    ////// Flowers & Cosmetic Blocks //////
+
+    // //// Flowers & Cosmetic Blocks //////
     let flowers = [
         'wither_rose',
         'cornflower',
@@ -134,7 +136,7 @@ ServerEvents.recipes(event => {
     flowers.forEach(flower => {
         Greenhouse('minecraft', flower, 640, [Item.of(flower, 48)], 0);
     })
-    //Torchflowers are grown from seeds
+    // Torchflowers are grown from seeds
     Greenhouse('minecraft', 'torchflower_seeds', 640, [Item.of('torchflower', 48)], 0);
 })
 

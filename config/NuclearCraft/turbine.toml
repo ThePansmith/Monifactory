@@ -10,7 +10,7 @@
 	#Steam flow per blade mB/t
 	#Range: 100 ~ 1000000
 	blade_flow = 2000
-	#Efficiency %: gold, aluminium, copper, magnesium, beryllium, silver
+	#Efficiency %: gold, copper, magnesium, beryllium, silver, aluminum
 	efficiency = [104.0, 98.0, 110.0, 86.0, 90.0, 112.0]
 	#You can define blocks by block_name. So copper_turbine_coil will fall back to nuclearcraft:copper_turbine_coil. Or qualify it with namespace like some_mod:some_block.
 	#Or use block tag key. #nuclearcraft:fission_reactor_casing will fall back to blocks with this tag. Do not forget to put #.
@@ -25,7 +25,6 @@
 	#Default placement rules have all examples
 	placement_explanations = ""
 	gold = ["turbine_beryllium_coil"]
-	aluminium = ["turbine_gold_coil|turbine_magnesium_coil|turbine_beryllium_coil|turbine_gold_coil|turbine_copper_coil"]
 	copper = ["turbine_gold_coil"]
 	magnesium = ["turbine_bearing"]
 	beryllium = ["turbine_magnesium_coil"]
@@ -33,4 +32,5 @@
 	#Energy gen multiplier
 	#Range: 1.0 ~ 1000000.0
 	energy_gen = 1
+	aluminum = ["turbine_gold_coil|turbine_magnesium_coil|turbine_beryllium_coil|turbine_gold_coil|turbine_copper_coil"]
 

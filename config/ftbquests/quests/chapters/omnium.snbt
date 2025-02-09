@@ -5,7 +5,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "kubejs:mote_of_omnium"
 	id: "25FEB9E61EEC1A96"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -421,7 +421,7 @@
 				item: "kubejs:solidified_hydrogen"
 				type: "item"
 			}]
-			title: "Element 001: Hydrogen"
+			title: "{moni.quest.4A6F916494B787AE.title}"
 			x: -13.0d
 			y: 4.25d
 		}
@@ -438,7 +438,7 @@
 				item: "kubejs:solidified_helium"
 				type: "item"
 			}]
-			title: "Element 002: Helium"
+			title: "{moni.quest.4DCB58F9B3771DC8.title}"
 			x: 12.5d
 			y: 4.25d
 		}
@@ -455,7 +455,7 @@
 				item: "gtceu:lithium_dust"
 				type: "item"
 			}]
-			title: "Element 003: Lithium"
+			title: "{moni.quest.797D6787F2BEE54C.title}"
 			x: -13.0d
 			y: 5.75d
 		}
@@ -472,7 +472,7 @@
 				item: "gtceu:beryllium_ingot"
 				type: "item"
 			}]
-			title: "Element 004: Beryllium"
+			title: "{moni.quest.3D54068FFDD1F3CE.title}"
 			x: -11.5d
 			y: 5.75d
 		}
@@ -489,7 +489,7 @@
 				item: "gtceu:boron_dust"
 				type: "item"
 			}]
-			title: "Element 005: Boron"
+			title: "{moni.quest.59C4DA6088B9BC7D.title}"
 			x: 5.0d
 			y: 5.75d
 		}
@@ -506,7 +506,7 @@
 				item: "gtceu:carbon_dust"
 				type: "item"
 			}]
-			title: "Element 006: Carbon"
+			title: "{moni.quest.63969C74693044BA.title}"
 			x: 6.5d
 			y: 5.75d
 		}
@@ -523,7 +523,7 @@
 				item: "kubejs:solidified_nitrogen"
 				type: "item"
 			}]
-			title: "Element 007: Nitrogen"
+			title: "{moni.quest.03819818FD208DEE.title}"
 			x: 8.0d
 			y: 5.75d
 		}
@@ -540,7 +540,7 @@
 				item: "kubejs:solidified_oxygen"
 				type: "item"
 			}]
-			title: "Element 008: Oxygen"
+			title: "{moni.quest.6648CD525CE34898.title}"
 			x: 9.5d
 			y: 5.75d
 		}
@@ -557,7 +557,7 @@
 				item: "kubejs:solidified_fluorine"
 				type: "item"
 			}]
-			title: "Element 009: Fluorine"
+			title: "{moni.quest.02782201B4D4DB5C.title}"
 			x: 11.0d
 			y: 5.75d
 		}
@@ -574,7 +574,7 @@
 				item: "kubejs:solidified_neon"
 				type: "item"
 			}]
-			title: "Element 010: Neon"
+			title: "{moni.quest.36902938AFF55303.title}"
 			x: 12.5d
 			y: 5.75d
 		}
@@ -591,7 +591,7 @@
 				item: "gtceu:sodium_dust"
 				type: "item"
 			}]
-			title: "Element 011: Sodium"
+			title: "{moni.quest.228E46FDEBF7F389.title}"
 			x: -13.0d
 			y: 7.25d
 		}
@@ -608,7 +608,7 @@
 				item: "gtceu:magnesium_dust"
 				type: "item"
 			}]
-			title: "Element 012: Magnesium"
+			title: "{moni.quest.14F2E61E80D231AE.title}"
 			x: -11.5d
 			y: 7.25d
 		}
@@ -625,7 +625,7 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			title: "Element 013: Aluminium"
+			title: "{moni.quest.24FC29C2D5E3A76E.title}"
 			x: 5.0d
 			y: 7.25d
 		}
@@ -642,7 +642,7 @@
 				item: "gtceu:silicon_dust"
 				type: "item"
 			}]
-			title: "Element 014: Silicon"
+			title: "{moni.quest.1A693859BD2CDADF.title}"
 			x: 6.5d
 			y: 7.25d
 		}
@@ -659,7 +659,7 @@
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
-			title: "Element 015: Phosphorus"
+			title: "{moni.quest.102BE3675105B9F5.title}"
 			x: 8.0d
 			y: 7.25d
 		}
@@ -676,7 +676,7 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			title: "Element 016: Sulfur"
+			title: "{moni.quest.0BEEC4D7F9839411.title}"
 			x: 9.5d
 			y: 7.25d
 		}
@@ -693,7 +693,7 @@
 				item: "kubejs:solidified_chlorine"
 				type: "item"
 			}]
-			title: "Element 017: Chlorine"
+			title: "{moni.quest.293A7F5F0A58E5F3.title}"
 			x: 11.0d
 			y: 7.25d
 		}
@@ -710,7 +710,7 @@
 				item: "kubejs:solidified_argon"
 				type: "item"
 			}]
-			title: "Element 018: Argon"
+			title: "{moni.quest.12B896D7EF558835.title}"
 			x: 12.5d
 			y: 7.25d
 		}
@@ -727,7 +727,7 @@
 				item: "gtceu:potassium_dust"
 				type: "item"
 			}]
-			title: "Element 019: Potassium"
+			title: "{moni.quest.5B3ABAA58C564CB4.title}"
 			x: -13.0d
 			y: 8.75d
 		}
@@ -744,7 +744,7 @@
 				item: "gtceu:calcium_dust"
 				type: "item"
 			}]
-			title: "Element 020: Calcium"
+			title: "{moni.quest.5A25A4DEF1CCA576.title}"
 			x: -11.5d
 			y: 8.75d
 		}
@@ -761,7 +761,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			title: "Element 022: Titanium"
+			title: "{moni.quest.6F76D81C52F0E04C.title}"
 			x: -8.5d
 			y: 8.75d
 		}
@@ -778,7 +778,7 @@
 				item: "gtceu:vanadium_ingot"
 				type: "item"
 			}]
-			title: "Element 023: Vanadium"
+			title: "{moni.quest.0D552ECAE4FC617B.title}"
 			x: -7.0d
 			y: 8.75d
 		}
@@ -793,7 +793,7 @@
 				count: 64L
 				id: "64E4171E8B8F7956"
 				item: "gtceu:chromium_ingot"
-				title: "Element 024: Chromium"
+				title: "{moni.task.64E4171E8B8F7956}"
 				type: "item"
 			}]
 			x: -5.5d
@@ -812,7 +812,7 @@
 				item: "gtceu:manganese_ingot"
 				type: "item"
 			}]
-			title: "Element 025: Manganese"
+			title: "{moni.quest.4AF3060B2426B25F.title}"
 			x: -4.0d
 			y: 8.75d
 		}
@@ -829,7 +829,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "Element 026: Iron"
+			title: "{moni.quest.7DB1C08EEF0BEE02.title}"
 			x: -2.5d
 			y: 8.75d
 		}
@@ -846,7 +846,7 @@
 				item: "gtceu:cobalt_ingot"
 				type: "item"
 			}]
-			title: "Element 027: Cobalt"
+			title: "{moni.quest.73F80C5062B86D09.title}"
 			x: -1.0d
 			y: 8.75d
 		}
@@ -863,7 +863,7 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			title: "Element 028: Nickel"
+			title: "{moni.quest.42F1EF8432C05294.title}"
 			x: 0.5d
 			y: 8.75d
 		}
@@ -880,7 +880,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "Element 029: Copper"
+			title: "{moni.quest.4BBB1F5A2657650D.title}"
 			x: 2.0d
 			y: 8.75d
 		}
@@ -897,7 +897,7 @@
 				item: "gtceu:zinc_ingot"
 				type: "item"
 			}]
-			title: "Element 030: Zinc"
+			title: "{moni.quest.76B813A1717561B5.title}"
 			x: 3.5d
 			y: 8.75d
 		}
@@ -914,7 +914,7 @@
 				item: "gtceu:gallium_ingot"
 				type: "item"
 			}]
-			title: "Element 031: Gallium"
+			title: "{moni.quest.2859B3747ACF856C.title}"
 			x: 5.0d
 			y: 8.75d
 		}
@@ -931,7 +931,7 @@
 				item: "gtceu:arsenic_dust"
 				type: "item"
 			}]
-			title: "Element 033: Arsenic"
+			title: "{moni.quest.7C55E6EBB28BF5C2.title}"
 			x: 8.0d
 			y: 8.75d
 		}
@@ -948,7 +948,7 @@
 				item: "kubejs:solidified_bromine"
 				type: "item"
 			}]
-			title: "Element 035: Bromine"
+			title: "{moni.quest.5928FCBF99CF031B.title}"
 			x: 11.0d
 			y: 8.75d
 		}
@@ -965,7 +965,7 @@
 				item: "kubejs:solidified_krypton"
 				type: "item"
 			}]
-			title: "Element 036: Krypton"
+			title: "{moni.quest.271B184131614D97.title}"
 			x: 12.5d
 			y: 8.75d
 		}
@@ -982,7 +982,7 @@
 				item: "gtceu:yttrium_ingot"
 				type: "item"
 			}]
-			title: "Element 039: Yttrium"
+			title: "{moni.quest.2B7DEF68BB674CC6.title}"
 			x: -10.0d
 			y: 10.25d
 		}
@@ -999,7 +999,7 @@
 				item: "gtceu:palladium_ingot"
 				type: "item"
 			}]
-			title: "Element 046: Palladium"
+			title: "{moni.quest.20116A38B08BA7A3.title}"
 			x: 0.5d
 			y: 10.25d
 		}
@@ -1016,7 +1016,7 @@
 				item: "gtceu:silver_ingot"
 				type: "item"
 			}]
-			title: "Element 047: Silver"
+			title: "{moni.quest.442C028AB73A0A06.title}"
 			x: 2.0d
 			y: 10.25d
 		}
@@ -1033,7 +1033,7 @@
 				item: "gtceu:indium_ingot"
 				type: "item"
 			}]
-			title: "Element 049: Indium"
+			title: "{moni.quest.33131617D0919A5B.title}"
 			x: 5.0d
 			y: 10.25d
 		}
@@ -1050,7 +1050,7 @@
 				item: "gtceu:tin_ingot"
 				type: "item"
 			}]
-			title: "Element 050: Tin"
+			title: "{moni.quest.7C6E64B63F0DB4BD.title}"
 			x: 6.5d
 			y: 10.25d
 		}
@@ -1067,7 +1067,7 @@
 				item: "gtceu:antimony_ingot"
 				type: "item"
 			}]
-			title: "Element 051: Antimony"
+			title: "{moni.quest.02EFF3E87346EDF4.title}"
 			x: 8.0d
 			y: 10.25d
 		}
@@ -1084,7 +1084,7 @@
 				item: "kubejs:solidified_xenon"
 				type: "item"
 			}]
-			title: "Element 054: Xenon"
+			title: "{moni.quest.4978EC7E56F89AB0.title}"
 			x: 12.5d
 			y: 10.25d
 		}
@@ -1099,7 +1099,7 @@
 				count: 64L
 				id: "2D438909DE308C35"
 				item: "gtceu:lanthanum_dust"
-				title: "Element 057: Lanthanum"
+				title: "{moni.task.2D438909DE308C35}"
 				type: "item"
 			}]
 			x: -10.0d
@@ -1118,7 +1118,7 @@
 				item: "gtceu:tungsten_ingot"
 				type: "item"
 			}]
-			title: "Element 074: Tungsten"
+			title: "{moni.quest.7B73FD81B7E8FFFE.title}"
 			x: -5.5d
 			y: 11.75d
 		}
@@ -1135,7 +1135,7 @@
 				item: "gtceu:osmium_ingot"
 				type: "item"
 			}]
-			title: "Element 076: Osmium"
+			title: "{moni.quest.0A6D3E69FEB53084.title}"
 			x: -2.5d
 			y: 11.75d
 		}
@@ -1152,7 +1152,7 @@
 				item: "gtceu:iridium_ingot"
 				type: "item"
 			}]
-			title: "Element 077: Iridium"
+			title: "{moni.quest.28FE832435EAEE16.title}"
 			x: -1.0d
 			y: 11.75d
 		}
@@ -1169,7 +1169,7 @@
 				item: "gtceu:platinum_ingot"
 				type: "item"
 			}]
-			title: "Element 078: Platinum"
+			title: "{moni.quest.12602DA0FD3D8349.title}"
 			x: 0.5d
 			y: 11.75d
 		}
@@ -1186,7 +1186,7 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			title: "Element 079: Gold"
+			title: "{moni.quest.26380A0FD7A8688C.title}"
 			x: 2.0d
 			y: 11.75d
 		}
@@ -1203,7 +1203,7 @@
 				item: "kubejs:solidified_mercury"
 				type: "item"
 			}]
-			title: "Element 080: Mercury"
+			title: "{moni.quest.70E774D0394C0B8E.title}"
 			x: 3.5d
 			y: 11.75d
 		}
@@ -1220,7 +1220,7 @@
 				item: "kubejs:solidified_radon"
 				type: "item"
 			}]
-			title: "Element 086: Radon"
+			title: "{moni.quest.3A3C9648BD56ED20.title}"
 			x: 12.5d
 			y: 11.75d
 		}
@@ -1237,7 +1237,7 @@
 				item: "gtceu:thorium_ingot"
 				type: "item"
 			}]
-			title: "Element 090: Thorium"
+			title: "{moni.quest.7B8621728BF88BEC.title}"
 			x: -8.5d
 			y: 17.0d
 		}
@@ -1254,7 +1254,7 @@
 				item: "kubejs:stabilized_uranium"
 				type: "item"
 			}]
-			title: "Element 092: Uranium"
+			title: "{moni.quest.4EDE4D4D109BF2C2.title}"
 			x: -5.5d
 			y: 17.0d
 		}
@@ -1271,7 +1271,7 @@
 				item: "kubejs:stabilized_neptunium"
 				type: "item"
 			}]
-			title: "Element 093: Neptunium"
+			title: "{moni.quest.57AE5794C23B5B6F.title}"
 			x: -4.0d
 			y: 17.0d
 		}
@@ -1288,7 +1288,7 @@
 				item: "kubejs:stabilized_plutonium"
 				type: "item"
 			}]
-			title: "Element 094: Plutonium"
+			title: "{moni.quest.17B5F089E58BB780.title}"
 			x: -2.5d
 			y: 17.0d
 		}
@@ -1305,7 +1305,7 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
-			title: "Element 095: Americium"
+			title: "{moni.quest.6416118459258E42.title}"
 			x: -1.0d
 			y: 17.0d
 		}
@@ -1322,7 +1322,7 @@
 				item: "kubejs:stabilized_curium"
 				type: "item"
 			}]
-			title: "Element 096: Curium"
+			title: "{moni.quest.4CE0D6E9E7DE3129.title}"
 			x: 0.5d
 			y: 17.0d
 		}
@@ -1339,7 +1339,7 @@
 				item: "kubejs:stabilized_berkelium"
 				type: "item"
 			}]
-			title: "Element 097: Berkelium"
+			title: "{moni.quest.41C61F32DBEF85B7.title}"
 			x: 2.0d
 			y: 17.0d
 		}
@@ -1356,7 +1356,7 @@
 				item: "kubejs:stabilized_californium"
 				type: "item"
 			}]
-			title: "Element 098: Californium"
+			title: "{moni.quest.72414246D5FBBFA9.title}"
 			x: 3.5d
 			y: 17.0d
 		}
@@ -1373,7 +1373,7 @@
 				item: "kubejs:stabilized_einsteinium"
 				type: "item"
 			}]
-			title: "Element 099: Einsteinium"
+			title: "{moni.quest.6F7D6294E9F311E4.title}"
 			x: 5.0d
 			y: 17.0d
 		}
@@ -1390,7 +1390,7 @@
 				item: "gtceu:niobium_ingot"
 				type: "item"
 			}]
-			title: "Element 041: Niobium"
+			title: "{moni.quest.0D732BC5312234B4.title}"
 			x: -7.0d
 			y: 10.25d
 		}
@@ -1407,7 +1407,7 @@
 				item: "gtceu:cadmium_dust"
 				type: "item"
 			}]
-			title: "Element 048: Cadmium"
+			title: "{moni.quest.68CE119F73B6FACF.title}"
 			x: 3.5d
 			y: 10.25d
 		}
@@ -1424,7 +1424,7 @@
 				item: "gtceu:neodymium_ingot"
 				type: "item"
 			}]
-			title: "Element 060: Neodymium"
+			title: "{moni.quest.0DB13ACF2241345E.title}"
 			x: -5.5d
 			y: 15.5d
 		}
@@ -1441,7 +1441,7 @@
 				item: "gtceu:tantalum_ingot"
 				type: "item"
 			}]
-			title: "Element 073: Tantalum"
+			title: "{moni.quest.016054D07025C8B1.title}"
 			x: -7.0d
 			y: 11.75d
 		}
@@ -1458,7 +1458,7 @@
 				item: "gtceu:duranium_ingot"
 				type: "item"
 			}]
-			title: "Element ???: Duranium"
+			title: "{moni.quest.119C529A35758AF2.title}"
 			x: -2.5d
 			y: 19.25d
 		}
@@ -1475,7 +1475,7 @@
 				item: "gtceu:molybdenum_ingot"
 				type: "item"
 			}]
-			title: "Element 042: Molybdenum"
+			title: "{moni.quest.1B45AA7042D110E4.title}"
 			x: -5.5d
 			y: 10.25d
 		}
@@ -1492,7 +1492,7 @@
 				item: "gtceu:caesium_dust"
 				type: "item"
 			}]
-			title: "Element 055: Caesium"
+			title: "{moni.quest.5C549B001A8AB62F.title}"
 			x: -13.0d
 			y: 11.75d
 		}
@@ -1509,7 +1509,7 @@
 				item: "gtceu:samarium_ingot"
 				type: "item"
 			}]
-			title: "Element 062: Samarium"
+			title: "{moni.quest.05C97DC2035CE7CB.title}"
 			x: -2.5d
 			y: 15.5d
 		}
@@ -1526,7 +1526,7 @@
 				item: "gtceu:lead_ingot"
 				type: "item"
 			}]
-			title: "Element 082: Lead"
+			title: "{moni.quest.56F6AFFFCAE8A5D4.title}"
 			x: 6.5d
 			y: 11.75d
 		}
@@ -1543,7 +1543,7 @@
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
-			title: "Element ???: Trinium"
+			title: "{moni.quest.77880E592DB38C9C.title}"
 			x: 0.5d
 			y: 19.25d
 		}
@@ -1560,7 +1560,7 @@
 				item: "gtceu:ruthenium_ingot"
 				type: "item"
 			}]
-			title: "Element 044: Ruthenium"
+			title: "{moni.quest.4E39FDB6FACDF522.title}"
 			x: -2.5d
 			y: 10.25d
 		}
@@ -1577,7 +1577,7 @@
 				item: "gtceu:barium_dust"
 				type: "item"
 			}]
-			title: "Element 056: Barium"
+			title: "{moni.quest.4DC7B2BB86A2FEBD.title}"
 			x: -11.5d
 			y: 11.75d
 		}
@@ -1594,7 +1594,7 @@
 				item: "gtceu:europium_ingot"
 				type: "item"
 			}]
-			title: "Element 063: Europium"
+			title: "{moni.quest.64CD4BDBEBD0353D.title}"
 			x: -1.0d
 			y: 15.5d
 		}
@@ -1611,7 +1611,7 @@
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
-			title: "Element 110: Darmstadtium"
+			title: "{moni.quest.007B1B457AA3F497.title}"
 			x: 0.5d
 			y: 13.25d
 		}
@@ -1628,7 +1628,7 @@
 				item: "gtceu:rhodium_ingot"
 				type: "item"
 			}]
-			title: "Element 045: Rhodium"
+			title: "{moni.quest.39588577CDBFCAE4.title}"
 			x: -1.0d
 			y: 10.25d
 		}
@@ -1645,7 +1645,7 @@
 				item: "gtceu:cerium_dust"
 				type: "item"
 			}]
-			title: "Element 058: Cerium"
+			title: "{moni.quest.408C7F5C8340AF27.title}"
 			x: -8.5d
 			y: 15.5d
 		}
@@ -1662,7 +1662,7 @@
 				item: "gtceu:lutetium_ingot"
 				type: "item"
 			}]
-			title: "Element 071: Lutetium"
+			title: "{moni.quest.07706AB24D866D7F.title}"
 			x: 11.0d
 			y: 15.5d
 		}
@@ -1679,7 +1679,7 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			title: "Element ???: Tritanium"
+			title: "{moni.quest.3D9E25B45A7942A7.title}"
 			x: -1.0d
 			y: 19.25d
 		}
@@ -1696,12 +1696,12 @@
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			title: "Element ???: Naquadah"
+			title: "{moni.quest.37FD045CC0AEB11B.title}"
 			x: 2.0d
 			y: 19.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "63CFADCCE0688239"
@@ -1710,16 +1710,16 @@
 				icon: "enderio:painted_fence"
 				id: "4436AE0DF3B78649"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.4436AE0DF3B78649}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -7.0d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7D50B0E825F8D70B"
@@ -1728,16 +1728,16 @@
 				icon: "enderio:painted_fence"
 				id: "415231D9E79ADF76"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.415231D9E79ADF76}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -8.5d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6564ADDBABF7DB49"
@@ -1746,16 +1746,16 @@
 				icon: "enderio:painted_fence"
 				id: "5DB657A9EF012D12"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.5DB657A9EF012D12}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -4.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "75FDDFCD19B1614C"
@@ -1764,16 +1764,16 @@
 				icon: "enderio:painted_fence"
 				id: "05487BA8EF0D19C6"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.05487BA8EF0D19C6}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -7.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1DD6F43254B077E1"
@@ -1782,16 +1782,16 @@
 				icon: "enderio:painted_fence"
 				id: "1BE1DA02DDB3277C"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.1BE1DA02DDB3277C}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 0.5d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "3CFF422D1BAAEB65"
@@ -1800,16 +1800,16 @@
 				icon: "enderio:painted_fence"
 				id: "4212B218BA04DBA1"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.4212B218BA04DBA1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 2.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7BEAC81200BD7563"
@@ -1818,16 +1818,16 @@
 				icon: "enderio:painted_fence"
 				id: "4035A62968461C40"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.4035A62968461C40}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 3.5d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "441BD16D32E88974"
@@ -1836,16 +1836,16 @@
 				icon: "enderio:painted_fence"
 				id: "73AB7C76A6C3B1E7"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.73AB7C76A6C3B1E7}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -4.0d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "275EB687F851025B"
@@ -1854,16 +1854,16 @@
 				icon: "enderio:painted_fence"
 				id: "4D78E0F0784E30B1"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.4D78E0F0784E30B1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7978CD633112BE89"
@@ -1872,16 +1872,16 @@
 				icon: "enderio:painted_fence"
 				id: "20B30658AB28C786"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.20B30658AB28C786}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "721D1C6CA8C2AF22"
@@ -1890,16 +1890,16 @@
 				icon: "enderio:painted_fence"
 				id: "1F7AC5B831F7860B"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.1F7AC5B831F7860B}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 8.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "39999DC07696B3FC"
@@ -1908,16 +1908,16 @@
 				icon: "enderio:painted_fence"
 				id: "107456F9C5FC6932"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.107456F9C5FC6932}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -4.0d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "47E4558362202D5D"
@@ -1926,16 +1926,16 @@
 				icon: "enderio:painted_fence"
 				id: "1624AC337BD63AAA"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.1624AC337BD63AAA}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -8.5d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "21000D112770C852"
@@ -1944,16 +1944,16 @@
 				icon: "enderio:painted_fence"
 				id: "7DC386F41AA01A9B"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.7DC386F41AA01A9B}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -13.0d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "28558A445F62D737"
@@ -1962,16 +1962,16 @@
 				icon: "enderio:painted_fence"
 				id: "376026CA732087F5"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.376026CA732087F5}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -8.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1D5D25F52BE6709E"
@@ -1980,16 +1980,16 @@
 				icon: "enderio:painted_fence"
 				id: "7546DF93889C5CA8"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.7546DF93889C5CA8}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -10.0d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "65F05B1B1A57D341"
@@ -1998,16 +1998,16 @@
 				icon: "enderio:painted_fence"
 				id: "2E59B36D918C425C"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.2E59B36D918C425C}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -10.0d
 			y: 8.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "62AAA344BBAA638C"
@@ -2016,16 +2016,16 @@
 				icon: "enderio:painted_fence"
 				id: "12FABD7054200201"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.12FABD7054200201}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -11.5d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "76B613A95DFDD41D"
@@ -2034,16 +2034,16 @@
 				icon: "enderio:painted_fence"
 				id: "4CF6E6523CA5A137"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.4CF6E6523CA5A137}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -13.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "44F585590EB4C28C"
@@ -2052,16 +2052,16 @@
 				icon: "enderio:painted_fence"
 				id: "572DAB92CDAB9261"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.572DAB92CDAB9261}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 10.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "26E51AB9E31378EE"
@@ -2070,16 +2070,16 @@
 				icon: "enderio:painted_fence"
 				id: "794A760D4D9F5CD0"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.794A760D4D9F5CD0}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -7.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1E752C53A107FFF1"
@@ -2088,16 +2088,16 @@
 				icon: "enderio:painted_fence"
 				id: "288EBED516DBF375"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.288EBED516DBF375}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -5.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "494F5DDE304AB43E"
@@ -2106,16 +2106,16 @@
 				icon: "enderio:painted_fence"
 				id: "4B0AE90670F19AB1"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.4B0AE90670F19AB1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "32326CF76577DCA2"
@@ -2124,16 +2124,16 @@
 				icon: "enderio:painted_fence"
 				id: "5C462084D069B744"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.5C462084D069B744}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 5.0d
 			y: 11.75d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "07C3BF79504A9213"
@@ -2142,16 +2142,16 @@
 				icon: "enderio:painted_fence"
 				id: "6272A48A09750CDC"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.6272A48A09750CDC}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -4.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "28D99F6FE6773536"
@@ -2160,16 +2160,16 @@
 				icon: "enderio:painted_fence"
 				id: "45B2AD5AD02BE4FD"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.45B2AD5AD02BE4FD}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 8.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1DAA388973010872"
@@ -2178,16 +2178,16 @@
 				icon: "enderio:painted_fence"
 				id: "781FDA6CB07765FB"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.781FDA6CB07765FB}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6B0F050E08449326"
@@ -2196,16 +2196,16 @@
 				icon: "enderio:painted_fence"
 				id: "676F242143EEB857"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.676F242143EEB857}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 12.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "46D5DFC5AFEC58AD"
@@ -2214,16 +2214,16 @@
 				icon: "enderio:painted_fence"
 				id: "7CB68870DFB04D70"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.7CB68870DFB04D70}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -2.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "3ACAFC347DACFC8D"
@@ -2232,16 +2232,16 @@
 				icon: "enderio:painted_fence"
 				id: "7A5056203D757251"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.7A5056203D757251}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -1.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "041AFDD081C8054C"
@@ -2250,16 +2250,16 @@
 				icon: "enderio:painted_fence"
 				id: "763AA80756A03962"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.763AA80756A03962}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 5.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "62D5330EF33F11E7"
@@ -2268,16 +2268,16 @@
 				icon: "enderio:painted_fence"
 				id: "5EBA4602A8B727B1"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.5EBA4602A8B727B1}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 2.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1B3F950BEE44BAEC"
@@ -2286,16 +2286,16 @@
 				icon: "enderio:painted_fence"
 				id: "46A695F2ACF8AA05"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.46A695F2ACF8AA05}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 3.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "20573874CE130F4B"
@@ -2304,16 +2304,16 @@
 				icon: "enderio:painted_fence"
 				id: "34BCA11F206EBB29"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.34BCA11F206EBB29}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 6.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "13E958AA3A6CCE85"
@@ -2322,16 +2322,16 @@
 				icon: "enderio:painted_fence"
 				id: "7158443EAB25140A"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.7158443EAB25140A}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
 			y: 13.25d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7E34C410DF281917"
@@ -2340,16 +2340,16 @@
 				icon: "enderio:painted_fence"
 				id: "7F61249273A9E0CB"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.7F61249273A9E0CB}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 5.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "19813D769E0693EA"
@@ -2358,16 +2358,16 @@
 				icon: "enderio:painted_fence"
 				id: "4348AEED28459C0F"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.4348AEED28459C0F}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 6.5d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "247CCB1BC2E7C27C"
@@ -2376,16 +2376,16 @@
 				icon: "enderio:painted_fence"
 				id: "58F4FFB270CEA21B"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.58F4FFB270CEA21B}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 6.5d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6F28EB00ECF74C9D"
@@ -2394,16 +2394,16 @@
 				icon: "enderio:painted_fence"
 				id: "7C82CA9F8892828F"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.7C82CA9F8892828F}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 8.0d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "69DEA8612D70B2DE"
@@ -2412,16 +2412,16 @@
 				icon: "enderio:painted_fence"
 				id: "3117E58BBBA2F84C"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.3117E58BBBA2F84C}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 8.0d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6AB1F7A04FF5D1B5"
@@ -2430,16 +2430,16 @@
 				icon: "enderio:painted_fence"
 				id: "5CAAB07517C865BD"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.5CAAB07517C865BD}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 15.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "31125F2DDD953CDD"
@@ -2448,16 +2448,16 @@
 				icon: "enderio:painted_fence"
 				id: "67B8DFBE1AE7297F"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.67B8DFBE1AE7297F}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 9.5d
 			y: 17.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1465C7BE81304747"
@@ -2466,16 +2466,16 @@
 				icon: "enderio:painted_fence"
 				id: "3A1227F656C3CA65"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.3A1227F656C3CA65}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
 			y: 17.0d
 		}
 		{
-			description: ["This element exists but is not required for the Mote of Omnium."]
+			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "4CF5155563E346BE"
@@ -2484,16 +2484,16 @@
 				icon: "enderio:painted_fence"
 				id: "51A37F29775DF2AA"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.51A37F29775DF2AA}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.motenothing.title}"
 			x: -11.5d
 			y: 13.25d
 		}
 		{
-			description: ["This element exists but is not needed for the Mote of Omnium."]
+			description: ["{moni.quest.5D1DAC23C6B89AC3.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "5D1DAC23C6B89AC3"
@@ -2502,16 +2502,16 @@
 				icon: "enderio:painted_fence"
 				id: "555011C2A9D2CC5D"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.555011C2A9D2CC5D}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.5D1DAC23C6B89AC3.title}"
 			x: 8.0d
 			y: 11.75d
 		}
 		{
-			description: ["This element exists but is not needed for the Mote of Omnium."]
+			description: ["{moni.quest.2D788BE1CA9A2D69.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "2D788BE1CA9A2D69"
@@ -2520,11 +2520,11 @@
 				icon: "enderio:painted_fence"
 				id: "1565FA8942925060"
 				stat: "minecraft:play_time"
-				title: " "
+				title: "{moni.task.1565FA8942925060}"
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "{moni.quest.2D788BE1CA9A2D69.title}"
 			x: 6.5d
 			y: 8.75d
 		}
@@ -2556,10 +2556,10 @@
 				"18EF39D0C5B55C34"
 				"0B5B7A15B7FD684C"
 			]
-			description: ["As the name suggests, this catalyst is formed from exotic non-elemental materials and alloys."]
+			description: ["{moni.quest.67591B6025C03130.description1}"]
 			id: "67591B6025C03130"
 			size: 2.0d
-			subtitle: "A small appetizer, before the &9Omnium&r main course."
+			subtitle: "{moni.quest.67591B6025C03130.subtitle}"
 			tasks: [{
 				id: "4E828B100CB2362F"
 				item: "kubejs:exotic_materials_catalyst"
@@ -2648,11 +2648,16 @@
 				"67591B6025C03130"
 				"5928FCBF99CF031B"
 			]
-			description: ["&9Omnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."]
+			description: ["{moni.quest.739F7BF2A90B278A.description1}"]
 			id: "739F7BF2A90B278A"
+			rewards: [{
+				id: "7B426B4EE9DC90AC"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 3.0d
-			subtitle: "Man, that's a LOT of quests linked to this one."
+			subtitle: "{moni.quest.739F7BF2A90B278A.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "6E908CE0BA9547C5"
@@ -2663,5 +2668,5 @@
 			y: 0.0d
 		}
 	]
-	title: "Elements and Alloys"
+	title: "{moni.chapter.25FEB9E61EEC1A96.title}"
 }

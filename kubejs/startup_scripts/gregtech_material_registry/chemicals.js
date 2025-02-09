@@ -86,12 +86,22 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x58649B)
         .components('1x lead', '1x sodium')
 
+    // Crystal Matrix Line
+    event.create('acetylene')
+        .gas()
+        .color(0xFF4F4F)
+        .components('2x carbon', '2x hydrogen')
+
+    event.create('calcium_carbide')
+        .dust()
+        .color(0xCFC870)
+        .components('1x calcium', '2x carbon')
 
     // Ingredients to create Polyethyl Cyanoacrylate, (PECA) a post-tank polymer
     event.create('sodium_cyanide')
         .dust()
         .color(0x7FB4C7)
-        .components('1x sodium', '1x carbon', '1x oxygen')
+        .components('1x sodium', '1x carbon', '1x nitrogen')
 
     event.create('chloroacetic_mixture')
         .fluid()
@@ -141,8 +151,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .polymer()
         .color(0x708787)
         .components('1x nitrogen', '6x carbon', '7x hydrogen', '2x oxygen')
+        .fluidPipeProperties(3000, 12000, true, true, true, false)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
-
 
     // Dimethyl sulfoxide sub-chain (PECA catalyst)
     event.create('dimethyl_sulfoxide')
@@ -154,26 +164,30 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .liquid()
         .color(0xACB279)
         .components('2x carbon', '6x hydrogen', '1x sulfur')
-})
 
+    // Saturated water (Eltz line midproduct)
+    event.create('saturated_water')
+        .liquid()
+        .color(0x857049)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+})
 
 // Modify materials' compositions
 GTCEuStartupEvents.materialModification(() => {
-    GTMaterials.get('butanol').setFormula('C4H9OH');
-    GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO');
+    GTMaterials.get('butanol').setFormula('C4H9OH')
+    GTMaterials.get('tributyl_phosphate').setFormula('(C4H9O)3PO')
 
     // Scaleline intermediates
-    GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HCl)2Mn2TaC?');
-    GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HCl)2Mn2');
+    GTMaterials.get('hydrochloric_dragon_scale_solution').setFormula('(HCl)2Mn2TaC?')
+    GTMaterials.get('hydrochloric_manganese_solution').setFormula('(HCl)2Mn2')
     GTMaterials.get('graphitic_tantalum').setFormula('TaC')
     GTMaterials.get('hydrofluoric_graphitic_tantalum_solution').setFormula('(HF)2TaC')
     GTMaterials.get('hydrofluoric_tantalum_solution').setFormula('(HF)2Ta')
 
     // JEAN gasoline intermediates
-    GTMaterials.get('tetraethyllead').setFormula('Pb(CH3CH2)4');
+    GTMaterials.get('tetraethyllead').setFormula('Pb(CH3CH2)4')
 
     // PECA intermediates
-    GTMaterials.get('sodium_cyanide').setFormula('NaCN')
     GTMaterials.get('chloroacetate').setFormula('ClCH2CO2H')
     GTMaterials.get('dichloroacetate').setFormula('Cl2CH2CO2H')
     GTMaterials.get('trichloroacetate').setFormula('Cl3CH2CO2H')

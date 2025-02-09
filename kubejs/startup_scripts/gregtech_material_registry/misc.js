@@ -1,7 +1,17 @@
-//? Misc modern materials we have to add
-//? Place non-nomifactory materials here
+/**
+ ? Misc modern materials we have to add
+ ? Place non-nomifactory materials here
+ */
 
 // AE2 Materials
+
+GTCEuStartupEvents.registry('gtceu:element', event => {
+    event.create('dilithium')
+        .protons(119)
+        .neutrons(229)
+        .symbol('Dl')
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('charged_certus_quartz')
         .gem()
@@ -25,34 +35,25 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("dilithium")
         .dust()
+        .gem()
         .ore(2, 1)
-        .color(0xd1b5b4)
-        .iconSet(GTMaterialIconSet.CERTUS)
-        .components('2x lithium')
+        .element(GTElements.get("dilithium"))
+        .color(0xfdd2df).secondaryColor(0xfa52b5)
+        .iconSet('dilithium')
         .addOreByproducts('lithium', 'cobalt', 'platinum')
 
     event.create('calcium_perchlorate')
         .dust()
         .color(0xf9fbda)
         .components('1x calcium', '2x chlorine', '8x oxygen')
-})
 
-
-// GT Perfect Gem material type
-GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
-    event.create('perfect')
-})
-
-GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
-    event.create('perfect').parent(GTMaterialIconSet.SHINY)
-})
-
-GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
-    event.create('perfect')
-        .unificationEnabled(true)
-        .generateItem(true)
-        .materialIconType(GTMaterialIconType.getByName('perfect'))
-        .generationCondition(ItemGenerationCondition.hasGemProperty)
+    event.create('fluorite')
+        .gem()
+        .ore()
+        .color(0x0c9949)
+        .iconSet('diamond')
+        .components('1x calcium', '2x fluorine')
+        .addOreByproducts('calcite', 'barite')
 })
 
 
@@ -154,7 +155,39 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
 })
 
+// Terbium
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('ammonium_oxalate')
+        .dust()
+        .color(0x2596be)
+        .components('2x ammonia', '2x carbon', '4x oxygen')
 
+    event.create('ammonium_nitrate')
+        .dust()
+        .color(0xF5F5F5)
+        .components('1x ammonia', '1x nitric_acid')
+
+    event.create('thorium_hydroxide')
+        .dust()
+        .color(0x243e1c)
+        .components('1x thorium', '4x oxygen', '4x hydrogen')
+
+    event.create('terbium_salt')
+        .dust()
+        .color(0x7f7367)
+        .components('1x terbium', '3x chlorine')
+        .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create('magnetic_terbium')
+        .ingot()
+        .components('1x terbium')
+        .color(0x8C8F7A)
+        .iconSet(GTMaterialIconSet.MAGNETIC)
+        .ingotSmeltInto(GTMaterials.get('terbium'))
+        .arcSmeltInto(GTMaterials.get('terbium'))
+        .macerateInto(GTMaterials.get('terbium'))
+        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
+})
 // Misc
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('elemental_reduction_fluid')
@@ -175,6 +208,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xD29092)
         .components('2x holmium', '3x oxygen')
 
+    event.create('waste_gas_mixture')
+        .fluid()
+        .color(0x666677)
+        .components('10x carbon_monoxide', '5x chloroethane', '7x ammonium_formate', '9x dinitrogen_tetroxide', '2x neon', '1x tritium')
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+
+    event.create('trinaquadalloy')
+        .fluid()
+        .ingot()
+        .color(0x281832)
+        .iconSet('bright')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
+        .components('6x trinium', '2x naquadah', '1x carbon')
+        .blastTemp(8747, 'higher', 131072, 1200)
 })
 
 GTCEuStartupEvents.materialModification(event => {
@@ -189,5 +236,5 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('end_steel').setFormula('Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5))');
 
     GTMaterials.get('microversium').setFormula('Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D')
+    GTMaterials.get('thorium_hydroxide').setFormula('Th(OH)4')
 })
-

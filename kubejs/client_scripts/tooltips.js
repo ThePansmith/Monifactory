@@ -1,3 +1,7 @@
+/**
+ * Tooltips under item names
+ */
+
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 
 ItemEvents.tooltip(tooltip => {
@@ -28,7 +32,7 @@ ItemEvents.tooltip(tooltip => {
     // Endgame Items
     tooltip.add('kubejs:ultimate_gem', Text.translatable('kubejs.ultimate_gem.tooltip'))
 
-    //Hardmode+ Stuff
+    // Hardmode+ Stuff
     if (!isNormalMode) {
         tooltip.add('gtceu:assembly_line', Text.translatable('gtceu.assembly_line.tooltip.hardmode'))
         tooltip.add('kubejs:meowni_plush', Text.translatable('kubejs.meowni_plush.tooltip.hardmode.1'))
@@ -42,7 +46,7 @@ ItemEvents.tooltip(tooltip => {
     // Questbook
     tooltip.addAdvanced(`ftbquests:book`, (item, adv, text) => { text.add(2, Text.gray(Text.translatable('ftbquests.book.tooltip'))) })
 
-    // Redstone Clock 
+    // Redstone Clock
     tooltip.add('redstoneclock:redstone_clock', Text.translatable('redstoneclock.redstone_clock.tooltip'))
 
     // DML Data Model
@@ -99,21 +103,18 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:advanced_microverse_projector_ii', Text.translatable('gtceu.multiblock.advanced_microverse_projector_ii.description'))
     tooltip.add('gtceu:subatomic_digital_assembler', Text.translatable('gtceu.multiblock.subatomic_digital_assembler.description'))
     tooltip.add('gtceu:actualization_chamber', Text.translatable('gtceu.multiblock.actualization_chamber.description'))
+    tooltip.add('gtceu:large_naquadah_reactor', Text.translatable('gtceu.multiblock.large_naquadah_reactor.description'))
+    tooltip.add('gtceu:naquadah_refinery', Text.translatable('gtceu.multiblock.naquadah_refinery.description'))
 
-    //Singleblocks
+    // Singleblocks
     tooltip.addAdvanced([`gtceu:lv_atomic_reconstructor`, `gtceu:mv_atomic_reconstructor`, `gtceu:hv_atomic_reconstructor`, `gtceu:ev_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.lvev_atomic_reconstructor.desc'))) })
     tooltip.addAdvanced([`gtceu:iv_atomic_reconstructor`, `gtceu:luv_atomic_reconstructor`, `gtceu:zpm_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.ivzpm_atomic_reconstructor.desc'))) })
     tooltip.addAdvanced([`gtceu:uv_atomic_reconstructor`, `gtceu:uhv_atomic_reconstructor`, `gtceu:uev_atomic_reconstructor`, `gtceu:uiv_atomic_reconstructor`], (item, adv, text) => { text.add(1, Text.gray(Text.translatable('block.gtceu.uvuiv_atomic_reconstructor.desc'))) })
+    tooltip.add('gtceu:sterilizing_filter_casing', Text.gray(Text.translatable("gtceu.sterilizing_filter_casing.tooltip")))
 
-    tooltip.addAdvanced('gtceu:naquadah_reactor_i', (item, adv, text) => {
-        text.add(1, Text.gray('An advanced reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
+    tooltip.addAdvanced('gtceu:naquadah_reactor', (item, adv, text) => {
+        text.add(1, Text.gray('An reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts'))
         text.add(2, [Text.white('Produces exactly 3 amps of '), Text.red('ZPM'), Text.white('.')])
-        text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
-    })
-
-    tooltip.addAdvanced('gtceu:naquadah_reactor_ii', (item, adv, text) => {
-        text.add(1, Text.gray('An elite reactor capable of capturing more energy from the decay of Enriched Naquadah and Naquadria bolt'))
-        text.add(2, [Text.white('Produces exactly 3 amps of '), Text.translatable('\u00a73UV'), Text.white('.')])
         text.add(3, rainbowifySingle('Does not overclock!', Math.round(Client.lastNanoTime / 1000000000)))
     })
 
@@ -126,17 +127,17 @@ ItemEvents.tooltip(tooltip => {
         'atmospheric_accumulator',
         'matter_alterator',
         'implosion_collider',
-        'extra_large_chemical_reactor',
         'quintessence_infuser',
         'hyperbolic_microverse_projector',
         'dimensional_superassembler',
-        'universal_crystallizer'
+        'universal_crystallizer',
+        'sculk_biocharger'
     ]
 
     parallelMultis.forEach(multi => {
-        tooltip.addAdvanced('gtceu:' + multi, (item, adv, text) => {
+        tooltip.addAdvanced(`gtceu:${multi}`, (item, adv, text) => {
             text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-            text.add(2, Text.translatable('gtceu.multiblock.' + multi + '.description'))
+            text.add(2, Text.translatable(`gtceu.multiblock.${multi}.description`))
         })
     })
 
@@ -151,15 +152,13 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.giga_parallel_hatch.desc'))
     tooltip.add('gtceu:uev_uev_parallel_hatch', Text.translatable('gtceu.omega_parallel_hatch.desc'))
 
+    // Assorted info & warnings for GT machines
     tooltip.add(/^gtceu:.*a_energy_converter$/, Text.translatable("gtceu.energy_converter.tooltip"));
-    tooltip.add(['gtceu:item_tag_filter', 'gtceu:fluid_tag_filter'], Text.red(Text.translatable("gtceu.negation_operator.tooltip")));
     tooltip.add('gtceu:basic_tape', Text.translatable('gtceu.basic_tape.tooltip'));
     tooltip.add('gtceu:ender_fluid_link_cover', Text.translatable('gtceu.ender_fluid_link_cover.tooltip'));
     tooltip.add('gtceu:nightvision_goggles', Text.translatable('gtceu.nightvision_goggles.tooltip'));
-
-    // GCYR
-    tooltip.add('gcyr:rocket_scanner', Text.translatable('gcyr.rocket_scanner.tooltip'));
-    tooltip.add('gcyr:space_chestplate', Text.translatable('gcyr.space_chestplate.tooltip'));
+    tooltip.add(/^gtceu:.*_robot_arm$/, Text.translatable("gtceu:robot_arm.tooltip"))
+    tooltip.add(/^gtceu:.*_fluid_regulator$/, Text.translatable("gtceu:fluid_regulator.tooltip"))
 
     // Sophisticated Storage
     tooltip.add('functionalstorage:storage_controller', Text.translatable('functionalstorage.storage_controller.tooltip'));
@@ -168,11 +167,17 @@ ItemEvents.tooltip(tooltip => {
     // AE2
     tooltip.add('ae2:facade', Text.gray(Text.translatable('ae2.facade.tooltip')));
     tooltip.add('ae2:memory_card', Text.gray(Text.translatable('ae2.memory_card.tooltip')));
-    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip.1')));
-    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip.2')));
+    tooltip.add('betterp2p:advanced_memory_card', Text.gray(Text.translatable('betterp2p.advanced_memory_card.tooltip')));
+    tooltip.add('ae2:creative_fluid_cell', Text.red(Text.translatable('ae2.creative_fluid_cell.tooltip')));
 
     // EIO Cap Banks
-    tooltip.add(/^enderio:.*_bank$/, Text.translatable("enderio.cap_bank.tooltip"));
+    tooltip.add(/^enderio:.*_bank$/, Text.red(Text.translatable("enderio.cap_bank.tooltip")));
+
+    // Travellers' Boots
+    tooltip.add(/travellersbootsreloaded/, Text.red(Text.translatable("travellersbootsreloaded.deprecation.tooltip")))
+
+    // Exoskeleton Legs
+    tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.gray(Text.translatable('kubejs.exoskeleton_legs.tooltip')))
 
     // Misc
     tooltip.add('kubejs:eternal_catalyst', Text.darkGray(Text.translatable('kubejs.eternal_catalyst.tooltip')));
@@ -231,9 +236,6 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('item.kubejs.infinity_dust_block.tooltip'))
     })
 
-    // Macerator byproduct warning
-    tooltip.add(['gtceu:lp_steam_macerator', 'gtceu:hp_steam_macerator', 'gtceu:steam_grinder', 'gtceu:lv_macerator', 'gtceu:mv_macerator'], Text.translatable("gtceu.macerator_byrproduct_warning.tooltip"))
-
     // Wooden pipe, tank warning
     tooltip.add([
         'gtceu:wood_small_fluid_pipe',
@@ -253,7 +255,7 @@ ItemEvents.tooltip(tooltip => {
         'chipped:loom_table',
         'chipped:mason_table',
         'chipped:alchemy_bench',
-        'chipped:tinkering_table'],  (item, adv, text) => {
+        'chipped:tinkering_table'], (item, adv, text) => {
         text.add(1, Text.translatable('chipped.workbenches.tooltip.1'))
         text.add(2, Text.translatable('chipped.workbenches.tooltip.2'))
     })
@@ -265,8 +267,8 @@ ItemEvents.tooltip(tooltip => {
         'packagedexcrafting:elite_crafter',
         'packagedexcrafting:ultimate_crafter',
         'packagedexexcrafting:epic_crafter'
-        ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
-    
+    ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
+
     // Tempad
     if (Platform.isLoaded('tempad')) {
         tooltip.add('tempad:tempad', Text.translatable("tempad.tempad.tooltip"))

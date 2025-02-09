@@ -1,17 +1,20 @@
+/**
+ * Loot Superfabricator multiblock
+ */
 ServerEvents.recipes(event => {
     function fabricator(prediction, circuit, output) {
         event.recipes.gtceu.loot_superfabricator(`kubejs:${prediction}_${circuit}`)
-            .itemInputs(Item.of('hostilenetworks:prediction', '{data_model:{id:"hostilenetworks:' + prediction + '"}}').weakNBT())
+            .itemInputs(Item.of('hostilenetworks:prediction', `{data_model:{id:"hostilenetworks:${prediction}"}}`).weakNBT())
             .circuit(circuit)
             .itemOutputs(output)
             .duration(60) // same for all recipes
             .EUt(64) // same for all recipes
     }
     if (isNormalMode) {
-        ////// Machine Recipe //////
+        // //// Machine Recipe //////
 
         event.recipes.gtceu.assembly_line('loot_superfabricator')
-            .itemInputs('gtceu:atomic_casing', '6x gcyr:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', 'kubejs:heart_of_a_universe', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter',  'kubejs:abyssal_energy_core')
+            .itemInputs('gtceu:atomic_casing', '6x gtceu:trinaquadalloy_plate', '4x hostilenetworks:loot_fabricator', 'kubejs:heart_of_a_universe', '4x #gtceu:circuits/uhv', '2x gtceu:uv_robot_arm', '2x gtceu:uv_emitter', 'kubejs:abyssal_energy_core')
             .inputFluids('gtceu:soldering_alloy 1152')
             .itemOutputs('gtceu:loot_superfabricator')
             .stationResearch(b => b
@@ -22,7 +25,7 @@ ServerEvents.recipes(event => {
             .duration(1200)
             .EUt(1966080)
 
-        ////// Fabricator Recipes //////
+        // //// Fabricator Recipes //////
 
         fabricator('blaze', 1, '10x minecraft:blaze_rod')
         fabricator('blaze', 2, '32x gtceu:sulfur_dust')
@@ -53,9 +56,8 @@ ServerEvents.recipes(event => {
         fabricator('skeleton', 3, '4x minecraft:skeleton_skull')
         fabricator('skeleton', 4, '8x gtceu:tin_ingot')
         fabricator('slime', 1, '32x minecraft:slime_ball')
-        fabricator('slime', 2, '8x minecraft:slime_block')
-        fabricator('slime', 3, '4x gtceu:nickel_ingot')
-        fabricator('slime', 4, '3x gtceu:platinum_nugget')
+        fabricator('slime', 2, '4x gtceu:nickel_ingot')
+        fabricator('slime', 3, '3x gtceu:platinum_nugget')
         fabricator('spider', 1, '32x minecraft:string')
         fabricator('spider', 2, '16x minecraft:spider_eye')
         fabricator('spider', 3, '12x minecraft:copper_ingot')

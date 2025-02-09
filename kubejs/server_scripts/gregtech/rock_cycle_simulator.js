@@ -1,8 +1,10 @@
+/**
+ * Rock Cycle Simulator multiblock
+ */
 ServerEvents.recipes(event => {
 
     // Recipe
-    event.shaped(
-        'gtceu:rock_cycle_simulator', [
+    event.shaped('gtceu:rock_cycle_simulator', [
         'PMP',
         'CHC',
         'UWU'
@@ -13,17 +15,16 @@ ServerEvents.recipes(event => {
         M: 'gtceu:iv_electric_motor',
         W: 'gtceu:platinum_single_cable',
         H: 'gtceu:iv_rock_crusher'
-    }
-    ).id('kubejs:shaped/rock_cycle_simulator')
+    }).id('kubejs:shaped/rock_cycle_simulator')
 
-    //Recipe Function
-        function RockCycle(id, input, output, EUt) {
-            event.recipes.gtceu.rock_cycle_simulator(`kubejs:${id}`)
-                .notConsumable(Item.of(input))
-                .itemOutputs(output)
-                .duration(16)
-                .EUt(EUt)
-        }
+    // Recipe Function
+    function RockCycle(id, input, output, EUt) {
+        event.recipes.gtceu.rock_cycle_simulator(`kubejs:${id}`)
+            .notConsumable(Item.of(input))
+            .itemOutputs(output)
+            .duration(16)
+            .EUt(EUt)
+    }
 
     RockCycle('stone', 'minecraft:stone', 'minecraft:stone', 7)
     RockCycle('cobble', 'minecraft:cobblestone', 'minecraft:cobblestone', 7)

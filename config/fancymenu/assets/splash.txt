@@ -52,7 +52,7 @@ Full of Circuits!
 Crafting Trees!
 Have you tried turning it off and on again?
 The machines need power to work!
-The discord has a art channel!
+The discord has an art channel!
 Dynamos output through the excitation coil!
 node graph out of date. rebuilding
 You like crafting circuits, don't you?
@@ -91,6 +91,10 @@ Cannot turn lead into gold!
 You just lost The Game
 You didn't read the quest book did you?
 What is a voltage, can I eat it?
-I like my wetwares drippy, bruh
 Live Laugh LuV
 Release the Meowni!
+"Better" Items
+Data Hoarding!
+Is that ingot pulsating?
+Don't forget to eat!
+The hundredth splash!

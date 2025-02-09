@@ -1,6 +1,8 @@
 // priority: 999
-//! This script loads first before the other startup scripts
-// put your util or patches here so that you can access them at other scripts
+/**
+ ! This script loads first before the other startup scripts
+ * put your util or patches here so that you can access them at other scripts
+ */
 
 // see quest_scripts.js
 const cake_reset_time = 60; // in seconds
@@ -20,7 +22,7 @@ const capitalize = (word) => (word[0].toUpperCase() + word.substring(1));
  * @param {boolean} make_uncompacting make uncompacting recipie (default true)
  * @returns {Internal.RecipeTypeFunction}
  */
-const comapcting = (ev, output, input, make_uncompacting) => {
+const compacting = (ev, output, input, make_uncompacting) => {
     // kubejs doesnt support nullish coalescing :(
     if (make_uncompacting === undefined || make_uncompacting === null) {
         make_uncompacting = true;
@@ -35,12 +37,12 @@ const comapcting = (ev, output, input, make_uncompacting) => {
     ], { a: input });
 }
 
-//Java Classes
-//used to create FluidIngredientJS objects
+// Java Classes
+// used to create FluidIngredientJS objects
 const JSONObject = Java.loadClass('com.google.gson.JsonObject')
-//Required to use fluid tags in gregtech recipes
+// Required to use fluid tags in gregtech recipes
 const FluidIngredientJS = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS')
-//Required for the rock breaker
+// Required for the rock breaker
 const RockBreakerCondition = Java.loadClass("com.gregtechceu.gtceu.common.recipe.condition.RockBreakerCondition")
 
 // Tier enums for easier data handling

@@ -1,6 +1,8 @@
-//! Hardcore Mode mode taranium line
-//? Keep in sync with
-//? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsTaraniumLine.java
+/**
+ ! Hardcore Mode mode taranium line
+ ? Keep in sync with
+ ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsTaraniumLine.java
+ */
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     if (!isHardMode) {
@@ -31,7 +33,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('xenic_acid')
         .fluid()
         .color(0xa567db)
-        .components('xenon', 'water', '5x oxygen', 'hydrogen_peroxide')
+        .components('xenon', 'water', '3x oxygen')
 
     event.create('dusty_helium')
         .gas()

@@ -1,9 +1,12 @@
+/**
+ * Extraction and solidification recipes for NC and GT
+ */
 ServerEvents.recipes(event => {
-    //Solidified to Gas
+    // Solidified to Gas
     extractgas('neon', 'kubejs:solidified_neon', Fluid.of('gtceu:neon', 1000));
     extractgas('krypton', 'kubejs:solidified_krypton', Fluid.of('gtceu:krypton', 1000));
     extractgas('xenon', 'kubejs:solidified_xenon', Fluid.of('gtceu:xenon', 1000));
-    //Extract Nuclearcraft Isotopes
+    // Extract Nuclearcraft Isotopes
     extractisotope('thorium_230', 'nuclearcraft:thorium_230', Fluid.of('gtceu:thorium', 144));
     extractisotope('thorium_232', 'nuclearcraft:thorium_232', Fluid.of('gtceu:thorium', 144));
     extractisotope('uranium_233', 'nuclearcraft:uranium_233', Fluid.of('gtceu:uranium_235', 144));

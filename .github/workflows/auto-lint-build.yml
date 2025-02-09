@@ -1,0 +1,11 @@
+name: Lint Build Tools
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths: 'tools/build/**'
+
+jobs:
+  lint:
+    uses: ./.github/workflows/eslint.yml
+    with:
+      folder: 'tools/build'

@@ -1,55 +1,55 @@
-//alloys go brrr - ima go insane :)
+/** alloys go brrr - ima go insane :) */
 
 
 ServerEvents.recipes(event => {
-	/**
-	 * util helper for alloys
-	 * @param {InputItem_[]} inputA any possible inputs
-	 * @param {InputItem_[]} inputB and possible secondary inputs
-	 * @param {OutputItem_} result
-	 * @param {number} duration in seconds
-	 * @param {number} eut
-	 */
-	const alloySmeltingVariant = (inputA, inputB, result, duration, eut) => {
-		// do not const anything here, weird optimization happening with the js vm
-		for (let itemA of inputA) {
-			for (let itemB of inputB) {
-				// the a here is so that it gets sorted on top, jei sorts by recipe id
-				let id = `kubejs:a_${Item.of(result).idLocation.path}_${Item.of(itemA).idLocation.path}_${Item.of(itemB).idLocation.path}`
-				event.recipes.gtceu.alloy_smelter(id)
-					.itemInputs(itemA, itemB)
-					.itemOutputs(result)
-					.duration(duration*20)
-					.EUt(eut)
-				console.log(`[AS]: Registered ${id}`)
-			}
-		}
-	}
+    /**
+     * util helper for alloys
+     * @param {InputItem_[]} inputA any possible inputs
+     * @param {InputItem_[]} inputB and possible secondary inputs
+     * @param {OutputItem_} result
+     * @param {number} duration in seconds
+     * @param {number} eut
+     */
+    const alloySmeltingVariant = (inputA, inputB, result, duration, eut) => {
+        // do not const anything here, weird optimization happening with the js vm
+        for (let itemA of inputA) {
+            for (let itemB of inputB) {
+                // the a here is so that it gets sorted on top, jei sorts by recipe id
+                let id = `kubejs:a_${Item.of(result).idLocation.path}_${Item.of(itemA).idLocation.path}_${Item.of(itemB).idLocation.path}`
+                event.recipes.gtceu.alloy_smelter(id)
+                    .itemInputs(itemA, itemB)
+                    .itemOutputs(result)
+                    .duration(duration * 20)
+                    .EUt(eut)
+                console.log(`[AS]: Registered ${id}`)
+            }
+        }
+    }
 
-	alloySmeltingVariant(
-		['#forge:ingots/steel', '#forge:dusts/steel'],
-		["#forge:obsidian", '#forge:dusts/obsidian', '#forge:gems/void'],
-		'gtceu:dark_steel_ingot', 12, 16);
+    alloySmeltingVariant(
+        ['#forge:ingots/steel', '#forge:dusts/steel'],
+        ["#forge:obsidian", '#forge:dusts/obsidian', '#forge:gems/void'],
+        'gtceu:dark_steel_ingot', 12, 16);
 
-	alloySmeltingVariant(
-		['#forge:ingots/iron', '#forge:dusts/iron'],
-		['#forge:dusts/redstone'],
-		'2x gtceu:conductive_alloy_ingot', 7.5, 16);
+    alloySmeltingVariant(
+        ['#forge:ingots/iron', '#forge:dusts/iron'],
+        ['#forge:dusts/redstone'],
+        '2x gtceu:conductive_alloy_ingot', 7.5, 16);
 
-	alloySmeltingVariant(
-		['#forge:ingots/iron', '#forge:dusts/iron'],
-		['kubejs:pulsating_dust'],
-		'gtceu:pulsating_alloy_ingot', 7.5, 16);
+    alloySmeltingVariant(
+        ['#forge:ingots/iron', '#forge:dusts/iron'],
+        ['kubejs:pulsating_dust'],
+        'gtceu:pulsating_alloy_ingot', 7.5, 16);
 
-	alloySmeltingVariant(
-		['#forge:ingots/steel', '#forge:dusts/steel'],
-		['#forge:dusts/silicon'],
-		'gtceu:electrical_steel_ingot', 6, 16);
+    alloySmeltingVariant(
+        ['#forge:ingots/steel', '#forge:dusts/steel'],
+        ['#forge:dusts/silicon'],
+        'gtceu:electrical_steel_ingot', 6, 16);
 
-	alloySmeltingVariant(
-		['#forge:ingots/steel', '#forge:dusts/steel'],
-		['#forge:dusts/boron'],
-		'2x nuclearcraft:ferroboron_ingot', 15, 120);
+    alloySmeltingVariant(
+        ['#forge:ingots/steel', '#forge:dusts/steel'],
+        ['#forge:dusts/boron'],
+        '2x nuclearcraft:ferroboron_ingot', 15, 120);
 
     alloySmeltingVariant(
         ['#forge:ingots/gold', '#forge:dusts/gold'],
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
 
 
 ServerEvents.recipes(event => {
-    //Different Steel Recipe
+    // Different Steel Recipe
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__black_steel" })
     event.remove({ id: "gtceu:mixer/black_steel" })
 
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(15)
 
-	event.shapeless('gtceu:conductive_alloy_dust', ['#forge:dusts/iron', '#forge:dusts/redstone']).id('kubejs:conductive_alloy_dust_handcraft')
+    event.shapeless('gtceu:conductive_alloy_dust', ['#forge:dusts/iron', '#forge:dusts/redstone']).id('kubejs:conductive_alloy_dust_handcraft')
     event.recipes.gtceu.mixer("kubejs:conductive_alloy_dust")
         .itemInputs('#forge:dusts/iron', '#forge:dusts/redstone')
         .itemOutputs('2x gtceu:conductive_alloy_dust')
@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     event.recipes.gtceu.mixer("kubejs:black_steel_dust")
-        .itemInputs('3x #forge:dusts/steel', '2x #forge:dusts/black_bronze', '2x gtceu:void_gem', '2x gtceu:coal_perfect')
+        .itemInputs('3x #forge:dusts/steel', '2x #forge:dusts/black_bronze', '2x gtceu:void_gem', '2x gtceu:coke_gem')
         .itemOutputs('9x gtceu:black_steel_dust')
         .duration(200)
         .EUt(15)
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
         .duration(140)
         .EUt(30)
 
-    //Replace default GTCEu glowstone separation recipe to match mixing recipe
+    // Replace default GTCEu glowstone separation recipe to match mixing recipe
     event.replaceOutput({ id: "gtceu:centrifuge/glowstone_separation" }, 'minecraft:redstone', 'gtceu:tricalcium_phosphate_dust')
     event.recipes.gtceu.mixer("kubejs:glowstone_dust")
         .itemInputs('gtceu:tricalcium_phosphate_dust', '#forge:dusts/gold')
@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(1920)
 
-    //Remove old rhodium plated palladium recipe
+    // Remove old rhodium plated palladium recipe
     event.remove({ id: "gtceu:mixer/rhodium_plated_palladium" })
     event.recipes.gtceu.mixer("kubejs:rhodium_plated_palladium_dust")
         .itemInputs('3x gtceu:palladium_dust', 'gtceu:rhodium_dust', '2x gtceu:lumium_dust')
@@ -177,15 +177,15 @@ ServerEvents.recipes(event => {
         .EUt(30)
 })
 
-//Add Primal Mana to Mana ingot recipe
+// Add Primal Mana to Mana ingot recipe
 ServerEvents.recipes(event => {
-    event.findRecipes({ id: /^gtceu:electric_blast_furnace\/blast_mythril/ }).forEach(recipe=> {
+    event.findRecipes({ id: /^gtceu:electric_blast_furnace\/blast_mythril/ }).forEach(recipe => {
         const text = '[{"content":{"amount":250,"value":{"fluid":"kubejs:molten_primal_mana"}},"chance":10000,"maxChance":10000,"tierChanceBoost":0}]'
         recipe.json.getAsJsonObject("inputs").add("fluid", JSON.parse(text))
     })
 })
 
-//Replace hot ingot EBF output with regular for Kanthal
+// Replace hot ingot EBF output with regular for Kanthal
 ServerEvents.recipes(event => {
     event.replaceOutput({ id: /^gtceu:electric_blast_furnace\/blast_kanthal/ }, 'gtceu:hot_kanthal_ingot', 'gtceu:kanthal_ingot')
 })
@@ -201,43 +201,43 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_blast_smelter('kubejs:soularium_abs')
         .itemInputs('#forge:dusts/gold', 'soul_sand')
-		.circuit(2)
+        .circuit(2)
         .outputFluids(Fluid.of('gtceu:soularium', 144))
         .duration(90) // 4.5s
         .EUt(16)
         .blastFurnaceTemp(1200)
 
-    //Black steel recipes. Has both regular & advanced recipe, each with a noble gas version.
-    event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel'})
-    event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel_gas'})
+    // Black steel recipes. Has both regular & advanced recipe, each with a noble gas version.
+    event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel' })
+    event.remove({ id: 'gtceu:alloy_blast_smelter/black_steel_gas' })
     event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel')
-        .itemInputs('3x #forge:dusts/steel', '2x #forge:dusts/black_bronze', '2x gtceu:void_gem', '2x gtceu:coal_perfect')
-		.circuit(3)
+        .itemInputs('3x #forge:dusts/steel', '2x #forge:dusts/black_bronze', '2x gtceu:void_gem', '2x gtceu:coke_gem')
+        .circuit(3)
         .outputFluids(Fluid.of('gtceu:molten_black_steel', 1296))
-        .duration(112.5*20*9*0.75+12.5) // 760s
+        .duration(112.5 * 20 * 9 * 0.75 + 12.5) // 760s
         .EUt(120)
         .blastFurnaceTemp(1200)
     event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_gas')
-        .itemInputs('3x #forge:dusts/steel', '2x #forge:dusts/black_bronze', '2x gtceu:void_gem', '2x gtceu:coal_perfect')
-		.inputFluids(Fluid.of('gtceu:nitrogen', 9000))
+        .itemInputs('3x #forge:dusts/steel', '2x #forge:dusts/black_bronze', '2x gtceu:void_gem', '2x gtceu:coke_gem')
+        .inputFluids(Fluid.of('gtceu:nitrogen', 9000))
         .circuit(13)
         .outputFluids(Fluid.of('gtceu:molten_black_steel', 1296))
-        .duration((112.5*20*9*0.75+12.5)*0.67) // 509.2s
+        .duration((112.5 * 20 * 9 * 0.75 + 12.5) * 0.67) // 509.2s
         .EUt(120)
         .blastFurnaceTemp(1200)
     event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_alternate')
-    .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coal_perfect')
-		.circuit(4)
+        .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coke_gem')
+        .circuit(4)
         .outputFluids(Fluid.of('gtceu:molten_black_steel', 6480))
-        .duration(112.5*20*45*0.75+12.5*5) // 3800s
+        .duration(112.5 * 20 * 45 * 0.75 + 12.5 * 5) // 3800s
         .EUt(240)
         .blastFurnaceTemp(1200)
     event.recipes.gtceu.alloy_blast_smelter('kubejs:black_steel_alternate_gas')
-    .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coal_perfect')
-		.inputFluids(Fluid.of('gtceu:nitrogen', 9000))
+        .itemInputs('15x #forge:dusts/steel', '6x #forge:dusts/copper', '2x #forge:dusts/gold', '2x #forge:dusts/silver', '10x #forge:gems/void', '10x gtceu:coke_gem')
+        .inputFluids(Fluid.of('gtceu:nitrogen', 9000))
         .circuit(14)
         .outputFluids(Fluid.of('gtceu:molten_black_steel', 6480))
-        .duration((112.5*20*45*0.75+12.5*5)*0.67) // 2546s
+        .duration((112.5 * 20 * 45 * 0.75 + 12.5 * 5) * 0.67) // 2546s
         .EUt(240)
         .blastFurnaceTemp(1200)
 
@@ -248,22 +248,22 @@ ServerEvents.recipes(event => {
         .duration(260)
         .EUt(120)
 
-	//Dark Soularium recipe (Requires Tritium!)
-	event.recipes.gtceu.electric_blast_furnace('kubejs:dark_soularium_ingot')
-		.itemInputs('#forge:ingots/soularium', '#forge:ingots/dark_steel')
-		.inputFluids(Fluid.of('gtceu:tritium', 1000))
-		.itemOutputs('gtceu:dark_soularium_ingot')
-		.duration(1200) // 60 sec
-		.EUt(32000)
-		.blastFurnaceTemp(8600)
+    // Dark Soularium recipe (Requires Tritium!)
+    event.recipes.gtceu.electric_blast_furnace('kubejs:dark_soularium_ingot')
+        .itemInputs('#forge:ingots/soularium', '#forge:ingots/dark_steel')
+        .inputFluids(Fluid.of('gtceu:tritium', 1000))
+        .itemOutputs('gtceu:dark_soularium_ingot')
+        .duration(1200) // 60 sec
+        .EUt(32000)
+        .blastFurnaceTemp(8600)
 
     // Thermal Expansion alloy ABS recipe fixes
-    event.remove ({ id: 'gtceu:alloy_blast_smelter/signalum_gas' })
-    event.remove ({ id: 'gtceu:alloy_blast_smelter/signalum' })
-    event.remove ({ id: 'gtceu:alloy_blast_smelter/lumium_gas' })
-    event.remove ({ id: 'gtceu:alloy_blast_smelter/lumium' })
-    event.remove ({ id: 'gtceu:alloy_blast_smelter/enderium' })
-    event.remove ({ id: 'gtceu:alloy_blast_smelter/enderium_gas' })
+    event.remove({ id: 'gtceu:alloy_blast_smelter/signalum_gas' })
+    event.remove({ id: 'gtceu:alloy_blast_smelter/signalum' })
+    event.remove({ id: 'gtceu:alloy_blast_smelter/lumium_gas' })
+    event.remove({ id: 'gtceu:alloy_blast_smelter/lumium' })
+    event.remove({ id: 'gtceu:alloy_blast_smelter/enderium' })
+    event.remove({ id: 'gtceu:alloy_blast_smelter/enderium_gas' })
 
     // Gas boosted recipes have 0.67x duration (33% faster from base)
     // On top of this, ABS recipes have a 0.75x duration multiplier from the multiple of EBF recipes needed to produce the equivalent amount of material.
@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
         .circuit(4)
         .outputFluids(Fluid.of('gtceu:molten_signalum', 1152))
-        .duration(70*20*8*0.75) // 420s
+        .duration(70 * 20 * 8 * 0.75) // 420s
         .EUt(7680)
         .blastFurnaceTemp(4000)
 
@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
         .inputFluids('kubejs:molten_primal_mana 1000', 'gtceu:helium 800')
         .circuit(14)
         .outputFluids(Fluid.of('gtceu:molten_signalum', 1152))
-        .duration(70*20*8*0.75*0.67) // 281.4s
+        .duration(70 * 20 * 8 * 0.75 * 0.67) // 281.4s
         .EUt(7680)
         .blastFurnaceTemp(4000)
 
@@ -290,7 +290,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
         .circuit(4)
         .outputFluids(Fluid.of('gtceu:molten_lumium', 1152))
-        .duration(50*20*8*0.75) // 300s
+        .duration(50 * 20 * 8 * 0.75) // 300s
         .EUt(4800)
         .blastFurnaceTemp(4500)
 
@@ -299,7 +299,7 @@ ServerEvents.recipes(event => {
         .inputFluids('kubejs:molten_primal_mana 1000', 'gtceu:helium 800')
         .circuit(14)
         .outputFluids(Fluid.of('gtceu:molten_lumium', 1152))
-        .duration(50*20*8*0.75*0.67) // 201s
+        .duration(50 * 20 * 8 * 0.75 * 0.67) // 201s
         .EUt(4800)
         .blastFurnaceTemp(4500)
 
@@ -308,17 +308,17 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
         .circuit(4)
         .outputFluids(Fluid.of('gtceu:molten_enderium', 1296))
-        .duration(80*20*9*0.75) // 540s
+        .duration(80 * 20 * 9 * 0.75) // 540s
         .EUt(30720)
         .blastFurnaceTemp(6400)
-    
+
     event.recipes.gtceu.alloy_blast_smelter('enderium_mana_gas')
         .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'gtceu:tantalum_dust', 'kubejs:resonant_clathrate')
         .inputFluids('kubejs:molten_primal_mana 1000', 'gtceu:krypton 90')
         .circuit(14)
         .outputFluids(Fluid.of('gtceu:molten_enderium', 1296))
-        .duration(80*20*9*0.75*0.67) // 361.8s
+        .duration(80 * 20 * 9 * 0.75 * 0.67) // 361.8s
         .EUt(30720)
         .blastFurnaceTemp(6400)
 
-}) 
+})

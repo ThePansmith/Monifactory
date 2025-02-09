@@ -1,0 +1,30 @@
+#!/bin/sh
+set -e
+
+# Check NPM
+if ! npm -v > /dev/null; then
+	echo NPM is not installed.
+	exit 1
+fi
+
+# Check NPX
+if ! npx -v > /dev/null; then
+	echo NPX is not installed. Upgrade NPM.
+	exit 1
+fi
+
+# ESLint
+lint_check() {
+	npm install --silent 2> /dev/null
+	if ! ESLINT_PROBLEMS=$(npx eslint); then
+		echo Eslint has detected some problems. Fix them before committing.
+		echo "$ESLINT_PROBLEMS"
+		exit 1
+	fi
+}
+
+
+cd kubejs
+lint_check
+cd ../tools/build
+lint_check

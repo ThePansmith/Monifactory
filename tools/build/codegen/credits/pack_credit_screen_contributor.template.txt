@@ -1,0 +1,60 @@
+element {
+    copy_client_player = false
+    playername = {{MC_UUID}}
+    auto_skin = true
+    auto_cape = true
+    slim = false
+    skin_source = {{MC_UUID}}
+    scale = 15
+    is_baby = false
+    crouching = false
+    showname = false
+    head_follows_mouse = false
+    body_follows_mouse = false
+    headrotationx = -26.470589
+    headrotationy = 0.0
+    bodyrotationx = -26.470589
+    bodyrotationy = -26.470589
+    head_z_rot = 0.0
+    left_arm_x_rot = 0.0
+    left_arm_y_rot = 0.0
+    left_arm_z_rot = 0.0
+    right_arm_x_rot = 0.0
+    right_arm_y_rot = 0.0
+    right_arm_z_rot = 0.0
+    left_leg_x_rot = 0.0
+    left_leg_y_rot = 0.0
+    left_leg_z_rot = 0.0
+    right_leg_x_rot = 0.0
+    right_leg_y_rot = 0.0
+    right_leg_z_rot = 0.0
+    element_type = fancymenu_customization_player_entity
+    instance_identifier = {{V4_UUID}}-player
+    base_opacity = 1.0
+    x = {{X_SKIN}}
+    y = {{Y_SKIN}}
+    width = 9
+    height = 27
+    anchor_point = top-left
+}
+
+element {
+    description = {{DESCRIPTION}}
+    element_type = custom_button
+    instance_identifier = {{V4_UUID}}-button
+    backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
+    backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
+    navigatable = true
+    appearance_delay_seconds = 1.0
+    base_opacity = 1.0
+    x = {{X_BUTTON}}
+    y = {{Y_BUTTON}}
+    width = 21
+    height = 19
+    anchor_point = top-left
+{{IF_HAS_LINK}}
+    [executable_action_instance:{{BUTTON_EXEC_ACTION_UUID}}][action_type:openlink] = {{LINK}}
+    [executable_block:{{BUTTON_EXEC_BLOCK_UUID}}][type:generic] = [executables:{{BUTTON_EXEC_ACTION_UUID}};]
+    button_element_executable_block_identifier = {{BUTTON_EXEC_BLOCK_UUID}}
+{{IF_HAS_LINK_END}}
+}

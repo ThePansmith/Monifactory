@@ -1,115 +1,116 @@
+/**
+ * Various end-game recipes
+ */
+
 ServerEvents.recipes(event => {
+
+    event.recipes.gtceu.assembler('neutron_emitter')
+        .itemInputs('4x gtceu:double_neutronium_plate', '4x gtceu:polyethyl_cyanoacrylate_plate')
+        .inputFluids('gtceu:tin_alloy 4680')
+        .itemOutputs('kubejs:neutron_emitter')
+        .duration(4000)
+        .EUt(GTValues.VHA[GTValues.UV])
+
+    event.recipes.gtceu.electrolyzer('actinium_from_uranium_hexafluoride')
+        .inputFluids('gtceu:uranium_hexafluoride 1000')
+        .chancedInput('kubejs:neutron_emitter', 100, 0)
+        .outputFluids('gtceu:enriched_uranium_hexafluoride 50', 'gtceu:depleted_uranium_hexafluoride 450', 'gtceu:fluorine 800')
+        .chancedOutput('gtceu:small_actinium_dust', 1000, 400)
+        .duration(160)
+        .EUt(GTValues.VHA[GTValues.ZPM])
+
     // Assembly Line
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line('dimensional_superassembler')
-            .itemInputs('gtceu:assembly_line', '4x #gtceu:circuits/uiv', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '6x gtceu:uev_conveyor_module', '4x gtceu:uev_robot_arm', '4x gtceu:uev_emitter', '2x gtceu:infinity_frame', '24x gtceu:polyethyl_cyanoacrylate_plate')
-            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
-            .itemOutputs('gtceu:dimensional_superassembler')
-            .duration(6000)
-            .EUt(13920000)
-
-            .stationResearch(b => b
-                .researchStack('gtceu:assembly_line')
-                .CWUt(160, 1024000)
-                .EUt(1200000)
-            )
-
-    if(!isNormalMode) {
-        // Helical Fusion Reactor
-        event.recipes.gtceu.assembly_line('gtceu:helical_fusion_reactor')
-        .itemInputs('gtceu:uv_fusion_reactor', '4x #gtceu:circuits/uev', 'gtceu:gravi_star', '2x gtceu:double_activated_netherite_plate', '4x gtceu:uhv_field_generator', '64x kubejs:multidimensional_cpu_chip', '64x kubejs:multidimensional_cpu_chip', '64x gtceu:ruthenium_trinium_americium_neutronate_single_wire', '24x gtceu:polyethyl_cyanoacrylate_plate')
+        .itemInputs('gtceu:assembly_line', '4x #gtceu:circuits/uiv', '16x gtceu:infinity_plate', '4x kubejs:dimensional_stabilization_netherite_casing', '16x kubejs:omnic_matrix_machine_casing', '6x gtceu:uev_conveyor_module', '4x gtceu:uev_robot_arm', '4x gtceu:uev_emitter', '2x gtceu:infinity_frame', '24x gtceu:polyethyl_cyanoacrylate_plate')
         .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
-        .itemOutputs('gtceu:helical_fusion_reactor')
+        .itemOutputs('gtceu:dimensional_superassembler')
         .duration(6000)
         .EUt(13920000)
+
         .stationResearch(b => b
-            .researchStack('gtceu:uv_fusion_reactor')
+            .researchStack('gtceu:assembly_line')
             .CWUt(160, 1024000)
             .EUt(1200000)
         )
+
+    if (!isNormalMode) {
+        // Helical Fusion Reactor
+        event.recipes.gtceu.assembly_line('gtceu:helical_fusion_reactor')
+            .itemInputs('gtceu:uv_fusion_reactor', '4x #gtceu:circuits/uev', 'gtceu:gravi_star', '2x gtceu:double_activated_netherite_plate', '4x gtceu:uhv_field_generator', '64x kubejs:multidimensional_cpu_chip', '64x kubejs:multidimensional_cpu_chip', '64x gtceu:ruthenium_trinium_americium_neutronate_single_wire', '24x gtceu:polyethyl_cyanoacrylate_plate')
+            .inputFluids('gtceu:soldering_alloy 11520', 'gtceu:omnium 5760')
+            .itemOutputs('gtceu:helical_fusion_reactor')
+            .duration(6000)
+            .EUt(13920000)
+            .stationResearch(b => b
+                .researchStack('gtceu:uv_fusion_reactor')
+                .CWUt(160, 1024000)
+                .EUt(1200000)
+            )
     }
 
-
-    // Extra Large Chemical Reactor
-    event.recipes.gtceu.assembly_line('extra_large_chemical_reactor')
-        .itemInputs('gtceu:large_chemical_reactor', "8x gtceu:naquadah_large_fluid_pipe", '8x gtceu:luv_hermetic_casing', '4x gtceu:luv_field_generator', '8x gtceu:luv_electric_pump', '8x gtceu:luv_fluid_regulator', '4x #gtceu:circuits/zpm')
-        .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:polybenzimidazole 1152')
-        .itemOutputs('gtceu:extra_large_chemical_reactor')
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack('gtceu:large_chemical_reactor').EUt(7680).duration(600))
-        .duration(1200)
-        .EUt(131072)
-
     // Blacklight
-    event.shaped(
-        'gtceu:blacklight', [
-            'BPB',
-            ' S ',
-            'CPW'
-        ], {
-            B: 'gtceu:tungsten_carbide_screw',
-            C: '#gtceu:circuits/iv',
-            P: 'gtceu:tungsten_carbide_plate',
-            S: 'gtceu:hssg_spring',
-            W: 'gtceu:platinum_single_cable'
-        }
-    ).id('gtceu:shaped/blacklight')
+    event.shaped('gtceu:blacklight', [
+        'BPB',
+        ' S ',
+        'CPW'
+    ], {
+        B: 'gtceu:tungsten_carbide_screw',
+        C: '#gtceu:circuits/iv',
+        P: 'gtceu:tungsten_carbide_plate',
+        S: 'gtceu:hssg_spring',
+        W: 'gtceu:platinum_single_cable'
+    }).id('gtceu:shaped/blacklight')
 
     // Trinaquadalloy Mixer Recipe
     event.recipes.gtceu.mixer("mixer_trinaquadalloy")
-        .itemInputs("6x gtceu:trinium_dust", "2x gtceu:naquadah_dust",  "gtceu:carbon_dust")
-        .itemOutputs("9x gcyr:trinaquadalloy_dust")
+        .itemInputs("6x gtceu:trinium_dust", "2x gtceu:naquadah_dust", "gtceu:carbon_dust")
+        .itemOutputs("9x gtceu:trinaquadalloy_dust")
         .circuit(1)
         .duration(300)
         .EUt(491250)
 
     // Fluxed Electrum Mixer Recipe
     event.recipes.gtceu.mixer("mixer_electrum_flux")
-        .itemInputs("6x gtceu:electrum_dust", "gtceu:lumium_dust",  "gtceu:signalum_dust")
+        .itemInputs("6x gtceu:electrum_dust", "gtceu:lumium_dust", "gtceu:signalum_dust")
         .itemOutputs("8x gtceu:electrum_flux_dust")
         .circuit(2)
         .duration(300)
         .EUt(129)
 
-    // Atomic Casing Buff
-    event.remove({ id: 'gcyr:shaped/casing_atomic' })
-    event.remove({ id: 'gcyr:assembler/casing_atomic' })
-
-    event.shaped(
-        '2x gtceu:atomic_casing', [
-            'PHP',
-            'PFP',
-            'PWP'
-        ], {
-            P: 'gcyr:trinaquadalloy_plate',
-            H: '#forge:tools/hammers',
-            W: '#forge:tools/wrenches',
-            F: 'gtceu:naquadah_alloy_frame',
-        }
-    ).id('gtceu:shaped/atomic_casing')
+    // Atomic Casings
+    event.shaped('2x gtceu:atomic_casing', [
+        'PHP',
+        'PFP',
+        'PWP'
+    ], {
+        P: 'gtceu:trinaquadalloy_plate',
+        H: '#forge:tools/hammers',
+        W: '#forge:tools/wrenches',
+        F: 'gtceu:naquadah_alloy_frame',
+    }).id('gtceu:shaped/atomic_casing')
 
     event.recipes.gtceu.assembler("atomic_casing")
-        .itemInputs("6x gcyr:trinaquadalloy_plate", "gtceu:naquadah_alloy_frame")
+        .itemInputs("6x gtceu:trinaquadalloy_plate", "gtceu:naquadah_alloy_frame")
         .itemOutputs("2x gtceu:atomic_casing")
         .duration(100)
         .EUt(16)
         .circuit(6)
 
     // Sterilising Filter Casing
-    event.shaped(
-        '4x gtceu:sterilizing_filter_casing', [
-            'PEP',
-            'FBF',
-            'MSR'
-        ], {
-            B: 'gtceu:blacklight',
-            E: 'gtceu:luv_emitter',
-            F: 'gtceu:item_filter',
-            M: 'gtceu:luv_electric_motor',
-            P: 'gtceu:polybenzimidazole_large_fluid_pipe',
-            R: 'gtceu:iridium_rotor',
-            S: 'gtceu:tritanium_frame'
-        }
-    ).id('gtceu:shaped/filter_casing_sterile')
+    event.shaped('4x gtceu:sterilizing_filter_casing', [
+        'PEP',
+        'FBF',
+        'MSR'
+    ], {
+        B: 'gtceu:blacklight',
+        E: 'gtceu:luv_emitter',
+        F: 'gtceu:item_filter',
+        M: 'gtceu:luv_electric_motor',
+        P: 'gtceu:polybenzimidazole_large_fluid_pipe',
+        R: 'gtceu:iridium_rotor',
+        S: 'gtceu:tritanium_frame'
+    }).id('gtceu:shaped/filter_casing_sterile')
 
     // FLux Gem
     event.remove({ id: 'redstone_arsenal:materials/flux_gem' })
@@ -133,24 +134,23 @@ ServerEvents.recipes(event => {
         )
 
     // Flux Plating
-    event.shaped(
-        '4x redstone_arsenal:flux_plating', [
-            ' P ',
-            'PGP',
-            ' P '
-        ], {
-            G: 'redstone_arsenal:flux_gem',
-            P: 'gtceu:electrum_flux_plate'
-        }
-    ).id('redstone_arsenal:materials/flux_plating')
+    event.shaped('4x redstone_arsenal:flux_plating', [
+        ' P ',
+        'PGP',
+        ' P '
+    ], {
+        G: 'redstone_arsenal:flux_gem',
+        P: 'gtceu:electrum_flux_plate'
+    }).id('redstone_arsenal:materials/flux_plating')
+
     event.recipes.gtceu.omnic_forge('kubejs:flux_plating_assembly')
         .itemInputs('redstone_arsenal:flux_gem', '4x gtceu:electrum_flux_plate')
         .itemOutputs('4x redstone_arsenal:flux_plating')
         .duration(60)
-        .EUt(7680)
+        .EUt(GTValues.VA[GTValues.EV])
 
-	// Vacuum Freezer
-	// kubejs Superconductor Wire
+    // Vacuum Freezer
+    // kubejs Superconductor Wire
     event.recipes.gtceu.vacuum_freezer("sculk_superconductor")
         .itemInputs('gtceu:cryococcus_ingot')
         .itemOutputs('gtceu:sculk_superconductor_ingot')
@@ -166,19 +166,21 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(2000)
 
-    //kubejs Stem Cells
+    // Kubejs Stem Cells
     event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
     event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells' })
     event.recipes.gtceu.chemical_reactor("kubejs_stem_cells")
         .itemInputs('minecraft:dragon_egg')
-        .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500')
-        .itemOutputs('64x gtceu:stem_cells', '64x gtceu:stem_cells')
+        .chancedInput('minecraft:sculk_catalyst', 500, 0)
+        .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500', 'enderio:xp_juice 2000')
+        .itemOutputs('64x gtceu:stem_cells')
+        .itemOutputsRanged('gtceu:stem_cells', 0, 64)
         .outputFluids('gtceu:bacterial_sludge 500')
         .duration(6000)
         .EUt(30720)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    //Blast Furnace
+    // Blast Furnace
     event.recipes.gtceu.electric_blast_furnace("quantum_fluxed_eternium_heavy_plating")
         .itemInputs('10x redstone_arsenal:flux_plating', 'gtceu:cryococcus_plate', '16x kubejs:quantum_flux')
         .inputFluids('gtceu:krypton 1000')
@@ -221,50 +223,30 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // Crystal Matrix Materials
-    event.shaped(
-        'kubejs:diamond_lattice', [
-            'PBP',
-            'BGB',
-            'PBP'
-        ], {
-            P: 'minecraft:diamond',
-            G: 'gtceu:diamond_perfect',
-            B: 'gtceu:diamond_screw'
-        }
-    ).id('kubejs:diamond_lattice')
+    event.shaped('kubejs:diamond_lattice', [
+        'PBP',
+        'BGB',
+        'PBP'
+    ], {
+        P: 'minecraft:diamond',
+        G: 'gtceu:exquisite_diamond_gem',
+        B: 'gtceu:diamond_screw'
+    }).id('kubejs:diamond_lattice')
     event.recipes.gtceu.assembler('kubejs:diamond_lattice')
-        .itemInputs('gtceu:diamond_perfect', '2x gtceu:diamond_plate', '4x gtceu:diamond_screw')
+        .itemInputs('gtceu:flawless_diamond_gem', '2x gtceu:diamond_plate', '4x gtceu:diamond_screw')
         .itemOutputs('kubejs:diamond_lattice')
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:crystal_matrix_ingot', [
-            '         ',
-            '      DDD',
-            '   DDDSLD',
-            'DDDLSLLSD',
-            'DLSSLSSLD',
-            'DSLLSLDDD',
-            'DLSDDD   ',
-            'DDD      ',
-            '         '
-        ], {
-            D: 'minecraft:diamond',
-            L: 'kubejs:diamond_lattice',
-            S: 'minecraft:nether_star'
-        }
-    )
-
     // Ultimate Gem
-	event.recipes.extendedcrafting.shapeless_table(
-		'kubejs:ultimate_gem',
-		[
+    event.recipes.extendedcrafting.shapeless_table(
+        'kubejs:ultimate_gem',
+        [
             "kubejs:destabilized_clathrate",
             "gtceu:enori_empowered_gem",
             "enderio:ender_crystal",
             "enderio:vibrant_crystal",
-            "kubejs:dilithium_crystal",
+            "gtceu:dilithium_gem",
             "enderio:enticing_crystal",
             "enderio:weather_crystal",
             "enderio:prescient_crystal",
@@ -285,30 +267,28 @@ ServerEvents.recipes(event => {
             "redstone_arsenal:flux_gem",
             "minecraft:diamond",
             "kubejs:resonant_clathrate"
-		]
-	)
-
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:zero_point_module', [
-            '  PPPPP  ',
-            '  PBCBP  ',
-            '  PCBCP  ',
-            '  PBCBP  ',
-            '   ZZZ   ',
-            '   ZFZ   ',
-            '   ZFZ   ',
-            '   ZZZ   ',
-            '   PPP   '
-        ], {
-            B: 'kubejs:stabilized_berkelium',
-            C: 'kubejs:stabilized_californium',
-            F: 'gtceu:zpm_field_generator',
-            P: 'nuclearcraft:plate_elite',
-            Z: '#gtceu:circuits/zpm'
-        }
+        ]
     )
 
-    //World Accelerators
+    event.recipes.extendedcrafting.shaped_table('gtceu:zero_point_module', [
+        '  PPPPP  ',
+        '  PBCBP  ',
+        '  PCBCP  ',
+        '  PBCBP  ',
+        '   ZZZ   ',
+        '   ZFZ   ',
+        '   ZFZ   ',
+        '   ZZZ   ',
+        '   PPP   '
+    ], {
+        B: 'kubejs:stabilized_berkelium',
+        C: 'kubejs:stabilized_californium',
+        F: 'gtceu:zpm_field_generator',
+        P: 'nuclearcraft:plate_elite',
+        Z: '#gtceu:circuits/zpm'
+    })
+
+    // World Accelerators
     event.remove({ id: 'gtceu:shaped/lv_world_accelerator' })
     event.remove({ id: 'gtceu:shaped/mv_world_accelerator' })
     event.remove({ id: 'gtceu:shaped/hv_world_accelerator' })
@@ -322,7 +302,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:luv_machine_hull', '64x gtceu:luv_field_generator', '16x gtceu:luv_field_generator', '20x gtceu:luv_sensor', '20x gtceu:luv_emitter', '16x #gtceu:circuits/luv', '4x gtceu:double_iridium_plate', '2x gtceu:dense_cryolobus_plate')
         .inputFluids('gtceu:enderium 1152', 'gtceu:soldering_alloy 1152')
         .itemOutputs('gtceu:hv_world_accelerator')
-        .stationResearch(b => b.researchStack('minecraft:clock').CWUt(4,16000))
+        .stationResearch(b => b.researchStack('minecraft:clock').CWUt(4, 16000))
         .duration(6000)
         .EUt(30720)
 
@@ -332,7 +312,6 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:ev_world_accelerator')
         .duration(6000)
         .EUt(122880)
-
         .stationResearch(b => b
             .researchStack('gtceu:hv_world_accelerator')
             .CWUt(32, 128000)
@@ -363,7 +342,7 @@ ServerEvents.recipes(event => {
             .EUt(1966080)
         )
 
-    //Beyond this point we could probably just treat these like joke items
+    // Beyond this point we could probably just treat these like joke items
     event.recipes.gtceu.assembly_line('zpm_world_accelerator')
         .itemInputs('gtceu:uev_machine_hull', '64x gtceu:uev_field_generator', '16x gtceu:uev_field_generator', '20x gtceu:uev_sensor', '20x gtceu:uev_emitter', '16x #gtceu:circuits/uev', '4x gtceu:double_holmium_plate', '2x gtceu:dense_infinity_plate')
         .inputFluids('gtceu:omnium 1152', 'gtceu:soldering_alloy 1152')
@@ -388,150 +367,125 @@ ServerEvents.recipes(event => {
             .EUt(31457280)
         )
 
-    //! Creative Items !//
+    // ! Creative Items !//
 
-    //Creative Jetpack
-    event.recipes.extendedcrafting.shaped_table(
-        Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}').weakNBT(), [
-            '  C   L  ',
-            ' CCC LLL ',
-            ' CVCFLEL ',
-            ' CVCILEL ',
-            ' CVCDLEL ',
-            ' CVC LEL ',
-            ' SSS HHH ',
-            '  N   R  ',
-            ' NNN RRR '
-        ], {
-            C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:conductive_iron"}').weakNBT(),
-            D: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:dark_soularium"}').weakNBT(),
-            E: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}').weakNBT(),
-            F: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').weakNBT(),
-            H: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:hardened"}').weakNBT(),
-            I: 'kubejs:infinity_catalyst',
-            L: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:leadstone"}').weakNBT(),
-            N: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),
-            R: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
-            S: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(),
-            V: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT()
-        }
-    )
+    // Creative Jetpack
+    event.recipes.extendedcrafting.shaped_table(Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}').weakNBT(), [
+        '  C   L  ',
+        ' CCC LLL ',
+        ' CVCFLEL ',
+        ' CVCILEL ',
+        ' CVCDLEL ',
+        ' CVC LEL ',
+        ' SSS HHH ',
+        '  N   R  ',
+        ' NNN RRR '
+    ], {
+        C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:conductive_iron"}').weakNBT(),
+        D: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:dark_soularium"}').weakNBT(),
+        E: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}').weakNBT(),
+        F: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').weakNBT(),
+        H: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:hardened"}').weakNBT(),
+        I: 'kubejs:infinity_catalyst',
+        L: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:leadstone"}').weakNBT(),
+        N: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),
+        R: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
+        S: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(),
+        V: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT()
+    })
 
-    //Creative Solar Panel
-    event.recipes.extendedcrafting.shaped_table(
-        'solarflux:sp_custom_infinity', [
-            'SNNNNNNNS',
-            'NPPPNPPPN',
-            'NPPPNPPPN',
-            'NPPPNPPPN',
-            'NNNNINNNN',
-            'NPPPNPPPN',
-            'NPPPNPPPN',
-            'NPPPNPPPN',
-            'SNNNNNNNS'
-        ], {
-            I: 'kubejs:infinity_catalyst',
-            N: 'gtceu:neutronium_plate',
-            P: 'gtceu:infinity_plate',
-            S: 'solarflux:sp_custom_neutronium'
-        }
-    )
+    // Creative Solar Panel
+    event.recipes.extendedcrafting.shaped_table('solarflux:sp_custom_infinity', [
+        'SNNNNNNNS',
+        'NPPPNPPPN',
+        'NPPPNPPPN',
+        'NPPPNPPPN',
+        'NNNNINNNN',
+        'NPPPNPPPN',
+        'NPPPNPPPN',
+        'NPPPNPPPN',
+        'SNNNNNNNS'
+    ], {
+        I: 'kubejs:infinity_catalyst',
+        N: 'gtceu:neutronium_plate',
+        P: 'gtceu:infinity_plate',
+        S: 'solarflux:sp_custom_neutronium'
+    })
 
     // Creative Chest
-    event.shaped(
-        'gtceu:max_machine_casing', [
-        'MMM',
-        'MWM',
-        'MMM'
-    ], {
-        M: 'gtceu:monium_plate',
-        W: 'kubejs:infinity_wrench'
-    }
-    ).id('kubejs:endgame/max_casing')
-
-    event.recipes.gtceu.assembler('kubejs:endgame/max_hull')
-        .itemInputs('gtceu:max_machine_casing', '2x gtceu:monium_single_wire', '2x gtceu:polyethyl_cyanoacrylate_plate')
-        .itemOutputs('gtceu:max_machine_hull')
-        .duration(1980)
-        .EUt(GTValues.VA[GTValues.MAX])
-
     if (isNormalMode) {
-        event.recipes.extendedcrafting.shaped_table(
-            '2x gtceu:creative_chest', [
-                'BMMMMMMMMMB',
-                'MIWOPPPOYIM',
-                'MIFNNNNNFIM',
-                'MINCSSSCNIM',
-                'RUSSAQASSUR',
-                'REEMGHGMEER',
-                'RUTTAQATTUR',
-                'MINCTTTCNIM',
-                'MIFNNNNNFIM',
-                'MIXPPZPPVIM',
-                'BMMMMMMMMMB'
-            ], {
-                A: 'kubejs:furious_infinity_catalyst',
-                B: 'gtceu:monium_block',
-                C: 'kubejs:serene_infinity_catalyst',
-                E: 'kubejs:creative_energy_data',
-                F: 'gtceu:uiv_field_generator',
-                G: 'gtceu:monium_gear',
-                H: 'gtceu:max_machine_hull',
-                I: 'kubejs:elementally_infused_omnic_matrix_heavy_plating',
-                M: 'kubejs:causality_exempt_monic_heavy_plating',
-                N: 'kubejs:dimensionally_stabilized_infinity_heavy_plating',
-                O: 'gtceu:uiv_sensor',
-                P: 'kubejs:monic_processor_mainframe',
-                Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
-                R: 'gtceu:uiv_robot_arm',
-                S: 'kubejs:creative_storage_data',
-                T: 'kubejs:creative_tank_data',
-                U: 'gtceu:subatomic_digital_assembler',
-                V: 'kubejs:infinity_file',
-                W: 'kubejs:infinity_screwdriver',
-                X: 'kubejs:infinity_wrench',
-                Y: 'kubejs:infinity_hammer',
-                Z: 'kubejs:infinity_wire_cutter'
-            }
-        )
+        event.recipes.extendedcrafting.shaped_table('2x gtceu:creative_chest', [
+            'BMMMMMMMMMB',
+            'MIWOPPPOYIM',
+            'MIFNNNNNFIM',
+            'MINCSSSCNIM',
+            'RUSSAQASSUR',
+            'REEMGHGMEER',
+            'RUTTAQATTUR',
+            'MINCTTTCNIM',
+            'MIFNNNNNFIM',
+            'MIXPPZPPVIM',
+            'BMMMMMMMMMB'
+        ], {
+            A: 'kubejs:furious_infinity_catalyst',
+            B: 'gtceu:monium_block',
+            C: 'kubejs:serene_infinity_catalyst',
+            E: 'kubejs:creative_energy_data',
+            F: 'gtceu:uiv_field_generator',
+            G: 'gtceu:monium_gear',
+            H: 'gtceu:max_machine_hull',
+            I: 'kubejs:elementally_infused_omnic_matrix_heavy_plating',
+            M: 'kubejs:causality_exempt_monic_heavy_plating',
+            N: 'kubejs:dimensionally_stabilized_infinity_heavy_plating',
+            O: 'gtceu:uiv_sensor',
+            P: 'kubejs:monic_processor_mainframe',
+            Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
+            R: 'gtceu:uiv_robot_arm',
+            S: 'kubejs:creative_storage_data',
+            T: 'kubejs:creative_tank_data',
+            U: 'gtceu:subatomic_digital_assembler',
+            V: 'kubejs:infinity_file',
+            W: 'kubejs:infinity_screwdriver',
+            X: 'kubejs:infinity_wrench',
+            Y: 'kubejs:infinity_hammer',
+            Z: 'kubejs:infinity_wire_cutter'
+        })
     } else {
-        event.recipes.extendedcrafting.shaped_table(
-            '2x gtceu:creative_chest', [
-                'BMMMMMMMMMB',
-                'MIWOPPPOYIM',
-                'MIFNNNNNFIM',
-                'MINCSSSCNIM',
-                'RUSSAQASSUR',
-                'REEMGHGMEER',
-                'RUTTAQATTUR',
-                'MINCTTTCNIM',
-                'MIFNNNNNFIM',
-                'MIXPPZPPVIM',
-                'BMMMMMMMMMB'
-            ], {
-                A: 'kubejs:furious_infinity_catalyst',
-                B: 'gtceu:monium_block',
-                C: 'kubejs:serene_infinity_catalyst',
-                E: 'kubejs:creative_energy_data',
-                F: 'gtceu:uiv_field_generator',
-                G: 'gtceu:monium_gear',
-                H: 'gtceu:max_machine_hull',
-                I: 'kubejs:elementally_infused_omnic_matrix_heavy_plating',
-                M: 'kubejs:causality_exempt_monic_heavy_plating',
-                N: 'kubejs:dimensionally_stabilized_infinity_heavy_plating',
-                O: 'gtceu:uiv_sensor',
-                P: 'kubejs:monic_processor_mainframe',
-                Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
-                R: 'gtceu:uiv_robot_arm',
-                S: 'kubejs:creative_storage_data',
-                T: 'kubejs:omnic_data',
-                U: 'gtceu:subatomic_digital_assembler',
-                V: 'kubejs:infinity_file',
-                W: 'kubejs:infinity_screwdriver',
-                X: 'kubejs:infinity_wrench',
-                Y: 'kubejs:infinity_hammer',
-                Z: 'kubejs:infinity_wire_cutter'
-            }
-        )
+        event.recipes.extendedcrafting.shaped_table('2x gtceu:creative_chest', [
+            'BMMMMMMMMMB',
+            'MIWOPPPOYIM',
+            'MIFNNNNNFIM',
+            'MINCSSSCNIM',
+            'RUSSAQASSUR',
+            'REEMGHGMEER',
+            'RUTTAQATTUR',
+            'MINCTTTCNIM',
+            'MIFNNNNNFIM',
+            'MIXPPZPPVIM',
+            'BMMMMMMMMMB'
+        ], {
+            A: 'kubejs:furious_infinity_catalyst',
+            B: 'gtceu:monium_block',
+            C: 'kubejs:serene_infinity_catalyst',
+            E: 'kubejs:creative_energy_data',
+            F: 'gtceu:uiv_field_generator',
+            G: 'gtceu:monium_gear',
+            H: 'gtceu:max_machine_hull',
+            I: 'kubejs:elementally_infused_omnic_matrix_heavy_plating',
+            M: 'kubejs:causality_exempt_monic_heavy_plating',
+            N: 'kubejs:dimensionally_stabilized_infinity_heavy_plating',
+            O: 'gtceu:uiv_sensor',
+            P: 'kubejs:monic_processor_mainframe',
+            Q: 'kubejs:field_stabilised_omnic_pulsar_compound',
+            R: 'gtceu:uiv_robot_arm',
+            S: 'kubejs:creative_storage_data',
+            T: 'kubejs:omnic_data',
+            U: 'gtceu:subatomic_digital_assembler',
+            V: 'kubejs:infinity_file',
+            W: 'kubejs:infinity_screwdriver',
+            X: 'kubejs:infinity_wrench',
+            Y: 'kubejs:infinity_hammer',
+            Z: 'kubejs:infinity_wire_cutter'
+        })
     }
 })

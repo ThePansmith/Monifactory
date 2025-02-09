@@ -1,9 +1,11 @@
+/**
+ * Custom recipes for the Building Gadgets mod
+ */
 ServerEvents.recipes(event => {
     if (isHardMode) {
         event.remove({ id: /buildinggadgets2/ })
-        //Template Manager
-        event.shaped(
-            'buildinggadgets2:template_manager', [
+        // Template Manager
+        event.shaped('buildinggadgets2:template_manager', [
             'PMP',
             'CGC',
             'PLP'
@@ -14,9 +16,8 @@ ServerEvents.recipes(event => {
             C: '#gtceu:circuits/mv',
             L: '#forge:plates/lapis'
         })
-        //Gadgets
-        event.shaped(
-            'buildinggadgets2:gadget_building', [
+        // Gadgets
+        event.shaped('buildinggadgets2:gadget_building', [
             'PE',
             'CM',
             'PB'
@@ -28,8 +29,7 @@ ServerEvents.recipes(event => {
             B: '#gtceu:batteries/lv'
         })
 
-        event.shaped(
-            'buildinggadgets2:gadget_exchanging', [
+        event.shaped('buildinggadgets2:gadget_exchanging', [
             'PE',
             'CM',
             'PB'
@@ -40,8 +40,7 @@ ServerEvents.recipes(event => {
             C: '#gtceu:circuits/mv',
             B: '#gtceu:batteries/lv'
         })
-        event.shaped(
-            'buildinggadgets2:gadget_copy_paste', [
+        event.shaped('buildinggadgets2:gadget_copy_paste', [
             'SE',
             'CM',
             'PB'
@@ -53,8 +52,7 @@ ServerEvents.recipes(event => {
             C: '#gtceu:circuits/mv',
             B: '#gtceu:batteries/mv'
         })
-        event.shaped(
-            'buildinggadgets2:gadget_cut_paste', [
+        event.shaped('buildinggadgets2:gadget_cut_paste', [
             'SE',
             'CM',
             'PB'
@@ -66,8 +64,7 @@ ServerEvents.recipes(event => {
             C: '#gtceu:circuits/lv',
             B: '#gtceu:batteries/hv'
         })
-        event.shaped(
-            'buildinggadgets2:gadget_destruction', [
+        event.shaped('buildinggadgets2:gadget_destruction', [
             'PE',
             'CM',
             'PB'
@@ -81,8 +78,7 @@ ServerEvents.recipes(event => {
     } else {
         // Slight nerf in NM because its stupid good for mining lol
         event.remove({ id: 'buildinggadgets2:gadget_exchanging' })
-        event.shaped(
-            'buildinggadgets2:gadget_exchanging', [
+        event.shaped('buildinggadgets2:gadget_exchanging', [
             'PE',
             'CM',
             'PB'

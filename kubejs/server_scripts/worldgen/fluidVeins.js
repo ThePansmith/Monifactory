@@ -1,6 +1,12 @@
+/**
+ * Registration of GT fluid veins on Ad Astra planets and in the void
+ */
+
 const Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-const martianPolarCapsResourceKey = ResourceKey.create(Registries.BIOME, 'gcyr:martian_polar_caps')
+const martianPolarCapsResourceKey = ResourceKey.create(Registries.BIOME, 'ad_astra:martian_polar_caps')
+const venusWastelandsResourceKey = ResourceKey.create(Registries.BIOME, 'ad_astra:venus_wastelands')
+const infernalVenusBarrensResourceKey = ResourceKey.create(Registries.BIOME, 'ad_astra:infernal_venus_barrens')
 
 GTCEuServerEvents.fluidVeins(event => {
 
@@ -9,29 +15,28 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.dimensions('javd:void')
         vein.fluid(() => Fluid.of("gtceu:oil_medium").fluid)
         vein.weight(100)
-        vein.minimumYield(300)
-        vein.maximumYield(200)
+        vein.minimumYield(200)
+        vein.maximumYield(250)
         vein.depletionAmount(1)
-        vein.depletionChance(25)
-        vein.depletedYield(100)
+        vein.depletionChance(50)
+        vein.depletedYield(20)
     })
 
     event.add('kubejs:void/oil', vein => {
         vein.dimensions('javd:void')
         vein.fluid(() => Fluid.of("gtceu:oil").fluid)
         vein.weight(20)
-        vein.minimumYield(350)
-        vein.maximumYield(225)
+        vein.minimumYield(200)
+        vein.maximumYield(250)
         vein.depletionAmount(1)
-        vein.depletionChance(25)
-        vein.depletedYield(100)
+        vein.depletionChance(50)
+        vein.depletedYield(20)
     })
 
-    
 
-    // Luna fluid veins	
-	event.add('kubejs:moon/deuterium', vein => {
-        vein.dimensions('gcyr:luna')
+    // Luna fluid veins
+    event.add('kubejs:moon/deuterium', vein => {
+        vein.dimensions('ad_astra:moon')
         vein.fluid(() => Fluid.of("gtceu:deuterium").fluid)
         vein.weight(60)
         vein.minimumYield(10)
@@ -40,9 +45,9 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletionChance(50)
         vein.depletedYield(5)
     })
-	
-	event.add('kubejs:moon/helium_3', vein => {
-        vein.dimensions('gcyr:luna')
+
+    event.add('kubejs:moon/helium_3', vein => {
+        vein.dimensions('ad_astra:moon')
         vein.fluid(() => Fluid.of("gtceu:helium_3").fluid)
         vein.weight(35)
         vein.minimumYield(5)
@@ -54,12 +59,12 @@ GTCEuServerEvents.fluidVeins(event => {
 
     // Mars fluid veins (haha water on Mars)
     event.add('kubejs:mars/ice', vein => {
-        vein.dimensions('gcyr:mars')
-        vein.biomes(1, martianPolarCapsResourceKey)   //TODO: add back in when GTCEu Modern fixes it
+        vein.dimensions('ad_astra:mars')
+        vein.biomes(1, martianPolarCapsResourceKey)
         vein.fluid(() => Fluid.of("gtceu:ice").fluid)
         vein.weight(0)
-        vein.minimumYield(10)
-        vein.maximumYield(30)
+        vein.minimumYield(100)
+        vein.maximumYield(300)
         vein.depletionAmount(1)
         vein.depletionChance(50)
         vein.depletedYield(3)
@@ -67,25 +72,94 @@ GTCEuServerEvents.fluidVeins(event => {
 
     // Venus fluid veins
     event.add('kubejs:venus/sulfuric_acid', vein => {
-        vein.dimensions('gcyr:venus')
+        vein.dimensions('ad_astra:venus')
         vein.fluid(() => Fluid.of("gtceu:sulfuric_acid").fluid)
-        vein.weight(1)
-        vein.minimumYield(10)
-        vein.maximumYield(40)
+        vein.weight(2)
+        vein.minimumYield(50)
+        vein.maximumYield(200)
         vein.depletionAmount(1)
         vein.depletionChance(30)
         vein.depletedYield(5)
     })
 
-    //Mercury fluid veins (Haha Mercury is made of Mercury)
+    event.add('kubejs:venus/sulfuric_gas', vein => {
+        vein.dimensions('ad_astra:venus')
+        vein.fluid(() => Fluid.of("gtceu:sulfuric_gas").fluid)
+        vein.biomes(1, venusWastelandsResourceKey)
+        vein.weight(0)
+        vein.minimumYield(100)
+        vein.maximumYield(400)
+        vein.depletionAmount(1)
+        vein.depletionChance(100)
+        vein.depletedYield(15)
+    })
+
+    event.add('kubejs:venus/blaze', vein => {
+        vein.dimensions('ad_astra:venus')
+        vein.fluid(() => Fluid.of("gtceu:blaze").fluid)
+        vein.biomes(4, infernalVenusBarrensResourceKey)
+        vein.weight(0)
+        vein.minimumYield(70)
+        vein.maximumYield(120)
+        vein.depletionAmount(1)
+        vein.depletionChance(90)
+        vein.depletedYield(0)
+    })
+
+    // Mercury fluid veins (Haha Mercury is made of Mercury)
     event.add('kubejs:mercury/mercury', vein => {
-        vein.dimensions('gcyr:mercury')
+        vein.dimensions('ad_astra:mercury')
         vein.fluid(() => Fluid.of("gtceu:mercury").fluid)
+        vein.weight(5)
+        vein.minimumYield(100)
+        vein.maximumYield(150)
+        vein.depletionAmount(1)
+        vein.depletionChance(100)
+        vein.depletedYield(0)
+    })
+
+    event.add('kubejs:mercury/sodium_persulfate', vein => {
+        vein.dimensions('ad_astra:mercury')
+        vein.fluid(() => Fluid.of("gtceu:sodium_persulfate").fluid)
+        vein.weight(2)
+        vein.minimumYield(50)
+        vein.maximumYield(70)
+        vein.depletionAmount(1)
+        vein.depletionChance(20)
+        vein.depletedYield(20)
+    })
+
+    event.add('kubejs:mercury/pyrotheum', vein => {
+        vein.dimensions('ad_astra:mercury')
+        vein.fluid(() => Fluid.of("kubejs:molten_pyrotheum").fluid)
         vein.weight(1)
         vein.minimumYield(10)
-        vein.maximumYield(15)
-        vein.depletionAmount(0)
-        vein.depletionChance(0)
-        vein.depletedYield(2)
+        vein.maximumYield(50)
+        vein.depletionAmount(1)
+        vein.depletionChance(100)
+        vein.depletedYield(0)
+    })
+
+    // Glacio fluid veins
+    event.add('kubejs:glacio/oil_heavy', vein => {
+        vein.dimensions('ad_astra:glacio')
+        vein.fluid(() => Fluid.of("gtceu:oil_heavy").fluid)
+        vein.weight(7)
+        vein.minimumYield(200)
+        vein.maximumYield(250)
+        vein.depletionAmount(2)
+        vein.depletionChance(100)
+        vein.depletedYield(40)
+    })
+
+    event.add('kubejs:glacio/cryotheum', vein => {
+        vein.dimensions('ad_astra:glacio')
+        vein.fluid(() => Fluid.of("kubejs:molten_cryotheum").fluid)
+        vein.weight(1)
+        vein.minimumYield(10)
+        vein.maximumYield(50)
+        vein.depletionAmount(1)
+        vein.depletionChance(100)
+        vein.depletedYield(0)
     })
 })

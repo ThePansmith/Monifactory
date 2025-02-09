@@ -41,7 +41,7 @@ helper.creator.imagenotfound.title = Nie znaleziono obrazu!
 helper.creator.imagenotfound.desc = Obraz który chcesz dodać nie istnieje%n%w określonej lokalizacji.
 
 helper.creator.animationnotfound.title = Nie znaleziono animacji!
-helper.creator.animationnotfound.desc = Animacja którą chcesz dodać nie istnieje.%n%%n%Być może zapomniałeś dodać wszystkich obowiązkowych zmiennych do jego właściwości?%n%%n%Zawsze pamiętaj, że musisz ponownie uruchomić grę%n%po dodaniu nowej animacji do folderu animacji.
+helper.creator.animationnotfound.desc = Animacja którą chcesz dodać nie istnieje.%n%%n%Być może zapomniałeś dodać wszystkich obowiązkowych zmiennych do jego właściwości?%n%%n%Zawsze pamiętaj, że musisz ponownie etlzchomić grę%n%po dodaniu nowej animacji do folderu animacji.
 
 helper.creator.texttooshort.title = Tekst jest za krótki!
 helper.creator.texttooshort.desc = Twój tekst musi mieć conajmniej jeden znak!%n%W przeciwnym razie… on… byłby niczym.%n%%n%Nikt nie chce być niczym, więc nie rób tego z tekstem!
