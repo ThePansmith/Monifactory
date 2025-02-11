@@ -13,6 +13,7 @@ ItemEvents.tooltip(tooltip => {
         microminer_tooltip(i)
     }
 
+    tooltip.add('kubejs:microminer_t2half', Text.translatable('item.kubejs.microminer_t2half.desc'))
     tooltip.add('kubejs:microminer_t4half', Text.translatable('item.kubejs.microminer_t4half.desc'))
     tooltip.add('kubejs:microminer_t8half', Text.translatable('item.kubejs.microminer_t8half.desc'))
 
@@ -20,6 +21,10 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable('item.kubejs.stabilized_microminer.tooltip.1'))
         text.add(2, Text.translatable('item.kubejs.stabilized_microminer.tooltip.2'))
         text.add(3, Text.translatable('item.kubejs.stabilized_microminer.tooltip.3'))
+    })
+
+    tooltip.addAdvanced(['/kubejs:damaged_microminer/'], (item, adv, text) => {
+        text.add(1, Text.translatable('item.kubejs.damaged_microminer.tooltip'))
     })
 
     tooltip.addAdvanced(['/kubejs:pristine_matter/'], (item, adv, text) => {

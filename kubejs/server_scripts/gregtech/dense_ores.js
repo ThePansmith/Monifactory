@@ -3,29 +3,25 @@
  */
 
 const ores = [
-    "redstone_ore",
-    'diamond_ore',
-    'emerald_ore',
-    'gold_ore',
-    'lapis_ore',
-    'iron_ore',
-    'coal_ore',
-    'nether_quartz_ore',
-    'copper_ore'
+    ['redstone', 16],
+    ['diamond', 16],
+    ['emerald', 16],
+    ['gold', 16],
+    ['lapis', 16],
+    ['iron', 16],
+    ['coal', 16],
+    ['nether_quartz', 32],
+    ['copper', 16],
 ]
 
 ServerEvents.recipes(event => {
-    function unDensify(name) {
+    ores.forEach(([name, amount]) => {
         event.recipes.gtceu.chemical_reactor(`kubejs:undensify_${name}`)
-            .itemInputs(`kubejs:dense_${name}`)
-            .itemOutputs(`16x gtceu:${name}`)
+            .itemInputs(`kubejs:dense_${name}_ore`)
+            .itemOutputs(ChemicalHelper.get("raw", name, amount))
             .inputFluids(Fluid.of("gtceu:nitric_acid", 1000))
             .duration(200)
             .EUt(500)
-    }
-
-    ores.forEach(ore => {
-        unDensify(ore);
     })
 
     event.recipes.gtceu.chemical_reactor("kubejs:undensify_oilsands")
@@ -41,19 +37,4 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("gtceu:nitric_acid", 1000))
         .duration(200)
         .EUt(500)
-})
-
-ServerEvents.tags('item', event => {
-    // dense ore mod is gone, so we tag it
-    ores.forEach(ore => {
-        event.add("forge:ores/dense", `forge:ores/dense/${ore}`, `kubejs:dense_${ore}`);
-        // event.add('forge:dense_ores', `kubejs:dense_${ore}`);
-    })
-})
-
-ServerEvents.tags('block', event => {
-    // might as well
-    ores.forEach(ore => {
-        event.add("forge:ores/dense", `forge:ores/dense/${ore}`, `kubejs:dense_${ore}`);
-    })
 })
