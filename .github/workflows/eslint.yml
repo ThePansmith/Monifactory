@@ -27,5 +27,5 @@ jobs:
         run: |
           cd ${{ github.workspace }}/${{ inputs.folder }}
           npm install
-          npx eslint
+          npx eslint --fix
         shell: bash
