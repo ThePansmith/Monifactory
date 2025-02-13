@@ -93,16 +93,12 @@ If you wish to add a language for localization, either ask Pansmith to add it, o
 
 ### Config Overrides ###
 
-One notable thing to watch out for when modifying this mod pack is that we have
-multiple difficulty "modes". These modes are located in the `config-overrides`
-folder. Some files are copied into these folders and are used to replace files
-located in the `config` folder when the `pack-mode-switcher.{sh,bat}` script is
-run.
-
-By default this mod pack is set to "normal" difficulty. Please double check that
-any files you are working on are do not also exist inside the `config-overrides`
-folder. If they do you will need to copy your changes over into them and adjust
-them as appropriate for the difficulty setting that folder represents.
+One thing to watch out for when contributing is that we have multiple difficulty "modes".
+The files used when changing modes are located in the `config-overrides` folder.
+Some files normally located in the `config` folder are there instead,
+and only copied over to their normal locations when the `pack-mode-switcher.{sh,bat}` script is run.
+An example of this would be the `genesis.snbt` FTBQuests chapter, as it changes almost entirely from mode to mode.
+If you want to make a change across all modes, make sure to make the same change to all three overrides.
 
 ### KubeJS Style Guide ###
 Keeping the KubeJS files clean and easy to read is important for a couple reasons; outside of making fellow contributor's lives easier, it lets people who are new to KubeJS be able to easily reference Monifactory when getting started with learning how to packdev. This might seem like a lot, but if you take a look at how the other files do it, it comes fairly naturally; the list below is a reference in case you are not sure.
