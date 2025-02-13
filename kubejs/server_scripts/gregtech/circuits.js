@@ -388,11 +388,11 @@ ServerEvents.recipes(event => {
     // Monic Circuits
     event.recipes.gtceu.circuit_assembler('monic_circuit_board')
         .itemInputs('32x kubejs:dimensional_circuit_board',
-            '2x gtceu:monium_plate',
+            'gtceu:monium_plate',
             '#gtceu:circuits/uv',
             'gtceu:zpm_field_generator',
             '1x kubejs:quasi_stable_neutron_star',
-            '2x kubejs:ultimate_gem'
+            '2x kubejs:hadal_energy_core'
         )
         .inputFluids('gtceu:omnium 576')
         .itemOutputs('32x kubejs:monic_circuit_board')
@@ -401,7 +401,7 @@ ServerEvents.recipes(event => {
         .EUt(2000000)
 
     event.recipes.gtceu.large_chemical_reactor('monic_processing_unit')
-        .itemInputs('1x kubejs:monic_circuit_board', '6x gtceu:monium_single_wire', '8x gtceu:holmium_foil')
+        .itemInputs('1x kubejs:monic_circuit_board', '12x gtceu:fine_monium_wire', '8x gtceu:holmium_foil')
         .inputFluids('gtceu:iron_iii_chloride 12000')
         .itemOutputs('1x kubejs:monic_processing_unit')
         .cleanroom(CleanroomType.CLEANROOM)
@@ -460,7 +460,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line('monic_processor_mainframe')
         .itemInputs(
-            '4x gtceu:monium_frame',
+            '2x gtceu:monium_frame',
             '2x kubejs:monic_processor_computer',
             '64x kubejs:complex_smd_diode',
             '64x kubejs:complex_smd_capacitor',
