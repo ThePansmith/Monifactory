@@ -162,7 +162,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.19233A97579E0BDD.title}"
-			x: -2.0d
+			x: -3.0d
 			y: 2.0d
 		}
 		{
@@ -2384,7 +2384,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.39394D5596FF8BC8.title}"
-			x: -3.5d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
