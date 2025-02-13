@@ -54,6 +54,7 @@ The following guide was written with prism launcher in mind, see [here](<https:/
 2. Open the `instances\Monifactory` folder, take everything contained within it and store it in a temporary folder (`temp`).
 3. Clone your fork of the Monifactory repository into `instances\Monifactory`, with the repository's folder being named `minecraft`. (If using the desktop app, see [here](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) for an image example.)
 4. Once the repo is installed,  go back to your temporary folder and move the files from the `temp` root folder and `temp\minecraft\mods` folder back into the Monifactory folder.
+5. Run pack-mode-switcher with your preferred mode.
 
 If you encounter a problem and there have been mod updates since the latest release, you may need to update your mods using the mod manifest file.
 1. Look for a file named `manifest.json` in your instance and make a .zip with it inside.
@@ -106,7 +107,7 @@ them as appropriate for the difficulty setting that folder represents.
 ### KubeJS Style Guide ###
 Keeping the KubeJS files clean and easy to read is important for a couple reasons; outside of making fellow contributor's lives easier, it lets people who are new to KubeJS be able to easily reference Monifactory when getting started with learning how to packdev. This might seem like a lot, but if you take a look at how the other files do it, it comes fairly naturally; the list below is a reference in case you are not sure.
 
-1. If you're using VSCode as an editor, open workspace `.vscode/moni.code-workspace` and install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Make sure to install ESLint with [`npm install`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) in `kubejs` directory beforehand. This will ensure code quality in the scripts you are writing. *If you use a unix-like system, copy `.github/hooks` directory into `.git/` as well.*
+1. If you're using VSCode as an editor, open workspace `.vscode/moni.code-workspace` and install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Make sure to install ESLint with [`npm install`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) in `kubejs` directory beforehand. Copy `.github/hooks` directory into `.git/` as well. This will ensure code quality in the scripts you are writing. 
 2. On a similar note, we use `UTF-8` character encoding. This information is visible on the bottom-right if you're using VSCode.
 3. Please sprinkle in one-line comments throughout to explain what certain blocks of code do. _Nobody's_ code is self-explanatory.
 4. When possible, use a list/array and `forEach` to perform a similar action multiple times. It's more compact and easier to modify that way.
