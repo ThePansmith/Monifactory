@@ -5,8 +5,8 @@
 
 import { ESLintUtils } from "@typescript-eslint/utils"
 
-const defaultHeaderContent = "*\r\n * Describe this file here!\r\n "
-const defaultHeader = `/*${defaultHeaderContent}*/\r\n\r\n`
+const defaultHeaderContent = "*\n * Describe this file here!\n "
+const defaultHeader = `/*${defaultHeaderContent}*/\n\n`
 
 
 export default ESLintUtils.RuleCreator.withoutDocs({
