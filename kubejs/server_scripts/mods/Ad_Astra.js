@@ -457,3 +457,45 @@ ServerEvents.tags("item", event => {
     event.add("ad_astra:freeze_resistant_armor", quarkTechArmor)
     event.add("ad_astra:heat_resistant_armor", quarkTechArmor)
 })
+
+ServerEvents.recipes(event => {
+    // Ad Astra Rock Breaker
+    function AdAstraRockBreaker(id, input, output, EUt, dimension) {
+        event.recipes.gtceu.rock_breaker(`kubejs:${id}`)
+            .notConsumable(Item.of(input))
+            .itemOutputs(output)
+            .duration(16)
+            .EUt(EUt)
+            .dimension(dimension)
+            .addDataString("fluidA", "minecraft:lava")
+            .addDataString("fluidB", "minecraft:water")
+    }
+
+    AdAstraRockBreaker('moonstone', 'ad_astra:moon_stone', 'ad_astra:moon_stone', 240, 'ad_astra:moon')
+    AdAstraRockBreaker('moondeepslate', 'ad_astra:moon_deepslate', 'ad_astra:moon_deepslate', 240, 'ad_astra:moon')
+    AdAstraRockBreaker('marsstone', 'ad_astra:mars_stone', 'ad_astra:mars_stone', 240, 'ad_astra:mars')
+    AdAstraRockBreaker('conglomerate', 'ad_astra:conglomerate', 'ad_astra:conglomerate', 240, 'ad_astra:mars')
+    AdAstraRockBreaker('venusstone', 'ad_astra:venus_stone', 'ad_astra:venus_stone', 960, 'ad_astra:venus')
+    AdAstraRockBreaker('infernalspireblock', 'ad_astra:infernal_spire_block', 'ad_astra:infernal_spire_block', 960, 'ad_astra:venus')
+    AdAstraRockBreaker('mercurystone', 'ad_astra:mercury_stone', 'ad_astra:mercury_stone', 960, 'ad_astra:mercury')
+    AdAstraRockBreaker('glaciostone', 'ad_astra:glacio_stone', 'ad_astra:glacio_stone', 2160, 'ad_astra:glacio')
+    AdAstraRockBreaker('permafrost', 'ad_astra:permafrost', 'ad_astra:permafrost', 2160, 'ad_astra:glacio')
+
+    // Ad Astra Rock Forge Hammers
+    function AdAstraForgeHammer(id, input, output, duration, EUt) {
+        event.recipes.gtceu.forge_hammer(`kubejs:${id}`)
+            .itemInputs(Item.of(input))
+            .itemOutputs(output)
+            .duration(duration)
+            .EUt(EUt)
+    }
+
+    AdAstraForgeHammer('mooncobble', 'ad_astra:moon_stone', 'ad_astra:moon_cobblestone', 12, 4)
+    AdAstraForgeHammer('moonsand', 'ad_astra:moon_cobblestone', 'ad_astra:moon_sand', 10, 16)
+    AdAstraForgeHammer('marscobble', 'ad_astra:mars_stone', 'ad_astra:mars_cobblestone', 12, 4)
+    AdAstraForgeHammer('marssand', 'ad_astra:mars_cobblestone', 'ad_astra:mars_sand', 10, 16)
+    AdAstraForgeHammer('venuscobble', 'ad_astra:venus_stone', 'ad_astra:venus_cobblestone', 12, 4)
+    AdAstraForgeHammer('venussand', 'ad_astra:venus_cobblestone', 'ad_astra:venus_sand', 10, 16)
+    AdAstraForgeHammer('mercurycobble', 'ad_astra:mercury_stone', 'ad_astra:mercury_cobblestone', 12, 4)
+    AdAstraForgeHammer('glaciocobble', 'ad_astra:glacio_stone', 'ad_astra:glacio_cobblestone', 12, 4)
+})
