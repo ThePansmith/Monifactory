@@ -21,7 +21,6 @@ ServerEvents.recipes(event => {
                     .itemOutputs(result)
                     .duration(duration * 20)
                     .EUt(eut)
-                console.log(`[AS]: Registered ${id}`)
             }
         }
     }
