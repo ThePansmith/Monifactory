@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
             .duration(2000)
             .EUt(65520)
 
-        // Mob Heads 
+        // Mob Heads
         event.shaped('minecraft:skeleton_skull', [
             ' A ',
             'ABA',

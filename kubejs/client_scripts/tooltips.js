@@ -46,7 +46,7 @@ ItemEvents.tooltip(tooltip => {
     // Questbook
     tooltip.addAdvanced(`ftbquests:book`, (item, adv, text) => { text.add(2, Text.gray(Text.translatable('ftbquests.book.tooltip'))) })
 
-    // Redstone Clock 
+    // Redstone Clock
     tooltip.add('redstoneclock:redstone_clock', Text.translatable('redstoneclock.redstone_clock.tooltip'))
 
     // DML Data Model
@@ -255,7 +255,7 @@ ItemEvents.tooltip(tooltip => {
         'chipped:loom_table',
         'chipped:mason_table',
         'chipped:alchemy_bench',
-        'chipped:tinkering_table'],  (item, adv, text) => {
+        'chipped:tinkering_table'], (item, adv, text) => {
         text.add(1, Text.translatable('chipped.workbenches.tooltip.1'))
         text.add(2, Text.translatable('chipped.workbenches.tooltip.2'))
     })
@@ -268,7 +268,7 @@ ItemEvents.tooltip(tooltip => {
         'packagedexcrafting:ultimate_crafter',
         'packagedexexcrafting:epic_crafter'
     ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
-    
+
     // Tempad
     if (Platform.isLoaded('tempad')) {
         tooltip.add('tempad:tempad', Text.translatable("tempad.tempad.tooltip"))

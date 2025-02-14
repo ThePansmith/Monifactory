@@ -89,6 +89,9 @@
   "item.kubejs.grains_of_innocence": "Grains of Innocence",
   "item.kubejs.radium_salt": "Radon Salt",
   "item.kubejs.moon_dust": "Moon Dust",
+  "item.kubejs.mars_dust": "Mars Dust",
+  "item.kubejs.venus_dust": "Venus Dust",
+  "item.kubejs.mercury_dust": "Mercury Dust",
 
   "item.kubejs.aerotheum_dust": "§7Aerotheum Dust",
   "item.kubejs.cryotheum_dust": "§bCryotheum Dust",
@@ -147,6 +150,8 @@
   "item.kubejs.quantum_soc_wafer": "Quantum SoC Wafer",
   "item.kubejs.quantum_soc_chip_base": "Quantum SoC Chip Base",
   "item.kubejs.quantum_soc_chip": "Quantum SoC Chip",
+  "item.kubejs.uxpic_wafer": "Uxpic Wafer",
+  "item.kubejs.uxpic_chip": "Uxpic Chip",
 
   "item.kubejs.crushed_ancient_debris": "Crushed Ancient Debris",
   "item.kubejs.purified_ancient_debris": "Purified Ancient Debris",
@@ -156,6 +161,22 @@
   "item.kubejs.processed_ancient_debris_dust": "Processed Ancient Debris Dust",
   "item.kubejs.inert_netherite_scrap": "Inert Netherite Scrap",
   "item.kubejs.inert_nether_compound_ingot": "Inert Nether Compound Ingot",
+
+  "item.kubejs.sculk_core": "Sculk Core",
+  "item.kubejs.dischargement_core": "Dischargement Core",
+  "item.kubejs.sculk-compatible_trellis_microstructure": "Sculk-Compatible Trellis Microstructure",
+  "item.kubejs.fibrinogenic_sculk_goo": "Fibrinogenic Sculk Goo",
+  "item.kubejs.sculk_saturated_microstructure_pulp": "Sculk-Saturated Microstructure Pulp",
+  "item.kubejs.animated_bioalloy_pulp": "Animated Bioalloy Pulp",
+
+  "item.kubejs.reactive_dust_mixture": "Reactive Dust Mixture",
+  "item.kubejs.inert_dust_mixture": "Inert Dust Mixture",
+  "item.kubejs.dusty_inert_powder": "Dusty Inert Powder",
+  "item.kubejs.shiny_powder_mixture": "Shiny Powder Mixture",
+  "item.kubejs.shiny_metal_powder": "Shiny Metal Powder",
+  "item.kubejs.inert_clumps": "Inert Clumps",
+  "item.kubejs.clean_inert_cluster": "Clean Inert Cluster",
+  "item.kubejs.eltic_crystal_seed": "Eltic Crystal Seed",
 
   "item.kubejs.empty_fuel_rod": "Empty Fuel Rod",
   "item.kubejs.naquadah_fuel_pellet": "Naquadah Fuel Pellet",
@@ -249,8 +270,8 @@
   "item.kubejs.thermal_cloth": "Thermal Cloth",
   "item.kubejs.unprepared_space_helmet": "Unprepared Space Helmet",
   "item.kubejs.unprepared_space_chestpiece": "Unprepared Space Suit",
-  "item.kubejs.unprepared_space_leggings": "Unprepared Space Pants",
-  "item.kubejs.unprepared_space_boots": "Unprepared Space Boots",
+  "item.kubejs.unprepared_space_suit": "Unprepared Space Suit",
+  "item.kubejs.unprepared_space_pants": "Unprepared Space Pants",
 
   "item.kubejs.impossible_realm_data": "§bImpossible Realm Data",
   "item.kubejs.dragon_lair_data": "§dDragon Den Data",
@@ -342,7 +363,8 @@
   "item.kubejs.vibrant_thruster": "Vibrant Thruster",
   "item.kubejs.dark_soularium_thruster": "Dark Soularium Thruster",
   "item.kubejs.fluxed_thruster": "Fluxed Thruster",
-
+  "item.kubejs.redstone_transmission_coil": "Redstone Transmission Coil",
+  
   "fluid.kubejs.molten_pyrotheum": "§6Blazing Pyrotheum",
   "fluid.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "fluid.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
@@ -410,7 +432,6 @@
   "item.kubejs.monic_processor_assembly.tooltip" : "Can run vanilla Minecraft at a decent FPS",
   "item.kubejs.monic_processor_computer.tooltip" : "Infinite Power",
   "item.kubejs.monic_processor_mainframe.tooltip" : "The be-all end-all.",
-  "item.kubejs.infinity_dust_block.tooltip": "§7§oNot quite solid",
 
   "item.kubejs.ulv_universal_circuit": "ULV Universal Circuit",
   "item.kubejs.lv_universal_circuit": "LV Universal Circuit",
@@ -526,7 +547,8 @@
   "telepastries.lost_city_cake.tooltip.2": "§7Teleport without consuming by right-clicking with a Diamond.",
   "travellersbootsreloaded.deprecation.tooltip": "Deprecated. Craft into an Exoskeleton!",
   "gtceu.sterilizing_filter_casing.tooltip": "Sterilized Cleanrooms can't be used as a \"regular\" Cleanroom. You'll want one of each.",
-
+  "item.kubejs.infinity_dust_block.tooltip": "§7§oNot quite solid",
+  
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
   "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",

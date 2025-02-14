@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
 
-    // Liquid Fuel recipes 
+    // Liquid Fuel recipes
     if (!isNormalMode) {
 
         // Piranha Solution
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
             .duration(300)
             .EUt(30720)
 
-        // Naquadah Activation 
+        // Naquadah Activation
         event.recipes.gtceu.fusion_reactor('naquadah_activation')
             .inputFluids('gtceu:inert_naquadah_blend 20', 'gtceu:tritium_radon_difluoride 20')
             .outputFluids('gtceu:active_naquadah_blend 20')
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
             .duration(200)
             .EUt(15360)
 
-        // Refinery Recipes 
+        // Refinery Recipes
         event.recipes.gtceu.naquadah_refinery('t1_naquadah_fuel')
             .itemInputs('4x kubejs:naquadah_fuel_dust', '4x gtceu:plutonium_dust', '4x gtceu:uranium_235_dust', '6x gtceu:enriched_sunnarium_dust')
             .inputFluids('gtceu:medium_naquadah_isotope_fraction 400', 'gtceu:light_naquadah_isotope_fraction 200', 'gtceu:jean_gasoline 10000', 'gtceu:neptunium 1000')
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
             .duration(800)
             .EUt(8388608)
 
-        // Cracker Recipes 
+        // Cracker Recipes
 
         event.recipes.gtceu.cracker('light_isotope_cracking')
             .inputFluids('gtceu:light_naquadah_isotope_fraction 1000', 'gtceu:neutronium 100')
@@ -317,55 +317,4 @@ ServerEvents.recipes(event => {
         .chancedOutput('kubejs:naquadah_waste', 3300, 0)
         .duration(80)
         .EUt(30720)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })

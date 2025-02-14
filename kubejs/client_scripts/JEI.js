@@ -64,7 +64,6 @@ JEIEvents.hideItems(event => {
     event.hide(['enderio:soularium_grinding_ball', 'enderio:conductive_alloy_grinding_ball', 'enderio:pulsating_alloy_grinding_ball', 'enderio:redstone_alloy_grinding_ball', 'enderio:energetic_alloy_grinding_ball', 'enderio:vibrant_alloy_grinding_ball', 'enderio:copper_alloy_grinding_ball', 'enderio:dark_steel_grinding_ball', 'enderio:end_steel_grinding_ball'])
 
 
-
     // TelePastries
     event.hide(['telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'])
 
@@ -231,7 +230,7 @@ JEIEvents.hideItems(event => {
             `gtceu:glacio_${id.name}_ore`
         ])
     })
-    
+
     // Hide small variants of mana dust
     event.hide(['gtceu:tiny_mana_dust', 'gtceu:small_mana_dust'])
 })

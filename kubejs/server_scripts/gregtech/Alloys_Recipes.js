@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x gtceu:manyullyn_dust')
         .duration(400)
         .EUt(30)
-    
+
     event.recipes.gtceu.mixer("kubejs:microversium_dust")
         .itemInputs('2x gtceu:steel_dust', 'glowstone_dust', 'redstone')
         .inputFluids('gtceu:deuterium 100')
@@ -384,4 +384,4 @@ ServerEvents.recipes(event => {
         .EUt(30720)
         .blastFurnaceTemp(6400)
 
-}) 
+})

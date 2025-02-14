@@ -1,6 +1,6 @@
 /**
  * Solar Flux mod script.
- * 
+ *
  * Adds recipes for:
  *  Solar Flux Solars
  *  Photovoltaic Cells
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
 
     solarCrafting.forEach((ingredients, index) => {
         // Account for the first recipe, which doesn't use a photovoltaic cell
-        let photovoltaic = index == 0? 
+        let photovoltaic = index == 0?
             'gtceu:tempered_glass'
             :`solarflux:photovoltaic_cell_${index}`
         event.shaped(`2x solarflux:sp_${index + 2}`, [

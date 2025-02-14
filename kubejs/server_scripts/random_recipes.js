@@ -603,6 +603,18 @@ ServerEvents.recipes(event => {
         });
     });
 
+    // Stonecut GTCEU warning blocks into each other
+    let hazardNames = [
+        'acid', 'antimatter', 'bio', 'boss', 'causality', 'explosion', 'fire',
+        'generic', 'gregification', 'high_pressure', 'high_temperature', 'high_voltage',
+        'laser', 'magic', 'magnetic', 'mob_infestation', 'mob_spawner', 'noise',
+        'radioactive', 'spatial_storage', 'turret', 'void'
+    ];
+    for (let hazardName of hazardNames) {
+        let hazard = `gtceu:${hazardName}_hazard_sign_block`
+        event.stonecutting(hazard, "gtceu:solid_machine_casing")
+        event.stonecutting("gtceu:solid_machine_casing", hazard)
+    }
 
     // Stonecutting Marble
     let MarbleTag = ['#moni:marble']; // What item tags to go through (change this so you have your tags)
@@ -625,7 +637,7 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(30720)
         .stationResearch(b => b.researchStack('gtceu:electric_blast_furnace').CWUt(16, 64000).EUt(30720))
-        
+
     event.remove({ id: 'gtceu:shaped/mega_vacuum_freezer' })
     event.recipes.gtceu.assembly_line('kubejs:assembly_line/mega_vacuum_freezer')
         .itemInputs('gtceu:vacuum_freezer', '4x #gtceu:circuits/zpm', '4x gtceu:luv_field_generator', '4x gtceu:naquadah_normal_fluid_pipe', '4x gtceu:dense_naquadah_alloy_plate', '4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire')
@@ -907,6 +919,12 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:hydrogen 1000')
         .duration(50)
         .EUt(120)
+
+    event.recipes.gtceu.atomic_reconstruction('dilithium_legacy_updater')
+        .itemInputs('kubejs:dilithium_crystal')
+        .itemOutputs('gtceu:dilithium_gem')
+        .duration(20)
+        .EUt(15)
 
     // Patchouli Books that needed tweaking
     event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"laserio:laseriobook"}'), ['minecraft:book', 'laserio:card_item']).id('laserio:my_book_recipe_shapeless')
