@@ -65,4 +65,13 @@ ServerEvents.recipes(event => {
 
     DimensionalRockCrushing("minecraft", "end_stone", GTValues.VA[GTValues.IV], "the_end")
     DimensionalRockCrushing("minecraft", "netherrack", GTValues.VA[GTValues.EV], "the_nether")
+    DimensionalRockCrushing('ad_astra', 'moon_stone', GTValues.VHA[GTValues.HV], 'moon')
+    DimensionalRockCrushing('ad_astra', 'moon_deepslate', GTValues.VHA[GTValues.HV], 'moon')
+    DimensionalRockCrushing('ad_astra', 'mars_stone', GTValues.VHA[GTValues.HV], 'mars')
+    DimensionalRockCrushing('ad_astra', 'conglomerate', GTValues.VHA[GTValues.HV], 'mars')
+    DimensionalRockCrushing('ad_astra', 'venus_stone', GTValues.VHA[GTValues.EV], 'venus')
+    DimensionalRockCrushing('ad_astra', 'infernal_spire_block', GTValues.VHA[GTValues.EV], 'venus')
+    DimensionalRockCrushing('ad_astra', 'mercury_stone', GTValues.VHA[GTValues.EV], 'mercury')
+    DimensionalRockCrushing('ad_astra', 'glacio_stone', GTValues.VHA[GTValues.IV], 'glacio')
+    DimensionalRockCrushing('ad_astra', 'permafrost', GTValues.VHA[GTValues.IV], 'glacio')
 })

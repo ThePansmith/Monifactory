@@ -142,4 +142,19 @@ ServerEvents.recipes(event => {
 
     // Battery Alloy Dust
     event.shapeless("4x gtceu:battery_alloy_dust", ["4x gtceu:lead_dust", "gtceu:antimony_dust"])
+
+    // Remake of cobble to gravel recipe due to recipe conflicts with Ad Astra Forge Hammer Recipes
+
+    event.remove({ id: "gtceu:forge_hammer/cobblestone_to_gravel" })
+    function CobbleToGravel(id, input, output) {
+        event.recipes.gtceu.forge_hammer(`kubejs:${id}`)
+            .itemInputs(Item.of(input))
+            .itemOutputs(output)
+            .duration(10)
+            .EUt(16)
+    }
+
+    CobbleToGravel('cobbletogravel', 'minecraft:cobblestone', 'minecraft:gravel')
+    CobbleToGravel('blackstonetogravel', 'minecraft:blackstone', 'minecraft:gravel')
+    CobbleToGravel('deepslatetogravel', 'minecraft:cobbled_deepslate', 'minecraft:gravel')
 })
