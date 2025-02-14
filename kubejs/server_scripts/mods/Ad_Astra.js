@@ -498,4 +498,5 @@ ServerEvents.recipes(event => {
     AdAstraForgeHammer('venussand', 'ad_astra:venus_cobblestone', 'ad_astra:venus_sand', 10, 16)
     AdAstraForgeHammer('mercurycobble', 'ad_astra:mercury_stone', 'ad_astra:mercury_cobblestone', 12, 4)
     AdAstraForgeHammer('glaciocobble', 'ad_astra:glacio_stone', 'ad_astra:glacio_cobblestone', 12, 4)
+    
 })

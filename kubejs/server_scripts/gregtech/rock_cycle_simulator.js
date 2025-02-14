@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     RockCycle('shale', 'quark:shale', 'quark:shale', 60)
     RockCycle('myalite', 'quark:myalite', 'quark:myalite', 60)
 
-    //Ad Astra Recipe Function
+    // Ad Astra Recipe Function
     function AdAstraRockCycle(id, input, output, EUt, dimension) {
         event.recipes.gtceu.rock_cycle_simulator(`kubejs:${id}`)
             .notConsumable(Item.of(input))
