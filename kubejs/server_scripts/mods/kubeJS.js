@@ -60,6 +60,12 @@ ServerEvents.recipes(event => {
     thermalextract('pyrotheum', 'kubejs:pyrotheum_dust', Fluid.of('kubejs:molten_pyrotheum', 250));
     thermalextract('aerotheum', 'kubejs:aerotheum_dust', Fluid.of('kubejs:molten_aerotheum', 250));
     thermalextract('petrotheum', 'kubejs:petrotheum_dust', Fluid.of('kubejs:molten_petrotheum', 250));
+    // Convert deprecated mana fluid
+    event.recipes.gtceu.chemical_reactor("mana_backwards_compat")
+        .inputFluids("kubejs:molten_primal_mana 1")
+        .outputFluids("gtceu:mana 1")
+        .duration(1)
+        .EUt(1)
 
     function thermalextract(recipename, input, output) {
         event.recipes.gtceu.extractor(recipename)
