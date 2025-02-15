@@ -136,14 +136,14 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer("kubejs:lumium_dust")
         .itemInputs('4x #forge:dusts/tin_alloy', '2x #forge:dusts/sterling_silver', '2x extendedcrafting:luminessence', 'kubejs:energized_clathrate')
-        .itemOutputs('8x gtceu:lumium_dust')
+        .itemOutputs('7x gtceu:lumium_dust')
         .inputFluids(Fluid.of('gtceu:mana', 1000))
         .duration(300)
         .EUt(1920)
 
     event.recipes.gtceu.mixer("kubejs:signalum_dust")
         .itemInputs('4x #forge:dusts/annealed_copper', '2x #forge:dusts/ardite', '2x #forge:dusts/red_alloy', 'kubejs:destabilized_clathrate')
-        .itemOutputs('8x gtceu:signalum_dust')
+        .itemOutputs('9x gtceu:signalum_dust')
         .inputFluids(Fluid.of('gtceu:mana', 1000))
         .duration(300)
         .EUt(1920)
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer("kubejs:enderium_dust")
         .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'gtceu:tantalum_dust', 'kubejs:resonant_clathrate')
-        .itemOutputs('9x gtceu:enderium_dust')
+        .itemOutputs('10x gtceu:enderium_dust')
         .inputFluids(Fluid.of('gtceu:mana', 1000))
         .duration(300)
         .EUt(1920)
@@ -250,68 +250,30 @@ ServerEvents.recipes(event => {
         .EUt(32000)
         .blastFurnaceTemp(8600)
 
-    // Thermal Expansion alloy ABS recipe fixes
-    event.remove({ id: 'gtceu:alloy_blast_smelter/signalum_gas' })
-    event.remove({ id: 'gtceu:alloy_blast_smelter/signalum' })
-    event.remove({ id: 'gtceu:alloy_blast_smelter/lumium_gas' })
-    event.remove({ id: 'gtceu:alloy_blast_smelter/lumium' })
-    event.remove({ id: 'gtceu:alloy_blast_smelter/enderium' })
-    event.remove({ id: 'gtceu:alloy_blast_smelter/enderium_gas' })
+    // Thermal Expansion ABS recipe fixes
+    /**
+     * @param {RegExp | string} recipeMatcherID
+     * @param {import("../../dx/typings/GTJSONRecipe.mjs").GTJSONRecipeItemIngredient[]} ingredients
+     */
+    function addInputItems(recipeMatcherID, ingredients) {
+        /** @type {import("../../dx/typings/GTJSONRecipe.mjs").GTJSONRecipe["inputs"]["item"]} */
+        let itemEntries = ingredients.map(ingredient => ({
+            chance: 10000,
+            maxChance: 10000,
+            tierChanceBoost: 0,
+            content: {
+                type: "gtceu:sized",
+                count: ingredient.count,
+                ingredient: ingredient
+            }
+        }))
+        itemEntries = JSON.parse(JSON.stringify(itemEntries))
+        event.forEachRecipe({ id: recipeMatcherID }, recipe => {
+            recipe.json.getAsJsonObject("inputs").getAsJsonArray("item").addAll(itemEntries)
+        })
+    }
 
-    // Gas boosted recipes have 0.67x duration (33% faster from base)
-    // On top of this, ABS recipes have a 0.75x duration multiplier from the multiple of EBF recipes needed to produce the equivalent amount of material.
-    event.recipes.gtceu.alloy_blast_smelter('signalum_mana')
-        .itemInputs('4x gtceu:annealed_copper_dust', '2x gtceu:ardite_dust', '2x gtceu:copper_dust', '8x minecraft:redstone', 'kubejs:destabilized_clathrate')
-        .inputFluids(Fluid.of('gtceu:mana', 1000))
-        .circuit(4)
-        .outputFluids(Fluid.of('gtceu:molten_signalum', 1152))
-        .duration(70 * 20 * 8 * 0.75) // 420s
-        .EUt(7680)
-        .blastFurnaceTemp(4000)
-
-    event.recipes.gtceu.alloy_blast_smelter('signalum_mana_gas')
-        .itemInputs('4x gtceu:annealed_copper_dust', '2x gtceu:ardite_dust', '2x gtceu:copper_dust', '8x minecraft:redstone', 'kubejs:destabilized_clathrate')
-        .inputFluids('gtceu:mana 1000', 'gtceu:helium 800')
-        .circuit(14)
-        .outputFluids(Fluid.of('gtceu:molten_signalum', 1152))
-        .duration(70 * 20 * 8 * 0.75 * 0.67) // 281.4s
-        .EUt(7680)
-        .blastFurnaceTemp(4000)
-
-    event.recipes.gtceu.alloy_blast_smelter('lumium_mana')
-        .itemInputs('2x gtceu:tin_dust', '2x gtceu:iron_dust', '2x gtceu:sterling_silver_dust', '2x extendedcrafting:luminessence', 'kubejs:energized_clathrate')
-        .inputFluids(Fluid.of('gtceu:mana', 1000))
-        .circuit(4)
-        .outputFluids(Fluid.of('gtceu:molten_lumium', 1152))
-        .duration(50 * 20 * 8 * 0.75) // 300s
-        .EUt(4800)
-        .blastFurnaceTemp(4500)
-
-    event.recipes.gtceu.alloy_blast_smelter('lumium_mana_gas')
-        .itemInputs('2x gtceu:tin_dust', '2x gtceu:iron_dust', '2x gtceu:sterling_silver_dust', '2x extendedcrafting:luminessence', 'kubejs:energized_clathrate')
-        .inputFluids('gtceu:mana 1000', 'gtceu:helium 800')
-        .circuit(14)
-        .outputFluids(Fluid.of('gtceu:molten_lumium', 1152))
-        .duration(50 * 20 * 8 * 0.75 * 0.67) // 201s
-        .EUt(4800)
-        .blastFurnaceTemp(4500)
-
-    event.recipes.gtceu.alloy_blast_smelter('enderium_mana')
-        .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'gtceu:tantalum_dust', 'kubejs:resonant_clathrate')
-        .inputFluids(Fluid.of('gtceu:mana', 1000))
-        .circuit(4)
-        .outputFluids(Fluid.of('gtceu:molten_enderium', 1296))
-        .duration(80 * 20 * 9 * 0.75) // 540s
-        .EUt(30720)
-        .blastFurnaceTemp(6400)
-
-    event.recipes.gtceu.alloy_blast_smelter('enderium_mana_gas')
-        .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'gtceu:tantalum_dust', 'kubejs:resonant_clathrate')
-        .inputFluids('gtceu:mana 1000', 'gtceu:krypton 90')
-        .circuit(14)
-        .outputFluids(Fluid.of('gtceu:molten_enderium', 1296))
-        .duration(80 * 20 * 9 * 0.75 * 0.67) // 361.8s
-        .EUt(30720)
-        .blastFurnaceTemp(6400)
-
+    addInputItems(/^gtceu:alloy_blast_smelter\/signalum/, [{item: "kubejs:destabilized_clathrate", count: 1}])
+    addInputItems(/^gtceu:alloy_blast_smelter\/lumium/, [{item: "extendedcrafting:luminessence", count: 2}, {item: "kubejs:energized_clathrate", count: 1}])
+    addInputItems(/^gtceu:alloy_blast_smelter\/enderium/, [{item: "kubejs:resonant_clathrate", count: 1}])
 })
