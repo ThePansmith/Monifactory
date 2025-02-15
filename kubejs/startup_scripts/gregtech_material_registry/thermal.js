@@ -54,7 +54,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Mythril
     event.create("mythril")
-        .ingot()
+        .ingot().liquid()
         .color(0x428fdb).iconSet('dull')
         .blastTemp(2141, null)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
