@@ -9,10 +9,11 @@
 // Microverse Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("microversium")
-        .ingot()
+        .ingot().liquid()
         .color(0x9b61b8).iconSet('dull')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components('2x steel', 'glowstone', 'redstone', 'deuterium')
+        .blastTemp(1700, 'mid', 120, 600)
         .cableProperties(128, 4, 2, false)
 
     event.create("osmiridiumyes")

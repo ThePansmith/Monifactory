@@ -42,6 +42,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('eltz').parent(GTMaterialIconSet.SHINY)
     event.create('monium').parent(GTMaterialIconSet.SHINY)
     event.create('dilithium').parent(GTMaterialIconSet.DULL)
+    event.create('mana').parent(GTMaterialIconSet.SHINY)
 })
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
