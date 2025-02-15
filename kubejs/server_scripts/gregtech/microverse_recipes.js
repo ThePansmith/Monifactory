@@ -638,26 +638,26 @@ ServerEvents.recipes(event => {
 
 // Microversium
 ServerEvents.recipes(event => {
-
-    event.recipes.gtceu.electric_blast_furnace("kubejs:microversium_ingot")
-        .itemInputs('2x gtceu:steel_ingot', "minecraft:redstone", "minecraft:glowstone_dust")
-        .inputFluids('gtceu:deuterium 100')
-        .itemOutputs('gtceu:microversium_ingot')
-        .duration(600)
-        .blastFurnaceTemp(1700)
-        .EUt(120)
+    event.recipes.gtceu.mixer('mixer_microversium')
+        .itemInputs('2x gtceu:steel_dust', 'glowstone_dust', 'redstone')
+        .inputFluids('gtceu:deuterium 1000')
+        .itemOutputs('5x gtceu:microversium_dust')
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.shaped('2x kubejs:microverse_casing', [
-        'PPP',
-        'PWP',
-        'PPP'
+        'PHP',
+        'PFP',
+        'PWP'
     ], {
         P: 'gtceu:microversium_plate',
+        F: 'gtceu:microversium_frame',
+        H: '#forge:tools/hammers',
         W: '#forge:tools/wrenches'
     }).id('kubejs:shapeless/microverse_casing')
     event.recipes.gtceu.assembler("kubejs:microverse_casing")
-        .itemInputs("4x gtceu:microversium_plate")
-        .itemOutputs("kubejs:microverse_casing")
+        .itemInputs("6x gtceu:microversium_plate", "gtceu:microversium_frame")
+        .itemOutputs("2x kubejs:microverse_casing")
         .duration(50)
         .circuit(6)
         .EUt(16)
