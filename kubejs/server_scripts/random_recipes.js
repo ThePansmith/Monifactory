@@ -930,5 +930,18 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"laserio:laseriobook"}'), ['minecraft:book', 'laserio:card_item']).id('laserio:my_book_recipe_shapeless')
 
     // Chipped tinker's table
+    event.replaceInput({ id: 'chipped:benches/mechanist_workbench'}, 'minecraft:tnt', '#forge:chests')
+
+    // Phantom Paste
+    event.shaped(
+        "framedblocks:phantom_paste", [
+            'SSS',
+            'SCS',
+            'SSS'
+        ], {
+            S: "#forge:slimeballs",
+            C: "minecraft:chorus_fruit",
+        })
+
     event.replaceInput({ id: 'chipped:benches/mechanist_workbench' }, 'minecraft:tnt', '#forge:chests')
 })
