@@ -221,6 +221,12 @@ ServerEvents.recipes(event => {
         C: 'gtceu:hv_sensor'
     })
 
+    event.recipes.gtceu.assembler('gem_sensor_hv')
+        .itemOutputs('kubejs:gem_sensor')
+        .itemInputs('#forge:lenses', '3x gtceu:stainless_steel_plate', 'gtceu:hv_sensor')
+        .EUt(GTValues.VA[GTValues.HV])
+        .duration(20)
+
     event.shaped('4x kubejs:gem_sensor', [
         ' A ',
         'WCW',
@@ -230,6 +236,12 @@ ServerEvents.recipes(event => {
         W: 'gtceu:tungsten_carbide_plate',
         C: 'gtceu:iv_sensor'
     })
+
+    event.recipes.gtceu.assembler('gem_sensor_iv')
+        .itemOutputs('4x kubejs:gem_sensor')
+        .itemInputs('#forge:lenses', '3x gtceu:tungsten_carbide_plate', 'gtceu:iv_sensor')
+        .EUt(GTValues.VA[GTValues.IV])
+        .duration(20)
 
     // Microminer kits are consumed in place of the miner.
     event.recipes.gtceu.assembler('basic_drill_kit')
