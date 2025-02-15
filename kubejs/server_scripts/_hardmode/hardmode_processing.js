@@ -786,7 +786,7 @@ ServerEvents.recipes(event => {
         // Quantum Flux Recipe
         event.recipes.gtceu.mixer('quantum_flux_hm')
             .itemInputs('redstone_arsenal:flux_gem')
-            .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
+            .inputFluids(Fluid.of('gtceu:mana', 250))
             .itemOutputs('8x kubejs:quantum_flux')
             .duration(100)
             .EUt(480)
