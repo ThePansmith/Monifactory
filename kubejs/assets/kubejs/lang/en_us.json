@@ -369,13 +369,13 @@
   "fluid.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "fluid.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
   "fluid.kubejs.molten_aerotheum": "§7Zephyrean Aerotheum",
-  "fluid.kubejs.molten_primal_mana": "§dPrimal Mana",
+  "fluid.kubejs.molten_primal_mana": "§cDEPRECATED Primal Mana",
 
   "block.kubejs.molten_pyrotheum": "§6Blazing Pyrotheum",
   "block.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "block.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
   "block.kubejs.molten_aerotheum": "§7Zephyrean Aerotheum",
-  "block.kubejs.molten_primal_mana": "§dPrimal Mana",
+  "block.kubejs.molten_primal_mana": "§cDEPRECATED Primal Mana",
 
   "block.kubejs.starry_diamond_block": "Starry Diamond Block",
   "block.kubejs.dense_oilsands_ore": "Dense Oilsands Ore",
