@@ -13,10 +13,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE)
         .components('3x red_steel', 'blaze')
 
-    event.create("mana")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .element(GTElements.get("mana"))
-
     event.create("manyullyn")
         .ingot().fluid()
         .color(0x9949cc).iconSet('metallic')

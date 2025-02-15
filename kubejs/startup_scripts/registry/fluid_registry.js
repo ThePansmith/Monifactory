@@ -29,7 +29,5 @@ StartupEvents.registry('fluid', event => {
         .flowingTexture('kubejs:block/aerotheum_flow');
     event.create("molten_primal_mana")
         .bucketColor(Color.rgba(0, 72, 112, 255))
-        .displayName('§dPrimal Mana') // lightPurple
-        .stillTexture('kubejs:block/mana_still')
-        .flowingTexture('kubejs:block/mana_flow');
+        .displayName("§cDEPRECATED Primal Mana");
 })
