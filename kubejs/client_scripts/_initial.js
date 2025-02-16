@@ -73,5 +73,5 @@ const TIER_UIV = 11;
 const TIER_MAX = 12;
 const TIER_END = 13;
 const TIER_ID_MAPPING = [
-    'ULV', 'LV', 'MV', 'HV', 'EV', 'IV', 'LuV', 'ZPM', 'UV', 'UHV', 'UEV', 'UIV', 'MAX', 'END'
+    "ULV", "LV", "MV", "HV", "EV", "IV", "LuV", "ZPM", "UV", "UHV", "UEV", "UIV", "MAX", "END"
 ]

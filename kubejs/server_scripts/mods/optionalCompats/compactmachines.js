@@ -6,7 +6,7 @@
  *
  * Replaces or modifies the recipe for every item in the mod.
  */
-if (Platform.isLoaded('compactmachines')) {
+if (Platform.isLoaded("compactmachines")) {
     console.log("Compact Machines found, loading compat scripts...")
     ServerEvents.recipes(event => {
 
@@ -16,13 +16,13 @@ if (Platform.isLoaded('compactmachines')) {
         // Compact Machine Wall recipes. HV recipe + more efficient EV recipe
         event.remove({ output: "compactmachines:wall" })
         event.recipes.gtceu.assembler("compactmachines:wall")
-            .itemInputs('9x gtceu:blue_steel_plate', '1x gtceu:ultimet_frame', '1x gtceu:mv_sensor')
-            .itemOutputs('4x compactmachines:wall')
+            .itemInputs("9x gtceu:blue_steel_plate", "1x gtceu:ultimet_frame", "1x gtceu:mv_sensor")
+            .itemOutputs("4x compactmachines:wall")
             .duration(40)
             .EUt(GTValues.VHA[GTValues.HV])
         event.recipes.gtceu.assembler("compactmachines:wall_alt")
-            .itemInputs('9x gtceu:maraging_steel_300_plate', '2x gtceu:ultimet_frame', '1x gtceu:hv_sensor')
-            .itemOutputs('16x compactmachines:wall')
+            .itemInputs("9x gtceu:maraging_steel_300_plate", "2x gtceu:ultimet_frame", "1x gtceu:hv_sensor")
+            .itemOutputs("16x compactmachines:wall")
             .duration(40)
             .EUt(GTValues.VHA[GTValues.IV])
 
@@ -38,7 +38,7 @@ if (Platform.isLoaded('compactmachines')) {
 
         machineSizes.forEach((value, index) => {
             event.recipes.gtceu.assembler(`compactmachines:machine_${value.size}`)
-                .itemInputs(Item.of("compactmachines:wall", 4 * (index + 1)), (index > 2 ? 'gtceu:tungsten_frame' : 'gtceu:dark_steel_frame'), value.material, `2x gtceu:${GTValues.VN[index + 1].toLowerCase()}_field_generator`, (index > 2 ? Item.of('gtceu:quantum_eye', 2 ** (index - 2)) : Item.of('minecraft:ender_eye', 2 ** index)))
+                .itemInputs(Item.of("compactmachines:wall", 4 * (index + 1)), (index > 2 ? "gtceu:tungsten_frame" : "gtceu:dark_steel_frame"), value.material, `2x gtceu:${GTValues.VN[index + 1].toLowerCase()}_field_generator`, (index > 2 ? Item.of("gtceu:quantum_eye", 2 ** (index - 2)) : Item.of("minecraft:ender_eye", 2 ** index)))
                 .inputFluids(`gtceu:styrene_butadiene_rubber ${144 * (index + 1)}`)
                 .itemOutputs(`compactmachines:machine_${value.size}`)
                 .duration(200)
@@ -56,7 +56,7 @@ if (Platform.isLoaded('compactmachines')) {
         tunnelTypes.forEach(value => {
             event.remove({ id: `compactmachines:tunnels/${value.type}` })
             event.recipes.gtceu.assembler(`compactmachines:tunnel_${value.type}`)
-                .itemInputs("2x compactmachines:wall", value.hatch, 'gtceu:quantum_eye')
+                .itemInputs("2x compactmachines:wall", value.hatch, "gtceu:quantum_eye")
                 .itemOutputs(Item.of("compactmachines:tunnel", 2, value.nbt))
                 .duration(100)
                 .EUt(GTValues.VHA[GTValues.HV])

@@ -31,17 +31,17 @@ const compacting = (ev, output, input, make_uncompacting) => {
     if (make_uncompacting) ev.shapeless(`9x ${input}`, [output]);
 
     return ev.shaped(output, [
-        'aaa',
-        'aaa',
-        'aaa'
+        "aaa",
+        "aaa",
+        "aaa"
     ], { a: input });
 }
 
 // Java Classes
 // used to create FluidIngredientJS objects
-const JSONObject = Java.loadClass('com.google.gson.JsonObject')
+const JSONObject = Java.loadClass("com.google.gson.JsonObject")
 // Required to use fluid tags in gregtech recipes
-const FluidIngredientJS = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS')
+const FluidIngredientJS = Java.loadClass("com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS")
 // Required for the rock breaker
 const RockBreakerCondition = Java.loadClass("com.gregtechceu.gtceu.common.recipe.condition.RockBreakerCondition")
 
@@ -57,5 +57,5 @@ const TIER_ZPM = 7;
 const TIER_UV = 8;
 const TIER_UHV = 9;
 const TIER_ID_MAPPING = [
-    'ULV', 'LV', 'MV', 'HV', 'EV', 'IV', 'LuV', 'ZPM', 'UV', 'UHV'
+    "ULV", "LV", "MV", "HV", "EV", "IV", "LuV", "ZPM", "UV", "UHV"
 ]

@@ -2,12 +2,12 @@
  * Adds exoskeleton legs that help players get places quicker.
  */
 
-const UUID = Java.loadClass('java.util.UUID');
+const UUID = Java.loadClass("java.util.UUID");
 /**
  * Item definitions for exoskeleton Curios
  */
 StartupEvents.registry("item", event => {
-    const exoskeletonTiers = ['lv', 'mv', 'hv', 'ev', 'iv']
+    const exoskeletonTiers = ["lv", "mv", "hv", "ev", "iv"]
     exoskeletonTiers.forEach((tier) => {
         event.create(`${tier}_exoskeleton_legs`)
             .tag("curios:exoskeleton_legs")
@@ -30,7 +30,7 @@ const speed_modifier_UUID = UUID.fromString("06a5b5df-361a-404f-9892-2fd98157f40
 // Apply effects based on exoskeleton
 const applyExoskeletonLegsEffects = (player, exoskeleton) => {
     ExoskeletonLegsEffects.forEach((value) => {
-        if(exoskeleton.split(':')[1] == value.itemID) {
+        if(exoskeleton.split(":")[1] == value.itemID) {
             player.modifyAttribute("forge:step_height_addition", step_modifier_UUID, value.step_height_change, "ADDITION")
             player.modifyAttribute("minecraft:generic.movement_speed", speed_modifier_UUID, value.movement_speed_boost, "MULTIPLY_BASE")
         }
@@ -40,7 +40,7 @@ const applyExoskeletonLegsEffects = (player, exoskeleton) => {
 // Remove effects based on old exoskeleton
 const removeExoskeletonLegsEffects = (player, exoskeleton) => {
     ExoskeletonLegsEffects.forEach((value) => {
-        if(exoskeleton.split(':')[1] == value.itemID) {
+        if(exoskeleton.split(":")[1] == value.itemID) {
             player.modifyAttribute("forge:step_height_addition", step_modifier_UUID, 0, "ADDITION")
             player.modifyAttribute("minecraft:generic.movement_speed", speed_modifier_UUID, 0, "MULTIPLY_BASE")
         }
