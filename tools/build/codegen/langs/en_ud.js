@@ -2,8 +2,8 @@
 
 /** English to Upside Down character mapping */
 const UDMap = new Map(((a, b) => Array.from(a.entries()).map(([i, ca]) => [ca, b[i]]))(
-    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!^&*()-_[]{};\':",.<>/?'.split(''),
-    "ⱯᗺƆᗡƎℲ⅁HIՐʞꞀWNOԀΌᴚS⟘∩ᴧMX⅄Zɐqɔpǝɟᵷɥᴉɾʞꞁɯuodbɹsʇnʌʍxʎz⥝ᘔƐᔭ59Ɫ860¡^⅋*)(-‾][}{؛,:„'˙></¿".split(''),
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!^&*()-_[]{};\':",.<>/?'.split(""),
+    "ⱯᗺƆᗡƎℲ⅁HIՐʞꞀWNOԀΌᴚS⟘∩ᴧMX⅄Zɐqɔpǝɟᵷɥᴉɾʞꞁɯuodbɹsʇnʌʍxʎz⥝ᘔƐᔭ59Ɫ860¡^⅋*)(-‾][}{؛,:„'˙></¿".split(""),
 ));
 
 const regexFormatCode = /[&§][0-9a-fk-or]/;
@@ -42,17 +42,17 @@ export const UDTransform = (str) => {
             if (match.match(regexColorCode)) {
                 finishRanges(unfinishedColorRanges, i);
                 unfinishedColorRanges.push(rangeO);
-                return '';
+                return "";
             }
 
-            if (match[1] === 'r') {
+            if (match[1] === "r") {
                 finishRanges(unfinishedColorRanges, i);
                 finishRanges(unfinishedFmtRanges, i);
-                return '';
+                return "";
             }
 
             unfinishedFmtRanges.push(rangeO);
-            return '';
+            return "";
         });
         if (shouldBreak) break;
     }
@@ -60,7 +60,7 @@ export const UDTransform = (str) => {
     finishRanges(unfinishedFmtRanges, str.length);
 
     // Reverse string
-    str = str.split('').reverse().map((c) => UDMap.get(c) ?? c).join('');
+    str = str.split("").reverse().map((c) => UDMap.get(c) ?? c).join("");
     // Reverse ranges
     for (const range of fmtRanges) {
         [range.start, range.end] = [
@@ -73,17 +73,17 @@ export const UDTransform = (str) => {
 
     // Apply formatting to the string from fmtRanges
     let lastEnd = str.length;
-    const strAsChars = str.split('');
+    const strAsChars = str.split("");
     for (const range of fmtRanges) {
         if (lastEnd !== range.end) {
             // This is &r or §r
-            const clearFormat = range.format.replace(/.$/g, 'r');
+            const clearFormat = range.format.replace(/.$/g, "r");
             strAsChars.splice(range.end, 0, clearFormat);
             lastEnd = range.end;
         }
         strAsChars.splice(range.start, 0, range.format);
     }
-    str = strAsChars.join('');
+    str = strAsChars.join("");
 
     return str;
 };
