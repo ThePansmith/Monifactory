@@ -244,22 +244,22 @@ ServerEvents.recipes(event => {
         .duration(20)
 
     // Microminer kits are consumed in place of the miner.
-    event.recipes.gtceu.assembler('basic_drill_kit')
-        .itemOutputs('kubejs:basic_drill_kit')
+    event.recipes.gtceu.assembler('basic_drilling_kit')
+        .itemOutputs('kubejs:basic_drilling_kit')
         .itemInputs('3x gtceu:double_steel_plate', 'gtceu:mv_electric_motor', '2x #gtceu:circuits/lv', '2x minecraft:glass')
         .inputFluids('gtceu:glue 288')
         .EUt(GTValues.VA[GTValues.HV])
         .duration(300)
 
-    event.recipes.gtceu.assembler('advanced_drill_kit')
-        .itemOutputs('kubejs:advanced_drill_kit')
+    event.recipes.gtceu.assembler('advanced_drilling_kit')
+        .itemOutputs('kubejs:advanced_drilling_kit')
         .itemInputs('3x gtceu:double_vanadium_steel_plate', 'gtceu:hv_electric_motor', '2x #gtceu:circuits/mv', '2x #forge:plastic_plates', '2x gtceu:tempered_glass')
         .inputFluids('gtceu:lubricant 100')
         .EUt(GTValues.VA[GTValues.IV])
         .duration(400)
 
-    event.recipes.gtceu.assembler('advanced_drill_kit_ii')
-        .itemOutputs('kubejs:advanced_drill_kit_ii')
+    event.recipes.gtceu.assembler('advanced_drilling_kit_ii')
+        .itemOutputs('kubejs:advanced_drilling_kit_ii')
         .itemInputs('3x gtceu:double_naquadah_alloy_plate', 'gtceu:iv_electric_motor', '2x #gtceu:circuits/hv', '2x gtceu:carbon_fiber_plate', '2x gtceu:laminated_glass')
         .inputFluids('gtceu:lubricant 500')
         .EUt(GTValues.VA[GTValues.LuV])

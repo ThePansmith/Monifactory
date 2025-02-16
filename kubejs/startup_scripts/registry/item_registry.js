@@ -67,9 +67,9 @@ StartupEvents.registry('item', event => {
 
     // Miner kits
     event.create('gem_sensor').displayName("Gemstone Sensor")
-    event.create('basic_drill_kit')
-    event.create('advanced_drill_kit')
-    event.create('advanced_drill_kit_ii').displayName("Advanced Drill Kit II")
+    event.create('basic_drilling_kit')
+    event.create('advanced_drilling_kit')
+    event.create('advanced_drilling_kit_ii').displayName("Advanced Drill Kit II")
     event.create('blasting_kit')
     event.create('microversal_alchemy_kit')
 

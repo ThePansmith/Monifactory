@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .itemInputs('16x kubejs:petrotheum_dust')
-            .itemInputs('kubejs:advanced_drill_kit')
+            .itemInputs('kubejs:advanced_drilling_kit')
             .itemInputs('gtceu:cobalt_brass_drill_head')
             .itemInputs('4x kubejs:wither_realm_data')
             .itemOutputs(
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .itemInputs('16x kubejs:petrotheum_dust')
-            .itemInputs('kubejs:advanced_drill_kit')
+            .itemInputs('kubejs:advanced_drilling_kit')
             .itemInputs('gtceu:steel_drill_head')
             .itemOutputs(
                 '32x kubejs:dense_iron_ore',
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .itemInputs('16x kubejs:petrotheum_dust')
-            .itemInputs('kubejs:advanced_drill_kit')
+            .itemInputs('kubejs:advanced_drilling_kit')
             .itemInputs('gtceu:diamond_drill_head')
             .itemInputs('2x kubejs:gem_sensor')
             .itemOutputs(
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .itemInputs('16x kubejs:petrotheum_dust')
-            .itemInputs('kubejs:advanced_drill_kit')
+            .itemInputs('kubejs:advanced_drilling_kit')
             .itemInputs('gtceu:damascus_steel_drill_head')
             .itemOutputs(
                 '64x kubejs:dense_oilsands_ore',
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs('4x kubejs:quantum_flux')
             .itemInputs('16x kubejs:petrotheum_dust')
-            .itemInputs('kubejs:advanced_drill_kit')
+            .itemInputs('kubejs:advanced_drilling_kit')
             .itemInputs('gtceu:wrought_iron_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_thorium',
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
             builder
                 .itemInputs('8x kubejs:quantum_flux')
                 .itemInputs('16x kubejs:stabilized_plutonium')
-                .itemInputs('kubejs:advanced_drill_kit')
+                .itemInputs('kubejs:advanced_drilling_kit')
                 .itemInputs('gtceu:hsse_drill_head')
                 .itemOutputs(
                     '64x gtceu:raw_cooperite',
@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
             builder
                 .itemInputs('8x kubejs:quantum_flux')
                 .itemInputs('16x kubejs:stabilized_plutonium')
-                .itemInputs('kubejs:advanced_drill_kit')
+                .itemInputs('kubejs:advanced_drilling_kit')
                 .itemInputs('gtceu:hsse_drill_head')
                 .itemOutputs(
                     '64x gtceu:raw_pollucite',
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs('8x kubejs:quantum_flux')
             .itemInputs('16x kubejs:stabilized_uranium')
-            .itemInputs('kubejs:advanced_drill_kit')
+            .itemInputs('kubejs:advanced_drilling_kit')
             .itemInputs('gtceu:red_steel_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_bastnasite',
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs('8x kubejs:quantum_flux')
             .itemInputs('16x kubejs:stabilized_uranium')
-            .itemInputs('kubejs:advanced_drill_kit')
+            .itemInputs('kubejs:advanced_drilling_kit')
             .itemInputs('gtceu:blue_steel_drill_head')
             .itemOutputs(
                 '64x gtceu:raw_realgar',
@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs('16x kubejs:quantum_flux')
             .itemInputs('32x kubejs:stabilized_uranium')
-            .itemInputs('kubejs:advanced_drill_kit')
+            .itemInputs('kubejs:advanced_drilling_kit')
             .itemInputs('gtceu:naquadah_alloy_drill_head')
             .itemInputs('16x kubejs:wither_realm_data')
             .itemOutputs(
