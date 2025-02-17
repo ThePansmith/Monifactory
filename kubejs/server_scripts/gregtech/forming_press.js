@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 
     materials.forEach((materialName) => {
         event.recipes.gtceu.forming_press(`${materialName}_drill_head`)
-            .itemInputs('2x gtceu:double_steel_plate', `4x gtceu:${materialName}_plate`)
+            .itemInputs("2x gtceu:double_steel_plate", `4x gtceu:${materialName}_plate`)
             .itemOutputs(`gtceu:${materialName}_drill_head`)
             .duration(500)
             .EUt(GTValues.VA[GTValues.MV])

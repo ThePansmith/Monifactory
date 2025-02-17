@@ -83,7 +83,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
     // Increase global mission counter
     global.mission_counts[minerTier]++;
 
-    // Convert miner return chance from percentage to GTM's hundredth-of-a-percent format
+    // Convert miner return chance from percentage to GTM"s hundredth-of-a-percent format
     minerReturnChance = Math.floor(minerReturnChance*100)
 
     // Use defaults if duration or EU/t not defined

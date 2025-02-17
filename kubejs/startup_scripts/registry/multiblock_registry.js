@@ -551,7 +551,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
     let getMicroverseRecipeModifiers = tier => [
         GTRecipeModifiers.OC_NON_PERFECT,
-        (machine, recipe) => recipe.data.getLong("projector_tier") > tier?
+        (machine, recipe) => recipe.data.getLong("projector_tier") > tier ?
             ModifierFunction.NULL : ModifierFunction.IDENTITY
     ]
 

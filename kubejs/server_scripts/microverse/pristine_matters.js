@@ -6,17 +6,17 @@ ServerEvents.recipes(event => {
 
     // Pristine Matter & corresponding projector tier
     const pristine_matter = [
-        ['1', 1],
-        ['2', 1],
-        ['2half', 1],
-        ['3', 1],
-        ['4', 2],
-        ['4half', 2],
-        ['5', 2],
-        ['6', 2],
-        ['7', 3],
-        ['8', 3],
-        ['8half', 3]
+        ["1", 1],
+        ["2", 1],
+        ["2half", 1],
+        ["3", 1],
+        ["4", 2],
+        ["4half", 2],
+        ["5", 2],
+        ["6", 2],
+        ["7", 3],
+        ["8", 3],
+        ["8half", 3]
     ]
 
     /**
@@ -25,8 +25,8 @@ ServerEvents.recipes(event => {
      */
     function stabilized_miner_recipe(minerTier) {
         event.recipes.gtceu.assembly_line(`stable_t_${minerTier}`)
-            .itemInputs(`kubejs:microminer_t${minerTier}`, 'kubejs:heart_of_a_universe', '4x kubejs:hadal_shard', '24x gtceu:uv_field_generator', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate', '7x gtceu:dense_iridium_plate')
-            .inputFluids('gtceu:rocket_fuel 40800', 'gtceu:omnium 576', 'gtceu:neutronium 576')
+            .itemInputs(`kubejs:microminer_t${minerTier}`, "kubejs:heart_of_a_universe", "4x kubejs:hadal_shard", "24x gtceu:uv_field_generator", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate")
+            .inputFluids("gtceu:rocket_fuel 40800", "gtceu:omnium 576", "gtceu:neutronium 576")
             .itemOutputs(`kubejs:stabilized_microminer_t${minerTier}`)
             .duration(120)
             .EUt(GTValues.VA[GTValues.UHV])
