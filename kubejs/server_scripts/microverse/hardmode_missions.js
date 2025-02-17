@@ -217,5 +217,26 @@ ServerEvents.recipes(event => {
                     '64x gtceu:raw_plutonium'
                 )
         })
+
+        microverse_mission(event, "8half", 3).forEach(builder => {
+            builder
+                .itemInputs('16x kubejs:quantum_flux')
+                .itemInputs('64x gtceu:dilithium_gem')
+                .itemInputs('kubejs:advanced_drilling_kit_ii')
+                .itemInputs('gtceu:duranium_drill_head')
+                .itemInputs('3x gtceu:tritanium_block')
+                .itemOutputs(
+                    '64x gtceu:raw_electrotine',
+                    '64x gtceu:raw_electrotine',
+                    '64x gtceu:raw_electrotine',
+                    '64x gtceu:raw_electrotine',
+                    '64x gtceu:raw_electrotine',
+                    '64x gtceu:raw_electrotine',
+                    '64x gtceu:raw_electrotine',
+                    '64x gtceu:raw_electrotine',
+                    '64x gtceu:raw_electrotine',
+                    '64x gtceu:raw_electrotine'
+                )
+        })
     }
 })

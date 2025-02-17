@@ -125,6 +125,7 @@ ServerEvents.recipes(event => {
                 '32x gtceu:raw_salt',
                 '64x gtceu:raw_rock_salt',
                 '32x gtceu:raw_rock_salt',
+                '32x gtceu:raw_saltpeter'
             )
     })
 
@@ -209,10 +210,12 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:basic_drilling_kit')
             .itemInputs('gtceu:stainless_steel_drill_head')
             .itemOutputs(
-                '64x gtceu:raw_tantalite',
-                '64x gtceu:raw_tantalite',
                 '64x gtceu:raw_pyrolusite',
-                '32x gtceu:raw_grossular',
+                '64x gtceu:raw_pyrolusite',
+                '64x gtceu:raw_tantalite',
+                '64x gtceu:raw_tantalite',
+                '64x gtceu:raw_tantalite',
+                '64x gtceu:raw_tantalite'
             )
     })
 
