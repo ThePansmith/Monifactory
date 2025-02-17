@@ -23,9 +23,12 @@ export default [
         rules: {
             "no-var": "error",
             "no-useless-escape": "warn",
+            "space-infix-ops": ["error", { "int32Hint": true }],
             "@stylistic/js/indent": ["error", 4],
             "@stylistic/js/spaced-comment": "error",
             "@stylistic/js/linebreak-style": ["error", "unix"],
+            "@stylistic/js/no-extra-semi": "error",
+            "@stylistic/js/quotes": ["error", "double", { avoidEscape: true }],
         },
         ignores,
         languageOptions: {

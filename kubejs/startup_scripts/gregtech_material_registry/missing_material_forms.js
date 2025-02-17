@@ -4,14 +4,14 @@
  * or other variant of that material.
  * This file adds them.
  */
-const $PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey')
-const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty')
-const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty')
-const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys')
-const $FluidPipeProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties')
-const $WireProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties')
-const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty')
-const $FluidBuilder = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidBuilder');
+const $PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey")
+const $IngotProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty")
+const $FluidProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty")
+const $FluidStorageKeys = Java.loadClass("com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys")
+const $FluidPipeProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties")
+const $WireProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties")
+const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
+const $FluidBuilder = Java.loadClass("com.gregtechceu.gtceu.api.fluids.FluidBuilder");
 
 let addFluid = (mat, key, temp) => {
     let prop = new $FluidProperty()
@@ -19,7 +19,7 @@ let addFluid = (mat, key, temp) => {
     mat.setProperty(PropertyKey.FLUID, prop)
 }
 
-GTCEuStartupEvents.registry('gtceu:material', event => {
+GTCEuStartupEvents.registry("gtceu:material", event => {
     // Existing materials that get an item form
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
 
@@ -29,13 +29,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     GTMaterials.Terbium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Terbium.setMaterialARGB(0x8C8F7A)
-    GTMaterials.Terbium.setProperty($PropertyKey.BLAST, new $BlastProperty(7200, 'higher', 524288, 900, -1, -1));
+    GTMaterials.Terbium.setProperty($PropertyKey.BLAST, new $BlastProperty(7200, "higher", 524288, 900, -1, -1));
     GTMaterials.Terbium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD)
 
     GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 0, true))
     GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(10000, 18000, true, false, true, true))
-    GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, 'highest', 1000000, 1000, -1, -1));
+    GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, "highest", 1000000, 1000, -1, -1));
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
     // Existing materials that get new material forms

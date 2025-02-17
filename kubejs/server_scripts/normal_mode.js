@@ -2,23 +2,23 @@
 
 ServerEvents.recipes(event => {
     const carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
-    const gtMachines = ['extractor', 'macerator', 'compressor', 'forge_hammer', 'furnace', 'alloy_smelter']
+    const gtMachines = ["extractor", "macerator", "compressor", "forge_hammer", "furnace", "alloy_smelter"]
     if (isNormalMode) {
         // Moni Steel
         event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
         event.remove({ type: "gtceu:primitive_blast_furnace", output: "gtceu:steel_ingot" })
         event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
         event.remove({ id: /fireclay/ })
-        event.remove({ output: ['gtceu:firebrick', 'gtceu:firebricks', 'gtceu:primitive_blast_furnace'] })
+        event.remove({ output: ["gtceu:firebrick", "gtceu:firebricks", "gtceu:primitive_blast_furnace"] })
 
         carbonSources.forEach(carbonSource => {
-            event.recipes.gtceu.alloy_smelter(`steel_${carbonSource.replace(/\W/g, '')}`) // The replace line removes non alphanumeric chars, regex is magic
+            event.recipes.gtceu.alloy_smelter(`steel_${carbonSource.replace(/\W/g, "")}`) // The replace line removes non alphanumeric chars, regex is magic
                 .itemInputs("#forge:ingots/iron", carbonSource)
                 .itemOutputs("gtceu:steel_ingot")
                 .duration(150)
                 .EUt(16)
 
-            event.recipes.gtceu.alloy_smelter(`steel_wrought_${carbonSource.replace(/\W/g, '')}`) // The replace line removes non alphanumeric chars, regex is magic
+            event.recipes.gtceu.alloy_smelter(`steel_wrought_${carbonSource.replace(/\W/g, "")}`) // The replace line removes non alphanumeric chars, regex is magic
                 .itemInputs("#forge:ingots/wrought_iron", carbonSource)
                 .itemOutputs("gtceu:steel_ingot")
                 .duration(100)
@@ -41,10 +41,10 @@ ServerEvents.recipes(event => {
             .EUt(15)
 
         // Alternative LV piston recipe
-        event.shaped('gtceu:lv_electric_piston', [
-            'PPP',
-            'CRR',
-            'CMG'
+        event.shaped("gtceu:lv_electric_piston", [
+            "PPP",
+            "CRR",
+            "CMG"
         ], {
             P: "gtceu:wrought_iron_plate",
             C: "gtceu:tin_single_cable",
@@ -54,11 +54,11 @@ ServerEvents.recipes(event => {
         })
 
         // Normal Mode recipes for Steam multis
-        event.remove({ output: 'gtceu:steam_oven' })
-        event.shaped('gtceu:steam_oven', [
-            'BGB',
-            'FCF',
-            'BGB'
+        event.remove({ output: "gtceu:steam_oven" })
+        event.shaped("gtceu:steam_oven", [
+            "BGB",
+            "FCF",
+            "BGB"
         ], {
             B: "gtceu:steam_machine_casing",
             G: "gtceu:invar_gear",
@@ -66,22 +66,22 @@ ServerEvents.recipes(event => {
             C: "ironfurnaces:copper_furnace"
         })
 
-        event.remove({ output: 'gtceu:steam_grinder' })
-        event.shaped('gtceu:steam_grinder', [
-            'BGB',
-            'BDB',
-            'BGB'
+        event.remove({ output: "gtceu:steam_grinder" })
+        event.shaped("gtceu:steam_grinder", [
+            "BGB",
+            "BDB",
+            "BGB"
         ], {
             B: "gtceu:steam_machine_casing",
             G: "gtceu:potin_gear",
             D: "#forge:gems/diamond"
         })
 
-        event.remove({ output: 'steamadditions:steam_foundry' })
-        event.shaped('steamadditions:steam_foundry', [
-            'BGB',
-            'BDB',
-            'BGB'
+        event.remove({ output: "steamadditions:steam_foundry" })
+        event.shaped("steamadditions:steam_foundry", [
+            "BGB",
+            "BDB",
+            "BGB"
         ], {
             B: "gtceu:steam_machine_casing",
             G: "gtceu:bronze_gear",
@@ -89,10 +89,10 @@ ServerEvents.recipes(event => {
         })
 
         // Handmade rubber - no match for the power of the factory
-        event.shaped('gtceu:rubber_plate', [
-            ' H ',
-            ' R ',
-            ' R '
+        event.shaped("gtceu:rubber_plate", [
+            " H ",
+            " R ",
+            " R "
         ], {
             H: "#forge:tools/hammers",
             R: "gtceu:sticky_resin"
@@ -111,10 +111,10 @@ ServerEvents.recipes(event => {
         event.remove({ id: "gtceu:assembler/electric_motor_lv_steel" })
         event.remove({ id: "gtceu:assembler/electric_motor_lv_iron" })
 
-        event.shaped('gtceu:lv_electric_motor', [
-            'CWR',
-            'WMW',
-            'RWC'
+        event.shaped("gtceu:lv_electric_motor", [
+            "CWR",
+            "WMW",
+            "RWC"
         ], {
             C: "gtceu:tin_single_cable",
             W: "gtceu:fine_copper_wire",
@@ -129,52 +129,52 @@ ServerEvents.recipes(event => {
             .EUt(30)
 
         // Glass tube
-        event.shaped('gtceu:glass_tube', [
-            '   ',
-            'PPP',
-            'PPP'
+        event.shaped("gtceu:glass_tube", [
+            "   ",
+            "PPP",
+            "PPP"
         ], {
-            P: '#forge:glass_panes'
-        }).id('kubejs:glass_tube')
+            P: "#forge:glass_panes"
+        }).id("kubejs:glass_tube")
 
         // Monified distill tower
-        event.shaped('gtceu:distillation_tower', [
-            'LPL',
-            'CHC',
-            'LPL'
+        event.shaped("gtceu:distillation_tower", [
+            "LPL",
+            "CHC",
+            "LPL"
         ], {
             L: "gtceu:stainless_steel_large_fluid_pipe",
             P: "gtceu:hv_electric_pump",
             C: "#gtceu:circuits/hv",
             H: "gtceu:hv_machine_hull"
-        }).id('gtceu:shaped/distillation_tower')
+        }).id("gtceu:shaped/distillation_tower")
 
         // GT Steam Age
         gtMachines.forEach(machine => {
             event.remove({ output: [`gtceu:lp_steam_${machine}`, `gtceu:hp_steam_${machine}`] })
         })
 
-        event.shaped('thermal:dynamo_numismatic', [
-            ' A ',
-            'BCB',
-            'DED'
+        event.shaped("thermal:dynamo_numismatic", [
+            " A ",
+            "BCB",
+            "DED"
         ], {
-            A: 'kubejs:excitationcoil',
-            B: 'gtceu:vibrant_alloy_plate',
-            C: 'ironfurnaces:diamond_furnace',
-            D: 'enderio:vibrant_gear',
-            E: 'kubejs:redstone_transmission_coil'
+            A: "kubejs:excitationcoil",
+            B: "gtceu:vibrant_alloy_plate",
+            C: "ironfurnaces:diamond_furnace",
+            D: "enderio:vibrant_gear",
+            E: "kubejs:redstone_transmission_coil"
         })
 
-        event.remove({ output: 'gtceu:lv_item_magnet' })
-        event.shaped(Item.of('gtceu:lv_item_magnet', '{Charge:120000L}'), [
-            'R R',
-            'R R',
-            'CPC'
+        event.remove({ output: "gtceu:lv_item_magnet" })
+        event.shaped(Item.of("gtceu:lv_item_magnet", "{Charge:120000L}"), [
+            "R R",
+            "R R",
+            "CPC"
         ], {
-            C: 'gtceu:tin_single_cable',
-            R: 'gtceu:magnetic_iron_rod',
-            P: 'gtceu:iron_plate'
+            C: "gtceu:tin_single_cable",
+            R: "gtceu:magnetic_iron_rod",
+            P: "gtceu:iron_plate"
         })
     }
 })

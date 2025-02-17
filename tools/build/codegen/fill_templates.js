@@ -1,5 +1,5 @@
 // @ts-check
-import fs from 'fs';
+import fs from "fs";
 
 /**
  * @typedef {Record<string, ((sub: string, match: string) => string) | string | number>} Filler
@@ -14,9 +14,9 @@ import fs from 'fs';
 export const fillTemplates = (template, filler) =>
     Object.entries(filler)
         .reduce((t, [key, value]) => {
-            const regex = new RegExp(key, 'g');
+            const regex = new RegExp(key, "g");
             // TS does not allow for ternary inside replaceAll
-            if (typeof value === 'function') {
+            if (typeof value === "function") {
                 return t.replaceAll(regex, value);
             }
             return t.replaceAll(regex, value.toString());
@@ -33,7 +33,7 @@ export const fillTemplateFile = (templateFilePath, saveFilePath, filler) =>
     fs.writeFileSync(
         saveFilePath,
         fillTemplates(
-            fs.readFileSync(templateFilePath, { encoding: 'utf8' }),
+            fs.readFileSync(templateFilePath, { encoding: "utf8" }),
             filler,
         ),
     );

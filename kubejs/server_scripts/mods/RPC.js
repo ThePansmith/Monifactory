@@ -1,20 +1,20 @@
 /** @private */
 const ___TIER_QUEST_MAPPING = [
     // all of these are on the progression page
-    'DEFAULT',
-    '1A30472430354F1E', // lv
-    '3B639F4061B00F1A', // mv
-    '6169C04DF463502F', // hv
-    '7E09D4E00BFA4970', // ev
-    '39FD6F1076559156', // iv
-    '4DB622A78605A2EB', // luv
-    '521977C7165229F1', // zpm
-    '115B96B2092D671E', // uv
-    '01E542E1C9DAF5B4',  // uhv
-    '07057CDE4E021BA7', // uev
-    '1B1D3A66B847D129', // uiv
-    '5601A05D8361551D', // max
-    '63280C5F37A22345' // creative chest (end)
+    "DEFAULT",
+    "1A30472430354F1E", // lv
+    "3B639F4061B00F1A", // mv
+    "6169C04DF463502F", // hv
+    "7E09D4E00BFA4970", // ev
+    "39FD6F1076559156", // iv
+    "4DB622A78605A2EB", // luv
+    "521977C7165229F1", // zpm
+    "115B96B2092D671E", // uv
+    "01E542E1C9DAF5B4",  // uhv
+    "07057CDE4E021BA7", // uev
+    "1B1D3A66B847D129", // uiv
+    "5601A05D8361551D", // max
+    "63280C5F37A22345" // creative chest (end)
 ]
 
 FTBQuestsEvents.completed(event => {
@@ -47,6 +47,6 @@ const ___updateTierRPC = (tier, player) => {
         console.log("!! DONT RIGHT CLICK -> 'COMPLETE INSTANTLY', IT WONT SEND THE PLAYER !!")
         return;
     }
-    player.sendData('moni:rpc', { tier: tier });
+    player.sendData("moni:rpc", { tier: tier });
     // console.log("SDRP Sent Update to client");
 }
