@@ -43,18 +43,18 @@ ServerEvents.recipes(event => {
         const builder = event.recipes.gtceu.assembler(`kubejs:repair_t${minerTier}`)
             .itemInputs(`kubejs:damaged_microminer_t${minerTier}`)
             .itemOutputs(`kubejs:microminer_t${minerTier}`)
-            .inputFluids(Fluid.of("gtceu:soldering_alloy", 36*minerTierNumber))
-            .duration(20*repairDurations[minerTier])
+            .inputFluids(Fluid.of("gtceu:soldering_alloy", 36 * minerTierNumber))
+            .duration(20 * repairDurations[minerTier])
 
         if(doublePlateList != undefined) {
             doublePlateList.forEach((name, index) => {
-                builder.chancedInput(`2x gtceu:double_${name}_plate`, 9000-1000*index, -1000+200*index)
+                builder.chancedInput(`2x gtceu:double_${name}_plate`, 9000 - 1000 * index, -1000 + 200 * index)
             })
         }
 
         if(heavyPlatingList != undefined) {
             heavyPlatingList.forEach((name, index) => {
-                builder.chancedInput(`3x kubejs:${name}_heavy_plating`, 9000-1000*index, -1000+200*index)
+                builder.chancedInput(`3x kubejs:${name}_heavy_plating`, 9000 - 1000 * index, -1000 + 200 * index)
             })
         }
 

@@ -84,7 +84,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
     global.mission_counts[minerTier]++;
 
     // Convert miner return chance from percentage to GTM"s hundredth-of-a-percent format
-    minerReturnChance = Math.floor(minerReturnChance*100)
+    minerReturnChance = Math.floor(minerReturnChance * 100)
 
     // Use defaults if duration or EU/t not defined
     if(duration == undefined) duration = missionDurations[minerTier]
@@ -98,7 +98,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
     builders[0] = event.recipes.gtceu.microverse(`kubejs:mission_t${minerTier}_${global.mission_counts[minerTier]}`)
         .addData("projector_tier", projectorTier)
         .itemInputs(`kubejs:microminer_t${minerTier}`)
-        .duration(Math.round(duration*20))
+        .duration(Math.round(duration * 20))
         .EUt(EUt)
 
     if(isNaN(minerReturnChance) || minerReturnChance == undefined) {

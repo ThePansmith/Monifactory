@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 9, 3, undefined, undefined, 50).forEach(builder => {
         builder
-        .inputFluids("gtceu:argon_plasma 5000")
+            .inputFluids("gtceu:argon_plasma 5000")
             .itemInputs("8x gtceu:neutron_reflector", "4x gtceu:cryococcus_block", "kubejs:stellar_creation_data")
             .itemOutputs("64x gtceu:neutronium_ingot")
     })
