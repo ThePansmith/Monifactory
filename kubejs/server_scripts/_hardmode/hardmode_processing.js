@@ -195,8 +195,8 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.chemical_bath("bathe_tantalite_dust")
             .itemInputs("9x gtceu:tantalite_dust")
-            .inputFluids("gtceu:hydrofluoric_acid 4000")
-            .itemOutputs("7x gtceu:tantalum_pentoxide_dust", "gtceu:niobium_pentoxide_dust", "6x gtceu:manganese_difluoride_dust")
+            .inputFluids("gtceu:hydrofluoric_acid 2000")
+            .itemOutputs("7x gtceu:tantalum_pentoxide_dust", "gtceu:niobium_pentoxide_dust", "3x gtceu:manganese_difluoride_dust")
             .outputFluids("minecraft:water 1000")
             .duration(200).EUt(480)
 
