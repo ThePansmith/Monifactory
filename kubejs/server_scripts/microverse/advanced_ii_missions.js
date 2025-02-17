@@ -121,6 +121,7 @@ ServerEvents.recipes(event => {
     // T9MM missions
     microverse_mission(event, 9, 3, undefined, undefined, 100).forEach(builder => {
         builder
+            .inputFluids('gtceu:nitrogen_plasma 5000')
             .itemInputs(
                 '4x gtceu:cryococcus_block',
                 '64x kubejs:stellar_creation_data',
@@ -133,12 +134,14 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 9, 3, undefined, undefined, 50).forEach(builder => {
         builder
+        .inputFluids('gtceu:argon_plasma 5000')
             .itemInputs('8x gtceu:neutron_reflector', '4x gtceu:cryococcus_block', 'kubejs:stellar_creation_data')
             .itemOutputs('64x gtceu:neutronium_ingot')
     })
 
     microverse_mission(event, 9, 3, undefined, undefined, 100).forEach(builder => {
         builder
+            .inputFluids('gtceu:oxygen_plasma 10000')
             .itemInputs('64x gtceu:gravi_star', '64x gtceu:gravi_star', '16x kubejs:shattered_star_data')
             .itemOutputs('32x kubejs:quasi_stable_neutron_star')
     })

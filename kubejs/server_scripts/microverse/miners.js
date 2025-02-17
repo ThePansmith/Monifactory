@@ -150,8 +150,8 @@ ServerEvents.recipes(event => {
         'LCIIIIICL',
         'WCAABAACW',
         'WCWWIWWCW',
-        'WDCCICCDW',
-        'WMWWIWWMW',
+        'WMCCICCMW',
+        'WDWWIWWDW',
         ' E     E '
     ], {
         G: 'kubejs:advanced_micro_miner_guidance_system',
@@ -168,12 +168,12 @@ ServerEvents.recipes(event => {
     // T9 Microminer
     event.recipes.extendedcrafting.shaped_table('kubejs:microminer_t9', [
         '    Q    ',
-        '   QQQ   ',
+        '    Q    ',
         '   QUQ   ',
-        '  QQAQQ  ',
-        ' QQQQQQQ ',
-        'QQBQRQBQQ',
-        ' QQQCQQQ ',
+        '   QAQ   ',
+        '  QPQPQ  ',
+        ' QQTCTQQ ',
+        'QQBHRHBQQ',
         ' QQQQQQQ ',
         'QQ W W QQ'
     ], {
@@ -181,8 +181,11 @@ ServerEvents.recipes(event => {
         U: 'kubejs:universal_navigator',
         A: 'gtceu:uv_field_generator',
         B: 'gtceu:ev_super_chest',
+        P: 'gtceu:plasma_large_turbine',
         R: 'kubejs:universal_warp_core',
+        T: 'gtceu:tungstensteel_gearbox',
         C: 'kubejs:universal_warp_controller',
+        H: 'gtceu:uv_rotor_holder',
         W: 'kubejs:hadal_warp_engine'
     })
 
@@ -193,7 +196,7 @@ ServerEvents.recipes(event => {
         '  NN NN  ',
         '  NN NN  ',
         ' NUNNNUN ',
-        'PNCNNNCNP',
+        'PNCNENCNP',
         'NNRNANRNN',
         ' NNNNNNN ',
         'NW W W WN'
@@ -203,6 +206,7 @@ ServerEvents.recipes(event => {
         R: 'kubejs:universal_warp_core',
         C: 'kubejs:universal_warp_controller',
         P: 'solarflux:sp_custom_neutronium',
+        E: 'gtceu:energy_cluster',
         A: 'gtceu:iv_quantum_chest',
         W: 'kubejs:hadal_warp_engine'
     })
