@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
     // T3MM missions
     microverse_mission(event, 3, 1).forEach(builder => {
         builder
-            .itemInputs('2x kubejs:quantum_flux')
+            .itemInputs('4x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
             .itemInputs('kubejs:basic_drilling_kit')
             .itemInputs('gtceu:vanadium_steel_drill_head')
@@ -365,7 +365,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 3, 1).forEach(builder => {
         builder
-            .itemInputs('4x kubejs:quantum_flux')
+            .itemInputs('3x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
             .itemInputs('kubejs:blasting_kit')
             .itemOutputs(
@@ -376,7 +376,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 3, 1).forEach(builder => {
         builder
-            .itemInputs('16x kubejs:quantum_flux')
+            .itemInputs('8x kubejs:quantum_flux')
             .inputFluids('gtceu:rocket_fuel 5000')
             .itemInputs('kubejs:basic_drilling_kit')
             .itemInputs('gtceu:tungsten_steel_drill_head')
@@ -391,8 +391,8 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 3, 1).forEach(builder => {
         builder
-            .itemInputs('kubejs:quantum_flux')
-            .inputFluids('gtceu:rocket_fuel 2000')
+            .itemInputs('4x kubejs:quantum_flux')
+            .inputFluids('gtceu:rocket_fuel 5000')
             .itemInputs('kubejs:basic_drilling_kit')
             .itemInputs('gtceu:iron_drill_head')
             .itemOutputs(
