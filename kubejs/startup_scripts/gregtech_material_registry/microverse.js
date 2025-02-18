@@ -15,6 +15,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("2x steel", "glowstone", "redstone", "deuterium")
         .blastTemp(1700, "mid", 120, 600)
         .cableProperties(128, 4, 2, false)
+        .formula("Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D");
 
     event.create("osmiridiumyes")
         .dust().ore()

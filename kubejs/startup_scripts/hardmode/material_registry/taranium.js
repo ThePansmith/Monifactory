@@ -34,6 +34,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluid()
         .color(0xa567db)
         .components("xenon", "water", "3x oxygen")
+        .formula("H2XeO4");
 
     event.create("dusty_helium")
         .gas()
@@ -92,11 +93,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0x3bbd2f).iconSet("shiny")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-})
-
-GTCEuStartupEvents.materialModification(() => {
-    if (!isHardMode) {
-        return;
-    }
-    GTMaterials.get("xenic_acid").setFormula("H2XeO4");
 })

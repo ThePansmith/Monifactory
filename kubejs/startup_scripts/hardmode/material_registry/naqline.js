@@ -14,23 +14,28 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x17ddd3).iconSet("rough")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("2x naquadah", "3x oxygen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
     event.create("pyromorphite")
         .dust()
         .color(0xd3ed28).iconSet("rough")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("5x lead", "3x phosphate", "chlorine")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
     event.create("naquadah_hydroxide")
         .dust()
         .color(0x1941a6).iconSet("dull")
         .components("naquadah", "3x hydrogen", "3x oxygen")
+        .formula("Nq(OH)3")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
     event.create("caesium_hydroxide")
         .dust()
         .color(0xbd8340).iconSet("dull")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("caesium", "oxygen", "hydrogen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
     event.create("neocryolite")
         .liquid()
@@ -65,8 +70,7 @@ GTCEuStartupEvents.materialModification(() => {
     if (!isHardMode) {
         return;
     }
-    GTMaterials.get("naquadah_hydroxide").setFormula("Nq(OH)3");
     // Use `.setOreByProducts` here instead of `.addOreByproducts` because of https://github.com/GregTechCEu/GregTech-Modern/issues/2633
     GTMaterials.get("snowchestite").getProperty(PropertyKey.ORE)
-        .setOreByProducts("chalcopyrite", "vanadium_magnetite", "naquadah_hydroxide")
+        .setOreByProducts("chalcopyrite", "vanadium_magnetite", "naquadah_hydroxide");
 })
