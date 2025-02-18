@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:uranic_solution 1000")
         .duration(320)
         .EUt(GTValues.VHA[GTValues.EV])
-    
+
     event.recipes.gtceu.chemical_bath("uranic_solution_thorium")
         .inputFluids("gtceu:hypochlorous_acid 1000")
         .itemInputs("2x gtceu:purified_thorium_ore")
