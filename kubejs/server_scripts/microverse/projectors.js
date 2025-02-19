@@ -62,21 +62,4 @@ ServerEvents.recipes(event => {
         A: "#gtceu:circuits/uev",
         R: "gtceu:computer_monitor_cover"
     }).id("kubejs:shaped/hyperbolic_microverse_projector")
-
-    if(isHardMode) {
-        event.recipes.extendedcrafting.shaped_table("gtceu:actualization_chamber", [
-            "PPPPP",
-            "PEBSP",
-            "PCFCP",
-            "PSBEP",
-            "PPPPP"
-        ], {
-            P: "gtceu:americium_plate",
-            E: "gtceu:uv_emitter",
-            B: "gtceu:fusion_coil",
-            S: "gtceu:uv_sensor",
-            F: "gtceu:uv_field_generator",
-            C: "#gtceu:circuits/uv"
-        })
-    }
 })
