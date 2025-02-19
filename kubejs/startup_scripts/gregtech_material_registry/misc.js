@@ -242,7 +242,6 @@ GTCEuStartupEvents.materialModification(event => {
         TagPrefix.nugget,
         TagPrefix.block,
         TagPrefix.dustTiny,
-        TagPrefix.dustSmall,
         TagPrefix.rawOre,
         TagPrefix.rawOreBlock
     ]
