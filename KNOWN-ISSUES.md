@@ -1,26 +1,16 @@
 ## Other Frequently Asked Questions:
 See more at [FAQ.md](FAQ.md)
 
-**Unable to Join Multiplayer Server**
-
-Nuclearcraft issue, see [here](https://github.com/ThePansmith/Monifactory/commit/9144c1c2938c5251816e3bc7e536ae6069681d74#diff-e49803c96d7fa99d827b8beab31aad194abf477365548a757dd297c5a525fa16L32) on how to bandaid fix it. Note that the reason for this not being default is that it in turn introduces some problems of it's own, mainly allowing some ingots to be unintentionally smelted in a furnace.
-
-**KubeJS errors when updating on Prism Launcher**
-
-Update to Prism 9.0. Previous versions of Prism don't delete files from the previous version of Moni when updating, so any file that should be removed in a modpack update won't necessarily be deleted on your end. This can cause problems.
-
-**EMI and/or AE2 having issues with GregTech tools**
-
-These mods don't handle NBT or tool-based crafting perfectly all the time, so you may encounter this issue occasionally. Try to transition to Assemblers or other machines ASAP. Machine crafting also offers improved material efficiency over tool crafting
-
 **FTBQuests not showing as completed**
 
 Check all dependencies and ensure they are completed with a green checkmark. Some dependencies may not be on the same quest page, and will therefore not be connected with a line.
 If that does not work, then go into edit mode by changing the game mode to Creative, then clicking the pencil in the bottom right of the quest UI. In edit mode, you can right-click a quest and select "Complete Instantly".
 
-**UI elements overlapping with EMI**
+**Quark (quark) has failed to load correctly.**
 
-Switch to a lower GUI scale or tweak EMI's UI configs to your liking. Alternatively, disable EMI temporarily using Ctrl + O
+This is the result of an adverse interaction between Quark and ModernFix's Dynamic Resources mixin.
+Restarting the modpack a few times resolves the issue.
+If it annoys you enough, then you can go into the Modernfix config and disable it.
 
 **Game crashes when generating a superflat world.**
 
@@ -40,7 +30,19 @@ No cause has been identified, but the leading theory is that you may have favori
 
 **GregTech textures are all switched around**
 
-GregTech uses dynamically generated textures - reloading your resource packs may break this. Restart your game to fix it
+GregTech uses dynamically generated textures - reloading your resource packs may break this. Restart your game to fix it.
+
+**KubeJS errors when updating on Prism Launcher**
+
+Update to Prism 9.0. Previous versions of Prism don't delete files from the previous version of Moni when updating, so any file that should be removed in a modpack update won't necessarily be deleted on your end. This can cause problems.
+
+**EMI and/or AE2 having issues with GregTech tools**
+
+These mods don't handle NBT or tool-based crafting perfectly all the time, so you may encounter this issue occasionally. Try to transition to Assemblers or other machines ASAP. Machine crafting also offers improved material efficiency over tool crafting
+
+**UI elements overlapping with EMI**
+
+Switch to a lower GUI scale or tweak EMI's UI configs to your liking. Alternatively, disable EMI temporarily using Ctrl + O
 
 **Discord Rich Presence integration doesn't match my voltage tier**
 

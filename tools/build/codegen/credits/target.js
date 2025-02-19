@@ -1,27 +1,27 @@
 // @ts-check
-import Juke from 'juke-build';
-import fs from 'fs';
-import { randomUUID } from 'crypto';
-import { fileURLToPath } from 'url';
-import z from 'zod';
+import Juke from "juke-build";
+import fs from "fs";
+import { randomUUID } from "crypto";
+import { fileURLToPath } from "url";
+import z from "zod";
 
-import { readDatafileJSON } from '../../lib/json_datafile.js';
-import { fillTemplateFile, fillTemplates } from '../fill_templates.js';
+import { readDatafileJSON } from "../../lib/json_datafile.js";
+import { fillTemplateFile, fillTemplates } from "../fill_templates.js";
 
 /**
  * @param {string} f
  */
-const resolveNeighbourFilePath = (f) => fileURLToPath(import.meta.resolve('./' + f));
+const resolveNeighbourFilePath = (f) => fileURLToPath(import.meta.resolve("./" + f));
 
-const contributorsFilePath = resolveNeighbourFilePath('contributors.json');
+const contributorsFilePath = resolveNeighbourFilePath("contributors.json");
 
-const devCapesFilePath = 'kubejs/client_scripts/Dev_Capes.js';
-const devCapeTemplateFilePath = resolveNeighbourFilePath('Dev_Cape.template.js');
-const devCapesTemplateFilePath = resolveNeighbourFilePath('Dev_Capes.template.js');
+const devCapesFilePath = "kubejs/client_scripts/Dev_Capes.js";
+const devCapeTemplateFilePath = resolveNeighbourFilePath("Dev_Cape.template.js");
+const devCapesTemplateFilePath = resolveNeighbourFilePath("Dev_Capes.template.js");
 
-const creditScreenLayoutFilePath = 'config/fancymenu/customization/pack_credit_screen_layout.txt';
-const creditScreenLayoutTemplateFilePath = resolveNeighbourFilePath('pack_credit_screen_layout.template.txt');
-const creditScreenContributorTemplateFilePath = resolveNeighbourFilePath('pack_credit_screen_contributor.template.txt');
+const creditScreenLayoutFilePath = "config/fancymenu/customization/pack_credit_screen_layout.txt";
+const creditScreenLayoutTemplateFilePath = resolveNeighbourFilePath("pack_credit_screen_layout.template.txt");
+const creditScreenContributorTemplateFilePath = resolveNeighbourFilePath("pack_credit_screen_contributor.template.txt");
 
 export const CodegenCreditsTarget = new Juke.Target({
     inputs: [
@@ -72,7 +72,7 @@ export const CodegenCreditsTarget = new Juke.Target({
         // ----------- Dev_Capes.js -----------
         const devCapeTemplate = fs.readFileSync(
             devCapeTemplateFilePath,
-            { encoding: 'utf8' },
+            { encoding: "utf8" },
         );
 
         const getCapesByRole = (/** @type {z.infer<zRole>} */ role) =>
@@ -83,22 +83,22 @@ export const CodegenCreditsTarget = new Juke.Target({
                     fillTemplates(
                         devCapeTemplate,
                         {
-                            '{{NAME}}': name,
+                            "{{NAME}}": name,
                             // @ts-ignore See filter above
-                            '{{UUID}}': data.mcuuid,
+                            "{{UUID}}": data.mcuuid,
                             // @ts-ignore See filter above
-                            '{{CAPE}}': cape_name_of_role[data.role],
+                            "{{CAPE}}": cape_name_of_role[data.role],
                         },
                     )
                 )
-                .join('\r\n');
+                .join("\n");
 
         fillTemplateFile(
             devCapesTemplateFilePath,
             devCapesFilePath,
             {
-                '//{{CODEGEN_DEVS}}': getCapesByRole('dev'),
-                '//{{CODEGEN_CONTRIBUTORS}}': getCapesByRole('contributor'),
+                "//{{CODEGEN_DEVS}}": getCapesByRole("dev"),
+                "//{{CODEGEN_CONTRIBUTORS}}": getCapesByRole("contributor"),
             },
         );
 
@@ -111,31 +111,31 @@ export const CodegenCreditsTarget = new Juke.Target({
 
         const creditScreenContributorTemplate = fs.readFileSync(
             creditScreenContributorTemplateFilePath,
-            { encoding: 'utf8' },
+            { encoding: "utf8" },
         );
 
         const creditScreenContributors = Object
             .entries(people)
-            .filter(([, data]) => !data.role?.includes('alt'))
+            .filter(([, data]) => !data.role?.includes("alt"))
         // Bubble up people with skins, as they would be more interesting
             .sort((a, b) => Number(!!b[1].mcuuid) - Number(!!a[1].mcuuid))
             .map(([name, data]) => {
                 const elements = fillTemplates(
                     creditScreenContributorTemplate,
                     {
-                        '{{MC_UUID}}': data.mcuuid ?? defaults.skin,
-                        '{{V4_UUID}}': data.mcuuid ?? randomUUID(),
-                        '{{PLAYERNAME}}': name,
+                        "{{MC_UUID}}": data.mcuuid ?? defaults.skin,
+                        "{{V4_UUID}}": data.mcuuid ?? randomUUID(),
+                        "{{PLAYERNAME}}": name,
                         // "NAME - DESC" if description exists, just "NAME" otherwise
-                        '{{DESCRIPTION}}': [name, data.description].filter((s) => s).join(' - '),
-                        '{{X_SKIN}}': x,
-                        '{{Y_SKIN}}': y,
-                        '{{X_BUTTON}}': x + hoverOffsetX,
-                        '{{Y_BUTTON}}': y + hoverOffsetY,
-                        '{{IF_HAS_LINK}}([^]*?){{IF_HAS_LINK_END}}\n': data.link ? (_, match) => match : '',
-                        '{{LINK}}': data.link ?? '',
-                        '{{BUTTON_EXEC_ACTION_UUID}}': randomUUID(),
-                        '{{BUTTON_EXEC_BLOCK_UUID}}': randomUUID(),
+                        "{{DESCRIPTION}}": [name, data.description].filter((s) => s).join(" - "),
+                        "{{X_SKIN}}": x,
+                        "{{Y_SKIN}}": y,
+                        "{{X_BUTTON}}": x + hoverOffsetX,
+                        "{{Y_BUTTON}}": y + hoverOffsetY,
+                        "{{IF_HAS_LINK}}([^]*?){{IF_HAS_LINK_END}}\n": data.link ? (_, match) => match : "",
+                        "{{LINK}}": data.link ?? "",
+                        "{{BUTTON_EXEC_ACTION_UUID}}": randomUUID(),
+                        "{{BUTTON_EXEC_BLOCK_UUID}}": randomUUID(),
                     },
                 );
                 x += stepX;
@@ -146,13 +146,13 @@ export const CodegenCreditsTarget = new Juke.Target({
                 }
                 return elements;
             })
-            .join('');
+            .join("");
 
         fillTemplateFile(
             creditScreenLayoutTemplateFilePath,
             creditScreenLayoutFilePath,
             {
-                '{{CODEGEN}}': creditScreenContributors,
+                "{{CODEGEN}}": creditScreenContributors,
             },
         );
     },
