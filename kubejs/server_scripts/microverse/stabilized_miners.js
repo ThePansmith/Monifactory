@@ -5,17 +5,11 @@ ServerEvents.recipes(event => {
     if(isNormalMode) return;
 
     const stabilized_miners = [
-        "1",
-        "2",
         "2half",
-        "3",
-        "4",
         "4half",
-        "5",
         "6",
         "7",
-        "8",
-        "8half"
+        "8"
     ]
 
     /**

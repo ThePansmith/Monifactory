@@ -3,6 +3,13 @@
  * and certain other properties of custom items.
  */
 StartupEvents.registry("item", event => {
+    const stabilized_miners = [
+        "2half",
+        "4half",
+        "6",
+        "7",
+        "8",
+    ]
 
     // Regular Microminers
     for (let tier = 1; tier <= 12; tier++) {
@@ -18,22 +25,9 @@ StartupEvents.registry("item", event => {
         event.create("microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
         event.create("damaged_microminer_t4half").maxStackSize(16).textureJson({ layer0: "kubejs:item/microverse/microminer_t4half", layer1: "minecraft:block/destroy_stage_2" })
         event.create("microminer_t8half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
-        event.create("damaged_microminer_t8half").maxStackSize(16).textureJson({ layer0: "kubejs:item/microverse/microminer_t8half", layer1: "minecraft:block/destroy_stage_2" })
 
         // Stabilized Miners
-        for (const tier of [
-            "1",
-            "2",
-            "2half",
-            "3",
-            "4",
-            "4half",
-            "5",
-            "6",
-            "7",
-            "8",
-            "8half",
-        ]) {
+        for (const tier of stabilized_miners) {
             event.create(`stabilized_microminer_t${tier}`)
                 .maxStackSize(16)
                 .texture(`kubejs:item/microverse/microminer_t${tier}`)
