@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
     })
 
     // T9MM missions
-    microverse_mission(event, 9, 3, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:nitrogen_plasma 5000")
             .itemInputs(
@@ -132,14 +132,14 @@ ServerEvents.recipes(event => {
             .itemOutputs("kubejs:universe_creation_data")
     })
 
-    microverse_mission(event, 9, 3, undefined, undefined, 50).forEach(builder => {
+    microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:argon_plasma 5000")
             .itemInputs("8x gtceu:neutron_reflector", "4x gtceu:cryococcus_block", "kubejs:stellar_creation_data")
             .itemOutputs("64x gtceu:neutronium_ingot")
     })
 
-    microverse_mission(event, 9, 3, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:oxygen_plasma 10000")
             .itemInputs("64x gtceu:gravi_star", "64x gtceu:gravi_star", "16x kubejs:shattered_star_data")
@@ -147,13 +147,13 @@ ServerEvents.recipes(event => {
     })
 
     // T10MM missions
-    microverse_mission(event, 10, 3, undefined, undefined, 50).forEach(builder => {
+    microverse_mission(event, 10, 3).forEach(builder => {
         builder
             .itemInputs("8x gtceu:cryococcus_block", "kubejs:universe_creation_data")
             .itemOutputs("kubejs:heart_of_a_universe")
     })
 
-    microverse_mission(event, 10, 3, undefined, undefined, 0).forEach(builder => {
+    microverse_mission(event, 10, 3).forEach(builder => {
         builder
             .itemInputs("16x #forge:storage_blocks/activated_netherite", "64x kubejs:stellar_creation_data")
             .itemOutputs("kubejs:creative_storage_data")
