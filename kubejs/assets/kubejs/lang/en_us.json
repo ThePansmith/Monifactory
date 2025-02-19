@@ -63,19 +63,6 @@
 
   "item.kubejs.damaged_microminer.tooltip": "§7§oCan be repaired in an assembler.",
 
-  "item.kubejs.pristine_matter_t1": "§dPristine Steel Microverse Matter [Tier One]",
-  "item.kubejs.pristine_matter_t2": "§dPristine Titanium Microverse Matter [Tier Two]",
-  "item.kubejs.pristine_matter_t3": "§dPristine Tungsten Microverse Matter [Tier Three]",
-  "item.kubejs.pristine_matter_t4": "§dPristine Signalum Microverse Matter [Tier Four]",
-  "item.kubejs.pristine_matter_t4half": "§dPristine Lumium Microverse Matter [Tier Four and a Half]",
-  "item.kubejs.pristine_matter_t5": "§dPristine Iridium Microverse Matter [Tier Five]",
-  "item.kubejs.pristine_matter_t6": "§dPristine Enderium Microverse Matter [Tier Six]",
-  "item.kubejs.pristine_matter_t7": "§dPristine Cryobulus Microverse Matter [Tier Seven]",
-  "item.kubejs.pristine_matter_t8": "§dPristine Crystal Microverse Matter [Tier Eight]",
-  "item.kubejs.pristine_matter_t8half": "§dPristine Trinium Microverse Matter [Tier Eight and a Half]",
-
-  "item.kubejs.pristine_matter.desc": "§7§oAn infinite and incomprehensible abyss of materials.",
-
   "item.kubejs.pulsating_dust": "Pulsating Dust",
   "item.kubejs.pulsating_mesh": "Pulsating Mesh",
   "item.kubejs.warden_horn": "Warden Tendril",
@@ -369,7 +356,7 @@
   "item.kubejs.dark_soularium_thruster": "Dark Soularium Thruster",
   "item.kubejs.fluxed_thruster": "Fluxed Thruster",
   "item.kubejs.redstone_transmission_coil": "Redstone Transmission Coil",
-  
+
   "fluid.kubejs.molten_pyrotheum": "§6Blazing Pyrotheum",
   "fluid.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "fluid.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
@@ -553,7 +540,7 @@
   "travellersbootsreloaded.deprecation.tooltip": "Deprecated. Craft into an Exoskeleton!",
   "gtceu.sterilizing_filter_casing.tooltip": "Sterilized Cleanrooms can't be used as a \"regular\" Cleanroom. You'll want one of each.",
   "item.kubejs.infinity_dust_block.tooltip": "§7§oNot quite solid",
-  
+
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
   "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",

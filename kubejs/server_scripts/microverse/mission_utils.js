@@ -1,7 +1,6 @@
 // priority: 1
 /**
  * Utility functions for registering microminer missions,
- * actualization chamber counterparts,
  * and lower-tier projector missions more succinctly.
  */
 
@@ -71,7 +70,7 @@ const missionEUt = {
 }
 
 /**
- * Registers a basic microverse mission and equivalent actualization chamber recipe
+ * Registers a basic microverse mission and equivalent stabilized mission recipe
  * @param {Internal.RecipesEventJS} event Parameter used in consumer for ServerEvents.recipes().
  * @param {number|string} minerTier Miner tier index. Typically 1 through 12.
  * @param {number} duration Recipe duration in seconds. Defaults based on the miner tier if left undefined.
@@ -109,13 +108,22 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
         builders[0].chancedOutput(`kubejs:damaged_microminer_t${minerTier}`, minerReturnChance, minerReturnChance == 10000 ? 0 : 500)
     }
 
+    const stabilized_miners = [
+        "2half",
+        "4half",
+        "6",
+        "7",
+        "8"
+    ]
+
     // Register actualization chamber counterparts in Hard Mode and Expert Mode except for T9+
-    if(isHardMode && minerTier < 9 || minerTier == "2half" || minerTier == "4half" || minerTier == "8half") {
-        builders[1] = event.recipes.gtceu.actualization_chamber(`kubejs:pristine_t${minerTier}_${global.mission_counts[minerTier]}`)
-            .itemInputs(`kubejs:pristine_matter_t${minerTier}`)
-            .circuit(global.mission_counts[minerTier])
-            .duration(800)
-            .EUt(GTValues.VA[GTValues.LuV])
+    if(isHardMode && stabilized_miners.indexOf(minerTier.toString()) != -1) {
+        builders[1] = event.recipes.gtceu.microverse(`kubejs:mission_t${minerTier}_${global.mission_counts[minerTier]}_stabilized`)
+            .addData("projector_tier", projectorTier)
+            .itemInputs(`kubejs:stabilized_microminer_t${minerTier}`)
+            .itemOutputs(`kubejs:stabilized_microminer_t${minerTier}`)
+            .duration(Math.round(duration * 20))
+            .EUt(EUt)
     }
 
     return builders;

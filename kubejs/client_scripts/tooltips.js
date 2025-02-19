@@ -27,10 +27,6 @@ ItemEvents.tooltip(tooltip => {
         text.add(1, Text.translatable("item.kubejs.damaged_microminer.tooltip"))
     })
 
-    tooltip.addAdvanced(["/kubejs:pristine_matter/"], (item, adv, text) => {
-        text.add(1, Text.translatable("item.kubejs.pristine_matter.desc"))
-    })
-
     // Microminer Components
     tooltip.add("kubejs:universal_navigator", Text.translatable("kubejs.universal_navigator.tooltip"))
 
@@ -107,7 +103,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("gtceu:advanced_microverse_projector", Text.translatable("gtceu.multiblock.advanced_microverse_projector.description"))
     tooltip.add("gtceu:advanced_microverse_projector_ii", Text.translatable("gtceu.multiblock.advanced_microverse_projector_ii.description"))
     tooltip.add("gtceu:subatomic_digital_assembler", Text.translatable("gtceu.multiblock.subatomic_digital_assembler.description"))
-    tooltip.add("gtceu:actualization_chamber", Text.translatable("gtceu.multiblock.actualization_chamber.description"))
     tooltip.add("gtceu:large_naquadah_reactor", Text.translatable("gtceu.multiblock.large_naquadah_reactor.description"))
     tooltip.add("gtceu:naquadah_refinery", Text.translatable("gtceu.multiblock.naquadah_refinery.description"))
 
