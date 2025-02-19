@@ -13,8 +13,8 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("water", 3000))
         .itemOutputs("gtceu:omnic_acid_dust")
         .outputFluids(Fluid.of("gtceu:hydrogen", 2000))
-        .duration(300)
-        .EUt(65520)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.ZPM])
 
     // Ancient Debris crushing
     event.recipes.gtceu.macerator("macerate_ancient_debris_to_crushed_ore")
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:purified_ancient_debris_dust")
         .chancedOutput("gtceu:platinum_dust", 3300, 0)
         .duration(300)
-        .EUt(16380)
+        .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.arc_furnace("ancient_debris_arc_smelting")
         .itemInputs("kubejs:purified_ancient_debris_dust")
@@ -41,28 +41,28 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:palladium_dust", 1400, 850)
         .itemOutputs("kubejs:processed_ancient_debris_dust")
         .duration(300)
-        .EUt(16380)
+        .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.electric_blast_furnace("netherite_scrap_blasting")
-        .itemInputs("kubejs:processed_ancient_debris_dust", "16x kubejs:quantum_flux")
-        .inputFluids(Fluid.of("gtceu:tritium", 1000))
+        .itemInputs("kubejs:processed_ancient_debris_dust", "8x kubejs:quantum_flux")
+        .inputFluids(Fluid.of("gtceu:blaze", 1000))
         .itemOutputs("kubejs:inert_netherite_scrap")
-        .duration(150)
-        .EUt(250000)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(12000)
 
     // Activated Nethline
     event.recipes.gtceu.forming_press("inert_nether_compound_ingot")
-        .itemInputs("gtceu:hot_europium_ingot", "16x kubejs:wither_bone", "4x gtceu:dark_soularium_dust", "4x kubejs:primal_mana")
+        .itemInputs("gtceu:hot_europium_ingot", "4x kubejs:wither_bone", "3x gtceu:dark_soularium_dust", "4x kubejs:primal_mana")
         .itemOutputs("kubejs:inert_nether_compound_ingot")
         .duration(300)
-        .EUt(16380)
+        .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.omnic_forge("netherite_ingot_final")
-        .itemInputs("kubejs:inert_nether_compound_ingot", "3x kubejs:diamond_lattice", "4x kubejs:inert_netherite_scrap", "4x minecraft:gold_ingot")
+        .itemInputs("kubejs:inert_nether_compound_ingot", "2x kubejs:diamond_lattice", "4x kubejs:inert_netherite_scrap", "4x minecraft:gold_ingot")
         .itemOutputs("gtceu:activated_netherite_ingot")
         .duration(200)
-        .EUt(250000)
+        .EUt(GTValues.VA[GTValues.UHV])
 })
 
 ServerEvents.tags("item", event => {
