@@ -15,6 +15,21 @@ ServerEvents.recipes(event => {
             .itemOutputs("32x kubejs:stabilized_oganesson")
     })
 
+    // T6MM mission (Previously HM-exclusive, no problem with making it available in NM)
+    microverse_mission(event, 6, 3).forEach(builder => {
+        builder
+            .itemInputs(
+                "16x kubejs:quantum_flux",
+                "16x kubejs:stabilized_curium",
+                "kubejs:microversal_alchemy_kit",
+                "8x gtceu:manyullyn_ingot",
+                "4x gtceu:void_empowered_block",
+            )
+            .itemOutputs(
+                "minecraft:sculk_catalyst"
+            )
+    })
+
     // T7MM missions
     microverse_mission(event, 7, 3, undefined, undefined, 100).forEach(builder => {
         builder
@@ -119,11 +134,11 @@ ServerEvents.recipes(event => {
     })
 
     // T9MM missions
-    microverse_mission(event, 9, 3, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:nitrogen_plasma 5000")
+            .itemInputs("gtceu:data_module", "gtceu:uhv_sensor")
             .itemInputs(
-                "4x gtceu:cryococcus_block",
                 "64x kubejs:stellar_creation_data",
                 "64x kubejs:stellar_creation_data",
                 "64x kubejs:stellar_creation_data",
@@ -132,24 +147,24 @@ ServerEvents.recipes(event => {
             .itemOutputs("kubejs:universe_creation_data")
     })
 
-    microverse_mission(event, 9, 3, undefined, undefined, 50).forEach(builder => {
+    microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:argon_plasma 5000")
-            .itemInputs("8x gtceu:neutron_reflector", "4x gtceu:cryococcus_block", "kubejs:stellar_creation_data")
+            .itemInputs("kubejs:gravity_well_generator", "kubejs:stellar_creation_data", "8x gtceu:neutron_reflector")
             .itemOutputs("64x gtceu:neutronium_ingot")
     })
 
-    microverse_mission(event, 9, 3, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:oxygen_plasma 10000")
-            .itemInputs("64x gtceu:gravi_star", "64x gtceu:gravi_star", "16x kubejs:shattered_star_data")
+            .itemInputs("kubejs:gravity_well_generator", "16x kubejs:shattered_star_data", "64x gtceu:gravi_star", "64x gtceu:gravi_star")
             .itemOutputs("32x kubejs:quasi_stable_neutron_star")
     })
 
     // T10MM missions
-    microverse_mission(event, 10, 3, undefined, undefined, 50).forEach(builder => {
+    microverse_mission(event, 10, 3).forEach(builder => {
         builder
-            .itemInputs("8x gtceu:cryococcus_block", "kubejs:universe_creation_data")
+            .itemInputs("kubejs:universal_collapse_device", "kubejs:universe_creation_data")
             .itemOutputs("kubejs:heart_of_a_universe")
     })
 

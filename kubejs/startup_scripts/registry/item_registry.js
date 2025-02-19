@@ -57,6 +57,10 @@ StartupEvents.registry("item", event => {
     event.create("blasting_kit")
     event.create("microversal_alchemy_kit")
 
+    // T9+ Devices
+    event.create("gravity_well_generator")
+    event.create("universal_collapse_device")
+
     // Heavy platings
     event.create("quantum_fluxed_eternium_heavy_plating")
         .displayName("§dQuantum Fluxed Eternium Heavy Plating")
