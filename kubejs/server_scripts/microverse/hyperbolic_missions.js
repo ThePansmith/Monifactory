@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
     })
 
     // T9MM mission
-    microverse_mission(event, 9, 4, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 9, 4).forEach(builder => {
         builder
             .inputFluids("gtceu:nitrogen_plasma 15000")
             .itemInputs("kubejs:shattered_universe_data", "64x kubejs:shattered_star_data")
@@ -52,20 +52,20 @@ ServerEvents.recipes(event => {
     })
 
     // T10MM missions
-    microverse_mission(event, 10, 4, undefined, undefined, 75).forEach(builder => {
+    microverse_mission(event, 10, 4).forEach(builder => {
         builder
             .itemInputs("8x kubejs:infinity_catalyst", "kubejs:corrupted_universe_data")
             .itemOutputs("16x kubejs:heart_of_a_universe")
     })
 
-    microverse_mission(event, 10, 4, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 10, 4).forEach(builder => {
         builder
             .itemInputs("64x kubejs:singularity_containment_unit", "kubejs:shattered_universe_data",)
             .itemOutputs("64x kubejs:contained_singularity")
     })
 
     // T11MM missions
-    microverse_mission(event, 11, 4, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 11, 4).forEach(builder => {
         builder
             .itemInputs("kubejs:infinity_catalyst", "gtceu:neutronium_drill_head", "kubejs:shattered_universe_data")
             .itemOutputs(
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 11, 4, undefined, undefined, 100).forEach(builder => {
+    microverse_mission(event, 11, 4).forEach(builder => {
         builder
             .itemInputs(
                 "64x gtceu:gravi_star",
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 11, 4, undefined, undefined, 0).forEach(builder => {
+    microverse_mission(event, 11, 4).forEach(builder => {
         builder
             .itemInputs(
                 "16x gtceu:holmium_block",
@@ -111,13 +111,13 @@ ServerEvents.recipes(event => {
             .itemOutputs("kubejs:creative_computation_data")
     })
 
-    microverse_mission(event, 12, 4, undefined, undefined, 50).forEach(builder => {
+    microverse_mission(event, 12, 4).forEach(builder => {
         builder
             .itemInputs("64x gtceu:infinity_ingot", "4x kubejs:universe_creation_data")
             .itemOutputs("64x gtceu:monium_ingot")
     })
 
-    microverse_mission(event, 12, 4, undefined, undefined, 0).forEach(builder => {
+    microverse_mission(event, 12, 4).forEach(builder => {
         builder
             .itemInputs(
                 "16x gtceu:eltz_block",
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("kubejs:creative_energy_data")
     })
 
-    microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UXV], 10).forEach(builder => {
+    microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UXV]).forEach(builder => {
         builder
             .itemInputs("8x kubejs:timeless_monic_heavy_plating", "4x kubejs:universe_creation_data", "2x kubejs:shattered_universe_data", "2x kubejs:corrupted_universe_data")
             .itemOutputs("4x kubejs:causality_exempt_monic_heavy_plating")

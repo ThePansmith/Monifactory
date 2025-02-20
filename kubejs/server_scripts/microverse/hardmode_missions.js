@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
         })
 
         // HM/EM need a mission to give them their first sculk catalyst.
-        microverse_mission(event, 6, 3, undefined, undefined, 0).forEach(builder => {
+        microverse_mission(event, 6, 3).forEach(builder => {
             builder
                 .itemInputs(
                     "16x kubejs:quantum_flux",
