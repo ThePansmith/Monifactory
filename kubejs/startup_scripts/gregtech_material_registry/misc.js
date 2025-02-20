@@ -237,4 +237,17 @@ GTCEuStartupEvents.materialModification(event => {
 
     GTMaterials.get("microversium").setFormula("Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D")
     GTMaterials.get("thorium_hydroxide").setFormula("Th(OH)4")
+
+    const tagPrefixes = [
+        TagPrefix.nugget,
+        TagPrefix.block,
+        TagPrefix.dustTiny,
+        TagPrefix.rawOre,
+        TagPrefix.rawOreBlock
+    ]
+
+    TagPrefix.ingot.setIgnored(GTMaterials.get("netherite_scrap"), Ingredient.of("minecraft:netherite_scrap"))
+    tagPrefixes.forEach((prefix) => {
+        prefix["setIgnored(com.gregtechceu.gtceu.api.data.chemical.material.Material)"](GTMaterials.get("netherite_scrap"));
+    })
 })

@@ -71,6 +71,7 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(16)
 
+    event.remove({ output: "minecraft:netherite_ingot" })
     event.recipes.gtceu.alloy_smelter("kubejs:netherite_ingot")
         .itemInputs("4x #forge:ingots/gold", "4x minecraft:netherite_scrap") // was flipped
         .itemOutputs("1x minecraft:netherite_ingot")
