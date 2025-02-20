@@ -67,4 +67,5 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     addFluid(GTMaterials.Curium, $FluidStorageKeys.LIQUID, 1618);
     GTMaterials.Curium.setMaterialARGB(0x58307f)
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID, 1337);
+    GTMaterials.Thorium.setMaterialARGB(0x273420)
 })
