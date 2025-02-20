@@ -403,21 +403,51 @@ ServerEvents.recipes(event => {
     }).id("kubejs:ae2/calculation_processor_print")
 
     event.remove({ id: "ae2:inscriber/silicon_print" })
-    event.custom({
-        "type": "ae2:inscriber",
-        "ingredients": {
-            "middle": {
-                "item": "ae2:silicon"
+    const wafers = [
+        ["gtceu:", "silicon_wafer"],
+        ["gtceu:", "phosphorus_wafer"],
+        ["gtceu:", "naquadah_wafer"],
+        ["gtceu:", "neutronium_wafer"],
+        ["kubejs:", "universe_wafer"]
+    ]
+    if (isExpertMode) {
+        // Use only Greg wafers for printed silicon in EM
+        wafers.forEach((wafer, index) => {
+            event.custom({
+                "type": "ae2:inscriber",
+                "ingredients": {
+                    "middle": {
+                        "item": (wafer[0] + wafer[1])
+                    },
+                    "top": {
+                        "item": "ae2:silicon_press"
+                    }
+                },
+                "mode": "inscribe",
+                "result": {
+                    "item": "ae2:printed_silicon",
+                    "count": 2 ** index
+                }
+            }).id("kubejs:ae2/" + wafer[1] + "_print")
+        })
+    } else {
+        // Use AE2 silicon in other modes
+        event.custom({
+            "type": "ae2:inscriber",
+            "ingredients": {
+                "middle": {
+                    "item": "ae2:silicon"
+                },
+                "top": {
+                    "item": "ae2:silicon_press"
+                }
             },
-            "top": {
-                "item": "ae2:silicon_press"
+            "mode": "inscribe",
+            "result": {
+                "item": "ae2:printed_silicon"
             }
-        },
-        "mode": "inscribe",
-        "result": {
-            "item": "ae2:printed_silicon"
-        }
-    }).id("kubejs:ae2/silicon_print")
+        }).id("kubejs:ae2/silicon_print")
+    }
 
     event.remove({ id: "ae2:inscriber/logic_processor" })
     event.custom({
@@ -806,12 +836,23 @@ ServerEvents.recipes(event => {
 
 
     // Greg circuits
-    event.recipes.gtceu.forming_press("ae2_printed_silicon_greg")
-        .notConsumable("ae2:silicon_press")
-        .itemInputs("4x ae2:silicon")
-        .itemOutputs("4x ae2:printed_silicon")
-        .duration(10)
-        .EUt(2048)
+    if (isExpertMode) {
+        wafers.forEach((wafer, tier) => {
+            event.recipes.gtceu.forming_press("ae2_printed_" + wafer[1] + "greg")
+                .notConsumable("ae2:silicon_press")
+                .itemInputs("4x " + wafer[0] + wafer[1])
+                .itemOutputs(Item.of("ae2:printed_silicon", 4 * (2 ** tier)))
+                .duration(10)
+                .EUt(2048)
+        })
+    } else {
+        event.recipes.gtceu.forming_press("ae2_printed_silicon_greg")
+            .notConsumable("ae2:silicon_press")
+            .itemInputs("4x ae2:silicon")
+            .itemOutputs("4x ae2:printed_silicon")
+            .duration(10)
+            .EUt(2048)
+    }
 
     event.recipes.gtceu.forming_press("ae2_printed_engineering_greg")
         .notConsumable("ae2:engineering_processor_press")
