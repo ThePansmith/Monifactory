@@ -54,14 +54,12 @@ ServerEvents.recipes(event => {
 
     // T10MM missions
     microverse_mission(event, 10, 4).forEach(builder => {
-    microverse_mission(event, 10, 4).forEach(builder => {
         builder
             .itemInputs("kubejs:universal_collapse_device", "kubejs:corrupted_universe_data", "8x kubejs:infinity_catalyst")
             .itemOutputs("16x kubejs:heart_of_a_universe")
     })
 
     // T11MM missions
-    microverse_mission(event, 11, 4).forEach(builder => {
     microverse_mission(event, 11, 4).forEach(builder => {
         builder
             .itemInputs("kubejs:universal_navigator", "kubejs:shattered_universe_data", "gtceu:neutronium_drill_head", "kubejs:infinity_catalyst")
