@@ -488,4 +488,10 @@ ServerEvents.recipes(event => {
             Z: "kubejs:infinity_wire_cutter"
         })
     }
+
+    event.recipes.gtceu.canner("contained_singularity")
+        .itemInputs("kubejs:singularity_containment_unit", "ae2:singularity")
+        .itemOutputs("kubejs:contained_singularity")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.UEV])
 })

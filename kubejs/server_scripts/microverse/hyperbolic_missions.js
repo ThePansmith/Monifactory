@@ -59,12 +59,6 @@ ServerEvents.recipes(event => {
             .itemOutputs("16x kubejs:heart_of_a_universe")
     })
 
-    microverse_mission(event, 10, 4).forEach(builder => {
-        builder
-            .itemInputs("64x kubejs:singularity_containment_unit", "64x ae2:singularity", "kubejs:shattered_universe_data")
-            .itemOutputs("64x kubejs:contained_singularity")
-    })
-
     // T11MM missions
     microverse_mission(event, 11, 4).forEach(builder => {
         builder
