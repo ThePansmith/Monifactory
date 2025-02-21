@@ -14,16 +14,16 @@ StartupEvents.registry("item", event => {
     // Regular Microminers
     for (let tier = 1; tier <= 12; tier++) {
         event.create(`microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}`)
-        if(tier > 5) event.create(`damaged_microminer_t${tier}`).maxStackSize(16).textureJson({ layer0: `kubejs:item/microverse/microminer_t${tier}`, layer1: "minecraft:block/destroy_stage_2" })
+        if(tier >= 6 && tier < 9) event.create(`damaged_microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}_damaged`)
     }
 
 
     // HM/EM Microminers
     if (!isNormalMode) {
         event.create("microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half")
-        event.create("damaged_microminer_t2half").maxStackSize(16).textureJson({ layer0: "kubejs:item/microverse/microminer_t2half", layer1: "minecraft:block/destroy_stage_2" })
+        event.create("damaged_microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half_damaged")
         event.create("microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
-        event.create("damaged_microminer_t4half").maxStackSize(16).textureJson({ layer0: "kubejs:item/microverse/microminer_t4half", layer1: "minecraft:block/destroy_stage_2" })
+        event.create("damaged_microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half_damaged")
         event.create("microminer_t8half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
 
         // Stabilized Miners

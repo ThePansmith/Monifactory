@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("kubejs:heart_of_a_universe")
     })
 
-    microverse_mission(event, 10, 3, undefined, undefined, 0).forEach(builder => {
+    microverse_mission(event, 10, 3).forEach(builder => {
         builder
             .itemInputs("16x #forge:storage_blocks/activated_netherite", "64x kubejs:stellar_creation_data")
             .itemOutputs("kubejs:creative_storage_data")
