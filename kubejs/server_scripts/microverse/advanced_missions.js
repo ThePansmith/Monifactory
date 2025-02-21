@@ -168,8 +168,9 @@ ServerEvents.recipes(event => {
             .itemInputs("16x kubejs:wither_realm_data")
             .itemOutputs(
                 "64x gtceu:raw_uraninite",
-                "64x gtceu:raw_osmiridiumyes",
-                "64x gtceu:raw_iridosmineyes"
+                "32x gtceu:raw_uraninite",
+                "32x gtceu:raw_osmiridiumyes",
+                "32x gtceu:raw_iridosmineyes"
             )
     })
 
