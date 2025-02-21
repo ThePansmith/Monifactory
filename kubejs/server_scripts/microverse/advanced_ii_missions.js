@@ -49,15 +49,15 @@ ServerEvents.recipes(event => {
                 "16x kubejs:quantum_flux",
                 "64x gtceu:dilithium_gem",
                 "kubejs:blasting_kit",
-                "16x kubejs:deep_dark_data"
+                "8x kubejs:deep_dark_data"
             )
             .itemOutputs(
-                "64x minecraft:sculk_catalyst",
-                "64x minecraft:gold_block",
-                "64x gtceu:silver_block",
-                "64x minecraft:diamond_block",
-                "32x gtceu:platinum_block",
-                "8x gtceu:ruthenium_block"
+                "32x minecraft:sculk_catalyst",
+                "32x minecraft:gold_block",
+                "32x gtceu:silver_block",
+                "32x minecraft:diamond_block",
+                "16x gtceu:platinum_block",
+                "4x gtceu:ruthenium_block"
             )
     })
 
@@ -67,14 +67,13 @@ ServerEvents.recipes(event => {
                 "16x kubejs:quantum_flux",
                 "64x gtceu:dilithium_gem",
                 "4x minecraft:sculk_catalyst",
-                "24x kubejs:deep_dark_data"
+                "12x kubejs:deep_dark_data"
             )
             .itemOutputs(
-                "16x kubejs:warden_heart",
-                "48x minecraft:sculk_catalyst",
+                "8x kubejs:warden_heart",
+                "24x minecraft:sculk_catalyst",
                 "64x kubejs:warden_horn",
-                "64x kubejs:warden_horn",
-                "64x kubejs:warden_horn",
+                "32x kubejs:warden_horn",
             )
     })
 
@@ -88,10 +87,9 @@ ServerEvents.recipes(event => {
                 "kubejs:lair_of_the_warden_data"
             )
             .itemOutputs(
-                "6x kubejs:hadal_shard",
+                "4x kubejs:hadal_shard",
                 "64x minecraft:sculk_catalyst",
-                "48x minecraft:sculk_catalyst",
-                "64x kubejs:warden_horn",
+                "32x minecraft:sculk_catalyst",
                 "64x kubejs:warden_horn",
                 "64x kubejs:warden_horn",
                 "64x kubejs:warden_horn",
@@ -104,16 +102,13 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "32x kubejs:quantum_flux",
                 "64x gtceu:dilithium_gem",
-                "32x kubejs:dragon_lair_data"
+                "16x kubejs:dragon_lair_data"
             )
             .itemOutputs(
                 "64x minecraft:dragon_egg",
-                "64x minecraft:dragon_egg",
-                "64x minecraft:dragon_egg",
+                "32x minecraft:dragon_egg",
                 "64x kubejs:ender_dragon_scale",
-                "64x kubejs:ender_dragon_scale",
-                "64x kubejs:ender_dragon_scale",
-                "64x minecraft:dragon_breath",
+                "32x kubejs:ender_dragon_scale",
                 "64x minecraft:dragon_breath"
             )
     })
@@ -123,13 +118,13 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "32x kubejs:quantum_flux",
                 "64x gtceu:dilithium_gem",
-                "64x kubejs:wither_realm_data"
+                "32x kubejs:wither_realm_data"
             )
             .itemOutputs(
-                "16x gtceu:quantum_star",
-                "32x gtceu:quantum_eye",
+                "8x gtceu:quantum_star",
+                "16x gtceu:quantum_eye",
                 "1x gtceu:gravi_star",
-                "8x gtceu_neutronium_ingot"
+                "4x gtceu_neutronium_ingot"
             )
     })
 
@@ -150,15 +145,15 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:argon_plasma 5000")
-            .itemInputs("kubejs:gravity_well_generator", "kubejs:stellar_creation_data", "8x gtceu:neutron_reflector")
-            .itemOutputs("64x gtceu:neutronium_ingot")
+            .itemInputs("kubejs:gravity_well_generator", "kubejs:stellar_creation_data", "6x gtceu:neutron_reflector")
+            .itemOutputs("32x gtceu:neutronium_ingot")
     })
 
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:oxygen_plasma 10000")
-            .itemInputs("kubejs:gravity_well_generator", "16x kubejs:shattered_star_data", "64x gtceu:gravi_star", "64x gtceu:gravi_star")
-            .itemOutputs("32x kubejs:quasi_stable_neutron_star")
+            .itemInputs("kubejs:gravity_well_generator", "16x kubejs:shattered_star_data", "64x gtceu:gravi_star")
+            .itemOutputs("16x kubejs:quasi_stable_neutron_star")
     })
 
     // T10MM missions

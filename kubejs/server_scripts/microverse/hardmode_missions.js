@@ -12,12 +12,10 @@ ServerEvents.recipes(event => {
                 .inputFluids("minecraft:lava 4000")
                 .itemOutputs(
                     "64x minecraft:bone",
-                    "64x minecraft:bone",
-                    "64x minecraft:rotten_flesh",
                     "64x minecraft:rotten_flesh",
                     "32x minecraft:rotten_flesh",
-                    "64x minecraft:gunpowder",
-                    "32x minecraft:string"
+                    "32x minecraft:gunpowder",
+                    "16x minecraft:string"
                 )
         })
 
@@ -29,9 +27,8 @@ ServerEvents.recipes(event => {
                 )
                 .inputFluids("minecraft:lava 4000")
                 .itemOutputs(
-                    "64x minecraft:slime_ball",
-                    "32x minecraft:slime_ball",
-                    "48x kubejs:guardian_scale"
+                    "48x minecraft:slime_ball",
+                    "24x kubejs:guardian_scale"
                 )
         })
 
@@ -43,10 +40,10 @@ ServerEvents.recipes(event => {
                 )
                 .inputFluids("minecraft:lava 8000")
                 .itemOutputs(
-                    "50x minecraft:blaze_rod",
-                    "50x thermal:blizz_rod",
-                    "50x thermal:blitz_rod",
-                    "50x thermal:basalz_rod"
+                    "25x minecraft:blaze_rod",
+                    "25x thermal:blizz_rod",
+                    "25x thermal:blitz_rod",
+                    "25x thermal:basalz_rod"
                 )
         })
 
@@ -58,10 +55,9 @@ ServerEvents.recipes(event => {
                 )
                 .inputFluids("minecraft:lava 8000")
                 .itemOutputs(
-                    "48x minecraft:ghast_tear",
-                    "64x kubejs:wither_bone",
-                    "32x kubejs:wither_bone", // drops of evil aren"t in the pack
-                    "64x minecraft:magma_cream"
+                    "24x minecraft:ghast_tear",
+                    "48x kubejs:wither_bone", // drops of evil aren"t in the pack
+                    "32x minecraft:magma_cream"
                 )
         })
 
@@ -73,9 +69,9 @@ ServerEvents.recipes(event => {
                 )
                 .inputFluids("minecraft:lava 12000")
                 .itemOutputs(
-                    "24x enderio:enderman_head",
-                    "32x gtceu:ender_pearl_block",
-                    "64x minecraft:shulker_shell" // shulker pearls aren"t in the pack
+                    "12x enderio:enderman_head",
+                    "16x gtceu:ender_pearl_block",
+                    "32x minecraft:shulker_shell" // shulker pearls aren"t in the pack
                 )
         })
 
@@ -89,10 +85,8 @@ ServerEvents.recipes(event => {
                 .itemOutputs(
                     "64x kubejs:dragon_lair_data",
                     "64x kubejs:dragon_lair_data",
-                    "64x kubejs:dragon_lair_data",
-                    "64x kubejs:dragon_lair_data",
-                    "64x minecraft:dragon_breath",
-                    "64x kubejs:ender_dragon_scale",
+                    "32x minecraft:dragon_breath",
+                    "32x kubejs:ender_dragon_scale",
                 )
         })
 
@@ -105,9 +99,7 @@ ServerEvents.recipes(event => {
                 )
                 .itemOutputs(
                     "64x kubejs:ender_dragon_scale",
-                    "64x kubejs:ender_dragon_scale",
-                    "64x kubejs:ender_dragon_scale",
-                    "64x minecraft:dragon_breath",
+                    "32x kubejs:ender_dragon_scale",
                     "64x minecraft:dragon_breath"
                 )
         })
@@ -121,8 +113,7 @@ ServerEvents.recipes(event => {
                 )
                 .itemOutputs(
                     "64x kubejs:wither_realm_data",
-                    "64x kubejs:wither_realm_data",
-                    "48x gtceu:nether_star_block"
+                    "16x gtceu:nether_star_block"
                 )
         })
 
@@ -135,8 +126,7 @@ ServerEvents.recipes(event => {
                 )
                 .itemOutputs(
                     "64x kubejs:deep_dark_data",
-                    "64x kubejs:deep_dark_data",
-                    "32x kubejs:warden_horn"
+                    "16x kubejs:warden_horn"
                 )
         })
 
@@ -148,14 +138,10 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:duranium_drill_head")
                 .itemInputs("4x gtceu:neutron_reflector",)
                 .itemInputs(
-                    "12x gtceu:ruridit_block",
+                    "6x gtceu:ruridit_block",
                     "4x kubejs:warden_horn"
                 )
                 .itemOutputs(
-                    "64x gtceu:raw_darmstadtite",
-                    "64x gtceu:raw_darmstadtite",
-                    "64x gtceu:raw_darmstadtite",
-                    "64x gtceu:raw_darmstadtite",
                     "64x gtceu:raw_darmstadtite",
                     "64x gtceu:raw_darmstadtite",
                     "64x gtceu:raw_darmstadtite",
@@ -171,13 +157,10 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:duranium_drill_head")
                 .itemInputs("4x kubejs:gem_sensor")
                 .itemInputs(
-                    "12x gtceu:naquadah_block",
+                    "6x gtceu:naquadah_block",
                     "4x kubejs:warden_horn"
                 )
                 .itemOutputs(
-                    "64x gtceu:raw_dulysite",
-                    "64x gtceu:raw_dulysite",
-                    "64x gtceu:raw_dulysite",
                     "64x gtceu:raw_dulysite",
                     "64x gtceu:raw_dulysite",
                     "64x gtceu:raw_dulysite"
@@ -192,12 +175,10 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:duranium_drill_head")
                 .itemInputs("4x nuclearcraft:plate_du")
                 .itemInputs(
-                    "12x gtceu:uranium_block",
+                    "6x gtceu:uranium_block",
                     "4x kubejs:warden_horn"
                 )
                 .itemOutputs(
-                    "64x gtceu:raw_plutonium",
-                    "64x gtceu:raw_plutonium",
                     "64x gtceu:raw_plutonium",
                     "64x gtceu:raw_plutonium"
                 )
@@ -211,11 +192,6 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:duranium_drill_head")
                 .itemInputs("3x gtceu:tritanium_block")
                 .itemOutputs(
-                    "64x gtceu:raw_electrotine",
-                    "64x gtceu:raw_electrotine",
-                    "64x gtceu:raw_electrotine",
-                    "64x gtceu:raw_electrotine",
-                    "64x gtceu:raw_electrotine",
                     "64x gtceu:raw_electrotine",
                     "64x gtceu:raw_electrotine",
                     "64x gtceu:raw_electrotine",

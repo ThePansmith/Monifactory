@@ -34,12 +34,12 @@ ServerEvents.recipes(event => {
                 "kubejs:lair_of_the_warden_data"
             )
             .itemOutputs(
-                "64x kubejs:hadal_shard",
+                "48x kubejs:hadal_shard",
                 "64x kubejs:warden_heart",
                 "64x kubejs:warden_heart",
-                "64x kubejs:warden_heart",
+                "32x kubejs:warden_heart",
                 "64x kubejs:warden_horn",
-                "64x kubejs:warden_horn"
+                "48x kubejs:warden_horn"
             )
     })
 
@@ -78,15 +78,9 @@ ServerEvents.recipes(event => {
                 "kubejs:universal_collapse_device",
                 "kubejs:corrupted_universe_data",
                 "64x gtceu:gravi_star",
-                "64x gtceu:gravi_star",
-                "64x gtceu:gravi_star",
                 "64x gtceu:gravi_star"
             )
             .itemOutputs(
-                "64x kubejs:quasi_stable_neutron_star",
-                "64x kubejs:quasi_stable_neutron_star",
-                "64x kubejs:quasi_stable_neutron_star",
-                "64x kubejs:quasi_stable_neutron_star",
                 "64x kubejs:quasi_stable_neutron_star",
                 "64x kubejs:quasi_stable_neutron_star",
                 "64x kubejs:quasi_stable_neutron_star",
