@@ -242,6 +242,9 @@ JEIEvents.addItems(event => {
 
     // NuclearCraft
     event.add(["nuclearcraft:tough_alloy_ingot", "nuclearcraft:hard_carbon_ingot", "nuclearcraft:ferroboron_ingot", "nuclearcraft:rhodochrosite_dust"])
+
+    // Thermal
+    event.add("thermal:nuke_tnt")
 })
 
 JEIEvents.hideFluids(event => {

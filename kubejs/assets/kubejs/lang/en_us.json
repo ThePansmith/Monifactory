@@ -16,6 +16,8 @@
   "item.kubejs.microminer_t1.desc": "§7§oHarvests Titanium and other light metals from asteroids in the microverse.",
   "item.kubejs.microminer_t2": "§eTitanium Plated Micro Miner [Tier Two]",
   "item.kubejs.microminer_t2.desc": "§7§oHarvests Tungsten and other heavy metals from asteroids in the microverse.",
+  "item.kubejs.microminer_t2half": "§eDark Steel Plated Micro Mob Slayer [Tier Two and a Half]",
+  "item.kubejs.microminer_t2half.desc": "§7§oKills mobs in safer microverses and collects their skeletons and parts",
   "item.kubejs.microminer_t3": "§eTungsten Carbide Plated Micro Miner [Tier Three]",
   "item.kubejs.microminer_t3.desc": "§7§oHarvests ultra hot metals and gems from Nether microverses.",
   "item.kubejs.microminer_t4": "§eSignalum Plated Micro Miner [Tier Four]",
@@ -43,6 +45,7 @@
 
   "item.kubejs.stabilized_microminer_t1": "§dStabilized Steel Plated Micro Miner [Tier One]",
   "item.kubejs.stabilized_microminer_t2": "§dStabilized Titanium Plated Micro Miner [Tier Two]",
+  "item.kubejs.stabilized_microminer_t2half": "§dStabilized Dark Steel Plated Micro Mob Slayer [Tier Two and a Half]",
   "item.kubejs.stabilized_microminer_t3": "§dStabilized Tungsten Carbide Plated Micro Miner [Tier Three]",
   "item.kubejs.stabilized_microminer_t4": "§dStabilized Signalum Plated Micro Miner [Tier Four]",
   "item.kubejs.stabilized_microminer_t4half": "§dStabilized Lumium Plated Micro Mob Slayer [Tier Four and Half]",
@@ -58,18 +61,7 @@
   "item.kubejs.stabilized_microminer.tooltip.2": "§7§oLasts indefinitely. Reusable. Totally not overpowered.",
   "item.kubejs.stabilized_microminer.tooltip.3": "§7§oIt looks oddly familiar.",
 
-  "item.kubejs.pristine_matter_t1": "§dPristine Steel Microverse Matter [Tier One]",
-  "item.kubejs.pristine_matter_t2": "§dPristine Titanium Microverse Matter [Tier Two]",
-  "item.kubejs.pristine_matter_t3": "§dPristine Tungsten Microverse Matter [Tier Three]",
-  "item.kubejs.pristine_matter_t4": "§dPristine Signalum Microverse Matter [Tier Four]",
-  "item.kubejs.pristine_matter_t4half": "§dPristine Lumium Microverse Matter [Tier Four and a Half]",
-  "item.kubejs.pristine_matter_t5": "§dPristine Iridium Microverse Matter [Tier Five]",
-  "item.kubejs.pristine_matter_t6": "§dPristine Enderium Microverse Matter [Tier Six]",
-  "item.kubejs.pristine_matter_t7": "§dPristine Cryobulus Microverse Matter [Tier Seven]",
-  "item.kubejs.pristine_matter_t8": "§dPristine Crystal Microverse Matter [Tier Eight]",
-  "item.kubejs.pristine_matter_t8half": "§dPristine Trinium Microverse Matter [Tier Eight and a Half]",
-
-  "item.kubejs.pristine_matter.desc": "§7§oAn infinite and incomprehensible abyss of materials.",
+  "item.kubejs.damaged_microminer.tooltip": "§7§oCan be repaired in an assembler.",
 
   "item.kubejs.pulsating_dust": "Pulsating Dust",
   "item.kubejs.pulsating_mesh": "Pulsating Mesh",
@@ -360,7 +352,7 @@
   "item.kubejs.dark_soularium_thruster": "Dark Soularium Thruster",
   "item.kubejs.fluxed_thruster": "Fluxed Thruster",
   "item.kubejs.redstone_transmission_coil": "Redstone Transmission Coil",
-  
+
   "fluid.kubejs.molten_pyrotheum": "§6Blazing Pyrotheum",
   "fluid.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "fluid.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
@@ -544,7 +536,7 @@
   "travellersbootsreloaded.deprecation.tooltip": "Deprecated. Craft into an Exoskeleton!",
   "gtceu.sterilizing_filter_casing.tooltip": "Sterilized Cleanrooms can't be used as a \"regular\" Cleanroom. You'll want one of each.",
   "item.kubejs.infinity_dust_block.tooltip": "§7§oNot quite solid",
-  
+
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
   "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",
