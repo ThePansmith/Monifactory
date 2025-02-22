@@ -1,6 +1,8 @@
 /** Random small tags that don't fit anywhere else */
 ServerEvents.tags("item", event => {
-    event.add("curios:charm", /^gtceu:.*_battery$/)
+    event.get("gtceu:batteries").getObjectIds().forEach(resourceLoc => {
+        event.add("curios:charm", resourceLoc.toString())
+    })
 })
 
 ServerEvents.tags("block", event => {
