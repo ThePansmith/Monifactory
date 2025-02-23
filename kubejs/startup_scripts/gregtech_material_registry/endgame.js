@@ -76,6 +76,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("shiny")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
         .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
+
+    event.create("netherite_scrap")
+        .dust().ingot().ore(1, 3)
+        .color(0x6D473E)
+        .iconSet("dull")
+        .addOreByproducts(GTMaterials.Obsidian, GTMaterials.Obsidian, GTMaterials.RarestMetalMixture)
     event.create("activated_netherite")
         .ingot()
         .element(GTElements.get("activated_netherite"))

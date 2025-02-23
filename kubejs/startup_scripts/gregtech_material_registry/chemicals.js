@@ -165,6 +165,17 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xACB279)
         .components("2x carbon", "6x hydrogen", "1x sulfur")
 
+    // Uranic Solution (Actinium line)
+    event.create("uranic_solution")
+        .liquid()
+        .color(0xD3B53B)
+
+    // Lead Chloride (Actinium byproduct)
+    event.create("lead_chloride")
+        .dust()
+        .color(0x776E82).iconSet("rough")
+        .components("lead", "2x chlorine")
+
     // Saturated water (Eltz line midproduct)
     event.create("saturated_water")
         .liquid()

@@ -52,11 +52,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("molybdenum", "3x oxygen")
 
-    event.create("lead_chloride")
-        .dust()
-        .color(0xF3F3F3).iconSet("rough")
-        .components("lead", "2x chlorine")
-
     event.create("wollastonite")
         .dust()
         .color(0xF7F7E7).iconSet("bright")

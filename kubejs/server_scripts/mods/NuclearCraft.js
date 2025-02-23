@@ -88,10 +88,10 @@ ServerEvents.recipes(event => {
     decompdepleted("curium_hecm_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", "3x nuclearcraft:californium_251", "3x nuclearcraft:californium_252", GTValues.ZPM)
     decompdepleted("berkelium_leb_248", "nuclearcraft:californium_249", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:californium_252", GTValues.ZPM)
     decompdepleted("berkelium_heb_248", "nuclearcraft:californium_250", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("californium_lecf_249", "2x nuclearcraft:californium_250", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_hecf_249", "4x nuclearcraft:californium_250", "2x nuclearcraft:californium_251", "nuclearcraft:californium_252", "3x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_lecf_251", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "2x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_hecf_251", "2x nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "4x gtceu:actinium_nugget", GTValues.ZPM)
+    decompdepleted("californium_lecf_249", "2x nuclearcraft:californium_250", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "8x gtceu:actinium_nugget", GTValues.ZPM)
+    decompdepleted("californium_hecf_249", "4x nuclearcraft:californium_250", "2x nuclearcraft:californium_251", "nuclearcraft:californium_252", "12x gtceu:actinium_nugget", GTValues.ZPM)
+    decompdepleted("californium_lecf_251", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "8x gtceu:actinium_nugget", GTValues.ZPM)
+    decompdepleted("californium_hecf_251", "2x nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "16x gtceu:actinium_nugget", GTValues.ZPM)
 
 
     function cansolid(name, input) {
