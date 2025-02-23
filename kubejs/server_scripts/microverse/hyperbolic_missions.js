@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     })
 
     // T8MM mission
-    microverse_mission(event, 8, 4).forEach(builder => {
+    microverse_mission(event, 8, 4, undefined, undefined, 100).forEach(builder => {
         builder
             .itemInputs(
                 "64x kubejs:quantum_flux",

@@ -26,9 +26,9 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:diamond_drill_head")
             .itemInputs("kubejs:gem_sensor")
             .itemOutputs(
-                "32x gtceu:raw_diamond",
-                "48x gtceu:raw_apatite",
-                "32x gtceu:raw_tricalcium_phosphate",
+                "48x gtceu:raw_diamond",
+                "32x gtceu:raw_apatite",
+                "48x gtceu:raw_tricalcium_phosphate",
                 "32x gtceu:raw_quartzite"
             )
     })
@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
                 "32x gtceu:raw_cobaltite",
                 "8x gtceu:raw_magnesite",
                 "16x gtceu:raw_sphalerite",
-                "12x gtceu:raw_stibnite",
+                "20x gtceu:raw_stibnite",
             )
     })
 

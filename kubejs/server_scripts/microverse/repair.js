@@ -65,6 +65,7 @@ ServerEvents.recipes(event => {
         .chancedInput("kubejs:warp_engine", 5100, -1700)
         .chancedInput("kubejs:advanced_micro_miner_guidance_system", 4000, -2000)
         .chancedInput("kubejs:warp_core", 2400, -600)
+        .chancedInput("kubejs:warp_controller", 2400, -600)
 
     // Hardmode miners always need repairs for engaging in combat
     if(isHardMode) {
