@@ -309,11 +309,11 @@ ServerEvents.recipes(event => {
             "8x ae2:singularity",
             "4x gtceu:gravi_star",
             "kubejs:hadal_energy_core",
-            "1x gtceu:uv_field_generator",
+            "gtceu:zpm_field_generator",
             "12x redstone_arsenal:flux_plating",
-            "16x gtceu:osmiridium_foil",
+            "16x gtceu:enderium_foil",
             "16x gtceu:darmstadtium_bolt",
-            "4x gtceu:fusion_glass")
+            "5x gtceu:fusion_glass")
         .inputFluids("gtceu:soldering_alloy 1728", "gtceu:naquadria 576", "gtceu:polybenzimidazole 288")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UV])
@@ -328,11 +328,11 @@ ServerEvents.recipes(event => {
             "2x kubejs:gravity_well_generator",
             "16x thermal:nuke_tnt",
             "16x kubejs:quantum_flux",
-            "gtceu:uhv_field_generator",
+            "gtceu:uv_field_generator",
             "kubejs:universal_warp_core",
             "kubejs:universal_warp_controller",
             "4x kubejs:universe_resistant_neutronium_heavy_plating",
-            "16x gtceu:polyethyl_cyanoacrylate_foil"
+            "12x gtceu:styrene_butadiene_rubber_foil"
         )
         .inputFluids("gtceu:soldering_alloy 2304", "gtceu:crystal_matrix 576", "gtceu:microversium 1152")
         .duration(4000)
