@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:nitrogen_plasma 5000")
-            .itemInputs("gtceu:data_module", "gtceu:uhv_sensor")
+            .itemInputs("gtceu:data_module", "gtceu:uv_sensor")
             .itemInputs(
                 "64x kubejs:stellar_creation_data",
                 "64x kubejs:stellar_creation_data",
