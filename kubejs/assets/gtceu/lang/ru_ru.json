@@ -121,12 +121,12 @@
     "material.gtceu.lead_chloride": "Хлорид свинца",
     "material.gtceu.lead_metasilicate": "Метасиликат свинца",
     "material.gtceu.lumium": "Люмий",
-    "material.gtceu.mana": "Насыщенный маной",
+    "material.gtceu.mana": "§dПервичная мана",
     "material.gtceu.manganese_difluoride": "Дифторид марганца",
     "material.gtceu.manyullyn": "Манюллин",
     "material.gtceu.methyl_formate": "Метилформиат",
     "material.gtceu.microversium": "Микроверсиум",
-    "material.gtceu.mithril": "Насыщенный маной",
+    "material.gtceu.mithril": "Мифрил",
     "material.gtceu.molybdenum_trioxide": "Триоксид молибдена",
     "material.gtceu.monium": "Моний",
     "material.gtceu.mythril": "§bМеталл, насыщенный маной§r",
@@ -432,5 +432,7 @@
     "gtceu.jei.ore_vein.glacio/naquadah": "Жила Наквады (Гласио)",
     "gtceu.jei.ore_vein.glacio/thorium": "Жила Тория (Гласио)",
     "gtceu.jei.ore_vein.glacio/titanotungstate": "Жила Титановольфрамата (Гласио)",
-    "gtceu.jei.ore_vein.mars/tungstate": "Жила Ваольфрамата (Марс)"
+    "gtceu.jei.ore_vein.mars/tungstate": "Жила Ваольфрамата (Марс)",
+    "material.gtceu.netherite_scrap": "Древние обломки",
+    "material.gtceu.uranic_solution": "Урановый Раствор"
 }
