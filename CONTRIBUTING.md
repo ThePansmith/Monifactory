@@ -128,5 +128,4 @@ If you're updating mods, please make sure to test the basic functionality of eve
 It's easy to forget, but mod updates can break as many things as they fix - don't let that happen to Moni's updates as well!
 
 PERFORM THOROUGH CHECKS BEFORE UPDATING:
-- Crafting Station to 1.20.1-0
 - Thermal Systeams
