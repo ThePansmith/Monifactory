@@ -127,6 +127,6 @@ Optional Compatiblities for mods should be balanced so that they fit naturally i
 If you're updating mods, please make sure to test the basic functionality of every mod you're updating.
 It's easy to forget, but mod updates can break as many things as they fix - don't let that happen to Moni's updates as well!
 
-DO NOT UPDATE:
+PERFORM THOROUGH CHECKS BEFORE UPDATING:
 - Crafting Station to 1.20.1-0
 - Thermal Systeams
