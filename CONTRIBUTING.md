@@ -128,4 +128,7 @@ If you're updating mods, please make sure to test the basic functionality of eve
 It's easy to forget, but mod updates can break as many things as they fix - don't let that happen to Moni's updates as well!
 
 PERFORM THOROUGH CHECKS BEFORE UPDATING:
-- Thermal Systeams
+| Mod | Problems that result from updating |
+| ------------- | ------------- |
+| HammerLib  | Causes datapack errors when loading into existing worlds |
+| Solar Flux Reborn  | Depends on an updated HammerLib |

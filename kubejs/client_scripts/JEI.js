@@ -43,7 +43,7 @@ JEIEvents.hideItems(event => {
     event.hide("packagedexcrafting:ender_crafter")
 
     // Thermal
-    event.hide(["thermal:dynamo_stirling", "thermal:dynamo_disenchantment", "thermal:dynamo_lapidary", "systeams:numismatic_boiler", "systeams:magmatic_boiler", "systeams:compression_boiler", "systeams:gourmand_boiler", "systeams:lapidary_boiler", "systeams:disenchantment_boiler"])
+    event.hide(["thermal:dynamo_stirling", "thermal:dynamo_disenchantment", "thermal:dynamo_lapidary"])
     // event.hide(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3', 'thermal:upgrade_augment_4', 'thermal:dynamo_output_augment'])
     event.hide(["thermal:coal_coke", "thermal:coal_coke_block"])
     event.hide(["thermal:machine_furnace", "thermal:machine_sawmill", "thermal:machine_pulverizer", "thermal:machine_smelter", "thermal:machine_centrifuge", "thermal:machine_crucible", "thermal:machine_chiller", "thermal:machine_refinery", "thermal:machine_pyrolyzer", "thermal:machine_bottler", "thermal:machine_brewer", "thermal:machine_crystallizer", "thermal:device_xp_condenser"])
@@ -57,6 +57,10 @@ JEIEvents.hideItems(event => {
     event.hide("thermal:creosote_bucket")
     event.hide(/thermal:.*_cast/)
     event.hide(["thermal:sawdust", "thermal:sawdust_block"])
+
+    // Systeams
+    event.hide(["systeams:numismatic_boiler", "systeams:magmatic_boiler", "systeams:compression_boiler", "systeams:gourmand_boiler", "systeams:lapidary_boiler", "systeams:disenchantment_boiler"])
+    event.hide(["systeams:steamier_bucket", "systeams:steamiest_bucket", "systeams:steamiester_bucket", "systeams:steamiestest_ball"])
 
     // EnderIO
     event.hide(["enderio:conduit", "enderio:energy_conduit", "enderio:plant_matter_green", "enderio:plant_matter_brown", "enderio:clayed_glowstone", "enderio:flour", "enderio:organic_green_dye", "enderio:organic_brown_dye", "enderio:industrial_insulation_block", "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])
@@ -245,6 +249,10 @@ JEIEvents.addItems(event => {
 })
 
 JEIEvents.hideFluids(event => {
+
+    // Systeams
+    let systeamsHide = ["systeams:steamier", "systeams:steamiest", "systeams:steamiester", "systeams:steamiestest"]
+    systeamsHide.forEach(liquid => { event.hide(liquid) })
 
     // EnderIO
     let eioUseless = ["enderio:nutrient_distillation", "enderio:vapor_of_levity", "enderio:hootch", "enderio:rocket_fuel", "enderio:fire_water", "enderio:liquid_sunshine", "enderio:cloud_seed", "enderio:cloud_seed_concentrated"]

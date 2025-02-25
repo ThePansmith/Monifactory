@@ -19,13 +19,18 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__fireclay" })
 
     // Thermal
-    event.remove({ output: ["thermal:dynamo_stirling", "thermal:dynamo_lapidary", "thermal:dynamo_disenchantment", "systeams:numismatic_boiler", "systeams:stirling_boiler", "systeams:magmatic_boiler", "systeams:compression_boiler", "systeams:gourmand_boiler", "systeams:lapidary_boiler", "systeams:disenchantment_boiler", "thermal:constantan_coin"] })
+    event.remove({ output: ["thermal:dynamo_stirling", "thermal:dynamo_lapidary", "thermal:dynamo_disenchantment", "thermal:constantan_coin"] })
     event.remove({ id: /thermal:parts.*_gear/ })
     event.remove({ output: "thermal:rubber" })
     event.remove({ output: "thermal:cured_rubber" })
     event.remove({ input: "forge:nuggets/netherite" })
     event.remove({ id: "thermal:gunpowder_4" })
     event.remove({ id: "thermal:device_xp_condenser" })
+
+    // Systeams
+    event.remove({ output: ["systeams:numismatic_boiler", "systeams:stirling_boiler", "systeams:magmatic_boiler", "systeams:compression_boiler", "systeams:gourmand_boiler", "systeams:lapidary_boiler", "systeams:disenchantment_boiler"] })
+    event.remove([{ id: "systeams:boiling/steam" }, { id: "systeams:boiling/steamier"}, { id: "systeams:boiling/steamiest" }, { id: "systeams:boiling/steamiester"}])
+    event.remove([{ id: "systeams:steam_dynamo/steamier" }, { id: "systeams:steam_dynamo/steamiest" }, { id: "systeams:steam_dynamo/steamiester" }, { id: "systeams:steam_dynamo/steamiestest" }])
 
     // Redstone arsenal
     event.remove({ id: "redstone_arsenal:smelting/flux_ingot_from_dust_smelting" })
