@@ -14,9 +14,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         }
 
         replaceRecipe("peripheral_casing", [
-            'CMC',
-            'SLS',
-            'CMC'
+            "CMC",
+            "SLS",
+            "CMC"
         ], {
             C: "computercraft:cable",
             M: "computercraft:wired_modem",
@@ -25,9 +25,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         })
 
         replaceRecipe("chat_box", [
-            'BEB',
-            'PCP',
-            'ASA'
+            "BEB",
+            "PCP",
+            "ASA"
         ], {
             B: "minecraft:book",
             E: "gtceu:mv_emitter",
@@ -38,9 +38,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         })
 
         replaceRecipe("energy_detector", [
-            'C C',
-            'TPT',
-            'C C'
+            "C C",
+            "TPT",
+            "C C"
         ], {
             C: "gtceu:copper_single_cable",
             T: "gtceu:mv_transformer_1a",
@@ -50,9 +50,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         event.remove({ id: `${modid}:environment_detector` })
         const envDetectorRecipe = (plate) => {
             event.shaped(`${modid}:environment_detector`, [
-                'PSP',
-                'SCS',
-                'DSD'
+                "PSP",
+                "SCS",
+                "DSD"
             ], {
                 P: plate,
                 S: "gtceu:lv_sensor",
@@ -65,9 +65,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         envDetectorRecipe("gtceu:quartzite_plate")
 
         replaceRecipe("player_detector", [
-            'OSO',
-            'PCP',
-            'MSM'
+            "OSO",
+            "PCP",
+            "MSM"
         ], {
             O: "minecraft:observer",
             S: "gtceu:mv_sensor",
@@ -77,9 +77,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         })
 
         replaceRecipe("inventory_manager", [
-            'WEW',
-            'RPR',
-            'FCF'
+            "WEW",
+            "RPR",
+            "FCF"
         ], {
             W: "ae2:wireless_receiver",
             E: "minecraft:ender_pearl",
@@ -90,9 +90,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         })
 
         replaceRecipe("block_reader", [
-            'PSP',
-            'ECM',
-            'PSP'
+            "PSP",
+            "ECM",
+            "PSP"
         ], {
             P: "gtceu:steel_plate",
             S: "gtceu:steel_screw",
@@ -102,9 +102,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         })
 
         replaceRecipe("nbt_storage", [
-            'PMP',
-            'SRS',
-            'PCP'
+            "PMP",
+            "SRS",
+            "PCP"
         ], {
             P: "gtceu:steel_plate",
             M: "computercraft:wired_modem",
@@ -114,9 +114,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         })
 
         replaceRecipe("geo_scanner", [
-            'SPS',
-            'CRC',
-            'SDS'
+            "SPS",
+            "CRC",
+            "SDS"
         ], {
             S: "gtceu:steel_screw",
             P: "gtceu:prospector.lv",
@@ -126,9 +126,9 @@ if (Platform.isLoaded(modid) && Platform.isLoaded("computercraft")) {
         })
 
         replaceRecipe("me_bridge", [
-            'GIG',
-            'SCS',
-            'GTG'
+            "GIG",
+            "SCS",
+            "GTG"
         ], {
             G: "ae2:fluix_glass_cable",
             I: "ae2:interface",

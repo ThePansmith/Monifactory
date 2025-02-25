@@ -197,7 +197,6 @@
 				""
 				"{moni.quest.5B6811964444497F.description4}"
 			]
-			icon: "gtceu:lv_machine_hull"
 			id: "5B6811964444497F"
 			min_required_dependencies: 1
 			rewards: [{
@@ -206,6 +205,7 @@
 				xp_levels: 5
 			}]
 			tasks: [{
+				icon: "kubejs:lv_universal_circuit"
 				id: "6DFE042FD9FCC8D1"
 				item: {
 					Count: 1
@@ -218,7 +218,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5B6811964444497F.title}"
-			x: -8.0d
+			x: -9.5d
 			y: -5.5d
 		}
 		{
@@ -233,7 +233,6 @@
 				""
 				"{moni.quest.1510DC51CDC3F609.description2}"
 			]
-			icon: "gtceu:mv_machine_hull"
 			id: "1510DC51CDC3F609"
 			rewards: [{
 				id: "19D2362986C4A604"
@@ -241,6 +240,7 @@
 				xp_levels: 5
 			}]
 			tasks: [{
+				icon: "kubejs:mv_universal_circuit"
 				id: "51CD461474675310"
 				item: {
 					Count: 1
@@ -268,7 +268,6 @@
 				""
 				"{moni.quest.01CC71429CFCAE0B.description2}"
 			]
-			icon: "gtceu:hv_machine_hull"
 			id: "01CC71429CFCAE0B"
 			rewards: [{
 				id: "5B1E3663222FD07B"
@@ -276,6 +275,7 @@
 				xp_levels: 5
 			}]
 			tasks: [{
+				icon: "kubejs:hv_universal_circuit"
 				id: "75DC170D1A2B3236"
 				item: {
 					Count: 1
@@ -303,7 +303,6 @@
 				""
 				"{moni.quest.22B3F2351CB4B7D8.description2}"
 			]
-			icon: "gtceu:ev_machine_hull"
 			id: "22B3F2351CB4B7D8"
 			rewards: [{
 				id: "08C1BE8B4DB28C99"
@@ -311,6 +310,7 @@
 				xp_levels: 5
 			}]
 			tasks: [{
+				icon: "kubejs:ev_universal_circuit"
 				id: "53B9C726DD479B51"
 				item: {
 					Count: 1
@@ -339,9 +339,9 @@
 				""
 				"{moni.quest.2179B83440CEF343.description2}"
 			]
-			icon: "gtceu:iv_machine_hull"
 			id: "2179B83440CEF343"
 			tasks: [{
+				icon: "kubejs:iv_universal_circuit"
 				id: "4FBA73EEA5437DC6"
 				item: {
 					Count: 1
@@ -374,9 +374,9 @@
 				""
 				"{moni.quest.536CEDA3142BCE63.description4}"
 			]
-			icon: "gtceu:luv_machine_hull"
 			id: "536CEDA3142BCE63"
 			tasks: [{
+				icon: "kubejs:luv_universal_circuit"
 				id: "42DE11F1A04B0B97"
 				item: {
 					Count: 1
@@ -402,9 +402,9 @@
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.0472A05CFBF4A2F0.description1}"]
 			disable_toast: true
-			icon: "gtceu:zpm_machine_hull"
 			id: "0472A05CFBF4A2F0"
 			tasks: [{
+				icon: "kubejs:zpm_universal_circuit"
 				id: "29F9B9784EDCAC70"
 				item: {
 					Count: 1
@@ -429,9 +429,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.519A11FDC6A7EF21.description1}"]
-			icon: "gtceu:uv_machine_hull"
 			id: "519A11FDC6A7EF21"
 			tasks: [{
+				icon: "kubejs:uv_universal_circuit"
 				id: "5D3D61A04CC17374"
 				item: {
 					Count: 1
@@ -450,9 +450,9 @@
 		{
 			dependencies: ["01E542E1C9DAF5B4"]
 			description: ["{moni.quest.0C50D78D8F63CAFE.description1}"]
-			icon: "gtceu:uhv_machine_hull"
 			id: "0C50D78D8F63CAFE"
 			tasks: [{
+				icon: "kubejs:uhv_universal_circuit"
 				id: "23886E0727C34288"
 				item: {
 					Count: 1
@@ -1094,6 +1094,7 @@
 			dependencies: [
 				"5054D3FA7E96EB83"
 				"1E36AFB19932C805"
+				"2AEC486DC700133F"
 			]
 			description: ["{moni.quest.4612D36D22AB4B34.description1}"]
 			id: "4612D36D22AB4B34"
@@ -1146,7 +1147,6 @@
 		{
 			dependencies: ["5601A05D8361551D"]
 			description: ["{moni.quest.11FDFB08CD48D66E.description1}"]
-			icon: "gtceu:max_machine_hull"
 			id: "11FDFB08CD48D66E"
 			subtitle: "{moni.quest.11FDFB08CD48D66E.subtitle}"
 			tasks: [{
@@ -1171,9 +1171,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.4177C4BD329C38DA.description1}"]
-			icon: "gtceu:uiv_machine_hull"
 			id: "4177C4BD329C38DA"
 			tasks: [{
+				icon: "kubejs:uiv_universal_circuit"
 				id: "168A6D29177E8DBD"
 				item: {
 					Count: 1
@@ -1196,9 +1196,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.0B923E8ED6161CA8.description1}"]
-			icon: "gtceu:uev_machine_hull"
 			id: "0B923E8ED6161CA8"
 			tasks: [{
+				icon: "kubejs:uev_universal_circuit"
 				id: "19787E3988B87A4B"
 				item: {
 					Count: 1
@@ -1246,6 +1246,7 @@
 				"7979D07FBDC6D170"
 				"68734C70E2D19616"
 				"1E36AFB19932C805"
+				"11124D8CC9403E67"
 			]
 			description: ["{moni.quest.5A8D2BFAF02E6325.description1}"]
 			id: "5A8D2BFAF02E6325"
@@ -2667,6 +2668,1048 @@
 			title: "{moni.quest.54B7849F647CE74B.title}"
 			x: 22.0d
 			y: 13.0d
+		}
+		{
+			dependencies: [
+				"1510DC51CDC3F609"
+				"5C4E189A3E401566"
+			]
+			description: [
+				"{moni.quest.6C028CD89745098E.description1}"
+				""
+				"{moni.quest.6C028CD89745098E.description2}"
+			]
+			icon: "gtceu:mv_machine_hull"
+			id: "6C028CD89745098E"
+			rewards: [{
+				id: "3D0C6CDEED481E30"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:alumnium"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2A5B75587F16782E"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:mv_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.6C028CD89745098E.title}"
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2179B83440CEF343"
+				"605062720747B482"
+			]
+			description: [
+				"{moni.quest.6E27637A9C94A0AA.description1}"
+				""
+				"{moni.quest.6E27637A9C94A0AA.description2}"
+			]
+			icon: "gtceu:iv_machine_hull"
+			id: "6E27637A9C94A0AA"
+			rewards: [{
+				id: "2C123B7485932F5B"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:tungstensteel"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4E566F8EF19BE210"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:iv_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.6E27637A9C94A0AA.title}"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5B6811964444497F"
+				"604CCBE824D03A74"
+			]
+			description: [
+				"{moni.quest.61CC4AD6FAE15248.description1}"
+				""
+				"{moni.quest.61CC4AD6FAE15248.description2}"
+			]
+			icon: "gtceu:lv_machine_hull"
+			id: "61CC4AD6FAE15248"
+			rewards: [{
+				id: "424A2A6FAB412F69"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:steel"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "04444449DCA34F30"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:lv_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.61CC4AD6FAE15248.title}"
+			x: -10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"01CC71429CFCAE0B"
+				"15E34DEC491FAB81"
+			]
+			description: [
+				"{moni.quest.48CAEBEE83D7C791.description1}"
+				""
+				"{moni.quest.48CAEBEE83D7C791.description2}"
+			]
+			icon: "gtceu:hv_machine_hull"
+			id: "48CAEBEE83D7C791"
+			rewards: [{
+				id: "547F553BA6D87D63"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:stainless"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1FEF896D9E8055D5"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:hv_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.48CAEBEE83D7C791.title}"
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"22B3F2351CB4B7D8"
+				"785C6332FC7A07A5"
+			]
+			description: [
+				"{moni.quest.30AAFB97813DEB6C.description1}"
+				""
+				"{moni.quest.30AAFB97813DEB6C.description2}"
+			]
+			icon: "gtceu:ev_machine_hull"
+			id: "30AAFB97813DEB6C"
+			rewards: [{
+				id: "21935100523DBD85"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:titanium"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "01AFBFF0D9532F27"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:ev_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.30AAFB97813DEB6C.title}"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"536CEDA3142BCE63"
+				"76BAC72CC89F390E"
+			]
+			description: [
+				"{moni.quest.646B8CD10787D899.description1}"
+				""
+				"{moni.quest.646B8CD10787D899.description2}"
+			]
+			icon: "gtceu:luv_machine_hull"
+			id: "646B8CD10787D899"
+			rewards: [{
+				id: "12C3AFEE397AB67E"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:rhodiumplated"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "553B2A8341469AE8"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:luv_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.646B8CD10787D899.title}"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0472A05CFBF4A2F0"
+				"217F85D6FE2A467D"
+			]
+			description: [
+				"{moni.quest.11B25506F679ACBD.description1}"
+				""
+				"{moni.quest.11B25506F679ACBD.description2}"
+			]
+			icon: "gtceu:zpm_machine_hull"
+			id: "11B25506F679ACBD"
+			rewards: [{
+				id: "5DDE0D9210D6C69A"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:naquadahalloy"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "52571DFFC6CB4D85"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:zpm_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.11B25506F679ACBD.title}"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"519A11FDC6A7EF21"
+				"5BADF536443E712D"
+			]
+			description: [
+				"{moni.quest.4B497D256FB3983F.description1}"
+				""
+				"{moni.quest.4B497D256FB3983F.description2}"
+			]
+			icon: "gtceu:uv_machine_hull"
+			id: "4B497D256FB3983F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "088FB8F945D0645E"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:uv_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.4B497D256FB3983F.title}"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0C50D78D8F63CAFE"]
+			description: [
+				"{moni.quest.0A34290F579BB4E2.description1}"
+				""
+				"{moni.quest.0A34290F579BB4E2.description2}"
+			]
+			icon: "gtceu:uhv_machine_hull"
+			id: "0A34290F579BB4E2"
+			rewards: [{
+				id: "6F66A7A256F1CDF0"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:neutronium"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "{moni.quest.0A34290F579BB4E2.subtitle}"
+			tasks: [{
+				id: "2A4AFA6140DAFF4D"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:uhv_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.0A34290F579BB4E2.title}"
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B923E8ED6161CA8"]
+			description: [
+				"{moni.quest.63812416270292A4.description1}"
+				""
+				"{moni.quest.63812416270292A4.description2}"
+			]
+			icon: "gtceu:uev_machine_hull"
+			id: "63812416270292A4"
+			rewards: [{
+				id: "2169FFE4F0E13079"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:omnium"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "22F57F4F6D41251B"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:uev_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.63812416270292A4.title}"
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4177C4BD329C38DA"]
+			description: [
+				"{moni.quest.60D863C48FBFF5A3.description1}"
+				""
+				"{moni.quest.60D863C48FBFF5A3.description2}"
+			]
+			icon: "gtceu:uiv_machine_hull"
+			id: "60D863C48FBFF5A3"
+			rewards: [{
+				id: "06AC64386F130936"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:infinity"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1BE926FEF23604CB"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:uiv_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.60D863C48FBFF5A3.title}"
+			x: 4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["11FDFB08CD48D66E"]
+			description: [
+				"{moni.quest.1A6F087E10DC036E.description1}"
+				""
+				"{moni.quest.1A6F087E10DC036E.description2}"
+			]
+			icon: "gtceu:max_machine_hull"
+			id: "1A6F087E10DC036E"
+			rewards: [{
+				id: "7B4AFAFC88D8805C"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:monium"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4BB940DD5512BB62"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:block"
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:id_regex"
+											tag: {
+												value: "energy_(input|output)_hatch"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:not"
+											tag: {
+												items: [{
+													Count: 1b
+													id: "itemfilters:id_regex"
+													tag: {
+														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
+													}
+												}]
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:id_regex"
+								tag: {
+									value: "^gtceu:max_"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.1A6F087E10DC036E.title}"
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["07057CDE4E021BA7"]
+			description: [
+				"{moni.quest.0148FC824CC8556A.description1}"
+				""
+				"{moni.quest.0148FC824CC8556A.description2}"
+				""
+				"{moni.quest.0148FC824CC8556A.description3}"
+			]
+			icon: "gtceu:uhv_circuit_assembler"
+			id: "2AEC486DC700133F"
+			rewards: [{
+				id: "613691AB5C173950"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0148FC824CC8556A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uhv_circuit_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_energy_input_hatch"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.0148FC824CC8556A.title}"
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1B1D3A66B847D129"]
+			description: [
+				"{moni.quest.11124D8CC9403E67.description1}"
+				""
+				"{moni.quest.11124D8CC9403E67.description2}"
+				""
+				"{moni.quest.11124D8CC9403E67.description3}"
+			]
+			icon: "gtceu:uev_circuit_assembler"
+			id: "11124D8CC9403E67"
+			rewards: [{
+				id: "244D78771B0B736F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0B14FA192342C834"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uev_circuit_assembler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uev_energy_input_hatch"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.11124D8CC9403E67.title}"
+			x: 8.5d
+			y: -7.0d
 		}
 	]
 	title: "{moni.chapter.395B849AC6294153.title}"

@@ -29,12 +29,12 @@ export default ESLintUtils.RuleCreator.withoutDocs({
                     return
 
                 // Space after ( and before first argument
-                if(node.callee.range[1]+1 !== result.range[0])
+                if(node.callee.range[1] + 1 !== result.range[0])
                     context.report({
                         messageId: "space-before-result",
                         node: result,
                         fix: (fixer) => [
-                            fixer.removeRange([node.callee.range[1]+1, result.range[0]])
+                            fixer.removeRange([node.callee.range[1] + 1, result.range[0]])
                         ]
                     })
 
@@ -59,12 +59,12 @@ export default ESLintUtils.RuleCreator.withoutDocs({
                     })
 
                 // Space after third argument and before )
-                if(ingredients.range[1]+1 !== node.range[1])
+                if(ingredients.range[1] + 1 !== node.range[1])
                     context.report({
                         messageId: "space-after-ingredients",
                         node: ingredients,
                         fix: (fixer) => [
-                            fixer.removeRange([ingredients.range[1], node.range[1]-1])
+                            fixer.removeRange([ingredients.range[1], node.range[1] - 1])
                         ]
                     })
             }

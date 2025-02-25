@@ -11,9 +11,9 @@ const builderName = "FactoryBlockPattern"
 
 /** @type {Record<string, string>} */
 const rulePredicateCode = {
-    '@': `Predicates.controller(Predicates.blocks(${builderFactoryArgs}.get()))`,
-    '#': "Predicates.any()",
-    ' ': "Predicates.air()",
+    "@": `Predicates.controller(Predicates.blocks(${builderFactoryArgs}.get()))`,
+    "#": "Predicates.any()",
+    " ": "Predicates.air()",
 }
 
 /**
@@ -45,7 +45,7 @@ export default ESLintUtils.RuleCreator.withoutDocs({
             "not-2-args": "A 'where' call should have 2 arguments.",
             ...Object.fromEntries(
                 Object.entries(rulePredicateCode).map(([char, code]) => [
-                    "predicate-for-"+char, `The predicate for '${char}' should be ${code}`
+                    "predicate-for-" + char, `The predicate for '${char}' should be ${code}`
                 ])
             ),
 
@@ -87,7 +87,7 @@ export default ESLintUtils.RuleCreator.withoutDocs({
                 if(predicateCodeShouldBe && predicateCodeActual !== predicateCodeShouldBe)
                     context.report({
                         // @ts-ignore It's not smart enough
-                        messageId: "predicate-for-"+char.value,
+                        messageId: "predicate-for-" + char.value,
                         node: predicate,
                         fix: fixer => [
                             fixer.replaceText(predicate, predicateCodeShouldBe)

@@ -1,10 +1,10 @@
 // @ts-check
-import { basename, dirname, join } from 'path';
-import Juke from 'juke-build';
-import fs from 'fs';
-import { readDatafileJSON, writeDatafileJSON } from '../../lib/json_datafile.js';
-import { UDTransform } from './en_ud.js';
-import { fileURLToPath } from 'url';
+import { basename, dirname, join } from "path";
+import Juke from "juke-build";
+import fs from "fs";
+import { readDatafileJSON, writeDatafileJSON } from "../../lib/json_datafile.js";
+import { UDTransform } from "./en_ud.js";
+import { fileURLToPath } from "url";
 import z from "zod";
 
 /**
@@ -15,8 +15,8 @@ import z from "zod";
 const getAllInputLangsAndOutputLangs = (name, newName) =>
     fs
         .readdirSync(
-            fileURLToPath(import.meta.resolve('../../')),
-            { recursive: true, encoding: 'utf8' }
+            fileURLToPath(import.meta.resolve("../../")),
+            { recursive: true, encoding: "utf8" }
         )
         .filter((filePath) => basename(filePath) === name)
         .map((filePath) => ({
@@ -24,8 +24,8 @@ const getAllInputLangsAndOutputLangs = (name, newName) =>
             out: join(dirname(filePath), newName),
         }));
 
-const UDLocal = getAllInputLangsAndOutputLangs('en_us.local', 'en_ud.local');
-const UDJSON = getAllInputLangsAndOutputLangs('en_us.json', 'en_ud.json');
+const UDLocal = getAllInputLangsAndOutputLangs("en_us.local", "en_ud.local");
+const UDJSON = getAllInputLangsAndOutputLangs("en_us.json", "en_ud.json");
 
 const allFiles = [
     UDLocal,
@@ -39,10 +39,10 @@ export const CodegenLangsTarget = new Juke.Target({
         for (const { in: original, out: generated } of UDLocal) {
             // Transforms *.local fancymenu translation files
             const UD = fs
-                .readFileSync(original, { encoding: 'utf8' })
+                .readFileSync(original, { encoding: "utf8" })
             // This regex matches translation values and captures them trimmed
                 .replaceAll(/(?<=^[^\s]+\s+=\s)\s*(.+)$/gm, (_, english) => UDTransform(english));
-            fs.writeFileSync(generated, UD, { encoding: 'utf8' });
+            fs.writeFileSync(generated, UD, { encoding: "utf8" });
         }
 
         const translationFileSchema = z.record(z.string(), z.string())

@@ -70,6 +70,7 @@ jobs:
         env:
           CFCORE_API_TOKEN: ${{ secrets.API_TOKEN }}
         run: |
+          ./pack-mode-switcher.sh n
           cd tools/build
           npm install
           node . ${{ inputs.target }}
