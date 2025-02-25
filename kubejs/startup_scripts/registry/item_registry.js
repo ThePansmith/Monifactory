@@ -522,4 +522,7 @@ StartupEvents.registry("item", event => {
             .tooltip("§7A Universal Circuit")
             .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
     })
+
+    // Phantom Paste
+    event.create("framedblocks:phantom_paste")
 })
