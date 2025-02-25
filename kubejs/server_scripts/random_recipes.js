@@ -934,11 +934,11 @@ ServerEvents.recipes(event => {
 
     // Phantom Paste
     event.shaped("framedblocks:phantom_paste", [
-            'SSS',
-            'SCS',
-            'SSS'
-        ], {
-            S: "#forge:slimeballs",
-            C: "minecraft:chorus_fruit",
-        })
+        "SSS",
+        "SCS",
+        "SSS"
+    ], {
+        S: "#forge:slimeballs",
+        C: "minecraft:chorus_fruit",
+    })
 })

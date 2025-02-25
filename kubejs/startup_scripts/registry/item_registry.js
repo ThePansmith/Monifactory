@@ -523,6 +523,6 @@ StartupEvents.registry("item", event => {
             .textureJson({ layer0: `kubejs:item/circuits/universal/${universal_circuit}_universal_circuit` })
     })
 
-    // Phatom Paste
-    event.create('framedblocks:phantom_paste')
+    // Phantom Paste
+    event.create("framedblocks:phantom_paste")
 })
