@@ -173,9 +173,6 @@ ItemEvents.tooltip(tooltip => {
     // EIO Cap Banks
     tooltip.add(/^enderio:.*_bank$/, Text.red(Text.translatable("enderio.cap_bank.tooltip")));
 
-    // Travellers' Boots
-    tooltip.add(/travellersbootsreloaded/, Text.red(Text.translatable("travellersbootsreloaded.deprecation.tooltip")))
-
     // Exoskeleton Legs
     tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.gray(Text.translatable("kubejs.exoskeleton_legs.tooltip")))
 
