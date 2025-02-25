@@ -5,8 +5,8 @@
 
 import { ESLintUtils } from "@typescript-eslint/utils"
 
-const defaultHeaderContent = "*\r\n * Describe this file here!\r\n "
-const defaultHeader = `/*${defaultHeaderContent}*/\r\n\r\n`
+const defaultHeaderContent = "*\n * Describe this file here!\n "
+const defaultHeader = `/*${defaultHeaderContent}*/\n\n`
 
 
 export default ESLintUtils.RuleCreator.withoutDocs({
@@ -15,8 +15,8 @@ export default ESLintUtils.RuleCreator.withoutDocs({
         hasSuggestions: true,
         fixable: "code",
         messages: {
-            "no-header": "Label things with comments! "+
-                "Every file should have a C-style comment at the top explaining what that file does "+
+            "no-header": "Label things with comments! " +
+                "Every file should have a C-style comment at the top explaining what that file does " +
                 "(Reference existing files if you don't know what that is).",
             "default-header": "Describe what this file does. If there is a good reason not to, replace this with /**/"
         },

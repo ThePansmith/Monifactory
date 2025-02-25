@@ -7,6 +7,6 @@ const travellers_boots = ["travellersbootsreloaded:travellers_boots_tier1", "tra
 ServerEvents.recipes(event => {
     travellers_boots.forEach((item, tier) => {
         event.remove({ output: item })
-        event.shapeless(`kubejs:${GTValues.VN[tier+1].toLowerCase()}_exoskeleton_legs`, [item])
+        event.shapeless(`kubejs:${GTValues.VN[tier + 1].toLowerCase()}_exoskeleton_legs`, [item])
     })
 })
