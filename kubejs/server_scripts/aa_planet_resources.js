@@ -95,10 +95,10 @@ LootJS.modifiers((event) => {
     if(isHardMode) {
         // Hard Mode regolith dust. Less loot than Normal Mode.
         
-        const moonDustFortune = LootEntry.of('kubejs:moon_dust').applyOreBonus("minecraft:fortune")
-        const marsDustFortune = LootEntry.of('kubejs:mars_dust').applyOreBonus("minecraft:fortune")
-        const venusDustFortune = LootEntry.of('kubejs:venus_dust').applyOreBonus("minecraft:fortune")
-        const mercuryDustFortune = LootEntry.of('kubejs:mercury_dust').applyOreBonus("minecraft:fortune")
+        const moonDustFortune = LootEntry.of("kubejs:moon_dust").applyOreBonus("minecraft:fortune")
+        const marsDustFortune = LootEntry.of("kubejs:mars_dust").applyOreBonus("minecraft:fortune")
+        const venusDustFortune = LootEntry.of("kubejs:venus_dust").applyOreBonus("minecraft:fortune")
+        const mercuryDustFortune = LootEntry.of("kubejs:mercury_dust").applyOreBonus("minecraft:fortune")
 
         event.addBlockLootModifier(/.*moon_.*_ore$/).randomChance(0.3).addLoot(moonDustFortune);
         event.addBlockLootModifier(/.*mars_.*_ore$/).randomChance(0.3).addLoot(marsDustFortune);
@@ -107,10 +107,10 @@ LootJS.modifiers((event) => {
     } else if (isExpertMode) {
         // Expert Mode regolith dust. Less loot than Hard Mode.
 
-        const moonDustFortune = LootEntry.of('kubejs:moon_dust').applyOreBonus("minecraft:fortune")
-        const marsDustFortune = LootEntry.of('kubejs:mars_dust').applyOreBonus("minecraft:fortune")
-        const venusDustFortune = LootEntry.of('kubejs:venus_dust').applyOreBonus("minecraft:fortune")
-        const mercuryDustFortune = LootEntry.of('kubejs:mercury_dust').applyOreBonus("minecraft:fortune")
+        const moonDustFortune = LootEntry.of("kubejs:moon_dust").applyOreBonus("minecraft:fortune")
+        const marsDustFortune = LootEntry.of("kubejs:mars_dust").applyOreBonus("minecraft:fortune")
+        const venusDustFortune = LootEntry.of("kubejs:venus_dust").applyOreBonus("minecraft:fortune")
+        const mercuryDustFortune = LootEntry.of("kubejs:mercury_dust").applyOreBonus("minecraft:fortune")
 
         event.addBlockLootModifier(/.*moon_.*_ore$/).randomChance(0.10).addLoot(moonDustFortune);
         event.addBlockLootModifier(/.*mars_.*_ore$/).randomChance(0.10).addLoot(marsDustFortune);
@@ -119,10 +119,10 @@ LootJS.modifiers((event) => {
     } else {
         // Normal Mode regolith dust. Now with fortune to be close to GT Ores.
 
-        const moonDustFortune = LootEntry.of('kubejs:moon_dust').applyOreBonus("minecraft:fortune")
-        const marsDustFortune = LootEntry.of('kubejs:mars_dust').applyOreBonus("minecraft:fortune")
-        const venusDustFortune = LootEntry.of('kubejs:venus_dust').applyOreBonus("minecraft:fortune")
-        const mercuryDustFortune = LootEntry.of('kubejs:mercury_dust').applyOreBonus("minecraft:fortune")
+        const moonDustFortune = LootEntry.of("kubejs:moon_dust").applyOreBonus("minecraft:fortune")
+        const marsDustFortune = LootEntry.of("kubejs:mars_dust").applyOreBonus("minecraft:fortune")
+        const venusDustFortune = LootEntry.of("kubejs:venus_dust").applyOreBonus("minecraft:fortune")
+        const mercuryDustFortune = LootEntry.of("kubejs:mercury_dust").applyOreBonus("minecraft:fortune")
 
         event.addBlockLootModifier(/.*moon_.*_ore$/).randomChance(0.63).addLoot(moonDustFortune);
         event.addBlockLootModifier(/.*mars_.*_ore$/).randomChance(0.63).addLoot(marsDustFortune);
