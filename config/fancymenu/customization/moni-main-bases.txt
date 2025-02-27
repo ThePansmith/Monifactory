@@ -1,0 +1,86 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = menu_base_fullscreen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1736929804706
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:00cd08e7-f1fb-42a2-9ebc-dc4d75d1b4d7-1736929777623] = [groups:][instances:]
+}
+
+customization {
+  action = setscale
+  scale = 5.0
+}
+
+customization {
+  action = autoscale
+  basewidth = 2560
+  baseheight = 1440
+}
+
+menu_background {
+  slideshow_name = moni
+  background_type = slideshow
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
+  [executable_action_instance:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797][action_type:closegui] = 
+  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797;]
+  backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  hoverlabel = {"placeholder":"local","values":{"key":"moni_bases_screen_back_to_menu_button_hover"}}
+  label = {"placeholder":"local","values":{"key":"moni_bases_screen_back_to_menu_button"}}
+  navigatable = true
+  widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
+  [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = 5d375c62-bfc3-4e7b-b7b5-195bb92c9f93-1736925035991
+  custom_element_layer_name = Patreon
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1440
+  sticky_anchor = false
+  anchor_point = bottom-left
+  x = 0
+  y = -20
+  width = 100
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
+  [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
+}
+

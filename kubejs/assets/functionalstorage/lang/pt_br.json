@@ -1,0 +1,8 @@
+{
+    "item.functionalstorage.copper_upgrade": "Melhoria de bronze",
+    "item.functionalstorage.gold_upgrade": "Melhoria de aço",
+    "item.functionalstorage.diamond_upgrade": "Melhoria de alumínio",
+    "item.functionalstorage.netherite_upgrade": "Melhoria de aço inoxidável",
+    "block.functionalstorage.storage_controller": "Controlador de gaveta",
+    "block.functionalstorage.framed_storage_controller": "Controlador de gaveta emoldurado"
+  }

@@ -24,16 +24,12 @@
             "count": 32
         },
         {
-            "item": "minecraft:slime_block",
-            "count": 8
-        },
-        {
             "item": "gtceu:nickel_ingot",
             "count": 4
         },
         {
-            "item": "gtceu:platinum_credit",
-            "count": 1
+            "item": "gtceu:platinum_nugget",
+            "count": 3
         }
     ]
 }

@@ -1,3 +1,7 @@
+/**
+ * Define custom EnderIO conduit tiers and their flow rate
+ * using KubeJS-EnderIO.
+ */
 EnderIOEvents.conduits(event => {
     event.registerEnergyConduit("conductive_conduit", "Conductive Iron Energy Conduit", 512)
     event.registerEnergyConduit("energetic_conduit", "Energetic Alloy Energy Conduit", 2048)

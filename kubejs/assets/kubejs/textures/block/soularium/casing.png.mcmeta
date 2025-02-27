@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/soularium/casing_ctm"
+    }
+}

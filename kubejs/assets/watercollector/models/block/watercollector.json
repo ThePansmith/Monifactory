@@ -3,7 +3,7 @@
 	"render_type": "cutout",
 	"textures": {
 		"3": "gtceu:block/casings/voltage/ulv/side",
-		"4": "gtceu:block/casings/transparent/cleanroom_glass",
+		"4": "minecraft:block/glass",
 		"particle": "gtceu:block/casings/voltage/ulv/side"
 	},
 	"elements": [

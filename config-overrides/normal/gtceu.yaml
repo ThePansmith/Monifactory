@@ -81,6 +81,10 @@ recipes:
   # Default: false
   harderCircuitRecipes: false
 
+  # Whether to nerf machine controller recipes.
+  # Default: false
+  hardMultiRecipes: false
+
   # Whether tools should have enchants or not. Like the flint sword getting fire aspect.
   # Default: true
   enchantedTools: true
@@ -115,7 +119,7 @@ worldgen:
 
     # The maximum random offset (in blocks) from the grid for generating an ore vein.
     # Default: 12
-    oreVeinRandomOffset: 0
+    oreVeinRandomOffset: 4
 
     # Prevents regular vanilla ores from being generated outside GregTech ore veins
     # Default: true
@@ -157,7 +161,7 @@ machines:
 
   # Whether machines explode in rainy weather or when placed next to certain terrain, such as fire or lava
   # Default: false
-  doTerrainExplosion: false
+  shouldWeatherOrTerrainExplosion: false
 
   # Energy use multiplier for electric items.
   # Default: 100
@@ -175,10 +179,6 @@ machines:
   # Enables Safe Active Transformers, removing their ability to explode if unformed while transmitting/receiving power.
   # Default: false
   harmlessActiveTransformers: false
-
-  # Divisor for Recipe Duration per Overclock.
-  # Default: 2.0
-  overclockDivisor: 2.0
 
   # Whether to play machine sounds while machines are active.
   # Default: true
@@ -218,6 +218,8 @@ machines:
   # Entries must be in a fully qualified format. For example: appeng.tile.networking.TileController
   # Default: none
   worldAcceleratorBlacklist:
+    - org.zeith.solarflux.block.SolarPanelBlock
+    - org.zeith.solarflux.block.SolarPanelTile
 
   # Whether to use GT6-style pipe and cable connections, meaning they will not auto-connect unless placed directly onto another pipe or cable.
   # Default: true
@@ -234,11 +236,6 @@ machines:
   # Default: "raw"
   bedrockOreDropTagPrefix: raw
 
-  # WARNING: THIS IS NO LONGER SUPPORTED AND WILL BE REMOVED!
-  # This option only exists to provide backwards compatibility until the Processing Array will be removed in 1.3.0
-  # Default: false
-  doProcessingArray: false
-
   # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
   # Default: false
   enableTieredCasings: false
@@ -250,6 +247,18 @@ machines:
   # Minimum distance betweeb Long Distance Fluid Pipe Endpoints
   # Default: 50
   ldFluidPipeMinDistance: 50
+
+  # Whether ONLY owners can open a machine gui
+  # Default: false
+  onlyOwnerGUI: false
+
+  # Whether ONLY owners can break a machine
+  # Default: false
+  onlyOwnerBreak: false
+
+  # Minimum op level to bypass the ownership checks
+  # Default: 2
+  ownerOPBypass: 2
 
   # If High Tier (>UV-tier) GT content should be registered.
   # Items and Machines enabled with this config will have missing recipes by default.
@@ -267,10 +276,9 @@ machines:
   # Default: false
   orderedAssemblyLineFluids: false
 
-  # Let Dual Hatch has more ability. (DEPRECATED: does nothing now)
-  # When enabled it, Dual Hatch will can used to assemble line and so on.
-  # Need restart Minecraft to apply.
-  enableMoreDualHatchAbility: false
+  # Default maximum parallel of steam multiblocks
+  # Default: 8
+  steamMultiParallelAmount: 8
 
   # Small Steam Boiler Options
   smallBoilers:
@@ -389,6 +397,11 @@ client:
     # Default: 0
     hudOffsetY: 0
 
+  renderer:
+    # Render fluids in multiblocks that support them?
+    # Default: true
+    renderFluids: true
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage
@@ -398,6 +411,10 @@ tools:
   # Amount of blocks that can be spray painted at once
   # Default: 16
   sprayCanChainLength: 16
+
+  # Delay in ticks between each log being broken when tree felling
+  # Default: 2
+  treeFellingDelay: 2
 
   # NanoSaber Options
   nanoSaber:
@@ -462,33 +479,28 @@ gameplay:
   # Default: 0.001
   environmentalHazardDecayRate: 0.001
 
-  # Whether the GTCEu's ingame guidebook, 'Compass', be enabled.
-  # WARNING: INCOMPLETE
-  # Default: false
-  enableCompass: false
-
 # Config options for Mod Compatibility
 compat:
   # Config options regarding GTEU compatibility with other energy systems
   energy:
-    # Enable Native GTEU to Platform native Energy (RF and alike) on GT Cables and Wires.
+    # Enable Native GTEU to Forge Energy (RF and alike) on GT Cables and Wires.
     # This does not enable nor disable Converters.
     # Default: true
-    nativeEUToPlatformNative: true
+    nativeEUToFE: true
 
-    # Enable GTEU to Platform native (and vice versa) Converters.
+    # Enable GTEU to FE (and vice versa) Converters.
     # Default: false
-    enablePlatformConverters: true
+    enableFEConverters: true
 
-    # Platform native Energy to GTEU ratio for converting FE to EU.
+    # Forge Energy to GTEU ratio for converting FE to EU.
     # Only affects converters.
-    # Default: 4 FE/Energy == 1 EU
-    platformToEuRatio: 4
+    # Default: 4 FE == 1 EU
+    feToEuRatio: 4
 
-    # GTEU to Platform native Energy ratio for converting EU to FE.
+    # GTEU to Forge Energy ratio for converting EU to FE.
     # Affects native conversion and Converters.
-    # Default: 4 FE/Energy == 1 EU
-    euToPlatformRatio: 4
+    # Default: 4 FE == 1 EU
+    euToFeRatio: 4
 
   # Config options regarding GTCEu compatibility with AE2
   ae2:
@@ -501,13 +513,81 @@ compat:
     # Default: 1.0AE/t
     meHatchEnergyUsage: 1.0
 
+  # Config options regarding GTCEu compatibility with minimap mods
+  minimap:
+    # Toggle specific map mod integration on/off (need to restart for this to take effect)
+    toggle:
+      # FTB Chunks integration enabled
+      ftbChunksIntegration: false
+
+      # Journey Map integration enabled
+      journeyMapIntegration: true
+
+      # Xaerox's map integration enabled
+      xaerosMapIntegration: true
+
+    # The radius, in blocks, that picking up a surface rock will search for veins in.
+    # -1 to disable.
+    # Default: 24
+    surfaceRockProspectRange: 24
+
+    # The radius, in blocks, that clicking an ore block will search for veins in.
+    # -1 to disable
+    # Default: 24
+    oreBlockProspectRange: 24
+
+    # The map scale at which displayed ores will stop scaling.
+    oreScaleStop: 1.0
+
+    # The size, in pixels, of ore icons on the map
+    oreIconSize: 32
+
+    # The string prepending ore names in the ore vein tooltip
+    oreNamePrefix: -
+
+    # The color to draw a box around the ore icon with.
+    # Accepts either an ARGB hex color prefixed with # or the string 'material' to use the ore's material color
+    borderColor: #00000000
+
+    # Which part of the screen to anchor buttons to
+    # Default: "BOTTOM_LEFT"
+    # Allowed values:
+    # - TOP_LEFT
+    # - TOP_CENTER
+    # - TOP_RIGHT
+    # - RIGHT_CENTER
+    # - BOTTOM_RIGHT
+    # - BOTTOM_CENTER
+    # - BOTTOM_LEFT
+    # - LEFT_CENTER
+    buttonAnchor: BOTTOM_LEFT
+
+    # Which direction the buttons will go
+    # Default: "HORIZONTAL"
+    # Allowed values:
+    # - VERTICAL
+    # - HORIZONTAL
+    direction: HORIZONTAL
+
+    # How horizontally far away from the anchor to place the buttons
+    # Default: 20
+    xOffset: 20
+
+    # How vertically far away from the anchor to place the buttons
+    # Default: 0
+    yOffset: 0
+
+    # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
+    # Default: true
+    rightToolbar: false
+
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true
-  hideFacadesInJEI: true
+  hideFacadesInRecipeViewer: true
 
   # Whether to hide filled cells in JEI and creative search menu.
   # Default: true
-  hideFilledCellsInJEI: true
+  hideFilledCellsInRecipeViewer: true
 
   # Whether to hide the ore processing diagrams in JEI
   # Default: false
@@ -517,7 +597,7 @@ compat:
   # Default: true
   removeSmeltingForEBFMetals: true
 
-  # Whether dimension marker should show dimension tier.
+  # Whether dimension markers should show the dimension tier value.
   # Default: false
   showDimensionTier: false
 
@@ -529,6 +609,10 @@ dev:
   # Debug ore vein placement? (will print placed veins to server's debug.log)
   # Default: false (no placement printout in debug.log)
   debugWorldgen: false
+
+  # Generate ores in superflat worlds?
+  # Default: false
+  doSuperflatOres: false
 
   # Dump all registered GT recipes?
   # Default: false

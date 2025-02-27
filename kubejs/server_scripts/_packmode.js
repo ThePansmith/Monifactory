@@ -1,6 +1,7 @@
+/** Server-side pack mode */
 const isNormalMode = !!global.isNormalMode;
 const isHardMode = !!global.isHardMode;
-const isHarderMode = !!global.isHarderMode;
+const isExpertMode = !!global.isExpertMode;
 
 PlayerEvents.loggedIn(event => {
     // devmode stuff so we can switch modes in runtime (not recommended)
@@ -14,9 +15,9 @@ PlayerEvents.loggedIn(event => {
     //     event.player.tell(Text.yellow('Pack mode swapped'))
     // }
 
-    event.removeGameStage('mode_normal')
-    event.removeGameStage('mode_hard')
-    event.removeGameStage('mode_harder')
+    event.removeGameStage("mode_normal")
+    event.removeGameStage("mode_hard")
+    event.removeGameStage("mode_expert")
 
-    event.addGameStage(`mode_${global.packmode}`);
+    event.addGameStage(`mode_${global.packmode.toLowerCase()}`);
 })

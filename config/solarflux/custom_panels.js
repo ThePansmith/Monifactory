@@ -33,147 +33,71 @@
 
 // define english "en_us"
 
-var ourMaterial = false;
-
 /** This function is called when mod is being constructed */
 function init()
 {
-	// Example: (textures are extracted in /textures/ by default), uncomment to try it out! (Requires game restart)
+    /*Monifactory Custom solars*/
 
-    /* Comment Start
-
-    // You might need to use CraftTweaker or something else to make the material obtainable!
-	ourMaterial = newMaterial("example")
-	    .langBuilder()
-            .put(english, "Example Material")
-        .build();
-
-	panel()
-		.name("example")
-		.height(8 / 16.0)
-		.generation("8388608")
-		.capacity("3355443200")
-		.transfer("50331648")
-	.buildAndRegister()
-		.langBuilder()
-			    .put(english, "Example Solar Panel")
-			.build()
-		.recipeBuilder()
-			.shape("ppp", "8c8", "8h8")
-			.bind('p', item("solarflux", "photovoltaic_cell_6"))
-			.bind('8', item("solarflux:sp_8"))
-			.bind('c', tag("forge", "storage_blocks/emerald"))
-			.bind('h', ourMaterial) // Here we use the newly added material in the recipe!
-		.build(2);
-
-    Comment end*/
-
-    // bathyal
+    // Bathyal
     panel()
-    .name('bathyal')
-    .height(0.5)
-    .generation(65536)
-    .capacity(25600000)
-    .transfer(512000)
-    .build()
-    .langBuilder()
-    .put("en_us", "Bathyal Solar Panel")
-    .build()
-    .register()
-    // resonant
+            .name('bathyal')
+            .height(0.5)
+            .generation(32768)
+            .capacity(1200000)
+            .transfer(300000)
+        .build()
+        .langBuilder()
+            .put("en_us", "Bathyal Solar Panel")
+        .build()
+        .register()
+
+    // Abyssal
     panel()
-    .name('abyssal')
-    .height(0.5)
-    .generation(131072)
-    .capacity(512000000)
-    .transfer(1024000)
-    .build()
-    .langBuilder()
-    .put("en_us", "Abyssal Solar Panel")
-    .build()
-    .register()
-    // abyssal
+            .name('abyssal')
+            .height(0.5)
+            .generation(131072)
+            .capacity(4000000)
+            .transfer(1000000)
+        .build()
+        .langBuilder()
+            .put("en_us", "Abyssal Solar Panel")
+        .build()
+        .register()
+
+    // Hadal
     panel()
-    .name('hadal')
-    .height(0.5)
-    .generation(262144)
-    .capacity(204800000)
-    .transfer(4096000)
-    .build()
-    .langBuilder()
-    .put("en_us", "Hadal Solar Panel")
-    .build()
-    .register()
+            .name('hadal')
+            .height(0.5)
+            .generation(524288)
+            .capacity(12000000)
+            .transfer(3000000)
+        .build()
+        .langBuilder()
+            .put("en_us", "Hadal Solar Panel")
+        .build()
+        .register()
     
     // Neutronium
     panel()
-    .name("neutronium")
-    .generation(8388608)
-    .transfer(32768000)
-    .capacity(131072000000)
-    .build()
-    .langBuilder()
-    .put("en_us", "Neutronium Solar Panel")
-    .build()
-    .register()
+            .name("neutronium")
+            .generation(2500000)
+            .capacity(200000000)
+            .transfer(50000000)
+        .build()
+        .langBuilder()
+            .put("en_us", "Neutronium Solar Panel")
+        .build()
+        .register()
 
     // Infinity
     panel()
-    .name("infinity")
-    .generation(33554432)
-    .transfer(65536000)
-    .capacity(262144000000)
-    .build()
-    .langBuilder()
-    .put("en_us", "Infinity Solar Panel")
-    .build()
-    .register()
-}
-
-/*
-* This method is used to register additional recipes
-* Below listed all vanilla options for adding recipes.
-*/
-
-function registerRecipes($)
-{
-    // IF you have a mod with custom recipe type, register them with the following:
-    // $.add(IRecipe<?>)
-    // Just don't forget to import the recipe class.
-    // To pass an ingredient to a recipe wrap your item()/tag() call in a ingredient().
-    // Basically this will create Minecraft Ingredient: ingredient(tag("forge", "storage_blocks/emerald"))
-
-    if(ourMaterial)
-    {
-        $.shaped() // Shaped recipe example
-            .result(ourMaterial, 2)
-            .shape("###", "#$#", "###")
-            .map('$', item("solarflux", "ender_glass"))
-            .map('#', tag("forge", "rods/blaze"))
-            .register();
-
-        $.shapeless() // Shapeless recipe example
-            .result(ourMaterial, 1)
-            .add(item("solarflux", "ender_glass"))
-            .add(tag("forge", "rods/blaze"))
-            .add(tag("forge", "rods/blaze"))
-            .add(tag("forge", "rods/blaze"))
-            .register();
-
-        $.stoneCutting() // Stone cutting recipe example
-            .result(ourMaterial, 1)
-            .input(item("solarflux", "ender_glass"))
-            .register();
-
-        // $.blasting() can be replaced with the following: (they have exactly same construction options)
-        //     $.smelting()
-        //     $.campfire()
-        //     $.smoking()
-        $.blasting() // Blasting cutting recipe example
-            .result(ourMaterial, 1)
-            .input(item("solarflux", "ender_glass"))
-            .cookTime(400) // 20 seconds
-            .xp(10.0)
-            .register();
-    }
+            .name("infinity")
+            .generation(99999999)
+            .capacity(999999999)
+            .transfer(999999999)
+        .build()
+        .langBuilder()
+            .put("en_us", "Infinity Solar Panel")
+        .build()
+        .register()
 }

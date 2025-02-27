@@ -23,13 +23,12 @@
 - Original pack by [Exaxxion](https://github.com/Exaxxion).
 - Nomifactory CEu pack by [Tracer4b](https://github.com/tracer4b).  
 - README.md adapted from [GregTech CEu](https://github.com/GregTechCEu/GregTech).  
-- Meowni (mascot) by Mutso  
+- Meowni (mascot) by [Mutso](https://bsky.app/profile/did:plc:pgazjc76vpn6mr7rldk56ugq).  
 - Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
-- Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
 Thank you!
 
-## Hard/Harder Mode
-Is Monifactory not Greggy enough for you? Or do you simply want a challenge? Try Hard Mode (or even Harder Mode, if you're not faint of heart!)
+## Hard/Expert Mode
+Is Monifactory not Greggy enough for you? Or do you simply want a challenge? Try Hard Mode (or even Expert Mode, if you're not faint of heart!)
 
 Highlights include:
 
@@ -41,29 +40,51 @@ Highlights include:
 - More focus on GregTech Power Generation
 - No Creative Tank; instead, use Stabilized Micro Miners for late-game resource acquisition
 
-Harder Mode is a modifier for Hard Mode, and takes things a step further by:
+Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 
 - Disabling RF -> EU conversion, making GT power generation required
-- Removing EnderIO and LaserIO's item and fluid transportation options
-- Bringing back GT5u machine explosions
-- Gregtech Pollution and hazards
+- EnderIO Conduits are removed
+- LaserIO is disabled
+- GT5u-style machine explosions
+- Gregtech Pollution and Hazards
 - Various other nerfs
 
 ## Installation:
 
-### Hard/Harder Mode Installation:
+### Hard/Expert Mode Installation:
 1. Download [``./pack-mode-switcher.bat``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
 2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
-2. Run the script, and follow the prompts to select your mode.
+- Windows:
+    - Manual:
+        1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.bat``.
+        2. Follow the prompt to select your mode.
+        3. Redo steps 1 & 2 every time after you've updated the modpack.
+
+    - Prism Launcher (and various other custom launchers):
+        1. If your Minecraft launcher supports it, select your Minecraft instance -> Edit -> Settings -> Custom Commands, check ``Custom Commands``, paste
+           ```
+           $INST_DIR\minecraft\pack-mode-switcher.bat (N/H/E)
+           ```
+           into Pre-launch command and specify your wanted mode.
+
+- Linux/Apple/GNU:
+1. Open https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh and download the file to your Minecraft / Minecraft instance folder.
+1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.sh``.
+2. Follow the prompt to select your mode.
 
 ### Addon Mods (AKA Optional Compats)
-To spice up your Monifactory experience, you can add one of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
+To spice up your Monifactory experience, you can add any of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
 1. [Create](https://www.curseforge.com/minecraft/mc-mods/create)
     1a. [Create: Steam and Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)
-2. [ComputerCraft: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)
+2. [ComputerCraft: Tweaked](https://modrinth.com/mod/cc-tweaked)
+    2a. [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
 4. [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
+5. [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)
+6. [Project Red: Transmission](https://www.curseforge.com/minecraft/mc-mods/project-red-transmission)
+7. [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
+8. [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.
@@ -74,6 +95,7 @@ To spice up your Monifactory experience, you can add one of the following mods t
 6. ``unzip server.zip``
 7. Move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
 8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
+9. To upgrade an existing Monifactory server, see See [FAQ.md](FAQ.md).
 
 ## Contributing
 

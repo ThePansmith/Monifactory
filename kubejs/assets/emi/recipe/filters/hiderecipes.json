@@ -2,15 +2,6 @@
     "filters": [
       {
         "id": "/emi:/crafting/repairing/.*/"
-      },
-      {
-        "id": "gcyr:space_elevator"
-      },
-      {
-        "id": "gcyr:dyson_system_controller"
-      },
-      {
-        "id": "gcyr:drone_hanger"
-      } 
+      }
     ]
   }

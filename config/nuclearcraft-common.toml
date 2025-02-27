@@ -270,7 +270,7 @@
 	#Enable nuggets registration: steel, electrum, magnesium, cobalt, aluminum, lead, bronze, lithium, platinum, thorium, tin, beryllium, silver, uranium, zirconium, zinc, boron
 	register_nugget = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
 	#Enable gems registration: boron_arsenide, carobbiite, silicon, villiaumite, fluorite, rhodochrosite, boron_nitride
-	register_block = [true, true, true, true, true, true, true]
+	register_block = [true, true, true, true, true, false, true]
 
 #Forge Tag priority
 [forge_tag_priority]
