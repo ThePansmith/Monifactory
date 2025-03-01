@@ -93,31 +93,31 @@ ServerEvents.recipes(event => {
 // Add regolith dusts to ores' loot pool
 LootJS.modifiers((event) => {
     const moonDust = LootEntry.of("kubejs:moon_dust").when(c => c.randomChance(0.50))
-	const moonDustFortune = LootEntry.of("kubejs:moon_dust")
+    const moonDustFortune = LootEntry.of("kubejs:moon_dust")
         .applyOreBonus("minecraft:fortune")
         .limitCount(0, 2)
         .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.33, 0.66, 1.0]))
 
     const marsDust = LootEntry.of("kubejs:mars_dust").when(c => c.randomChance(0.50))
-	const marsDustFortune = LootEntry.of("kubejs:mars_dust")
-    .applyOreBonus("minecraft:fortune")
-    .limitCount(0, 2)
-    .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.33, 0.66, 1.0]))
+    const marsDustFortune = LootEntry.of("kubejs:mars_dust")
+        .applyOreBonus("minecraft:fortune")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.33, 0.66, 1.0]))
 
     const venusDust = LootEntry.of("kubejs:venus_dust").when(c => c.randomChance(0.50))
-	const venusDustFortune = LootEntry.of("kubejs:venus_dust")
-    .applyOreBonus("minecraft:fortune")
-    .limitCount(0, 2)
-    .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.33, 0.66, 1.0]))
-    
-    const mercuryDust = LootEntry.of("kubejs:mercury_dust").when(c => c.randomChance(0.50))
-	const mercuryDustFortune = LootEntry.of("kubejs:mercury_dust")
-    .applyOreBonus("minecraft:fortune")
-    .limitCount(0, 2)
-    .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.33, 0.66, 1.0]))
+    const venusDustFortune = LootEntry.of("kubejs:venus_dust")
+        .applyOreBonus("minecraft:fortune")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.33, 0.66, 1.0]))
 
-	event.addBlockLootModifier(/.*moon_.*_ore$/).addAlternativesLoot(moonDust, moonDustFortune);
-	event.addBlockLootModifier(/.*mars_.*_ore$/).addAlternativesLoot(marsDust, marsDustFortune);
-	event.addBlockLootModifier(/.*venus_.*_ore$/).addAlternativesLoot(venusDust, venusDustFortune);
-	event.addBlockLootModifier(/.*mercury_.*_ore$/).addAlternativesLoot(mercuryDust, mercuryDustFortune);
+    const mercuryDust = LootEntry.of("kubejs:mercury_dust").when(c => c.randomChance(0.50))
+    const mercuryDustFortune = LootEntry.of("kubejs:mercury_dust")
+        .applyOreBonus("minecraft:fortune")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.33, 0.66, 1.0]))
+
+    event.addBlockLootModifier(/.*moon_.*_ore$/).addAlternativesLoot(moonDust, moonDustFortune);
+    event.addBlockLootModifier(/.*mars_.*_ore$/).addAlternativesLoot(marsDust, marsDustFortune);
+    event.addBlockLootModifier(/.*venus_.*_ore$/).addAlternativesLoot(venusDust, venusDustFortune);
+    event.addBlockLootModifier(/.*mercury_.*_ore$/).addAlternativesLoot(mercuryDust, mercuryDustFortune);
 });
