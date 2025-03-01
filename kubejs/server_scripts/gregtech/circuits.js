@@ -125,7 +125,6 @@ ServerEvents.recipes(event => {
 
         /** @param {number} by */
         let multiplyRecipe = by => {
-            duration *= by
             eut *= by
             for(let matters of [newInputItems, newOutputItems, newInputFluids, newOutputFluids])
                 if(matters)
@@ -134,7 +133,6 @@ ServerEvents.recipes(event => {
         }
         /** @param {number} by */
         let isRecipeDivisible = by =>
-            duration % by === 0 &&
             eut % by === 0 &&
             [newInputItems, newOutputItems, newInputFluids, newOutputFluids]
                 .filter(matters => matters)
