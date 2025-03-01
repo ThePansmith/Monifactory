@@ -242,6 +242,21 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(250000)
 
+    event.recipes.gtceu.circuit_assembler("matter_processor_complex_smd")
+        .itemInputs(
+            "2x kubejs:matter_processing_unit",
+            "4x kubejs:multidimensional_cpu_chip",
+            "5x kubejs:complex_smd_resistor",
+            "5x kubejs:complex_smd_capacitor",
+            "5x kubejs:complex_smd_transistor",
+            "8x gtceu:fine_naquadria_wire"
+        )
+        .inputFluids("gtceu:soldering_alloy 288")
+        .itemOutputs("4x kubejs:matter_processor")
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(10 * 20)
+        .EUt(250000 * 2)
+
     event.recipes.gtceu.circuit_assembler("matter_processor_assembly")
         .itemInputs("kubejs:matter_processing_unit",
             "2x kubejs:matter_processor",
@@ -256,11 +271,41 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(250000)
 
+    event.recipes.gtceu.circuit_assembler("matter_processor_assembly_complex_smd")
+        .itemInputs("kubejs:matter_processing_unit",
+            "2x kubejs:matter_processor",
+            "2x kubejs:complex_smd_inductor",
+            "2x kubejs:complex_smd_capacitor",
+            "32x gtceu:ram_chip",
+            "16x gtceu:fine_europium_wire"
+        )
+        .inputFluids("gtceu:soldering_alloy 1152")
+        .itemOutputs("2x kubejs:matter_processor_assembly")
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(20 * 20)
+        .EUt(250000)
+
     event.recipes.gtceu.assembly_line("matter_processor_computer")
         .itemInputs(
             "kubejs:matter_processing_unit",
             "2x kubejs:matter_processor_assembly",
             "12x gtceu:advanced_smd_diode",
+            "24x gtceu:nor_memory_chip",
+            "8x kubejs:uxpic_chip",
+            "24x gtceu:fine_europium_wire",
+            "8x gtceu:polyethyl_cyanoacrylate_foil",
+            "4x gtceu:crystal_matrix_plate"
+        )
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:omnium 144")
+        .itemOutputs("kubejs:matter_processor_computer")
+        .duration(20 * 20)
+        .EUt(250000)
+
+    event.recipes.gtceu.assembly_line("matter_processor_computer_complex_smd")
+        .itemInputs(
+            "kubejs:matter_processing_unit",
+            "2x kubejs:matter_processor_assembly",
+            "3x kubejs:complex_smd_diode",
             "24x gtceu:nor_memory_chip",
             "8x kubejs:uxpic_chip",
             "24x gtceu:fine_europium_wire",
@@ -290,6 +335,23 @@ ServerEvents.recipes(event => {
         .duration(2400)
         .EUt(GTValues.VA[GTValues.UHV])
 
+    event.recipes.gtceu.assembly_line("matter_processor_mainframe_complex_smd")
+        .itemInputs("2x gtceu:activated_netherite_frame",
+            "2x kubejs:matter_processor_computer",
+            "8x kubejs:complex_smd_diode",
+            "8x kubejs:complex_smd_capacitor",
+            "8x kubejs:complex_smd_transistor",
+            "8x kubejs:complex_smd_resistor",
+            "8x kubejs:complex_smd_inductor",
+            "32x gtceu:ram_chip",
+            "16x kubejs:multidimensional_cpu_chip",
+            "16x gtceu:ruthenium_trinium_americium_neutronate_double_wire",
+            "16x gtceu:polyethyl_cyanoacrylate_foil",
+            "8x gtceu:crystal_matrix_plate") // could replace with omnium frame
+        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 288")
+        .itemOutputs("kubejs:matter_processor_mainframe")
+        .duration(2400)
+        .EUt(GTValues.VA[GTValues.UHV])
 
     // WIP: Dimensional Circuits
     event.recipes.gtceu.circuit_assembler("dimensional_circuit_board")
