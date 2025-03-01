@@ -148,6 +148,9 @@ ServerEvents.recipes(event => {
             inp.id = "kubejs:complex" + match[1]
             inp.amount /= 4
         }
+        // Advanced smd recipes take twice as fast to make than simple smds,
+        // here we follow the convention
+        duration /= 2
         // Divide recipe back as much as possible
         while(isRecipeDivisible(2))
             multiplyRecipe(0.5)
