@@ -142,8 +142,8 @@
   "item.kubejs.quantum_soc_wafer": "Quantum SoC Wafer",
   "item.kubejs.quantum_soc_chip_base": "Quantum SoC Chip Base",
   "item.kubejs.quantum_soc_chip": "Quantum SoC Chip",
-  "item.kubejs.uxpic_wafer": "Uxpic Wafer",
-  "item.kubejs.uxpic_chip": "Uxpic Chip",
+  "item.kubejs.uxpic_wafer": "UXPIC Wafer",
+  "item.kubejs.uxpic_chip": "UXPIC Chip",
 
   "item.kubejs.purified_ancient_debris_dust": "Purified Ancient Debris Dust",
   "item.kubejs.processed_ancient_debris_dust": "Processed Ancient Debris Dust",
@@ -533,7 +533,6 @@
   "telepastries.custom_cake.tooltip.2": "§7Refill by right-clicking with 2 or more Pulsating Dust.",
   "telepastries.lost_city_cake.tooltip.1": "§6Teleports you to the Lost Cities§7",
   "telepastries.lost_city_cake.tooltip.2": "§7Teleport without consuming by right-clicking with a Diamond.",
-  "travellersbootsreloaded.deprecation.tooltip": "Deprecated. Craft into an Exoskeleton!",
   "gtceu.sterilizing_filter_casing.tooltip": "Sterilized Cleanrooms can't be used as a \"regular\" Cleanroom. You'll want one of each.",
   "item.kubejs.infinity_dust_block.tooltip": "§7§oNot quite solid",
 
