@@ -601,7 +601,10 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("hyperbolic_microverse_projector", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("microverse")
-        .recipeModifiers(getMicroverseRecipeModifiers(4))
+        .recipeModifiers(
+            [GTRecipeModifiers.PARALLEL_HATCH]
+                .concat(getMicroverseRecipeModifiers(4))
+        )
         .appearanceBlock(() => Block.getBlock("kubejs:microverse_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###CCCCC###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###CCCCC###")
