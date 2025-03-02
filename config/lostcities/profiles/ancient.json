@@ -110,7 +110,8 @@
     "corridorChance": 0.7,
     "randomLeafBlockThickness": 6,
     "buildingMaxCellars": 3,
-    "highwayMainPerlinScale": 50.0
+    "highwayMainPerlinScale": 50.0,
+    "scatteredChanceMultiplier": 1.0
   },
   "cityspheres": {
     "__readonly__": "This profile is read only and cannot be modified! If you want to make a new profile based on this then you can make a copy to a new name",

@@ -134,6 +134,12 @@ ServerEvents.recipes(event => {
         H: "gtceu:mv_machine_hull",
         C: "#gtceu:circuits/mv"
     }).id("gtceu:shaped/mv_macerator")
+
+    // Change recipes for end game diodes to use complex smd diodes
+    event.findRecipes({ id: /gtceu:shaped\/(uiv|max)_diode/ }).forEach(recipe => {
+        recipe.replaceInput("gtceu:advanced_smd_diode", "kubejs:complex_smd_diode")
+    })
+
     // Data Stuff
 
     if (isNormalMode) {
@@ -931,4 +937,14 @@ ServerEvents.recipes(event => {
 
     // Chipped tinker's table
     event.replaceInput({ id: "chipped:benches/mechanist_workbench" }, "minecraft:tnt", "#forge:chests")
+
+    // Phantom Paste
+    event.shaped("framedblocks:phantom_paste", [
+        "SSS",
+        "SCS",
+        "SSS"
+    ], {
+        S: "#forge:slimeballs",
+        C: "minecraft:chorus_fruit",
+    })
 })

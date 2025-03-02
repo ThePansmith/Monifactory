@@ -741,19 +741,6 @@
 			dependencies: ["23A867EC14368388"]
 			description: ["{moni.quest.2B336FD89B15F98E.description1}"]
 			id: "2B336FD89B15F98E"
-			rewards: [{
-				id: "12C3AFEE397AB67E"
-				item: {
-					Count: 1
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "monifactory:rhodiumplated"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -1563,26 +1550,11 @@
 			dependencies: ["15FAEE3F625265F4"]
 			description: ["{moni.quest.1B07DB4D58D43B7C.description1}"]
 			id: "1B07DB4D58D43B7C"
-			rewards: [
-				{
-					id: "0A307605C7249051"
-					item: "kubejs:moni_quarter"
-					type: "item"
-				}
-				{
-					id: "5DDE0D9210D6C69A"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "monifactory:naquadahalloy"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0A307605C7249051"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "643EAAB3956473B9"
@@ -2174,27 +2146,12 @@
 				"{moni.quest.22E50A6923EBF5CB.description4}"
 			]
 			id: "22E50A6923EBF5CB"
-			rewards: [
-				{
-					count: 5
-					id: "5A61462892D564CB"
-					item: "kubejs:moni_quarter"
-					type: "item"
-				}
-				{
-					id: "6F66A7A256F1CDF0"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "monifactory:neutronium"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 5
+				id: "5A61462892D564CB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{

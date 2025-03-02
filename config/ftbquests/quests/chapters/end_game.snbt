@@ -323,6 +323,19 @@
 			dependencies: ["27EBB5AAF8A40F3D"]
 			description: ["{moni.quest.6F9041F256F517A3.description1}"]
 			id: "6F9041F256F517A3"
+			rewards: [{
+				id: "132689EA756403C3"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:heart"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.0d
 			subtitle: "{moni.quest.6F9041F256F517A3.subtitle}"
@@ -365,6 +378,19 @@
 				"{moni.quest.2EBB9A154522348F.description3}"
 			]
 			id: "2EBB9A154522348F"
+			rewards: [{
+				id: "7424EC770906922F"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:chest"
+						}
+					}
+				}
+				type: "item"
+			}]
 			size: 5.0d
 			subtitle: "{moni.quest.2EBB9A154522348F.subtitle}"
 			tasks: [{

@@ -34,6 +34,8 @@
 	noRecipeBookShifting = false
 	#This prevents fireworks from being launched from your off hand if you are wearing an Elytra, unless you're flying.
 	noOffhandFireworksWithElytra = true
+	#This option will disable paving when holding a block in your offhand.
+	disablePavingWithBlockInOffhand = true
 
 [customization]
 	#Items that count as torches for the offhand-torch tweak options.

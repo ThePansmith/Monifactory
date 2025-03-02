@@ -78,3 +78,8 @@ B:debug_overlay_show_resources_category = 'true';
 ##[tutorial]
 
 B:show_welcome_screen = 'false';
+
+
+##[keyframe_editor]
+
+B:arrow_keys_move_preview = 'false';

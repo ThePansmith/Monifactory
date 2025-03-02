@@ -2,18 +2,18 @@
 const ___TIER_QUEST_MAPPING = [
     // all of these are on the progression page
     "DEFAULT",
-    "1A30472430354F1E", // lv
-    "3B639F4061B00F1A", // mv
-    "6169C04DF463502F", // hv
-    "7E09D4E00BFA4970", // ev
-    "39FD6F1076559156", // iv
-    "4DB622A78605A2EB", // luv
-    "521977C7165229F1", // zpm
-    "115B96B2092D671E", // uv
-    "01E542E1C9DAF5B4",  // uhv
-    "07057CDE4E021BA7", // uev
-    "1B1D3A66B847D129", // uiv
-    "5601A05D8361551D", // max
+    "61CC4AD6FAE15248", // lv
+    "6C028CD89745098E", // mv
+    "48CAEBEE83D7C791", // hv
+    "30AAFB97813DEB6C", // ev
+    "6E27637A9C94A0AA", // iv
+    "646B8CD10787D899", // luv
+    "11B25506F679ACBD", // zpm
+    "4B497D256FB3983F", // uv
+    "0A34290F579BB4E2", // uhv
+    "63812416270292A4", // uev
+    "60D863C48FBFF5A3", // uiv
+    "1A6F087E10DC036E", // max
     "63280C5F37A22345" // creative chest (end)
 ]
 

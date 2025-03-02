@@ -1,0 +1,31 @@
+{
+    "name": "Heart of a Universe",
+    "tooltip": [
+        "Probably not Kosher"
+    ],
+    "item": {
+        "item": "kubejs:heart_of_a_universe",
+        "count": 1
+    },
+    "display": {
+        "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": 2
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.3
+    },
+    "colors": {
+        "base": "#6B8F85",
+        "accent": "#A300FF"
+    }
+}

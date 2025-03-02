@@ -99,14 +99,14 @@
     "jade_chamber": true,
     "jade_wireless": true
   },
-  "mcjtylib": {
-    "jadeaddons": true
-  },
   "telepastries": {
     "bites": true
   },
   "lootr": {
     "info": true
+  },
+  "balm": {
+    "jade": true
   },
   "ae2": {
     "part_icon": true,
