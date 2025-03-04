@@ -878,19 +878,6 @@
 			hide_until_deps_visible: true
 			id: "5301E546BAA69844"
 			optional: true
-			rewards: [{
-				id: "424A2A6FAB412F69"
-				item: {
-					Count: 1
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "monifactory:steel"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "{moni.quest.5301E546BAA69844.subtitle}"
@@ -1605,26 +1592,11 @@
 				"{moni.quest.3AB0402B19DD5BA8.description5}"
 			]
 			id: "3AB0402B19DD5BA8"
-			rewards: [
-				{
-					id: "5155898EDA908A3F"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "3D0C6CDEED481E30"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "monifactory:alumnium"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5155898EDA908A3F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{

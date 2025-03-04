@@ -557,26 +557,11 @@
 				"{moni.quest.0874A0191325CFDB.description2}"
 			]
 			id: "0874A0191325CFDB"
-			rewards: [
-				{
-					id: "61701B06472AFA90"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "21935100523DBD85"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "monifactory:titanium"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "61701B06472AFA90"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -2075,26 +2060,11 @@
 				"{moni.quest.634E056463ED1532.description2}"
 			]
 			id: "634E056463ED1532"
-			rewards: [
-				{
-					id: "5F9123370A4D8C0A"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "2C123B7485932F5B"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "monifactory:tungstensteel"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5F9123370A4D8C0A"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
