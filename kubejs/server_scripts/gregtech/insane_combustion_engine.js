@@ -29,11 +29,11 @@ ServerEvents.recipes(event => {
         H: "#forge:tools/hammers",
         W: "#forge:tools/wrenches",
         F: "#forge:frames/enriched_naquadah",
-        G: "#forge:gears/enriched_naquadah",
+        G: "#forge:gears/naquadah",
     }).id("gtceu:shaped/naquadah_gearbox")
 
     event.recipes.gtceu.assembler("naquadah_gearbox")
-        .itemInputs("4x #forge:plates/naquadah", "2x #forge:gears/enriched_naquadah", "#forge:frames/enriched_naquadah")
+        .itemInputs("4x #forge:plates/naquadah", "2x #forge:gears/naquadah", "#forge:frames/enriched_naquadah")
         .itemOutputs("2x kubejs:naquadah_gearbox")
         .circuit(4)
         .duration(50)
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("insane_combustion_engine")
         .itemInputs(
             "kubejs:hardened_machine_casing",
-            "3x #forge:gears/enriched_naquadah",
+            "3x #forge:gears/naquadah",
             "4x gtceu:luv_electric_piston",
             "2x gtceu:luv_electric_motor",
             "#gtceu:circuits/zpm",
