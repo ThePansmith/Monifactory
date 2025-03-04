@@ -203,28 +203,28 @@ StartupEvents.registry("block", event => {
     });
 
     event.create("hardened_machine_casing")
-            .soundType('metal')
-            .resistance(6).hardness(5)
-            .tagBlock("mineable/pickaxe")
-            .tagBlock("forge:mineable/wrench")
-            .requiresTool(true)
-            .textureAll("gtceu:block/casings/solid/machine_casing_hardened_naquadah");
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
+        .textureAll("gtceu:block/casings/solid/machine_casing_hardened_naquadah");
 
     event.create("naquadah_gearbox")
-            .soundType('metal')
-            .resistance(6).hardness(5)
-            .tagBlock("mineable/pickaxe")
-            .tagBlock("forge:mineable/wrench")
-            .requiresTool(true)
-            .textureAll("gtceu:block/casings/gearbox/machine_casing_gearbox_naquadah");
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
+        .textureAll("gtceu:block/casings/gearbox/machine_casing_gearbox_naquadah");
 
-    event.create("insane_engine_intake_casing")
-            .soundType('metal')
-            .resistance(6).hardness(5)
-            .tagBlock("mineable/pickaxe")
-            .tagBlock("forge:mineable/wrench")
-            .requiresTool(true)
-            .model("gtceu:block/variant/insane_engine_intake")   //Active variant exists for when GTM adds kjs integration for casing registration
+    event.create("insane_engine_intake_casing", "gtceu:active")
+        .simple("gtceu:block/casings/pipe/machine_casing_insane_engine_intake")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
 
     // Misc
     event.create("starry_diamond_block")
