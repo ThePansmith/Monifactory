@@ -231,4 +231,7 @@ GTCEuStartupEvents.materialModification(event => {
 
     GTMaterials.Glowstone.setComponents("1x tricalcium_phosphate", "1x gold")
     GTMaterials.Glowstone.setFormula("AuCa3(PO4)2", true)
+
+    // We keep Ingots in the material definition so we can replace it in the Ore Processing Diagram with vanilla Netherite Scrap, then remove it here.
+    TagPrefix.ingot.setIgnored(GTMaterials.get("netherite_scrap"), Ingredient.of("minecraft:netherite_scrap"))
 })
