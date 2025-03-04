@@ -82,6 +82,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x6D473E)
         .iconSet("dull")
         .addOreByproducts(GTMaterials.Obsidian, GTMaterials.Obsidian, GTMaterials.RarestMetalMixture)
+        .ignoredTagPrefixes([TagPrefix.nugget, TagPrefix.block, TagPrefix.dustTiny, TagPrefix.rawOre, TagPrefix.rawOreBlock])
+
     event.create("activated_netherite")
         .ingot()
         .element(GTElements.get("activated_netherite"))

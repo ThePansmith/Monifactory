@@ -26,6 +26,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(1250, "low", 120, 400)
         .components("2x gold", "redstone", "glowstone")
         .cableProperties(128, 1, 0, true)
+        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)");
 
     event.create("vibrant_alloy")
         .ingot().fluid()
@@ -34,6 +35,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(1350, "low", 120, 400)
         .components("energetic_alloy", "ender_pearl")
         .cableProperties(512, 1, 0, true)
+        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5)");
 
     // Pulsating Iron
     event.create("pulsating_alloy")
@@ -63,6 +65,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, []))
         .cableProperties(2048, 1, 0, true)
         .components("dark_steel", "endstone", "vibrant_alloy")
+        .formula("Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5))");
 
     event.create("dark_soularium")
         .ingot()
