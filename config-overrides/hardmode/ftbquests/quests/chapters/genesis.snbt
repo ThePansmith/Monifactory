@@ -1059,7 +1059,6 @@
 				""
 				"{moni.quest.57D1B1D74391A05F.description5.hardmode}"
 				"{moni.quest.57D1B1D74391A05F.description6.hardmode}"
-				"{moni.quest.57D1B1D74391A05F.description7.hardmode}"
 			]
 			id: "57D1B1D74391A05F"
 			rewards: [{
@@ -1089,11 +1088,19 @@
 				"{moni.quest.17312BF0197B87A8.description3.hardmode}"
 			]
 			id: "17312BF0197B87A8"
-			tasks: [{
-				id: "75E2F87C0D4B99E1"
-				item: "gtceu:primitive_blast_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "75E2F87C0D4B99E1"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "15F1FB08EE4E9EB6"
+					item: { Count: 32, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
 			title: "{moni.quest.17312BF0197B87A8.title.hardmode}"
 			x: 1.75d
 			y: 10.25d
@@ -1323,125 +1330,6 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["6FB3E3D9CA0F4B30"]
-			description: [
-				"{moni.quest.78B5D55A3560B98E.description1.hardmode}"
-				""
-				"{moni.quest.78B5D55A3560B98E.description2.hardmode}"
-				""
-				"{moni.quest.78B5D55A3560B98E.description3.hardmode}"
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:rubber_mallet"
-				tag: {
-					Damage: 0
-					GT.Behaviours: { }
-					GT.Tool: {
-						AttackDamage: 0.0f
-						AttackSpeed: -2.4f
-						Damage: 0
-						MaxDamage: 128
-					}
-				}
-			}
-			id: "78B5D55A3560B98E"
-			rewards: [{
-				id: "16EF260235D12825"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "{moni.quest.78B5D55A3560B98E.subtitle.hardmode}"
-			tasks: [{
-				id: "253D34B000F903DD"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:wood_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										AttackDamage: 0.0f
-										AttackSpeed: -2.4f
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:rubber_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:polytetrafluoroethylene_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:polyethylene_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										AttackDamage: 0.0f
-										AttackSpeed: -2.4f
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:polybenzimidazole_mallet"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: { }
-									GT.Tool: {
-										AttackDamage: 0.0f
-										AttackSpeed: -2.4f
-										Damage: 0
-										MaxDamage: 127
-									}
-									HideFlags: 2
-								}
-							}
-						]
-					}
-				}
-				title: "{moni.task.253D34B000F903DD.hardmode}"
-				type: "item"
-			}]
-			title: "{moni.quest.78B5D55A3560B98E.title.hardmode}"
-			x: 4.5d
-			y: 12.0d
-		}
-		{
 			dependencies: ["4B338515E84FC51A"]
 			description: [
 				"{moni.quest.7FA0E6F3B466576C.description1.hardmode}"
@@ -1488,7 +1376,7 @@
 				{
 					count: 3L
 					id: "14B188414BF825E6"
-					item: { Count: 3, id: "gtceu:red_alloy_single_wire" }
+					item: { Count: 12, id: "gtceu:red_alloy_single_wire" }
 					type: "item"
 				}
 				{
@@ -1555,11 +1443,7 @@
 							}
 							{
 								Count: 1b
-								id: "gtceu:lp_steam_liquid_boiler"
-							}
-							{
-								Count: 1b
-								id: "gtceu:lp_steam_solar_boiler"
+								id: "gtceu:hp_steam_solid_boiler"
 							}
 						]
 					}
@@ -1788,20 +1672,72 @@
 				"7FA0E6F3B466576C"
 				"39D4174834F3879D"
 			]
-			description: ["{moni.quest.08948A23B3A17923.description1}"]
+			description: [
+				"{moni.quest.08948A23B3A17923.description1}"
+				""
+				"{moni.quest.08948A23B3A17923.description2}"
+				""
+				"{moni.quest.08948A23B3A17923.description3}"
+			]			icon: "laserio:energy_overclocker_card_tier_1"
 			id: "08948A23B3A17923"
-			rewards: [{
-				id: "188CE9F6FC9651C5"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "188CE9F6FC9651C5"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "576F8362A4A48428"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+				{
+					id: "4687EABAFD3E5842"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 15
+							}
+						}
+						id: "laserio:card_holder"
+					}
+					type: "item"
+				}
+				{
+					id: "788E688147A8B83B"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "laserio:laseriobook"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "{moni.quest.08948A23B3A17923.subtitle.hardmode}"
-			tasks: [{
-				id: "7D0E23630A562F6A"
-				item: "enderio:conductive_conduit"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 2L
+					id: "7D0E23630A562F6A"
+					item: "laserio:laser_node"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "252F1286D3A46E4E"
+					item: { Count: 2, id: "laserio:card_energy" }
+					type: "item"
+				}
+				{
+					id: "450A8E8955EDBB51"
+					item: "laserio:energy_overclocker_card_tier_1"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.08948A23B3A17923.title}"
 			x: -1.75d
 			y: 13.75d

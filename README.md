@@ -23,9 +23,8 @@
 - Original pack by [Exaxxion](https://github.com/Exaxxion).
 - Nomifactory CEu pack by [Tracer4b](https://github.com/tracer4b).  
 - README.md adapted from [GregTech CEu](https://github.com/GregTechCEu/GregTech).  
-- Meowni (mascot) by Mutso  
+- Meowni (mascot) by [Mutso](https://bsky.app/profile/did:plc:pgazjc76vpn6mr7rldk56ugq).  
 - Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
-- Perfect Gem textures from [FurfSky Reborn](http://furfsky.net/). ([Permission](https://ibb.co/bBpksq0) at [this message](https://discord.com/channels/771187253937438762/774353150278369351/938438074503942184) in [FurfSky Reborn server](https://discord.gg/fsr)).  
 Thank you!
 
 ## Hard/Expert Mode
@@ -74,11 +73,12 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 2. Follow the prompt to select your mode.
 
 ### Addon Mods (AKA Optional Compats)
-To spice up your Monifactory experience, you can add one of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
+To spice up your Monifactory experience, you can add any of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
 1. [Create](https://www.curseforge.com/minecraft/mc-mods/create)
     1a. [Create: Steam and Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)
 2. [ComputerCraft: Tweaked](https://modrinth.com/mod/cc-tweaked)
+    2a. [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
 4. [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
 5. [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)

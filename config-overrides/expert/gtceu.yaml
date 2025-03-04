@@ -180,10 +180,6 @@ machines:
   # Default: false
   harmlessActiveTransformers: false
 
-  # Divisor for Recipe Duration per Overclock.
-  # Default: 2.0
-  overclockDivisor: 2.0
-
   # Whether to play machine sounds while machines are active.
   # Default: true
   machineSounds: true
@@ -401,6 +397,11 @@ client:
     # Default: 0
     hudOffsetY: 0
 
+  renderer:
+    # Render fluids in multiblocks that support them?
+    # Default: true
+    renderFluids: true
+
 # Config options for Tools and Armor
 tools:
   # Random chance for electric tools to take actual damage
@@ -478,11 +479,6 @@ gameplay:
   # Default: 0.001
   environmentalHazardDecayRate: 0.001
 
-  # Whether the GTCEu's ingame guidebook, 'Compass', be enabled.
-  # WARNING: INCOMPLETE
-  # Default: false
-  enableCompass: false
-
 # Config options for Mod Compatibility
 compat:
   # Config options regarding GTEU compatibility with other energy systems
@@ -519,6 +515,17 @@ compat:
 
   # Config options regarding GTCEu compatibility with minimap mods
   minimap:
+    # Toggle specific map mod integration on/off (need to restart for this to take effect)
+    toggle:
+      # FTB Chunks integration enabled
+      ftbChunksIntegration: false
+
+      # Journey Map integration enabled
+      journeyMapIntegration: true
+
+      # Xaerox's map integration enabled
+      xaerosMapIntegration: true
+
     # The radius, in blocks, that picking up a surface rock will search for veins in.
     # -1 to disable.
     # Default: 24
@@ -572,7 +579,7 @@ compat:
 
     # Whether to put buttons on a separate toolbar on the right instead of the map type toolbar in JourneyMap.
     # Default: true
-    rightToolbar: true
+    rightToolbar: false
 
   # Whether to hide facades of all blocks in JEI and creative search menu.
   # Default: true

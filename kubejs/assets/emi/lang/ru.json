@@ -9,9 +9,9 @@
     "tag.item.gtceu.circuits.luv": "LuV Микросхемы",
     "tag.item.gtceu.circuits.zpm": "ZPM Микросхемы",
     "tag.item.moni_quest.backpack": "Рюкзаки",
-    "tag.item.moni.output_bus": "",
-    "tag.item.moni.input_bus": "",
-    "tag.item.moni.input_hatch": "",
-    "tag.item.moni.output_hatch": "",
+    "tag.item.moni.output_bus": "Предметные выходные люки",
+    "tag.item.moni.input_bus": "Предметные входные люки",
+    "tag.item.moni.input_hatch": "Жидкостные входные люки",
+    "tag.item.moni.output_hatch": "Жидкостные выходные люки",
     "tag.item.moni.coins": "Монеты"
 }

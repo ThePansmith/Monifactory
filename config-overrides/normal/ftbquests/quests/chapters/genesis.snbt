@@ -503,39 +503,12 @@
 				"{moni.quest.64AAF0CD958D836A.description4}"
 			]
 			id: "64AAF0CD958D836A"
-			rewards: [
-				{
-					count: 2
-					id: "56EDDA9AEA7F1EBA"
-					item: "ulvcovm:ulv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "3E84D62A9490A941"
-					item: {
-						Count: 1
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "laserio:laseriobook"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "420A85E5ED94C564"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 15
-							}
-						}
-						id: "laserio:card_holder"
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "56EDDA9AEA7F1EBA"
+				item: "ulvcovm:ulv_electric_pump"
+				type: "item"
+			}]
 			tasks: [{
 				id: "150F57D9BEE7CCEE"
 				item: {
@@ -1342,7 +1315,7 @@
 				{
 					count: 3L
 					id: "14B188414BF825E6"
-					item: { Count: 3, id: "gtceu:red_alloy_single_wire" }
+					item: { Count: 12, id: "gtceu:red_alloy_single_wire" }
 					type: "item"
 				}
 				{
@@ -1438,20 +1411,72 @@
 		}
 		{
 			dependencies: ["7FA0E6F3B466576C"]
-			description: ["{moni.quest.08948A23B3A17923.description1}"]
+			description: [
+				"{moni.quest.08948A23B3A17923.description1}"
+				""
+				"{moni.quest.08948A23B3A17923.description2}"
+				""
+				"{moni.quest.08948A23B3A17923.description3}"
+			]
+			icon: "laserio:energy_overclocker_card_tier_1"
 			id: "08948A23B3A17923"
-			rewards: [{
-				id: "188CE9F6FC9651C5"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "188CE9F6FC9651C5"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "39E06530B218DD26"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+				{
+					id: "7FB65345A2F557BA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 15
+							}
+						}
+						id: "laserio:card_holder"
+					}
+					type: "item"
+				}
+				{
+					id: "7CC1F9ADC8629E4B"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "laserio:laseriobook"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
-			subtitle: "{moni.quest.08948A23B3A17923.subtitle}"
-			tasks: [{
-				id: "7D0E23630A562F6A"
-				item: "enderio:conductive_conduit"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 2L
+					id: "08FD1127B1241CA4"
+					item: "laserio:laser_node"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0DB1F6DB193A74AB"
+					item: { Count: 2, id: "laserio:card_energy" }
+					type: "item"
+				}
+				{
+					id: "543B7790E7B6ECF4"
+					item: "laserio:energy_overclocker_card_tier_1"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.08948A23B3A17923.title}"
 			x: 0.0d
 			y: 12.5d
@@ -1824,7 +1849,7 @@
 				"{moni.quest.115D2BEB18929C7C.description1}"
 				""
 				""
-				"[\"\",{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description3\"},{\"color\":\"aqua\",\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description4\"},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description5\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description6\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description.hover_text6\"}},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description7\"}]"
+				"[\"\",{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description2\"},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description3\"},{\"color\":\"aqua\",\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description4\"},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description5\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description6\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description.hover_text6\"}}},{\"translate\":\"moni.quest.115D2BEB18929C7C.rich_description7\"}]"
 			]
 			hide_dependency_lines: true
 			icon: "kubejs:moni_dollar"

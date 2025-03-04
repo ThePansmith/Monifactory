@@ -155,14 +155,6 @@
 			y: 25.0d
 		}
 		{
-			id: "2AA4038AED6CF93D"
-			linked_quest: "6FDF37EE046349F7"
-			shape: "hexagon"
-			size: 1.25d
-			x: 9.5d
-			y: 26.5d
-		}
-		{
 			id: "7FC84014DAAD0025"
 			linked_quest: "6D434F3B0E720A5A"
 			x: 17.5d
@@ -171,7 +163,10 @@
 	]
 	quests: [
 		{
-			dependencies: ["5C4E189A3E401566"]
+			dependencies: [
+				"5C4E189A3E401566"
+				"68CB6AD16F1041E5"
+			]
 			description: [
 				"{moni.quest.0B62AD25CDD86A6B.description1}"
 				""
@@ -179,8 +174,10 @@
 				""
 				"{moni.quest.0B62AD25CDD86A6B.description3}"
 			]
+			hide_until_deps_visible: true
 			icon: "gtceu:mv_4a_energy_converter"
 			id: "0B62AD25CDD86A6B"
+			optional: true
 			rewards: [{
 				id: "0328A56626F1B919"
 				item: "kubejs:moni_nickel"
@@ -225,6 +222,7 @@
 				"0B62AD25CDD86A6B"
 				"74935A3553451178"
 			]
+			dependency_requirement: "one_completed"
 			description: ["{moni.quest.5543D84CB5E37E01.description1}"]
 			icon: {
 				Count: 1
@@ -257,6 +255,7 @@
 				""
 				"{moni.quest.5F109188BE4D9767.description3}"
 			]
+			icon: "gtceu:lv_centrifuge"
 			id: "5F109188BE4D9767"
 			rewards: [{
 				id: "42D617F339691CDD"
@@ -265,7 +264,27 @@
 			}]
 			tasks: [{
 				id: "79E44B9FE48FA14C"
-				item: "gtceu:lv_centrifuge"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_centrifuge"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_centrifuge"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_centrifuge"
+							}
+						]
+					}
+				}
+				title: "{moni.task.79E44B9FE48FA14C}"
 				type: "item"
 			}]
 			title: "{moni.quest.5F109188BE4D9767.title}"
@@ -278,8 +297,6 @@
 				"{moni.quest.74935A3553451178.description1}"
 				""
 				"{moni.quest.74935A3553451178.description2}"
-				""
-				"{moni.quest.74935A3553451178.description3}"
 			]
 			icon: "gtceu:lv_canner"
 			id: "74935A3553451178"
@@ -304,6 +321,10 @@
 									Count: 1b
 									id: "gtceu:mv_canner"
 								}
+								{
+									Count: 1b
+									id: "gtceu:hv_canner"
+								}
 							]
 						}
 					}
@@ -321,6 +342,7 @@
 					type: "item"
 				}
 			]
+			title: "{moni.quest.74935A3553451178.title}"
 			x: 1.0d
 			y: -3.0d
 		}
@@ -375,6 +397,7 @@
 				""
 				"{moni.quest.376EE785F4204FFE.description3}"
 			]
+			icon: "gtceu:lv_sifter"
 			id: "376EE785F4204FFE"
 			rewards: [{
 				id: "3E228AA9187BBA13"
@@ -396,6 +419,10 @@
 							{
 								Count: 1b
 								id: "gtceu:mv_sifter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_sifter"
 							}
 						]
 					}
@@ -442,7 +469,12 @@
 		}
 		{
 			dependencies: ["776199B37A19A592"]
-			description: ["{moni.quest.5F688F22A3DB2ADD.description1}"]
+			description: [
+				"{moni.quest.5F688F22A3DB2ADD.description1}"
+				""
+				"{moni.quest.5F688F22A3DB2ADD.description2}"
+			]
+			icon: "gtceu:mv_atomic_reconstructor"
 			id: "5F688F22A3DB2ADD"
 			rewards: [{
 				id: "77BC7B0E9F4A7CF8"
@@ -459,6 +491,10 @@
 						items: [
 							{
 								Count: 1b
+								id: "gtceu:lv_atomic_reconstructor"
+							}
+							{
+								Count: 1b
 								id: "gtceu:mv_atomic_reconstructor"
 							}
 							{
@@ -468,6 +504,7 @@
 						]
 					}
 				}
+				title: "{moni.task.3F39E9B829DAE2F2}"
 				type: "item"
 			}]
 			title: "{moni.quest.5F688F22A3DB2ADD.title}"
@@ -663,7 +700,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["61FA0AACDF4AC11D"]
+			dependencies: ["2A84013C14085C7B"]
 			description: [
 				"{moni.quest.21B917932F5B25BA.description1}"
 				""
@@ -691,6 +728,7 @@
 				"776199B37A19A592"
 				"061904A6FEED5B66"
 				"1BC6DDC2D50F9C46"
+				"785300684B1846B2"
 			]
 			description: [
 				"{moni.quest.3115EAF1F70A613E.description1}"
@@ -788,7 +826,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["5C4E189A3E401566"]
+			dependencies: [
+				"5C4E189A3E401566"
+				"3B639F4061B00F1A"
+			]
 			description: [
 				"{moni.quest.776199B37A19A592.description1}"
 				""
@@ -906,6 +947,7 @@
 				""
 				"{moni.quest.64B52DA2ABD5152D.description4}"
 			]
+			icon: "gtceu:mv_extruder"
 			id: "64B52DA2ABD5152D"
 			rewards: [{
 				id: "190155709EAC7418"
@@ -915,7 +957,23 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "11511AE6B55626FB"
-				item: "gtceu:mv_extruder"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:mv_extruder"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_extruder"
+							}
+						]
+					}
+				}
+				title: "{moni.task.11511AE6B55626FB}"
 				type: "item"
 			}]
 			title: "{moni.quest.64B52DA2ABD5152D.title}"
@@ -1021,28 +1079,13 @@
 				""
 				"{moni.quest.2823D7B4C8F900CA.description4}"
 			]
-			icon: "gtceu:stainless_steel_plate"
+			icon: "gtceu:stainless_steel_ingot"
 			id: "2823D7B4C8F900CA"
-			rewards: [
-				{
-					id: "39E334FB022AD74E"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "547F553BA6D87D63"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "monifactory:stainless"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "39E334FB022AD74E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -1698,8 +1741,6 @@
 				"{moni.quest.383FADC5E8BC4E91.description1}"
 				""
 				"{moni.quest.383FADC5E8BC4E91.description2}"
-				""
-				"{moni.quest.383FADC5E8BC4E91.description3}"
 			]
 			icon: "gtceu:mv_brewery"
 			id: "383FADC5E8BC4E91"
@@ -1724,12 +1765,17 @@
 								Count: 1b
 								id: "gtceu:mv_brewery"
 							}
+							{
+								Count: 1b
+								id: "gtceu:hv_brewery"
+							}
 						]
 					}
 				}
 				title: "{moni.task.45EF5902181733A9}"
 				type: "item"
 			}]
+			title: "{moni.quest.383FADC5E8BC4E91.title}"
 			x: 16.0d
 			y: 17.5d
 		}
@@ -1820,9 +1866,8 @@
 				"{moni.quest.48E83C38B37DFEE6.description3}"
 				""
 				"{moni.quest.48E83C38B37DFEE6.description4}"
-				""
-				"{moni.quest.48E83C38B37DFEE6.description5}"
 			]
+			icon: "gtceu:mv_distillery"
 			id: "48E83C38B37DFEE6"
 			rewards: [{
 				id: "14D06E944207ACDE"
@@ -1844,6 +1889,10 @@
 							{
 								Count: 1b
 								id: "gtceu:mv_distillery"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_distillery"
 							}
 						]
 					}
@@ -2173,11 +2222,11 @@
 				"{moni.quest.2861BA7C235C52A3.description11}"
 				"{moni.quest.2861BA7C235C52A3.description12}"
 				"{moni.quest.2861BA7C235C52A3.description13}"
-				""
 				"{moni.quest.2861BA7C235C52A3.description14}"
-				""
 				"{moni.quest.2861BA7C235C52A3.description15}"
+				""
 				"{moni.quest.2861BA7C235C52A3.description16}"
+				""
 				"{moni.quest.2861BA7C235C52A3.description17}"
 				"{moni.quest.2861BA7C235C52A3.description18}"
 				"{moni.quest.2861BA7C235C52A3.description19}"
@@ -2187,6 +2236,8 @@
 				"{moni.quest.2861BA7C235C52A3.description23}"
 				"{moni.quest.2861BA7C235C52A3.description24}"
 				"{moni.quest.2861BA7C235C52A3.description25}"
+				"{moni.quest.2861BA7C235C52A3.description26}"
+				"{moni.quest.2861BA7C235C52A3.description27}"
 			]
 			icon: "gtceu:energetic_alloy_octal_wire"
 			id: "2861BA7C235C52A3"

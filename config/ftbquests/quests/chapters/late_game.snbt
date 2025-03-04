@@ -215,6 +215,18 @@
 			x: 0.0d
 			y: -2.0d
 		}
+		{
+			id: "29366415E2B146BA"
+			linked_quest: "739F7BF2A90B278A"
+			x: 11.0d
+			y: 17.0d
+		}
+		{
+			id: "03BAC1C5A779EFAE"
+			linked_quest: "425D1C34A82B054D"
+			x: 21.0d
+			y: 16.5d
+		}
 	]
 	quests: [
 		{
@@ -729,19 +741,6 @@
 			dependencies: ["23A867EC14368388"]
 			description: ["{moni.quest.2B336FD89B15F98E.description1}"]
 			id: "2B336FD89B15F98E"
-			rewards: [{
-				id: "12C3AFEE397AB67E"
-				item: {
-					Count: 1
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "monifactory:rhodiumplated"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -1247,39 +1246,8 @@
 		}
 		{
 			dependencies: [
-				"49B872B193268554"
-				"62AC7103FF9D25FD"
-			]
-			description: ["{moni.quest.7A7FFE9E89D19A2F.description1}"]
-			icon: "kubejs:mote_of_omnium"
-			id: "7A7FFE9E89D19A2F"
-			rewards: [{
-				id: "722444CB8E93D6CF"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [
-				{
-					id: "69983BE8E7F45F6E"
-					item: "kubejs:mote_of_omnium"
-					type: "item"
-				}
-				{
-					id: "70E21F11ED5BDBBB"
-					item: "kubejs:stabilized_einsteinium"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.7A7FFE9E89D19A2F.title}"
-			x: 9.0d
-			y: 24.0d
-		}
-		{
-			dependencies: [
 				"1B07DB4D58D43B7C"
-				"115B96B2092D671E"
+				"521977C7165229F1"
 			]
 			description: [
 				"{moni.quest.2836DDEE49C3CCFB.description1}"
@@ -1331,7 +1299,22 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "75321CAE019C190A"
-				item: "gtceu:cryolobus_dust"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:cryolobus_dust"
+							}
+							{
+								Count: 1b
+								id: "kubejs:warden_horn"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "{moni.quest.7F669657313F2E62.title}"
@@ -1567,26 +1550,11 @@
 			dependencies: ["15FAEE3F625265F4"]
 			description: ["{moni.quest.1B07DB4D58D43B7C.description1}"]
 			id: "1B07DB4D58D43B7C"
-			rewards: [
-				{
-					id: "0A307605C7249051"
-					item: "kubejs:moni_quarter"
-					type: "item"
-				}
-				{
-					id: "5DDE0D9210D6C69A"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "monifactory:naquadahalloy"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "0A307605C7249051"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "643EAAB3956473B9"
@@ -2178,27 +2146,12 @@
 				"{moni.quest.22E50A6923EBF5CB.description4}"
 			]
 			id: "22E50A6923EBF5CB"
-			rewards: [
-				{
-					count: 5
-					id: "5A61462892D564CB"
-					item: "kubejs:moni_quarter"
-					type: "item"
-				}
-				{
-					id: "6F66A7A256F1CDF0"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "monifactory:neutronium"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 5
+				id: "5A61462892D564CB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -2214,6 +2167,7 @@
 			dependencies: [
 				"22E50A6923EBF5CB"
 				"235C1E5B2C58B5AF"
+				"61301FBD825F8280"
 			]
 			description: [
 				"{moni.quest.738A141D31AD7CE3.description1}"
@@ -2231,6 +2185,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
+			subtitle: "{moni.quest.738A141D31AD7CE3.subtitle}"
 			tasks: [{
 				id: "140C83AB5FE8450E"
 				item: "kubejs:hadal_energy_core"
@@ -2405,11 +2360,7 @@
 				"11154356854B64DA"
 				"39FD6F1076559156"
 			]
-			description: [
-				"{moni.quest.2D0DF78F71760F00.description1}"
-				""
-				"{moni.quest.2D0DF78F71760F00.description2}"
-			]
+			description: ["{moni.quest.2D0DF78F71760F00.description1}"]
 			id: "2D0DF78F71760F00"
 			rewards: [{
 				id: "6F3E0BE43F386D11"
@@ -2465,70 +2416,28 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "74D85DC6D137784C"
-				item: "minecraft:tnt"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:tnt"
+							}
+							{
+								Count: 1b
+								id: "gtceu:industrial_tnt"
+							}
+						]
+					}
+				}
+				title: "{moni.task.74D85DC6D137784C}"
 				type: "item"
 			}]
+			title: "{moni.quest.25B0271106684DF7.title}"
 			x: 3.0d
 			y: 24.0d
-		}
-		{
-			dependencies: ["7A65459E4DFAAC2D"]
-			description: [
-				"{moni.quest.425D1C34A82B054D.description1}"
-				""
-				"{moni.quest.425D1C34A82B054D.description2}"
-			]
-			icon: "gtceu:naquadah_reactor"
-			id: "425D1C34A82B054D"
-			rewards: [{
-				id: "01C277FEA61EBA19"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "7890B705137B8EA5"
-					item: "gtceu:naquadah_reactor"
-					type: "item"
-				}
-				{
-					id: "3C8BD4187F47FBC9"
-					item: "gtceu:black_steel_block"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "4F11D4069AEF06CA"
-					item: "gtceu:duranium_block"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "2FF2B4C219053E6A"
-					item: "ae2:spatial_pylon"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "27B323E3ADED4829"
-					item: "gtceu:fusion_glass"
-					type: "item"
-				}
-				{
-					count: 14L
-					id: "2D40468415EA637F"
-					item: "gtceu:reaction_safe_mixing_casing"
-					type: "item"
-				}
-				{
-					id: "1685A72D65A02E82"
-					item: "gtceu:luv_energy_output_hatch"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.425D1C34A82B054D.title}"
-			x: 20.5d
-			y: 15.25d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
@@ -2823,6 +2732,37 @@
 			title: "{moni.quest.044553423097C3C7.title}"
 			x: 1.5d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"62AC7103FF9D25FD"
+				"739F7BF2A90B278A"
+				"49B872B193268554"
+			]
+			description: [
+				"{moni.quest.61301FBD825F8280.description1}"
+				""
+				"{moni.quest.61301FBD825F8280.description2}"
+				""
+				"{moni.quest.61301FBD825F8280.description3}"
+			]
+			icon: "gtceu:omnium_ingot"
+			id: "61301FBD825F8280"
+			tasks: [
+				{
+					id: "4205D04F8EFE2D7D"
+					item: "gtceu:omnium_nugget"
+					type: "item"
+				}
+				{
+					id: "56970BBAFAB8BEB7"
+					item: "gtceu:omnium_ingot"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.61301FBD825F8280.title}"
+			x: 11.0d
+			y: 20.25d
 		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"

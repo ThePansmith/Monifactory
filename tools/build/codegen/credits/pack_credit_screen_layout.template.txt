@@ -1,0 +1,170 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = pack_credit_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1736485618717
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:73625936-8044-436c-b8f6-4aa265b64642-1736485543808] = [groups:][instances:]
+}
+
+menu_background {
+  image_path = [source:web]https://raw.githubusercontent.com/ThePansmith/MonifactoryAssets/refs/heads/main/menubg/monibgoverrideblur.png
+  slide = false
+  repeat_texture = false
+  fallback_path = [source:local]/config/fancymenu/assets/monibgblur.png
+  background_type = image
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+customization {
+  action = setscale
+  scale = 4.0
+}
+
+customization {
+  action = autoscale
+  basewidth = 1920
+  baseheight = 1017
+}
+
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  copy_client_player = true
+  auto_skin = false
+  auto_cape = false
+  slim = true
+  scale = 30
+  parrot = false
+  parrot_left_shoulder = false
+  is_baby = false
+  crouching = false
+  showname = true
+  head_follows_mouse = true
+  body_follows_mouse = true
+  element_type = fancymenu_customization_player_entity
+  instance_identifier = 05a94889-7e0b-4e8b-b814-893fbcd15172-1736533307599
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = bottom-centered
+  x = -9
+  y = -55
+  width = 18
+  height = 54
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 95f24abd-2121-4edf-99e1-0c5a16b47350-1736533307599
+  [loading_requirement_container_meta:95f24abd-2121-4edf-99e1-0c5a16b47350-1736533307599] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 99368170-f09c-4fc2-8a1f-3707aa6b2804-1736533287997
+  [executable_block:99368170-f09c-4fc2-8a1f-3707aa6b2804-1736533287997][type:generic] = [executables:]
+  backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  description = {"placeholder":"local","values":{"key":"moni_credits_screen_player_tooltip_1"}}%n%{"placeholder":"local","values":{"key":"moni_credits_screen_player_tooltip_2"}}%n%{"placeholder":"local","values":{"key":"moni_credits_screen_player_tooltip_3"}}
+  navigatable = true
+  widget_active_state_requirement_container_identifier = d5bba0d9-fd0e-4a98-99af-41d35ba30194-1736533287997
+  [loading_requirement_container_meta:d5bba0d9-fd0e-4a98-99af-41d35ba30194-1736533287997] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = 7b0bb8b7-9ae3-4dd0-ad4b-17dd6f07c514-1736533334254
+  custom_element_layer_name = Patreon
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = top-left
+  x = 226
+  y = 220
+  width = 28
+  height = 47
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = d687c7e6-9e67-4ea2-a3ad-da89bd881852-1736533287997
+  [loading_requirement_container_meta:d687c7e6-9e67-4ea2-a3ad-da89bd881852-1736533287997] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
+  [executable_action_instance:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797][action_type:closegui] = 
+  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797;]
+  backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  hoverlabel = {"placeholder":"local","values":{"key":"moni_credits_screen_back_to_menu_button_hover"}}
+  label = {"placeholder":"local","values":{"key":"moni_credits_screen_back_to_menu_button"}}
+  navigatable = true
+  widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
+  [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
+  element_type = custom_button
+  instance_identifier = 516e70f1-3ec3-480c-b6bf-cbdfa10779bd-1736533926701
+  custom_element_layer_name = Patreon
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = element
+  anchor_point_element = mc_titlescreen_singleplayer_button
+  x = -30
+  y = 266
+  width = 143
+  height = 19
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
+  [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
+}
+
+{{CODEGEN}}

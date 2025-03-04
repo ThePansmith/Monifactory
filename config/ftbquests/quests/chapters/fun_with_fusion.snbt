@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "fun_with_fusion"
-	group: "18F0ED1F9A002C08"
+	group: "0D5BFFD0A5E49312"
 	icon: "gtceu:luv_fusion_reactor"
 	id: "40F7695BE1E65C41"
-	order_index: 6
+	order_index: 3
 	quest_links: [
 		{
 			id: "569E4C671C9A4419"
@@ -71,42 +71,15 @@
 			x: 5.0d
 			y: -2.0d
 		}
+		{
+			id: "50BE763190346D54"
+			linked_quest: "1405D08C6A87B3BB"
+			shape: "square"
+			x: -4.0d
+			y: -2.0d
+		}
 	]
 	quests: [
-		{
-			dependencies: ["2D10F2E538486624"]
-			description: ["{moni.quest.1405D08C6A87B3BB.description1}"]
-			icon: "gtceu:plasma_large_turbine"
-			id: "1405D08C6A87B3BB"
-			rewards: [{
-				id: "265F8AF395C89377"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [
-				{
-					id: "5CA6A3EE3EF632F5"
-					item: "gtceu:plasma_large_turbine"
-					type: "item"
-				}
-				{
-					count: 28L
-					id: "6324614154FC58BF"
-					item: "gtceu:tungstensteel_turbine_casing"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "3D5916D81DAB1BCC"
-					item: "gtceu:tungstensteel_gearbox"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.1405D08C6A87B3BB.title}"
-			x: -4.0d
-			y: -1.75d
-		}
 		{
 			dependencies: ["2A6E9E7C80754936"]
 			description: ["{moni.quest.1183B96529D08326.description1}"]
@@ -543,6 +516,7 @@
 				title: "{moni.task.5CF757A158365EEF}"
 				type: "item"
 			}]
+			title: "{moni.quest.7D7B34CF5145F971.title}"
 			x: -1.0d
 			y: -10.25d
 		}
@@ -648,6 +622,7 @@
 				title: "{moni.task.4B9300AA8500D15F}"
 				type: "item"
 			}]
+			title: "{moni.quest.0E5E5E647F378D02.title}"
 			x: 0.5d
 			y: -9.5d
 		}
@@ -737,6 +712,7 @@
 				title: "{moni.task.0D3D5AC8CBB48681}"
 				type: "item"
 			}]
+			title: "{moni.quest.79197A2CD8E435B2.title}"
 			x: 2.0d
 			y: -8.75d
 		}

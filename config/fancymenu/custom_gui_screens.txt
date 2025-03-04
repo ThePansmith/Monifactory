@@ -4,11 +4,29 @@ overridden_screens {
 }
 
 custom_gui {
+  identifier = pack_credit_screen
+  title = 
+  allow_esc = true
+  transparent_world_background = false
+  transparent_world_background_overlay = false
+  pause_game = false
+}
+
+custom_gui {
   identifier = menu_base_fullscreen
   title = 
   allow_esc = true
   transparent_world_background = true
   transparent_world_background_overlay = true
   pause_game = true
+}
+
+custom_gui {
+  identifier = pack_link_screen
+  title = 
+  allow_esc = true
+  transparent_world_background = false
+  transparent_world_background_overlay = false
+  pause_game = false
 }
 

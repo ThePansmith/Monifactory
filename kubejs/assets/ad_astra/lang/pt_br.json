@@ -49,11 +49,13 @@
     "block.ad_astra.raw_calorite_block": "Bloco de liga vermelha bruta",
     "block.ad_astra.raw_desh_block": "Bloco de bronze bruto",
     "block.ad_astra.raw_ostrum_block": "Bloco de chumbo bruto",
-    "item.ad_astra.desh_engine": "Motor de carboneto de tungstênio",
-    "item.ad_astra.ostrum_engine": "Motor de lúmio",
+    "item.ad_astra.desh_engine": "Motor de Signalum",
+    "item.ad_astra.ostrum_engine": "Motor de HSS-S",
     "item.ad_astra.calorite_engine": "Motor de cryolobus",
-    "item.ad_astra.desh_tank": "Tanque de carboneto de tungstênio",
-    "item.ad_astra.ostrum_tank": "Tanque de lúmio",
+    "item.ad_astra.desh_tank": "Tanque de Signalum",
+    "item.ad_astra.ostrum_tank": "Tanque de HSS-S",
     "item.ad_astra.calorite_tank": "Tanque de cryolobus",
-    "info.ad_astra.oxygen_loader": "Utiliza o Oxigênio do Gregtech para encher trajes espaciais e tanques de gás."
+    "info.ad_astra.oxygen_loader": "Utiliza o Oxigênio do Gregtech para encher trajes espaciais e tanques de gás.",
+    "item.ad_astra.steel_engine": "Motor de Aço Escuro",
+    "item.ad_astra.steel_tank": "Tanque de Aço Escuro"
 }
