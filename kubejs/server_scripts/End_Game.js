@@ -5,11 +5,11 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("neutron_emitter")
-        .itemInputs("4x gtceu:double_neutronium_plate", "4x gtceu:polyethyl_cyanoacrylate_plate")
-        .inputFluids("gtceu:tin_alloy 4680")
+        .itemInputs("4x gtceu:double_neutronium_plate", "6x gtceu:graphene_foil", "4x gtceu:polybenzimidazole_plate")
+        .inputFluids("gtceu:tin_alloy 4608")
         .itemOutputs("kubejs:neutron_emitter")
         .duration(1000)
-        .EUt(GTValues.VHA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.chemical_bath("uranic_solution_uraninite")
         .inputFluids("gtceu:hypochlorous_acid 1000")
@@ -513,4 +513,10 @@ ServerEvents.recipes(event => {
             Z: "kubejs:infinity_wire_cutter"
         })
     }
+
+    event.recipes.gtceu.canner("contained_singularity")
+        .itemInputs("kubejs:singularity_containment_unit", "ae2:singularity")
+        .itemOutputs("kubejs:contained_singularity")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.UEV])
 })
