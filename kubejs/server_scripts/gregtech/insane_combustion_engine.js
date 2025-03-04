@@ -48,11 +48,11 @@ ServerEvents.recipes(event => {
         H: "#forge:tools/hammers",
         W: "#forge:tools/wrenches",
         C: "kubejs:hardened_machine_casing",
-        R: "#forge:rotors/enriched_naquadah",
+        R: "#forge:rotors/naquadah",
     }).id("gtceu:shaped/insane_engine_intake_casing")
 
     event.recipes.gtceu.assembler("insane_engine_intake_casing")
-        .itemInputs("2x #forge:rotors/enriched_naquadah", "4x gtceu:naquadah_normal_fluid_pipe", "kubejs:hardened_machine_casing")
+        .itemInputs("2x #forge:rotors/naquadah", "4x gtceu:naquadah_normal_fluid_pipe", "kubejs:hardened_machine_casing")
         .itemOutputs("2x kubejs:insane_engine_intake_casing")
         .duration(50)
         .EUt(16)

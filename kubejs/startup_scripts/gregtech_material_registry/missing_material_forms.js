@@ -41,8 +41,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     // Existing materials that get new material forms
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
     GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
-    GTMaterials.Naquadah.addFlags(GTMaterialFlags.GENERATE_GEAR)
-    GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR)
+    GTMaterials.Naquadah.addFlags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_ROTOR)
+    GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME)
     GTMaterials.Graphite.addFlags(GTMaterialFlags.GENERATE_PLATE)
     GTMaterials.MagnesiumDiboride.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
