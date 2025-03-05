@@ -5,7 +5,7 @@
 	heat_multiplier = 3.24444444
 	#Depletion multiplier. Affects how long fuel lasts.
 	#Range: 0.0 ~ 1000.0
-	depletion_multiplier = 100.0
+	depletion_multiplier = 1.0
 	#Heat multiplier. Affects to all fuels.
 	#Range: 0.01 ~ 100.0
 	fuel_heat_multiplier = 1.0
