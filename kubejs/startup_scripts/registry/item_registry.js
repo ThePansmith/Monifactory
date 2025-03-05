@@ -51,9 +51,9 @@ StartupEvents.registry("item", event => {
 
     // Miner kits
     event.create("gem_sensor").maxStackSize(16).displayName("Gemstone Sensor")
-    event.create("basic_drilling_kit").maxStackSize(16)
-    event.create("advanced_drilling_kit").maxStackSize(16)
-    event.create("advanced_drilling_kit_ii").maxStackSize(16).displayName("Advanced Drill Kit II")
+    event.create("basic_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/basic_drilling_kit")
+    event.create("advanced_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit")
+    event.create("advanced_drilling_kit_ii").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit_ii").displayName("Advanced Drill Kit II")
     event.create("blasting_kit").maxStackSize(16)
     event.create("microversal_alchemy_kit").maxStackSize(16)
 
