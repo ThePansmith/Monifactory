@@ -362,7 +362,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["0BFAE16A8B131E84"]
+			dependencies: ["2C784A17221E93F0"]
 			id: "4B8A69BC50C60891"
 			optional: true
 			size: 0.2d
@@ -371,7 +371,7 @@
 				title: "{moni.task.2026CA71AB1F0711}"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -1039,6 +1039,38 @@
 			}]
 			title: "{moni.quest.21E10888F52A3C73.title}"
 			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0BFAE16A8B131E84"]
+			icon: "gtceu:insane_combustion_engine"
+			id: "2C784A17221E93F0"
+			tasks: [
+				{
+					id: "6C73A47ED37B2E38"
+					item: "gtceu:insane_combustion_engine"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5A0331CC3BE2FEA7"
+					item: { Count: 8, id: "kubejs:insane_engine_intake_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "613DC2ED454511E0"
+					item: { Count: 2, id: "kubejs:naquadah_gearbox" }
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "201D8D76055CCD06"
+					item: { Count: 19, id: "kubejs:hardened_machine_casing" }
+					type: "item"
+				}
+			]
+			x: 0.0d
 			y: -1.0d
 		}
 	]
