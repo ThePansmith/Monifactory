@@ -116,11 +116,11 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge("extraterrestrial_metal_mixture_centrifuging")
         .itemInputs("gtceu:extraterrestrial_metal_mixture_dust")
-        .chancedOutput("gtceu:ilmenite_dust", 4000, 0)
-        .chancedOutput("gtceu:chromite_dust", 2500, 0)
-        .chancedOutput("gtceu:pyrolusite_dust", 2000, 0)
-        .chancedOutput("gtceu:wulfenite_dust", 1500, 70)
-        .chancedOutput("gtceu:tungstate_dust", 1100, 110)
+        .chancedOutput("gtceu:ilmenite_dust", 6000, 0)
+        .chancedOutput("gtceu:chromite_dust", 4000, 0)
+        .chancedOutput("gtceu:pyrolusite_dust", 3500, 0)
+        .chancedOutput("gtceu:wulfenite_dust", 2200, 70)
+        .chancedOutput("gtceu:tungstate_dust", 1700, 110)
         .duration(1000)
         .EUt(GTValues.VA[GTValues.IV])
 
