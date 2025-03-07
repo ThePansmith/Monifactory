@@ -2,6 +2,7 @@
  * Maceration recipes for Ad Astra planetary rock dusts
  * Makes planetary rock dusts drop from ores
  * Centrifuge recipes for converting planetary rock dusts into valuable resources
+ * Maceration recipes for converting other blocks found on planets to resources
  */
 
 ServerEvents.recipes(event => {
@@ -17,7 +18,7 @@ ServerEvents.recipes(event => {
     regolithDustResources.forEach((planetResources, fluxCount) => {
         // Planetary dust maceration recipe
         planetResources[0].forEach(rocksToMacerate => {
-            event.recipes.gtceu.macerator(rocksToMacerate)
+            event.recipes.gtceu.macerator(`macerate_${rocksToMacerate}`)
                 .itemInputs(`ad_astra:${rocksToMacerate}`)
                 .itemOutputs(`kubejs:${planetResources[1]}`)
                 .duration(200)
@@ -102,6 +103,32 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:tungstate_dust", 1100, 110)
         .duration(1000)
         .EUt(GTValues.VA[GTValues.IV])
+
+    // Maceration recycling for other extraterrestrial materials
+    event.recipes.gtceu.macerator("macerate_conglomerate")
+        .itemInputs("ad_astra:conglomerate")
+        .chancedOutput("gtceu:mirabilite_dust", 2500, 0)
+        .chancedOutput("gtceu:redrock_dust", 2500, 0)
+        .chancedOutput("gtceu:biotite_dust", 2500, 0)
+        .chancedOutput("gtceu:gypsum_dust", 2500, 0)
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.MV])
+
+    event.recipes.gtceu.macerator("macerate_infernal_spire")
+        .itemInputs("ad_astra:infernal_spire_block")
+        .chancedOutput("minecraft:blaze_powder", 5000, 0)
+        .chancedOutput("gtceu:bauxite_dust", 2000, 200)
+        .chancedOutput("gtceu:scheelite_dust", 1500, 150)
+        .chancedOutput("gtceu:netherite_scrap_dust", 500, 100)
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.IV])
+
+    event.recipes.gtceu.macerator("macerate_permafrost")
+        .itemInputs("ad_astra:permafrost")
+        .chancedOutput("gtceu:ice_dust", 5000, 0)
+        .chancedOutput("minecraft:dirt", 5000, 0)
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.ULV])
 
     // Dilithium
     event.recipes.gtceu.autoclave("dilithium_helium")
