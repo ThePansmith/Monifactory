@@ -1,12 +1,21 @@
 // @ts-check
 import Juke from "juke-build";
 import fs from "fs";
-import { randomUUID } from "crypto";
+import UUID from "uuid-1345";
 import { fileURLToPath } from "url";
 import z from "zod";
 
 import { readDatafileJSON } from "../../lib/json_datafile.js";
 import { fillTemplateFile, fillTemplates } from "../fill_templates.js";
+
+let UUIDcounter = -1;
+function randomUUID() {
+    UUIDcounter += 1;
+    return UUID.v5({
+        namespace: UUID.namespace.url,
+        name: `mcuuid://monifactory/credits/${UUIDcounter}`,
+    })
+}
 
 /**
  * @param {string} f
