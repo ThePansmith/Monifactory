@@ -1,6 +1,7 @@
 /**
- * Makes Ad Astra rock dusts drop from ores
- * Also centrifuge recipes for dusts
+ * Maceration recipes for Ad Astra planetary rock dusts
+ * Makes planetary rock dusts drop from ores
+ * Centrifuge recipes for converting planetary rock dusts into valuable resources
  */
 
 ServerEvents.recipes(event => {
@@ -9,7 +10,8 @@ ServerEvents.recipes(event => {
         [["moon_sand", "moon_cobblestone", "moon_stone"], "moon_dust", "minecraft:diamond"],
         [["mars_sand", "mars_cobblestone", "mars_stone"], "mars_dust", "gtceu:monazite_gem"],
         [["venus_sand", "venus_cobblestone", "venus_stone"], "venus_dust", "gtceu:olivine_gem"],
-        [["mercury_cobblestone", "mercury_stone"], "mercury_dust", "gtceu:cinnabar_gem"]
+        [["mercury_cobblestone", "mercury_stone"], "mercury_dust", "gtceu:cinnabar_gem"],
+        [["glacio_cobblestone", "glacio_stone"], "glacio_dust", "gtceu:sodalite_gem"]
     ]
 
     regolithDustResources.forEach((planetResources, fluxCount) => {
@@ -30,7 +32,7 @@ ServerEvents.recipes(event => {
         ], {
             A: planetResources[2],
             B: `kubejs:${planetResources[1]}`
-        })
+        }).id(`kubejs:quantum_flux_from_${planetResources[1]}`)
     })
 
     // Rock dust centrifuging
@@ -80,6 +82,16 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
 
+    event.recipes.gtceu.centrifuge("glacio_dust_centrifuging")
+        .itemInputs("kubejs:glacio_dust")
+        .chancedOutput("gtceu:small_stone_dust", 2500, 0)
+        .chancedOutput("gtceu:small_granitic_mineral_sand_dust", 1000, 25)
+        .chancedOutput("gtceu:small_kyanite_dust", 750, 15)
+        .chancedOutput("gtceu:small_alunite_dust", 550, 5)
+        .chancedOutput("gtceu:small_oilsands_dust", 100, 10)
+        .chancedOutput("gtceu:small_bastnasite_dust", 2750, 50)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.IV])
 
     // Dilithium
     event.recipes.gtceu.autoclave("dilithium_helium")
@@ -116,8 +128,15 @@ LootJS.modifiers((event) => {
         .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
         .applyOreBonus("minecraft:fortune")
 
+    const glacioDust = LootEntry.of("kubejs:glacio_dust").when(c => c.randomChance(0.50))
+    const glacioDustFortune = LootEntry.of("kubejs:glacio_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
     event.addBlockLootModifier(/.*moon_.*_ore$/).addSequenceLoot(moonDust, moonDustFortune);
     event.addBlockLootModifier(/.*mars_.*_ore$/).addSequenceLoot(marsDust, marsDustFortune);
     event.addBlockLootModifier(/.*venus_.*_ore$/).addSequenceLoot(venusDust, venusDustFortune);
     event.addBlockLootModifier(/.*mercury_.*_ore$/).addSequenceLoot(mercuryDust, mercuryDustFortune);
+    event.addBlockLootModifier(/.*glacio_.*_ore$/).addSequenceLoot(glacioDust, glacioDustFortune);
 });
