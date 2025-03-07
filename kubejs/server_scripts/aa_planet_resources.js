@@ -8,19 +8,39 @@
 ServerEvents.recipes(event => {
     // Regolith dusts
     let regolithDustResources = [
-        [["moon_sand", "moon_cobblestone", "moon_stone"], "moon_dust", "minecraft:diamond"],
-        [["mars_sand", "mars_cobblestone", "mars_stone"], "mars_dust", "gtceu:monazite_gem"],
-        [["venus_sand", "venus_cobblestone", "venus_stone"], "venus_dust", "gtceu:olivine_gem"],
-        [["mercury_cobblestone", "mercury_stone"], "mercury_dust", "gtceu:cinnabar_gem"],
-        [["glacio_cobblestone", "glacio_stone"], "glacio_dust", "gtceu:sodalite_gem"]
+        ["moon", ["moon_sand"], "minecraft:diamond"],
+        ["mars", ["mars_sand"], "gtceu:monazite_gem"],
+        ["venus", ["venus_sandstone", "venus_sandstone_bricks", "cracked_venus_sandstone_bricks", "venus_sand"], "gtceu:olivine_gem"],
+        ["mercury", [], "gtceu:cinnabar_gem"],
+        ["glacio", [], "gtceu:sodalite_gem"]
     ]
 
     regolithDustResources.forEach((planetResources, fluxCount) => {
-        // Planetary dust maceration recipe
-        planetResources[0].forEach(rocksToMacerate => {
-            event.recipes.gtceu.macerator(`macerate_${rocksToMacerate}`)
-                .itemInputs(`ad_astra:${rocksToMacerate}`)
-                .itemOutputs(`kubejs:${planetResources[1]}`)
+        let stone_variants = [
+            `${planetResources[0]}_stone`,
+            `${planetResources[0]}_cobblestone`,
+            `${planetResources[0]}_stone_bricks`,
+            `cracked_${planetResources[0]}_stone_bricks`,
+            `chiseled_${planetResources[0]}_stone_bricks`,
+            `polished_${planetResources[0]}_stone`,
+            `${planetResources[0]}_pillar`,
+            `${planetResources[0]}_stone_brick_wall`
+        ]
+
+        // Planetary dust maceration recipe: stone variants
+        stone_variants.forEach(variant => {
+            event.recipes.gtceu.macerator(`macerate_${variant}`)
+                .itemInputs(`ad_astra:${variant}`)
+                .itemOutputs(`kubejs:${planetResources[0]}_dust`)
+                .duration(200)
+                .EUt(GTValues.VHA[GTValues.HV])
+        })
+
+        // Planetary dust maceration recipe: others
+        planetResources[1].forEach(variant => {
+            event.recipes.gtceu.macerator(`macerate_${variant}`)
+                .itemInputs(`ad_astra:${variant}`)
+                .itemOutputs(`kubejs:${planetResources[0]}_dust`)
                 .duration(200)
                 .EUt(GTValues.VHA[GTValues.HV])
         })
@@ -32,8 +52,8 @@ ServerEvents.recipes(event => {
             " B "
         ], {
             A: planetResources[2],
-            B: `kubejs:${planetResources[1]}`
-        }).id(`kubejs:quantum_flux_from_${planetResources[1]}`)
+            B: `kubejs:${planetResources[0]}_dust`
+        }).id(`kubejs:quantum_flux_from_${planetResources[0]}_dust`)
     })
 
     // Rock dust centrifuging
