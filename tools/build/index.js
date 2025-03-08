@@ -11,6 +11,8 @@ import path, { resolve } from "path";
 import Juke from "juke-build";
 import { DownloadCF, GetModInfo } from "./lib/curseforge.js";
 import { CodegenAllTarget } from "./codegen/target-all.js";
+import { z } from "zod";
+import { progressNumber } from "./lib/log.js"
 
 Juke.chdir("../..", import.meta.url);
 Juke.setup({ file: import.meta.url }).then((code) => {
@@ -117,11 +119,18 @@ export const BuildModlistTarget = new Juke.Target({
     outputs: ["dist/modlist.html"],
     executes: async () => {
         fs.mkdirSync("dist", { recursive: true })
-        const jsonData = JSON.parse(fs.readFileSync("manifest.json", "utf-8"));
+        const {files} = z.object({
+            files: z.object({
+                projectID: z.number()
+            }).array()
+        }).parse(
+            JSON.parse(fs.readFileSync("manifest.json", "utf-8"))
+        );
+        const total = progressNumber(files.length)
         let html = "<ul>\n"
-        for (const key in jsonData.files) {
-            const file = jsonData.files[key];
-            const modInfo = await GetModInfo(file.projectID);
+        for (const [i, {projectID}] of files.entries()) {
+            const modInfo = await GetModInfo(projectID);
+            Juke.logger.info(`Downloaded: (${total(i)}) Mod info "${modInfo.name}"`)
             html += `<li><a href=${modInfo.links.websiteUrl}>${modInfo.name} (by ${modInfo.authors[0].name})</a></li>\n`;
         }
         html += "</ul>"
