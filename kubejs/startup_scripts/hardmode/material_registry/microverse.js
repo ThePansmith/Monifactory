@@ -3,7 +3,7 @@
  */
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    if (!isHardMode) {
+    if (doCreativeTank) {
         return;
     }
 

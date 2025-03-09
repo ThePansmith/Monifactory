@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    if (isHardMode) {
+    if (doStabMiners) {
         // //// Machine Recipe //////
         event.recipes.extendedcrafting.shaped_table("gtceu:actualization_chamber", [
             "PPPPP",
