@@ -1,4 +1,9 @@
-/** Server-side pack mode management. */
+/**
+ * Server-side pack mode management.
+ * This file adds a set of constant booleans for convenience in determining if a feature is enabled
+ * and enables gamestages to toggle feature-specific FTBQuests quests if the respective content is also enabled.
+ */
+
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
 const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;

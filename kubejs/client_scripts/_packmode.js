@@ -1,4 +1,7 @@
-/** Client-side pack mode boolean constants for convenience. */
+/**
+ * Client-side pack mode management.
+ * This file adds a set of constant booleans for convenience in determining if a feature is enabled.
+ */
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
 const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;

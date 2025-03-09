@@ -1,5 +1,6 @@
 // priority: 1000
 /**
+ * Pack mode management.
  * Handles the interpretation of packmode.json to determine the global pack mode.
  * This determines the values of global booleans like doHNN, doHarderProcessing, and doMonicoins.
  * These are used in other scripts to define pack mode-specific behavior.
@@ -90,7 +91,12 @@ const isExpertMode = !!global.isExpertMode;
  */
 const isHardMode = !!global.isHardMode;
 
-// Global feature toggle booleans. Shared across client and server.
+/*
+Global feature toggle booleans. Shared across client and server.
+If you want to alter some mode-specific features on your instance, do so here.
+However, be warned that if you do so then no support will be provided for any issues you may encounter.
+On the flipside, if you create your own fix for an issue you encounter, then any Pull Requests with such a fix are welcome.
+*/
 global.doAssemblyLineOrderingWarning = packMode == "Hard" || packMode == "Expert";
 global.doBoilers = packMode == "Normal" || packMode == "Hard";
 global.doCompacting = packMode == "Normal" || packMode == "Hard";
@@ -110,7 +116,6 @@ global.doStabMiners = packMode == "Hard" || packMode == "Expert";
 global.doSteamAge = packMode == "Hard" || packMode == "Expert";
 global.doStoneline = packMode == "Hard" || packMode == "Expert";
 
-// Server-side boolean constants in startup for convenience.
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
 const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;
