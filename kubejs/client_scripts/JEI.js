@@ -30,7 +30,7 @@ JEIEvents.hideItems(event => {
 
     // snad
     event.hide("snad:soul_snad")
-    if (isExpertMode) {
+    if (!doSnad) {
         event.hide(["snad:snad", "snad:red_snad"])
     }
 
@@ -179,9 +179,10 @@ JEIEvents.hideItems(event => {
     event.hide("sophisticatedstorage:stack_upgrade_tier_1_plus")
     event.hide("sophisticatedbackpacks:stack_upgrade_starter_tier")
 
-    // Sophisticated compacting upgrades
-    if (isExpertMode) {
+    // Sophisticated compacting upgrades and Functional Storage compacting drawers
+    if (!doCompacting) {
         event.hide(/^sophisticated.*(compacting|compression)_upgrade$/)
+        event.hide(/^functionalstorage:.*compacting.*_drawer$/)
     }
 
     // Sophisticated Experience

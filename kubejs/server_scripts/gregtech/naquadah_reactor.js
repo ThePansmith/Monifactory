@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         .EUt(491520)
         .stationResearch(b => b.researchStack(Item.of("gtceu:naquadah_reactor")).EUt(524288).CWUt(128, 512000))
 
-    if (!isNormalMode) {
+    if (!doCreativeTank) {
         // Refinery Recipe
         event.recipes.gtceu.assembly_line("kubejs:naquadah_refinery")
             .itemInputs("gtceu:large_mixer", "4x #gtceu:circuits/uhv", "8x nuclearcraft:plate_elite", "4x gtceu:uhv_field_generator", "4x gtceu:uhv_hermetic_casing", "2x kubejs:empty_fuel_rod", "2x gtceu:uhv_electric_pump", "2x gtceu:neutronium_huge_fluid_pipe", "4x kubejs:cryotheum_coolant_unit", "16x gtceu:double_tritanium_plate")
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         .EUt(-3 * GTValues.V[GTValues.ZPM])
 
     // Large Naquadah Reactor Fluid Recipes
-    if (!isNormalMode) {
+    if (!doCreativeTank) {
 
         event.recipes.gtceu.large_naquadah_reactor("kubejs:process_t1_fuel")
             .inputFluids("gtceu:naq_fuel_t1 10")
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
     }
 
     // Solid Large Reactor Recipes
-    if (isNormalMode) {
+    if (doCreativeTank) {
         event.recipes.gtceu.large_naquadah_reactor("kubejs:process_solid_fuel")
             .itemInputs("4x kubejs:naquadah_fuel_rod")
             .itemOutputs("4x kubejs:hot_depleted_naquadah_fuel_rod")

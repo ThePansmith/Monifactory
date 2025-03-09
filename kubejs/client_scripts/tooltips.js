@@ -13,8 +13,12 @@ ItemEvents.tooltip(tooltip => {
         microminer_tooltip(i)
     }
 
-    tooltip.add("kubejs:microminer_t4half", Text.translatable("item.kubejs.microminer_t4half.desc"))
-    tooltip.add("kubejs:microminer_t8half", Text.translatable("item.kubejs.microminer_t8half.desc"))
+    if (!doHNN) {
+        tooltip.add("kubejs:microminer_t4half", Text.translatable("item.kubejs.microminer_t4half.desc"))
+    }
+    if (!doCreativeTank) {
+        tooltip.add("kubejs:microminer_t8half", Text.translatable("item.kubejs.microminer_t8half.desc"))
+    }
 
     tooltip.addAdvanced(["/kubejs:stabilized_microminer/"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.stabilized_microminer.tooltip.1"))
@@ -32,13 +36,18 @@ ItemEvents.tooltip(tooltip => {
     // Endgame Items
     tooltip.add("kubejs:ultimate_gem", Text.translatable("kubejs.ultimate_gem.tooltip"))
 
-    // Hardmode+ Stuff
-    if (!isNormalMode) {
+    // Assembly line ordering
+    if (doAssemblyLineOrderingWarning) {
         tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.hardmode"))
+    } else {
+        tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.normal"))
+    }
+
+    // Meowni Plush
+    if (doMeowniPlush) {
         tooltip.add("kubejs:meowni_plush", Text.translatable("kubejs.meowni_plush.tooltip.hardmode.1"))
         tooltip.add("kubejs:meowni_plush", Text.translatable("kubejs.meowni_plush.tooltip.hardmode.2"))
     } else {
-        tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.normal"))
         tooltip.add("kubejs:meowni_plush", Text.translatable("kubejs.meowni_plush.tooltip.normal.1"))
         tooltip.add("kubejs:meowni_plush", Text.translatable("kubejs.meowni_plush.tooltip.normal.2"))
     }

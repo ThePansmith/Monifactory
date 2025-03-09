@@ -4,7 +4,7 @@
 ServerEvents.recipes(event => {
 
     // Liquid Fuel recipes
-    if (!isNormalMode) {
+    if (!doCreativeTank) {
 
         // Piranha Solution
         event.recipes.gtceu.mixer("piranha_solution")

@@ -15,23 +15,6 @@ ServerEvents.recipes(event => {
             .EUt(1966080)
     }
 
-    // Manual fix for half tier miners
-    if (isHardMode) {
-        event.recipes.gtceu.assembly_line("stable_t4half")
-            .itemInputs("kubejs:microminer_t4half", "kubejs:heart_of_a_universe", "4x kubejs:hadal_shard", "24x gtceu:uv_field_generator", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate")
-            .inputFluids("gtceu:rocket_fuel 40800", "gtceu:omnium 576", "gtceu:neutronium 576")
-            .itemOutputs("kubejs:stabilized_microminer_t4half")
-            .duration(125)
-            .EUt(1966080)
-
-        event.recipes.gtceu.assembly_line("stable_t8half")
-            .itemInputs("kubejs:microminer_t8half", "kubejs:heart_of_a_universe", "4x kubejs:hadal_shard", "24x gtceu:uv_field_generator", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate")
-            .inputFluids("gtceu:rocket_fuel 40800", "gtceu:omnium 576", "gtceu:neutronium 576")
-            .itemOutputs("kubejs:stabilized_microminer_t8half")
-            .duration(125)
-            .EUt(1966080)
-    }
-
     // Pristine matter recipe
     function pristine_matter(tier, microtier) {
         if (microtier == 1) {
@@ -57,7 +40,22 @@ ServerEvents.recipes(event => {
         }
     }
 
-    if (isHardMode) {
+    if(doStabMiners) {
+        for (let i = 1; i <= 8; i++) {
+            stabilized_miners(i)
+        }
+        for (let i = 1; i <= 3; i++) {
+            pristine_matter(i, 1)
+        }
+        for (let i = 4; i <= 5; i++) {
+            pristine_matter(i, 2)
+        }
+        for (let i = 6; i <= 8; i++) {
+            pristine_matter(i, 3)
+        }
+    }
+
+    if (!doHNN) {
         // T4.5  Microminer
         event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t4half", [
             "  LGL  ",
@@ -79,46 +77,6 @@ ServerEvents.recipes(event => {
             d: "thermal:dynamo_compression",
             T: "kubejs:energetic_thruster"
         }).id("kubejs:microminer/t4half")
-
-        // T8.5  Microminer
-        event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t8half", [
-            "   AAA   ",
-            "  ANNNA  ",
-            " GNTTTNG ",
-            " NNTFTNN ",
-            " NTECETN ",
-            "NNTSFSTNN",
-            "NTTQWQTTN",
-            "NTTCWCTTN",
-            " XXX XXX "
-        ], {
-            A: "kubejs:supercharged_laser_array",
-            N: "gtceu:double_naquadah_alloy_plate",
-            G: "kubejs:advanced_micro_miner_guidance_system",
-            T: "gtceu:double_trinium_plate",
-            F: "gtceu:zpm_field_generator",
-            E: "gtceu:zpm_emitter",
-            S: "gtceu:naquadah_alloy_frame",
-            Q: "gtceu:luv_quantum_chest",
-            W: "kubejs:warp_core",
-            C: "kubejs:warp_controller",
-            X: "kubejs:warp_engine"
-        }).id("kubejs:microminer/t8half")
-
-        for (let i = 1; i <= 8; i++) {
-            stabilized_miners(i)
-        }
-        for (let i = 1; i <= 3; i++) {
-            pristine_matter(i, 1)
-        }
-        for (let i = 4; i <= 5; i++) {
-            pristine_matter(i, 2)
-        }
-        for (let i = 6; i <= 8; i++) {
-            pristine_matter(i, 3)
-        }
-        pristine_matter("4half", 2)
-        pristine_matter("8half", 3)
 
         // Tier 4.5 missions
         event.recipes.gtceu.advanced_microverse_ii("t4half_one")
@@ -272,6 +230,33 @@ ServerEvents.recipes(event => {
             )
             .duration(100 * 20)
             .EUt(30720)
+    }
+
+    if (!doCreativeTank) {
+        // T8.5  Microminer
+        event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t8half", [
+            "   AAA   ",
+            "  ANNNA  ",
+            " GNTTTNG ",
+            " NNTFTNN ",
+            " NTECETN ",
+            "NNTSFSTNN",
+            "NTTQWQTTN",
+            "NTTCWCTTN",
+            " XXX XXX "
+        ], {
+            A: "kubejs:supercharged_laser_array",
+            N: "gtceu:double_naquadah_alloy_plate",
+            G: "kubejs:advanced_micro_miner_guidance_system",
+            T: "gtceu:double_trinium_plate",
+            F: "gtceu:zpm_field_generator",
+            E: "gtceu:zpm_emitter",
+            S: "gtceu:naquadah_alloy_frame",
+            Q: "gtceu:luv_quantum_chest",
+            W: "kubejs:warp_core",
+            C: "kubejs:warp_controller",
+            X: "kubejs:warp_engine"
+        }).id("kubejs:microminer/t8half")
 
         // Tier 8.5 missions
         event.recipes.gtceu.advanced_microverse_iii("t8half_one")
@@ -311,5 +296,28 @@ ServerEvents.recipes(event => {
             )
             .duration(450 * 20)
             .EUt(250000)
+    }
+
+    // Manual fix for half tier miners
+    if (doStabMiners && !doHNN) {
+        event.recipes.gtceu.assembly_line("stable_t4half")
+            .itemInputs("kubejs:microminer_t4half", "kubejs:heart_of_a_universe", "4x kubejs:hadal_shard", "24x gtceu:uv_field_generator", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate")
+            .inputFluids("gtceu:rocket_fuel 40800", "gtceu:omnium 576", "gtceu:neutronium 576")
+            .itemOutputs("kubejs:stabilized_microminer_t4half")
+            .duration(125)
+            .EUt(1966080)
+
+        pristine_matter("4half", 2)
+    }
+
+    if (doStabMiners && !doCreativeTank) {
+        event.recipes.gtceu.assembly_line("stable_t8half")
+            .itemInputs("kubejs:microminer_t8half", "kubejs:heart_of_a_universe", "4x kubejs:hadal_shard", "24x gtceu:uv_field_generator", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate", "7x gtceu:dense_iridium_plate")
+            .inputFluids("gtceu:rocket_fuel 40800", "gtceu:omnium 576", "gtceu:neutronium 576")
+            .itemOutputs("kubejs:stabilized_microminer_t8half")
+            .duration(125)
+            .EUt(1966080)
+
+        pristine_matter("8half", 3)
     }
 })

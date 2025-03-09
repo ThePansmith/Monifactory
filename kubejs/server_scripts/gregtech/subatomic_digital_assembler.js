@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         .totalCWU(800)
         .CWUt(16)
 
-    if (isNormalMode) {
+    if (doCreativeTank) {
         sda_print("creative_tank_data", 1, "gtceu:creative_tank", 64)
         // sda_print('creative_tank_data', 2, 'ae2:creative_fluid_cell', 64) //The fluid cell can output items as a bug. See #8193 on the AE2 Github.
 
@@ -70,9 +70,7 @@ ServerEvents.recipes(event => {
                 return result.withNBT({ record: { "#c": "ae2:f", id: item.nbt.Fluid.FluidName } })
             }
         })
-    }
-
-    if (!isNormalMode) {
+    } else {
         event.recipes.gtceu.subatomic_digital_assembly("omnicdata")
             .notConsumable("kubejs:omnic_data")
             .itemOutputs("gtceu:omnium_ingot")

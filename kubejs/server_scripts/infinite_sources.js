@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "thermal:device_water_gen" })
     event.remove({ id: "thermal:device_rock_gen" })
 
-    if (isNormalMode) {
+    if (!doHarderRecipes) {
         event.shaped("watercollector:watercollector", [
             "AAA",
             "B B",
@@ -37,7 +37,6 @@ ServerEvents.recipes(event => {
             N: "#forge:pistons",
             H: "minecraft:hopper"
         }).id("kubejs:device_rock_gen");
-
     } else {
         event.shaped("thermal:device_water_gen", [
             " B ",

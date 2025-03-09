@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
     solidify("solidified_xenon", Fluid.of("gtceu:xenon"), "kubejs:solidified_xenon");
     solidify("solidified_bromine", Fluid.of("gtceu:bromine"), "kubejs:solidified_bromine");
 
-    if (!isNormalMode) {
+    if (!doCreativeTank) {
         solidify("stabilized_oganesson", Fluid.of("gtceu:oganesson", 144), "kubejs:stabilized_oganesson");
     }
 

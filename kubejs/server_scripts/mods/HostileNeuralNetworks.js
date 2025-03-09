@@ -2,7 +2,7 @@
  * ALL HNN-related stuff
  */
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
+    if (doHNN) {
         // remove dml iems
         event.remove({ output: ["hostilenetworks:blank_data_model", "hostilenetworks:deep_learner", "hostilenetworks:loot_fabricator", "hostilenetworks:sim_chamber"] })
 
@@ -191,7 +191,7 @@ ItemEvents.rightClicked(event => {
 
 // Crafting recipes for the models
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
+    if (doHNN) {
         let dataModelData = [
             ["blaze", "minecraft:blaze_powder", "nether", true],
             ["creeper", "minecraft:gunpowder", "overworld", true],

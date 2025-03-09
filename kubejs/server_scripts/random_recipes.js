@@ -2,16 +2,18 @@
 
 ServerEvents.recipes(event => {
 
-    // snad
-    if (isNormalMode) {
-        event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand"]).id("snad:snad")
-        event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand"]).id("snad:red_snad")
+    // Snad
+    if (doSnad) {
+        if(doHarderRecipes) {
+            event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand", "enderio:pulsating_crystal"]).id("snad:snad")
+            event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand", "enderio:pulsating_crystal"]).id("snad:red_snad")
+        } else {
+            event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand"]).id("snad:snad")
+            event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand"]).id("snad:red_snad")
 
-        // If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
-        event.replaceInput({ id: "enderio:vacuum_chest" }, "enderio:pulsating_crystal", "gtceu:tin_rotor")
-    } else if (!isExpertMode) {
-        event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand", "enderio:pulsating_crystal"]).id("snad:snad")
-        event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand", "enderio:pulsating_crystal"]).id("snad:red_snad")
+            // If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
+            event.replaceInput({ id: "enderio:vacuum_chest" }, "enderio:pulsating_crystal", "gtceu:tin_rotor")
+        }
     } else {
         event.remove({ id: "snad:snad" })
         event.remove({ id: "snad:red_snad" })
@@ -142,7 +144,7 @@ ServerEvents.recipes(event => {
 
     // Data Stuff
 
-    if (isNormalMode) {
+    if (doCreativeTank) {
         event.recipes.gtceu.extractor("tank_data")
             .itemInputs("kubejs:heart_of_a_universe")
             .itemOutputs("kubejs:creative_tank_data")

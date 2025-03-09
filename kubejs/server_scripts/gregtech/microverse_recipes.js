@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(2000)
 
-    if (isNormalMode) {
+    if (doHarderProcessing) {
         event.recipes.gtceu.advanced_microverse("kubejs:t_five_first")
             .itemInputs("kubejs:microminer_t5", "16x kubejs:quantum_flux", "32x kubejs:stabilized_plutonium")
             .itemOutputs(
