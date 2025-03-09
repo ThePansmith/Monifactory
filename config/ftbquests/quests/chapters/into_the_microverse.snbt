@@ -19,6 +19,13 @@
 			x: 2.0d
 			y: -4.0d
 		}
+		{
+			id: "726CEB05821A2AB4"
+			linked_quest: "09F8678BBA41D15E"
+			shape: "hexagon"
+			x: 5.0d
+			y: -4.0d
+		}
 	]
 	quests: [
 		{
@@ -791,24 +798,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"57E7182198B2EA9A"
-				"6C1AAFF54A2ADB45"
-			]
-			description: ["{moni.quest.790E3275E88265E3.description1}"]
-			hide_until_deps_visible: true
-			id: "790E3275E88265E3"
-			optional: true
-			shape: "hexagon"
-			tasks: [{
-				id: "479BA190EDA1D5F0"
-				item: "hostilenetworks:end_prediction"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -4.0d
-		}
-		{
 			dependencies: ["7DE2C9292A09FC76"]
 			description: [
 				"{moni.quest.5B07A88C0BFF6586.description1}"
@@ -892,7 +881,7 @@
 		{
 			dependencies: [
 				"7DE2C9292A09FC76"
-				"790E3275E88265E3"
+				"09F8678BBA41D15E"
 			]
 			dependency_requirement: "one_completed"
 			description: [

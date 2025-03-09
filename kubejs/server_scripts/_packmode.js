@@ -20,7 +20,7 @@ const doStabMiners = !!global.doStabMiners;
 const doSteamAge = !!global.doSteamAge;
 const doStoneline = !!global.doStoneline;
 
-
+// Add gamestages for quest dependencies to trigger
 PlayerEvents.loggedIn(event => {
     // devmode stuff so we can switch modes in runtime (not recommended)
     // let foundOldGameStage = false;
@@ -33,9 +33,95 @@ PlayerEvents.loggedIn(event => {
     //     event.player.tell(Text.yellow('Pack mode swapped'))
     // }
 
-    event.removeGameStage("mode_normal")
-    event.removeGameStage("mode_hard")
-    event.removeGameStage("mode_expert")
-
-    event.addGameStage(`mode_${global.packmode.toLowerCase()}`);
+    if (doBoilers) {
+        event.removeGameStage("dontBoilers")
+        event.addGameStage("doBoilers")
+    } else {
+        event.removeGameStage("doBoilers")
+        event.addGameStage("dontBoilers")
+    }
+    if (doCompacting) {
+        event.removeGameStage("dontCompacting")
+        event.addGameStage("doCompacting")
+    } else {
+        event.removeGameStage("doCompacting")
+        event.addGameStage("dontCompacting")
+    }
+    if (doConverters) {
+        event.removeGameStage("dontConverters")
+        event.addGameStage("doConverters")
+    } else {
+        event.removeGameStage("doConverters")
+        event.addGameStage("dontConverters")
+    }
+    if (doCreativeTank) {
+        event.removeGameStage("dontCreativeTank")
+        event.addGameStage("doCreativeTank")
+    } else {
+        event.removeGameStage("doCreativeTank")
+        event.addGameStage("dontCreativeTank")
+    }
+    if (doHarderProcessing) {
+        event.removeGameStage("dontHarderProcessing")
+        event.addGameStage("doHarderProcessing")
+    } else {
+        event.removeGameStage("doHarderProcessing")
+        event.addGameStage("dontHarderProcessing")
+    }
+    if (doHarderRecipes) {
+        event.removeGameStage("dontHarderRecipes")
+        event.addGameStage("doHarderRecipes")
+    } else {
+        event.removeGameStage("doHarderRecipes")
+        event.addGameStage("dontHarderRecipes")
+    }
+    if (doHardGlassRecipesWarning) {
+        event.removeGameStage("dontHardGlassRecipesWarning")
+        event.addGameStage("doHardGlassRecipesWarning")
+    } else {
+        event.removeGameStage("doHardGlassRecipesWarning")
+        event.addGameStage("dontHardGlassRecipesWarning")
+    }
+    if (doHNN) {
+        event.removeGameStage("dontHNN")
+        event.addGameStage("doHNN")
+    } else {
+        event.removeGameStage("doHNN")
+        event.addGameStage("dontHNN")
+    }
+    if (doLaserIO) {
+        event.removeGameStage("dontLaserIO")
+        event.addGameStage("doLaserIO")
+    } else {
+        event.removeGameStage("doLaserIO")
+        event.addGameStage("dontLaserIO")
+    }
+    if (doMonicoins) {
+        event.removeGameStage("dontMonicoins")
+        event.addGameStage("doMonicoins")
+    } else {
+        event.removeGameStage("doMonicoins")
+        event.addGameStage("dontMonicoins")
+    }
+    if (doSnad) {
+        event.removeGameStage("dontSnad")
+        event.addGameStage("doSnad")
+    } else {
+        event.removeGameStage("doSnad")
+        event.addGameStage("dontSnad")
+    }
+    if (doStabMiners) {
+        event.removeGameStage("dontStabMiners")
+        event.addGameStage("doStabMiners")
+    } else {
+        event.removeGameStage("doStabMiners")
+        event.addGameStage("dontStabMiners")
+    }
+    if (doSteamAge) {
+        event.removeGameStage("dontSteamAge")
+        event.addGameStage("doSteamAge")
+    } else {
+        event.removeGameStage("doSteamAge")
+        event.addGameStage("dontSteamAge")
+    }
 })
