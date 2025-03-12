@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
                 "48x gtceu:raw_diamond",
                 "32x gtceu:raw_apatite",
                 "48x gtceu:raw_tricalcium_phosphate",
-                "32x gtceu:raw_quartzite"
+                "32x gtceu:raw_quartzite",
             )
     })
 
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
                 "32x gtceu:raw_cassiterite",
                 "64x gtceu:raw_chalcopyrite",
                 "48x gtceu:raw_chalcopyrite",
-                "16x gtceu:raw_realgar"
+                "16x gtceu:raw_realgar",
             )
     })
 
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "48x gtceu:raw_silver",
                 "56x gtceu:raw_galena",
-                "32x gtceu:raw_lead"
+                "32x gtceu:raw_lead",
             )
     })
 
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
                 "48x gtceu:raw_redstone",
                 "64x gtceu:raw_ruby",
                 "32x gtceu:raw_ruby",
-                "32x gtceu:raw_cinnabar"
+                "32x gtceu:raw_cinnabar",
             )
     })
 
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:wrought_iron_drill_head")
             .itemOutputs(
                 "64x gtceu:raw_uraninite",
-                "48x gtceu:raw_pitchblende"
+                "48x gtceu:raw_pitchblende",
             )
     })
 
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_salt",
                 "48x gtceu:raw_rock_salt",
-                "16x gtceu:raw_saltpeter"
+                "16x gtceu:raw_saltpeter",
             )
     })
 
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
                 "32x gtceu:raw_molybdenum",
                 "32x ad_astra:moon_sand",
                 "32x gtceu:raw_dilithium",
-                "32x gtceu:raw_fluorite"
+                "32x gtceu:raw_fluorite",
             )
     })
 
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_ilmenite",
                 "32x gtceu:raw_ilmenite",
                 "64x gtceu:raw_bauxite",
-                "16x gtceu:raw_aluminium"
+                "16x gtceu:raw_aluminium",
             )
     })
 
@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_scheelite",
                 "64x gtceu:raw_scheelite",
                 "64x gtceu:raw_tungstate",
-                "64x gtceu:raw_tungstate"
+                "64x gtceu:raw_tungstate",
             )
     })
 
@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_pyrochlore",
                 "64x minecraft:raw_copper",
                 "32x gtceu:raw_tin",
-                "32x kubejs:radium_salt"
+                "32x kubejs:radium_salt",
             )
     })
 
@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_pyrolusite",
                 "64x gtceu:raw_tantalite",
-                "64x gtceu:raw_tantalite"
+                "64x gtceu:raw_tantalite",
             )
     })
 
@@ -206,7 +206,8 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "16x kubejs:solidified_neon",
                 "16x kubejs:solidified_krypton",
-                "16x kubejs:solidified_xenon"
+                "16x kubejs:solidified_xenon",
+                "16x kubejs:solidified_argon",
             )
     })
 
@@ -234,7 +235,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_goethite",
                 "32x gtceu:raw_goethite",
                 "64x gtceu:raw_hematite",
-                "48x gtceu:raw_malachite"
+                "48x gtceu:raw_malachite",
             )
     })
 
@@ -295,7 +296,7 @@ ServerEvents.recipes(event => {
                 "24x gtceu:raw_diamond",
                 "16x gtceu:raw_almandine",
                 "12x gtceu:raw_topaz",
-                "8x gtceu:raw_emerald"
+                "8x gtceu:raw_emerald",
             )
     })
 
@@ -309,7 +310,7 @@ ServerEvents.recipes(event => {
                 "64x minecraft:glowstone",
                 "64x minecraft:glowstone",
                 "16x gtceu:raw_redstone",
-                "32x gtceu:raw_coal"
+                "32x gtceu:raw_coal",
             )
     })
 
@@ -325,7 +326,7 @@ ServerEvents.recipes(event => {
                 "32x gtceu:raw_apatite",
                 "16x gtceu:raw_neodymium",
                 "8x gtceu:raw_laurite",
-                "4x gtceu:raw_cuprorhodsite"
+                "4x gtceu:raw_cuprorhodsite",
             )
     })
 
@@ -335,7 +336,12 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:rocket_fuel 5000")
             .itemInputs("kubejs:blasting_kit")
             .itemOutputs(
-                "64x kubejs:dense_magma_block"
+                "64x minecraft:magma_block",
+                "64x minecraft:magma_block",
+                "64x minecraft:magma_block",
+                "64x minecraft:magma_block",
+                "64x minecraft:magma_block",
+                "64x minecraft:magma_block",
             )
     })
 
@@ -348,7 +354,8 @@ ServerEvents.recipes(event => {
             .itemInputs("16x kubejs:wither_realm_data")
             .itemOutputs(
                 "4x minecraft:ancient_debris",
-                "16x kubejs:dense_nether_quartz_ore",
+                "64x minecraft:quartz",
+                "32x minecraft:quartz",
                 "24x minecraft:gilded_blackstone",
                 "4x minecraft:gold_block",
             )
@@ -363,8 +370,8 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_salt",
                 "32x gtceu:raw_rock_salt",
-                "48x gtceu:raw_lepidolite",
-                "24x gtceu:raw_spodumene"
+                "64x gtceu:raw_lepidolite",
+                "24x gtceu:raw_spodumene",
             )
     })
 })
