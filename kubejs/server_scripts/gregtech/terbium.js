@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
     // Misc
     event.recipes.gtceu.chemical_reactor("ammonium_oxalate")
         .itemInputs("2x gtceu:carbon_dust")
-        .inputFluids("gtceu:ammonia 1000", "gtceu:oxygen 4000")
+        .inputFluids("gtceu:ammonia 2000", "gtceu:oxygen 4000")
         .circuit(5)
         .itemOutputs("gtceu:ammonium_oxalate_dust")
         .duration(120).EUt(7)

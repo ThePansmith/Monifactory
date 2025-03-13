@@ -92,8 +92,32 @@ ServerEvents.recipes(event => {
 
 // Add regolith dusts to ores' loot pool
 LootJS.modifiers((event) => {
-    event.addBlockLootModifier(/.*moon_.*_ore$/).randomChance(0.5).addLoot("kubejs:moon_dust");
-    event.addBlockLootModifier(/.*mars_.*_ore$/).randomChance(0.5).addLoot("kubejs:mars_dust");
-    event.addBlockLootModifier(/.*venus_.*_ore$/).randomChance(0.5).addLoot("kubejs:venus_dust");
-    event.addBlockLootModifier(/.*mercury_.*_ore$/).randomChance(0.5).addLoot("kubejs:mercury_dust");
+    const moonDust = LootEntry.of("kubejs:moon_dust").when(c => c.randomChance(0.50))
+    const moonDustFortune = LootEntry.of("kubejs:moon_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
+    const marsDust = LootEntry.of("kubejs:mars_dust").when(c => c.randomChance(0.50))
+    const marsDustFortune = LootEntry.of("kubejs:mars_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
+    const venusDust = LootEntry.of("kubejs:venus_dust").when(c => c.randomChance(0.50))
+    const venusDustFortune = LootEntry.of("kubejs:venus_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
+    const mercuryDust = LootEntry.of("kubejs:mercury_dust").when(c => c.randomChance(0.50))
+    const mercuryDustFortune = LootEntry.of("kubejs:mercury_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
+    event.addBlockLootModifier(/.*moon_.*_ore$/).addSequenceLoot(moonDust, moonDustFortune);
+    event.addBlockLootModifier(/.*mars_.*_ore$/).addSequenceLoot(marsDust, marsDustFortune);
+    event.addBlockLootModifier(/.*venus_.*_ore$/).addSequenceLoot(venusDust, venusDustFortune);
+    event.addBlockLootModifier(/.*mercury_.*_ore$/).addSequenceLoot(mercuryDust, mercuryDustFortune);
 });
