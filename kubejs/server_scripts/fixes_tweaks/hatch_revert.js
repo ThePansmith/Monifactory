@@ -1,6 +1,6 @@
 /** Reverts the GTM 1.4.1 hatch recipe nerf for NM and HM */
 ServerEvents.recipes(event => {
-    if (!isExpertMode) {
+    if (doHatchRevert) {
         event.remove({ id: /item_import_bus_/ })
         event.remove({ id: /item_export_bus_/ })
         event.remove({ id: /fluid_hatch_/, type: "gtceu:assembler" })

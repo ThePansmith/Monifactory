@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
+    if (doMonicoins) {
         // -- Saplings
         event.shaped(Item.of("minecraft:oak_sapling", 64), [
             "AAA",

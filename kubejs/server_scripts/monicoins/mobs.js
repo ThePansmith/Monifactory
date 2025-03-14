@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
+    if (doMonicoins) {
         event.shaped(Item.of("minecraft:chicken_spawn_egg", 2), [
             " A ",
             "   ",

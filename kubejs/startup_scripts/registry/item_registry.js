@@ -11,8 +11,10 @@ StartupEvents.registry("item", event => {
 
 
     // HM/EM Microminers
-    if (!isNormalMode) {
+    if (!doHNN) {
         event.create("microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
+    }
+    if (!doCreativeTank) {
         event.create("microminer_t8half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
     }
 
@@ -23,15 +25,16 @@ StartupEvents.registry("item", event => {
         ["2", "#f5f5f1"],
         ["3", "#736055"],
         ["4", "#f17d3d"],
-        ["4half", "#eef487"],
         ["5", "#fccc6a"],
         ["6", "#58a14e"],
         ["7", "#173639"],
-        ["8", "#dcdbe4"],
-        ["8half", "#4ebcef"]
+        ["8", "#dcdbe4"]
     ]
 
-    if (!isNormalMode) {
+    if (!doHNN) pristine_matter.concat([["8half", "#4ebcef"]])
+    if (!doCreativeTank) pristine_matter.concat([["8half", "#4ebcef"]])
+
+    if (doStabMiners) {
         for (const [tier, color] of pristine_matter) {
             event.create(`stabilized_microminer_t${tier}`)
                 .maxStackSize(16)
@@ -82,7 +85,7 @@ StartupEvents.registry("item", event => {
 
 
     // Monicoins
-    if (isNormalMode) {
+    if (doMonicoins) {
         event.create("moni_penny")
     }
     event.create("moni_nickel")
@@ -102,7 +105,7 @@ StartupEvents.registry("item", event => {
 
 
     // Magnetron
-    if (!isNormalMode) {
+    if (doHarderProcessing) {
         event.create("magnetron")
     }
 
@@ -131,14 +134,17 @@ StartupEvents.registry("item", event => {
 
 
     // Creative Data
-    event.create("creative_tank_data")
     event.create("creative_storage_data")
     event.create("creative_computation_data")
     event.create("creative_energy_data")
-    if (!isNormalMode) event.create("omnic_data")
+    if (doCreativeTank) {
+        event.create("creative_tank_data")
+    } else {
+        event.create("omnic_data")
+    }
 
     // Infinity Fluid Cell Base
-    if(isNormalMode) {
+    if(doCreativeTank) {
         event.create("infinity_cell_base").displayName("ME Infinity Cell Base")
     }
 
@@ -280,7 +286,7 @@ StartupEvents.registry("item", event => {
 
 
     // Ender Spore
-    if (!isNormalMode) {
+    if (!doHNN) {
         event.create("ender_spore")
     }
 

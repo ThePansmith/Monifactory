@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
             .duration(60) // same for all recipes
             .EUt(64) // same for all recipes
     }
-    if (isNormalMode) {
+    if (doHNN) {
         // //// Machine Recipe //////
 
         event.recipes.gtceu.assembly_line("loot_superfabricator")

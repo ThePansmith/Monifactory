@@ -11,25 +11,84 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: /fluid/, mod: "functionalstorage" }, "minecraft:bucket", "gtceu:lv_hermetic_casing")
 
 
-    // Compacting drawers
-    event.shaped("functionalstorage:compacting_drawer", [
-        "III",
-        "PDP",
-        "III"
-    ], {
-        I: "gtceu:iron_plate",
-        P: "gtceu:lv_electric_piston",
-        D: "#functionalstorage:drawer"
-    }).id("functionalstorage:compacting_drawer")
-    event.shaped("functionalstorage:simple_compacting_drawer", [
-        "III",
-        "IDP",
-        "III"
-    ], {
-        I: "gtceu:iron_plate",
-        P: "gtceu:lv_electric_piston",
-        D: "#functionalstorage:drawer"
-    }).id("functionalstorage:simple_compacting_drawer")
+    if(doCompacting) {
+        // Compacting drawers
+        event.shaped("functionalstorage:compacting_drawer", [
+            "III",
+            "PDP",
+            "III"
+        ], {
+            I: "gtceu:iron_plate",
+            P: "gtceu:lv_electric_piston",
+            D: "#functionalstorage:drawer"
+        }).id("functionalstorage:compacting_drawer")
+        event.shaped("functionalstorage:simple_compacting_drawer", [
+            "III",
+            "IDP",
+            "III"
+        ], {
+            I: "gtceu:iron_plate",
+            P: "gtceu:lv_electric_piston",
+            D: "#functionalstorage:drawer"
+        }).id("functionalstorage:simple_compacting_drawer")
+
+        // Framed Compacting Drawers
+        event.shaped("functionalstorage:compacting_framed_drawer", [
+            "III",
+            "IBI",
+            "III"
+        ], {
+            I: "minecraft:iron_nugget",
+            B: "functionalstorage:compacting_drawer"
+        }).id("functionalstorage:compacting_framed_drawer")
+        event.shaped("functionalstorage:framed_simple_compacting_drawer", [
+            "III",
+            "IBI",
+            "III"
+        ], {
+            I: "minecraft:iron_nugget",
+            B: "functionalstorage:simple_compacting_drawer"
+        }).id("functionalstorage:framed_simple_compacting_drawer")
+
+        // Custom coin compacting recipes
+        event.custom({
+            type: "functionalstorage:custom_compacting",
+            higher_input: {
+                count: 1,
+                item: "kubejs:moni_dollar"
+            },
+            lower_input: {
+                count: 4,
+                item: "kubejs:moni_quarter"
+            }
+        })
+        event.custom({
+            type: "functionalstorage:custom_compacting",
+            higher_input: {
+                count: 1,
+                item: "kubejs:moni_quarter"
+            },
+            lower_input: {
+                count: 5,
+                item: "kubejs:moni_nickel"
+            }
+        })
+        if (doMonicoins) {
+            event.custom({
+                type: "functionalstorage:custom_compacting",
+                higher_input: {
+                    count: 1,
+                    item: "kubejs:moni_nickel"
+                },
+                lower_input: {
+                    count: 5,
+                    item: "kubejs:moni_penny"
+                }
+            })
+        }
+    } else {
+        event.remove({ id: /^functionalstorage:.*compacting.*_drawer$/})
+    }
 
 
     // Specialized Drawers
@@ -83,7 +142,7 @@ ServerEvents.recipes(event => {
 
 
     // Framed Drawers
-    const miscframing = ["storage_controller", "simple_compacting_drawer", "controller_extension"]
+    const miscframing = ["storage_controller", "controller_extension"]
     miscframing.forEach(Block => {
         event.shaped(`functionalstorage:framed_${Block}`, [
             "III",
@@ -94,16 +153,6 @@ ServerEvents.recipes(event => {
             B: `functionalstorage:${Block}`
         }).id(`functionalstorage:framed_${Block}`)
     })
-
-    // Framed Compacting Drawer has a nonstandard ID for some reason
-    event.shaped("functionalstorage:compacting_framed_drawer", [
-        "III",
-        "IBI",
-        "III"
-    ], {
-        I: "minecraft:iron_nugget",
-        B: "functionalstorage:compacting_drawer"
-    }).id("functionalstorage:compacting_framed_drawer")
 
     // Storage Upgrades
     let upgradeTiers = [
@@ -124,41 +173,4 @@ ServerEvents.recipes(event => {
             U: tierIndex == 0 ? "#functionalstorage:drawer" : (`functionalstorage:${upgradeTiers[tierIndex - 1][0]}_upgrade`),
         }).id(`functionalstorage:${tier[2]}_upgrade`)
     })
-
-    // Custom coin compacting recipes
-    event.custom({
-        type: "functionalstorage:custom_compacting",
-        higher_input: {
-            count: 1,
-            item: "kubejs:moni_dollar"
-        },
-        lower_input: {
-            count: 4,
-            item: "kubejs:moni_quarter"
-        }
-    })
-    event.custom({
-        type: "functionalstorage:custom_compacting",
-        higher_input: {
-            count: 1,
-            item: "kubejs:moni_quarter"
-        },
-        lower_input: {
-            count: 5,
-            item: "kubejs:moni_nickel"
-        }
-    })
-    if (isNormalMode) {
-        event.custom({
-            type: "functionalstorage:custom_compacting",
-            higher_input: {
-                count: 1,
-                item: "kubejs:moni_nickel"
-            },
-            lower_input: {
-                count: 5,
-                item: "kubejs:moni_penny"
-            }
-        })
-    }
 })
