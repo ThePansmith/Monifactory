@@ -299,7 +299,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
         // Helical Fusion Reactor
         event.create("helical_fusion_reactor", "multiblock")
-            .machine((holder) => new FusionReactorMachine(holder, GTValues.UHV))
+            .machine((holder) => new FusionReactorMachine(holder, GTValues.UEV))
             .rotationState(RotationState.ALL)
             .recipeTypes(GTRecipeTypes.FUSION_RECIPES)
             .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, MachineModifiers.FUSION_REACTOR])
