@@ -1203,4 +1203,17 @@ ServerEvents.recipes(event => {
 
     // BetterP2P
     event.shapeless("betterp2p:advanced_memory_card", ["ae2:memory_card", "ae2:network_tool"])
+
+    // Network Analyser
+    event.remove({ id:"ae2netanalyser:analyser"})
+    event.shaped(Item.of("ae2netanalyser:network_analyser"), [
+        "R R",
+        "DSD",
+        "FDF"
+    ], {
+        R: "gtceu:electrical_steel_rod",
+        D: "gtceu:dark_steel_plate",
+        F: "gtceu:fluix_plate",
+        S: "gtceu:mv_sensor"
+    }).id("kubejs:ae2netanalyser/network_analyser")
 })
