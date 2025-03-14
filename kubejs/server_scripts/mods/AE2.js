@@ -1205,7 +1205,7 @@ ServerEvents.recipes(event => {
     event.shapeless("betterp2p:advanced_memory_card", ["ae2:memory_card", "ae2:network_tool"])
 
     // Network Analyser
-    event.remove({ id:'ae2netanalyser:analyser'})
+    event.remove({ id:"ae2netanalyser:analyser"})
     event.shaped(Item.of("ae2netanalyser:network_analyser"), [
         "R R",
         "DSD",
