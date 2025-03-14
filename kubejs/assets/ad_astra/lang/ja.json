@@ -52,8 +52,10 @@
     "item.ad_astra.desh_engine": "炭化タングステンのエンジン",
     "item.ad_astra.ostrum_engine": "ルミウムのエンジン",
     "item.ad_astra.calorite_engine": "クライオローバスのエンジン",
-    "item.ad_astra.desh_tank": "炭化タングステンのタンク",
+    "item.ad_astra.desh_tank": "シグナルムのタンク",
     "item.ad_astra.ostrum_tank": "ルミウムのタンク",
     "item.ad_astra.calorite_tank": "クライオローバスのタンク",
-    "info.ad_astra.oxygen_loader": "グレッグテック酸素を使って宇宙服とガスタンクを埋める。"
+    "info.ad_astra.oxygen_loader": "グレッグテック酸素を使って宇宙服とガスタンクを埋める。",
+    "item.ad_astra.steel_engine": "ブラックスチールのエンジン",
+    "item.ad_astra.steel_tank": "ブラックスチールのタンク"
 }
