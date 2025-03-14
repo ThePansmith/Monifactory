@@ -7,13 +7,15 @@ ServerEvents.recipes(event => {
     /*   Machine Recipe  */
 
     event.shaped("gtceu:greenhouse", [
-        "AWA",
+        "LWL",
         "ASA",
-        "WAW"
+        "WRW"
     ], {
+        L: "minecraft:redstone_lamp",
         A: "#gtceu:circuits/mv",
         W: "gtceu:copper_single_cable",
-        S: "gtceu:solid_machine_casing"
+        S: "gtceu:solid_machine_casing",
+        R: "gtceu:lv_fluid_regulator"
     }).id("kubejs:shaped/greenhouse")
 
 
