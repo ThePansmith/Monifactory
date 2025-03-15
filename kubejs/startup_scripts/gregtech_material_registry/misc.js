@@ -47,6 +47,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xf9fbda)
         .components("1x calcium", "2x chlorine", "8x oxygen")
 
+    event.create("extraterrestrial_metal_mixture")
+        .dust()
+        .color(0x734120).secondaryColor(0x555B60).iconSet(GTMaterialIconSet.METALLIC)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
     event.create("fluorite")
         .gem()
         .ore()
