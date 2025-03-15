@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "kubejs:item/miner_kits/advanced_drilling_kit_ii",
+      "layer1": "kubejs:item/miner_kits/advanced_drilling_kit_ii_lights",
+      "layer2": "kubejs:item/miner_kits/kit_anim"
+    }
+  }
