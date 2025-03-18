@@ -42,17 +42,14 @@ ServerEvents.recipes(event => {
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:diamond_drill_head")
-            .itemInputs("2x kubejs:gem_sensor")
             .itemOutputs(
-                "64x gtceu:raw_diamond",
-                "64x gtceu:raw_diamond",
-                "64x gtceu:raw_diamond",
+                "64x gtceu:raw_lapis",
                 "64x gtceu:raw_lapis",
                 "32x gtceu:raw_lapis",
                 "64x gtceu:raw_coal",
+                "64x gtceu:raw_coal",
                 "32x gtceu:raw_coal",
-                "48x gtceu:raw_emerald",
-                "48x gtceu:raw_redstone",
+                "64x gtceu:raw_redstone",
             )
     })
 

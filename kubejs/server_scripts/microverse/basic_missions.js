@@ -290,13 +290,30 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:rocket_fuel 5000")
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:diamond_drill_head")
+            .itemInputs("2x kubejs:gem_sensor")
+            .itemOutputs(
+                "64x gtceu:raw_diamond",
+                "64x gtceu:raw_diamond",
+                "64x gtceu:raw_diamond",
+                "64x gtceu:raw_emerald",
+                "64x gtceu:raw_emerald",
+            )
+    })
+
+    microverse_mission(event, 3, 1).forEach(builder => {
+        builder
+            .itemInputs("4x kubejs:quantum_flux")
+            .inputFluids("gtceu:rocket_fuel 5000")
+            .itemInputs("kubejs:basic_drilling_kit")
+            .itemInputs("gtceu:steel_drill_head")
             .itemInputs("kubejs:gem_sensor")
             .itemOutputs(
+                "64x gtceu:raw_sapphire",
                 "32x gtceu:raw_sapphire",
-                "24x gtceu:raw_diamond",
-                "16x gtceu:raw_almandine",
-                "12x gtceu:raw_topaz",
-                "8x gtceu:raw_emerald",
+                "64x gtceu:raw_almandine",
+                "32x gtceu:raw_almandine",
+                "64x gtceu:raw_topaz",
+                "32x gtceu:raw_topaz",
             )
     })
 
