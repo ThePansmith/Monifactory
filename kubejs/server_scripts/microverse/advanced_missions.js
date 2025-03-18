@@ -25,14 +25,9 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:steel_drill_head")
             .itemOutputs(
-                "64x minecraft:raw_iron",
-                "64x minecraft:raw_iron",
-                "64x minecraft:raw_iron",
-                "64x minecraft:raw_copper",
-                "64x minecraft:raw_copper",
-                "64x minecraft:raw_copper",
-                "64x minecraft:raw_gold",
-                "32x minecraft:raw_gold",
+                "16x kubejs:dense_iron_ore",
+                "16x kubejs:dense_copper_ore",
+                "8x kubejs:dense_gold_ore",
             )
     })
 
@@ -44,15 +39,11 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:diamond_drill_head")
             .itemInputs("2x kubejs:gem_sensor")
             .itemOutputs(
-                "64x gtceu:raw_diamond",
-                "64x gtceu:raw_diamond",
-                "64x gtceu:raw_diamond",
-                "64x gtceu:raw_lapis",
-                "32x gtceu:raw_lapis",
-                "64x gtceu:raw_coal",
-                "32x gtceu:raw_coal",
-                "48x gtceu:raw_emerald",
-                "48x gtceu:raw_redstone",
+                "16x kubejs:dense_diamond_ore",
+                "8x kubejs:dense_lapis_ore",
+                "8x kubejs:dense_coal_ore",
+                "4x kubejs:dense_emerald_ore",
+                "4x kubejs:dense_redstone_ore",
             )
     })
 
@@ -63,14 +54,8 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:damascus_steel_drill_head")
             .itemOutputs(
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
-                "64x enderio:grains_of_infinity",
-                "64x enderio:grains_of_infinity",
+                "32x kubejs:dense_oilsands_ore",
+                "8x kubejs:compressed_infinity_dust_block",
             )
     })
 
