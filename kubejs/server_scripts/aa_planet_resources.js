@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             .itemInputs(Item.of(planetDust, 4), planetGem)
             .itemOutputs(Item.of("kubejs:quantum_flux", fluxCount + 1))
             .duration(100)
-            .EUt(480)
+            .EUt(GTValues.VA[GTValues.HV])
     })
 
     // Rock dust centrifuging
