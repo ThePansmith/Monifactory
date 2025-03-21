@@ -432,5 +432,7 @@
     "gtceu.jei.ore_vein.glacio/naquadah": "Жила Наквады (Гласио)",
     "gtceu.jei.ore_vein.glacio/thorium": "Жила Тория (Гласио)",
     "gtceu.jei.ore_vein.glacio/titanotungstate": "Жила Титановольфрамата (Гласио)",
-    "gtceu.jei.ore_vein.mars/tungstate": "Жила Ваольфрамата (Марс)"
+    "gtceu.jei.ore_vein.mars/tungstate": "Жила Ваольфрамата (Марс)",
+    "material.gtceu.netherite_scrap": "Древние обломки",
+    "material.gtceu.uranic_solution": "Урановый раствор"
 }

@@ -214,8 +214,6 @@
     "item.kubejs.thermal_cloth": "耐熱生地",
     "item.kubejs.unprepared_space_helmet": "未完成のスペースヘルメット",
     "item.kubejs.unprepared_space_chestpiece": "未完成のスペースチェストピース",
-    "item.kubejs.unprepared_space_leggings": "未完成のスペースレギンス",
-    "item.kubejs.unprepared_space_boots": "未完成のスペースブーツ",
     "item.kubejs.impossible_realm_data": "§b未踏の地のデータ",
     "item.kubejs.dragon_lair_data": "§dドラゴンの巣窟のデータ",
     "item.kubejs.wither_realm_data": "§dウィザーの地のデータ",
@@ -446,5 +444,11 @@
     "chipped.workbenches.tooltip.1": "§7レシピは§3石切り台§7でも実行できます,",
     "chipped.workbenches.tooltip.2": "§7これは、§bAE2§7の§3分子組立機§7で自動化できます",
     "packagedexcrafting.crafterspeed.tooltip": "§7自動作業台よりも低速ですが、一度に最大20のレシピをサポートできます。",
-    "tempad.tempad.tooltip": "§6モニペニーを燃料として使用"
+    "tempad.tempad.tooltip": "§6モニペニーを燃料として使用",
+    "item.kubejs.smore_6": "八重スモアインゴット",
+    "item.kubejs.mars_dust": "火星の粉",
+    "item.kubejs.uxpic_chip": "UXPICチップ",
+    "item.kubejs.mercury_dust": "水星の粉",
+    "item.kubejs.uxpic_wafer": "UXPICウェハー",
+    "item.kubejs.venus_dust": "金星の粉"
 }

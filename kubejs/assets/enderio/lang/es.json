@@ -1,1 +1,11 @@
-{}
+{
+    "item.enderio.conductive_conduit": "Conducto de energía de hierro conductor",
+    "item.enderio.energetic_conduit": "Conducto de energía de Aleación Energética",
+    "item.enderio.endsteel_conduit": "Conducto de energía de Acero del end",
+    "item.enderio.lumium_conduit": "Conducto de energía de Lumium",
+    "item.enderio.signalum_conduit": "Conducto de energía de Signalum",
+    "item.enderio.vibrant_conduit": "Conducto de energía de Aleación Vibrante",
+    "item.enderio.enderium_conduit": "Conducto de energía de Enderium",
+    "item.enderio.cryolobus_conduit": "Conducto de energía de Cryolobus",
+    "item.enderio.sculk_superconductor_conduit": "Conducto de energía Super Conductor de Sculk"
+}

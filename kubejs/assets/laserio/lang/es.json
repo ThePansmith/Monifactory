@@ -1,11 +1,11 @@
 {
-    "item.laserio.energy_overclocker_card_tier_1": "",
-    "item.laserio.energy_overclocker_card_tier_2": "",
-    "item.laserio.energy_overclocker_card_tier_3": "",
-    "item.laserio.energy_overclocker_card_tier_4": "",
-    "item.laserio.energy_overclocker_card_tier_5": "",
-    "item.laserio.energy_overclocker_card_tier_6": "",
-    "item.laserio.energy_overclocker_card_tier_7": "",
-    "item.laserio.energy_overclocker_card_tier_8": "",
-    "item.laserio.energy_overclocker_card_tier_9": ""
+    "item.laserio.energy_overclocker_card_tier_1": "Sobre Procesador FE De Hierro Conductor",
+    "item.laserio.energy_overclocker_card_tier_2": "Sobre Procesador FE De Aleación Energética",
+    "item.laserio.energy_overclocker_card_tier_3": "Sobre Procesador FE De Aleación Vibrante",
+    "item.laserio.energy_overclocker_card_tier_4": "Sobre Procesador FE De Acero de End",
+    "item.laserio.energy_overclocker_card_tier_5": "Sobre Procesador FE Lumínico",
+    "item.laserio.energy_overclocker_card_tier_6": "Sobre Procesador FE De Signalum",
+    "item.laserio.energy_overclocker_card_tier_7": "Sobre Procesador FE De Enderium",
+    "item.laserio.energy_overclocker_card_tier_8": "Sobre Procesador FE Cryolobus",
+    "item.laserio.energy_overclocker_card_tier_9": "Superconductor De Sculk Sobre Procesador FE"
 }
