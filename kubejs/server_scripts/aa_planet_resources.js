@@ -8,11 +8,11 @@
 ServerEvents.recipes(event => {
     // Regolith dusts
     let regolithDustResources = [
-        ["moon", ["moon_sand"], "minecraft:diamond"],
-        ["mars", ["mars_sand"], "gtceu:monazite_gem"],
-        ["venus", ["venus_sandstone", "venus_sandstone_bricks", "cracked_venus_sandstone_bricks", "venus_sand"], "gtceu:olivine_gem"],
-        ["mercury", [], "gtceu:cinnabar_gem"],
-        ["glacio", [], "gtceu:sodalite_gem"]
+        ["moon", ["moon_sand"], "diamond"],
+        ["mars", ["mars_sand"], "monazite"],
+        ["venus", ["venus_sandstone", "venus_sandstone_bricks", "cracked_venus_sandstone_bricks", "venus_sand"], "olivine"],
+        ["mercury", [], "cinnabar"],
+        ["glacio", [], "sodalite"]
     ]
 
     regolithDustResources.forEach((planetResources, fluxCount) => {
@@ -51,9 +51,15 @@ ServerEvents.recipes(event => {
             "BAB",
             " B "
         ], {
-            A: planetResources[2],
+            A: `#forge:gems/${planetResources[2]}`,
             B: `kubejs:${planetResources[0]}_dust`
         }).id(`kubejs:quantum_flux_from_${planetResources[0]}_dust`)
+
+        event.recipes.gtceu.mixer(`quantum_flux_from_${planetResources[0]}_dust`)
+            .itemInputs(`4x kubejs:${planetResources[0]}_dust`, `#forge:gems/${planetResources[2]}`)
+            .itemOutputs(`${fluxCount + 1}x kubejs:quantum_flux`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.HV])
     })
 
     // Rock dust centrifuging
