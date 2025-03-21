@@ -13,24 +13,33 @@ ServerEvents.recipes(event => {
     ]
 
     regolithDustResources.forEach((planetResources, fluxCount) => {
+        let planetDust = `kubejs:${planetResources[1]}`
+        let planetGem = planetResources[2]
+
         // Planetary dust maceration recipe
         planetResources[0].forEach(rocksToMacerate => {
             event.recipes.gtceu.macerator(rocksToMacerate)
                 .itemInputs(`ad_astra:${rocksToMacerate}`)
-                .itemOutputs(`kubejs:${planetResources[1]}`)
+                .itemOutputs(planetDust)
                 .duration(200)
                 .EUt(GTValues.VHA[GTValues.HV])
         })
 
         // Recipes to make quantum flux from planets' rock dusts
-        event.shaped(`${fluxCount + 1}x kubejs:quantum_flux`, [
+        event.shaped(Item.of("kubejs:quantum_flux", fluxCount + 1), [
             " B ",
             "BAB",
             " B "
         ], {
-            A: planetResources[2],
-            B: `kubejs:${planetResources[1]}`
+            A: planetGem,
+            B: planetDust
         }).id(`kubejs:quantum_flux_from_${planetResources[1]}`)
+
+        event.recipes.gtceu.mixer(`quantum_flux_from_${planetResources[1]}`)
+            .itemInputs(Item.of(planetDust, 4), planetGem)
+            .itemOutputs(Item.of("kubejs:quantum_flux", fluxCount + 1))
+            .duration(100)
+            .EUt(480)
     })
 
     // Rock dust centrifuging
