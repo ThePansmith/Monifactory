@@ -16,6 +16,12 @@ If it annoys you enough, then you can go into the Modernfix config and disable i
 
 Lost Cities has issues with forcing players to spawn in a Lost City, and crashes when attempting to generate a superflat. Remove the mod to generate a superflat until the issue is fixed.
 
+**Game crashes when you disable William Wythers' Overhauled Overworld**
+
+Monifactory tweaks Wythers' worldgen with a datapack to prevent some confusing and annoying behavior like Nether music playing in the Overworld, infrequent flower generation, and high frequency of waterlogged ore veins. Unfortunately, there is no way to conditionally load world generation datapacks so disabling or removing the mod will cause this datapack to crash your game. 
+
+It is located in `kubejs/data/minecraft/worldgen` if you wish to remove it.
+
 **Game crashes on MacOS**
 
 Remove Spark and ensure you are using an ARM64 version of Java 17 or higher.
