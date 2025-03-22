@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
 
     // WIP: Matter Circuits
     let plasticBoard;
-    if (isNormalMode) plasticBoard = "16x gtceu:polyethyl_cyanoacrylate_plate"
+    if (doHarderRecipes) plasticBoard = "16x gtceu:polyethyl_cyanoacrylate_plate"
     else plasticBoard = "16x gtceu:kapton_k_plate"
     event.recipes.gtceu.circuit_assembler("matter_circuit_board")
         .itemInputs(

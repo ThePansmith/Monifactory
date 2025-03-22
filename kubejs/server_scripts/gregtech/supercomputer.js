@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
             .duration(15.05 * 20) // same for all recipes
             .EUt(EUt)
     }
-    if (isNormalMode) {
+    if (doHNN) {
         // //// Machine Recipe //////
 
         event.recipes.gtceu.assembly_line("simulation_supercomputer")

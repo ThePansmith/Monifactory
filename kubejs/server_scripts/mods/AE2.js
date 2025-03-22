@@ -416,7 +416,7 @@ ServerEvents.recipes(event => {
         ["gtceu:", "neutronium_wafer"],
         ["kubejs:", "universe_wafer"]
     ]
-    if (isExpertMode) {
+    if (doHarderPrintedSilicon) {
         // Use only Greg wafers for printed silicon in EM
         wafers.forEach((wafer, index) => {
             event.custom({
@@ -842,7 +842,7 @@ ServerEvents.recipes(event => {
 
 
     // Greg circuits
-    if (isExpertMode) {
+    if (doHarderPrintedSilicon) {
         wafers.forEach((wafer, tier) => {
             event.recipes.gtceu.forming_press("ae2_printed_" + wafer[1] + "greg")
                 .notConsumable("ae2:silicon_press")

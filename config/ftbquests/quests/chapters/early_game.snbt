@@ -165,7 +165,7 @@
 		{
 			dependencies: [
 				"5C4E189A3E401566"
-				"68CB6AD16F1041E5"
+				"2A11706D3D63925C"
 			]
 			description: [
 				"{moni.quest.0B62AD25CDD86A6B.description1}"
@@ -1805,7 +1805,7 @@
 		{
 			dependencies: [
 				"5357A16B5BF62C96"
-				"57E7182198B2EA9A"
+				"5BE3E37772FAF6CB"
 			]
 			description: [
 				"[\"\",{\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"}},{\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description3\"}]"

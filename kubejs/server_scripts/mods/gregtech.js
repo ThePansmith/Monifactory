@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     })
 
     // HNN MATTERS
-    if (isNormalMode) {
+    if (doHNN) {
         event.recipes.gtceu.extractor("overworld_fluid")
             .itemInputs("hostilenetworks:overworld_prediction")
             .outputFluids(Fluid.of("enderio:xp_juice", 200))
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(30)
 
-    if (isNormalMode) {
+    if (doHNN) {
         event.shaped("kubejs:quantum_flux", [
             " B ",
             "BAB",

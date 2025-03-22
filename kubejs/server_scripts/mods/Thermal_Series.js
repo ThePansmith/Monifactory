@@ -309,7 +309,7 @@ ServerEvents.recipes(event => {
         E: "kubejs:redstone_transmission_coil"
     })
 
-    if (!isExpertMode) {
+    if (doBoilers) {
         event.shaped("systeams:steam_dynamo", [
             " A ",
             "BCB",
