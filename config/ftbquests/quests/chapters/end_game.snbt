@@ -1277,6 +1277,8 @@
 				"{moni.quest.07E757AAA1C7435D.description1}"
 				""
 				"{moni.quest.07E757AAA1C7435D.description2}"
+				""
+				"{moni.quest.07E757AAA1C7435D.description3}"
 			]
 			icon: "gtceu:actinium_ingot"
 			id: "07E757AAA1C7435D"
