@@ -8,7 +8,7 @@
 	// True to disable faster climbing on Scaffolding [default = false]
 	"disableScaffoldingFastClimbing": false,
 	// True to disable collisions with Scaffolding, allowing fast climbing down scaffolding just like ladders [default = true]
-	"disableScaffoldingCollision": true,
+	"disableScaffoldingCollision": false,
 	// True to disable faster climbing on vines [default = false]
 	"disableVinesFastClimbing": false
 }
