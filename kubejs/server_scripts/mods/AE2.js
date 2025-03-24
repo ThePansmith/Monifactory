@@ -132,10 +132,10 @@ ServerEvents.recipes(event => {
         "CDC",
         "AAA"
     ], {
-        A: "gtceu:naquadah_alloy_plate",
-        B: "gtceu:zpm_robot_arm",
+        A: "gtceu:rhodium_plated_palladium_plate",
+        B: "gtceu:luv_robot_arm",
         C: "#gtceu:circuits/zpm",
-        D: "gtceu:zpm_machine_hull",
+        D: "gtceu:luv_machine_hull",
     }).id("kubejs:ae2/requster")
 
     // Quantum Ring
@@ -373,8 +373,14 @@ ServerEvents.recipes(event => {
         B: "gtceu:electrical_steel_plate",
         C: "ae2:calculation_processor"
     }).id("kubejs:ae2/advanced_card")
+
+    // Network Memory Card
     event.remove({ id: "ae2:tools/network_memory_card" })
     event.shapeless("ae2:memory_card", ["#gtceu:circuits/hv", "ae2:basic_card"]).id("kubejs:ae2/memory_card")
+
+    // Crafting Card
+    event.remove({ id: "ae2:materials/cardcrafting"})
+    event.shapeless("ae2:crafting_card", ["minecraft:crafting_table", "ae2:basic_card", "#gtceu:circuits/ev"])
 
     // Level Emitter
     event.remove({ id: "ae2:network/parts/level_emitter" })
@@ -1203,4 +1209,17 @@ ServerEvents.recipes(event => {
 
     // BetterP2P
     event.shapeless("betterp2p:advanced_memory_card", ["ae2:memory_card", "ae2:network_tool"])
+
+    // Network Analyser
+    event.remove({ id:"ae2netanalyser:analyser"})
+    event.shaped(Item.of("ae2netanalyser:network_analyser"), [
+        "R R",
+        "DSD",
+        "FDF"
+    ], {
+        R: "gtceu:electrical_steel_rod",
+        D: "gtceu:dark_steel_plate",
+        F: "gtceu:fluix_plate",
+        S: "gtceu:mv_sensor"
+    }).id("kubejs:ae2netanalyser/network_analyser")
 })

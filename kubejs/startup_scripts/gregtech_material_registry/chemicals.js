@@ -82,6 +82,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gas()
         .color(0xDEEDE6)
         .components("2x carbon", "5x hydrogen", "1x chlorine")
+        .formula("C2H5Cl")
 
     event.create("tetraethyllead")
         .fluid()
