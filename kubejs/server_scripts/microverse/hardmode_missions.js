@@ -193,13 +193,21 @@ ServerEvents.recipes(event => {
                 .itemInputs("64x gtceu:dilithium_gem")
                 .itemInputs("kubejs:advanced_drilling_kit_ii")
                 .itemInputs("gtceu:duranium_drill_head")
-                .itemInputs("3x gtceu:tritanium_block")
+                .itemInputs("gtceu:osmium_dust")
                 .itemOutputs(
-                    "64x gtceu:raw_electrotine",
-                    "64x gtceu:raw_electrotine",
-                    "64x gtceu:raw_electrotine",
-                    "64x gtceu:raw_electrotine",
-                    "64x gtceu:raw_electrotine",
+                    "64x gtceu:raw_osmiridiumyes",
+                )
+        })
+
+        microverse_mission(event, "8half", 3).forEach(builder => {
+            builder
+                .itemInputs("16x kubejs:quantum_flux")
+                .itemInputs("64x gtceu:dilithium_gem")
+                .itemInputs("kubejs:advanced_drilling_kit_ii")
+                .itemInputs("gtceu:duranium_drill_head")
+                .itemInputs("gtceu:iridium_dust")
+                .itemOutputs(
+                    "64x gtceu:raw_iridosmineyes",
                 )
         })
     }
