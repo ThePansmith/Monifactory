@@ -879,11 +879,6 @@
 					item: "gtceu:mv_output_bus"
 					type: "item"
 				}
-				{
-					id: "7927851A2296E98B"
-					item: "gtceu:lv_muffler_hatch"
-					type: "item"
-				}
 			]
 			title: "{moni.quest.5B07A88C0BFF6586.title}"
 			x: 2.0d

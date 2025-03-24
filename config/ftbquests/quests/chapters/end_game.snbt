@@ -1294,11 +1294,6 @@
 					item: "gtceu:actinium_nugget"
 					type: "item"
 				}
-				{
-					id: "01DCEB2E7AE79099"
-					item: "gtceu:small_actinium_dust"
-					type: "item"
-				}
 			]
 			title: "{moni.quest.07E757AAA1C7435D.title}"
 			x: 50.0d

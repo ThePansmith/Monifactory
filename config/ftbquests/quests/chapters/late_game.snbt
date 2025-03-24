@@ -224,8 +224,8 @@
 		{
 			id: "03BAC1C5A779EFAE"
 			linked_quest: "425D1C34A82B054D"
-			x: 21.0d
-			y: 16.5d
+			x: 21.25d
+			y: 16.25d
 		}
 	]
 	quests: [
@@ -1368,7 +1368,7 @@
 					type: "item"
 				}
 			]
-			x: 19.0d
+			x: 19.25d
 			y: 6.25d
 		}
 		{
@@ -1591,7 +1591,7 @@
 			}]
 			title: "{moni.quest.217F85D6FE2A467D.title}"
 			x: 17.25d
-			y: 16.75d
+			y: 16.5d
 		}
 		{
 			dependencies: [
