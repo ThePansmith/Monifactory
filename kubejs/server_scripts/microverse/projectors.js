@@ -2,14 +2,13 @@
  * Recipes for crafting Microverse Projectors, Microversium, and Microversium casing.
  */
 ServerEvents.recipes(event => {
-    // Microversium Ingot
-    event.recipes.gtceu.electric_blast_furnace("kubejs:microversium_ingot")
-        .itemInputs("2x gtceu:steel_ingot", "minecraft:redstone", "minecraft:glowstone_dust")
-        .inputFluids("gtceu:deuterium 100")
-        .itemOutputs("gtceu:microversium_ingot")
-        .duration(600)
-        .blastFurnaceTemp(1700)
-        .EUt(120)
+    // Microversium Dust
+    event.recipes.gtceu.mixer("microversium")
+        .itemInputs("2x gtceu:steel_dust", "glowstone_dust", "redstone")
+        .inputFluids("gtceu:deuterium 1000")
+        .itemOutputs("5x gtceu:microversium_dust")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.MV])
 
     // Microverse Casing
     event.shaped("2x kubejs:microverse_casing", [

@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
                 "32x gtceu:raw_monazite",
                 "32x gtceu:raw_molybdenite",
                 "16x gtceu:raw_powellite",
-                "8x gtceu:raw_osmiridiumyes",
+                "8x gtceu:rarest_metal_mixture_dust",
             )
     })
 
@@ -182,8 +182,8 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_uraninite",
                 "32x gtceu:raw_uraninite",
-                "32x gtceu:raw_osmiridiumyes",
-                "32x gtceu:raw_iridosmineyes",
+                "32x gtceu:raw_plutonium",
+                "32x gtceu:rarest_metal_mixture_dust",
             )
     })
 
