@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_cooperite",
                 "32x gtceu:raw_bornite",
                 "64x gtceu:raw_pentlandite",
-                "64x gtceu:raw_chalcocite"
+                "64x gtceu:raw_chalcocite",
             )
     })
 
@@ -25,9 +25,14 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:steel_drill_head")
             .itemOutputs(
-                "16x kubejs:dense_iron_ore",
-                "16x kubejs:dense_copper_ore",
-                "8x kubejs:dense_gold_ore"
+                "64x minecraft:raw_iron",
+                "64x minecraft:raw_iron",
+                "64x minecraft:raw_iron",
+                "64x minecraft:raw_copper",
+                "64x minecraft:raw_copper",
+                "64x minecraft:raw_copper",
+                "64x minecraft:raw_gold",
+                "32x minecraft:raw_gold",
             )
     })
 
@@ -37,13 +42,14 @@ ServerEvents.recipes(event => {
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:diamond_drill_head")
-            .itemInputs("2x kubejs:gem_sensor")
             .itemOutputs(
-                "16x kubejs:dense_diamond_ore",
-                "8x kubejs:dense_lapis_ore",
-                "8x kubejs:dense_coal_ore",
-                "4x kubejs:dense_emerald_ore",
-                "4x kubejs:dense_redstone_ore"
+                "64x gtceu:raw_lapis",
+                "64x gtceu:raw_lapis",
+                "32x gtceu:raw_lapis",
+                "64x gtceu:raw_coal",
+                "64x gtceu:raw_coal",
+                "32x gtceu:raw_coal",
+                "64x gtceu:raw_redstone",
             )
     })
 
@@ -54,8 +60,14 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:damascus_steel_drill_head")
             .itemOutputs(
-                "32x kubejs:dense_oilsands_ore",
-                "8x kubejs:compressed_infinity_dust_block"
+                "64x gtceu:raw_oilsands",
+                "64x gtceu:raw_oilsands",
+                "64x gtceu:raw_oilsands",
+                "64x gtceu:raw_oilsands",
+                "64x gtceu:raw_oilsands",
+                "64x gtceu:raw_oilsands",
+                "64x enderio:grains_of_infinity",
+                "64x enderio:grains_of_infinity",
             )
     })
 
@@ -65,10 +77,10 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:microversal_alchemy_kit")
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs(
-                "32x kubejs:solidified_chlorine"
+                "32x kubejs:solidified_chlorine",
             )
             .itemOutputs(
-                "32x kubejs:solidified_bromine"
+                "32x kubejs:solidified_bromine",
             )
     })
 
@@ -98,7 +110,7 @@ ServerEvents.recipes(event => {
                     "32x gtceu:raw_cooperite",
                     "64x gtceu:raw_naquadah",
                     "64x gtceu:raw_naquadah",
-                    "24x gtceu:raw_kaemanite"
+                    "24x gtceu:raw_kaemanite",
                 )
         } else {
             builder
@@ -111,7 +123,7 @@ ServerEvents.recipes(event => {
                     "32x gtceu:raw_pollucite",
                     "64x gtceu:raw_snowchestite",
                     "64x gtceu:raw_snowchestite",
-                    "24x gtceu:raw_kaemanite"
+                    "24x gtceu:raw_kaemanite",
                 )
         }
     })
@@ -127,7 +139,7 @@ ServerEvents.recipes(event => {
                 "32x gtceu:raw_monazite",
                 "32x gtceu:raw_molybdenite",
                 "16x gtceu:raw_powellite",
-                "8x gtceu:raw_osmiridiumyes"
+                "8x gtceu:rarest_metal_mixture_dust",
             )
     })
 
@@ -140,7 +152,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "32x gtceu:raw_realgar",
                 "64x gtceu:raw_sphalerite",
-                "16x gtceu:raw_fluorite"
+                "16x gtceu:raw_fluorite",
             )
     })
 
@@ -152,9 +164,10 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:damascus_steel_drill_head")
             .itemOutputs(
                 "32x gtceu:raw_bastnasite",
-                "16x gtceu:ender_pearl_block",
-                "32x gtceu:boron_dust",
-                "32x gtceu:raw_beryllium"
+                "16x minecraft:ender_pearl",
+                "16x minecraft:ender_pearl",
+                "16x minecraft:ender_pearl",
+                "64x gtceu:raw_beryllium",
             )
     })
 
@@ -169,8 +182,8 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_uraninite",
                 "32x gtceu:raw_uraninite",
-                "32x gtceu:raw_osmiridiumyes",
-                "32x gtceu:raw_iridosmineyes"
+                "32x gtceu:raw_plutonium",
+                "32x gtceu:rarest_metal_mixture_dust",
             )
     })
 
@@ -181,7 +194,7 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:microversal_alchemy_kit")
             .itemInputs("32x kubejs:wither_realm_data")
             .itemOutputs(
-                "16x kubejs:stabilized_einsteinium"
+                "16x kubejs:stabilized_einsteinium",
             )
     })
 
@@ -208,7 +221,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "32x minecraft:dragon_egg",
                 "64x kubejs:ender_dragon_scale",
-                "32x minecraft:dragon_breath"
+                "32x minecraft:dragon_breath",
             )
     })
 })
