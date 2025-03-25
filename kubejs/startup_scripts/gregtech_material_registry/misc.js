@@ -234,6 +234,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust(1)
         .color(0xe8543a).secondaryColor(0x684a09).iconSet(GTMaterialIconSet.SAND)
         .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("saline_antisceptic")
+        .fluid()
+        .color(0x99dce5)
+
+    event.create("rotten_sludge")
+        .fluid()
+        .color(0x997700)
 })
 
 GTCEuStartupEvents.materialModification(event => {
