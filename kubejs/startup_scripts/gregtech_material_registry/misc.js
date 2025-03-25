@@ -229,6 +229,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
         .components("6x trinium", "2x naquadah", "1x carbon")
         .blastTemp(8747, "higher", 131072, 1200)
+
+    event.create("rotten_meat")
+        .dust(1)
+        .color(0xe8543a).secondaryColor(0x684a09).iconSet(GTMaterialIconSet.SAND)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 })
 
 GTCEuStartupEvents.materialModification(event => {
