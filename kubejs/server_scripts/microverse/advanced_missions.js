@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:data_stick")
             .itemInputs("2x kubejs:ultra_dense_hydrogen")
             .itemOutputs(
-                "4x kubejs:stellar_creation_data",
+                "5x kubejs:stellar_creation_data",
             )
     })
 
@@ -253,9 +253,10 @@ ServerEvents.recipes(event => {
             .itemInputs("16x kubejs:quantum_flux")
             .itemInputs("32x kubejs:stabilized_plutonium")
             .itemInputs("gtceu:data_module")
-            .itemInputs("48x kubejs:ultra_dense_hydrogen")
+            .itemInputs("64x kubejs:ultra_dense_hydrogen, 64x kubejs:ultra_dense_hydrogen")
             .itemOutputs(
-                "48x kubejs:stellar_creation_data",
+                "64x kubejs:stellar_creation_data",
+                "64x kubejs:stellar_creation_data"
             )
     })
 })
