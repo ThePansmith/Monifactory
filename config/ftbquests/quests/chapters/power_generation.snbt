@@ -1043,6 +1043,11 @@
 		}
 		{
 			dependencies: ["0BFAE16A8B131E84"]
+			description: [
+				"{moni.quest.2C784A17221E93F0.description1}"
+				""
+				"{moni.quest.2C784A17221E93F0.description2}"
+			]
 			icon: "gtceu:insane_combustion_engine"
 			id: "2C784A17221E93F0"
 			tasks: [
