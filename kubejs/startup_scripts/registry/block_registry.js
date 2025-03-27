@@ -210,6 +210,14 @@ StartupEvents.registry("block", event => {
         .requiresTool(true)
         .textureAll("gtceu:block/casings/solid/machine_casing_hardened_naquadah");
 
+    event.create("naquadah_pipe_casing")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
+        .textureAll("gtceu:block/casings/pipe/pipe_casing_naquadah");
+
     event.create("naquadah_gearbox")
         .soundType("metal")
         .resistance(6).hardness(5)

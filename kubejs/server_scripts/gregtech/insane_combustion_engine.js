@@ -1,5 +1,5 @@
 /**
- * Define recipes for Insane Combustion Engine and related casings
+ * Define recipes for Hardened/Naquadah casings and ICE
  */
 ServerEvents.recipes(event => {
     event.shaped("2x kubejs:hardened_machine_casing", [
@@ -19,6 +19,25 @@ ServerEvents.recipes(event => {
         .circuit(6)
         .duration(50)
         .EUt(16)
+
+    event.shaped("2x kubejs:naquadah_pipe_casing", [
+        "NPN",
+        "PFP",
+        "NPN"
+    ], {
+        N: "#forge:plates/naquadah",
+        P: "gtceu:naquadah_normal_fluid_pipe",
+        F: "#forge:frames/enriched_naquadah",
+    }).id("gtceu:shaped/naquadah_pipe_casing")
+
+    /*  // So it turns out that pipe casings don't have assembler recipes?
+    event.recipes.gtceu.assembler("naquadah_pipe_casing")
+        .itemInputs("4x #forge:plates/naquadah", "4x gtceu:naquadah_normal_fluid_pipe", "#forge:frames/enriched_naquadah")
+        .itemOutputs("2x kubejs:naquadah_pipe_casing")
+        .circuit(4)
+        .duration(50)
+        .EUt(16)
+    */
 
     event.shaped("2x kubejs:naquadah_gearbox", [
         "PHP",
