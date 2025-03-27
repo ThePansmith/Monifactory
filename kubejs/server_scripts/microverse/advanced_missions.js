@@ -97,6 +97,17 @@ ServerEvents.recipes(event => {
             )
     })
 
+    microverse_mission(event, 4, 2).forEach(builder => {
+        builder
+            .itemInputs("4x kubejs:quantum_flux")
+            .itemInputs("16x kubejs:petrotheum_dust")
+            .itemInputs("gtceu:data_stick")
+            .itemInputs("2x kubejs:ultra_dense_hydrogen")
+            .itemOutputs(
+                "4x kubejs:stellar_creation_data",
+            )
+    })
+
     // T5MM missions
     microverse_mission(event, 5, 2).forEach(builder => {
         if(isNormalMode) {
@@ -171,6 +182,18 @@ ServerEvents.recipes(event => {
             )
     })
 
+    microverse_mission(event, 5, 2).forEach(builder => {
+        builder
+            .itemInputs("8x kubejs:quantum_flux")
+            .itemInputs("16x kubejs:stabilized_uranium")
+            .itemInputs("gtceu:data_orb")
+            .itemInputs("9x kubejs:ultra_dense_hydrogen")
+            .itemInputs("3x kubejs:ultra_dense_helium")
+            .itemOutputs(
+                "20x kubejs:stellar_creation_data",
+            )
+    })
+
     // T6MM missions
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
@@ -222,6 +245,17 @@ ServerEvents.recipes(event => {
                 "32x minecraft:dragon_egg",
                 "64x kubejs:ender_dragon_scale",
                 "32x minecraft:dragon_breath",
+            )
+    })
+
+    microverse_mission(event, 6, 2).forEach(builder => {
+        builder
+            .itemInputs("16x kubejs:quantum_flux")
+            .itemInputs("32x kubejs:stabilized_plutonium")
+            .itemInputs("gtceu:data_module")
+            .itemInputs("48x kubejs:ultra_dense_hydrogen")
+            .itemOutputs(
+                "48x kubejs:stellar_creation_data",
             )
     })
 })
