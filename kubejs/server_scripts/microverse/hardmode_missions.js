@@ -149,6 +149,9 @@ ServerEvents.recipes(event => {
                     "64x gtceu:raw_darmstadtite",
                     "64x gtceu:raw_darmstadtite",
                     "64x gtceu:raw_darmstadtite",
+                    "64x gtceu:raw_darmstadtite",
+                    "64x gtceu:raw_darmstadtite",
+                    "64x gtceu:raw_darmstadtite"
                 )
         })
 
@@ -167,6 +170,7 @@ ServerEvents.recipes(event => {
                     "64x gtceu:raw_dulysite",
                     "64x gtceu:raw_dulysite",
                     "64x gtceu:raw_dulysite",
+                    "64x gtceu:raw_dulysite"
                 )
         })
 
@@ -195,7 +199,7 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:duranium_drill_head")
                 .itemInputs("gtceu:osmium_dust")
                 .itemOutputs(
-                    "64x gtceu:raw_osmiridiumyes",
+                    "32x gtceu:raw_osmiridiumyes",
                 )
         })
 
@@ -207,7 +211,7 @@ ServerEvents.recipes(event => {
                 .itemInputs("gtceu:duranium_drill_head")
                 .itemInputs("gtceu:iridium_dust")
                 .itemOutputs(
-                    "64x gtceu:raw_iridosmineyes",
+                    "32x gtceu:raw_iridosmineyes",
                 )
         })
     }
