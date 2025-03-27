@@ -83,9 +83,9 @@ ServerEvents.recipes(event => {
             "4x gtceu:luv_electric_piston",
             "2x gtceu:luv_electric_motor",
             "#gtceu:circuits/zpm",
-            "2x gtceu:naquadah_single_cable"
+            "2x gtceu:vanadium_gallium_single_cable"
         )
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:iridium 576")
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:osmium 576")
         .itemOutputs("gtceu:insane_combustion_engine")
         .duration(1200)
         .EUt(GTValues.VA[GTValues.LuV])
