@@ -10,14 +10,6 @@
  */
 ServerEvents.recipes(event => {
     // T1MM missions
-    microverse_mission(event, 1, 1, 60).forEach(builder => {
-        builder
-            .itemInputs("kubejs:ultra_dense_hydrogen")
-            .inputFluids("gtceu:rocket_fuel 2000")
-            .itemInputs("kubejs:blasting_kit")
-            .itemOutputs("kubejs:stellar_creation_data")
-    })
-
     microverse_mission(event, 1, 1).forEach(builder => {
         builder
             .itemInputs("kubejs:quantum_flux")
@@ -147,14 +139,6 @@ ServerEvents.recipes(event => {
     })
 
     // T2MM missions
-    microverse_mission(event, 2, 1, 90).forEach(builder => {
-        builder
-            .itemInputs("4x kubejs:ultra_dense_hydrogen")
-            .inputFluids("gtceu:rocket_fuel 3000")
-            .itemInputs("kubejs:blasting_kit")
-            .itemOutputs("4x kubejs:stellar_creation_data")
-    })
-
     microverse_mission(event, 2, 1).forEach(builder => {
         builder
             .itemInputs("3x kubejs:quantum_flux")
