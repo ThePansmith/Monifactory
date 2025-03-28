@@ -2764,6 +2764,34 @@
 			x: 11.0d
 			y: 20.25d
 		}
+		{
+			dependencies: [
+				"01E542E1C9DAF5B4"
+				"22E50A6923EBF5CB"
+			]
+			description: [
+				"{moni.quest.1CF77095C203454F.description1}"
+				""
+				"{moni.quest.1CF77095C203454F.description2}"
+				""
+				"{moni.quest.1CF77095C203454F.description3}"
+			]
+			id: "1CF77095C203454F"
+			rewards: [{
+				id: "665BEDA5781B8237"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			size: 1.75d
+			tasks: [{
+				id: "4EB383E90CD0EFE4"
+				item: "gtceu:mega_alloy_blast_smelter"
+				type: "item"
+			}]
+			title: "{moni.quest.1CF77095C203454F.title}"
+			x: 20.25d
+			y: 20.25d
+		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"
 }

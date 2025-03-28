@@ -59,6 +59,19 @@ ServerEvents.recipes(event => {
             .EUt(1200000)
         )
 
+    // Mega ABS
+    event.recipes.gtceu.assembly_line("gtceu:mega_alloy_blast_smelter")
+        .itemInputs("gtceu:alloy_blast_smelter", "4x #gtceu:circuits/uhv", "4x gtceu:uv_field_generator", "4x #forge:springs/yttrium_barium_cuprate", "4x #forge:dense_plates/neutronium", "4x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire")
+        .inputFluids("gtceu:soldering_alloy 9216", "gtceu:omnium 5760")
+        .itemOutputs("gtceu:mega_alloy_blast_smelter")
+        .duration(4000)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .stationResearch(b => b
+            .researchStack("gtceu:alloy_blast_smelter")
+            .CWUt(128, 768000)
+            .EUt(GTValues.VA[GTValues.UHV])
+        )
+
     if (!isNormalMode) {
         // Helical Fusion Reactor
         event.recipes.gtceu.assembly_line("gtceu:helical_fusion_reactor")
