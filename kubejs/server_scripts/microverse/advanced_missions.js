@@ -130,8 +130,8 @@ ServerEvents.recipes(event => {
                 .itemInputs("kubejs:advanced_drilling_kit")
                 .itemInputs("gtceu:hsse_drill_head")
                 .itemOutputs(
-                    "64x gtceu:raw_pollucite",
-                    "32x gtceu:raw_pollucite",
+                    "36x gtceu:raw_pollucite",
+                    "32x gtceu:raw_cooperite",
                     "64x gtceu:raw_snowchestite",
                     "64x gtceu:raw_snowchestite",
                     "24x gtceu:raw_kaemanite",
