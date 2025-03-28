@@ -323,9 +323,9 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:stainless_steel_drill_head")
             .itemInputs("gtceu:power_thruster")
             .itemOutputs(
-                "32x gtceu:raw_apatite",
-                "16x gtceu:raw_neodymium",
-                "24x gtceu:raw_monazite",
+                "48x gtceu:raw_apatite",
+                "24x gtceu:raw_neodymium",
+                "32x gtceu:raw_monazite",
             )
     })
 
