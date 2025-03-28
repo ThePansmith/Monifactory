@@ -132,7 +132,7 @@
 			shape: "hexagon"
 			size: 2.0d
 			x: 7.5d
-			y: 23.0d
+			y: 18.5d
 		}
 		{
 			id: "2AC2C9110FDD0D04"
@@ -2303,7 +2303,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1AA0A089DCA17FC8.title}"
-			x: 12.5d
+			x: 12.0d
 			y: 12.0d
 		}
 		{
