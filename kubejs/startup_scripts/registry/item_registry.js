@@ -3,48 +3,37 @@
  * and certain other properties of custom items.
  */
 StartupEvents.registry("item", event => {
+    const stabilized_miners = [
+        "2half",
+        "4half",
+        "6",
+        "7",
+        "8",
+    ]
 
     // Regular Microminers
-    for (let index = 1; index <= 12; index++) {
-        event.create(`microminer_t${index}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${index}`)
+    for (let tier = 1; tier <= 12; tier++) {
+        event.create(`microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}`)
+        if(tier >= 6 && tier < 9) event.create(`damaged_microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}_damaged`)
     }
 
 
     // HM/EM Microminers
     if (!isNormalMode) {
+        event.create("microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half")
+        event.create("damaged_microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half_damaged")
         event.create("microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
+        event.create("damaged_microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half_damaged")
         event.create("microminer_t8half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
-    }
 
-
-    // Pristine Matters
-    const pristine_matter = [
-        ["1", "#c0c0b0"],
-        ["2", "#f5f5f1"],
-        ["3", "#736055"],
-        ["4", "#f17d3d"],
-        ["4half", "#eef487"],
-        ["5", "#fccc6a"],
-        ["6", "#58a14e"],
-        ["7", "#173639"],
-        ["8", "#dcdbe4"],
-        ["8half", "#4ebcef"]
-    ]
-
-    if (!isNormalMode) {
-        for (const [tier, color] of pristine_matter) {
+        // Stabilized Miners
+        for (const tier of stabilized_miners) {
             event.create(`stabilized_microminer_t${tier}`)
                 .maxStackSize(16)
                 .texture(`kubejs:item/microverse/microminer_t${tier}`)
                 .glow(true);
-            event.create(`pristine_matter_t${tier}`)
-                .textureJson({ layer0: "kubejs:item/prediction" })
-                .color(0, color)
-                .glow(true);
-
         }
     }
-
 
     // Microminer Components
     event.create("basic_mining_laser").displayName("§eBasic Mining Laser")
@@ -52,13 +41,25 @@ StartupEvents.registry("item", event => {
     event.create("supercharged_laser_array").displayName("§eSupercharged Laser Array")
     event.create("basic_micro_miner_guidance_system").displayName("§eBasic Micro Miner Guidance System")
     event.create("advanced_micro_miner_guidance_system").displayName("§eAdvanced Micro Miner Guidance System")
-    event.create("gem_sensor").displayName("Gemstone Sensor")
     event.create("warp_engine").displayName("§dWarp Engine")
     event.create("hadal_warp_engine").displayName("§dHadal Warp Engine")
     event.create("universal_navigator").displayName("§dUniversal Navigator")
     event.create("extradimensional_navigator").displayName("§dExtradimensional Navigator")
+
+    // Quantum Flux
     event.create("quantum_flux").displayName("§dQuantum Flux")
 
+    // Miner kits
+    event.create("gem_sensor").maxStackSize(16).displayName("Gemstone Sensor")
+    event.create("basic_drilling_kit").maxStackSize(16)
+    event.create("advanced_drilling_kit").maxStackSize(16)
+    event.create("advanced_drilling_kit_ii").maxStackSize(16).displayName("Advanced Drill Kit II")
+    event.create("blasting_kit").maxStackSize(16)
+    event.create("microversal_alchemy_kit").maxStackSize(16)
+
+    // T9+ Devices
+    event.create("gravity_well_generator").maxStackSize(16)
+    event.create("universal_collapse_device").maxStackSize(16)
 
     // Heavy platings
     event.create("quantum_fluxed_eternium_heavy_plating")
@@ -221,10 +222,12 @@ StartupEvents.registry("item", event => {
     }
 
 
-    // Dense Hydrogen (Solidified Hydrogen is part of Solidified Elements section)
+    // Dense Elemental Gasses (Solidification recipes are part of the Solidified Elements Section)
     event.create("dense_hydrogen").rarity("Uncommon")
     event.create("ultra_dense_hydrogen").rarity("Rare")
 
+    event.create("dense_helium").rarity("Uncommon")
+    event.create("ultra_dense_helium").rarity("Rare")
 
     // Stabilized Elements
     const stabilized_elements = [
