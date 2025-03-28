@@ -79,12 +79,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xeeaaee).iconSet("dull")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("8x carbon", "4x hydrogen", "3x oxygen")
+        .formula("C6H4(CO)2O");
 
     event.create("ethylanthraquinone")
         .dust()
         .color(0xf1e181)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("16x carbon", "12x hydrogen", "2x oxygen")
+        .formula("C6H4(CO)2C6H3(CH2CH3)");
 
     event.create("hydrazine") // is this a reference to the book 'Ignition! An Informal History of Liquid Rocket Propellants.' no way
         .fluid()
@@ -95,6 +97,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluid()
         .color(0xa1e1e1)
         .components("6x carbon", "12x hydrogen", "2x nitrogen")
+        .formula("((CH3)2(CN))2");
 
     event.create("graphene_oxide")
         .dust()
@@ -109,12 +112,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x336040).iconSet("fine")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("10x carbon", "14x hydrogen")
+        .formula("C6H2(CH3)4");
 
     event.create("pyromellitic_dianhydride")
         .dust()
         .fluid()
         .color(0xB48C63)
         .components("10x carbon", "2x hydrogen", "6x oxygen")
+        .formula("C6H2(C2O3)2");
 
     event.create("dimethylformamide")
         .fluid()
@@ -127,6 +132,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xf0e130).iconSet("dull")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("12x carbon", "12x hydrogen", "2x nitrogen", "oxygen")
+        .formula("O(C6H4NH2)2");
 
     event.create("oxydianiline_sludge")
         .fluid()
@@ -283,16 +289,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x612C0D)
         .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
         .components("1x hydrogen", "1x bromine", "1x water")
-})
-
-GTCEuStartupEvents.materialModification(() => {
-    if (!isHardMode) {
-        return;
-    }
-    GTMaterials.get("phthalic_anhydride").setFormula("C6H4(CO)2O");
-    GTMaterials.get("ethylanthraquinone").setFormula("C6H4(CO)2C6H3(CH2CH3)");
-    GTMaterials.get("acetone_azine").setFormula("((CH3)2(CN))2");
-    GTMaterials.get("durene").setFormula("C6H2(CH3)4");
-    GTMaterials.get("pyromellitic_dianhydride").setFormula("C6H2(C2O3)2");
-    GTMaterials.get("oxydianiline").setFormula("O(C6H4NH2)2");
 })

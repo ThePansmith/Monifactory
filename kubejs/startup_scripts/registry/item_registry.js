@@ -264,10 +264,11 @@ StartupEvents.registry("item", event => {
     })
 
     // Planet dusts
-    event.create("moon_dust")
-    event.create("mars_dust")
-    event.create("venus_dust")
-    event.create("mercury_dust")
+    event.create("moon_dust").texture("kubejs:item/regolith_dust/moon_dust")
+    event.create("mars_dust").texture("kubejs:item/regolith_dust/mars_dust")
+    event.create("venus_dust").texture("kubejs:item/regolith_dust/venus_dust")
+    event.create("mercury_dust").texture("kubejs:item/regolith_dust/mercury_dust")
+    event.create("glacio_dust").texture("kubejs:item/regolith_dust/glacio_dust")
 
 
     // Thermal Series item ports

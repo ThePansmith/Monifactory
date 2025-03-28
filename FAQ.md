@@ -100,7 +100,7 @@ Instead:
 
 For the old Gregtech: Modern textures, look into [Zedtech](https://www.curseforge.com/minecraft/texture-packs/zedtech).
 
-For the older 1.12 Gregtech textures, look into [Threefold's Modern GregTech](https://modrinth.com/resourcepack/threefolds-modern-gregtech).
+For the older 1.12 Gregtech textures, look into [Threefold's Modern GregTech](https://modrinth.com/resourcepack/threefolds-modern-gregtech) or [GregTech CEu Modern Programmer Art](https://www.curseforge.com/minecraft/texture-packs/gtceu-programmer-art).
 
 <hr>
 

@@ -66,8 +66,8 @@ ServerEvents.recipes(event => {
             "FFF"
         ], {
             F: "gtceu:electrum_flux_plate",
-            E: "gtceu:luv_emitter",
-            C: "#gtceu:circuits/luv",
+            E: "gtceu:ev_emitter",
+            C: "#gtceu:circuits/iv",
             R: "gtceu:red_alloy_plate"
         }).id("laserio:laser_connector_advanced")
     }

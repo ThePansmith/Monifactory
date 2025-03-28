@@ -1,23 +1,46 @@
 /**
- * Makes Ad Astra rock dusts drop from ores
- * Also centrifuge recipes for dusts
+ * Maceration recipes for Ad Astra planetary rock dusts
+ * Makes planetary rock dusts drop from ores
+ * Centrifuge recipes for converting planetary rock dusts into valuable resources
+ * Maceration recipes for converting other blocks found on planets to resources
  */
 
 ServerEvents.recipes(event => {
     // Regolith dusts
     let regolithDustResources = [
-        [["moon_sand", "moon_cobblestone", "moon_stone"], "moon_dust", "minecraft:diamond"],
-        [["mars_sand", "mars_cobblestone", "mars_stone"], "mars_dust", "gtceu:monazite_gem"],
-        [["venus_sand", "venus_cobblestone", "venus_stone"], "venus_dust", "gtceu:olivine_gem"],
-        [["mercury_cobblestone", "mercury_stone"], "mercury_dust", "gtceu:cinnabar_gem"]
+        ["moon", ["moon_sand"], "diamond"],
+        ["mars", ["mars_sand"], "monazite"],
+        ["venus", ["venus_sandstone", "venus_sandstone_bricks", "cracked_venus_sandstone_bricks", "venus_sand"], "olivine"],
+        ["mercury", [], "cinnabar"],
+        ["glacio", [], "sodalite"]
     ]
 
     regolithDustResources.forEach((planetResources, fluxCount) => {
-        // Planetary dust maceration recipe
-        planetResources[0].forEach(rocksToMacerate => {
-            event.recipes.gtceu.macerator(rocksToMacerate)
-                .itemInputs(`ad_astra:${rocksToMacerate}`)
-                .itemOutputs(`kubejs:${planetResources[1]}`)
+        let stone_variants = [
+            `${planetResources[0]}_stone`,
+            `${planetResources[0]}_cobblestone`,
+            `${planetResources[0]}_stone_bricks`,
+            `cracked_${planetResources[0]}_stone_bricks`,
+            `chiseled_${planetResources[0]}_stone_bricks`,
+            `polished_${planetResources[0]}_stone`,
+            `${planetResources[0]}_pillar`,
+            `${planetResources[0]}_stone_brick_wall`
+        ]
+
+        // Planetary dust maceration recipe: stone variants
+        stone_variants.forEach(variant => {
+            event.recipes.gtceu.macerator(`macerate_${variant}`)
+                .itemInputs(`ad_astra:${variant}`)
+                .itemOutputs(`kubejs:${planetResources[0]}_dust`)
+                .duration(200)
+                .EUt(GTValues.VHA[GTValues.HV])
+        })
+
+        // Planetary dust maceration recipe: others
+        planetResources[1].forEach(variant => {
+            event.recipes.gtceu.macerator(`macerate_${variant}`)
+                .itemInputs(`ad_astra:${variant}`)
+                .itemOutputs(`kubejs:${planetResources[0]}_dust`)
                 .duration(200)
                 .EUt(GTValues.VHA[GTValues.HV])
         })
@@ -28,58 +51,110 @@ ServerEvents.recipes(event => {
             "BAB",
             " B "
         ], {
-            A: planetResources[2],
-            B: `kubejs:${planetResources[1]}`
-        })
+            A: `#forge:gems/${planetResources[2]}`,
+            B: `kubejs:${planetResources[0]}_dust`
+        }).id(`kubejs:quantum_flux_from_${planetResources[0]}_dust`)
+
+        event.recipes.gtceu.mixer(`quantum_flux_from_${planetResources[0]}_dust`)
+            .itemInputs(`4x kubejs:${planetResources[0]}_dust`, `#forge:gems/${planetResources[2]}`)
+            .itemOutputs(`${fluxCount + 1}x kubejs:quantum_flux`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.HV])
     })
 
     // Rock dust centrifuging
     event.recipes.gtceu.centrifuge("moon_dust_centrifuging")
         .itemInputs("kubejs:moon_dust")
-        .chancedOutput("gtceu:small_stone_dust", 2500, 0)
-        .chancedOutput("gtceu:small_aluminium_dust", 1700, 20)
-        .chancedOutput("gtceu:small_quicklime_dust", 950, 15)
-        .chancedOutput("gtceu:small_glass_dust", 700, 30)
-        .chancedOutput("gtceu:small_pyrolusite_dust", 700, 10)
-        .chancedOutput("gtceu:small_iron_dust", 550, 5)
+        .chancedOutput("gtceu:stone_dust", 2500, 0)
+        .chancedOutput("gtceu:glass_dust", 2000, 0)
+        .chancedOutput("gtceu:bauxite_dust", 2300, 0)
+        .chancedOutput("gtceu:quicklime_dust", 1400, 0)
+        .chancedOutput("gtceu:magnesia_dust", 1000, 50)
+        .chancedOutput("gtceu:extraterrestrial_metal_mixture_dust", 700, 70)
         .outputFluids(Fluid.of("gtceu:deuterium", 100))
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.centrifuge("mars_dust_centrifuging")
         .itemInputs("kubejs:mars_dust")
-        .chancedOutput("gtceu:small_stone_dust", 2500, 0)
-        .chancedOutput("gtceu:small_hematite_dust", 1500, 20)
-        .chancedOutput("gtceu:small_calcium_perchlorate_dust", 100, 10)
-        .chancedOutput("gtceu:small_ice_dust", 300, 35)
-        .chancedOutput("gtceu:small_silicon_dioxide_dust", 3000, 50)
-        .outputFluids(Fluid.of("gtceu:carbon_dioxide", 150))
+        .chancedOutput("gtceu:silicon_dioxide_dust", 4000, 0)
+        .chancedOutput("gtceu:pyrope_dust", 2300, 0)
+        .chancedOutput("gtceu:hematite_dust", 2000, 0)
+        .chancedOutput("gtceu:soapstone_dust", 900, 90)
+        .chancedOutput("gtceu:calcium_perchlorate_dust", 700, 0)
+        .chancedOutput("gtceu:extraterrestrial_metal_mixture_dust", 825, 80)
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.centrifuge("venus_dust_centrifuging")
         .itemInputs("kubejs:venus_dust")
-        .chancedOutput("gtceu:small_basaltic_mineral_sand_dust", 2500, 0)
-        .chancedOutput("gtceu:small_olivine_dust", 700, 15)
-        .chancedOutput("gtceu:small_biotite_dust", 950, 25)
-        .chancedOutput("gtceu:small_silicon_dioxide_dust", 3000, 50)
-        .chancedOutput("gtceu:small_garnierite_dust", 550, 10)
+        .chancedOutput("gtceu:quartz_sand_dust", 3000, 0)
+        .chancedOutput("gtceu:pyrite_dust", 2600, 260)
+        .chancedOutput("gtceu:calcium_carbonate_dust", 1800, 0)
+        .chancedOutput("gtceu:apatite_dust", 1400, 140)
+        .chancedOutput("gtceu:garnierite_dust", 1100, 110)
+        .chancedOutput("gtceu:extraterrestrial_metal_mixture_dust", 1000, 80)
         .outputFluids(Fluid.of("gtceu:sulfur_dioxide", 100))
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.centrifuge("mercury_dust_centrifuging")
         .itemInputs("kubejs:mercury_dust")
-        .chancedOutput("gtceu:small_stone_dust", 2500, 0)
-        .chancedOutput("gtceu:small_carbon_dust", 1000, 25)
-        .chancedOutput("gtceu:small_sulfur_dust", 750, 15)
-        .chancedOutput("gtceu:small_magnesium_dust", 550, 5)
-        .chancedOutput("gtceu:small_ilmenite_dust", 100, 10)
-        .chancedOutput("gtceu:small_silicon_dioxide_dust", 2750, 50)
-        .outputFluids(Fluid.of("gtceu:sodium_persulfate", 50))
+        .chancedOutput("gtceu:stone_dust", 2900, 0)
+        .chancedOutput("gtceu:basaltic_mineral_sand_dust", 2700, 0)
+        .chancedOutput("gtceu:garnet_sand_dust", 2000, 0)
+        .chancedOutput("gtceu:fullers_earth_dust", 1650, 0)
+        .chancedOutput("minecraft:redstone", 1100, 130)
+        .chancedOutput("gtceu:extraterrestrial_metal_mixture_dust", 1000, 80)
         .duration(200)
         .EUt(GTValues.VA[GTValues.EV])
 
+    event.recipes.gtceu.centrifuge("glacio_dust_centrifuging")
+        .itemInputs("kubejs:glacio_dust")
+        .chancedOutput("gtceu:granitic_mineral_sand_dust", 4500, 0)
+        .chancedOutput("gtceu:kyanite_dust", 3750, 0)
+        .chancedOutput("gtceu:alunite_dust", 2500, 0)
+        .chancedOutput("gtceu:oilsands_dust", 1750, 175)
+        .chancedOutput("gtceu:bastnasite_dust", 1350, 130)
+        .chancedOutput("gtceu:extraterrestrial_metal_mixture_dust", 1200, 80)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.centrifuge("extraterrestrial_metal_mixture_centrifuging")
+        .itemInputs("gtceu:extraterrestrial_metal_mixture_dust")
+        .chancedOutput("gtceu:ilmenite_dust", 6000, 0)
+        .chancedOutput("gtceu:chromite_dust", 4000, 0)
+        .chancedOutput("gtceu:pyrolusite_dust", 3500, 0)
+        .chancedOutput("gtceu:wulfenite_dust", 2200, 70)
+        .chancedOutput("gtceu:tungstate_dust", 1700, 110)
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // Maceration recycling for other extraterrestrial materials
+    event.recipes.gtceu.macerator("macerate_conglomerate")
+        .itemInputs("ad_astra:conglomerate")
+        .chancedOutput("gtceu:mirabilite_dust", 2500, 0)
+        .chancedOutput("gtceu:redrock_dust", 2500, 0)
+        .chancedOutput("gtceu:biotite_dust", 2500, 0)
+        .chancedOutput("gtceu:gypsum_dust", 2500, 0)
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.MV])
+
+    event.recipes.gtceu.macerator("macerate_infernal_spire")
+        .itemInputs("ad_astra:infernal_spire_block")
+        .chancedOutput("minecraft:blaze_powder", 5000, 0)
+        .chancedOutput("gtceu:bauxite_dust", 2000, 200)
+        .chancedOutput("gtceu:scheelite_dust", 1500, 150)
+        .chancedOutput("gtceu:netherite_scrap_dust", 500, 100)
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.IV])
+
+    event.recipes.gtceu.macerator("macerate_permafrost")
+        .itemInputs("ad_astra:permafrost")
+        .chancedOutput("gtceu:ice_dust", 5000, 0)
+        .chancedOutput("minecraft:dirt", 5000, 0)
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.ULV])
 
     // Dilithium
     event.recipes.gtceu.autoclave("dilithium_helium")
@@ -92,8 +167,39 @@ ServerEvents.recipes(event => {
 
 // Add regolith dusts to ores' loot pool
 LootJS.modifiers((event) => {
-    event.addBlockLootModifier(/.*moon_.*_ore$/).randomChance(0.5).addLoot("kubejs:moon_dust");
-    event.addBlockLootModifier(/.*mars_.*_ore$/).randomChance(0.5).addLoot("kubejs:mars_dust");
-    event.addBlockLootModifier(/.*venus_.*_ore$/).randomChance(0.5).addLoot("kubejs:venus_dust");
-    event.addBlockLootModifier(/.*mercury_.*_ore$/).randomChance(0.5).addLoot("kubejs:mercury_dust");
+    const moonDust = LootEntry.of("kubejs:moon_dust").when(c => c.randomChance(0.50))
+    const moonDustFortune = LootEntry.of("kubejs:moon_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
+    const marsDust = LootEntry.of("kubejs:mars_dust").when(c => c.randomChance(0.50))
+    const marsDustFortune = LootEntry.of("kubejs:mars_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
+    const venusDust = LootEntry.of("kubejs:venus_dust").when(c => c.randomChance(0.50))
+    const venusDustFortune = LootEntry.of("kubejs:venus_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
+    const mercuryDust = LootEntry.of("kubejs:mercury_dust").when(c => c.randomChance(0.50))
+    const mercuryDustFortune = LootEntry.of("kubejs:mercury_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
+    const glacioDust = LootEntry.of("kubejs:glacio_dust").when(c => c.randomChance(0.50))
+    const glacioDustFortune = LootEntry.of("kubejs:glacio_dust")
+        .limitCount(0, 2)
+        .when(c => c.randomTableBonus("minecraft:fortune", [0, 0.60, 1.2, 2.0]))
+        .applyOreBonus("minecraft:fortune")
+
+    event.addBlockLootModifier(/.*moon_.*_ore$/).addSequenceLoot(moonDust, moonDustFortune);
+    event.addBlockLootModifier(/.*mars_.*_ore$/).addSequenceLoot(marsDust, marsDustFortune);
+    event.addBlockLootModifier(/.*venus_.*_ore$/).addSequenceLoot(venusDust, venusDustFortune);
+    event.addBlockLootModifier(/.*mercury_.*_ore$/).addSequenceLoot(mercuryDust, mercuryDustFortune);
+    event.addBlockLootModifier(/.*glacio_.*_ore$/).addSequenceLoot(glacioDust, glacioDustFortune);
 });

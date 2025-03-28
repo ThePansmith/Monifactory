@@ -850,7 +850,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor("kubejs:chloroethane")
         .inputFluids("gtceu:ethylene 1000", "gtceu:hydrochloric_acid 1000")
-        .outputFluids("gtceu:chloroethane 2000")
+        .outputFluids("gtceu:chloroethane 1000")
         .duration(60)
         .EUt(30)
         .circuit(4)
