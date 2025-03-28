@@ -56,6 +56,7 @@ JEIEvents.hideItems(event => {
     event.hide(/thermal:.*_gear/)
     event.hide("thermal:creosote_bucket")
     event.hide(/thermal:.*_cast/)
+    event.hide(["thermal:drill_head", "thermal:saw_blade"])
     event.hide(["thermal:sawdust", "thermal:sawdust_block"])
 
     // Systeams
