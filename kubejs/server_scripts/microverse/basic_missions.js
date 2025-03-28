@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
                 "48x gtceu:raw_diamond",
                 "32x gtceu:raw_apatite",
                 "48x gtceu:raw_tricalcium_phosphate",
-                "32x gtceu:raw_quartzite",
+                "32x gtceu:raw_nether_quartz",
             )
     })
 
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:steel_drill_head")
             .itemInputs("gtceu:power_thruster")
             .itemOutputs(
-                "32x gtceu:raw_molybdenum",
+                "32x gtceu:raw_molybdenite",
                 "32x ad_astra:moon_sand",
                 "32x gtceu:raw_dilithium",
                 "32x gtceu:raw_fluorite",
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_dilithium",
                 "64x gtceu:raw_certus_quartz",
-                "32x gtceu:raw_monazite",
+                "32x gtceu:raw_quartzite",
             )
     })
 
@@ -320,14 +320,26 @@ ServerEvents.recipes(event => {
             .itemInputs("4x kubejs:quantum_flux")
             .inputFluids("gtceu:rocket_fuel 5000")
             .itemInputs("kubejs:basic_drilling_kit")
+            .itemInputs("gtceu:stainless_steel_drill_head")
+            .itemInputs("gtceu:power_thruster")
+            .itemOutputs(
+                "48x gtceu:raw_apatite",
+                "24x gtceu:raw_neodymium",
+                "32x gtceu:raw_monazite",
+            )
+    })
+
+    microverse_mission(event, 3, 1).forEach(builder => {
+        builder
+            .itemInputs("4x kubejs:quantum_flux")
+            .inputFluids("gtceu:rocket_fuel 5000")
+            .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:ultimet_drill_head")
             .itemInputs("gtceu:advanced_power_thruster")
             .itemOutputs(
-                "32x gtceu:raw_barite",
-                "32x gtceu:raw_apatite",
-                "16x gtceu:raw_neodymium",
-                "8x gtceu:raw_laurite",
-                "4x gtceu:raw_cuprorhodsite",
+                "8x gtceu:raw_barite",
+                "12x gtceu:raw_laurite",
+                "6x gtceu:raw_cuprorhodsite",
             )
     })
 

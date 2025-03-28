@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:wrought_iron_drill_head")
             .itemOutputs(
                 "64x gtceu:raw_thorium",
-                "64x gtceu:raw_thorium",
+                "48x gtceu:raw_thorium",
                 "32x gtceu:raw_pitchblende",
             )
     })
@@ -130,8 +130,8 @@ ServerEvents.recipes(event => {
                 .itemInputs("kubejs:advanced_drilling_kit")
                 .itemInputs("gtceu:hsse_drill_head")
                 .itemOutputs(
-                    "64x gtceu:raw_pollucite",
-                    "32x gtceu:raw_pollucite",
+                    "36x gtceu:raw_pollucite",
+                    "32x gtceu:raw_cooperite",
                     "64x gtceu:raw_snowchestite",
                     "64x gtceu:raw_snowchestite",
                     "24x gtceu:raw_kaemanite",
@@ -251,9 +251,24 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
             .itemInputs("16x kubejs:quantum_flux")
+            .itemInputs("32x kubejs:stabilized_neptunium")
+            .itemInputs("kubejs:advanced_drilling_kit")
+            .itemInputs("gtceu:tungsten_carbide_drill_head")
+            .itemOutputs(
+                "32x gtceu:raw_monazite",
+                "64x gtceu:raw_neodymium",
+                "64x gtceu:raw_neodymium",
+                "32x gtceu:raw_bastnasite",
+                "16x gtceu:raw_redstone"
+            )
+    })
+
+    microverse_mission(event, 6, 2).forEach(builder => {
+        builder
+            .itemInputs("16x kubejs:quantum_flux")
             .itemInputs("32x kubejs:stabilized_plutonium")
             .itemInputs("gtceu:data_module")
-            .itemInputs("64x kubejs:ultra_dense_hydrogen, 64x kubejs:ultra_dense_hydrogen")
+            .itemInputs("64x kubejs:ultra_dense_hydrogen", "64x kubejs:ultra_dense_hydrogen")
             .itemOutputs(
                 "64x kubejs:stellar_creation_data",
                 "64x kubejs:stellar_creation_data"

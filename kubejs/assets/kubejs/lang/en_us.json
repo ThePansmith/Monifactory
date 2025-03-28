@@ -51,7 +51,7 @@
   "item.kubejs.stabilized_microminer_t4half": "§dStabilized Lumium Plated Micro Mob Slayer [Tier Four and Half]",
   "item.kubejs.stabilized_microminer_t5": "§dStabilized Iridium Plated Micro Miner [Tier Five]",
   "item.kubejs.stabilized_microminer_t6": "§dStabilized Enderium Plated Micro Miner [Tier Six]",
-  "item.kubejs.stabilized_microminer_t7": "§dStabilized Cryobulus Plated Micro Dragon Hunter [Tier Seven]",
+  "item.kubejs.stabilized_microminer_t7": "§dStabilized Cryolobus Plated Micro Dragon Hunter [Tier Seven]",
   "item.kubejs.stabilized_microminer_t8": "§dStabilized Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
   "item.kubejs.stabilized_microminer_t8half": "§dStabilized Trinium Plated Micro Excavator [Tier Eight and Half]",
   "item.kubejs.stabilized_microminer_t9": "§dStabilized Eternium Plated Micro Sun Eater [Tier Nine]",
@@ -60,6 +60,13 @@
   "item.kubejs.stabilized_microminer.tooltip.1": "§7§oA stabilized version, injected with a Heart of a Universe.",
   "item.kubejs.stabilized_microminer.tooltip.2": "§7§oLasts indefinitely. Reusable. Totally not overpowered.",
   "item.kubejs.stabilized_microminer.tooltip.3": "§7§oIt looks oddly familiar.",
+
+  "item.kubejs.damaged_microminer_t2half": "§7Damaged Dark Steel Plated Micro Mob Slayer [Tier Two and a Half]",
+  "item.kubejs.damaged_microminer_t4half": "§7Damaged Lumium Plated Micro Mob Slayer [Tier Four and Half]",
+  "item.kubejs.damaged_microminer_t6": "§7Damaged Enderium Plated Micro Miner [Tier Six]",
+  "item.kubejs.damaged_microminer_t7": "§7Damaged Cryolobus Plated Micro Dragon Hunter [Tier Seven]",
+  "item.kubejs.damaged_microminer_t8": "§7Damaged Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
+  "item.kubejs.damaged_microminer_t8half": "§7Damaged Trinium Plated Micro Excavator [Tier Eight and Half]",
 
   "item.kubejs.damaged_microminer.tooltip": "§7§oCan be repaired in an assembler.",
 
