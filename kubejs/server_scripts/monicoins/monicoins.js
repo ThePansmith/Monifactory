@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
+    if (doMonicoins) {
         event.shapeless("5x kubejs:moni_penny", "kubejs:moni_nickel")
         event.shaped("kubejs:moni_nickel", [
             " A ",
