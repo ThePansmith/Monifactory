@@ -10,6 +10,7 @@ They are more diverse and more rewarding than standard vanilla loot pools so tha
 monifactory:chests/lost_cities_base is a sum of a number of smaller loot pools that is used in every Lost Cities chest. It is composed of:
 - minecraft:chests/simple_dungeon, a loot pool defined by Minecraft but with extra loot added by GregTech.
 - monifactory:chests/ingot_loot, a loot pool that has a chance to offer a small set of ingots complementary to the set GregTech: Modern adds to simple dungeons.
+- monifactory:chests/coins_loot, a loot pool that has a chance to offer Monicoins. (Uses Neoforge data loading conditions to restrict to NM only)
 - monifactory:chests/misc_loot, a loot pool that offers a variety of items & tools that would be useful but not OP in the earlygame, plus some joke items.
 - enderio:chests/alloy_loot, a loot table EnderIO normally applies to "simple dungeons" but must be applied manually due to the configuration used 
 - enderio:chests/common_loot, a loot table EnderIO normally applies to "simple dungeons" but must be applied manually due to the configuration used

@@ -24,6 +24,15 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
+                    "name": "monifactory:chests/coins_loot"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
                     "name": "monifactory:chests/misc_loot"
                 }
             ]
