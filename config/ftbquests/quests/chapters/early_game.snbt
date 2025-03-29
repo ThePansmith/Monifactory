@@ -132,7 +132,7 @@
 			shape: "hexagon"
 			size: 2.0d
 			x: 7.5d
-			y: 18.5d
+			y: 23.0d
 		}
 		{
 			id: "2AC2C9110FDD0D04"
