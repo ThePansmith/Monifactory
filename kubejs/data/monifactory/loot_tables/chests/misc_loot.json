@@ -69,7 +69,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:sponge",
-                    "weight": 3,
+                    "weight": 4,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -91,6 +91,11 @@
                             "tag": "{Fluid:{Amount:87,FluidName:\"gtceu:butane\"}}"
                         }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "telepastries:lost_city_cake",
+                    "weight": 1
                 }
             ]
         },
@@ -147,8 +152,8 @@
         {
             "rolls": {
                 "type": "minecraft:binomial",
-                "n": 1,
-                "p": 0.1
+                "n": 2,
+                "p": 0.25
             },
             "entries": [
                 {
