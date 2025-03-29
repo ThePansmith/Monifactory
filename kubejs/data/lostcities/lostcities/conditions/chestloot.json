@@ -1,8 +1,29 @@
 {
-    "values": [
-      {
-        "factor": 100,
-        "value": "minecraft:chests/simple_dungeon"
-      }
-    ]
+  "values": [
+    {
+      "factor": 100,
+      "value": "monifactory:chests/cellar",
+      "range": "-100,-1"
+    },
+    {
+      "factor": 100,
+      "value": "monifactory:chests/ground_level",
+      "range": "0,4"
+    },
+    {
+      "factor": 100,
+      "value": "monifactory:chests/upper_floors",
+      "range": "5,100"
+    },
+    {
+      "factor": 20,
+      "value": "monifactory:chests/rail_dungeon",
+      "inpart": "rail_dungeon1"
+    },
+    {
+      "factor": 20,
+      "value": "monifactory:chests/rail_dungeon",
+      "inpart": "rail_dungeon2"
+    }
+  ]
 }

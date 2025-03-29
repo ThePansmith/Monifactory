@@ -1,0 +1,48 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "monifactory:chests/lost_cities_base"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:binomial",
+                "n": 1,
+                "p": 0.2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "minecraft:chests/village/village_weaponsmith",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "minecraft:chests/village/village_toolsmith",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "minecraft:chests/village/village_armorer",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "minecraft:chests/village/village_plains_house",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "minecraft:chests/village/village_temple",
+                    "weight": 5
+                }
+            ]
+        }
+    ]
+}
