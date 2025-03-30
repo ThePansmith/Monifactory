@@ -18,6 +18,10 @@ JEIEvents.hideItems(event => {
         event.hide(/^sophisticatedstorage:.*iron.*tier_upgrade$/)
 
     }
+    // Sophisticated compacting upgrades
+    if (isExpertMode) {
+        event.hide(/^sophisticated.*(compacting|compression)_upgrade$/)
+    }
     if (isHardMode) {
         event.hide(/hostilenetworks/)
         event.hide("watercollector:watercollector")
