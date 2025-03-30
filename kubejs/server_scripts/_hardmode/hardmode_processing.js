@@ -639,7 +639,7 @@ ServerEvents.recipes(event => {
             .outputFluids("minecraft:water 2000")
             .duration(300).EUt(30)
 
-        event.recipes.gtceu.chemical_reactor("ammonium_hexachloroiridiate_to_iridium")
+        event.recipes.gtceu.large_chemical_reactor("ammonium_hexachloroiridiate_to_iridium")
             .itemInputs("8x gtceu:ammonium_hexachloroiridiate_dust")
             .inputFluids("gtceu:hydrogen 12000")
             .itemOutputs("gtceu:iridium_dust")
