@@ -54,8 +54,8 @@ StartupEvents.registry("item", event => {
     event.create("basic_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/basic_drilling_kit")
     event.create("advanced_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit")
     event.create("advanced_drilling_kit_ii").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit_ii").displayName("Advanced Drill Kit II")
-    event.create("blasting_kit").maxStackSize(16)
-    event.create("microversal_alchemy_kit").maxStackSize(16)
+    event.create("blasting_kit").maxStackSize(16).texture("kubejs:item/miner_kits/blasting_kit")
+    event.create("microversal_alchemy_kit").maxStackSize(16).texture("kubejs:item/miner_kits/microversal_alchemy_kit")
 
     // T9+ Devices
     event.create("gravity_well_generator").maxStackSize(16)
