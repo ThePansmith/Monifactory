@@ -303,8 +303,8 @@ ServerEvents.recipes(event => {
         .duration(500)
 
     // Potential ingredient additions: Bolts, Screws, Plates, Wires, circuits, frame boxes
-    event.recipes.gtceu.assembly_line("gravity_well_generator")
-        .itemOutputs("kubejs:gravity_well_generator")
+    event.recipes.gtceu.assembly_line("gravitational_amplifier")
+        .itemOutputs("kubejs:gravitational_amplifier")
         .itemInputs(
             "8x ae2:singularity",
             "4x gtceu:gravi_star",
@@ -325,7 +325,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("universal_collapse_device")
         .itemOutputs("kubejs:universal_collapse_device")
         .itemInputs(
-            "2x kubejs:gravity_well_generator",
+            "2x kubejs:gravitational_amplifier",
             "16x thermal:nuke_tnt",
             "16x kubejs:quantum_flux",
             "gtceu:uv_field_generator",
@@ -338,7 +338,7 @@ ServerEvents.recipes(event => {
         .duration(4000)
         .EUt(GTValues.VA[GTValues.UHV])
         .stationResearch(builder => builder
-            .researchStack("kubejs:gravity_well_generator")
+            .researchStack("kubejs:gravitational_amplifier")
             .CWUt(108, 512000)
             .EUt(GTValues.VA[GTValues.UHV])
         )

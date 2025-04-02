@@ -58,7 +58,7 @@ StartupEvents.registry("item", event => {
     event.create("microversal_alchemy_kit").maxStackSize(16).texture("kubejs:item/miner_kits/microversal_alchemy_kit")
 
     // T9+ Devices
-    event.create("gravity_well_generator").maxStackSize(16)
+    event.create("gravitational_amplifier").maxStackSize(16)
     event.create("universal_collapse_device").maxStackSize(16)
 
     // Heavy platings
