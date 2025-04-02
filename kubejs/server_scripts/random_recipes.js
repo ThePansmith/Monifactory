@@ -948,7 +948,7 @@ ServerEvents.recipes(event => {
         C: "minecraft:chorus_fruit",
     })
 
-    //Let Oilsands have multiple types of oil
+    // Let Oilsands have multiple types of oil
     event.remove({id:"gtceu:centrifuge/oilsands_dust_separation"})
     event.recipes.gtceu.centrifuge("oilsands_to_oil")
         .itemInputs("gtceu:oilsands_dust")
