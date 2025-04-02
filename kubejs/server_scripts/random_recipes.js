@@ -947,4 +947,38 @@ ServerEvents.recipes(event => {
         S: "#forge:slimeballs",
         C: "minecraft:chorus_fruit",
     })
+
+    //Let Oilsands have multiple types of oil
+    event.remove({id:"gtceu:centrifuge/oilsands_dust_separation"})
+    event.recipes.gtceu.centrifuge("oilsands_to_oil")
+        .itemInputs("gtceu:oilsands_dust")
+        .chancedOutput("minecraft:sand", 5000, 5000)
+        .outputFluids("gtceu:oil 1000")
+        .duration(200)
+        .EUt(30)
+        .circuit(3)
+
+    event.recipes.gtceu.centrifuge("oilsands_to_light_oil")
+        .itemInputs("gtceu:oilsands_dust")
+        .chancedOutput("minecraft:sand", 5000, 5000)
+        .outputFluids("gtceu:oil_light 500")
+        .duration(200)
+        .EUt(30)
+        .circuit(4)
+
+    event.recipes.gtceu.centrifuge("oilsands_to_heavy_oil")
+        .itemInputs("gtceu:oilsands_dust")
+        .chancedOutput("minecraft:sand", 5000, 5000)
+        .outputFluids("gtceu:oil_heavy 2000")
+        .duration(200)
+        .EUt(30)
+        .circuit(2)
+
+    event.recipes.gtceu.centrifuge("oilsands_to_raw_oil")
+        .itemInputs("gtceu:oilsands_dust")
+        .chancedOutput("minecraft:sand", 5000, 5000)
+        .outputFluids("gtceu:oil_medium 1000")
+        .duration(200)
+        .EUt(30)
+        .circuit(1)
 })
