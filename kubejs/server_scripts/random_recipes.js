@@ -981,7 +981,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
         .circuit(1)
-	
+
     // CubeJS
     event.shaped("kubejs:cubejs", [
         "MOM",
