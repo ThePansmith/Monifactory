@@ -117,7 +117,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
     ]
 
     // Register actualization chamber counterparts in Hard Mode and Expert Mode except for T9+
-    if(isHardMode && stabilized_miners.indexOf(minerTier.toString()) != -1) {
+    if(stabilized_miners.indexOf(minerTier.toString()) != -1) {
         builders[1] = event.recipes.gtceu.microverse(`kubejs:mission_t${minerTier}_${global.mission_counts[minerTier]}_stabilized`)
             .addData("projector_tier", projectorTier)
             .itemInputs(`kubejs:stabilized_microminer_t${minerTier}`)
