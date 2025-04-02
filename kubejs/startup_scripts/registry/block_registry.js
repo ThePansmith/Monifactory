@@ -254,4 +254,11 @@ StartupEvents.registry("block", event => {
         .tag("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .defaultCutout();
+
+    event.create("cubejs")
+        .displayName("CubeJS")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench");
 });

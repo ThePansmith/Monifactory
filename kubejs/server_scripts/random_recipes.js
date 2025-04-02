@@ -947,4 +947,18 @@ ServerEvents.recipes(event => {
         S: "#forge:slimeballs",
         C: "minecraft:chorus_fruit",
     })
+
+    // CubeJS
+    event.shaped("kubejs:cubejs", [
+        "MOM",
+        "SNC",
+        "MEM"
+    ], {
+        M: "kubejs:causality_exempt_monic_heavy_plating",
+        N: "gtceu:nan_certificate",
+        O: "kubejs:omnic_data",
+        S: "kubejs:creative_storage_data",
+        C: "kubejs:creative_computation_data",
+        E: "kubejs:creative_energy_data",
+    })
 })
