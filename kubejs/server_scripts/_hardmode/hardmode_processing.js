@@ -494,9 +494,13 @@ ServerEvents.recipes(event => {
             .outputFluids("gtceu:hydrochloric_acid 4000")
             .duration(120).EUt(30)
 
+        let steam = new JSONObject()
+        steam.add("amount", 3840)
+        steam.add("value", { tag: "forge:steam" })
+
         event.recipes.gtceu.autoclave("platinum_raw_dust_to_platinum")
             .itemInputs("3x gtceu:platinum_raw_dust", "gtceu:calcium_dust")
-            .inputFluids("gtceu:steam 3840")
+            .inputFluids(FluidIngredientJS.of(steam))
             .itemOutputs("gtceu:platinum_dust", "3x gtceu:calcium_chloride_dust")
             .outputFluids("minecraft:water 24")
             .duration(30).EUt(30)
