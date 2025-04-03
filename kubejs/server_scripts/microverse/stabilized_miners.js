@@ -2,8 +2,6 @@
  * Script for generating recipes for stabilized microminers.
  */
 ServerEvents.recipes(event => {
-    if(isNormalMode) return;
-
     const stabilized_miners = [
         "2half",
         "4half",

@@ -258,8 +258,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
         .duration(400)
 
-    event.recipes.gtceu.assembler("advanced_drilling_kit_ii")
-        .itemOutputs("kubejs:advanced_drilling_kit_ii")
+    event.recipes.gtceu.assembler("elite_drilling_kit")
+        .itemOutputs("kubejs:elite_drilling_kit")
         .itemInputs("3x gtceu:double_naquadah_alloy_plate", "gtceu:iv_electric_motor", "2x #gtceu:circuits/hv", "2x gtceu:carbon_fiber_plate", "2x gtceu:laminated_glass")
         .inputFluids("gtceu:lubricant 500")
         .EUt(GTValues.VA[GTValues.LuV])

@@ -53,7 +53,8 @@ StartupEvents.registry("item", event => {
     event.create("gem_sensor").maxStackSize(16).displayName("Gemstone Sensor")
     event.create("basic_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/basic_drilling_kit")
     event.create("advanced_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit")
-    event.create("advanced_drilling_kit_ii").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit_ii").displayName("Advanced Drill Kit II")
+    event.create("elite_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/elite_drilling_kit")
+        .displayName("Advanced Drill Kit II")
     event.create("blasting_kit").maxStackSize(16).texture("kubejs:item/miner_kits/blasting_kit")
     event.create("microversal_alchemy_kit").maxStackSize(16).texture("kubejs:item/miner_kits/microversal_alchemy_kit")
 
@@ -222,10 +223,12 @@ StartupEvents.registry("item", event => {
     }
 
 
-    // Dense Hydrogen (Solidified Hydrogen is part of Solidified Elements section)
+    // Dense Elemental Gasses (Solidification recipes are part of the Solidified Elements Section)
     event.create("dense_hydrogen").rarity("Uncommon")
     event.create("ultra_dense_hydrogen").rarity("Rare")
 
+    event.create("dense_helium").rarity("Uncommon")
+    event.create("ultra_dense_helium").rarity("Rare")
 
     // Stabilized Elements
     const stabilized_elements = [
