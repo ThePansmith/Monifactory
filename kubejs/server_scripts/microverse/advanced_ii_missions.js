@@ -145,14 +145,14 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:argon_plasma 5000")
-            .itemInputs("kubejs:gravity_well_generator", "kubejs:stellar_creation_data", "6x gtceu:neutron_reflector")
+            .itemInputs("kubejs:gravitational_amplifier", "kubejs:stellar_creation_data", "6x gtceu:neutron_reflector")
             .itemOutputs("32x gtceu:neutronium_ingot")
     })
 
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:oxygen_plasma 10000")
-            .itemInputs("kubejs:gravity_well_generator", "16x kubejs:shattered_star_data", "64x gtceu:gravi_star")
+            .itemInputs("kubejs:gravitational_amplifier", "16x kubejs:shattered_star_data", "64x gtceu:gravi_star")
             .itemOutputs("16x kubejs:quasi_stable_neutron_star")
     })
 
