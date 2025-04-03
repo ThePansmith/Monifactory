@@ -102,6 +102,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("infinity")
         .ingot()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .element(GTElements.get("infinity"))
         .color(0xffffff)
         .iconSet("infinity")
