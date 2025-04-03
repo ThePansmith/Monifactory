@@ -3063,7 +3063,7 @@
 			id: "6DBD1492197AC92D"
 			tasks: [{
 				id: "41777324B5E2118C"
-				item: "quark:hollow_oak_log"
+				item: "kubejs:microminer_t2half"
 				type: "item"
 			}]
 			title: "{moni.quest.6DBD1492197AC92D.title}"
