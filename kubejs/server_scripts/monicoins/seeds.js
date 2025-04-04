@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
+    if (doMonicoins) {
         // -- "Seeds"
         event.shaped(Item.of("minecraft:cocoa_beans", 32), [
             "A A",

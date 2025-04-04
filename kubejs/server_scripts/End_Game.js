@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
             .EUt(1200000)
         )
 
-    if (!isNormalMode) {
+    if (!doCreativeTank) {
         // Helical Fusion Reactor
         event.recipes.gtceu.assembly_line("gtceu:helical_fusion_reactor")
             .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:multidimensional_cpu_chip", "64x kubejs:multidimensional_cpu_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_single_wire", "24x gtceu:polyethyl_cyanoacrylate_plate")
@@ -438,7 +438,7 @@ ServerEvents.recipes(event => {
     })
 
     // Creative Chest
-    if (isNormalMode) {
+    if (doCreativeTank) {
         event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
             "BMMMMMMMMMB",
             "MIWOPPPOYIM",

@@ -4,7 +4,7 @@
  * Replaces regular GregTech Stone Dust centrifuging.
  */
 ServerEvents.recipes(event => {
-    if(isHardMode) {
+    if(doStoneline) {
         // Dioxygen Difluoride
         event.recipes.gtceu.large_chemical_reactor("dioxygen_difluoride")
             .inputFluids("gtceu:oxygen 2000", "gtceu:fluorine 2000")
