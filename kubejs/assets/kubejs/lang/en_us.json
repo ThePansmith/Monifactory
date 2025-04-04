@@ -83,7 +83,6 @@
   "item.kubejs.warden_heart": "Warden Heart",
   "item.kubejs.hadal_shard": "Hadal Shard",
 
-  "item.kubejs.dilithium_crystal": "Dilithium Crystal",
   "item.kubejs.ender_star": "§dEnder Star",
   "item.kubejs.endest_star": "§dEndest Star",
   "item.kubejs.grains_of_innocence": "Grains of Innocence",
@@ -365,13 +364,11 @@
   "fluid.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "fluid.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
   "fluid.kubejs.molten_aerotheum": "§7Zephyrean Aerotheum",
-  "fluid.kubejs.molten_primal_mana": "§cDEPRECATED Primal Mana",
 
   "block.kubejs.molten_pyrotheum": "§6Blazing Pyrotheum",
   "block.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "block.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
   "block.kubejs.molten_aerotheum": "§7Zephyrean Aerotheum",
-  "block.kubejs.molten_primal_mana": "§cDEPRECATED Primal Mana",
 
   "block.kubejs.starry_diamond_block": "Starry Diamond Block",
   "block.kubejs.dense_oilsands_ore": "Dense Oilsands Ore",
@@ -441,12 +438,6 @@
   "item.kubejs.uhv_universal_circuit": "UHV Universal Circuit",
   "item.kubejs.uev_universal_circuit": "UEV Universal Circuit",
   "item.kubejs.uiv_universal_circuit": "UIV Universal Circuit",
-
-  "item.kubejs.lv_exoskeleton_legs": "LV Exoskeleton Legs",
-  "item.kubejs.mv_exoskeleton_legs": "MV Exoskeleton Legs",
-  "item.kubejs.hv_exoskeleton_legs": "HV Exoskeleton Legs",
-  "item.kubejs.ev_exoskeleton_legs": "EV Exoskeleton Legs",
-  "item.kubejs.iv_exoskeleton_legs": "IV Exoskeleton Legs",
 
   "jetpack.conductive_iron.name": "Conductive Iron",
   "jetpack.creative.name": "Creative",

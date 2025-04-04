@@ -173,9 +173,6 @@ ItemEvents.tooltip(tooltip => {
     // EIO Cap Banks
     tooltip.add(/^enderio:.*_bank$/, Text.red(Text.translatable("enderio.cap_bank.tooltip")));
 
-    // Exoskeleton Legs
-    tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.red("DEPRECATED: Use crafting table to convert into new exoskeleton legs").bold(true))
-
     // Misc
     tooltip.add("kubejs:eternal_catalyst", Text.darkGray(Text.translatable("kubejs.eternal_catalyst.tooltip")));
     tooltip.add("kubejs:infinity_catalyst", Text.darkGray(Text.translatable("kubejs.infinity_catalyst.tooltip")));
