@@ -1536,7 +1536,7 @@
 			}]
 			title: "{moni.quest.5BC6DB754207D4A8.title}"
 			x: 12.5d
-			y: 16.0d
+			y: 17.25d
 		}
 		{
 			dependencies: ["0C4E18B05F9E68DE"]
@@ -1559,7 +1559,7 @@
 			}]
 			title: "{moni.quest.616555E46F314F04.title}"
 			x: 12.5d
-			y: 14.5d
+			y: 14.75d
 		}
 		{
 			dependencies: ["0C4E18B05F9E68DE"]
@@ -1617,34 +1617,6 @@
 			]
 			title: "{moni.quest.7256E0064F967C93.title}"
 			x: 10.5d
-			y: 17.5d
-		}
-		{
-			dependencies: ["0C4E18B05F9E68DE"]
-			description: [
-				"{moni.quest.5D88B7AE69FC8964.description1}"
-				""
-				"{moni.quest.5D88B7AE69FC8964.description2}"
-				""
-				"{moni.quest.5D88B7AE69FC8964.description3}"
-				""
-				"{moni.quest.5D88B7AE69FC8964.description4}"
-			]
-			id: "5D88B7AE69FC8964"
-			rewards: [{
-				id: "0F9A152AA9ACD22A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [{
-				count: 2L
-				id: "7CF5D94575393BCF"
-				item: "gtceu:ender_fluid_link_cover"
-				type: "item"
-			}]
-			title: "{moni.quest.5D88B7AE69FC8964.title}"
-			x: 12.5d
 			y: 17.5d
 		}
 		{
@@ -2303,7 +2275,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1AA0A089DCA17FC8.title}"
-			x: 12.5d
+			x: 12.0d
 			y: 12.0d
 		}
 		{

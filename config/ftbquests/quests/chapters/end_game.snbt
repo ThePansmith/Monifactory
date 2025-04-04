@@ -166,10 +166,7 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"2D9A95AC50CCB988"
-				"2D9A95AC50BCB988"
-			]
+			dependencies: ["2D9A95AC50BCB988"]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.45B17E923E03264B.description1}"]
 			id: "45B17E923E03264B"
@@ -199,40 +196,7 @@
 			y: -18.0d
 		}
 		{
-			dependencies: [
-				"57E7182198B2EA9A"
-				"65C40A41F29687F4"
-			]
-			description: [
-				"{moni.quest.2D9A95AC50CCB988.description1}"
-				""
-				"{moni.quest.2D9A95AC50CCB988.description2}"
-				""
-				"{moni.quest.2D9A95AC50CCB988.description3}"
-				"{@pagebreak}"
-				"{moni.quest.2D9A95AC50CCB988.description4}"
-				""
-				"{moni.quest.2D9A95AC50CCB988.description5}"
-			]
-			hide_until_deps_visible: true
-			id: "2D9A95AC50CCB988"
-			optional: true
-			size: 2.5d
-			subtitle: "{moni.quest.2D9A95AC50CCB988.subtitle}"
-			tasks: [{
-				id: "55C6A472371D7AEC"
-				item: "gtceu:creative_tank"
-				type: "item"
-			}]
-			title: "{moni.quest.2D9A95AC50CCB988.title}"
-			x: 35.0d
-			y: -11.5d
-		}
-		{
-			dependencies: [
-				"1F7F73BF81570F3C"
-				"0F251AF2286FCE0D"
-			]
+			dependencies: ["0F251AF2286FCE0D"]
 			description: ["{moni.quest.2D9A95AC50BCB988.description1}"]
 			hide_until_deps_visible: true
 			id: "2D9A95AC50BCB988"
@@ -494,30 +458,6 @@
 			y: -18.0d
 		}
 		{
-			dependencies: [
-				"57E7182198B2EA9A"
-				"65C40A41F29687F4"
-			]
-			description: [
-				"{moni.quest.2F21C6B6F145EA81.description1}"
-				""
-				"[\"\",{\"translate\":\"moni.quest.2F21C6B6F145EA81.rich_description1\"},{\"underlined\":true,\"translate\":\"moni.quest.2F21C6B6F145EA81.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"26C9F1514FD08C81\"}},{\"translate\":\"moni.quest.2F21C6B6F145EA81.rich_description3\"}]"
-				""
-				"{moni.quest.2F21C6B6F145EA81.description3}"
-			]
-			hide_until_deps_visible: true
-			id: "2F21C6B6F145EA81"
-			optional: true
-			tasks: [{
-				id: "390C1F547BDF7D2B"
-				item: "kubejs:infinity_cell_base"
-				type: "item"
-			}]
-			title: "{moni.quest.2F21C6B6F145EA81.title}"
-			x: 31.0d
-			y: -9.5d
-		}
-		{
 			dependencies: ["5A70898C99B828E3"]
 			description: [
 				"{moni.quest.161F61C28DBC5941.description1}"
@@ -752,6 +692,8 @@
 			]
 			description: [
 				"{moni.quest.33F610CF136278AE.description1}"
+				""
+				"{moni.quest.33F610CF136278AE.description3}"
 				""
 				"{moni.quest.33F610CF136278AE.description2}"
 			]
@@ -1040,26 +982,6 @@
 			y: -21.75d
 		}
 		{
-			dependencies: [
-				"57E7182198B2EA9A"
-				"4261BDA34D716EC8"
-				"6F9041F256F517A3"
-			]
-			description: ["{moni.quest.65C40A41F29687F4.description1}"]
-			hide_until_deps_visible: true
-			id: "65C40A41F29687F4"
-			optional: true
-			shape: "hexagon"
-			tasks: [{
-				id: "36D8F742C5C59B86"
-				item: "kubejs:creative_tank_data"
-				type: "item"
-			}]
-			title: "{moni.quest.65C40A41F29687F4.title}"
-			x: 31.0d
-			y: -11.5d
-		}
-		{
 			dependencies: ["39A09DA3903C5564"]
 			description: ["{moni.quest.7AF06CB391779388.description1}"]
 			id: "7AF06CB391779388"
@@ -1154,9 +1076,9 @@
 		}
 		{
 			dependencies: [
-				"1F7F73BF81570F3C"
 				"27EBB5AAF8A40F3D"
 				"4261BDA34D716EC8"
+				"6F9041F256F517A3"
 			]
 			description: ["{moni.quest.0F251AF2286FCE0D.description1}"]
 			hide_until_deps_visible: true
@@ -1171,10 +1093,7 @@
 			y: -11.5d
 		}
 		{
-			dependencies: [
-				"1F7F73BF81570F3C"
-				"07057CDE4E021BA7"
-			]
+			dependencies: ["07057CDE4E021BA7"]
 			description: [
 				"{moni.quest.4E4F03C44623A85D.description1}"
 				""
@@ -1213,10 +1132,7 @@
 			y: -8.75d
 		}
 		{
-			dependencies: [
-				"21E10888F52A3C73"
-				"1F7F73BF81570F3C"
-			]
+			dependencies: ["21E10888F52A3C73"]
 			description: ["{moni.quest.4E9530E62A4B673B.description1}"]
 			hide_until_deps_visible: true
 			id: "4E9530E62A4B673B"
@@ -1265,8 +1181,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0ED041E2114F7C84.title}"
-			x: 45.75d
-			y: -16.0d
+			x: 45.9375d
+			y: -15.9375d
 		}
 		{
 			dependencies: [
@@ -1296,11 +1212,6 @@
 					item: "gtceu:actinium_nugget"
 					type: "item"
 				}
-				{
-					id: "01DCEB2E7AE79099"
-					item: "gtceu:small_actinium_dust"
-					type: "item"
-				}
 			]
 			title: "{moni.quest.07E757AAA1C7435D.title}"
 			x: 50.0d
@@ -1324,8 +1235,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.198C5A6A8ED38803.title}"
-			x: 45.75d
-			y: -14.625d
+			x: 45.9375d
+			y: -14.375d
 		}
 	]
 	title: "{moni.chapter.2BEB72BC6C6FB4E9.title}"
