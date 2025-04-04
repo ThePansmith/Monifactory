@@ -278,9 +278,7 @@ StartupEvents.registry("item", event => {
 
 
     // Ender Spore
-    if (!isNormalMode) {
-        event.create("ender_spore")
-    }
+    event.create("ender_spore")
 
 
     // Thermal Augments

@@ -42,33 +42,6 @@ ServerEvents.recipes(event => {
         event.remove({ id: "gtceu:circuit_assembler/wetware_board" })
         event.remove({ id: "enderio:stick" })
 
-        // Processing for Ender Spores
-        event.custom({
-            "type": "thermal:insolator",
-            "ingredient": {
-                "item": "kubejs:ender_spore"
-            },
-            "result": [
-                {
-                    "item": "kubejs:ender_spore",
-                    "chance": 2.0
-                }
-            ],
-            "energy_mod": 3.0
-        })
-
-        event.shapeless("kubejs:ender_spore", ["minecraft:chorus_flower", "minecraft:ender_pearl", "thermal:phytogro", "minecraft:experience_bottle"])
-        event.smelting("minecraft:ender_pearl", "kubejs:ender_spore")
-
-        event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
-            .circuit(2)
-            .notConsumable("kubejs:ender_spore")
-            .itemInputs("4x gtceu:fertilizer")
-            .inputFluids(Fluid.of("minecraft:water"))
-            .itemOutputs("8x kubejs:ender_spore")
-            .duration(640)
-            .EUt(120)
-
         event.recipes.gtceu.omnic_forge("kubejs:meowni_plush")
             .itemInputs("64x kubejs:moni_dollar", "64x kubejs:moni_dollar", "64x kubejs:moni_dollar", "16x kubejs:moni_dollar",) // Not exact atm, I don't run linux (so i cant use the awk script) and this value is gonna change regardless.
             .itemOutputs("kubejs:meowni_plush")
