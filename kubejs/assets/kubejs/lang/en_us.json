@@ -360,7 +360,7 @@
   "item.kubejs.dark_soularium_thruster": "Dark Soularium Thruster",
   "item.kubejs.fluxed_thruster": "Fluxed Thruster",
   "item.kubejs.redstone_transmission_coil": "Redstone Transmission Coil",
-  
+
   "fluid.kubejs.molten_pyrotheum": "§6Blazing Pyrotheum",
   "fluid.kubejs.molten_cryotheum": "§bGelid Cryotheum",
   "fluid.kubejs.molten_petrotheum": "§8Tectonic Petrotheum",
@@ -447,7 +447,6 @@
   "item.kubejs.hv_exoskeleton_legs": "HV Exoskeleton Legs",
   "item.kubejs.ev_exoskeleton_legs": "EV Exoskeleton Legs",
   "item.kubejs.iv_exoskeleton_legs": "IV Exoskeleton Legs",
-  "kubejs.exoskeleton_legs.tooltip": "Provides a movement speed boost and auto-step",
 
   "jetpack.conductive_iron.name": "Conductive Iron",
   "jetpack.creative.name": "Creative",
@@ -543,7 +542,7 @@
   "telepastries.lost_city_cake.tooltip.2": "§7Teleport without consuming by right-clicking with a Diamond.",
   "gtceu.sterilizing_filter_casing.tooltip": "Sterilized Cleanrooms can't be used as a \"regular\" Cleanroom. You'll want one of each.",
   "item.kubejs.infinity_dust_block.tooltip": "§7§oNot quite solid",
-  
+
   "gtceu.wood_pipe_warning.tooltip": "§4Can't hold Steam or other gases!",
   "chipped.workbenches.tooltip.1": "§7Recipes can also be performed in the §3Stonecutter§7,",
   "chipped.workbenches.tooltip.2": "§7which can be automated with §bAE2§7's §3Molecular Assemblers§7.",

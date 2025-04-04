@@ -460,7 +460,6 @@
     "item.kubejs.iv_exoskeleton_legs": "Exoesqueleto IV",
     "item.kubejs.lv_exoskeleton_legs": "Exoesqueleto LV",
     "item.kubejs.hv_exoskeleton_legs": "Exoesqueleto HV",
-    "kubejs.exoskeleton_legs.tooltip": "Fornece um aumento na velocidade de movimento e assistência de pulo",
     "ae2.creative_fluid_cell.tooltip": "Não pode ser feito usando dados do Creative Tank!\nAfetado com um bug que os desenvolvedores do AE2 não vão consertar",
     "betterp2p.advanced_memory_card.tooltip": "Não compatível com Multi P2Ps.",
     "gtceu.sterilizing_filter_casing.tooltip": "Salas Limpas Esterilizadas não podem ser usadas como uma Sala Limpa \"regular\". Você vai querer uma de cada."
