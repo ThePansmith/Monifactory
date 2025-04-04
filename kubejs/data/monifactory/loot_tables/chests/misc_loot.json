@@ -1,0 +1,167 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:binomial",
+                "n": 2,
+                "p": 0.1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:zero_point_module",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:tantalum_capacitor",
+                    "weight": 200,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Charge:800L}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:lv_sodium_battery",
+                    "weight": 150,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Charge:40000L}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:lv_cadmium_battery",
+                    "weight": 90,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Charge:30000L}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "thermal:rf_potato",
+                    "weight": 30,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Energy:70000}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:binomial",
+                "n": 1,
+                "p": 0.2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sponge",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 2,
+                                "max": 16
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:invar_lighter",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Fluid:{Amount:87,FluidName:\"gtceu:butane\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "telepastries:lost_city_cake",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:binomial",
+                "n": 2,
+                "p": 0.25
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "ulvcovm:ulv_electric_pump",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ulvcovm:ulv_conveyor_module",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ulvcovm:ulv_fluid_regulator",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ulvcovm:ulv_robot_arm",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ulvcovm:ulv_electric_motor",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ulvcovm:ulv_electric_piston",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:neutronium_nugget",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.001
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:meowni_plush",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.000001
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

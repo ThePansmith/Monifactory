@@ -1,0 +1,22 @@
+Author: Xefyr0
+Relevant files: Everything in the same folder
+
+JSON does not allow for comments, so here's an explanation of how Monifactory's loot tables for the Lost Cities works.
+See KubeJS/data/lostcities/lostcities/conditions/comments.txt for more information.
+
+These are a set of loot tables Monifactory uses to populate chests in the Lost Cities.
+They are more diverse and more rewarding than standard vanilla loot pools so that players can jump right into the Gregging.
+
+monifactory:chests/lost_cities_base is a sum of a number of smaller loot pools that is used in every Lost Cities chest. It is composed of:
+- minecraft:chests/simple_dungeon, a loot pool defined by Minecraft but with extra loot added by GregTech.
+- monifactory:chests/ingot_loot, a loot pool that has a chance to offer a small set of ingots complementary to the set GregTech: Modern adds to simple dungeons.
+- monifactory:chests/coins_loot, a loot pool that has a chance to offer Monicoins. (Uses Neoforge data loading conditions to restrict to NM only)
+- monifactory:chests/misc_loot, a loot pool that offers a variety of items & tools that would be useful but not OP in the earlygame, plus some joke items.
+- enderio:chests/alloy_loot, a loot table EnderIO normally applies to "simple dungeons" but must be applied manually due to the configuration used 
+- enderio:chests/common_loot, a loot table EnderIO normally applies to "simple dungeons" but must be applied manually due to the configuration used
+- sophisticatedbackpacks:inject/chests/simple_dungeon, a loot table Sohpisticated Backpacks normally applies to "simple dungeons" but must be applied manually due to the configuration used
+
+This base is used in three loot pools that are what the Lost Cities chests *actually* roll:
+- monifactory:chests/cellar, the base loot pool but with a chance to roll loot from lostcities:chests/lostcitychest, minecraft:chests/stronghold_crossing, or minecraft:chests/abandoned_mineshaft
+- monifactory:chests/ground_level, the base loot pool but with a chance to roll loot from some Village loot tables
+- monifactory:chests/upper_floors, the base loot pool but an extra few rolls on monifactory:chests/misc_loot and a chance to roll loot from lostcities:chests/lostcitychest

@@ -147,6 +147,14 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.translatable("gtceu.multiblock.helical_fusion_reactor.description"))
     })
 
+    tooltip.addAdvanced("gtceu:mega_alloy_blast_smelter", (item, adv, text) => {
+        text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
+        text.add(2, Text.translatable("gtceu.machine.available_recipe_map_1.tooltip", Text.translatable("gtceu.alloy_blast_smelter")))
+        text.add(3, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.0"))
+        text.add(4, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.1"))
+        text.add(5, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.2"))
+    })
+
 
     // Parallel hatches
     tooltip.add("gtceu:uhv_uhv_parallel_hatch", Text.translatable("gtceu.giga_parallel_hatch.desc"))
@@ -174,7 +182,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add(/^enderio:.*_bank$/, Text.red(Text.translatable("enderio.cap_bank.tooltip")));
 
     // Exoskeleton Legs
-    tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.gray(Text.translatable("kubejs.exoskeleton_legs.tooltip")))
+    tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.red("DEPRECATED: Use crafting table to convert into new exoskeleton legs").bold(true))
 
     // Misc
     tooltip.add("kubejs:eternal_catalyst", Text.darkGray(Text.translatable("kubejs.eternal_catalyst.tooltip")));
