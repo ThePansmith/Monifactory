@@ -1,7 +1,7 @@
 /*
 The itemNukeList is used to list all IDs and regexes matching IDs of items that should be removed from the game, or "nuked".
-While this makes it far more difficult to access the fluids and effectively obliterates them in most cases,
-it doesn't remove the fluids entirely and does not guarantee that they are unobtainable, unusable, or hidden in EMI/JEI.
+While this makes it far more difficult to access the items and effectively obliterates them in most cases,
+it doesn't remove them entirely and does not guarantee that they are unobtainable, unusable, or hidden in EMI/JEI.
 
 Examples of such cases are:
 - Items that may drop from a loot table (not unobtainable)

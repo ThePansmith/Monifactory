@@ -1,7 +1,7 @@
 /*
-The itemNukeList is used to list all IDs of fluids that should be removed from the game, or "nuked".
-While this makes it far more difficult to access the items and effectively obliterates them in most cases,
-it doesn't remove the items entirely and does not guarantee that they are unobtainable, unusable, or hidden in JEI/EMI.
+The fluidNukeList is used to list all IDs of fluids that should be removed from the game, or "nuked".
+While this makes it far more difficult to access the fluids and effectively obliterates them in most cases,
+it doesn't remove them entirely and does not guarantee that they are unobtainable, unusable, or hidden in JEI/EMI.
 
 If you seek to hide a fluid but not remove it, use KubeJS/client_scripts/JEI.js.
 If you seek to remove a recipe but not hide any fluids, use the relevant file in KubeJS/server_scripts.
