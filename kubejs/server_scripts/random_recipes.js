@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
         .duration(1000)
         .EUt(2000)
 
-     // Processing for Ender Spores
+    // Processing for Ender Spores
     event.custom({
         "type": "thermal:insolator",
         "ingredient": {
