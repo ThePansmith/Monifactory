@@ -45,7 +45,6 @@ StartupEvents.registry("item", event => {
             .texture(`kubejs:item/microverse/microminer_t${tier}`)
             .glow(true);
     }
-    
 
     // Microminer Components
     event.create("basic_mining_laser").displayName("§eBasic Mining Laser")
