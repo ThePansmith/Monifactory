@@ -277,7 +277,7 @@ ServerEvents.recipes(event => {
     event.shapeless("nuclearcraft:fission_reactor_port", ["nuclearcraft:fission_reactor_casing", "minecraft:hopper"])
 
     event.recipes.gtceu.chemical_reactor("rhodochrosite_dust")
-        .itemInputs("12x gtceu:redstone_ore")
+        .itemInputs("12x gtceu:raw_redstone")
         .inputFluids("gtceu:sulfuric_acid 6000")
         .itemOutputs("nuclearcraft:rhodochrosite_dust")
         .outputFluids("gtceu:redstone 19008")

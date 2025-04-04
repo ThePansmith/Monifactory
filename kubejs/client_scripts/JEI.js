@@ -194,6 +194,8 @@ JEIEvents.hideItems(event => {
     // Posttank stuff
     event.hide(/gtceu:uxv/)
     event.hide(/gtceu:opv/)
+    event.hide(/gtmutils:uxv/)
+    event.hide(/gtmutils:opv/)
 
     // Greg Hot MV ingots
     event.hide(["gtceu:hot_kanthal_ingot", "gtceu:hot_silicon_ingot"])
@@ -247,6 +249,9 @@ JEIEvents.addItems(event => {
 
     // NuclearCraft
     event.add(["nuclearcraft:tough_alloy_ingot", "nuclearcraft:hard_carbon_ingot", "nuclearcraft:ferroboron_ingot", "nuclearcraft:rhodochrosite_dust"])
+
+    // Thermal
+    event.add("thermal:nuke_tnt")
 })
 
 JEIEvents.hideFluids(event => {

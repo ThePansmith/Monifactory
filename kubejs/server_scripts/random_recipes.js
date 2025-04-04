@@ -107,6 +107,32 @@ ServerEvents.recipes(event => {
         .duration(1000)
         .EUt(2000)
 
+    // Processing for Ender Spores
+    event.custom({
+        "type": "thermal:insolator",
+        "ingredient": {
+            "item": "kubejs:ender_spore"
+        },
+        "result": [
+            {
+                "item": "kubejs:ender_spore",
+                "chance": 2.0
+            }
+        ],
+        "energy_mod": 3.0
+    })
+
+    event.shapeless("kubejs:ender_spore", ["minecraft:chorus_flower", "minecraft:ender_pearl", "thermal:phytogro", "minecraft:experience_bottle"])
+    event.smelting("minecraft:ender_pearl", "kubejs:ender_spore")
+
+    event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
+        .circuit(2)
+        .notConsumable("kubejs:ender_spore")
+        .itemInputs("4x gtceu:fertilizer")
+        .inputFluids(Fluid.of("minecraft:water"))
+        .itemOutputs("8x kubejs:ender_spore")
+        .duration(640)
+        .EUt(120)
 
     // Change recipes for LV and MV macerators
     event.shaped("gtceu:lv_macerator", [
@@ -141,14 +167,11 @@ ServerEvents.recipes(event => {
     })
 
     // Data Stuff
-
-    if (isNormalMode) {
-        event.recipes.gtceu.extractor("tank_data")
-            .itemInputs("kubejs:heart_of_a_universe")
-            .itemOutputs("kubejs:creative_tank_data")
-            .duration(1000)
-            .EUt(180000)
-    }
+    event.recipes.gtceu.extractor("omnic_data")
+        .itemInputs("kubejs:heart_of_a_universe")
+        .itemOutputs("kubejs:omnic_data")
+        .duration(1000)
+        .EUt(180000)
 
     // Crystal Chip shit
     event.recipes.gtceu.autoclave("starter_enderium_chip")
@@ -466,9 +489,12 @@ ServerEvents.recipes(event => {
     // Avaritia Replacement recipes
     compacting(event, "gtceu:neutronium_ingot", "gtceu:neutronium_nugget")
 
-    // Dense Hydrogen conversion
+    // Dense Gasses conversion
     compacting(event, "kubejs:dense_hydrogen", "kubejs:solidified_hydrogen");
     compacting(event, "kubejs:ultra_dense_hydrogen", "kubejs:dense_hydrogen");
+
+    compacting(event, "kubejs:dense_helium", "kubejs:solidified_helium");
+    compacting(event, "kubejs:ultra_dense_helium", "kubejs:dense_helium");
 
     // Recipe from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
@@ -981,4 +1007,9 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
         .circuit(1)
+
+    // 64A energy converters recipe fix
+    event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
+    event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:holmium_hex_wire")
+    event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
 })

@@ -45,24 +45,33 @@ ServerEvents.recipes(event => {
     RockCycle("shale", "quark:shale", "quark:shale", 60)
     RockCycle("myalite", "quark:myalite", "quark:myalite", 60)
 
-    // Ad Astra Recipe Function
-    function AdAstraRockCycle(id, input, output, EUt, dimension) {
-        event.recipes.gtceu.rock_cycle_simulator(`kubejs:${id}`)
-            .notConsumable(Item.of(input))
-            .itemOutputs(output)
+    function DimensionalRockCrushing(namespace, output, EUt, dimension) {
+        event.recipes.gtceu.rock_breaker(`${output}`)
+            .notConsumable(`${namespace}:${output}`)
+            .itemOutputs(`${namespace}:${output}`)
+            .duration(16)
+            .EUt(EUt)
+            .addData("fluidA", "minecraft:lava")
+            .addData("fluidB", "minecraft:water")
+            .dimension(dimension)
+
+        event.recipes.gtceu.rock_cycle_simulator(`${output}`)
+            .notConsumable(`${namespace}:${output}`)
+            .itemOutputs(`${namespace}:${output}`)
             .duration(16)
             .EUt(EUt)
             .dimension(dimension)
     }
 
-    AdAstraRockCycle("moonstone", "ad_astra:moon_stone", "ad_astra:moon_stone", 240, "ad_astra:moon")
-    AdAstraRockCycle("moondeepslate", "ad_astra:moon_deepslate", "ad_astra:moon_deepslate", 240, "ad_astra:moon")
-    AdAstraRockCycle("marsstone", "ad_astra:mars_stone", "ad_astra:mars_stone", 240, "ad_astra:mars")
-    AdAstraRockCycle("conglomerate", "ad_astra:conglomerate", "ad_astra:conglomerate", 240, "ad_astra:mars")
-    AdAstraRockCycle("venusstone", "ad_astra:venus_stone", "ad_astra:venus_stone", 960, "ad_astra:venus")
-    AdAstraRockCycle("infernalspireblock", "ad_astra:infernal_spire_block", "ad_astra:infernal_spire_block", 960, "ad_astra:venus")
-    AdAstraRockCycle("mercurystone", "ad_astra:mercury_stone", "ad_astra:mercury_stone", 960, "ad_astra:mercury")
-    AdAstraRockCycle("glaciostone", "ad_astra:glacio_stone", "ad_astra:glacio_stone", 2160, "ad_astra:glacio")
-    AdAstraRockCycle("permafrostadastra", "ad_astra:permafrost", "ad_astra:permafrost", 2160, "ad_astra:glacio")
-
+    DimensionalRockCrushing("minecraft", "end_stone", GTValues.VA[GTValues.IV], "minecraft:the_end")
+    DimensionalRockCrushing("minecraft", "netherrack", GTValues.VA[GTValues.EV], "minecraft:the_nether")
+    DimensionalRockCrushing("ad_astra", "moon_stone", GTValues.VHA[GTValues.HV], "ad_astra:moon")
+    DimensionalRockCrushing("ad_astra", "moon_deepslate", GTValues.VHA[GTValues.HV], "ad_astra:moon")
+    DimensionalRockCrushing("ad_astra", "mars_stone", GTValues.VHA[GTValues.HV], "ad_astra:mars")
+    DimensionalRockCrushing("ad_astra", "conglomerate", GTValues.VHA[GTValues.HV], "ad_astra:mars")
+    DimensionalRockCrushing("ad_astra", "venus_stone", GTValues.VHA[GTValues.EV], "ad_astra:venus")
+    DimensionalRockCrushing("ad_astra", "infernal_spire_block", GTValues.VHA[GTValues.EV], "ad_astra:venus")
+    DimensionalRockCrushing("ad_astra", "mercury_stone", GTValues.VHA[GTValues.EV], "ad_astra:mercury")
+    DimensionalRockCrushing("ad_astra", "glacio_stone", GTValues.VHA[GTValues.IV], "ad_astra:glacio")
+    DimensionalRockCrushing("ad_astra", "permafrost", GTValues.VHA[GTValues.IV], "ad_astra:glacio")
 })
