@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "monifactory:chests/lost_cities_base"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:binomial",
+                "n": 1,
+                "p": 0.2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "lostcities:chests/lostcitychest",
+                    "weight": 8
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "minecraft:chests/stronghold_crossing",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "minecraft:chests/abandoned_mineshaft",
+                    "weight": 15
+                }
+            ]
+        }
+    ]
+}

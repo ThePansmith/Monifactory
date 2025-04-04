@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "monifactory:chests/lost_cities_base"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "monifactory:chests/misc_loot"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:binomial",
+                "n": 1,
+                "p": 0.2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "lostcities:chests/lostcitychest"
+                }
+            ]
+        }
+    ]
+}
