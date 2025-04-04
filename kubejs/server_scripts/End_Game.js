@@ -438,81 +438,42 @@ ServerEvents.recipes(event => {
     })
 
     // Creative Chest
-    if (isNormalMode) {
-        event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
-            "BMMMMMMMMMB",
-            "MIWOPPPOYIM",
-            "MIFNNNNNFIM",
-            "MINCSSSCNIM",
-            "RUSSAQASSUR",
-            "REEMGHGMEER",
-            "RUTTAQATTUR",
-            "MINCTTTCNIM",
-            "MIFNNNNNFIM",
-            "MIXPPZPPVIM",
-            "BMMMMMMMMMB"
-        ], {
-            A: "kubejs:furious_infinity_catalyst",
-            B: "gtceu:monium_block",
-            C: "kubejs:serene_infinity_catalyst",
-            E: "kubejs:creative_energy_data",
-            F: "gtceu:uiv_field_generator",
-            G: "gtceu:monium_gear",
-            H: "gtceu:max_machine_hull",
-            I: "kubejs:elementally_infused_omnic_matrix_heavy_plating",
-            M: "kubejs:causality_exempt_monic_heavy_plating",
-            N: "kubejs:dimensionally_stabilized_infinity_heavy_plating",
-            O: "gtceu:uiv_sensor",
-            P: "kubejs:monic_processor_mainframe",
-            Q: "kubejs:field_stabilised_omnic_pulsar_compound",
-            R: "gtceu:uiv_robot_arm",
-            S: "kubejs:creative_storage_data",
-            T: "kubejs:creative_tank_data",
-            U: "gtceu:subatomic_digital_assembler",
-            V: "kubejs:infinity_file",
-            W: "kubejs:infinity_screwdriver",
-            X: "kubejs:infinity_wrench",
-            Y: "kubejs:infinity_hammer",
-            Z: "kubejs:infinity_wire_cutter"
-        })
-    } else {
-        event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
-            "BMMMMMMMMMB",
-            "MIWOPPPOYIM",
-            "MIFNNNNNFIM",
-            "MINCSSSCNIM",
-            "RUSSAQASSUR",
-            "REEMGHGMEER",
-            "RUTTAQATTUR",
-            "MINCTTTCNIM",
-            "MIFNNNNNFIM",
-            "MIXPPZPPVIM",
-            "BMMMMMMMMMB"
-        ], {
-            A: "kubejs:furious_infinity_catalyst",
-            B: "gtceu:monium_block",
-            C: "kubejs:serene_infinity_catalyst",
-            E: "kubejs:creative_energy_data",
-            F: "gtceu:uiv_field_generator",
-            G: "gtceu:monium_gear",
-            H: "gtceu:max_machine_hull",
-            I: "kubejs:elementally_infused_omnic_matrix_heavy_plating",
-            M: "kubejs:causality_exempt_monic_heavy_plating",
-            N: "kubejs:dimensionally_stabilized_infinity_heavy_plating",
-            O: "gtceu:uiv_sensor",
-            P: "kubejs:monic_processor_mainframe",
-            Q: "kubejs:field_stabilised_omnic_pulsar_compound",
-            R: "gtceu:uiv_robot_arm",
-            S: "kubejs:creative_storage_data",
-            T: "kubejs:omnic_data",
-            U: "gtceu:subatomic_digital_assembler",
-            V: "kubejs:infinity_file",
-            W: "kubejs:infinity_screwdriver",
-            X: "kubejs:infinity_wrench",
-            Y: "kubejs:infinity_hammer",
-            Z: "kubejs:infinity_wire_cutter"
-        })
-    }
+    event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
+        "BMMMMMMMMMB",
+        "MIWOPPPOYIM",
+        "MIFNNNNNFIM",
+        "MINCSSSCNIM",
+        "RUSSAQASSUR",
+        "REEMGHGMEER",
+        "RUTTAQATTUR",
+        "MINCTTTCNIM",
+        "MIFNNNNNFIM",
+        "MIXPPZPPVIM",
+        "BMMMMMMMMMB"
+    ], {
+        A: "kubejs:furious_infinity_catalyst",
+        B: "gtceu:monium_block",
+        C: "kubejs:serene_infinity_catalyst",
+        E: "kubejs:creative_energy_data",
+        F: "gtceu:uiv_field_generator",
+        G: "gtceu:monium_gear",
+        H: "gtceu:max_machine_hull",
+        I: "kubejs:elementally_infused_omnic_matrix_heavy_plating",
+        M: "kubejs:causality_exempt_monic_heavy_plating",
+        N: "kubejs:dimensionally_stabilized_infinity_heavy_plating",
+        O: "gtceu:uiv_sensor",
+        P: "kubejs:monic_processor_mainframe",
+        Q: "kubejs:field_stabilised_omnic_pulsar_compound",
+        R: "gtceu:uiv_robot_arm",
+        S: "kubejs:creative_storage_data",
+        T: "kubejs:omnic_data",
+        U: "gtceu:subatomic_digital_assembler",
+        V: "kubejs:infinity_file",
+        W: "kubejs:infinity_screwdriver",
+        X: "kubejs:infinity_wrench",
+        Y: "kubejs:infinity_hammer",
+        Z: "kubejs:infinity_wire_cutter"
+    })
 
     event.recipes.gtceu.canner("contained_singularity")
         .itemInputs("kubejs:singularity_containment_unit", "ae2:singularity")

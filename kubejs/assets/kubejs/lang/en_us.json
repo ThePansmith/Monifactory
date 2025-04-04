@@ -61,12 +61,12 @@
   "item.kubejs.stabilized_microminer.tooltip.2": "§7§oLasts indefinitely. Reusable. Totally not overpowered.",
   "item.kubejs.stabilized_microminer.tooltip.3": "§7§oIt looks oddly familiar.",
 
-  "item.kubejs.damaged_microminer_t2half": "§7Damaged Dark Steel Plated Micro Mob Slayer [Tier Two and a Half]",
-  "item.kubejs.damaged_microminer_t4half": "§7Damaged Lumium Plated Micro Mob Slayer [Tier Four and Half]",
-  "item.kubejs.damaged_microminer_t6": "§7Damaged Enderium Plated Micro Miner [Tier Six]",
-  "item.kubejs.damaged_microminer_t7": "§7Damaged Cryolobus Plated Micro Dragon Hunter [Tier Seven]",
-  "item.kubejs.damaged_microminer_t8": "§7Damaged Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
-  "item.kubejs.damaged_microminer_t8half": "§7Damaged Trinium Plated Micro Excavator [Tier Eight and Half]",
+  "item.kubejs.microminer_t2half_damaged": "§7Damaged Dark Steel Plated Micro Mob Slayer [Tier Two and a Half]",
+  "item.kubejs.microminer_t4half_damaged": "§7Damaged Lumium Plated Micro Mob Slayer [Tier Four and Half]",
+  "item.kubejs.microminer_t6_damaged": "§7Damaged Enderium Plated Micro Miner [Tier Six]",
+  "item.kubejs.microminer_t7_damaged": "§7Damaged Cryolobus Plated Micro Dragon Hunter [Tier Seven]",
+  "item.kubejs.microminer_t8_damaged": "§7Damaged Crystal Matrix Plated Micro Leviathan Slayer [Tier Eight]",
+  "item.kubejs.microminer_t8half_damaged": "§7Damaged Trinium Plated Micro Excavator [Tier Eight and Half]",
 
   "item.kubejs.damaged_microminer.tooltip": "§7§oCan be repaired in an assembler.",
 
@@ -280,7 +280,6 @@
   "item.kubejs.corrupted_universe_data": "§dCorrupted Universe Data",
 
   "item.kubejs.omnic_data": "Omnic Data",
-  "item.kubejs.creative_tank_data": "Creative Quantum Tank Data",
   "item.kubejs.creative_storage_data": "Creative Storage Data",
   "item.kubejs.creative_computation_data": "Creative Computation Data",
   "item.kubejs.creative_energy_data": "Creative Energy Data",

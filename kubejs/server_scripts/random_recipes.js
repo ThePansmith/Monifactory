@@ -107,6 +107,32 @@ ServerEvents.recipes(event => {
         .duration(1000)
         .EUt(2000)
 
+    // Processing for Ender Spores
+    event.custom({
+        "type": "thermal:insolator",
+        "ingredient": {
+            "item": "kubejs:ender_spore"
+        },
+        "result": [
+            {
+                "item": "kubejs:ender_spore",
+                "chance": 2.0
+            }
+        ],
+        "energy_mod": 3.0
+    })
+
+    event.shapeless("kubejs:ender_spore", ["minecraft:chorus_flower", "minecraft:ender_pearl", "thermal:phytogro", "minecraft:experience_bottle"])
+    event.smelting("minecraft:ender_pearl", "kubejs:ender_spore")
+
+    event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
+        .circuit(2)
+        .notConsumable("kubejs:ender_spore")
+        .itemInputs("4x gtceu:fertilizer")
+        .inputFluids(Fluid.of("minecraft:water"))
+        .itemOutputs("8x kubejs:ender_spore")
+        .duration(640)
+        .EUt(120)
 
     // Change recipes for LV and MV macerators
     event.shaped("gtceu:lv_macerator", [
@@ -141,14 +167,11 @@ ServerEvents.recipes(event => {
     })
 
     // Data Stuff
-
-    if (isNormalMode) {
-        event.recipes.gtceu.extractor("tank_data")
-            .itemInputs("kubejs:heart_of_a_universe")
-            .itemOutputs("kubejs:creative_tank_data")
-            .duration(1000)
-            .EUt(180000)
-    }
+    event.recipes.gtceu.extractor("omnic_data")
+        .itemInputs("kubejs:heart_of_a_universe")
+        .itemOutputs("kubejs:omnic_data")
+        .duration(1000)
+        .EUt(180000)
 
     // Crystal Chip shit
     event.recipes.gtceu.autoclave("starter_enderium_chip")

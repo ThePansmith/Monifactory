@@ -3,6 +3,28 @@
  * and certain other properties of custom items.
  */
 StartupEvents.registry("item", event => {
+    const miners = [
+        "1",
+        "2",
+        "2half",
+        "2half_damaged",
+        "3",
+        "4",
+        "4half",
+        "4half_damaged",
+        "5",
+        "6",
+        "6_damaged",
+        "7",
+        "7_damaged",
+        "8",
+        "8_damaged",
+        "9",
+        "10",
+        "11",
+        "12"
+    ]
+
     const stabilized_miners = [
         "2half",
         "4half",
@@ -12,27 +34,16 @@ StartupEvents.registry("item", event => {
     ]
 
     // Regular Microminers
-    for (let tier = 1; tier <= 12; tier++) {
+    for (const tier of miners) {
         event.create(`microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}`)
-        if(tier >= 6 && tier < 9) event.create(`damaged_microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}_damaged`)
     }
 
-
-    // HM/EM Microminers
-    if (!isNormalMode) {
-        event.create("microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half")
-        event.create("damaged_microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half_damaged")
-        event.create("microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
-        event.create("damaged_microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half_damaged")
-        event.create("microminer_t8half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
-
-        // Stabilized Miners
-        for (const tier of stabilized_miners) {
-            event.create(`stabilized_microminer_t${tier}`)
-                .maxStackSize(16)
-                .texture(`kubejs:item/microverse/microminer_t${tier}`)
-                .glow(true);
-        }
+    // Stabilized Miners
+    for (const tier of stabilized_miners) {
+        event.create(`stabilized_microminer_t${tier}`)
+            .maxStackSize(16)
+            .texture(`kubejs:item/microverse/microminer_t${tier}`)
+            .glow(true);
     }
 
     // Microminer Components
@@ -54,7 +65,6 @@ StartupEvents.registry("item", event => {
     event.create("basic_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/basic_drilling_kit")
     event.create("advanced_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit")
     event.create("elite_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/elite_drilling_kit")
-        .displayName("Advanced Drill Kit II")
     event.create("blasting_kit").maxStackSize(16).texture("kubejs:item/miner_kits/blasting_kit")
     event.create("microversal_alchemy_kit").maxStackSize(16).texture("kubejs:item/miner_kits/microversal_alchemy_kit")
 
@@ -133,16 +143,12 @@ StartupEvents.registry("item", event => {
 
 
     // Creative Data
-    event.create("creative_tank_data")
+    event.create("omnic_data")
     event.create("creative_storage_data")
     event.create("creative_computation_data")
     event.create("creative_energy_data")
-    if (!isNormalMode) event.create("omnic_data")
 
     // Infinity Fluid Cell Base
-    if(isNormalMode) {
-        event.create("infinity_cell_base").displayName("ME Infinity Cell Base")
-    }
 
 
     // Endgame Items
@@ -173,20 +179,6 @@ StartupEvents.registry("item", event => {
     // Singularities
     event.create("singularity_containment_unit")
     event.create("contained_singularity")
-
-
-    // Ultimate Tools
-    event.create("ultimate_core").texture("kubejs:item/ultimate/core")
-    event.create("ultimate_file").texture("kubejs:item/ultimate/file")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_hammer").texture("kubejs:item/ultimate/hammer")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_screwdriver").texture("kubejs:item/ultimate/screwdriver")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_wrench").texture("kubejs:item/ultimate/wrench")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_wire_cutter").texture("kubejs:item/ultimate/wire_cutter")
-        .rarity("epic").maxStackSize(1)
 
 
     // Infinity Tools
@@ -285,9 +277,7 @@ StartupEvents.registry("item", event => {
 
 
     // Ender Spore
-    if (!isNormalMode) {
-        event.create("ender_spore")
-    }
+    event.create("ender_spore")
 
 
     // Thermal Augments
