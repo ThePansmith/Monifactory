@@ -194,6 +194,8 @@ JEIEvents.hideItems(event => {
     // Posttank stuff
     event.hide(/gtceu:uxv/)
     event.hide(/gtceu:opv/)
+    event.hide(/gtmutils:uxv/)
+    event.hide(/gtmutils:opv/)
 
     // Greg Hot MV ingots
     event.hide(["gtceu:hot_kanthal_ingot", "gtceu:hot_silicon_ingot"])

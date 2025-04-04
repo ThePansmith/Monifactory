@@ -116,6 +116,8 @@ ServerEvents.recipes(event => {
     // Posttank stuff
     event.remove({ id: /gtceu:uxv/ })
     event.remove({ id: /gtceu:opv/ })
+    event.remove({ id: /gtmutils:uxv/ })
+    event.remove({ id: /gtmutils:opv/ })
     event.remove({ id: "gtceu:shaped/max_machine_hull" })
 
     // Default Fluxed Electrum recipe (Redstone Arsenal)
