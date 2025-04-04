@@ -930,9 +930,9 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("V", Predicates.blocks(GCYMBlocks.HEAT_VENT.get()))
             .where("C", Predicates.heatingCoils())
             .where("M", Predicates.abilities(PartAbility.MUFFLER))
-            .where("G", Predicates.blocks("kubejs:naquadah_gearbox"))
-            .where("P", Predicates.blocks("kubejs:naquadah_pipe_casing"))
-            .where("E", Predicates.blocks("kubejs:insane_engine_intake_casing"))
+            .where("G", Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_GEARBOX.get()))          // Change to Naquadah Gearbox if ICE gets added
+            .where("P", Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))      // Change to Naquadah Pipe Casing if ICE gets added
+            .where("E", Predicates.blocks(GTBlocks.CASING_EXTREME_ENGINE_INTAKE.get()))   // Change to Insane Engine Intake if ICE gets added
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
