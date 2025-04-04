@@ -3,6 +3,28 @@
  * and certain other properties of custom items.
  */
 StartupEvents.registry("item", event => {
+    const miners = [
+        "1",
+        "2",
+        "2half",
+        "2half_damaged",
+        "3",
+        "4",
+        "4half",
+        "4half_damaged",
+        "5",
+        "6",
+        "6_damaged",
+        "7",
+        "7_damaged",
+        "8",
+        "8_damaged",
+        "9",
+        "10",
+        "11",
+        "12"
+    ]
+
     const stabilized_miners = [
         "2half",
         "4half",
@@ -12,28 +34,18 @@ StartupEvents.registry("item", event => {
     ]
 
     // Regular Microminers
-    for (let tier = 1; tier <= 12; tier++) {
+    for (const tier of miners) {
         event.create(`microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}`)
-        if(tier >= 6 && tier < 9) event.create(`damaged_microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}_damaged`)
     }
 
-
-    // HM/EM Microminers
-    if (!isNormalMode) {
-        event.create("microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half")
-        event.create("damaged_microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half_damaged")
-        event.create("microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
-        event.create("damaged_microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half_damaged")
-        event.create("microminer_t8half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
-
-        // Stabilized Miners
-        for (const tier of stabilized_miners) {
-            event.create(`stabilized_microminer_t${tier}`)
-                .maxStackSize(16)
-                .texture(`kubejs:item/microverse/microminer_t${tier}`)
-                .glow(true);
-        }
+    // Stabilized Miners
+    for (const tier of stabilized_miners) {
+        event.create(`stabilized_microminer_t${tier}`)
+            .maxStackSize(16)
+            .texture(`kubejs:item/microverse/microminer_t${tier}`)
+            .glow(true);
     }
+    
 
     // Microminer Components
     event.create("basic_mining_laser").displayName("§eBasic Mining Laser")
@@ -133,16 +145,12 @@ StartupEvents.registry("item", event => {
 
 
     // Creative Data
-    event.create("creative_tank_data")
+    event.create("omnic_data")
     event.create("creative_storage_data")
     event.create("creative_computation_data")
     event.create("creative_energy_data")
-    if (!isNormalMode) event.create("omnic_data")
 
     // Infinity Fluid Cell Base
-    if(isNormalMode) {
-        event.create("infinity_cell_base").displayName("ME Infinity Cell Base")
-    }
 
 
     // Endgame Items

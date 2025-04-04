@@ -22,12 +22,6 @@ ServerEvents.recipes(event => {
                 .duration(100)
         }
 
-        event.remove({ output: "gtceu:extractor/tank_data" })
-        event.recipes.gtceu.extractor("omnicdata")
-            .itemInputs("kubejs:heart_of_a_universe")
-            .itemOutputs("kubejs:omnic_data")
-            .duration(1000).EUt(180000)
-
         event.remove({ output: "systeams:stirling_boiler" })
         event.remove({ id: "bountiful:crafting/bountyboard" })
 

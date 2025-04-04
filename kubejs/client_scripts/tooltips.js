@@ -23,7 +23,7 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.translatable("item.kubejs.stabilized_microminer.tooltip.3"))
     })
 
-    tooltip.addAdvanced(["/kubejs:damaged_microminer/"], (item, adv, text) => {
+    tooltip.addAdvanced(["/kubejs:microminer.*damaged/"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.damaged_microminer.tooltip"))
     })
 

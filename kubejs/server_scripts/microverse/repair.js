@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         else minerTierNumber = minerTier;
 
         const builder = event.recipes.gtceu.assembler(`kubejs:repair_t${minerTier}`)
-            .itemInputs(`kubejs:damaged_microminer_t${minerTier}`)
+            .itemInputs(`kubejs:microminer_t${minerTier}_damaged`)
             .itemOutputs(`kubejs:microminer_t${minerTier}`)
             .inputFluids(Fluid.of("gtceu:soldering_alloy", 36 * minerTierNumber))
             .duration(20 * repairDurations[minerTier])
