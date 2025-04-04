@@ -66,7 +66,6 @@ StartupEvents.registry("item", event => {
     event.create("basic_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/basic_drilling_kit")
     event.create("advanced_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit")
     event.create("elite_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/elite_drilling_kit")
-        .displayName("Advanced Drill Kit II")
     event.create("blasting_kit").maxStackSize(16).texture("kubejs:item/miner_kits/blasting_kit")
     event.create("microversal_alchemy_kit").maxStackSize(16).texture("kubejs:item/miner_kits/microversal_alchemy_kit")
 
@@ -181,20 +180,6 @@ StartupEvents.registry("item", event => {
     // Singularities
     event.create("singularity_containment_unit")
     event.create("contained_singularity")
-
-
-    // Ultimate Tools
-    event.create("ultimate_core").texture("kubejs:item/ultimate/core")
-    event.create("ultimate_file").texture("kubejs:item/ultimate/file")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_hammer").texture("kubejs:item/ultimate/hammer")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_screwdriver").texture("kubejs:item/ultimate/screwdriver")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_wrench").texture("kubejs:item/ultimate/wrench")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_wire_cutter").texture("kubejs:item/ultimate/wire_cutter")
-        .rarity("epic").maxStackSize(1)
 
 
     // Infinity Tools
