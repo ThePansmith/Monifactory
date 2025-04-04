@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("16x kubejs:quantum_flux")
             .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:advanced_drilling_kit_ii")
+            .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x gtceu:neutron_reflector",)
             .itemInputs(
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("16x kubejs:quantum_flux")
             .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:advanced_drilling_kit_ii")
+            .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x kubejs:gem_sensor")
             .itemInputs(
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("16x kubejs:quantum_flux")
             .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:advanced_drilling_kit_ii")
+            .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("4x nuclearcraft:plate_du")
             .itemInputs(
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("16x kubejs:quantum_flux")
             .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:advanced_drilling_kit_ii")
+            .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("gtceu:osmium_dust")
             .itemOutputs(
@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("16x kubejs:quantum_flux")
             .itemInputs("64x gtceu:dilithium_gem")
-            .itemInputs("kubejs:advanced_drilling_kit_ii")
+            .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("gtceu:iridium_dust")
             .itemOutputs(
