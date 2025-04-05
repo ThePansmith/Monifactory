@@ -1008,6 +1008,17 @@ ServerEvents.recipes(event => {
         .EUt(30)
         .circuit(1)
 
+    // Fix ilmenite -> rutile stoich
+    event.remove({id:"gtceu:electric_blast_furnace/rutile_from_ilmenite"})
+
+    event.recipes.gtceu.electric_blast_furnace("rutile_from_ilmenite")
+        .itemInputs("10x gtceu:ilmenite_dust", "2x gtceu:carbon_dust")
+        .itemOutputs("2x gtceu:wrought_iron_ingot", "6x gtceu:rutile_dust")
+        .outputFluids("gtceu:carbon_dioxide 2000")
+        .duration(1600)
+        .blastFurnaceTemp(1700)
+        .EUt(480)
+
     // 64A energy converters recipe fix
     event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
     event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:holmium_hex_wire")
