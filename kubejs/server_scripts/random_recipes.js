@@ -1018,7 +1018,7 @@ ServerEvents.recipes(event => {
         .duration(1600)
         .blastFurnaceTemp(1700)
         .EUt(480)
-    
+
     // 64A energy converters recipe fix
     event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
     event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:holmium_hex_wire")
