@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
+    if (doMonicoins) {
         // -- Other stuff
 
     }

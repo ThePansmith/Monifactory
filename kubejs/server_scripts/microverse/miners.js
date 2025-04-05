@@ -263,9 +263,9 @@ ServerEvents.recipes(event => {
     })
 
     //
-    // Hard Mode/Expert Mode Micro Miners
+    // Half Tier Microminers
     //
-    if (!isNormalMode) {
+    if (!doHNN) {
         // T2.5 Microminer
         event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t2half", [
             "  G  ",

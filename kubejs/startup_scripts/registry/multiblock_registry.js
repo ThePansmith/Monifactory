@@ -10,7 +10,7 @@ const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gt
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
     // Normal mode-exclusive Multis
-    if (!isHardMode) {
+    if (doHNN) {
         // Simulation Supercomputer
         event.create("simulation_supercomputer")
             .category("multiblock")
@@ -33,7 +33,16 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
 
     // Hard mode-exclusive Multis
-    if (!isNormalMode) {
+
+        // Actualization Chamber
+        event.create("actualization_chamber")
+            .category("multiblock")
+            .setEUIO("in")
+            .setMaxIOSize(2, 20, 0, 0)
+            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+            .setSound(GTSoundEntries.COOLING)
+
         // Universal Crystallizer
         event.create("universal_crystallizer")
             .category("multiblock")
@@ -42,7 +51,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
-    }
 
 
     // Microverse Projector Recipe Type
@@ -73,8 +81,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSound(GTSoundEntries.ARC)
 
     // Naquadah Fuel Refinery
-    if (!isNormalMode) {
-
         event.create("naquadah_refinery")
             .category("multiblock")
             .setEUIO("in")
@@ -82,7 +88,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COOLING)
-    }
+    
 
     // Greenhouse
     event.create("greenhouse")
@@ -154,7 +160,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     GTRecipeTypes.get("microverse").addDataInfo((data) => ("Projector Tier: " + data.getByte("projector_tier")));   // todo: get Text.translatable to work
 
     // Normal mode-exclusive multis
-    if (!isHardMode) {
+    if (doHNN) {
 
         // Simulation Supercomputer
         event.create("simulation_supercomputer", "multiblock")
@@ -212,10 +218,29 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     }
 
 
-    // Expert mode-exclusive multis
-    if (isHardMode) {
+    // Actualization Chamber
+    if (doStabMiners) {
+        event.create("actualization_chamber", "multiblock")
+            .rotationState(RotationState.NON_Y_AXIS)
+            .recipeTypes("actualization_chamber")
+            .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
+            .appearanceBlock(GTBlocks.FUSION_CASING)
+            .pattern(definition => FactoryBlockPattern.start()
+                .aisle("XXX", "GGG", "XXX")
+                .aisle("XXX", "GOG", "XXX")
+                .aisle("X@X", "GGG", "XXX")
+                .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+                .where("X", Predicates.blocks(GTBlocks.FUSION_CASING.get()).setMinGlobalLimited(9)
+                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
+                .where("O", Predicates.blocks(GTBlocks.FUSION_COIL.get()))
+                .build())
+            .workableCasingRenderer("gtceu:block/casings/fusion/fusion_casing",
+                "gtceu:block/multiblock/implosion_compressor", false)
+    }
 
-        // Universal Crystallizer
+    // Universal Crystallizer
         event.create("universal_crystallizer", "multiblock")
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes("universal_crystallizer")
@@ -245,7 +270,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
                 "gtceu:block/multiblock/gcym/large_autoclave", false)
 
-        // Helical Fusion Reactor
+    // Helical Fusion Reactor
         event.create("helical_fusion_reactor", "multiblock")
             .machine((holder) => new FusionReactorMachine(holder, GTValues.UEV))
             .rotationState(RotationState.ALL)
@@ -285,7 +310,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
                 "gtceu:block/multiblock/fusion_reactor", false)
-    }
 
     // Greenhouse
     event.create("greenhouse", "multiblock")
@@ -701,8 +725,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/generator/large_steam_turbine", false)
 
     // Naquadah Fuel Refinery
-    if (!isNormalMode) {
-
         event.create("naquadah_refinery", "multiblock")
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes("naquadah_refinery")
@@ -736,7 +758,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
                 "gtceu:block/multiblock/fusion_reactor", false)
-    }
+    
 
     // Omnic Forge
     event.create("omnic_forge", "multiblock")

@@ -791,10 +791,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"57E7182198B2EA9A"
-				"6C1AAFF54A2ADB45"
-			]
+			dependencies: ["6C1AAFF54A2ADB45"]
 			description: ["{moni.quest.790E3275E88265E3.description1}"]
 			hide_until_deps_visible: true
 			id: "790E3275E88265E3"

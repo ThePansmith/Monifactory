@@ -3,9 +3,9 @@
  */
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    if (!isHardMode) {
-        return;
-    }
+    // if (doCreativeTank) {
+    //     return;
+    // }
 
     event.create("darmstadtite") // Hardmode only
         .dust().ore(2, 1)

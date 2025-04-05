@@ -6,12 +6,8 @@ StartupEvents.registry("item", event => {
     const miners = [
         "1",
         "2",
-        "2half",
-        "2half_damaged",
         "3",
         "4",
-        "4half",
-        "4half_damaged",
         "5",
         "6",
         "6_damaged",
@@ -19,20 +15,31 @@ StartupEvents.registry("item", event => {
         "7_damaged",
         "8",
         "8_damaged",
-        "8half",
         "9",
         "10",
         "11",
         "12"
     ]
 
-    const stabilized_miners = [
+    const half_miners = [
         "2half",
+        "2half_damaged",
         "4half",
+        "4half_damaged",
+        "8half",
+    ]
+
+    const stabilized_miners = [
         "6",
         "7",
         "8",
     ]
+
+    const stabilized_half_miners = [
+        "2half",
+        "4half",
+    ]
+
 
     // Regular Microminers
     for (const tier of miners) {
@@ -45,6 +52,20 @@ StartupEvents.registry("item", event => {
             .maxStackSize(16)
             .texture(`kubejs:item/microverse/microminer_t${tier}`)
             .glow(true);
+    }
+
+    // Half Miners
+    if (!doHNN) {
+        for (const tier of half_miners) {
+            event.create(`microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}`)
+        }
+
+        for (const tier of stabilized_half_miners) {
+            event.create(`stabilized_microminer_t${tier}`)
+                .maxStackSize(16)
+                .texture(`kubejs:item/microverse/microminer_t${tier}`)
+                .glow(true);
+        }
     }
 
     // Microminer Components
@@ -95,7 +116,7 @@ StartupEvents.registry("item", event => {
 
 
     // Monicoins
-    if (isNormalMode) {
+    if (doMonicoins) {
         event.create("moni_penny")
     }
     event.create("moni_nickel")
@@ -115,7 +136,7 @@ StartupEvents.registry("item", event => {
 
 
     // Magnetron
-    if (!isNormalMode) {
+    if (doHarderProcessing) {
         event.create("magnetron")
     }
 
@@ -278,7 +299,9 @@ StartupEvents.registry("item", event => {
 
 
     // Ender Spore
-    event.create("ender_spore")
+    if (!doHNN) {
+        event.create("ender_spore")
+    }
 
 
     // Thermal Augments

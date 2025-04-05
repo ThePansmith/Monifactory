@@ -3050,7 +3050,10 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["3B639F4061B00F1A"]
+			dependencies: [
+				"3B639F4061B00F1A"
+				"14A873812E309A1D"
+			]
 			description: [
 				"{moni.quest.6DBD1492197AC92D.description1}"
 				""
@@ -3060,7 +3063,9 @@
 				""
 				"{moni.quest.6DBD1492197AC92D.description4}"
 			]
+			hide_until_deps_visible: true
 			id: "6DBD1492197AC92D"
+			subtitle: "{moni.quest.47A81FADD828772D.subtitle}"
 			tasks: [{
 				id: "41777324B5E2118C"
 				item: "kubejs:microminer_t2half"

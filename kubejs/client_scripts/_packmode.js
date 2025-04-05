@@ -1,4 +1,24 @@
-/** Pack mode */
-const isNormalMode = !!global.isNormalMode;
-const isHardMode = !!global.isHardMode;
-const isExpertMode = !!global.isExpertMode;
+/**
+ * Client-side pack mode management.
+ * This file adds a set of constant booleans for convenience in determining if a feature is enabled.
+ */
+// The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
+const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
+const doBoilers = !!global.doBoilers;
+const doCompacting = !!global.doCompacting;
+const doConduits = !!global.doConduits;
+const doConverters = !!global.doConverters;
+const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
+const doHarderProcessing = !!global.doHarderProcessing;
+const doHarderRecipes = !!global.doHarderRecipes;
+const doHarderNaqFuel = !!global.doHarderNaqFuel;
+const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
+const doHatchRevert = !!global.doHatchRevert;
+const doHNN = !!global.doHNN;
+const doLaserIO = !!global.doLaserIO;
+const doMeowniPlush = !!global.doMeowniPlush;
+const doMonicoins = !!global.doMonicoins;
+const doSnad = !!global.doSnad;
+const doStabMiners = !!global.doStabMiners;
+const doSteamAge = !!global.doSteamAge;
+const doStoneline = !!global.doStoneline;

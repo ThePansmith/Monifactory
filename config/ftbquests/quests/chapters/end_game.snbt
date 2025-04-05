@@ -368,8 +368,8 @@
 		}
 		{
 			dependencies: [
-				"57E7182198B2EA9A"
 				"6F9041F256F517A3"
+				"5BE3E37772FAF6CB"
 			]
 			description: [
 				"{moni.quest.5A70898C99B828E3.description1}"
@@ -383,6 +383,7 @@
 			hide_until_deps_visible: true
 			icon: "gtceu:simulation_supercomputer"
 			id: "5A70898C99B828E3"
+			optional: true
 			size: 1.5d
 			tasks: [
 				{
@@ -468,6 +469,7 @@
 			]
 			icon: "gtceu:loot_superfabricator"
 			id: "161F61C28DBC5941"
+			optional: true
 			size: 1.5d
 			tasks: [
 				{
