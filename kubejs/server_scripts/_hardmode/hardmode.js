@@ -1,8 +1,7 @@
 /** THIS FILE IS FOR RANDOM RECIPES THAT DOESNT REQUIRE THEIR OWN FILE */
 
 ServerEvents.recipes(event => {
-    if (isHardMode) {
-
+    if (!doHNN) {
         event.remove({ id: /hostilenetworks/ })
 
         const xpjuice = [
@@ -21,10 +20,9 @@ ServerEvents.recipes(event => {
                 .EUt(480)
                 .duration(100)
         }
+    }
 
-        event.remove({ output: "systeams:stirling_boiler" })
-        event.remove({ id: "bountiful:crafting/bountyboard" })
-
+    if (doHarderRecipes) {
         event.shaped("thermal:dynamo_numismatic", [
             " A ",
             "BCB",
@@ -41,12 +39,6 @@ ServerEvents.recipes(event => {
         event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
         event.remove({ id: "gtceu:circuit_assembler/wetware_board" })
         event.remove({ id: "enderio:stick" })
-
-        event.recipes.gtceu.omnic_forge("kubejs:meowni_plush")
-            .itemInputs("64x kubejs:moni_dollar", "64x kubejs:moni_dollar", "64x kubejs:moni_dollar", "16x kubejs:moni_dollar",) // Not exact atm, I don't run linux (so i cant use the awk script) and this value is gonna change regardless.
-            .itemOutputs("kubejs:meowni_plush")
-            .duration(2000)
-            .EUt(65520)
 
         // Mob Heads
         event.shaped("minecraft:skeleton_skull", [
@@ -102,5 +94,17 @@ ServerEvents.recipes(event => {
             A: "minecraft:ender_pearl",
             B: "minecraft:skeleton_skull"
         })
+    }
+
+    if (doMeowniPlush) {
+        event.recipes.gtceu.omnic_forge("kubejs:meowni_plush")
+            .itemInputs("64x kubejs:moni_dollar", "64x kubejs:moni_dollar", "64x kubejs:moni_dollar", "16x kubejs:moni_dollar",) // Not exact atm, I don't run linux (so i cant use the awk script) and this value is gonna change regardless.
+            .itemOutputs("kubejs:meowni_plush")
+            .duration(2000)
+            .EUt(65520)
+    }
+
+    if (!doMonicoins) {
+        event.remove({ id: "bountiful:crafting/bountyboard" })
     }
 })

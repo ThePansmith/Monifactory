@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
     event.remove({ input: /^sophisticatedstorage:.*copper.*tier_upgrade$/ })
 
     // Remove iron (bronze) tier storage in NM
-    if (isNormalMode) {
+    if (!doSteamAge) {
         event.remove({ output: "sophisticatedstorage:iron_barrel" })
         event.remove({ output: "sophisticatedstorage:iron_chest" })
         event.remove({ output: "sophisticatedstorage:iron_shulker_box" })
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
     ]
 
     // Skip bronze tier storage in NM
-    if (isNormalMode) {
+    if (!doSteamAge) {
         sophStorageMaterials.splice(1, 1);
     }
 
@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
     })
 
     // Compression upgrades are removed in EM like Compacting Drawers
-    if (isExpertMode) {
+    if (!doCompacting) {
         event.remove({ output: /^sophisticated.*(compacting|compression)_upgrade$/ })
     }
 

@@ -2,7 +2,7 @@
  * Custom recipes for the Building Gadgets mod
  */
 ServerEvents.recipes(event => {
-    if (isHardMode) {
+    if (doHarderRecipes) {
         event.remove({ id: /buildinggadgets2/ })
         // Template Manager
         event.shaped("buildinggadgets2:template_manager", [

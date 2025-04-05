@@ -74,19 +74,6 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 4, 2).forEach(builder => {
         builder
             .itemInputs("4x kubejs:quantum_flux")
-            .itemInputs("kubejs:microversal_alchemy_kit")
-            .itemInputs("16x kubejs:petrotheum_dust")
-            .itemInputs(
-                "32x kubejs:solidified_chlorine",
-            )
-            .itemOutputs(
-                "32x kubejs:solidified_bromine",
-            )
-    })
-
-    microverse_mission(event, 4, 2).forEach(builder => {
-        builder
-            .itemInputs("4x kubejs:quantum_flux")
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:wrought_iron_drill_head")
@@ -110,7 +97,7 @@ ServerEvents.recipes(event => {
 
     // T5MM missions
     microverse_mission(event, 5, 2).forEach(builder => {
-        if(isNormalMode) {
+        if(doHarderRecipes) {
             builder
                 .itemInputs("8x kubejs:quantum_flux")
                 .itemInputs("16x kubejs:stabilized_plutonium")

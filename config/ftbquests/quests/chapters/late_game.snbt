@@ -2529,7 +2529,10 @@
 			y: 8.25d
 		}
 		{
-			dependencies: ["15DBB22E3DC0AFB7"]
+			dependencies: [
+				"15DBB22E3DC0AFB7"
+				"2E7B8891E639D06B"
+			]
 			description: [
 				"{moni.quest.19C2D208A2FC9968.description1}"
 				""

@@ -936,19 +936,9 @@
 			y: 8.75d
 		}
 		{
+			description: ["{moni.quest.2D788BE1CA9A2D69.description1}"]
 			id: "5928FCBF99CF031B"
-			rewards: [{
-				id: "0BF8B84D766D401A"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "24B242E71551DAD6"
-				item: "kubejs:solidified_bromine"
-				type: "item"
-			}]
-			title: "{moni.quest.5928FCBF99CF031B.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
 			y: 8.75d
 		}
@@ -2493,20 +2483,21 @@
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.5D1DAC23C6B89AC3.description1}"]
 			disable_toast: true
-			icon: "enderio:painted_fence"
+			icon: "gtceu:bismuth_ingot"
 			id: "5D1DAC23C6B89AC3"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "555011C2A9D2CC5D"
-				stat: "minecraft:play_time"
-				title: "{moni.task.555011C2A9D2CC5D}"
-				type: "stat"
-				value: 1
+			rewards: [{
+				id: "6D286DD0E928C6CD"
+				item: "kubejs:moni_quarter"
+				type: "item"
 			}]
-			title: "{moni.quest.5D1DAC23C6B89AC3.title}"
+			tasks: [{
+				count: 64L
+				id: "6E0E7439EC507552"
+				item: { Count: 64, id: "gtceu:bismuth_ingot" }
+				type: "item"
+			}]
+			title: "{moni.quest.5D1DAC23C6B89AC4.title}"
 			x: 8.0d
 			y: 11.75d
 		}
@@ -2647,6 +2638,7 @@
 				"77880E592DB38C9C"
 				"67591B6025C03130"
 				"5928FCBF99CF031B"
+				"5D1DAC23C6B89AC3"
 			]
 			description: ["{moni.quest.739F7BF2A90B278A.description1}"]
 			id: "739F7BF2A90B278A"
