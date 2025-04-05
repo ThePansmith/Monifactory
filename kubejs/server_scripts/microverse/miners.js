@@ -35,6 +35,24 @@ ServerEvents.recipes(event => {
         T: "kubejs:electrical_steel_thruster"
     })
 
+    // T2.5 Microminer
+    event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t2half", [
+        "  G  ",
+        " CQC ",
+        "PPAPP",
+        "PMBMP",
+        " T T ",
+    ], {
+        G: "kubejs:basic_micro_miner_guidance_system",
+        P: "gtceu:double_dark_steel_plate",
+        A: "gtceu:mv_field_generator",
+        C: "minecraft:crossbow",
+        Q: "thermal:potion_quiver",
+        B: "gtceu:bronze_crate",
+        T: "kubejs:hardened_thruster",
+        M: "thermal:dynamo_magmatic"
+    })
+
     // T3 Microminer
     event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t3", [
         "  G G  ",
@@ -75,6 +93,28 @@ ServerEvents.recipes(event => {
         T: "kubejs:energetic_thruster",
         D: "thermal:dynamo_compression"
     })
+
+    // T4.5  Microminer
+    event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t4half", [
+        "  LGL  ",
+        "F ltl F",
+        "AllcllA",
+        " llfll ",
+        "ltctctl",
+        "ldlfldl",
+        "  TTT  "
+    ], {
+        L: "kubejs:reinforced_mining_laser",
+        G: "kubejs:basic_micro_miner_guidance_system",
+        F: "redstone_arsenal:flux_sword",
+        l: "gtceu:double_lumium_plate",
+        t: "gtceu:double_hsse_plate",
+        A: "gtceu:hv_robot_arm",
+        c: "kubejs:signalum_micro_miner_core",
+        f: "gtceu:hv_field_generator",
+        d: "thermal:dynamo_compression",
+        T: "kubejs:energetic_thruster"
+    }).id("kubejs:microminer/t4half")
 
     // T5 Microminer
     event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t5", [
@@ -165,6 +205,33 @@ ServerEvents.recipes(event => {
         M: "kubejs:warp_controller",
         E: "kubejs:warp_engine"
     })
+
+    // T8.5  Microminer
+    event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t8half", [
+        "   AAA   ",
+        "  ANNNA  ",
+        " GNTTTNG ",
+        " NNTFTNN ",
+        " NTECETN ",
+        "NNTSFSTNN",
+        "NTTQWQTTN",
+        "NTTYWYTTN",
+        " XXX XXX "
+    ], {
+        A: "kubejs:supercharged_laser_array",
+        N: "gtceu:double_naquadah_alloy_plate",
+        G: "kubejs:advanced_micro_miner_guidance_system",
+        T: "gtceu:double_trinium_plate",
+        F: "gtceu:zpm_field_generator",
+        E: "gtceu:zpm_emitter",
+        C: "kubejs:abyssal_energy_core",
+        S: "gtceu:naquadah_alloy_frame",
+        Q: "gtceu:luv_quantum_chest",
+        W: "kubejs:warp_core",
+        Y: "kubejs:warp_controller",
+        X: "kubejs:warp_engine"
+    }).id("kubejs:microminer/t8half")
+
     // T9 Microminer
     event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t9", [
         "    Q    ",
@@ -261,75 +328,4 @@ ServerEvents.recipes(event => {
         S: "kubejs:dimensional_stabilization_netherite_casing",
         Q: "kubejs:field_stabilised_omnic_pulsar_compound"
     })
-
-    //
-    // Hard Mode/Expert Mode Micro Miners
-    //
-    if (!isNormalMode) {
-        // T2.5 Microminer
-        event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t2half", [
-            "  G  ",
-            " CQC ",
-            "PPAPP",
-            "PMBMP",
-            " T T ",
-        ], {
-            G: "kubejs:basic_micro_miner_guidance_system",
-            P: "gtceu:double_dark_steel_plate",
-            A: "gtceu:mv_field_generator",
-            C: "minecraft:crossbow",
-            Q: "thermal:potion_quiver",
-            B: "gtceu:bronze_crate",
-            T: "kubejs:hardened_thruster",
-            M: "thermal:dynamo_magmatic"
-        })
-
-        // T4.5  Microminer
-        event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t4half", [
-            "  LGL  ",
-            "F ltl F",
-            "AllcllA",
-            " llfll ",
-            "ltctctl",
-            "ldlfldl",
-            "  TTT  "
-        ], {
-            L: "kubejs:reinforced_mining_laser",
-            G: "kubejs:basic_micro_miner_guidance_system",
-            F: "redstone_arsenal:flux_sword",
-            l: "gtceu:double_lumium_plate",
-            t: "gtceu:double_hsse_plate",
-            A: "gtceu:hv_robot_arm",
-            c: "kubejs:signalum_micro_miner_core",
-            f: "gtceu:hv_field_generator",
-            d: "thermal:dynamo_compression",
-            T: "kubejs:energetic_thruster"
-        }).id("kubejs:microminer/t4half")
-
-        // T8.5  Microminer
-        event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t8half", [
-            "   AAA   ",
-            "  ANNNA  ",
-            " GNTTTNG ",
-            " NNTFTNN ",
-            " NTECETN ",
-            "NNTSFSTNN",
-            "NTTQWQTTN",
-            "NTTYWYTTN",
-            " XXX XXX "
-        ], {
-            A: "kubejs:supercharged_laser_array",
-            N: "gtceu:double_naquadah_alloy_plate",
-            G: "kubejs:advanced_micro_miner_guidance_system",
-            T: "gtceu:double_trinium_plate",
-            F: "gtceu:zpm_field_generator",
-            E: "gtceu:zpm_emitter",
-            C: "kubejs:abyssal_energy_core",
-            S: "gtceu:naquadah_alloy_frame",
-            Q: "gtceu:luv_quantum_chest",
-            W: "kubejs:warp_core",
-            Y: "kubejs:warp_controller",
-            X: "kubejs:warp_engine"
-        }).id("kubejs:microminer/t8half")
-    }
 })
