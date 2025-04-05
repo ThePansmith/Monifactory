@@ -11,9 +11,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: "sophisticatedstorage:xp_pump_upgrade" })
     event.remove({ id: "sophisticatedbackpacks:xp_pump_upgrade" })
 
-    // There is dupe glitch involving this.
-    event.remove({ id: "sophisticatedstorage:packing_tape" })
-
     // Remove Limited barrels
     event.remove({ id: /^sophisticatedstorage:.*limited.+barrel.+$/ })
     event.remove({ output: /^sophisticatedstorage:limited_barrel.+$/ })
