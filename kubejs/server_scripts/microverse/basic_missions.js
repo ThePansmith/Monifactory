@@ -132,7 +132,6 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:advanced_power_thruster")
             .itemOutputs(
                 "64x gtceu:raw_ilmenite",
-                "32x gtceu:raw_ilmenite",
                 "64x gtceu:raw_bauxite",
                 "16x gtceu:raw_aluminium",
             )

@@ -1008,7 +1008,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
         .circuit(1)
 
-    // Fix ilmenite -> rutile stoich because GTM devs don't wanna
+    // Fix ilmenite -> rutile stoich
     event.remove({id:"gtceu:electric_blast_furnace/rutile_from_ilmenite"})
 
     event.recipes.gtceu.electric_blast_furnace("rutile_from_ilmenite")
