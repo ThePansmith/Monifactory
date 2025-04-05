@@ -129,15 +129,15 @@ ServerEvents.recipes(event => {
         event.smelting("minecraft:ender_pearl", "kubejs:ender_spore")
 
         event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
-        .circuit(2)
-        .notConsumable("kubejs:ender_spore")
-        .itemInputs("4x gtceu:fertilizer")
-        .inputFluids(Fluid.of("minecraft:water"))
-        .itemOutputs("8x kubejs:ender_spore")
-        .duration(640)
-        .EUt(120)
+            .circuit(2)
+            .notConsumable("kubejs:ender_spore")
+            .itemInputs("4x gtceu:fertilizer")
+            .inputFluids(Fluid.of("minecraft:water"))
+            .itemOutputs("8x kubejs:ender_spore")
+            .duration(640)
+            .EUt(120)
     }
-    
+
     // Change recipes for LV and MV macerators
     event.shaped("gtceu:lv_macerator", [
         "PMB",

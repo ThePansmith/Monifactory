@@ -316,7 +316,7 @@ ServerEvents.recipes(event => {
             D: "gtceu:wrought_iron_gear",
             E: "systeams:boiler_pipe"
         })
-        
+
         event.shapeless("systeams:stirling_boiler", ["steamdynamo:steam_dynamo", "systeams:boiler_pipe"])
         event.shaped("systeams:boiler_pipe", [
             " C ",

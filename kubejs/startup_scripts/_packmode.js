@@ -103,12 +103,12 @@ global.doCompacting = packMode == "Normal" || packMode == "Hard";
 global.doConduits = packMode == "Normal" || packMode == "Hard";
 global.doConverters = packMode == "Normal" || packMode == "Hard";
 global.doHalfMMs = packMode == "Hard" || packMode == "Expert";
-global.doHarderNaqFuel = packMode == "Normal" || packMode == "Hard" || packMode == "Expert"; //Temp set to all, want to have a simpler Naqfuel for NM
+global.doHarderNaqFuel = packMode == "Normal" || packMode == "Hard" || packMode == "Expert"; // Temp set to all, want to have a simpler Naqfuel for NM
 global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";
 global.doHarderRecipes = packMode == "Hard" || packMode == "Expert";
 global.doHatchRevert = packMode == "Normal" || packMode == "Hard";
-global.doHNN = packMode == "Normal"; 
+global.doHNN = packMode == "Normal";
 global.doLaserIO = packMode == "Normal" || packMode == "Hard";
 global.doMeowniPlush = packMode == "Hard" || packMode == "Expert";
 global.doMonicoins = packMode == "Normal";
@@ -126,6 +126,7 @@ const doConduits = !!global.doConduits;
 const doConverters = !!global.doConverters;
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
+const doHalfMMs = !!global.doHalfMMs
 const doHarderRecipes = !!global.doHarderRecipes;
 const doHarderNaqFuel = !!global.doHarderNaqFuel;
 const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
