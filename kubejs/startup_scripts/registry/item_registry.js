@@ -244,7 +244,6 @@ StartupEvents.registry("item", event => {
 
 
     // Misc Items
-    event.create("dilithium_crystal")
     event.create("ender_star").glow(true)
     event.create("endest_star").glow(true)
     event.create("grains_of_innocence")

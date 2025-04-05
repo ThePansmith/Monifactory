@@ -27,7 +27,4 @@ StartupEvents.registry("fluid", event => {
         .displayName("§7Zephyrean Aerotheum") // gray
         .stillTexture("kubejs:block/aerotheum_still")
         .flowingTexture("kubejs:block/aerotheum_flow");
-    event.create("molten_primal_mana")
-        .bucketColor(Color.rgba(0, 72, 112, 255))
-        .displayName("§cDEPRECATED Primal Mana");
 })
