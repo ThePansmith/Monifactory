@@ -55,5 +55,7 @@
     "item.ad_astra.desh_tank": "炭化タングステンのタンク",
     "item.ad_astra.ostrum_tank": "ルミウムのタンク",
     "item.ad_astra.calorite_tank": "クライオローバスのタンク",
-    "info.ad_astra.oxygen_loader": "グレッグテック酸素を使って宇宙服とガスタンクを埋める。"
+    "info.ad_astra.oxygen_loader": "グレッグテック酸素を使って宇宙服とガスタンクを埋める。",
+    "item.ad_astra.steel_engine": "Black Steel Engine",
+    "item.ad_astra.steel_tank": "Black Steel Tank"
 }
