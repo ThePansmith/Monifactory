@@ -7,7 +7,7 @@
 
 // Custom Naquadah Fuel Iconset
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
-    if (!doHarderNaqFuel) {
+    if (doHarderNaqFuel) {
         event.create("naquadah_superfuel").parent(GTMaterialIconSet.RADIOACTIVE)
     }
 })
@@ -282,11 +282,5 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .liquid()
             .color(0xF8EBBE)
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-        event.create("hydrobromic_acid")
-            .fluid()
-            .color(0x612C0D)
-            .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
-            .components("1x hydrogen", "1x bromine", "1x water")
     }
 })

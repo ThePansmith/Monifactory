@@ -720,22 +720,11 @@ ServerEvents.recipes(event => {
             .outputFluids("gtceu:pyromellitic_dianhydride 250", "minecraft:water 1500")
             .duration(400).EUt(480);
 
-        event.recipes.gtceu.chemical_reactor("manganese_bromide")
-            .itemInputs("gtceu:manganese_dust")
-            .inputFluids("gtceu:bromine 1000", "gtceu:acetic_acid 1000")
-            .outputFluids("gtceu:manganese_bromide 1000")
-            .duration(60).EUt(480);
-
+ 
         event.recipes.gtceu.chemical_reactor("manganese_acetate")
             .itemInputs("gtceu:manganese_dust")
             .inputFluids("gtceu:acetic_acid 1000")
             .outputFluids("gtceu:manganese_acetate 1000")
-            .duration(60).EUt(480);
-
-        event.recipes.gtceu.chemical_reactor("hydrobromic_acid")
-            .notConsumable("gtceu:platinum_dust")
-            .inputFluids("gtceu:hydrogen 1000", "gtceu:bromine 1000", "minecraft:water 1000")
-            .outputFluids("gtceu:hydrobromic_acid 1000")
             .duration(60).EUt(480);
 
         event.recipes.gtceu.chemical_reactor("chloronitrobenzene")
