@@ -265,7 +265,7 @@ ServerEvents.recipes(event => {
     //
     // Half Tier Microminers
     //
-    if (!doHalfMMs) {
+    if (doHalfMMs) {
         // T2.5 Microminer
         event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t2half", [
             "  G  ",

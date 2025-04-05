@@ -55,7 +55,7 @@ StartupEvents.registry("item", event => {
     }
 
     // Half Miners
-    if (!doHalfMMs) {
+    if (doHalfMMs) {
         for (const tier of half_miners) {
             event.create(`microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}`)
         }
