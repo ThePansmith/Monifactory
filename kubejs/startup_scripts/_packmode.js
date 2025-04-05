@@ -102,6 +102,7 @@ global.doBoilers = packMode == "Normal" || packMode == "Hard";
 global.doCompacting = packMode == "Normal" || packMode == "Hard";
 global.doConduits = packMode == "Normal" || packMode == "Hard";
 global.doConverters = packMode == "Normal" || packMode == "Hard";
+global.doHalfMMs = packMode == "Hard" || packMode == "Expert";
 global.doHarderNaqFuel = packMode == "Normal" || packMode == "Hard" || packMode == "Expert"; //Temp set to all, want to have a simpler Naqfuel for NM
 global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";

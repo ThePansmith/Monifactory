@@ -13,6 +13,7 @@ const doConverters = !!global.doConverters;
 
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
+const doHalfMMs = !!global.doHalfMMs;
 const doHarderRecipes = !!global.doHarderRecipes;
 const doHarderNaqFuel = !!global.doHarderNaqFuel;
 const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
@@ -42,7 +43,8 @@ PlayerEvents.loggedIn(event => {
         "StabMiners",
         "SteamAge",
         "HarderNaqFuel",
-        "Stoneline"
+        "Stoneline",
+        "HalfMMs"
     ];
 
     gameStages.forEach(stage => {

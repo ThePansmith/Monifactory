@@ -8,6 +8,7 @@ const doBoilers = !!global.doBoilers;
 const doCompacting = !!global.doCompacting;
 const doConduits = !!global.doConduits;
 const doConverters = !!global.doConverters;
+const doHalfMMs = !!global.doHalfMMs;
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
 const doHarderRecipes = !!global.doHarderRecipes;

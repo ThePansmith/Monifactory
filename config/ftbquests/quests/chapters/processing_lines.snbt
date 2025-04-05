@@ -236,6 +236,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["0ADA0257F7B5B18A"]
 			description: [
 				"{moni.quest.4BC0A5F24E5837ED.description1}"
 				""
@@ -309,6 +310,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["0ADA0257F7B5B18A"]
 			description: [
 				"{moni.quest.36100ACD3655DAFF.description1}"
 				""
@@ -647,6 +649,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["5BE3E37772FAF6CB"]
 			description: [
 				"{moni.quest.447E9501E57DA010.description1}"
 				""
