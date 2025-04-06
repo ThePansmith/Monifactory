@@ -1036,5 +1036,5 @@ ServerEvents.recipes(event => {
         .inputFluids("minecraft:water 4000")
         .circuit(24)
         .outputFluids("gtceu:sulfuric_acid 1000")
-        .duration(160).EUt(480)
+        .duration(40).EUt(480)
 })
