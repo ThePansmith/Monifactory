@@ -703,15 +703,15 @@ ServerEvents.recipes(event => {
     // Don't allow flux_drill in Expert Mode, and move it to HV
     if (!isExpertMode) {
         event.shaped("thermal:flux_drill", [
-           " A ",
-           "BCB",
-           "DED"
+            " A ",
+            "BCB",
+            "DED"
         ], {
-           A: "gtceu:stainless_steel_drill_head",
-           B: "#forge:ingots/silver",
-           C: "gtceu:mv_power_unit",
-           D: "#forge:ingots/tin",
-           E: "gtceu:iron_gear"
+            A: "gtceu:stainless_steel_drill_head",
+            B: "#forge:ingots/silver",
+            C: "gtceu:mv_power_unit",
+            D: "#forge:ingots/tin",
+            E: "gtceu:iron_gear"
         }).id("kubejs:flux_drill");
     }
 
