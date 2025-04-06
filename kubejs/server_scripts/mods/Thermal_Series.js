@@ -700,7 +700,7 @@ ServerEvents.recipes(event => {
 
     event.remove([{ id: "thermal:drill_head" }, { id: "thermal:flux_drill" }])
 
-    // Don't allow flux_drill in Expert Mode, and move it to HV for Hard Mode
+    // Don't allow flux_drill in Expert Mode, and move it to HV
     if (!isExpertMode) {
         event.shaped("thermal:flux_drill", [
            " A ",
