@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
             .inputFluids("minecraft:water 4000")
             .circuit(24)
             .outputFluids("gtceu:sulfuric_acid 1000")
-            .duration(320).EUt(480)
+            .duration(160).EUt(480)
 
         // Fluoroantimonic Acid
         event.remove({ id: "gtceu:chemical_reactor/fluoroantimonic_acid" })
@@ -720,7 +720,7 @@ ServerEvents.recipes(event => {
             .outputFluids("gtceu:pyromellitic_dianhydride 250", "minecraft:water 1500")
             .duration(400).EUt(480);
 
- 
+
         event.recipes.gtceu.chemical_reactor("manganese_acetate")
             .itemInputs("gtceu:manganese_dust")
             .inputFluids("gtceu:acetic_acid 1000")

@@ -1027,4 +1027,14 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
     event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:holmium_hex_wire")
     event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
+
+    // LCR Sulfuric Acid being terrible fix
+    event.remove({ id: "gtceu:large_chemical_reactor/sulfuric_acid_from_sulfur" })
+
+    event.recipes.gtceu.large_chemical_reactor("sulfuric_acid_from_sulfur")
+        .itemInputs("gtceu:sulfur_dust")
+        .inputFluids("minecraft:water 4000")
+        .circuit(24)
+        .outputFluids("gtceu:sulfuric_acid 1000")
+        .duration(160).EUt(480)
 })
