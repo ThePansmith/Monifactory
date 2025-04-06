@@ -720,7 +720,6 @@ ServerEvents.recipes(event => {
             .outputFluids("gtceu:pyromellitic_dianhydride 250", "minecraft:water 1500")
             .duration(400).EUt(480);
 
- 
         event.recipes.gtceu.chemical_reactor("manganese_acetate")
             .itemInputs("gtceu:manganese_dust")
             .inputFluids("gtceu:acetic_acid 1000")
