@@ -280,7 +280,7 @@ ServerEvents.recipes(event => {
         .itemInputs("12x gtceu:raw_redstone")
         .inputFluids("gtceu:sulfuric_acid 6000")
         .itemOutputs("nuclearcraft:rhodochrosite_dust")
-        .outputFluids("gtceu:redstone 19008")
+        .outputFluids("gtceu:redstone 15840")
         .EUt(2000)
         .duration(200)
 
