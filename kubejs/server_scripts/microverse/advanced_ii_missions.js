@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
                 "32x gtceu:quantum_star",
                 "16x gtceu:quantum_eye",
                 "4x gtceu:gravi_star",
-                "4x gtceu_neutronium_ingot"
+                "4x gtceu:neutronium_ingot"
             )
     })
 
