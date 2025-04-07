@@ -1015,6 +1015,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: "expatternprovider:epa_upgrade" })
     event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:logic_processor"]).id("kubejs:epp/epa_upgrade")
 
+    // ExtendedAE Silicon Block
+    event.remove({id:"expatternprovider:silicon_block"})
 
     // ME packing tape
     event.shapeless("expatternprovider:me_packing_tape", ["gtceu:basic_tape", "gtceu:fluix_dust"]).id("expatternprovider:tape")
@@ -1034,6 +1036,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_wall")
         .itemInputs("expatternprovider:assembler_matrix_frame", "gtceu:hv_electric_motor")
         .itemOutputs("expatternprovider:assembler_matrix_wall")
+        .duration(100)
+        .EUt(1920)
+
+    // Assembler Matrix Glass
+    event.remove({ id: "expatternprovider:assembler_matrix_glass" })
+    event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_glass")
+        .itemInputs("expatternprovider:assembler_matrix_frame", "gtceu:hv_electric_motor", "ae2:quartz_glass")
+        .itemOutputs("expatternprovider:assembler_matrix_glass")
         .duration(100)
         .EUt(1920)
 
