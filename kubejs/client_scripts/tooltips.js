@@ -143,7 +143,6 @@ ItemEvents.tooltip(tooltip => {
 
     parallelMultis.forEach(multi => {
         tooltip.addAdvanced(`gtceu:${multi}`, (item, adv, text) => {
-            text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
             text.add(2, Text.translatable(`gtceu.multiblock.${multi}.description`))
         })
     })
@@ -162,6 +161,9 @@ ItemEvents.tooltip(tooltip => {
         text.add(5, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.2"))
     })
 
+    tooltip.addAdvanced("gtceu:omnic_forge", (item, adv, text) => {
+        text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
+    })
 
     // Parallel hatches
     tooltip.add("gtceu:uhv_uhv_parallel_hatch", Text.translatable("gtceu.giga_parallel_hatch.desc"))
