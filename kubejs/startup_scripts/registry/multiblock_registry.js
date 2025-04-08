@@ -724,6 +724,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/generator/large_steam_turbine", false)
 
     // Naquadah Fuel Refinery
+    if (doHarderNaqfuel) {
     event.create("naquadah_refinery", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("naquadah_refinery")
@@ -757,7 +758,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
             "gtceu:block/multiblock/fusion_reactor", false)
-
+        }
     // Omnic Forge
     event.create("omnic_forge", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
