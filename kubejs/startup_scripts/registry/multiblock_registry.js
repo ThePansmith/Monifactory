@@ -261,7 +261,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("C", Predicates.blocks(GTBlocks.FUSION_COIL.get()))
             .where("F", Predicates.frames(GTMaterials.Berkelium))
             .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-            .where("T", Predicates.blocks("gtceu:taranium_block"))
+            .where("T", Predicates.blocks((doStoneline?"gtceu:taranium_block":"gtceu:actinium_block")))
             .where("B", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
             .where("R", Predicates.blocks("kubejs:enderium_micro_miner_core"))
             .where(" ", Predicates.air())
