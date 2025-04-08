@@ -701,7 +701,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/generator/large_steam_turbine", false)
 
     // Naquadah Fuel Refinery
-    if (doHarderNaqFuel)
+    if (doHarderNaqFuel) {
         event.create("naquadah_refinery", "multiblock")
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes("naquadah_refinery")
