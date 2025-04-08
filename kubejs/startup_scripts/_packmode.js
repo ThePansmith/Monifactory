@@ -114,7 +114,7 @@ global.doLaserIO = packMode == "Normal" || packMode == "Hard";
 global.doMeowniPlush = packMode == "Hard" || packMode == "Expert";
 global.doMonicoins = packMode == "Normal";
 global.doSnad = packMode == "Normal" || packMode == "Hard";
-global.doStabMiners = packMode == "Hard" || packMode == "Expert";
+global.doStabMiners = packMode == "Normal" || packMode == "Hard" || packMode == "Expert";
 global.doSteamAge = packMode == "Hard" || packMode == "Expert";
 global.doStoneline = packMode == "Hard" || packMode == "Expert";
 
