@@ -216,29 +216,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 "gtceu:block/multiblock/fusion_reactor", false)
     }
 
-
-    // Actualization Chamber
-    if (doStabMiners) {
-        event.create("actualization_chamber", "multiblock")
-            .rotationState(RotationState.NON_Y_AXIS)
-            .recipeTypes("actualization_chamber")
-            .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
-            .appearanceBlock(GTBlocks.FUSION_CASING)
-            .pattern(definition => FactoryBlockPattern.start()
-                .aisle("XXX", "GGG", "XXX")
-                .aisle("XXX", "GOG", "XXX")
-                .aisle("X@X", "GGG", "XXX")
-                .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-                .where("X", Predicates.blocks(GTBlocks.FUSION_CASING.get()).setMinGlobalLimited(9)
-                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
-                .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-                .where("O", Predicates.blocks(GTBlocks.FUSION_COIL.get()))
-                .build())
-            .workableCasingRenderer("gtceu:block/casings/fusion/fusion_casing",
-                "gtceu:block/multiblock/implosion_compressor", false)
-    }
-
     // Universal Crystallizer
     event.create("universal_crystallizer", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
@@ -259,9 +236,9 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where("C", Predicates.blocks(GTBlocks.FUSION_COIL.get()))
-            .where("F", Predicates.frames(GTMaterials.Berkelium))
+            .where("F", Predicates.frames((doHarderProcessing ? GTMaterials.Berkelium : GTMaterials.Neutronium)))
             .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-            .where("T", Predicates.blocks("gtceu:taranium_block"))
+            .where("T", Predicates.blocks((doStoneline ? "gtceu:taranium_block" : "gtceu:actinium_block")))
             .where("B", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
             .where("R", Predicates.blocks("kubejs:enderium_micro_miner_core"))
             .where(" ", Predicates.air())
@@ -759,6 +736,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
                 "gtceu:block/multiblock/fusion_reactor", false)
     }
+
     // Omnic Forge
     event.create("omnic_forge", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)

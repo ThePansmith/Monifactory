@@ -34,8 +34,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electrolyzer("actinium_from_uranic_solution")
         .inputFluids("gtceu:uranic_solution 2000")
-        .chancedInput("kubejs:neutron_emitter", 100, 0)
-        .chancedOutput("gtceu:actinium_dust", 700, 400)
+        .chancedInput("kubejs:neutron_emitter", 50, 0)
+        .chancedOutput("gtceu:actinium_dust", 2000, 0)
         .chancedOutput("gtceu:thorium_dust", 3333, 0)
         .chancedOutput("3x gtceu:uraninite_dust", 5000, 0)
         .chancedItemOutputLogic(ChanceLogic.XOR)
