@@ -42,7 +42,7 @@
 				stage: "doBoilers"
 				type: "gamestage"
 			}]
-			x: -7.5d
+			x: -6.25d
 			y: -1.75d
 		}
 		{
@@ -61,7 +61,7 @@
 				stage: "dontBoilers"
 				type: "gamestage"
 			}]
-			x: -7.5d
+			x: -6.25d
 			y: -0.5d
 		}
 		{
@@ -80,7 +80,7 @@
 				stage: "doCompacting"
 				type: "gamestage"
 			}]
-			x: -6.25d
+			x: -5.0d
 			y: -1.75d
 		}
 		{
@@ -99,7 +99,7 @@
 				stage: "dontCompacting"
 				type: "gamestage"
 			}]
-			x: -6.25d
+			x: -5.0d
 			y: -0.5d
 		}
 		{
@@ -118,7 +118,7 @@
 				stage: "doConverters"
 				type: "gamestage"
 			}]
-			x: -5.0d
+			x: -3.75d
 			y: -1.75d
 		}
 		{
@@ -137,7 +137,7 @@
 				stage: "dontConverters"
 				type: "gamestage"
 			}]
-			x: -5.0d
+			x: -3.75d
 			y: -0.5d
 		}
 		{
@@ -156,7 +156,7 @@
 				stage: "doStoneline"
 				type: "gamestage"
 			}]
-			x: -3.75d
+			x: -2.5d
 			y: -1.75d
 		}
 		{
@@ -175,7 +175,7 @@
 				stage: "dontStoneline"
 				type: "gamestage"
 			}]
-			x: -3.75d
+			x: -2.5d
 			y: -0.5d
 		}
 		{
@@ -194,7 +194,7 @@
 				stage: "doHarderProcessing"
 				type: "gamestage"
 			}]
-			x: -2.5d
+			x: -1.25d
 			y: -1.75d
 		}
 		{
@@ -213,7 +213,7 @@
 				stage: "dontHarderProcessing"
 				type: "gamestage"
 			}]
-			x: -2.5d
+			x: -1.25d
 			y: -0.5d
 		}
 		{
@@ -232,7 +232,7 @@
 				stage: "doHNN"
 				type: "gamestage"
 			}]
-			x: 1.25d
+			x: 2.5d
 			y: -1.75d
 		}
 		{
@@ -251,7 +251,7 @@
 				stage: "dontHNN"
 				type: "gamestage"
 			}]
-			x: 1.25d
+			x: 2.5d
 			y: -0.5d
 		}
 		{
@@ -270,7 +270,7 @@
 				stage: "doMonicoins"
 				type: "gamestage"
 			}]
-			x: 3.75d
+			x: 5.0d
 			y: -1.75d
 		}
 		{
@@ -289,7 +289,7 @@
 				stage: "dontMonicoins"
 				type: "gamestage"
 			}]
-			x: 3.75d
+			x: 5.0d
 			y: -0.5d
 		}
 		{
@@ -308,7 +308,7 @@
 				stage: "doSnad"
 				type: "gamestage"
 			}]
-			x: 6.25d
+			x: 7.5d
 			y: -1.75d
 		}
 		{
@@ -327,7 +327,7 @@
 				stage: "dontSnad"
 				type: "gamestage"
 			}]
-			x: 6.25d
+			x: 7.5d
 			y: -0.5d
 		}
 		{
@@ -346,7 +346,7 @@
 				stage: "doSteamAge"
 				type: "gamestage"
 			}]
-			x: 7.5d
+			x: 8.75d
 			y: -1.75d
 		}
 		{
@@ -365,7 +365,7 @@
 				stage: "dontSteamAge"
 				type: "gamestage"
 			}]
-			x: 7.5d
+			x: 8.75d
 			y: -0.5d
 		}
 		{
@@ -384,7 +384,7 @@
 				stage: "doHardGlassRecipesWarning"
 				type: "gamestage"
 			}]
-			x: 0.0d
+			x: 1.25d
 			y: -1.75d
 		}
 		{
@@ -403,7 +403,7 @@
 				stage: "dontHardGlassRecipesWarning"
 				type: "gamestage"
 			}]
-			x: 0.0d
+			x: 1.25d
 			y: -0.5d
 		}
 		{
@@ -422,7 +422,7 @@
 				stage: "doHarderRecipes"
 				type: "gamestage"
 			}]
-			x: -1.25d
+			x: 0.0d
 			y: -1.75d
 		}
 		{
@@ -441,7 +441,7 @@
 				stage: "dontHarderRecipes"
 				type: "gamestage"
 			}]
-			x: -1.25d
+			x: 0.0d
 			y: -0.5d
 		}
 		{
@@ -460,7 +460,7 @@
 				stage: "doLaserIO"
 				type: "gamestage"
 			}]
-			x: 2.5d
+			x: 3.75d
 			y: -1.75d
 		}
 		{
@@ -479,7 +479,7 @@
 				stage: "dontLaserIO"
 				type: "gamestage"
 			}]
-			x: 2.5d
+			x: 3.75d
 			y: -0.5d
 		}
 		{
@@ -498,7 +498,7 @@
 				stage: "doStabMiners"
 				type: "gamestage"
 			}]
-			x: 5.0d
+			x: 6.25d
 			y: -1.75d
 		}
 		{
@@ -517,7 +517,7 @@
 				stage: "dontStabMiners"
 				type: "gamestage"
 			}]
-			x: 5.0d
+			x: 6.25d
 			y: -0.5d
 		}
 		{
@@ -556,6 +556,44 @@
 				type: "gamestage"
 			}]
 			x: -8.75d
+			y: -0.5d
+		}
+		{
+			id: "1BB4318E99CD28DD"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 40CF6D4612F7C050"
+				elevate_perms: true
+				id: "0597C1E333E7D68F"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "5F5B5542DBDFCFBF"
+				stage: "doHarderNaqFuel"
+				type: "gamestage"
+			}]
+			x: -7.5d
+			y: -1.75d
+		}
+		{
+			id: "40CF6D4612F7C050"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 1BB4318E99CD28DD"
+				elevate_perms: true
+				id: "62158368D3A52448"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "58DA84D63E1EE777"
+				stage: "dontHarderNaqFuel"
+				type: "gamestage"
+			}]
+			x: -7.5d
 			y: -0.5d
 		}
 	]

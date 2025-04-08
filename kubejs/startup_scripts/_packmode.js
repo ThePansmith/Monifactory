@@ -107,13 +107,14 @@ global.doHarderNaqFuel = packMode == "Hard" || packMode == "Expert";
 global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";
 global.doHarderRecipes = packMode == "Hard" || packMode == "Expert";
+global.doHardGlassRecipesWarning == packMode == "Expert";
 global.doHatchRevert = packMode == "Normal" || packMode == "Hard";
 global.doHNN = packMode == "Normal";
 global.doLaserIO = packMode == "Normal" || packMode == "Hard";
 global.doMeowniPlush = packMode == "Hard" || packMode == "Expert";
 global.doMonicoins = packMode == "Normal";
 global.doSnad = packMode == "Normal" || packMode == "Hard";
-global.doStabMiners = packMode == "Hard" || packMode == "Expert";
+global.doStabMiners = packMode == "Normal" || packMode == "Hard" || packMode == "Expert";
 global.doSteamAge = packMode == "Hard" || packMode == "Expert";
 global.doStoneline = packMode == "Hard" || packMode == "Expert";
 
