@@ -2,7 +2,7 @@
  * Naquadah fuel processing line
  */
 ServerEvents.recipes(event => {
-
+    if (doHarderNaqFuel) {
     // Liquid Fuel recipes
 
     // Piranha Solution
@@ -197,7 +197,7 @@ ServerEvents.recipes(event => {
         .chancedFluidOutput("gtceu:hyperdegenerate_matter 100", 3300, 0)
         .duration(1200)
         .EUt(1966080)
-
+    }
     // Solid Fuel Recipes
     event.recipes.gtceu.assembler("fuel_rod")
         .itemInputs("gtceu:fluid_cell", "2x gtceu:rhodium_plated_palladium_ring", "2x gtceu:neutron_reflector", "2x gtceu:rhodium_plated_palladium_plate")
