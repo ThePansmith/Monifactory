@@ -3065,6 +3065,7 @@
 			]
 			hide_until_deps_visible: true
 			id: "6DBD1492197AC92D"
+			optional: true
 			subtitle: "{moni.quest.47A81FADD828772D.subtitle}"
 			tasks: [{
 				id: "41777324B5E2118C"

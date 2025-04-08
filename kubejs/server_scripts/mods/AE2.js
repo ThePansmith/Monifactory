@@ -247,6 +247,14 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(480)
 
+    // Fix Regular Certus Grinding Recipe giving Charged Certus Dust sometimes due to using forge tags
+    event.remove({ id: "gtceu:macerator/macerate_certus_quartz_gem" })
+    event.recipes.gtceu.macerator("macerate_certus_quartz_gem")
+        .itemInputs(["gtceu:certus_quartz_gem"])
+        .itemOutputs("gtceu:certus_quartz_dust")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.ULV])
+
     // Matter Condenser
     event.remove({ id: "ae2:network/blocks/io_condenser" })
     event.shaped(Item.of("ae2:condenser"), [
