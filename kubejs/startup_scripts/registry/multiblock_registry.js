@@ -216,29 +216,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 "gtceu:block/multiblock/fusion_reactor", false)
     }
 
-
-    // Actualization Chamber
-    if (doStabMiners) {
-        event.create("actualization_chamber", "multiblock")
-            .rotationState(RotationState.NON_Y_AXIS)
-            .recipeTypes("actualization_chamber")
-            .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
-            .appearanceBlock(GTBlocks.FUSION_CASING)
-            .pattern(definition => FactoryBlockPattern.start()
-                .aisle("XXX", "GGG", "XXX")
-                .aisle("XXX", "GOG", "XXX")
-                .aisle("X@X", "GGG", "XXX")
-                .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-                .where("X", Predicates.blocks(GTBlocks.FUSION_CASING.get()).setMinGlobalLimited(9)
-                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
-                .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-                .where("O", Predicates.blocks(GTBlocks.FUSION_COIL.get()))
-                .build())
-            .workableCasingRenderer("gtceu:block/casings/fusion/fusion_casing",
-                "gtceu:block/multiblock/implosion_compressor", false)
-    }
-
     // Universal Crystallizer
     event.create("universal_crystallizer", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
@@ -724,7 +701,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/generator/large_steam_turbine", false)
 
     // Naquadah Fuel Refinery
-    if (doHarderNaqfuel) {
+    if (doHarderNaqFuel) {
     event.create("naquadah_refinery", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("naquadah_refinery")
