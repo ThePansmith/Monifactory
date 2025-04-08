@@ -2562,7 +2562,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["2D47BFA44BDB5E6A"]
+			dependencies: [
+				"2D47BFA44BDB5E6A"
+				"2E7B8891E639D06B"
+			]
 			description: [
 				"{moni.quest.0C9E7E4644084C94.description1}"
 				"{moni.quest.0C9E7E4644084C94.description2}"

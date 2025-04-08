@@ -160,26 +160,11 @@
 			dependencies: ["069773756716E192"]
 			description: ["{moni.quest.3FFC053E3E11D586.description1}"]
 			id: "3FFC053E3E11D586"
-			rewards: [
-				{
-					id: "51F748D4099BAC22"
-					item: "kubejs:moni_quarter"
-					type: "item"
-				}
-				{
-					id: "3FF03AD6F80784C3"
-					item: {
-						Count: 1
-						id: "trofers:large_pillar"
-						tag: {
-							BlockEntityTag: {
-								Trophy: "monifactory:darmstadtium"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "51F748D4099BAC22"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [{
 				id: "33B59563EFF662EE"
 				item: "gtceu:darmstadtium_ingot"

@@ -13,7 +13,6 @@ const doConverters = !!global.doConverters;
 
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
-const doHalfMMs = !!global.doHalfMMs;
 const doHarderRecipes = !!global.doHarderRecipes;
 const doHarderNaqFuel = !!global.doHarderNaqFuel;
 const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
@@ -23,7 +22,6 @@ const doLaserIO = !!global.doLaserIO;
 const doMeowniPlush = !!global.doMeowniPlush;
 const doMonicoins = !!global.doMonicoins;
 const doSnad = !!global.doSnad;
-const doStabMiners = !!global.doStabMiners;
 const doSteamAge = !!global.doSteamAge;
 const doStoneline = !!global.doStoneline;
 
@@ -40,7 +38,6 @@ PlayerEvents.loggedIn(event => {
         "LaserIO",
         "Monicoins",
         "Snad",
-        "StabMiners",
         "SteamAge",
         "HarderNaqFuel",
         "Stoneline",
