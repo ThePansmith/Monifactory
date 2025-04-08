@@ -308,7 +308,7 @@
 				stage: "doSnad"
 				type: "gamestage"
 			}]
-			x: 7.5d
+			x: 6.25d
 			y: -1.75d
 		}
 		{
@@ -327,7 +327,7 @@
 				stage: "dontSnad"
 				type: "gamestage"
 			}]
-			x: 7.5d
+			x: 6.25d
 			y: -0.5d
 		}
 		{
@@ -346,7 +346,7 @@
 				stage: "doSteamAge"
 				type: "gamestage"
 			}]
-			x: 8.75d
+			x: 7.5d
 			y: -1.75d
 		}
 		{
@@ -365,7 +365,7 @@
 				stage: "dontSteamAge"
 				type: "gamestage"
 			}]
-			x: 8.75d
+			x: 7.5d
 			y: -0.5d
 		}
 		{
@@ -480,82 +480,6 @@
 				type: "gamestage"
 			}]
 			x: 3.75d
-			y: -0.5d
-		}
-		{
-			id: "3301CF03C157930D"
-			invisible: true
-			rewards: [{
-				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 749CE6AF5AC7A04E"
-				elevate_perms: true
-				id: "4D1BD0C1B8373259"
-				silent: true
-				type: "command"
-			}]
-			tasks: [{
-				id: "5102F052E72E0055"
-				stage: "doStabMiners"
-				type: "gamestage"
-			}]
-			x: 6.25d
-			y: -1.75d
-		}
-		{
-			id: "749CE6AF5AC7A04E"
-			invisible: true
-			rewards: [{
-				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 3301CF03C157930D"
-				elevate_perms: true
-				id: "26FC7EF3A0DB0D01"
-				silent: true
-				type: "command"
-			}]
-			tasks: [{
-				id: "55D56F57E77DB208"
-				stage: "dontStabMiners"
-				type: "gamestage"
-			}]
-			x: 6.25d
-			y: -0.5d
-		}
-		{
-			id: "2E7B8891E639D06B"
-			invisible: true
-			rewards: [{
-				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 59A35B57923E2FCC"
-				elevate_perms: true
-				id: "6CBEC0784BDC1A34"
-				silent: true
-				type: "command"
-			}]
-			tasks: [{
-				id: "06B602BBA20645E3"
-				stage: "doHalfMMs"
-				type: "gamestage"
-			}]
-			x: -8.75d
-			y: -1.75d
-		}
-		{
-			id: "59A35B57923E2FCC"
-			invisible: true
-			rewards: [{
-				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 2E7B8891E639D06B"
-				elevate_perms: true
-				id: "627051E7EF12274F"
-				silent: true
-				type: "command"
-			}]
-			tasks: [{
-				id: "5CDF0A2CF705824A"
-				stage: "dontHalfMMs"
-				type: "gamestage"
-			}]
-			x: -8.75d
 			y: -0.5d
 		}
 		{
