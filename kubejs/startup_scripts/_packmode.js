@@ -102,7 +102,6 @@ global.doBoilers = packMode == "Normal" || packMode == "Hard";
 global.doCompacting = packMode == "Normal" || packMode == "Hard";
 global.doConduits = packMode == "Normal" || packMode == "Hard";
 global.doConverters = packMode == "Normal" || packMode == "Hard";
-global.doHalfMMs = packMode == "Hard" || packMode == "Expert";
 global.doHarderNaqFuel = packMode == "Hard" || packMode == "Expert";
 global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";
@@ -126,7 +125,6 @@ const doConduits = !!global.doConduits;
 const doConverters = !!global.doConverters;
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
-const doHalfMMs = !!global.doHalfMMs
 const doHarderRecipes = !!global.doHarderRecipes;
 const doHarderNaqFuel = !!global.doHarderNaqFuel;
 const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
