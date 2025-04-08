@@ -428,13 +428,18 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["7A12743F5ECCED90"]
+			dependencies: [
+				"7A12743F5ECCED90"
+				"1C30B0E57E195FD7"
+			]
 			description: [
 				"{moni.quest.7460F22545A4EFB2.description1}"
 				""
 				"{moni.quest.7460F22545A4EFB2.description2}"
 			]
+			hide_until_deps_visible: true
 			id: "7460F22545A4EFB2"
+			optional: true
 			rewards: [{
 				id: "46EA0B4F09642C8E"
 				item: "kubejs:moni_nickel"
@@ -731,6 +736,7 @@
 			dependencies: [
 				"47094A5717952699"
 				"273F3F8DD6A3DCC5"
+				"134AD7825E3324B4"
 			]
 			description: [
 				"{moni.quest.63ADD9B48834AA39.description1}"
@@ -866,7 +872,10 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["29A487F0BC43AAF9"]
+			dependencies: [
+				"29A487F0BC43AAF9"
+				"64ABEB1EF9F81EA4"
+			]
 			description: ["{moni.quest.5301E546BAA69844.description1}"]
 			hide_until_deps_visible: true
 			id: "5301E546BAA69844"
@@ -987,7 +996,10 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["29A487F0BC43AAF9"]
+			dependencies: [
+				"29A487F0BC43AAF9"
+				"7423181A27FC773B"
+			]
 			description: [
 				"{moni.quest.545CCC24D9401794.description1}"
 				""
@@ -998,6 +1010,7 @@
 			hide_until_deps_visible: true
 			icon: "systeams:steam_dynamo"
 			id: "545CCC24D9401794"
+			optional: true
 			tasks: [
 				{
 					id: "12315AEA66B77CB2"
@@ -1128,7 +1141,10 @@
 			y: 0.75d
 		}
 		{
-			dependencies: ["30EBD4E7BBFFEF2C"]
+			dependencies: [
+				"30EBD4E7BBFFEF2C"
+				"5BE3E37772FAF6CB"
+			]
 			description: [
 				"{moni.quest.645B1DCB3DA7198A.description1}"
 				""
@@ -1176,7 +1192,10 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["545CCC24D9401794"]
+			dependencies: [
+				"545CCC24D9401794"
+				"64ABEB1EF9F81EA4"
+			]
 			description: [
 				"{moni.quest.41C2E49E70D76330.description1}"
 				""
@@ -2043,7 +2062,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["273F3F8DD6A3DCC5"]
+			dependencies: [
+				"273F3F8DD6A3DCC5"
+				"6E63E7FEC6EA7F63"
+			]
 			description: [
 				"{moni.quest.4F239316765C7CA1.description1}"
 				""
@@ -2172,7 +2194,10 @@
 			y: -1.75d
 		}
 		{
-			dependencies: ["3EDD0A986384F2A7"]
+			dependencies: [
+				"3EDD0A986384F2A7"
+				"50F8254A16DCBD35"
+			]
 			description: [
 				"{moni.quest.3E69E1949316BD0C.description1}"
 				""
@@ -2231,11 +2256,15 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["545CCC24D9401794"]
+			dependencies: [
+				"545CCC24D9401794"
+				"64ABEB1EF9F81EA4"
+			]
 			description: ["{moni.quest.5D60CAE3A33000C3.description1}"]
 			hide_until_deps_visible: true
 			icon: "steamadditions:steam_foundry"
 			id: "5D60CAE3A33000C3"
+			optional: true
 			rewards: [{
 				id: "0543D4882AD0F771"
 				item: "kubejs:moni_quarter"
@@ -2579,7 +2608,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5B0200011DF8E1B6"]
+			dependencies: [
+				"5B0200011DF8E1B6"
+				"261D2F3B1F2162D0"
+			]
 			description: ["{moni.quest.7A7907EE1F3FCFBF.description1}"]
 			hide_until_deps_visible: true
 			id: "7A7907EE1F3FCFBF"
@@ -2593,7 +2625,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["5B0200011DF8E1B6"]
+			dependencies: [
+				"5B0200011DF8E1B6"
+				"68897FC5F720BB4F"
+			]
 			description: ["{moni.quest.0B5613CC79261800.description1}"]
 			hide_until_deps_visible: true
 			id: "0B5613CC79261800"

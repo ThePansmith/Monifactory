@@ -107,6 +107,7 @@ global.doHarderNaqFuel = packMode == "Hard" || packMode == "Expert";
 global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";
 global.doHarderRecipes = packMode == "Hard" || packMode == "Expert";
+global.doHardGlassRecipesWarning == packMode == "Expert";
 global.doHatchRevert = packMode == "Normal" || packMode == "Hard";
 global.doHNN = packMode == "Normal";
 global.doLaserIO = packMode == "Normal" || packMode == "Hard";

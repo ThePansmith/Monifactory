@@ -166,7 +166,7 @@
 	]
 	quests: [
 		{
-			dependencies: ["2D9A95AC50BCB988"]
+			dependencies: ["0F251AF2286FCE0D"]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.45B17E923E03264B.description1}"]
 			id: "45B17E923E03264B"
@@ -196,7 +196,10 @@
 			y: -18.0d
 		}
 		{
-			dependencies: ["0F251AF2286FCE0D"]
+			dependencies: [
+				"0F251AF2286FCE0D"
+				"3301CF03C157930D"
+			]
 			description: ["{moni.quest.2D9A95AC50BCB988.description1}"]
 			hide_until_deps_visible: true
 			id: "2D9A95AC50BCB988"
@@ -1101,9 +1104,7 @@
 				""
 				"{moni.quest.4E4F03C44623A85D.description2}"
 			]
-			hide_until_deps_visible: true
 			id: "4E4F03C44623A85D"
-			optional: true
 			size: 1.5d
 			tasks: [{
 				id: "4304A44E787027B6"
@@ -1134,7 +1135,10 @@
 			y: -8.75d
 		}
 		{
-			dependencies: ["21E10888F52A3C73"]
+			dependencies: [
+				"21E10888F52A3C73"
+				"1BB4318E99CD28DD"
+			]
 			description: ["{moni.quest.4E9530E62A4B673B.description1}"]
 			hide_until_deps_visible: true
 			id: "4E9530E62A4B673B"
