@@ -19,6 +19,5 @@ const doLaserIO = !!global.doLaserIO;
 const doMeowniPlush = !!global.doMeowniPlush;
 const doMonicoins = !!global.doMonicoins;
 const doSnad = !!global.doSnad;
-const doStabMiners = !!global.doStabMiners;
 const doSteamAge = !!global.doSteamAge;
 const doStoneline = !!global.doStoneline;

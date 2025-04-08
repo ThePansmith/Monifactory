@@ -112,7 +112,6 @@ global.doLaserIO = packMode == "Normal" || packMode == "Hard";
 global.doMeowniPlush = packMode == "Hard" || packMode == "Expert";
 global.doMonicoins = packMode == "Normal";
 global.doSnad = packMode == "Normal" || packMode == "Hard";
-global.doStabMiners = packMode == "Hard" || packMode == "Expert";
 global.doSteamAge = packMode == "Hard" || packMode == "Expert";
 global.doStoneline = packMode == "Hard" || packMode == "Expert";
 
@@ -134,6 +133,5 @@ const doLaserIO = !!global.doLaserIO;
 const doMeowniPlush = !!global.doMeowniPlush;
 const doMonicoins = !!global.doMonicoins;
 const doSnad = !!global.doSnad;
-const doStabMiners = !!global.doStabMiners;
 const doSteamAge = !!global.doSteamAge;
 const doStoneline = !!global.doStoneline;
