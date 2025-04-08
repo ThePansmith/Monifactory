@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
 
     // T5MM missions
     microverse_mission(event, 5, 2).forEach(builder => {
-        if(doHarderRecipes) {
+        if(!doHarderRecipes) {
             builder
                 .itemInputs("8x kubejs:quantum_flux")
                 .itemInputs("16x kubejs:stabilized_plutonium")
