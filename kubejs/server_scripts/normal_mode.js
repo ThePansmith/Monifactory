@@ -3,7 +3,7 @@
 ServerEvents.recipes(event => {
     const carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
     const gtMachines = ["extractor", "macerator", "compressor", "forge_hammer", "furnace", "alloy_smelter"]
-    if (isNormalMode) {
+    if (!doSteamAge) {
         // Moni Steel
         event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
         event.remove({ type: "gtceu:primitive_blast_furnace", output: "gtceu:steel_ingot" })
@@ -30,28 +30,6 @@ ServerEvents.recipes(event => {
         // Wrought iron per ingot
         event.remove({ type: "minecraft:smelting", output: "gtceu:wrought_iron_nugget" })
         event.smelting("gtceu:wrought_iron_ingot", "minecraft:iron_ingot")
-
-        // Make clay electrolysis an LV recipe
-        event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_clay" })
-        event.recipes.gtceu.electrolyzer("clay_electrolysis_lv")
-            .itemInputs("13x gtceu:clay_dust")
-            .itemOutputs("2x gtceu:sodium_dust", "2x gtceu:silicon_dust", "gtceu:lithium_dust", "2x gtceu:aluminium_dust")
-            .outputFluids("minecraft:water 6000")
-            .duration(364)
-            .EUt(15)
-
-        // Alternative LV piston recipe
-        event.shaped("gtceu:lv_electric_piston", [
-            "PPP",
-            "CRR",
-            "CMG"
-        ], {
-            P: "gtceu:wrought_iron_plate",
-            C: "gtceu:tin_single_cable",
-            R: "gtceu:wrought_iron_rod",
-            M: "gtceu:lv_electric_motor",
-            G: "gtceu:wrought_iron_gear"
-        })
 
         // Normal Mode recipes for Steam multis
         event.remove({ output: "gtceu:steam_oven" })
@@ -105,7 +83,7 @@ ServerEvents.recipes(event => {
             .duration(20)
             .EUt(8)
 
-        // Monify LV motors
+        // Alternative LV motor recipe
         event.remove({ id: "gtceu:shaped/electric_motor_lv_steel" })
         event.remove({ id: "gtceu:shaped/electric_motor_lv_iron" })
         event.remove({ id: "gtceu:assembler/electric_motor_lv_steel" })
@@ -128,6 +106,19 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(30)
 
+        // Alternative LV piston recipe
+        event.shaped("gtceu:lv_electric_piston", [
+            "PPP",
+            "CRR",
+            "CMG"
+        ], {
+            P: "gtceu:wrought_iron_plate",
+            C: "gtceu:tin_single_cable",
+            R: "gtceu:wrought_iron_rod",
+            M: "gtceu:lv_electric_motor",
+            G: "gtceu:wrought_iron_gear"
+        })
+
         // Glass tube
         event.shaped("gtceu:glass_tube", [
             "   ",
@@ -137,33 +128,9 @@ ServerEvents.recipes(event => {
             P: "#forge:glass_panes"
         }).id("kubejs:glass_tube")
 
-        // Monified distill tower
-        event.shaped("gtceu:distillation_tower", [
-            "LPL",
-            "CHC",
-            "LPL"
-        ], {
-            L: "gtceu:stainless_steel_large_fluid_pipe",
-            P: "gtceu:hv_electric_pump",
-            C: "#gtceu:circuits/hv",
-            H: "gtceu:hv_machine_hull"
-        }).id("gtceu:shaped/distillation_tower")
-
         // GT Steam Age
         gtMachines.forEach(machine => {
             event.remove({ output: [`gtceu:lp_steam_${machine}`, `gtceu:hp_steam_${machine}`] })
-        })
-
-        event.shaped("thermal:dynamo_numismatic", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:vibrant_alloy_plate",
-            C: "ironfurnaces:diamond_furnace",
-            D: "enderio:vibrant_gear",
-            E: "kubejs:redstone_transmission_coil"
         })
 
         event.remove({ output: "gtceu:lv_item_magnet" })
@@ -176,5 +143,52 @@ ServerEvents.recipes(event => {
             R: "gtceu:magnetic_iron_rod",
             P: "gtceu:iron_plate"
         })
+    }
+
+    if(doHarderRecipes) {
+        event.shaped("thermal:dynamo_numismatic", [
+            " A ",
+            "BCB",
+            "DED"
+        ], {
+            A: "kubejs:excitationcoil",
+            B: "gtceu:zeron_100_plate",
+            C: "ironfurnaces:diamond_furnace",
+            D: "enderio:vibrant_gear",
+            E: "kubejs:redstone_transmission_coil"
+        })
+    } else {
+        event.shaped("thermal:dynamo_numismatic", [
+            " A ",
+            "BCB",
+            "DED"
+        ], {
+            A: "kubejs:excitationcoil",
+            B: "gtceu:vibrant_alloy_plate",
+            C: "ironfurnaces:diamond_furnace",
+            D: "enderio:vibrant_gear",
+            E: "kubejs:redstone_transmission_coil"
+        })
+
+        // Make clay electrolysis an LV recipe
+        event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_clay" })
+        event.recipes.gtceu.electrolyzer("clay_electrolysis_lv")
+            .itemInputs("13x gtceu:clay_dust")
+            .itemOutputs("2x gtceu:sodium_dust", "2x gtceu:silicon_dust", "gtceu:lithium_dust", "2x gtceu:aluminium_dust")
+            .outputFluids("minecraft:water 6000")
+            .duration(364)
+            .EUt(15)
+
+        // Monified distill tower
+        event.shaped("gtceu:distillation_tower", [
+            "LPL",
+            "CHC",
+            "LPL"
+        ], {
+            L: "gtceu:stainless_steel_large_fluid_pipe",
+            P: "gtceu:hv_electric_pump",
+            C: "#gtceu:circuits/hv",
+            H: "gtceu:hv_machine_hull"
+        }).id("gtceu:shaped/distillation_tower")
     }
 })

@@ -3,57 +3,38 @@
  */
 
 const ores = [
-    "redstone_ore",
-    "diamond_ore",
-    "emerald_ore",
-    "gold_ore",
-    "lapis_ore",
-    "iron_ore",
-    "coal_ore",
-    "nether_quartz_ore",
-    "copper_ore"
+    ["redstone", 4],
+    ["diamond", 4],
+    ["emerald", 4],
+    ["gold", 4],
+    ["lapis", 4],
+    ["iron", 4],
+    ["coal", 4],
+    ["nether_quartz", 2],
+    ["copper", 4]
 ]
 
 ServerEvents.recipes(event => {
-    function unDensify(name) {
+    ores.forEach(([name, amount]) => {
         event.recipes.gtceu.chemical_reactor(`kubejs:undensify_${name}`)
-            .itemInputs(`kubejs:dense_${name}`)
-            .itemOutputs(`16x gtceu:${name}`)
+            .itemInputs(`${amount}x kubejs:dense_${name}_ore`)
+            .itemOutputs(ChemicalHelper.get("raw", name, 64))
             .inputFluids(Fluid.of("gtceu:nitric_acid", 1000))
             .duration(200)
             .EUt(500)
-    }
-
-    ores.forEach(ore => {
-        unDensify(ore);
     })
 
     event.recipes.gtceu.chemical_reactor("kubejs:undensify_oilsands")
-        .itemInputs("kubejs:dense_oilsands_ore")
-        .itemOutputs("16x gtceu:endstone_oilsands_ore")
+        .itemInputs("4x kubejs:dense_oilsands_ore")
+        .itemOutputs("64x gtceu:endstone_oilsands_ore")
         .inputFluids(Fluid.of("gtceu:nitric_acid", 1000))
         .duration(200)
         .EUt(500)
 
     event.recipes.gtceu.chemical_reactor("kubejs:undensify_magma")
-        .itemInputs("kubejs:dense_magma_block")
-        .itemOutputs("16x minecraft:magma_block")
+        .itemInputs("4x kubejs:dense_magma_block")
+        .itemOutputs("64x minecraft:magma_block")
         .inputFluids(Fluid.of("gtceu:nitric_acid", 1000))
         .duration(200)
         .EUt(500)
-})
-
-ServerEvents.tags("item", event => {
-    // dense ore mod is gone, so we tag it
-    ores.forEach(ore => {
-        event.add("forge:ores/dense", `forge:ores/dense/${ore}`, `kubejs:dense_${ore}`);
-        // event.add('forge:dense_ores', `kubejs:dense_${ore}`);
-    })
-})
-
-ServerEvents.tags("block", event => {
-    // might as well
-    ores.forEach(ore => {
-        event.add("forge:ores/dense", `forge:ores/dense/${ore}`, `kubejs:dense_${ore}`);
-    })
 })

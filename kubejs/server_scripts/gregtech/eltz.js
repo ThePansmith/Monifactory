@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x kubejs:inert_dust_mixture")
         .itemOutputs("1x kubejs:dusty_inert_powder", "2x kubejs:inert_clumps")
         .chancedOutput("gtceu:monazite_gem", 7000, 2000)
-        .chancedOutput("kubejs:impure_ancient_debris_dust", 1500, 600)
+        .chancedOutput("gtceu:impure_netherite_scrap_dust", 1500, 600)
         .chancedOutput("extendedcrafting:crystaltine_nugget", 900, 900)
         .duration(640)
         .EUt(GTValues.VA[GTValues.IV])

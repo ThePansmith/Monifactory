@@ -20,8 +20,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.forming_press("sculk-saturated_microstructure_pulp_press")
         .itemInputs("2x kubejs:sculk-compatible_trellis_microstructure", "1x kubejs:fibrinogenic_sculk_goo")
         .itemOutputs("2x kubejs:sculk-saturated_microstructure_pulp")
-        .duration(51200)
-        .EUt(GTValues.VHA[GTValues.LV])
+        .duration(150)
+        .EUt(GTValues.VHA[GTValues.LuV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.large_chemical_reactor("kubejs:animated_bioalloy_pulp_reacting")

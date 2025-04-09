@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
             .duration(15.05 * 20) // same for all recipes
             .EUt(EUt)
     }
-    if (isNormalMode) {
+    if (doHNN) {
         // //// Machine Recipe //////
 
         event.recipes.gtceu.assembly_line("simulation_supercomputer")
@@ -40,9 +40,9 @@ ServerEvents.recipes(event => {
         supercomp("guardian", "overworld", 256)
         supercomp("spider", "overworld", 16)
         supercomp("ghast", "nether", 256)
-        supercomp("wither", "end", 1666)
+        supercomp("wither", "nether", 1666)
         supercomp("creeper", "overworld", 16)
         supercomp("enderman", "end", 512)
-        supercomp("warden", "end", 1666)
+        supercomp("warden", "overworld", 1666)
     }
 })

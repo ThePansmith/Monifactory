@@ -148,26 +148,26 @@ StartupEvents.registry("block", event => {
 
     // Dense Ores
     const ores = [
-        "redstone_ore",
-        "diamond_ore",
-        "emerald_ore",
-        "gold_ore",
-        "lapis_ore",
-        "iron_ore",
-        "coal_ore",
-        "copper_ore",
-        "nether_quartz_ore",
-        "oilsands_ore"
+        "redstone",
+        "diamond",
+        "emerald",
+        "gold",
+        "lapis",
+        "iron",
+        "coal",
+        "copper",
+        "nether_quartz",
+        "oilsands"
     ]
 
     ores.forEach(ore => {
-        event.create(`dense_${ore}`)
+        event.create(`dense_${ore}_ore`)
             .soundType("stone")
             .resistance(6)
             .hardness(5)
             .tagBlock("mineable/pickaxe")
-            .tagBlock("forge:ores/dense")
-            .tagBlock(`forge:ores/dense_${ore}`)
+            .tagBoth("forge:ores/dense")
+            .tagBoth(`forge:ores/dense/${ore}`)
             .requiresTool(true);
     });
 
@@ -176,8 +176,8 @@ StartupEvents.registry("block", event => {
         .resistance(6)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
-        .tagBlock("forge:ores/dense")
-        .tagBlock("forge:ores/dense_magma")
+        .tagBoth("forge:ores/dense")
+        .tagBoth("forge:ores/dense/magma")
         .requiresTool(true)
         .lightLevel(1.0);
 
