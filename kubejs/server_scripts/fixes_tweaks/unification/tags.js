@@ -43,6 +43,7 @@ ServerEvents.tags("item", event => {
     event.removeAllTagsFrom("ae2:charged_certus_quartz_crystal")
     event.removeAllTagsFrom("ae2:fluix_crystal")
     event.removeAllTagsFrom("ae2:fluix_dust")
+    event.removeAllTagsFrom("expatternprovider:silicon_block")
     event.remove("forge:ingots/aluminum", "nuclearcraft:aluminum_ingot")
     event.add("forge:ingots/aluminium", "nuclearcraft:aluminum_ingot")
 

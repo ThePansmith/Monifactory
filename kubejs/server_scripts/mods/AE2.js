@@ -1025,6 +1025,7 @@ ServerEvents.recipes(event => {
 
     // ExtendedAE Silicon Block
     event.remove({id:"expatternprovider:silicon_block"})
+    event.remove({id:"expatternprovider:silicon_block_disassembler"})
 
     // Circuit cutter
     event.remove({ id: "expatternprovider:circuit_cutter" })
