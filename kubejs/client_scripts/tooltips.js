@@ -141,7 +141,7 @@ ItemEvents.tooltip(tooltip => {
 
     parallelMultis.forEach(multi => {
         tooltip.addAdvanced(`gtceu:${multi}`, (item, adv, text) => {
-            text.add(2, Text.translatable(`gtceu.multiblock.${multi}.description`))
+            text.add(1, Text.translatable(`gtceu.multiblock.${multi}.description`))
         })
     })
 
@@ -189,9 +189,6 @@ ItemEvents.tooltip(tooltip => {
 
     // EIO Cap Banks
     tooltip.add(/^enderio:.*_bank$/, Text.red(Text.translatable("enderio.cap_bank.tooltip")));
-
-    // Exoskeleton Legs
-    tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.red("DEPRECATED: Use crafting table to convert into new exoskeleton legs").bold(true))
 
     // Misc
     tooltip.add("kubejs:eternal_catalyst", Text.darkGray(Text.translatable("kubejs.eternal_catalyst.tooltip")));
