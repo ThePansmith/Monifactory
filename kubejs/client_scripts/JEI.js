@@ -59,6 +59,10 @@ JEIEvents.hideItems(event => {
     event.hide(["thermal:drill_head", "thermal:saw_blade"])
     event.hide(["thermal:sawdust", "thermal:sawdust_block"])
 
+    if (disableFluxbore) {
+        event.hide("thermal:flux_drill")
+    }
+
     // Systeams
     event.hide(["systeams:numismatic_boiler", "systeams:magmatic_boiler", "systeams:compression_boiler", "systeams:gourmand_boiler", "systeams:lapidary_boiler", "systeams:disenchantment_boiler"])
     event.hide(["systeams:steamier_bucket", "systeams:steamiest_bucket", "systeams:steamiester_bucket", "systeams:steamiestest_ball"])
