@@ -23,7 +23,7 @@ JEIEvents.hideItems(event => {
     }
 
     // fluxbore
-    if (disableFluxbore) {
+    if (!doFluxbore) {
         event.hide("thermal:flux_drill")
     }
 

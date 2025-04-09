@@ -700,7 +700,7 @@ ServerEvents.recipes(event => {
 
     // Fluxbore
     event.remove([{ id: "thermal:drill_head" }, { id: "thermal:flux_drill" }])
-    if (!disableFluxbore) {
+    if (doFluxbore) {
         if (doHarderFluxBore) {
             event.shaped("thermal:flux_drill", [
                 " A ",
