@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
         E: "enderio:cake_base",
         F: "gtceu:aluminium_plate"
     })
-    if (isNormalMode) {
+    if (doHNN) {
         event.shaped("telepastries:nether_cake", [
             "NNN",
             "OBO",
@@ -73,8 +73,7 @@ ServerEvents.recipes(event => {
             B: "enderio:cake_base",
             S: "gtceu:black_steel_plate"
         })
-    }
-    if (isHardMode) {
+    } else {
         event.shaped("telepastries:nether_cake", [
             "NNN",
             "OBO",

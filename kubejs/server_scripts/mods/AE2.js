@@ -247,6 +247,14 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(480)
 
+    // Fix Regular Certus Grinding Recipe giving Charged Certus Dust sometimes due to using forge tags
+    event.remove({ id: "gtceu:macerator/macerate_certus_quartz_gem" })
+    event.recipes.gtceu.macerator("macerate_certus_quartz_gem")
+        .itemInputs(["gtceu:certus_quartz_gem"])
+        .itemOutputs("gtceu:certus_quartz_dust")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.ULV])
+
     // Matter Condenser
     event.remove({ id: "ae2:network/blocks/io_condenser" })
     event.shaped(Item.of("ae2:condenser"), [
@@ -416,7 +424,7 @@ ServerEvents.recipes(event => {
         ["gtceu:", "neutronium_wafer"],
         ["kubejs:", "universe_wafer"]
     ]
-    if (isExpertMode) {
+    if (doHarderPrintedSilicon) {
         // Use only Greg wafers for printed silicon in EM
         wafers.forEach((wafer, index) => {
             event.custom({
@@ -842,7 +850,7 @@ ServerEvents.recipes(event => {
 
 
     // Greg circuits
-    if (isExpertMode) {
+    if (doHarderPrintedSilicon) {
         wafers.forEach((wafer, tier) => {
             event.recipes.gtceu.forming_press("ae2_printed_" + wafer[1] + "greg")
                 .notConsumable("ae2:silicon_press")
@@ -1015,6 +1023,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: "expatternprovider:epa_upgrade" })
     event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:logic_processor"]).id("kubejs:epp/epa_upgrade")
 
+    // ExtendedAE Silicon Block
+    event.remove({id:"expatternprovider:silicon_block"})
+
+    // Circuit cutter
+    event.remove({ id: "expatternprovider:circuit_cutter" })
+    event.remove({ id: /expatternprovider.*cutter/ })
 
     // ME packing tape
     event.shapeless("expatternprovider:me_packing_tape", ["gtceu:basic_tape", "gtceu:fluix_dust"]).id("expatternprovider:tape")
@@ -1034,6 +1048,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_wall")
         .itemInputs("expatternprovider:assembler_matrix_frame", "gtceu:hv_electric_motor")
         .itemOutputs("expatternprovider:assembler_matrix_wall")
+        .duration(100)
+        .EUt(1920)
+
+    // Assembler Matrix Glass
+    event.remove({ id: "expatternprovider:assembler_matrix_glass" })
+    event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_glass")
+        .itemInputs("expatternprovider:assembler_matrix_frame", "gtceu:hv_electric_motor", "ae2:quartz_glass")
+        .itemOutputs("expatternprovider:assembler_matrix_glass")
         .duration(100)
         .EUt(1920)
 

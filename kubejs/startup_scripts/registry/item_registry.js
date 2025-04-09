@@ -3,48 +3,50 @@
  * and certain other properties of custom items.
  */
 StartupEvents.registry("item", event => {
-
-    // Regular Microminers
-    for (let index = 1; index <= 12; index++) {
-        event.create(`microminer_t${index}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${index}`)
-    }
-
-
-    // HM/EM Microminers
-    if (!isNormalMode) {
-        event.create("microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
-        event.create("microminer_t8half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
-    }
-
-
-    // Pristine Matters
-    const pristine_matter = [
-        ["1", "#c0c0b0"],
-        ["2", "#f5f5f1"],
-        ["3", "#736055"],
-        ["4", "#f17d3d"],
-        ["4half", "#eef487"],
-        ["5", "#fccc6a"],
-        ["6", "#58a14e"],
-        ["7", "#173639"],
-        ["8", "#dcdbe4"],
-        ["8half", "#4ebcef"]
+    const miners = [
+        "1",
+        "2",
+        "2half",
+        "2half_damaged",
+        "3",
+        "4",
+        "4half",
+        "4half_damaged",
+        "5",
+        "6",
+        "6_damaged",
+        "7",
+        "7_damaged",
+        "8",
+        "8_damaged",
+        "8half",
+        "9",
+        "10",
+        "11",
+        "12"
     ]
 
-    if (!isNormalMode) {
-        for (const [tier, color] of pristine_matter) {
-            event.create(`stabilized_microminer_t${tier}`)
-                .maxStackSize(16)
-                .texture(`kubejs:item/microverse/microminer_t${tier}`)
-                .glow(true);
-            event.create(`pristine_matter_t${tier}`)
-                .textureJson({ layer0: "kubejs:item/prediction" })
-                .color(0, color)
-                .glow(true);
+    const stabilized_miners = [
+        "2half",
+        "4half",
+        "6",
+        "7",
+        "8",
+    ]
 
-        }
+
+    // Regular Microminers
+    for (const tier of miners) {
+        event.create(`microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}`)
     }
 
+    // Stabilized Miners
+    for (const tier of stabilized_miners) {
+        event.create(`stabilized_microminer_t${tier}`)
+            .maxStackSize(16)
+            .texture(`kubejs:item/microverse/microminer_t${tier}`)
+            .glow(true);
+    }
 
     // Microminer Components
     event.create("basic_mining_laser").displayName("§eBasic Mining Laser")
@@ -52,13 +54,25 @@ StartupEvents.registry("item", event => {
     event.create("supercharged_laser_array").displayName("§eSupercharged Laser Array")
     event.create("basic_micro_miner_guidance_system").displayName("§eBasic Micro Miner Guidance System")
     event.create("advanced_micro_miner_guidance_system").displayName("§eAdvanced Micro Miner Guidance System")
-    event.create("gem_sensor").displayName("Gemstone Sensor")
     event.create("warp_engine").displayName("§dWarp Engine")
     event.create("hadal_warp_engine").displayName("§dHadal Warp Engine")
     event.create("universal_navigator").displayName("§dUniversal Navigator")
     event.create("extradimensional_navigator").displayName("§dExtradimensional Navigator")
+
+    // Quantum Flux
     event.create("quantum_flux").displayName("§dQuantum Flux")
 
+    // Miner kits
+    event.create("gem_sensor").maxStackSize(16).displayName("Gemstone Sensor")
+    event.create("basic_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/basic_drilling_kit")
+    event.create("advanced_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit")
+    event.create("elite_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/elite_drilling_kit")
+    event.create("blasting_kit").maxStackSize(16).texture("kubejs:item/miner_kits/blasting_kit")
+    event.create("microversal_alchemy_kit").maxStackSize(16).texture("kubejs:item/miner_kits/microversal_alchemy_kit")
+
+    // T9+ Devices
+    event.create("gravitational_amplifier").maxStackSize(16)
+    event.create("universal_collapse_device").maxStackSize(16)
 
     // Heavy platings
     event.create("quantum_fluxed_eternium_heavy_plating")
@@ -82,7 +96,7 @@ StartupEvents.registry("item", event => {
 
 
     // Monicoins
-    if (isNormalMode) {
+    if (doMonicoins) {
         event.create("moni_penny")
     }
     event.create("moni_nickel")
@@ -102,7 +116,7 @@ StartupEvents.registry("item", event => {
 
 
     // Magnetron
-    if (!isNormalMode) {
+    if (doHarderProcessing) {
         event.create("magnetron")
     }
 
@@ -131,16 +145,12 @@ StartupEvents.registry("item", event => {
 
 
     // Creative Data
-    event.create("creative_tank_data")
+    event.create("omnic_data")
     event.create("creative_storage_data")
     event.create("creative_computation_data")
     event.create("creative_energy_data")
-    if (!isNormalMode) event.create("omnic_data")
 
     // Infinity Fluid Cell Base
-    if(isNormalMode) {
-        event.create("infinity_cell_base").displayName("ME Infinity Cell Base")
-    }
 
 
     // Endgame Items
@@ -173,20 +183,6 @@ StartupEvents.registry("item", event => {
     event.create("contained_singularity")
 
 
-    // Ultimate Tools
-    event.create("ultimate_core").texture("kubejs:item/ultimate/core")
-    event.create("ultimate_file").texture("kubejs:item/ultimate/file")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_hammer").texture("kubejs:item/ultimate/hammer")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_screwdriver").texture("kubejs:item/ultimate/screwdriver")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_wrench").texture("kubejs:item/ultimate/wrench")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_wire_cutter").texture("kubejs:item/ultimate/wire_cutter")
-        .rarity("epic").maxStackSize(1)
-
-
     // Infinity Tools
     event.create("infinity_power_unit").rarity("epic").maxStackSize(1)
     event.create("infinity_file").rarity("epic").maxStackSize(1)
@@ -210,7 +206,6 @@ StartupEvents.registry("item", event => {
         ["oxygen", "#4494bc"],
         ["radon", "#bc38bc"],
         ["xenon", "#12bcbc"],
-        ["bromine", "#7c1c05"],
         ["experience", "#04ff00"]
     ]
 
@@ -221,10 +216,12 @@ StartupEvents.registry("item", event => {
     }
 
 
-    // Dense Hydrogen (Solidified Hydrogen is part of Solidified Elements section)
+    // Dense Elemental Gasses (Solidification recipes are part of the Solidified Elements Section)
     event.create("dense_hydrogen").rarity("Uncommon")
     event.create("ultra_dense_hydrogen").rarity("Rare")
 
+    event.create("dense_helium").rarity("Uncommon")
+    event.create("ultra_dense_helium").rarity("Rare")
 
     // Stabilized Elements
     const stabilized_elements = [
@@ -281,7 +278,7 @@ StartupEvents.registry("item", event => {
 
 
     // Ender Spore
-    if (!isNormalMode) {
+    if (!doHNN) {
         event.create("ender_spore")
     }
 

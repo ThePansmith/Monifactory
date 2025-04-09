@@ -2,16 +2,18 @@
 
 ServerEvents.recipes(event => {
 
-    // snad
-    if (isNormalMode) {
-        event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand"]).id("snad:snad")
-        event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand"]).id("snad:red_snad")
+    // Snad
+    if (doSnad) {
+        if(doHarderRecipes) {
+            event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand", "enderio:pulsating_crystal"]).id("snad:snad")
+            event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand", "enderio:pulsating_crystal"]).id("snad:red_snad")
+        } else {
+            event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand"]).id("snad:snad")
+            event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand"]).id("snad:red_snad")
 
-        // If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
-        event.replaceInput({ id: "enderio:vacuum_chest" }, "enderio:pulsating_crystal", "gtceu:tin_rotor")
-    } else if (!isExpertMode) {
-        event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand", "enderio:pulsating_crystal"]).id("snad:snad")
-        event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand", "enderio:pulsating_crystal"]).id("snad:red_snad")
+            // If Snad is obtainable pre-autoclave, so must be the Vacuum Chest.
+            event.replaceInput({ id: "enderio:vacuum_chest" }, "enderio:pulsating_crystal", "gtceu:tin_rotor")
+        }
     } else {
         event.remove({ id: "snad:snad" })
         event.remove({ id: "snad:red_snad" })
@@ -107,6 +109,34 @@ ServerEvents.recipes(event => {
         .duration(1000)
         .EUt(2000)
 
+    // Processing for Ender Spores
+    event.custom({
+        "type": "thermal:insolator",
+        "ingredient": {
+            "item": "kubejs:ender_spore"
+        },
+        "result": [
+            {
+                "item": "kubejs:ender_spore",
+                "chance": 2.0
+            }
+        ],
+        "energy_mod": 3.0
+    })
+
+    if (!doHNN) {
+        event.shapeless("kubejs:ender_spore", ["minecraft:chorus_flower", "minecraft:ender_pearl", "thermal:phytogro", "minecraft:experience_bottle"])
+        event.smelting("minecraft:ender_pearl", "kubejs:ender_spore")
+
+        event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
+            .circuit(2)
+            .notConsumable("kubejs:ender_spore")
+            .itemInputs("4x gtceu:fertilizer")
+            .inputFluids(Fluid.of("minecraft:water"))
+            .itemOutputs("8x kubejs:ender_spore")
+            .duration(640)
+            .EUt(120)
+    }
 
     // Change recipes for LV and MV macerators
     event.shaped("gtceu:lv_macerator", [
@@ -141,14 +171,11 @@ ServerEvents.recipes(event => {
     })
 
     // Data Stuff
-
-    if (isNormalMode) {
-        event.recipes.gtceu.extractor("tank_data")
-            .itemInputs("kubejs:heart_of_a_universe")
-            .itemOutputs("kubejs:creative_tank_data")
-            .duration(1000)
-            .EUt(180000)
-    }
+    event.recipes.gtceu.extractor("omnic_data")
+        .itemInputs("kubejs:heart_of_a_universe")
+        .itemOutputs("kubejs:omnic_data")
+        .duration(1000)
+        .EUt(180000)
 
     // Crystal Chip shit
     event.recipes.gtceu.autoclave("starter_enderium_chip")
@@ -466,9 +493,12 @@ ServerEvents.recipes(event => {
     // Avaritia Replacement recipes
     compacting(event, "gtceu:neutronium_ingot", "gtceu:neutronium_nugget")
 
-    // Dense Hydrogen conversion
+    // Dense Gasses conversion
     compacting(event, "kubejs:dense_hydrogen", "kubejs:solidified_hydrogen");
     compacting(event, "kubejs:ultra_dense_hydrogen", "kubejs:dense_hydrogen");
+
+    compacting(event, "kubejs:dense_helium", "kubejs:solidified_helium");
+    compacting(event, "kubejs:ultra_dense_helium", "kubejs:dense_helium");
 
     // Recipe from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
@@ -947,4 +977,54 @@ ServerEvents.recipes(event => {
         S: "#forge:slimeballs",
         C: "minecraft:chorus_fruit",
     })
+
+    // Let Oilsands have multiple types of oil
+    event.remove({id:"gtceu:centrifuge/oilsands_dust_separation"})
+    event.recipes.gtceu.centrifuge("oilsands_to_oil")
+        .itemInputs("gtceu:oilsands_dust")
+        .chancedOutput("minecraft:sand", 5000, 5000)
+        .outputFluids("gtceu:oil 1000")
+        .duration(200)
+        .EUt(30)
+        .circuit(3)
+
+    event.recipes.gtceu.centrifuge("oilsands_to_light_oil")
+        .itemInputs("gtceu:oilsands_dust")
+        .chancedOutput("minecraft:sand", 5000, 5000)
+        .outputFluids("gtceu:oil_light 500")
+        .duration(200)
+        .EUt(30)
+        .circuit(4)
+
+    event.recipes.gtceu.centrifuge("oilsands_to_heavy_oil")
+        .itemInputs("gtceu:oilsands_dust")
+        .chancedOutput("minecraft:sand", 5000, 5000)
+        .outputFluids("gtceu:oil_heavy 2000")
+        .duration(200)
+        .EUt(30)
+        .circuit(2)
+
+    event.recipes.gtceu.centrifuge("oilsands_to_raw_oil")
+        .itemInputs("gtceu:oilsands_dust")
+        .chancedOutput("minecraft:sand", 5000, 5000)
+        .outputFluids("gtceu:oil_medium 1000")
+        .duration(200)
+        .EUt(30)
+        .circuit(1)
+
+    // Fix ilmenite -> rutile stoich
+    event.remove({id:"gtceu:electric_blast_furnace/rutile_from_ilmenite"})
+
+    event.recipes.gtceu.electric_blast_furnace("rutile_from_ilmenite")
+        .itemInputs("10x gtceu:ilmenite_dust", "2x gtceu:carbon_dust")
+        .itemOutputs("2x gtceu:wrought_iron_ingot", "6x gtceu:rutile_dust")
+        .outputFluids("gtceu:carbon_dioxide 2000")
+        .duration(1600)
+        .blastFurnaceTemp(1700)
+        .EUt(480)
+
+    // 64A energy converters recipe fix
+    event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
+    event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:holmium_hex_wire")
+    event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
 })

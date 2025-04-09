@@ -18,7 +18,7 @@ JEIEvents.hideItems(event => {
 
     // snad
     event.hide("snad:soul_snad")
-    if (isExpertMode) {
+    if (!doSnad) {
         event.hide(["snad:snad", "snad:red_snad"])
     }
 
@@ -83,6 +83,9 @@ JEIEvents.addItems(event => {
 
     // NuclearCraft
     event.add(["nuclearcraft:tough_alloy_ingot", "nuclearcraft:hard_carbon_ingot", "nuclearcraft:ferroboron_ingot", "nuclearcraft:rhodochrosite_dust"])
+
+    // Thermal
+    event.add("thermal:nuke_tnt")
 })
 
 JEIEvents.hideFluids(event => {

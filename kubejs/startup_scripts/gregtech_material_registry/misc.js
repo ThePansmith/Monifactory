@@ -331,6 +331,19 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
         .components("6x trinium", "2x naquadah", "1x carbon")
         .blastTemp(8747, "higher", 131072, 1200)
+
+    event.create("rotten_meat")
+        .dust(1)
+        .color(0xe8543a).secondaryColor(0x684a09).iconSet(GTMaterialIconSet.SAND)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("saline_antisceptic")
+        .fluid()
+        .color(0x99dce5)
+
+    event.create("rotten_sludge")
+        .fluid()
+        .color(0x997700)
 })
 
 GTCEuStartupEvents.materialModification(event => {

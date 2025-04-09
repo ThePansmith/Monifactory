@@ -74,7 +74,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["57E7182198B2EA9A"]
+			dependencies: ["5BE3E37772FAF6CB"]
 			description: ["{moni.quest.50FB5E0B0E0B142F.description1}"]
 			id: "50FB5E0B0E0B142F"
 			tasks: [{
@@ -86,11 +86,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"57E7182198B2EA9A"
-				"2EC4EF1BEEA578F3"
-				"0B37518A984D386F"
-			]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.1881488CEB982FCD.description1}"
@@ -98,6 +93,7 @@
 				"{moni.quest.1881488CEB982FCD.description2}"
 			]
 			disable_toast: true
+			hide_until_deps_visible: true
 			id: "1881488CEB982FCD"
 			progression_mode: "flexible"
 			size: 2.0d
@@ -200,8 +196,8 @@
 		}
 		{
 			dependencies: [
-				"57E7182198B2EA9A"
 				"7A3F3FB2774A4632"
+				"261D2F3B1F2162D0"
 			]
 			description: ["{moni.quest.1D4B663AD87CA3C1.description1}"]
 			hide_until_deps_visible: true
@@ -451,7 +447,7 @@
 		{
 			dependencies: [
 				"3380CBA4E4010EEC"
-				"57E7182198B2EA9A"
+				"467BD25ED78C7EF8"
 			]
 			description: ["{moni.quest.33351123F08D92BE.description1}"]
 			hide_until_deps_visible: true
@@ -536,8 +532,8 @@
 		}
 		{
 			dependencies: [
-				"57E7182198B2EA9A"
 				"33351123F08D92BE"
+				"5BE3E37772FAF6CB"
 			]
 			description: ["{moni.quest.6792DF5F9F320B98.description1}"]
 			hide_until_deps_visible: true
@@ -634,7 +630,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["57E7182198B2EA9A"]
+			dependencies: ["5BE3E37772FAF6CB"]
 			description: [
 				"{moni.quest.6D61F343826FD239.description1}"
 				""
@@ -659,7 +655,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["57E7182198B2EA9A"]
+			dependencies: ["5BE3E37772FAF6CB"]
 			description: [
 				"{moni.quest.447E9501E57DA010.description1}"
 				""
@@ -680,8 +676,8 @@
 		}
 		{
 			dependencies: [
-				"1F7F73BF81570F3C"
 				"7A3F3FB2774A4632"
+				"68897FC5F720BB4F"
 			]
 			description: ["{moni.quest.2664406B3CD20703.description1}"]
 			hide_until_deps_visible: true
@@ -724,7 +720,7 @@
 		{
 			dependencies: [
 				"3380CBA4E4010EEC"
-				"1F7F73BF81570F3C"
+				"07C571669B023A30"
 			]
 			description: ["{moni.quest.33351123F08D92BE.description1}"]
 			hide_until_deps_visible: true

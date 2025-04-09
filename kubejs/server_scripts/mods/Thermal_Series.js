@@ -304,7 +304,7 @@ ServerEvents.recipes(event => {
         E: "kubejs:redstone_transmission_coil"
     })
 
-    if (!isExpertMode) {
+    if (doBoilers) {
         event.shaped("systeams:steam_dynamo", [
             " A ",
             "BCB",
@@ -315,6 +315,18 @@ ServerEvents.recipes(event => {
             C: "ironfurnaces:iron_furnace",
             D: "gtceu:wrought_iron_gear",
             E: "systeams:boiler_pipe"
+        })
+
+        event.shapeless("systeams:stirling_boiler", ["steamdynamo:steam_dynamo", "systeams:boiler_pipe"])
+        event.shaped("systeams:boiler_pipe", [
+            " C ",
+            "ABA",
+            " D "
+        ], {
+            A: "gtceu:copper_plate",
+            B: "minecraft:bucket",
+            C: "gtceu:iron_gear",
+            D: "#enderio:fused_quartz"
         })
     }
 

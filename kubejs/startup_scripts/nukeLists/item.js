@@ -122,6 +122,8 @@ global.itemNukeList = [
     "gtceu:steel_machine_casing",
     /^gtceu:uxv/,
     /^gtceu:opv/,
+    /^gtmutils:uxv/,
+    /^gtmutils:opv/,
 
     // Hammerlib
     /^hammerlib:/,
