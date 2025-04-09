@@ -141,7 +141,7 @@ ItemEvents.tooltip(tooltip => {
 
     parallelMultis.forEach(multi => {
         tooltip.addAdvanced(`gtceu:${multi}`, (item, adv, text) => {
-            text.add(2, Text.translatable(`gtceu.multiblock.${multi}.description`))
+            text.add(1, Text.translatable(`gtceu.multiblock.${multi}.description`))
         })
     })
 
