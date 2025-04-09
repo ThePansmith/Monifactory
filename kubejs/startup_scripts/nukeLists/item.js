@@ -95,6 +95,9 @@ global.itemNukeList = [
     "endertanks:ender_bucket",
     "enderchests:ender_bag",
 
+    // ExtendedAE
+    "expatternprovider:silicon_block",
+
     // Extended Crafting
     "extendedcrafting:auto_ender_crafter",
     "extendedcrafting:black_iron_slate",
