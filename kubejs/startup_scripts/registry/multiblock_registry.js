@@ -759,7 +759,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("D", Predicates.frames(GTMaterials.get("cryolobus")))
             .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
             .where("O", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
-            .where("C", Predicates.blocks("kubejs:omnic_matrix_machine_casing").setMaxGlobalLimited(124)
+            .where("C", Predicates.blocks("kubejs:omnic_matrix_machine_casing").setMinGlobalLimited(43)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
             )
