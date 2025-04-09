@@ -8,7 +8,7 @@
 
 ItemEvents.tooltip(event => {
     Object.entries(global.deprecatedItems).forEach(([oldItemID, replacementItemID]) => {
-        event.add(oldItemID, Text.red(`Use in a crafting table to convert into ${Item.of(replacementItemID).getDisplayName().getString()}`).bold(true))
+        event.add(oldItemID, Text.red(`Deprecated. Use in a crafting table to convert into ${Item.of(replacementItemID).getDisplayName().getString()}`).bold(true))
     })
 })
 

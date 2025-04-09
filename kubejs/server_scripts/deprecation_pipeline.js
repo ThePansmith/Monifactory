@@ -7,7 +7,7 @@
 
 Object.entries(global.deprecatedItems).forEach(([oldItemID, replacementItemID]) => {
     ServerEvents.recipes(event => {
-        event.shapeless(replacementItemID, [oldItemID]);
+        event.shapeless(replacementItemID, [oldItemID]).id(`${replacementItemID}_legacy_updater`);
 
         event.recipes.gtceu.atomic_reconstruction(`${replacementItemID}_legacy_updater`)
             .itemInputs(oldItemID)
