@@ -1029,7 +1029,7 @@ ServerEvents.recipes(event => {
     // Circuit cutter
     event.remove({ id: "expatternprovider:circuit_cutter" })
     event.remove({ id: /expatternprovider.*cutter/ })
-    
+
     // ME packing tape
     event.shapeless("expatternprovider:me_packing_tape", ["gtceu:basic_tape", "gtceu:fluix_dust"]).id("expatternprovider:tape")
 
