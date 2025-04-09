@@ -289,13 +289,13 @@ ServerEvents.recipes(event => {
         .duration(500)
 
     // Believe it or not, this is not how a nuke is made.
-    event.recipes.gtceu.assembler("nuke_tnt_regular_tnt")
+    event.recipes.gtceu.assembler("nuke_tnt_itnt")
         .itemOutputs("thermal:nuke_tnt")
-        .itemInputs("gtceu:small_plutonium_241_dust", "2x gtceu:neutron_reflector", "gtceu:plutonium_ingot", "gtceu:uranium_block", "4x gtceu:aluminium_plate", "6x gtceu:industrial_tnt", "3x gtceu:dense_steel_plate")
+        .itemInputs("gtceu:small_plutonium_241_dust", "2x gtceu:neutron_reflector", "gtceu:plutonium_ingot", "gtceu:uranium_block", "4x gtceu:aluminium_plate", "3x gtceu:industrial_tnt", "3x gtceu:dense_steel_plate")
         .inputFluids("gtceu:deuterium 500")
         .EUt(GTValues.VA[GTValues.LuV])
         .duration(500)
-    event.recipes.gtceu.assembler("nuke_tnt_itnt")
+    event.recipes.gtceu.assembler("nuke_tnt_regular_tnt")
         .itemOutputs("thermal:nuke_tnt")
         .itemInputs("gtceu:small_plutonium_241_dust", "2x gtceu:neutron_reflector", "gtceu:plutonium_ingot", "gtceu:uranium_block", "4x gtceu:aluminium_plate", "12x minecraft:tnt", "3x gtceu:dense_steel_plate")
         .inputFluids("gtceu:deuterium 500")
