@@ -115,6 +115,8 @@ global.doMonicoins = packMode == "Normal";
 global.doSnad = packMode == "Normal" || packMode == "Hard";
 global.doSteamAge = packMode == "Hard" || packMode == "Expert";
 global.doStoneline = packMode == "Hard" || packMode == "Expert";
+global.disableFluxbore = packMode == "Expert";
+global.doHarderFluxBore = packMode == "Normal" || packMode == "Hard";
 
 
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
@@ -136,3 +138,5 @@ const doMonicoins = !!global.doMonicoins;
 const doSnad = !!global.doSnad;
 const doSteamAge = !!global.doSteamAge;
 const doStoneline = !!global.doStoneline;
+const disableFluxbore = !!global.disableFluxbore;
+const doHarderFluxBore = !!global.doHarderFluxBore;
