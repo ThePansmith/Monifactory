@@ -17,7 +17,6 @@
 	quests: [
 		{
 			dependencies: [
-				"57E7182198B2EA9A"
 				"6A914B240E1A7BCB"
 				"715BC5C7DAC53B7B"
 			]
@@ -418,7 +417,6 @@
 		}
 		{
 			dependencies: [
-				"57E7182198B2EA9A"
 				"72D61AFACC53A34A"
 				"3F39E9B829DAE2F2"
 			]
@@ -481,9 +479,9 @@
 		}
 		{
 			dependencies: [
-				"57E7182198B2EA9A"
 				"645B1DCB3DA7198A"
 				"3BD20358F137E7C6"
+				"5BE3E37772FAF6CB"
 			]
 			description: [
 				"{moni.quest.715BC5C7DAC53B7B.description1}"

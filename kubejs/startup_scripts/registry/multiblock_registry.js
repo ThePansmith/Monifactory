@@ -5,11 +5,12 @@
  */
 const Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
+const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
 
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
     // Normal mode-exclusive Multis
-    if (!isHardMode) {
+    if (doHNN) {
         // Simulation Supercomputer
         event.create("simulation_supercomputer")
             .category("multiblock")
@@ -32,16 +33,24 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
 
     // Hard mode-exclusive Multis
-    if (!isNormalMode) {
-        // Universal Crystallizer
-        event.create("universal_crystallizer")
-            .category("multiblock")
-            .setEUIO("in")
-            .setMaxIOSize(9, 1, 1, 0)
-            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-            .setSound(GTSoundEntries.COMPUTATION)
-    }
+
+    // Actualization Chamber
+    event.create("actualization_chamber")
+        .category("multiblock")
+        .setEUIO("in")
+        .setMaxIOSize(2, 20, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
+
+    // Universal Crystallizer
+    event.create("universal_crystallizer")
+        .category("multiblock")
+        .setEUIO("in")
+        .setMaxIOSize(9, 1, 1, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COMPUTATION)
 
 
     // Microverse Projector Recipe Type
@@ -72,16 +81,13 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSound(GTSoundEntries.ARC)
 
     // Naquadah Fuel Refinery
-    if (!isNormalMode) {
-
-        event.create("naquadah_refinery")
-            .category("multiblock")
-            .setEUIO("in")
-            .setMaxIOSize(6,0,4,1)
-            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-            .setSound(GTSoundEntries.COOLING)
-    }
+    event.create("naquadah_refinery")
+        .category("multiblock")
+        .setEUIO("in")
+        .setMaxIOSize(6,0,4,1)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
 
     // Greenhouse
     event.create("greenhouse")
@@ -153,7 +159,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     GTRecipeTypes.get("microverse").addDataInfo((data) => ("Projector Tier: " + data.getByte("projector_tier")));   // todo: get Text.translatable to work
 
     // Normal mode-exclusive multis
-    if (!isHardMode) {
+    if (doHNN) {
 
         // Simulation Supercomputer
         event.create("simulation_supercomputer", "multiblock")
@@ -210,81 +216,76 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 "gtceu:block/multiblock/fusion_reactor", false)
     }
 
+    // Universal Crystallizer
+    event.create("universal_crystallizer", "multiblock")
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes("universal_crystallizer")
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .appearanceBlock(GCYMBlocks.CASING_LASER_SAFE_ENGRAVING)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("XXXXXXX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XXXXXXX")
+            .aisle("XXXXXXX", "G     G", "G     G", "F     F", "G     G", "G     G", "XGGGGGX")
+            .aisle("XXXXXXX", "G CCC G", "F C C F", "FTC CTF", "F C C F", "G CCC G", "XGGGGGX")
+            .aisle("XXXXXXX", "F CCC F", "FT   TF", "FTBRBTF", "FT   TF", "F CCC F", "XGGGGGX")
+            .aisle("XXXXXXX", "G CCC G", "F C C F", "FTC CTF", "F C C F", "G CCC G", "XGGGGGX")
+            .aisle("XXXXXXX", "G     G", "G     G", "F     F", "G     G", "G     G", "XGGGGGX")
+            .aisle("XXX@XXX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XXXXXXX")
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+            .where("X", Predicates.blocks(GCYMBlocks.CASING_LASER_SAFE_ENGRAVING.get()).setMinGlobalLimited(80)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
+            .where("C", Predicates.blocks(GTBlocks.FUSION_COIL.get()))
+            .where("F", Predicates.frames((doHarderProcessing ? GTMaterials.Berkelium : GTMaterials.Neutronium)))
+            .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
+            .where("T", Predicates.blocks((doStoneline ? "gtceu:taranium_block" : "gtceu:actinium_block")))
+            .where("B", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
+            .where("R", Predicates.blocks("kubejs:enderium_micro_miner_core"))
+            .where(" ", Predicates.air())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
+            "gtceu:block/multiblock/gcym/large_autoclave", false)
 
-    // Expert mode-exclusive multis
-    if (isHardMode) {
-
-        // Universal Crystallizer
-        event.create("universal_crystallizer", "multiblock")
-            .rotationState(RotationState.NON_Y_AXIS)
-            .recipeTypes("universal_crystallizer")
-            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
-            .appearanceBlock(GCYMBlocks.CASING_LASER_SAFE_ENGRAVING)
-            .pattern(definition => FactoryBlockPattern.start()
-                .aisle("XXXXXXX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XXXXXXX")
-                .aisle("XXXXXXX", "G     G", "G     G", "F     F", "G     G", "G     G", "XGGGGGX")
-                .aisle("XXXXXXX", "G CCC G", "F C C F", "FTC CTF", "F C C F", "G CCC G", "XGGGGGX")
-                .aisle("XXXXXXX", "F CCC F", "FT   TF", "FTBRBTF", "FT   TF", "F CCC F", "XGGGGGX")
-                .aisle("XXXXXXX", "G CCC G", "F C C F", "FTC CTF", "F C C F", "G CCC G", "XGGGGGX")
-                .aisle("XXXXXXX", "G     G", "G     G", "F     F", "G     G", "G     G", "XGGGGGX")
-                .aisle("XXX@XXX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XXXXXXX")
-                .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-                .where("X", Predicates.blocks(GCYMBlocks.CASING_LASER_SAFE_ENGRAVING.get()).setMinGlobalLimited(80)
-                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                    .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
-                .where("C", Predicates.blocks(GTBlocks.FUSION_COIL.get()))
-                .where("F", Predicates.frames(GTMaterials.Berkelium))
-                .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-                .where("T", Predicates.blocks("gtceu:taranium_block"))
-                .where("B", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
-                .where("R", Predicates.blocks("kubejs:enderium_micro_miner_core"))
-                .where(" ", Predicates.air())
-                .build())
-            .workableCasingRenderer("gtceu:block/casings/gcym/laser_safe_engraving_casing",
-                "gtceu:block/multiblock/gcym/large_autoclave", false)
-
-        // Helical Fusion Reactor
-        event.create("helical_fusion_reactor", "multiblock")
-            .machine((holder) => new FusionReactorMachine(holder, GTValues.UHV))
-            .rotationState(RotationState.ALL)
-            .recipeTypes(GTRecipeTypes.FUSION_RECIPES)
-            .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, MachineModifiers.FUSION_REACTOR])
-            .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
-            .pattern(definition => FactoryBlockPattern.start()
-                .aisle("#######################", "#######################", "#######################", "###F##F#N#####N#F##F###", "###FNNFNN#####NNFNNF###", "###F##F#N#####N#F##F###", "#######################", "#######################", "#######################")
-                .aisle("#######################", "###F##F###NNN###F##F###", "###F##F##N###N##F##F###", "###ECCBC#######CBCCE###", "###BBBBC#######CBBBB###", "###ECCBC#######CBCCE###", "###F##F##N###N##F##F###", "###F##F###NNN###F##F###", "#######################")
-                .aisle("#######################", "###F##F##N###N##F##F###", "##DDDDDDD#####DDDDDDD##", "#CDTTTTTDCCCCCDTTTTTDC#", "#CDTTTTTDCGGGCDTTTTTDC#", "#CDTTTTTDCCCCCDTTTTTDC#", "##DDDDDDD#####DDDDDDD##", "###F##F##N###N##F##F###", "#######################")
-                .aisle("###F##F#N#####N#F##F###", "###ECCBC#######CBCCE###", "#CDTTTTTDCCCCCDTTTTTDC#", "C                     C", "C                     C", "C                     C", "#CDTTTTTDCCCCCDTTTTTDC#", "###ECCBC#######CBCCE###", "###F##F#N#####N#F##F###")
-                .aisle("###FNNFNN#####NNFNNF###", "###BBBBC#######CBBBB###", "#CDTTTTTDCGGGCDTTTTTDC#", "C                     C", "G                     G", "C                     C", "#CDTTTTTDCGGGCDTTTTTDC#", "###BBBBC#######CBBBB###", "###FNNFNN#####NNFNNF###")
-                .aisle("###F##F#N#####N#F##F###", "###ECCBC#######CBCCE###", "#CDTTTTTDCCCCCDTTTTTDC#", "C                     C", "C                     C", "C                     C", "#CDTTTTTDCCCCCDTTTTTDC#", "###ECCBC#######CBCCE###", "###F##F#N#####N#F##F###")
-                .aisle("#######################", "###F##F##N###N##F##F###", "##DDDDDDD#####DDDDDDD##", "#CDTTTTTDCC@CCDTTTTTDC#", "#CDTTTTTDCGGGCDTTTTTDC#", "#CDTTTTTDCCCCCDTTTTTDC#", "##DDDDDDD#####DDDDDDD##", "###F##F##N###N##F##F###", "#######################")
-                .aisle("#######################", "###F##F###NNN###F##F###", "###F##F##N###N##F##F###", "###ECCBC#######CBCCE###", "###BBBBC#######CBBBB###", "###ECCBC#######CBCCE###", "###F##F##N###N##F##F###", "###F##F###NNN###F##F###", "#######################")
-                .aisle("#######################", "#######################", "#######################", "###F##F#N#####N#F##F###", "###FNNFNN#####NNFNNF###", "###F##F#N#####N#F##F###", "#######################", "#######################", "#######################")
-                .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-                .where("B", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()))
-                .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get())
-                    .or(Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get())))
-                .where("E", Predicates.abilities(PartAbility.INPUT_ENERGY)
-                    .setMinGlobalLimited(1)
-                    .setMaxGlobalLimited(16)
-                    .setPreviewCount(16)
-                    .or(Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get())))
-                .where("C", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(130)
-                    .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(2))
-                    .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMinGlobalLimited(1))
-                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                    .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
-                .where("D", Predicates.blocks("kubejs:bioalloy_fusion_casing"))
-                .where("F", Predicates.blocks("kubejs:omnic_matrix_coil_block"))
-                .where("T", Predicates.blocks(GTBlocks.COIL_TRITANIUM.get()))
-                .where("N", Predicates.frames(GTMaterials.get("activated_netherite")))
-                .where(" ", Predicates.air())
-                .where("#", Predicates.any())
-                .build())
-            .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-                "gtceu:block/multiblock/fusion_reactor", false)
-    }
+    // Helical Fusion Reactor
+    event.create("helical_fusion_reactor", "multiblock")
+        .machine((holder) => new FusionReactorMachine(holder, GTValues.UEV))
+        .rotationState(RotationState.ALL)
+        .recipeTypes(GTRecipeTypes.FUSION_RECIPES)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, MachineModifiers.FUSION_REACTOR])
+        .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("#######################", "#######################", "#######################", "###F##F#N#####N#F##F###", "###FNNFNN#####NNFNNF###", "###F##F#N#####N#F##F###", "#######################", "#######################", "#######################")
+            .aisle("#######################", "###F##F###NNN###F##F###", "###F##F##N###N##F##F###", "###ECCBC#######CBCCE###", "###BBBBC#######CBBBB###", "###ECCBC#######CBCCE###", "###F##F##N###N##F##F###", "###F##F###NNN###F##F###", "#######################")
+            .aisle("#######################", "###F##F##N###N##F##F###", "##DDDDDDD#####DDDDDDD##", "#CDTTTTTDCCCCCDTTTTTDC#", "#CDTTTTTDCGGGCDTTTTTDC#", "#CDTTTTTDCCCCCDTTTTTDC#", "##DDDDDDD#####DDDDDDD##", "###F##F##N###N##F##F###", "#######################")
+            .aisle("###F##F#N#####N#F##F###", "###ECCBC#######CBCCE###", "#CDTTTTTDCCCCCDTTTTTDC#", "C                     C", "C                     C", "C                     C", "#CDTTTTTDCCCCCDTTTTTDC#", "###ECCBC#######CBCCE###", "###F##F#N#####N#F##F###")
+            .aisle("###FNNFNN#####NNFNNF###", "###BBBBC#######CBBBB###", "#CDTTTTTDCGGGCDTTTTTDC#", "C                     C", "G                     G", "C                     C", "#CDTTTTTDCGGGCDTTTTTDC#", "###BBBBC#######CBBBB###", "###FNNFNN#####NNFNNF###")
+            .aisle("###F##F#N#####N#F##F###", "###ECCBC#######CBCCE###", "#CDTTTTTDCCCCCDTTTTTDC#", "C                     C", "C                     C", "C                     C", "#CDTTTTTDCCCCCDTTTTTDC#", "###ECCBC#######CBCCE###", "###F##F#N#####N#F##F###")
+            .aisle("#######################", "###F##F##N###N##F##F###", "##DDDDDDD#####DDDDDDD##", "#CDTTTTTDCC@CCDTTTTTDC#", "#CDTTTTTDCGGGCDTTTTTDC#", "#CDTTTTTDCCCCCDTTTTTDC#", "##DDDDDDD#####DDDDDDD##", "###F##F##N###N##F##F###", "#######################")
+            .aisle("#######################", "###F##F###NNN###F##F###", "###F##F##N###N##F##F###", "###ECCBC#######CBCCE###", "###BBBBC#######CBBBB###", "###ECCBC#######CBCCE###", "###F##F##N###N##F##F###", "###F##F###NNN###F##F###", "#######################")
+            .aisle("#######################", "#######################", "#######################", "###F##F#N#####N#F##F###", "###FNNFNN#####NNFNNF###", "###F##F#N#####N#F##F###", "#######################", "#######################", "#######################")
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+            .where("B", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()))
+            .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get())
+                .or(Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get())))
+            .where("E", Predicates.abilities(PartAbility.INPUT_ENERGY)
+                .setMinGlobalLimited(1)
+                .setMaxGlobalLimited(16)
+                .setPreviewCount(16)
+                .or(Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get())))
+            .where("C", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(130)
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(2))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMinGlobalLimited(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
+            .where("D", Predicates.blocks("kubejs:bioalloy_fusion_casing"))
+            .where("F", Predicates.blocks("kubejs:omnic_matrix_coil_block"))
+            .where("T", Predicates.blocks(GTBlocks.COIL_TRITANIUM.get()))
+            .where("N", Predicates.frames(GTMaterials.get("activated_netherite")))
+            .where(" ", Predicates.air())
+            .where("#", Predicates.any())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
+            "gtceu:block/multiblock/fusion_reactor", false)
 
     // Greenhouse
     event.create("greenhouse", "multiblock")
@@ -292,21 +293,28 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .recipeTypes("greenhouse")
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("AAAAA", "UBBBU", "UBBBU", "UUBUU", "#UUU#")
-            .aisle("ACCCA", "B###B", "B###B", "BB#BB", "#BBB#")
-            .aisle("ACCCA", "B###B", "B###B", "BB#BB", "#BBB#")
-            .aisle("ACCCA", "B###B", "B###B", "BB#BB", "#BBB#")
-            .aisle("ACCCA", "B###B", "B###B", "BB#BB", "#BBB#")
-            .aisle("ACCCA", "B###B", "B###B", "BB#BB", "#BBB#")
-            .aisle("AA@AA", "UBBBU", "UBBBU", "UUBUU", "#UUU#")
+            .aisle("SSSSS", "UDDDU", "UDDDU", "UUGUU", "#UUU#")
+            .aisle("SFFFS", "D###D", "D###D", "GO#OG", "#GEG#")
+            .aisle("SFFFS", "D###D", "D###D", "GO#OG", "#GEG#")
+            .aisle("SFFFS", "D###D", "D###D", "GO#OG", "#GEG#")
+            .aisle("SFFFS", "D###D", "D###D", "GO#OG", "#GEG#")
+            .aisle("SFFFS", "D###D", "D###D", "GO#OG", "#GEG#")
+            .aisle("SS@SS", "UDDDU", "UDDDU", "UUGUU", "#UUU#")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("A", Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()).setMinGlobalLimited(8)
+            .where("S", Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()).setMinGlobalLimited(8)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where("U", Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()))
-            .where("B", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get())
+            .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+            .where("D", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get())
                 .or(Predicates.blockTag(Tags.block("minecraft:doors")).setMaxGlobalLimited(4)))
-            .where("C", Predicates.blockTag(Tags.block("minecraft:dirt"))
-                .or(Predicates.blocks("minecraft:farmland")))
+            .where("O", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get())
+                .or(Predicates.any()))
+            .where("F", Predicates.blockTag(Tags.block("minecraft:dirt"))
+                .or(Predicates.blocks("minecraft:farmland"))
+                .or(Predicates.fluids("minecraft:water")))
+            .where("E", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get())
+                .or(Predicates.blocks(GTBlocks.CASING_STEEL_SOLID.get()))
+                .or(Predicates.blocks("minecraft:redstone_lamp")))
             .where("#", Predicates.any())
             .build())
         .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_solid_steel",
@@ -693,8 +701,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/generator/large_steam_turbine", false)
 
     // Naquadah Fuel Refinery
-    if (!isNormalMode) {
-
+    if (doHarderNaqFuel) {
         event.create("naquadah_refinery", "multiblock")
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes("naquadah_refinery")
@@ -752,7 +759,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("D", Predicates.frames(GTMaterials.get("cryolobus")))
             .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
             .where("O", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
-            .where("C", Predicates.blocks("kubejs:omnic_matrix_machine_casing")
+            .where("C", Predicates.blocks("kubejs:omnic_matrix_machine_casing").setMinGlobalLimited(43)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
             )
@@ -848,4 +855,44 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingRenderer("kubejs:block/netherite/casing",
             "gtceu:block/multiblock/assembly_line", false)
+
+    // MABS
+    const GCYMRecipeTypes = Java.loadClass("com.gregtechceu.gtceu.common.data.GCYMRecipeTypes") // Have to load it here because ALLOY_BLAST_RECIPES is not defined outside of the event
+    event.create("mega_alloy_blast_smelter", "multiblock")
+        .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
+        .rotationState(RotationState.ALL)
+        .recipeTypes(GCYMRecipeTypes.ALLOY_BLAST_RECIPES)
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, (machine, recipe) => GTRecipeModifiers.ebfOverclock(machine, recipe)])
+        .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("###IIIII###", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########")
+            .aisle("#IIIIIIIII#", "###F###F###", "###F###F###", "###F###F###", "###FIIIF###", "###FIEIF###", "###FIIIF###", "###FFFFF###", "###########", "###########", "###########", "###########", "###########", "###########", "###IIHII###", "###########")
+            .aisle("#IIIIIIIII#", "###HHHHH###", "###HVVVH###", "##FHHHHHF##", "##IICCCII##", "##IICECII##", "##IICCCII##", "##FFCCCFF##", "##F#CCC#F##", "##F#CCC#F##", "##F#VVV#F##", "##F#CCC#F##", "##F#CCC#F##", "##F#CCC#F##", "##IIIIIII##", "####IHI####")
+            .aisle("IIIIIIIIIII", "#FHHHHHHHF#", "#FHHHPHHHF#", "#FHHPPPHHF#", "#FIC   CIF#", "#FIC   CIF#", "#FIC   CIF#", "#FFC   CFF#", "###C   C###", "###C   C###", "###V   V###", "###C   C###", "###C   C###", "###C   C###", "#IIIHHHIII#", "###IIHII###")
+            .aisle("IIIIIIIIIII", "##HHHHHHH##", "##VHHHHHV##", "##HP   PH##", "#IC     CI#", "#IC     CI#", "#IC     CI#", "#FC  P  CF#", "##C     C##", "##C     C##", "##V     V##", "##C  P  C##", "##C     C##", "##C     C##", "#IIH   HII#", "##IIHHHII##")
+            .aisle("IIIIIIIIIII", "##HHHGHHH##", "##VPHGHPV##", "##HP P PH##", "#IC  P  CI#", "#EE PPP EE#", "#IC  P  CI#", "#FC  P  CF#", "##C  P  C##", "##C PPP C##", "##V  P  V##", "##C  P  C##", "##C     C##", "##C     C##", "#HIH   HIH#", "##HHHMHHH##")
+            .aisle("IIIIIIIIIII", "##HHHHHHH##", "##VHHHHHV##", "##HP   PH##", "#IC     CI#", "#IC     CI#", "#IC     CI#", "#FC  P  CF#", "##C     C##", "##C     C##", "##V     V##", "##C  P  C##", "##C     C##", "##C     C##", "#IIH   HII#", "##IIHHHII##")
+            .aisle("IIIIIIIIIII", "#FHHHHHHHF#", "#FHHHPHHHF#", "#FHHPPPHHF#", "#FIC   CIF#", "#FIC   CIF#", "#FIC   CIF#", "#FFC   CFF#", "###C   C###", "###C   C###", "###V   V###", "###C   C###", "###C   C###", "###C   C###", "#IIIHHHIII#", "###IIHII###")
+            .aisle("#IIIIIIIII#", "###HHHHH###", "###HH@HH###", "##FHHHHHF##", "##IICCCII##", "##IICECII##", "##IICCCII##", "##FFCCCFF##", "##F#CCC#F##", "##F#CCC#F##", "##F#VVV#F##", "##F#CCC#F##", "##F#CCC#F##", "##F#CCC#F##", "##IIIIIII##", "####IHI####")
+            .aisle("#IIIIIIIII#", "###F###F###", "###F###F###", "###F###F###", "###FIIIF###", "###FIEIF###", "###FIIIF###", "###FFFFF###", "###########", "###########", "###########", "###########", "###########", "###########", "###IIHII###", "###########")
+            .aisle("###IIIII###", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########")
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+            .where("H", Predicates.blocks(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING.get()).setMinGlobalLimited(115)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+            )
+            .where("I", Predicates.blocks(GTBlocks.CASING_INVAR_HEATPROOF.get()))
+            .where("F", Predicates.frames(GTMaterials.get("cryococcus")))
+            .where("V", Predicates.blocks(GCYMBlocks.HEAT_VENT.get()))
+            .where("C", Predicates.heatingCoils())
+            .where("M", Predicates.abilities(PartAbility.MUFFLER))
+            .where("G", Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_GEARBOX.get()))          // Change to Naquadah Gearbox if ICE gets added
+            .where("P", Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))      // Change to Naquadah Pipe Casing if ICE gets added
+            .where("E", Predicates.blocks(GTBlocks.CASING_EXTREME_ENGINE_INTAKE.get()))   // Change to Insane Engine Intake if ICE gets added
+            .where(" ", Predicates.air())
+            .where("#", Predicates.any())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
+            "gtceu:block/multiblock/gcym/blast_alloy_smelter", false)
 })

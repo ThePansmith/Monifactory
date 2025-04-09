@@ -1,12 +1,13 @@
 // @ts-check
 import Juke from "juke-build";
 import fs from "fs";
-import { randomUUID } from "crypto";
 import { fileURLToPath } from "url";
+import { v5 as uuid5 } from "uuid";
 import z from "zod";
 
 import { readDatafileJSON } from "../../lib/json_datafile.js";
 import { fillTemplateFile, fillTemplates } from "../fill_templates.js";
+import { hash } from "crypto";
 
 /**
  * @param {string} f
@@ -120,11 +121,12 @@ export const CodegenCreditsTarget = new Juke.Target({
         // Bubble up people with skins, as they would be more interesting
             .sort((a, b) => Number(!!b[1].mcuuid) - Number(!!a[1].mcuuid))
             .map(([name, data]) => {
+                const uuidNamespace = hash("md5", JSON.stringify(data), "buffer")
                 const elements = fillTemplates(
                     creditScreenContributorTemplate,
                     {
                         "{{MC_UUID}}": data.mcuuid ?? defaults.skin,
-                        "{{V4_UUID}}": data.mcuuid ?? randomUUID(),
+                        "{{V4_UUID}}": data.mcuuid ?? uuid5("uuid", uuidNamespace),
                         "{{PLAYERNAME}}": name,
                         // "NAME - DESC" if description exists, just "NAME" otherwise
                         "{{DESCRIPTION}}": [name, data.description].filter((s) => s).join(" - "),
@@ -134,8 +136,8 @@ export const CodegenCreditsTarget = new Juke.Target({
                         "{{Y_BUTTON}}": y + hoverOffsetY,
                         "{{IF_HAS_LINK}}([^]*?){{IF_HAS_LINK_END}}\n": data.link ? (_, match) => match : "",
                         "{{LINK}}": data.link ?? "",
-                        "{{BUTTON_EXEC_ACTION_UUID}}": randomUUID(),
-                        "{{BUTTON_EXEC_BLOCK_UUID}}": randomUUID(),
+                        "{{BUTTON_EXEC_ACTION_UUID}}": uuid5("ButtonExecAction", uuidNamespace),
+                        "{{BUTTON_EXEC_BLOCK_UUID}}": uuid5("ButtonExecBlock", uuidNamespace),
                     },
                 );
                 x += stepX;

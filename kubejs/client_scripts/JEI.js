@@ -30,7 +30,7 @@ JEIEvents.hideItems(event => {
 
     // snad
     event.hide("snad:soul_snad")
-    if (isExpertMode) {
+    if (!doSnad) {
         event.hide(["snad:snad", "snad:red_snad"])
     }
 
@@ -56,6 +56,7 @@ JEIEvents.hideItems(event => {
     event.hide(/thermal:.*_gear/)
     event.hide("thermal:creosote_bucket")
     event.hide(/thermal:.*_cast/)
+    event.hide(["thermal:drill_head", "thermal:saw_blade"])
     event.hide(["thermal:sawdust", "thermal:sawdust_block"])
 
     // Systeams
@@ -179,9 +180,10 @@ JEIEvents.hideItems(event => {
     event.hide("sophisticatedstorage:stack_upgrade_tier_1_plus")
     event.hide("sophisticatedbackpacks:stack_upgrade_starter_tier")
 
-    // Sophisticated compacting upgrades
-    if (isExpertMode) {
+    // Sophisticated compacting upgrades and Functional Storage compacting drawers
+    if (!doCompacting) {
         event.hide(/^sophisticated.*(compacting|compression)_upgrade$/)
+        event.hide(/^functionalstorage:.*compacting.*_drawer$/)
     }
 
     // Sophisticated Experience
@@ -193,6 +195,8 @@ JEIEvents.hideItems(event => {
     // Posttank stuff
     event.hide(/gtceu:uxv/)
     event.hide(/gtceu:opv/)
+    event.hide(/gtmutils:uxv/)
+    event.hide(/gtmutils:opv/)
 
     // Greg Hot MV ingots
     event.hide(["gtceu:hot_kanthal_ingot", "gtceu:hot_silicon_ingot"])

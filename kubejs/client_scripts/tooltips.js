@@ -23,7 +23,7 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.translatable("item.kubejs.stabilized_microminer.tooltip.3"))
     })
 
-    tooltip.addAdvanced(["/kubejs:damaged_microminer/"], (item, adv, text) => {
+    tooltip.addAdvanced(["/kubejs:microminer.*damaged/"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.damaged_microminer.tooltip"))
     })
 
@@ -33,13 +33,18 @@ ItemEvents.tooltip(tooltip => {
     // Endgame Items
     tooltip.add("kubejs:ultimate_gem", Text.translatable("kubejs.ultimate_gem.tooltip"))
 
-    // Hardmode+ Stuff
-    if (!isNormalMode) {
+    // Assembly line ordering
+    if (doAssemblyLineOrderingWarning) {
         tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.hardmode"))
+    } else {
+        tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.normal"))
+    }
+
+    // Meowni Plush
+    if (doMeowniPlush) {
         tooltip.add("kubejs:meowni_plush", Text.translatable("kubejs.meowni_plush.tooltip.hardmode.1"))
         tooltip.add("kubejs:meowni_plush", Text.translatable("kubejs.meowni_plush.tooltip.hardmode.2"))
     } else {
-        tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.normal"))
         tooltip.add("kubejs:meowni_plush", Text.translatable("kubejs.meowni_plush.tooltip.normal.1"))
         tooltip.add("kubejs:meowni_plush", Text.translatable("kubejs.meowni_plush.tooltip.normal.2"))
     }
@@ -136,7 +141,6 @@ ItemEvents.tooltip(tooltip => {
 
     parallelMultis.forEach(multi => {
         tooltip.addAdvanced(`gtceu:${multi}`, (item, adv, text) => {
-            text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
             text.add(2, Text.translatable(`gtceu.multiblock.${multi}.description`))
         })
     })
@@ -147,6 +151,17 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.translatable("gtceu.multiblock.helical_fusion_reactor.description"))
     })
 
+    tooltip.addAdvanced("gtceu:mega_alloy_blast_smelter", (item, adv, text) => {
+        text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
+        text.add(2, Text.translatable("gtceu.machine.available_recipe_map_1.tooltip", Text.translatable("gtceu.alloy_blast_smelter")))
+        text.add(3, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.0"))
+        text.add(4, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.1"))
+        text.add(5, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.2"))
+    })
+
+    tooltip.addAdvanced("gtceu:omnic_forge", (item, adv, text) => {
+        text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
+    })
 
     // Parallel hatches
     tooltip.add("gtceu:uhv_uhv_parallel_hatch", Text.translatable("gtceu.giga_parallel_hatch.desc"))
@@ -169,12 +184,14 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("ae2:memory_card", Text.gray(Text.translatable("ae2.memory_card.tooltip")));
     tooltip.add("betterp2p:advanced_memory_card", Text.gray(Text.translatable("betterp2p.advanced_memory_card.tooltip")));
     tooltip.add("ae2:creative_fluid_cell", Text.red(Text.translatable("ae2.creative_fluid_cell.tooltip")));
+    tooltip.add("mae2:eu_p2p_tunnel", Text.red(Text.translatable("mae2.eu_p2p_deprecation_tooltip")));
+    tooltip.add("mae2:eu_multi_p2p_tunnel", Text.red(Text.translatable("mae2.eu_p2p_deprecation_tooltip")));
 
     // EIO Cap Banks
     tooltip.add(/^enderio:.*_bank$/, Text.red(Text.translatable("enderio.cap_bank.tooltip")));
 
     // Exoskeleton Legs
-    tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.gray(Text.translatable("kubejs.exoskeleton_legs.tooltip")))
+    tooltip.add(/^kubejs:.*exoskeleton_legs$/, Text.red("DEPRECATED: Use crafting table to convert into new exoskeleton legs").bold(true))
 
     // Misc
     tooltip.add("kubejs:eternal_catalyst", Text.darkGray(Text.translatable("kubejs.eternal_catalyst.tooltip")));

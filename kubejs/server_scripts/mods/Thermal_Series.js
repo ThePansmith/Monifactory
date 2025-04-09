@@ -104,11 +104,6 @@ ServerEvents.recipes(event => {
         B: "#forge:plates/electrical_steel"
     }).id("kubejs:redstone_servo");
 
-    event.remove({ id: "thermal:drill_head" });
-    event.shapeless("thermal:drill_head", [
-        "gtceu:vanadium_steel_drill_head"
-    ]).id("kubejs:drill_head");
-
     // Coil Ingredients
     event.shaped("thermal:rf_coil", [
         " BA",
@@ -309,7 +304,7 @@ ServerEvents.recipes(event => {
         E: "kubejs:redstone_transmission_coil"
     })
 
-    if (!isExpertMode) {
+    if (doBoilers) {
         event.shaped("systeams:steam_dynamo", [
             " A ",
             "BCB",
@@ -320,6 +315,18 @@ ServerEvents.recipes(event => {
             C: "ironfurnaces:iron_furnace",
             D: "gtceu:wrought_iron_gear",
             E: "systeams:boiler_pipe"
+        })
+
+        event.shapeless("systeams:stirling_boiler", ["steamdynamo:steam_dynamo", "systeams:boiler_pipe"])
+        event.shaped("systeams:boiler_pipe", [
+            " C ",
+            "ABA",
+            " D "
+        ], {
+            A: "gtceu:copper_plate",
+            B: "minecraft:bucket",
+            C: "gtceu:iron_gear",
+            D: "#enderio:fused_quartz"
         })
     }
 
@@ -691,26 +698,26 @@ ServerEvents.recipes(event => {
     // detonator, locked to mv
     event.replaceInput({ id: "thermal:tools/detonator" }, ["#forge:gears/signalum"], ["#gtceu:circuits/mv"])
 
-    event.remove({ id: "thermal:flux_drill" })
+    event.remove([{ id: "thermal:drill_head" }, { id: "thermal:flux_drill" }])
     event.shaped("thermal:flux_drill", [
         " A ",
         "BCB",
         "DED"
     ], {
-        A: "thermal:drill_head",
+        A: "gtceu:vanadium_steel_drill_head",
         B: "#forge:ingots/silver",
         C: "gtceu:lv_power_unit",
         D: "#forge:ingots/tin",
         E: "gtceu:iron_gear"
     }).id("kubejs:flux_drill");
 
-    event.remove({ id: "thermal:flux_saw" })
+    event.remove([{ id: "thermal:saw_blade" }, { id: "thermal:flux_saw" }])
     event.shaped("thermal:flux_saw", [
         " A ",
         "BCB",
         "DED"
     ], {
-        A: "thermal:saw_blade",
+        A: "gtceu:vanadium_steel_buzz_saw_blade",
         B: "#forge:ingots/silver",
         C: "gtceu:lv_power_unit",
         D: "#forge:ingots/tin",

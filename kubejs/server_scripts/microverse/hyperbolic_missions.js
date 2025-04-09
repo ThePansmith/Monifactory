@@ -2,26 +2,6 @@
  * Recipe definitions for hyperbolic microverse projector missions.
  */
 ServerEvents.recipes(event => {
-    // T4MM mission
-    microverse_mission(event, 4, 4, 160).forEach(builder => {
-        builder
-            .itemInputs(
-                "64x kubejs:ultra_dense_hydrogen",
-                "64x kubejs:ultra_dense_hydrogen",
-                "64x kubejs:ultra_dense_hydrogen",
-                "64x kubejs:ultra_dense_hydrogen",
-                "1x gtceu:data_module",
-                "1x gtceu:uhv_sensor",
-                "kubejs:blasting_kit"
-            )
-            .itemOutputs(
-                "64x kubejs:stellar_creation_data",
-                "64x kubejs:stellar_creation_data",
-                "64x kubejs:stellar_creation_data",
-                "64x kubejs:stellar_creation_data"
-            )
-    })
-
     // T8MM mission
     microverse_mission(event, 8, 4, undefined, undefined, 100).forEach(builder => {
         builder

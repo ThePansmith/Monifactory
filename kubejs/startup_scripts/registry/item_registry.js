@@ -3,6 +3,29 @@
  * and certain other properties of custom items.
  */
 StartupEvents.registry("item", event => {
+    const miners = [
+        "1",
+        "2",
+        "2half",
+        "2half_damaged",
+        "3",
+        "4",
+        "4half",
+        "4half_damaged",
+        "5",
+        "6",
+        "6_damaged",
+        "7",
+        "7_damaged",
+        "8",
+        "8_damaged",
+        "8half",
+        "9",
+        "10",
+        "11",
+        "12"
+    ]
+
     const stabilized_miners = [
         "2half",
         "4half",
@@ -11,28 +34,18 @@ StartupEvents.registry("item", event => {
         "8",
     ]
 
+
     // Regular Microminers
-    for (let tier = 1; tier <= 12; tier++) {
+    for (const tier of miners) {
         event.create(`microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}`)
-        if(tier >= 6 && tier < 9) event.create(`damaged_microminer_t${tier}`).maxStackSize(16).texture(`kubejs:item/microverse/microminer_t${tier}_damaged`)
     }
 
-
-    // HM/EM Microminers
-    if (!isNormalMode) {
-        event.create("microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half")
-        event.create("damaged_microminer_t2half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t2half_damaged")
-        event.create("microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half")
-        event.create("damaged_microminer_t4half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t4half_damaged")
-        event.create("microminer_t8half").maxStackSize(16).texture("kubejs:item/microverse/microminer_t8half")
-
-        // Stabilized Miners
-        for (const tier of stabilized_miners) {
-            event.create(`stabilized_microminer_t${tier}`)
-                .maxStackSize(16)
-                .texture(`kubejs:item/microverse/microminer_t${tier}`)
-                .glow(true);
-        }
+    // Stabilized Miners
+    for (const tier of stabilized_miners) {
+        event.create(`stabilized_microminer_t${tier}`)
+            .maxStackSize(16)
+            .texture(`kubejs:item/microverse/microminer_t${tier}`)
+            .glow(true);
     }
 
     // Microminer Components
@@ -51,14 +64,14 @@ StartupEvents.registry("item", event => {
 
     // Miner kits
     event.create("gem_sensor").maxStackSize(16).displayName("Gemstone Sensor")
-    event.create("basic_drilling_kit").maxStackSize(16)
-    event.create("advanced_drilling_kit").maxStackSize(16)
-    event.create("advanced_drilling_kit_ii").maxStackSize(16).displayName("Advanced Drill Kit II")
-    event.create("blasting_kit").maxStackSize(16)
-    event.create("microversal_alchemy_kit").maxStackSize(16)
+    event.create("basic_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/basic_drilling_kit")
+    event.create("advanced_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/advanced_drilling_kit")
+    event.create("elite_drilling_kit").maxStackSize(16).texture("kubejs:item/miner_kits/elite_drilling_kit")
+    event.create("blasting_kit").maxStackSize(16).texture("kubejs:item/miner_kits/blasting_kit")
+    event.create("microversal_alchemy_kit").maxStackSize(16).texture("kubejs:item/miner_kits/microversal_alchemy_kit")
 
     // T9+ Devices
-    event.create("gravity_well_generator").maxStackSize(16)
+    event.create("gravitational_amplifier").maxStackSize(16)
     event.create("universal_collapse_device").maxStackSize(16)
 
     // Heavy platings
@@ -83,7 +96,7 @@ StartupEvents.registry("item", event => {
 
 
     // Monicoins
-    if (isNormalMode) {
+    if (doMonicoins) {
         event.create("moni_penny")
     }
     event.create("moni_nickel")
@@ -103,7 +116,7 @@ StartupEvents.registry("item", event => {
 
 
     // Magnetron
-    if (!isNormalMode) {
+    if (doHarderProcessing) {
         event.create("magnetron")
     }
 
@@ -132,16 +145,12 @@ StartupEvents.registry("item", event => {
 
 
     // Creative Data
-    event.create("creative_tank_data")
+    event.create("omnic_data")
     event.create("creative_storage_data")
     event.create("creative_computation_data")
     event.create("creative_energy_data")
-    if (!isNormalMode) event.create("omnic_data")
 
     // Infinity Fluid Cell Base
-    if(isNormalMode) {
-        event.create("infinity_cell_base").displayName("ME Infinity Cell Base")
-    }
 
 
     // Endgame Items
@@ -174,20 +183,6 @@ StartupEvents.registry("item", event => {
     event.create("contained_singularity")
 
 
-    // Ultimate Tools
-    event.create("ultimate_core").texture("kubejs:item/ultimate/core")
-    event.create("ultimate_file").texture("kubejs:item/ultimate/file")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_hammer").texture("kubejs:item/ultimate/hammer")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_screwdriver").texture("kubejs:item/ultimate/screwdriver")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_wrench").texture("kubejs:item/ultimate/wrench")
-        .rarity("epic").maxStackSize(1)
-    event.create("ultimate_wire_cutter").texture("kubejs:item/ultimate/wire_cutter")
-        .rarity("epic").maxStackSize(1)
-
-
     // Infinity Tools
     event.create("infinity_power_unit").rarity("epic").maxStackSize(1)
     event.create("infinity_file").rarity("epic").maxStackSize(1)
@@ -211,7 +206,6 @@ StartupEvents.registry("item", event => {
         ["oxygen", "#4494bc"],
         ["radon", "#bc38bc"],
         ["xenon", "#12bcbc"],
-        ["bromine", "#7c1c05"],
         ["experience", "#04ff00"]
     ]
 
@@ -222,10 +216,12 @@ StartupEvents.registry("item", event => {
     }
 
 
-    // Dense Hydrogen (Solidified Hydrogen is part of Solidified Elements section)
+    // Dense Elemental Gasses (Solidification recipes are part of the Solidified Elements Section)
     event.create("dense_hydrogen").rarity("Uncommon")
     event.create("ultra_dense_hydrogen").rarity("Rare")
 
+    event.create("dense_helium").rarity("Uncommon")
+    event.create("ultra_dense_helium").rarity("Rare")
 
     // Stabilized Elements
     const stabilized_elements = [
@@ -262,10 +258,11 @@ StartupEvents.registry("item", event => {
     })
 
     // Planet dusts
-    event.create("moon_dust")
-    event.create("mars_dust")
-    event.create("venus_dust")
-    event.create("mercury_dust")
+    event.create("moon_dust").texture("kubejs:item/regolith_dust/moon_dust")
+    event.create("mars_dust").texture("kubejs:item/regolith_dust/mars_dust")
+    event.create("venus_dust").texture("kubejs:item/regolith_dust/venus_dust")
+    event.create("mercury_dust").texture("kubejs:item/regolith_dust/mercury_dust")
+    event.create("glacio_dust").texture("kubejs:item/regolith_dust/glacio_dust")
 
 
     // Thermal Series item ports
@@ -281,7 +278,7 @@ StartupEvents.registry("item", event => {
 
 
     // Ender Spore
-    if (!isNormalMode) {
+    if (!doHNN) {
         event.create("ender_spore")
     }
 

@@ -17,11 +17,11 @@ StartupEvents.registry("item", event => {
 })
 
 const ExoskeletonLegsEffects = [
-    {itemID: "lv_exoskeleton_legs", step_height_change: 0.5, movement_speed_boost: 0.2},
-    {itemID: "mv_exoskeleton_legs", step_height_change: 0.5, movement_speed_boost: 0.4},
-    {itemID: "hv_exoskeleton_legs", step_height_change: 0.5, movement_speed_boost: 0.6},
-    {itemID: "ev_exoskeleton_legs", step_height_change: 0.5, movement_speed_boost: 0.8},
-    {itemID: "iv_exoskeleton_legs", step_height_change: 0.5, movement_speed_boost: 1.0}
+    {itemID: "lv_exoskeleton_legs", step_height_change: 0.0, movement_speed_boost: 0.0},
+    {itemID: "mv_exoskeleton_legs", step_height_change: 0.0, movement_speed_boost: 0.0},
+    {itemID: "hv_exoskeleton_legs", step_height_change: 0.0, movement_speed_boost: 0.0},
+    {itemID: "ev_exoskeleton_legs", step_height_change: 0.0, movement_speed_boost: 0.0},
+    {itemID: "iv_exoskeleton_legs", step_height_change: 0.0, movement_speed_boost: 0.0}
 ]
 
 const step_modifier_UUID = UUID.fromString("9397bcb0-29f3-4bb2-8b4e-d46db405e777");

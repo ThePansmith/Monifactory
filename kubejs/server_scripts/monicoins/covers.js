@@ -2,7 +2,7 @@
  * Registration of Monicoin trades for ULV covers
  */
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
+    if (doMonicoins) {
         // -- ULV Covers
         event.shaped(Item.of("ulvcovm:ulv_conveyor_module", 2), [
             "   ",

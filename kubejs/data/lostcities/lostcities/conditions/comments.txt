@@ -1,0 +1,18 @@
+Author: Xefyr0
+Relevant File: KubeJS/data/lostcities/lostcities/conditions/chestloot.json
+
+JSON does not allow for comments, so here's an explanation of how the loot system in the Lost Cities works.
+See KubeJS/data/monifactory/loot_tables/chests/comments.txt for more information.
+
+When the Lost Cities are generated, the mod selects a loot table to apply to each chest.
+This file defines which loot table it applies, depending on:
+- The structure the chest is in (inpart)
+- The floor of the building the chest is on (range)
+- Weighted random chance (factor)
+
+In this case, we define a few custom loot tables that Lost Cities uses for these chests.
+Note that "range", the floors each loot table applies to, is zero-indexed.
+- cellar (applies to underground floors of buildings)
+- ground_level (applies to the first through fifth floors of buildings)
+- upper_floors (applies to the sixth floors and above)
+- rail_dungeon (applies to "rail dungeons", which I have not personally encountered)

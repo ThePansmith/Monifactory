@@ -176,7 +176,7 @@
         },
         "argument2": {
             "type": "minecraft:constant",
-            "argument": -0.35
+            "argument": -0.5
         }
     },
     "fluid_level_spread": {

@@ -813,6 +813,8 @@
 				"{moni.quest.6DC635766CD40FFF.description1}"
 				""
 				"{moni.quest.6DC635766CD40FFF.description2}"
+				""
+				"{moni.quest.6DC635766CD40FFF.description3}"
 			]
 			disable_toast: true
 			id: "6DC635766CD40FFF"
@@ -1731,7 +1733,7 @@
 				}
 			]
 			title: "{moni.quest.244F2CC5484A7B21.title}"
-			x: -2.0d
+			x: -1.75d
 			y: -8.5d
 		}
 		{
@@ -3255,6 +3257,19 @@
 			]
 			icon: "gtceu:uv_machine_hull"
 			id: "4B497D256FB3983F"
+			rewards: [{
+				id: "3FF03AD6F80784C3"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:darmstadtium"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{

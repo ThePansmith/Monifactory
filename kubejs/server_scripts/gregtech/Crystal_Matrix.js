@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_bath("nanotube_bathing")
         .itemInputs("kubejs:carbon_nanotubes")
         .itemOutputs("kubejs:porous_matrix_mesh")
-        .inputFluids("gtceu:nether_star 576")
+        .inputFluids("gtceu:nether_star 144")
         .duration(120)
         .EUt(GTValues.VA[GTValues.LuV])
         .cleanroom(CleanroomType.CLEANROOM)

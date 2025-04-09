@@ -105,7 +105,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
         builders[0].itemOutputs(`kubejs:microminer_t${minerTier}`)
     } else if(minerReturnChance > 0) {
         // Only return the damaged miner if the chance to return it is positive and real
-        builders[0].chancedOutput(`kubejs:damaged_microminer_t${minerTier}`, minerReturnChance, minerReturnChance == 10000 ? 0 : 500)
+        builders[0].chancedOutput(`kubejs:microminer_t${minerTier}_damaged`, minerReturnChance, minerReturnChance == 10000 ? 0 : 500)
     }
 
     const stabilized_miners = [
@@ -117,7 +117,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
     ]
 
     // Register actualization chamber counterparts in Hard Mode and Expert Mode except for T9+
-    if(isHardMode && stabilized_miners.indexOf(minerTier.toString()) != -1) {
+    if(stabilized_miners.indexOf(minerTier.toString()) != -1) {
         builders[1] = event.recipes.gtceu.microverse(`kubejs:mission_t${minerTier}_${global.mission_counts[minerTier]}_stabilized`)
             .addData("projector_tier", projectorTier)
             .itemInputs(`kubejs:stabilized_microminer_t${minerTier}`)

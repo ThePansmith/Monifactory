@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_plate",
         B: "gtceu:infinity_plate",
-        C: "kubejs:ultimate_file",
+        C: "gtceu:eltz_plate",
         D: "kubejs:infinity_power_unit",
         E: "gtceu:omnium_ingot"
     });
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_ingot",
         B: "gtceu:infinity_ingot",
-        C: "kubejs:ultimate_hammer",
+        C: "gtceu:eltz_ingot",
         D: "kubejs:infinity_power_unit",
         E: "gtceu:omnium_ingot"
     });
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_rod",
         B: "gtceu:infinity_rod",
-        C: "kubejs:ultimate_screwdriver",
+        C: "gtceu:eltz_rod",
         D: "kubejs:infinity_power_unit",
         E: "gtceu:omnium_ingot"
     });
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_plate",
         B: "gtceu:infinity_plate",
-        C: "kubejs:ultimate_wrench",
+        C: "gtceu:eltz_plate",
         D: "kubejs:infinity_power_unit"
     });
 
@@ -92,124 +92,10 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_plate",
         B: "gtceu:infinity_plate",
-        C: "kubejs:ultimate_wire_cutter",
+        C: "gtceu:eltz_plate",
         D: "kubejs:infinity_power_unit",
         E: "gtceu:omnium_ingot"
     });
-
-    // Ultimate File
-    event.recipes.extendedcrafting.shaped_table("kubejs:ultimate_file", [
-        "  A      ",
-        " AEA     ",
-        "AEAEA    ",
-        " AEAEA   ",
-        "  AEAEF  ",
-        "   AEDF  ",
-        "    FFFF ",
-        "      FFF",
-        "       FF",
-    ], {
-        A: "kubejs:the_ultimate_material",
-        D: "kubejs:ultimate_core",
-        E: "kubejs:ultimate_gem",
-        F: "gtceu:crystal_matrix_ingot"
-    });
-
-    // Ultimate Hammer
-    event.recipes.extendedcrafting.shaped_table("kubejs:ultimate_hammer", [
-        "    A    ",
-        "   AEA   ",
-        "  AEAEA  ",
-        "   AEEEA ",
-        "   FDEAEA",
-        "  FFFAEA ",
-        " FFF  A  ",
-        "FFF      ",
-        "FF       ",
-    ], {
-        A: "kubejs:the_ultimate_material",
-        D: "kubejs:ultimate_core",
-        E: "kubejs:ultimate_gem",
-        F: "gtceu:crystal_matrix_ingot"
-    });
-
-    // Ultimate Screwdriver
-    event.recipes.extendedcrafting.shaped_table("kubejs:ultimate_screwdriver", [
-        "       AA",
-        "      AEA",
-        "     AEA ",
-        "    AEA  ",
-        "  AAEA   ",
-        " FEDA    ",
-        " FFEA    ",
-        "FFFF     ",
-        "FF       ",
-    ], {
-        A: "kubejs:the_ultimate_material",
-        D: "kubejs:ultimate_core",
-        E: "kubejs:ultimate_gem",
-        F: "gtceu:crystal_matrix_ingot"
-    });
-
-    // Ultimate Wrench
-    event.recipes.extendedcrafting.shaped_table("kubejs:ultimate_wrench", [
-        "    A  A ",
-        "   AE  EA",
-        "   AE  EA",
-        "   AEDEAA",
-        "   AAAAA ",
-        "  AAAAA  ",
-        " AAA     ",
-        "AAA      ",
-        "AA       ",
-    ], {
-        A: "kubejs:the_ultimate_material",
-        D: "kubejs:ultimate_core",
-        E: "kubejs:ultimate_gem"
-    });
-
-    // Ultimate Wire Cutter
-    event.recipes.extendedcrafting.shaped_table("kubejs:ultimate_wire_cutter", [
-        "  AA AA  ",
-        " AEA AEA ",
-        " AEA AEA ",
-        " AEA AEA ",
-        " AEA AEA ",
-        "  AADAA  ",
-        "  FF FF  ",
-        " FFF FFF ",
-        " FF   FF ",
-    ], {
-        A: "kubejs:the_ultimate_material",
-        D: "kubejs:ultimate_core",
-        E: "kubejs:ultimate_gem",
-        F: "gtceu:crystal_matrix_ingot"
-    });
-
-    // Ultimate Core
-    event.recipes.extendedcrafting.shaped_table("kubejs:ultimate_core", [
-        "    A    ",
-        "  KBCBK  ",
-        " KABDBAK ",
-        " BBEIFBB ",
-        "AGHIJIHGA",
-        " BBFIEBB ",
-        " KABDBAK ",
-        "  KBCBK  ",
-        "    A    ",
-    ], {
-        A: "kubejs:the_ultimate_material",
-        B: "enderio:reinforced_obsidian_block",
-        C: "gtceu:dense_blue_alloy_plate",
-        D: "gtceu:dense_cryolobus_plate",
-        E: "gtceu:dense_dark_soularium_plate",
-        F: "gtceu:dense_zeron_100_plate",
-        G: "gtceu:dense_manyullyn_plate",
-        H: "gtceu:dense_enriched_sunnarium_plate",
-        I: "gtceu:gravi_star",
-        J: "kubejs:quasi_stable_neutron_star",
-        K: "kubejs:wither_bone"
-    })
 
     // Infinity Power Unit
     event.recipes.gtceu.assembly_line("infinity_toolset/infinity_power_unit")
@@ -220,6 +106,7 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
 
     // Dense Obsidian Plate for Reinforced Obsidian
+    // TODO IN 0.13: REMOVE BENDER RECIPE
     event.recipes.gtceu.implosion_compressor("infinity_toolset/dense_obsidian_plate")
         .itemInputs("9x gtceu:obsidian_plate", "minecraft:tnt")
         .itemOutputs("gtceu:dense_obsidian_plate")

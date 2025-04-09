@@ -51,12 +51,18 @@
 	}]
 	quests: [
 		{
+			dependencies: [
+				"7423181A27FC773B"
+				"29A487F0BC43AAF9"
+			]
 			description: [
 				"{moni.quest.0E75B671DAC85309.description1}"
 				""
 				"{moni.quest.0E75B671DAC85309.description2}"
 			]
+			hide_until_deps_visible: true
 			id: "0E75B671DAC85309"
+			optional: true
 			tasks: [{
 				id: "36B4AD08FD0B6C09"
 				item: "systeams:steam_dynamo"
@@ -282,7 +288,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1F7F73BF81570F3C"]
+			dependencies: ["5E3CBC929557418F"]
 			description: [
 				"{moni.quest.68E87B959F6E9216.description1}"
 				""
@@ -290,6 +296,7 @@
 				""
 				"{moni.quest.68E87B959F6E9216.description3}"
 			]
+			hide_until_deps_visible: true
 			id: "68E87B959F6E9216"
 			optional: true
 			tasks: [
@@ -403,6 +410,7 @@
 		}
 		{
 			dependencies: ["0E75B671DAC85309"]
+			hide_until_deps_visible: true
 			id: "22984820BE9A3068"
 			optional: true
 			size: 0.2d
@@ -927,7 +935,7 @@
 			dependencies: [
 				"73C1AB31431B5C11"
 				"0006FEA1843FEA0A"
-				"57E7182198B2EA9A"
+				"5BE3E37772FAF6CB"
 			]
 			description: [
 				"{moni.quest.6FDF37EE046349F7.description1}"
