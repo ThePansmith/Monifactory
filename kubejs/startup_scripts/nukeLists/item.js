@@ -95,24 +95,6 @@ global.itemNukeList = [
     "endertanks:ender_bucket",
     "enderchests:ender_bag",
 
-    // AE
-    "ae2:network/cells/item_storage_cell_1k",
-    "ae2:network/cells/item_storage_cell_4k",
-    "ae2:network/cells/item_storage_cell_16k",
-    "ae2:network/cells/item_storage_cell_64k",
-    "ae2:network/cells/item_storage_cell_256k",
-    "ae2:network/cells/fluid_storage_cell_1k",
-    "ae2:network/cells/fluid_storage_cell_4k",
-    "ae2:network/cells/fluid_storage_cell_16k",
-    "ae2:network/cells/fluid_storage_cell_64k",
-    "ae2:network/cells/fluid_storage_cell_256k",
-    "ae2:network/cells/spatial_storage_cell_2_cubed",
-    "ae2:network/cells/spatial_storage_cell_16_cubed",
-    "ae2:network/cells/spatial_storage_cell_128_cubed",
-    "ae2:network/parts/quartz_fiber_part",
-    "gtceu:shapeless/gem_to_gem_flawedgem_nether_quartz",
-    "ae2:network/cables/glass_fluix",
-
     // ExtendedAE
     "expatternprovider:silicon_block",
     "expatternprovider:circuit_cutter",

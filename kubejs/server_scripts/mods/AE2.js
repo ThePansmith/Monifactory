@@ -163,6 +163,25 @@ ServerEvents.recipes(event => {
         C: "gtceu:certus_quartz_plate"
     }).id("kubejs:ae2/quantum_link")
 
+    // Storage Cell Removal
+    event.remove({ id: "ae2:network/cells/item_storage_cell_1k" })
+    event.remove({ id: "ae2:network/cells/item_storage_cell_4k" })
+    event.remove({ id: "ae2:network/cells/item_storage_cell_16k" })
+    event.remove({ id: "ae2:network/cells/item_storage_cell_64k" })
+    event.remove({ id: "ae2:network/cells/item_storage_cell_256k" })
+
+    event.remove({ id: "ae2:network/cells/fluid_storage_cell_1k" })
+    event.remove({ id: "ae2:network/cells/fluid_storage_cell_4k" })
+    event.remove({ id: "ae2:network/cells/fluid_storage_cell_16k" })
+    event.remove({ id: "ae2:network/cells/fluid_storage_cell_64k" })
+    event.remove({ id: "ae2:network/cells/fluid_storage_cell_256k" })
+
+    event.remove({ id: "ae2:network/cells/spatial_storage_cell_2_cubed" })
+    event.remove({ id: "ae2:network/cells/spatial_storage_cell_16_cubed" })
+    event.remove({ id: "ae2:network/cells/spatial_storage_cell_128_cubed" })
+
+    event.remove({ id: "ae2:network/cells/view_cell" })
+
     // Storage Housing
     event.remove({ id: "ae2:network/cells/item_cell_housing" })
     event.shaped(Item.of("ae2:item_cell_housing"), [
@@ -552,6 +571,10 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     // Cables
+    event.remove({ id: "ae2:network/parts/quartz_fiber_part" })
+    event.remove({ id: "gtceu:shapeless/gem_to_gem_flawedgem_nether_quartz" })
+    event.remove({ id: "ae2:network/cables/glass_fluix" })
+
     event.recipes.gtceu.wiremill("kubejs:ae2/quartz_fiber")
         .itemInputs("gtceu:certus_quartz_gem")
         .itemOutputs("ae2:quartz_fiber")
@@ -999,6 +1022,13 @@ ServerEvents.recipes(event => {
     event.shapeless("expatternprovider:ex_pattern_access_part", ["ae2:pattern_access_terminal", "ae2:logic_processor"]).id("kubejs:epp/epa")
     event.remove({ id: "expatternprovider:epa_upgrade" })
     event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:logic_processor"]).id("kubejs:epp/epa_upgrade")
+
+    // ExtendedAE Silicon Block
+    event.remove({id:"expatternprovider:silicon_block"})
+
+    // Circuit cutter
+    event.remove({ id: "expatternprovider:circuit_cutter" })
+    event.remove({ id: /expatternprovider.*cutter/ })
 
     // ME packing tape
     event.shapeless("expatternprovider:me_packing_tape", ["gtceu:basic_tape", "gtceu:fluix_dust"]).id("expatternprovider:tape")
