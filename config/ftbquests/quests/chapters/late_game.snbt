@@ -111,7 +111,7 @@
 			id: "207E26A342B05F89"
 			linked_quest: "26CA20E74A62FA6E"
 			shape: "hexagon"
-			x: 8.5d
+			x: 9d
 			y: 18.25d
 		}
 		{
@@ -1080,7 +1080,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7DB174443D7FAFA0.title}"
-			x: 8.5d
+			x: 9d
 			y: 8.25d
 		}
 		{
