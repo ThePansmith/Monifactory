@@ -956,12 +956,6 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(120)
 
-    event.recipes.gtceu.atomic_reconstruction("dilithium_legacy_updater")
-        .itemInputs("kubejs:dilithium_crystal")
-        .itemOutputs("gtceu:dilithium_gem")
-        .duration(20)
-        .EUt(15)
-
     // Patchouli Books that needed tweaking
     event.shapeless(Item.of("patchouli:guide_book", '{"patchouli:book":"laserio:laseriobook"}'), ["minecraft:book", "laserio:card_item"]).id("laserio:my_book_recipe_shapeless")
 

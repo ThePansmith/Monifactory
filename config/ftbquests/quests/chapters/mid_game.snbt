@@ -416,7 +416,7 @@
 		{
 			dependencies: ["227F448DFCC3E8C3"]
 			description: ["{moni.quest.63F438F7033521C3.description1}"]
-			icon: "kubejs:molten_primal_mana_bucket"
+			icon: "gtceu:mana_bucket"
 			id: "63F438F7033521C3"
 			rewards: [{
 				id: "18A9F94036616751"
@@ -426,7 +426,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "09F975A61B3C84FA"
-				item: "kubejs:molten_primal_mana_bucket"
+				item: "gtceu:mana_bucket"
 				type: "item"
 			}]
 			title: "{moni.quest.63F438F7033521C3.title}"

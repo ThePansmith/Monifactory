@@ -17,6 +17,11 @@ JEIEvents.hideItems(event => {
         event.hide(/^sophisticatedstorage:.*iron.*tier_upgrade$/)
 
     }
+    // Sophisticated compacting upgrades
+    if (!doCompacting) {
+        event.hide(/^sophisticated.*(compacting|compression)_upgrade$/)
+        event.hide(/^functionalstorage:.*compacting.*_drawer$/)
+    }
     if(!doMeowniPlush) {
         event.hide("kubejs:meowni_plush")
     }
