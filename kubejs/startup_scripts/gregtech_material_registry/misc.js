@@ -297,6 +297,45 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .macerateInto(GTMaterials.get("terbium"))
         .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
 })
+
+// Germanium
+
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("coal_fly_ash")
+    .dust(1)
+    .color(0xcf9c91).secondaryColor(0x524541)
+    .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("fly_ash_iron_mineral_mixture")
+    .dust(1)
+    .color(0xc9b28d).secondaryColor(0x8f807c)
+    .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("fly_ash_polymineral_mixture")
+    .dust(1)
+    .color(0xd7a6e0).secondaryColor(0x245454)
+    .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("fly_ash_aluminosilicate")
+    .dust(1)
+    .color(0x969fd9).secondaryColor(0x8a90ba)
+    .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("salt_roasted_aluminosilicate")
+    .dust(1)
+    .color(0x32568a).secondaryColor(0x4b4d2c)
+    .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("polymineral_leachate")
+    .fluid()
+    .color(0x6b5a67)
+
+    event.create("iron_mineral_solution")
+    .fluid()
+    .color(0x6b5a67)
+
+})
+
 // Misc
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("elemental_reduction_fluid")
