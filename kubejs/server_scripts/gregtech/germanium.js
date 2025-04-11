@@ -2,7 +2,6 @@
 *Line for Germanium, which is used in Advanced Solder
 */
 ServerEvents.recipes(event => {
-
     // Replace ash outputs with Coal Fly Ash
     event.replaceOutput({ input: /coal/ }, "gtceu:ash_dust", "gtceu:coal_fly_ash_dust")
     event.replaceOutput({ input: /coal/ }, "gtceu:dark_ash_dust", "gtceu:coal_fly_ash_dust")
