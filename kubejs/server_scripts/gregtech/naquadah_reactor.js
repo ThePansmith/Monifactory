@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     // Reactor Crafting
     event.recipes.gtceu.assembly_line("kubejs:naquadah_reactor")
         .itemInputs("gtceu:computer_monitor_cover", "3x ae2:spatial_pylon", "#gtceu:circuits/zpm", "gtceu:superconducting_coil",)
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:duranium 288")
+        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:duranium 288")
         .itemOutputs("gtceu:naquadah_reactor")
         .duration(1500)
         .EUt(122880)
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("kubejs:large_naquadah_reactor")
         .itemInputs("gtceu:computer_monitor_cover", "4x ae2:spatial_pylon", "2x #gtceu:circuits/uhv", "gtceu:fusion_coil", "2x gtceu:neutron_reflector", "gtceu:naquadah_alloy_frame", "gtceu:uv_sensor", "2x gtceu:uv_field_generator", "gtceu:uv_emitter", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire")
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:omnium 576")
+        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:omnium 576")
         .itemOutputs("gtceu:large_naquadah_reactor")
         .duration(1500)
         .EUt(491520)
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         // Refinery Recipe
         event.recipes.gtceu.assembly_line("kubejs:naquadah_refinery")
             .itemInputs("gtceu:large_mixer", "4x #gtceu:circuits/uhv", "8x nuclearcraft:plate_elite", "4x gtceu:uhv_field_generator", "4x gtceu:uhv_hermetic_casing", "2x kubejs:empty_fuel_rod", "2x gtceu:uhv_electric_pump", "2x gtceu:neutronium_huge_fluid_pipe", "4x kubejs:cryotheum_coolant_unit", "16x gtceu:double_tritanium_plate")
-            .inputFluids("gtceu:omnium 1152", "gtceu:soldering_alloy 1152", "gtceu:polybenzimidazole 2304")
+            .inputFluids("gtceu:omnium 1152", "gtceu:advanced_soldering_alloy 1152", "gtceu:polybenzimidazole 2304")
             .itemOutputs("gtceu:naquadah_refinery")
             .duration(1500)
             .EUt(491520)
