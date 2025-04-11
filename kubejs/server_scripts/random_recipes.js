@@ -934,7 +934,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:implosion_collider")
         .duration(900)
         .EUt(32000)
-    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("gtceu:implosion_compressor").EUt(6000).duration(1800))
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("gtceu:implosion_compressor").EUt(6000).duration(1800))
 
     // Froglights
     event.recipes.gtceu.atomic_reconstruction("ochre_froglight")
