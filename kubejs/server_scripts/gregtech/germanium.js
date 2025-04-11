@@ -1,4 +1,6 @@
-// Line for Germanium, which is used in Advanced Solder
+/** 
+*Line for Germanium, which is used in Advanced Solder
+*/
 
 ServerEvents.recipes(event => {
 
