@@ -1,7 +1,6 @@
 /** 
 *Line for Germanium, which is used in Advanced Solder
 */
-
 ServerEvents.recipes(event => {
 
     // Replace ash outputs with Coal Fly Ash
