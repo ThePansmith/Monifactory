@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line("dimensional_superassembler")
         .itemInputs("gtceu:assembly_line", "4x #gtceu:circuits/uiv", "16x gtceu:infinity_plate", "4x kubejs:dimensional_stabilization_netherite_casing", "16x kubejs:omnic_matrix_machine_casing", "6x gtceu:uev_conveyor_module", "4x gtceu:uev_robot_arm", "4x gtceu:uev_emitter", "2x gtceu:infinity_frame", "24x gtceu:polyethyl_cyanoacrylate_plate")
-        .inputFluids("gtceu:soldering_alloy 11520", "gtceu:omnium 5760")
+        .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760")
         .itemOutputs("gtceu:dimensional_superassembler")
         .duration(6000)
         .EUt(13920000)
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("gtceu:mega_alloy_blast_smelter")
         .itemInputs("gtceu:alloy_blast_smelter", "4x #gtceu:circuits/uhv", "4x gtceu:uv_field_generator", "4x #forge:springs/yttrium_barium_cuprate", "4x #forge:dense_plates/neutronium", "4x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire")
-        .inputFluids("gtceu:soldering_alloy 9216", "gtceu:omnium 5760")
+        .inputFluids("gtceu:advanced_soldering_alloy 9216", "gtceu:omnium 5760")
         .itemOutputs("gtceu:mega_alloy_blast_smelter")
         .duration(4000)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
     // Helical Fusion Reactor
     event.recipes.gtceu.assembly_line("gtceu:helical_fusion_reactor")
         .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:multidimensional_cpu_chip", "64x kubejs:multidimensional_cpu_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_single_wire", "24x gtceu:polyethyl_cyanoacrylate_plate")
-        .inputFluids("gtceu:soldering_alloy 11520", "gtceu:omnium 5760")
+        .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760")
         .itemOutputs("gtceu:helical_fusion_reactor")
         .duration(6000)
         .EUt(13920000)
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("hv_world_accelerator")
         .itemInputs("gtceu:luv_machine_hull", "64x gtceu:luv_field_generator", "16x gtceu:luv_field_generator", "20x gtceu:luv_sensor", "20x gtceu:luv_emitter", "16x #gtceu:circuits/luv", "4x gtceu:double_iridium_plate", "2x gtceu:dense_cryolobus_plate")
-        .inputFluids("gtceu:enderium 1152", "gtceu:soldering_alloy 1152")
+        .inputFluids("gtceu:enderium 1152", "gtceu:advanced_soldering_alloy 1152")
         .itemOutputs("gtceu:hv_world_accelerator")
         .stationResearch(b => b.researchStack("minecraft:clock").CWUt(4, 16000))
         .duration(6000)
@@ -345,7 +345,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("ev_world_accelerator")
         .itemInputs("gtceu:zpm_machine_hull", "64x gtceu:zpm_field_generator", "16x gtceu:zpm_field_generator", "20x gtceu:zpm_sensor", "20x gtceu:zpm_emitter", "16x #gtceu:circuits/zpm", "4x gtceu:double_europium_plate", "2x gtceu:dense_cryolobus_plate")
-        .inputFluids("gtceu:enderium 1152", "gtceu:soldering_alloy 1152")
+        .inputFluids("gtceu:enderium 1152", "gtceu:advanced_soldering_alloy 1152")
         .itemOutputs("gtceu:ev_world_accelerator")
         .duration(6000)
         .EUt(122880)
@@ -357,7 +357,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("iv_world_accelerator")
         .itemInputs("gtceu:uv_machine_hull", "64x gtceu:uv_field_generator", "16x gtceu:uv_field_generator", "20x gtceu:uv_sensor", "20x gtceu:uv_emitter", "16x #gtceu:circuits/uv", "4x gtceu:double_europium_plate", "2x gtceu:dense_neutronium_plate")
-        .inputFluids("gtceu:enderium 1152", "gtceu:soldering_alloy 1152")
+        .inputFluids("gtceu:enderium 1152", "gtceu:advanced_soldering_alloy 1152")
         .itemOutputs("gtceu:iv_world_accelerator")
         .duration(6000)
         .EUt(491520)
@@ -369,7 +369,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("luv_world_accelerator")
         .itemInputs("gtceu:uhv_machine_hull", "64x gtceu:uhv_field_generator", "16x gtceu:uhv_field_generator", "20x gtceu:uhv_sensor", "20x gtceu:uhv_emitter", "16x #gtceu:circuits/uhv", "4x gtceu:double_activated_netherite_plate", "2x gtceu:dense_neutronium_plate")
-        .inputFluids("gtceu:omnium 1152", "gtceu:soldering_alloy 1152")
+        .inputFluids("gtceu:omnium 1152", "gtceu:advanced_soldering_alloy 1152")
         .itemOutputs("gtceu:luv_world_accelerator")
         .duration(6000)
         .EUt(1966080)
@@ -382,7 +382,7 @@ ServerEvents.recipes(event => {
     // Beyond this point we could probably just treat these like joke items
     event.recipes.gtceu.assembly_line("zpm_world_accelerator")
         .itemInputs("gtceu:uev_machine_hull", "64x gtceu:uev_field_generator", "16x gtceu:uev_field_generator", "20x gtceu:uev_sensor", "20x gtceu:uev_emitter", "16x #gtceu:circuits/uev", "4x gtceu:double_holmium_plate", "2x gtceu:dense_infinity_plate")
-        .inputFluids("gtceu:omnium 1152", "gtceu:soldering_alloy 1152")
+        .inputFluids("gtceu:omnium 1152", "gtceu:advanced_soldering_alloy 1152")
         .itemOutputs("gtceu:zpm_world_accelerator")
         .duration(6000)
         .EUt(7864320)
@@ -394,7 +394,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("uv_world_accelerator")
         .itemInputs("gtceu:uiv_machine_hull", "64x gtceu:uiv_field_generator", "16x gtceu:uiv_field_generator", "20x gtceu:uiv_sensor", "20x gtceu:uiv_emitter", "16x #gtceu:circuits/uiv", "4x gtceu:double_monium_plate", "2x gtceu:dense_infinity_plate")
-        .inputFluids("gtceu:omnium 11520", "gtceu:soldering_alloy 11520")
+        .inputFluids("gtceu:omnium 11520", "gtceu:advanced_soldering_alloy 11520")
         .itemOutputs("gtceu:uv_world_accelerator")
         .duration(6000)
         .EUt(31457280)

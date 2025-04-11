@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 
     // Snad
     if (doSnad) {
-        if(doHarderRecipes) {
+        if (doHarderRecipes) {
             event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand", "enderio:pulsating_crystal"]).id("snad:snad")
             event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand", "enderio:pulsating_crystal"]).id("snad:red_snad")
         } else {
@@ -668,7 +668,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:shaped/mega_blast_furnace" })
     event.recipes.gtceu.assembly_line("kubejs:assembly_line/mega_blast_furnace")
         .itemInputs("gtceu:electric_blast_furnace", "4x #gtceu:circuits/zpm", "4x gtceu:luv_field_generator", "4x gtceu:naquadah_alloy_spring", "4x gtceu:dense_naquadah_alloy_plate", "4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire")
-        .inputFluids("gtceu:soldering_alloy 9216")
+        .inputFluids("gtceu:advanced_soldering_alloy 9216")
         .itemOutputs("gtceu:mega_blast_furnace")
         .duration(3000)
         .EUt(30720)
@@ -677,7 +677,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:shaped/mega_vacuum_freezer" })
     event.recipes.gtceu.assembly_line("kubejs:assembly_line/mega_vacuum_freezer")
         .itemInputs("gtceu:vacuum_freezer", "4x #gtceu:circuits/zpm", "4x gtceu:luv_field_generator", "4x gtceu:naquadah_normal_fluid_pipe", "4x gtceu:dense_naquadah_alloy_plate", "4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire")
-        .inputFluids("gtceu:soldering_alloy 9216")
+        .inputFluids("gtceu:advanced_soldering_alloy 9216")
         .itemOutputs("gtceu:mega_vacuum_freezer")
         .duration(3000)
         .EUt(30720)
@@ -702,6 +702,16 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:americium 1")
         .duration(320)
         .EUt(-2048)
+
+    // Advanced Soldering Alloy
+    event.recipes.gtceu.mixer("advanced_soldering_alloy")
+        .itemInputs("15x gtceu:bismuth_dust", "11x gtceu:tin_dust", "9x gtceu:zinc_dust", "4x gtceu:germanium_dust")
+        .itemOutputs("39x gtceu:advanced_soldering_alloy_dust")
+        .duration(700)
+        .EUt(480)
+        .circuit(2)
+
+    event.replaceInput({ id: /assembly_line/ }, "gtceu:soldering_alloy", "gtceu:advanced_soldering_alloy")
 
     // Neutronium Buff
     event.remove({ id: "gtceu:fusion_reactor/americium_and_naquadria_to_neutronium_plasma" })
@@ -757,7 +767,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:assembly_line/field_generator_zpm" })
     event.recipes.gtceu.assembly_line("kubejs:assembly_line/zpm_field_generator")
         .itemInputs("gtceu:naquadah_alloy_frame", "6x gtceu:naquadah_alloy_plate", "gtceu:quantum_star", "2x gtceu:zpm_emitter", "2x #gtceu:circuits/zpm", "64x gtceu:fine_uranium_rhodium_dinaquadide_wire", "64x gtceu:fine_uranium_rhodium_dinaquadide_wire", "4x gtceu:vanadium_gallium_single_cable")
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:cryococcus 1152")
+        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:cryococcus 1152")
         .itemOutputs("gtceu:zpm_field_generator")
         .duration(600)
         .EUt(24000)
@@ -922,11 +932,11 @@ ServerEvents.recipes(event => {
     // Parallel Implosion Compressor
     event.recipes.gtceu.assembly_line("gtceu:assembly_line/implosion_collider")
         .itemInputs("4x enderio:reinforced_obsidian_block", "2x #gtceu:circuits/zpm", "gtceu:solid_machine_casing", "3x gtceu:niobium_nitride_double_cable", "2x gtceu:zpm_electric_piston")
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:osmium 1152")
+        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:osmium 1152")
         .itemOutputs("gtceu:implosion_collider")
         .duration(900)
         .EUt(32000)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("gtceu:implosion_compressor").EUt(6000).duration(1800))
+    ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("gtceu:implosion_compressor").EUt(6000).duration(1800))
 
     // Froglights
     event.recipes.gtceu.atomic_reconstruction("ochre_froglight")
@@ -973,7 +983,7 @@ ServerEvents.recipes(event => {
     })
 
     // Let Oilsands have multiple types of oil
-    event.remove({id:"gtceu:centrifuge/oilsands_dust_separation"})
+    event.remove({ id: "gtceu:centrifuge/oilsands_dust_separation" })
     event.recipes.gtceu.centrifuge("oilsands_to_oil")
         .itemInputs("gtceu:oilsands_dust")
         .chancedOutput("minecraft:sand", 5000, 5000)
@@ -1007,7 +1017,7 @@ ServerEvents.recipes(event => {
         .circuit(1)
 
     // Fix ilmenite -> rutile stoich
-    event.remove({id:"gtceu:electric_blast_furnace/rutile_from_ilmenite"})
+    event.remove({ id: "gtceu:electric_blast_furnace/rutile_from_ilmenite" })
 
     event.recipes.gtceu.electric_blast_furnace("rutile_from_ilmenite")
         .itemInputs("10x gtceu:ilmenite_dust", "2x gtceu:carbon_dust")
