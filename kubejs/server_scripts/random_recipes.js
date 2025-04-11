@@ -711,7 +711,7 @@ ServerEvents.recipes(event => {
         .EUt(480)
         .circuit(2)
 
-    event.replaceInput({ type: "gtceu:assembly_line" }, Fluid.of("gtceu:soldering_alloy"), Fluid.of("gtceu:advanced_soldering_alloy"))
+    event.replaceInput({ id: /gtceu:assembly_line/ }, Fluid.of("gtceu:soldering_alloy"), Fluid.of("gtceu:advanced_soldering_alloy"))
 
     // Neutronium Buff
     event.remove({ id: "gtceu:fusion_reactor/americium_and_naquadria_to_neutronium_plasma" })
