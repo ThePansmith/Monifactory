@@ -97,8 +97,6 @@ global.itemNukeList = [
 
     // ExtendedAE
     "expatternprovider:silicon_block",
-    "expatternprovider:circuit_cutter",
-    /expatternprovider.*cutter/,
 
     // Extended Crafting
     "extendedcrafting:auto_ender_crafter",

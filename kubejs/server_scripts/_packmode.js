@@ -24,8 +24,7 @@ const doMonicoins = !!global.doMonicoins;
 const doSnad = !!global.doSnad;
 const doSteamAge = !!global.doSteamAge;
 const doStoneline = !!global.doStoneline;
-const doFluxbore = !!global.doFluxbore;
-const doHarderFluxBore = !!global.doHarderFluxBore;
+
 
 PlayerEvents.loggedIn(event => {
     const gameStages = [

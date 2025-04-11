@@ -197,11 +197,7 @@
 		}
 		{
 			dependencies: ["0F251AF2286FCE0D"]
-			description: [
-				"{moni.quest.2D9A95AC50BCB988.description1}"
-				""
-				"{moni.quest.2D9A95AC50BCB988.description2}"
-			]
+			description: ["{moni.quest.2D9A95AC50BCB988.description1}"]
 			hide_until_deps_visible: true
 			id: "2D9A95AC50BCB988"
 			optional: true

@@ -698,35 +698,18 @@ ServerEvents.recipes(event => {
     // detonator, locked to mv
     event.replaceInput({ id: "thermal:tools/detonator" }, ["#forge:gears/signalum"], ["#gtceu:circuits/mv"])
 
-    // Fluxbore
     event.remove([{ id: "thermal:drill_head" }, { id: "thermal:flux_drill" }])
-    if (doFluxbore) {
-        if (doHarderFluxBore) {
-            event.shaped("thermal:flux_drill", [
-                " A ",
-                "BCB",
-                "DED"
-            ], {
-                A: "gtceu:stainless_steel_drill_head",
-                B: "#forge:ingots/silver",
-                C: "gtceu:mv_power_unit",
-                D: "#forge:ingots/tin",
-                E: "gtceu:iron_gear"
-            }).id("kubejs:flux_drill");
-        } else {
-            event.shaped("thermal:flux_drill", [
-                " A ",
-                "BCB",
-                "DED"
-            ], {
-                A: "gtceu:vanadium_steel_drill_head",
-                B: "#forge:ingots/silver",
-                C: "gtceu:lv_power_unit",
-                D: "#forge:ingots/tin",
-                E: "gtceu:iron_gear"
-            }).id("kubejs:flux_drill");
-        }
-    }
+    event.shaped("thermal:flux_drill", [
+        " A ",
+        "BCB",
+        "DED"
+    ], {
+        A: "gtceu:vanadium_steel_drill_head",
+        B: "#forge:ingots/silver",
+        C: "gtceu:lv_power_unit",
+        D: "#forge:ingots/tin",
+        E: "gtceu:iron_gear"
+    }).id("kubejs:flux_drill");
 
     event.remove([{ id: "thermal:saw_blade" }, { id: "thermal:flux_saw" }])
     event.shaped("thermal:flux_saw", [

@@ -1,11 +1,11 @@
 {
-    "item.enderio.enderium_conduit": "エンダリウムエネルギー導管",
-    "item.enderio.signalum_conduit": "シグナルムエネルギー導管",
-    "item.enderio.cryolobus_conduit": "クリオロバスエネルギー導管",
-    "item.enderio.vibrant_conduit": "ヴァイブラント合金エネルギー導管",
-    "item.enderio.endsteel_conduit": "エンドスチールエネルギー導管",
-    "item.enderio.lumium_conduit": "ルミウムエネルギー導管",
-    "item.enderio.energetic_conduit": "エナジェティック合金エネルギー導管",
-    "item.enderio.conductive_conduit": "伝導鉄エネルギー導管",
-    "item.enderio.sculk_superconductor_conduit": "スカルク超伝導体エネルギー導管"
+    "item.enderio.enderium_conduit": "Enderium Energy Conduit",
+    "item.enderio.signalum_conduit": "Signalum Energy Conduit",
+    "item.enderio.cryolobus_conduit": "Cryolobus Energy Conduit",
+    "item.enderio.vibrant_conduit": "Vibrant Alloy Energy Conduit",
+    "item.enderio.endsteel_conduit": "End Steel Energy Conduit",
+    "item.enderio.lumium_conduit": "Lumium Energy Conduit",
+    "item.enderio.energetic_conduit": "Energetic Alloy Energy Conduit",
+    "item.enderio.conductive_conduit": "Conductive Iron Energy Conduit",
+    "item.enderio.sculk_superconductor_conduit": "Sculk Superconductor Energy Conduit"
 }
