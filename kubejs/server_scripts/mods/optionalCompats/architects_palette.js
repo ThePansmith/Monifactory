@@ -5,7 +5,7 @@
  *
  */
 
-if (Platform.isLoaded("architects_palette")) { // Mod ID goes here
+if (Platform.isLoaded("architects_palette")) {
     console.log("Architect's Palette found, loading compat script...")
 
     ServerEvents.recipes(event => {
@@ -18,6 +18,7 @@ if (Platform.isLoaded("architects_palette")) { // Mod ID goes here
         event.remove({ id: "architects_palette:cerebral_plate" })
         event.remove({ id: "architects_palette:sunmetal_blend" })
         event.remove({ id: "architects_palette:hazard_sign" })
+        event.remove({ id: "architects_palette:wardstone_brick_from_wardstone_blend_smelting" })
 
         event.remove({ type: "architects_palette:warping" })
 
