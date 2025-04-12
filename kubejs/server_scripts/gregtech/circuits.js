@@ -253,8 +253,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("4x kubejs:matter_processor")
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(10 * 20)
-        .EUt(250000 * 2)
+        .duration(10 * 20 / 2)
+        .EUt(250000)
 
     event.recipes.gtceu.circuit_assembler("matter_processor_assembly")
         .itemInputs("kubejs:matter_processing_unit",
@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:soldering_alloy 1152")
         .itemOutputs("2x kubejs:matter_processor_assembly")
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(20 * 20)
+        .duration(20 * 20 / 2)
         .EUt(250000)
 
     event.recipes.gtceu.assembly_line("matter_processor_computer")
@@ -313,7 +313,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids("gtceu:soldering_alloy 1152", "gtceu:omnium 144")
         .itemOutputs("kubejs:matter_processor_computer")
-        .duration(20 * 20)
+        .duration(20 * 20 / 2)
         .EUt(250000)
 
     event.recipes.gtceu.assembly_line("matter_processor_mainframe")
@@ -349,7 +349,7 @@ ServerEvents.recipes(event => {
             "8x gtceu:crystal_matrix_plate") // could replace with omnium frame
         .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 288")
         .itemOutputs("kubejs:matter_processor_mainframe")
-        .duration(2400)
+        .duration(2400 / 2)
         .EUt(GTValues.VA[GTValues.UHV])
 
     // WIP: Dimensional Circuits
