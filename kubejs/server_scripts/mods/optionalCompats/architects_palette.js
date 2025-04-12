@@ -131,6 +131,12 @@ if (Platform.isLoaded("architects_palette")) {
             .duration(100)
             .EUt(2)
 
+        event.recipes.gtceu.compressor("nether_brass_block")
+            .itemInputs("4x architects_palette:nether_brass_brick")
+            .itemOutputs("4x architects_palette:nether_brass_block")
+            .duration(100)
+            .EUt(2)
+
         event.recipes.gtceu.compressor("withered_bone_block")
             .itemInputs("3x architects_palette:withered_bone")
             .itemOutputs("architects_palette:withered_bone_block")
