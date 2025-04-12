@@ -1,4 +1,11 @@
-if (Platform.isLoaded('architects_palette')) { // Mod ID goes here
+/**
+ *
+ * Compatibility Script for Architect's Palette
+ * Mainly removes Warping, but also adds various other recipes to GT machines.
+ *
+ */
+
+if (Platform.isLoaded("architects_palette")) { // Mod ID goes here
     console.log("Architect's Palette found, loading compat script...")
 
     ServerEvents.recipes(event => {
@@ -10,6 +17,7 @@ if (Platform.isLoaded('architects_palette')) { // Mod ID goes here
         event.remove({ id: "architects_palette:wardstone_blend" })
         event.remove({ id: "architects_palette:cerebral_plate" })
         event.remove({ id: "architects_palette:sunmetal_blend" })
+        event.remove({ id: "architects_palette:hazard_sign" })
 
         event.remove({ type: "architects_palette:warping" })
 
@@ -45,7 +53,7 @@ if (Platform.isLoaded('architects_palette')) { // Mod ID goes here
             .itemOutputs("4x architects_palette:sunmetal_blend")
             .duration(20)
             .EUt(8)
-        
+
         event.recipes.gtceu.mixer("nether_brass_blend")
             .itemInputs("minecraft:soul_sand", "gtceu:copper_dust")
             .inputFluids(Fluid.of("gtceu:iron", 16))
@@ -202,16 +210,21 @@ if (Platform.isLoaded('architects_palette')) { // Mod ID goes here
             .EUt(32)
 
         event.recipes.gtceu.assembler("molten_nether_bricks")
-            .circuit(23)
             .itemInputs("minecraft:nether_bricks", "minecraft:magma_block")
             .itemOutputs("4x architects_palette:molten_nether_bricks")
             .duration(40)
             .EUt(32)
 
         event.recipes.gtceu.assembler("sunstone")
-            .circuit(23)
             .itemInputs("minecraft:basalt", "architects_palette:sunmetal_blend")
             .itemOutputs("4x architects_palette:sunstone")
+            .duration(40)
+            .EUt(32)
+
+        event.recipes.gtceu.assembler("hazard_sign")
+            .circuit(23)
+            .itemInputs("minecraft:iron_nugget", "gtceu:iron_plate")
+            .itemOutputs("4x architects_palette:hazard_sign")
             .duration(40)
             .EUt(32)
 
@@ -239,7 +252,7 @@ if (Platform.isLoaded('architects_palette')) { // Mod ID goes here
             .itemOutputs("architects_palette:hadaline")
             .duration(20)
             .EUt(32)
-        
+
         event.recipes.gtceu.atomic_reconstruction("moonstone")
             .itemInputs("architects_palette:sunstone")
             .itemOutputs("architects_palette:moonstone")
@@ -299,7 +312,7 @@ if (Platform.isLoaded('architects_palette')) { // Mod ID goes here
             .itemOutputs("architects_palette:monazite_rod")
             .duration(20)
             .EUt(32)
-        
+
         event.recipes.gtceu.atomic_reconstruction("monazite_rod")
             .itemInputs("architects_palette:heliodor_rod")
             .itemOutputs("architects_palette:monazite_rod")
@@ -311,7 +324,7 @@ if (Platform.isLoaded('architects_palette')) { // Mod ID goes here
             .itemOutputs("architects_palette:ekanite_rod")
             .duration(20)
             .EUt(32)
-        
+
         event.recipes.gtceu.atomic_reconstruction("heliodor_rod")
             .itemInputs("architects_palette:ekanite_rod")
             .itemOutputs("architects_palette:heliodor_rod")
