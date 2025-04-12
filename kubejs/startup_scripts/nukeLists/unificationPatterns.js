@@ -16,6 +16,7 @@ global.unificationExcludedItems = [
     "enderio:stone_gear",
     "enderio:vibrant_gear",
     "enderio:wood_gear",
+    "extendedcrafting:crystaltine_block",
     "extendedcrafting:crystaltine_ingot",
     "extendedcrafting:crystaltine_nugget",
     "extendedcrafting:luminessence_block",
