@@ -132,7 +132,7 @@ if (Platform.isLoaded("architects_palette")) {
             .EUt(2)
 
         event.recipes.gtceu.compressor("nether_brass_block")
-            .itemInputs("4x architects_palette:nether_brass_brick")
+            .itemInputs("4x architects_palette:nether_brass_ingot")
             .itemOutputs("4x architects_palette:nether_brass_block")
             .duration(100)
             .EUt(2)
