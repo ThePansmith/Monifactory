@@ -1,3 +1,4 @@
+// priority: -10
 /**
  * Removes all tags from objects on the nukelists and deletes all recipes & uses for them.
  *

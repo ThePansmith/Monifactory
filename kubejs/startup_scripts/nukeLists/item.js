@@ -121,6 +121,8 @@ global.itemNukeList = [
 
     // GTCEu: Modern
     "gtceu:ender_fluid_link_cover", // Not Yet Implemented. Remove when GTM makes it work.
+    "gtceu:hot_kanthal_ingot",
+    "gtceu:hot_silicon_ingot",
     "gtceu:milk",
     "gtceu:steel_machine_casing",
     /^gtceu:uxv/,
