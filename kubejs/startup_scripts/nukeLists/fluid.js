@@ -24,6 +24,9 @@ global.fluidNukeList = [
     "enderio:rocket_fuel",
     "enderio:vapor_of_levity",
 
+    // GregTech Modern
+    "gtceu:molten_kanthal",
+
     // Thermal Series
     "cofh_core:experience",
     "thermal:creosote",

@@ -179,11 +179,6 @@ ServerEvents.recipes(event => {
         .EUt(30)
 })
 
-// Replace hot ingot EBF output with regular for Kanthal
-ServerEvents.recipes(event => {
-    event.replaceOutput({ id: /^gtceu:electric_blast_furnace\/blast_kanthal/ }, "gtceu:hot_kanthal_ingot", "gtceu:kanthal_ingot")
-})
-
 ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_blast_smelter("kubejs:conductive_alloy_abs")
         .itemInputs("#forge:dusts/iron", "#forge:dusts/redstone")
