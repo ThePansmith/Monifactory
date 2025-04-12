@@ -2,7 +2,7 @@
 *Line for Germanium, which is used in Advanced Solder
 */
 ServerEvents.recipes(event => {
-// Replace ash outputs with Coal Fly Ash
+    // Replace ash outputs with Coal Fly Ash
     event.replaceOutput({ input: /coal/ }, "gtceu:ash_dust", "gtceu:coal_fly_ash_dust")
     event.replaceOutput({ input: /coal/ }, "gtceu:dark_ash_dust", "gtceu:coal_fly_ash_dust")
     event.replaceOutput({ input: /coke/ }, "gtceu:ash_dust", "gtceu:coal_fly_ash_dust")
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of("gtceu:oxalic_acid_solution", 1000))
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
-    
+
     event.recipes.gtceu.chemical_bath("kubejs:polymineral_leachate")
         .itemInputs("gtceu:fly_ash_polymineral_mixture_dust")
         .inputFluids(Fluid.of("gtceu:oxalic_acid_solution", 1000))

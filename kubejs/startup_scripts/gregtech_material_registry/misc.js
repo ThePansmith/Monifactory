@@ -380,7 +380,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("2x hydrogen", "2x carbon", "2x nickel", "4x oxygen", "hydrogen", "2x oxygen")
         .formula("(H2C2O4)(Ni2)H2O")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    
+
     event.create("polymineral_leachate")
         .fluid()
         .color(0x6b5a67)
