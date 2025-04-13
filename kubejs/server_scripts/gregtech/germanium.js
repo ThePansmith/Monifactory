@@ -34,8 +34,8 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("gtceu:oxalic_acid_solution", 2000))
         .itemOutputs("4x gtceu:sodium_dust")
         .outputFluids(Fluid.of("gtceu:aluminosilicate_leachate", 2000))
-        .duration(280)
-        .EUt(GTValues.VA[GTValues.HV])
+        .duration(140)
+        .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.centrifuge("kubejs:aluminosilicate_leachate_centrifuge")
         .inputFluids(Fluid.of("gtceu:aluminosilicate_leachate", 2000))
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("minecraft:water", 1000))
         .outputFluids(Fluid.of("gtceu:oxalic_acid_solution", 1000))
         .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.chemical_bath("kubejs:polymineral_leachate")
         .itemInputs("gtceu:fly_ash_polymineral_mixture_dust")
@@ -62,8 +62,8 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:marble_dust", 9900, 0)
         .chancedItemOutputLogic(ChanceLogic.XOR)
         .outputFluids(Fluid.of("gtceu:polymineral_leachate", 1000))
-        .duration(800)
-        .EUt(GTValues.VA[GTValues.HV])
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.centrifuge("polymineral_leachate_centrifuge")
         .inputFluids(Fluid.of("gtceu:polymineral_leachate", 3000))
@@ -89,8 +89,8 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:sphalerite_dust", 5000, 0)
         .chancedOutput("gtceu:small_gallium_dust", 2000, 0)
         .outputFluids(Fluid.of("minecraft:water", 1000))
-        .duration(300)
-        .EUt(GTValues.VA[GTValues.HV])
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV])
 
     // Oxalic Acid Solution Recycling
     event.recipes.gtceu.distillation_tower("kubejs:oxalic_acid_silicon_solution_recycling_tower")
