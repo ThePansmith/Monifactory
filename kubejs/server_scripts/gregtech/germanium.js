@@ -101,22 +101,6 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.MV])
 
-    event.recipes.gtceu.distillery("kubejs:oxalic_acid_silicon_solution_recycling_acid")
-        .inputFluids(Fluid.of("gtceu:oxalic_acid_silicon_solution", 500))
-        .itemOutputs("gtceu:small_silicon_dust")
-        .outputFluids(Fluid.of("gtceu:oxalic_acid_solution", 250))
-        .duration(240)
-        .EUt(GTValues.VA[GTValues.LV])
-        .circuit(1)
-
-    event.recipes.gtceu.distillery("kubejs:oxalic_acid_silicon_solution_recycling_water")
-        .inputFluids(Fluid.of("gtceu:oxalic_acid_silicon_solution", 500))
-        .itemOutputs("gtceu:small_silicon_dust")
-        .outputFluids(Fluid.of("gtceu:water", 250))
-        .duration(240)
-        .EUt(GTValues.VA[GTValues.LV])
-        .circuit(2)
-
     event.recipes.gtceu.centrifuge("kubejs:oxalic_acid_silicon_nickel_recycling")
         .inputFluids(Fluid.of("gtceu:oxalic_acid_nickel_solution", 2000))
         .itemOutputs("gtceu:nickel_dust")
