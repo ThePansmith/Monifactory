@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("active_transformer")
         .itemInputs(
             "gtceu:iv_transformer_16a",
-            "2x #gtceu:circuits/iv",
+            "#gtceu:circuits/luv",
             "8x gtceu:samarium_iron_arsenic_oxide_single_wire",
             "2x gtceu:hpic_chip"
         )
