@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.extractor("sugar_cane_solution")
         .itemInputs("2x minecraft:sugar_cane")
         .outputFluids(Fluid.of("gtceu:sucrose_solution", 1000))
-        .duration(200).EUt(30)
+        .duration(300).EUt(120)
 
     event.recipes.gtceu.distillery("sucrose_distillation")
         .inputFluids(Fluid.of("gtceu:sucrose_solution", 1000))

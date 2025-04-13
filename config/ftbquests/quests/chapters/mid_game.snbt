@@ -353,7 +353,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["0006FEA1843FEA0A"]
+			dependencies: [
+				"0006FEA1843FEA0A"
+				"5BE3E37772FAF6CB"
+			]
 			description: ["{moni.quest.47A81FADD828772D.description1}"]
 			icon: "hostilenetworks:blank_data_model"
 			id: "47A81FADD828772D"
@@ -1107,7 +1110,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5FF33EF493DB7E01.title}"
-			x: 40.0d
+			x: 39.5d
 			y: -4.5d
 		}
 		{
@@ -1131,7 +1134,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.51F895647CB242F1.title}"
-			x: 40.0d
+			x: 39.5d
 			y: -2.5d
 		}
 		{
@@ -1160,7 +1163,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.16EACCF9B4FA89B3.title}"
-			x: 40.0d
+			x: 39.5d
 			y: -0.5d
 		}
 		{
@@ -2132,7 +2135,6 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["6FB3E3D9CA0F4B30"]
 			description: [
 				"{moni.quest.08B36E2C37C417E5.description1}"
 				""

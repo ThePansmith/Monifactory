@@ -9,12 +9,6 @@
 	order_index: 6
 	quest_links: [
 		{
-			id: "7D217833035647CD"
-			linked_quest: "04A0863937695AC4"
-			x: 17.0d
-			y: -8.5d
-		}
-		{
 			id: "4CA98E8FC9082FA2"
 			linked_quest: "5F9C7FB40AD2640B"
 			x: 17.0d
@@ -469,7 +463,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["077AA27F26B7831F"]
 			description: [
 				"{moni.quest.2280472741683581.description1}"
 				""
@@ -524,7 +517,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: ["{moni.quest.3270496124969A51.description1}"]
 			disable_toast: true
 			id: "3270496124969A51"
@@ -835,7 +827,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["3A5387B2003177B2"]
 			description: [
 				"{moni.quest.712023557B5B1812.description1}"
 				""
@@ -1312,7 +1303,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["17312BF0197B87A8"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.77670BF761084AA2.description1}"
@@ -1349,10 +1339,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"12B95158E4C792DB"
-				"77670BF761084AA2"
-			]
+			dependencies: ["77670BF761084AA2"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.1A30472430354F1E.description1}"

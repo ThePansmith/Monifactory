@@ -54,7 +54,7 @@
 			id: "64A590345841C96D"
 			linked_quest: "6F5BB99060FF03AC"
 			shape: "hexagon"
-			x: 45.75d
+			x: 44.88d
 			y: -10.75d
 		}
 		{
@@ -160,8 +160,8 @@
 		{
 			id: "7CCC9B0F9E2E68D8"
 			linked_quest: "21E10888F52A3C73"
-			x: 35.0d
-			y: -8.75d
+			x: 36.5d
+			y: -4.75d
 		}
 	]
 	quests: [
@@ -431,7 +431,7 @@
 			y: -14.625d
 		}
 		{
-			dependencies: ["7C9C91EC9F3930C2"]
+			dependencies: ["113E9543ADB1666B"]
 			description: [
 				"{moni.quest.4CF399EC00A65E3A.description1}"
 				""
@@ -445,8 +445,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4CF399EC00A65E3A.title}"
-			x: 38.75d
-			y: -4.75d
+			x: 38.625d
+			y: -8.75d
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
@@ -463,7 +463,10 @@
 			y: -18.0d
 		}
 		{
-			dependencies: ["5A70898C99B828E3"]
+			dependencies: [
+				"5A70898C99B828E3"
+				"5BE3E37772FAF6CB"
+			]
 			description: [
 				"{moni.quest.161F61C28DBC5941.description1}"
 				""
@@ -665,8 +668,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7C9C91EC9F3930C2.title}"
-			x: 36.5d
-			y: -4.75d
+			x: 34.75d
+			y: -8.75d
 		}
 		{
 			dependencies: ["61301FBD825F8280"]
@@ -687,7 +690,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4155AEBF760C42E8.title}"
-			x: 35.0d
+			x: 33.0d
 			y: -6.75d
 		}
 		{
@@ -1018,10 +1021,7 @@
 			y: -6.75d
 		}
 		{
-			dependencies: [
-				"1B1D3A66B847D129"
-				"1D00150456DEF379"
-			]
+			dependencies: ["1D00150456DEF379"]
 			description: ["{moni.quest.06849E067C88C0E9.description1}"]
 			id: "06849E067C88C0E9"
 			size: 1.0d
@@ -1032,7 +1032,7 @@
 				type: "item"
 			}]
 			x: 35.0d
-			y: -24.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["68734C70E2D19616"]
@@ -1149,8 +1149,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4E9530E62A4B673B.title}"
-			x: 33.0d
-			y: -8.75d
+			x: 38.5d
+			y: -4.75d
 		}
 		{
 			dependencies: ["1B1D3A66B847D129"]
@@ -1166,7 +1166,7 @@
 			}]
 			title: "{moni.quest.786AECA42F53B45A.title}"
 			x: 43.75d
-			y: -26.75d
+			y: -22.5d
 		}
 		{
 			dependencies: [
@@ -1192,10 +1192,7 @@
 			y: -15.9375d
 		}
 		{
-			dependencies: [
-				"01E542E1C9DAF5B4"
-				"5911900438648430"
-			]
+			dependencies: ["01E542E1C9DAF5B4"]
 			description: [
 				"{moni.quest.07E757AAA1C7435D.description1}"
 				""

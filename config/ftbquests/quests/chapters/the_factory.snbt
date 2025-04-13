@@ -55,10 +55,7 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"2D31856F6EF1ED69"
-				"604CCBE824D03A74"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"{moni.quest.62BBD1F6767A4D90.description1}"
 				""
@@ -186,10 +183,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"2D31856F6EF1ED69"
-				"62BBD1F6767A4D90"
-			]
+			dependencies: ["62BBD1F6767A4D90"]
 			description: [
 				"{moni.quest.0381DCD3FD3C9ED2.description1}"
 				""
@@ -820,7 +814,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"{moni.quest.30EBD4E7BBFFEF2C.description1}"
 				""
@@ -1289,7 +1282,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"{moni.quest.74B5CA5A48CE7B39.description1}"
 				""
@@ -1314,7 +1306,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"{moni.quest.1CA6D620309F2B9E.description1}"
 				""
@@ -1943,7 +1934,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["2D31856F6EF1ED69"]
 			description: [
 				"{moni.quest.18D8D18C4494C587.description1}"
 				""
@@ -1967,7 +1957,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: [
 				"{moni.quest.1A427A8CB43C8B59.description1}"
 				""
@@ -2002,7 +1991,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: ["{moni.quest.431BB650AC492C84.description1}"]
 			icon: "minecraft:hopper"
 			id: "431BB650AC492C84"
@@ -2017,7 +2005,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: [
 				"{moni.quest.5F6B13DBCABA5078.description1}"
 				""
@@ -2370,7 +2357,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: [
 				"{moni.quest.5B52FFEBF5D65C20.description1}"
 				""
@@ -2397,10 +2383,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"6FB3E3D9CA0F4B30"
-				"29A487F0BC43AAF9"
-			]
+			dependencies: ["29A487F0BC43AAF9"]
 			description: [
 				"{moni.quest.7EA737163230F984.description1}"
 				""
@@ -2517,10 +2500,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"66FCC26399376B55"
-				"1BC6DDC2D50F9C46"
-			]
+			dependencies: ["1BC6DDC2D50F9C46"]
 			description: ["{moni.quest.74A7ABF43D6A403F.description1}"]
 			disable_toast: true
 			icon: "gtceu:terminal"
@@ -2588,7 +2568,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["17312BF0197B87A8"]
 			description: [
 				"{moni.quest.604CCBE824D03A74.description1}"
 				""
