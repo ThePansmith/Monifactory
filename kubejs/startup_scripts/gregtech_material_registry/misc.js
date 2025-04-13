@@ -308,6 +308,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0xF5F5F5)
         .components("1x ammonia", "1x nitric_acid")
+        .formula("(NH4)NO3")
 
     event.create("thorium_hydroxide")
         .dust()
