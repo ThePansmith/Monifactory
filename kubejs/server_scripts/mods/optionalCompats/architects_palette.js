@@ -8,19 +8,37 @@
 if (Platform.isLoaded("architects_palette")) {
     console.log("Architect's Palette found, loading compat script...")
 
+    LootJS.modifiers((event) => {
+        event.addEntityLootModifier("minecraft:wither_skeleton").replaceLoot("architects_palette:withered_bone", "minecraft:bone", true);
+    });
+
     ServerEvents.recipes(event => {
         // Recipe Removal
-        event.remove({ id: "architects_palette:algal_blend" })
-        event.remove({ id: "architects_palette:plating_block" })
-        event.remove({ id: "architects_palette:nether_brass_blend" })
-        event.remove({ id: "architects_palette:oracle_jelly" })
-        event.remove({ id: "architects_palette:wardstone_blend" })
-        event.remove({ id: "architects_palette:cerebral_plate" })
-        event.remove({ id: "architects_palette:sunmetal_blend" })
-        event.remove({ id: "architects_palette:hazard_sign" })
-        event.remove({ id: "architects_palette:wardstone_brick_from_wardstone_blend_smelting" })
+        event.remove([
+            { id: "architects_palette:algal_blend" },
+            { id: "architects_palette:algal_blend" },
+            { id: "architects_palette:plating_block" },
+            { id: "architects_palette:tread_plating" },
+            { id: "architects_palette:nether_brass_blend" },
+            { id: "architects_palette:oracle_jelly" },
+            { id: "architects_palette:wardstone_blend" },
+            { id: "architects_palette:cerebral_plate" },
+            { id: "architects_palette:sunmetal_blend" },
+            { id: "architects_palette:hazard_sign" },
+            { id: "architects_palette:entwine_rod" },
+            { id: "architects_palette:withered_bone" },
+        ])
+
+        // For some reason the smelting recipe wouldn't go away so I went with the more direct approach.
+        event.remove({ output: "architects_palette:wardstone_brick" })
 
         event.remove({ type: "architects_palette:warping" })
+
+        event.replaceInput(
+            { input: "architects_palette:withered_bone" },
+            "architects_palette:withered_bone",
+            "kubejs:wither_bone"
+        )
 
         // Mixer Recipes
         event.recipes.gtceu.mixer("algal_blend")
@@ -49,17 +67,27 @@ if (Platform.isLoaded("architects_palette")) {
             .EUt(7)
 
         event.recipes.gtceu.mixer("sunmetal_blend")
-            .itemInputs("minecraft:soul_sand")
-            .inputFluids(Fluid.of("gtceu:gold", 16))
+            .itemInputs("minecraft:soul_sand", "gtceu:tiny_gold_dust")
             .itemOutputs("4x architects_palette:sunmetal_blend")
             .duration(20)
             .EUt(8)
 
+        event.recipes.gtceu.mixer("sunmetal_blend_9x")
+            .itemInputs("9x minecraft:soul_sand", "gtceu:gold_dust")
+            .itemOutputs("36x architects_palette:sunmetal_blend")
+            .duration(100)
+            .EUt(8)
+
         event.recipes.gtceu.mixer("nether_brass_blend")
-            .itemInputs("minecraft:soul_sand", "gtceu:copper_dust")
-            .inputFluids(Fluid.of("gtceu:iron", 16))
+            .itemInputs("minecraft:soul_sand", "gtceu:copper_dust", "gtceu:tiny_iron_dust")
             .itemOutputs("4x architects_palette:nether_brass_blend")
-            .duration(40)
+            .duration(20)
+            .EUt(32)
+
+        event.recipes.gtceu.mixer("nether_brass_blend_9x")
+            .itemInputs("9x minecraft:soul_sand", "9x gtceu:copper_dust", "gtceu:iron_dust")
+            .itemOutputs("36x architects_palette:nether_brass_blend")
+            .duration(100)
             .EUt(32)
 
         event.recipes.gtceu.mixer("oracle_jelly")
@@ -138,7 +166,7 @@ if (Platform.isLoaded("architects_palette")) {
             .EUt(2)
 
         event.recipes.gtceu.compressor("withered_bone_block")
-            .itemInputs("3x architects_palette:withered_bone")
+            .itemInputs("3x kubejs:wither_bone")
             .itemOutputs("architects_palette:withered_bone_block")
             .duration(100)
             .EUt(2)
@@ -168,16 +196,16 @@ if (Platform.isLoaded("architects_palette")) {
             .duration(112)
             .EUt(16)
 
-        // Extractor Recipes
-        event.recipes.gtceu.extractor("unobtanium")
+        // Forge Hammer Recipes
+        event.recipes.gtceu.forge_hammer("unobtanium")
             .itemInputs("architects_palette:unobtanium_block")
             .itemOutputs("5x architects_palette:unobtanium")
             .duration(60)
             .EUt(7)
 
-        event.recipes.gtceu.extractor("withered_bone")
+        event.recipes.gtceu.forge_hammer("withered_bone")
             .itemInputs("architects_palette:withered_bone_block")
-            .itemOutputs("3x architects_palette:withered_bone")
+            .itemOutputs("3x kubejs:wither_bone")
             .duration(60)
             .EUt(7)
 
@@ -190,15 +218,15 @@ if (Platform.isLoaded("architects_palette")) {
 
         event.recipes.gtceu.assembler("plating_block")
             .circuit(24)
-            .itemInputs("minecraft:iron_nugget", "gtceu:iron_plate")
+            .itemInputs("4x minecraft:iron_nugget", "gtceu:iron_plate")
             .itemOutputs("8x architects_palette:plating_block")
             .duration(40)
             .EUt(32)
 
-        event.recipes.gtceu.assembler("thread_plate")
+        event.recipes.gtceu.assembler("tread_plate")
             .circuit(23)
-            .itemInputs("minecraft:iron_nugget", "architects_palette:plating_block")
-            .itemOutputs("8x architects_palette:plating_block")
+            .itemInputs("4x minecraft:iron_nugget", "architects_palette:plating_block")
+            .itemOutputs("8x architects_palette:tread_plate")
             .duration(40)
             .EUt(32)
 
