@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
     extractgas("neon", "kubejs:solidified_neon", Fluid.of("gtceu:neon", 1000));
     extractgas("krypton", "kubejs:solidified_krypton", Fluid.of("gtceu:krypton", 1000));
     extractgas("xenon", "kubejs:solidified_xenon", Fluid.of("gtceu:xenon", 1000));
+    extractgas("argon", "kubejs:solidified_argon", Fluid.of("gtceu:argon", 1000));
     // Extract Nuclearcraft Isotopes
     extractisotope("thorium_230", "nuclearcraft:thorium_230", Fluid.of("gtceu:thorium", 144));
     extractisotope("thorium_232", "nuclearcraft:thorium_232", Fluid.of("gtceu:thorium", 144));

@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:universe_boule")
         .duration(18000)
         .EUt(250000)
-        .blastFurnaceTemp(12000)
+        .blastFurnaceTemp(11000)
 
     event.recipes.gtceu.cutter("universe_wafer")
         .itemInputs("kubejs:universe_boule")

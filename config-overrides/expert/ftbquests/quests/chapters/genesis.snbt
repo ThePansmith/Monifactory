@@ -829,11 +829,9 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"{moni.quest.07D45A3F8A74A61C.description1.expert}"
+				"{moni.quest.07D45A3F8A74A61C.description1}"
 				""
 				"{moni.quest.07D45A3F8A74A61C.description2}"
-				""
-				"{moni.quest.07D45A3F8A74A61C.description3}"
 			]
 			icon: {
 				Count: 1

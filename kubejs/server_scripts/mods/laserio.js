@@ -4,13 +4,13 @@
 
 ServerEvents.recipes(event => {
     // Disable LIO transportation in Expert (Cards are used in recipes)
-    if (isExpertMode) {
+    if (!doLaserIO) {
         event.remove({ id: /laserio:laser_/ })
         event.remove({ id: /laserio:card_/ })
     }
 
     // Harder recipes in Hard Mode
-    const cardChip = isHardMode ? "#gtceu:circuits/lv" : "#gtceu:circuits/ulv"
+    const cardChip = doHarderRecipes ? "#gtceu:circuits/lv" : "#gtceu:circuits/ulv"
 
     // Replace Logic chips with circuits.
     event.remove({ output: ["laserio:logic_chip_raw", "laserio:logic_chip"] })
@@ -23,9 +23,8 @@ ServerEvents.recipes(event => {
         ["redstone", "gtceu:red_alloy_plate"]
     ]
 
-    if (!isExpertMode) {
-
-
+    if (doLaserIO) {
+        // Cards
         Cards.forEach(card => {
             event.shaped(`laserio:card_${card[0]}`, [
                 "TNT",
@@ -39,6 +38,26 @@ ServerEvents.recipes(event => {
             }).id(`laserio:card_${card[0]}`)
         })
 
+        // Overclockers
+        event.remove({ output: ["laserio:overclocker_card", "laserio:overclocker_node"] })
+        event.shaped("laserio:overclocker_card", [
+            "E",
+            "P",
+            "A"
+        ], {
+            E: "#forge:double_plates/electrical_steel",
+            P: "#forge:plates/electrum",
+            A: "ae2:basic_card"
+        })
+        event.shaped("laserio:overclocker_node", [
+            "E",
+            "P",
+            "A"
+        ], {
+            E: "#forge:double_plates/electrical_steel",
+            P: "enderio:pulsating_crystal",
+            A: "ae2:advanced_card"
+        })
 
         // Laser Connectors
         event.shaped("4x laserio:laser_connector", [
@@ -66,8 +85,8 @@ ServerEvents.recipes(event => {
             "FFF"
         ], {
             F: "gtceu:electrum_flux_plate",
-            E: "gtceu:luv_emitter",
-            C: "#gtceu:circuits/luv",
+            E: "gtceu:ev_emitter",
+            C: "#gtceu:circuits/iv",
             R: "gtceu:red_alloy_plate"
         }).id("laserio:laser_connector_advanced")
     }
@@ -166,25 +185,4 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x laserio:energy_overclocker_card_tier_9")
         .duration(80)
         .EUt(16)
-
-    // Overclockers
-    event.remove({ output: ["laserio:overclocker_card", "laserio:overclocker_node"] })
-    event.shaped("laserio:overclocker_card", [
-        "E",
-        "P",
-        "A"
-    ], {
-        E: "#forge:double_plates/electrical_steel",
-        P: "#forge:plates/electrum",
-        A: "ae2:basic_card"
-    })
-    event.shaped("laserio:overclocker_node", [
-        "E",
-        "P",
-        "A"
-    ], {
-        E: "#forge:double_plates/electrical_steel",
-        P: "enderio:pulsating_crystal",
-        A: "ae2:advanced_card"
-    })
 })

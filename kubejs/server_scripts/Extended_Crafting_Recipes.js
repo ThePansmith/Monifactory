@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:infinity_ingot")
         .duration(400)
         .EUt(50000)
-        .blastFurnaceTemp(12000)
+        .blastFurnaceTemp(12500)
 
     event.recipes.gtceu.electric_blast_furnace("infinity_ingot_activation_t2")
         .itemInputs("4x kubejs:dormant_infinity_compound_ingot", "kubejs:furious_infinity_catalyst")
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x gtceu:infinity_ingot", "kubejs:dormant_furious_infinity_catalyst")
         .duration(300)
         .EUt(250000)
-        .blastFurnaceTemp(12000)
+        .blastFurnaceTemp(12500)
 
     event.recipes.gtceu.electric_blast_furnace("infinity_ingot_activation_t3")
         .itemInputs("16x kubejs:dormant_infinity_compound_ingot", "kubejs:serene_infinity_catalyst")
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("16x gtceu:infinity_ingot", "kubejs:inert_serene_infinity_catalyst")
         .duration(200)
         .EUt(1000000)
-        .blastFurnaceTemp(12000)
+        .blastFurnaceTemp(12500)
 
 
     // mote of omnium
@@ -128,7 +128,6 @@ ServerEvents.recipes(event => {
             "gtceu:zinc_ingot",
             "gtceu:gallium_ingot",
             "gtceu:arsenic_dust",
-            "kubejs:solidified_bromine",
             "kubejs:solidified_krypton",
             "gtceu:yttrium_ingot",
             "gtceu:niobium_ingot",
@@ -159,6 +158,7 @@ ServerEvents.recipes(event => {
             "gold_ingot",
             "kubejs:solidified_mercury",
             "gtceu:lead_ingot",
+            "gtceu:bismuth_ingot",
             "kubejs:solidified_radon",
             "gtceu:thorium_ingot",
             "kubejs:stabilized_uranium",

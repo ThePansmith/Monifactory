@@ -2,9 +2,8 @@
  * Naquadah fuel processing line
  */
 ServerEvents.recipes(event => {
-
-    // Liquid Fuel recipes
-    if (!isNormalMode) {
+    if (doHarderNaqFuel) {
+        // Liquid Fuel recipes
 
         // Piranha Solution
         event.recipes.gtceu.mixer("piranha_solution")
@@ -140,7 +139,7 @@ ServerEvents.recipes(event => {
             .notConsumable("kubejs:magnetron")
             .inputFluids("gtceu:heavy_atomic_residue 200")
             .itemInputs("8x gtceu:activated_carbon_dust", "4x gtceu:omnic_acid_dust")
-            .inputFluids("gtceu:hydrobromic_acid 2000", "gtceu:distilled_water 4000")
+            .inputFluids("gtceu:distilled_water 4000")
             .outputFluids("gtceu:purified_heavy_residue 200")
             .duration(40)
             .EUt(8388608)
@@ -149,7 +148,7 @@ ServerEvents.recipes(event => {
             .notConsumable("kubejs:magnetron")
             .inputFluids("gtceu:superheavy_atomic_residue 200")
             .itemInputs("8x gtceu:activated_carbon_dust", "4x gtceu:omnic_acid_dust")
-            .inputFluids("gtceu:hydrobromic_acid 2000", "gtceu:distilled_water 4000")
+            .inputFluids("gtceu:distilled_water 4000")
             .outputFluids("gtceu:purified_superheavy_residue 200")
             .duration(40)
             .EUt(8388608)
@@ -199,7 +198,6 @@ ServerEvents.recipes(event => {
             .duration(1200)
             .EUt(1966080)
     }
-
     // Solid Fuel Recipes
     event.recipes.gtceu.assembler("fuel_rod")
         .itemInputs("gtceu:fluid_cell", "2x gtceu:rhodium_plated_palladium_ring", "2x gtceu:neutron_reflector", "2x gtceu:rhodium_plated_palladium_plate")

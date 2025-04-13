@@ -132,10 +132,10 @@ ServerEvents.recipes(event => {
         "CDC",
         "AAA"
     ], {
-        A: "gtceu:naquadah_alloy_plate",
-        B: "gtceu:zpm_robot_arm",
+        A: "gtceu:rhodium_plated_palladium_plate",
+        B: "gtceu:luv_robot_arm",
         C: "#gtceu:circuits/zpm",
-        D: "gtceu:zpm_machine_hull",
+        D: "gtceu:luv_machine_hull",
     }).id("kubejs:ae2/requster")
 
     // Quantum Ring
@@ -246,6 +246,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:charged_certus_quartz_gem")
         .duration(20)
         .EUt(480)
+
+    // Fix Regular Certus Grinding Recipe giving Charged Certus Dust sometimes due to using forge tags
+    event.remove({ id: "gtceu:macerator/macerate_certus_quartz_gem" })
+    event.recipes.gtceu.macerator("macerate_certus_quartz_gem")
+        .itemInputs(["gtceu:certus_quartz_gem"])
+        .itemOutputs("gtceu:certus_quartz_dust")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     // Matter Condenser
     event.remove({ id: "ae2:network/blocks/io_condenser" })
@@ -373,8 +381,14 @@ ServerEvents.recipes(event => {
         B: "gtceu:electrical_steel_plate",
         C: "ae2:calculation_processor"
     }).id("kubejs:ae2/advanced_card")
+
+    // Network Memory Card
     event.remove({ id: "ae2:tools/network_memory_card" })
     event.shapeless("ae2:memory_card", ["#gtceu:circuits/hv", "ae2:basic_card"]).id("kubejs:ae2/memory_card")
+
+    // Crafting Card
+    event.remove({ id: "ae2:materials/cardcrafting"})
+    event.shapeless("ae2:crafting_card", ["minecraft:crafting_table", "ae2:basic_card", "#gtceu:circuits/ev"])
 
     // Level Emitter
     event.remove({ id: "ae2:network/parts/level_emitter" })
@@ -410,7 +424,7 @@ ServerEvents.recipes(event => {
         ["gtceu:", "neutronium_wafer"],
         ["kubejs:", "universe_wafer"]
     ]
-    if (isExpertMode) {
+    if (doHarderPrintedSilicon) {
         // Use only Greg wafers for printed silicon in EM
         wafers.forEach((wafer, index) => {
             event.custom({
@@ -836,7 +850,7 @@ ServerEvents.recipes(event => {
 
 
     // Greg circuits
-    if (isExpertMode) {
+    if (doHarderPrintedSilicon) {
         wafers.forEach((wafer, tier) => {
             event.recipes.gtceu.forming_press("ae2_printed_" + wafer[1] + "greg")
                 .notConsumable("ae2:silicon_press")
@@ -1009,6 +1023,12 @@ ServerEvents.recipes(event => {
     event.remove({ id: "expatternprovider:epa_upgrade" })
     event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:logic_processor"]).id("kubejs:epp/epa_upgrade")
 
+    // ExtendedAE Silicon Block
+    event.remove({id:"expatternprovider:silicon_block"})
+
+    // Circuit cutter
+    event.remove({ id: "expatternprovider:circuit_cutter" })
+    event.remove({ id: /expatternprovider.*cutter/ })
 
     // ME packing tape
     event.shapeless("expatternprovider:me_packing_tape", ["gtceu:basic_tape", "gtceu:fluix_dust"]).id("expatternprovider:tape")
@@ -1028,6 +1048,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_wall")
         .itemInputs("expatternprovider:assembler_matrix_frame", "gtceu:hv_electric_motor")
         .itemOutputs("expatternprovider:assembler_matrix_wall")
+        .duration(100)
+        .EUt(1920)
+
+    // Assembler Matrix Glass
+    event.remove({ id: "expatternprovider:assembler_matrix_glass" })
+    event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_glass")
+        .itemInputs("expatternprovider:assembler_matrix_frame", "gtceu:hv_electric_motor", "ae2:quartz_glass")
+        .itemOutputs("expatternprovider:assembler_matrix_glass")
         .duration(100)
         .EUt(1920)
 
@@ -1203,4 +1231,17 @@ ServerEvents.recipes(event => {
 
     // BetterP2P
     event.shapeless("betterp2p:advanced_memory_card", ["ae2:memory_card", "ae2:network_tool"])
+
+    // Network Analyser
+    event.remove({ id:"ae2netanalyser:analyser"})
+    event.shaped(Item.of("ae2netanalyser:network_analyser"), [
+        "R R",
+        "DSD",
+        "FDF"
+    ], {
+        R: "gtceu:electrical_steel_rod",
+        D: "gtceu:dark_steel_plate",
+        F: "gtceu:fluix_plate",
+        S: "gtceu:mv_sensor"
+    }).id("kubejs:ae2netanalyser/network_analyser")
 })

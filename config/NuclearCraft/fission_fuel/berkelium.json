@@ -12,7 +12,7 @@
   {
     "group": "berkelium",
     "name": "leb-248",
-    "forge_energy": 1080,
+    "forge_energy": 10800,
     "heat": 52,
     "criticality": 73,
     "depletion": 108,

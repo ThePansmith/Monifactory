@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    if (isHardMode) {
+    if (doHarderProcessing) {
         // Tungsten
         event.remove({ id: "gtceu:electrolyzer/tungstic_acid_electrolysis" })
 
@@ -87,6 +87,7 @@ ServerEvents.recipes(event => {
             .duration(800).EUt(30)
 
         // Kapton K Wetwares
+        event.remove({ id: "gtceu:circuit_assembler/wetware_board" })
         event.recipes.gtceu.circuit_assembler("kubejs:circuit_assembler/wetware_hm")
             .itemInputs(
                 "16x gtceu:kapton_k_plate",
@@ -306,7 +307,7 @@ ServerEvents.recipes(event => {
             .duration(5).EUt(7)
 
         event.recipes.gtceu.large_chemical_reactor("neocryolite")
-            .itemInputs("9x gtceu:caesium_hydroxide_dust", "3x gtceu:naquadah_hydroxide_dust")
+            .itemInputs("4x gtceu:caesium_hydroxide_dust", "3x gtceu:naquadah_hydroxide_dust")
             .notConsumable("gtceu:signalum_dust")
             .inputFluids("gtceu:hydrofluoric_acid 6000")
             .outputFluids("gtceu:neocryolite 1000", "minecraft:water 6000")
@@ -494,9 +495,13 @@ ServerEvents.recipes(event => {
             .outputFluids("gtceu:hydrochloric_acid 4000")
             .duration(120).EUt(30)
 
+        let steam = new JSONObject()
+        steam.add("amount", 3840)
+        steam.add("value", { tag: "forge:steam" })
+
         event.recipes.gtceu.autoclave("platinum_raw_dust_to_platinum")
             .itemInputs("3x gtceu:platinum_raw_dust", "gtceu:calcium_dust")
-            .inputFluids("gtceu:steam 3840")
+            .inputFluids(FluidIngredientJS.of(steam))
             .itemOutputs("gtceu:platinum_dust", "3x gtceu:calcium_chloride_dust")
             .outputFluids("minecraft:water 24")
             .duration(30).EUt(30)
@@ -639,7 +644,14 @@ ServerEvents.recipes(event => {
             .outputFluids("minecraft:water 2000")
             .duration(300).EUt(30)
 
-        event.recipes.gtceu.chemical_reactor("ammonium_hexachloroiridiate_to_iridium")
+        event.recipes.gtceu.chemical_reactor("ammonium_hexachloroiridiate_to_small_iridium")
+            .itemInputs("2x gtceu:ammonium_hexachloroiridiate_dust")
+            .inputFluids("gtceu:hydrogen 3000")
+            .itemOutputs("gtceu:small_iridium_dust")
+            .outputFluids("gtceu:hydrochloric_acid 4500", "gtceu:ammonia 500")
+            .duration(37.5).EUt(7680)
+
+        event.recipes.gtceu.large_chemical_reactor("ammonium_hexachloroiridiate_to_iridium")
             .itemInputs("8x gtceu:ammonium_hexachloroiridiate_dust")
             .inputFluids("gtceu:hydrogen 12000")
             .itemOutputs("gtceu:iridium_dust")
@@ -708,22 +720,10 @@ ServerEvents.recipes(event => {
             .outputFluids("gtceu:pyromellitic_dianhydride 250", "minecraft:water 1500")
             .duration(400).EUt(480);
 
-        event.recipes.gtceu.chemical_reactor("manganese_bromide")
-            .itemInputs("gtceu:manganese_dust")
-            .inputFluids("gtceu:bromine 1000", "gtceu:acetic_acid 1000")
-            .outputFluids("gtceu:manganese_bromide 1000")
-            .duration(60).EUt(480);
-
         event.recipes.gtceu.chemical_reactor("manganese_acetate")
             .itemInputs("gtceu:manganese_dust")
             .inputFluids("gtceu:acetic_acid 1000")
             .outputFluids("gtceu:manganese_acetate 1000")
-            .duration(60).EUt(480);
-
-        event.recipes.gtceu.chemical_reactor("hydrobromic_acid")
-            .notConsumable("gtceu:platinum_dust")
-            .inputFluids("gtceu:hydrogen 1000", "gtceu:bromine 1000", "minecraft:water 1000")
-            .outputFluids("gtceu:hydrobromic_acid 1000")
             .duration(60).EUt(480);
 
         event.recipes.gtceu.chemical_reactor("chloronitrobenzene")
