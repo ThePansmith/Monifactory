@@ -85,6 +85,7 @@ To spice up your Monifactory experience, you can add any of the following mods t
 6. [Project Red: Transmission](https://www.curseforge.com/minecraft/mc-mods/project-red-transmission)
 7. [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
 8. [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
+9. [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.
