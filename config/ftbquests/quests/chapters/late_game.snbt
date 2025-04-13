@@ -111,7 +111,7 @@
 			id: "207E26A342B05F89"
 			linked_quest: "26CA20E74A62FA6E"
 			shape: "hexagon"
-			x: 9d
+			x: 9.0d
 			y: 18.25d
 		}
 		{
@@ -197,8 +197,10 @@
 		{
 			id: "29366415E2B146BA"
 			linked_quest: "739F7BF2A90B278A"
-			x: 9.75d
-			y: 25.75d
+			shape: "hexagon"
+			size: 2.0d
+			x: 25.25d
+			y: 26.0d
 		}
 		{
 			id: "03BAC1C5A779EFAE"
@@ -1080,7 +1082,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7DB174443D7FAFA0.title}"
-			x: 9d
+			x: 9.0d
 			y: 8.25d
 		}
 		{
@@ -2309,28 +2311,6 @@
 			y: 15.25d
 		}
 		{
-			dependencies: [
-				"11154356854B64DA"
-				"39FD6F1076559156"
-			]
-			description: ["{moni.quest.2D0DF78F71760F00.description1}"]
-			id: "2D0DF78F71760F00"
-			rewards: [{
-				id: "6F3E0BE43F386D11"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "1923177CCC7CB6F7"
-				item: "kubejs:gem_sensor"
-				type: "item"
-			}]
-			title: "{moni.quest.2D0DF78F71760F00.title}"
-			x: -6.0d
-			y: 10.25d
-		}
-		{
 			dependencies: ["25B0271106684DF7"]
 			description: [
 				"{moni.quest.62AC7103FF9D25FD.description1}"
@@ -2355,7 +2335,7 @@
 			}]
 			title: "{moni.quest.62AC7103FF9D25FD.title}"
 			x: 30.5d
-			y: 27.5d
+			y: 27.8125d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
@@ -2389,8 +2369,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.25B0271106684DF7.title}"
-			x: 29.0d
-			y: 27.5d
+			x: 28.25d
+			y: 27.75d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
@@ -2535,7 +2515,10 @@
 			y: 3.75d
 		}
 		{
-			dependencies: ["2D47BFA44BDB5E6A"]
+			dependencies: [
+				"2D47BFA44BDB5E6A"
+				"596324FC9092E71A"
+			]
 			description: [
 				"{moni.quest.0C9E7E4644084C94.description1}"
 				"{moni.quest.0C9E7E4644084C94.description2}"
@@ -2614,7 +2597,7 @@
 				}
 			]
 			title: "{moni.quest.0608EE0A3BDE58D5.title}"
-			x: 28.75d
+			x: 27.25d
 			y: 18.25d
 		}
 		{
@@ -2685,7 +2668,7 @@
 			]
 			title: "{moni.quest.61301FBD825F8280.title}"
 			x: 30.5d
-			y: 25.75d
+			y: 26.0d
 		}
 		{
 			dependencies: [
@@ -2714,6 +2697,17 @@
 			title: "{moni.quest.1CF77095C203454F.title}"
 			x: 20.75d
 			y: 20.0d
+		}
+		{
+			description: ["{moni.quest.596324FC9092E71A.description1}"]
+			id: "596324FC9092E71A"
+			tasks: [{
+				id: "683B29ED06171C13"
+				item: "kubejs:elite_drilling_kit"
+				type: "item"
+			}]
+			x: 28.75d
+			y: 18.25d
 		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"

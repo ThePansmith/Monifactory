@@ -41,17 +41,49 @@ ServerEvents.recipes(event => {
 
     // Misc
     event.recipes.gtceu.chemical_reactor("ammonium_oxalate")
-        .itemInputs("2x gtceu:carbon_dust")
-        .inputFluids("gtceu:ammonia 2000", "gtceu:oxygen 4000")
+        .itemInputs("gtceu:ammonium_carbonate_dust", "gtceu:oxalic_acid_dust")
         .circuit(5)
+        .outputFluids("gtceu:carbon_dioxide 1000", "minecraft:water 1000")
         .itemOutputs("gtceu:ammonium_oxalate_dust")
         .duration(120).EUt(7)
+
+    event.recipes.gtceu.extractor("sugar_cane_solution")
+        .itemInputs("2x minecraft:sugar_cane")
+        .outputFluids(Fluid.of("gtceu:sucrose_solution", 1000))
+        .duration(300).EUt(120)
+
+    event.recipes.gtceu.distillery("sucrose_distillation")
+        .inputFluids(Fluid.of("gtceu:sucrose_solution", 1000))
+        .itemOutputs("gtceu:sucrose_dust")
+        .outputFluids(Fluid.of("water", 1000))
+        .duration(160).EUt(30)
+
+    event.recipes.gtceu.large_chemical_reactor("oxalic_acid_dihydrate")
+        .notConsumable("gtceu:vanadium_dust")
+        .itemInputs("gtceu:sucrose_dust")
+        .inputFluids(Fluid.of("gtceu:nitric_acid", 36000))
+        .itemOutputs("6x gtceu:oxalic_acid_dihydrate_dust")
+        .outputFluids("gtceu:nitrogen_dioxide 36000", "minecraft:water 11000")
+        .duration(600).EUt(30)
+
+    event.recipes.gtceu.electric_blast_furnace("oxalic_acid")
+        .itemInputs("gtceu:oxalic_acid_dihydrate_dust")
+        .itemOutputs("gtceu:oxalic_acid_dust")
+        .outputFluids("gtceu:steam 19200")
+        .duration(200)
+        .blastFurnaceTemp(1700)
+        .EUt(120)
 
     event.recipes.gtceu.chemical_reactor("ammonium_nitrate")
         .inputFluids("gtceu:ammonia 1000", "gtceu:nitric_acid 1000")
         .circuit(5)
         .itemOutputs("gtceu:ammonium_nitrate_dust")
         .duration(120).EUt(7)
+
+    event.recipes.gtceu.chemical_reactor("ammonium_carbonate")
+        .inputFluids("gtceu:ammonia 2000", "gtceu:carbon_dioxide 1000", "minecraft:water 1000")
+        .itemOutputs("gtceu:ammonium_carbonate_dust")
+        .duration(160).EUt(30)
 
     event.recipes.gtceu.polarizer("terbium_polarize")
         .itemInputs("gtceu:long_terbium_rod")
