@@ -67,11 +67,13 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:nitrogen_dioxide 36000", "minecraft:water 11000")
         .duration(600).EUt(30)
 
-    event.recipes.gtceu.autoclave("oxalic_acid")
-        .itemInputs("4x gtceu:oxalic_acid_dihydrate_dust")
-        .itemOutputs("4x gtceu:oxalic_acid_dust")
-        .outputFluids(Fluid.of("water", 8000))
-        .duration(200).EUt(120)
+    event.recipes.gtceu.electric_blast_furnace("oxalic_acid")
+        .itemInputs("gtceu:oxalic_acid_dihydrate_dust")
+        .itemOutputs("gtceu:oxalic_acid_dust")
+        .outputFluids(Fluid.of("gtceu:steam", 19200))
+        .duration(400)
+        .blastFurnaceTemp(1700)
+        .EUt(120)
 
     event.recipes.gtceu.chemical_reactor("ammonium_nitrate")
         .inputFluids("gtceu:ammonia 1000", "gtceu:nitric_acid 1000")
