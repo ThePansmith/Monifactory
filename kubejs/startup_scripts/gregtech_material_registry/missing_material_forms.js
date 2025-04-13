@@ -30,6 +30,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Germanium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Germanium.setMaterialARGB(0x66806d)
     GTMaterials.Germanium.setMaterialSecondaryARGB(0x5d5e3a)
+    GTMaterials.Germanium.addFlags(GTMaterialFlags.GENERATE_PLATE)
 
     GTMaterials.Terbium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Terbium.setMaterialARGB(0x8C8F7A)
