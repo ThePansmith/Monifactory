@@ -205,7 +205,7 @@ StartupEvents.registry("block", event => {
 
     // Misc
     event.create("starry_diamond_block")
-        .displayName("Starry Diamond Block")
+        .displayName("Starry Diamatine Block")
         .soundType("metal")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe").requiresTool(true)
@@ -236,10 +236,10 @@ StartupEvents.registry("block", event => {
         .requiresTool(true);
 
     event.create("omnic_matrix_coil_block", "gtceu:coil")
-        .temperature(15000)
-        .level(24)
+        .temperature(12600)
+        .level(16)
         .energyDiscount(16)
-        .tier(9)
+        .tier(8)
         .coilMaterial(() => GTMaterials.get("omnium"))
         .hardness(5)
         .requiresTool(true)

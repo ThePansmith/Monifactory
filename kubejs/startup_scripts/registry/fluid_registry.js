@@ -8,7 +8,7 @@ StartupEvents.registry("fluid", event => {
     event.create("molten_pyrotheum")
         .bucketColor(Color.rgba(247, 219, 58, 255))
         .displayName("§6Blazing Pyrotheum") // orange
-        .temperature(273 * 3000)
+        .temperature(8190)
         .stillTexture("kubejs:block/pyrotheum_still")
         .flowingTexture("kubejs:block/pyrotheum_flow");
     event.create("molten_cryotheum")

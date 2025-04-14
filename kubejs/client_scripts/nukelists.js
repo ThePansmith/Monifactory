@@ -1,3 +1,4 @@
+// priority: -10
 /**
  * Hides all objects on the nukeLists and items matching the Unification Patterns from JEI/EMI.
  */

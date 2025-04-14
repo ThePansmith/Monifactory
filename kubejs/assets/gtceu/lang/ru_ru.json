@@ -425,5 +425,13 @@
     "gtceu.jei.ore_vein.glacio/naquadah": "Жила Наквады (Гласио)",
     "gtceu.jei.ore_vein.glacio/thorium": "Жила Тория (Гласио)",
     "gtceu.jei.ore_vein.glacio/titanotungstate": "Жила Титановольфрамата (Гласио)",
-    "gtceu.jei.ore_vein.mars/tungstate": "Жила Ваольфрамата (Марс)"
+    "gtceu.jei.ore_vein.mars/tungstate": "Жила Ваольфрамата (Марс)",
+    "block.gtceu.mega_alloy_blast_smelter": "Улучшенная доменная печь",
+    "material.gtceu.saline_antisceptic": "Солевой антисептик",
+    "material.gtceu.rotten_meat": "Испорченное мясо",
+    "material.gtceu.rotten_sludge": "Гнилая жижа",
+    "material.gtceu.netherite_scrap": "Древние обломки",
+    "material.gtceu.uranic_solution": "Урановый раствор",
+    "material.gtceu.extraterrestrial_metal_mixture": "Инопланетный металлический сплав",
+    "gtceu.microverse": "Миссии Микровселенной"
 }

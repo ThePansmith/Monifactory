@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer("saline_solution")
         .itemInputs("3x gtceu:salt_dust", "gtceu:iodine_dust")
         .inputFluids("gtceu:distilled_water 10000")
-        .outputFluids("10000 gtceu:saline_antisceptic")
+        .outputFluids("gtceu:saline_antisceptic 10000")
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
