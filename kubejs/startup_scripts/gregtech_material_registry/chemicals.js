@@ -193,6 +193,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x776E82).iconSet("rough")
         .components("lead", "2x chlorine")
 
+    // Aluminosilicate Leachate (Germanium midproduct)
+    event.create("aluminosilicate_leachate")
+        .liquid()
+        .color(0x776E82)
+        .components("4x lithium", "vanadium", "aluminium", "germanium")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
     // Saturated water (Eltz line midproduct)
     event.create("saturated_water")
         .liquid()
