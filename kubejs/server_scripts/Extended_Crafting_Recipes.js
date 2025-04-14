@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         " A  A  A ",
         "    A    "
     ], {
-        A: "kubejs:mote_of_omnium",
+        A: "gtceu:omnium_nugget",
         P: "gtceu:palis_empowered_gear",
         R: "gtceu:restonia_empowered_gear",
         V: "gtceu:void_empowered_gear",
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
             "gtceu:molybdenum_ingot",
             "gtceu:ruthenium_ingot",
             "gtceu:rhodium_ingot",
-            "kubejs:exotic_materials_catalyst",
+            "gtceu:omnium_nugget",
             "gtceu:palladium_ingot",
             "gtceu:silver_ingot",
             "gtceu:cadmium_dust",
