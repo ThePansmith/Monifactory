@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         " A  A  A ",
         "    A    "
     ], {
-        A: "kubejs:mote_of_omnium",
+        A: "gtceu:omnium_nugget",
         P: "gtceu:palis_empowered_gear",
         R: "gtceu:restonia_empowered_gear",
         V: "gtceu:void_empowered_gear",
@@ -95,7 +95,6 @@ ServerEvents.recipes(event => {
     // mote of omnium
     event.recipes.extendedcrafting.shapeless_table(
         "kubejs:mote_of_omnium", [
-            "gtceu:tiny_nether_star_dust",
             "kubejs:solidified_hydrogen",
             "kubejs:solidified_helium",
             "gtceu:lithium_dust",
@@ -103,7 +102,6 @@ ServerEvents.recipes(event => {
             "gtceu:boron_dust",
             "gtceu:carbon_dust",
             "kubejs:solidified_nitrogen",
-            "gtceu:tiny_nether_star_dust",
             "kubejs:solidified_oxygen",
             "kubejs:solidified_fluorine",
             "kubejs:solidified_neon",
@@ -134,13 +132,14 @@ ServerEvents.recipes(event => {
             "gtceu:molybdenum_ingot",
             "gtceu:ruthenium_ingot",
             "gtceu:rhodium_ingot",
-            "kubejs:exotic_materials_catalyst",
+            "gtceu:neutronium_nugget",
             "gtceu:palladium_ingot",
             "gtceu:silver_ingot",
             "gtceu:cadmium_dust",
             "gtceu:indium_ingot",
             "gtceu:tin_ingot",
             "gtceu:antimony_ingot",
+            "gtceu:iodine_dust",
             "kubejs:solidified_xenon",
             "gtceu:caesium_dust",
             "gtceu:barium_dust",
@@ -160,6 +159,7 @@ ServerEvents.recipes(event => {
             "gtceu:lead_ingot",
             "gtceu:bismuth_ingot",
             "kubejs:solidified_radon",
+            "gtceu:actinium_ingot",
             "gtceu:thorium_ingot",
             "kubejs:stabilized_uranium",
             "kubejs:stabilized_neptunium",
@@ -167,15 +167,13 @@ ServerEvents.recipes(event => {
             "gtceu:americium_ingot",
             "kubejs:stabilized_curium",
             "kubejs:stabilized_berkelium",
-            "gtceu:tiny_nether_star_dust",
             "kubejs:stabilized_californium",
             "kubejs:stabilized_einsteinium",
             "gtceu:darmstadtium_ingot",
             "gtceu:tritanium_ingot",
             "gtceu:duranium_ingot",
             "gtceu:trinium_ingot",
-            "gtceu:naquadah_ingot",
-            "gtceu:tiny_nether_star_dust",
+            "gtceu:naquadah_ingot"
         ]
     ).id("kubejs:extended/mote_of_omnium")
 
