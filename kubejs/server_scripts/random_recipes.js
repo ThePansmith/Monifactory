@@ -1022,65 +1022,16 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:holmium_hex_wire")
     event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
 
-    // Large Boilers
-    // event.remove(/^gtceu:large_boil1er\/.*/)
-    // event.modify(/^gtceu:large_boiler\/.*/, recipe => {
-
-    // })
-
+    // Large Boilers fuel rebalance
+    // Balance is based on adjusting to be an improvement over singeblock boilers
+    // High Pressure Steam Boiler consumes 1 coal in 960s, produces 15mb/t, total production = 288,000 mb steam
+    // By Defualt: Large Bronze Boiler consumes 1 coal in 1s, producing 800mb/t, total production = 16,000 mb steam
+    // This is a factor of 18x, we chose x20 for balancing to make Large Boilers 11.1% more efficient as a bonus for the extra cost.
     event.findRecipes({ id: /^gtceu:large_boiler\/.*/, type: "gtceu:large_boiler" }).forEach(large_boiler_recipe => {
 
-        // console.log(large_boiler_recipe.json.getAsJsonPrimitive("duration"))
-        console.log(large_boiler_recipe.json)
-
         let recipe_duration = large_boiler_recipe.json.getAsJsonPrimitive("duration").asInt
-        let new_duration = (recipe_duration * 20).asInt
 
         large_boiler_recipe.json.remove("duration")
-        large_boiler_recipe.json.add("duration", new_duration)
-
-        console.log(large_boiler_recipe.json)
-
-        // let recipe_duration = large_boiler_recipe.json.getAsJsonPrimitive("duration").asInt
-        // let recipe_object = large_boiler_recipe.json.getAsJsonObject()
-
-        // console.log(recipe_object)
-
-        // large_boiler_recipe.remove("duration")
-        // large_boiler_recipe["addProperty(java.lang.String,java.lang.Number)"]("duration", recipe_duration * 20)
-        
-
-        // large_boiler_recipe.json.getAsJsonPrimitive("duration").value *= 20
-
-        // console.log(large_boiler_recipe.json.getAsJsonPrimitive("duration").asInt)
-
-
-        // let recipe_duration = large_boiler_recipe.json.getAsJsonPrimitive("duration").asInt
-        // console.log(recipe_duration)
-
-
-
-        // let recipe_duration = large_boiler_recipe.json.getAsJsonObject("duration")
-
-        // large_boiler_recipe.duration = large_boiler_recipe.duration * 20
-
-        // let fluidIngredients = large_boiler_recipe.json.getAsJsonObject("inputs").getAsJsonArray("fluid")
-        // for (let i = 0; i < fluidIngredients.size(); i++) {
-        //     // Fluid ingredient to alter if it includes "forge:trinium" as a tag
-        //     let curFluidIngredient = fluidIngredients.get(i).getAsJsonObject("content")
-
-        //     // Get the original Trinium fluid amount
-        //     let fluidAmount = curFluidIngredient.getAsJsonPrimitive("amount").asInt
-
-        //     // Confirm that we are indeed altering a fluid ingredient that contains the "forge:trinium" tag
-        //     let fluidIngredient = curFluidIngredient.getAsJsonArray("value")
-        //     for (let j = 0; j < fluidIngredient.size(); j++) {
-        //         if (fluidIngredient.get(j).getAsJsonPrimitive("tag").asString == "forge:trinium") {
-        //             // Change fluid ingredient to 1/2 the amount if it does match
-        //             curFluidIngredient.remove("amount")
-        //             curFluidIngredient["addProperty(java.lang.String,java.lang.Number)"]("amount", fluidAmount / 2)
-        //         }
-        //     }
-        // }
+        large_boiler_recipe.json.add("duration", recipe_duration * 20)
     })
 })
