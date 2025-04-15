@@ -17,14 +17,12 @@ ServerEvents.recipes(event => {
         ["#forge:storage_blocks/emerald", "gtceu:emeradic_block", GTValues.VA[GTValues.MV], "emeradic_block"],
         ["#forge:storage_blocks/iron", "gtceu:enori_block", GTValues.VA[GTValues.MV], "enori_block"],
         ["minecraft:sand", "minecraft:soul_sand", GTValues.VA[GTValues.MV], "soul_sand"],
-        ["minecraft:red_mushroom", "minecraft:nether_wart", GTValues.VA[GTValues.LV], "nether_wart"],
         ["minecraft:quartz", "minecraft:prismarine_shard", GTValues.VA[GTValues.MV], "prismarine_shard"],
         ["minecraft:rotten_flesh", "minecraft:leather", GTValues.VA[GTValues.LV], "leather"],
         ["gtceu:topaz_gem", "minecraft:prismarine_crystals", GTValues.VA[GTValues.MV], "prismarine_crystals"],
         ["gtceu:steel_ingot", "gtceu:damascus_steel_ingot", GTValues.VA[GTValues.MV], "damascus_steel"],
         ["gtceu:diamatine_block", "kubejs:starry_diamond_block", GTValues.VA[GTValues.MV], "starry_diamond"],
         ["gtceu:obsidian_dust", "enderio:grains_of_infinity", GTValues.VA[GTValues.LV], "temp_grains"],
-        ["minecraft:poppy", "minecraft:red_mushroom", GTValues.VA[GTValues.LV], "red_mushroom"],
         ["minecraft:dried_kelp", "minecraft:wither_rose", GTValues.VA[GTValues.LV], "wither_rose"],
         ["gtceu:plant_ball", "minecraft:kelp", GTValues.VA[GTValues.LV], "kelp"],
         ["minecraft:obsidian", "minecraft:crying_obsidian", GTValues.VA[GTValues.LV], "crying_obsidian"],
@@ -113,7 +111,7 @@ ServerEvents.recipes(event => {
             .EUt(56)
     })
 
-    // Flower cycle convenience recipes
+    // Flower conversion convenience recipes
     const flowerCycle = [
         "dandelion",
         "poppy",
@@ -135,13 +133,32 @@ ServerEvents.recipes(event => {
         "wither_rose",
         "dead_bush"
     ]
-    flowerCycle.forEach((flower, index) => {
-        let curFlower = flowerCycle[index];
-        let nextFlower = flowerCycle[(index + 1) % flowerCycle.length];
-        event.recipes.gtceu.atomic_reconstruction(`gtceu:${curFlower}_to_${nextFlower}`)
-            .itemInputs(`minecraft:${curFlower}`)
-            .itemOutputs(`minecraft:${nextFlower}`)
-            .EUt(GTValues.VA[GTValues.LV])
-            .duration(30)
-    })
+    reconstructCycle(flowerCycle);
+
+    // Fungus conversion convenience recipes
+    const fungusCycle = [
+        "red_mushroom",
+        "brown_mushroom",
+        "nether_wart"
+    ]
+    reconstructCycle(fungusCycle);
+
+    /**
+     * Creates a "cycle" of Atomic Reconstructor recipes that allow players to transmute
+     * any one item in the cycle into any other, through repeated applications of Atomic Reconstruction.
+     * Best applied to plants or fungi, where getting one enables you to get many more easily.
+     *
+     * @param {Ingredient[]} cycle The array of ingredients for the AR to cycle through
+     */
+    function reconstructCycle(cycle) {
+        cycle.forEach((flower, index) => {
+            let curItem = cycle[index];
+            let nextItem = cycle[(index + 1) % cycle.length];
+            event.recipes.gtceu.atomic_reconstruction(`gtceu:${curItem}_to_${nextItem}`)
+                .itemInputs(`minecraft:${curItem}`)
+                .itemOutputs(`minecraft:${nextItem}`)
+                .EUt(GTValues.VA[GTValues.LV])
+                .duration(30)
+        })
+    }
 })
