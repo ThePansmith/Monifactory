@@ -2354,8 +2354,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.62AC7103FF9D25FD.title}"
-			x: 30.5d
-			y: 27.5d
+			x: 29.0d
+			y: 25.0d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
@@ -2389,8 +2389,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.25B0271106684DF7.title}"
-			x: 29.0d
-			y: 27.5d
+			x: 27.5d
+			y: 25.0d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
