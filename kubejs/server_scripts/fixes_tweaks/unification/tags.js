@@ -49,6 +49,8 @@ ServerEvents.tags("item", event => {
     // can't replace tags in recipes so we just add the tag to the item instead
     event.add("forge:ingots/redstone_alloy", "gtceu:red_alloy_ingot")
     event.add("forge:ingots/copper_alloy", "gtceu:electrical_steel_ingot")
+    event.add("forge:storage_blocks/coal_coke", "#forge:storage_blocks/coke")
+    event.add("forge:coal_coke", "#forge:gems/coke")
 
     const decorremap = [["etrium", "diamond"], ["desh", "bronze"], ["ostrum", "lead"], ["calorite", "red_alloy"]]
     decorremap.forEach(([mat, remat]) => {
