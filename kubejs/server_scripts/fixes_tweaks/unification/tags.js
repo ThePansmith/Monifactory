@@ -39,12 +39,6 @@ ServerEvents.tags("item", event => {
     event.add("forge:nuggets/electrum_flux", "redstone_arsenal:flux_nugget")
     event.add("forge:gears/electrum_flux", "redstone_arsenal:flux_gear")
     event.add("forge:dusts/quartz", "gtceu:nether_quartz_dust")
-    event.removeAllTagsFrom("ae2:certus_quartz_crystal")
-    event.removeAllTagsFrom("ae2:charged_certus_quartz_crystal")
-    event.removeAllTagsFrom("ae2:fluix_crystal")
-    event.removeAllTagsFrom("ae2:fluix_dust")
-    event.remove("forge:ingots/aluminum", "nuclearcraft:aluminum_ingot")
-    event.add("forge:ingots/aluminium", "nuclearcraft:aluminum_ingot")
 
     // can't replace tags in recipes so we just add the tag to the item instead
     event.add("forge:ingots/redstone_alloy", "gtceu:red_alloy_ingot")
