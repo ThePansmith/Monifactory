@@ -27,7 +27,9 @@ ServerEvents.recipes(event => {
         ["gtceu:plant_ball", "minecraft:kelp", GTValues.VA[GTValues.LV], "kelp"],
         ["minecraft:obsidian", "minecraft:crying_obsidian", GTValues.VA[GTValues.LV], "crying_obsidian"],
         ["#forge:dyes/black", "minecraft:ink_sac", GTValues.VA[GTValues.LV], "ink_sac"],
-        ["minecraft:ink_sac", "minecraft:glow_ink_sac", GTValues.VA[GTValues.LV], "glow_ink_sac"]
+        ["minecraft:ink_sac", "minecraft:glow_ink_sac", GTValues.VA[GTValues.LV], "glow_ink_sac"],
+        ["thermal:rubberwood_sapling", "gtceu:rubber_sapling", GTValues.VA[GTValues.LV], "rubberwood_to_rubber"],
+        ["gtceu:rubber_sapling", "thermal:rubberwood_sapling", GTValues.VA[GTValues.LV], "rubber_to_rubberwood"],
     ]
 
     const crystals = ["enori", "void", "palis", "diamatine", "restonia", "emeradic"]
