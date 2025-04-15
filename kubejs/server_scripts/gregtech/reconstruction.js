@@ -57,6 +57,23 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(24)
 
+    // Black quartz, tag-based recipes for Tinted Glass
+    event.replaceInput({ output: "minecraft:tinted_glass" }, "minecraft:glass", "#forge:glass")
+    event.replaceInput({ output: "minecraft:tinted_glass" }, "minecraft:amethyst_shard", "#forge:gems/amethyst")
+    event.shaped("2x minecraft:tinted_glass", [
+        " Q ",
+        "QGQ",
+        " Q "
+    ], {
+        Q: "#forge:gems/black_quartz",
+        G: "#forge:glass"
+    }).id("kubejs:tinted_glass_black_quartz")
+    event.recipes.gtceu.assembler("tinted_glass_black_quartz")
+        .itemInputs("2x #forge:gems/black_quartz", "#forge:glass")
+        .itemOutputs("minecraft:tinted_glass")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
+
     // Reconstruction
     reconstructedItems.forEach(([input, output, eut, id]) => {
         event.recipes.gtceu.atomic_reconstruction(`kubejs:${id}`)
