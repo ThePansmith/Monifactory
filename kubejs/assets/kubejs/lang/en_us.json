@@ -465,6 +465,7 @@
   "kubejs.meowni_plush.tooltip.hardmode.2": "§9Exclusive to Hardmode and Expertmode players.",
 
   "ftbquests.book.tooltip": "The quest window can also be opened with [`].",
+  "item.patchouli.guide_book.tooltip": "§cInformation may be inaccurate!",
 
   "redstoneclock.redstone_clock.tooltip": "§7Needs a redstone signal on a dotted side to work.",
 
