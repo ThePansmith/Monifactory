@@ -167,6 +167,8 @@ ItemEvents.tooltip(tooltip => {
     // Parallel hatches
     tooltip.add("gtceu:uhv_uhv_parallel_hatch", Text.translatable("gtceu.giga_parallel_hatch.desc"))
     tooltip.add("gtceu:uev_uev_parallel_hatch", Text.translatable("gtceu.omega_parallel_hatch.desc"))
+    tooltip.add("gtceu:uiv_uiv_parallel_hatch", Text.translatable("gtceu.ultra_parallel_hatch.desc"))
+    tooltip.add("gtceu:max_max_parallel_hatch", Text.translatable("gtceu.sigma_parallel_hatch.desc"))
 
     // Assorted info & warnings for GT machines
     tooltip.add(/^gtceu:.*a_energy_converter$/, Text.translatable("gtceu.energy_converter.tooltip"));
