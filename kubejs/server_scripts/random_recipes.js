@@ -416,6 +416,18 @@ ServerEvents.recipes(event => {
         W: "gtceu:holmium_quadruple_wire"
     })
 
+    event.shaped("gtceu:uiv_uiv_parallel_hatch", [
+        "SCE",
+        "CHC",
+        "WCW"
+    ], {
+        H: "gtceu:uiv_machine_hull",
+        S: "gtceu:uiv_sensor",
+        C: "#gtceu:circuits/max",
+        E: "gtceu:uiv_emitter",
+        W: "gtceu:monium_quadruple_wire"
+    })
+
     //
     // Recycling below here
     //
