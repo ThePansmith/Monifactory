@@ -199,7 +199,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("heated_bauxite_slurry")
         .liquid()
         .color(0xB7893E)
-    
+
     event.create("red_mud")
         .liquid()
         .color(0xb52b2b)
