@@ -10,12 +10,12 @@ if (Platform.isLoaded("estrogen")) {
 
     ServerEvents.recipes(event => {
         // Recipe Removal
-        event.remove({ output: "estrogen:uwu" })
+        event.remove({ type: "estrogen:centrifuging" })
         event.remove([
             { output: "estrogen:estrogen_pill" },
             { output: "estrogen:crystal_estrogen_pill"},
             { output: "estrogen:estrogen_patches" },
-            { output: "estrogen:filtrated_horse_urine" },
+            { output: "estrogen:uwu" },
             { output: "estrogen:centrifuge" }
         ])
 
@@ -94,6 +94,59 @@ if (Platform.isLoaded("estrogen")) {
             .itemOutputs("estrogen:moth_fuzz")
             .duration(100)
             .EUt(30)
+
+        // ------------------------------------------------------------------ \\
+        //                          Estrogen Line                             \\
+        // ------------------------------------------------------------------ \\
+
+        event.recipes.gtceu.centrifuge("cholestrol")
+            .itemInputs("4x gtceu:meat_dust")
+            .itemOutputs("kubejs:cholestrol")
+            .duration(300)
+            .EUt(8)
+
+        event.recipes.gtceu.chemical_reactor("pregnenolone")
+            .itemInputs("2x kubejs:cholestrol")
+            .inputFluids(Fluid.of("gtceu:hydrogen", 2000))
+            .outputFluids(Fluid.of("kubejs:pregnenolone", 100))
+            .duration(100)
+            .EUt(40)
+            .cleanroom(CleanroomType.CLEANROOM)
+
+        event.recipes.gtceu.chemical_reactor("androstenedione")
+            .inputFluids(Fluid.of("kubejs:pregnenolone", 1000),
+                         Fluid.of("gtceu:hydrogen", 1000),
+                         Fluid.of("gtceu:oxygen", 1000))
+            .outputFluids(Fluid.of("kubejs:androstenedione", 100))
+            .duration(120)
+            .EUt(42)
+            .cleanroom(CleanroomType.CLEANROOM)
+
+        event.recipes.gtceu.chemical_reactor("testosterone_powder")
+            .inputFluids(Fluid.of("kubejs:androstenedione", 1000),
+                         Fluid.of("gtceu:hydrogen", 1000),
+                         Fluid.of("gtceu:ethanol", 1000))
+            .itemOutputs("estrogen:testosterone_powder")
+            .duration(200)
+            .EUt(16)
+            .cleanroom(CleanroomType.CLEANROOM)
+
+        event.recipes.gtceu.chemical_reactor("liquid_estrogen")
+            .inputFluids(Fluid.of("kubejs:androstenedione", 1000),
+                         Fluid.of("gtceu:hydrogen", 1000))
+            .itemInputs("estrogen:testosterone_powder")
+            .outputFluids(Fluid.of("estrogen:liquid_estrogen", 1000))
+            .duration(300)
+            .EUt(40)
+            .cleanroom(CleanroomType.CLEANROOM)
+
+        event.recipes.gtceu.brewery("gender_fluid")
+            .inputFluids(Fluid.of("estrogen:liquid_estrogen", 1000))
+            .itemInputs("estrogen:testosterone_powder")
+            .outputFluids(Fluid.of("estrogen:gender_fluid"))
+            .duration(300)
+            .EUt(40)
+        
     })
 
     console.log("Create: Estrogen Loaded!")
