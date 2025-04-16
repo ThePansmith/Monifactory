@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electric_blast_furnace("kubejs:alumina_to_aluminium")
         .itemInputs("10x gtceu:alumina_dust","3x gtceu:carbon_dust")
         .itemOutputs("4x gtceu:aluminium_ingot")
-        .outputFluids(Fluid.of("minecraft:carbon_dioxide", 3000))
+        .outputFluids(Fluid.of("gtceu:carbon_dioxide", 3000))
         .blastFurnaceTemp(1100)
         .duration(1200).EUt(120)
 
