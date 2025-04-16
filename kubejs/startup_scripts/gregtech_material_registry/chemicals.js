@@ -187,6 +187,42 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid()
         .color(0xD3B53B)
 
+    // Bauxite Line
+    event.create("bauxite_sluice_juice")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
+    event.create("bauxite_slurry")
+        .liquid()
+        .color(0x1C3179)
+
+    event.create("heated_bauxite_slurry")
+        .liquid()
+        .color(0x2E4BAC)
+
+    event.create("sodium_aluminate")
+        .dust().iconSet("SAND")
+        .color(0xBEAFBE)
+        .components("sodium", "aluminium", "2x oxygen")
+
+    event.create("aluminium_hydroxide")
+        .dust().iconSet("SAND")
+        .color(0xAFAFBE)
+        .components("aluminium", "3x oxygen", "3x hydrogen")
+        .formula("Al(OH)3")
+
+    event.create("alumina")
+        .dust().iconSet
+        .color(0x84c1db)
+        .components("2x aluminium", "3x oxygen")
+
+    event.create("bauxite_slag")
+        .dust()
+        .color(0x521717)
+
+    event.create("sluice_sand")
+        .dust().iconSet("SAND")
+        .color(0x7B7B59)
+
     // Lead Chloride (Actinium byproduct)
     event.create("lead_chloride")
         .dust()
