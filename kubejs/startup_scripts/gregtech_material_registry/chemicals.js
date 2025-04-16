@@ -206,7 +206,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("sodium_aluminate")
         .dust().iconSet("rough")
-        .color(0xBEAFBE)
+        .color(0x8a97d1)
         .components("sodium", "aluminium", "2x oxygen")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
@@ -218,8 +218,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("alumina")
-        .dust()
-        .color(0x84c1db)
+        .dust().iconSet("sand")
+        .color(0xbaeaff)
         .components("2x aluminium", "3x oxygen")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
