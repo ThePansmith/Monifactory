@@ -188,36 +188,40 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xD3B53B)
 
     // Bauxite Line
-    event.create("bauxite_sluice_juice")
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+    event.create("bauxite_aluminosilicate_solution")
+        .liquid()
+        .color(0x316e67)
 
     event.create("bauxite_slurry")
         .liquid()
-        .color(0x1C3179)
+        .color(0x997334)
 
     event.create("heated_bauxite_slurry")
         .liquid()
-        .color(0x2E4BAC)
+        .color(0xB7893E)
+    
+    event.create("red_mud")
+        .liquid()
+        .color(0xb52b2b)
 
     event.create("sodium_aluminate")
-        .dust().iconSet("SAND")
+        .dust().iconSet("rough")
         .color(0xBEAFBE)
         .components("sodium", "aluminium", "2x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("aluminium_hydroxide")
-        .dust().iconSet("SAND")
+        .dust().iconSet("rough")
         .color(0xAFAFBE)
         .components("aluminium", "3x oxygen", "3x hydrogen")
         .formula("Al(OH)3")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("alumina")
-        .dust().iconSet
+        .dust()
         .color(0x84c1db)
         .components("2x aluminium", "3x oxygen")
-
-    event.create("bauxite_slag")
-        .dust()
-        .color(0x521717)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("sluice_sand")
         .dust().iconSet("SAND")
