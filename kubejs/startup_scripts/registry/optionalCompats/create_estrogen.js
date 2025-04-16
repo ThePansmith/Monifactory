@@ -1,10 +1,9 @@
-
 /**
- * 
+ *
  * Create: Estrogen Compatibility
- * Registering the like, 4 custom things for this compat.
- * Why make new items: for the funnies.
- * 
+ * Custom Items and Fluids for the Estrogen Line
+ * Why? For the Funnies.
+ *
  */
 
 if (Platform.isLoaded("estrogen")) {
@@ -20,7 +19,7 @@ if (Platform.isLoaded("estrogen")) {
             .displayName("Pregnenolone")
             .thinTexture(Color.rgba(192,201,206,255))
 
-            event.create("androstenedione")
+        event.create("androstenedione")
             .bucketColor(Color.rgba(200,139,139,255))
             .displayName("Androstenedione")
             .thinTexture(Color.rgba(200,139,139,255))

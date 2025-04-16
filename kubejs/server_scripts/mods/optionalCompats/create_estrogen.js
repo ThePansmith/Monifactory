@@ -115,8 +115,8 @@ if (Platform.isLoaded("estrogen")) {
 
         event.recipes.gtceu.chemical_reactor("androstenedione")
             .inputFluids(Fluid.of("kubejs:pregnenolone", 1000),
-                         Fluid.of("gtceu:hydrogen", 1000),
-                         Fluid.of("gtceu:oxygen", 1000))
+                Fluid.of("gtceu:hydrogen", 1000),
+                Fluid.of("gtceu:oxygen", 1000))
             .outputFluids(Fluid.of("kubejs:androstenedione", 100))
             .duration(120)
             .EUt(42)
@@ -124,8 +124,8 @@ if (Platform.isLoaded("estrogen")) {
 
         event.recipes.gtceu.chemical_reactor("testosterone_powder")
             .inputFluids(Fluid.of("kubejs:androstenedione", 1000),
-                         Fluid.of("gtceu:hydrogen", 1000),
-                         Fluid.of("gtceu:ethanol", 1000))
+                Fluid.of("gtceu:hydrogen", 1000),
+                Fluid.of("gtceu:ethanol", 1000))
             .itemOutputs("estrogen:testosterone_powder")
             .duration(200)
             .EUt(16)
@@ -133,7 +133,7 @@ if (Platform.isLoaded("estrogen")) {
 
         event.recipes.gtceu.chemical_reactor("liquid_estrogen")
             .inputFluids(Fluid.of("kubejs:androstenedione", 1000),
-                         Fluid.of("gtceu:hydrogen", 1000))
+                Fluid.of("gtceu:hydrogen", 1000))
             .itemInputs("estrogen:testosterone_powder")
             .outputFluids(Fluid.of("estrogen:liquid_estrogen", 1000))
             .duration(300)
@@ -146,7 +146,7 @@ if (Platform.isLoaded("estrogen")) {
             .outputFluids(Fluid.of("estrogen:gender_fluid"))
             .duration(300)
             .EUt(40)
-        
+
     })
 
     console.log("Create: Estrogen Loaded!")
