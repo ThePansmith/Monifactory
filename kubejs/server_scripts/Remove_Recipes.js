@@ -36,4 +36,7 @@ ServerEvents.recipes(event => {
 
     // Water Collector
     event.remove({ output: /water_collector/ });
+
+    // Remove Thermal gunpowder recipes - they use empty tags a Mixer recipe already exists
+    event.remove({ id: /^thermal:gunpowder/ })
 })
