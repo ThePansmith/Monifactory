@@ -47,11 +47,11 @@ ServerEvents.recipes(event => {
 
     //Bauxite Sluice Processing
     event.recipes.gtceu.centrifuge("kubejs:bauxite_aluminosilicate_solution_processing")
-        .inputFluids("gtceu:bauxite_aluminosilicate_solution 9000")
+        .inputFluids("gtceu:bauxite_aluminosilicate_solution 8000")
         .itemOutputs("32x gtceu:sodium_aluminate_dust")
         .chancedOutput("3x gtceu:silicon_dioxide_dust", 3000, 0)
         .chancedOutput("gtceu:gallium_dust", 3000, 0)
-        .outputFluids("minecraft:water 4500")
+        .outputFluids("minecraft:water 4000")
         .duration(40)
         .EUt(120)
 
