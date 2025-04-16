@@ -29,29 +29,24 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 })
 
 
-// Giga, Omega Parallel Hatches
+// Giga, Omega, etc. Parallel Hatches
 GTCEuStartupEvents.registry("gtceu:machine", event => {
-    event.create("uhv_parallel_hatch", "custom")
-        .machine((holder, tier) => {
-            return new $ParallelHatchPartMachine(holder, tier);
-        })
-        .tiers(GTValues.UHV)
-        .definition((tier, builder) =>
-            builder
+    /**
+     * @param {string} tierName
+     * @param {number} tierNumber
+     */
+    function createParallelHatch(tierName, tierNumber) {
+        event.create(tierName + "_parallel_hatch", "custom")
+            .machine((holder, tier) => new $ParallelHatchPartMachine(holder, tier))
+            .tiers(tierNumber)
+            .definition((tier, builder) => builder
                 .rotationState(RotationState.ALL)
                 .abilities(PartAbility.PARALLEL_HATCH)
-                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk9"))
-        )
-
-    event.create("uev_parallel_hatch", "custom")
-        .machine((holder, tier) => {
-            return new $ParallelHatchPartMachine(holder, tier);
-        })
-        .tiers(GTValues.UEV)
-        .definition((tier, builder) =>
-            builder
-                .rotationState(RotationState.ALL)
-                .abilities(PartAbility.PARALLEL_HATCH)
-                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk10"))
-        )
+                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk" + tierNumber))
+            )
+    }
+    createParallelHatch("uhv", GTValues.UHV)
+    createParallelHatch("uev", GTValues.UEV)
+    createParallelHatch("uiv", GTValues.UIV)
+    createParallelHatch("max", GTValues.MAX)
 })
