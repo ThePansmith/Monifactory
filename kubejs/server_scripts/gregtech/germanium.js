@@ -3,10 +3,8 @@
 */
 ServerEvents.recipes(event => {
     // Replace ash outputs with Coal Fly Ash
-    event.replaceOutput({ input: /coal/ }, "gtceu:ash_dust", "gtceu:coal_fly_ash_dust")
-    event.replaceOutput({ input: /coal/ }, "gtceu:dark_ash_dust", "gtceu:coal_fly_ash_dust")
-    event.replaceOutput({ input: /coke/ }, "gtceu:ash_dust", "gtceu:coal_fly_ash_dust")
-    event.replaceOutput({ input: /coke/ }, "gtceu:dark_ash_dust", "gtceu:coal_fly_ash_dust")
+    event.replaceOutput({ input: ["minecraft:coal", "minecraft:coal_block", "gtceu:coal_dust", /coke/] },
+        ["gtceu:ash_dust", "gtceu:dark_ash_dust"], "gtceu:coal_fly_ash_dust")
 
     // Initial Centrifuge Recipe
     event.recipes.gtceu.centrifuge("coal_fly_ash_centrifuge")
