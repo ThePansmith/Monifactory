@@ -425,5 +425,12 @@
     "gtceu.jei.ore_vein.venus/tricalcium_phosphate": "磷酸三钙矿脉（金星）",
     "gtceu.jei.ore_vein.mars/zinc": "锌矿脉（火星）",
     "gtceu.jei.ore_vein.glacio/oilsands": "油砂矿脉（霜原星）",
-    "material.gtceu.rhodium_plated_palladium": "镀铑流明-钯"
+    "material.gtceu.rhodium_plated_palladium": "镀铑流明-钯",
+    "block.gtceu.mega_alloy_blast_smelter": "巨型合金冶炼炉",
+    "material.gtceu.rotten_meat": "受污染的肉",
+    "material.gtceu.rotten_sludge": "污泥",
+    "material.gtceu.extraterrestrial_metal_mixture": "外星金属混合物",
+    "material.gtceu.uranic_solution": "含铀溶液",
+    "material.gtceu.netherite_scrap": "远古残骸",
+    "gtceu.microverse": "微型宇宙计划"
 }

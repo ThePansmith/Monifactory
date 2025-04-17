@@ -39,16 +39,12 @@ ServerEvents.tags("item", event => {
     event.add("forge:nuggets/electrum_flux", "redstone_arsenal:flux_nugget")
     event.add("forge:gears/electrum_flux", "redstone_arsenal:flux_gear")
     event.add("forge:dusts/quartz", "gtceu:nether_quartz_dust")
-    event.removeAllTagsFrom("ae2:certus_quartz_crystal")
-    event.removeAllTagsFrom("ae2:charged_certus_quartz_crystal")
-    event.removeAllTagsFrom("ae2:fluix_crystal")
-    event.removeAllTagsFrom("ae2:fluix_dust")
-    event.remove("forge:ingots/aluminum", "nuclearcraft:aluminum_ingot")
-    event.add("forge:ingots/aluminium", "nuclearcraft:aluminum_ingot")
 
     // can't replace tags in recipes so we just add the tag to the item instead
     event.add("forge:ingots/redstone_alloy", "gtceu:red_alloy_ingot")
     event.add("forge:ingots/copper_alloy", "gtceu:electrical_steel_ingot")
+    event.add("forge:storage_blocks/coal_coke", "#forge:storage_blocks/coke")
+    event.add("forge:coal_coke", "#forge:gems/coke")
 
     const decorremap = [["etrium", "diamond"], ["desh", "bronze"], ["ostrum", "lead"], ["calorite", "red_alloy"]]
     decorremap.forEach(([mat, remat]) => {

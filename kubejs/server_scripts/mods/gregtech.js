@@ -87,9 +87,16 @@ ServerEvents.recipes(event => {
         })
     }
 
-    // Hot MV ingots
-    event.remove({ input: ["gtceu:hot_kanthal_ingot", "gtceu:hot_silicon_ingot"] })
-    event.replaceOutput({ output: "gtceu:hot_silicon_ingot" }, "gtceu:hot_silicon_ingot", "gtceu:silicon_ingot")
+    // Remove Hot MV ingots (And molten fluid counterpart)
+    event.remove([
+        { id: /^gtceu:vacuum_freezer\/.*kanthal/ },
+        { id: /^gtceu:vacuum_freezer\/.*silicon/ },
+        { id: /^gtceu:chemical_bath\/.*kanthal.*cool/ },
+        { id: /^gtceu:chemical_bath\/.*silicon.*cool/ }
+    ])
+    event.replaceOutput({}, "gtceu:hot_silicon_ingot", "gtceu:silicon_ingot")
+    event.replaceOutput({}, "gtceu:hot_kanthal_ingot", "gtceu:kanthal_ingot")
+    event.replaceOutput({}, Fluid.of("gtceu:molten_kanthal"), Fluid.of("gtceu:kanthal"))
 
     // Steel Machine Casing
     event.remove({ input: "gtceu:steel_machine_casing" })

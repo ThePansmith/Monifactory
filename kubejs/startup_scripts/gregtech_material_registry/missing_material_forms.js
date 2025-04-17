@@ -37,12 +37,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Holmium.setMaterialSecondaryARGB(0x715774)
     GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 0, true))
     GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(10000, 18000, true, false, true, true))
-    GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12500, "highest", 1000000, 1000, -1, -1));
+    GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12200, "highest", 1000000, 1000, -1, -1));
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
     // Existing materials that get new material forms
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
-    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
+    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
     GTMaterials.Graphite.addFlags(GTMaterialFlags.GENERATE_PLATE)
     GTMaterials.MagnesiumDiboride.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)

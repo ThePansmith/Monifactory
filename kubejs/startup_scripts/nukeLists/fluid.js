@@ -24,6 +24,9 @@ global.fluidNukeList = [
     "enderio:rocket_fuel",
     "enderio:vapor_of_levity",
 
+    // GregTech Modern
+    "gtceu:molten_kanthal",
+
     // Thermal Series
     "cofh_core:experience",
     "thermal:creosote",
@@ -65,6 +68,9 @@ StartupEvents.postInit(event => {
         "nuclearcraft:technical_water",
         "nuclearcraft:high_pressure_steam",
     ]
+
+    // Add depleted fuels, or else fission reactors won't run
+    NCFluidsToKeep = NCFluidsToKeep.concat(NCFluids.filter(id => id.includes("depleted_fuel")))
 
     // Add flowing fluid variants to the list of fluids to keep
     NCFluidsToKeep.forEach(fluid => { NCFluidsToKeep.push(`${fluid}_flowing`) })

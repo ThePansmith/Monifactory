@@ -53,6 +53,6 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.charger("kubejs:sculk_core_charge")
         .itemInputs(["4x gtceu:cryolobus_ingot", "4x gtceu:tungsten_carbide_ingot", "minecraft:sculk_catalyst"])
         .itemOutputs("kubejs:sculk_core")
-        .EUt(524288)
-        .duration(100)
+        .EUt(500000 / 16)
+        .duration(100 * 4)
 })
