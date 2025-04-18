@@ -1,3 +1,4 @@
+/** GTMUtils recipes */
 ServerEvents.recipes(event => {
     if (doQuantumCoolant) {
         event.recipes.gtceu.large_chemical_reactor("quantum_coolant")
