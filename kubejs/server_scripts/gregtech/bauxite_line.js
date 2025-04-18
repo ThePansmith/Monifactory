@@ -3,13 +3,6 @@
 ServerEvents.recipes(event => {
 
     // Initial Bauxite Slurry
-    event.recipes.gtceu.mixer("kubejs:bauxite_slurry_crushed")
-        .itemInputs("24x gtceu:crushed_bauxite_ore", "12x gtceu:sodium_hydroxide_dust", "4x gtceu:quicklime_dust")
-        .inputFluids("minecraft:water 12000")
-        .outputFluids("gtceu:bauxite_slurry 12000")
-        .duration(200)
-        .EUt(120)
-        .circuit(8)
 
     event.recipes.gtceu.mixer("kubejs:bauxite_slurry_purified")
         .itemInputs("24x gtceu:purified_bauxite_ore", "12x gtceu:sodium_hydroxide_dust", "4x gtceu:quicklime_dust")
@@ -84,22 +77,5 @@ ServerEvents.recipes(event => {
         .outputFluids(Fluid.of("gtceu:oxygen", 3000))
         .duration(100)
         .EUt(480)
-
-    /*
-    event.recipes.gtceu.distillery("kubejs:bauxite_sluice_juice_processing")
-        .inputFluids("gtceu:bauxite_sluice_juice 1000")
-        .itemOutputs("gtceu:sluice_sand_dust")
-        .outputFluids("minecraft:water 500")
-        .duration(100)
-        .EUt(16)
-
-    event.recipes.gtceu.electromagnetic_separator("kubejs:bauxite_sluice_sand_processing")
-        .itemInputs("gtceu:sluice_sand_dust")
-        .chancedOutput("gtceu:iron_dust", 4000, 0)
-        .chancedOutput("gtceu:neodymium_dust", 2000, 0)
-        .chancedOutput("gtceu:chromium_dust", 2000, 0)
-        .duration(200)
-        .EUt(240)
-    */
 
 })

@@ -223,10 +223,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("2x aluminium", "3x oxygen")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("sluice_sand")
-        .dust().iconSet("SAND")
-        .color(0x7B7B59)
-
     // Lead Chloride (Actinium byproduct)
     event.create("lead_chloride")
         .dust()
