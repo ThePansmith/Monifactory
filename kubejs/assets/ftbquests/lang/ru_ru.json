@@ -3330,5 +3330,11 @@
     "moni.quest.34B614453B9682C7.description1": "&2Жидкостные трубы&r используются для транспортировки различных жидкостей и газов. Они доступны в нескольких размерах, и разные трубы предназначены для разных типов жидкостей.",
     "moni.quest.701E607E9A035299.title": "All About Items!",
     "moni.quest.5D1DAC23C6B89AC4.title": "Element 083: Bismuth",
-    "moni.quest.2D9A95AC50BCB988.description2": "&9Stabilized Microminers&r still consume inputs like normal Microminers, however after completing a mission they &6no longer need to be repaired&r, and can be reused right away."
+    "moni.quest.2D9A95AC50BCB988.description2": "&9Stabilized Microminers&r still consume inputs like normal Microminers, however after completing a mission they &6no longer need to be repaired&r, and can be reused right away.",
+    "moni.quest.069D243B809E0D5D.title": "&2Power Transfer Einstein-Rosen Bridge",
+    "moni.quest.069D243B809E0D5D.description1": "The &9Power Transfer Einstein-Rosen Bridge&r, or PTERB for short, is a wireless version of the &6Active Transformer&r. It uses Einstein-Rosen Bridges to transfer power across vast distances or even &9across dimensions&r.",
+    "moni.quest.069D243B809E0D5D.description4": "&cWithout Quantum Coolant, the PTERB will explode&r.",
+    "moni.quest.069D243B809E0D5D.description3": "Each &6PTERB&r consumes &6Quantum Coolant&r each second to function. This coolant has a &2base drainage rate&r, which scales with the maximum amount of power the PTERB can transfer.",
+    "moni.quest.069D243B809E0D5D.subtitle": "Say that five times fast.",
+    "moni.quest.069D243B809E0D5D.description2": "Each &6PTERB&r can be set to a specific numbered frequency. Once attuned, all PTERBs operating on the &9same frequency&r act like a single active transformer, allowing for &9perfectly efficient&r power transfer."
 }
