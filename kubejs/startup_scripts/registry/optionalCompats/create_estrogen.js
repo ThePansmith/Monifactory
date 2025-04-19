@@ -20,8 +20,8 @@ if (Platform.isLoaded("estrogen")) {
             .thinTexture(Color.rgba(192,201,206,255))
 
         event.create("androstenedione")
-            .bucketColor(Color.rgba(200,139,139,255))
+            .bucketColor(Color.rgba(80,130,160,255))
             .displayName("Androstenedione")
-            .thinTexture(Color.rgba(200,139,139,255))
+            .thinTexture(Color.rgba(80,130,160,255))
     })
 }
