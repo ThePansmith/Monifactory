@@ -1,5 +1,6 @@
 ### Checklist
-- [ ] I have followed the [contributing guidelines](../../CONTRIBUTING.md)
+- [ ] I have followed the [contributing guidelines](
+https://github.com/ThePansmith/Monifactory/blob/main/CONTRIBUTING.md)
 - [ ] I have tested that my changes work as intended and do not break any other features
 
 # What
