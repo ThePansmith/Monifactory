@@ -60,12 +60,9 @@
     "JuiceyBeans": {
       "mcuuid": "d7dfa467-51b9-4beb-9a40-24ec2c2b8759"
     },
-    "SparkedTheorem": {
-    },
-    "IamNotBrianZ": {
-    },
-    "tomprince": {
-    },
+    "SparkedTheorem": {},
+    "IamNotBrianZ": {},
+    "tomprince": {},
     "zcarp7220": {
       "mcuuid": "f451bf5c-96be-4ea5-b619-1857304ed89b"
     },
@@ -75,8 +72,7 @@
     "Spicierspace153": {
       "mcuuid": "f76fc8b3-ac6b-44b9-9023-76edaf3d5909"
     },
-    "Globalista-dev": {
-    },
+    "Globalista-dev": {},
     "eve336": {
       "mcuuid": "afcd28b1-e3cd-424f-9a28-ed9e8ccad380"
     },
@@ -87,6 +83,9 @@
       "mcuuid": "596353a3-f417-4071-90af-132eab180aa4",
       "description": "DevOps, workflows, codegen",
       "link": "https://gravatar.com/iluha168"
+    },
+    "Jollahs": {
+      "mcuuid": "b2b0f67c-4db4-4286-b10d-31cebe8cdf7d"
     }
   }
 }
