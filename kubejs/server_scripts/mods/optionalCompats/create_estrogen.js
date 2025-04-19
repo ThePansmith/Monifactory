@@ -52,7 +52,7 @@ if (Platform.isLoaded("estrogen")) {
 
         event.recipes.gtceu.canner("gender_change_potion")
             .itemInputs("minecraft:glass_bottle")
-            .inputFluids(Fluid.of("estrogen:gender_fluid", 250))
+            .inputFluids("estrogen:gender_fluid 250")
             .itemOutputs("estrogen:gender_change_potion")
             .duration(20)
             .EUt(8)
@@ -71,14 +71,14 @@ if (Platform.isLoaded("estrogen")) {
 
         event.recipes.gtceu.mixer("estrogen_pill")
             .itemInputs("#forge:dough", "minecraft:cocoa_beans")
-            .inputFluids(Fluid.of("estrogen:liquid_estrogen", 1000))
+            .inputFluids("estrogen:liquid_estrogen 1000")
             .itemOutputs("4x estrogen:estrogen_pill")
             .duration(200)
             .EUt(48)
 
         event.recipes.gtceu.assembler("estrogen_patches")
             .itemInputs("minecraft:paper", "create:super_glue")
-            .inputFluids(Fluid.of("estrogen:liquid_estrogen", 1000))
+            .inputFluids("estrogen:liquid_estrogen 1000")
             .itemOutputs("estrogen:estrogen_patches")
             .duration(200)
             .EUt(56)
@@ -107,43 +107,38 @@ if (Platform.isLoaded("estrogen")) {
 
         event.recipes.gtceu.chemical_reactor("pregnenolone")
             .itemInputs("2x kubejs:cholestrol")
-            .inputFluids(Fluid.of("gtceu:hydrogen", 2000))
-            .outputFluids(Fluid.of("kubejs:pregnenolone", 250))
+            .inputFluids("gtceu:hydrogen 2000")
+            .outputFluids("kubejs:pregnenolone 250")
             .duration(100)
             .EUt(40)
             .cleanroom(CleanroomType.CLEANROOM)
 
         event.recipes.gtceu.chemical_reactor("androstenedione")
-            .inputFluids(Fluid.of("kubejs:pregnenolone", 1000),
-                Fluid.of("gtceu:hydrogen", 1000),
-                Fluid.of("gtceu:oxygen", 1000))
-            .outputFluids(Fluid.of("kubejs:androstenedione", 250))
+            .inputFluids("kubejs:pregnenolone", "gtceu:hydrogen", "gtceu:oxygen")
+            .outputFluids("kubejs:androstenedione 250")
             .duration(120)
             .EUt(42)
             .cleanroom(CleanroomType.CLEANROOM)
 
         event.recipes.gtceu.chemical_reactor("testosterone_powder")
-            .inputFluids(Fluid.of("kubejs:androstenedione", 1000),
-                Fluid.of("gtceu:hydrogen", 1000),
-                Fluid.of("gtceu:ethanol", 1000))
+            .inputFluids("kubejs:androstenedione", "gtceu:hydrogen", "gtceu:ethanol")
             .itemOutputs("estrogen:testosterone_powder")
             .duration(100)
             .EUt(40)
             .cleanroom(CleanroomType.CLEANROOM)
 
         event.recipes.gtceu.chemical_reactor("liquid_estrogen")
-            .inputFluids(Fluid.of("kubejs:androstenedione", 1000),
-                Fluid.of("gtceu:hydrogen", 1000))
+            .inputFluids("kubejs:androstenedione", "gtceu:hydrogen")
             .itemInputs("estrogen:testosterone_powder")
-            .outputFluids(Fluid.of("estrogen:liquid_estrogen", 1000))
+            .outputFluids("estrogen:liquid_estrogen")
             .duration(138)
             .EUt(69)
             .cleanroom(CleanroomType.CLEANROOM)
 
         event.recipes.gtceu.brewery("gender_fluid")
-            .inputFluids(Fluid.of("estrogen:liquid_estrogen", 1000))
+            .inputFluids("estrogen:liquid_estrogen")
             .itemInputs("estrogen:testosterone_powder")
-            .outputFluids(Fluid.of("estrogen:gender_fluid"))
+            .outputFluids("estrogen:gender_fluid")
             .duration(200)
             .EUt(16)
 
