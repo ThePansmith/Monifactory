@@ -1,6 +1,6 @@
-# Checklist
+### Checklist
 - [ ] I have followed the [contributing guidelines](../../CONTRIBUTING.md)
-- [ ] I have tested that my changes work as intended and does not break any other features
+- [ ] I have tested that my changes work as intended and do not break any other features
 
 # What
 *Include details about what this PR includes here. Mention any issues, if any, that it would close here*
