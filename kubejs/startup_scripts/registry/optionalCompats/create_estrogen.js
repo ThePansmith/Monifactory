@@ -9,7 +9,7 @@
 if (Platform.isLoaded("estrogen")) {
     // Item Registration
     StartupEvents.registry("item", event => {
-        event.create("cholestrol").displayName("Cholestrol").formula(C27H46O)
+        event.create("cholestrol").displayName("Cholestrol")
     })
 
     // Fluid Registration
@@ -18,12 +18,10 @@ if (Platform.isLoaded("estrogen")) {
             .bucketColor(Color.rgba(192,201,206,255))
             .displayName("Pregnenolone")
             .thinTexture(Color.rgba(192,201,206,255))
-            .formula(C21H32O2)
 
         event.create("androstenedione")
             .bucketColor(Color.rgba(80,130,160,255))
             .displayName("Androstenedione")
             .thinTexture(Color.rgba(80,130,160,255))
-            .formula(C19H26O2)
     })
 }
