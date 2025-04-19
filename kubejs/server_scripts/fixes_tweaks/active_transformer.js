@@ -27,5 +27,5 @@ ServerEvents.recipes(event => {
         .duration(300).EUt(GTValues.VA[GTValues.IV])
     
     //Lowers the voltage at which the laser pipes can be made to post plat-line IV
-    event.replaceInput({ output: "gtceu:normal_laser_pipe" }, "gtceu:osmiridium_foil", "gtceu:iridium_foil")
+    event.replaceInput({ output: "gtceu:normal_laser_pipe" }, "gtceu:osmiridium_foil", "gtceu:rhodium_foil")
 })
