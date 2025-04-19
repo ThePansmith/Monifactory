@@ -100,15 +100,15 @@ if (Platform.isLoaded("estrogen")) {
         // ------------------------------------------------------------------ \\
 
         event.recipes.gtceu.centrifuge("cholestrol")
-            .itemInputs("4x gtceu:meat_dust")
+            .itemInputs("2x gtceu:meat_dust")
             .itemOutputs("kubejs:cholestrol")
-            .duration(300)
-            .EUt(8)
+            .duration(100)
+            .EUt(36)
 
         event.recipes.gtceu.chemical_reactor("pregnenolone")
             .itemInputs("2x kubejs:cholestrol")
             .inputFluids(Fluid.of("gtceu:hydrogen", 2000))
-            .outputFluids(Fluid.of("kubejs:pregnenolone", 100))
+            .outputFluids(Fluid.of("kubejs:pregnenolone", 250))
             .duration(100)
             .EUt(40)
             .cleanroom(CleanroomType.CLEANROOM)
@@ -117,7 +117,7 @@ if (Platform.isLoaded("estrogen")) {
             .inputFluids(Fluid.of("kubejs:pregnenolone", 1000),
                 Fluid.of("gtceu:hydrogen", 1000),
                 Fluid.of("gtceu:oxygen", 1000))
-            .outputFluids(Fluid.of("kubejs:androstenedione", 100))
+            .outputFluids(Fluid.of("kubejs:androstenedione", 250))
             .duration(120)
             .EUt(42)
             .cleanroom(CleanroomType.CLEANROOM)
@@ -127,8 +127,8 @@ if (Platform.isLoaded("estrogen")) {
                 Fluid.of("gtceu:hydrogen", 1000),
                 Fluid.of("gtceu:ethanol", 1000))
             .itemOutputs("estrogen:testosterone_powder")
-            .duration(200)
-            .EUt(16)
+            .duration(100)
+            .EUt(40)
             .cleanroom(CleanroomType.CLEANROOM)
 
         event.recipes.gtceu.chemical_reactor("liquid_estrogen")
@@ -136,16 +136,16 @@ if (Platform.isLoaded("estrogen")) {
                 Fluid.of("gtceu:hydrogen", 1000))
             .itemInputs("estrogen:testosterone_powder")
             .outputFluids(Fluid.of("estrogen:liquid_estrogen", 1000))
-            .duration(300)
-            .EUt(40)
+            .duration(138)
+            .EUt(69)
             .cleanroom(CleanroomType.CLEANROOM)
 
         event.recipes.gtceu.brewery("gender_fluid")
             .inputFluids(Fluid.of("estrogen:liquid_estrogen", 1000))
             .itemInputs("estrogen:testosterone_powder")
             .outputFluids(Fluid.of("estrogen:gender_fluid"))
-            .duration(300)
-            .EUt(40)
+            .duration(200)
+            .EUt(16)
 
     })
 
