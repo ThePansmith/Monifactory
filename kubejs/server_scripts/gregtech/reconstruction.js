@@ -4,32 +4,32 @@
 
 ServerEvents.recipes(event => {
     const reconstructedItems = [
-        ["minecraft:redstone", "gtceu:restonia_gem", 128, "restonia"],
-        ["minecraft:iron_ingot", "gtceu:enori_gem", 128, "enori"],
-        ["minecraft:coal", "gtceu:void_gem", 128, "void"],
-        ["minecraft:lapis_lazuli", "gtceu:palis_gem", 128, "palis"],
-        ["minecraft:diamond", "gtceu:diamatine_gem", 128, "diamatine"],
-        ["minecraft:emerald", "gtceu:emeradic_gem", 128, "emeradic"],
-        ["minecraft:coal_block", "gtceu:void_block", 128, "void_block"],
-        ["#forge:storage_blocks/redstone", "gtceu:restonia_block", 128, "restonia_block"],
-        ["#forge:storage_blocks/lapis", "gtceu:palis_block", 128, "palis_block"],
-        ["#forge:storage_blocks/diamond", "gtceu:diamatine_block", 128, "diamatine_block"],
-        ["#forge:storage_blocks/emerald", "gtceu:emeradic_block", 128, "emeradic_block"],
-        ["#forge:storage_blocks/iron", "gtceu:enori_block", 128, "enori_block"],
-        ["minecraft:sand", "minecraft:soul_sand", 128, "soul_sand"],
-        ["minecraft:red_mushroom", "minecraft:nether_wart", 32, "nether_wart"],
-        ["minecraft:quartz", "minecraft:prismarine_shard", 128, "prismarine_shard"],
-        ["minecraft:rotten_flesh", "minecraft:leather", 32, "leather"],
-        ["gtceu:topaz_gem", "minecraft:prismarine_crystals", 128, "prismarine_crystals"],
-        ["gtceu:steel_ingot", "gtceu:damascus_steel_ingot", 128, "damascus_steel"],
-        ["gtceu:diamatine_block", "kubejs:starry_diamond_block", 128, "starry_diamond"],
-        ["gtceu:obsidian_dust", "enderio:grains_of_infinity", 32, "temp_grains"],
-        ["minecraft:poppy", "minecraft:red_mushroom", 32, "red_mushroom"],
-        ["minecraft:dried_kelp", "minecraft:wither_rose", 32, "wither_rose"],
-        ["gtceu:plant_ball", "minecraft:kelp", 32, "kelp"],
-        ["minecraft:obsidian", "minecraft:crying_obsidian", 32, "crying_obsidian"],
-        ["#forge:dyes/black", "minecraft:ink_sac", 32, "ink_sac"],
-        ["minecraft:ink_sac", "minecraft:glow_ink_sac", 32, "glow_ink_sac"]
+        ["minecraft:redstone", "gtceu:restonia_gem", GTValues.VA[GTValues.MV], "restonia"],
+        ["minecraft:iron_ingot", "gtceu:enori_gem", GTValues.VA[GTValues.MV], "enori"],
+        ["minecraft:coal", "gtceu:void_gem", GTValues.VA[GTValues.MV], "void"],
+        ["minecraft:lapis_lazuli", "gtceu:palis_gem", GTValues.VA[GTValues.MV], "palis"],
+        ["minecraft:diamond", "gtceu:diamatine_gem", GTValues.VA[GTValues.MV], "diamatine"],
+        ["minecraft:emerald", "gtceu:emeradic_gem", GTValues.VA[GTValues.MV], "emeradic"],
+        ["minecraft:coal_block", "gtceu:void_block", GTValues.VA[GTValues.MV], "void_block"],
+        ["#forge:storage_blocks/redstone", "gtceu:restonia_block", GTValues.VA[GTValues.MV], "restonia_block"],
+        ["#forge:storage_blocks/lapis", "gtceu:palis_block", GTValues.VA[GTValues.MV], "palis_block"],
+        ["#forge:storage_blocks/diamond", "gtceu:diamatine_block", GTValues.VA[GTValues.MV], "diamatine_block"],
+        ["#forge:storage_blocks/emerald", "gtceu:emeradic_block", GTValues.VA[GTValues.MV], "emeradic_block"],
+        ["#forge:storage_blocks/iron", "gtceu:enori_block", GTValues.VA[GTValues.MV], "enori_block"],
+        ["minecraft:sand", "minecraft:soul_sand", GTValues.VA[GTValues.MV], "soul_sand"],
+        ["minecraft:quartz", "minecraft:prismarine_shard", GTValues.VA[GTValues.MV], "prismarine_shard"],
+        ["minecraft:rotten_flesh", "minecraft:leather", GTValues.VA[GTValues.LV], "leather"],
+        ["gtceu:topaz_gem", "minecraft:prismarine_crystals", GTValues.VA[GTValues.MV], "prismarine_crystals"],
+        ["gtceu:steel_ingot", "gtceu:damascus_steel_ingot", GTValues.VA[GTValues.MV], "damascus_steel"],
+        ["gtceu:diamatine_block", "kubejs:starry_diamond_block", GTValues.VA[GTValues.MV], "starry_diamond"],
+        ["gtceu:obsidian_dust", "enderio:grains_of_infinity", GTValues.VA[GTValues.LV], "temp_grains"],
+        ["minecraft:dried_kelp", "minecraft:wither_rose", GTValues.VA[GTValues.LV], "wither_rose"],
+        ["gtceu:plant_ball", "minecraft:kelp", GTValues.VA[GTValues.LV], "kelp"],
+        ["minecraft:obsidian", "minecraft:crying_obsidian", GTValues.VA[GTValues.LV], "crying_obsidian"],
+        ["#forge:dyes/black", "minecraft:ink_sac", GTValues.VA[GTValues.LV], "ink_sac"],
+        ["minecraft:ink_sac", "minecraft:glow_ink_sac", GTValues.VA[GTValues.LV], "glow_ink_sac"],
+        ["thermal:rubberwood_sapling", "gtceu:rubber_sapling", GTValues.VA[GTValues.LV], "rubberwood_to_rubber"],
+        ["gtceu:rubber_sapling", "thermal:rubberwood_sapling", GTValues.VA[GTValues.LV], "rubber_to_rubberwood"],
     ]
 
     const crystals = ["enori", "void", "palis", "diamatine", "restonia", "emeradic"]
@@ -56,6 +56,23 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:black_quartz_gem")
         .duration(600)
         .EUt(24)
+
+    // Black quartz, tag-based recipes for Tinted Glass
+    event.replaceInput({ output: "minecraft:tinted_glass" }, "minecraft:glass", "#forge:glass")
+    event.replaceInput({ output: "minecraft:tinted_glass" }, "minecraft:amethyst_shard", "#forge:gems/amethyst")
+    event.shaped("2x minecraft:tinted_glass", [
+        " Q ",
+        "QGQ",
+        " Q "
+    ], {
+        Q: "#forge:gems/black_quartz",
+        G: "#forge:glass"
+    }).id("kubejs:tinted_glass_black_quartz")
+    event.recipes.gtceu.assembler("tinted_glass_black_quartz")
+        .itemInputs("2x #forge:gems/black_quartz", "#forge:glass")
+        .itemOutputs("minecraft:tinted_glass")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Reconstruction
     reconstructedItems.forEach(([input, output, eut, id]) => {
@@ -113,7 +130,7 @@ ServerEvents.recipes(event => {
             .EUt(56)
     })
 
-    // Flower cycle convenience recipes
+    // Flower conversion convenience recipes
     const flowerCycle = [
         "dandelion",
         "poppy",
@@ -135,13 +152,32 @@ ServerEvents.recipes(event => {
         "wither_rose",
         "dead_bush"
     ]
-    flowerCycle.forEach((flower, index) => {
-        let curFlower = flowerCycle[index];
-        let nextFlower = flowerCycle[(index + 1) % flowerCycle.length];
-        event.recipes.gtceu.atomic_reconstruction(`gtceu:${curFlower}_to_${nextFlower}`)
-            .itemInputs(`minecraft:${curFlower}`)
-            .itemOutputs(`minecraft:${nextFlower}`)
-            .EUt(GTValues.VA[GTValues.LV])
-            .duration(30)
-    })
+    reconstructCycle(flowerCycle);
+
+    // Fungus conversion convenience recipes
+    const fungusCycle = [
+        "red_mushroom",
+        "brown_mushroom",
+        "nether_wart"
+    ]
+    reconstructCycle(fungusCycle);
+
+    /**
+     * Creates a "cycle" of Atomic Reconstructor recipes that allow players to transmute
+     * any one item in the cycle into any other, through repeated applications of Atomic Reconstruction.
+     * Best applied to plants or fungi, where getting one enables you to get many more easily.
+     *
+     * @param {Ingredient[]} cycle The array of ingredients for the AR to cycle through
+     */
+    function reconstructCycle(cycle) {
+        cycle.forEach((flower, index) => {
+            let curItem = cycle[index];
+            let nextItem = cycle[(index + 1) % cycle.length];
+            event.recipes.gtceu.atomic_reconstruction(`gtceu:${curItem}_to_${nextItem}`)
+                .itemInputs(`minecraft:${curItem}`)
+                .itemOutputs(`minecraft:${nextItem}`)
+                .EUt(GTValues.VA[GTValues.LV])
+                .duration(30)
+        })
+    }
 })

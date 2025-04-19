@@ -61,5 +61,5 @@
 	max_interaction_range = 10
 	#Maximum distance between two linked nodes
 	#Range: > 2
-	max_nodes_distance = 8
+	max_nodes_distance = 10
 

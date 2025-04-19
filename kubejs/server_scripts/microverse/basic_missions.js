@@ -102,9 +102,9 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:iron_drill_head")
             .itemOutputs(
-                "64x gtceu:raw_salt",
+                "48x gtceu:raw_salt",
                 "48x gtceu:raw_rock_salt",
-                "16x gtceu:raw_saltpeter",
+                "48x gtceu:raw_saltpeter",
             )
     })
 
