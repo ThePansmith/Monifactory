@@ -647,7 +647,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.chemical_reactor("ammonium_hexachloroiridiate_to_small_iridium")
             .itemInputs("2x gtceu:ammonium_hexachloroiridiate_dust")
             .inputFluids("gtceu:hydrogen 3000")
-            .ciruit(1)
+            .circuit(1)
             .itemOutputs("gtceu:small_iridium_dust")
             .outputFluids("gtceu:hydrochloric_acid 4500", "gtceu:ammonia 500")
             .duration(37.5).EUt(7680)
