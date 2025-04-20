@@ -24,7 +24,9 @@ const doMonicoins = !!global.doMonicoins;
 const doSnad = !!global.doSnad;
 const doSteamAge = !!global.doSteamAge;
 const doStoneline = !!global.doStoneline;
-
+const doFluxbore = !!global.doFluxbore;
+const doHarderFluxBore = !!global.doHarderFluxBore;
+const doQuantumCoolant = !!global.doQuantumCoolant;
 
 PlayerEvents.loggedIn(event => {
     const gameStages = [
@@ -41,7 +43,8 @@ PlayerEvents.loggedIn(event => {
         "SteamAge",
         "HarderNaqFuel",
         "Stoneline",
-        "HalfMMs"
+        "HalfMMs",
+        "QuantumCoolant"
     ];
 
     gameStages.forEach(stage => {

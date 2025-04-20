@@ -11,8 +11,8 @@
 			id: "5522298B1FC30B2B"
 			linked_quest: "2F04FA8D3E15E375"
 			size: 2.0d
-			x: 25.0d
-			y: -2.0d
+			x: 21.0d
+			y: 0.5d
 		}
 		{
 			id: "4AB71382C803BD92"
@@ -39,8 +39,8 @@
 		{
 			id: "760BD8D5E0B0FE24"
 			linked_quest: "57A6FE885489C3ED"
-			x: 0.0d
-			y: 6.5d
+			x: 1.0d
+			y: 8.25d
 		}
 		{
 			id: "1C267CF4E1689C85"
@@ -91,21 +91,21 @@
 			id: "37E71BAD3A4303A6"
 			linked_quest: "3C3B5875FCD6B5B7"
 			shape: "hexagon"
-			x: 0.0d
+			x: 1.0d
 			y: 18.25d
 		}
 		{
 			id: "3E8AD2962C885A40"
 			linked_quest: "64C33333ECCAABC7"
 			shape: "hexagon"
-			x: 6.0d
+			x: 5.0d
 			y: 18.25d
 		}
 		{
 			id: "68CD20CF674D7CC0"
 			linked_quest: "7E51D15F38C3B356"
-			x: 0.0d
-			y: 22.25d
+			x: 1.0d
+			y: 17.0d
 		}
 		{
 			id: "207E26A342B05F89"
@@ -127,14 +127,14 @@
 			linked_quest: "49E9A178F6A52A62"
 			shape: "hexagon"
 			size: 2.0d
-			x: 17.25d
-			y: 18.25d
+			x: 13.0d
+			y: 20.5d
 		}
 		{
 			id: "357D42CDD60D4A44"
 			linked_quest: "4FABACAB7C4A74AC"
 			shape: "hexagon"
-			x: 6.0d
+			x: 4.25d
 			y: 22.25d
 		}
 		{
@@ -170,7 +170,7 @@
 			id: "33B08B68738FB6E3"
 			linked_quest: "49D33146A1F417E8"
 			x: -6.0d
-			y: 6.0d
+			y: 6.25d
 		}
 		{
 			id: "3580707E636655C2"
@@ -179,53 +179,57 @@
 			y: 8.25d
 		}
 		{
-			id: "69230B4A261BC806"
-			linked_quest: "53EC3831D66769CA"
-			shape: "hexagon"
-			x: 11.0d
-			y: 1.0d
-		}
-		{
-			id: "42EF3BF182FB8BFB"
-			linked_quest: "0B9D5F865C3F8B31"
-			shape: "hexagon"
-			x: 9.0d
-			y: 1.0d
-		}
-		{
-			id: "14A584E86F0C39DA"
-			linked_quest: "798889BE3819EB4D"
-			shape: "hexagon"
-			x: 13.0d
-			y: 1.0d
-		}
-		{
 			id: "51714F7845582B70"
 			linked_quest: "38791476E970C57D"
 			shape: "hexagon"
 			size: 1.5d
-			x: 0.0d
-			y: 1.0d
+			x: 1.0d
+			y: 20.5d
 		}
 		{
 			id: "5ABE18BA5747E465"
 			linked_quest: "51A463024F35DC2E"
 			shape: "hexagon"
-			size: 2.0d
-			x: 0.0d
-			y: -2.0d
+			size: 1.5d
+			x: 1.0d
+			y: 22.75d
 		}
 		{
 			id: "29366415E2B146BA"
 			linked_quest: "739F7BF2A90B278A"
-			x: 11.0d
-			y: 17.0d
+			x: 25.25d
+			y: 25.75d
 		}
 		{
 			id: "03BAC1C5A779EFAE"
 			linked_quest: "425D1C34A82B054D"
-			x: 21.25d
-			y: 16.25d
+			x: 20.25d
+			y: 15.5d
+		}
+		{
+			id: "272E429A17FC20BF"
+			linked_quest: "79EFCD8E01384C0C"
+			x: 17.0d
+			y: 17.0d
+		}
+		{
+			id: "1C4EBBFDD443BAE7"
+			linked_quest: "53EC3831D66769CA"
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			id: "7DFA3535BA3EEDFC"
+			linked_quest: "54C3B1B782FDF57F"
+			x: -6.0d
+			y: 18.25d
+		}
+		{
+			id: "1FD25B0E6E62544E"
+			linked_quest: "745628397790ED7A"
+			shape: "hexagon"
+			x: 9.25d
+			y: 4.5d
 		}
 	]
 	quests: [
@@ -298,8 +302,8 @@
 				}
 			]
 			title: "{moni.quest.52F1953ED72A8AA6.title}"
-			x: 3.0d
-			y: -2.0d
+			x: 4.75d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -334,7 +338,7 @@
 			}]
 			title: "{moni.quest.15DBB22E3DC0AFB7.title}"
 			x: 3.0d
-			y: 1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["53C00EA9D9BEE776"]
@@ -423,8 +427,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.40E8C7CEE285D702.title}"
-			x: 0.0d
-			y: 11.0d
+			x: -0.5d
+			y: 10.75d
 		}
 		{
 			dependencies: ["40E8C7CEE285D702"]
@@ -447,8 +451,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2E6BA621B265C3A8.title}"
-			x: 0.0d
-			y: 14.25d
+			x: -0.5d
+			y: 14.75d
 		}
 		{
 			dependencies: [
@@ -562,7 +566,7 @@
 			]
 			title: "{moni.quest.6DAB13A7BDECE94E.title}"
 			x: -6.0d
-			y: 12.25d
+			y: 13.0d
 		}
 		{
 			dependencies: ["39FD6F1076559156"]
@@ -595,7 +599,7 @@
 			}]
 			title: "{moni.quest.672D43BD113251EA.title}"
 			x: -8.0d
-			y: 12.25d
+			y: 13.0d
 		}
 		{
 			dependencies: ["2E6BA621B265C3A8"]
@@ -617,8 +621,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.67833AE5421E10D4.title}"
-			x: 0.0d
-			y: 16.25d
+			x: -0.5d
+			y: 18.25d
 		}
 		{
 			dependencies: [
@@ -671,19 +675,14 @@
 					type: "item"
 				}
 				{
-					id: "788B883FB60C804A"
-					item: "gtceu:indium_tin_barium_titanium_cuprate_ingot"
-					type: "item"
-				}
-				{
 					id: "71D6ED6A4EAA1968"
 					item: "gtceu:samarium_ingot"
 					type: "item"
 				}
 			]
 			title: "{moni.quest.458FF3F9BC8E025B.title}"
-			x: 1.5d
-			y: 14.25d
+			x: 3.0d
+			y: 16.25d
 		}
 		{
 			dependencies: ["78DCEF2FF2E1AC8C"]
@@ -703,7 +702,7 @@
 			}]
 			title: "{moni.quest.6BE1CD77618EC6C7.title}"
 			x: -2.0d
-			y: 18.25d
+			y: 20.0d
 		}
 		{
 			dependencies: [
@@ -725,11 +724,11 @@
 				type: "item"
 			}]
 			title: "{moni.quest.76BAC72CC89F390E.title}"
-			x: -4.0d
+			x: -2.0d
 			y: 18.25d
 		}
 		{
-			dependencies: ["23A867EC14368388"]
+			dependencies: ["54C3B1B782FDF57F"]
 			description: ["{moni.quest.2B336FD89B15F98E.description1}"]
 			id: "2B336FD89B15F98E"
 			shape: "hexagon"
@@ -740,27 +739,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2B336FD89B15F98E.title}"
-			x: -6.0d
-			y: 18.25d
-		}
-		{
-			dependencies: ["54C3B1B782FDF57F"]
-			description: [
-				"{moni.quest.23A867EC14368388.description1}"
-				""
-				"{moni.quest.23A867EC14368388.description2}"
-				""
-				"{moni.quest.23A867EC14368388.description3}"
-			]
-			disable_toast: true
-			id: "23A867EC14368388"
-			shape: "hexagon"
-			tasks: [{
-				id: "6A11AEB1AFD6DC29"
-				item: "gtceu:lumium_ingot"
-				type: "item"
-			}]
-			x: -8.0d
+			x: -4.0d
 			y: 18.25d
 		}
 		{
@@ -785,8 +764,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.025092551C0A20B6.title}"
-			x: 3.0d
-			y: 3.0d
+			x: 4.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["025092551C0A20B6"]
@@ -804,14 +783,11 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4F8B4DCE7C340418.title}"
-			x: 3.0d
-			y: 6.25d
+			x: 6.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
-				"14F1FF4656693711"
-				"51A463024F35DC2E"
-				"025092551C0A20B6"
 				"069773756716E192"
 				"79EFCD8E01384C0C"
 			]
@@ -838,8 +814,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.04EABD3D2C72D2C5.title}"
-			x: 3.0d
-			y: 12.25d
+			x: 10.75d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -867,8 +843,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1AC91A3E05215569.title}"
-			x: 3.0d
-			y: 14.25d
+			x: 7.25d
+			y: 17.0d
 		}
 		{
 			dependencies: ["1AC91A3E05215569"]
@@ -891,8 +867,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.35D128D56DAFDFAA.title}"
-			x: 3.0d
-			y: 16.25d
+			x: 7.25d
+			y: 19.5d
 		}
 		{
 			dependencies: ["35D128D56DAFDFAA"]
@@ -919,8 +895,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2F6EC962007FA9FB.title}"
-			x: 3.0d
-			y: 20.25d
+			x: 5.75d
+			y: 19.5d
 		}
 		{
 			dependencies: [
@@ -951,8 +927,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 22.25d
+			x: 4.25d
+			y: 19.5d
 		}
 		{
 			dependencies: [
@@ -973,11 +949,14 @@
 				type: "item"
 			}]
 			title: "{moni.quest.27B3EB82ED638620.title}"
-			x: 6.0d
-			y: -2.0d
+			x: 0.75d
+			y: 6.0d
 		}
 		{
-			dependencies: ["4F8B4DCE7C340418"]
+			dependencies: [
+				"4F8B4DCE7C340418"
+				"52F1953ED72A8AA6"
+			]
 			description: [
 				"{moni.quest.023197AB7CDBDD6E.description1}"
 				""
@@ -999,7 +978,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.023197AB7CDBDD6E.title}"
-			x: 6.0d
+			x: 6.5d
 			y: 6.25d
 		}
 		{
@@ -1126,7 +1105,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.28CA4E5308EC0BB9.title}"
-			x: 11.0d
+			x: 13.0d
 			y: 8.25d
 		}
 		{
@@ -1145,8 +1124,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4F2A97487AE923CE.title}"
-			x: 9.0d
-			y: 11.0d
+			x: 9.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["4F2A97487AE923CE"]
@@ -1178,8 +1157,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.49B872B193268554.title}"
-			x: 9.0d
-			y: 15.25d
+			x: 9.75d
+			y: 20.75d
 		}
 		{
 			dependencies: [
@@ -1195,8 +1174,8 @@
 				item: "gtceu:stem_cells"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 20.25d
+			x: 5.75d
+			y: 20.75d
 		}
 		{
 			dependencies: ["49B872B193268554"]
@@ -1221,14 +1200,11 @@
 				type: "item"
 			}]
 			title: "{moni.quest.039F70814051413E.title}"
-			x: 9.0d
-			y: 20.25d
+			x: 7.75d
+			y: 20.75d
 		}
 		{
-			dependencies: [
-				"1B07DB4D58D43B7C"
-				"521977C7165229F1"
-			]
+			dependencies: ["1B07DB4D58D43B7C"]
 			description: [
 				"{moni.quest.2836DDEE49C3CCFB.description1}"
 				""
@@ -1256,8 +1232,8 @@
 				}
 			]
 			title: "{moni.quest.2836DDEE49C3CCFB.title}"
-			x: 13.0d
-			y: 15.25d
+			x: 13.5625d
+			y: 15.75d
 		}
 		{
 			dependencies: [
@@ -1392,7 +1368,7 @@
 			}]
 			title: "{moni.quest.186C14C113B6F3AD.title}"
 			x: 25.25d
-			y: 17.0d
+			y: 16.75d
 		}
 		{
 			dependencies: ["424413BBCE3FD3BF"]
@@ -1444,7 +1420,7 @@
 			}]
 			title: "{moni.quest.0508D3CCB6C876A3.title}"
 			x: 11.0d
-			y: 12.25d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1471,8 +1447,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.41FA85A3920EB334.title}"
-			x: 11.0d
-			y: 14.0d
+			x: 13.0d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -1500,8 +1476,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.15FAEE3F625265F4.title}"
-			x: 17.25d
-			y: 12.25d
+			x: 19.25d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1524,7 +1500,7 @@
 			}]
 			title: "{moni.quest.7A65459E4DFAAC2D.title}"
 			x: 19.25d
-			y: 14.0d
+			y: 14.25d
 		}
 		{
 			dependencies: ["15FAEE3F625265F4"]
@@ -1542,8 +1518,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1B07DB4D58D43B7C.title}"
-			x: 17.25d
-			y: 15.25d
+			x: 15.5d
+			y: 15.75d
 		}
 		{
 			dependencies: ["7A65459E4DFAAC2D"]
@@ -1565,8 +1541,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5792330C6E5B87A3.title}"
-			x: 19.25d
-			y: 15.25d
+			x: 18.25d
+			y: 15.5d
 		}
 		{
 			dependencies: ["1B07DB4D58D43B7C"]
@@ -1590,8 +1566,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.217F85D6FE2A467D.title}"
-			x: 17.25d
-			y: 16.5d
+			x: 15.5d
+			y: 20.5d
 		}
 		{
 			dependencies: [
@@ -1635,8 +1611,8 @@
 				item: "kubejs:the_ultimate_material"
 				type: "item"
 			}]
-			x: 23.25d
-			y: 19.75d
+			x: 21.25d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -1688,8 +1664,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2A6E9E7C80754936.title}"
-			x: 23.25d
-			y: 11.0d
+			x: 22.0d
+			y: 10.75d
 		}
 		{
 			dependencies: [
@@ -1797,7 +1773,7 @@
 			]
 			title: "{moni.quest.2D10F2E538486624.title}"
 			x: 22.0d
-			y: 12.25d
+			y: 13.0d
 		}
 		{
 			dependencies: ["1CC092A2F2CD4589"]
@@ -1860,8 +1836,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5199E6FAA4B699CD.title}"
-			x: 23.25d
-			y: 9.75d
+			x: 25.25d
+			y: 10.75d
 		}
 		{
 			dependencies: ["5FE96C30454A0374"]
@@ -1881,7 +1857,7 @@
 			}]
 			title: "{moni.quest.7FAB6FD0A054443E.title}"
 			x: 23.25d
-			y: 18.25d
+			y: 17.0d
 		}
 		{
 			dependencies: ["22144A6785524FDF"]
@@ -1898,7 +1874,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "{moni.quest.713FAECEE5046121.subtitle}"
 			tasks: [{
 				id: "3C9333ECA3F6B5F9"
@@ -1907,7 +1883,7 @@
 			}]
 			title: "{moni.quest.713FAECEE5046121.title}"
 			x: 27.25d
-			y: 18.25d
+			y: 17.0d
 		}
 		{
 			dependencies: ["7C89BC235C988689"]
@@ -2107,7 +2083,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.235C1E5B2C58B5AF.title}"
-			x: 27.25d
+			x: 27.0d
 			y: 21.5d
 		}
 		{
@@ -2137,8 +2113,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.22E50A6923EBF5CB.title}"
-			x: 30.0d
-			y: 21.5d
+			x: 30.5d
+			y: 20.0d
 		}
 		{
 			dependencies: [
@@ -2169,7 +2145,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.738A141D31AD7CE3.title}"
-			x: 29.25d
+			x: 30.5d
 			y: 24.0d
 		}
 		{
@@ -2188,8 +2164,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.485CEA4199AAD352.title}"
-			x: 30.0d
-			y: 17.5d
+			x: 30.5d
+			y: 16.25d
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
@@ -2207,8 +2183,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.524E7A937C2D9DDD.title}"
-			x: 30.0d
-			y: 19.25d
+			x: 30.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["6DAB13A7BDECE94E"]
@@ -2233,8 +2209,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.72FFB2AAB5EA049D.title}"
-			x: 23.0d
-			y: -2.0d
+			x: 19.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["521977C7165229F1"]
@@ -2257,8 +2233,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2BBAF93506DD79C1.title}"
-			x: 23.0d
-			y: 1.0d
+			x: 19.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4DB622A78605A2EB"]
@@ -2285,8 +2261,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.36B1B083B4FA439F.title}"
-			x: 27.0d
-			y: 1.0d
+			x: 23.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["521977C7165229F1"]
@@ -2311,8 +2287,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.20745EB9A695E365.title}"
-			x: 25.0d
-			y: 1.0d
+			x: 21.0d
+			y: 3.5d
 		}
 		{
 			description: ["{moni.quest.6391447F1A411281.description1}"]
@@ -2378,8 +2354,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.62AC7103FF9D25FD.title}"
-			x: 5.9375d
-			y: 24.0625d
+			x: 29.0d
+			y: 25.0d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
@@ -2413,8 +2389,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.25B0271106684DF7.title}"
-			x: 3.0d
-			y: 24.0d
+			x: 27.5d
+			y: 25.0d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
@@ -2462,7 +2438,7 @@
 			}]
 			title: "{moni.quest.747A3DEA569CB6C9.title}"
 			x: 20.5d
-			y: 14.0d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -2555,8 +2531,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.19C2D208A2FC9968.title}"
-			x: 6.0d
-			y: 4.0d
+			x: 1.5625d
+			y: 3.75d
 		}
 		{
 			dependencies: ["2D47BFA44BDB5E6A"]
@@ -2599,7 +2575,7 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			size: 1.5d
+			size: 1.0d
 			tasks: [
 				{
 					id: "0235FA500D9F953C"
@@ -2638,14 +2614,15 @@
 				}
 			]
 			title: "{moni.quest.0608EE0A3BDE58D5.title}"
-			x: 27.75d
-			y: 19.875d
+			x: 28.75d
+			y: 18.25d
 		}
 		{
 			dependencies: [
 				"595F205B551A53C9"
 				"15DBB22E3DC0AFB7"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.044553423097C3C7.description1}"
 				""
@@ -2677,14 +2654,13 @@
 				}
 			]
 			title: "{moni.quest.044553423097C3C7.title}"
-			x: 1.5d
-			y: 3.0d
+			x: 3.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
 				"62AC7103FF9D25FD"
 				"739F7BF2A90B278A"
-				"49B872B193268554"
 			]
 			description: [
 				"{moni.quest.61301FBD825F8280.description1}"
@@ -2708,8 +2684,8 @@
 				}
 			]
 			title: "{moni.quest.61301FBD825F8280.title}"
-			x: 11.0d
-			y: 20.25d
+			x: 30.5d
+			y: 25.75d
 		}
 		{
 			dependencies: [
@@ -2736,8 +2712,32 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1CF77095C203454F.title}"
-			x: 20.25d
-			y: 20.25d
+			x: 20.75d
+			y: 20.0d
+		}
+		{
+			dependencies: ["7D8282F098F3A0F6"]
+			description: [
+				"{moni.quest.069D243B809E0D5D.description1}"
+				""
+				"{moni.quest.069D243B809E0D5D.description2}"
+				""
+				"{moni.quest.069D243B809E0D5D.description3}"
+				""
+				"{moni.quest.069D243B809E0D5D.description4}"
+			]
+			hide_dependency_lines: false
+			id: "069D243B809E0D5D"
+			size: 2.0d
+			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
+			tasks: [{
+				id: "79978B979F8487B8"
+				title: "PTERB"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.069D243B809E0D5D.title}"
+			x: 25.0d
+			y: 3.5d
 		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"

@@ -17,7 +17,6 @@
 !/config/lostcities/profiles/monidefault.json
 !/mods/systeams*
 !/mods/ExtendedCrafting*
-!/config/gtmutils.yaml
 
 /mods/.index
 /mods/.connector

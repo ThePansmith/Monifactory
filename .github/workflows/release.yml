@@ -50,11 +50,33 @@ on:
 permissions: {}
 
 jobs:
+  merge-lang:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Config git user
+        run: |
+          git config user.name 'Release workflow'
+          git config user.email 'ThePansmith@users.noreply.github.com'
+        shell: bash
+      - name: Merge lang branch
+        run: |
+          git fetch origin lang
+          git merge --squash origin/lang
+          git commit --no-edit
+        shell: bash
+      - run: git push
+        shell: bash
+
   pre-build:
     uses: ./.github/workflows/get_version_info.yml
 
   build:
-    needs: [pre-build]
+    needs: [pre-build, merge-lang]
     if: inputs.skip_build != true
     permissions:
       id-token: write

@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:universe_boule")
         .duration(18000)
         .EUt(250000)
-        .blastFurnaceTemp(12000)
+        .blastFurnaceTemp(11000)
 
     event.recipes.gtceu.cutter("universe_wafer")
         .itemInputs("kubejs:universe_boule")
@@ -163,6 +163,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x kubejs:hyperdynamic_ram_chip")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(300)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    event.recipes.gtceu.circuit_assembler("activated_hyperdynamic_ram_chip_complex")
+        .itemInputs("4x kubejs:hyperdynamic_ram_chip_base", "2x kubejs:matter_processing_unit", "1x kubejs:complex_smd_transistor", "12x gtceu:fine_holmium_wire")
+        .inputFluids("gtceu:soldering_alloy 144")
+        .itemOutputs("4x kubejs:hyperdynamic_ram_chip")
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(150)
         .EUt(GTValues.VA[GTValues.UV])
 
     // Quantum SoC
