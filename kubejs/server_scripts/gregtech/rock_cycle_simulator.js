@@ -45,14 +45,15 @@ ServerEvents.recipes(event => {
     RockCycle("shale", "quark:shale", "quark:shale", 60)
     RockCycle("myalite", "quark:myalite", "quark:myalite", 60)
 
-    function DimensionalRockCrushing(namespace, output, EUt, dimension) {
+    function DimensionalRockCrushing(namespace, output, EUt, dimension, waterReplacement) {
+        if(waterReplacement == undefined) waterReplacement = "minecraft:water"
         event.recipes.gtceu.rock_breaker(`${output}`)
             .notConsumable(`${namespace}:${output}`)
             .itemOutputs(`${namespace}:${output}`)
             .duration(16)
             .EUt(EUt)
             .addData("fluidA", "minecraft:lava")
-            .addData("fluidB", "minecraft:water")
+            .addData("fluidB", waterReplacement)
             .dimension(dimension)
 
         event.recipes.gtceu.rock_cycle_simulator(`${output}`)
@@ -64,7 +65,7 @@ ServerEvents.recipes(event => {
     }
 
     DimensionalRockCrushing("minecraft", "end_stone", GTValues.VA[GTValues.IV], "minecraft:the_end")
-    DimensionalRockCrushing("minecraft", "netherrack", GTValues.VA[GTValues.EV], "minecraft:the_nether")
+    DimensionalRockCrushing("minecraft", "netherrack", GTValues.VA[GTValues.EV], "minecraft:the_nether", "kubejs:molten_cryotheum")
     DimensionalRockCrushing("ad_astra", "moon_stone", GTValues.VHA[GTValues.HV], "ad_astra:moon")
     DimensionalRockCrushing("ad_astra", "moon_deepslate", GTValues.VHA[GTValues.HV], "ad_astra:moon")
     DimensionalRockCrushing("ad_astra", "mars_stone", GTValues.VHA[GTValues.HV], "ad_astra:mars")
