@@ -2309,28 +2309,6 @@
 			y: 15.25d
 		}
 		{
-			dependencies: [
-				"11154356854B64DA"
-				"39FD6F1076559156"
-			]
-			description: ["{moni.quest.2D0DF78F71760F00.description1}"]
-			id: "2D0DF78F71760F00"
-			rewards: [{
-				id: "6F3E0BE43F386D11"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "1923177CCC7CB6F7"
-				item: "kubejs:gem_sensor"
-				type: "item"
-			}]
-			title: "{moni.quest.2D0DF78F71760F00.title}"
-			x: -6.0d
-			y: 10.25d
-		}
-		{
 			dependencies: ["25B0271106684DF7"]
 			description: [
 				"{moni.quest.62AC7103FF9D25FD.description1}"
@@ -2731,9 +2709,9 @@
 			size: 2.0d
 			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
 			tasks: [{
-				id: "79978B979F8487B8"
-				title: "PTERB"
-				type: "checkmark"
+				id: "68377567726F542C"
+				item: "gtmutils:pterb_machine"
+				type: "item"
 			}]
 			title: "{moni.quest.069D243B809E0D5D.title}"
 			x: 25.0d
