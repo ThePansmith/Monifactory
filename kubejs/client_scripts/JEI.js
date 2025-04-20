@@ -124,14 +124,3 @@ JEIEvents.hideFluids(event => {
     // Hide Soph Core fluids
     event.hide("sophisticatedcore:xp_still")
 })
-
-// Hide unused recipe categories
-// TODO: Make this work. ExCrafting's Compressor is extra egregious.
-JEIEvents.removeCategories(event => {
-    console.log("XEFYR: " + event.getCategoryIds());
-    event.remove("extendedcrafting:compressor")
-    event.remove("ad_astra:alloying")
-    event.remove("ad_astra:compressing")
-    event.remove("ad_astra:cryo_freezing")
-    event.remove("ad_astra:refining")
-})
