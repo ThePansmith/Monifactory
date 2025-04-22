@@ -134,6 +134,16 @@ ServerEvents.recipes(event => {
         C: "gtceu:uhv_machine_casing"
     }).id("gtceu:shaped/hull_uhv")
 
+    // UHV components 
+    const plateFix = [
+        /gtceu:.*casing_uhv/,
+        "gtceu:shaped/hermetic_casing_max",
+        /gtceu:shaped\/quantum_.*_uhv/
+    ]
+    plateFix.forEach((value) => {
+        event.replaceInput({ id: `${value}`}, "gtceu:neutronium_plate", "gtceu:manyullyn_plate" )
+    })
+
     const hullMaterials = [
         { tier: "uev", material: "omnium", wire: "omnium_single_cable", plastic: "polyethyl_cyanoacrylate" },
         { tier: "uiv", material: "infinity", wire: "holmium_single_wire", plastic: "polyethyl_cyanoacrylate" },
