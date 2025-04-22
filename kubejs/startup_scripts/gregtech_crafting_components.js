@@ -81,6 +81,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     // Plates
     let plateMap = {};
+    plateMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
     plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
     plateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("infinity"))
     plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("monium"))
@@ -88,6 +89,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     // Hull plates
     let hullPlateMap = {};
+    plateMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polybenzimidazole"))
     plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
     plateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
     plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
@@ -95,7 +97,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     // Rotors
     let rotorMap = {};
-    rotorMap[GTValues.UHV] = UnificationEntry(TagPrefix.rotor, GTMaterials.Neutronium)
+    rotorMap[GTValues.UHV] = UnificationEntry(TagPrefix.rotor, GTMaterials.get("manyullyn"))
     rotorMap[GTValues.UEV] = UnificationEntry(TagPrefix.rotor, GTMaterials.get("activated_netherite"))
     rotorMap[GTValues.UIV] = UnificationEntry(TagPrefix.rotor, GTMaterials.Holmium)
     event.modifyUnificationEntry(CraftingComponent.ROTOR, rotorMap)
@@ -172,7 +174,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     // Frame
     let frameMap = {};
-    frameMap[GTValues.UHV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.Neutronium)
+    frameMap[GTValues.UHV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("manyullyn"))
     frameMap[GTValues.UEV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("omnium"))
     frameMap[GTValues.UIV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("infinity"))
     frameMap[GTValues.MAX] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("monium"))

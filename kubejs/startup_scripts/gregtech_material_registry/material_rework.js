@@ -17,6 +17,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xc05cff).secondaryColor(0xff00e0).iconSet("magic")
         .blastTemp(9200, "highest")
         .components("4x ardite", "4x cobalt", "mana")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_SMALL_GEAR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_ROTOR)
 
 })
