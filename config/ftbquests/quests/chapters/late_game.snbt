@@ -11,8 +11,8 @@
 			id: "5522298B1FC30B2B"
 			linked_quest: "2F04FA8D3E15E375"
 			size: 2.0d
-			x: 21.0d
-			y: 0.5d
+			x: 19.0d
+			y: 3.5d
 		}
 		{
 			id: "4AB71382C803BD92"
@@ -2233,8 +2233,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2BBAF93506DD79C1.title}"
-			x: 19.0d
-			y: 3.5d
+			x: 21.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4DB622A78605A2EB"]
@@ -2261,7 +2261,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.36B1B083B4FA439F.title}"
-			x: 23.0d
+			x: 21.0d
 			y: 3.5d
 		}
 		{
@@ -2287,8 +2287,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.20745EB9A695E365.title}"
-			x: 21.0d
-			y: 3.5d
+			x: 23.0d
+			y: 0.5d
 		}
 		{
 			description: ["{moni.quest.6391447F1A411281.description1}"]
@@ -2706,6 +2706,11 @@
 			]
 			hide_dependency_lines: false
 			id: "069D243B809E0D5D"
+			rewards: [{
+				id: "05346384A9F2EAF1"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			size: 2.0d
 			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
 			tasks: [{
@@ -2714,7 +2719,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.069D243B809E0D5D.title}"
-			x: 25.0d
+			x: 23.0d
 			y: 3.5d
 		}
 	]
