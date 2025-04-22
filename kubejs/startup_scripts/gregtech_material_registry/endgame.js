@@ -1,3 +1,4 @@
+// priority: 1
 /**
  * Endgame Material Registry.
  * Used for registering Gregtech Materials
