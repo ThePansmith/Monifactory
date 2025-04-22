@@ -63,6 +63,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("magic")
         .blastTemp(2141, null)
         .components("titanium", "mana")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FRANE)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FRAME)
 
 })
