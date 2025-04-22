@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
         .EUt(1920)
 
     event.recipes.gtceu.mixer("kubejs:signalum_dust")
-        .itemInputs("4x #forge:dusts/annealed_copper", "2x #forge:dusts/ardite", "2x #forge:dusts/red_alloy", "kubejs:destabilized_clathrate")
+        .itemInputs("4x #forge:dusts/annealed_copper", "2x #forge:dusts/red_steel", "2x #forge:dusts/red_alloy", "kubejs:destabilized_clathrate")
         .itemOutputs("9x gtceu:signalum_dust")
         .inputFluids(Fluid.of("gtceu:mana", 1000))
         .duration(300)

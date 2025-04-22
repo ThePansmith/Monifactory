@@ -64,7 +64,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .cableProperties(GTValues.V[GTValues.UEV], 64, 8, false)
 
     event.create("omnic_acid")
-        .dust()
+        .fluid()
         .color(0xff00ff)
         .iconSet("shiny")
         .components("5x carbon", "4x hydrogen", "3x oxygen", "4x omnium")

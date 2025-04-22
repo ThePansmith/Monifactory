@@ -26,7 +26,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("magic")
         .blastTemp(4000, "mid", 7680, 1400)
         .cableProperties(32768, 1, 0, true)
-        .components("4x annealed_copper", "2x ardite", "2x red_alloy", "mana")
+        .components("4x annealed_copper", "2x red_steel", "2x red_alloy", "mana")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
 
     event.create("lumium")
