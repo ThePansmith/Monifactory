@@ -236,7 +236,7 @@ StartupEvents.registry("block", event => {
 
     // Misc
     event.create("starry_diamond_block")
-        .displayName("Starry Diamond Block")
+        .displayName("Starry Diamatine Block")
         .soundType("metal")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe").requiresTool(true)

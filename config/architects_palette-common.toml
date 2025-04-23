@@ -1,0 +1,24 @@
+#Whenever Sunstone and Moonstone update their states, there is a chance for adjacent ones to update as well.
+#This causes the updates to cascade and helps the blocks stay in sync over large areas.
+#Default is .35, for a 35% chance of each adjacent block updating.
+#Range: 0.0 ~ 1.0
+sunstoneSpreadChance = 0.35
+
+#The following options require a server restart to take effect.
+[Restart_Required]
+	#Architect's Palette adds trades to various villagers. This option controls if they can appear in newly generated trades.
+	#Villagers that already sell AP items will continue to do so regardless of this setting.
+	enableVillagerTrades = true
+	#Enables Wandering Trader trades added by AP.
+	enableWandererTrades = true
+	#AP adds Vertical Slabs to be compatible with Quark. Enabling this will force those to be available even if Quark isn't loaded.
+	verticalSlabsForced = false
+
+	#World Generation Options
+	[Restart_Required.World_Gen]
+		#Controls ALL worldgen features added by Architect's Palette.
+		#If false, NOTHING from AP will generate. If true, individual features may still be disabled.
+		globalWorldGenToggle = true
+		#Controls the spawning of Monazite, Ekanite, and Heliodor rods in various Nether biomes.
+		netherCrystalGeneration = true
+

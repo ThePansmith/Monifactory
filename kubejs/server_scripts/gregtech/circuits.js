@@ -125,7 +125,6 @@ ServerEvents.recipes(event => {
 
         /** @param {number} by */
         let multiplyRecipe = by => {
-            eut *= by
             for(let matters of [newInputItems, newOutputItems, newInputFluids, newOutputFluids])
                 if(matters)
                     for(let matter of matters)
@@ -133,7 +132,6 @@ ServerEvents.recipes(event => {
         }
         /** @param {number} by */
         let isRecipeDivisible = by =>
-            eut % by === 0 &&
             [newInputItems, newOutputItems, newInputFluids, newOutputFluids]
                 .filter(matters => matters)
                 .every(matters => matters.every(
@@ -148,9 +146,6 @@ ServerEvents.recipes(event => {
             inp.id = "kubejs:complex" + match[1]
             inp.amount /= 4
         }
-        // Advanced smd recipes take twice as fast to make than simple smds,
-        // here we follow the convention
-        duration /= 2
         // Divide recipe back as much as possible
         while(isRecipeDivisible(2))
             multiplyRecipe(0.5)
@@ -165,7 +160,10 @@ ServerEvents.recipes(event => {
             newRecipe = newRecipe.itemOutputs.apply(newRecipe, newOutputItems.map(i => `${i.amount}x ${i.id}`))
         if(newOutputFluids)
             newRecipe = newRecipe.outputFluids.apply(newRecipe, newOutputFluids.map(i => `${i.id} ${i.amount}`))
-        newRecipe = newRecipe.EUt(eut).duration(duration)
+        // Advanced smd recipes take twice as fast to make than simple smds,
+        // while the EU/t is unaffected. In total, EU is halved.
+        // Here we follow the convention:
+        newRecipe = newRecipe.EUt(eut).duration(duration / 2)
 
         let cleanroomCondition = recipeConditions.find(cond => cond.type === "cleanroom")
         if(cleanroomCondition)
@@ -255,8 +253,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("4x kubejs:matter_processor")
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(10 * 20)
-        .EUt(250000 * 2)
+        .duration(10 * 20 / 2)
+        .EUt(250000)
 
     event.recipes.gtceu.circuit_assembler("matter_processor_assembly")
         .itemInputs("kubejs:matter_processing_unit",
@@ -283,7 +281,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:soldering_alloy 1152")
         .itemOutputs("2x kubejs:matter_processor_assembly")
         .cleanroom(CleanroomType.CLEANROOM)
-        .duration(20 * 20)
+        .duration(20 * 20 / 2)
         .EUt(250000)
 
     event.recipes.gtceu.assembly_line("matter_processor_computer")
@@ -315,7 +313,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids("gtceu:soldering_alloy 1152", "gtceu:omnium 144")
         .itemOutputs("kubejs:matter_processor_computer")
-        .duration(20 * 20)
+        .duration(20 * 20 / 2)
         .EUt(250000)
 
     event.recipes.gtceu.assembly_line("matter_processor_mainframe")
@@ -351,7 +349,7 @@ ServerEvents.recipes(event => {
             "8x gtceu:crystal_matrix_plate") // could replace with omnium frame
         .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 288")
         .itemOutputs("kubejs:matter_processor_mainframe")
-        .duration(2400)
+        .duration(2400 / 2)
         .EUt(GTValues.VA[GTValues.UHV])
 
     // WIP: Dimensional Circuits

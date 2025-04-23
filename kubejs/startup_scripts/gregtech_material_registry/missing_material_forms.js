@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // Existing materials that get new material forms
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
-    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
+    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Naquadah.addFlags(GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_ROTOR)
     GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME)
     GTMaterials.Graphite.addFlags(GTMaterialFlags.GENERATE_PLATE)
@@ -51,6 +51,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Zeron100.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
+    GTMaterials.RedAlloy.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)    // For ULV Power Transformer
 
     // Gears for Thermal Expansion
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)

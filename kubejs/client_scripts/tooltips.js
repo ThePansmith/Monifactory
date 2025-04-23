@@ -52,6 +52,7 @@ ItemEvents.tooltip(tooltip => {
     // Questbook
     tooltip.addAdvanced("ftbquests:book", (item, adv, text) => { text.add(2, Text.gray(Text.translatable("ftbquests.book.tooltip"))) })
 
+    tooltip.add("patchouli:guide_book", Text.translatable("item.patchouli.guide_book.tooltip"))
     // Redstone Clock
     tooltip.add("redstoneclock:redstone_clock", Text.translatable("redstoneclock.redstone_clock.tooltip"))
 
