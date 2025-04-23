@@ -40,7 +40,7 @@
 			id: "6DB017E9911300A9"
 			linked_quest: "2F04FA8D3E15E375"
 			shape: "hexagon"
-			x: 7.0d
+			x: 8.25d
 			y: 6.5d
 		}
 		{
@@ -144,13 +144,13 @@
 		{
 			id: "1CC86021C7B35D80"
 			linked_quest: "7B1D349ADD9D1140"
-			x: 14.5d
+			x: 14.75d
 			y: 22.5d
 		}
 		{
 			id: "7E3F8641F38F97A4"
 			linked_quest: "15A43AB700CADF2D"
-			x: 14.5d
+			x: 14.75d
 			y: 23.75d
 		}
 		{
@@ -219,8 +219,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0B62AD25CDD86A6B.title}"
-			x: 1.5d
-			y: 2.0d
+			x: -1.5d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -248,8 +248,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5543D84CB5E37E01.title}"
-			x: 0.0d
-			y: 2.0d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["61AD3760E271B431"]
@@ -293,8 +293,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5F109188BE4D9767.title}"
-			x: 1.5d
-			y: 3.5d
+			x: 0.75d
+			y: 3.25d
 		}
 		{
 			dependencies: ["5F109188BE4D9767"]
@@ -348,8 +348,8 @@
 				}
 			]
 			title: "{moni.quest.74935A3553451178.title}"
-			x: 0.0d
-			y: 3.5d
+			x: 0.75d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5B0200011DF8E1B6"]
@@ -385,13 +385,14 @@
 			icon: "gtceu:tiny_gallium_arsenide_dust"
 			id: "61AD3760E271B431"
 			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "5E6A27EC5AF00A4B"
 				type: "checkmark"
 			}]
 			title: "{moni.quest.61AD3760E271B431.title}"
-			x: 1.5d
-			y: 5.0d
+			x: 5.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["604CCBE824D03A74"]
@@ -436,8 +437,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.376EE785F4204FFE.title}"
-			x: 0.0d
-			y: 6.5d
+			x: -1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["61AD3760E271B431"]
@@ -469,7 +470,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.53347AAAE4495F95.title}"
-			x: 3.0d
+			x: 5.0d
 			y: 5.0d
 		}
 		{
@@ -561,8 +562,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5567F5E5926664F4.title}"
-			x: 1.5d
-			y: 6.5d
+			x: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -617,7 +618,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1F7FD354C79771A1.title}"
-			x: 4.5d
+			x: 5.0d
 			y: 6.5d
 		}
 		{
@@ -725,7 +726,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.21B917932F5B25BA.title}"
-			x: 4.5d
+			x: 4.25d
 			y: 8.0d
 		}
 		{
@@ -780,7 +781,7 @@
 			}]
 			title: "{moni.quest.2977E1AF13E42DCB.title}"
 			x: 7.0d
-			y: 8.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["517A89E954C7EA74"]
@@ -1436,6 +1437,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "7E297FE5F2C0019A"
 				item: "gtceu:polyethylene_plate"
@@ -1481,7 +1483,7 @@
 							value: "gtceu:inductors"
 						}
 					}
-					title: "{moni.task.7766ABA36439522B}"
+					title: "{moni.task.75E2B7E59A591067}"
 					type: "item"
 				}
 			]
@@ -1562,11 +1564,13 @@
 			y: 23.75d
 		}
 		{
+			dependencies: ["0F8637A79E4018DE"]
 			description: [
 				"{moni.quest.616555E46F314F04.description1}"
 				""
 				"{moni.quest.616555E46F314F04.description2}"
 			]
+			hide_dependency_lines: true
 			id: "616555E46F314F04"
 			rewards: [{
 				id: "3815CE147C3B07C5"
@@ -1678,6 +1682,7 @@
 				"48E83C38B37DFEE6"
 				"6D434F3B0E720A5A"
 				"648B1E09AA648798"
+				"5357A16B5BF62C96"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1707,6 +1712,7 @@
 			y: 21.0d
 		}
 		{
+			dependencies: ["081101DEE6227D87"]
 			description: [
 				"{moni.quest.0E010F5348FC89BF.description1}"
 				""
@@ -1792,7 +1798,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5357A16B5BF62C96.title}"
-			x: 11.75d
+			x: 10.25d
 			y: 19.5d
 		}
 		{
@@ -1820,7 +1826,7 @@
 				item: "kubejs:resonant_clathrate"
 				type: "item"
 			}]
-			x: 13.25d
+			x: 11.75d
 			y: 19.5d
 		}
 		{
@@ -1847,7 +1853,7 @@
 			}]
 			title: "{moni.quest.1D0DF2330B113B7A.title}"
 			x: 10.25d
-			y: 19.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["6A262AA410619C23"]
@@ -1999,41 +2005,6 @@
 		{
 			dependencies: ["73C1AB31431B5C11"]
 			description: [
-				"{moni.quest.32B770DAF5618BAA.description1}"
-				""
-				"{moni.quest.32B770DAF5618BAA.description2}"
-				""
-				"{moni.quest.32B770DAF5618BAA.description3}"
-				""
-				"{moni.quest.32B770DAF5618BAA.description4}"
-			]
-			id: "32B770DAF5618BAA"
-			rewards: [{
-				id: "030F697D77B929D5"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1A2DC6E313694249"
-				item: {
-					Count: 1
-					id: "enderio:staff_of_travelling"
-					tag: {
-						Energy: {
-							EnergyStored: 100000
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 14.5d
-			y: 25.0d
-		}
-		{
-			dependencies: ["73C1AB31431B5C11"]
-			description: [
 				"{moni.quest.53205E306EE07F6F.description1}"
 				""
 				"{moni.quest.53205E306EE07F6F.description2}"
@@ -2071,7 +2042,7 @@
 				item: "enderio:octadic_capacitor"
 				type: "item"
 			}]
-			x: 13.25d
+			x: 13.5d
 			y: 23.75d
 		}
 		{
@@ -2093,7 +2064,7 @@
 				item: "enderio:double_layer_capacitor"
 				type: "item"
 			}]
-			x: 13.25d
+			x: 13.5d
 			y: 22.5d
 		}
 		{
@@ -2276,8 +2247,38 @@
 				}
 			]
 			title: "{moni.quest.45FA4FF0B16B3879.title}"
-			x: 3.0d
-			y: 3.5d
+			x: 4.0d
+			y: 4.25d
+		}
+		{
+			dependencies: ["64F45D98FA48D834"]
+			description: [
+				"{moni.quest.09EED0C4106265BC.description1}"
+				""
+				"{moni.quest.09EED0C4106265BC.description2}"
+			]
+			id: "09EED0C4106265BC"
+			rewards: [{
+				id: "452D3826F2B6022F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "0C7F0E53B07D41FF"
+					item: "enderio:advanced_capacitor_bank"
+					type: "item"
+				}
+				{
+					id: "4272F1401BFD6E31"
+					item: "thermal:energy_cell"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.09EED0C4106265BC.title}"
+			x: 11.75d
+			y: 22.5d
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
