@@ -7,7 +7,6 @@
  */
 
 if (Platform.isLoaded("estrogen")) {
-
     GTCEuStartupEvents.registry("gtceu:material", event => {
         // Item Registration
         event.create("cholestrol")
