@@ -13,7 +13,7 @@
 
 ## Features
 - [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](CHANGELOG.md)
-- A complete overhaul of post-tank progression from Nomifactory CEu
+- A complete overhaul of UV+ progression from Nomifactory CEu
 - Draconic Evolution and Avaritia have been replaced with new mechanics involving Sculk
 - A new, Harder difficulty mode for returning Nomi CEu Hard Mode players
 - A retexturing of everything to fit the modern style
@@ -38,8 +38,7 @@ Highlights include:
 - Monicoins can't be spent
 - Harder processing lines for Platinum and Naquadah
 - More focus on GregTech Power Generation
-- No Creative Tank; instead, use Stabilized Micro Miners for late-game resource acquisition
-
+- 
 Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 
 - Disabling RF -> EU conversion, making GT power generation required
