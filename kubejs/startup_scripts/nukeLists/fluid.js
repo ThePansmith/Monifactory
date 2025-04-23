@@ -44,6 +44,13 @@ global.fluidNukeList = [
     "systeams:steamiest",
     "systeams:steamiester",
     "systeams:steamiestest",
+
+    // Create: Estrogen Compat
+    "estrogen:horse_urine",
+    "estrogen:filtrated_horse_urine",
+    "estrogen:molten_slime",
+    "estrogen:molten_amethyst",
+    "estrogen:testostrone_mixture"
 ]
 
 StartupEvents.postInit(event => {

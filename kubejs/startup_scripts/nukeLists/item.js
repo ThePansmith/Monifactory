@@ -282,4 +282,16 @@ global.itemNukeList = [
     // Wireless Chargers
     "wirelesschargers:basic_wireless_block_charger",
     "wirelesschargers:advanced_wireless_block_charger",
+
+    // Create: Estrogen Compat
+    "estrogen:used_filter",
+    "estrogen:centrifuge",
+    "estrogen:testostrone_chunk",
+    "estrogen:testostrone_powder",
+    "estrogen:testostrone_mixture_bucket",
+    "estrogen:filtrated_horse_urine_bucket",
+    "estrogen:horse_urine_bucket",
+    "estrogen:molten_amethyst_bucket",
+    "estrogen:molten_slime_bucket",
+    "estrogen:balls"
 ];
