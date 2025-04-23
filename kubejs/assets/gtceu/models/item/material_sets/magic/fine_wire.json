@@ -1,8 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "gtceu:item/material_sets/magic/fine_wire",
-    "layer1": "gtceu:item/material_sets/magic/fine_wire_secondary",
-    "layer2": "gtceu:item/material_sets/magic/fine_wire_overlay"
-  }
-}
