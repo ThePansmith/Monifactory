@@ -33,7 +33,7 @@
 			id: "4A06A6BAEA6B6E24"
 			linked_quest: "73C1AB31431B5C11"
 			shape: "hexagon"
-			x: 12.5d
+			x: 12.75d
 			y: 25.0d
 		}
 		{
@@ -144,26 +144,26 @@
 		{
 			id: "1CC86021C7B35D80"
 			linked_quest: "7B1D349ADD9D1140"
-			x: 14.75d
+			x: 15.0d
 			y: 22.5d
 		}
 		{
 			id: "7E3F8641F38F97A4"
 			linked_quest: "15A43AB700CADF2D"
-			x: 14.75d
-			y: 23.75d
+			x: 15.0d
+			y: 24.0d
 		}
 		{
 			id: "7FC84014DAAD0025"
 			linked_quest: "6D434F3B0E720A5A"
-			x: 10.25d
-			y: 22.5d
+			x: 7.75d
+			y: 18.25d
 		}
 		{
 			id: "316BD105F19E454C"
 			linked_quest: "648B1E09AA648798"
-			x: 11.75d
-			y: 21.0d
+			x: 10.0d
+			y: 18.25d
 		}
 	]
 	quests: [
@@ -1475,7 +1475,7 @@
 					type: "item"
 				}
 				{
-					id: "5BF4855E8BEB9C85"
+					id: "75E2B7E59A591067"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -1554,6 +1554,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "7819AF44A918EC8E"
 				item: "gtceu:hv_energy_input_hatch"
@@ -1561,16 +1562,15 @@
 			}]
 			title: "{moni.quest.5BC6DB754207D4A8.title}"
 			x: 8.75d
-			y: 23.75d
+			y: 24.0d
 		}
 		{
-			dependencies: ["0F8637A79E4018DE"]
+			dependencies: ["5357A16B5BF62C96"]
 			description: [
 				"{moni.quest.616555E46F314F04.description1}"
 				""
 				"{moni.quest.616555E46F314F04.description2}"
 			]
-			hide_dependency_lines: true
 			id: "616555E46F314F04"
 			rewards: [{
 				id: "3815CE147C3B07C5"
@@ -1584,8 +1584,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.616555E46F314F04.title}"
-			x: 10.25d
-			y: 23.75d
+			x: 10.75d
+			y: 24.0d
 		}
 		{
 			dependencies: ["0C4E18B05F9E68DE"]
@@ -1675,7 +1675,7 @@
 			}]
 			title: "{moni.quest.338ED53463203472.title}"
 			x: 8.75d
-			y: 19.5d
+			y: 22.5d
 		}
 		{
 			dependencies: [
@@ -1731,8 +1731,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0E010F5348FC89BF.title}"
-			x: 13.25d
-			y: 21.0d
+			x: 12.0d
+			y: 18.25d
 		}
 		{
 			dependencies: ["5357A16B5BF62C96"]
@@ -1775,8 +1775,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.383FADC5E8BC4E91.title}"
-			x: 11.75d
-			y: 18.0d
+			x: 12.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["5C4E189A3E401566"]
@@ -1798,8 +1798,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5357A16B5BF62C96.title}"
-			x: 10.25d
-			y: 19.5d
+			x: 10.75d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -1826,8 +1826,8 @@
 				item: "kubejs:resonant_clathrate"
 				type: "item"
 			}]
-			x: 11.75d
-			y: 19.5d
+			x: 10.75d
+			y: 19.25d
 		}
 		{
 			dependencies: ["5357A16B5BF62C96"]
@@ -1852,8 +1852,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.1D0DF2330B113B7A.title}"
-			x: 10.25d
-			y: 18.0d
+			x: 12.0d
+			y: 19.75d
 		}
 		{
 			dependencies: ["6A262AA410619C23"]
@@ -1901,7 +1901,7 @@
 			}]
 			title: "{moni.quest.48E83C38B37DFEE6.title}"
 			x: 8.75d
-			y: 22.5d
+			y: 18.25d
 		}
 		{
 			dependencies: ["5B0200011DF8E1B6"]
@@ -1925,8 +1925,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.10722CBC4DAD28F4.title}"
-			x: 8.75d
-			y: 18.0d
+			x: 10.0d
+			y: 22.5d
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
@@ -2021,8 +2021,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.53205E306EE07F6F.title}"
-			x: 11.75d
-			y: 23.75d
+			x: 12.0d
+			y: 24.0d
 		}
 		{
 			dependencies: [
@@ -2043,7 +2043,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 23.75d
+			y: 24.0d
 		}
 		{
 			dependencies: ["7842EC1C389C4B7E"]
@@ -2277,7 +2277,7 @@
 				}
 			]
 			title: "{moni.quest.09EED0C4106265BC.title}"
-			x: 11.75d
+			x: 12.0d
 			y: 22.5d
 		}
 		{
