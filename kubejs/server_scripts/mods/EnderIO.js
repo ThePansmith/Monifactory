@@ -781,4 +781,19 @@ ServerEvents.recipes(event => {
     } else {
         event.replaceInput({ id: "enderio:conduit_probe" }, "enderio:energy_conduit", "gtceu:conductive_alloy_single_wire")
     }
+
+    // Make End Steel Craftable in HV
+    event.recipes.gtceu.chemical_bath("end_steel_ingot_cooling")
+        .inputFluids("minecraft:water 100")
+        .itemInputs("gtceu:hot_end_steel_ingot")
+        .itemOutputs("gtceu:end_steel_ingot")
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_bath("end_steel_ingot_distilled_cooling")
+        .inputFluids("gtceu:distilled_water 100")
+        .itemInputs("gtceu:hot_end_steel_ingot")
+        .itemOutputs("gtceu:end_steel_ingot")
+        .duration(125)
+        .EUt(GTValues.VHA[GTValues.HV])
 })
