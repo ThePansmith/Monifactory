@@ -1955,7 +1955,7 @@
 					type: "item"
 				}
 				{
-					count: 30L
+					count: 34L
 					id: "1D22CC5ADFDFD0A0"
 					item: "gtceu:high_temperature_smelting_casing"
 					type: "item"
