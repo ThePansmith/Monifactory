@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     .inputFluids("gtceu:soldering_alloy 4608")
     .EUt(GTValues.VA[GTValues.ZPM])
     .duration(1200)
-    .outputItems("gtmutils:pterb_machine")
+    .itemOutputs("gtmutils:pterb_machine")
     .stationResearch(b => b
                 .researchStack("gtceu:active_transformer")
                 .CWUt(16, 64000)
