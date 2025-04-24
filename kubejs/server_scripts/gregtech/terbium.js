@@ -1,5 +1,5 @@
 /**
- * Terbium processing line
+ * Terbium / Terbium Alloys processing line
  */
 ServerEvents.recipes(event => {
 

@@ -136,11 +136,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("monium")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING)
         .cableProperties(GTValues.V[GTValues.MAX], 134217727, 0, true)
-
-    event.create("iron_neodymium_terbium_neutronate")
-        .dust()
-        .color(0x7d652d).secondaryColor(0x88f2d3)
-        .iconSet("radioactive")
-        .components("4x iron", "3x neodymium", "6x terbium", "2x neutronium", "8x oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
