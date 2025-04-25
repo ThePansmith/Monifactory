@@ -61,7 +61,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("omnium"))
         .color(0xffffff).iconSet("omnium")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_SMALL_GEAR)
-        .cableProperties(GTValues.V[GTValues.UEV], 64, 8, false)
+        .cableProperties(GTValues.V[GTValues.UEV], 32, 8, false)
 
     event.create("omnic_acid")
         .fluid()
