@@ -520,6 +520,44 @@
 			x: -7.5d
 			y: -0.5d
 		}
+		{
+			id: "776886E9296912DD"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 776886E9296912DD"
+				elevate_perms: true
+				id: "3EB61E55554FA706"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "78BB667CB3C32851"
+				stage: "doQuantumCoolant"
+				type: "gamestage"
+			}]
+			x: -7.5d
+			y: 0.75d
+		}
+		{
+			id: "0412D46926C075FF"
+			invisible: true
+			rewards: [{
+				auto: "invisible"
+				command: "/ftbquests change_progress @p reset 10E63A0428E6BA25"
+				elevate_perms: true
+				id: "4CCF413223F39D3F"
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "3499A1DA63A64CBB"
+				stage: "dontQuantumCoolant"
+				type: "gamestage"
+			}]
+			x: -6.25d
+			y: 0.75d
+		}
 	]
 	title: "{moni.chapter.1956832191841F25.title}"
 }

@@ -38,13 +38,13 @@
 			id: "2D26C83F2B01F12D"
 			linked_quest: "3E69E1949316BD0C"
 			x: 17.0d
-			y: -4.0d
+			y: -1.0d
 		}
 		{
 			id: "1BD667B1076EDD5F"
 			linked_quest: "32B770DAF5618BAA"
 			x: 17.0d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			id: "46C91BC7D1FBA463"
@@ -178,6 +178,12 @@
 			size: 2.0d
 			x: 22.0d
 			y: 8.5d
+		}
+		{
+			id: "53D04354B8061A41"
+			linked_quest: "6B80737C5E1359F7"
+			x: 17.0d
+			y: -2.5d
 		}
 	]
 	quests: [
@@ -2634,44 +2640,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["33F610CF136278AE"]
-			dependency_requirement: "one_started"
-			description: [
-				"{moni.quest.7C22CDB22492916F.description1}"
-				""
-				"{moni.quest.7C22CDB22492916F.description2}"
-			]
-			disable_toast: true
-			id: "7C22CDB22492916F"
-			shape: "square"
-			size: 2.0d
-			tasks: [{
-				id: "7446A8F3203CA575"
-				item: "kubejs:microminer_t11"
-				type: "item"
-			}]
-			title: "{moni.quest.7C22CDB22492916F.title}"
-			x: 22.0d
-			y: 10.5d
-		}
-		{
-			dependencies: ["13578427FD9CC2CE"]
-			description: ["{moni.quest.54B7849F647CE74B.description1}"]
-			disable_toast: true
-			id: "54B7849F647CE74B"
-			shape: "square"
-			size: 2.0d
-			subtitle: "{moni.quest.54B7849F647CE74B.subtitle}"
-			tasks: [{
-				id: "2F744773E507F2E9"
-				item: "kubejs:microminer_t12"
-				type: "item"
-			}]
-			title: "{moni.quest.54B7849F647CE74B.title}"
-			x: 22.0d
-			y: 13.0d
-		}
-		{
 			dependencies: [
 				"1510DC51CDC3F609"
 				"5C4E189A3E401566"
@@ -3725,6 +3693,53 @@
 			title: "{moni.quest.11124D8CC9403E67.title}"
 			x: 8.5d
 			y: -7.0d
+		}
+		{
+			dependencies: [
+				"63CC578C3558E0AF"
+				"07057CDE4E021BA7"
+				"0ED041E2114F7C84"
+			]
+			description: [
+				"{moni.quest.33F610CF136278AE.description1}"
+				""
+				"{moni.quest.33F610CF136278AE.description3}"
+				""
+				"{moni.quest.33F610CF136278AE.description2}"
+			]
+			hide_dependency_lines: true
+			id: "0121E9498A8802BA"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "349ECB1492F652EF"
+				item: "kubejs:microminer_t11"
+				type: "item"
+			}]
+			title: "{moni.quest.33F610CF136278AE.title}"
+			x: 22.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"1B1D3A66B847D129"
+				"040B3FCD82533BD9"
+				"786AECA42F53B45A"
+			]
+			description: ["{moni.quest.13578427FD9CC2CE.description1}"]
+			hide_dependency_lines: true
+			id: "55919EFAB081C7C4"
+			shape: "square"
+			size: 2.0d
+			subtitle: "{moni.quest.13578427FD9CC2CE.subtitle}"
+			tasks: [{
+				id: "41BBCA2B62901FE8"
+				item: "kubejs:microminer_t12"
+				type: "item"
+			}]
+			title: "{moni.quest.13578427FD9CC2CE.title}"
+			x: 22.0d
+			y: 12.5d
 		}
 	]
 	title: "{moni.chapter.395B849AC6294153.title}"
