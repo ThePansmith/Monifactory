@@ -32,11 +32,8 @@ ServerEvents.recipes(event => {
     solidify("solidified_oxygen", Fluid.of("gtceu:oxygen"), "kubejs:solidified_oxygen");
     solidify("solidified_radon", Fluid.of("gtceu:radon"), "kubejs:solidified_radon");
     solidify("solidified_xenon", Fluid.of("gtceu:xenon"), "kubejs:solidified_xenon");
-    solidify("solidified_bromine", Fluid.of("gtceu:bromine"), "kubejs:solidified_bromine");
+    solidify("stabilized_oganesson", Fluid.of("gtceu:oganesson", 144), "kubejs:stabilized_oganesson");
 
-    if (!isNormalMode) {
-        solidify("stabilized_oganesson", Fluid.of("gtceu:oganesson", 144), "kubejs:stabilized_oganesson");
-    }
 
     function solidify(recipename, input, output) {
         event.recipes.gtceu.fluid_solidifier(recipename)
@@ -47,25 +44,12 @@ ServerEvents.recipes(event => {
             .EUt(16)
     }
 
-    event.recipes.gtceu.fluid_solidifier("mote_of_omnium")
-        .inputFluids(Fluid.of("gtceu:omnium", 16))
-        .itemOutputs("kubejs:mote_of_omnium")
-        .notConsumable("gtceu:ball_casting_mold")
-        .duration(20)
-        .EUt(7)
-
     // Thermal Fluids
     thermalextract("primal_mana", "kubejs:primal_mana", Fluid.of("gtceu:mana", 250));
     thermalextract("cryotheum", "kubejs:cryotheum_dust", Fluid.of("kubejs:molten_cryotheum", 250));
     thermalextract("pyrotheum", "kubejs:pyrotheum_dust", Fluid.of("kubejs:molten_pyrotheum", 250));
     thermalextract("aerotheum", "kubejs:aerotheum_dust", Fluid.of("kubejs:molten_aerotheum", 250));
     thermalextract("petrotheum", "kubejs:petrotheum_dust", Fluid.of("kubejs:molten_petrotheum", 250));
-    // Convert deprecated mana fluid
-    event.recipes.gtceu.chemical_reactor("mana_backwards_compat")
-        .inputFluids("kubejs:molten_primal_mana 1")
-        .outputFluids("gtceu:mana 1")
-        .duration(1)
-        .EUt(1)
 
     function thermalextract(recipename, input, output) {
         event.recipes.gtceu.extractor(recipename)

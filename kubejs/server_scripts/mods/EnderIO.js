@@ -6,55 +6,8 @@ ServerEvents.recipes(event => {
 
     // Make lowest tier fluid conduit pressurized
     event.remove({ id: "enderio:fluid_conduit" })
-    if (isNormalMode) {
-        // Manual item conduit
-        event.shaped("4x enderio:item_conduit", [
-            "BBB",
-            "WWW",
-            "BBB"
-        ], {
-            B: "enderio:conduit_binder",
-            W: "gtceu:pulsating_alloy_single_wire"
-        }).id("kubejs:item_conduit")
-
-        event.shaped("4x enderio:pressurized_fluid_conduit", [
-            "BBB",
-            "GGG",
-            "BBB"
-        ], {
-            B: "enderio:conduit_binder",
-            G: "#forge:glass/colorless"
-        }).id("kubejs:pressurized_fluid_conduit")
-
-        // Manual ender fluid conduit
-        event.shaped("4x enderio:ender_fluid_conduit", [
-            "BBB",
-            "WPW",
-            "BBB"
-        ], {
-            B: "enderio:conduit_binder",
-            W: "gtceu:vibrant_alloy_single_wire",
-            P: "enderio:pressurized_fluid_conduit"
-        }).id("kubejs:ender_fluid_conduit_upgrade")
-
-        event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
-
-        // Assembler item conduit
-        event.recipes.gtceu.assembler("kubejs:efficent_item_conduit")
-            .itemInputs("3x gtceu:pulsating_alloy_single_wire", "6x enderio:conduit_binder")
-            .itemOutputs("8x enderio:item_conduit")
-            .duration(80)
-            .EUt(16)
-
-        // Assembler ender fluid conduit
-        event.recipes.gtceu.assembler("kubejs:efficent_ender_conduit")
-            .itemInputs("2x gtceu:vibrant_alloy_single_wire", "enderio:pressurized_fluid_conduit", "6x enderio:conduit_binder")
-            .itemOutputs("8x enderio:ender_fluid_conduit")
-            .duration(80)
-            .EUt(16)
-    }
-    if (isHardMode) {
-        if (!isExpertMode) {
+    if (doConduits) {
+        if(doHarderRecipes) {
             // Manual item conduit
             event.shaped("4x enderio:item_conduit", [
                 "BPB",
@@ -102,108 +55,151 @@ ServerEvents.recipes(event => {
                 .itemOutputs("8x enderio:ender_fluid_conduit")
                 .duration(80)
                 .EUt(16)
+        } else {
+            // Manual item conduit
+            event.shaped("4x enderio:item_conduit", [
+                "BBB",
+                "WWW",
+                "BBB"
+            ], {
+                B: "enderio:conduit_binder",
+                W: "gtceu:pulsating_alloy_single_wire"
+            }).id("kubejs:item_conduit")
+
+            event.shaped("4x enderio:pressurized_fluid_conduit", [
+                "BBB",
+                "GGG",
+                "BBB"
+            ], {
+                B: "enderio:conduit_binder",
+                G: "#forge:glass/colorless"
+            }).id("kubejs:pressurized_fluid_conduit")
+
+            // Manual ender fluid conduit
+            event.shaped("4x enderio:ender_fluid_conduit", [
+                "BBB",
+                "WPW",
+                "BBB"
+            ], {
+                B: "enderio:conduit_binder",
+                W: "gtceu:vibrant_alloy_single_wire",
+                P: "enderio:pressurized_fluid_conduit"
+            }).id("kubejs:ender_fluid_conduit_upgrade")
+
+            event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
+
+            // Assembler item conduit
+            event.recipes.gtceu.assembler("kubejs:efficent_item_conduit")
+                .itemInputs("3x gtceu:pulsating_alloy_single_wire", "6x enderio:conduit_binder")
+                .itemOutputs("8x enderio:item_conduit")
+                .duration(80)
+                .EUt(16)
+
+            // Assembler ender fluid conduit
+            event.recipes.gtceu.assembler("kubejs:efficent_ender_conduit")
+                .itemInputs("2x gtceu:vibrant_alloy_single_wire", "enderio:pressurized_fluid_conduit", "6x enderio:conduit_binder")
+                .itemOutputs("8x enderio:ender_fluid_conduit")
+                .duration(80)
+                .EUt(16)
         }
-    }
-    if (isExpertMode) {
+
+        // Energy Conduits //
+
+        // Conductive Iron
+        event.shaped("3x enderio:conductive_conduit", [
+            "AAA",
+            "BBB",
+            "AAA"
+        ], {
+            A: "enderio:conduit_binder",
+            B: "gtceu:conductive_alloy_single_wire"
+        }).id("kubejs:conductive_conduit")
+
+        event.recipes.gtceu.assembler("kubejs:conductive_conduit")
+            .itemInputs("3x gtceu:conductive_alloy_single_wire", "6x enderio:conduit_binder")
+            .itemOutputs("4x enderio:conductive_conduit")
+            .duration(80)
+            .EUt(16)
+
+        // Energetic Alloy
+        event.shaped("3x enderio:energetic_conduit", [
+            "AAA",
+            "BCB",
+            "AAA"
+        ], {
+            A: "enderio:conduit_binder",
+            B: "gtceu:energetic_alloy_single_wire",
+            C: "enderio:conductive_conduit"
+        }).id("kubejs:energetic_conduit")
+
+        event.recipes.gtceu.assembler("kubejs:energetic_conduit")
+            .itemInputs("2x gtceu:energetic_alloy_single_wire", "enderio:conductive_conduit", "6x enderio:conduit_binder")
+            .itemOutputs("4x enderio:energetic_conduit")
+            .duration(80)
+            .EUt(16)
+
+        // Vibrant Alloy
+        event.shaped("3x enderio:vibrant_conduit", [
+            "AAA",
+            "BCB",
+            "AAA"
+        ], {
+            A: "enderio:conduit_binder",
+            B: "gtceu:vibrant_alloy_single_wire",
+            C: "enderio:energetic_conduit"
+        }).id("kubejs:vibrant_conduit")
+
+        event.recipes.gtceu.assembler("kubejs:vibrant_conduit")
+            .itemInputs("2x gtceu:vibrant_alloy_single_wire", "enderio:energetic_conduit", "6x enderio:conduit_binder")
+            .itemOutputs("4x enderio:vibrant_conduit")
+            .duration(80)
+            .EUt(16)
+
+        // Endsteel
+        event.recipes.gtceu.assembler("kubejs:endsteel_conduit")
+            .itemInputs("2x gtceu:end_steel_single_wire", "enderio:vibrant_conduit", "6x enderio:conduit_binder")
+            .itemOutputs("4x enderio:endsteel_conduit")
+            .duration(80)
+            .EUt(16)
+
+        // Lumium
+        event.recipes.gtceu.assembler("kubejs:lumium_conduit")
+            .itemInputs("2x gtceu:lumium_single_wire", "enderio:endsteel_conduit", "6x enderio:conduit_binder")
+            .itemOutputs("4x enderio:lumium_conduit")
+            .duration(80)
+            .EUt(16)
+
+        // Signalum
+        event.recipes.gtceu.assembler("kubejs:signalum_conduit")
+            .itemInputs("2x gtceu:signalum_single_wire", "enderio:lumium_conduit", "6x enderio:conduit_binder")
+            .itemOutputs("4x enderio:signalum_conduit")
+            .duration(80)
+            .EUt(16)
+
+        // Enderium
+        event.recipes.gtceu.assembler("kubejs:enderium_conduit")
+            .itemInputs("2x gtceu:enderium_single_wire", "enderio:signalum_conduit", "6x enderio:conduit_binder")
+            .itemOutputs("4x enderio:enderium_conduit")
+            .duration(80)
+            .EUt(16)
+
+        // Cryolobus
+        event.recipes.gtceu.assembler("kubejs:cryolobus_conduit")
+            .itemInputs("2x gtceu:cryolobus_single_wire", "enderio:enderium_conduit", "6x enderio:conduit_binder")
+            .itemOutputs("4x enderio:cryolobus_conduit")
+            .duration(80)
+            .EUt(16)
+
+        // Sculk Superconductor
+        event.recipes.gtceu.assembler("kubejs:sculk_superconductor_conduit")
+            .itemInputs("2x gtceu:sculk_superconductor_single_wire", "enderio:cryolobus_conduit", "6x enderio:conduit_binder")
+            .itemOutputs("4x enderio:sculk_superconductor_conduit")
+            .duration(80)
+            .EUt(16)
+    } else {
         event.remove({ id: "enderio:ender_fluid_conduit_upgrade" })
         event.remove({ output: "enderio:pressurized_fluid_conduit" })
     }
-
-
-    // Energy Conduits //
-
-    // Conductive Iron
-    event.shaped("3x enderio:conductive_conduit", [
-        "AAA",
-        "BBB",
-        "AAA"
-    ], {
-        A: "enderio:conduit_binder",
-        B: "gtceu:conductive_alloy_single_wire"
-    }).id("kubejs:conductive_conduit")
-
-    event.recipes.gtceu.assembler("kubejs:conductive_conduit")
-        .itemInputs("3x gtceu:conductive_alloy_single_wire", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:conductive_conduit")
-        .duration(80)
-        .EUt(16)
-
-    // Energetic Alloy
-    event.shaped("3x enderio:energetic_conduit", [
-        "AAA",
-        "BCB",
-        "AAA"
-    ], {
-        A: "enderio:conduit_binder",
-        B: "gtceu:energetic_alloy_single_wire",
-        C: "enderio:conductive_conduit"
-    }).id("kubejs:energetic_conduit")
-
-    event.recipes.gtceu.assembler("kubejs:energetic_conduit")
-        .itemInputs("2x gtceu:energetic_alloy_single_wire", "enderio:conductive_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:energetic_conduit")
-        .duration(80)
-        .EUt(16)
-
-    // Vibrant Alloy
-
-    event.shaped("3x enderio:vibrant_conduit", [
-        "AAA",
-        "BCB",
-        "AAA"
-    ], {
-        A: "enderio:conduit_binder",
-        B: "gtceu:vibrant_alloy_single_wire",
-        C: "enderio:energetic_conduit"
-    }).id("kubejs:vibrant_conduit")
-
-    event.recipes.gtceu.assembler("kubejs:vibrant_conduit")
-        .itemInputs("2x gtceu:vibrant_alloy_single_wire", "enderio:energetic_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:vibrant_conduit")
-        .duration(80)
-        .EUt(16)
-
-    // Endsteel
-    event.recipes.gtceu.assembler("kubejs:endsteel_conduit")
-        .itemInputs("2x gtceu:end_steel_single_wire", "enderio:vibrant_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:endsteel_conduit")
-        .duration(80)
-        .EUt(16)
-
-    // Lumium
-    event.recipes.gtceu.assembler("kubejs:lumium_conduit")
-        .itemInputs("2x gtceu:lumium_single_wire", "enderio:endsteel_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:lumium_conduit")
-        .duration(80)
-        .EUt(16)
-
-    // Signalum
-    event.recipes.gtceu.assembler("kubejs:signalum_conduit")
-        .itemInputs("2x gtceu:signalum_single_wire", "enderio:lumium_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:signalum_conduit")
-        .duration(80)
-        .EUt(16)
-
-    // Enderium
-    event.recipes.gtceu.assembler("kubejs:enderium_conduit")
-        .itemInputs("2x gtceu:enderium_single_wire", "enderio:signalum_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:enderium_conduit")
-        .duration(80)
-        .EUt(16)
-
-    // Cryolobus
-    event.recipes.gtceu.assembler("kubejs:cryolobus_conduit")
-        .itemInputs("2x gtceu:cryolobus_single_wire", "enderio:enderium_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:cryolobus_conduit")
-        .duration(80)
-        .EUt(16)
-
-    // Sculk Superconductor
-    event.recipes.gtceu.assembler("kubejs:sculk_superconductor_conduit")
-        .itemInputs("2x gtceu:sculk_superconductor_single_wire", "enderio:cryolobus_conduit", "6x enderio:conduit_binder")
-        .itemOutputs("4x enderio:sculk_superconductor_conduit")
-        .duration(80)
-        .EUt(16)
 
     event.remove({ output: ["enderio:iron_gear", "enderio:energized_gear", "enderio:vibrant_gear", "enderio:dark_bimetal_gear"] })
 
@@ -571,7 +567,7 @@ ServerEvents.recipes(event => {
 
     // Crafter
     event.remove({ id: "enderio:crafter" })
-    if (!isExpertMode) {
+    if (doConduits) {
         event.shaped("enderio:crafter", [
             "RCR",
             "GFG",
@@ -759,7 +755,7 @@ ServerEvents.recipes(event => {
     event.shapeless("enderio:pressurized_fluid_tank", ["enderio:pressurized_fluid_tank"])
 
     // Cheaper me conduit recipes
-    if (!isExpertMode) {
+    if (doConduits) {
         event.recipes.gtceu.assembler("kubejs:dense_me_conduit")
             .itemInputs("4x enderio:me_conduit", "5x enderio:conduit_binder")
             .itemOutputs("2x enderio:dense_me_conduit")
@@ -780,9 +776,24 @@ ServerEvents.recipes(event => {
 
     // Conduit Probe recipe
     event.replaceInput({ id: "enderio:conduit_probe" }, "enderio:conductive_alloy_ingot", "gtceu:conductive_alloy_ingot")
-    if (!isExpertMode)
+    if (doConduits) {
         event.replaceInput({ id: "enderio:conduit_probe" }, "enderio:energy_conduit", "enderio:conductive_conduit")
-    if (isExpertMode)
+    } else {
         event.replaceInput({ id: "enderio:conduit_probe" }, "enderio:energy_conduit", "gtceu:conductive_alloy_single_wire")
+    }
 
+    // Make End Steel Craftable in HV
+    event.recipes.gtceu.chemical_bath("end_steel_ingot_cooling")
+        .inputFluids("minecraft:water 100")
+        .itemInputs("gtceu:hot_end_steel_ingot")
+        .itemOutputs("gtceu:end_steel_ingot")
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_bath("end_steel_ingot_distilled_cooling")
+        .inputFluids("gtceu:distilled_water 100")
+        .itemInputs("gtceu:hot_end_steel_ingot")
+        .itemOutputs("gtceu:end_steel_ingot")
+        .duration(125)
+        .EUt(GTValues.VHA[GTValues.HV])
 })

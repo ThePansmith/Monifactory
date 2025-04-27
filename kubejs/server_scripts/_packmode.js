@@ -1,23 +1,60 @@
-/** Server-side pack mode */
-const isNormalMode = !!global.isNormalMode;
-const isHardMode = !!global.isHardMode;
-const isExpertMode = !!global.isExpertMode;
+/**
+ * Server-side pack mode management.
+ * This file adds a set of constant booleans for convenience in determining if a feature is enabled
+ * and enables gamestages to toggle feature-specific FTBQuests quests if the respective content is also enabled.
+ */
+
+// The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
+const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
+const doBoilers = !!global.doBoilers;
+const doCompacting = !!global.doCompacting;
+const doConduits = !!global.doConduits;
+const doConverters = !!global.doConverters;
+
+const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
+const doHarderProcessing = !!global.doHarderProcessing;
+const doHarderRecipes = !!global.doHarderRecipes;
+const doHarderNaqFuel = !!global.doHarderNaqFuel;
+const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
+const doHatchRevert = !!global.doHatchRevert;
+const doHNN = !!global.doHNN;
+const doLaserIO = !!global.doLaserIO;
+const doMeowniPlush = !!global.doMeowniPlush;
+const doMonicoins = !!global.doMonicoins;
+const doSnad = !!global.doSnad;
+const doSteamAge = !!global.doSteamAge;
+const doStoneline = !!global.doStoneline;
+const doFluxbore = !!global.doFluxbore;
+const doHarderFluxBore = !!global.doHarderFluxBore;
+const doQuantumCoolant = !!global.doQuantumCoolant;
 
 PlayerEvents.loggedIn(event => {
-    // devmode stuff so we can switch modes in runtime (not recommended)
-    // let foundOldGameStage = false;
-    // event.player.stages.all.filter(e => e.includes('mode_')).forEach(ev => {
-    //     if (ev === `mode_${global.packmode}`) return;
-    //     event.removeGameStage(ev) // remove old stages
-    //     foundOldGameStage = true;
-    // });
-    // if (foundOldGameStage) {
-    //     event.player.tell(Text.yellow('Pack mode swapped'))
-    // }
+    const gameStages = [
+        "Boilers",
+        "Compacting",
+        "Converters",
+        "HarderProcessing",
+        "HarderRecipes",
+        "HardGlassRecipesWarning",
+        "HNN",
+        "LaserIO",
+        "Monicoins",
+        "Snad",
+        "SteamAge",
+        "HarderNaqFuel",
+        "Stoneline",
+        "HalfMMs",
+        "QuantumCoolant"
+    ];
 
-    event.removeGameStage("mode_normal")
-    event.removeGameStage("mode_hard")
-    event.removeGameStage("mode_expert")
-
-    event.addGameStage(`mode_${global.packmode.toLowerCase()}`);
-})
+    gameStages.forEach(stage => {
+        const flag = global[`do${stage}`];
+        if (flag) {
+            event.removeGameStage(`dont${stage}`);
+            event.addGameStage(`do${stage}`);
+        } else {
+            event.removeGameStage(`do${stage}`);
+            event.addGameStage(`dont${stage}`);
+        }
+    });
+});

@@ -36,6 +36,13 @@ ServerEvents.recipes(event => {
         return boosted;
     }
 
+    /**
+     * @param {string} mod Input item mod name
+     * @param {string} input Input item identifier
+     * @param {number} duration Recipe duration
+     * @param {string[]} output Base recipe output
+     * @param {number} inputFeedbackAmount How many input items to add to output
+     */
     function Greenhouse(mod, input, duration, output, inputFeedbackAmount) {
         // Create new boosted output item array
         let boostedOutputs = boost(output, 2)
@@ -140,6 +147,15 @@ ServerEvents.recipes(event => {
     })
     // Torchflowers are grown from seeds
     Greenhouse("minecraft", "torchflower_seeds", 640, [Item.of("torchflower", 48)], 0);
+    // A way to get grass blocks
+    event.recipes.gtceu.greenhouse("kubejs:grass_block")
+        .circuit(1)
+        .notConsumable(InputItem.of(Item.of("minecraft:grass_block")))
+        .itemInputs("64x dirt")
+        .inputFluids(Fluid.of("minecraft:water", 24000))
+        .itemOutputs("64x grass_block")
+        .duration(640)
+        .EUt(80)
 })
 
 ServerEvents.recipes(event => {

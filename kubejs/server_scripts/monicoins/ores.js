@@ -3,7 +3,7 @@
  */
 
 ServerEvents.recipes(event => {
-    if (isNormalMode) {
+    if (doMonicoins) {
         // moniPENNY RECIPES
         event.shaped(Item.of("minecraft:clay_ball", 64), [
             "AAA",

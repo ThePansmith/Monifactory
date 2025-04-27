@@ -6,10 +6,11 @@ ServerEvents.recipes(event => {
     // We only use GT ores for the oreproc page and autogenned intermediates, not for the in-stone ore
     event.remove({ not: [{ input: "minecraft:ancient_debris" }, { input: "#forge:ores/netherite_scrap" }], output: "gtceu:crushed_netherite_scrap_ore" })
     event.remove([{ type: "minecraft:smelting", output: "minecraft:netherite_scrap", id: /gtceu:smelting\/.*netherite_scrap_ore.*/ }, { type: "minecraft:blasting", output: "minecraft:netherite_scrap", id: /gtceu:blasting\/.*netherite_scrap_ore.*/ }])
+    event.remove({ id: "gtceu:alloy_smelt_netherite_scrap_to_nugget" })
 
     // Omnic Acid
     event.recipes.gtceu.large_chemical_reactor("omnic_acid")
-        .itemInputs("5x gtceu:carbon_dust", "4x kubejs:mote_of_omnium")
+        .itemInputs("5x gtceu:carbon_dust", "4x gtceu:omnium_nugget")
         .inputFluids(Fluid.of("water", 3000))
         .itemOutputs("gtceu:omnic_acid_dust")
         .outputFluids(Fluid.of("gtceu:hydrogen", 2000))

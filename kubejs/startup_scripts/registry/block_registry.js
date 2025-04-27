@@ -148,26 +148,26 @@ StartupEvents.registry("block", event => {
 
     // Dense Ores
     const ores = [
-        "redstone_ore",
-        "diamond_ore",
-        "emerald_ore",
-        "gold_ore",
-        "lapis_ore",
-        "iron_ore",
-        "coal_ore",
-        "copper_ore",
-        "nether_quartz_ore",
-        "oilsands_ore"
+        "redstone",
+        "diamond",
+        "emerald",
+        "gold",
+        "lapis",
+        "iron",
+        "coal",
+        "copper",
+        "nether_quartz",
+        "oilsands"
     ]
 
     ores.forEach(ore => {
-        event.create(`dense_${ore}`)
+        event.create(`dense_${ore}_ore`)
             .soundType("stone")
             .resistance(6)
             .hardness(5)
             .tagBlock("mineable/pickaxe")
-            .tagBlock("forge:ores/dense")
-            .tagBlock(`forge:ores/dense_${ore}`)
+            .tagBoth("forge:ores/dense")
+            .tagBoth(`forge:ores/dense/${ore}`)
             .requiresTool(true);
     });
 
@@ -176,8 +176,8 @@ StartupEvents.registry("block", event => {
         .resistance(6)
         .hardness(5)
         .tagBlock("mineable/pickaxe")
-        .tagBlock("forge:ores/dense")
-        .tagBlock("forge:ores/dense_magma")
+        .tagBoth("forge:ores/dense")
+        .tagBoth("forge:ores/dense/magma")
         .requiresTool(true)
         .lightLevel(1.0);
 
@@ -205,7 +205,7 @@ StartupEvents.registry("block", event => {
 
     // Misc
     event.create("starry_diamond_block")
-        .displayName("Starry Diamond Block")
+        .displayName("Starry Diamatine Block")
         .soundType("metal")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe").requiresTool(true)
@@ -236,10 +236,10 @@ StartupEvents.registry("block", event => {
         .requiresTool(true);
 
     event.create("omnic_matrix_coil_block", "gtceu:coil")
-        .temperature(15000)
-        .level(24)
+        .temperature(12600)
+        .level(16)
         .energyDiscount(16)
-        .tier(9)
+        .tier(8)
         .coilMaterial(() => GTMaterials.get("omnium"))
         .hardness(5)
         .requiresTool(true)

@@ -39,16 +39,12 @@ ServerEvents.tags("item", event => {
     event.add("forge:nuggets/electrum_flux", "redstone_arsenal:flux_nugget")
     event.add("forge:gears/electrum_flux", "redstone_arsenal:flux_gear")
     event.add("forge:dusts/quartz", "gtceu:nether_quartz_dust")
-    event.removeAllTagsFrom("ae2:certus_quartz_crystal")
-    event.removeAllTagsFrom("ae2:charged_certus_quartz_crystal")
-    event.removeAllTagsFrom("ae2:fluix_crystal")
-    event.removeAllTagsFrom("ae2:fluix_dust")
-    event.remove("forge:ingots/aluminum", "nuclearcraft:aluminum_ingot")
-    event.add("forge:ingots/aluminium", "nuclearcraft:aluminum_ingot")
 
     // can't replace tags in recipes so we just add the tag to the item instead
     event.add("forge:ingots/redstone_alloy", "gtceu:red_alloy_ingot")
     event.add("forge:ingots/copper_alloy", "gtceu:electrical_steel_ingot")
+    event.add("forge:storage_blocks/coal_coke", "#forge:storage_blocks/coke")
+    event.add("forge:coal_coke", "#forge:gems/coke")
 
     const decorremap = [["etrium", "diamond"], ["desh", "bronze"], ["ostrum", "lead"], ["calorite", "red_alloy"]]
     decorremap.forEach(([mat, remat]) => {
@@ -109,55 +105,4 @@ ServerEvents.tags("block", event => {
     event.remove("forge:storage_blocks/graphite", "nuclearcraft:graphite_block");
 
     unifyChisel(event);
-})
-
-ServerEvents.tags("fluid", event => {
-    // removing tags from nc fluids so they stop showing up in ae2 and emi
-    // reused code from JEI hiding script
-    // get all nc fluids from index
-    let ncFluids = Fluid.getTypes().filter(id => id.includes("nuclearcraft"))
-    // list of used fluids to not remove
-    let ncUsedFluid = ["nuclearcraft:hydrated_gelatin", "nuclearcraft:gelatin", "nuclearcraft:sugar", "nuclearcraft:marshmallow", "nuclearcraft:cocoa_butter", "nuclearcraft:chocolate_liquor", "nuclearcraft:unsweetened_chocolate", "nuclearcraft:dark_chocolate", "nuclearcraft:milk_chocolate", "nuclearcraft:technical_water", "nuclearcraft:high_pressure_steam", "nuclearcraft:exhaust_steam"]
-    // remove used fluids from the full list
-    ncFluids = ncFluids.filter((el) => !ncUsedFluid.includes(el))
-    // loops through the list and hides all the unwanted fluids for nc
-    ncFluids.forEach(element => {
-        event.removeAllTagsFrom(element)
-    })
-
-    // Remove tags from other unused non-GT fluids
-    event.removeAllTagsFrom("thermal:creosote")
-    event.removeAllTagsFrom("thermal:experience")
-    event.removeAllTagsFrom("sophisticatedcore:xp_still")
-    event.removeAllTagsFrom("thermal:glowstone")
-    event.removeAllTagsFrom("thermal:redstone")
-    event.removeAllTagsFrom("cofh_core:experience")
-
-    Fluid.getTypes().filter(id => id.includes("ad_astra")).forEach(id => event.removeAllTagsFrom(id))
-    // Rocket Fuels
-    event.removeAll("ad_astra:fuel");
-    event.add("ad_astra:fuel", "gtceu:rocket_fuel")
-
-})
-
-// Unification regexes are definited in startup script _initial.js
-ServerEvents.tags("item", event => {
-    event.removeAllTagsFrom(global.unificationPattern)
-    event.removeAllTagsFrom(global.manualUnification)
-    event.removeAllTagsFrom(global.nuclearcraftFuelPattern)
-    event.removeAllTagsFrom(global.nuclearcraftMaterialPattern)
-})
-
-ServerEvents.recipes(event => {
-    event.remove({ output: global.unificationPattern })
-    event.remove({ output: global.manualUnification })
-    event.remove({ output: global.nuclearcraftFuelPattern })
-    event.remove({ output: global.nuclearcraftMaterialPattern })
-
-    // Tags cannot be removed from items in HammerLib (see https://github.com/dragon-forge/HammerLib/issues/71).
-    // Thus, we replace the input of any recipe that uses one of the tags of those items with the corresponding GT item.
-    let hammerLibGears = ["iron", "diamond"]
-    hammerLibGears.forEach(material => {
-        event.replaceInput({ input: `#forge:gears/${material}` }, `#forge:gears/${material}`, `gtceu:${material}_gear`)
-    })
 })
