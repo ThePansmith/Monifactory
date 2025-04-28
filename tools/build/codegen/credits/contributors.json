@@ -86,6 +86,10 @@
     },
     "Jollahs": {
       "mcuuid": "b2b0f67c-4db4-4286-b10d-31cebe8cdf7d"
+    },
+    "NegaNote": {
+      "mcuuid": "5042daf6-7d30-4673-97a7-d9aa58d07609",
+      "description": "Coremod developer"
     }
   }
 }
