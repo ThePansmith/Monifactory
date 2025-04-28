@@ -612,6 +612,7 @@
 				"786AECA42F53B45A"
 			]
 			description: ["{moni.quest.13578427FD9CC2CE.description1}"]
+			hide_dependency_lines: false
 			id: "13578427FD9CC2CE"
 			shape: "hexagon"
 			size: 1.5d
