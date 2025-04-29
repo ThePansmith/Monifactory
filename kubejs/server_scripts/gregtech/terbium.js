@@ -93,9 +93,9 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:ammonium_carbonate_dust")
         .duration(160).EUt(30)
 
-    event.recipes.gtceu.polarizer("terbium_polarize")
-        .itemInputs("gtceu:long_terbium_rod")
-        .itemOutputs("gtceu:long_magnetic_terbium_rod")
+    event.recipes.gtceu.polarizer("terbium_alloy_polarize")
+        .itemInputs("gtceu:long_iron_neodymium_terbium_neutronate_rod")
+        .itemOutputs("gtceu:long_magnetic_iron_neodymium_terbium_neutronate_rod")
         .duration(200)
         .EUt(122880)
 })
