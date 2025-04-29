@@ -87,12 +87,19 @@ GTCEuStartupEvents.craftingComponents(event => {
     plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("monium"))
     event.modifyUnificationEntry(CraftingComponent.PLATE, plateMap)
 
+    // Hull material
+    hullMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
+    hullMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
+    hullMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("infinity"))
+    hullMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("monium"))
+    event.modifyUnificationEntry(CraftingComponent.HULL, hullMap)
+
     // Hull plates
     let hullPlateMap = {};
-    plateMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polybenzimidazole"))
-    plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
-    plateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
-    plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
+    hullPlateMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polybenzimidazole"))
+    hullPlateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
+    hullPlateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
+    hullPlateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
     event.modifyUnificationEntry(CraftingComponent.HULL_PLATE, hullPlateMap)
 
     // Rotors

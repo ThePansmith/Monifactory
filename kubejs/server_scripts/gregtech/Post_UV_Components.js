@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
     })
 
     // UHV hulls have missing crafting table recipe
-    event.shaped("gtceu:uhv_machine_hull", [
+    /*event.shaped("gtceu:uhv_machine_hull", [
         "PMP",
         "WCW"
     ], {
@@ -132,13 +132,13 @@ ServerEvents.recipes(event => {
         M: "gtceu:manyullyn_plate",
         W: "gtceu:europium_single_cable",
         C: "gtceu:uhv_machine_casing"
-    }).id("gtceu:shaped/hull_uhv")
+    }).id("gtceu:shaped/hull_uhv")*/
 
     // UHV components
     const plateFix = [
-        /gtceu:.*casing_uhv/,
+        ///gtceu:.*casing_uhv/,
         "gtceu:shaped/hermetic_casing_max",
-        /gtceu:shaped\/quantum_.*_uhv/
+        ///gtceu:shaped\/quantum_.*_uhv/
     ]
     plateFix.forEach((value) => {
         event.replaceInput({ id: `${value}`}, "gtceu:neutronium_plate", "gtceu:manyullyn_plate" )
