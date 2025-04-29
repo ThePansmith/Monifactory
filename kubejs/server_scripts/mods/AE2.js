@@ -1048,6 +1048,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_wall")
         .itemInputs("expatternprovider:assembler_matrix_frame", "gtceu:hv_electric_motor")
         .itemOutputs("expatternprovider:assembler_matrix_wall")
+        .circuit(1)
         .duration(100)
         .EUt(1920)
 
@@ -1056,6 +1057,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:epp/assembler_matrix_glass")
         .itemInputs("expatternprovider:assembler_matrix_frame", "gtceu:hv_electric_motor", "ae2:quartz_glass")
         .itemOutputs("expatternprovider:assembler_matrix_glass")
+        .circuit(2)
         .duration(100)
         .EUt(1920)
 
