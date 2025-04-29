@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
         C: "gtceu:uhv_machine_casing"
     }).id("gtceu:shaped/hull_uhv")
 
-    // UHV components 
+    // UHV components
     const plateFix = [
         /gtceu:.*casing_uhv/,
         "gtceu:shaped/hermetic_casing_max",

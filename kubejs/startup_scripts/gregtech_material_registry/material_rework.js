@@ -1,4 +1,7 @@
 // priority: 0
+/**
+ * Material Rework related material declarations
+ */
 GTCEuStartupEvents.registry("gtceu:element", event => {
     event.create("void")
         .protons(0)
