@@ -135,9 +135,9 @@ ServerEvents.recipes(event => {
     }).id("gtceu:shaped/hull_uhv")
 
     const hullMaterials = [
-        {tier: "uev", material: "omnium", wire: "omnium_single_cable", plastic: "polyethyl_cyanoacrylate"},
-        {tier: "uiv", material: "infinity", wire: "holmium_single_wire", plastic: "polyethyl_cyanoacrylate"},
-        {tier: "max", material: "monium", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate"},
+        { tier: "uev", material: "omnium", wire: "omnium_single_cable", plastic: "polyethyl_cyanoacrylate" },
+        { tier: "uiv", material: "infinity", wire: "holmium_single_wire", plastic: "polyethyl_cyanoacrylate" },
+        { tier: "max", material: "monium", wire: "monium_single_wire", plastic: "polyethyl_cyanoacrylate" },
     ]
 
     hullMaterials.forEach((value) => {
@@ -175,9 +175,9 @@ ServerEvents.recipes(event => {
     })
 
     const rotorHolderMaterials = [
-        {tier:"uhv", large_gear:"actinium", small_gear:"neutronium"},
-        {tier:"uev", large_gear:"sculk_bioalloy", small_gear:"omnium"},
-        {tier:"uiv", large_gear:"eltz", small_gear:"infinity"}
+        { tier: "uhv", large_gear: "actinium", small_gear: "neutronium" },
+        { tier: "uev", large_gear: "sculk_bioalloy", small_gear: "omnium" },
+        { tier: "uiv", large_gear: "eltz", small_gear: "infinity" }
     ]
 
     rotorHolderMaterials.forEach((value) => {

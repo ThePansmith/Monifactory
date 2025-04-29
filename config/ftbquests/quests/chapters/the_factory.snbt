@@ -50,7 +50,7 @@
 			shape: "hexagon"
 			size: 2.0d
 			x: 5.0d
-			y: -6.0d
+			y: -7.5d
 		}
 	]
 	quests: [
@@ -651,8 +651,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4EAD8756BAAC6B2E.title}"
-			x: 0.0d
-			y: -5.5d
+			x: 1.0d
+			y: -3.75d
 		}
 		{
 			dependencies: ["6A262AA410619C23"]
@@ -817,7 +817,7 @@
 			]
 			title: "{moni.quest.404C9497C46E7608.title}"
 			x: 2.0d
-			y: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -842,8 +842,8 @@
 				}
 			]
 			title: "{moni.quest.30EBD4E7BBFFEF2C.title}"
-			x: 3.5d
-			y: -4.5d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -868,7 +868,7 @@
 				}
 			]
 			title: "{moni.quest.273F3F8DD6A3DCC5.title}"
-			x: 1.0d
+			x: 3.0d
 			y: -4.5d
 		}
 		{
@@ -889,8 +889,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5301E546BAA69844.title}"
-			x: 3.0d
-			y: -2.5d
+			x: 0.75d
+			y: -1.5d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
@@ -993,7 +993,7 @@
 			}]
 			title: "{moni.quest.46AF35D4EECA5BDB.title}"
 			x: 2.0d
-			y: -6.5d
+			y: -5.25d
 		}
 		{
 			dependencies: [
@@ -1026,7 +1026,7 @@
 			]
 			title: "{moni.quest.545CCC24D9401794.title}"
 			x: 7.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
@@ -1173,8 +1173,8 @@
 				}
 			]
 			title: "{moni.quest.645B1DCB3DA7198A.title}"
-			x: 3.5d
-			y: -5.5d
+			x: 3.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1189,7 +1189,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1262,7 +1262,7 @@
 			]
 			title: "{moni.quest.41C2E49E70D76330.title}"
 			x: 8.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1376,7 +1376,7 @@
 			}]
 			title: "{moni.quest.6D03BB4A6A4BBA27.title}"
 			x: 7.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6D03BB4A6A4BBA27"]
@@ -2085,8 +2085,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4F239316765C7CA1.title}"
-			x: 1.0d
-			y: -6.5d
+			x: 4.25d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4CD6C60CBEFFA317"]
@@ -2307,7 +2307,7 @@
 			]
 			title: "{moni.quest.5D60CAE3A33000C3.title}"
 			x: 8.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2640,6 +2640,44 @@
 			}]
 			x: 9.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3BD20358F137E7C6"
+				"273F3F8DD6A3DCC5"
+			]
+			description: [
+				"{moni.quest.32B770DAF5618BAA.description1}"
+				""
+				"{moni.quest.32B770DAF5618BAA.description2}"
+				""
+				"{moni.quest.32B770DAF5618BAA.description3}"
+				""
+				"{moni.quest.32B770DAF5618BAA.description4}"
+			]
+			id: "3D6BC54DBE665638"
+			rewards: [{
+				id: "096D97D7F08241D4"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7187745E3D3C66B6"
+				item: {
+					Count: 1
+					id: "enderio:staff_of_travelling"
+					tag: {
+						Energy: {
+							EnergyStored: 100000
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
 		}
 	]
 	title: "{moni.chapter.2763DAD954E0EED8.title}"

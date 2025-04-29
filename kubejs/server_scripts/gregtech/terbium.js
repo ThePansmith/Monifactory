@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.distillery("sucrose_distillation")
         .inputFluids(Fluid.of("gtceu:sucrose_solution", 1000))
         .itemOutputs("gtceu:sucrose_dust")
-        .outputFluids(Fluid.of("water", 8000))
+        .outputFluids(Fluid.of("water", 1000))
         .duration(160).EUt(30)
 
     event.recipes.gtceu.large_chemical_reactor("oxalic_acid_dihydrate")

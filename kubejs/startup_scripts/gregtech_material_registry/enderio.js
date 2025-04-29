@@ -61,7 +61,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot().fluid()
         .color(0xd6d980).iconSet("metallic")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
-        .blastTemp(3600, "mid", 480, 900)
+        .blastTemp(2700, "mid", 480, 900)
         .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, []))
         .cableProperties(2048, 1, 0, true)
         .components("dark_steel", "endstone", "vibrant_alloy")

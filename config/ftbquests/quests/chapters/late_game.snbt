@@ -1367,7 +1367,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.186C14C113B6F3AD.title}"
-			x: 25.25d
+			x: 24.5d
 			y: 16.75d
 		}
 		{
@@ -1815,7 +1815,7 @@
 			}]
 			title: "{moni.quest.7C89BC235C988689.title}"
 			x: 27.25d
-			y: 12.25d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -1860,7 +1860,7 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["22144A6785524FDF"]
+			dependencies: ["7C89BC235C988689"]
 			description: [
 				"{moni.quest.713FAECEE5046121.description1}"
 				""
@@ -1901,14 +1901,13 @@
 				type: "item"
 			}]
 			title: "{moni.quest.20CB8F878CADA235.title}"
-			x: 25.25d
-			y: 12.25d
+			x: 24.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [
-				"7E3A179376673590"
 				"6391447F1A411281"
-				"20CB8F878CADA235"
+				"0562D9F4C441EAF9"
 			]
 			description: [
 				"{moni.quest.2D47BFA44BDB5E6A.description1}"
@@ -1929,8 +1928,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2D47BFA44BDB5E6A.title}"
-			x: 27.25d
-			y: 15.25d
+			x: 28.75d
+			y: 18.25d
 		}
 		{
 			dependencies: ["39FD6F1076559156"]
@@ -1954,7 +1953,7 @@
 				item: "gtceu:advanced_microverse_projector_ii"
 				type: "item"
 			}]
-			x: 25.25d
+			x: 26.0d
 			y: 15.25d
 		}
 		{
@@ -2003,7 +2002,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.6ABD83B58FADD4DF.title}"
-			x: 23.25d
+			x: 23.5d
 			y: 21.5d
 		}
 		{
@@ -2064,6 +2063,7 @@
 			dependencies: [
 				"0562D9F4C441EAF9"
 				"6ABD83B58FADD4DF"
+				"2D47BFA44BDB5E6A"
 			]
 			description: [
 				"{moni.quest.235C1E5B2C58B5AF.description1}"
@@ -2087,7 +2087,10 @@
 			y: 21.5d
 		}
 		{
-			dependencies: ["7D29C79DE1CCA2A2"]
+			dependencies: [
+				"7D29C79DE1CCA2A2"
+				"2D47BFA44BDB5E6A"
+			]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.22E50A6923EBF5CB.description1}"
@@ -2165,7 +2168,7 @@
 			}]
 			title: "{moni.quest.485CEA4199AAD352.title}"
 			x: 30.5d
-			y: 16.25d
+			y: 17.0d
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
@@ -2184,7 +2187,7 @@
 			}]
 			title: "{moni.quest.524E7A937C2D9DDD.title}"
 			x: 30.5d
-			y: 18.0d
+			y: 18.25d
 		}
 		{
 			dependencies: ["6DAB13A7BDECE94E"]
@@ -2305,8 +2308,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.6391447F1A411281.title}"
-			x: 29.25d
-			y: 15.25d
+			x: 28.0d
+			y: 15.75d
 		}
 		{
 			dependencies: ["25B0271106684DF7"]
@@ -2415,7 +2418,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.747A3DEA569CB6C9.title}"
-			x: 20.5d
+			x: 20.75d
 			y: 14.25d
 		}
 		{
@@ -2533,8 +2536,8 @@
 				item: "kubejs:microminer_t8half"
 				type: "item"
 			}]
-			x: 28.75d
-			y: 17.0d
+			x: 29.5d
+			y: 15.75d
 		}
 		{
 			dependencies: [
@@ -2592,8 +2595,8 @@
 				}
 			]
 			title: "{moni.quest.0608EE0A3BDE58D5.title}"
-			x: 28.75d
-			y: 18.25d
+			x: 26.0d
+			y: 16.75d
 		}
 		{
 			dependencies: [
@@ -2690,7 +2693,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1CF77095C203454F.title}"
-			x: 20.75d
+			x: 21.0d
 			y: 20.0d
 		}
 		{

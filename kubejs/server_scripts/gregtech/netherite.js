@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
 
     // Omnic Acid
     event.recipes.gtceu.large_chemical_reactor("omnic_acid")
-        .itemInputs("5x gtceu:carbon_dust", "4x kubejs:mote_of_omnium")
+        .itemInputs("5x gtceu:carbon_dust", "4x gtceu:omnium_nugget")
         .inputFluids(Fluid.of("water", 3000))
         .itemOutputs("gtceu:omnic_acid_dust")
         .outputFluids(Fluid.of("gtceu:hydrogen", 2000))
