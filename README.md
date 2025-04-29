@@ -13,7 +13,7 @@
 
 ## Features
 - [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](CHANGELOG.md)
-- A complete overhaul of post-tank progression from Nomifactory CEu
+- A complete overhaul of UV+ progression from Nomifactory CEu
 - Draconic Evolution and Avaritia have been replaced with new mechanics involving Sculk
 - A new, Harder difficulty mode for returning Nomi CEu Hard Mode players
 - A retexturing of everything to fit the modern style
@@ -38,8 +38,7 @@ Highlights include:
 - Monicoins can't be spent
 - Harder processing lines for Platinum and Naquadah
 - More focus on GregTech Power Generation
-- No Creative Tank; instead, use Stabilized Micro Miners for late-game resource acquisition
-
+- 
 Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 
 - Disabling RF -> EU conversion, making GT power generation required
@@ -77,6 +76,7 @@ To spice up your Monifactory experience, you can add any of the following mods t
 1. [Create](https://www.curseforge.com/minecraft/mc-mods/create)
     1a. [Create: Steam and Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)
+    1c. [Create: Estrogen](https://www.curseforge.com/minecraft/mc-mods/estrogen)
 2. [ComputerCraft: Tweaked](https://modrinth.com/mod/cc-tweaked)
     2a. [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)

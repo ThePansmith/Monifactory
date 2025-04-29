@@ -1034,12 +1034,12 @@ ServerEvents.recipes(event => {
     // Balance is based on adjusting to be an improvement over singeblock boilers
     // High Pressure Steam Boiler consumes 1 coal in 960s, produces 15mb/t, total production = 288,000 mb steam
     // By Defualt: Large Bronze Boiler consumes 1 coal in 1s, producing 800mb/t, total production = 16,000 mb steam
-    // This is a factor of 18x, we chose x20 for balancing to make Large Boilers 11.1% more efficient as a bonus for the extra cost.
+    // This is a factor of 18x, we chose x16 for balancing to make Large Boilers 11.1% less efficient as a tradeoff for the extra speed.
     event.findRecipes({ id: /^gtceu:large_boiler\/.*/, type: "gtceu:large_boiler" }).forEach(large_boiler_recipe => {
 
         let recipe_duration = large_boiler_recipe.json.getAsJsonPrimitive("duration").asInt
 
         large_boiler_recipe.json.remove("duration")
-        large_boiler_recipe.json.add("duration", recipe_duration * 20)
+        large_boiler_recipe.json.add("duration", recipe_duration * 16)
     })
 })

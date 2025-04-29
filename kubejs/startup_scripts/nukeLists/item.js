@@ -1,3 +1,4 @@
+// priority: 900
 /*
 The itemNukeList is used to list all IDs and regexes matching IDs of items that should be removed from the game, or "nuked".
 While this makes it far more difficult to access the items and effectively obliterates them in most cases,
@@ -281,5 +282,22 @@ global.itemNukeList = [
 
     // Wireless Chargers
     "wirelesschargers:basic_wireless_block_charger",
-    "wirelesschargers:advanced_wireless_block_charger",
+    "wirelesschargers:advanced_wireless_block_charger"
+
 ];
+
+// Create: Estrogen Compat
+if (Platform.isLoaded("estrogen")) {
+    global.itemNukeList.push(
+        "estrogen:used_filter",
+        "estrogen:centrifuge",
+        "estrogen:testosterone_chunk",
+        "estrogen:testosterone_powder",
+        "estrogen:testosterone_mixture_bucket",
+        "estrogen:filtrated_horse_urine_bucket",
+        "estrogen:horse_urine_bucket",
+        "estrogen:molten_amethyst_bucket",
+        "estrogen:molten_slime_bucket",
+        "estrogen:balls"
+    )
+}
