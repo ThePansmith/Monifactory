@@ -1,3 +1,4 @@
+// priority: 900
 /*
 The fluidNukeList is used to list all IDs of fluids that should be removed from the game, or "nuked".
 While this makes it far more difficult to access the fluids and effectively obliterates them in most cases,
@@ -44,7 +45,20 @@ global.fluidNukeList = [
     "systeams:steamiest",
     "systeams:steamiester",
     "systeams:steamiestest",
+
 ]
+
+// Create: Estrogen Compat
+if (Platform.isLoaded("estrogen")) {
+    global.fluidNukeList.push(
+        "estrogen:horse_urine",
+        "estrogen:filtrated_horse_urine",
+        "estrogen:molten_slime",
+        "estrogen:molten_amethyst",
+        "estrogen:testosterone_mixture"
+    )
+}
+
 
 StartupEvents.postInit(event => {
     /**

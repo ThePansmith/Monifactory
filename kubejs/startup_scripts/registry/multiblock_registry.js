@@ -220,7 +220,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("universal_crystallizer", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("universal_crystallizer")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(GCYMBlocks.CASING_LASER_SAFE_ENGRAVING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("XXXXXXX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XXXXXXX")

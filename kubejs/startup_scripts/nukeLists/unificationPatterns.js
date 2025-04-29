@@ -1,3 +1,4 @@
+// priority: 900
 /**
  * This file defines RegEx patterns that match with large quantities of certain items.
  *
