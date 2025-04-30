@@ -188,4 +188,3 @@ GTCEuStartupEvents.craftingComponents(event => {
     frameMap[GTValues.MAX] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("monium"))
     event.modifyUnificationEntry(CraftingComponent.FRAME, frameMap)
 })
-

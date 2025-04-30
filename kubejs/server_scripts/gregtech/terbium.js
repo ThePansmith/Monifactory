@@ -92,4 +92,3 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(122880)
 })
-
