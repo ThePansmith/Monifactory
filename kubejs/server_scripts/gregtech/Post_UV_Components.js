@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
     plateFix.forEach((value) => {
         event.replaceInput({ id: `${value}`}, "gtceu:neutronium_plate", "gtceu:manyullyn_plate" )
     })
-
+    /*
     const hullMaterials = [
         { tier: "uev", material: "omnium", wire: "omnium_single_cable", plastic: "polyethyl_cyanoacrylate" },
         { tier: "uiv", material: "infinity", wire: "holmium_single_wire", plastic: "polyethyl_cyanoacrylate" },
@@ -183,7 +183,7 @@ ServerEvents.recipes(event => {
             .duration(50)
             .EUt(GTValues.VHA[GTValues.LV])
     })
-
+    */
     const rotorHolderMaterials = [
         { tier: "uhv", large_gear: "actinium", small_gear: "manyullyn" },
         { tier: "uev", large_gear: "sculk_bioalloy", small_gear: "omnium" },

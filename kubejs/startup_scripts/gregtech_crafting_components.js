@@ -1,3 +1,4 @@
+// priority: -1000
 /**
  * Unlike how screret showcases the functionality of this event in his discord messge:
  * https://discord.com/channels/914926812948234260/1229854271613436066/1279802878822711407
@@ -88,6 +89,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.PLATE, plateMap)
 
     // Hull material
+    let hullMap = {};
     hullMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
     hullMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
     hullMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("infinity"))
