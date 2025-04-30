@@ -88,6 +88,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.PLATE, plateMap)
 
     // Hull material
+    let hullMap = {};
     hullMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
     hullMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
     hullMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("infinity"))
@@ -187,3 +188,4 @@ GTCEuStartupEvents.craftingComponents(event => {
     frameMap[GTValues.MAX] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("monium"))
     event.modifyUnificationEntry(CraftingComponent.FRAME, frameMap)
 })
+
