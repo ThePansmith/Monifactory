@@ -50,7 +50,8 @@ export const CodegenCreditsTarget = new Juke.Target({
             mcuuid: z.string().optional(),
             role: zRole.optional(),
             description: z.string().optional(),
-            link: z.string().optional()
+            link: z.string().optional(),
+            discorduid: z.number().int().positive().optional(),
         });
 
         const zContributorsFile = z.object({
