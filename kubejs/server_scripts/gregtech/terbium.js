@@ -41,9 +41,8 @@ ServerEvents.recipes(event => {
 
     // Misc
     event.recipes.gtceu.chemical_reactor("ammonium_oxalate")
-        .itemInputs("2x gtceu:carbon_dust")
+        .itemInputs("2x gtceu:carbon_dust", "gtceu:ammonium_carbonate_dust", "gtceu:oxalic_acid_dust")
         .inputFluids("gtceu:ammonia 2000", "gtceu:oxygen 4000")
-        .itemInputs("gtceu:ammonium_carbonate_dust", "gtceu:oxalic_acid_dust")
         .circuit(5)
         .outputFluids("gtceu:carbon_dioxide 1000", "minecraft:water 1000")
         .itemOutputs("gtceu:ammonium_oxalate_dust")
@@ -93,3 +92,4 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(122880)
 })
+
