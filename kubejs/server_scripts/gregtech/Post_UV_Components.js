@@ -136,14 +136,14 @@ ServerEvents.recipes(event => {
 
     // UHV components
     const plateFix = [
-        ///gtceu:.*casing_uhv/,
+        /gtceu:.*casing_uhv/,
         "gtceu:shaped/hermetic_casing_max",
-        ///gtceu:shaped\/quantum_.*_uhv/
+        /gtceu:shaped\/quantum_.*_uhv/
     ]
     plateFix.forEach((value) => {
         event.replaceInput({ id: `${value}`}, "gtceu:neutronium_plate", "gtceu:manyullyn_plate" )
     })
-    /*
+
     const hullMaterials = [
         { tier: "uev", material: "omnium", wire: "omnium_single_cable", plastic: "polyethyl_cyanoacrylate" },
         { tier: "uiv", material: "infinity", wire: "holmium_single_wire", plastic: "polyethyl_cyanoacrylate" },
@@ -167,23 +167,24 @@ ServerEvents.recipes(event => {
             .duration(50)
             .EUt(GTValues.VHA[GTValues.LV])
 
-        event.shaped(`gtceu:${value.tier}_machine_hull`, [
-            "PMP",
-            "WCW"
-        ], {
-            P: `gtceu:${value.plastic}_plate`,
-            M: `gtceu:${value.material}_plate`,
-            W: `gtceu:${value.wire}`,
-            C: `gtceu:${value.tier}_machine_casing`
-        }).id(`shaped/hull_${value.tier}`)
-
         event.recipes.gtceu.assembler(`hull_${value.tier}`)
             .itemInputs(`gtceu:${value.tier}_machine_casing`, `2x gtceu:${value.wire}`, `2x gtceu:${value.plastic}_plate`)
             .itemOutputs(`gtceu:${value.tier}_machine_hull`)
             .duration(50)
             .EUt(GTValues.VHA[GTValues.LV])
     })
-    */
+
+    event.shaped(`gtceu:max_machine_hull`, [
+        "PMP",
+        "WCW"
+    ], {
+        P: `gtceu:monium_plate`,
+        M: `gtceu:monium_plate`,
+        W: `gtceu:monium_single_wire`,
+        C: `gtceu:max_machine_casing`
+    }).id(`shaped/hull_max`)
+
+
     const rotorHolderMaterials = [
         { tier: "uhv", large_gear: "actinium", small_gear: "manyullyn" },
         { tier: "uev", large_gear: "sculk_bioalloy", small_gear: "omnium" },

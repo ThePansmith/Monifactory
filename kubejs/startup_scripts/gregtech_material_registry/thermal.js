@@ -17,6 +17,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot().fluid()
         .color(0xad2f05).secondaryColor(0x823c08)
         .iconSet("dull")
+        .blastTemp(9200, "highest", GTValues.VHA[GTValues.UV], 1000)
         .flags(GTMaterialFlags.GENERATE_PLATE)
         .components("3x red_steel", "blaze")
 

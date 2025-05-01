@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("manyullyn")
         .ingot().fluid()
         .color(0xc05cff).secondaryColor(0xff00e0).iconSet("magic")
-        .blastTemp(9200, "highest")
+        .blastTemp(9200, "highest", GTValues.VA[GTValues.UV], 1200)
         .components("4x ardite", "4x cobalt", "mana")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_ROTOR)
 
@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot().fluid()
         .color(0x3221fb).secondaryColor(0x26872b)
         .iconSet("metallic")
-        .blastTemp(11000, "highest")
+        .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
         .cableProperties(GTValues.V[GTValues.UEV], 64, 32, false)
 
