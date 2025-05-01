@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     // Initial Bauxite Slurry
 
     event.recipes.gtceu.mixer("kubejs:bauxite_slurry_purified")
-        .itemInputs("24x gtceu:purified_bauxite_ore", "24x gtceu:sodium_hydroxide_dust", "4x gtceu:quicklime_dust")
+        .itemInputs("30x gtceu:bauxite_dust", "24x gtceu:sodium_hydroxide_dust", "4x gtceu:quicklime_dust")
         .inputFluids("minecraft:water 12000")
         .outputFluids("gtceu:bauxite_slurry 12000")
         .duration(200)
