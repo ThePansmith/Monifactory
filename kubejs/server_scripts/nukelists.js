@@ -18,15 +18,15 @@ ServerEvents.tags("fluid", event => {
 })
 
 ServerEvents.recipes(event => {
-    
+
     let ignoreTypes = [
-        { type: 'nuclearcraft:fission_reactor_controller' },
-        { type: 'nuclearcraft:isotope_separator' },
-        { type: 'nuclearcraft:fuel_reprocessor' },
-        { type: 'minecraft:crafting' },
-        { type: 'minecraft:smelting' }
+        { type: "nuclearcraft:fission_reactor_controller" },
+        { type: "nuclearcraft:isotope_separator" },
+        { type: "nuclearcraft:fuel_reprocessor" },
+        { type: "minecraft:crafting" },
+        { type: "minecraft:smelting" }
     ];
-    
+
     global.itemNukeList.forEach(item => {
         event.remove([{ output: item }, { input: item }])
     })
