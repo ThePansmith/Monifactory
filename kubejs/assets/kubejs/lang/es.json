@@ -9,7 +9,7 @@
     "item.kubejs.moni_penny": "Monipenique §7[1]",
     "item.kubejs.moni_nickel": "§eMonicentavo §r§7[5]",
     "item.kubejs.moni_quarter": "§bMoniquarter §r§7[25]",
-    "item.kubejs.moni_dollar": "§dMonidollar §r§7[100]",
+    "item.kubejs.moni_dollar": "§dMonidólar §r§7[100]",
     "item.kubejs.microminer_t1": "§eMicrominero Chapado en Acero [Nivel Uno]",
     "item.kubejs.microminer_t1.desc": "§7§oCosecha el Titanio y otros metales ligeros de los asteroides en el microverso.",
     "item.kubejs.microminer_t2": "§eMicrominero Chapado en Titanio [Nivel Dos]",
@@ -473,5 +473,6 @@
     "item.kubejs.damaged_microminer.tooltip": "§7§oCan be repaired in an assembler.",
     "item.kubejs.microminer_t4half_damaged": "§7Damaged Lumium Plated Micro Mob Slayer [Tier Four and Half]",
     "item.kubejs.microminer_t2half.desc": "§7§oKills mobs in safer microverses and collects their skeletons and parts",
-    "mae2.eu_p2p_deprecation_tooltip": "In 0.13 this will be removed from HM/EM and heavily nerfed in NM!"
+    "mae2.eu_p2p_deprecation_tooltip": "In 0.13 this will be removed from HM/EM and heavily nerfed in NM!",
+    "item.patchouli.guide_book.tooltip": "§cInformation may be inaccurate!"
 }
