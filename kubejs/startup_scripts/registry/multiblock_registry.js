@@ -151,6 +151,15 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
+
+    // Fission reactor
+    event.create("fission_reactor")
+        .category("multiblock")
+        .setEUIO("out")
+        .setMaxIOSize(1, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.HEATING_OVERLAY_1)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ARC);
 })
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
@@ -527,6 +536,55 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingRenderer("kubejs:block/cryolobus/cryolobus_casing",
             "gtceu:block/machines/electrolyzer", false)
+
+    // Fission reactor
+    event.create("fission_reactor", "multiblock")
+        .rotationState(RotationState.ALL)
+        .recipeTypes("fission_reactor")
+        .recipeModifiers([/** @param {Internal.WorkableMultiblockMachine} machine */ machine => {
+            if (!("getMultiblockState" in machine)) return ModifierFunction.IDENTITY
+            // maintenancePartIds cannot be moved out of the function and cached due to a rhino limitation
+            let maintenancePartIds = new Set(PartAbility.MAINTENANCE.allBlocks.toArray().map(b => `${b.id}`))
+            let corner = machine.partPositions.find(partPos =>
+                maintenancePartIds.has(`${machine.level.getBlock(partPos).id}`)
+            )
+            if (!corner) return ModifierFunction.IDENTITY
+            let layers = machine.pos.distManhattan(corner) - 13
+            /** {@link https://www.desmos.com/calculator/j2pjzssbqr} */
+            let efficiency = (layers / 14) ** 2 + 0.5
+            /** {@link https://www.desmos.com/calculator/d9cighn00m} */
+            let speedup = (layers + 8) / 15
+            console.log("FISSION", layers, efficiency, speedup)
+            return ModifierFunction.builder()
+                .durationMultiplier(1 / speedup)
+                .eutMultiplier(speedup * efficiency)
+                .build()
+                .andThen(layers >= 22
+                    ? GTRecipeModifiers.PARALLEL_HATCH.getModifier()
+                    : ModifierFunction.IDENTITY
+                )
+        }])
+        .appearanceBlock(() => Block.getBlock("gtceu:robust_machine_casing"))
+        .generator(true)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("RRRRRRR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RRRRRRM")
+            .aisleRepeatable(5, 20, "RCCCCCR", "CFWFWFC", "CWFWFWC", "CFWFWFC", "CWFWFWC", "CFWFWFC", "RCCCCCR")
+            .aisle("@RRRRRR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RRRRRRR")
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+            // Maintenance hatch has to be placed in the corner opposite of the controller to calculate the multiblock size dynamically
+            .where("M", Predicates.abilities(PartAbility.MAINTENANCE))
+            .where("R", Predicates.blocks("gtceu:robust_machine_casing")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+            )
+            .where("C", Predicates.blocks("gtceu:robust_machine_casing", "gtceu:fusion_glass"))
+            // Fuel rod
+            .where("F", Predicates.blocks("gtceu:tungstensteel_pipe_casing"))
+            // Cooling provider
+            .where("W", Predicates.blocks("gtceu:ev_hermetic_casing"))
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_robust_tungstensteel",
+            "gtceu:block/machines/reconstructor", false)
 
     let getMicroverseRecipeModifiers = tier => [
         GTRecipeModifiers.OC_NON_PERFECT,
