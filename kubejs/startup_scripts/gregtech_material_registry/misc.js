@@ -459,6 +459,27 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x997700)
 })
 
+// Netherite & Ardite Processing
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("ardite_sand")
+        .dust()
+        .color(0xAD2F05)
+        .iconSet(GTMaterialIconSet.SAND)
+    event.create("ardite_salt")
+        .dust()
+        .color(0xE6734C)
+    event.create("nether_conduit")
+        .dust()
+        .color(0x664D4D)
+    event.create("ardite_slurry")
+        .fluid()
+        .color(0xAD2F05)
+    event.create("impure_molten_ardite")
+        .fluid()
+        .color(0xAD6639)
+        .fluidTemp(2500)
+})
+
 GTCEuStartupEvents.materialModification(event => {
     GTMaterials.RhodiumPlatedPalladium.setComponents("3x palladium", "1x rhodium", "2x lumium")
     GTMaterials.RhodiumPlatedPalladium.setFormula("Pd3Rh(SnFe)4(CuAg4)2", true)
