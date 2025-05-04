@@ -165,6 +165,47 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         event.create("simulation_supercomputer", "multiblock")
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes("simulation_supercomputer")
+            .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+            .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
+            .pattern(definition => FactoryBlockPattern.start()
+                .aisle("CCC", "CEC", "CCC")
+                .aisle("CCC", "ECE", "CCC")
+                .aisle("C@C", "CEC", "CCC")
+                .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+                .where("E", Predicates.blocks("gtceu:ender_pearl_block"))
+                .where("C", Predicates.blocks("kubejs:black_steel_casing").setMinGlobalLimited(18)
+                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .where(" ", Predicates.air())
+                .build())
+            .workableCasingRenderer("kubejs:block/black_steel_casing",
+                "gtceu:block/multiblock/research_station", false)
+
+        // Loot Superfabricator
+        event.create("loot_superfabricator", "multiblock")
+            .rotationState(RotationState.NON_Y_AXIS)
+            .recipeTypes("loot_superfabricator")
+            .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+            .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
+            .pattern(definition => FactoryBlockPattern.start()
+                .aisle("CCC", "CEC", "CCC")
+                .aisle("CCC", "ECE", "CCC")
+                .aisle("C@C", "CEC", "CCC")
+                .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+                .where("E", Predicates.blocks("gtceu:energetic_alloy_block"))
+                .where("C", Predicates.blocks("kubejs:black_steel_casing").setMinGlobalLimited(18)
+                    .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                .where(" ", Predicates.air())
+                .build())
+            .workableCasingRenderer("kubejs:block/black_steel_casing",
+                "gtceu:block/multiblock/research_station", false)
+
+
+        // Simulation Quantumcomputer
+        event.create("simulation_quantumcomputer", "multiblock")
+            .rotationState(RotationState.NON_Y_AXIS)
+            .recipeTypes("simulation_supercomputer")
             .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
             .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
             .pattern(definition => FactoryBlockPattern.start()
@@ -188,8 +229,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
                 "gtceu:block/multiblock/fusion_reactor", false)
 
-        // Loot Superfabricator
-        event.create("loot_superfabricator", "multiblock")
+        // Loot Quantumfabricator
+        event.create("loot_quantumfabricator", "multiblock")
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeTypes("loot_superfabricator")
             .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
