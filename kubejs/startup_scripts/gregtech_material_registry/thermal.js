@@ -11,7 +11,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot().fluid()
         .color(0xad2f05).iconSet("dull")
         .flags(GTMaterialFlags.GENERATE_PLATE)
-        .components("3x red_steel", "blaze")
 
     event.create("manyullyn")
         .ingot().fluid()
@@ -25,7 +24,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xff7f0f).iconSet("shiny")
         .blastTemp(4000, "mid", 7680, 1400)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
-        .components("4x annealed_copper", "2x ardite", "2x red_alloy", "mana")
+        .components("4x annealed_copper", "2x red_steel", "2x red_alloy", "mana")
         .cableProperties(32768, 1, 0, true)
 
     event.create("lumium")
