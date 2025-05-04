@@ -477,7 +477,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("impure_molten_ardite")
         .fluid()
         .color(0xAD6639)
-        .fluidTemp(2500)
+        .temperature(2500)
 })
 
 GTCEuStartupEvents.materialModification(event => {
