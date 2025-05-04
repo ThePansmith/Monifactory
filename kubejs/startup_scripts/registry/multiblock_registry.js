@@ -541,7 +541,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("fission_reactor", "multiblock")
         .rotationState(RotationState.ALL)
         .recipeTypes("fission_reactor")
-        .recipeModifiers([/** @param {Internal.WorkableMultiblockMachine} machine */ machine => {
+        .recipeModifiers([/** @param {Internal.WorkableMultiblockMachine} machine */ (machine, recipe) => {
             if (!("getMultiblockState" in machine)) return ModifierFunction.IDENTITY
             // maintenancePartIds cannot be moved out of the function and cached due to a rhino limitation
             let maintenancePartIds = new Set(PartAbility.MAINTENANCE.allBlocks.toArray().map(b => `${b.id}`))
@@ -559,8 +559,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .durationMultiplier(1 / speedup)
                 .eutMultiplier(speedup * efficiency)
                 .build()
-                .andThen(layers >= 22
-                    ? GTRecipeModifiers.PARALLEL_HATCH.getModifier()
+                .andThen(layers >= 20
+                    ? GTRecipeModifiers.PARALLEL_HATCH.getModifier(machine, recipe)
                     : ModifierFunction.IDENTITY
                 )
         }])
