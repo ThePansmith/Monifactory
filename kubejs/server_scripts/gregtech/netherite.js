@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
     // Ardite Line
     event.recipes.gtceu.centrifuge("ardite_slurry")
         .inputFluids("gtceu:ardite_slurry 3000")
-        .itemOutputs("2x gtceu:ardite_salt")
+        .itemOutputs("2x gtceu:ardite_salt_dust")
         .chancedOutput("gtceu:rarest_metal_mixture_dust", 2500, 0)
         .duration(300)
         .EUt(GTValues.VA[GTValues.MV])
