@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
     // Activated Nethline Line
     event.recipes.gtceu.chemical_bath("reactive_netherite_scrap")
         .itemInputs("kubejs:pure_netherite_scrap")
-        .inputFluids("gtceu:molten_californium")
+        .inputFluids("gtceu:californium")
         .itemOutputs("kubejs:reactive_netherite_scrap")
         .duration(300)
         .EUt(GTValues.VA[GTValues.MV])
