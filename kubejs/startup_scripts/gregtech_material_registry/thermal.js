@@ -11,6 +11,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot().fluid()
         .color(0xad2f05).iconSet("dull")
         .flags(GTMaterialFlags.GENERATE_PLATE)
+        .blastTemp(2400, "mid")
 
     event.create("manyullyn")
         .ingot().fluid()
