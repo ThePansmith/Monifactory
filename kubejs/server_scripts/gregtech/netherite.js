@@ -91,6 +91,12 @@ ServerEvents.recipes(event => {
         C: "kubejs:reactive_netherite_scrap"
     }, 200000000).powerRate(200000000);
 
+    event.recipes.gtceu.charger("activated_netherite_scrap")
+        .itemInputs("4x kubejs:quantum_flux", "4x kubejs:sculk_core", "kubejs:reactive_netherite_scrap")
+        .itemOutputs("kubejs:activated_netherite_scrap")
+        .EUt(500000 / 16)
+        .duration(100 * 4)
+
     event.recipes.gtceu.macerator("wither_bone_dust")
         .itemInputs("kubejs:wither_bone")
         .itemOutputs("gtceu:wither_bone_dust")
