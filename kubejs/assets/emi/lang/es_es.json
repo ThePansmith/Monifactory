@@ -1,0 +1,17 @@
+{
+    "tag.item.gtceu.circuits": "Circuitos",
+    "tag.item.gtceu.circuits.ulv": "Circuitos ULV",
+    "tag.item.gtceu.circuits.lv": "Circuitos LV",
+    "tag.item.gtceu.circuits.mv": "Circuitos MV",
+    "tag.item.gtceu.circuits.hv": "Circuitos HV",
+    "tag.item.gtceu.circuits.ev": "Circuitos EV",
+    "tag.item.gtceu.circuits.iv": "Circuitos IV",
+    "tag.item.gtceu.circuits.luv": "Circuitos LuV",
+    "tag.item.gtceu.circuits.zpm": "Circuitos ZPM",
+    "tag.item.moni_quest.backpack": "Mochilas",
+    "tag.item.moni.output_bus": "Buses de Salida de Objetos",
+    "tag.item.moni.input_bus": "Buses de Entrada de Objetos",
+    "tag.item.moni.input_hatch": "Válvulas de Entrada de Fluidos",
+    "tag.item.moni.output_hatch": "Válvulas de Salida de Fluidos",
+    "tag.item.moni.coins": "Monedas"
+}

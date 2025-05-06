@@ -3,7 +3,7 @@ features:
   sterileHatchEnabled: true
 
   # Whether the 64A energy converters are enabled.
-  converters64aEnabled: false
+  converters64aEnabled: true
 
   # Whether the Omni-breaker is enabled.
   omnibreakerEnabled: true
