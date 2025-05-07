@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_holmium_wire", 4],
         ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:holmium_foil", 1],
         ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_holmium_wire", 2],
-        ["inductor", "gtceu:tritanium_ring", "4x gtceu:fine_holmium_wire", 2]
+        ["inductor", "gtceu:iron_neodymium_terbium_neutronate_ring", "4x gtceu:fine_holmium_wire", 2]
     ]
 
     for (const [item, primary, secondary, foil_amount] of smds) {

@@ -308,6 +308,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0xF5F5F5)
         .components("1x ammonia", "1x nitric_acid")
+        .formula("(NH4)NO3")
 
     event.create("thorium_hydroxide")
         .dust()
@@ -321,15 +322,23 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("1x terbium", "3x chlorine")
         .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("magnetic_terbium")
+    event.create("iron_neodymium_terbium_neutronate")
+        .ingot().fluid()
+        .color(0x7d652d).secondaryColor(0x88f2d3)
+        .iconSet("radioactive")
+        .blastTemp(10800, "higher", 524288, 600)
+        .components("4x iron", "3x neodymium", "6x terbium", "2x neutronium", "8x oxygen")
+        .flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING)
+
+    event.create("magnetic_iron_neodymium_terbium_neutronate")
         .ingot()
-        .components("1x terbium")
-        .color(0x8C8F7A)
+        .components("4x iron", "3x neodymium", "6x terbium", "2x neutronium", "8x oxygen")
+        .color(0xb5982f)
         .iconSet(GTMaterialIconSet.MAGNETIC)
-        .ingotSmeltInto(GTMaterials.get("terbium"))
-        .arcSmeltInto(GTMaterials.get("terbium"))
-        .macerateInto(GTMaterials.get("terbium"))
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
+        .ingotSmeltInto(GTMaterials.get("gtceu:iron_neodymium_terbium_neutronate"))
+        .arcSmeltInto(GTMaterials.get("iron_neodymium_terbium_neutronate"))
+        .macerateInto(GTMaterials.get("iron_neodymium_terbium_neutronate"))
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
 })
 
 // Germanium

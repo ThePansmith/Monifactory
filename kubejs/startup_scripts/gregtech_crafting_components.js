@@ -137,9 +137,9 @@ GTCEuStartupEvents.craftingComponents(event => {
     // Magnetic Rods
     let magneticRodMap = {};
     magneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.SamariumMagnetic)
-    magneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get("magnetic_terbium"))
-    magneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get("magnetic_terbium"))
-    magneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get("magnetic_terbium"))
+    magneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get("magnetic_iron_neodymium_terbium_neutronate"))
+    magneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get("magnetic_iron_neodymium_terbium_neutronate"))
+    magneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get("magnetic_iron_neodymium_terbium_neutronate"))
     event.modifyUnificationEntry(CraftingComponent.STICK_MAGNETIC, magneticRodMap)
 
     // Distillation Rods
