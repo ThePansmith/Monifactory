@@ -1125,10 +1125,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"11154356854B64DA"
-				"39FD6F1076559156"
-			]
+			dependencies: ["72565F33DD274CB5"]
 			description: ["{moni.quest.2D0DF78F71760F00.description1}"]
 			id: "2D0DF78F71760F00"
 			rewards: [{
