@@ -2880,25 +2880,19 @@
 			tasks: [
 				{
 					id: "374FBDF56D3B9E22"
-					item: "nuclearcraft:fission_reactor_controller"
+					item: "gtceu:fission_reactor"
 					type: "item"
 				}
 				{
-					count: 215L
+					count: 213L
 					id: "09B080275946957D"
-					item: "nuclearcraft:fission_reactor_casing"
+					item: "kubejs:lead_shield_casing"
 					type: "item"
 				}
 				{
-					count: 2L
-					id: "1FE61627CF275B87"
-					item: "nuclearcraft:fission_reactor_port"
-					type: "item"
-				}
-				{
-					count: 62L
+					count: 65L
 					id: "39B4F53A8DDFD446"
-					item: "nuclearcraft:cryotheum_heat_sink"
+					item: "kubejs:fuel_cell"
 					type: "item"
 				}
 				{
