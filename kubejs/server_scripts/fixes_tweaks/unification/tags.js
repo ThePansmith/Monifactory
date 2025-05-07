@@ -88,6 +88,11 @@ ServerEvents.tags("item", event => {
     event.remove("forge:storage_blocks/beryllium", "nuclearcraft:beryllium_block");
     event.remove("forge:storage_blocks/graphite", "nuclearcraft:graphite_block");
 
+    // AE2 P2P Attunements
+    event.add("mae2:p2p_attunements/pattern_p2p_tunnel", "expatternprovider:pattern_modifier");
+    event.add("mae2:p2p_attunements/pattern_p2p_tunnel", "expatternprovider:ex_pattern_provider");
+    event.add("mae2:p2p_attunements/pattern_p2p_tunnel", "expatternprovider:ex_pattern_provider_part");
+
     unifyChisel(event);
 })
 

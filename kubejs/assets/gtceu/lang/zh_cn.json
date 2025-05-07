@@ -432,5 +432,12 @@
     "material.gtceu.extraterrestrial_metal_mixture": "外星金属混合物",
     "material.gtceu.uranic_solution": "含铀溶液",
     "material.gtceu.netherite_scrap": "远古残骸",
-    "gtceu.microverse": "微型宇宙计划"
+    "gtceu.microverse": "微型宇宙计划",
+    "__COMPAT__.header": "=================",
+    "material.gtceu.androstenedione": "Androstenedione",
+    "__COMPAT__.flufff": "> Compatibility <",
+    "material.gtceu.cholestrol": "Cholestrol",
+    "material.gtceu.pregnenolone": "Pregnenolone",
+    "__COMPAT__.footer": "=================",
+    "material.gtceu.testosterone": "Testosterone"
 }
