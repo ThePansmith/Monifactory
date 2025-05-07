@@ -564,7 +564,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                     : ModifierFunction.IDENTITY
                 )
         }])
-        .appearanceBlock(() => Block.getBlock("gtceu:robust_machine_casing"))
+        .appearanceBlock(() => Block.getBlock("kubejs:lead_shield_casing"))
         .generator(true)
         .regressWhenWaiting(false)
         .pattern(definition => FactoryBlockPattern.start()
@@ -574,18 +574,16 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             // Maintenance hatch has to be placed in the corner opposite of the controller to calculate the multiblock size dynamically
             .where("M", Predicates.abilities(PartAbility.MAINTENANCE))
-            .where("R", Predicates.blocks("gtceu:robust_machine_casing")
+            .where("R", Predicates.blocks("kubejs:lead_shield_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
             )
-            .where("C", Predicates.blocks("gtceu:robust_machine_casing", "gtceu:fusion_glass"))
-            // Fuel rod
-            .where("F", Predicates.blocks("gtceu:tungstensteel_pipe_casing"))
-            // Cooling provider
-            .where("W", Predicates.blocks("gtceu:ev_hermetic_casing"))
+            .where("C", Predicates.blocks("kubejs:lead_shield_casing", "gtceu:fusion_glass"))
+            .where("F", Predicates.blocks("kubejs:fuel_cell"))
+            .where("W", Predicates.blocks("kubejs:moderation_cell"))
             .build())
-        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_robust_tungstensteel",
-            "gtceu:block/machines/reconstructor", false)
+        .workableCasingRenderer("kubejs:block/lead_shield/casing",
+            "gtceu:block/machines/fission_reactor", false)
 
     let getMicroverseRecipeModifiers = tier => [
         GTRecipeModifiers.OC_NON_PERFECT,

@@ -221,28 +221,26 @@ ItemEvents.tooltip(tooltip => {
         })
     })
 
-    // NuclearCraft
-    tooltip.add("nuclearcraft:rhodochrosite_dust", "§eMnCO₃");
-    tooltip.add("nuclearcraft:tough_alloy_ingot", "§eLiFeB");
-    tooltip.add("nuclearcraft:ferroboron_ingot", "§eFeB");
-    tooltip.add("nuclearcraft:hard_carbon_ingot", "§eFe₃C");
-    tooltip.add("nuclearcraft:uranium_233", "§eU²³³");
-    tooltip.add("nuclearcraft:plutonium_238", "§ePu²³⁸");
-    tooltip.add("nuclearcraft:plutonium_242", "§ePu²⁴²");
-    tooltip.add("nuclearcraft:neptunium_236", "§eNp²³⁶");
-    tooltip.add("nuclearcraft:neptunium_237", "§eNp²³⁷");
-    tooltip.add("nuclearcraft:americium_241", "§eAm²⁴¹");
-    tooltip.add("nuclearcraft:americium_242", "§eAm²⁴²");
-    tooltip.add("nuclearcraft:americium_243", "§eAm²⁴³");
-    tooltip.add("nuclearcraft:curium_243", "§eCm²⁴³");
-    tooltip.add("nuclearcraft:curium_245", "§eCm²⁴⁵");
-    tooltip.add("nuclearcraft:curium_246", "§eCm²⁴⁶");
-    tooltip.add("nuclearcraft:curium_247", "§eCm²⁴⁷");
-    tooltip.add("nuclearcraft:berkelium_247", "§eBk²⁴⁷");
-    tooltip.add("nuclearcraft:berkelium_248", "§eBk²⁴⁸");
-    tooltip.add("nuclearcraft:californium_249", "§eCf²⁴⁹");
-    tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
-    tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
+    // Fission
+    tooltip.add("kubejs:rhodochrosite_dust", "§eMnCO₃");
+    tooltip.add("kubejs:hard_carbon_ingot", "§eFe₃C");
+    tooltip.add("kubejs:uranium_233", "§eU²³³");
+    tooltip.add("kubejs:plutonium_238", "§ePu²³⁸");
+    tooltip.add("kubejs:plutonium_242", "§ePu²⁴²");
+    tooltip.add("kubejs:neptunium_236", "§eNp²³⁶");
+    tooltip.add("kubejs:neptunium_237", "§eNp²³⁷");
+    tooltip.add("kubejs:americium_241", "§eAm²⁴¹");
+    tooltip.add("kubejs:americium_242", "§eAm²⁴²");
+    tooltip.add("kubejs:americium_243", "§eAm²⁴³");
+    tooltip.add("kubejs:curium_243", "§eCm²⁴³");
+    tooltip.add("kubejs:curium_245", "§eCm²⁴⁵");
+    tooltip.add("kubejs:curium_246", "§eCm²⁴⁶");
+    tooltip.add("kubejs:curium_247", "§eCm²⁴⁷");
+    tooltip.add("kubejs:berkelium_247", "§eBk²⁴⁷");
+    tooltip.add("kubejs:berkelium_248", "§eBk²⁴⁸");
+    tooltip.add("kubejs:californium_249", "§eCf²⁴⁹");
+    tooltip.add("kubejs:californium_251", "§eCf²⁵¹");
+    tooltip.add("kubejs:californium_252", "§eCf²⁵²");
 
     tooltip.addAdvanced(["/^kubejs:.+infinity_dust_block$/", "kubejs:infinity_dust_block"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.infinity_dust_block.tooltip"))
