@@ -566,6 +566,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         }])
         .appearanceBlock(() => Block.getBlock("gtceu:robust_machine_casing"))
         .generator(true)
+        .regressWhenWaiting(false)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("RRRRRRR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RRRRRRM")
             .aisleRepeatable(5, 20, "RCCCCCR", "CFWFWFC", "CWFWFWC", "CFWFWFC", "CWFWFWC", "CFWFWFC", "RCCCCCR")
