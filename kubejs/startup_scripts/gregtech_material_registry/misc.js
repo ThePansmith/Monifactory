@@ -463,7 +463,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("ardite_sand")
         .dust()
-        .color(0xAD2F05)
+        .color(0x9C3C1C)
         .iconSet(GTMaterialIconSet.SAND)
     event.create("wither_bone")
         .dust()
