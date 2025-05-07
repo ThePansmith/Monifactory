@@ -2868,7 +2868,7 @@
 				"[\"\",{\"translate\":\"moni.quest.745628397790ED7A.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.745628397790ED7A.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"40F7695BE1E65C41\"}},{\"translate\":\"moni.quest.745628397790ED7A.rich_description3\"}]"
 			]
 			disable_toast: true
-			icon: "nuclearcraft:fission_reactor_controller"
+			icon: "gtceu:fission_reactor"
 			id: "745628397790ED7A"
 			rewards: [{
 				id: "0F6CC38788229FC4"
@@ -2896,9 +2896,9 @@
 					type: "item"
 				}
 				{
-					count: 63L
+					count: 60L
 					id: "3759DFA116F90838"
-					item: "nuclearcraft:fission_reactor_solid_fuel_cell"
+					item: "kubejs:moderation_cell"
 					type: "item"
 				}
 			]

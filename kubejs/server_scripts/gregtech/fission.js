@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
     ], {
         F: "kubejs:lead_shield_casing",
         E: "#gtceu:circuits/ev",
-        D: "double_yttrium_barium_cuprate_plate"
+        D: "gtceu:double_yttrium_barium_cuprate_plate"
     })
 
     // Decomp recipes
