@@ -124,15 +124,25 @@ ServerEvents.recipes(event => {
     })
 
     // UHV hulls have missing crafting table recipe
-    event.shaped("gtceu:uhv_machine_hull", [
+    /*event.shaped("gtceu:uhv_machine_hull", [
         "PMP",
         "WCW"
     ], {
         P: "gtceu:polybenzimidazole_plate",
-        M: "gtceu:neutronium_plate",
+        M: "gtceu:manyullyn_plate",
         W: "gtceu:europium_single_cable",
         C: "gtceu:uhv_machine_casing"
-    }).id("gtceu:shaped/hull_uhv")
+    }).id("gtceu:shaped/hull_uhv")*/
+
+    // UHV components
+    const plateFix = [
+        /gtceu:.*casing_uhv/,
+        "gtceu:shaped/hermetic_casing_max",
+        /gtceu:shaped\/quantum_.*_uhv/
+    ]
+    plateFix.forEach((value) => {
+        event.replaceInput({ id: `${value}`}, "gtceu:neutronium_plate", "gtceu:manyullyn_plate" )
+    })
 
     const hullMaterials = [
         { tier: "uev", material: "omnium", wire: "omnium_single_cable", plastic: "polyethyl_cyanoacrylate" },
@@ -157,16 +167,6 @@ ServerEvents.recipes(event => {
             .duration(50)
             .EUt(GTValues.VHA[GTValues.LV])
 
-        event.shaped(`gtceu:${value.tier}_machine_hull`, [
-            "PMP",
-            "WCW"
-        ], {
-            P: `gtceu:${value.plastic}_plate`,
-            M: `gtceu:${value.material}_plate`,
-            W: `gtceu:${value.wire}`,
-            C: `gtceu:${value.tier}_machine_casing`
-        }).id(`shaped/hull_${value.tier}`)
-
         event.recipes.gtceu.assembler(`hull_${value.tier}`)
             .itemInputs(`gtceu:${value.tier}_machine_casing`, `2x gtceu:${value.wire}`, `2x gtceu:${value.plastic}_plate`)
             .itemOutputs(`gtceu:${value.tier}_machine_hull`)
@@ -174,8 +174,19 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.LV])
     })
 
+    event.shaped(`gtceu:max_machine_hull`, [
+        "PMP",
+        "WCW"
+    ], {
+        P: `gtceu:monium_plate`,
+        M: `gtceu:monium_plate`,
+        W: `gtceu:monium_single_wire`,
+        C: `gtceu:max_machine_casing`
+    }).id(`shaped/hull_max`)
+
+
     const rotorHolderMaterials = [
-        { tier: "uhv", large_gear: "actinium", small_gear: "neutronium" },
+        { tier: "uhv", large_gear: "actinium", small_gear: "manyullyn" },
         { tier: "uev", large_gear: "sculk_bioalloy", small_gear: "omnium" },
         { tier: "uiv", large_gear: "eltz", small_gear: "infinity" }
     ]
@@ -314,7 +325,7 @@ ServerEvents.recipes(event => {
 
     // Sensors
     event.recipes.gtceu.assembly_line("uhv_sensor")
-        .itemInputs("gtceu:neutronium_frame", "gtceu:uhv_electric_motor", "4x gtceu:actinium_plate", "2x gtceu:gravi_star", "#gtceu:circuits/uhv", "64x gtceu:crystal_matrix_foil", "32x gtceu:crystal_matrix_foil", "4x gtceu:europium_single_cable")
+        .itemInputs("gtceu:manyullyn_frame", "gtceu:uhv_electric_motor", "4x gtceu:actinium_plate", "2x gtceu:gravi_star", "#gtceu:circuits/uhv", "64x gtceu:crystal_matrix_foil", "32x gtceu:crystal_matrix_foil", "4x gtceu:europium_single_cable")
         .inputFluids("gtceu:soldering_alloy 5760", "gtceu:crystal_matrix 1152", "gtceu:naquadria 576")
         .itemOutputs("gtceu:uhv_sensor")
         .duration(600)
@@ -354,7 +365,7 @@ ServerEvents.recipes(event => {
 
     // Emitters
     event.recipes.gtceu.assembly_line("uhv_emitter")
-        .itemInputs("gtceu:neutronium_frame", "gtceu:uhv_electric_motor", "4x gtceu:long_actinium_rod", "2x gtceu:gravi_star", "#gtceu:circuits/uhv", "64x gtceu:crystal_matrix_foil", "32x gtceu:crystal_matrix_foil", "4x gtceu:europium_single_cable")
+        .itemInputs("gtceu:manyullyn_frame", "gtceu:uhv_electric_motor", "4x gtceu:long_actinium_rod", "2x gtceu:gravi_star", "#gtceu:circuits/uhv", "64x gtceu:crystal_matrix_foil", "32x gtceu:crystal_matrix_foil", "4x gtceu:europium_single_cable")
         .inputFluids("gtceu:soldering_alloy 5760", "gtceu:crystal_matrix 1152", "gtceu:naquadria 576")
         .itemOutputs("gtceu:uhv_emitter")
         .duration(600)
@@ -396,7 +407,7 @@ ServerEvents.recipes(event => {
 
     // Field Generators
     event.recipes.gtceu.assembly_line("uhv_field_generator")
-        .itemInputs("gtceu:neutronium_frame", "6x gtceu:actinium_plate", "2x gtceu:gravi_star", "2x gtceu:uhv_emitter", "2x #gtceu:circuits/uhv", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "4x gtceu:europium_single_cable")
+        .itemInputs("gtceu:manyullyn_frame", "6x gtceu:actinium_plate", "2x gtceu:gravi_star", "2x gtceu:uhv_emitter", "2x #gtceu:circuits/uhv", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "4x gtceu:europium_single_cable")
         .inputFluids("gtceu:soldering_alloy 5760", "gtceu:crystal_matrix 1152", "gtceu:naquadria 576")
         .itemOutputs("gtceu:uhv_field_generator")
         .duration(600)

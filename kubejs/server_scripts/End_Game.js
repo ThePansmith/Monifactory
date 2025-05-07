@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
     // Chemical Reactor
 
     event.recipes.gtceu.chemical_reactor("cryolobus_dust")
-        .itemInputs("gtceu:manyullyn_dust", "minecraft:sculk_catalyst")
+        .itemInputs("gtceu:red_steel_dust", "minecraft:sculk_catalyst")
         .itemOutputs("gtceu:cryolobus_dust")
         .duration(500)
         .EUt(2000)

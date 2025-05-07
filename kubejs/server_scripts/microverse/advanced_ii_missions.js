@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
                 "16x kubejs:quantum_flux",
                 "16x kubejs:stabilized_curium",
                 "kubejs:microversal_alchemy_kit",
-                "8x gtceu:manyullyn_ingot",
+                "8x gtceu:mythril_ingot",
                 "4x gtceu:void_empowered_block",
             )
             .itemOutputs(

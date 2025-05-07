@@ -1,3 +1,4 @@
+// priority: -1000
 /**
  * Unlike how screret showcases the functionality of this event in his discord messge:
  * https://discord.com/channels/914926812948234260/1229854271613436066/1279802878822711407
@@ -81,21 +82,31 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     // Plates
     let plateMap = {};
+    plateMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
     plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
     plateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("infinity"))
     plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("monium"))
     event.modifyUnificationEntry(CraftingComponent.PLATE, plateMap)
 
+    // Hull material
+    let hullMap = {};
+    hullMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
+    hullMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
+    hullMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("infinity"))
+    hullMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("monium"))
+    event.modifyUnificationEntry(CraftingComponent.HULL, hullMap)
+
     // Hull plates
     let hullPlateMap = {};
-    plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
-    plateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
-    plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
+    hullPlateMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polybenzimidazole"))
+    hullPlateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
+    hullPlateMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
+    hullPlateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
     event.modifyUnificationEntry(CraftingComponent.HULL_PLATE, hullPlateMap)
 
     // Rotors
     let rotorMap = {};
-    rotorMap[GTValues.UHV] = UnificationEntry(TagPrefix.rotor, GTMaterials.Neutronium)
+    rotorMap[GTValues.UHV] = UnificationEntry(TagPrefix.rotor, GTMaterials.get("manyullyn"))
     rotorMap[GTValues.UEV] = UnificationEntry(TagPrefix.rotor, GTMaterials.get("activated_netherite"))
     rotorMap[GTValues.UIV] = UnificationEntry(TagPrefix.rotor, GTMaterials.Holmium)
     event.modifyUnificationEntry(CraftingComponent.ROTOR, rotorMap)
@@ -172,7 +183,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     // Frame
     let frameMap = {};
-    frameMap[GTValues.UHV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.Neutronium)
+    frameMap[GTValues.UHV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("manyullyn"))
     frameMap[GTValues.UEV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("omnium"))
     frameMap[GTValues.UIV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("infinity"))
     frameMap[GTValues.MAX] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("monium"))
