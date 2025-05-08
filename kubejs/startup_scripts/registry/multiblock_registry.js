@@ -554,7 +554,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             let efficiency = (layers / 14) ** 2 + 0.5
             /** {@link https://www.desmos.com/calculator/d9cighn00m} */
             let speedup = (layers + 8) / 15
-            console.log("FISSION", layers, efficiency, speedup)
             return ModifierFunction.builder()
                 .durationMultiplier(1 / speedup)
                 .eutMultiplier(speedup * efficiency)
