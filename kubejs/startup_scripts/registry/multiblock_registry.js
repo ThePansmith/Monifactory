@@ -548,7 +548,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             let corner = machine.partPositions.find(partPos =>
                 maintenancePartIds.has(`${machine.level.getBlock(partPos).id}`)
             )
-            if (!corner) return ModifierFunction.IDENTITY
+            if (!corner) return ModifierFunction.NULL
             let layers = machine.pos.distManhattan(corner) - 13
             /** {@link https://www.desmos.com/calculator/j2pjzssbqr} */
             let efficiency = (layers / 14) ** 2 + 0.5
