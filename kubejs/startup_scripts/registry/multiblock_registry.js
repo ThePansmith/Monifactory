@@ -550,6 +550,22 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             )
             if (!corner) return ModifierFunction.NULL
             let layers = machine.pos.distManhattan(corner) - 13
+            console.log("BLOCKS AHEAD")
+            let controllerBackDirection = machine.frontFacing.opposite
+            for (let i = 1; i <= layers; i++) {
+                let wireframePos = machine.pos.offset(
+                    controllerBackDirection.x * i,
+                    controllerBackDirection.y * i,
+                    controllerBackDirection.z * i,
+                )
+                console.log(machine.level.getBlock(wireframePos).id)
+                if (machine.level.getBlock(wireframePos).id === "gtceu:fission_reactor") {
+                    // Because the check is inefficient and will run every tick if failed, we break the controller
+                    // This also prompts the player to replace the controller to a new position (a clear hole in the structure corner)
+                    machine.level.destroyBlock(machine.pos, true)
+                    return ModifierFunction.NULL
+                }
+            }
             /** {@link https://www.desmos.com/calculator/j2pjzssbqr} */
             let efficiency = (layers / 14) ** 2 + 0.5
             /** {@link https://www.desmos.com/calculator/d9cighn00m} */
