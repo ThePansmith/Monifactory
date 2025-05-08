@@ -554,7 +554,7 @@ StartupEvents.registry("item", event => {
     }
 
     const fissionFuels = [
-        ["tbu_fuel", "#FFD700", "#8B8000"],
+        ["tbu", "#FFD700", "#8B8000"],
         ["leu_233", "#FF4500", "#8B0000"],
         ["leu_235", "#32CD32", "#006400"],
         ["len_236", "#1E90FF", "#00008B"],
