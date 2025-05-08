@@ -336,7 +336,7 @@
   "item.kubejs.dense_hydrogen": "Dense Hydrogen",
   "item.kubejs.ultra_dense_hydrogen": "Ultra Dense Hydrogen",
 
-  "item.kubejs.tbu_fuel": "TBU",
+  "item.kubejs.tbu": "TBU",
   "item.kubejs.leu_233": "LEU-233",
   "item.kubejs.leu_235": "Uranium LEU-235",
   "item.kubejs.len_236": "Neptunium LEN-236",
@@ -349,7 +349,7 @@
   "item.kubejs.leb_248": "Berkelium LEB-248",
   "item.kubejs.lecf_249": "Californium LECF-249",
   "item.kubejs.lecf_251": "Californium LECF-251",
-  "item.kubejs.depleted_tbu_fuel": "Depleted TBU",
+  "item.kubejs.depleted_tbu": "Depleted TBU",
   "item.kubejs.depleted_leu_233": "Depleted LEU-233",
   "item.kubejs.depleted_leu_235": "Depleted Uranium LEU-235",
   "item.kubejs.depleted_len_236": "Depleted Neptunium LEN-236",
