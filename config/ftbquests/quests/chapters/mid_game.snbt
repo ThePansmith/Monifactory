@@ -70,20 +70,20 @@
 			id: "24A33B6D4DE6DB8F"
 			linked_quest: "70D9B3C6539720DE"
 			size: 1.5d
-			x: 35.5d
+			x: 37.0d
 			y: 15.5d
 		}
 		{
 			id: "3A3FFBE01F09FB26"
 			linked_quest: "55074143B559493F"
-			x: 37.0d
+			x: 38.5d
 			y: 12.0d
 		}
 		{
 			id: "7891D352106D66FD"
 			linked_quest: "0A9BC922CF76F48A"
-			x: 38.5d
-			y: 12.0d
+			x: 40.0d
+			y: 10.5d
 		}
 		{
 			id: "1CDC489E37B0D834"
@@ -2289,7 +2289,7 @@
 			}]
 			title: "{moni.quest.5732018AA35D69B6.title}"
 			x: 33.75d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["634E056463ED1532"]
@@ -2434,8 +2434,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.798889BE3819EB4D.title}"
-			x: 35.5d
-			y: 13.5d
+			x: 37.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -2497,7 +2497,7 @@
 				}
 			]
 			title: "{moni.quest.38791476E970C57D.title}"
-			x: 33.75d
+			x: 35.5d
 			y: 13.5d
 		}
 		{
