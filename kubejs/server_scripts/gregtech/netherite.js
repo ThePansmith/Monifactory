@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.compressor("pure_netherite_scrap")
-        .itemInputs("4x kubejs:pure_netherite_shards")
+        .itemInputs("2x kubejs:pure_netherite_shards")
         .itemOutputs("kubejs:pure_netherite_scrap")
         .duration(600)
         .EUt(GTValues.VA[GTValues.LV])
@@ -59,8 +59,8 @@ ServerEvents.recipes(event => {
 
     // Ardite Line
     event.recipes.gtceu.centrifuge("ardite_slurry")
-        .inputFluids("gtceu:ardite_slurry 3000")
-        .itemOutputs("2x gtceu:ardite_salt_dust")
+        .inputFluids("gtceu:ardite_slurry 2000")
+        .itemOutputs("gtceu:ardite_salt_dust")
         .chancedOutput("gtceu:rarest_metal_mixture_dust", 2500, 0)
         .duration(800)
         .EUt(GTValues.VA[GTValues.EV])
