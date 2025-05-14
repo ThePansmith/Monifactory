@@ -89,5 +89,4 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:benzenediazonium_chloride 1000", "minecraft:water 2000")
         .duration(240)
         .EUt(GTValues.VA[GTValues.IV])
-
 })
