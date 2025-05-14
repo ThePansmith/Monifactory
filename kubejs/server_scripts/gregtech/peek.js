@@ -59,17 +59,17 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.laser_engraver("fluorotoluene_mixture_activation")
         .notConsumable("gtceu:black_glass_lens")
-        .itemInputs(Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:fluorotoluene_mixture"}}').weakNBT())
-        .itemOutputs(Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:activated_fluorotoluene_mixture"}}').weakNBT())
+        .itemInputs(Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:fluorotoluene_mixture"}}').weakNBT())
+        .itemOutputs(Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:activated_fluorotoluene_mixture"}}').weakNBT())
         .duration(600)
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.canner("fluorotoluene_mixture_separation")
-         .itemInputs(Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:activated_fluorotoluene_mixture"}}').weakNBT())
-         .itemOutputs("gtceu:fluid_cell")
-         .outputFluids("gtceu:activated_fluorotoluene_mixture 1000")
-         .duration(60)
-         .EUt(GTValues.VA[GTValues.EV])
+        .itemInputs(Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:activated_fluorotoluene_mixture"}}').weakNBT())
+        .itemOutputs("gtceu:fluid_cell")
+        .outputFluids("gtceu:activated_fluorotoluene_mixture 1000")
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.centrifuge("4-fluorotrichlorotoluene")
         .inputFluids("gtceu:activated_fluorotoluene_mixture 1000")
@@ -89,4 +89,5 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:benzenediazonium_chloride 1000", "minecraft:water 2000")
         .duration(240)
         .EUt(GTValues.VA[GTValues.IV])
+
 })
