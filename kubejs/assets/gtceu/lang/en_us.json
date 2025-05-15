@@ -488,6 +488,7 @@
     "material.gtceu.sodium_fluoride": "Sodium Fluoride",
     "material.gtceu.polyether_ether_ketone": "Polyether Ether Ketone",
     "material.gtceu.fluorotoluene_mixture": "Fluorotoluene Mixture",
-    "material.gtceu.activated_fluorotoluene_mixture": "Activated Fluorotoluene Mixture"
+    "material.gtceu.activated_fluorotoluene_mixture": "Activated Fluorotoluene Mixture",
+    "material.gtceu.fluorobenzene_gas_mixture": "Fluorobenzene Mixture"
 
 }
