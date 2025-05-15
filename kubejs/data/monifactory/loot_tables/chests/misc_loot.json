@@ -137,31 +137,6 @@
                     "weight": 2
                 }
             ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "gtceu:neutronium_nugget",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:random_chance",
-                            "chance": 0.001
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "kubejs:meowni_plush",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:random_chance",
-                            "chance": 0.000001
-                        }
-                    ]
-                }
-            ]
         }
     ]
 }
