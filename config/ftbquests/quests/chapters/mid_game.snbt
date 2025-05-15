@@ -2982,7 +2982,7 @@
 				{
 					count: 2L
 					id: "31BF9A11512D0FAE"
-					item: { Count: 2, id: "gtceu:ev_sensor" }
+					item: { Count: 2, id: "gtceu:ev_emitter" }
 					type: "item"
 				}
 			]
