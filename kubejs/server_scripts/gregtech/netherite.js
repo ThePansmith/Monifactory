@@ -12,21 +12,21 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_bath("ancient_debris_ardite_path")
         .itemInputs("gtceu:netherite_scrap_dust")
         .inputFluids("kubejs:molten_petrotheum")
-        .itemOutputs("kubejs:dusty_pure_netherite_scrap", "gtceu:ardite_sand_dust")
+        .itemOutputs("kubejs:dusty_netherite_cluster", "gtceu:ardite_sand_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
 
-    event.recipes.gtceu.autoclave("dusty_pure_netherite_scrap")
-        .itemInputs("kubejs:dusty_pure_netherite_scrap")
+    event.recipes.gtceu.autoclave("dusty_netherite_cluster")
+        .itemInputs("kubejs:dusty_netherite_cluster")
         .inputFluids("kubejs:molten_aerotheum")
-        .itemOutputs("kubejs:pure_netherite_scrap", "kubejs:ardite_sponge")
+        .itemOutputs("kubejs:netherite_cluster", "kubejs:ardite_sponge")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.electric_blast_furnace("ancient_debris_netherite_path")
         .itemInputs("gtceu:netherite_scrap_dust")
         .inputFluids("kubejs:molten_pyrotheum")
-        .itemOutputs("kubejs:pure_netherite_scrap")
+        .itemOutputs("kubejs:netherite_cluster")
         .outputFluids("gtceu:impure_molten_ardite")
         .duration(2000)
         .EUt(GTValues.VA[GTValues.EV])
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor("impure_molten_ardite")
         .inputFluids("gtceu:impure_molten_ardite", "kubejs:molten_cryotheum")
-        .itemOutputs("gtceu:ardite_sand_dust", "kubejs:pure_netherite_shards")
+        .itemOutputs("gtceu:ardite_sand_dust", "kubejs:netherite_shards")
         .duration(600)
         .EUt(GTValues.VA[GTValues.HV])
 
@@ -45,9 +45,9 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.HV])
 
-    event.recipes.gtceu.compressor("pure_netherite_scrap")
-        .itemInputs("2x kubejs:pure_netherite_shards")
-        .itemOutputs("kubejs:pure_netherite_scrap")
+    event.recipes.gtceu.compressor("netherite_cluster")
+        .itemInputs("2x kubejs:netherite_shards")
+        .itemOutputs("kubejs:netherite_cluster")
         .duration(600)
         .EUt(GTValues.VA[GTValues.LV])
 
@@ -73,10 +73,10 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // Activated Nethline Line
-    event.recipes.gtceu.chemical_bath("reactive_netherite_scrap")
-        .itemInputs("kubejs:pure_netherite_scrap")
+    event.recipes.gtceu.chemical_bath("reactive_netherite_cluster")
+        .itemInputs("kubejs:netherite_cluster")
         .inputFluids("gtceu:californium")
-        .itemOutputs("kubejs:reactive_netherite_scrap")
+        .itemOutputs("kubejs:reactive_netherite_cluster")
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
@@ -87,11 +87,11 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:activated_carbon_dust",
         B: "gtceu:void_empowered_plate",
-        C: "kubejs:reactive_netherite_scrap"
+        C: "kubejs:reactive_netherite_cluster"
     }, 200000000).powerRate(200000000);
 
     event.recipes.gtceu.charger("activated_netherite_scrap")
-        .itemInputs("4x gtceu:activated_carbon_dust", "4x gtceu:void_empowered_plate", "kubejs:reactive_netherite_scrap")
+        .itemInputs("4x gtceu:activated_carbon_dust", "4x gtceu:void_empowered_plate", "kubejs:reactive_netherite_cluster")
         .itemOutputs("kubejs:activated_netherite_scrap")
         .EUt(500000 / 16)
         .duration(100 * 4)

@@ -341,11 +341,11 @@ StartupEvents.registry("item", event => {
 
 
     // Nethline intermediate products
-    event.create("dusty_pure_netherite_scrap").texture("kubejs:item/netherite/dusty_pure_netherite_scrap")
+    event.create("dusty_netherite_cluster").texture("kubejs:item/netherite/dusty_netherite_cluster")
     event.create("ardite_sponge").texture("kubejs:item/ardite/ardite_sponge")
-    event.create("pure_netherite_scrap").texture("kubejs:item/netherite/pure_netherite_scrap")
-    event.create("pure_netherite_shards").texture("kubejs:item/netherite/pure_netherite_shards")
-    event.create("reactive_netherite_scrap").texture("kubejs:item/netherite/reactive_netherite_scrap")
+    event.create("netherite_cluster").texture("kubejs:item/netherite/netherite_cluster")
+    event.create("netherite_shards").texture("kubejs:item/netherite/netherite_shards")
+    event.create("reactive_netherite_cluster").texture("kubejs:item/netherite/reactive_netherite_cluster")
     event.create("activated_netherite_scrap").texture("kubejs:item/netherite/pure_netherite_scrap").glow(true);
     event.create("inert_nether_compound_ingot").texture("kubejs:item/netherite/inert_nether_compound_ingot")
 
