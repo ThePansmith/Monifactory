@@ -172,13 +172,13 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .aisle("CCC", "ECE", "CCC")
                 .aisle("C@C", "CEC", "CCC")
                 .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-                .where("E", Predicates.blocks("gtceu:ender_pearl_block"))
-                .where("C", Predicates.blocks("kubejs:black_steel_casing").setMinGlobalLimited(18)
+                .where("E", Predicates.blocks("gtceu:pulsating_alloy_block"))
+                .where("C", Predicates.blocks("kubejs:dark_steel_machine_hull").setMinGlobalLimited(18)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingRenderer("kubejs:block/black_steel_casing",
+            .workableCasingRenderer("kubejs:block/dark_steel_machine_hull",
                 "gtceu:block/multiblock/research_station", false)
 
         // Loot Superfabricator
@@ -193,12 +193,12 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .aisle("C@C", "CEC", "CCC")
                 .where("@", Predicates.controller(Predicates.blocks(definition.get())))
                 .where("E", Predicates.blocks("gtceu:energetic_alloy_block"))
-                .where("C", Predicates.blocks("kubejs:black_steel_casing").setMinGlobalLimited(18)
+                .where("C", Predicates.blocks("kubejs:dark_steel_machine_hull").setMinGlobalLimited(18)
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where(" ", Predicates.air())
                 .build())
-            .workableCasingRenderer("kubejs:block/black_steel_casing",
+            .workableCasingRenderer("kubejs:block/dark_steel_machine_hull",
                 "gtceu:block/multiblock/research_station", false)
 
 

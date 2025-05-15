@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             "CSC",
             "BCB"
         ], {
-            B: "gtceu:black_steel_plate",
+            B: "gtceu:dark_steel_plate",
             C: "#gtceu:circuits/ev",
             P: "gtceu:ev_emitter",
             S: "hostilenetworks:loot_fabricator",
