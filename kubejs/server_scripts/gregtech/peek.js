@@ -120,7 +120,22 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.MV])
 
+    event.recipes.gtceu.chemical_reactor("sulfolene")
+        .inputFluids("gtceu:sulfur_dioxide 1000", "gtceu:butadiene 1000")
+        .outputFluids("gtceu:sulfolene 1000")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.chemical_reactor("sulfolane")
+        .notConsumable("gtceu:nickel_dust")
+        .inputFluids("gtceu:sulfolene 1000", "gtceu:hydrogen 2000")
+        .outputFluids("gtceu:sulfolane 1000")
+        .circuit(7)
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.IV])
+
     event.recipes.gtceu.large_chemical_reactor("polyether_ether_ketone")
+        .chancedFluidInput("gtceu:sulfolane 500", 700, 0)
         .itemInputs("24x gtceu:4-4-difluorobenzophenone_dust", "14x gtceu:hydroquinone_dust", "5x gtceu:soda_ash_dust")
         .itemOutputs("4x gtceu:sodium_fluoride_dust")
         .outputFluids("gtceu:polyether_ether_ketone 1000", "gtceu:carbon_dioxide 1000", "minecraft:water 1000")

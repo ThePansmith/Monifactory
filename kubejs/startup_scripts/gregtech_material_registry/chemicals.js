@@ -308,8 +308,20 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xa6a6a6)
         .components("1x sodium", "1x fluorine")
 
-    event.create("polyether_ether_ketone")
+    event.create("sulfolene")
         .liquid()
+        .color(0xfaf7a7)
+        .components("4x carbon", "6x hydrogen", "1x sulfur", "2x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("sulfolane")
+        .liquid()
+        .color(0xfffdd1)
+        .components("4x carbon", "8x hydrogen", "1x sulfur", "2x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("polyether_ether_ketone")
+        .liquid().dust()
         .color(0x272a2e)
         .components("19x carbon", "12x hydrogen", "3x oxygen")
         .formula("(C6H4O2)(C13H8O)")
