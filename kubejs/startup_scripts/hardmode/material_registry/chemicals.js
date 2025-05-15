@@ -83,7 +83,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .components("16x carbon", "12x hydrogen", "2x oxygen")
             .formula("C6H4(CO)2C6H3(CH2CH3)");
 
-         event.create("hydrogen_peroxide")
+        event.create("hydrogen_peroxide")
             .liquid()
             .color(0xd2ffff)
             .components("2x hydrogen", "2x oxygen")
