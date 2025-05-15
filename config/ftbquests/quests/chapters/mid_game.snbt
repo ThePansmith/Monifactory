@@ -3114,13 +3114,13 @@
 				{
 					count: 18L
 					id: "7BC42B5A0DB23D7A"
-					item: { Count: 18, id: "kubejs:black_steel_casing" }
+					item: "kubejs:dark_steel_machine_hull"
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "35303EB3C0841529"
-					item: { Count: 4, id: "gtceu:ender_pearl_block" }
+					item: "gtceu:pulsating_alloy_block"
 					type: "item"
 				}
 			]
@@ -3145,7 +3145,7 @@
 				{
 					count: 18L
 					id: "372051DF4441A75D"
-					item: { Count: 18, id: "kubejs:black_steel_casing" }
+					item: "kubejs:dark_steel_machine_hull"
 					type: "item"
 				}
 				{
