@@ -8,13 +8,21 @@ ServerEvents.recipes(event => {
     event.remove([{ type: "minecraft:smelting", output: "minecraft:netherite_scrap", id: /gtceu:smelting\/.*netherite_scrap_ore.*/ }, { type: "minecraft:blasting", output: "minecraft:netherite_scrap", id: /gtceu:blasting\/.*netherite_scrap_ore.*/ }])
     event.remove({ id: "gtceu:alloy_smelt_netherite_scrap_to_nugget" })
 
+    // Omnic Acid
+    event.recipes.gtceu.large_chemical_reactor("omnic_acid")
+        .itemInputs("5x gtceu:carbon_dust")
+        .inputFluids(Fluid.of("water", 3000), "gtceu:omnium 576")
+        .outputFluids("gtceu:omnic_acid 1000", Fluid.of("gtceu:hydrogen", 2000))
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.ZPM]]
+  
     // Ancient Debris Processing
     event.recipes.gtceu.chemical_bath("ancient_debris_ardite_path")
         .itemInputs("gtceu:netherite_scrap_dust")
         .inputFluids("kubejs:molten_petrotheum")
         .itemOutputs("kubejs:dusty_netherite_cluster", "gtceu:ardite_sand_dust")
         .duration(200)
-        .EUt(GTValues.VA[GTValues.MV])
+        .EUt(GTValues.VA[GTValues.MV]]
 
     event.recipes.gtceu.autoclave("dusty_netherite_cluster")
         .itemInputs("kubejs:dusty_netherite_cluster")

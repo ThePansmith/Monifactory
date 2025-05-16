@@ -1,3 +1,4 @@
+// priority: 1
 /**
  * Endgame Material Registry.
  * Used for registering Gregtech Materials
@@ -60,10 +61,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("omnium"))
         .color(0xffffff).iconSet("omnium")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_SMALL_GEAR)
-        .cableProperties(GTValues.V[GTValues.UEV], 64, 8, false)
+        .cableProperties(GTValues.V[GTValues.UEV], 32, 8, false)
 
     event.create("omnic_acid")
-        .dust()
+        .fluid()
         .color(0xff00ff)
         .iconSet("shiny")
         .components("5x carbon", "4x hydrogen", "3x oxygen", "4x omnium")
