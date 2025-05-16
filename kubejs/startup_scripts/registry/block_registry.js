@@ -202,6 +202,37 @@ StartupEvents.registry("block", event => {
             .requiresTool(true);
     });
 
+    event.create("hardened_machine_casing")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
+        .textureAll("gtceu:block/casings/solid/machine_casing_hardened_naquadah");
+
+    event.create("naquadah_pipe_casing")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
+        .textureAll("gtceu:block/casings/pipe/pipe_casing_naquadah");
+
+    event.create("naquadah_gearbox")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
+        .textureAll("gtceu:block/casings/gearbox/machine_casing_gearbox_naquadah");
+
+    event.create("insane_engine_intake_casing", "gtceu:active")
+        .simple("gtceu:block/casings/pipe/machine_casing_insane_engine_intake")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
 
     // Misc
     event.create("starry_diamond_block")
