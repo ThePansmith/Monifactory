@@ -34,8 +34,8 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     wireCableComponentPrefixes.forEach(prefixComponentPair => {
         let wireMap = {};
-        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get("omnium"));
-        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[1], GTMaterials.Holmium);
+        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get("darconite"));
+        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[0], GTMaterials.Holmium);
         wireMap[GTValues.MAX] = UnificationEntry(prefixComponentPair[1], GTMaterials.get("monium"));
         event.modify(prefixComponentPair[2], wireMap)
     })
@@ -81,8 +81,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modify(CraftingComponent.GLASS, glassMap)
 
     // Plates
-    // Used in Autoclave and Benders, among other things.
-    // Consistently matches Hull material
+    // Used in Hulls, Autoclave and Benders, among other things.
     let plateMap = {};
     plateMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
     plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
@@ -91,12 +90,12 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.PLATE, plateMap)
 
     // Hull material
-    let hullMap = {};
+    /*let hullMap = {};
     hullMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
     hullMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
     hullMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("infinity"))
     hullMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("monium"))
-    event.modifyUnificationEntry(CraftingComponent.HULL, hullMap)
+    event.modifyUnificationEntry(CraftingComponent.HULL, hullMap)*/
 
     // Hull plates
     // The plastic plate in hulls
@@ -119,7 +118,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     // TODO: Sawblades (May require making tools for the material)
 
     // Resistive heating wires (typically, these match the EBF coil for that tier)
-    // Used in Alloy Smelters and Electric Furnaces
+    // Used in Alloy Smelters, Electric Furnaces and Extruders
     let heatingCoilComponentPrefixes = [
         [TagPrefix.wireGtDouble, CraftingComponent.COIL_HEATING],
         [TagPrefix.wireGtQuadruple, CraftingComponent.COIL_HEATING_DOUBLE],
