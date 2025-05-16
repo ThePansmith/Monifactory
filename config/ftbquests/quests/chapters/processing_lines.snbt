@@ -5,8 +5,13 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "gtceu:lv_chemical_reactor"
 	id: "055C0B43FE14258F"
-	order_index: 1
-	quest_links: [ ]
+	order_index: 2
+	quest_links: [{
+		id: "46B970F1A9694114"
+		linked_quest: "745628397790ED7A"
+		x: -5.5d
+		y: 3.75d
+	}]
 	quests: [
 		{
 			dependencies: [
@@ -742,6 +747,467 @@
 			title: "{moni.quest.33351123F08D92BE.title}"
 			x: 7.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["745628397790ED7A"]
+			description: [
+				"{moni.quest.32E44FFD602C98DF.description1}"
+				""
+				"{moni.quest.32E44FFD602C98DF.description2}"
+				""
+				"{moni.quest.32E44FFD602C98DF.description3}"
+			]
+			icon: "gtceu:uranium_235_ingot"
+			id: "32E44FFD602C98DF"
+			rewards: [{
+				id: "218573064D1473A9"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "07880B6CCD7BA77E"
+					item: "gtceu:uranium_ingot"
+					type: "item"
+				}
+				{
+					id: "7DC058B767A38AFA"
+					item: "gtceu:uranium_235_ingot"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.32E44FFD602C98DF.title}"
+			x: -4.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["745628397790ED7A"]
+			description: [
+				"{moni.quest.4BE6C4E7FDF7C71B.description1}"
+				""
+				"{moni.quest.4BE6C4E7FDF7C71B.description2}"
+				""
+				"{moni.quest.4BE6C4E7FDF7C71B.description3}"
+				""
+				"{moni.quest.4BE6C4E7FDF7C71B.description4}"
+			]
+			icon: "nuclearcraft:fuel_thorium_tbu"
+			id: "4BE6C4E7FDF7C71B"
+			rewards: [{
+				id: "06139FE8ADC033ED"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44C0DC3995B49AE9"
+				item: "nuclearcraft:fuel_thorium_tbu"
+				type: "item"
+			}]
+			title: "{moni.quest.4BE6C4E7FDF7C71B.title}"
+			x: -4.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["32E44FFD602C98DF"]
+			description: [
+				"{moni.quest.64B145DC53023119.description1}"
+				""
+				"{moni.quest.64B145DC53023119.description2}"
+				""
+				"{moni.quest.64B145DC53023119.description3}"
+			]
+			id: "64B145DC53023119"
+			rewards: [{
+				id: "7F9E99458D9F8514"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F33280EE9C07FE2"
+				item: "nuclearcraft:fuel_uranium_leu_235"
+				type: "item"
+			}]
+			title: "{moni.quest.64B145DC53023119.title}"
+			x: -2.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["4BE6C4E7FDF7C71B"]
+			description: [
+				"{moni.quest.490F04B181217B28.description1}"
+				""
+				"{moni.quest.490F04B181217B28.description2}"
+				""
+				"{moni.quest.490F04B181217B28.description3}"
+				""
+				"{moni.quest.490F04B181217B28.description4}"
+			]
+			id: "490F04B181217B28"
+			rewards: [{
+				id: "77276677737EC253"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F9E2B6EE20C17A1"
+				item: "nuclearcraft:fuel_neptunium_len_236"
+				type: "item"
+			}]
+			title: "{moni.quest.490F04B181217B28.title}"
+			x: -2.5d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"4BE6C4E7FDF7C71B"
+				"32E44FFD602C98DF"
+			]
+			description: [
+				"{moni.quest.3065F950BCA5C461.description1}"
+				""
+				"{moni.quest.3065F950BCA5C461.description2}"
+				""
+				"{moni.quest.3065F950BCA5C461.description3}"
+			]
+			id: "3065F950BCA5C461"
+			rewards: [{
+				id: "1CF2F7306BCC5FE5"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1AB75B01B5D4CBED"
+				item: "nuclearcraft:fuel_uranium_leu_233"
+				type: "item"
+			}]
+			title: "{moni.quest.3065F950BCA5C461.title}"
+			x: -2.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"3065F950BCA5C461"
+				"64B145DC53023119"
+				"490F04B181217B28"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.7D7B34CF5145F971.description1}"
+				""
+				"{moni.quest.7D7B34CF5145F971.description2}"
+				""
+				"{moni.quest.7D7B34CF5145F971.description3}"
+				""
+				"{moni.quest.7D7B34CF5145F971.description4}"
+				""
+				"{moni.quest.7D7B34CF5145F971.description5}"
+			]
+			icon: "nuclearcraft:fuel_plutonium_hep_241"
+			id: "7D7B34CF5145F971"
+			rewards: [{
+				id: "2EE2A64247934DFA"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.7D7B34CF5145F971.subtitle}"
+			tasks: [{
+				id: "5CF757A158365EEF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:plutonium_238"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:plutonium_239"
+							}
+							{
+								Count: 1b
+								id: "gtceu:plutonium_241_ingot"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:plutonium_242"
+							}
+						]
+					}
+				}
+				title: "{moni.task.5CF757A158365EEF}"
+				type: "item"
+			}]
+			title: "{moni.quest.7D7B34CF5145F971.title}"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3065F950BCA5C461"
+				"490F04B181217B28"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.6728FB92FD3A2084.description1}"
+				""
+				"{moni.quest.6728FB92FD3A2084.description2}"
+				""
+				"{moni.quest.6728FB92FD3A2084.description3}"
+				""
+				"{moni.quest.6728FB92FD3A2084.description4}"
+			]
+			icon: "nuclearcraft:fuel_americium_hea_242"
+			id: "6728FB92FD3A2084"
+			rewards: [{
+				id: "22E84F8BB0633D73"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.6728FB92FD3A2084.subtitle}"
+			tasks: [{
+				id: "2EBA27CDC31F4FD7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:americium_241"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:americium_242"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:americium_243"
+							}
+						]
+					}
+				}
+				title: "{moni.task.2EBA27CDC31F4FD7}"
+				type: "item"
+			}]
+			title: "{moni.quest.6728FB92FD3A2084.title}"
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7D7B34CF5145F971"
+				"6728FB92FD3A2084"
+			]
+			description: [
+				"{moni.quest.0E5E5E647F378D02.description1}"
+				""
+				"{moni.quest.0E5E5E647F378D02.description2}"
+				""
+				"{moni.quest.0E5E5E647F378D02.description3}"
+				""
+				"{moni.quest.0E5E5E647F378D02.description4}"
+			]
+			icon: "nuclearcraft:fuel_curium_lecm_245"
+			id: "0E5E5E647F378D02"
+			rewards: [{
+				id: "78C58916BAFD010E"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B9300AA8500D15F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:curium_243"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:curium_245"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:curium_246"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:curium_247"
+							}
+						]
+					}
+				}
+				title: "{moni.task.4B9300AA8500D15F}"
+				type: "item"
+			}]
+			title: "{moni.quest.0E5E5E647F378D02.title}"
+			x: 0.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["0E5E5E647F378D02"]
+			description: [
+				"{moni.quest.18B28DC43ACAF768.description1}"
+				""
+				"{moni.quest.18B28DC43ACAF768.description2}"
+			]
+			icon: "nuclearcraft:fuel_berkelium_heb_248"
+			id: "18B28DC43ACAF768"
+			rewards: [{
+				id: "121513CD4E6D9BA8"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D40001351115DEA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:berkelium_247"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:berkelium_248"
+							}
+						]
+					}
+				}
+				title: "{moni.task.1D40001351115DEA}"
+				type: "item"
+			}]
+			title: "{moni.quest.18B28DC43ACAF768.title}"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E5E5E647F378D02"]
+			description: [
+				"{moni.quest.79197A2CD8E435B2.description1}"
+				""
+				"{moni.quest.79197A2CD8E435B2.description2}"
+				""
+				"{moni.quest.79197A2CD8E435B2.description3}"
+				""
+				"{moni.quest.79197A2CD8E435B2.description4}"
+			]
+			icon: "nuclearcraft:fuel_californium_hecf_251"
+			id: "79197A2CD8E435B2"
+			rewards: [{
+				id: "461C74DA073F95A0"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D3D5AC8CBB48681"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:californium_249"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:californium_250"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:californium_251"
+							}
+							{
+								Count: 1b
+								id: "nuclearcraft:californium_252"
+							}
+						]
+					}
+				}
+				title: "{moni.task.0D3D5AC8CBB48681}"
+				type: "item"
+			}]
+			title: "{moni.quest.79197A2CD8E435B2.title}"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7D7B34CF5145F971"]
+			description: [
+				"{moni.quest.171EE3A4129F19A5.description1}"
+				""
+				"{moni.quest.171EE3A4129F19A5.description2}"
+				""
+				"{moni.quest.171EE3A4129F19A5.description3}"
+			]
+			id: "171EE3A4129F19A5"
+			rewards: [{
+				id: "3C74F3D9993A0E7E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F210892580EEAB2"
+				item: "gtceu:sunnarium_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.25d
+		}
+		{
+			dependencies: [
+				"79197A2CD8E435B2"
+				"18B28DC43ACAF768"
+			]
+			description: [
+				"{moni.quest.3616092A2954FEE0.description1}"
+				""
+				"{moni.quest.3616092A2954FEE0.description2}"
+				""
+				"{moni.quest.3616092A2954FEE0.description3}"
+				""
+				"{moni.quest.3616092A2954FEE0.description4}"
+			]
+			icon: "nuclearcraft:plutonium_rtg"
+			id: "3616092A2954FEE0"
+			size: 1.5d
+			tasks: [{
+				id: "4DE6C946EF4B947F"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.3616092A2954FEE0.title}"
+			x: 3.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["6728FB92FD3A2084"]
+			description: [
+				"{moni.quest.4A8FB1EF600F0882.description1}"
+				""
+				"{moni.quest.4A8FB1EF600F0882.description2}"
+			]
+			id: "4A8FB1EF600F0882"
+			rewards: [{
+				id: "28257AD592813E0D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58B3062238CFC79D"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.4A8FB1EF600F0882.title}"
+			x: -1.0d
+			y: 6.25d
 		}
 	]
 	title: "{moni.chapter.055C0B43FE14258F.title}"
