@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("water", 3000), "gtceu:omnium 576")
         .outputFluids("gtceu:omnic_acid 1000", Fluid.of("gtceu:hydrogen", 2000))
         .duration(200)
-        .EUt(GTValues.VA[GTValues.ZPM]]
+        .EUt(GTValues.VA[GTValues.ZPM])
   
     // Ancient Debris Processing
     event.recipes.gtceu.chemical_bath("ancient_debris_ardite_path")
