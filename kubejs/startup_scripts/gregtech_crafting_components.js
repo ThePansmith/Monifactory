@@ -81,6 +81,8 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modify(CraftingComponent.GLASS, glassMap)
 
     // Plates
+    // Used in Autoclave and Benders, among other things.
+    // Consistently matches Hull material
     let plateMap = {};
     plateMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
     plateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
@@ -97,6 +99,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.HULL, hullMap)
 
     // Hull plates
+    // The plastic plate in hulls
     let hullPlateMap = {};
     hullPlateMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polybenzimidazole"))
     hullPlateMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate"))
@@ -105,6 +108,8 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.HULL_PLATE, hullPlateMap)
 
     // Rotors
+    // Used in Chemical Reactors, Mixers, Ore Washers and Muffler Hatches
+    // Usually same as Hull Material in later tiers
     let rotorMap = {};
     rotorMap[GTValues.UHV] = UnificationEntry(TagPrefix.rotor, GTMaterials.get("manyullyn"))
     rotorMap[GTValues.UEV] = UnificationEntry(TagPrefix.rotor, GTMaterials.get("activated_netherite"))
@@ -114,6 +119,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     // TODO: Sawblades (May require making tools for the material)
 
     // Resistive heating wires (typically, these match the EBF coil for that tier)
+    // Used in Alloy Smelters and Electric Furnaces
     let heatingCoilComponentPrefixes = [
         [TagPrefix.wireGtDouble, CraftingComponent.COIL_HEATING],
         [TagPrefix.wireGtQuadruple, CraftingComponent.COIL_HEATING_DOUBLE],
@@ -128,6 +134,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     })
 
     // Electric Coils
+    // Used in Electromagnetic Separators and Polarizers
     let electricCoilMap = {};
     electricCoilMap[GTValues.UHV] = UnificationEntry(TagPrefix.wireGtHex, GTMaterials.get("sculk_superconductor"))
     electricCoilMap[GTValues.UEV] = UnificationEntry(TagPrefix.wireGtHex, GTMaterials.get("activated_netherite"))
@@ -135,6 +142,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.COIL_ELECTRIC, electricCoilMap)
 
     // Magnetic Rods
+    // Possibly Unused?
     let magneticRodMap = {};
     magneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.SamariumMagnetic)
     magneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rodLong, GTMaterials.get("magnetic_iron_neodymium_terbium_neutronate"))
@@ -143,6 +151,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.STICK_MAGNETIC, magneticRodMap)
 
     // Distillation Rods
+    // Used in Distilleries
     let distillationRodMap = {};
     distillationRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.spring, GTMaterials.Actinium)
     distillationRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.spring, GTMaterials.get("sculk_bioalloy"))
@@ -150,6 +159,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.STICK_DISTILLATION, distillationRodMap)
 
     // Electromagnetic Rods
+    // Used in Electromagnetic Separators and Polarizers
     let electromagneticRodMap = {};
     electromagneticRodMap[GTValues.IV] = UnificationEntry(TagPrefix.rod, GTMaterials.Neodymium)
     electromagneticRodMap[GTValues.LuV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
@@ -168,6 +178,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.PIPE_REACTOR, reactorPipeMap)
 
     // PIC ingredient
+    // Used in Energy and Dynamo Hatches, and in Transformers
     let powerComponentMap = {};
     powerComponentMap[GTValues.UEV] = Item.of("kubejs:uxpic_chip")
     powerComponentMap[GTValues.UIV] = Item.of("kubejs:uxpic_chip")
@@ -175,6 +186,8 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyItem(CraftingComponent.POWER_COMPONENT, powerComponentMap)
 
     // Spring
+    // Used in Dynamo Hatches
+    // Usually the same as Hull Cable
     let springMap = {};
     springMap[GTValues.UEV] = UnificationEntry(TagPrefix.spring, GTMaterials.get("activated_netherite"))
     springMap[GTValues.UIV] = UnificationEntry(TagPrefix.spring, GTMaterials.get("holmium"))
@@ -182,6 +195,8 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.modifyUnificationEntry(CraftingComponent.SPRING, springMap)
 
     // Frame
+    // Used in Dual Hatches
+    // Usually the same as Hull Material
     let frameMap = {};
     frameMap[GTValues.UHV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("manyullyn"))
     frameMap[GTValues.UEV] = UnificationEntry(TagPrefix.frameGt, GTMaterials.get("omnium"))
