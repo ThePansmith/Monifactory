@@ -127,7 +127,6 @@ ServerEvents.recipes(event => {
             ],
             "energy_mod": 3.0
         })
-    
 
         event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
             .circuit(2)

@@ -89,14 +89,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     plateMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("monium"))
     event.modifyUnificationEntry(CraftingComponent.PLATE, plateMap)
 
-    // Hull material
-    /*let hullMap = {};
-    hullMap[GTValues.UHV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("manyullyn"))
-    hullMap[GTValues.UEV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("omnium"))
-    hullMap[GTValues.UIV] = UnificationEntry(TagPrefix.plate, GTMaterials.get("infinity"))
-    hullMap[GTValues.MAX] = UnificationEntry(TagPrefix.plate, GTMaterials.get("monium"))
-    event.modifyUnificationEntry(CraftingComponent.HULL, hullMap)*/
-
     // Hull plates
     // The plastic plate in hulls
     let hullPlateMap = {};

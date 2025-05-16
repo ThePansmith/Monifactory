@@ -163,15 +163,15 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.LV])
     })
 
-    event.shaped(`gtceu:max_machine_hull`, [
+    event.shaped("gtceu:max_machine_hull", [
         "PMP",
         "WCW"
     ], {
-        P: `gtceu:monium_plate`,
-        M: `gtceu:monium_plate`,
-        W: `gtceu:monium_single_wire`,
-        C: `gtceu:max_machine_casing`
-    }).id(`shaped/hull_max`)
+        P: "gtceu:monium_plate",
+        M: "gtceu:monium_plate",
+        W: "gtceu:monium_single_wire",
+        C: "gtceu:max_machine_casing"
+    }).id("shaped/hull_max")
 
 
     const rotorHolderMaterials = [

@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    //UHV hull
+    // UHV hull
     event.create("manyullyn")
         .ingot().fluid()
         .color(0xc05cff).secondaryColor(0xff00e0).iconSet("magic")
@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("4x ardite", "4x cobalt", "mana")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_ROTOR)
 
-    //UHV motor + UEV cable
+    // UHV motor + UEV cable
     event.create("darconite")
         .ingot().fluid()
         .color(0x3221fb).secondaryColor(0x26872b)
