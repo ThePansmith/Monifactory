@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     alloySmeltingVariant(
         ["#forge:ingots/steel", "#forge:dusts/steel"],
         ["#forge:dusts/boron"],
-        "2x nuclearcraft:ferroboron_ingot", 15, 120);
+        "2x gtceu:ferroboron_ingot", 15, 120);
 
     alloySmeltingVariant(
         ["#forge:ingots/gold", "#forge:dusts/gold"],
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter("kubejs:tough_alloy_ingot")
         .itemInputs("#forge:ingots/ferroboron", "#forge:dusts/lithium")
-        .itemOutputs("2x nuclearcraft:tough_alloy_ingot")
+        .itemOutputs("2x gtceu:tough_alloy_ingot")
         .duration(300)
         .EUt(16)
     event.recipes.gtceu.alloy_smelter("kubejs:hard_carbon_ingot")
@@ -78,9 +78,6 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(32)
 
-    event.remove({ id: "minecraft:nuclearcraft_ferroboron_plate" }) // minecraft??
-    event.remove({ id: "minecraft:nuclearcraft_ferroboron_dust" })
-    event.remove([{ id: "nuclearcraft:blast_ferroboron_dust" }, { id: "nuclearcraft:fission_reactor_glass" }])
 })
 
 
