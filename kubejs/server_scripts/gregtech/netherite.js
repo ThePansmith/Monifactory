@@ -15,14 +15,14 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:omnic_acid 1000", Fluid.of("gtceu:hydrogen", 2000))
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM])
-  
+
     // Ancient Debris Processing
     event.recipes.gtceu.chemical_bath("ancient_debris_ardite_path")
         .itemInputs("gtceu:netherite_scrap_dust")
         .inputFluids("kubejs:molten_petrotheum")
         .itemOutputs("kubejs:dusty_netherite_cluster", "gtceu:ardite_sand_dust")
         .duration(200)
-        .EUt(GTValues.VA[GTValues.MV]]
+        .EUt(GTValues.VA[GTValues.MV])
 
     event.recipes.gtceu.autoclave("dusty_netherite_cluster")
         .itemInputs("kubejs:dusty_netherite_cluster")
