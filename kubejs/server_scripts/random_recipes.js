@@ -110,23 +110,23 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
     // Processing for Ender Spores
-    event.custom({
-        "type": "thermal:insolator",
-        "ingredient": {
-            "item": "kubejs:ender_spore"
-        },
-        "result": [
-            {
-                "item": "kubejs:ender_spore",
-                "chance": 2.0
-            }
-        ],
-        "energy_mod": 3.0
-    })
-
     if (!doHNN) {
         event.shapeless("kubejs:ender_spore", ["minecraft:chorus_flower", "minecraft:ender_pearl", "thermal:phytogro", "minecraft:experience_bottle"])
         event.smelting("minecraft:ender_pearl", "kubejs:ender_spore")
+
+        event.custom({
+            "type": "thermal:insolator",
+            "ingredient": {
+                "item": "kubejs:ender_spore"
+            },
+            "result": [
+                {
+                    "item": "kubejs:ender_spore",
+                    "chance": 2.0
+                }
+            ],
+            "energy_mod": 3.0
+        })
 
         event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
             .circuit(2)
