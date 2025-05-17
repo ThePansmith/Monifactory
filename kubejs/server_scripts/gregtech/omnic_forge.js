@@ -21,13 +21,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:omnic_matrix_machine_casing")
         .itemInputs("12x gtceu:omnium_plate", "2x gtceu:crystal_matrix_frame", "1x gtceu:zpm_field_generator", "2x #gtceu:circuits/uv")
         .itemOutputs("2x kubejs:omnic_matrix_machine_casing")
-        .duration(2000)
+        .duration(200)
         .EUt(65520)
 
     event.recipes.gtceu.omnic_forge("kubejs:omnic_matrix_machine_casing_forge")
         .itemInputs("6x gtceu:omnium_plate", "gtceu:crystal_matrix_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
         .itemOutputs("2x kubejs:omnic_matrix_machine_casing")
-        .duration(1000)
+        .duration(100)
         .EUt(65520)
 
     event.recipes.gtceu.omnic_forge("kubejs:omnic_matrix_coil")
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.omnic_forge("kubejs:netherite_casing")
         .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:dense_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
         .itemOutputs("4x kubejs:dimensional_stabilization_netherite_casing")
-        .duration(2000)
+        .duration(100)
         .EUt(65520)
 
     event.recipes.gtceu.omnic_forge("kubejs:bioalloy_casing")
