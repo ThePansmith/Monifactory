@@ -9,6 +9,15 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:alloy_smelt_netherite_scrap_to_nugget" })
 
     // Ancient Debris Processing
+    event.recipes.gtceu.macerator("macerate_ancient_debris_to_crushed_ore")
+        .itemInputs("minecraft:ancient_debris")
+        .itemOutputs("2x gtceu:crushed_netherite_scrap_ore")
+        .chancedOutput("gtceu:obsidian_dust", 1400, 850)
+        .chancedOutput("gtceu:netherrack_dust", 1200, 800)
+        .duration(400)
+        .EUt(2)
+        .category("gtceu:ore_crushing")
+
     event.recipes.gtceu.chemical_bath("ancient_debris_ardite_path")
         .itemInputs("gtceu:netherite_scrap_dust")
         .inputFluids("kubejs:molten_petrotheum")
