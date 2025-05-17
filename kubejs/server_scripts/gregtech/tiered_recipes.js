@@ -108,6 +108,24 @@ function parseRecipe(recipe) {
             ))
 
     /**
+     * @param {() => void} cb
+     * @param {number} multiplier
+     * @param {number} divisor
+     * @param {number=} maxTotalDivisor
+     */
+    let useMultiplier = (cb, multiplier, divisor, maxTotalDivisor) => {
+        maxTotalDivisor = maxTotalDivisor ?? multiplier
+        let divisorInv = 1 / divisor
+        multiplyRecipe(multiplier)
+        cb()
+        // Divide recipe back, UP TO `multiplier` TIMES
+        while (maxTotalDivisor > 1 && isRecipeDivisible(divisor)) {
+            multiplyRecipe(divisorInv)
+            maxTotalDivisor *= divisorInv
+        }
+    }
+
+    /**
      * @param {Internal.RecipesEventJS} registerEvent
      * @param {string} newRecipeId
      * @param {string} machineName
@@ -152,6 +170,7 @@ function parseRecipe(recipe) {
     return { // Kubejs devs pls
         multiplyRecipe: multiplyRecipe,
         isRecipeDivisible: isRecipeDivisible,
+        useMultiplier: useMultiplier,
         register: register,
         newInputFluids: newInputFluids,
         newInputItems: newInputItems,
@@ -196,24 +215,43 @@ function generateAlternatives(event, javaRecipe) {
 
         for (let [solderId, solderEfficiency] of solders_and_ratios.slice(minSolderTier, maxSolderTier)) {
             let r = parseRecipe(recipe)
-            r.multiplyRecipe(solderEfficiency)
-            // Replace all old solder with better one
-            for (let inp of r.newInputFluids) {
-                if (inp.id !== "gtceu:soldering_alloy") continue
-                inp.id = solderId
-                inp.amount /= solderEfficiency
-            }
-            // Divide recipe back, UP TO `solderEfficiency` TIMES
-            while (solderEfficiency > 1 && r.isRecipeDivisible(2)) {
-                r.multiplyRecipe(0.5)
-                solderEfficiency *= 0.5
-            }
+            r.useMultiplier(() => {
+                // Replace all old solder with better one
+                for (let inp of r.newInputFluids) {
+                    if (inp.id !== "gtceu:soldering_alloy") continue
+                    inp.id = solderId
+                    inp.amount /= solderEfficiency
+                }
+            }, solderEfficiency, 2)
             r.register(
                 event,
                 recipeId + "/" + solderId.split(":",2)[1],
                 machineName,
             )
         }
+    }
+
+    // Complex SMDs
+    if(recipe.inputs?.item && recipe.inputs.item.some(i =>
+        i.content.type === "gtceu:sized" &&
+        "item" in i.content.ingredient &&
+        i.content.ingredient.item.startsWith("gtceu:advanced_smd_")
+    )) {
+        // Advanced SMD recipes take twice as fast to make than Simple SMDs
+        // Here we follow this convention:
+        recipe.duration /= 2
+
+        let r = parseRecipe(recipe)
+        r.useMultiplier(() => {
+            // Replace all advanced smd by complex smd
+            for(let inp of r.newInputItems) {
+                let match = inp.id.match(/^gtceu:advanced(_smd_.*)$/)
+                if(!match) continue
+                inp.id = "kubejs:complex" + match[1]
+                inp.amount /= 4
+            }
+        }, 4, 2, 16)
+        r.register(event, recipeId + "/complex_smd", machineName)
     }
 }
 
