@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_holmium_wire", 4],
         ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:holmium_foil", 1],
         ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_holmium_wire", 2],
-        ["inductor", "gtceu:tritanium_ring", "4x gtceu:fine_holmium_wire", 2]
+        ["inductor", "gtceu:iron_neodymium_terbium_neutronate_ring", "4x gtceu:fine_holmium_wire", 2]
     ]
 
     for (const [item, primary, secondary, foil_amount] of smds) {
@@ -209,10 +209,9 @@ ServerEvents.recipes(event => {
             "16x gtceu:omnium_plate",
             "#gtceu:circuits/luv",
             "gtceu:iv_emitter",
-            "2x gtceu:omnic_acid_dust",
             "3x gtceu:flawless_monazite_gem"
         )
-        .inputFluids("gtceu:distilled_water 500")
+        .inputFluids("gtceu:omnic_acid 2000")
         .itemOutputs("32x kubejs:matter_circuit_board")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
