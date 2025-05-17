@@ -165,12 +165,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(1920)
 
-    event.recipes.gtceu.mixer("kubejs:ardite_dust")
-        .itemInputs("3x gtceu:red_steel_dust", "minecraft:blaze_powder")
-        .itemOutputs("4x gtceu:ardite_dust")
-        .duration(200)
-        .EUt(30)
-
     event.recipes.gtceu.mixer("kubejs:manyullyn_dust")
         .itemInputs("4x gtceu:ardite_dust", "4x gtceu:cobalt_dust")
         .itemOutputs("9x gtceu:manyullyn_dust")

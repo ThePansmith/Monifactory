@@ -154,7 +154,6 @@ StartupEvents.registry("item", event => {
 
 
     // Endgame Items
-    event.create("diamond_lattice")
     event.create("neutron_emitter")
     event.create("ultimate_gem").displayName("§dUltimate Gem").glow(true)
     event.create("mote_of_omnium").displayName("Mote of Raw Omnium")
@@ -342,9 +341,12 @@ StartupEvents.registry("item", event => {
 
 
     // Nethline intermediate products
-    event.create("purified_ancient_debris_dust").texture("kubejs:item/netherite/purified_ancient_debris_dust")
-    event.create("processed_ancient_debris_dust").texture("kubejs:item/netherite/processed_ancient_debris_dust")
-    event.create("inert_netherite_scrap").texture("kubejs:item/netherite/inert_netherite_scrap")
+    event.create("dusty_netherite_cluster").texture("kubejs:item/netherite/dusty_netherite_cluster")
+    event.create("ardite_sponge").texture("kubejs:item/ardite/ardite_sponge")
+    event.create("netherite_cluster").texture("kubejs:item/netherite/netherite_cluster")
+    event.create("netherite_shards").texture("kubejs:item/netherite/netherite_shards")
+    event.create("reactive_netherite_cluster").texture("kubejs:item/netherite/reactive_netherite_cluster")
+    event.create("activated_netherite_scrap").texture("kubejs:item/netherite/pure_netherite_scrap").glow(true);
     event.create("inert_nether_compound_ingot").texture("kubejs:item/netherite/inert_nether_compound_ingot")
 
     // Solid Naquadah Fuel Line
