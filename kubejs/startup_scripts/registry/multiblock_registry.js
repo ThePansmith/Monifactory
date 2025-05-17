@@ -57,7 +57,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("microverse")
         .category("multiblock")
         .setEUIO("in")
-        .setMaxIOSize(9, 12, 3, 0)
+        .setMaxIOSize(9, 9, 3, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
