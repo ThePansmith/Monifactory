@@ -38,7 +38,7 @@ Highlights include:
 - Monicoins can't be spent
 - Harder processing lines for Platinum and Naquadah
 - More focus on GregTech Power Generation
-- 
+
 Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 
 - Disabling RF -> EU conversion, making GT power generation required
