@@ -151,6 +151,15 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
+
+    // Fission reactor
+    event.create("fission_reactor")
+        .category("multiblock")
+        .setEUIO("out")
+        .setMaxIOSize(1, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.HEATING_OVERLAY_1)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ARC);
 })
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
@@ -527,6 +536,69 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingRenderer("kubejs:block/cryolobus/cryolobus_casing",
             "gtceu:block/machines/electrolyzer", false)
+
+    // Fission reactor
+    event.create("fission_reactor", "multiblock")
+        .rotationState(RotationState.ALL)
+        .recipeTypes("fission_reactor")
+        .recipeModifiers([/** @param {Internal.WorkableMultiblockMachine} machine */ (machine, recipe) => {
+            if (!("getMultiblockState" in machine)) return ModifierFunction.IDENTITY
+            // maintenancePartIds cannot be moved out of the function and cached due to a rhino limitation
+            let maintenancePartIds = new Set(PartAbility.MAINTENANCE.allBlocks.toArray().map(b => `${b.id}`))
+            let corner = machine.partPositions.find(partPos =>
+                maintenancePartIds.has(`${machine.level.getBlock(partPos).id}`)
+            )
+            if (!corner) return ModifierFunction.NULL
+            let layers = machine.pos.distManhattan(corner) - 13
+            console.log("BLOCKS AHEAD")
+            let controllerBackDirection = machine.frontFacing.opposite
+            for (let i = 1; i <= layers; i++) {
+                let wireframePos = machine.pos.offset(
+                    controllerBackDirection.x * i,
+                    controllerBackDirection.y * i,
+                    controllerBackDirection.z * i,
+                )
+                console.log(machine.level.getBlock(wireframePos).id)
+                if (machine.level.getBlock(wireframePos).id === "gtceu:fission_reactor") {
+                    // Because the check is inefficient and will run every tick if failed, we break the controller
+                    // This also prompts the player to replace the controller to a new position (a clear hole in the structure corner)
+                    machine.level.destroyBlock(machine.pos, true)
+                    return ModifierFunction.NULL
+                }
+            }
+            /** {@link https://www.desmos.com/calculator/j2pjzssbqr} */
+            let efficiency = (layers / 14) ** 2 + 0.5
+            /** {@link https://www.desmos.com/calculator/d9cighn00m} */
+            let speedup = (layers + 8) / 15
+            return ModifierFunction.builder()
+                .durationMultiplier(1 / speedup)
+                .eutMultiplier(speedup * efficiency)
+                .build()
+                .andThen(layers >= 20
+                    ? GTRecipeModifiers.PARALLEL_HATCH.getModifier(machine, recipe)
+                    : ModifierFunction.IDENTITY
+                )
+        }])
+        .appearanceBlock(() => Block.getBlock("kubejs:lead_shield_casing"))
+        .generator(true)
+        .regressWhenWaiting(false)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("RRRRRRR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RRRRRRM")
+            .aisleRepeatable(5, 20, "RCCCCCR", "CFWFWFC", "CWFWFWC", "CFWFWFC", "CWFWFWC", "CFWFWFC", "RCCCCCR")
+            .aisle("@RRRRRR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RCCCCCR", "RRRRRRR")
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+            // Maintenance hatch has to be placed in the corner opposite of the controller to calculate the multiblock size dynamically
+            .where("M", Predicates.abilities(PartAbility.MAINTENANCE))
+            .where("R", Predicates.blocks("kubejs:lead_shield_casing")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+            )
+            .where("C", Predicates.blocks("kubejs:lead_shield_casing", "gtceu:fusion_glass"))
+            .where("F", Predicates.blocks("kubejs:fuel_cell"))
+            .where("W", Predicates.blocks("kubejs:moderation_cell"))
+            .build())
+        .workableCasingRenderer("kubejs:block/lead_shield/casing",
+            "gtceu:block/machines/fission_reactor", false)
 
     let getMicroverseRecipeModifiers = tier => [
         GTRecipeModifiers.OC_NON_PERFECT,

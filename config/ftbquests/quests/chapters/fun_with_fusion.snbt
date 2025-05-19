@@ -353,7 +353,7 @@
 				""
 				"{moni.quest.4BE6C4E7FDF7C71B.description4}"
 			]
-			icon: "nuclearcraft:fuel_thorium_tbu"
+			icon: "kubejs:tbu_fuel"
 			id: "4BE6C4E7FDF7C71B"
 			rewards: [{
 				id: "06139FE8ADC033ED"
@@ -362,7 +362,7 @@
 			}]
 			tasks: [{
 				id: "44C0DC3995B49AE9"
-				item: "nuclearcraft:fuel_thorium_tbu"
+				item: "kubejs:tbu_fuel"
 				type: "item"
 			}]
 			title: "{moni.quest.4BE6C4E7FDF7C71B.title}"
@@ -386,7 +386,7 @@
 			}]
 			tasks: [{
 				id: "6F33280EE9C07FE2"
-				item: "nuclearcraft:fuel_uranium_leu_235"
+				item: "kubejs:leu_235"
 				type: "item"
 			}]
 			title: "{moni.quest.64B145DC53023119.title}"
@@ -412,7 +412,7 @@
 			}]
 			tasks: [{
 				id: "2F9E2B6EE20C17A1"
-				item: "nuclearcraft:fuel_neptunium_len_236"
+				item: "kubejs:len_236"
 				type: "item"
 			}]
 			title: "{moni.quest.490F04B181217B28.title}"
@@ -439,7 +439,7 @@
 			}]
 			tasks: [{
 				id: "1AB75B01B5D4CBED"
-				item: "nuclearcraft:fuel_uranium_leu_233"
+				item: "kubejs:leu_233"
 				type: "item"
 			}]
 			title: "{moni.quest.3065F950BCA5C461.title}"
@@ -464,7 +464,7 @@
 				""
 				"{moni.quest.7D7B34CF5145F971.description5}"
 			]
-			icon: "nuclearcraft:fuel_plutonium_hep_241"
+			icon: "kubejs:lep_239"
 			id: "7D7B34CF5145F971"
 			rewards: [{
 				id: "2EE2A64247934DFA"
@@ -481,11 +481,11 @@
 						items: [
 							{
 								Count: 1b
-								id: "nuclearcraft:plutonium_238"
+								id: "kubejs:plutonium_238"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:plutonium_239"
+								id: "kubejs:plutonium_239"
 							}
 							{
 								Count: 1b
@@ -493,7 +493,7 @@
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:plutonium_242"
+								id: "kubejs:plutonium_242"
 							}
 						]
 					}
@@ -520,7 +520,7 @@
 				""
 				"{moni.quest.6728FB92FD3A2084.description4}"
 			]
-			icon: "nuclearcraft:fuel_americium_hea_242"
+			icon: "kubejs:lea_242"
 			id: "6728FB92FD3A2084"
 			rewards: [{
 				id: "22E84F8BB0633D73"
@@ -537,15 +537,15 @@
 						items: [
 							{
 								Count: 1b
-								id: "nuclearcraft:americium_241"
+								id: "kubejs:americium_241"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:americium_242"
+								id: "kubejs:americium_242"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:americium_243"
+								id: "kubejs:americium_243"
 							}
 						]
 					}
@@ -571,7 +571,7 @@
 				""
 				"{moni.quest.0E5E5E647F378D02.description4}"
 			]
-			icon: "nuclearcraft:fuel_curium_lecm_245"
+			icon: "kubejs:lecm_245"
 			id: "0E5E5E647F378D02"
 			rewards: [{
 				id: "78C58916BAFD010E"
@@ -587,19 +587,19 @@
 						items: [
 							{
 								Count: 1b
-								id: "nuclearcraft:curium_243"
+								id: "kubejs:curium_243"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:curium_245"
+								id: "kubejs:curium_245"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:curium_246"
+								id: "kubejs:curium_246"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:curium_247"
+								id: "kubejs:curium_247"
 							}
 						]
 					}
@@ -618,7 +618,7 @@
 				""
 				"{moni.quest.18B28DC43ACAF768.description2}"
 			]
-			icon: "nuclearcraft:fuel_berkelium_heb_248"
+			icon: "kubejs:leb_248"
 			id: "18B28DC43ACAF768"
 			rewards: [{
 				id: "121513CD4E6D9BA8"
@@ -634,11 +634,11 @@
 						items: [
 							{
 								Count: 1b
-								id: "nuclearcraft:berkelium_247"
+								id: "kubejs:berkelium_247"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:berkelium_248"
+								id: "kubejs:berkelium_248"
 							}
 						]
 					}
@@ -661,7 +661,7 @@
 				""
 				"{moni.quest.79197A2CD8E435B2.description4}"
 			]
-			icon: "nuclearcraft:fuel_californium_hecf_251"
+			icon: "kubejs:lecf_249"
 			id: "79197A2CD8E435B2"
 			rewards: [{
 				id: "461C74DA073F95A0"
@@ -677,19 +677,19 @@
 						items: [
 							{
 								Count: 1b
-								id: "nuclearcraft:californium_249"
+								id: "kubejs:californium_249"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:californium_250"
+								id: "kubejs:californium_250"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:californium_251"
+								id: "kubejs:californium_251"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:californium_252"
+								id: "kubejs:californium_252"
 							}
 						]
 					}
@@ -738,7 +738,7 @@
 				""
 				"{moni.quest.3616092A2954FEE0.description4}"
 			]
-			icon: "nuclearcraft:plutonium_rtg"
+			icon: "kubejs:stabilized_berkelium"
 			id: "3616092A2954FEE0"
 			size: 1.5d
 			tasks: [{
