@@ -525,7 +525,7 @@
 			invisible: true
 			rewards: [{
 				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 776886E9296912DD"
+				command: "/ftbquests change_progress @p reset 0412D46926C075FF"
 				elevate_perms: true
 				id: "3EB61E55554FA706"
 				silent: true
@@ -544,7 +544,7 @@
 			invisible: true
 			rewards: [{
 				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 10E63A0428E6BA25"
+				command: "/ftbquests change_progress @p reset 776886E9296912DD"
 				elevate_perms: true
 				id: "4CCF413223F39D3F"
 				silent: true
