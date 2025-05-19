@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Holmium.setMaterialARGB(0xe59274)
     GTMaterials.Holmium.setMaterialSecondaryARGB(0x715774)
-    GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 0, true))
+    GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 8, false))
     GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(10000, 18000, true, false, true, true))
     GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12200, "highest", 1000000, 1000, -1, -1));
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
