@@ -97,21 +97,11 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.extendedcrafting.shaped_flux_crafter("kubejs:activated_netherite_scrap", [
-        "ABA",
-        "BCB",
-        "ABA"
-    ], {
-        A: "gtceu:activated_carbon_dust",
-        B: "gtceu:void_empowered_plate",
-        C: "kubejs:reactive_netherite_cluster"
-    }, 200000000).powerRate(200000000);
-
-    event.recipes.gtceu.charger("activated_netherite_scrap")
+    event.recipes.gtceu.omnic_forge("activated_netherite_scrap")
         .itemInputs("4x gtceu:activated_carbon_dust", "4x gtceu:void_empowered_plate", "kubejs:reactive_netherite_cluster")
         .itemOutputs("kubejs:activated_netherite_scrap")
-        .EUt(500000 / 16)
-        .duration(100 * 4)
+        .EUt(GTValues.VA[GTValues.UV])
+        .duration(100)
 
     event.recipes.gtceu.macerator("wither_bone_dust")
         .itemInputs("kubejs:wither_bone")
