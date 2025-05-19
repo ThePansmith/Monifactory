@@ -41,7 +41,7 @@
 			y: 3.0d
 		}
 	]
-	order_index: 5
+	order_index: 1
 	progression_mode: "flexible"
 	quest_links: [{
 		id: "1C4BA5C05BD7D1C3"
@@ -694,10 +694,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"2D10F2E538486624"
-				"76BAC72CC89F390E"
-			]
+			dependencies: ["2D10F2E538486624"]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.1405D08C6A87B3BB.description1}"]
 			icon: "gtceu:plasma_large_turbine"
