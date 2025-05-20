@@ -76,8 +76,8 @@ GTCEuStartupEvents.craftingComponents(event => {
     // Glass
     let glassMap = {};
     glassMap[GTValues.UHV] = Item.of("gtceu:fusion_glass");
-    glassMap[GTValues.UEV] = Item.of("gtceu:fusion_glass");
-    glassMap[GTValues.UIV] = Item.of("gtceu:fusion_glass");
+    glassMap[GTValues.UEV] = Item.of("gtceu:fusion_glass"); //P.R.I.S.M.
+    glassMap[GTValues.UIV] = Item.of("gtceu:fusion_glass"); //P.R.I.S.M.
     event.modify(CraftingComponent.GLASS, glassMap)
 
     // Plates
@@ -104,7 +104,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     let rotorMap = {};
     rotorMap[GTValues.UHV] = UnificationEntry(TagPrefix.rotor, GTMaterials.get("manyullyn"))
     rotorMap[GTValues.UEV] = UnificationEntry(TagPrefix.rotor, GTMaterials.get("activated_netherite"))
-    rotorMap[GTValues.UIV] = UnificationEntry(TagPrefix.rotor, GTMaterials.Holmium)
+    rotorMap[GTValues.UIV] = UnificationEntry(TagPrefix.rotor, GTMaterials.get("null"))
     event.modifyUnificationEntry(CraftingComponent.ROTOR, rotorMap)
 
     // TODO: Sawblades (May require making tools for the material)
@@ -156,9 +156,9 @@ GTCEuStartupEvents.craftingComponents(event => {
     electromagneticRodMap[GTValues.LuV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
     electromagneticRodMap[GTValues.ZPM] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
     electromagneticRodMap[GTValues.UV] = UnificationEntry(TagPrefix.rod, GTMaterials.Samarium)
-    electromagneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.Terbium)
-    electromagneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rod, GTMaterials.Terbium)
-    electromagneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rod, GTMaterials.Terbium)
+    electromagneticRodMap[GTValues.UHV] = UnificationEntry(TagPrefix.rod, GTMaterials.get("iron_neodymium_terbium_neutronate"))
+    electromagneticRodMap[GTValues.UEV] = UnificationEntry(TagPrefix.rod, GTMaterials.get("iron_neodymium_terbium_neutronate"))
+    electromagneticRodMap[GTValues.UIV] = UnificationEntry(TagPrefix.rod, GTMaterials.get("iron_neodymium_terbium_neutronate"))
     event.modifyUnificationEntry(CraftingComponent.STICK_ELECTROMAGNETIC, electromagneticRodMap)
 
     // Chem reactor pipe ingredient
