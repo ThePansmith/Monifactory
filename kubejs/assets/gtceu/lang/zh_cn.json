@@ -439,5 +439,8 @@
     "material.gtceu.cholestrol": "Cholestrol",
     "material.gtceu.pregnenolone": "Pregnenolone",
     "__COMPAT__.footer": "=================",
-    "material.gtceu.testosterone": "Testosterone"
+    "material.gtceu.testosterone": "Testosterone",
+    "gtceu.jei.ore_vein.venus/dilithium": "双锂矿脉（金星）",
+    "gtceu.jei.ore_vein.venus/nickel": "镍矿脉（金星）",
+    "material.gtceu.saline_antisceptic": "盐水防腐剂"
 }
