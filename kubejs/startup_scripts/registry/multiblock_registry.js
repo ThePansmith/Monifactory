@@ -896,3 +896,17 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .workableCasingRenderer("gtceu:block/casings/gcym/high_temperature_smelting_casing",
             "gtceu:block/multiblock/gcym/blast_alloy_smelter", false)
 })
+
+
+// Insane Combustion Engine
+GTCEuStartupEvents.registry("gtceu:machine", event => {
+    GTMachineUtils.registerLargeCombustionEngine(
+        "insane_combustion_engine",
+        GTValues.LuV,
+        () => Block.getBlock("kubejs:hardened_machine_casing"),
+        () => Block.getBlock("kubejs:naquadah_gearbox"),
+        () => Block.getBlock("kubejs:insane_engine_intake_casing"),
+        "gtceu:block/casings/solid/machine_casing_hardened_naquadah",
+        "gtceu:block/multiblock/generator/extreme_combustion_engine"
+    );
+});
