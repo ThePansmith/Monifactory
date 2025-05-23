@@ -259,22 +259,6 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(30)
 
-    // Crystal Matrix Materials
-    event.shaped("kubejs:diamond_lattice", [
-        "PBP",
-        "BGB",
-        "PBP"
-    ], {
-        P: "minecraft:diamond",
-        G: "gtceu:exquisite_diamond_gem",
-        B: "gtceu:diamond_screw"
-    }).id("kubejs:diamond_lattice")
-    event.recipes.gtceu.assembler("kubejs:diamond_lattice")
-        .itemInputs("gtceu:flawless_diamond_gem", "2x gtceu:diamond_plate", "4x gtceu:diamond_screw")
-        .itemOutputs("kubejs:diamond_lattice")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.ZPM])
-
     // Ultimate Gem
     event.recipes.extendedcrafting.shapeless_table(
         "kubejs:ultimate_gem",

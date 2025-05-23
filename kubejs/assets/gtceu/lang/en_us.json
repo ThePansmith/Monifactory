@@ -471,6 +471,14 @@
     "material.gtceu.cholestrol": "Cholestrol",
     "material.gtceu.testosterone": "Testosterone",
     "material.gtceu.pregnenolone": "Pregnenolone",
-    "material.gtceu.androstenedione": "Androstenedione"
-
+    "material.gtceu.androstenedione": "Androstenedione",
+    "__NETHLINE__.header": "==================",
+    "__NETHLINE__.flufff": "> NETHERITE LINE <",
+    "__NETHLINE__.footer": "==================",
+    "material.gtceu.ardite_sand": "Ardite Sand",
+    "material.gtceu.ardite_salt": "Ardite Salt",
+    "material.gtceu.wither_bone": "Wither Bone",
+    "material.gtceu.nether_conduit": "Nether Conduit",
+    "material.gtceu.ardite_slurry": "Ardite Slurry",
+    "material.gtceu.impure_molten_ardite": "Impure Molten Ardite"
 }

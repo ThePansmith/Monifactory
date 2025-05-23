@@ -1180,7 +1180,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_smelter("kubejs:vibrant_quartz_glass")
         .itemInputs("ae2:quartz_glass", "gtceu:vibrant_alloy_dust")
         .itemOutputs("ae2:quartz_vibrant_glass")
-        .duration("200")
+        .duration(200)
         .EUt("128")
 
     // Terminal

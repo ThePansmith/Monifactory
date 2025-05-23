@@ -50,8 +50,8 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     wireCableComponentPrefixes.forEach(prefixComponentPair => {
         let wireMap = {};
-        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get("omnium"));
-        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[1], GTMaterials.Holmium);
+        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get("darconite"));
+        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[0], GTMaterials.Holmium);
         wireMap[GTValues.MAX] = UnificationEntry(prefixComponentPair[1], GTMaterials.get("monium"));
         event.modify(prefixComponentPair[2], wireMap)
     })
@@ -235,6 +235,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     // event.setMaterialEntry(GTCraftingComponents.COIL_ELECTRIC, GTValues.UIV, new MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("holmium")))
 
     // Electric Coils
+
     // let electricCoilMap = {};
     // electricCoilMap[GTValues.UHV] = MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("sculk_superconductor"))
     // electricCoilMap[GTValues.UEV] = MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("activated_netherite"))
