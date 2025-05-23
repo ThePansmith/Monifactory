@@ -433,5 +433,17 @@
     "material.gtceu.netherite_scrap": "Древние обломки",
     "material.gtceu.uranic_solution": "Урановый раствор",
     "material.gtceu.extraterrestrial_metal_mixture": "Инопланетный металлический сплав",
-    "gtceu.microverse": "Миссии Микровселенной"
+    "gtceu.microverse": "Миссии Микровселенной",
+    "gtceu.jei.ore_vein.venus/nickel": "Жилв Никеля (Венера)",
+    "gtceu.jei.ore_vein.venus/dilithium": "Жила Дилития (Венера)",
+    "gtceu.jei.ore_vein.glacio/sodalite": "Жила Содалита (Гласио)",
+    "gtceu.jei.ore_vein.mercury/thorium": "Жила Тория (Меркурий)",
+    "gtceu.jei.ore_vein.mercury/titanotungstate": "Жила Титановольфрамата (Меркурий)",
+    "__COMPAT__.header": "=================",
+    "material.gtceu.androstenedione": "Androstenedione",
+    "__COMPAT__.flufff": "> Совместимость <",
+    "material.gtceu.cholestrol": "Cholestrol",
+    "material.gtceu.pregnenolone": "Pregnenolone",
+    "__COMPAT__.footer": "=================",
+    "material.gtceu.testosterone": "Тестостерон"
 }

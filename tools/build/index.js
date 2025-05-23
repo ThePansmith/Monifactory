@@ -8,10 +8,11 @@
 
 import fs from "fs";
 import path, { resolve } from "path";
-import { env } from "process";
 import Juke from "juke-build";
 import { DownloadCF, GetModInfo } from "./lib/curseforge.js";
 import { CodegenAllTarget } from "./codegen/target-all.js";
+import { z } from "zod";
+import { progressNumber } from "./lib/log.js"
 
 Juke.chdir("../..", import.meta.url);
 Juke.setup({ file: import.meta.url }).then((code) => {
@@ -113,27 +114,23 @@ export const ModeParameter = new Juke.Parameter({
     type: "string"
 })
 
-// for windows users, go do -> --key=curseforgekey
-// not recommended, go use env vars!!
-export const KeyParameter = new Juke.Parameter({
-    type: "string"
-})
-
 export const BuildModlistTarget = new Juke.Target({
-    parameters: [KeyParameter],
     inputs: ["manifest.json"],
     outputs: ["dist/modlist.html"],
-    executes: async ({ get }) => {
-        if (!env.CFCORE_API_TOKEN && !get(KeyParameter)) {
-            Juke.logger.error("CFCORE_API_TOKEN env var is required for downloading mods.");
-            throw new Juke.ExitCode(1);
-        }
+    executes: async () => {
         fs.mkdirSync("dist", { recursive: true })
-        const jsonData = JSON.parse(fs.readFileSync("manifest.json", "utf-8"));
+        const {files} = z.object({
+            files: z.object({
+                projectID: z.number()
+            }).array()
+        }).parse(
+            JSON.parse(fs.readFileSync("manifest.json", "utf-8"))
+        );
+        const total = progressNumber(files.length)
         let html = "<ul>\n"
-        for (const key in jsonData.files) {
-            const file = jsonData.files[key];
-            const modInfo = await GetModInfo(env.CFCORE_API_TOKEN ?? get(KeyParameter), file.projectID);
+        for (const [i, {projectID}] of files.entries()) {
+            const modInfo = await GetModInfo(projectID);
+            Juke.logger.info(`Downloaded: (${total(i)}) Mod info "${modInfo.name}"`)
             html += `<li><a href=${modInfo.links.websiteUrl}>${modInfo.name} (by ${modInfo.authors[0].name})</a></li>\n`;
         }
         html += "</ul>"
@@ -144,11 +141,7 @@ export const BuildModlistTarget = new Juke.Target({
 export const DownloadModsTarget = new Juke.Target({
     inputs: ["manifest.json"],
     outputs: () => [], // always run, we have internal logic to check mods now
-    executes: async ({ get }) => {
-        if (!env.CFCORE_API_TOKEN && !get(KeyParameter)) {
-            Juke.logger.error("CFCORE_API_TOKEN env var is required for downloading mods.");
-            throw new Juke.ExitCode(1);
-        }
+    executes: async () => {
         const manifest = JSON.parse(fs.readFileSync("manifest.json", "utf-8"));
 
         fs.mkdirSync("dist/modcache", { recursive: true })
@@ -217,7 +210,7 @@ export const DownloadModsTarget = new Juke.Target({
 
         for (const modID of mIdToDownload) {
             const file = dataKeys[modID];
-            const res = await DownloadCF(env.CFCORE_API_TOKEN ?? get(KeyParameter), {
+            const res = await DownloadCF({
                 modID,
                 modFileID: file.fileID
             }, "dist/modcache/");
@@ -338,16 +331,12 @@ export const BuildAllTarget = new Juke.Target({
 
 export const UploadTarget = new Juke.Target({
     dependsOn: [BuildAllTarget],
-    parameters: [ModeParameter, KeyParameter],
+    parameters: [ModeParameter],
     inputs: [
         "dist/client.zip",
         "dist/server.zip",
     ],
     executes: async ({ get }) => {
-        if (!env.CFCORE_API_TOKEN && !get(KeyParameter)) {
-            Juke.logger.error("CFCORE_API_TOKEN env var is required for downloading mods.");
-            throw new Juke.ExitCode(1);
-        }
         get(ModeParameter);
     },
 })

@@ -22,6 +22,7 @@ ServerEvents.recipes(event => {
             P: "gtceu:lv_electric_piston",
             D: "#functionalstorage:drawer"
         }).id("functionalstorage:compacting_drawer")
+        /*
         event.shaped("functionalstorage:simple_compacting_drawer", [
             "III",
             "IDP",
@@ -31,6 +32,8 @@ ServerEvents.recipes(event => {
             P: "gtceu:lv_electric_piston",
             D: "#functionalstorage:drawer"
         }).id("functionalstorage:simple_compacting_drawer")
+        */
+        event.remove("functionalstorage:simple_compacting_drawer")
 
         // Framed Compacting Drawers
         event.shaped("functionalstorage:compacting_framed_drawer", [
@@ -41,6 +44,7 @@ ServerEvents.recipes(event => {
             I: "minecraft:iron_nugget",
             B: "functionalstorage:compacting_drawer"
         }).id("functionalstorage:compacting_framed_drawer")
+        /*
         event.shaped("functionalstorage:framed_simple_compacting_drawer", [
             "III",
             "IBI",
@@ -49,6 +53,8 @@ ServerEvents.recipes(event => {
             I: "minecraft:iron_nugget",
             B: "functionalstorage:simple_compacting_drawer"
         }).id("functionalstorage:framed_simple_compacting_drawer")
+        */
+        event.remove("functionalstorage:framed_simple_compacting_drawer")
 
         // Custom coin compacting recipes
         event.custom({

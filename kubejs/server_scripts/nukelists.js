@@ -18,12 +18,24 @@ ServerEvents.tags("fluid", event => {
 })
 
 ServerEvents.recipes(event => {
+
+    let ignoreTypes = [
+        { type: "nuclearcraft:fission_reactor_controller" },
+        { type: "nuclearcraft:isotope_separator" },
+        { type: "nuclearcraft:fuel_reprocessor" },
+        { type: "minecraft:crafting" },
+        { type: "minecraft:smelting" }
+    ];
+
     global.itemNukeList.forEach(item => {
         event.remove([{ output: item }, { input: item }])
     })
 
     global.fluidNukeList.forEach(fluid => {
-        event.remove([{ output: fluid }, { input: fluid }])
+        event.remove([
+            {not: ignoreTypes, output: fluid},
+            {not: ignoreTypes, input: fluid}
+        ])
     })
 
     // Remove recipes that use items matching the unification patterns.

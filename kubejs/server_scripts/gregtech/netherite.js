@@ -10,10 +10,9 @@ ServerEvents.recipes(event => {
 
     // Omnic Acid
     event.recipes.gtceu.large_chemical_reactor("omnic_acid")
-        .itemInputs("5x gtceu:carbon_dust", "4x kubejs:mote_of_omnium")
-        .inputFluids(Fluid.of("water", 3000))
-        .itemOutputs("gtceu:omnic_acid_dust")
-        .outputFluids(Fluid.of("gtceu:hydrogen", 2000))
+        .itemInputs("5x gtceu:carbon_dust")
+        .inputFluids(Fluid.of("water", 3000), "gtceu:omnium 576")
+        .outputFluids("gtceu:omnic_acid 1000", Fluid.of("gtceu:hydrogen", 2000))
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM])
 
@@ -29,8 +28,8 @@ ServerEvents.recipes(event => {
 
     // Omnic Acid Purifying
     event.recipes.gtceu.chemical_reactor("ancient_debris_purifying")
-        .itemInputs("gtceu:netherite_scrap_dust", "gtceu:omnic_acid_dust")
-        .inputFluids(Fluid.of("water", 2000))
+        .itemInputs("gtceu:netherite_scrap_dust")
+        .inputFluids("gtceu:omnic_acid 1000")
         .itemOutputs("kubejs:purified_ancient_debris_dust")
         .chancedOutput("gtceu:platinum_dust", 3300, 0)
         .duration(300)

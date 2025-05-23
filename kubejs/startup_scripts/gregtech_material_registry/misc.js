@@ -268,12 +268,47 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("ammonium_oxalate")
         .dust()
         .color(0x2596be)
-        .components("2x ammonia", "2x carbon", "4x oxygen")
+        .components("2x ammonia", "2x carbon", "4x oxygen", "2x hydrogen")
+        .formula("(NH4)2C2O4")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("sucrose_solution")
+        .fluid()
+        .color(0x818582)
+        .components("12x carbon", "24x hydrogen", "12x oxygen")
+        .formula("(C12H22O11)H2O")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("sucrose")
+        .dust()
+        .color(0xe0ddda)
+        .components("12x carbon", "22x hydrogen", "11x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("oxalic_acid_dihydrate")
+        .dust()
+        .color(0xfafaf7)
+        .components("6x hydrogen", "6x oxygen", "2x carbon")
+        .formula("(COOH)2(H2O)2")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("oxalic_acid")
+        .dust()
+        .color(0xf7f7f5)
+        .components("2x hydrogen", "2x carbon", "4x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("ammonium_carbonate")
+        .dust()
+        .color(0x91918e)
+        .components("2x ammonia", "1x carbon_dioxide", "1x water")
+        .formula("(NH4)2CO3")
 
     event.create("ammonium_nitrate")
         .dust()
         .color(0xF5F5F5)
         .components("1x ammonia", "1x nitric_acid")
+        .formula("(NH4)NO3")
 
     event.create("thorium_hydroxide")
         .dust()
@@ -287,16 +322,94 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("1x terbium", "3x chlorine")
         .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("magnetic_terbium")
+    event.create("iron_neodymium_terbium_neutronate")
+        .ingot().fluid()
+        .color(0x7d652d).secondaryColor(0x88f2d3)
+        .iconSet("radioactive")
+        .blastTemp(10800, "higher", 524288, 600)
+        .components("4x iron", "3x neodymium", "6x terbium", "2x neutronium", "8x oxygen")
+        .flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING)
+
+    event.create("magnetic_iron_neodymium_terbium_neutronate")
         .ingot()
-        .components("1x terbium")
-        .color(0x8C8F7A)
+        .components("4x iron", "3x neodymium", "6x terbium", "2x neutronium", "8x oxygen")
+        .color(0xb5982f)
         .iconSet(GTMaterialIconSet.MAGNETIC)
-        .ingotSmeltInto(GTMaterials.get("terbium"))
-        .arcSmeltInto(GTMaterials.get("terbium"))
-        .macerateInto(GTMaterials.get("terbium"))
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
+        .ingotSmeltInto(GTMaterials.get("gtceu:iron_neodymium_terbium_neutronate"))
+        .arcSmeltInto(GTMaterials.get("iron_neodymium_terbium_neutronate"))
+        .macerateInto(GTMaterials.get("iron_neodymium_terbium_neutronate"))
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
 })
+
+// Germanium
+
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("coal_fly_ash")
+        .dust(1)
+        .color(0xcf9c91).secondaryColor(0x524541)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("fly_ash_iron_mineral_mixture")
+        .dust(1)
+        .color(0xc9b28d).secondaryColor(0x8f807c)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("fly_ash_polymineral_mixture")
+        .dust(1)
+        .color(0xd7a6e0).secondaryColor(0x245454)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("fly_ash_aluminosilicate")
+        .dust(1)
+        .color(0x969fd9).secondaryColor(0x8a90ba)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("salt_roasted_aluminosilicate")
+        .dust(1)
+        .color(0x32568a).secondaryColor(0x4b4d2c)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
+
+    event.create("oxalic_acid_solution")
+        .fluid()
+        .color(0xf7f7f5)
+        .components("2x hydrogen", "2x carbon", "4x oxygen", "hydrogen", "2x oxygen")
+        .formula("(H2C2O4)H2O")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("oxalic_acid_silicon_solution")
+        .fluid()
+        .color(0x6a6b9b)
+        .components("2x hydrogen", "2x carbon", "silicon", "4x oxygen", "hydrogen", "2x oxygen")
+        .formula("(H2C2O4)(Si)H2O")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("oxalic_acid_nickel_solution")
+        .fluid()
+        .color(0x6e909c)
+        .components("2x hydrogen", "2x carbon", "2x nickel", "4x oxygen", "hydrogen", "2x oxygen")
+        .formula("(H2C2O4)(Ni2)H2O")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("polymineral_leachate")
+        .fluid()
+        .color(0x6b5a67)
+
+    event.create("iron_mineral_solution")
+        .fluid()
+        .color(0x6b5a67)
+
+})
+
+// Advanced Solder
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("advanced_soldering_alloy")
+        .ingot()
+        .fluid()
+        .color(0x74b59b)
+        .iconSet("dull")
+        .components("15x bismuth", "11x tin", "9x zinc", "4x germanium")
+})
+
 // Misc
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("elemental_reduction_fluid")

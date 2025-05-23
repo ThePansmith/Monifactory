@@ -157,7 +157,7 @@ StartupEvents.registry("item", event => {
     event.create("diamond_lattice")
     event.create("neutron_emitter")
     event.create("ultimate_gem").displayName("§dUltimate Gem").glow(true)
-    event.create("mote_of_omnium").displayName("Mote of Omnium")
+    event.create("mote_of_omnium").displayName("Mote of Raw Omnium")
         .glow(true).rarity("epic")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
     event.create("exotic_materials_catalyst").displayName("Exotic Materials Catalyst")

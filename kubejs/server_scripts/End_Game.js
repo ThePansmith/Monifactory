@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
     // Chemical Reactor
 
     event.recipes.gtceu.chemical_reactor("cryolobus_dust")
-        .itemInputs("gtceu:manyullyn_dust", "minecraft:sculk_catalyst")
+        .itemInputs("gtceu:red_steel_dust", "minecraft:sculk_catalyst")
         .itemOutputs("gtceu:cryolobus_dust")
         .duration(500)
         .EUt(2000)
@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(9000)
 
     event.recipes.gtceu.electric_blast_furnace("universe_resistant_neutronium_heavy_plating")
-        .itemInputs("gtceu:neutronium_plate", "2x kubejs:mote_of_omnium", "16x gtceu:quantum_eye")
+        .itemInputs("gtceu:neutronium_plate", "2x gtceu:omnium_nugget", "16x gtceu:quantum_eye")
         .inputFluids("gtceu:xenon 1000")
         .itemOutputs("kubejs:universe_resistant_neutronium_heavy_plating")
         .duration(200)

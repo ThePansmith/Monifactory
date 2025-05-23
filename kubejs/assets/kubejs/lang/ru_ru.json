@@ -473,5 +473,6 @@
     "item.kubejs.microminer_t2half_damaged": "§7Damaged Dark Steel Plated Micro Mob Slayer [Tier Two and a Half]",
     "item.kubejs.microminer_t4half_damaged": "§7Damaged Lumium Plated Micro Mob Slayer [Tier Four and Half]",
     "item.kubejs.microminer_t2half.desc": "§7§oУбивайте мобов в более безопасных микровселенных и собирайте их лут",
-    "mae2.eu_p2p_deprecation_tooltip": "In 0.13 this will be removed from HM/EM and heavily nerfed in NM!"
+    "mae2.eu_p2p_deprecation_tooltip": "In 0.13 this will be removed from HM/EM and heavily nerfed in NM!",
+    "item.patchouli.guide_book.tooltip": "§cInformation may be inaccurate!"
 }

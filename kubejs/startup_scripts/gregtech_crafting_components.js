@@ -1,3 +1,4 @@
+// priority: -1000
 /**
  * materials
  */
@@ -48,14 +49,11 @@ GTCEuStartupEvents.craftingComponents(event => {
     ]
 
     wireCableComponentPrefixes.forEach(prefixComponentPair => {
-        event.setMaterialEntry(prefixComponentPair[2], GTValues.UEV, new MaterialEntry(prefixComponentPair[0], "omnium"))
-            .setMaterialEntry(GTValues.UIV, new MaterialEntry(prefixComponentPair[1], "holmium"))
-            .setMaterialEntry(GTValues.MAX, new MaterialEntry(prefixComponentPair[1], "monium"))
-        // let wireMap = {};
-        // wireMap[GTValues.UEV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("omnium"));
-        // wireMap[GTValues.UIV] = MaterialEntry(prefixComponentPair[1], GTMaterials.Holmium);
-        // wireMap[GTValues.MAX] = MaterialEntry(prefixComponentPair[1], GTMaterials.get("monium"));
-        // event.modify(prefixComponentPair[2], wireMap)
+        let wireMap = {};
+        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get("omnium"));
+        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[1], GTMaterials.Holmium);
+        wireMap[GTValues.MAX] = UnificationEntry(prefixComponentPair[1], GTMaterials.get("monium"));
+        event.modify(prefixComponentPair[2], wireMap)
     })
 
     // Netherite, Holmium, and Monium for tier up wires/cables
@@ -140,6 +138,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     // event.modify(CraftingComponent.GLASS, glassMap)
 
     event.setMaterialEntries("plate", {
+        UHV: "plate:manyullyn",
         UEV: "plate:omnium",
         UIV: "plate:infinity",
         MAX: "plate:monium",
@@ -157,7 +156,9 @@ GTCEuStartupEvents.craftingComponents(event => {
     // event.modifyMaterialEntry(CraftingComponent.PLATE, plateMap)
 
     const PECA = "plate:polyethyl_cyanoacrylate"
+    const PBI = "plate:polybenzimidazole"
     event.setMaterialEntries("hull_plate", {
+        UHV: PBI,
         UEV: PECA,
         UIV: PECA,
         MAX: PECA
@@ -194,6 +195,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     // TODO: Sawblades (May require making tools for the material)
 
     // Resistive heating wires (typically, these match the EBF coil for that tier)
+    // Used in Alloy Smelters, Electric Furnaces and Extruders
     let heatingCoilComponentPrefixes = [
         [TagPrefix.wireGtDouble, GTCraftingComponents.COIL_HEATING],
         [TagPrefix.wireGtQuadruple, GTCraftingComponents.COIL_HEATING_DOUBLE],
@@ -239,7 +241,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     // electricCoilMap[GTValues.UIV] = MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("holmium"))
     // event.modifyMaterialEntry(CraftingComponent.COIL_ELECTRIC, electricCoilMap)
 
-    const magTerbium = "longRod:magnetic_terbium"
+    const magTerbium = "longRod:magnetic_iron_neodymium_terbium_neutronate"
     event.setMaterialEntries("rod_magnetic", {
         UV: "longRod:magnetic_samarium",
         UHV: magTerbium,
@@ -366,7 +368,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     // //////////////////////////////////////////////////////
 
     event.setMaterialEntries("frame", {
-        UHV: "frame:neutronium",
+        UHV: "frame:manyullyn",
         UEV: "frame:omnium",
         UIV: "frame:infinity",
         MAX: "frame:monium",

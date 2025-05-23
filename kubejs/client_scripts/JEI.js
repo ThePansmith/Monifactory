@@ -27,6 +27,12 @@ JEIEvents.hideItems(event => {
         event.hide("thermal:flux_drill")
     }
 
+    // Simple Compacting Drawers (TEMPORARY UNTIL BUG FIXED)
+    if (doCompacting) {
+        event.hide("functionalstorage:simple_compacting_drawer")
+        event.hide("functionalstorage:framed_simple_compacting_drawer")
+    }
+
     // NuclearCraft
     event.hide(["nuclearcraft:diosmeter", "nuclearcraft:steel_frame", "nuclearcraft:rock_crusher", "nuclearcraft:decay_hastener", "nuclearcraft:irradiator", "nuclearcraft:nuclear_furnace", "nuclearcraft:extractor", "nuclearcraft:electrolyzer", "nuclearcraft:pressurizer", "nuclearcraft:alloy_smelter", "nuclearcraft:centrifuge", "nuclearcraft:manufactory", "nuclearcraft:gas_scrubber", "nuclearcraft:fluid_enricher", "nuclearcraft:isotope_separator", "nuclearcraft:fluid_infuser", "nuclearcraft:chemical_reactor", "nuclearcraft:analyzer", "nuclearcraft:ingot_former", "nuclearcraft:pump", "nuclearcraft:fuel_reprocessor", "nuclearcraft:leacher", "nuclearcraft:crystallizer", "nuclearcraft:assembler", "nuclearcraft:steam_turbine", "nuclearcraft:melter"])
     event.hide(["nuclearcraft:nitrogen_collector", "nuclearcraft:compact_nitrogen_collector", "nuclearcraft:lava_collector", "nuclearcraft:dense_nitrogen_collector", "nuclearcraft:compact_helium_collector", "nuclearcraft:helium_collector", "nuclearcraft:dense_helium_collector"])
