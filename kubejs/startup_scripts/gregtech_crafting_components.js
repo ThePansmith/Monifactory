@@ -82,16 +82,16 @@ GTCEuStartupEvents.craftingComponents(event => {
     setCableTierUp("cable_tier_up_hex", "wireGtHex")
 
 
-    wireCableTierUpComponentPrefixes.forEach(prefixComponentPair => {
-        event.setMaterialEntry(prefixComponentPair[1], GTValues.UHV, new MaterialEntry(prefixComponentPair[0], GTMaterials.get("activated_netherite")))
-        event.setMaterialEntry(prefixComponentPair[1], GTValues.UEV, new MaterialEntry(prefixComponentPair[0], GTMaterials.Holmium))
-        event.setMaterialEntry(prefixComponentPair[1], GTValues.UIV, new MaterialEntry(prefixComponentPair[0], GTMaterials.get("monium")))
-        // let wireTierUpMap = {};
-        // wireTierUpMap[GTValues.UHV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("activated_netherite"));
-        // wireTierUpMap[GTValues.UEV] = MaterialEntry(prefixComponentPair[0], GTMaterials.Holmium);
-        // wireTierUpMap[GTValues.UIV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("monium"));
-        // event.modify(prefixComponentPair[1], wireTierUpMap)
-    })
+    // wireCableTierUpComponentPrefixes.forEach(prefixComponentPair => {
+    //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UHV, new MaterialEntry(prefixComponentPair[0], GTMaterials.get("activated_netherite")))
+    //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UEV, new MaterialEntry(prefixComponentPair[0], GTMaterials.Holmium))
+    //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UIV, new MaterialEntry(prefixComponentPair[0], GTMaterials.get("monium")))
+    //     // let wireTierUpMap = {};
+    //     // wireTierUpMap[GTValues.UHV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("activated_netherite"));
+    //     // wireTierUpMap[GTValues.UEV] = MaterialEntry(prefixComponentPair[0], GTMaterials.Holmium);
+    //     // wireTierUpMap[GTValues.UIV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("monium"));
+    //     // event.modify(prefixComponentPair[1], wireTierUpMap)
+    // })
 
 
     // Pipes
@@ -133,11 +133,11 @@ GTCEuStartupEvents.craftingComponents(event => {
     // event.setItem(GTCraftingComponents.GLASS, GTValues.UIV, Item.of("gtceu:fusion_glass"))
 
     // Glass
-    let glassMap = {};
-    glassMap[GTValues.UHV] = Item.of("gtceu:fusion_glass");
-    glassMap[GTValues.UEV] = Item.of("gtceu:fusion_glass"); // Prism
-    glassMap[GTValues.UIV] = Item.of("gtceu:fusion_glass"); // Prism
-    event.modify(CraftingComponent.GLASS, glassMap)
+    // let glassMap = {};
+    // glassMap[GTValues.UHV] = Item.of("gtceu:fusion_glass");
+    // glassMap[GTValues.UEV] = Item.of("gtceu:fusion_glass"); // Prism
+    // glassMap[GTValues.UIV] = Item.of("gtceu:fusion_glass"); // Prism
+    // event.modify(CraftingComponent.GLASS, glassMap)
 
     event.setMaterialEntries("plate", {
         UEV: "plate:omnium",
