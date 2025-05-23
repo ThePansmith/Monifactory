@@ -385,14 +385,14 @@
 				"{moni.quest.5A70898C99B828E3.description4}"
 			]
 			hide_until_deps_visible: true
-			icon: "gtceu:simulation_supercomputer"
+			icon: "gtceu:simulation_quantumcomputer"
 			id: "5A70898C99B828E3"
 			optional: true
 			size: 1.5d
 			tasks: [
 				{
 					id: "5C159D99CDA8EEE0"
-					item: "gtceu:simulation_supercomputer"
+					item: "gtceu:simulation_quantumcomputer"
 					type: "item"
 				}
 				{
@@ -475,14 +475,14 @@
 				""
 				"{moni.quest.161F61C28DBC5941.description3}"
 			]
-			icon: "gtceu:loot_superfabricator"
+			icon: "gtceu:loot_quantumfabricator"
 			id: "161F61C28DBC5941"
 			optional: true
 			size: 1.5d
 			tasks: [
 				{
 					id: "47C6FEC171CDB1BC"
-					item: "gtceu:loot_superfabricator"
+					item: "gtceu:loot_quantumfabricator"
 					type: "item"
 				}
 				{

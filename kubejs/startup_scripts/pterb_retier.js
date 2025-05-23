@@ -4,7 +4,7 @@
  */
 
 let PTERBMachine = Java.loadClass("net.neganote.gtutilities.common.machine.multiblock.PTERBMachine")
-let SupplierMemoizer = Java.loadClass("com.gregtechceu.gtceu.utils.SupplierMemoizer")
+let GTMemoizer = Java.loadClass("com.gregtechceu.gtceu.utils.memoization.GTMemoizer")
 
 StartupEvents.postInit(event => {
     let UtilMachines = Java.loadClass("net.neganote.gtutilities.common.machine.UtilMachines");
@@ -25,5 +25,5 @@ StartupEvents.postInit(event => {
         .where("C", Predicates.controller(Predicates.blocks(UtilMachines.PTERB_MACHINE.getBlock())))
         .where("F", Predicates.frames(GTMaterials.Europium))
         .build()
-    UtilMachines.PTERB_MACHINE.setPatternFactory(SupplierMemoizer.memoize(() => pterb_pattern.apply(UtilMachines.PTERB_MACHINE)));
+    UtilMachines.PTERB_MACHINE.setPatternFactory(GTMemoizer.memoize(() => pterb_pattern.apply(UtilMachines.PTERB_MACHINE)));
 })
