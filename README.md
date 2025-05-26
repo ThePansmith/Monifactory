@@ -15,7 +15,7 @@
 - [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](CHANGELOG.md)
 - A complete overhaul of UV+ progression from Nomifactory CEu
 - Draconic Evolution and Avaritia have been replaced with new mechanics involving Sculk
-- A new, Harder difficulty mode for returning Nomi CEu Hard Mode players
+- A new, Expert difficulty mode for returning Nomi CEu Hard Mode players
 - A retexturing of everything to fit the modern style
 - Optional compatibility with various mods, such as Create or XNet
 
