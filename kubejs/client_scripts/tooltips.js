@@ -163,6 +163,12 @@ ItemEvents.tooltip(tooltip => {
         text.add(5, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.2"))
     })
 
+    tooltip.addAdvanced("gtceu:prismatic_crucible", (item, adv, text) => {
+        text.add(1, Text.translatable("monilabs.tooltip.prismatic.0", rainbowifySingle(Text.translatable("monilabs.tooltip.prismatic.rainbow"), Math.round(Client.lastNanoTime / 1000000000))))
+        text.add(2, Text.translatable("monilabs.tooltip.prismatic.1"))
+        text.add(3, Text.translatable("monilabs.tooltip.prismatic.2"))
+    })
+
     tooltip.addAdvanced("gtceu:omnic_forge", (item, adv, text) => {
         text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
     })

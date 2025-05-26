@@ -6,10 +6,11 @@ Like this list, some features here are WIP.
 
 <!-- omit in toc -->
 ### Table of Contents
-- [Post-Tank Overhaul](#post-tank-overhaul)
 - [Early-game Changes](#early-game-changes)
 - [Mid-game Changes](#mid-game-changes)
+- [Microminer Overhaul](#microminer-overhaul)
 - [Late-game Changes](#late-game-changes)
+- [Endgame Overhaul](#endgame-overhaul)
 - [Storage Upgrades](#storage-upgrades)
 - [Laser Transportation](#laser-transportation)
 - [Deeper Mob Learning](#deeper-mob-learning)
@@ -21,34 +22,6 @@ Like this list, some features here are WIP.
 - [New pack mode: Expert](#new-pack-mode-expert)
 - [Textures and assets](#textures-and-assets)
 - [Optional Compatibility](#optional-compatibility)
-
-
-
-
-# Post-Tank Overhaul
-* The entirety of post-tank has been remade from the ground up, featuring new mechanics, tiers, etc.
-* 2 New Microminers
-* 3 New Circuit Tiers
-    * Matter, Dimensional, Monic
-* 6 New Post-Tank Multiblocks
-    * Omnic Forge, for late-game material processing
-    * Dimensional Superassembler, a parallelizable assembly line
-    * Loot Superfabricator, made to meet the speeds of the Simulation Supercomputer
-    * Hyperbolic Microverse Projector, a parallelizable projector, able to perform all microverse missions, as well as a couple of its own.
-    * Helical Fusion Reactor, (Hard mode/Expert mode only!) for speedy late-game fusion recipes
-    * Sculk Biocharger, capable of performing both Charging and Discharging (more on those below) recipes in parallel
-    * Subatomic Digital Assembler, see below 
-* The Creative Tank Replicator has been reworked into the Subatomic Digital Assembler, allowing it to construct other items
-    * Creative Tank can now replicate both creative quantum tanks and creative fluid ME cells
-    * Creative Storage can replicate quantum tanks, chests, and Soph Storage Max Upgrades
-    * Creative Computation Data can replicate creative computation providers and creative data access hatches.
-    * Creative Energy can replicate GregTech energy emitter, EnderIO creative energy, and AE2 Creative Energy Cell
-    * Some interesting things can happen if you try to replicate the unreplicatable...
-* More interesting power generation with the Large Naquadah Reactor and Naquadah Refinery 
-* New processing chains and materials 
-* New SMD tier: Complex SMDs
-* New 13x13 Extended Crafting table tier, used for the new microminers
-
 
 # Early-game Changes
 * Steel changes (Normal mode only)
@@ -67,10 +40,17 @@ Like this list, some features here are WIP.
 
 # Mid-game Changes
 * The Multismelter now also works as a parallelizable alloy smelter (new to GregTech CEu Modern)
-* New microminer missions
+* Microminer Rework
 * 4 new GCyM-style multiblocks for your parallelization needs
 * Infinite ME water and cobblestone cells
 * Space travel is now handled by Ad Astra
+
+# Microminer Overhaul
+* Microminers have been reworked to be worth automating for resources
+* Microminers themselves now return from missions, with the bulk of the cost now coming from easier to automate secondary resources 
+    * Microminer mission outputs have been adjusted to account for this, resulting in a massive net buff for missions
+* Added various new missions
+* Added a Tier 2.5 Microminer for earlygame mob drop gathering in Hardmode
 
 
 # Late-game Changes 
@@ -79,6 +59,31 @@ Like this list, some features here are WIP.
 * New Multiblocks
     * Quintessence Infuser, a parallelizable Soul Binder unlocked in ZPM
     * Large Naquadah Reactor, a new method of power generation.
+
+
+# Endgame Overhaul
+* The entirety of post-tank has been remade from the ground up, featuring new mechanics, tiers, etc.
+* Creative tank itself have been removed, with focus being returned to scaling up your existing factory instead of nullifying your entire factory.
+* 2 New Microminers
+* 3 New Circuit Tiers
+    * Matter, Dimensional, Monic
+* 6 New Post-Tank Multiblocks
+    * Omnic Forge, for late-game material processing
+    * Dimensional Superassembler, a parallelizable assembly line
+    * Loot Superfabricator, made to meet the speeds of the Simulation Supercomputer
+    * Hyperbolic Microverse Projector, a parallelizable projector, able to perform all microverse missions, as well as a couple of its own.
+    * Helical Fusion Reactor, (Hard mode/Expert mode only!) for speedy late-game fusion recipes
+    * Sculk Biocharger, capable of performing both Charging and Discharging (more on those below) recipes in parallel
+    * Subatomic Digital Assembler, see below 
+* The Creative Tank Replicator has been reworked into the Subatomic Digital Assembler, allowing it to construct other items
+    * Creative Storage can replicate quantum tanks, chests, and Soph Storage Max Upgrades
+    * Creative Computation Data can replicate creative computation providers and creative data access hatches.
+    * Creative Energy can replicate GregTech energy emitter, EnderIO creative energy, and AE2 Creative Energy Cell
+    * Some interesting things can happen if you try to replicate the unreplicatable...
+* More interesting power generation with the Large Naquadah Reactor and Naquadah Refinery 
+* New processing chains and materials 
+* New SMD tier: Complex SMDs
+* New 13x13 Extended Crafting table tier, used for the new microminers
 
 
 # Storage Upgrades
