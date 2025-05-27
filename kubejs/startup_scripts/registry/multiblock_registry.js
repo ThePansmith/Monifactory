@@ -151,6 +151,10 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
+
+    const MoniRecipeTypes = Java.loadClass("net.neganote.monilabs.gtbridge.MoniRecipeTypes")
+    MoniRecipeTypes.createPrismaCRecipeType("chromatic_processing")
+    MoniRecipeTypes.createPrismaCRecipeType("chromatic_transcendence")
 })
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
@@ -947,7 +951,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("prismatic_crucible", "multiblock")
         .machine((holder) => new PrismaticCrucibleMachine(holder))
         .rotationState(RotationState.ALL)
-        .recipeTypes(MoniRecipeTypes.PRISMATIC_CRUCIBLE_RECIPES)
+        .recipeTypes(["chromatic_processing", "chromatic_transcendence"])
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock("kubejs:dimensional_stabilization_netherite_casing"))
         .pattern(definition => FactoryBlockPattern.start()

@@ -130,6 +130,8 @@
     "gtceu.multiblock.helical_fusion_reactor.description": "§7The Helical Fusion Reactor is a very large multiblock structure used for fusing elements into heavier ones in parallel. For every Hatch it has, its buffer increases by 80M EU, and has a maximum of 1280M.",
     "block.gtceu.mega_alloy_blast_smelter": "Mega Alloy Blast Smelter",
     "block.gtceu.prismatic_crucible": "Prismatic Crucible",
+    "gtceu.chromatic_processing": "Chromatic Processing",
+    "gtceu.chromatic_transcendence": "Chromatic Transcendence",
     "block.gtceu.omnic_synthesizer": "Omnic Synthesizer",
     "block.gtceu.omnidimensional_power_singularity": "Omnidimensional Power Singularity",
     "block.gtceu.creative_data_multi": "Creative Data Multi",
