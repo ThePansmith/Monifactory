@@ -117,22 +117,22 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.fission_reactor(fuel)
             .itemInputs("kubejs:" + fuel)
             .itemOutputs("kubejs:depleted_" + fuel)
-            .duration(duration)
-            .EUt(EUt)
+            .duration(duration * 20)
+            .EUt(EUt * 0.75)
     }
 
     // Temp values, obv
-    fissionRecipe("tbu", 150, "-576");
-    fissionRecipe("leu_233", 150, "-576");
-    fissionRecipe("leu_235", 150, "-576");
-    fissionRecipe("len_236", 150, "-576");
-    fissionRecipe("lep_239", 150, "-576");
-    fissionRecipe("lep_241", 150, "-576");
-    fissionRecipe("lea_242", 150, "-576");
-    fissionRecipe("lecm_243", 150, "-576");
-    fissionRecipe("lecm_245", 150, "-576");
-    fissionRecipe("lecm_247", 150, "-576");
-    fissionRecipe("leb_248", 150, "-576");
-    fissionRecipe("lecf_249", 150, "-576");
-    fissionRecipe("lecf_251", 150, "-576");
+    fissionRecipe("tbu", 720, -1200);
+    fissionRecipe("leu_233", 133, -3000);
+    fissionRecipe("leu_235", 240, -2400);
+    fissionRecipe("len_236", 99, -1800);
+    fissionRecipe("lep_239", 229, -2100);
+    fissionRecipe("lep_241", 158, -3300);
+    fissionRecipe("lea_242", 74, -3840);
+    fissionRecipe("lecm_243", 75, -4200);
+    fissionRecipe("lecm_245", 121, -3250);
+    fissionRecipe("lecm_247", 108, -2750);
+    fissionRecipe("leb_248", 108, -2700);
+    fissionRecipe("lecf_249", 52, -4320);
+    fissionRecipe("lecf_251", 100, -4500);
 })

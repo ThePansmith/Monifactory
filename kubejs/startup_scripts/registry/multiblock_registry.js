@@ -615,10 +615,11 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .durationMultiplier(1 / speedup)
                 .eutMultiplier(speedup * efficiency)
                 .build()
-                .andThen(layers >= 20
-                    ? GTRecipeModifiers.PARALLEL_HATCH.getModifier(machine, recipe)
-                    : ModifierFunction.IDENTITY
-                )
+                // .andThen(layers >= 20
+                //     ? GTRecipeModifiers.PARALLEL_HATCH.getModifier(machine, recipe)
+                //     : ModifierFunction.IDENTITY
+                // )
+                // Recycle for a Tier 2 perhaps?
         }])
         .appearanceBlock(() => Block.getBlock("kubejs:lead_shield_casing"))
         .generator(true)
@@ -632,7 +633,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("M", Predicates.abilities(PartAbility.MAINTENANCE))
             .where("R", Predicates.blocks("kubejs:lead_shield_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                // .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)) Ditto
             )
             .where("C", Predicates.blocks("kubejs:lead_shield_casing", "gtceu:fusion_glass"))
             .where("F", Predicates.blocks("kubejs:fuel_cell"))

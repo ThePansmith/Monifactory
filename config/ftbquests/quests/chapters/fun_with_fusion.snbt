@@ -353,7 +353,7 @@
 				""
 				"{moni.quest.4BE6C4E7FDF7C71B.description4}"
 			]
-			icon: "kubejs:tbu_fuel"
+			icon: "kubejs:tbu"
 			id: "4BE6C4E7FDF7C71B"
 			rewards: [{
 				id: "06139FE8ADC033ED"
@@ -362,7 +362,7 @@
 			}]
 			tasks: [{
 				id: "44C0DC3995B49AE9"
-				item: "kubejs:tbu_fuel"
+				item: "kubejs:tbu"
 				type: "item"
 			}]
 			title: "{moni.quest.4BE6C4E7FDF7C71B.title}"
