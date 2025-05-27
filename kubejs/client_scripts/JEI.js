@@ -92,9 +92,6 @@ JEIEvents.addItems(event => {
     event.add(Item.of("ironjetpacks:cell", {Id: "ironjetpacks:reinforced"}))
     event.add(Item.of("ironjetpacks:cell", {Id: "ironjetpacks:resonant"}))
 
-    // NuclearCraft
-    event.add(["nuclearcraft:tough_alloy_ingot", "nuclearcraft:hard_carbon_ingot", "nuclearcraft:ferroboron_ingot", "nuclearcraft:rhodochrosite_dust"])
-
     // Thermal
     event.add("thermal:nuke_tnt")
 })

@@ -145,6 +145,23 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
 
+    // Fission
+    event.create("fuel_cell")
+        .displayName("Nuclear Fuel Cell")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
+        .defaultCutout();
+
+    event.create("moderation_cell")
+        .displayName("Nuclear Moderation Cell")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
 
     // Dense Ores
     const ores = [
@@ -185,7 +202,9 @@ StartupEvents.registry("block", event => {
     // Machine Casings
     const casings = [
         "microverse",
+        "black_steel",
         "dark_soularium",
+        "lead_shield",
         "omnic_matrix_machine",
         "dimensional_stabilization_netherite",
         "cryolobus",

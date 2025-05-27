@@ -25,3 +25,9 @@ deprecateItem("kubejs:dilithium_crystal", "gtceu:dilithium_gem", "Dilithium")
 
 // Ancient Debris
 deprecateItem("kubejs:crushed_ancient_debris", "gtceu:crushed_netherite_scrap_ore", "Crushed Ancient Debris")
+
+// Old Nethline Items
+deprecateItem("kubejs:diamond_lattice", "6x minecraft:diamond", "Diamond Lattice")
+deprecateItem("kubejs:purified_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Purified Ancient Debris Dust")
+deprecateItem("kubejs:processed_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Processed Ancient Debris Dust")
+deprecateItem("kubejs:inert_netherite_scrap", "kubejs:activated_netherite_scrap", "Inert Netherite Scrap")

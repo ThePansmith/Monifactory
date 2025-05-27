@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
         .EUt(1920)
 
     event.recipes.gtceu.omnic_forge("fieldstabilizedcompound")
-        .itemInputs("4x gtceu:uiv_field_generator", "3x gtceu:uev_field_generator", "2x gtceu:uhv_field_generator", "12x gtceu:omnic_acid_dust", "10x kubejs:quasi_stable_neutron_star")
+        .itemInputs("4x gtceu:uiv_field_generator", "3x gtceu:uev_field_generator", "2x gtceu:uhv_field_generator", "12x gtceu:omnium_block", "10x kubejs:quasi_stable_neutron_star") // TODO: REPLACE OMNIUM BLOCK WITH PRISMATIC STUFF
         .itemOutputs("kubejs:field_stabilised_omnic_pulsar_compound")
         .duration(255)
         .EUt(16380)

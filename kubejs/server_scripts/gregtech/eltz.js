@@ -31,8 +31,8 @@ ServerEvents.recipes(event => {
     // Shiny metal powder half
 
     event.recipes.gtceu.large_chemical_reactor("inert_powder_reacting")
-        .itemInputs("1x kubejs:dusty_inert_powder", "gtceu:omnic_acid_dust")
-        .inputFluids("minecraft:water 1000", "gtceu:enriched_naquadah 144")
+        .itemInputs("1x kubejs:dusty_inert_powder")
+        .inputFluids("minecraft:omnic_acid 1000", "gtceu:enriched_naquadah 144")
         .itemOutputs("kubejs:shiny_powder_mixture")
         .chancedOutput("kubejs:cryotheum_dust", 1000, 100)
         .chancedOutput("kubejs:pyrotheum_dust", 1000, 100)

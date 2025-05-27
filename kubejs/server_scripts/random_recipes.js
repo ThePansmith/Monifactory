@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
 
     // Snad
     if (doSnad) {
-        if(doHarderRecipes) {
+        if (doHarderRecipes) {
             event.shapeless("snad:snad", ["2x kubejs:double_compressed_sand", "enderio:pulsating_crystal"]).id("snad:snad")
             event.shapeless("snad:red_snad", ["2x kubejs:double_compressed_red_sand", "enderio:pulsating_crystal"]).id("snad:red_snad")
         } else {
@@ -110,23 +110,23 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
     // Processing for Ender Spores
-    event.custom({
-        "type": "thermal:insolator",
-        "ingredient": {
-            "item": "kubejs:ender_spore"
-        },
-        "result": [
-            {
-                "item": "kubejs:ender_spore",
-                "chance": 2.0
-            }
-        ],
-        "energy_mod": 3.0
-    })
-
     if (!doHNN) {
         event.shapeless("kubejs:ender_spore", ["minecraft:chorus_flower", "minecraft:ender_pearl", "thermal:phytogro", "minecraft:experience_bottle"])
         event.smelting("minecraft:ender_pearl", "kubejs:ender_spore")
+
+        event.custom({
+            "type": "thermal:insolator",
+            "ingredient": {
+                "item": "kubejs:ender_spore"
+            },
+            "result": [
+                {
+                    "item": "kubejs:ender_spore",
+                    "chance": 2.0
+                }
+            ],
+            "energy_mod": 3.0
+        })
 
         event.recipes.gtceu.greenhouse("kubejs:greenhouse_boosted_ender_spore")
             .circuit(2)
@@ -703,6 +703,14 @@ ServerEvents.recipes(event => {
         .duration(320)
         .EUt(-2048)
 
+    // Advanced Soldering Alloy
+    event.recipes.gtceu.mixer("soldering_alloy")
+        .itemInputs("15x gtceu:bismuth_dust", "11x gtceu:tin_dust", "9x gtceu:zinc_dust", "4x gtceu:germanium_dust")
+        .itemOutputs("39x gtceu:soldering_alloy_dust")
+        .duration(700)
+        .EUt(480)
+        .circuit(2)
+
     // Neutronium Buff
     event.remove({ id: "gtceu:fusion_reactor/americium_and_naquadria_to_neutronium_plasma" })
     event.recipes.gtceu.fusion_reactor("neutronium_buffed")
@@ -973,7 +981,7 @@ ServerEvents.recipes(event => {
     })
 
     // Let Oilsands have multiple types of oil
-    event.remove({id:"gtceu:centrifuge/oilsands_dust_separation"})
+    event.remove({ id: "gtceu:centrifuge/oilsands_dust_separation" })
     event.recipes.gtceu.centrifuge("oilsands_to_oil")
         .itemInputs("gtceu:oilsands_dust")
         .chancedOutput("minecraft:sand", 5000, 5000)
@@ -1007,7 +1015,7 @@ ServerEvents.recipes(event => {
         .circuit(1)
 
     // Fix ilmenite -> rutile stoich
-    event.remove({id:"gtceu:electric_blast_furnace/rutile_from_ilmenite"})
+    event.remove({ id: "gtceu:electric_blast_furnace/rutile_from_ilmenite" })
 
     event.recipes.gtceu.electric_blast_furnace("rutile_from_ilmenite")
         .itemInputs("10x gtceu:ilmenite_dust", "2x gtceu:carbon_dust")

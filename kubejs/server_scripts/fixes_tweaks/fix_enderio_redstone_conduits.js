@@ -17,10 +17,6 @@ ServerEvents.tags("block", event => {
         "systeams:steam_dynamo",
         /^systeams:.*_boiler$/,
 
-        // NC:Neoteric controller & io port
-        "nuclearcraft:fission_reactor_controller",
-        "nuclearcraft:fission_reactor_port",
-
         // Snad
         "snad:snad",
         "snad:red_snad",
