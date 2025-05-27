@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
     // Chemical Reactor
 
     event.recipes.gtceu.chemical_reactor("cryolobus_dust")
-        .itemInputs("gtceu:manyullyn_dust", "minecraft:sculk_catalyst")
+        .itemInputs("gtceu:red_steel_dust", "minecraft:sculk_catalyst")
         .itemOutputs("gtceu:cryolobus_dust")
         .duration(500)
         .EUt(2000)
@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(9000)
 
     event.recipes.gtceu.electric_blast_furnace("universe_resistant_neutronium_heavy_plating")
-        .itemInputs("gtceu:neutronium_plate", "2x kubejs:mote_of_omnium", "16x gtceu:quantum_eye")
+        .itemInputs("gtceu:neutronium_plate", "2x gtceu:omnium_nugget", "16x gtceu:quantum_eye")
         .inputFluids("gtceu:xenon 1000")
         .itemOutputs("kubejs:universe_resistant_neutronium_heavy_plating")
         .duration(200)
@@ -258,22 +258,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x gtceu:omnium_nugget")
         .duration(20)
         .EUt(30)
-
-    // Crystal Matrix Materials
-    event.shaped("kubejs:diamond_lattice", [
-        "PBP",
-        "BGB",
-        "PBP"
-    ], {
-        P: "minecraft:diamond",
-        G: "gtceu:exquisite_diamond_gem",
-        B: "gtceu:diamond_screw"
-    }).id("kubejs:diamond_lattice")
-    event.recipes.gtceu.assembler("kubejs:diamond_lattice")
-        .itemInputs("gtceu:flawless_diamond_gem", "2x gtceu:diamond_plate", "4x gtceu:diamond_screw")
-        .itemOutputs("kubejs:diamond_lattice")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.ZPM])
 
     // Ultimate Gem
     event.recipes.extendedcrafting.shapeless_table(

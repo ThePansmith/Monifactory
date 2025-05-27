@@ -202,6 +202,7 @@ StartupEvents.registry("block", event => {
     // Machine Casings
     const casings = [
         "microverse",
+        "black_steel",
         "dark_soularium",
         "lead_shield",
         "omnic_matrix_machine",
