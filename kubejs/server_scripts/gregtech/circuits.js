@@ -209,10 +209,9 @@ ServerEvents.recipes(event => {
             "16x gtceu:omnium_plate",
             "#gtceu:circuits/luv",
             "gtceu:iv_emitter",
-            "2x gtceu:omnic_acid_dust",
             "3x gtceu:flawless_monazite_gem"
         )
-        .inputFluids("gtceu:distilled_water 500")
+        .inputFluids("gtceu:omnic_acid 2000")
         .itemOutputs("32x kubejs:matter_circuit_board")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)

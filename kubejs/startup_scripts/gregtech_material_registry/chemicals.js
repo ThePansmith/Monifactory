@@ -164,7 +164,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("C6H7NO2")
 
     event.create("polyethyl_cyanoacrylate")
-        .polymer()
+        .polymer().liquid()
         .color(0x708787)
         .components("1x nitrogen", "6x carbon", "7x hydrogen", "2x oxygen")
         .fluidPipeProperties(3000, 12000, true, true, true, false)

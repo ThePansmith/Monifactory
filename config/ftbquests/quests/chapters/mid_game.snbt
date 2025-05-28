@@ -2982,7 +2982,7 @@
 				{
 					count: 2L
 					id: "31BF9A11512D0FAE"
-					item: { Count: 2, id: "gtceu:ev_sensor" }
+					item: { Count: 2, id: "gtceu:ev_emitter" }
 					type: "item"
 				}
 			]
@@ -3095,6 +3095,68 @@
 			title: "{moni.quest.6B80737C5E1359F7.title}"
 			x: 30.5d
 			y: 8.5d
+		}
+		{
+			dependencies: [
+				"0874A0191325CFDB"
+				"5BE3E37772FAF6CB"
+			]
+			description: ["{moni.quest.51FD757E07E397A1.description1}"]
+			hide_until_deps_visible: true
+			icon: "gtceu:simulation_supercomputer"
+			id: "51FD757E07E397A1"
+			tasks: [
+				{
+					id: "721A109D9665F701"
+					item: "gtceu:simulation_supercomputer"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "7BC42B5A0DB23D7A"
+					item: "kubejs:dark_steel_machine_hull"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "35303EB3C0841529"
+					item: "gtceu:pulsating_alloy_block"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"51FD757E07E397A1"
+				"5BE3E37772FAF6CB"
+			]
+			description: ["{moni.quest.7A716485BBDA8629.description1}"]
+			hide_until_deps_visible: true
+			icon: "gtceu:loot_superfabricator"
+			id: "7A716485BBDA8629"
+			tasks: [
+				{
+					id: "32EAE4F30B3C118D"
+					item: "gtceu:loot_superfabricator"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "372051DF4441A75D"
+					item: "kubejs:dark_steel_machine_hull"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "25FFFADC108CB556"
+					item: { Count: 4, id: "gtceu:energetic_alloy_block" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 1.5d
 		}
 	]
 	title: "{moni.chapter.7D825FFA33DC85A7.title}"
