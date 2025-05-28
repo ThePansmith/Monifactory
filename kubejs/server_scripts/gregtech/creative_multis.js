@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.assembly_line("kubejs:creative_power")
-        .itemInputs("4x kubejs:dimensional_processor_mainframe", "16x gtceu:monium_plate", "4x kubejs:dimensional_stabilization_netherite_casing", "8x gtceu:uev_field_generator", "8x gtceu:uev_emitter", "4x gtceu:max_battery", "2x solarflux:sp_custom_infinity", "32x gtceu:polyethyl_cyanoacrylate_plate")
+        .itemInputs("4x #gtceu:circuits/uiv", "16x gtceu:monium_plate", "4x kubejs:dimensional_stabilization_netherite_casing", "8x gtceu:uev_field_generator", "8x gtceu:uev_emitter", "4x gtceu:max_battery", "2x solarflux:sp_custom_infinity", "32x gtceu:polyethyl_cyanoacrylate_plate")
         .inputFluids("gtceu:soldering_alloy 1152")
         .itemOutputs("monilabs:creative_energy_multi")
         .stationResearch(b => b
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .EUt(1966080)
 
     event.recipes.gtceu.assembly_line("kubejs:creative_data")
-        .itemInputs("4x kubejs:dimensional_processor_mainframe", "16x gtceu:holmium_plate", "4x kubejs:dimensional_stabilization_netherite_casing", "4x gtceu:uev_emitter", "8x gtceu:advanced_data_access_hatch", "4x gtceu:network_switch", "32x gtceu:polyethyl_cyanoacrylate_plate")
+        .itemInputs("4x #gtceu:circuits/uiv", "16x gtceu:holmium_plate", "4x kubejs:dimensional_stabilization_netherite_casing", "4x gtceu:uev_emitter", "8x gtceu:advanced_data_access_hatch", "4x gtceu:network_switch", "32x gtceu:polyethyl_cyanoacrylate_plate")
         .inputFluids("gtceu:soldering_alloy 1152")
         .itemOutputs("monilabs:creative_data_multi")
         .stationResearch(b => b
