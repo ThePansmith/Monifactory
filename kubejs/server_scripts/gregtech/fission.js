@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
     decomp("le_mox", ["8x kubejs:uranium_dust", "gtceu:plutonium_dust"])
     decomp("he_mox", ["6x kubejs:plutonium_241_dust", "3x kubejs:californium"])
 
-    function decompdepleted(fuelType, outA, outB, voltageTier) {
+    function decompdepleted(fuelType, outA, outB, byproduct, voltageTier) {
         apply(
             event.recipes.gtceu.centrifuge(fuelType + "_decompdepleted")
                 .itemInputs("kubejs:depleted_" + fuelType)
@@ -75,14 +75,26 @@ ServerEvents.recipes(event => {
                 .inputFluids("gtceu:phosphoric_acid 2000"),
             "itemOutputs", outB
         )
+            .chancedOutput(byproduct, 3300, 330)
             .duration(400)
             .EUt(GTValues.VHA[voltageTier])
     }
 
-    decompdepleted("tbu", ["2x gtceu:uranium_nugget", "8x gtceu:uranium_235_nugget", "3x kubejs:waste_tbu"], ["8x gtceu:lead_nugget", "4x gtceu:thorium_nugget", "5x kubejs:neptunium"], GTValues.IV)
-    decompdepleted("leu_235", ["40x gtceu:uranium_nugget", "6x gtceu:uranium_235_nugget", "8x gtceu:plutonium_nugget", "4x gtceu:plutonium_241_nugget", "3x kubejs:waste_leu_235"], ["6x gtceu:lead_nugget", "2x kubejs:neptunium", "8x gtceu:americium_nugget", "4x kubejs:curium"], GTValues.IV)
-    decompdepleted("mox", ["20x gtceu:uranium_nugget", "4x gtceu:plutonium_nugget", "16x gtceu:plutonium_241_nugget", "3x kubejs:waste_mox"], ["4x gtceu:lead_nugget", "8x kubejs:curium", "4x kubejs:berkelium", "2x kubejs:californium"], GTValues.LuV)
-    decompdepleted("mac", ["6x gtceu:plutonium_nugget", "12x gtceu:plutonium_241_nugget", "3x kubejs:waste_mac"], ["2x gtceu:lead_nugget", "4x gtceu:actinium_nugget", "6x kubejs:berkelium", "4x kubejs:californium", "2x kubejs:einsteinium"], GTValues.ZPM)
+    // All fuels take 9 items to craft, so the maximum number of outputs can't exceed 89 items. It can be lower, since other non-relevant byproducts can
+    // theoretically be created and are "lost" during the fission process. Alternatively, other byproducts can be added to the recipes.
+    //
+    // TBU: 50 outputs + 18 byproducts (2 Cadmium Dust) = 68
+    // LEU-235: 59 outputs + 18 byproducts (2 Silver Dust) = 77
+    // MOX: 53 outputs + 18 byproducts (2 Rare Earth Dust) = 71
+    // MAC: 51 outputs + 9 byproducts (1 PGS) = 60
+
+    decompdepleted("tbu", ["10x gtceu:uranium_nugget", "8x gtceu:uranium_235_nugget", "kubejs:waste_tbu"], ["8x gtceu:lead_nugget", "16x gtceu:thorium_nugget", "8x kubejs:neptunium"], "2x gtceu:cadmium_dust", GTValues.IV)
+
+    decompdepleted("leu_235", ["20x gtceu:uranium_nugget", "3x gtceu:uranium_235_nugget", "10x gtceu:plutonium_nugget", "6x gtceu:plutonium_241_nugget", "kubejs:waste_leu_235"],["6x gtceu:lead_nugget", "2x kubejs:neptunium", "9x gtceu:americium_nugget", "3x kubejs:curium"], "2x gtceu:silver_dust", GTValues.IV)
+
+    decompdepleted("mox", ["15x gtceu:uranium_nugget", "4x gtceu:plutonium_nugget", "16x gtceu:plutonium_241_nugget", "kubejs:waste_mox"], ["4x gtceu:lead_nugget", "8x kubejs:curium", "4x kubejs:berkelium", "2x kubejs:californium"], "2x gtceu:rare_earth_dust", GTValues.LuV)
+
+    decompdepleted("mac", ["7x gtceu:uranium_nugget", "10x gtceu:plutonium_nugget", "13x gtceu:plutonium_241_nugget", "kubejs:waste_mac"], ["3x gtceu:lead_nugget", "4x gtceu:actinium_nugget", "7x kubejs:berkelium", "5x kubejs:californium", "2x kubejs:einsteinium"], "gtceu:platinum_group_sludge_dust", GTValues.ZPM)
 
     // Fuel Crafting
     event.recipes.gtceu.forming_press("tbu_forming")
@@ -100,7 +112,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.EV])
 
     event.recipes.gtceu.forming_press("mox_forming")
-        .itemInputs("8x gtceu:uranium_dust", "gtceu:plutonium_dust")
+        .itemInputs("6x gtceu:uranium_dust", "3x gtceu:plutonium_dust")
         .itemOutputs("kubejs:mox")
         .notConsumable("gtceu:cylinder_casting_mold")
         .duration(400)
