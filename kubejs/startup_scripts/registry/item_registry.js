@@ -549,9 +549,8 @@ StartupEvents.registry("item", event => {
     const fissionFuels = [
         ["tbu", "#FFD700", "#8B8000"],
         ["leu_235", "#32CD32", "#006400"],
-        ["heu_235", "#04781d", "#003000"],
-        ["le_mox", "#FF6347", "#8B4513"],
-        ["he_mox", "#b33304", "#4d0101"]
+        ["mox", "#FF6347", "#8B4513"],
+        ["mac", "#b33304", "#4d0101"]
     ];
 
     for (const [name, color, depletedColor] of fissionFuels) {

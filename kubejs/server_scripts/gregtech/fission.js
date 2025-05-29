@@ -80,24 +80,9 @@ ServerEvents.recipes(event => {
     }
 
     decompdepleted("tbu", ["2x gtceu:uranium_nugget", "8x gtceu:uranium_235_nugget", "3x kubejs:waste_tbu"], ["8x gtceu:lead_nugget", "4x gtceu:thorium_nugget", "5x kubejs:neptunium"], GTValues.IV)
-    decompdepleted("leu_235", ["40x gtceu:uranium_nugget", "8x gtceu:plutonium_nugget", "4x gtceu:plutonium_241_nugget", "3x kubejs:waste_leu_235"], ["6x gtceu:lead_nugget", "2x kubejs:neptunium", "8x gtceu:americium_nugget", "2x kubejs:curium"], GTValues.IV)
-    decompdepleted("heu_235", ["30x gtceu:uranium_nugget", "6x gtceu:plutonium_nugget", "6x gtceu:plutonium_241_nugget", "3x kubejs:waste_heu_235"], ["4x gtceu:lead_nugget", "1x kubejs:neptunium", "6x gtceu:americium_nugget", "6x kubejs:curium"], GTValues.LuV)
-    decompdepleted("le_mox", ["20x gtceu:uranium_nugget", "4x gtceu:plutonium_nugget", "16x gtceu:plutonium_241_nugget", "3x kubejs:waste_le_mox"], ["2x gtceu:lead_nugget", "8x kubejs:curium", "4x kubejs:berkelium", "2x kubejs:californium"], GTValues.LuV)
-    decompdepleted("he_mox", ["6x gtceu:plutonium_nugget", "12x gtceu:plutonium_241_nugget", "3x kubejs:waste_he_mox"], ["2x gtceu:lead_nugget", "4x gtceu:actinium_nugget", "6x kubejs:berkelium", "4x kubejs:californium", "2x kubejs:einsteinium"], GTValues.ZPM)
-
-    //decompdepleted("tbu", ["2x kubejs:uranium_233", "8x gtceu:uranium_235_nugget", "kubejs:neptunium_236", "4x kubejs:neptunium_237"], GTValues.IV)
-    //decompdepleted("leu_233", ["4x kubejs:plutonium_242", "4x gtceu:plutonium_nugget", "4x gtceu:plutonium_241_nugget", "3x kubejs:americium_243"], GTValues.IV)
-    //decompdepleted("leu_235", ["kubejs:neptunium_237", "40x gtceu:uranium_nugget", "8x gtceu:plutonium_nugget", "8x gtceu:plutonium_241_nugget"], GTValues.IV)
-    //decompdepleted("len_236", ["kubejs:neptunium_237", "4x kubejs:plutonium_242", "kubejs:americium_242", "3x kubejs:americium_243"], GTValues.LuV)
-    //decompdepleted("lep_239", ["3x kubejs:plutonium_242", "kubejs:curium_243", "8x gtceu:plutonium_nugget", "3x kubejs:curium_246"], GTValues.LuV)
-    //decompdepleted("lep_241", ["kubejs:plutonium_242", "kubejs:plutonium_242", "kubejs:americium_243", "6x kubejs:curium_246"], GTValues.LuV)
-    //decompdepleted("lea_242", ["kubejs:curium_243", "kubejs:curium_245", "5x kubejs:curium_246", "kubejs:curium_247"], GTValues.LuV)
-    //decompdepleted("lecm_243", ["4x kubejs:curium_246", "2x kubejs:berkelium_247", "kubejs:berkelium_248", "kubejs:californium_249"], GTValues.ZPM)
-    //decompdepleted("lecm_245", ["5x kubejs:berkelium_247", "kubejs:berkelium_248", "kubejs:californium_249", "2x kubejs:californium_252"], GTValues.ZPM)
-    //decompdepleted("lecm_247", ["3x kubejs:berkelium_247", "kubejs:berkelium_248", "kubejs:californium_251", "4x kubejs:californium_252"], GTValues.ZPM)
-    //decompdepleted("leb_248", ["kubejs:californium_249", "kubejs:californium_251", "3x kubejs:californium_252", "3x kubejs:californium_252"], GTValues.ZPM)
-    //decompdepleted("lecf_249", ["2x kubejs:californium_250", "kubejs:californium_251", "2x kubejs:californium_252", "2x gtceu:actinium_nugget"], GTValues.ZPM)
-    //decompdepleted("lecf_251", ["kubejs:californium_251", "2x kubejs:californium_252", "2x kubejs:californium_252", "2x gtceu:actinium_nugget"], GTValues.ZPM)
+    decompdepleted("leu_235", ["40x gtceu:uranium_nugget", "6x gtceu:uranium_235_nugget", "8x gtceu:plutonium_nugget", "4x gtceu:plutonium_241_nugget", "3x kubejs:waste_leu_235"], ["6x gtceu:lead_nugget", "2x kubejs:neptunium", "8x gtceu:americium_nugget", "4x kubejs:curium"], GTValues.IV)
+    decompdepleted("mox", ["20x gtceu:uranium_nugget", "4x gtceu:plutonium_nugget", "16x gtceu:plutonium_241_nugget", "3x kubejs:waste_mox"], ["4x gtceu:lead_nugget", "8x kubejs:curium", "4x kubejs:berkelium", "2x kubejs:californium"], GTValues.LuV)
+    decompdepleted("mac", ["6x gtceu:plutonium_nugget", "12x gtceu:plutonium_241_nugget", "3x kubejs:waste_mac"], ["2x gtceu:lead_nugget", "4x gtceu:actinium_nugget", "6x kubejs:berkelium", "4x kubejs:californium", "2x kubejs:einsteinium"], GTValues.ZPM)
 
     // Fuel Crafting
     event.recipes.gtceu.forming_press("tbu_forming")
@@ -114,24 +99,16 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VHA[GTValues.EV])
 
-    event.recipes.gtceu.forming_press("heu_235_forming")
-        .itemInputs("6x gtceu:uranium_dust", "3x gtceu:uranium_235_dust")
-        .itemOutputs("kubejs:heu_235")
-        .notConsumable("gtceu:cylinder_casting_mold")
-        .circuit(1)
-        .duration(400)
-        .EUt(GTValues.VHA[GTValues.IV])
-
-    event.recipes.gtceu.forming_press("le_mox_forming")
+    event.recipes.gtceu.forming_press("mox_forming")
         .itemInputs("8x gtceu:uranium_dust", "gtceu:plutonium_dust")
-        .itemOutputs("kubejs:le_mox")
+        .itemOutputs("kubejs:mox")
         .notConsumable("gtceu:cylinder_casting_mold")
         .duration(400)
         .EUt(GTValues.VHA[GTValues.IV])
 
-    event.recipes.gtceu.forming_press("he_mox_forming")
-        .itemInputs("6x gtceu:plutonium_241_dust", "3x kubejs:californium")
-        .itemOutputs("kubejs:he_mox")
+    event.recipes.gtceu.forming_press("mac_forming")
+        .itemInputs("3x gtceu:uranium_dust", "3x gtceu:plutonium_241_dust", "1x kubejs:curium", "1x kubejs:berkelium", "1x kubejs:californium")
+        .itemOutputs("kubejs:mac")
         .notConsumable("gtceu:cylinder_casting_mold")
         .duration(400)
         .EUt(GTValues.VHA[GTValues.LuV])
@@ -148,7 +125,6 @@ ServerEvents.recipes(event => {
     // Temp values, obv
     fissionRecipe("tbu", 720, -1200);
     fissionRecipe("leu_235", 240, -2400);
-    fissionRecipe("heu_235", 133, -3000)
-    fissionRecipe("le_mox", 189, -3300);
-    fissionRecipe("he_mox", 100, -4500)
+    fissionRecipe("mox", 189, -3300);
+    fissionRecipe("mac", 100, -4500)
 })
