@@ -526,24 +526,11 @@ StartupEvents.registry("item", event => {
     event.create("framedblocks:phantom_paste")
 
     // Fission
-    event.create("thorium_232").texture("kubejs:item/NCreplacement/thorium_232").displayName("Thorium 232")
-    event.create("uranium_233").texture("kubejs:item/NCreplacement/uranium_233").displayName("Uranium 233")
-    event.create("neptunium_236").texture("kubejs:item/NCreplacement/neptunium_236").displayName("Neptunium 236")
-    event.create("neptunium_237").texture("kubejs:item/NCreplacement/neptunium_237").displayName("Neptunium 237")
-    event.create("plutonium_242").texture("kubejs:item/NCreplacement/plutonium_242").displayName("Plutonium 242")
-    event.create("americium_241").texture("kubejs:item/NCreplacement/americium_241").displayName("Americium 241")
-    event.create("americium_242").texture("kubejs:item/NCreplacement/americium_242").displayName("Americium 242")
-    event.create("americium_243").texture("kubejs:item/NCreplacement/americium_243").displayName("Americium 243")
-    event.create("curium_243").texture("kubejs:item/NCreplacement/curium_243").displayName("Curium 243")
-    event.create("curium_245").texture("kubejs:item/NCreplacement/curium_245").displayName("Curium 245")
-    event.create("curium_246").texture("kubejs:item/NCreplacement/curium_246").displayName("Curium 246")
-    event.create("curium_247").texture("kubejs:item/NCreplacement/curium_247").displayName("Curium 247")
-    event.create("berkelium_247").texture("kubejs:item/NCreplacement/berkelium_247").displayName("Berkelium 247")
-    event.create("berkelium_248").texture("kubejs:item/NCreplacement/berkelium_248").displayName("Berkelium 248")
-    event.create("californium_249").texture("kubejs:item/NCreplacement/californium_249").displayName("Californium 249")
-    event.create("californium_250").texture("kubejs:item/NCreplacement/californium_250").displayName("Californium 250")
-    event.create("californium_251").texture("kubejs:item/NCreplacement/californium_251").displayName("Californium 251")
-    event.create("californium_252").texture("kubejs:item/NCreplacement/californium_252").displayName("Californium 252")
+    event.create("neptunium").texture("kubejs:item/NCreplacement/neptunium").displayName("Neptunium")
+    event.create("curium").texture("kubejs:item/NCreplacement/curium").displayName("Curium")
+    event.create("berkelium").texture("kubejs:item/NCreplacement/berkelium").displayName("Berkelium")
+    event.create("californium").texture("kubejs:item/NCreplacement/californium").displayName("Californium")
+    event.create("einsteinium").texture("kubejs:item/NCreplacement/einsteinium").displayName("Einsteinium")
 
     function createFissionFuel(event, name, color, depletedColor) {
         event.create(name)
@@ -553,22 +540,18 @@ StartupEvents.registry("item", event => {
         event.create(`depleted_${name}`)
             .texture("kubejs:item/depleted_fission_fuel")
             .color(0, depletedColor);
+
+        event.create(`waste_${name}`)
+            .texture("kubejs:item/fission_fuel_waste")
+            .color(0, depletedColor);
     }
 
     const fissionFuels = [
         ["tbu", "#FFD700", "#8B8000"],
-        ["leu_233", "#FF4500", "#8B0000"],
         ["leu_235", "#32CD32", "#006400"],
-        ["len_236", "#1E90FF", "#00008B"],
-        ["lep_239", "#FF6347", "#8B4513"],
-        ["lep_241", "#FF8C00", "#8B5A00"],
-        ["lea_242", "#8A2BE2", "#4B0082"],
-        ["lecm_243", "#00CED1", "#008B8B"],
-        ["lecm_245", "#7FFF00", "#556B2F"],
-        ["lecm_247", "#FF1493", "#8B008B"],
-        ["leb_248", "#FFDAB9", "#CD853F"],
-        ["lecf_249", "#00FA9A", "#2E8B57"],
-        ["lecf_251", "#4682B4", "#2F4F4F"]
+        ["heu_235", "#04781d", "#003000"],
+        ["le_mox", "#FF6347", "#8B4513"],
+        ["he_mox", "#b33304", "#4d0101"]
     ];
 
     for (const [name, color, depletedColor] of fissionFuels) {
