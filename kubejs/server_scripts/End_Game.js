@@ -187,13 +187,20 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
 
     // Vacuum Freezer
-    // kubejs Superconductor Wire
+    // Sculk Superconductor Wire
     event.recipes.gtceu.vacuum_freezer("sculk_superconductor")
         .itemInputs("gtceu:cryococcus_ingot")
         .itemOutputs("gtceu:sculk_superconductor_ingot")
         .inputFluids(Fluid.of("gtceu:nether_star", 144))
         .duration(100)
         .EUt(6000)
+
+    event.recipes.gtceu.vacuum_freezer("hyperdegenerate_darconite")
+        .itemInputs("gtceu:darconite_ingot")
+        .itemOutputs("gtceu:hyperdegenerate_darconite_ingot")
+        .inputFluids(Fluid.of("gtceu:hyperdegenerate_matter", 40))
+        .duration(100)
+        .EUt(60000)
 
     // Chemical Reactor
 

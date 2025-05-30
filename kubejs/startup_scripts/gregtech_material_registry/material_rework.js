@@ -54,7 +54,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x89a223).secondaryColor(0x3221fb)
         .iconSet("magic")
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
-        .components("2x neptunium", "1x antimony", "1x terbium", "1x germanium", "4x eltz", "2x carbon")
+        .components("4x eltz", "2x neptunium", "1x antimony", "1x terbium", "1x germanium", "2x carbon")
         .cableProperties(GTValues.V[GTValues.UIV], 64, 0, true)
 
     // UIV pipe/insulator
