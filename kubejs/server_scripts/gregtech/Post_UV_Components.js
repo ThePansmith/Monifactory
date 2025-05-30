@@ -504,7 +504,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("uiv_pump")
-        .itemInputs("gtceu:uiv_electric_motor", "gtceu:null_large_fluid_pipe", "2x gtceu:eltz_plate", "8x gtceu:eltz_screw", "16x gtceu:silicone_rubber_ring", "gtceu:null_rotor", "2x gtceu:holmium_single_wire")
+        .itemInputs("gtceu:uiv_electric_motor", "gtceu:meta_null_large_fluid_pipe", "2x gtceu:eltz_plate", "8x gtceu:eltz_screw", "16x gtceu:silicone_rubber_ring", "gtceu:meta_null_rotor", "2x gtceu:holmium_single_wire")
         .inputFluids("gtceu:soldering_alloy 11520", "gtceu:lubricant 4000", "gtceu:crystal_matrix 5760", "gtceu:naquadria 2304")
         .itemOutputs("gtceu:uiv_electric_pump")
         .duration(1200)
@@ -539,11 +539,11 @@ ServerEvents.recipes(event => {
         .EUt(15728640)
 
     // Cables
-    // UV+ cables are made only with SBR, UHV+ cables require PEEK, UIV cables require null
+    // UV+ cables are made only with SBR, UHV+ cables require PEEK, UIV cables require meta_null
     const cablematsUV = ["tritanium", "yttrium_barium_cuprate", "naquadah_alloy", "europium", "omnium", "darconite", "holmium"];
     const cablematsUHV = ["europium", "omnium", "darconite", "holmium"];
 
     cablematsUV.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));
     cablematsUHV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyvinyl_chloride_foil", "gtceu:polyether_ether_ketone_foil"));
-    event.replaceInput({ id: /cover_holmium_wire_gt_.*_styrene_butadiene/ }, "gtceu:polyphenylene_sulfide_foil", "gtceu:null_foil");
+    event.replaceInput({ id: /cover_holmium_wire_gt_.*_styrene_butadiene/ }, "gtceu:polyphenylene_sulfide_foil", "gtceu:meta_null_foil");
 })

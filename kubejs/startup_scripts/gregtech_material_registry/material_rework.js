@@ -3,7 +3,7 @@
  * Material Rework related material declarations
  */
 GTCEuStartupEvents.registry("gtceu:element", event => {
-    event.create("null")
+    event.create("meta_null")
         .protons(0)
         .neutrons(0)
         .symbol("∅");
@@ -58,11 +58,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .cableProperties(GTValues.V[GTValues.UIV], 64, 0, true)
 
     // UIV pipe/insulator
-    event.create("null")
+    event.create("meta_null")
         .ingot().fluid()
         .color(0x000000).secondaryColor(0x24142c)
         .iconSet("shiny")
-        .element(GTElements.get("null"))
+        .element(GTElements.get("meta_null"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
         .fluidPipeProperties(200000, 20000, true, true, true, true)
 })
