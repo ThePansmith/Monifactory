@@ -155,13 +155,11 @@ GTCEuStartupEvents.craftingComponents(event => {
     // plateMap[GTValues.MAX] = MaterialEntry(TagPrefix.plate, GTMaterials.get("monium"))
     // event.modifyMaterialEntry(CraftingComponent.PLATE, plateMap)
 
-    const PECA = "plate:polyethyl_cyanoacrylate"
-    const PBI = "plate:polybenzimidazole"
     event.setMaterialEntries("hull_plate", {
-        UHV: PBI,
-        UEV: PECA,
-        UIV: PECA,
-        MAX: PECA
+        UHV: "plate:polybenzimidazole",
+        UEV: "plate:polyethyl_cyanoacrylate",
+        UIV: "plate:polyethyl_cyanoacrylate",
+        MAX: "plate:polyethyl_cyanoacrylate"
     })
 
     // event.setMaterialEntry(GTCraftingComponents.HULL_PLATE, GTValues.UEV, new MaterialEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate")))

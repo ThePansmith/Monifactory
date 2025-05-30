@@ -537,4 +537,13 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:uiv_fluid_regulator")
         .duration(50)
         .EUt(15728640)
+
+    // Cables
+    // UV+ cables are made only with SBR, UHV+ cables require PEEK, UIV cables require null
+    const cablematsUV = ["tritanium", "yttrium_barium_cuprate", "naquadah_alloy", "europium", "omnium", "darconite", "holmium"];
+    const cablematsUHV = ["europium", "omnium", "darconite", "holmium"];
+
+    cablematsUV.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));
+    cablematsUHV.forEach(mat => event.replaceInput({ id: new RegExp(`cover_${mat}_wire_gt_.*_styrene_butadiene`) }, "gtceu:polyvinyl_chloride_foil", "gtceu:polyether_ether_ketone_foil"));
+    event.replaceInput({ id: /cover_holmium_wire_gt_.*_styrene_butadiene/ }, "gtceu:polyphenylene_sulfide_foil", "gtceu:null_foil");
 })
