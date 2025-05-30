@@ -65,13 +65,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("null"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
         .fluidPipeProperties(200000, 20000, true, true, true, true)
-
-    // Ethylene-propylene diene monomer (EPDM)
-    // Endgame rubber
-    event.create("ethylene_propylene_diene_monomer")
-        .polymer().liquid()
-        .color(0x354444)
-        .fluidPipeProperties(3000, 12000, true, true, true, false)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
-        .formula("C6H7NO2");
 })

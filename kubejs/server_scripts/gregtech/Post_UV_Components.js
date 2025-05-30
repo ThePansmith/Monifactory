@@ -439,7 +439,7 @@ ServerEvents.recipes(event => {
     // Conveyors
     event.recipes.gtceu.assembly_line("uhv_conveyor")
         .itemInputs("2x gtceu:uhv_electric_motor", "2x gtceu:actinium_plate", "4x gtceu:actinium_ring", "16x gtceu:actinium_round", "4x gtceu:actinium_screw", "2x gtceu:europium_single_cable")
-        .inputFluids("gtceu:soldering_alloy 5760", "gtceu:lubricant 2000", "gtceu:ethylene_propylene_diene_monomer 5760", "gtceu:naquadria 576")
+        .inputFluids("gtceu:soldering_alloy 5760", "gtceu:lubricant 2000", "gtceu:styrene_butadiene_rubber 5760", "gtceu:naquadria 576")
         .itemOutputs("gtceu:uhv_conveyor_module")
         .duration(600)
         .EUt(491520)
@@ -452,7 +452,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("uev_conveyor")
         .itemInputs("2x gtceu:uev_electric_motor", "2x gtceu:sculk_bioalloy_plate", "4x gtceu:sculk_bioalloy_ring", "16x gtceu:sculk_bioalloy_round", "4x gtceu:sculk_bioalloy_screw", "2x gtceu:darconite_single_cable")
-        .inputFluids("gtceu:soldering_alloy 5760", "gtceu:lubricant 3000", "gtceu:ethylene_propylene_diene_monomer 5760", "gtceu:naquadria 1152")
+        .inputFluids("gtceu:soldering_alloy 5760", "gtceu:lubricant 3000", "gtceu:styrene_butadiene_rubber 5760", "gtceu:naquadria 1152")
         .itemOutputs("gtceu:uev_conveyor_module")
         .duration(600)
         .EUt(1966080)
@@ -465,7 +465,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("uiv_conveyor")
         .itemInputs("2x gtceu:uiv_electric_motor", "2x gtceu:infinity_plate", "4x gtceu:eltz_ring", "16x gtceu:eltz_round", "4x gtceu:eltz_screw", "2x gtceu:holmium_single_wire")
-        .inputFluids("gtceu:soldering_alloy 11520", "gtceu:lubricant 4000", "gtceu:ethylene_propylene_diene_monomer 5760", "gtceu:naquadria 2304")
+        .inputFluids("gtceu:soldering_alloy 11520", "gtceu:lubricant 4000", "gtceu:styrene_butadiene_rubber 5760", "gtceu:naquadria 2304")
         .itemOutputs("gtceu:uiv_conveyor_module")
         .duration(1200)
         .EUt(3932160)
