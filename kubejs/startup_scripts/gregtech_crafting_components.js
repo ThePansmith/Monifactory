@@ -121,10 +121,10 @@ GTCEuStartupEvents.craftingComponents(event => {
     //     // event.modify(prefixComponentPair[1], pipeMap)
     // })
 
-    event.setItems("glass", {
-        UHV: "gtceu:fusion_glass",
-        UEV: "gtceu:fusion_glass",
-        UIV: "gtceu:fusion_glass",
+    event.modifyItem("glass", {
+        UHV: Item.of("gtceu:fusion_glass"),
+        UEV: Item.of("kubejs:prism_glass"),
+        UIV: Item.of("kubejs:prism_glass")
     })
     // event.setItem(GTCraftingComponents.GLASS, GTValues.UHV, Item.of("gtceu:fusion_glass"))
     // event.setItem(GTCraftingComponents.GLASS, GTValues.UEV, Item.of("gtceu:fusion_glass"))
