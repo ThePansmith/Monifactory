@@ -48,6 +48,5 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .element(GTElements.get("hyperdegenerate_matter"))
             .color(0xffffff).iconSet("hyperdegenerate_matter")
             .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
-
     }
 })

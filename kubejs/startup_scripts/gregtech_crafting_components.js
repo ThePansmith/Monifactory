@@ -121,10 +121,10 @@ GTCEuStartupEvents.craftingComponents(event => {
     //     // event.modify(prefixComponentPair[1], pipeMap)
     // })
 
-    event.setItems("glass", {
-        UHV: "gtceu:fusion_glass",
-        UEV: "gtceu:fusion_glass",
-        UIV: "gtceu:fusion_glass",
+    event.modifyItem("glass", {
+        UHV: Item.of("gtceu:fusion_glass"),
+        UEV: Item.of("kubejs:prism_glass"),
+        UIV: Item.of("kubejs:prism_glass")
     })
     // event.setItem(GTCraftingComponents.GLASS, GTValues.UHV, Item.of("gtceu:fusion_glass"))
     // event.setItem(GTCraftingComponents.GLASS, GTValues.UEV, Item.of("gtceu:fusion_glass"))
@@ -155,13 +155,11 @@ GTCEuStartupEvents.craftingComponents(event => {
     // plateMap[GTValues.MAX] = MaterialEntry(TagPrefix.plate, GTMaterials.get("monium"))
     // event.modifyMaterialEntry(CraftingComponent.PLATE, plateMap)
 
-    const PECA = "plate:polyethyl_cyanoacrylate"
-    const PBI = "plate:polybenzimidazole"
     event.setMaterialEntries("hull_plate", {
-        UHV: PBI,
-        UEV: PECA,
-        UIV: PECA,
-        MAX: PECA
+        UHV: "plate:polybenzimidazole",
+        UEV: "plate:polyethyl_cyanoacrylate",
+        UIV: "plate:polyethyl_cyanoacrylate",
+        MAX: "plate:polyethyl_cyanoacrylate"
     })
 
     // event.setMaterialEntry(GTCraftingComponents.HULL_PLATE, GTValues.UEV, new MaterialEntry(TagPrefix.plate, GTMaterials.get("polyethyl_cyanoacrylate")))
