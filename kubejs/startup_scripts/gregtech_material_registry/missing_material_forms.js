@@ -22,6 +22,7 @@ let addFluid = (mat, key, temp) => {
 GTCEuStartupEvents.registry("gtceu:material", event => {
     // Existing materials that get an item form
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    GTMaterials.Lutetium.addFlags(GTMaterialFlags.GENERATE_FOIL)
 
     GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Actinium.setMaterialARGB(0xaa3399)
