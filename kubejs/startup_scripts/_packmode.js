@@ -102,7 +102,7 @@ global.doBoilers = packMode == "Normal" || packMode == "Hard";
 global.doCompacting = packMode == "Normal" || packMode == "Hard";
 global.doConduits = packMode == "Normal" || packMode == "Hard";
 global.doConverters = packMode == "Normal" || packMode == "Hard";
-global.doHarderNaqFuel = packMode == "Hard" || packMode == "Expert";
+global.doHarderNaqFuel = packMode == "Normal" || packMode == "Hard" || packMode == "Expert"; // Temporary, NM Naqfuel tweaks is beyond the scope of this PR.
 global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";
 global.doHarderRecipes = packMode == "Hard" || packMode == "Expert";

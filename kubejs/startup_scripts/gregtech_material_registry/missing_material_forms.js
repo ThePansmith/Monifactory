@@ -22,10 +22,16 @@ let addFluid = (mat, key, temp) => {
 GTCEuStartupEvents.registry("gtceu:material", event => {
     // Existing materials that get an item form
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    GTMaterials.Lutetium.addFlags(GTMaterialFlags.GENERATE_FOIL)
 
     GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Actinium.setMaterialARGB(0xaa3399)
     GTMaterials.Actinium.addFlags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW)
+
+    GTMaterials.Germanium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    GTMaterials.Germanium.setMaterialARGB(0x66806d)
+    GTMaterials.Germanium.setMaterialSecondaryARGB(0x5d5e3a)
+    GTMaterials.Germanium.addFlags(GTMaterialFlags.GENERATE_PLATE)
 
     GTMaterials.Terbium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Terbium.setMaterialARGB(0x8C8F7A)
@@ -35,14 +41,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Holmium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Holmium.setMaterialARGB(0xe59274)
     GTMaterials.Holmium.setMaterialSecondaryARGB(0x715774)
-    GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 0, true))
+    GTMaterials.Holmium.setProperty($PropertyKey.WIRE, new $WireProperty(33554432, 64, 8, false))
     GTMaterials.Holmium.setProperty($PropertyKey.FLUID_PIPE, new $FluidPipeProperty(10000, 18000, true, false, true, true))
     GTMaterials.Holmium.setProperty($PropertyKey.BLAST, new $BlastProperty(12200, "highest", 1000000, 1000, -1, -1));
     GTMaterials.Holmium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
     // Existing materials that get new material forms
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
-    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_DENSE)
+    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
     GTMaterials.NaquadahEnriched.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
     GTMaterials.Graphite.addFlags(GTMaterialFlags.GENERATE_PLATE)
     GTMaterials.MagnesiumDiboride.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
@@ -50,7 +56,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Zeron100.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
-    GTMaterials.RedAlloy.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)    // For ULV Power Transformer
 
     // Gears for Thermal Expansion
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)
@@ -60,7 +65,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // Radioactive materials that get liquid forms and/or a new color
     addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID, 1133);
-    GTMaterials.Americium.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.PLASMA, new GTFluidBuilder())
     addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID, 1259);
     GTMaterials.Berkelium.setMaterialARGB(0xa33f20);
     addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID, 1173);

@@ -111,6 +111,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("gtceu:subatomic_digital_assembler", Text.translatable("gtceu.multiblock.subatomic_digital_assembler.description"))
     tooltip.add("gtceu:large_naquadah_reactor", Text.translatable("gtceu.multiblock.large_naquadah_reactor.description"))
     tooltip.add("gtceu:naquadah_refinery", Text.translatable("gtceu.multiblock.naquadah_refinery.description"))
+    tooltip.add("gtceu:simulation_supercomputer", Text.translatable("gtceu.multiblock.simulation_supercomputer.description"))
+    tooltip.add("gtceu:loot_superfabricator", Text.translatable("gtceu.multiblock.loot_superfabricator.description"))
 
     // Singleblocks
     tooltip.addAdvanced(["gtceu:lv_atomic_reconstructor", "gtceu:mv_atomic_reconstructor", "gtceu:hv_atomic_reconstructor", "gtceu:ev_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.lvev_atomic_reconstructor.desc"))) })
@@ -127,8 +129,6 @@ ItemEvents.tooltip(tooltip => {
 
     // Parallel multiblocks
     const parallelMultis = [
-        "simulation_supercomputer",
-        "loot_superfabricator",
         "rock_cycle_simulator",
         "atmospheric_accumulator",
         "matter_alterator",
@@ -137,12 +137,15 @@ ItemEvents.tooltip(tooltip => {
         "hyperbolic_microverse_projector",
         "dimensional_superassembler",
         "universal_crystallizer",
-        "sculk_biocharger"
+        "sculk_biocharger",
+        "simulation_quantumcomputer",
+        "loot_quantumfabricator"
     ]
 
     parallelMultis.forEach(multi => {
         tooltip.addAdvanced(`gtceu:${multi}`, (item, adv, text) => {
-            text.add(1, Text.translatable(`gtceu.multiblock.${multi}.description`))
+            text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
+            text.add(2, Text.translatable(`gtceu.multiblock.${multi}.description`))
         })
     })
 
@@ -158,6 +161,12 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.0"))
         text.add(4, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.1"))
         text.add(5, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.2"))
+    })
+
+    tooltip.addAdvanced("gtceu:prismatic_crucible", (item, adv, text) => {
+        text.add(1, Text.translatable("monilabs.tooltip.prismatic.0", rainbowifySingle(Text.translatable("monilabs.tooltip.prismatic.rainbow"), Math.round(Client.lastNanoTime / 1000000000))))
+        text.add(2, Text.translatable("monilabs.tooltip.prismatic.1"))
+        text.add(3, Text.translatable("monilabs.tooltip.prismatic.2"))
     })
 
     tooltip.addAdvanced("gtceu:omnic_forge", (item, adv, text) => {
