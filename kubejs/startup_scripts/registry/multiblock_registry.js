@@ -1092,7 +1092,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 Predicates.blocks("kubejs:bioalloy_casing").setMinGlobalLimited(392)
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(1))
                     .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
-                    .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .build())
         .workableCasingRenderer("kubejs:block/bioalloy/casing",
