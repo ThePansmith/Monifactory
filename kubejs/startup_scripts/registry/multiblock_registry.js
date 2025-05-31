@@ -1087,11 +1087,11 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("C", Predicates.blocks(GTBlocks.SUPERCONDUCTING_COIL.get()))
             .where("F", Predicates.frames(GTMaterials.Europium))
             .where("I", Predicates.blocks(GTBlocks.MACHINE_CASING_UIV.get()))
-            .where("D", Predicates.blocks(GTBlocks.COMPUTER_CASING.get())
-                .or(Predicates.abilities(PartAbility.DATA_ACCESS)))
+            .where("D", Predicates.blocks(GTBlocks.ADVANCED_COMPUTER_CASING.get()))
             .where("N",
                 Predicates.blocks("kubejs:bioalloy_casing").setMinGlobalLimited(392)
-                    .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                    .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(1))
+                    .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .build())
         .workableCasingRenderer("kubejs:block/bioalloy/casing",
