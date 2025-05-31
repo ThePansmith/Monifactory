@@ -453,13 +453,17 @@
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
-			description: ["{moni.quest.1C861E0C62D5B97D.description1}"]
+			description: [
+				"{moni.quest.1C861E0C62D5B97D.description1}"
+				""
+				"{moni.quest.1C861E0C62D5B97D.description2}"
+			]
 			hide_until_deps_visible: true
 			id: "1C861E0C62D5B97D"
 			size: 1.5d
 			tasks: [{
-				id: "3BE677A49268E12B"
-				item: "kubejs:creative_computation_data"
+				id: "16B4F36211A3BBB5"
+				item: "gtceu:creative_data_multi"
 				type: "item"
 			}]
 			title: "{moni.quest.1C861E0C62D5B97D.title}"
