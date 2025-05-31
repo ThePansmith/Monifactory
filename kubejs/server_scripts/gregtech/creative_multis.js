@@ -8,8 +8,7 @@ ServerEvents.recipes(event => {
         .duration(20)
 
     event.recipes.gtceu.omniscience_research_beacon("kubejs:infinite_research")
-        .inputFluids("gtceu:pcb_coolant 400")
+        .inputFluids("gtceu:pcb_coolant 1080")
         .CWUt(256)
-        .EUt(GTValues.VA[GTValues.UHV])
         .duration(20)
 })
