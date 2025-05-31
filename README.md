@@ -25,6 +25,9 @@
 - README.md adapted from [GregTech CEu](https://github.com/GregTechCEu/GregTech).  
 - Meowni (mascot) by [Mutso](https://bsky.app/profile/did:plc:pgazjc76vpn6mr7rldk56ugq).  
 - Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
+- Unique multi code for the Creative Multiblocks from [CosmicCore](https://github.com/Frontiers-PackForge/CosmicCore), with Caitlynn's gracious permission.
+- Coremod (Moni Labs) by [NegaNote](https://github.com/NegaNote), with help from other contributors, especially [Withers](https://github.com/WithersChat) and [Raine](https://github.com/AE2-Enthusiast).
+
 Thank you!
 
 ## Hard/Expert Mode
