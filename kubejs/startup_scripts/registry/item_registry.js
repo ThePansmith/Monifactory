@@ -289,6 +289,12 @@ StartupEvents.registry("item", event => {
     event.create("thermal:upgrade_augment_4");
     event.create("thermal:upgrade_augment_3");
 
+    // Advanced Thermal Storage augments
+    event.create("thermal:rf_coil_augment_advanced")
+    event.create("thermal:rf_coil_storage_augment_advanced")
+    event.create("thermal:rf_coil_xfer_augment_advanced")
+    event.create("thermal:fluid_tank_augment_advanced")
+
 
     // Jetpack Units
     event.create("empty_fluxed_jetpack_unit")
