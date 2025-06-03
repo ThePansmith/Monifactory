@@ -25,3 +25,6 @@ deprecateItem("kubejs:dilithium_crystal", "gtceu:dilithium_gem", "Dilithium")
 
 // Ancient Debris
 deprecateItem("kubejs:crushed_ancient_debris", "gtceu:crushed_netherite_scrap_ore", "Crushed Ancient Debris")
+
+// Saline Antiseptic (rename after typo)
+deprecateFluid("gtceu:saline_antisceptic", "gtceu:saline_antiseptic", "Saline Antiseptic")
