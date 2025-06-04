@@ -483,4 +483,30 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:contained_singularity")
         .duration(20)
         .EUt(GTValues.VA[GTValues.UEV])
+    
+    // Knowledge Transmission Array
+    event.recipes.gtceu.assembly_line("knowledge_transmission_array")
+        .itemInputs("gtceu:uiv_machine_casing", "16x gtceu:holmium_double_cable", "16x gtceu:uev_emitter", "16x gtceu:data_transmitter_hatch", "2x gtceu:sculk_bioalloy_frame", "32x gtceu:normal_optical_pipe", "32x gtceu:darconite_single_cable", "2x gtceu:network_switch", "32x gtceu:rhodium_foil")
+        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:omnium 2304", "gtceu:polyethyl_cyanoacrylate 1152")
+        .itemOutputs("monilabs:knowledge_transmission_array")
+        .duration(2000)
+        .EUt(7864320)
+        .stationResearch(b => b
+            .researchStack("gtceu:data_transmitter_hatch")
+            .CWUt(96, 57600)
+            .EUt(1966080)
+        )
+    
+    // Omniscience Research Beacon
+    event.recipes.gtceu.assembly_line("omniscience_research_beacon")
+        .itemInputs("gtceu:computation_receiver_hatch", "8x gtceu:holmium_hex_cable", "4x gtceu:research_station", "16x gtceu:advanced_computer_casing", "16x #gtceu:circuits/uev", "3x gtceu:uev_sensor", "kubejs:universal_navigator", "4x gtceu:uev_field_generator", "4x gtceu:sculk_bioalloy_plate", "64x gtceu:normal_optical_pipe", "64x gtceu:fine_ruridit_wire", "32x gtceu:osmium_tantalum_einsteinium_caesium_omnide_single_wire")
+        .inputFluids("gtceu:advanced_soldering_alloy 2304", "gtceu:omnium 4608", "gtceu:polyethyl_cyanoacrylate 2304")
+        .itemOutputs("gtceu:creative_data_multi")
+        .duration(4000)
+        .EUt(7864320)
+        .stationResearch(b => b
+            .researchStack("gtceu:research_station")
+            .CWUt(96, 57600)
+            .EUt(1966080)
+        )
 })

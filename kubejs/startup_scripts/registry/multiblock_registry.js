@@ -1086,7 +1086,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("H", Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
             .where("C", Predicates.blocks("kubejs:bioalloy_fusion_casing"))
             .where("F", Predicates.blocks("gtceu:sculk_bioalloy_frame"))
-            .where("I", Predicates.blocks("gtceu:eltz_block"))
+            .where("I", Predicates.blocks("monilabs:knowledge_transmission_array"))
             .where("D", Predicates.blocks(GTBlocks.ADVANCED_COMPUTER_CASING.get()))
             .where("N",
                 Predicates.blocks("kubejs:bioalloy_casing").setMinGlobalLimited(392)

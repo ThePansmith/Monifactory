@@ -39,12 +39,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .cableProperties(GTValues.V[GTValues.UEV], 1, 0, true)
 
     // UEV GT Supercon
-    event.create("osmium_einsteinium_caesium_omnide")
+    event.create("osmium_tantalum_einsteinium_caesium_omnide")
         .ingot().fluid()
         .color(0x3221fb).secondaryColor(0x89a223)
         .iconSet("metallic")
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
-        .components("2x osmium", "4x einsteinium", "5x caesium", "2x omnium")
+        .components("2x osmium", "3x tantalum", "4x einsteinium", "5x caesium", "2x omnium")
+        .formula("Os2Ta3Es4Cs5Nm2")
         .cableProperties(GTValues.V[GTValues.UEV], 32, 0, true)
 
     // UIV Moni Supercon

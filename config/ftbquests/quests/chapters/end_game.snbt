@@ -461,6 +461,7 @@
 			hide_until_deps_visible: true
 			id: "1C861E0C62D5B97D"
 			size: 1.5d
+			subtitle: "{moni.quest.1C861E0C62D5B97D.subtitle}"
 			tasks: [{
 				id: "16B4F36211A3BBB5"
 				item: "gtceu:creative_data_multi"
