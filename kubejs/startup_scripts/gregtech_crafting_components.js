@@ -37,7 +37,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 
 
     // Omnium & Holmium for wires/cables
-    let wireCableComponentPrefixes = [
+    let wireCableComponents = [
         [TagPrefix.wireGtQuadruple, TagPrefix.wireGtQuadruple, GTCraftingComponents.WIRE_QUAD],
         [TagPrefix.wireGtOctal, TagPrefix.wireGtOctal, GTCraftingComponents.WIRE_OCT],
         [TagPrefix.wireGtHex, TagPrefix.wireGtHex, GTCraftingComponents.WIRE_HEX],
@@ -45,15 +45,15 @@ GTCEuStartupEvents.craftingComponents(event => {
         [TagPrefix.cableGtDouble, TagPrefix.wireGtDouble, GTCraftingComponents.CABLE_DOUBLE],
         [TagPrefix.cableGtQuadruple, TagPrefix.wireGtQuadruple, GTCraftingComponents.CABLE_QUAD],
         [TagPrefix.cableGtOctal, TagPrefix.wireGtOctal, GTCraftingComponents.CABLE_OCT],
-        // [TagPrefix.cableGtHex, TagPrefix.wireGtHex, CraftingComponent.CABLE_HEX] // Seems borked? Causes crashes when uncommented
+        [TagPrefix.cableGtHex, TagPrefix.wireGtHex, GTCraftingComponents.CABLE_HEX]
     ]
 
-    wireCableComponentPrefixes.forEach(prefixComponentPair => {
+    wireCableComponents.forEach(prefixComponentPair => {
         let wireMap = {};
-        wireMap[GTValues.UEV] = UnificationEntry(prefixComponentPair[0], GTMaterials.get("darconite"));
-        wireMap[GTValues.UIV] = UnificationEntry(prefixComponentPair[0], GTMaterials.Holmium);
-        wireMap[GTValues.MAX] = UnificationEntry(prefixComponentPair[1], GTMaterials.get("monium"));
-        event.modify(prefixComponentPair[2], wireMap)
+        wireMap[GTValues.UEV] = prefixComponentPair[0] + ":darconite";
+        wireMap[GTValues.UIV] = prefixComponentPair[0] + ":holmium";
+        wireMap[GTValues.MAX] = prefixComponentPair[1] + ":monium";
+        event.setMaterialEntries(prefixComponentPair[2], wireMap)
     })
 
     // Netherite, Holmium, and Monium for tier up wires/cables
@@ -62,13 +62,13 @@ GTCEuStartupEvents.craftingComponents(event => {
         [TagPrefix.wireGtSingle, GTCraftingComponents.CABLE_TIER_UP],
         [TagPrefix.wireGtDouble, GTCraftingComponents.CABLE_TIER_UP_DOUBLE],
         [TagPrefix.wireGtQuadruple, GTCraftingComponents.CABLE_TIER_UP_QUAD],
-        [TagPrefix.wireGtOctal, CraftingComponent.CABLE_TIER_UP_OCT], // Seems borked. Same here as above.
+        [TagPrefix.wireGtOctal, GTCraftingComponents.CABLE_TIER_UP_OCT],
         [TagPrefix.wireGtHex, GTCraftingComponents.CABLE_TIER_UP_HEX]
     ]
 
     let setCableTierUp = (component, prefix) =>
         event.setMaterialEntries(component, {
-            UHV: prefix + ":activated_netherite",
+            UHV: prefix + ":darconite",
             UEV: prefix + ":holmium",
             UIV: prefix + ":monium",
         })
@@ -121,7 +121,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     //     // event.modify(prefixComponentPair[1], pipeMap)
     // })
 
-    event.modifyItem("glass", {
+    event.setItems("glass", {
         UHV: Item.of("gtceu:fusion_glass"),
         UEV: Item.of("kubejs:prism_glass"),
         UIV: Item.of("kubejs:prism_glass")
