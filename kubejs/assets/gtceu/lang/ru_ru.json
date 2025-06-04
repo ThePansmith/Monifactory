@@ -440,10 +440,10 @@
     "gtceu.jei.ore_vein.mercury/thorium": "Жила Тория (Меркурий)",
     "gtceu.jei.ore_vein.mercury/titanotungstate": "Жила Титановольфрамата (Меркурий)",
     "__COMPAT__.header": "=================",
-    "material.gtceu.androstenedione": "Androstenedione",
+    "material.gtceu.androstenedione": "Андростендион",
     "__COMPAT__.flufff": "> Совместимость <",
-    "material.gtceu.cholestrol": "Cholestrol",
-    "material.gtceu.pregnenolone": "Pregnenolone",
+    "material.gtceu.cholestrol": "Холестерин",
+    "material.gtceu.pregnenolone": "Прегненолон",
     "__COMPAT__.footer": "=================",
     "material.gtceu.testosterone": "Тестостерон"
 }
