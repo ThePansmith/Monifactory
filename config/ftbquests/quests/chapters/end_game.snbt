@@ -115,13 +115,6 @@
 			y: -9.75d
 		}
 		{
-			id: "20F44ACD2F91FD2A"
-			linked_quest: "4DF92773C82F4AAC"
-			shape: "hexagon"
-			x: 39.0d
-			y: -13.5d
-		}
-		{
 			id: "21C0AA3B9437C897"
 			linked_quest: "61301FBD825F8280"
 			shape: "hexagon"
@@ -1257,6 +1250,29 @@
 			title: "{moni.quest.2F28272CF7A44851.title}"
 			x: 43.75d
 			y: -21.75d
+		}
+		{
+			dependencies: ["7FAB6FD0A054443E"]
+			description: [
+				"{moni.quest.4DF92773C82F4AAC.description1}"
+				""
+				"{moni.quest.4DF92773C82F4AAC.description2}"
+			]
+			id: "4DF92773C82F4AAC"
+			rewards: [{
+				id: "164F147085D3C08C"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "{moni.quest.4DF92773C82F4AAC.subtitle}"
+			tasks: [{
+				id: "19750B567D0D0ABC"
+				item: "kubejs:the_ultimate_material"
+				type: "item"
+			}]
+			x: 39.0d
+			y: -13.5d
 		}
 	]
 	title: "{moni.chapter.2BEB72BC6C6FB4E9.title}"
