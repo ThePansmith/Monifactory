@@ -143,7 +143,7 @@
 				""
 				"{moni.quest.677D081CD7612FB0.description4}"
 				"{@pagebreak}"
-				"[\"\",{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0D0A0C18ED958511\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description5\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"24415A26E5A0FD72\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description7\"}]"
+				"[\"\",{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0D0A0C18ED958511\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description5\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"053DDDCD2505E20B\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description7\"}]"
 				""
 				"{moni.quest.677D081CD7612FB0.description6}"
 			]
@@ -259,7 +259,7 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
+			x: -4.25d
 			y: -2.0d
 		}
 		{
@@ -378,7 +378,7 @@
 				title: "{moni.task.2026CA71AB1F0711}"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -1.0d
 		}
 		{
@@ -392,7 +392,7 @@
 				type: "checkmark"
 			}]
 			x: 4.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6FDF37EE046349F7"]
@@ -432,7 +432,7 @@
 				title: "{moni.task.1852A862553D4C79}"
 				type: "checkmark"
 			}]
-			x: -2.5d
+			x: -2.25d
 			y: -3.0d
 		}
 		{
@@ -445,7 +445,7 @@
 				title: "{moni.task.5B2F5A3BD09E835A}"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: -2.0d
 		}
 		{
@@ -728,8 +728,8 @@
 				}
 			]
 			title: "{moni.quest.1405D08C6A87B3BB.title}"
-			x: -1.0d
-			y: -2.0d
+			x: -1.75d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1A30472430354F1E"]
@@ -807,7 +807,7 @@
 				"15E34DEC491FAB81"
 			]
 			dependency_requirement: "one_completed"
-			description: ["[\"\",{\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description2\"},{\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description3\"},{\"color\":\"gold\",\"underlined\":\"true\",\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"15A5B4C632836306\"}},{\"translate\":\"moni.quest.1B04AA7D9AEB2CFA.rich_description5\"}]"]
+			description: ["{moni.quest.1B04AA7D9AEB2CFA.description1}"]
 			id: "1B04AA7D9AEB2CFA"
 			tasks: [{
 				id: "149469B15ABAD598"
@@ -856,7 +856,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description2\"},{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description3\"},{\"color\":\"blue\",\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description4\"},{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description5\"},{\"color\":\"gold\",\"underlined\":\"true\",\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D72B3FF808CE13C\"}},{\"translate\":\"moni.quest.7E276DF48E9085A4.rich_description7\"}]"
+				"{moni.quest.7E276DF48E9085A4.description1}"
 				""
 				"{moni.quest.7E276DF48E9085A4.description2}"
 			]
@@ -928,7 +928,7 @@
 				}
 			]
 			title: "{moni.quest.425D1C34A82B054D.title}"
-			x: 2.0d
+			x: 0.0d
 			y: -1.0d
 		}
 		{
@@ -1048,7 +1048,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.21E10888F52A3C73.title}"
-			x: 8.0d
+			x: 6.0d
 			y: -1.0d
 		}
 	]

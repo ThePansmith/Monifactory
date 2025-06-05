@@ -2752,6 +2752,8 @@
 			description: [
 				"{moni.quest.0F779BEEED8E67BB.description1}"
 				""
+				"[\"\",{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description1\"},{\"color\":\"gold\",\"underlined\":true,\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"15A5B4C632836306\"}},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description3\"},{\"color\":\"gold\",\"underlined\":true,\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D72B3FF808CE13C\"}},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description5\"},{\"color\":\"dark_aqua\",\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description6\"},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description7\"},{\"color\":\"gold\",\"underlined\":true,\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description8\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1405D08C6A87B3BB\"}},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description9\"}]"
+				""
 				"{moni.quest.0F779BEEED8E67BB.description2}"
 				""
 				"{moni.quest.0F779BEEED8E67BB.description3}"
