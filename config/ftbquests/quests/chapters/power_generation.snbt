@@ -943,6 +943,8 @@
 				"{moni.quest.6FDF37EE046349F7.description2}"
 				""
 				"{moni.quest.6FDF37EE046349F7.description3}"
+				""
+				"{moni.quest.6FDF37EE046349F7.description4}"
 			]
 			hide_until_deps_visible: true
 			id: "6FDF37EE046349F7"
