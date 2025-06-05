@@ -409,44 +409,19 @@
 				"{moni.quest.64AAF0CD958D836A.description1}"
 				""
 				"{moni.quest.64AAF0CD958D836A.description2}"
-				""
-				"{moni.quest.64AAF0CD958D836A.description3}"
-				""
-				"{moni.quest.64AAF0CD958D836A.description4}"
 			]
-			icon: "gtceu:potin_small_fluid_pipe"
 			id: "64AAF0CD958D836A"
 			tasks: [{
-				id: "277C38246AE179F6"
+				icon: "gtceu:potin_large_fluid_pipe"
+				id: "150F57D9BEE7CCEE"
 				item: {
 					Count: 1
-					id: "itemfilters:or"
+					id: "itemfilters:id_regex"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:potin_tiny_fluid_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:potin_small_fluid_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:potin_normal_fluid_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:potin_large_fluid_pipe"
-							}
-							{
-								Count: 1b
-								id: "gtceu:potin_huge_fluid_pipe"
-							}
-						]
+						value: "^gtceu:[\\w_]+_fluid_pipe$"
 					}
 				}
-				title: "{moni.task.277C38246AE179F6.expert}"
+				title: "{moni.task.150F57D9BEE7CCEE}"
 				type: "item"
 			}]
 			title: "{moni.quest.64AAF0CD958D836A.title}"
@@ -1027,16 +1002,16 @@
 		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
-				"{moni.quest.57D1B1D74391A05F.description1.expert}"
+				"{moni.quest.57D1B1D74391A05F.description1}"
 				""
 				"{moni.quest.57D1B1D74391A05F.description2.expert}"
 				""
-				"{moni.quest.57D1B1D74391A05F.description3.expert}"
+				"{moni.quest.57D1B1D74391A05F.description3}"
+				"{@pagebreak}"
+				"{moni.quest.57D1B1D74391A05F.description4}"
 				""
-				"{moni.quest.57D1B1D74391A05F.description4.expert}"
-				""
-				"{moni.quest.57D1B1D74391A05F.description5.expert}"
-				"{moni.quest.57D1B1D74391A05F.description6.expert}"
+				"{moni.quest.57D1B1D74391A05F.description5}"
+				"{moni.quest.57D1B1D74391A05F.description6}"
 			]
 			id: "57D1B1D74391A05F"
 			rewards: [{
@@ -1047,8 +1022,16 @@
 			shape: "hexagon"
 			subtitle: "{moni.quest.57D1B1D74391A05F.subtitle}"
 			tasks: [{
+				icon: "gtceu:tin_normal_item_pipe"
 				id: "72798E2CFE3F6FB5"
-				item: "gtceu:tin_normal_item_pipe"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^gtceu:[\\w_]+_item_pipe$"
+					}
+				}
+				title: "{moni.task.72798E2CFE3F6FB5}"
 				type: "item"
 			}]
 			title: "{moni.quest.57D1B1D74391A05F.title}"
