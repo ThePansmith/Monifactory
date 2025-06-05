@@ -56,11 +56,11 @@ ServerEvents.recipes(event => {
 
     // Complex SMDs
     const smds = [
-        ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_holmium_wire", 2],
-        ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_holmium_wire", 4],
-        ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:holmium_foil", 1],
-        ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_holmium_wire", 2],
-        ["inductor", "gtceu:iron_neodymium_terbium_neutronate_ring", "4x gtceu:fine_holmium_wire", 2]
+        ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_necrosiderite_wire", 2],
+        ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_necrosiderite_wire", 4],
+        ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:necrosiderite_foil", 1],
+        ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_necrosiderite_wire", 2],
+        ["inductor", "gtceu:iron_neodymium_terbium_neutronate_ring", "4x gtceu:fine_necrosiderite_wire", 2]
     ]
 
     for (const [item, primary, secondary, foil_amount] of smds) {
@@ -368,7 +368,7 @@ ServerEvents.recipes(event => {
         .EUt(500000)
 
     event.recipes.gtceu.large_chemical_reactor("dimensional_processing_unit")
-        .itemInputs("1x kubejs:dimensional_circuit_board", "12x gtceu:holmium_foil", "6x gtceu:activated_netherite_foil")
+        .itemInputs("1x kubejs:dimensional_circuit_board", "12x gtceu:necrosiderite_foil", "6x gtceu:activated_netherite_foil")
         .inputFluids("gtceu:iron_iii_chloride 10000")
         .itemOutputs("1x kubejs:dimensional_processing_unit")
         .cleanroom(CleanroomType.CLEANROOM)
@@ -382,7 +382,7 @@ ServerEvents.recipes(event => {
             "4x kubejs:complex_smd_resistor",
             "4x kubejs:complex_smd_capacitor",
             "4x kubejs:complex_smd_transistor",
-            "2x gtceu:fine_holmium_wire"
+            "2x gtceu:fine_necrosiderite_wire"
         )
         .inputFluids("gtceu:soldering_alloy 144")
         .itemOutputs("2x kubejs:dimensional_processor")
@@ -416,7 +416,7 @@ ServerEvents.recipes(event => {
             "16x kubejs:uxpic_chip",
             "24x gtceu:fine_activated_netherite_wire",
             "16x gtceu:polyethyl_cyanoacrylate_foil",
-            "4x gtceu:holmium_plate"
+            "4x gtceu:necrosiderite_plate"
         )
         .inputFluids("gtceu:soldering_alloy 1152")
         .itemOutputs("kubejs:dimensional_processor_computer")
@@ -437,7 +437,7 @@ ServerEvents.recipes(event => {
             "32x kubejs:hyperdynamic_ram_chip",
             "16x gtceu:activated_netherite_double_wire",
             "16x gtceu:polyethyl_cyanoacrylate_foil",
-            "8x gtceu:holmium_plate"
+            "8x gtceu:necrosiderite_plate"
         )
         .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 576")
         .itemOutputs("kubejs:dimensional_processor_mainframe")
@@ -461,7 +461,7 @@ ServerEvents.recipes(event => {
         .EUt(2000000)
 
     event.recipes.gtceu.large_chemical_reactor("monic_processing_unit")
-        .itemInputs("1x kubejs:monic_circuit_board", "6x gtceu:monium_single_wire", "8x gtceu:holmium_foil")
+        .itemInputs("1x kubejs:monic_circuit_board", "6x gtceu:monium_single_wire", "8x gtceu:necrosiderite_foil")
         .inputFluids("gtceu:iron_iii_chloride 12000")
         .itemOutputs("1x kubejs:monic_processing_unit")
         .cleanroom(CleanroomType.CLEANROOM)
@@ -475,7 +475,7 @@ ServerEvents.recipes(event => {
             "8x kubejs:complex_smd_resistor",
             "8x kubejs:complex_smd_capacitor",
             "8x kubejs:complex_smd_transistor",
-            "16x gtceu:fine_holmium_wire"
+            "16x gtceu:fine_necrosiderite_wire"
         )
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("2x kubejs:monic_processor")
@@ -490,7 +490,7 @@ ServerEvents.recipes(event => {
             "8x kubejs:complex_smd_inductor",
             "8x kubejs:complex_smd_capacitor",
             "8x kubejs:hyperdynamic_ram_chip",
-            "16x gtceu:fine_holmium_wire"
+            "16x gtceu:fine_necrosiderite_wire"
         )
         .inputFluids("gtceu:soldering_alloy 1152")
         .itemOutputs("2x kubejs:monic_processor_assembly")
@@ -509,7 +509,7 @@ ServerEvents.recipes(event => {
             "24x kubejs:hyperdynamic_ram_chip",
             "16x kubejs:quantum_soc_chip",
             "24x kubejs:uxpic_chip",
-            "24x gtceu:fine_holmium_wire",
+            "24x gtceu:fine_necrosiderite_wire",
             "32x gtceu:polyethyl_cyanoacrylate_foil",
             "4x gtceu:infinity_plate"
         )
@@ -533,7 +533,7 @@ ServerEvents.recipes(event => {
             "64x kubejs:multidimensional_cpu_chip",
             "64x kubejs:hyperdynamic_ram_chip",
             "64x kubejs:quantum_soc_chip",
-            "16x gtceu:holmium_double_wire",
+            "16x gtceu:necrosiderite_double_wire",
             "16x gtceu:polyethyl_cyanoacrylate_foil",
             "8x gtceu:infinity_plate"
         )

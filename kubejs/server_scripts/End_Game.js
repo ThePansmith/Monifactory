@@ -372,7 +372,7 @@ ServerEvents.recipes(event => {
 
     // Beyond this point we could probably just treat these like joke items
     event.recipes.gtceu.assembly_line("zpm_world_accelerator")
-        .itemInputs("gtceu:uev_machine_hull", "64x gtceu:uev_field_generator", "16x gtceu:uev_field_generator", "20x gtceu:uev_sensor", "20x gtceu:uev_emitter", "16x #gtceu:circuits/uev", "4x gtceu:double_holmium_plate", "2x gtceu:dense_infinity_plate")
+        .itemInputs("gtceu:uev_machine_hull", "64x gtceu:uev_field_generator", "16x gtceu:uev_field_generator", "20x gtceu:uev_sensor", "20x gtceu:uev_emitter", "16x #gtceu:circuits/uev", "4x gtceu:double_necrosiderite_plate", "2x gtceu:dense_infinity_plate")
         .inputFluids("gtceu:omnium 1152", "gtceu:soldering_alloy 1152")
         .itemOutputs("gtceu:zpm_world_accelerator")
         .duration(6000)

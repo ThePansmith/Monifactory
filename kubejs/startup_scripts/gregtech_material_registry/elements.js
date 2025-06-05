@@ -15,6 +15,8 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .symbol("Cy*")
     event.create("mana")
         .symbol("ᛗ")
+    event.create("necrosiderite")
+        .symbol("Ns")
 })
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
@@ -37,4 +39,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("mana"))
         .iconSet("mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("necrosiderite")
+        .ingot()
+        .color(0xe59274).secondaryColor(0x715774)
+        .iconSet("metallic")
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
+        .cableProperties(33554432, 64, 8, false)
+        .blastTemp(12200, "highest", 1000000, 1000)
+        .fluidPipeProperties(10000, 18000, true, false, true, true)
+        .element(GTElements.get("necrosiderite"))
 })

@@ -399,8 +399,8 @@ StartupEvents.registry("item", event => {
     event.create("crushed_capacitor")
     event.create("magnetic_capacitor_dust")
     event.create("crushed_sensor")
-    event.create("holmium_compound")
-    event.create("holmium_oxide_glass_dust")
+    event.create("necrosiderite_compound")
+    event.create("necrosiderite_oxide_glass_dust")
 
 
     // Eltz metal processing intermediate products
