@@ -425,10 +425,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluid()
         .color(0xF16AA5)
 
-    event.create("holmium_oxide")
+    event.create("necrosiderite_oxide")
         .dust()
         .color(0xD29092)
-        .components("2x holmium", "3x oxygen")
+        .components("2x necrosiderite", "3x oxygen")
 
     event.create("waste_gas_mixture")
         .fluid()

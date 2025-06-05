@@ -11,16 +11,16 @@ GTCEuStartupEvents.craftingComponents(event => {
         ZPM: "wireGtSingle:naquadah_alloy",
         UV: "wireGtSingle:sculk_superconductor",
         UHV: "wireGtSingle:darconite",
-        UEV: "wireGtSingle:holmium",
+        UEV: "wireGtSingle:necrosiderite",
         UIV: "wireGtSingle:monium",
     })
 
 
-    // Omnium, Holmium, and Monium for wires/cables
+    // Omnium, necrosiderite, and Monium for wires/cables
     let setWireCable = (component, prefix0, prefix1) =>
         event.setMaterialEntries(component, {
             UEV: prefix0 + ":darconite",
-            UIV: prefix1 + ":holmium",
+            UIV: prefix1 + ":necrosiderite",
             MAX: prefix1 + ":monium",
         })
 
@@ -36,7 +36,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     setWireCable("cable_hex", "cableGtHex", "wireGtOctal")
 
 
-    // Omnium & Holmium for wires/cables
+    // Omnium & Necrosiderite for wires/cables
     let wireCableComponents = [
         [TagPrefix.wireGtQuadruple, TagPrefix.wireGtQuadruple, GTCraftingComponents.WIRE_QUAD],
         [TagPrefix.wireGtOctal, TagPrefix.wireGtOctal, GTCraftingComponents.WIRE_OCT],
@@ -51,12 +51,12 @@ GTCEuStartupEvents.craftingComponents(event => {
     wireCableComponents.forEach(prefixComponentPair => {
         let wireMap = {};
         wireMap[GTValues.UEV] = prefixComponentPair[0] + ":darconite";
-        wireMap[GTValues.UIV] = prefixComponentPair[0] + ":holmium";
+        wireMap[GTValues.UIV] = prefixComponentPair[0] + ":necrosiderite";
         wireMap[GTValues.MAX] = prefixComponentPair[1] + ":monium";
         event.setMaterialEntries(prefixComponentPair[2], wireMap)
     })
 
-    // Netherite, Holmium, and Monium for tier up wires/cables
+    // Netherite, Necrosiderite, and Monium for tier up wires/cables
     // Currently useless because GT only autogenerates transformer recipes up to UV.
     let wireCableTierUpComponentPrefixes = [
         [TagPrefix.wireGtSingle, GTCraftingComponents.CABLE_TIER_UP],
@@ -69,7 +69,7 @@ GTCEuStartupEvents.craftingComponents(event => {
     let setCableTierUp = (component, prefix) =>
         event.setMaterialEntries(component, {
             UHV: prefix + ":darconite",
-            UEV: prefix + ":holmium",
+            UEV: prefix + ":necrosiderite",
             UIV: prefix + ":monium",
         })
 
@@ -82,11 +82,11 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     // wireCableTierUpComponentPrefixes.forEach(prefixComponentPair => {
     //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UHV, new MaterialEntry(prefixComponentPair[0], GTMaterials.get("activated_netherite")))
-    //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UEV, new MaterialEntry(prefixComponentPair[0], GTMaterials.Holmium))
+    //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UEV, new MaterialEntry(prefixComponentPair[0], GTMaterials.get("necrosiderite")))
     //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UIV, new MaterialEntry(prefixComponentPair[0], GTMaterials.get("monium")))
     //     // let wireTierUpMap = {};
     //     // wireTierUpMap[GTValues.UHV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("activated_netherite"));
-    //     // wireTierUpMap[GTValues.UEV] = MaterialEntry(prefixComponentPair[0], GTMaterials.Holmium);
+    //     // wireTierUpMap[GTValues.UEV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("necrosiderite"));
     //     // wireTierUpMap[GTValues.UIV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("monium"));
     //     // event.modify(prefixComponentPair[1], wireTierUpMap)
     // })
@@ -103,7 +103,7 @@ GTCEuStartupEvents.craftingComponents(event => {
         event.setMaterialEntries(component, {
             UHV: prefix + ":neutronium",
             UEV: prefix + ":activated_netherite",
-            UIV: prefix + ":holmium",
+            UIV: prefix + ":necrosiderite",
         })
 
     setPipe("normal_pipe", "pipeNormalFluid")
@@ -113,11 +113,11 @@ GTCEuStartupEvents.craftingComponents(event => {
     // pipeComponentPrefixes.forEach(prefixComponentPair => {
     //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UHV, new MaterialEntry(prefixComponentPair[0], GTMaterials.Neutronium))
     //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UEV, new MaterialEntry(prefixComponentPair[0], GTMaterials.get("activated_netherite")))
-    //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UIV, new MaterialEntry(prefixComponentPair[0], GTMaterials.Holmium))
+    //     event.setMaterialEntry(prefixComponentPair[1], GTValues.UIV, new MaterialEntry(prefixComponentPair[0], GTMaterials.get("necrosiderite")))
     //     // let pipeMap = {};
     //     // pipeMap[GTValues.UHV] = MaterialEntry(prefixComponentPair[0], GTMaterials.Neutronium);
     //     // pipeMap[GTValues.UEV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("activated_netherite"));
-    //     // pipeMap[GTValues.UIV] = MaterialEntry(prefixComponentPair[0], GTMaterials.Holmium);
+    //     // pipeMap[GTValues.UIV] = MaterialEntry(prefixComponentPair[0], GTMaterials.get("necrosiderite"));
     //     // event.modify(prefixComponentPair[1], pipeMap)
     // })
 
@@ -176,18 +176,18 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.setMaterialEntries("rotor", {
         UHV: "rotor:neutronium",
         UEV: "rotor:activated_netherite",
-        UIV: "rotor:holmium",
+        UIV: "rotor:necrosiderite",
     })
 
     // event.setMaterialEntry(GTCraftingComponents.ROTOR, GTValues.UHV, new MaterialEntry(TagPrefix.rotor, GTMaterials.Neutronium))
     // event.setMaterialEntry(GTCraftingComponents.ROTOR, GTValues.UEV, new MaterialEntry(TagPrefix.rotor, GTMaterials.get("activated_netherite")))
-    // event.setMaterialEntry(GTCraftingComponents.ROTOR, GTValues.UIV, new MaterialEntry(TagPrefix.rotor, GTMaterials.Holmium))
+    // event.setMaterialEntry(GTCraftingComponents.ROTOR, GTValues.UIV, new MaterialEntry(TagPrefix.rotor, GTMaterials.get("necrosiderite")))
 
     // Rotors
     // let rotorMap = {};
     // rotorMap[GTValues.UHV] = MaterialEntry(TagPrefix.rotor, GTMaterials.Neutronium)
     // rotorMap[GTValues.UEV] = MaterialEntry(TagPrefix.rotor, GTMaterials.get("activated_netherite"))
-    // rotorMap[GTValues.UIV] = MaterialEntry(TagPrefix.rotor, GTMaterials.Holmium)
+    // rotorMap[GTValues.UIV] = MaterialEntry(TagPrefix.rotor, GTMaterials.get("necrosiderite"))
     // event.modifyMaterialEntry(CraftingComponent.ROTOR, rotorMap)
 
     // TODO: Sawblades (May require making tools for the material)
@@ -225,19 +225,19 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.setMaterialEntries("coil_electric", {
         UHV: "wireGtHex:sculk_superconductor",
         UEV: "wireGtHex:activated_netherite",
-        UIV: "wireGtHex:holmium",
+        UIV: "wireGtHex:necrosiderite",
     })
 
     // event.setMaterialEntry(GTCraftingComponents.COIL_ELECTRIC, GTValues.UHV, new MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("sculk_superconductor")))
     // event.setMaterialEntry(GTCraftingComponents.COIL_ELECTRIC, GTValues.UEV, new MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("activated_netherite")))
-    // event.setMaterialEntry(GTCraftingComponents.COIL_ELECTRIC, GTValues.UIV, new MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("holmium")))
+    // event.setMaterialEntry(GTCraftingComponents.COIL_ELECTRIC, GTValues.UIV, new MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("necrosiderite")))
 
     // Electric Coils
 
     // let electricCoilMap = {};
     // electricCoilMap[GTValues.UHV] = MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("sculk_superconductor"))
     // electricCoilMap[GTValues.UEV] = MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("activated_netherite"))
-    // electricCoilMap[GTValues.UIV] = MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("holmium"))
+    // electricCoilMap[GTValues.UIV] = MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("necrosiderite"))
     // event.modifyMaterialEntry(CraftingComponent.COIL_ELECTRIC, electricCoilMap)
 
     const magTerbium = "longRod:magnetic_iron_neodymium_terbium_neutronate"
@@ -349,18 +349,18 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     event.setMaterialEntries("spring", {
         UEV: "spring:activated_netherite",
-        UIV: "spring:holmium",
+        UIV: "spring:necrosiderite",
         MAX: "spring:monium",
     })
 
     // event.setMaterialEntry(GTCraftingComponents.SPRING, GTValues.UEV, new MaterialEntry(TagPrefix.spring, GTMaterials.get("activated_netherite")))
-    // event.setMaterialEntry(GTCraftingComponents.SPRING, GTValues.UIV, new MaterialEntry(TagPrefix.spring, GTMaterials.get("holmium")))
+    // event.setMaterialEntry(GTCraftingComponents.SPRING, GTValues.UIV, new MaterialEntry(TagPrefix.spring, GTMaterials.get("necrosiderite")))
     // event.setMaterialEntry(GTCraftingComponents.SPRING, GTValues.MAX, new MaterialEntry(TagPrefix.spring, GTMaterials.get("monium")))
 
     // Spring
     // let springMap = {};
     // springMap[GTValues.UEV] = MaterialEntry(TagPrefix.spring, GTMaterials.get("activated_netherite"))
-    // springMap[GTValues.UIV] = MaterialEntry(TagPrefix.spring, GTMaterials.get("holmium"))
+    // springMap[GTValues.UIV] = MaterialEntry(TagPrefix.spring, GTMaterials.get("necrosiderite"))
     // springMap[GTValues.MAX] = MaterialEntry(TagPrefix.spring, GTMaterials.get("monium"))
     // event.modifyMaterialEntry(CraftingComponent.SPRING, springMap)
 
