@@ -143,7 +143,7 @@
 				""
 				"{moni.quest.677D081CD7612FB0.description4}"
 				"{@pagebreak}"
-				"[\"\",{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0D0A0C18ED958511\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description5\"}]"
+				"[\"\",{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0D0A0C18ED958511\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description5\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"24415A26E5A0FD72\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description7\"}]"
 				""
 				"{moni.quest.677D081CD7612FB0.description6}"
 			]
