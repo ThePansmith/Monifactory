@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
 
 
     // Emitter
-    // Has Glass containing necrosiderite oxide
+    // Has Glass containing Necrosiderite Oxide
     event.recipes.gtceu.macerator("alien_scrap_emitter_crushing")
         .itemInputs("kubejs:ruined_emitter")
         .chancedOutput("kubejs:necrosiderite_oxide_glass_dust", 9500, 0)
