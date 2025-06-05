@@ -597,7 +597,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("V", Predicates.blocks(GTBlocks.CASING_GRATE.get()))
             .build())
         .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/machines/projectors", false)
 
     // Advanced Microverse Projector
     event.create("advanced_microverse_projector", "multiblock")
@@ -620,7 +620,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where(" ", Predicates.air())
             .build())
         .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/machines/projectors", false)
 
     // Advanced Microverse Projector II
     event.create("advanced_microverse_projector_ii", "multiblock")
@@ -648,7 +648,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("#", Predicates.any())
             .build())
         .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/machines/projectors", false)
 
     // Microverse Projector III (Hyperbolic Microverse Projector)
     event.create("hyperbolic_microverse_projector", "multiblock")
@@ -685,7 +685,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("#", Predicates.any())
             .build())
         .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/multiblock/implosion_compressor", false)
+            "gtceu:block/machines/projectors", false)
 
     // Naquadah Reactor I
     event.create("naquadah_reactor", "multiblock")
