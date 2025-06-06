@@ -3,7 +3,7 @@
  * Material Rework related material declarations
  */
 GTCEuStartupEvents.registry("gtceu:element", event => {
-    event.create("null_meta")
+    event.create("meta_null")
         .protons(0)
         .neutrons(0)
         .symbol("∅");
@@ -29,13 +29,23 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .cableProperties(GTValues.V[GTValues.UEV], 1, 32, false)
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE)
 
+    // UEV Moni Supercon
+    event.create("fluxed_ardite")
+        .ingot().fluid()
+        .color(0xd07856).secondaryColor(0x771f05)
+        .iconSet("magic")
+        .blastTemp(11000, "highest", GTValues.VHA[GTValues.UHV], 1200)
+        .components("4x ardite", "2x electrum_flux", "mana")
+        .cableProperties(GTValues.V[GTValues.UEV], 1, 0, true)
+
     // UEV GT Supercon
-    event.create("osmium_taranium_einsteinium_caesium_omnide")
+    event.create("osmium_tantalum_einsteinium_caesium_omnide")
         .ingot().fluid()
         .color(0x3221fb).secondaryColor(0x89a223)
         .iconSet("metallic")
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
-        .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
+        .components("2x osmium", "3x tantalum", "4x einsteinium", "5x caesium", "2x omnium")
+        .formula("Os2Ta3Es4Cs5Nm2")
         .cableProperties(GTValues.V[GTValues.UEV], 32, 0, true)
 
     // UIV Moni Supercon
@@ -46,6 +56,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
         .cableProperties(GTValues.V[GTValues.UIV], 1, 0, true)
+        .flags(GTMaterialFlags.DISABLE_ALLOY_BLAST)
 
     // UIV GT Supercon
     event.create("eltic_neptunium_antimony_terbium_germanium_carbide")
@@ -53,24 +64,15 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x89a223).secondaryColor(0x3221fb)
         .iconSet("magic")
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
-        .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
+        .components("4x eltz", "2x neptunium", "1x antimony", "1x terbium", "1x germanium", "2x carbon")
         .cableProperties(GTValues.V[GTValues.UIV], 64, 0, true)
 
     // UIV pipe/insulator
-    event.create("null_meta")
+    event.create("meta_null")
         .ingot().fluid()
         .color(0x000000).secondaryColor(0x24142c)
         .iconSet("shiny")
-        .element(GTElements.get("null_meta"))
+        .element(GTElements.get("meta_null"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
         .fluidPipeProperties(200000, 20000, true, true, true, true)
-
-    // Ethylene-propylene diene monomer (EPDM)
-    // Endgame rubber
-    event.create("ethylene_propylene_diene_monomer")
-        .polymer().liquid()
-        .color(0x354444)
-        .fluidPipeProperties(3000, 12000, true, true, true, false)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
-        .formula("C6H7NO2");
 })

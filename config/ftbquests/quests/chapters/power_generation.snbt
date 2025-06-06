@@ -967,12 +967,14 @@
 				"{moni.quest.19084E91F357C8C2.description1}"
 				""
 				"{moni.quest.19084E91F357C8C2.description2}"
+				""
+				"{moni.quest.19084E91F357C8C2.description3}"
 			]
 			id: "19084E91F357C8C2"
 			size: 1.0d
 			tasks: [{
-				id: "25F7D8080E9B62C1"
-				item: "kubejs:creative_energy_data"
+				id: "0312D4E6C4C1C552"
+				item: "gtceu:omnidimensional_power_singularity"
 				type: "item"
 			}]
 			title: "{moni.quest.19084E91F357C8C2.title}"

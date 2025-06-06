@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("minecraft:blaze_powder", 5000, 0)
         .chancedOutput("gtceu:bauxite_dust", 2000, 200)
         .chancedOutput("gtceu:scheelite_dust", 1500, 150)
-        .chancedOutput("gtceu:netherite_scrap_dust", 500, 100)
+        .chancedOutput("gtceu:sulfur_dust", 500, 100)
         .duration(200)
         .EUt(GTValues.VHA[GTValues.IV])
 

@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.naquadah_refinery("naquadah_superfuel")
             .itemInputs("1x gtceu:infinity_dust", "16x kubejs:naquadah_fuel_dust", "64x gtceu:naquadria_dust", "64x gtceu:neutronium_dust")
-            .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naq_fuel_t2 11000", "gtceu:taranium 576", "gtceu:quadium 600")
+            .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naq_fuel_t2 11000", (doStoneline ? "gtceu:taranium 576" : "gtceu:actinium 576"), "gtceu:quadium 600")
             .outputFluids("gtceu:naquadah_superfuel 12000")
             .duration(800)
             .EUt(8388608)
@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
             .chancedOutput("1x gtceu:infinity_dust", 3300, 0)
             .chancedOutput("3x kubejs:naquadah_waste", 6600, 0)
             .chancedOutput("16x gtceu:naquadria_dust", 5000, 0)
-            .chancedFluidOutput("gtceu:taranium 288", 5000, 0)
+            .chancedFluidOutput((doStoneline ? "gtceu:taranium 228" : "gtceu:actinium 228"), 5000, 0)
             .chancedFluidOutput("gtceu:hyperdegenerate_matter 100", 3300, 0)
             .duration(1200)
             .EUt(1966080)

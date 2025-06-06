@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
 
     // Enhanced Infinity Catalyst Crafting
     event.recipes.gtceu.omnic_forge("kubejs:furious_infinity_catalyst_crafting")
-        .itemInputs("kubejs:infinity_catalyst", "kubejs:heart_of_a_universe", "gtceu:infinity_frame", "2x gtceu:uev_emitter", "64x gtceu:holmium_foil")
+        .itemInputs("kubejs:infinity_catalyst", "kubejs:heart_of_a_universe", "gtceu:infinity_frame", "2x gtceu:uev_emitter", "64x gtceu:necrosiderite_foil")
         .itemOutputs("kubejs:furious_infinity_catalyst")
         .duration(1000)
         .EUt(1966080)

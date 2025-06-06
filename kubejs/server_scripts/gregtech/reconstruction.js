@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         ["uv", "duranium"],
         ["uhv", "tritanium"],
         ["uev", "omnium"],
-        ["uiv", "holmium"]
+        ["uiv", "necrosiderite"]
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
         event.shaped(`gtceu:${tier}_atomic_reconstructor`, [

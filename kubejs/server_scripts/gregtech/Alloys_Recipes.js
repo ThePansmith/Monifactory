@@ -171,6 +171,13 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("gtceu:mana", 1000))
         .duration(400)
         .EUt(30)
+
+    event.recipes.gtceu.mixer("kubejs:fluxed_ardite_dust")
+        .itemInputs("4x gtceu:ardite_dust", "2x gtceu:electrum_flux_dust")
+        .itemOutputs("7x gtceu:fluxed_ardite_dust")
+        .inputFluids(Fluid.of("gtceu:mana", 1000))
+        .duration(400)
+        .EUt(30)
 })
 
 ServerEvents.recipes(event => {

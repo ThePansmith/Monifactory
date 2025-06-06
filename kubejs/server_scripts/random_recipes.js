@@ -413,7 +413,7 @@ ServerEvents.recipes(event => {
         S: "gtceu:uev_sensor",
         C: "#gtceu:circuits/uiv",
         E: "gtceu:uev_emitter",
-        W: "gtceu:holmium_quadruple_wire"
+        W: "gtceu:necrosiderite_quadruple_wire"
     })
 
     //
@@ -1027,7 +1027,7 @@ ServerEvents.recipes(event => {
 
     // 64A energy converters recipe fix
     event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
-    event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:holmium_hex_wire")
+    event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:necrosiderite_hex_wire")
     event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
 
     // Large Boilers fuel rebalance

@@ -236,6 +236,13 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
 
+    event.create("prism_glass")
+        .displayName("P.R.I.S.M. Glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+
     event.create("omnic_matrix_coil_block", "gtceu:coil")
         .temperature(12600)
         .level(16)
