@@ -157,7 +157,8 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.LV])
 
         event.recipes.gtceu.assembler(`hull_${value.tier}`)
-            .itemInputs(`gtceu:${value.tier}_machine_casing`, `2x gtceu:${value.wire}`, `2x gtceu:${value.plastic}_plate`)
+            .itemInputs(`gtceu:${value.tier}_machine_casing`, `2x gtceu:${value.wire}`)
+            .inputFluids(`gtceu:${value.plastic} 288`)
             .itemOutputs(`gtceu:${value.tier}_machine_hull`)
             .duration(50)
             .EUt(GTValues.VHA[GTValues.LV])

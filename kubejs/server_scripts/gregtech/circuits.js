@@ -56,17 +56,17 @@ ServerEvents.recipes(event => {
 
     // Complex SMDs
     const smds = [
-        ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_necrosiderite_wire", 2],
-        ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_necrosiderite_wire", 4],
-        ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:necrosiderite_foil", 1],
-        ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_necrosiderite_wire", 2],
-        ["inductor", "gtceu:iron_neodymium_terbium_neutronate_ring", "4x gtceu:fine_necrosiderite_wire", 2]
+        ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_necrosiderite_wire", 72],
+        ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_necrosiderite_wire", 144],
+        ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:necrosiderite_foil", 36],
+        ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_necrosiderite_wire", 72],
+        ["inductor", "gtceu:iron_neodymium_terbium_neutronate_ring", "4x gtceu:fine_necrosiderite_wire", 72]
     ]
 
-    for (const [item, primary, secondary, foil_amount] of smds) {
+    for (const [item, primary, secondary, plastic_amount] of smds) {
         event.recipes.gtceu.assembler(`complex_smd_${item}`)
-            // PECA foil is used since other electronic component recipes use fluid polymers
-            .itemInputs(primary, secondary, Item.of("gtceu:polyethyl_cyanoacrylate_foil", foil_amount))
+            .itemInputs(primary, secondary)
+            .inputFluids(`gtceu:polyethyl_cyanoacrylate ${plastic_amount}`)
             .itemOutputs(`64x kubejs:complex_smd_${item}`)
             .duration(160)
             .EUt(245760)
@@ -291,10 +291,9 @@ ServerEvents.recipes(event => {
             "24x gtceu:nor_memory_chip",
             "8x kubejs:uxpic_chip",
             "24x gtceu:fine_europium_wire",
-            "8x gtceu:polyethyl_cyanoacrylate_foil",
             "4x gtceu:crystal_matrix_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:omnium 144")
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 144", "gtceu:omnium 144")
         .itemOutputs("kubejs:matter_processor_computer")
         .duration(20 * 20)
         .EUt(250000)
@@ -307,10 +306,9 @@ ServerEvents.recipes(event => {
             "24x gtceu:nor_memory_chip",
             "8x kubejs:uxpic_chip",
             "24x gtceu:fine_europium_wire",
-            "8x gtceu:polyethyl_cyanoacrylate_foil",
             "4x gtceu:crystal_matrix_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:omnium 144")
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 288", "gtceu:omnium 144")
         .itemOutputs("kubejs:matter_processor_computer")
         .duration(20 * 20 / 2)
         .EUt(250000)
@@ -326,9 +324,8 @@ ServerEvents.recipes(event => {
             "32x gtceu:ram_chip",
             "16x kubejs:multidimensional_cpu_chip",
             "16x gtceu:ruthenium_trinium_americium_neutronate_double_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
             "8x gtceu:crystal_matrix_plate") // could replace with omnium frame
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 288")
+        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 288")
         .itemOutputs("kubejs:matter_processor_mainframe")
         .duration(2400)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -344,9 +341,8 @@ ServerEvents.recipes(event => {
             "32x gtceu:ram_chip",
             "16x kubejs:multidimensional_cpu_chip",
             "16x gtceu:ruthenium_trinium_americium_neutronate_double_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
             "8x gtceu:crystal_matrix_plate") // could replace with omnium frame
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 288")
+        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 288")
         .itemOutputs("kubejs:matter_processor_mainframe")
         .duration(2400 / 2)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -415,10 +411,9 @@ ServerEvents.recipes(event => {
             "16x kubejs:hyperdynamic_ram_chip",
             "16x kubejs:uxpic_chip",
             "24x gtceu:fine_activated_netherite_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
             "4x gtceu:necrosiderite_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 1152")
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 576")
         .itemOutputs("kubejs:dimensional_processor_computer")
         .duration(20 * 20)
         .EUt(1966080)
@@ -436,10 +431,9 @@ ServerEvents.recipes(event => {
             "24x kubejs:multidimensional_cpu_chip",
             "32x kubejs:hyperdynamic_ram_chip",
             "16x gtceu:activated_netherite_double_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
             "8x gtceu:necrosiderite_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 576")
+        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 576")
         .itemOutputs("kubejs:dimensional_processor_mainframe")
         .duration(2400)
         .EUt(GTValues.VA[GTValues.UEV])
@@ -510,10 +504,9 @@ ServerEvents.recipes(event => {
             "16x kubejs:quantum_soc_chip",
             "24x kubejs:uxpic_chip",
             "24x gtceu:fine_necrosiderite_wire",
-            "32x gtceu:polyethyl_cyanoacrylate_foil",
             "4x gtceu:infinity_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 1152")
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("1x kubejs:monic_processor_computer")
         .duration(20 * 20)
         .EUt(3932160)
@@ -534,10 +527,9 @@ ServerEvents.recipes(event => {
             "64x kubejs:hyperdynamic_ram_chip",
             "64x kubejs:quantum_soc_chip",
             "16x gtceu:necrosiderite_double_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
             "8x gtceu:infinity_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 1152")
+        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 1152")
         .itemOutputs("kubejs:monic_processor_mainframe")
         .duration(3200)
         .EUt(GTValues.VA[GTValues.UIV])
