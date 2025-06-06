@@ -400,6 +400,8 @@
 				"{moni.quest.376EE785F4204FFE.description1}"
 				""
 				"{moni.quest.376EE785F4204FFE.description2}"
+				""
+				"{moni.quest.376EE785F4204FFE.description3}"
 			]
 			icon: "gtceu:lv_sifter"
 			id: "376EE785F4204FFE"
@@ -1428,6 +1430,7 @@
 				""
 				"{moni.quest.417D97D9E3562F45.description3}"
 			]
+			icon: "gtceu:polyethylene_plate"
 			id: "417D97D9E3562F45"
 			rewards: [{
 				id: "3F36144D3B8FF660"
@@ -1438,7 +1441,14 @@
 			size: 1.5d
 			tasks: [{
 				id: "7E297FE5F2C0019A"
-				item: "gtceu:polyethylene_plate"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "polyethylene"
+					}
+				}
+				title: "{moni.task.7E297FE5F2C0019A}"
 				type: "item"
 			}]
 			title: "{moni.quest.417D97D9E3562F45.title}"
@@ -1710,7 +1720,6 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["081101DEE6227D87"]
 			description: [
 				"{moni.quest.0E010F5348FC89BF.description1}"
 				""
