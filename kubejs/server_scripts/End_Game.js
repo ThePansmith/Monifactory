@@ -509,4 +509,11 @@ ServerEvents.recipes(event => {
             .CWUt(96, 57600)
             .EUt(1966080)
         )
+
+    // Chromodynamic Conduction Casing
+    event.recipes.gtceu.omnic_forge("chromodynamic_conduction_casing")
+        .itemInputs("gtceu:activated_netherite_frame", "2x gtceu:normal_laser_pipe", "8x gtceu:omnium_single_wire", "#gtceu:circuits/luv")
+        .itemOutputs("monilabs:chromodynamic_conduction_casing")
+        .duration(50)
+        .EUt(GTValues.VHA[GTValues.UV])
 })

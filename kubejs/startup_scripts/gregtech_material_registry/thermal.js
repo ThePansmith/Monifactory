@@ -50,7 +50,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("electrum_flux")
         .ingot().fluid()
-        .color(0xf7be20).secondaryColor(0xff0000)
+        .color(0xf7be20).secondaryColor(0xffc400)
         .iconSet("metallic")
         .blastTemp(1100, "low")
         .components("6x electrum", "lumium", "signalum")
