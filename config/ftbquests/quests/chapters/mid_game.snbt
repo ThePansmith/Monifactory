@@ -63,15 +63,15 @@
 		{
 			id: "4E96C0A741972F9E"
 			linked_quest: "74469710D910C19D"
-			x: 38.5d
-			y: 15.5d
+			x: 33.75d
+			y: 8.5d
 		}
 		{
 			id: "24A33B6D4DE6DB8F"
 			linked_quest: "70D9B3C6539720DE"
 			size: 1.5d
 			x: 35.5d
-			y: 15.5d
+			y: 8.5d
 		}
 		{
 			id: "3A3FFBE01F09FB26"

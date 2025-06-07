@@ -2767,7 +2767,7 @@
   "moni.quest.70784021A2D4E520.description4.expert": "After all that hassle, though, you\u0027re probably better off using \u00266Steel.\u0026r",
   "moni.quest.70784021A2D4E520.subtitle.expert": "Better Iron... Mostly",
   "moni.quest.70784021A2D4E520.title.expert": "Wrought Iron",
-  "moni.quest.70D9B3C6539720DE.description1": "Now that you have \u00266HSS-E\u0026r, you can begin automating \u0026bExtended Crafting\u0026r recipes in a easier way than before. ",
+  "moni.quest.70D9B3C6539720DE.description1": "Now that you have \u00266HSS-G\u0026r, you can begin automating \u0026bExtended Crafting\u0026r recipes in a easier way than before. ",
   "moni.quest.70D9B3C6539720DE.description2": "To begin, you\u0027ll need to craft one of each extended \u00263Package Crafter\u0026r listed above. Put an \u00263Unpackager\u0026r on top of each one, and then a \u00263Packager\u0026r anywhere you want. These are all AE2 devices, so you\u0027ll need to connect them to an ME Network.",
   "moni.quest.70D9B3C6539720DE.description3": "Next, right-click the \u00263Package Recipe Encoder\u0026r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You\u0027ll have to choose the appropriate table for the recipe you want to encode.",
   "moni.quest.70D9B3C6539720DE.description4": "\u00266Holders\u0026r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press \u00266[+]\u0026r in \u0026bEMI\u0026r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines.",
