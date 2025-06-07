@@ -104,7 +104,7 @@
   "moni.quest.04EABD3D2C72D2C5.description1": "\u00262Wetware- and Crystal-related processes require a different kind of sterilization.\u0026r",
   "moni.quest.04EABD3D2C72D2C5.description2": "You will need to build another \u00263Cleanroom\u0026r to run these recipes inside. Instead of \u00263Filter Casings\u0026r, use \u00263Sterilizing Filter Casings\u0026r in the top face.",
   "moni.quest.04EABD3D2C72D2C5.description3": "These casings are expensive! You\u0027ll need \u00263Fusion MK II\u0026r to get the \u00266Tritanium\u0026r.",
-  "moni.quest.04EABD3D2C72D2C5.description4": "\u0026eNote that a Sterile Cleanroom cannot handle recipes which require regular Cleanrooms.\u0026r",
+  "moni.quest.04EABD3D2C72D2C5.description4": "\u0026cNote: Sterile Cleanrooms do not allow for regular Cleanroom recipes.\u0026r",
   "moni.quest.04EABD3D2C72D2C5.title": "\u00262A Different Type of Clean",
   "moni.quest.0508D3CCB6C876A3.description1": "\u00262There are 3 materials you will need from processing Naquadah: Enriched Naquadah (Nq+), Naquadria (Nq*), and Trinium (Ke). ",
   "moni.quest.0508D3CCB6C876A3.description2": "There are 2 different ways to process Naquadah, each resulting in different materials.\u0026r",
