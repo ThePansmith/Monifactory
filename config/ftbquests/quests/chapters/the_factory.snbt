@@ -24,7 +24,7 @@
 			id: "7AEC3CB9FDF51CB6"
 			linked_quest: "28854E7AC91786E9"
 			x: 5.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			id: "12C41B95C25D306A"
@@ -163,7 +163,7 @@
 			}]
 			title: "{moni.quest.19233A97579E0BDD.title}"
 			x: -3.0d
-			y: 2.0d
+			y: 1.25d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
@@ -690,7 +690,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.09C0CDC1DFA7842D.title}"
-			x: -1.0d
+			x: -1.5d
 			y: -2.0d
 		}
 		{
@@ -1607,10 +1607,13 @@
 			}]
 			title: "{moni.quest.3AB0402B19DD5BA8.title}"
 			x: 7.0d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["4CD6C60CBEFFA317"]
+			dependencies: [
+				"4CD6C60CBEFFA317"
+				"0523F4AB9A794390"
+			]
 			description: [
 				"{moni.quest.1BC6DDC2D50F9C46.description1}"
 				""
@@ -1695,7 +1698,7 @@
 			]
 			title: "{moni.quest.1BC6DDC2D50F9C46.title}"
 			x: 2.0d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1722,7 +1725,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
@@ -1744,7 +1747,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 11.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
@@ -1769,7 +1772,7 @@
 			}]
 			title: "{moni.quest.4F4F120AFB3A9250.title}"
 			x: 0.5d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
@@ -1802,7 +1805,7 @@
 			}]
 			title: "{moni.quest.780706A4C4AEB9CE.title}"
 			x: 3.5d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3AB0402B19DD5BA8"]
@@ -1829,7 +1832,7 @@
 			}]
 			title: "{moni.quest.5C4E189A3E401566.title}"
 			x: 7.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["62BBD1F6767A4D90"]
@@ -1878,7 +1881,7 @@
 			}]
 			title: "{moni.quest.1DBBE96165C7987D.title}"
 			x: 0.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["1DBBE96165C7987D"]
@@ -1903,13 +1906,10 @@
 			}]
 			title: "{moni.quest.56924FC6B029BA0F.title}"
 			x: -2.0d
-			y: 10.0d
+			y: 11.0d
 		}
 		{
-			dependencies: [
-				"0D6C8FFD01BE5C21"
-				"1BC6DDC2D50F9C46"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.0523F4AB9A794390.description1}"
@@ -1931,14 +1931,14 @@
 			hide_dependency_lines: true
 			icon: "gtceu:maintenance_hatch"
 			id: "0523F4AB9A794390"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "44CBD475F0332E0C"
 				type: "checkmark"
 			}]
 			title: "{moni.quest.0523F4AB9A794390.title}"
-			x: -9.0d
-			y: 9.0d
+			x: 2.75d
+			y: 7.75d
 		}
 		{
 			dependencies: ["2D31856F6EF1ED69"]
@@ -1965,7 +1965,12 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
+			dependencies: [
+				"055193574D203872"
+				"1FF652D16CE97C79"
+				"6A262AA410619C23"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.1A427A8CB43C8B59.description1}"
 				""
@@ -1988,16 +1993,17 @@
 				""
 				"{moni.quest.1A427A8CB43C8B59.description12}"
 			]
-			icon: "gtceu:lv_electric_pump"
+			icon: "gtceu:shutter_module_cover"
 			id: "1A427A8CB43C8B59"
-			size: 1.5d
+			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "550495EAC8E9629D"
 				type: "checkmark"
 			}]
 			title: "{moni.quest.1A427A8CB43C8B59.title}"
-			x: -5.0d
-			y: 9.0d
+			x: -3.5d
+			y: 3.75d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2087,7 +2093,10 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["4CD6C60CBEFFA317"]
+			dependencies: [
+				"4CD6C60CBEFFA317"
+				"0523F4AB9A794390"
+			]
 			description: [
 				"{moni.quest.0D6C8FFD01BE5C21.description1}"
 				""
@@ -2251,7 +2260,7 @@
 			}]
 			title: "{moni.quest.3E4DEA4FFD019AB9.title}"
 			x: 9.0d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -2535,7 +2544,7 @@
 			}]
 			title: "{moni.quest.74A7ABF43D6A403F.title}"
 			x: 0.75d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7A12743F5ECCED90"]
@@ -2676,6 +2685,53 @@
 			}]
 			x: 4.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["6A914B240E1A7BCB"]
+			description: [
+				"{moni.quest.2861BA7C235C52A3.description1}"
+				""
+				"{moni.quest.2861BA7C235C52A3.description2}"
+				""
+				"{moni.quest.2861BA7C235C52A3.description3}"
+				""
+				"{moni.quest.2861BA7C235C52A3.description4}"
+				"{moni.quest.2861BA7C235C52A3.description5}"
+				"{moni.quest.2861BA7C235C52A3.description6}"
+				"{moni.quest.2861BA7C235C52A3.description7}"
+				"{moni.quest.2861BA7C235C52A3.description8}"
+				"{moni.quest.2861BA7C235C52A3.description9}"
+				"{moni.quest.2861BA7C235C52A3.description10}"
+				"{moni.quest.2861BA7C235C52A3.description11}"
+				"{moni.quest.2861BA7C235C52A3.description12}"
+				"{moni.quest.2861BA7C235C52A3.description13}"
+				"{moni.quest.2861BA7C235C52A3.description14}"
+				"{moni.quest.2861BA7C235C52A3.description15}"
+				""
+				"{moni.quest.2861BA7C235C52A3.description16}"
+				""
+				"{moni.quest.2861BA7C235C52A3.description17}"
+				"{moni.quest.2861BA7C235C52A3.description18}"
+				"{moni.quest.2861BA7C235C52A3.description19}"
+				"{moni.quest.2861BA7C235C52A3.description20}"
+				"{moni.quest.2861BA7C235C52A3.description21}"
+				"{moni.quest.2861BA7C235C52A3.description22}"
+				"{moni.quest.2861BA7C235C52A3.description23}"
+				"{moni.quest.2861BA7C235C52A3.description24}"
+				"{moni.quest.2861BA7C235C52A3.description25}"
+				"{moni.quest.2861BA7C235C52A3.description26}"
+				"{moni.quest.2861BA7C235C52A3.description27}"
+			]
+			icon: "gtceu:energetic_alloy_octal_wire"
+			id: "2861BA7C235C52A3"
+			size: 1.25d
+			tasks: [{
+				id: "7A50024966E38151"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.2861BA7C235C52A3.title}"
+			x: 3.5d
+			y: 10.0d
 		}
 	]
 	title: "{moni.chapter.2763DAD954E0EED8.title}"
