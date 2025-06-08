@@ -643,7 +643,11 @@
 				"0EAD0ACBDD153198"
 				"713FAECEE5046121"
 			]
-			description: ["{moni.quest.79DAB629275B7806.description1}"]
+			description: [
+				"{moni.quest.79DAB629275B7806.description1}"
+				""
+				"{moni.quest.79DAB629275B7806.description2}"
+			]
 			id: "79DAB629275B7806"
 			tasks: [{
 				id: "325FA02A9A465EAD"
@@ -661,9 +665,7 @@
 			description: [
 				"{moni.quest.2E269D0B496C380C.description1}"
 				""
-				"{moni.quest.2E269D0B496C380C.description2}"
-				""
-				"{moni.quest.2E269D0B496C380C.description3}"
+				"[\"\",{\"translate\":\"moni.quest.2E269D0B496C380C.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.2E269D0B496C380C.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1405D08C6A87B3BB\"}},{\"translate\":\"moni.quest.2E269D0B496C380C.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.2E269D0B496C380C.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"425D1C34A82B054D\"}},{\"translate\":\"moni.quest.2E269D0B496C380C.rich_description5\"}]"
 			]
 			id: "2E269D0B496C380C"
 			tasks: [{
