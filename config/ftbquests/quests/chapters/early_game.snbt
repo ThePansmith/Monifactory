@@ -1430,6 +1430,7 @@
 				""
 				"{moni.quest.417D97D9E3562F45.description3}"
 			]
+			icon: "gtceu:polyethylene_plate"
 			id: "417D97D9E3562F45"
 			rewards: [{
 				id: "3F36144D3B8FF660"
@@ -1440,7 +1441,14 @@
 			size: 1.5d
 			tasks: [{
 				id: "7E297FE5F2C0019A"
-				item: "gtceu:polyethylene_plate"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "polyethylene"
+					}
+				}
+				title: "{moni.task.7E297FE5F2C0019A}"
 				type: "item"
 			}]
 			title: "{moni.quest.417D97D9E3562F45.title}"
@@ -1712,7 +1720,6 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["081101DEE6227D87"]
 			description: [
 				"{moni.quest.0E010F5348FC89BF.description1}"
 				""
@@ -2094,53 +2101,6 @@
 			title: "{moni.quest.508452E1A3E09B56.title}"
 			x: 13.875d
 			y: 16.5d
-		}
-		{
-			dependencies: ["6A914B240E1A7BCB"]
-			description: [
-				"{moni.quest.2861BA7C235C52A3.description1}"
-				""
-				"{moni.quest.2861BA7C235C52A3.description2}"
-				""
-				"{moni.quest.2861BA7C235C52A3.description3}"
-				""
-				"{moni.quest.2861BA7C235C52A3.description4}"
-				"{moni.quest.2861BA7C235C52A3.description5}"
-				"{moni.quest.2861BA7C235C52A3.description6}"
-				"{moni.quest.2861BA7C235C52A3.description7}"
-				"{moni.quest.2861BA7C235C52A3.description8}"
-				"{moni.quest.2861BA7C235C52A3.description9}"
-				"{moni.quest.2861BA7C235C52A3.description10}"
-				"{moni.quest.2861BA7C235C52A3.description11}"
-				"{moni.quest.2861BA7C235C52A3.description12}"
-				"{moni.quest.2861BA7C235C52A3.description13}"
-				"{moni.quest.2861BA7C235C52A3.description14}"
-				"{moni.quest.2861BA7C235C52A3.description15}"
-				""
-				"{moni.quest.2861BA7C235C52A3.description16}"
-				""
-				"{moni.quest.2861BA7C235C52A3.description17}"
-				"{moni.quest.2861BA7C235C52A3.description18}"
-				"{moni.quest.2861BA7C235C52A3.description19}"
-				"{moni.quest.2861BA7C235C52A3.description20}"
-				"{moni.quest.2861BA7C235C52A3.description21}"
-				"{moni.quest.2861BA7C235C52A3.description22}"
-				"{moni.quest.2861BA7C235C52A3.description23}"
-				"{moni.quest.2861BA7C235C52A3.description24}"
-				"{moni.quest.2861BA7C235C52A3.description25}"
-				"{moni.quest.2861BA7C235C52A3.description26}"
-				"{moni.quest.2861BA7C235C52A3.description27}"
-			]
-			icon: "gtceu:energetic_alloy_octal_wire"
-			id: "2861BA7C235C52A3"
-			size: 1.5d
-			tasks: [{
-				id: "7A50024966E38151"
-				type: "checkmark"
-			}]
-			title: "{moni.quest.2861BA7C235C52A3.title}"
-			x: 13.875d
-			y: 12.0d
 		}
 		{
 			dependencies: ["3B639F4061B00F1A"]

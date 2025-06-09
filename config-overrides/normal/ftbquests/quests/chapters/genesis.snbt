@@ -510,49 +510,13 @@
 				type: "item"
 			}]
 			tasks: [{
+				icon: "gtceu:potin_large_fluid_pipe"
 				id: "150F57D9BEE7CCEE"
 				item: {
 					Count: 1
-					id: "itemfilters:or"
+					id: "itemfilters:id_regex"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:or"
-								tag: {
-									items: [
-										{
-											Count: 1b
-											id: "gtceu:steel_tiny_fluid_pipe"
-										}
-										{
-											Count: 1b
-											id: "gtceu:steel_small_fluid_pipe"
-										}
-										{
-											Count: 1b
-											id: "gtceu:steel_normal_fluid_pipe"
-										}
-										{
-											Count: 1b
-											id: "gtceu:steel_large_fluid_pipe"
-										}
-										{
-											Count: 1b
-											id: "gtceu:steel_huge_fluid_pipe"
-										}
-									]
-								}
-							}
-							{
-								Count: 1b
-								id: "enderio:pressurized_fluid_conduit"
-							}
-							{
-								Count: 1b
-								id: "laserio:card_fluid"
-							}
-						]
+						value: "^gtceu:[\\w_]+_fluid_pipe$"
 					}
 				}
 				title: "{moni.task.150F57D9BEE7CCEE}"
@@ -1127,8 +1091,9 @@
 				"{moni.quest.57D1B1D74391A05F.description2}"
 				""
 				"{moni.quest.57D1B1D74391A05F.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.57D1B1D74391A05F.description4}"
+				""
 				"{moni.quest.57D1B1D74391A05F.description5}"
 				"{moni.quest.57D1B1D74391A05F.description6}"
 			]
@@ -1142,8 +1107,16 @@
 			shape: "hexagon"
 			subtitle: "{moni.quest.57D1B1D74391A05F.subtitle}"
 			tasks: [{
+				icon: "gtceu:tin_normal_item_pipe"
 				id: "72798E2CFE3F6FB5"
-				item: "gtceu:tin_normal_item_pipe"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^gtceu:[\\w_]+_item_pipe$"
+					}
+				}
+				title: "{moni.task.72798E2CFE3F6FB5}"
 				type: "item"
 			}]
 			title: "{moni.quest.57D1B1D74391A05F.title}"
