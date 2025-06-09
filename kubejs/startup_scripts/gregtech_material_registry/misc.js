@@ -249,6 +249,23 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         ])
 })
 
+// Empowered Gemstone
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("gemstone_empowered")
+        .gem()
+        .color(0x0066ff).secondaryColor(0x000099) // Rainbow Effect?
+        .iconSet(GTMaterialIconSet.DIAMOND)
+        .components("1x restonia_empowered", "1x enori_empowered", "1x void_empowered", "1x palis_empowered", "1x diamatine_empowered", "1x emeradic_empowered")
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.rod,
+        ])
+})
+
 
 // Sunnarium
 GTCEuStartupEvents.registry("gtceu:material", event => {

@@ -30,12 +30,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING)
 
     // UEV Moni Supercon
-    event.create("fluxed_ardite")
+    event.create("empowered_flux")
         .ingot().fluid()
         .color(0xd07856).secondaryColor(0x771f05)
         .iconSet("magic")
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UHV], 1200)
-        .components("4x ardite", "2x electrum_flux", "mana")
+    //  .components("4x electrum_flux", "3x gemstone_empowered")
         .cableProperties(GTValues.V[GTValues.UEV], 1, 0, true)
 
     // UEV GT Supercon
