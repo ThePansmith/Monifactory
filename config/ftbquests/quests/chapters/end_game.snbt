@@ -916,7 +916,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "50C7192DF852960F"
-				item: "kubejs:ultimate_gem"
+				item: "gtceu:gemstone_empowered_gem"
 				type: "item"
 			}]
 			x: 48.5d
