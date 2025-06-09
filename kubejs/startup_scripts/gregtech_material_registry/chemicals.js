@@ -326,4 +326,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("19x carbon", "12x hydrogen", "3x oxygen")
         .formula("(C6H4O2)(C13H8O)")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
+
+    event.create("radiant_blend")
+        .liquid()
+        .color(0xfff25e)
 })
