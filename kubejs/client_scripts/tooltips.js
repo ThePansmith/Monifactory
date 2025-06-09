@@ -30,9 +30,6 @@ ItemEvents.tooltip(tooltip => {
     // Microminer Components
     tooltip.add("kubejs:universal_navigator", Text.translatable("kubejs.universal_navigator.tooltip"))
 
-    // Endgame Items
-    tooltip.add("kubejs:ultimate_gem", Text.translatable("kubejs.ultimate_gem.tooltip"))
-
     // Assembly line ordering
     if (doAssemblyLineOrderingWarning) {
         tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.hardmode"))
