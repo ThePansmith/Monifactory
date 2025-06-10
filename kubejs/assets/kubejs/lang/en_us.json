@@ -210,11 +210,11 @@
   "item.kubejs.complex_smd_inductor": "Complex SMD Inductor",
 
   "item.kubejs.matter_processing_unit": "Matter Processing Unit",
-  "item.kubejs.matter_circuit_board": "Matter Circuit Board",
-  "item.kubejs.matter_processor": "Matter Processor",
-  "item.kubejs.matter_processor_assembly": "Matter Processor Assembly",
-  "item.kubejs.matter_processor_computer": "Matter Processor Supercomputer",
-  "item.kubejs.matter_processor_mainframe": "Matter Processor Mainframe",
+  "item.kubejs.matter_circuit_board": "Optical Circuit Board",
+  "item.kubejs.optical_processor": "Optical Processor",
+  "item.kubejs.optical_processor_assembly": "Optical Processor Assembly",
+  "item.kubejs.optical_processor_computer": "Optical Processor Supercomputer",
+  "item.kubejs.optical_processor_mainframe": "Optical Processor Mainframe",
 
   "item.kubejs.dimensional_processing_unit": "Dimensional Processing Unit",
   "item.kubejs.dimensional_circuit_board": "Dimensional Circuit Board",
@@ -417,7 +417,7 @@
   "item.kubejs.uev_tier_circuit": "UEV-Tier Circuit",
   "item.kubejs.uiv_tier_circuit": "UIV-Tier Circuit",
   "item.kubejs.max_tier_circuit": "MAX-Tier Circuit",
-  "item.kubejs.matter_circuit.tooltip" : "Omnicapable Circuits!",
+  "item.kubejs.optical_circuit.tooltip" : "Omnicapable Circuits!",
   "item.kubejs.dimensional_circuit.tooltip" : "Powered by Microverses!",
   "item.kubejs.monic_processor.tooltip" : "The Beginning of The End",
   "item.kubejs.monic_processor_assembly.tooltip" : "Can run vanilla Minecraft at a decent FPS",
@@ -543,4 +543,3 @@
 
   "tempad.tempad.tooltip": "§6Uses Monipennies as fuel"
 }
-
