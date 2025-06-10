@@ -86,11 +86,7 @@ ServerEvents.recipes(event => {
         "kubejs:stabilized_berkelium",
         "kubejs:stabilized_californium",
         "kubejs:stabilized_einsteinium",
-        "gtceu:darmstadtium_ingot",
-        "gtceu:tritanium_ingot",
-        "gtceu:duranium_ingot",
-        "gtceu:trinium_ingot",
-        "gtceu:naquadah_ingot"
+        "gtceu:darmstadtium_ingot"
     ];
 
     elements.forEach(omnic_synthesis);
