@@ -7,6 +7,10 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(0)
         .neutrons(0)
         .symbol("∅");
+    event.create("transcendental_matrix")
+        .protons(6)
+        .neutrons(32)
+        .symbol("ᛝ")
 })
 
 
@@ -76,5 +80,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("shiny")
         .element(GTElements.get("meta_null"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
+        .fluidPipeProperties(200000, 20000, true, true, true, true)
+
+    // UEV emitter foil + infinity base
+    event.create("transcendental_matrix")
+        .ingot().fluid()
+        .color(0xffffff).secondaryColor(0x000000)
+        .iconSet("shiny")
+        .element(GTElements.get("transcendental_matrix"))
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
         .fluidPipeProperties(200000, 20000, true, true, true, true)
 })
