@@ -318,6 +318,18 @@
   "item.kubejs.infinity_wire_cutter": "Infinity Wire Cutter",
   "item.kubejs.infinity_power_unit": "Infinity Power Unit",
 
+  "item.kubejs.sapphire_seed_crystal": "Sapphire Seed Crystal",
+  "item.kubejs.sapphire_boule": "Sapphire Boule",
+  "item.kubejs.sapphire_wafer": "Sapphire Wafer",
+  "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer",
+  "item.kubejs.engraved_sapphire_wafer": "Engraved Sapphire Wafer",
+  "item.kubejs.incomplete_sapphire_wafer": "Incomplete Sapphire Wafer",
+  "item.kubejs.completed_optical_wafer": "Completed Optical Wafer",
+  "item.kubejs.optical_chip": "Optical Chip",
+  "item.kubejs.electro_optic_modulator": "Electro-Optic Modulator",
+  "item.kubejs.carbon_mesh_reinforced_circuit_board": "Carbon Mesh Reinforced Circuit Board",
+  "item.kubejs.carbon_mesh_reinforced_printed_circuit_board": "Carbon Mesh Reinforced Printed Circuit Board",
+
   "item.kubejs.solidified_argon": "Solidified Argon",
   "item.kubejs.solidified_chlorine": "Solidified Chlorine",
   "item.kubejs.solidified_fluorine": "Solidified Fluorine",
