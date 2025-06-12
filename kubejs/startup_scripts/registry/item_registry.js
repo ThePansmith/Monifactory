@@ -164,7 +164,7 @@ StartupEvents.registry("item", event => {
     // INFINITY AND PRISMAC
 
     // APC
-    event.create("blank_prismatic_core").rarity("uncommon")
+    event.create("inert_prismatic_core").rarity("uncommon")
         .texture("kubejs:item/prismac/cores/0_blank_core")
     event.create("red_prismatic_core").rarity("uncommon")
         .texture("kubejs:item/prismac/cores/1_red_core")
