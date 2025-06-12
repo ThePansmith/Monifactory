@@ -1,7 +1,0 @@
-{
-  "parent":"item/generated",
-  "textures": {
-    "layer0":"kubejs:item/mote_of_omnium",
-    "layer1":"kubejs:item/mote_of_omnium_overlay"
-  }
-}

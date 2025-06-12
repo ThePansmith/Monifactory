@@ -155,8 +155,6 @@ StartupEvents.registry("item", event => {
 
     // Endgame Items
     event.create("neutron_emitter")
-    event.create("mote_of_omnium").displayName("Mote of Raw Omnium")
-        .glow(true).rarity("epic")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
     event.create("exotic_materials_catalyst").displayName("Exotic Materials Catalyst")
     event.create("eternal_catalyst").displayName("Eternal Catalyst")
