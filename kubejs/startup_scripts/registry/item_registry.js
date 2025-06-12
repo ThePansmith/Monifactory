@@ -197,7 +197,7 @@ StartupEvents.registry("item", event => {
     event.create("chromatic_stabilizer")
         .texture("kubejs:item/prismac/chromatic_stabilizer")
 
-    event.create("chromatic_capacitor_emtpy")
+    event.create("chromatic_capacitor_empty")
         .texture("kubejs:item/prismac/chromatic_capacitor_empty")
         .displayName("Chromatic Capacitor: §7Empty§r")
     event.create("chromatic_capacitor_red")
@@ -229,7 +229,7 @@ StartupEvents.registry("item", event => {
 
 
     // Monium
-    event.create("field_stabilised_omnic_pulsar_compound") //TODO: rename to Field-Stabilized Prismatic Pulsar Compound
+    event.create("field_stabilised_omnic_pulsar_compound") // TODO: rename to Field-Stabilized Prismatic Pulsar Compound
     event.create("quasi_stable_neutron_star").displayName("Quasi-Stable Neutron Star")
 
 
@@ -500,6 +500,7 @@ StartupEvents.registry("item", event => {
         .displayName("Photonic SoC: §dMagenta§r")
     event.create("photonic_soc_active")
         .texture("kubejs:item/prismac/opticals/photonic_soc_active")
+        .displayName("Photonic SoC: Active")
 
     // Post-Tank Wafer items
     event.create("uxpic_wafer").texture("kubejs:item/uxpic/uxpic_wafer").displayName("UXPIC Wafer")
