@@ -66,7 +66,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("naquadah_reactor")
         .category("multiblock")
         .setEUIO("out")
-        .setMaxIOSize(1, 1, 0, 0)
+        .setMaxIOSize(1, 2, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
@@ -687,7 +687,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .workableCasingRenderer("kubejs:block/microverse/casing",
             "gtceu:block/machines/projectors", false)
 
-    // Naquadah Reactor I
+    // (Small) Naquadah Reactor
     event.create("naquadah_reactor", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("naquadah_reactor")

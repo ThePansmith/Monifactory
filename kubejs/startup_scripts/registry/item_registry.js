@@ -363,21 +363,16 @@ StartupEvents.registry("item", event => {
 
     // Solid Naquadah Fuel Line
     event.create("empty_fuel_rod").texture("kubejs:item/naquadah/empty_fuel_rod")
+    event.create("naquadah_fuel_mixture_dust").texture("kubejs:item/naquadah/naquadah_fuel_mixture_dust")
+    event.create("unsintered_naquadah_fuel_pellet").texture("kubejs:item/naquadah/unsintered_naquadah_fuel_pellet")
     event.create("naquadah_fuel_pellet").texture("kubejs:item/naquadah/naquadah_fuel_pellet")
     event.create("naquadah_fuel_rod").texture("kubejs:item/naquadah/naquadah_fuel_rod")
+    event.create("hot_naquadah_fuel_rod").texture("kubejs:item/naquadah/hot_naquadah_fuel_rod")
     event.create("hot_depleted_naquadah_fuel_rod").texture("kubejs:item/naquadah/hot_depleted_naquadah_fuel_rod")
     event.create("depleted_naquadah_fuel_rod").texture("kubejs:item/naquadah/depleted_naquadah_fuel_rod")
-    event.create("unsintered_naquadah_fuel_pellet").texture("kubejs:item/naquadah/unsintered_naquadah_fuel_pellet")
     event.create("depleted_naquadah_fuel_pellet").texture("kubejs:item/naquadah/depleted_naquadah_fuel_pellet")
-    event.create("naquadah_fuel_dust").texture("kubejs:item/naquadah/naquadah_fuel_dust")
-    event.create("naquadah_fuel_primer_dust").texture("kubejs:item/naquadah/naquadah_fuel_primer_dust")
     event.create("naquadah_waste").texture("kubejs:item/naquadah/naquadah_waste")
-    event.create("inactivated_naquadah_fuel_dust").texture("kubejs:item/naquadah/inactivated_naquadah_fuel_dust")
     event.create("depleted_naquadah_fuel_dust").texture("kubejs:item/naquadah/depleted_naquadah_fuel_dust")
-    event.create("crude_naquadah_fuel_blend").texture("kubejs:item/naquadah/crude_naquadah_fuel_blend")
-    event.create("hot_naquadah_fuel_crystal").texture("kubejs:item/naquadah/hot_naquadah_fuel_crystal")
-    event.create("naquadah_fuel_crystal").texture("kubejs:item/naquadah/naquadah_fuel_crystal")
-    event.create("naquadah_fuel_mixture_dust").texture("kubejs:item/naquadah/naquadah_fuel_mixture_dust")
 
     // Crystal Matrix Line
     event.create("raw_nanotube_substrate").texture("kubejs:item/matrix/raw_nanotube_substrate")
