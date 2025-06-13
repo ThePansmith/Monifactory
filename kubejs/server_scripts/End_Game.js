@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
         P: "gtceu:electrum_flux_plate"
     }).id("redstone_arsenal:materials/flux_plating")
 
-    event.recipes.gtceu.omnic_forge("kubejs:flux_plating_assembly")
+    event.recipes.gtceu.assembler("kubejs:flux_plating_assembly")
         .itemInputs("redstone_arsenal:flux_gem", "4x gtceu:electrum_flux_plate")
         .itemOutputs("4x redstone_arsenal:flux_plating")
         .duration(60)
@@ -224,34 +224,6 @@ ServerEvents.recipes(event => {
         .EUt(30720)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    // Blast Furnace
-    event.recipes.gtceu.electric_blast_furnace("quantum_fluxed_eternium_heavy_plating")
-        .itemInputs("10x redstone_arsenal:flux_plating", "gtceu:cryococcus_plate", "16x kubejs:quantum_flux")
-        .inputFluids("gtceu:krypton 1000")
-        .itemOutputs("kubejs:quantum_fluxed_eternium_heavy_plating")
-        .duration(200)
-        .EUt(250000)
-        .blastFurnaceTemp(9000)
-
-    event.recipes.gtceu.electric_blast_furnace("universe_resistant_neutronium_heavy_plating")
-        .itemInputs("gtceu:neutronium_plate", "2x gtceu:omnium_nugget", "16x gtceu:quantum_eye")
-        .inputFluids("gtceu:xenon 1000")
-        .itemOutputs("kubejs:universe_resistant_neutronium_heavy_plating")
-        .duration(200)
-        .EUt(250000)
-        .blastFurnaceTemp(10000)
-
-    event.recipes.gtceu.omnic_forge("elementally_infused_omnic_matrix_heavy_plating")
-        .itemInputs("4x gtceu:omnium_plate", "gtceu:dense_crystal_matrix_plate", "gtceu:gravi_star", "4x gtceu:neutron_reflector", "16x kubejs:primal_mana")
-        .itemOutputs("kubejs:elementally_infused_omnic_matrix_heavy_plating")
-        .duration(100)
-        .EUt(1000000)
-
-    event.recipes.gtceu.omnic_forge("dimensionally_stabilized_infinity_heavy_plating")
-        .itemInputs("gtceu:infinity_plate", "gtceu:dense_activated_netherite_plate", "kubejs:quasi_stable_neutron_star", "8x gtceu:neutron_reflector", "12x kubejs:the_ultimate_material")
-        .itemOutputs("kubejs:dimensionally_stabilized_infinity_heavy_plating")
-        .duration(100)
-        .EUt(4000000)
 
     // Mote of omnium
     event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
@@ -479,9 +451,75 @@ ServerEvents.recipes(event => {
         )
 
     // Chromodynamic Conduction Casing
-    event.recipes.gtceu.omnic_forge("chromodynamic_conduction_casing")
+    event.recipes.gtceu.assembler("chromodynamic_conduction_casing")
         .itemInputs("gtceu:activated_netherite_frame", "2x gtceu:normal_laser_pipe", "8x gtceu:omnium_single_wire", "#gtceu:circuits/luv")
         .itemOutputs("monilabs:chromodynamic_conduction_casing")
         .duration(50)
         .EUt(GTValues.VHA[GTValues.UV])
+
+
+    // Coils
+    event.recipes.gtceu.assembler("kubejs:omnic_matrix_coil")
+        .itemInputs("8x gtceu:omnium_double_wire", "8x gtceu:crystal_matrix_foil")
+        .itemOutputs("kubejs:omnic_matrix_coil_block")
+        .inputFluids("gtceu:neutronium 144")
+        .duration(1000)
+        .EUt(GTValues.VA[GTValues.UHV])
+
+    // Casings
+    event.recipes.gtceu.assembler("kubejs:omnic_matrix_machine_casing")
+        .itemInputs("6x gtceu:omnium_plate", "gtceu:crystal_matrix_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
+        .itemOutputs("2x kubejs:omnic_matrix_machine_casing")
+        .duration(100)
+        .EUt(65520)
+
+    event.recipes.gtceu.assembler("kubejs:netherite_casing")
+        .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:dense_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
+        .itemOutputs("4x kubejs:dimensional_stabilization_netherite_casing")
+        .duration(100)
+        .EUt(65520)
+
+    event.recipes.gtceu.assembler("kubejs:bioalloy_casing")
+        .itemInputs("4x gtceu:sculk_bioalloy_plate", "2x gtceu:cryolobus_frame", "4x kubejs:warden_horn", "6x gtceu:actinium_rod")
+        .itemOutputs("2x kubejs:bioalloy_casing")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    event.recipes.gtceu.assembler("kubejs:bioalloy_fusion_casing")
+        .itemInputs("gtceu:uhv_machine_hull", "2x kubejs:bioalloy_casing", "12x gtceu:cryococcus_plate", "4x gtceu:fusion_casing_mk3", "gtceu:uhv_field_generator")
+        .itemOutputs("4x kubejs:bioalloy_fusion_casing")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UHV])
+
+    event.recipes.gtceu.assembler("singularity_containment_unit")
+        .itemInputs("4x gtceu:monium_plate", "4x gtceu:neutron_reflector", "1x gtceu:uev_sensor", "2x gtceu:uhv_sensor", "gtceu:uev_field_generator")
+        .itemOutputs("64x kubejs:singularity_containment_unit")
+        .duration(300)
+        .EUt(16380)
+
+    event.recipes.gtceu.assembler("fieldstabilizedcompound")
+        .itemInputs("4x gtceu:uiv_field_generator", "3x gtceu:uev_field_generator", "2x gtceu:uhv_field_generator", "12x gtceu:omnium_block", "10x kubejs:quasi_stable_neutron_star") // TODO: REPLACE OMNIUM BLOCK WITH PRISMATIC STUFF
+        .itemOutputs("kubejs:field_stabilised_omnic_pulsar_compound")
+        .duration(255)
+        .EUt(16380)
+
+    // Shortcut recipes for thrusters
+    event.recipes.gtceu.assembler("kubejs:assembler_dark_soularium_thruster")
+        .itemInputs("4x gtceu:dark_soularium_plate", "6x gtceu:vibrant_alloy_plate", "2x enderio:ender_crystal", "2x enderio:prescient_crystal", "laserio:energy_overclocker_card_tier_8", "kubejs:flight_control_unit")
+        .itemOutputs("kubejs:dark_soularium_thruster")
+        .duration(100)
+        .EUt(7680)
+
+    event.recipes.gtceu.assembler("kubejs:assembler_flux_thruster")
+        .itemInputs("3x redstone_arsenal:flux_plating", "4x gtceu:enderium_plate", "2x gtceu:signalum_plate", "thermal:dynamo_numismatic", "kubejs:glowstone_elevation_unit", "kubejs:cryotheum_coolant_unit")
+        .itemOutputs("kubejs:fluxed_thruster")
+        .duration(50)
+        .EUt(7680)
+
+    // Crystalization?
+    // event.recipes.gtceu.assembler("kubejs:assembler_quantum_flux")
+    //     .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "2x minecraft:dragon_breath", "gtceu:nether_star_dust")
+    //     .itemOutputs("64x kubejs:quantum_flux")
+    //     .duration(50)
+    //     .EUt(1920)
 })

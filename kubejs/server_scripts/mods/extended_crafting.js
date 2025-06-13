@@ -271,6 +271,42 @@ ServerEvents.recipes(event => {
         4000000, 400000
     )
 
+    event.recipes.extendedcrafting.combination(
+        "kubejs:elementally_infused_omnic_matrix_heavy_plating",
+        "gtceu:omnium_plate", ["4x gtceu:dense_crystal_matrix_plate", "gtceu:gravi_star", "4x gtceu:neutron_reflector", "kubejs:primal_mana"],
+        400000000, 400000
+    )
+
+    event.recipes.extendedcrafting.combination(
+        "kubejs:dimensionally_stabilized_infinity_heavy_plating",
+        "gtceu:infinity_plate", ["gtceu:dense_activated_netherite_plate", "kubejs:quasi_stable_neutron_star", "gtceu:neutron_reflector", "kubejs:the_ultimate_material"],
+        160000000, 160000
+    )
+
+    event.recipes.extendedcrafting.combination(
+        "kubejs:universe_resistant_neutronium_heavy_plating",
+        "gtceu:neutronium_plate", ["gtceu:omnium_nugget", "gtceu:quantum_eye", "gtceu:xenon"],
+        1000000, 100000
+    )
+
+    event.recipes.extendedcrafting.combination(
+        "kubejs:quantum_fluxed_eternium_heavy_plating",
+        "redstone_arsenal:flux_plating", ["gtceu:cryococcus_plate", "kubejs:quantum_flux", "gtceu:krypton"],
+        1000000, 100000
+    )
+
+    event.recipes.extendedcrafting.combination(
+        "kubejs:timeless_monic_heavy_plating",
+        "gtceu:monium_plate", ["kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "kubejs:contained_singularity"],
+        536870912, 53687091
+    )
+
+    // event.recipes.extendedcrafting.combination(
+    //     "64x kubejs:quantum_flux",
+    //     "redstone_arsenal:flux_gem", ["kubejs:primal_mana", "minecraft:dragon_breath", "gtceu:nether_star_dust"],
+    //     192000, 19200
+    // )
+
     // Luminessence
     event.remove({ id: "extendedcrafting:luminessence" })
     event.remove({ id: /phosphoric_acid_from_apatite/ })
