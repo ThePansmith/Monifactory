@@ -269,7 +269,7 @@ machines:
 
   # Whether the Assembly Line should require the item inputs to be in order.
   # Default: true
-  orderedAssemblyLineItems: false
+  orderedAssemblyLineItems: true
 
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
