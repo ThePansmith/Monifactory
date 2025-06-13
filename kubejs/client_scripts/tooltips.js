@@ -166,10 +166,6 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.translatable("monilabs.tooltip.prismatic.2"))
     })
 
-    tooltip.addAdvanced("gtceu:omnic_forge", (item, adv, text) => {
-        text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
-    })
-
     // Parallel hatches
     tooltip.add("gtceu:uhv_uhv_parallel_hatch", Text.translatable("gtceu.giga_parallel_hatch.desc"))
     tooltip.add("gtceu:uev_uev_parallel_hatch", Text.translatable("gtceu.omega_parallel_hatch.desc"))

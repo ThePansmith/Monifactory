@@ -107,15 +107,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
-    // Omnic Forge
-    event.create("omnic_forge")
-        .category("multiblock")
-        .setEUIO("in")
-        .setMaxIOSize(6, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_CRYSTALLIZATION, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ARC)
-
     // Quintessence Infuser
     event.create("quintessence_infuser")
         .category("multiblock")
@@ -779,39 +770,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
             "gtceu:block/multiblock/fusion_reactor", false)
-
-
-    // Omnic Forge
-    event.create("omnic_forge", "multiblock")
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes("omnic_forge")
-        .appearanceBlock(() => Block.getBlock("kubejs:omnic_matrix_machine_casing"))
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("#########", "#########", "####O####", "###CCC###", "##OCCCO##", "###CCC###", "####O####", "#########", "#########")
-            .aisle("#########", "####O####", "##GGOGG##", "##GODOG##", "#OODNDOO#", "##GODOG##", "##GGOGG##", "####O####", "#########")
-            .aisle("####O####", "##GGOGG##", "#G     G#", "#G     G#", "OO  D  OO", "#G     G#", "#G     G#", "##GGOGG##", "####O####")
-            .aisle("###CCC###", "##GODOG##", "#G     G#", "CO     OC", "CD  D  DC", "CO     OC", "#G     G#", "##GODOG##", "###CCC###")
-            .aisle("##OCCCO##", "#OODNDOO#", "OO  D  OO", "CD  D  DC", "CNDDBDDNC", "CD  D  DC", "OO  D  OO", "#OODNDOO#", "##OCCCO##")
-            .aisle("###CCC###", "##GODOG##", "#G     G#", "CO     OC", "CD  D  DC", "CO     OC", "#G     G#", "##GODOG##", "###CCC###")
-            .aisle("####O####", "##GGOGG##", "#G     G#", "#G     G#", "OO  D  OO", "#G     G#", "#G     G#", "##GGOGG##", "####O####")
-            .aisle("#########", "####O####", "##GGOGG##", "##GODOG##", "#OODNDOO#", "##GODOG##", "##GGOGG##", "####O####", "#########")
-            .aisle("#########", "#########", "####O####", "###CCC###", "##OC@CO##", "###CCC###", "####O####", "#########", "#########")
-            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("B", Predicates.blocks("gtceu:crystal_matrix_block"))
-            .where("N", Predicates.blocks("gtceu:sculk_superconductor_block"))
-            .where("D", Predicates.frames(GTMaterials.get("cryolobus")))
-            .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-            .where("O", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
-            .where("C", Predicates.blocks("kubejs:omnic_matrix_machine_casing").setMinGlobalLimited(43)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-            )
-            .where(" ", Predicates.air())
-            .where("#", Predicates.any())
-            .build())
-        .workableCasingRenderer(new ResourceLocation("kubejs", "block/omnium/casing"),
-            "gtceu:block/machines/reconstructor", false)
 
     // Sculk Biocharger
     event.create("sculk_biocharger", "multiblock")

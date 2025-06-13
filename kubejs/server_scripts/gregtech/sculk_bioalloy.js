@@ -3,7 +3,7 @@
  */
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.omnic_forge("sculk-compatible_trellis_microstructure_forging")
+    event.recipes.gtceu.forming_press("sculk-compatible_trellis_microstructure_forging")
         .itemInputs("2x extendedcrafting:crystaltine_ingot", "kubejs:the_ultimate_material", "6x gtceu:lanthanum_dust", "9x gtceu:potassium_cyanide_dust")
         .itemOutputs("18x kubejs:sculk-compatible_trellis_microstructure")
         .duration(140)

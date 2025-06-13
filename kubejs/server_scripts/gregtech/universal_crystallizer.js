@@ -80,4 +80,43 @@ ServerEvents.recipes(event => {
         .itemOutputs("7x gtceu:empowered_flux_block")
         .duration(100)
         .EUt(4000000)
+
+    // event.recipes.gtceu.universal_crystallizer("quantum_fluxed_eternium_heavy_plating")
+    //     .itemInputs("10x redstone_arsenal:flux_plating", "gtceu:cryococcus_plate", "16x kubejs:quantum_flux")
+    //     .inputFluids("gtceu:krypton 1000")
+    //     .itemOutputs("kubejs:quantum_fluxed_eternium_heavy_plating")
+    //     .duration(200)
+    //     .EUt(250000)
+
+    // event.recipes.gtceu.universal_crystallizer("universe_resistant_neutronium_heavy_plating")
+    //     .itemInputs("gtceu:neutronium_plate", "2x gtceu:omnium_nugget", "16x gtceu:quantum_eye")
+    //     .inputFluids("gtceu:xenon 1000")
+    //     .itemOutputs("kubejs:universe_resistant_neutronium_heavy_plating")
+    //     .duration(200)
+    //     .EUt(250000)
+
+    // event.recipes.gtceu.universal_crystallizer("elementally_infused_omnic_matrix_heavy_plating")
+    //     .itemInputs("4x gtceu:omnium_plate", "gtceu:dense_crystal_matrix_plate", "gtceu:gravi_star", "4x gtceu:neutron_reflector", "16x kubejs:primal_mana")
+    //     .itemOutputs("kubejs:elementally_infused_omnic_matrix_heavy_plating")
+    //     .duration(100)
+    //     .EUt(1000000)
+
+    // event.recipes.gtceu.universal_crystallizer("dimensionally_stabilized_infinity_heavy_plating")
+    //     .itemInputs("gtceu:infinity_plate", "gtceu:dense_activated_netherite_plate", "kubejs:quasi_stable_neutron_star", "8x gtceu:neutron_reflector", "12x kubejs:the_ultimate_material")
+    //     .itemOutputs("kubejs:dimensionally_stabilized_infinity_heavy_plating")
+    //     .duration(100)
+    //     .EUt(4000000)
+
+    // event.recipes.gtceu.universal_crystallizer("kubejs:timeless_monic_heavy_plating")
+    //     .itemInputs("10x gtceu:monium_plate", "8x kubejs:quantum_fluxed_eternium_heavy_plating", "4x kubejs:universe_resistant_neutronium_heavy_plating", "4x kubejs:elementally_infused_omnic_matrix_heavy_plating", "2x kubejs:dimensionally_stabilized_infinity_heavy_plating", "16x kubejs:contained_singularity")
+    //     .itemOutputs("kubejs:timeless_monic_heavy_plating")
+    //     .duration(800)
+    //     .EUt(134217728)
+
+    event.recipes.gtceu.universal_crystallizer("kubejs:omnic_forge_quantum_flux")
+        .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "2x minecraft:dragon_breath", "gtceu:nether_star_dust")
+        .itemOutputs("64x kubejs:quantum_flux")
+        .duration(50)
+        .EUt(1920)
+
 })
