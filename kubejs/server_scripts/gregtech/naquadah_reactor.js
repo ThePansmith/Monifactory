@@ -12,12 +12,27 @@ ServerEvents.recipes(event => {
         .EUt(122880)
         .stationResearch(b => b.researchStack(Item.of("kubejs:empty_fuel_rod")).EUt(30720).CWUt(16, 64000))
 
-    // Naquadah Reactor usage
-    event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah")
+    // Naquadah Reactor usage. Circuit number dictates fuel consumption rate, for more flexible power gen.
+    event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah_1")
         .itemInputs("4x kubejs:naquadah_fuel_rod")
+        .circuit(1)
         .itemOutputs("3x kubejs:hot_naquadah_fuel_rod", "1x kubejs:hot_depleted_naquadah_fuel_rod")
+        .duration(4000)
+        .EUt(-2 * GTValues.V[GTValues.ZPM])
+
+    event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah_2")
+        .itemInputs("4x kubejs:naquadah_fuel_rod")
+        .circuit(2)
+        .itemOutputs("2x kubejs:hot_naquadah_fuel_rod", "2x kubejs:hot_depleted_naquadah_fuel_rod")
         .duration(3750)
         .EUt(-3 * GTValues.V[GTValues.ZPM])
+
+    event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah_3")
+        .itemInputs("4x kubejs:naquadah_fuel_rod")
+        .circuit(3)
+        .itemOutputs("1x kubejs:hot_naquadah_fuel_rod", "3x kubejs:hot_depleted_naquadah_fuel_rod")
+        .duration(3400)
+        .EUt(-4 * GTValues.V[GTValues.ZPM])
 
     // Large Naquadah Reactor recipe
     event.recipes.gtceu.assembly_line("kubejs:large_naquadah_reactor")
