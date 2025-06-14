@@ -243,8 +243,7 @@ StartupEvents.registry("item", event => {
         ["uranium", "#1d891d"],
         ["curium", "#58307f"],
         ["californium", "#7d0222"],
-        ["americium", "#287869"],
-        ["oganesson", "#443936"]
+        ["americium", "#287869"]
     ]
 
     for (const [element, elemColor] of stabilized_elements) {

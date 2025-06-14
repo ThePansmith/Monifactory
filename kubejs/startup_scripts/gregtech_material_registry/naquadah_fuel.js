@@ -31,34 +31,39 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xffffff).iconSet("hyperdegenerate_matter")
         .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
 
-    event.create("naq_fuel_t1")
+    event.create("crude_naquadah_fuel")
         .liquid()
         .color(0xB9E364)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("naq_fuel_t1_depleted")
+    /*
+    event.create("crude_naquadah_fuel_depleted")
         .liquid()
         .color(0x323D1C)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    */
 
-    event.create("naq_fuel_t2")
+    event.create("naquadah_fuel")
         .liquid()
         .color(0x56F075)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create("naq_fuel_t2_depleted")
+    /*
+    event.create("naquadah_fuel_depleted")
         .liquid()
         .color(0x123619)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    */
 
     event.create("naquadah_superfuel")
         .color(0xFFFFFF).iconSet("naquadah_superfuel")
         .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
 
+    /*
     event.create("naquadah_superfuel_depleted")
         .color(0x00002F)
         .liquid()
         .flags()
+    */
 
     event.create("raw_naquadah_solution")
         .liquid()

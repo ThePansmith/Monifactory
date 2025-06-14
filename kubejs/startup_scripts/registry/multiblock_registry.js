@@ -75,7 +75,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("large_naquadah_reactor")
         .category("multiblock")
         .setEUIO("out")
-        .setMaxIOSize(1, 1, 2, 2)
+        .setMaxIOSize(0, 0, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC)

@@ -38,3 +38,7 @@ deprecateItem("kubejs:matter_processor", "kubejs:optical_processor", "Matter Pro
 deprecateItem("kubejs:matter_processor_assembly", "kubejs:optical_processor_assembly", "Matter Processor Assembly")
 deprecateItem("kubejs:matter_processor_computer", "kubejs:optical_processor_computer", "Matter Processor Computer")
 deprecateItem("kubejs:matter_processor_mainframe", "kubejs:optical_processor_mainframe", "Matter Processor Mainframe")
+
+// Oganesson
+deprecateItem("kubejs:stabilized_oganesson", "kubejs:stabilized_einsteinium", "Stabilized Oganesson")
+deprecateFluid("gtceu:oganesson", "gtceu:einsteinium", "Oganesson")
