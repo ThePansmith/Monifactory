@@ -142,4 +142,9 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.ZPM])
 
+    event.recipes.gtceu.electrolyzer("fluorobenzene_mixture_decomposition")
+        .inputFluids("gtceu:fluorobenzene_gas_mixture 1000")
+        .outputFluids("gtceu:nitrogen 2000", "gtceu:boron_trifluoride 1000", "gtceu:fluorobenzene 1000")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.IV])
 })
