@@ -27,15 +27,15 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
         .cableProperties(GTValues.V[GTValues.UEV], 1, 32, false)
-        .flags(GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING)
 
     // UEV Moni Supercon
-    event.create("fluxed_ardite")
+    event.create("empowered_flux")
         .ingot().fluid()
         .color(0xd07856).secondaryColor(0x771f05)
         .iconSet("magic")
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UHV], 1200)
-        .components("4x ardite", "2x electrum_flux", "mana")
+    //  .components("4x electrum_flux", "3x gemstone_empowered")
         .cableProperties(GTValues.V[GTValues.UEV], 1, 0, true)
 
     // UEV GT Supercon
@@ -47,6 +47,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("2x osmium", "3x tantalum", "4x einsteinium", "5x caesium", "2x omnium")
         .formula("Os2Ta3Es4Cs5Nm2")
         .cableProperties(GTValues.V[GTValues.UEV], 32, 0, true)
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE)
 
     // UIV Moni Supercon
     event.create("hyperdegenerate_darconite")
@@ -66,6 +67,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("4x eltz", "2x neptunium", "1x antimony", "1x terbium", "1x germanium", "2x carbon")
         .cableProperties(GTValues.V[GTValues.UIV], 64, 0, true)
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE)
 
     // UIV pipe/insulator
     event.create("meta_null")

@@ -31,3 +31,10 @@ deprecateItem("kubejs:diamond_lattice", "6x minecraft:diamond", "Diamond Lattice
 deprecateItem("kubejs:purified_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Purified Ancient Debris Dust")
 deprecateItem("kubejs:processed_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Processed Ancient Debris Dust")
 deprecateItem("kubejs:inert_netherite_scrap", "kubejs:activated_netherite_scrap", "Inert Netherite Scrap")
+
+// Matter Circuits
+deprecateItem("kubejs:matter_processing_unit", "kubejs:optical_processing_unit", "Matter Processing Unit")
+deprecateItem("kubejs:matter_processor", "kubejs:optical_processor", "Matter Processor")
+deprecateItem("kubejs:matter_processor_assembly", "kubejs:optical_processor_assembly", "Matter Processor Assembly")
+deprecateItem("kubejs:matter_processor_computer", "kubejs:optical_processor_computer", "Matter Processor Computer")
+deprecateItem("kubejs:matter_processor_mainframe", "kubejs:optical_processor_mainframe", "Matter Processor Mainframe")

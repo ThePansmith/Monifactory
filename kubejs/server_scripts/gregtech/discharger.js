@@ -16,8 +16,8 @@ ServerEvents.recipes(event => {
     }).id("kubejs:shaped/discharger")
 
     event.recipes.gtceu.assembly_line("gtceu:sculk_biocharger")
-        .itemInputs("gtceu:discharger", "4x #gtceu:circuits/uev", "4x extendedcrafting:auto_flux_crafter", "16x kubejs:dischargement_core", "24x gtceu:polyethyl_cyanoacrylate_plate")
-        .inputFluids("gtceu:soldering_alloy 11520", "gtceu:omnium 5760")
+        .itemInputs("gtceu:discharger", "4x #gtceu:circuits/uev", "4x extendedcrafting:auto_flux_crafter", "16x kubejs:dischargement_core")
+        .inputFluids("gtceu:soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:sculk_biocharger")
         .duration(3000)
         .EUt(1966000)

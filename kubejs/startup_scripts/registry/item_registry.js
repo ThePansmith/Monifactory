@@ -155,7 +155,6 @@ StartupEvents.registry("item", event => {
 
     // Endgame Items
     event.create("neutron_emitter")
-    event.create("ultimate_gem").displayName("§dUltimate Gem").glow(true)
     event.create("mote_of_omnium").displayName("Mote of Raw Omnium")
         .glow(true).rarity("epic")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
@@ -189,6 +188,19 @@ StartupEvents.registry("item", event => {
     event.create("infinity_screwdriver").rarity("epic").maxStackSize(1)
     event.create("infinity_wrench").rarity("epic").maxStackSize(1)
     event.create("infinity_wire_cutter").rarity("epic").maxStackSize(1)
+
+    // Optical Circuit intermediates
+    event.create("sapphire_seed_crystal")
+    event.create("sapphire_boule")
+    event.create("sapphire_wafer")
+    event.create("coated_sapphire_wafer")
+    event.create("engraved_sapphire_wafer")
+    event.create("incomplete_sapphire_wafer")
+    event.create("completed_optical_wafer")
+    event.create("optical_chip")
+    event.create("electro_optic_modulator")
+    event.create("carbon_mesh_reinforced_circuit_board")
+    event.create("carbon_mesh_reinforced_printed_circuit_board")
 
 
     // Solidified Elements
@@ -464,11 +476,11 @@ StartupEvents.registry("item", event => {
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_circuit_board` })
     }
 
-    Unit("matter")
-    Circuit("matter", "processor", "zpm")
-    Circuit("matter", "processor_assembly", "uv")
-    Circuit("matter", "processor_computer", "uhv")
-    Mainframe("matter", "uev")
+    Unit("optical")
+    Circuit("optical", "processor", "zpm")
+    Circuit("optical", "processor_assembly", "uv")
+    Circuit("optical", "processor_computer", "uhv")
+    Mainframe("optical", "uev")
 
     Unit("dimensional")
     Circuit("dimensional", "processor", "uv")

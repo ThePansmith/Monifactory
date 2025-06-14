@@ -47,7 +47,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("universal_crystallizer")
         .category("multiblock")
         .setEUIO("in")
-        .setMaxIOSize(9, 1, 1, 0)
+        .setMaxIOSize(9, 1, 2, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)

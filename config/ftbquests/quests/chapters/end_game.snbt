@@ -762,7 +762,7 @@
 			subtitle: "{moni.quest.0DE1BF1648CAF6D6.subtitle}"
 			tasks: [{
 				id: "1BBD650C59C35C52"
-				item: "gtceu:holmium_ingot"
+				item: "gtceu:necrosiderite_ingot"
 				type: "item"
 			}]
 			title: "{moni.quest.0DE1BF1648CAF6D6.title}"
@@ -916,7 +916,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "50C7192DF852960F"
-				item: "kubejs:ultimate_gem"
+				item: "gtceu:gemstone_empowered_gem"
 				type: "item"
 			}]
 			x: 48.5d
