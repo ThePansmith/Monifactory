@@ -289,6 +289,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid()
         .color(0x29B9CF)
         .components("1x fluorobenzene", "1x boron_trifluoride", "2x nitrogen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("4-4-difluorobenzophenone")
         .dust()
