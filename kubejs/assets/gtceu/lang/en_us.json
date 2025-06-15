@@ -444,7 +444,9 @@
     "__COMPAT__.footer": "=================",
     "material.gtceu.cholestrol": "Cholestrol",
     "material.gtceu.testosterone": "Testosterone",
-    "material.gtceu.pregnenolone": "Pregnenolone",
-    "material.gtceu.androstenedione": "Androstenedione"
+    "material.gtceu.boldione": "Boldione",
+    "material.gtceu.tetralin": "Tetralin",
+    "material.gtceu.impure_estrogen": "Impure Estrogen"
+
 
 }
