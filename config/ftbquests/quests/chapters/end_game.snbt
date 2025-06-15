@@ -831,7 +831,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "53E419D291C6E2B2"
-				item: "kubejs:matter_circuit_board"
+				item: "kubejs:optical_circuit_board"
 				type: "item"
 			}]
 			title: "{moni.quest.5A07988F5AD20A06.title}"
