@@ -109,7 +109,7 @@ if (Platform.isLoaded("estrogen")) {
         event.recipes.gtceu.chemical_reactor("testosterone_dust")
             .itemInputs("gtceu:cholestrol_dust")
             .inputFluids("gtceu:oxygen 4000", "gtceu:hydrogen 4000", "gtceu:ethanol 4000")
-            .itemOutputs("gtceu:small_testosterone_dust")
+            .itemOutputs("gtceu:testosterone_dust")
             .duration(100)
             .EUt(40)
             .cleanroom(CleanroomType.CLEANROOM)
