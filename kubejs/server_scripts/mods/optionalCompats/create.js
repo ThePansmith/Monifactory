@@ -43,7 +43,7 @@ if (Platform.isLoaded("create")) {
             "create:wheat_flour",
             "gtceu:wheat_dust"
         )
-        
+
         // belts made with rubber
         let kelpRecipes = [
             "create:crafting/kinetics/belt_connector",
