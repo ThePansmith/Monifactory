@@ -2,6 +2,7 @@
  *
  * Compatibility Script for Create: Estrogen.
  * TRANS MOTHERFUCKING RIGHTS!!!
+ * Credit goes to Lilith (@paladin.one) for the improved Estrogen line!
  *
  */
 
