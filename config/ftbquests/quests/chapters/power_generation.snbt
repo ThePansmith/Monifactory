@@ -879,7 +879,7 @@
 				title: "{moni.task.5C7471C734001626}"
 				type: "checkmark"
 			}]
-			x: 11.5d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
@@ -1048,7 +1048,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.21E10888F52A3C73.title}"
-			x: 8.0d
+			x: 4.0d
 			y: -1.0d
 		}
 	]
