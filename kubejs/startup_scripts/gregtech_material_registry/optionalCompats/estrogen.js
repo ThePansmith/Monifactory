@@ -33,7 +33,7 @@ if (Platform.isLoaded("estrogen")) {
             .fluid()
             .color(0xFCD4FE)
             .components("10x carbon", "12x hydrogen")
-            .formula("C19H12")
+            .formula("C10H12")
 
         event.create("impure_estrogen")
             .fluid()
