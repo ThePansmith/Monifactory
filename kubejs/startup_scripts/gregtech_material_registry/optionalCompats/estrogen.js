@@ -23,16 +23,22 @@ if (Platform.isLoaded("estrogen")) {
             .components("19x carbon", "28x hydrogen", "2x oxygen")
 
         // Fluids Registration
-        event.create("pregnenolone")
+        event.create("boldione")
             .fluid()
-            .color(0xC0C9CE)
-            .components("21x carbon", "32x hydrogen", "2x oxygen")
-            .formula("C31H32O2")
+            .color(0xFFDB33)
+            .components("19x carbon", "24x hydrogen", "2x oxygen")
+            .formula("C19H24O2")
 
-        event.create("androstenedione")
+        event.create("tetralin")
             .fluid()
-            .color(0x508282)
-            .components("19x carbon", "26x hydrogen", "2x oxygen")
-            .formula("C19H26O2")
+            .color(0xFCD4FE)
+            .components("10x carbon", "12x hydrogen")
+            .formula("C19H12")
+
+        event.create("impure_estrogen")
+            .fluid()
+            .color(0x90AFBF)
+            .components("18x carbon", "24x hydrogen", "2x oxygen")
+            .formula("C18H24O2")
     })
 }
