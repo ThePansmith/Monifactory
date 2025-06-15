@@ -19,13 +19,6 @@ if (Platform.isLoaded("estrogen")) {
             { output: "estrogen:centrifuge" }
         ])
 
-        // Replaces create flour with GT flour
-        event.replaceInput(
-            { input: "create:wheat_flour" },
-            "create:wheat_flour",
-            "gtceu:wheat_dust"
-        )
-
         // :3
         event.recipes.extendedcrafting.shaped_table("estrogen:uwu", [
             "DDDDDDD",
@@ -71,7 +64,7 @@ if (Platform.isLoaded("estrogen")) {
 
         event.recipes.gtceu.mixer("estrogen_pill")
             .itemInputs("#forge:dough", "minecraft:cocoa_beans")
-            .inputFluids("estrogen:liquid_estrogen 1000")
+            .inputFluids("estrogen:liquid_estrogen")
             .itemOutputs("4x estrogen:estrogen_pill")
             .duration(200)
             .EUt(48)
@@ -96,7 +89,7 @@ if (Platform.isLoaded("estrogen")) {
             .EUt(30)
 
         // ------------------------------------------------------------------ \\
-        //                          Estrogen Line                             \\
+        //                           Testosterone                             \\
         // ------------------------------------------------------------------ \\
 
         event.recipes.gtceu.centrifuge("small_cholestrol_dust")
@@ -105,51 +98,65 @@ if (Platform.isLoaded("estrogen")) {
             .duration(100)
             .EUt(36)
 
-        event.recipes.gtceu.chemical_reactor("pregnenolone")
-            .itemInputs("2x gtceu:small_cholestrol_dust")
-            .inputFluids("gtceu:hydrogen 2000")
-            .outputFluids("gtceu:pregnenolone 250")
-            .duration(100)
-            .EUt(40)
-            .cleanroom(CleanroomType.CLEANROOM)
-
-        event.recipes.gtceu.chemical_reactor("pregnenolone_compress")
-            .itemInputs("2x gtceu:cholestrol_dust")
-            .inputFluids("gtceu:hydrogen 8000")
-            .outputFluids("gtceu:pregnenolone 1000")
-            .duration(200)
-            .EUt(40)
-            .cleanroom(CleanroomType.CLEANROOM)
-
-        event.recipes.gtceu.chemical_reactor("androstenedione")
-            .inputFluids("gtceu:pregnenolone", "gtceu:hydrogen", "gtceu:oxygen")
-            .outputFluids("gtceu:androstenedione 250")
-            .duration(120)
-            .EUt(42)
-            .cleanroom(CleanroomType.CLEANROOM)
-
         event.recipes.gtceu.chemical_reactor("small_testosterone_dust")
-            .inputFluids("gtceu:androstenedione", "gtceu:hydrogen", "gtceu:ethanol")
+            .itemInputs("gtceu:small_cholestrol_dust")
+            .inputFluids("gtceu:oxygen", "gtceu:hydrogen", "gtceu:ethanol")
             .itemOutputs("gtceu:small_testosterone_dust")
             .duration(100)
             .EUt(40)
             .cleanroom(CleanroomType.CLEANROOM)
 
-        event.recipes.gtceu.chemical_reactor("liquid_estrogen")
-            .inputFluids("gtceu:androstenedione", "gtceu:hydrogen")
-            .itemInputs("gtceu:small_testosterone_dust")
-            .outputFluids("estrogen:liquid_estrogen")
-            .duration(138)
-            .EUt(69)
+        event.recipes.gtceu.chemical_reactor("testosterone_dust")
+            .itemInputs("gtceu:cholestrol_dust")
+            .inputFluids("gtceu:oxygen 4000", "gtceu:hydrogen 4000", "gtceu:ethanol 4000")
+            .itemOutputs("gtceu:small_testosterone_dust")
+            .duration(100)
+            .EUt(40)
             .cleanroom(CleanroomType.CLEANROOM)
 
-        event.recipes.gtceu.chemical_reactor("liquid_estrogen_compress")
-            .inputFluids("gtceu:androstenedione 4000", "gtceu:hydrogen 4000")
-            .itemInputs("gtceu:testosterone_dust")
-            .outputFluids("estrogen:liquid_estrogen 4000")
-            .duration(138)
-            .EUt(69)
+        // ------------------------------------------------------------------ \\
+        //                          Estrogen Line                             \\
+        // ------------------------------------------------------------------ \\
+
+        event.recipes.gtceu.fermenter("boldione")
+            .inputFluids("gtceu:fermented_biomass 50")
+            .outputFluids("gtceu:boldione 50")
+            .duration(150)
+            .EUt(2)
             .cleanroom(CleanroomType.CLEANROOM)
+
+        event.recipes.gtceu.chemical_reactor("tetralin")
+            .itemInputs("gtceu:nickel_dust")
+            .inputFluids("gtceu:naphthalene", "gtceu:hydrogen")
+            .outputFluids("gtceu:tetralin")
+            .duration(100)
+            .EUt(16)
+            .cleanroom(CleanroomType.CLEANROOM)
+
+        event.recipes.gtceu.chemical_reactor("impure_estrogen")
+            .inputFluids("gtceu:boldione", "gtceu:tetralin")
+            .outputFluids("gtceu:impure_estrogen")
+            .duration(100)
+            .EUt(16)
+            .cleanroom(CleanroomType.CLEANROOM)
+
+        event.recipes.gtceu.large_chemical_reactor("impure_estrogen_lcr")
+            .itemInputs("4x gtceu:nickel_dust")
+            .inputFluids("gtceu:boldione", "gtceu:naphthalene", "gtceu:hydrogen 4000")
+            .outputFluids("gtceu:impure_estrogen")
+            .circuit(24)
+            .duration(150)
+            .EUt(48)
+            .cleanroom(CleanroomType.CLEANROOM)
+
+        event.recipes.gtceu.centrifuge("liquid_estrogen")
+            .inputFluids("gtceu:impure_estrogen 1000")
+            .outputFluids("estrogen:liquid_estrogen 1000", "gtceu:naphthalene 900")
+            .duration(100)
+            .EUt(16)
+            .cleanroom(CleanroomType.CLEANROOM)
+
+        // ------------------------------------------------------------------ \\
 
         event.recipes.gtceu.brewery("gender_fluid")
             .inputFluids("estrogen:liquid_estrogen")
