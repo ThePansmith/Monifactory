@@ -67,7 +67,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
            into Pre-launch command and specify your wanted mode.
 
 - Linux/Apple/GNU:
-1. Open https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh and download the file to your Minecraft / Minecraft instance folder.
+1. Open [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh and download the file to your Minecraft / Minecraft instance folder.
 1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.sh``.
 2. Follow the prompt to select your mode.
 
