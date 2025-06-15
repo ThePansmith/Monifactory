@@ -37,6 +37,13 @@ if (Platform.isLoaded("create")) {
         event.remove({ id: "gtceu:shaped/hv_kinetic_mixer" })
         event.remove({ id: "gtceu:shaped/ev_kinetic_mixer" })
 
+        // Replaces create flour with GT flour
+        event.replaceInput(
+            { input: "create:wheat_flour" },
+            "create:wheat_flour",
+            "gtceu:wheat_dust"
+        )
+        
         // belts made with rubber
         let kelpRecipes = [
             "create:crafting/kinetics/belt_connector",
