@@ -2618,7 +2618,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["6DF2C1E88BE7CE5F"]
+			dependencies: [
+				"6DF2C1E88BE7CE5F"
+				"61301FBD825F8280"
+			]
 			description: ["{moni.quest.6EA130B04FDE6868.description1}"]
 			disable_toast: true
 			id: "6EA130B04FDE6868"

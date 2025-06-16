@@ -1031,8 +1031,8 @@
 		}
 		{
 			dependencies: [
-				"7C4E04E3EA603000"
 				"425D1C34A82B054D"
+				"6EA130B04FDE6868"
 			]
 			description: ["{moni.quest.21E10888F52A3C73.description1}"]
 			icon: "gtceu:large_naquadah_reactor"
