@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.IV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    event.recipes.gtceu.forming_press("sculk-saturated_microstructure_pulp_press")
+    event.recipes.gtceu.canner("sculk-saturated_microstructure_pulp_canning")
         .itemInputs("2x kubejs:sculk-compatible_trellis_microstructure", "1x kubejs:fibrinogenic_sculk_goo")
         .itemOutputs("2x kubejs:sculk-saturated_microstructure_pulp")
         .duration(150)
