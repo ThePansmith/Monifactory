@@ -300,3 +300,21 @@ global.itemNukeList = [
     "nuclearcraft:wasteland_earth",
     "nuclearcraft:feral_ghoul_spawn_egg"
 ];
+
+// Create Compat
+// Removes machines related to processing
+if (Platform.isLoaded("create")) {
+    global.itemNukeList.push(
+        "create:millstone",
+        "create:crushing_wheel",
+        "create:mechanical_plough",
+        "create:mechanical_crafter",
+        "create:mechanical_mixer",
+        "create:mechanical_saw",
+        "create:mechanical_drill",
+        "create:mechanical_harvester",
+        "create:mechanical_press",
+        "create:mechanical_roller",
+        "create:encased_fan"
+    );
+}
