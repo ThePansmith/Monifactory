@@ -235,6 +235,8 @@ ServerEvents.recipes(event => {
     })
 
     // Combination Crafts
+
+    // Empowering
     event.recipes.extendedcrafting.combination(
         "gtceu:restonia_empowered_block",
         "gtceu:restonia_block", ["gtceu:red_alloy_ingot", "gtceu:almandine_gem", Item.of("gtceu:glass_vial", '{Fluid:{Amount:1000,FluidName:"gtceu:sulfuric_acid"}}').weakNBT(), "extendedcrafting:the_ultimate_component"],
@@ -271,28 +273,29 @@ ServerEvents.recipes(event => {
         4000000, 400000
     )
 
+    // Heavy Platings
     event.recipes.extendedcrafting.combination(
-        "kubejs:elementally_infused_omnic_matrix_heavy_plating",
-        "gtceu:omnium_plate", ["4x gtceu:dense_crystal_matrix_plate", "gtceu:gravi_star", "4x gtceu:neutron_reflector", "kubejs:primal_mana"],
-        400000000, 400000
-    )
-
-    event.recipes.extendedcrafting.combination(
-        "kubejs:dimensionally_stabilized_infinity_heavy_plating",
-        "gtceu:infinity_plate", ["gtceu:dense_activated_netherite_plate", "kubejs:quasi_stable_neutron_star", "gtceu:neutron_reflector", "kubejs:the_ultimate_material"],
-        160000000, 160000
+        "kubejs:quantum_fluxed_eternium_heavy_plating",
+        "gtceu:cryococcus_plate", ["2x redstone_arsenal:flux_plating", "3x kubejs:quantum_flux"],
+        1600000, 160000
     )
 
     event.recipes.extendedcrafting.combination(
         "kubejs:universe_resistant_neutronium_heavy_plating",
-        "gtceu:neutronium_plate", ["gtceu:omnium_nugget", "gtceu:quantum_eye"],
-        1000000, 100000
+        "gtceu:neutronium_plate", ["gtceu:omnium_nugget", "3x gtceu:quantum_eye"],
+        4000000, 400000
     )
 
     event.recipes.extendedcrafting.combination(
-        "kubejs:quantum_fluxed_eternium_heavy_plating",
-        "redstone_arsenal:flux_plating", ["gtceu:cryococcus_plate", "kubejs:quantum_flux"],
-        1000000, 100000
+        "kubejs:elementally_infused_omnic_matrix_heavy_plating",
+        "gtceu:omnium_plate", ["2x gtceu:crystal_matrix_plate", "gtceu:gravi_star", "gtceu:neutron_reflector", "3x kubejs:primal_mana"],
+        10000000, 1000000
+    )
+
+    event.recipes.extendedcrafting.combination(
+        "kubejs:dimensionally_stabilized_infinity_heavy_plating",
+        "gtceu:infinity_plate", ["2x gtceu:activated_netherite_plate", "kubejs:quasi_stable_neutron_star", "2x gtceu:neutron_reflector", "2x kubejs:the_ultimate_material"],
+        16000000, 1600000
     )
 
     event.recipes.extendedcrafting.combination(
