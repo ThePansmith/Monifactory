@@ -3,7 +3,7 @@
     "version": "1.20.1",
     "modLoaders": [
       {
-        "id": "forge-47.3.7",
+        "id": "forge-47.4.0",
         "primary": true
       }
     ]
@@ -221,7 +221,7 @@
       "required": true
     },
     {
-      "fileID": 6155730,
+      "fileID": 6651207,
       "projectID": 840010,
       "required": true
     },
