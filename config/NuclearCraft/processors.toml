@@ -40,127 +40,132 @@
 	skip_ticks = 0
 
 [rock_crusher]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [decay_hastener]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [irradiator]
-	register = true
+	register = false
 	base_power = 0
 	base_time = 200
 
 [nuclear_furnace]
-	register = true
+	register = false
 	base_power = 0
 	base_time = 200
 
 [extractor]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [electrolyzer]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [pressurizer]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [alloy_smelter]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [melter]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [analyzer]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [ingot_former]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [pump]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [fuel_reprocessor]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [leacher]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [crystallizer]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [assembler]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [steam_turbine]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [supercooler]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [centrifuge]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [chemical_reactor]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [fluid_infuser]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [isotope_separator]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [fluid_enricher]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [gas_scrubber]
-	register = true
+	register = false
 	base_power = 50
 	base_time = 200
 
 [manufactory]
-	register = true
+	register = false
+	base_power = 50
+	base_time = 200
+
+[subatomic_liquifier]
+	register = false
 	base_power = 50
 	base_time = 200
 

@@ -282,6 +282,21 @@ global.itemNukeList = [
 
     // Wireless Chargers
     "wirelesschargers:basic_wireless_block_charger",
-    "wirelesschargers:advanced_wireless_block_charger"
+    "wirelesschargers:advanced_wireless_block_charger",
 
+    // NuclearCraft
+    /^nuclearcraft:.*_cooler$/,
+    "nuclearcraft:synthrotron_controller",
+    "nuclearcraft:accelerator_beam_port",
+    "nuclearcraft:accelerator_casing",
+    "nuclearcraft:accelerator_ion_source_port",
+    "nuclearcraft:accelerator_port",
+    "nuclearcraft:accelerator_casing_glass",
+    "nuclearcraft:linear_accelerator_controller",
+    "nuclearcraft:accelerator_beam",
+    "nuclearcraft:xenorium298",
+    "nuclearcraft:quantite",
+    "nuclearcraft:portal",
+    "nuclearcraft:wasteland_earth",
+    "nuclearcraft:feral_ghoul_spawn_egg"
 ];

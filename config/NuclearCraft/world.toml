@@ -1,7 +1,9 @@
 
 [Dimension]
 	#Register Wasteland Dimension
-	wasteland = true
-	#Dimension ID for Wasteland
-	wastelandID = -4848
+	wasteland = false
+
+[Biome]
+	#Generate Wasteland Biome in Overworld
+	wasteland = false
 

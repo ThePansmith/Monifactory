@@ -7,13 +7,6 @@
 	#Total radiation = background_radiation + dimension_radiation + chunk_radiation + in-game exposure
 	#Range: 0 ~ 10000
 	background_radiation = 50
-	#Spread multiplier. How much radiation spreads from chunk to chunk per simulation. Bigger values might cause lag.
-	#Range: 0.01 ~ 0.9
-	spread_multiplier = 0.3
-	#If chunk radiation (uRad) less than this value it won't affect chunks nearby.
-	#Bigger values - less lag, but less accurate radiation spread.
-	#Range: 100 ~ 100000
-	spread_gate = 1000
 	#How fast contamination decays (pRad/s).
 	#Range: 1000 ~ 10000
 	decay_speed = 1500
@@ -36,7 +29,7 @@
 	#Format: dim_id|radiation
 	dimension_radiation = ["nuclearcraft:wasteland|200000", "minecraft:the_nether|1000"]
 	#Interval between radiation updates in ticks. 20 ticks = 1 second.
-	#Bigger interval - less lag, but less accurate radiation spread.
+	#Bigger interval - less lag, but less accurate radiation decay.
 	#Range: 2 ~ 1000
 	update_interval = 40
 	#NC radiation sources will generate mekanism radiation and wise-versa.
