@@ -97,11 +97,11 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.forming_press("activated_netherite_scrap") // Change to empowerment?
-        .itemInputs("4x gtceu:activated_carbon_dust", "4x gtceu:void_empowered_plate", "kubejs:reactive_netherite_cluster")
-        .itemOutputs("kubejs:activated_netherite_scrap")
-        .EUt(GTValues.VA[GTValues.UV])
-        .duration(100)
+    event.recipes.extendedcrafting.combination(
+        "kubejs:activated_netherite_scrap",
+        "kubejs:reactive_netherite_cluster", ["4x gtceu:activated_carbon_dust", "4x gtceu:void_empowered_plate"],
+        32000000, 1600000
+    )
 
     event.recipes.gtceu.macerator("wither_bone_dust")
         .itemInputs("kubejs:wither_bone")
