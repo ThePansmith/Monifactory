@@ -37,3 +37,43 @@
 	#Decay Generator base power gen
 	decay_generator_power_gen = 100
 
+[Misc]
+	#Debug logging. Enable in case of issues to collect more data
+	debug_logging = false
+	#Speeds up blocks indexing of multiblocks
+	#Gives big performance boost for large multiblocks
+	#Disable in case of issues
+	experimental_block_indexing = true
+
+["GregTech Energy Compatibility"]
+	#Tiers: ULV, LV, MV, HV, EV, IV, LuV, ZPM, UV, UHV, UEV, UIV, UXV, OpV, MAX
+	#ONLY_FE - Only FE energy system is used
+	#ONLY_GTCEU - Only GregTech Energy system is used
+	#GTCEU_AND_FE - Both systems are used, but GTCEU is preferred
+	#Allowed Values: ONLY_FE, ONLY_GTCEU, GTCEU_AND_FE
+	gregtech_energy_compatibility = "GTCEU_AND_FE"
+	#This only counts if GTCEU is supported
+	fission_reactor_energy_tier = "EV"
+	#This only counts if GTCEU is supported
+	#Explode machines when input energy is more than max input
+	#This doesn't count FE energy input
+	gregtech_energy_overcharge_explosions = true
+	#This only counts if GTCEU_AND_FE compatibility used
+	#Output FE/t will be limited to max GTCEU output
+	#Formula: FE/t = voltage * amperage * (EU to FE convertion rate, usually 4)
+	limit_fe_output = false
+	#This only counts if GTCEU is supported
+	turbine_energy_tier = "EV"
+	#This only counts if GTCEU is supported
+	fusion_reactor_energy_tier = "IV"
+	#This only counts if GTCEU is supported
+	kugelblitz_energy_tier = "LuV"
+	#This only counts if GTCEU is supported
+	accelerators_energy_tier = "LuV"
+	#This only counts if GTCEU is supported
+	processor_energy_tier = "MV"
+	#This only counts if GTCEU is supported
+	#How many energy upgrades are needed for processor to reach next energy tier
+	#Range: 8 ~ 64
+	energy_upgrades_for_next_tier = 16
+
