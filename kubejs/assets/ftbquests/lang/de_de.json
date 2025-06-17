@@ -1073,7 +1073,7 @@
     "moni.quest.2D10F2E538486624.title": "&2Fusion Reactor MK I",
     "moni.quest.2D31856F6EF1ED69.description1": "Now that you have everything you need to power your machines, it's time to put it all together.",
     "moni.quest.2D31856F6EF1ED69.description2": "Your Steam Dynamo needs burnable fuel (like &6Coal&r) and &9water&r. It will output RF power through the Excitation Coil (the red bit at the top). The orientation of the Steam Dynamo can be adjusted with a &aCrescent Hammer&r if needed.",
-    "moni.quest.2D31856F6EF1ED69.description2.expert": "Your &6Steam Turbine&r needs &9Steam&r from your boilers. It will output EU power through the side with the dot. The orientation can be adjusted by \u00268Shift-Right-Clicking\u0026r with a &aWrench&r, if needed.",
+    "moni.quest.2D31856F6EF1ED69.description2.expert": "Your &6Steam Turbine&r needs &9Steam&r from your boilers. It will output EU power through the side with the dot. The orientation can be adjusted by &8Shift-Right-Clicking&r with a &aWrench&r, if needed.",
     "moni.quest.2D31856F6EF1ED69.description2.hardmode": "Your Steam Dynamo needs burnable fuel (like &6Coal&r) and &9water&r. It will output RF power through the Excitation Coil (the red bit at the top). The orientation of the Steam Dynamo can be adjusted with a &aCrescent Hammer&r, if needed.",
     "moni.quest.2D31856F6EF1ED69.description3": "&6Energy cards&r can be used to transfer that RF power, but the dynamo can also output RF directly into an Energy Converter by making the Excitation Coil touch the Energy Converter.",
     "moni.quest.2D31856F6EF1ED69.description3.expert": "Now all you need are some &bGregTech&r machines to power up! You can make whatever you want, but its recommended that you get these two first:",
