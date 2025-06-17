@@ -425,11 +425,5 @@
     "material.gtceu.sodium_metavanadate": "Sodium Metavanadate",
     "material.gtceu.ammonium_metavanadate": "Ammonium Metavanadate",
     "material.gtceu.lead_metasilicate": "Lead Metasilicate",
-    "__COMPAT__.header": "=================",
-    "material.gtceu.androstenedione": "Androstenedione",
-    "__COMPAT__.flufff": "> Compatibility <",
-    "material.gtceu.cholestrol": "Cholestrol",
-    "material.gtceu.pregnenolone": "Pregnenolone",
-    "__COMPAT__.footer": "=================",
-    "material.gtceu.testosterone": "Testosterone"
+    "material.gtceu.saline_antiseptic": "Saline Antiseptic"
 }

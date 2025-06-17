@@ -426,11 +426,5 @@
     "__NAQFUEL__.footer": "========================",
     "material.gtceu.naq_fuel_t1_depleted": "Combustível Líquido de Naquadah Bruto Esgotado",
     "material.gtceu.rhodium_plated_palladium": "Lumium-Paládio Banhado a Ródio",
-    "__COMPAT__.header": "=================",
-    "material.gtceu.androstenedione": "Androstenedione",
-    "__COMPAT__.flufff": "> Compatibility <",
-    "material.gtceu.cholestrol": "Cholestrol",
-    "material.gtceu.pregnenolone": "Pregnenolone",
-    "__COMPAT__.footer": "=================",
-    "material.gtceu.testosterone": "Testosterone"
+    "material.gtceu.saline_antiseptic": "Saline Antiseptic"
 }

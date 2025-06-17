@@ -438,12 +438,5 @@
     "gtceu.jei.ore_vein.mercury/thorium": "トリウム鉱脈 (水星)",
     "gtceu.jei.ore_vein.glacio/sodalite": "ソーダ石鉱脈 (グラシオ)",
     "gtceu.jei.ore_vein.mercury/titanotungstate": "チタンタングステン酸鉱脈 (水星)",
-    "gtceu.jei.ore_vein.venus/dilithium": "ダイリチウム鉱脈 (金星)",
-    "__COMPAT__.header": "=================",
-    "material.gtceu.androstenedione": "アンドロステンジオン",
-    "__COMPAT__.flufff": "> Compatibility <",
-    "material.gtceu.cholestrol": "コレステロール",
-    "material.gtceu.pregnenolone": "プレグネノロン",
-    "__COMPAT__.footer": "=================",
-    "material.gtceu.testosterone": "テストステロン"
+    "gtceu.jei.ore_vein.venus/dilithium": "ダイリチウム鉱脈 (金星)"
 }

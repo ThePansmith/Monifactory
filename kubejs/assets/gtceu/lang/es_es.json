@@ -438,12 +438,5 @@
     "material.gtceu.rotten_sludge": "Fango podrido",
     "material.gtceu.uranic_solution": "Solución uránica",
     "material.gtceu.extraterrestrial_metal_mixture": "Mezcla metálica extraterrestre",
-    "material.gtceu.netherite_scrap": "Escombros ancestrales",
-    "__COMPAT__.header": "=================",
-    "material.gtceu.androstenedione": "Androstenedione",
-    "__COMPAT__.flufff": "> Compatibility <",
-    "material.gtceu.cholestrol": "Cholestrol",
-    "material.gtceu.pregnenolone": "Pregnenolone",
-    "__COMPAT__.footer": "=================",
-    "material.gtceu.testosterone": "Testosterone"
+    "material.gtceu.netherite_scrap": "Escombros ancestrales"
 }
