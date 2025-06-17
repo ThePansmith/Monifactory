@@ -16,7 +16,7 @@
 	#Range: 3 ~ 24
 	min_size = 3
 	#Reactor max size.
-	#Range: 5 ~ 24
+	#Range: 5 ~ 32
 	max_size = 24
 	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
 	#Range: 0.0 ~ 20.0
@@ -41,10 +41,12 @@
 	boiling_mult = 15.0
 	#Affects how much energy reactors produce.
 	#Range: 0.01 ~ 1000000.0
-	fe_generation_multiplier = 10.0
+	fe_generation_multiplier = 5.0
 	#If true, active coolers will be counted in placement rules for other heat sinks.
 	active_heatsink_prime = true
 	#How much coolant active heat sink will consume per tick.
 	#Range: 1 ~ 10000
 	active_heatsink_coolant_per_tick = 100
+	#If you don't need reactor boiling mode, just disable.
+	supports_boiling_mode = true
 
