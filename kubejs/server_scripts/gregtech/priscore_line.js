@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.gtceu.omnic_forge("inert_prismatic_core")
+    event.recipes.gtceu.assembler("inert_prismatic_core")
         .itemInputs("kubejs:chromatically_inert_frame", "12x kubejs:chromatically_reactive_shard", "kubejs:heart_of_a_universe")
         .itemOutputs("kubejs:inert_prismatic_core")
         .duration(400)
