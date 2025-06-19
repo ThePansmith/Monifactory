@@ -397,7 +397,7 @@ ServerEvents.recipes(event => {
         A: "kubejs:furious_infinity_catalyst",
         B: "gtceu:monium_block",
         C: "kubejs:serene_infinity_catalyst",
-        E: "kubejs:creative_energy_data",
+        E: "solarflux:sp_custom_infinity",
         F: "gtceu:uiv_field_generator",
         G: "gtceu:monium_gear",
         H: "gtceu:max_machine_hull",

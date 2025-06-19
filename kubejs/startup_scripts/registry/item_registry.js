@@ -146,8 +146,6 @@ StartupEvents.registry("item", event => {
 
     // Creative Data
     event.create("omnic_data")
-    event.create("creative_computation_data")
-    event.create("creative_energy_data")
 
     // Infinity Fluid Cell Base
 

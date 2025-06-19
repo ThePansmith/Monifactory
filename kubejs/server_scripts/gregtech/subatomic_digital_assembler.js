@@ -31,12 +31,6 @@ ServerEvents.recipes(event => {
         U: "gtceu:uv_field_generator"
     }).id("kubejs:shaped/subatomic_digital_assembler")
 
-    sda_print("creative_computation_data", 1, "gtceu:creative_data_access_hatch", 256)
-    sda_print("creative_computation_data", 2, "gtceu:creative_computation_provider", 256)
-    sda_print("creative_energy_data", 1, "enderio:creative_power", 256)
-    sda_print("creative_energy_data", 2, "ae2:creative_energy_cell", 256)
-    sda_print("creative_energy_data", 3, "gtceu:creative_energy", 256)
-
     event.recipes.gtceu.subatomic_digital_assembly("kubejs:corrupted_data")
         .itemInputs("kubejs:universe_creation_data")
         .itemOutputs("kubejs:shattered_universe_data")
