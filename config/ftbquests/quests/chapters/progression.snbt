@@ -41,6 +41,12 @@
 			y: -1.0d
 		}
 		{
+			id: "1BD667B1076EDD5F"
+			linked_quest: "3D6BC54DBE665638"
+			x: 17.0d
+			y: -4.0d
+		}
+		{
 			id: "46C91BC7D1FBA463"
 			linked_quest: "3115EAF1F70A613E"
 			shape: "hexagon"

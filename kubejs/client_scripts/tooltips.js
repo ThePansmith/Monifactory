@@ -76,7 +76,18 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("thermal:device_rock_gen", Text.translatable("thermal.device_rock_gen.tooltip"))
     tooltip.add("thermal:device_water_gen", Text.translatable("thermal.device_water_gen.tooltip"))
 
-    tooltip.add(["thermal:upgrade_augment_1", "thermal:upgrade_augment_2", "thermal:upgrade_augment_4", "thermal:upgrade_augment_3", "thermal:dynamo_output_augment"], Text.translatable("thermal.emi.tooltip"))
+    tooltip.add(
+        [
+            "thermal:upgrade_augment_1",
+            "thermal:upgrade_augment_2",
+            "thermal:upgrade_augment_4",
+            "thermal:upgrade_augment_3",
+            "thermal:rf_coil_augment_advanced",
+            "thermal:rf_coil_storage_augment_advanced",
+            "thermal:rf_coil_xfer_augment_advanced",
+            "thermal:fluid_tank_augment_advanced"
+        ], Text.translatable("thermal.emi.tooltip")
+    )
 
     // Circuits
     tooltip.addAdvanced("kubejs:optical_processor_mainframe", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uev_tier_circuit"), Math.round(Client.lastNanoTime / 1000000000))) })

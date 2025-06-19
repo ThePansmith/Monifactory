@@ -26,6 +26,9 @@ deprecateItem("kubejs:dilithium_crystal", "gtceu:dilithium_gem", "Dilithium")
 // Ancient Debris
 deprecateItem("kubejs:crushed_ancient_debris", "gtceu:crushed_netherite_scrap_ore", "Crushed Ancient Debris")
 
+// Saline Antiseptic (rename after typo)
+deprecateFluid("gtceu:saline_antisceptic", "gtceu:saline_antiseptic", "Saline Antiseptic")
+
 // Old Nethline Items
 deprecateItem("kubejs:diamond_lattice", "6x minecraft:diamond", "Diamond Lattice")
 deprecateItem("kubejs:purified_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Purified Ancient Debris Dust")

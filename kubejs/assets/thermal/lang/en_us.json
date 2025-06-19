@@ -8,6 +8,11 @@
     "item.thermal.upgrade_augment_4": "Signalum Integral Components",
     "item.thermal.upgrade_augment_4.desc": "Improves base attributes. Other augments may be more effective as a result.",
 
+    "item.thermal.rf_coil_augment_advanced": "Advanced Expanded RF Coil",
+    "item.thermal.rf_coil_storage_augment_advanced": "Advanced Stabilized RF Coil",
+    "item.thermal.rf_coil_xfer_augment_advanced": "Advanced High-Flux RF Coil",
+    "item.thermal.fluid_tank_augment_advanced": "Advanced Expanded Tank Construction",
+
     "info.thermal.dynamo_stirling.0": "Generates Redstone Flux using solid fuels.",
     "info.thermal.dynamo_stirling.1": "Most things that work in a Furnace work here too.",
 

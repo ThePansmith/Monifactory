@@ -63,15 +63,15 @@
 		{
 			id: "4E96C0A741972F9E"
 			linked_quest: "74469710D910C19D"
-			x: 38.5d
-			y: 15.5d
+			x: 33.75d
+			y: 8.5d
 		}
 		{
 			id: "24A33B6D4DE6DB8F"
 			linked_quest: "70D9B3C6539720DE"
 			size: 1.5d
 			x: 35.5d
-			y: 15.5d
+			y: 8.5d
 		}
 		{
 			id: "3A3FFBE01F09FB26"
@@ -2751,6 +2751,8 @@
 			dependencies: ["5BC6DB754207D4A8"]
 			description: [
 				"{moni.quest.0F779BEEED8E67BB.description1}"
+				""
+				"[\"\",{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description1\"},{\"color\":\"gold\",\"underlined\":true,\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"15A5B4C632836306\"}},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description3\"},{\"color\":\"gold\",\"underlined\":true,\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D72B3FF808CE13C\"}},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description5\"},{\"color\":\"dark_aqua\",\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description6\"},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description7\"},{\"color\":\"gold\",\"underlined\":true,\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description8\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1405D08C6A87B3BB\"}},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description9\"}]"
 				""
 				"{moni.quest.0F779BEEED8E67BB.description2}"
 				""

@@ -71,6 +71,7 @@
 	magnesium_diboride = false
 	hafnium = false
 	iridium = false
+	neutronium = true
 
 [plates]
 	tough_alloy = false
