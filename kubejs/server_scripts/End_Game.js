@@ -408,7 +408,7 @@ ServerEvents.recipes(event => {
         P: "kubejs:monic_processor_mainframe",
         Q: "kubejs:field_stabilised_omnic_pulsar_compound",
         R: "gtceu:uiv_robot_arm",
-        S: "kubejs:creative_storage_data",
+        S: "megacells:bulk_cell_component",
         T: "kubejs:omnic_data",
         U: "gtceu:subatomic_digital_assembler",
         V: "kubejs:infinity_file",
