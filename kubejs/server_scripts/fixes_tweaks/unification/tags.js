@@ -32,7 +32,6 @@ ServerEvents.tags("item", event => {
     event.add("ae2:all_fluix", "gtceu:fluix_gem")
     event.add("ae2:all_certus_quartz", "gtceu:charged_certus_quartz_gem")
     event.add("forge:gems/certus_quartz", "gtceu:charged_certus_quartz_gem")
-    event.add("forge:singularities/ultimate", "kubejs:mote_of_omnium")
     event.add("forge:singularities/ultimate", "extendedcrafting:ultimate_singularity")
     event.add("forge:ingots/electrum_flux", "redstone_arsenal:flux_ingot")
     event.add("forge:dusts/electrum_flux", "redstone_arsenal:flux_dust")
