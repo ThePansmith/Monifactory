@@ -167,6 +167,17 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: "sophisticatedstorage:controller" })
 
+    event.replaceInput([
+        { id: "sophisticatedstorage:storage_io" },
+        { id: "sophisticatedstorage:storage_input" },
+        { id: "sophisticatedstorage:storage_output" }],
+    "#forge:stone", "#forge:plates/steel")
+    event.replaceInput([
+        { id: "sophisticatedstorage:storage_io" },
+        { id: "sophisticatedstorage:storage_input" },
+        { id: "sophisticatedstorage:storage_output" }],
+    "minecraft:repeater", "#gtceu:circuits/lv")
+
     event.shaped("sophisticatedstorage:controller", [
         "III",
         "CDC",
@@ -186,37 +197,6 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/lv",
         D: "#sophisticatedstorage:base_tier_wooden_storage",
         E: "#forge:storage_blocks/emerald"
-    })
-    event.shaped("sophisticatedstorage:storage_input", [
-        "III",
-        "CDC",
-        "IEI"
-    ], {
-        I: "#forge:plates/steel",
-        C: "#gtceu:circuits/lv",
-        D: "#sophisticatedstorage:base_tier_wooden_storage",
-        E: "#forge:storage_blocks/gold"
-    })
-    event.shaped("sophisticatedstorage:storage_output", [
-        "IEI",
-        "CDC",
-        "III"
-    ], {
-        I: "#forge:plates/steel",
-        C: "#gtceu:circuits/lv",
-        D: "#sophisticatedstorage:base_tier_wooden_storage",
-        E: "#forge:storage_blocks/gold"
-    })
-
-    event.shaped("sophisticatedstorage:storage_io", [
-        "III",
-        "SDT",
-        "III"
-    ], {
-        I: "#forge:plates/steel",
-        S: "sophisticatedstorage:storage_input",
-        T: "sophisticatedstorage:storage_output",
-        D: "#sophisticatedstorage:base_tier_wooden_storage",
     })
 
     // Stack upgrades

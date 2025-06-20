@@ -289,6 +289,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid()
         .color(0x29B9CF)
         .components("1x fluorobenzene", "1x boron_trifluoride", "2x nitrogen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("4-4-difluorobenzophenone")
         .dust()
@@ -326,4 +327,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("19x carbon", "12x hydrogen", "3x oxygen")
         .formula("(C6H4O2)(C13H8O)")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
+
+    event.create("radiant_blend")
+        .liquid()
+        .color(0xfff25e)
 })

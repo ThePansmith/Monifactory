@@ -282,22 +282,39 @@ global.itemNukeList = [
 
     // Wireless Chargers
     "wirelesschargers:basic_wireless_block_charger",
-    "wirelesschargers:advanced_wireless_block_charger"
+    "wirelesschargers:advanced_wireless_block_charger",
 
+    // NuclearCraft
+    /^nuclearcraft:.*_cooler$/,
+    "nuclearcraft:synthrotron_controller",
+    "nuclearcraft:accelerator_beam_port",
+    "nuclearcraft:accelerator_casing",
+    "nuclearcraft:accelerator_ion_source_port",
+    "nuclearcraft:accelerator_port",
+    "nuclearcraft:accelerator_casing_glass",
+    "nuclearcraft:linear_accelerator_controller",
+    "nuclearcraft:accelerator_beam",
+    "nuclearcraft:xenorium298",
+    "nuclearcraft:quantite",
+    "nuclearcraft:portal",
+    "nuclearcraft:wasteland_earth",
+    "nuclearcraft:feral_ghoul_spawn_egg"
 ];
 
-// Create: Estrogen Compat
-if (Platform.isLoaded("estrogen")) {
+// Create Compat
+// Removes machines related to processing
+if (Platform.isLoaded("create")) {
     global.itemNukeList.push(
-        "estrogen:used_filter",
-        "estrogen:centrifuge",
-        "estrogen:testosterone_chunk",
-        "estrogen:testosterone_powder",
-        "estrogen:testosterone_mixture_bucket",
-        "estrogen:filtrated_horse_urine_bucket",
-        "estrogen:horse_urine_bucket",
-        "estrogen:molten_amethyst_bucket",
-        "estrogen:molten_slime_bucket",
-        "estrogen:balls"
-    )
+        "create:millstone",
+        "create:crushing_wheel",
+        "create:mechanical_plough",
+        "create:mechanical_crafter",
+        "create:mechanical_mixer",
+        "create:mechanical_saw",
+        "create:mechanical_drill",
+        "create:mechanical_harvester",
+        "create:mechanical_press",
+        "create:mechanical_roller",
+        "create:encased_fan"
+    );
 }

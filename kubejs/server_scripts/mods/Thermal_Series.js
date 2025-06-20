@@ -177,6 +177,49 @@ ServerEvents.recipes(event => {
         G: "gtceu:small_tungsten_carbide_gear"
     })
 
+    // Advanced Thermal Storage augments
+    event.shaped(Item.of("thermal:rf_coil_augment_advanced", '{AugmentData:{RFMax:8.0f,RFXfer:8.0f,Type:"RF"}}'), [
+        " G ",
+        "SCS",
+        " G "
+    ], {
+        S: "gtceu:sterling_silver_plate",
+        C: "thermal:rf_coil",
+        G: "gtceu:rose_gold_plate"
+    })
+
+    event.shaped(Item.of("thermal:rf_coil_storage_augment_advanced", '{AugmentData:{RFMax:10.0f,RFXfer:4.0f,Type:"RF"}}'), [
+        " S ",
+        "GCG",
+        " G "
+    ], {
+        S: "gtceu:sterling_silver_plate",
+        C: "thermal:rf_coil",
+        G: "gtceu:rose_gold_plate"
+    })
+
+    event.shaped(Item.of("thermal:rf_coil_xfer_augment_advanced", '{AugmentData:{RFMax:4.0f,RFXfer:10.0f,Type:"RF"}}'), [
+        " S ",
+        "SCS",
+        " G "
+    ], {
+        S: "gtceu:sterling_silver_plate",
+        C: "thermal:rf_coil",
+        G: "gtceu:rose_gold_plate"
+    })
+
+    event.shaped(Item.of("thermal:fluid_tank_augment_advanced", '{AugmentData:{FluidMax:10.0f,Type:"Fluid"}}'), [
+        " P ",
+        "RSR",
+        " G "
+    ], {
+        P: "#forge:plastic_plates",
+        R: "gtceu:silicone_rubber_ring",
+        G: "#thermal:glass/hardened",
+        S: "gtceu:stainless_steel_normal_fluid_pipe"
+    })
+
+    // Machine and Dynamo augments
     event.shaped("thermal:dynamo_fuel_augment", [
         "PIP",
         "GCG",

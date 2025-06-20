@@ -96,7 +96,8 @@ ServerEvents.recipes(event => {
     ])
     event.replaceOutput({}, "gtceu:hot_silicon_ingot", "gtceu:silicon_ingot")
     event.replaceOutput({}, "gtceu:hot_kanthal_ingot", "gtceu:kanthal_ingot")
-    event.replaceOutput({}, Fluid.of("gtceu:molten_kanthal"), Fluid.of("gtceu:kanthal"))
+    // When replacing fluids, the quantity of the replacing fluid needs to be specified. Else it defaults to 1 bucket.
+    event.replaceOutput({id: /^gtceu:alloy_blast_smelter\/kanthal.*/}, Fluid.of("gtceu:molten_kanthal"), Fluid.of("gtceu:kanthal", 432))
 
     // Steel Machine Casing
     event.remove({ input: "gtceu:steel_machine_casing" })

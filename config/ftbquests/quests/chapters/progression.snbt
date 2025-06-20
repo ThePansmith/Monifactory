@@ -41,6 +41,12 @@
 			y: -1.0d
 		}
 		{
+			id: "1BD667B1076EDD5F"
+			linked_quest: "3D6BC54DBE665638"
+			x: 17.0d
+			y: -4.0d
+		}
+		{
 			id: "46C91BC7D1FBA463"
 			linked_quest: "3115EAF1F70A613E"
 			shape: "hexagon"
@@ -1005,7 +1011,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "2AAFA7BC6C6517A8"
-				item: "kubejs:matter_processor_computer"
+				item: "kubejs:optical_processor_computer"
 				type: "item"
 			}]
 			title: "{moni.quest.4EB9D1ADC4814330.title}"
@@ -1036,7 +1042,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6F4F2E13D73644F0"
-				item: "kubejs:matter_processor_mainframe"
+				item: "kubejs:optical_processor_mainframe"
 				type: "item"
 			}]
 			title: "{moni.quest.07057CDE4E021BA7.title}"
@@ -1114,7 +1120,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "621B8C0DD18BFA3A"
-				item: "kubejs:matter_processor_assembly"
+				item: "kubejs:optical_processor_assembly"
 				type: "item"
 			}]
 			title: "{moni.quest.6F5BB99060FF03AC.title}"
@@ -1136,7 +1142,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "58B3E75584D6D2D6"
-				item: "kubejs:matter_processor"
+				item: "kubejs:optical_processor"
 				type: "item"
 			}]
 			title: "{moni.quest.248ABB7F26EB72EE.title}"
@@ -1270,7 +1276,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "0AB88809F545701F"
-				item: "kubejs:matter_processing_unit"
+				item: "kubejs:optical_processing_unit"
 				type: "item"
 			}]
 			title: "{moni.quest.0F56F4E642BC2B85.title}"
@@ -2442,7 +2448,6 @@
 		}
 		{
 			dependencies: [
-				"79EFCD8E01384C0C"
 				"67663B49B80849C1"
 				"75DD12FBC8AA39FC"
 			]
@@ -2618,7 +2623,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["6DF2C1E88BE7CE5F"]
+			dependencies: [
+				"6DF2C1E88BE7CE5F"
+				"61301FBD825F8280"
+			]
 			description: ["{moni.quest.6EA130B04FDE6868.description1}"]
 			disable_toast: true
 			id: "6EA130B04FDE6868"

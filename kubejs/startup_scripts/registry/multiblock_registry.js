@@ -4,6 +4,7 @@
  * It is also where the shapes for multis are defined.
  */
 const Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
+const I18n = Java.loadClass("net.minecraft.client.resources.language.I18n");
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
 
@@ -66,7 +67,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("naquadah_reactor")
         .category("multiblock")
         .setEUIO("out")
-        .setMaxIOSize(1, 1, 0, 0)
+        .setMaxIOSize(2, 2, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
@@ -75,7 +76,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("large_naquadah_reactor")
         .category("multiblock")
         .setEUIO("out")
-        .setMaxIOSize(1, 1, 2, 2)
+        .setMaxIOSize(0, 0, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC)
@@ -106,15 +107,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
-
-    // Omnic Forge
-    event.create("omnic_forge")
-        .category("multiblock")
-        .setEUIO("in")
-        .setMaxIOSize(6, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_CRYSTALLIZATION, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ARC)
 
     // Quintessence Infuser
     event.create("quintessence_infuser")
@@ -164,12 +156,60 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     const MoniRecipeTypes = Java.loadClass("net.neganote.monilabs.gtbridge.MoniRecipeTypes")
     MoniRecipeTypes.createPrismaCRecipeType("chromatic_processing")
     MoniRecipeTypes.createPrismaCRecipeType("chromatic_transcendence")
+
+    event.create("omnic_synthesis")
+        .category("multiblock")
+        .setEUIO("in")
+        .setMaxIOSize(1, 1, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.CHEMICAL)
+
+    event.create("omnidimensional_power_singularity")
+        .category("multiblock")
+        .setMaxIOSize(0, 0, 1, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.ALWAYS_FULL)
+
+    event.create("omniscience_research_beacon")
+        .category("multiblock")
+        .setEUIO("in")
+        .setMaxIOSize(0, 0, 1, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.ALWAYS_FULL)
+        .setSound(GTSoundEntries.COMPUTATION)
+
+    event.create("sculk_vat")
+        .category("multiblock")
+        .setEUIO("in")
+        .setMaxIOSize(0, 0, 1, 1)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.CHEMICAL)
 })
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
 
-    // EMI displays microverse projector tier
-    GTRecipeTypes.get("microverse").addDataInfo((data) => ("Projector Tier: " + data.getByte("projector_tier")));   // todo: get Text.translatable to work
+    // EMI displays for various multis
+    GTRecipeTypes.get("microverse")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.microverse_projector.emi_info.0", data.getByte("projector_tier")));
+
+    GTRecipeTypes.get("omnic_synthesis")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.0"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.1"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.2"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.3"))
+
+    GTRecipeTypes.get("omnidimensional_power_singularity")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnidimensional_power_singularity.emi_info.0"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnidimensional_power_singularity.emi_info.1"))
+
+    GTRecipeTypes.get("omniscience_research_beacon")
+        .addDataInfo((data) => "")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.creative_data_multi.emi_info.0"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.creative_data_multi.emi_info.1"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.creative_data_multi.emi_info.2"))
+
+    GTRecipeTypes.get("sculk_vat")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.0"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.1"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.2"))
 
     // Normal mode-exclusive multis
     if (doHNN) {
@@ -696,7 +736,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .workableCasingRenderer("kubejs:block/microverse/casing",
             "gtceu:block/machines/projectors", false)
 
-    // Naquadah Reactor I
+    // (Small) Naquadah Reactor
     event.create("naquadah_reactor", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes("naquadah_reactor")
@@ -788,39 +828,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/stress_proof_casing",
             "gtceu:block/multiblock/fusion_reactor", false)
-
-
-    // Omnic Forge
-    event.create("omnic_forge", "multiblock")
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes("omnic_forge")
-        .appearanceBlock(() => Block.getBlock("kubejs:omnic_matrix_machine_casing"))
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("#########", "#########", "####O####", "###CCC###", "##OCCCO##", "###CCC###", "####O####", "#########", "#########")
-            .aisle("#########", "####O####", "##GGOGG##", "##GODOG##", "#OODNDOO#", "##GODOG##", "##GGOGG##", "####O####", "#########")
-            .aisle("####O####", "##GGOGG##", "#G     G#", "#G     G#", "OO  D  OO", "#G     G#", "#G     G#", "##GGOGG##", "####O####")
-            .aisle("###CCC###", "##GODOG##", "#G     G#", "CO     OC", "CD  D  DC", "CO     OC", "#G     G#", "##GODOG##", "###CCC###")
-            .aisle("##OCCCO##", "#OODNDOO#", "OO  D  OO", "CD  D  DC", "CNDDBDDNC", "CD  D  DC", "OO  D  OO", "#OODNDOO#", "##OCCCO##")
-            .aisle("###CCC###", "##GODOG##", "#G     G#", "CO     OC", "CD  D  DC", "CO     OC", "#G     G#", "##GODOG##", "###CCC###")
-            .aisle("####O####", "##GGOGG##", "#G     G#", "#G     G#", "OO  D  OO", "#G     G#", "#G     G#", "##GGOGG##", "####O####")
-            .aisle("#########", "####O####", "##GGOGG##", "##GODOG##", "#OODNDOO#", "##GODOG##", "##GGOGG##", "####O####", "#########")
-            .aisle("#########", "#########", "####O####", "###CCC###", "##OC@CO##", "###CCC###", "####O####", "#########", "#########")
-            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("B", Predicates.blocks("gtceu:crystal_matrix_block"))
-            .where("N", Predicates.blocks("gtceu:sculk_superconductor_block"))
-            .where("D", Predicates.frames(GTMaterials.get("cryolobus")))
-            .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-            .where("O", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
-            .where("C", Predicates.blocks("kubejs:omnic_matrix_machine_casing").setMinGlobalLimited(43)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-            )
-            .where(" ", Predicates.air())
-            .where("#", Predicates.any())
-            .build())
-        .workableCasingRenderer(new ResourceLocation("kubejs", "block/omnium/casing"),
-            "gtceu:block/machines/reconstructor", false)
 
     // Sculk Biocharger
     event.create("sculk_biocharger", "multiblock")
@@ -950,12 +957,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/gcym/blast_alloy_smelter", false)
 
     // Coremod multis
-    const MoniRecipeTypes = Java.loadClass("net.neganote.monilabs.gtbridge.MoniRecipeTypes")
-    const MoniMachines = Java.loadClass("net.neganote.monilabs.common.machine.MoniMachines")
 
     // Prismatic Crucible
-    const PrismaticCrucibleMachine = Java.loadClass("net.neganote.monilabs.common.machine.multiblock.PrismaticCrucibleMachine")
-    const PrismaticCrucibleRenderer = Java.loadClass("net.neganote.monilabs.client.renderer.PrismaticCrucibleRenderer")
     event.create("prismatic_crucible", "multiblock")
         .machine((holder) => new PrismaticCrucibleMachine(holder))
         .rotationState(RotationState.ALL)
@@ -984,7 +987,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                     .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
-                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                    .or(Predicates.blocks("monilabs:chroma_sensor_hatch")))
             .where("C", Predicates.blocks("monilabs:chromodynamic_conduction_casing"))
             .where("M", Predicates.controller(Predicates.blocks(definition.getBlock())))
             .where("P", Predicates.blocks("monilabs:prismatic_focus"))
@@ -996,12 +1000,11 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .renderer(() => new PrismaticCrucibleRenderer("kubejs:block/netherite/casing", "gtceu:block/multiblock/processing_array"))
 
     // Omnic Synthesizer
-    const OmnicSynthesizerMachine = Java.loadClass("net.neganote.monilabs.common.machine.multiblock.OmnicSynthesizerMachine")
     event.create("omnic_synthesizer", "multiblock")
         .machine((holder) => new OmnicSynthesizerMachine(holder))
-        .recipeTypes(MoniRecipeTypes.OMNIC_SYNTHESIZER_RECIPES)
+        .recipeTypes(["omnic_synthesis"])
         .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
-        .recipeModifiers([OmnicSynthesizerMachine.recipeModifier(), GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([MoniRecipeModifiers.omnicSynthRecipeModifier(), GTRecipeModifiers.OC_NON_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#CCCCC#", "#CCCCC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CCCCC#", "#CCCCC#")
             .aisle("CCCCCCC", "CHMMMHC", "CH###HC", "CH###HC", "CH###HC", "CH###HC", "CH###HC", "CHMMMHC", "CCCCCCC")
@@ -1031,11 +1034,10 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/fusion_reactor")
 
     // Omnidimensional Power Singularity
-    const CreativeEnergyMultiMachine = Java.loadClass("net.neganote.monilabs.common.machine.multiblock.CreativeEnergyMultiMachine")
     event.create("omnidimensional_power_singularity", "multiblock")
         .machine((holder) => new CreativeEnergyMultiMachine(holder))
         .appearanceBlock(() => Block.getBlock("kubejs:dimensional_stabilization_netherite_casing"))
-        .recipeTypes([MoniRecipeTypes.CREATIVE_ENERGY_RECIPES])
+        .recipeTypes(["omnidimensional_power_singularity"])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "###############")
             .aisle("#####NNNNN#####", "#####NNNNN#####", "#######F#######", "#######F#######", "#######F#######", "###############", "###############", "###############", "###############", "#######H#######", "#######H#######", "#######H#######", "#####AAHAA#####", "#######H#######", "#####AAHAA#####", "#######H#######", "#######H#######", "#######H#######", "#######R#######")
@@ -1069,10 +1071,9 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/processing_array")
 
     // Creative Data Multi
-    const CreativeDataMultiMachine = Java.loadClass("net.neganote.monilabs.common.machine.multiblock.CreativeDataMultiMachine")
     event.create("creative_data_multi", "multiblock")
         .machine((holder) => new CreativeDataMultiMachine(holder))
-        .recipeTypes([MoniRecipeTypes.CREATIVE_DATA_RECIPES])
+        .recipeTypes(["omniscience_research_beacon"])
         .appearanceBlock(() => Block.getBlock("kubejs:bioalloy_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###NNNNNNN###", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############")

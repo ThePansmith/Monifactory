@@ -467,7 +467,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xe8543a).secondaryColor(0x684a09).iconSet(GTMaterialIconSet.SAND)
         .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
-    event.create("saline_antisceptic")
+    event.create("saline_antiseptic")
         .fluid()
         .color(0x99dce5)
 

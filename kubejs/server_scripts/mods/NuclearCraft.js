@@ -188,6 +188,7 @@ ServerEvents.recipes(event => {
     canfluidactive("water", "minecraft:water")
     cansolidactive("redstone", "minecraft:redstone")
     canfluidactive("liquid_helium", "gtceu:helium")
+    canfluidactive("liquid_nitrogen", "gtceu:nitrogen")
     cansolidactive("enderium", "gtceu:enderium_dust")
     canfluidactive("cryotheum", "kubejs:molten_cryotheum")
 

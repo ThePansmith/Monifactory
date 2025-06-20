@@ -210,11 +210,11 @@
   "item.kubejs.complex_smd_inductor": "Complex SMD Inductor",
 
   "item.kubejs.matter_processing_unit": "Matter Processing Unit",
-  "item.kubejs.matter_circuit_board": "Matter Circuit Board",
-  "item.kubejs.matter_processor": "Matter Processor",
-  "item.kubejs.matter_processor_assembly": "Matter Processor Assembly",
-  "item.kubejs.matter_processor_computer": "Matter Processor Supercomputer",
-  "item.kubejs.matter_processor_mainframe": "Matter Processor Mainframe",
+  "item.kubejs.matter_circuit_board": "Optical Circuit Board",
+  "item.kubejs.optical_processor": "Optical Processor",
+  "item.kubejs.optical_processor_assembly": "Optical Processor Assembly",
+  "item.kubejs.optical_processor_computer": "Optical Processor Supercomputer",
+  "item.kubejs.optical_processor_mainframe": "Optical Processor Mainframe",
 
   "item.kubejs.dimensional_processing_unit": "Dimensional Processing Unit",
   "item.kubejs.dimensional_circuit_board": "Dimensional Circuit Board",
@@ -318,6 +318,18 @@
   "item.kubejs.infinity_wire_cutter": "Infinity Wire Cutter",
   "item.kubejs.infinity_power_unit": "Infinity Power Unit",
 
+  "item.kubejs.sapphire_seed_crystal": "Sapphire Seed Crystal",
+  "item.kubejs.sapphire_boule": "Sapphire Boule",
+  "item.kubejs.sapphire_wafer": "Sapphire Wafer",
+  "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer",
+  "item.kubejs.engraved_sapphire_wafer": "Engraved Sapphire Wafer",
+  "item.kubejs.incomplete_sapphire_wafer": "Incomplete Sapphire Wafer",
+  "item.kubejs.completed_optical_wafer": "Completed Optical Wafer",
+  "item.kubejs.optical_chip": "Optical Chip",
+  "item.kubejs.electro_optic_modulator": "Electro-Optic Modulator",
+  "item.kubejs.carbon_mesh_reinforced_circuit_board": "Carbon Mesh Reinforced Circuit Board",
+  "item.kubejs.carbon_mesh_reinforced_printed_circuit_board": "Carbon Mesh Reinforced Printed Circuit Board",
+
   "item.kubejs.solidified_argon": "Solidified Argon",
   "item.kubejs.solidified_chlorine": "Solidified Chlorine",
   "item.kubejs.solidified_fluorine": "Solidified Fluorine",
@@ -344,7 +356,6 @@
   "item.kubejs.stabilized_curium": "Stabilized Curium",
   "item.kubejs.stabilized_californium": "Stabilized Californium",
   "item.kubejs.stabilized_americium": "Stabilized Americium",
-  "item.kubejs.stabilized_oganesson": "Stabilized Oganesson",
 
   "item.kubejs.conductive_iron_thruster": "Conductive Iron Thruster",
   "item.kubejs.leadstone_thruster": "Leadstone Thruster",
@@ -417,7 +428,7 @@
   "item.kubejs.uev_tier_circuit": "UEV-Tier Circuit",
   "item.kubejs.uiv_tier_circuit": "UIV-Tier Circuit",
   "item.kubejs.max_tier_circuit": "MAX-Tier Circuit",
-  "item.kubejs.matter_circuit.tooltip" : "Omnicapable Circuits!",
+  "item.kubejs.optical_circuit.tooltip" : "Omnicapable Circuits!",
   "item.kubejs.dimensional_circuit.tooltip" : "Powered by Microverses!",
   "item.kubejs.monic_processor.tooltip" : "The Beginning of The End",
   "item.kubejs.monic_processor_assembly.tooltip" : "Can run vanilla Minecraft at a decent FPS",
@@ -543,4 +554,3 @@
 
   "tempad.tempad.tooltip": "§6Uses Monipennies as fuel"
 }
-
