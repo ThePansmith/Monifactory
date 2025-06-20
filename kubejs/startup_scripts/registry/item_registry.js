@@ -523,4 +523,7 @@ StartupEvents.registry("item", event => {
 
     // Phantom Paste
     event.create("framedblocks:phantom_paste")
+
+    // Protomatter
+    event.create("protomatter").texture("kubejs:item/protomatter")
 })
