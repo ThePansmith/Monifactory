@@ -203,6 +203,15 @@ StartupEvents.registry("block", event => {
             .requiresTool(true);
     });
 
+    // UEV Hermetic Casing
+    event.create("gtceu:uev_hermetic_casing")
+        .displayName("Hermetic Casing X")
+        .soundType("metal")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
 
     // Misc
     event.create("starry_diamond_block")
