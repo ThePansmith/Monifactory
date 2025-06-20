@@ -4,6 +4,7 @@
  * It is also where the shapes for multis are defined.
  */
 const Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
+const I18n = Java.loadClass("net.minecraft.client.resources.language.I18n");
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
 
@@ -143,14 +144,63 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
 
+    // Recipe types for coremod multis
     MoniRecipeTypes.createPrismaCRecipeType("chromatic_processing")
     MoniRecipeTypes.createPrismaCRecipeType("chromatic_transcendence")
+
+    event.create("omnic_synthesis")
+        .category("multiblock")
+        .setEUIO("in")
+        .setMaxIOSize(1, 1, 0, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.CHEMICAL)
+
+    event.create("omnidimensional_power_singularity")
+        .category("multiblock")
+        .setMaxIOSize(0, 0, 1, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.ALWAYS_FULL)
+
+    event.create("omniscience_research_beacon")
+        .category("multiblock")
+        .setEUIO("in")
+        .setMaxIOSize(0, 0, 1, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.ALWAYS_FULL)
+        .setSound(GTSoundEntries.COMPUTATION)
+
+    event.create("sculk_vat")
+        .category("multiblock")
+        .setEUIO("in")
+        .setMaxIOSize(0, 0, 1, 1)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.CHEMICAL)
 })
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
 
-    // EMI displays microverse projector tier
-    GTRecipeTypes.get("microverse").addDataInfo((data) => ("Projector Tier: " + data.getByte("projector_tier")));   // todo: get Text.translatable to work
+    // EMI displays for various multis
+    GTRecipeTypes.get("microverse")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.microverse_projector.emi_info.0", data.getByte("projector_tier")));
+
+    GTRecipeTypes.get("omnic_synthesis")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.0"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.1"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.2"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.3"))
+
+    GTRecipeTypes.get("omnidimensional_power_singularity")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnidimensional_power_singularity.emi_info.0"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnidimensional_power_singularity.emi_info.1"))
+
+    GTRecipeTypes.get("omniscience_research_beacon")
+        .addDataInfo((data) => "")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.creative_data_multi.emi_info.0"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.creative_data_multi.emi_info.1"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.creative_data_multi.emi_info.2"))
+
+    GTRecipeTypes.get("sculk_vat")
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.0"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.1"))
+        .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.2"))
 
     // Normal mode-exclusive multis
     if (doHNN) {
@@ -943,7 +993,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     // Omnic Synthesizer
     event.create("omnic_synthesizer", "multiblock")
         .machine((holder) => new OmnicSynthesizerMachine(holder))
-        .recipeTypes(MoniRecipeTypes.OMNIC_SYNTHESIZER_RECIPES)
+        .recipeTypes(["omnic_synthesis"])
         .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
         .recipeModifiers([MoniRecipeModifiers.omnicSynthRecipeModifier(), GTRecipeModifiers.OC_NON_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
@@ -978,7 +1028,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("omnidimensional_power_singularity", "multiblock")
         .machine((holder) => new CreativeEnergyMultiMachine(holder))
         .appearanceBlock(() => Block.getBlock("kubejs:dimensional_stabilization_netherite_casing"))
-        .recipeTypes([MoniRecipeTypes.CREATIVE_ENERGY_RECIPES])
+        .recipeTypes(["omnidimensional_power_singularity"])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "###############")
             .aisle("#####NNNNN#####", "#####NNNNN#####", "#######F#######", "#######F#######", "#######F#######", "###############", "###############", "###############", "###############", "#######H#######", "#######H#######", "#######H#######", "#####AAHAA#####", "#######H#######", "#####AAHAA#####", "#######H#######", "#######H#######", "#######H#######", "#######R#######")
@@ -1014,7 +1064,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     // Creative Data Multi
     event.create("creative_data_multi", "multiblock")
         .machine((holder) => new CreativeDataMultiMachine(holder))
-        .recipeTypes([MoniRecipeTypes.CREATIVE_DATA_RECIPES])
+        .recipeTypes(["omniscience_research_beacon"])
         .appearanceBlock(() => Block.getBlock("kubejs:bioalloy_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###NNNNNNN###", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############")
