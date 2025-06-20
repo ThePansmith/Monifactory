@@ -185,6 +185,7 @@ StartupEvents.registry("block", event => {
     // Machine Casings
     const casings = [
         "microverse",
+        "black_steel",
         "dark_soularium",
         "omnic_matrix_machine",
         "dimensional_stabilization_netherite",
@@ -234,6 +235,13 @@ StartupEvents.registry("block", event => {
         .tag("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
+
+    event.create("prism_glass")
+        .displayName("P.R.I.S.M. Glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
 
     event.create("omnic_matrix_coil_block", "gtceu:coil")
         .temperature(12600)

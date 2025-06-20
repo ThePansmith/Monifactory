@@ -235,6 +235,8 @@ ServerEvents.recipes(event => {
     })
 
     // Combination Crafts
+
+    // Empowering
     event.recipes.extendedcrafting.combination(
         "gtceu:restonia_empowered_block",
         "gtceu:restonia_block", ["gtceu:red_alloy_ingot", "gtceu:almandine_gem", Item.of("gtceu:glass_vial", '{Fluid:{Amount:1000,FluidName:"gtceu:sulfuric_acid"}}').weakNBT(), "extendedcrafting:the_ultimate_component"],
@@ -269,6 +271,37 @@ ServerEvents.recipes(event => {
         "gtceu:void_empowered_block",
         "gtceu:void_block", ["gtceu:black_quartz_gem", "gtceu:dark_steel_ingot", Item.of("gtceu:fluid_cell", '{Fluid:{Amount:1000,FluidName:"gtceu:oil"}}').strongNBT(), "extendedcrafting:advanced_component"],
         4000000, 400000
+    )
+
+    // Heavy Platings
+    event.recipes.extendedcrafting.combination(
+        "kubejs:quantum_fluxed_eternium_heavy_plating",
+        "gtceu:cryococcus_plate", ["2x redstone_arsenal:flux_plating", "3x kubejs:quantum_flux"],
+        1600000, 160000
+    )
+
+    event.recipes.extendedcrafting.combination(
+        "kubejs:universe_resistant_neutronium_heavy_plating",
+        "gtceu:neutronium_plate", ["gtceu:omnium_nugget", "3x gtceu:quantum_eye"],
+        4000000, 400000
+    )
+
+    event.recipes.extendedcrafting.combination(
+        "kubejs:elementally_infused_omnic_matrix_heavy_plating",
+        "gtceu:omnium_plate", ["2x gtceu:crystal_matrix_plate", "gtceu:gravi_star", "gtceu:neutron_reflector", "3x kubejs:primal_mana"],
+        10000000, 1000000
+    )
+
+    event.recipes.extendedcrafting.combination(
+        "kubejs:dimensionally_stabilized_infinity_heavy_plating",
+        "gtceu:infinity_plate", ["2x gtceu:activated_netherite_plate", "kubejs:quasi_stable_neutron_star", "2x gtceu:neutron_reflector", "2x kubejs:the_ultimate_material"],
+        16000000, 1600000
+    )
+
+    event.recipes.extendedcrafting.combination(
+        "kubejs:timeless_monic_heavy_plating",
+        "gtceu:monium_plate", ["kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "kubejs:contained_singularity"],
+        536870912, 53687091
     )
 
     // Luminessence

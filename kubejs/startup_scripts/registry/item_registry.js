@@ -154,10 +154,8 @@ StartupEvents.registry("item", event => {
 
 
     // Endgame Items
-    event.create("diamond_lattice")
     event.create("neutron_emitter")
-    event.create("ultimate_gem").displayName("§dUltimate Gem").glow(true)
-    event.create("mote_of_omnium").displayName("Mote of Omnium")
+    event.create("mote_of_omnium").displayName("Mote of Raw Omnium")
         .glow(true).rarity("epic")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
     event.create("exotic_materials_catalyst").displayName("Exotic Materials Catalyst")
@@ -190,6 +188,19 @@ StartupEvents.registry("item", event => {
     event.create("infinity_screwdriver").rarity("epic").maxStackSize(1)
     event.create("infinity_wrench").rarity("epic").maxStackSize(1)
     event.create("infinity_wire_cutter").rarity("epic").maxStackSize(1)
+
+    // Optical Circuit intermediates
+    event.create("sapphire_seed_crystal")
+    event.create("sapphire_boule")
+    event.create("sapphire_wafer")
+    event.create("coated_sapphire_wafer")
+    event.create("engraved_sapphire_wafer")
+    event.create("incomplete_sapphire_wafer")
+    event.create("completed_optical_wafer")
+    event.create("optical_chip")
+    event.create("electro_optic_modulator")
+    event.create("carbon_mesh_reinforced_circuit_board")
+    event.create("carbon_mesh_reinforced_printed_circuit_board")
 
 
     // Solidified Elements
@@ -232,8 +243,7 @@ StartupEvents.registry("item", event => {
         ["uranium", "#1d891d"],
         ["curium", "#58307f"],
         ["californium", "#7d0222"],
-        ["americium", "#287869"],
-        ["oganesson", "#443936"]
+        ["americium", "#287869"]
     ]
 
     for (const [element, elemColor] of stabilized_elements) {
@@ -348,28 +358,26 @@ StartupEvents.registry("item", event => {
 
 
     // Nethline intermediate products
-    event.create("purified_ancient_debris_dust").texture("kubejs:item/netherite/purified_ancient_debris_dust")
-    event.create("processed_ancient_debris_dust").texture("kubejs:item/netherite/processed_ancient_debris_dust")
-    event.create("inert_netherite_scrap").texture("kubejs:item/netherite/inert_netherite_scrap")
+    event.create("dusty_netherite_cluster").texture("kubejs:item/netherite/dusty_netherite_cluster")
+    event.create("ardite_sponge").texture("kubejs:item/ardite/ardite_sponge")
+    event.create("netherite_cluster").texture("kubejs:item/netherite/netherite_cluster")
+    event.create("netherite_shards").texture("kubejs:item/netherite/netherite_shards")
+    event.create("reactive_netherite_cluster").texture("kubejs:item/netherite/reactive_netherite_cluster")
+    event.create("activated_netherite_scrap").texture("kubejs:item/netherite/pure_netherite_scrap").glow(true);
     event.create("inert_nether_compound_ingot").texture("kubejs:item/netherite/inert_nether_compound_ingot")
 
     // Solid Naquadah Fuel Line
     event.create("empty_fuel_rod").texture("kubejs:item/naquadah/empty_fuel_rod")
+    event.create("naquadah_fuel_mixture_dust").texture("kubejs:item/naquadah/naquadah_fuel_mixture_dust")
+    event.create("unsintered_naquadah_fuel_pellet").texture("kubejs:item/naquadah/unsintered_naquadah_fuel_pellet")
     event.create("naquadah_fuel_pellet").texture("kubejs:item/naquadah/naquadah_fuel_pellet")
     event.create("naquadah_fuel_rod").texture("kubejs:item/naquadah/naquadah_fuel_rod")
+    event.create("hot_naquadah_fuel_rod").texture("kubejs:item/naquadah/hot_naquadah_fuel_rod")
     event.create("hot_depleted_naquadah_fuel_rod").texture("kubejs:item/naquadah/hot_depleted_naquadah_fuel_rod")
     event.create("depleted_naquadah_fuel_rod").texture("kubejs:item/naquadah/depleted_naquadah_fuel_rod")
-    event.create("unsintered_naquadah_fuel_pellet").texture("kubejs:item/naquadah/unsintered_naquadah_fuel_pellet")
     event.create("depleted_naquadah_fuel_pellet").texture("kubejs:item/naquadah/depleted_naquadah_fuel_pellet")
-    event.create("naquadah_fuel_dust").texture("kubejs:item/naquadah/naquadah_fuel_dust")
-    event.create("naquadah_fuel_primer_dust").texture("kubejs:item/naquadah/naquadah_fuel_primer_dust")
     event.create("naquadah_waste").texture("kubejs:item/naquadah/naquadah_waste")
-    event.create("inactivated_naquadah_fuel_dust").texture("kubejs:item/naquadah/inactivated_naquadah_fuel_dust")
     event.create("depleted_naquadah_fuel_dust").texture("kubejs:item/naquadah/depleted_naquadah_fuel_dust")
-    event.create("crude_naquadah_fuel_blend").texture("kubejs:item/naquadah/crude_naquadah_fuel_blend")
-    event.create("hot_naquadah_fuel_crystal").texture("kubejs:item/naquadah/hot_naquadah_fuel_crystal")
-    event.create("naquadah_fuel_crystal").texture("kubejs:item/naquadah/naquadah_fuel_crystal")
-    event.create("naquadah_fuel_mixture_dust").texture("kubejs:item/naquadah/naquadah_fuel_mixture_dust")
 
     // Crystal Matrix Line
     event.create("raw_nanotube_substrate").texture("kubejs:item/matrix/raw_nanotube_substrate")
@@ -403,8 +411,8 @@ StartupEvents.registry("item", event => {
     event.create("crushed_capacitor")
     event.create("magnetic_capacitor_dust")
     event.create("crushed_sensor")
-    event.create("holmium_compound")
-    event.create("holmium_oxide_glass_dust")
+    event.create("necrosiderite_compound")
+    event.create("necrosiderite_oxide_glass_dust")
 
 
     // Eltz metal processing intermediate products
@@ -468,11 +476,11 @@ StartupEvents.registry("item", event => {
             .textureJson({ layer0: `kubejs:item/circuits/${theme}_circuit_board` })
     }
 
-    Unit("matter")
-    Circuit("matter", "processor", "zpm")
-    Circuit("matter", "processor_assembly", "uv")
-    Circuit("matter", "processor_computer", "uhv")
-    Mainframe("matter", "uev")
+    Unit("optical")
+    Circuit("optical", "processor", "zpm")
+    Circuit("optical", "processor_assembly", "uv")
+    Circuit("optical", "processor_computer", "uhv")
+    Mainframe("optical", "uev")
 
     Unit("dimensional")
     Circuit("dimensional", "processor", "uv")
@@ -528,4 +536,10 @@ StartupEvents.registry("item", event => {
 
     // Phantom Paste
     event.create("framedblocks:phantom_paste")
+
+    // Priscore Line
+    event.create("chromatically_reactive_cluster").displayName("Chromatically Reactive Cluster")
+    event.create("chromatically_reactive_shard").displayName("Chromatically Reactive Shard")
+    event.create("chromatically_inert_frame").displayName("Chromatically Inert Frame")
+    event.create("inert_prismatic_core").displayName("Inert Prismatic Core")
 })

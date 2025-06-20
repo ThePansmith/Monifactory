@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 
     // WIP: Post Tank Boule
     event.recipes.gtceu.electric_blast_furnace("universe_doped_boule")
-        .itemInputs("kubejs:heart_of_a_universe", "64x gtceu:silicon_block", "16x kubejs:stabilized_oganesson")
+        .itemInputs("kubejs:heart_of_a_universe", "64x gtceu:silicon_block", "16x kubejs:stabilized_einsteinium")
         .inputFluids("kubejs:molten_pyrotheum 16000")
         .itemOutputs("kubejs:universe_boule")
         .duration(18000)
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.circuit_assembler("activated_hyperdynamic_ram_chip")
-        .itemInputs("4x kubejs:hyperdynamic_ram_chip_base", "2x kubejs:matter_processing_unit", "4x gtceu:advanced_smd_transistor", "12x gtceu:fine_holmium_wire")
+        .itemInputs("4x kubejs:hyperdynamic_ram_chip_base", "2x kubejs:matter_processing_unit", "4x gtceu:advanced_smd_transistor", "12x gtceu:fine_necrosiderite_wire")
         .inputFluids("gtceu:soldering_alloy 144")
         .itemOutputs("4x kubejs:hyperdynamic_ram_chip")
         .cleanroom(CleanroomType.CLEANROOM)
@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.circuit_assembler("activated_hyperdynamic_ram_chip_complex")
-        .itemInputs("4x kubejs:hyperdynamic_ram_chip_base", "2x kubejs:matter_processing_unit", "1x kubejs:complex_smd_transistor", "12x gtceu:fine_holmium_wire")
+        .itemInputs("4x kubejs:hyperdynamic_ram_chip_base", "2x kubejs:matter_processing_unit", "1x kubejs:complex_smd_transistor", "12x gtceu:fine_necrosiderite_wire")
         .inputFluids("gtceu:soldering_alloy 144")
         .itemOutputs("4x kubejs:hyperdynamic_ram_chip")
         .cleanroom(CleanroomType.CLEANROOM)

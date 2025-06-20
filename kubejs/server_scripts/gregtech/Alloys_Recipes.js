@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
         .EUt(1920)
 
     event.recipes.gtceu.mixer("kubejs:signalum_dust")
-        .itemInputs("4x #forge:dusts/annealed_copper", "2x #forge:dusts/ardite", "2x #forge:dusts/red_alloy", "kubejs:destabilized_clathrate")
+        .itemInputs("4x #forge:dusts/annealed_copper", "2x #forge:dusts/red_steel", "2x #forge:dusts/red_alloy", "kubejs:destabilized_clathrate")
         .itemOutputs("9x gtceu:signalum_dust")
         .inputFluids(Fluid.of("gtceu:mana", 1000))
         .duration(300)
@@ -165,15 +165,16 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(1920)
 
-    event.recipes.gtceu.mixer("kubejs:ardite_dust")
-        .itemInputs("3x gtceu:red_steel_dust", "minecraft:blaze_powder")
-        .itemOutputs("4x gtceu:ardite_dust")
-        .duration(200)
-        .EUt(30)
-
     event.recipes.gtceu.mixer("kubejs:manyullyn_dust")
         .itemInputs("4x gtceu:ardite_dust", "4x gtceu:cobalt_dust")
         .itemOutputs("9x gtceu:manyullyn_dust")
+        .inputFluids(Fluid.of("gtceu:mana", 1000))
+        .duration(400)
+        .EUt(30)
+
+    event.recipes.gtceu.mixer("kubejs:fluxed_ardite_dust")
+        .itemInputs("4x gtceu:ardite_dust", "2x gtceu:electrum_flux_dust")
+        .itemOutputs("7x gtceu:fluxed_ardite_dust")
         .inputFluids(Fluid.of("gtceu:mana", 1000))
         .duration(400)
         .EUt(30)

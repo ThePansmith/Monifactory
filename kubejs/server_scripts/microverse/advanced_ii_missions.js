@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
                 "4x gtceu:uhv_electric_pump",
                 "8x kubejs:shattered_star_data"
             )
-            .itemOutputs("32x kubejs:stabilized_oganesson")
+            .itemOutputs("32x kubejs:stabilized_einsteinium")
     })
 
     // T6MM mission (Previously HM-exclusive, no problem with making it available in NM)
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
                 "16x kubejs:quantum_flux",
                 "16x kubejs:stabilized_curium",
                 "kubejs:microversal_alchemy_kit",
-                "8x gtceu:manyullyn_ingot",
+                "8x gtceu:mythril_ingot",
                 "4x gtceu:void_empowered_block",
             )
             .itemOutputs(

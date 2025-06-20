@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 11, 4).forEach(builder => {
         builder
             .itemInputs(
-                "16x gtceu:holmium_block",
+                "16x gtceu:necrosiderite_block",
                 "8x gtceu:network_switch",
                 "8x gtceu:data_bank",
                 "16x gtceu:advanced_data_access_hatch",

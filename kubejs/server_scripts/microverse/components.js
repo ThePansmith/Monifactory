@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:infinity_frame",
             "4x kubejs:universal_navigator",
             "4x gtceu:uev_field_generator",
-            "24x gtceu:holmium_plate",
+            "24x gtceu:necrosiderite_plate",
             "4x #gtceu:circuits/uiv",
             "2x gtceu:uiv_sensor",
             "2x gtceu:uiv_emitter",

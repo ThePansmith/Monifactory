@@ -2,6 +2,9 @@
   "framedblocks": {
     "framed_item_frame": true
   },
+  "monilabs": {
+    "color_info": true
+  },
   "enderchests": {
     "hud": true
   },
@@ -57,6 +60,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "gtmutils": {
+    "pterb_info": true
+  },
   "endertanks": {
     "hud.basic": true,
     "hud": true,
@@ -68,6 +74,7 @@
     "auto_output_info": true,
     "workable_provider": true,
     "transformer": true,
+    "energy_converter_provider": true,
     "controllable_provider": true,
     "me_pattern_buffer": true,
     "exhaust_vent_info": true,
