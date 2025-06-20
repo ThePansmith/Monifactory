@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     // T9MM mission
     microverse_mission(event, 9, 4).forEach(builder => {
         builder
-            .inputFluids("gtceu:nitrogen_plasma 15000")
+            .inputFluids("gtceu:helium_plasma 15000")
             .itemInputs("gtceu:data_module", "gtceu:uev_sensor")
             .itemInputs("kubejs:shattered_universe_data", "64x kubejs:shattered_star_data")
             .itemOutputs("kubejs:corrupted_universe_data")

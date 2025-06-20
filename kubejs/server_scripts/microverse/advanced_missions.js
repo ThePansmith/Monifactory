@@ -79,7 +79,9 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:wrought_iron_drill_head")
             .itemOutputs(
                 "64x gtceu:raw_thorium",
-                "48x gtceu:raw_thorium",
+                "64x gtceu:raw_thorium",
+                "64x gtceu:raw_thorium",
+                "16x gtceu:raw_thorium",
                 "32x gtceu:raw_pitchblende",
             )
     })

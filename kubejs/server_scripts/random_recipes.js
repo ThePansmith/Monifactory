@@ -689,20 +689,6 @@ ServerEvents.recipes(event => {
     // Electrum
     event.replaceInput({ id: /redstone_arsenal/ }, "redstone_arsenal:flux_metal_block", "gtceu:electrum_flux_block")
 
-    // Americium Plasma
-    event.recipes.gtceu.fusion_reactor("americium_plasma")
-        .inputFluids("gtceu:plutonium_241 144", "gtceu:hydrogen 2000")
-        .outputFluids("gtceu:americium_plasma 144")
-        .duration(64)
-        .EUt(98304)
-        .fusionStartEU(500000000)
-
-    event.recipes.gtceu.plasma_generator("americium_plasma_generator")
-        .inputFluids("gtceu:americium_plasma 1")
-        .outputFluids("gtceu:americium 1")
-        .duration(320)
-        .EUt(-2048)
-
     // Advanced Soldering Alloy
     event.recipes.gtceu.mixer("soldering_alloy")
         .itemInputs("15x gtceu:bismuth_dust", "11x gtceu:tin_dust", "9x gtceu:zinc_dust", "4x gtceu:germanium_dust")
