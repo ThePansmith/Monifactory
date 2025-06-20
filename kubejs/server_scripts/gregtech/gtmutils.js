@@ -11,13 +11,13 @@ ServerEvents.recipes(event => {
     }
 
     event.recipes.gtceu.assembly_line("sterile_cleaning_maintenance_hatch")
-        .itemInputs("gtceu:cleaning_maintenance_hatch", "32x gtceu:double_eltz_plate", "64x gtceu:fine_holmium_wire", "64x gtceu:fine_holmium_wire", "16x gtceu:long_neutronium_rod", "12x gtceu:blacklight", "4x gtceu:uiv_fluid_regulator", "4x gtceu:uev_field_generator", "4x #gtceu:circuits/uiv")
+        .itemInputs("gtceu:auto_maintenance_hatch", "2x gtceu:uev_robot_arm", "6x gtceu:eltz_spring", "32x gtceu:fine_holmium_wire", "4x gtceu:neutronium_normal_fluid_pipe", "2x gtceu:blacklight", "1x gtceu:uev_field_generator", "4x #gtceu:circuits/uev")
         .inputFluids("gtceu:soldering_alloy 11520", "gtceu:lubricant 4000", "gtceu:crystal_matrix 5760", "gtceu:naquadria 2304")
         .itemOutputs("gtmutils:sterile_cleaning_maintenance_hatch")
-        .EUt(GTValues.VA[GTValues.UXV])
+        .EUt(GTValues.VA[GTValues.UIV])
         .duration(400)
         .stationResearch(b => b
             .researchStack("gtceu:cleaning_maintenance_hatch")
             .CWUt(128, 512000)
-            .EUt(524288))
+            .EUt(GTValues.VA[GTValues.UHV]))
 })
