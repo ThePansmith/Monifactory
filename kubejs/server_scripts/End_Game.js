@@ -190,17 +190,19 @@ ServerEvents.recipes(event => {
     // Sculk Superconductor Wire
     event.recipes.gtceu.vacuum_freezer("sculk_superconductor")
         .itemInputs("gtceu:cryococcus_ingot")
-        .itemOutputs("gtceu:sculk_superconductor_ingot")
+        .itemOutputs("gtceu:sculk_superconductor_double_wire")
         .inputFluids(Fluid.of("gtceu:nether_star", 144))
         .duration(100)
-        .EUt(6000)
+        .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.vacuum_freezer("hyperdegenerate_darconite")
+    event.recipes.gtceu.electric_blast_furnace("hyperdegenerate_darconite")
         .itemInputs("gtceu:darconite_ingot")
-        .itemOutputs("gtceu:hyperdegenerate_darconite_ingot")
+        .notConsumable("gtceu:wire_extruder_mold")
+        .itemOutputs("gtceu:hyperdegenerate_darconite_double_wire")
         .inputFluids(Fluid.of("gtceu:hyperdegenerate_matter", 40))
         .duration(100)
-        .EUt(60000)
+        .EUt(GTValues.VA[GTValues.ZPM])
+        .blastFurnaceTemp(10600)
 
     // Chemical Reactor
 

@@ -55,9 +55,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x6442fb).secondaryColor(0x26872b)
         .iconSet("metallic") // "hyperdegenerate"
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
-        .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
+        .components("3x darmstadtium", "4x cobalt", "2x nitrogen", "1x hyperdegenerate_matter")
         .cableProperties(GTValues.V[GTValues.UIV], 1, 0, true)
-        .flags(GTMaterialFlags.DISABLE_ALLOY_BLAST)
+        .flags(GTMaterialFlags.DISABLE_ALLOY_BLAST, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     // UIV GT Supercon
     event.create("eltic_neptunium_antimony_terbium_germanium_carbide")
