@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
                 "4x gtceu:uhv_electric_pump",
                 "8x kubejs:shattered_star_data"
             )
-            .itemOutputs("32x kubejs:stabilized_einsteinium")
+            .outputFluids("gtceu:einsteinium 32000")
     })
 
     // T6MM mission (Previously HM-exclusive, no problem with making it available in NM)
