@@ -144,16 +144,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
 
-    // Antimatter Collider
-    event.create("anti_collider")
-        .category("multiblock")
-        .setEUIO("out")
-        .setMaxIOSize(2,0,0,0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.JET_ENGINE)
-
-    const MoniRecipeTypes = Java.loadClass("net.neganote.monilabs.gtbridge.MoniRecipeTypes")
+    // Recipe types for coremod multis
     MoniRecipeTypes.createPrismaCRecipeType("chromatic_processing")
     MoniRecipeTypes.createPrismaCRecipeType("chromatic_transcendence")
 
@@ -1113,15 +1104,14 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .recipeModifiers([MoniRecipeModifiers.antiMatterManipulatorRecipeModifier(), GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock("kubejs:bioalloy_casing"))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle(" #O# ", "  O  ", "     ", "     ", "     ", "     ", "     ", "     ")
-            .aisle("#####", " BOB ", " BBB ", "  F  ", "  F  ", "  F  ", "  F  ", " BBB ")
-            .aisle("O###O", "OOSOO", " BSB ", " FSF ", " FSF ", " FSF ", " FSF ", " BCB ")
-            .aisle("#####", " BOB ", " B@B ", "  F  ", "  F  ", "  F  ", "  F  ", " BBB ")
-            .aisle(" #O# ", "  O  ", "     ", "     ", "     ", "     ", "     ", "     ")
+            .aisle("#MOM#", "##O##", "#####", "#####", "#####", "#####", "#####", "#####")
+            .aisle("MMMMM", "#BOB#", "#BBB#", "##F##", "##F##", "##F##", "##F##", "#BBB#")
+            .aisle("OMMMO", "OOSOO", "#BSB#", "#FSF#", "#FSF#", "#FSF#", "#FSF#", "#BCB#")
+            .aisle("MMMMM", "#BOB#", "#B@B#", "##F##", "##F##", "##F##", "##F##", "#BBB#")
+            .aisle(" MOM ", "##O##", "#####", "#####", "#####", "#####", "#####", "#####")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .where("O", Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))
-            .where("B", 
-                Predicates.blocks("kubejs:bioalloy_casing")
+            .where("B", Predicates.blocks("kubejs:bioalloy_casing")
                     .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
@@ -1131,8 +1121,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("S", Predicates.blocks(GTBlocks.SUPERCONDUCTING_COIL.get()))
             .where("F", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
             .where("C", Predicates.blocks("kubejs:enderium_micro_miner_core"))
-            .where(" ", Predicates.any())
-            .where("#", Predicates.blocks(GTBlocks.CASING_HSSE_STURDY.get()))
+            .where("#", Predicates.any())
+            .where("M", Predicates.blocks(GTBlocks.CASING_HSSE_STURDY.get()))
             .build())
         .workableCasingRenderer("kubejs:block/bioalloy/casing", 
             "gtceu:block/multiblock/implosion_compressor")

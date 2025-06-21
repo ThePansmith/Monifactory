@@ -1,0 +1,18 @@
+values:
+  # The exponent used each time the Omnic Synthesizer performs an operation.
+  omnicSynthesizerExponent: 1.557
+
+  # Minimum multiplier to antimatter generation (inclusive).
+  antimatterRandomMinInclusive: 0.5
+
+  # Maximum multiplier to antimatter generation (exclusive).
+  antimatterRandomMaxExclusive: 2.0
+
+  # Maximum multiplier to antimatter generation (exclusive).
+  euPerAntimatterMillibucket: 8388608
+
+  # Fluid ID for the antimatter fuel.
+  antimatterFuelID: kubejs:antimatter_fuel
+
+  # Fluid ID for the matter to annihilate with the antimatter fuel.
+  annihilatableMatterID: gtceu:neutronium

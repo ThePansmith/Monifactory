@@ -70,10 +70,4 @@ ServerEvents.recipes(event => {
             .CWUt(96, 28800)
             .EUt(GTValues.VA[GTValues.UV])
         )
-
-    // Powergen Recipes
-    event.recipes.gtceu.anti_collider("annihilation_neutronium")
-        .inputFluids("kubejs:antimatter_fuel 100", "gtceu:neutronium 100")
-        .duration(1)
-        .EUt(-GTValues.V[GTValues.MAX])
 })
