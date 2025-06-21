@@ -1055,6 +1055,40 @@
 			x: 4.0d
 			y: -1.0d
 		}
+		{
+			dependencies: ["0ED041E2114F7C84"]
+			description: [
+				"{moni.quest.5EE2338113F22952.description1}"
+				""
+				"{moni.quest.5EE2338113F22952.description2}"
+				""
+				"{moni.quest.5EE2338113F22952.description3}"
+				""
+				"{moni.quest.5EE2338113F22952.description4}"
+			]
+			id: "5EE2338113F22952"
+			tasks: [{
+				id: "0AFCD5A8CB53424F"
+				item: "gtceu:antimatter_collider"
+				type: "item"
+			}]
+			title: "{moni.quest.5EE2338113F22952.title}"
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5EE2338113F22952"]
+			id: "4834AF5189F0AB37"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "34DF3E0D12FE0A8D"
+				type: "checkmark"
+			}]
+			title: " "
+			x: 12.0d
+			y: -3.0d
+		}
 	]
 	title: "{moni.chapter.0102198269F850CD.title}"
 }
