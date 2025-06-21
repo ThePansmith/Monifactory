@@ -805,9 +805,6 @@ ServerEvents.recipes(event => {
         B: "gtceu:crystal_matrix_plate"
     }).id("kubejs:mega/fluid_cell_housing")
 
-    event.remove({ id: "megacells:cells/standard/bulk_item_cell" }) // recipe in SDA
-    event.remove({ id: "megacells:crafting/bulk_cell_component" })
-
     event.remove({ id: "megacells:network/cell_dock" })
     event.recipes.gtceu.assembler("kubejs:mega/cell_dock")
         .itemInputs("4x gtceu:stainless_steel_plate", "8x gtceu:aluminium_plate", "gtceu:mv_emitter", "gtceu:mv_sensor", "2x #gtceu:circuits/mv")

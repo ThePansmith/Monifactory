@@ -198,7 +198,6 @@ global.itemNukeList = [
 
     // Megacells
     "megacells:mega_crafting_accelerator",
-    "megacells:bulk_storage_component",
     /^megacells:.*mega_interface$/,
     /^megacells:.*mega_pattern_provider$/,
     /^megacells:sky_steel/,
