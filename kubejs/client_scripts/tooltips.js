@@ -245,7 +245,7 @@ ItemEvents.tooltip(tooltip => {
     // NuclearCraft
     tooltip.add("nuclearcraft:rhodochrosite_dust", "§eMnCO₃");
     tooltip.add("nuclearcraft:tough_alloy_ingot", "§eLiFeB");
-    tooltip.add("nuclearcraft:ferroboron_ingot", "§eFeB");
+    tooltip.add("nuclearcraft:ferroboron_ingot", "§eFe₄B");
     tooltip.add("nuclearcraft:hard_carbon_ingot", "§eFe₃C");
     tooltip.add("nuclearcraft:uranium_233", "§eU²³³");
     tooltip.add("nuclearcraft:plutonium_238", "§ePu²³⁸");

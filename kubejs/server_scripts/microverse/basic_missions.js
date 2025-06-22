@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
                 "32x gtceu:raw_cassiterite",
                 "64x gtceu:raw_chalcopyrite",
                 "48x gtceu:raw_chalcopyrite",
-                "16x gtceu:raw_realgar",
+                "16x gtceu:raw_zeolite",
             )
     })
 
@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "64x gtceu:raw_goethite",
                 "32x gtceu:raw_goethite",
-                "64x gtceu:raw_hematite",
+                "64x gtceu:raw_cobaltite",
                 "48x gtceu:raw_malachite",
             )
     })
@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:cobalt_brass_drill_head")
             .itemOutputs(
                 "48x gtceu:raw_tetrahedrite",
-                "32x gtceu:raw_cobaltite",
+                "24x gtceu:raw_realgar",
                 "8x gtceu:raw_magnesite",
                 "16x gtceu:raw_sphalerite",
                 "20x gtceu:raw_stibnite",

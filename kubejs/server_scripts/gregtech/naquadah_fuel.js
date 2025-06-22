@@ -216,14 +216,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.fusion_reactor("exotic_particle_activation")
-        .inputFluids("gtceu:purified_heavy_residue 50", "gtceu:einsteinium 150")
+        .inputFluids("gtceu:purified_heavy_residue 50", "gtceu:americium 150")
         .outputFluids("gtceu:exotic_particle_solution 50")
         .duration(128)
         .EUt(GTValues.VA[GTValues.UV])
         .fusionStartEU(200000000)
 
     event.recipes.gtceu.fusion_reactor("hyperdegenerate_activation")
-        .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:americium_plasma 144")
+        .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:einsteinium 144")
         .outputFluids("gtceu:hyperdegenerate_matter 25")
         .duration(128)
         .EUt(GTValues.VA[GTValues.UHV])
