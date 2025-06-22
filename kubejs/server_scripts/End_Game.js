@@ -445,7 +445,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:chromodynamic_conduction_casing")
         .duration(50)
         .EUt(GTValues.VHA[GTValues.UV])
-  
     // Coils
     event.recipes.gtceu.assembler("kubejs:omnic_matrix_coil")
         .itemInputs("8x gtceu:omnium_double_wire", "8x gtceu:crystal_matrix_foil")
