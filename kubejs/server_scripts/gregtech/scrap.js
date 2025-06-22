@@ -6,10 +6,10 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.sifter("scrap_sifting")
         .itemInputs("kubejs:alien_scrap")
         .itemOutputs("kubejs:ruined_machine_parts")
-        .chancedOutput("kubejs:ruined_machine_parts", 3300, 200)
+        .chancedOutput("kubejs:ruined_machine_parts", 4500, 0)
         .itemOutputs("kubejs:ruined_hull")
-        .chancedOutput("kubejs:ruined_hull", 5000, 200)
-        .chancedOutput("kubejs:ruined_hull", 3300, 200)
+        .chancedOutput("kubejs:ruined_hull", 6600, 0)
+        .chancedOutput("kubejs:ruined_hull", 5000, 0)
         .chancedOutput("gtceu:ruthenium_trinium_americium_neutronate_dust", 3300, 0)
         .duration(400)
         .EUt(16380)
@@ -50,14 +50,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electromagnetic_separator("alien_scrap_supercap_electro")
         .itemInputs("kubejs:crushed_capacitor")
         .chancedOutput("kubejs:magnetic_capacitor_dust", 9500, 0)
-        .chancedOutput("gtceu:carbon_dust", 3300, 850) // Finally, an easy way to get carbon!
+        .chancedOutput("gtceu:carbon_dust", 6600, 0) // Finally, an easy way to get carbon!
         .duration(100)
         .EUt(16380)
 
     event.recipes.gtceu.centrifuge("alien_scrap_supercap_dust_centrifuge")
         .itemInputs("5x kubejs:magnetic_capacitor_dust")
         .itemOutputs("gtceu:necrosiderite_dust")
-        .chancedOutput("gtceu:iron_dust", 3300, 850)
+        .chancedOutput("gtceu:iron_dust", 6600, 0)
         .duration(100)
         .EUt(16380)
 
@@ -66,14 +66,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.macerator("alien_scrap_sensor_crushing")
         .itemInputs("kubejs:ruined_sensor")
         .chancedOutput("kubejs:crushed_sensor", 9500, 0)
-        .chancedOutput("gtceu:neutronium_dust", 3300, 850)
+        .chancedOutput("gtceu:neutronium_dust", 6600, 0)
         .duration(600)
         .EUt(16380)
 
     event.recipes.gtceu.thermal_centrifuge("alien_scrap_sensor_centrifuge")
         .itemInputs("kubejs:crushed_sensor")
         .chancedOutput("kubejs:necrosiderite_compound", 9500, 0)
-        .chancedOutput("gtceu:silver_dust", 3300, 850)
+        .chancedOutput("gtceu:silver_dust", 6600, 0)
         .duration(600)
         .EUt(16380)
 
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.macerator("alien_scrap_emitter_crushing")
         .itemInputs("kubejs:ruined_emitter")
         .chancedOutput("kubejs:necrosiderite_oxide_glass_dust", 9500, 0)
-        .chancedOutput("gtceu:trinium_dust", 3300, 850)
+        .chancedOutput("gtceu:trinium_dust", 6600, 0)
         .duration(400)
         .EUt(16380)
 

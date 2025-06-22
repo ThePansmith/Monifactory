@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             .notConsumable(Item.of("hostilenetworks:data_model", `{data_model:{id:"hostilenetworks:${model}"}}`).weakNBT())
             .itemInputs("hostilenetworks:prediction_matrix")
             .itemOutputs(`hostilenetworks:${prediction}_prediction`)
-            .chancedOutput(Item.of("hostilenetworks:prediction", `{data_model:{id:"hostilenetworks:${model}"}}`), 3000, 500)
+            .chancedOutput(Item.of("hostilenetworks:prediction", `{data_model:{id:"hostilenetworks:${model}"}}`), 5000, 0)
             .duration(15.05 * 20) // same for all recipes
             .EUt(EUt)
     }
