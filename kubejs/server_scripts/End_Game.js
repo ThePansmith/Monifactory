@@ -225,19 +225,6 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
 
-    // Mote of omnium
-    event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
-        .itemInputs("kubejs:mote_of_omnium", "minecraft:tnt")
-        .itemOutputs("gtceu:omnium_nugget")
-        .duration(20)
-        .EUt(30)
-
-    event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget_itnt")
-        .itemInputs("4x kubejs:mote_of_omnium", "gtceu:industrial_tnt")
-        .itemOutputs("4x gtceu:omnium_nugget")
-        .duration(20)
-        .EUt(30)
-
     event.recipes.extendedcrafting.shaped_table("gtceu:zero_point_module", [
         "  PPPPP  ",
         "  PBCBP  ",
@@ -397,7 +384,7 @@ ServerEvents.recipes(event => {
         A: "kubejs:furious_infinity_catalyst",
         B: "gtceu:monium_block",
         C: "kubejs:serene_infinity_catalyst",
-        E: "kubejs:creative_energy_data",
+        E: "solarflux:sp_custom_infinity",
         F: "gtceu:uiv_field_generator",
         G: "gtceu:monium_gear",
         H: "gtceu:max_machine_hull",
@@ -408,7 +395,7 @@ ServerEvents.recipes(event => {
         P: "kubejs:monic_processor_mainframe",
         Q: "kubejs:field_stabilised_omnic_pulsar_compound",
         R: "gtceu:uiv_robot_arm",
-        S: "kubejs:creative_storage_data",
+        S: "megacells:bulk_cell_component",
         T: "kubejs:omnic_data",
         U: "gtceu:subatomic_digital_assembler",
         V: "kubejs:infinity_file",

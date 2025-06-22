@@ -68,38 +68,10 @@ ServerEvents.recipes(event => {
             )
     })
 
-    microverse_mission(event, 11, 4).forEach(builder => {
-        builder
-            .itemInputs(
-                "16x gtceu:necrosiderite_block",
-                "8x gtceu:network_switch",
-                "8x gtceu:data_bank",
-                "16x gtceu:advanced_data_access_hatch",
-                "16x gtceu:computation_receiver_hatch",
-                "64x kubejs:stellar_creation_data"
-            )
-            .itemOutputs("kubejs:creative_computation_data")
-    })
-
     microverse_mission(event, 12, 4).forEach(builder => {
         builder
             .itemInputs("kubejs:field_stabilised_omnic_pulsar_compound", "4x kubejs:universe_creation_data", "64x gtceu:infinity_ingot")
             .itemOutputs("64x gtceu:monium_ingot")
-    })
-
-    microverse_mission(event, 12, 4).forEach(builder => {
-        builder
-            .itemInputs(
-                "16x gtceu:eltz_block",
-                "4x gtceu:max_battery",
-                "2x solarflux:sp_custom_infinity",
-                "gtceu:uiv_4096a_laser_source_hatch",
-                "4x kubejs:universe_creation_data",
-                "64x kubejs:stellar_creation_data",
-                "64x kubejs:stellar_creation_data",
-                "64x kubejs:stellar_creation_data"
-            )
-            .itemOutputs("kubejs:creative_energy_data")
     })
 
     microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UXV]).forEach(builder => {
