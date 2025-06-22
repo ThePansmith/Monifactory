@@ -1,0 +1,93 @@
+/**
+* Omnic Synthesis recipes
+*/
+ServerEvents.recipes(event => {
+    const omnic_synthesis = (item) => {
+        event.recipes.gtceu.omnic_synthesis("omnic_synthesis_from_" + item)
+            .itemInputs(item)
+            .itemOutputs("gtceu:omnium_nugget")
+            .EUt(120000)
+            .duration(2)
+    }
+
+    const elements = [
+        "kubejs:solidified_hydrogen",
+        "kubejs:solidified_helium",
+        "gtceu:lithium_dust",
+        "gtceu:beryllium_ingot",
+        "gtceu:boron_dust",
+        "gtceu:carbon_dust",
+        "kubejs:solidified_nitrogen",
+        "kubejs:solidified_oxygen",
+        "kubejs:solidified_fluorine",
+        "kubejs:solidified_neon",
+        "gtceu:sodium_dust",
+        "gtceu:magnesium_dust",
+        "gtceu:aluminium_ingot",
+        "gtceu:silicon_dust",
+        "gtceu:phosphorus_dust",
+        "gtceu:sulfur_dust",
+        "kubejs:solidified_chlorine",
+        "kubejs:solidified_argon",
+        "gtceu:potassium_dust",
+        "gtceu:calcium_dust",
+        "gtceu:titanium_ingot",
+        "gtceu:vanadium_ingot",
+        "gtceu:chromium_ingot",
+        "gtceu:manganese_ingot",
+        "minecraft:iron_ingot",
+        "gtceu:cobalt_ingot",
+        "gtceu:nickel_ingot",
+        "minecraft:copper_ingot",
+        "gtceu:zinc_ingot",
+        "gtceu:gallium_ingot",
+        "gtceu:germanium_ingot",
+        "gtceu:arsenic_dust",
+        "kubejs:solidified_krypton",
+        "gtceu:yttrium_ingot",
+        "gtceu:niobium_ingot",
+        "gtceu:molybdenum_ingot",
+        "gtceu:ruthenium_ingot",
+        "gtceu:rhodium_ingot",
+        "gtceu:palladium_ingot",
+        "gtceu:silver_ingot",
+        "gtceu:cadmium_dust",
+        "gtceu:indium_ingot",
+        "gtceu:tin_ingot",
+        "gtceu:antimony_ingot",
+        "gtceu:iodine_dust",
+        "kubejs:solidified_xenon",
+        "gtceu:caesium_dust",
+        "gtceu:barium_dust",
+        "gtceu:lanthanum_dust",
+        "gtceu:cerium_dust",
+        "gtceu:neodymium_ingot",
+        "gtceu:samarium_ingot",
+        "gtceu:europium_ingot",
+        "gtceu:terbium_ingot",
+        "gtceu:lutetium_ingot",
+        "gtceu:tantalum_ingot",
+        "gtceu:tungsten_ingot",
+        "gtceu:osmium_ingot",
+        "gtceu:iridium_ingot",
+        "gtceu:platinum_ingot",
+        "minecraft:gold_ingot",
+        "kubejs:solidified_mercury",
+        "gtceu:lead_ingot",
+        "gtceu:bismuth_ingot",
+        "kubejs:solidified_radon",
+        "gtceu:actinium_ingot",
+        "gtceu:thorium_ingot",
+        "kubejs:stabilized_uranium",
+        "kubejs:stabilized_neptunium",
+        "kubejs:stabilized_plutonium",
+        "gtceu:americium_ingot",
+        "kubejs:stabilized_curium",
+        "kubejs:stabilized_berkelium",
+        "kubejs:stabilized_californium",
+        "kubejs:stabilized_einsteinium",
+        "gtceu:darmstadtium_ingot"
+    ];
+
+    elements.forEach(omnic_synthesis);
+})

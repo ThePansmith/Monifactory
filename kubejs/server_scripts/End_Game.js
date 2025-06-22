@@ -225,19 +225,6 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
 
-    // Mote of omnium
-    event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
-        .itemInputs("kubejs:mote_of_omnium", "minecraft:tnt")
-        .itemOutputs("gtceu:omnium_nugget")
-        .duration(20)
-        .EUt(30)
-
-    event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget_itnt")
-        .itemInputs("4x kubejs:mote_of_omnium", "gtceu:industrial_tnt")
-        .itemOutputs("4x gtceu:omnium_nugget")
-        .duration(20)
-        .EUt(30)
-
     event.recipes.extendedcrafting.shaped_table("gtceu:zero_point_module", [
         "  PPPPP  ",
         "  PBCBP  ",
