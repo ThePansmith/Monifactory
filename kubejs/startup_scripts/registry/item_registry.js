@@ -147,8 +147,6 @@ StartupEvents.registry("item", event => {
     // Creative Data
     event.create("omnic_data")
 
-    // Infinity Fluid Cell Base
-
 
     // Endgame Items
     event.create("neutron_emitter")
@@ -157,7 +155,65 @@ StartupEvents.registry("item", event => {
     event.create("eternal_catalyst").displayName("Eternal Catalyst")
 
 
-    // Infinity
+    // INFINITY AND PRISMAC
+
+    // APC
+    event.create("inert_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/0_blank_core")
+    event.create("red_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/1_red_core")
+    event.create("yellow_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/2_yellow_core")
+    event.create("green_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/3_green_core")
+    event.create("cyan_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/4_cyan_core")
+    event.create("blue_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/5_blue_core")
+    event.create("active_prismatic_core").rarity("rare")
+        .texture("kubejs:item/prismac/cores/6_prismatic_core")
+
+    // SPC
+    event.create("orange_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/7_orange_core")
+    event.create("lime_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/8_lime_core")
+    event.create("teal_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/9_teal_core")
+    event.create("azure_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/a_azure_core")
+    event.create("indigo_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/b_indigo_core")
+    event.create("supercritical_prismatic_core").rarity("epic")
+        .texture("kubejs:item/prismac/cores/c_supercritical_prismatic_core")
+
+    // Callibration Devices
+    event.create("chromatic_stabilizer")
+        .texture("kubejs:item/prismac/chromatic_stabilizer")
+
+    event.create("chromatic_capacitor_empty")
+        .texture("kubejs:item/prismac/chromatic_capacitor_empty")
+        .displayName("Chromatic Capacitor: §7Empty§r")
+    event.create("chromatic_capacitor_red")
+        .texture("kubejs:item/prismac/chromatic_capacitor_red")
+        .displayName("Chromatic Capacitor: §4Red§r")
+    event.create("chromatic_capacitor_yellow")
+        .texture("kubejs:item/prismac/chromatic_capacitor_yellow")
+        .displayName("Chromatic Capacitor: §eYellow§r")
+    event.create("chromatic_capacitor_green")
+        .texture("kubejs:item/prismac/chromatic_capacitor_green")
+        .displayName("Chromatic Capacitor: §2Green§r")
+    event.create("chromatic_capacitor_cyan")
+        .texture("kubejs:item/prismac/chromatic_capacitor_cyan")
+        .displayName("Chromatic Capacitor: §bCyan§r")
+    event.create("chromatic_capacitor_blue")
+        .texture("kubejs:item/prismac/chromatic_capacitor_blue")
+        .displayName("Chromatic Capacitor: §1Bluey§r")
+    event.create("chromatic_capacitor_magenta")
+        .texture("kubejs:item/prismac/chromatic_capacitor_magenta")
+        .displayName("Chromatic Capacitor: §dMagenta§r")
+
+    // TODO: scrap those cleanly
     event.create("infinity_catalyst").rarity("epic")
     event.create("dormant_furious_infinity_catalyst")
     event.create("furious_infinity_catalyst").rarity("epic")
@@ -167,7 +223,7 @@ StartupEvents.registry("item", event => {
 
 
     // Monium
-    event.create("field_stabilised_omnic_pulsar_compound")
+    event.create("field_stabilised_omnic_pulsar_compound") // TODO: rename to Field-Stabilized Prismatic Pulsar Compound
     event.create("quasi_stable_neutron_star").displayName("Quasi-Stable Neutron Star")
 
 
@@ -420,6 +476,33 @@ StartupEvents.registry("item", event => {
     event.create("clean_inert_cluster").texture("kubejs:item/eltz/clean_inert_cluster")
     event.create("eltic_crystal_seed").texture("kubejs:item/eltz/eltic_crystal_seed")
 
+    // Photonic SoCs
+    event.create("photonic_soc_base")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_base")
+    event.create("photonic_soc_inert")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_inert")
+        .displayName("Photonic SoC: §7Inert§r")
+    event.create("photonic_soc_red")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_r")
+        .displayName("Photonic SoC: §4Red§r")
+    event.create("photonic_soc_yellow")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_y")
+        .displayName("Photonic SoC: §eYellow§r")
+    event.create("photonic_soc_green")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_g")
+        .displayName("Photonic SoC: §2Green§r")
+    event.create("photonic_soc_cyan")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_c")
+        .displayName("Photonic SoC: §bCyan§r")
+    event.create("photonic_soc_blue")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_b")
+        .displayName("Photonic SoC: §1Blue§r")
+    event.create("photonic_soc_magenta")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_m")
+        .displayName("Photonic SoC: §dMagenta§r")
+    event.create("photonic_soc_active")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_active")
+        .displayName("Photonic SoC: Active")
 
     // Post-Tank Wafer items
     event.create("uxpic_wafer").texture("kubejs:item/uxpic/uxpic_wafer").displayName("UXPIC Wafer")
