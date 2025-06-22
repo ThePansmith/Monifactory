@@ -183,7 +183,6 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.2"))
         text.add(4, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.3"))
         text.add(5, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.4"))
-        text.add(6, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.5"))
     })
 
     // Parallel hatches

@@ -173,6 +173,13 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setMaxIOSize(0, 0, 1, 1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL)
+
+    event.create("anti_collider")
+        .category("multiblock")
+        .setEUIO("out")
+        .setMaxIOSize(1,0,2,0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.ALWAYS_FULL)
+        .setIconSupplier(() => GTMachines.get("antimatter_collider").asStack())
 })
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
