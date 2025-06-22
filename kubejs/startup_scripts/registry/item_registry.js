@@ -469,11 +469,6 @@ StartupEvents.registry("item", event => {
     event.create("clean_inert_cluster").texture("kubejs:item/eltz/clean_inert_cluster")
     event.create("eltic_crystal_seed").texture("kubejs:item/eltz/eltic_crystal_seed")
 
-    // P.R.I.S.M.
-    event.create("red_aligned_glass")
-    event.create("green_aligned_glass")
-    event.create("blue_aligned_glass")
-
     // Photonic SoCs
     event.create("photonic_soc_base")
         .texture("kubejs:item/prismac/opticals/photonic_soc_base")

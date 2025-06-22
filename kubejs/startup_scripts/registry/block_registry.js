@@ -210,7 +210,7 @@ StartupEvents.registry("block", event => {
         .soundType("metal")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe").requiresTool(true)
-        .textureAll("kubejs:block/microverse/starry_diamond_block");
+        .textureAll("kubejs:block/microverse/starry_diamond_block")
 
     event.create("dust", "falling")
         .soundType("sand")
@@ -235,6 +235,27 @@ StartupEvents.registry("block", event => {
         .tag("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
+
+    event.create("red_aligned_glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/prismac/red_aligned_glass")
+
+    event.create("green_aligned_glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/prismac/green_aligned_glass")
+
+    event.create("blue_aligned_glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/prismac/blue_aligned_glass")
 
     event.create("prism_glass")
         .displayName("P.R.I.S.M. Glass")
