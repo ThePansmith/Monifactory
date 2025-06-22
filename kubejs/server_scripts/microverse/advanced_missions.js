@@ -203,8 +203,8 @@ ServerEvents.recipes(event => {
             .itemInputs("32x kubejs:stabilized_plutonium")
             .itemInputs("kubejs:microversal_alchemy_kit")
             .itemInputs("32x kubejs:wither_realm_data")
-            .outputFluids(
-                "gtceu:einsteinium 16000",
+            .itemOutputs(
+                "16x kubejs:stabilized_einsteinium",
             )
     })
 

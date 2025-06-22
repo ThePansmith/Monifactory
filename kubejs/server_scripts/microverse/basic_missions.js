@@ -186,10 +186,11 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:rocket_fuel 3000")
             .itemInputs("kubejs:microversal_alchemy_kit")
             .itemInputs("16x kubejs:cryotheum_dust")
-            .outputFluids(
-                "gtceu:neon 16000",
-                "gtceu:krypton 16000",
-                "gtceu:argon 16000",
+            .itemOutputs(
+                "16x kubejs:solidified_neon",
+                "16x kubejs:solidified_krypton",
+                "16x kubejs:solidified_xenon",
+                "16x kubejs:solidified_argon",
             )
     })
 
