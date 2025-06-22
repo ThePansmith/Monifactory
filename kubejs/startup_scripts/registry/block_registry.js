@@ -251,6 +251,7 @@ StartupEvents.registry("block", event => {
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
         .textureAll("kubejs:block/prismac/red_aligned_glass")
+        .defaultCutout()
 
     event.create("green_aligned_glass")
         .soundType("glass")
@@ -258,6 +259,7 @@ StartupEvents.registry("block", event => {
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
         .textureAll("kubejs:block/prismac/green_aligned_glass")
+        .defaultCutout()
 
     event.create("blue_aligned_glass")
         .soundType("glass")
@@ -265,6 +267,7 @@ StartupEvents.registry("block", event => {
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
         .textureAll("kubejs:block/prismac/blue_aligned_glass")
+        .defaultCutout()
 
     event.create("prism_glass")
         .displayName("P.R.I.S.M. Glass")
@@ -272,6 +275,7 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe")
+        .defaultCutout()
 
     event.create("omnic_matrix_coil_block", "gtceu:coil")
         .temperature(12600)
@@ -291,5 +295,5 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .tag("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
-        .defaultCutout();
+        .defaultCutout()
 });
