@@ -1,0 +1,15 @@
+
+{
+	"content": {
+		"all_rew_xp_bottle": {
+			"type": "item",
+			"content": "minecraft:experience_bottle",
+			"amount": {
+				"min": 2,
+				"max": 5
+			},
+			"unitWorth": 20,
+			"rarity": "LEGENDARY"
+		}
+	}
+}

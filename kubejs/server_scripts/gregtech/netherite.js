@@ -97,11 +97,11 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.omnic_forge("activated_netherite_scrap")
-        .itemInputs("4x gtceu:activated_carbon_dust", "4x gtceu:void_empowered_plate", "kubejs:reactive_netherite_cluster")
-        .itemOutputs("kubejs:activated_netherite_scrap")
-        .EUt(GTValues.VA[GTValues.UV])
-        .duration(100)
+    event.recipes.extendedcrafting.combination(
+        "kubejs:activated_netherite_scrap",
+        "kubejs:reactive_netherite_cluster", ["4x gtceu:activated_carbon_dust", "4x gtceu:void_empowered_plate"],
+        32000000, 1600000
+    )
 
     event.recipes.gtceu.macerator("wither_bone_dust")
         .itemInputs("kubejs:wither_bone")
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.omnic_forge("netherite_ingot_final")
+    event.recipes.gtceu.forming_press("netherite_ingot_final")
         .itemInputs("kubejs:inert_nether_compound_ingot", "gtceu:crystal_matrix_frame", "4x kubejs:activated_netherite_scrap", "4x minecraft:gold_ingot")
         .itemOutputs("gtceu:activated_netherite_ingot")
         .duration(200)

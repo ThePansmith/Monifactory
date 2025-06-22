@@ -11,7 +11,6 @@ ServerEvents.recipes(event => {
     event.remove("snad:red_snad")
 
     // GT
-    event.remove({ id: "minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore" })
     event.remove({ id: "gtceu:mixer/rhodium_plated_palladium" })
 
     // Redstone arsenal

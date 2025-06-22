@@ -30,9 +30,6 @@ ItemEvents.tooltip(tooltip => {
     // Microminer Components
     tooltip.add("kubejs:universal_navigator", Text.translatable("kubejs.universal_navigator.tooltip"))
 
-    // Endgame Items
-    tooltip.add("kubejs:ultimate_gem", Text.translatable("kubejs.ultimate_gem.tooltip"))
-
     // Assembly line ordering
     if (doAssemblyLineOrderingWarning) {
         tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.hardmode"))
@@ -79,13 +76,24 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("thermal:device_rock_gen", Text.translatable("thermal.device_rock_gen.tooltip"))
     tooltip.add("thermal:device_water_gen", Text.translatable("thermal.device_water_gen.tooltip"))
 
-    tooltip.add(["thermal:upgrade_augment_1", "thermal:upgrade_augment_2", "thermal:upgrade_augment_4", "thermal:upgrade_augment_3", "thermal:dynamo_output_augment"], Text.translatable("thermal.emi.tooltip"))
+    tooltip.add(
+        [
+            "thermal:upgrade_augment_1",
+            "thermal:upgrade_augment_2",
+            "thermal:upgrade_augment_4",
+            "thermal:upgrade_augment_3",
+            "thermal:rf_coil_augment_advanced",
+            "thermal:rf_coil_storage_augment_advanced",
+            "thermal:rf_coil_xfer_augment_advanced",
+            "thermal:fluid_tank_augment_advanced"
+        ], Text.translatable("thermal.emi.tooltip")
+    )
 
     // Circuits
-    tooltip.addAdvanced("kubejs:matter_processor_mainframe", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uev_tier_circuit"), Math.round(Client.lastNanoTime / 1000000000))) })
-    tooltip.addAdvanced("kubejs:matter_processor_computer", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uhv_tier_circuit"), Math.round(Client.lastNanoTime / 1000000000))) })
-    tooltip.addAdvanced("kubejs:matter_processor_assembly", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uv_tier_circuit"), Math.round(Client.lastNanoTime / 1000000000))) })
-    tooltip.addAdvanced("kubejs:matter_processor", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.zpm_tier_circuit"), Math.round(Client.lastNanoTime / 1000000000))) })
+    tooltip.addAdvanced("kubejs:optical_processor_mainframe", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uev_tier_circuit"), Math.round(Client.lastNanoTime / 1000000000))) })
+    tooltip.addAdvanced("kubejs:optical_processor_computer", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uhv_tier_circuit"), Math.round(Client.lastNanoTime / 1000000000))) })
+    tooltip.addAdvanced("kubejs:optical_processor_assembly", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uv_tier_circuit"), Math.round(Client.lastNanoTime / 1000000000))) })
+    tooltip.addAdvanced("kubejs:optical_processor", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.zpm_tier_circuit"), Math.round(Client.lastNanoTime / 1000000000))) })
     tooltip.addAdvanced("kubejs:dimensional_processor_mainframe", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uiv_tier_circuit"), Math.round(Client.lastNanoTime / 100000000))) })
     tooltip.addAdvanced("kubejs:dimensional_processor_computer", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uev_tier_circuit"), Math.round(Client.lastNanoTime / 100000000))) })
     tooltip.addAdvanced("kubejs:dimensional_processor_assembly", (item, adv, text) => { text.add(1, rainbowifySingle(Text.translatable("item.kubejs.uhv_tier_circuit"), Math.round(Client.lastNanoTime / 100000000))) })
@@ -95,7 +103,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced("kubejs:monic_processor_assembly", (item, adv, text) => { text.add(1, Text.blue(Text.translatable("item.kubejs.uev_tier_circuit"))) })
     tooltip.addAdvanced("kubejs:monic_processor", (item, adv, text) => { text.add(1, Text.blue(Text.translatable("item.kubejs.uhv_tier_circuit"))) })
 
-    tooltip.addAdvanced(["kubejs:matter_processor_mainframe", "kubejs:matter_processor_computer", "kubejs:matter_processor_assembly", "kubejs:matter_processor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("item.kubejs.matter_circuit.tooltip"))) })
+    tooltip.addAdvanced(["kubejs:optical_processor_mainframe", "kubejs:optical_processor_computer", "kubejs:optical_processor_assembly", "kubejs:optical_processor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("item.kubejs.optical_circuit.tooltip"))) })
     tooltip.addAdvanced(["kubejs:dimensional_processor_mainframe", "kubejs:dimensional_processor_computer", "kubejs:dimensional_processor_assembly", "kubejs:dimensional_processor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("item.kubejs.dimensional_circuit.tooltip"))) })
     tooltip.addAdvanced("kubejs:monic_processor_mainframe", (item, adv, text) => { text.add(1, Text.gray(Text.translatable("item.kubejs.monic_processor_mainframe.tooltip"))) })
     tooltip.addAdvanced("kubejs:monic_processor_computer", (item, adv, text) => { text.add(1, Text.gray(Text.translatable("item.kubejs.monic_processor_computer.tooltip"))) })
@@ -169,8 +177,12 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.translatable("monilabs.tooltip.prismatic.2"))
     })
 
-    tooltip.addAdvanced("gtceu:omnic_forge", (item, adv, text) => {
-        text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
+    tooltip.addAdvanced("gtceu:antimatter_collider", (item,adv,text) => {
+        text.add(1, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.0"))
+        text.add(2, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.1"))
+        text.add(3, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.2"))
+        text.add(4, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.3"))
+        text.add(5, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.4"))
     })
 
     // Parallel hatches
@@ -233,7 +245,7 @@ ItemEvents.tooltip(tooltip => {
     // NuclearCraft
     tooltip.add("nuclearcraft:rhodochrosite_dust", "§eMnCO₃");
     tooltip.add("nuclearcraft:tough_alloy_ingot", "§eLiFeB");
-    tooltip.add("nuclearcraft:ferroboron_ingot", "§eFeB");
+    tooltip.add("nuclearcraft:ferroboron_ingot", "§eFe₄B");
     tooltip.add("nuclearcraft:hard_carbon_ingot", "§eFe₃C");
     tooltip.add("nuclearcraft:uranium_233", "§eU²³³");
     tooltip.add("nuclearcraft:plutonium_238", "§ePu²³⁸");

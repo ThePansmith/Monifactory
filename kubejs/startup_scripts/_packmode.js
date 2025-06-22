@@ -102,7 +102,6 @@ global.doBoilers = packMode == "Normal" || packMode == "Hard";
 global.doCompacting = packMode == "Normal" || packMode == "Hard";
 global.doConduits = packMode == "Normal" || packMode == "Hard";
 global.doConverters = packMode == "Normal" || packMode == "Hard";
-global.doHarderNaqFuel = packMode == "Normal" || packMode == "Hard" || packMode == "Expert"; // Temporary, NM Naqfuel tweaks is beyond the scope of this PR.
 global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";
 global.doHarderRecipes = packMode == "Hard" || packMode == "Expert";
@@ -129,7 +128,6 @@ const doConverters = !!global.doConverters;
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
 const doHarderRecipes = !!global.doHarderRecipes;
-const doHarderNaqFuel = !!global.doHarderNaqFuel;
 const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
 const doHatchRevert = !!global.doHatchRevert;
 const doHNN = !!global.doHNN;

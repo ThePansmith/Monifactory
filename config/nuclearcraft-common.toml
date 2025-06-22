@@ -162,7 +162,7 @@
 #Settings for Radiation
 [radiation]
 	#If radiation is enabled.
-	enabled = true
+	enabled = false
 	#General background radiation everywhere (pRad).
 	#Total radiation = background_radiation + dimension_radiation + chunk_radiation + in-game exposure
 	#Range: 0 ~ 10000

@@ -1,0 +1,11 @@
+{
+  "type": "systeams:boiling",
+  "input": {
+    "fluid_tag": "minecraft:water",
+    "amount": 100
+  },
+  "output": {
+    "fluid": "gtceu:steam",
+    "amount": 200
+  }
+}

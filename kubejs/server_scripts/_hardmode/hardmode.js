@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
     }
 
     if (doMeowniPlush) {
-        event.recipes.gtceu.omnic_forge("kubejs:meowni_plush")
+        event.recipes.gtceu.forming_press("kubejs:meowni_plush")
             .itemInputs("64x kubejs:moni_dollar", "64x kubejs:moni_dollar", "64x kubejs:moni_dollar", "16x kubejs:moni_dollar",) // Not exact atm, I don't run linux (so i cant use the awk script) and this value is gonna change regardless.
             .itemOutputs("kubejs:meowni_plush")
             .duration(2000)
@@ -120,5 +120,6 @@ ServerEvents.recipes(event => {
 
     if (!doMonicoins) {
         event.remove({ id: "bountiful:crafting/bountyboard" })
+        event.remove({ id: "bountiful:crafting/decree" })
     }
 })

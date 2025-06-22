@@ -46,9 +46,9 @@ ServerEvents.recipes(event => {
         "gtceu:electrical_steel_ingot", 6, 16);
 
     alloySmeltingVariant(
-        ["#forge:ingots/steel", "#forge:dusts/steel"],
+        ["4x #forge:ingots/steel", "4x #forge:dusts/steel"],
         ["#forge:dusts/boron"],
-        "2x nuclearcraft:ferroboron_ingot", 15, 120);
+        "5x nuclearcraft:ferroboron_ingot", 15, 120);
 
     alloySmeltingVariant(
         ["#forge:ingots/gold", "#forge:dusts/gold"],

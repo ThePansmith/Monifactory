@@ -26,8 +26,26 @@ deprecateItem("kubejs:dilithium_crystal", "gtceu:dilithium_gem", "Dilithium")
 // Ancient Debris
 deprecateItem("kubejs:crushed_ancient_debris", "gtceu:crushed_netherite_scrap_ore", "Crushed Ancient Debris")
 
+// Saline Antiseptic (rename after typo)
+deprecateFluid("gtceu:saline_antisceptic", "gtceu:saline_antiseptic", "Saline Antiseptic")
+
 // Old Nethline Items
 deprecateItem("kubejs:diamond_lattice", "6x minecraft:diamond", "Diamond Lattice")
 deprecateItem("kubejs:purified_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Purified Ancient Debris Dust")
 deprecateItem("kubejs:processed_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Processed Ancient Debris Dust")
 deprecateItem("kubejs:inert_netherite_scrap", "kubejs:activated_netherite_scrap", "Inert Netherite Scrap")
+
+// Matter Circuits
+deprecateItem("kubejs:matter_processing_unit", "kubejs:optical_processing_unit", "Matter Processing Unit")
+deprecateItem("kubejs:matter_processor", "kubejs:optical_processor", "Matter Processor")
+deprecateItem("kubejs:matter_processor_assembly", "kubejs:optical_processor_assembly", "Matter Processor Assembly")
+deprecateItem("kubejs:matter_processor_computer", "kubejs:optical_processor_computer", "Matter Processor Computer")
+deprecateItem("kubejs:matter_processor_mainframe", "kubejs:optical_processor_mainframe", "Matter Processor Mainframe")
+
+// Oganesson
+deprecateItem("kubejs:stabilized_oganesson", "kubejs:stabilized_einsteinium", "Stabilized Oganesson")
+deprecateFluid("gtceu:oganesson", "gtceu:einsteinium", "Oganesson")
+
+// Naqfuel old IDs
+deprecateFluid("gtceu:naq_fuel_t1", "gtceu:crude_naquadah_fuel", "T1 Naq Fuel")
+deprecateFluid("gtceu:naq_fuel_t2", "gtceu:naquadah_fuel", "T2 Naq Fuel")

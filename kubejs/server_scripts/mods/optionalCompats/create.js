@@ -6,17 +6,7 @@ if (Platform.isLoaded("create")) {
     ServerEvents.recipes(event => {
 
         // Removes any machines related to processing, the point of this compat is fun not functionality,
-        event.remove({ output: "create:millstone" })
-        event.remove({ output: "create:crushing_wheel" })
-        event.remove({ output: "create:mechanical_plough" })
-        event.remove({ output: "create:mechanical_crafter" })
-        event.remove({ output: "create:mechanical_mixer" })
-        event.remove({ output: "create:mechanical_saw" })
-        event.remove({ output: "create:mechanical_drill" })
-        event.remove({ output: "create:mechanical_harvester" })
-        event.remove({ output: "create:mechanical_press" })
-        event.remove({ output: "create:mechanical_roller" })
-        event.remove({ output: "create:encased_fan" })
+
 
         /* Removes recipes for machines that were not removed, deployers and mechanical crafters are fun!
         Most recipe categories that are removed machines are hidden in
@@ -243,6 +233,58 @@ if (Platform.isLoaded("create")) {
         // Deploying recipes are fine
         // Remove sawing recipes. Mechanical saws can still be used for stonecutting and in world tree cutting
         event.remove({ type: "create:cutting" })
+
+
+        // Packager and Logistics
+        event.shaped("create:packager", [
+            "S S",
+            "SCS",
+            "SLS"
+        ], {
+            L: "#gtceu:circuits/lv",
+            C: "create:cardboard_block",
+            S: "gtceu:steel_plate"
+        }).id("create:crafting/logistics/packager")
+
+        event.shaped("create:stock_ticker", [
+            " G ",
+            " C ",
+            " L "
+        ], {
+            L: "#gtceu:circuits/mv",
+            C: "create:stock_link",
+            G: "#forge:glass"
+        }).id("create:crafting/logistics/stock_ticker")
+
+        event.shapeless("2x create:factory_gauge ", ["create:stock_link", "create:precision_mechanism", "#gtceu:circuits/hv"]).id("create:crafting/logistics/factory_gauge")
+
+        // Pulp
+        event.shaped("2x create:pulp", [
+            "   ",
+            "RRR",
+            " H "
+        ], {
+            H: "#forge:tools/mortars",
+            R: "gtceu:plant_ball"
+        })
+
+        event.recipes.gtceu.mixer("kubejs:pulp_wood")
+            .itemInputs("gtceu:wood_dust")
+            .inputFluids("minecraft:water 100")
+            .itemOutputs("create:pulp")
+            .duration(100)
+            .EUt(16)
+            .circuit(1)
+
+        event.recipes.gtceu.compressor("kubejs:pulp_plant")
+            .itemInputs("gtceu:plant_ball")
+            .itemOutputs("create:pulp")
+            .duration(20)
+            .EUt(2)
+
+        event.smelting("create:cardboard", "create:pulp")
+
+
     })
     console.log("Create compat scripts successfully loaded!")
 } else { console.log("Create was not found, skipping its compat scripts.") }
