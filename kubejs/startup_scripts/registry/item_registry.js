@@ -619,7 +619,6 @@ StartupEvents.registry("item", event => {
     event.create("chromatically_reactive_cluster").displayName("Chromatically Reactive Cluster")
     event.create("chromatically_reactive_shard").displayName("Chromatically Reactive Shard")
     event.create("chromatically_inert_frame").displayName("Chromatically Inert Frame")
-    event.create("inert_prismatic_core").displayName("Inert Prismatic Core")
 
     // Protomatter
     event.create("protomatter").texture("kubejs:item/protomatter")
