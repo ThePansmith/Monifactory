@@ -986,7 +986,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                    .or(Predicates.blocks("monilabs:chroma_sensor_hatch")))
+                    .or(Predicates.blocks("monilabs:chroma_sensor_hatch").setMaxGlobalLimited(1)))
             .where("C", Predicates.blocks("monilabs:chromodynamic_conduction_casing"))
             .where("M", Predicates.controller(Predicates.blocks(definition.getBlock())))
             .where("P", Predicates.blocks("monilabs:prismatic_focus"))
@@ -1100,7 +1100,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 Predicates.blocks("kubejs:bioalloy_casing").setMinGlobalLimited(392)
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(1))
                     .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
-                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                    .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1)))
             .build())
         .workableCasingRenderer("kubejs:block/bioalloy/casing",
             "gtceu:block/multiblock/processing_array")
@@ -1173,6 +1174,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
     // Sculk Vat
     event.create("sculk_vat", "multiblock")
+        .machine((holder) => new SculkVatMachine(holder))
         .recipeTypes("sculk_vat")
         .recipeModifier(MoniRecipeModifiers.sculkVatRecipeModifier())
         .appearanceBlock(() => Block.getBlock("kubejs:cryolobus_casing"))
@@ -1189,6 +1191,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS_1X).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2))
+                .or(Predicates.blocks("monilabs:sculk_xp_draining_hatch").setMaxGlobalLimited(1))
+                .or(Predicates.blocks("monilabs:sculk_xp_sensor_hatch").setMaxGlobalLimited(1))
             )
             .where("c", Predicates.blocks("kubejs:cryolobus_casing"))
             .where("L", Predicates.blocks("gtceu:laminated_glass")
