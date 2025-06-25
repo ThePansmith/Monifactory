@@ -13,6 +13,9 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .symbol("ᛝ")
 })
 
+GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
+    event.create("meta_null").parent(GTMaterialIconSet.SHINY)
+})
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
     // UHV hull
@@ -75,9 +78,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // UIV pipe/insulator
     event.create("meta_null")
-        .ingot().fluid()
-        .color(0x000000).secondaryColor(0x24142c)
-        .iconSet("shiny")
+        .ingot()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .color(0xffffff)
+        .iconSet("meta_null")
         .element(GTElements.get("meta_null"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
         .fluidPipeProperties(200000, 20000, true, true, true, true)
@@ -89,5 +93,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("shiny")
         .element(GTElements.get("transcendental_matrix"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
-        .fluidPipeProperties(200000, 20000, true, true, true, true)
 })

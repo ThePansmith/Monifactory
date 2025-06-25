@@ -85,6 +85,13 @@ ServerEvents.recipes(event => {
             .EUt(eut)
     })
 
+    //P.R.I.S.M. Glass
+    event.recipes.gtceu.atomic_reconstruction("prism_conversion")
+            .itemInputs("kubejs:blue_aligned_glass")
+            .itemOutputs("kubejs:prism_glass")
+            .duration(20)
+            .EUt(GTValues.VA[GTValues.UV])
+
     // Universal Circuits
     const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
     tiers.forEach((level) => {
