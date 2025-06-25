@@ -1,6 +1,20 @@
 
+#General settings
+[general]
+	#Maximum interaction range with nodes when using a Laser Wrench
+	#Range: > 1
+	max_interaction_range = 10
+	#Maximum distance between two linked nodes
+	#Range: > 2
+	max_nodes_distance = 10
+
 #Card settings
 [card]
+
+	#Item Card
+	[card.item_card]
+		#Minimum ticks/operation, the first element is with no Logistic Overclockers, the last one is with all four
+		min_ticks_item = [20, 15, 10, 5, 1]
 
 	#Fluid Card
 	[card.fluid_card]
@@ -48,18 +62,4 @@
 		multiplier_milli_buckets_chemical = 60000
 		#Minimum ticks/operation, the first element is with no Logistic Overclockers, the last one is with all four
 		min_ticks_chemical = [20, 16, 12, 8, 4]
-
-	#Item Card
-	[card.item_card]
-		#Minimum ticks/operation, the first element is with no Logistic Overclockers, the last one is with all four
-		min_ticks_item = [20, 15, 10, 5, 1]
-
-#General settings
-[general]
-	#Maximum interaction range with nodes when using a Laser Wrench
-	#Range: > 1
-	max_interaction_range = 10
-	#Maximum distance between two linked nodes
-	#Range: > 2
-	max_nodes_distance = 10
 

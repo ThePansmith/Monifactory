@@ -1,7 +1,0 @@
-#The amount of water consumed per operation.
-#Range: > 0
-waterConsumptionAmount = 100
-#The amount of RF that one consumption cycle of water provides.
-#Range: > 0
-waterRFConsumptionAmount = 50000
-
