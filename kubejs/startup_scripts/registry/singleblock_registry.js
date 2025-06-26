@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 // GT Atomic Reconstructor machine
 GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("atomic_reconstructor", "simple")
-        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV)
+        .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV)
         .definition((tier, builder) =>
             builder
                 .langValue(`${GTValues.VLVH[tier]} Atomic Reconstructor`)

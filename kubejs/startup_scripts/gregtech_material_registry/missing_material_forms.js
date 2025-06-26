@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Terbium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Terbium.setMaterialARGB(0x8C8F7A)
     GTMaterials.Terbium.setProperty($PropertyKey.BLAST, new $BlastProperty(7200, "higher", 524288, 900, -1, -1));
-    GTMaterials.Terbium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD)
+    GTMaterials.Terbium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING)
 
     // Existing materials that get new material forms
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)

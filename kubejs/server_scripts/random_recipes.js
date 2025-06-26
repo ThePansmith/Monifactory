@@ -401,7 +401,7 @@ ServerEvents.recipes(event => {
         S: "gtceu:uhv_sensor",
         C: "#gtceu:circuits/uev",
         E: "gtceu:uhv_emitter",
-        W: "gtceu:activated_netherite_quadruple_wire"
+        W: "gtceu:hyperdegenerate_darconite_quadruple_wire"
     })
 
     event.shaped("gtceu:uev_uev_parallel_hatch", [
@@ -411,9 +411,9 @@ ServerEvents.recipes(event => {
     ], {
         H: "gtceu:uev_machine_hull",
         S: "gtceu:uev_sensor",
-        C: "#gtceu:circuits/uiv",
+        C: "#gtceu:circuits/max",
         E: "gtceu:uev_emitter",
-        W: "gtceu:necrosiderite_quadruple_wire"
+        W: "gtceu:monium_quadruple_wire"
     })
 
     //
@@ -1013,6 +1013,5 @@ ServerEvents.recipes(event => {
 
     // 64A energy converters recipe fix
     event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
-    event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:necrosiderite_hex_wire")
     event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
 })

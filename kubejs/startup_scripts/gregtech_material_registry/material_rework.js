@@ -33,47 +33,17 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .cableProperties(GTValues.V[GTValues.UEV], 1, 32, false)
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING)
 
-    // UEV Moni Supercon
-    event.create("empowered_flux")
-        .ingot().fluid()
-        .color(0xd07856).secondaryColor(0x771f05)
-        .iconSet("magic")
-        .blastTemp(11000, "highest", GTValues.VHA[GTValues.UHV], 1200)
-    //  .components("4x electrum_flux", "3x gemstone_empowered")
-        .cableProperties(GTValues.V[GTValues.UEV], 1, 0, true)
-
-    // UEV GT Supercon
-    event.create("osmium_tantalum_einsteinium_caesium_omnide")
-        .ingot().fluid()
-        .color(0x3221fb).secondaryColor(0x89a223)
-        .iconSet("metallic")
-        .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
-        .components("2x osmium", "3x tantalum", "4x einsteinium", "5x caesium", "2x omnium")
-        .formula("Os2Ta3Es4Cs5Nm2")
-        .cableProperties(GTValues.V[GTValues.UEV], 32, 0, true)
-        .flags(GTMaterialFlags.GENERATE_FINE_WIRE)
-
-    // UIV Moni Supercon
+    // UEV moni + gt Supercon
     event.create("hyperdegenerate_darconite")
         .ingot().fluid()
         .color(0x6442fb).secondaryColor(0x26872b)
         .iconSet("metallic") // "hyperdegenerate"
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen", "1x hyperdegenerate_matter")
-        .cableProperties(GTValues.V[GTValues.UIV], 1, 0, true)
-        .flags(GTMaterialFlags.DISABLE_ALLOY_BLAST, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .cableProperties(GTValues.V[GTValues.UEV], 64, 0, true)
+        .flags(GTMaterialFlags.DISABLE_ALLOY_BLAST, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_FINE_WIRE)
 
-    // UIV GT Supercon
-    event.create("eltic_neptunium_antimony_terbium_germanium_carbide")
-        .ingot().fluid()
-        .color(0x89a223).secondaryColor(0x3221fb)
-        .iconSet("magic")
-        .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
-        .components("4x eltz", "2x neptunium", "1x antimony", "1x terbium", "1x germanium", "2x carbon")
-        .cableProperties(GTValues.V[GTValues.UIV], 64, 0, true)
-        .flags(GTMaterialFlags.GENERATE_FINE_WIRE)
-
-    // UIV pipe/insulator
+    // UEV pipe/insulator
     event.create("meta_null")
         .ingot().fluid()
         .color(0x000000).secondaryColor(0x24142c)
