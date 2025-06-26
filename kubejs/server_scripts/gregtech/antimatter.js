@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:microminer_t9", "16x kubejs:protomatter")
         .addData("projector_tier", 3)
         .requiredMicroverse(1) // Normal
-        .damageRate(20)
+        .damageRate(50)
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
 
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:microminer_t10", "64x kubejs:protomatter")
         .addData("projector_tier", 3)
         .requiredMicroverse(4) // Corrupted
-        .damageRate(20)
+        .damageRate(40)
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
 

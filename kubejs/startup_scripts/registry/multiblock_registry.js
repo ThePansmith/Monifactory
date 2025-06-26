@@ -672,7 +672,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/machines/projectors", false)
 
     // Advanced Microverse Projector II
-    event.create("advanced_microverse_projector_ii", "multiblock")
+    event.create("elite_microverse_projector", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new MicroverseProjectorMachine(holder, 3))
         .recipeTypes("microverse")
