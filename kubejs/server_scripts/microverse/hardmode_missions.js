@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "32x gtceu:raw_osmiridiumyes",
             )
-            .requiredMicroverse(1) // Normal
+            .requiredMicroverse(3) // Shattered
     })
 
     microverse_mission(event, "8half", 3).forEach(builder => {
@@ -238,6 +238,6 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "32x gtceu:raw_iridosmineyes",
             )
-            .requiredMicroverse(1) // Normal
+            .requiredMicroverse(3) // Shattered
     })
 })
