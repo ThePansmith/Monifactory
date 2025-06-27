@@ -671,7 +671,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .renderer(() => new MicroverseProjectorRenderer("kubejs:block/microverse/casing", "gtceu:block/machines/projectors"))
         .hasTESR(true)
 
-    // Advanced Microverse Projector II
+    // Elite Microverse Projector
     event.create("elite_microverse_projector", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new MicroverseProjectorMachine(holder, 3))
