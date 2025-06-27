@@ -644,8 +644,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .where("V", Predicates.blocks(GTBlocks.CASING_GRATE.get()))
             .build())
-        .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/machines/projectors", false)
+        .renderer(() => new MicroverseProjectorRenderer("kubejs:block/microverse/casing", "gtceu:block/machines/projectors"))
+        .hasTESR(true)
 
     // Advanced Microverse Projector
     event.create("advanced_microverse_projector", "multiblock")
@@ -657,7 +657,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCC", "CGGGC", "CGGGC", "CGGGC", "CCCCC")
             .aisle("CVCVC", "GDDDG", "GDDDG", "GDDDG", "CVCVC")
-            .aisle("CCCCC", "GDDDG", "GD DG", "GDDDG", "CCCCC")
+            .aisle("CCCCC", "GDDDG", "GD#DG", "GDDDG", "CCCCC")
             .aisle("CVCVC", "GDDDG", "GDDDG", "GDDDG", "CVCVC")
             .aisle("CC@CC", "CGGGC", "CGGGC", "CGGGC", "CCCCC")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
@@ -666,10 +666,10 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .where("V", Predicates.blocks(GTBlocks.CASING_GRATE.get()))
-            .where(" ", Predicates.any())
+            .where("#", Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/machines/projectors", false)
+        .renderer(() => new MicroverseProjectorRenderer("kubejs:block/microverse/casing", "gtceu:block/machines/projectors"))
+        .hasTESR(true)
 
     // Advanced Microverse Projector II
     event.create("elite_microverse_projector", "multiblock")
@@ -682,9 +682,9 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .aisle("#########", "#########", "##CCCCC##", "##CVCVC##", "##CCCCC##", "##CVCVC##", "##CCCCC##", "#########", "#########")
             .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
             .aisle("##CCCCC##", "#CDDDDDC#", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "#CDDDDDC#", "##CCCCC##")
-            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD   DDG", "GDD   DDG", "GDD   DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
-            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD   DDG", "GDD   DDG", "GDD   DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
-            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD   DDG", "GDD   DDG", "GDD   DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD###DDG", "GDD###DDG", "GDD###DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD###DDG", "GDD###DDG", "GDD###DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD###DDG", "GDD###DDG", "GDD###DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
             .aisle("##CCCCC##", "#CDDDDDC#", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "#CDDDDDC#", "##CCCCC##")
             .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
             .aisle("#########", "#########", "##CC@CC##", "##CGGGC##", "##CGGGC##", "##CGGGC##", "##CCCCC##", "#########", "#########")
@@ -694,11 +694,10 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
             .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .where("V", Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
-            .where(" ", Predicates.any())
             .where("#", Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/machines/projectors", false)
+        .renderer(() => new MicroverseProjectorRenderer("kubejs:block/microverse/casing", "gtceu:block/machines/projectors"))
+        .hasTESR(true)
 
     // Microverse Projector III (Hyperbolic Microverse Projector)
     event.create("hyperbolic_microverse_projector", "multiblock")
@@ -735,8 +734,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("Y", Predicates.blocks("kubejs:dimensional_stabilization_netherite_casing"))
             .where("#", Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/machines/projectors", false)
+        .renderer(() => new MicroverseProjectorRenderer("kubejs:block/microverse/casing", "gtceu:block/machines/projectors"))
+        .hasTESR(true)
 
     // (Small) Naquadah Reactor
     event.create("naquadah_reactor", "multiblock")
