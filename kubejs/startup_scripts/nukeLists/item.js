@@ -66,6 +66,7 @@ global.itemNukeList = [
     "enderio:energy_conduit",
     "enderio:fire_water_bucket",
     "enderio:flour",
+    "enderio:fluid_conduit",
     "enderio:hootch_bucket",
     "enderio:industrial_insulation_block",
     "enderio:liquid_sunshine_bucket",

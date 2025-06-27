@@ -104,39 +104,4 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:infinity_power_unit")
         .duration(1200)
         .EUt(1966080)
-
-    // Dense Obsidian Plate for Reinforced Obsidian
-    // TODO IN 0.13: REMOVE BENDER RECIPE
-    event.recipes.gtceu.implosion_compressor("infinity_toolset/dense_obsidian_plate")
-        .itemInputs("9x gtceu:obsidian_plate", "minecraft:tnt")
-        .itemOutputs("gtceu:dense_obsidian_plate")
-        .duration(20)
-        .EUt(30)
-
-    event.remove({ output: "enderio:dark_steel_bars" })
-
-    // Get greg'd idiot
-    event.shaped("3x enderio:dark_steel_bars", [
-        " H ",
-        "RRR",
-        "RRR"
-    ], {
-        R: "gtceu:dark_steel_rod",
-        H: "#forge:tools/hammers"
-    })
-    event.recipes.gtceu.assembler("dark_steel_bars")
-        .itemInputs("6x gtceu:dark_steel_rod")
-        .itemOutputs("3x enderio:dark_steel_bars")
-        .duration(300)
-        .EUt(4)
-
-    event.shaped("enderio:reinforced_obsidian_block", [
-        "IBI",
-        "BPB",
-        "IBI"
-    ], {
-        P: "gtceu:dense_obsidian_plate",
-        B: "enderio:dark_steel_bars",
-        I: "gtceu:double_titanium_tungsten_carbide_plate"
-    })
 })
