@@ -45,7 +45,6 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 - EnderIO Conduits are removed
 - LaserIO is disabled
 - GT5u-style machine explosions
-- Gregtech Pollution and Hazards
 - Various other nerfs
 
 ## Installation:
