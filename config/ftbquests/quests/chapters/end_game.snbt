@@ -408,27 +408,6 @@
 			y: -14.25d
 		}
 		{
-			dependencies: [
-				"27EBB5AAF8A40F3D"
-				"4261BDA34D716EC8"
-			]
-			description: [
-				"{moni.quest.4CF399EC00A65E3A.description1}"
-				""
-				"{moni.quest.4CF399EC00A65E3A.description2}"
-			]
-			id: "4CF399EC00A65E3A"
-			size: 1.0d
-			tasks: [{
-				id: "639C72FD2123C478"
-				item: "kubejs:creative_storage_data"
-				type: "item"
-			}]
-			title: "{moni.quest.4CF399EC00A65E3A.title}"
-			x: 27.0d
-			y: -13.0d
-		}
-		{
 			dependencies: ["0DE1BF1648CAF6D6"]
 			description: [
 				"{moni.quest.1C861E0C62D5B97D.description1}"
