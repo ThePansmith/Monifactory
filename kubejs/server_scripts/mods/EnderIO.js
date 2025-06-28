@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
                     .itemInputs(`3x gtceu:${value[1]}_single_wire`, "6x enderio:conduit_binder")
                     .itemOutputs(`4x enderio:${value[0]}_conduit`)
                     .duration(80)
-                    .EUt(GTValues.VHA[index])
+                    .EUt(GTValues.VHA[Math.floor(index / 2) + 1])
             } else {
                 event.shaped(`3x enderio:${value[0]}_conduit`, [
                     "AAA",
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
                     .itemInputs(`2x gtceu:${value[1]}_single_wire`, `enderio:${conduit_mats[index - 1][0]}_conduit`, "6x enderio:conduit_binder")
                     .itemOutputs(`4x enderio:${value[0]}_conduit`)
                     .duration(80)
-                    .EUt(GTValues.VHA[index])
+                    .EUt(GTValues.VHA[Math.floor(index / 2) + 1])
             }
         })
 
