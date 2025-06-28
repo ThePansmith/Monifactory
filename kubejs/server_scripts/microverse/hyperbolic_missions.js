@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
                 "1x kubejs:hadal_energy_core",
                 "kubejs:lair_of_the_warden_data"
             )
-            .damageRate(10) 
+            .damageRate(10)
             .itemOutputs(
                 "48x kubejs:hadal_shard",
                 "64x kubejs:warden_heart",

@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     if(doHostileMicroverse) {
         microverse_mission(event, "2half", 1, 10, undefined, 100).forEach(builder => {
             builder
-                .itemInput("8x minecraft:tnt")
+                .itemInputs("8x minecraft:tnt")
                 .inputFluids("minecraft:lava 4000")
                 .requiredMicroverse(1) // Normal
                 .damageRate(100)
