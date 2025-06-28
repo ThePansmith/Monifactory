@@ -1,14 +1,14 @@
 
 #Settings for reactor fuel
 [reactor_fuel]
+	#Heat multiplier. Affects to all fuels.
+	#Range: 0.01 ~ 100.0
+	fuel_heat_multiplier = 1.0
 	#Heat multiplier affects on heat/cooling ratio multiplier.
 	heat_multiplier = 3.24444444
 	#Depletion multiplier. Affects how long fuel lasts.
 	#Range: 0.0 ~ 1000.0
 	depletion_multiplier = 1.0
-	#Heat multiplier. Affects to all fuels.
-	#Range: 0.01 ~ 100.0
-	fuel_heat_multiplier = 1.0
 
 #Settings for Fission Reactor
 [fission_reactor]
@@ -38,7 +38,7 @@
 	moderator_heat_multiplier = 33.34
 	#Rate at which steam recipes produced.
 	#Range: 0.01 ~ 1000000.0
-	boiling_mult = 15.0
+	boiling_mult = 100.0
 	#Affects how much energy reactors produce.
 	#Range: 0.01 ~ 1000000.0
 	fe_generation_multiplier = 5.0
@@ -46,7 +46,7 @@
 	active_heatsink_prime = true
 	#How much coolant active heat sink will consume per tick.
 	#Range: 1 ~ 10000
-	active_heatsink_coolant_per_tick = 100
+	active_heatsink_coolant_per_tick = 10
 	#If you don't need reactor boiling mode, just disable.
 	supports_boiling_mode = true
 

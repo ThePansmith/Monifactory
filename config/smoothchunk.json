@@ -1,7 +1,11 @@
 {
   "chunkSaveDelay": {
-    "desc:": "Delay before a chunk is saved to disk, default: 300 seconds. If you enable the noSaveAll config, it is suggest to set this to 180.",
+    "desc:": "Delay before a chunk is saved to disk, default: 300 seconds",
     "chunkSaveDelay": 300
+  },
+  "chunkUnloadLimit": {
+    "desc:": "Maximum amount of chunks unloaded per tick, default: 20, vanilla:200",
+    "chunkUnloadLimit": 20
   },
   "debugLogging": {
     "desc:": "Enables debug logging of how many chunks got saved in a tick. default: false",
