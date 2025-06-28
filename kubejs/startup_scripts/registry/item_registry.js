@@ -560,16 +560,10 @@ StartupEvents.registry("item", event => {
     Circuit("optical", "processor_computer", "uhv")
     Mainframe("optical", "uev")
 
-    Unit("dimensional")
-    Circuit("dimensional", "processor", "uv")
-    Circuit("dimensional", "processor_assembly", "uhv")
-    Circuit("dimensional", "processor_computer", "uev")
-    Mainframe("dimensional", "uiv")
-
     Unit("monic")
-    Circuit("monic", "processor", "uhv")
-    Circuit("monic", "processor_assembly", "uev")
-    Circuit("monic", "processor_computer", "uiv")
+    Circuit("monic", "processor", "uv")
+    Circuit("monic", "processor_assembly", "uhv")
+    Circuit("monic", "processor_computer", "uev")
     Mainframe("monic", "max")
 
     // Smores
@@ -602,7 +596,7 @@ StartupEvents.registry("item", event => {
     }
 
     // Universal Circuits
-    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"]
     tiers.forEach((universal_circuit) => {
         event.create(`${universal_circuit}_universal_circuit`)
             .tag(`gtceu:circuits/${universal_circuit}`)

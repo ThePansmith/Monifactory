@@ -126,8 +126,11 @@ global.itemNukeList = [
     "gtceu:hot_silicon_ingot",
     "gtceu:milk",
     "gtceu:steel_machine_casing",
+    "gtceu:uv_world_accelerator",
+    /^gtceu:uiv/,
     /^gtceu:uxv/,
     /^gtceu:opv/,
+    /^gtmutils.uiv/,
     /^gtmutils:uxv/,
     /^gtmutils:opv/,
 

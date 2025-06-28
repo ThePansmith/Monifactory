@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("64x gtceu:monium_ingot")
     })
 
-    microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UXV]).forEach(builder => {
+    microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UIV]).forEach(builder => {
         builder
             .itemInputs("8x kubejs:timeless_monic_heavy_plating", "4x kubejs:universe_creation_data", "2x kubejs:shattered_universe_data", "2x kubejs:corrupted_universe_data")
             .itemOutputs("4x kubejs:causality_exempt_monic_heavy_plating")

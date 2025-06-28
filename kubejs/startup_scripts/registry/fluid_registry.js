@@ -32,11 +32,11 @@ StartupEvents.registry("fluid", event => {
     const antimatter_types = ["bosonic", "hadronic", "fermionic"]
     antimatter_types.forEach(type => {
         event.create(`${type}_antimatter`)
-            .displayName(`${String(type).charAt(0).toUpperCase() + String(type).slice(1)} Antimatter`)
+            .displayName(`${capitalize(type)} Antimatter`)
             .bucketColor(Color.rgba(27, 12, 39, 255))
             .stillTexture(`kubejs:block/antimatter/${type}`)
         event.create(`refined_${type}_antimatter`)
-            .displayName(`Refined ${String(type).charAt(0).toUpperCase() + String(type).slice(1)} Antimatter`)
+            .displayName(`Refined ${capitalize(type)} Antimatter`)
             .stillTexture(`kubejs:block/antimatter/refined_${type}`)
             .bucketColor(Color.rgba(41, 19, 59, 255))
     })

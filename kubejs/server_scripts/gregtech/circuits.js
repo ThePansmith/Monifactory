@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_necrosiderite_wire", 144],
         ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:necrosiderite_foil", 36],
         ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_necrosiderite_wire", 72],
-        ["inductor", "gtceu:iron_neodymium_terbium_neutronate_ring", "4x gtceu:fine_necrosiderite_wire", 72]
+        ["inductor", "gtceu:terbium_ring", "4x gtceu:fine_necrosiderite_wire", 72]
     ]
 
     for (const [item, primary, secondary, plastic_amount] of smds) {
@@ -321,101 +321,9 @@ ServerEvents.recipes(event => {
         .duration(2400 / 2)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // WIP: Dimensional Circuits
-    event.recipes.gtceu.circuit_assembler("dimensional_circuit_board")
-        .itemInputs(
-            "32x gtceu:polyethyl_cyanoacrylate_plate",
-            "4x gtceu:infinity_plate",
-            "#gtceu:circuits/zpm",
-            "gtceu:luv_sensor",
-            "3x kubejs:the_ultimate_material",
-            "2x gtceu:nether_star_lens"
-        )
-        .inputFluids("gtceu:omnium 288")
-        .itemOutputs("32x kubejs:dimensional_circuit_board")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(1200)
-        .EUt(500000)
-
-    event.recipes.gtceu.large_chemical_reactor("dimensional_processing_unit")
-        .itemInputs("1x kubejs:dimensional_circuit_board", "12x gtceu:necrosiderite_foil", "6x gtceu:activated_netherite_foil")
-        .inputFluids("gtceu:iron_iii_chloride 10000")
-        .itemOutputs("1x kubejs:dimensional_processing_unit")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(100)
-        .EUt(1966080)
-
-    event.recipes.gtceu.circuit_assembler("dimensional_processor")
-        .itemInputs(
-            "kubejs:dimensional_processing_unit",
-            "3x kubejs:multidimensional_cpu_chip",
-            "4x kubejs:complex_smd_resistor",
-            "4x kubejs:complex_smd_capacitor",
-            "4x kubejs:complex_smd_transistor",
-            "2x gtceu:fine_necrosiderite_wire"
-        )
-        .inputFluids("gtceu:soldering_alloy 144")
-        .itemOutputs("2x kubejs:dimensional_processor")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(10 * 20)
-        .EUt(1966080)
-
-    event.recipes.gtceu.circuit_assembler("dimensional_processor_assembly")
-        .itemInputs(
-            "kubejs:dimensional_processing_unit",
-            "2x kubejs:dimensional_processor",
-            "4x kubejs:complex_smd_inductor",
-            "4x kubejs:complex_smd_capacitor",
-            "4x kubejs:hyperdynamic_ram_chip",
-            "16x gtceu:fine_activated_netherite_wire"
-        )
-        .inputFluids("gtceu:soldering_alloy 1152")
-        .itemOutputs("2x kubejs:dimensional_processor_assembly")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(20 * 20)
-        .EUt(1966080)
-
-    event.recipes.gtceu.assembly_line("dimensional_processor_computer")
-        .itemInputs(
-            "kubejs:dimensional_processing_unit",
-            "2x kubejs:dimensional_processor_assembly",
-            "8x kubejs:complex_smd_diode",
-            "32x gtceu:nor_memory_chip",
-            "12x kubejs:multidimensional_cpu_chip",
-            "16x kubejs:hyperdynamic_ram_chip",
-            "16x kubejs:uxpic_chip",
-            "24x gtceu:fine_activated_netherite_wire",
-            "4x gtceu:necrosiderite_plate"
-        )
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 576")
-        .itemOutputs("kubejs:dimensional_processor_computer")
-        .duration(20 * 20)
-        .EUt(1966080)
-
-    event.recipes.gtceu.assembly_line("dimensional_processor_mainframe")
-        .itemInputs(
-            "2x gtceu:infinity_frame",
-            "2x kubejs:dimensional_processor_computer",
-            "32x kubejs:complex_smd_diode",
-            "32x kubejs:complex_smd_capacitor",
-            "32x kubejs:complex_smd_transistor",
-            "32x kubejs:complex_smd_resistor",
-            "32x kubejs:complex_smd_inductor",
-            "32x gtceu:nand_memory_chip",
-            "24x kubejs:multidimensional_cpu_chip",
-            "32x kubejs:hyperdynamic_ram_chip",
-            "16x gtceu:activated_netherite_double_wire",
-            "8x gtceu:necrosiderite_plate"
-        )
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 576")
-        .itemOutputs("kubejs:dimensional_processor_mainframe")
-        .duration(2400)
-        .EUt(GTValues.VA[GTValues.UEV])
-
-
     // Monic Circuits
     event.recipes.gtceu.circuit_assembler("monic_circuit_board")
-        .itemInputs("32x kubejs:dimensional_circuit_board",
+        .itemInputs("32x kubejs:carbon_mesh_reinforced_printed_circuit_board",
             "2x gtceu:monium_plate",
             "#gtceu:circuits/uv",
             "gtceu:zpm_field_generator",
