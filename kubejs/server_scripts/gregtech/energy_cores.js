@@ -47,31 +47,36 @@ ServerEvents.recipes(event => {
         C: "minecraft:sculk_catalyst"
     }, 200000000).powerRate(200000000);
 
-    event.recipes.gtceu.assembler("kubejs:mesol_energy_core")
-        .itemInputs("kubejs:sculk_core", "4x gtceu:enori_empowered_gem", "gtceu:palis_empowered_block")
-        .inputFluids("enderio:xp_juice 100")
-        .itemOutputs("kubejs:mesol_energy_core")
+    event.recipes.gtceu.assembler("kubejs:empty_mesol_energy_core")
+        .itemInputs("4x gtceu:cryolobus_plate", "2x gtceu:ruthenium_plate", "8x gtceu:niobium_titanium_bolt")
+        .inputFluids("enderio:advanced_soldering_alloy 288")
+        .itemOutputs("kubejs:empty_mesol_energy_core")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.recipes.gtceu.assembler("kubejs:bathyal_energy_core")
-        .itemInputs("3x kubejs:mesol_energy_core", "4x minecraft:nether_star", "gtceu:emeradic_empowered_block", "6x gtceu:diamatine_empowered_gem")
-        .inputFluids("enderio:xp_juice 1000")
-        .itemOutputs("2x kubejs:bathyal_energy_core")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LuV])
+    event.recipes.gtceu.discharger("kubejs:empty_bathyal_energy_core")
+        .itemInputs("4x gtceu:cryolobus_plate", "2x gtceu:europium_plate", "8x gtceu:vanadium_gallium_bolt", "kubejs:mesol_energy_core")
+        .itemOutputs("kubejs:empty_bathyal_energy_core")
+        .duration(10)
 
-    event.recipes.gtceu.assembler("kubejs:abyssal_energy_core")
-        .itemInputs("2x kubejs:bathyal_energy_core", "4x gtceu:restonia_empowered_gem", "gtceu:cryococcus_block", "kubejs:stabilized_einsteinium")
-        .inputFluids("enderio:xp_juice 1000")
-        .itemOutputs("1x kubejs:abyssal_energy_core")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.ZPM])
+    event.recipes.gtceu.discharger("kubejs:empty_abyssal_energy_core")
+        .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:tritanium_plate", "8x gtceu:naquadah_alloy_bolt", "kubejs:stabilized_einsteinium", "kubejs:bathyal_energy_core")
+        .itemOutputs("kubejs:empty_abyssal_energy_core")
+        .duration(10)
 
-    event.recipes.gtceu.assembler("kubejs:hadal_energy_core")
-        .itemInputs("3x kubejs:abyssal_energy_core", "kubejs:hadal_shard", "gtceu:void_empowered_block", "2x gtceu:neutronium_plate", "16x gtceu:omnium_bolt")
-        .inputFluids("enderio:xp_juice 1000")
-        .itemOutputs("kubejs:hadal_energy_core")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UV])
+    event.recipes.gtceu.discharger("kubejs:empty_hadal_energy_core")
+        .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:neutronium_plate", "8x gtceu:omnium_bolt", "kubejs:hadal_shard", "kubejs:abyssal_energy_core")
+        .itemOutputs("kubejs:empty_hadal_energy_core")
+        .duration(10)
+
+    // Energy core filling
+    const energyCores = ["mesol", "bathyal", "abyssal", "hadal"]
+    energyCores.forEach((tier, index) => {
+        event.recipes.gtceu.canner(`${tier}_energy_core`)
+            .itemInputs(`kubejs:empty_${tier}_energy_core`)
+            .inputFluids(`gtceu:cryococcus ${288 * (index + 1)}`)
+            .itemOutputs(`kubejs:${tier}_energy_core`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.IV])
+    })
 })

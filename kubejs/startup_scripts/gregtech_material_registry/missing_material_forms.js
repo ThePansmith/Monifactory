@@ -47,6 +47,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Zeron100.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
+    GTMaterials.VanadiumGallium.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
 
     // Gears for Thermal Expansion
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)

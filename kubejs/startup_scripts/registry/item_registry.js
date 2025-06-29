@@ -399,9 +399,13 @@ StartupEvents.registry("item", event => {
     // Sculk Items
     event.create("warden_horn")
     event.create("sculk_core")
+    event.create("empty_mesol_energy_core").texture("kubejs:item/mesol_energy_core")
     event.create("mesol_energy_core")
+    event.create("empty_bathyal_energy_core").texture("kubejs:item/bathyal_energy_core")
     event.create("bathyal_energy_core")
+    event.create("empty_abyssal_energy_core").texture("kubejs:item/abyssal_energy_core")
     event.create("abyssal_energy_core")
+    event.create("empty_hadal_energy_core").texture("kubejs:item/hadal_energy_core")
     event.create("hadal_energy_core")
     event.create("dischargement_core")
     event.create("warden_heart")
