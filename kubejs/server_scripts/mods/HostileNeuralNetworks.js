@@ -120,9 +120,9 @@ ServerEvents.recipes(event => {
         // PPM (Autoclave)
         event.recipes.gtceu.autoclave("pulsating_prediction_matrix_autoclave")
             .itemInputs("8x kubejs:pulsating_dust")
-            .inputFluids(Fluid.of("gtceu:polybenzimidazole", 16))
-            .itemOutputs('64x hostilenetworks:prediction_matrix', '64x hostilenetworks:prediction_matrix')
-            .duration(250)
+            .inputFluids(Fluid.of("gtceu:polybenzimidazole", 144))
+            .itemOutputs('64x hostilenetworks:prediction_matrix')
+            .duration(1000)
             .EUt(7680)
 
         // IMPOSSIBLE REALM DATA
