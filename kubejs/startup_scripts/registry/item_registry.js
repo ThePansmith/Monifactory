@@ -251,7 +251,9 @@ StartupEvents.registry("item", event => {
     event.create("optical_chip")
     event.create("electro_optic_modulator")
     event.create("carbon_mesh_reinforced_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/carbon_mesh_reinforced_circuit_board" })
     event.create("carbon_mesh_reinforced_printed_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/carbon_mesh_reinforced_printed_circuit_board" })
 
 
     // Solidified Elements
@@ -547,20 +549,17 @@ StartupEvents.registry("item", event => {
             .tag(`gtceu:circuits/${volt}`)
     }
 
-    function Unit(theme) {
-        event.create(`${theme}_processing_unit`)
-            .textureJson({ layer0: `kubejs:item/circuits/${theme}_processing_unit` })
-        event.create(`${theme}_circuit_board`)
-            .textureJson({ layer0: `kubejs:item/circuits/${theme}_circuit_board` })
-    }
-
-    Unit("optical")
+    event.create("optical_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/optical_processing_unit" })
     Circuit("optical", "processor", "zpm")
     Circuit("optical", "processor_assembly", "uv")
     Circuit("optical", "processor_computer", "uhv")
     Mainframe("optical", "uev")
 
-    Unit("monic")
+    event.create("monic_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/monic_processing_unit" })
+    event.create("monic_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/monic_circuit_board" })
     Circuit("monic", "processor", "uv")
     Circuit("monic", "processor_assembly", "uhv")
     Circuit("monic", "processor_computer", "uev")
