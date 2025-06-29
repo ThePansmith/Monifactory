@@ -3,7 +3,7 @@
     "group": "berkelium",
     "name": "heb-248",
     "forge_energy": 43200,
-    "heat": 312,
+    "heat": 156,
     "criticality": 32,
     "depletion": 92,
     "efficiency": 170,
