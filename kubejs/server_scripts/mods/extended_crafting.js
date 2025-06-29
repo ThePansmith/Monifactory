@@ -304,6 +304,13 @@ ServerEvents.recipes(event => {
         536870912, 53687091
     )
 
+    // Infinity Ingots
+    event.recipes.extendedcrafting.combination(
+        "gtceu:infinity_ingot",
+        "kubejs:active_prismatic_core", ["4x gtceu:activated_netherite_ingot", "4x gtceu:neutronium_ingot"],
+        320000000, 8000000
+    )
+
     // Luminessence
     event.remove({ id: "extendedcrafting:luminessence" })
     event.remove({ id: /phosphoric_acid_from_apatite/ })

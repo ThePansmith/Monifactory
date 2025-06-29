@@ -209,8 +209,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add(/^enderio:.*_bank$/, Text.red(Text.translatable("enderio.cap_bank.tooltip")));
 
     // Misc
-    tooltip.add("kubejs:eternal_catalyst", Text.darkGray(Text.translatable("kubejs.eternal_catalyst.tooltip")));
-    tooltip.add("kubejs:infinity_catalyst", Text.darkGray(Text.translatable("kubejs.infinity_catalyst.tooltip")));
     tooltip.add("gtceu:infinity_ingot", Text.darkGray(Text.translatable("gtceu.infinity_ingot.tooltip")));
     tooltip.add("gtceu:monium_ingot", Text.darkGray(Text.translatable("gtceu.monium_ingot.tooltip")));
     tooltip.add("extendedcrafting:the_ultimate_catalyst", Text.darkGray(Text.translatable("extendedcrafting.the_ultimate_catalyst.tooltip")));

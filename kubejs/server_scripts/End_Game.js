@@ -330,7 +330,7 @@ ServerEvents.recipes(event => {
         E: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:resonant"}').weakNBT(),
         F: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:fluxed"}').weakNBT(),
         H: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:hardened"}').weakNBT(),
-        I: "kubejs:infinity_catalyst",
+        I: "gtceu:infinity_ingot",
         L: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:leadstone"}').weakNBT(),
         N: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:energetic"}').weakNBT(),
         R: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:reinforced"}').weakNBT(),
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
         "NPPPNPPPN",
         "SNNNNNNNS"
     ], {
-        I: "kubejs:infinity_catalyst",
+        I: "gtceu:infinity_frame",
         N: "gtceu:neutronium_plate",
         P: "gtceu:infinity_plate",
         S: "solarflux:sp_custom_neutronium"
@@ -370,9 +370,9 @@ ServerEvents.recipes(event => {
         "MIXPPZPPVIM",
         "BMMMMMMMMMB"
     ], {
-        A: "kubejs:furious_infinity_catalyst",
+        A: "gtceu:dense_infinity_plate",
         B: "gtceu:monium_block",
-        C: "kubejs:serene_infinity_catalyst",
+        C: "gtceu:dense_infinity_plate",
         E: "solarflux:sp_custom_infinity",
         F: "gtceu:uev_field_generator",
         G: "gtceu:monium_gear",

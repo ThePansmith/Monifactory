@@ -213,14 +213,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/prismac/chromatic_capacitor_magenta")
         .displayName("Chromatic Capacitor: §dMagenta§r")
 
-    // TODO: scrap those cleanly
-    event.create("infinity_catalyst").rarity("epic")
-    event.create("dormant_furious_infinity_catalyst")
-    event.create("furious_infinity_catalyst").rarity("epic")
-    event.create("inert_serene_infinity_catalyst")
-    event.create("serene_infinity_catalyst").rarity("epic")
-    event.create("dormant_infinity_compound_ingot")
-
 
     // Monium
     event.create("field_stabilised_omnic_pulsar_compound") // TODO: rename to Field-Stabilized Prismatic Pulsar Compound
