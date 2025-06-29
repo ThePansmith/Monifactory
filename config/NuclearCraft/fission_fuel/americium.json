@@ -2,7 +2,7 @@
   {
     "group": "americium",
     "name": "hea-242",
-    "forge_energy": 61440,
+    "forge_energy": 107520,
     "heat": 282,
     "criticality": 32,
     "depletion": 92,
@@ -12,7 +12,7 @@
   {
     "group": "americium",
     "name": "lea-242",
-    "forge_energy": 15360,
+    "forge_energy": 26880,
     "heat": 94,
     "criticality": 65,
     "depletion": 74,
