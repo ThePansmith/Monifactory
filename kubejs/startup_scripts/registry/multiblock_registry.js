@@ -621,7 +621,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/machines/electrolyzer", false)
 
     let getMicroverseRecipeModifiers = tier => [
-        GTRecipeModifiers.OC_NON_PERFECT,
+        MoniRecipeModifiers.MICROVERSE_OC,
         (machine, recipe) => recipe.data.getLong("projector_tier") > tier ?
             ModifierFunction.NULL : ModifierFunction.IDENTITY
     ]
