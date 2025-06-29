@@ -1011,10 +1011,6 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(480)
 
-    // 64A energy converters recipe fix
-    event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
-    event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
-
     // Germanium is used in diodes
     event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:small_germanium_dust")
     event.recipes.gtceu.assembler("germanium_smd_diode")
