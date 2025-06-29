@@ -230,10 +230,10 @@ ServerEvents.recipes(event => {
         M: "gtceu:double_crystal_matrix_plate",
         P: "solarflux:sp_custom_neutronium",
         W: "kubejs:hadal_warp_engine",
-        A: "gtceu:uev_robot_arm",
+        A: "gtceu:uhv_robot_arm",
         C: "gtceu:uhv_quantum_chest",
         N: "kubejs:universal_navigator",
-        I: "kubejs:infinity_power_unit",
+        I: "gtceu:large_naquadah_reactor",
         B: "kubejs:universal_warp_core",
         D: "kubejs:universal_warp_controller"
     })

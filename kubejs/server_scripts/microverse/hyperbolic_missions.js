@@ -42,7 +42,8 @@ ServerEvents.recipes(event => {
     // T11MM missions
     microverse_mission(event, 11, 4).forEach(builder => {
         builder
-            .itemInputs("kubejs:universal_navigator", "kubejs:shattered_universe_data", "gtceu:neutronium_drill_head", "kubejs:infinity_catalyst")
+            .itemInputs("kubejs:universal_navigator", "kubejs:shattered_universe_data", "gtceu:neutronium_drill_head", "gtceu:infinity_plate")
+            .inputFluids("gtceu:crude_naquadah_fuel 4000")
             .itemOutputs(
                 "64x kubejs:alien_scrap",
                 "64x kubejs:alien_scrap",
@@ -60,6 +61,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:gravi_star",
                 "64x gtceu:gravi_star"
             )
+            .inputFluids("gtceu:naquadah_fuel 4000")
             .itemOutputs(
                 "64x kubejs:quasi_stable_neutron_star",
                 "64x kubejs:quasi_stable_neutron_star",
