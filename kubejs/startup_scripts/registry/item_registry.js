@@ -144,10 +144,6 @@ StartupEvents.registry("item", event => {
     event.create("corrupted_universe_data").displayName("§dCorrupted Universe Data")
 
 
-    // Creative Data
-    event.create("omnic_data")
-
-
     // Endgame Items
     event.create("neutron_emitter")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
@@ -212,14 +208,6 @@ StartupEvents.registry("item", event => {
     event.create("chromatic_capacitor_magenta")
         .texture("kubejs:item/prismac/chromatic_capacitor_magenta")
         .displayName("Chromatic Capacitor: §dMagenta§r")
-
-    // TODO: scrap those cleanly
-    event.create("infinity_catalyst").rarity("epic")
-    event.create("dormant_furious_infinity_catalyst")
-    event.create("furious_infinity_catalyst").rarity("epic")
-    event.create("inert_serene_infinity_catalyst")
-    event.create("serene_infinity_catalyst").rarity("epic")
-    event.create("dormant_infinity_compound_ingot")
 
 
     // Monium

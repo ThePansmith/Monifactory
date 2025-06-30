@@ -170,13 +170,6 @@ ServerEvents.recipes(event => {
         recipe.replaceInput("gtceu:advanced_smd_diode", "kubejs:complex_smd_diode")
     })
 
-    // Data Stuff
-    event.recipes.gtceu.extractor("omnic_data")
-        .itemInputs("kubejs:heart_of_a_universe")
-        .itemOutputs("kubejs:omnic_data")
-        .duration(1000)
-        .EUt(180000)
-
     // Crystal Chip shit
     event.recipes.gtceu.autoclave("starter_enderium_chip")
         .itemInputs(["gtceu:exquisite_olivine_gem", "gtceu:exquisite_emerald_gem"])

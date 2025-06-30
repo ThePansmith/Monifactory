@@ -26,18 +26,6 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(1966080)
 
-    event.recipes.gtceu.assembly_line("kubejs:omnic_synthesizer")
-        .itemInputs("gtceu:atomic_casing", "6x gtceu:trinaquadalloy_plate", "4x #gtceu:circuits/zpm", "2x gtceu:luv_robot_arm", "2x gtceu:luv_field_generator", "kubejs:abyssal_energy_core")
-        .inputFluids("gtceu:soldering_alloy 1152")
-        .itemOutputs("gtceu:omnic_synthesizer")
-        .stationResearch(b => b
-            .researchStack("gtceu:research_station")
-            .EUt(1966080)
-            .CWUt(128, 512000)
-        )
-        .duration(1200)
-        .EUt(1966080)
-
     // Recipes used to run the creative multiblocks
     event.recipes.gtceu.omnidimensional_power_singularity("kubejs:superfuel_infinite_power")
         .inputFluids("gtceu:naquadah_superfuel 500")

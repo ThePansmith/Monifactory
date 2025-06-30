@@ -304,6 +304,31 @@ ServerEvents.recipes(event => {
         536870912, 53687091
     )
 
+    // Infinity Ingots
+    event.recipes.extendedcrafting.combination(
+        "gtceu:infinity_ingot",
+        "kubejs:active_prismatic_core", ["4x gtceu:activated_netherite_ingot", "4x gtceu:neutronium_ingot"],
+        320000000, 8000000
+    )
+
+    // Omnic Synthesizer
+    event.recipes.extendedcrafting.shaped_table("gtceu:omnic_synthesizer", [
+        "ECFCE",
+        "CALAC",
+        "GLRLG",
+        "CALAC",
+        "ECFCE"
+    ], {
+        E: "gtceu:zpm_emitter",
+        C: "ae2:controller",
+        F: "gtceu:luv_field_generator",
+        A: "gtceu:atomic_casing",
+        L: "#gtceu:circuits/zpm",
+        G: "gtceu:zpm_field_generator",
+        R: "gtceu:research_station",
+    }).id("kubejs:shaped/omnic_synthesizer")
+
+    // Prismatic Focus
     event.recipes.extendedcrafting.combination(
         "monilabs:prismatic_focus",
         "minecraft:beacon", ["gtceu:diamond_lens", "gtceu:emerald_lens", "gtceu:ruby_lens", "gtceu:sapphire_lens", "gtceu:amethyst_lens", "gtceu:lithium_niobate_lens"],
