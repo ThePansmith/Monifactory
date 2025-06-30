@@ -73,8 +73,8 @@ ServerEvents.recipes(event => {
 
     // //// Trees //////
     Greenhouse("gtceu", "rubber_sapling", 1280, ["32x gtceu:rubber_log", "8x gtceu:sticky_resin"], 4)
-    Greenhouse("minecraft", "oak_sapling", 1280, ["64x minecraft:oak_log"], 4)
-    Greenhouse("minecraft", "dark_oak_sapling", 1280, ["64x minecraft:dark_oak_log"], 4)
+    Greenhouse("minecraft", "oak_sapling", 1280, ["64x minecraft:oak_log", "4x minecraft:apple"], 4)
+    Greenhouse("minecraft", "dark_oak_sapling", 1280, ["64x minecraft:dark_oak_log", "4x minecraft:apple"], 4)
     Greenhouse("minecraft", "spruce_sapling", 1280, ["64x minecraft:spruce_log"], 4)
     Greenhouse("minecraft", "birch_sapling", 1280, ["64x minecraft:birch_log"], 4)
     Greenhouse("minecraft", "acacia_sapling", 1280, ["64x minecraft:acacia_log"], 4)

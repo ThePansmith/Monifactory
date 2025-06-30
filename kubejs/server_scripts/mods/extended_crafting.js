@@ -304,6 +304,12 @@ ServerEvents.recipes(event => {
         536870912, 53687091
     )
 
+    event.recipes.extendedcrafting.combination(
+        "monilabs:prismatic_focus",
+        "minecraft:beacon", ["gtceu:diamond_lens", "gtceu:emerald_lens", "gtceu:ruby_lens", "gtceu:sapphire_lens", "gtceu:amethyst_lens", "gtceu:lithium_niobate_lens"],
+        20000000, 2000000
+    )
+
     // Luminessence
     event.remove({ id: "extendedcrafting:luminessence" })
     event.remove({ id: /phosphoric_acid_from_apatite/ })

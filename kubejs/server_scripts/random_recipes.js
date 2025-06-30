@@ -690,9 +690,9 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: /redstone_arsenal/ }, "redstone_arsenal:flux_metal_block", "gtceu:electrum_flux_block")
 
     // Advanced Soldering Alloy
-    event.recipes.gtceu.mixer("soldering_alloy")
+    event.recipes.gtceu.mixer("advanced_soldering_alloy")
         .itemInputs("15x gtceu:bismuth_dust", "11x gtceu:tin_dust", "9x gtceu:zinc_dust", "4x gtceu:germanium_dust")
-        .itemOutputs("39x gtceu:soldering_alloy_dust")
+        .itemOutputs("39x gtceu:advanced_soldering_alloy_dust")
         .duration(700)
         .EUt(480)
         .circuit(2)
@@ -1011,7 +1011,12 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(480)
 
-    // 64A energy converters recipe fix
-    event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
-    event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
+    // Germanium is used in diodes
+    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:small_germanium_dust")
+    event.recipes.gtceu.assembler("germanium_smd_diode")
+        .itemInputs("1x gtceu:germanium_dust", "8x gtceu:fine_platinum_wire")
+        .inputFluids("gtceu:polyethylene 288")
+        .itemOutputs("32x gtceu:smd_diode")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
 })
