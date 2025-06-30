@@ -61,7 +61,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("omnium"))
         .color(0xffffff).iconSet("omnium")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_SMALL_GEAR)
-        .cableProperties(GTValues.V[GTValues.UEV], 32, 8, false)
+        .cableProperties(GTValues.V[GTValues.UEV], 8, 8, false)
 
     event.create("omnic_acid")
         .fluid()
@@ -71,11 +71,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("sculk_superconductor")
-        .ingot().fluid()
         .element(GTElements.get("sculk_superconductor"))
         .color(0xffffff)
         .iconSet("shiny")
-        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
+        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
 
     event.create("netherite_scrap")
@@ -90,7 +89,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("activated_netherite"))
         .color(0x4C484C)
         .iconSet("dull")
-        .cableProperties(GTValues.V[GTValues.UEV], 16, 0, true)
         .fluidPipeProperties(11000, 8500, true, false, true, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
@@ -100,6 +98,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xffffff)
         .iconSet("sculk_alloy")
         .flags(GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_WORKING)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall, TagPrefix.dust])
 
     event.create("infinity")
         .ingot()

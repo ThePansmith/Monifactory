@@ -30,6 +30,8 @@ ServerEvents.recipes(event => {
         ["minecraft:ink_sac", "minecraft:glow_ink_sac", GTValues.VA[GTValues.LV], "glow_ink_sac"],
         ["thermal:rubberwood_sapling", "gtceu:rubber_sapling", GTValues.VA[GTValues.LV], "rubberwood_to_rubber"],
         ["gtceu:rubber_sapling", "thermal:rubberwood_sapling", GTValues.VA[GTValues.LV], "rubber_to_rubberwood"],
+        ["#forge:dyes/red", "minecraft:sweet_berries", GTValues.VA[GTValues.LV], "sweet_berries"],
+        ["minecraft:sweet_berries", "minecraft:glow_berries", GTValues.VA[GTValues.LV], "glow_berries"],
     ]
 
     const crystals = ["enori", "void", "palis", "diamatine", "restonia", "emeradic"]
@@ -83,8 +85,15 @@ ServerEvents.recipes(event => {
             .EUt(eut)
     })
 
+    // P.R.I.S.M. Glass
+    event.recipes.gtceu.atomic_reconstruction("prism_conversion")
+        .itemInputs("kubejs:blue_aligned_glass")
+        .itemOutputs("kubejs:prism_glass")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.UV])
+
     // Universal Circuits
-    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"]
     tiers.forEach((level) => {
         event.recipes.gtceu.atomic_reconstruction(`kubejs:${level}_universal_circuit`)
             .itemInputs(`#gtceu:circuits/${level}`)
@@ -103,8 +112,7 @@ ServerEvents.recipes(event => {
         ["zpm", "naquadah"],
         ["uv", "duranium"],
         ["uhv", "tritanium"],
-        ["uev", "omnium"],
-        ["uiv", "holmium"]
+        ["uev", "omnium"]
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
         event.shaped(`gtceu:${tier}_atomic_reconstructor`, [

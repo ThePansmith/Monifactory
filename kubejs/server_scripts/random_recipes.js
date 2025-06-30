@@ -401,7 +401,7 @@ ServerEvents.recipes(event => {
         S: "gtceu:uhv_sensor",
         C: "#gtceu:circuits/uev",
         E: "gtceu:uhv_emitter",
-        W: "gtceu:activated_netherite_quadruple_wire"
+        W: "gtceu:hyperdegenerate_darconite_quadruple_wire"
     })
 
     event.shaped("gtceu:uev_uev_parallel_hatch", [
@@ -411,9 +411,9 @@ ServerEvents.recipes(event => {
     ], {
         H: "gtceu:uev_machine_hull",
         S: "gtceu:uev_sensor",
-        C: "#gtceu:circuits/uiv",
+        C: "#gtceu:circuits/max",
         E: "gtceu:uev_emitter",
-        W: "gtceu:holmium_quadruple_wire"
+        W: "gtceu:monium_quadruple_wire"
     })
 
     //
@@ -688,20 +688,6 @@ ServerEvents.recipes(event => {
 
     // Electrum
     event.replaceInput({ id: /redstone_arsenal/ }, "redstone_arsenal:flux_metal_block", "gtceu:electrum_flux_block")
-
-    // Americium Plasma
-    event.recipes.gtceu.fusion_reactor("americium_plasma")
-        .inputFluids("gtceu:plutonium_241 144", "gtceu:hydrogen 2000")
-        .outputFluids("gtceu:americium_plasma 144")
-        .duration(64)
-        .EUt(98304)
-        .fusionStartEU(500000000)
-
-    event.recipes.gtceu.plasma_generator("americium_plasma_generator")
-        .inputFluids("gtceu:americium_plasma 1")
-        .outputFluids("gtceu:americium 1")
-        .duration(320)
-        .EUt(-2048)
 
     // Advanced Soldering Alloy
     event.recipes.gtceu.mixer("soldering_alloy")
@@ -1027,19 +1013,5 @@ ServerEvents.recipes(event => {
 
     // 64A energy converters recipe fix
     event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
-    event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:holmium_hex_wire")
     event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
-
-    // Large Boilers fuel rebalance
-    // Balance is based on adjusting to be an improvement over singeblock boilers
-    // High Pressure Steam Boiler consumes 1 coal in 960s, produces 15mb/t, total production = 288,000 mb steam
-    // By Defualt: Large Bronze Boiler consumes 1 coal in 1s, producing 800mb/t, total production = 16,000 mb steam
-    // This is a factor of 18x, we chose x16 for balancing to make Large Boilers 11.1% less efficient as a tradeoff for the extra speed.
-    event.findRecipes({ id: /^gtceu:large_boiler\/.*/, type: "gtceu:large_boiler" }).forEach(large_boiler_recipe => {
-
-        let recipe_duration = large_boiler_recipe.json.getAsJsonPrimitive("duration").asInt
-
-        large_boiler_recipe.json.remove("duration")
-        large_boiler_recipe.json.add("duration", recipe_duration * 16)
-    })
 })

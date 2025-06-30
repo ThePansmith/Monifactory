@@ -15,7 +15,7 @@
 - [Plenty of changes throughout the entire pack, from new multiblocks, to new mods, to new progression](CHANGELOG.md)
 - A complete overhaul of UV+ progression from Nomifactory CEu
 - Draconic Evolution and Avaritia have been replaced with new mechanics involving Sculk
-- A new, Harder difficulty mode for returning Nomi CEu Hard Mode players
+- A new, Expert difficulty mode for returning Nomi CEu Hard Mode players
 - A retexturing of everything to fit the modern style
 - Optional compatibility with various mods, such as Create or XNet
 
@@ -25,6 +25,9 @@
 - README.md adapted from [GregTech CEu](https://github.com/GregTechCEu/GregTech).  
 - Meowni (mascot) by [Mutso](https://bsky.app/profile/did:plc:pgazjc76vpn6mr7rldk56ugq).  
 - Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
+- Unique multi code for the Creative Multiblocks from [CosmicCore](https://github.com/Frontiers-PackForge/CosmicCore), with Caitlynn's gracious permission.
+- Coremod (Moni Labs) by [NegaNote](https://github.com/NegaNote), with help from other contributors, especially [Withers](https://github.com/WithersChat) and [Raine](https://github.com/AE2-Enthusiast).
+
 Thank you!
 
 ## Hard/Expert Mode
@@ -67,7 +70,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
            into Pre-launch command and specify your wanted mode.
 
 - Linux/Apple/GNU:
-1. Open https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh and download the file to your Minecraft / Minecraft instance folder.
+1. Open [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) and download the file to your Minecraft / Minecraft instance folder.
 1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.sh``.
 2. Follow the prompt to select your mode.
 
@@ -76,7 +79,6 @@ To spice up your Monifactory experience, you can add any of the following mods t
 1. [Create](https://www.curseforge.com/minecraft/mc-mods/create)
     1a. [Create: Steam and Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
     1b. [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco)
-    1c. [Create: Estrogen](https://www.curseforge.com/minecraft/mc-mods/estrogen)
 2. [ComputerCraft: Tweaked](https://modrinth.com/mod/cc-tweaked)
     2a. [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 3. [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
@@ -89,7 +91,7 @@ To spice up your Monifactory experience, you can add any of the following mods t
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.
-2. Download the ``47.3.7`` forge installer from [here](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html).
+2. Download the ``47.4.0`` forge installer from [here](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html).
 3. Create a folder for the server (``mkdir MonifactoryServer``, name doesnt matter)
 4. Move the server.zip and forge installer into your server directory. The rest of the guide assumes your current directory is the server directory.
 5. Run the forge installer and install the forge server, this can be done with the command ``java -jar TheForgeInstallerName.jar --installServer``

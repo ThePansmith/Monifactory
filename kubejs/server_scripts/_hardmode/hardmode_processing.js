@@ -394,12 +394,12 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.chemical_reactor("methyl_formate")
             .itemInputs("gtceu:tiny_sodium_methoxide_dust")
-            .inputFluids("gtceu:methanol 1000", "gtceu:carbon_dioxide 1000")
+            .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
             .outputFluids("gtceu:methyl_formate 1000")
             .duration(16).EUt(30)
 
         event.recipes.gtceu.chemical_reactor("formic_acid")
-            .inputFluids("gtceu:methyl_formate 1000", "minecraft:water 3000")
+            .inputFluids("gtceu:methyl_formate 1000", "minecraft:water 1000")
             .outputFluids("gtceu:formic_acid 1000", "gtceu:methanol 1000")
             .duration(16).EUt(30)
 

@@ -39,4 +39,16 @@ ServerEvents.recipes(event => {
         )
         .duration(1200)
         .EUt(1966080)
+
+    // Recipes used to run the creative multiblocks
+    event.recipes.gtceu.omnidimensional_power_singularity("kubejs:superfuel_infinite_power")
+        .inputFluids("gtceu:naquadah_superfuel 500")
+        .duration(20)
+
+    event.recipes.gtceu.omniscience_research_beacon("kubejs:infinite_research")
+        .inputFluids("gtceu:pcb_coolant 1080")
+        .EUt(GTValues.VA[GTValues.UHV])
+        .CWUt(256)
+        .duration(20)
+
 })

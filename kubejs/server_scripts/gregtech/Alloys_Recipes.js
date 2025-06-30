@@ -46,9 +46,9 @@ ServerEvents.recipes(event => {
         "gtceu:electrical_steel_ingot", 6, 16);
 
     alloySmeltingVariant(
-        ["#forge:ingots/steel", "#forge:dusts/steel"],
+        ["4x #forge:ingots/steel", "4x #forge:dusts/steel"],
         ["#forge:dusts/boron"],
-        "2x nuclearcraft:ferroboron_ingot", 15, 120);
+        "5x nuclearcraft:ferroboron_ingot", 15, 120);
 
     alloySmeltingVariant(
         ["#forge:ingots/gold", "#forge:dusts/gold"],
@@ -168,6 +168,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer("kubejs:manyullyn_dust")
         .itemInputs("4x gtceu:ardite_dust", "4x gtceu:cobalt_dust")
         .itemOutputs("9x gtceu:manyullyn_dust")
+        .inputFluids(Fluid.of("gtceu:mana", 1000))
+        .duration(400)
+        .EUt(30)
+
+    event.recipes.gtceu.mixer("kubejs:fluxed_ardite_dust")
+        .itemInputs("4x gtceu:ardite_dust", "2x gtceu:electrum_flux_dust")
+        .itemOutputs("7x gtceu:fluxed_ardite_dust")
         .inputFluids(Fluid.of("gtceu:mana", 1000))
         .duration(400)
         .EUt(30)

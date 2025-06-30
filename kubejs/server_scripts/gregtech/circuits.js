@@ -56,17 +56,17 @@ ServerEvents.recipes(event => {
 
     // Complex SMDs
     const smds = [
-        ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_holmium_wire", 2],
-        ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_holmium_wire", 4],
-        ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:holmium_foil", 1],
-        ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_holmium_wire", 2],
-        ["inductor", "gtceu:iron_neodymium_terbium_neutronate_ring", "4x gtceu:fine_holmium_wire", 2]
+        ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_necrosiderite_wire", 72],
+        ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_necrosiderite_wire", 144],
+        ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:necrosiderite_foil", 36],
+        ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_necrosiderite_wire", 72],
+        ["inductor", "gtceu:terbium_ring", "4x gtceu:fine_necrosiderite_wire", 72]
     ]
 
-    for (const [item, primary, secondary, foil_amount] of smds) {
+    for (const [item, primary, secondary, plastic_amount] of smds) {
         event.recipes.gtceu.assembler(`complex_smd_${item}`)
-            // PECA foil is used since other electronic component recipes use fluid polymers
-            .itemInputs(primary, secondary, Item.of("gtceu:polyethyl_cyanoacrylate_foil", foil_amount))
+            .itemInputs(primary, secondary)
+            .inputFluids(`gtceu:polyethyl_cyanoacrylate ${plastic_amount}`)
             .itemOutputs(`64x kubejs:complex_smd_${item}`)
             .duration(160)
             .EUt(245760)
@@ -198,126 +198,98 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(80000)
 
-
-    // WIP: Matter Circuits
-    let plasticBoard;
-    if (doHarderRecipes) plasticBoard = "16x gtceu:kapton_k_plate"
-    else plasticBoard = "16x gtceu:polyethyl_cyanoacrylate_plate"
-    event.recipes.gtceu.circuit_assembler("matter_circuit_board")
+    event.recipes.gtceu.circuit_assembler("optical_processor")
         .itemInputs(
-            plasticBoard,
-            "16x gtceu:omnium_plate",
-            "#gtceu:circuits/luv",
-            "gtceu:iv_emitter",
-            "3x gtceu:flawless_monazite_gem"
-        )
-        .inputFluids("gtceu:omnic_acid 2000")
-        .itemOutputs("32x kubejs:matter_circuit_board")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(1200)
-        .EUt(250000)
-
-    event.recipes.gtceu.large_chemical_reactor("matter_processing_unit")
-        .itemInputs("1x kubejs:matter_circuit_board", "10x gtceu:activated_netherite_foil", "6x gtceu:crystal_matrix_foil")
-        .inputFluids("gtceu:iron_iii_chloride 7500")
-        .itemOutputs("1x kubejs:matter_processing_unit")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(100)
-        .EUt(250000)
-
-    event.recipes.gtceu.circuit_assembler("matter_processor")
-        .itemInputs(
-            "kubejs:matter_processing_unit",
-            "2x kubejs:multidimensional_cpu_chip",
-            "10x gtceu:advanced_smd_resistor",
+            "1x kubejs:optical_processing_unit",
+            "1x kubejs:optical_chip",
+            "2x kubejs:electro_optic_modulator",
             "10x gtceu:advanced_smd_capacitor",
             "10x gtceu:advanced_smd_transistor",
             "4x gtceu:fine_naquadria_wire"
         )
         .inputFluids("gtceu:soldering_alloy 144")
-        .itemOutputs("2x kubejs:matter_processor")
+        .itemOutputs("2x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(10 * 20)
-        .EUt(250000)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.circuit_assembler("matter_processor_complex_smd")
+    event.recipes.gtceu.circuit_assembler("optical_processor_complex_smd")
         .itemInputs(
-            "2x kubejs:matter_processing_unit",
-            "4x kubejs:multidimensional_cpu_chip",
-            "5x kubejs:complex_smd_resistor",
+            "2x kubejs:optical_processing_unit",
+            "2x kubejs:optical_chip",
+            "4x kubejs:electro_optic_modulator",
             "5x kubejs:complex_smd_capacitor",
             "5x kubejs:complex_smd_transistor",
             "8x gtceu:fine_naquadria_wire"
         )
         .inputFluids("gtceu:soldering_alloy 288")
-        .itemOutputs("4x kubejs:matter_processor")
+        .itemOutputs("4x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(10 * 20 / 2)
-        .EUt(250000)
+        .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.circuit_assembler("matter_processor_assembly")
-        .itemInputs("kubejs:matter_processing_unit",
-            "2x kubejs:matter_processor",
+    event.recipes.gtceu.assembly_line("optical_processor_assembly")
+        .itemInputs("kubejs:optical_processing_unit",
+            "2x kubejs:optical_processor",
             "8x gtceu:advanced_smd_inductor",
             "8x gtceu:advanced_smd_capacitor",
+            "8x gtceu:rhodium_foil",
             "32x gtceu:ram_chip",
             "16x gtceu:fine_europium_wire"
         )
         .inputFluids("gtceu:soldering_alloy 1152")
-        .itemOutputs("2x kubejs:matter_processor_assembly")
+        .itemOutputs("2x kubejs:optical_processor_assembly")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(20 * 20)
         .EUt(250000)
 
-    event.recipes.gtceu.circuit_assembler("matter_processor_assembly_complex_smd")
-        .itemInputs("kubejs:matter_processing_unit",
-            "2x kubejs:matter_processor",
+    event.recipes.gtceu.assembly_line("optical_processor_assembly_complex_smd")
+        .itemInputs("kubejs:optical_processing_unit",
+            "2x kubejs:optical_processor",
             "2x kubejs:complex_smd_inductor",
             "2x kubejs:complex_smd_capacitor",
+            "8x gtceu:rhodium_foil",
             "32x gtceu:ram_chip",
             "16x gtceu:fine_europium_wire"
         )
         .inputFluids("gtceu:soldering_alloy 1152")
-        .itemOutputs("2x kubejs:matter_processor_assembly")
-        .cleanroom(CleanroomType.CLEANROOM)
+        .itemOutputs("2x kubejs:optical_processor_assembly")
         .duration(20 * 20 / 2)
         .EUt(250000)
 
-    event.recipes.gtceu.assembly_line("matter_processor_computer")
+    event.recipes.gtceu.assembly_line("optical_processor_computer")
         .itemInputs(
-            "kubejs:matter_processing_unit",
-            "2x kubejs:matter_processor_assembly",
+            "kubejs:optical_processing_unit",
+            "2x kubejs:optical_processor_assembly",
             "12x gtceu:advanced_smd_diode",
             "24x gtceu:nor_memory_chip",
             "8x kubejs:uxpic_chip",
             "24x gtceu:fine_europium_wire",
-            "8x gtceu:polyethyl_cyanoacrylate_foil",
             "4x gtceu:crystal_matrix_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:omnium 144")
-        .itemOutputs("kubejs:matter_processor_computer")
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 144", "gtceu:omnium 144")
+        .itemOutputs("kubejs:optical_processor_computer")
         .duration(20 * 20)
         .EUt(250000)
 
-    event.recipes.gtceu.assembly_line("matter_processor_computer_complex_smd")
+    event.recipes.gtceu.assembly_line("optical_processor_computer_complex_smd")
         .itemInputs(
-            "kubejs:matter_processing_unit",
-            "2x kubejs:matter_processor_assembly",
+            "kubejs:optical_processing_unit",
+            "2x kubejs:optical_processor_assembly",
             "3x kubejs:complex_smd_diode",
             "24x gtceu:nor_memory_chip",
             "8x kubejs:uxpic_chip",
             "24x gtceu:fine_europium_wire",
-            "8x gtceu:polyethyl_cyanoacrylate_foil",
             "4x gtceu:crystal_matrix_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:omnium 144")
-        .itemOutputs("kubejs:matter_processor_computer")
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 288", "gtceu:omnium 144")
+        .itemOutputs("kubejs:optical_processor_computer")
         .duration(20 * 20 / 2)
         .EUt(250000)
 
-    event.recipes.gtceu.assembly_line("matter_processor_mainframe")
+    event.recipes.gtceu.assembly_line("optical_processor_mainframe")
         .itemInputs("2x gtceu:activated_netherite_frame",
-            "2x kubejs:matter_processor_computer",
+            "2x kubejs:optical_processor_computer",
             "32x gtceu:advanced_smd_diode",
             "32x gtceu:advanced_smd_capacitor",
             "32x gtceu:advanced_smd_transistor",
@@ -326,16 +298,15 @@ ServerEvents.recipes(event => {
             "32x gtceu:ram_chip",
             "16x kubejs:multidimensional_cpu_chip",
             "16x gtceu:ruthenium_trinium_americium_neutronate_double_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
             "8x gtceu:crystal_matrix_plate") // could replace with omnium frame
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 288")
-        .itemOutputs("kubejs:matter_processor_mainframe")
+        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 288")
+        .itemOutputs("kubejs:optical_processor_mainframe")
         .duration(2400)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    event.recipes.gtceu.assembly_line("matter_processor_mainframe_complex_smd")
+    event.recipes.gtceu.assembly_line("optical_processor_mainframe_complex_smd")
         .itemInputs("2x gtceu:activated_netherite_frame",
-            "2x kubejs:matter_processor_computer",
+            "2x kubejs:optical_processor_computer",
             "8x kubejs:complex_smd_diode",
             "8x kubejs:complex_smd_capacitor",
             "8x kubejs:complex_smd_transistor",
@@ -344,115 +315,20 @@ ServerEvents.recipes(event => {
             "32x gtceu:ram_chip",
             "16x kubejs:multidimensional_cpu_chip",
             "16x gtceu:ruthenium_trinium_americium_neutronate_double_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
             "8x gtceu:crystal_matrix_plate") // could replace with omnium frame
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 288")
-        .itemOutputs("kubejs:matter_processor_mainframe")
+        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 288")
+        .itemOutputs("kubejs:optical_processor_mainframe")
         .duration(2400 / 2)
         .EUt(GTValues.VA[GTValues.UHV])
 
-    // WIP: Dimensional Circuits
-    event.recipes.gtceu.circuit_assembler("dimensional_circuit_board")
-        .itemInputs(
-            "32x gtceu:polyethyl_cyanoacrylate_plate",
-            "4x gtceu:infinity_plate",
-            "#gtceu:circuits/zpm",
-            "gtceu:luv_sensor",
-            "3x kubejs:the_ultimate_material",
-            "2x gtceu:nether_star_lens"
-        )
-        .inputFluids("gtceu:omnium 288")
-        .itemOutputs("32x kubejs:dimensional_circuit_board")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(1200)
-        .EUt(500000)
-
-    event.recipes.gtceu.large_chemical_reactor("dimensional_processing_unit")
-        .itemInputs("1x kubejs:dimensional_circuit_board", "12x gtceu:holmium_foil", "6x gtceu:activated_netherite_foil")
-        .inputFluids("gtceu:iron_iii_chloride 10000")
-        .itemOutputs("1x kubejs:dimensional_processing_unit")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(100)
-        .EUt(1966080)
-
-    event.recipes.gtceu.circuit_assembler("dimensional_processor")
-        .itemInputs(
-            "kubejs:dimensional_processing_unit",
-            "3x kubejs:multidimensional_cpu_chip",
-            "4x kubejs:complex_smd_resistor",
-            "4x kubejs:complex_smd_capacitor",
-            "4x kubejs:complex_smd_transistor",
-            "2x gtceu:fine_holmium_wire"
-        )
-        .inputFluids("gtceu:soldering_alloy 144")
-        .itemOutputs("2x kubejs:dimensional_processor")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(10 * 20)
-        .EUt(1966080)
-
-    event.recipes.gtceu.circuit_assembler("dimensional_processor_assembly")
-        .itemInputs(
-            "kubejs:dimensional_processing_unit",
-            "2x kubejs:dimensional_processor",
-            "4x kubejs:complex_smd_inductor",
-            "4x kubejs:complex_smd_capacitor",
-            "4x kubejs:hyperdynamic_ram_chip",
-            "16x gtceu:fine_activated_netherite_wire"
-        )
-        .inputFluids("gtceu:soldering_alloy 1152")
-        .itemOutputs("2x kubejs:dimensional_processor_assembly")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(20 * 20)
-        .EUt(1966080)
-
-    event.recipes.gtceu.assembly_line("dimensional_processor_computer")
-        .itemInputs(
-            "kubejs:dimensional_processing_unit",
-            "2x kubejs:dimensional_processor_assembly",
-            "8x kubejs:complex_smd_diode",
-            "32x gtceu:nor_memory_chip",
-            "12x kubejs:multidimensional_cpu_chip",
-            "16x kubejs:hyperdynamic_ram_chip",
-            "16x kubejs:uxpic_chip",
-            "24x gtceu:fine_activated_netherite_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
-            "4x gtceu:holmium_plate"
-        )
-        .inputFluids("gtceu:soldering_alloy 1152")
-        .itemOutputs("kubejs:dimensional_processor_computer")
-        .duration(20 * 20)
-        .EUt(1966080)
-
-    event.recipes.gtceu.assembly_line("dimensional_processor_mainframe")
-        .itemInputs(
-            "2x gtceu:infinity_frame",
-            "2x kubejs:dimensional_processor_computer",
-            "32x kubejs:complex_smd_diode",
-            "32x kubejs:complex_smd_capacitor",
-            "32x kubejs:complex_smd_transistor",
-            "32x kubejs:complex_smd_resistor",
-            "32x kubejs:complex_smd_inductor",
-            "32x gtceu:nand_memory_chip",
-            "24x kubejs:multidimensional_cpu_chip",
-            "32x kubejs:hyperdynamic_ram_chip",
-            "16x gtceu:activated_netherite_double_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
-            "8x gtceu:holmium_plate"
-        )
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 576")
-        .itemOutputs("kubejs:dimensional_processor_mainframe")
-        .duration(2400)
-        .EUt(GTValues.VA[GTValues.UEV])
-
-
     // Monic Circuits
     event.recipes.gtceu.circuit_assembler("monic_circuit_board")
-        .itemInputs("32x kubejs:dimensional_circuit_board",
+        .itemInputs("32x kubejs:carbon_mesh_reinforced_printed_circuit_board",
             "2x gtceu:monium_plate",
             "#gtceu:circuits/uv",
             "gtceu:zpm_field_generator",
             "1x kubejs:quasi_stable_neutron_star",
-            "2x kubejs:ultimate_gem"
+            "3x gtceu:gemstone_empowered_gem"
         )
         .inputFluids("gtceu:omnium 576")
         .itemOutputs("32x kubejs:monic_circuit_board")
@@ -461,7 +337,7 @@ ServerEvents.recipes(event => {
         .EUt(2000000)
 
     event.recipes.gtceu.large_chemical_reactor("monic_processing_unit")
-        .itemInputs("1x kubejs:monic_circuit_board", "6x gtceu:monium_single_wire", "8x gtceu:holmium_foil")
+        .itemInputs("1x kubejs:monic_circuit_board", "6x gtceu:monium_single_wire", "8x gtceu:necrosiderite_foil")
         .inputFluids("gtceu:iron_iii_chloride 12000")
         .itemOutputs("1x kubejs:monic_processing_unit")
         .cleanroom(CleanroomType.CLEANROOM)
@@ -475,7 +351,7 @@ ServerEvents.recipes(event => {
             "8x kubejs:complex_smd_resistor",
             "8x kubejs:complex_smd_capacitor",
             "8x kubejs:complex_smd_transistor",
-            "16x gtceu:fine_holmium_wire"
+            "16x gtceu:fine_necrosiderite_wire"
         )
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("2x kubejs:monic_processor")
@@ -490,7 +366,7 @@ ServerEvents.recipes(event => {
             "8x kubejs:complex_smd_inductor",
             "8x kubejs:complex_smd_capacitor",
             "8x kubejs:hyperdynamic_ram_chip",
-            "16x gtceu:fine_holmium_wire"
+            "16x gtceu:fine_necrosiderite_wire"
         )
         .inputFluids("gtceu:soldering_alloy 1152")
         .itemOutputs("2x kubejs:monic_processor_assembly")
@@ -509,11 +385,10 @@ ServerEvents.recipes(event => {
             "24x kubejs:hyperdynamic_ram_chip",
             "16x kubejs:quantum_soc_chip",
             "24x kubejs:uxpic_chip",
-            "24x gtceu:fine_holmium_wire",
-            "32x gtceu:polyethyl_cyanoacrylate_foil",
+            "24x gtceu:fine_necrosiderite_wire",
             "4x gtceu:infinity_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 1152")
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("1x kubejs:monic_processor_computer")
         .duration(20 * 20)
         .EUt(3932160)
@@ -533,24 +408,23 @@ ServerEvents.recipes(event => {
             "64x kubejs:multidimensional_cpu_chip",
             "64x kubejs:hyperdynamic_ram_chip",
             "64x kubejs:quantum_soc_chip",
-            "16x gtceu:holmium_double_wire",
-            "16x gtceu:polyethyl_cyanoacrylate_foil",
+            "16x gtceu:necrosiderite_double_wire",
             "8x gtceu:infinity_plate"
         )
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:omnium 1152")
+        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 1152")
         .itemOutputs("kubejs:monic_processor_mainframe")
         .duration(3200)
         .EUt(GTValues.VA[GTValues.UIV])
 
-    // SoC recipe for cheaper matter processor
-    event.recipes.gtceu.circuit_assembler("matter_processor_soc")
+    // SoC recipe for cheaper Optical Processor
+    event.recipes.gtceu.circuit_assembler("optical_processor_soc")
         .itemInputs(
-            "kubejs:matter_processing_unit",
+            "kubejs:optical_processing_unit",
             "kubejs:quantum_soc_chip",
             "8x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
             "8x gtceu:activated_netherite_bolt"
         )
-        .itemOutputs("4x kubejs:matter_processor")
+        .itemOutputs("4x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(5 * 20)
         .EUt(3932160)

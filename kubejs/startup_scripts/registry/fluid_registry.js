@@ -27,4 +27,21 @@ StartupEvents.registry("fluid", event => {
         .displayName("§7Zephyrean Aerotheum") // gray
         .stillTexture("kubejs:block/aerotheum_still")
         .flowingTexture("kubejs:block/aerotheum_flow");
+
+    // Antimatter
+    const antimatter_types = ["bosonic", "hadronic", "fermionic"]
+    antimatter_types.forEach(type => {
+        event.create(`${type}_antimatter`)
+            .displayName(`${capitalize(type)} Antimatter`)
+            .bucketColor(Color.rgba(27, 12, 39, 255))
+            .stillTexture(`kubejs:block/antimatter/${type}`)
+        event.create(`refined_${type}_antimatter`)
+            .displayName(`Refined ${capitalize(type)} Antimatter`)
+            .stillTexture(`kubejs:block/antimatter/refined_${type}`)
+            .bucketColor(Color.rgba(41, 19, 59, 255))
+    })
+    event.create("antimatter_fuel")
+        .displayName("Antimatter Fuel")
+        .bucketColor(Color.rgba(99, 18, 110, 255))
+        .stillTexture("kubejs:block/antimatter/fuel")
 })

@@ -249,6 +249,23 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         ])
 })
 
+// Empowered Gemstone
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("gemstone_empowered")
+        .gem()
+        .color(0x0066ff).secondaryColor(0x000099) // Rainbow Effect?
+        .iconSet(GTMaterialIconSet.DIAMOND)
+        .components("1x restonia_empowered", "1x enori_empowered", "1x void_empowered", "1x palis_empowered", "1x diamatine_empowered", "1x emeradic_empowered")
+        .ignoredTagPrefixes([
+            TagPrefix.dust,
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.rod,
+        ])
+})
+
 
 // Sunnarium
 GTCEuStartupEvents.registry("gtceu:material", event => {
@@ -322,22 +339,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("1x terbium", "3x chlorine")
         .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("iron_neodymium_terbium_neutronate")
-        .ingot().fluid()
-        .color(0x7d652d).secondaryColor(0x88f2d3)
-        .iconSet("radioactive")
-        .blastTemp(10800, "higher", 524288, 600)
-        .components("4x iron", "3x neodymium", "6x terbium", "2x neutronium", "8x oxygen")
-        .flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING)
-
-    event.create("magnetic_iron_neodymium_terbium_neutronate")
+    event.create("magnetic_terbium")
         .ingot()
-        .components("4x iron", "3x neodymium", "6x terbium", "2x neutronium", "8x oxygen")
-        .color(0xb5982f)
+        .components("terbium")
+        .color(0xcedab4).secondaryColor(0x263640)
         .iconSet(GTMaterialIconSet.MAGNETIC)
-        .ingotSmeltInto(GTMaterials.get("gtceu:iron_neodymium_terbium_neutronate"))
-        .arcSmeltInto(GTMaterials.get("iron_neodymium_terbium_neutronate"))
-        .macerateInto(GTMaterials.get("iron_neodymium_terbium_neutronate"))
+        .ingotSmeltInto(GTMaterials.get("gtceu:terbium"))
+        .arcSmeltInto(GTMaterials.get("terbium"))
+        .macerateInto(GTMaterials.get("terbium"))
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
 })
 
@@ -425,10 +434,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluid()
         .color(0xF16AA5)
 
-    event.create("holmium_oxide")
+    event.create("necrosiderite_oxide")
         .dust()
         .color(0xD29092)
-        .components("2x holmium", "3x oxygen")
+        .components("2x necrosiderite", "3x oxygen")
 
     event.create("waste_gas_mixture")
         .fluid()
@@ -450,7 +459,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xe8543a).secondaryColor(0x684a09).iconSet(GTMaterialIconSet.SAND)
         .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
-    event.create("saline_antisceptic")
+    event.create("saline_antiseptic")
         .fluid()
         .color(0x99dce5)
 

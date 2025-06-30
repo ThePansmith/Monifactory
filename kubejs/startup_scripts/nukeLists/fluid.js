@@ -48,18 +48,6 @@ global.fluidNukeList = [
 
 ]
 
-// Create: Estrogen Compat
-if (Platform.isLoaded("estrogen")) {
-    global.fluidNukeList.push(
-        "estrogen:horse_urine",
-        "estrogen:filtrated_horse_urine",
-        "estrogen:molten_slime",
-        "estrogen:molten_amethyst",
-        "estrogen:testosterone_mixture"
-    )
-}
-
-
 StartupEvents.postInit(event => {
     /**
      * NuclearCraft is most easily dealt with by removing *everything* but a select few fluids
