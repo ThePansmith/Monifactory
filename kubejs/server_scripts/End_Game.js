@@ -5,8 +5,8 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("neutron_emitter")
-        .itemInputs("4x gtceu:double_neutronium_plate", "6x gtceu:graphene_foil", "4x gtceu:polybenzimidazole_plate")
-        .inputFluids("gtceu:tin_alloy 4608")
+        .itemInputs("6x gtceu:graphene_foil", "4x gtceu:polybenzimidazole_plate", "1x gtceu:dense_rhodium_plated_palladium_plate",)
+        .inputFluids("gtceu:californium 288")
         .itemOutputs("kubejs:neutron_emitter")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UV])

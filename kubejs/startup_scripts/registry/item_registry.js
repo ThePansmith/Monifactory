@@ -285,6 +285,9 @@ StartupEvents.registry("item", event => {
     event.create("dense_helium").rarity("Uncommon")
     event.create("ultra_dense_helium").rarity("Rare")
 
+    // Einsteinium Isotope for fission production of Es
+    event.create("nuclearcraft:einsteinium_252")
+
     // Stabilized Elements
     const stabilized_elements = [
         ["einsteinium", "#ce9f00"],

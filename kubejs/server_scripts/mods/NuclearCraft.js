@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
     decompdepleted("neptunium_hen_236", "nuclearcraft:plutonium_238", "16x gtceu:uranium_nugget", "8x gtceu:plutonium_nugget", "4x nuclearcraft:plutonium_242", GTValues.LuV)
     decompdepleted("plutonium_lep_239", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_243", "8x gtceu:plutonium_nugget", "3x nuclearcraft:curium_246", GTValues.LuV)
     decompdepleted("plutonium_hep_239", "nuclearcraft:americium_241", "3x nuclearcraft:americium_242", "nuclearcraft:curium_245", "3x nuclearcraft:curium_246", GTValues.LuV)
-    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:plutonium_242", "nuclearcraft:americium_243", "6x nuclearcraft:curium_246", GTValues.LuV)
+    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:plutonium_238", "nuclearcraft:americium_243", "6x nuclearcraft:curium_246", GTValues.LuV)
     decompdepleted("plutonium_hep_241", "nuclearcraft:americium_241", "nuclearcraft:curium_245", "3x nuclearcraft:curium_246", "3x nuclearcraft:curium_247", GTValues.LuV)
     decompdepleted("americium_lea_242", "nuclearcraft:curium_243", "nuclearcraft:curium_245", "5x nuclearcraft:curium_246", "nuclearcraft:curium_247", GTValues.LuV)
     decompdepleted("americium_hea_242", "2x nuclearcraft:curium_245", "4x nuclearcraft:curium_246", "nuclearcraft:curium_247", "nuclearcraft:berkelium_247", GTValues.LuV)
@@ -86,12 +86,12 @@ ServerEvents.recipes(event => {
     decompdepleted("curium_hecm_245", "6x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", "nuclearcraft:californium_251", GTValues.ZPM)
     decompdepleted("curium_lecm_247", "3x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_251", "4x nuclearcraft:californium_252", GTValues.ZPM)
     decompdepleted("curium_hecm_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", "3x nuclearcraft:californium_251", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("berkelium_leb_248", "nuclearcraft:californium_249", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("berkelium_heb_248", "nuclearcraft:californium_250", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("californium_lecf_249", "2x nuclearcraft:californium_250", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "8x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_hecf_249", "4x nuclearcraft:californium_250", "2x nuclearcraft:californium_251", "nuclearcraft:californium_252", "12x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_lecf_251", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "8x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_hecf_251", "2x nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "16x gtceu:actinium_nugget", GTValues.ZPM)
+    decompdepleted("berkelium_leb_248", "nuclearcraft:californium_249", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("berkelium_heb_248", "nuclearcraft:californium_250", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("californium_lecf_249", "2x nuclearcraft:californium_250", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("californium_hecf_249", "3x nuclearcraft:californium_250", "2x nuclearcraft:californium_251", "nuclearcraft:californium_252", "3x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("californium_lecf_251", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:einsteinium_252", "2x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("californium_hecf_251", "2x nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:einsteinium_252", "4x nuclearcraft:einsteinium_252", GTValues.ZPM)
 
 
     function cansolid(name, input) {
