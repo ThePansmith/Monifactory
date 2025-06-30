@@ -499,7 +499,7 @@
 				type: "gamestage"
 			}]
 			x: -7.5d
-			y: 0.75d
+			y: -1.75d
 		}
 		{
 			id: "0412D46926C075FF"
@@ -517,8 +517,8 @@
 				stage: "dontQuantumCoolant"
 				type: "gamestage"
 			}]
-			x: -6.25d
-			y: 0.75d
+			x: -7.5d
+			y: -0.5d
 		}
 	]
 	title: "{moni.chapter.1956832191841F25.title}"
