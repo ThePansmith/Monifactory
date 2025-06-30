@@ -701,6 +701,52 @@ ServerEvents.recipes(event => {
     event.shapeless("ae2:fluix_smart_cable", ["ae2:fluix_covered_cable", "#forge:small_dusts/redstone", "#forge:small_dusts/glowstone"])
         .id("ae2:network/cables/smart_fluix")
 
+    // Terminal
+    event.remove({ id: "ae2:network/parts/terminals" })
+    event.shapeless("ae2:terminal", ["#ae2:illuminated_panel", "#gtceu:circuits/lv"]).id("kubejs:ae2_terminal")
+
+    // Cable stuff
+    const colors = ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray", "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow"]
+
+    function washToFluix(wash) {
+        event.shaped(`8x ae2:fluix_${wash}_cable`, [
+            "CCC",
+            "CDC",
+            "CCC"
+        ], {
+            C: `#ae2:${wash}_cable`,
+            D: "#ae2:can_remove_color"
+        })
+    }
+
+    function coveredDenseCable(color) {
+        event.shaped(`ae2:${color}_covered_dense_cable`, [
+            "CC",
+            "CC"
+        ], {
+            C: `ae2:${color}_covered_cable`
+        })
+    }
+
+    function smartDenseCable(color) {
+        event.shaped(`ae2:${color}_smart_dense_cable`, [
+            "CC",
+            "CC"
+        ], {
+            C: `ae2:${color}_smart_cable`
+        })
+    }
+
+
+    washToFluix("covered")
+    washToFluix("covered_dense")
+    washToFluix("smart_dense")
+    washToFluix("glass")
+    washToFluix("smart")
+
+    colors.forEach(coveredDenseCable)
+    colors.forEach(smartDenseCable)
+
     event.recipes.gtceu.assembler("kubejs:ae2/fluix_covered_cable_rubber")
         .itemInputs("#ae2:glass_cable")
         .inputFluids("gtceu:rubber 144")
@@ -719,11 +765,14 @@ ServerEvents.recipes(event => {
         .itemOutputs("ae2:fluix_covered_cable")
         .duration(100)
         .EUt(GTValues.VA[GTValues.ULV])
-    event.recipes.gtceu.assembler("kubejs:ae2/fluix_covered_cable_wool")
-        .itemInputs("#ae2:glass_cable", "#minecraft:wool_carpets")
-        .itemOutputs("ae2:fluix_covered_cable")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.ULV])
+
+    colors.forEach(color => {
+        event.recipes.gtceu.assembler(`kubejs:ae2/fluix_covered_cable_wool_${color}`)
+            .itemInputs("#ae2:glass_cable", `#chipped:${color}_carpet`)
+            .itemOutputs(`ae2:${color}_covered_cable`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.ULV])
+    })
 
     // Presses
     function pressengrave(name, press, lens) {
@@ -1184,54 +1233,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("ae2:quartz_vibrant_glass")
         .duration(200)
         .EUt("128")
-
-    // Terminal
-    event.remove({ id: "ae2:network/parts/terminals" })
-    event.shapeless("ae2:terminal", ["#ae2:illuminated_panel", "#gtceu:circuits/lv"]).id("kubejs:ae2_terminal")
-
-    // Cable stuff
-    const colors = ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray", "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow"]
-
-    function washToFluix(wash) {
-        event.shaped(`8x ae2:fluix_${wash}_cable`, [
-            "CCC",
-            "CDC",
-            "CCC"
-        ], {
-            C: `#ae2:${wash}_cable`,
-            D: "#ae2:can_remove_color"
-        })
-    }
-
-    function coveredDenseCable(color) {
-        event.shaped(`ae2:${color}_covered_dense_cable`, [
-            "CC",
-            "CC"
-        ], {
-            C: `ae2:${color}_covered_cable`
-        })
-    }
-
-    function smartDenseCable(color) {
-        event.shaped(`ae2:${color}_smart_dense_cable`, [
-            "CC",
-            "CC"
-        ], {
-            C: `ae2:${color}_smart_cable`
-        })
-    }
-
-
-    washToFluix("covered")
-    washToFluix("covered_dense")
-    washToFluix("smart_dense")
-    washToFluix("glass")
-    washToFluix("smart")
-
-    //    colors.forEach(coloredCoveredCable)
-    colors.forEach(coveredDenseCable)
-    colors.forEach(smartDenseCable)
-
 
     // BetterP2P
     event.shapeless("betterp2p:advanced_memory_card", ["ae2:memory_card", "ae2:network_tool"])
