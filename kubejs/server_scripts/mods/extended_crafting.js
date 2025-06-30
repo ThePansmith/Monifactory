@@ -311,6 +311,23 @@ ServerEvents.recipes(event => {
         320000000, 8000000
     )
 
+    // Omnic Synthesizer
+    event.recipes.extendedcrafting.shaped_table("gtceu:omnic_synthesizer", [
+        "ECFCE",
+        "CALAC",
+        "GLRLG",
+        "CALAC",
+        "ECFCE"
+    ], {
+        E: "gtceu:zpm_emitter",
+        C: "ae2:controller",
+        F: "gtceu:luv_field_generator",
+        A: "gtceu:atomic_casing",
+        L: "#gtceu:circuits/zpm",
+        G: "gtceu:zpm_field_generator",
+        R: "gtceu:research_station",
+    }).id("kubejs:shaped/omnic_synthesizer")
+
     // Luminessence
     event.remove({ id: "extendedcrafting:luminessence" })
     event.remove({ id: /phosphoric_acid_from_apatite/ })

@@ -144,10 +144,6 @@ StartupEvents.registry("item", event => {
     event.create("corrupted_universe_data").displayName("§dCorrupted Universe Data")
 
 
-    // Creative Data
-    event.create("omnic_data")
-
-
     // Endgame Items
     event.create("neutron_emitter")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
