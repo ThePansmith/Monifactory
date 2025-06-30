@@ -328,6 +328,13 @@ ServerEvents.recipes(event => {
         R: "gtceu:research_station",
     }).id("kubejs:shaped/omnic_synthesizer")
 
+  // Prismatic Focus  
+  event.recipes.extendedcrafting.combination(
+        "monilabs:prismatic_focus",
+        "minecraft:beacon", ["gtceu:diamond_lens", "gtceu:emerald_lens", "gtceu:ruby_lens", "gtceu:sapphire_lens", "gtceu:amethyst_lens", "gtceu:lithium_niobate_lens"],
+        20000000, 2000000
+    )
+
     // Luminessence
     event.remove({ id: "extendedcrafting:luminessence" })
     event.remove({ id: /phosphoric_acid_from_apatite/ })

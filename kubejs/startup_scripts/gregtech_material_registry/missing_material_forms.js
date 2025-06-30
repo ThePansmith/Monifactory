@@ -22,7 +22,6 @@ let addFluid = (mat, key, temp) => {
 GTCEuStartupEvents.registry("gtceu:material", event => {
     // Existing materials that get an item form
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
-    GTMaterials.Lutetium.addFlags(GTMaterialFlags.GENERATE_FOIL)
 
     GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Actinium.setMaterialARGB(0xaa3399)
@@ -44,8 +43,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Graphite.addFlags(GTMaterialFlags.GENERATE_PLATE)
     GTMaterials.MagnesiumDiboride.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.Zeron100.addFlags(GTMaterialFlags.GENERATE_DENSE)
-    GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
 
     // Gears for Thermal Expansion
