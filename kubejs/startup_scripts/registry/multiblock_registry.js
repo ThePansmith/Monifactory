@@ -99,15 +99,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
 
-    // Subatomic Digital Assembler
-    event.create("subatomic_digital_assembly")
-        .category("multiblock")
-        .setEUIO("in")
-        .setMaxIOSize(2, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
-
     // Quintessence Infuser
     event.create("quintessence_infuser")
         .category("multiblock")
@@ -552,39 +543,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingRenderer("kubejs:block/soularium/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-
-    // Subatomic Digital Assembler
-    event.create("subatomic_digital_assembler", "multiblock")
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes("subatomic_digital_assembly")
-        .noRecipeModifier()
-        .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("#CCCCC#", "#CCCCC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CCCCC#", "#CCCCC#")
-            .aisle("CCCCCCC", "CHMMMHC", "CH   HC", "CH   HC", "CH   HC", "CH   HC", "CH   HC", "CHMMMHC", "CCCCCCC")
-            .aisle("CCCCCCC", "CMXYXMC", "G XYX G", "G XYX G", "G XYX G", "G XYX G", "G XYX G", "CMXYXMC", "CCCCCCC")
-            .aisle("CCCCCCC", "CMYYYMC", "G YYY G", "G YYY G", "G YYY G", "G YYY G", "G YYY G", "CMYYYMC", "CCCCCCC")
-            .aisle("CCCCCCC", "CMXYXMC", "G XYX G", "G XYX G", "G XYX G", "G XYX G", "G XYX G", "CMXYXMC", "CCCCCCC")
-            .aisle("CCCCCCC", "CHMMMHC", "CH   HC", "CH   HC", "CH   HC", "CH   HC", "CH   HC", "CHMMMHC", "CCCCCCC")
-            .aisle("CCCCCCC", "CCCCCCC", "#CCCCC#", "#CCCCC#", "#CCCCC#", "#CCCCC#", "#CCCCC#", "CCCCCCC", "CCCCCCC")
-            .aisle("CCCCCCC", "#CCCCC#", "#CCCCC#", "#CNNNC#", "###N###", "###N###", "###N###", "#CNNNC#", "CCCCCCC")
-            .aisle("#CCCCC#", "##C@C##", "##CCC##", "#######", "#######", "#######", "#######", "#######", "#CCCCC#")
-            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("G", Predicates.blocks(GTBlocks.CLEANROOM_GLASS.get()))
-            .where("H", Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
-            .where("M", Predicates.frames(GTMaterials.get("crystal_matrix")))
-            .where("N", Predicates.frames(GTMaterials.NaquadahAlloy))
-            .where("X", Predicates.blocks(GTBlocks.COMPUTER_CASING.get()))
-            .where("Y", Predicates.blocks(GTBlocks.ADVANCED_COMPUTER_CASING.get()))
-            .where("C", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(220)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
-            )
-            .where(" ", Predicates.air())
-            .where("#", Predicates.any())
-            .build())
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-            "gtceu:block/multiblock/fusion_reactor", false)
 
     // Discharger
     event.create("discharger", "multiblock")
