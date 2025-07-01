@@ -6,7 +6,7 @@
  * By Default: Large Bronze Boiler consumes 1 coal in 1s, producing 800mB/t, total production = 16,000 mB steam
  * Post-buff: Large Bronze Boiler consumes 1 coal in 6s, producing 800mB/t, total production = 96,000 mB steam
  *
- * This makes Large Boilers consume 3x as much fuel per unit steam compared to singleblock HPs for being 53.3x faster,
+ * This makes Large Bronze Boilers consume 3x as much fuel per unit steam compared to singleblock HPs for being 53.3x faster,
  * and consume 2x as much fuel per unit steam compared to Thermal Systeams boilers for being 6.67x faster.
  */
 ServerEvents.recipes(event => {
