@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 
     const Cards = [
         ["item", "gtceu:pulsating_alloy_plate"],
-        ["fluid", "gtceu:iron_plate"],
+        ["fluid", "gtceu:lazurite_plate"],
         ["energy", "gtceu:gold_plate"],
         ["redstone", "gtceu:red_alloy_plate"]
     ]
@@ -93,16 +93,28 @@ ServerEvents.recipes(event => {
 
 
     // Energy Overclockers  //
+    let overclocker_mats = [
+        ["conductive", "conductive_alloy"],
+        ["energetic", "energetic_alloy"],
+        ["vibrant", "vibrant_alloy"],
+        ["endsteel", "end_steel"],
+        ["lumium", "lumium"],
+        ["signalum", "signalum"],
+        ["enderium", "enderium"],
+        ["cryolobus", "cryolobus"],
+        ["sculk_superconductor", "sculk_superconductor"]
+    ]
 
-    // Conductive Iron
-    event.shaped("3x laserio:energy_overclocker_card_tier_1", [
-        "AAA",
-        "BBB",
-        "AAA"
-    ], {
-        A: "gtceu:iron_plate",
-        B: "gtceu:conductive_alloy_single_wire"
-    }).id("kubejs:conductive_card")
+    overclocker_mats.forEach((value, index) => {
+        if(index == 0) {
+            event.shaped(`3x laserio:energy_overclocker_card_tier_${index + 1}`, [
+                "AAA",
+                "BBB",
+                "AAA"
+            ], {
+                A: "#moni:overclocker_metal_plate",
+                B: `gtceu:${value[1]}_double_wire`
+            }).id(`kubejs:${value[0]}_card`)
 
     event.recipes.gtceu.assembler("kubejs:conductive_card")
         .itemInputs("3x gtceu:conductive_alloy_single_wire", "6x gtceu:iron_plate")
