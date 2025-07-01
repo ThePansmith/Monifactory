@@ -744,6 +744,7 @@
 			dependencies: ["014D28F123261D8D"]
 			description: ["{moni.quest.093883A81E6926E2.description1}"]
 			id: "093883A81E6926E2"
+			optional: true
 			tasks: [{
 				id: "6FA9B7FAD016DFB2"
 				item: "minecraft:amethyst_shard"
@@ -756,6 +757,7 @@
 			dependencies: ["093883A81E6926E2"]
 			description: ["{moni.quest.2794D9A3AD594F6A.description1}"]
 			id: "2794D9A3AD594F6A"
+			optional: true
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
 			tasks: [{
 				id: "26E3FA1008B6CB88"
@@ -769,6 +771,7 @@
 			dependencies: ["2794D9A3AD594F6A"]
 			description: ["{moni.quest.6F10BBD085BF7532.description1)"]
 			id: "6F10BBD085BF7532"
+			optional: true
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
 			tasks: [{
 				id: "551C6F157CB6FA51"
@@ -779,9 +782,12 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["5E3CBC929557418F"]
 			description: ["{moni.quest.014D28F123261D8D.description1}"]
+			hide_until_deps_visible: true
 			icon: "minecraft:budding_amethyst"
 			id: "014D28F123261D8D"
+			optional: true
 			tasks: [{
 				id: "5D3F46B55F0E9B1C"
 				observe_type: 0
@@ -797,6 +803,7 @@
 			dependencies: ["2794D9A3AD594F6A"]
 			description: ["{moni.quest.2612A01CCC73DF1A.description1}"]
 			id: "2612A01CCC73DF1A"
+			optional: true
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
 			tasks: [{
 				id: "4B9B9E4581922FF1"
@@ -810,6 +817,7 @@
 			dependencies: ["6F10BBD085BF7532"]
 			description: ["{moni.quest.sio2_o2.description}"]
 			id: "7B4EB40F016DBD76"
+			optional: true
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
 			tasks: [{
 				id: "58C2B5EB1690BFE9"
@@ -843,6 +851,7 @@
 			]
 			description: ["{moni.quest.7CFC483280B08A26.description1}"]
 			id: "7CFC483280B08A26"
+			optional: true
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.arc_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
 			tasks: [{
 				id: "75938527A9D05C8B"
@@ -856,6 +865,7 @@
 			dependencies: ["2612A01CCC73DF1A"]
 			description: ["{moni.quest.42D25699329E820D.description1}"]
 			id: "4EC63681CBC1CAD2"
+			optional: true
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_furnace\"},\".\"]"
 			tasks: [{
 				id: "42D25699329E820D"
@@ -872,6 +882,7 @@
 			]
 			description: ["{moni.quest.031A5A2B3AA99782.description1}"]
 			id: "031A5A2B3AA99782"
+			optional: true
 			size: 2.0d
 			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_blast_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
 			tasks: [{
