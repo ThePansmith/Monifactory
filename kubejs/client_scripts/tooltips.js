@@ -112,7 +112,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("gtceu:basic_microverse_projector", Text.translatable("gtceu.multiblock.basic_microverse_projector.description"))
     tooltip.add("gtceu:advanced_microverse_projector", Text.translatable("gtceu.multiblock.advanced_microverse_projector.description"))
     tooltip.add("gtceu:advanced_microverse_projector_ii", Text.translatable("gtceu.multiblock.advanced_microverse_projector_ii.description"))
-    tooltip.add("gtceu:subatomic_digital_assembler", Text.translatable("gtceu.multiblock.subatomic_digital_assembler.description"))
     tooltip.add("gtceu:large_naquadah_reactor", Text.translatable("gtceu.multiblock.large_naquadah_reactor.description"))
     tooltip.add("gtceu:naquadah_refinery", Text.translatable("gtceu.multiblock.naquadah_refinery.description"))
     tooltip.add("gtceu:simulation_supercomputer", Text.translatable("gtceu.multiblock.simulation_supercomputer.description"))

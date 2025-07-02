@@ -505,7 +505,7 @@
 			subtitle: "{moni.quest.4261BDA34D716EC8.subtitle}"
 			tasks: [{
 				id: "567872742E26A724"
-				item: "gtceu:subatomic_digital_assembler"
+				item: "gtceu:omnic_synthesizer"
 				type: "item"
 			}]
 			title: "{moni.quest.4261BDA34D716EC8.title}"
