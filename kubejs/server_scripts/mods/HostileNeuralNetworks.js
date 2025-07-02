@@ -117,6 +117,14 @@ ServerEvents.recipes(event => {
             .duration(200)
             .EUt(16)
 
+        // PPM (Autoclave)
+        event.recipes.gtceu.autoclave("pulsating_prediction_matrix_autoclave")
+            .itemInputs("8x kubejs:pulsating_dust")
+            .inputFluids(Fluid.of("gtceu:polybenzimidazole", 144))
+            .itemOutputs("64x hostilenetworks:prediction_matrix")
+            .duration(200)
+            .EUt(GTValues.VA[GTValues.IV])
+
         // IMPOSSIBLE REALM DATA
         let predictions = [
             ["overworld", 1],
