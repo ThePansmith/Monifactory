@@ -221,7 +221,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where(" ", Predicates.air())
                 .build())
             .workableCasingRenderer("kubejs:block/dark_steel_machine_hull",
-                "gtceu:block/multiblock/research_station", false)
+                "gtceu:block/multiblock/simulation_chamber", false)
 
         // Loot Superfabricator
         event.create("loot_superfabricator", "multiblock")
@@ -241,7 +241,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where(" ", Predicates.air())
                 .build())
             .workableCasingRenderer("kubejs:block/dark_steel_machine_hull",
-                "gtceu:block/multiblock/research_station", false)
+                "gtceu:block/multiblock/loot_fabricator", false)
 
 
         // Simulation Quantumcomputer
@@ -269,7 +269,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where(" ", Predicates.air())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-                "gtceu:block/multiblock/fusion_reactor", false)
+                "gtceu:block/multiblock/simulation_chamber", false)
 
         // Loot Quantumfabricator
         event.create("loot_quantumfabricator", "multiblock")
@@ -296,7 +296,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where(" ", Predicates.air())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-                "gtceu:block/multiblock/fusion_reactor", false)
+                "gtceu:block/multiblock/loot_fabricator", false)
     }
 
     // Universal Crystallizer
