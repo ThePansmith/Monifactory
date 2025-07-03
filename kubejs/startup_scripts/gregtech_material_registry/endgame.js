@@ -55,7 +55,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("crystal_matrix")
         .ingot().fluid()
         .element(GTElements.get("crystal_matrix"))
-        .color(0x66ffff)
+        .color(0x66ffff).secondaryColor(004590)
         .blastTemp(6800, "highest")
         .iconSet("shiny")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
