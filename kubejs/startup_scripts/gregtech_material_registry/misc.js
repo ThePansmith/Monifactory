@@ -410,6 +410,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 })
 
 // Advanced Solder
+// TODO: mixer, ABS | processing lines
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("advanced_soldering_alloy")
         .ingot()
@@ -417,6 +418,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x74b59b)
         .iconSet("dull")
         .components("15x bismuth", "11x tin", "9x zinc", "4x germanium")
+    // TODO: replace placeholder
+    event.create("bio_soldering_alloy")
+        .ingot()
+        .fluid()
+        .color(0xFF0000b)
+        .iconSet("dull")
+        .components("1x water")
 })
 
 // Misc
