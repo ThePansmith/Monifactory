@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .category("multiblock")
             .setEUIO("in")
             .setMaxIOSize(2, 2, 0, 0)
-            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+            .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
             .setSound(GTSoundEntries.ASSEMBLER)
@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .category("multiblock")
             .setEUIO("in")
             .setMaxIOSize(2, 1, 0, 0)
-            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+            .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
     }
@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(2, 20, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
@@ -49,7 +49,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(9, 1, 2, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
 
@@ -59,7 +59,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(9, 9, 3, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
 
@@ -68,7 +68,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("out")
         .setMaxIOSize(2, 2, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
 
@@ -77,7 +77,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("out")
         .setMaxIOSize(0, 0, 1, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC)
 
@@ -86,7 +86,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(6, 0, 5, 1)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
@@ -95,7 +95,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(3, 6, 1, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
 
@@ -104,7 +104,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(2, 2, 1, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE)
 
@@ -113,7 +113,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(1, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MINER)
 
@@ -122,7 +122,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(9, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
 
@@ -131,7 +131,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(3, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
 
