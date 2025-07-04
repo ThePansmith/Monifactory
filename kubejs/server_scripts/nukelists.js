@@ -21,6 +21,7 @@ ServerEvents.recipes(event => {
 
     let ignoreTypes = [
         { type: "nuclearcraft:fission_reactor_controller" },
+        { type: "nuclearcraft:fission_boiling" },
         { type: "nuclearcraft:isotope_separator" },
         { type: "nuclearcraft:fuel_reprocessor" },
         { type: "minecraft:crafting" },
