@@ -66,7 +66,7 @@ const missionEUt = {
     "9": GTValues.VA[GTValues.UV],
     "10": GTValues.VA[GTValues.UHV],
     "11": GTValues.VA[GTValues.UEV],
-    "12": GTValues.VA[GTValues.UIV]
+    "12": GTValues.VA[GTValues.UEV]
 }
 
 /**

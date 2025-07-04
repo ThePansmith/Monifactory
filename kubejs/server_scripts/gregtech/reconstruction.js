@@ -85,8 +85,15 @@ ServerEvents.recipes(event => {
             .EUt(eut)
     })
 
+    // P.R.I.S.M. Glass
+    event.recipes.gtceu.atomic_reconstruction("prism_conversion")
+        .itemInputs("kubejs:blue_aligned_glass")
+        .itemOutputs("kubejs:prism_glass")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.UV])
+
     // Universal Circuits
-    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"]
     tiers.forEach((level) => {
         event.recipes.gtceu.atomic_reconstruction(`kubejs:${level}_universal_circuit`)
             .itemInputs(`#gtceu:circuits/${level}`)
@@ -105,8 +112,7 @@ ServerEvents.recipes(event => {
         ["zpm", "naquadah"],
         ["uv", "duranium"],
         ["uhv", "tritanium"],
-        ["uev", "omnium"],
-        ["uiv", "necrosiderite"]
+        ["uev", "omnium"]
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
         event.shaped(`gtceu:${tier}_atomic_reconstructor`, [

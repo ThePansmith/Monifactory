@@ -144,10 +144,6 @@ StartupEvents.registry("item", event => {
     event.create("corrupted_universe_data").displayName("§dCorrupted Universe Data")
 
 
-    // Creative Data
-    event.create("omnic_data")
-
-
     // Endgame Items
     event.create("neutron_emitter")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
@@ -213,14 +209,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/prismac/chromatic_capacitor_magenta")
         .displayName("Chromatic Capacitor: §dMagenta§r")
 
-    // TODO: scrap those cleanly
-    event.create("infinity_catalyst").rarity("epic")
-    event.create("dormant_furious_infinity_catalyst")
-    event.create("furious_infinity_catalyst").rarity("epic")
-    event.create("inert_serene_infinity_catalyst")
-    event.create("serene_infinity_catalyst").rarity("epic")
-    event.create("dormant_infinity_compound_ingot")
-
 
     // Monium
     event.create("field_stabilised_omnic_pulsar_compound") // TODO: rename to Field-Stabilized Prismatic Pulsar Compound
@@ -251,7 +239,9 @@ StartupEvents.registry("item", event => {
     event.create("optical_chip")
     event.create("electro_optic_modulator")
     event.create("carbon_mesh_reinforced_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/carbon_mesh_reinforced_circuit_board" })
     event.create("carbon_mesh_reinforced_printed_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/carbon_mesh_reinforced_printed_circuit_board" })
 
 
     // Solidified Elements
@@ -547,29 +537,20 @@ StartupEvents.registry("item", event => {
             .tag(`gtceu:circuits/${volt}`)
     }
 
-    function Unit(theme) {
-        event.create(`${theme}_processing_unit`)
-            .textureJson({ layer0: `kubejs:item/circuits/${theme}_processing_unit` })
-        event.create(`${theme}_circuit_board`)
-            .textureJson({ layer0: `kubejs:item/circuits/${theme}_circuit_board` })
-    }
-
-    Unit("optical")
+    event.create("optical_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/optical_processing_unit" })
     Circuit("optical", "processor", "zpm")
     Circuit("optical", "processor_assembly", "uv")
     Circuit("optical", "processor_computer", "uhv")
     Mainframe("optical", "uev")
 
-    Unit("dimensional")
-    Circuit("dimensional", "processor", "uv")
-    Circuit("dimensional", "processor_assembly", "uhv")
-    Circuit("dimensional", "processor_computer", "uev")
-    Mainframe("dimensional", "uiv")
-
-    Unit("monic")
-    Circuit("monic", "processor", "uhv")
-    Circuit("monic", "processor_assembly", "uev")
-    Circuit("monic", "processor_computer", "uiv")
+    event.create("monic_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/monic_processing_unit" })
+    event.create("monic_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/monic_circuit_board" })
+    Circuit("monic", "processor", "uv")
+    Circuit("monic", "processor_assembly", "uhv")
+    Circuit("monic", "processor_computer", "uev")
     Mainframe("monic", "max")
 
     // Smores
@@ -602,7 +583,7 @@ StartupEvents.registry("item", event => {
     }
 
     // Universal Circuits
-    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"]
     tiers.forEach((universal_circuit) => {
         event.create(`${universal_circuit}_universal_circuit`)
             .tag(`gtceu:circuits/${universal_circuit}`)

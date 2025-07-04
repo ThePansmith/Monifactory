@@ -170,15 +170,6 @@ ServerEvents.recipes(event => {
         recipe.replaceInput("gtceu:advanced_smd_diode", "kubejs:complex_smd_diode")
     })
 
-    // Data Stuff
-    event.recipes.gtceu.extractor("omnic_data")
-        .itemInputs("kubejs:heart_of_a_universe")
-        .itemOutputs("kubejs:omnic_data")
-        .duration(1000)
-        .EUt(180000)
-
-    // TODO: AE2 crystal growth accelerator goes here
-
     // Crystal Chip shit
     // TODO: Rebalanced GTM chances to base these off of 
     event.recipes.gtceu.autoclave("starter_enderium_chip")
@@ -402,7 +393,7 @@ ServerEvents.recipes(event => {
         S: "gtceu:uhv_sensor",
         C: "#gtceu:circuits/uev",
         E: "gtceu:uhv_emitter",
-        W: "gtceu:activated_netherite_quadruple_wire"
+        W: "gtceu:hyperdegenerate_darconite_quadruple_wire"
     })
 
     event.shaped("gtceu:uev_uev_parallel_hatch", [
@@ -412,9 +403,9 @@ ServerEvents.recipes(event => {
     ], {
         H: "gtceu:uev_machine_hull",
         S: "gtceu:uev_sensor",
-        C: "#gtceu:circuits/uiv",
+        C: "#gtceu:circuits/max",
         E: "gtceu:uev_emitter",
-        W: "gtceu:necrosiderite_quadruple_wire"
+        W: "gtceu:monium_quadruple_wire"
     })
 
     //
@@ -691,9 +682,9 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: /redstone_arsenal/ }, "redstone_arsenal:flux_metal_block", "gtceu:electrum_flux_block")
 
     // Advanced Soldering Alloy
-    event.recipes.gtceu.mixer("soldering_alloy")
+    event.recipes.gtceu.mixer("advanced_soldering_alloy")
         .itemInputs("15x gtceu:bismuth_dust", "11x gtceu:tin_dust", "9x gtceu:zinc_dust", "4x gtceu:germanium_dust")
-        .itemOutputs("39x gtceu:soldering_alloy_dust")
+        .itemOutputs("39x gtceu:advanced_soldering_alloy_dust")
         .duration(700)
         .EUt(480)
         .circuit(2)
@@ -1008,8 +999,12 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(480)
 
-    // 64A energy converters recipe fix
-    event.replaceInput({ output: "gtmutils:uev_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:activated_netherite_hex_wire")
-    event.replaceInput({ output: "gtmutils:uiv_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:necrosiderite_hex_wire")
-    event.replaceInput({ output: "gtmutils:max_64a_energy_converter" }, "gtceu:europium_hex_cable", "gtceu:monium_hex_wire")
+    // Germanium is used in diodes
+    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:small_germanium_dust")
+    event.recipes.gtceu.assembler("germanium_smd_diode")
+        .itemInputs("1x gtceu:germanium_dust", "8x gtceu:fine_platinum_wire")
+        .inputFluids("gtceu:polyethylene 288")
+        .itemOutputs("32x gtceu:smd_diode")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
 })

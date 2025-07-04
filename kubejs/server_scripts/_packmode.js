@@ -40,7 +40,6 @@ PlayerEvents.loggedIn(event => {
         "Monicoins",
         "Snad",
         "SteamAge",
-        "HarderNaqFuel",
         "Stoneline",
         "HalfMMs",
         "QuantumCoolant"
