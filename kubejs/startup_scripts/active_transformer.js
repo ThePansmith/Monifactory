@@ -3,7 +3,7 @@
  * - Replaces the Superconducting coil in the core of the Active Transformer with High Power casing
  */
 let ActiveTransformerMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.ActiveTransformerMachine")
-let SupplierMemoizer = Java.loadClass("com.gregtechceu.gtceu.utils.SupplierMemoizer")
+let GTMemoizer = Java.loadClass("com.gregtechceu.gtceu.utils.memoization.GTMemoizer")
 
 // Function<MultiblockMachineDefinition, BlockPattern>
 let active_transformer_pattern = (definition) => FactoryBlockPattern.start()
@@ -19,5 +19,5 @@ let active_transformer_pattern = (definition) => FactoryBlockPattern.start()
 
 // Set the pattern for Active Transformer
 StartupEvents.postInit(event => {
-    GTMultiMachines.ACTIVE_TRANSFORMER.setPatternFactory(SupplierMemoizer.memoize(() => active_transformer_pattern.apply(GTMultiMachines.ACTIVE_TRANSFORMER)))
+    GTMultiMachines.ACTIVE_TRANSFORMER.setPatternFactory(GTMemoizer.memoize(() => active_transformer_pattern.apply(GTMultiMachines.ACTIVE_TRANSFORMER)))
 })

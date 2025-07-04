@@ -1,48 +1,183 @@
+#
+# Monifactory gitignore
+#
+
+# Start off by ignoring everything
 /*
 
-!/config-overrides
-!/kubejs
-!/defaultconfigs
-!/.gitignore
-!/.gitattributes
-!/manifest.json
-!/tools
-/tools/bootstrap/.cache
+# Pre-commit ESLint hook
 !/.github
-!.editorconfig
-!/pack-mode-switcher*
-!/CONTRIBUTING.md
-!/FAQ.md
-!/KNOWN-ISSUES.md
-!/config/lostcities/profiles/monidefault.json
-!/mods/systeams*
-!/mods/ExtendedCrafting*
 
-/mods/.index
-/mods/.connector
-/mods/memoryleakfix*
-
-# VSCode
-!/.vscode
-/.vscode/*
-!/.vscode/*.code-workspace
-
-# Probe js
+# Probe JS
 /kubejs/probe
 /kubejs/config/probejs.json
 /kubejs/config/probe-settings.json
 /kubejs/*/jsconfig.json
 
-#Hide code-generated files
+# VSCode workspace
+!/.vscode
+/.vscode/*
+!/.vscode/*.code-workspace
+
+# Configs
+!/config
+/config/*
+
+# AE2
+!/config/ae2
+/config/ae2/client.json
+
+# Almost Unified
+!/config/almostunified
+/config/almostunified/*
+!/config/almostunified/unify.json
+
+# Bountiful
+!/config/bountiful
+/config/bountiful/*
+!/config/bountiful/bounty_decrees
+
+# Default World Type
+!/config/defaultworldtype
+
+# EnderIO configs
+!/config/enderio
+/config/enderio/*
+!/config/enderio/base-common.toml
+!/config/enderio/machines-common.toml
+
+# Fancy Menu Configs
+!/config/fancymenu
+
+# FTBQuests
+!/config/ftbquests
+/config/ftbquests/quests/chapters/genesis.snbt
+
+# Functional Storage
+!/config/functionalstorage
+/config/functionalstorage/*
+!/config/functionalstorage-common.toml
+
+# Hammer Lib
+!/config/hammerlib
+
+# Iron Jetpacks
+!/config/ironjetpacks
+
+# Jade
+!/config/jade
+/config/jade/*
+!/config/jade/jade.json
+
+# Lost cities
+!/config/lostcities
+/config/lostcities/profiles/*
+!/config/lostcities/profiles/monidefault.json
+
+# NCN
+!/config/NuclearCraft
+/config/NuclearCraft/*
+!/config/NuclearCraft/fission_fuel
+!/config/NuclearCraft/heat_sinks
+!/config/NuclearCraft/common.toml
+!/config/NuclearCraft/fission.toml
+
+# SolarFlux
+!/config/solarflux
+
+# WaterMedia
+!/config/watermedia
+
+# Individual config files
+!/config/ad_astra.jsonc
+!/config/alltheleaks.json
+!/config/badoptimizations.txt
+!/config/cable_facades-common.toml
+!/config/climbladdersfast.json5
+!/config/compactmachines-common.toml
+!/config/connectivity.json
+!/config/create-client.toml
+!/config/create-common.toml
+!/config/custom-item-despawn-duration.json
+!/config/darkmodeeverywhere-client.toml
+!/config/darkmodeeverywhereshaders.json
+!/config/ding.toml
+!/config/embeddium-options.json
+!/config/embeddium++.toml
+!/config/emi_loot_config.toml
+!/config/extendedcrafting-common.toml
+!/config/fluxnetworks-common.toml
+!/config/flywheel-client.toml
+!/config/gtmutils.yaml
+!/config/hostilenetworks.cfg
+!/config/immediatelyfast.json
+!/config/ironfurnaces-client.toml
+!/config/ironjetpacks-common.toml
+!/config/laserio-common.toml
+!/config/legendarytooltips-common.toml
+!/config/modernfix-mixins.properties
+!/config/monilabs.yaml
+!/config/quark-common.toml
+!/config/resourceful-config-web.json
+!/config/sdrp-common.json
+!/config/smoothboot.json
+!/config/smoothchunk.json
+!/config/sophisticatedcore-common.toml
+!/config/sophisticatedstorage-client.toml
+!/config/telepastries-common.toml
+!/config/tempad.jsonc
+!/config/thermal-common.toml
+!/config/toastcontrol-common.toml
+!/config/ulvcovm-common.toml
+!/config/watercollector-common.toml
+!/config/wirelesschargers-common.toml
+!/config/zume.json5
+
+# Config overrides
+!/config-overrides
+
+# defaultconfigs
+!/defaultconfigs
+defaultconfigs/ftbultimine/ftbultimine-client.snbt
+defaultconfigs/ftbultimine/ftbultimine-server.snbt
+
+# KubeJS scripts
+!/kubejs
+
+!/mods
+/mods/*
+!/mods/compats.md
+
+# JS Tools, e.g. ESLint
+!/tools
+/tools/bootstrap/.cache
+
+# VSCode Editor Config
+!.editorconfig
+
+# Git files
+!/.gitattributes
+!/.gitignore
+
+# Documentation & README
+!/CHANGELOG.md
+!/CONTRIBUTING.md
+!/FAQ.md
+!/KNOWN-ISSUES.md
+!/LICENSE.md
+!/README.md
+
+# Mod manifest
+!/manifest.json
+
+# Pack mode Switcher scripts
+!/pack-mode-switcher*
+
+# Hide code-generated files
 kubejs/client_scripts/Dev_Capes.js
 config/fancymenu/customization/pack_credit_screen_layout.txt
 **/en_ud.local
 **/en_ud.json
-
-defaultconfigs/ftbultimine/ftbultimine-client.snbt
-defaultconfigs/ftbultimine/ftbultimine-server.snbt
-
-./options.txt
 
 # dotenv
 .env

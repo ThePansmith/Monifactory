@@ -25,4 +25,18 @@ ServerEvents.recipes(event => {
             }
         }
     })
+
+    // Add 2 more recipes for UHV and UEV superconductors
+    event.recipes.gtceu.assembler("superconducting_coil_uhv")
+        .itemInputs("4x gtceu:ruthenium_trinium_americium_neutronate_double_wire", "4x gtceu:niobium_titanium_foil")
+        .inputFluids("gtceu:trinium 288")
+        .itemOutputs("1x gtceu:superconducting_coil")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UHV])
+    event.recipes.gtceu.assembler("superconducting_coil_uev")
+        .itemInputs("2x gtceu:hyperdegenerate_darconite_double_wire", "2x gtceu:niobium_titanium_foil")
+        .inputFluids("gtceu:trinium 144")
+        .itemOutputs("1x gtceu:superconducting_coil")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UEV])
 })

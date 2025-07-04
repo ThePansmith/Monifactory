@@ -14,7 +14,6 @@ const doConverters = !!global.doConverters;
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
 const doHarderRecipes = !!global.doHarderRecipes;
-const doHarderNaqFuel = !!global.doHarderNaqFuel;
 const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
 const doHatchRevert = !!global.doHatchRevert;
 const doHNN = !!global.doHNN;
@@ -41,7 +40,6 @@ PlayerEvents.loggedIn(event => {
         "Monicoins",
         "Snad",
         "SteamAge",
-        "HarderNaqFuel",
         "Stoneline",
         "HalfMMs",
         "QuantumCoolant"

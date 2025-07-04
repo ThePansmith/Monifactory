@@ -66,6 +66,7 @@ global.itemNukeList = [
     "enderio:energy_conduit",
     "enderio:fire_water_bucket",
     "enderio:flour",
+    "enderio:fluid_conduit",
     "enderio:hootch_bucket",
     "enderio:industrial_insulation_block",
     "enderio:liquid_sunshine_bucket",
@@ -126,8 +127,11 @@ global.itemNukeList = [
     "gtceu:hot_silicon_ingot",
     "gtceu:milk",
     "gtceu:steel_machine_casing",
+    "gtceu:uv_world_accelerator",
+    /^gtceu:uiv/,
     /^gtceu:uxv/,
     /^gtceu:opv/,
+    /^gtmutils.uiv/,
     /^gtmutils:uxv/,
     /^gtmutils:opv/,
 
@@ -198,7 +202,6 @@ global.itemNukeList = [
 
     // Megacells
     "megacells:mega_crafting_accelerator",
-    "megacells:bulk_storage_component",
     /^megacells:.*mega_interface$/,
     /^megacells:.*mega_pattern_provider$/,
     /^megacells:sky_steel/,

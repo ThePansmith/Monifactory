@@ -172,7 +172,7 @@ if (Platform.isLoaded("railways")) {
             event.recipes.gtceu.cutter(`kubejs:${outputItem.replace(/^.*:/, "")}`)
                 .itemInputs(`${inputTrackItem}`)
                 .itemOutputs(`${outputCount}x ${outputItem}`)
-                .chancedOutput(`${sleeperOutputItem}`, 3000, 500) // 30% chance initially, increases by 5% for each voltage tier
+                .chancedOutput(`${sleeperOutputItem}`, 5000, 0)
                 .duration(5)
                 .EUt(16); // Low Voltage
         };

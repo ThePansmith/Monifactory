@@ -69,7 +69,7 @@ if (Platform.isLoaded("fluxnetworks")) {
         ], {
             S: "fluxnetworks:basic_flux_storage",
             G: "#forge:glass_panes",
-            C: "gtceu:zero_point_module",
+            C: "gtceu:energy_module",
         }).id("fluxnetworks:herculeanfluxstorage")
         event.shaped("fluxnetworks:gargantuan_flux_storage", [
             "SSS",
@@ -78,7 +78,7 @@ if (Platform.isLoaded("fluxnetworks")) {
         ], {
             S: "fluxnetworks:herculean_flux_storage",
             G: "#forge:glass_panes",
-            C: "gtceu:max_battery",
+            C: "gtceu:energy_cluster",
         }).id("fluxnetworks:gargantuanfluxstorage")
 
     })

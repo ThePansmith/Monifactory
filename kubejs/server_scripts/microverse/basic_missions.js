@@ -32,8 +32,8 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:invar_drill_head")
             .itemOutputs(
-                "64x minecraft:raw_iron",
-                "48x minecraft:raw_iron",
+                "64x gtceu:raw_goethite",
+                "48x gtceu:raw_goethite",
                 "64x gtceu:raw_yellow_limonite",
                 "32x gtceu:raw_garnierite",
                 "32x gtceu:raw_nickel",
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
                 "32x gtceu:raw_cassiterite",
                 "64x gtceu:raw_chalcopyrite",
                 "48x gtceu:raw_chalcopyrite",
-                "16x gtceu:raw_realgar",
+                "16x gtceu:raw_zeolite",
             )
     })
 
@@ -169,19 +169,6 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 2, 1).forEach(builder => {
         builder
-            .itemInputs("2x kubejs:quantum_flux")
-            .inputFluids("gtceu:rocket_fuel 3000")
-            .itemInputs("kubejs:basic_drilling_kit")
-            .itemInputs("gtceu:stainless_steel_drill_head")
-            .itemOutputs(
-                "64x gtceu:raw_pyrolusite",
-                "64x gtceu:raw_tantalite",
-                "64x gtceu:raw_tantalite",
-            )
-    })
-
-    microverse_mission(event, 2, 1).forEach(builder => {
-        builder
             .itemInputs("kubejs:quantum_flux")
             .inputFluids("gtceu:rocket_fuel 3000")
             .itemInputs("kubejs:microversal_alchemy_kit")
@@ -215,9 +202,10 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:red_steel_drill_head")
             .itemOutputs(
-                "64x gtceu:raw_goethite",
-                "32x gtceu:raw_goethite",
-                "64x gtceu:raw_hematite",
+                "64x minecraft:raw_iron",
+                "32x minecraft:raw_iron",
+                "64x gtceu:raw_pyrolusite",
+                "64x gtceu:raw_cobaltite",
                 "48x gtceu:raw_malachite",
             )
     })
@@ -260,7 +248,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:cobalt_brass_drill_head")
             .itemOutputs(
                 "48x gtceu:raw_tetrahedrite",
-                "32x gtceu:raw_cobaltite",
+                "24x gtceu:raw_realgar",
                 "8x gtceu:raw_magnesite",
                 "16x gtceu:raw_sphalerite",
                 "20x gtceu:raw_stibnite",

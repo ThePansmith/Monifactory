@@ -5,8 +5,8 @@
             "forge:gears/copper": {"hammerlib:gears/copper": false},
             "forge:gears/wooden": {"hammerlib:gears/wooden": false},
             "forge:gears/iron": {"hammerlib:gears/iron": false},
-            "forge:gears/diamond": {"hammerlib:gears/diamond": false},
             "forge:tools/wrench": {"hammerlib:wrench": false},
+            "forge:gears/diamond": {"hammerlib:gears/diamond": false},
             "forge:gears/gold": {"hammerlib:gears/gold": false},
             "forge:gears/netherite": {"hammerlib:gears/netherite": false},
             "forge:gears/stone": {"hammerlib:gears/stone": false}

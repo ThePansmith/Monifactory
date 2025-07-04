@@ -7,11 +7,11 @@ parseMobLoot = true
 parseGameplayLoot = true
 parseArchaeologyLoot = true
 skippedKeys = [
-    "emi_loot.function.fill_player_head",
     "emi_loot.function.set_count_add",
-    "emi_loot.function.limit_count",
+    "emi_loot.function.fill_player_head",
+    "emi_loot.function.set_count_set",
     "emi_loot.no_conditions",
-    "emi_loot.function.set_count_set"
+    "emi_loot.function.limit_count"
 ]
 chestLootAlwaysStackSame = false
 mobLootIncludeDirectDrops = true

@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
                 "4x gtceu:uhv_electric_pump",
                 "8x kubejs:shattered_star_data"
             )
-            .itemOutputs("32x kubejs:stabilized_oganesson")
+            .itemOutputs("32x kubejs:stabilized_einsteinium")
     })
 
     // T6MM mission (Previously HM-exclusive, no problem with making it available in NM)
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
                 "16x kubejs:quantum_flux",
                 "16x kubejs:stabilized_curium",
                 "kubejs:microversal_alchemy_kit",
-                "8x gtceu:manyullyn_ingot",
+                "8x gtceu:mythril_ingot",
                 "4x gtceu:void_empowered_block",
             )
             .itemOutputs(
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
     // T9MM missions
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
-            .inputFluids("gtceu:nitrogen_plasma 5000")
+            .inputFluids("gtceu:helium_plasma 5000")
             .itemInputs("gtceu:data_module", "gtceu:uv_sensor")
             .itemInputs(
                 "64x kubejs:stellar_creation_data",
@@ -161,11 +161,5 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("kubejs:universal_collapse_device", "kubejs:universe_creation_data")
             .itemOutputs("kubejs:heart_of_a_universe")
-    })
-
-    microverse_mission(event, 10, 3).forEach(builder => {
-        builder
-            .itemInputs("16x #forge:storage_blocks/activated_netherite", "64x kubejs:stellar_creation_data")
-            .itemOutputs("kubejs:creative_storage_data")
     })
 })

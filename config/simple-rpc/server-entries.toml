@@ -1,7 +1,0 @@
-#Enable/Disable Server Entries overrides
-enabled = false
-#Internal Version Number. NO TOUCHY!
-version = 2
-#Server override entries
-entry = []
-
