@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
     })
 
     // Crystal Chip shit
-    // TODO: Rebalanced GTM chances to base these off of 
+    // TODO: Rebalanced GTM chances to base these off of
     event.recipes.gtceu.autoclave("starter_enderium_chip")
         .itemInputs(["gtceu:exquisite_olivine_gem", "gtceu:exquisite_emerald_gem"])
         .inputFluids("gtceu:enderium 144")
