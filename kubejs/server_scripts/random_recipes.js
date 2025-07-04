@@ -171,6 +171,7 @@ ServerEvents.recipes(event => {
     })
 
     // Crystal Chip shit
+    // TODO: Rebalanced GTM chances to base these off of 
     event.recipes.gtceu.autoclave("starter_enderium_chip")
         .itemInputs(["gtceu:exquisite_olivine_gem", "gtceu:exquisite_emerald_gem"])
         .inputFluids("gtceu:enderium 144")
@@ -186,8 +187,6 @@ ServerEvents.recipes(event => {
         .duration(12000)
         .EUt(320)
         .cleanroom(CleanroomType.CLEANROOM)
-
-    // TODO: AE2 crystal growth accelerator goes here
 
     // Implement Cryolobus smelting
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
@@ -754,14 +753,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.macerator("dragon_scale_crushing")
         .itemInputs("kubejs:ender_dragon_scale")
         .itemOutputs("kubejs:ender_dragon_scale_dust")
-        .chancedOutput("kubejs:ender_dragon_scale_dust", 1000, 500)
-        .chancedOutput("gtceu:graphite_dust", 1400, 850)
-        .chancedOutput("gtceu:small_ilmenite_dust", 1400, 850)
+        .chancedOutput("kubejs:ender_dragon_scale_dust", 5000, 0)
+        .chancedOutput("gtceu:graphite_dust", 4000, 0)
+        .chancedOutput("gtceu:small_ilmenite_dust", 4000, 0)
         .duration(200)
         .EUt(120)
 
     event.recipes.gtceu.mixer("scale_dust_acid_mix")
-        .itemInputs("4x kubejs:ender_dragon_scale_dust")
+        .itemInputs("2x kubejs:ender_dragon_scale_dust")
         .inputFluids("gtceu:hydrochloric_acid 2000")
         .outputFluids("gtceu:hydrochloric_dragon_scale_solution 2000")
         .duration(240)
@@ -813,8 +812,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.centrifuge("guardian_scale_slurry_centrifuge")
         .inputFluids("gtceu:guardian_scale_slurry 4000")
         .itemOutputs("2x gtceu:malachite_dust")
-        .chancedOutput("gtceu:arsenic_trioxide_dust", 3000, 700)
-        .chancedOutput("gtceu:ruthenium_tetroxide_dust", 2000, 500)
+        .chancedOutput("gtceu:arsenic_trioxide_dust", 6000, 0)
+        .chancedOutput("gtceu:ruthenium_tetroxide_dust", 5000, 0)
         .outputFluids("gtceu:nitrosyl_chloride 1000", "minecraft:water 2000")
         .duration(1200)
         .EUt(GTValues.VA[GTValues.HV])
@@ -962,32 +961,28 @@ ServerEvents.recipes(event => {
     // Let Oilsands have multiple types of oil
     event.remove({ id: "gtceu:centrifuge/oilsands_dust_separation" })
     event.recipes.gtceu.centrifuge("oilsands_to_oil")
-        .itemInputs("gtceu:oilsands_dust")
-        .chancedOutput("minecraft:sand", 5000, 5000)
+        .itemInputs("gtceu:oilsands_dust", "minecraft:sand")
         .outputFluids("gtceu:oil 1000")
         .duration(200)
         .EUt(30)
         .circuit(3)
 
     event.recipes.gtceu.centrifuge("oilsands_to_light_oil")
-        .itemInputs("gtceu:oilsands_dust")
-        .chancedOutput("minecraft:sand", 5000, 5000)
+        .itemInputs("gtceu:oilsands_dust", "minecraft:sand")
         .outputFluids("gtceu:oil_light 500")
         .duration(200)
         .EUt(30)
         .circuit(4)
 
     event.recipes.gtceu.centrifuge("oilsands_to_heavy_oil")
-        .itemInputs("gtceu:oilsands_dust")
-        .chancedOutput("minecraft:sand", 5000, 5000)
+        .itemInputs("gtceu:oilsands_dust", "minecraft:sand")
         .outputFluids("gtceu:oil_heavy 2000")
         .duration(200)
         .EUt(30)
         .circuit(2)
 
     event.recipes.gtceu.centrifuge("oilsands_to_raw_oil")
-        .itemInputs("gtceu:oilsands_dust")
-        .chancedOutput("minecraft:sand", 5000, 5000)
+        .itemInputs("gtceu:oilsands_dust", "minecraft:sand")
         .outputFluids("gtceu:oil_medium 1000")
         .duration(200)
         .EUt(30)

@@ -105,7 +105,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
         builders[0].itemOutputs(`kubejs:microminer_t${minerTier}`)
     } else if(minerReturnChance > 0) {
         // Only return the damaged miner if the chance to return it is positive and real
-        builders[0].chancedOutput(`kubejs:microminer_t${minerTier}_damaged`, minerReturnChance, minerReturnChance == 10000 ? 0 : 500)
+        builders[0].chancedOutput(`kubejs:microminer_t${minerTier}_damaged`, minerReturnChance, 0)
     }
 
     const stabilized_miners = [
