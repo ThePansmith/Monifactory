@@ -179,6 +179,24 @@ ServerEvents.recipes(event => {
 
     // TODO: AE2 crystal growth accelerator goes here
 
+    // Crystal Chip shit
+    // TODO: Rebalanced GTM chances to base these off of 
+    event.recipes.gtceu.autoclave("starter_enderium_chip")
+        .itemInputs(["gtceu:exquisite_olivine_gem", "gtceu:exquisite_emerald_gem"])
+        .inputFluids("gtceu:enderium 144")
+        .chancedOutput("gtceu:raw_crystal_chip", 900, 1800)
+        .duration(12000)
+        .EUt(320)
+        .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.autoclave("enderium_chip")
+        .itemInputs("gtceu:raw_crystal_chip_parts")
+        .inputFluids("gtceu:enderium 144")
+        .chancedOutput("gtceu:raw_crystal_chip", 900, 250)
+        .duration(12000)
+        .EUt(320)
+        .cleanroom(CleanroomType.CLEANROOM)
+
     // Implement Cryolobus smelting
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
