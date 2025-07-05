@@ -7,6 +7,10 @@
     "desc:": "Maximum amount of chunks unloaded per tick, default: 20, vanilla:200",
     "chunkUnloadLimit": 20
   },
+  "disableProtoSave": {
+    "desc:": "Disables saving of protochunks(not fully generated chunks) to reduce saving lag. Default: true",
+    "disableProtoSave": true
+  },
   "debugLogging": {
     "desc:": "Enables debug logging of how many chunks got saved in a tick. default: false",
     "debugLogging": false
