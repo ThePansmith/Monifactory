@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     ], {
         L: "gtceu:void_empowered_block",
         N: "kubejs:warp_core",
-        T: "kubejs:bathyal_energy_core"
+        T: "kubejs:abyssal_energy_core"
     })
 
     // Warp Controller
