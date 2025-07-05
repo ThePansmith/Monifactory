@@ -197,8 +197,8 @@
 
 	[building.leaf_carpet]
 		#This feature disables itself if any of the following mods are loaded:
-		# - woodworks
 		# - immersive_weathering
+		# - woodworks
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -237,8 +237,8 @@
 		#Allowed values: [0,1]
 		"Fall Damage Multiplier" = 0.5
 		#This feature disables itself if any of the following mods are loaded:
-		# - goated
 		# - environmental
+		# - goated
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -246,8 +246,8 @@
 	[building.variant_bookshelves]
 		"Change Names" = false
 		#This feature disables itself if any of the following mods are loaded:
-		# - woodworks
 		# - woodster
+		# - woodworks
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -266,8 +266,8 @@
 	[building.variant_ladders]
 		"Change Names" = false
 		#This feature disables itself if any of the following mods are loaded:
-		# - woodworks
 		# - woodster
+		# - woodworks
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -1131,7 +1131,7 @@
 		#Percentage of fallen logs spawning as hollow. Requires Hollow Logs Module to be enabled
 		"Hollow Chance" = 0.7
 		Rarity = 5
-		#chance for logs to spawn on water
+		#Chance for logs to spawn on water
 		"On Water Chance" = 0.1
 		"Sparse Biome Rarity" = 12
 		#Tags that define which biomes can have which wood types
@@ -1917,6 +1917,10 @@
 		"Influence Power" = 0.125
 		#If you set this to false, the vanilla Enchanting Table will no longer automatically convert to the Matrix Enchanting table. You'll have to add a recipe for the Matrix Enchanting Table to make use of this.
 		"Automatically Convert" = false
+		#Set this to true to allow undiscoverable enchantments to be rolled as pieces
+		"Allow Undiscoverable Enchantments" = false
+		#Any undiscoverable enchantment IDs here will be able to appear in matrix enchanting
+		"Undiscoverable Whitelist" = []
 
 	[oddities.pipes]
 		#How long it takes for an item to cross a pipe. Bigger = slower.
