@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
                 "3x kubejs:gem_sensor",
                 "64x kubejs:deep_dark_data",
                 "64x kubejs:deep_dark_data",
-                "64x kubejs:deep_dark_data"
+                "10x minecraft:sculk_catalyst"
             )
             .itemOutputs("kubejs:lair_of_the_warden_data")
     })
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
                 "8x kubejs:deep_dark_data"
             )
             .itemOutputs(
-                "32x minecraft:sculk_catalyst",
+                "12x minecraft:sculk_catalyst",
                 "32x minecraft:gold_block",
                 "32x gtceu:silver_block",
                 "32x minecraft:diamond_block",
@@ -66,14 +66,13 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "16x kubejs:quantum_flux",
                 "64x gtceu:dilithium_gem",
-                "4x minecraft:sculk_catalyst",
+                "1x minecraft:sculk_catalyst",
                 "12x kubejs:deep_dark_data"
             )
             .itemOutputs(
-                "8x kubejs:warden_heart",
-                "24x minecraft:sculk_catalyst",
+                "16x kubejs:warden_heart",
+                "40x minecraft:sculk_catalyst",
                 "64x kubejs:warden_horn",
-                "32x kubejs:warden_horn",
             )
     })
 
@@ -83,7 +82,7 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "32x kubejs:quantum_flux",
                 "64x gtceu:dilithium_gem",
-                "8x minecraft:sculk_catalyst",
+                "4x minecraft:sculk_catalyst",
                 "kubejs:lair_of_the_warden_data"
             )
             .itemOutputs(
