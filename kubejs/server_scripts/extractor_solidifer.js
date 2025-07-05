@@ -32,6 +32,7 @@ ServerEvents.recipes(event => {
     extractisotope("californium_250", "nuclearcraft:californium_250", Fluid.of("gtceu:californium", 144));
     extractisotope("californium_251", "nuclearcraft:californium_251", Fluid.of("gtceu:californium", 144));
     extractisotope("californium_252", "nuclearcraft:californium_252", Fluid.of("gtceu:californium", 144));
+    extractisotope("einsteinium_252", "nuclearcraft:einsteinium_252", Fluid.of("gtceu:einsteinium", 144));
 
     function extractgas(recipename, input, output) {
         event.recipes.gtceu.extractor(recipename)

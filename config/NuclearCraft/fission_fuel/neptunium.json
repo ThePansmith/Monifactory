@@ -3,7 +3,7 @@
     "group": "neptunium",
     "name": "hen-236",
     "forge_energy": 28800,
-    "heat": 216,
+    "heat": 108,
     "criticality": 35,
     "depletion": 99,
     "efficiency": 115,
