@@ -43,14 +43,17 @@ B:show_singleplayer_screen_world_icons = 'true';
 
 ##[layout_editor]
 
+B:layout_editor_grid_snapping = 'true';
 B:anchor_overlay_change_anchor_on_area_hover = 'true';
 B:show_layout_editor_grid = 'false';
 B:anchor_overlay_change_anchor_on_element_hover = 'true';
 S:anchor_overlay_visibility_mode = 'dragging';
 B:anchor_overlay_show_all_connection_lines = 'false';
 S:anchor_overlay_color_base_override = '';
+F:layout_editor_grid_snapping_strength = '1.0';
 I:layout_editor_grid_size = '10';
 B:invert_anchor_overlay_color = 'false';
+B:enable_buddy = 'true';
 S:anchor_overlay_color_border_override = '';
 F:anchor_overlay_opacity_normal = '0.5';
 F:anchor_overlay_opacity_busy = '0.7';
