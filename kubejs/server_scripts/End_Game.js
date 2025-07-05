@@ -204,13 +204,17 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(10600)
 
-    // Chemical Reactor
-
-    event.recipes.gtceu.chemical_reactor("cryolobus_dust")
-        .itemInputs("gtceu:red_steel_dust", "minecraft:sculk_catalyst")
-        .itemOutputs("gtceu:cryolobus_dust")
+    // Cryolobus Dust
+    event.recipes.gtceu.mixer("cryolobus_dust_red")
+        .itemInputs("gtceu:red_steel_dust", "2x gtceu:sculk_dust")
+        .itemOutputs("3x gtceu:cryolobus_dust")
         .duration(500)
-        .EUt(2000)
+        .EUt(GTValues.VA[GTValues.EV])
+    event.recipes.gtceu.mixer("cryolobus_dust_blue")
+        .itemInputs("gtceu:blue_steel_dust", "2x gtceu:sculk_dust")
+        .itemOutputs("3x gtceu:cryolobus_dust")
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.EV])
 
     // Kubejs Stem Cells
     event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
