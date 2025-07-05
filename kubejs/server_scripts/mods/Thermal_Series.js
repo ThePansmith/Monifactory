@@ -623,16 +623,24 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(20)
 
+    // Clathrates
+    event.recipes.gtceu.chemical_reactor("resonant_clathrate")
+        .itemInputs("minecraft:quartz")
+        .inputFluids(Fluid.of("thermal:ender", 250))
+        .itemOutputs("kubejs:resonant_clathrate")
+        .duration(120)
+        .EUt(75)
+
     event.recipes.gtceu.chemical_reactor("energized_clathrate")
         .itemInputs("minecraft:quartz")
-        .inputFluids(Fluid.of("gtceu:glowstone", 250))
+        .inputFluids(Fluid.of("gtceu:glowstone", 288))
         .itemOutputs("kubejs:energized_clathrate")
         .duration(120)
         .EUt(75)
 
     event.recipes.gtceu.chemical_reactor("destabilized_clathrate")
         .itemInputs("minecraft:quartz")
-        .inputFluids(Fluid.of("gtceu:redstone", 250))
+        .inputFluids(Fluid.of("gtceu:redstone", 288))
         .itemOutputs("kubejs:destabilized_clathrate")
         .duration(120)
         .EUt(75)
