@@ -26,7 +26,9 @@ ServerEvents.recipes(event => {
                 "4x gtceu:void_empowered_block",
             )
             .itemOutputs(
-                "minecraft:sculk_catalyst"
+                "minecraft:sculk_catalyst",
+                "20x minecraft:sculk",
+                "12x minecraft:sculk_vein"
             )
     })
 
@@ -53,6 +55,8 @@ ServerEvents.recipes(event => {
             )
             .itemOutputs(
                 "12x minecraft:sculk_catalyst",
+                "64x minecraft:sculk",
+                "40x minecraft:sculk_vein",
                 "32x minecraft:gold_block",
                 "32x gtceu:silver_block",
                 "32x minecraft:diamond_block",
