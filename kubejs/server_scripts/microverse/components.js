@@ -247,7 +247,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("basic_drilling_kit")
         .itemOutputs("kubejs:basic_drilling_kit")
         .itemInputs("3x gtceu:double_steel_plate", "gtceu:mv_electric_motor", "2x #gtceu:circuits/lv", "2x minecraft:glass")
-        .inputFluids("gtceu:glue 288")
+        .inputFluids("gtceu:glue 200")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(300)
 

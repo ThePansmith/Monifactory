@@ -698,14 +698,6 @@ ServerEvents.recipes(event => {
         .EUt(98304)
         .fusionStartEU(600000000)
 
-    // Resonant Clathrate
-    event.recipes.gtceu.chemical_reactor("resonant_clathrate")
-        .itemInputs("minecraft:quartz")
-        .inputFluids(Fluid.of("thermal:ender", 250))
-        .itemOutputs("kubejs:resonant_clathrate")
-        .duration(120)
-        .EUt(75)
-
     event.recipes.gtceu.extractor("resonant_ender_from_pearl")
         .itemInputs("1x minecraft:ender_pearl")
         .outputFluids(Fluid.of("thermal:ender", 250))
