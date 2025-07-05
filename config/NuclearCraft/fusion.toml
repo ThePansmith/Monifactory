@@ -8,7 +8,7 @@
 	#Range: 3 ~ 48
 	max_size = 32
 	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
-	#Range: 0.0 ~ 20.0
+	#Range: 0.0 ~ 10.0
 	reactor_explosion_radius = 4.0
 	#Minimal magnetic field required to operate reactor. (Depends on reactor size).
 	#Range: 1.0 ~ 100.0
