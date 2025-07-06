@@ -208,6 +208,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 return "";
             }
         })
+        .addDataInfo((data) => "")
 
     // Normal mode-exclusive multis
     if (doHNN) {
