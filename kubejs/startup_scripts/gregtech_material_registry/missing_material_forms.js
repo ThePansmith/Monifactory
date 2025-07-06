@@ -64,4 +64,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID, 1337);
     GTMaterials.Thorium.setMaterialARGB(0x273420)
     addFluid(GTMaterials.Actinium, $FluidStorageKeys.LIQUID, 1324);
+
+    // Liquid Sculk
+    let liquid_sculk_prop = new $FluidProperty();
+    liquid_sculk_prop.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder().temperature(310).disableBucket().customStill())
+    GTMaterials.Sculk.setProperty($PropertyKey.FLUID, liquid_sculk_prop)
 })

@@ -75,40 +75,6 @@ ServerEvents.recipes(event => {
     event.shapeless("minecraft:blaze_rod", "minecraft:brewing_stand")
     event.replaceInput({ input: "gtceu:wood_plate" }, "gtceu:wood_plate", "#minecraft:planks")
 
-    // Sculk LCR recipes
-
-    event.recipes.gtceu.large_chemical_reactor("sculk_catalyst")
-        .notConsumable("minecraft:sculk_catalyst")
-        .itemInputs("4x #forge:stone")
-        .inputFluids("enderio:xp_juice 4000", "gtceu:plutonium 144")
-        .itemOutputs("4x minecraft:sculk_catalyst")
-        .duration(1000)
-        .EUt(2000)
-
-    event.recipes.gtceu.large_chemical_reactor("sculk_catalyst_boosted")
-        .notConsumable("minecraft:sculk_catalyst")
-        .itemInputs("16x #forge:stone")
-        .inputFluids("enderio:xp_juice 4000", "gtceu:berkelium 144")
-        .itemOutputs("16x minecraft:sculk_catalyst")
-        .duration(1000)
-        .EUt(2000)
-
-    event.recipes.gtceu.large_chemical_reactor("sculk_vein")
-        .chancedInput("minecraft:sculk_catalyst", 500, 0)
-        .itemInputs("16x minecraft:vine")
-        .inputFluids("enderio:xp_juice 2000")
-        .itemOutputs("16x minecraft:sculk_vein")
-        .duration(1000)
-        .EUt(2000)
-
-    event.recipes.gtceu.large_chemical_reactor("sculk_block")
-        .chancedInput("minecraft:sculk_catalyst", 500, 0)
-        .itemInputs("64x minecraft:moss_block")
-        .inputFluids("enderio:xp_juice 2000")
-        .itemOutputs("64x minecraft:sculk")
-        .duration(1000)
-        .EUt(2000)
-
     // Processing for Ender Spores
     if (!doHNN) {
         event.shapeless("kubejs:ender_spore", ["minecraft:chorus_flower", "minecraft:ender_pearl", "thermal:phytogro", "minecraft:experience_bottle"])
