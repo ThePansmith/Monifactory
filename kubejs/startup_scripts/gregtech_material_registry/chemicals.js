@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("(C4H9O)3PO")
 
 
-    // Scaleline (Breaks Ender Dragon Scales down into useful materials)
+    // Dragon Scale recycling
     event.create("hydrochloric_dragon_scale_solution")
         .fluid()
         .color(0x697898)
@@ -65,12 +65,19 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("(HF)2Ta")
 
 
-    // Guardian Scaleline (Breaks Guardian Scales down into useful materials)
+    // Guardian Scale recycling
     event.create("guardian_scale_slurry")
         .fluid()
         .color(0x8bbeaf)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    // Wither Bone recycling
+    event.create("plumbate")
+        .dust()
+        .color(0x494351)
+        .components("1x lead", "1x tungsten", "4x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .formula("Pb(WO3)O")
 
     // JEAN gasoline ingredients
     event.create("chlorine_triflouride")

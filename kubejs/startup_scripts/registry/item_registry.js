@@ -380,6 +380,9 @@ StartupEvents.registry("item", event => {
     event.create("wither_bone")
     event.create("the_ultimate_material")
 
+    // Crushed Shulker Shell (Shulker Shell recycling)
+    event.create("crushed_shulker_shell")
+    event.create("niobium_palladium_grit")
 
     // Pulsating Items
     event.create("pulsating_mesh")

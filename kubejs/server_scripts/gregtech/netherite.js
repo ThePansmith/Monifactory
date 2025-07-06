@@ -103,14 +103,8 @@ ServerEvents.recipes(event => {
         32000000, 1600000
     )
 
-    event.recipes.gtceu.macerator("wither_bone_dust")
-        .itemInputs("kubejs:wither_bone")
-        .itemOutputs("gtceu:wither_bone_dust")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
-
     event.recipes.gtceu.mixer("nether_conduit_dust")
-        .itemInputs("3x kubejs:pyrotheum_dust", "4x gtceu:netherrack_dust", "2x gtceu:wither_bone_dust")
+        .itemInputs("3x kubejs:pyrotheum_dust", "4x gtceu:netherrack_dust", "2x enderio:withering_powder")
         .itemOutputs("9x gtceu:nether_conduit_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
