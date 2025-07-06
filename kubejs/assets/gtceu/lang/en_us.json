@@ -150,6 +150,7 @@
     "gtceu.multiblock.sculk_vat.emi_info.0": "Outputs vary up to ~33x",
     "gtceu.multiblock.sculk_vat.emi_info.1": "depending on how close the",
     "gtceu.multiblock.sculk_vat.emi_info.2": "output hatch is to half-full.",
+    "gtceu.multiblock.sculk_vat.emi_info.3": "Min XP: %d, Max: %d",
     "block.gtceu.antimatter_manipulator": "Antimatter Manipulator",
     "block.gtceu.antimatter_collider": "Antimatter Collider",
     "gtceu.multiblock.antimatter_collider.tooltip.0": "Annihilates collidants at extreme speeds to produce ludicrous batches of power",
