@@ -121,7 +121,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("discharger")
         .category("multiblock")
         .setEUIO("in")
-        .setMaxIOSize(9, 1, 0, 0)
+        .setMaxIOSize(9, 1, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
