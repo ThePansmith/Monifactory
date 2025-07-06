@@ -200,14 +200,15 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.1"))
         .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.2"))
         .addDataInfo((data) => {
-            if (data.contains("xpMinimum") && data.contains("xpMaximum")) {
-                let minimumXp = data.getInt("xpMinimum");
-                let maximumXp = data.getInt("xpMaximum");
+            if (data.contains("minimumXp") && data.contains("maximumXp")) {
+                let minimumXp = data.getInt("minimumXp");
+                let maximumXp = data.getInt("maximumXp");
                 return I18n.get("gtceu.multiblock.sculk_vat.emi_info.3", minimumXp, maximumXp);
             } else {
                 return "";
             }
         })
+        .addDataInfo((data) => "")
 
     // Normal mode-exclusive multis
     if (doHNN) {
