@@ -187,7 +187,6 @@ ItemEvents.tooltip(tooltip => {
     // Assorted info & warnings for GT machines
     tooltip.add(/^gtceu:.*a_energy_converter$/, Text.translatable("gtceu.energy_converter.tooltip"));
     tooltip.add("gtceu:basic_tape", Text.translatable("gtceu.basic_tape.tooltip"));
-    tooltip.add("gtceu:ender_fluid_link_cover", Text.translatable("gtceu.ender_fluid_link_cover.tooltip"));
     tooltip.add("gtceu:nightvision_goggles", Text.translatable("gtceu.nightvision_goggles.tooltip"));
     tooltip.add(/^gtceu:.*_robot_arm$/, Text.translatable("gtceu:robot_arm.tooltip"))
     tooltip.add(/^gtceu:.*_fluid_regulator$/, Text.translatable("gtceu:fluid_regulator.tooltip"))
