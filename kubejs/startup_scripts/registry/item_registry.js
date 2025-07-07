@@ -435,10 +435,11 @@ StartupEvents.registry("item", event => {
 
 
     // Sculk bioalloy processing intermediate products
-    event.create("sculk-compatible_trellis_microstructure").texture("kubejs:item/bioalloy/sculk-compatible_trellis_microstructure")
-    event.create("fibrinogenic_sculk_goo").texture("kubejs:item/bioalloy/fibrinogenic_sculk_goo")
-    event.create("sculk-saturated_microstructure_pulp").texture("kubejs:item/bioalloy/sculk-saturated_microstructure_pulp")
-    event.create("animated_bioalloy_pulp").texture("kubejs:item/bioalloy/animated_bioalloy_pulp")
+    event.create("experience_attuned_compound").texture("kubejs:item/bioalloy/experience_attuned_compound")
+    event.create("experience_attuned_microstructure").texture("kubejs:item/bioalloy/experience_attuned_microstructure")
+    event.create("manyullyn_based_trellis_microstructure").displayName("Manyullyn-Based Trellis Microstructure").texture("kubejs:item/bioalloy/manyullyn_based_trellis_microstructure")
+    event.create("experience_saturated_microstructure").texture("kubejs:item/bioalloy/experience_saturated_microstructure")
+    event.create("amalgamated_sculk").texture("kubejs:item/bioalloy/amalgamated_sculk")
 
 
     // Alien Scrapline
