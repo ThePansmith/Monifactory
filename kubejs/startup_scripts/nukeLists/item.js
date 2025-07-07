@@ -324,7 +324,9 @@ global.itemNukeList = [
     "nuclearcraft:nether_brick_heat_sink",
     "nuclearcraft:diamond_heat_sink",
     "nuclearcraft:iron_heat_sink",
-    "nuclearcraft:active_liquid_nitrogen_heat_sink",
+
+    "nuclearcraft:empty_active_heat_sink",
+    /^nuclearcraft:active_[\w_]+_heat_sink$/,
 ];
 
 // Create Compat
