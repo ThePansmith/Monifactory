@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.quintessence_infuser("experience_saturated_microstructure")
+    event.recipes.gtceu.autoclave("experience_saturated_microstructure")
         .itemInputs("kubejs:experience_attuned_microstructure")
         .inputFluids("kubejs:experience_rich_growth_medium")
         .itemOutputs("kubejs:experience_saturated_microstructure")
