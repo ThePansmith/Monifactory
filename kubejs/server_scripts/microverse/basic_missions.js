@@ -10,9 +10,10 @@
  */
 ServerEvents.recipes(event => {
     event.recipes.gtceu.microverse("normal_microverse_projection")
-        .itemInputs("kubejs:universe_creation_data", "kubejs:quantum_flux 64x", "kubejs:quantum_flux 64x")
+        .itemInputs("kubejs:universe_creation_data", "64x kubejs:quantum_flux", "64x kubejs:quantum_flux")
         .inputFluids("gtceu:hydrogen 8000")
         .updateMicroverse(1) // Normal
+        .addData("projector_tier", 1)
         .EUt(GTValues.VHA[GTValues.HV])
         .duration(2000) // 100s, like a T1 mission
 

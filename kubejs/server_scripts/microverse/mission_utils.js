@@ -106,7 +106,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
     } else if(minerReturnChance > 0) {
         // Only risk returning the damaged miner if the chance to return it is positive and real
         builders[0].itemOutputs(`kubejs:microminer_t${minerTier}_damaged`)
-        .chancedItemOutputLogic(ChanceLogic.XOR)
+            .chancedItemOutputLogic(ChanceLogic.XOR)
     } else {
         // Never return no miner
         builders[0].itemOutputs(`kubejs:microminer_t${minerTier}`)

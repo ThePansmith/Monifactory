@@ -2,11 +2,12 @@
   "framedblocks": {
     "framed_item_frame": true
   },
-  "monilabs": {
-    "color_info": true
-  },
   "enderchests": {
     "hud": true
+  },
+  "monilabs": {
+    "color_info": true,
+    "microverse_info": true
   },
   "minecraft": {
     "item_storage.show_name_amount": 5,
