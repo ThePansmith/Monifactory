@@ -9,7 +9,7 @@ values:
   antimatterRandomMaxExclusive: 2.0
 
   # Base amount of EU to generate per millibucket of antimatter.
-  euPerAntimatterMillibucket: 8388608
+  euPerAntimatterMillibucket: 536870912
 
   # Fluid ID for the antimatter fuel.
   antimatterFuelID: kubejs:antimatter_fuel
