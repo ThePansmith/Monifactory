@@ -32,16 +32,18 @@ StartupEvents.registry("fluid", event => {
     const antimatter_types = ["bosonic", "hadronic", "fermionic"]
     antimatter_types.forEach(type => {
         event.create(`${type}_antimatter`)
-            .displayName(`${capitalize(type)} Antimatter`)
             .bucketColor(Color.rgba(27, 12, 39, 255))
             .stillTexture(`kubejs:block/antimatter/${type}`)
         event.create(`refined_${type}_antimatter`)
-            .displayName(`Refined ${capitalize(type)} Antimatter`)
             .stillTexture(`kubejs:block/antimatter/refined_${type}`)
             .bucketColor(Color.rgba(41, 19, 59, 255))
     })
     event.create("antimatter_fuel")
-        .displayName("Antimatter Fuel")
         .bucketColor(Color.rgba(99, 18, 110, 255))
         .stillTexture("kubejs:block/antimatter/fuel")
+
+    event.create("hadal_sculk").stillTexture("kubejs:block/bioalloy/hadal_sculk")
+    event.create("experience_attuned_vapor").stillTexture("kubejs:block/bioalloy/experience_attuned_vapor")
+    event.create("experience_concentrate").stillTexture("kubejs:block/bioalloy/experience_concentrate")
+    event.create("experience_rich_growth_medium").stillTexture("kubejs:block/bioalloy/experience_rich_growth_medium")
 })

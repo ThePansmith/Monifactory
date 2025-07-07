@@ -422,6 +422,25 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // Fix fission boiling recipe
+    event.custom(
+        {
+            "type": "nuclearcraft:fission_boiling",
+            "heatRequired": 1.0,
+            "inputFluids": [
+                {
+                    "amount": 4,
+                    "tag": "minecraft:water"
+                }
+            ],
+            "outputFluids": [
+                {
+                    "amount": 640,
+                    "fluid": "gtceu:steam"
+                }
+            ]
+        }
+    ).id("nuclearcraft:fission_boiling/water-steam")
 });
 
 ServerEvents.tags("item", event => {

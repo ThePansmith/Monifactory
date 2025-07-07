@@ -226,13 +226,17 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(10600)
 
-    // Chemical Reactor
-
-    event.recipes.gtceu.chemical_reactor("cryolobus_dust")
-        .itemInputs("gtceu:red_steel_dust", "minecraft:sculk_catalyst")
-        .itemOutputs("gtceu:cryolobus_dust")
+    // Cryolobus Dust
+    event.recipes.gtceu.mixer("cryolobus_dust_red")
+        .itemInputs("gtceu:red_steel_dust", "2x gtceu:sculk_dust")
+        .itemOutputs("3x gtceu:cryolobus_dust")
         .duration(500)
-        .EUt(2000)
+        .EUt(GTValues.VA[GTValues.EV])
+    event.recipes.gtceu.mixer("cryolobus_dust_blue")
+        .itemInputs("gtceu:blue_steel_dust", "2x gtceu:sculk_dust")
+        .itemOutputs("3x gtceu:cryolobus_dust")
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.EV])
 
     // Kubejs Stem Cells
     event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
@@ -352,7 +356,7 @@ ServerEvents.recipes(event => {
         E: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:resonant"}').weakNBT(),
         F: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:fluxed"}').weakNBT(),
         H: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:hardened"}').weakNBT(),
-        I: "kubejs:infinity_catalyst",
+        I: "gtceu:infinity_ingot",
         L: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:leadstone"}').weakNBT(),
         N: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:energetic"}').weakNBT(),
         R: Item.of("ironjetpacks:jetpack", '{Id:"ironjetpacks:reinforced"}').weakNBT(),
@@ -372,7 +376,7 @@ ServerEvents.recipes(event => {
         "NPPPNPPPN",
         "SNNNNNNNS"
     ], {
-        I: "kubejs:infinity_catalyst",
+        I: "gtceu:infinity_frame",
         N: "gtceu:neutronium_plate",
         P: "gtceu:infinity_plate",
         S: "solarflux:sp_custom_neutronium"
@@ -392,9 +396,9 @@ ServerEvents.recipes(event => {
         "MIXPPZPPVIM",
         "BMMMMMMMMMB"
     ], {
-        A: "kubejs:furious_infinity_catalyst",
+        A: "gtceu:dense_infinity_plate",
         B: "gtceu:monium_block",
-        C: "kubejs:serene_infinity_catalyst",
+        C: "gtceu:dense_infinity_plate",
         E: "solarflux:sp_custom_infinity",
         F: "gtceu:uev_field_generator",
         G: "gtceu:monium_gear",
@@ -407,8 +411,8 @@ ServerEvents.recipes(event => {
         Q: "kubejs:field_stabilised_omnic_pulsar_compound",
         R: "gtceu:uev_robot_arm",
         S: "megacells:bulk_cell_component",
-        T: "kubejs:omnic_data",
-        U: "gtceu:subatomic_digital_assembler",
+        T: "kubejs:supercritical_prismatic_core",
+        U: "gtceu:omnic_synthesizer",
         V: "kubejs:infinity_file",
         W: "kubejs:infinity_screwdriver",
         X: "kubejs:infinity_wrench",

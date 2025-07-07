@@ -33,9 +33,13 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(15)
         .neutrons(15)
         .symbol("Ez")
+    event.create("necrosiderite")
+        .protons(67)
+        .neutrons(-26)
+        .symbol("Ns")
 })
 
-// Omnium, Infinity, and Monium have animations and thus custom material icon sets.
+// Omnium, Infinity, Monium, and others have animations and thus custom material icon sets.
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("omnium").parent(GTMaterialIconSet.SHINY)
     event.create("sculk_alloy").parent(GTMaterialIconSet.DULL)
@@ -44,6 +48,7 @@ GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("monium").parent(GTMaterialIconSet.SHINY)
     event.create("dilithium").parent(GTMaterialIconSet.DULL)
     event.create("mana").parent(GTMaterialIconSet.SHINY)
+    event.create("necrosiderite").parent(GTMaterialIconSet.METALLIC)
 })
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
@@ -51,6 +56,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot().fluid()
         .element(GTElements.get("crystal_matrix"))
         .color(0x66ffff)
+        .secondaryColor(0x004590)
         .blastTemp(6800, "highest")
         .iconSet("shiny")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
@@ -136,4 +142,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("monium")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING)
         .cableProperties(GTValues.V[GTValues.MAX], 134217727, 0, true)
+
+    event.create("necrosiderite")
+        .ingot()
+        .color(0xffffff)
+        .iconSet("necrosiderite")
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
+        .cableProperties(33554432, 64, 8, false)
+        .blastTemp(12200, "highest", 1000000, 1000)
+        .element(GTElements.get("necrosiderite"))
 })

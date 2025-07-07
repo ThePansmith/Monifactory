@@ -25,14 +25,9 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:steel_drill_head")
             .itemOutputs(
-                "64x minecraft:raw_iron",
-                "64x minecraft:raw_iron",
-                "64x minecraft:raw_iron",
-                "64x minecraft:raw_copper",
-                "64x minecraft:raw_copper",
-                "64x minecraft:raw_copper",
-                "64x minecraft:raw_gold",
-                "32x minecraft:raw_gold",
+                "32x minecraft:raw_iron_block",
+                "32x minecraft:raw_copper_block",
+                "24x minecraft:raw_gold_block",
             )
     })
 
@@ -43,13 +38,56 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:diamond_drill_head")
             .itemOutputs(
-                "64x gtceu:raw_lapis",
-                "64x gtceu:raw_lapis",
-                "32x gtceu:raw_lapis",
-                "64x gtceu:raw_coal",
-                "64x gtceu:raw_coal",
-                "32x gtceu:raw_coal",
-                "64x gtceu:raw_redstone",
+                "32x gtceu:raw_lapis_block",
+                "32x gtceu:raw_emerald_block",
+                "40x gtceu:raw_coal_block",
+                "16x gtceu:raw_redstone_block",
+            )
+    })
+
+    microverse_mission(event, 4, 2).forEach(builder => {
+        builder
+            .itemInputs("4x kubejs:quantum_flux")
+            .itemInputs("16x kubejs:petrotheum_dust")
+            .itemInputs("kubejs:advanced_drilling_kit")
+            .itemInputs("gtceu:ultimet_drill_head")
+            .itemOutputs(
+                "64x gtceu:raw_platinum",
+                "16x gtceu:raw_platinum",
+                "64x gtceu:raw_wulfenite",
+                "48x gtceu:raw_barite",
+                "64x gtceu:raw_fluorite",
+                "32x gtceu:raw_fluorite",
+            )
+    })
+
+    microverse_mission(event, 4, 2).forEach(builder => {
+        builder
+            .itemInputs("4x kubejs:quantum_flux")
+            .itemInputs("16x kubejs:petrotheum_dust")
+            .itemInputs("kubejs:advanced_drilling_kit")
+            .itemInputs("gtceu:stainless_steel_drill_head")
+            .itemOutputs(
+                "64x gtceu:raw_pyrochlore",
+                "64x gtceu:raw_pyrochlore",
+                "64x gtceu:raw_pollucite",
+                "64x gtceu:raw_pollucite",
+                "64x gtceu:raw_gypsum"
+            )
+    })
+
+    microverse_mission(event, 4, 2).forEach(builder => {
+        builder
+            .itemInputs("4x kubejs:quantum_flux")
+            .itemInputs("16x kubejs:petrotheum_dust")
+            .itemInputs("kubejs:advanced_drilling_kit")
+            .itemInputs("gtceu:stainless_steel_drill_head")
+            .itemOutputs(
+                "64x kubejs:radium_salt",
+                "32x kubejs:radium_salt",
+                "48x gtceu:raw_saltpeter",
+                "24x gtceu:raw_alunite",
+                "64x gtceu:raw_electrotine"
             )
     })
 
@@ -60,12 +98,7 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:damascus_steel_drill_head")
             .itemOutputs(
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
-                "64x gtceu:raw_oilsands",
+                "64x gtceu:raw_oilsands_block",
                 "64x enderio:grains_of_infinity",
                 "64x enderio:grains_of_infinity",
             )
@@ -81,7 +114,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_thorium",
                 "64x gtceu:raw_thorium",
                 "64x gtceu:raw_thorium",
-                "16x gtceu:raw_thorium",
+                "48x gtceu:raw_thorium",
                 "32x gtceu:raw_pitchblende",
             )
     })

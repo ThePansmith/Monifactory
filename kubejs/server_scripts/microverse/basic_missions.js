@@ -32,8 +32,8 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:invar_drill_head")
             .itemOutputs(
-                "64x minecraft:raw_iron",
-                "48x minecraft:raw_iron",
+                "64x gtceu:raw_goethite",
+                "48x gtceu:raw_goethite",
                 "64x gtceu:raw_yellow_limonite",
                 "32x gtceu:raw_garnierite",
                 "32x gtceu:raw_nickel",
@@ -160,23 +160,10 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:bronze_drill_head")
             .itemOutputs(
-                "64x gtceu:raw_pyrochlore",
+                "40x gtceu:raw_pyrochlore",
                 "64x minecraft:raw_copper",
                 "32x gtceu:raw_tin",
                 "32x kubejs:radium_salt",
-            )
-    })
-
-    microverse_mission(event, 2, 1).forEach(builder => {
-        builder
-            .itemInputs("2x kubejs:quantum_flux")
-            .inputFluids("gtceu:rocket_fuel 3000")
-            .itemInputs("kubejs:basic_drilling_kit")
-            .itemInputs("gtceu:stainless_steel_drill_head")
-            .itemOutputs(
-                "64x gtceu:raw_pyrolusite",
-                "64x gtceu:raw_tantalite",
-                "64x gtceu:raw_tantalite",
             )
     })
 
@@ -215,8 +202,9 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:red_steel_drill_head")
             .itemOutputs(
-                "64x gtceu:raw_goethite",
-                "32x gtceu:raw_goethite",
+                "64x minecraft:raw_iron",
+                "32x minecraft:raw_iron",
+                "64x gtceu:raw_pyrolusite",
                 "64x gtceu:raw_cobaltite",
                 "48x gtceu:raw_malachite",
             )
@@ -237,11 +225,10 @@ ServerEvents.recipes(event => {
             )
     })
 
-    // T3MM missions
-    microverse_mission(event, 3, 1).forEach(builder => {
+    microverse_mission(event, 2, 1).forEach(builder => {
         builder
-            .itemInputs("4x kubejs:quantum_flux")
-            .inputFluids("gtceu:rocket_fuel 5000")
+            .itemInputs("3x kubejs:quantum_flux")
+            .inputFluids("gtceu:rocket_fuel 3000")
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:vanadium_steel_drill_head")
             .itemOutputs(
@@ -249,6 +236,24 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_vanadium_magnetite",
                 "64x gtceu:raw_chromite",
                 "32x minecraft:raw_gold",
+            )
+    })
+
+    // T3MM missions
+    microverse_mission(event, 3, 1).forEach(builder => {
+        builder
+            .itemInputs("4x kubejs:quantum_flux")
+            .inputFluids("gtceu:rocket_fuel 5000")
+            .itemInputs("kubejs:basic_drilling_kit")
+            .itemInputs("gtceu:invar_drill_head")
+            .itemOutputs(
+                "64x gtceu:raw_quartz",
+                "64x gtceu:raw_quartz",
+                "64x gtceu:raw_quartz",
+                "64x gtceu:raw_quartz",
+                "64x gtceu:raw_quartz",
+                "32x gtceu:raw_quartz",
+                "48x gtceu:raw_quartzite"
             )
     })
 
@@ -363,7 +368,7 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:rocket_fuel 5000")
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:tungsten_steel_drill_head")
-            .itemInputs("16x kubejs:wither_realm_data")
+            .itemInputs("4x kubejs:wither_realm_data")
             .itemOutputs(
                 "4x minecraft:ancient_debris",
                 "64x minecraft:quartz",

@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         "PFP",
         "PPP"
     ], {
-        P: "#forge:plates/omnium",
+        P: "#forge:plates/infinity",
         F: "gtceu:activated_netherite_huge_fluid_pipe"
     })
 
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         "PHP",
         "CEC"
     ], {
-        P: "#forge:plates/omnium",
+        P: "#forge:plates/infinity",
         F: "gtceu:uv_field_generator",
         C: "#gtceu:circuits/uev",
         H: "gtceu:uev_hermetic_casing",
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         "PHP",
         "CFC"
     ], {
-        P: "#forge:plates/omnium",
+        P: "#forge:plates/infinity",
         F: "gtceu:uv_field_generator",
         C: "#gtceu:circuits/uev",
         H: "gtceu:uev_machine_hull",

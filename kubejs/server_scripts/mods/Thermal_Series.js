@@ -84,13 +84,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.centrifuge("kubejs:resin_centrifuging")
         .inputFluids(Fluid.of("thermal:resin", 400))
         .itemOutputs("gtceu:sticky_resin")
-        .chancedOutput("thermal:rosin", 5000, 500)
+        .chancedOutput("thermal:rosin", 6000, 0)
         .outputFluids(Fluid.of("minecraft:water", 150), Fluid.of("thermal:tree_oil", 100))
         .duration(200).EUt(20)
 
     event.recipes.gtceu.centrifuge("kubejs:sap_centrifuging")
         .inputFluids(Fluid.of("thermal:sap", 200))
-        .chancedOutput("minecraft:sugar", 200, 50)
+        .chancedOutput("minecraft:sugar", 300, 0)
         .outputFluids(Fluid.of("minecraft:water", 190), Fluid.of("thermal:syrup", 10))
         .duration(2000).EUt(2)
 
