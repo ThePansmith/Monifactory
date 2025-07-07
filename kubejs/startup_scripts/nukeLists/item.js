@@ -122,7 +122,6 @@ global.itemNukeList = [
     "extendedcrafting:singularity",
 
     // GTCEu: Modern
-    "gtceu:ender_fluid_link_cover", // Not Yet Implemented. Remove when GTM makes it work.
     "gtceu:hot_kanthal_ingot",
     "gtceu:hot_silicon_ingot",
     "gtceu:milk",
