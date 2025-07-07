@@ -472,7 +472,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.centrifuge("centrifuge_platinum_sludge_residue_dust")
             .itemInputs("5x gtceu:platinum_sludge_residue_dust")
             .itemOutputs("2x gtceu:silicon_dioxide_dust", "2x gtceu:copper_dust")
-            .chancedOutput("gtceu:gold_dust", 1000, 1000)
+            .chancedOutput("gtceu:gold_dust", 4000, 0)
             .duration(938).EUt(30)
 
         // Platinum

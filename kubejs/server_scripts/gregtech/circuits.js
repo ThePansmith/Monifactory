@@ -72,110 +72,6 @@ ServerEvents.recipes(event => {
             .EUt(245760)
     }
 
-    for (const javaRecipe of event.findRecipes({ mod: "gtceu" })) {
-        /** @type {import("../../dx/typings/GTJSONRecipe.d.mts").GTJSONRecipe} */
-        let recipe = JSON.parse(javaRecipe.json.toString())
-
-        // Filter out non-GT-machine recipes
-        if(!recipe?.type.startsWith("gtceu:"))
-            continue
-
-        // Filter out non-item recipes
-        if (!(recipe.duration && recipe.inputs?.item && recipe.outputs))
-            continue
-
-        // Filter out recipes without advanced smd
-        if(!recipe.inputs.item.some(i =>
-            i.content.type === "gtceu:sized" &&
-            "item" in i.content.ingredient &&
-            i.content.ingredient.item.startsWith("gtceu:advanced_smd_")
-        )) continue
-
-        // Filter out recipes without eu
-        if(!recipe.tickInputs?.eu)
-            continue
-        let eut = recipe.tickInputs.eu[0].content
-        if(!eut)
-            continue
-
-        // Extract inputs and outputs data
-        let [newInputItems, newOutputItems] = [recipe.inputs.item, recipe.outputs?.item].map(items =>
-            items && items.map(i => {
-                let c = i.content
-                if (c.type !== "gtceu:sized" || "type" in c.ingredient)
-                    throw new Error("Cannot generate complex SMD recipes")
-                let ing = c.ingredient
-                return {
-                    id: "tag" in ing ? "#" + ing.tag : ing.item,
-                    amount: c.count
-                }
-            })
-        )
-        let [newInputFluids, newOutputFluids] = [recipe.inputs.fluid, recipe.outputs?.fluid].map(items =>
-            items && items.map(i => {
-                let c = i.content
-                let [val] = c.value
-                return {
-                    id: "tag" in val ? "gtceu:" + val.tag.split(":")[1] : val.fluid,
-                    amount: c.amount
-                }
-            })
-        )
-        let {duration, recipeConditions} = recipe
-
-        /** @param {number} by */
-        let multiplyRecipe = by => {
-            for(let matters of [newInputItems, newOutputItems, newInputFluids, newOutputFluids])
-                if(matters)
-                    for(let matter of matters)
-                        matter.amount *= by
-        }
-        /** @param {number} by */
-        let isRecipeDivisible = by =>
-            [newInputItems, newOutputItems, newInputFluids, newOutputFluids]
-                .filter(matters => matters)
-                .every(matters => matters.every(
-                    matter => matter.amount % by === 0
-                ))
-
-        multiplyRecipe(4)
-        // Replace all advanced smd by complex smd
-        for(let inp of newInputItems) {
-            let match = inp.id.match(/^gtceu:advanced(_smd_.*)$/)
-            if(!match) continue
-            inp.id = "kubejs:complex" + match[1]
-            inp.amount /= 4
-        }
-        // Divide recipe back as much as possible
-        while(isRecipeDivisible(2))
-            multiplyRecipe(0.5)
-
-        let [,machineName] = recipe.type.split(":")
-        let newRecipe = event.recipes.gtceu[machineName]("complex_smd_recipe_" + javaRecipe.hashCode())
-        if(newInputItems)
-            newRecipe = newRecipe.itemInputs.apply(newRecipe, newInputItems.map(i => `${i.amount}x ${i.id}`))
-        if(newInputFluids)
-            newRecipe = newRecipe.inputFluids.apply(newRecipe, newInputFluids.map(i => `${i.id} ${i.amount}`))
-        if(newOutputItems)
-            newRecipe = newRecipe.itemOutputs.apply(newRecipe, newOutputItems.map(i => `${i.amount}x ${i.id}`))
-        if(newOutputFluids)
-            newRecipe = newRecipe.outputFluids.apply(newRecipe, newOutputFluids.map(i => `${i.id} ${i.amount}`))
-        // Advanced smd recipes take twice as fast to make than simple smds,
-        // while the EU/t is unaffected. In total, EU is halved.
-        // Here we follow the convention:
-        newRecipe = newRecipe.EUt(eut).duration(duration / 2)
-
-        let cleanroomCondition = recipeConditions.find(cond => cond.type === "cleanroom")
-        if(cleanroomCondition)
-            newRecipe = newRecipe.cleanroom(CleanroomType[cleanroomCondition.cleanroom.toUpperCase()])
-
-        let researchCondition = recipeConditions.find(cond => cond.type === "research")
-        if(researchCondition) {
-            let research = researchCondition.research[0]
-            newRecipe = newRecipe.researchWithoutRecipe(research.researchId, research.dataItem.id)
-        }
-    }
-
     // Wetware tweaks are more invasive than a 1-item swapout
 
     // Wetware printed circuit board
@@ -213,24 +109,9 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.circuit_assembler("optical_processor_complex_smd")
-        .itemInputs(
-            "2x kubejs:optical_processing_unit",
-            "2x kubejs:optical_chip",
-            "4x kubejs:electro_optic_modulator",
-            "5x kubejs:complex_smd_capacitor",
-            "5x kubejs:complex_smd_transistor",
-            "8x gtceu:fine_naquadria_wire"
-        )
-        .inputFluids("gtceu:soldering_alloy 288")
-        .itemOutputs("4x kubejs:optical_processor")
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(10 * 20 / 2)
-        .EUt(GTValues.VA[GTValues.UV])
-
-    event.recipes.gtceu.assembly_line("optical_processor_assembly")
-        .itemInputs("kubejs:optical_processing_unit",
-            "2x kubejs:optical_processor",
+    event.recipes.gtceu.circuit_assembler("matter_processor_assembly")
+        .itemInputs("kubejs:matter_processing_unit",
+            "2x kubejs:matter_processor",
             "8x gtceu:advanced_smd_inductor",
             "8x gtceu:advanced_smd_capacitor",
             "8x gtceu:rhodium_foil",
@@ -243,21 +124,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(250000)
 
-    event.recipes.gtceu.assembly_line("optical_processor_assembly_complex_smd")
-        .itemInputs("kubejs:optical_processing_unit",
-            "2x kubejs:optical_processor",
-            "2x kubejs:complex_smd_inductor",
-            "2x kubejs:complex_smd_capacitor",
-            "8x gtceu:rhodium_foil",
-            "32x gtceu:ram_chip",
-            "16x gtceu:fine_europium_wire"
-        )
-        .inputFluids("gtceu:soldering_alloy 1152")
-        .itemOutputs("2x kubejs:optical_processor_assembly")
-        .duration(20 * 20 / 2)
-        .EUt(250000)
-
-    event.recipes.gtceu.assembly_line("optical_processor_computer")
+    event.recipes.gtceu.assembly_line("matter_processor_computer")
         .itemInputs(
             "kubejs:optical_processing_unit",
             "2x kubejs:optical_processor_assembly",
@@ -272,22 +139,7 @@ ServerEvents.recipes(event => {
         .duration(20 * 20)
         .EUt(250000)
 
-    event.recipes.gtceu.assembly_line("optical_processor_computer_complex_smd")
-        .itemInputs(
-            "kubejs:optical_processing_unit",
-            "2x kubejs:optical_processor_assembly",
-            "3x kubejs:complex_smd_diode",
-            "24x gtceu:nor_memory_chip",
-            "8x kubejs:uxpic_chip",
-            "24x gtceu:fine_europium_wire",
-            "4x gtceu:crystal_matrix_plate"
-        )
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 288", "gtceu:omnium 144")
-        .itemOutputs("kubejs:optical_processor_computer")
-        .duration(20 * 20 / 2)
-        .EUt(250000)
-
-    event.recipes.gtceu.assembly_line("optical_processor_mainframe")
+    event.recipes.gtceu.assembly_line("matter_processor_mainframe")
         .itemInputs("2x gtceu:activated_netherite_frame",
             "2x kubejs:optical_processor_computer",
             "32x gtceu:advanced_smd_diode",
@@ -302,23 +154,6 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 288")
         .itemOutputs("kubejs:optical_processor_mainframe")
         .duration(2400)
-        .EUt(GTValues.VA[GTValues.UHV])
-
-    event.recipes.gtceu.assembly_line("optical_processor_mainframe_complex_smd")
-        .itemInputs("2x gtceu:activated_netherite_frame",
-            "2x kubejs:optical_processor_computer",
-            "8x kubejs:complex_smd_diode",
-            "8x kubejs:complex_smd_capacitor",
-            "8x kubejs:complex_smd_transistor",
-            "8x kubejs:complex_smd_resistor",
-            "8x kubejs:complex_smd_inductor",
-            "32x gtceu:ram_chip",
-            "16x kubejs:multidimensional_cpu_chip",
-            "16x gtceu:ruthenium_trinium_americium_neutronate_double_wire",
-            "8x gtceu:crystal_matrix_plate") // could replace with omnium frame
-        .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 288")
-        .itemOutputs("kubejs:optical_processor_mainframe")
-        .duration(2400 / 2)
         .EUt(GTValues.VA[GTValues.UHV])
 
     // Monic Circuits

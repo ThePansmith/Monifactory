@@ -144,10 +144,6 @@ StartupEvents.registry("item", event => {
     event.create("corrupted_universe_data").displayName("§dCorrupted Universe Data")
 
 
-    // Creative Data
-    event.create("omnic_data")
-
-
     // Endgame Items
     event.create("neutron_emitter")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
@@ -213,14 +209,6 @@ StartupEvents.registry("item", event => {
         .texture("kubejs:item/prismac/chromatic_capacitor_magenta")
         .displayName("Chromatic Capacitor: §dMagenta§r")
 
-    // TODO: scrap those cleanly
-    event.create("infinity_catalyst").rarity("epic")
-    event.create("dormant_furious_infinity_catalyst")
-    event.create("furious_infinity_catalyst").rarity("epic")
-    event.create("inert_serene_infinity_catalyst")
-    event.create("serene_infinity_catalyst").rarity("epic")
-    event.create("dormant_infinity_compound_ingot")
-
 
     // Monium
     event.create("field_stabilised_omnic_pulsar_compound") // TODO: rename to Field-Stabilized Prismatic Pulsar Compound
@@ -251,7 +239,9 @@ StartupEvents.registry("item", event => {
     event.create("optical_chip")
     event.create("electro_optic_modulator")
     event.create("carbon_mesh_reinforced_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/carbon_mesh_reinforced_circuit_board" })
     event.create("carbon_mesh_reinforced_printed_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/carbon_mesh_reinforced_printed_circuit_board" })
 
 
     // Solidified Elements
@@ -400,7 +390,6 @@ StartupEvents.registry("item", event => {
     event.create("warden_horn")
     event.create("sculk_core")
     event.create("empty_mesol_energy_core").texture("kubejs:item/mesol_energy_core")
-    event.create("mesol_energy_core")
     event.create("empty_bathyal_energy_core").texture("kubejs:item/bathyal_energy_core")
     event.create("bathyal_energy_core")
     event.create("empty_abyssal_energy_core").texture("kubejs:item/abyssal_energy_core")
@@ -450,10 +439,11 @@ StartupEvents.registry("item", event => {
 
 
     // Sculk bioalloy processing intermediate products
-    event.create("sculk-compatible_trellis_microstructure").texture("kubejs:item/bioalloy/sculk-compatible_trellis_microstructure")
-    event.create("fibrinogenic_sculk_goo").texture("kubejs:item/bioalloy/fibrinogenic_sculk_goo")
-    event.create("sculk-saturated_microstructure_pulp").texture("kubejs:item/bioalloy/sculk-saturated_microstructure_pulp")
-    event.create("animated_bioalloy_pulp").texture("kubejs:item/bioalloy/animated_bioalloy_pulp")
+    event.create("experience_attuned_compound").texture("kubejs:item/bioalloy/experience_attuned_compound")
+    event.create("experience_attuned_microstructure").texture("kubejs:item/bioalloy/experience_attuned_microstructure")
+    event.create("manyullyn_based_trellis_microstructure").displayName("Manyullyn-Based Trellis Microstructure").texture("kubejs:item/bioalloy/manyullyn_based_trellis_microstructure")
+    event.create("experience_saturated_microstructure").texture("kubejs:item/bioalloy/experience_saturated_microstructure")
+    event.create("amalgamated_sculk").texture("kubejs:item/bioalloy/amalgamated_sculk")
 
 
     // Alien Scrapline
@@ -551,20 +541,17 @@ StartupEvents.registry("item", event => {
             .tag(`gtceu:circuits/${volt}`)
     }
 
-    function Unit(theme) {
-        event.create(`${theme}_processing_unit`)
-            .textureJson({ layer0: `kubejs:item/circuits/${theme}_processing_unit` })
-        event.create(`${theme}_circuit_board`)
-            .textureJson({ layer0: `kubejs:item/circuits/${theme}_circuit_board` })
-    }
-
-    Unit("optical")
+    event.create("optical_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/optical_processing_unit" })
     Circuit("optical", "processor", "zpm")
     Circuit("optical", "processor_assembly", "uv")
     Circuit("optical", "processor_computer", "uhv")
     Mainframe("optical", "uev")
 
-    Unit("monic")
+    event.create("monic_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/monic_processing_unit" })
+    event.create("monic_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/monic_circuit_board" })
     Circuit("monic", "processor", "uv")
     Circuit("monic", "processor_assembly", "uhv")
     Circuit("monic", "processor_computer", "uev")

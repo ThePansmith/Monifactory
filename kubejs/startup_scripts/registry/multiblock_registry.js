@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .category("multiblock")
             .setEUIO("in")
             .setMaxIOSize(2, 2, 0, 0)
-            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+            .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
             .setSound(GTSoundEntries.ASSEMBLER)
@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
             .category("multiblock")
             .setEUIO("in")
             .setMaxIOSize(2, 1, 0, 0)
-            .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+            .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMPUTATION)
     }
@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(2, 20, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
@@ -49,7 +49,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(9, 1, 2, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
 
@@ -59,7 +59,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(9, 9, 3, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
 
@@ -68,7 +68,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("out")
         .setMaxIOSize(2, 2, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
 
@@ -77,7 +77,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("out")
         .setMaxIOSize(0, 0, 1, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC)
 
@@ -86,7 +86,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(6, 0, 5, 1)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
@@ -95,25 +95,16 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(3, 6, 1, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.TURBINE)
-
-    // Subatomic Digital Assembler
-    event.create("subatomic_digital_assembly")
-        .category("multiblock")
-        .setEUIO("in")
-        .setMaxIOSize(2, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COOLING)
 
     // Quintessence Infuser
     event.create("quintessence_infuser")
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(2, 2, 1, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE)
 
@@ -122,7 +113,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(1, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_MACERATE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MINER)
 
@@ -130,8 +121,8 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("discharger")
         .category("multiblock")
         .setEUIO("in")
-        .setMaxIOSize(9, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setMaxIOSize(9, 1, 1, 0)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
 
@@ -140,7 +131,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .category("multiblock")
         .setEUIO("in")
         .setMaxIOSize(3, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
 
@@ -208,6 +199,16 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.0"))
         .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.1"))
         .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.2"))
+        .addDataInfo((data) => {
+            if (data.contains("minimumXp") && data.contains("maximumXp")) {
+                let minimumXp = data.getInt("minimumXp");
+                let maximumXp = data.getInt("maximumXp");
+                return I18n.get("gtceu.multiblock.sculk_vat.emi_info.3", minimumXp, maximumXp);
+            } else {
+                return "";
+            }
+        })
+        .addDataInfo((data) => "")
 
     // Normal mode-exclusive multis
     if (doHNN) {
@@ -230,7 +231,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where(" ", Predicates.air())
                 .build())
             .workableCasingRenderer("kubejs:block/dark_steel_machine_hull",
-                "gtceu:block/multiblock/research_station", false)
+                "gtceu:block/multiblock/simulation_chamber", false)
 
         // Loot Superfabricator
         event.create("loot_superfabricator", "multiblock")
@@ -250,7 +251,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where(" ", Predicates.air())
                 .build())
             .workableCasingRenderer("kubejs:block/dark_steel_machine_hull",
-                "gtceu:block/multiblock/research_station", false)
+                "gtceu:block/multiblock/loot_fabricator", false)
 
 
         // Simulation Quantumcomputer
@@ -278,7 +279,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where(" ", Predicates.air())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-                "gtceu:block/multiblock/fusion_reactor", false)
+                "gtceu:block/multiblock/simulation_chamber", false)
 
         // Loot Quantumfabricator
         event.create("loot_quantumfabricator", "multiblock")
@@ -305,7 +306,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .where(" ", Predicates.air())
                 .build())
             .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-                "gtceu:block/multiblock/fusion_reactor", false)
+                "gtceu:block/multiblock/loot_fabricator", false)
     }
 
     // Universal Crystallizer
@@ -552,39 +553,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingRenderer("kubejs:block/soularium/casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-
-    // Subatomic Digital Assembler
-    event.create("subatomic_digital_assembler", "multiblock")
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes("subatomic_digital_assembly")
-        .noRecipeModifier()
-        .appearanceBlock(GCYMBlocks.CASING_ATOMIC)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("#CCCCC#", "#CCCCC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CGGGC#", "#CCCCC#", "#CCCCC#")
-            .aisle("CCCCCCC", "CHMMMHC", "CH   HC", "CH   HC", "CH   HC", "CH   HC", "CH   HC", "CHMMMHC", "CCCCCCC")
-            .aisle("CCCCCCC", "CMXYXMC", "G XYX G", "G XYX G", "G XYX G", "G XYX G", "G XYX G", "CMXYXMC", "CCCCCCC")
-            .aisle("CCCCCCC", "CMYYYMC", "G YYY G", "G YYY G", "G YYY G", "G YYY G", "G YYY G", "CMYYYMC", "CCCCCCC")
-            .aisle("CCCCCCC", "CMXYXMC", "G XYX G", "G XYX G", "G XYX G", "G XYX G", "G XYX G", "CMXYXMC", "CCCCCCC")
-            .aisle("CCCCCCC", "CHMMMHC", "CH   HC", "CH   HC", "CH   HC", "CH   HC", "CH   HC", "CHMMMHC", "CCCCCCC")
-            .aisle("CCCCCCC", "CCCCCCC", "#CCCCC#", "#CCCCC#", "#CCCCC#", "#CCCCC#", "#CCCCC#", "CCCCCCC", "CCCCCCC")
-            .aisle("CCCCCCC", "#CCCCC#", "#CCCCC#", "#CNNNC#", "###N###", "###N###", "###N###", "#CNNNC#", "CCCCCCC")
-            .aisle("#CCCCC#", "##C@C##", "##CCC##", "#######", "#######", "#######", "#######", "#######", "#CCCCC#")
-            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("G", Predicates.blocks(GTBlocks.CLEANROOM_GLASS.get()))
-            .where("H", Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
-            .where("M", Predicates.frames(GTMaterials.get("crystal_matrix")))
-            .where("N", Predicates.frames(GTMaterials.NaquadahAlloy))
-            .where("X", Predicates.blocks(GTBlocks.COMPUTER_CASING.get()))
-            .where("Y", Predicates.blocks(GTBlocks.ADVANCED_COMPUTER_CASING.get()))
-            .where("C", Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()).setMinGlobalLimited(220)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
-            )
-            .where(" ", Predicates.air())
-            .where("#", Predicates.any())
-            .build())
-        .workableCasingRenderer("gtceu:block/casings/gcym/atomic_casing",
-            "gtceu:block/multiblock/fusion_reactor", false)
 
     // Discharger
     event.create("discharger", "multiblock")
@@ -1074,36 +1042,37 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .recipeTypes(["omniscience_research_beacon"])
         .appearanceBlock(() => Block.getBlock("kubejs:bioalloy_casing"))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("###NNNNNNN###", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############")
-            .aisle("##NNNNNNNNN##", "###NDDNDDN###", "###NDDNDDN###", "###NDDNDDN###", "###NCCCCCN###", "###NNNNNNN###", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "###NNNCNNN###", "#############", "#############", "#############", "#############")
-            .aisle("#NNNNNNNNNNN#", "##NAHHAHHAN##", "##NAHHAHHAN##", "##NAHHHHHAN##", "##NAHHCHHAN##", "##NNAAAAANN##", "##NNNNNNNNN##", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "##FNNNCNNNF##", "##NN#####NN##", "#############", "#############", "#############", "#############")
-            .aisle("NNNNNNNNNNNNN", "#NA#######AN#", "#NA#######AN#", "#NA###G###AN#", "#NA##GCG##AN#", "#NA###G###AN#", "##N#######N##", "###NNNNNNN###", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "###FNNCNNF###", "##NN#####NN##", "#NN#######NN#", "#############", "#############", "#############", "#############")
-            .aisle("NNNNNNNNNNNNN", "#DH#######HD#", "#DH#######HD#", "#DH###G###HD#", "#CH##GCG##HC#", "#NA###G###AN#", "##N#######N##", "###NGGGGGN###", "####F###F####", "####F###F####", "####F###F####", "####F###F####", "####F###F####", "####F###F####", "####F###F####", "####FFFFF####", "####FNCNF####", "###NN###NN###", "##N#######N##", "#N#########N#", "#############", "#############", "#############", "#############")
-            .aisle("NNNNNNNNNNNNN", "#DH###G###HD#", "#DH###G###HD#", "#DH###G###HD#", "#CHGGGCGGGHC#", "#NA###G###AN#", "##N###G###N##", "###NGGGGGN###", "######G######", "######G######", "######G######", "######G######", "######G######", "######G######", "######G######", "####FNCNF####", "####N###N####", "###N#####N###", "##N#######N##", "#N#########N#", "#############", "#############", "#############", "#############")
-            .aisle("NNNNNNNNNNNNN", "#NA##GCG##AN#", "#NA##GCG##AN#", "#NHGGGCGGGHN#", "#CCCCCCCCCCC#", "#NAGGGCGGGAN#", "##N##GCG##N##", "###NGGCGGN###", "#####GCG#####", "#####GCG#####", "#####GCG#####", "#####GCG#####", "#####GCG#####", "#####GCG#####", "#####GCG#####", "####FCCCF####", "####C#C#C####", "###C##C##C###", "##C###C###C##", "#C####C####C#", "######C######", "######C######", "######C######", "######I######")
-            .aisle("NNNNNNNNNNNNN", "#DH###G###HD#", "#DH###G###HD#", "#DH###G###HD#", "#CHGGGCGGGHC#", "#NA###G###AN#", "##N###G###N##", "###NGGGGGN###", "######G######", "######G######", "######G######", "######G######", "######G######", "######G######", "######G######", "####FNCNF####", "####N###N####", "###N#####N###", "##N#######N##", "#N#########N#", "#############", "#############", "#############", "#############")
-            .aisle("NNNNNNNNNNNNN", "#DH#######HD#", "#DH#######HD#", "#DH###G###HD#", "#CH##GCG##HC#", "#NA###G###AN#", "##N#######N##", "###NGGGGGN###", "####F###F####", "####F###F####", "####F###F####", "####F###F####", "####F###F####", "####F###F####", "####F###F####", "####FFFFF####", "####FNCNF####", "###NN###NN###", "##N#######N##", "#N#########N#", "#############", "#############", "#############", "#############")
-            .aisle("NNNNNNNNNNNNN", "#NA#######AN#", "#NA#######AN#", "#NA###G###AN#", "#NA##GCG##AN#", "#NA###G###AN#", "##N#######N##", "###NNNNNNN###", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "###FNNCNNF###", "##NN#####NN##", "#NN#######NN#", "#############", "#############", "#############", "#############")
-            .aisle("#NNNNNNNNNNN#", "##NAHHAHHAN##", "##NAHHAHHAN##", "##NAHHHHHAN##", "##NAHHCHHAN##", "##NNAAAAANN##", "##NNNNNNNNN##", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "##FNNNCNNNF##", "##NN#####NN##", "#############", "#############", "#############", "#############")
-            .aisle("##NNNNNNNNN##", "###NDDNDDN###", "###NDDNDDN###", "###NDDNDDN###", "###NCCCCCN###", "###NNNNNNN###", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "###NNNCNNN###", "#############", "#############", "#############", "#############")
-            .aisle("###NNN@NNN###", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############", "#############")
+            .aisle("###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "#####CbbbC#####", "###############", "###############", "###############")
+            .aisle("####BBBBBBB####", "####BRBBBRB####", "####BRB#BRB####", "####BRB#BRB####", "####BBB#BBB####", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "#####CbbbC#####", "###bb#####bb###", "###############", "###############", "###############")
+            .aisle("###HBBBBBBBH###", "###BBABBBABB###", "###FBAB#BABF###", "####BAB#BAB####", "####BBB#BBB####", "######F#F######", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "#####CbbbC#####", "###bb#####bb###", "##b#########b##", "###############", "###############", "###############")
+            .aisle("##HHBBBBBBBHH##", "##BBBABBBABBB##", "##F#########F##", "###F#######F###", "###############", "###############", "######F#F######", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "######CbC######", "####bb###bb####", "##bb#######bb##", "#b###########b#", "###############", "###############", "###############")
+            .aisle("##HHBBBBBBBHH##", "##BBBAAAAABBB##", "###############", "###############", "####F#####F####", "####F#####F####", "####F#####F####", "######F#F######", "######F#F######", "###############", "###############", "###############", "###############", "###############", "###############", "####bbCbCbb####", "###b#######b###", "##b#########b##", "#b###########b#", "###############", "###############", "###############")
+            .aisle("BBBHBBBBBBBHBBB", "#BBBBBBABBBBBB#", "#F####BBB####F#", "##F#########F##", "###############", "###############", "###############", "#####F###F#####", "#####F###F#####", "#####FFFFF#####", "#####FF#FF#####", "######F#F######", "######F#F######", "######F#F######", "######CCC######", "####bb###bb####", "##Cb#######bC##", "#C###########C#", "C#############C", "###############", "###############", "###############")
+            .aisle("BBBHBBBBBBBHBBB", "#BBBBBBABBBBBB#", "#####HDGDH#####", "######DGD######", "###F##DGD##F###", "###F##DGD##F###", "####F#DGD#F####", "####F#DGD#F####", "####F#DGD#F####", "#####FDGDF#####", "#####FDGDF#####", "#####FDGDF#####", "#####FDGDF#####", "#####FDGDF#####", "#####CbbbC#####", "###CC#####CC###", "##b#########b##", "#b###########b#", "b#############b", "###############", "###############", "###############")
+            .aisle("BBBHHHHBHHHHBBB", "#BBBBBHAHBBBBB#", "#####HHAHH#####", "######GAG######", "######GAG######", "######GAG######", "######GAG######", "######GAG######", "######GAG######", "######GAG######", "######GAG######", "######GAG######", "######GAG######", "######GAG######", "#####CbAbC#####", "###bb##A##bb###", "##b####A####b##", "#b#####A#####b#", "b######A######b", "#######A#######", "#######A#######", "#######I#######")
+            .aisle("BBBHBBBBBBBHBBB", "#BBBBBBBBBBBBB#", "#####HDGDH#####", "######DGD######", "###F##DGD##F###", "###F##DGD##F###", "####F#DGD#F####", "####F#DGD#F####", "####F#DGD#F####", "#####FDGDF#####", "#####FDGDF#####", "#####FDGDF#####", "#####FDGDF#####", "#####FDGDF#####", "#####CbbbC#####", "###CC#####CC###", "##b#########b##", "#b###########b#", "b#############b", "###############", "###############", "###############")
+            .aisle("BBBHBBBBBBBHBBB", "#BBBBBBBBBBBBB#", "#F####B@B####F#", "##F#########F##", "###############", "###############", "###############", "#####F###F#####", "#####F###F#####", "#####FF#FF#####", "#####FF#FF#####", "######F#F######", "######F#F######", "######F#F######", "######CCC######", "####bb###bb####", "##Cb#######bC##", "#C###########C#", "C#############C", "###############", "###############", "###############")
+            .aisle("##HHBBBBBBBHH##", "##BBBBBBBBBBB##", "###############", "###############", "####F#####F####", "####F#####F####", "####F#F#F#F####", "######F#F######", "######F#F######", "###############", "###############", "###############", "###############", "###############", "###############", "####bbCbCbb####", "###b#######b###", "##b#########b##", "#b###########b#", "###############", "###############", "###############")
+            .aisle("##HHBBBBBBBHH##", "##BBBBBBBBBBB##", "##F#########F##", "###F#######F###", "######F#F######", "######F#F######", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "######CbC######", "####bb###bb####", "##bb#######bb##", "#b###########b#", "###############", "###############", "###############")
+            .aisle("###HHBBBBBHH###", "###BBBBBBBBB###", "###F#######F###", "#####F###F#####", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "#####CbbbC#####", "###bb#####bb###", "##b#########b##", "###############", "###############", "###############")
+            .aisle("#####BBBBB#####", "#####BBBBB#####", "#####F###F#####", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "#####CbbbC#####", "###bb#####bb###", "###############", "###############", "###############")
+            .aisle("#####BBBBB#####", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "#####CbbbC#####", "###############", "###############", "###############")
             .where("#", Predicates.any())
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .where("G", Predicates.blocks("kubejs:prism_glass"))
             .where("A", Predicates.blocks(GTBlocks.ADVANCED_COMPUTER_CASING.get()))
-            .where("H", Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
-            .where("C", Predicates.blocks("kubejs:bioalloy_fusion_casing"))
-            .where("F", Predicates.blocks("gtceu:sculk_bioalloy_frame"))
+            .where("C", Predicates.blocks(GTBlocks.COMPUTER_CASING.get()))
+            .where("H", Predicates.blocks(GTBlocks.COMPUTER_HEAT_VENT.get()))
+            .where("D", Predicates.blocks("kubejs:bioalloy_fusion_casing"))
+            .where("F", Predicates.frames(GTMaterials.get("crystal_matrix")))
             .where("I", Predicates.blocks("monilabs:knowledge_transmission_array"))
-            .where("D", Predicates.blocks(GTBlocks.ADVANCED_COMPUTER_CASING.get()))
-            .where("N",
-                Predicates.blocks("kubejs:bioalloy_casing").setMinGlobalLimited(384)
+            .where("R", Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION))
+            .where("b", Predicates.blocks("kubejs:bioalloy_casing"))
+            .where("B",
+                Predicates.blocks("kubejs:bioalloy_casing").setMinGlobalLimited(268)
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMinGlobalLimited(1))
-                    .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                    .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1))
-                    .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
-                    .or(Predicates.abilities(PartAbility.EXPORT_ITEMS)))
+                    .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1)))
             .build())
         .workableCasingRenderer("kubejs:block/bioalloy/casing",
             "gtceu:block/multiblock/processing_array")

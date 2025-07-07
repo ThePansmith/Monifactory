@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             .notConsumable(Item.of("hostilenetworks:data_model", `{data_model:{id:"hostilenetworks:${model}"}}`).weakNBT())
             .itemInputs("hostilenetworks:prediction_matrix")
             .itemOutputs(`hostilenetworks:${prediction}_prediction`)
-            .chancedOutput(Item.of("hostilenetworks:prediction", `{data_model:{id:"hostilenetworks:${model}"}}`), 3000, 500)
+            .chancedOutput(Item.of("hostilenetworks:prediction", `{data_model:{id:"hostilenetworks:${model}"}}`), 5000, 0)
             .duration(15.05 * 20) // same for all recipes
             .EUt(EUt)
     }
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         }).id("gtceu:shaped/simulation_supercomputer")
 
         event.recipes.gtceu.assembly_line("simulation_quantumcomputer")
-            .itemInputs("gtceu:atomic_casing", "6x gtceu:trinaquadalloy_plate", "16x hostilenetworks:sim_chamber", "kubejs:heart_of_a_universe", "4x #gtceu:circuits/uhv", "2x gtceu:uv_robot_arm", "2x gtceu:uv_field_generator", "kubejs:abyssal_energy_core")
+            .itemInputs("gtceu:atomic_casing", "6x gtceu:trinaquadalloy_plate", "4x gtceu:simulation_supercomputer", "kubejs:heart_of_a_universe", "4x #gtceu:circuits/uhv", "2x gtceu:uv_robot_arm", "2x gtceu:uv_field_generator", "kubejs:abyssal_energy_core")
             .inputFluids("gtceu:soldering_alloy 1152")
             .itemOutputs("gtceu:simulation_quantumcomputer")
             .stationResearch(b => b

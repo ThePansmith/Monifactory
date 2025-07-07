@@ -22,7 +22,6 @@ let addFluid = (mat, key, temp) => {
 GTCEuStartupEvents.registry("gtceu:material", event => {
     // Existing materials that get an item form
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
-    GTMaterials.Lutetium.addFlags(GTMaterialFlags.GENERATE_FOIL)
 
     GTMaterials.Actinium.setProperty($PropertyKey.INGOT, new $IngotProperty())
     GTMaterials.Actinium.setMaterialARGB(0xaa3399)
@@ -44,8 +43,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Graphite.addFlags(GTMaterialFlags.GENERATE_PLATE)
     GTMaterials.MagnesiumDiboride.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
-    GTMaterials.Zeron100.addFlags(GTMaterialFlags.GENERATE_DENSE)
-    GTMaterials.BlueAlloy.addFlags(GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
     GTMaterials.VanadiumGallium.addFlags(GTMaterialFlags.GENERATE_BOLT_SCREW)
 
@@ -68,4 +65,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     addFluid(GTMaterials.NetherStar, $FluidStorageKeys.LIQUID, 1337);
     GTMaterials.Thorium.setMaterialARGB(0x273420)
     addFluid(GTMaterials.Actinium, $FluidStorageKeys.LIQUID, 1324);
+
+    // Liquid Sculk
+    let liquid_sculk_prop = new $FluidProperty();
+    liquid_sculk_prop.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder().temperature(310).disableBucket().customStill())
+    GTMaterials.Sculk.setProperty($PropertyKey.FLUID, liquid_sculk_prop)
 })
