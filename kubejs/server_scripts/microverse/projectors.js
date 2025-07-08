@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         P: "gtceu:double_microversium_plate",
         F: "gtceu:uhv_emitter",
         L: "kubejs:microverse_casing",
-        A: "#gtceu:circuits/uev",
+        A: "#gtceu:circuits/uhv",
         R: "gtceu:computer_monitor_cover"
     }).id("kubejs:shaped/hyperbolic_microverse_projector")
 })

@@ -1,7 +1,0 @@
-{
-  "demandOnClientMessage": "You do not have No Chat Reports, and this server is configured to require it on client!",
-  "demandOnClient": false,
-  "convertToGameMessage": true,
-  "addQueryData": true,
-  "enableDebugLog": false
-}

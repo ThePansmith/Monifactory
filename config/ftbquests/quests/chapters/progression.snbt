@@ -31,8 +31,8 @@
 			id: "63280C5F37A22345"
 			linked_quest: "2EBB9A154522348F"
 			size: 2.0d
-			x: 8.5d
-			y: 13.0d
+			x: 7.0d
+			y: 11.5d
 		}
 		{
 			id: "2D26C83F2B01F12D"
@@ -428,10 +428,10 @@
 		}
 		{
 			dependencies: [
-				"4612D36D22AB4B34"
 				"6F5BB99060FF03AC"
 				"115B96B2092D671E"
 				"67663B49B80849C1"
+				"5A8D2BFAF02E6325"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.519A11FDC6A7EF21.description1}"]
@@ -454,7 +454,12 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["01E542E1C9DAF5B4"]
+			dependencies: [
+				"01E542E1C9DAF5B4"
+				"4EB9D1ADC4814330"
+				"3D7924B550A1BBA0"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{moni.quest.0C50D78D8F63CAFE.description1}"]
 			id: "0C50D78D8F63CAFE"
 			tasks: [{
@@ -1019,23 +1024,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"4612D36D22AB4B34"
-				"7AF06CB391779388"
-			]
-			description: ["{moni.quest.7704A934F89E4FD9.description1}"]
-			id: "7704A934F89E4FD9"
-			shape: "hexagon"
-			tasks: [{
-				id: "25F064AE3DC12AA5"
-				item: "kubejs:dimensional_processor_assembly"
-				type: "item"
-			}]
-			title: "{moni.quest.7704A934F89E4FD9.title}"
-			x: 7.0d
-			y: 6.5d
-		}
-		{
 			dependencies: ["4EB9D1ADC4814330"]
 			description: ["{moni.quest.07057CDE4E021BA7.description1}"]
 			id: "07057CDE4E021BA7"
@@ -1048,34 +1036,6 @@
 			title: "{moni.quest.07057CDE4E021BA7.title}"
 			x: 5.5d
 			y: 8.0d
-		}
-		{
-			dependencies: ["7704A934F89E4FD9"]
-			description: ["{moni.quest.5E829641B6FE96E5.description1}"]
-			id: "5E829641B6FE96E5"
-			shape: "hexagon"
-			tasks: [{
-				id: "6AFA814AA43354BE"
-				item: "kubejs:dimensional_processor_computer"
-				type: "item"
-			}]
-			title: "{moni.quest.5E829641B6FE96E5.title}"
-			x: 7.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["5E829641B6FE96E5"]
-			description: ["{moni.quest.1B1D3A66B847D129.description1}"]
-			id: "1B1D3A66B847D129"
-			shape: "hexagon"
-			tasks: [{
-				id: "41FE8DE484FF65DD"
-				item: "kubejs:dimensional_processor_mainframe"
-				type: "item"
-			}]
-			title: "{moni.quest.1B1D3A66B847D129.title}"
-			x: 7.0d
-			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -1092,26 +1052,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5601A05D8361551D.title}"
-			x: 8.5d
-			y: 11.0d
-		}
-		{
-			dependencies: [
-				"5054D3FA7E96EB83"
-				"1E36AFB19932C805"
-				"2AEC486DC700133F"
-			]
-			description: ["{moni.quest.4612D36D22AB4B34.description1}"]
-			id: "4612D36D22AB4B34"
-			shape: "hexagon"
-			tasks: [{
-				id: "7D7522E4B5D0061A"
-				item: "kubejs:dimensional_processor"
-				type: "item"
-			}]
-			title: "{moni.quest.4612D36D22AB4B34.title}"
 			x: 7.0d
-			y: 5.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["248ABB7F26EB72EE"]
@@ -1166,38 +1108,13 @@
 				type: "item"
 			}]
 			title: "{moni.quest.11FDFB08CD48D66E.title}"
-			x: 7.0d
-			y: 11.0d
-		}
-		{
-			dependencies: [
-				"0C9A9F33EEA3AB5E"
-				"1B1D3A66B847D129"
-			]
-			dependency_requirement: "one_completed"
-			description: ["{moni.quest.4177C4BD329C38DA.description1}"]
-			id: "4177C4BD329C38DA"
-			tasks: [{
-				icon: "kubejs:uiv_universal_circuit"
-				id: "168A6D29177E8DBD"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "gtceu:circuits/uiv"
-					}
-				}
-				type: "item"
-			}]
-			title: "{moni.quest.4177C4BD329C38DA.title}"
 			x: 5.5d
 			y: 9.5d
 		}
 		{
 			dependencies: [
-				"5E829641B6FE96E5"
 				"07057CDE4E021BA7"
-				"3D7924B550A1BBA0"
+				"0C9A9F33EEA3AB5E"
 			]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.0B923E8ED6161CA8.description1}"]
@@ -1229,8 +1146,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0C9A9F33EEA3AB5E.title}"
-			x: 8.5d
-			y: 9.5d
+			x: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5A8D2BFAF02E6325"]
@@ -1243,15 +1160,14 @@
 				type: "item"
 			}]
 			title: "{moni.quest.3D7924B550A1BBA0.title}"
-			x: 8.5d
-			y: 8.0d
+			x: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
 				"7979D07FBDC6D170"
 				"68734C70E2D19616"
 				"1E36AFB19932C805"
-				"11124D8CC9403E67"
 			]
 			description: ["{moni.quest.5A8D2BFAF02E6325.description1}"]
 			id: "5A8D2BFAF02E6325"
@@ -1263,8 +1179,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5A8D2BFAF02E6325.title}"
-			x: 8.5d
-			y: 6.5d
+			x: 7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1284,23 +1200,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"7E93D88827F83E1A"
-				"0DE1BF1648CAF6D6"
-			]
-			description: ["{moni.quest.5054D3FA7E96EB83.description1}"]
-			id: "5054D3FA7E96EB83"
-			shape: "hexagon"
-			tasks: [{
-				id: "61502A1FCAC431BA"
-				item: "kubejs:dimensional_processing_unit"
-				type: "item"
-			}]
-			title: "{moni.quest.5054D3FA7E96EB83.title}"
-			x: 7.0d
-			y: -8.5d
-		}
-		{
 			dependencies: ["434142F777A2CCBE"]
 			description: ["{moni.quest.7979D07FBDC6D170.description1}"]
 			id: "7979D07FBDC6D170"
@@ -1311,7 +1210,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7979D07FBDC6D170.title}"
-			x: 8.5d
+			x: 7.0d
 			y: -8.5d
 		}
 		{
@@ -3456,85 +3355,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["4177C4BD329C38DA"]
-			description: [
-				"{moni.quest.60D863C48FBFF5A3.description1}"
-				""
-				"{moni.quest.60D863C48FBFF5A3.description2}"
-			]
-			icon: "gtceu:uiv_machine_hull"
-			id: "60D863C48FBFF5A3"
-			rewards: [{
-				id: "06AC64386F130936"
-				item: {
-					Count: 1
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "monifactory:infinity"
-						}
-					}
-				}
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "1BE926FEF23604CB"
-				item: {
-					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:block"
-							}
-							{
-								Count: 1b
-								id: "itemfilters:or"
-								tag: {
-									items: [
-										{
-											Count: 1b
-											id: "itemfilters:id_regex"
-											tag: {
-												value: "energy_(input|output)_hatch"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:not"
-											tag: {
-												items: [{
-													Count: 1b
-													id: "itemfilters:id_regex"
-													tag: {
-														value: "hull|casing|transformer|diode|bus|hatch|chest|tank|large_miner|drilling_rig|ore_miner|buffer|muffler|battery|rotor_holder"
-													}
-												}]
-											}
-										}
-									]
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:id_regex"
-								tag: {
-									value: "^gtceu:uiv_"
-								}
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "{moni.quest.60D863C48FBFF5A3.title}"
-			x: 4.5d
-			y: 10.5d
-		}
-		{
 			dependencies: ["11FDFB08CD48D66E"]
 			description: [
 				"{moni.quest.1A6F087E10DC036E.description1}"
@@ -3610,8 +3430,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1A6F087E10DC036E.title}"
-			x: 6.0d
-			y: 12.0d
+			x: 4.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["07057CDE4E021BA7"]
@@ -3655,47 +3475,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["1B1D3A66B847D129"]
-			description: [
-				"{moni.quest.11124D8CC9403E67.description1}"
-				""
-				"{moni.quest.11124D8CC9403E67.description2}"
-				""
-				"{moni.quest.11124D8CC9403E67.description3}"
-			]
-			icon: "gtceu:uev_circuit_assembler"
-			id: "11124D8CC9403E67"
-			rewards: [{
-				id: "244D78771B0B736F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "0B14FA192342C834"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:uev_circuit_assembler"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uev_energy_input_hatch"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "{moni.quest.11124D8CC9403E67.title}"
-			x: 8.5d
-			y: -7.0d
-		}
-		{
 			dependencies: [
 				"63CC578C3558E0AF"
 				"07057CDE4E021BA7"
@@ -3723,7 +3502,6 @@
 		}
 		{
 			dependencies: [
-				"1B1D3A66B847D129"
 				"040B3FCD82533BD9"
 				"786AECA42F53B45A"
 			]

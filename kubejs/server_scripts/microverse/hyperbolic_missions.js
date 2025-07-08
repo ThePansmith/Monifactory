@@ -37,6 +37,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 11, 4).forEach(builder => {
         builder
             .itemInputs("kubejs:universal_navigator", "gtceu:neutronium_drill_head", "kubejs:elite_drilling_kit")
+            .inputFluids("gtceu:crude_naquadah_fuel 4000")
             .damageRate(2)
             .itemOutputs(
                 "64x kubejs:alien_scrap",
@@ -56,6 +57,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:gravi_star",
                 "64x gtceu:gravi_star"
             )
+            .inputFluids("gtceu:naquadah_fuel 4000")
             .damageRate(2)
             .itemOutputs(
                 "64x kubejs:quasi_stable_neutron_star",
@@ -75,7 +77,7 @@ ServerEvents.recipes(event => {
             .updateMicroverse(0)
     })
 
-    microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UXV]).forEach(builder => {
+    microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UIV]).forEach(builder => {
         builder
             .itemInputs("8x kubejs:timeless_monic_heavy_plating")
             .damageRate(150)

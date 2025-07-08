@@ -339,22 +339,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("1x terbium", "3x chlorine")
         .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("iron_neodymium_terbium_neutronate")
-        .ingot().fluid()
-        .color(0x7d652d).secondaryColor(0x88f2d3)
-        .iconSet("radioactive")
-        .blastTemp(10800, "higher", 524288, 600)
-        .components("4x iron", "3x neodymium", "6x terbium", "2x neutronium", "8x oxygen")
-        .flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING)
-
-    event.create("magnetic_iron_neodymium_terbium_neutronate")
+    event.create("magnetic_terbium")
         .ingot()
-        .components("4x iron", "3x neodymium", "6x terbium", "2x neutronium", "8x oxygen")
-        .color(0xb5982f)
+        .components("terbium")
+        .color(0xcedab4).secondaryColor(0x263640)
         .iconSet(GTMaterialIconSet.MAGNETIC)
-        .ingotSmeltInto(GTMaterials.get("gtceu:iron_neodymium_terbium_neutronate"))
-        .arcSmeltInto(GTMaterials.get("iron_neodymium_terbium_neutronate"))
-        .macerateInto(GTMaterials.get("iron_neodymium_terbium_neutronate"))
+        .ingotSmeltInto(GTMaterials.get("gtceu:terbium"))
+        .arcSmeltInto(GTMaterials.get("terbium"))
+        .macerateInto(GTMaterials.get("terbium"))
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
 })
 
@@ -418,6 +410,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 })
 
 // Advanced Solder
+// TODO: mixer, ABS | processing lines
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("advanced_soldering_alloy")
         .ingot()
@@ -425,6 +418,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x74b59b)
         .iconSet("dull")
         .components("15x bismuth", "11x tin", "9x zinc", "4x germanium")
+    // TODO: replace placeholder
+    event.create("bio_soldering_alloy")
+        .ingot()
+        .fluid()
+        .color(0xFF0000b)
+        .iconSet("dull")
+        .components("1x water")
 })
 
 // Misc

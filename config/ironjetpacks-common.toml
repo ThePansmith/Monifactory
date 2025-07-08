@@ -9,11 +9,11 @@
 #Dynamic recipe options.
 [Recipe]
 	#Enable default recipes for Energy Cells?
-	cells = true
+	cells = false
 	#Enable default recipes for Thrusters?
-	thrusters = true
+	thrusters = false
 	#Enable default recipes for Capacitors?
-	capacitors = true
+	capacitors = false
 	#Enable default recipes for Jetpacks?
-	jetpacks = true
+	jetpacks = false
 

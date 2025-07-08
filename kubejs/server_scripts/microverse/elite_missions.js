@@ -27,7 +27,9 @@ ServerEvents.recipes(event => {
             )
             .damageRate(4)
             .itemOutputs(
-                "minecraft:sculk_catalyst"
+                "minecraft:sculk_catalyst",
+                "20x minecraft:sculk",
+                "12x minecraft:sculk_vein"
             )
             .requiredMicroverse(1) // Normal
     })
@@ -40,7 +42,7 @@ ServerEvents.recipes(event => {
                 "3x kubejs:gem_sensor",
                 "64x kubejs:deep_dark_data",
                 "64x kubejs:deep_dark_data",
-                "64x kubejs:deep_dark_data"
+                "10x minecraft:sculk_catalyst"
             )
             .damageRate((doHostileMicroverse ? -40 : 2))
             .itemOutputs("kubejs:lair_of_the_warden_data")
@@ -56,7 +58,9 @@ ServerEvents.recipes(event => {
             )
             .damageRate((doHostileMicroverse ? -25 : 3))
             .itemOutputs(
-                "32x minecraft:sculk_catalyst",
+                "12x minecraft:sculk_catalyst",
+                "64x minecraft:sculk",
+                "40x minecraft:sculk_vein",
                 "32x minecraft:gold_block",
                 "32x gtceu:silver_block",
                 "32x minecraft:diamond_block",
@@ -70,15 +74,14 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 "64x gtceu:dilithium_gem",
-                "4x minecraft:sculk_catalyst",
+                "1x minecraft:sculk_catalyst",
                 "12x kubejs:deep_dark_data"
             )
             .damageRate((doHostileMicroverse ? -25 : 3))
             .itemOutputs(
-                "8x kubejs:warden_heart",
-                "24x minecraft:sculk_catalyst",
+                "16x kubejs:warden_heart",
+                "40x minecraft:sculk_catalyst",
                 "64x kubejs:warden_horn",
-                "32x kubejs:warden_horn",
             )
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
@@ -88,7 +91,7 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 "64x gtceu:dilithium_gem",
-                "8x minecraft:sculk_catalyst",
+                "4x minecraft:sculk_catalyst",
                 "kubejs:lair_of_the_warden_data"
             )
             .damageRate((doHostileMicroverse ? -10 : 12))

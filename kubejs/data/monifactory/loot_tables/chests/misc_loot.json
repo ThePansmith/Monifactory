@@ -5,7 +5,7 @@
             "rolls": {
                 "type": "minecraft:binomial",
                 "n": 2,
-                "p": 0.1
+                "p": 0.07
             },
             "entries": [
                 {
@@ -16,7 +16,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "gtceu:tantalum_capacitor",
-                    "weight": 200,
+                    "weight": 100,
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
@@ -26,30 +26,74 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "gtceu:lv_sodium_battery",
-                    "weight": 150,
+                    "name": "gtceu:tantalum_capacitor",
+                    "weight": 300,
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Charge:40000L}"
+                            "tag": "{Charge:200L}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:lv_sodium_battery",
+                    "weight": 75,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Charge:65000L}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:lv_sodium_battery",
+                    "weight": 225,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Charge:48000L}"
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "name": "gtceu:lv_cadmium_battery",
-                    "weight": 90,
+                    "weight": 45,
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{Charge:30000L}"
+                            "tag": "{Charge:33000L}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:lv_cadmium_battery",
+                    "weight": 135,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Charge:12000L}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:lv_lithium_battery",
+                    "weight": 30,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Charge:75000L}"
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "name": "thermal:rf_potato",
-                    "weight": 30,
+                    "weight": 100,
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
@@ -63,13 +107,13 @@
             "rolls": {
                 "type": "minecraft:binomial",
                 "n": 1,
-                "p": 0.2
+                "p": 0.1
             },
             "entries": [
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:sponge",
-                    "weight": 4,
+                    "weight": 6,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -89,6 +133,17 @@
                         {
                             "function": "minecraft:set_nbt",
                             "tag": "{Fluid:{Amount:87,FluidName:\"gtceu:butane\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:invar_lighter",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Fluid:{Amount:23,FluidName:\"gtceu:propane\"}}"
                         }
                     ]
                 },

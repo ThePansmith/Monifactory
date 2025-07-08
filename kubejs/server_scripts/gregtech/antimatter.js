@@ -9,15 +9,15 @@ ServerEvents.recipes(event => {
             .inputFluids(`kubejs:${type}_antimatter 144`, `kubejs:${types[(index + 1) % types.length]}_antimatter 72`)
             .outputFluids(`kubejs:refined_${type}_antimatter 72`)
             .addData("antimatterRandom", true)
-            .duration(4000)
-            .EUt(GTValues.VA[GTValues.UV])
+            .duration(200)
+            .EUt(GTValues.VA[GTValues.ZPM])
 
         event.recipes.gtceu.antimatter_manipulator(`${type}_downgrade`)
             .itemInputs("4x kubejs:protomatter")
             .inputFluids(`kubejs:refined_${type}_antimatter 36`)
             .outputFluids(`kubejs:${type}_antimatter 144`)
-            .duration(4000)
-            .EUt(GTValues.VA[GTValues.UV])
+            .duration(200)
+            .EUt(GTValues.VA[GTValues.ZPM])
     })
 
     event.recipes.gtceu.centrifuge("protomatter_separation")
@@ -47,9 +47,9 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.antimatter_manipulator("antimatter_fuel")
-        .inputFluids("kubejs:refined_bosonic_antimatter 144", "kubejs:refined_hadronic_antimatter 144", "kubejs:refined_fermionic_antimatter 144")
+        .inputFluids("kubejs:refined_bosonic_antimatter 72", "kubejs:refined_hadronic_antimatter 72", "kubejs:refined_fermionic_antimatter 72")
         .outputFluids("kubejs:antimatter_fuel 10")
-        .duration(200)
+        .duration(100)
         .EUt(GTValues.VA[GTValues.UEV])
 
     // Controller Recipes

@@ -12,7 +12,6 @@ GTCEuStartupEvents.craftingComponents(event => {
         UV: "wireGtSingle:sculk_superconductor",
         UHV: "wireGtSingle:darconite",
         UEV: "wireGtSingle:necrosiderite",
-        UIV: "wireGtSingle:monium",
     })
 
 
@@ -20,7 +19,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     let setWireCable = (component, prefix0, prefix1) =>
         event.setMaterialEntries(component, {
             UEV: prefix0 + ":darconite",
-            UIV: prefix1 + ":necrosiderite",
             MAX: prefix1 + ":monium",
         })
 
@@ -51,7 +49,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     wireCableComponents.forEach(prefixComponentPair => {
         let wireMap = {};
         wireMap[GTValues.UEV] = prefixComponentPair[0] + ":darconite";
-        wireMap[GTValues.UIV] = prefixComponentPair[0] + ":necrosiderite";
         wireMap[GTValues.MAX] = prefixComponentPair[1] + ":monium";
         event.setMaterialEntries(prefixComponentPair[2], wireMap)
     })
@@ -70,7 +67,6 @@ GTCEuStartupEvents.craftingComponents(event => {
         event.setMaterialEntries(component, {
             UHV: prefix + ":darconite",
             UEV: prefix + ":necrosiderite",
-            UIV: prefix + ":monium",
         })
 
     setCableTierUp("cable_tier_up_single", "wireGtSingle")
@@ -103,7 +99,6 @@ GTCEuStartupEvents.craftingComponents(event => {
         event.setMaterialEntries(component, {
             UHV: prefix + ":neutronium",
             UEV: prefix + ":activated_netherite",
-            UIV: prefix + ":necrosiderite",
         })
 
     setPipe("normal_pipe", "pipeNormalFluid")
@@ -124,7 +119,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.setItems("glass", {
         UHV: Item.of("gtceu:fusion_glass"),
         UEV: Item.of("kubejs:prism_glass"),
-        UIV: Item.of("kubejs:prism_glass")
     })
     // event.setItem(GTCraftingComponents.GLASS, GTValues.UHV, Item.of("gtceu:fusion_glass"))
     // event.setItem(GTCraftingComponents.GLASS, GTValues.UEV, Item.of("gtceu:fusion_glass"))
@@ -139,14 +133,12 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     event.setMaterialEntries("plate", {
         UHV: "plate:manyullyn",
-        UEV: "plate:omnium",
-        UIV: "plate:infinity",
+        UEV: "plate:infinity",
         MAX: "plate:monium",
     })
 
-    event.setMaterialEntry(GTCraftingComponents.PLATE, GTValues.UEV, new MaterialEntry(TagPrefix.plate, GTMaterials.get("omnium")))
-    event.setMaterialEntry(GTCraftingComponents.PLATE, GTValues.UIV, new MaterialEntry(TagPrefix.plate, GTMaterials.get("infinity")))
-    event.setMaterialEntry(GTCraftingComponents.PLATE, GTValues.MAX, new MaterialEntry(TagPrefix.plate, GTMaterials.get("monium")))
+    // event.setMaterialEntry(GTCraftingComponents.PLATE, GTValues.UEV, new MaterialEntry(TagPrefix.plate, GTMaterials.get("infinity")))
+    // event.setMaterialEntry(GTCraftingComponents.PLATE, GTValues.MAX, new MaterialEntry(TagPrefix.plate, GTMaterials.get("monium")))
 
     // Plates
     // let plateMap = {};
@@ -158,7 +150,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.setMaterialEntries("hull_plate", {
         UHV: "plate:polybenzimidazole",
         UEV: "plate:polyethyl_cyanoacrylate",
-        UIV: "plate:polyethyl_cyanoacrylate",
         MAX: "plate:polyethyl_cyanoacrylate"
     })
 
@@ -176,7 +167,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.setMaterialEntries("rotor", {
         UHV: "rotor:neutronium",
         UEV: "rotor:activated_netherite",
-        UIV: "rotor:necrosiderite",
     })
 
     // event.setMaterialEntry(GTCraftingComponents.ROTOR, GTValues.UHV, new MaterialEntry(TagPrefix.rotor, GTMaterials.Neutronium))
@@ -204,7 +194,6 @@ GTCEuStartupEvents.craftingComponents(event => {
         event.setMaterialEntries(component, {
             UHV: entry,
             UEV: entry,
-            UIV: entry,
         })
     }
 
@@ -225,7 +214,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.setMaterialEntries("coil_electric", {
         UHV: "wireGtHex:sculk_superconductor",
         UEV: "wireGtHex:activated_netherite",
-        UIV: "wireGtHex:necrosiderite",
     })
 
     // event.setMaterialEntry(GTCraftingComponents.COIL_ELECTRIC, GTValues.UHV, new MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("sculk_superconductor")))
@@ -240,12 +228,11 @@ GTCEuStartupEvents.craftingComponents(event => {
     // electricCoilMap[GTValues.UIV] = MaterialEntry(TagPrefix.wireGtHex, GTMaterials.get("necrosiderite"))
     // event.modifyMaterialEntry(CraftingComponent.COIL_ELECTRIC, electricCoilMap)
 
-    const magTerbium = "longRod:magnetic_iron_neodymium_terbium_neutronate"
+    const magTerbium = "longRod:magnetic_terbium"
     event.setMaterialEntries("rod_magnetic", {
         UV: "longRod:magnetic_samarium",
         UHV: magTerbium,
         UEV: magTerbium,
-        UIV: magTerbium,
     })
 
     // event.setMaterialEntry(GTCraftingComponents.ROD_MAGNETIC, GTValues.UV, new MaterialEntry(TagPrefix.rodLong, GTMaterials.SamariumMagnetic))
@@ -264,7 +251,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.setMaterialEntries("rod_distillation", {
         UHV: "spring:actinium",
         UEV: "spring:sculk_bioalloy",
-        UIV: "spring:eltz",
     })
 
     // event.setMaterialEntry(GTCraftingComponents.ROD_DISTILLATION, GTValues.UHV, new MaterialEntry(TagPrefix.spring, GTMaterials.Actinium))
@@ -288,7 +274,6 @@ GTCEuStartupEvents.craftingComponents(event => {
         UV: samRod,
         UHV: terbRod,
         UEV: terbRod,
-        UIV: terbRod,
     })
 
     // event.setMaterialEntry(GTCraftingComponents.ROD_ELECTROMAGNETIC, GTValues.IV, new MaterialEntry(TagPrefix.rod, GTMaterials.Neodymium))
@@ -313,7 +298,6 @@ GTCEuStartupEvents.craftingComponents(event => {
     event.setMaterialEntries("pipe_reactor", {
         UHV: "pipeNormalFluid:polyethyl_cyanoacrylate",
         UEV: "pipeLargeFluid:polyethyl_cyanoacrylate",
-        UIV: "pipeHugeFluid:polyethyl_cyanoacrylate",
     })
 
     // event.setMaterialEntry(GTCraftingComponents.PIPE_REACTOR, GTValues.UHV, new MaterialEntry(TagPrefix.pipeNormalFluid, GTMaterials.get("polyethyl_cyanoacrylate")))
@@ -329,7 +313,6 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     event.setItems("power_component", {
         UEV: "kubejs:uxpic_chip",
-        UIV: "kubejs:uxpic_chip",
         MAX: "kubejs:uxpic_chip",
     })
 
@@ -349,7 +332,6 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     event.setMaterialEntries("spring", {
         UEV: "spring:activated_netherite",
-        UIV: "spring:necrosiderite",
         MAX: "spring:monium",
     })
 
@@ -368,8 +350,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     event.setMaterialEntries("frame", {
         UHV: "frame:manyullyn",
-        UEV: "frame:omnium",
-        UIV: "frame:infinity",
+        UEV: "frame:infinity",
         MAX: "frame:monium",
     })
 
@@ -385,4 +366,8 @@ GTCEuStartupEvents.craftingComponents(event => {
     // frameMap[GTValues.UIV] = MaterialEntry(TagPrefix.frameGt, GTMaterials.get("infinity"))
     // frameMap[GTValues.MAX] = MaterialEntry(TagPrefix.frameGt, GTMaterials.get("monium"))
     // event.modifyMaterialEntry(CraftingComponent.FRAME, frameMap)
+
+    event.setItems("better_circuit", {
+        UEV: "kubejs:monic_processor_mainframe"
+    })
 })

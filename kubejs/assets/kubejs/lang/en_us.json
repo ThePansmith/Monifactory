@@ -500,7 +500,6 @@
 
   "gtceu.energy_converter.tooltip": "§4Cannot be used with conduits in EU->FE mode.\n§7Use GT wires or cables instead. They will convert to FE if plugged into a FE Machine.",
   "gtceu.basic_tape.tooltip": "§7Used to wrap up Crates for transport.",
-  "gtceu.ender_fluid_link_cover.tooltip": "§4Not yet implemented.",
   "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
   "gtceu.robot_arm.tooltip": "§4Advanced control over item transfer not possible with pipes.",
   "gtceu.fluid_regulator.tooltip": "§4Advanced control over fluid transfer not possible with pipes.",

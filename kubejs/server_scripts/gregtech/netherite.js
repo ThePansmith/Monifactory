@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.macerator("macerate_ancient_debris_to_crushed_ore")
         .itemInputs("minecraft:ancient_debris")
         .itemOutputs("2x gtceu:crushed_netherite_scrap_ore")
-        .chancedOutput("gtceu:obsidian_dust", 1400, 850)
+        .chancedOutput("gtceu:obsidian_dust", 1400, 850)                        // TODO: See what oreproc values Cait hallucinates
         .chancedOutput("gtceu:netherrack_dust", 1200, 800)
         .duration(400)
         .EUt(2)
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     // Activated Nethline Line
     event.recipes.gtceu.chemical_bath("reactive_netherite_cluster")
         .itemInputs("kubejs:netherite_cluster")
-        .inputFluids("gtceu:californium")
+        .inputFluids("gtceu:californium 144")
         .itemOutputs("kubejs:reactive_netherite_cluster")
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])

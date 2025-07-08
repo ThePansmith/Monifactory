@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
     decompdepleted("neptunium_hen_236", "nuclearcraft:plutonium_238", "16x gtceu:uranium_nugget", "8x gtceu:plutonium_nugget", "4x nuclearcraft:plutonium_242", GTValues.LuV)
     decompdepleted("plutonium_lep_239", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_243", "8x gtceu:plutonium_nugget", "3x nuclearcraft:curium_246", GTValues.LuV)
     decompdepleted("plutonium_hep_239", "nuclearcraft:americium_241", "3x nuclearcraft:americium_242", "nuclearcraft:curium_245", "3x nuclearcraft:curium_246", GTValues.LuV)
-    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:plutonium_242", "nuclearcraft:americium_243", "6x nuclearcraft:curium_246", GTValues.LuV)
+    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:plutonium_238", "nuclearcraft:americium_243", "6x nuclearcraft:curium_246", GTValues.LuV)
     decompdepleted("plutonium_hep_241", "nuclearcraft:americium_241", "nuclearcraft:curium_245", "3x nuclearcraft:curium_246", "3x nuclearcraft:curium_247", GTValues.LuV)
     decompdepleted("americium_lea_242", "nuclearcraft:curium_243", "nuclearcraft:curium_245", "5x nuclearcraft:curium_246", "nuclearcraft:curium_247", GTValues.LuV)
     decompdepleted("americium_hea_242", "2x nuclearcraft:curium_245", "4x nuclearcraft:curium_246", "nuclearcraft:curium_247", "nuclearcraft:berkelium_247", GTValues.LuV)
@@ -86,12 +86,12 @@ ServerEvents.recipes(event => {
     decompdepleted("curium_hecm_245", "6x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", "nuclearcraft:californium_251", GTValues.ZPM)
     decompdepleted("curium_lecm_247", "3x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_251", "4x nuclearcraft:californium_252", GTValues.ZPM)
     decompdepleted("curium_hecm_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", "3x nuclearcraft:californium_251", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("berkelium_leb_248", "nuclearcraft:californium_249", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("berkelium_heb_248", "nuclearcraft:californium_250", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("californium_lecf_249", "2x nuclearcraft:californium_250", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "8x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_hecf_249", "4x nuclearcraft:californium_250", "2x nuclearcraft:californium_251", "nuclearcraft:californium_252", "12x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_lecf_251", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "8x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_hecf_251", "2x nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "16x gtceu:actinium_nugget", GTValues.ZPM)
+    decompdepleted("berkelium_leb_248", "nuclearcraft:californium_249", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("berkelium_heb_248", "nuclearcraft:californium_250", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("californium_lecf_249", "2x nuclearcraft:californium_250", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("californium_hecf_249", "3x nuclearcraft:californium_250", "2x nuclearcraft:californium_251", "nuclearcraft:californium_252", "3x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("californium_lecf_251", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:einsteinium_252", "2x nuclearcraft:einsteinium_252", GTValues.ZPM)
+    decompdepleted("californium_hecf_251", "2x nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:einsteinium_252", "4x nuclearcraft:einsteinium_252", GTValues.ZPM)
 
 
     function cansolid(name, input) {
@@ -125,31 +125,15 @@ ServerEvents.recipes(event => {
     canfluid("water", "minecraft:water")
     cansolid("redstone", "minecraft:redstone")
     cansolid("quartz", "gtceu:nether_quartz_dust")
-    cansolid("gold", "gtceu:gold_dust")
     cansolid("glowstone", "minecraft:glowstone_dust")
     cansolid("lapis", "gtceu:lapis_dust")
-    cansolid("diamond", "gtceu:diamond_dust")
-    canfluid("liquid_helium", "gtceu:helium")
+    canfluid("liquid_helium", "gtceu:liquid_helium")
     cansolid("enderium", "gtceu:enderium_dust")
     canfluid("cryotheum", "kubejs:molten_cryotheum")
-    cansolid("iron", "gtceu:iron_dust")
     cansolid("emerald", "gtceu:emerald_dust")
     cansolid("copper", "gtceu:copper_dust")
     cansolid("magnesium", "gtceu:magnesium_dust")
-    cansolid("slime", "minecraft:slime_ball")
-    cansolid("netherite", "minecraft:netherite_scrap")
-    cansolid("end_stone", "gtceu:endstone_dust")
-    cansolid("prismarine", "minecraft:prismarine_crystals")
-    cansolid("obsidian", "gtceu:obsidian_dust")
-    cansolid("purpur", "minecraft:popped_chorus_fruit")
-    cansolid("nether_brick", "minecraft:nether_brick")
-    cansolid("lithium", "gtceu:lithium_dust")
-    cansolid("arsenic", "gtceu:arsenic_dust")
-    cansolid("lead", "gtceu:lead_dust")
     cansolid("boron", "gtceu:boron_dust")
-    cansolid("silver", "gtceu:silver_dust")
-    canfluid("liquid_nitrogen", "gtceu:nitrogen")
-    cansolid("fluorite", "gtceu:fluorite_dust")
     cansolid("tin", "gtceu:tin_dust")
     cansolid("aluminum", "gtceu:aluminium_dust")
     cansolid("manganese", "gtceu:manganese_dust")
@@ -164,42 +148,6 @@ ServerEvents.recipes(event => {
     ], {
         T: "nuclearcraft:tough_alloy_ingot",
         S: "gtceu:steel_ingot"
-    })
-
-    function cansolidactive(name, input) {
-        event.remove({ output: `nuclearcraft:active_${name}_heat_sink` })
-        event.recipes.gtceu.canner(`active_${name}_heat_sink`)
-            .itemInputs("nuclearcraft:empty_active_heat_sink", `16x ${input}`)
-            .itemOutputs(`nuclearcraft:active_${name}_heat_sink`)
-            .duration(400)
-            .EUt(2)
-    }
-
-    function canfluidactive(name, input) {
-        event.remove({ output: `nuclearcraft:active_${name}_heat_sink` })
-        event.recipes.gtceu.canner(`active_${name}heat_sink`)
-            .itemInputs("nuclearcraft:empty_active_heat_sink")
-            .inputFluids(Fluid.of(input, 1000))
-            .itemOutputs(`nuclearcraft:active_${name}_heat_sink`)
-            .duration(400)
-            .EUt(2)
-    }
-
-    canfluidactive("water", "minecraft:water")
-    cansolidactive("redstone", "minecraft:redstone")
-    canfluidactive("liquid_helium", "gtceu:helium")
-    canfluidactive("liquid_nitrogen", "gtceu:nitrogen")
-    cansolidactive("enderium", "gtceu:enderium_dust")
-    canfluidactive("cryotheum", "kubejs:molten_cryotheum")
-
-    event.remove({ id: "nuclearcraft:empty_active_heat_sink" })
-    event.shaped("nuclearcraft:empty_active_heat_sink", [
-        "TST",
-        "S S",
-        "TST"
-    ], {
-        T: "nuclearcraft:tough_alloy_ingot",
-        S: "gtceu:dark_steel_ingot"
     })
 
     event.remove({ output: "nuclearcraft:plate_basic" })
@@ -474,6 +422,34 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    // Fix fission boiling recipe
+    event.custom(
+        {
+            "type": "nuclearcraft:fission_boiling",
+            "heatRequired": 1.0,
+            "inputFluids": [
+                {
+                    "amount": 1,
+                    "tag": "minecraft:water"
+                }
+            ],
+            "outputFluids": [
+                {
+                    "amount": 160,
+                    "fluid": "gtceu:steam"
+                }
+            ]
+        }
+    ).id("nuclearcraft:fission_boiling/water-steam")
+
+    // High Pressure Steam Turbine recipe.
+    // High Pressure steam is 16x more energy dense than regular steam,
+    // and is 60% more efficient on the fuel spent to get that energy
+    event.recipes.gtceu.steam_turbine("high_pressure_steam")
+        .inputFluids("nuclearcraft:high_pressure_steam 40")
+        .outputFluids("nuclearcraft:technical_water 40")
+        .duration(0.5 * 20)
+        .EUt(-GTValues.V[GTValues.LV])
 });
 
 ServerEvents.tags("item", event => {

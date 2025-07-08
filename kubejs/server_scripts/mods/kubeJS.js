@@ -3,11 +3,17 @@
  */
 ServerEvents.recipes(event => {
     // Stablized
-    event.recipes.gtceu.fusion_reactor("einsteinium_fusion")
-        .inputFluids(Fluid.of("gtceu:berkelium", 16), Fluid.of("gtceu:californium", 16))
+    event.recipes.gtceu.fusion_reactor("einsteinium_fusion_berkelium")
+        .inputFluids(Fluid.of("gtceu:berkelium", 16), Fluid.of("gtceu:helium_3", 125))
         .outputFluids(Fluid.of("gtceu:einsteinium", 16))
         .duration(100)
-        .EUt(15360)
+        .EUt(GTValues.VHA[GTValues.ZPM])
+        .fusionStartEU(360000000)
+    event.recipes.gtceu.fusion_reactor("einsteinium_fusion_californium")
+        .inputFluids(Fluid.of("gtceu:californium", 16), Fluid.of("gtceu:hydrogen", 125))
+        .outputFluids(Fluid.of("gtceu:einsteinium", 16))
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.ZPM])
         .fusionStartEU(400000000)
 
     solidify("stabilized_einsteinium", Fluid.of("gtceu:einsteinium", 144), "16x kubejs:stabilized_einsteinium");

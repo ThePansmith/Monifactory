@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     ], {
         L: "gtceu:void_empowered_block",
         N: "kubejs:warp_core",
-        T: "kubejs:bathyal_energy_core"
+        T: "kubejs:abyssal_energy_core"
     })
 
     // Warp Controller
@@ -147,11 +147,11 @@ ServerEvents.recipes(event => {
             "4x kubejs:universal_navigator",
             "4x gtceu:uev_field_generator",
             "24x gtceu:necrosiderite_plate",
-            "4x #gtceu:circuits/uiv",
-            "2x gtceu:uiv_sensor",
-            "2x gtceu:uiv_emitter",
+            "4x #gtceu:circuits/uev",
+            "2x gtceu:uev_sensor",
+            "2x gtceu:uev_emitter",
             "4x gtceu:dense_naquadah_alloy_plate",
-            "8x gtceu:activated_netherite_quadruple_wire",
+            "64x gtceu:fine_activated_netherite_wire",
             "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire")
         .inputFluids("gtceu:soldering_alloy 11520", "gtceu:crystal_matrix 5760", "gtceu:naquadria 2304")
         .itemOutputs("kubejs:extradimensional_navigator")

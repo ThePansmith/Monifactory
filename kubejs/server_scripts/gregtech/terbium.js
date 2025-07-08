@@ -41,13 +41,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(480)
 
-    event.recipes.gtceu.mixer("iron_neodymium_terbium_neutronate_mix")
-        .itemInputs("4x gtceu:iron_dust", "3x gtceu:neodymium_dust", "6x gtceu:terbium_dust", "2x gtceu:neutronium_dust")
-        .inputFluids(Fluid.of("gtceu:oxygen", 8000))
-        .circuit(3)
-        .itemOutputs("23x gtceu:iron_neodymium_terbium_neutronate_dust")
-        .duration(300).EUt(524288)
-
     // Misc
     event.recipes.gtceu.chemical_reactor("ammonium_oxalate")
         .itemInputs("gtceu:ammonium_carbonate_dust", "gtceu:oxalic_acid_dust")
@@ -93,9 +86,9 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:ammonium_carbonate_dust")
         .duration(160).EUt(30)
 
-    event.recipes.gtceu.polarizer("terbium_alloy_polarize")
-        .itemInputs("gtceu:long_iron_neodymium_terbium_neutronate_rod")
-        .itemOutputs("gtceu:long_magnetic_iron_neodymium_terbium_neutronate_rod")
+    event.recipes.gtceu.polarizer("terbium_polarize")
+        .itemInputs("gtceu:long_terbium_rod")
+        .itemOutputs("gtceu:long_magnetic_terbium_rod")
         .duration(200)
         .EUt(122880)
 })
