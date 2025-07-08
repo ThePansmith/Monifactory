@@ -2,8 +2,8 @@
   {
     "group": "californium",
     "name": "hecf-249",
-    "forge_energy": 69120,
-    "heat": 696,
+    "forge_energy": 138240,
+    "heat": 348,
     "criticality": 30,
     "depletion": 53,
     "efficiency": 180,
@@ -12,8 +12,8 @@
   {
     "group": "californium",
     "name": "hecf-251",
-    "forge_energy": 72000,
-    "heat": 720,
+    "forge_energy": 144000,
+    "heat": 360,
     "criticality": 35,
     "depletion": 100,
     "efficiency": 185,
@@ -22,7 +22,7 @@
   {
     "group": "californium",
     "name": "lecf-249",
-    "forge_energy": 17280,
+    "forge_energy": 34560,
     "heat": 116,
     "criticality": 60,
     "depletion": 53,
@@ -32,7 +32,7 @@
   {
     "group": "californium",
     "name": "lecf-251",
-    "forge_energy": 18000,
+    "forge_energy": 36000,
     "heat": 120,
     "criticality": 71,
     "depletion": 100,

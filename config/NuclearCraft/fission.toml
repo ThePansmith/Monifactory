@@ -17,7 +17,7 @@
 	min_size = 3
 	#Reactor max size.
 	#Range: 5 ~ 32
-	max_size = 24
+	max_size = 13
 	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
 	#Range: 0.0 ~ 20.0
 	reactor_explosion_radius = 4.0

@@ -4,11 +4,23 @@
 
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.assembler("neutron_emitter")
-        .itemInputs("4x gtceu:double_neutronium_plate", "6x gtceu:graphene_foil", "4x gtceu:polybenzimidazole_plate")
-        .inputFluids("gtceu:tin_alloy 4608")
+    event.recipes.gtceu.assembler("neutron_emitter_berkelium")
+        .itemInputs("1x nuclearcraft:heavy", "1x gtceu:dense_rhodium_plated_palladium_plate",)
+        .inputFluids("gtceu:berkelium 432")
+        .itemOutputs("kubejs:neutron_emitter")
+        .duration(1600)
+        .EUt(GTValues.VA[GTValues.UV])
+    event.recipes.gtceu.assembler("neutron_emitter_californium")
+        .itemInputs("1x nuclearcraft:heavy", "1x gtceu:dense_rhodium_plated_palladium_plate",)
+        .inputFluids("gtceu:californium 288")
         .itemOutputs("kubejs:neutron_emitter")
         .duration(1000)
+        .EUt(GTValues.VA[GTValues.UV])
+    event.recipes.gtceu.assembler("neutron_emitter_einsteinium")
+        .itemInputs("1x nuclearcraft:heavy", "1x gtceu:dense_rhodium_plated_palladium_plate",)
+        .inputFluids("gtceu:einsteinium 144")
+        .itemOutputs("kubejs:neutron_emitter")
+        .duration(1200)
         .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.chemical_bath("uranic_solution_uraninite")
@@ -41,6 +53,16 @@ ServerEvents.recipes(event => {
         .chancedItemOutputLogic(ChanceLogic.XOR)
         .outputFluids("minecraft:water 1000")
         .itemOutputs("3x gtceu:lead_chloride_dust")
+        .duration(160)
+        .EUt(GTValues.VHA[GTValues.ZPM])
+
+    event.recipes.gtceu.electrolyzer("actinium_from_radium_salt")
+        .chancedInput("kubejs:neutron_emitter", 50, 0)
+        .itemInputs("1x kubejs:radium_salt")
+        .chancedFluidOutput("gtceu:actinium 216", 2000, 0)
+        .chancedFluidOutput("gtceu:radon 1000", 8000, 0)
+        .chancedFluidOutputLogic(ChanceLogic.XOR)
+        .itemOutputs("1x gtceu:rock_salt_dust")
         .duration(160)
         .EUt(GTValues.VHA[GTValues.ZPM])
 
