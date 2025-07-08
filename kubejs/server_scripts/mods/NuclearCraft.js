@@ -429,18 +429,27 @@ ServerEvents.recipes(event => {
             "heatRequired": 1.0,
             "inputFluids": [
                 {
-                    "amount": 4,
+                    "amount": 1,
                     "tag": "minecraft:water"
                 }
             ],
             "outputFluids": [
                 {
-                    "amount": 640,
+                    "amount": 160,
                     "fluid": "gtceu:steam"
                 }
             ]
         }
     ).id("nuclearcraft:fission_boiling/water-steam")
+
+    // High Pressure Steam Turbine recipe.
+    // High Pressure steam is 16x more energy dense than regular steam,
+    // and is 60% more efficient on the fuel spent to get that energy
+    event.recipes.gtceu.steam_turbine("high_pressure_steam")
+        .inputFluids("nuclearcraft:high_pressure_steam 40")
+        .outputFluids("nuclearcraft:technical_water 40")
+        .duration(0.5 * 20)
+        .EUt(-GTValues.V[GTValues.LV])
 });
 
 ServerEvents.tags("item", event => {
