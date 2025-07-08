@@ -117,6 +117,7 @@ global.doStoneline = packMode == "Hard" || packMode == "Expert";
 global.doFluxbore = packMode == "Normal" || packMode == "Hard";
 global.doHarderFluxBore = packMode == "Normal" || packMode == "Hard";
 global.doQuantumCoolant = packMode == "Hard" || packMode == "Expert";
+global.doHostileMicroverse = packMode == "Hard" || packMode == "Expert";
 
 
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
@@ -140,3 +141,4 @@ const doStoneline = !!global.doStoneline;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
 const doQuantumCoolant = !!global.doQuantumCoolant;
+const doHostileMicroverse = !!global.doHostileMicroverse;

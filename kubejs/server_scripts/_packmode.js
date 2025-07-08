@@ -26,6 +26,7 @@ const doStoneline = !!global.doStoneline;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
 const doQuantumCoolant = !!global.doQuantumCoolant;
+const doHostileMicroverse = !!global.doHostileMicroverse;
 
 PlayerEvents.loggedIn(event => {
     const gameStages = [
@@ -42,7 +43,8 @@ PlayerEvents.loggedIn(event => {
         "SteamAge",
         "Stoneline",
         "HalfMMs",
-        "QuantumCoolant"
+        "QuantumCoolant",
+        "HostileMicroverse"
     ];
 
     gameStages.forEach(stage => {

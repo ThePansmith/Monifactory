@@ -33,19 +33,19 @@ global.mission_counts = {
 const missionDurations = {
     "1": 100,
     "2": 120,
-    "2half": 60,
+    "2half": 50,
     "3": 150,
-    "4": 180,
-    "4half": 180,
+    "4": 200,
+    "4half": 200,
     "5": 200,
     "6": 220,
     "7": 240,
-    "8": 280,
+    "8": 260,
     "8half": 240,
-    "9": 300,
+    "9": 280,
     "10": 300,
-    "11": 360,
-    "12": 420
+    "11": 300,
+    "12": 360
 }
 
 /**
@@ -104,8 +104,11 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
         // By default, return the microminer that was passed into the input.
         builders[0].itemOutputs(`kubejs:microminer_t${minerTier}`)
     } else if(minerReturnChance > 0) {
-        // Only return the damaged miner if the chance to return it is positive and real
-        builders[0].chancedOutput(`kubejs:microminer_t${minerTier}_damaged`, minerReturnChance, 0)
+        // Returns damaged miner if chance is positive and real
+        builders[0].itemOutputs(`kubejs:microminer_t${minerTier}_damaged`)
+    } else {
+        // Never return no miner
+        builders[0].itemOutputs(`kubejs:microminer_t${minerTier}`)
     }
 
     const stabilized_miners = [
@@ -116,7 +119,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
         "8"
     ]
 
-    // Register actualization chamber counterparts in Hard Mode and Expert Mode except for T9+
+    // Register stabilized miner counterpart
     if(stabilized_miners.indexOf(minerTier.toString()) != -1) {
         builders[1] = event.recipes.gtceu.microverse(`kubejs:mission_t${minerTier}_${global.mission_counts[minerTier]}_stabilized`)
             .addData("projector_tier", projectorTier)
