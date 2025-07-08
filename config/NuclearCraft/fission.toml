@@ -20,7 +20,7 @@
 	max_size = 13
 	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
 	#Range: 0.0 ~ 20.0
-	reactor_explosion_radius = 16.0
+	reactor_explosion_radius = 4.0
 	#How much reactor may collect heat before meltdown.
 	#Range: 1000.0 ~ 1.0E8
 	heat_capacity = 1000000.0
