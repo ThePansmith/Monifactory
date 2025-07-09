@@ -126,15 +126,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
 
-    // Charger
-    event.create("charger")
-        .category("multiblock")
-        .setEUIO("in")
-        .setMaxIOSize(3, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ELECTROLYZER)
-
     // Recipe types for coremod multis
     MoniRecipeTypes.createPrismaCRecipeType("chromatic_processing")
     MoniRecipeTypes.createPrismaCRecipeType("chromatic_transcendence")
@@ -203,7 +194,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             if (data.contains("minimumXp") && data.contains("maximumXp")) {
                 let minimumXp = data.getInt("minimumXp");
                 let maximumXp = data.getInt("maximumXp");
-                return I18n.get("gtceu.multiblock.sculk_vat.emi_info.3", minimumXp, maximumXp);
+                return I18n.get("gtceu.multiblock.sculk_vat.emi_info.3", String(minimumXp), String(maximumXp));
             } else {
                 return "";
             }
@@ -798,7 +789,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     // Sculk Biocharger
     event.create("sculk_biocharger", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes(["discharger", "charger"])
+        .recipeTypes("discharger")
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock("kubejs:bioalloy_casing"))
         .pattern(definition => FactoryBlockPattern.start()

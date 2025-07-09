@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
         // 2400:1 stone dust per clean inert residue dust
         event.recipes.gtceu.centrifuge("centrifuging_refined_residue")
             .itemInputs("10x gtceu:refined_residue_dust")
-            .notConsumable("kubejs:bathyal_energy_core")
+            .notConsumable(Item.of('kubejs:bathyal_energy_core', '{Damage:2000000}').weakNBT())
             .notConsumableFluid("gtceu:fluoroantimonic_acid 1000")
             .itemOutputs("10x gtceu:pitchblende_dust", "6x gtceu:borax_dust", "5x gtceu:rare_earth_dust", "4x gtceu:snowchestite_dust", "3x gtceu:diamond_dust", "gtceu:clean_inert_residue_dust")
             .duration(2000).EUt(GTValues.VA[GTValues.LuV])
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         // 2400:1 stone dust per bucket of dusty helium
         event.recipes.gtceu.large_chemical_reactor("ultraacidic_residue_to_dusty_helium")
             .inputFluids("gtceu:xenon 1000", "gtceu:oxygen 4000", "gtceu:ultraacidic_residue 2000")
-            .notConsumable("kubejs:abyssal_energy_core")
+            .notConsumable(Item.of('kubejs:abyssal_energy_core', '{Damage:4000000}').weakNBT())
             .itemOutputs("2x gtceu:europium_dust", "gtceu:kaemanite_dust", "gtceu:small_osmiridiumyes_dust")
             .outputFluids("gtceu:xenic_acid 1000", "gtceu:dusty_helium 2000")
             .duration(1000).EUt(GTValues.VA[GTValues.EV])

@@ -104,6 +104,7 @@ global.itemNukeList = [
 
     // Extended Crafting
     "extendedcrafting:auto_ender_crafter",
+    "extendedcrafting:auto_flux_crafter",
     "extendedcrafting:black_iron_slate",
     "extendedcrafting:compressor",
     "extendedcrafting:ender_alternator",
@@ -115,6 +116,7 @@ global.itemNukeList = [
     "extendedcrafting:enhanced_ender_component",
     "extendedcrafting:enhanced_redstone_catalyst",
     "extendedcrafting:enhanced_redstone_component",
+    "extendedcrafting:flux_alternator",
     "extendedcrafting:flux_crafter",
     "extendedcrafting:flux_star",
     "extendedcrafting:frame",
