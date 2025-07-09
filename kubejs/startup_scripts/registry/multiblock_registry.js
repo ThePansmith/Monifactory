@@ -580,7 +580,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/machines/electrolyzer", false)
 
     let getMicroverseRecipeModifiers = tier => [
-        GTRecipeModifiers.OC_NON_PERFECT,
+        MoniRecipeModifiers.MICROVERSE_OC,
         (machine, recipe) => recipe.data.getLong("projector_tier") > tier ?
             ModifierFunction.NULL : ModifierFunction.IDENTITY
     ]
@@ -588,6 +588,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     // Basic Microverse Projector
     event.create("basic_microverse_projector", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
+        .machine((holder) => new MicroverseProjectorMachine(holder, 1))
         .recipeTypes("microverse")
         .recipeModifiers(getMicroverseRecipeModifiers(1))
         .appearanceBlock(() => Block.getBlock("kubejs:microverse_casing"))
@@ -596,41 +597,45 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .aisle("CCC", "GDG", "CCC")
             .aisle("C@C", "CGC", "CCC")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("D", Predicates.blocks("kubejs:starry_diamond_block"))
-            .where("C", Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(12)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where("D", Predicates.any())
+            .where("C", Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(10)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.blocks("monilabs:microverse_stability_sensor_hatch").setMaxGlobalLimited(1)))
             .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .where("V", Predicates.blocks(GTBlocks.CASING_GRATE.get()))
             .build())
-        .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/machines/projectors", false)
+        .renderer(() => new MicroverseProjectorRenderer("kubejs:block/microverse/casing", "gtceu:block/machines/projectors"))
+        .hasTESR(true)
 
     // Advanced Microverse Projector
     event.create("advanced_microverse_projector", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
+        .machine((holder) => new MicroverseProjectorMachine(holder, 2))
         .recipeTypes("microverse")
         .recipeModifiers(getMicroverseRecipeModifiers(2))
         .appearanceBlock(() => Block.getBlock("kubejs:microverse_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("CCCCC", "CGGGC", "CGGGC", "CGGGC", "CCCCC")
             .aisle("CVCVC", "GDDDG", "GDDDG", "GDDDG", "CVCVC")
-            .aisle("CCCCC", "GDDDG", "GD DG", "GDDDG", "CCCCC")
+            .aisle("CCCCC", "GDDDG", "GD#DG", "GDDDG", "CCCCC")
             .aisle("CVCVC", "GDDDG", "GDDDG", "GDDDG", "CVCVC")
             .aisle("CC@CC", "CGGGC", "CGGGC", "CGGGC", "CCCCC")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("D", Predicates.blocks("kubejs:starry_diamond_block"))
-            .where("C", Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(48)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where("D", Predicates.any())
+            .where("C", Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(45)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.blocks("monilabs:microverse_stability_sensor_hatch").setMaxGlobalLimited(1)))
             .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .where("V", Predicates.blocks(GTBlocks.CASING_GRATE.get()))
-            .where(" ", Predicates.air())
+            .where("#", Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/machines/projectors", false)
+        .renderer(() => new MicroverseProjectorRenderer("kubejs:block/microverse/casing", "gtceu:block/machines/projectors"))
+        .hasTESR(true)
 
-    // Advanced Microverse Projector II
-    event.create("advanced_microverse_projector_ii", "multiblock")
+    // Elite Microverse Projector
+    event.create("elite_microverse_projector", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
+        .machine((holder) => new MicroverseProjectorMachine(holder, 3))
         .recipeTypes("microverse")
         .recipeModifiers(getMicroverseRecipeModifiers(3))
         .appearanceBlock(() => Block.getBlock("kubejs:microverse_casing"))
@@ -638,27 +643,28 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .aisle("#########", "#########", "##CCCCC##", "##CVCVC##", "##CCCCC##", "##CVCVC##", "##CCCCC##", "#########", "#########")
             .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
             .aisle("##CCCCC##", "#CDDDDDC#", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "#CDDDDDC#", "##CCCCC##")
-            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD   DDG", "GDD   DDG", "GDD   DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
-            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD   DDG", "GDD   DDG", "GDD   DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
-            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD   DDG", "GDD   DDG", "GDD   DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD###DDG", "GDD###DDG", "GDD###DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD###DDG", "GDD###DDG", "GDD###DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
+            .aisle("##CGGGC##", "#GDDDDDG#", "CDDDDDDDC", "GDD###DDG", "GDD###DDG", "GDD###DDG", "CDDDDDDDC", "#GDDDDDG#", "##CGGGC##")
             .aisle("##CCCCC##", "#CDDDDDC#", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "CDDDDDDDC", "#CDDDDDC#", "##CCCCC##")
             .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
             .aisle("#########", "#########", "##CC@CC##", "##CGGGC##", "##CGGGC##", "##CGGGC##", "##CCCCC##", "#########", "#########")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("D", Predicates.blocks("kubejs:starry_diamond_block"))
-            .where("C", Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(128)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where("D", Predicates.any())
+            .where("C", Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(125)
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.blocks("monilabs:microverse_stability_sensor_hatch").setMaxGlobalLimited(1)))
             .where("G", Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
             .where("V", Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
-            .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/machines/projectors", false)
+        .renderer(() => new MicroverseProjectorRenderer("kubejs:block/microverse/casing", "gtceu:block/machines/projectors"))
+        .hasTESR(true)
 
     // Microverse Projector III (Hyperbolic Microverse Projector)
     event.create("hyperbolic_microverse_projector", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
+        .machine((holder) => new MicroverseProjectorMachine(holder, 4))
         .recipeTypes("microverse")
         .recipeModifiers(
             [GTRecipeModifiers.PARALLEL_HATCH]
@@ -678,10 +684,11 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .aisle("#CCCCVCCCC#", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "#CCCCVCCCC#")
             .aisle("###CC@CC###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###N###N###", "###CCCCC###")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("D", Predicates.blocks("kubejs:starry_diamond_block"))
-            .where("C", Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(200)
+            .where("D", Predicates.any())
+            .where("C", Predicates.blocks("kubejs:microverse_casing").setMinGlobalLimited(195)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
+                .or(Predicates.blocks("monilabs:microverse_stability_sensor_hatch").setMaxGlobalLimited(1))
             )
             .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
             .where("N", Predicates.frames(GTMaterials.get("sculk_bioalloy")))
@@ -690,8 +697,8 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("Y", Predicates.blocks("kubejs:dimensional_stabilization_netherite_casing"))
             .where("#", Predicates.any())
             .build())
-        .workableCasingRenderer("kubejs:block/microverse/casing",
-            "gtceu:block/machines/projectors", false)
+        .renderer(() => new MicroverseProjectorRenderer("kubejs:block/microverse/casing", "gtceu:block/machines/projectors"))
+        .hasTESR(true)
 
     // (Small) Naquadah Reactor
     event.create("naquadah_reactor", "multiblock")

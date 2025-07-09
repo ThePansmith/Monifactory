@@ -111,7 +111,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("gtceu:greenhouse", Text.translatable("gtceu.multiblock.greenhouse.description"))
     tooltip.add("gtceu:basic_microverse_projector", Text.translatable("gtceu.multiblock.basic_microverse_projector.description"))
     tooltip.add("gtceu:advanced_microverse_projector", Text.translatable("gtceu.multiblock.advanced_microverse_projector.description"))
-    tooltip.add("gtceu:advanced_microverse_projector_ii", Text.translatable("gtceu.multiblock.advanced_microverse_projector_ii.description"))
+    tooltip.add("gtceu:elite_microverse_projector", Text.translatable("gtceu.multiblock.elite_microverse_projector.description"))
     tooltip.add("gtceu:large_naquadah_reactor", Text.translatable("gtceu.multiblock.large_naquadah_reactor.description"))
     tooltip.add("gtceu:naquadah_refinery", Text.translatable("gtceu.multiblock.naquadah_refinery.description"))
     tooltip.add("gtceu:simulation_supercomputer", Text.translatable("gtceu.multiblock.simulation_supercomputer.description"))
@@ -243,6 +243,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:tough_alloy_ingot", "§eLiFeB");
     tooltip.add("nuclearcraft:ferroboron_ingot", "§eFe₄B");
     tooltip.add("nuclearcraft:hard_carbon_ingot", "§eFe₃C");
+    tooltip.add("nuclearcraft:thorium_232", "§eTh²³²");
     tooltip.add("nuclearcraft:uranium_233", "§eU²³³");
     tooltip.add("nuclearcraft:plutonium_238", "§ePu²³⁸");
     tooltip.add("nuclearcraft:plutonium_242", "§ePu²⁴²");
@@ -258,8 +259,10 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:berkelium_247", "§eBk²⁴⁷");
     tooltip.add("nuclearcraft:berkelium_248", "§eBk²⁴⁸");
     tooltip.add("nuclearcraft:californium_249", "§eCf²⁴⁹");
+    tooltip.add("nuclearcraft:californium_250", "§eCf²⁵⁰");
     tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
     tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
+    tooltip.add("nuclearcraft:einsteinium_252", "§eEs²⁵²");
 
     tooltip.addAdvanced(["/^kubejs:.+infinity_dust_block$/", "kubejs:infinity_dust_block"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.infinity_dust_block.tooltip"))

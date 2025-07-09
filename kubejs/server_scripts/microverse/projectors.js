@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     let projector = [
         ["basic_microverse_projector", "#gtceu:circuits/hv"],
         ["advanced_microverse_projector", "#gtceu:circuits/ev"],
-        ["advanced_microverse_projector_ii", "#gtceu:circuits/iv"]
+        ["elite_microverse_projector", "#gtceu:circuits/iv"]
     ]
 
     projector.forEach(projector => {

@@ -1,6 +1,6 @@
 {
     "block.gtceu.advanced_microverse_projector": "Продвинутый проектор микровселенной",
-    "block.gtceu.advanced_microverse_projector_ii": "Продвинутый проектор микровселенной II",
+    "block.gtceu.elite_microverse_projector": "Продвинутый проектор микровселенной II",
     "block.gtceu.atmospheric_accumulator": "Атмосферный накопитель",
     "block.gtceu.basic_microverse_projector": "Базовый проектор микровселенной",
     "block.gtceu.creative_chest": "Квантовый сундук творческого режима",
@@ -360,7 +360,7 @@
     "material.gtceu.graphitic_tantalum": "Графитовый тантал",
     "material.gtceu.acetylene": "Ацетилен",
     "__CM__.flufff": "> Линия кристаллической матрицы <",
-    "gtceu.multiblock.advanced_microverse_projector_ii.description": "§7Элитный механизм, способный к стабилизации проекций в микровселенные для экзотический миссий, включающих коллапс самой микровселенной.",
+    "gtceu.multiblock.elite_microverse_projector.description": "§7Элитный механизм, способный к стабилизации проекций в микровселенные для экзотический миссий, включающих коллапс самой микровселенной.",
     "__PARALLEL_HATCHES__.footer": "====================",
     "material.gtceu.hydrochloric_manganese_solution": "Раствор хлористоводородного марганца",
     "gtceu.omega_parallel_hatch.desc": "§7Позволяет выполнять до 4096 рецептов одновременно",
