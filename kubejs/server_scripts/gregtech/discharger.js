@@ -42,9 +42,9 @@ ServerEvents.recipes(event => {
         // .EUt(-(refund / 4)) Enable once that gets fixed.
     }
 
-    const bathyal = Item.of("kubejs:bathyal_energy_core", '{Damage:2000000}').weakNBT()
-    const abyssal = Item.of("kubejs:abyssal_energy_core", '{Damage:4000000}').weakNBT()
-    const hadal = Item.of("kubejs:hadal_energy_core", '{Damage:8000000}').weakNBT()
+    const bathyal = Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT()
+    const abyssal = Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT()
+    const hadal = Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT()
 
     Discharge("hadal_solar", "2x solarflux:sp_custom_hadal", ["2x solarflux:sp_custom_abyssal", hadal, abyssal, abyssal], 1000000)
     Discharge("nt_solar", "solarflux:sp_custom_neutronium", ["solarflux:sp_custom_hadal", "4x gtceu:sculk_superconductor_single_wire", "2x gtceu:omnium_block", hadal, hadal, hadal, hadal], 100000000)
