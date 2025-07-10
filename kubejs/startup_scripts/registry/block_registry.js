@@ -246,7 +246,7 @@ StartupEvents.registry("block", event => {
         .requiresTool(true);
 
     event.create("lyso_ce_glass")
-        .displayName("LYSO:Ce Glass")
+        .displayName("Cerium-doped Lutetium Yttrium Oxyorthosilicate Glass")
         .soundType("glass")
         .renderType("cutout")
         .resistance(6).hardness(5)
