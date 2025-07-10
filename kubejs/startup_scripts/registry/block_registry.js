@@ -245,6 +245,15 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
 
+    event.create("lyso_ce_glass")
+        .displayName("LYSO:Ce Glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/prismac/lyso_ce_glass")
+        .defaultCutout()
+
     event.create("red_aligned_glass")
         .soundType("glass")
         .renderType("cutout")

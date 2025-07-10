@@ -63,4 +63,24 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("shiny")
         .element(GTElements.get("transcendental_matrix"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL)
+
+    // UEV glass base
+    event.create("lyso_ce")
+        .dust()
+        .color(0xc7eefc)
+        .formula("Lu3Y2(Si2O5)5:Ce")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES)
+
+    // LYSO:Ce intermediates
+    event.create("yttria")
+        .dust()
+        .color(0xc6cead)
+        .components("2x yttrium", "3x oxygen")
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+
+    event.create("cerium_nitrate")
+        .dust()
+        .color(0xef411f)
+        .components("1x cerium", "1x nitrogen", "3x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
