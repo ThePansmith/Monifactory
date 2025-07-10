@@ -1,10 +1,10 @@
 /** Pre Release */
 ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line("kubejs_fusion_crafting_core")
-        .itemInputs("gtceu:hsse_frame", "6x gtceu:tungsten_carbide_plate", "4x minecraft:nether_star", "2x gtceu:iv_sensor", "#gtceu:circuits/iv", "8x #forge:storage_blocks/diamatine_empowered", Item.of('kubejs:bathyal_energy_core', '{Damage:2000000}').weakNBT(), Item.of('kubejs:bathyal_energy_core', '{Damage:2000000}').weakNBT(), Item.of('kubejs:bathyal_energy_core', '{Damage:2000000}').weakNBT(), Item.of('kubejs:bathyal_energy_core', '{Damage:2000000}').weakNBT())
+        .itemInputs("gtceu:hsse_frame", "6x gtceu:tungsten_carbide_plate", "4x minecraft:nether_star", "2x gtceu:iv_sensor", "#gtceu:circuits/iv", "8x #forge:storage_blocks/diamatine_empowered", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
         .inputFluids("gtceu:soldering_alloy 1152")
         .itemOutputs("kubejs:dischargement_core")
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of('kubejs:bathyal_energy_core', '{Damage:2000000}').weakNBT()).EUt(480).duration(1200))
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT()).EUt(480).duration(1200))
         .duration(1200)
         .EUt(30720)
 
@@ -37,20 +37,20 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/luv"
     })
 
-    event.recipes.gtceu.assembler("kubejs:empty_bathyal_energy_core")
+    event.recipes.gtceu.discharger("kubejs:empty_bathyal_energy_core")
         .itemInputs("4x gtceu:cryolobus_plate", "2x gtceu:europium_plate", "8x gtceu:vanadium_gallium_bolt")
         .inputFluids("gtceu:advanced_soldering_alloy 288")
         .itemOutputs("kubejs:empty_bathyal_energy_core")
         .duration(10)
 
-    event.recipes.gtceu.assembler("kubejs:empty_abyssal_energy_core")
-        .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:tritanium_plate", "8x gtceu:naquadah_alloy_bolt", "kubejs:stabilized_einsteinium", Item.of('kubejs:bathyal_energy_core', '{Damage:2000000}').weakNBT())
+    event.recipes.gtceu.discharger("kubejs:empty_abyssal_energy_core")
+        .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:tritanium_plate", "8x gtceu:naquadah_alloy_bolt", "kubejs:stabilized_einsteinium", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
         .inputFluids("gtceu:advanced_soldering_alloy 576")
         .itemOutputs("kubejs:empty_abyssal_energy_core")
         .duration(10)
 
-    event.recipes.gtceu.assembler("kubejs:empty_hadal_energy_core")
-        .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:neutronium_plate", "8x gtceu:omnium_bolt", Item.of('kubejs:abyssal_energy_core', '{Damage:4000000}').weakNBT())
+    event.recipes.gtceu.discharger("kubejs:empty_hadal_energy_core")
+        .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:neutronium_plate", "8x gtceu:omnium_bolt", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
         .inputFluids("gtceu:advanced_soldering_alloy 864")
         .itemOutputs("kubejs:empty_hadal_energy_core")
         .duration(10)
