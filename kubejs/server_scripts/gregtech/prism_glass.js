@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_smelter("lyso_ce_glass")
         .notConsumable("gtceu:block_casting_mold")
-        .itemInputs("4x gtceu:lyso_ce_dust")
+        .itemInputs("1x gtceu:lyso_ce_dust")
         .itemOutputs("kubejs:lyso_ce_glass")
         .duration(6 * 20)
         .EUt(GTValues.VA[GTValues.LV])
