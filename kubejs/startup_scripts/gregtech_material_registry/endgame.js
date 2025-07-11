@@ -57,9 +57,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("crystal_matrix"))
         .color(0x66ffff)
         .secondaryColor(0x004590)
-        .blastTemp(6800, "highest")
+        .blastTemp(3823, "highest", GTValues.VA[GTValues.ZPM])
         .iconSet("shiny")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
+        .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
 
     event.create("omnium")
         .ingot()
