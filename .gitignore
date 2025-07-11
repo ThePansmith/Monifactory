@@ -141,6 +141,13 @@
 defaultconfigs/ftbultimine/ftbultimine-client.snbt
 defaultconfigs/ftbultimine/ftbultimine-server.snbt
 
+# journeymap
+!/journeymap
+/journeymap/*
+!/journeymap/config
+/journeymap/config/5.10/*
+!/journeymap/config/5.10/journeymap.core.config
+
 # KubeJS scripts
 !/kubejs
 
