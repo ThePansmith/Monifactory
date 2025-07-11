@@ -1,24 +1,9 @@
 /**
- ! Hardcore mode platinum line
- ? Keep in sync with
- ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsPlatLine.java
+ * Hard mode platinum line
  */
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
     if (doHarderProcessing) {
-        event.create("iridium_dioxide_residue")
-            .dust()
-            .color(0x17182e).iconSet("rough")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("iridium", "2x oxygen", "rare_earth")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
-
-        event.create("chloroplatinic_acid")
-            .fluid()
-            .color(0xfef0c2)
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("2x hydrogen", "platinum", "6x chlorine")
-
         event.create("palladium_rich_ammonia")
             .fluid()
             .color(0x808080)
@@ -30,12 +15,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .color(0xffbb66)
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("rhodium_sulfate", "water");
-
-        event.create("acidic_iridium_dioxide_solution")
-            .fluid()
-            .color(0x27284e)
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("iridium_dioxide_residue", "4x hydrochloric_acid")
 
         event.create("platinum_palladium_leachate")
             .fluid()
@@ -89,20 +68,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .components("zinc", "sulfur", "4x oxygen")
             .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
 
-        event.create("sodium_nitrate")
-            .dust()
-            .color(0x846684).iconSet("rough")
-            .components("sodium", "nitrogen", "3x oxygen")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
-
-        event.create("rhodium_nitrate")
-            .dust()
-            .color(0x776649).iconSet("fine")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("rhodium", "3x nitrogen", "9x oxygen")
-            .formula("Rh(NO3)3")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
-
         event.create("sodium_ruthenate")
             .dust()
             .color(0x3a40cb).iconSet("shiny")
@@ -115,13 +80,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .color(0xecff80).iconSet("rough")
             .components("2x sodium", "2x oxygen")
             .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
-
-        event.create("ammonium_hexachloroiridiate")
-            .dust()
-            .color(0x644629).iconSet("rough")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("2x nitrogen", "2x hydrogen", "iridium", "6x chlorine")
-            .formula("(NH4)2IrCl6");
 
         event.create("platinum_group_residue")
             .dust()
@@ -157,14 +115,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .components("2x rhodium", "water")
             .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
 
-
-        event.create("rhodium_salt")
-            .dust()
-            .color(0x848484).iconSet("shiny")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("2x salt", "2x rhodium", "6x chlorine")
-            .formula("(NaCl)2(RhCl3)2")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
 
         event.create("sodium_methoxide")
             .dust()
