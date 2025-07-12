@@ -1,3 +1,4 @@
+// priority: 900
 /**
  * Server-side pack mode management.
  * This file adds a set of constant booleans for convenience in determining if a feature is enabled

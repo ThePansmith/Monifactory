@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 900
 /**
  * Pack mode management.
  * Handles the interpretation of packmode.json to determine the global pack mode.
