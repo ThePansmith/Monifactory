@@ -110,8 +110,8 @@
   "telepastries": {
     "bites": true
   },
-  "lootr": {
-    "info": true
+  "functionalstorage": {
+    "armory": true
   },
   "balm": {
     "jade": true
@@ -150,6 +150,9 @@
   },
   "hammerlib": {
     "root": true
+  },
+  "jadeaddons.lootr": {
+    "info": true
   },
   "shetiphiancore": {
     "hud.rgb16": true,
