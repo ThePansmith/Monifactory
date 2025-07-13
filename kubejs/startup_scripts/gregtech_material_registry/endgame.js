@@ -59,7 +59,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .secondaryColor(0x004590)
         .blastTemp(3823, "highest", GTValues.VA[GTValues.ZPM])
         .iconSet("shiny")
-        .flags(GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
+        .flags(GTMaterialFlags.NO_WORKING, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
 
     event.create("omnium")
         .ingot()
