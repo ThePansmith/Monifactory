@@ -199,7 +199,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("ae2:facade", Text.gray(Text.translatable("ae2.facade.tooltip")));
     tooltip.add("ae2:memory_card", Text.gray(Text.translatable("ae2.memory_card.tooltip")));
     tooltip.add("betterp2p:advanced_memory_card", Text.gray(Text.translatable("betterp2p.advanced_memory_card.tooltip")));
-    tooltip.add("ae2:creative_fluid_cell", Text.red(Text.translatable("ae2.creative_fluid_cell.tooltip")));
     tooltip.add("mae2:eu_p2p_tunnel", Text.red(Text.translatable("mae2.eu_p2p_deprecation_tooltip")));
     tooltip.add("mae2:eu_multi_p2p_tunnel", Text.red(Text.translatable("mae2.eu_p2p_deprecation_tooltip")));
 
