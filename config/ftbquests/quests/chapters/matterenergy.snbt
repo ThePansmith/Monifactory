@@ -173,8 +173,6 @@
 				"{moni.quest.1D3A5DCCE1B40D29.description1}"
 				""
 				"{moni.quest.1D3A5DCCE1B40D29.description2}"
-				""
-				"{moni.quest.1D3A5DCCE1B40D29.description3}"
 			]
 			id: "1D3A5DCCE1B40D29"
 			rewards: [{
@@ -191,24 +189,6 @@
 			}]
 			title: "{moni.quest.1D3A5DCCE1B40D29.title}"
 			x: -2.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["1D3A5DCCE1B40D29"]
-			description: ["{moni.quest.474423E607A129DA.description1}"]
-			id: "474423E607A129DA"
-			rewards: [{
-				id: "53E441288FAE3708"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			subtitle: "{moni.quest.474423E607A129DA.subtitle}"
-			tasks: [{
-				id: "703E2AFC71E4CDD3"
-				item: "enderio:me_conduit"
-				type: "item"
-			}]
-			x: -3.5d
 			y: 0.5d
 		}
 		{
