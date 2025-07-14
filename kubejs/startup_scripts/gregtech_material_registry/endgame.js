@@ -98,6 +98,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluidPipeProperties(11000, 8500, true, false, true, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
 
+    event.create("experience_attuned")
+        .dust().gas()
+        .color(0x70486e)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+        .components("7x amethyst", "2x dark_soularium", "4x lapis")
+
     event.create("sculk_bioalloy")
         .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
