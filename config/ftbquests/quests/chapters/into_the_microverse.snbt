@@ -823,7 +823,7 @@
 				""
 				"{moni.quest.5B07A88C0BFF6586.description6}"
 			]
-			icon: "gtceu:basic_microverse_projector"
+			icon: "monilabs:basic_microverse_projector"
 			id: "5B07A88C0BFF6586"
 			rewards: [{
 				id: "699824225F37A71A"
@@ -834,7 +834,7 @@
 			tasks: [
 				{
 					id: "1E96DAB3E49D7362"
-					item: "gtceu:basic_microverse_projector"
+					item: "monilabs:basic_microverse_projector"
 					type: "item"
 				}
 				{

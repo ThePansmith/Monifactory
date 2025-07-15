@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
         C: "gtceu:uhv_quantum_chest",
         W: "kubejs:hadal_warp_engine",
         D: "kubejs:infinity_power_unit",
-        S: "kubejs:dimensional_stabilization_netherite_casing",
+        S: "monilabs:dimensional_stabilization_netherite_casing",
         Q: "kubejs:field_stabilised_omnic_pulsar_compound"
     })
 
