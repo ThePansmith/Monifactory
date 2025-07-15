@@ -15,10 +15,10 @@ features:
   # The energy capacity of the Omni-breaker.
   omnibreakerEnergyCapacity: 40960000
 
-  # Whether the Power-Transfer Einstein-Rosen Bridge is enabled.
+  # Whether the Wireless Active Transformer is enabled.
   pterbEnabled: true
 
-  # Base amount of PTERB coolant to drain every second.
+  # Base amount of WAT coolant to drain every second.
   # (Setting both this amount and the IO multiplier to 0 disables the coolant mechanic.)
   pterbCoolantBaseDrain: 0
 

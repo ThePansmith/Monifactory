@@ -568,7 +568,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("kubejs:block/cryolobus/cryolobus_casing",
+        .workableCasingModel("monilabs:block/casing/cryolobus",
             "gtceu:block/machines/electrolyzer")
 
     let getMicroverseRecipeModifiers = tier => [
@@ -1010,6 +1010,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("#", Predicates.any())
             .build()
         )
-        .workableCasingModel("kubejs:block/cryolobus/cryolobus_casing",
+        .workableCasingModel("monilabs:block/casing/cryolobus",
             "gtceu:block/machines/fermenter")
 })

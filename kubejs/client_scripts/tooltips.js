@@ -98,9 +98,6 @@ ItemEvents.tooltip(tooltip => {
     // Multiblocks
     tooltip.add("gtceu:discharger", Text.translatable("gtceu.multiblock.discharger.description"))
     tooltip.add("gtceu:greenhouse", Text.translatable("gtceu.multiblock.greenhouse.description"))
-    tooltip.add("gtceu:basic_microverse_projector", Text.translatable("gtceu.multiblock.basic_microverse_projector.description"))
-    tooltip.add("gtceu:advanced_microverse_projector", Text.translatable("gtceu.multiblock.advanced_microverse_projector.description"))
-    tooltip.add("gtceu:elite_microverse_projector", Text.translatable("gtceu.multiblock.elite_microverse_projector.description"))
     tooltip.add("gtceu:large_naquadah_reactor", Text.translatable("gtceu.multiblock.large_naquadah_reactor.description"))
     tooltip.add("gtceu:naquadah_refinery", Text.translatable("gtceu.multiblock.naquadah_refinery.description"))
     tooltip.add("gtceu:simulation_supercomputer", Text.translatable("gtceu.multiblock.simulation_supercomputer.description"))
@@ -126,7 +123,6 @@ ItemEvents.tooltip(tooltip => {
         "matter_alterator",
         "implosion_collider",
         "quintessence_infuser",
-        "hyperbolic_microverse_projector",
         "dimensional_superassembler",
         "universal_crystallizer",
         "sculk_biocharger",
@@ -153,12 +149,6 @@ ItemEvents.tooltip(tooltip => {
         text.add(3, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.0"))
         text.add(4, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.1"))
         text.add(5, Text.translatable("gtceu.machine.electric_blast_furnace.tooltip.2"))
-    })
-
-    tooltip.addAdvanced("gtceu:prismatic_crucible", (item, adv, text) => {
-        text.add(1, Text.translatable("monilabs.tooltip.prismatic.0", rainbowifySingle(Text.translatable("monilabs.tooltip.prismatic.rainbow"), Math.round(Client.lastNanoTime / 1000000000))))
-        text.add(2, Text.translatable("monilabs.tooltip.prismatic.1"))
-        text.add(3, Text.translatable("monilabs.tooltip.prismatic.2"))
     })
 
     tooltip.addAdvanced("gtceu:antimatter_collider", (item,adv,text) => {
