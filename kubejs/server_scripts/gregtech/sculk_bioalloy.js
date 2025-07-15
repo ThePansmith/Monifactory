@@ -2,17 +2,18 @@
  * Sculk Bioalloy processing line
  */
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.mixer("experience_attuned_compound")
+    event.recipes.gtceu.mixer("experience_attuned_dust")
         .itemInputs("7x gtceu:amethyst_dust", "2x gtceu:dark_soularium_dust", "4x gtceu:lapis_dust")
-        .itemOutputs("kubejs:experience_attuned_compound")
+        .itemOutputs("gtceu:experience_attuned_dust")
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV])
 
+    event.remove({ id: "gtceu:extractor/extract_experience_attuned_dust"})
     event.recipes.gtceu.chemical_bath("experience_attuned_vapor")
-        .itemInputs("kubejs:experience_attuned_compound")
+        .itemInputs("gtceu:experience_attuned_dust")
         .inputFluids("gtceu:americium_plasma 144")
-        .itemOutputs("kubejs:stabilized_americium")
-        .outputFluids("kubejs:experience_attuned_vapor 144")
+        .itemOutputs("gtceu:americium_dust")
+        .outputFluids("gtceu:experience_attuned 144")
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV])
 
@@ -25,7 +26,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.vacuum_freezer("experience_attuned_microstructure")
         .itemInputs("kubejs:manyullyn_based_trellis_microstructure")
-        .inputFluids("kubejs:experience_attuned_vapor 144")
+        .inputFluids("gtceu:experience_attuned 144")
         .itemOutputs("kubejs:experience_attuned_microstructure")
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV])

@@ -13,11 +13,17 @@ JEIEvents.hideItems(event => {
     Object.entries(global.deprecatedFluids).forEach(([oldFluidID, replacementFluidID]) => {
         event.hide(oldFluidID.concat("_bucket"))
     })
+    Object.entries(global.deprecatedBlocks).forEach(([oldBlockID, replacementBlockID]) => {
+        event.hide(oldBlockID)
+    })
 })
 
 ItemEvents.tooltip(event => {
     Object.entries(global.deprecatedItems).forEach(([oldItemID, replacementItemID]) => {
         event.add(oldItemID, Text.red(`Deprecated. Use in a crafting table to convert into ${Item.of(replacementItemID).getDisplayName().getString()}`).bold(true))
+    })
+    Object.entries(global.deprecatedBlocks).forEach(([oldBlockID, replacementBlockID]) => {
+        event.add(oldBlockID, Text.red(`Deprecated. Use in a crafting table to convert into ${Item.of(replacementBlockID).getDisplayName().getString()}`).bold(true))
     })
 })
 

@@ -57,9 +57,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("crystal_matrix"))
         .color(0x66ffff)
         .secondaryColor(0x004590)
-        .blastTemp(6800, "highest")
+        .blastTemp(3823, "highest", GTValues.VA[GTValues.ZPM])
         .iconSet("shiny")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
+        .flags(GTMaterialFlags.NO_WORKING, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
 
     event.create("omnium")
         .ingot()
@@ -97,6 +97,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("dull")
         .fluidPipeProperties(11000, 8500, true, false, true, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
+
+    event.create("experience_attuned")
+        .dust().gas()
+        .color(0x70486e)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+        .components("7x amethyst", "2x dark_soularium", "4x lapis")
 
     event.create("sculk_bioalloy")
         .ingot()
