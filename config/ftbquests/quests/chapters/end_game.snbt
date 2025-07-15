@@ -527,7 +527,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "1E6F38616AA5D63C"
-				item: "gtceu:hyperbolic_microverse_projector"
+				item: "monilabs:hyperbolic_microverse_projector"
 				type: "item"
 			}]
 			title: "{moni.quest.63CC578C3558E0AF.title}"
