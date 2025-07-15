@@ -438,7 +438,6 @@ StartupEvents.registry("item", event => {
 
 
     // Sculk bioalloy processing intermediate products
-    event.create("experience_attuned_compound").texture("kubejs:item/bioalloy/experience_attuned_compound")
     event.create("experience_attuned_microstructure").texture("kubejs:item/bioalloy/experience_attuned_microstructure")
     event.create("manyullyn_based_trellis_microstructure").displayName("Manyullyn-Based Trellis Microstructure").texture("kubejs:item/bioalloy/manyullyn_based_trellis_microstructure")
     event.create("experience_saturated_microstructure").texture("kubejs:item/bioalloy/experience_saturated_microstructure")
