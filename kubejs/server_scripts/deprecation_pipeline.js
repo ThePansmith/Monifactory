@@ -19,6 +19,8 @@ Object.entries(global.deprecatedItems).forEach(([oldItemID, replacementItemID]) 
 
 Object.entries(global.deprecatedFluids).forEach(([oldFluidID, replacementFluidID]) => {
     ServerEvents.recipes(event => {
+        event.shapeless(replacementFluidID.concat("_bucket"), [oldFluidID.concat("_bucket")]).id(`${oldFluidID.concat("_bucket")}_legacy_updater`);
+
         event.recipes.gtceu.chemical_reactor(`${oldFluidID}_legacy_updater`)
             .inputFluids(`${oldFluidID} 1000`)
             .outputFluids(`${replacementFluidID} 1000`)
