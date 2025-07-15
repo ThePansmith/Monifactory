@@ -32,3 +32,15 @@ Object.entries(global.deprecatedFluids).forEach(([oldFluidID, replacementFluidID
             .EUt(GTValues.VA[GTValues.ULV])
     });
 });
+
+Object.entries(global.deprecatedBlocks).forEach(([oldBlockID, replacementBlockID]) => {
+    ServerEvents.recipes(event => {
+        event.shapeless(replacementBlockID, [oldBlockID]).id(`${oldBlockID}_legacy_updater`);
+
+        event.recipes.gtceu.atomic_reconstruction(`${oldBlockID}_legacy_updater`)
+            .itemInputs(oldBlockID)
+            .itemOutputs(replacementBlockID)
+            .duration(20)
+            .EUt(GTValues.VA[GTValues.ULV])
+    });
+});
