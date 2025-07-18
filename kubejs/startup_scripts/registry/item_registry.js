@@ -204,7 +204,7 @@ StartupEvents.registry("item", event => {
         .displayName("Chromatic Capacitor: §bCyan§r")
     event.create("chromatic_capacitor_blue")
         .texture("kubejs:item/prismac/chromatic_capacitor_blue")
-        .displayName("Chromatic Capacitor: §1Bluey§r")
+        .displayName("Chromatic Capacitor: §1Blue§r")
     event.create("chromatic_capacitor_magenta")
         .texture("kubejs:item/prismac/chromatic_capacitor_magenta")
         .displayName("Chromatic Capacitor: §dMagenta§r")
@@ -444,11 +444,11 @@ StartupEvents.registry("item", event => {
     // Crystal Matrix Line
     event.create("raw_nanotube_substrate").texture("kubejs:item/matrix/raw_nanotube_substrate")
     event.create("prepared_nanotube_substrate").texture("kubejs:item/matrix/prepared_nanotube_substrate")
-    event.create("cobalt_nanoparticles").texture("kubejs:item/matrix/cobalt_nanoparticles")
+    event.create("graphite_electrode").texture("kubejs:item/matrix/graphite_electrode")
+    event.create("nanotube_soot").texture("kubejs:item/matrix/nanotube_soot")
     event.create("grown_nanotube_substrate").texture("kubejs:item/matrix/grown_nanotube_substrate")
     event.create("carbon_nanotubes").texture("kubejs:item/matrix/carbon_nanotubes")
-    event.create("porous_matrix_mesh").texture("kubejs:item/matrix/porous_matrix_mesh")
-    event.create("dense_matrix_mesh").texture("kubejs:item/matrix/dense_matrix_mesh")
+    event.create("adhered_matrix_mesh").texture("kubejs:item/matrix/adhered_matrix_mesh")
 
     // Terbium Line
     event.create("rare_earth_sulfate").texture("kubejs:item/terbium/rare_earth_sulfate")
@@ -457,7 +457,6 @@ StartupEvents.registry("item", event => {
 
 
     // Sculk bioalloy processing intermediate products
-    event.create("experience_attuned_compound").texture("kubejs:item/bioalloy/experience_attuned_compound")
     event.create("experience_attuned_microstructure").texture("kubejs:item/bioalloy/experience_attuned_microstructure")
     event.create("manyullyn_based_trellis_microstructure").displayName("Manyullyn-Based Trellis Microstructure").texture("kubejs:item/bioalloy/manyullyn_based_trellis_microstructure")
     event.create("experience_saturated_microstructure").texture("kubejs:item/bioalloy/experience_saturated_microstructure")

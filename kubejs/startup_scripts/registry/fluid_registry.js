@@ -43,7 +43,6 @@ StartupEvents.registry("fluid", event => {
         .stillTexture("kubejs:block/antimatter/fuel")
 
     event.create("hadal_sculk").stillTexture("kubejs:block/bioalloy/hadal_sculk")
-    event.create("experience_attuned_vapor").stillTexture("kubejs:block/bioalloy/experience_attuned_vapor")
     event.create("experience_concentrate").stillTexture("kubejs:block/bioalloy/experience_concentrate")
     event.create("experience_rich_growth_medium").stillTexture("kubejs:block/bioalloy/experience_rich_growth_medium")
 })

@@ -624,7 +624,7 @@ ServerEvents.recipes(event => {
 
 
     event.remove({ id: "gtceu:shaped/mega_blast_furnace" })
-    event.recipes.gtceu.assembly_line("kubejs:assembly_line/mega_blast_furnace")
+    event.recipes.gtceu.assembly_line("kubejs:mega_blast_furnace")
         .itemInputs("gtceu:electric_blast_furnace", "4x #gtceu:circuits/zpm", "4x gtceu:luv_field_generator", "4x gtceu:naquadah_alloy_spring", "4x gtceu:dense_naquadah_alloy_plate", "4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire")
         .inputFluids("gtceu:soldering_alloy 9216")
         .itemOutputs("gtceu:mega_blast_furnace")
@@ -633,7 +633,7 @@ ServerEvents.recipes(event => {
         .stationResearch(b => b.researchStack("gtceu:electric_blast_furnace").CWUt(16, 64000).EUt(30720))
 
     event.remove({ id: "gtceu:shaped/mega_vacuum_freezer" })
-    event.recipes.gtceu.assembly_line("kubejs:assembly_line/mega_vacuum_freezer")
+    event.recipes.gtceu.assembly_line("kubejs:mega_vacuum_freezer")
         .itemInputs("gtceu:vacuum_freezer", "4x #gtceu:circuits/zpm", "4x gtceu:luv_field_generator", "4x gtceu:naquadah_normal_fluid_pipe", "4x gtceu:dense_naquadah_alloy_plate", "4x gtceu:uranium_rhodium_dinaquadide_quadruple_wire")
         .inputFluids("gtceu:soldering_alloy 9216")
         .itemOutputs("gtceu:mega_vacuum_freezer")
@@ -663,14 +663,6 @@ ServerEvents.recipes(event => {
         .duration(130)
         .EUt(98304)
         .fusionStartEU(600000000)
-
-    // Resonant Clathrate
-    event.recipes.gtceu.chemical_reactor("resonant_clathrate")
-        .itemInputs("minecraft:quartz")
-        .inputFluids(Fluid.of("thermal:ender", 250))
-        .itemOutputs("kubejs:resonant_clathrate")
-        .duration(120)
-        .EUt(75)
 
     event.recipes.gtceu.extractor("resonant_ender_from_pearl")
         .itemInputs("1x minecraft:ender_pearl")
@@ -706,8 +698,8 @@ ServerEvents.recipes(event => {
     event.replaceOutput({ id: "gtceu:macerator/macerate_cleaning_maintenance_hatch" }, "gtceu:yttrium_barium_cuprate_dust", "2x gtceu:graphene_dust")
 
     // ZPM Field Gen
-    event.remove({ id: "gtceu:assembly_line/field_generator_zpm" })
-    event.recipes.gtceu.assembly_line("kubejs:assembly_line/zpm_field_generator")
+    event.remove({ id: "gtceu:field_generator_zpm" })
+    event.recipes.gtceu.assembly_line("kubejs:zpm_field_generator")
         .itemInputs("gtceu:naquadah_alloy_frame", "6x gtceu:naquadah_alloy_plate", "gtceu:quantum_star", "2x gtceu:zpm_emitter", "2x #gtceu:circuits/zpm", "64x gtceu:fine_uranium_rhodium_dinaquadide_wire", "64x gtceu:fine_uranium_rhodium_dinaquadide_wire", "4x gtceu:vanadium_gallium_single_cable")
         .inputFluids("gtceu:soldering_alloy 1152", "gtceu:cryococcus 1152")
         .itemOutputs("gtceu:zpm_field_generator")
@@ -872,7 +864,7 @@ ServerEvents.recipes(event => {
     event.shapeless("4x minecraft:clay_ball", ["minecraft:clay"]);
 
     // Parallel Implosion Compressor
-    event.recipes.gtceu.assembly_line("gtceu:assembly_line/implosion_collider")
+    event.recipes.gtceu.assembly_line("gtceu:implosion_collider")
         .itemInputs("4x enderio:reinforced_obsidian_block", "2x #gtceu:circuits/zpm", "gtceu:solid_machine_casing", "3x gtceu:niobium_nitride_double_cable", "2x gtceu:zpm_electric_piston")
         .inputFluids("gtceu:soldering_alloy 1152", "gtceu:osmium 1152")
         .itemOutputs("gtceu:implosion_collider")

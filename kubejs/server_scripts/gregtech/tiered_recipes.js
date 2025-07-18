@@ -82,7 +82,7 @@ function parseRecipe(recipe) {
             let c = i.content
             let [val] = c.value
             return {
-                id: "tag" in val ? "gtceu:" + val.tag.split(":")[1] : val.fluid,
+                id: "tag" in val ? "gtceu:" + val.tag.split(":", 2)[1] : val.fluid,
                 amount: c.amount
             }
         })
@@ -200,7 +200,8 @@ function generateAlternatives(event, javaRecipe) {
     if(!(typeof recipe === "object" && typeof recipe.duration === "number"))
         return
 
-    let machineName = recipeId.split(":")[1].split("/")[0]
+    let machineName = recipeId.split(":", 2)[1].split("/", 2)[0]
+    let recipeName = recipeId.split(machineName + "/")[1]
 
     // Soldering alloy tiers
     if(recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
@@ -225,7 +226,7 @@ function generateAlternatives(event, javaRecipe) {
             }, solderEfficiency, 2)
             r.register(
                 event,
-                recipeId + "/" + solderId.split(":",2)[1],
+                recipeName + "/" + solderId.split(":", 2)[1],
                 machineName,
             )
         }
@@ -235,7 +236,8 @@ function generateAlternatives(event, javaRecipe) {
     if(recipe.inputs?.item && recipe.inputs.item.some(i =>
         i.content.type === "gtceu:sized" &&
         "item" in i.content.ingredient &&
-        i.content.ingredient.item.startsWith("gtceu:advanced_smd_")
+        i.content.ingredient.item.startsWith("gtceu:advanced_smd_") &&
+        !recipeName.match(/^mainframe_iv|((nano|quantum)_(processor|assembly|computer|mainframe))/)   // Don't add Complex SMDs to nano- or quantum- processors
     )) {
         // Advanced SMD recipes take twice as fast to make than Simple SMDs
         // Here we follow this convention:
@@ -251,7 +253,7 @@ function generateAlternatives(event, javaRecipe) {
                 inp.amount /= 4
             }
         }, 4, 2, 16)
-        r.register(event, recipeId + "/complex_smd", machineName)
+        r.register(event, recipeName + "/complex_smd", machineName)
     }
 }
 

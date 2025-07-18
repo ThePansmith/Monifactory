@@ -27,9 +27,9 @@ ServerEvents.recipes(event => {
             .EUt(1200000)
         )
 
-    event.recipes.gtceu.assembler("kubejs:cryolobus_casing")
+    event.recipes.gtceu.assembler("monilabs:cryolobus_casing")
         .itemInputs("6x gtceu:cryolobus_plate", "gtceu:cryolobus_frame")
-        .itemOutputs("2x kubejs:cryolobus_casing")
+        .itemOutputs("2x monilabs:cryolobus_casing")
         .duration(50)
         .circuit(6)
         .EUt(16)

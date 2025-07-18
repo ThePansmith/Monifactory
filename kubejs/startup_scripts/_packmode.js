@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 900
 /**
  * Pack mode management.
  * Handles the interpretation of packmode.json to determine the global pack mode.
@@ -100,7 +100,6 @@ On the flipside, if you create your own fix for an issue you encounter, then any
 global.doAssemblyLineOrderingWarning = packMode == "Hard" || packMode == "Expert";
 global.doBoilers = packMode == "Normal" || packMode == "Hard";
 global.doCompacting = packMode == "Normal" || packMode == "Hard";
-global.doConduits = packMode == "Normal" || packMode == "Hard";
 global.doConverters = packMode == "Normal" || packMode == "Hard";
 global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";
@@ -124,7 +123,6 @@ global.doHostileMicroverse = packMode == "Hard" || packMode == "Expert";
 const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;
 const doCompacting = !!global.doCompacting;
-const doConduits = !!global.doConduits;
 const doConverters = !!global.doConverters;
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;

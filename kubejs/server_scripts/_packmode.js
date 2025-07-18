@@ -1,3 +1,4 @@
+// priority: 900
 /**
  * Server-side pack mode management.
  * This file adds a set of constant booleans for convenience in determining if a feature is enabled
@@ -8,7 +9,6 @@
 const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;
 const doCompacting = !!global.doCompacting;
-const doConduits = !!global.doConduits;
 const doConverters = !!global.doConverters;
 
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;

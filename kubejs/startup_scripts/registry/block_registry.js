@@ -184,12 +184,9 @@ StartupEvents.registry("block", event => {
 
     // Machine Casings
     const casings = [
-        "microverse",
         "black_steel",
         "dark_soularium",
         "omnic_matrix_machine",
-        "dimensional_stabilization_netherite",
-        "cryolobus",
         "bioalloy",
         "bioalloy_fusion",
     ]
@@ -244,6 +241,15 @@ StartupEvents.registry("block", event => {
         .tag("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
+
+    event.create("lyso_ce_glass")
+        .displayName("Cerium-doped Lutetium Yttrium Oxyorthosilicate Glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/prismac/lyso_ce_glass")
+        .defaultCutout()
 
     event.create("red_aligned_glass")
         .soundType("glass")

@@ -24,7 +24,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             builder
                 .langValue(`${GTValues.VLVH[tier]} Atomic Reconstructor`)
                 .recipeType("atomic_reconstruction")
-                .workableTieredHullRenderer("gtceu:block/machines/reconstructor")
+                .workableTieredHullModel("gtceu:block/machines/reconstructor")
         )
 })
 
@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             builder
                 .rotationState(RotationState.ALL)
                 .abilities(PartAbility.PARALLEL_HATCH)
-                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk9"))
+                .workableTieredHullModel(GTCEu.id("block/machines/parallel_hatch_mk9"))
         )
 
     event.create("uev_parallel_hatch", "custom")
@@ -52,6 +52,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             builder
                 .rotationState(RotationState.ALL)
                 .abilities(PartAbility.PARALLEL_HATCH)
-                .workableTieredHullRenderer(GTCEu.id("block/machines/parallel_hatch_mk10"))
+                .workableTieredHullModel(GTCEu.id("block/machines/parallel_hatch_mk10"))
         )
 })

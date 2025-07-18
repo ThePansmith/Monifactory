@@ -1232,7 +1232,14 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:quartz_glass", "gtceu:vibrant_alloy_dust")
         .itemOutputs("ae2:quartz_vibrant_glass")
         .duration(200)
-        .EUt("128")
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // Semi-Vibrant Quartz Glass
+    event.recipes.gtceu.alloy_smelter("mae2:cloud_chamber")
+        .itemInputs("ae2:quartz_vibrant_glass", "gtceu:small_amethyst_dust")
+        .itemOutputs("mae2:cloud_chamber")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
 
     // BetterP2P
     event.shapeless("betterp2p:advanced_memory_card", ["ae2:memory_card", "ae2:network_tool"])

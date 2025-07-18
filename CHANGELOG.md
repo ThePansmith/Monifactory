@@ -110,7 +110,6 @@ Like this list, some features here are WIP.
 * LaserIO-UEL now serves as the primary method of power transportation with new tiered energy overclockers, allowing LaserIO power transporation to be a option from the get-go
     * LaserIO's energy throughput is super easy to upgrade, as only extracting cards requires an overclocker, and is as simple as swapping the card out.
     * LaserIO's lasers are also colorable, able to go through blocks, and more!
-* EnderIO Conduits are still able to be crafted
 
 
 # Deeper Mob Learning
@@ -205,7 +204,7 @@ Like this list, some features here are WIP.
     * Has a 2% chance of spawning in Lost Cities chests
     * An infinite-use Tempad can be crafted at EV that lets you teleport without requiring Monipennies
 * XNet
-    * Alternative to EnderIO Conduits, GT Pipes, and LaserIO
+    * Alternative to GT Pipes and LaserIO
     * Gated to early MV, but very cheap thereafter
 * Flux Networks
     * Flux Networks gated to LuV
