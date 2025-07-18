@@ -4,12 +4,12 @@
 
 ServerEvents.recipes(event => {
     const converter = [
-        ["uev", "cable", "darconite", "darconite", "1966080"],
-        ["max", "wire", "monium", "monium", "80000000"],
+        ["uev", "cable", "darconite", "darconite", 1966080],
+        ["max", "wire", "monium", "monium", 80000000]
     ]
     const transformer = [
         ["uhv", "darconite", "europium"],
-        ["uev", "necrosiderite", "darconite"],
+        ["uev", "necrosiderite", "darconite"]
     ]
 
     converter.forEach(([tier, mat1, mat2, mat3, eut]) => {
