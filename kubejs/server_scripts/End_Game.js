@@ -439,19 +439,6 @@ ServerEvents.recipes(event => {
             .EUt(1966080)
         )
 
-    // Omniscience Research Beacon
-    event.recipes.gtceu.assembly_line("omniscience_research_beacon")
-        .itemInputs("gtceu:computation_receiver_hatch", "8x gtceu:europium_hex_cable", "4x gtceu:research_station", "16x gtceu:advanced_computer_casing", "16x #gtceu:circuits/uhv", "3x gtceu:uhv_sensor", "kubejs:universal_navigator", "4x gtceu:uhv_field_generator", "4x gtceu:sculk_bioalloy_plate", "64x gtceu:normal_optical_pipe", "64x gtceu:fine_ruridit_wire", "32x gtceu:ruthenium_trinium_americium_neutronate_single_wire")
-        .inputFluids("gtceu:advanced_soldering_alloy 2304", "gtceu:omnium 4608", "gtceu:polyethyl_cyanoacrylate 2304")
-        .itemOutputs("gtceu:creative_data_multi")
-        .duration(4000)
-        .EUt(7864320)
-        .stationResearch(b => b
-            .researchStack("gtceu:research_station")
-            .CWUt(96, 57600)
-            .EUt(1966080)
-        )
-
     // Chromodynamic Conduction Casing
     event.recipes.gtceu.assembler("chromodynamic_conduction_casing")
         .itemInputs("gtceu:activated_netherite_frame", "2x gtceu:normal_laser_pipe", "8x gtceu:omnium_single_wire", "#gtceu:circuits/luv")

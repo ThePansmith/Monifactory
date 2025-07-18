@@ -14,17 +14,17 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(1966080)
 
-    event.recipes.gtceu.assembly_line("kubejs:creative_data")
-        .itemInputs("4x #gtceu:circuits/uhv", "16x #forge:plates/necrosiderite", "4x kubejs:dimensional_stabilization_netherite_casing", "4x gtceu:uv_emitter", "8x gtceu:advanced_data_access_hatch", "4x gtceu:network_switch")
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 1152")
+    event.recipes.gtceu.assembly_line("omniscience_research_beacon")
+        .itemInputs("gtceu:computation_receiver_hatch", "8x gtceu:europium_hex_cable", "4x gtceu:research_station", "16x gtceu:advanced_computer_casing", "16x #gtceu:circuits/uhv", "3x gtceu:uhv_sensor", "kubejs:universal_navigator", "4x gtceu:uhv_field_generator", "4x gtceu:sculk_bioalloy_plate", "64x gtceu:normal_optical_pipe", "64x gtceu:fine_ruridit_wire", "32x gtceu:ruthenium_trinium_americium_neutronate_single_wire")
+        .inputFluids("gtceu:advanced_soldering_alloy 2304", "gtceu:omnium 4608", "gtceu:polyethyl_cyanoacrylate 2304")
         .itemOutputs("gtceu:creative_data_multi")
         .stationResearch(b => b
             .researchStack("gtceu:network_switch")
             .EUt(1966080)
-            .CWUt(128, 512000)
+            .CWUt(96, 57600)
         )
         .duration(1200)
-        .EUt(1966080)
+        .EUt(7864320)
 
     // Recipes used to run the creative multiblocks
     event.recipes.gtceu.omnidimensional_power_singularity("kubejs:superfuel_infinite_power")

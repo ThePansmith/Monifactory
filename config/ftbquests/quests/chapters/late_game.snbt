@@ -195,12 +195,6 @@
 			y: 22.75d
 		}
 		{
-			id: "29366415E2B146BA"
-			linked_quest: "739F7BF2A90B278A"
-			x: 9.75d
-			y: 26.0d
-		}
-		{
 			id: "03BAC1C5A779EFAE"
 			linked_quest: "425D1C34A82B054D"
 			x: 18.25d
@@ -295,7 +289,7 @@
 		{
 			id: "19B7D7E62201D405"
 			linked_quest: "5BADF536443E712D"
-			x: 26.75d
+			x: 27.0d
 			y: 25.25d
 		}
 		{
@@ -475,10 +469,7 @@
 			y: 8.25d
 		}
 		{
-			dependencies: [
-				"2A6E9E7C80754936"
-				"7DB174443D7FAFA0"
-			]
+			dependencies: ["2A6E9E7C80754936"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.40E8C7CEE285D702.description1}"
@@ -717,8 +708,6 @@
 				"{moni.quest.458FF3F9BC8E025B.description6}"
 				""
 				"{moni.quest.458FF3F9BC8E025B.description7}"
-				""
-				"{moni.quest.458FF3F9BC8E025B.description8}"
 			]
 			id: "458FF3F9BC8E025B"
 			rewards: [{
@@ -2363,68 +2352,6 @@
 			y: 15.75d
 		}
 		{
-			dependencies: ["25B0271106684DF7"]
-			description: [
-				"{moni.quest.62AC7103FF9D25FD.description1}"
-				""
-				"{moni.quest.62AC7103FF9D25FD.description2}"
-				""
-				"{moni.quest.62AC7103FF9D25FD.description3}"
-			]
-			id: "62AC7103FF9D25FD"
-			rewards: [{
-				count: 2
-				id: "0B271AF5EC0CC260"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "08B36313B29D741F"
-				item: "gtceu:implosion_compressor"
-				type: "item"
-			}]
-			title: "{moni.quest.62AC7103FF9D25FD.title}"
-			x: 29.25d
-			y: 25.25d
-		}
-		{
-			dependencies: ["3E51686E2DBD380F"]
-			description: ["{moni.quest.25B0271106684DF7.description1}"]
-			id: "25B0271106684DF7"
-			rewards: [{
-				id: "3025735A47D591DE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "74D85DC6D137784C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:tnt"
-							}
-							{
-								Count: 1b
-								id: "gtceu:industrial_tnt"
-							}
-						]
-					}
-				}
-				title: "{moni.task.74D85DC6D137784C}"
-				type: "item"
-			}]
-			title: "{moni.quest.25B0271106684DF7.title}"
-			x: 28.0d
-			y: 25.25d
-		}
-		{
 			dependencies: ["0889C9E0DD0FDF06"]
 			description: [
 				"{moni.quest.7ECA688A91A1392A.description1}"
@@ -2692,10 +2619,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"62AC7103FF9D25FD"
-				"739F7BF2A90B278A"
-			]
+			dependencies: ["739F7BF2A90B278A"]
 			description: [
 				"{moni.quest.61301FBD825F8280.description1}"
 				""
@@ -2718,8 +2642,8 @@
 				}
 			]
 			title: "{moni.quest.61301FBD825F8280.title}"
-			x: 30.5d
-			y: 26.0d
+			x: 29.25d
+			y: 25.25d
 		}
 		{
 			dependencies: [

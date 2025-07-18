@@ -188,11 +188,7 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"1A30472430354F1E"
-				"27FAD6A8FCFAB543"
-				"2FD1AE24CD8BEBEB"
-			]
+			dependencies: ["1A30472430354F1E"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.5B6811964444497F.description1}"
@@ -228,11 +224,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"3B639F4061B00F1A"
-				"7308924C9A481443"
-				"2AC61192BCD459F2"
-			]
+			dependencies: ["3B639F4061B00F1A"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.1510DC51CDC3F609.description1}"
@@ -263,11 +255,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"6169C04DF463502F"
-				"5759E8587624BEF1"
-				"5672773780EE8267"
-			]
+			dependencies: ["6169C04DF463502F"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.01CC71429CFCAE0B.description1}"
@@ -298,11 +286,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"7E09D4E00BFA4970"
-				"1DFF7C35B5B26B80"
-				"47D092CBA484C0DE"
-			]
+			dependencies: ["7E09D4E00BFA4970"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.22B3F2351CB4B7D8.description1}"
@@ -333,12 +317,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"39FD6F1076559156"
-				"2DD1E2391DA3170C"
-				"1FF5C2A3CAB76088"
-				"3C3B5875FCD6B5B7"
-			]
+			dependencies: ["39FD6F1076559156"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.2179B83440CEF343.description1}"
@@ -364,12 +343,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"4DB622A78605A2EB"
-				"6CE6674C20500023"
-				"64C33333ECCAABC7"
-				"5ECF0A787D861C89"
-			]
+			dependencies: ["4DB622A78605A2EB"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.536CEDA3142BCE63.description1}"
@@ -380,6 +354,7 @@
 				""
 				"{moni.quest.536CEDA3142BCE63.description4}"
 			]
+			hide_dependency_lines: false
 			id: "536CEDA3142BCE63"
 			tasks: [{
 				icon: "kubejs:luv_universal_circuit"
@@ -399,12 +374,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"248ABB7F26EB72EE"
-				"521977C7165229F1"
-				"26CA20E74A62FA6E"
-				"1289F9FE461BFE01"
-			]
+			dependencies: ["521977C7165229F1"]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.0472A05CFBF4A2F0.description1}"]
 			disable_toast: true
@@ -427,12 +397,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: [
-				"6F5BB99060FF03AC"
-				"115B96B2092D671E"
-				"67663B49B80849C1"
-				"5A8D2BFAF02E6325"
-			]
+			dependencies: ["115B96B2092D671E"]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.519A11FDC6A7EF21.description1}"]
 			id: "519A11FDC6A7EF21"
@@ -454,11 +419,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"01E542E1C9DAF5B4"
-				"4EB9D1ADC4814330"
-				"3D7924B550A1BBA0"
-			]
+			dependencies: ["01E542E1C9DAF5B4"]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.0C50D78D8F63CAFE.description1}"]
 			id: "0C50D78D8F63CAFE"
@@ -1112,10 +1073,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"07057CDE4E021BA7"
-				"0C9A9F33EEA3AB5E"
-			]
+			dependencies: ["07057CDE4E021BA7"]
 			dependency_requirement: "one_completed"
 			description: ["{moni.quest.0B923E8ED6161CA8.description1}"]
 			id: "0B923E8ED6161CA8"
@@ -1561,7 +1519,7 @@
 		{
 			dependencies: [
 				"15E34DEC491FAB81"
-				"6169C04DF463502F"
+				"5759E8587624BEF1"
 			]
 			description: [
 				"{moni.quest.244F2CC5484A7B21.description1}"
@@ -1638,7 +1596,7 @@
 				}
 			]
 			title: "{moni.quest.244F2CC5484A7B21.title}"
-			x: -2.0d
+			x: -2.5d
 			y: -8.5d
 		}
 		{
@@ -1667,7 +1625,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7E09D4E00BFA4970.title}"
-			x: -2.0d
+			x: -2.5d
 			y: -1.0d
 		}
 		{
@@ -1692,7 +1650,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.6B908DECFA46C8E0.title}"
-			x: -2.0d
+			x: -1.5d
 			y: -7.0d
 		}
 		{
@@ -1718,7 +1676,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.39FD6F1076559156.title}"
-			x: -2.0d
+			x: -1.5d
 			y: 0.5d
 		}
 		{
@@ -2170,6 +2128,11 @@
 			]
 			description: ["{moni.quest.26CA20E74A62FA6E.description1}"]
 			id: "26CA20E74A62FA6E"
+			rewards: [{
+				id: "094C791F0E6EF144"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "24CC69AAE2D715C1"
