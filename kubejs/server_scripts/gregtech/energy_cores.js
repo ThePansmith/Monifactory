@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     ], {
         P: "gtceu:double_cryolobus_plate",
         R: "gtceu:luv_lapotronic_battery",
-        X: "kubejs:cryolobus_casing",
+        X: "monilabs:cryolobus_casing",
         A: "gtceu:luv_charger_4x",
         E: "gtceu:luv_sensor",
         C: "#gtceu:circuits/luv"
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
     ], {
         P: "gtceu:double_cryolobus_plate",
         R: "gtceu:luv_lapotronic_battery",
-        X: "kubejs:cryolobus_casing",
+        X: "monilabs:cryolobus_casing",
         E: "gtceu:luv_emitter",
         C: "#gtceu:circuits/luv"
     })

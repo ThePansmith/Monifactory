@@ -49,3 +49,13 @@ deprecateFluid("gtceu:oganesson", "gtceu:einsteinium", "Oganesson")
 // Naqfuel old IDs
 deprecateFluid("gtceu:naq_fuel_t1", "gtceu:crude_naquadah_fuel", "T1 Naq Fuel")
 deprecateFluid("gtceu:naq_fuel_t2", "gtceu:naquadah_fuel", "T2 Naq Fuel")
+
+// Coremod stuff
+deprecateBlock("kubejs:microverse_casing", "monilabs:microverse_casing", "Microverse Casing")
+deprecateBlock("kubejs:dimensional_stabilization_netherite_casing", "monilabs:dimensional_stabilization_netherite_casing", "Dimensional Stabilization Netherite Casing")
+deprecateBlock("kubejs:cryolobus_casing", "monilabs:cryolobus_casing", "Cryolobus Casing")
+
+deprecateBlock("gtceu:basic_microverse_projector", "monilabs:basic_microverse_projector", "Basic Microverse Projector")
+deprecateBlock("gtceu:advanced_microverse_projector", "monilabs:advanced_microverse_projector", "Advanced Microverse Projector")
+deprecateBlock("gtceu:advanced_microverse_projector_ii", "monilabs:elite_microverse_projector", "Advanced Microverse Projector II")
+deprecateBlock("gtceu:hyperbolic_microverse_projector", "monilabs:hyperbolic_microverse_projector", "Hyperbolic Microverse Projector")
