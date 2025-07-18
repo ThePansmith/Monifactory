@@ -204,7 +204,7 @@ StartupEvents.registry("item", event => {
         .displayName("Chromatic Capacitor: §bCyan§r")
     event.create("chromatic_capacitor_blue")
         .texture("kubejs:item/prismac/chromatic_capacitor_blue")
-        .displayName("Chromatic Capacitor: §1Bluey§r")
+        .displayName("Chromatic Capacitor: §1Blue§r")
     event.create("chromatic_capacitor_magenta")
         .texture("kubejs:item/prismac/chromatic_capacitor_magenta")
         .displayName("Chromatic Capacitor: §dMagenta§r")
