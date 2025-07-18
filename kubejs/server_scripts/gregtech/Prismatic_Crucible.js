@@ -326,7 +326,7 @@ ServerEvents.recipes(event => {
 
     // PRISM
     event.recipes.gtceu.chromatic_processing("prism_red")
-        .itemInputs("gtceu:fusion_glass")
+        .itemInputs("kubejs:lyso_ce_glass")
         .itemOutputs("kubejs:red_aligned_glass")
         .inputColor(PrismaticColor.RED)
         .outputStatesNormal(PrismaticColor.BLUE)

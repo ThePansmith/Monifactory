@@ -313,7 +313,7 @@
 				""
 				"{moni.quest.52F1953ED72A8AA6.description3}"
 			]
-			icon: "gtceu:advanced_microverse_projector"
+			icon: "monilabs:advanced_microverse_projector"
 			id: "52F1953ED72A8AA6"
 			rewards: [{
 				id: "5AE89BD5E0053CAD"
@@ -324,7 +324,7 @@
 			tasks: [
 				{
 					id: "2AC4B505FA1D3CD7"
-					item: "gtceu:advanced_microverse_projector"
+					item: "monilabs:advanced_microverse_projector"
 					type: "item"
 				}
 				{

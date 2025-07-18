@@ -207,18 +207,20 @@ ServerEvents.recipes(event => {
             }
         })
 
-    event.custom(
-        {
-            "type": "enderio:enchanting",
-            "cost_multiplier": 1,
-            "enchantment": "ensorcellation:reach",
-            "input": {
-                "count": 1,
-                "ingredient": {
-                    "item": "ulvcovm:ulv_robot_arm"
+    if (Platform.isLoaded("ulvcovm")) {
+        event.custom(
+            {
+                "type": "enderio:enchanting",
+                "cost_multiplier": 1,
+                "enchantment": "ensorcellation:reach",
+                "input": {
+                    "count": 1,
+                    "ingredient": {
+                        "item": "ulvcovm:ulv_robot_arm"
+                    }
                 }
-            }
-        })
+            })
+    }
 
     // Yeta Wrench
     event.remove({ output: ["enderio:yeta_wrench"] })

@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     ]
     const transformer = [
         ["uhv", "darconite", "europium"],
-        ["uev", "necrosiderite", "darconite"],
+        ["uev", "necrosiderite", "darconite"]
     ]
 
     converter.forEach(([tier, mat1, mat2, mat3, eut]) => {
