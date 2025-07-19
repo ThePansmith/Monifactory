@@ -407,6 +407,13 @@ ServerEvents.recipes(event => {
             .duration(100)
             .EUt(480)
 
+        event.recipes.gtceu.chemical_reactor("kubejs:omnic_quantum_flux")
+            .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
+            .inputFluids("gtceu:dragon_breath 500")
+            .itemOutputs("64x kubejs:quantum_flux")
+            .duration(50)
+            .EUt(GTValues.VA[GTValues.EV])
+
         // Rocketry
         event.recipes.gtceu.chemical_reactor("kubejs:chemical_reactor/durene_hm")
             .inputFluids(Fluid.of("gtceu:dimethylbenzene", 1000), Fluid.of("gtceu:chloromethane", 1000))

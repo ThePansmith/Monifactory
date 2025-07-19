@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
             "#gtceu:circuits/uv",
             "gtceu:zpm_field_generator",
             "1x kubejs:quasi_stable_neutron_star",
-            "3x gtceu:gemstone_empowered_gem"
+            "3x minecraft:nether_star"
         )
         .inputFluids("gtceu:omnium 576")
         .itemOutputs("32x kubejs:monic_circuit_board")

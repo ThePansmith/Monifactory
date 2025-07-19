@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
     ], {
         W: "gtceu:tungsten_single_cable",
         C: "#gtceu:circuits/iv",
-        T: "gtceu:restonia_empowered_plate",
+        T: "gtceu:restonia_gem",
         H: "gtceu:iv_atomic_reconstructor",
         E: "gtceu:iv_emitter",
         P: "gtceu:iv_electric_piston",
