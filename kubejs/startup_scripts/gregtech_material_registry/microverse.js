@@ -17,17 +17,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .cableProperties(128, 4, 2, false)
         .formula("Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D");
 
-    event.create("osmiridiumyes")
+    event.create("iridosmine")
         .dust().ore()
-        .iconSet("dull")
-        .components("8x osmium", "2x iridium")
-        .addOreByproducts("osmium", "iridium", "ruthenium")
-
-    event.create("iridosmineyes")
-        .dust().ore()
-        .iconSet("dull")
-        .components("8x iridium", "2x osmium")
-        .addOreByproducts("iridium", "osmium", "rhodium")
+        .color(0x54afff).secondaryColor(0x1b5651).iconSet("metallic")
+        .components("2x osmium", "1x iridium")
+        .addOreByproducts("osmium", "iridium", "rhodium")
 
     event.create("kaemanite")
         .dust().ore()

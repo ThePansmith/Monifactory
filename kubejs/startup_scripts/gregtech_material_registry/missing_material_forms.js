@@ -11,6 +11,7 @@ const $FluidStorageKeys = Java.loadClass("com.gregtechceu.gtceu.api.fluids.store
 const $FluidPipeProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidPipeProperties")
 const $WireProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.WireProperties")
 const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
+const $OreProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty")
 const $FluidBuilder = Java.loadClass("com.gregtechceu.gtceu.api.fluids.FluidBuilder");
 
 let addFluid = (mat, key, temp) => {
@@ -69,4 +70,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     let liquid_sculk_prop = new $FluidProperty();
     liquid_sculk_prop.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder().temperature(310).disableBucket().customStill())
     GTMaterials.Sculk.setProperty($PropertyKey.FLUID, liquid_sculk_prop)
+
+    // Osmiridium Ore (to go with Iridosmine ore)
+    let osmiridium_ore_prop = new $OreProperty();
+    osmiridium_ore_prop.setOreByProducts(GTMaterials.Iridium, GTMaterials.Osmium, GTMaterials.Ruthenium)
+    GTMaterials.Osmiridium.setProperty($PropertyKey.ORE, osmiridium_ore_prop)
 })

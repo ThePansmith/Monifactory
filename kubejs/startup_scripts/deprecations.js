@@ -59,3 +59,13 @@ deprecateBlock("gtceu:basic_microverse_projector", "monilabs:basic_microverse_pr
 deprecateBlock("gtceu:advanced_microverse_projector", "monilabs:advanced_microverse_projector", "Advanced Microverse Projector")
 deprecateBlock("gtceu:advanced_microverse_projector_ii", "monilabs:elite_microverse_projector", "Advanced Microverse Projector II")
 deprecateBlock("gtceu:hyperbolic_microverse_projector", "monilabs:hyperbolic_microverse_projector", "Hyperbolic Microverse Projector")
+
+// Osmiridium/Iridosmine
+deprecateItem("gtceu:raw_iridosmineyes", "gtceu:raw_osmiridium", "Raw Iridosmine")
+deprecateItem("gtceu:raw_osmiridiumyes", "gtceu:raw_iridosmine", "Raw Osmiridium")
+
+deprecateItem("gtceu:iridosmineyes_dust", "gtceu:osmiridium_dust", "Iridosmine Dust")
+deprecateItem("gtceu:osmiridiumyes_dust", "gtceu:iridosmine_dust", "Osmiridium Dust")
+
+deprecateBlock("gtceu:glacio_iridosmineyes_ore", "gtceu:glacio_osmiridium_ore", "Glacio Iridosmine Ore")
+deprecateBlock("gtceu:glacio_osmiridiumyes_ore", "gtceu:glacio_iridosmine_ore", "Glacio Osmiridium Ore")
