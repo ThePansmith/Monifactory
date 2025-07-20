@@ -123,4 +123,18 @@ ServerEvents.recipes(event => {
         .itemOutputs("32x gtceu:duct_tape")
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.autoclave("carbon_fibers_peca")
+        .itemInputs("16x gtceu:carbon_dust")
+        .inputFluids("gtceu:polyethyl_cyanoacrylate 9")
+        .itemOutputs("32x gtceu:carbon_fibers")
+        .duration(37)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.fluid_solidifier("petri_dish_peca")
+        .notConsumable("gtceu:cylinder_casing_mold")
+        .inputFluids("gtceu:polyethyl_cyanoacrylate 9")
+        .itemOutputs("4x gtceu:petri_dish")
+        .duration(0.5 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
 })
