@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
         "BBB",
         " A "
     ], {
-        A: "gtceu:void_block",
+        A: "gtceu:palis_block",
         B: "gtceu:dark_steel_ingot",
         C: "minecraft:book",
         D: "minecraft:diamond"
