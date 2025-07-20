@@ -110,7 +110,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("gtceu:sterilizing_filter_casing", Text.gray(Text.translatable("gtceu.sterilizing_filter_casing.tooltip")))
 
     tooltip.addAdvanced("gtceu:naquadah_reactor", (item, adv, text) => {
-        text.add(1, Text.gray("An reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts"))
+        text.add(1, [Text.gray("A reactor that produces energy from "), Text.gold(Text.translate("item.kubejs.naquadah_fuel_rod")), Text.gray(" decay.")])
         text.add(2, [Text.white("Produces exactly 3 amps of "), Text.red("ZPM"), Text.white(".")])
         text.add(3, rainbowifySingle("Does not overclock!", Math.round(Client.lastNanoTime / 1000000000)))
     })
