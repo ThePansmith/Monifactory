@@ -32,7 +32,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("signalum")
         .ingot().fluid()
-        .color(0xff7f0f).secondaryColor(0xc32e00)
+        .color(0xff6b0f).secondaryColor(0xc32e00)
         .iconSet("magic")
         .blastTemp(4000, "high", GTValues.VA[GTValues.IV], 1400)
         .cableProperties(32768, 1, 0, true)
