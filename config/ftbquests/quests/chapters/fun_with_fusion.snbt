@@ -818,6 +818,11 @@
 				"{moni.quest.3A69EE21B3089929.description2}"
 			]
 			id: "3A69EE21B3089929"
+			rewards: [{
+				id: "3F51DC3B35CA6470"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0C1D0A754607F817"
 				item: "gtceu:normal_optical_pipe"
@@ -917,6 +922,11 @@
 			]
 			icon: "gtceu:research_station"
 			id: "1109CFC5D47FC011"
+			rewards: [{
+				id: "0D93EA62B529457F"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3AD27DA0F09B8C56"

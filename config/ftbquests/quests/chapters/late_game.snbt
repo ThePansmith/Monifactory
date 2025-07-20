@@ -330,7 +330,7 @@
 				{
 					count: 47L
 					id: "078732970112DE64"
-					item: "kubejs:microverse_casing"
+					item: "monilabs:microverse_casing"
 					type: "item"
 				}
 				{
@@ -794,6 +794,11 @@
 			dependencies: ["54C3B1B782FDF57F"]
 			description: ["{moni.quest.2B336FD89B15F98E.description1}"]
 			id: "2B336FD89B15F98E"
+			rewards: [{
+				id: "0954DEB837B61435"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -1227,6 +1232,11 @@
 			]
 			description: ["{moni.quest.0F6B344C265D1FBB.description1}"]
 			id: "0F6B344C265D1FBB"
+			rewards: [{
+				id: "2197DF9CB672D42E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "{moni.quest.0F6B344C265D1FBB.subtitle}"
 			tasks: [{
@@ -1990,7 +2000,7 @@
 			size: 1.75d
 			tasks: [{
 				id: "547C12265211338D"
-				item: "gtceu:elite_microverse_projector"
+				item: "monilabs:elite_microverse_projector"
 				type: "item"
 			}]
 			x: 26.0d
@@ -2629,6 +2639,11 @@
 			]
 			icon: "gtceu:omnium_ingot"
 			id: "61301FBD825F8280"
+			rewards: [{
+				id: "01C5A5720A287196"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4205D04F8EFE2D7D"

@@ -855,7 +855,7 @@
 				{
 					count: 16L
 					id: "17E44DB94862D5B7"
-					item: "kubejs:microverse_casing"
+					item: "monilabs:microverse_casing"
 					type: "item"
 				}
 				{
@@ -1115,6 +1115,11 @@
 				"{moni.quest.798284BA30D818DA.description2}"
 			]
 			id: "798284BA30D818DA"
+			rewards: [{
+				id: "559707AB8A8FF58B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [{
 				id: "12E132ED1EBB8224"
 				item: "kubejs:basic_drilling_kit"

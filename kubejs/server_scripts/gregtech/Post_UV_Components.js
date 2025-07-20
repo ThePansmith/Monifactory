@@ -4,8 +4,8 @@
 
 ServerEvents.recipes(event => {
     const converter = [
-        ["uev", "cable", "darconite", "hyperdegenerate_darconite", "1966080"],
-        ["max", "wire", "monium", "monium", "80000000"],
+        ["uev", "cable", "darconite", "hyperdegenerate_darconite", 1966080],
+        ["max", "wire", "monium", "monium", 80000000],
     ]
     const transformer = [
         ["uhv", "darconite", "europium"],
