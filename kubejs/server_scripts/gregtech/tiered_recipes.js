@@ -147,10 +147,15 @@ function parseRecipe(recipe) {
         let newRecipe = registerEvent.recipes.gtceu[machineName](newRecipeId).duration(duration)
 
         if(newInputItems) for (let i of newInputItems)
-            newRecipe = i.chance === 0 && i.tierChanceBoost === 0
-                ? newRecipe.notConsumable(Item.of(i.id, i.amount))
-                : newRecipe.chancedInput(Item.of(i.id, i.amount), i.chance, i.tierChanceBoost)
-
+            if(i.id.charAt(0) === "#") {
+                newRecipe.itemInputs.apply(newRecipe, newInputItems.map(i => `${i.amount}x ${i.id}`))
+            } else {
+                if(i.chance === 0 && i.tierChanceBoost === 0) {
+                    newRecipe.notConsumable(Item.of(i.id, i.amount))
+                } else {
+                    newRecipe.chancedInput(Item.of(i.id, i.amount), i.chance, i.tierChanceBoost)
+                }
+            }
         if(newOutputItems) for (let i of newOutputItems)
             newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(i.id, i.amount)), i.chance, i.tierChanceBoost)
 
