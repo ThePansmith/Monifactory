@@ -463,6 +463,14 @@ ServerEvents.tags("item", event => {
     event.add("ad_astra:space_resistant_armor", quarkTechArmor)
     event.add("ad_astra:freeze_resistant_armor", quarkTechArmor)
     event.add("ad_astra:heat_resistant_armor", quarkTechArmor)
+
+    // Make Ad Astra doors act as cleanroom doors
+    event.add("gtceu:cleanroom_doors", /^ad_astra:[\w_]+_door/)
+})
+
+ServerEvents.tags("block", event => {
+    // Make Ad Astra doors act as cleanroom doors
+    event.add("gtceu:cleanroom_doors", /^ad_astra:[\w_]+_door/)
 })
 
 ServerEvents.recipes(event => {
