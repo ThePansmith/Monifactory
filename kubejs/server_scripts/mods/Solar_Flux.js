@@ -169,13 +169,13 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:plutonium 144", "gtceu:americium 72")
         .itemInputs("minecraft:glowstone_dust")
         .itemOutputs("2x gtceu:sunnarium_dust")
-        .duration(1800)
+        .duration(300)
         .EUt(GTValues.VHA[GTValues.IV]);
     event.recipes.gtceu.mixer("kubejs:sunnarium_dust_mixer_alt")
         .inputFluids("gtceu:plutonium_241 144", "gtceu:americium 72")
         .itemInputs("minecraft:glowstone_dust")
         .itemOutputs("2x gtceu:sunnarium_dust")
-        .duration(1800)
+        .duration(300)
         .EUt(GTValues.VHA[GTValues.IV]);
 
     event.remove({ id: "gtceu:macerator/macerate_sunnarium_plate" })
