@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
         "SCS",
         "RSR"
     ], {
-        R: "gtceu:restonia_gear",
+        R: "gtceu:restonia_gem",
         S: "gtceu:signalum_plate",
         C: "thermal:upgrade_augment_2"
     })
