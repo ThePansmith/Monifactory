@@ -18,6 +18,9 @@ export type GTJSONRecipeItemIngredient = {
     item: MCIdentifier
     count: number
     nbt: object
+} | {
+    type: "gtceu:circuit"
+    configuration: number
 }
 
 export type GTJSONRecipeItem = {
