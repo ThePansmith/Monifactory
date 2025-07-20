@@ -11,6 +11,8 @@
 /** @typedef {import("../../dx/typings/GTJSONRecipe.d.mts").GTJSONRecipe} GTJSONRecipe */
 /** @typedef {import("../../dx/typings/GTJSONRecipe.d.mts").MCIdentifier} MCIdentifier */
 
+const ExtendedOutputItem = Java.loadClass("com.gregtechceu.gtceu.integration.kjs.recipe.components.ExtendedOutputItem")
+
 /**
  * @type {[id: MCIdentifier, ratio: number][]}
  * Ratio tells how much more efficient a solder is
@@ -46,6 +48,13 @@ function parseRecipe(recipe) {
 
     /** @type {number | null} */
     let circuitNumber = null
+    /** @type {(n: number) => null} */
+    let setCircuitNumber = n => {
+        if (circuitNumber !== null)
+            throw new Error("Recipe has multiple circuit numbers???")
+        circuitNumber = n
+        return null
+    }
 
     // Extract inputs and outputs data
     let [newInputItems, newOutputItems] = [recipe.inputs?.item, recipe.outputs?.item].map(items =>
@@ -53,20 +62,19 @@ function parseRecipe(recipe) {
             let c = i.content
             switch(c.type) {
             case "gtceu:circuit":
-                if (circuitNumber !== null)
-                    throw new Error("Recipe has multiple circuit numbers???")
-                circuitNumber = c.configuration
-                return null
+                return setCircuitNumber(c.configuration)
             case "gtceu:sized":
-                if (i.chance !== i.maxChance || i.tierChanceBoost)
-                    throw new Error("Chanced recipes are not yet supported")
                 if (!("type" in c.ingredient)) {
                     let ing = c.ingredient
                     return {
                         id: "tag" in ing ? "#" + ing.tag : ing.item,
-                        amount: c.count
+                        amount: c.count,
+                        chance: i.chance,
+                        tierChanceBoost: i.tierChanceBoost,
                     }
                 }
+                if (c.ingredient.type === "gtceu:circuit")
+                    return setCircuitNumber(c.ingredient.configuration)
                 // We do want to throw an error here
                 // eslint-disable-next-line no-fallthrough
             default:
@@ -78,14 +86,18 @@ function parseRecipe(recipe) {
     let [newInputFluids, newOutputFluids] = [recipe.inputs?.fluid, recipe.outputs?.fluid].map(items =>
         items && items.map(i => {
             if (i.chance !== i.maxChance || i.tierChanceBoost)
-                throw new Error("Chanced recipes are not yet supported")
+                throw new Error("Chanced fluid recipes are not yet supported")
             let c = i.content
             let [val] = c.value
+            if (val === undefined)
+                return undefined
             return {
-                id: "tag" in val ? "gtceu:" + val.tag.split(":", 2)[1] : val.fluid,
+                id: "tag" in val
+                    ? "gtceu:" + val.tag.split(":", 2)[1]
+                    : val.fluid,
                 amount: c.amount
             }
-        })
+        }).filter(Boolean)
     )
 
     let eut = recipe.tickInputs?.eu?.length
@@ -133,13 +145,27 @@ function parseRecipe(recipe) {
     let register = (registerEvent, newRecipeId, machineName) => {
         /** @type {Internal.GTRecipeSchema$GTRecipeJS} */
         let newRecipe = registerEvent.recipes.gtceu[machineName](newRecipeId).duration(duration)
+
+        if(newInputItems) for (let i of newInputItems)
+            if(i.id.charAt(0) === "#") {
+                // @ts-ignore
+                newRecipe.itemInputs(`${i.amount}x ${i.id}`)
+            } else {
+                if(i.chance === 0 && i.tierChanceBoost === 0) {
+                    // @ts-ignore
+                    newRecipe.notConsumable(Item.of(i.id, i.amount))
+                } else {
+                    // @ts-ignore
+                    newRecipe.chancedInput(Item.of(i.id, i.amount), i.chance, i.tierChanceBoost)
+                }
+            }
+        if(newOutputItems) for (let i of newOutputItems)
+            // @ts-ignore
+            newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(i.id, i.amount)), i.chance, i.tierChanceBoost)
+
         // Polyfilled spread operator 🙏
-        if(newInputItems)
-            newRecipe = newRecipe.itemInputs.apply(newRecipe, newInputItems.map(i => `${i.amount}x ${i.id}`))
         if(newInputFluids)
             newRecipe = newRecipe.inputFluids.apply(newRecipe, newInputFluids.map(i => `${i.id} ${i.amount}`))
-        if(newOutputItems)
-            newRecipe = newRecipe.itemOutputs.apply(newRecipe, newOutputItems.map(i => `${i.amount}x ${i.id}`))
         if(newOutputFluids)
             newRecipe = newRecipe.outputFluids.apply(newRecipe, newOutputFluids.map(i => `${i.id} ${i.amount}`))
         if(circuitNumber !== null)
@@ -162,6 +188,7 @@ function parseRecipe(recipe) {
             let researchCondition = conditions.find(cond => cond.type === "research")
             if(researchCondition) {
                 let research = researchCondition.research[0]
+                // @ts-ignore
                 newRecipe = newRecipe.researchWithoutRecipe(research.researchId, research.dataItem.id)
             }
         }
@@ -281,7 +308,8 @@ ServerEvents.recipes(event => {
                 if (e instanceof Error) {
                     console.log(
                         "Failed to generate recipe for " + javaRecipe.getId(),
-                        `${e.name}: ${e.message}`
+                        `${e.name}: ${e.message}`,
+                        javaRecipe.json.toString(),
                     )
                 } else throw e
             }
