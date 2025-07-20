@@ -46,6 +46,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
 
+    // Small Springs for Power Transformer recipes
+    GTMaterials.RedAlloy.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
+    GTMaterials.Europium.addFlags(GTMaterialFlags.GENERATE_SPRING_SMALL)
+
     // Gears for Thermal Expansion
     GTMaterials.Nickel.addFlags(GTMaterialFlags.GENERATE_GEAR)
     GTMaterials.Copper.addFlags(GTMaterialFlags.GENERATE_GEAR)

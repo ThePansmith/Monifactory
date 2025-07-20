@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
         .cableProperties(GTValues.V[GTValues.UEV], 1, 32, false)
-        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING)
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_SPRING_SMALL)
 
     // UEV moni + gt Supercon
     event.create("hyperdegenerate_darconite")
