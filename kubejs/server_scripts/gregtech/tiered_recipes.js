@@ -148,15 +148,19 @@ function parseRecipe(recipe) {
 
         if(newInputItems) for (let i of newInputItems)
             if(i.id.charAt(0) === "#") {
-                newRecipe.itemInputs.apply(newRecipe, newInputItems.map(i => `${i.amount}x ${i.id}`))
+                // @ts-ignore
+                newRecipe.itemInputs(`${i.amount}x ${i.id}`)
             } else {
                 if(i.chance === 0 && i.tierChanceBoost === 0) {
+                    // @ts-ignore
                     newRecipe.notConsumable(Item.of(i.id, i.amount))
                 } else {
+                    // @ts-ignore
                     newRecipe.chancedInput(Item.of(i.id, i.amount), i.chance, i.tierChanceBoost)
                 }
             }
         if(newOutputItems) for (let i of newOutputItems)
+            // @ts-ignore
             newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(i.id, i.amount)), i.chance, i.tierChanceBoost)
 
         // Polyfilled spread operator 🙏
@@ -184,6 +188,7 @@ function parseRecipe(recipe) {
             let researchCondition = conditions.find(cond => cond.type === "research")
             if(researchCondition) {
                 let research = researchCondition.research[0]
+                // @ts-ignore
                 newRecipe = newRecipe.researchWithoutRecipe(research.researchId, research.dataItem.id)
             }
         }
