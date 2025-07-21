@@ -86,7 +86,6 @@ global.itemNukeList = [
     "enderio:stirling_generator",
     "enderio:vapor_of_levity_bucket",
     "enderio:vibrant_alloy_grinding_ball",
-    "enderio:withering_powder",
     /^enderio:painted_/,
     /^enderio:powdered_/,
 
