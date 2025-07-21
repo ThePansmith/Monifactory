@@ -124,7 +124,6 @@ ItemEvents.tooltip(tooltip => {
         ["implosion_collider", "implosion_compressor"],
         ["quintessence_infuser", "quintessence_infuser"],
         ["dimensional_superassembler", "assembly_line"],
-        ["universal_crystallizer", "universal_crystallizer"],
         ["sculk_biocharger", "discharger"],
         ["simulation_quantumcomputer", "simulation_supercomputer"],
         ["loot_quantumfabricator", "loot_superfabricator"],
@@ -160,6 +159,10 @@ ItemEvents.tooltip(tooltip => {
         text.add(4, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.3"))
         text.add(5, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.4"))
     })
+
+    tooltip.addAdvanced("kubejs:bathyal_energy_core", (item, adv, text) => text.add(1, Text.of(String(item.damageValue) + " / 2000000 RF")))
+    tooltip.addAdvanced("kubejs:abyssal_energy_core", (item, adv, text) => text.add(1, Text.of(String(item.damageValue) + " / 4000000 RF")))
+    tooltip.addAdvanced("kubejs:hadal_energy_core", (item, adv, text) => text.add(1, Text.of(String(item.damageValue) + " / 8000000 RF")))
 
     // Parallel hatches
     tooltip.add("gtceu:uhv_uhv_parallel_hatch", Text.translatable("gtceu.giga_parallel_hatch.desc"))

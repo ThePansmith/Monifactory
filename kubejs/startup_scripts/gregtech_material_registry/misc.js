@@ -69,14 +69,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gem()
         .color(0xA60000)
         .iconSet(GTMaterialIconSet.RUBY)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
         .ignoredTagPrefixes([
             TagPrefix.dust,
             TagPrefix.dustSmall,
             TagPrefix.dustTiny,
             TagPrefix.gemExquisite,
             TagPrefix.gemFlawless,
-            TagPrefix.plate,
             TagPrefix.rod,
         ])
 
@@ -84,14 +82,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gem()
         .color(0xEDE6FF)
         .iconSet(GTMaterialIconSet.GEM_VERTICAL)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
         .ignoredTagPrefixes([
             TagPrefix.dust,
             TagPrefix.dustSmall,
             TagPrefix.dustTiny,
             TagPrefix.gemExquisite,
             TagPrefix.gemFlawless,
-            TagPrefix.plate,
             TagPrefix.rod,
         ])
 
@@ -99,14 +95,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gem()
         .color(0x0F0F0F)
         .iconSet(GTMaterialIconSet.ROUGH)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
         .ignoredTagPrefixes([
             TagPrefix.dust,
             TagPrefix.dustSmall,
             TagPrefix.dustTiny,
             TagPrefix.gemExquisite,
             TagPrefix.gemFlawless,
-            TagPrefix.plate,
             TagPrefix.rod,
         ])
 
@@ -114,14 +108,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gem()
         .color(0x1C1C89)
         .iconSet(GTMaterialIconSet.LAPIS)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
         .ignoredTagPrefixes([
             TagPrefix.dust,
             TagPrefix.dustSmall,
             TagPrefix.dustTiny,
             TagPrefix.gemExquisite,
             TagPrefix.gemFlawless,
-            TagPrefix.plate,
             TagPrefix.rod,
         ])
 
@@ -129,14 +121,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gem()
         .color(0x8B8DF3)
         .iconSet(GTMaterialIconSet.FINE)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
         .ignoredTagPrefixes([
             TagPrefix.dust,
             TagPrefix.dustSmall,
             TagPrefix.dustTiny,
             TagPrefix.gemExquisite,
             TagPrefix.gemFlawless,
-            TagPrefix.plate,
             TagPrefix.rod,
         ])
 
@@ -144,14 +134,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gem()
         .color(0x09E103)
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
         .ignoredTagPrefixes([
             TagPrefix.dust,
             TagPrefix.dustSmall,
             TagPrefix.dustTiny,
             TagPrefix.gemExquisite,
             TagPrefix.gemFlawless,
-            TagPrefix.plate,
             TagPrefix.rod,
         ])
 
@@ -160,112 +148,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x0F0F0F)
         .iconSet(GTMaterialIconSet.QUARTZ)
 })
-
-
-// Actually Additions empowered crystals
-GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("restonia_empowered")
-        .gem().fluid()
-        .color(0xA60000)
-        .iconSet(GTMaterialIconSet.RUBY)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
-        .ignoredTagPrefixes([
-            TagPrefix.dust,
-            TagPrefix.dustSmall,
-            TagPrefix.dustTiny,
-            TagPrefix.gemExquisite,
-            TagPrefix.gemFlawless,
-            TagPrefix.rod,
-        ])
-
-    event.create("enori_empowered")
-        .gem().fluid()
-        .color(0xEDE6FF)
-        .iconSet(GTMaterialIconSet.GEM_VERTICAL)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
-        .ignoredTagPrefixes([
-            TagPrefix.dust,
-            TagPrefix.dustSmall,
-            TagPrefix.dustTiny,
-            TagPrefix.gemExquisite,
-            TagPrefix.gemFlawless,
-            TagPrefix.rod,
-        ])
-
-    event.create("void_empowered")
-        .gem().fluid()
-        .color(0x0F0F0F)
-        .iconSet(GTMaterialIconSet.ROUGH)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
-        .ignoredTagPrefixes([
-            TagPrefix.dust,
-            TagPrefix.dustSmall,
-            TagPrefix.dustTiny,
-            TagPrefix.gemExquisite,
-            TagPrefix.gemFlawless,
-            TagPrefix.rod,
-        ])
-
-    event.create("palis_empowered")
-        .gem().fluid()
-        .color(0x1C1C89)
-        .iconSet(GTMaterialIconSet.LAPIS)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
-        .ignoredTagPrefixes([
-            TagPrefix.dust,
-            TagPrefix.dustSmall,
-            TagPrefix.dustTiny,
-            TagPrefix.gemExquisite,
-            TagPrefix.gemFlawless,
-            TagPrefix.rod,
-        ])
-
-    event.create("diamatine_empowered")
-        .gem().fluid()
-        .color(0x8B8DF3)
-        .iconSet(GTMaterialIconSet.FINE)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
-        .ignoredTagPrefixes([
-            TagPrefix.dust,
-            TagPrefix.dustSmall,
-            TagPrefix.dustTiny,
-            TagPrefix.gemExquisite,
-            TagPrefix.gemFlawless,
-            TagPrefix.rod,
-        ])
-
-    event.create("emeradic_empowered")
-        .gem().fluid()
-        .color(0x09E103)
-        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
-        .flags(GTMaterialFlags.GENERATE_GEAR)
-        .ignoredTagPrefixes([
-            TagPrefix.dust,
-            TagPrefix.dustSmall,
-            TagPrefix.dustTiny,
-            TagPrefix.gemExquisite,
-            TagPrefix.gemFlawless,
-            TagPrefix.rod,
-        ])
-})
-
-// Empowered Gemstone
-GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("gemstone_empowered")
-        .gem()
-        .color(0x0066ff).secondaryColor(0x000099) // Rainbow Effect?
-        .iconSet(GTMaterialIconSet.DIAMOND)
-        .components("1x restonia_empowered", "1x enori_empowered", "1x void_empowered", "1x palis_empowered", "1x diamatine_empowered", "1x emeradic_empowered")
-        .ignoredTagPrefixes([
-            TagPrefix.dust,
-            TagPrefix.dustSmall,
-            TagPrefix.dustTiny,
-            TagPrefix.gemExquisite,
-            TagPrefix.gemFlawless,
-            TagPrefix.rod,
-        ])
-})
-
 
 // Sunnarium
 GTCEuStartupEvents.registry("gtceu:material", event => {

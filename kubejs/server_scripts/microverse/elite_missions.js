@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
                 "16x kubejs:stabilized_curium",
                 "kubejs:microversal_alchemy_kit",
                 "8x gtceu:mythril_ingot",
-                "4x gtceu:void_empowered_block",
+                "4x gtceu:void_block",
             )
             .damageRate(4)
             .itemOutputs(

@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         .chancedInput("kubejs:warp_engine", 2100, -700)
         .chancedInput("kubejs:advanced_micro_miner_guidance_system", 3600, -1800)
         .chancedInput("kubejs:enderium_micro_miner_core", 1800, -600)
-        .chancedInput("kubejs:bathyal_energy_core", 1200, -400)
+        .chancedInput(Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), 1200, -400)
 
     repairing(8, ["crystal_matrix", "rhodium_plated_palladium", "duranium"])
         .EUt(GTValues.VA[GTValues.ZPM])
