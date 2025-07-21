@@ -818,6 +818,11 @@
 				"{moni.quest.3A69EE21B3089929.description2}"
 			]
 			id: "3A69EE21B3089929"
+			rewards: [{
+				id: "3F51DC3B35CA6470"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0C1D0A754607F817"
 				item: "gtceu:normal_optical_pipe"
@@ -882,6 +887,23 @@
 					item: "gtceu:computation_transmitter_hatch"
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "3E264A85174F9B37"
+					item: "gtceu:hpca_computation_component"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3D46E7A04715342E"
+					item: "gtceu:hpca_active_cooler_component"
+					type: "item"
+				}
+				{
+					id: "1B8F146BECFFFC5D"
+					item: "gtceu:hpca_empty_component"
+					type: "item"
+				}
 			]
 			title: "{moni.quest.37BE175EEC2ABD59.title}"
 			x: -2.5d
@@ -900,6 +922,11 @@
 			]
 			icon: "gtceu:research_station"
 			id: "1109CFC5D47FC011"
+			rewards: [{
+				id: "0D93EA62B529457F"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3AD27DA0F09B8C56"
