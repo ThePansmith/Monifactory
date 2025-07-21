@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
         "TNT",
         "LTL"
     ], {
-        L: "gtceu:void_empowered_block",
+        L: "gtceu:void_block",
         N: "kubejs:warp_core",
         T: Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT()
     })
@@ -95,9 +95,9 @@ ServerEvents.recipes(event => {
     ], {
         C: "#gtceu:circuits/luv",
         H: "kubejs:warp_controller",
-        M: Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(),
+        M: Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(),
         F: "extendedcrafting:the_ultimate_catalyst",
-        S: "gtceu:void_empowered_block"
+        S: "gtceu:double_naquadria_plate"
     })
 
     // Warp engine

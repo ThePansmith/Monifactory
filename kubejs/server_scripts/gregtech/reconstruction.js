@@ -34,12 +34,6 @@ ServerEvents.recipes(event => {
         ["minecraft:sweet_berries", "minecraft:glow_berries", GTValues.VA[GTValues.LV], "glow_berries"],
     ]
 
-    const crystals = ["enori", "void", "palis", "diamatine", "restonia", "emeradic"]
-    crystals.forEach(crystal => {
-        event.remove({ id: `gtceu:shaped/gear_${crystal}` })
-        event.remove({ id: `gtceu:shaped/gear_${crystal}_empowered` })
-    })
-
     // Black Quartz
     event.recipes.gtceu.electrolyzer("kubejs:black_quartz_dust")
         .itemInputs("4x gtceu:quartzite_dust")
@@ -119,16 +113,6 @@ ServerEvents.recipes(event => {
             C: `#gtceu:circuits/${tier}`,
             M: `gtceu:${tier}_electric_motor`
         }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
-    })
-
-    // Crystal Gears
-    crystals.forEach(crystal => {
-        event.recipes.gtceu.extruder(`kubejs:${crystal}_gear`)
-            .itemInputs(`4x gtceu:${crystal}_gem`)
-            .itemOutputs(`gtceu:${crystal}_gear`)
-            .notConsumable("gtceu:gear_extruder_mold")
-            .duration(80)
-            .EUt(56)
     })
 
     // Flower conversion convenience recipes

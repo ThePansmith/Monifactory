@@ -793,10 +793,7 @@
 			y: -6.75d
 		}
 		{
-			dependencies: [
-				"060A5766B021FC77"
-				"2343B68110805282"
-			]
+			dependencies: ["060A5766B021FC77"]
 			description: ["{moni.quest.434142F777A2CCBE.description1}"]
 			id: "434142F777A2CCBE"
 			shape: "hexagon"
@@ -806,20 +803,6 @@
 				type: "item"
 			}]
 			x: 50.0d
-			y: -22.0d
-		}
-		{
-			dependencies: ["49C8716030809478"]
-			description: ["{moni.quest.2343B68110805282.description1}"]
-			hide_dependency_lines: true
-			id: "2343B68110805282"
-			shape: "hexagon"
-			tasks: [{
-				id: "50C7192DF852960F"
-				item: "gtceu:gemstone_empowered_gem"
-				type: "item"
-			}]
-			x: 48.5d
 			y: -22.0d
 		}
 		{

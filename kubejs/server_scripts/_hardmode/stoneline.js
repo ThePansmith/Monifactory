@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         // Dioxygen Difluoride
         event.recipes.gtceu.large_chemical_reactor("dioxygen_difluoride")
             .inputFluids("gtceu:oxygen 2000", "gtceu:fluorine 2000")
-            .notConsumable("gtceu:void_empowered_gem")
+            .notConsumable("gtceu:enori_gem")
             .outputFluids("gtceu:dioxygen_difluoride 1000")
             .duration(100).EUt(GTValues.VA[GTValues.HV])
 
