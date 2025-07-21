@@ -124,7 +124,6 @@ ItemEvents.tooltip(tooltip => {
         "implosion_collider",
         "quintessence_infuser",
         "dimensional_superassembler",
-        "universal_crystallizer",
         "sculk_biocharger",
         "simulation_quantumcomputer",
         "loot_quantumfabricator"

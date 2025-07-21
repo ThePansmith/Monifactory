@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.combination(
         "kubejs:activated_netherite_scrap",
-        "kubejs:reactive_netherite_cluster", ["4x gtceu:activated_carbon_dust", "4x gtceu:void_empowered_plate"],
+        "kubejs:reactive_netherite_cluster", ["4x gtceu:activated_carbon_dust", "4x gtceu:void_gem"],
         32000000, 1600000
     )
 
