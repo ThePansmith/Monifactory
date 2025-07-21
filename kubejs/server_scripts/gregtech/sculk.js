@@ -4,7 +4,7 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.autoclave("echo_shard")
         .inputFluids("gtceu:sculk 144")
-        .itemInputs("1x gtceu:silicon_dioxide_dust")
+        .itemInputs("1x gtceu:quartzite_dust")
         .itemOutputs("1x minecraft:echo_shard")
         .duration(20 * 5)
         .EUt(GTValues.VA[GTValues.EV])
