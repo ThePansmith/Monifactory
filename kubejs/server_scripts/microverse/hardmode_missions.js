@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:osmium_dust")
             .damageRate(3)
             .itemOutputs(
-                "32x gtceu:raw_osmiridiumyes",
+                "32x gtceu:raw_iridosmine",
             )
             .requiredMicroverse(3) // Shattered
     })
@@ -236,7 +236,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:iridium_dust")
             .damageRate(3)
             .itemOutputs(
-                "32x gtceu:raw_iridosmineyes",
+                "32x gtceu:raw_osmiridium",
             )
             .requiredMicroverse(3) // Shattered
     })

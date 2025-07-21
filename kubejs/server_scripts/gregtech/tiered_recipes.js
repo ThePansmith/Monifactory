@@ -282,6 +282,30 @@ function generateAlternatives(event, javaRecipe) {
         }, 4, 2, 16)
         r.register(event, recipeName + "/complex_smd", machineName)
     }
+
+    // Ethyl Cyanoacrylate is Krazy Glue
+    if(recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+        i.content.value.some(v => "tag" in v
+            ? v.tag === "forge:glue"
+            : v.fluid === "gtceu:glue"
+        )
+    )) {
+        let r = parseRecipe(recipe)
+        r.useMultiplier(() => {
+            // Replace all old solder with better one
+            for (let inp of r.newInputFluids) {
+                if (inp.id !== "gtceu:glue") continue
+                inp.id = "gtceu:ethyl_cyanoacrylate"
+                inp.amount /= 4
+            }
+        }, 4, 2)
+        r.register(
+            event,
+            recipeName + "/krazy_glue",
+            machineName,
+        )
+    }
+
 }
 
 ServerEvents.recipes(event => {

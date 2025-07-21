@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 
     const Cards = [
         ["item", "gtceu:pulsating_alloy_plate"],
-        ["fluid", "gtceu:iron_plate"],
+        ["fluid", "gtceu:lazurite_plate"],
         ["energy", "gtceu:gold_plate"],
         ["redstone", "gtceu:red_alloy_plate"]
     ]
