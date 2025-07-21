@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     ], {
         L: "gtceu:void_block",
         N: "kubejs:warp_core",
-        T: "kubejs:abyssal_energy_core"
+        T: Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT()
     })
 
     // Warp Controller
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
     ], {
         C: "#gtceu:circuits/luv",
         H: "kubejs:warp_controller",
-        M: "kubejs:hadal_energy_core",
+        M: Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(),
         F: "extendedcrafting:the_ultimate_catalyst",
         S: "gtceu:double_naquadria_plate"
     })
@@ -308,7 +308,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             "8x ae2:singularity",
             "4x gtceu:gravi_star",
-            "kubejs:hadal_energy_core",
+            Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(),
             "gtceu:zpm_field_generator",
             "12x redstone_arsenal:flux_plating",
             "16x gtceu:enderium_foil",

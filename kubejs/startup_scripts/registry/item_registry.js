@@ -391,14 +391,33 @@ StartupEvents.registry("item", event => {
 
     // Sculk Items
     event.create("warden_horn")
-    event.create("sculk_core")
-    event.create("bathyal_energy_core")
-    event.create("abyssal_energy_core")
-    event.create("hadal_energy_core")
     event.create("dischargement_core")
     event.create("warden_heart")
     event.create("hadal_shard")
-
+    const energyCores = [
+        ["bathyal", 2000000], // If changing values remember to also change tooltips
+        ["abyssal", 4000000],
+        ["hadal", 8000000]
+    ]
+    for (const [core, val] of energyCores) {
+        let capacity = val
+        event.create(`${core}_energy_core`)
+            .attachCapability(CapabilityBuilder.ENERGY.customItemStack()
+                .canReceive(i => true)
+                .getEnergyStored(i => i.damageValue)
+                .getMaxEnergyStored(i => capacity)
+                .receiveEnergy((item, amount, sim) => {
+                    let energy = item.damageValue
+                    let recieved = Math.min(capacity - energy, amount)
+                    if (!sim) {item.damageValue += recieved}
+                    return recieved
+                })
+            )
+            .maxStackSize(1)
+            .barWidth(i => i.damageValue ? i.damageValue / capacity * 13 : 0)
+            .barColor(i => Color.RED)
+        event.create(`empty_${core}_energy_core`).texture(`kubejs:item/${core}_energy_core`)
+    }
 
     // Nethline intermediate products
     event.create("dusty_netherite_cluster").texture("kubejs:item/netherite/dusty_netherite_cluster")

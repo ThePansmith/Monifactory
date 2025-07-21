@@ -83,7 +83,7 @@
     "gtceu.multiblock.discharger.description": "§7Discharges a massive amount of energy to perform recipes",
     "block.gtceu.sculk_biocharger": "Sculk Biocharger",
     "gtceu.charger": "Advanced Sculk Charging",
-    "gtceu.multiblock.sculk_biocharger.description": "§7A Balance Charger, capable of both Charging and Discharging",
+    "gtceu.multiblock.sculk_biocharger.description": "§7Capable of discharging at peak efficiency",
     "block.gtceu.implosion_collider": "Implosion Collider",
     "gtceu.multiblock.implosion_collider.description": "§7Capable of smashing things together even faster than before.",
     "block.gtceu.subatomic_digital_assembler": "Subatomic Digital Assembler",

@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.discharger("amalgamated_sculk")
-        .itemInputs("kubejs:experience_saturated_microstructure", "kubejs:hadal_energy_core")
+        .itemInputs("kubejs:experience_saturated_microstructure", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT())
         .inputFluids("kubejs:hadal_sculk")
         .itemOutputs("kubejs:amalgamated_sculk")
         .duration(10)
