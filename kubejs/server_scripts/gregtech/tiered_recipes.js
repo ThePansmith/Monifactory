@@ -306,6 +306,29 @@ function generateAlternatives(event, javaRecipe) {
         )
     }
 
+    // Oxalic Acid etchant
+    if(recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+        i.content.value.some(v => "tag" in v
+            ? v.tag === "forge:iron_iii_chloride"
+            : v.fluid === "gtceu:iron_iii_chloride"
+        ) && recipeName.match(/circuit_board_iron3$/)
+    )) {
+        let r = parseRecipe(recipe)
+        r.useMultiplier(() => {
+            // Replace all old solder with better one
+            for (let inp of r.newInputFluids) {
+                if (inp.id !== "gtceu:iron_iii_chloride") continue
+                inp.id = "gtceu:oxalic_acid_solution"
+                inp.amount /= 2
+            }
+        }, 2, 2)
+        r.register(
+            event,
+            recipeName.replace("iron3", "oxalic"),
+            machineName,
+        )
+    }
+
 }
 
 ServerEvents.recipes(event => {
