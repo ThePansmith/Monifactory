@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.mixer("experience_concentrate")
-        .itemInputs("3x gtceu:wither_bone_dust")
+        .itemInputs("3x enderio:withering_powder")
         .inputFluids("enderio:xp_juice 1500", "gtceu:bio_diesel")
         .outputFluids("kubejs:experience_concentrate")
         .duration(100)

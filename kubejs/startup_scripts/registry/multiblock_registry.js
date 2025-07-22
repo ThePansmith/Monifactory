@@ -108,8 +108,8 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSound(GTSoundEntries.ELECTROLYZER)
 
     // Recipe types for coremod multis
-    MoniRecipeTypes.createPrismaCRecipeType("chromatic_processing")
-    MoniRecipeTypes.createPrismaCRecipeType("chromatic_transcendence")
+    // MoniRecipeTypes.createPrismaCRecipeType("chromatic_processing")
+    // MoniRecipeTypes.createPrismaCRecipeType("chromatic_transcendence")
 
     event.create("omnic_synthesis")
         .category("multiblock")
