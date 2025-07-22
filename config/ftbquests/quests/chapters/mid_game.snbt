@@ -3162,6 +3162,49 @@
 			x: 10.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["785C6332FC7A07A5"]
+			description: [
+				"{moni.quest.63C3077124BC81FD.description1}"
+				""
+				"{moni.quest.63C3077124BC81FD.description2}"
+				""
+				"{moni.quest.63C3077124BC81FD.description3}"
+			]
+			id: "63C3077124BC81FD"
+			tasks: [
+				{
+					id: "46D85CCD66919277"
+					item: "gtceu:coal_fly_ash_dust"
+					type: "item"
+				}
+				{
+					id: "1B19BD8698E6BFD0"
+					item: "gtceu:germanium_dust"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.63C3077124BC81FD.title}"
+			x: 9.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["63C3077124BC81FD"]
+			description: [
+				"{moni.quest.70FD95AEA44548B0.description1}"
+				""
+				"{moni.quest.70FD95AEA44548B0.description2}"
+			]
+			id: "333D947E71179C20"
+			tasks: [{
+				id: "70FD95AEA44548B0"
+				item: "gtceu:advanced_soldering_alloy_bucket"
+				type: "item"
+			}]
+			title: "{moni.quest.70FD95AEA44548B0.title}"
+			x: 8.25d
+			y: 12.5d
+		}
 	]
 	title: "{moni.chapter.7D825FFA33DC85A7.title}"
 }
