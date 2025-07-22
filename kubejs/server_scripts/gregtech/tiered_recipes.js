@@ -21,7 +21,7 @@ const solders_and_ratios = [
     // NO TIN
     ["gtceu:soldering_alloy", 1],           // Tier 0
     ["gtceu:advanced_soldering_alloy", 2],  // Tier 1
-    ["gtceu:bio_soldering_alloy", 4],       // Tier 2
+    ["gtceu:living_soldering_alloy", 4],       // Tier 2
 ]
 
 /**
