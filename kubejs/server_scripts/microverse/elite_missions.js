@@ -8,11 +8,11 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "16x kubejs:stabilized_americium",
                 "kubejs:microversal_alchemy_kit",
-                "4x gtceu:uhv_electric_pump",
+                "1x gtceu:uhv_electric_pump",
                 "8x kubejs:shattered_star_data"
             )
             .damageRate(4)
-            .itemOutputs("32x kubejs:stabilized_einsteinium")
+            .itemOutputs("32x kubejs:stabilized_berkelium")
             .requiredMicroverse(1) // Normal
     })
 

@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
         .duration(10)
 
     event.recipes.gtceu.discharger("kubejs:empty_abyssal_energy_core")
-        .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:tritanium_plate", "8x gtceu:naquadah_alloy_bolt", "kubejs:stabilized_einsteinium", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
+        .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:tritanium_plate", "8x gtceu:naquadah_alloy_bolt", "kubejs:stabilized_californium", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
         .inputFluids("gtceu:advanced_soldering_alloy 576")
         .itemOutputs("kubejs:empty_abyssal_energy_core")
         .duration(10)

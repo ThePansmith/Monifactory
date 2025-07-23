@@ -241,7 +241,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:californium_250", "§eCf²⁵⁰");
     tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
     tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
-    tooltip.add("nuclearcraft:einsteinium_252", "§eEs²⁵²");
 
     tooltip.addAdvanced(["/^kubejs:.+infinity_dust_block$/", "kubejs:infinity_dust_block"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.infinity_dust_block.tooltip"))

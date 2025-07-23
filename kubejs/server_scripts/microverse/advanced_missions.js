@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
             .damageRate(4)
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "16x kubejs:stabilized_einsteinium",
+                "16x kubejs:stabilized_californium",
             )
             .requiredMicroverse(1) // Normal
     })
