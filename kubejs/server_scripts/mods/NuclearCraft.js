@@ -3,14 +3,6 @@
  * NuclearCraft configuration
  */
 
-ServerEvents.recipes(event => {
-
-    // HUGE REWORK NUCLEARCRAFT
-    event.remove({ output: ["nuclearcraft:supercooler", "nuclearcraft:rock_crusher", "nuclearcraft:decay_hastener", "nuclearcraft:irradiator", "nuclearcraft:nuclear_furnace", "nuclearcraft:extractor", "nuclearcraft:electrolyzer", "nuclearcraft:pressurizer", "nuclearcraft:alloy_smelter", "nuclearcraft:centrifuge", "nuclearcraft:manufactory", "nuclearcraft:gas_scrubber", "nuclearcraft:fluid_enricher", "nuclearcraft:isotope_separator", "nuclearcraft:fluid_infuser", "nuclearcraft:chemical_reactor", "nuclearcraft:analyzer", "nuclearcraft:ingot_former", "nuclearcraft:pump", "nuclearcraft:fuel_reprocessor", "nuclearcraft:leacher", "nuclearcraft:crystallizer", "nuclearcraft:assembler", "nuclearcraft:steam_turbine", "nuclearcraft:melter"] })
-    event.remove({ output: ["nuclearcraft:nitrogen_collector", "nuclearcraft:compact_nitrogen_collector", "nuclearcraft:lava_collector", "nuclearcraft:dense_nitrogen_collector", "nuclearcraft:compact_helium_collector", "nuclearcraft:helium_collector", "nuclearcraft:dense_helium_collector"] })
-    event.remove({ output: ["nuclearcraft:foursmore", "nuclearcraft:evenmoresmore", "nuclearcraft:moresmore", "nuclearcraft:smore"] })
-})
-
 // Live Fuel decomp
 // Could also use this to change how these fuels are created?
 ServerEvents.recipes(event => {
@@ -346,47 +338,6 @@ ServerEvents.recipes(event => {
         M: "nuclearcraft:medium",
         P: "#forge:plastic_plates",
         D: "nuclearcraft:plate_du"
-    })
-
-    event.remove({
-        output: [
-            "nuclearcraft:motor",
-            "nuclearcraft:plate_extreme",
-            "nuclearcraft:actuator",
-            "nuclearcraft:tough_helmet",
-            "nuclearcraft:tough_chest",
-            "nuclearcraft:tough_pants",
-            "nuclearcraft:tough_boots",
-            "nuclearcraft:solar_panel_basic",
-            "nuclearcraft:solar_panel_advanced",
-            "nuclearcraft:solar_panel_du",
-            "nuclearcraft:solar_panel_elite",
-            "nuclearcraft:basic_voltaic_pile",
-            "nuclearcraft:elite_voltaic_pile",
-            "nuclearcraft:advanced_voltaic_pile",
-            "nuclearcraft:du_voltaic_pile",
-            "nuclearcraft:basic_storage_container",
-            "nuclearcraft:elite_storage_container",
-            "nuclearcraft:advanced_storage_container",
-            "nuclearcraft:du_storage_container",
-            "nuclearcraft:empty_frame",
-            "nuclearcraft:dps",
-            "nuclearcraft:rad_x",
-            "nuclearcraft:servo",
-            "nuclearcraft:bscco_electromagnet",
-            "nuclearcraft:bscco_rf_amplifier",
-            "nuclearcraft:niobium_tin_electromagnet",
-            "nuclearcraft:niobium_tin_rf_amplifier",
-            "nuclearcraft:lithium_ion_cell",
-            "nuclearcraft:basic_lithium_ion_battery",
-            "nuclearcraft:advanced_lithium_ion_battery",
-            "nuclearcraft:du_lithium_ion_battery",
-            "nuclearcraft:elite_lithium_ion_battery",
-            "nuclearcraft:basic_barrel",
-            "nuclearcraft:elite_barrel",
-            "nuclearcraft:advanced_barrel",
-            "nuclearcraft:du_barrel"
-        ]
     })
 
     // Fix fission boiling recipe
