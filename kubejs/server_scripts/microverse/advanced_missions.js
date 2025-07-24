@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
-            .itemInputs("32x kubejs:stabilized_plutonium")
+            .itemInputs("32x kubejs:stabilized_americium")
             .itemInputs("kubejs:microversal_alchemy_kit")
             .itemInputs("32x kubejs:wither_realm_data")
             .damageRate(4)
