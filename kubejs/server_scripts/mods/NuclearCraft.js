@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
     decompdepleted("uranium_heu_235", "2x nuclearcraft:neptunium_237", "20x gtceu:uranium_nugget", "4x gtceu:plutonium_nugget", "3x nuclearcraft:plutonium_242", GTValues.IV)
     decompdepleted("neptunium_len_236", "nuclearcraft:neptunium_237", "3x nuclearcraft:plutonium_242", "nuclearcraft:americium_241", "3x nuclearcraft:americium_243", GTValues.IV)
     decompdepleted("neptunium_hen_236", "nuclearcraft:plutonium_238", "16x gtceu:plutonium_nugget", "2x nuclearcraft:americium_242", "3x nuclearcraft:plutonium_242", GTValues.IV)
-    decompdepleted("plutonium_lep_239", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_243", "8x gtceu:plutonium_nugget", "3x nuclearcraft:curium_245", GTValues.LuV)
+    decompdepleted("plutonium_lep_239", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_243", "8x gtceu:plutonium_nugget", "3x nuclearcraft:berkelium_247", GTValues.LuV)
     decompdepleted("plutonium_hep_239", "nuclearcraft:americium_243", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_245", "3x nuclearcraft:berkelium_248", GTValues.LuV)
     decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:berkelium_248", "nuclearcraft:americium_243", "5x nuclearcraft:berkelium_247", GTValues.LuV)
     decompdepleted("plutonium_hep_241", "nuclearcraft:americium_243", "3x nuclearcraft:curium_245", "3x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", GTValues.LuV)

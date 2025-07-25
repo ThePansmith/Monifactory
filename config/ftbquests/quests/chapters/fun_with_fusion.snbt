@@ -481,19 +481,19 @@
 						items: [
 							{
 								Count: 1b
+								id: "nuclearcraft:plutonium_242"
+							}
+							{
+								Count: 1b
 								id: "nuclearcraft:plutonium_238"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:plutonium_239"
+								id: "gtceu:plutonium_ingot"
 							}
 							{
 								Count: 1b
 								id: "gtceu:plutonium_241_ingot"
-							}
-							{
-								Count: 1b
-								id: "nuclearcraft:plutonium_242"
 							}
 						]
 					}
@@ -671,6 +671,10 @@
 					id: "itemfilters:or"
 					tag: {
 						items: [
+							{
+								Count: 1b
+								id: "nuclearcraft:californium_250"
+							}
 							{
 								Count: 1b
 								id: "nuclearcraft:californium_251"
