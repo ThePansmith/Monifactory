@@ -294,7 +294,7 @@ global.itemNukeList = [
     /^nuclearcraft:[\w_]*_ore$/,
     /^nuclearcraft:\w+_chunk$/,
     /^nuclearcraft:source_\w+_\w+$/,
-    /^nuclearcraft:[\w_]+electromagnet[\w_]*/,
+    /^nuclearcraft:[\w_]+electromagnet_slope/,
     /^nuclearcraft:solar_panel.*/,
     /^nuclearcraft:[\w_]+_voltaic_pile$/,
     /^nuclearcraft:[\w_]+_container$/,
@@ -423,15 +423,19 @@ global.itemNukeList = [
     // Nuclearcraft Isotopes
     "nuclearcraft:fuel_mixed_mix_239",
     "nuclearcraft:fuel_mixed_mix_241",
-    "nuclearcraft:thorium_230",
-    "nuclearcraft:plutonium_241",
     "nuclearcraft:lithium_6",
     "nuclearcraft:lithium_7",
     "nuclearcraft:boron_10",
     "nuclearcraft:boron_11",
-    "nuclearcraft:plutonium_239",
+    "nuclearcraft:thorium_230",
+    "nuclearcraft:thorium_232",
     "nuclearcraft:uranium_235",
     "nuclearcraft:uranium_238",
+    "nuclearcraft:plutonium_239",
+    "nuclearcraft:plutonium_241",
+    "nuclearcraft:curium_246",
+    "nuclearcraft:curium_247",
+    "nuclearcraft:californium_249"
 ];
 
 // Create Compat
