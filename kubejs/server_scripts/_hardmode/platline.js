@@ -80,12 +80,12 @@ if (doHarderProcessing) {
             .duration(100).EUt(30)
 
         // Platinum Group Sludge
-        event.recipes.gtceu.chemical_bath("bathe_platinum_group_sludge_dust")
+        event.recipes.gtceu.centrifuge("bathe_platinum_group_sludge_dust")
             .itemInputs("2x gtceu:platinum_group_sludge_dust")
             .inputFluids("gtceu:aqua_regia 2000")
             .itemOutputs("gtceu:platinum_group_residue_dust", "gtceu:iridium_group_sludge_dust", "gtceu:platinum_sludge_residue_dust")
             .outputFluids("gtceu:platinum_palladium_leachate 1000")
-            .duration(250).EUt(30)
+            .duration(250).EUt(GTValues.VA[GTValues.HV])
 
         event.recipes.gtceu.chemical_bath("bathe_platinum_metallic_dust")
             .itemInputs("2x gtceu:platinum_metallic_dust")

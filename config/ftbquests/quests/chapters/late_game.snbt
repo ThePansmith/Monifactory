@@ -299,6 +299,14 @@
 			x: 29.75d
 			y: 22.25d
 		}
+		{
+			id: "4BE6E906DD901A7F"
+			linked_quest: "044553423097C3C7"
+			shape: "hexagon"
+			size: 1.5d
+			x: 4.75d
+			y: 9.75d
+		}
 	]
 	quests: [
 		{
@@ -692,7 +700,7 @@
 		{
 			dependencies: [
 				"6DC635766CD40FFF"
-				"044553423097C3C7"
+				"05F7C3F397B329F5"
 			]
 			description: [
 				"{moni.quest.458FF3F9BC8E025B.description1}"
@@ -811,7 +819,7 @@
 			y: 18.25d
 		}
 		{
-			dependencies: ["044553423097C3C7"]
+			dependencies: ["05F7C3F397B329F5"]
 			description: [
 				"{moni.quest.025092551C0A20B6.description1}"
 				""
@@ -2266,7 +2274,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["521977C7165229F1"]
+			dependencies: [
+				"4DB622A78605A2EB"
+				"458FF3F9BC8E025B"
+			]
 			description: [
 				"{moni.quest.2BBAF93506DD79C1.description1}"
 				""
@@ -2587,48 +2598,6 @@
 			y: 16.75d
 		}
 		{
-			dependencies: [
-				"595F205B551A53C9"
-				"15DBB22E3DC0AFB7"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{moni.quest.044553423097C3C7.description1}"
-				""
-				"{moni.quest.044553423097C3C7.description2}"
-				""
-				"{moni.quest.044553423097C3C7.description3}"
-				""
-				"{moni.quest.044553423097C3C7.description4}"
-			]
-			icon: "gtceu:platinum_dust"
-			id: "044553423097C3C7"
-			rewards: [{
-				count: 2
-				id: "400B871C9C2B5830"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "{moni.quest.044553423097C3C7.subtitle}"
-			tasks: [
-				{
-					id: "1CA9B9FE385B774C"
-					item: "gtceu:ruthenium_dust"
-					type: "item"
-				}
-				{
-					id: "18237021D2F3D527"
-					item: "gtceu:rhodium_dust"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.044553423097C3C7.title}"
-			x: 3.0d
-			y: 8.0d
-		}
-		{
 			dependencies: ["739F7BF2A90B278A"]
 			description: [
 				"{moni.quest.61301FBD825F8280.description1}"
@@ -2743,6 +2712,27 @@
 			title: "{moni.quest.10E63A0428E6BA25.title}"
 			x: 23.0d
 			y: 3.5d
+		}
+		{
+			dependencies: [
+				"15DBB22E3DC0AFB7"
+				"044553423097C3C7"
+			]
+			description: [
+				"{moni.quest.05F7C3F397B329F5.description1}"
+				""
+				"{moni.quest.05F7C3F397B329F5.description2}"
+				""
+				"{moni.quest.05F7C3F397B329F5.description3}"
+			]
+			id: "05F7C3F397B329F5"
+			tasks: [{
+				id: "01229A2F5C98A469"
+				item: "gtceu:rarest_metal_mixture_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
 		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"

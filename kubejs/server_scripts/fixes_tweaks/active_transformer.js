@@ -5,12 +5,12 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("high_power_casing")
         .itemInputs(
-            "#forge:frames/iridium",
-            "6x #forge:plates/iridium",
-            "#gtceu:circuits/ev",
-            "16x #forge:fine_wires/cobalt",
-            "16x #forge:fine_wires/copper",
-            "2x gtceu:platinum_single_wire",
+            "#forge:frames/stainless_steel",
+            "6x #forge:plates/platinum",
+            "#gtceu:circuits/hv",
+            "8x #forge:fine_wires/iridium",
+            "8x #forge:fine_wires/niobium_titanium",
+            "2x gtceu:neptunium_palladium_aluminium_single_cable",
         )
         .itemOutputs("2x gtceu:high_power_casing")
         .duration(100).EUt(GTValues.VA[GTValues.EV])
