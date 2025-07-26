@@ -49,6 +49,12 @@ ServerEvents.recipes(event => {
     replaceCircassItem(event, /nano_computer_iv/, "tag", "forge:fine_wires/electrum", "forge:fine_wires/lumium")
     replaceCircassItem(event, /crystal_computer_zpm/, "tag", "forge:fine_wires/niobium_titanium", "forge:fine_wires/enderium")
 
+    // Replace some processors' capacitors with resistors so that each circuit theme uses all SMD component types
+    replaceCircassItem(event, /quantum_processor_ev/, "item", "gtceu:smd_capacitor", "gtceu:smd_resistor")
+    replaceCircassItem(event, /quantum_processor_ev/, "item", "gtceu:advanced_smd_capacitor", "gtceu:advanced_smd_resistor")
+    replaceCircassItem(event, /crystal_processor_iv/, "item", "gtceu:advanced_smd_capacitor", "gtceu:advanced_smd_resistor")
+    replaceCircassItem(event, /wetware_processor_luv/, "item", "gtceu:advanced_smd_capacitor", "gtceu:advanced_smd_resistor")
+
     // Recipe categories seem to be separate when not using builders
     replaceGTRecipeAmount(event, "gtceu:chemical_reactor", /wetware_circuit_board/, "tag", "forge:foils/niobium_titanium", 0.75)
     replaceGTRecipeAmount(event, "gtceu:large_chemical_reactor", /wetware_circuit_board/, "tag", "forge:foils/niobium_titanium", 0.75)
@@ -122,7 +128,7 @@ ServerEvents.recipes(event => {
             "1x kubejs:optical_processing_unit",
             "1x kubejs:optical_chip",
             "2x kubejs:electro_optic_modulator",
-            "10x gtceu:advanced_smd_capacitor",
+            "10x gtceu:advanced_smd_resistor",
             "10x gtceu:advanced_smd_transistor",
             "4x gtceu:fine_naquadah_wire"
         )
