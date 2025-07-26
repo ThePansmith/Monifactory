@@ -864,6 +864,8 @@
 				"{moni.quest.04EABD3D2C72D2C5.description3}"
 				""
 				"{moni.quest.04EABD3D2C72D2C5.description4}"
+				""
+				"{moni.quest.04EABD3D2C72D2C5.description5}"
 			]
 			id: "04EABD3D2C72D2C5"
 			rewards: [{
@@ -873,9 +875,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				count: 8L
 				id: "2E25B07192462553"
-				item: "gtceu:sterilizing_filter_casing"
+				item: "gtmutils:sterile_cleaning_maintenance_hatch"
 				type: "item"
 			}]
 			title: "{moni.quest.04EABD3D2C72D2C5.title}"

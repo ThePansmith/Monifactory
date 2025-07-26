@@ -156,6 +156,19 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(6)
 
+    event.shaped("gtmutils:sterile_cleaning_maintenance_hatch", [
+        "WAW",
+        "FHF",
+        "CRC"
+    ], {
+        A: "gtceu:auto_maintenance_hatch",
+        H: "gtceu:zpm_machine_hull",
+        W: "gtceu:osmium_double_cable",
+        F: "gtceu:sterilizing_filter_casing",
+        R: "gtceu:zpm_fluid_regulator",
+        C: "gtceu:activated_carbon_dust"
+    }).id("gtmutils:sterile_cleaning_maintenance_hatch")
+
     // FLux Gem
     event.remove({ id: "redstone_arsenal:materials/flux_gem" })
     event.recipes.gtceu.autoclave("flux_gem")
