@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:bacteria 250")
         .duration(15 * 20)
         .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.CLEANROOM)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     // Svat recipes
     event.recipes.gtceu.sculk_vat("bacteria_growth_biomass")
@@ -64,22 +64,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:bacteria 250")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    event.recipes.gtceu.sculk_vat("bacteria_growth_fermented_biomass")
-        .inputFluids("gtceu:bacteria 250", "gtceu:fermented_biomass 3000")
-        .outputFluids("gtceu:bacteria 250")
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    event.recipes.gtceu.sculk_vat("bacteria_growth_bio_chaff")
-        .itemInputs("5x gtceu:bio_chaff")
-        .inputFluids("gtceu:bacteria 250", "gtceu:distilled_water 3750")
-        .outputFluids("gtceu:bacteria 250")
-        .duration(2000)
-        .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.CLEANROOM)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.sculk_vat("sculk_growth")
         .notConsumable("minecraft:sculk_catalyst")
