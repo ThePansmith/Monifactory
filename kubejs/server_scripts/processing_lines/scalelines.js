@@ -65,9 +65,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge("guardian_scale_slurry_centrifuge")
         .inputFluids("gtceu:guardian_scale_slurry 4000")
-        .itemOutputs("2x gtceu:malachite_dust")
+        .itemOutputs("2x gtceu:malachite_dust", "gtceu:cobalt_oxide_dust")
         .chancedOutput("gtceu:antimony_trifluoride_dust", 7000, 0)
-        .chancedOutput(doHarderProcessing ? "gtceu:sodium_ruthenate_dust" : "gtceu:ruthenium_tetroxide_dust", 4000, 0)
+        .chancedOutput("gtceu:impure_emerald_dust", 4000, 0)
         .outputFluids("gtceu:nitrosyl_chloride 1000", "minecraft:water 2000")
         .duration(20 * 10)
         .EUt(GTValues.VA[GTValues.EV])
