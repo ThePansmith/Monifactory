@@ -156,21 +156,6 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(6)
 
-    // Sterilising Filter Casing
-    event.shaped("4x gtceu:sterilizing_filter_casing", [
-        "PEP",
-        "FBF",
-        "MSR"
-    ], {
-        B: "gtceu:blacklight",
-        E: "gtceu:luv_emitter",
-        F: "gtceu:item_filter",
-        M: "gtceu:luv_electric_motor",
-        P: "gtceu:polybenzimidazole_large_fluid_pipe",
-        R: "gtceu:iridium_rotor",
-        S: "gtceu:tritanium_frame"
-    }).id("gtceu:shaped/filter_casing_sterile")
-
     // FLux Gem
     event.remove({ id: "redstone_arsenal:materials/flux_gem" })
     event.recipes.gtceu.autoclave("flux_gem")
