@@ -222,19 +222,6 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
-            .itemInputs("32x kubejs:stabilized_americium")
-            .itemInputs("kubejs:microversal_alchemy_kit")
-            .itemInputs("32x kubejs:wither_realm_data")
-            .damageRate(4)
-            .requiredMicroverse(1) // Normal
-            .itemOutputs(
-                "16x kubejs:stabilized_californium",
-            )
-            .requiredMicroverse(1) // Normal
-    })
-
-    microverse_mission(event, 6, 2).forEach(builder => {
-        builder
             .itemInputs("32x kubejs:stabilized_curium")
             .itemInputs("kubejs:blasting_kit")
             .itemInputs("64x kubejs:wither_realm_data")
