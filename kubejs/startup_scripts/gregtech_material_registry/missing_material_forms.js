@@ -58,7 +58,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Lead.addFlags(GTMaterialFlags.GENERATE_GEAR)
 
     // Radioactive materials that get liquid forms and/or a new color
-    addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID, 1133);
     addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID, 1259);
     GTMaterials.Berkelium.setMaterialARGB(0xa33f20);
     addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID, 1173);

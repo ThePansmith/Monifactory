@@ -222,7 +222,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:tough_alloy_ingot", "§eLiFeB");
     tooltip.add("nuclearcraft:ferroboron_ingot", "§eFe₄B");
     tooltip.add("nuclearcraft:hard_carbon_ingot", "§eFe₃C");
-    tooltip.add("nuclearcraft:thorium_232", "§eTh²³²");
     tooltip.add("nuclearcraft:uranium_233", "§eU²³³");
     tooltip.add("nuclearcraft:plutonium_238", "§ePu²³⁸");
     tooltip.add("nuclearcraft:plutonium_242", "§ePu²⁴²");
@@ -233,15 +232,10 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:americium_243", "§eAm²⁴³");
     tooltip.add("nuclearcraft:curium_243", "§eCm²⁴³");
     tooltip.add("nuclearcraft:curium_245", "§eCm²⁴⁵");
-    tooltip.add("nuclearcraft:curium_246", "§eCm²⁴⁶");
-    tooltip.add("nuclearcraft:curium_247", "§eCm²⁴⁷");
     tooltip.add("nuclearcraft:berkelium_247", "§eBk²⁴⁷");
     tooltip.add("nuclearcraft:berkelium_248", "§eBk²⁴⁸");
-    tooltip.add("nuclearcraft:californium_249", "§eCf²⁴⁹");
-    tooltip.add("nuclearcraft:californium_250", "§eCf²⁵⁰");
     tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
     tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
-    tooltip.add("nuclearcraft:einsteinium_252", "§eEs²⁵²");
 
     tooltip.addAdvanced(["/^kubejs:.+infinity_dust_block$/", "kubejs:infinity_dust_block"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.infinity_dust_block.tooltip"))
