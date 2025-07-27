@@ -64,7 +64,6 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:bacteria 250")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.sculk_vat("sculk_growth")
         .notConsumable("minecraft:sculk_catalyst")
