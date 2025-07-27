@@ -217,21 +217,6 @@ ServerEvents.recipes(event => {
         V: "gtceu:iv_conveyor_module"
     }).id("gtceu:shaped/matter_alterator")
 
-    // Prevent cleanroom casings from being usable for free resources
-    event.remove({ input: "gtceu:sterilizing_filter_casing" })
-    event.recipes.gtceu.arc_furnace("sterile_filter_recycling")
-        .itemInputs("gtceu:sterilizing_filter_casing")
-        .inputFluids("gtceu:oxygen 1265")
-        .itemOutputs("1x gtceu:iridium_ingot", "4x gtceu:tritanium_nugget", "6x gtceu:small_ash_dust")
-        .duration(691)
-        .EUt(30)
-
-    event.recipes.gtceu.macerator("sterile_filter_crushing")
-        .itemInputs("gtceu:sterilizing_filter_casing")
-        .itemOutputs("3x gtceu:polybenzimidazole_dust", "gtceu:iridium_dust", "gtceu:small_tritanium_dust")
-        .duration(696)
-        .EUt(32)
-
     // Tantalum-catalysed ethanol->butadiene
     event.recipes.gtceu.large_chemical_reactor("ethanol_to_butadiene")
         .notConsumable("gtceu:tantalum_dust")
