@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     // Living Soldering Alloy
     event.recipes.gtceu.mixer("living_soldering_alloy")
         .itemInputs("5x gtceu:rose_gold_dust", "12x gtceu:tin_alloy_dust", "11x gtceu:gallium_dust", "7x gtceu:molybdenum_dust", "8x gtceu:stem_cells")
-        .inputFluids("gtceu:blood 5000", "kubejs:hadal_sculk 3000")
+        .inputFluids("gtceu:blood 8000")
         .itemOutputs("43x gtceu:living_soldering_alloy_dust")
         .duration(900)
         .EUt(GTValues.VA[GTValues.IV])
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_blast_smelter("living_soldering_alloy")
         .itemInputs("5x gtceu:rose_gold_dust", "12x gtceu:tin_alloy_dust", "11x gtceu:gallium_dust", "7x gtceu:molybdenum_dust", "8x gtceu:stem_cells")
-        .inputFluids("gtceu:blood 5000", "kubejs:hadal_sculk 3000")
+        .inputFluids("gtceu:blood 8000")
         .outputFluids("gtceu:living_soldering_alloy 6192")
         .duration(675)
         .EUt(GTValues.VA[GTValues.IV])
