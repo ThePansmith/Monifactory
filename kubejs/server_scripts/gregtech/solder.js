@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .duration(525)
         .EUt(GTValues.VA[GTValues.HV])
         .circuit(10)
-        .blastFurnaceTemp(1850)
+        .blastFurnaceTemp(1211)
 
     // Living Soldering Alloy
     event.recipes.gtceu.mixer("living_soldering_alloy")
@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
         .duration(900)
         .EUt(GTValues.VA[GTValues.IV])
         .circuit(3)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.alloy_blast_smelter("living_soldering_alloy")
         .itemInputs("5x gtceu:rose_gold_dust", "12x gtceu:tin_alloy_dust", "11x gtceu:gallium_dust", "7x gtceu:molybdenum_dust", "8x gtceu:stem_cells")
@@ -35,5 +36,6 @@ ServerEvents.recipes(event => {
         .duration(675)
         .EUt(GTValues.VA[GTValues.IV])
         .circuit(10)
-        .blastFurnaceTemp(3000)
+        .blastFurnaceTemp(1916)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 })
