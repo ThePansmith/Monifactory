@@ -162,10 +162,9 @@ ServerEvents.recipes(event => {
         "FCF",
     ], {
         A: "gtceu:auto_maintenance_hatch",
-        H: "gtceu:zpm_machine_hull",
         W: "gtceu:naquadah_double_cable",
         F: "gtceu:sterilizing_filter_casing",
-        C: "gtceu:activated_carbon_dust"
+        C: "#gtceu:circuits/zpm"
     })
 
     // FLux Gem
