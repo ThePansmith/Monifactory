@@ -107,7 +107,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(["gtceu:lv_atomic_reconstructor", "gtceu:mv_atomic_reconstructor", "gtceu:hv_atomic_reconstructor", "gtceu:ev_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.lvev_atomic_reconstructor.desc"))) })
     tooltip.addAdvanced(["gtceu:iv_atomic_reconstructor", "gtceu:luv_atomic_reconstructor", "gtceu:zpm_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.ivzpm_atomic_reconstructor.desc"))) })
     tooltip.addAdvanced(["gtceu:uv_atomic_reconstructor", "gtceu:uhv_atomic_reconstructor", "gtceu:uev_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.uvuiv_atomic_reconstructor.desc"))) })
-    tooltip.add("gtceu:sterilizing_filter_casing", Text.gray(Text.translatable("gtceu.sterilizing_filter_casing.tooltip")))
 
     tooltip.addAdvanced("gtceu:naquadah_reactor", (item, adv, text) => {
         text.add(1, [Text.gray("A reactor that produces energy from "), Text.gold(Text.translate("item.kubejs.naquadah_fuel_rod")), Text.gray(" decay.")])

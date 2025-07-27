@@ -156,20 +156,16 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(6)
 
-    // Sterilising Filter Casing
-    event.shaped("4x gtceu:sterilizing_filter_casing", [
-        "PEP",
-        "FBF",
-        "MSR"
+    // Sterile Cleaning Maintenance Hatch
+    event.shaped("gtmutils:sterile_cleaning_maintenance_hatch", [
+        "WAW",
+        "FCF",
     ], {
-        B: "gtceu:blacklight",
-        E: "gtceu:luv_emitter",
-        F: "gtceu:item_filter",
-        M: "gtceu:luv_electric_motor",
-        P: "gtceu:polybenzimidazole_large_fluid_pipe",
-        R: "gtceu:iridium_rotor",
-        S: "gtceu:tritanium_frame"
-    }).id("gtceu:shaped/filter_casing_sterile")
+        A: "gtceu:auto_maintenance_hatch",
+        W: "gtceu:naquadah_double_cable",
+        F: "gtceu:sterilizing_filter_casing",
+        C: "#gtceu:circuits/zpm"
+    })
 
     // FLux Gem
     event.remove({ id: "redstone_arsenal:materials/flux_gem" })
@@ -241,7 +237,7 @@ ServerEvents.recipes(event => {
     // Kubejs Stem Cells
     event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
     event.remove({ id: "gtceu:large_chemical_reactor/stem_cells" })
-    event.recipes.gtceu.chemical_reactor("kubejs_stem_cells")
+    event.recipes.gtceu.chemical_reactor("stem_cells")
         .itemInputs("minecraft:dragon_egg")
         .chancedInput("minecraft:sculk_catalyst", 500, 0)
         .inputFluids("gtceu:sterilized_growth_medium 500", "gtceu:bacteria 500", "enderio:xp_juice 2000")
@@ -249,8 +245,8 @@ ServerEvents.recipes(event => {
         .itemOutputsRanged("gtceu:stem_cells", 0, 64)
         .outputFluids("gtceu:bacterial_sludge 500")
         .duration(6000)
-        .EUt(30720)
-        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
 
     event.recipes.extendedcrafting.shaped_table("gtceu:zero_point_module", [

@@ -59,7 +59,6 @@ ServerEvents.recipes(event => {
         .xpRange(120000, 128000)
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV])
-        .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.discharger("amalgamated_sculk")
         .itemInputs("kubejs:experience_saturated_microstructure", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT())
@@ -74,5 +73,4 @@ ServerEvents.recipes(event => {
         .xpRange(64000, 88000)
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV])
-        .cleanroom(CleanroomType.CLEANROOM)
 })
