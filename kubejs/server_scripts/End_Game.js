@@ -457,7 +457,7 @@ ServerEvents.recipes(event => {
         .EUt(65520)
 
     event.recipes.gtceu.assembler("kubejs:netherite_casing")
-        .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:dense_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
+        .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
         .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
         .duration(100)
         .EUt(65520)

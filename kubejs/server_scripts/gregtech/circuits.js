@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
             "kubejs:optical_processing_unit",
             "kubejs:quantum_soc_chip",
             "8x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
-            "8x gtceu:activated_netherite_bolt"
+            "8x gtceu:necrosiderite_bolt"
         )
         .itemOutputs("4x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
