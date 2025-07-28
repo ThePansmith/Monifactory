@@ -384,6 +384,7 @@ ServerEvents.recipes(event => {
                 "24x minecraft:gilded_blackstone",
                 "4x minecraft:gold_block",
             )
+            .chancedOutput("1x minecraft:netherite_upgrade_smithing_template", 500, 0)
     })
 
     microverse_mission(event, 3, 1).forEach(builder => {
