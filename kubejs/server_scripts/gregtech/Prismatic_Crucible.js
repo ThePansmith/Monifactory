@@ -721,7 +721,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chromatic_transcendence("prismatic_core_b_v")
         .itemInputs("kubejs:indigo_prismatic_core")
         .outputFluids("gtceu:meta_null 1184")
-        .inputColor(PrismaticColor.NOT_INDIGO)
+        .inputColor(PrismaticColor.NOT_PINK)
         .outputStatesRelative(0)
         .duration(40)
         .EUt(GTValues.VHA[GTValues.UHV])
