@@ -3,6 +3,8 @@
  ? Place non-nomifactory materials here
  */
 
+const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey");
+
 // AE2 Materials
 
 GTCEuStartupEvents.registry("gtceu:element", event => {
@@ -390,4 +392,10 @@ GTCEuStartupEvents.materialModification(event => {
 
     // We keep Ingots in the material definition so we can replace it in the Ore Processing Diagram with vanilla Netherite Scrap, then remove it here.
     TagPrefix.ingot.setIgnored(GTMaterials.get("netherite_scrap"), Ingredient.of("minecraft:netherite_scrap"))
+
+    GTMaterials.Neutronium.getProperty(PropertyKey.FLUID_PIPE).setThroughput(400)
+    GTMaterials.Neutronium.getProperty(PropertyKey.FLUID_PIPE).setMaxFluidTemperature(10000)
+    GTMaterials.Ultimet.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(4)
+    GTMaterials.Osmiridium.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(12)
+    GTMaterials.Americium.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(20)
 })

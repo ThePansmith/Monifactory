@@ -59,7 +59,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .secondaryColor(0x004590)
         .blastTemp(3823, "highest", GTValues.VA[GTValues.ZPM])
         .iconSet("shiny")
-        .flags(GTMaterialFlags.NO_WORKING, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
+        .fluidPipeProperties(4773, 1200, true, false, true, true)
+        .flags(GTMaterialFlags.NO_WORKING, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR);
 
     event.create("omnium")
         .ingot()
@@ -95,8 +96,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("activated_netherite"))
         .color(0x4C484C)
         .iconSet("dull")
-        .fluidPipeProperties(11000, 8500, true, false, true, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
+        .fluidPipeProperties(12500, 800, true, false, false, true)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.NO_UNIFICATION)
+        .ignoredTagPrefixes([TagPrefix.dust, TagPrefix.dustSmall, TagPrefix.dustTiny, TagPrefix.nugget, TagPrefix.ring, TagPrefix.bolt, TagPrefix.screw])
 
     event.create("experience_attuned")
         .dust().gas()
