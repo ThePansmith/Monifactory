@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .blastTemp(1350, "low", 120, 400)
         .components("energetic_alloy", "ender_pearl")
-        .cableProperties(512, 1, 0, true)
+        .cableProperties(512, 2, 0, true)
         .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5)");
 
     // Pulsating Iron
@@ -63,7 +63,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
         .blastTemp(2700, "mid", 480, 900)
         .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, []))
-        .cableProperties(2048, 1, 0, true)
+        .cableProperties(2048, 2, 0, true)
         .components("dark_steel", "endstone", "vibrant_alloy")
         .formula("Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5))");
 
