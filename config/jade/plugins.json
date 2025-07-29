@@ -7,6 +7,7 @@
   },
   "monilabs": {
     "color_info": true,
+    "sculk_vat_xp_info": true,
     "microverse_info": true
   },
   "minecraft": {

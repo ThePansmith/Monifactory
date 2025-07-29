@@ -543,7 +543,7 @@ compat:
     oreIconSize: 32
 
     # The string prepending ore names in the ore vein tooltip
-    oreNamePrefix: - 
+    oreNamePrefix: -
 
     # The color to draw a box around the ore icon with.
     # Accepts either an ARGB hex color prefixed with # or the string 'material' to use the ore's material color
@@ -604,7 +604,7 @@ compat:
 dev:
   # Debug general events? (will print recipe conficts etc. to server's debug.log)
   # Default: false
-  debug: false
+  debug: true
 
   # Debug ore vein placement? (will print placed veins to server's debug.log)
   # Default: false (no placement printout in debug.log)
