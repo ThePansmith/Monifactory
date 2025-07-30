@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     const colors = ["red", "yellow", "green", "cyan", "blue", "magenta"]
     const psocRecipes = [ // [psoc color in, [psoc color out when prismac is r,y,g,c,b,m]]
         ["red", ["inert", "green", "yellow", "active", "magenta", "blue"]],
-        ["yellow", ["green", "inert", "red", "magenta", "active", "yellow"]],
+        ["yellow", ["green", "inert", "red", "magenta", "active", "cyan"]],
         ["green", ["yellow", "red", "inert", "blue", "cyan", "active"]],
         ["cyan", ["active", "magenta", "blue", "inert", "green", "yellow"]],
         ["blue", ["magenta", "active", "cyan", "green", "inert", "red"]],
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:photonic_soc_inert")
             .itemOutputs(`kubejs:photonic_soc_${prismacIn}`)
             .inputColor(PrismaticColor[prismacIn.toUpperCase()])
-            .outputStatesNormal(PrismaticColor[colors[Math.floor(index / 2) * 2].toUpperCase()])
+            .outputStatesNormal(PrismaticColor[colors[(Math.floor(index / 2) * 2 + 2) % 6].toUpperCase()])
             .duration(40)
             .EUt(GTValues.VHA[GTValues.UV])
 
