@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         }).id("gtceu:shaped/loot_superfabricator")
 
         event.recipes.gtceu.assembly_line("loot_quantumfabricator")
-            .itemInputs("gtceu:atomic_casing", "6x gtceu:trinaquadalloy_plate", "4x gtceu:loot_superfabricator", "kubejs:heart_of_a_universe", "4x #gtceu:circuits/uhv", "2x gtceu:uv_robot_arm", "2x gtceu:uv_emitter", "kubejs:abyssal_energy_core")
+            .itemInputs("gtceu:atomic_casing", "6x gtceu:trinaquadalloy_plate", "4x gtceu:loot_superfabricator", "kubejs:heart_of_a_universe", "4x #gtceu:circuits/uhv", "2x gtceu:uv_robot_arm", "2x gtceu:uv_emitter", Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT())
             .inputFluids("gtceu:soldering_alloy 1152")
             .itemOutputs("gtceu:loot_quantumfabricator")
             .stationResearch(b => b

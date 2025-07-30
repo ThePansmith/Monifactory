@@ -107,10 +107,9 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(["gtceu:lv_atomic_reconstructor", "gtceu:mv_atomic_reconstructor", "gtceu:hv_atomic_reconstructor", "gtceu:ev_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.lvev_atomic_reconstructor.desc"))) })
     tooltip.addAdvanced(["gtceu:iv_atomic_reconstructor", "gtceu:luv_atomic_reconstructor", "gtceu:zpm_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.ivzpm_atomic_reconstructor.desc"))) })
     tooltip.addAdvanced(["gtceu:uv_atomic_reconstructor", "gtceu:uhv_atomic_reconstructor", "gtceu:uev_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.uvuiv_atomic_reconstructor.desc"))) })
-    tooltip.add("gtceu:sterilizing_filter_casing", Text.gray(Text.translatable("gtceu.sterilizing_filter_casing.tooltip")))
 
     tooltip.addAdvanced("gtceu:naquadah_reactor", (item, adv, text) => {
-        text.add(1, Text.gray("An reactor that produces energy from the decay of Enriched Naquadah and Naquadria bolts"))
+        text.add(1, [Text.gray("A reactor that produces energy from "), Text.gold(Text.translate("item.kubejs.naquadah_fuel_rod")), Text.gray(" decay.")])
         text.add(2, [Text.white("Produces exactly 3 amps of "), Text.red("ZPM"), Text.white(".")])
         text.add(3, rainbowifySingle("Does not overclock!", Math.round(Client.lastNanoTime / 1000000000)))
     })
@@ -118,29 +117,30 @@ ItemEvents.tooltip(tooltip => {
 
     // Parallel multiblocks
     const parallelMultis = [
-        "rock_cycle_simulator",
-        "atmospheric_accumulator",
-        "matter_alterator",
-        "implosion_collider",
-        "quintessence_infuser",
-        "dimensional_superassembler",
-        "universal_crystallizer",
-        "sculk_biocharger",
-        "simulation_quantumcomputer",
-        "loot_quantumfabricator"
+        ["rock_cycle_simulator", "rock_cycle_simulator"],
+        ["atmospheric_accumulator", "gas_collector"],
+        ["matter_alterator", "atomic_reconstruction"],
+        ["implosion_collider", "implosion_compressor"],
+        ["quintessence_infuser", "quintessence_infuser"],
+        ["dimensional_superassembler", "assembly_line"],
+        ["sculk_biocharger", "discharger"],
+        ["simulation_quantumcomputer", "simulation_supercomputer"],
+        ["loot_quantumfabricator", "loot_superfabricator"],
     ]
 
     parallelMultis.forEach(multi => {
-        tooltip.addAdvanced(`gtceu:${multi}`, (item, adv, text) => {
+        tooltip.addAdvanced(`gtceu:${multi[0]}`, (item, adv, text) => {
             text.add(1, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
-            text.add(2, Text.translatable(`gtceu.multiblock.${multi}.description`))
+            text.add(2, Text.translatable("gtceu.machine.available_recipe_map_1.tooltip", Text.translatable(`gtceu.${multi[1]}`)))
+            text.add(3, Text.translatable(`gtceu.multiblock.${multi[0]}.description`))
         })
     })
 
     tooltip.addAdvanced("gtceu:helical_fusion_reactor", (item, adv, text) => {
         text.add(1, Text.translatable("gtceu.machine.fusion_reactor.capacity", Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UHV, 16) / 1000000)))
         text.add(2, Text.translatable("gtceu.multiblock.parallelizable.tooltip"))
-        text.add(3, Text.translatable("gtceu.multiblock.helical_fusion_reactor.description"))
+        text.add(3, Text.translatable("gtceu.machine.available_recipe_map_1.tooltip", Text.translatable("gtceu.fusion_reactor")))
+        text.add(4, Text.translatable("gtceu.multiblock.helical_fusion_reactor.description"))
     })
 
     tooltip.addAdvanced("gtceu:mega_alloy_blast_smelter", (item, adv, text) => {
@@ -158,6 +158,10 @@ ItemEvents.tooltip(tooltip => {
         text.add(4, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.3"))
         text.add(5, Text.translatable("gtceu.multiblock.antimatter_collider.tooltip.4"))
     })
+
+    tooltip.addAdvanced("kubejs:bathyal_energy_core", (item, adv, text) => text.add(1, Text.of(String(item.damageValue) + " / 2000000 RF")))
+    tooltip.addAdvanced("kubejs:abyssal_energy_core", (item, adv, text) => text.add(1, Text.of(String(item.damageValue) + " / 4000000 RF")))
+    tooltip.addAdvanced("kubejs:hadal_energy_core", (item, adv, text) => text.add(1, Text.of(String(item.damageValue) + " / 8000000 RF")))
 
     // Parallel hatches
     tooltip.add("gtceu:uhv_uhv_parallel_hatch", Text.translatable("gtceu.giga_parallel_hatch.desc"))
@@ -217,7 +221,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:tough_alloy_ingot", "§eLiFeB");
     tooltip.add("nuclearcraft:ferroboron_ingot", "§eFe₄B");
     tooltip.add("nuclearcraft:hard_carbon_ingot", "§eFe₃C");
-    tooltip.add("nuclearcraft:thorium_232", "§eTh²³²");
     tooltip.add("nuclearcraft:uranium_233", "§eU²³³");
     tooltip.add("nuclearcraft:plutonium_238", "§ePu²³⁸");
     tooltip.add("nuclearcraft:plutonium_242", "§ePu²⁴²");
@@ -228,15 +231,10 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:americium_243", "§eAm²⁴³");
     tooltip.add("nuclearcraft:curium_243", "§eCm²⁴³");
     tooltip.add("nuclearcraft:curium_245", "§eCm²⁴⁵");
-    tooltip.add("nuclearcraft:curium_246", "§eCm²⁴⁶");
-    tooltip.add("nuclearcraft:curium_247", "§eCm²⁴⁷");
     tooltip.add("nuclearcraft:berkelium_247", "§eBk²⁴⁷");
     tooltip.add("nuclearcraft:berkelium_248", "§eBk²⁴⁸");
-    tooltip.add("nuclearcraft:californium_249", "§eCf²⁴⁹");
-    tooltip.add("nuclearcraft:californium_250", "§eCf²⁵⁰");
     tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
     tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
-    tooltip.add("nuclearcraft:einsteinium_252", "§eEs²⁵²");
 
     tooltip.addAdvanced(["/^kubejs:.+infinity_dust_block$/", "kubejs:infinity_dust_block"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.infinity_dust_block.tooltip"))

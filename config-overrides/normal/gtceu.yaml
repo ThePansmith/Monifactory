@@ -608,7 +608,7 @@ dev:
 
   # Debug ore vein placement? (will print placed veins to server's debug.log)
   # Default: false (no placement printout in debug.log)
-  debugWorldgen: false
+  debugWorldgen: true
 
   # Generate ores in superflat worlds?
   # Default: false

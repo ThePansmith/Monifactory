@@ -44,15 +44,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
 
-    // Universal Crystallizer
-    event.create("universal_crystallizer")
-        .category("multiblock")
-        .setEUIO("in")
-        .setMaxIOSize(9, 1, 2, 0)
-        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COMPUTATION)
-
     // Naquadah Reactor I Recipe type
     event.create("naquadah_reactor")
         .category("multiblock")
@@ -116,14 +107,9 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
 
-    // Charger
-    event.create("charger")
-        .category("multiblock")
-        .setEUIO("in")
-        .setMaxIOSize(3, 1, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ELECTROLYZER)
+    // Recipe types for coremod multis
+    // MoniRecipeTypes.createPrismaCRecipeType("chromatic_processing")
+    // MoniRecipeTypes.createPrismaCRecipeType("chromatic_transcendence")
 
     event.create("omnic_synthesis")
         .category("multiblock")
@@ -186,7 +172,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             if (data.contains("minimumXp") && data.contains("maximumXp")) {
                 let minimumXp = data.getInt("minimumXp");
                 let maximumXp = data.getInt("maximumXp");
-                return I18n.get("gtceu.multiblock.sculk_vat.emi_info.3", minimumXp, maximumXp);
+                return I18n.get("gtceu.multiblock.sculk_vat.emi_info.3", String(minimumXp), String(maximumXp));
             } else {
                 return "";
             }
@@ -291,36 +277,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .workableCasingModel("gtceu:block/casings/gcym/atomic_casing",
                 "gtceu:block/multiblock/loot_fabricator")
     }
-
-    // Universal Crystallizer
-    event.create("universal_crystallizer", "multiblock")
-        .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes("universal_crystallizer")
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
-        .appearanceBlock(GCYMBlocks.CASING_LASER_SAFE_ENGRAVING)
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("XXXXXXX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XXXXXXX")
-            .aisle("XXXXXXX", "G     G", "G     G", "F     F", "G     G", "G     G", "XGGGGGX")
-            .aisle("XXXXXXX", "G CCC G", "F C C F", "FTC CTF", "F C C F", "G CCC G", "XGGGGGX")
-            .aisle("XXXXXXX", "F CCC F", "FT   TF", "FTBRBTF", "FT   TF", "F CCC F", "XGGGGGX")
-            .aisle("XXXXXXX", "G CCC G", "F C C F", "FTC CTF", "F C C F", "G CCC G", "XGGGGGX")
-            .aisle("XXXXXXX", "G     G", "G     G", "F     F", "G     G", "G     G", "XGGGGGX")
-            .aisle("XXX@XXX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XGGGGGX", "XXXXXXX")
-            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("X", Predicates.blocks(GCYMBlocks.CASING_LASER_SAFE_ENGRAVING.get()).setMinGlobalLimited(80)
-                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
-            .where("C", Predicates.blocks(GTBlocks.FUSION_COIL.get()))
-            .where("F", Predicates.frames((doHarderProcessing ? GTMaterials.Berkelium : GTMaterials.Neutronium)))
-            .where("G", Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
-            .where("T", Predicates.blocks((doStoneline ? "gtceu:taranium_block" : "gtceu:actinium_block")))
-            .where("B", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
-            .where("R", Predicates.blocks("kubejs:enderium_micro_miner_core"))
-            .where(" ", Predicates.air())
-            .build())
-        .workableCasingModel("gtceu:block/casings/gcym/laser_safe_engraving_casing",
-            "gtceu:block/multiblock/gcym/large_autoclave")
 
     // Helical Fusion Reactor
     event.create("helical_fusion_reactor", "multiblock")
@@ -673,7 +629,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     // Sculk Biocharger
     event.create("sculk_biocharger", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes(["discharger", "charger"])
+        .recipeTypes("discharger")
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .appearanceBlock(() => Block.getBlock("kubejs:bioalloy_casing"))
         .pattern(definition => FactoryBlockPattern.start()

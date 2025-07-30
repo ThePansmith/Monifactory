@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
             "#gtceu:circuits/uv",
             "gtceu:zpm_field_generator",
             "1x kubejs:quasi_stable_neutron_star",
-            "3x gtceu:gemstone_empowered_gem"
+            "3x minecraft:nether_star"
         )
         .inputFluids("gtceu:omnium 576")
         .itemOutputs("32x kubejs:monic_circuit_board")
@@ -257,7 +257,7 @@ ServerEvents.recipes(event => {
             "kubejs:optical_processing_unit",
             "kubejs:quantum_soc_chip",
             "8x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
-            "8x gtceu:activated_netherite_bolt"
+            "8x gtceu:necrosiderite_bolt"
         )
         .itemOutputs("4x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)

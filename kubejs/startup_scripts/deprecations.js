@@ -42,9 +42,11 @@ deprecateItem("kubejs:matter_processor_assembly", "kubejs:optical_processor_asse
 deprecateItem("kubejs:matter_processor_computer", "kubejs:optical_processor_computer", "Matter Processor Computer")
 deprecateItem("kubejs:matter_processor_mainframe", "kubejs:optical_processor_mainframe", "Matter Processor Mainframe")
 
-// Oganesson
-deprecateItem("kubejs:stabilized_oganesson", "kubejs:stabilized_einsteinium", "Stabilized Oganesson")
-deprecateFluid("gtceu:oganesson", "gtceu:einsteinium", "Oganesson")
+// Oganesson, Einsteinium
+deprecateItem("kubejs:stabilized_oganesson", "kubejs:stabilized_californium", "Stabilized Oganesson")
+deprecateFluid("gtceu:oganesson", "gtceu:californium", "Oganesson")
+deprecateItem("kubejs:stabilized_einsteinium", "kubejs:stabilized_californium", "Stabilized Einsteinium")
+deprecateFluid("gtceu:einsteinium", "gtceu:californium", "Einsteinium")
 
 // Naqfuel old IDs
 deprecateFluid("gtceu:naq_fuel_t1", "gtceu:crude_naquadah_fuel", "T1 Naq Fuel")
@@ -59,3 +61,13 @@ deprecateBlock("gtceu:basic_microverse_projector", "monilabs:basic_microverse_pr
 deprecateBlock("gtceu:advanced_microverse_projector", "monilabs:advanced_microverse_projector", "Advanced Microverse Projector")
 deprecateBlock("gtceu:advanced_microverse_projector_ii", "monilabs:elite_microverse_projector", "Advanced Microverse Projector II")
 deprecateBlock("gtceu:hyperbolic_microverse_projector", "monilabs:hyperbolic_microverse_projector", "Hyperbolic Microverse Projector")
+
+// Osmiridium/Iridosmine
+deprecateItem("gtceu:raw_iridosmineyes", "gtceu:raw_osmiridium", "Raw Iridosmine")
+deprecateItem("gtceu:raw_osmiridiumyes", "gtceu:raw_iridosmine", "Raw Osmiridium")
+
+deprecateItem("gtceu:iridosmineyes_dust", "gtceu:osmiridium_dust", "Iridosmine Dust")
+deprecateItem("gtceu:osmiridiumyes_dust", "gtceu:iridosmine_dust", "Osmiridium Dust")
+
+deprecateBlock("gtceu:glacio_iridosmineyes_ore", "gtceu:glacio_osmiridium_ore", "Glacio Iridosmine Ore")
+deprecateBlock("gtceu:glacio_osmiridiumyes_ore", "gtceu:glacio_iridosmine_ore", "Glacio Osmiridium Ore")

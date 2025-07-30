@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
 
     event.recipes.gtceu.assembler("inert_prismatic_core")
-        .itemInputs("kubejs:chromatically_inert_frame", "12x kubejs:chromatically_reactive_shard", "4x kubejs:hadal_energy_core", "kubejs:heart_of_a_universe")
+        .itemInputs("kubejs:chromatically_inert_frame", "12x kubejs:chromatically_reactive_shard", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(), "kubejs:heart_of_a_universe")
         .itemOutputs("kubejs:inert_prismatic_core")
         .duration(400)
         .EUt(GTValues.VA[GTValues.UHV])

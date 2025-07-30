@@ -81,6 +81,7 @@
 !/config/NuclearCraft/heat_sinks
 !/config/NuclearCraft/common.toml
 !/config/NuclearCraft/fission.toml
+!/config/NuclearCraft/materials.toml
 
 # SolarFlux
 !/config/solarflux

@@ -11,7 +11,7 @@
 			id: "7471AD069CC1E5EC"
 			linked_quest: "5CFBAB5F83E33064"
 			size: 1.5d
-			x: 13.5d
+			x: 13.75d
 			y: 12.0d
 		}
 		{
@@ -2099,8 +2099,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.508452E1A3E09B56.title}"
-			x: 13.5d
-			y: 14.25d
+			x: 13.75d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3B639F4061B00F1A"]
@@ -2328,8 +2328,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7C5CE283172CD952.title}"
-			x: 13.5d
-			y: 16.5d
+			x: 13.75d
+			y: 16.0d
 		}
 	]
 	title: "{moni.chapter.7041EC01A69404E6.title}"

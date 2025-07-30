@@ -4,8 +4,6 @@
 
 ServerEvents.recipes(event => {
     // Milk Chocolate Making
-
-    event.smelting("nuclearcraft:roasted_cocoa_beans", "minecraft:cocoa_beans").id("kubejs:cocoa_beans")
     event.recipes.gtceu.macerator("kubejs:ground_cocoa_nibs")
         .itemInputs("nuclearcraft:roasted_cocoa_beans")
         .itemOutputs("nuclearcraft:ground_cocoa_nibs")
@@ -66,7 +64,7 @@ ServerEvents.recipes(event => {
         .EUt(20)
         .duration(200)
 
-    // Marshmellow
+    // Marshmallow
     event.recipes.gtceu.fluid_solidifier("kubejs:solid_marshmallow")
         .inputFluids(Fluid.of("nuclearcraft:marshmallow", 144))
         .itemOutputs("nuclearcraft:marshmallow")

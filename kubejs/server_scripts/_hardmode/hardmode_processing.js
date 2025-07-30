@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
             )
             .inputFluids(Fluid.of("gtceu:sterilized_growth_medium", 4000))
             .itemOutputs("16x gtceu:wetware_circuit_board")
-            .cleanroom(CleanroomType.CLEANROOM)
+            .cleanroom(CleanroomType.STERILE_CLEANROOM)
             .duration(1200)
             .EUt(30720)
 
@@ -406,6 +406,13 @@ ServerEvents.recipes(event => {
             .itemOutputs("8x kubejs:quantum_flux")
             .duration(100)
             .EUt(480)
+
+        event.recipes.gtceu.chemical_reactor("kubejs:omnic_quantum_flux")
+            .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
+            .inputFluids("gtceu:dragon_breath 500")
+            .itemOutputs("64x kubejs:quantum_flux")
+            .duration(50)
+            .EUt(GTValues.VA[GTValues.EV])
 
         // Rocketry
         event.recipes.gtceu.chemical_reactor("kubejs:chemical_reactor/durene_hm")

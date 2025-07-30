@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
         .cableProperties(GTValues.V[GTValues.UEV], 1, 32, false)
-        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING)
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_SPRING_SMALL)
 
     // UEV moni + gt Supercon
     event.create("hyperdegenerate_darconite")
@@ -54,7 +54,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("meta_null")
         .element(GTElements.get("meta_null"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
-        .fluidPipeProperties(200000, 20000, true, true, true, true)
+        .fluidPipeProperties(15000, 1500, true, true, true, true)
 
     // UEV emitter foil + infinity base
     event.create("transcendental_matrix")

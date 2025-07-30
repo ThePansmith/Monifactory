@@ -3,26 +3,25 @@
  */
 ServerEvents.recipes(event => {
     // Stablized
-    event.recipes.gtceu.fusion_reactor("einsteinium_fusion_berkelium")
-        .inputFluids(Fluid.of("gtceu:berkelium", 16), Fluid.of("gtceu:helium_3", 125))
-        .outputFluids(Fluid.of("gtceu:einsteinium", 16))
+    event.recipes.gtceu.fusion_reactor("berkelium_fusion_curium")
+        .inputFluids(Fluid.of("gtceu:curium", 32), Fluid.of("gtceu:helium", 125))
+        .outputFluids(Fluid.of("gtceu:berkelium", 32))
         .duration(100)
         .EUt(GTValues.VHA[GTValues.ZPM])
         .fusionStartEU(360000000)
-    event.recipes.gtceu.fusion_reactor("einsteinium_fusion_californium")
-        .inputFluids(Fluid.of("gtceu:californium", 16), Fluid.of("gtceu:hydrogen", 125))
-        .outputFluids(Fluid.of("gtceu:einsteinium", 16))
+    event.recipes.gtceu.fusion_reactor("californium_fusion_curium")
+        .inputFluids(Fluid.of("gtceu:curium", 16), Fluid.of("gtceu:hydrogen", 125))
+        .outputFluids(Fluid.of("gtceu:californium", 16))
         .duration(100)
         .EUt(GTValues.VHA[GTValues.ZPM])
         .fusionStartEU(400000000)
 
-    solidify("stabilized_einsteinium", Fluid.of("gtceu:einsteinium", 144), "16x kubejs:stabilized_einsteinium");
     solidify("stabilized_berkelium", Fluid.of("gtceu:berkelium", 144), "8x kubejs:stabilized_berkelium");
     solidify("stabilized_neptunium", Fluid.of("gtceu:neptunium", 144), "2x kubejs:stabilized_neptunium");
     solidify("stabilized_plutonium", Fluid.of("gtceu:plutonium", 144), "2x kubejs:stabilized_plutonium");
-    solidify("stabilized_plutonium_1", Fluid.of("gtceu:plutonium_241", 144), "2x kubejs:stabilized_plutonium");
+    solidify("stabilized_plutonium_241", Fluid.of("gtceu:plutonium_241", 144), "4x kubejs:stabilized_plutonium");
     solidify("stabilized_uranium", Fluid.of("gtceu:uranium", 144), "kubejs:stabilized_uranium");
-    solidify("stabilized_uranium_1", Fluid.of("gtceu:uranium_235", 144), "kubejs:stabilized_uranium");
+    solidify("stabilized_uranium_235", Fluid.of("gtceu:uranium_235", 144), "2x kubejs:stabilized_uranium");
     solidify("stabilized_curium", Fluid.of("gtceu:curium", 144), "4x kubejs:stabilized_curium");
     solidify("stabilized_californium", Fluid.of("gtceu:californium", 144), "8x kubejs:stabilized_californium");
     solidify("stabilized_americium", Fluid.of("gtceu:americium", 144), "4x kubejs:stabilized_americium");

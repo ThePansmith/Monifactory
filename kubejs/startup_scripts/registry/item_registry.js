@@ -147,8 +147,6 @@ StartupEvents.registry("item", event => {
     // Endgame Items
     event.create("neutron_emitter")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
-    event.create("exotic_materials_catalyst").displayName("Exotic Materials Catalyst")
-    event.create("eternal_catalyst").displayName("Eternal Catalyst")
 
 
     // INFINITY AND PRISMAC
@@ -275,12 +273,8 @@ StartupEvents.registry("item", event => {
     event.create("dense_helium").rarity("Uncommon")
     event.create("ultra_dense_helium").rarity("Rare")
 
-    // Einsteinium Isotope for fission production of Es
-    event.create("nuclearcraft:einsteinium_252")
-
     // Stabilized Elements
     const stabilized_elements = [
-        ["einsteinium", "#ce9f00"],
         ["berkelium", "#a33f20"],
         ["neptunium", "#486d7b"],
         ["plutonium", "#ba2727"],
@@ -383,6 +377,9 @@ StartupEvents.registry("item", event => {
     event.create("wither_bone")
     event.create("the_ultimate_material")
 
+    // Crushed Shulker Shell (Shulker Shell recycling)
+    event.create("crushed_shulker_shell")
+    event.create("niobium_palladium_grit")
 
     // Pulsating Items
     event.create("pulsating_mesh")
@@ -391,14 +388,33 @@ StartupEvents.registry("item", event => {
 
     // Sculk Items
     event.create("warden_horn")
-    event.create("sculk_core")
-    event.create("bathyal_energy_core")
-    event.create("abyssal_energy_core")
-    event.create("hadal_energy_core")
     event.create("dischargement_core")
     event.create("warden_heart")
     event.create("hadal_shard")
-
+    const energyCores = [
+        ["bathyal", 2000000], // If changing values remember to also change tooltips
+        ["abyssal", 4000000],
+        ["hadal", 8000000]
+    ]
+    for (const [core, val] of energyCores) {
+        let capacity = val
+        event.create(`${core}_energy_core`)
+            .attachCapability(CapabilityBuilder.ENERGY.customItemStack()
+                .canReceive(i => true)
+                .getEnergyStored(i => i.damageValue)
+                .getMaxEnergyStored(i => capacity)
+                .receiveEnergy((item, amount, sim) => {
+                    let energy = item.damageValue
+                    let recieved = Math.min(capacity - energy, amount)
+                    if (!sim) {item.damageValue += recieved}
+                    return recieved
+                })
+            )
+            .maxStackSize(1)
+            .barWidth(i => i.damageValue ? i.damageValue / capacity * 13 : 0)
+            .barColor(i => Color.RED)
+        event.create(`empty_${core}_energy_core`).texture(`kubejs:item/${core}_energy_core`)
+    }
 
     // Nethline intermediate products
     event.create("dusty_netherite_cluster").texture("kubejs:item/netherite/dusty_netherite_cluster")

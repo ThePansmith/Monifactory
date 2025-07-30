@@ -2,20 +2,6 @@
  * Recipe definitions for advanced microverse projector II missions.
  */
 ServerEvents.recipes(event => {
-    // T5MM mission
-    microverse_mission(event, 5, 3).forEach(builder => {
-        builder
-            .itemInputs(
-                "16x kubejs:stabilized_americium",
-                "kubejs:microversal_alchemy_kit",
-                "4x gtceu:uhv_electric_pump",
-                "8x kubejs:shattered_star_data"
-            )
-            .damageRate(4)
-            .itemOutputs("32x kubejs:stabilized_einsteinium")
-            .requiredMicroverse(1) // Normal
-    })
-
     // T6MM mission (Previously HM-exclusive, no problem with making it available in NM)
     microverse_mission(event, 6, 3).forEach(builder => {
         builder
@@ -23,7 +9,7 @@ ServerEvents.recipes(event => {
                 "16x kubejs:stabilized_curium",
                 "kubejs:microversal_alchemy_kit",
                 "8x gtceu:mythril_ingot",
-                "4x gtceu:void_empowered_block",
+                "4x gtceu:void_block",
             )
             .damageRate(4)
             .itemOutputs(

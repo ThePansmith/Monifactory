@@ -17,21 +17,21 @@ ServerEvents.recipes(event => {
         .itemInputs("4x kubejs:naquadah_fuel_rod")
         .circuit(1)
         .itemOutputs("3x kubejs:hot_naquadah_fuel_rod", "1x kubejs:hot_depleted_naquadah_fuel_rod")
-        .duration(4000)
+        .duration(16000)
         .EUt(-2 * GTValues.V[GTValues.ZPM])
 
     event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah_2")
         .itemInputs("4x kubejs:naquadah_fuel_rod")
         .circuit(2)
         .itemOutputs("2x kubejs:hot_naquadah_fuel_rod", "2x kubejs:hot_depleted_naquadah_fuel_rod")
-        .duration(3750)
+        .duration(15000)
         .EUt(-3 * GTValues.V[GTValues.ZPM])
 
     event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah_3")
         .itemInputs("4x kubejs:naquadah_fuel_rod")
         .circuit(3)
         .itemOutputs("1x kubejs:hot_naquadah_fuel_rod", "3x kubejs:hot_depleted_naquadah_fuel_rod")
-        .duration(3400)
+        .duration(13600)
         .EUt(-4 * GTValues.V[GTValues.ZPM])
 
     // Large Naquadah Reactor recipe

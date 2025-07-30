@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.mixer("experience_concentrate")
-        .itemInputs("3x gtceu:wither_bone_dust")
+        .itemInputs("3x enderio:withering_powder")
         .inputFluids("enderio:xp_juice 1500", "gtceu:bio_diesel")
         .outputFluids("kubejs:experience_concentrate")
         .duration(100)
@@ -59,10 +59,9 @@ ServerEvents.recipes(event => {
         .xpRange(120000, 128000)
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV])
-        .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.discharger("amalgamated_sculk")
-        .itemInputs("kubejs:experience_saturated_microstructure", "kubejs:hadal_energy_core")
+        .itemInputs("kubejs:experience_saturated_microstructure", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT())
         .inputFluids("kubejs:hadal_sculk")
         .itemOutputs("kubejs:amalgamated_sculk")
         .duration(10)
@@ -74,5 +73,4 @@ ServerEvents.recipes(event => {
         .xpRange(64000, 88000)
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV])
-        .cleanroom(CleanroomType.CLEANROOM)
 })
