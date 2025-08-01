@@ -196,4 +196,27 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:dielectric_mirror_solution 288")
         .itemInputs("2x kubejs:carbon_mesh_reinforced_printed_circuit_board", "gtceu:zpm_emitter", "2x gtceu:normal_optical_pipe", "3x gtceu:lumium_foil", "6x gtceu:duranium_bolt")
         .itemOutputs("2x kubejs:optical_processing_unit")
+
+    // Non-PrismaC PSoC Steps
+        event.recipes.gtceu.bender("prism_pane")
+        .duration(40)
+        .EUt(GTValues.VA[GTValues.EV])
+        .itemInputs("kubejs:prism_glass")
+        .itemOutputs("2x kubejs:prism_pane")
+        
+        event.recipes.gtceu.chemical_reactor("psoc_base")
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .inputFluids("gtceu:dielectric_mirror_solution 288")
+        .itemInputs("gtceu:highly_advanced_soc")
+        .notConsumable("gtceu:zpm_emitter")
+        .itemOutputs("kubejs:photonic_soc_base")
+                
+        event.recipes.gtceu.forming_press("psoc_inert")
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .itemInputs("kubejs:photonic_soc_base", "gtceu:lithium_niobate_lens", "kubejs:prism_pane")
+        .itemOutputs("kubejs:photonic_soc_inert")
 })
