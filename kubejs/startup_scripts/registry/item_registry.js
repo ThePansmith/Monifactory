@@ -487,6 +487,7 @@ StartupEvents.registry("item", event => {
     // Photonic SoCs
     event.create("photonic_soc_base")
         .texture("kubejs:item/prismac/opticals/photonic_soc_base")
+        .displayName("Photonic SoC Base")
     event.create("photonic_soc_inert")
         .texture("kubejs:item/prismac/opticals/photonic_soc_inert")
         .displayName("Photonic SoC: §7Inert§r")
@@ -621,4 +622,7 @@ StartupEvents.registry("item", event => {
 
     // Protomatter
     event.create("protomatter").texture("kubejs:item/protomatter")
+
+    // P.R.I.S.M. Panes
+    event.create("prism_pane").texture("kubejs:item/prism_pane").displayName("P.R.I.S.M. Glass Pane")
 })
