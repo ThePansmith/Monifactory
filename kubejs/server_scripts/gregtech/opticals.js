@@ -198,13 +198,13 @@ ServerEvents.recipes(event => {
         .itemOutputs("2x kubejs:optical_processing_unit")
 
     // Non-PrismaC PSoC Steps
-        event.recipes.gtceu.bender("prism_pane")
+    event.recipes.gtceu.bender("prism_pane")
         .duration(40)
         .EUt(GTValues.VA[GTValues.EV])
         .itemInputs("kubejs:prism_glass")
         .itemOutputs("2x kubejs:prism_pane")
-        
-        event.recipes.gtceu.chemical_reactor("psoc_base")
+
+    event.recipes.gtceu.chemical_reactor("psoc_base")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
@@ -212,8 +212,8 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:highly_advanced_soc")
         .notConsumable("gtceu:zpm_emitter")
         .itemOutputs("kubejs:photonic_soc_base")
-                
-        event.recipes.gtceu.forming_press("psoc_inert")
+
+    event.recipes.gtceu.forming_press("psoc_inert")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(400)
         .EUt(GTValues.VA[GTValues.LuV])
