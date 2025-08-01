@@ -234,6 +234,7 @@
 	hsla_steel = false
 	boron = false
 	bismuth = false
+	protactinium_231 = false
 
 [blocks]
 	steel = false
