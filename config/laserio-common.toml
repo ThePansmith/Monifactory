@@ -1,10 +1,10 @@
 
 #General settings
 [general]
-	#Maximum interaction range with nodes when using a Laser Wrench
+	#Maximum interaction range with Nodes when using a Laser Wrench or Card Cloner
 	#Range: > 1
 	max_interaction_range = 10
-	#Maximum distance between two linked nodes
+	#Maximum distance between two connected Nodes
 	#Range: > 2
 	max_nodes_distance = 10
 
