@@ -1,6 +1,6 @@
 features:
   # Whether the Sterile Cleaning Maintenance Hatch is enabled.
-  sterileHatchEnabled: false
+  sterileHatchEnabled: true
 
   # Whether the 64A energy converters are enabled.
   converters64aEnabled: false
@@ -25,4 +25,3 @@ features:
   # Multiplier over IO amount for additional coolant drain.
   # (Setting both this and the base drain amount to 0 disables the coolant mechanic.)
   pterbCoolantIOMultiplier: 5.0E-6
-

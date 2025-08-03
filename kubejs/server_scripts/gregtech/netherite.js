@@ -110,16 +110,10 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.forming_press("inert_nether_compound_ingot")
-        .itemInputs("gtceu:hot_ardite_ingot", "3x gtceu:nether_conduit_dust", "4x kubejs:primal_mana")
+        .itemInputs("gtceu:hot_ardite_ingot", "3x gtceu:nether_conduit_dust", "4x kubejs:primal_mana", "4x kubejs:activated_netherite_scrap", "4x minecraft:gold_ingot")
         .itemOutputs("kubejs:inert_nether_compound_ingot")
         .duration(300)
         .EUt(GTValues.VA[GTValues.UV])
-
-    event.recipes.gtceu.forming_press("netherite_ingot_final")
-        .itemInputs("kubejs:inert_nether_compound_ingot", "gtceu:crystal_matrix_frame", "4x kubejs:activated_netherite_scrap", "4x minecraft:gold_ingot")
-        .itemOutputs("gtceu:activated_netherite_ingot")
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.UHV])
 })
 
 ServerEvents.tags("item", event => {
@@ -129,4 +123,39 @@ ServerEvents.tags("item", event => {
     event.removeAllTagsFrom(oresToRemove.filter((value) => {
         return ResourceLocation.of("minecraft:ancient_debris", ":").compareTo(value) != 0
     }))
+})
+
+ServerEvents.recipes(event => {
+    /**
+     * Helper method for programmatically generating Smithing recipes for Activated Netherite.
+     * @param {String} material Material to generate a list of IDs and material quantities for
+     * @returns an array of entries which consist of [Ingredient ID, count, material count]
+     */
+    let tagPrefixes = (material) => {return [
+        `gtceu:${material}_plate`,
+        `gtceu:double_${material}_plate`,
+        `gtceu:${material}_rotor`,
+        `gtceu:${material}_ingot`,
+        `gtceu:${material}_rod`,
+        `gtceu:${material}_block`,
+        `gtceu:${material}_frame`,
+        `gtceu:${material}_tiny_fluid_pipe`,
+        `gtceu:${material}_small_fluid_pipe`,
+        `gtceu:${material}_normal_fluid_pipe`,
+        `gtceu:${material}_large_fluid_pipe`,
+        `gtceu:${material}_huge_fluid_pipe`,
+        `gtceu:${material}_quadruple_fluid_pipe`,
+        `gtceu:${material}_nonuple_fluid_pipe`,
+    ]}
+
+    let crystal_matrix_forms = tagPrefixes("crystal_matrix")
+    let activated_netherite_forms = tagPrefixes("activated_netherite");
+    activated_netherite_forms.forEach((entry, index) => {
+        event.smithing(
+            entry,
+            "minecraft:netherite_upgrade_smithing_template",
+            crystal_matrix_forms[index],
+            "kubejs:inert_nether_compound_ingot"
+        )
+    })
 })

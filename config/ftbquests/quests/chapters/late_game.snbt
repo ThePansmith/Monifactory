@@ -864,11 +864,13 @@
 				"{moni.quest.04EABD3D2C72D2C5.description3}"
 				""
 				"{moni.quest.04EABD3D2C72D2C5.description4}"
+				""
+				"{moni.quest.04EABD3D2C72D2C5.description5}"
 			]
 			id: "04EABD3D2C72D2C5"
 			rewards: [{
 				id: "75F9C602EE54F24E"
-				item: "kubejs:moni_nickel"
+				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"

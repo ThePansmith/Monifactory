@@ -307,4 +307,17 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:monic_processor_mainframe")
         .duration(3200)
         .EUt(GTValues.VA[GTValues.UIV])
+  
+    // SoC recipe for cheaper Optical Processor
+    event.recipes.gtceu.circuit_assembler("optical_processor_soc")
+        .itemInputs(
+            "kubejs:optical_processing_unit",
+            "kubejs:quantum_soc_chip",
+            "8x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
+            "8x gtceu:necrosiderite_bolt"
+        )
+        .itemOutputs("4x kubejs:optical_processor")
+        .cleanroom(CleanroomType.CLEANROOM)
+        .duration(5 * 20)
+        .EUt(3932160)
 })

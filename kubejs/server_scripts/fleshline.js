@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:saline_antiseptic 10000")
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
-        .cleanroom(CleanroomType.CLEANROOM)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.macerator("rotten_meat")
         .itemInputs("minecraft:rotten_flesh")
@@ -31,5 +31,5 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:fertilizer")
         .duration(300)
         .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.CLEANROOM)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 })

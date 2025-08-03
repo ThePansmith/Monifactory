@@ -59,7 +59,7 @@ if (Platform.isLoaded("fluxnetworks")) {
         ], {
             R: "gtceu:enriched_naquadah_rod",
             G: "#forge:glass_panes",
-            C: "enderio:advanced_capacitor_bank",
+            C: "thermal:energy_cell",
             B: "fluxnetworks:flux_block"
         }).id("fluxnetworks:basicfluxstorage")
         event.shaped("fluxnetworks:herculean_flux_storage", [

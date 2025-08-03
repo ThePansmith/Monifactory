@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
             "2x gtceu:uev_sensor",
             "2x gtceu:uev_emitter",
             "4x gtceu:dense_naquadah_alloy_plate",
-            "64x gtceu:fine_activated_netherite_wire",
+            "64x gtceu:fine_necrosiderite_wire",
             "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire")
         .inputFluids("gtceu:soldering_alloy 11520", "gtceu:crystal_matrix 5760", "gtceu:naquadria 2304")
         .itemOutputs("kubejs:extradimensional_navigator")
