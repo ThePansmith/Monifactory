@@ -107,9 +107,6 @@ ServerEvents.recipes(event => {
     // make it use tags
     event.replaceInput({ id: "enderio:octadic_capacitor" }, "minecraft:glowstone", "#forge:storage_blocks/glowstone")
 
-    // capacitor banks
-    event.replaceInput({ id: "enderio:basic_capacitor_bank" }, "#forge:ingots/iron", "#forge:plates/iron")
-
     // Fused Quartz
     event.recipes.gtceu.alloy_smelter("kubejs:fused_quartz")
         .itemInputs("3x minecraft:quartz")
