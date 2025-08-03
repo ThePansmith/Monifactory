@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/luv"
     })
 
-    event.recipes.gtceu.discharger("kubejs:empty_bathyal_energy_core")
+    event.recipes.gtceu.assembler("kubejs:empty_bathyal_energy_core")
         .itemInputs("4x gtceu:cryolobus_plate", "2x gtceu:europium_plate", "8x gtceu:vanadium_gallium_bolt")
         .inputFluids("gtceu:advanced_soldering_alloy 288")
         .itemOutputs("kubejs:empty_bathyal_energy_core")
