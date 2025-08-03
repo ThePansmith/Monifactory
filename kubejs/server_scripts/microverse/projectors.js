@@ -61,4 +61,12 @@ ServerEvents.recipes(event => {
         A: "#gtceu:circuits/uhv",
         R: "gtceu:computer_monitor_cover"
     }).id("kubejs:shaped/hyperbolic_microverse_projector")
+
+    // Microverse Stability Sensor Hatch
+    event.recipes.gtceu.assembler("microverse_stability_sensor_hatch")
+        .itemInputs("gtceu:ev_machine_hull", "2x gtceu:microversium_plate", "gtceu:ev_sensor", "3x gtceu:red_alloy_screw")
+        .inputFluids("gtceu:soldering_alloy 288")
+        .itemOutputs("monilabs:microverse_stability_sensor_hatch")
+        .duration(20 * 3)
+        .EUt(GTValues.VA[GTValues.EV])
 })
