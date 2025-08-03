@@ -156,12 +156,11 @@
   "item.kubejs.inert_netherite_scrap": "Inert Netherite Scrap",
   "item.kubejs.inert_nether_compound_ingot": "Inert Nether Compound Ingot",
 
-  "item.kubejs.sculk_core": "Sculk Core",
   "item.kubejs.dischargement_core": "Dischargement Core",
-  "item.kubejs.sculk-compatible_trellis_microstructure": "Sculk-Compatible Trellis Microstructure",
-  "item.kubejs.fibrinogenic_sculk_goo": "Fibrinogenic Sculk Goo",
-  "item.kubejs.sculk_saturated_microstructure_pulp": "Sculk-Saturated Microstructure Pulp",
-  "item.kubejs.animated_bioalloy_pulp": "Animated Bioalloy Pulp",
+  "item.kubejs.amalgamated_sculk": "Amalgamated Sculk",
+  "item.kubejs.petri_dish_sterile": "Sterile Petri Dish",
+  "item.kubejs.petri_dish_bacteria": "Bacteria Petri Dish",
+  "item.kubejs.petri_dish_sculk": "Sculk Petri Dish",
 
   "item.kubejs.reactive_dust_mixture": "Reactive Dust Mixture",
   "item.kubejs.inert_dust_mixture": "Inert Dust Mixture",

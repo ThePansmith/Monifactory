@@ -106,6 +106,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .components("7x amethyst", "2x dark_soularium", "4x lapis")
 
+    event.create("sculk_agar")
+        .dust()
+        .color(0x0a3538)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.STICKY, GTMaterialFlags.PHOSPHORESCENT)
+        .components(GTMaterials.PotassiumCyanide.multiply(4), GTMaterials.Biotite.multiply(7), GTMaterials.GelatinMixture.multiply(9))
+
     event.create("sculk_bioalloy")
         .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())

@@ -867,4 +867,11 @@ ServerEvents.recipes(event => {
         .itemOutputs("32x gtceu:smd_diode")
         .duration(200)
         .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.fluid_solidifier("petri_dish_borosilicate")
+        .notConsumable("gtceu:cylinder_casting_mold")
+        .inputFluids("gtceu:borosilicate_glass 18")
+        .itemOutputs("2x gtceu:petri_dish")
+        .duration(4 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
 })
