@@ -62,6 +62,17 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("hostilenetworks:nether_prediction", Text.translatable("hostilenetworks.nether_prediction.tooltip"))
     tooltip.add("hostilenetworks:end_prediction", Text.translatable("hostilenetworks.end_prediction.tooltip"))
 
+    // Conduits
+    tooltip.add("enderio:conductive_conduit", Text.translatable("enderio.conductive_conduit.tooltip"))
+    tooltip.add("enderio:energetic_conduit", Text.translatable("enderio.energetic_conduit.tooltip"))
+    tooltip.add("enderio:vibrant_conduit", Text.translatable("enderio.vibrant_conduit.tooltip"))
+    tooltip.add("enderio:endsteel_conduit", Text.translatable("enderio.endsteel_conduit.tooltip"))
+    tooltip.add("enderio:lumium_conduit", Text.translatable("enderio.lumium_conduit.tooltip"))
+    tooltip.add("enderio:signalum_conduit", Text.translatable("enderio.signalum_conduit.tooltip"))
+    tooltip.add("enderio:enderium_conduit", Text.translatable("enderio.enderium_conduit.tooltip"))
+    tooltip.add("enderio:cryolobus_conduit", Text.translatable("enderio.cryolobus_conduit.tooltip"))
+    tooltip.add("enderio:sculk_superconductor_conduit", Text.translatable("enderio.sculk_superconductor_conduit.tooltip"))
+
     tooltip.add("thermal:device_rock_gen", Text.translatable("thermal.device_rock_gen.tooltip"))
     tooltip.add("thermal:device_water_gen", Text.translatable("thermal.device_water_gen.tooltip"))
 
