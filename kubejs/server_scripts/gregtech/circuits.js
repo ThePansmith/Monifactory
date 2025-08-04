@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("32x kubejs:monic_circuit_board")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
-        .EUt(2000000)
+        .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.large_chemical_reactor("monic_processing_unit")
         .itemInputs("1x kubejs:monic_circuit_board", "6x gtceu:monium_single_wire", "8x gtceu:necrosiderite_foil")
@@ -235,9 +235,9 @@ ServerEvents.recipes(event => {
         .itemOutputs("1x kubejs:monic_processing_unit")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
-        .EUt(3932160)
+        .EUt(600000)
 
-    event.recipes.gtceu.circuit_assembler("monic_processor")
+    event.recipes.gtceu.assembly_line("monic_processor")
         .itemInputs(
             "kubejs:monic_processing_unit",
             "kubejs:contained_singularity",
@@ -248,11 +248,15 @@ ServerEvents.recipes(event => {
         )
         .inputFluids("gtceu:soldering_alloy 576")
         .itemOutputs("2x kubejs:monic_processor")
-        .cleanroom(CleanroomType.CLEANROOM)
         .duration(10 * 20)
-        .EUt(3932160)
+        .EUt(600000)
+        .stationResearch(b => b
+            .researchStack("kubejs:contained_singularity")
+            .CWUt(16)
+            .EUt(GTValues.VA[GTValues.LuV])
+        )
 
-    event.recipes.gtceu.circuit_assembler("monic_processor_assembly")
+    event.recipes.gtceu.assembly_line("monic_processor_assembly")
         .itemInputs(
             "kubejs:monic_processing_unit",
             "2x kubejs:monic_processor",
@@ -263,9 +267,13 @@ ServerEvents.recipes(event => {
         )
         .inputFluids("gtceu:soldering_alloy 1152")
         .itemOutputs("2x kubejs:monic_processor_assembly")
-        .cleanroom(CleanroomType.CLEANROOM)
         .duration(20 * 20)
-        .EUt(3932160)
+        .EUt(600000)
+        .stationResearch(b => b
+            .researchStack("kubejs:monic_processor")
+            .CWUt(96)
+            .EUt(GTValues.VA[GTValues.ZPM])
+        )
 
     event.recipes.gtceu.assembly_line("monic_processor_computer")
         .itemInputs(
@@ -284,7 +292,12 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:soldering_alloy 2304", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("1x kubejs:monic_processor_computer")
         .duration(20 * 20)
-        .EUt(3932160)
+        .EUt(600000)
+        .stationResearch(b => b
+            .researchStack("kubejs:monic_processor_assembly")
+            .CWUt(128)
+            .EUt(GTValues.VA[GTValues.UV])
+        )
 
     event.recipes.gtceu.assembly_line("monic_processor_mainframe")
         .itemInputs(
@@ -307,5 +320,10 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:soldering_alloy 4320", "gtceu:polyethyl_cyanoacrylate 576", "gtceu:omnium 1152")
         .itemOutputs("kubejs:monic_processor_mainframe")
         .duration(3200)
-        .EUt(GTValues.VA[GTValues.UIV])
+        .EUt(GTValues.VA[GTValues.UHV])
+        .stationResearch(b => b
+            .researchStack("kubejs:monic_processor_computer")
+            .CWUt(192)
+            .EUt(GTValues.VA[GTValues.UHV])
+        )
 })
