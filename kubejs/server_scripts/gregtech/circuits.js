@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
         .duration(10 * 20)
         .EUt(150000)
 
-    event.recipes.gtceu.assembly_line("matter_processor_assembly")
+    event.recipes.gtceu.assembly_line("optical_processor_assembly")
         .itemInputs(
             "kubejs:optical_processing_unit",
             "2x kubejs:optical_processor",
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.LuV])
         )
 
-    event.recipes.gtceu.assembly_line("matter_processor_computer")
+    event.recipes.gtceu.assembly_line("optical_processor_computer")
         .itemInputs(
             "kubejs:optical_processing_unit",
             "2x kubejs:optical_processor_assembly",
@@ -179,7 +179,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.ZPM])
         )
 
-    event.recipes.gtceu.assembly_line("matter_processor_mainframe")
+    event.recipes.gtceu.assembly_line("optical_processor_mainframe")
         .itemInputs(
             "2x gtceu:activated_netherite_frame",
             "2x kubejs:optical_processor_computer",
