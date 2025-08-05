@@ -4,21 +4,21 @@
 
 ServerEvents.recipes(event => {
 
-    event.recipes.gtceu.assembler("neutron_emitter_berkelium")
+    event.recipes.gtceu.assembler("neutron_emitter_plutonium")
         .itemInputs("1x nuclearcraft:heavy", "1x gtceu:dense_rhodium_plated_palladium_plate",)
-        .inputFluids("gtceu:berkelium 432")
+        .inputFluids("gtceu:americium 432")
         .itemOutputs("kubejs:neutron_emitter")
         .duration(1600)
         .EUt(GTValues.VA[GTValues.UV])
-    event.recipes.gtceu.assembler("neutron_emitter_californium")
+    event.recipes.gtceu.assembler("neutron_emitter_curium")
         .itemInputs("1x nuclearcraft:heavy", "1x gtceu:dense_rhodium_plated_palladium_plate",)
-        .inputFluids("gtceu:californium 288")
+        .inputFluids("gtceu:curium 288")
         .itemOutputs("kubejs:neutron_emitter")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UV])
-    event.recipes.gtceu.assembler("neutron_emitter_einsteinium")
+    event.recipes.gtceu.assembler("neutron_emitter_californium")
         .itemInputs("1x nuclearcraft:heavy", "1x gtceu:dense_rhodium_plated_palladium_plate",)
-        .inputFluids("gtceu:einsteinium 144")
+        .inputFluids("gtceu:californium 144")
         .itemOutputs("kubejs:neutron_emitter")
         .duration(1200)
         .EUt(GTValues.VA[GTValues.UV])
@@ -156,20 +156,16 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(6)
 
-    // Sterilising Filter Casing
-    event.shaped("4x gtceu:sterilizing_filter_casing", [
-        "PEP",
-        "FBF",
-        "MSR"
+    // Sterile Cleaning Maintenance Hatch
+    event.shaped("gtmutils:sterile_cleaning_maintenance_hatch", [
+        "WAW",
+        "FCF",
     ], {
-        B: "gtceu:blacklight",
-        E: "gtceu:luv_emitter",
-        F: "gtceu:item_filter",
-        M: "gtceu:luv_electric_motor",
-        P: "gtceu:polybenzimidazole_large_fluid_pipe",
-        R: "gtceu:iridium_rotor",
-        S: "gtceu:tritanium_frame"
-    }).id("gtceu:shaped/filter_casing_sterile")
+        A: "gtceu:auto_maintenance_hatch",
+        W: "gtceu:naquadah_double_cable",
+        F: "gtceu:sterilizing_filter_casing",
+        C: "#gtceu:circuits/zpm"
+    })
 
     // FLux Gem
     event.remove({ id: "redstone_arsenal:materials/flux_gem" })
@@ -241,7 +237,7 @@ ServerEvents.recipes(event => {
     // Kubejs Stem Cells
     event.remove({ id: "gtceu:chemical_reactor/stem_cells" })
     event.remove({ id: "gtceu:large_chemical_reactor/stem_cells" })
-    event.recipes.gtceu.chemical_reactor("kubejs_stem_cells")
+    event.recipes.gtceu.chemical_reactor("stem_cells")
         .itemInputs("minecraft:dragon_egg")
         .chancedInput("minecraft:sculk_catalyst", 500, 0)
         .inputFluids("gtceu:sterilized_growth_medium 500", "gtceu:bacteria 500", "enderio:xp_juice 2000")
@@ -249,8 +245,8 @@ ServerEvents.recipes(event => {
         .itemOutputsRanged("gtceu:stem_cells", 0, 64)
         .outputFluids("gtceu:bacterial_sludge 500")
         .duration(6000)
-        .EUt(30720)
-        .cleanroom(CleanroomType.CLEANROOM)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
 
     event.recipes.extendedcrafting.shaped_table("gtceu:zero_point_module", [
@@ -461,7 +457,7 @@ ServerEvents.recipes(event => {
         .EUt(65520)
 
     event.recipes.gtceu.assembler("kubejs:netherite_casing")
-        .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:dense_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
+        .itemInputs("8x gtceu:neutronium_plate", "8x gtceu:large_scale_assembler_casing", "2x gtceu:double_activated_netherite_plate", "6x gtceu:tungsten_steel_rod")
         .itemOutputs("4x monilabs:dimensional_stabilization_netherite_casing")
         .duration(100)
         .EUt(65520)

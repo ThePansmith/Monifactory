@@ -1,6 +1,6 @@
 features:
   # Whether the Sterile Cleaning Maintenance Hatch is enabled.
-  sterileHatchEnabled: false
+  sterileHatchEnabled: true
 
   # Whether the 64A energy converters are enabled.
   converters64aEnabled: false

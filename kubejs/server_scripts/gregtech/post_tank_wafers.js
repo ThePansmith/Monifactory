@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 
     // WIP: Post Tank Boule
     event.recipes.gtceu.electric_blast_furnace("universe_doped_boule")
-        .itemInputs("kubejs:heart_of_a_universe", "64x gtceu:silicon_block", "16x kubejs:stabilized_einsteinium")
+        .itemInputs("kubejs:heart_of_a_universe", "64x gtceu:silicon_block", "16x kubejs:stabilized_berkelium")
         .inputFluids("kubejs:molten_pyrotheum 16000")
         .itemOutputs("kubejs:universe_boule")
         .duration(18000)

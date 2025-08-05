@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.fluid_solidifier("petri_dish_peca")
-        .notConsumable("gtceu:cylinder_casing_mold")
+        .notConsumable("gtceu:cylinder_casting_mold")
         .inputFluids("gtceu:polyethyl_cyanoacrylate 9")
         .itemOutputs("4x gtceu:petri_dish")
         .duration(0.5 * 20)

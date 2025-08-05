@@ -54,7 +54,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("meta_null")
         .element(GTElements.get("meta_null"))
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
-        .fluidPipeProperties(200000, 20000, true, true, true, true)
+        .fluidPipeProperties(15000, 1500, true, true, true, true)
 
     // UEV emitter foil + infinity base
     event.create("transcendental_matrix")

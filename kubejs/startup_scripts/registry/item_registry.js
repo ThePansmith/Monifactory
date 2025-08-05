@@ -273,12 +273,8 @@ StartupEvents.registry("item", event => {
     event.create("dense_helium").rarity("Uncommon")
     event.create("ultra_dense_helium").rarity("Rare")
 
-    // Einsteinium Isotope for fission production of Es
-    event.create("nuclearcraft:einsteinium_252")
-
     // Stabilized Elements
     const stabilized_elements = [
-        ["einsteinium", "#ce9f00"],
         ["berkelium", "#a33f20"],
         ["neptunium", "#486d7b"],
         ["plutonium", "#ba2727"],
@@ -395,6 +391,10 @@ StartupEvents.registry("item", event => {
     event.create("dischargement_core")
     event.create("warden_heart")
     event.create("hadal_shard")
+    event.create("petri_dish_sterile")
+    event.create("petri_dish_sculk")
+    event.create("petri_dish_bacteria")
+    event.create("amalgamated_sculk").texture("kubejs:item/bioalloy/amalgamated_sculk")
     const energyCores = [
         ["bathyal", 2000000], // If changing values remember to also change tooltips
         ["abyssal", 4000000],
@@ -455,13 +455,6 @@ StartupEvents.registry("item", event => {
     event.create("rare_earth_sulfate").texture("kubejs:item/terbium/rare_earth_sulfate")
     event.create("rare_earth_oxide").texture("kubejs:item/terbium/rare_earth_oxide")
     event.create("rare_earth_salt").texture("kubejs:item/terbium/rare_earth_salt")
-
-
-    // Sculk bioalloy processing intermediate products
-    event.create("experience_attuned_microstructure").texture("kubejs:item/bioalloy/experience_attuned_microstructure")
-    event.create("manyullyn_based_trellis_microstructure").displayName("Manyullyn-Based Trellis Microstructure").texture("kubejs:item/bioalloy/manyullyn_based_trellis_microstructure")
-    event.create("experience_saturated_microstructure").texture("kubejs:item/bioalloy/experience_saturated_microstructure")
-    event.create("amalgamated_sculk").texture("kubejs:item/bioalloy/amalgamated_sculk")
 
 
     // Alien Scrapline

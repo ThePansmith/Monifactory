@@ -2211,12 +2211,8 @@
 			y: 4.25d
 		}
 		{
-			dependencies: ["64F45D98FA48D834"]
-			description: [
-				"{moni.quest.09EED0C4106265BC.description1}"
-				""
-				"{moni.quest.09EED0C4106265BC.description2}"
-			]
+			dependencies: ["73C1AB31431B5C11"]
+			description: ["{moni.quest.09EED0C4106265BC.description2}"]
 			id: "09EED0C4106265BC"
 			rewards: [{
 				id: "452D3826F2B6022F"
@@ -2224,21 +2220,14 @@
 				type: "item"
 			}]
 			shape: "square"
-			tasks: [
-				{
-					id: "0C7F0E53B07D41FF"
-					item: "enderio:advanced_capacitor_bank"
-					type: "item"
-				}
-				{
-					id: "4272F1401BFD6E31"
-					item: "thermal:energy_cell"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4272F1401BFD6E31"
+				item: "thermal:energy_cell"
+				type: "item"
+			}]
 			title: "{moni.quest.09EED0C4106265BC.title}"
-			x: 12.0d
-			y: 22.5d
+			x: 12.75d
+			y: 26.25d
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]

@@ -27,7 +27,7 @@ values:
   microminerReturnedOnZeroIntegrity: true
 
   # The efficiency multiplier for the sculk vat. Would make it this many times less efficient at empty/full compared to half.
-  sculkVatEfficiencyMultiplier: 33.0
+  sculkVatEfficiencyMultiplier: 8.0
 
   # Fluid ID for Liquid Experience for the Sculk Vat.
   sculkVatExperienceFluidID: enderio:xp_juice

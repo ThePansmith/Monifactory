@@ -40,7 +40,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // Existing materials that get new material forms
     GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROTOR)
-    GTMaterials.Iridium.addFlags(GTMaterialFlags.GENERATE_ROTOR)
     GTMaterials.Graphite.addFlags(GTMaterialFlags.GENERATE_PLATE)
     GTMaterials.MagnesiumDiboride.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
     GTMaterials.RutheniumTriniumAmericiumNeutronate.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE)
@@ -58,7 +57,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Lead.addFlags(GTMaterialFlags.GENERATE_GEAR)
 
     // Radioactive materials that get liquid forms and/or a new color
-    addFluid(GTMaterials.Einsteinium, $FluidStorageKeys.LIQUID, 1133);
     addFluid(GTMaterials.Berkelium, $FluidStorageKeys.LIQUID, 1259);
     GTMaterials.Berkelium.setMaterialARGB(0xa33f20);
     addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID, 1173);
