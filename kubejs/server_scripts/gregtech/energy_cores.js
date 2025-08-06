@@ -39,9 +39,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("kubejs:empty_bathyal_energy_core")
         .itemInputs("4x gtceu:cryolobus_plate", "2x gtceu:europium_plate", "8x gtceu:vanadium_gallium_bolt")
-        .inputFluids("gtceu:advanced_soldering_alloy 288")
+        .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("kubejs:empty_bathyal_energy_core")
         .duration(10)
+        .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.discharger("kubejs:empty_abyssal_energy_core")
         .itemInputs("4x gtceu:cryococcus_plate", "2x gtceu:tritanium_plate", "8x gtceu:naquadah_alloy_bolt", "kubejs:stabilized_californium", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
