@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x gtceu:europium_large_fluid_pipe")
         .itemInputs("8x gtceu:niobium_titanium_quadruple_cable")
         .itemInputs("8x gtceu:normal_laser_pipe")
-        .inputFluids("gtceu:soldering_alloy 4608")
+        .inputFluids("gtceu:advanced_soldering_alloy 4608")
         .EUt(GTValues.VA[GTValues.ZPM])
         .duration(1200)
         .itemOutputs("gtmutils:pterb_machine")

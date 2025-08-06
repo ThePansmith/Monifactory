@@ -296,7 +296,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 // Advanced Solder
 // TODO: mixer, ABS | processing lines
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("advanced_soldering_alloy")
+    event.create("gtceu:advanced_soldering_alloy")
         .ingot()
         .fluid()
         .color(0x74b59b)
