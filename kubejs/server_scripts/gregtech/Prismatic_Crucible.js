@@ -3,6 +3,27 @@
  */
 
 ServerEvents.recipes(event => {
+    // Controller
+    event.recipes.gtceu.assembly_line("prismatic_crucible")
+        .itemInputs("monilabs:dimensional_stabilization_netherite_casing", "6x gtceu:uv_sensor", "2x #gtceu:circuits/uhv", "2x gtceu:uhv_field_generator", "4x gtceu:uhv_electric_pump", "2x gtceu:dense_trinaquadalloy_plate", "16x gtceu:normal_laser_pipe", "12x gtceu:tritanium_single_cable")
+        .inputFluids("gtceu:soldering_alloy 1728", "gtceu:polyether_ether_ketone 1152", "gtceu:omnium 1728", "gtceu:radiant_blend 4000")
+        .itemOutputs("monilabs:prismatic_crucible")
+        .duration(20 * 120)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .stationResearch(b => b
+            .researchStack("monilabs:prismatic_focus")
+            .CWUt(144)
+            .EUt(GTValues.VA[GTValues.UHV])
+        )
+
+    // Chroma Sensor Hatch
+    event.recipes.gtceu.assembler("chroma_sensor_hatch")
+        .itemInputs("monilabs:dimensional_stabilization_netherite_casing", "3x gtceu:zpm_sensor", "12x gtceu:red_alloy_screw", "2x gtceu:europium_single_cable")
+        .inputFluids("gtceu:omnium 432")
+        .itemOutputs("monilabs:chroma_sensor_hatch")
+        .duration(20 * 10)
+        .EUt(GTValues.VA[GTValues.UV])
+
     /**
      * Chromatic Processing map
      * Includes: PSoCs, PRISM

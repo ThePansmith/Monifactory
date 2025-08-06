@@ -42,36 +42,20 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst_boosted")
         .notConsumable("minecraft:sculk_catalyst")
-        .itemInputs("4x #chipped:deepslate", "4x minecraft:bone_block")
+        .itemInputs("4x #chipped:deepslate", "3x minecraft:bone_block")
         .inputFluids("gtceu:sculk 576", "enderio:xp_juice 2000", "gtceu:berkelium 36")
         .itemOutputs("4x minecraft:sculk_catalyst")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.EV])
         .biome("minecraft:deep_dark")
 
-    // Reduce output of regular GT Bacteria recipe to encourage Sculk Vat
-    event.recipes.gtceu.brewery("bacteria")
-        .itemInputs("4x gtceu:bio_chaff")
-        .inputFluids("gtceu:distilled_water 1000")
-        .outputFluids("gtceu:bacteria 250")
-        .duration(15 * 20)
-        .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
-
-    // Svat recipes
-    event.recipes.gtceu.sculk_vat("bacteria_growth_biomass")
-        .inputFluids("gtceu:bacteria 250", "gtceu:biomass 3750")
-        .outputFluids("gtceu:bacteria 250")
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    event.recipes.gtceu.sculk_vat("sculk_growth")
-        .notConsumable("minecraft:sculk_catalyst")
-        .inputFluids("gtceu:sculk 144", "enderio:xp_juice 200")
-        .itemInputs("1x #moni:sculk_growable")
-        .outputFluids("gtceu:sculk 36")
-        .duration(20 * 6)
-        .EUt(GTValues.VA[GTValues.HV])
+    // Sculk Catalyst Maceration
+    event.recipes.gtceu.macerator("macerate_sculk_catalyst")
+        .itemInputs("1x minecraft:sculk_catalyst")
+        .itemOutputs("1x gtceu:sculk_dust", "2x minecraft:bone_meal")
+        .duration(20 * 5.2)
+        .EUt(GTValues.VA[GTValues.ULV])
+        .category("gtceu:macerator_recycling")
 })
 
 /*

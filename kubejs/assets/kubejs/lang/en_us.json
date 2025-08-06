@@ -156,12 +156,11 @@
   "item.kubejs.inert_netherite_scrap": "Inert Netherite Scrap",
   "item.kubejs.inert_nether_compound_ingot": "Inert Nether Compound Ingot",
 
-  "item.kubejs.sculk_core": "Sculk Core",
   "item.kubejs.dischargement_core": "Dischargement Core",
-  "item.kubejs.sculk-compatible_trellis_microstructure": "Sculk-Compatible Trellis Microstructure",
-  "item.kubejs.fibrinogenic_sculk_goo": "Fibrinogenic Sculk Goo",
-  "item.kubejs.sculk_saturated_microstructure_pulp": "Sculk-Saturated Microstructure Pulp",
-  "item.kubejs.animated_bioalloy_pulp": "Animated Bioalloy Pulp",
+  "item.kubejs.amalgamated_sculk": "Amalgamated Sculk",
+  "item.kubejs.petri_dish_sterile": "Sterile Petri Dish",
+  "item.kubejs.petri_dish_bacteria": "Bacteria Petri Dish",
+  "item.kubejs.petri_dish_sculk": "Sculk Petri Dish",
 
   "item.kubejs.reactive_dust_mixture": "Reactive Dust Mixture",
   "item.kubejs.inert_dust_mixture": "Inert Dust Mixture",
@@ -483,11 +482,22 @@
   "hostilenetworks.nether_prediction.tooltip": "§7Experience per item: 20",
   "hostilenetworks.end_prediction.tooltip": "§7Experience per item: 25",
 
+  "enderio.conductive_conduit.tooltip": "§7Max Output 512 RF/t",
+  "enderio.energetic_conduit.tooltip": "§7Max Output 2,048 RF/t",
+  "enderio.vibrant_conduit.tooltip": "§7Max Output 8,192 RF/t",
+  "enderio.endsteel_conduit.tooltip": "§7Max Output 32,768 RF/t",
+  "enderio.lumium_conduit.tooltip": "§7Max Output 131,072 RF/t",
+  "enderio.signalum_conduit.tooltip": "§7Max Output 524,288 RF/t",
+  "enderio.enderium_conduit.tooltip": "§7Max Output 2,097,152 RF/t",
+  "enderio.cryolobus_conduit.tooltip": "§7Max Output 8,388,608 RF/t",
+  "enderio.sculk_superconductor_conduit.tooltip": "§7Max Output 134,217,728 RF/t",
+
   "thermal.device_rock_gen.tooltip": "§7Must be placed next to lava and water to produce cobblestone.",
   "thermal.device_water_gen.tooltip": "§7Must be placed next to two water source blocks to work.",
 
   "thermal.emi.tooltip": "§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.",
 
+  "gtceu.energy_converter.tooltip": "§4Cannot be used with conduits in EU->FE mode.\n§7Use GT wires or cables instead. They will convert to FE if plugged into a FE Machine.",
   "gtceu.basic_tape.tooltip": "§7Used to wrap up Crates for transport.",
   "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
   "gtceu.robot_arm.tooltip": "§4Advanced control over item transfer not possible with pipes.",
