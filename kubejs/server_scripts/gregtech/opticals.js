@@ -199,10 +199,25 @@ ServerEvents.recipes(event => {
 
     // Non-PrismaC PSoC Steps
 
-    event.recipes.gtceu.cutter("prism_pane")
-        .duration(40)
+    event.recipes.gtceu.("prism_pane_water")
+        .duration(90)
         .EUt(GTValues.VA[GTValues.EV])
         .itemInputs("kubejs:prism_glass")
+        .inputFluids(Fluid.of("minecraft:water", 1000))
+        .itemOutputs("kubejs:prism_pane")
+
+    event.recipes.gtceu.cutter("prism_pane_distilled_water")
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.EV])
+        .itemInputs("kubejs:prism_glass")
+        .inputFluids(Fluid.of("gtceu:distilled_water", 750))
+        .itemOutputs("kubejs:prism_pane")
+
+    event.recipes.gtceu.cutter("prism_pane_lubricant")
+        .duration(45)
+        .EUt(GTValues.VA[GTValues.EV])
+        .itemInputs("kubejs:prism_glass")
+        .inputFluids(Fluid.of("gtceu:lubricant", 250))
         .itemOutputs("kubejs:prism_pane")
 
     event.recipes.gtceu.chemical_reactor("psoc_base")
@@ -210,14 +225,14 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
         .inputFluids("gtceu:dielectric_mirror_solution 144")
-        .itemInputs("gtceu:highly_advanced_soc")
+        .itemInputs("gtceu:activated_netherite_plate", "gtceu:highly_advanced_soc")
         .notConsumable("gtceu:zpm_emitter")
-        .itemOutputs("kubejs:photonic_soc_base")
+        .itemOutputs("4x kubejs:photonic_soc_base")
 
     event.recipes.gtceu.forming_press("psoc_inert")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(400)
         .EUt(GTValues.VA[GTValues.LuV])
-        .itemInputs("gtceu:activated_netherite_plate", "kubejs:photonic_soc_base", "gtceu:lithium_niobate_lens", "kubejs:prism_pane")
-        .itemOutputs("4x kubejs:photonic_soc_inert")
+        .itemInputs("kubejs:photonic_soc_base", "gtceu:lithium_niobate_lens", "kubejs:prism_pane")
+        .itemOutputs("kubejs:photonic_soc_inert")
 })
