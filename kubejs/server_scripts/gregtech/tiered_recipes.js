@@ -18,28 +18,93 @@ const ExtendedOutputItem = Java.loadClass("com.gregtechceu.gtceu.integration.kjs
  * Ratio tells how much more efficient a solder is
  */
 const solders_and_ratios = [
-    // NO TIN
-    ["gtceu:soldering_alloy", 1],           // Tier 0
-    ["gtceu:advanced_soldering_alloy", 2],  // Tier 1
-    ["gtceu:living_soldering_alloy", 4],       // Tier 2
+    ["gtceu:tin", 1],                       // Tier 0
+    ["gtceu:soldering_alloy", 1],           // Tier 1
+    ["gtceu:advanced_soldering_alloy", 2],  // Tier 2
+    ["gtceu:living_soldering_alloy", 4],    // Tier 3
 ]
 
 /**
  * @type {[
- *  recipeId: RegExp,
+ *  predicate: (_ : Internal.RecipeJS) => boolean,
  *  removeBaseRecipe: boolean,
  *  minSolderTier: number,
  *  maxSolderTier?: number,
  * ][]}
  *
- * Remember:
- * Tier 0 includes GTM soldering alloy, we do not want to add duplicate recipes!!!
  */
 const solder_rules = [
-    [/^gtceu:fluid_solidifier\/solidify_soldering_alloy_/, false, 0, 0],
+    // Don't alter any solder solidifying recipes
+    [(javaRecipe) => {
+        return RegExp(/^gtceu:fluid_solidifier\/solidify_(advanced_|living_)?soldering_alloy_/).test(javaRecipe.getId())
+    }, false, 0, 0],
 
-    // Default behaviour:
-    [new RegExp(""), false, 1],
+    // Remove IV+ recipes that use Liquid Tin
+    [(javaRecipe) => {
+        let recipe = JSON.parse(javaRecipe.json.toString())
+        let eut = recipe.tickInputs?.eu?.length
+            ? recipe.tickInputs.eu[0].content
+            : null
+        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            i.content.value.some(v => "tag" in v
+                ? v.tag === "forge:tin"
+                : v.fluid === "gtceu:tin"
+            )
+        )
+        return eut > GTValues.V[GTValues.EV] && hasSolder
+    }, true, 0, 0],
+
+    // Remove LuV+ recipes that use Soldering Alloy
+    [(javaRecipe) => {
+        let recipe = JSON.parse(javaRecipe.json.toString())
+        let eut = recipe.tickInputs?.eu?.length
+            ? recipe.tickInputs.eu[0].content
+            : null
+        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            i.content.value.some(v => "tag" in v
+                ? v.tag === "forge:soldering_alloy"
+                : v.fluid === "gtceu:soldering_alloy"
+            )
+        )
+        return eut > GTValues.V[GTValues.LuV] && hasSolder
+    }, true, 2, 3],
+
+
+    // IV+ recipes that use Soldering Alloy get a recipe with Lead-Free Soldering Alloy
+    [(javaRecipe) => {
+        let recipe = JSON.parse(javaRecipe.json.toString())
+        let eut = recipe.tickInputs?.eu?.length
+            ? recipe.tickInputs.eu[0].content
+            : null
+        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            i.content.value.some(v => "tag" in v
+                ? v.tag === "forge:soldering_alloy"
+                : v.fluid === "gtceu:soldering_alloy"
+            )
+        )
+        return eut > GTValues.V[GTValues.EV] && hasSolder
+    }, false, 2, 3],
+
+
+    // ZPM+ recipes that use Lead-Free Soldering alloy get a recipe with Living Solder
+    [(javaRecipe) => {
+        let recipe = JSON.parse(javaRecipe.json.toString())
+        let eut = recipe.tickInputs?.eu?.length
+            ? recipe.tickInputs.eu[0].content
+            : null
+        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            i.content.value.some(v => "tag" in v
+                ? v.tag === "forge:advanced_soldering_alloy"
+                : v.fluid === "gtceu:advanced_soldering_alloy"
+            )
+        )
+        return eut > GTValues.V[GTValues.LuV] && hasSolder
+    }, false, 3, 4],
+
+    // Default behaviour: Do nothing
+    [(javaRecipe) => {
+        return RegExp("").test(javaRecipe.getId())
+    }, false, 0, 0],
 ]
 
 /** @param {GTJSONRecipe} recipe */
@@ -233,22 +298,23 @@ function generateAlternatives(event, javaRecipe) {
     // Soldering alloy tiers
     if(recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
         i.content.value.some(v => "tag" in v
-            ? v.tag === "forge:soldering_alloy"
-            : v.fluid === "gtceu:soldering_alloy"
+            ? v.tag === "forge:tin" || RegExp(/soldering_alloy/).test(v.tag)
+            : v.fluid === "gtceu:tin" || RegExp(/soldering_alloy/).test(v.fluid)
         )
     )) {
         // Get overrides for this recipe
-        let [, removeBaseRecipe, minSolderTier, maxSolderTier] = solder_rules.find(([idTest]) => idTest.test(recipeId))
-        if (removeBaseRecipe) javaRecipe.remove()
+        let [, removeBaseRecipe, minSolderTier, maxSolderTier] = solder_rules.find(([predicate]) => predicate(javaRecipe))
 
         for (let [solderId, solderEfficiency] of solders_and_ratios.slice(minSolderTier, maxSolderTier)) {
             let r = parseRecipe(recipe)
             r.useMultiplier(() => {
                 // Replace all old solder with better one
                 for (let inp of r.newInputFluids) {
-                    if (inp.id !== "gtceu:soldering_alloy") continue
-                    inp.id = solderId
-                    inp.amount /= solderEfficiency
+                    let entry = solders_and_ratios.find(([id]) => id === inp.id)
+                    if (entry) {
+                        inp.id = solderId
+                        inp.amount /= (solderEfficiency / entry[1])
+                    } else continue;
                 }
             }, solderEfficiency, 2)
             r.register(
@@ -256,6 +322,11 @@ function generateAlternatives(event, javaRecipe) {
                 recipeName + "/" + solderId.split(":", 2)[1],
                 machineName,
             )
+        }
+
+        if (removeBaseRecipe) {
+            javaRecipe.remove()
+            return;
         }
     }
 
