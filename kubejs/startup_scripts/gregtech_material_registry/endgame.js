@@ -110,7 +110,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0x0a3538)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.STICKY, GTMaterialFlags.PHOSPHORESCENT)
-        .components(GTMaterials.PotassiumCyanide.multiply(4), GTMaterials.Biotite.multiply(7), GTMaterials.GelatinMixture.multiply(9))
+        .components(GTMaterials.PotassiumCyanide.multiply(4), GTMaterials.Biotite.multiply(7), GTMaterials.GelatinMixture.multiply(9), GTMaterials.get("experience_attuned").multiply(2))
 
     event.create("sculk_bioalloy")
         .ingot()
