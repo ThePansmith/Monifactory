@@ -54,7 +54,7 @@ const solder_rules = [
         return eut > GTValues.V[GTValues.EV] && hasSolder
     }, true, 0, 0],
 
-    // Remove LuV+ recipes that use Soldering Alloy
+    // Remove UV+ recipes that use Soldering Alloy
     [(javaRecipe) => {
         let recipe = JSON.parse(javaRecipe.json.toString())
         let eut = recipe.tickInputs?.eu?.length
@@ -66,7 +66,7 @@ const solder_rules = [
                 : v.fluid === "gtceu:soldering_alloy"
             )
         )
-        return eut > GTValues.V[GTValues.LuV] && hasSolder
+        return eut > GTValues.V[GTValues.ZPM] && hasSolder
     }, true, 2, 3],
 
 
@@ -86,7 +86,7 @@ const solder_rules = [
     }, false, 2, 3],
 
 
-    // ZPM+ recipes that use Lead-Free Soldering alloy get a recipe with Living Solder
+    // UV+ recipes that use Lead-Free Soldering alloy get a recipe with Living Solder
     [(javaRecipe) => {
         let recipe = JSON.parse(javaRecipe.json.toString())
         let eut = recipe.tickInputs?.eu?.length
@@ -98,7 +98,7 @@ const solder_rules = [
                 : v.fluid === "gtceu:advanced_soldering_alloy"
             )
         )
-        return eut > GTValues.V[GTValues.LuV] && hasSolder
+        return eut > GTValues.V[GTValues.ZPM] && hasSolder
     }, false, 3, 4],
 
     // Default behaviour: Do nothing

@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
             "8x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire",
             "8x gtceu:europium_plate"
         )
-        .inputFluids("gtceu:advanced_soldering_alloy 2304", "gtceu:polybenzimidazole 1152")
+        .inputFluids("gtceu:soldering_alloy 2304", "gtceu:polybenzimidazole 1152")
         .itemOutputs("gtceu:wetware_processor_mainframe")
         .EUt(GTValues.VA[GTValues.ZPM]).duration(2000)
         .stationResearch(b => b
