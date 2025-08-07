@@ -35,13 +35,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .components("platinum", "rare_earth")
             .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
-        event.create("palladium_metallic")
-            .dust()
-            .color(0x808080).iconSet("metallic")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("palladium", "rare_earth")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
-
         event.create("ammonium_hexachloroplatinate")
             .dust()
             .color(0xfef0c2).iconSet("metallic")
@@ -92,13 +85,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .color(0xfffbc5).iconSet("dull")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("platinum_raw")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
-
-        event.create("crude_palladium_residue")
-            .dust()
-            .color(0x909090).iconSet("dull")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("palladium_raw")
             .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
 
         event.create("iridium_group_sludge")
