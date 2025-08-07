@@ -174,7 +174,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .polymer().liquid()
         .color(0x708787)
         .components("1x nitrogen", "6x carbon", "7x hydrogen", "2x oxygen")
-        .fluidPipeProperties(3000, 12000, true, true, true, false)
+        .fluidPipeProperties(1300, 1000, true, true, true, false)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
         .formula("C6H7NO2");
 
@@ -332,8 +332,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid().dust().polymer()
         .color(0x272a2e)
         .components("19x carbon", "12x hydrogen", "3x oxygen")
-        .formula("(C6H4O2)(C13H8O)")
+        .itemPipeProperties(64, 24)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
+        .formula("(C6H4O2)(C13H8O)")
 
     event.create("radiant_blend")
         .liquid()

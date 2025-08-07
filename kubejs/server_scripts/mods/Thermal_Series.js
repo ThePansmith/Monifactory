@@ -481,7 +481,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "#forge:plates/lead",
         B: "#forge:rods/electrum",
-        C: "enderio:advanced_capacitor_bank"
+        C: "enderio:vibrant_crystal"
     }).id("kubejs:energy_cell_frame")
 
     event.remove("thermal:energy_cell");

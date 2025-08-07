@@ -42,9 +42,11 @@ deprecateItem("kubejs:matter_processor_assembly", "kubejs:optical_processor_asse
 deprecateItem("kubejs:matter_processor_computer", "kubejs:optical_processor_computer", "Matter Processor Computer")
 deprecateItem("kubejs:matter_processor_mainframe", "kubejs:optical_processor_mainframe", "Matter Processor Mainframe")
 
-// Oganesson
-deprecateItem("kubejs:stabilized_oganesson", "kubejs:stabilized_einsteinium", "Stabilized Oganesson")
-deprecateFluid("gtceu:oganesson", "gtceu:einsteinium", "Oganesson")
+// Oganesson, Einsteinium
+deprecateItem("kubejs:stabilized_oganesson", "kubejs:stabilized_californium", "Stabilized Oganesson")
+deprecateFluid("gtceu:oganesson", "gtceu:californium", "Oganesson")
+deprecateItem("kubejs:stabilized_einsteinium", "kubejs:stabilized_californium", "Stabilized Einsteinium")
+deprecateFluid("gtceu:einsteinium", "gtceu:californium", "Einsteinium")
 
 // Naqfuel old IDs
 deprecateFluid("gtceu:naq_fuel_t1", "gtceu:crude_naquadah_fuel", "T1 Naq Fuel")

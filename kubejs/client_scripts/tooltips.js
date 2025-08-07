@@ -62,6 +62,17 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("hostilenetworks:nether_prediction", Text.translatable("hostilenetworks.nether_prediction.tooltip"))
     tooltip.add("hostilenetworks:end_prediction", Text.translatable("hostilenetworks.end_prediction.tooltip"))
 
+    // Conduits
+    tooltip.add("enderio:conductive_conduit", Text.translatable("enderio.conductive_conduit.tooltip"))
+    tooltip.add("enderio:energetic_conduit", Text.translatable("enderio.energetic_conduit.tooltip"))
+    tooltip.add("enderio:vibrant_conduit", Text.translatable("enderio.vibrant_conduit.tooltip"))
+    tooltip.add("enderio:endsteel_conduit", Text.translatable("enderio.endsteel_conduit.tooltip"))
+    tooltip.add("enderio:lumium_conduit", Text.translatable("enderio.lumium_conduit.tooltip"))
+    tooltip.add("enderio:signalum_conduit", Text.translatable("enderio.signalum_conduit.tooltip"))
+    tooltip.add("enderio:enderium_conduit", Text.translatable("enderio.enderium_conduit.tooltip"))
+    tooltip.add("enderio:cryolobus_conduit", Text.translatable("enderio.cryolobus_conduit.tooltip"))
+    tooltip.add("enderio:sculk_superconductor_conduit", Text.translatable("enderio.sculk_superconductor_conduit.tooltip"))
+
     tooltip.add("thermal:device_rock_gen", Text.translatable("thermal.device_rock_gen.tooltip"))
     tooltip.add("thermal:device_water_gen", Text.translatable("thermal.device_water_gen.tooltip"))
 
@@ -107,7 +118,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(["gtceu:lv_atomic_reconstructor", "gtceu:mv_atomic_reconstructor", "gtceu:hv_atomic_reconstructor", "gtceu:ev_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.lvev_atomic_reconstructor.desc"))) })
     tooltip.addAdvanced(["gtceu:iv_atomic_reconstructor", "gtceu:luv_atomic_reconstructor", "gtceu:zpm_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.ivzpm_atomic_reconstructor.desc"))) })
     tooltip.addAdvanced(["gtceu:uv_atomic_reconstructor", "gtceu:uhv_atomic_reconstructor", "gtceu:uev_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.uvuiv_atomic_reconstructor.desc"))) })
-    tooltip.add("gtceu:sterilizing_filter_casing", Text.gray(Text.translatable("gtceu.sterilizing_filter_casing.tooltip")))
 
     tooltip.addAdvanced("gtceu:naquadah_reactor", (item, adv, text) => {
         text.add(1, [Text.gray("A reactor that produces energy from "), Text.gold(Text.translate("item.kubejs.naquadah_fuel_rod")), Text.gray(" decay.")])
@@ -222,7 +232,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:tough_alloy_ingot", "§eLiFeB");
     tooltip.add("nuclearcraft:ferroboron_ingot", "§eFe₄B");
     tooltip.add("nuclearcraft:hard_carbon_ingot", "§eFe₃C");
-    tooltip.add("nuclearcraft:thorium_232", "§eTh²³²");
     tooltip.add("nuclearcraft:uranium_233", "§eU²³³");
     tooltip.add("nuclearcraft:plutonium_238", "§ePu²³⁸");
     tooltip.add("nuclearcraft:plutonium_242", "§ePu²⁴²");
@@ -233,15 +242,10 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:americium_243", "§eAm²⁴³");
     tooltip.add("nuclearcraft:curium_243", "§eCm²⁴³");
     tooltip.add("nuclearcraft:curium_245", "§eCm²⁴⁵");
-    tooltip.add("nuclearcraft:curium_246", "§eCm²⁴⁶");
-    tooltip.add("nuclearcraft:curium_247", "§eCm²⁴⁷");
     tooltip.add("nuclearcraft:berkelium_247", "§eBk²⁴⁷");
     tooltip.add("nuclearcraft:berkelium_248", "§eBk²⁴⁸");
-    tooltip.add("nuclearcraft:californium_249", "§eCf²⁴⁹");
-    tooltip.add("nuclearcraft:californium_250", "§eCf²⁵⁰");
     tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
     tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
-    tooltip.add("nuclearcraft:einsteinium_252", "§eEs²⁵²");
 
     tooltip.addAdvanced(["/^kubejs:.+infinity_dust_block$/", "kubejs:infinity_dust_block"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.infinity_dust_block.tooltip"))

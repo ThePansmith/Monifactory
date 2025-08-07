@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xf6ff99).secondaryColor(0xff7400)
         .iconSet("magic")
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .cableProperties(8192, 1, 0, true)
+        .cableProperties(8192, 3, 0, true)
         .fluidPipeProperties(4500, 256, true, true, true, false)
         .components("4x tin_alloy", "2x sterling_silver", "mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
@@ -35,7 +35,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xff6b0f).secondaryColor(0xc32e00)
         .iconSet("magic")
         .blastTemp(4000, "high", GTValues.VA[GTValues.IV], 1400)
-        .cableProperties(32768, 1, 0, true)
+        .cableProperties(32768, 3, 0, true)
         .components("4x annealed_copper", "2x red_steel", "2x red_alloy", "mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
 
@@ -44,7 +44,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x1f6b62).secondaryColor(0x16455f)
         .iconSet("magic")
         .blastTemp(6400, "highest", GTValues.VA[GTValues.LuV], 1600)
-        .cableProperties(131072, 1, 0, true)
+        .cableProperties(131072, 4, 0, true)
         .components("4x lead", "2x platinum", "blue_steel", "osmium", "tantalum", "mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
 

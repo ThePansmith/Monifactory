@@ -46,11 +46,11 @@ ServerEvents.recipes(event => {
     const abyssal = Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT()
     const hadal = Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT()
 
-    Discharge("hadal_solar", "2x solarflux:sp_custom_hadal", ["2x solarflux:sp_custom_abyssal", hadal, abyssal, abyssal], 1000000)
-    Discharge("nt_solar", "solarflux:sp_custom_neutronium", ["solarflux:sp_custom_hadal", "4x gtceu:sculk_superconductor_single_wire", "2x gtceu:omnium_block", hadal, hadal, hadal, hadal], 100000000)
+    Discharge("hadal_solar", "2x solarflux:sp_custom_hadal", ["2x solarflux:sp_custom_abyssal", hadal, abyssal], 1000000)
+    Discharge("nt_solar", "solarflux:sp_custom_neutronium", ["solarflux:sp_custom_hadal", "4x gtceu:sculk_superconductor_single_wire", "2x gtceu:omnium_block", hadal, hadal], 100000000)
     Discharge("abyssal_solar", "2x solarflux:sp_custom_abyssal", ["2x solarflux:sp_custom_bathyal", "4x laserio:energy_overclocker_card_tier_9", hadal, bathyal], 20000000)
     Discharge("bathyal_solar", "2x solarflux:sp_custom_bathyal", ["2x solarflux:sp_8", "4x laserio:energy_overclocker_card_tier_8", "2x gtceu:cryolobus_block", bathyal], 20000000)
-    Discharge("cryococcus_block", "5x gtceu:cryococcus_block", ["5x gtceu:cryolobus_block", "2x kubejs:warden_heart", bathyal, bathyal, bathyal, bathyal], 40000000)
+    Discharge("cryococcus_block", "5x gtceu:cryococcus_block", ["5x gtceu:cryolobus_block", "2x kubejs:warden_heart", bathyal, bathyal], 40000000)
     Discharge("hadal_warp_engine", "kubejs:hadal_warp_engine", ["gtceu:cryococcus_frame", "kubejs:warp_engine", "gtceu:cryococcus_plate", "2x gtceu:cryolobus_plate", "gtceu:zpm_field_generator", "kubejs:hadal_shard", hadal, abyssal], 40000000)
 
     // event.recipes.gtceu.charger("kubejs:sculk_core_charge")
