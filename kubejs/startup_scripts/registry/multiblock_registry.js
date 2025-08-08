@@ -136,13 +136,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setMaxIOSize(2, 0, 3, 1)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL)
-
-    event.create("anti_collider")
-        .category("multiblock")
-        .setEUIO("out")
-        .setMaxIOSize(1,0,2,0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.ALWAYS_FULL)
-        .setIconSupplier(() => GTMachines.get("antimatter_collider").asStack())
 })
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
@@ -900,7 +893,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     event.create("antimatter_collider", "multiblock")
         .machine((holder) => new AntimatterGeneratorMachine(holder))
         .appearanceBlock(() => new Block.getBlock("kubejs:bioalloy_casing"))
-        .recipeTypes(GTRecipeTypes.DUMMY_RECIPES)
+        .recipeTypes(MoniRecipeTypes.ANTIMATTER_COLLIDER_RECIPES)
         .recipeModifier(MoniRecipeModifiers.antiMatterGeneratorRecipeModifier())
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("#MMMMMMMMM#", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "##X#####X##", "#MMMMMMMMM#")
