@@ -64,6 +64,13 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(120)
 
+    event.recipes.gtceu.electrolyzer("sugar_electrolysis")
+        .itemInputs("23x minecraft:sugar")
+        .itemOutputs("12x gtceu:carbon_dust")
+        .outputFluids(Fluid.of("minecraft:water", 11000))
+        .duration(3.2 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
+
     event.recipes.gtceu.chemical_reactor("ammonium_nitrate")
         .inputFluids("gtceu:ammonia 1000", "gtceu:nitric_acid 1000")
         .circuit(5)
