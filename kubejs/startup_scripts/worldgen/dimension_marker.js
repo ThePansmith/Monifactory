@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry("gtceu:dimension_marker", event => {
         .overrideName("Void Dimension")
 
     // Lost Cities
-    event.create("lostcities:lostcities")
+    event.create("lostcities:lostcity")
         .iconSupplier(() => Item.of("telepastries:lost_city_cake").getItem())
         .tier(0)
         .overrideName("Lost Cities")
