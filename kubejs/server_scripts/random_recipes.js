@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
 
     // Lost Cities Air (normal air)
     event.recipes.gtceu.gas_collector("lc_air")
-        .dimension("lostcities:lostcities")
+        .dimension("lostcities:lostcity")
         .outputFluids(Fluid.of("gtceu:air", 10000))
         .circuit(5)
         .EUt(16)

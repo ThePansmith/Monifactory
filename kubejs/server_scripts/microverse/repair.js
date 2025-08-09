@@ -7,11 +7,11 @@
  * Compare with missionDurations of mission_utils.js.
  */
 const repairDurations = {
-    "2half": 80,
-    "4half": 120,
-    "6": 160,
-    "7": 180,
-    "8": 200
+    "2half": 20,
+    "4half": 60,
+    "6": 80,
+    "7": 90,
+    "8": 100
 }
 
 ServerEvents.recipes(event => {
