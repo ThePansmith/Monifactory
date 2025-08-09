@@ -80,7 +80,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("Pb(WO3)O")
 
     // JEAN gasoline ingredients
-    event.create("chlorine_triflouride")
+    event.create("chlorine_trifluoride")
         .gas()
         .color(0xCBC4EF)
         .components("1x chlorine", "3x fluorine")
