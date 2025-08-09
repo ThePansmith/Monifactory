@@ -8,21 +8,6 @@ values:
   # Maximum multiplier to antimatter generation (exclusive).
   antimatterRandomMaxExclusive: 2.0
 
-  # Base amount of EU to generate per millibucket of antimatter.
-  euPerAntimatterMillibucket: 536870912
-
-  # Fluid ID for the antimatter fuel.
-  antimatterFuelID: kubejs:antimatter_fuel
-
-  # Fluid ID for the matter to annihilate with the antimatter fuel.
-  annihilatableMatterID: gtceu:neutronium
-
-  # Fluid ID for another matter to annihilate, but with bonuses to generation.
-  annihilatableMatterBonusID: gtceu:infinity
-
-  # Bonus multiplier for the second tier of annihilant.
-  antimatterSecondTierBonusMultiplier: 4.0
-
   # Whether the microminer is returned upon a microverse reaching zero integrity.
   microminerReturnedOnZeroIntegrity: true
 

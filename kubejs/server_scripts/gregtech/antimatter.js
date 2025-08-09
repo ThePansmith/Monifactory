@@ -77,16 +77,14 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UV])
         )
 
-    // Cosmetic Powergen Recipes
+    // Powergen Recipes
     event.recipes.gtceu.anti_collider("annihilation_neutronium")
-        .notConsumable("gtceu:antimatter_collider")
         .inputFluids("kubejs:antimatter_fuel 1", "gtceu:neutronium 1")
         .duration(1)
-        .EUt(-MoniConfig.INSTANCE.values.euPerAntimatterMillibucket)
+        .EUt(-536870912)
 
     event.recipes.gtceu.anti_collider("annihilation_infinity")
-        .notConsumable("gtceu:antimatter_collider")
         .inputFluids("kubejs:antimatter_fuel 1", "gtceu:infinity 1")
         .duration(1)
-        .EUt(-MoniConfig.INSTANCE.values.euPerAntimatterMillibucket * MoniConfig.INSTANCE.values.antimatterSecondTierBonusMultiplier)
+        .EUt(-536870912 * 4)
 })
