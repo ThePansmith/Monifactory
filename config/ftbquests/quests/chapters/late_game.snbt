@@ -1028,8 +1028,6 @@
 				"{moni.quest.023197AB7CDBDD6E.description1}"
 				""
 				"{moni.quest.023197AB7CDBDD6E.description2}"
-				""
-				"{moni.quest.023197AB7CDBDD6E.description14}"
 			]
 			id: "023197AB7CDBDD6E"
 			rewards: [{
@@ -1200,15 +1198,8 @@
 				"{moni.quest.49B872B193268554.description1}"
 				""
 				"{moni.quest.49B872B193268554.description2}"
-				"{moni.quest.49B872B193268554.description3}"
-				"{moni.quest.49B872B193268554.description4}"
-				"{moni.quest.49B872B193268554.description5}"
 				""
 				"{moni.quest.49B872B193268554.description6}"
-				""
-				"{moni.quest.49B872B193268554.description7}"
-				"{moni.quest.49B872B193268554.description8}"
-				"{moni.quest.49B872B193268554.description9}"
 			]
 			id: "49B872B193268554"
 			rewards: [{

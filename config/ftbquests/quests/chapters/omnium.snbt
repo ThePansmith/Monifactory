@@ -951,19 +951,9 @@
 			y: 17.0d
 		}
 		{
+			description: ["{moni.quest.motenothing.description1}"]
 			id: "6F7D6294E9F311E4"
-			rewards: [{
-				id: "699E49AD73A92C21"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3C7C63A8387F6CF8"
-				item: "kubejs:stabilized_einsteinium"
-				type: "item"
-			}]
-			title: "{moni.quest.6F7D6294E9F311E4.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 5.0d
 			y: 17.0d
 		}
