@@ -703,7 +703,7 @@ ServerEvents.recipes(event => {
     // JEAN Gasoline
     event.recipes.gtceu.large_chemical_reactor("kubejs:jean_gasoline")
         .itemInputs("3x gtceu:netherrack_dust")
-        .inputFluids("gtceu:high_octane_gasoline 8000", "gtceu:rocket_fuel 5000", "gtceu:chlorine_triflouride 2000", "gtceu:tetraethyllead 1000", "gtceu:dragon_breath 500")
+        .inputFluids("gtceu:high_octane_gasoline 8000", "gtceu:rocket_fuel 5000", "gtceu:chlorine_trifluoride 2000", "gtceu:tetraethyllead 1000", "gtceu:dragon_breath 500")
         .outputFluids("gtceu:jean_gasoline 16000")
         .duration(200)
         .EUt(7680)
@@ -724,9 +724,9 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(480)
 
-    event.recipes.gtceu.chemical_reactor("kubejs:chlorine_triflouride")
+    event.recipes.gtceu.chemical_reactor("kubejs:chlorine_trifluoride")
         .inputFluids("gtceu:fluorine 3000", "gtceu:chlorine 1000")
-        .outputFluids("gtceu:chlorine_triflouride 1000")
+        .outputFluids("gtceu:chlorine_trifluoride 1000")
         .duration(60)
         .EUt(7)
 

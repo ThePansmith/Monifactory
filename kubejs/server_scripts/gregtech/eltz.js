@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor("literal_alchemy")
         .itemInputs("3x kubejs:reactive_dust_mixture")
         .notConsumable("extendedcrafting:ultimate_catalyst")
-        .inputFluids("gtceu:chlorine_triflouride 200", "gtceu:mana 150", "gtceu:dragon_breath 100")
+        .inputFluids("gtceu:chlorine_trifluoride 200", "gtceu:mana 150", "gtceu:dragon_breath 100")
         .itemOutputs("2x kubejs:inert_dust_mixture")
         .outputFluids("gtceu:waste_gas_mixture 1000")
         .duration(15)
