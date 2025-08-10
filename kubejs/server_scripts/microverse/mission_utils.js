@@ -98,6 +98,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
         .addData("projector_tier", projectorTier)
         .itemInputs(`kubejs:microminer_t${minerTier}`)
         .duration(Math.round(duration * 20))
+        .addData("duration", Math.round(duration * 20))
         .EUt(EUt)
 
     if(isNaN(minerReturnChance) || minerReturnChance == undefined) {
