@@ -1150,6 +1150,7 @@
   "moni.quest.2BD54071AD23C73C.description1": "Making yourself a space suit is the most important step towards your space adventures.",
   "moni.quest.2BD54071AD23C73C.description2": "This suit lets you breathe in space, which is kind of important.",
   "moni.quest.2BD54071AD23C73C.description3": "If you wish, you can hide the spacesuit from your playermodel via the cosmetic armor buttons.",
+  "moni.quest.2BD54071AD23C73C.description4": "Once your reach &9IV&r, you unlock the &6QuarkTech Armor set&r, which acts as an &bAd Astra&r Netherite Space Suit along with giving other benefits.",
   "moni.quest.2BD54071AD23C73C.title": "&9Space Suit",
   "moni.quest.2C3C6D2038B01948.description1": "The &3Multi Smelter&r is an absolute smelting unit, and is most likely the best furnace &9and alloy smelter&r added by a mod.",
   "moni.quest.2C3C6D2038B01948.description2": "It\u0027s a 3x3x3 multiblock machine capable of &esmelting huge amounts of items per second&r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second.",
@@ -3329,5 +3330,9 @@
   "moni.task.7E297FE5F2C0019A": "Any Polyethylene Item",
   "moni.task.7EB3B2DC5E5A895E": "Any Stablized Microminer",
   "moni.task.7F61249273A9E0CB": " ",
-  "moni.task.7FC04E0CB9796A66": "Any Gas Collector"
+  "moni.task.7FC04E0CB9796A66": "Any Gas Collector",
+  "moni.task1.2BD54071AD23C73C": "Any Space Helmet",
+  "moni.task2.2BD54071AD23C73C": "Any Space Suit",
+  "moni.task3.2BD54071AD23C73C": "Any Space Pants",
+  "moni.task4.2BD54071AD23C73C": "Any Space Boots"
 }
