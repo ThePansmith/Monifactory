@@ -783,7 +783,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             "gtceu:block/multiblock/fusion_reactor")
 
     // Omnidimensional Power Singularity
-    event.create("omnidimensional_power_singularity", "multiblock")
+    event.create("creative_energy_multi", "multiblock")
         .machine((holder) => new CreativeEnergyMultiMachine(holder))
         .appearanceBlock(() => Block.getBlock("monilabs:dimensional_stabilization_netherite_casing"))
         .recipeTypes(["omnidimensional_power_singularity"])
