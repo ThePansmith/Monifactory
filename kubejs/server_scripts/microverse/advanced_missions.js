@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
             .itemInputs("4x kubejs:quantum_flux")
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs("kubejs:advanced_drilling_kit")
-            .itemInputs("gtceu:stainless_steel_drill_head")
+            .itemInputs("gtceu:vanadium_steel_drill_head")
             .itemOutputs(
                 "64x gtceu:raw_pyrochlore",
                 "64x gtceu:raw_pyrochlore",
