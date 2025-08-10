@@ -3,6 +3,19 @@
  * Each of these are a custom KubeJS item or block used in the creation of Micro Miners.
  */
 ServerEvents.recipes(event => {
+    // Universe Creation Data
+    event.recipes.gtceu.extractor("universe_creation_data_hydrogen")
+        .itemInputs("kubejs:ultra_dense_hydrogen")
+        .itemOutputs("kubejs:universe_creation_data")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.extractor("universe_creation_data_helium")
+        .itemInputs("kubejs:ultra_dense_helium")
+        .itemOutputs("2x kubejs:universe_creation_data")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.EV])
+
     // Basic Guidance
     event.shaped("kubejs:basic_micro_miner_guidance_system", [
         "GPG",
@@ -137,7 +150,7 @@ ServerEvents.recipes(event => {
             "64x gtceu:fine_tritanium_wire")
         .inputFluids("gtceu:soldering_alloy 1152", "gtceu:naquadria 576")
         .itemOutputs("kubejs:universal_navigator")
-        .stationResearch(b => b.researchStack("kubejs:stellar_creation_data").CWUt(96, 384000).EUt(491520))
+        .stationResearch(b => b.researchStack("gtceu:gravi_star").CWUt(96, 384000).EUt(491520))
         .duration(6000)
         .EUt(491520)
 
