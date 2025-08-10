@@ -299,6 +299,12 @@
 			x: 29.75d
 			y: 22.25d
 		}
+		{
+			id: "1BA87AD2A58DF6BC"
+			linked_quest: "333D947E71179C20"
+			x: 11.75d
+			y: 24.75d
+		}
 	]
 	quests: [
 		{
@@ -2745,6 +2751,23 @@
 			title: "{moni.quest.10E63A0428E6BA25.title}"
 			x: 23.0d
 			y: 3.5d
+		}
+		{
+			dependencies: [
+				"235C1E5B2C58B5AF"
+				"0F6B344C265D1FBB"
+			]
+			description: ["{moni.quest.0B51A633811472A2.description1}"]
+			id: "0B51A633811472A2"
+			subtitle: "{moni.quest.0B51A633811472A2.subtitle}"
+			tasks: [{
+				id: "11D735664F6DB251"
+				item: "gtceu:living_soldering_alloy_bucket"
+				type: "item"
+			}]
+			title: "{moni.quest.0B51A633811472A2.title}"
+			x: 14.75d
+			y: 23.75d
 		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"

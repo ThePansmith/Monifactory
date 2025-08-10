@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
     // This recipe violates the conservation of mass because the waste gets voided automatically, like certain other distillation recipes.
     event.recipes.gtceu.distillation_tower("rotten_sludge")
         .inputFluids("gtceu:rotten_sludge 10000")
-        .outputFluids("gtceu:fermented_biomass 500", "gtceu:bacteria 1000")
+        .outputFluids("gtceu:fermented_biomass 1750", "gtceu:blood 1000", "gtceu:bacteria 1250")
         .itemOutputs("gtceu:fertilizer")
         .duration(300)
         .EUt(GTValues.VA[GTValues.HV])

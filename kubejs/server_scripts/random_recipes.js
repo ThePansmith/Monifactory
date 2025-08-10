@@ -614,14 +614,6 @@ ServerEvents.recipes(event => {
     // Electrum
     event.replaceInput({ id: /redstone_arsenal/ }, "redstone_arsenal:flux_metal_block", "gtceu:electrum_flux_block")
 
-    // Advanced Soldering Alloy
-    event.recipes.gtceu.mixer("advanced_soldering_alloy")
-        .itemInputs("15x gtceu:bismuth_dust", "11x gtceu:tin_dust", "9x gtceu:zinc_dust", "4x gtceu:germanium_dust")
-        .itemOutputs("39x gtceu:advanced_soldering_alloy_dust")
-        .duration(700)
-        .EUt(480)
-        .circuit(2)
-
     // Neutronium Buff
     event.remove({ id: "gtceu:fusion_reactor/americium_and_naquadria_to_neutronium_plasma" })
     event.recipes.gtceu.fusion_reactor("neutronium_buffed")

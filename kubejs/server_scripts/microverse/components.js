@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
             "2x gtceu:dense_naquadah_alloy_plate",
             "4x gtceu:enriched_naquadah_trinium_europium_duranide_quadruple_wire",
             "64x gtceu:fine_tritanium_wire")
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:naquadria 576")
+        .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:naquadria 576")
         .itemOutputs("kubejs:universal_navigator")
         .stationResearch(b => b.researchStack("gtceu:gravi_star").CWUt(96, 384000).EUt(491520))
         .duration(6000)
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:dense_naquadah_alloy_plate",
             "64x gtceu:fine_necrosiderite_wire",
             "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire")
-        .inputFluids("gtceu:soldering_alloy 11520", "gtceu:crystal_matrix 5760", "gtceu:naquadria 2304")
+        .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:crystal_matrix 5760", "gtceu:naquadria 2304")
         .itemOutputs("kubejs:extradimensional_navigator")
         .stationResearch(b => b.researchStack("kubejs:universal_navigator").CWUt(160, 640000).EUt(3932160))
         .duration(6000)
@@ -322,7 +322,7 @@ ServerEvents.recipes(event => {
             "16x gtceu:enderium_foil",
             "16x gtceu:darmstadtium_bolt",
             "5x gtceu:fusion_glass")
-        .inputFluids("gtceu:soldering_alloy 1728", "gtceu:naquadria 576", "gtceu:polybenzimidazole 288")
+        .inputFluids("gtceu:advanced_soldering_alloy 1728", "gtceu:naquadria 576", "gtceu:polybenzimidazole 288")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(builder => builder
@@ -342,7 +342,7 @@ ServerEvents.recipes(event => {
             "4x kubejs:universe_resistant_neutronium_heavy_plating",
             "12x gtceu:styrene_butadiene_rubber_foil"
         )
-        .inputFluids("gtceu:soldering_alloy 2304", "gtceu:crystal_matrix 576", "gtceu:microversium 1152")
+        .inputFluids("gtceu:advanced_soldering_alloy 2304", "gtceu:crystal_matrix 576", "gtceu:microversium 1152")
         .duration(4000)
         .EUt(GTValues.VA[GTValues.UHV])
         .stationResearch(builder => builder

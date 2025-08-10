@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
     // Dimensional Superassembler
     event.recipes.gtceu.assembly_line("dimensional_superassembler")
         .itemInputs("gtceu:assembly_line", "4x #gtceu:circuits/uev", "16x gtceu:infinity_plate", "4x monilabs:dimensional_stabilization_netherite_casing", "16x kubejs:omnic_matrix_machine_casing", "6x gtceu:uev_conveyor_module", "4x gtceu:uev_robot_arm", "4x gtceu:uev_emitter", "2x gtceu:infinity_frame")
-        .inputFluids("gtceu:soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
+        .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:dimensional_superassembler")
         .duration(6000)
         .EUt(13920000)
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("gtceu:mega_alloy_blast_smelter")
         .itemInputs("gtceu:alloy_blast_smelter", "4x #gtceu:circuits/uhv", "4x gtceu:uv_field_generator", "4x #forge:springs/yttrium_barium_cuprate", "4x #forge:dense_plates/neutronium", "4x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire")
-        .inputFluids("gtceu:soldering_alloy 9216", "gtceu:omnium 5760")
+        .inputFluids("gtceu:advanced_soldering_alloy 9216", "gtceu:omnium 5760")
         .itemOutputs("gtceu:mega_alloy_blast_smelter")
         .duration(4000)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
     // Helical Fusion Reactor
     event.recipes.gtceu.assembly_line("gtceu:helical_fusion_reactor")
         .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:multidimensional_cpu_chip", "64x kubejs:multidimensional_cpu_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_single_wire")
-        .inputFluids("gtceu:soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
+        .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:helical_fusion_reactor")
         .duration(6000)
         .EUt(13920000)
