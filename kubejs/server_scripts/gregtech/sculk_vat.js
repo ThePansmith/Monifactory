@@ -50,6 +50,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("1x kubejs:petri_dish_bacteria")
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.canner("petri_dish_sculk")
         .itemInputs("1x kubejs:petri_dish_sterile", "1x gtceu:sculk_agar_dust")
@@ -57,6 +58,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("1x kubejs:petri_dish_sculk")
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.MV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     // Growth recipes
     event.recipes.gtceu.sculk_vat("bacteria_growth")

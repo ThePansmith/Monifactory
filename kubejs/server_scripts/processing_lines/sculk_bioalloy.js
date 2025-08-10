@@ -30,6 +30,7 @@ ServerEvents.recipes(event => {
         .inputFluids("kubejs:hadal_sculk")
         .itemOutputs("kubejs:amalgamated_sculk")
         .duration(10)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.alloy_blast_smelter("sculk_bioalloy")
         .itemInputs("kubejs:amalgamated_sculk", "4x gtceu:blue_alloy_dust", "2x gtceu:lead_dust", "1x gtceu:lutetium_dust")
@@ -37,6 +38,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(2836)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
     event.recipes.gtceu.alloy_blast_smelter("sculk_bioalloy_gas")
         .itemInputs("kubejs:amalgamated_sculk", "4x gtceu:blue_alloy_dust", "2x gtceu:lead_dust", "1x gtceu:lutetium_dust")
@@ -45,4 +47,5 @@ ServerEvents.recipes(event => {
         .duration(75)
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(2836)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 })
