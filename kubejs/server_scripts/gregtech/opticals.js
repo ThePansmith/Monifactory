@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("gtceu:lubricant", 250))
         .itemOutputs("8x kubejs:prism_pane")
 
-    event.recipes.gtceu.chemical_reactor("psoc_base")
+    event.recipes.gtceu.large_chemical_reactor("psoc_base")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(200)
         .EUt(GTValues.VA[GTValues.LuV])
