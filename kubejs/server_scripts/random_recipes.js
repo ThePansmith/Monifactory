@@ -614,14 +614,6 @@ ServerEvents.recipes(event => {
     // Electrum
     event.replaceInput({ id: /redstone_arsenal/ }, "redstone_arsenal:flux_metal_block", "gtceu:electrum_flux_block")
 
-    // Advanced Soldering Alloy
-    event.recipes.gtceu.mixer("advanced_soldering_alloy")
-        .itemInputs("15x gtceu:bismuth_dust", "11x gtceu:tin_dust", "9x gtceu:zinc_dust", "4x gtceu:germanium_dust")
-        .itemOutputs("39x gtceu:advanced_soldering_alloy_dust")
-        .duration(700)
-        .EUt(480)
-        .circuit(2)
-
     // Neutronium Buff
     event.remove({ id: "gtceu:fusion_reactor/americium_and_naquadria_to_neutronium_plasma" })
     event.recipes.gtceu.fusion_reactor("neutronium_buffed")
@@ -711,7 +703,7 @@ ServerEvents.recipes(event => {
     // JEAN Gasoline
     event.recipes.gtceu.large_chemical_reactor("kubejs:jean_gasoline")
         .itemInputs("3x gtceu:netherrack_dust")
-        .inputFluids("gtceu:high_octane_gasoline 8000", "gtceu:rocket_fuel 5000", "gtceu:chlorine_triflouride 2000", "gtceu:tetraethyllead 1000", "gtceu:dragon_breath 500")
+        .inputFluids("gtceu:high_octane_gasoline 8000", "gtceu:rocket_fuel 5000", "gtceu:chlorine_trifluoride 2000", "gtceu:tetraethyllead 1000", "gtceu:dragon_breath 500")
         .outputFluids("gtceu:jean_gasoline 16000")
         .duration(200)
         .EUt(7680)
@@ -732,9 +724,9 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(480)
 
-    event.recipes.gtceu.chemical_reactor("kubejs:chlorine_triflouride")
+    event.recipes.gtceu.chemical_reactor("kubejs:chlorine_trifluoride")
         .inputFluids("gtceu:fluorine 3000", "gtceu:chlorine 1000")
-        .outputFluids("gtceu:chlorine_triflouride 1000")
+        .outputFluids("gtceu:chlorine_trifluoride 1000")
         .duration(60)
         .EUt(7)
 

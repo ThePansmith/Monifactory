@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
                 .itemInputs("8x minecraft:tnt")
                 .inputFluids("minecraft:lava 4000")
                 .requiredMicroverse(1) // Normal
-                .damageRate(100)
+                .damageRate(50)
                 .updateMicroverse(2) // Hostile
 
         })
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
                 "32x minecraft:gunpowder",
                 "16x minecraft:string",
             )
-            .requiredMicroverse( (doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
     microverse_mission(event, "2half", 1, undefined, undefined, 100).forEach(builder => {
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
                 "48x minecraft:slime_ball",
                 "24x kubejs:guardian_scale",
             )
-            .requiredMicroverse( (doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
     microverse_mission(event, "2half", 1, undefined, undefined, 100).forEach(builder => {
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
                 "16x thermal:blitz_rod",
                 "16x thermal:basalz_rod",
             )
-            .requiredMicroverse( (doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
     microverse_mission(event, "2half", 1, undefined, undefined, 100).forEach(builder => {
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
                 "48x kubejs:wither_bone", // drops of evil aren"t in the pack
                 "32x minecraft:magma_cream",
             )
-            .requiredMicroverse( (doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
     microverse_mission(event, "2half", 1, undefined, undefined, 100).forEach(builder => {
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
                 "16x minecraft:ender_pearl",
                 "16x minecraft:shulker_shell", // shulker pearls aren"t in the pack
             )
-            .requiredMicroverse( (doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
     // T4.5
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
                 "32x minecraft:dragon_breath",
                 "32x kubejs:ender_dragon_scale",
             )
-            .requiredMicroverse( (doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
                 "32x kubejs:ender_dragon_scale",
                 "64x minecraft:dragon_breath",
             )
-            .requiredMicroverse( (doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
                 "16x minecraft:nether_star",
                 "16x minecraft:nether_star",
             )
-            .requiredMicroverse( (doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
                 "6x gtceu:naquadah_block",
                 "4x kubejs:warden_horn",
             )
-            .damageRate(3)
+            .damageRate(10)
             .itemOutputs(
                 "64x gtceu:raw_dulysite",
                 "64x gtceu:raw_dulysite",
@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
                 "6x gtceu:uranium_block",
                 "4x kubejs:warden_horn",
             )
-            .damageRate(3)
+            .damageRate(10)
             .itemOutputs(
                 "64x gtceu:raw_plutonium",
                 "64x gtceu:raw_plutonium",
@@ -221,7 +221,7 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("gtceu:osmium_dust")
-            .damageRate(3)
+            .damageRate(10)
             .itemOutputs(
                 "32x gtceu:raw_iridosmine",
             )
@@ -234,7 +234,7 @@ ServerEvents.recipes(event => {
             .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
             .itemInputs("gtceu:iridium_dust")
-            .damageRate(3)
+            .damageRate(10)
             .itemOutputs(
                 "32x gtceu:raw_osmiridium",
             )

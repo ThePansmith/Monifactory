@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
             .itemInputs("4x kubejs:quantum_flux")
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs("kubejs:advanced_drilling_kit")
-            .itemInputs("gtceu:stainless_steel_drill_head")
+            .itemInputs("gtceu:vanadium_steel_drill_head")
             .itemOutputs(
                 "64x gtceu:raw_pyrochlore",
                 "64x gtceu:raw_pyrochlore",
@@ -168,7 +168,6 @@ ServerEvents.recipes(event => {
                 "32x gtceu:raw_monazite",
                 "32x gtceu:raw_molybdenite",
                 "16x gtceu:raw_powellite",
-                "8x gtceu:rarest_metal_mixture_dust",
             )
             .damageRate(2)
     })
@@ -206,7 +205,7 @@ ServerEvents.recipes(event => {
     // T6MM missions
     microverse_mission(event, 6, 2).forEach(builder => {
         builder
-            .itemInputs("32x kubejs:stabilized_uranium")
+            .itemInputs("32x kubejs:stabilized_neptunium")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:naquadah_alloy_drill_head")
             .itemInputs("16x kubejs:wither_realm_data")

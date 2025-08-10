@@ -140,8 +140,8 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 9, 3).forEach(builder => {
         builder
             .inputFluids("gtceu:oxygen_plasma 10000")
-            .itemInputs("kubejs:gravitational_amplifier", "16x kubejs:shattered_star_data", "64x gtceu:gravi_star")
-            .damageRate(1)
+            .itemInputs("kubejs:gravitational_amplifier", "64x gtceu:gravi_star")
+            .damageRate(4)
             .itemOutputs("16x kubejs:quasi_stable_neutron_star")
             .requiredMicroverse(3) // Shattered
     })
@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
         builder
             .inputFluids("gtceu:helium_plasma 16000")
             .itemInputs("kubejs:universal_collapse_device")
-            .damageRate(25)
+            .damageRate(40)
             .itemOutputs("kubejs:heart_of_a_universe")
             .requiredMicroverse(1) // Normal
             .updateMicroverse(3, true)
