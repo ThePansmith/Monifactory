@@ -506,8 +506,6 @@
   "functionalstorage.storage_controller.tooltip": "§7Previously known as a Storage Controller",
   "functionalstorage.framed_storage_controller.tooltip": "§7Previously known as a Framed Storage Controller",
 
-  "mae2.eu_p2p_deprecation_tooltip": "In 0.13 this will be removed from HM/EM and heavily nerfed in NM!",
-
   "ae2.facade.tooltip": "Crafted with Cable Anchors",
   "ae2.memory_card.tooltip": "Hold in offhand with an empty main hand to set additional inputs on Multi P2Ps",
   "ae2.creative_fluid_cell.tooltip": "Cannot be made using Creative Tank data!\nAfflicted with a bug that the AE2 devs will not fix",
