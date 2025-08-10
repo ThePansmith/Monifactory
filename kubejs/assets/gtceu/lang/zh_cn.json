@@ -436,5 +436,8 @@
     "gtceu.microverse": "微型宇宙计划",
     "gtceu.jei.ore_vein.venus/dilithium": "双锂矿脉（金星）",
     "gtceu.jei.ore_vein.venus/nickel": "镍矿脉（金星）",
-    "material.gtceu.saline_antiseptic": "Saline Antiseptic"
+    "material.gtceu.saline_antiseptic": "盐水消毒剂",
+    "gtceu.jei.ore_vein.mercury/thorium": "钍矿脉（水星）",
+    "gtceu.jei.ore_vein.mercury/titanotungstate": "钛钨酸盐矿脉（水星）",
+    "gtceu.jei.ore_vein.glacio/sodalite": "方钠石矿脉（霜原星）"
 }

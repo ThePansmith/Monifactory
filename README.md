@@ -48,7 +48,6 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 - Disabling RF -> EU conversion, making GT power generation required
 - LaserIO is disabled
 - GT5u-style machine explosions
-- Gregtech Pollution and Hazards
 - Various other nerfs
 
 ## Installation:
