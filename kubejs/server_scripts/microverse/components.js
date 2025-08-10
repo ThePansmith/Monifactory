@@ -4,17 +4,12 @@
  */
 ServerEvents.recipes(event => {
     // Universe Creation Data
-    event.recipes.gtceu.extractor("universe_creation_data_hydrogen")
-        .itemInputs("kubejs:ultra_dense_hydrogen")
+    event.recipes.gtceu.scanner("universe_creation_data_hydrogen")
+        .itemInputs("gtceu:data_stick")
+        .inputFluids("gtceu:hydrogen 16000")
         .itemOutputs("kubejs:universe_creation_data")
         .duration(100)
-        .EUt(GTValues.VA[GTValues.MV])
-
-    event.recipes.gtceu.extractor("universe_creation_data_helium")
-        .itemInputs("kubejs:ultra_dense_helium")
-        .itemOutputs("2x kubejs:universe_creation_data")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.EV])
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Basic Guidance
     event.shaped("kubejs:basic_micro_miner_guidance_system", [
