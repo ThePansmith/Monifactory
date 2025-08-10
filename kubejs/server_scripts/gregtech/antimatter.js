@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.microverse("protomatter_universal")
-        .itemInputs("kubejs:microminer_t10", "kubejs:microversal_alchemy_kit", "5x kubejs:universe_creation_data")
+        .itemInputs("kubejs:microminer_t10", "kubejs:microversal_alchemy_kit", "4x kubejs:ultra_dense_hydrogen", "1x kubejs:ultra_dense_helium")
         .itemOutputs("kubejs:microminer_t10", "64x kubejs:protomatter")
         .addData("projector_tier", 3)
         .requiredMicroverse(3) // Shattered
