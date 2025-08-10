@@ -311,6 +311,20 @@ function generateAlternatives(event, javaRecipe) {
 ServerEvents.recipes(event => {
     let lengthBeforePass = event.addedRecipes.size();
 
+    // Transform sterile cleanroom conditions to regular cleanroom
+    for (let javaRecipe of event.findRecipes({ mod: "gtceu" })) {
+        if (!javaRecipe.json.has("recipeConditions")) continue
+        let recipeConditions = javaRecipe.json.get("recipeConditions").asJsonArray
+        for (let condition of recipeConditions.asList()) {
+            if (condition.asJsonObject.get("type").asString !== "cleanroom") continue
+            if (condition.asJsonObject.has("data"))
+                condition = condition.asJsonObject.get("data")
+            condition.asJsonObject.remove("cleanroom")
+            condition.asJsonObject.addProperty("cleanroom", "cleanroom")
+        }
+        javaRecipe.save()
+    }
+
     // Generate tiered recipes for base GTM
     for (let javaRecipe of event.findRecipes({ mod: "gtceu" })) {
         generateAlternatives(event, javaRecipe)
