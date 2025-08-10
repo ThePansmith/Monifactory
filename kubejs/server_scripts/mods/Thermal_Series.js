@@ -84,13 +84,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.centrifuge("kubejs:resin_centrifuging")
         .inputFluids(Fluid.of("thermal:resin", 400))
         .itemOutputs("gtceu:sticky_resin")
-        .chancedOutput("thermal:rosin", 5000, 500)
+        .chancedOutput("thermal:rosin", 6000, 0)
         .outputFluids(Fluid.of("minecraft:water", 150), Fluid.of("thermal:tree_oil", 100))
         .duration(200).EUt(20)
 
     event.recipes.gtceu.centrifuge("kubejs:sap_centrifuging")
         .inputFluids(Fluid.of("thermal:sap", 200))
-        .chancedOutput("minecraft:sugar", 200, 50)
+        .chancedOutput("minecraft:sugar", 300, 0)
         .outputFluids(Fluid.of("minecraft:water", 190), Fluid.of("thermal:syrup", 10))
         .duration(2000).EUt(2)
 
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
         "SCS",
         "RSR"
     ], {
-        R: "gtceu:restonia_gear",
+        R: "gtceu:restonia_gem",
         S: "gtceu:signalum_plate",
         C: "thermal:upgrade_augment_2"
     })
@@ -481,7 +481,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "#forge:plates/lead",
         B: "#forge:rods/electrum",
-        C: "enderio:advanced_capacitor_bank"
+        C: "enderio:vibrant_crystal"
     }).id("kubejs:energy_cell_frame")
 
     event.remove("thermal:energy_cell");
@@ -623,16 +623,24 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(20)
 
+    // Clathrates
+    event.recipes.gtceu.chemical_reactor("resonant_clathrate")
+        .itemInputs("minecraft:quartz")
+        .inputFluids(Fluid.of("thermal:ender", 250))
+        .itemOutputs("kubejs:resonant_clathrate")
+        .duration(120)
+        .EUt(75)
+
     event.recipes.gtceu.chemical_reactor("energized_clathrate")
         .itemInputs("minecraft:quartz")
-        .inputFluids(Fluid.of("gtceu:glowstone", 250))
+        .inputFluids(Fluid.of("gtceu:glowstone", 288))
         .itemOutputs("kubejs:energized_clathrate")
         .duration(120)
         .EUt(75)
 
     event.recipes.gtceu.chemical_reactor("destabilized_clathrate")
         .itemInputs("minecraft:quartz")
-        .inputFluids(Fluid.of("gtceu:redstone", 250))
+        .inputFluids(Fluid.of("gtceu:redstone", 288))
         .itemOutputs("kubejs:destabilized_clathrate")
         .duration(120)
         .EUt(75)

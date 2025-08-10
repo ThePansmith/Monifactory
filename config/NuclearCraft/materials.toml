@@ -30,7 +30,7 @@
 	silicon_carbide = false
 	zinc = false
 	carbon_manganese = false
-	extreme = false
+	extreme = true
 	shibuichi = false
 	tungsten_carbide = false
 	stainless_steel = false
@@ -46,13 +46,15 @@
 	tough_alloy = true
 	steel = false
 	potassium = false
-	ferroboron = true
+	neutronium = false
+	ferroboron = false
 	titanium = false
 	super_alloy = false
 	cobalt = false
 	aluminum = false
 	manganese = false
 	sic_sic_cmc = false
+	iridium = false
 	hard_carbon = true
 	niobium = false
 	zirconium = false
@@ -70,8 +72,25 @@
 	boron = false
 	magnesium_diboride = false
 	hafnium = false
-	iridium = false
-	neutronium = true
+
+[nuggets]
+	steel = false
+	electrum = false
+	magnesium = false
+	cobalt = false
+	aluminum = false
+	lead = false
+	bronze = false
+	lithium = false
+	platinum = false
+	thorium = false
+	tin = false
+	beryllium = false
+	silver = false
+	uranium = false
+	zirconium = false
+	zinc = false
+	boron = false
 
 [plates]
 	tough_alloy = false
@@ -131,9 +150,9 @@
 	silver = false
 	boron_nitride = false
 	gadolinium = false
-	tough_alloy = false
+	tough_alloy = true
 	steel = false
-	ferroboron = false
+	ferroboron = true
 	cobalt = false
 	strontium_90 = false
 	potassium_hydroxide = false
@@ -144,7 +163,7 @@
 	protactinium_233 = false
 	gold = false
 	europium_155 = false
-	hard_carbon = false
+	hard_carbon = true
 	end_stone = false
 	niobium = false
 	yellowcake = false
@@ -176,7 +195,7 @@
 	tin = false
 	beryllium = false
 	ruthenium_106 = false
-	extreme = false
+	extreme = true
 	shibuichi = false
 	obsidian = false
 	polonium = false
@@ -196,6 +215,7 @@
 	titanium = false
 	dimensional_blend = false
 	thallium = false
+	iridium = false
 	enderium = false
 	sodium_fluoride = false
 	irradiated_borax = false
@@ -214,7 +234,7 @@
 	hsla_steel = false
 	boron = false
 	bismuth = false
-	iridium = false
+	protactinium_231 = false
 
 [blocks]
 	steel = false
@@ -247,29 +267,10 @@
 	silicon = false
 	villiaumite = false
 	fluorite = false
-	rhodochrosite = false
+	rhodochrosite = true
 	boron_nitride = false
 
 [forge_tag_priority]
 	#Priority of mods to resolve forge tags to itemstack and fluidstack.
-	mods_priority = ["gtceu", "nuclearcraft"]
-
-[nuggets]
-	steel = false
-	electrum = false
-	magnesium = false
-	cobalt = false
-	aluminum = false
-	lead = false
-	bronze = false
-	lithium = false
-	platinum = false
-	thorium = false
-	tin = false
-	beryllium = false
-	silver = false
-	uranium = false
-	zirconium = false
-	zinc = false
-	boron = false
+	mods_priority = ["minecraft", "nuclearcraft", "mekanism", "immersiveengineering", "tconstruct"]
 

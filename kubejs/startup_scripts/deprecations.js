@@ -28,3 +28,49 @@ deprecateItem("kubejs:crushed_ancient_debris", "gtceu:crushed_netherite_scrap_or
 
 // Saline Antiseptic (rename after typo)
 deprecateFluid("gtceu:saline_antisceptic", "gtceu:saline_antiseptic", "Saline Antiseptic")
+
+// Old Nethline Items
+deprecateItem("kubejs:diamond_lattice", "6x minecraft:diamond", "Diamond Lattice")
+deprecateItem("kubejs:purified_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Purified Ancient Debris Dust")
+deprecateItem("kubejs:processed_ancient_debris_dust", "gtceu:netherite_scrap_dust", "Processed Ancient Debris Dust")
+deprecateItem("kubejs:inert_netherite_scrap", "kubejs:activated_netherite_scrap", "Inert Netherite Scrap")
+
+// Matter Circuits
+deprecateItem("kubejs:matter_processing_unit", "kubejs:optical_processing_unit", "Matter Processing Unit")
+deprecateItem("kubejs:matter_processor", "kubejs:optical_processor", "Matter Processor")
+deprecateItem("kubejs:matter_processor_assembly", "kubejs:optical_processor_assembly", "Matter Processor Assembly")
+deprecateItem("kubejs:matter_processor_computer", "kubejs:optical_processor_computer", "Matter Processor Computer")
+deprecateItem("kubejs:matter_processor_mainframe", "kubejs:optical_processor_mainframe", "Matter Processor Mainframe")
+
+// Oganesson, Einsteinium
+deprecateItem("kubejs:stabilized_oganesson", "kubejs:stabilized_californium", "Stabilized Oganesson")
+deprecateFluid("gtceu:oganesson", "gtceu:californium", "Oganesson")
+deprecateItem("kubejs:stabilized_einsteinium", "kubejs:stabilized_californium", "Stabilized Einsteinium")
+deprecateFluid("gtceu:einsteinium", "gtceu:californium", "Einsteinium")
+
+// Naqfuel old IDs
+deprecateFluid("gtceu:naq_fuel_t1", "gtceu:crude_naquadah_fuel", "T1 Naq Fuel")
+deprecateFluid("gtceu:naq_fuel_t2", "gtceu:naquadah_fuel", "T2 Naq Fuel")
+
+// Coremod stuff
+deprecateBlock("kubejs:microverse_casing", "monilabs:microverse_casing", "Microverse Casing")
+deprecateBlock("kubejs:dimensional_stabilization_netherite_casing", "monilabs:dimensional_stabilization_netherite_casing", "Dimensional Stabilization Netherite Casing")
+deprecateBlock("kubejs:cryolobus_casing", "monilabs:cryolobus_casing", "Cryolobus Casing")
+
+deprecateBlock("gtceu:basic_microverse_projector", "monilabs:basic_microverse_projector", "Basic Microverse Projector")
+deprecateBlock("gtceu:advanced_microverse_projector", "monilabs:advanced_microverse_projector", "Advanced Microverse Projector")
+deprecateBlock("gtceu:advanced_microverse_projector_ii", "monilabs:elite_microverse_projector", "Advanced Microverse Projector II")
+deprecateBlock("gtceu:hyperbolic_microverse_projector", "monilabs:hyperbolic_microverse_projector", "Hyperbolic Microverse Projector")
+
+// Osmiridium/Iridosmine
+deprecateItem("gtceu:raw_iridosmineyes", "gtceu:raw_osmiridium", "Raw Iridosmine")
+deprecateItem("gtceu:raw_osmiridiumyes", "gtceu:raw_iridosmine", "Raw Osmiridium")
+
+deprecateItem("gtceu:iridosmineyes_dust", "gtceu:osmiridium_dust", "Iridosmine Dust")
+deprecateItem("gtceu:osmiridiumyes_dust", "gtceu:iridosmine_dust", "Osmiridium Dust")
+
+deprecateBlock("gtceu:glacio_iridosmineyes_ore", "gtceu:glacio_osmiridium_ore", "Glacio Iridosmine Ore")
+deprecateBlock("gtceu:glacio_osmiridiumyes_ore", "gtceu:glacio_iridosmine_ore", "Glacio Osmiridium Ore")
+
+// Chlorine Trifluoride
+deprecateFluid("gtceu:chlorine_triflouride", "gtceu:chlorine_trifluoride", "Chlorine Trifluoride")

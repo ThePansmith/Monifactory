@@ -481,19 +481,19 @@
 						items: [
 							{
 								Count: 1b
+								id: "nuclearcraft:plutonium_242"
+							}
+							{
+								Count: 1b
 								id: "nuclearcraft:plutonium_238"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:plutonium_239"
+								id: "gtceu:plutonium_ingot"
 							}
 							{
 								Count: 1b
 								id: "gtceu:plutonium_241_ingot"
-							}
-							{
-								Count: 1b
-								id: "nuclearcraft:plutonium_242"
 							}
 						]
 					}
@@ -568,10 +568,8 @@
 				"{moni.quest.0E5E5E647F378D02.description2}"
 				""
 				"{moni.quest.0E5E5E647F378D02.description3}"
-				""
-				"{moni.quest.0E5E5E647F378D02.description4}"
 			]
-			icon: "nuclearcraft:fuel_curium_lecm_245"
+			icon: "nuclearcraft:curium_245"
 			id: "0E5E5E647F378D02"
 			rewards: [{
 				id: "78C58916BAFD010E"
@@ -612,13 +610,13 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["0E5E5E647F378D02"]
+			dependencies: ["7D7B34CF5145F971"]
 			description: [
 				"{moni.quest.18B28DC43ACAF768.description1}"
 				""
 				"{moni.quest.18B28DC43ACAF768.description2}"
 			]
-			icon: "nuclearcraft:fuel_berkelium_heb_248"
+			icon: "nuclearcraft:berkelium_248"
 			id: "18B28DC43ACAF768"
 			rewards: [{
 				id: "121513CD4E6D9BA8"
@@ -647,21 +645,19 @@
 				type: "item"
 			}]
 			title: "{moni.quest.18B28DC43ACAF768.title}"
-			x: 2.0d
-			y: -10.25d
+			x: 0.5d
+			y: -11.0d
 		}
 		{
-			dependencies: ["0E5E5E647F378D02"]
+			dependencies: ["6728FB92FD3A2084"]
 			description: [
 				"{moni.quest.79197A2CD8E435B2.description1}"
 				""
 				"{moni.quest.79197A2CD8E435B2.description2}"
 				""
 				"{moni.quest.79197A2CD8E435B2.description3}"
-				""
-				"{moni.quest.79197A2CD8E435B2.description4}"
 			]
-			icon: "nuclearcraft:fuel_californium_hecf_251"
+			icon: "nuclearcraft:californium_251"
 			id: "79197A2CD8E435B2"
 			rewards: [{
 				id: "461C74DA073F95A0"
@@ -675,10 +671,6 @@
 					id: "itemfilters:or"
 					tag: {
 						items: [
-							{
-								Count: 1b
-								id: "nuclearcraft:californium_249"
-							}
 							{
 								Count: 1b
 								id: "nuclearcraft:californium_250"
@@ -698,8 +690,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.79197A2CD8E435B2.title}"
-			x: 2.0d
-			y: -8.75d
+			x: 0.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["7D7B34CF5145F971"]
@@ -728,6 +720,7 @@
 			dependencies: [
 				"79197A2CD8E435B2"
 				"18B28DC43ACAF768"
+				"0E5E5E647F378D02"
 			]
 			description: [
 				"{moni.quest.3616092A2954FEE0.description1}"
@@ -746,7 +739,7 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.3616092A2954FEE0.title}"
-			x: 3.5d
+			x: 2.5d
 			y: -9.5d
 		}
 		{
@@ -818,6 +811,11 @@
 				"{moni.quest.3A69EE21B3089929.description2}"
 			]
 			id: "3A69EE21B3089929"
+			rewards: [{
+				id: "3F51DC3B35CA6470"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0C1D0A754607F817"
 				item: "gtceu:normal_optical_pipe"
@@ -882,6 +880,23 @@
 					item: "gtceu:computation_transmitter_hatch"
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "3E264A85174F9B37"
+					item: "gtceu:hpca_computation_component"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3D46E7A04715342E"
+					item: "gtceu:hpca_active_cooler_component"
+					type: "item"
+				}
+				{
+					id: "1B8F146BECFFFC5D"
+					item: "gtceu:hpca_empty_component"
+					type: "item"
+				}
 			]
 			title: "{moni.quest.37BE175EEC2ABD59.title}"
 			x: -2.5d
@@ -900,6 +915,11 @@
 			]
 			icon: "gtceu:research_station"
 			id: "1109CFC5D47FC011"
+			rewards: [{
+				id: "0D93EA62B529457F"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3AD27DA0F09B8C56"

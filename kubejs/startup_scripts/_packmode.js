@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 900
 /**
  * Pack mode management.
  * Handles the interpretation of packmode.json to determine the global pack mode.
@@ -100,9 +100,7 @@ On the flipside, if you create your own fix for an issue you encounter, then any
 global.doAssemblyLineOrderingWarning = packMode == "Hard" || packMode == "Expert";
 global.doBoilers = packMode == "Normal" || packMode == "Hard";
 global.doCompacting = packMode == "Normal" || packMode == "Hard";
-global.doConduits = packMode == "Normal" || packMode == "Hard";
 global.doConverters = packMode == "Normal" || packMode == "Hard";
-global.doHarderNaqFuel = packMode == "Hard" || packMode == "Expert";
 global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";
 global.doHarderRecipes = packMode == "Hard" || packMode == "Expert";
@@ -118,18 +116,17 @@ global.doStoneline = packMode == "Hard" || packMode == "Expert";
 global.doFluxbore = packMode == "Normal" || packMode == "Hard";
 global.doHarderFluxBore = packMode == "Normal" || packMode == "Hard";
 global.doQuantumCoolant = packMode == "Hard" || packMode == "Expert";
+global.doHostileMicroverse = packMode == "Hard" || packMode == "Expert";
 
 
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
 const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;
 const doCompacting = !!global.doCompacting;
-const doConduits = !!global.doConduits;
 const doConverters = !!global.doConverters;
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
 const doHarderRecipes = !!global.doHarderRecipes;
-const doHarderNaqFuel = !!global.doHarderNaqFuel;
 const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
 const doHatchRevert = !!global.doHatchRevert;
 const doHNN = !!global.doHNN;
@@ -142,3 +139,4 @@ const doStoneline = !!global.doStoneline;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
 const doQuantumCoolant = !!global.doQuantumCoolant;
+const doHostileMicroverse = !!global.doHostileMicroverse;

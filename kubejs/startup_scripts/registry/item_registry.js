@@ -137,44 +137,75 @@ StartupEvents.registry("item", event => {
     event.create("wither_realm_data").displayName("§dWither Realm Data")
     event.create("deep_dark_data").displayName("§dDeep Dark Data")
     event.create("lair_of_the_warden_data").displayName("§dLair Of The Warden Data")
-    event.create("stellar_creation_data").displayName("§bStellar Creation Data")
     event.create("universe_creation_data").displayName("§dUniverse Creation Data")
-    event.create("shattered_star_data").displayName("§dShattered Star Data")
-    event.create("shattered_universe_data").displayName("§dShattered Universe Data")
-    event.create("corrupted_universe_data").displayName("§dCorrupted Universe Data")
-
-
-    // Creative Data
-    event.create("omnic_data")
-    event.create("creative_storage_data")
-    event.create("creative_computation_data")
-    event.create("creative_energy_data")
-
-    // Infinity Fluid Cell Base
 
 
     // Endgame Items
-    event.create("diamond_lattice")
     event.create("neutron_emitter")
-    event.create("ultimate_gem").displayName("§dUltimate Gem").glow(true)
-    event.create("mote_of_omnium").displayName("Mote of Omnium")
-        .glow(true).rarity("epic")
     event.create("heart_of_a_universe").displayName("§dHeart Of A Universe")
-    event.create("exotic_materials_catalyst").displayName("Exotic Materials Catalyst")
-    event.create("eternal_catalyst").displayName("Eternal Catalyst")
 
 
-    // Infinity
-    event.create("infinity_catalyst").rarity("epic")
-    event.create("dormant_furious_infinity_catalyst")
-    event.create("furious_infinity_catalyst").rarity("epic")
-    event.create("inert_serene_infinity_catalyst")
-    event.create("serene_infinity_catalyst").rarity("epic")
-    event.create("dormant_infinity_compound_ingot")
+    // INFINITY AND PRISMAC
+
+    // APC
+    event.create("inert_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/0_blank_core")
+    event.create("red_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/1_red_core")
+    event.create("yellow_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/2_yellow_core")
+    event.create("green_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/3_green_core")
+    event.create("cyan_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/4_cyan_core")
+    event.create("blue_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/5_blue_core")
+    event.create("active_prismatic_core").rarity("rare")
+        .texture("kubejs:item/prismac/cores/6_prismatic_core")
+
+    // SPC
+    event.create("orange_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/7_orange_core")
+    event.create("lime_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/8_lime_core")
+    event.create("teal_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/9_teal_core")
+    event.create("azure_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/a_azure_core")
+    event.create("indigo_prismatic_core").rarity("uncommon")
+        .texture("kubejs:item/prismac/cores/b_indigo_core")
+    event.create("supercritical_prismatic_core").rarity("epic")
+        .texture("kubejs:item/prismac/cores/c_supercritical_prismatic_core")
+
+    // Callibration Devices
+    event.create("chromatic_stabilizer")
+        .texture("kubejs:item/prismac/chromatic_stabilizer")
+
+    event.create("chromatic_capacitor_empty")
+        .texture("kubejs:item/prismac/chromatic_capacitor_empty")
+        .displayName("Chromatic Capacitor: §7Empty§r")
+    event.create("chromatic_capacitor_red")
+        .texture("kubejs:item/prismac/chromatic_capacitor_red")
+        .displayName("Chromatic Capacitor: §4Red§r")
+    event.create("chromatic_capacitor_yellow")
+        .texture("kubejs:item/prismac/chromatic_capacitor_yellow")
+        .displayName("Chromatic Capacitor: §eYellow§r")
+    event.create("chromatic_capacitor_green")
+        .texture("kubejs:item/prismac/chromatic_capacitor_green")
+        .displayName("Chromatic Capacitor: §2Green§r")
+    event.create("chromatic_capacitor_cyan")
+        .texture("kubejs:item/prismac/chromatic_capacitor_cyan")
+        .displayName("Chromatic Capacitor: §bCyan§r")
+    event.create("chromatic_capacitor_blue")
+        .texture("kubejs:item/prismac/chromatic_capacitor_blue")
+        .displayName("Chromatic Capacitor: §1Blue§r")
+    event.create("chromatic_capacitor_magenta")
+        .texture("kubejs:item/prismac/chromatic_capacitor_magenta")
+        .displayName("Chromatic Capacitor: §dMagenta§r")
 
 
     // Monium
-    event.create("field_stabilised_omnic_pulsar_compound")
+    event.create("field_stabilised_omnic_pulsar_compound") // TODO: rename to Field-Stabilized Prismatic Pulsar Compound
     event.create("quasi_stable_neutron_star").displayName("Quasi-Stable Neutron Star")
 
 
@@ -190,6 +221,21 @@ StartupEvents.registry("item", event => {
     event.create("infinity_screwdriver").rarity("epic").maxStackSize(1)
     event.create("infinity_wrench").rarity("epic").maxStackSize(1)
     event.create("infinity_wire_cutter").rarity("epic").maxStackSize(1)
+
+    // Optical Circuit intermediates
+    event.create("sapphire_seed_crystal")
+    event.create("sapphire_boule")
+    event.create("sapphire_wafer")
+    event.create("coated_sapphire_wafer")
+    event.create("engraved_sapphire_wafer")
+    event.create("incomplete_sapphire_wafer")
+    event.create("completed_optical_wafer")
+    event.create("optical_chip")
+    event.create("electro_optic_modulator")
+    event.create("carbon_mesh_reinforced_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/carbon_mesh_reinforced_circuit_board" })
+    event.create("carbon_mesh_reinforced_printed_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/carbon_mesh_reinforced_printed_circuit_board" })
 
 
     // Solidified Elements
@@ -225,15 +271,13 @@ StartupEvents.registry("item", event => {
 
     // Stabilized Elements
     const stabilized_elements = [
-        ["einsteinium", "#ce9f00"],
         ["berkelium", "#a33f20"],
         ["neptunium", "#486d7b"],
         ["plutonium", "#ba2727"],
         ["uranium", "#1d891d"],
         ["curium", "#58307f"],
         ["californium", "#7d0222"],
-        ["americium", "#287869"],
-        ["oganesson", "#443936"]
+        ["americium", "#287869"]
     ]
 
     for (const [element, elemColor] of stabilized_elements) {
@@ -329,6 +373,9 @@ StartupEvents.registry("item", event => {
     event.create("wither_bone")
     event.create("the_ultimate_material")
 
+    // Crushed Shulker Shell (Shulker Shell recycling)
+    event.create("crushed_shulker_shell")
+    event.create("niobium_palladium_grit")
 
     // Pulsating Items
     event.create("pulsating_mesh")
@@ -337,60 +384,73 @@ StartupEvents.registry("item", event => {
 
     // Sculk Items
     event.create("warden_horn")
-    event.create("sculk_core")
-    event.create("mesol_energy_core")
-    event.create("bathyal_energy_core")
-    event.create("abyssal_energy_core")
-    event.create("hadal_energy_core")
     event.create("dischargement_core")
     event.create("warden_heart")
     event.create("hadal_shard")
-
+    event.create("petri_dish_sterile")
+    event.create("petri_dish_sculk")
+    event.create("petri_dish_bacteria")
+    event.create("amalgamated_sculk").texture("kubejs:item/bioalloy/amalgamated_sculk")
+    const energyCores = [
+        ["bathyal", 2000000], // If changing values remember to also change tooltips
+        ["abyssal", 4000000],
+        ["hadal", 8000000]
+    ]
+    for (const [core, val] of energyCores) {
+        let capacity = val
+        event.create(`${core}_energy_core`)
+            .attachCapability(CapabilityBuilder.ENERGY.customItemStack()
+                .canReceive(i => true)
+                .getEnergyStored(i => i.damageValue)
+                .getMaxEnergyStored(i => capacity)
+                .receiveEnergy((item, amount, sim) => {
+                    let energy = item.damageValue
+                    let recieved = Math.min(capacity - energy, amount)
+                    if (!sim) {item.damageValue += recieved}
+                    return recieved
+                })
+            )
+            .maxStackSize(1)
+            .barWidth(i => i.damageValue ? i.damageValue / capacity * 13 : 0)
+            .barColor(i => Color.RED)
+        event.create(`empty_${core}_energy_core`).texture(`kubejs:item/${core}_energy_core`)
+    }
 
     // Nethline intermediate products
-    event.create("purified_ancient_debris_dust").texture("kubejs:item/netherite/purified_ancient_debris_dust")
-    event.create("processed_ancient_debris_dust").texture("kubejs:item/netherite/processed_ancient_debris_dust")
-    event.create("inert_netherite_scrap").texture("kubejs:item/netherite/inert_netherite_scrap")
+    event.create("dusty_netherite_cluster").texture("kubejs:item/netherite/dusty_netherite_cluster")
+    event.create("ardite_sponge").texture("kubejs:item/ardite/ardite_sponge")
+    event.create("netherite_cluster").texture("kubejs:item/netherite/netherite_cluster")
+    event.create("netherite_shards").texture("kubejs:item/netherite/netherite_shards")
+    event.create("reactive_netherite_cluster").texture("kubejs:item/netherite/reactive_netherite_cluster")
+    event.create("activated_netherite_scrap").texture("kubejs:item/netherite/pure_netherite_scrap").glow(true);
     event.create("inert_nether_compound_ingot").texture("kubejs:item/netherite/inert_nether_compound_ingot")
 
     // Solid Naquadah Fuel Line
     event.create("empty_fuel_rod").texture("kubejs:item/naquadah/empty_fuel_rod")
+    event.create("naquadah_fuel_mixture_dust").texture("kubejs:item/naquadah/naquadah_fuel_mixture_dust")
+    event.create("unsintered_naquadah_fuel_pellet").texture("kubejs:item/naquadah/unsintered_naquadah_fuel_pellet")
     event.create("naquadah_fuel_pellet").texture("kubejs:item/naquadah/naquadah_fuel_pellet")
     event.create("naquadah_fuel_rod").texture("kubejs:item/naquadah/naquadah_fuel_rod")
+    event.create("hot_naquadah_fuel_rod").texture("kubejs:item/naquadah/hot_naquadah_fuel_rod")
     event.create("hot_depleted_naquadah_fuel_rod").texture("kubejs:item/naquadah/hot_depleted_naquadah_fuel_rod")
     event.create("depleted_naquadah_fuel_rod").texture("kubejs:item/naquadah/depleted_naquadah_fuel_rod")
-    event.create("unsintered_naquadah_fuel_pellet").texture("kubejs:item/naquadah/unsintered_naquadah_fuel_pellet")
     event.create("depleted_naquadah_fuel_pellet").texture("kubejs:item/naquadah/depleted_naquadah_fuel_pellet")
-    event.create("naquadah_fuel_dust").texture("kubejs:item/naquadah/naquadah_fuel_dust")
-    event.create("naquadah_fuel_primer_dust").texture("kubejs:item/naquadah/naquadah_fuel_primer_dust")
     event.create("naquadah_waste").texture("kubejs:item/naquadah/naquadah_waste")
-    event.create("inactivated_naquadah_fuel_dust").texture("kubejs:item/naquadah/inactivated_naquadah_fuel_dust")
     event.create("depleted_naquadah_fuel_dust").texture("kubejs:item/naquadah/depleted_naquadah_fuel_dust")
-    event.create("crude_naquadah_fuel_blend").texture("kubejs:item/naquadah/crude_naquadah_fuel_blend")
-    event.create("hot_naquadah_fuel_crystal").texture("kubejs:item/naquadah/hot_naquadah_fuel_crystal")
-    event.create("naquadah_fuel_crystal").texture("kubejs:item/naquadah/naquadah_fuel_crystal")
-    event.create("naquadah_fuel_mixture_dust").texture("kubejs:item/naquadah/naquadah_fuel_mixture_dust")
 
     // Crystal Matrix Line
     event.create("raw_nanotube_substrate").texture("kubejs:item/matrix/raw_nanotube_substrate")
     event.create("prepared_nanotube_substrate").texture("kubejs:item/matrix/prepared_nanotube_substrate")
-    event.create("cobalt_nanoparticles").texture("kubejs:item/matrix/cobalt_nanoparticles")
+    event.create("graphite_electrode").texture("kubejs:item/matrix/graphite_electrode")
+    event.create("nanotube_soot").texture("kubejs:item/matrix/nanotube_soot")
     event.create("grown_nanotube_substrate").texture("kubejs:item/matrix/grown_nanotube_substrate")
     event.create("carbon_nanotubes").texture("kubejs:item/matrix/carbon_nanotubes")
-    event.create("porous_matrix_mesh").texture("kubejs:item/matrix/porous_matrix_mesh")
-    event.create("dense_matrix_mesh").texture("kubejs:item/matrix/dense_matrix_mesh")
+    event.create("adhered_matrix_mesh").texture("kubejs:item/matrix/adhered_matrix_mesh")
 
     // Terbium Line
     event.create("rare_earth_sulfate").texture("kubejs:item/terbium/rare_earth_sulfate")
     event.create("rare_earth_oxide").texture("kubejs:item/terbium/rare_earth_oxide")
     event.create("rare_earth_salt").texture("kubejs:item/terbium/rare_earth_salt")
-
-
-    // Sculk bioalloy processing intermediate products
-    event.create("sculk-compatible_trellis_microstructure").texture("kubejs:item/bioalloy/sculk-compatible_trellis_microstructure")
-    event.create("fibrinogenic_sculk_goo").texture("kubejs:item/bioalloy/fibrinogenic_sculk_goo")
-    event.create("sculk-saturated_microstructure_pulp").texture("kubejs:item/bioalloy/sculk-saturated_microstructure_pulp")
-    event.create("animated_bioalloy_pulp").texture("kubejs:item/bioalloy/animated_bioalloy_pulp")
 
 
     // Alien Scrapline
@@ -403,8 +463,8 @@ StartupEvents.registry("item", event => {
     event.create("crushed_capacitor")
     event.create("magnetic_capacitor_dust")
     event.create("crushed_sensor")
-    event.create("holmium_compound")
-    event.create("holmium_oxide_glass_dust")
+    event.create("necrosiderite_compound")
+    event.create("necrosiderite_oxide_glass_dust")
 
 
     // Eltz metal processing intermediate products
@@ -417,6 +477,34 @@ StartupEvents.registry("item", event => {
     event.create("clean_inert_cluster").texture("kubejs:item/eltz/clean_inert_cluster")
     event.create("eltic_crystal_seed").texture("kubejs:item/eltz/eltic_crystal_seed")
 
+    // Photonic SoCs
+    event.create("photonic_soc_base")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_base")
+        .displayName("Photonic SoC Base")
+    event.create("photonic_soc_inert")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_inert")
+        .displayName("Photonic SoC: §7Inert§r")
+    event.create("photonic_soc_red")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_r")
+        .displayName("Photonic SoC: §4Red§r")
+    event.create("photonic_soc_yellow")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_y")
+        .displayName("Photonic SoC: §eYellow§r")
+    event.create("photonic_soc_green")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_g")
+        .displayName("Photonic SoC: §2Green§r")
+    event.create("photonic_soc_cyan")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_c")
+        .displayName("Photonic SoC: §bCyan§r")
+    event.create("photonic_soc_blue")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_b")
+        .displayName("Photonic SoC: §1Blue§r")
+    event.create("photonic_soc_magenta")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_m")
+        .displayName("Photonic SoC: §dMagenta§r")
+    event.create("photonic_soc_active")
+        .texture("kubejs:item/prismac/opticals/photonic_soc_active")
+        .displayName("Photonic SoC: Active")
 
     // Post-Tank Wafer items
     event.create("uxpic_wafer").texture("kubejs:item/uxpic/uxpic_wafer").displayName("UXPIC Wafer")
@@ -461,29 +549,20 @@ StartupEvents.registry("item", event => {
             .tag(`gtceu:circuits/${volt}`)
     }
 
-    function Unit(theme) {
-        event.create(`${theme}_processing_unit`)
-            .textureJson({ layer0: `kubejs:item/circuits/${theme}_processing_unit` })
-        event.create(`${theme}_circuit_board`)
-            .textureJson({ layer0: `kubejs:item/circuits/${theme}_circuit_board` })
-    }
+    event.create("optical_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/optical_processing_unit" })
+    Circuit("optical", "processor", "zpm")
+    Circuit("optical", "processor_assembly", "uv")
+    Circuit("optical", "processor_computer", "uhv")
+    Mainframe("optical", "uev")
 
-    Unit("matter")
-    Circuit("matter", "processor", "zpm")
-    Circuit("matter", "processor_assembly", "uv")
-    Circuit("matter", "processor_computer", "uhv")
-    Mainframe("matter", "uev")
-
-    Unit("dimensional")
-    Circuit("dimensional", "processor", "uv")
-    Circuit("dimensional", "processor_assembly", "uhv")
-    Circuit("dimensional", "processor_computer", "uev")
-    Mainframe("dimensional", "uiv")
-
-    Unit("monic")
-    Circuit("monic", "processor", "uhv")
-    Circuit("monic", "processor_assembly", "uev")
-    Circuit("monic", "processor_computer", "uiv")
+    event.create("monic_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/monic_processing_unit" })
+    event.create("monic_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/monic_circuit_board" })
+    Circuit("monic", "processor", "uv")
+    Circuit("monic", "processor_assembly", "uhv")
+    Circuit("monic", "processor_computer", "uev")
     Mainframe("monic", "max")
 
     // Smores
@@ -516,7 +595,7 @@ StartupEvents.registry("item", event => {
     }
 
     // Universal Circuits
-    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"]
     tiers.forEach((universal_circuit) => {
         event.create(`${universal_circuit}_universal_circuit`)
             .tag(`gtceu:circuits/${universal_circuit}`)
@@ -528,4 +607,15 @@ StartupEvents.registry("item", event => {
 
     // Phantom Paste
     event.create("framedblocks:phantom_paste")
+
+    // Priscore Line
+    event.create("chromatically_reactive_cluster").displayName("Chromatically Reactive Cluster")
+    event.create("chromatically_reactive_shard").displayName("Chromatically Reactive Shard")
+    event.create("chromatically_inert_frame").displayName("Chromatically Inert Frame")
+
+    // Protomatter
+    event.create("protomatter").texture("kubejs:item/protomatter")
+
+    // P.R.I.S.M. Panes
+    event.create("prism_pane").texture("kubejs:item/prism_pane").displayName("P.R.I.S.M. Glass Pane")
 })

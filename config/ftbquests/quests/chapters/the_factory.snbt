@@ -12,7 +12,7 @@
 			id: "5B0F1DA574E0A141"
 			linked_quest: "6ABF927014F8B79D"
 			x: 10.5d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			id: "7584F9D503A3180E"
@@ -1445,27 +1445,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7842EC1C389C4B7E"]
-			description: [
-				"{moni.quest.2845151447537433.description1}"
-				""
-				"{moni.quest.2845151447537433.description2}"
-			]
-			id: "2845151447537433"
-			rewards: [{
-				id: "38218FE6AA47BF71"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "61E7629E44901031"
-				item: "enderio:basic_capacitor_bank"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -0.5d
-		}
-		{
 			dependencies: ["62BBD1F6767A4D90"]
 			description: [
 				"{moni.quest.5B0200011DF8E1B6.description1}"
@@ -2704,7 +2683,6 @@
 				"{moni.quest.2861BA7C235C52A3.description10}"
 				"{moni.quest.2861BA7C235C52A3.description11}"
 				"{moni.quest.2861BA7C235C52A3.description12}"
-				"{moni.quest.2861BA7C235C52A3.description13}"
 				"{moni.quest.2861BA7C235C52A3.description14}"
 				"{moni.quest.2861BA7C235C52A3.description15}"
 				""

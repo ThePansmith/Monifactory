@@ -1,3 +1,4 @@
+// priority: 900
 /**
  * Server-side pack mode management.
  * This file adds a set of constant booleans for convenience in determining if a feature is enabled
@@ -8,13 +9,11 @@
 const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;
 const doCompacting = !!global.doCompacting;
-const doConduits = !!global.doConduits;
 const doConverters = !!global.doConverters;
 
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
 const doHarderRecipes = !!global.doHarderRecipes;
-const doHarderNaqFuel = !!global.doHarderNaqFuel;
 const doHardGlassRecipesWarning = !!global.doHardGlassRecipesWarning;
 const doHatchRevert = !!global.doHatchRevert;
 const doHNN = !!global.doHNN;
@@ -27,6 +26,7 @@ const doStoneline = !!global.doStoneline;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
 const doQuantumCoolant = !!global.doQuantumCoolant;
+const doHostileMicroverse = !!global.doHostileMicroverse;
 
 PlayerEvents.loggedIn(event => {
     const gameStages = [
@@ -41,10 +41,10 @@ PlayerEvents.loggedIn(event => {
         "Monicoins",
         "Snad",
         "SteamAge",
-        "HarderNaqFuel",
         "Stoneline",
         "HalfMMs",
-        "QuantumCoolant"
+        "QuantumCoolant",
+        "HostileMicroverse"
     ];
 
     gameStages.forEach(stage => {

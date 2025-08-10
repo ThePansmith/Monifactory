@@ -481,7 +481,7 @@
 				""
 				"{moni.quest.0C173EF148EFEF8E.description3}"
 			]
-			icon: "kubejs:mote_of_omnium"
+			icon: "gtceu:omnium_ingot"
 			id: "0C173EF148EFEF8E"
 			tasks: [{
 				id: "647D560D77DBCEA5"
@@ -499,8 +499,6 @@
 				"{moni.quest.64AAF0CD958D836A.description2}"
 				""
 				"{moni.quest.64AAF0CD958D836A.description3}"
-				""
-				"{moni.quest.64AAF0CD958D836A.description4}"
 			]
 			id: "64AAF0CD958D836A"
 			rewards: [{

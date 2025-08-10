@@ -483,44 +483,6 @@
 			y: -0.5d
 		}
 		{
-			id: "1BB4318E99CD28DD"
-			invisible: true
-			rewards: [{
-				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 40CF6D4612F7C050"
-				elevate_perms: true
-				id: "0597C1E333E7D68F"
-				silent: true
-				type: "command"
-			}]
-			tasks: [{
-				id: "5F5B5542DBDFCFBF"
-				stage: "doHarderNaqFuel"
-				type: "gamestage"
-			}]
-			x: -7.5d
-			y: -1.75d
-		}
-		{
-			id: "40CF6D4612F7C050"
-			invisible: true
-			rewards: [{
-				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 1BB4318E99CD28DD"
-				elevate_perms: true
-				id: "62158368D3A52448"
-				silent: true
-				type: "command"
-			}]
-			tasks: [{
-				id: "58DA84D63E1EE777"
-				stage: "dontHarderNaqFuel"
-				type: "gamestage"
-			}]
-			x: -7.5d
-			y: -0.5d
-		}
-		{
 			id: "776886E9296912DD"
 			invisible: true
 			rewards: [{
@@ -537,7 +499,7 @@
 				type: "gamestage"
 			}]
 			x: -7.5d
-			y: 0.75d
+			y: -1.75d
 		}
 		{
 			id: "0412D46926C075FF"
@@ -555,8 +517,8 @@
 				stage: "dontQuantumCoolant"
 				type: "gamestage"
 			}]
-			x: -6.25d
-			y: 0.75d
+			x: -7.5d
+			y: -0.5d
 		}
 	]
 	title: "{moni.chapter.1956832191841F25.title}"

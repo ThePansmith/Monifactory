@@ -519,6 +519,8 @@
 				"{moni.quest.2BD54071AD23C73C.description2}"
 				""
 				"{moni.quest.2BD54071AD23C73C.description3}"
+				""
+				"{moni.quest.2BD54071AD23C73C.description4}"
 			]
 			icon: {
 				Count: 1
@@ -536,47 +538,111 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "0DFC776179D464C1"
+					id: "38C1C6B13615C023"
 					item: {
 						Count: 1
-						id: "ad_astra:space_helmet"
+						id: "itemfilters:or"
 						tag: {
-							Damage: 0
+							items: [
+								{
+									Count: 1b
+									id: "ad_astra:space_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:netherite_space_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
 						}
 					}
+					title: "{moni.task1.2BD54071AD23C73C}"
 					type: "item"
 				}
 				{
-					id: "0399F0828F49C6DF"
+					id: "3A62F5CB5B5A5502"
 					item: {
 						Count: 1
-						id: "ad_astra:space_suit"
+						id: "itemfilters:or"
 						tag: {
-							Damage: 0
+							items: [
+								{
+									Count: 1b
+									id: "ad_astra:space_suit"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:netherite_space_suit"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
 						}
 					}
+					title: "{moni.task2.2BD54071AD23C73C}"
 					type: "item"
 				}
 				{
-					id: "19B6A6B00F982087"
+					id: "7C26518F22174230"
 					item: {
 						Count: 1
-						id: "ad_astra:space_pants"
+						id: "itemfilters:or"
 						tag: {
-							Damage: 0
+							items: [
+								{
+									Count: 1b
+									id: "ad_astra:space_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:netherite_space_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
 						}
 					}
+					title: "{moni.task3.2BD54071AD23C73C}"
 					type: "item"
 				}
 				{
-					id: "03A19D83B2062391"
+					id: "65ADF4142C0B925F"
 					item: {
 						Count: 1
-						id: "ad_astra:space_boots"
+						id: "itemfilters:or"
 						tag: {
-							Damage: 0
+							items: [
+								{
+									Count: 1b
+									id: "ad_astra:space_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "ad_astra:netherite_space_boots"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
 						}
 					}
+					title: "{moni.task4.2BD54071AD23C73C}"
 					type: "item"
 				}
 			]
@@ -823,7 +889,7 @@
 				""
 				"{moni.quest.5B07A88C0BFF6586.description6}"
 			]
-			icon: "gtceu:basic_microverse_projector"
+			icon: "monilabs:basic_microverse_projector"
 			id: "5B07A88C0BFF6586"
 			rewards: [{
 				id: "699824225F37A71A"
@@ -834,7 +900,7 @@
 			tasks: [
 				{
 					id: "1E96DAB3E49D7362"
-					item: "gtceu:basic_microverse_projector"
+					item: "monilabs:basic_microverse_projector"
 					type: "item"
 				}
 				{
@@ -855,7 +921,7 @@
 				{
 					count: 16L
 					id: "17E44DB94862D5B7"
-					item: "kubejs:microverse_casing"
+					item: "monilabs:microverse_casing"
 					type: "item"
 				}
 				{
@@ -1115,6 +1181,11 @@
 				"{moni.quest.798284BA30D818DA.description2}"
 			]
 			id: "798284BA30D818DA"
+			rewards: [{
+				id: "559707AB8A8FF58B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [{
 				id: "12E132ED1EBB8224"
 				item: "kubejs:basic_drilling_kit"

@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         ], {
             M: "minecraft:paper",
             P: "gtceu:iron_plate",
-            G: "gtceu:restonia_gear",
+            G: "gtceu:restonia_gem",
             C: "#gtceu:circuits/mv",
             L: "#forge:plates/lapis"
         })

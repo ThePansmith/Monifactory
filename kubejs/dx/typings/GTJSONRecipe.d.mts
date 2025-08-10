@@ -1,3 +1,5 @@
+export type ValueOf<T> = T[keyof T]
+
 export type MCIdentifier = `${string}:${string}`
 
 export type GTJSONRecipeChanced = {
@@ -16,6 +18,9 @@ export type GTJSONRecipeItemIngredient = {
     item: MCIdentifier
     count: number
     nbt: object
+} | {
+    type: "gtceu:circuit"
+    configuration: number
 }
 
 export type GTJSONRecipeItem = {
@@ -85,7 +90,12 @@ export type GTJSONRecipe = {
     }
     // All fields above are 100% complete
 
-    recipeConditions?: GTJSONRecipeCondition[]
+    recipeConditions?: (GTJSONRecipeCondition | ValueOf<{
+        [T in GTJSONRecipeCondition['type']]: {
+            type: T
+            data: Omit<GTJSONRecipeCondition & { type: T }, "type">
+        }
+    }>)[]
 
     // TODO these when needed
     inputChanceLogics: unknown

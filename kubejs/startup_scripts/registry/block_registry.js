@@ -184,11 +184,9 @@ StartupEvents.registry("block", event => {
 
     // Machine Casings
     const casings = [
-        "microverse",
+        "black_steel",
         "dark_soularium",
         "omnic_matrix_machine",
-        "dimensional_stabilization_netherite",
-        "cryolobus",
         "bioalloy",
         "bioalloy_fusion",
     ]
@@ -202,6 +200,15 @@ StartupEvents.registry("block", event => {
             .requiresTool(true);
     });
 
+    // UEV Hermetic Casing
+    event.create("gtceu:uev_hermetic_casing")
+        .displayName("Hermetic Casing X")
+        .soundType("metal")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
 
     // Misc
     event.create("starry_diamond_block")
@@ -209,7 +216,7 @@ StartupEvents.registry("block", event => {
         .soundType("metal")
         .resistance(6).hardness(5)
         .tagBlock("mineable/pickaxe").requiresTool(true)
-        .textureAll("kubejs:block/microverse/starry_diamond_block");
+        .textureAll("kubejs:block/microverse/starry_diamond_block")
 
     event.create("dust", "falling")
         .soundType("sand")
@@ -235,6 +242,47 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
 
+    event.create("lyso_ce_glass")
+        .displayName("Cerium-doped Lutetium Yttrium Oxyorthosilicate Glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/prismac/lyso_ce_glass")
+        .defaultCutout()
+
+    event.create("red_aligned_glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/prismac/red_aligned_glass")
+        .defaultCutout()
+
+    event.create("green_aligned_glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/prismac/green_aligned_glass")
+        .defaultCutout()
+
+    event.create("blue_aligned_glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .textureAll("kubejs:block/prismac/blue_aligned_glass")
+        .defaultCutout()
+
+    event.create("prism_glass")
+        .displayName("P.R.I.S.M. Glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .defaultCutout()
+
     event.create("omnic_matrix_coil_block", "gtceu:coil")
         .temperature(12600)
         .level(16)
@@ -253,5 +301,5 @@ StartupEvents.registry("block", event => {
         .renderType("cutout")
         .tag("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
-        .defaultCutout();
+        .defaultCutout()
 });

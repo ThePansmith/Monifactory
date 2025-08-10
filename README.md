@@ -25,6 +25,10 @@
 - README.md adapted from [GregTech CEu](https://github.com/GregTechCEu/GregTech).  
 - Meowni (mascot) by [Mutso](https://bsky.app/profile/did:plc:pgazjc76vpn6mr7rldk56ugq).  
 - Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
+- Unique multi code for the Creative Multiblocks from [CosmicCore](https://github.com/Frontiers-PackForge/CosmicCore), with Caitlynn's gracious permission.
+- Coremod (Moni Labs) by [NegaNote](https://github.com/NegaNote), with help from other contributors, especially [Withers](https://github.com/WithersChat) and [Raine](https://github.com/AE2-Enthusiast).
+- Blood texture from [Tinkers' Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)
+
 Thank you!
 
 ## Hard/Expert Mode
@@ -42,7 +46,6 @@ Highlights include:
 Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 
 - Disabling RF -> EU conversion, making GT power generation required
-- EnderIO Conduits are removed
 - LaserIO is disabled
 - GT5u-style machine explosions
 - Various other nerfs

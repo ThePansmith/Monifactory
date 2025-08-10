@@ -129,9 +129,8 @@ If you want a comparison of the available dimensions:
 In Monifactory, both the Nether and End portals are disabled.
 TelePastries' cakes are used to move between dimensions instead.
 
-**Q. My EnderIO conduits aren't extracting!**
-
-Conduits are set by default to extract on high redstone input; click the redstone torch and switch to always on, low redstone, or whatever option you wish to use
+**Q. What happened to Ender IO?!?**
+Support for Ender IO in 1.20.1 has discontinued despite some major aspects of the mod being left in a buggy state. As such, those portions of the mod have been removed so as to not confuse or irritate players.
 
 **Q. My Cleanroom isn't forming!**
 

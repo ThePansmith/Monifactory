@@ -701,24 +701,78 @@ ServerEvents.recipes(event => {
     event.shapeless("ae2:fluix_smart_cable", ["ae2:fluix_covered_cable", "#forge:small_dusts/redstone", "#forge:small_dusts/glowstone"])
         .id("ae2:network/cables/smart_fluix")
 
+    // Terminal
+    event.remove({ id: "ae2:network/parts/terminals" })
+    event.shapeless("ae2:terminal", ["#ae2:illuminated_panel", "#gtceu:circuits/lv"]).id("kubejs:ae2_terminal")
+
+    // Cable stuff
+    const colors = ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray", "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow"]
+
+    function washToFluix(wash) {
+        event.shaped(`8x ae2:fluix_${wash}_cable`, [
+            "CCC",
+            "CDC",
+            "CCC"
+        ], {
+            C: `#ae2:${wash}_cable`,
+            D: "#ae2:can_remove_color"
+        })
+    }
+
+    function coveredDenseCable(color) {
+        event.shaped(`ae2:${color}_covered_dense_cable`, [
+            "CC",
+            "CC"
+        ], {
+            C: `ae2:${color}_covered_cable`
+        })
+    }
+
+    function smartDenseCable(color) {
+        event.shaped(`ae2:${color}_smart_dense_cable`, [
+            "CC",
+            "CC"
+        ], {
+            C: `ae2:${color}_smart_cable`
+        })
+    }
+
+
+    washToFluix("covered")
+    washToFluix("covered_dense")
+    washToFluix("smart_dense")
+    washToFluix("glass")
+    washToFluix("smart")
+
+    colors.forEach(coveredDenseCable)
+    colors.forEach(smartDenseCable)
+
     event.recipes.gtceu.assembler("kubejs:ae2/fluix_covered_cable_rubber")
         .itemInputs("#ae2:glass_cable")
         .inputFluids("gtceu:rubber 144")
         .itemOutputs("ae2:fluix_covered_cable")
         .duration(100)
-        .EUt(7)
+        .EUt(GTValues.VA[GTValues.ULV])
     event.recipes.gtceu.assembler("kubejs:ae2/fluix_covered_cable_silicone")
         .itemInputs("#ae2:glass_cable")
         .inputFluids("gtceu:silicone_rubber 72")
         .itemOutputs("ae2:fluix_covered_cable")
         .duration(100)
-        .EUt(7)
+        .EUt(GTValues.VA[GTValues.ULV])
     event.recipes.gtceu.assembler("kubejs:ae2/fluix_covered_cable_styrene_butadiene")
         .itemInputs("#ae2:glass_cable")
         .inputFluids("gtceu:styrene_butadiene_rubber 36")
         .itemOutputs("ae2:fluix_covered_cable")
         .duration(100)
-        .EUt(7)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    colors.forEach(color => {
+        event.recipes.gtceu.assembler(`kubejs:ae2/fluix_covered_cable_wool_${color}`)
+            .itemInputs("#ae2:glass_cable", `#chipped:${color}_carpet`)
+            .itemOutputs(`ae2:${color}_covered_cable`)
+            .duration(100)
+            .EUt(GTValues.VA[GTValues.ULV])
+    })
 
     // Presses
     function pressengrave(name, press, lens) {
@@ -804,9 +858,6 @@ ServerEvents.recipes(event => {
         A: "gtceu:fine_lumium_wire",
         B: "gtceu:crystal_matrix_plate"
     }).id("kubejs:mega/fluid_cell_housing")
-
-    event.remove({ id: "megacells:cells/standard/bulk_item_cell" }) // recipe in SDA
-    event.remove({ id: "megacells:crafting/bulk_cell_component" })
 
     event.remove({ id: "megacells:network/cell_dock" })
     event.recipes.gtceu.assembler("kubejs:mega/cell_dock")
@@ -1181,55 +1232,14 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:quartz_glass", "gtceu:vibrant_alloy_dust")
         .itemOutputs("ae2:quartz_vibrant_glass")
         .duration(200)
-        .EUt("128")
+        .EUt(GTValues.VA[GTValues.MV])
 
-    // Terminal
-    event.remove({ id: "ae2:network/parts/terminals" })
-    event.shapeless("ae2:terminal", ["#ae2:illuminated_panel", "#gtceu:circuits/lv"]).id("kubejs:ae2_terminal")
-
-    // Cable stuff
-    const colors = ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_gray", "lime", "magenta", "orange", "pink", "purple", "red", "white", "yellow"]
-
-    function washToFluix(wash) {
-        event.shaped(`8x ae2:fluix_${wash}_cable`, [
-            "CCC",
-            "CDC",
-            "CCC"
-        ], {
-            C: `#ae2:${wash}_cable`,
-            D: "#ae2:can_remove_color"
-        })
-    }
-
-    function coveredDenseCable(color) {
-        event.shaped(`ae2:${color}_covered_dense_cable`, [
-            "CC",
-            "CC"
-        ], {
-            C: `ae2:${color}_covered_cable`
-        })
-    }
-
-    function smartDenseCable(color) {
-        event.shaped(`ae2:${color}_smart_dense_cable`, [
-            "CC",
-            "CC"
-        ], {
-            C: `ae2:${color}_smart_cable`
-        })
-    }
-
-
-    washToFluix("covered")
-    washToFluix("covered_dense")
-    washToFluix("smart_dense")
-    washToFluix("glass")
-    washToFluix("smart")
-
-    //    colors.forEach(coloredCoveredCable)
-    colors.forEach(coveredDenseCable)
-    colors.forEach(smartDenseCable)
-
+    // Semi-Vibrant Quartz Glass
+    event.recipes.gtceu.alloy_smelter("mae2:cloud_chamber")
+        .itemInputs("ae2:quartz_vibrant_glass", "gtceu:small_amethyst_dust")
+        .itemOutputs("mae2:cloud_chamber")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
 
     // BetterP2P
     event.shapeless("betterp2p:advanced_memory_card", ["ae2:memory_card", "ae2:network_tool"])

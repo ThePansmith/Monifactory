@@ -269,7 +269,7 @@ machines:
 
   # Whether the Assembly Line should require the item inputs to be in order.
   # Default: true
-  orderedAssemblyLineItems: false
+  orderedAssemblyLineItems: true
 
   # Whether the Assembly Line should require the fluid inputs to be in order.
   # (Requires Ordered Assembly Line Item Inputs to be enabled.)
@@ -608,7 +608,7 @@ dev:
 
   # Debug ore vein placement? (will print placed veins to server's debug.log)
   # Default: false (no placement printout in debug.log)
-  debugWorldgen: false
+  debugWorldgen: true
 
   # Generate ores in superflat worlds?
   # Default: false

@@ -134,8 +134,8 @@
   "item.kubejs.crushed_capacitor": "Crushed Capacitor",
   "item.kubejs.magnetic_capacitor_dust": "Magnetic Capacitor Dust",
   "item.kubejs.crushed_sensor": "Crushed Sensor",
-  "item.kubejs.holmium_compound": "Holmium Compound",
-  "item.kubejs.holmium_oxide_glass_dust": "Holmium Oxide Glass Dust",
+  "item.kubejs.necrosiderite_compound": "Necrosiderite Compound",
+  "item.kubejs.necrosiderite_oxide_glass_dust": "Necrosiderite Oxide Glass Dust",
 
   "item.kubejs.universe_boule": "Universe-doped Monocrystalline Silicon Boule",
   "item.kubejs.universe_wafer": "Universe-doped Wafer",
@@ -156,12 +156,11 @@
   "item.kubejs.inert_netherite_scrap": "Inert Netherite Scrap",
   "item.kubejs.inert_nether_compound_ingot": "Inert Nether Compound Ingot",
 
-  "item.kubejs.sculk_core": "Sculk Core",
   "item.kubejs.dischargement_core": "Dischargement Core",
-  "item.kubejs.sculk-compatible_trellis_microstructure": "Sculk-Compatible Trellis Microstructure",
-  "item.kubejs.fibrinogenic_sculk_goo": "Fibrinogenic Sculk Goo",
-  "item.kubejs.sculk_saturated_microstructure_pulp": "Sculk-Saturated Microstructure Pulp",
-  "item.kubejs.animated_bioalloy_pulp": "Animated Bioalloy Pulp",
+  "item.kubejs.amalgamated_sculk": "Amalgamated Sculk",
+  "item.kubejs.petri_dish_sterile": "Sterile Petri Dish",
+  "item.kubejs.petri_dish_bacteria": "Bacteria Petri Dish",
+  "item.kubejs.petri_dish_sculk": "Sculk Petri Dish",
 
   "item.kubejs.reactive_dust_mixture": "Reactive Dust Mixture",
   "item.kubejs.inert_dust_mixture": "Inert Dust Mixture",
@@ -210,11 +209,11 @@
   "item.kubejs.complex_smd_inductor": "Complex SMD Inductor",
 
   "item.kubejs.matter_processing_unit": "Matter Processing Unit",
-  "item.kubejs.matter_circuit_board": "Matter Circuit Board",
-  "item.kubejs.matter_processor": "Matter Processor",
-  "item.kubejs.matter_processor_assembly": "Matter Processor Assembly",
-  "item.kubejs.matter_processor_computer": "Matter Processor Supercomputer",
-  "item.kubejs.matter_processor_mainframe": "Matter Processor Mainframe",
+  "item.kubejs.matter_circuit_board": "Optical Circuit Board",
+  "item.kubejs.optical_processor": "Optical Processor",
+  "item.kubejs.optical_processor_assembly": "Optical Processor Assembly",
+  "item.kubejs.optical_processor_computer": "Optical Processor Supercomputer",
+  "item.kubejs.optical_processor_mainframe": "Optical Processor Mainframe",
 
   "item.kubejs.dimensional_processing_unit": "Dimensional Processing Unit",
   "item.kubejs.dimensional_circuit_board": "Dimensional Circuit Board",
@@ -279,14 +278,10 @@
   "item.kubejs.corrupted_universe_data": "§dCorrupted Universe Data",
 
   "item.kubejs.omnic_data": "Omnic Data",
-  "item.kubejs.creative_storage_data": "Creative Storage Data",
-  "item.kubejs.creative_computation_data": "Creative Computation Data",
-  "item.kubejs.creative_energy_data": "Creative Energy Data",
 
   "item.kubejs.diamond_lattice": "Diamond Lattice",
   "item.kubejs.neutron_emitter": "Neutron Emitter",
   "item.kubejs.ultimate_gem": "§dUltimate Gem",
-  "item.kubejs.mote_of_omnium": "Mote of Omnium",
   "item.kubejs.heart_of_a_universe": "§dHeart Of A Universe",
   "item.kubejs.exotic_materials_catalyst": "Exotic Materials Catalyst",
   "item.kubejs.eternal_catalyst": "Eternal Catalyst",
@@ -318,6 +313,18 @@
   "item.kubejs.infinity_wire_cutter": "Infinity Wire Cutter",
   "item.kubejs.infinity_power_unit": "Infinity Power Unit",
 
+  "item.kubejs.sapphire_seed_crystal": "Sapphire Seed Crystal",
+  "item.kubejs.sapphire_boule": "Sapphire Boule",
+  "item.kubejs.sapphire_wafer": "Sapphire Wafer",
+  "item.kubejs.coated_sapphire_wafer": "Coated Sapphire Wafer",
+  "item.kubejs.engraved_sapphire_wafer": "Engraved Sapphire Wafer",
+  "item.kubejs.incomplete_sapphire_wafer": "Incomplete Sapphire Wafer",
+  "item.kubejs.completed_optical_wafer": "Completed Optical Wafer",
+  "item.kubejs.optical_chip": "Optical Chip",
+  "item.kubejs.electro_optic_modulator": "Electro-Optic Modulator",
+  "item.kubejs.carbon_mesh_reinforced_circuit_board": "Carbon Mesh Reinforced Circuit Board",
+  "item.kubejs.carbon_mesh_reinforced_printed_circuit_board": "Carbon Mesh Reinforced Printed Circuit Board",
+
   "item.kubejs.solidified_argon": "Solidified Argon",
   "item.kubejs.solidified_chlorine": "Solidified Chlorine",
   "item.kubejs.solidified_fluorine": "Solidified Fluorine",
@@ -344,7 +351,6 @@
   "item.kubejs.stabilized_curium": "Stabilized Curium",
   "item.kubejs.stabilized_californium": "Stabilized Californium",
   "item.kubejs.stabilized_americium": "Stabilized Americium",
-  "item.kubejs.stabilized_oganesson": "Stabilized Oganesson",
 
   "item.kubejs.conductive_iron_thruster": "Conductive Iron Thruster",
   "item.kubejs.leadstone_thruster": "Leadstone Thruster",
@@ -417,7 +423,7 @@
   "item.kubejs.uev_tier_circuit": "UEV-Tier Circuit",
   "item.kubejs.uiv_tier_circuit": "UIV-Tier Circuit",
   "item.kubejs.max_tier_circuit": "MAX-Tier Circuit",
-  "item.kubejs.matter_circuit.tooltip" : "Omnicapable Circuits!",
+  "item.kubejs.optical_circuit.tooltip" : "Omnicapable Circuits!",
   "item.kubejs.dimensional_circuit.tooltip" : "Powered by Microverses!",
   "item.kubejs.monic_processor.tooltip" : "The Beginning of The End",
   "item.kubejs.monic_processor_assembly.tooltip" : "Can run vanilla Minecraft at a decent FPS",
@@ -493,7 +499,6 @@
 
   "gtceu.energy_converter.tooltip": "§4Cannot be used with conduits in EU->FE mode.\n§7Use GT wires or cables instead. They will convert to FE if plugged into a FE Machine.",
   "gtceu.basic_tape.tooltip": "§7Used to wrap up Crates for transport.",
-  "gtceu.ender_fluid_link_cover.tooltip": "§4Not yet implemented.",
   "gtceu.nightvision_goggles.tooltip": "§7Toggle with the [Armor Mode Switch] key.",
   "gtceu.robot_arm.tooltip": "§4Advanced control over item transfer not possible with pipes.",
   "gtceu.fluid_regulator.tooltip": "§4Advanced control over fluid transfer not possible with pipes.",
@@ -543,4 +548,3 @@
 
   "tempad.tempad.tooltip": "§6Uses Monipennies as fuel"
 }
-

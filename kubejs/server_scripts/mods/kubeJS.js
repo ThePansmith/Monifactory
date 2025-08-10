@@ -3,20 +3,25 @@
  */
 ServerEvents.recipes(event => {
     // Stablized
-    event.recipes.gtceu.fusion_reactor("einsteinium_fusion")
-        .inputFluids(Fluid.of("gtceu:berkelium", 16), Fluid.of("gtceu:californium", 16))
-        .outputFluids(Fluid.of("gtceu:einsteinium", 16))
+    event.recipes.gtceu.fusion_reactor("berkelium_fusion_curium")
+        .inputFluids(Fluid.of("gtceu:curium", 32), Fluid.of("gtceu:helium", 125))
+        .outputFluids(Fluid.of("gtceu:berkelium", 32))
         .duration(100)
-        .EUt(15360)
+        .EUt(GTValues.VHA[GTValues.ZPM])
+        .fusionStartEU(360000000)
+    event.recipes.gtceu.fusion_reactor("californium_fusion_curium")
+        .inputFluids(Fluid.of("gtceu:curium", 16), Fluid.of("gtceu:hydrogen", 125))
+        .outputFluids(Fluid.of("gtceu:californium", 16))
+        .duration(100)
+        .EUt(GTValues.VHA[GTValues.ZPM])
         .fusionStartEU(400000000)
 
-    solidify("stabilized_einsteinium", Fluid.of("gtceu:einsteinium", 144), "16x kubejs:stabilized_einsteinium");
     solidify("stabilized_berkelium", Fluid.of("gtceu:berkelium", 144), "8x kubejs:stabilized_berkelium");
     solidify("stabilized_neptunium", Fluid.of("gtceu:neptunium", 144), "2x kubejs:stabilized_neptunium");
     solidify("stabilized_plutonium", Fluid.of("gtceu:plutonium", 144), "2x kubejs:stabilized_plutonium");
-    solidify("stabilized_plutonium_1", Fluid.of("gtceu:plutonium_241", 144), "2x kubejs:stabilized_plutonium");
+    solidify("stabilized_plutonium_241", Fluid.of("gtceu:plutonium_241", 144), "4x kubejs:stabilized_plutonium");
     solidify("stabilized_uranium", Fluid.of("gtceu:uranium", 144), "kubejs:stabilized_uranium");
-    solidify("stabilized_uranium_1", Fluid.of("gtceu:uranium_235", 144), "kubejs:stabilized_uranium");
+    solidify("stabilized_uranium_235", Fluid.of("gtceu:uranium_235", 144), "2x kubejs:stabilized_uranium");
     solidify("stabilized_curium", Fluid.of("gtceu:curium", 144), "4x kubejs:stabilized_curium");
     solidify("stabilized_californium", Fluid.of("gtceu:californium", 144), "8x kubejs:stabilized_californium");
     solidify("stabilized_americium", Fluid.of("gtceu:americium", 144), "4x kubejs:stabilized_americium");
@@ -32,7 +37,6 @@ ServerEvents.recipes(event => {
     solidify("solidified_oxygen", Fluid.of("gtceu:oxygen"), "kubejs:solidified_oxygen");
     solidify("solidified_radon", Fluid.of("gtceu:radon"), "kubejs:solidified_radon");
     solidify("solidified_xenon", Fluid.of("gtceu:xenon"), "kubejs:solidified_xenon");
-    solidify("stabilized_oganesson", Fluid.of("gtceu:oganesson", 144), "kubejs:stabilized_oganesson");
 
 
     function solidify(recipename, input, output) {
@@ -43,13 +47,6 @@ ServerEvents.recipes(event => {
             .duration(500)
             .EUt(16)
     }
-
-    event.recipes.gtceu.fluid_solidifier("mote_of_omnium")
-        .inputFluids(Fluid.of("gtceu:omnium", 16))
-        .itemOutputs("kubejs:mote_of_omnium")
-        .notConsumable("gtceu:ball_casting_mold")
-        .duration(20)
-        .EUt(7)
 
     // Thermal Fluids
     thermalextract("primal_mana", "kubejs:primal_mana", Fluid.of("gtceu:mana", 250));

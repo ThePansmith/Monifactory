@@ -3,411 +3,11 @@
 	default_quest_shape: ""
 	filename: "omnium"
 	group: "0D5BFFD0A5E49312"
-	icon: "kubejs:mote_of_omnium"
+	icon: "gtceu:omnium_nugget"
 	id: "25FEB9E61EEC1A96"
 	order_index: 4
 	quest_links: [ ]
 	quests: [
-		{
-			id: "273D48F9D80568AC"
-			rewards: [{
-				id: "47350CA77DC47F61"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "0FEDE6C11BDF99BD"
-				item: "gtceu:nichrome_ingot"
-				type: "item"
-			}]
-			x: -27.0d
-			y: 4.25d
-		}
-		{
-			id: "6ACBD5F648141ECC"
-			rewards: [{
-				id: "50FB93436B43A246"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "2ABC38663521B852"
-				item: "gtceu:dark_soularium_ingot"
-				type: "item"
-			}]
-			x: -25.5d
-			y: 4.25d
-		}
-		{
-			id: "7E2620ED869001A8"
-			rewards: [{
-				id: "6F39FD1C908C6A1E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "312AEAA5E33FCF4A"
-				item: "gtceu:red_steel_ingot"
-				type: "item"
-			}]
-			x: -24.0d
-			y: 4.25d
-		}
-		{
-			id: "6F59C7C23A41282A"
-			rewards: [{
-				id: "052D5BF972A122AD"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "171D8F8C4F7D7277"
-				item: "gtceu:blue_steel_ingot"
-				type: "item"
-			}]
-			x: -22.5d
-			y: 4.25d
-		}
-		{
-			id: "22ED61C490B7CE88"
-			rewards: [{
-				id: "31EF1BB0CEF2FD99"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "70DFBF9A75A6AC78"
-				item: "gtceu:manyullyn_ingot"
-				type: "item"
-			}]
-			x: -21.0d
-			y: 4.25d
-		}
-		{
-			id: "46641CBE1B25A58A"
-			rewards: [{
-				id: "7952296006D1415F"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "580B680E2091357D"
-				item: "gtceu:kanthal_ingot"
-				type: "item"
-			}]
-			x: -27.0d
-			y: 5.75d
-		}
-		{
-			id: "5A6E9B2CBD801245"
-			rewards: [{
-				id: "546394470F77C1AF"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "399BEFA50A358E8A"
-				item: "gtceu:electrum_flux_ingot"
-				type: "item"
-			}]
-			x: -25.5d
-			y: 5.75d
-		}
-		{
-			id: "7F05F81141C8EA91"
-			rewards: [{
-				id: "7943D3B1AE314ECA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "78E45395106D3F8B"
-				item: "gtceu:rhodium_plated_palladium_ingot"
-				type: "item"
-			}]
-			x: -24.0d
-			y: 5.75d
-		}
-		{
-			id: "0FF0CBBA4F923E5A"
-			rewards: [{
-				id: "516ACDF5DD6B58FA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "51DDDEF2A9B4BCEC"
-				item: "gtceu:signalum_ingot"
-				type: "item"
-			}]
-			x: -22.5d
-			y: 5.75d
-		}
-		{
-			id: "6BD48196D8DB2AD6"
-			rewards: [{
-				id: "6D0C3A7948F44D98"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1DD95C061014E855"
-				item: "gtceu:enderium_ingot"
-				type: "item"
-			}]
-			x: -21.0d
-			y: 5.75d
-		}
-		{
-			id: "0204D290950F1DA6"
-			rewards: [{
-				id: "3CCE11BD81C9DBFF"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1B4EBD489B618D9C"
-				item: "gtceu:magnalium_ingot"
-				type: "item"
-			}]
-			x: -27.0d
-			y: 7.25d
-		}
-		{
-			id: "23A578F05966E88E"
-			rewards: [{
-				id: "4E32707EF1F06120"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7B964F0259FBC69A"
-				item: "gtceu:hsse_ingot"
-				type: "item"
-			}]
-			x: -25.5d
-			y: 7.25d
-		}
-		{
-			id: "06211913A786D9DD"
-			rewards: [{
-				id: "6FD38B40AEBD4CCA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7F5C1674EBAA1932"
-				item: "gtceu:hssg_ingot"
-				type: "item"
-			}]
-			x: -24.0d
-			y: 7.25d
-		}
-		{
-			id: "71D6DC14A6F9882A"
-			rewards: [{
-				id: "3B179ABD24D9ADB2"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "4BA8069A180DFA5A"
-				item: "gtceu:hsss_ingot"
-				type: "item"
-			}]
-			x: -22.5d
-			y: 7.25d
-		}
-		{
-			id: "5875B965A52FD955"
-			rewards: [{
-				id: "387E1A622DCD85D7"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "7A046BF6B05009FA"
-				item: "gtceu:crystal_matrix_ingot"
-				type: "item"
-			}]
-			x: -21.0d
-			y: 7.25d
-		}
-		{
-			id: "222CB99ACBD324ED"
-			rewards: [{
-				id: "6B1FFA54EE533907"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3FC1AD35B4CA1532"
-				item: "gtceu:ruridit_ingot"
-				type: "item"
-			}]
-			x: -27.0d
-			y: 8.75d
-		}
-		{
-			id: "41DCE197206EDEA5"
-			rewards: [{
-				id: "5CB2BD3CBC7A6AC0"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "6A11EF851C12CC27"
-				item: "gtceu:mythril_ingot"
-				type: "item"
-			}]
-			x: -25.5d
-			y: 8.75d
-		}
-		{
-			id: "4E4F728ADA8240A8"
-			rewards: [{
-				id: "5D269698882738BF"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3268990434208AF8"
-				item: "gtceu:microversium_ingot"
-				type: "item"
-			}]
-			x: -24.0d
-			y: 8.75d
-		}
-		{
-			id: "42A7971C7C8174CD"
-			rewards: [{
-				id: "6DA425F3D1D9EFC1"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1EBFC49EA3AE5C8C"
-				item: "gtceu:end_steel_ingot"
-				type: "item"
-			}]
-			x: -22.5d
-			y: 8.75d
-		}
-		{
-			id: "18EF39D0C5B55C34"
-			rewards: [{
-				id: "4D616F5BBF538A37"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "6FD6A45B105C4FED"
-				item: "gtceu:vanadium_steel_ingot"
-				type: "item"
-			}]
-			x: -21.0d
-			y: 8.75d
-		}
-		{
-			id: "4636F253795B1613"
-			rewards: [{
-				id: "6C4E9AC6BAED6654"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "02581B4A61CF4D65"
-				item: "gtceu:soularium_ingot"
-				type: "item"
-			}]
-			x: -27.0d
-			y: 10.25d
-		}
-		{
-			id: "114DC4B7E144ECF5"
-			rewards: [{
-				id: "15FA9B351B238DDD"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "0B607778718EEE99"
-				item: "gtceu:dark_steel_ingot"
-				type: "item"
-			}]
-			x: -25.5d
-			y: 10.25d
-		}
-		{
-			id: "5A508404A0B07AD1"
-			rewards: [{
-				id: "1148EB1D134AD2D8"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "008240039BBD1134"
-				item: "gtceu:vibrant_alloy_ingot"
-				type: "item"
-			}]
-			x: -24.0d
-			y: 10.25d
-		}
-		{
-			id: "411F77907FBEB93B"
-			rewards: [{
-				id: "28F9B1D9E49C3FEA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "44C902082B51EB13"
-				item: "gtceu:energetic_alloy_ingot"
-				type: "item"
-			}]
-			x: -22.5d
-			y: 10.25d
-		}
-		{
-			id: "0B5B7A15B7FD684C"
-			rewards: [{
-				id: "2A2F3186C7EC2C70"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1A3E1D5350F6CEB9"
-				item: "gtceu:electrical_steel_ingot"
-				type: "item"
-			}]
-			x: -21.0d
-			y: 10.25d
-		}
 		{
 			id: "4A6F916494B787AE"
 			rewards: [{
@@ -936,7 +536,7 @@
 			y: 8.75d
 		}
 		{
-			description: ["{moni.quest.2D788BE1CA9A2D69.description1}"]
+			description: ["{moni.quest.motenothing.description1}"]
 			id: "5928FCBF99CF031B"
 			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
@@ -1089,9 +689,9 @@
 				count: 64L
 				id: "2D438909DE308C35"
 				item: "gtceu:lanthanum_dust"
-				title: "{moni.task.2D438909DE308C35}"
 				type: "item"
 			}]
+			title: "{moni.task.2D438909DE308C35}"
 			x: -10.0d
 			y: 15.5d
 		}
@@ -1292,7 +892,7 @@
 			tasks: [{
 				count: 64L
 				id: "6F12010C1D06D935"
-				item: "gtceu:americium_ingot"
+				item: "kubejs:stabilized_americium"
 				type: "item"
 			}]
 			title: "{moni.quest.6416118459258E42.title}"
@@ -1351,19 +951,9 @@
 			y: 17.0d
 		}
 		{
+			description: ["{moni.quest.motenothing.description1}"]
 			id: "6F7D6294E9F311E4"
-			rewards: [{
-				id: "699E49AD73A92C21"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "3C7C63A8387F6CF8"
-				item: "kubejs:stabilized_einsteinium"
-				type: "item"
-			}]
-			title: "{moni.quest.6F7D6294E9F311E4.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 5.0d
 			y: 17.0d
 		}
@@ -1436,23 +1026,6 @@
 			y: 11.75d
 		}
 		{
-			id: "119C529A35758AF2"
-			rewards: [{
-				id: "3FCCD8B4F54F754C"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "04D116D8C5C90264"
-				item: "gtceu:duranium_ingot"
-				type: "item"
-			}]
-			title: "{moni.quest.119C529A35758AF2.title}"
-			x: -2.5d
-			y: 19.25d
-		}
-		{
 			id: "1B45AA7042D110E4"
 			rewards: [{
 				id: "2DD86B8089DD42F8"
@@ -1519,23 +1092,6 @@
 			title: "{moni.quest.56F6AFFFCAE8A5D4.title}"
 			x: 6.5d
 			y: 11.75d
-		}
-		{
-			id: "77880E592DB38C9C"
-			rewards: [{
-				id: "781E2EB85AD5B060"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "410C4F56121B1FFE"
-				item: "gtceu:trinium_ingot"
-				type: "item"
-			}]
-			title: "{moni.quest.77880E592DB38C9C.title}"
-			x: 0.5d
-			y: 19.25d
 		}
 		{
 			id: "4E39FDB6FACDF522"
@@ -1657,40 +1213,6 @@
 			y: 15.5d
 		}
 		{
-			id: "3D9E25B45A7942A7"
-			rewards: [{
-				id: "04125772561E8A7E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "1E7280ACBCCB43CF"
-				item: "gtceu:tritanium_ingot"
-				type: "item"
-			}]
-			title: "{moni.quest.3D9E25B45A7942A7.title}"
-			x: -1.0d
-			y: 19.25d
-		}
-		{
-			id: "37FD045CC0AEB11B"
-			rewards: [{
-				id: "5F6AD7D585BDA2D3"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "5AA1C9C0F0B5189B"
-				item: "gtceu:naquadah_ingot"
-				type: "item"
-			}]
-			title: "{moni.quest.37FD045CC0AEB11B.title}"
-			x: 2.0d
-			y: 19.25d
-		}
-		{
 			description: ["{moni.quest.motenothing.description1}"]
 			disable_toast: true
 			icon: "enderio:painted_fence"
@@ -1781,20 +1303,16 @@
 			y: 15.5d
 		}
 		{
-			description: ["{moni.quest.motenothing.description1}"]
+			description: [""]
 			disable_toast: true
-			icon: "enderio:painted_fence"
 			id: "3CFF422D1BAAEB65"
 			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "4212B218BA04DBA1"
-				stat: "minecraft:play_time"
-				title: "{moni.task.4212B218BA04DBA1}"
-				type: "stat"
-				value: 1
+				count: 64L
+				id: "536424F021C77760"
+				item: { Count: 64, id: "gtceu:terbium_ingot" }
+				type: "item"
 			}]
-			title: "{moni.quest.motenothing.title}"
+			title: "{moni.quest.3CFF422D1BAAEB65.title}"
 			x: 2.0d
 			y: 15.5d
 		}
@@ -1853,20 +1371,16 @@
 			y: 11.75d
 		}
 		{
-			description: ["{moni.quest.motenothing.description1}"]
+			description: [""]
 			disable_toast: true
-			icon: "enderio:painted_fence"
 			id: "7978CD633112BE89"
 			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "20B30658AB28C786"
-				stat: "minecraft:play_time"
-				title: "{moni.task.20B30658AB28C786}"
-				type: "stat"
-				value: 1
+				count: 64L
+				id: "6472F5F5B0D7083E"
+				item: { Count: 64, id: "gtceu:iodine_dust" }
+				type: "item"
 			}]
-			title: "{moni.quest.motenothing.title}"
+			title: "{moni.quest.7978CD633112BE89.title}"
 			x: 11.0d
 			y: 10.25d
 		}
@@ -1961,20 +1475,15 @@
 			y: 13.25d
 		}
 		{
-			description: ["{moni.quest.motenothing.description1}"]
-			disable_toast: true
-			icon: "enderio:painted_fence"
+			description: [""]
 			id: "1D5D25F52BE6709E"
 			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7546DF93889C5CA8"
-				stat: "minecraft:play_time"
-				title: "{moni.task.7546DF93889C5CA8}"
-				type: "stat"
-				value: 1
+				count: 64L
+				id: "510ABD2762C1F3F9"
+				item: "gtceu:actinium_ingot"
+				type: "item"
 			}]
-			title: "{moni.quest.motenothing.title}"
+			title: "{moni.quest.1D5D25F52BE6709E.title}"
 			x: -10.0d
 			y: 17.0d
 		}
@@ -2502,18 +2011,13 @@
 			y: 11.75d
 		}
 		{
-			description: ["{moni.quest.2D788BE1CA9A2D69.description1}"]
 			disable_toast: true
-			icon: "enderio:painted_fence"
 			id: "2D788BE1CA9A2D69"
 			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "1565FA8942925060"
-				stat: "minecraft:play_time"
-				title: "{moni.task.1565FA8942925060}"
-				type: "stat"
-				value: 1
+				count: 64L
+				id: "67A5E978C88BEAD3"
+				item: { Count: 64, id: "gtceu:germanium_ingot" }
+				type: "item"
 			}]
 			title: "{moni.quest.2D788BE1CA9A2D69.title}"
 			x: 6.5d
@@ -2521,50 +2025,9 @@
 		}
 		{
 			dependencies: [
-				"41DCE197206EDEA5"
-				"0FF0CBBA4F923E5A"
-				"5A6E9B2CBD801245"
-				"222CB99ACBD324ED"
-				"411F77907FBEB93B"
-				"114DC4B7E144ECF5"
-				"7F05F81141C8EA91"
-				"6BD48196D8DB2AD6"
-				"71D6DC14A6F9882A"
-				"22ED61C490B7CE88"
-				"6ACBD5F648141ECC"
-				"06211913A786D9DD"
-				"5875B965A52FD955"
-				"273D48F9D80568AC"
-				"4636F253795B1613"
-				"4E4F728ADA8240A8"
-				"6F59C7C23A41282A"
-				"7E2620ED869001A8"
-				"46641CBE1B25A58A"
-				"5A508404A0B07AD1"
-				"42A7971C7C8174CD"
-				"0204D290950F1DA6"
-				"23A578F05966E88E"
-				"18EF39D0C5B55C34"
-				"0B5B7A15B7FD684C"
-			]
-			description: ["{moni.quest.67591B6025C03130.description1}"]
-			id: "67591B6025C03130"
-			size: 2.0d
-			subtitle: "{moni.quest.67591B6025C03130.subtitle}"
-			tasks: [{
-				id: "4E828B100CB2362F"
-				item: "kubejs:exotic_materials_catalyst"
-				type: "item"
-			}]
-			x: -24.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
 				"1B45AA7042D110E4"
 				"4AF3060B2426B25F"
 				"20116A38B08BA7A3"
-				"119C529A35758AF2"
 				"3A3C9648BD56ED20"
 				"797D6787F2BEE54C"
 				"007B1B457AA3F497"
@@ -2575,7 +2038,6 @@
 				"14F2E61E80D231AE"
 				"4A6F916494B787AE"
 				"26380A0FD7A8688C"
-				"37FD045CC0AEB11B"
 				"0D552ECAE4FC617B"
 				"21F3839E5E4B57BE"
 				"73F80C5062B86D09"
@@ -2626,7 +2088,6 @@
 				"02782201B4D4DB5C"
 				"5C549B001A8AB62F"
 				"39588577CDBFCAE4"
-				"3D9E25B45A7942A7"
 				"70E774D0394C0B8E"
 				"6416118459258E42"
 				"7C55E6EBB28BF5C2"
@@ -2635,11 +2096,11 @@
 				"5B3ABAA58C564CB4"
 				"4CE0D6E9E7DE3129"
 				"6F7D6294E9F311E4"
-				"77880E592DB38C9C"
-				"67591B6025C03130"
-				"5928FCBF99CF031B"
 				"5D1DAC23C6B89AC3"
-				"49B872B193268554"
+				"1D5D25F52BE6709E"
+				"3CFF422D1BAAEB65"
+				"7978CD633112BE89"
+				"2D788BE1CA9A2D69"
 			]
 			description: ["{moni.quest.739F7BF2A90B278A.description1}"]
 			id: "739F7BF2A90B278A"
@@ -2654,7 +2115,7 @@
 			tasks: [{
 				count: 64L
 				id: "6E908CE0BA9547C5"
-				item: "kubejs:mote_of_omnium"
+				item: "gtceu:omnium_nugget"
 				type: "item"
 			}]
 			x: 0.0d

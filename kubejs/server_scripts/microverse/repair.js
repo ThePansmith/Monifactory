@@ -7,11 +7,11 @@
  * Compare with missionDurations of mission_utils.js.
  */
 const repairDurations = {
-    "2half": 80,
-    "4half": 120,
-    "6": 160,
-    "7": 180,
-    "8": 200
+    "2half": 20,
+    "4half": 60,
+    "6": 80,
+    "7": 90,
+    "8": 100
 }
 
 ServerEvents.recipes(event => {
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         .chancedInput("kubejs:warp_engine", 2100, -700)
         .chancedInput("kubejs:advanced_micro_miner_guidance_system", 3600, -1800)
         .chancedInput("kubejs:enderium_micro_miner_core", 1800, -600)
-        .chancedInput("kubejs:bathyal_energy_core", 1200, -400)
+        .chancedInput(Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), 1200, -400)
 
     repairing(8, ["crystal_matrix", "rhodium_plated_palladium", "duranium"])
         .EUt(GTValues.VA[GTValues.ZPM])

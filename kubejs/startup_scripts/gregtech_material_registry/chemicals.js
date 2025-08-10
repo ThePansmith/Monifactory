@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("(C4H9O)3PO")
 
 
-    // Scaleline (Breaks Ender Dragon Scales down into useful materials)
+    // Dragon Scale recycling
     event.create("hydrochloric_dragon_scale_solution")
         .fluid()
         .color(0x697898)
@@ -65,15 +65,22 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("(HF)2Ta")
 
 
-    // Guardian Scaleline (Breaks Guardian Scales down into useful materials)
+    // Guardian Scale recycling
     event.create("guardian_scale_slurry")
         .fluid()
         .color(0x8bbeaf)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    // Wither Bone recycling
+    event.create("plumbate")
+        .dust()
+        .color(0x494351)
+        .components("1x lead", "1x tungsten", "4x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .formula("Pb(WO3)O")
 
     // JEAN gasoline ingredients
-    event.create("chlorine_triflouride")
+    event.create("chlorine_trifluoride")
         .gas()
         .color(0xCBC4EF)
         .components("1x chlorine", "3x fluorine")
@@ -164,10 +171,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("C6H7NO2")
 
     event.create("polyethyl_cyanoacrylate")
-        .polymer()
+        .polymer().liquid()
         .color(0x708787)
         .components("1x nitrogen", "6x carbon", "7x hydrogen", "2x oxygen")
-        .fluidPipeProperties(3000, 12000, true, true, true, false)
+        .fluidPipeProperties(1300, 1000, true, true, true, false)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
         .formula("C6H7NO2");
 
@@ -193,9 +200,143 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x776E82).iconSet("rough")
         .components("lead", "2x chlorine")
 
+    // Aluminosilicate Leachate (Germanium midproduct)
+    event.create("aluminosilicate_leachate")
+        .liquid()
+        .color(0x776E82)
+        .components("4x lithium", "vanadium", "aluminium", "germanium")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
     // Saturated water (Eltz line midproduct)
     event.create("saturated_water")
         .liquid()
         .color(0x857049)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    // PEEK
+    event.create("nitrotoluene")
+        .liquid()
+        .color(0x8c6029)
+        .components("7x carbon", "7x hydrogen", "1x nitrogen", "2x oxygen")
+
+    event.create("analine")
+        .liquid()
+        .color(0x78663a)
+        .components("5x carbon", "7x hydrogen", "1x nitrogen")
+        .formula("C6H5NH2")
+
+    event.create("nitrous_acid")
+        .liquid()
+        .color(0xffc129)
+        .components("1x hydrogen", "1x nitrogen", "2x oxygen")
+
+    event.create("fluoroboric_acid")
+        .liquid()
+        .color(0xaffad7)
+        .components("1x hydrogen", "1x boron", "4x fluorine")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("boron_trifluoride")
+        .gas()
+        .color(0xcdfaaf)
+        .components("1x boron", "3x fluorine")
+
+    event.create("p-toluidine")
+        .liquid()
+        .color(0x693815)
+        .components("7x carbon", "9x hydrogen", "1x nitrogen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("4-fluorotoluene")
+        .liquid()
+        .color(0x632a18)
+        .components("7x carbon", "7x hydrogen", "1x fluorine")
+
+    event.create("fluorotoluene_mixture")
+        .liquid()
+        .color(0x593f36)
+
+    event.create("activated_fluorotoluene_mixture")
+        .liquid()
+        .color(0x593636)
+
+    event.create("4-fluorotrichlorotoluene")
+        .liquid()
+        .color(0x00a666)
+        .components("7x carbon", "4x hydrogen", "3x chlorine", "1x fluorine")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("4-fluorobenzoyl_chloride")
+        .liquid()
+        .color(0x518f9e)
+        .components("1x fluorine", "7x carbon", "4x hydrogen", "1x oxygen", "1x chlorine")
+        .formula("FC6H4COCl")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("benzenediazonium_chloride")
+        .dust()
+        .color(0x5e4b54)
+        .components("6x carbon", "5x hydrogen", "2x nitrogen", "1x chlorine")
+        .formula("C6H5ClN2")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("benzenediazonium_fluoroborate")
+        .dust()
+        .color(0x613d4e)
+        .components("6x carbon", "5x hydrogen", "2x nitrogen", "1x boron", "4x fluorine")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("fluorobenzene")
+        .liquid()
+        .color(0x3d613f)
+        .components("6x carbon", "5x hydrogen", "1x fluorine")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("fluorobenzene_gas_mixture")
+        .liquid()
+        .color(0x29B9CF)
+        .components("1x fluorobenzene", "1x boron_trifluoride", "2x nitrogen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("4-4-difluorobenzophenone")
+        .dust()
+        .color(0x7d470a)
+        .components("13x carbon", "8x hydrogen", "1x oxygen", "2x fluorine")
+        .formula("(FC6H4)2CO")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("hydroquinone")
+        .dust()
+        .color(0xdedede)
+        .components("6x carbon", "6x hydrogen", "2x oxygen")
+        .formula("C6H4(OH)2")
+
+    event.create("sodium_fluoride")
+        .dust()
+        .color(0xa6a6a6)
+        .components("1x sodium", "1x fluorine")
+
+    event.create("sulfolene")
+        .liquid()
+        .color(0xfaf7a7)
+        .components("4x carbon", "6x hydrogen", "1x sulfur", "2x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("sulfolane")
+        .liquid()
+        .color(0xfffdd1)
+        .components("4x carbon", "8x hydrogen", "1x sulfur", "2x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("polyether_ether_ketone")
+        .liquid().dust().polymer()
+        .color(0x272a2e)
+        .components("19x carbon", "12x hydrogen", "3x oxygen")
+        .itemPipeProperties(64, 24)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
+        .formula("(C6H4O2)(C13H8O)")
+
+    event.create("radiant_blend")
+        .liquid()
+        .color(0xfff25e)
 })

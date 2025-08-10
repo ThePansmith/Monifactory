@@ -1,3 +1,4 @@
+// priority: 1
 /**
  * Endgame Material Registry.
  * Used for registering Gregtech Materials
@@ -32,9 +33,13 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(15)
         .neutrons(15)
         .symbol("Ez")
+    event.create("necrosiderite")
+        .protons(67)
+        .neutrons(-26)
+        .symbol("Ns")
 })
 
-// Omnium, Infinity, and Monium have animations and thus custom material icon sets.
+// Omnium, Infinity, Monium, and others have animations and thus custom material icon sets.
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("omnium").parent(GTMaterialIconSet.SHINY)
     event.create("sculk_alloy").parent(GTMaterialIconSet.DULL)
@@ -43,6 +48,7 @@ GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("monium").parent(GTMaterialIconSet.SHINY)
     event.create("dilithium").parent(GTMaterialIconSet.DULL)
     event.create("mana").parent(GTMaterialIconSet.SHINY)
+    event.create("necrosiderite").parent(GTMaterialIconSet.METALLIC)
 })
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
@@ -50,9 +56,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot().fluid()
         .element(GTElements.get("crystal_matrix"))
         .color(0x66ffff)
-        .blastTemp(6800, "highest")
+        .secondaryColor(0x004590)
+        .blastTemp(3823, "highest", GTValues.VA[GTValues.ZPM])
         .iconSet("shiny")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
+        .fluidPipeProperties(4773, 1200, true, false, true, true)
+        .flags(GTMaterialFlags.NO_WORKING, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR);
 
     event.create("omnium")
         .ingot()
@@ -60,21 +68,20 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("omnium"))
         .color(0xffffff).iconSet("omnium")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_SMALL_GEAR)
-        .cableProperties(GTValues.V[GTValues.UEV], 64, 8, false)
+        .cableProperties(GTValues.V[GTValues.UEV], 8, 8, false)
 
     event.create("omnic_acid")
-        .dust()
+        .fluid()
         .color(0xff00ff)
         .iconSet("shiny")
         .components("5x carbon", "4x hydrogen", "3x oxygen", "4x omnium")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("sculk_superconductor")
-        .ingot().fluid()
         .element(GTElements.get("sculk_superconductor"))
         .color(0xffffff)
         .iconSet("shiny")
-        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING)
+        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
 
     event.create("netherite_scrap")
@@ -89,9 +96,21 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("activated_netherite"))
         .color(0x4C484C)
         .iconSet("dull")
-        .cableProperties(GTValues.V[GTValues.UEV], 16, 0, true)
-        .fluidPipeProperties(11000, 8500, true, false, true, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
+        .fluidPipeProperties(12500, 800, true, false, false, true)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.NO_UNIFICATION)
+        .ignoredTagPrefixes([TagPrefix.dust, TagPrefix.dustSmall, TagPrefix.dustTiny, TagPrefix.nugget, TagPrefix.ring, TagPrefix.bolt, TagPrefix.screw])
+
+    event.create("experience_attuned")
+        .dust().gas()
+        .color(0x70486e)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+        .components("7x amethyst", "2x dark_soularium", "4x lapis")
+
+    event.create("sculk_agar")
+        .dust()
+        .color(0x0a3538)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.STICKY, GTMaterialFlags.PHOSPHORESCENT)
+        .components(GTMaterials.PotassiumCyanide.multiply(4), GTMaterials.Biotite.multiply(7), GTMaterials.GelatinMixture.multiply(9), GTMaterials.get("experience_attuned").multiply(2))
 
     event.create("sculk_bioalloy")
         .ingot()
@@ -99,6 +118,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xffffff)
         .iconSet("sculk_alloy")
         .flags(GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_WORKING)
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall, TagPrefix.dust])
 
     event.create("infinity")
         .ingot()
@@ -136,4 +156,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("monium")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SPRING)
         .cableProperties(GTValues.V[GTValues.MAX], 134217727, 0, true)
+
+    event.create("necrosiderite")
+        .ingot()
+        .color(0xffffff)
+        .iconSet("necrosiderite")
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_SPRING)
+        .cableProperties(33554432, 64, 8, false)
+        .blastTemp(12200, "highest", 1000000, 1000)
+        .element(GTElements.get("necrosiderite"))
 })

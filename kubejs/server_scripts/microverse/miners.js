@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
         D: "gtceu:double_cryolobus_plate",
         N: "gtceu:double_naquadah_plate",
         G: "kubejs:advanced_micro_miner_guidance_system",
-        P: "kubejs:bathyal_energy_core",
+        P: Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(),
         A: "gtceu:luv_field_generator",
         E: "kubejs:dischargement_core",
         F: "kubejs:enderium_micro_miner_core",
@@ -230,10 +230,10 @@ ServerEvents.recipes(event => {
         M: "gtceu:double_crystal_matrix_plate",
         P: "solarflux:sp_custom_neutronium",
         W: "kubejs:hadal_warp_engine",
-        A: "gtceu:uev_robot_arm",
+        A: "gtceu:uhv_robot_arm",
         C: "gtceu:uhv_quantum_chest",
         N: "kubejs:universal_navigator",
-        I: "kubejs:infinity_power_unit",
+        I: "gtceu:large_naquadah_reactor",
         B: "kubejs:universal_warp_core",
         D: "kubejs:universal_warp_controller"
     })
@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
         C: "gtceu:uhv_quantum_chest",
         W: "kubejs:hadal_warp_engine",
         D: "kubejs:infinity_power_unit",
-        S: "kubejs:dimensional_stabilization_netherite_casing",
+        S: "monilabs:dimensional_stabilization_netherite_casing",
         Q: "kubejs:field_stabilised_omnic_pulsar_compound"
     })
 
@@ -324,7 +324,7 @@ ServerEvents.recipes(event => {
         T: "gtceu:double_trinium_plate",
         F: "gtceu:zpm_field_generator",
         E: "gtceu:zpm_emitter",
-        C: "kubejs:abyssal_energy_core",
+        C: Item.of("kubejs:abyssal_energy_core", "{Damage:4000000}").weakNBT(),
         S: "gtceu:naquadah_alloy_frame",
         Q: "gtceu:luv_quantum_chest",
         W: "kubejs:warp_core",
