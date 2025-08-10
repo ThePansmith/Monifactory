@@ -2331,6 +2331,11 @@
 				"{moni.quest.7ABC7057BC2E8CE4.description2}"
 			]
 			id: "7ABC7057BC2E8CE4"
+			rewards: [{
+				id: "63338D828354FAAE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7D564A2C88DE58B3"
 				item: "gtceu:oxalic_acid_solution_bucket"
@@ -2339,6 +2344,55 @@
 			title: "{moni.quest.7ABC7057BC2E8CE4.title}"
 			x: 12.25d
 			y: 19.5d
+		}
+		{
+			dependencies: ["1EBF9D9EADB7C451"]
+			description: [
+				"{moni.quest.11D0058859BD6F88.description1}"
+				""
+				"{moni.quest.11D0058859BD6F88.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:nanomuscle_helmet"
+				tag: { }
+			}
+			id: "17B9395C7D995286"
+			rewards: [{
+				id: "688724D812C46E78"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.11D0058859BD6F88.subtitle}"
+			tasks: [
+				{
+					id: "2974A24073D05532"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "399D6F2F537899F2"
+					item: "gtceu:nanomuscle_chestplate"
+					type: "item"
+				}
+				{
+					id: "2A00C78684CD78C6"
+					item: "gtceu:nanomuscle_leggings"
+					type: "item"
+				}
+				{
+					id: "4FB2BEB8132C74BC"
+					item: "gtceu:nanomuscle_boots"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.11D0058859BD6F88.title}"
+			x: 8.75d
+			y: 14.75d
 		}
 	]
 	title: "{moni.chapter.7041EC01A69404E6.title}"

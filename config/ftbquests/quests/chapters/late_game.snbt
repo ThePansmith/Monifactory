@@ -1042,8 +1042,6 @@
 				"{moni.quest.023197AB7CDBDD6E.description1}"
 				""
 				"{moni.quest.023197AB7CDBDD6E.description2}"
-				""
-				"{moni.quest.023197AB7CDBDD6E.description14}"
 			]
 			id: "023197AB7CDBDD6E"
 			rewards: [{
@@ -1214,15 +1212,8 @@
 				"{moni.quest.49B872B193268554.description1}"
 				""
 				"{moni.quest.49B872B193268554.description2}"
-				"{moni.quest.49B872B193268554.description3}"
-				"{moni.quest.49B872B193268554.description4}"
-				"{moni.quest.49B872B193268554.description5}"
 				""
 				"{moni.quest.49B872B193268554.description6}"
-				""
-				"{moni.quest.49B872B193268554.description7}"
-				"{moni.quest.49B872B193268554.description8}"
-				"{moni.quest.49B872B193268554.description9}"
 			]
 			id: "49B872B193268554"
 			rewards: [{
@@ -2606,13 +2597,53 @@
 			y: 16.75d
 		}
 		{
+			dependencies: [
+				"595F205B551A53C9"
+				"15DBB22E3DC0AFB7"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.044553423097C3C7.description1}"
+				""
+				"{moni.quest.044553423097C3C7.description2}"
+				""
+				"{moni.quest.044553423097C3C7.description3}"
+				""
+				"{moni.quest.044553423097C3C7.description4}"
+			]
+			icon: "gtceu:platinum_dust"
+			id: "044553423097C3C7"
+			rewards: [{
+				count: 2
+				id: "400B871C9C2B5830"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "{moni.quest.044553423097C3C7.subtitle}"
+			tasks: [
+				{
+					id: "1CA9B9FE385B774C"
+					item: "gtceu:ruthenium_dust"
+					type: "item"
+				}
+				{
+					id: "18237021D2F3D527"
+					item: "gtceu:rhodium_dust"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.044553423097C3C7.title}"
+			x: 3.0d
+			y: 8.0d
+		}
+		{
 			dependencies: ["739F7BF2A90B278A"]
 			description: [
 				"{moni.quest.61301FBD825F8280.description1}"
 				""
 				"{moni.quest.61301FBD825F8280.description2}"
-				""
-				"{moni.quest.61301FBD825F8280.description3}"
 			]
 			icon: "gtceu:omnium_ingot"
 			id: "61301FBD825F8280"
@@ -2734,11 +2765,19 @@
 				"{moni.quest.05F7C3F397B329F5.description3}"
 			]
 			id: "05F7C3F397B329F5"
+			rewards: [{
+				count: 4
+				id: "01E80F1B37C6A00E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.0D3E0D645F80835D.subtitle}"
 			tasks: [{
 				id: "01229A2F5C98A469"
 				item: "gtceu:rarest_metal_mixture_dust"
 				type: "item"
 			}]
+			title: "{moni.quest.0D3E0D645F80835D.title}"
 			x: 3.0d
 			y: 8.0d
 		}
@@ -2758,6 +2797,30 @@
 			title: "{moni.quest.0B51A633811472A2.title}"
 			x: 14.75d
 			y: 23.75d
+		}
+		{
+			dependencies: ["5199E6FAA4B699CD"]
+			description: ["{moni.quest.0D3E0D645F80835D.description}"]
+			id: "6FA5A5D424F8ADA1"
+			rewards: [{
+				count: 2
+				id: "6AEE91C03E9C1048"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.0D3E0D645F80835D.subtitle}"
+			tasks: [{
+				id: "4D42D65928F19EAD"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.0D3E0D645F80835D.title}"
+			x: 28.75d
+			y: 10.75d
 		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"
