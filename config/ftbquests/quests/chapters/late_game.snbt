@@ -2639,10 +2639,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"739F7BF2A90B278A"
-				"4261BDA34D716EC8"
-			]
 			dependencies: ["739F7BF2A90B278A"]
 			description: [
 				"{moni.quest.61301FBD825F8280.description1}"
@@ -2757,28 +2753,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["2A6E9E7C80754936"]
-			description: ["{moni.quest.0D3E0D645F80835D.description}"]
-			id: "0D3E0D645F80835D"
-			rewards: [{
-				count: 4
-				id: "01E80F1B37C6A00E"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			subtitle: "{moni.quest.0D3E0D645F80835D.subtitle}"
-			tasks: [{
-				id: "033DF7661FB175CE"
-				item: {
-					Count: 1
-					id: "gtceu:advanced_quarktech_chestplate"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "{moni.quest.0D3E0D645F80835D.title}"
-			x: 21.75d
-			y: 9.25d
 			dependencies: [
 				"15DBB22E3DC0AFB7"
 				"044553423097C3C7"
@@ -2791,11 +2765,19 @@
 				"{moni.quest.05F7C3F397B329F5.description3}"
 			]
 			id: "05F7C3F397B329F5"
+			rewards: [{
+				count: 4
+				id: "01E80F1B37C6A00E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.0D3E0D645F80835D.subtitle}"
 			tasks: [{
 				id: "01229A2F5C98A469"
 				item: "gtceu:rarest_metal_mixture_dust"
 				type: "item"
 			}]
+			title: "{moni.quest.0D3E0D645F80835D.title}"
 			x: 3.0d
 			y: 8.0d
 		}
@@ -2815,6 +2797,30 @@
 			title: "{moni.quest.0B51A633811472A2.title}"
 			x: 14.75d
 			y: 23.75d
+		}
+		{
+			dependencies: ["5199E6FAA4B699CD"]
+			description: ["{moni.quest.0D3E0D645F80835D.description}"]
+			id: "6FA5A5D424F8ADA1"
+			rewards: [{
+				count: 2
+				id: "6AEE91C03E9C1048"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.0D3E0D645F80835D.subtitle}"
+			tasks: [{
+				id: "4D42D65928F19EAD"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.0D3E0D645F80835D.title}"
+			x: 28.75d
+			y: 10.75d
 		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"
