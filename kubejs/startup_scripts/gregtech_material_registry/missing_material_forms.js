@@ -75,6 +75,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     liquid_sculk_prop.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder().temperature(310).disableBucket().customStill())
     GTMaterials.Sculk.setProperty($PropertyKey.FLUID, liquid_sculk_prop)
 
+    let liquid_meat_prop = new $FluidProperty();
+    liquid_meat_prop.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder()
+        .temperature(310)
+        .textures(true, true)
+        .name("blood")
+    )
+    GTMaterials.Meat.setProperty($PropertyKey.FLUID, liquid_meat_prop)
+
     // Osmiridium Ore (to go with Iridosmine ore)
     let osmiridium_ore_prop = new $OreProperty();
     osmiridium_ore_prop.setOreByProducts(GTMaterials.Iridium, GTMaterials.Osmium, GTMaterials.Ruthenium)

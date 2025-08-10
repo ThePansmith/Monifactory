@@ -15,5 +15,5 @@ ServerEvents.recipes(event => {
         )
         .itemOutputs("gtmutils:omnibreaker")
         .duration(60 * 20)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.IV], 2)
 })

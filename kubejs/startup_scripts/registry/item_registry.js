@@ -137,11 +137,7 @@ StartupEvents.registry("item", event => {
     event.create("wither_realm_data").displayName("§dWither Realm Data")
     event.create("deep_dark_data").displayName("§dDeep Dark Data")
     event.create("lair_of_the_warden_data").displayName("§dLair Of The Warden Data")
-    event.create("stellar_creation_data").displayName("§bStellar Creation Data")
     event.create("universe_creation_data").displayName("§dUniverse Creation Data")
-    event.create("shattered_star_data").displayName("§dShattered Star Data")
-    event.create("shattered_universe_data").displayName("§dShattered Universe Data")
-    event.create("corrupted_universe_data").displayName("§dCorrupted Universe Data")
 
 
     // Endgame Items

@@ -48,23 +48,12 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:ammonium_oxalate_dust")
         .duration(120).EUt(7)
 
-    event.recipes.gtceu.extractor("sugar_cane_solution")
-        .itemInputs("2x minecraft:sugar_cane")
-        .outputFluids(Fluid.of("gtceu:sucrose_solution", 1000))
-        .duration(300).EUt(120)
-
-    event.recipes.gtceu.distillery("sucrose_distillation")
-        .inputFluids(Fluid.of("gtceu:sucrose_solution", 1000))
-        .itemOutputs("gtceu:sucrose_dust")
-        .outputFluids(Fluid.of("water", 1000))
-        .duration(160).EUt(30)
-
     event.recipes.gtceu.large_chemical_reactor("oxalic_acid_dihydrate")
-        .notConsumable("gtceu:vanadium_dust")
-        .itemInputs("gtceu:sucrose_dust")
-        .inputFluids(Fluid.of("gtceu:nitric_acid", 36000))
+        .notConsumable(doHarderProcessing ? "gtceu:vanadium_pentoxide_dust" : "gtceu:vanadium_dust")
+        .itemInputs("minecraft:sugar")
+        .inputFluids(Fluid.of("gtceu:nitric_acid", 12000), "minecraft:water")
         .itemOutputs("6x gtceu:oxalic_acid_dihydrate_dust")
-        .outputFluids("gtceu:nitrogen_dioxide 36000", "minecraft:water 11000")
+        .outputFluids("gtceu:nitric_oxide 12000")
         .duration(600).EUt(30)
 
     event.recipes.gtceu.electric_blast_furnace("oxalic_acid")
@@ -74,6 +63,13 @@ ServerEvents.recipes(event => {
         .duration(400)
         .blastFurnaceTemp(1700)
         .EUt(120)
+
+    event.recipes.gtceu.electrolyzer("sugar_electrolysis")
+        .itemInputs("23x minecraft:sugar")
+        .itemOutputs("12x gtceu:carbon_dust")
+        .outputFluids(Fluid.of("minecraft:water", 11000))
+        .duration(3.2 * 20)
+        .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.chemical_reactor("ammonium_nitrate")
         .inputFluids("gtceu:ammonia 1000", "gtceu:nitric_acid 1000")

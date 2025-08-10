@@ -173,19 +173,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("(NH4)2C2O4")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("sucrose_solution")
-        .fluid()
-        .color(0x818582)
-        .components("12x carbon", "24x hydrogen", "12x oxygen")
-        .formula("(C12H22O11)H2O")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create("sucrose")
-        .dust()
-        .color(0xe0ddda)
-        .components("12x carbon", "22x hydrogen", "11x oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
     event.create("oxalic_acid_dihydrate")
         .dust()
         .color(0xfafaf7)
@@ -296,19 +283,20 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 // Advanced Solder
 // TODO: mixer, ABS | processing lines
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("advanced_soldering_alloy")
+    event.create("gtceu:advanced_soldering_alloy")
         .ingot()
         .fluid()
         .color(0x74b59b)
         .iconSet("dull")
         .components("15x bismuth", "11x tin", "9x zinc", "4x germanium")
-    // TODO: replace placeholder
-    event.create("bio_soldering_alloy")
+
+    event.create("living_soldering_alloy")
         .ingot()
-        .fluid()
+        .liquid(310)
         .color(0xFF0000b)
         .iconSet("dull")
-        .components("1x water")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components(GTMaterials.RoseGold.multiply(5), GTMaterials.TinAlloy.multiply(12), GTMaterials.Gallium.multiply(10), GTMaterials.Molybdenum.multiply(10), GTMaterials.Sculk.multiply(3))
 })
 
 // Misc
@@ -397,6 +385,9 @@ GTCEuStartupEvents.materialModification(event => {
 
     GTMaterials.RhodiumPlatedPalladium.setComponents(GTMaterials.Palladium.multiply(3), GTMaterials.Rhodium.multiply(1), "2x lumium")
     GTMaterials.RhodiumPlatedPalladium.setFormula("Pd3Rh(SnFe)4(CuAg4)2", true)
+
+    GTMaterials.Sugar.setComponents(GTMaterials.Carbon.multiply(12), GTMaterials.Water.multiply(11))
+    GTMaterials.Sugar.setFormula("C12H22O11", true)
 
     // We keep Ingots in the material definition so we can replace it in the Ore Processing Diagram with vanilla Netherite Scrap, then remove it here.
     TagPrefix.ingot.setIgnored(GTMaterials.get("netherite_scrap"), Ingredient.of("minecraft:netherite_scrap"))

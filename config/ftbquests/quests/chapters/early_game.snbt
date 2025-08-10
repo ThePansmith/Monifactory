@@ -11,7 +11,7 @@
 			id: "7471AD069CC1E5EC"
 			linked_quest: "5CFBAB5F83E33064"
 			size: 1.5d
-			x: 13.75d
+			x: 16.5d
 			y: 12.0d
 		}
 		{
@@ -48,7 +48,7 @@
 			linked_quest: "3650EF39B5AB4A7D"
 			shape: "hexagon"
 			x: 12.25d
-			y: 6.5d
+			y: 9.75d
 		}
 		{
 			id: "3127A65D63213C8E"
@@ -985,7 +985,7 @@
 			}]
 			title: "{moni.quest.64B52DA2ABD5152D.title}"
 			x: 12.25d
-			y: 9.75d
+			y: 6.25d
 		}
 		{
 			dependencies: [
@@ -1010,7 +1010,7 @@
 				type: "item"
 			}]
 			x: 13.75d
-			y: 6.5d
+			y: 9.75d
 		}
 		{
 			dependencies: ["6A262AA410619C23"]
@@ -1029,7 +1029,7 @@
 			}]
 			title: "{moni.quest.3E51686E2DBD380F.title}"
 			x: 13.75d
-			y: 5.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
@@ -1070,7 +1070,7 @@
 			}]
 			title: "{moni.quest.4F4D0F44B615AF4C.title}"
 			x: 12.25d
-			y: 5.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1738,8 +1738,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0E010F5348FC89BF.title}"
-			x: 12.0d
-			y: 18.25d
+			x: 10.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["5357A16B5BF62C96"]
@@ -1859,8 +1859,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.1D0DF2330B113B7A.title}"
-			x: 12.0d
-			y: 19.75d
+			x: 10.0d
+			y: 20.25d
 		}
 		{
 			dependencies: ["6A262AA410619C23"]
@@ -2099,7 +2099,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.508452E1A3E09B56.title}"
-			x: 13.75d
+			x: 16.5d
 			y: 14.0d
 		}
 		{
@@ -2317,8 +2317,28 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7C5CE283172CD952.title}"
-			x: 13.75d
+			x: 16.5d
 			y: 16.0d
+		}
+		{
+			dependencies: [
+				"5357A16B5BF62C96"
+				"4F4D0F44B615AF4C"
+			]
+			description: [
+				"{moni.quest.7ABC7057BC2E8CE4.description1}"
+				""
+				"{moni.quest.7ABC7057BC2E8CE4.description2}"
+			]
+			id: "7ABC7057BC2E8CE4"
+			tasks: [{
+				id: "7D564A2C88DE58B3"
+				item: "gtceu:oxalic_acid_solution_bucket"
+				type: "item"
+			}]
+			title: "{moni.quest.7ABC7057BC2E8CE4.title}"
+			x: 12.25d
+			y: 19.5d
 		}
 	]
 	title: "{moni.chapter.7041EC01A69404E6.title}"
