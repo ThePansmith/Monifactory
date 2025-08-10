@@ -30,9 +30,9 @@ ServerEvents.recipes(event => {
         builder
             .inputFluids("gtceu:helium_plasma 16000")
             .itemInputs("kubejs:microversal_alchemy_kit", "4x kubejs:ultra_dense_hydrogen", "1x kubejs:ultra_dense_helium")
-            .damageRate(25)
+            .damageRate(15)
             .itemOutputs("64x kubejs:protomatter")
-            .requiredMicroverse(3) // Shattered
+            .requiredMicroverse(4) // Corrupted
     })
 
     event.recipes.gtceu.antimatter_manipulator("antimatter_fuel")
