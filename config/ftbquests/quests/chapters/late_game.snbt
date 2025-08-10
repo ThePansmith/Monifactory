@@ -2622,13 +2622,14 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["739F7BF2A90B278A"]
+			dependencies: [
+				"739F7BF2A90B278A"
+				"4261BDA34D716EC8"
+			]
 			description: [
 				"{moni.quest.61301FBD825F8280.description1}"
 				""
 				"{moni.quest.61301FBD825F8280.description2}"
-				""
-				"{moni.quest.61301FBD825F8280.description3}"
 			]
 			icon: "gtceu:omnium_ingot"
 			id: "61301FBD825F8280"
@@ -2736,6 +2737,30 @@
 			title: "{moni.quest.10E63A0428E6BA25.title}"
 			x: 23.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["2A6E9E7C80754936"]
+			description: ["{moni.quest.0D3E0D645F80835D.description}"]
+			id: "0D3E0D645F80835D"
+			rewards: [{
+				count: 4
+				id: "01E80F1B37C6A00E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.0D3E0D645F80835D.subtitle}"
+			tasks: [{
+				id: "033DF7661FB175CE"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.0D3E0D645F80835D.title}"
+			x: 21.75d
+			y: 9.25d
 		}
 	]
 	title: "{moni.chapter.58ABB361EA301019.title}"

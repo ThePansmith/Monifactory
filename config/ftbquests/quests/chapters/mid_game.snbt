@@ -3162,6 +3162,82 @@
 			x: 10.0d
 			y: 1.5d
 		}
+		{
+			dependencies: [
+				"39FD6F1076559156"
+				"14BA058DF781F97D"
+			]
+			description: ["{moni.quest.7BBDF8E5DD082310.description}"]
+			id: "7BBDF8E5DD082310"
+			rewards: [{
+				id: "72276FF88E82A9C7"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.7BBDF8E5DD082310.subtitle}"
+			tasks: [{
+				id: "01132CD07EE392CC"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_nanomuscle_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.7BBDF8E5DD082310.title}"
+			x: 19.25d
+			y: -1.0d
+		}
+		{
+			dependencies: ["46A56A5E3CC2403F"]
+			description: [
+				"{moni.quest.044EBE36128FBB01.description1}"
+				""
+				"{moni.quest.044EBE36128FBB01.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:quarktech_helmet"
+				tag: { }
+			}
+			id: "044EBE36128FBB01"
+			rewards: [{
+				count: 2
+				id: "4A3E41F9052C50AB"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.044EBE36128FBB01.subtitle}"
+			tasks: [
+				{
+					id: "46F90EEF006FF107"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6F87082E843A9F5E"
+					item: "gtceu:quarktech_chestplate"
+					type: "item"
+				}
+				{
+					id: "7DE9D7F4FDA52FCA"
+					item: "gtceu:quarktech_leggings"
+					type: "item"
+				}
+				{
+					id: "7C91674652DC3A72"
+					item: "gtceu:quarktech_boots"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.044EBE36128FBB01.title}"
+			x: 32.0d
+			y: 7.25d
+		}
 	]
 	title: "{moni.chapter.7D825FFA33DC85A7.title}"
 }

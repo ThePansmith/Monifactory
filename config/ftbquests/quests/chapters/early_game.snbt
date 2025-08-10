@@ -2320,6 +2320,55 @@
 			x: 13.75d
 			y: 16.0d
 		}
+		{
+			dependencies: ["1EBF9D9EADB7C451"]
+			description: [
+				"{moni.quest.11D0058859BD6F88.description1}"
+				""
+				"{moni.quest.11D0058859BD6F88.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:nanomuscle_helmet"
+				tag: { }
+			}
+			id: "11D0058859BD6F88"
+			rewards: [{
+				id: "63338D828354FAAE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.11D0058859BD6F88.subtitle}"
+			tasks: [
+				{
+					id: "432672BC71C42AC9"
+					item: {
+						Count: 1
+						id: "gtceu:nanomuscle_helmet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "14BA058DF781F97D"
+					item: "gtceu:nanomuscle_chestplate"
+					type: "item"
+				}
+				{
+					id: "7C2414FF4E417761"
+					item: "gtceu:nanomuscle_leggings"
+					type: "item"
+				}
+				{
+					id: "5D0E3C66355546B5"
+					item: "gtceu:nanomuscle_boots"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.11D0058859BD6F88.title}"
+			x: 8.75d
+			y: 14.75d
+		}
 	]
 	title: "{moni.chapter.7041EC01A69404E6.title}"
 }
