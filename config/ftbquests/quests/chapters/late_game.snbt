@@ -855,40 +855,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["79EFCD8E01384C0C"]
-			description: [
-				"{moni.quest.04EABD3D2C72D2C5.description1}"
-				""
-				"{moni.quest.04EABD3D2C72D2C5.description2}"
-				""
-				"{moni.quest.04EABD3D2C72D2C5.description3}"
-				""
-				"{moni.quest.04EABD3D2C72D2C5.description4}"
-				""
-				"{moni.quest.04EABD3D2C72D2C5.description5}"
-			]
-			id: "04EABD3D2C72D2C5"
-			rewards: [{
-				id: "75F9C602EE54F24E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				count: 8L
-				id: "2E25B07192462553"
-				item: "gtceu:sterilizing_filter_casing"
-				type: "item"
-			}]
-			title: "{moni.quest.04EABD3D2C72D2C5.title}"
-			x: 8.0d
-			y: 16.75d
-		}
-		{
-			dependencies: [
-				"04EABD3D2C72D2C5"
-				"785C6332FC7A07A5"
-			]
+			dependencies: ["785C6332FC7A07A5"]
 			description: [
 				"{moni.quest.1AC91A3E05215569.description1}"
 				""
