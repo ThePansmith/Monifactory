@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("32x gtceu:sculk_agar_dust")
         .duration(20 * 20)
         .EUt(GTValues.VA[GTValues.LV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.discharger("amalgamated_sculk")
         .itemInputs("3x gtceu:sculk_agar_dust", "4x gtceu:echo_shard_dust", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT())

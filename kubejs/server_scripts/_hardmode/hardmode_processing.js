@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
             )
             .inputFluids(Fluid.of("gtceu:sterilized_growth_medium", 4000))
             .itemOutputs("16x gtceu:wetware_circuit_board")
-            .cleanroom(CleanroomType.STERILE_CLEANROOM)
+            .cleanroom(CleanroomType.CLEANROOM)
             .duration(1200)
             .EUt(30720)
 

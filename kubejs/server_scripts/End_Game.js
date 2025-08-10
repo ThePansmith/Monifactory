@@ -156,17 +156,6 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(6)
 
-    // Sterile Cleaning Maintenance Hatch
-    event.shaped("gtmutils:sterile_cleaning_maintenance_hatch", [
-        "WAW",
-        "FCF",
-    ], {
-        A: "gtceu:auto_maintenance_hatch",
-        W: "gtceu:naquadah_double_cable",
-        F: "gtceu:sterilizing_filter_casing",
-        C: "#gtceu:circuits/zpm"
-    })
-
     // FLux Gem
     event.remove({ id: "redstone_arsenal:materials/flux_gem" })
     event.recipes.gtceu.autoclave("flux_gem")
@@ -246,7 +235,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:bacterial_sludge 500")
         .duration(6000)
         .EUt(GTValues.VA[GTValues.LuV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .cleanroom(CleanroomType.CLEANROOM)
 
 
     event.recipes.extendedcrafting.shaped_table("gtceu:zero_point_module", [

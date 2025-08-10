@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         .outputFluids("minecraft:water 6")
         .duration(5 * 20)
         .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // Petri Dish canning
     event.recipes.gtceu.canner("petri_dish_bacteria")
