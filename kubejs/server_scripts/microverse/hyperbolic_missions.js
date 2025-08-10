@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
                 Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT(),
                 "kubejs:lair_of_the_warden_data"
             )
-            .damageRate(10)
+            .damageRate(20)
             .itemOutputs(
                 "48x kubejs:hadal_shard",
                 "64x kubejs:warden_heart",
@@ -28,9 +28,10 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 10, 4).forEach(builder => {
         builder
             .itemInputs("kubejs:universal_collapse_device", "4x kubejs:active_prismatic_core")
-            .damageRate(10)
+            .damageRate(120)
             .itemOutputs("16x kubejs:heart_of_a_universe")
             .requiredMicroverse(4) // Corrupted
+            .updateMicroverse(0)
     })
 
     // T11MM missions
@@ -53,7 +54,6 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs(
                 "kubejs:universal_collapse_device",
-                "kubejs:corrupted_universe_data",
                 "64x gtceu:gravi_star",
                 "64x gtceu:gravi_star"
             )
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 12, 4).forEach(builder => {
         builder
             .itemInputs("kubejs:field_stabilised_omnic_pulsar_compound", "64x gtceu:infinity_ingot", "64x gtceu:meta_null_ingot")
-            .damageRate(200)
+            .damageRate(150)
             .itemOutputs("64x gtceu:monium_ingot")
             .requiredMicroverse(4) // Corrupted
             .updateMicroverse(0)
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UIV]).forEach(builder => {
         builder
             .itemInputs("8x kubejs:timeless_monic_heavy_plating")
-            .damageRate(150)
+            .damageRate(80)
             .itemOutputs("4x kubejs:causality_exempt_monic_heavy_plating")
             .requiredMicroverse(4) // Corrupted
             .updateMicroverse(0)
