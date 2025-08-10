@@ -45,14 +45,15 @@ ServerEvents.recipes(event => {
                 "40x gtceu:raw_coal_block",
                 "16x gtceu:raw_redstone_block",
             )
+            .damageRate(1)
     })
 
     microverse_mission(event, 4, 2).forEach(builder => {
         builder
-            .itemInputs("4x kubejs:quantum_flux")
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:ultimet_drill_head")
+            .requiredMicroverse(1) // Normal
             .itemOutputs(
                 "64x gtceu:raw_platinum",
                 "16x gtceu:raw_platinum",
@@ -61,14 +62,15 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_fluorite",
                 "32x gtceu:raw_fluorite",
             )
+            .damageRate(1)
     })
 
     microverse_mission(event, 4, 2).forEach(builder => {
         builder
-            .itemInputs("4x kubejs:quantum_flux")
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:vanadium_steel_drill_head")
+            .requiredMicroverse(1) // Normal
             .itemOutputs(
                 "64x gtceu:raw_pyrochlore",
                 "64x gtceu:raw_pyrochlore",
@@ -76,14 +78,15 @@ ServerEvents.recipes(event => {
                 "64x gtceu:raw_pollucite",
                 "64x gtceu:raw_gypsum"
             )
+            .damageRate(1)
     })
 
     microverse_mission(event, 4, 2).forEach(builder => {
         builder
-            .itemInputs("4x kubejs:quantum_flux")
             .itemInputs("16x kubejs:petrotheum_dust")
             .itemInputs("kubejs:advanced_drilling_kit")
             .itemInputs("gtceu:stainless_steel_drill_head")
+            .requiredMicroverse(1) // Normal
             .itemOutputs(
                 "64x kubejs:radium_salt",
                 "32x kubejs:radium_salt",
@@ -237,7 +240,6 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 6, 2, undefined, undefined, 100).forEach(builder => {
         builder
-            .itemInputs("16x kubejs:quantum_flux")
             .itemInputs("32x kubejs:stabilized_plutonium")
             .itemInputs("8x kubejs:dragon_lair_data")
             .damageRate((doHostileMicroverse ? -40 : 4))

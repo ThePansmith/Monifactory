@@ -165,6 +165,7 @@ ServerEvents.recipes(event => {
                 "6x gtceu:ruridit_block",
                 "4x kubejs:warden_horn",
             )
+            .damageRate(10)
             .itemOutputs(
                 "64x gtceu:raw_darmstadtite",
                 "64x gtceu:raw_darmstadtite",
