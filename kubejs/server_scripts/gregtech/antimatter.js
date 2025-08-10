@@ -26,14 +26,14 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.gtceu.microverse("protomatter_universal")
-        .itemInputs("kubejs:microminer_t10", "kubejs:microversal_alchemy_kit", "4x kubejs:ultra_dense_hydrogen", "1x kubejs:ultra_dense_helium")
-        .itemOutputs("kubejs:microminer_t10", "64x kubejs:protomatter")
-        .addData("projector_tier", 3)
-        .requiredMicroverse(3) // Shattered
-        .damageRate(25)
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.UV])
+    microverse_mission(event, 10, 3).forEach(builder => {
+        builder
+            .inputFluids("gtceu:helium_plasma 16000")
+            .itemInputs("kubejs:microversal_alchemy_kit", "4x kubejs:ultra_dense_hydrogen", "1x kubejs:ultra_dense_helium")
+            .damageRate(15)
+            .itemOutputs("64x kubejs:protomatter")
+            .requiredMicroverse(4) // Corrupted
+    })
 
     event.recipes.gtceu.antimatter_manipulator("antimatter_fuel")
         .inputFluids("kubejs:refined_bosonic_antimatter 72", "kubejs:refined_hadronic_antimatter 72", "kubejs:refined_fermionic_antimatter 72")

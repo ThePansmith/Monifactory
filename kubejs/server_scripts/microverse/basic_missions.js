@@ -249,17 +249,17 @@ ServerEvents.recipes(event => {
     // T3MM missions
     microverse_mission(event, 3, 1).forEach(builder => {
         builder
-            .itemInputs("4x kubejs:quantum_flux")
             .inputFluids("gtceu:rocket_fuel 5000")
             .itemInputs("kubejs:basic_drilling_kit")
             .itemInputs("gtceu:invar_drill_head")
+            .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "64x gtceu:raw_quartz",
-                "64x gtceu:raw_quartz",
-                "64x gtceu:raw_quartz",
-                "64x gtceu:raw_quartz",
-                "64x gtceu:raw_quartz",
-                "32x gtceu:raw_quartz",
+                "64x gtceu:raw_nether_quartz",
+                "64x gtceu:raw_nether_quartz",
+                "64x gtceu:raw_nether_quartz",
+                "64x gtceu:raw_nether_quartz",
+                "64x gtceu:raw_nether_quartz",
+                "32x gtceu:raw_nether_quartz",
                 "48x gtceu:raw_quartzite"
             )
     })
