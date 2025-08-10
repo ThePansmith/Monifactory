@@ -283,19 +283,20 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 // Advanced Solder
 // TODO: mixer, ABS | processing lines
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("advanced_soldering_alloy")
+    event.create("gtceu:advanced_soldering_alloy")
         .ingot()
         .fluid()
         .color(0x74b59b)
         .iconSet("dull")
         .components("15x bismuth", "11x tin", "9x zinc", "4x germanium")
-    // TODO: replace placeholder
-    event.create("bio_soldering_alloy")
+
+    event.create("living_soldering_alloy")
         .ingot()
-        .fluid()
+        .liquid(310)
         .color(0xFF0000b)
         .iconSet("dull")
-        .components("1x water")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components(GTMaterials.RoseGold.multiply(5), GTMaterials.TinAlloy.multiply(12), GTMaterials.Gallium.multiply(10), GTMaterials.Molybdenum.multiply(10), GTMaterials.Sculk.multiply(3))
 })
 
 // Misc
@@ -323,6 +324,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x666677)
         .components("10x carbon_monoxide", "5x chloroethane", "7x ammonium_formate", "9x dinitrogen_tetroxide", "2x neon", "1x tritium")
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+
+    event.create("neptunium_palladium_aluminium")
+        .fluid().ingot()
+        .color(0x69595A)
+        .components(GTMaterials.Neptunium.multiply(1), GTMaterials.Palladium.multiply(5), GTMaterials.Aluminium.multiply(2))
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+        .blastTemp(3600, "mid")
+        .cableProperties(GTValues.VA[GTValues.ZPM], 16, 8, false);
 
     event.create("trinaquadalloy")
         .fluid()

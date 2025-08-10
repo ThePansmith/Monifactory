@@ -754,6 +754,7 @@
 			dependencies: [
 				"3B3F46345D39CAE2"
 				"544E87F5E356FE10"
+				"044553423097C3C7"
 			]
 			description: [
 				"{moni.quest.5D0A642048AF909B.description1}"
@@ -1126,6 +1127,7 @@
 				"7979D07FBDC6D170"
 				"68734C70E2D19616"
 				"1E36AFB19932C805"
+				"0B51A633811472A2"
 			]
 			description: ["{moni.quest.5A8D2BFAF02E6325.description1}"]
 			id: "5A8D2BFAF02E6325"
@@ -2242,6 +2244,7 @@
 			dependencies: [
 				"49E9A178F6A52A62"
 				"4FABACAB7C4A74AC"
+				"333D947E71179C20"
 			]
 			description: [
 				"{moni.quest.5ECF0A787D861C89.description1}"

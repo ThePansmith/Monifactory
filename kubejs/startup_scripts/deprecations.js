@@ -71,3 +71,6 @@ deprecateItem("gtceu:osmiridiumyes_dust", "gtceu:iridosmine_dust", "Osmiridium D
 
 deprecateBlock("gtceu:glacio_iridosmineyes_ore", "gtceu:glacio_osmiridium_ore", "Glacio Iridosmine Ore")
 deprecateBlock("gtceu:glacio_osmiridiumyes_ore", "gtceu:glacio_iridosmine_ore", "Glacio Osmiridium Ore")
+
+// Chlorine Trifluoride
+deprecateFluid("gtceu:chlorine_triflouride", "gtceu:chlorine_trifluoride", "Chlorine Trifluoride")

@@ -26,23 +26,12 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.gtceu.microverse("protomatter_stellar")
-        .itemInputs("kubejs:microminer_t9", "kubejs:microversal_alchemy_kit")
-        .inputFluids("gtceu:hydrogen 16000")
-        .itemOutputs("kubejs:microminer_t9", "16x kubejs:protomatter")
-        .addData("projector_tier", 3)
-        .requiredMicroverse(1) // Normal
-        .damageRate(50)
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.UV])
-
     event.recipes.gtceu.microverse("protomatter_universal")
-        .itemInputs("kubejs:microminer_t10", "kubejs:microversal_alchemy_kit")
-        .inputFluids("gtceu:hydrogen 32000")
+        .itemInputs("kubejs:microminer_t10", "kubejs:microversal_alchemy_kit", "4x kubejs:ultra_dense_hydrogen", "1x kubejs:ultra_dense_helium")
         .itemOutputs("kubejs:microminer_t10", "64x kubejs:protomatter")
         .addData("projector_tier", 3)
-        .requiredMicroverse(4) // Corrupted
-        .damageRate(40)
+        .requiredMicroverse(3) // Shattered
+        .damageRate(25)
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
 
