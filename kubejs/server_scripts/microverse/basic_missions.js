@@ -343,20 +343,6 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 3, 1).forEach(builder => {
         builder
             .inputFluids("gtceu:rocket_fuel 5000")
-            .itemInputs("kubejs:basic_drilling_kit")
-            .itemInputs("gtceu:ultimet_drill_head")
-            .itemInputs("gtceu:advanced_power_thruster")
-            .requiredMicroverse(1) // Normal
-            .itemOutputs(
-                "8x gtceu:raw_barite",
-                "12x gtceu:raw_laurite",
-                "6x gtceu:raw_cuprorhodsite",
-            )
-    })
-
-    microverse_mission(event, 3, 1).forEach(builder => {
-        builder
-            .inputFluids("gtceu:rocket_fuel 5000")
             .itemInputs("kubejs:blasting_kit")
             .requiredMicroverse(1) // Normal
             .itemOutputs(

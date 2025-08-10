@@ -80,12 +80,12 @@ if (doHarderProcessing) {
             .duration(100).EUt(30)
 
         // Platinum Group Sludge
-        event.recipes.gtceu.chemical_bath("bathe_platinum_group_sludge_dust")
+        event.recipes.gtceu.centrifuge("bathe_platinum_group_sludge_dust")
             .itemInputs("2x gtceu:platinum_group_sludge_dust")
             .inputFluids("gtceu:aqua_regia 2000")
             .itemOutputs("gtceu:platinum_group_residue_dust", "gtceu:iridium_group_sludge_dust", "gtceu:platinum_sludge_residue_dust")
             .outputFluids("gtceu:platinum_palladium_leachate 1000")
-            .duration(250).EUt(30)
+            .duration(250).EUt(GTValues.VA[GTValues.HV])
 
         event.recipes.gtceu.chemical_bath("bathe_platinum_metallic_dust")
             .itemInputs("2x gtceu:platinum_metallic_dust")
@@ -142,22 +142,9 @@ if (doHarderProcessing) {
             .duration(600).EUt(30)
 
         // Palladium
-        event.recipes.gtceu.mixer("palladium_rich_ammonia")
-            .itemInputs("2x gtceu:palladium_metallic_dust")
-            .inputFluids("gtceu:ammonia 2000", "gtceu:chlorine 2000")
-            .outputFluids("gtceu:palladium_rich_ammonia 1000")
-            .duration(250).EUt(30)
-
-        event.recipes.gtceu.fluid_solidifier("solidify_palladium_rich_ammonia")
-            .inputFluids("gtceu:palladium_rich_ammonia 500")
-            .notConsumable("gtceu:ball_casting_mold")
-            .itemOutputs("gtceu:crude_palladium_residue_dust")
-            .duration(125).EUt(30)
-
-        event.recipes.gtceu.chemical_reactor("palladium_metallic_dust_to_palladium_raw_dust")
-            .itemInputs("2x gtceu:palladium_metallic_dust")
+        event.recipes.gtceu.electrolyzer("palladium_rich_ammonia_to_palladium_raw_dust")
             .inputFluids("gtceu:palladium_rich_ammonia 1000")
-            .itemOutputs("3x gtceu:crude_palladium_residue_dust", "gtceu:palladium_raw_dust")
+            .itemOutputs("gtceu:palladium_raw_dust")
             .outputFluids("gtceu:ammonia 2000")
             .duration(250).EUt(30)
 
@@ -167,11 +154,6 @@ if (doHarderProcessing) {
             .itemOutputs("gtceu:palladium_dust")
             .outputFluids("gtceu:hydrochloric_acid 4000", "gtceu:carbon_dioxide 1000")
             .duration(250).EUt(30)
-
-        event.recipes.gtceu.sifter("sift_crude_palladium_residue_dust")
-            .itemInputs("gtceu:crude_palladium_residue_dust")
-            .chancedOutput("gtceu:palladium_metallic_dust", 9500, 0)
-            .duration(600).EUt(30)
 
         // Rhodium
         event.recipes.gtceu.electric_blast_furnace("platinum_group_residue_to_iridium_group_sludge")
