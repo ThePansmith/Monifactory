@@ -4,9 +4,10 @@
  * It is also where the shapes for multis are defined.
  */
 const Tags = Java.loadClass("dev.latvian.mods.kubejs.util.Tags")
-const I18n = Java.loadClass("net.minecraft.client.resources.language.I18n");
+const LocalizationUtils = Java.loadClass("com.lowdragmc.lowdraglib.utils.LocalizationUtils")
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 const CoilWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CoilWorkableElectricMultiblockMachine")
+
 
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
 
@@ -142,30 +143,30 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
     // EMI displays for various multis
     GTRecipeTypes.get("omnic_synthesis")
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.0"))
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.1"))
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.2"))
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.omnic_synthesizer.emi_info.3"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.0"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.1"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.2"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.3"))
 
     GTRecipeTypes.get("transdimensional_energy_singularity")
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.transdimensional_energy_singularity.emi_info.0"))
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.transdimensional_energy_singularity.emi_info.1"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.transdimensional_energy_singularity.emi_info.0"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.transdimensional_energy_singularity.emi_info.1"))
 
     GTRecipeTypes.get("omniscience_research_beacon")
         .addDataInfo((data) => "")
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.creative_data_multi.emi_info.0"))
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.creative_data_multi.emi_info.1"))
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.creative_data_multi.emi_info.2"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.creative_data_multi.emi_info.0"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.creative_data_multi.emi_info.1"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.creative_data_multi.emi_info.2"))
 
     GTRecipeTypes.get("sculk_vat")
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.0"))
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.1"))
-        .addDataInfo((data) => I18n.get("gtceu.multiblock.sculk_vat.emi_info.2"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.0"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.1"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.2"))
         .addDataInfo((data) => {
             if (data.contains("minimumXp") && data.contains("maximumXp")) {
                 let minimumXp = data.getInt("minimumXp");
                 let maximumXp = data.getInt("maximumXp");
-                return I18n.get("gtceu.multiblock.sculk_vat.emi_info.3", String(minimumXp), String(maximumXp));
+                return LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.3", String(minimumXp), String(maximumXp));
             } else {
                 return "";
             }
