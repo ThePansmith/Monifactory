@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         .EUt(7864320)
 
     // Recipes used to run the creative multiblocks
-    event.recipes.gtceu.omnidimensional_power_singularity("kubejs:superfuel_infinite_power")
+    event.recipes.gtceu.transdimensional_energy_singularity("kubejs:superfuel_infinite_power")
         .inputFluids("gtceu:naquadah_superfuel 500")
         .duration(20)
 
