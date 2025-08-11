@@ -468,6 +468,5 @@
     "item.kubejs.damaged_microminer.tooltip": "§7§o組立機で修復可能。",
     "item.kubejs.microminer_t4half_damaged": "§d損傷したルミウム製マイクロモブスレイヤー [Tier 4.5]",
     "item.kubejs.microminer_t2half.desc": "§7§oより安全なマイクロバースでMobを殺害し、その骨格と部位を収集します。",
-    "mae2.eu_p2p_deprecation_tooltip": "0.13 では、これは HM/EM から削除され、NMでは大幅に弱体化されます！",
     "item.patchouli.guide_book.tooltip": "§c情報が不正確である可能性があります！"
 }
