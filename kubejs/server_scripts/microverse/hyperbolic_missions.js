@@ -32,6 +32,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("16x kubejs:heart_of_a_universe")
             .requiredMicroverse(4) // Corrupted
             .updateMicroverse(0)
+            .blacklistMicroverseParallels()
     })
 
     // T11MM missions
@@ -75,6 +76,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("64x gtceu:monium_ingot")
             .requiredMicroverse(4) // Corrupted
             .updateMicroverse(0)
+            .blacklistMicroverseParallels()
     })
 
     microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UIV]).forEach(builder => {
@@ -84,5 +86,6 @@ ServerEvents.recipes(event => {
             .itemOutputs("4x kubejs:causality_exempt_monic_heavy_plating")
             .requiredMicroverse(4) // Corrupted
             .updateMicroverse(0)
+            .blacklistMicroverseParallels()
     })
 })
