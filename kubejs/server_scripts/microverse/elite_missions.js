@@ -155,5 +155,6 @@ ServerEvents.recipes(event => {
             .itemOutputs("kubejs:heart_of_a_universe")
             .requiredMicroverse(1) // Normal
             .updateMicroverse(3, true)
+            .blacklistMicroverseParallels()
     })
 })

@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
         .addData("projector_tier", 1)
         .EUt(GTValues.VHA[GTValues.HV])
         .duration(1000) // 50s, half the duration of a T1 mission
+        .blacklistMicroverseParallels()
 
     // T1MM missions
     microverse_mission(event, 1, 1).forEach(builder => {

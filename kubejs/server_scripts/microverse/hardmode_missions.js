@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
                 .requiredMicroverse(1) // Normal
                 .damageRate(50)
                 .updateMicroverse(2) // Hostile
-
+                .blacklistMicroverseParallels()
         })
     }
 
