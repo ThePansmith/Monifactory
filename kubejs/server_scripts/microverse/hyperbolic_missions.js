@@ -53,11 +53,11 @@ ServerEvents.recipes(event => {
     microverse_mission(event, 11, 4).forEach(builder => {
         builder
             .itemInputs(
-                "kubejs:universal_collapse_device",
+                "kubejs:gravitational_amplifier",
                 "64x gtceu:gravi_star",
                 "64x gtceu:gravi_star"
             )
-            .inputFluids("gtceu:naquadah_fuel 4000")
+            .inputFluids("gtceu:crude_naquadah_fuel 4000")
             .damageRate(2)
             .itemOutputs(
                 "64x kubejs:quasi_stable_neutron_star",

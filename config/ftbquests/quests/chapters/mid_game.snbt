@@ -113,6 +113,14 @@
 			x: 21.5d
 			y: 2.75d
 		}
+		{
+			id: "4BE6E906DD901A7F"
+			linked_quest: "044553423097C3C7"
+			shape: "hexagon"
+			size: 1.5d
+			x: 39.0d
+			y: 6.5d
+		}
 	]
 	quests: [
 		{
@@ -3184,45 +3192,6 @@
 			title: "{moni.quest.7BBDF8E5DD082310.title}"
 			x: 19.25d
 			y: -1.0d
-		}
-		{
-			dependencies: ["595F205B551A53C9"]
-			dependency_requirement: "one_completed"
-			description: [
-				"{moni.quest.044553423097C3C7.description1}"
-				""
-				"{moni.quest.044553423097C3C7.description2}"
-				""
-				"{moni.quest.044553423097C3C7.description3}"
-				""
-				"{moni.quest.044553423097C3C7.description4}"
-			]
-			icon: "gtceu:platinum_dust"
-			id: "6D0D9276712CB004"
-			rewards: [{
-				count: 2
-				id: "14E20E4710D9077E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "{moni.quest.044553423097C3C7.subtitle}"
-			tasks: [
-				{
-					id: "605B3A0C44C136FB"
-					item: "gtceu:ruthenium_dust"
-					type: "item"
-				}
-				{
-					id: "5016B874BE93600A"
-					item: "gtceu:rhodium_dust"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.044553423097C3C7.title}"
-			x: 39.75d
-			y: 6.5d
 		}
 		{
 			dependencies: ["785C6332FC7A07A5"]
