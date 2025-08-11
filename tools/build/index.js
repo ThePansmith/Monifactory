@@ -245,7 +245,8 @@ export const BuildClientTarget = new Juke.Target({
     outputs: () => ([
         "dist/client/",
         "dist/client.zip",
-        ...includeList.map(v => `dist/client/${v}`)
+        ...includeList.map(v => `dist/client/${v}`),
+        "dist/client/mods",
     ]),
     executes: async () => {
         fs.mkdirSync("dist/client", { recursive: true })
@@ -267,7 +268,8 @@ export const BuildServerTarget = new Juke.Target({
     outputs: () => ([
         "dist/server/",
         "dist/server.zip",
-        ...includeList.map(v => `dist/server/${v}`)
+        ...includeList.map(v => `dist/server/${v}`),
+        "dist/server/mods"
     ]),
     executes: async () => {
         fs.mkdirSync("dist/server", { recursive: true })
@@ -299,7 +301,8 @@ export const BuildDevTarget = new Juke.Target({
         "dist/dev/",
         "dist/.devtmp/",
         "dist/dev.zip",
-        ...includeList.map(v => `dist/dev/${v}`)
+        ...includeList.map(v => `dist/dev/${v}`),
+        "dist/dev/mods",
     ]),
     executes: async () => {
         Juke.rm("dist/.devtmp", { recursive: true })
