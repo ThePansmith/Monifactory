@@ -300,14 +300,6 @@
 			y: 22.25d
 		}
 		{
-			id: "4BE6E906DD901A7F"
-			linked_quest: "044553423097C3C7"
-			shape: "hexagon"
-			size: 1.5d
-			x: 4.75d
-			y: 9.75d
-		}
-		{
 			id: "1BA87AD2A58DF6BC"
 			linked_quest: "333D947E71179C20"
 			x: 11.75d
