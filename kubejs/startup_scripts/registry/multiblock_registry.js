@@ -119,7 +119,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL)
 
-    event.create("omnidimensional_power_singularity")
+    event.create("transdimensional_energy_singularity")
         .category("multiblock")
         .setMaxIOSize(0, 0, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.ALWAYS_FULL)
@@ -148,9 +148,9 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.2"))
         .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.3"))
 
-    GTRecipeTypes.get("omnidimensional_power_singularity")
-        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnidimensional_power_singularity.emi_info.0"))
-        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnidimensional_power_singularity.emi_info.1"))
+    GTRecipeTypes.get("transdimensional_energy_singularity")
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.transdimensional_energy_singularity.emi_info.0"))
+        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.transdimensional_energy_singularity.emi_info.1"))
 
     GTRecipeTypes.get("omniscience_research_beacon")
         .addDataInfo((data) => "")
@@ -783,11 +783,11 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .workableCasingModel("gtceu:block/casings/gcym/atomic_casing",
             "gtceu:block/multiblock/fusion_reactor")
 
-    // Omnidimensional Power Singularity
+    // Transdimensional Energy Singularity
     event.create("creative_energy_multi", "multiblock")
         .machine((holder) => new CreativeEnergyMultiMachine(holder))
         .appearanceBlock(() => Block.getBlock("monilabs:dimensional_stabilization_netherite_casing"))
-        .recipeTypes(["omnidimensional_power_singularity"])
+        .recipeTypes(["transdimensional_energy_singularity"])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "###############", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "#######H#######", "###############")
             .aisle("#####NNNNN#####", "#####NNNNN#####", "#######F#######", "#######F#######", "#######F#######", "###############", "###############", "###############", "###############", "#######H#######", "#######H#######", "#######H#######", "#####AAHAA#####", "#######H#######", "#####AAHAA#####", "#######H#######", "#######H#######", "#######H#######", "#######R#######")

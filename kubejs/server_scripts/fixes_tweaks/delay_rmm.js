@@ -8,7 +8,7 @@
 
 ServerEvents.recipes(event => {
     event.replaceInput({ id: "gtceu:assembler/voltage_coil_iv" }, "gtceu:fine_iridium_wire", "gtceu:fine_neptunium_palladium_aluminium_wire")
-    event.replaceInput([{ id: "gtceu:shaped/sensor_iv" }, { id: "gtceu:shaped/emitter_iv" }], "gtceu:iridium_rod", "gtceu:rhodium_rod")
+    event.replaceInput([{ output: "gtceu:iv_sensor" }, { output: "gtceu:iv_emitter" }], "gtceu:iridium_rod", "gtceu:rhodium_rod")
 
     event.recipes.gtceu.mixer("neptunium_palladium_aluminium")
         .itemInputs("gtceu:neptunium_dust", "5x gtceu:palladium_dust", "2x gtceu:aluminium_dust")
