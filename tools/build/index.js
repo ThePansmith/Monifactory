@@ -29,7 +29,7 @@ const includeList = [
     "defaultconfigs",
     "config-overrides",
     "kubejs",
-    "mods"
+//  "mods"
 ]
 
 /**
@@ -238,6 +238,7 @@ export const BuildClientTarget = new Juke.Target({
         for (const folders of includeList) {
             fs.cpSync(folders, `dist/client/${folders}`, { recursive: true })
         }
+        fs.cpSync("dist/modcache", "dist/client/mods", { recursive: true })
 
         await packMod("client");
     }
@@ -260,6 +261,7 @@ export const BuildServerTarget = new Juke.Target({
             fs.cpSync(folders, `dist/server/${folders}`, { recursive: true })
         }
 
+        fs.mkdirSync("dist/server/mods")
         cpSyncFiltered("dist/modcache/", "dist/server/mods", file => {
             const fillet = file.toLowerCase();
             return (
