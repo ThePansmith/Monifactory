@@ -32,6 +32,20 @@ const includeList = [
 //  "mods"
 ]
 
+/** All mods must be lower-case */
+const clientMods = [
+    "oculus",
+    "zume",
+    "watermedia",
+    "embeddium",
+    "embeddiumplus",
+    "citresewn",
+    "legendarytooltips",
+    "fancymenu",
+    "drippyloadingscreen",
+    "badoptimizations"
+]
+
 /**
  * @param {fs.PathLike} ourDir
  * @param {fs.PathLike} newDir
@@ -265,16 +279,8 @@ export const BuildServerTarget = new Juke.Target({
         cpSyncFiltered("dist/modcache/", "dist/server/mods", file => {
             const fillet = file.toLowerCase();
             return (
-                !fillet.includes("oculus")
-        && !fillet.includes("zume")
-        && !fillet.includes("watermedia")
-        && !fillet.includes("embeddium")
-        && !fillet.includes("embeddiumplus")
-        && !fillet.includes("citresewn")
-        && !fillet.includes("legendarytooltips")
-        && !fillet.includes("fancymenu")
-        && !fillet.includes("drippyloadingscreen")
-        && fillet.includes(".jar")
+                fillet.includes(".jar")
+                && !clientMods.find(modName => fillet.includes(modName))
             )
         })
 
