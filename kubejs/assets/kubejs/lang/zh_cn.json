@@ -468,6 +468,5 @@
     "item.kubejs.microminer_t2half_damaged": "§7损坏的黑钢外壳微型屠宰机 [二级改]",
     "item.kubejs.microminer_t4half_damaged": "§7损坏的流明外壳微型屠宰机 [四级改]",
     "item.kubejs.microminer_t2half.desc": "§7§o在安全的微观宇宙中杀死怪物，并收集它们的骨骼和部件",
-    "mae2.eu_p2p_deprecation_tooltip": "在0.13版本中，这将从HM/EM中移除，并在NM中被大幅削弱！",
     "item.patchouli.guide_book.tooltip": "§c信息可能不准确!"
 }
