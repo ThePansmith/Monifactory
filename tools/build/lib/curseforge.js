@@ -92,6 +92,7 @@ async function download_file(url, options = {}, file) {
         https.get(url, options, function(response) {
             if (response.statusCode === 302) {
                 file_stream.close();
+                response.resume();
                 download_file(response.headers.location, options, file)
                     .then(() => resolve());
                 return;
@@ -99,22 +100,23 @@ async function download_file(url, options = {}, file) {
             if (response.statusCode !== 200) {
                 Juke.logger.error(`Failed to download ${url}: Status ${response.statusCode}`);
                 file_stream.close();
-                reject()
-                return
+                response.resume();
+                reject();
+                return;
             }
             response.pipe(file_stream);
 
             // after download completed close filestream
             file_stream.on("finish", () => {
                 file_stream.close();
-                resolve()
+                resolve();
             });
 
         }).on("error", (err) => {
             file_stream.close();
             Juke.rm(file);
             Juke.logger.error(`Failed to download ${url}: ${err.message}`);
-            reject()
+            reject();
         });
     });
 }
