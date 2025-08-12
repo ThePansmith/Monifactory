@@ -21,6 +21,7 @@ if (doHarderProcessing) {
         event.remove({ id: "gtceu:distillation_tower/acidic_osmium_solution_separation" })
         event.remove({ id: "gtceu:distillery/acidic_osmium_solution_separation_to_hydrochloric_acid" })
         event.remove({ id: "gtceu:distillery/acidic_osmium_solution_separation_to_water" })
+        event.remove({ id: "gtceu:large_chemical_reactor/rarest_metal_mixture_separation" })
         // event.remove({ id: "gtceu:chemical_reactor/osmium_tetroxide_separation" })
         // event.remove({ id: "gtceu:large_chemical_reactor/osmium_tetroxide_separation" })
         event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__platinum_sludge_residue" })
@@ -85,14 +86,14 @@ if (doHarderProcessing) {
             .inputFluids("gtceu:aqua_regia 2000")
             .itemOutputs("gtceu:platinum_group_residue_dust", "gtceu:iridium_group_sludge_dust", "gtceu:platinum_sludge_residue_dust")
             .outputFluids("gtceu:platinum_palladium_leachate 1000")
-            .duration(250).EUt(GTValues.VA[GTValues.HV])
+            .duration(200).EUt(GTValues.VA[GTValues.HV])
 
         event.recipes.gtceu.chemical_bath("bathe_platinum_metallic_dust")
             .itemInputs("2x gtceu:platinum_metallic_dust")
             .inputFluids("gtceu:aqua_regia 2000")
             .itemOutputs("gtceu:platinum_group_residue_dust", "gtceu:iridium_group_sludge_dust")
             .outputFluids("gtceu:platinum_palladium_leachate 1000")
-            .duration(250).EUt(30)
+            .duration(200).EUt(30)
 
         // Platinum Sludge Residue
         event.recipes.gtceu.centrifuge("centrifuge_platinum_sludge_residue_dust")
@@ -121,7 +122,7 @@ if (doHarderProcessing) {
             .itemInputs("8x gtceu:ammonium_hexachloroplatinate_dust")
             .inputFluids("gtceu:hydrogen 8000")
             .circuit(2)
-            .itemOutputs("gtceu:platinum_raw_dust")
+            .itemOutputs("4x gtceu:platinum_raw_dust")
             .outputFluids("gtceu:hydrochloric_acid 12000", "gtceu:ammonia 2000")
             .duration(150).EUt(7680)
 
@@ -194,7 +195,7 @@ if (doHarderProcessing) {
             .inputFluids("gtceu:chlorine 2000", "minecraft:water 2000")
             .itemOutputs("5x gtceu:ruthenium_tetroxide_dust")
             .outputFluids("gtceu:salt_water 2000")
-            .duration(1575).EUt(480)
+            .duration(1200).EUt(480)
 
         event.recipes.gtceu.chemical_reactor("ruthenium_tetroxide_to_ruthenium")
             .itemInputs("5x gtceu:ruthenium_tetroxide_dust")
@@ -203,14 +204,14 @@ if (doHarderProcessing) {
             .outputFluids("minecraft:water 4000")
             .duration(300).EUt(30)
 
-        // Osmium is mostly similar to base GTM method
         event.recipes.gtceu.chemical_bath("bathe_rarest_metal_mixture")
             .itemInputs("gtceu:rarest_metal_mixture_dust")
             .inputFluids("gtceu:hydrochloric_acid 1000")
             .itemOutputs("gtceu:iridium_metal_residue_dust")
             .outputFluids("gtceu:acidic_osmium_solution 1000")
-            .duration(100).EUt(30)
+            .duration(100).EUt(GTValues.VHA[GTValues.LuV])
 
+        // Osmium is mostly similar to base GTM method
         event.recipes.gtceu.distillation_tower("distill_acidic_osmium_solution")
             .inputFluids("gtceu:acidic_osmium_solution 2000")
             .itemOutputs("gtceu:osmium_tetroxide_dust")
