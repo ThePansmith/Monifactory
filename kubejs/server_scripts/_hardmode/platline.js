@@ -22,6 +22,8 @@ if (doHarderProcessing) {
         event.remove({ id: "gtceu:distillery/acidic_osmium_solution_separation_to_hydrochloric_acid" })
         event.remove({ id: "gtceu:distillery/acidic_osmium_solution_separation_to_water" })
         event.remove({ id: "gtceu:large_chemical_reactor/rarest_metal_mixture_separation" })
+        event.remove({ id: "gtceu:chemical_reactor/acetic_acid_from_methanol"})
+        event.remove({ id: "gtceu:large_chemical_reactor/acetic_acid_from_methanol"})
         // event.remove({ id: "gtceu:chemical_reactor/osmium_tetroxide_separation" })
         // event.remove({ id: "gtceu:large_chemical_reactor/osmium_tetroxide_separation" })
         event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__platinum_sludge_residue" })
@@ -39,7 +41,7 @@ if (doHarderProcessing) {
             .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
             .outputFluids("gtceu:methyl_formate 1000")
             .duration(16).EUt(30)
-            .circuit(1)
+            .circuit(3)
 
         event.recipes.gtceu.chemical_reactor("formic_acid")
             .inputFluids("gtceu:methyl_formate 1000", "minecraft:water 1000")

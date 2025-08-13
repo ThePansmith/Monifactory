@@ -875,4 +875,12 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VA[GTValues.HV])
         .circuit(1)
+
+    // Give Acetic Acid from Methanol a Circuit
+    event.recipes.gtceu.chemical_reactor("acetic_acid_from_methanol_circuit")
+    .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
+    .outputFluids("gtceu:acetic_acid 1000")
+    .duration(300)
+    .EUt(GTValues.VA[GTValues.LV])
+    .circuit(1)
 })
