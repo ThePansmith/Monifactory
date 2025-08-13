@@ -49,6 +49,7 @@ GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("dilithium").parent(GTMaterialIconSet.DULL)
     event.create("mana").parent(GTMaterialIconSet.SHINY)
     event.create("necrosiderite").parent(GTMaterialIconSet.METALLIC)
+    event.create("crystal").parent(GTMaterialIconSet.SHINY)
 })
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
@@ -58,7 +59,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x66ffff)
         .secondaryColor(0x004590)
         .blastTemp(3823, "highest", GTValues.VA[GTValues.ZPM])
-        .iconSet("shiny")
+        .iconSet("crystal")
         .fluidPipeProperties(4773, 1200, true, false, true, true)
         .flags(GTMaterialFlags.NO_WORKING, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR);
 
