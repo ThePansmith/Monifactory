@@ -866,4 +866,21 @@ ServerEvents.recipes(event => {
         .itemOutputs("2x gtceu:petri_dish")
         .duration(4 * 20)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Alternate Recipe for Octane
+    event.recipes.gtceu.chemical_reactor("synthetic_octane")
+        .chancedFluidInput("gtceu:sulfuric_acid 500", 5000, 0)
+        .inputFluids("gtceu:butene 1000", "gtceu:butane 1000")
+        .outputFluids("gtceu:octane 1000")
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(1)
+
+    // Give Acetic Acid from Methanol a Circuit
+    event.recipes.gtceu.chemical_reactor("acetic_acid_from_methanol_circuit")
+        .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
+        .outputFluids("gtceu:acetic_acid 1000")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.LV])
+        .circuit(1)
 })
