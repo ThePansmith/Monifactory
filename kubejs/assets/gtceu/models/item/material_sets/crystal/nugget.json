@@ -1,0 +1,8 @@
+{
+    "parent": "gtceu:item/handheld",
+    "textures": {
+        "layer0": "gtceu:item/material_sets/crystal/nugget",
+        "layer1": "gtceu:item/material_sets/crystal/nugget_secondary",
+        "layer2": "gtceu:item/material_sets/crystal/nugget_overlay"
+    }
+}

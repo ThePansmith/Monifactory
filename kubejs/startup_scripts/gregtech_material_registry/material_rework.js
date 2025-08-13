@@ -30,7 +30,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("darconite")
         .ingot().fluid()
         .color(0x3221fb).secondaryColor(0x26872b)
-        .iconSet("metallic")
+        .iconSet("crystal")
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
         .cableProperties(GTValues.V[GTValues.UEV], 1, 32, false)
@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("hyperdegenerate_darconite")
         .ingot().fluid()
         .color(0x6442fb).secondaryColor(0x26872b)
-        .iconSet("metallic") // "hyperdegenerate"
+        .iconSet("crystal") // "hyperdegenerate"
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen", "1x hyperdegenerate_matter")
         .cableProperties(GTValues.V[GTValues.UEV], 64, 0, true)
