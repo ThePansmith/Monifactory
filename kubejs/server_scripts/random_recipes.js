@@ -866,4 +866,13 @@ ServerEvents.recipes(event => {
         .itemOutputs("2x gtceu:petri_dish")
         .duration(4 * 20)
         .EUt(GTValues.VA[GTValues.HV])
+
+    // Alternate Recipe for Octane
+    event.recipes.gtceu.chemical_reactor("synthetic_octane")
+        .chancedFluidInput("gtceu:sulfuric_acid 500", 5000, 0)
+        .inputFluids("gtceu:butene 1000", "gtceu:butane 1000")
+        .outputFluids("gtceu:octane 1000")
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.HV])
+        .circuit(1)
 })

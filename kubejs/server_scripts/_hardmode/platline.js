@@ -39,6 +39,7 @@ if (doHarderProcessing) {
             .inputFluids("gtceu:methanol 1000", "gtceu:carbon_monoxide 1000")
             .outputFluids("gtceu:methyl_formate 1000")
             .duration(16).EUt(30)
+            .circuit(1)
 
         event.recipes.gtceu.chemical_reactor("formic_acid")
             .inputFluids("gtceu:methyl_formate 1000", "minecraft:water 1000")
