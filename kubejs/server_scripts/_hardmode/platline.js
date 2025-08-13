@@ -204,14 +204,14 @@ if (doHarderProcessing) {
             .outputFluids("minecraft:water 4000")
             .duration(300).EUt(30)
 
-        // Osmium is mostly similar to base GTM method
         event.recipes.gtceu.chemical_bath("bathe_rarest_metal_mixture")
             .itemInputs("gtceu:rarest_metal_mixture_dust")
             .inputFluids("gtceu:hydrochloric_acid 1000")
             .itemOutputs("gtceu:iridium_metal_residue_dust")
             .outputFluids("gtceu:acidic_osmium_solution 1000")
-            .duration(100).EUt(30)
+            .duration(100).EUt(GTValues.VHA[GTValues.LuV])
 
+        // Osmium is mostly similar to base GTM method
         event.recipes.gtceu.distillation_tower("distill_acidic_osmium_solution")
             .inputFluids("gtceu:acidic_osmium_solution 2000")
             .itemOutputs("gtceu:osmium_tetroxide_dust")
