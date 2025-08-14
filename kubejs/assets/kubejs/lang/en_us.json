@@ -215,13 +215,6 @@
   "item.kubejs.optical_processor_computer": "Optical Processor Supercomputer",
   "item.kubejs.optical_processor_mainframe": "Optical Processor Mainframe",
 
-  "item.kubejs.dimensional_processing_unit": "Dimensional Processing Unit",
-  "item.kubejs.dimensional_circuit_board": "Dimensional Circuit Board",
-  "item.kubejs.dimensional_processor": "Dimensional Processor",
-  "item.kubejs.dimensional_processor_assembly": "Dimensional Processor Assembly",
-  "item.kubejs.dimensional_processor_computer": "Dimensional Processor Supercomputer",
-  "item.kubejs.dimensional_processor_mainframe": "Dimensional Processor Mainframe",
-
   "item.kubejs.monic_processing_unit": "Monic Processing Unit",
   "item.kubejs.monic_circuit_board": "Monic Circuit Board",
   "item.kubejs.monic_processor": "Monic Processor",
@@ -462,8 +455,8 @@
   "kubejs.universal_navigator.tooltip": "§9See You Later, navigator!",
   "kubejs.ultimate_gem.tooltip": "§eRecipe is shapeless.",
 
-  "gtceu.assembly_line.tooltip.normal": "Items and fluids do not have to be in the correct order.",
-  "gtceu.assembly_line.tooltip.hardmode": "Items and fluids must be inserted in the correct order.",
+  "gtceu.assembly_line.tooltip.normalandhardmode": "Items must be inserted in the correct order but fluids do not need to be.",
+  "gtceu.assembly_line.tooltip.expertmode": "Items and fluids must be inserted in the correct order.",
 
   "kubejs.meowni_plush.tooltip.normal.1": "§9How did you get your hands on this?",
   "kubejs.meowni_plush.tooltip.normal.2": "§9(Normally) exclusive to Hardmode and Expertmode players.",
