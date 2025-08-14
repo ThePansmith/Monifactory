@@ -90,6 +90,10 @@
     "NegaNote": {
       "mcuuid": "5042daf6-7d30-4673-97a7-d9aa58d07609",
       "description": "Coremod developer"
+    },
+    "PlasmaticVoid": {
+      "mcuuid": "39cdf546-0ad3-444e-89aa-d8e69cc3ed3a",
+      "description": "Contributor"
     }
   }
 }
