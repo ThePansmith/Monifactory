@@ -82,8 +82,8 @@
 			id: "20F44ACD2F91FD2A"
 			linked_quest: "4DF92773C82F4AAC"
 			shape: "hexagon"
-			x: 39.0d
-			y: -13.5d
+			x: 43.5d
+			y: -15.5d
 		}
 		{
 			id: "21C0AA3B9437C897"
@@ -110,8 +110,8 @@
 			id: "1CA6CD149782D98B"
 			linked_quest: "22DC32C2B67EFD25"
 			shape: "hexagon"
-			x: 25.5d
-			y: -11.5d
+			x: 25.473129251700705d
+			y: -13.040986394557834d
 		}
 		{
 			id: "52051DFD357D8D29"
@@ -194,8 +194,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2D9A95AC50BCB988.title}"
-			x: 29.75d
-			y: -9.0d
+			x: 33.0d
+			y: -15.3d
 		}
 		{
 			dependencies: [
@@ -245,8 +245,8 @@
 				item: "kubejs:heart_of_a_universe"
 				type: "item"
 			}]
-			x: 29.75d
-			y: -11.5d
+			x: 35.0d
+			y: -13.1d
 		}
 		{
 			dependencies: ["22DC32C2B67EFD25"]
@@ -266,8 +266,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.27EBB5AAF8A40F3D.title}"
-			x: 27.0d
-			y: -11.5d
+			x: 27.1d
+			y: -13.1d
 		}
 		{
 			dependencies: ["5601A05D8361551D"]
@@ -360,8 +360,8 @@
 				}
 			]
 			title: "{moni.quest.5A70898C99B828E3.title}"
-			x: 29.75d
-			y: -14.25d
+			x: 35.0d
+			y: -15.2d
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
@@ -434,8 +434,8 @@
 				}
 			]
 			title: "{moni.quest.161F61C28DBC5941.title}"
-			x: 29.75d
-			y: -16.0d
+			x: 34.97108843537417d
+			y: -17.84098639455783d
 		}
 		{
 			dependencies: ["6EA130B04FDE6868"]
@@ -605,10 +605,7 @@
 			y: -13.5d
 		}
 		{
-			dependencies: [
-				"33F610CF136278AE"
-				"61BE0215F377C510"
-			]
+			dependencies: ["33F610CF136278AE"]
 			description: [
 				"{moni.quest.0FD9B533BB402B17.description1}"
 				""
@@ -647,24 +644,6 @@
 			title: "{moni.quest.0DE1BF1648CAF6D6.title}"
 			x: 45.75d
 			y: -19.0d
-		}
-		{
-			description: [
-				"{moni.quest.61BE0215F377C510.description1}"
-				""
-				"{moni.quest.61BE0215F377C510.description2}"
-			]
-			id: "61BE0215F377C510"
-			shape: "hexagon"
-			subtitle: "{moni.quest.61BE0215F377C510.subtitle}"
-			tasks: [{
-				id: "3F79F8E984CF6A2A"
-				item: "kubejs:shattered_universe_data"
-				type: "item"
-			}]
-			title: "{moni.quest.61BE0215F377C510.title}"
-			x: 34.75d
-			y: -14.75d
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
@@ -714,7 +693,7 @@
 			}]
 			title: "{moni.quest.5A07988F5AD20A06.title}"
 			x: 42.0d
-			y: -17.5d
+			y: -17.0d
 		}
 		{
 			dependencies: [
@@ -738,7 +717,10 @@
 			y: -9.75d
 		}
 		{
-			dependencies: ["6EA130B04FDE6868"]
+			dependencies: [
+				"6EA130B04FDE6868"
+				"6F9041F256F517A3"
+			]
 			description: ["{moni.quest.39A09DA3903C5564.description1}"]
 			id: "39A09DA3903C5564"
 			shape: "hexagon"
@@ -766,25 +748,6 @@
 			y: -22.0d
 		}
 		{
-			dependencies: ["61BE0215F377C510"]
-			description: [
-				"{moni.quest.769047385AAC71B2.description1}"
-				""
-				"{moni.quest.769047385AAC71B2.description2}"
-			]
-			id: "769047385AAC71B2"
-			shape: "hexagon"
-			subtitle: "{moni.quest.769047385AAC71B2.subtitle}"
-			tasks: [{
-				id: "45C0AD6F1EC8334B"
-				item: "kubejs:corrupted_universe_data"
-				type: "item"
-			}]
-			title: "{moni.quest.769047385AAC71B2.title}"
-			x: 33.25d
-			y: -14.75d
-		}
-		{
 			dependencies: ["6BF4A76C5B84EEE9"]
 			description: ["{moni.quest.601A47A727AC3BD2.description1}"]
 			id: "601A47A727AC3BD2"
@@ -795,8 +758,8 @@
 				item: "kubejs:quasi_stable_neutron_star"
 				type: "item"
 			}]
-			x: 34.75d
-			y: -9.75d
+			x: 39.0d
+			y: -11.75d
 		}
 		{
 			dependencies: ["1E36AFB19932C805"]
@@ -828,7 +791,7 @@
 				type: "item"
 			}]
 			x: 40.5d
-			y: -22.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["39A09DA3903C5564"]
