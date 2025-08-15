@@ -111,7 +111,7 @@
 			linked_quest: "22DC32C2B67EFD25"
 			shape: "hexagon"
 			x: 25.5d
-			y: -13.040986394557834d
+			y: -13.0d
 		}
 		{
 			id: "52051DFD357D8D29"
@@ -434,8 +434,8 @@
 				}
 			]
 			title: "{moni.quest.161F61C28DBC5941.title}"
-			x: 34.97108843537417d
-			y: -17.84098639455783d
+			x: 35.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["6EA130B04FDE6868"]
