@@ -111,13 +111,13 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
 
     if(!doHarderProcessing) {
-        event.recipes.gtceu.mixer("kubejs:black_steel_dust")
+        event.recipes.gtceu.mixer("kubejs:black_steel_dust_normcoal")
             .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x minecraft:charcoal")
             .itemOutputs("9x gtceu:black_steel_dust")
             .duration(200)
             .EUt(GTValues.VA[GTValues.LV])
 
-        event.recipes.gtceu.mixer("kubejs:black_steel_dust")
+        event.recipes.gtceu.mixer("kubejs:black_steel_dust_charcoal")
             .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x minecraft:coal")
             .itemOutputs("9x gtceu:black_steel_dust")
             .duration(200)
@@ -158,14 +158,14 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1200)
 
     if(!doHarderProcessing) {
-        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel")
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_normcoal")
             .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x minecraft:coal")
             .circuit(3)
             .outputFluids(Fluid.of("gtceu:molten_black_steel", 1296))
             .duration(112.5 * 20 * 9 * 0.75 + 12.5) // 760s
             .EUt(GTValues.VA[GTValues.MV])
             .blastFurnaceTemp(1200)
-        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_gas")
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_gas_normcoal")
             .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x minecraft:coal")
             .inputFluids(Fluid.of("gtceu:nitrogen", 9000))
             .circuit(13)
@@ -173,14 +173,14 @@ ServerEvents.recipes(event => {
             .duration((112.5 * 20 * 9 * 0.75 + 12.5) * 0.67) // 509.2s
             .EUt(GTValues.VA[GTValues.MV])
             .blastFurnaceTemp(1200)
-        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate")
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate_normcoal")
             .itemInputs("15x #forge:dusts/steel", "6x #forge:dusts/copper", "2x #forge:dusts/gold", "2x #forge:dusts/silver", "10x #forge:gems/void", "10x minecraft:coal")
             .circuit(4)
             .outputFluids(Fluid.of("gtceu:molten_black_steel", 6480))
             .duration(112.5 * 20 * 45 * 0.75 + 12.5 * 5) // 3800s
             .EUt(GTValues.VHA[GTValues.HV])
             .blastFurnaceTemp(1200)
-        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate_gas")
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate_gas_normcoal")
             .itemInputs("15x #forge:dusts/steel", "6x #forge:dusts/copper", "2x #forge:dusts/gold", "2x #forge:dusts/silver", "10x #forge:gems/void", "10x minecraft:coal")
             .inputFluids(Fluid.of("gtceu:nitrogen", 9000))
             .circuit(14)
@@ -189,14 +189,14 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.HV])
             .blastFurnaceTemp(1200)
 
-        vent.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel")
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_charcoal")
             .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x minecraft:charcoal")
             .circuit(3)
             .outputFluids(Fluid.of("gtceu:molten_black_steel", 1296))
             .duration(112.5 * 20 * 9 * 0.75 + 12.5) // 760s
             .EUt(GTValues.VA[GTValues.MV])
             .blastFurnaceTemp(1200)
-        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_gas")
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_gas_charcoal")
             .itemInputs("3x #forge:dusts/steel", "2x #forge:dusts/black_bronze", "2x gtceu:void_gem", "2x minecraft:charcoal")
             .inputFluids(Fluid.of("gtceu:nitrogen", 9000))
             .circuit(13)
@@ -204,14 +204,14 @@ ServerEvents.recipes(event => {
             .duration((112.5 * 20 * 9 * 0.75 + 12.5) * 0.67) // 509.2s
             .EUt(GTValues.VA[GTValues.MV])
             .blastFurnaceTemp(1200)
-        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate")
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate_charcoal")
             .itemInputs("15x #forge:dusts/steel", "6x #forge:dusts/copper", "2x #forge:dusts/gold", "2x #forge:dusts/silver", "10x #forge:gems/void", "10x minecraft:charcoal")
             .circuit(4)
             .outputFluids(Fluid.of("gtceu:molten_black_steel", 6480))
             .duration(112.5 * 20 * 45 * 0.75 + 12.5 * 5) // 3800s
             .EUt(GTValues.VHA[GTValues.HV])
             .blastFurnaceTemp(1200)
-        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate_gas")
+        event.recipes.gtceu.alloy_blast_smelter("kubejs:black_steel_alternate_gas_charcoal")
             .itemInputs("15x #forge:dusts/steel", "6x #forge:dusts/copper", "2x #forge:dusts/gold", "2x #forge:dusts/silver", "10x #forge:gems/void", "10x minecraft:charcoal")
             .inputFluids(Fluid.of("gtceu:nitrogen", 9000))
             .circuit(14)
