@@ -883,4 +883,11 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.LV])
         .circuit(1)
+
+    // Make Coal Dust Centrifugation Not A Carbon Dupe
+    event.recipes.gtceu.centrifuge("carbon_dust_from_coal")
+        .itemInputs("gtceu:coal_dust")
+        .itemOutputs("gtceu:carbon_dust")
+        .duration(16)
+        .EUt(GTValues.VA[GTValues.LV])
 })
