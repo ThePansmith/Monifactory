@@ -246,7 +246,7 @@
 				type: "item"
 			}]
 			x: 35.0d
-			y: -13.1d
+			y: -13.0d
 		}
 		{
 			dependencies: ["22DC32C2B67EFD25"]
@@ -267,7 +267,7 @@
 			}]
 			title: "{moni.quest.27EBB5AAF8A40F3D.title}"
 			x: 27.1d
-			y: -13.1d
+			y: -13.0d
 		}
 		{
 			dependencies: ["5601A05D8361551D"]
