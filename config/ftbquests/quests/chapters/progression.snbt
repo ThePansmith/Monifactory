@@ -1109,7 +1109,10 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["5A8D2BFAF02E6325"]
+			dependencies: [
+				"5A8D2BFAF02E6325"
+				"7AF06CB391779388"
+			]
 			description: ["{moni.quest.3D7924B550A1BBA0.description1}"]
 			id: "3D7924B550A1BBA0"
 			shape: "hexagon"

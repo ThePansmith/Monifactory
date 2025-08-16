@@ -32,9 +32,9 @@ ItemEvents.tooltip(tooltip => {
 
     // Assembly line ordering
     if (doAssemblyLineOrderingWarning) {
-        tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.hardmode"))
+        tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.expertmode"))
     } else {
-        tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.normal"))
+        tooltip.add("gtceu:assembly_line", Text.translatable("gtceu.assembly_line.tooltip.normalandhardmode"))
     }
 
     // Meowni Plush

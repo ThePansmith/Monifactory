@@ -97,7 +97,7 @@ If you want to alter some mode-specific features on your instance, do so here.
 However, be warned that if you do so then no support will be provided for any issues you may encounter.
 On the flipside, if you create your own fix for an issue you encounter, then any Pull Requests with such a fix are welcome.
 */
-global.doAssemblyLineOrderingWarning = packMode == "Hard" || packMode == "Expert";
+global.doAssemblyLineOrderingWarning = packMode == "Expert";
 global.doBoilers = packMode == "Normal" || packMode == "Hard";
 global.doCompacting = packMode == "Normal" || packMode == "Hard";
 global.doConverters = packMode == "Normal" || packMode == "Hard";
