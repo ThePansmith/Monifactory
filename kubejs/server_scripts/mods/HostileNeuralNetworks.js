@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
             event.shapeless(
                 Item.of("hostilenetworks:data_model", JSON.stringify({
                     data_model: {
-                        data: 6,
+                        data: 11,
                         id: "hostilenetworks:" + modeldata[0],
                     }
                 })),
