@@ -197,7 +197,6 @@ ServerEvents.recipes(event => {
 
     // Superheavy Chemical Processing
     event.recipes.gtceu.large_chemical_reactor("heavy_residue_purification")
-        .notConsumable("kubejs:magnetron")
         .inputFluids("gtceu:heavy_atomic_residue 200")
         .itemInputs("8x gtceu:activated_carbon_dust")
         .inputFluids("gtceu:distilled_water 4000", "gtceu:omnic_acid 4000")
@@ -207,7 +206,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.large_chemical_reactor("superheavy_residue_purification")
-        .notConsumable("kubejs:magnetron")
         .inputFluids("gtceu:superheavy_atomic_residue 200")
         .inputFluids("gtceu:distilled_water 4000", "gtceu:omnic_acid 4000")
         .outputFluids("gtceu:purified_superheavy_residue 200")
