@@ -64,12 +64,12 @@ ServerEvents.recipes(event => {
     // Combat miners always need repairs for engaging in combat
     repairing("2half", ["dark_steel"])
         .EUt(GTValues.VHA[GTValues.EV])
-        .chancedInput("2x gtceu:double_dark_steel_plate", 9500)
-        .chancedInput("minecraft:crossbow", 3000)
+        .chancedInput("2x gtceu:double_dark_steel_plate", 9500, 0)
+        .chancedInput("minecraft:crossbow", 3000, 0)
 
     repairing("4half", ["lumium", "hsse"])
         .EUt(GTValues.VHA[GTValues.IV])
-        .chancedInput("2x gtceu:double_lumium_plate", 3500)
-        .chancedInput("2x gtceu:double_hsse_plate", 3300)
-        .chancedInput("redstone_arsenal:flux_sword", 2400)
+        .chancedInput("2x gtceu:double_lumium_plate", 3500, 0)
+        .chancedInput("2x gtceu:double_hsse_plate", 3300, 0)
+        .chancedInput("redstone_arsenal:flux_sword", 2400, 0)
 })
