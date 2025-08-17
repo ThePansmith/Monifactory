@@ -17,6 +17,10 @@
 				"{moni.quest.261F7D50E23B0789.description1}"
 				""
 				"{moni.quest.261F7D50E23B0789.description2}"
+				"{@pagebreak}"
+				"{moni.quest.261F7D50E23B0789.description3}"
+				""
+				"{image:ftblibrary:textures/gui/ppm_robot_arm_how_to.png width:100 height:100 align:center}"
 			]
 			id: "261F7D50E23B0789"
 			optional: true
