@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
 
     // GT
     event.remove({ id: "gtceu:mixer/rhodium_plated_palladium" })
+    event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_gunpowder"})
 
     // Redstone arsenal
     event.remove({ id: "redstone_arsenal:materials/flux_dust" })

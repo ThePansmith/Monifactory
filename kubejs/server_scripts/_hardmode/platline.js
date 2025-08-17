@@ -113,21 +113,13 @@ if (doHarderProcessing) {
             .outputFluids("gtceu:palladium_rich_ammonia 1000")
             .duration(1200).EUt(30)
 
-        event.recipes.gtceu.chemical_reactor("ammonium_hexachloroplatinate_to_small_platinum")
-            .itemInputs("2x gtceu:ammonium_hexachloroplatinate_dust")
-            .inputFluids("gtceu:hydrogen 2000")
-            .circuit(1)
-            .itemOutputs("gtceu:platinum_raw_dust")
-            .outputFluids("gtceu:hydrochloric_acid 3000", "gtceu:ammonia 500")
-            .duration(37.5).EUt(7680)
-
         event.recipes.gtceu.large_chemical_reactor("ammonium_hexachloroplatinate_to_platinum")
-            .itemInputs("8x gtceu:ammonium_hexachloroplatinate_dust")
-            .inputFluids("gtceu:hydrogen 8000")
+            .itemInputs("9x gtceu:ammonium_hexachloroplatinate_dust")
+            .inputFluids("gtceu:hydrogen 3000")
             .circuit(2)
             .itemOutputs("4x gtceu:platinum_raw_dust")
-            .outputFluids("gtceu:hydrochloric_acid 12000", "gtceu:ammonia 2000")
-            .duration(150).EUt(7680)
+            .outputFluids("gtceu:hydrochloric_acid 3000", "gtceu:ammonia 2000")
+            .duration(140).EUt(7680)
 
         let steam = new JSONObject()
         steam.add("amount", 3840)
@@ -156,7 +148,7 @@ if (doHarderProcessing) {
             .itemInputs("3x gtceu:palladium_raw_dust")
             .inputFluids("gtceu:formic_acid 1000")
             .itemOutputs("gtceu:palladium_dust")
-            .outputFluids("gtceu:hydrochloric_acid 4000", "gtceu:carbon_dioxide 1000")
+            .outputFluids("gtceu:hydrochloric_acid 3000", "gtceu:carbon_dioxide 1000")
             .duration(250).EUt(30)
 
         // Rhodium
