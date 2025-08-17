@@ -226,20 +226,6 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(7680)
 
-    // Ass control casing
-    event.shaped("4x gtceu:assembly_line_unit", [
-        "CHC",
-        "SFE",
-        "CMC"
-    ], {
-        C: "#gtceu:circuits/luv",
-        H: "gtceu:hpic_chip",
-        S: "gtceu:iv_sensor",
-        F: "gtceu:tungsten_steel_frame",
-        E: "gtceu:iv_emitter",
-        M: "gtceu:iv_electric_motor"
-    }).id("gtceu:shaped/casing_assembly_line")
-
     // Netherstar Crafting
     event.shaped("kubejs:nether_star_south", [
         "ADA",
