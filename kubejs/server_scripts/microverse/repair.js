@@ -43,12 +43,14 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.LuV])
         .chancedInput("2x gtceu:double_enderium_plate", 7000, 0)
         .chancedInput("kubejs:supercharged_laser_array", 3000, 0)
+        .chancedItemInputLogic(ChanceLogic.XOR)
 
     repairing(7)
         .EUt(GTValues.VA[GTValues.LuV])
         .chancedInput("2x gtceu:double_cryolobus_plate", 4000, 0)
         .chancedInput("2x gtceu:double_naquadah_plate", 3000, 0)
         .chancedInput("kubejs:supercharged_laser_array", 3000, 0)
+        .chancedItemInputLogic(ChanceLogic.XOR)
 
     repairing(8)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -56,6 +58,7 @@ ServerEvents.recipes(event => {
         .chancedInput("2x gtceu:double_rhodium_plated_palladium_plate", 2500, 0)
         .chancedInput("2x gtceu:double_duranium_plate", 2000, 0)
         .chancedInput("2x kubejs:supercharged_laser_array", 2500, 0)
+        .chancedItemInputLogic(ChanceLogic.XOR)
 
     // Combat miners always need repairs for engaging in combat
     repairing("2half")
