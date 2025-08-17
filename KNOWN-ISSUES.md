@@ -55,6 +55,15 @@ Switch to a lower GUI scale or tweak EMI's UI configs to your liking. Alternativ
 The Rich Presence integration relies on the completion of certain quests in the Progression tab to track your voltage tier. Ensure that the quest with the Machine Hull corresponding to your tier is completed, and then wait a few minutes for it to update.
 Additionally, there are some reports of problems from players that use Java 22 - consider switching to Java 17 if it remains an issue.
 
+## Issues with the new 0.13 developer build
+Since it is a dev build and not an offical release, bugs are to be expected, you accepted that risk when installing it, when switching to the dev build, back up your world multiple times. Here are some known issues with the dev build to make sure actual issues that weren't known are seen instead of known issues.
+
+**Simulation Supercomputer doesn't run recipes**
+The simulation supercomputer only runs simulations with data models that haven't had any iterations ran in a normal simulation chamber, the most likely cause is how HNN adds a piece of NBT data for the amount of iterations ran, which combined with the(possible) GTm(or KubeJS but probably GTm) issue of not recognizing recipes with different NBT than defined, causes this issue
+
+**Dark Soularium jetpack can't be crafted**
+Same issue as with the simulation supercomputer, NBTs and how GTm doesn't like them.
+
 ## Other Issues with Mods
 Monifactory contains multiple mods that are at different stages of completion - it is not uncommon for a bug to be caused by one of these mods instead of Monifactory specifically.
 If you are unsure whether a specific mod may be causing a bug, try to replicate the bug on a *new instance with only the mods necessary to re-create the issue.* If you can do this, then the bug should be reported to that mod's developers instead of those of Monifactory

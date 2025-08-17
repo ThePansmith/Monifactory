@@ -88,6 +88,35 @@ Instead:
     `pack-mode-switcher` (If your modpack was not in Normal Mode)
 3. Adjust the pack mode of the new instance, if needed (Instructions above)
 
+**Q. How do I update to the 0.13 developer release build**
+The 0.13 test build can be found [here](https://github.com/ThePansmith/Monifactory/actions/runs/16892134455), you will need a github account to access it.
+
+Depending on which electrical tier you are at, you'll have a multitude of breaking issues, here is the general consensus of what will happen when updating to 0.13 at what tier:
+
+`ULV-HV` - Exercise caution\
+`EV-IV` - Prepare for moderate setbacks and/or breaks\
+`LuV-ZPM` - You should probably reconsider, but if you decide to do it anyway, prepare for multiple redesigns of several sections of your base\
+`UV+` - Do not attempt. There are so many changes between 0.12.9 and 0.13 you're probably better off doing a whole new run
+
+If you decide to update you'll need to do many things before you update:
+
+1. Back up your world. Make multiple if you have to, just make sure that you can restore if something goes wrong. This is true for any updates, but will be triply important for this one. When restoring a backup, copy files over instead of moving them so you can re-use the backup again if you mess up twice.
+2. Hoard a bunch of power and resources necessary for the continued operation of your base like PPM and generator fuel. If you have a PSS, expand it. Make some backup generators of a different type from your main ones and store some fuel for them outside your ME system. With the number of recipes that have changed and things that have been removed, you may find yourself unable to generate power or fabricate vital resources for some time after updating so this will give you buffer time to get your factory back to regular operation.
+3. Matter circuits, Dimensional circuits, UIV machines, UIV components, and EUP2P are removed. Convert them into something more useful or scrap them back into raw materials.
+4. Creative Datas are removed, but the items they yield are not. Hoard as many as you need to make the transition.
+5. Finish any autocrafts taking place, and pause any passive automation that has large quantities stocked to minimize power draw.
+6. Charge your tools and replace/upgrade any that have low durability. You'll be needing them.
+7. Turn off and break: Fission Reactor Controllers, ME Pattern Buffers.
+
+After you do that, you can update your modpack to the 0.13, similar to other updates, you need to follow the "How to update" guide. After that, you will see a bunch of stuff broken. Here is what you should do after updating:
+1. Make note of any broken automation you find from here on out. Like, physically write it down somewhere or mark it with a Sign so you don't forget. However, you should postpone fixing anything nonessential on this list until after step 4.
+2. Reactivate your ME system and restore a reliable source of power. Use your backup/alternate generators you prepared before the update if necessary.
+3. Try autocrafting some components and machines from EV or below. These tiers have the same recipes as pre-0.13, so they should require minimal effort to fix if any. They may be necessary to construct new processing lines that replace old ones.
+4. Go through your ME system and remove any invalid patterns. Replace any that have outputs you can remember.
+5. Look in your ME system and in-world for any items, fluids, and blocks with a pink and black checkerboard pattern texture and/or labelled **DEPRECATED**. These can be converted directly into their post-update forms - look in EMI/JEI.
+
+Congratulations! You have a factory that can now tackle the rest of the 0.13 surprises! You should be aware that the 0.13 test builds are not the finished product and *will* have bugs!
+
 **Q. How do I add optional compat mods?**
 
 [Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#Addon-Mods-AKA-Optional-Compats)
