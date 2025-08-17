@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
 
     repairing("4half", ["lumium", "hsse"])
         .EUt(GTValues.VHA[GTValues.IV])
-        .chancedInput("2x gtceu:double_lumium_plate", 9000)
-        .chancedInput("2x gtceu:double_hsse_plate", 8000)
+        .chancedInput("2x gtceu:double_lumium_plate", 3500)
+        .chancedInput("2x gtceu:double_hsse_plate", 3300)
         .chancedInput("redstone_arsenal:flux_sword", 2400)
 })
