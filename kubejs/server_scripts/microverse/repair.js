@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
             .itemInputs(`kubejs:microminer_t${minerTier}_damaged`)
             .itemOutputs(`kubejs:microminer_t${minerTier}`)
             .inputFluids(Fluid.of("gtceu:soldering_alloy", 36 * minerTierNumber))
-            .duration(20 * repairDurations[minerTier])     
+            .duration(20 * repairDurations[minerTier])
 
         return builder;
     }
