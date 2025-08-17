@@ -73,10 +73,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.EV])
         .chancedInput("2x gtceu:double_dark_steel_plate", 7000, 0)
         .chancedInput("minecraft:crossbow", 3000, 0)
+        .chancedItemInputLogic(ChanceLogic.XOR)
 
     repairing("4half")
         .EUt(GTValues.VHA[GTValues.IV])
         .chancedInput("2x gtceu:double_lumium_plate", 3500, 0)
         .chancedInput("2x gtceu:double_hsse_plate", 3300, 0)
         .chancedInput("redstone_arsenal:flux_sword", 3200, 0)
+        .chancedItemInputLogic(ChanceLogic.XOR)
 })
