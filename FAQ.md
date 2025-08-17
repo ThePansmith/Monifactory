@@ -98,9 +98,7 @@ Instead:
 
 **Q. How do I get old Gregtech textures?**
 
-For the old Gregtech: Modern textures, look into [Zedtech](https://www.curseforge.com/minecraft/texture-packs/zedtech).
-
-For the older 1.12 Gregtech textures, look into [Threefold's Modern GregTech](https://modrinth.com/resourcepack/threefolds-modern-gregtech) or [GregTech CEu Modern Programmer Art](https://www.curseforge.com/minecraft/texture-packs/gtceu-programmer-art).
+For the old Gregtech textures, look into [Threefold's Modern GregTech](https://modrinth.com/resourcepack/threefolds-modern-gregtech) or [GregTech CEu Modern Programmer Art](https://www.curseforge.com/minecraft/texture-packs/gtceu-programmer-art).
 
 **Q. How do I remove the urban ruins around my spawn?**
 
