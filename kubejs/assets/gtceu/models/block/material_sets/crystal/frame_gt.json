@@ -1,8 +1,8 @@
 {
-    "parent": "gtceu:item/handheld",
+    "parent": "gtceu:block/cube_3_layer/all",
     "textures": {
-        "layer0": "gtceu:item/material_sets/crystal/frame_gt",
-        "layer1": "gtceu:item/material_sets/crystal/frame_gt_secondary",
-        "layer2": "gtceu:item/material_sets/crystal/frame_gt_overlay"
+        "layer0": "gtceu:block/material_sets/crystal/frame_gt",
+        "layer1": "gtceu:block/material_sets/crystal/frame_gt_secondary",
+        "layer2": "gtceu:block/material_sets/crystal/frame_gt_overlay"
     }
 }
