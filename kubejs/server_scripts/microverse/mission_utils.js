@@ -127,6 +127,7 @@ function microverse_mission(event, minerTier, projectorTier, duration, EUt, mine
             .itemInputs(`kubejs:stabilized_microminer_t${minerTier}`)
             .itemOutputs(`kubejs:stabilized_microminer_t${minerTier}`)
             .duration(Math.round(duration * 20))
+            .addData("duration", Math.round(duration * 20))
             .EUt(EUt)
     }
 

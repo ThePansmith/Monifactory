@@ -29,20 +29,21 @@ ServerEvents.recipes(event => {
 
     // Single-recipe microverse projectors
     let projector = [
-        ["basic_microverse_projector", "#gtceu:circuits/hv"],
-        ["advanced_microverse_projector", "#gtceu:circuits/ev"],
-        ["elite_microverse_projector", "#gtceu:circuits/iv"]
+        ["basic_microverse_projector", "#gtceu:circuits/mv", "gtceu:mv_field_generator"],
+        ["advanced_microverse_projector", "#gtceu:circuits/ev", "gtceu:ev_field_generator"],
+        ["elite_microverse_projector", "#gtceu:circuits/luv", "gtceu:luv_field_generator"]
     ]
 
     projector.forEach(projector => {
         event.shaped(`monilabs:${projector[0]}`, [
-            "CMC",
-            "MAM",
-            "CMC"
+            "MCM",
+            "FAF",
+            "MCM"
         ], {
             C: projector[1],
             M: "monilabs:microverse_casing",
-            A: "gtceu:computer_monitor_cover"
+            A: "gtceu:computer_monitor_cover",
+            F: projector[2]
         }).id(`kubejs:${projector[0]}`)
     })
 
