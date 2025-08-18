@@ -39,7 +39,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // UEV moni + gt Supercon
     event.create("hyperdegenerate_darconite")
-        .ingot().fluid()
+        .ingot()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill()) // .liquid(new GTFluidBuilder().state(GTFluidState.MOLTEN).customStill()) (Can't figure out how to make molten work, should probably be hidden from EMI anyways. -Flare32)
         .color(0xffffff)
         .iconSet("hyperdegenerate_darconite")
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
