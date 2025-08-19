@@ -15,6 +15,7 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("meta_null").parent(GTMaterialIconSet.SHINY)
+    event.create("hyperdegenerate_darconite").parent(GTMaterialIconSet.SHINY)
 })
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
@@ -38,10 +39,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // UEV moni + gt Supercon
     event.create("hyperdegenerate_darconite")
-        .ingot().fluid()
-        .color(0x6442fb).secondaryColor(0x26872b)
-        .iconSet("crystal") // "hyperdegenerate"
-        .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
+        .ingot()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill()) // .liquid(new GTFluidBuilder().state(GTFluidState.MOLTEN).customStill()) (Not needed and doesn't work, but still kept around just in case. -Flare32)
+        .color(0xffffff)
+        .iconSet("hyperdegenerate_darconite")
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen", "1x hyperdegenerate_matter")
         .cableProperties(GTValues.V[GTValues.UEV], 64, 0, true)
         .flags(GTMaterialFlags.DISABLE_ALLOY_BLAST, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_FINE_WIRE)
