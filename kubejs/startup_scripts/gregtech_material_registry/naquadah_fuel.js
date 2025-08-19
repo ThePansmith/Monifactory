@@ -2,35 +2,11 @@
  * Registration of elements & materials for Naquadah Fuel
  */
 
-GTCEuStartupEvents.registry("gtceu:element", event => {
-    event.create("quadium")
-        .protons(1)
-        .neutrons(3)
-        .symbol("Qd")
-        .isIsotope(true);
-
-    event.create("hyperdegenerate_matter")
-        .protons(250)
-        .neutrons(1000)
-        .symbol("Ω");
-})
-
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
-    event.create("hyperdegenerate_matter").parent(GTMaterialIconSet.RADIOACTIVE)
     event.create("naquadah_superfuel").parent(GTMaterialIconSet.RADIOACTIVE)
 })
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("quadium")
-        .gas()
-        .element(GTElements.get("quadium"))
-        .color(0x7c5bff)
-
-    event.create("hyperdegenerate_matter")
-        .element(GTElements.get("hyperdegenerate_matter"))
-        .color(0xffffff).iconSet("hyperdegenerate_matter")
-        .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
-
     event.create("crude_naquadah_fuel")
         .liquid()
         .color(0xB9E364)

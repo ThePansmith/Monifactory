@@ -6,14 +6,6 @@
 const PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey");
 
 // AE2 Materials
-
-GTCEuStartupEvents.registry("gtceu:element", event => {
-    event.create("dilithium")
-        .protons(119)
-        .neutrons(229)
-        .symbol("Dl")
-})
-
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("charged_certus_quartz")
         .gem()
@@ -35,15 +27,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 // Space Materials
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("dilithium")
-        .dust()
-        .gem()
-        .ore(2, 1)
-        .element(GTElements.get("dilithium"))
-        .color(0xfdd2df).secondaryColor(0xfa52b5)
-        .iconSet("dilithium")
-        .addOreByproducts("lithium", "cobalt", "platinum")
-
     event.create("calcium_perchlorate")
         .dust()
         .color(0xf9fbda)
@@ -161,7 +144,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("enriched_sunnarium")
         .dust()
         .color(0xACFFC2)
-        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
+        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
 })
 
 // Terbium

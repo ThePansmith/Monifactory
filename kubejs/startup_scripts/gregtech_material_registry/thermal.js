@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(4000, "high", GTValues.VA[GTValues.IV], 1400)
         .cableProperties(32768, 3, 0, true)
         .components("4x annealed_copper", "2x red_steel", "2x red_alloy", "mana")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
 
     event.create("enderium")
         .ingot().fluid()
@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(6400, "highest", GTValues.VA[GTValues.LuV], 1600)
         .cableProperties(131072, 4, 0, true)
         .components("4x lead", "2x platinum", "blue_steel", "osmium", "tantalum", "mana")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FINE_WIRE)
 
     event.create("electrum_flux")
         .ingot().fluid()
@@ -63,6 +63,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("magic")
         .blastTemp(2141, null)
         .components("titanium", "mana")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FRAME)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
 
 })
