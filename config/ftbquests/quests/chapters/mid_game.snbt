@@ -3117,6 +3117,11 @@
 			hide_until_deps_visible: true
 			icon: "gtceu:simulation_supercomputer"
 			id: "51FD757E07E397A1"
+			rewards: [{
+				id: "15A36C10C6BDE36C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "721A109D9665F701"
@@ -3148,6 +3153,11 @@
 			hide_until_deps_visible: true
 			icon: "gtceu:loot_superfabricator"
 			id: "7A716485BBDA8629"
+			rewards: [{
+				id: "4346F69891783E73"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "32EAE4F30B3C118D"
