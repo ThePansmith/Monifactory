@@ -195,7 +195,6 @@ if (Platform.isLoaded("create")) {
                 .addDataString("fluidB", "minecraft:water")
                 .duration(16)
                 .EUt(EUt)
-                .addCondition(RockBreakerCondition.INSTANCE)
         }
         rockCrushing("minecraft", "dripstone_block", 60)
         rockCrushing("minecraft", "tuff", 60)
