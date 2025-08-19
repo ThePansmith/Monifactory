@@ -428,7 +428,7 @@ ServerEvents.recipes(event => {
         "AAZAA",
     ], {
         A: "#forge:plates/soularium",
-        B: "#forge:plates/titanium_carbide",
+        B: "#forge:plates/tungsten_steel",
         C: "enderio:enderman_head",
         D: "minecraft:creeper_head",
         E: "minecraft:zombie_head",
