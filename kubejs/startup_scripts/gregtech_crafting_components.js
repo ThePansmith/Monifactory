@@ -152,8 +152,9 @@ GTCEuStartupEvents.craftingComponents(event => {
     })
 
     event.setMaterialEntries("rod_distillation", {
-        UHV: "spring:actinium",
-        UEV: "spring:eltz",
+        UV: "spring:trinium",
+        UHV: "spring:tritanium",
+        UEV: "spring:omnium",
     })
 
     const samRod = "rod:samarium"
