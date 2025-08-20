@@ -8,8 +8,7 @@ const $DustProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.ma
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
     if (doHarderProcessing) {
-        GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-        GTMaterials.Berkelium.addFlags(GTMaterialFlags.GENERATE_FRAME)
+        // GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         GTMaterials.RhodiumSulfate.setProperty($PropertyKey.DUST, new $DustProperty());
     }
 })

@@ -8,14 +8,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("dark_steel")
         .ingot().fluid()
         .color(0x414751).iconSet("dull")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("iron", "obsidian")
 
     // Conductive Iron
     event.create("conductive_alloy")
         .ingot().fluid()
         .color(0xf7b29b).iconSet("metallic")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .components("iron", "redstone")
         .cableProperties(32, 1, 0, true)
 
@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("vibrant_alloy")
         .ingot().fluid()
         .color(0xa4ff70).iconSet("shiny")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .blastTemp(1350, "low", 120, 400)
         .components("energetic_alloy", "ender_pearl")
         .cableProperties(512, 2, 0, true)
@@ -41,7 +41,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("pulsating_alloy")
         .ingot().fluid()
         .color(0x2AB38F).iconSet("shiny")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("iron")
         .cableProperties(8, 1, 0, true)
 
@@ -71,5 +71,5 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .color(0x7c674d).iconSet("metallic")
         .components("soularium", "dark_steel", "tritium")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
