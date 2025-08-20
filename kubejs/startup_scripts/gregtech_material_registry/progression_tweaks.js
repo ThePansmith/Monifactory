@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .blastTemp(3600, "mid")
         .cableProperties(GTValues.VA[GTValues.ZPM], 16, 8, false);
-  
+
     // Advanced Solders
     // TODO: mixer, ABS | processing lines
     event.create("gtceu:advanced_soldering_alloy")

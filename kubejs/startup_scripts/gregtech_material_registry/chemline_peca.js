@@ -67,7 +67,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluidPipeProperties(1300, 1000, true, true, true, false)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
         .formula("C6H7NO2");
-    
+
     // Dimethyl sulfoxide sub-chain
 
     event.create("dimethyl_sulfoxide")
