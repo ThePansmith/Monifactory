@@ -1,4 +1,3 @@
-
 /**
  * Material Registry for content that directly modifies base GregTech Modern progression, such as advanced solders.
  */
@@ -13,7 +12,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
         .blastTemp(3600, "mid")
         .cableProperties(GTValues.VA[GTValues.ZPM], 16, 8, false);
-    
+  
     // Advanced Solders
     // TODO: mixer, ABS | processing lines
     event.create("gtceu:advanced_soldering_alloy")
@@ -30,6 +29,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("dull")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components(GTMaterials.RoseGold.multiply(5), GTMaterials.TinAlloy.multiply(12), GTMaterials.Gallium.multiply(10), GTMaterials.Molybdenum.multiply(10), GTMaterials.Sculk.multiply(3))
-
-    
 })

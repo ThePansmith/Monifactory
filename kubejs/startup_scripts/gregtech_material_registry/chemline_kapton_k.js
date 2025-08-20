@@ -3,7 +3,7 @@
  */
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    
+
     if (doHarderRecipes) {
         event.create("durene")
             .dust()
@@ -47,5 +47,3 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.STICKY)
     }
 })
-
-

@@ -41,7 +41,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 // EnderIO
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    
+
     event.create("dark_steel")
         .ingot().fluid()
         .color(0x414751).iconSet("dull")
@@ -263,7 +263,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
 
     // Trinaquadalloy is, to my knowledge, from a GregTech addon that has since been removed from the pack.
-  
+
     event.create("trinaquadalloy")
         .fluid()
         .ingot()
@@ -274,7 +274,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(8747, "higher", 131072, 1200)
 
     // Microversium is *technically* original to OmNoMoniTM, but it's a fairly direct riff on Modularium.
-  
+
     event.create("microversium")
         .ingot().liquid()
         .color(0x9b61b8).iconSet("dull")

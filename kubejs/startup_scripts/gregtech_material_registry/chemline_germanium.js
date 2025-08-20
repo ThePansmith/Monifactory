@@ -56,5 +56,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("iron_mineral_solution")
         .fluid()
         .color(0x6b5a67)
-
 })

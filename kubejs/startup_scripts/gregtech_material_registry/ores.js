@@ -2,7 +2,7 @@
  * Material Registry for ores.
  */
 
-GTCEuStartupEvents.registry("gtceu:material", event => {   
+GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("dilithium")
         .dust()
@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xfdd2df).secondaryColor(0xfa52b5)
         .iconSet("dilithium")
         .addOreByproducts("lithium", "cobalt", "platinum")
-   
+
     event.create("fluorite")
         .gem()
         .ore()
@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("diamond")
         .components("1x calcium", "2x fluorine")
         .addOreByproducts("calcite", "barite")
- 
+
     event.create("iridosmine")
         .dust().ore()
         .color(0x54afff).secondaryColor(0x1b5651).iconSet("metallic")
@@ -44,7 +44,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xc1aa82).iconSet("bright")
         .components("copper", "iron", "4x rhodium", "8x sulfur")
         .addOreByproducts("chalcocite", "platinum", "ruthenium")
-    
+
     event.create("darmstadtite")
         .dust().ore(2, 1)
         .iconSet("dull")

@@ -4,7 +4,7 @@
 
 // Wetware Tweaks
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    
+
     event.create("rotten_meat")
         .dust(1)
         .color(0xe8543a).secondaryColor(0x684a09).iconSet(GTMaterialIconSet.SAND)
@@ -26,18 +26,23 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0x9C3C1C)
         .iconSet(GTMaterialIconSet.SAND)
+
     event.create("ardite_salt")
         .dust()
         .color(0xE6734C)
+
     event.create("nether_conduit")
         .dust()
         .color(0x664D4D)
+
     event.create("ardite_slurry")
         .fluid()
         .color(0xAD2F05)
+
     event.create("impure_molten_ardite")
         .fluid()
         .color(0xAD6639)
+
     event.create("netherite_scrap")
         .dust().ingot().ore(1, 3)
         .color(0x6D473E)
@@ -47,7 +52,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 })
 
 // Space Rock Processing
-GTCEuStartupEvents.registry("gtceu:material", event => {  
+GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("calcium_perchlorate")
         .dust()
@@ -64,7 +69,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 // Necrosiderite Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-        event.create("necrosiderite_oxide")
+    event.create("necrosiderite_oxide")
         .dust()
         .color(0xD29092)
         .components("2x necrosiderite", "3x oxygen")

@@ -49,7 +49,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 // Harder Molybdenite/Wulfenite/Powellite Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    
+
     if (doHarderProcessing) {
         event.create("molybdenum_trioxide")
             .dust()
@@ -61,7 +61,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 // Vanadium Pentoxide
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    
+
     if (doHarderProcessing) {
         event.create("vanadium_pentoxide")
             .dust()

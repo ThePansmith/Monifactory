@@ -85,4 +85,3 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     }
 })
-

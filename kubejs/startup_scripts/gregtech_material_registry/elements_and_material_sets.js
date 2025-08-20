@@ -97,7 +97,7 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .symbol("Dl")
 
     // Taranium (HM Exclusive)
-    
+
     if (doStoneline) {
         event.create("taranium")
             .protons(149)
@@ -110,7 +110,7 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 // Material Sets
 
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
-    
+
     // Generic
     event.create("crystal").parent(GTMaterialIconSet.SHINY)
     event.create("magic").parent(GTMaterialIconSet.METALLIC)
@@ -118,12 +118,12 @@ GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
 
     // Sculk
     event.create("sculk_alloy").parent(GTMaterialIconSet.DULL)
-    
-    //Prismatic Crucible
+
+    // Prismatic Crucible
     event.create("infinity").parent(GTMaterialIconSet.SHINY)
     event.create("meta_null").parent(GTMaterialIconSet.SHINY)
     event.create("monium").parent(GTMaterialIconSet.SHINY)
-    
+
     // Eltz
     event.create("eltz").parent(GTMaterialIconSet.SHINY)
 

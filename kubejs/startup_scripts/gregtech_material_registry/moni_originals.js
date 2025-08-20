@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 
     // Prismatic Crucible Materials
-    
+
     event.create("transcendental_matrix")
         .ingot().fluid()
         .color(0xffffff).secondaryColor(0x000000)
@@ -163,7 +163,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 
     // Taranium is to my knowledge from Doctor Who, but that's not a Minecraft mod so in here Taranium goes!
-    
+
     if (doStoneline) {
         event.create("taranium")
             .ingot().fluid()

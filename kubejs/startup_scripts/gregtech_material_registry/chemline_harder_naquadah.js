@@ -4,7 +4,7 @@
  */
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    
+
     if (doHarderProcessing) {
         event.create("naquadah_oxide")
             .dust()
