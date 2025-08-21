@@ -46,8 +46,8 @@ ServerEvents.recipes(event => {
 
         // To jumpstart HNN
         event.shaped(Item.of("minecraft:rotten_flesh", 32), [
-            " PP",
             "   ",
+            " PP",
             "   "
         ], {
             P: "kubejs:moni_penny"
