@@ -1,24 +1,35 @@
-// ! Hardcore mode chemicals
 /**
- * Gregtech Chemical Materials Registry: Hardmode+
- * This file is for custom fluids (And some solids!)
- * used in custom chemlines specific to Hardmode like expert Titanium and Graphite.
+ * Material Registry for harder Processing Lines that register enough materials to get their own registry file.
  */
 
+// Harder Tungsten Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
+
     if (doHarderProcessing) {
         event.create("tungsten_trioxide")
             .dust()
             .color(0xC7D300).iconSet("dull")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("tungsten", "3x oxygen")
+    }
+})
 
+// Magnetron Components
+GTCEuStartupEvents.registry("gtceu:material", event => {
+
+    if (doHarderProcessing) {
         event.create("beryllium_oxide")
             .ingot()
             .color(0x54C757).iconSet("dull")
             .flags(GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING)
             .components("beryllium", "oxygen")
+    }
+})
 
+// Harder Tantalite/Pyrochlore Processing
+GTCEuStartupEvents.registry("gtceu:material", event => {
+
+    if (doHarderProcessing) {
         event.create("niobium_pentoxide")
             .dust()
             .color(0xBAB0C3).iconSet("rough")
@@ -33,35 +44,36 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .dust()
             .color(0xEF4B3D).iconSet("rough")
             .components("manganese", "2x fluorine")
+    }
+})
 
+// Harder Molybdenite/Wulfenite/Powellite Processing
+GTCEuStartupEvents.registry("gtceu:material", event => {
+
+    if (doHarderProcessing) {
         event.create("molybdenum_trioxide")
             .dust()
             .color(0xCBCFDA).iconSet("rough")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("molybdenum", "3x oxygen")
+    }
+})
 
-        event.create("wollastonite")
-            .dust()
-            .color(0xF7F7E7).iconSet("bright")
-            .components("calcium", "silicon", "3x oxygen")
+// Vanadium Pentoxide
+GTCEuStartupEvents.registry("gtceu:material", event => {
 
-        event.create("sodium_metavanadate")
-            .dust()
-            .color(0xe6bb22).iconSet("dull")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("sodium", "vanadium", "3x oxygen")
-
+    if (doHarderProcessing) {
         event.create("vanadium_pentoxide")
             .dust()
             .color(0xffcf33).iconSet("rough")
             .components("2x vanadium", "5x oxygen")
+    }
+})
 
-        event.create("ammonium_metavanadate")
-            .dust()
-            .color(0xf7e37e).iconSet("dull")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("nitrogen", "4x hydrogen", "vanadium", "3x oxygen")
+// Harder Graphene Processing
+GTCEuStartupEvents.registry("gtceu:material", event => {
 
+    if (doHarderProcessing) {
         event.create("phthalic_anhydride")
             .dust()
             .color(0xeeaaee).iconSet("dull")
@@ -92,8 +104,13 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .color(0x777777).iconSet("rough")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("graphene", "oxygen")
+    }
+})
 
-        // Harder Fluorantimonic Acid
+// Harder Fluoroantiamonic Acid Processing
+GTCEuStartupEvents.registry("gtceu:material", event => {
+
+    if (doHarderProcessing) {
         event.create("antimony_pentafluoride")
             .fluid()
             .color(0xe3f1f1)
@@ -104,49 +121,5 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .dust()
             .color(0xF7F7E7).iconSet("dull")
             .components("lead", "silicon", "3x oxygen")
-    }
-
-    if (doHarderRecipes) {
-        // Kapton K
-        event.create("durene")
-            .dust()
-            .fluid()
-            .color(0x336040).iconSet("fine")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("10x carbon", "14x hydrogen")
-            .formula("C6H2(CH3)4");
-
-        event.create("pyromellitic_dianhydride")
-            .dust()
-            .fluid()
-            .color(0xB48C63)
-            .components("10x carbon", "2x hydrogen", "6x oxygen")
-            .formula("C6H2(C2O3)2");
-
-        event.create("dimethylformamide")
-            .fluid()
-            .color(0x42bdff)
-            .components("3x carbon", "7x hydrogen", "nitrogen", "oxygen")
-
-        event.create("oxydianiline")
-            .dust()
-            .fluid()
-            .color(0xf0e130).iconSet("dull")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("12x carbon", "12x hydrogen", "2x nitrogen", "oxygen")
-            .formula("O(C6H4NH2)2");
-
-        event.create("oxydianiline_sludge")
-            .fluid()
-            .color(0xD9CCBF)
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("1x oxydianiline", "1x dimethylformamide")
-
-        event.create("kapton_k")
-            .polymer()
-            .fluid()
-            .color(0x915A23)
-            .components("1x pyromellitic_dianhydride", "1x oxydianiline")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.STICKY)
     }
 })

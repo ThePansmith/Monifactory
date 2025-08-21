@@ -1,9 +1,7 @@
 /**
- * Missing Material Forms.
- * Some GT materials need a fluid, plate, wire, gear, plasma,
- * or other variant of that material.
- * This file adds them.
+ * Material Registry for various modifications to materials, mostly ones from base GregTech.
  */
+
 const $PropertyKey = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey")
 const $IngotProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty")
 const $FluidProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty")
@@ -13,6 +11,8 @@ const $WireProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.ma
 const $BlastProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty")
 const $OreProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty")
 const $FluidBuilder = Java.loadClass("com.gregtechceu.gtceu.api.fluids.FluidBuilder");
+const $DustProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty");
+
 
 let addFluid = (mat, key, temp) => {
     let prop = new $FluidProperty()
@@ -88,4 +88,33 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     let osmiridium_ore_prop = new $OreProperty();
     osmiridium_ore_prop.setOreByProducts(GTMaterials.Iridium, GTMaterials.Osmium, GTMaterials.Ruthenium)
     GTMaterials.Osmiridium.setProperty($PropertyKey.ORE, osmiridium_ore_prop)
+
+    // HM-exclusive modifications
+    if (doHarderProcessing) {
+        // GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
+        GTMaterials.RhodiumSulfate.setProperty($PropertyKey.DUST, new $DustProperty());
+    }
+})
+
+GTCEuStartupEvents.materialModification(event => {
+    // Change materials' components
+    GTMaterials.EchoShard.setComponents(GTMaterials.Quartzite.multiply(3), GTMaterials.Sculk.multiply(2))
+
+    GTMaterials.Glowstone.setComponents(GTMaterials.TricalciumPhosphate.multiply(1), GTMaterials.Gold.multiply(1))
+    GTMaterials.Glowstone.setFormula("AuCa3(PO4)2", true)
+
+    GTMaterials.RhodiumPlatedPalladium.setComponents(GTMaterials.Palladium.multiply(3), GTMaterials.Rhodium.multiply(1), "2x lumium")
+    GTMaterials.RhodiumPlatedPalladium.setFormula("Pd3Rh(SnFe)4(CuAg4)2", true)
+
+    GTMaterials.Sugar.setComponents(GTMaterials.Carbon.multiply(12), GTMaterials.Water.multiply(11))
+    GTMaterials.Sugar.setFormula("C12H22O11", true)
+
+    // We keep Ingots in the material definition so we can replace it in the Ore Processing Diagram with vanilla Netherite Scrap, then remove it here.
+    TagPrefix.ingot.setIgnored(GTMaterials.get("netherite_scrap"), Ingredient.of("minecraft:netherite_scrap"))
+
+    GTMaterials.Neutronium.getProperty(PropertyKey.FLUID_PIPE).setThroughput(400)
+    GTMaterials.Neutronium.getProperty(PropertyKey.FLUID_PIPE).setMaxFluidTemperature(10000)
+    GTMaterials.Ultimet.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(4)
+    GTMaterials.Osmiridium.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(12)
+    GTMaterials.Americium.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(20)
 })

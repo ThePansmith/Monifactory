@@ -1,5 +1,5 @@
 /**
- * Registration of elements & materials for Naquadah Fuel
+ * Material Registry for Naquadah Fuel Processing
  */
 
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
@@ -12,34 +12,14 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xB9E364)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    /*
-    event.create("crude_naquadah_fuel_depleted")
-        .liquid()
-        .color(0x323D1C)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    */
-
     event.create("naquadah_fuel")
         .liquid()
         .color(0x56F075)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    /*
-    event.create("naquadah_fuel_depleted")
-        .liquid()
-        .color(0x123619)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    */
 
     event.create("naquadah_superfuel")
         .color(0xFFFFFF).iconSet("naquadah_superfuel")
         .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
-
-    /*
-    event.create("naquadah_superfuel_depleted")
-        .color(0x00002F)
-        .liquid()
-        .flags()
-    */
 
     event.create("raw_naquadah_solution")
         .liquid()
@@ -135,4 +115,22 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .liquid()
         .color(0xF8EBBE)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("hyperdegenerate_matter")
+        .element(GTElements.get("hyperdegenerate_matter"))
+        .color(0xffffff).iconSet("hyperdegenerate_matter")
+        .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
+
+    event.create("quadium")
+        .gas()
+        .element(GTElements.get("quadium"))
+        .color(0x7c5bff)
+
+    // Not entirely sure this is actually part of naqfuel but if I'm wrong it can just be moved later.
+    event.create("waste_gas_mixture")
+        .fluid()
+        .color(0x666677)
+        .components("10x carbon_monoxide", "5x chloroethane", "7x ammonium_formate", "9x dinitrogen_tetroxide", "2x neon", "1x tritium")
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+
 })

@@ -1,5 +1,5 @@
 /**
- * Hard mode platinum line
+ * Material Registry for harder Platinum Group processing.
  */
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .fluid()
             .color(0xffbb66)
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("rhodium_sulfate", "water");
+            .components("rhodium_sulfate", "water")
 
         event.create("platinum_palladium_leachate")
             .fluid()
@@ -41,71 +41,71 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("2x nitrogen", "8x hydrogen", "platinum", "6x chlorine")
             .formula("(NH4)2PtCl6")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
         event.create("potassium_bisulfate")
             .dust()
             .color(0xfdbd68)
             .components("potassium", "hydrogen", "sulfur", "4x oxygen")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
         event.create("potassium_pyrosulfate")
             .dust()
             .color(0xfbbb66)
             .components("2x potassium", "2x sulfur", "7x oxygen")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
         event.create("zinc_sulfate")
             .dust()
             .color(0x846649).iconSet("fine")
             .components("zinc", "sulfur", "4x oxygen")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
         event.create("sodium_ruthenate")
             .dust()
             .color(0x3a40cb).iconSet("shiny")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("2x sodium", "ruthenium", "4x oxygen")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
         event.create("sodium_peroxide")
             .dust()
             .color(0xecff80).iconSet("rough")
             .components("2x sodium", "2x oxygen")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
         event.create("platinum_group_residue")
             .dust()
             .color(0x64632e).iconSet("rough")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("iridium", "osmium", "rhodium", "ruthenium", "rare_earth");
+            .components("iridium", "osmium", "rhodium", "ruthenium", "rare_earth")
 
         event.create("crude_platinum_residue")
             .dust()
             .color(0xfffbc5).iconSet("dull")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("platinum_raw")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
         event.create("iridium_group_sludge")
             .dust()
             .color(0x644629).iconSet("dull")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("iridium", "osmium", "ruthenium", "rare_earth")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
         event.create("crude_rhodium_residue")
             .dust()
             .color(0x666666).iconSet("dull")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("2x rhodium", "water")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall]);
+            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
 
         event.create("sodium_methoxide")
             .dust()
             .color(0xd0d0f0).iconSet("dull")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("carbon", "3x hydrogen", "oxygen", "sodium");
+            .components("carbon", "3x hydrogen", "oxygen", "sodium")
     }
-});
+})

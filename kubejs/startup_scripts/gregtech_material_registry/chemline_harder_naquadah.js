@@ -1,10 +1,10 @@
 /**
- ! Hardcore mode naquadah line
- ? Keep in sync with
- ? https://github.com/Nomi-CEu/Nomi-Labs/blob/main/src/main/java/com/nomiceu/nomilabs/gregtech/material/registry/register/LabsNaqLine.java
+ * Material Registry for harder Naquadah processing.
+ * NOT harder Naqline.
  */
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
+
     if (doHarderProcessing) {
         event.create("naquadah_oxide")
             .dust()
@@ -54,20 +54,5 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .liquid()
             .color(0x658280)
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-        event.create("snowchestite") // Hardmode only
-            .dust().ore()
-            .color(0x274c9f).iconSet("shiny")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("3x naquadah_oxide", "pyromorphite")
-    }
-
-})
-
-GTCEuStartupEvents.materialModification(() => {
-    if (doHarderProcessing) {
-        // Use `.setOreByProducts` here instead of `.addOreByproducts` because of https://github.com/GregTechCEu/GregTech-Modern/issues/2633
-        GTMaterials.get("snowchestite").getProperty(PropertyKey.ORE)
-            .setOreByProducts("chalcopyrite", "vanadium_magnetite", "naquadah_hydroxide");
     }
 })
