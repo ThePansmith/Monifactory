@@ -556,14 +556,14 @@ StartupEvents.registry("item", event => {
     Circuit("optical", "processor_computer", "uhv")
     Mainframe("optical", "uev")
 
-    event.create("monic_processing_unit")
-        .textureJson({ layer0: "kubejs:item/circuits/monic_processing_unit" })
-    event.create("monic_circuit_board")
-        .textureJson({ layer0: "kubejs:item/circuits/monic_circuit_board" })
-    Circuit("monic", "processor", "uv")
-    Circuit("monic", "processor_assembly", "uhv")
-    Circuit("monic", "processor_computer", "uev")
-    Mainframe("monic", "max")
+    event.create("extradimensional_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_processing_unit" })
+    event.create("extradimensional_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_circuit_board" })
+    Circuit("extradimensional", "processor", "uv")
+    Circuit("extradimensional", "processor_assembly", "uhv")
+    Circuit("extradimensional", "processor_computer", "uev")
+    Mainframe("extradimensional", "max")
 
     // Smores
     const smoreHunger = [
