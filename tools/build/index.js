@@ -253,7 +253,6 @@ export const BuildClientTarget = new Juke.Target({
         for (const folders of includeList) {
             fs.cpSync(folders, `dist/client/${folders}`, { recursive: true })
         }
-        fs.cpSync("dist/modcache", "dist/client/mods", { recursive: true })
 
         await packMod("client");
     }

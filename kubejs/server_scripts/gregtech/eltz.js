@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor("inert_powder_reacting")
         .itemInputs("1x kubejs:dusty_inert_powder")
-        .inputFluids("minecraft:omnic_acid 1000", "gtceu:enriched_naquadah 144")
+        .inputFluids("gtceu:omnic_acid 1000", "gtceu:enriched_naquadah 144")
         .itemOutputs("kubejs:shiny_powder_mixture")
         .chancedOutput("kubejs:cryotheum_dust", 1500, 0)
         .chancedOutput("kubejs:pyrotheum_dust", 1500, 0)
