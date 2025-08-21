@@ -472,7 +472,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.chemical_reactor("cuprous_chloride_dust")
             .itemInputs("gtceu:copper_dust")
             .inputFluids("gtceu:chlorine 1000")
-            .itemOutputs("3x gtceu:cuprous_chloride_dust")
+            .itemOutputs("2x gtceu:cuprous_chloride_dust")
             .duration(160).EUt(120);
 
         event.recipes.gtceu.chemical_reactor("kapton_k")
