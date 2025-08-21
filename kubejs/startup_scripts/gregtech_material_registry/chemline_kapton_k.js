@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .components("10x carbon", "2x hydrogen", "6x oxygen")
             .formula("C6H2(C2O3)2");
 
-	    event.create("copper_iodide")
+        event.create("copper_iodide")
             .dust()
             .color(0xf0e0b4)
             .components("1x copper", "1x iodine")
