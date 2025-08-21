@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_blast_smelter("sculk_bioalloy")
         .itemInputs("kubejs:amalgamated_sculk", "4x gtceu:blue_alloy_dust", "2x gtceu:lead_dust", "1x gtceu:lutetium_dust")
-        .outputFluids("gtceu:sculk_bioalloy 1440")
+        .outputFluids("monilabs:sculk_bioalloy 1440")
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(2836)
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_blast_smelter("sculk_bioalloy_gas")
         .itemInputs("kubejs:amalgamated_sculk", "4x gtceu:blue_alloy_dust", "2x gtceu:lead_dust", "1x gtceu:lutetium_dust")
         .inputFluids("gtceu:xenon 10")
-        .outputFluids("gtceu:sculk_bioalloy 1440")
+        .outputFluids("monilabs:sculk_bioalloy 1440")
         .duration(75)
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(2836)

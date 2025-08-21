@@ -376,7 +376,7 @@
 			subtitle: "{moni.quest.1C861E0C62D5B97D.subtitle}"
 			tasks: [{
 				id: "16B4F36211A3BBB5"
-				item: "gtceu:creative_data_multi"
+				item: "monilabs:creative_data_multi"
 				type: "item"
 			}]
 			title: "{moni.quest.1C861E0C62D5B97D.title}"
@@ -899,7 +899,7 @@
 			subtitle: "{moni.quest.786AECA42F53B45A.subtitle}"
 			tasks: [{
 				id: "3197EF56CDB20130"
-				item: "gtceu:eltz_ingot"
+				item: "monilabs:eltz_ingot"
 				type: "item"
 			}]
 			title: "{moni.quest.786AECA42F53B45A.title}"

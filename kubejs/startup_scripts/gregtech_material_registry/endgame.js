@@ -25,14 +25,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(169)
         .neutrons(317)
         .symbol("Mu");
-    event.create("crystal_matrix")
-        .protons(6)
-        .neutrons(6)
-        .symbol("C*");
-    event.create("eltz")
-        .protons(15)
-        .neutrons(15)
-        .symbol("Ez")
     event.create("necrosiderite")
         .protons(67)
         .neutrons(-26)
@@ -42,27 +34,14 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 // Omnium, Infinity, Monium, and others have animations and thus custom material icon sets.
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
     event.create("omnium").parent(GTMaterialIconSet.SHINY)
-    event.create("sculk_alloy").parent(GTMaterialIconSet.DULL)
     event.create("infinity").parent(GTMaterialIconSet.SHINY)
-    event.create("eltz").parent(GTMaterialIconSet.SHINY)
     event.create("monium").parent(GTMaterialIconSet.SHINY)
     event.create("dilithium").parent(GTMaterialIconSet.DULL)
     event.create("mana").parent(GTMaterialIconSet.SHINY)
     event.create("necrosiderite").parent(GTMaterialIconSet.METALLIC)
-    event.create("crystal").parent(GTMaterialIconSet.SHINY)
 })
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("crystal_matrix")
-        .ingot().fluid()
-        .element(GTElements.get("crystal_matrix"))
-        .color(0x66ffff)
-        .secondaryColor(0x004590)
-        .blastTemp(3823, "highest", GTValues.VA[GTValues.ZPM])
-        .iconSet("crystal")
-        .fluidPipeProperties(4773, 1200, true, false, true, true)
-        .flags(GTMaterialFlags.NO_WORKING, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR);
-
     event.create("omnium")
         .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
@@ -113,14 +92,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.STICKY, GTMaterialFlags.PHOSPHORESCENT)
         .components(GTMaterials.PotassiumCyanide.multiply(4), GTMaterials.Biotite.multiply(7), GTMaterials.GelatinMixture.multiply(9), GTMaterials.get("experience_attuned").multiply(2))
 
-    event.create("sculk_bioalloy")
-        .ingot()
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .color(0xffffff)
-        .iconSet("sculk_alloy")
-        .flags(GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_WORKING)
-        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall, TagPrefix.dust])
-
     event.create("infinity")
         .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
@@ -129,19 +100,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("infinity")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_SMALL_GEAR)
 
-    event.create("eltz")
-        .ingot()
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get("eltz"))
-        .color(0xffffff)
-        .iconSet("eltz")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.PHOSPHORESCENT)
-
     event.create("eltic_actinate")
         .gem()
         .color(0xbb9966).secondaryColor(0x881105)
         .iconSet("dilithium")
-        .components("4x eltz", "1x actinium", "3x oxygen")
+        .components("4x monilabs:eltz", "1x actinium", "3x oxygen")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING)
 
     event.create("actinium_iron_oxide")

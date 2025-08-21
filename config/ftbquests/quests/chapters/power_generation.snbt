@@ -978,7 +978,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "0312D4E6C4C1C552"
-				item: "gtceu:creative_energy_multi"
+				item: "monilabs:creative_energy_multi"
 				type: "item"
 			}]
 			title: "{moni.quest.19084E91F357C8C2.title}"

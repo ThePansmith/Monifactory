@@ -131,25 +131,25 @@ ServerEvents.recipes(event => {
      * @param {String} material Material to generate a list of IDs and material quantities for
      * @returns an array of entries which consist of [Ingredient ID, count, material count]
      */
-    let tagPrefixes = (material) => {return [
-        `gtceu:${material}_plate`,
-        `gtceu:double_${material}_plate`,
-        `gtceu:${material}_rotor`,
-        `gtceu:${material}_ingot`,
-        `gtceu:${material}_rod`,
-        `gtceu:${material}_block`,
-        `gtceu:${material}_frame`,
-        `gtceu:${material}_tiny_fluid_pipe`,
-        `gtceu:${material}_small_fluid_pipe`,
-        `gtceu:${material}_normal_fluid_pipe`,
-        `gtceu:${material}_large_fluid_pipe`,
-        `gtceu:${material}_huge_fluid_pipe`,
-        `gtceu:${material}_quadruple_fluid_pipe`,
-        `gtceu:${material}_nonuple_fluid_pipe`,
+    let tagPrefixes = (material, namespace) => {return [
+        `${namespace}:${material}_plate`,
+        `${namespace}:double_${material}_plate`,
+        `${namespace}:${material}_rotor`,
+        `${namespace}:${material}_ingot`,
+        `${namespace}:${material}_rod`,
+        `${namespace}:${material}_block`,
+        `${namespace}:${material}_frame`,
+        `${namespace}:${material}_tiny_fluid_pipe`,
+        `${namespace}:${material}_small_fluid_pipe`,
+        `${namespace}:${material}_normal_fluid_pipe`,
+        `${namespace}:${material}_large_fluid_pipe`,
+        `${namespace}:${material}_huge_fluid_pipe`,
+        `${namespace}:${material}_quadruple_fluid_pipe`,
+        `${namespace}:${material}_nonuple_fluid_pipe`,
     ]}
 
-    let crystal_matrix_forms = tagPrefixes("crystal_matrix")
-    let activated_netherite_forms = tagPrefixes("activated_netherite");
+    let crystal_matrix_forms = tagPrefixes("crystal_matrix", "monilabs")
+    let activated_netherite_forms = tagPrefixes("activated_netherite", "gtceu");
     activated_netherite_forms.forEach((entry, index) => {
         event.smithing(
             entry,

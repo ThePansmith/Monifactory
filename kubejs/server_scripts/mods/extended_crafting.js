@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.combination(
         "kubejs:elementally_infused_omnic_matrix_heavy_plating",
-        "gtceu:omnium_plate", ["2x gtceu:crystal_matrix_plate", "gtceu:gravi_star", "gtceu:neutron_reflector", "3x kubejs:primal_mana"],
+        "gtceu:omnium_plate", ["2x monilabs:crystal_matrix_plate", "gtceu:gravi_star", "gtceu:neutron_reflector", "3x kubejs:primal_mana"],
         10000000, 1000000
     )
 
