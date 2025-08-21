@@ -66,6 +66,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .color(0x274c9f).iconSet("shiny")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("3x naquadah_oxide", "pyromorphite")
-            .addOreByProducts("chalcopyrite", "vanadium_magnetite", "naquadah_hydroxide")
+            .addOreByproducts("chalcopyrite", "vanadium_magnetite", "naquadah_hydroxide")
     }
 })

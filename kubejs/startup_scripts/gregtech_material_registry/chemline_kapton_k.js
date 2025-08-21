@@ -20,10 +20,23 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .components("10x carbon", "2x hydrogen", "6x oxygen")
             .formula("C6H2(C2O3)2");
 
-        event.create("dimethylformamide")
+	    event.create("copper_iodide")
+            .dust()
+            .color(0xf0e0b4)
+            .components("1x copper", "1x iodine")
+
+        event.create("cuprous_chloride")
+            .dust()
+            .color(0x4db8bf)
+            .components("1x copper", "1x chlorine")
+            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+        event.create("dinitrodiphenyl_ether")
             .fluid()
-            .color(0x42bdff)
-            .components("3x carbon", "7x hydrogen", "nitrogen", "oxygen")
+            .color(0xfa9f6e)
+            .components("12x carbon", "5x oxygen", "2x nitrogen", "8x hydrogen")
+            .formula("(NO2C6H4)2O")
+            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
         event.create("oxydianiline")
             .dust()
@@ -32,12 +45,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("12x carbon", "12x hydrogen", "2x nitrogen", "oxygen")
             .formula("O(C6H4NH2)2");
-
-        event.create("oxydianiline_sludge")
-            .fluid()
-            .color(0xD9CCBF)
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-            .components("1x oxydianiline", "1x dimethylformamide")
 
         event.create("kapton_k")
             .polymer()
