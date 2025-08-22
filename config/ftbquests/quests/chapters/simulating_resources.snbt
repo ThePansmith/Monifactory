@@ -493,6 +493,8 @@
 				"{moni.quest.715BC5C7DAC53B7B.description4}"
 				""
 				"{moni.quest.715BC5C7DAC53B7B.description5}"
+				""
+				"{moni.quest.715BC5C7DAC53B7B.description6}"
 			]
 			hide_until_deps_visible: true
 			id: "715BC5C7DAC53B7B"

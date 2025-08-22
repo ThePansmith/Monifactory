@@ -476,7 +476,6 @@
   "redstoneclock.redstone_clock.tooltip": "§7Needs a redstone signal on a dotted side to work.",
 
   "hostilenetworks.blank_data_model.tooltip": "§7Use it in the crafting table instead!",
-  "hostilenetworks.data_model.tooltip": "§7Upgrades when used in the §3Simulation Chamber",
 
   "hostilenetworks.overworld_prediction.tooltip": "§7Experience per item: 10",
   "hostilenetworks.nether_prediction.tooltip": "§7Experience per item: 20",
