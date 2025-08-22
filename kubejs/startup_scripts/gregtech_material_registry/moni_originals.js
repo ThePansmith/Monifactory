@@ -1,4 +1,4 @@
-// priority: 1
+// priority: 2
 /**
  * Material Registry for content original to Monifactory and it's predecessors.
  */

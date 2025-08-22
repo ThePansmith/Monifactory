@@ -1,4 +1,4 @@
-// priority: 4
+// priority: 5
 /**
  * Material Registry for custom elements and material sets.
  */
