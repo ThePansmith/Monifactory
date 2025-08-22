@@ -919,7 +919,7 @@
 			subtitle: "{moni.quest.0ED041E2114F7C84.subtitle}"
 			tasks: [{
 				id: "21D7458960FAB5AE"
-				item: "gtceu:sculk_bioalloy_ingot"
+				item: "monilabs:sculk_bioalloy_ingot"
 				type: "item"
 			}]
 			title: "{moni.quest.0ED041E2114F7C84.title}"
