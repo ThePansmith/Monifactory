@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         event.remove({ id: "gtceu:mixer/graphene" })
 
         event.recipes.gtceu.assembler("magnetron")
-            .itemInputs("64x gtceu:beryllium_oxide_ring", "64x gtceu:beryllium_oxide_ring", "6x gtceu:hsla_steel_plate", "gtceu:vacuum_tube")
+            .itemInputs("64x gtceu:beryllium_oxide_ring", "64x gtceu:beryllium_oxide_ring", "6x gtceu:hsla_steel_plate", "#gtceu:circuits/ulv")
             .itemOutputs("kubejs:magnetron")
             .duration(600).EUt(61440)
 

@@ -209,11 +209,6 @@ StartupEvents.registry("item", event => {
     event.create("quasi_stable_neutron_star").displayName("Quasi-Stable Neutron Star")
 
 
-    // Singularities
-    event.create("singularity_containment_unit")
-    event.create("contained_singularity")
-
-
     // Infinity Tools
     event.create("infinity_power_unit").rarity("epic").maxStackSize(1)
     event.create("infinity_file").rarity("epic").maxStackSize(1)
@@ -535,6 +530,19 @@ StartupEvents.registry("item", event => {
         event.create(`complex_smd_${name}`)
     }
 
+    // Extradim Circuit Intermediates
+    event.create("miniature_microverse_container")
+        .textureJson({ layer0: "kubejs:item/circuits/miniature_microverse_container" })
+    event.create("microverse_containment_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/microverse_containment_unit" })
+    event.create("extradimensional_quantum_cpu_core")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_quantum_cpu_core" })
+    event.create("extradimensional_crystal_cpu_core")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_crystal_cpu_core" })
+    event.create("extradimensional_wetware_cpu_core")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_wetware_cpu_core" })
+    event.create("extradimensional_optical_cpu_core")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_qoptical_cpu_core" })
 
     // Post-tank circuits, circuit boards, processing units
     function Circuit(theme, type, volt) {
@@ -556,10 +564,12 @@ StartupEvents.registry("item", event => {
     Circuit("optical", "processor_computer", "uhv")
     Mainframe("optical", "uev")
 
-    event.create("extradimensional_processing_unit")
-        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_processing_unit" })
     event.create("extradimensional_circuit_board")
         .textureJson({ layer0: "kubejs:item/circuits/extradimensional_circuit_board" })
+    event.create("extradimensional_printed_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_printed_circuit_board" })
+    event.create("extradimensional_processing_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_processing_unit" })
     Circuit("extradimensional", "processor", "uv")
     Circuit("extradimensional", "processor_assembly", "uhv")
     Circuit("extradimensional", "processor_computer", "uev")

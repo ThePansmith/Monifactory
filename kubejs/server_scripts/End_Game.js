@@ -416,12 +416,6 @@ ServerEvents.recipes(event => {
         Z: "kubejs:infinity_wire_cutter"
     })
 
-    event.recipes.gtceu.canner("contained_singularity")
-        .itemInputs("kubejs:singularity_containment_unit", "ae2:singularity")
-        .itemOutputs("kubejs:contained_singularity")
-        .duration(20)
-        .EUt(GTValues.VA[GTValues.UEV])
-
     // Knowledge Transmission Array
     event.recipes.gtceu.assembly_line("knowledge_transmission_array")
         .itemInputs("2x gtceu:sculk_bioalloy_frame", "16x gtceu:europium_double_cable", "16x gtceu:uhv_emitter", "16x gtceu:data_transmitter_hatch", "2x #gtceu:circuits/uhv", "32x gtceu:normal_optical_pipe", "16x gtceu:ruthenium_trinium_americium_neutronate_single_wire", "2x gtceu:network_switch", "32x gtceu:rhodium_foil")
@@ -473,12 +467,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x kubejs:bioalloy_fusion_casing")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
-
-    event.recipes.gtceu.assembler("singularity_containment_unit")
-        .itemInputs("4x gtceu:monium_plate", "4x gtceu:neutron_reflector", "1x gtceu:uev_sensor", "2x gtceu:uhv_sensor", "gtceu:uev_field_generator")
-        .itemOutputs("64x kubejs:singularity_containment_unit")
-        .duration(300)
-        .EUt(16380)
 
     event.recipes.gtceu.assembler("fieldstabilizedcompound")
         .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")

@@ -263,7 +263,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.combination(
         "kubejs:timeless_monic_heavy_plating",
-        "gtceu:monium_plate", ["kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "kubejs:contained_singularity"],
+        "gtceu:monium_plate", ["kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating"],
         536870912, 53687091
     )
 
