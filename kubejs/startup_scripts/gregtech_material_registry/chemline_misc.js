@@ -269,3 +269,18 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("7x silicon_dioxide", "1x enderium", doHarderProcessing ? "4x tantalum_pentoxide" : "1x tantalum", "5x rutile", "11x polyethylene", "3x germanium")
 
 })
+
+
+// Actinium Processing
+GTCEuStartupEvents.registry("gtceu:material", event => {
+
+    event.create("uranic_solution")
+        .liquid()
+        .color(0xD3B53B)
+
+    event.create("lead_chloride")
+        .dust()
+        .color(0x776E82).iconSet("rough")
+        .components("lead", "2x chlorine")
+
+})
