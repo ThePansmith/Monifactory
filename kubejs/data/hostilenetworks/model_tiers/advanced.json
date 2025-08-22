@@ -1,6 +1,6 @@
 {
-    "required_data": 54,
-    "data_per_kill": 10,
+    "required_data": 2,
+    "data_per_kill": 0,
     "color": "blue",
     "accuracy": 0.10
 }
