@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(-1)
         .neutrons(481)
         .symbol("ᛋ**")
-    event.create("sculk_supercondutcor")
+    event.create("sculk_superconductor")
         .protons(-2)
         .neutrons(442)
         .symbol("ᛊ")
