@@ -1,4 +1,4 @@
-// priority: 2
+// priority: 3
 /**
  * Material Registry for Naquadah Fuel Processing
  */
