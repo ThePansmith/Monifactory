@@ -99,7 +99,7 @@ GTCEuStartupEvents.craftingComponents(event => {
 
     event.setItems("glass", {
         UHV: Item.of("gtceu:fusion_glass"),
-        UEV: Item.of("monilabs:prism_glass"),
+        UEV: Item.of("kubejs:prism_glass"),
     })
 
     event.setMaterialEntries("plate", {
