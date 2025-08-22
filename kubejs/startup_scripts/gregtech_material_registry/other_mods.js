@@ -1,4 +1,4 @@
-// priority: 1
+// priority: 2
 /**
  * Material Registry for content from mods other than GregTech.
  */

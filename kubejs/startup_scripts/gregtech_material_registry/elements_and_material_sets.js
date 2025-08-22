@@ -1,4 +1,4 @@
-// priority: 2
+// priority: 4
 /**
  * Material Registry for custom elements and material sets.
  */
@@ -7,6 +7,11 @@
 // Elements
 
 GTCEuStartupEvents.registry("gtceu:element", event => {
+
+    // Primal Mana
+
+    event.create("mana")
+        .symbol("ᛗ")
 
     // Sculk
 
@@ -18,7 +23,7 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(-1)
         .neutrons(441)
         .symbol("ᛋ*")
-    event.create("bioalloy")
+    event.create("sculk_bioalloy")
         .protons(-1)
         .neutrons(481)
         .symbol("ᛋ**")
@@ -37,8 +42,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(168)
         .neutrons(316)
         .symbol("∞")
-    event.create("mana")
-        .symbol("ᛗ")
     event.create("meta_null")
         .protons(0)
         .neutrons(0)
@@ -53,7 +56,7 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
     event.create("crystal_matrix")
         .protons(6)
         .neutrons(6)
-        .symbol("C🞱")
+        .symbol("C☆")
 
     // Eltz
 
