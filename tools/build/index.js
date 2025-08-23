@@ -283,9 +283,9 @@ export const BuildServerTarget = new Juke.Target({
         "dist/server/mods"
     ]),
     executes: async () => {
-        fs.mkdirSync("dist/server", { recursive: true })
+        fs.mkdirSync("dist/server/overrides", { recursive: true })
         for (const folders of includeList) {
-            fs.cpSync(folders, `dist/server/${folders}`, { recursive: true })
+            fs.cpSync(folders, `dist/server/overrides/${folders}`, { recursive: true })
         }
 
         fs.mkdirSync("dist/server/mods")
@@ -312,7 +312,7 @@ export const BuildDevTarget = new Juke.Target({
         "dist/dev/",
         "dist/.devtmp/",
         "dist/dev.zip",
-        ...includeList.map(v => `dist/dev/${v}`),
+        ...includeList.map(v => `dist/dev/overrides/${v}`),
         "dist/dev/mods",
     ]),
     executes: async () => {
@@ -321,16 +321,16 @@ export const BuildDevTarget = new Juke.Target({
         if (fs.existsSync("dist/dev")) {
             Juke.logger.info("Only updating mods as dist/dev exists");
 
-            fs.mkdirSync("dist/dev", { recursive: true });
+            fs.mkdirSync("dist/dev/overrides", { recursive: true });
             fs.cpSync("dist/modcache", "dist/.devtmp", { recursive: true });
             fs.cpSync("mods", "dist/.devtmp", { recursive: true });
             return;
         }
 
-        fs.mkdirSync("dist/dev", { recursive: true });
+        fs.mkdirSync("dist/dev/overrides", { recursive: true });
         fs.mkdirSync("dist/.devtmp", { recursive: true });
         for (const folders of includeList.filter(v => !(v === "mods" || v === "config"))) {
-            symlinkSync(resolve(folders), resolve(`dist/dev/${folders}`));
+            symlinkSync(resolve(folders), resolve(`dist/dev/overrides/${folders}`));
         }
 
         // "merge" both mod folders
@@ -338,7 +338,7 @@ export const BuildDevTarget = new Juke.Target({
         fs.cpSync("mods", "dist/.devtmp", { recursive: true, force: true });
         symlinkSync(resolve("dist/.devtmp"), resolve("dist/dev/mods"));
         // fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
-        fs.cpSync("config", "dist/dev/config", { recursive: true });
+        fs.cpSync("config", "dist/dev/overrides/config", { recursive: true });
 
         // todo find the mod to blame, or just remove this and the filters up there if this ever gets fixed
         Juke.logger.warn("Due to a bug with moonlight, symlinking the config folder causes errors which breaks game startup.")
