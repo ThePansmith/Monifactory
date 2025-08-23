@@ -96,6 +96,13 @@ async function packMod(group) {
             return;
         }
 
+        if (!fs.existsSync("config/packmode.json")) {
+            await Juke.exec("chmod", ["+x", "./pack-mode-switcher.sh"]);
+            await Juke.exec("./pack-mode-switcher.sh", ["n"], {
+                cwd: `dist/.tmp/${group}/overrides`
+            });
+        }
+
         let hasZipCmd = false;
         try {
             await Juke.exec("zip", ["--help"], { silent: true });
