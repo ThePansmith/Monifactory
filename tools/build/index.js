@@ -84,6 +84,15 @@ async function packMod(group) {
 
     try {
         if (process.platform === "win32") {
+            if (!fs.existsSync("config/packmode.json")) {
+                // Must temporarily copy the file in due to the bat file working relative to its file location
+                fs.copyFileSync("pack-mode-switcher.bat", `dist/${group}/overrides/pack-mode-switcher.bat`)
+                await Juke.exec("cmd.exe", ["/c", "pack-mode-switcher.bat N"], {
+                    cwd: `dist/${group}/overrides`
+                });
+                Juke.rm(`dist/${group}/overrides/pack-mode-switcher.bat`);
+            }
+
             await Juke.exec("powershell", [
                 "Compress-Archive",
                 `-Path "${resolve(`dist\\${group}\\overrides`)}","${resolve(`dist\\${group}\\manifest.json`)}","${resolve(`dist\\${group}\\modlist.html`)}","${resolve(`dist\\${group}\\LICENSE.md`)}"`,
@@ -94,7 +103,7 @@ async function packMod(group) {
 
         if (!fs.existsSync("config/packmode.json")) {
             await Juke.exec("chmod", ["+x", "./pack-mode-switcher.sh"]);
-            await Juke.exec("./pack-mode-switcher.sh", ["n"], {
+            await Juke.exec("./pack-mode-switcher.sh", ["N"], {
                 cwd: `dist/${group}/overrides`
             });
         }
@@ -246,7 +255,7 @@ export const BuildClientTarget = new Juke.Target({
     outputs: () => ([
         "dist/client/",
         "dist/client.zip",
-        ...includeList.map(v => `dist/client/${v}`),
+        ...includeList.map(v => `dist/client/overrides/${v}`),
         // "dist/client/mods",
     ]),
     executes: async () => {
