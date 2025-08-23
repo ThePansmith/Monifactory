@@ -35,11 +35,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .fluid()
             .color(0xfa9f6e)
             .components("12x carbon", "5x oxygen", "2x nitrogen", "8x hydrogen")
-            .formula("(NO2C6H4)2O")
+            .formula("O(C6H4NO2)2")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
         event.create("oxydianiline")
-            .dust()
             .fluid()
             .color(0xf0e130).iconSet("dull")
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
