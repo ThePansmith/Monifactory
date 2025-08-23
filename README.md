@@ -64,7 +64,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
        ```
        python $INST_DIR\minecraft\pack-mode-switcher.py (N/H/E)
        ```
-       Adding no print to the end of the command will disable log messages\
+       Adding ``--no-print`` to the end of the command will disable log messages\
        into Pre-launch command and specify your wanted mode.
 
 ### Addon Mods (AKA Optional Compats)
@@ -91,7 +91,7 @@ To spice up your Monifactory experience, you can add any of the following mods t
 6. ``unzip server.zip``
 7. Move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
 8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
-9. Run the Python script to select your desired mode
+9. If you're running a server on Hard Mode or Expert Mode, run the python script and select your desired mode.
 10. To upgrade an existing Monifactory server, see See [FAQ.md](FAQ.md).
 
 ## Contributing

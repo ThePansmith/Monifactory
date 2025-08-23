@@ -4,7 +4,7 @@ import sys
 
 def log(text: str):
     try:
-        if sys.argv[2] != "no-print":
+        if sys.argv[2] != "--no-print":
             print(text)
     except:
         print(text)
