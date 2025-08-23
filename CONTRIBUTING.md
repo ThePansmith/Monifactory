@@ -54,7 +54,7 @@ The following guide was written with prism launcher in mind, see [here](<https:/
 2. Open the `instances\Monifactory` folder, take everything contained within it and store it in a temporary folder (`temp`).
 3. Clone your fork of the Monifactory repository into `instances\Monifactory`, with the repository's folder being named `minecraft`. (If using the desktop app, see [here](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) for an image example.)
 4. Once the repo is installed,  go back to your temporary folder and move the files from the `temp` root folder and `temp\minecraft\mods` folder back into the Monifactory folder.
-5. Run pack-mode-switcher with your preferred mode.
+5. Run ``pack-mode-switcher.py`` if you're desired mode is Hard mode or Expert Mode.
 
 If you encounter a problem and there have been mod updates since the latest release, you may need to update your mods using the mod manifest file.
 1. Look for a file named `manifest.json` in your instance and make a .zip with it inside.
@@ -96,7 +96,7 @@ If you wish to add a language for localization, either ask Pansmith to add it, o
 One thing to watch out for when contributing is that we have multiple difficulty "modes".
 The files used when changing modes are located in the `config-overrides` folder.
 Some files normally located in the `config` folder are there instead,
-and only copied over to their normal locations when the `pack-mode-switcher.{sh,bat}` script is run.
+and only copied over to their normal locations when the `pack-mode-switcher.py` script is run.
 An example of this would be the `genesis.snbt` FTBQuests chapter, as it changes almost entirely from mode to mode.
 If you want to make a change across all modes, make sure to make the same change to all three overrides.
 
