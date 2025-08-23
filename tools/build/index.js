@@ -75,22 +75,18 @@ const cpSyncFiltered = (ourDir, newDir, filter) => {
 }
 
 async function packMod(group) {
-    Juke.rm(`dist/.tmp/${group}`, { recursive: true });
-    // copy dir to dist/.tmp
-    fs.mkdirSync(`dist/.tmp/${group}`, { recursive: true })
-    fs.cpSync(`dist/${group}`, `dist/.tmp/${group}/overrides`, { recursive: true, force: true })
-    fs.copyFileSync("manifest.json", `dist/.tmp/${group}/manifest.json`)
-    fs.copyFileSync("dist/modlist.html", `dist/.tmp/${group}/modlist.html`)
-    fs.copyFileSync("LICENSE.md", `dist/.tmp/${group}/LICENSE.md`)
+    fs.copyFileSync("manifest.json", `dist/${group}/manifest.json`)
+    fs.copyFileSync("dist/modlist.html", `dist/${group}/modlist.html`)
+    fs.copyFileSync("LICENSE.md", `dist/${group}/LICENSE.md`)
     // Turns out you cant package bat files in CF releases anymore.
-    // fs.copyFileSync('pack-mode-switcher.bat', `dist/.tmp/${group}/overrides/pack-mode-switcher.bat`)
-    // fs.copyFileSync('pack-mode-switcher.sh', `dist/.tmp/${group}/overrides/pack-mode-switcher.sh`)
+    // fs.copyFileSync('pack-mode-switcher.bat', `dist/${group}/overrides/pack-mode-switcher.bat`)
+    // fs.copyFileSync('pack-mode-switcher.sh', `dist/${group}/overrides/pack-mode-switcher.sh`)
 
     try {
         if (process.platform === "win32") {
             await Juke.exec("powershell", [
                 "Compress-Archive",
-                `-Path "${resolve(`dist\\.tmp\\${group}\\overrides`)}","${resolve(`dist\\.tmp\\${group}\\manifest.json`)}","${resolve(`dist\\.tmp\\${group}\\modlist.html`)}","${resolve(`dist\\.tmp\\${group}\\LICENSE.md`)}"`,
+                `-Path "${resolve(`dist\\${group}\\overrides`)}","${resolve(`dist\\${group}\\manifest.json`)}","${resolve(`dist\\${group}\\modlist.html`)}","${resolve(`dist\\${group}\\LICENSE.md`)}"`,
                 `-DestinationPath "${resolve(`dist\\${group}.zip`)}"`,
             ])
             return;
@@ -99,7 +95,7 @@ async function packMod(group) {
         if (!fs.existsSync("config/packmode.json")) {
             await Juke.exec("chmod", ["+x", "./pack-mode-switcher.sh"]);
             await Juke.exec("./pack-mode-switcher.sh", ["n"], {
-                cwd: `dist/.tmp/${group}/overrides`
+                cwd: `dist/${group}/overrides`
             });
         }
 
@@ -111,22 +107,20 @@ async function packMod(group) {
 
         if (hasZipCmd) {
             await Juke.exec("tools/zip-stuff", [
-                `dist/.tmp/${group}`, // curr working dir
+                `dist/${group}`, // curr working dir
                 `dist/${group}.zip`,  // file out
                 "overrides",
                 "manifest.json",
                 "modlist.html",
                 "LICENSE.md",
-                "pack-mode-switcher.bat",
-                "pack-mode-switcher.sh"
+                // "pack-mode-switcher.bat", // no longer included in CF releases
+                // "pack-mode-switcher.sh"
             ])
             return;
         }
     } catch (error) {
         Juke.logger.error(error);
         throw new Juke.ExitCode(1);
-    } finally {
-        Juke.rm(`dist/.tmp/${group}`, { recursive: true });
     }
 }
 
@@ -253,12 +247,12 @@ export const BuildClientTarget = new Juke.Target({
         "dist/client/",
         "dist/client.zip",
         ...includeList.map(v => `dist/client/${v}`),
-        "dist/client/mods",
+        // "dist/client/mods",
     ]),
     executes: async () => {
-        fs.mkdirSync("dist/client", { recursive: true })
+        fs.mkdirSync("dist/client/overrides", { recursive: true })
         for (const folders of includeList) {
-            fs.cpSync(folders, `dist/client/${folders}`, { recursive: true })
+            fs.cpSync(folders, `dist/client/overrides/${folders}`, { recursive: true })
         }
 
         await packMod("client");
@@ -371,7 +365,6 @@ export const CleanBuildTarget = new Juke.Target({
         Juke.rm("dist/dev", { recursive: true });
         Juke.rm("dist/server", { recursive: true });
         Juke.rm("dist/.devtmp", { recursive: true });
-        Juke.rm("dist/.tmp", { recursive: true });
         Juke.rm("dist/*.zip");
     },
 })
