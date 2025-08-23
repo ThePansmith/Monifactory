@@ -1,4 +1,3 @@
-// priority: 4
 /**
  * Material Registry for Naquadah Fuel Processing
  */
@@ -117,21 +116,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xF8EBBE)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("hyperdegenerate_matter")
-        .element(GTElements.get("hyperdegenerate_matter"))
-        .color(0xffffff).iconSet("hyperdegenerate_matter")
-        .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
-
     event.create("quadium")
         .gas()
         .element(GTElements.get("quadium"))
         .color(0x7c5bff)
-
-    // Not entirely sure this is actually part of naqfuel but if I'm wrong it can just be moved later.
-    event.create("waste_gas_mixture")
-        .fluid()
-        .color(0x666677)
-        .components("10x carbon_monoxide", "5x chloroethane", "7x ammonium_formate", "9x dinitrogen_tetroxide", "2x neon", "1x tritium")
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 
 })

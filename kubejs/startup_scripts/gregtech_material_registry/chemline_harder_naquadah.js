@@ -1,4 +1,3 @@
-// priority: 1
 /**
  * Material Registry for harder Naquadah processing.
  * NOT harder Naqline.

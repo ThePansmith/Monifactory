@@ -177,12 +177,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluid()
         .color(0xbbddbd)
         .iconSet("elemental_reduction_fluid")
-
-    event.create("mana")
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get("mana"))
-        .iconSet("mana")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
 
 // Eltz Processing
@@ -199,6 +193,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0xC3D1FF)    // Old actinium color for fun
         .components("1x actinium", "4x iron", "3x oxygen")
+
+    event.create("waste_gas_mixture")
+        .fluid()
+        .color(0x666677)
+        .components("10x carbon_monoxide", "5x chloroethane", "7x ammonium_formate", "9x dinitrogen_tetroxide", "2x neon", "1x tritium")
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 })
 
 // Prism Glass Processing
@@ -223,6 +223,15 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
 
+
+// Transmatrix/Infinity/Null/Monium Processing
+GTCEuStartupEvents.registry("gtceu:material", event => {
+
+    event.create("radiant_blend")
+        .liquid()
+        .color(0xfff25e)
+})
+
 // Sculk Bioalloy Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
@@ -236,7 +245,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0x0a3538)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.STICKY, GTMaterialFlags.PHOSPHORESCENT)
-        .components(GTMaterials.PotassiumCyanide.multiply(4), GTMaterials.Biotite.multiply(7), GTMaterials.GelatinMixture.multiply(9), "2x experience_attuned")
+        .components(GTMaterials.PotassiumCyanide.multiply(4), GTMaterials.Biotite.multiply(7), GTMaterials.GelatinMixture.multiply(9), GTMaterials.get("experience_attuned").multiply(2))
 
 })
 
@@ -270,7 +279,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 })
 
-
 // Actinium Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
@@ -283,4 +291,44 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x776E82).iconSet("rough")
         .components("lead", "2x chlorine")
 
+})
+
+// Crystal Matrix Processing
+GTCEuStartupEvents.registry("gtceu:material", event => {
+
+    event.create("acetylene")
+        .gas()
+        .color(0xFF4F4F)
+        .components("2x carbon", "2x hydrogen")
+
+    event.create("calcium_carbide")
+        .dust()
+        .color(0xCFC870)
+        .components("1x calcium", "2x carbon")
+
+})
+
+// I don't know what this is for
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("butanol")
+        .fluid()
+        .color(0xc7af2e)
+        .components("4x carbon", "10x hydrogen", "1x oxygen")
+        .formula("C4H9OH")
+
+    event.create("phosphorus_trichloride")
+        .fluid()
+        .color(0xe8c474)
+        .components("1x phosphorus", "3x chlorine")
+
+    event.create("phosphoryl_chloride")
+        .fluid()
+        .color(0xe8bb5b)
+        .components("1x phosphorus", "1x oxygen", "3x chlorine")
+
+    event.create("tributyl_phosphate")
+        .fluid()
+        .color(0xe8c474)
+        .components("12x carbon", "27x hydrogen", "4x oxygen", "1x phosphorus")
+        .formula("(C4H9O)3PO")
 })

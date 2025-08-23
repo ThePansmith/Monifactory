@@ -5,6 +5,24 @@
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
+
+    // Primal Mana is shoved here at the start to make absolute sure nothing that uses it is declared before it
+
+    event.create("mana")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get("mana"))
+        .iconSet("mana")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+    
+    
+    // Hyperdegenerate Matter *should* be in the naqfuel file, but it's used in HDD
+
+    event.create("hyperdegenerate_matter")
+        .element(GTElements.get("hyperdegenerate_matter"))
+        .color(0xffffff).iconSet("hyperdegenerate_matter")
+        .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
+
+
     // Sculk Materials
 
     event.create("cryolobus")
@@ -24,14 +42,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("sculk_bioalloy")
         .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get("sculk_bioalloy"))
         .color(0xffffff)
         .iconSet("sculk_alloy")
         .flags(GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_WORKING)
         .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall, TagPrefix.dust])
 
     event.create("sculk_superconductor")
-        .element(GTElements.get("sculk_superconductor"))
         .color(0xffffff)
         .iconSet("crystal")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION)
