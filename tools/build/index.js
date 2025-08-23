@@ -98,7 +98,7 @@ async function packMod(group) {
 
             await Juke.exec("powershell", [
                 "Compress-Archive",
-                `-Path "${resolve(`dist\\${group}\\overrides`)}","${resolve(`dist\\${group}\\manifest.json`)}","${resolve(`dist\\${group}\\modlist.html`)}","${resolve(`dist\\${group}\\LICENSE.md`)}"`,
+                `-Path "${resolve(`dist\\${group}\\*`)}"`,
                 `-DestinationPath "${resolve(`dist\\${group}.zip`)}"`,
             ])
             return;
