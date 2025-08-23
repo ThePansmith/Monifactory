@@ -53,25 +53,19 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 ## Installation:
 
 ### Hard/Expert Mode Installation:
-1. Download [``./pack-mode-switcher.bat``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
-2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
-- Windows:
-    - Manual:
-        1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.bat``.
-        2. Follow the prompt to select your mode.
-        3. Redo steps 1 & 2 every time after you've updated the modpack.
-
-    - Prism Launcher (and various other custom launchers):
-        1. If your Minecraft launcher supports it, select your Minecraft instance -> Edit -> Settings -> Custom Commands, check ``Custom Commands``, paste
-           ```
-           $INST_DIR\minecraft\pack-mode-switcher.bat (N/H/E)
-           ```
-           into Pre-launch command and specify your wanted mode.
-
-- Linux/Apple/GNU:
-1. Open [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) and download the file to your Minecraft / Minecraft instance folder.
-1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.sh``.
-2. Follow the prompt to select your mode.
+1. Download [``./pack-mode-switcher.py``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.py)
+2. Move the python script into the ``.minecraft`` folder where Monifactory is installed
+- Manual:
+    1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.py``(you'll need to have python installed).
+    2. Follow the prompt to select your mode.
+    3. Redo steps 1 & 2 every time after you've updated the modpack.
+- Prism Launcher (and various other custom launchers):
+    1. If your Minecraft launcher supports it, select your Minecraft instance -> Edit -> Settings -> Custom Commands, check``Custom Commands``, paste
+       ```
+       python $INST_DIR\minecraft\pack-mode-switcher.py (N/H/E)
+       ```
+       Adding no print to the end of the command will disable log messages\
+       into Pre-launch command and specify your wanted mode.
 
 ### Addon Mods (AKA Optional Compats)
 To spice up your Monifactory experience, you can add any of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
@@ -97,7 +91,8 @@ To spice up your Monifactory experience, you can add any of the following mods t
 6. ``unzip server.zip``
 7. Move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
 8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
-9. To upgrade an existing Monifactory server, see See [FAQ.md](FAQ.md).
+9. Run the Python script to select your desired mode
+10. To upgrade an existing Monifactory server, see See [FAQ.md](FAQ.md).
 
 ## Contributing
 
