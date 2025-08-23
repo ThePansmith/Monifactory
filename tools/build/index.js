@@ -86,12 +86,13 @@ async function packMod(group) {
         if (process.platform === "win32") {
             if (!fs.existsSync("config/packmode.json")) {
                 // Must temporarily copy the file in due to the bat file working relative to its file location
-                fs.copyFileSync("pack-mode-switcher.bat", `dist/${group}/overrides/pack-mode-switcher.bat`)
+                const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}`;
+                fs.copyFileSync("pack-mode-switcher.bat", `${packSwitchPath}/pack-mode-switcher.bat`);
                 await Juke.exec("cmd.exe", ["/c", "pack-mode-switcher.bat N"], {
-                    cwd: `dist/${group}/overrides`
+                    cwd: packSwitchPath
                 });
-                Juke.rm(`dist/${group}/overrides/pack-mode-switcher.bat`);
-                Juke.rm(`dist/${group}/overrides/.mode`);
+                Juke.rm(`${packSwitchPath}/pack-mode-switcher.bat`);
+                Juke.rm(`${packSwitchPath}/.mode`);
             }
 
             await Juke.exec("powershell", [
@@ -103,11 +104,12 @@ async function packMod(group) {
         }
 
         if (!fs.existsSync("config/packmode.json")) {
+            const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}`;
             await Juke.exec("chmod", ["+x", "./pack-mode-switcher.sh"]);
             await Juke.exec("./pack-mode-switcher.sh", ["N"], {
-                cwd: `dist/${group}/overrides`
+                cwd: packSwitchPath
             });
-            Juke.rm(`dist/${group}/overrides/.mode`);
+            Juke.rm(`${packSwitchPath}/.mode`);
         }
 
         let hasZipCmd = false;
@@ -283,9 +285,9 @@ export const BuildServerTarget = new Juke.Target({
         "dist/server/mods"
     ]),
     executes: async () => {
-        fs.mkdirSync("dist/server/overrides", { recursive: true })
+        fs.mkdirSync("dist/server", { recursive: true })
         for (const folders of includeList) {
-            fs.cpSync(folders, `dist/server/overrides/${folders}`, { recursive: true })
+            fs.cpSync(folders, `dist/server/${folders}`, { recursive: true })
         }
 
         fs.mkdirSync("dist/server/mods")
