@@ -124,12 +124,7 @@ async function packMod(group) {
             await Juke.exec("tools/zip-stuff", [
                 `dist/${group}`, // curr working dir
                 `dist/${group}.zip`,  // file out
-                "overrides",
-                "manifest.json",
-                "modlist.html",
-                "LICENSE.md",
-                // "pack-mode-switcher.bat", // no longer included in CF releases
-                // "pack-mode-switcher.sh"
+                ".", // include everything
             ])
             return;
         }
