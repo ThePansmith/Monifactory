@@ -91,6 +91,7 @@ async function packMod(group) {
                     cwd: `dist/${group}/overrides`
                 });
                 Juke.rm(`dist/${group}/overrides/pack-mode-switcher.bat`);
+                Juke.rm(`dist/${group}/overrides/.mode`);
             }
 
             await Juke.exec("powershell", [
@@ -106,6 +107,7 @@ async function packMod(group) {
             await Juke.exec("./pack-mode-switcher.sh", ["N"], {
                 cwd: `dist/${group}/overrides`
             });
+            Juke.rm(`dist/${group}/overrides/.mode`);
         }
 
         let hasZipCmd = false;
