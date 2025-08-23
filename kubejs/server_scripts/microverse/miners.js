@@ -258,7 +258,7 @@ ServerEvents.recipes(event => {
         P: "solarflux:sp_custom_infinity",
         C: "gtceu:uhv_quantum_chest",
         W: "kubejs:hadal_warp_engine",
-        D: "kubejs:infinity_power_unit",
+        D: "gtceu:max_battery",
         S: "monilabs:dimensional_stabilization_netherite_casing",
         Q: "kubejs:field_stabilised_omnic_pulsar_compound"
     })
