@@ -13,8 +13,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("mana"))
         .iconSet("mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-    
-    
+
+
     // Hyperdegenerate Matter *should* be in the naqfuel file, but it's used in HDD
 
     event.create("hyperdegenerate_matter")
