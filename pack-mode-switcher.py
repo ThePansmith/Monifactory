@@ -21,13 +21,12 @@ def copyFiles(sourceDirectory: str, targetDirectory: str):
     files = os.listdir(sourceDirectory)
     for i in range(len(files)):
         
-        #Checks if file is directory
         if not os.path.isdir(os.path.join(sourceDirectory, files[i])):
-            #If not just copies it over
+
             log("Copying over " + files[i])
             shutil.copyfile(os.path.join(sourceDirectory, files[i]), os.path.join(targetDirectory, files[i]))
         else:
-            #If it is a directory is runs this function for that directory
+
             log("Entering directory " + files[i])
             copyFiles(os.path.join(sourceDirectory, files[i]), os.path.join(targetDirectory, files[i]))
         
@@ -35,29 +34,25 @@ def copyFiles(sourceDirectory: str, targetDirectory: str):
 def switchMode(mode: str):
     if mode == "n":
         log("Normal Mode Selected")
-        # Copies files from NM override
+
         copyFiles(os.path.join(currentDirectory, "config-overrides", "normal"), currentDirectory + "/config")
 
-        #Writes "normal" into .mode file
         with open(".mode", "w") as f:
             f.write("normal")
         return True
     elif mode == "h":
         log("Hard Mode Selected")
-        # Copies files from HM override
+
         copyFiles(os.path.join(currentDirectory, "config-overrides", "hardmode"), currentDirectory + "/config")
         
-        #Writes "hard" into .mode file
         with open(".mode", "w") as f:
             f.write("hard")
         return True
     elif mode == "e":
         log("Expert Mode selected")
-        # Copies files from HM & EM override(HM then EM in that order)
         copyFiles(os.path.join(currentDirectory, "config-overrides", "hardmode"), currentDirectory + "/config")
         copyFiles(os.path.join(currentDirectory, "config-overrides", "expert"), currentDirectory + "/config")
         
-        #Writes "expert" into .mode file
         with open(".mode", "w") as f:
             f.write("expert")
         return True
@@ -65,7 +60,6 @@ def switchMode(mode: str):
         return False
 
 def askForMode():
-    # Start listing options
     log("Set Pack Mode:")
     log("N: Normal    (The Default mode)")
     log("H: Hardmode  (Adds more lines and progression, removes HNN and Monicoin spending)")
@@ -76,7 +70,9 @@ def askForMode():
         askForMode()
 
 try:
-    switchMode(sys.argv[1])
+    # Runs function if a user passes in a letter, if letter doesn't repersent a pack mode just defaults to asking for a mode
+    if switchMode(sys.argv[1]) == False:
+        askForMode()
 except:
     askForMode()
 
