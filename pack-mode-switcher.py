@@ -1,12 +1,15 @@
 import shutil
 import os
 import sys
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--silent", help="Removes log outputs from this python script", action="store_true")
+parser.add_argument("packmode", help="Repersents the letter of the pack mode you want to pick, same as shown running this script using the CLI")
+args = parser.parse_args()
 
 def log(text: str):
-    try:
-        if sys.argv[2] != "--no-print":
-            print(text)
-    except:
+    if not args.silent:
         print(text)
 
 log("Monifactory Pack Mode Switcher\nDetails on each mode can be found on the curseforge page")
@@ -65,7 +68,7 @@ def askForMode():
 
 try:
     # if invalid letter is passed as an argument script just runs like it was ran by double clicking
-    if switchMode(sys.argv[1].lower()) == False:
+    if not switchMode(args.packmode.lower()):
         askForMode()
 except:
     askForMode()
