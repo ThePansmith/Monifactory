@@ -156,7 +156,7 @@ ServerEvents.recipes(event => {
     ], {
         G: "kubejs:advanced_micro_miner_guidance_system",
         C: "monilabs:double_crystal_matrix_plate",
-        W: "monilabs:double_rhodium_plated_palladium_plate",
+        W: "gtceu:double_rhodium_plated_palladium_plate",
         L: "kubejs:supercharged_laser_array",
         I: "gtceu:double_duranium_plate",
         A: "gtceu:hv_super_chest",
