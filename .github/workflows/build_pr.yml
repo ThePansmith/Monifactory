@@ -67,7 +67,7 @@ jobs:
         run: |
           cd build
           npm install
-          node . ${{ inputs.target }}
+          node index.ts ${{ inputs.target }}
         shell: bash
       - name: Upload build artifact
         uses: actions/upload-artifact@v4

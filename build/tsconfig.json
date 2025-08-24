@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "nodenext",
+
+        "alwaysStrict": true,
+
+        // Settings for running with node ^23.6.0
+        "allowJs": false,
+        "noEmit": true,
+        "erasableSyntaxOnly": true,
+        "allowImportingTsExtensions": true,
+    }
+}

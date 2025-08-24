@@ -2,8 +2,8 @@
 import { basename, dirname, join } from "path";
 import Juke from "juke-build";
 import fs from "fs";
-import { readDatafileJSON, writeDatafileJSON } from "../../lib/json_datafile.js";
-import { UDTransform } from "./en_ud.js";
+import { readDatafileJSON, writeDatafileJSON } from "../../lib/json_datafile.ts";
+import { UDTransform } from "./en_ud.ts";
 import { fileURLToPath } from "url";
 import z from "zod";
 

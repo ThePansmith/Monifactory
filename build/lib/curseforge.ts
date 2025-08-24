@@ -21,7 +21,7 @@ export const GetModInfo = async (modID) => {
     return (await modData.json()).data;
 }
 
-export const DownloadCF = async (modInfo = {}, dest, retrycount) => {
+export const DownloadCF = async (modInfo: { modID?: string, modFileID?: string } = {}, dest, retrycount?: number) => {
     if (retrycount === null || retrycount === undefined) {
         retrycount = 5;
     }
@@ -87,7 +87,7 @@ export const DownloadCF = async (modInfo = {}, dest, retrycount) => {
 };
 
 async function download_file(url, options = {}, file) {
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
         let file_stream = fs.createWriteStream(file);
         https.get(url, options, function(response) {
             if (response.statusCode === 302) {

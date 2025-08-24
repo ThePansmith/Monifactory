@@ -9,10 +9,10 @@
 import fs from "fs";
 import path, { resolve } from "path";
 import Juke from "juke-build";
-import { DownloadCF, GetModInfo } from "./lib/curseforge.js";
-import { CodegenAllTarget } from "./codegen/target-all.js";
+import { DownloadCF, GetModInfo } from "./lib/curseforge.ts";
+import { CodegenAllTarget } from "./codegen/target-all.ts";
 import { z } from "zod";
-import { progressNumber } from "./lib/log.js"
+import { progressNumber } from "./lib/log.ts"
 
 Juke.chdir("..", import.meta.url);
 Juke.setup({ file: import.meta.url }).then((code) => {
@@ -68,7 +68,7 @@ const symlinkSync = (ourDir, newDir) => {
  * @param {(file: string) => boolean} filter
  */
 const cpSyncFiltered = (ourDir, newDir, filter) => {
-    for (const file of fs.readdirSync(ourDir, { recursive:false })) {
+    for (const file of fs.readdirSync(ourDir, { recursive:false, encoding: "utf8" })) {
         if (!filter(file)) continue;
         fs.copyFileSync(path.join(ourDir, file), path.join(newDir, file))
     }
@@ -241,7 +241,7 @@ export const DownloadModsTarget = new Juke.Target({
     }
 });
 
-export * from "./codegen/target-all.js";
+export * from "./codegen/target-all.ts";
 
 export const BuildClientTarget = new Juke.Target({
     dependsOn: [CodegenAllTarget, BuildModlistTarget],

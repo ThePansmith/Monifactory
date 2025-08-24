@@ -7,7 +7,11 @@
   "type": "module",
   "devDependencies": {
     "@stylistic/eslint-plugin-js": "^3.0.0",
+    "@types/node": "^24.1.0",
     "eslint": "^9.19.0",
     "globals": "^15.14.0"
+  },
+  "engines": {
+    "node": "^23.6.0"
   }
 }
