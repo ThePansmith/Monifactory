@@ -64,7 +64,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
        ```
        python $INST_DIR\minecraft\pack-mode-switcher.py (N/H/E)
        ```
-       Adding ``--no-print`` to the end of the command will disable log messages\
+       Adding ``--silent`` or ``-s`` to the end of the command will disable log messages\
        into Pre-launch command and specify your wanted mode.
 
 ### Addon Mods (AKA Optional Compats)
