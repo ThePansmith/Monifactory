@@ -117,7 +117,7 @@ echo.
 echo Modes:
 echo   Normal, normal, N, n     Switch to Normal mode (default)
 echo   Hard, hard, H, h         Switch to Hard mode
-echo   Expert, expert, E, e     Switch to Expert mode (implies Hard mode)
+echo   Expert, expert, E, e     Switch to Expert mode
 echo.
 echo Example:
 echo   pack-mode-switcher.bat -s hard
