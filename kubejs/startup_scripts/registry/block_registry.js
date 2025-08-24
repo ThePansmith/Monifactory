@@ -187,8 +187,6 @@ StartupEvents.registry("block", event => {
         "black_steel",
         "dark_soularium",
         "omnic_matrix_machine",
-        "bioalloy",
-        "bioalloy_fusion",
     ]
 
     casings.forEach(casing => {

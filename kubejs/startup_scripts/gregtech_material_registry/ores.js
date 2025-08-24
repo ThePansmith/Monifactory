@@ -1,4 +1,3 @@
-// priority: 0
 /**
  * Material Registry for ores.
  */

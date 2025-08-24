@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.macerator("matrix_macerating")
         .itemInputs("kubejs:adhered_matrix_mesh")
-        .itemOutputs("gtceu:crystal_matrix_dust")
+        .itemOutputs("monilabs:crystal_matrix_dust")
         .duration(0.6 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 })

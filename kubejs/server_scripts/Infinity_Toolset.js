@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_plate",
         B: "gtceu:infinity_plate",
-        C: "gtceu:eltz_plate",
+        C: "monilabs:eltz_plate",
         D: "kubejs:supercritical_prismatic_core",
         E: "gtceu:omnium_ingot"
     });
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_ingot",
         B: "gtceu:infinity_ingot",
-        C: "gtceu:eltz_ingot",
+        C: "monilabs:eltz_ingot",
         D: "kubejs:supercritical_prismatic_core",
         E: "gtceu:omnium_ingot"
     });
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_rod",
         B: "gtceu:infinity_rod",
-        C: "gtceu:eltz_rod",
+        C: "monilabs:eltz_rod",
         D: "kubejs:supercritical_prismatic_core",
         E: "gtceu:omnium_ingot"
     });
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_plate",
         B: "gtceu:infinity_plate",
-        C: "gtceu:eltz_plate",
+        C: "monilabs:eltz_plate",
         D: "kubejs:supercritical_prismatic_core"
     });
 
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:neutronium_plate",
         B: "gtceu:infinity_plate",
-        C: "gtceu:eltz_plate",
+        C: "monilabs:eltz_plate",
         D: "kubejs:supercritical_prismatic_core",
         E: "gtceu:omnium_ingot"
     });

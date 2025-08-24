@@ -463,7 +463,7 @@
     "item.kubejs.damaged_microminer.tooltip": "§7§o可以在装配机中修复.",
     "item.kubejs.microminer_t8_damaged": "§7损坏的水晶矩阵外壳级微型利维坦歼灭者 [八级]",
     "item.kubejs.microminer_t7_damaged": "§7损坏的寒触外壳微型猎龙者 [七级]",
-    "item.kubejs.microminer_t2half": "§e黑钢外壳微型屠宰机 [二级改]",
+    "item.kubejs.microminer_t2half": "§e黑钢外壳微型屠宰机[二级改]",
     "item.kubejs.microminer_t2half_damaged": "§7损坏的黑钢外壳微型屠宰机 [二级改]",
     "item.kubejs.microminer_t4half_damaged": "§7损坏的流明外壳微型屠宰机 [四级改]",
     "item.kubejs.microminer_t2half.desc": "§7§o在安全的微观宇宙中杀死怪物，并收集它们的骨骼和部件",
