@@ -1,8 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
 
-color 9
-
 set SILENT=false
 set RUN_DIR=%~dp0
 set MODE=
@@ -42,6 +40,8 @@ if not defined MODE (
     )
 
     rem Interactive
+    color 9
+
     set CURRENT_MODE="N/A"
     if exist .mode (
         set /p CURRENT_MODE=<.mode

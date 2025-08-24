@@ -86,14 +86,10 @@ async function packMod(group) {
         if (process.platform === "win32") {
             // Switch build to NM if mode is unset
             if (!fs.existsSync("config/packmode.json")) {
-                // Must temporarily copy the file in due to the bat file working relative to its file location
                 const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}`; // to account for server build not being in overrides
-                fs.copyFileSync("pack-mode-switcher.bat", `${packSwitchPath}/pack-mode-switcher.bat`);
-                await Juke.exec("cmd.exe", ["/c", "pack-mode-switcher.bat N"], {
+                await Juke.exec("cmd.exe", ["/c", resolve("pack-mode-switcher.bat"), "-r", "-s", "n"], {
                     cwd: packSwitchPath
                 });
-                Juke.rm(`${packSwitchPath}/pack-mode-switcher.bat`);
-                Juke.rm(`${packSwitchPath}/.mode`);
             }
 
             await Juke.exec("powershell", [
@@ -108,10 +104,9 @@ async function packMod(group) {
         if (!fs.existsSync("config/packmode.json")) {
             const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}`; // to account for server build not being in overrides
             await Juke.exec("chmod", ["+x", "./pack-mode-switcher.sh"]);
-            await Juke.exec("./pack-mode-switcher.sh", ["N"], {
+            await Juke.exec("./pack-mode-switcher.sh", ["-r", "-s", "n"], {
                 cwd: packSwitchPath
             });
-            Juke.rm(`${packSwitchPath}/.mode`);
         }
 
         let hasZipCmd = false;
