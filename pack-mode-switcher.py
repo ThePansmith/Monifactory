@@ -11,44 +11,44 @@ def log(text: str):
 
 log("Monifactory Pack Mode Switcher\nDetails on each mode can be found on the curseforge page")
 
-userInput = None
-currentDirectory = sys.path[0]
+user_input = None
+current_directory = sys.path[0]
 
 
 
-def copyFiles(sourceDirectory: str, targetDirectory: str):
+def copyFiles(source_directory: str, target_directory: str):
     #Gets list of files
-    files = os.listdir(sourceDirectory)
+    files = os.listdir(source_directory)
     for i in range(len(files)):
         
-        if not os.path.isdir(os.path.join(sourceDirectory, files[i])):
-            shutil.copyfile(os.path.join(sourceDirectory, files[i]), os.path.join(targetDirectory, files[i]))
+        if not os.path.isdir(os.path.join(source_directory, files[i])):
+            shutil.copyfile(os.path.join(source_directory, files[i]), os.path.join(target_directory, files[i]))
         else:
-            copyFiles(os.path.join(sourceDirectory, files[i]), os.path.join(targetDirectory, files[i]))
+            copyFiles(os.path.join(source_directory, files[i]), os.path.join(target_directory, files[i]))
         
 
 def switchMode(mode: str):
     if mode == "n":
-        copyFiles(os.path.join(currentDirectory, "config-overrides", "normal"), currentDirectory + "/config")
+        copyFiles(os.path.join(current_directory, "config-overrides", "normal"), current_directory + "/config")
 
-        with open(os.path.join(currentDirectory, ".mode"), "w") as f:
+        with open(os.path.join(current_directory, ".mode"), "w") as f:
             f.write("normal")
         log("Switch to Normal Mode complete")
         return True
     elif mode == "h":
         
 
-        copyFiles(os.path.join(currentDirectory, "config-overrides", "hardmode"), currentDirectory + "/config")
+        copyFiles(os.path.join(current_directory, "config-overrides", "hardmode"), current_directory + "/config")
         
-        with open(os.path.join(currentDirectory, ".mode"), "w") as f:
+        with open(os.path.join(current_directory, ".mode"), "w") as f:
             f.write("hard")
         log("Switch to Hard Mode complete")
         return True
     elif mode == "e":
-        copyFiles(os.path.join(currentDirectory, "config-overrides", "hardmode"), currentDirectory + "/config")
-        copyFiles(os.path.join(currentDirectory, "config-overrides", "expert"), currentDirectory + "/config")
+        copyFiles(os.path.join(current_directory, "config-overrides", "hardmode"), current_directory + "/config")
+        copyFiles(os.path.join(current_directory, "config-overrides", "expert"), current_directory + "/config")
         
-        with open(os.path.join(currentDirectory, ".mode"), "w") as f:
+        with open(os.path.join(current_directory, ".mode"), "w") as f:
             f.write("expert")
         log("Switch to Expert Mode complete")
         return True
@@ -60,9 +60,9 @@ def askForMode():
     log("N: Normal    (The Default mode)")
     log("H: Hardmode  (Adds more lines and progression, removes HNN and Monicoin spending)")
     log("E: Expert    (A modifier for Hardmode, enables some of the more extreme GTm settings among other things)")
-    userInput = input("Selection: ")
+    user_input = input("Selection: ")
 
-    if(switchMode(userInput.lower()) == False):
+    if(switchMode(user_input.lower()) == False):
         askForMode()
 
 try:
