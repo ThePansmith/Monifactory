@@ -4,8 +4,8 @@ import sys
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--silent", help="Removes log outputs from this python script", action="store_true")
-parser.add_argument("packmode", help="Repersents the letter of the pack mode you want to pick, same as shown running this script using the CLI")
+parser.add_argument("--silent", "-s", help="Removes log outputs from this python script", action="store_true")
+parser.add_argument("packmode", help="Represents the letter of the pack mode you want to pick, same as shown running this script using the CLI")
 args = parser.parse_args()
 
 def log(text: str):
