@@ -54,7 +54,7 @@ The following guide was written with prism launcher in mind, see [here](<https:/
 2. Open the `instances\Monifactory` folder, take everything contained within it and store it in a temporary folder (`temp`).
 3. Clone your fork of the Monifactory repository into `instances\Monifactory`, with the repository's folder being named `minecraft`. (If using the desktop app, see [here](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) for an image example.)
 4. Once the repo is installed,  go back to your temporary folder and move the files from the `temp` root folder and `temp\minecraft\mods` folder back into the Monifactory folder.
-5. Run ``pack-mode-switcher.py`` if you're desired mode is Hard mode or Expert Mode.
+5. Run ``pack-mode-switcher.py`` if your desired mode is Hard mode or Expert Mode.
 
 If you encounter a problem and there have been mod updates since the latest release, you may need to update your mods using the mod manifest file.
 1. Look for a file named `manifest.json` in your instance and make a .zip with it inside.
