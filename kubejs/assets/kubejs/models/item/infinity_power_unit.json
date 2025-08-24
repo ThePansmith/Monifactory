@@ -1,7 +1,0 @@
-{
-    "parent":"item/generated",
-    "textures": {
-      "layer0":"kubejs:item/infinity/infinity_power_unit_frame",
-      "layer1":"kubejs:item/infinity/infinity_power_unit_core"
-    }
-  }

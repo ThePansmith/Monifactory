@@ -215,7 +215,6 @@ StartupEvents.registry("item", event => {
 
 
     // Infinity Tools
-    event.create("infinity_power_unit").rarity("epic").maxStackSize(1)
     event.create("infinity_file").rarity("epic").maxStackSize(1)
     event.create("infinity_hammer").rarity("epic").maxStackSize(1)
     event.create("infinity_screwdriver").rarity("epic").maxStackSize(1)
