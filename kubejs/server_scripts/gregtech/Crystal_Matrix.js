@@ -94,18 +94,20 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electric_blast_furnace("matrix_blasting")
         .itemInputs("kubejs:adhered_matrix_mesh")
-        .itemOutputs("gtceu:hot_crystal_matrix_ingot")
+        .itemOutputs("monilabs:hot_crystal_matrix_ingot")
         .duration(750)
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(3823)
+        .circuit(1)
 
     event.recipes.gtceu.electric_blast_furnace("matrix_blasting_gas")
         .itemInputs("kubejs:adhered_matrix_mesh")
-        .itemOutputs("gtceu:hot_crystal_matrix_ingot")
+        .itemOutputs("monilabs:hot_crystal_matrix_ingot")
         .inputFluids("gtceu:krypton 10")
         .duration(500)
         .EUt(GTValues.VA[GTValues.ZPM])
         .blastFurnaceTemp(3823)
+        .circuit(2)
 
     event.recipes.gtceu.macerator("matrix_macerating")
         .itemInputs("kubejs:adhered_matrix_mesh")
