@@ -28,7 +28,7 @@ print_help() {
 }
 
 SILENT=false
-RUN_DIR="$(dirname "$(realpath $0)")" # Directory of this script to change the mode from
+RUN_DIR="$(dirname "$(realpath $0)")" # Directory of this script
 MODE=""
 for arg in "$@"; do
   if [ "$arg" = "--silent" ] || [ "$arg" = "-s" ]; then
@@ -42,17 +42,17 @@ for arg in "$@"; do
   fi
 done
 
+NORMAL_CFG="${RUN_DIR}/config-overrides/normal"
+HARDMODE_CFG="${RUN_DIR}/config-overrides/hardmode"
+EXPERT_CFG="${RUN_DIR}/config-overrides/expert"
+TARGET="${RUN_DIR}/config"
+
 # Check if config-overrides dir exists
 if ! ([ -d "${NORMAL_CFG}" ] && [ -d "${HARDMODE_CFG}" ] && [ -d "${EXPERT_CFG}" ]); then
   printf "\n\n${RED}Could not find \`config-overrides\` directory! \nMake sure you are in the \`/minecraft\` directory of your instance! (The one containing \`/config\`)${NORMAL}\n"
   printf "${YELLOW}Otherwise, if you are in the \`/minecraft\` directory, please try reinstalling the pack.${NORMAL}\n"
   exit 1
 fi
-
-NORMAL_CFG="${RUN_DIR}/config-overrides/normal"
-HARDMODE_CFG="${RUN_DIR}/config-overrides/hardmode"
-EXPERT_CFG="${RUN_DIR}/config-overrides/expert"
-TARGET="${RUN_DIR}/config"
 
 if [ -z "$MODE" ]; then
   if $SILENT; then
