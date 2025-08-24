@@ -21,7 +21,7 @@ print_help() {
   printf "\n${YELLOW}Modes:${NORMAL}\n"
   printf "${MAGENTA}Normal, normal, N, n${NORMAL}     Switch to Normal mode (default)\n"
   printf "${MAGENTA}Hard, hard, H, h${NORMAL}         Switch to Hard mode\n"
-  printf "${MAGENTA}Expert, expert, E, e${NORMAL}     Switch to Expert mode (implies Hard mode)\n"
+  printf "${MAGENTA}Expert, expert, E, e${NORMAL}     Switch to Expert mode\n"
   printf "\n${YELLOW}Example:${NORMAL}\n"
   printf "${POWDER_BLUE}./pack-mode-switcher.sh -s hard${NORMAL}\n"
   exit 0
