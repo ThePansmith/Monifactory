@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("chromatic_capacitor")
-        .itemInputs("gtceu:neutronium_small_fluid_pipe", "gtceu:uhv_field_generator", "4x gtceu:crystal_matrix_foil", "2x gtceu:uhv_sensor", "6x gtceu:stainless_steel_ring")
+        .itemInputs("gtceu:neutronium_small_fluid_pipe", "gtceu:uhv_field_generator", "4x monilabs:crystal_matrix_foil", "2x gtceu:uhv_sensor", "6x gtceu:stainless_steel_ring")
         .inputFluids("gtceu:omnium 288", "gtceu:polyethyl_cyanoacrylate 288")
         .itemOutputs("kubejs:chromatic_capacitor_empty")
         .duration(20 * 20)

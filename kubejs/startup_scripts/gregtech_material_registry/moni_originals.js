@@ -39,15 +39,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x088286).secondaryColor(0x022C34).iconSet("dull")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
 
-    event.create("sculk_bioalloy")
-        .ingot()
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .color(0xffffff)
-        .iconSet("sculk_alloy")
-        .flags(GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_BY_HAND_RECIPES, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_WORKING)
-        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall, TagPrefix.dust])
-
     event.create("sculk_superconductor")
+        .element(GTElements.get("sculk_superconductor"))
         .color(0xffffff)
         .iconSet("crystal")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -92,16 +85,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // Netherite-Related Materials
 
-    event.create("crystal_matrix")
-        .ingot().fluid()
-        .element(GTElements.get("crystal_matrix"))
-        .color(0x66ffff)
-        .secondaryColor(0x004590)
-        .blastTemp(3823, "highest", GTValues.VA[GTValues.ZPM])
-        .iconSet("crystal")
-        .fluidPipeProperties(4773, 1200, true, false, true, true)
-        .flags(GTMaterialFlags.NO_WORKING, GTMaterialFlags.EXCLUDE_BLOCK_CRAFTING_RECIPES, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR);
-
     event.create("activated_netherite")
         .ingot()
         .color(0x4C484C)
@@ -123,17 +106,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(9200, "highest", GTValues.VA[GTValues.UV], 1200)
         .components("4x ardite", "4x cobalt", "mana")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_SMALL_GEAR)
-
-
-    // Eltz
-
-    event.create("eltz")
-        .ingot()
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get("eltz"))
-        .color(0xffffff)
-        .iconSet("eltz")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.PHOSPHORESCENT)
 
 
     // Necrosiderite

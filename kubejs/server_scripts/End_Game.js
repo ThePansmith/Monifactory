@@ -424,7 +424,7 @@ ServerEvents.recipes(event => {
 
     // Knowledge Transmission Array
     event.recipes.gtceu.assembly_line("knowledge_transmission_array")
-        .itemInputs("2x gtceu:sculk_bioalloy_frame", "16x gtceu:europium_double_cable", "16x gtceu:uhv_emitter", "16x gtceu:data_transmitter_hatch", "2x #gtceu:circuits/uhv", "32x gtceu:normal_optical_pipe", "16x gtceu:ruthenium_trinium_americium_neutronate_single_wire", "2x gtceu:network_switch", "32x gtceu:rhodium_foil")
+        .itemInputs("2x monilabs:sculk_bioalloy_frame", "16x gtceu:europium_double_cable", "16x gtceu:uhv_emitter", "16x gtceu:data_transmitter_hatch", "2x #gtceu:circuits/uhv", "32x gtceu:normal_optical_pipe", "16x gtceu:ruthenium_trinium_americium_neutronate_single_wire", "2x gtceu:network_switch", "32x gtceu:rhodium_foil")
         .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:omnium 2304", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("monilabs:knowledge_transmission_array")
         .duration(2000)
@@ -443,7 +443,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UV])
     // Coils
     event.recipes.gtceu.assembler("kubejs:omnic_matrix_coil")
-        .itemInputs("8x gtceu:omnium_double_wire", "8x gtceu:crystal_matrix_foil")
+        .itemInputs("8x gtceu:omnium_double_wire", "8x monilabs:crystal_matrix_foil")
         .itemOutputs("kubejs:omnic_matrix_coil_block")
         .inputFluids("gtceu:neutronium 144")
         .duration(1000)
@@ -451,7 +451,7 @@ ServerEvents.recipes(event => {
 
     // Casings
     event.recipes.gtceu.assembler("kubejs:omnic_matrix_machine_casing")
-        .itemInputs("6x gtceu:omnium_plate", "gtceu:crystal_matrix_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
+        .itemInputs("6x gtceu:omnium_plate", "monilabs:crystal_matrix_frame", "gtceu:zpm_field_generator", "#gtceu:circuits/uv")
         .itemOutputs("2x kubejs:omnic_matrix_machine_casing")
         .duration(100)
         .EUt(65520)
@@ -462,15 +462,15 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(65520)
 
-    event.recipes.gtceu.assembler("kubejs:bioalloy_casing")
-        .itemInputs("4x gtceu:sculk_bioalloy_plate", "2x gtceu:cryolobus_frame", "4x kubejs:warden_horn", "6x gtceu:actinium_rod")
-        .itemOutputs("2x kubejs:bioalloy_casing")
+    event.recipes.gtceu.assembler("monilabs:bioalloy_casing")
+        .itemInputs("4x monilabs:sculk_bioalloy_plate", "2x gtceu:cryolobus_frame", "4x kubejs:warden_horn", "6x gtceu:actinium_rod")
+        .itemOutputs("2x monilabs:bioalloy_casing")
         .duration(100)
         .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.assembler("kubejs:bioalloy_fusion_casing")
-        .itemInputs("gtceu:uhv_machine_hull", "2x kubejs:bioalloy_casing", "12x gtceu:cryococcus_plate", "4x gtceu:fusion_casing_mk3", "gtceu:uhv_field_generator")
-        .itemOutputs("4x kubejs:bioalloy_fusion_casing")
+    event.recipes.gtceu.assembler("monilabs:bioalloy_fusion_casing")
+        .itemInputs("gtceu:uhv_machine_hull", "2x monilabs:bioalloy_casing", "12x gtceu:cryococcus_plate", "4x gtceu:fusion_casing_mk3", "gtceu:uhv_field_generator")
+        .itemOutputs("4x monilabs:bioalloy_fusion_casing")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 

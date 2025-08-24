@@ -8,6 +8,11 @@
 
 GTCEuStartupEvents.registry("gtceu:element", event => {
 
+    // Primal Mana
+
+    event.create("mana")
+        .symbol("ᛗ")
+
     // Sculk
 
     event.create("cryolobus")
@@ -18,11 +23,7 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(-1)
         .neutrons(441)
         .symbol("ᛋ*")
-    event.create("bioalloy")
-        .protons(-1)
-        .neutrons(481)
-        .symbol("ᛋ**")
-    event.create("sculk_supercondutcor")
+    event.create("sculk_superconductor")
         .protons(-2)
         .neutrons(442)
         .symbol("ᛊ")
@@ -37,8 +38,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(168)
         .neutrons(316)
         .symbol("∞")
-    event.create("mana")
-        .symbol("ᛗ")
     event.create("meta_null")
         .protons(0)
         .neutrons(0)
@@ -47,20 +46,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(169)
         .neutrons(317)
         .symbol("Mu")
-
-    // Netherite & Co. (Literally just Crystal Matrix since none of the others have elements)
-
-    event.create("crystal_matrix")
-        .protons(6)
-        .neutrons(6)
-        .symbol("C🞱")
-
-    // Eltz
-
-    event.create("eltz")
-        .protons(15)
-        .neutrons(15)
-        .symbol("Ez")
 
     // Necrosiderite
 
@@ -112,20 +97,13 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
 GTCEuStartupEvents.registry("gtceu:material_icon_set", event => {
 
     // Generic
-    event.create("crystal").parent(GTMaterialIconSet.SHINY)
     event.create("magic").parent(GTMaterialIconSet.METALLIC)
     event.create("dilithium").parent(GTMaterialIconSet.DULL)
-
-    // Sculk
-    event.create("sculk_alloy").parent(GTMaterialIconSet.DULL)
 
     // Prismatic Crucible
     event.create("infinity").parent(GTMaterialIconSet.SHINY)
     event.create("meta_null").parent(GTMaterialIconSet.SHINY)
     event.create("monium").parent(GTMaterialIconSet.SHINY)
-
-    // Eltz
-    event.create("eltz").parent(GTMaterialIconSet.SHINY)
 
     // Miscellaneous
     event.create("mana").parent(GTMaterialIconSet.SHINY)

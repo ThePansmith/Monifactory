@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.centrifuge("shiny_powder_mixture_centrifuging")
         .itemInputs("4x kubejs:shiny_powder_mixture")
-        .itemOutputs("kubejs:shiny_metal_powder", "gtceu:crystal_matrix_dust")
+        .itemOutputs("kubejs:shiny_metal_powder", "monilabs:crystal_matrix_dust")
         .chancedOutput("kubejs:aerotheum_dust", 6000, 0)
         .chancedOutput("kubejs:petrotheum_dust", 6000, 0)
         .chancedOutput("kubejs:inert_dust_mixture", 100, 0)
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.electric_blast_furnace("eltz_ingot_blasting")
         .itemInputs("gtceu:flawless_eltic_actinate_gem", "#forge:dusts/pulsating_alloy")
-        .itemOutputs("1x gtceu:eltz_ingot", "2x gtceu:actinium_iron_oxide_dust")
+        .itemOutputs("1x monilabs:eltz_ingot", "2x gtceu:actinium_iron_oxide_dust")
         .duration(1540)
         .blastFurnaceTemp(11600)
         .EUt(GTValues.VA[GTValues.UEV])
