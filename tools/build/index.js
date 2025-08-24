@@ -82,9 +82,7 @@ async function packMod(group) {
     fs.copyFileSync("manifest.json", `dist/.tmp/${group}/manifest.json`)
     fs.copyFileSync("dist/modlist.html", `dist/.tmp/${group}/modlist.html`)
     fs.copyFileSync("LICENSE.md", `dist/.tmp/${group}/LICENSE.md`)
-    // Turns out you cant package bat files in CF releases anymore.
-    // fs.copyFileSync('pack-mode-switcher.bat', `dist/.tmp/${group}/overrides/pack-mode-switcher.bat`)
-    // fs.copyFileSync('pack-mode-switcher.sh', `dist/.tmp/${group}/overrides/pack-mode-switcher.sh`)
+    fs.copyFileSync("pack-mode-switcher.py", `dist/.tmp/${group}/overrides/pack-mode-switcher.py`)
 
     try {
         if (process.platform === "win32") {
@@ -110,8 +108,7 @@ async function packMod(group) {
                 "manifest.json",
                 "modlist.html",
                 "LICENSE.md",
-                "pack-mode-switcher.bat",
-                "pack-mode-switcher.sh"
+                "pack-mode-switcher.py"
             ])
             return;
         }

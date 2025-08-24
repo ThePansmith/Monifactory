@@ -65,7 +65,7 @@ jobs:
         shell: bash
       - name: Pack Modpack
         run: |
-          ./pack-mode-switcher.sh n
+          python pack-mode-switcher.py n
           cd tools/build
           npm install
           node . ${{ inputs.target }}
