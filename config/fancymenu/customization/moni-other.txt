@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_link_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1736924533526
+  last_edited_time = 1756058391475
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:0bf03a67-2a33-4074-81fa-871c1ba0f8c5-1736924482724] = [groups:][instances:]
+  [loading_requirement_container_meta:8d51417f-8fd3-4008-ac9b-3ecc8b191fb6-1756058374459] = [groups:][instances:]
 }
 
 customization {
@@ -27,6 +27,10 @@ menu_background {
   image_path = [source:local]/config/fancymenu/assets/monibg.png
   slide = false
   repeat_texture = false
+  parallax = false
+  parallax_intensity = 0.02
+  invert_parallax = false
+  instance_identifier = f7209a54-b15d-4b0f-b2b8-65c2f797c8b7-1756057867197
   background_type = image
 }
 
@@ -42,6 +46,11 @@ scroll_list_customization {
   show_scroll_list_header_footer_preview_in_editor = false
   repeat_scroll_list_header_texture = false
   repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
 }
 
 element {
@@ -66,13 +75,21 @@ element {
   advanced_height = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"}*0.33","decimal":"false"}}
   x = 32
   y = -58
-  width = 145
+  width = 143
   height = 50
   stretch_x = false
   stretch_y = false
   stay_on_screen = false
   element_loading_requirement_container_identifier = cb2b328c-c3cd-4fca-bacd-df8502a61600-1726870668440
   [loading_requirement_container_meta:cb2b328c-c3cd-4fca-bacd-df8502a61600-1726870668440] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -82,7 +99,6 @@ element {
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
-  loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
@@ -91,6 +107,18 @@ element {
   navigatable = false
   widget_active_state_requirement_container_identifier = d05d4dde-2544-44a4-9fda-04a2e3094fae-1736463655841
   [loading_requirement_container_meta:d05d4dde-2544-44a4-9fda-04a2e3094fae-1736463655841] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
   element_type = custom_button
   instance_identifier = 54799c9d-785f-4463-9d6e-ea4f5b457250-1736535806373
   appearance_delay = no_delay
@@ -118,6 +146,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 7638707c-5d28-4bd9-8ece-bee3ac414278-1731716577421
   [loading_requirement_container_meta:7638707c-5d28-4bd9-8ece-bee3ac414278-1731716577421] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -145,6 +181,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = 13ea394d-bb4f-42f2-98b8-be77816e8d1d-1736535806372
   custom_element_layer_name = Changelog
@@ -174,6 +219,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 0a37cdde-b073-457f-8679-254778fc9902-1717255141153
   [loading_requirement_container_meta:0a37cdde-b073-457f-8679-254778fc9902-1717255141153] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -182,6 +235,7 @@ element {
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
   element_type = image
   instance_identifier = c8f4ae94-7f08-4871-b5c4-bade7fe7e2e0-1736535821454
   custom_element_layer_name = BG Fallback
@@ -206,6 +260,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 488a804b-f9d3-408e-9407-371437599a83-1736535821454
   [loading_requirement_container_meta:488a804b-f9d3-408e-9407-371437599a83-1736535821454] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -214,6 +276,7 @@ element {
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
   element_type = image
   instance_identifier = 0486b591-88cd-442f-95ac-70a386981b77-1736627922816
   custom_element_layer_name = BG
@@ -238,6 +301,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 4b1c2854-64c9-43fb-b3f4-0be603d76ced-1736531604045
   [loading_requirement_container_meta:4b1c2854-64c9-43fb-b3f4-0be603d76ced-1736531604045] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -246,6 +317,7 @@ element {
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
   nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
   element_type = image
   instance_identifier = b9e582e8-5211-488e-b547-90280fd04c8d-1726866126353
   custom_element_layer_name = Logo
@@ -270,6 +342,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 136378a9-4717-4e6c-a81c-a404e1b73e01-1726866126353
   [loading_requirement_container_meta:136378a9-4717-4e6c-a81c-a404e1b73e01-1726866126353] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -296,6 +376,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_faq_text
   custom_element_layer_name = FAQ Text
@@ -322,6 +411,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:44acf10b-77ac-4da6-be59-c26e38dec63a-1736924412666;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if_not][req_id:44acf10b-77ac-4da6-be59-c26e38dec63a-1736924412666] = moni_titlescreen_faq_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -348,6 +445,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_github_text
   custom_element_layer_name = GitHub Text
@@ -374,6 +480,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:ed5a4e73-1da7-4c47-85b0-2c240135b511-1736924490028;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if_not][req_id:ed5a4e73-1da7-4c47-85b0-2c240135b511-1736924490028] = moni_titlescreen_github_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -400,6 +514,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_change_mode_text
   custom_element_layer_name = Change Mode Text
@@ -426,6 +549,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:d4e4b310-efeb-4099-ac68-e30392b9c022-1736924499865;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if_not][req_id:d4e4b310-efeb-4099-ac68-e30392b9c022-1736924499865] = moni_titlescreen_change_mode_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -452,6 +583,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_credits_text
   custom_element_layer_name = Credits Text
@@ -478,6 +618,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:d9dd5d06-20aa-426c-97a2-628110093046-1736924429421;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if_not][req_id:d9dd5d06-20aa-426c-97a2-628110093046-1736924429421] = moni_titlescreen_credits_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -504,6 +652,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_patreon_text
   custom_element_layer_name = Patreon Text
@@ -530,6 +687,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:b803058b-89bc-4bdc-96a5-5396a6687a47-1736924515476;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if_not][req_id:b803058b-89bc-4bdc-96a5-5396a6687a47-1736924515476] = moni_titlescreen_patreon_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -556,6 +721,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_back_to_menu_text
   custom_element_layer_name = Back to Menu Text
@@ -582,6 +756,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:73be5a03-da34-49e3-bb2d-746d0d13a870-1736924527641;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if_not][req_id:73be5a03-da34-49e3-bb2d-746d0d13a870-1736924527641] = moni_titlescreen_back_to_menu_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -608,6 +790,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_faq_text_hover
   custom_element_layer_name = FAQ Hover Text
@@ -634,6 +825,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if][req_id:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578] = moni_titlescreen_faq_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -660,6 +859,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_github_text_hover
   custom_element_layer_name = GitHub Hover Text
@@ -686,6 +894,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if][req_id:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578] = moni_titlescreen_github_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -712,6 +928,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_change_mode_text_hover
   custom_element_layer_name = Change Mode Hover Text
@@ -738,6 +963,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if][req_id:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578] = moni_titlescreen_change_mode_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -764,6 +997,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_credits_text_hover
   custom_element_layer_name = Credits Hover Text
@@ -790,6 +1032,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if][req_id:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578] = moni_titlescreen_credits_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -816,6 +1066,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_patreon_text_hover
   custom_element_layer_name = Patreon Hover Text
@@ -842,6 +1101,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if][req_id:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578] = moni_titlescreen_patreon_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -868,6 +1135,15 @@ element {
   bullet_list_indent = 8.0
   bullet_list_spacing = 3.0
   parse_markdown = true
+  table_show_header = true
+  table_alternate_row_colors = true
+  table_line_color = #787878FF
+  table_header_background_color = #323232FF
+  table_row_background_color = #282828FF
+  table_alternate_row_color = #3C3C3CFF
+  table_line_thickness = 1.0
+  table_cell_padding = 8.0
+  table_margin = 4.0
   element_type = text_v2
   instance_identifier = moni_titlescreen_back_to_menu_text_hover
   custom_element_layer_name = Back to Menu Hover Text
@@ -894,6 +1170,14 @@ element {
   element_loading_requirement_container_identifier = f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303
   [loading_requirement_container_meta:f946bf08-4633-46aa-b4de-efbf0389ce48-1736913129303] = [groups:][instances:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578;]
   [loading_requirement:fancymenu_visibility_requirement_is_element_hovered][requirement_mode:if][req_id:d5ae4d1f-a9b6-44ab-bfc0-9dec2fb703b8-1736913413578] = moni_titlescreen_back_to_menu_button
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -903,13 +1187,24 @@ element {
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
-  loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   navigatable = true
   widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
   element_type = custom_button
   instance_identifier = moni_titlescreen_faq_button
   custom_element_layer_name = FAQ Button
@@ -935,6 +1230,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
   [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -944,13 +1247,24 @@ element {
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
-  loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   navigatable = true
   widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
   element_type = custom_button
   instance_identifier = moni_titlescreen_github_button
   custom_element_layer_name = Github Button
@@ -976,22 +1290,41 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
   [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:1407d125-f552-4801-83d2-c1c8d9503998-1736470220017][action_type:openlink] = https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#installation
-  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:1407d125-f552-4801-83d2-c1c8d9503998-1736470220017;]
+  [executable_action_instance:c1ff06b9-17be-4a69-950a-3c6647834658-1756058324244][action_type:opengui] = pack_mode_switcher
+  [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:c1ff06b9-17be-4a69-950a-3c6647834658-1756058324244;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
-  loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   navigatable = true
   widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
   element_type = custom_button
   instance_identifier = moni_titlescreen_change_mode_button
   custom_element_layer_name = Change Mode Button (Moni readme)
@@ -1003,8 +1336,8 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 2560
-  auto_sizing_base_screen_height = 1444
+  auto_sizing_base_screen_width = 1923
+  auto_sizing_base_screen_height = 1009
   sticky_anchor = false
   anchor_point = element
   anchor_point_element = moni_titlescreen_github_button
@@ -1017,6 +1350,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
   [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -1026,13 +1367,24 @@ element {
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
-  loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   navigatable = true
   widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
   element_type = custom_button
   instance_identifier = moni_titlescreen_credits_button
   custom_element_layer_name = Credits Button
@@ -1058,6 +1410,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
   [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -1067,13 +1427,24 @@ element {
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
-  loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   navigatable = true
   widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
   element_type = custom_button
   instance_identifier = moni_titlescreen_patreon_button
   custom_element_layer_name = Patreon Button
@@ -1099,6 +1470,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
   [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -1108,13 +1487,24 @@ element {
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
   restartbackgroundanimations = true
-  loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   navigatable = true
   widget_active_state_requirement_container_identifier = d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841
   [loading_requirement_container_meta:d55e6e8c-2ebe-4d27-8fee-b9b3797c0d6f-1736463655841] = [groups:][instances:]
+  is_template = false
+  template_apply_width = false
+  template_apply_height = false
+  template_apply_posx = false
+  template_apply_posy = false
+  template_apply_opacity = false
+  template_apply_visibility = false
+  template_apply_label = false
+  template_share_with = buttons
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
   element_type = custom_button
   instance_identifier = moni_titlescreen_back_to_menu_button
   custom_element_layer_name = Back to Menu Button
@@ -1140,6 +1530,14 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e250f6d1-9c69-431c-8808-e388011b074e-1717199065328
   [loading_requirement_container_meta:e250f6d1-9c69-431c-8808-e388011b074e-1717199065328] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
 element {
@@ -1175,5 +1573,13 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = fb307de4-595f-4026-bcd0-2398ef1555ad-1717254115440
   [loading_requirement_container_meta:fb307de4-595f-4026-bcd0-2398ef1555ad-1717254115440] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
 }
 
