@@ -14,8 +14,6 @@ log("Monifactory Pack Mode Switcher\nDetails on each mode can be found on the cu
 user_input = None
 current_directory = sys.path[0]
 
-
-
 def copyFiles(source_directory: str, target_directory: str):
     #Gets list of files
     files = os.listdir(source_directory)
@@ -71,10 +69,3 @@ try:
         askForMode()
 except:
     askForMode()
-
-
-
-
-
-
-        
