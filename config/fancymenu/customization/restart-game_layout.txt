@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = restart_game
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1756070384316
+  last_edited_time = 1756057948861
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:686da852-b26b-4815-bfea-6bd9b86c3d6d-1756070285915] = [groups:][instances:]
+  [loading_requirement_container_meta:51dd7a84-83ac-43ac-8169-4d3b9ea95db1-1756057931161] = [groups:][instances:]
 }
 
 customization {
@@ -33,7 +33,7 @@ layout_action_executable_blocks {
 
 element {
   interactable = true
-  source = %n%^^^%n%In order for the pack mode switch to complete, you need to restart your game, Clicking "Yes" will change your pack mode and close Monifactory.%n%This allows you to relaunch the game from your launcher, Clicking "No" will send you back to the Main Menu without changing your pack mode.%n%^^^
+  source = %n%^^^%n%In order for the pack mode switch to complete, you need to restart your game, Clicking "Yes" will close Monifactory,%n%allowing you to relaunch the game from your launcher, Clicking "No" will send you back to the Main Menu, Your pack mode%n%WILL NOT CHANGE until you restart your game!%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -75,13 +75,13 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -378
+  x = -332
   y = -124
-  width = 752
-  height = 60
+  width = 671
+  height = 47
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -99,9 +99,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 5260565a-8d5b-4731-b7f3-a65c6815b0e1-1756057094736
-  [executable_action_instance:b1160f76-88e3-47e3-a5be-cba7d4a6a294-1756070338133][action_type:packModeSwitcherAction] = 
   [executable_action_instance:6a760621-cb0a-4846-9c25-7c733a04043e-1756057115305][action_type:quitgame] = 
-  [executable_block:5260565a-8d5b-4731-b7f3-a65c6815b0e1-1756057094736][type:generic] = [executables:b1160f76-88e3-47e3-a5be-cba7d4a6a294-1756070338133;6a760621-cb0a-4846-9c25-7c733a04043e-1756057115305;]
+  [executable_block:5260565a-8d5b-4731-b7f3-a65c6815b0e1-1756057094736][type:generic] = [executables:6a760621-cb0a-4846-9c25-7c733a04043e-1756057115305;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
