@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "mid_game"
 	group: "18F0ED1F9A002C08"
-	icon: "nuclearcraft:plutonium_rtg"
+	icon: "gtceu:tungsten_steel_ingot"
 	id: "7D825FFA33DC85A7"
 	order_index: 4
 	quest_links: [
@@ -112,14 +112,6 @@
 			shape: "hexagon"
 			x: 21.5d
 			y: 2.75d
-		}
-		{
-			id: "4BE6E906DD901A7F"
-			linked_quest: "044553423097C3C7"
-			shape: "hexagon"
-			size: 1.5d
-			x: 39.0d
-			y: 6.5d
 		}
 	]
 	quests: [
@@ -2185,7 +2177,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.51A463024F35DC2E.title}"
-			x: 33.75d
+			x: 34.0d
 			y: 10.5d
 		}
 		{
@@ -2298,8 +2290,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5732018AA35D69B6.title}"
-			x: 33.75d
-			y: 12.0d
+			x: 33.0d
+			y: 11.75d
 		}
 		{
 			dependencies: ["634E056463ED1532"]
@@ -2411,25 +2403,6 @@
 		}
 		{
 			dependencies: ["53EC3831D66769CA"]
-			description: ["{moni.quest.0B9D5F865C3F8B31.description1}"]
-			id: "0B9D5F865C3F8B31"
-			rewards: [{
-				id: "4C8CAEEEAB645B5E"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "0BAD9D80B9357E77"
-				item: "gtceu:hsss_ingot"
-				type: "item"
-			}]
-			title: "{moni.quest.0B9D5F865C3F8B31.title}"
-			x: 35.5d
-			y: 12.0d
-		}
-		{
-			dependencies: ["53EC3831D66769CA"]
 			description: ["{moni.quest.798889BE3819EB4D.description1}"]
 			id: "798889BE3819EB4D"
 			rewards: [{
@@ -2445,7 +2418,7 @@
 			}]
 			title: "{moni.quest.798889BE3819EB4D.title}"
 			x: 35.5d
-			y: 13.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -2458,16 +2431,6 @@
 				"{moni.quest.38791476E970C57D.description1}"
 				""
 				"{moni.quest.38791476E970C57D.description2}"
-				""
-				"{moni.quest.38791476E970C57D.description3}"
-				""
-				"{moni.quest.38791476E970C57D.description4}"
-				""
-				"{moni.quest.38791476E970C57D.description5}"
-				""
-				"{moni.quest.38791476E970C57D.description6}"
-				""
-				"{moni.quest.38791476E970C57D.description7}"
 				""
 				"{moni.quest.38791476E970C57D.description8}"
 			]
@@ -2507,8 +2470,8 @@
 				}
 			]
 			title: "{moni.quest.38791476E970C57D.title}"
-			x: 33.75d
-			y: 13.5d
+			x: 34.0d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -3087,29 +3050,6 @@
 		}
 		{
 			dependencies: [
-				"46A56A5E3CC2403F"
-				"634E056463ED1532"
-			]
-			description: [
-				"{moni.quest.6B80737C5E1359F7.description1}"
-				""
-				"{moni.quest.6B80737C5E1359F7.description2}"
-				""
-				"{moni.quest.6B80737C5E1359F7.description3}"
-			]
-			id: "6B80737C5E1359F7"
-			subtitle: "{moni.quest.6B80737C5E1359F7.subtitle}"
-			tasks: [{
-				id: "725DD71DFCCADBE8"
-				item: "gtmutils:omnibreaker"
-				type: "item"
-			}]
-			title: "{moni.quest.6B80737C5E1359F7.title}"
-			x: 30.5d
-			y: 8.5d
-		}
-		{
-			dependencies: [
 				"0874A0191325CFDB"
 				"5BE3E37772FAF6CB"
 			]
@@ -3299,6 +3239,45 @@
 			title: "{moni.quest.044EBE36128FBB01.title}"
 			x: 32.0d
 			y: 7.25d
+		}
+		{
+			dependencies: ["595F205B551A53C9"]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.044553423097C3C7.description1}"
+				""
+				"{moni.quest.044553423097C3C7.description2}"
+				""
+				"{moni.quest.044553423097C3C7.description3}"
+				""
+				"{moni.quest.044553423097C3C7.description4}"
+			]
+			icon: "gtceu:platinum_dust"
+			id: "044553423097C3C7"
+			rewards: [{
+				count: 2
+				id: "400B871C9C2B5830"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "{moni.quest.044553423097C3C7.subtitle}"
+			tasks: [
+				{
+					id: "1CA9B9FE385B774C"
+					item: "gtceu:ruthenium_dust"
+					type: "item"
+				}
+				{
+					id: "18237021D2F3D527"
+					item: "gtceu:rhodium_dust"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.044553423097C3C7.title}"
+			x: 39.0d
+			y: 6.5d
 		}
 	]
 	title: "{moni.chapter.7D825FFA33DC85A7.title}"

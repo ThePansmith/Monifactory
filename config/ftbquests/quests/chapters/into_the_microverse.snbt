@@ -904,11 +904,6 @@
 					type: "item"
 				}
 				{
-					id: "5918271A68390A58"
-					item: "kubejs:starry_diamond_block"
-					type: "item"
-				}
-				{
 					id: "041C237B750DD674"
 					item: "gtceu:lv_input_bus"
 					type: "item"

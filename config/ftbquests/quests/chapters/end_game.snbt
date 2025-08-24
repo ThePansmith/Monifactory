@@ -6,7 +6,7 @@
 	group: "18F0ED1F9A002C08"
 	icon: "kubejs:monic_processor_mainframe"
 	id: "2BEB72BC6C6FB4E9"
-	order_index: 6
+	order_index: 7
 	quest_links: [
 		{
 			id: "54018A95BECC356C"
