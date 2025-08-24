@@ -64,9 +64,9 @@ def askForMode():
     log("N: Normal    (The Default mode)")
     log("H: Hardmode  (Adds more lines and progression, removes HNN and Monicoin spending)")
     log("E: Expert    (A modifier for Hardmode, enables some of the more extreme GTm settings among other things)")
-    userInput = input("Selection: ").lower
+    userInput = input("Selection: ")
 
-    if(switchMode(userInput) == False):
+    if(switchMode(userInput.lower()) == False):
         askForMode()
 
 try:
