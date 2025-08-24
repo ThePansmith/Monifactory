@@ -115,11 +115,13 @@ async function packMod(group) {
         } catch { /* noop */ }
 
         if (hasZipCmd) {
-            await Juke.exec("tools/zip-stuff", [
-                `dist/${group}`, // curr working dir
-                `dist/${group}.zip`,  // file out
+            await Juke.exec("zip", [
+                "-qyr",
+                `../${group}.zip`,  // file out
                 ".", // include everything
-            ])
+            ], {
+                cwd: `dist/${group}`,
+            })
             return;
         }
     } catch (error) {
