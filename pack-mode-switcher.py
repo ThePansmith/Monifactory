@@ -12,7 +12,7 @@ def log(text: str):
 log("Monifactory Pack Mode Switcher\nDetails on each mode can be found on the curseforge page")
 
 userInput = None
-currentDirectory = os.getcwd()
+currentDirectory = sys.path[0]
 
 
 
@@ -31,7 +31,7 @@ def switchMode(mode: str):
     if mode == "n":
         copyFiles(os.path.join(currentDirectory, "config-overrides", "normal"), currentDirectory + "/config")
 
-        with open(".mode", "w") as f:
+        with open(os.path.join(currentDirectory, ".mode"), "w") as f:
             f.write("normal")
         log("Switch to Normal Mode complete")
         return True
@@ -40,7 +40,7 @@ def switchMode(mode: str):
 
         copyFiles(os.path.join(currentDirectory, "config-overrides", "hardmode"), currentDirectory + "/config")
         
-        with open(".mode", "w") as f:
+        with open(os.path.join(currentDirectory, ".mode"), "w") as f:
             f.write("hard")
         log("Switch to Hard Mode complete")
         return True
@@ -48,7 +48,7 @@ def switchMode(mode: str):
         copyFiles(os.path.join(currentDirectory, "config-overrides", "hardmode"), currentDirectory + "/config")
         copyFiles(os.path.join(currentDirectory, "config-overrides", "expert"), currentDirectory + "/config")
         
-        with open(".mode", "w") as f:
+        with open(os.path.join(currentDirectory, ".mode"), "w") as f:
             f.write("expert")
         log("Switch to Expert Mode complete")
         return True
