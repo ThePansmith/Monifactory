@@ -77,22 +77,24 @@ if [ -z "$MODE" ]; then
 
   printf "${POWDER_BLUE}Monifactory | Pack Mode Switcher${NORMAL}"
   printf "\n${YELLOW}Current Mode: ${CURRENT_MODE}${NORMAL}\n\n"
-  printf "${POWDER_BLUE}Set Pack Mode:\nN: Normal    (The Default mode) \nH: Hard      (Adds more lines and progression, removes HNN and Monicoin spending) \nE: Expert    (A modifier for Hardmode, enables some of the more extreme GTm settings among other things) \nSelection: [Normal / Hard / Expert]: "
+  printf "${POWDER_BLUE}Set Pack Mode:\nN: Normal    (The Default mode) \nH: Hard      (Adds more lines and progression, removes HNN and Monicoin spending) \nE: Expert    (A modifier for hard, enables some of the more extreme GTm settings among other things) \nSelection: [Normal / Hard / Expert]: "
   read MODE
 fi
 
+# convert to lowercase
+MODE=$(echo "$MODE" | tr '[:upper:]' '[:lower:]')
 case $MODE in
-    N|n|normal|Normal)
+  n|normal)
     cp -rf "$NORMAL_CFG/." ${TARGET}
     echo normal > .mode
   ;;
 
-  H|h|hard|Hard)
+  h|hard)
     cp -rf "$HARDMODE_CFG/." ${TARGET}
     echo hard > .mode
   ;;
 
-  E|e|expert|Expert)
+  e|expert)
     cp -rf "$HARDMODE_CFG/." ${TARGET}
     cp -rf "$EXPERT_CFG/." ${TARGET}
     echo expert > .mode
