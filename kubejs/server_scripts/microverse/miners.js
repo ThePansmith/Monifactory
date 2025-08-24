@@ -246,7 +246,7 @@ ServerEvents.recipes(event => {
         "   IISII   ",
         "  PISQSIP  ",
         "  IIJSJII  ",
-        " IIIJCJIII ",
+        " IIOJCJOII ",
         "PIIDJJJDIIP",
         "IIIJJ JJIII",
         "IIWW   WWII",
@@ -258,7 +258,8 @@ ServerEvents.recipes(event => {
         P: "solarflux:sp_custom_infinity",
         C: "gtceu:uhv_quantum_chest",
         W: "kubejs:hadal_warp_engine",
-        D: "gtceu:max_battery",
+        O: "kubejs:omnic_matrix_coil_block",
+        D: "gtceu:large_naquadah_reactor",
         S: "monilabs:dimensional_stabilization_netherite_casing",
         Q: "kubejs:field_stabilised_omnic_pulsar_compound"
     })
