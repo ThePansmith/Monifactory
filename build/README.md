@@ -25,5 +25,5 @@ The script will skip build steps whose inputs have not changed since the last ru
 You can get a list of all targets that you can build by running the following command:
 
 ```sh
-node tools/build --help
+node build --help
 ```

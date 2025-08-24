@@ -14,7 +14,7 @@ import { CodegenAllTarget } from "./codegen/target-all.js";
 import { z } from "zod";
 import { progressNumber } from "./lib/log.js"
 
-Juke.chdir("../..", import.meta.url);
+Juke.chdir("..", import.meta.url);
 Juke.setup({ file: import.meta.url }).then((code) => {
     // We're using the currently available quirk in Juke Build, which
     // prevents it from exiting on Windows, to wait on errors.
