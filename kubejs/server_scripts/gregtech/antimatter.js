@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
 
     // Controller Recipes
     event.recipes.gtceu.assembly_line("antimatter_manipulator")
-        .itemInputs("monilabs:bioalloy_fusion_casing", "#gtceu:circuits/uhv", "2x gtceu:uhv_field_generator", "2x gtceu:double_sculk_bioalloy_plate", "2x gtceu:uhv_emitter", "2x gtceu:uhv_electric_pump", "6x gtceu:neutronium_large_fluid_pipe", "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire")
+        .itemInputs("monilabs:bioalloy_fusion_casing", "#gtceu:circuits/uhv", "2x gtceu:uhv_field_generator", "2x monilabs:double_sculk_bioalloy_plate", "2x gtceu:uhv_emitter", "2x gtceu:uhv_electric_pump", "6x gtceu:neutronium_large_fluid_pipe", "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire")
         .inputFluids("gtceu:advanced_soldering_alloy 2304", "gtceu:omnium 576", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("gtceu:antimatter_manipulator")
         .duration(200)
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("antimatter_collider")
-        .itemInputs("6x monilabs:bioalloy_fusion_casing", "8x #gtceu:circuits/uhv", "16x gtceu:double_sculk_bioalloy_plate", "24x gtceu:hsse_frame", "12x solarflux:sp_custom_hadal", "4x gtceu:uhv_field_generator", "6x gtceu:uhv_emitter", "10x gtceu:uhv_electric_pump", "10x gtceu:superconducting_coil", "10x gtceu:neutronium_huge_fluid_pipe", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire")
+        .itemInputs("6x monilabs:bioalloy_fusion_casing", "8x #gtceu:circuits/uhv", "16x monilabs:double_sculk_bioalloy_plate", "24x gtceu:hsse_frame", "12x solarflux:sp_custom_hadal", "4x gtceu:uhv_field_generator", "6x gtceu:uhv_emitter", "10x gtceu:uhv_electric_pump", "10x gtceu:superconducting_coil", "10x gtceu:neutronium_huge_fluid_pipe", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire", "64x gtceu:fine_ruthenium_trinium_americium_neutronate_wire")
         .inputFluids("gtceu:advanced_soldering_alloy 4608", "gtceu:omnium 1152", "gtceu:polyethyl_cyanoacrylate 2304")
         .itemOutputs("gtceu:antimatter_collider")
         .duration(600)

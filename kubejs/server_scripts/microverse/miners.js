@@ -155,8 +155,8 @@ ServerEvents.recipes(event => {
         " E     E "
     ], {
         G: "kubejs:advanced_micro_miner_guidance_system",
-        C: "gtceu:double_crystal_matrix_plate",
-        W: "gtceu:double_rhodium_plated_palladium_plate",
+        C: "monilabs:double_crystal_matrix_plate",
+        W: "monilabs:double_rhodium_plated_palladium_plate",
         L: "kubejs:supercharged_laser_array",
         I: "gtceu:double_duranium_plate",
         A: "gtceu:hv_super_chest",
@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
         " W       W "
     ], {
         O: "kubejs:elementally_infused_omnic_matrix_heavy_plating",
-        M: "gtceu:double_crystal_matrix_plate",
+        M: "monilabs:double_crystal_matrix_plate",
         P: "solarflux:sp_custom_neutronium",
         W: "kubejs:hadal_warp_engine",
         A: "gtceu:uhv_robot_arm",
