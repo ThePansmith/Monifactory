@@ -22,39 +22,35 @@ def copyFiles(sourceDirectory: str, targetDirectory: str):
     for i in range(len(files)):
         
         if not os.path.isdir(os.path.join(sourceDirectory, files[i])):
-
-            log("Copying over " + files[i])
             shutil.copyfile(os.path.join(sourceDirectory, files[i]), os.path.join(targetDirectory, files[i]))
         else:
-
-            log("Entering directory " + files[i])
             copyFiles(os.path.join(sourceDirectory, files[i]), os.path.join(targetDirectory, files[i]))
         
 
 def switchMode(mode: str):
     if mode == "n":
-        log("Normal Mode Selected")
-
         copyFiles(os.path.join(currentDirectory, "config-overrides", "normal"), currentDirectory + "/config")
 
         with open(".mode", "w") as f:
             f.write("normal")
+        log("Switch to Normal Mode complete")
         return True
     elif mode == "h":
-        log("Hard Mode Selected")
+        
 
         copyFiles(os.path.join(currentDirectory, "config-overrides", "hardmode"), currentDirectory + "/config")
         
         with open(".mode", "w") as f:
             f.write("hard")
+        log("Switch to Hard Mode complete")
         return True
     elif mode == "e":
-        log("Expert Mode selected")
         copyFiles(os.path.join(currentDirectory, "config-overrides", "hardmode"), currentDirectory + "/config")
         copyFiles(os.path.join(currentDirectory, "config-overrides", "expert"), currentDirectory + "/config")
         
         with open(".mode", "w") as f:
             f.write("expert")
+        log("Switch to Expert Mode complete")
         return True
     else:
         return False
