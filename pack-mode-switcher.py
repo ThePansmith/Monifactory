@@ -64,8 +64,8 @@ def askForMode():
         askForMode()
 
 try:
-    # Runs function if a user passes in a letter, if letter doesn't repersent a pack mode just defaults to asking for a mode
-    if switchMode(sys.argv[1]) == False:
+    # if invalid letter is passed as an argument script just runs like it was ran by double clicking
+    if switchMode(sys.argv[1].lower()) == False:
         askForMode()
 except:
     askForMode()
