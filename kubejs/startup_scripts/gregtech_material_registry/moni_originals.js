@@ -5,6 +5,24 @@
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
+
+    // Primal Mana is shoved here at the start to make absolute sure nothing that uses it is declared before it
+
+    event.create("mana")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get("mana"))
+        .iconSet("mana")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+
+    // Hyperdegenerate Matter *should* be in the naqfuel file, but it's used in HDD
+
+    event.create("hyperdegenerate_matter")
+        .element(GTElements.get("hyperdegenerate_matter"))
+        .color(0xffffff).iconSet("hyperdegenerate_matter")
+        .liquid(new GTFluidBuilder().state(GTFluidState.PLASMA).customStill())
+
+
     // Sculk Materials
 
     event.create("cryolobus")
