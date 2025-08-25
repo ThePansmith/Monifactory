@@ -261,13 +261,6 @@ StartupEvents.registry("item", event => {
     }
 
 
-    // Dense Elemental Gasses (Solidification recipes are part of the Solidified Elements Section)
-    event.create("dense_hydrogen").rarity("Uncommon")
-    event.create("ultra_dense_hydrogen").rarity("Rare")
-
-    event.create("dense_helium").rarity("Uncommon")
-    event.create("ultra_dense_helium").rarity("Rare")
-
     // Stabilized Elements
     const stabilized_elements = [
         ["berkelium", "#a33f20"],
