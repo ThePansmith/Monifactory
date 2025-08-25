@@ -1,150 +1,148 @@
 {
-	autofocus_id: "281DE48E7260BC8E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "end_game"
+	filename: "home_stretch"
 	group: "18F0ED1F9A002C08"
-	icon: "kubejs:monic_processor_mainframe"
-	id: "2BEB72BC6C6FB4E9"
+	id: "457D17593A814D73"
 	order_index: 7
 	quest_links: [
 		{
 			id: "54018A95BECC356C"
 			linked_quest: "5A8D2BFAF02E6325"
 			shape: "hexagon"
-			x: 53.0d
-			y: -21.0d
+			x: 11.25d
+			y: -4.75d
 		}
 		{
 			id: "2A5A7CD2C9EDD767"
 			linked_quest: "7979D07FBDC6D170"
 			shape: "hexagon"
-			x: 51.75d
-			y: -22.0d
+			x: 10.0d
+			y: -5.75d
 		}
 		{
 			id: "6FD00239A5CD9D2F"
 			linked_quest: "3D7924B550A1BBA0"
 			shape: "hexagon"
-			x: 53.0d
-			y: -18.0d
+			x: 11.25d
+			y: -1.75d
 		}
 		{
 			id: "3F1F20A84F3FDE97"
 			linked_quest: "0C9A9F33EEA3AB5E"
 			shape: "hexagon"
-			x: 53.0d
-			y: -15.5d
+			x: 11.25d
+			y: 0.75d
 		}
 		{
 			id: "2C514C36E06DC5FA"
 			linked_quest: "5601A05D8361551D"
 			shape: "gear"
-			x: 53.0d
-			y: -13.5d
+			x: 11.25d
+			y: 2.75d
 		}
 		{
 			id: "2DE45181A83AEBEB"
 			linked_quest: "248ABB7F26EB72EE"
 			shape: "hexagon"
-			x: 42.0d
-			y: -9.75d
+			x: 0.25d
+			y: 6.5d
 		}
 		{
 			id: "64A590345841C96D"
 			linked_quest: "6F5BB99060FF03AC"
 			shape: "hexagon"
-			x: 44.0d
-			y: -9.75d
+			x: 2.25d
+			y: 6.5d
 		}
 		{
 			id: "7D48D4665ACE37FD"
 			linked_quest: "4EB9D1ADC4814330"
 			shape: "hexagon"
-			x: 46.0d
-			y: -9.75d
+			x: 4.25d
+			y: 6.5d
 		}
 		{
 			id: "253B127314F09EF5"
 			linked_quest: "0F56F4E642BC2B85"
 			shape: "hexagon"
-			x: 42.0d
-			y: -16.0d
+			x: 0.25d
+			y: 0.25d
 		}
 		{
 			id: "3B6669BBD0448982"
 			linked_quest: "07057CDE4E021BA7"
 			shape: "gear"
-			x: 48.0d
-			y: -9.75d
+			x: 6.25d
+			y: 6.5d
 		}
 		{
 			id: "20F44ACD2F91FD2A"
 			linked_quest: "4DF92773C82F4AAC"
 			shape: "hexagon"
-			x: 43.5d
-			y: -15.5d
+			x: 1.75d
+			y: 0.75d
 		}
 		{
 			id: "21C0AA3B9437C897"
 			linked_quest: "61301FBD825F8280"
 			shape: "hexagon"
 			size: 2.0d
-			x: 25.5d
-			y: -6.75d
+			x: -16.25d
+			y: 9.5d
 		}
 		{
 			id: "7E01EB0C0E6F427A"
 			linked_quest: "738A141D31AD7CE3"
-			x: 25.5d
-			y: -9.0d
+			x: -16.25d
+			y: 7.25d
 		}
 		{
 			id: "09227387EDA8221C"
 			linked_quest: "19084E91F357C8C2"
 			size: 2.0d
-			x: 47.5d
-			y: -25.5d
+			x: 5.75d
+			y: -9.25d
 		}
 		{
 			id: "1CA6CD149782D98B"
 			linked_quest: "22DC32C2B67EFD25"
 			shape: "hexagon"
-			x: 25.5d
-			y: -13.0d
+			x: -16.25d
+			y: 3.25d
 		}
 		{
 			id: "52051DFD357D8D29"
 			linked_quest: "3B57A9816A61C1DC"
 			shape: "hexagon"
 			size: 1.25d
-			x: 25.5d
-			y: -20.0d
+			x: -16.25d
+			y: -3.75d
 		}
 		{
 			id: "7CCC9B0F9E2E68D8"
 			linked_quest: "21E10888F52A3C73"
-			x: 36.0d
-			y: -8.25d
+			x: -5.75d
+			y: 8.0d
 		}
 		{
 			id: "36369823A2AB515D"
 			linked_quest: "6EA130B04FDE6868"
 			shape: "hexagon"
-			x: 37.5d
-			y: -6.75d
+			x: -4.25d
+			y: 9.5d
 		}
 		{
 			id: "5C4B27CCAEA87072"
 			linked_quest: "5EE2338113F22952"
-			x: 45.0d
-			y: -12.0d
+			x: 3.25d
+			y: 4.25d
 		}
 		{
 			id: "13FB3A110D28AE47"
 			linked_quest: "0B51A633811472A2"
-			x: 54.75d
-			y: -21.0d
+			x: 13.0d
+			y: -4.75d
 		}
 	]
 	quests: [
@@ -194,8 +192,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2D9A95AC50BCB988.title}"
-			x: 33.0d
-			y: -15.3d
+			x: -8.75d
+			y: 0.9499999999999993d
 		}
 		{
 			dependencies: [
@@ -217,8 +215,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4EA1E0D437528747.title}"
-			x: 34.25d
-			y: -20.0d
+			x: -7.5d
+			y: -3.75d
 		}
 		{
 			dependencies: ["27EBB5AAF8A40F3D"]
@@ -245,8 +243,8 @@
 				item: "kubejs:heart_of_a_universe"
 				type: "item"
 			}]
-			x: 35.0d
-			y: -13.0d
+			x: -6.75d
+			y: 3.25d
 		}
 		{
 			dependencies: ["22DC32C2B67EFD25"]
@@ -266,8 +264,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.27EBB5AAF8A40F3D.title}"
-			x: 27.1d
-			y: -13.0d
+			x: -14.649999999999999d
+			y: 3.25d
 		}
 		{
 			dependencies: ["5601A05D8361551D"]
@@ -300,8 +298,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2EBB9A154522348F.title}"
-			x: 57.5d
-			y: -13.5d
+			x: 15.75d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -360,8 +358,8 @@
 				}
 			]
 			title: "{moni.quest.5A70898C99B828E3.title}"
-			x: 35.0d
-			y: -15.2d
+			x: -6.75d
+			y: 1.0500000000000007d
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
@@ -380,8 +378,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1C861E0C62D5B97D.title}"
-			x: 49.25d
-			y: -19.0d
+			x: 7.5d
+			y: -2.75d
 		}
 		{
 			dependencies: ["5A70898C99B828E3"]
@@ -434,8 +432,8 @@
 				}
 			]
 			title: "{moni.quest.161F61C28DBC5941.title}"
-			x: 35.0d
-			y: -18.0d
+			x: -6.75d
+			y: -1.75d
 		}
 		{
 			dependencies: ["6EA130B04FDE6868"]
@@ -449,8 +447,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.113E9543ADB1666B.title}"
-			x: 37.5d
-			y: -15.9375d
+			x: -4.25d
+			y: 0.3125d
 		}
 		{
 			dependencies: ["49E9A178F6A52A62"]
@@ -469,8 +467,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4261BDA34D716EC8.title}"
-			x: 27.5d
-			y: -9.0d
+			x: -14.25d
+			y: 7.25d
 		}
 		{
 			dependencies: [
@@ -491,8 +489,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.63CC578C3558E0AF.title}"
-			x: 50.5d
-			y: -9.75d
+			x: 8.75d
+			y: 6.5d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
@@ -509,8 +507,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.73A44214C2B44D53.title}"
-			x: 34.30714285714286d
-			y: -25.067857142857136d
+			x: -7.442857142857143d
+			y: -8.817857142857136d
 		}
 		{
 			dependencies: [
@@ -529,8 +527,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.13578427FD9CC2CE.title}"
-			x: 45.75d
-			y: -23.5d
+			x: 4.0d
+			y: -7.25d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
@@ -545,8 +543,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.060A5766B021FC77.title}"
-			x: 50.0d
-			y: -23.5d
+			x: 8.25d
+			y: -7.25d
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
@@ -562,8 +560,8 @@
 				item: "kubejs:contained_singularity"
 				type: "item"
 			}]
-			x: 53.0d
-			y: -23.5d
+			x: 11.25d
+			y: -7.25d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
@@ -576,8 +574,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.7C9C91EC9F3930C2.title}"
-			x: 37.5d
-			y: -17.25d
+			x: -4.25d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -601,8 +599,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.33F610CF136278AE.title}"
-			x: 49.25d
-			y: -13.5d
+			x: 7.5d
+			y: 2.75d
 		}
 		{
 			dependencies: ["33F610CF136278AE"]
@@ -619,8 +617,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0FD9B533BB402B17.title}"
-			x: 49.25d
-			y: -14.75d
+			x: 7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -642,8 +640,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0DE1BF1648CAF6D6.title}"
-			x: 45.75d
-			y: -19.0d
+			x: 4.0d
+			y: -2.75d
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
@@ -678,8 +676,8 @@
 				}
 			]
 			title: "{moni.quest.1E36AFB19932C805.title}"
-			x: 45.75d
-			y: -21.0d
+			x: 4.0d
+			y: -4.75d
 		}
 		{
 			dependencies: ["6DF2C1E88BE7CE5F"]
@@ -692,8 +690,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5A07988F5AD20A06.title}"
-			x: 42.0d
-			y: -17.0d
+			x: 0.25d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -713,8 +711,8 @@
 				item: "kubejs:multidimensional_cpu_chip"
 				type: "item"
 			}]
-			x: 39.0d
-			y: -9.75d
+			x: -2.75d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -731,8 +729,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.39A09DA3903C5564.title}"
-			x: 40.5d
-			y: -6.75d
+			x: -1.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["060A5766B021FC77"]
@@ -744,8 +742,8 @@
 				item: "kubejs:monic_circuit_board"
 				type: "item"
 			}]
-			x: 50.0d
-			y: -22.0d
+			x: 8.25d
+			y: -5.75d
 		}
 		{
 			dependencies: ["6BF4A76C5B84EEE9"]
@@ -758,8 +756,8 @@
 				item: "kubejs:quasi_stable_neutron_star"
 				type: "item"
 			}]
-			x: 39.0d
-			y: -11.75d
+			x: -2.75d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1E36AFB19932C805"]
@@ -777,8 +775,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.040B3FCD82533BD9.title}"
-			x: 45.75d
-			y: -22.25d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["39A09DA3903C5564"]
@@ -790,8 +788,8 @@
 				item: "kubejs:hyperdynamic_ram_chip"
 				type: "item"
 			}]
-			x: 40.5d
-			y: -18.0d
+			x: -1.25d
+			y: -1.75d
 		}
 		{
 			dependencies: ["39A09DA3903C5564"]
@@ -807,8 +805,8 @@
 				item: "kubejs:quantum_soc_chip"
 				type: "item"
 			}]
-			x: 53.0d
-			y: -6.75d
+			x: 11.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["0FD9B533BB402B17"]
@@ -824,8 +822,8 @@
 				item: "kubejs:ruined_hull"
 				type: "item"
 			}]
-			x: 45.75d
-			y: -16.5d
+			x: 4.0d
+			y: -0.25d
 		}
 		{
 			dependencies: ["0FD9B533BB402B17"]
@@ -838,8 +836,8 @@
 				item: "kubejs:ruined_machine_parts"
 				type: "item"
 			}]
-			x: 49.25d
-			y: -17.0d
+			x: 7.5d
+			y: -0.75d
 		}
 		{
 			dependencies: ["07057CDE4E021BA7"]
@@ -856,8 +854,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4E4F03C44623A85D.title}"
-			x: 46.875d
-			y: -11.5d
+			x: 5.125d
+			y: 4.75d
 		}
 		{
 			dependencies: ["739F7BF2A90B278A"]
@@ -875,8 +873,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5911900438648430.title}"
-			x: 47.0d
-			y: -8.5d
+			x: 5.25d
+			y: 7.75d
 		}
 		{
 			dependencies: ["21E10888F52A3C73"]
@@ -888,8 +886,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4E9530E62A4B673B.title}"
-			x: 34.25d
-			y: -8.25d
+			x: -7.5d
+			y: 8.0d
 		}
 		{
 			description: ["{moni.quest.786AECA42F53B45A.description1}"]
@@ -903,8 +901,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.786AECA42F53B45A.title}"
-			x: 44.75d
-			y: -25.3125d
+			x: 3.0d
+			y: -9.0625d
 		}
 		{
 			dependencies: ["4DF92773C82F4AAC"]
@@ -923,8 +921,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0ED041E2114F7C84.title}"
-			x: 43.5d
-			y: -13.5d
+			x: 1.75d
+			y: 2.75d
 		}
 		{
 			dependencies: ["01E542E1C9DAF5B4"]
@@ -953,8 +951,8 @@
 				}
 			]
 			title: "{moni.quest.07E757AAA1C7435D.title}"
-			x: 50.5d
-			y: -8.0d
+			x: 8.75d
+			y: 8.25d
 		}
 		{
 			dependencies: ["0ED041E2114F7C84"]
@@ -974,8 +972,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.198C5A6A8ED38803.title}"
-			x: 43.5d
-			y: -11.5d
+			x: 1.75d
+			y: 4.75d
 		}
 		{
 			dependencies: ["450DAA4FF933F49A"]
@@ -1009,9 +1007,9 @@
 					type: "item"
 				}
 			]
-			x: 39.0d
-			y: -20.0d
+			x: -2.75d
+			y: -3.75d
 		}
 	]
-	title: "{moni.chapter.2BEB72BC6C6FB4E9.title}"
+	title: "{moni.chapter.457D17593A814D73.title}"
 }
