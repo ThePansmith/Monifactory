@@ -1,4 +1,3 @@
-// @ts-check
 import Juke from "juke-build";
 import fs from "fs";
 import { fileURLToPath } from "url";
@@ -9,10 +8,7 @@ import { readDatafileJSON } from "../../lib/json_datafile.ts";
 import { fillTemplateFile, fillTemplates } from "../fill_templates.ts";
 import { hash } from "crypto";
 
-/**
- * @param {string} f
- */
-const resolveNeighbourFilePath = (f) => fileURLToPath(import.meta.resolve("./" + f));
+const resolveNeighbourFilePath = (f: string) => fileURLToPath(import.meta.resolve("./" + f));
 
 const contributorsFilePath = resolveNeighbourFilePath("contributors.json");
 
@@ -76,7 +72,7 @@ export const CodegenCreditsTarget = new Juke.Target({
             { encoding: "utf8" },
         );
 
-        const getCapesByRole = (/** @type {z.infer<zRole>} */ role) =>
+        const getCapesByRole = (role: z.infer<typeof zRole>) =>
             Object
                 .entries(people)
                 .filter(([, data]) => data.mcuuid && data.role?.includes(role))
