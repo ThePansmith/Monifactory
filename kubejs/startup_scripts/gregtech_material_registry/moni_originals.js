@@ -135,7 +135,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("darconite")
         .ingot().fluid()
-        .color(0x3221fb).secondaryColor(0x26872b)
+        .color(0x6220fa).secondaryColor(0x1e0ddb)
         .iconSet("crystal")
         .blastTemp(11000, "highest", GTValues.VHA[GTValues.UV], 800)
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen")
