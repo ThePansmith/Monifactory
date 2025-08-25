@@ -172,9 +172,9 @@ export const DownloadModsTarget = new Juke.Target({
         const manifest = zManifest.parse(readDatafileJSON("manifest.json"));
 
         const zCacheJSON = z.record(
-            z.coerce.number(z.string()),
+            z.templateLiteral([z.number()]).pipe(z.coerce.number()),
             zCFBaseFile.extend({
-                file: z.string(),
+                file: z.string().optional(),
             })
         )
 
@@ -211,7 +211,7 @@ export const DownloadModsTarget = new Juke.Target({
                 if (newData[pid] && !mIdToDownload.includes(pid)) { // new mod added
                     mIdToDownload.push(pid);
                     Juke.logger.info(`Mod was added from modpack: ${pid}`)
-                    oldData[pid] = {...newData[pid]} // copy
+                    oldData[pid] = {...newData[pid] } // copy
                 }
             }
 
