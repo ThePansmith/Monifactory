@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: "hexagon"
+	default_quest_shape: ""
 	filename: "fun_with_fusion"
 	group: "0D5BFFD0A5E49312"
 	icon: "gtceu:luv_fusion_reactor"
@@ -81,7 +81,6 @@
 	]
 	quests: [
 		{
-			dependencies: ["2A6E9E7C80754936"]
 			description: ["{moni.quest.1183B96529D08326.description1}"]
 			id: "1183B96529D08326"
 			rewards: [{
@@ -100,8 +99,8 @@
 		}
 		{
 			dependencies: [
-				"1183B96529D08326"
 				"115B96B2092D671E"
+				"28834638F1487312"
 				"5792330C6E5B87A3"
 			]
 			description: [
@@ -154,7 +153,7 @@
 			]
 			title: "{moni.quest.069773756716E192.title}"
 			x: 0.5d
-			y: -3.4928571428571473d
+			y: -3.5d
 		}
 		{
 			dependencies: ["069773756716E192"]
@@ -199,7 +198,7 @@
 			y: -1.9928571428571473d
 		}
 		{
-			dependencies: ["79EFCD8E01384C0C"]
+			dependencies: ["00011E5DD7EEE8DB"]
 			description: ["{moni.quest.15607184B546F5EE.description1}"]
 			id: "15607184B546F5EE"
 			rewards: [{
@@ -219,7 +218,6 @@
 		{
 			dependencies: [
 				"4A8FB1EF600F0882"
-				"5BADF536443E712D"
 				"01E542E1C9DAF5B4"
 			]
 			description: [
@@ -265,7 +263,10 @@
 			y: -3.4928571428571473d
 		}
 		{
-			dependencies: ["3FFC053E3E11D586"]
+			dependencies: [
+				"3FFC053E3E11D586"
+				"22E50A6923EBF5CB"
+			]
 			description: [
 				"{moni.quest.5BADF536443E712D.description1}"
 				""
@@ -826,7 +827,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["3A69EE21B3089929"]
+			dependencies: [
+				"3A69EE21B3089929"
+				"28834638F1487312"
+			]
 			description: [
 				"{moni.quest.37BE175EEC2ABD59.description1}"
 				""
@@ -960,10 +964,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"115B96B2092D671E"
-				"0562D9F4C441EAF9"
-			]
+			dependencies: ["41F1837D7C131898"]
 			description: [
 				"{moni.quest.0CEF53164D8B6496.description1}"
 				""
@@ -985,7 +986,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["0CEF53164D8B6496"]
+			dependencies: [
+				"0CEF53164D8B6496"
+				"15607184B546F5EE"
+			]
 			description: [
 				"{moni.quest.75DD12FBC8AA39FC.description1}"
 				""

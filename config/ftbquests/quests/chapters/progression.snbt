@@ -2225,10 +2225,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"0F6B344C265D1FBB"
-				"4AC51394FB5152E5"
-			]
+			dependencies: ["4AC51394FB5152E5"]
 			description: ["{moni.quest.4FABACAB7C4A74AC.description1}"]
 			id: "4FABACAB7C4A74AC"
 			rewards: [{

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "home_stretch"
 	group: "18F0ED1F9A002C08"
+	icon: "kubejs:monic_processor_mainframe"
 	id: "457D17593A814D73"
 	order_index: 7
 	quest_links: [
@@ -77,27 +78,6 @@
 			y: 6.5d
 		}
 		{
-			id: "20F44ACD2F91FD2A"
-			linked_quest: "4DF92773C82F4AAC"
-			shape: "hexagon"
-			x: 1.75d
-			y: 0.75d
-		}
-		{
-			id: "21C0AA3B9437C897"
-			linked_quest: "61301FBD825F8280"
-			shape: "hexagon"
-			size: 2.0d
-			x: -16.25d
-			y: 9.5d
-		}
-		{
-			id: "7E01EB0C0E6F427A"
-			linked_quest: "738A141D31AD7CE3"
-			x: -16.25d
-			y: 7.25d
-		}
-		{
 			id: "09227387EDA8221C"
 			linked_quest: "19084E91F357C8C2"
 			size: 2.0d
@@ -143,6 +123,13 @@
 			linked_quest: "0B51A633811472A2"
 			x: 13.0d
 			y: -4.75d
+		}
+		{
+			id: "60C700D7684269CD"
+			linked_quest: "6ABD83B58FADD4DF"
+			shape: "hexagon"
+			x: -17.5d
+			y: 5.0d
 		}
 	]
 	quests: [
@@ -247,7 +234,10 @@
 			y: 3.25d
 		}
 		{
-			dependencies: ["22DC32C2B67EFD25"]
+			dependencies: [
+				"22DC32C2B67EFD25"
+				"483652BAEF59E125"
+			]
 			description: [
 				"{moni.quest.27EBB5AAF8A40F3D.description1}"
 				""
@@ -451,7 +441,7 @@
 			y: 0.3125d
 		}
 		{
-			dependencies: ["49E9A178F6A52A62"]
+			dependencies: ["41F1837D7C131898"]
 			description: ["{moni.quest.4261BDA34D716EC8.description1}"]
 			id: "4261BDA34D716EC8"
 			rewards: [{
@@ -467,8 +457,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.4261BDA34D716EC8.title}"
-			x: -14.25d
-			y: 7.25d
+			x: -17.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -756,8 +746,8 @@
 				item: "kubejs:quasi_stable_neutron_star"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 4.5d
+			x: -5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1E36AFB19932C805"]
@@ -1009,6 +999,199 @@
 			]
 			x: -2.75d
 			y: -3.75d
+		}
+		{
+			dependencies: ["7D29C79DE1CCA2A2"]
+			description: [
+				"{moni.quest.235C1E5B2C58B5AF.description1}"
+				""
+				"{moni.quest.235C1E5B2C58B5AF.description2}"
+			]
+			id: "235C1E5B2C58B5AF"
+			rewards: [{
+				id: "7ADB865F026B73CB"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "5E20DE67BAF768B6"
+				item: "kubejs:hadal_shard"
+				type: "item"
+			}]
+			title: "{moni.quest.235C1E5B2C58B5AF.title}"
+			x: -17.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"235C1E5B2C58B5AF"
+				"61301FBD825F8280"
+				"6ABD83B58FADD4DF"
+			]
+			description: [
+				"{moni.quest.738A141D31AD7CE3.description1}"
+				""
+				"{moni.quest.738A141D31AD7CE3.description2}"
+				""
+				"{moni.quest.738A141D31AD7CE3.description3}"
+			]
+			id: "738A141D31AD7CE3"
+			rewards: [{
+				count: 5
+				id: "284D36F54887F2BB"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "{moni.quest.738A141D31AD7CE3.subtitle}"
+			tasks: [{
+				id: "140C83AB5FE8450E"
+				item: "kubejs:hadal_energy_core"
+				type: "item"
+			}]
+			title: "{moni.quest.738A141D31AD7CE3.title}"
+			x: -16.25d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4261BDA34D716EC8"]
+			description: [
+				"{moni.quest.61301FBD825F8280.description1}"
+				""
+				"{moni.quest.61301FBD825F8280.description2}"
+			]
+			icon: "gtceu:omnium_ingot"
+			id: "61301FBD825F8280"
+			rewards: [{
+				id: "01C5A5720A287196"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4205D04F8EFE2D7D"
+					item: "gtceu:omnium_nugget"
+					type: "item"
+				}
+				{
+					id: "56970BBAFAB8BEB7"
+					item: "gtceu:omnium_ingot"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.61301FBD825F8280.title}"
+			x: -16.25d
+			y: 9.5d
+		}
+		{
+			dependencies: ["738A141D31AD7CE3"]
+			description: ["{moni.quest.483652BAEF59E125.description1}"]
+			id: "483652BAEF59E125"
+			rewards: [{
+				id: "6D6D92F23F1DCEA5"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "6D27E0C7357E8F5A"
+				item: "kubejs:hadal_warp_engine"
+				type: "item"
+			}]
+			title: "{moni.quest.483652BAEF59E125.title}"
+			x: -14.75d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"57D9FA04817CB92F"
+				"483652BAEF59E125"
+			]
+			description: [
+				"{moni.quest.6BF4A76C5B84EEE9.description1}"
+				""
+				"{moni.quest.6BF4A76C5B84EEE9.description2}"
+				""
+				"{moni.quest.6BF4A76C5B84EEE9.description3}"
+			]
+			id: "6BF4A76C5B84EEE9"
+			rewards: [{
+				id: "5FA553DCC8666ADA"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4E68CF49A166A50A"
+				item: "kubejs:microminer_t9"
+				type: "item"
+			}]
+			title: "{moni.quest.6BF4A76C5B84EEE9.title}"
+			x: -12.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0562D9F4C441EAF9"]
+			description: ["{moni.quest.57D9FA04817CB92F.description1}"]
+			id: "57D9FA04817CB92F"
+			rewards: [{
+				id: "6ABD44B2AE43E4E3"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "09EF929F3BDB6617"
+				item: "kubejs:quantum_fluxed_eternium_heavy_plating"
+				type: "item"
+			}]
+			title: "{moni.quest.57D9FA04817CB92F.title}"
+			x: -12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7FAB6FD0A054443E"]
+			description: [
+				"{moni.quest.4DF92773C82F4AAC.description1}"
+				""
+				"{moni.quest.4DF92773C82F4AAC.description2}"
+			]
+			id: "4DF92773C82F4AAC"
+			rewards: [{
+				id: "164F147085D3C08C"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "{moni.quest.4DF92773C82F4AAC.subtitle}"
+			tasks: [{
+				id: "19750B567D0D0ABC"
+				item: "kubejs:the_ultimate_material"
+				type: "item"
+			}]
+			x: 1.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["44B0AB41C076E779"]
+			description: ["{moni.quest.6391447F1A411281.description1}"]
+			id: "6391447F1A411281"
+			rewards: [{
+				id: "1DAE2A0FADC5CC24"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "44BD150EF26C4421"
+				item: "monilabs:double_crystal_matrix_plate"
+				type: "item"
+			}]
+			title: "{moni.quest.6391447F1A411281.title}"
+			x: -18.75d
+			y: 5.0d
 		}
 	]
 	title: "{moni.chapter.457D17593A814D73.title}"

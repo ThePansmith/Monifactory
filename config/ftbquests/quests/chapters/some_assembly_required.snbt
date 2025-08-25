@@ -32,7 +32,7 @@
 		{
 			id: "760BD8D5E0B0FE24"
 			linked_quest: "57A6FE885489C3ED"
-			x: -4.25d
+			x: -12.0d
 			y: -6.0d
 		}
 		{
@@ -127,8 +127,14 @@
 			id: "5522298B1FC30B2B"
 			linked_quest: "2F04FA8D3E15E375"
 			size: 2.0d
-			x: 3.75d
-			y: -6.25d
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			id: "05CA0A68740DE80D"
+			linked_quest: "38791476E970C57D"
+			x: 9.0d
+			y: -0.5d
 		}
 	]
 	quests: [
@@ -711,15 +717,11 @@
 							}
 							{
 								Count: 1b
-								id: "gtceu:enriched_naquadah_ingot"
-							}
-							{
-								Count: 1b
 								id: "gtceu:trinium_dust"
 							}
 							{
 								Count: 1b
-								id: "gtceu:trinium_ingot"
+								id: "gtceu:naquadria_dust"
 							}
 						]
 					}
@@ -749,14 +751,13 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.5d
 			tasks: [{
 				id: "0EDAFBD50F866785"
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
 			title: "{moni.quest.15FAEE3F625265F4.title}"
-			x: -2.0d
+			x: 0.75d
 			y: 6.75d
 		}
 		{
@@ -775,8 +776,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.1B07DB4D58D43B7C.title}"
-			x: -2.0d
-			y: 8.75d
+			x: -0.25d
+			y: 7.75d
 		}
 		{
 			dependencies: [
@@ -910,8 +911,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.72FFB2AAB5EA049D.title}"
-			x: 3.75d
-			y: -9.25d
+			x: 2.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -937,8 +938,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2BBAF93506DD79C1.title}"
-			x: 5.75d
-			y: -9.25d
+			x: 4.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -968,8 +969,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.36B1B083B4FA439F.title}"
-			x: 5.75d
-			y: -6.25d
+			x: 4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
@@ -1114,8 +1115,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2A6E9E7C80754936.title}"
-			x: -8.75d
-			y: 6.75d
+			x: -6.25d
+			y: 8.75d
 		}
 		{
 			dependencies: [
@@ -1136,8 +1137,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5199E6FAA4B699CD.title}"
-			x: -8.75d
-			y: 5.0d
+			x: -8.25d
+			y: 8.75d
 		}
 		{
 			dependencies: ["5199E6FAA4B699CD"]
@@ -1160,8 +1161,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.0D3E0D645F80835D.title}"
-			x: -10.0d
-			y: 5.0d
+			x: -8.25d
+			y: 7.25d
 		}
 		{
 			dependencies: ["2BBAF93506DD79C1"]
@@ -1186,8 +1187,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.20745EB9A695E365.title}"
-			x: 7.75d
-			y: -9.25d
+			x: 6.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -1302,7 +1303,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["745628397790ED7A"]
+			dependencies: [
+				"745628397790ED7A"
+				"5732018AA35D69B6"
+			]
 			id: "2C4500569586EBC7"
 			tasks: [{
 				id: "71509E2C21AAF211"
@@ -1364,8 +1368,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.069D243B809E0D5D.title}"
-			x: 7.75d
-			y: -6.25d
+			x: 6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1388,8 +1392,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.10E63A0428E6BA25.title}"
-			x: 7.75d
-			y: -6.25d
+			x: 6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1439,10 +1443,7 @@
 			y: 2.75d
 		}
 		{
-			dependencies: [
-				"424413BBCE3FD3BF"
-				"5732018AA35D69B6"
-			]
+			dependencies: ["424413BBCE3FD3BF"]
 			description: [
 				"{moni.quest.6B80737C5E1359F7.description1}"
 				""
@@ -1460,6 +1461,72 @@
 			title: "{moni.quest.6B80737C5E1359F7.title}"
 			x: 8.5d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"217F85D6FE2A467D"
+				"2A6E9E7C80754936"
+			]
+			description: ["TODO"]
+			id: "5A31EEF439212D6E"
+			shape: "hexagon"
+			tasks: [{
+				id: "0F54B2C910090F5B"
+				item: "gtceu:zpm_assembler"
+				type: "item"
+			}]
+			title: "ZPM Assembler"
+			x: -2.5d
+			y: 8.75d
+		}
+		{
+			dependencies: ["1B07DB4D58D43B7C"]
+			description: [
+				"{moni.quest.217F85D6FE2A467D.description1}"
+				""
+				"{moni.quest.217F85D6FE2A467D.description2}"
+				""
+				"{moni.quest.217F85D6FE2A467D.description3}"
+			]
+			id: "217F85D6FE2A467D"
+			rewards: [{
+				id: "603150815EBC60F3"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "64DD484503E452DD"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			title: "{moni.quest.217F85D6FE2A467D.title}"
+			x: -1.5d
+			y: 7.75d
+		}
+		{
+			dependencies: [
+				"41FA85A3920EB334"
+				"5A31EEF439212D6E"
+			]
+			description: ["{moni.quest.7A65459E4DFAAC2D.description1}"]
+			id: "7A65459E4DFAAC2D"
+			rewards: [{
+				id: "0F124B2E02F2BD4E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "52F9691851DE4023"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			title: "{moni.quest.7A65459E4DFAAC2D.title}"
+			x: 0.75d
+			y: 8.75d
 		}
 	]
 	title: "{moni.chapter.058B7FE882875343.title}"

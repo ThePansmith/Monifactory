@@ -23,19 +23,19 @@ ServerEvents.recipes(event => {
     //     C: "#gtceu:circuits/luv"
     // })
 
-    event.recipes.extendedcrafting.shaped_table("extendedcrafting:flux_alternator", [
-        " PEP ",
-        " PCP ",
-        " PCP ",
-        "PPCPP",
-        "XRRRX"
-    ], {
-        P: "gtceu:double_cryolobus_plate",
-        R: "gtceu:luv_lapotronic_battery",
-        X: "monilabs:cryolobus_casing",
-        E: "gtceu:luv_emitter",
-        C: "#gtceu:circuits/luv"
-    })
+    // event.recipes.extendedcrafting.shaped_table("extendedcrafting:flux_alternator", [
+    //     " PEP ",
+    //     " PCP ",
+    //     " PCP ",
+    //     "PPCPP",
+    //     "XRRRX"
+    // ], {
+    //     P: "gtceu:double_cryolobus_plate",
+    //     R: "gtceu:luv_lapotronic_battery",
+    //     X: "monilabs:cryolobus_casing",
+    //     E: "gtceu:luv_emitter",
+    //     C: "#gtceu:circuits/luv"
+    // })
 
     event.recipes.gtceu.assembler("kubejs:empty_bathyal_energy_core")
         .itemInputs("4x gtceu:cryolobus_plate", "2x gtceu:europium_plate", "8x gtceu:vanadium_gallium_bolt")

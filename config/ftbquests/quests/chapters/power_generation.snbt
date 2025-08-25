@@ -988,7 +988,8 @@
 		{
 			dependencies: [
 				"0F048CED8D4C6A43"
-				"61301FBD825F8280"
+				"3C6395EDE0AE8FE3"
+				"738A141D31AD7CE3"
 			]
 			description: [
 				"{moni.quest.22DC32C2B67EFD25.description1}"

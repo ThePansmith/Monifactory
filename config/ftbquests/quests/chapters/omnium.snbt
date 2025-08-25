@@ -537,6 +537,7 @@
 		}
 		{
 			description: ["{moni.quest.motenothing.description1}"]
+			disable_toast: true
 			id: "5928FCBF99CF031B"
 			title: "{moni.quest.motenothing.title}"
 			x: 11.0d
@@ -952,6 +953,7 @@
 		}
 		{
 			description: ["{moni.quest.motenothing.description1}"]
+			disable_toast: true
 			id: "6F7D6294E9F311E4"
 			title: "{moni.quest.motenothing.title}"
 			x: 5.0d
