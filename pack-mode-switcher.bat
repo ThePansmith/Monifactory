@@ -23,6 +23,7 @@ set normalCfgPath=%RUN_DIR%config-overrides\normal
 set hardCfgPath=%RUN_DIR%config-overrides\hardmode
 set expertCfgPath=%RUN_DIR%config-overrides\expert
 set targetPath=%RUN_DIR%config
+set modeFile=%RUN_DIR%.mode
 
 rem Check if config-overrides dirs exist
 if not exist "%normalCfgPath%" goto missing_config
@@ -30,31 +31,25 @@ if not exist "%hardCfgPath%" goto missing_config
 if not exist "%expertCfgPath%" goto missing_config
 
 if not defined MODE (
-    if "%SILENT%"=="true" (
-        echo Error: No mode specified in silent mode!{#}
-        echo Accepted Inputs:
-        echo - [Normal, normal, N, n]
-        echo - [Hard, hard, H, h]
-        echo - [Expert, expert, E, e]
-        exit /b 1
-    )
-
     rem Interactive
     color 9
 
-    set CURRENT_MODE="N/A"
-    if exist .mode (
-        set /p CURRENT_MODE=<.mode
+    set CURRENT_MODE="normal"
+    if exist %modeFile% (
+        set /p CURRENT_MODE=<%modeFile%
     )
-
-    echo Monifactory ^| Pack Mode Switcher
-    echo Current Mode: !CURRENT_MODE!
-    echo.
-    echo Set Pack Mode:
-    echo N: Normal    (The Default mode^)
-    echo H: Hard      (Adds more lines and progression, removes HNN and Monicoin spending^)
-    echo E: Expert    (A modifier for hard, enables some of the more extreme GTm settings among other things^)
-    set /p MODE="Selection [Normal / Hard / Expert]: "
+    if "%SILENT%"=="false" (
+        echo Monifactory ^| Pack Mode Switcher
+        echo Current Mode: !CURRENT_MODE!
+        echo.
+        echo Set Pack Mode:
+        echo N: Normal    (The Default mode^)
+        echo H: Hard      (Adds more lines and progression, removes HNN and Monicoin spending^)
+        echo E: Expert    (A modifier for hard, enables some of the more extreme GTm settings among other things^)
+        set /p MODE="Selection [Normal / Hard / Expert]: "
+    ) else (
+        set /p MODE=
+    )
 )
 
 rem case insensitive with /i
@@ -73,24 +68,24 @@ exit /b 1
 
 :copyNormal
 robocopy "%normalCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
-echo normal > .mode
+echo normal > %modeFile%
 goto success
 
 :copyHard
 robocopy "%hardCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
-echo hard > .mode
+echo hard > %modeFile%
 goto success
 
 :copyExpert
 robocopy "%hardCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
 robocopy "%expertCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
-echo expert > .mode
+echo expert > %modeFile%
 goto success
 
 
 :success
 if "%SILENT%"=="false" (
-    set /p NEWMODE=<.mode
+    set /p NEWMODE=<%modeFile%
     echo Successfully switched pack mode to !NEWMODE!
 )
 exit /b 0
