@@ -109,7 +109,6 @@
 !/config/extendedcrafting-common.toml
 !/config/fluxnetworks-common.toml
 !/config/flywheel-client.toml
-!/config/gtmutils.yaml
 !/config/hostilenetworks.cfg
 !/config/immediatelyfast.json
 !/config/ironfurnaces-client.toml
