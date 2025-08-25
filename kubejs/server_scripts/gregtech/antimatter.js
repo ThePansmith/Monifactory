@@ -28,8 +28,10 @@ ServerEvents.recipes(event => {
 
     microverse_mission(event, 10, 3).forEach(builder => {
         builder
-            .inputFluids("gtceu:helium_plasma 16000")
-            .itemInputs("kubejs:microversal_alchemy_kit", "4x kubejs:ultra_dense_hydrogen", "1x kubejs:ultra_dense_helium")
+            .inputFluids("gtceu:oxygen_plasma 16000")
+            .itemInputs("kubejs:microversal_alchemy_kit")
+            .inputFluids("gtceu:hydrogen 160000")
+            .inputFluids("gtceu:oxygen_plasma 40000")
             .damageRate(15)
             .itemOutputs("64x kubejs:protomatter")
             .requiredMicroverse(4) // Corrupted
