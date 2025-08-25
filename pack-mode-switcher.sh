@@ -8,7 +8,6 @@ POWDER_BLUE=$(tput setaf 153)
 MAGENTA=$(tput setaf 5)
 NORMAL=$(tput sgr0)
 
-touch .mode
 set -e
 
 print_help() {
@@ -46,6 +45,8 @@ NORMAL_CFG="${RUN_DIR}/config-overrides/normal"
 HARDMODE_CFG="${RUN_DIR}/config-overrides/hardmode"
 EXPERT_CFG="${RUN_DIR}/config-overrides/expert"
 TARGET="${RUN_DIR}/config"
+MODEFILE="${RUN_DIR}/.mode"
+touch "$MODEFILE"
 
 # Check if config-overrides dir exists
 if ! ([ -d "${NORMAL_CFG}" ] && [ -d "${HARDMODE_CFG}" ] && [ -d "${EXPERT_CFG}" ]); then
@@ -55,7 +56,7 @@ if ! ([ -d "${NORMAL_CFG}" ] && [ -d "${HARDMODE_CFG}" ] && [ -d "${EXPERT_CFG}"
 fi
 
 if [ -z "$MODE" ]; then
-  CURRENT_MODE="$(head .mode)"
+  CURRENT_MODE="$(head "$MODEFILE")"
   CURRENT_MODE=${CURRENT_MODE:="normal"}
 
   # Capitalise First Letter (only works in bash 4+)
@@ -89,18 +90,18 @@ MODE=$(echo "$MODE" | tr '[:upper:]' '[:lower:]')
 case $MODE in
   n|normal)
     cp -rf "$NORMAL_CFG/." ${TARGET}
-    echo normal > .mode
+    echo normal > "$MODEFILE"
   ;;
 
   h|hard)
     cp -rf "$HARDMODE_CFG/." ${TARGET}
-    echo hard > .mode
+    echo hard > "$MODEFILE"
   ;;
 
   e|expert)
     cp -rf "$HARDMODE_CFG/." ${TARGET}
     cp -rf "$EXPERT_CFG/." ${TARGET}
-    echo expert > .mode
+    echo expert > "$MODEFILE"
   ;;
 
   *)
@@ -111,7 +112,7 @@ case $MODE in
 esac
 
 if ! $SILENT; then
-  printf "\n${GREEN}Successfully switched pack mode to $(cat .mode)!${NORMAL}\n"
+  printf "\n${GREEN}Successfully switched pack mode to $(cat "$MODEFILE")!${NORMAL}\n"
 fi
 
 exit 0
