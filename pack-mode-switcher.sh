@@ -46,7 +46,6 @@ HARDMODE_CFG="${RUN_DIR}/config-overrides/hardmode"
 EXPERT_CFG="${RUN_DIR}/config-overrides/expert"
 TARGET="${RUN_DIR}/config"
 MODEFILE="${RUN_DIR}/.mode"
-touch "$MODEFILE"
 
 # Check if config-overrides dir exists
 if ! ([ -d "${NORMAL_CFG}" ] && [ -d "${HARDMODE_CFG}" ] && [ -d "${EXPERT_CFG}" ]); then
