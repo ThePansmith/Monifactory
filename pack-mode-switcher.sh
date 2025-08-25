@@ -55,29 +55,32 @@ if ! ([ -d "${NORMAL_CFG}" ] && [ -d "${HARDMODE_CFG}" ] && [ -d "${EXPERT_CFG}"
 fi
 
 if [ -z "$MODE" ]; then
-  if $SILENT; then
-    printf "\n${RED}Error: No mode specified in silent mode!${NORMAL}\n"
-    printf "\n${POWDER_BLUE}Accepted Inputs:\n${YELLOW}- [Normal, normal, N, n]\n- [Hard, hard, H, h]\n- [Expert, expert, E, e]${NORMAL}\n"
-    exit 1
-  fi
-
-  if [ ! -t 0 ]; then
-    printf "\n${RED}Error: Interactive mode entered in a non-interactive session!${NORMAL}\n"
-    exit 1
-  fi
-
-  # Interactive
-  CURRENT_MODE="$(cat .mode)"
-  CURRENT_MODE=${CURRENT_MODE:="N/A"}
+  CURRENT_MODE="$(head .mode)"
+  CURRENT_MODE=${CURRENT_MODE:="normal"}
 
   # Capitalise First Letter (only works in bash 4+)
   if ((BASH_VERSINFO[0] >= 4 )); then
     CURRENT_MODE=${CURRENT_MODE^}
   fi
 
-  printf "${POWDER_BLUE}Monifactory | Pack Mode Switcher${NORMAL}"
-  printf "\n${YELLOW}Current Mode: ${CURRENT_MODE}${NORMAL}\n\n"
-  printf "${POWDER_BLUE}Set Pack Mode:\nN: Normal    (The Default mode) \nH: Hard      (Adds more lines and progression, removes HNN and Monicoin spending) \nE: Expert    (A modifier for hard, enables some of the more extreme GTm settings among other things) \nSelection: [Normal / Hard / Expert]: "
+  if [ -t 0 ]; then
+    # Interactive stdin
+    printf "${POWDER_BLUE}Monifactory | Pack Mode Switcher${NORMAL}"
+    printf "\n\n${YELLOW}Current Mode: ${CURRENT_MODE}${NORMAL}\n"
+    printf "${POWDER_BLUE}Set Pack Mode:\nN: Normal    (The Default mode) \nH: Hardmode  (Adds more lines and progression, removes HNN and Monicoin spending) \nE: Expert    (A modifier for Hardmode, enables some of the more extreme GTm settings among other things) \nSelection: [Normal / Hardmode / Expert]:"
+    read MODE
+  else
+    # Non interactive stdin
+    echo $CURRENT_MODE
+    exit 0
+  fi
+
+  if ! $SILENT; then
+    printf "${POWDER_BLUE}Monifactory | Pack Mode Switcher${NORMAL}"
+    printf "\n${YELLOW}Current Mode: ${CURRENT_MODE}${NORMAL}\n\n"
+    printf "${POWDER_BLUE}Set Pack Mode:\nN: Normal    (The Default mode) \nH: Hard      (Adds more lines and progression, removes HNN and Monicoin spending) \nE: Expert    (A modifier for hard, enables some of the more extreme GTm settings among other things) \nSelection: [Normal / Hard / Expert]: "
+  fi
+
   read MODE
 fi
 

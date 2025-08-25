@@ -103,7 +103,6 @@ async function packMod(group) {
         // Switch build to NM if mode is unset
         if (!fs.existsSync("config/packmode.json")) {
             const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}`; // to account for server build not being in overrides
-            await Juke.exec("chmod", ["+x", "./pack-mode-switcher.sh"]);
             await Juke.exec("./pack-mode-switcher.sh", ["-r", "-s", "n"], {
                 cwd: packSwitchPath
             });
@@ -307,7 +306,7 @@ export const BuildDevTarget = new Juke.Target({
         "dist/.devtmp/",
         "dist/dev.zip",
         ...includeList.map(v => `dist/dev/overrides/${v}`),
-        "dist/dev/mods",
+        "dist/dev/overrides/mods",
     ]),
     executes: async () => {
         Juke.rm("dist/.devtmp", { recursive: true })
@@ -330,7 +329,7 @@ export const BuildDevTarget = new Juke.Target({
         // "merge" both mod folders
         fs.cpSync("dist/modcache", "dist/.devtmp", { recursive: true });
         fs.cpSync("mods", "dist/.devtmp", { recursive: true, force: true });
-        symlinkSync(resolve("dist/.devtmp"), resolve("dist/dev/mods"));
+        symlinkSync(resolve("dist/.devtmp"), resolve("dist/dev/overrides/mods"));
         // fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
         fs.cpSync("config", "dist/dev/overrides/config", { recursive: true });
 
