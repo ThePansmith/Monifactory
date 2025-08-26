@@ -678,7 +678,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("R", Predicates.blocks(GTBlocks.CASING_GRATE.get())
                 .or(Predicates.abilities(PartAbility.DATA_ACCESS).setExactLimit(1)))
             .where("M", Predicates.blocks("kubejs:omnic_matrix_machine_casing"))
-            .where("I", Predicates.frames(GTMaterials.get("eltz")))
+            .where("I", Predicates.frames("monilabs:eltz_frame"))
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())

@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.canner("hadal_energy_core")
         .itemInputs("kubejs:empty_hadal_energy_core")
-        .inputFluids("kubejs:hadal_sculk 2000")
+        .inputFluids("gtceu:hadal_sculk 2000")
         .itemOutputs("kubejs:hadal_energy_core")
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])

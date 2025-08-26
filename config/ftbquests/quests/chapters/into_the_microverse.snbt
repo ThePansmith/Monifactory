@@ -954,7 +954,7 @@
 			description: [
 				"{moni.quest.4F572CA3678CB287.description1}"
 				""
-				"{moni.quest.4F572CA3678CB287.description2}"
+				"[\"\",{\"translate\":\"moni.quest.4F572CA3678CB287.description2\"},{\"underlined\":true,\"translate\":\"moni.quest.4F572CA3678CB287.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1EA5F30C5ACADBA9\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4F572CA3678CB287.rich_description.hover_text1\"}}}]"
 				""
 				"{moni.quest.4F572CA3678CB287.description3}"
 			]
@@ -979,6 +979,7 @@
 				"5B07A88C0BFF6586"
 				"798284BA30D818DA"
 				"2D0DF78F71760F00"
+				"7ACF867DECE1C37F"
 			]
 			description: [
 				"{moni.quest.638130DC8A2BF1C1.description1}"
@@ -1208,6 +1209,28 @@
 			title: "{moni.quest.2D0DF78F71760F00.title}"
 			x: 1.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5B07A88C0BFF6586"
+				"4F572CA3678CB287"
+			]
+			description: [
+				"{moni.quest.7ACF867DECE1C37F.description1}"
+				""
+				"{moni.quest.7ACF867DECE1C37F.description2}"
+				""
+				"{moni.quest.7ACF867DECE1C37F.description3}"
+			]
+			id: "7ACF867DECE1C37F"
+			tasks: [{
+				id: "42587449855B384F"
+				item: "kubejs:universe_creation_data"
+				type: "item"
+			}]
+			title: "{moni.quest.7ACF867DECE1C37F.title}"
+			x: 3.5d
+			y: -2.0d
 		}
 	]
 	title: "{moni.chapter.68F29871402A6B1B.title}"

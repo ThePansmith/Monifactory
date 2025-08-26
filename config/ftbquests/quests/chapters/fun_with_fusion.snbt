@@ -744,7 +744,10 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["3A69EE21B3089929"]
+			dependencies: [
+				"3A69EE21B3089929"
+				"28CA4E5308EC0BB9"
+			]
 			description: [
 				"{moni.quest.57C75A5756F62D17.description1}"
 				""
@@ -986,10 +989,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"0CEF53164D8B6496"
-				"15607184B546F5EE"
-			]
+			dependencies: ["15607184B546F5EE"]
 			description: [
 				"{moni.quest.75DD12FBC8AA39FC.description1}"
 				""
