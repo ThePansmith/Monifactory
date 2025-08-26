@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("uev_motor")
-        .itemInputs("gtceu:long_magnetic_terbium_rod", "8x gtceu:long_sculk_bioalloy_rod", "8x monilabs:sculk_bioalloy_ring", "16x monilabs:sculk_bioalloy_round", "64x gtceu:fine_necrosiderite_wire", "64x gtceu:fine_necrosiderite_wire", "48x gtceu:fine_necrosiderite_wire", "2x gtceu:darconite_single_cable")
+        .itemInputs("gtceu:long_magnetic_terbium_rod", "8x monilabs:long_sculk_bioalloy_rod", "8x monilabs:sculk_bioalloy_ring", "16x monilabs:sculk_bioalloy_round", "64x gtceu:fine_necrosiderite_wire", "64x gtceu:fine_necrosiderite_wire", "48x gtceu:fine_necrosiderite_wire", "2x gtceu:darconite_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:lubricant 3000", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_electric_motor")
         .duration(600)
@@ -221,7 +221,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("uev_piston")
-        .itemInputs("gtceu:uev_electric_motor", "4x monilabs:sculk_bioalloy_plate", "4x monilabs:sculk_bioalloy_ring", "16x monilabs:sculk_bioalloy_round", "4x monilabs:sculk_bioalloy_rod", "monilabs:sculk_bioalloy_gear", "2x gtceu:small_sculk_bioalloy_gear", "2x gtceu:darconite_single_cable")
+        .itemInputs("gtceu:uev_electric_motor", "4x monilabs:sculk_bioalloy_plate", "4x monilabs:sculk_bioalloy_ring", "16x monilabs:sculk_bioalloy_round", "4x monilabs:sculk_bioalloy_rod", "monilabs:sculk_bioalloy_gear", "2x monilabs:small_sculk_bioalloy_gear", "2x gtceu:darconite_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:lubricant 3000", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_electric_piston")
         .duration(600)
@@ -248,7 +248,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("uev_robot_arm")
-        .itemInputs("4x gtceu:long_sculk_bioalloy_rod", "monilabs:sculk_bioalloy_gear", "3x gtceu:small_sculk_bioalloy_gear", "3x gtceu:uev_electric_motor", "gtceu:uev_electric_piston", "#gtceu:circuits/uev", "2x #gtceu:circuits/uhv", "4x #gtceu:circuits/uv", "4x gtceu:darconite_single_cable")
+        .itemInputs("4x monilabs:long_sculk_bioalloy_rod", "monilabs:sculk_bioalloy_gear", "3x monilabs:small_sculk_bioalloy_gear", "3x gtceu:uev_electric_motor", "gtceu:uev_electric_piston", "#gtceu:circuits/uev", "2x #gtceu:circuits/uhv", "4x #gtceu:circuits/uv", "4x gtceu:darconite_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:lubricant 3000", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_robot_arm")
         .duration(600)
@@ -302,7 +302,7 @@ ServerEvents.recipes(event => {
         )
 
     event.recipes.gtceu.assembly_line("uev_emitter")
-        .itemInputs("monilabs:sculk_bioalloy_frame", "gtceu:uev_electric_motor", "4x gtceu:long_sculk_bioalloy_rod", "kubejs:quasi_stable_neutron_star", "#gtceu:circuits/uev", "64x gtceu:transcendental_matrix_foil", "32x gtceu:transcendental_matrix_foil", "4x gtceu:darconite_single_cable")
+        .itemInputs("monilabs:sculk_bioalloy_frame", "gtceu:uev_electric_motor", "4x monilabs:long_sculk_bioalloy_rod", "kubejs:quasi_stable_neutron_star", "#gtceu:circuits/uev", "64x gtceu:transcendental_matrix_foil", "32x gtceu:transcendental_matrix_foil", "4x gtceu:darconite_single_cable")
         .inputFluids("gtceu:advanced_soldering_alloy 5760", "gtceu:neutronium 576")
         .itemOutputs("gtceu:uev_emitter")
         .duration(600)
