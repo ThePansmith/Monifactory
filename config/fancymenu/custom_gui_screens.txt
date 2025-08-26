@@ -34,7 +34,7 @@ custom_gui {
   identifier = restart_game
   title = Restart your Game?
   allow_esc = true
-  transparent_world_background = true
+  transparent_world_background = false
   transparent_world_background_overlay = true
   pause_game = true
 }
@@ -43,7 +43,7 @@ custom_gui {
   identifier = pack_mode_switcher
   title = Pack Mode Switcher
   allow_esc = true
-  transparent_world_background = true
+  transparent_world_background = false
   transparent_world_background_overlay = true
   pause_game = true
 }
