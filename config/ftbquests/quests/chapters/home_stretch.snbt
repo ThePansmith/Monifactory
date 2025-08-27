@@ -131,6 +131,13 @@
 			x: -17.5d
 			y: 5.0d
 		}
+		{
+			id: "04CF886B4A20D637"
+			linked_quest: "7D29C79DE1CCA2A2"
+			shape: "hexagon"
+			x: -18.0d
+			y: 8.0d
+		}
 	]
 	quests: [
 		{
@@ -242,8 +249,6 @@
 				"{moni.quest.27EBB5AAF8A40F3D.description1}"
 				""
 				"{moni.quest.27EBB5AAF8A40F3D.description2}"
-				""
-				"{moni.quest.27EBB5AAF8A40F3D.description3}"
 			]
 			id: "27EBB5AAF8A40F3D"
 			shape: "hexagon"
@@ -1009,7 +1014,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.235C1E5B2C58B5AF.title}"
-			x: -20.25d
+			x: -19.75d
 			y: 6.5d
 		}
 		{
@@ -1202,14 +1207,24 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["235C1E5B2C58B5AF"]
+			dependencies: [
+				"235C1E5B2C58B5AF"
+				"7D29C79DE1CCA2A2"
+			]
+			description: [
+				"{moni.quest.7FA6B36DCE648C66.description1}"
+				""
+				"{moni.quest.7FA6B36DCE648C66.description2}"
+			]
 			id: "7FA6B36DCE648C66"
+			shape: "hexagon"
 			tasks: [{
 				id: "275D59A2870C1EBB"
-				item: "kubejs:hadal_sculk_bucket"
+				item: "gtceu:hadal_sculk_bucket"
 				type: "item"
 			}]
-			x: -18.25d
+			title: "{moni.quest.7FA6B36DCE648C66.title}"
+			x: -18.0d
 			y: 6.5d
 		}
 	]

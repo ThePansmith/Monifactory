@@ -252,6 +252,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.STICKY, GTMaterialFlags.PHOSPHORESCENT)
         .components(GTMaterials.PotassiumCyanide.multiply(4), GTMaterials.Biotite.multiply(7), GTMaterials.GelatinMixture.multiply(9), GTMaterials.get("experience_attuned").multiply(2))
 
+    event.create("hadal_sculk")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+
 })
 
 // Omnic Acid doesn't really have a "Processing Line", but there's nowhere better to really put it.
@@ -311,12 +314,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xCFC870)
         .components("1x calcium", "2x carbon")
 
-})
-
-// Hadal Sculk
-GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("hadal_sculk")
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 })
 
 // I don't know what this is for
