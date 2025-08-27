@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
             .inputFluids("gtceu:oxygen_plasma 16000")
             .itemInputs("kubejs:microversal_alchemy_kit")
             .inputFluids("gtceu:hydrogen 160000")
-            .inputFluids("gtceu:oxygen_plasma 40000")
+            .inputFluids("gtceu:helium 40000")
             .damageRate(15)
             .itemOutputs("64x kubejs:protomatter")
             .requiredMicroverse(4) // Corrupted
