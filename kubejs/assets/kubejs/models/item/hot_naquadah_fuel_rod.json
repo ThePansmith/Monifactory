@@ -3,6 +3,7 @@
     "textures": {
       "layer0":"kubejs:item/naquadah/empty_fuel_rod",
       "layer1":"kubejs:item/naquadah/naquadah_fuel_rod",
-      "layer2":"kubejs:item/naquadah/fuel_rod_overlay_hot"
+      "layer2":"kubejs:item/naquadah/rod_glow_purple",
+      "layer3":"kubejs:item/naquadah/fuel_rod_overlay_hot"
     }
 }

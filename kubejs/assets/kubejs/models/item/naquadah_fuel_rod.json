@@ -2,6 +2,7 @@
     "parent":"item/generated",
     "textures": {
       "layer0":"kubejs:item/naquadah/empty_fuel_rod",
-      "layer1":"kubejs:item/naquadah/naquadah_fuel_rod"
+      "layer1":"kubejs:item/naquadah/naquadah_fuel_rod",
+      "layer2":"kubejs:item/naquadah/rod_glow_purple"
     }
 }
