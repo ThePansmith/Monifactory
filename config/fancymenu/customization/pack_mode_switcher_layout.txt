@@ -3,13 +3,24 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_mode_switcher
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1756242106950
+  last_edited_time = 1756347217231
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:8f481075-cc17-4547-b3f8-886a85e50a4b-1756242102497] = [groups:][instances:]
+  [loading_requirement_container_meta:f8f1e904-a0e4-4d79-96dd-330e332dd3e3-1756347167573] = [groups:][instances:]
+}
+
+customization {
+  action = setscale
+  scale = 2.0
+}
+
+customization {
+  action = autoscale
+  basewidth = 1920
+  baseheight = 1080
 }
 
 customization {
@@ -49,7 +60,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
   x = -477
@@ -73,13 +84,13 @@ element {
 
 element {
   button_element_executable_block_identifier = 89549b53-0eda-4191-ad5e-27aa0e3f6e67-1756090075650
-  [executable_action_instance:a58422b2-7bb7-4363-8a69-517f688db69f-1756090088794][action_type:closegui] = 
+  [executable_action_instance:a58422b2-7bb7-4363-8a69-517f688db69f-1756090088794][action_type:closegui] =
   [executable_block:89549b53-0eda-4191-ad5e-27aa0e3f6e67-1756090075650][type:generic] = [executables:a58422b2-7bb7-4363-8a69-517f688db69f-1756090088794;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Exit to Main Menu
+  label = Main Menu
   navigatable = true
   widget_active_state_requirement_container_identifier = 5287438f-5cb4-4a6e-a527-2d71984a2681-1756090075650
   [loading_requirement_container_meta:5287438f-5cb4-4a6e-a527-2d71984a2681-1756090075650] = [groups:][instances:]
@@ -106,12 +117,12 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -121
-  y = -25
-  width = 100
+  x = 138
+  y = 8
+  width = 61
   height = 20
   stretch_x = false
   stretch_y = false
@@ -137,6 +148,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
+  description = Adds more lines and progression, removes HNN and Monicoin spending
   label = Hard Mode
   navigatable = true
   widget_active_state_requirement_container_identifier = 9470e504-65b4-40b2-8646-af913286d47d-1756055758125
@@ -164,12 +176,12 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 120
-  y = -30
-  width = 133
+  x = -95
+  y = -18
+  width = 152
   height = 20
   stretch_x = false
   stretch_y = false
@@ -195,6 +207,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
+  description = A modifier for hard, enables some of the more extreme GTm settings among other things
   label = Expert Mode
   navigatable = true
   widget_active_state_requirement_container_identifier = 9470e504-65b4-40b2-8646-af913286d47d-1756055758125
@@ -222,12 +235,12 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 121
-  y = 14
-  width = 137
+  x = -95
+  y = 20
+  width = 152
   height = 20
   stretch_x = false
   stretch_y = false
@@ -252,6 +265,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
+  description = Sends you to the README file on github which gives you more information about Hard Mode and Expert Mode.
   label = More info
   navigatable = true
   widget_active_state_requirement_container_identifier = 866ce313-6bde-4397-ac34-5abbb0b391d4-1756056299327
@@ -279,12 +293,12 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -119
-  y = 11
-  width = 95
+  x = 138
+  y = 35
+  width = 61
   height = 21
   stretch_x = false
   stretch_y = false
@@ -310,6 +324,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
+  description = The intended way to play Monifactory
   label = Normal Mode
   navigatable = true
   widget_active_state_requirement_container_identifier = 9470e504-65b4-40b2-8646-af913286d47d-1756055758125
@@ -337,12 +352,12 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 115
-  y = -71
-  width = 138
+  x = -95
+  y = -56
+  width = 152
   height = 20
   stretch_x = false
   stretch_y = false
