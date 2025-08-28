@@ -1,3 +1,4 @@
+// priority: 1
 /**
  * Recipes for Liquid Sculk, Sculk Catalyst, Sculk Core, and so on.
  */

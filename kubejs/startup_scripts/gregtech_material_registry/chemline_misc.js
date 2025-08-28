@@ -199,6 +199,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x666677)
         .components("10x carbon_monoxide", "5x chloroethane", "7x ammonium_formate", "9x dinitrogen_tetroxide", "2x neon", "1x tritium")
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
+
+    event.create("saturated_water")
+        .liquid()
+        .color(0x857049)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
 
 // Prism Glass Processing
@@ -246,6 +251,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x0a3538)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.STICKY, GTMaterialFlags.PHOSPHORESCENT)
         .components(GTMaterials.PotassiumCyanide.multiply(4), GTMaterials.Biotite.multiply(7), GTMaterials.GelatinMixture.multiply(9), GTMaterials.get("experience_attuned").multiply(2))
+
+    event.create("hadal_sculk")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
 })
 

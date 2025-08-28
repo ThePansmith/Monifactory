@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(6400, "highest", GTValues.VA[GTValues.LuV], 1600)
         .cableProperties(131072, 4, 0, true)
         .components("4x lead", "2x platinum", "blue_steel", "osmium", "tantalum", "mana")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FINE_WIRE)
 })
 
 

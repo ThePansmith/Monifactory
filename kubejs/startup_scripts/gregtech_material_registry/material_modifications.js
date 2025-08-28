@@ -73,7 +73,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     // Liquid Sculk
     let liquid_sculk_prop = new $FluidProperty();
-    liquid_sculk_prop.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder().temperature(310).disableBucket().customStill())
+    liquid_sculk_prop.getStorage().enqueueRegistration($FluidStorageKeys.LIQUID, new $FluidBuilder().temperature(310).customStill())
     GTMaterials.Sculk.setProperty($PropertyKey.FLUID, liquid_sculk_prop)
 
     let liquid_meat_prop = new $FluidProperty();
