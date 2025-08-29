@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = restart_game
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1756347318792
+  last_edited_time = 1756436310569
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:7743548a-0262-4494-955e-446dd1279ea6-1756347304415] = [groups:][instances:]
+  [loading_requirement_container_meta:e0a05642-70a6-4a92-82ae-8cd95102373b-1756436297131] = [groups:][instances:]
 }
 
 customization {
@@ -145,13 +145,13 @@ element {
   animated_offset_y = 0
   load_once_per_session = false
   in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
+  layer_hidden_in_editor = true
 }
 
 element {
   button_element_executable_block_identifier = 5260565a-8d5b-4731-b7f3-a65c6815b0e1-1756057094736
-  [executable_action_instance:b1160f76-88e3-47e3-a5be-cba7d4a6a294-1756070338133][action_type:packModeSwitcherAction] =
-  [executable_action_instance:6a760621-cb0a-4846-9c25-7c733a04043e-1756057115305][action_type:quitgame] =
+  [executable_action_instance:b1160f76-88e3-47e3-a5be-cba7d4a6a294-1756070338133][action_type:packModeSwitcherAction] = 
+  [executable_action_instance:6a760621-cb0a-4846-9c25-7c733a04043e-1756057115305][action_type:quitgame] = 
   [executable_block:5260565a-8d5b-4731-b7f3-a65c6815b0e1-1756057094736][type:generic] = [executables:b1160f76-88e3-47e3-a5be-cba7d4a6a294-1756070338133;6a760621-cb0a-4846-9c25-7c733a04043e-1756057115305;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
@@ -184,11 +184,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 131
-  y = -1
+  x = 142
+  y = 6
   width = 71
   height = 20
   stretch_x = false
@@ -203,7 +203,7 @@ element {
   animated_offset_y = 0
   load_once_per_session = false
   in_editor_color = #FFC800FF
-  layer_hidden_in_editor = false
+  layer_hidden_in_editor = true
 }
 
 element {
@@ -241,11 +241,11 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1080
+  auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 131
-  y = 27
+  x = 142
+  y = 32
   width = 71
   height = 20
   stretch_x = false

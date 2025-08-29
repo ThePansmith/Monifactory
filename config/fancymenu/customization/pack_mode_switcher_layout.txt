@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = pack_mode_switcher
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1756347217231
+  last_edited_time = 1756436276817
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:f8f1e904-a0e4-4d79-96dd-330e332dd3e3-1756347167573] = [groups:][instances:]
+  [loading_requirement_container_meta:928064f4-b221-45d3-9923-449aef8f4499-1756436250128] = [groups:][instances:]
 }
 
 customization {
@@ -84,7 +84,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 89549b53-0eda-4191-ad5e-27aa0e3f6e67-1756090075650
-  [executable_action_instance:a58422b2-7bb7-4363-8a69-517f688db69f-1756090088794][action_type:closegui] =
+  [executable_action_instance:a58422b2-7bb7-4363-8a69-517f688db69f-1756090088794][action_type:closegui] = 
   [executable_block:89549b53-0eda-4191-ad5e-27aa0e3f6e67-1756090075650][type:generic] = [executables:a58422b2-7bb7-4363-8a69-517f688db69f-1756090088794;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
@@ -120,8 +120,8 @@ element {
   auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 138
-  y = 8
+  x = 151
+  y = 9
   width = 61
   height = 20
   stretch_x = false
@@ -296,7 +296,7 @@ element {
   auto_sizing_base_screen_height = 1010
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 138
+  x = 151
   y = 35
   width = 61
   height = 21
