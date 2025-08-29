@@ -3,6 +3,7 @@
  */
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
+
     event.create("coal_fly_ash")
         .dust(1)
         .color(0xcf9c91).secondaryColor(0x524541)
@@ -56,4 +57,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("iron_mineral_solution")
         .fluid()
         .color(0x6b5a67)
+
+    event.create("aluminosilicate_leachate")
+        .liquid()
+        .color(0x776E82)
+        .components("4x lithium", "vanadium", "aluminium", "germanium")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
