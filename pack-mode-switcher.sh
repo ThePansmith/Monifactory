@@ -88,18 +88,18 @@ fi
 MODE=$(echo "$MODE" | tr '[:upper:]' '[:lower:]')
 case $MODE in
   n|normal)
-    cp -rf "$NORMAL_CFG/." ${TARGET}
+    cp -rf "$NORMAL_CFG/." "${TARGET}"
     echo normal > "$MODEFILE"
   ;;
 
   h|hard)
-    cp -rf "$HARDMODE_CFG/." ${TARGET}
+    cp -rf "$HARDMODE_CFG/." "${TARGET}"
     echo hard > "$MODEFILE"
   ;;
 
   e|expert)
-    cp -rf "$HARDMODE_CFG/." ${TARGET}
-    cp -rf "$EXPERT_CFG/." ${TARGET}
+    cp -rf "$HARDMODE_CFG/." "${TARGET}"
+    cp -rf "$EXPERT_CFG/." "${TARGET}"
     echo expert > "$MODEFILE"
   ;;
 
