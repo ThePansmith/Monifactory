@@ -37,6 +37,9 @@ ServerEvents.recipes(event => {
             {not: ignoreTypes, output: fluid},
             {not: ignoreTypes, input: fluid}
         ])
+
+        // Get rid of recipes involving the buckets too
+        event.remove([{ output: fluid.concat("_bucket") }, { input: fluid.concat("_bucket") }])
     })
 
     // Remove recipes that use items matching the unification patterns.
