@@ -1,7 +1,7 @@
 import Juke from "juke-build";
 
-import { CodegenCreditsTarget } from "./credits/target.js";
-import { CodegenLangsTarget } from "./langs/target.js";
+import { CodegenCreditsTarget } from "./credits/target.ts";
+import { CodegenLangsTarget } from "./langs/target.ts";
 
 export const CodegenAllTarget = new Juke.Target({
     dependsOn: [CodegenCreditsTarget, CodegenLangsTarget],

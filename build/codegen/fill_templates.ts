@@ -1,17 +1,14 @@
-// @ts-check
 import fs from "fs";
 
-/**
- * @typedef {Record<string, ((sub: string, match: string) => string) | string | number>} Filler
- */
+type Filler = Record<string, ((sub: string, match: string) => string) | string | number>
 
 /**
  * Replaces all specified marker substrings in a string.
- * @param {string} template Original string that contains markers.
- * @param {Filler} filler Dictionary of markers' regular expressions and corresponding fillers.
- * @returns {string} Modified string with all matches replaced.
+ * @param template Original string that contains markers.
+ * @param filler Dictionary of markers' regular expressions and corresponding fillers.
+ * @returns Modified string with all matches replaced.
  */
-export const fillTemplates = (template, filler) =>
+export const fillTemplates = (template: string, filler: Filler): string =>
     Object.entries(filler)
         .reduce((t, [key, value]) => {
             const regex = new RegExp(key, "g");
@@ -24,12 +21,11 @@ export const fillTemplates = (template, filler) =>
 
 /**
  * Replaces all specified marker substrings in a file and saves to another file.
- * @param {string} templateFilePath Template file path that contains markers.
- * @param {string} saveFilePath Path to the output file.
- * @param {Filler} filler Dictionary of markers and corresponding fillers.
- * @returns {void}
+ * @param templateFilePath Template file path that contains markers.
+ * @param saveFilePath Path to the output file.
+ * @param filler Dictionary of markers and corresponding fillers.
  */
-export const fillTemplateFile = (templateFilePath, saveFilePath, filler) =>
+export const fillTemplateFile = (templateFilePath: string, saveFilePath: string, filler: Filler) =>
     fs.writeFileSync(
         saveFilePath,
         fillTemplates(

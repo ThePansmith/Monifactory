@@ -1,5 +1,3 @@
-// @ts-check
-
 /** English to Upside Down character mapping */
 const UDMap = new Map(((a, b) => Array.from(a.entries()).map(([i, ca]) => [ca, b[i]]))(
     'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!^&*()-_[]{};\':",.<>/?'.split(""),
@@ -10,21 +8,19 @@ const regexFormatCode = /[&§][0-9a-fk-or]/;
 const regexColorCode = /[&§][^klmnor]/;
 
 /**
- * @param {string} str English string
- * @returns {string} Upside down string
+ * @param str English string
+ * @returns Upside down string
  */
-export const UDTransform = (str) => {
-    /** @type {{format: string; start: number; end: number; }[]} */
-    const fmtRanges = [];
+export const UDTransform = (str: string): string => {
+    type UnfinishedRange = {format: string; start: number; }
+    type FinishedRange = UnfinishedRange & { end: number; }
 
-    /** @typedef {{format: string; start: number; }[]} UnfinishedRanges */
+    const fmtRanges: FinishedRange[] = [];
 
-    /** @type {UnfinishedRanges} */
-    const unfinishedFmtRanges = [];
-    /** @type {UnfinishedRanges} */
-    const unfinishedColorRanges = [];
+    const unfinishedFmtRanges: UnfinishedRange[] = [];
+    const unfinishedColorRanges: UnfinishedRange[] = [];
 
-    const finishRanges = (/** @type {UnfinishedRanges} */ ranges, /** @type {number} */ i) =>
+    const finishRanges = (ranges: UnfinishedRange[], i: number) =>
         fmtRanges.push(
             ...ranges.splice(0).map((range) => ({
                 ...range,

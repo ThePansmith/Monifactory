@@ -2,12 +2,16 @@
   "dependencies": {
     "juke-build": "^0.9.0",
     "uuid": "^11.1.0",
-    "zod": "^3.24.1"
+    "zod": "^4.1.1"
   },
   "type": "module",
   "devDependencies": {
     "@stylistic/eslint-plugin-js": "^3.0.0",
+    "@types/node": "^24.1.0",
     "eslint": "^9.19.0",
     "globals": "^15.14.0"
+  },
+  "engines": {
+    "node": "^23.6.0"
   }
 }
