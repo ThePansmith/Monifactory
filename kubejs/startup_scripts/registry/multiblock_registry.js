@@ -554,7 +554,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where("K", Predicates.blocks("gtceu:fusion_coil"))
             .where("N", Predicates.blocks("gtceu:tungsten_frame"))
             .where("S", Predicates.blocks("ae2:spatial_pylon"))
-            .where("O", Predicates.blocks("kubejs:omnic_matrix_coil_block"))
+            .where("O", Predicates.blocks("gtceu:tritanium_coil_block"))
             .where("D", Predicates.blocks("gtceu:high_temperature_smelting_casing"))
             .where("A", Predicates.blocks("gtceu:naquadah_alloy_frame"))
             .where(" ", Predicates.air())
