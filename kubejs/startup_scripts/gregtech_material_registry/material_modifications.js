@@ -89,6 +89,21 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     osmiridium_ore_prop.setOreByProducts(GTMaterials.Iridium, GTMaterials.Osmium, GTMaterials.Ruthenium)
     GTMaterials.Osmiridium.setProperty($PropertyKey.ORE, osmiridium_ore_prop)
 
+    // Give Zincite an ore form
+    let zincite_ore_prop = new $OreProperty(2, 2);
+    zincite_ore_prop.setOreByProducts(GTMaterials.Iron, GTMaterials.Manganese)
+    GTMaterials.Zincite.setProperty($PropertyKey.ORE, zincite_ore_prop)
+
+    // Give Borax an ore form
+    let borax_ore_prop = new $OreProperty(1, 2);
+    borax_ore_prop.setOreByProducts(GTMaterials.Salt, GTMaterials.Boron, GTMaterials.RockSalt)
+    GTMaterials.Borax.setProperty($PropertyKey.ORE, borax_ore_prop)
+
+    // Give Iron II Chloride a dust form to replace fluid & recolor to match IRL anhydride.
+    // Removing the FluidProperty causes errors in GT's hard-coded recipes so we add the fluid to the nukelist instead
+    GTMaterials.Iron2Chloride.setProperty($PropertyKey.DUST, new $DustProperty());
+    GTMaterials.Iron2Chloride.setMaterialARGB(0xC5E1A5)
+
     // HM-exclusive modifications
     if (doHarderProcessing) {
         // GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());

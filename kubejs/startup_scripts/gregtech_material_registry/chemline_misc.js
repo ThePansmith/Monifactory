@@ -1,3 +1,4 @@
+// priority: 1
 /**
  * Material Registry for Processing Lines that register enough materials to get their own registry file.
  */
@@ -124,15 +125,17 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })
 
-// Wither Bone Processing
+// Ad Astra Ore processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-    event.create("plumbate")
+    event.create("germanium_disulfide")
         .dust()
-        .color(0x494351)
-        .components("1x lead", "1x tungsten", "4x oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .formula("Pb(WO3)O")
+        .color(0xf4f9e0)
+        .components(GTMaterials.Germanium.multiply(1), GTMaterials.Sulfur.multiply(2))
+    event.create("manganese_ii_chloride")
+        .dust()
+        .color(0xfcbdda)
+        .components(GTMaterials.Manganese.multiply(1), GTMaterials.Chlorine.multiply(2))
 })
 
 // JEAN Chemline

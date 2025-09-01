@@ -27,6 +27,7 @@ global.fluidNukeList = [
 
     // GregTech Modern
     "gtceu:molten_kanthal",
+    "gtceu:iron_ii_chloride",   // Removing the FluidProperty causes errors in GT's hard-coded recipes
 
     // Thermal Series
     "cofh_core:experience",
