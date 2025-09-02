@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.macerator("macerate_permafrost")
         .itemInputs("2x ad_astra:permafrost")
-        .itemOutputs("gtceu:ice_dust", "minecraft:dirt")
+        .itemOutputs("minecraft:dirt", "gtceu:ice_dust")
         .duration(200)
         .EUt(GTValues.VHA[GTValues.ULV])
 
