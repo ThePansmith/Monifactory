@@ -1,5 +1,5 @@
 /**
- * CODEGENERATED! To edit go to /tools/build/codegen/credits/Dev_Capes.template.js
+ * CODEGENERATED! To edit go to build/codegen/credits/Dev_Capes.template.js
  * Adds our fancy capes to contributors
  */
 CapeJS.addCapes(event => {

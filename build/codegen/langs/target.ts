@@ -1,18 +1,17 @@
-// @ts-check
 import { basename, dirname, join } from "path";
 import Juke from "juke-build";
 import fs from "fs";
-import { readDatafileJSON, writeDatafileJSON } from "../../lib/json_datafile.js";
-import { UDTransform } from "./en_ud.js";
+import { readDatafileJSON, writeDatafileJSON } from "../../lib/json_datafile.ts";
+import { UDTransform } from "./en_ud.ts";
 import { fileURLToPath } from "url";
 import z from "zod";
 
 /**
- * @param {string} name Input lang file name
- * @param {string} newName Output lang file name
- * @returns {{in: string; out: string;}[]} List of full input files paths and output file paths
+ * @param name Input lang file name
+ * @param newName Output lang file name
+ * @returns List of full input files paths and output file paths
  */
-const getAllInputLangsAndOutputLangs = (name, newName) =>
+const getAllInputLangsAndOutputLangs = (name: string, newName: string) =>
     fs
         .readdirSync(
             fileURLToPath(import.meta.resolve("../../")),

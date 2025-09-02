@@ -26,5 +26,5 @@ lint_check() {
 
 cd kubejs
 lint_check
-cd ../tools/build
+cd ../build
 lint_check

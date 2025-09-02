@@ -1,8 +1,21 @@
 import Juke from "juke-build";
 import fs from "fs";
 import https from "https";
+import { z } from "zod";
 
-export const GetModInfo = async (modID) => {
+const zCFModInfo = z.object({
+    data: z.object({
+        name: z.string(),
+        links: z.object({
+            websiteUrl: z.string().url(),
+        }),
+        authors: z.object({
+            name: z.string(),
+        }).array().nonempty(),
+    }),
+})
+
+export const GetModInfo = async (modID: number) => {
     const modData = await fetch(`https://api.curse.tools/v1/cf/mods/${modID}`, {
         redirect: "follow",
         headers: {
@@ -18,10 +31,19 @@ export const GetModInfo = async (modID) => {
         }
         throw new Juke.ExitCode(1);
     }
-    return (await modData.json()).data;
+    return zCFModInfo.parse(await modData.json()).data;
 }
 
-export const DownloadCF = async (modInfo = {}, dest, retrycount) => {
+const zCFModData = z.object({
+    data: z.object({
+        fileName: z.string().regex(/\.(?:jar|zip)$/),
+        fileLength: z.number().int().positive(),
+        downloadUrl: z.string().url(),
+    }),
+})
+type CFModData = z.infer<typeof zCFModData>
+
+export const DownloadCF = async (modInfo: { modID?: number, modFileID?: number } = {}, dest: fs.PathLike, retrycount?: number): Promise<CFModData['data']> => {
     if (retrycount === null || retrycount === undefined) {
         retrycount = 5;
     }
@@ -50,7 +72,7 @@ export const DownloadCF = async (modInfo = {}, dest, retrycount) => {
         retrycount--;
         return await DownloadCF(modInfo, dest, retrycount);
     }
-    const modDataJson = (await modData.json()).data;
+    const { data: modDataJson } = zCFModData.parse(await modData.json());
 
     dest = `${dest}${modDataJson.fileName}`
     // TODO hash chk
@@ -86,8 +108,8 @@ export const DownloadCF = async (modInfo = {}, dest, retrycount) => {
     return modDataJson;
 };
 
-async function download_file(url, options = {}, file) {
-    return new Promise((resolve, reject) => {
+async function download_file(url: string, options = {}, file: string) {
+    return new Promise<void>((resolve, reject) => {
         let file_stream = fs.createWriteStream(file);
         https.get(url, options, function(response) {
             if (response.statusCode === 302) {

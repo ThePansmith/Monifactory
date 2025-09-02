@@ -1,24 +1,20 @@
-// @ts-check
 import Juke from "juke-build";
 import fs from "fs";
 import { fileURLToPath } from "url";
 import { v5 as uuid5 } from "uuid";
 import z from "zod";
 
-import { readDatafileJSON } from "../../lib/json_datafile.js";
-import { fillTemplateFile, fillTemplates } from "../fill_templates.js";
+import { readDatafileJSON } from "../../lib/json_datafile.ts";
+import { fillTemplateFile, fillTemplates } from "../fill_templates.ts";
 import { hash } from "crypto";
 
-/**
- * @param {string} f
- */
-const resolveNeighbourFilePath = (f) => fileURLToPath(import.meta.resolve("./" + f));
+const resolveNeighbourFilePath = (f: string) => fileURLToPath(import.meta.resolve("./" + f));
 
 const contributorsFilePath = resolveNeighbourFilePath("contributors.json");
 
 const devCapesFilePath = "kubejs/client_scripts/Dev_Capes.js";
-const devCapeTemplateFilePath = resolveNeighbourFilePath("Dev_Cape.template.js");
-const devCapesTemplateFilePath = resolveNeighbourFilePath("Dev_Capes.template.js");
+const devCapeTemplateFilePath = resolveNeighbourFilePath("Dev_Cape.template.ts");
+const devCapesTemplateFilePath = resolveNeighbourFilePath("Dev_Capes.template.ts");
 
 const creditScreenLayoutFilePath = "config/fancymenu/customization/pack_credit_screen_layout.txt";
 const creditScreenLayoutTemplateFilePath = resolveNeighbourFilePath("pack_credit_screen_layout.template.txt");
@@ -76,7 +72,7 @@ export const CodegenCreditsTarget = new Juke.Target({
             { encoding: "utf8" },
         );
 
-        const getCapesByRole = (/** @type {z.infer<zRole>} */ role) =>
+        const getCapesByRole = (role: z.infer<typeof zRole>) =>
             Object
                 .entries(people)
                 .filter(([, data]) => data.mcuuid && data.role?.includes(role))
