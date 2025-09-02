@@ -1,0 +1,72 @@
+{
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "downfall": 1.0,
+  "effects": {
+    "fog_color": 12638463,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "sky_color": 12638463,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [],
+    [],
+    [],
+    [
+      "ad_astra:glacio_coal_ore",
+      "ad_astra:glacio_copper_ore",
+      "ad_astra:glacio_ice_shard_ore",
+      "ad_astra:glacio_iron_ore",
+      "ad_astra:glacio_lapis_ore",
+      "ad_astra:glacio_deepslate_coal_ore",
+      "ad_astra:glacio_deepslate_copper_ore",
+      "ad_astra:glacio_deepslate_iron_ore",
+      "ad_astra:glacio_deepslate_lapis_ore"
+    ],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "ad_astra:glacian_tree"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "ad_astra:glacian_ram",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 12
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": -0.7
+}

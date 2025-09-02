@@ -1,0 +1,66 @@
+{
+  "feature": "ad_astra:glacian_tree",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 48
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": 3,
+            "weight": 6
+          },
+          {
+            "data": 4,
+            "weight": 3
+          },
+          {
+            "data": 5,
+            "weight": 1
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "up",
+      "max_steps": 8,
+      "target_condition": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:matching_blocks",
+          "blocks": "minecraft:powder_snow"
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "minecraft:snow_block",
+          "minecraft:powder_snow"
+        ],
+        "offset": [
+          0,
+          -1,
+          0
+        ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}
