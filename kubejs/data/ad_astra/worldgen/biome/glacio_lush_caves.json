@@ -62,7 +62,8 @@
       "minecraft:lush_caves_clay",
       "minecraft:lush_caves_vegetation",
       "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "minecraft:classic_vines_cave_feature",
+      "ad_astra:glacian_tree"
     ],
     [
       "minecraft:freeze_top_layer"

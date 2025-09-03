@@ -34,12 +34,12 @@
           "biome": "ad_astra:glacio_lush_caves",
           "parameters": {
             "temperature": 0.5,
-            "humidity": 1.5,
+            "humidity": -0.3,
             "continentalness": 0,
             "erosion": 0,
-            "weirdness": 1.0,
-            "depth": 1.0,
-            "offset": 1.0
+            "weirdness": -1.0,
+            "depth": 0.8,
+            "offset": 0.8
           }
         }
       ]
