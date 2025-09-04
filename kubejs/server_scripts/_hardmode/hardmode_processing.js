@@ -186,6 +186,7 @@ ServerEvents.recipes(event => {
         // Niobium/Tantalum
         event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_pyrochlore" })
         event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_tantalite" })
+        event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_columbite"})
 
         event.recipes.gtceu.chemical_bath("bathe_pyrochlore_dust")
             .itemInputs("11x gtceu:pyrochlore_dust")
@@ -198,6 +199,13 @@ ServerEvents.recipes(event => {
             .itemInputs("9x gtceu:tantalite_dust")
             .inputFluids("gtceu:hydrofluoric_acid 2000")
             .itemOutputs("7x gtceu:tantalum_pentoxide_dust", "gtceu:niobium_pentoxide_dust", "3x gtceu:manganese_difluoride_dust")
+            .outputFluids("minecraft:water 1000")
+            .duration(200).EUt(480)
+
+        event.recipes.gtceu.chemical_bath("bathe_columbite_dust")
+            .itemInputs("9x gtceu:columbite_dust")
+            .inputFluids("gtceu:hydrofluoric_acid 2000")
+            .itemOutputs("7x gtceu:niobium_pentoxide_dust", "gtceu:tantalum_pentoxide_dust", "3x gtceu:iron_ii_fluoride_dust")
             .outputFluids("minecraft:water 1000")
             .duration(200).EUt(480)
 
