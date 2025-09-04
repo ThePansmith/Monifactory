@@ -412,8 +412,8 @@ ServerEvents.recipes(event => {
         .EUt(3932160)
 
     // Cables
-    // UV+ cables are made only with SBR and PEEK, UV-UHV cables require neutronium, UEV cables require meta_null
-    const endgameCables = ["tritanium", "yttrium_barium_cuprate", "naquadah_alloy", "europium", "omnium", "darconite", "necrosiderite"];
+    // UHV+ cables are made only with SBR and PEEK, UHV cables require neutronium, UEV+ cables require meta_null
+    const endgameCables = ["europium", "omnium", "darconite", "necrosiderite"];
     const cablematsUEV = ["omnium", "darconite", "necrosiderite"];
 
     endgameCables.forEach(mat => event.remove({ id: new RegExp(`cover_${mat}_wire_gt_.*_silicone`) }));
