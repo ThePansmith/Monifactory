@@ -486,6 +486,18 @@ ServerEvents.recipes(event => {
         .duration(255)
         .EUt(GTValues.VA[GTValues.UEV])
 
+    event.recipes.gtceu.assembly_line("causality_exempt_monic_plating")
+        .itemInputs("gtceu:double_monium_plate", "kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "gtceu:double_monium_plate")
+        .inputFluids("gtceu:living_soldering_alloy 2880")
+        .itemOutputs("kubejs:causality_exempt_monic_heavy_plating")
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .stationResearch(b => b
+            .researchStack("kubejs:causality_exempt_monic_heavy_plating")
+            .CWUt(96, 57600)
+            .EUt(GTValues.VA[GTValues.UEV])
+        )
+
     // Shortcut recipes for thrusters
     event.recipes.gtceu.assembler("kubejs:assembler_dark_soularium_thruster")
         .itemInputs("4x gtceu:dark_soularium_plate", "6x gtceu:vibrant_alloy_plate", "2x enderio:weather_crystal", "2x enderio:prescient_crystal", "laserio:energy_overclocker_card_tier_8", "kubejs:flight_control_unit")

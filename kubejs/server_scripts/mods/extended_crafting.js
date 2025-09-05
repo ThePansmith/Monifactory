@@ -261,12 +261,6 @@ ServerEvents.recipes(event => {
         16000000, 1600000
     )
 
-    event.recipes.extendedcrafting.combination(
-        "kubejs:timeless_monic_heavy_plating",
-        "gtceu:monium_plate", ["kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating", "kubejs:contained_singularity"],
-        536870912, 53687091
-    )
-
     // Infinity Ingots
     event.recipes.extendedcrafting.combination(
         "gtceu:infinity_ingot",
