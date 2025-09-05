@@ -87,11 +87,8 @@ StartupEvents.registry("item", event => {
     event.create("dimensionally_stabilized_infinity_heavy_plating")
         .displayName("§dDimensionally Stabilized Infinity Heavy Plating")
         .texture("kubejs:item/microverse/infinity_heavy_plating")
-    event.create("timeless_monic_heavy_plating")
-        .displayName("§dTimeless Monic Heavy Plating")
-        .texture("kubejs:item/microverse/dormant_monic_heavy_plating")
     event.create("causality_exempt_monic_heavy_plating")
-        .displayName("§1Causality Exempt Monic Heavy Plating")
+        .displayName("§9Causality Exempt Monic Heavy Plating")
         .texture("kubejs:item/microverse/monic_heavy_plating")
 
 

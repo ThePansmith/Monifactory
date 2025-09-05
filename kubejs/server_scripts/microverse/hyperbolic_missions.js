@@ -78,14 +78,4 @@ ServerEvents.recipes(event => {
             .updateMicroverse(0)
             .blacklistMicroverseParallels()
     })
-
-    microverse_mission(event, 12, 4, undefined, GTValues.VA[GTValues.UIV]).forEach(builder => {
-        builder
-            .itemInputs("8x kubejs:timeless_monic_heavy_plating")
-            .damageRate(80)
-            .itemOutputs("4x kubejs:causality_exempt_monic_heavy_plating")
-            .requiredMicroverse(4) // Corrupted
-            .updateMicroverse(0)
-            .blacklistMicroverseParallels()
-    })
 })
