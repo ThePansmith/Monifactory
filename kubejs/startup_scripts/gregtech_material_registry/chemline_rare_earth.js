@@ -4,7 +4,7 @@
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-    event.create("rare_earth_sulfate_soln")
+    event.create("rare_earth_sulfate_solution")
         .fluid()
         .color(0xb56e3c)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
@@ -14,8 +14,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xf5cb9a)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("oxidized_re_mixture")
-        .fluid()
+    event.create("oxidized_re_sludge")
+        .dust()
         .color(0x331b01)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
@@ -39,6 +39,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x4f7823)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    event.create("terbium_oxide")
+        .dust()
+        .color(0x3d3214)
+        .components("2x terbium", "3x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
     event.create("europium_oxide")
         .dust()
         .color(0x807e32)
@@ -55,6 +61,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0xfcfceb)
         .components("1x lutetium", "3x fluorine")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("cuprous_oxide")
         .dust()
