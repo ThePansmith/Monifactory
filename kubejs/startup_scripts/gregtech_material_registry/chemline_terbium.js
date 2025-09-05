@@ -3,13 +3,6 @@
  */
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("ammonium_oxalate")
-        .dust()
-        .color(0x2596be)
-        .components("2x ammonia", "2x carbon", "4x oxygen", "2x hydrogen")
-        .formula("(NH4)2C2O4")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
     event.create("oxalic_acid_dihydrate")
         .dust()
         .color(0xfafaf7)
@@ -22,18 +15,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xf7f7f5)
         .components("2x hydrogen", "2x carbon", "4x oxygen")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create("ammonium_carbonate")
-        .dust()
-        .color(0x91918e)
-        .components("2x ammonia", "1x carbon_dioxide", "1x water")
-        .formula("(NH4)2CO3")
-
-    event.create("ammonium_nitrate")
-        .dust()
-        .color(0xF5F5F5)
-        .components("1x ammonia", "1x nitric_acid")
-        .formula("(NH4)NO3")
 
     event.create("thorium_hydroxide")
         .dust()
