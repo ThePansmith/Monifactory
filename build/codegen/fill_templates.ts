@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "fs"
 
 type Filler = Record<string, ((sub: string, match: string) => string) | string | number>
 
@@ -11,13 +11,13 @@ type Filler = Record<string, ((sub: string, match: string) => string) | string |
 export const fillTemplates = (template: string, filler: Filler): string =>
     Object.entries(filler)
         .reduce((t, [key, value]) => {
-            const regex = new RegExp(key, "g");
+            const regex = new RegExp(key, "g")
             // TS does not allow for ternary inside replaceAll
             if (typeof value === "function") {
-                return t.replaceAll(regex, value);
+                return t.replaceAll(regex, value)
             }
-            return t.replaceAll(regex, value.toString());
-        }, template);
+            return t.replaceAll(regex, value.toString())
+        }, template)
 
 /**
  * Replaces all specified marker substrings in a file and saves to another file.
@@ -32,4 +32,4 @@ export const fillTemplateFile = (templateFilePath: string, saveFilePath: string,
             fs.readFileSync(templateFilePath, { encoding: "utf8" }),
             filler,
         ),
-    );
+    )

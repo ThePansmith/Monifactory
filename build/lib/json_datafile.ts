@@ -1,5 +1,5 @@
-import fs from "fs";
-import Juke from "juke-build";
+import fs from "fs"
+import Juke from "juke-build"
 
 /**
  * Reads JSON from a file.
@@ -8,14 +8,16 @@ import Juke from "juke-build";
  */
 export const readDatafileJSON = (path: string) => {
     try {
+        // TODO
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
         return JSON.parse(fs.readFileSync(path, {
             encoding: "utf8",
-        }));
+        }))
     } catch {
-        Juke.logger.error("Failed to read JSON at " + path);
-        throw new Juke.ExitCode(1);
+        Juke.logger.error("Failed to read JSON at " + path)
+        throw new Juke.ExitCode(1)
     }
-};
+}
 
 /**
  * Writes JSON to a file.
@@ -23,4 +25,4 @@ export const readDatafileJSON = (path: string) => {
  * @param data JSON
  */
 export const writeDatafileJSON = (path: string, data: unknown) =>
-    fs.writeFileSync(path, JSON.stringify(data, null, 2), "utf8");
+    fs.writeFileSync(path, JSON.stringify(data, null, 2), "utf8")

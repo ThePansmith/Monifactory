@@ -1,21 +1,29 @@
 /**
  * ESLint configuration file.
  */
+// @ts-check
 
-import js from "@eslint/js";
-import stylistic from "@stylistic/eslint-plugin-js";
-import globals from "globals";
-
-const ignores = [
-    "**/*.template.*"
-]
+import tslint from "typescript-eslint"
+import stylistic from "@stylistic/eslint-plugin"
+import globals from "globals"
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
     {
-        ...js.configs.recommended,
-        ignores,
+        ignores: [
+            "**/*.template.ts",
+        ],
     },
+    {
+        languageOptions: {
+            parserOptions: {
+                projectService: true,
+                tsconfigRootDir: import.meta.dirname,
+            },
+        },
+    },
+    ...tslint.configs.recommended,
+    ...tslint.configs.recommendedTypeChecked,
     {
         plugins: {
             "@stylistic/js": stylistic,
@@ -29,10 +37,10 @@ export default [
             "@stylistic/js/linebreak-style": ["error", "unix"],
             "@stylistic/js/no-extra-semi": "error",
             "@stylistic/js/quotes": ["error", "double", { avoidEscape: true }],
+            "@stylistic/js/semi": ["error", "never"],
         },
-        ignores,
         languageOptions: {
             globals: globals.nodeBuiltin
-        }
+        },
     },
-];
+]
