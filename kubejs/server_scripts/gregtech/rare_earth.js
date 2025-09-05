@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:terbium_solution 200", "gtceu:lutetium_solution 500")
         .duration(160)
         .EUt(GTValues.VA[GTValues.IV])
-// Terbium
+    // Terbium
     event.recipes.gtceu.electric_blast_furnace("blast_terbium_solution")
         .inputFluids("gtceu:terbium_solution 1000")
         .outputFluids("gtceu:steam 9600")
@@ -76,13 +76,13 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(GTValues.VA[GTValues.HV])
 
-// Lutetium
+    // Lutetium
     event.recipes.gtceu.large_chemical_reactor("lutetium_solution_acid_wash")
-         .inputFluids("gtceu:lutetium_solution 1000", "gtceu:hydrofluoric_acid 6000")
-         .itemOutputs("8x gtceu:lutetium_fluoride_dust")
-         .outputFluids("minecraft:water 3000")
-         .duration(160)
-         .EUt(GTValues.VA[GTValues.IV])
+        .inputFluids("gtceu:lutetium_solution 1000", "gtceu:hydrofluoric_acid 6000")
+        .itemOutputs("8x gtceu:lutetium_fluoride_dust")
+        .outputFluids("minecraft:water 3000")
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.IV])
 
     event.recipes.gtceu.electric_blast_furnace("lutetium_fluoride_blast")
         .itemInputs("8x gtceu:lutetium_fluoride_dust", "3x gtceu:calcium_dust")
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
         .duration(120).EUt(7680)
         .blastFurnaceTemp(2300)
 
-// Europium
+    // Europium
     event.recipes.gtceu.large_chemical_reactor("europium_oxide_reduction_lcr")
         .itemInputs("5x gtceu:europium_oxide_dust", "1x gtceu:zinc_dust")
         .itemOutputs("4x gtceu:europium_ii_oxide_dust", "2x gtceu:zincite_dust")
