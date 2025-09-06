@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:advanced_soldering_alloy 5616")
         .duration(525)
         .EUt(GTValues.VA[GTValues.HV])
-        .circuit(10)
+        .circuit(16)
         .blastFurnaceTemp(1211)
 
     // Living Soldering Alloy
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:living_soldering_alloy 6192")
         .duration(675)
         .EUt(GTValues.VA[GTValues.IV])
-        .circuit(10)
+        .circuit(16)
         .blastFurnaceTemp(1916)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
 })
