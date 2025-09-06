@@ -3,8 +3,6 @@
     "interpolate": true,
     "frametime": 3,
     "frames": [
-      { "index": 0, "time": 22 },
-    0,
     1,
     2,
     3,
@@ -17,7 +15,10 @@
     10,
     11,
     12,
-    13
+    13,
+    0,
+      { "index": 0, "time": 19 },
+    0
     ]
   }
 }
