@@ -1,4 +1,4 @@
-f/**
+/**
  * Block Registry - defines ID, name,
  * block properties, and block tags of custom blocks.
  */
