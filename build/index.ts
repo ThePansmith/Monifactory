@@ -250,23 +250,6 @@ export const DownloadModsTarget = new Juke.Target({
     }
 });
 
-export const CopyModsTarget = new Juke.Target({
-    dependsOn: [DownloadModsTarget],
-    inputs: [
-        "manifest.json"
-    ],
-    outputs: () => (["mods/"]),
-    executes: async() => {
-        if(fs.existsSync("mods/")) {
-            fs.rmdirSync("mods/", { recursive : true})
-        }
-        fs.mkdirSync("mods/")
-        fs.cpSync("dist/modcache", "mods/", { recursive: true });
-        Juke.logger.log("Mods Installed")
-        
-    }
-})
-
 export const BuildClientTarget = new Juke.Target({
     dependsOn: [CodegenAllTarget, BuildModlistTarget],
     inputs: [
