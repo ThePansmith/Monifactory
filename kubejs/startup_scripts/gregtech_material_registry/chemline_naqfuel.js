@@ -31,20 +31,10 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xFFF382)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("hot_piranha_solution")
-        .liquid()
-        .color(0xFFC582)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
     event.create("tritium_radon_difluoride")
         .gas()
         .color(0xFF5462)
         .components("1x tritium", "1x radon", "2x fluorine")
-
-    event.create("inert_naquadah_blend")
-        .liquid()
-        .color(0x80D463)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("active_naquadah_blend")
         .liquid()
