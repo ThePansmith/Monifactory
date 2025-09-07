@@ -9,11 +9,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xb56e3c)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("re_oxalate_solution")
-        .fluid()
-        .color(0xf5cb9a)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
     event.create("oxidized_re_sludge")
         .dust()
         .color(0x331b01)
