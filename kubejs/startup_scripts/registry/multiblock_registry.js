@@ -706,7 +706,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .aisle("#IIIIIIIII#", "###F###F###", "###F###F###", "###F###F###", "###FIIIF###", "###FIEIF###", "###FIIIF###", "###FFFFF###", "###########", "###########", "###########", "###########", "###########", "###########", "###IIHII###", "###########")
             .aisle("###IIIII###", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########", "###########")
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("H", Predicates.blocks(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING.get()).setMinGlobalLimited(115)
+            .where("H", Predicates.blocks(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING.get()).setMinGlobalLimited(110)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
