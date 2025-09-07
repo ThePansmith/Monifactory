@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
 
     // Infinity Bimetal Gear
     event.recipes.gtceu.alloy_smelter("kubejs:infinity_gear")
-        .itemInputs("gtceu:iron_gear", "2x enderio:grains_of_infinity")
+        .itemInputs("gtceu:iron_gear", "2x gtceu:obsidian_dust")
         .itemOutputs("enderio:iron_gear")
         .duration(100)
         .EUt(GTValues.VHA[GTValues.LV])
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: "enderio:basic_capacitor" })
 
     const capacitorCores = [
-        ["enderio:grains_of_infinity", 1],
+        ["gtceu:obsidian_dust", 1],
         ["#gtceu:circuits/ulv", 2],
         ["gtceu:capacitor", 4],
         ["gtceu:smd_capacitor", 5],
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
     // chassis. "industrial machine chassis"
     event.remove({ output: "enderio:void_chassis" })
     event.recipes.gtceu.alloy_smelter("kubejs:void_chassis")
-        .itemInputs("gtceu:lv_machine_hull", "2x #forge:dusts/grains_of_infinity")
+        .itemInputs("gtceu:lv_machine_hull", "2x gtceu:obsidian_dust")
         .itemOutputs("enderio:void_chassis")
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
@@ -167,12 +167,6 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_smelter("kubejs:ensouled_chassis")
         .itemInputs("enderio:void_chassis", "6x #forge:dusts/soularium")
         .itemOutputs("enderio:ensouled_chassis")
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.alloy_smelter("kubejs:infinity_rod")
-        .itemInputs("gtceu:dark_steel_rod", "enderio:grains_of_infinity")
-        .itemOutputs("enderio:infinity_rod")
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 
