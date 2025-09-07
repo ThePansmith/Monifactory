@@ -22,7 +22,6 @@ ServerEvents.recipes(event => {
         ["gtceu:topaz_gem", "minecraft:prismarine_crystals", GTValues.VA[GTValues.MV], "prismarine_crystals"],
         ["gtceu:steel_ingot", "gtceu:damascus_steel_ingot", GTValues.VA[GTValues.MV], "damascus_steel"],
         ["gtceu:diamatine_block", "kubejs:starry_diamond_block", GTValues.VA[GTValues.MV], "starry_diamond"],
-        ["gtceu:obsidian_dust", "enderio:grains_of_infinity", GTValues.VA[GTValues.LV], "temp_grains"],
         ["minecraft:dried_kelp", "minecraft:wither_rose", GTValues.VA[GTValues.LV], "wither_rose"],
         ["gtceu:plant_ball", "minecraft:kelp", GTValues.VA[GTValues.LV], "kelp"],
         ["minecraft:obsidian", "minecraft:crying_obsidian", GTValues.VA[GTValues.LV], "crying_obsidian"],
