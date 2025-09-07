@@ -399,6 +399,9 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: "enderio:travel_anchor" }, "enderio:conduit_binder", "#forge:plates/vibrant_alloy")
     event.replaceInput({ id: "enderio:travel_anchor" }, "iron_ingot", "#forge:plates/dark_steel")
 
+    // staff of levity
+    event.replaceInput({ id: "enderio:staff_of_levity" }, "enderio:infinity_rod", "#forge:rods/dark_steel")
+
     // coordinate selector
     event.remove({ id: "enderio:coordinate_selector" })
     event.shaped("enderio:coordinate_selector", [
