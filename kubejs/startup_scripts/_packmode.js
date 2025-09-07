@@ -113,7 +113,6 @@ global.doMonicoins = packMode == "Normal";
 global.doSnad = packMode == "Normal" || packMode == "Hard";
 global.doSteamAge = packMode == "Hard" || packMode == "Expert";
 global.doEUP2P = packMode == "Normal"
-global.doStoneline = packMode == "Hard" || packMode == "Expert";
 global.doFluxbore = packMode == "Normal" || packMode == "Hard";
 global.doHarderFluxBore = packMode == "Normal" || packMode == "Hard";
 global.doQuantumCoolant = packMode == "Hard" || packMode == "Expert";
@@ -137,7 +136,6 @@ const doMeowniPlush = !!global.doMeowniPlush;
 const doMonicoins = !!global.doMonicoins;
 const doSnad = !!global.doSnad;
 const doSteamAge = !!global.doSteamAge;
-const doStoneline = !!global.doStoneline;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
 const doQuantumCoolant = !!global.doQuantumCoolant;

@@ -150,15 +150,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("3x darmstadtium", "4x cobalt", "2x nitrogen", "1x hyperdegenerate_matter")
         .cableProperties(GTValues.V[GTValues.UEV], 64, 0, true)
         .flags(GTMaterialFlags.DISABLE_ALLOY_BLAST, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_FINE_WIRE)
-
-
-    // Taranium is to my knowledge from Doctor Who, but that's not a Minecraft mod so in here Taranium goes!
-
-    if (doStoneline) {
-        event.create("taranium")
-            .ingot().fluid()
-            .element(GTElements.get("taranium"))
-            .color(0xff00ff).iconSet("bright")
-            .blastTemp(10800, "highest")
-    }
 })

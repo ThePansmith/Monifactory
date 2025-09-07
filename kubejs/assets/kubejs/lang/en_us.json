@@ -162,15 +162,6 @@
   "item.kubejs.petri_dish_bacteria": "Bacteria Petri Dish",
   "item.kubejs.petri_dish_sculk": "Sculk Petri Dish",
 
-  "item.kubejs.reactive_dust_mixture": "Reactive Dust Mixture",
-  "item.kubejs.inert_dust_mixture": "Inert Dust Mixture",
-  "item.kubejs.dusty_inert_powder": "Dusty Inert Powder",
-  "item.kubejs.shiny_powder_mixture": "Shiny Powder Mixture",
-  "item.kubejs.shiny_metal_powder": "Shiny Metal Powder",
-  "item.kubejs.inert_clumps": "Inert Clumps",
-  "item.kubejs.clean_inert_cluster": "Clean Inert Cluster",
-  "item.kubejs.eltic_crystal_seed": "Eltic Crystal Seed",
-
   "item.kubejs.empty_fuel_rod": "Empty Fuel Rod",
   "item.kubejs.naquadah_fuel_pellet": "Naquadah Fuel Pellet",
   "item.kubejs.naquadah_fuel_rod": "Naquadah Fuel Rod",

@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.chemical_reactor("beryllium_oxide")
             .itemInputs("gtceu:beryllium_dust")
             .inputFluids("gtceu:oxygen 1000")
-            .itemOutputs("gtceu:beryllium_oxide_ingot")
+            .itemOutputs("2x gtceu:beryllium_oxide_ingot")
             .duration(640).EUt(30)
 
         // Graphene
@@ -301,9 +301,9 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.chemical_reactor("caesium_hydroxide")
             .itemInputs("gtceu:caesium_dust")
-            .inputFluids("minecraft:water 3000")
+            .inputFluids("minecraft:water 1000")
             .itemOutputs("3x gtceu:caesium_hydroxide_dust")
-            .outputFluids("gtceu:hydrogen 3000")
+            .outputFluids("gtceu:hydrogen 1000")
             .duration(5).EUt(7)
 
         event.recipes.gtceu.large_chemical_reactor("neocryolite")
