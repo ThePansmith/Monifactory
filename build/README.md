@@ -7,7 +7,6 @@ Juke is a Node.js library, [install Node and NPM](https://nodejs.org/en/download
 
 
 Build steps (**Requires Node 23 or later**):
-- Go to `build` directory.
 - Run `npm install`.
 - Run `node index.ts`.
 
