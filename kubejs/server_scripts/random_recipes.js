@@ -409,6 +409,7 @@ ServerEvents.recipes(event => {
         .itemInputs("kubejs:radium_salt")
         .itemOutputs("gtceu:rock_salt_dust")
         .outputFluids(Fluid.of("gtceu:radon", 1000))
+        .circuit(1)
         .duration(200)
         .EUt(2000)
 
