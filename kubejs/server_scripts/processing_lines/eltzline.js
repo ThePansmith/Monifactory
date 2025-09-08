@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.distillation_tower("distill_dirty_hexafluorosilicic_solution")
         .inputFluids("gtceu:dirty_hexafluorosilicic_solution 30000")
         .outputFluids("gtceu:hexafluorosilicic_acid 10000", "minecraft:water 20000")
-        .chancedOutput("gtceu:aluminosilicate_residue_dust", 5000, 0)
+        .chancedOutput("gtceu:aluminosilicate_residue_dust", 3333, 0)
         .duration(30 * 20)
         .EUt(GTValues.VA[GTValues.MV])
         .disableDistilleryRecipes(true)
@@ -125,24 +125,26 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_bath("bathe_aluminosilicate_residue")
         .itemInputs("gtceu:aluminosilicate_residue_dust")
         .inputFluids("gtceu:helium_plasma 1000")
-        .itemOutputs("gtceu:small_bauxite_dust", "gtceu:small_garnet_sand_dust", "gtceu:small_silicon_dioxide_dust")
-        .outputFluids("gtceu:dusty_helium 1500")
-        .duration(200)
-        .EUt(GTValues.VHA[GTValues.EV])
+        .itemOutputs("gtceu:small_bauxite_dust", "gtceu:small_silicon_dioxide_dust", "gtceu:small_garnet_sand_dust")
+        .outputFluids("gtceu:dusty_helium 1250")
+        .duration(150)
+        .EUt(GTValues.VHA[GTValues.IV])
 
     event.recipes.gtceu.centrifuge("centrifuging_dusty_helium")
         .inputFluids("gtceu:dusty_helium 1000")
         .outputFluids("gtceu:eltz-enriched_helium 150", "gtceu:eltz-depleted_helium 850")
         .duration(400)
-        .EUt(GTValues.VHA[GTValues.IV])
+        .EUt(GTValues.VHA[GTValues.EV])
 
     event.recipes.gtceu.centrifuge("centrifuging_eltz-depleted_helium")
         .inputFluids("gtceu:eltz-depleted_helium 1000")
         .itemOutputs("gtceu:small_metal_mixture_dust")
+        .chancedOutput("gtceu:fly_ash_aluminosilicate_dust", 1000, 0)
         .outputFluids("gtceu:helium 725")
         .duration(320)
         .EUt(GTValues.VA[GTValues.MV])
 
+    // Bootstrap recipe to start the Eltz Crystal growing from Tiny Eltz Dust + Eltic Sludge
     event.recipes.gtceu.centrifuge("centrifuging_eltz-enriched_helium")
         .inputFluids("gtceu:eltz-enriched_helium 1500")
         .notConsumable("kubejs:magnetron")
@@ -151,27 +153,81 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.ZPM])
 
-    event.recipes.gtceu.mixer("mixing_eltz-saturated_water")
-        .inputFluids("gtceu:eltz-enriched_helium 1000", "gtceu:dirty_hexafluorosilicic_solution 6000")
-        .itemInputs("5x gtceu:aluminosilicate_residue_dust")
-        .outputFluids("gtceu:eltz-saturated_water 9000")
-        .duration(5 * 9 * 20)
+    event.recipes.gtceu.mixer("mixing_eltic_sludge")
+        .inputFluids("gtceu:eltz-enriched_helium 1000", "gtceu:dirty_hexafluorosilicic_solution 3000")
+        .itemInputs("4x gtceu:aluminosilicate_residue_dust")
+        .itemOutputs("8x gtceu:eltic_sludge_dust")
+        .duration(5 * 8 * 20)
         .EUt(GTValues.VA[GTValues.MV])
 
-    event.recipes.gtceu.autoclave("crystallize_impure_eltic")
-        .itemInputs("1x monilabs:tiny_eltz_dust")
-        .chancedInput("1x minecraft:amethyst_shard", 2000, 0)
-        .inputFluids("gtceu:eltz-saturated_water 750")
-        .itemOutputs("1x gtceu:impure_eltic_gem")
-        .outputFluids("minecraft:water 250")
-        .duration(1000)
-        .EUt(GTValues.VA[GTValues.EV])
+    /*
+    In the event that this turns out to be a bad or boring idea,
+    consider the option of making Eltz grow from a Flawed Budding Crystal akin to Amethyst or Certus
+    with repair recipes that need to be ran when the budding crystal gets too damaged.
+    This would strongly resemble an advanced AE2 Certus Quartz Crystal farm as showin in the AE2 guide.
 
-    event.recipes.gtceu.electric_blast_furnace("eltz_from_enriched_aluminosilicate_gem")
-        .itemInputs("3x gtceu:impure_eltic_gem")
-        .itemOutputs("1x monilabs:eltz_ingot", "6x gtceu:aluminium_nugget")
-        .chancedOutput("1x gtceu:ash_dust", 1111, 0)
-        .outputFluids("gtceu:carbon_dioxide 1000")
+    Example of an implementation of a budding crystal in KJS is shown here:
+    https://discord.com/channels/303440391124942858/1178779065822482543
+    */
+    event.custom({
+        "type": "ae2:transform",
+        "circumstance": {
+            "type": "fluid",
+            "tag": "minecraft:water"
+        },
+        "ingredients": [
+            {
+                "item": "minecraft:amethyst_shard"
+            },
+            {
+                "item": "gtceu:eltic_sludge_dust"
+            },
+            {
+                "item": "monilabs:tiny_eltz_dust"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "item": "gtceu:flawless_impure_eltic_gem"
+        }
+    })
+    event.custom({
+        "type": "ae2:transform",
+        "circumstance": {
+            "type": "fluid",
+            "tag": "minecraft:water"
+        },
+        "ingredients": [
+            {
+                "item": "gtceu:charged_certus_quartz_gem"
+            },
+            {
+                "item": "gtceu:eltic_sludge_dust"
+            },
+            {
+                "item": "monilabs:tiny_eltz_dust"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "item": "gtceu:flawless_impure_eltic_gem"
+        }
+    })
+
+    event.recipes.gtceu.electric_blast_furnace("eltz_from_impure_eltic_gem")
+        .itemInputs("3x gtceu:impure_eltic_gem", "1x gtceu:carbon_dust")
+        .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
+        // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
+        .outputFluids("gtceu:carbon_monoxide 1000")
+        .duration(1540)
+        .blastFurnaceTemp(10600)
+        .EUt(GTValues.VA[GTValues.UV])
+
+    event.recipes.gtceu.electric_blast_furnace("eltz_from_impure_eltic_dust")
+        .itemInputs("3x gtceu:impure_eltic_dust", "1x gtceu:carbon_dust")
+        .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
+        // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
+        .outputFluids("gtceu:carbon_monoxide 1000")
         .duration(1540)
         .blastFurnaceTemp(10600)
         .EUt(GTValues.VA[GTValues.UV])

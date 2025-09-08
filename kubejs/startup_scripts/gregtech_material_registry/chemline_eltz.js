@@ -6,7 +6,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("hexafluorosilicic_acid")
         .fluid()
         .color(0xd00010)
-        .components("2x hydrogen", "silicon", "6x fluorine")
+        .components(GTMaterials.Hydrogen.multiply(2), GTMaterials.Silicon.multiply(1), GTMaterials.Fluorine.multiply(6))
 
     event.create("aluminosilicate_residue")
         .dust()
@@ -16,19 +16,19 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("dirty_hexafluorosilicic_solution")
         .fluid()
         .color(0xe00030)
-        .components("hexafluorosilicic_acid", "2x water", "aluminosilicate_residue")
+        .components("hexafluorosilicic_acid", GTMaterials.Water.multiply(2), "aluminosilicate_residue")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("dusty_helium")
         .gas()
         .color(0xa040af)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .components("helium", "aluminosilicate_residue")
+        .components(GTMaterials.Helium, "aluminosilicate_residue")
 
     event.create("eltz-enriched_helium")
         .gas()
         .color(0x10c050)
-        .components(GTMaterials.Helium.multiply(1), GTMaterials.get("monilabs:eltz").multiply(1), GTMaterials.get("aluminosilicate_residue"))
+        .components(GTMaterials.Helium.multiply(1), GTMaterials.get("monilabs:eltz").multiply(1), "aluminosilicate_residue")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("eltz-depleted_helium")
@@ -37,8 +37,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components(GTMaterials.Helium.multiply(3), GTMaterials.MetalMixture.multiply(1))
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("eltz-saturated_water")
-        .liquid()
+    event.create("eltic_sludge")
+        .dust()
         .color(0x857049)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gem()
         .color(0xbb9966).secondaryColor(0x881105)
         .iconSet("dilithium")
-        .components("monilabs:eltz", "silicon_dioxide", "bauxite")
+        .components("monilabs:eltz", GTMaterials.SiliconDioxide, GTMaterials.Sapphire)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING)
 
     // Byproducts
