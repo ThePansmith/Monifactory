@@ -184,7 +184,6 @@ StartupEvents.registry("block", event => {
 
     // Machine Casings
     const casings = [
-        "black_steel",
         "dark_soularium",
         "omnic_matrix_machine",
     ]
