@@ -14,13 +14,6 @@ ServerEvents.recipes(event => {
     if (doHNN) {
         // //// Machine Recipe //////
 
-        event.recipes.gtceu.assembler("kubejs:black_steel_casing")
-            .itemInputs("6x gtceu:black_steel_plate", "gtceu:black_steel_frame")
-            .itemOutputs("2x kubejs:black_steel_casing")
-            .duration(50)
-            .circuit(6)
-            .EUt(16)
-
         event.shaped("gtceu:simulation_supercomputer", [
             "BPB",
             "CSC",
