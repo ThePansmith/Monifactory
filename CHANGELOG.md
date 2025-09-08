@@ -177,7 +177,6 @@ Like this list, some features here are WIP.
     * RF -> EU converters are disabled
     * Harder recipes
     * GT5u fire/rain explosions
-    * Pollution and radiation
     * Forced use of GregTech logistics
 
 
