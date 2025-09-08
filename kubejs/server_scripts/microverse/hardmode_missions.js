@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
                 "minecraft:mossy_cobblestone",
             )
             .inputFluids("minecraft:lava 4000")
-            .damageRate((doHostileMicroverse ? -30 : 4)) // heal microverse if hostile, damage if not
+            .damageRate((doHostileMicroverse ? -30 : 0)) // heal microverse if hostile, damage if not
             .itemOutputs(
                 "64x minecraft:bone",
                 "64x minecraft:rotten_flesh",
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
                 "minecraft:mud",
             )
             .inputFluids("minecraft:lava 4000")
-            .damageRate((doHostileMicroverse ? -30 : 4))
+            .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "48x minecraft:slime_ball",
                 "24x kubejs:guardian_scale",
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
                 "minecraft:redstone_block",
             )
             .inputFluids("minecraft:lava 8000")
-            .damageRate((doHostileMicroverse ? -30 : 4))
+            .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "16x minecraft:blaze_rod",
                 "16x thermal:blizz_rod",
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
                 "minecraft:netherrack",
             )
             .inputFluids("minecraft:lava 8000")
-            .damageRate((doHostileMicroverse ? -30 : 4))
+            .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "24x minecraft:ghast_tear",
                 "48x kubejs:wither_bone", // drops of evil aren"t in the pack
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
                 "minecraft:end_stone",
             )
             .inputFluids("minecraft:lava 12000")
-            .damageRate((doHostileMicroverse ? -30 : 4))
+            .damageRate((doHostileMicroverse ? -30 : 0))
             .itemOutputs(
                 "16x enderio:enderman_head",
                 "16x minecraft:ender_pearl",

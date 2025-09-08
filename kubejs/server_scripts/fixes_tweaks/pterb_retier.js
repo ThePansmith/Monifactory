@@ -3,8 +3,8 @@
  * - Replaces UV components with LuV components.
  */
 ServerEvents.recipes(event => {
-    event.remove({ id: "gtceu:pterb" })
-    event.remove({ id: "gtceu:research_station/1_x_gtceu_active_transformer" })
+    event.remove({ id: "gtceu:assembly_line/pterb" })
+    event.remove({ id: "gtceu:research_station/1x_gtceu_active_transformer" })
 
     event.recipes.gtceu.assembly_line("pterb")
         .itemInputs("gtceu:active_transformer")

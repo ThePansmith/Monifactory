@@ -1,65 +1,119 @@
 @echo off
-color 9
-echo Monifactory Pack Mode Switcher
-echo Details on each mode can be found on the Curseforge Page
-setlocal
-set normalCfgPath=%~dp0config-overrides\normal
-set hardCfgPath=%~dp0config-overrides\hardmode
-set expertCfgPath=%~dp0config-overrides\expert
-set targetPath=%~dp0config
+setlocal enabledelayedexpansion
 
-rem handle cmdline args
-if "%1"=="N" goto copyNormal
-if "%1"=="H" goto copyHard
-if "%1"=="E" goto copyExpert
+set SILENT=false
+set RUN_DIR=%~dp0
+set MODE=
 
-rem handle the case where no parameter is supplied
-if [%1]==[] goto getChoice
+rem Iterate though all args
+:parse_args
+if "%~1"=="" goto after_args
+if "%~1"=="-s" set SILENT=true& shift & goto parse_args
+if "%~1"=="--silent" set SILENT=true& shift & goto parse_args
+if "%~1"=="-r" set RUN_DIR=.\& shift & goto parse_args
+if "%~1"=="--relative" set RUN_DIR=.\& shift & goto parse_args
+if "%~1"=="-h" goto print_help
+if "%~1"=="--help" goto print_help
+if not defined MODE set MODE=%~1
+shift
+goto parse_args
 
-rem handle the case where an invalid parameter is supplied
-echo Incorrect parameter! Supply N, H, E, or none at all.
-exit 1
+:after_args
+set normalCfgPath=%RUN_DIR%config-overrides\normal
+set hardCfgPath=%RUN_DIR%config-overrides\hardmode
+set expertCfgPath=%RUN_DIR%config-overrides\expert
+set targetPath=%RUN_DIR%config
+set modeFile=%RUN_DIR%.mode
 
-:getChoice
-echo Set pack mode:
-echo N: Normal    (The Default mode)
-echo H: Hardmode  (Adds more lines and progression, removes HNN and Monicoin spending)
-echo E: Expert    (A modifier for Hardmode, enables some of the more extreme GTm settings among other things)
-choice /c NHE /m "Selection:"
+rem Check if config-overrides dirs exist
+if not exist "%normalCfgPath%" goto missing_config
+if not exist "%hardCfgPath%" goto missing_config
+if not exist "%expertCfgPath%" goto missing_config
 
-if "%errorlevel%" == "1" goto copyNormal
-if "%errorlevel%" == "2" goto copyHard
-if "%errorlevel%" == "3" goto copyExpert
+if not defined MODE (
+    rem Interactive
+    color 9
+
+    set CURRENT_MODE="normal"
+    if exist %modeFile% (
+        set /p CURRENT_MODE=<%modeFile%
+    )
+    if "%SILENT%"=="false" (
+        echo Monifactory ^| Pack Mode Switcher
+        echo Current Mode: !CURRENT_MODE!
+        echo.
+        echo Set Pack Mode:
+        echo N: Normal    (The Default mode^)
+        echo H: Hard      (Adds more lines and progression, removes HNN and Monicoin spending^)
+        echo E: Expert    (A modifier for hard, enables some of the more extreme GTm settings among other things^)
+        set /p MODE="Selection [Normal / Hard / Expert]: "
+    ) else (
+        set /p MODE=
+    )
+)
+
+rem case insensitive with /i
+for %%A in (n normal) do if /i "!MODE!"=="%%A" goto copyNormal
+for %%A in (h hard) do if /i "!MODE!"=="%%A" goto copyHard
+for %%A in (e expert) do if /i "!MODE!"=="%%A" goto copyExpert
+
+rem if not matched
+echo Error: Invalid input "%MODE%"!
+echo Accepted Inputs:
+echo - [Normal, normal, N, n]
+echo - [Hard, hard, H, h]
+echo - [Expert, expert, E, e]
+exit /b 1
+
 
 :copyNormal
-robocopy "%normalCfgPath%" "%targetPath%" *.* /e /nfl /ndl
-
-rem If server.properties exists, update server config
-IF EXIST server.properties (move "%targetPath%\server.properties" .\)
-echo normal > .mode
-goto end
+robocopy "%normalCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
+echo normal > %modeFile%
+goto success
 
 :copyHard
-robocopy "%hardCfgPath%" "%targetPath%" *.* /e /nfl /ndl
-
-rem If server.properties exists, update server config
-IF EXIST server.properties (move "%targetPath%\server.properties" .\)
-echo hard > .mode
-goto end
+robocopy "%hardCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
+echo hard > %modeFile%
+goto success
 
 :copyExpert
-robocopy "%hardCfgPath%" "%targetPath%" *.* /e /nfl /ndl
-robocopy "%expertCfgPath%" "%targetPath%" *.* /e /nfl /ndl
+robocopy "%hardCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
+robocopy "%expertCfgPath%" "%targetPath%" *.* /e /nfl /ndl >nul
+echo expert > %modeFile%
+goto success
 
-rem If server.properties exists, update server config
-IF EXIST server.properties (move "%targetPath%\server.properties" .\)
-echo expert > .mode
-goto end
 
-:end
-rem if server.properties is left over in the config path, remove it
-IF EXIST "%targetPath%/server.properties" DEL "%targetPath%\server.properties"
-echo Switch completed
-rem only pause if the user didn't supply a parameter
-if [%1]==[] pause
-exit 0
+:success
+if "%SILENT%"=="false" (
+    set /p NEWMODE=<%modeFile%
+    echo Successfully switched pack mode to !NEWMODE!
+)
+exit /b 0
+
+
+:missing_config
+echo Could not find `config-overrides` directory!
+echo Make sure you are in the `/minecraft` directory of your instance! (The one containing `/config`)
+echo Otherwise, if you are in the `/minecraft` directory, please try reinstalling the pack.
+exit /b 1
+
+
+:print_help
+echo.
+echo Monifactory ^| Pack Mode Switcher Help
+echo.
+echo Usage: pack-mode-switcher.bat [options] [mode]
+echo.
+echo Options:
+echo   -s, --silent      Run in silent mode
+echo   -r, --relative    Use relative paths (run from current directory instead of script directory)
+echo   -h, --help        Show this help message and exit
+echo.
+echo Modes:
+echo   Normal, normal, N, n     Switch to Normal mode (default)
+echo   Hard, hard, H, h         Switch to Hard mode
+echo   Expert, expert, E, e     Switch to Expert mode
+echo.
+echo Example:
+echo   pack-mode-switcher.bat -s hard
+exit /b 0

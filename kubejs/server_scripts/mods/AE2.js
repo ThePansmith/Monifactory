@@ -856,7 +856,7 @@ ServerEvents.recipes(event => {
         "ABA"
     ], {
         A: "gtceu:fine_lumium_wire",
-        B: "gtceu:crystal_matrix_plate"
+        B: "monilabs:crystal_matrix_plate"
     }).id("kubejs:mega/fluid_cell_housing")
 
     event.remove({ id: "megacells:network/cell_dock" })

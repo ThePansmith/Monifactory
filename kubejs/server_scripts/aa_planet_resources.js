@@ -150,9 +150,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.IV])
 
     event.recipes.gtceu.macerator("macerate_permafrost")
-        .itemInputs("ad_astra:permafrost")
-        .chancedOutput("gtceu:ice_dust", 5000, 0)
-        .chancedOutput("minecraft:dirt", 5000, 0)
+        .itemInputs("2x ad_astra:permafrost")
+        .itemOutputs("minecraft:dirt", "gtceu:ice_dust")
         .duration(200)
         .EUt(GTValues.VHA[GTValues.ULV])
 

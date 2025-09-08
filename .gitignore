@@ -109,7 +109,6 @@
 !/config/extendedcrafting-common.toml
 !/config/fluxnetworks-common.toml
 !/config/flywheel-client.toml
-!/config/gtmutils.yaml
 !/config/hostilenetworks.cfg
 !/config/immediatelyfast.json
 !/config/ironfurnaces-client.toml
@@ -156,9 +155,8 @@ defaultconfigs/ftbultimine/ftbultimine-server.snbt
 /mods/*
 !/mods/compats.md
 
-# JS Tools, e.g. ESLint
-!/tools
-/tools/bootstrap/.cache
+# Build script
+!/build
 
 # VSCode Editor Config
 !.editorconfig

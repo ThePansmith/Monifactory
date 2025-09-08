@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
         .itemInputs("kubejs:ruined_hull")
         .itemOutputs("5x gtceu:neutronium_dust")
         .itemOutputs("3x gtceu:tritanium_dust")
-        .itemOutputs("4x gtceu:crystal_matrix_dust")
+        .itemOutputs("4x monilabs:crystal_matrix_dust")
         .chancedOutput("kubejs:crushed_sensor", 3300, 0)
         .chancedOutput("kubejs:magnetic_capacitor_dust", 3300, 0)
         .chancedOutput("kubejs:necrosiderite_oxide_glass_dust", 3300, 0)

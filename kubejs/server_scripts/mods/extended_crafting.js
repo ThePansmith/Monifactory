@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.combination(
         "kubejs:elementally_infused_omnic_matrix_heavy_plating",
-        "gtceu:omnium_plate", ["2x gtceu:crystal_matrix_plate", "gtceu:gravi_star", "gtceu:neutron_reflector", "3x kubejs:primal_mana"],
+        "gtceu:omnium_plate", ["2x monilabs:crystal_matrix_plate", "gtceu:gravi_star", "gtceu:neutron_reflector", "3x kubejs:primal_mana"],
         10000000, 1000000
     )
 
@@ -259,12 +259,6 @@ ServerEvents.recipes(event => {
         "kubejs:dimensionally_stabilized_infinity_heavy_plating",
         "gtceu:infinity_plate", ["2x gtceu:activated_netherite_plate", "kubejs:quasi_stable_neutron_star", "2x gtceu:neutron_reflector", "2x kubejs:the_ultimate_material"],
         16000000, 1600000
-    )
-
-    event.recipes.extendedcrafting.combination(
-        "kubejs:timeless_monic_heavy_plating",
-        "gtceu:monium_plate", ["kubejs:quantum_fluxed_eternium_heavy_plating", "kubejs:universe_resistant_neutronium_heavy_plating", "kubejs:elementally_infused_omnic_matrix_heavy_plating", "kubejs:dimensionally_stabilized_infinity_heavy_plating"],
-        536870912, 53687091
     )
 
     // Infinity Ingots

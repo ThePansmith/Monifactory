@@ -20,7 +20,7 @@
             "path": "../config/ftbquests/quests"
         },{
             "name": "Build",
-            "path": "../tools/build"
+            "path": "../build"
         },{
             "name": "Workflows",
             "path": "../.github/workflows"

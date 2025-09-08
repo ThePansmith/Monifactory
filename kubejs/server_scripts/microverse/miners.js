@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
         " E     E "
     ], {
         G: "kubejs:advanced_micro_miner_guidance_system",
-        C: "gtceu:double_crystal_matrix_plate",
+        C: "monilabs:double_crystal_matrix_plate",
         W: "gtceu:double_rhodium_plated_palladium_plate",
         L: "kubejs:supercharged_laser_array",
         I: "gtceu:double_duranium_plate",
@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
         " W       W "
     ], {
         O: "kubejs:elementally_infused_omnic_matrix_heavy_plating",
-        M: "gtceu:double_crystal_matrix_plate",
+        M: "monilabs:double_crystal_matrix_plate",
         P: "solarflux:sp_custom_neutronium",
         W: "kubejs:hadal_warp_engine",
         A: "gtceu:uhv_robot_arm",
@@ -246,7 +246,7 @@ ServerEvents.recipes(event => {
         "   IISII   ",
         "  PISQSIP  ",
         "  IIJSJII  ",
-        " IIIJCJIII ",
+        " IIOJCJOII ",
         "PIIDJJJDIIP",
         "IIIJJ JJIII",
         "IIWW   WWII",
@@ -258,7 +258,8 @@ ServerEvents.recipes(event => {
         P: "solarflux:sp_custom_infinity",
         C: "gtceu:uhv_quantum_chest",
         W: "kubejs:hadal_warp_engine",
-        D: "kubejs:infinity_power_unit",
+        O: "kubejs:omnic_matrix_coil_block",
+        D: "gtceu:large_naquadah_reactor",
         S: "monilabs:dimensional_stabilization_netherite_casing",
         Q: "kubejs:field_stabilised_omnic_pulsar_compound"
     })

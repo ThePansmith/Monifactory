@@ -87,11 +87,8 @@ StartupEvents.registry("item", event => {
     event.create("dimensionally_stabilized_infinity_heavy_plating")
         .displayName("§dDimensionally Stabilized Infinity Heavy Plating")
         .texture("kubejs:item/microverse/infinity_heavy_plating")
-    event.create("timeless_monic_heavy_plating")
-        .displayName("§dTimeless Monic Heavy Plating")
-        .texture("kubejs:item/microverse/dormant_monic_heavy_plating")
     event.create("causality_exempt_monic_heavy_plating")
-        .displayName("§1Causality Exempt Monic Heavy Plating")
+        .displayName("§9Causality Exempt Monic Heavy Plating")
         .texture("kubejs:item/microverse/monic_heavy_plating")
 
 
@@ -138,6 +135,8 @@ StartupEvents.registry("item", event => {
     event.create("deep_dark_data").displayName("§dDeep Dark Data")
     event.create("lair_of_the_warden_data").displayName("§dLair Of The Warden Data")
     event.create("universe_creation_data").displayName("§dUniverse Creation Data")
+    event.create("corrupted_universe_data")
+    event.create("shattered_universe_data")
 
 
     // Endgame Items
@@ -210,7 +209,6 @@ StartupEvents.registry("item", event => {
 
 
     // Infinity Tools
-    event.create("infinity_power_unit").rarity("epic").maxStackSize(1)
     event.create("infinity_file").rarity("epic").maxStackSize(1)
     event.create("infinity_hammer").rarity("epic").maxStackSize(1)
     event.create("infinity_screwdriver").rarity("epic").maxStackSize(1)
@@ -256,13 +254,6 @@ StartupEvents.registry("item", event => {
             .color(0, elemColor);
     }
 
-
-    // Dense Elemental Gasses (Solidification recipes are part of the Solidified Elements Section)
-    event.create("dense_hydrogen").rarity("Uncommon")
-    event.create("ultra_dense_hydrogen").rarity("Rare")
-
-    event.create("dense_helium").rarity("Uncommon")
-    event.create("ultra_dense_helium").rarity("Rare")
 
     // Stabilized Elements
     const stabilized_elements = [

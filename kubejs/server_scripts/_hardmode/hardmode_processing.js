@@ -443,21 +443,37 @@ ServerEvents.recipes(event => {
             .outputFluids("gtceu:nitrochlorobenzene 1000", "minecraft:water 1000")
             .duration(400).EUt(480);
 
-        event.recipes.gtceu.chemical_reactor("oxydianiline_sludge")
-            .inputFluids("gtceu:aminophenol 1000", "gtceu:nitrochlorobenzene 1000", "gtceu:dimethylformamide 1000")
-            .itemInputs("1x gtceu:potassium_carbonate_dust")
-            .outputFluids("gtceu:oxydianiline_sludge 250", "minecraft:water 1500")
-            .duration(400).EUt(480);
-
-        event.recipes.gtceu.distillation_tower("distill_oxydianiline_sludge")
-            .inputFluids("gtceu:oxydianiline_sludge 1000")
-            .outputFluids("gtceu:dimethylformamide 1000", "gtceu:oxydianiline 144")
-            .duration(200).EUt(480);
-
         event.recipes.gtceu.chemical_reactor("pyromellitic_dianhydride")
             .inputFluids("gtceu:durene 250", "gtceu:oxygen 1500")
             .outputFluids("gtceu:pyromellitic_dianhydride 250", "minecraft:water 1500")
             .duration(400).EUt(480);
+
+        event.recipes.gtceu.chemical_reactor("dinitrodiphenyl_ether")
+            .inputFluids("gtceu:nitrochlorobenzene 2000")
+            .chancedInput("gtceu:copper_iodide_dust", 1500, 0)
+            .itemInputs("6x gtceu:sodium_hydroxide_dust")
+            .outputFluids("gtceu:dinitrodiphenyl_ether 1000", "minecraft:water 1000")
+            .itemOutputs("4x gtceu:salt_dust")
+            .duration(400).EUt(480);
+
+        event.recipes.gtceu.chemical_reactor("oxydianiline")
+            .notConsumable("gtceu:palladium_dust")
+            .inputFluids("gtceu:dinitrodiphenyl_ether 1000", "gtceu:hydrogen 12000")
+            .outputFluids("gtceu:oxydianiline 1000", "minecraft:water 4000")
+            .duration(200).EUt(1920);
+
+        event.recipes.gtceu.large_chemical_reactor("copper_iodide_dust")
+            .itemInputs("4x gtceu:potassium_iodide_dust", "4x gtceu:cuprous_chloride_dust")
+            .inputFluids("gtceu:nitric_acid 2000")
+            .itemOutputs("4x gtceu:copper_iodide_dust", "10x gtceu:saltpeter_dust")
+            .outputFluids("gtceu:hydrochloric_acid 2000")
+            .duration(160).EUt(120);
+
+        event.recipes.gtceu.chemical_reactor("cuprous_chloride_dust")
+            .itemInputs("gtceu:copper_dust")
+            .inputFluids("gtceu:chlorine 1000")
+            .itemOutputs("2x gtceu:cuprous_chloride_dust")
+            .duration(160).EUt(120);
 
         event.recipes.gtceu.chemical_reactor("kapton_k")
             .inputFluids("gtceu:pyromellitic_dianhydride 1000", "gtceu:oxydianiline 1000")

@@ -1,3 +1,0 @@
-#!/bin/bash
-set -e
-( cd "$1" && zip -rqy - "${@:3}" ) > "$2"

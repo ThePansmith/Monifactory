@@ -404,18 +404,12 @@ ServerEvents.recipes(event => {
     // Avaritia Replacement recipes
     compacting(event, "gtceu:neutronium_ingot", "gtceu:neutronium_nugget")
 
-    // Dense Gasses conversion
-    compacting(event, "kubejs:dense_hydrogen", "kubejs:solidified_hydrogen");
-    compacting(event, "kubejs:ultra_dense_hydrogen", "kubejs:dense_hydrogen");
-
-    compacting(event, "kubejs:dense_helium", "kubejs:solidified_helium");
-    compacting(event, "kubejs:ultra_dense_helium", "kubejs:dense_helium");
-
     // Recipe from Radium salt to Radium and Rock Salt
     event.recipes.gtceu.electrolyzer("radium_salt_to_radium_and_salt")
         .itemInputs("kubejs:radium_salt")
         .itemOutputs("gtceu:rock_salt_dust")
         .outputFluids(Fluid.of("gtceu:radon", 1000))
+        .circuit(1)
         .duration(200)
         .EUt(2000)
 

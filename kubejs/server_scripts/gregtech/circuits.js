@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
     // Complex SMDs
     const smds = [
         ["transistor", "gtceu:enriched_naquadah_foil", "8x gtceu:fine_necrosiderite_wire", 72],
-        ["resistor", "gtceu:crystal_matrix_dust", "4x gtceu:fine_necrosiderite_wire", 144],
+        ["resistor", "monilabs:crystal_matrix_dust", "4x gtceu:fine_necrosiderite_wire", 144],
         ["capacitor", "gtceu:polybenzimidazole_foil", "gtceu:necrosiderite_foil", 36],
         ["diode", "gtceu:indium_gallium_phosphide_dust", "8x gtceu:fine_necrosiderite_wire", 72],
         ["inductor", "gtceu:terbium_ring", "4x gtceu:fine_necrosiderite_wire", 72]
@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
             "40x gtceu:ram_chip",
             "24x gtceu:fine_naquadah_wire",
             "32x gtceu:polyethyl_cyanoacrylate_foil",
-            "6x gtceu:crystal_matrix_plate"
+            "6x monilabs:crystal_matrix_plate"
         )
         .inputFluids("gtceu:advanced_soldering_alloy 720", "gtceu:omnium 144")
         .itemOutputs("kubejs:optical_processor_computer")
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
             "32x gtceu:ram_chip",
             "8x kubejs:uxpic_chip",
             "12x gtceu:ruthenium_trinium_americium_neutronate_double_wire",
-            "12x gtceu:crystal_matrix_plate")
+            "12x monilabs:crystal_matrix_plate")
         .inputFluids("gtceu:advanced_soldering_alloy 1440", "gtceu:polyethyl_cyanoacrylate 1152", "gtceu:omnium 288")
         .itemOutputs("kubejs:optical_processor_mainframe")
         .duration(2400)

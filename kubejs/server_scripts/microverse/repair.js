@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
     repairing(8)
         .EUt(GTValues.VA[GTValues.ZPM])
-        .chancedInput("2x gtceu:double_crystal_matrix_plate", 3000, 0)
+        .chancedInput("2x monilabs:double_crystal_matrix_plate", 3000, 0)
         .chancedInput("2x gtceu:double_rhodium_plated_palladium_plate", 2500, 0)
         .chancedInput("2x gtceu:double_duranium_plate", 2000, 0)
         .chancedInput("2x kubejs:supercharged_laser_array", 2500, 0)

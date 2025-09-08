@@ -61,7 +61,8 @@ ServerEvents.recipes(event => {
             .itemInputs(
                 "64x gtceu:dilithium_gem",
                 "1x minecraft:sculk_catalyst",
-                "12x kubejs:deep_dark_data"
+                "12x kubejs:deep_dark_data",
+                "16x kubejs:warden_horn"
             )
             .damageRate((doHostileMicroverse ? -25 : 3))
             .itemOutputs(

@@ -41,6 +41,4 @@ StartupEvents.registry("fluid", event => {
     event.create("antimatter_fuel")
         .bucketColor(Color.rgba(99, 18, 110, 255))
         .stillTexture("kubejs:block/antimatter/fuel")
-
-    event.create("hadal_sculk").stillTexture("kubejs:block/bioalloy/hadal_sculk")
 })

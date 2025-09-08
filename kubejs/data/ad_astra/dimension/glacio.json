@@ -1,0 +1,48 @@
+{
+  "type": "ad_astra:glacio",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "ad_astra:glacio",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "ad_astra:glacio_snowy_barrens",
+          "parameters": {
+            "temperature": 1,
+            "humidity": -1,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": -0.5,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "ad_astra:glacio_ice_peaks",
+          "parameters": {
+            "temperature": -0.5,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": -1.5,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "ad_astra:glacio_lush_caves",
+          "parameters": {
+            "temperature": 0.5,
+            "humidity": -0.3,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": -1.0,
+            "depth": 0.8,
+            "offset": 0.8
+          }
+        }
+      ]
+    }
+  }
+}

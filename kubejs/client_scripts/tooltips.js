@@ -53,11 +53,10 @@ ItemEvents.tooltip(tooltip => {
     // Redstone Clock
     tooltip.add("redstoneclock:redstone_clock", Text.translatable("redstoneclock.redstone_clock.tooltip"))
 
-    // DML Data Model
+    // HNN Data Model
     tooltip.add("hostilenetworks:blank_data_model", Text.translatable("hostilenetworks.blank_data_model.tooltip"))
-    tooltip.add("hostilenetworks:data_model", Text.translatable("hostilenetworks.data_model.tooltip"))
 
-    // DML Matters
+    // HNN Matters
     tooltip.add("hostilenetworks:overworld_prediction", Text.translatable("hostilenetworks.overworld_prediction.tooltip"))
     tooltip.add("hostilenetworks:nether_prediction", Text.translatable("hostilenetworks.nether_prediction.tooltip"))
     tooltip.add("hostilenetworks:end_prediction", Text.translatable("hostilenetworks.end_prediction.tooltip"))

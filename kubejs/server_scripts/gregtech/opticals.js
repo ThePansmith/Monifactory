@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.alloy_blast_smelter("lithium_niobate")
         .blastFurnaceTemp(1510)
-        .circuit(1)
+        .circuit(3)
         .duration(200)
         .EUt(GTValues.VA[GTValues.IV])
         .inputFluids("gtceu:oxygen 3000")
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:lithium_niobate 720")
     event.recipes.gtceu.alloy_blast_smelter("lithium_niobate_gas")
         .blastFurnaceTemp(1510)
-        .circuit(2)
+        .circuit(13)
         .duration(134)
         .EUt(GTValues.VA[GTValues.IV])
         .inputFluids("gtceu:oxygen 3000", "gtceu:nitrogen 5000")
