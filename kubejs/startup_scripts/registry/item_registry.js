@@ -503,9 +503,6 @@ StartupEvents.registry("item", event => {
     event.create("hyperdynamic_ram_wafer").texture("kubejs:item/hyperdynamicram/hyperdynamic_ram_wafer").displayName("Hyperdynamic RAM Wafer")
     event.create("hyperdynamic_ram_chip_base").texture("kubejs:item/hyperdynamicram/hyperdynamic_ram_chip").displayName("Hyperdynamic RAM Chip Base")
     event.create("hyperdynamic_ram_chip").texture("kubejs:item/hyperdynamicram/activated_hyperdynamic_ram_chip").displayName("Hyperdynamic RAM Chip")
-    event.create("quantum_soc_wafer").texture("kubejs:item/quantumsoc/quantum_soc_wafer").displayName("Quantum SoC Wafer")
-    event.create("quantum_soc_chip_base").texture("kubejs:item/quantumsoc/quantum_soc_chip_base").displayName("Quantum SoC Chip Base")
-    event.create("quantum_soc_chip").texture("kubejs:item/quantumsoc/quantum_soc_chip").displayName("Quantum SoC Chip")
 
 
     // Complex SMDs
