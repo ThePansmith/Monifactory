@@ -1,19 +1,9 @@
 #Systeams Config
 #---------------
-#The amount of steam 1mb of water makes.
-#Range: 0.1 ~ 10.0
-water_to_steam_ratio = 10
-#The multiplier on the steam dynamo's RF/t
-#Range: 0.05 ~ 10.0
-steam_dynamo_output_multiplier = 4.0
-#If the Dynamo in dynamo augment tooltips should be replaced with Dynamo & Boiler
-#This doesn't have as much support for translations (it can still be translated with the key info.systeams.augment.type.DynamoBoiler)
-replace_dynamo_augment_tooltips = true
 
-# For future reference: Boilers are 16x as efficient as Dynamos by default.
-# This means that Boilers are 16 * 0.5 * 4.0 = 32x as efficient as Dynamos in practice,
-# thanks to the steam_dynamo_output_multiplier and "Steam Values" multiplier.
-# -Xefyr
+#The multiplier on the steam dynamo's RF/t
+#Range: 10 ~ 32000
+steam_dynamo_base_power = 160
 
 ["Steam Values"]
 	#The number of mb of steam produced per RF of energy usually produced by the same fuel in a dynamo
