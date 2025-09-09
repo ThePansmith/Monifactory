@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
             "12x gtceu:advanced_smd_diode",
             "24x gtceu:ram_chip",
             "4x gtceu:uhpic_chip",
-            "8x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire",
+            "8x gtceu:cryolobus_double_wire",
             "8x gtceu:europium_plate"
         )
         .inputFluids("gtceu:soldering_alloy 2304", "gtceu:polybenzimidazole 1152")
