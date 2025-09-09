@@ -81,7 +81,6 @@ global.itemNukeList = [
     "enderio:vibrant_alloy_grinding_ball",
     /^enderio:painted_/,
     /^enderio:powdered_/,
-    "enderio:grains_of_infinity",
     "enderio:infinity_rod",
 
     // Ender Storage
