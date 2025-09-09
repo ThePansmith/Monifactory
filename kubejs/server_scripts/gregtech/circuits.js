@@ -100,6 +100,16 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(80000)
 
+    // Wetware Processor SoC recipe moved to UHV so that all SoC recipes are 2 voltage tiers above the base
+    event.remove({ id: "gtceu:circuit_assembler/wetware_processor_luv_soc_soldering_alloy" })
+    event.recipes.gtceu.circuit_assembler("wetware_processor_luv_soc_soldering_alloy")
+        .itemInputs("gtceu:neuro_processing_unit", "gtceu:highly_advanced_soc", "8x gtceu:fine_yttrium_barium_cuprate_wire", "8x gtceu:naquadah_bolt")
+        .inputFluids("gtceu:advanced_soldering_alloy 72")
+        .itemOutputs("4x gtceu:wetware_processor")
+        .duration(5 * 20)
+        .EUt(600000)
+        .cleanroom(CleanroomType.CLEANROOM)
+
     // Wetware Mainframe (Abnormally expensive in base game since it's the last circuit made cheaper here)
     event.remove({ output: "gtceu:wetware_processor_mainframe" })
     event.recipes.gtceu.assembly_line("wetware_mainframe_uhv")
@@ -212,7 +222,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(5 * 20)
-        .EUt(600000)
+        .EUt(2400000)
 
     // Monic Circuits
     event.recipes.gtceu.circuit_assembler("monic_circuit_board")
