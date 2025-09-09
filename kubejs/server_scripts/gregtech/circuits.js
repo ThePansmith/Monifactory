@@ -78,7 +78,16 @@ ServerEvents.recipes(event => {
             .EUt(245760)
     }
 
-    // Wetware tweaks are more invasive than a 1-item swapout
+    // Crystal and Wetware tweaks are more invasive than a 1-item swapout
+    // Move Crystal SoC up a voltage tier
+    event.remove({ id: "gtceu:circuit_assembler/crystal_processor_iv_soc_soldering_alloy" })
+    event.recipes.gtceu.circuit_assembler("crystal_processor_iv_soc_soldering_alloy")
+        .itemInputs("gtceu:multilayer_fiber_reinforced_printed_circuit_board", "gtceu:crystal_soc", "8x gtceu:fine_niobium_titanium_wire", "8x gtceu:yttrium_barium_cuprate_bolt")
+        .inputFluids("gtceu:advanced_soldering_alloy 36")
+        .itemOutputs("4x gtceu:crystal_processor")
+        .duration(5 * 20)
+        .EUt(150000)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // Wetware printed circuit board
     event.remove({ output: "gtceu:wetware_printed_circuit_board" })
@@ -104,7 +113,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:circuit_assembler/wetware_processor_luv_soc_soldering_alloy" })
     event.recipes.gtceu.circuit_assembler("wetware_processor_luv_soc_soldering_alloy")
         .itemInputs("gtceu:neuro_processing_unit", "gtceu:highly_advanced_soc", "8x gtceu:fine_yttrium_barium_cuprate_wire", "8x gtceu:naquadah_bolt")
-        .inputFluids("gtceu:advanced_soldering_alloy 72")
+        .inputFluids("gtceu:advanced_soldering_alloy 36")
         .itemOutputs("4x gtceu:wetware_processor")
         .duration(5 * 20)
         .EUt(600000)
@@ -142,7 +151,7 @@ ServerEvents.recipes(event => {
             "10x gtceu:advanced_smd_transistor",
             "4x gtceu:fine_naquadah_wire"
         )
-        .inputFluids("gtceu:advanced_soldering_alloy 72")
+        .inputFluids("gtceu:advanced_soldering_alloy 36")
         .itemOutputs("2x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(10 * 20)
