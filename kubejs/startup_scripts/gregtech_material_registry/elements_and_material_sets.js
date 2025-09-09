@@ -80,15 +80,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(119)
         .neutrons(229)
         .symbol("Dl")
-
-    // Taranium (HM Exclusive)
-
-    if (doStoneline) {
-        event.create("taranium")
-            .protons(149)
-            .neutrons(264)
-            .symbol("Tn");
-    }
 })
 
 

@@ -29,12 +29,6 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(GTValues.VA[GTValues.HV])
 
-    event.recipes.gtceu.fluid_heater("hot_piranha_solution")
-        .inputFluids("gtceu:piranha_solution 100")
-        .outputFluids("gtceu:hot_piranha_solution 100")
-        .duration(40)
-        .EUt(GTValues.VA[GTValues.LV])
-
     // Tritium Radon Difluoride
     event.recipes.gtceu.large_chemical_reactor("tritium_radon_difluoride")
         .notConsumable("gtceu:blacklight")
@@ -42,16 +36,6 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:tritium_radon_difluoride 1000")
         .duration(160)
         .EUt(GTValues.VA[GTValues.EV])
-
-    // Naquadah Fuel Feedstock
-    event.recipes.gtceu.electric_blast_furnace("raw_naquadah_solution")
-        .itemInputs("10x gtceu:naquadah_dust")
-        .inputFluids("gtceu:helium_hydride 500")
-        .itemOutputsRanged("kubejs:naquadah_waste", 0, 3)
-        .outputFluids("gtceu:raw_naquadah_solution 8000")
-        .duration(400)
-        .EUt(GTValues.VA[GTValues.IV])
-        .blastFurnaceTemp(10800)
 
     let raw_fissile_elements = [
         ["thorium", 22],
@@ -62,17 +46,20 @@ ServerEvents.recipes(event => {
     ]
 
     raw_fissile_elements.forEach(fissile_element => {
-        event.recipes.gtceu.large_chemical_reactor(`inert_naquadah_blend_${fissile_element[0]}`)
-            .itemInputs(`${fissile_element[1]}x gtceu:small_${fissile_element[0]}_dust`, "3x gtceu:naquadria_dust")
-            .inputFluids("gtceu:raw_naquadah_solution 6000", "gtceu:hot_piranha_solution 1000")
-            .outputFluids("gtceu:inert_naquadah_blend 10000")
-            .duration(300)
-            .EUt(GTValues.VA[GTValues.EV])
+        // Naquadah Fuel Feedstock
+        event.recipes.gtceu.electric_blast_furnace(`raw_naquadah_solution_${fissile_element[0]}`)
+            .itemInputs("10x gtceu:naquadah_dust", "3x gtceu:naquadria_dust", `${fissile_element[1]}x gtceu:small_${fissile_element[0]}_dust`)
+            .inputFluids("gtceu:piranha_solution 1000")
+            .itemOutputsRanged("kubejs:naquadah_waste", 0, 3)
+            .outputFluids("gtceu:raw_naquadah_solution 10000")
+            .duration(400)
+            .EUt(GTValues.VA[GTValues.IV])
+            .blastFurnaceTemp(9600)
     })
 
     // Naquadah Activation
     event.recipes.gtceu.fusion_reactor("naquadah_activation")
-        .inputFluids("gtceu:inert_naquadah_blend 625", "gtceu:tritium_radon_difluoride 125")
+        .inputFluids("gtceu:raw_naquadah_solution 625", "gtceu:tritium_radon_difluoride 125")
         .outputFluids("gtceu:active_naquadah_blend 625")
         .duration(32)
         .EUt(GTValues.VA[GTValues.LuV])
@@ -128,7 +115,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.naquadah_refinery("naquadah_superfuel")
         .itemInputs("1x gtceu:infinity_dust", "20x kubejs:naquadah_fuel_mixture_dust")
-        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", (doStoneline ? "gtceu:taranium 576" : "gtceu:actinium 576"), "gtceu:quadium 400")
+        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "monilabs:eltz 192", "gtceu:quadium 400")
         .outputFluids("gtceu:naquadah_superfuel 20000")
         .duration(3000)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -278,7 +265,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("1x gtceu:infinity_dust", 3300, 0)
         .chancedOutput("3x kubejs:naquadah_waste", 6600, 0)
         .chancedOutput("16x gtceu:naquadria_dust", 5000, 0)
-        .chancedFluidOutput((doStoneline ? "gtceu:taranium 228" : "gtceu:actinium 228"), 5000, 0)
+        .chancedFluidOutput("monilabs:eltz 228", 5000, 0)
         .chancedFluidOutput("gtceu:hyperdegenerate_matter 100", 3300, 0)
         .duration(1200)
         .EUt(1966080)
