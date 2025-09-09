@@ -525,15 +525,19 @@ StartupEvents.registry("item", event => {
     event.create("miniature_microverse_container")
         .textureJson({ layer0: "kubejs:item/circuits/miniature_microverse_container" })
     event.create("microverse_containment_unit")
-        .textureJson({ layer0: "kubejs:item/circuits/microverse_containment_unit" })
+        .textureJson({ layer0: "kubejs:item/circuits/microverse_containment_unit"})
     event.create("extradimensional_quantum_cpu_core")
-        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_quantum_cpu_core" })
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_quantum_cpu_core"})
     event.create("extradimensional_crystal_cpu_core")
-        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_crystal_cpu_core" })
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_crystal_cpu_core"})
     event.create("extradimensional_wetware_cpu_core")
-        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_wetware_cpu_core" })
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_wetware_cpu_core"})
     event.create("extradimensional_optical_cpu_core")
-        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_qoptical_cpu_core" })
+        .textureJson({ layer0: "kubejs:item/circuits/microverse_containment_unit",
+            layer1: "kubejs:item/circuits/extradimensional_optical_cpu_red",
+            layer2: "kubejs:item/circuits/extradimensional_optical_cpu_green",
+            layer3: "kubejs:item/circuits/extradimensional_optical_cpu_blue"
+        })
 
     // Post-tank circuits, circuit boards, processing units
     function Circuit(theme, type, volt) {

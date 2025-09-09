@@ -222,12 +222,12 @@ ServerEvents.recipes(event => {
             "4x gtceu:glass_tube",
             "8x gtceu:microversium_foil"
         )
-        .inputFluids("gtceu:living_solder 288")
+        .inputFluids("gtceu:living_soldering_alloy 288")
         .itemOutputs("4x kubejs:miniature_microverse_container")
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(b => b
-            .researchStack("kubejs:basic_microverse_projector")
+            .researchStack("gtceu:basic_microverse_projector")
             .CWUt(16)
             .EUt(GTValues.VA[GTValues.LuV])
         )
@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
             "#gtceu:circuits/zpm",
             "gtceu:luv_field_generator"
         )
-        .inputFluids("gtceu:living_solder 576")
+        .inputFluids("gtceu:living_soldering_alloy 576")
         .itemOutputs("16x kubejs:extradimensional_circuit_board")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
@@ -270,22 +270,22 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("microverse_containment_unit")
         .itemInputs("gtceu:infinity_frame", "8x gtceu:microversium_plate", "8x kubejs:prism_pane", "gtceu:luv_field_generator")
-        .inputFluids("gtceu:living_solder 576")
+        .inputFluids("gtceu:living_soldering_alloy 576")
         .itemOutputs("32x kubejs:microverse_containment_unit")
         .duration(300)
         .EUt(16380)
 
     event.recipes.gtceu.microverse("extradimensional_quantum_cpu_core")
-        .itemInputs("16x microverse_containment_unit",
+        .itemInputs("16x kubejs:microverse_containment_unit",
             "32x gtceu:qbit_cpu_chip",
             "32x gtceu:nano_cpu_chip",
-            "4x gtceu:asoc",
-            "64x gtceu:fine_platinum_wire",
+            "4x gtceu:advanced_soc",
             "64x gtceu:fine_platinum_wire"
         )
         .chancedInput("gtceu:luv_robot_arm", 800, 0)
         .inputFluids("gtceu:helium_plasma 20000")
         .duration(2000)
+        .EUt(GTValues.VA[GTValues.LuV])
         .damageRate(2)
         .itemOutputsRanged("kubejs:extradimensional_quantum_cpu_core", 12, 16)
         .requiredMicroverse(3) // Shattered
@@ -298,8 +298,8 @@ ServerEvents.recipes(event => {
             "12x kubejs:complex_smd_transistor",
             "24x gtceu:fine_necrosiderite_wire"
         )
-        .inputFluids("gtceu:living_solder 288")
-        .itemOutputs("2x kubejs:extradimensional_processor")
+        .inputFluids("gtceu:living_soldering_alloy 288")
+        .itemOutputs("4x kubejs:extradimensional_processor")
         .duration(200)
         .EUt(600000)
         .stationResearch(b => b
@@ -308,9 +308,25 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.LuV])
         )
 
+    event.recipes.gtceu.microverse("extradimensional_crystal_cpu_core")
+        .itemInputs("16x kubejs:microverse_containment_unit",
+            "16x gtceu:crystal_cpu",
+            "32x gtceu:qbit_cpu_chip",
+            "4x gtceu:crystal_soc",
+            "64x gtceu:fine_niobium_titanium_wire"
+        )
+        .chancedInput("gtceu:luv_robot_arm", 1200, 0)
+        .inputFluids("gtceu:helium_plasma 25000")
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .damageRate(3)
+        .itemOutputsRanged("kubejs:extradimensional_crystal_cpu_core", 8, 16)
+        .requiredMicroverse(3) // Shattered
+
     event.recipes.gtceu.assembly_line("extradimensional_processor_assembly")
         .itemInputs(
             "kubejs:extradimensional_processing_unit",
+            "4x kubejs:extradimensional_crystal_cpu_core",
             "2x kubejs:extradimensional_processor",
             "8x kubejs:complex_smd_inductor",
             "8x kubejs:complex_smd_capacitor",
@@ -327,19 +343,35 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.ZPM])
         )
 
+    event.recipes.gtceu.microverse("extradimensional_wetware_cpu_core")
+        .itemInputs("16x kubejs:microverse_containment_unit",
+            "8x gtceu:crystal_cpu",
+            "16x gtceu:qbit_cpu_chip",
+            "48x gtceu:stem_cells",
+            "2x gtceu:petri_dish",
+            "4x gtceu:highly_advanced_soc",
+            "64x gtceu:fine_yttrium_barium_cuprate_wire"
+        )
+        .chancedInput("gtceu:luv_robot_arm", 1600, 0)
+        .inputFluids("gtceu:helium_plasma 30000")
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .damageRate(4)
+        .itemOutputsRanged("kubejs:extradimensional_wetware_cpu_core", 4, 16)
+        .requiredMicroverse(3) // Shattered
+
     event.recipes.gtceu.assembly_line("extradimensional_processor_computer")
         .itemInputs(
             "kubejs:extradimensional_processing_unit",
             "2x kubejs:extradimensional_processor_assembly",
-            "4x kubejs:contained_singularity",
+            "4x kubejs:extradimensional_wetware_cpu_core",
             "16x kubejs:complex_smd_diode",
             "48x gtceu:nor_memory_chip",
             "16x kubejs:multidimensional_cpu_chip",
             "24x kubejs:hyperdynamic_ram_chip",
-            "16x kubejs:quantum_soc_chip",
             "24x kubejs:uxpic_chip",
             "24x gtceu:fine_necrosiderite_wire",
-            "4x gtceu:infinity_plate"
+            "2x gtceu:infinity_plate"
         )
         .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("1x kubejs:extradimensional_processor_computer")
@@ -351,16 +383,31 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UV])
         )
 
+    event.recipes.gtceu.microverse("extradimensional_optical_cpu_core")
+        .itemInputs("16x kubejs:microverse_containment_unit",
+            "16x kubejs:optical_chip",
+            "32x kubejs:electro_optic_modulator",
+            "8x kubejs:quantum_soc_chip",
+            "4x kubejs:photonic_soc_active",
+            "64x gtceu:fine_naquadah_wire"
+        )
+        .chancedInput("gtceu:luv_robot_arm", 2000, 0)
+        .inputFluids("gtceu:helium_plasma 30000")
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.LuV])
+        .damageRate(5)
+        .itemOutputsRanged("kubejs:extradimensional_optical_cpu_core", 0, 16)
+
     event.recipes.gtceu.assembly_line("extradimensional_processor_mainframe")
         .itemInputs(
-            "4x gtceu:monium_frame",
+            "4x gtceu:infinity_frame",
             "2x kubejs:extradimensional_processor_computer",
+            "4x kubejs:extradimensional_optical_cpu_core",
             "64x kubejs:complex_smd_diode",
             "64x kubejs:complex_smd_capacitor",
             "64x kubejs:complex_smd_transistor",
             "64x kubejs:complex_smd_resistor",
             "64x kubejs:complex_smd_inductor",
-            "64x kubejs:contained_singularity",
             "64x gtceu:nor_memory_chip",
             "64x gtceu:nand_memory_chip",
             "64x kubejs:multidimensional_cpu_chip",
