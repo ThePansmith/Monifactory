@@ -118,13 +118,6 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setMaxIOSize(1, 1, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL)
-
-    event.create("sculk_vat")
-        .category("multiblock")
-        .setEUIO("in")
-        .setMaxIOSize(2, 0, 3, 1)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.CHEMICAL)
 })
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
@@ -135,21 +128,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.1"))
         .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.2"))
         .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.omnic_synthesizer.emi_info.3"))
-
-    GTRecipeTypes.get("sculk_vat")
-        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.0"))
-        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.1"))
-        .addDataInfo((data) => LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.2"))
-        .addDataInfo((data) => {
-            if (data.contains("minimumXp") && data.contains("maximumXp")) {
-                let minimumXp = data.getInt("minimumXp");
-                let maximumXp = data.getInt("maximumXp");
-                return LocalizationUtils.format("gtceu.multiblock.sculk_vat.emi_info.3", String(minimumXp), String(maximumXp));
-            } else {
-                return "";
-            }
-        })
-        .addDataInfo((data) => "")
 
     // Normal mode-exclusive multis
     if (doHNN) {
@@ -826,40 +804,4 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingModel("monilabs:block/casing/bioalloy",
             "gtceu:block/machines/reconstructor")
-
-    // Sculk Vat
-    event.create("sculk_vat", "multiblock")
-        .machine((holder) => new SculkVatMachine(holder))
-        .recipeTypes("sculk_vat")
-        .recipeModifier(MoniRecipeModifiers.sculkVatRecipeModifier())
-        .appearanceBlock(() => Block.getBlock("monilabs:cryolobus_casing"))
-        .pattern(definition => FactoryBlockPattern.start()
-            .aisle("#CCC#", "#CLC#", "#CLC#", "#CLC#", "#CCC#", "#F#F#", "#ccc#")
-            .aisle("CCCCC", "C   C", "C   C", "C   C", "C   C", "FSSSF", "ccccc")
-            .aisle("CCCCC", "L P L", "L P L", "L P L", "C P C", "#SSS#", "ccccc")
-            .aisle("CCCCC", "C   C", "C   C", "C   C", "C   C", "FSSSF", "ccccc")
-            .aisle("#C@C#", "#CLC#", "#CLC#", "#CLC#", "#CCC#", "#F#F#", "#ccc#")
-            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
-            .where("C", Predicates.blocks("monilabs:cryolobus_casing").setMinGlobalLimited(40)
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
-                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS))
-                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS_1X).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2))
-                .or(Predicates.blocks("monilabs:sculk_xp_draining_hatch").setMaxGlobalLimited(1))
-                .or(Predicates.blocks("monilabs:sculk_xp_sensor_hatch").setMaxGlobalLimited(1))
-            )
-            .where("c", Predicates.blocks("monilabs:cryolobus_casing"))
-            .where("L", Predicates.blocks("gtceu:laminated_glass")
-                .or(Predicates.blocks("monilabs:cryolobus_casing"))
-            )
-            .where("F", Predicates.frames(GTMaterials.BlackSteel))
-            .where("S", Predicates.blocks(GTBlocks.FILTER_CASING_STERILE.get()))
-            .where("P", Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
-            .where(" ", Predicates.air())
-            .where("#", Predicates.any())
-            .build()
-        )
-        .workableCasingModel("monilabs:block/casing/cryolobus",
-            "gtceu:block/machines/fermenter")
 })
