@@ -114,7 +114,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot()
         .color(0xffffff)
         .iconSet("necrosiderite")
-        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING)
+        .flags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_SPRING, GTMaterialFlags.GENERATE_BOLT_SCREW)
         .cableProperties(33554432, 64, 8, false)
         .blastTemp(12200, "highest", 1000000, 1000)
         .element(GTElements.get("necrosiderite"))
