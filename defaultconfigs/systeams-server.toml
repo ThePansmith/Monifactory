@@ -30,23 +30,23 @@ steam_dynamo_base_power = 160
 ["Boiler Speed Multipliers"]
 	#The speed multiplier on each boiler's mB/t
 	#Range: 0.05 ~ 20.0
-	stirling = 16.0
+	stirling = 4.0
 	#Range: 0.05 ~ 20.0
-	magmatic = 16.0
+	magmatic = 4.0
 	#Range: 0.05 ~ 20.0
-	compression = 16.0
+	compression = 4.0
 	#Range: 0.05 ~ 20.0
-	numismatic = 16.0
+	numismatic = 4.0
 	#Range: 0.05 ~ 20.0
-	lapidary = 16.0
+	lapidary = 4.0
 	#Range: 0.05 ~ 20.0
-	disenchantment = 16.0
+	disenchantment = 4.0
 	#Range: 0.05 ~ 20.0
-	gourmand = 16.0
+	gourmand = 4.0
 	#Range: 0.05 ~ 20.0
-	pneumatic = 16.0
+	pneumatic = 4.0
 	#Range: 0.05 ~ 20.0
-	frost = 16.0
+	frost = 4.0
 
 ["Integration settings"]
 	#If you can shift right click a Pneumatic Boiler with an Advanced Pneumatic Tube to convert it to a Pneumatic Dynamo
