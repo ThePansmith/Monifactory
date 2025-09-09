@@ -141,44 +141,6 @@
 			y: -0.5d
 		}
 		{
-			id: "75C97599C39BAF75"
-			invisible: true
-			rewards: [{
-				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 0ADA0257F7B5B18A"
-				elevate_perms: true
-				id: "494D0E4FA57D8AF0"
-				silent: true
-				type: "command"
-			}]
-			tasks: [{
-				id: "41107F5F3EAA76B5"
-				stage: "doStoneline"
-				type: "gamestage"
-			}]
-			x: -2.5d
-			y: -1.75d
-		}
-		{
-			id: "0ADA0257F7B5B18A"
-			invisible: true
-			rewards: [{
-				auto: "invisible"
-				command: "/ftbquests change_progress @p reset 75C97599C39BAF75"
-				elevate_perms: true
-				id: "03D70D90046A6956"
-				silent: true
-				type: "command"
-			}]
-			tasks: [{
-				id: "2D0F2D55E4BECCB3"
-				stage: "dontStoneline"
-				type: "gamestage"
-			}]
-			x: -2.5d
-			y: -0.5d
-		}
-		{
 			id: "72DC8EC6821F577D"
 			invisible: true
 			rewards: [{

@@ -26,6 +26,7 @@
 # AE2
 !/config/ae2
 /config/ae2/client.json
+/config/ae2/common.json
 
 # Almost Unified
 !/config/almostunified
@@ -39,6 +40,7 @@
 
 # Default World Type
 !/config/defaultworldtype
+config/defaultworldtype/world-presets.txt
 
 # EnderIO configs
 !/config/enderio

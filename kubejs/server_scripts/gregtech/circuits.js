@@ -78,7 +78,16 @@ ServerEvents.recipes(event => {
             .EUt(245760)
     }
 
-    // Wetware tweaks are more invasive than a 1-item swapout
+    // Crystal and Wetware tweaks are more invasive than a 1-item swapout
+    // Move Crystal SoC up a voltage tier
+    event.remove({ id: "gtceu:circuit_assembler/crystal_processor_iv_soc_soldering_alloy" })
+    event.recipes.gtceu.circuit_assembler("crystal_processor_iv_soc_soldering_alloy")
+        .itemInputs("gtceu:multilayer_fiber_reinforced_printed_circuit_board", "gtceu:crystal_soc", "8x gtceu:fine_niobium_titanium_wire", "8x gtceu:yttrium_barium_cuprate_bolt")
+        .inputFluids("gtceu:advanced_soldering_alloy 36")
+        .itemOutputs("4x gtceu:crystal_processor")
+        .duration(5 * 20)
+        .EUt(150000)
+        .cleanroom(CleanroomType.CLEANROOM)
 
     // Wetware printed circuit board
     event.remove({ output: "gtceu:wetware_printed_circuit_board" })
@@ -100,6 +109,16 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(80000)
 
+    // Wetware Processor SoC recipe moved to UHV so that all SoC recipes are 2 voltage tiers above the base
+    event.remove({ id: "gtceu:circuit_assembler/wetware_processor_luv_soc_soldering_alloy" })
+    event.recipes.gtceu.circuit_assembler("wetware_processor_luv_soc_soldering_alloy")
+        .itemInputs("gtceu:neuro_processing_unit", "gtceu:highly_advanced_soc", "8x gtceu:fine_yttrium_barium_cuprate_wire", "8x gtceu:naquadah_bolt")
+        .inputFluids("gtceu:advanced_soldering_alloy 36")
+        .itemOutputs("4x gtceu:wetware_processor")
+        .duration(5 * 20)
+        .EUt(600000)
+        .cleanroom(CleanroomType.CLEANROOM)
+
     // Wetware Mainframe (Abnormally expensive in base game since it's the last circuit made cheaper here)
     event.remove({ output: "gtceu:wetware_processor_mainframe" })
     event.recipes.gtceu.assembly_line("wetware_mainframe_uhv")
@@ -111,7 +130,7 @@ ServerEvents.recipes(event => {
             "12x gtceu:advanced_smd_diode",
             "24x gtceu:ram_chip",
             "4x gtceu:uhpic_chip",
-            "8x gtceu:enriched_naquadah_trinium_europium_duranide_double_wire",
+            "8x gtceu:cryolobus_double_wire",
             "8x gtceu:europium_plate"
         )
         .inputFluids("gtceu:soldering_alloy 2304", "gtceu:polybenzimidazole 1152")
@@ -132,7 +151,7 @@ ServerEvents.recipes(event => {
             "10x gtceu:advanced_smd_transistor",
             "4x gtceu:fine_naquadah_wire"
         )
-        .inputFluids("gtceu:advanced_soldering_alloy 72")
+        .inputFluids("gtceu:advanced_soldering_alloy 36")
         .itemOutputs("2x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(10 * 20)
@@ -214,7 +233,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x kubejs:optical_processor")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(5 * 20)
-        .EUt(600000)
+        .EUt(2400000)
 
 
     // Extradimensional Circuits

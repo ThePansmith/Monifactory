@@ -223,7 +223,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor("psoc_base")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(200)
-        .EUt(GTValues.VA[GTValues.LuV])
+        .EUt(GTValues.VA[GTValues.ZPM])
         .inputFluids("gtceu:dielectric_mirror_solution 144")
         .itemInputs("gtceu:activated_netherite_plate", "gtceu:highly_advanced_soc")
         .notConsumable("gtceu:zpm_emitter")

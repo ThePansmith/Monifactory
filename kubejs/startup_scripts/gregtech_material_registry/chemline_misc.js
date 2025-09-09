@@ -179,33 +179,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("elemental_reduction_fluid")
 })
 
-// Eltz Processing
-GTCEuStartupEvents.registry("gtceu:material", event => {
-
-    event.create("eltic_actinate")
-        .gem()
-        .color(0xbb9966).secondaryColor(0x881105)
-        .iconSet("dilithium")
-        .components("4x monilabs:eltz", "1x actinium", "3x oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMASHING)
-
-    event.create("actinium_iron_oxide")
-        .dust()
-        .color(0xC3D1FF)    // Old actinium color for fun
-        .components("1x actinium", "4x iron", "3x oxygen")
-
-    event.create("waste_gas_mixture")
-        .fluid()
-        .color(0x666677)
-        .components("10x carbon_monoxide", "5x chloroethane", "7x ammonium_formate", "9x dinitrogen_tetroxide", "2x neon", "1x tritium")
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
-
-    event.create("saturated_water")
-        .liquid()
-        .color(0x857049)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-})
-
 // Prism Glass Processing
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
