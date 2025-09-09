@@ -9,13 +9,15 @@
 import fs from "fs"
 import path, { resolve } from "path"
 import Juke from "juke-build"
-import { DownloadCF, GetModInfo } from "./lib/curseforge.ts"
-import { CodegenAllTarget } from "./codegen/target-all.ts"
-import { z } from "zod"
-import { progressNumber } from "./lib/log.ts"
-import { readDatafileJSON } from "./lib/json_datafile.ts"
+import type { GetModInfo } from "./lib/curseforge.ts"
 
+import { CodegenAllTarget } from "./codegen/target-all.ts"
 export * from "./codegen/target-all.ts"
+
+import { cacheFolderByManifestFileEntry, DownloadModsTarget, modInfoPath } from "./deps/mods.ts"
+import { readManifest } from "./lib/manifest.ts"
+import { readDatafileJSON } from "./lib/json_datafile.ts"
+export * from "./deps/mods.ts"
 
 Juke.chdir("..", import.meta.url)
 Juke.setup({ file: import.meta.url })
@@ -56,10 +58,16 @@ const symlinkSync = (ourDir: fs.PathLike, newDir: fs.PathLike) => {
     fs.symlinkSync(ourDir, newDir)
 }
 
-const cpSyncFiltered = (ourDir: string, newDir: string, filter: (file: string) => boolean) => {
-    for (const file of fs.readdirSync(ourDir, { recursive: false, encoding: "utf8" })) {
-        if (!filter(file)) continue
-        fs.copyFileSync(path.join(ourDir, file), path.join(newDir, file))
+const cpMods = (targetDir: string, filter?: (file: string) => boolean) => {
+    // Cache might contain more files than the manifest!
+    // Make sure to copy only the necessary ones
+    for (const manifile of readManifest().files) {
+        const folder = cacheFolderByManifestFileEntry(manifile)
+        for (const file of fs.readdirSync(folder, { recursive: false, encoding: "utf8" })) {
+            if (!file.endsWith(".jar")) continue
+            if (filter && !filter(file)) continue
+            fs.copyFileSync(path.join(folder, file), path.join(targetDir, file))
+        }
     }
 }
 
@@ -127,117 +135,20 @@ export const ModeParameter = new Juke.Parameter({
 export const BuildModlistTarget = new Juke.Target({
     inputs: ["manifest.json"],
     outputs: ["dist/modlist.html"],
-    executes: async () => {
+    dependsOn: [DownloadModsTarget],
+    executes: () => {
         fs.mkdirSync("dist", { recursive: true })
-        const {files} = z.object({
-            files: z.object({
-                projectID: z.number()
-            }).array()
-        }).parse(
-            JSON.parse(fs.readFileSync("manifest.json", "utf-8"))
-        )
-        const total = progressNumber(files.length)
-        let html = "<ul>\n"
-        for (const [i, {projectID}] of files.entries()) {
-            const modInfo = await GetModInfo(projectID)
-            Juke.logger.info(`Downloaded: (${total(i)}) Mod info "${modInfo.name}"`)
-            html += `<li><a href=${modInfo.links.websiteUrl}>${modInfo.name} (by ${modInfo.authors[0].name})</a></li>\n`
-        }
-        html += "</ul>"
-        fs.writeFileSync("dist/modlist.html", html)
-    }
-})
-
-export const DownloadModsTarget = new Juke.Target({
-    inputs: ["manifest.json"],
-    outputs: () => [], // always run, we have internal logic to check mods now
-    executes: async () => {
-        const zCFID = z.number().int().positive()
-        const zCFBaseFile = z.object({
-            fileID: zCFID,
-            required: z.literal(true),
-        })
-
-        const zManifest = z.object({
-            files: zCFBaseFile.extend({
-                projectID: zCFID,
-            }).array()
-        })
-
-        const manifest = zManifest.parse(readDatafileJSON("manifest.json"))
-
-        const zCacheJSON = z.record(
-            z.templateLiteral([z.number()]).pipe(z.coerce.number()),
-            zCFBaseFile.extend({
-                file: z.string().optional(),
-            })
-        )
-
-        fs.mkdirSync("dist/modcache", { recursive: true })
-
-        // get old jsondata files cache
-        let dataKeys: z.infer<typeof zCacheJSON> = {}
-        const mIdToDownload: number[] = []
-        if (fs.existsSync("dist/cache.json")) {
-            Juke.logger.info("Modmeta cache hit")
-            // diff new & old data
-            const oldData = zCacheJSON.parse(readDatafileJSON("dist/cache.json"))
-            const newData: Record<number, z.infer<typeof zCFBaseFile>> = {}
-            for (const { projectID, fileID, required } of manifest.files) {
-                newData[projectID] = { fileID, required }
-            }
-
-            const oldDataKeys = Object.keys(oldData).map(Number)
-            const newDataKeys = Object.keys(newData).map(Number)
-
-            // filter returns changed mods, lets see now who owns them
-            for (const pid of oldDataKeys.filter(pid => !newDataKeys.includes(pid))
-                .concat(newDataKeys.filter(x => !oldDataKeys.includes(x)))) {
-                const fromOldData = oldData[pid]
-                if (fromOldData) {
-                    // from old, which means this is removed
-                    Juke.rm(`dist/modcache/${fromOldData["file"]}`)
-                    Juke.logger.info(`Mod was removed from modpack: ${pid}`)
-                    delete oldData[pid]
-                    continue
-                }
-                if (newData[pid] && !mIdToDownload.includes(pid)) { // new mod added
-                    mIdToDownload.push(pid)
-                    Juke.logger.info(`Mod was added from modpack: ${pid}`)
-                    oldData[pid] = {...newData[pid] } // copy
-                }
-            }
-
-            // now filter changed *fileids*, could prolly b optimized and use 1 loop instead of 2
-            for (const pid of oldDataKeys.filter(pid => (
-                newData[pid] && oldData[pid].fileID !== newData[pid].fileID))) {
-                const fromOldData = oldData[pid]
-                // from old, which means this is updated
-                if (fromOldData) {
-                    Juke.rm(`dist/modcache/${fromOldData["file"]}`)
-                    Juke.logger.info(`Mod was updated from modpack: ${pid}`)
-                    if (!mIdToDownload.includes(pid)) mIdToDownload.push(pid)
-                    oldData[pid] = newData[pid]
-                }
-            }
-            dataKeys = oldData
-        } else {
-            Juke.logger.info("Modmeta remapping")
-            for (const { projectID, fileID, required } of manifest.files) {
-                dataKeys[projectID] = { fileID, required }
-                mIdToDownload.push(projectID)
-            }
-        }
-
-        for (const modID of mIdToDownload) {
-            const file = dataKeys[modID]
-            const res = await DownloadCF({
-                modID,
-                modFileID: file.fileID
-            }, "dist/modcache/")
-            dataKeys[modID].file = res.fileName
-        }
-        fs.writeFileSync("dist/cache.json", JSON.stringify(dataKeys))
+        const htmlLines = [
+            "<ul>",
+            ...readManifest().files.map(file => {
+                const modInfo = readDatafileJSON(
+                    cacheFolderByManifestFileEntry(file) + modInfoPath
+                ) as Awaited<ReturnType<typeof GetModInfo>>
+                return `<li><a href=${modInfo.links.websiteUrl}>${modInfo.name} (by ${modInfo.authors.map(a => a.name).join(", ")})</a></li>`
+            }),
+            "</ul>"
+        ]
+        fs.writeFileSync("dist/modlist.html", htmlLines.join("\n"))
     }
 })
 
@@ -282,12 +193,9 @@ export const BuildServerTarget = new Juke.Target({
         }
 
         fs.mkdirSync("dist/server/mods")
-        cpSyncFiltered("dist/modcache/", "dist/server/mods", file => {
+        cpMods("dist/server/mods", file => {
             const fillet = file.toLowerCase()
-            return (
-                fillet.includes(".jar")
-                && !clientMods.find(modName => fillet.includes(modName))
-            )
+            return !clientMods.find(modName => fillet.includes(modName))
         })
 
         await packMod("server")
@@ -315,7 +223,7 @@ export const BuildDevTarget = new Juke.Target({
             Juke.logger.info("Only updating mods as dist/dev exists")
 
             fs.mkdirSync("dist/dev/overrides", { recursive: true })
-            fs.cpSync("dist/modcache", "dist/.devtmp", { recursive: true })
+            cpMods("dist/.devtmp")
             fs.cpSync("mods", "dist/.devtmp", { recursive: true })
             return
         }
@@ -327,7 +235,7 @@ export const BuildDevTarget = new Juke.Target({
         }
 
         // "merge" both mod folders
-        fs.cpSync("dist/modcache", "dist/.devtmp", { recursive: true })
+        cpMods("dist/.devtmp")
         fs.cpSync("mods", "dist/.devtmp", { recursive: true, force: true })
         symlinkSync(resolve("dist/.devtmp"), resolve("dist/dev/overrides/mods"))
         // fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
@@ -358,7 +266,7 @@ export const UploadTarget = new Juke.Target({
 
 export const CleanCacheTarget = new Juke.Target({
     executes: () => {
-        Juke.rm("dist/modcache", { recursive: true })
+        Juke.rm("dist/mod_cache", { recursive: true })
         Juke.rm("dist/modlist.html")
     },
 })
