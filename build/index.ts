@@ -41,7 +41,6 @@ const clientMods = [
     "embeddiumplus",
     "citresewn",
     "legendarytooltips",
-    "fancymenu",
     "drippyloadingscreen",
     "badoptimizations"
 ]
