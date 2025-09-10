@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtceu:dark_steel_plate",
         B: "gtceu:mv_electric_piston",
-        C: "gtceu:fluix_gem",
+        C: "ae2:fluix_crystal",
         D: "gtceu:mv_machine_hull"
     }).id("kubejs:ae2/inscriber")
 
@@ -227,33 +227,12 @@ ServerEvents.recipes(event => {
         B: "gtceu:certus_quartz_plate"
     }).id("kubejs:ae2/charger")
 
-    // Charged Certus
-    event.remove({ id: "ae2:charger/charged_certus_quartz_crystal" })
-    event.remove({ id: "ae2:transform/certus_quartz_crystals" })
-    event.custom({
-        "type": "ae2:charger",
-        "ingredient": {
-            "item": "gtceu:certus_quartz_gem"
-        },
-        "result": {
-            "item": "gtceu:charged_certus_quartz_gem"
-        }
-    }).id("kubejs:ae2/charged_certus_quartz_gem")
-
     event.recipes.gtceu.autoclave("charged_autoclave")
-        .itemInputs(["gtceu:certus_quartz_gem"])
+        .itemInputs(["ae2:certus_quartz_crystal"])
         .inputFluids("gtceu:distilled_water 100")
-        .itemOutputs("gtceu:charged_certus_quartz_gem")
+        .itemOutputs("ae2:charged_certus_quartz_crystal")
         .duration(20)
         .EUt(480)
-
-    // Fix Regular Certus Grinding Recipe giving Charged Certus Dust sometimes due to using forge tags
-    event.remove({ id: "gtceu:macerator/macerate_certus_quartz_gem" })
-    event.recipes.gtceu.macerator("macerate_certus_quartz_gem")
-        .itemInputs(["gtceu:certus_quartz_gem"])
-        .itemOutputs("gtceu:certus_quartz_dust")
-        .duration(20)
-        .EUt(GTValues.VA[GTValues.ULV])
 
     // Matter Condenser
     event.remove({ id: "ae2:network/blocks/io_condenser" })
@@ -399,23 +378,6 @@ ServerEvents.recipes(event => {
     event.shapeless("ae2:energy_level_emitter", ["ae2:level_emitter", "#forge:gems/certus_quartz"]).id("kubejs:ae2/energy_level_emitter").id("kubejs:ae2/energy_level_emitter")
 
     // Processors
-    event.remove({ id: "ae2:inscriber/calculation_processor_print" })
-    event.custom({
-        "type": "ae2:inscriber",
-        "ingredients": {
-            "middle": {
-                "item": "gtceu:certus_quartz_gem"
-            },
-            "top": {
-                "item": "ae2:calculation_processor_press"
-            }
-        },
-        "mode": "inscribe",
-        "result": {
-            "item": "ae2:printed_calculation_processor"
-        }
-    }).id("kubejs:ae2/calculation_processor_print")
-
     event.remove({ id: "ae2:inscriber/silicon_print" })
     const wafers = [
         ["gtceu:", "silicon_wafer"],
@@ -576,13 +538,13 @@ ServerEvents.recipes(event => {
     event.remove({ id: "ae2:network/cables/glass_fluix" })
 
     event.recipes.gtceu.wiremill("kubejs:ae2/quartz_fiber")
-        .itemInputs("gtceu:certus_quartz_gem")
+        .itemInputs("ae2:certus_quartz_crystal")
         .itemOutputs("ae2:quartz_fiber")
         .duration(50)
         .EUt(16)
 
     event.recipes.gtceu.alloy_smelter("kubejs:ae2/fluix_cable")
-        .itemInputs(["gtceu:fluix_dust", "ae2:quartz_fiber"])
+        .itemInputs(["ae2:fluix_dust", "ae2:quartz_fiber"])
         .itemOutputs("2x ae2:fluix_glass_cable")
         .duration(50)
         .EUt(16)
@@ -595,103 +557,24 @@ ServerEvents.recipes(event => {
         .duration(120)
         .EUt(GTValues.VA[GTValues.ULV])
 
-    // Certus
-    event.remove({ id: /^ae2:transform.*budding_quartz$/ })
-    event.replaceInput(
-        {},
-        "ae2:charged_certus_quartz_crystal",
-        "gtceu:charged_certus_quartz_gem"
-    )
-
-    event.custom({
-        "type": "ae2:transform",
-        "ingredients": [
-            {
-                "item": "gtceu:charged_certus_quartz_gem"
-            },
-            {
-                "tag": "forge:storage_blocks/certus_quartz"
-            }
-        ],
-        "result": {
-            "count": 1,
-            "item": "ae2:damaged_budding_quartz"
-        }
-    })
-    event.custom({
-        "type": "ae2:transform",
-        "ingredients": [
-            {
-                "item": "gtceu:charged_certus_quartz_gem"
-            },
-            {
-                "item": "ae2:damaged_budding_quartz"
-            }
-        ],
-        "result": {
-            "count": 1,
-            "item": "ae2:chipped_budding_quartz"
-        }
-    })
-    event.custom({
-        "type": "ae2:transform",
-        "ingredients": [
-            {
-                "item": "gtceu:charged_certus_quartz_gem"
-            },
-            {
-                "item": "ae2:chipped_budding_quartz"
-            }
-        ],
-        "result": {
-            "count": 1,
-            "item": "ae2:flawed_budding_quartz"
-        }
-    })
-
-
+    // Budding Certus
     event.recipes.gtceu.autoclave("flawless_budding")
-        .itemInputs(["ae2:flawed_budding_quartz"])
+        .itemInputs("ae2:flawed_budding_quartz", "ae2:charged_certus_quartz_crystal")
         .inputFluids("gtceu:distilled_water 100")
         .itemOutputs("ae2:flawless_budding_quartz")
         .duration(20)
         .EUt(480)
 
-    // Fluix
-    event.remove({ id: "ae2:transform/fluix_crystal" })
-    event.remove({ id: "ae2:transform/fluix_crystals" })
-    event.remove({ id: "ae2:misc/deconstruction_fluix_block" })
-    event.custom({
-        "type": "ae2:transform",
-        "ingredients": [
-            {
-                "item": "gtceu:charged_certus_quartz_gem"
-            },
-            {
-                "item": "minecraft:redstone"
-            },
-            {
-                "item": "minecraft:quartz"
-            }
-        ],
-        "result": {
-            "count": 2,
-            "item": "gtceu:fluix_gem"
-        }
-    }).id("kubejs:ae2/fluix_gem")
-
-    event.replaceInput({ id: /ae2/ }, "ae2:fluix_block", "gtceu:fluix_block")
-
     event.recipes.gtceu.mixer("fluix")
-        .itemInputs("gtceu:charged_certus_quartz_gem", "minecraft:redstone", "minecraft:quartz")
+        .itemInputs("gtceu:charged_certus_quartz_crystal", "minecraft:redstone", "minecraft:quartz")
         .inputFluids(Fluid.of("minecraft:water", 100))
-        .itemOutputs("2x gtceu:fluix_gem")
+        .itemOutputs("2x ae2:fluix_crystal")
         .duration(20)
         .EUt(7)
         .circuit(3)
 
     event.recipes.gtceu.compressor("fluix_plate")
-        .itemInputs("gtceu:fluix_dust")
+        .itemInputs("ae2:fluix_dust")
         .itemOutputs("gtceu:fluix_plate")
         .duration(400)
         .EUt(2)
@@ -935,7 +818,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.forming_press("ae2_printed_calcuation_greg")
         .notConsumable("ae2:calculation_processor_press")
-        .itemInputs("4x gtceu:certus_quartz_gem")
+        .itemInputs("4x ae2:certus_quartz_crystal")
         .itemOutputs("4x ae2:printed_calculation_processor")
         .duration(10)
         .EUt(2048)
@@ -1082,7 +965,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: /expatternprovider.*cutter/ })
 
     // ME packing tape
-    event.shapeless("expatternprovider:me_packing_tape", ["gtceu:basic_tape", "gtceu:fluix_dust"]).id("expatternprovider:tape")
+    event.shapeless("expatternprovider:me_packing_tape", ["gtceu:basic_tape", "ae2:fluix_dust"]).id("expatternprovider:tape")
 
     // Assembler Matrix
     // Assembler Matrix Frame
@@ -1188,43 +1071,18 @@ ServerEvents.recipes(event => {
         result: { item: "ae2wtlib:quantum_bridge_card" }
     }).id("kubejs:ae2wtlib/quantum_bridge_card")
 
-    // Fluix Dust Inscriber
-    // event.remove({ id: 'jei:ae2/inscriber/fluix_dust' }) (I don't know what's wrong with that recipe but it doesn't want to be removed or replaceoutput)
-    event.custom({
-        "type": "ae2:inscriber",
-        "ingredients": {
-            "middle": {
-                "item": "gtceu:fluix_gem"
-            }
-        },
-        "mode": "inscribe",
-        "result": {
-            "item": "gtceu:fluix_dust"
-        }
-    }).id("kubejs:ae2/fluix_dust_inscriber")
-
-    // Certus Quartz Crystal
-    event.remove({ input: "ae2:certus_quartz_crystal" })
-    event.replaceOutput(
-        { output: "ae2:certus_quartz_crystal" },
-        "ae2:certus_quartz_crystal",
-        "gtceu:certus_quartz_gem"
-    )
-
-    // Certus Quartz Block
-    event.remove({ output: "gtceu:certus_quartz_block" })
+    // Certus Quartz and Fluix Blocks
     event.recipes.gtceu.compressor("kubejs:certus_quartz_block")
-        .itemInputs(["4x gtceu:certus_quartz_gem"])
-        .itemOutputs("gtceu:certus_quartz_block")
+        .itemInputs(["4x ae2:certus_quartz_crystal"])
+        .itemOutputs("ae2:quartz_block")
         .duration(300)
         .EUt(2)
 
-    event.shaped(Item.of("gtceu:certus_quartz_block"), [
-        "AA",
-        "AA"
-    ], {
-        A: "#forge:gems/certus_quartz"
-    }).id("kubejs:gtceu/certus_quartz_block")
+    event.recipes.gtceu.compressor("kubejs:certus_quartz_block")
+        .itemInputs(["4x ae2:fluix_crystal"])
+        .itemOutputs("ae2:fluix_block")
+        .duration(300)
+        .EUt(2)
 
     // Vibrant Quartz Glass
     event.remove({ output: "ae2:quartz_vibrant_glass" })

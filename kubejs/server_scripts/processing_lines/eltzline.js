@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
         },
         "ingredients": [
             {
-                "item": "gtceu:charged_certus_quartz_gem"
+                "item": "ae2:charged_certus_quartz_crystal"
             },
             {
                 "item": "gtceu:eltic_sludge_dust"

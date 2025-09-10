@@ -13,6 +13,10 @@ const $OreProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.mat
 const $FluidBuilder = Java.loadClass("com.gregtechceu.gtceu.api.fluids.FluidBuilder");
 const $DustProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty");
 
+// AE2 ItemLike suppliers
+const $AEItems = Java.loadClass("appeng.core.definitions.AEItems")
+const $AEBlocks = Java.loadClass("appeng.core.definitions.AEBlocks")
+
 
 let addFluid = (mat, key, temp) => {
     let prop = new $FluidProperty()
@@ -117,4 +121,15 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.Ultimet.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(4)
     GTMaterials.Osmiridium.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(12)
     GTMaterials.Americium.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(20)
+
+    // SetIgnoreds for AE2 materials
+    TagPrefix.gem.setIgnored(GTMaterials.CertusQuartz, $AEItems.CERTUS_QUARTZ_CRYSTAL)
+    TagPrefix.gem.setIgnored(GTMaterials.get("charged_certus_quartz"), $AEItems.CERTUS_QUARTZ_CRYSTAL_CHARGED)
+    TagPrefix.gem.setIgnored(GTMaterials.get("fluix"), $AEItems.FLUIX_CRYSTAL)
+
+    TagPrefix.dust.setIgnored(GTMaterials.CertusQuartz, $AEItems.CERTUS_QUARTZ_DUST)
+    TagPrefix.dust.setIgnored(GTMaterials.get("fluix"), $AEItems.FLUIX_DUST)
+
+    TagPrefix.block.setIgnored(GTMaterials.CertusQuartz, $AEBlocks.QUARTZ_BLOCK.asItem())
+    TagPrefix.block.setIgnored(GTMaterials.get("fluix"), $AEBlocks.FLUIX_BLOCK.asItem())
 })

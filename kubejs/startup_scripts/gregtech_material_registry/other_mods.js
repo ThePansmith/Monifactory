@@ -205,7 +205,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("charged_certus_quartz")
         .gem()
-        .dust()
         .color(0x9fd5e8)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)

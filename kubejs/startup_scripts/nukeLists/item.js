@@ -38,11 +38,6 @@ global.itemNukeList = [
     /^ad_astra:.*_bucket$/,
 
     // Applied Energistics 2
-    "ae2:certus_quartz_crystal",
-    "ae2:charged_certus_quartz_crystal",
-    "ae2:fluix_block",
-    "ae2:fluix_crystal",
-    "ae2:fluix_dust",
     "ae2:vibration_chamber",
 
     // Better Angel Ring
