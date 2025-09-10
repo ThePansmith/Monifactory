@@ -74,17 +74,17 @@ ServerEvents.recipes(event => {
 
     // Polymerization recipe
     event.recipes.gtceu.chemical_reactor("polyethyl_cyanoacrylate")
-        .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 200, -40)
+        .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 100, 0)
         .inputFluids("gtceu:ethyl_cyanoacrylate 144", "minecraft:water 1000")
-        .itemOutputs("gtceu:polyethyl_cyanoacrylate_dust")
+        .outputFluids("gtceu:polyethyl_cyanoacrylate 144")
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
     // Polymerization recipe with distilled water
     event.recipes.gtceu.chemical_reactor("polyethyl_cyanoacrylate_distilled")
-        .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 200, -40)
+        .chancedFluidInput("gtceu:dimethyl_sulfoxide 200", 100, 0)
         .inputFluids("gtceu:ethyl_cyanoacrylate 96", "gtceu:distilled_water 1000")
-        .itemOutputs("gtceu:polyethyl_cyanoacrylate_dust")
+        .outputFluids("gtceu:polyethyl_cyanoacrylate 144")
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])
 
@@ -123,4 +123,18 @@ ServerEvents.recipes(event => {
         .itemOutputs("32x gtceu:duct_tape")
         .duration(100)
         .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.autoclave("carbon_fibers_peca")
+        .itemInputs("16x gtceu:carbon_dust")
+        .inputFluids("gtceu:polyethyl_cyanoacrylate 9")
+        .itemOutputs("32x gtceu:carbon_fibers")
+        .duration(37)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    event.recipes.gtceu.fluid_solidifier("petri_dish_peca")
+        .notConsumable("gtceu:cylinder_casting_mold")
+        .inputFluids("gtceu:polyethyl_cyanoacrylate 9")
+        .itemOutputs("4x gtceu:petri_dish")
+        .duration(0.5 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
 })

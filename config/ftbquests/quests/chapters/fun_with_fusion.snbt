@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: "hexagon"
+	default_quest_shape: ""
 	filename: "fun_with_fusion"
 	group: "0D5BFFD0A5E49312"
 	icon: "gtceu:luv_fusion_reactor"
@@ -81,7 +81,6 @@
 	]
 	quests: [
 		{
-			dependencies: ["2A6E9E7C80754936"]
 			description: ["{moni.quest.1183B96529D08326.description1}"]
 			id: "1183B96529D08326"
 			rewards: [{
@@ -100,8 +99,8 @@
 		}
 		{
 			dependencies: [
-				"1183B96529D08326"
 				"115B96B2092D671E"
+				"28834638F1487312"
 				"5792330C6E5B87A3"
 			]
 			description: [
@@ -154,7 +153,7 @@
 			]
 			title: "{moni.quest.069773756716E192.title}"
 			x: 0.5d
-			y: -3.4928571428571473d
+			y: -3.5d
 		}
 		{
 			dependencies: ["069773756716E192"]
@@ -199,7 +198,7 @@
 			y: -1.9928571428571473d
 		}
 		{
-			dependencies: ["79EFCD8E01384C0C"]
+			dependencies: ["00011E5DD7EEE8DB"]
 			description: ["{moni.quest.15607184B546F5EE.description1}"]
 			id: "15607184B546F5EE"
 			rewards: [{
@@ -219,7 +218,6 @@
 		{
 			dependencies: [
 				"4A8FB1EF600F0882"
-				"5BADF536443E712D"
 				"01E542E1C9DAF5B4"
 			]
 			description: [
@@ -265,7 +263,10 @@
 			y: -3.4928571428571473d
 		}
 		{
-			dependencies: ["3FFC053E3E11D586"]
+			dependencies: [
+				"3FFC053E3E11D586"
+				"22E50A6923EBF5CB"
+			]
 			description: [
 				"{moni.quest.5BADF536443E712D.description1}"
 				""
@@ -481,19 +482,19 @@
 						items: [
 							{
 								Count: 1b
+								id: "nuclearcraft:plutonium_242"
+							}
+							{
+								Count: 1b
 								id: "nuclearcraft:plutonium_238"
 							}
 							{
 								Count: 1b
-								id: "nuclearcraft:plutonium_239"
+								id: "gtceu:plutonium_ingot"
 							}
 							{
 								Count: 1b
 								id: "gtceu:plutonium_241_ingot"
-							}
-							{
-								Count: 1b
-								id: "nuclearcraft:plutonium_242"
 							}
 						]
 					}
@@ -568,10 +569,8 @@
 				"{moni.quest.0E5E5E647F378D02.description2}"
 				""
 				"{moni.quest.0E5E5E647F378D02.description3}"
-				""
-				"{moni.quest.0E5E5E647F378D02.description4}"
 			]
-			icon: "nuclearcraft:fuel_curium_lecm_245"
+			icon: "nuclearcraft:curium_245"
 			id: "0E5E5E647F378D02"
 			rewards: [{
 				id: "78C58916BAFD010E"
@@ -612,13 +611,13 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["0E5E5E647F378D02"]
+			dependencies: ["7D7B34CF5145F971"]
 			description: [
 				"{moni.quest.18B28DC43ACAF768.description1}"
 				""
 				"{moni.quest.18B28DC43ACAF768.description2}"
 			]
-			icon: "nuclearcraft:fuel_berkelium_heb_248"
+			icon: "nuclearcraft:berkelium_248"
 			id: "18B28DC43ACAF768"
 			rewards: [{
 				id: "121513CD4E6D9BA8"
@@ -647,21 +646,19 @@
 				type: "item"
 			}]
 			title: "{moni.quest.18B28DC43ACAF768.title}"
-			x: 2.0d
-			y: -10.25d
+			x: 0.5d
+			y: -11.0d
 		}
 		{
-			dependencies: ["0E5E5E647F378D02"]
+			dependencies: ["6728FB92FD3A2084"]
 			description: [
 				"{moni.quest.79197A2CD8E435B2.description1}"
 				""
 				"{moni.quest.79197A2CD8E435B2.description2}"
 				""
 				"{moni.quest.79197A2CD8E435B2.description3}"
-				""
-				"{moni.quest.79197A2CD8E435B2.description4}"
 			]
-			icon: "nuclearcraft:fuel_californium_hecf_251"
+			icon: "nuclearcraft:californium_251"
 			id: "79197A2CD8E435B2"
 			rewards: [{
 				id: "461C74DA073F95A0"
@@ -675,10 +672,6 @@
 					id: "itemfilters:or"
 					tag: {
 						items: [
-							{
-								Count: 1b
-								id: "nuclearcraft:californium_249"
-							}
 							{
 								Count: 1b
 								id: "nuclearcraft:californium_250"
@@ -698,8 +691,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.79197A2CD8E435B2.title}"
-			x: 2.0d
-			y: -8.75d
+			x: 0.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["7D7B34CF5145F971"]
@@ -728,6 +721,7 @@
 			dependencies: [
 				"79197A2CD8E435B2"
 				"18B28DC43ACAF768"
+				"0E5E5E647F378D02"
 			]
 			description: [
 				"{moni.quest.3616092A2954FEE0.description1}"
@@ -746,11 +740,14 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.3616092A2954FEE0.title}"
-			x: 3.5d
+			x: 2.5d
 			y: -9.5d
 		}
 		{
-			dependencies: ["3A69EE21B3089929"]
+			dependencies: [
+				"3A69EE21B3089929"
+				"28CA4E5308EC0BB9"
+			]
 			description: [
 				"{moni.quest.57C75A5756F62D17.description1}"
 				""
@@ -818,6 +815,11 @@
 				"{moni.quest.3A69EE21B3089929.description2}"
 			]
 			id: "3A69EE21B3089929"
+			rewards: [{
+				id: "3F51DC3B35CA6470"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0C1D0A754607F817"
 				item: "gtceu:normal_optical_pipe"
@@ -828,7 +830,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["3A69EE21B3089929"]
+			dependencies: [
+				"3A69EE21B3089929"
+				"28834638F1487312"
+			]
 			description: [
 				"{moni.quest.37BE175EEC2ABD59.description1}"
 				""
@@ -882,6 +887,23 @@
 					item: "gtceu:computation_transmitter_hatch"
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "3E264A85174F9B37"
+					item: "gtceu:hpca_computation_component"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3D46E7A04715342E"
+					item: "gtceu:hpca_active_cooler_component"
+					type: "item"
+				}
+				{
+					id: "1B8F146BECFFFC5D"
+					item: "gtceu:hpca_empty_component"
+					type: "item"
+				}
 			]
 			title: "{moni.quest.37BE175EEC2ABD59.title}"
 			x: -2.5d
@@ -900,6 +922,11 @@
 			]
 			icon: "gtceu:research_station"
 			id: "1109CFC5D47FC011"
+			rewards: [{
+				id: "0D93EA62B529457F"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3AD27DA0F09B8C56"
@@ -940,10 +967,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"115B96B2092D671E"
-				"0562D9F4C441EAF9"
-			]
+			dependencies: ["41F1837D7C131898"]
 			description: [
 				"{moni.quest.0CEF53164D8B6496.description1}"
 				""
@@ -965,7 +989,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["0CEF53164D8B6496"]
+			dependencies: ["15607184B546F5EE"]
 			description: [
 				"{moni.quest.75DD12FBC8AA39FC.description1}"
 				""

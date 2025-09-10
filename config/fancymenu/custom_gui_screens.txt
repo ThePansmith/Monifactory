@@ -22,11 +22,47 @@ custom_gui {
 }
 
 custom_gui {
+  identifier = restart_game_em
+  title = Restart your game?
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = true
+  pause_game = true
+}
+
+custom_gui {
   identifier = pack_link_screen
   title = 
   allow_esc = true
   transparent_world_background = false
   transparent_world_background_overlay = false
   pause_game = false
+}
+
+custom_gui {
+  identifier = restart_game_hm
+  title = Restart your game?
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = true
+  pause_game = true
+}
+
+custom_gui {
+  identifier = restart_game_nm
+  title = Restart your game?
+  allow_esc = true
+  transparent_world_background = false
+  transparent_world_background_overlay = true
+  pause_game = true
+}
+
+custom_gui {
+  identifier = pack_mode_switcher
+  title = Pack Mode Switcher
+  allow_esc = true
+  transparent_world_background = false
+  transparent_world_background_overlay = true
+  pause_game = true
 }
 

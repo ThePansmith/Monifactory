@@ -61,19 +61,22 @@ ServerEvents.recipes(event => {
         "WPW"
     ], {
         P: "gtceu:cupronickel_plate",
-        W: "gtceu:copper_single_cable",
+        W: "gtceu:electrum_single_cable",
         G: "gtceu:invar_gear"
     }).id("kubejs:bountiful/alloy_widget")
-    event.shaped("kubejs:ender_widget", [
-        "APB",
-        "PGP",
-        "CPD"
-    ], {
-        P: "gtceu:vibrant_alloy_plate",
-        G: "gtceu:electrical_steel_gear",
-        A: "laserio:item_card",
-        B: "laserio:fluid_card",
-        C: "laserio:energy_card",
-        D: "laserio:redstone_card"
-    }).id("kubejs:bountiful/ender_widget")
+
+    if(doLaserIO) {
+        event.shaped("kubejs:ender_widget", [
+            "APB",
+            "PGP",
+            "CPD"
+        ], {
+            P: "gtceu:vibrant_alloy_plate",
+            G: "gtceu:electrical_steel_gear",
+            A: "laserio:card_item",
+            B: "laserio:card_fluid",
+            C: "laserio:card_energy",
+            D: "laserio:card_redstone"
+        }).id("kubejs:bountiful/ender_widget")
+    }
 })

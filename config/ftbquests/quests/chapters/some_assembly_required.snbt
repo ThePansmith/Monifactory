@@ -1,0 +1,1633 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "some_assembly_required"
+	group: "18F0ED1F9A002C08"
+	icon: "gtceu:assembly_line"
+	id: "058B7FE882875343"
+	order_index: 5
+	quest_links: [
+		{
+			id: "4AB71382C803BD92"
+			linked_quest: "1DFF7C35B5B26B80"
+			shape: "hexagon"
+			x: -12.25d
+			y: -8.0d
+		}
+		{
+			id: "1596B621A4F022CC"
+			linked_quest: "2DD1E2391DA3170C"
+			shape: "hexagon"
+			x: -10.25d
+			y: -8.0d
+		}
+		{
+			id: "68CD175ED7E7E9FE"
+			linked_quest: "4DB622A78605A2EB"
+			shape: "gear"
+			size: 1.5d
+			x: -8.25d
+			y: -8.0d
+		}
+		{
+			id: "760BD8D5E0B0FE24"
+			linked_quest: "57A6FE885489C3ED"
+			x: -8.25d
+			y: -6.0d
+		}
+		{
+			id: "1C267CF4E1689C85"
+			linked_quest: "4E63CE9607E3B792"
+			shape: "hexagon"
+			size: 1.5d
+			x: -6.25d
+			y: -8.0d
+		}
+		{
+			id: "7E828413AC5F2CE2"
+			linked_quest: "47D092CBA484C0DE"
+			shape: "hexagon"
+			x: -6.25d
+			y: -6.0d
+		}
+		{
+			id: "7A8ECF14A7DB76F8"
+			linked_quest: "1FF5C2A3CAB76088"
+			shape: "hexagon"
+			x: -6.25d
+			y: -4.0d
+		}
+		{
+			id: "2DAEEE4673ACDE81"
+			linked_quest: "6CE6674C20500023"
+			shape: "hexagon"
+			x: -6.25d
+			y: -2.0d
+		}
+		{
+			id: "69D9E5D2192FE218"
+			linked_quest: "521977C7165229F1"
+			shape: "gear"
+			size: 1.5d
+			x: -6.25d
+			y: 0.0d
+		}
+		{
+			id: "33B08B68738FB6E3"
+			linked_quest: "49D33146A1F417E8"
+			x: -1.25d
+			y: -6.0d
+		}
+		{
+			id: "3580707E636655C2"
+			linked_quest: "11154356854B64DA"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			id: "1C4EBBFDD443BAE7"
+			linked_quest: "53EC3831D66769CA"
+			x: 7.25d
+			y: 1.0d
+		}
+		{
+			id: "1FD25B0E6E62544E"
+			linked_quest: "745628397790ED7A"
+			shape: "hexagon"
+			x: 10.75d
+			y: -6.5d
+		}
+		{
+			id: "24BED0E27BD54DB6"
+			linked_quest: "0BB798ACFE684AA9"
+			shape: "hexagon"
+			size: 2.0d
+			x: -3.25d
+			y: 0.0d
+		}
+		{
+			id: "7DFA3535BA3EEDFC"
+			linked_quest: "54C3B1B782FDF57F"
+			x: -10.25d
+			y: 2.75d
+		}
+		{
+			id: "4352520D0A2CA401"
+			linked_quest: "3A69EE21B3089929"
+			x: 2.75d
+			y: -1.5d
+		}
+		{
+			id: "414ADDCE3A31DFD3"
+			linked_quest: "57C75A5756F62D17"
+			x: 2.75d
+			y: 1.25d
+		}
+		{
+			id: "5522298B1FC30B2B"
+			linked_quest: "2F04FA8D3E15E375"
+			size: 2.0d
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			id: "36AC592BCB5CBBBC"
+			linked_quest: "38791476E970C57D"
+			shape: "hexagon"
+			x: 9.0d
+			y: 2.25d
+		}
+		{
+			id: "618C6CA76FB63461"
+			linked_quest: "6A76B3DCA599B9B5"
+			x: 16.0d
+			y: 7.25d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"77582C534A994D7C"
+				"7E09D4E00BFA4970"
+			]
+			description: [
+				"{moni.quest.52F1953ED72A8AA6.description1}"
+				""
+				"{moni.quest.52F1953ED72A8AA6.description2}"
+				""
+				"{moni.quest.52F1953ED72A8AA6.description3}"
+				""
+				"{moni.quest.52F1953ED72A8AA6.description4}"
+				""
+				"{moni.quest.52F1953ED72A8AA6.description5}"
+			]
+			icon: "monilabs:advanced_microverse_projector"
+			id: "52F1953ED72A8AA6"
+			rewards: [{
+				id: "5AE89BD5E0053CAD"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2AC4B505FA1D3CD7"
+					item: "monilabs:advanced_microverse_projector"
+					type: "item"
+				}
+				{
+					count: 47L
+					id: "078732970112DE64"
+					item: "monilabs:microverse_casing"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "75F7637F2A28B88D"
+					item: "gtceu:tempered_glass"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "47AE5E0A855FB7CF"
+					item: "gtceu:assembly_line_grating"
+					type: "item"
+				}
+				{
+					id: "42F1327485BA2D3A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					title: "{moni.task.42F1327485BA2D3A}"
+					type: "item"
+				}
+				{
+					id: "16C7CAB84E336FD7"
+					item: "gtceu:hv_output_bus"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.52F1953ED72A8AA6.title}"
+			x: 12.0d
+			y: 7.25d
+		}
+		{
+			dependencies: [
+				"7D39A4D0CC886796"
+				"27B3EB82ED638620"
+				"52F1953ED72A8AA6"
+				"77582C534A994D7C"
+			]
+			description: [
+				"{moni.quest.15DBB22E3DC0AFB7.description1}"
+				""
+				"{moni.quest.15DBB22E3DC0AFB7.description2}"
+				""
+				"{moni.quest.15DBB22E3DC0AFB7.description3}"
+				""
+				"{moni.quest.15DBB22E3DC0AFB7.description11}"
+				""
+				"{moni.quest.15DBB22E3DC0AFB7.description12}"
+			]
+			id: "15DBB22E3DC0AFB7"
+			rewards: [{
+				id: "48E752C131EA99AC"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "41398E76BAF0F92E"
+				item: "kubejs:microminer_t4"
+				type: "item"
+			}]
+			title: "{moni.quest.15DBB22E3DC0AFB7.title}"
+			x: 13.25d
+			y: 4.75d
+		}
+		{
+			dependencies: ["53C00EA9D9BEE776"]
+			description: [
+				"{moni.quest.6E5343E45E99CBAD.description1}"
+				""
+				"{moni.quest.6E5343E45E99CBAD.description2}"
+				""
+				"{moni.quest.6E5343E45E99CBAD.description3}"
+				""
+				"{moni.quest.6E5343E45E99CBAD.description4}"
+			]
+			id: "6E5343E45E99CBAD"
+			rewards: [{
+				id: "6655983AB054E8EA"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "76BD7DC9E8DFF0C6"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
+			title: "{moni.quest.6E5343E45E99CBAD.title}"
+			x: -4.5d
+			y: -4.75d
+		}
+		{
+			dependencies: [
+				"6E5343E45E99CBAD"
+				"11154356854B64DA"
+			]
+			description: [
+				"{moni.quest.1903B26C95DD325A.description1}"
+				""
+				"{moni.quest.1903B26C95DD325A.description2}"
+				""
+				"{moni.quest.1903B26C95DD325A.description3}"
+				""
+				"{moni.quest.1903B26C95DD325A.description4}"
+				""
+				"{moni.quest.1903B26C95DD325A.description5}"
+			]
+			id: "1903B26C95DD325A"
+			rewards: [{
+				id: "6AC4AD3CD3FE51B3"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "1A7AA84791A76177"
+				item: "gtceu:qbit_cpu_chip"
+				type: "item"
+			}]
+			title: "{moni.quest.1903B26C95DD325A.title}"
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"672D43BD113251EA"
+				"605062720747B482"
+			]
+			description: [
+				"{moni.quest.6DAB13A7BDECE94E.description1}"
+				""
+				"{moni.quest.6DAB13A7BDECE94E.description2}"
+				""
+				"{moni.quest.6DAB13A7BDECE94E.description3}"
+				"{@pagebreak}"
+				"{moni.quest.6DAB13A7BDECE94E.description4}"
+				""
+				"{moni.quest.6DAB13A7BDECE94E.description5}"
+				""
+				"{moni.quest.6DAB13A7BDECE94E.description6}"
+				""
+				"{moni.quest.6DAB13A7BDECE94E.description7}"
+				""
+				"{moni.quest.6DAB13A7BDECE94E.description8}"
+				""
+				"{moni.quest.6DAB13A7BDECE94E.description9}"
+			]
+			icon: "gtceu:assembly_line"
+			id: "6DAB13A7BDECE94E"
+			rewards: [{
+				id: "42076303CC86ECC9"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "17A506152F4D9582"
+					item: "gtceu:assembly_line"
+					type: "item"
+				}
+				{
+					count: 29L
+					id: "7497F00CED97F4DA"
+					item: "gtceu:solid_machine_casing"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "65DBFA3899B0BF69"
+					item: "gtceu:assembly_line_unit"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "034A6892C4736EE2"
+					item: "gtceu:assembly_line_grating"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "13EA465FE104347C"
+					item: "gtceu:laminated_glass"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7ED2599D4180E9A6"
+					item: { Count: 9, id: "gtceu:ulv_input_bus" }
+					type: "item"
+				}
+				{
+					id: "393A504BEBE2900C"
+					item: "gtceu:ulv_output_bus"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6D2A69F8627ECAB4"
+					item: { Count: 10, id: "gtceu:assembly_line_casing" }
+					type: "item"
+				}
+				{
+					id: "1CAF65797B20AC6F"
+					item: "gtceu:data_access_hatch"
+					type: "item"
+				}
+				{
+					id: "387214B8A372DF36"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iv_energy_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_energy_input_hatch_4a"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_energy_input_hatch_16a"
+								}
+							]
+						}
+					}
+					title: "{moni.task.387214B8A372DF36}"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.6DAB13A7BDECE94E.title}"
+			x: 0.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39FD6F1076559156"]
+			description: [
+				"{moni.quest.672D43BD113251EA.description1}"
+				"{@pagebreak}"
+				"{moni.quest.672D43BD113251EA.description2}"
+				""
+				"{moni.quest.672D43BD113251EA.description3}"
+				"{@pagebreak}"
+				"{moni.quest.672D43BD113251EA.description4}"
+				""
+				"{moni.quest.672D43BD113251EA.description5}"
+				""
+				"{moni.quest.672D43BD113251EA.description6}"
+				""
+				"{moni.quest.672D43BD113251EA.description7}"
+			]
+			icon: "gtceu:data_stick"
+			id: "672D43BD113251EA"
+			rewards: [{
+				id: "3212CC0C2E024DDC"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "7BFFD184B42E366A"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.672D43BD113251EA.title}"
+			x: 0.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05F7C3F397B329F5"]
+			description: [
+				"{moni.quest.025092551C0A20B6.description1}"
+				""
+				"{moni.quest.025092551C0A20B6.description2}"
+				""
+				"{moni.quest.025092551C0A20B6.description3}"
+			]
+			id: "025092551C0A20B6"
+			rewards: [{
+				id: "42F5D0483F86EA2B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "7467DEF5F692F380"
+				item: "gtceu:iridium_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.025092551C0A20B6.title}"
+			x: 10.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["025092551C0A20B6"]
+			description: ["{moni.quest.4F8B4DCE7C340418.description1}"]
+			id: "4F8B4DCE7C340418"
+			rewards: [{
+				id: "368C85F6578FE58D"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "041D836F34743B64"
+				item: "gtceu:double_iridium_plate"
+				type: "item"
+			}]
+			title: "{moni.quest.4F8B4DCE7C340418.title}"
+			x: 10.75d
+			y: 2.75d
+		}
+		{
+			dependencies: [
+				"6DC635766CD40FFF"
+				"27A80F018F59EF1E"
+			]
+			description: ["{moni.quest.27B3EB82ED638620.description1}"]
+			id: "27B3EB82ED638620"
+			rewards: [{
+				id: "27C6087F332CE7C1"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "4D9A2E2CB028D8F0"
+				item: "gtceu:double_signalum_plate"
+				type: "item"
+			}]
+			title: "{moni.quest.27B3EB82ED638620.title}"
+			x: 13.25d
+			y: 2.75d
+		}
+		{
+			dependencies: [
+				"4F8B4DCE7C340418"
+				"52F1953ED72A8AA6"
+			]
+			description: [
+				"{moni.quest.023197AB7CDBDD6E.description1}"
+				""
+				"{moni.quest.023197AB7CDBDD6E.description2}"
+			]
+			id: "023197AB7CDBDD6E"
+			rewards: [{
+				id: "5C975732784B15CA"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "51421243D98A03F2"
+				item: "kubejs:microminer_t5"
+				type: "item"
+			}]
+			title: "{moni.quest.023197AB7CDBDD6E.title}"
+			x: 10.75d
+			y: 4.75d
+		}
+		{
+			dependencies: [
+				"14F1FF4656693711"
+				"53EC3831D66769CA"
+				"5732018AA35D69B6"
+			]
+			description: ["{moni.quest.3DD8D9EEA7189186.description1}"]
+			id: "3DD8D9EEA7189186"
+			rewards: [{
+				id: "0A5B1F97951B104A"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "585B8ED807736A7A"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			title: "{moni.quest.3DD8D9EEA7189186.title}"
+			x: 7.25d
+			y: 2.75d
+		}
+		{
+			dependencies: [
+				"3DD8D9EEA7189186"
+				"023197AB7CDBDD6E"
+			]
+			description: [
+				"{moni.quest.424413BBCE3FD3BF.description1}"
+				""
+				"{moni.quest.424413BBCE3FD3BF.description2}"
+			]
+			id: "424413BBCE3FD3BF"
+			rewards: [{
+				id: "05581326BA7839F9"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "75892E7951C532B7"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.424413BBCE3FD3BF.title}"
+			x: 7.25d
+			y: 4.75d
+		}
+		{
+			dependencies: ["424413BBCE3FD3BF"]
+			description: [
+				"{moni.quest.0889C9E0DD0FDF06.description1}"
+				""
+				"{moni.quest.0889C9E0DD0FDF06.description2}"
+			]
+			id: "0889C9E0DD0FDF06"
+			rewards: [{
+				id: "37D14FC615EBCCD2"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "513763D6DD3E629A"
+				item: "gtceu:naquadah_boule"
+				type: "item"
+			}]
+			title: "{moni.quest.0889C9E0DD0FDF06.title}"
+			x: 7.25d
+			y: 6.0d
+		}
+		{
+			dependencies: ["28CA4E5308EC0BB9"]
+			description: [
+				"{moni.quest.7DB174443D7FAFA0.description1}"
+				""
+				"{moni.quest.7DB174443D7FAFA0.description2}"
+				""
+				"{moni.quest.7DB174443D7FAFA0.description3}"
+				""
+				"{moni.quest.7DB174443D7FAFA0.description4}"
+				""
+				"{moni.quest.7DB174443D7FAFA0.description5}"
+			]
+			id: "7DB174443D7FAFA0"
+			rewards: [{
+				id: "66C7F991AB382AC8"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "4466DE68C3A06C65"
+				item: "gtceu:enderium_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.7DB174443D7FAFA0.title}"
+			x: 4.25d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"424413BBCE3FD3BF"
+				"254D6D1470BC197E"
+			]
+			description: ["{moni.quest.28CA4E5308EC0BB9.description1}"]
+			id: "28CA4E5308EC0BB9"
+			rewards: [{
+				id: "76AA0FD4E8D706E5"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "2C1FDC7B8E7B2C03"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			title: "{moni.quest.28CA4E5308EC0BB9.title}"
+			x: 4.25d
+			y: 2.75d
+		}
+		{
+			dependencies: ["7DB174443D7FAFA0"]
+			description: ["{moni.quest.4F2A97487AE923CE.description1}"]
+			id: "4F2A97487AE923CE"
+			rewards: [{
+				id: "13790035CAE4177C"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "73CA90492D971368"
+				item: "gtceu:double_enderium_plate"
+				type: "item"
+			}]
+			title: "{moni.quest.4F2A97487AE923CE.title}"
+			x: 4.25d
+			y: -1.0d
+		}
+		{
+			dependencies: ["424413BBCE3FD3BF"]
+			dependency_requirement: "one_completed"
+			description: [
+				"{moni.quest.0508D3CCB6C876A3.description1}"
+				""
+				"{moni.quest.0508D3CCB6C876A3.description2}"
+				""
+				"{moni.quest.0508D3CCB6C876A3.description3}"
+				""
+				"{moni.quest.0508D3CCB6C876A3.description4}"
+			]
+			icon: "gtceu:naquadria_dust"
+			id: "0508D3CCB6C876A3"
+			rewards: [{
+				id: "67B0A4C33D2EDC21"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "15E690653306B02C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:enriched_naquadah_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:trinium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:naquadria_dust"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.0508D3CCB6C876A3.title}"
+			x: 4.25d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"28CA4E5308EC0BB9"
+				"0508D3CCB6C876A3"
+			]
+			description: [
+				"{moni.quest.15FAEE3F625265F4.description1}"
+				""
+				"{moni.quest.15FAEE3F625265F4.description2}"
+				""
+				"{moni.quest.15FAEE3F625265F4.description3}"
+			]
+			id: "15FAEE3F625265F4"
+			rewards: [{
+				id: "7C362667765C8A4D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0EDAFBD50F866785"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.15FAEE3F625265F4.title}"
+			x: 0.75d
+			y: 6.75d
+		}
+		{
+			dependencies: ["15FAEE3F625265F4"]
+			description: ["{moni.quest.1B07DB4D58D43B7C.description1}"]
+			id: "1B07DB4D58D43B7C"
+			rewards: [{
+				id: "0A307605C7249051"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "643EAAB3956473B9"
+				item: "gtceu:naquadah_alloy_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.1B07DB4D58D43B7C.title}"
+			x: -0.25d
+			y: 7.75d
+		}
+		{
+			dependencies: [
+				"7D39A4D0CC886796"
+				"15FAEE3F625265F4"
+				"521977C7165229F1"
+			]
+			description: [
+				"{moni.quest.2D10F2E538486624.description1}"
+				""
+				"{moni.quest.2D10F2E538486624.description2}"
+				"{@pagebreak}"
+				"{moni.quest.2D10F2E538486624.description3}"
+				""
+				"{moni.quest.2D10F2E538486624.description4}"
+				"{@pagebreak}"
+				"{moni.quest.2D10F2E538486624.description5}"
+				""
+				"{moni.quest.2D10F2E538486624.description6}"
+				"{@pagebreak}"
+				"{moni.quest.2D10F2E538486624.description7}"
+				""
+				"{moni.quest.2D10F2E538486624.description8}"
+			]
+			icon: "gtceu:luv_fusion_reactor"
+			id: "2D10F2E538486624"
+			rewards: [{
+				count: 10
+				id: "171F25E6D91ECD8C"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "{moni.quest.2D10F2E538486624.subtitle}"
+			tasks: [
+				{
+					id: "58C69AD21BA53BEB"
+					item: "gtceu:luv_fusion_reactor"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "696B8CE2A4872407"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					title: "{moni.task.696B8CE2A4872407}"
+					type: "item"
+				}
+				{
+					id: "3901C623BB44467A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:output_hatch"
+						}
+					}
+					title: "{moni.task.3901C623BB44467A}"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2CC02870B2315C8C"
+					item: "gtceu:luv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3B725EE9F9263150"
+					item: "gtceu:superconducting_coil"
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "71DEB9E939BE5342"
+					item: "gtceu:fusion_casing"
+					type: "item"
+				}
+				{
+					count: 31L
+					id: "3679617A11A13CF0"
+					item: {
+						Count: 31
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:fusion_casing"
+								}
+								{
+									Count: 1b
+									id: "gtceu:fusion_glass"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{moni.quest.2D10F2E538486624.title}"
+			x: -6.25d
+			y: 6.75d
+		}
+		{
+			dependencies: ["6DAB13A7BDECE94E"]
+			description: [
+				"{moni.quest.72FFB2AAB5EA049D.description1}"
+				""
+				"{moni.quest.72FFB2AAB5EA049D.description2}"
+				""
+				"{moni.quest.72FFB2AAB5EA049D.description3}"
+			]
+			hide_dependency_lines: true
+			id: "72FFB2AAB5EA049D"
+			optional: true
+			rewards: [{
+				id: "7CCDAA726A94F22F"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "0DF055B71C2833F8"
+				item: "gtceu:hv_world_accelerator"
+				type: "item"
+			}]
+			title: "{moni.quest.72FFB2AAB5EA049D.title}"
+			x: 2.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"4DB622A78605A2EB"
+				"458FF3F9BC8E025B"
+			]
+			description: [
+				"{moni.quest.2BBAF93506DD79C1.description1}"
+				""
+				"{moni.quest.2BBAF93506DD79C1.description2}"
+			]
+			hide_dependency_lines: true
+			id: "2BBAF93506DD79C1"
+			rewards: [{
+				id: "3248AEB7F7568507"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "4690FCEE96F1452A"
+				item: "gtceu:active_transformer"
+				type: "item"
+			}]
+			title: "{moni.quest.2BBAF93506DD79C1.title}"
+			x: 4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"4DB622A78605A2EB"
+				"025092551C0A20B6"
+			]
+			description: [
+				"{moni.quest.36B1B083B4FA439F.description1}"
+				""
+				"{moni.quest.36B1B083B4FA439F.description2}"
+				""
+				"{moni.quest.36B1B083B4FA439F.description3}"
+				""
+				"{moni.quest.36B1B083B4FA439F.description4}"
+			]
+			hide_dependency_lines: true
+			id: "36B1B083B4FA439F"
+			rewards: [{
+				id: "74137AF1D413A38D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "07359B5EBA5AA568"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			title: "{moni.quest.36B1B083B4FA439F.title}"
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0889C9E0DD0FDF06"]
+			description: [
+				"{moni.quest.7ECA688A91A1392A.description1}"
+				""
+				"{moni.quest.7ECA688A91A1392A.description2}"
+			]
+			id: "7ECA688A91A1392A"
+			rewards: [{
+				id: "57F1601344CCFD75"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D3D6B5AEB319758"
+				item: "gtceu:advanced_soc_wafer"
+				type: "item"
+			}]
+			title: "{moni.quest.7ECA688A91A1392A.title}"
+			x: 7.25d
+			y: 7.25d
+		}
+		{
+			dependencies: ["15DBB22E3DC0AFB7"]
+			description: [
+				"{moni.quest.19C2D208A2FC9968.description1}"
+				""
+				"{moni.quest.19C2D208A2FC9968.description2}"
+				""
+				"{moni.quest.19C2D208A2FC9968.description3}"
+				""
+				"{moni.quest.19C2D208A2FC9968.description4}"
+				"{moni.quest.19C2D208A2FC9968.description5}"
+			]
+			hide_until_deps_visible: true
+			id: "19C2D208A2FC9968"
+			optional: true
+			rewards: [{
+				id: "7003E20DD8EE9891"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0A014ADA1BC753F1"
+				item: "kubejs:microminer_t4half"
+				type: "item"
+			}]
+			title: "{moni.quest.19C2D208A2FC9968.title}"
+			x: 14.5d
+			y: 7.25d
+		}
+		{
+			dependencies: [
+				"044553423097C3C7"
+				"2C4500569586EBC7"
+			]
+			description: [
+				"{moni.quest.05F7C3F397B329F5.description1}"
+				""
+				"{moni.quest.05F7C3F397B329F5.description2}"
+				""
+				"{moni.quest.05F7C3F397B329F5.description3}"
+			]
+			id: "05F7C3F397B329F5"
+			rewards: [{
+				count: 4
+				id: "01E80F1B37C6A00E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "01229A2F5C98A469"
+				item: "gtceu:rarest_metal_mixture_dust"
+				type: "item"
+			}]
+			x: 10.75d
+			y: -2.75d
+		}
+		{
+			dependencies: ["78DCEF2FF2E1AC8C"]
+			description: ["{moni.quest.6BE1CD77618EC6C7.description1}"]
+			icon: "gtceu:polyphenylene_sulfide_foil"
+			id: "6BE1CD77618EC6C7"
+			rewards: [{
+				id: "2327DD1CE3C56AB2"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "674ADD4BEFC6B52D"
+				item: "gtceu:polyphenylene_sulfide_bucket"
+				type: "item"
+			}]
+			title: "{moni.quest.6BE1CD77618EC6C7.title}"
+			x: -3.25d
+			y: 4.25d
+		}
+		{
+			dependencies: ["54C3B1B782FDF57F"]
+			description: ["{moni.quest.2B336FD89B15F98E.description1}"]
+			id: "2B336FD89B15F98E"
+			rewards: [{
+				id: "0954DEB837B61435"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0A1E55B5F54F0B7B"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.2B336FD89B15F98E.title}"
+			x: -5.0d
+			y: 2.75d
+		}
+		{
+			dependencies: ["2D10F2E538486624"]
+			description: [
+				"{moni.quest.2A6E9E7C80754936.description1}"
+				""
+				"{moni.quest.2A6E9E7C80754936.description2}"
+				""
+				"{moni.quest.2A6E9E7C80754936.description3}"
+			]
+			id: "2A6E9E7C80754936"
+			rewards: [{
+				id: "6240C217129EEDE9"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7448593DF760F9B0"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.2A6E9E7C80754936.title}"
+			x: -6.25d
+			y: 8.75d
+		}
+		{
+			dependencies: [
+				"2A6E9E7C80754936"
+				"46A56A5E3CC2403F"
+			]
+			description: ["{moni.quest.5199E6FAA4B699CD.description1}"]
+			id: "5199E6FAA4B699CD"
+			rewards: [{
+				id: "627320094BB964B3"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "14C7B5FF0EC19030"
+				item: "gtceu:lapotronic_energy_orb_cluster"
+				type: "item"
+			}]
+			title: "{moni.quest.5199E6FAA4B699CD.title}"
+			x: -8.25d
+			y: 8.75d
+		}
+		{
+			dependencies: ["5199E6FAA4B699CD"]
+			description: ["{moni.quest.0D3E0D645F80835D.description}"]
+			id: "6FA5A5D424F8ADA1"
+			rewards: [{
+				count: 2
+				id: "6AEE91C03E9C1048"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.0D3E0D645F80835D.subtitle}"
+			tasks: [{
+				id: "4D42D65928F19EAD"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.0D3E0D645F80835D.title}"
+			x: -8.25d
+			y: 7.25d
+		}
+		{
+			dependencies: ["2BBAF93506DD79C1"]
+			description: [
+				"{moni.quest.20745EB9A695E365.description1}"
+				""
+				"{moni.quest.20745EB9A695E365.description2}"
+				""
+				"{moni.quest.20745EB9A695E365.description3}"
+			]
+			hide_dependency_lines: false
+			id: "20745EB9A695E365"
+			rewards: [{
+				id: "15899CA6F8B8B442"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "70194E2E6210DDEF"
+				item: "gtceu:normal_laser_pipe"
+				type: "item"
+			}]
+			title: "{moni.quest.20745EB9A695E365.title}"
+			x: 6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"6DC635766CD40FFF"
+				"05F7C3F397B329F5"
+			]
+			description: [
+				"{moni.quest.458FF3F9BC8E025B.description1}"
+				""
+				"{moni.quest.458FF3F9BC8E025B.description2}"
+				""
+				"{moni.quest.458FF3F9BC8E025B.description3}"
+				""
+				"{moni.quest.458FF3F9BC8E025B.description4}"
+				""
+				"{moni.quest.458FF3F9BC8E025B.description5}"
+				""
+				"{moni.quest.458FF3F9BC8E025B.description6}"
+			]
+			id: "458FF3F9BC8E025B"
+			rewards: [{
+				count: 3
+				id: "30C3AED9A388CD32"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "60852255D5701524"
+					item: "gtceu:ruridit_ingot"
+					type: "item"
+				}
+				{
+					id: "4A735EA6993A72D7"
+					item: "gtceu:niobium_titanium_ingot"
+					type: "item"
+				}
+				{
+					id: "3A171C4B127DD56D"
+					item: "gtceu:osmiridium_ingot"
+					type: "item"
+				}
+				{
+					id: "71D6ED6A4EAA1968"
+					item: "gtceu:samarium_ingot"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.458FF3F9BC8E025B.title}"
+			x: -1.5d
+			y: -2.75d
+		}
+		{
+			dependencies: [
+				"0508D3CCB6C876A3"
+				"28CA4E5308EC0BB9"
+			]
+			description: [
+				"{moni.quest.41FA85A3920EB334.description1}"
+				""
+				"{moni.quest.41FA85A3920EB334.description2}"
+				""
+				"{moni.quest.41FA85A3920EB334.description3}"
+			]
+			id: "41FA85A3920EB334"
+			rewards: [{
+				id: "0EE4E2D847DF531E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "7C09CC813DF2E695"
+				item: "gtceu:enriched_naquadah_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.41FA85A3920EB334.title}"
+			x: 4.25d
+			y: 4.75d
+		}
+		{
+			dependencies: ["4F2A97487AE923CE"]
+			description: [
+				"{moni.quest.49B872B193268554.description1}"
+				""
+				"{moni.quest.49B872B193268554.description2}"
+				""
+				"{moni.quest.49B872B193268554.description6}"
+			]
+			id: "49B872B193268554"
+			rewards: [{
+				id: "1A07DD326F7F9A55"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2BE2D12C219225CD"
+				item: "kubejs:microminer_t6"
+				type: "item"
+			}]
+			title: "{moni.quest.49B872B193268554.title}"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"745628397790ED7A"
+				"5732018AA35D69B6"
+				"6E5343E45E99CBAD"
+			]
+			description: [
+				"{moni.quest.2C4500569586EBC7.description1}"
+				""
+				"{moni.quest.2C4500569586EBC7.description2}"
+				""
+				"{moni.quest.2C4500569586EBC7.description3}"
+			]
+			id: "2C4500569586EBC7"
+			rewards: [{
+				id: "16699F5E79A243A4"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71509E2C21AAF211"
+				item: "gtceu:iv_energy_input_hatch"
+				type: "item"
+			}]
+			title: "{moni.quest.2C4500569586EBC7.title}"
+			x: 10.75d
+			y: -4.75d
+		}
+		{
+			dependencies: [
+				"2A6E9E7C80754936"
+				"776886E9296912DD"
+			]
+			description: [
+				"{moni.quest.069D243B809E0D5D.description1}"
+				""
+				"{moni.quest.069D243B809E0D5D.description2}"
+				""
+				"{moni.quest.069D243B809E0D5D.description3}"
+				""
+				"{moni.quest.069D243B809E0D5D.description4}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "069D243B809E0D5D"
+			rewards: [{
+				id: "05346384A9F2EAF1"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
+			tasks: [{
+				id: "68377567726F542C"
+				item: "gtmutils:pterb_machine"
+				type: "item"
+			}]
+			title: "{moni.quest.069D243B809E0D5D.title}"
+			x: 6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2A6E9E7C80754936"
+				"0412D46926C075FF"
+			]
+			description: [
+				"{moni.quest.069D243B809E0D5D.description1}"
+				""
+				"{moni.quest.069D243B809E0D5D.description2}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "10E63A0428E6BA25"
+			size: 2.0d
+			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
+			tasks: [{
+				id: "6CC31FF5936A485F"
+				item: "gtmutils:pterb_machine"
+				type: "item"
+			}]
+			title: "{moni.quest.10E63A0428E6BA25.title}"
+			x: 6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"6BE1CD77618EC6C7"
+				"2B336FD89B15F98E"
+			]
+			description: ["{moni.quest.76BAC72CC89F390E.description1}"]
+			id: "76BAC72CC89F390E"
+			rewards: [{
+				id: "566D0537EF1F4803"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "4B5AA5E05B42308C"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			title: "{moni.quest.76BAC72CC89F390E.title}"
+			x: -3.25d
+			y: 2.75d
+		}
+		{
+			dependencies: [
+				"76BAC72CC89F390E"
+				"6DAB13A7BDECE94E"
+				"458FF3F9BC8E025B"
+			]
+			description: ["{moni.quest.254D6D1470BC197E.description1}"]
+			icon: "gtceu:luv_circuit_assembler"
+			id: "254D6D1470BC197E"
+			rewards: [{
+				id: "263E5B2C35C3D9F4"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "5B95FCADCA0B7A5D"
+				item: "gtceu:luv_assembler"
+				type: "item"
+			}]
+			title: "{moni.quest.254D6D1470BC197E.title}"
+			x: -1.5d
+			y: 2.75d
+		}
+		{
+			dependencies: ["424413BBCE3FD3BF"]
+			description: [
+				"{moni.quest.6B80737C5E1359F7.description1}"
+				""
+				"{moni.quest.6B80737C5E1359F7.description2}"
+				""
+				"{moni.quest.6B80737C5E1359F7.description3}"
+			]
+			id: "6B80737C5E1359F7"
+			rewards: [{
+				id: "66946C64C245553F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "{moni.quest.6B80737C5E1359F7.subtitle}"
+			tasks: [{
+				id: "725DD71DFCCADBE8"
+				item: "gtmutils:omnibreaker"
+				type: "item"
+			}]
+			title: "{moni.quest.6B80737C5E1359F7.title}"
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"217F85D6FE2A467D"
+				"2A6E9E7C80754936"
+			]
+			description: [
+				"{moni.quest.5A31EEF439212D6E.decription1}"
+				""
+				"{moni.quest.5A31EEF439212D6E.decription2}"
+			]
+			id: "5A31EEF439212D6E"
+			rewards: [{
+				id: "2298AABA390AF4ED"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0F54B2C910090F5B"
+				item: "gtceu:zpm_assembler"
+				type: "item"
+			}]
+			title: "{moni.quest.5A31EEF439212D6E.title}"
+			x: -2.5d
+			y: 8.75d
+		}
+		{
+			dependencies: ["1B07DB4D58D43B7C"]
+			description: [
+				"{moni.quest.217F85D6FE2A467D.description1}"
+				""
+				"{moni.quest.217F85D6FE2A467D.description2}"
+			]
+			id: "217F85D6FE2A467D"
+			rewards: [{
+				id: "603150815EBC60F3"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "64DD484503E452DD"
+				item: "gtceu:zpm_machine_hull"
+				type: "item"
+			}]
+			title: "{moni.quest.217F85D6FE2A467D.title}"
+			x: -1.5d
+			y: 7.75d
+		}
+		{
+			dependencies: [
+				"41FA85A3920EB334"
+				"5A31EEF439212D6E"
+			]
+			description: ["{moni.quest.7A65459E4DFAAC2D.description1}"]
+			id: "7A65459E4DFAAC2D"
+			rewards: [{
+				id: "0F124B2E02F2BD4E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "52F9691851DE4023"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			title: "{moni.quest.7A65459E4DFAAC2D.title}"
+			x: 0.75d
+			y: 8.75d
+		}
+		{
+			dependencies: ["52F1953ED72A8AA6"]
+			description: [
+				"{moni.quest.1EA5F30C5ACADBA9.description1}"
+				""
+				"{moni.quest.1EA5F30C5ACADBA9.description2}"
+				""
+				"{moni.quest.1EA5F30C5ACADBA9.description3}"
+				""
+				"{moni.quest.1EA5F30C5ACADBA9.description4}"
+			]
+			icon: "kubejs:quantum_flux"
+			id: "1EA5F30C5ACADBA9"
+			shape: "hexagon"
+			tasks: [{
+				id: "3105E94F99354675"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.1EA5F30C5ACADBA9.title}"
+			x: 10.5d
+			y: 7.25d
+		}
+		{
+			dependencies: ["27B3EB82ED638620"]
+			description: ["{moni.quest.7AEA6EF1408B003B.description3}"]
+			id: "3E7250EFBFF03D89"
+			rewards: [{
+				id: "48E6352BC7E3A682"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3A145740391DF5FD"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.75d
+		}
+		{
+			dependencies: [
+				"0B9D5F865C3F8B31"
+				"1349044BF8C04A12"
+			]
+			description: ["{moni.quest.7AEA6EF1408B003B.description4}"]
+			id: "299CCE5C8C2219C8"
+			rewards: [{
+				id: "4AEACF669F40EC9B"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "415F24B92C756DBE"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.25d
+		}
+		{
+			dependencies: [
+				"025092551C0A20B6"
+				"3DD8D9EEA7189186"
+			]
+			description: ["{moni.quest.0B9D5F865C3F8B31.description1}"]
+			id: "0B9D5F865C3F8B31"
+			rewards: [{
+				id: "4C8CAEEEAB645B5E"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0BAD9D80B9357E77"
+				item: "gtceu:hsss_ingot"
+				type: "item"
+			}]
+			title: "{moni.quest.0B9D5F865C3F8B31.title}"
+			x: 9.0d
+			y: 1.0d
+		}
+	]
+	title: "{moni.chapter.058B7FE882875343.title}"
+}

@@ -1,62 +1,52 @@
 #Systeams Config
 #---------------
-#The amount of steam 1mb of water makes.
-#Range: 0.1 ~ 10.0
-water_to_steam_ratio = 10
-#The multiplier on the steam dynamo's RF/t
-#Range: 0.05 ~ 10.0
-steam_dynamo_output_multiplier = 4.0
-#If the Dynamo in dynamo augment tooltips should be replaced with Dynamo & Boiler
-#This doesn't have as much support for translations (it can still be translated with the key info.systeams.augment.type.DynamoBoiler)
-replace_dynamo_augment_tooltips = true
 
-# For future reference: Boilers are 16x as efficient as Dynamos by default.
-# This means that Boilers are 16 * 0.5 * 4.0 = 32x as efficient as Dynamos in practice,
-# thanks to the steam_dynamo_output_multiplier and "Steam Values" multiplier.
-# -Xefyr
+#The multiplier on the steam dynamo's RF/t
+#Range: 10 ~ 32000
+steam_dynamo_base_power = 160
 
 ["Steam Values"]
 	#The number of mb of steam produced per RF of energy usually produced by the same fuel in a dynamo
 	#Note that this does not affect the steam dynamo's rates. That needs to be adjusted with a datapack
 	#Range: 0.05 ~ 100.0
-	stirling = 0.5
+	stirling = 2.0
 	#Range: 0.05 ~ 100.0
-	magmatic = 0.5
+	magmatic = 2.0
 	#Range: 0.05 ~ 100.0
-	compression = 0.5
+	compression = 2.0
 	#Range: 0.05 ~ 100.0
-	numismatic = 0.5
+	numismatic = 2.0
 	#Range: 0.05 ~ 100.0
-	lapidary = 0.5
+	lapidary = 2.0
 	#Range: 0.05 ~ 100.0
-	disenchantment = 0.5
+	disenchantment = 2.0
 	#Range: 0.05 ~ 100.0
-	gourmand = 0.5
+	gourmand = 2.0
 	#Range: 0.05 ~ 100.0
-	pneumatic = 0.5
+	pneumatic = 2.0
 	#Range: 0.05 ~ 100.0
-	frost = 0.5
+	frost = 2.0
 
 ["Boiler Speed Multipliers"]
 	#The speed multiplier on each boiler's mB/t
 	#Range: 0.05 ~ 20.0
-	stirling = 16.0
+	stirling = 4.0
 	#Range: 0.05 ~ 20.0
-	magmatic = 16.0
+	magmatic = 4.0
 	#Range: 0.05 ~ 20.0
-	compression = 16.0
+	compression = 4.0
 	#Range: 0.05 ~ 20.0
-	numismatic = 16.0
+	numismatic = 4.0
 	#Range: 0.05 ~ 20.0
-	lapidary = 16.0
+	lapidary = 4.0
 	#Range: 0.05 ~ 20.0
-	disenchantment = 16.0
+	disenchantment = 4.0
 	#Range: 0.05 ~ 20.0
-	gourmand = 16.0
+	gourmand = 4.0
 	#Range: 0.05 ~ 20.0
-	pneumatic = 16.0
+	pneumatic = 4.0
 	#Range: 0.05 ~ 20.0
-	frost = 16.0
+	frost = 4.0
 
 ["Integration settings"]
 	#If you can shift right click a Pneumatic Boiler with an Advanced Pneumatic Tube to convert it to a Pneumatic Dynamo

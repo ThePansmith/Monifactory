@@ -25,6 +25,10 @@
 - README.md adapted from [GregTech CEu](https://github.com/GregTechCEu/GregTech).  
 - Meowni (mascot) by [Mutso](https://bsky.app/profile/did:plc:pgazjc76vpn6mr7rldk56ugq).  
 - Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
+- Unique multi code for the Creative Multiblocks from [CosmicCore](https://github.com/Frontiers-PackForge/CosmicCore), with Caitlynn's gracious permission.
+- Coremod (Moni Labs) by [NegaNote](https://github.com/NegaNote), with help from other contributors, especially [Withers](https://github.com/WithersChat) and [Raine](https://github.com/AE2-Enthusiast).
+- Blood texture from [Tinkers' Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)
+
 Thank you!
 
 ## Hard/Expert Mode
@@ -42,7 +46,6 @@ Highlights include:
 Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 
 - Disabling RF -> EU conversion, making GT power generation required
-- EnderIO Conduits are removed
 - LaserIO is disabled
 - GT5u-style machine explosions
 - Various other nerfs
@@ -50,25 +53,16 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 ## Installation:
 
 ### Hard/Expert Mode Installation:
-1. Download [``./pack-mode-switcher.bat``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
-2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
-- Windows:
-    - Manual:
-        1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.bat``.
-        2. Follow the prompt to select your mode.
-        3. Redo steps 1 & 2 every time after you've updated the modpack.
 
-    - Prism Launcher (and various other custom launchers):
-        1. If your Minecraft launcher supports it, select your Minecraft instance -> Edit -> Settings -> Custom Commands, check ``Custom Commands``, paste
-           ```
-           $INST_DIR\minecraft\pack-mode-switcher.bat (N/H/E)
-           ```
-           into Pre-launch command and specify your wanted mode.
+**As of 0.13, You can switch pack modes in the main menu, just click the text that shows your pack mode, select the pack you want, click yes, and then restart your game!**\
+If you want to switch the pack mode on a dedicated server, follow these instructions.
+- Universal:
+    - Open Command Prompt and type in this command in your minecraft server's installation folder:
+      ```
+      java -jar ${Server Root}\mods\Monilabs-{Version #}.jar (N/H/E)
+      ```
+    - Typing in nothing will prompt you to change your pack mode
 
-- Linux/Apple/GNU:
-1. Open [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) and download the file to your Minecraft / Minecraft instance folder.
-1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.sh``.
-2. Follow the prompt to select your mode.
 
 ### Addon Mods (AKA Optional Compats)
 To spice up your Monifactory experience, you can add any of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.
@@ -88,13 +82,12 @@ To spice up your Monifactory experience, you can add any of the following mods t
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.
 2. Download the ``47.4.0`` forge installer from [here](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html).
-3. Create a folder for the server (``mkdir MonifactoryServer``, name doesnt matter)
+3. Create a folder for the server (``mkdir MonifactoryServer``, name doesn't matter)
 4. Move the server.zip and forge installer into your server directory. The rest of the guide assumes your current directory is the server directory.
 5. Run the forge installer and install the forge server, this can be done with the command ``java -jar TheForgeInstallerName.jar --installServer``
 6. ``unzip server.zip``
-7. Move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
-8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
-9. To upgrade an existing Monifactory server, see See [FAQ.md](FAQ.md).
+7. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
+8. To upgrade an existing Monifactory server, see [FAQ.md](FAQ.md).
 
 ## Contributing
 

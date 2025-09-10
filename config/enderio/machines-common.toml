@@ -67,15 +67,15 @@
 		#The base number of 'burn ticks' performed per machine tick.
 		#Range: 0.001 ~ 1.7976931348623157E308
 		burnSpeed = 0.375
-		#The base amount of energy produced in uI/t.
-		#Range: > 1
-		generation = 40
 		#The base percentage efficiency, used to determine burn times.
 		#Range: 1 ~ 200
 		fuelEfficiencyBase = 80
 		#The efficiency increase per capacitor level.
 		#Range: 1 ~ 200
 		fuelEfficiencyStep = 20
+		#The base amount of energy produced in uI/t.
+		#Range: > 1
+		generation = 40
 
 	[energy.paintingMachine]
 		#The base energy capacity in uI.
@@ -112,15 +112,7 @@
 		capacity = 128000
 		#The base energy consumption in uI/t.
 		#Range: > 1
-		usage = 64
-
-	[energy.drain]
-		#The base energy capacity in uI.
-		#Range: > 1
-		capacity = 64000
-		#The base energy consumption in uI/t.
-		#Range: > 1
-		usage = 10
+		usage = 30
 
 	[energy.soul_engine]
 		#Range: > 1
@@ -131,6 +123,14 @@
 		#Percentage increase in uI produced.
 		#Range: 0.001 ~ 1.7976931348623157E308
 		generation = 1.0
+
+	[energy.drain]
+		#The base energy capacity in uI.
+		#Range: > 1
+		capacity = 64000
+		#The base energy consumption in uI/t.
+		#Range: > 1
+		usage = 10
 
 	[energy.aversion]
 		#The base energy capacity in uI.
@@ -149,6 +149,9 @@
 	baseLevelCost = 2
 
 [poweredSpawner]
+	#The amount of mobs that spawn from the spawner
+	#Range: > 0
+	spawn_amount = 4
 	#The amount of entities that will turn off powered spawner if in range.
 	#Range: > 0
 	maxentities = 2
@@ -158,7 +161,4 @@
 	#The maximum amount of spawners before the spawners suffers a loss of efficiency
 	#Range: > 0
 	maxspawners = 10
-	#The amount of mobs that spawn from the spawner
-	#Range: > 0
-	spawn_amount = 4
 

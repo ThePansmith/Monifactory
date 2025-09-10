@@ -19,6 +19,10 @@
 			#Whether this feature should naturally spawn in the world.
 			Enable = false
 
+		[World.Features."Rubberwood Trees"]
+			#Whether this feature should naturally spawn in the world.
+			Enable = false
+
 		[World.Features.Cinnabar]
 			#Whether this feature should naturally spawn in the world.
 			Enable = false
@@ -32,10 +36,6 @@
 			Enable = false
 
 		[World.Features.Niter]
-			#Whether this feature should naturally spawn in the world.
-			Enable = false
-
-		[World.Features."Rubberwood Trees"]
 			#Whether this feature should naturally spawn in the world.
 			Enable = false
 

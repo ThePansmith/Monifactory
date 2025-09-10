@@ -30,13 +30,9 @@ ServerEvents.recipes(event => {
         ["minecraft:ink_sac", "minecraft:glow_ink_sac", GTValues.VA[GTValues.LV], "glow_ink_sac"],
         ["thermal:rubberwood_sapling", "gtceu:rubber_sapling", GTValues.VA[GTValues.LV], "rubberwood_to_rubber"],
         ["gtceu:rubber_sapling", "thermal:rubberwood_sapling", GTValues.VA[GTValues.LV], "rubber_to_rubberwood"],
+        ["#forge:dyes/red", "minecraft:sweet_berries", GTValues.VA[GTValues.LV], "sweet_berries"],
+        ["minecraft:sweet_berries", "minecraft:glow_berries", GTValues.VA[GTValues.LV], "glow_berries"],
     ]
-
-    const crystals = ["enori", "void", "palis", "diamatine", "restonia", "emeradic"]
-    crystals.forEach(crystal => {
-        event.remove({ id: `gtceu:shaped/gear_${crystal}` })
-        event.remove({ id: `gtceu:shaped/gear_${crystal}_empowered` })
-    })
 
     // Black Quartz
     event.recipes.gtceu.electrolyzer("kubejs:black_quartz_dust")
@@ -84,7 +80,7 @@ ServerEvents.recipes(event => {
     })
 
     // Universal Circuits
-    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+    const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev"]
     tiers.forEach((level) => {
         event.recipes.gtceu.atomic_reconstruction(`kubejs:${level}_universal_circuit`)
             .itemInputs(`#gtceu:circuits/${level}`)
@@ -103,8 +99,7 @@ ServerEvents.recipes(event => {
         ["zpm", "naquadah"],
         ["uv", "duranium"],
         ["uhv", "tritanium"],
-        ["uev", "omnium"],
-        ["uiv", "holmium"]
+        ["uev", "omnium"]
     ]
     reconstructorrecipe.forEach(([tier, plate]) => {
         event.shaped(`gtceu:${tier}_atomic_reconstructor`, [
@@ -118,16 +113,6 @@ ServerEvents.recipes(event => {
             C: `#gtceu:circuits/${tier}`,
             M: `gtceu:${tier}_electric_motor`
         }).id(`kubejs:shaped/${tier}_atomic_reconstructor`)
-    })
-
-    // Crystal Gears
-    crystals.forEach(crystal => {
-        event.recipes.gtceu.extruder(`kubejs:${crystal}_gear`)
-            .itemInputs(`4x gtceu:${crystal}_gem`)
-            .itemOutputs(`gtceu:${crystal}_gear`)
-            .notConsumable("gtceu:gear_extruder_mold")
-            .duration(80)
-            .EUt(56)
     })
 
     // Flower conversion convenience recipes

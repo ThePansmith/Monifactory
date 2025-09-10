@@ -10,60 +10,110 @@ ServerEvents.recipes(event => {
 
     // Omnic Acid
     event.recipes.gtceu.large_chemical_reactor("omnic_acid")
-        .itemInputs("5x gtceu:carbon_dust", "4x kubejs:mote_of_omnium")
-        .inputFluids(Fluid.of("water", 3000))
-        .itemOutputs("gtceu:omnic_acid_dust")
-        .outputFluids(Fluid.of("gtceu:hydrogen", 2000))
+        .itemInputs("5x gtceu:carbon_dust")
+        .inputFluids(Fluid.of("water", 3000), "gtceu:omnium 576")
+        .outputFluids("gtceu:omnic_acid 1000", Fluid.of("gtceu:hydrogen", 2000))
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM])
 
-    // Ancient Debris crushing
+    // Ancient Debris Processing
     event.recipes.gtceu.macerator("macerate_ancient_debris_to_crushed_ore")
         .itemInputs("minecraft:ancient_debris")
         .itemOutputs("2x gtceu:crushed_netherite_scrap_ore")
-        .chancedOutput("gtceu:obsidian_dust", 1400, 850)
+        .chancedOutput("gtceu:obsidian_dust", 1400, 850)                        // TODO: See what oreproc values Cait hallucinates
         .chancedOutput("gtceu:netherrack_dust", 1200, 800)
         .duration(400)
         .EUt(2)
         .category("gtceu:ore_crushing")
 
-    // Omnic Acid Purifying
-    event.recipes.gtceu.chemical_reactor("ancient_debris_purifying")
-        .itemInputs("gtceu:netherite_scrap_dust", "gtceu:omnic_acid_dust")
-        .inputFluids(Fluid.of("water", 2000))
-        .itemOutputs("kubejs:purified_ancient_debris_dust")
-        .chancedOutput("gtceu:platinum_dust", 3300, 0)
+    event.recipes.gtceu.chemical_bath("ancient_debris_ardite_path")
+        .itemInputs("gtceu:netherite_scrap_dust")
+        .inputFluids("kubejs:molten_petrotheum")
+        .itemOutputs("kubejs:dusty_netherite_cluster", "gtceu:ardite_sand_dust")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.autoclave("dusty_netherite_cluster")
+        .itemInputs("kubejs:dusty_netherite_cluster")
+        .inputFluids("kubejs:molten_aerotheum")
+        .itemOutputs("kubejs:netherite_cluster", "kubejs:ardite_sponge")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.electric_blast_furnace("ancient_debris_netherite_path")
+        .itemInputs("gtceu:netherite_scrap_dust")
+        .inputFluids("kubejs:molten_pyrotheum")
+        .itemOutputs("kubejs:netherite_cluster")
+        .outputFluids("gtceu:impure_molten_ardite")
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.EV])
+        .blastFurnaceTemp(7000)
+
+    event.recipes.gtceu.chemical_reactor("impure_molten_ardite")
+        .inputFluids("gtceu:impure_molten_ardite", "kubejs:molten_cryotheum")
+        .itemOutputs("gtceu:ardite_sand_dust", "kubejs:netherite_shards")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.mixer("ardite_slurry")
+        .itemInputs("gtceu:ardite_sand_dust")
+        .inputFluids("gtceu:nitric_acid")
+        .outputFluids("gtceu:ardite_slurry")
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.compressor("netherite_cluster")
+        .itemInputs("2x kubejs:netherite_shards")
+        .itemOutputs("kubejs:netherite_cluster")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.macerator("ardite_sand")
+        .itemInputs("2x kubejs:ardite_sponge")
+        .itemOutputs("gtceu:ardite_sand_dust")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Ardite Line
+    event.recipes.gtceu.centrifuge("ardite_slurry")
+        .inputFluids("gtceu:ardite_slurry 2000")
+        .itemOutputs("gtceu:ardite_salt_dust")
+        .chancedOutput("gtceu:rarest_metal_mixture_dust", 2500, 0)
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    event.recipes.gtceu.chemical_reactor("ardite_dust")
+        .itemInputs("gtceu:potassium_dichromate_dust", "gtceu:ardite_salt_dust")
+        .inputFluids("kubejs:molten_aerotheum")
+        .itemOutputs("gtceu:ardite_dust")
         .duration(300)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.EV])
 
-    event.recipes.gtceu.arc_furnace("ancient_debris_arc_smelting")
-        .itemInputs("kubejs:purified_ancient_debris_dust")
-        .inputFluids(Fluid.of("gtceu:oxygen", 1200))
-        .chancedOutput("gtceu:palladium_dust", 1400, 850)
-        .itemOutputs("kubejs:processed_ancient_debris_dust")
+    // Activated Nethline Line
+    event.recipes.gtceu.chemical_bath("reactive_netherite_cluster")
+        .itemInputs("kubejs:netherite_cluster")
+        .inputFluids("gtceu:berkelium 72")
+        .itemOutputs("kubejs:reactive_netherite_cluster")
         .duration(300)
-        .EUt(GTValues.VA[GTValues.IV])
+        .EUt(GTValues.VA[GTValues.LuV])
 
-    event.recipes.gtceu.electric_blast_furnace("netherite_scrap_blasting")
-        .itemInputs("kubejs:processed_ancient_debris_dust", "8x kubejs:quantum_flux")
-        .inputFluids(Fluid.of("gtceu:blaze", 1000))
-        .itemOutputs("kubejs:inert_netherite_scrap")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.ZPM])
-        .blastFurnaceTemp(12000)
+    event.recipes.extendedcrafting.combination(
+        "kubejs:activated_netherite_scrap",
+        "kubejs:reactive_netherite_cluster", ["4x gtceu:activated_carbon_dust", "4x gtceu:void_gem"],
+        32000000, 1600000
+    )
 
-    // Activated Nethline
+    event.recipes.gtceu.mixer("nether_conduit_dust")
+        .itemInputs("3x kubejs:pyrotheum_dust", "4x gtceu:netherrack_dust", "2x enderio:withering_powder")
+        .itemOutputs("9x gtceu:nether_conduit_dust")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV])
+
     event.recipes.gtceu.forming_press("inert_nether_compound_ingot")
-        .itemInputs("gtceu:hot_europium_ingot", "4x kubejs:wither_bone", "3x gtceu:dark_soularium_dust", "4x kubejs:primal_mana")
+        .itemInputs("gtceu:hot_ardite_ingot", "3x gtceu:nether_conduit_dust", "4x kubejs:primal_mana", "4x kubejs:activated_netherite_scrap", "4x minecraft:gold_ingot")
         .itemOutputs("kubejs:inert_nether_compound_ingot")
         .duration(300)
         .EUt(GTValues.VA[GTValues.UV])
-
-    event.recipes.gtceu.omnic_forge("netherite_ingot_final")
-        .itemInputs("kubejs:inert_nether_compound_ingot", "2x kubejs:diamond_lattice", "4x kubejs:inert_netherite_scrap", "4x minecraft:gold_ingot")
-        .itemOutputs("gtceu:activated_netherite_ingot")
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.UHV])
 })
 
 ServerEvents.tags("item", event => {
@@ -73,4 +123,39 @@ ServerEvents.tags("item", event => {
     event.removeAllTagsFrom(oresToRemove.filter((value) => {
         return ResourceLocation.of("minecraft:ancient_debris", ":").compareTo(value) != 0
     }))
+})
+
+ServerEvents.recipes(event => {
+    /**
+     * Helper method for programmatically generating Smithing recipes for Activated Netherite.
+     * @param {String} material Material to generate a list of IDs and material quantities for
+     * @returns an array of entries which consist of [Ingredient ID, count, material count]
+     */
+    let tagPrefixes = (material, namespace) => {return [
+        `${namespace}:${material}_plate`,
+        `${namespace}:double_${material}_plate`,
+        `${namespace}:${material}_rotor`,
+        `${namespace}:${material}_ingot`,
+        `${namespace}:${material}_rod`,
+        `${namespace}:${material}_block`,
+        `${namespace}:${material}_frame`,
+        `${namespace}:${material}_tiny_fluid_pipe`,
+        `${namespace}:${material}_small_fluid_pipe`,
+        `${namespace}:${material}_normal_fluid_pipe`,
+        `${namespace}:${material}_large_fluid_pipe`,
+        `${namespace}:${material}_huge_fluid_pipe`,
+        `${namespace}:${material}_quadruple_fluid_pipe`,
+        `${namespace}:${material}_nonuple_fluid_pipe`,
+    ]}
+
+    let crystal_matrix_forms = tagPrefixes("crystal_matrix", "monilabs")
+    let activated_netherite_forms = tagPrefixes("activated_netherite", "gtceu");
+    activated_netherite_forms.forEach((entry, index) => {
+        event.smithing(
+            entry,
+            "minecraft:netherite_upgrade_smithing_template",
+            crystal_matrix_forms[index],
+            "kubejs:inert_nether_compound_ingot"
+        )
+    })
 })

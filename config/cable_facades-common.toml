@@ -1,5 +1,5 @@
 #List of blocks that are allowed to be covered. Supports '*' as a wildcard.
-blocks = ["pipez:*_pipe", "mekanism:*_cable", "mekanism:*_conductor", "mekanism:*_pipe", "mekanism:*_tube", "mekanism:*_transporter", "mekanism_extras:*_cable", "mekanism_extras:*_conductor", "mekanism_extras:*_pipe", "mekanism_extras:*_tube", "mekanism_extras:*_transporter", "thermal:*_duct", "thermal:*_duct_windowed", "powah:energy_cable_*", "pneumaticcraft:*_tube", "laserio:laser_*", "cyclic:*_pipe", "embers:*_pipe", "elementalcraft:elementpipe*", "gtceu:*wire", "gtceu:*cable", "gtceu:*pipe", "enderio:conduit"]
+blocks = ["pipez:*_pipe", "mekanism:*_cable", "mekanism:*_conductor", "mekanism:*_pipe", "mekanism:*_tube", "mekanism:*_transporter", "mekanism_extras:*_cable", "mekanism_extras:*_conductor", "mekanism_extras:*_pipe", "mekanism_extras:*_tube", "mekanism_extras:*_transporter", "thermal:*_duct", "thermal:*_duct_windowed", "powah:energy_cable_*", "pneumaticcraft:*_tube", "laserio:laser_*", "cyclic:*_pipe", "embers:*_pipe", "elementalcraft:elementpipe*", "gtceu:*wire", "gtceu:*cable", "gtceu:*pipe"]
 #List of blocks that are explicitly not allowed to be used as a cover. Supports '*' as a wildcard.
 not_allowed_blocks = ["ae2:cable_bus"]
 #Whether the facade should be consumed when placed.

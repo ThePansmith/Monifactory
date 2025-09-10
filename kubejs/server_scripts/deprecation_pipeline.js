@@ -19,6 +19,8 @@ Object.entries(global.deprecatedItems).forEach(([oldItemID, replacementItemID]) 
 
 Object.entries(global.deprecatedFluids).forEach(([oldFluidID, replacementFluidID]) => {
     ServerEvents.recipes(event => {
+        event.shapeless(replacementFluidID.concat("_bucket"), [oldFluidID.concat("_bucket")]).id(`${oldFluidID.concat("_bucket")}_legacy_updater`);
+
         event.recipes.gtceu.chemical_reactor(`${oldFluidID}_legacy_updater`)
             .inputFluids(`${oldFluidID} 1000`)
             .outputFluids(`${replacementFluidID} 1000`)
@@ -28,6 +30,18 @@ Object.entries(global.deprecatedFluids).forEach(([oldFluidID, replacementFluidID
         event.recipes.gtceu.distillation_tower(`${oldFluidID}_legacy_updater`)
             .inputFluids(`${oldFluidID} 1000`)
             .outputFluids(`${replacementFluidID} 1000`)
+            .duration(20)
+            .EUt(GTValues.VA[GTValues.ULV])
+    });
+});
+
+Object.entries(global.deprecatedBlocks).forEach(([oldBlockID, replacementBlockID]) => {
+    ServerEvents.recipes(event => {
+        event.shapeless(replacementBlockID, [oldBlockID]).id(`${oldBlockID}_legacy_updater`);
+
+        event.recipes.gtceu.atomic_reconstruction(`${oldBlockID}_legacy_updater`)
+            .itemInputs(oldBlockID)
+            .itemOutputs(replacementBlockID)
             .duration(20)
             .EUt(GTValues.VA[GTValues.ULV])
     });

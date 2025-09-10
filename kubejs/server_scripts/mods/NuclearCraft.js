@@ -3,14 +3,6 @@
  * NuclearCraft configuration
  */
 
-ServerEvents.recipes(event => {
-
-    // HUGE REWORK NUCLEARCRAFT
-    event.remove({ output: ["nuclearcraft:supercooler", "nuclearcraft:rock_crusher", "nuclearcraft:decay_hastener", "nuclearcraft:irradiator", "nuclearcraft:nuclear_furnace", "nuclearcraft:extractor", "nuclearcraft:electrolyzer", "nuclearcraft:pressurizer", "nuclearcraft:alloy_smelter", "nuclearcraft:centrifuge", "nuclearcraft:manufactory", "nuclearcraft:gas_scrubber", "nuclearcraft:fluid_enricher", "nuclearcraft:isotope_separator", "nuclearcraft:fluid_infuser", "nuclearcraft:chemical_reactor", "nuclearcraft:analyzer", "nuclearcraft:ingot_former", "nuclearcraft:pump", "nuclearcraft:fuel_reprocessor", "nuclearcraft:leacher", "nuclearcraft:crystallizer", "nuclearcraft:assembler", "nuclearcraft:steam_turbine", "nuclearcraft:melter"] })
-    event.remove({ output: ["nuclearcraft:nitrogen_collector", "nuclearcraft:compact_nitrogen_collector", "nuclearcraft:lava_collector", "nuclearcraft:dense_nitrogen_collector", "nuclearcraft:compact_helium_collector", "nuclearcraft:helium_collector", "nuclearcraft:dense_helium_collector"] })
-    event.remove({ output: ["nuclearcraft:foursmore", "nuclearcraft:evenmoresmore", "nuclearcraft:moresmore", "nuclearcraft:smore"] })
-})
-
 // Live Fuel decomp
 // Could also use this to change how these fuels are created?
 ServerEvents.recipes(event => {
@@ -31,7 +23,7 @@ ServerEvents.recipes(event => {
             .EUt(48)
     }
 
-    decomp_single("thorium_tbu_232", "nuclearcraft:fuel_thorium_tbu", "9x nuclearcraft:thorium_232");
+    decomp_single("thorium_tbu_232", "nuclearcraft:fuel_thorium_tbu", "9x gtceu:thorium_dust");
     decomp("uranium_leu_233", "nuclearcraft:fuel_uranium_leu_233", "8x gtceu:uranium_dust", "nuclearcraft:uranium_233");
     decomp("uranium_heu_233", "nuclearcraft:fuel_uranium_heu_233", "5x gtceu:uranium_dust", "4x nuclearcraft:uranium_233");
     decomp("uranium_leu_235", "nuclearcraft:fuel_uranium_leu_235", "8x gtceu:uranium_dust", "gtceu:uranium_235_dust");
@@ -44,18 +36,6 @@ ServerEvents.recipes(event => {
     decomp("plutonium_hep_241", "nuclearcraft:fuel_plutonium_hep_241", "5x nuclearcraft:plutonium_242", "4x gtceu:plutonium_241_dust");
     decomp("americium_lea_242", "nuclearcraft:fuel_americium_lea_242", "8x nuclearcraft:americium_243", "nuclearcraft:americium_242");
     decomp("americium_hea_242", "nuclearcraft:fuel_americium_hea_242", "5x nuclearcraft:americium_243", "4x nuclearcraft:americium_242");
-    decomp("curium_lecm_243", "nuclearcraft:fuel_curium_lecm_243", "8x nuclearcraft:curium_246", "nuclearcraft:curium_243");
-    decomp("curium_hecm_243", "nuclearcraft:fuel_curium_hecm_243", "5x nuclearcraft:curium_246", "4x nuclearcraft:curium_243");
-    decomp("curium_lecm_245", "nuclearcraft:fuel_curium_lecm_245", "8x nuclearcraft:curium_246", "nuclearcraft:curium_245");
-    decomp("curium_hecm_245", "nuclearcraft:fuel_curium_hecm_245", "5x nuclearcraft:curium_246", "4x nuclearcraft:curium_245");
-    decomp("curium_lecm_247", "nuclearcraft:fuel_curium_lecm_247", "8x nuclearcraft:curium_246", "nuclearcraft:curium_247");
-    decomp("curium_hecm_247", "nuclearcraft:fuel_curium_hecm_247", "5x nuclearcraft:curium_246", "4x nuclearcraft:curium_247");
-    decomp("berkelium_leb_248", "nuclearcraft:fuel_berkelium_leb_248", "8x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248");
-    decomp("berkelium_heb_248", "nuclearcraft:fuel_berkelium_heb_248", "5x nuclearcraft:berkelium_247", "4x nuclearcraft:berkelium_248");
-    decomp("californium_lecf_249", "nuclearcraft:fuel_californium_lecf_249", "8x nuclearcraft:californium_252", "nuclearcraft:californium_249");
-    decomp("californium_hecf_249", "nuclearcraft:fuel_californium_hecf_249", "5x nuclearcraft:californium_252", "4x nuclearcraft:californium_249");
-    decomp("californium_lecf_251", "nuclearcraft:fuel_californium_lecf_251", "8x nuclearcraft:californium_252", "nuclearcraft:californium_251");
-    decomp("californium_hecf_251", "nuclearcraft:fuel_californium_hecf_251", "5x nuclearcraft:californium_252", "4x nuclearcraft:californium_251");
 
     function decompdepleted(fuelType, out, out2, out3, out4, voltageTier) {
 
@@ -67,32 +47,19 @@ ServerEvents.recipes(event => {
     }
 
 
-    decompdepleted("thorium_tbu", "2x nuclearcraft:uranium_233", "8x gtceu:uranium_235_nugget", "nuclearcraft:neptunium_236", "4x nuclearcraft:neptunium_237", GTValues.IV)
+    decompdepleted("thorium_tbu", "2x nuclearcraft:uranium_233", "8x gtceu:uranium_235_nugget", "nuclearcraft:neptunium_236", "4x nuclearcraft:neptunium_237", GTValues.EV)
     decompdepleted("uranium_leu_233", "4x nuclearcraft:plutonium_242", "4x gtceu:plutonium_nugget", "4x gtceu:plutonium_241_nugget", "3x nuclearcraft:americium_243", GTValues.IV)
-    decompdepleted("uranium_heu_233", "4x nuclearcraft:neptunium_236", "nuclearcraft:neptunium_237", "2x nuclearcraft:plutonium_242", "nuclearcraft:americium_243", GTValues.IV)
+    decompdepleted("uranium_heu_233", "4x nuclearcraft:neptunium_236", "nuclearcraft:neptunium_237", "2x nuclearcraft:plutonium_242", "nuclearcraft:americium_242", GTValues.IV)
     decompdepleted("uranium_leu_235", "nuclearcraft:neptunium_237", "40x gtceu:uranium_nugget", "8x gtceu:plutonium_nugget", "8x gtceu:plutonium_241_nugget", GTValues.IV)
     decompdepleted("uranium_heu_235", "2x nuclearcraft:neptunium_237", "20x gtceu:uranium_nugget", "4x gtceu:plutonium_nugget", "3x nuclearcraft:plutonium_242", GTValues.IV)
-    decompdepleted("neptunium_len_236", "nuclearcraft:neptunium_237", "4x nuclearcraft:plutonium_242", "nuclearcraft:americium_242", "3x nuclearcraft:americium_243", GTValues.LuV)
-    decompdepleted("neptunium_hen_236", "nuclearcraft:plutonium_238", "16x gtceu:uranium_nugget", "8x gtceu:plutonium_nugget", "4x nuclearcraft:plutonium_242", GTValues.LuV)
-    decompdepleted("plutonium_lep_239", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_243", "8x gtceu:plutonium_nugget", "3x nuclearcraft:curium_246", GTValues.LuV)
-    decompdepleted("plutonium_hep_239", "nuclearcraft:americium_241", "3x nuclearcraft:americium_242", "nuclearcraft:curium_245", "3x nuclearcraft:curium_246", GTValues.LuV)
-    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:plutonium_242", "nuclearcraft:americium_243", "6x nuclearcraft:curium_246", GTValues.LuV)
-    decompdepleted("plutonium_hep_241", "nuclearcraft:americium_241", "nuclearcraft:curium_245", "3x nuclearcraft:curium_246", "3x nuclearcraft:curium_247", GTValues.LuV)
-    decompdepleted("americium_lea_242", "nuclearcraft:curium_243", "nuclearcraft:curium_245", "5x nuclearcraft:curium_246", "nuclearcraft:curium_247", GTValues.LuV)
-    decompdepleted("americium_hea_242", "2x nuclearcraft:curium_245", "4x nuclearcraft:curium_246", "nuclearcraft:curium_247", "nuclearcraft:berkelium_247", GTValues.LuV)
-    decompdepleted("curium_lecm_243", "4x nuclearcraft:curium_246", "2x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", GTValues.ZPM)
-    decompdepleted("curium_hecm_243", "3x nuclearcraft:curium_246", "3x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", GTValues.ZPM)
-    decompdepleted("curium_lecm_245", "5x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", "2x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("curium_hecm_245", "6x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", "nuclearcraft:californium_251", GTValues.ZPM)
-    decompdepleted("curium_lecm_247", "3x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_251", "4x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("curium_hecm_247", "nuclearcraft:berkelium_248", "nuclearcraft:californium_249", "3x nuclearcraft:californium_251", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("berkelium_leb_248", "nuclearcraft:californium_249", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("berkelium_heb_248", "nuclearcraft:californium_250", "nuclearcraft:californium_251", "3x nuclearcraft:californium_252", "3x nuclearcraft:californium_252", GTValues.ZPM)
-    decompdepleted("californium_lecf_249", "2x nuclearcraft:californium_250", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "8x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_hecf_249", "4x nuclearcraft:californium_250", "2x nuclearcraft:californium_251", "nuclearcraft:californium_252", "12x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_lecf_251", "nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "8x gtceu:actinium_nugget", GTValues.ZPM)
-    decompdepleted("californium_hecf_251", "2x nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "2x nuclearcraft:californium_252", "16x gtceu:actinium_nugget", GTValues.ZPM)
-
+    decompdepleted("neptunium_len_236", "nuclearcraft:neptunium_237", "3x nuclearcraft:plutonium_242", "nuclearcraft:americium_241", "3x nuclearcraft:americium_243", GTValues.IV)
+    decompdepleted("neptunium_hen_236", "nuclearcraft:plutonium_238", "16x gtceu:plutonium_nugget", "2x nuclearcraft:americium_242", "3x nuclearcraft:plutonium_242", GTValues.IV)
+    decompdepleted("plutonium_lep_239", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_243", "8x gtceu:plutonium_nugget", "3x nuclearcraft:berkelium_247", GTValues.LuV)
+    decompdepleted("plutonium_hep_239", "nuclearcraft:americium_243", "3x nuclearcraft:plutonium_242", "nuclearcraft:curium_245", "3x nuclearcraft:berkelium_248", GTValues.LuV)
+    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:berkelium_248", "nuclearcraft:americium_243", "5x nuclearcraft:berkelium_247", GTValues.LuV)
+    decompdepleted("plutonium_hep_241", "nuclearcraft:americium_243", "3x nuclearcraft:curium_245", "3x nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", GTValues.LuV)
+    decompdepleted("americium_lea_242", "nuclearcraft:curium_243", "5x nuclearcraft:curium_245", "nuclearcraft:californium_251", "nuclearcraft:californium_252", GTValues.LuV)
+    decompdepleted("americium_hea_242", "2x nuclearcraft:curium_245", "4x nuclearcraft:californium_251", "nuclearcraft:californium_252", "nuclearcraft:californium_250", GTValues.LuV)
 
     function cansolid(name, input) {
         event.remove({ output: `nuclearcraft:${name}_heat_sink` })
@@ -125,31 +92,15 @@ ServerEvents.recipes(event => {
     canfluid("water", "minecraft:water")
     cansolid("redstone", "minecraft:redstone")
     cansolid("quartz", "gtceu:nether_quartz_dust")
-    cansolid("gold", "gtceu:gold_dust")
     cansolid("glowstone", "minecraft:glowstone_dust")
     cansolid("lapis", "gtceu:lapis_dust")
-    cansolid("diamond", "gtceu:diamond_dust")
-    canfluid("liquid_helium", "gtceu:helium")
+    canfluid("liquid_helium", "gtceu:liquid_helium")
     cansolid("enderium", "gtceu:enderium_dust")
     canfluid("cryotheum", "kubejs:molten_cryotheum")
-    cansolid("iron", "gtceu:iron_dust")
     cansolid("emerald", "gtceu:emerald_dust")
     cansolid("copper", "gtceu:copper_dust")
     cansolid("magnesium", "gtceu:magnesium_dust")
-    cansolid("slime", "minecraft:slime_ball")
-    cansolid("netherite", "minecraft:netherite_scrap")
-    cansolid("end_stone", "gtceu:endstone_dust")
-    cansolid("prismarine", "minecraft:prismarine_crystals")
-    cansolid("obsidian", "gtceu:obsidian_dust")
-    cansolid("purpur", "minecraft:popped_chorus_fruit")
-    cansolid("nether_brick", "minecraft:nether_brick")
-    cansolid("lithium", "gtceu:lithium_dust")
-    cansolid("arsenic", "gtceu:arsenic_dust")
-    cansolid("lead", "gtceu:lead_dust")
     cansolid("boron", "gtceu:boron_dust")
-    cansolid("silver", "gtceu:silver_dust")
-    canfluid("liquid_nitrogen", "gtceu:nitrogen")
-    cansolid("fluorite", "gtceu:fluorite_dust")
     cansolid("tin", "gtceu:tin_dust")
     cansolid("aluminum", "gtceu:aluminium_dust")
     cansolid("manganese", "gtceu:manganese_dust")
@@ -164,42 +115,6 @@ ServerEvents.recipes(event => {
     ], {
         T: "nuclearcraft:tough_alloy_ingot",
         S: "gtceu:steel_ingot"
-    })
-
-    function cansolidactive(name, input) {
-        event.remove({ output: `nuclearcraft:active_${name}_heat_sink` })
-        event.recipes.gtceu.canner(`active_${name}_heat_sink`)
-            .itemInputs("nuclearcraft:empty_active_heat_sink", `16x ${input}`)
-            .itemOutputs(`nuclearcraft:active_${name}_heat_sink`)
-            .duration(400)
-            .EUt(2)
-    }
-
-    function canfluidactive(name, input) {
-        event.remove({ output: `nuclearcraft:active_${name}_heat_sink` })
-        event.recipes.gtceu.canner(`active_${name}heat_sink`)
-            .itemInputs("nuclearcraft:empty_active_heat_sink")
-            .inputFluids(Fluid.of(input, 1000))
-            .itemOutputs(`nuclearcraft:active_${name}_heat_sink`)
-            .duration(400)
-            .EUt(2)
-    }
-
-    canfluidactive("water", "minecraft:water")
-    cansolidactive("redstone", "minecraft:redstone")
-    canfluidactive("liquid_helium", "gtceu:helium")
-    canfluidactive("liquid_nitrogen", "gtceu:nitrogen")
-    cansolidactive("enderium", "gtceu:enderium_dust")
-    canfluidactive("cryotheum", "kubejs:molten_cryotheum")
-
-    event.remove({ id: "nuclearcraft:empty_active_heat_sink" })
-    event.shaped("nuclearcraft:empty_active_heat_sink", [
-        "TST",
-        "S S",
-        "TST"
-    ], {
-        T: "nuclearcraft:tough_alloy_ingot",
-        S: "gtceu:dark_steel_ingot"
     })
 
     event.remove({ output: "nuclearcraft:plate_basic" })
@@ -306,18 +221,6 @@ ServerEvents.recipes(event => {
             "nuclearcraft:fuel_plutonium_hep_239",
             "nuclearcraft:fuel_plutonium_lep_239",
             "nuclearcraft:fuel_neptunium_hen_236",
-            "nuclearcraft:fuel_curium_lecm_243",
-            "nuclearcraft:fuel_curium_hecm_243",
-            "nuclearcraft:fuel_curium_lecm_245",
-            "nuclearcraft:fuel_curium_hecm_245",
-            "nuclearcraft:fuel_curium_lecm_247",
-            "nuclearcraft:fuel_curium_hecm_247",
-            "nuclearcraft:fuel_berkelium_leb_248",
-            "nuclearcraft:fuel_californium_hecf_251",
-            "nuclearcraft:fuel_californium_lecf_251",
-            "nuclearcraft:fuel_californium_hecf_249",
-            "nuclearcraft:fuel_californium_lecf_249",
-            "nuclearcraft:fuel_berkelium_heb_248"
         ]
     })
 
@@ -336,26 +239,32 @@ ServerEvents.recipes(event => {
             "nuclearcraft:depleted_fuel_plutonium_hep_239",
             "nuclearcraft:depleted_fuel_plutonium_lep_239",
             "nuclearcraft:depleted_fuel_neptunium_hen_236",
-            "nuclearcraft:depleted_fuel_curium_lecm_243",
-            "nuclearcraft:depleted_fuel_curium_hecm_243",
-            "nuclearcraft:depleted_fuel_curium_lecm_245",
-            "nuclearcraft:depleted_fuel_curium_lecm_247",
-            "nuclearcraft:depleted_fuel_curium_hecm_247",
-            "nuclearcraft:depleted_fuel_curium_hecm_245",
-            "nuclearcraft:depleted_fuel_berkelium_leb_248",
-            "nuclearcraft:depleted_fuel_californium_hecf_251",
-            "nuclearcraft:depleted_fuel_californium_lecf_251",
-            "nuclearcraft:depleted_fuel_californium_hecf_249",
-            "nuclearcraft:depleted_fuel_californium_lecf_249",
-            "nuclearcraft:depleted_fuel_berkelium_heb_248"
         ],
         type: "minecraft:smelting"
     })
 
-    event.remove({ output: ["nuclearcraft:californium_251", "nuclearcraft:plutonium_241", "nuclearcraft:americium_243", "nuclearcraft:plutonium_238", "nuclearcraft:boron_10", "nuclearcraft:boron_11", "nuclearcraft:plutonium_239", "nuclearcraft:neptunium_236", "nuclearcraft:neptunium_237", "nuclearcraft:curium_246", "nuclearcraft:curium_247", "nuclearcraft:curium_245", "nuclearcraft:curium_243", "nuclearcraft:berkelium_247", "nuclearcraft:berkelium_248", "nuclearcraft:uranium_235", "nuclearcraft:uranium_238", "nuclearcraft:uranium_233", "nuclearcraft:lithium_6", "nuclearcraft:lithium_7", "nuclearcraft:americium_241", "nuclearcraft:americium_242", "nuclearcraft:plutonium_242", "nuclearcraft:californium_250", "nuclearcraft:californium_249", "nuclearcraft:thorium_230", "nuclearcraft:thorium_232", "nuclearcraft:californium_252"], type: "minecraft:smelting" })
+    event.remove({
+        output: [
+            "nuclearcraft:neptunium_236",
+            "nuclearcraft:neptunium_237",
+            "nuclearcraft:curium_245",
+            "nuclearcraft:curium_243",
+            "nuclearcraft:berkelium_247",
+            "nuclearcraft:berkelium_248",
+            "nuclearcraft:uranium_233",
+            "nuclearcraft:americium_241",
+            "nuclearcraft:americium_242",
+            "nuclearcraft:americium_243",
+            "nuclearcraft:plutonium_238",
+            "nuclearcraft:plutonium_242",
+            "nuclearcraft:californium_250",
+            "nuclearcraft:californium_251",
+            "nuclearcraft:californium_252"
+        ], type: "minecraft:smelting"
+    })
 
 
-    event.shaped("nuclearcraft:fuel_thorium_tbu", ["AAA", "AAA", "AAA"], { A: "nuclearcraft:thorium_232" })
+    event.shaped("nuclearcraft:fuel_thorium_tbu", ["AAA", "AAA", "AAA"], { A: "gtceu:thorium_dust" })
     event.shaped("nuclearcraft:fuel_uranium_leu_233", ["ABB", "BBB", "BBB"], { A: "nuclearcraft:uranium_233", B: "gtceu:uranium_ingot" })
     event.shaped("nuclearcraft:fuel_uranium_heu_233", ["AAA", "ABB", "BBB"], { A: "nuclearcraft:uranium_233", B: "gtceu:uranium_ingot" })
     event.shaped("nuclearcraft:fuel_uranium_leu_235", ["ABB", "BBB", "BBB"], { A: "gtceu:uranium_235_ingot", B: "gtceu:uranium_ingot" })
@@ -368,19 +277,6 @@ ServerEvents.recipes(event => {
     event.shaped("nuclearcraft:fuel_plutonium_hep_241", ["AAA", "ABB", "BBB"], { A: "gtceu:plutonium_241_ingot", B: "nuclearcraft:plutonium_242" })
     event.shaped("nuclearcraft:fuel_americium_lea_242", ["ABB", "BBB", "BBB"], { A: "nuclearcraft:americium_242", B: "nuclearcraft:americium_243" })
     event.shaped("nuclearcraft:fuel_americium_hea_242", ["AAA", "ABB", "BBB"], { A: "nuclearcraft:americium_242", B: "nuclearcraft:americium_243" })
-    event.shaped("nuclearcraft:fuel_curium_lecm_243", ["ABB", "BBB", "BBB"], { A: "nuclearcraft:curium_243", B: "nuclearcraft:curium_246" })
-    event.shaped("nuclearcraft:fuel_curium_hecm_243", ["AAA", "ABB", "BBB"], { A: "nuclearcraft:curium_243", B: "nuclearcraft:curium_246" })
-    event.shaped("nuclearcraft:fuel_curium_lecm_245", ["ABB", "BBB", "BBB"], { A: "nuclearcraft:curium_245", B: "nuclearcraft:curium_246" })
-    event.shaped("nuclearcraft:fuel_curium_hecm_245", ["AAA", "ABB", "BBB"], { A: "nuclearcraft:curium_245", B: "nuclearcraft:curium_246" })
-    event.shaped("nuclearcraft:fuel_curium_lecm_247", ["ABB", "BBB", "BBB"], { A: "nuclearcraft:curium_247", B: "nuclearcraft:curium_246" })
-    event.shaped("nuclearcraft:fuel_curium_hecm_247", ["AAA", "ABB", "BBB"], { A: "nuclearcraft:curium_247", B: "nuclearcraft:curium_246" })
-    event.shaped("nuclearcraft:fuel_berkelium_leb_248", ["ABB", "BBB", "BBB"], { A: "nuclearcraft:berkelium_248", B: "nuclearcraft:berkelium_247" })
-    event.shaped("nuclearcraft:fuel_berkelium_heb_248", ["AAA", "ABB", "BBB"], { A: "nuclearcraft:berkelium_248", B: "nuclearcraft:berkelium_247" })
-    event.shaped("nuclearcraft:fuel_californium_lecf_249", ["ABB", "BBB", "BBB"], { A: "nuclearcraft:californium_249", B: "nuclearcraft:californium_252" })
-    event.shaped("nuclearcraft:fuel_californium_hecf_249", ["AAA", "ABB", "BBB"], { A: "nuclearcraft:californium_249", B: "nuclearcraft:californium_252" })
-    event.shaped("nuclearcraft:fuel_californium_lecf_251", ["ABB", "BBB", "BBB"], { A: "nuclearcraft:californium_251", B: "nuclearcraft:californium_252" })
-    event.shaped("nuclearcraft:fuel_californium_hecf_251", ["AAA", "ABB", "BBB"], { A: "nuclearcraft:californium_251", B: "nuclearcraft:californium_252" })
-
 
     event.recipes.gtceu.distillery("distill_tech_water")
         .inputFluids("gtceu:distilled_water 20")
@@ -399,7 +295,7 @@ ServerEvents.recipes(event => {
 
     rtg("americium", "nuclearcraft:americium_241")
     rtg("plutonium", "nuclearcraft:plutonium_238")
-    rtg("uranium", "gtceu:uranium_ingot")
+    rtg("uranium", "nuclearcraft:uranium_233")
     rtg("californium", "nuclearcraft:californium_250")
 
     function coils(name) {
@@ -433,47 +329,34 @@ ServerEvents.recipes(event => {
         D: "nuclearcraft:plate_du"
     })
 
-    event.remove({
-        output: [
-            "nuclearcraft:motor",
-            "nuclearcraft:plate_extreme",
-            "nuclearcraft:actuator",
-            "nuclearcraft:tough_helmet",
-            "nuclearcraft:tough_chest",
-            "nuclearcraft:tough_pants",
-            "nuclearcraft:tough_boots",
-            "nuclearcraft:solar_panel_basic",
-            "nuclearcraft:solar_panel_advanced",
-            "nuclearcraft:solar_panel_du",
-            "nuclearcraft:solar_panel_elite",
-            "nuclearcraft:basic_voltaic_pile",
-            "nuclearcraft:elite_voltaic_pile",
-            "nuclearcraft:advanced_voltaic_pile",
-            "nuclearcraft:du_voltaic_pile",
-            "nuclearcraft:basic_storage_container",
-            "nuclearcraft:elite_storage_container",
-            "nuclearcraft:advanced_storage_container",
-            "nuclearcraft:du_storage_container",
-            "nuclearcraft:empty_frame",
-            "nuclearcraft:dps",
-            "nuclearcraft:rad_x",
-            "nuclearcraft:servo",
-            "nuclearcraft:bscco_electromagnet",
-            "nuclearcraft:bscco_rf_amplifier",
-            "nuclearcraft:niobium_tin_electromagnet",
-            "nuclearcraft:niobium_tin_rf_amplifier",
-            "nuclearcraft:lithium_ion_cell",
-            "nuclearcraft:basic_lithium_ion_battery",
-            "nuclearcraft:advanced_lithium_ion_battery",
-            "nuclearcraft:du_lithium_ion_battery",
-            "nuclearcraft:elite_lithium_ion_battery",
-            "nuclearcraft:basic_barrel",
-            "nuclearcraft:elite_barrel",
-            "nuclearcraft:advanced_barrel",
-            "nuclearcraft:du_barrel"
-        ]
-    })
+    // Fix fission boiling recipe
+    event.custom(
+        {
+            "type": "nuclearcraft:fission_boiling",
+            "heatRequired": 1.0,
+            "inputFluids": [
+                {
+                    "amount": 1,
+                    "tag": "minecraft:water"
+                }
+            ],
+            "outputFluids": [
+                {
+                    "amount": 160,
+                    "fluid": "gtceu:steam"
+                }
+            ]
+        }
+    ).id("nuclearcraft:fission_boiling/water-steam")
 
+    // High Pressure Steam Turbine recipe.
+    // High Pressure steam is 16x more energy dense than regular steam,
+    // and is 60% more efficient on the fuel spent to get that energy
+    event.recipes.gtceu.steam_turbine("high_pressure_steam")
+        .inputFluids("nuclearcraft:high_pressure_steam 40")
+        .outputFluids("nuclearcraft:technical_water 40")
+        .duration(0.5 * 20)
+        .EUt(-GTValues.V[GTValues.LV])
 });
 
 ServerEvents.tags("item", event => {

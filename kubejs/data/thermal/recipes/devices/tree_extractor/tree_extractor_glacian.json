@@ -1,0 +1,23 @@
+{
+  "type": "thermal:tree_extractor",
+  "trunk": {
+    "Name": "ad_astra:glacian_log",
+    "Properties": {
+      "axis": "y"
+    }
+  },
+  "leaves": {
+    "Name": "ad_astra:glacian_leaves",
+    "Properties": {
+      "persistent": "false"
+    }
+  },
+  "min_height": 4,
+  "max_height": 16,
+  "min_leaves": 12,
+  "max_leaves": 24,
+  "result": {
+    "fluid": "thermal:latex",
+    "amount": 15
+  }
+}

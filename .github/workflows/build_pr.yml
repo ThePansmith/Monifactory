@@ -41,14 +41,13 @@ jobs:
         with:
           node-version: 23
           cache: 'npm'
-          cache-dependency-path: tools/build/package-lock.json
+          cache-dependency-path: build/package-lock.json
       - name: Restore mods cache
         uses: actions/cache@v4
         with:
           # observe if this makes broken builds due to outdated mods (server onl)
           path: |
-            dist/modcache
-            dist/cache.json
+            dist/mod_cache
           key: ${{ runner.os }}-mods-${{ hashFiles('manifest.json') }}
           restore-keys: |
             ${{ runner.os }}-mods-
@@ -60,15 +59,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-modlist-
       - name: Replace manifest version
-        run: 
+        run:
           sed -i s/\"version\":\ \"development\"/\"version\":\ \"${{ inputs.version }}\"/ manifest.json
         shell: bash
       - name: Pack Modpack
         run: |
-          ./pack-mode-switcher.sh n
-          cd tools/build
+          cd build
           npm install
-          node . ${{ inputs.target }}
+          node index.ts ${{ inputs.target }}
         shell: bash
       - name: Upload build artifact
         uses: actions/upload-artifact@v4

@@ -5,6 +5,11 @@
   "enderchests": {
     "hud": true
   },
+  "monilabs": {
+    "color_info": true,
+    "sculk_vat_xp_info": true,
+    "microverse_info": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -57,6 +62,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "gtmutils": {
+    "pterb_info": true
+  },
   "endertanks": {
     "hud.basic": true,
     "hud": true,
@@ -68,6 +76,7 @@
     "auto_output_info": true,
     "workable_provider": true,
     "transformer": true,
+    "energy_converter_provider": true,
     "controllable_provider": true,
     "me_pattern_buffer": true,
     "exhaust_vent_info": true,
@@ -102,8 +111,8 @@
   "telepastries": {
     "bites": true
   },
-  "lootr": {
-    "info": true
+  "functionalstorage": {
+    "armory": true
   },
   "balm": {
     "jade": true
@@ -142,6 +151,9 @@
   },
   "hammerlib": {
     "root": true
+  },
+  "jadeaddons.lootr": {
+    "info": true
   },
   "shetiphiancore": {
     "hud.rgb16": true,

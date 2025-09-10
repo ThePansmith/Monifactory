@@ -1,0 +1,1217 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "renewable_production"
+	group: "0D5BFFD0A5E49312"
+	icon: "gtceu:lv_chemical_reactor"
+	id: "055C0B43FE14258F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2B4F44E19AA7A1B6"
+				"72861B317663600B"
+			]
+			description: [
+				"{moni.quest.261F7D50E23B0789.description1}"
+				""
+				"{moni.quest.261F7D50E23B0789.description2}"
+				"{@pagebreak}"
+				"{moni.quest.261F7D50E23B0789.description3}"
+				""
+				"{image:ftblibrary:textures/gui/ppm_robot_arm_how_to.png width:100 height:100 align:center}"
+			]
+			id: "261F7D50E23B0789"
+			optional: true
+			size: 2.0d
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.alloy_smelter\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "6D25E047579465DD"
+				item: "hostilenetworks:prediction_matrix"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.25d
+		}
+		{
+			dependencies: [
+				"500B77982B9CDF9B"
+				"3BC7B5321B707F78"
+			]
+			description: ["{moni.quest.3E90A188715DA88A.description1}"]
+			id: "3E90A188715DA88A"
+			optional: true
+			size: 1.5d
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.chemical_reactor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "122706C284BF4311"
+				item: "kubejs:resonant_clathrate"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3E90A188715DA88A"]
+			description: ["{moni.quest.2B4F44E19AA7A1B6.description1}"]
+			id: "2B4F44E19AA7A1B6"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_furnace\"},\".\"]"
+			tasks: [{
+				id: "39B409F800210783"
+				item: "kubejs:pulsating_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["50FB5E0B0E0B142F"]
+			description: ["{moni.quest.500B77982B9CDF9B.description1}"]
+			icon: "thermal:ender_bucket"
+			id: "500B77982B9CDF9B"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.extractor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "6B06F7499D051242"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.500B77982B9CDF9B.title}"
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5BE3E37772FAF6CB"]
+			description: ["{moni.quest.50FB5E0B0E0B142F.description1}"]
+			id: "50FB5E0B0E0B142F"
+			optional: true
+			tasks: [{
+				id: "3B35A9161911CB96"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 6.5d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: ["{moni.quest.cobblestone.description}"]
+			disable_toast: true
+			hide_until_deps_visible: true
+			id: "1881488CEB982FCD"
+			progression_mode: "flexible"
+			size: 2.0d
+			tasks: [{
+				id: "6A1B4224E18DC3EC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:cobblestone"
+					}
+				}
+				title: "{moni.task.6A1B4224E18DC3EC}"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1881488CEB982FCD"]
+			description: ["{moni.quest.6E06505BC7636985.description1}"]
+			id: "6E06505BC7636985"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_furnace\"},\".\"]"
+			tasks: [{
+				id: "7429EE615EFC6A1C"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1881488CEB982FCD"]
+			description: ["{moni.quest.4A56822201818607.description1}"]
+			id: "4A56822201818607"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "3A88BF095D4C0DB9"
+				item: "gtceu:stone_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"4A56822201818607"
+				"7A3F3FB2774A4632"
+				"4BC0A5F24E5837ED"
+			]
+			description: ["{moni.quest.7F165C2BCCCBA565.description1}"]
+			icon: "gtceu:concrete_bucket"
+			id: "7F165C2BCCCBA565"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.mixer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "0D045E8E928B8757"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.7F165C2BCCCBA565.title}"
+			x: 9.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1881488CEB982FCD"]
+			description: ["{moni.quest.gravel.description}"]
+			id: "2968DF8A3A0EBF89"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "4EE8610ED03A7BDD"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2968DF8A3A0EBF89"]
+			description: ["{moni.quest.483B16F4D4291C82.description1}"]
+			id: "483B16F4D4291C82"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.sifter\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "3A7C55B0274C3CC2"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0933FF764C1D2399"]
+			description: ["{moni.quest.7A3F3FB2774A4632.description1}"]
+			id: "7A3F3FB2774A4632"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "2F4B284ECF831238"
+				item: "gtceu:clay_dust"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"7A3F3FB2774A4632"
+				"261D2F3B1F2162D0"
+			]
+			description: ["{moni.quest.1D4B663AD87CA3C1.description1}"]
+			hide_until_deps_visible: true
+			id: "1D4B663AD87CA3C1"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "78F2F922F7B7F0EA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:sodium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lithium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:aluminium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:silicon_dust"
+							}
+						]
+					}
+				}
+				title: "{moni.task.78F2F922F7B7F0EA}"
+				type: "item"
+			}]
+			title: "{moni.quest.1D4B663AD87CA3C1.title}"
+			x: 10.5d
+			y: -9.5d
+		}
+		{
+			description: ["{moni.quest.water.description}"]
+			icon: "minecraft:water_bucket"
+			id: "4BC0A5F24E5837ED"
+			subtitle: "{moni.quest.water.subtitle}"
+			tasks: [{
+				id: "7070DC4C26103D4B"
+				type: "checkmark"
+			}]
+			title: "{block.minecraft.water}"
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"626330BB4A59E567"
+				"4BC0A5F24E5837ED"
+			]
+			description: ["{moni.quest.0933FF764C1D2399.description1}"]
+			id: "0933FF764C1D2399"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.chemical_reactor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "27C80697DA452BF5"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0933FF764C1D2399"]
+			description: ["{moni.quest.4107A9B0CA139E6C.description1}"]
+			id: "4107A9B0CA139E6C"
+			tasks: [{
+				id: "1EF9791BD7B77F35"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3380CBA4E4010EEC"]
+			description: ["{moni.quest.626330BB4A59E567.description1}"]
+			id: "626330BB4A59E567"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "6097D83B01AA2CBF"
+				item: "kubejs:dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2968DF8A3A0EBF89"]
+			description: ["{moni.quest.3380CBA4E4010EEC.description1}"]
+			id: "3380CBA4E4010EEC"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "5ED3196F1A42F6C6"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			description: [
+				"{moni.quest.lava.description}"
+				""
+				"{moni.quest.36100ACD3655DAFF.description1}"
+			]
+			icon: "minecraft:lava_bucket"
+			id: "36100ACD3655DAFF"
+			tasks: [{
+				id: "485DD9829B640F9B"
+				type: "checkmark"
+			}]
+			title: "{block.minecraft.lava}"
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"36100ACD3655DAFF"
+				"626330BB4A59E567"
+			]
+			description: ["{moni.quest.33714BC51815A665.description1}"]
+			id: "33714BC51815A665"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.chemical_reactor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "1335F210887B7F3C"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["33714BC51815A665"]
+			description: ["{moni.quest.08D087B38EE0602B.description1}"]
+			id: "08D087B38EE0602B"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "3F8820777A1AB80D"
+				item: "gtceu:netherrack_dust"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36100ACD3655DAFF"]
+			description: ["{moni.quest.6B4A50B6F9F835EF.description1}"]
+			id: "6B4A50B6F9F835EF"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.fluid_solidifier\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "0B086D94FCE75840"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6B4A50B6F9F835EF"]
+			description: ["{moni.quest.57D410C5A9EAFAD9.description1}"]
+			id: "57D410C5A9EAFAD9"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "418DD246EDA607CD"
+				item: "gtceu:obsidian_dust"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["21654B6E703A2923"]
+			description: [
+				"{moni.quest.1349FBBCE3041081.description1}"
+				""
+				"{moni.quest.1349FBBCE3041081.description2}"
+			]
+			id: "1349FBBCE3041081"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "6BA83E0FE524FA1B"
+				item: "gtceu:saltpeter_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3380CBA4E4010EEC"]
+			description: ["{moni.quest.21654B6E703A2923.description1}"]
+			id: "21654B6E703A2923"
+			tasks: [{
+				id: "105B371C4873CAEB"
+				item: "minecraft:sandstone"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["599012DB0B179B3B"]
+			description: ["{moni.quest.201B129579ACF449.description1}"]
+			id: "201B129579ACF449"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [
+				{
+					id: "173CBB96166964FB"
+					item: "gtceu:quartzite_dust"
+					type: "item"
+				}
+				{
+					id: "60EC948DE2639EC3"
+					item: "gtceu:certus_quartz_dust"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.201B129579ACF449.title}"
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3380CBA4E4010EEC"]
+			description: ["{moni.quest.599012DB0B179B3B.description1}"]
+			id: "599012DB0B179B3B"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "6D3FA82DF4858787"
+				item: "gtceu:quartz_sand_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"3380CBA4E4010EEC"
+				"467BD25ED78C7EF8"
+			]
+			description: ["{moni.quest.33351123F08D92BE.description1}"]
+			hide_until_deps_visible: true
+			id: "33351123F08D92BE"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.arc_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "70D37DC6A4C89B21"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:glass"
+					}
+				}
+				title: "{moni.task.70D37DC6A4C89B21}"
+				type: "item"
+			}]
+			title: "{moni.quest.33351123F08D92BE.title}"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"33351123F08D92BE"
+				"747A07B8142E9B49"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{moni.quest.69BFFF8BFB3B3B5C.description1}"]
+			id: "69BFFF8BFB3B3B5C"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "113028C111EF1CC8"
+				item: "gtceu:glass_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["69BFFF8BFB3B3B5C"]
+			description: ["{moni.quest.3B8EFDA817243B9F.description1}"]
+			id: "3B8EFDA817243B9F"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "1DCE55AB1ECA9566"
+				item: "gtceu:silicon_dioxide_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3B8EFDA817243B9F"]
+			description: ["{moni.quest.sio2_o2.description}"]
+			id: "6E16CEC90AA82C32"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "5E475348CEFAFBBF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:silicon_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:oxygen_bucket"
+							}
+						]
+					}
+				}
+				title: "{moni.task.sio2_o2}"
+				type: "item"
+			}]
+			title: "{moni.quest.sio2_o2.title}"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"33351123F08D92BE"
+				"5BE3E37772FAF6CB"
+			]
+			description: ["{moni.quest.6792DF5F9F320B98.description1}"]
+			hide_until_deps_visible: true
+			id: "6792DF5F9F320B98"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "79199213561E6E2C"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6D61F343826FD239"]
+			description: ["{moni.quest.gravel.description}"]
+			id: "5228EFF7200B4C91"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "7981A513A9BBFDC3"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5228EFF7200B4C91"]
+			description: ["{moni.quest.456239275544A789.description1}"]
+			id: "456239275544A789"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "3A229BA671666C89"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["456239275544A789"]
+			description: ["{moni.quest.749281AED88852C2.description1}"]
+			id: "749281AED88852C2"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.arc_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "5CB8E13112A61401"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["749281AED88852C2"]
+			description: ["{moni.quest.3BC7B5321B707F78.description1}"]
+			id: "3BC7B5321B707F78"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "13EDE5C42D7590D4"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["456239275544A789"]
+			description: ["{moni.quest.66CA4A42DD474383.description1}"]
+			id: "66CA4A42DD474383"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "62CDC0E943DB3904"
+				item: "kubejs:dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"66CA4A42DD474383"
+				"447E9501E57DA010"
+			]
+			description: ["{moni.quest.72861B317663600B.description1}"]
+			id: "72861B317663600B"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.chemical_reactor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "1C1DC449620563CB"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5BE3E37772FAF6CB"]
+			description: ["{moni.quest.cobblestone.description}"]
+			id: "6D61F343826FD239"
+			optional: true
+			size: 1.0d
+			tasks: [{
+				id: "44F09B9F2D173993"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:cobblestone"
+					}
+				}
+				title: "{moni.task.44F09B9F2D173993}"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5BE3E37772FAF6CB"]
+			description: [
+				"{moni.quest.water.description}"
+				""
+				"{moni.quest.447E9501E57DA010.description1}"
+			]
+			icon: "minecraft:water_bucket"
+			id: "447E9501E57DA010"
+			optional: true
+			subtitle: "{moni.quest.water.subtitle}"
+			tasks: [{
+				id: "3E5B4CD1CB1ED343"
+				type: "checkmark"
+			}]
+			title: "{block.minecraft.water}"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7A3F3FB2774A4632"
+				"68897FC5F720BB4F"
+			]
+			description: ["{moni.quest.2664406B3CD20703.description1}"]
+			hide_until_deps_visible: true
+			id: "2664406B3CD20703"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "4F2994BE3E9A9D23"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:sodium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lithium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:aluminium_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:silicon_dust"
+							}
+						]
+					}
+				}
+				title: "{moni.task.4F2994BE3E9A9D23}"
+				type: "item"
+			}]
+			title: "{moni.quest.2664406B3CD20703.title}"
+			x: 10.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"3380CBA4E4010EEC"
+				"07C571669B023A30"
+			]
+			description: ["{moni.quest.33351123F08D92BE.description1}"]
+			hide_until_deps_visible: true
+			id: "747A07B8142E9B49"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.arc_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "6D27870CD7F95683"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:glass"
+					}
+				}
+				title: "{moni.task.70D37DC6A4C89B21}"
+				type: "item"
+			}]
+			title: "{moni.quest.33351123F08D92BE.title}"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["014D28F123261D8D"]
+			description: ["{moni.quest.093883A81E6926E2.description1}"]
+			id: "093883A81E6926E2"
+			optional: true
+			tasks: [{
+				id: "6FA9B7FAD016DFB2"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["093883A81E6926E2"]
+			description: ["{moni.quest.2794D9A3AD594F6A.description1}"]
+			id: "2794D9A3AD594F6A"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "26E3FA1008B6CB88"
+				item: "gtceu:amethyst_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2794D9A3AD594F6A"]
+			description: ["{moni.quest.6F10BBD085BF7532.description1)"]
+			id: "6F10BBD085BF7532"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "551C6F157CB6FA51"
+				item: "gtceu:silicon_dioxide_dust"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5E3CBC929557418F"]
+			description: ["{moni.quest.014D28F123261D8D.description1}"]
+			hide_until_deps_visible: true
+			icon: "minecraft:budding_amethyst"
+			id: "014D28F123261D8D"
+			optional: true
+			tasks: [{
+				id: "5D3F46B55F0E9B1C"
+				observe_type: 0
+				timer: 0L
+				to_observe: "minecraft:budding_amethyst"
+				type: "observation"
+			}]
+			title: "{block.minecraft.budding_amethyst}"
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2794D9A3AD594F6A"]
+			description: ["{moni.quest.2612A01CCC73DF1A.description1}"]
+			id: "2612A01CCC73DF1A"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "4B9B9E4581922FF1"
+				item: "gtceu:iron_dust"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6F10BBD085BF7532"]
+			description: ["{moni.quest.sio2_o2.description}"]
+			id: "7B4EB40F016DBD76"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "58C2B5EB1690BFE9"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:silicon_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:oxygen_bucket"
+							}
+						]
+					}
+				}
+				title: "{moni.task.sio2_o2}"
+				type: "item"
+			}]
+			title: "{moni.quest.sio2_o2.title}"
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7B4EB40F016DBD76"
+				"4EC63681CBC1CAD2"
+			]
+			description: ["{moni.quest.7CFC483280B08A26.description1}"]
+			id: "7CFC483280B08A26"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.arc_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "75938527A9D05C8B"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2612A01CCC73DF1A"]
+			description: ["{moni.quest.42D25699329E820D.description1}"]
+			id: "4EC63681CBC1CAD2"
+			optional: true
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_furnace\"},\".\"]"
+			tasks: [{
+				id: "42D25699329E820D"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7CFC483280B08A26"
+				"7B4EB40F016DBD76"
+			]
+			description: ["{moni.quest.031A5A2B3AA99782.description1}"]
+			id: "031A5A2B3AA99782"
+			optional: true
+			size: 2.0d
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_blast_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "5851026225C2E439"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3380CBA4E4010EEC"]
+			description: ["{moni.quest.1E6CDC008C85D941.description1}"]
+			id: "1E6CDC008C85D941"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"Atomic Reconstructor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "173EB624F12777AD"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1E6CDC008C85D941"]
+			description: ["{moni.quest.1AFB2AD1A572E1D3.description1}"]
+			id: "1AFB2AD1A572E1D3"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "11CDB77540DAC85D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:saltpeter_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:coal_dust"
+							}
+							{
+								Count: 1b
+								id: "gtceu:oil_bucket"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.1AFB2AD1A572E1D3.title}"
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["59CC348BC6199793"]
+			description: [
+				"[\"\",{\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description2\"},{\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description3\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"block.thermal.machine_insolator\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2607F8404B56773B\"}},{\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description4\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"block.gtceu.greenhouse\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3A71D736AE5C17E2\"}},{\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description5\"}]"
+				""
+				"{moni.quest.0E8C258BD7E36154.description2}"
+			]
+			id: "0E8C258BD7E36154"
+			size: 2.0d
+			subtitle: "{moni.quest.0E8C258BD7E36154.subtitle}"
+			tasks: [{
+				id: "10903B2BD99A6BDE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.0E8C258BD7E36154.title}"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			description: ["{moni.quest.59CC348BC6199793.description1}"]
+			id: "59CC348BC6199793"
+			tasks: [{
+				id: "7FCB53B3E3E4F56C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:saplings"
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.59CC348BC6199793.title}"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"59CC348BC6199793"
+				"0E8C258BD7E36154"
+			]
+			description: ["{moni.quest.2BF1E9CC0D7F7C91.description1}"]
+			id: "2BF1E9CC0D7F7C91"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.thermal.machine_insolator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.gtceu.greenhouse\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "2A48AD6742E0AF73"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"59CC348BC6199793"
+				"2BF1E9CC0D7F7C91"
+			]
+			description: ["{moni.quest.345470975C5570B7.description1}"]
+			id: "345470975C5570B7"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.compressor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "03F9D0068CD89D92"
+				item: "gtceu:plant_ball"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["345470975C5570B7"]
+			description: ["{moni.quest.0C80D39012952549.description1}"]
+			id: "0C80D39012952549"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_furnace\"},\".\"]"
+			tasks: [{
+				id: "6BE7D65608B5E334"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["345470975C5570B7"]
+			description: ["{moni.quest.1FEC7E9025F6277A.description1}"]
+			id: "1FEC7E9025F6277A"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},\".\"]"
+			tasks: [{
+				id: "2A414D121B56DCC8"
+				item: "gtceu:bio_chaff"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2BF1E9CC0D7F7C91"]
+			description: ["{moni.quest.5560E43D1B773B93.description1}"]
+			id: "5560E43D1B773B93"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.extractor\"},\".\"]"
+			tasks: [{
+				id: "0E95715740F8359B"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2BF1E9CC0D7F7C91"]
+			description: ["{moni.quest.519389755420A7A8.description1}"]
+			id: "519389755420A7A8"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},\".\"]"
+			tasks: [{
+				id: "48CAAA4DA3F8281C"
+				item: "gtceu:glue_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"2AC7A8036CA65AF3"
+				"1FEC7E9025F6277A"
+			]
+			description: ["{moni.quest.3B1873913255E7C0.description1}"]
+			id: "3B1873913255E7C0"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.brewery\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.pyrolyse_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "64C7D02CF6242D24"
+				item: "gtceu:biomass_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			description: ["{moni.quest.water.description}"]
+			id: "2AC7A8036CA65AF3"
+			subtitle: "{moni.quest.water.subtitle}"
+			tasks: [{
+				id: "66EE299E0F4A6BF8"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			title: "{block.minecraft.water}"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1FEC7E9025F6277A"]
+			description: ["{moni.quest.21CD97B41E37D290.description1}"]
+			id: "21CD97B41E37D290"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},\".\"]"
+			tasks: [{
+				id: "6B484201FA9B4D9E"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E8C258BD7E36154"]
+			description: ["{moni.quest.0C24E6D1F1D2A3AE.description1}"]
+			id: "0C24E6D1F1D2A3AE"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},\".\"]"
+			tasks: [{
+				id: "5BB26CEAFE4B5113"
+				item: "gtceu:wood_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4A0D7BD20D857B73"
+				"0C24E6D1F1D2A3AE"
+				"21CD97B41E37D290"
+				"2AC7A8036CA65AF3"
+			]
+			description: ["{moni.quest.483A64A744DA61C5.description1}"]
+			id: "483A64A744DA61C5"
+			subtitle: "{moni.quest.483A64A744DA61C5.subtitle}"
+			tasks: [{
+				id: "202862FE2147DA1E"
+				item: "gtceu:fertilizer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["21CD97B41E37D290"]
+			description: ["{moni.quest.4A0D7BD20D857B73.description1}"]
+			id: "4A0D7BD20D857B73"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "6A68E1D21F7FA886"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B1873913255E7C0"]
+			description: ["{moni.quest.60A7102F5BA0DE19.description1}"]
+			id: "60A7102F5BA0DE19"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.distillery\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "794EFF38BC2B0474"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0E8C258BD7E36154"]
+			description: ["{moni.quest.428C5BFD6A614FE2.description1}"]
+			id: "428C5BFD6A614FE2"
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.coke_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.pyrolyse_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "24B053EBD3DD3EFB"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:charcoal"
+							}
+							{
+								Count: 1b
+								id: "gtceu:creosote_bucket"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{moni.quest.428C5BFD6A614FE2.title}"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E8C258BD7E36154"]
+			description: ["{moni.quest.57C389A59CA5E00F.description1}"]
+			id: "57C389A59CA5E00F"
+			size: 1.25d
+			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.pyrolyse_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			tasks: [{
+				id: "06604A48AED2B19B"
+				item: "gtceu:charcoal_byproducts_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+	]
+	title: "{moni.chapter.055C0B43FE14258F.title}"
+}

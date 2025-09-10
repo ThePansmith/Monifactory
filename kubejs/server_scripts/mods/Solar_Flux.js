@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
     // Photovoltaic Cells T2-6
     let cellCrafting = [
         [2, "enderio:photovoltaic_plate", "gtceu:battery_alloy_plate"],
-        [3, "minecraft:ender_pearl", "gtceu:annealed_copper_plate"],
+        [3, "gtceu:germanium_plate", "gtceu:annealed_copper_plate"],
         [4, "gtceu:light_blue_glass_lens", "gtceu:vibrant_alloy_plate"],
         [5, "gtceu:sunnarium_plate", "gtceu:sunnarium_plate"],
         [6, "gtceu:enriched_sunnarium_plate", "gtceu:enriched_sunnarium_plate"]
@@ -169,13 +169,13 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:plutonium 144", "gtceu:americium 72")
         .itemInputs("minecraft:glowstone_dust")
         .itemOutputs("2x gtceu:sunnarium_dust")
-        .duration(1800)
+        .duration(300)
         .EUt(GTValues.VHA[GTValues.IV]);
     event.recipes.gtceu.mixer("kubejs:sunnarium_dust_mixer_alt")
         .inputFluids("gtceu:plutonium_241 144", "gtceu:americium 72")
         .itemInputs("minecraft:glowstone_dust")
         .itemOutputs("2x gtceu:sunnarium_dust")
-        .duration(1800)
+        .duration(300)
         .EUt(GTValues.VHA[GTValues.IV]);
 
     event.remove({ id: "gtceu:macerator/macerate_sunnarium_plate" })
