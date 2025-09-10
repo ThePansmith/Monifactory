@@ -566,7 +566,7 @@ ServerEvents.recipes(event => {
         .EUt(480)
 
     event.recipes.gtceu.mixer("fluix")
-        .itemInputs("gtceu:charged_certus_quartz_crystal", "minecraft:redstone", "minecraft:quartz")
+        .itemInputs("ae2:charged_certus_quartz_crystal", "minecraft:redstone", "minecraft:quartz")
         .inputFluids(Fluid.of("minecraft:water", 100))
         .itemOutputs("2x ae2:fluix_crystal")
         .duration(20)
@@ -1078,7 +1078,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(2)
 
-    event.recipes.gtceu.compressor("kubejs:certus_quartz_block")
+    event.recipes.gtceu.compressor("kubejs:fluix_block")
         .itemInputs(["4x ae2:fluix_crystal"])
         .itemOutputs("ae2:fluix_block")
         .duration(300)
