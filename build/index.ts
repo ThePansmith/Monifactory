@@ -104,6 +104,8 @@ async function packMod(group: string) {
             })
         }
 
+        fs.writeFileSync("dist/client/overrides/config/fancymenu/assets/pack-version.txt", readManifest().version);
+
         let hasZipCmd = false
         try {
             await Juke.exec("zip", ["--help"], { silent: true })
