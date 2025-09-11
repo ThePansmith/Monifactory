@@ -336,4 +336,25 @@ ServerEvents.recipes(event => {
             .CWUt(192)
             .EUt(GTValues.VA[GTValues.UHV])
         )
+
+        //Crystal SoC
+        event.remove({ id: "gtceu:laser_engraver/crystal_soc"})
+        event.recipes.gtceu.autoclave("crystal_soc")
+            .itemInputs(
+                'gtceu:crystal_cpu',
+                'gtceu:emerald_plate'
+            )
+            .inputFluids('monilabs:crystal_matrix 8')
+            .itemOutputs('gtceu:crystal_soc')
+            .EUt(GTValues.VHA[GTValues.ZPM])
+            .duration(20 * 25)
+        event.recipes.gtceu.autoclave("crystal_soc_olivine")
+            .itemInputs(
+                'gtceu:crystal_cpu',
+                'gtceu:olivine_plate'
+            )
+            .inputFluids('monilabs:crystal_matrix 8')
+            .itemOutputs('gtceu:crystal_soc')
+            .EUt(GTValues.VHA[GTValues.ZPM])
+            .duration(20 * 25)
 })
