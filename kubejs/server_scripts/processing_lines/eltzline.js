@@ -214,21 +214,27 @@ ServerEvents.recipes(event => {
         }
     })
 
-    event.recipes.gtceu.electric_blast_furnace("eltz_from_impure_eltic_gem")
-        .itemInputs("3x gtceu:impure_eltic_gem", "1x gtceu:carbon_dust")
-        .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
-        // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
-        .outputFluids("gtceu:carbon_monoxide 1000")
-        .duration(1540)
-        .blastFurnaceTemp(10600)
-        .EUt(GTValues.VA[GTValues.UV])
+    const eltz_forms = ["gem", "dust"]
 
-    event.recipes.gtceu.electric_blast_furnace("eltz_from_impure_eltic_dust")
-        .itemInputs("3x gtceu:impure_eltic_dust", "1x gtceu:carbon_dust")
-        .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
-        // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
-        .outputFluids("gtceu:carbon_monoxide 1000")
-        .duration(1540)
-        .blastFurnaceTemp(10600)
-        .EUt(GTValues.VA[GTValues.UV])
+    eltz_forms.forEach(form => {
+        event.recipes.gtceu.electric_blast_furnace(`eltz_from_${form}`)
+            .itemInputs(`3x gtceu:impure_eltic_${form}`, "1x gtceu:carbon_dust")
+            .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
+            // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
+            .outputFluids("gtceu:carbon_monoxide 1000")
+            .duration(1540)
+            .blastFurnaceTemp(10600)
+            .EUt(GTValues.VA[GTValues.UV])
+
+        // Gas-boosted
+        event.recipes.gtceu.electric_blast_furnace(`eltz_from_${form}_gas`)
+            .itemInputs(`3x gtceu:impure_eltic_${form}`, "1x gtceu:carbon_dust")
+            .inputFluids("gtceu:xenon 10")
+            .itemOutputs("1x monilabs:eltz_ingot", "gtceu:ferrosilite_dust", "6x gtceu:aluminium_nugget")
+            // .chancedOutput("1x gtceu:ash_dust", 1111, 0)
+            .outputFluids("gtceu:carbon_monoxide 1000")
+            .duration(1155)
+            .blastFurnaceTemp(10600)
+            .EUt(GTValues.VA[GTValues.UV])
+    })
 })
