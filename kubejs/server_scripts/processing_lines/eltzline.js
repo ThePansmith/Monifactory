@@ -23,7 +23,6 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:dirty_hexafluorosilicic_solution 18000")
         .duration((18 * 2 * 20 + 5 * 20) * 1.5)
 
-    /*
     // CaAl2Si2O8 + 12HF -> Ca(OH)2 + Al2O3 + 2H2SiF6 + 3H2O
     event.recipes.gtceu.chemical_reactor("anorthite_digestion")
         .itemInputs("13x gtceu:anorthite_dust")
@@ -31,7 +30,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("5x gtceu:bauxite_dust", "3x gtceu:calcium_hydroxide_dust")
         .outputFluids("gtceu:dirty_hexafluorosilicic_solution 6000")
         .duration(6 * 2 * 20 + 5 * 20)
-    */
 
     // Cs2Al2Si4(H2O)2O12 + 24HF -> 2CsOH + Al2O3 + 4H2SiF6 + 9H2O
     event.recipes.gtceu.chemical_reactor("pollucite_digestion")

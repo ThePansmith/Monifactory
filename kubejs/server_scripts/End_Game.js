@@ -44,6 +44,13 @@ ServerEvents.recipes(event => {
         .duration(320)
         .EUt(GTValues.VHA[GTValues.EV])
 
+    event.recipes.gtceu.chemical_bath("uranic_solution_carnotite")
+        .inputFluids("gtceu:hypochlorous_acid 1000")
+        .itemInputs("2x gtceu:purified_carnotite_ore")
+        .outputFluids("gtceu:uranic_solution 1000")
+        .duration(320)
+        .EUt(GTValues.VHA[GTValues.EV])
+
     event.recipes.gtceu.electrolyzer("actinium_from_uranic_solution")
         .inputFluids("gtceu:uranic_solution 2000")
         .chancedInput("kubejs:neutron_emitter", 50, 0)

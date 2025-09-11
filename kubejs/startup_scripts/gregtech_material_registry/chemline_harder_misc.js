@@ -44,6 +44,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .dust()
             .color(0xEF4B3D).iconSet("rough")
             .components("manganese", "2x fluorine")
+
+        event.create("iron_ii_fluoride")
+            .dust()
+            .color(0xFFEBEE).iconSet("rough")
+            .components("iron", "2x fluorine")
     }
 })
 
