@@ -551,4 +551,21 @@ ServerEvents.recipes(event => {
         B: "enderio:dark_steel_bars",
         I: "gtceu:double_titanium_tungsten_carbide_plate"
     })
+
+    // Rock Breaker/Rock Cycle Simulator recipea or Grains of Infinity
+    event.recipes.gtceu.rock_breaker("kubejs:rock_breaker_grains_of_infinity")
+        .notConsumable("enderio:grains_of_infinity")
+        .itemOutputs("enderio:grains_of_infinity")
+        .duration(16)
+        .EUt(GTValues.VA[GTValues.MV])
+        .addData("fluidA", "minecraft:lava")
+        .addData("fluidB", "enderio:dew_of_the_void")
+        .posY(-64, -59)
+
+    event.recipes.gtceu.rock_cycle_simulator("kubejs:rock_cycle_simulator_grains_of_infinity")
+        .notConsumable("enderio:grains_of_infinity")
+        .itemOutputs("enderio:grains_of_infinity")
+        .duration(16)
+        .EUt(GTValues.VA[GTValues.MV])
+        .posY(-64, -59)
 })
