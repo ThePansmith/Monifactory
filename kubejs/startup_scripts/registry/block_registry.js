@@ -33,24 +33,6 @@ StartupEvents.registry("block", event => {
         .tagBlock("mineable/shovel").requiresTool(true)
         .property(BlockProperties.FALLING);
 
-    event.create("infinity_dust_block", "falling")
-        .displayName("Infinity Dust Block")
-        .soundType("sand")
-        .resistance(0.6).hardness(0.5)
-        .tagBlock("mineable/shovel").requiresTool(true);
-
-    event.create("compressed_infinity_dust_block", "falling")
-        .displayName("Compressed Infinity Dust Block")
-        .soundType("sand")
-        .resistance(1).hardness(1)
-        .tagBlock("mineable/shovel").requiresTool(true);
-
-    event.create("double_compressed_infinity_dust_block", "falling")
-        .displayName("Double Compressed Infinity Dust Block")
-        .soundType("sand")
-        .resistance(2).hardness(2)
-        .tagBlock("mineable/shovel").requiresTool(true);
-
 
     // Micro Miner Cores/Frames
     event.create("electrum_micro_miner_core")

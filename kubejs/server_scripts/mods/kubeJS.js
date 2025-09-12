@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("gtceu:curium", 32), Fluid.of("gtceu:helium", 125))
         .outputFluids(Fluid.of("gtceu:berkelium", 32))
         .duration(100)
-        .EUt(GTValues.VHA[GTValues.ZPM])
+        .EUt(GTValues.VHA[GTValues.LuV])
         .fusionStartEU(360000000)
     event.recipes.gtceu.fusion_reactor("californium_fusion_curium")
         .inputFluids(Fluid.of("gtceu:curium", 16), Fluid.of("gtceu:hydrogen", 125))

@@ -38,11 +38,6 @@ global.itemNukeList = [
     /^ad_astra:.*_bucket$/,
 
     // Applied Energistics 2
-    "ae2:certus_quartz_crystal",
-    "ae2:charged_certus_quartz_crystal",
-    "ae2:fluix_block",
-    "ae2:fluix_crystal",
-    "ae2:fluix_dust",
     "ae2:vibration_chamber",
 
     // Better Angel Ring
@@ -81,6 +76,7 @@ global.itemNukeList = [
     "enderio:vibrant_alloy_grinding_ball",
     /^enderio:painted_/,
     /^enderio:powdered_/,
+    "enderio:infinity_rod",
 
     // Ender Storage
     // TODO: Need to add greggy recipes for these

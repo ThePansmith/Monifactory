@@ -47,8 +47,7 @@ jobs:
         with:
           # observe if this makes broken builds due to outdated mods (server onl)
           path: |
-            dist/modcache
-            dist/cache.json
+            dist/mod_cache
           key: ${{ runner.os }}-mods-${{ hashFiles('manifest.json') }}
           restore-keys: |
             ${{ runner.os }}-mods-

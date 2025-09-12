@@ -68,12 +68,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .components("2x sodium", "ruthenium", "4x oxygen")
             .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
-        event.create("sodium_peroxide")
-            .dust()
-            .color(0xecff80).iconSet("rough")
-            .components("2x sodium", "2x oxygen")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
-
         event.create("platinum_group_residue")
             .dust()
             .color(0x64632e).iconSet("rough")

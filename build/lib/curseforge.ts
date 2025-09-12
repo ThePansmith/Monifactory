@@ -2,12 +2,13 @@ import Juke from "juke-build"
 import fs from "fs"
 import https from "https"
 import { z } from "zod"
+import type { ManifestFileEntry } from "./manifest.ts"
 
 const zCFModInfo = z.object({
     data: z.object({
         name: z.string(),
         links: z.object({
-            websiteUrl: z.string().url(),
+            websiteUrl: z.url(),
         }),
         authors: z.object({
             name: z.string(),
@@ -43,11 +44,11 @@ const zCFModData = z.object({
 })
 type CFModData = z.infer<typeof zCFModData>
 
-export const DownloadCF = async (modInfo: { modID?: number, modFileID?: number } = {}, dest: string, retrycount?: number): Promise<CFModData["data"]> => {
+export const DownloadCF = async (modInfo: Partial<ManifestFileEntry> = {}, dest: string, retrycount?: number): Promise<CFModData["data"]> => {
     if (retrycount === null || retrycount === undefined) {
         retrycount = 5
     }
-    const { modID, modFileID } = modInfo
+    const { projectID: modID, fileID: modFileID } = modInfo
     if (!modID || !modFileID) {
         Juke.logger.error(`Bad DownloadCF modInfo args. modID: ${modID} | modFileID: ${modFileID}`)
         throw new Juke.ExitCode(1)

@@ -75,14 +75,6 @@ if (doHarderProcessing) {
             .itemOutputs("11x gtceu:potassium_pyrosulfate_dust")
             .duration(30).EUt(64)
 
-        // Sodium Peroxide
-        event.recipes.gtceu.chemical_reactor("sodium_peroxide")
-            .itemInputs("6x gtceu:sodium_hydroxide_dust")
-            .inputFluids("gtceu:hydrogen_peroxide 7000")
-            .itemOutputs("4x gtceu:sodium_peroxide_dust")
-            .outputFluids("minecraft:water 8000", "gtceu:oxygen 6000")
-            .duration(100).EUt(30)
-
         // Platinum Group Sludge
         event.recipes.gtceu.centrifuge("bathe_platinum_group_sludge_dust")
             .itemInputs("2x gtceu:platinum_group_sludge_dust")
@@ -119,7 +111,7 @@ if (doHarderProcessing) {
             .circuit(2)
             .itemOutputs("4x gtceu:platinum_raw_dust")
             .outputFluids("gtceu:hydrochloric_acid 3000", "gtceu:ammonia 2000")
-            .duration(140).EUt(7680)
+            .duration(140).EUt(1920)
 
         let steam = new JSONObject()
         steam.add("amount", 3840)

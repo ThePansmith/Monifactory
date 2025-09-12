@@ -13,6 +13,10 @@ const $OreProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.mat
 const $FluidBuilder = Java.loadClass("com.gregtechceu.gtceu.api.fluids.FluidBuilder");
 const $DustProperty = Java.loadClass("com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty");
 
+// AE2 ItemLike suppliers
+const $AEItems = Java.loadClass("appeng.core.definitions.AEItems")
+const $AEBlocks = Java.loadClass("appeng.core.definitions.AEBlocks")
+
 
 let addFluid = (mat, key, temp) => {
     let prop = new $FluidProperty()
@@ -89,6 +93,21 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     osmiridium_ore_prop.setOreByProducts(GTMaterials.Iridium, GTMaterials.Osmium, GTMaterials.Ruthenium)
     GTMaterials.Osmiridium.setProperty($PropertyKey.ORE, osmiridium_ore_prop)
 
+    // Give Zincite an ore form
+    let zincite_ore_prop = new $OreProperty(2, 2);
+    zincite_ore_prop.setOreByProducts(GTMaterials.Iron, GTMaterials.Manganese)
+    GTMaterials.Zincite.setProperty($PropertyKey.ORE, zincite_ore_prop)
+
+    // Give Borax an ore form
+    let borax_ore_prop = new $OreProperty(1, 2);
+    borax_ore_prop.setOreByProducts(GTMaterials.Salt, GTMaterials.Boron, GTMaterials.RockSalt)
+    GTMaterials.Borax.setProperty($PropertyKey.ORE, borax_ore_prop)
+
+    // Give Iron II Chloride a dust form to replace fluid & recolor to match IRL anhydride.
+    // Removing the FluidProperty causes errors in GT's hard-coded recipes so we add the fluid to the nukelist instead
+    GTMaterials.Iron2Chloride.setProperty($PropertyKey.DUST, new $DustProperty());
+    GTMaterials.Iron2Chloride.setMaterialARGB(0xC5E1A5)
+
     // HM-exclusive modifications
     if (doHarderProcessing) {
         // GTMaterials.Berkelium.setProperty(PropertyKey.INGOT, new $IngotProperty());
@@ -117,4 +136,15 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.Ultimet.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(4)
     GTMaterials.Osmiridium.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(12)
     GTMaterials.Americium.getProperty(PropertyKey.ITEM_PIPE).setTransferRate(20)
+
+    // SetIgnoreds for AE2 materials
+    TagPrefix.gem.setIgnored(GTMaterials.CertusQuartz, $AEItems.CERTUS_QUARTZ_CRYSTAL)
+    TagPrefix.gem.setIgnored(GTMaterials.get("charged_certus_quartz"), $AEItems.CERTUS_QUARTZ_CRYSTAL_CHARGED)
+    TagPrefix.gem.setIgnored(GTMaterials.get("fluix"), $AEItems.FLUIX_CRYSTAL)
+
+    TagPrefix.dust.setIgnored(GTMaterials.CertusQuartz, $AEItems.CERTUS_QUARTZ_DUST)
+    TagPrefix.dust.setIgnored(GTMaterials.get("fluix"), $AEItems.FLUIX_DUST)
+
+    TagPrefix.block.setIgnored(GTMaterials.CertusQuartz, $AEBlocks.QUARTZ_BLOCK.asItem())
+    TagPrefix.block.setIgnored(GTMaterials.get("fluix"), $AEBlocks.FLUIX_BLOCK.asItem())
 })

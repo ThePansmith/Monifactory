@@ -44,6 +44,13 @@ ServerEvents.recipes(event => {
         .duration(320)
         .EUt(GTValues.VHA[GTValues.EV])
 
+    event.recipes.gtceu.chemical_bath("uranic_solution_carnotite")
+        .inputFluids("gtceu:hypochlorous_acid 1000")
+        .itemInputs("2x gtceu:purified_carnotite_ore")
+        .outputFluids("gtceu:uranic_solution 1000")
+        .duration(320)
+        .EUt(GTValues.VHA[GTValues.EV])
+
     event.recipes.gtceu.electrolyzer("actinium_from_uranic_solution")
         .inputFluids("gtceu:uranic_solution 2000")
         .chancedInput("kubejs:neutron_emitter", 50, 0)
@@ -96,11 +103,11 @@ ServerEvents.recipes(event => {
 
     // Helical Fusion Reactor
     event.recipes.gtceu.assembly_line("gtceu:helical_fusion_reactor")
-        .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:multidimensional_cpu_chip", "64x kubejs:multidimensional_cpu_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_single_wire")
+        .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "16x gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:multidimensional_cpu_chip", "64x kubejs:multidimensional_cpu_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_double_wire")
         .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:helical_fusion_reactor")
         .duration(6000)
-        .EUt(13920000)
+        .EUt(GTValues.VA[GTValues.UEV])
         .stationResearch(b => b
             .researchStack("gtceu:uv_fusion_reactor")
             .CWUt(160, 1024000)

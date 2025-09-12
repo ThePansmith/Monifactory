@@ -88,3 +88,14 @@ deprecateBlock("gtceu:glacio_osmiridiumyes_ore", "gtceu:glacio_iridosmine_ore", 
 
 // Chlorine Trifluoride
 deprecateFluid("gtceu:chlorine_triflouride", "gtceu:chlorine_trifluoride", "Chlorine Trifluoride")
+
+// GT items for AE2 mats
+deprecateItem("gtceu:certus_quartz_gem", "ae2:certus_quartz_crystal", "Certus Quartz Crystal")
+deprecateItem("gtceu:charged_certus_quartz_gem", "ae2:charged_certus_quartz_crystal", "Charged Certus Quartz Crystal")
+deprecateItem("gtceu:fluix_gem", "ae2:fluix_crystal", "Fluix Crystal")
+
+deprecateItem("gtceu:certus_quartz_dust", "ae2:certus_quartz_dust", "Certus Quartz Dust")
+deprecateItem("gtceu:fluix_dust", "ae2:fluix_dust", "Fluix Dust")
+
+deprecateBlock("gtceu:certus_quartz_block", "ae2:quartz_block", "Certus Quartz Block")
+deprecateBlock("gtceu:fluix_block", "ae2:fluix_block", "Fluix Block")

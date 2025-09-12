@@ -37,7 +37,8 @@ GTCEuStartupEvents.registry("gtceu:tag_prefix", event => {
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
-        .miningToolTag("forge:mineable/pickaxe")
+        .miningToolTag("minecraft:mineable/pickaxe")
+        .doubleDrops(true)
 
     event.create("mars", "ore")
         .stateSupplier(() => Block.getBlock("ad_astra:mars_stone").defaultBlockState())
@@ -45,7 +46,8 @@ GTCEuStartupEvents.registry("gtceu:tag_prefix", event => {
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
-        .miningToolTag("forge:mineable/pickaxe")
+        .miningToolTag("minecraft:mineable/pickaxe")
+        .doubleDrops(true)
 
     event.create("mercury", "ore")
         .stateSupplier(() => Block.getBlock("ad_astra:mercury_stone").defaultBlockState())
@@ -53,7 +55,8 @@ GTCEuStartupEvents.registry("gtceu:tag_prefix", event => {
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
-        .miningToolTag("forge:mineable/pickaxe")
+        .miningToolTag("minecraft:mineable/pickaxe")
+        .doubleDrops(true)
 
     event.create("venus", "ore")
         .stateSupplier(() => Block.getBlock("ad_astra:venus_stone").defaultBlockState())
@@ -61,7 +64,8 @@ GTCEuStartupEvents.registry("gtceu:tag_prefix", event => {
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
-        .miningToolTag("forge:mineable/pickaxe")
+        .miningToolTag("minecraft:mineable/pickaxe")
+        .doubleDrops(true)
 
     event.create("glacio", "ore")
         .stateSupplier(() => Block.getBlock("ad_astra:glacio_stone").defaultBlockState())
@@ -69,5 +73,6 @@ GTCEuStartupEvents.registry("gtceu:tag_prefix", event => {
         .unificationEnabled(true)
         .materialIconType(GTMaterialIconType.ore)
         .generationCondition(ItemGenerationCondition.hasOreProperty)
-        .miningToolTag("forge:mineable/pickaxe")
+        .miningToolTag("minecraft:mineable/pickaxe")
+        .doubleDrops(true)
 })

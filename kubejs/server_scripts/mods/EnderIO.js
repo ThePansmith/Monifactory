@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
     // chassis. "industrial machine chassis"
     event.remove({ output: "enderio:void_chassis" })
     event.recipes.gtceu.alloy_smelter("kubejs:void_chassis")
-        .itemInputs("gtceu:lv_machine_hull", "2x #forge:dusts/grains_of_infinity")
+        .itemInputs("gtceu:lv_machine_hull", "2x enderio:grains_of_infinity")
         .itemOutputs("enderio:void_chassis")
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
@@ -167,12 +167,6 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_smelter("kubejs:ensouled_chassis")
         .itemInputs("enderio:void_chassis", "6x #forge:dusts/soularium")
         .itemOutputs("enderio:ensouled_chassis")
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.alloy_smelter("kubejs:infinity_rod")
-        .itemInputs("gtceu:dark_steel_rod", "enderio:grains_of_infinity")
-        .itemOutputs("enderio:infinity_rod")
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
 
@@ -405,6 +399,9 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: "enderio:travel_anchor" }, "enderio:conduit_binder", "#forge:plates/vibrant_alloy")
     event.replaceInput({ id: "enderio:travel_anchor" }, "iron_ingot", "#forge:plates/dark_steel")
 
+    // staff of levity
+    event.replaceInput({ id: "enderio:staff_of_levity" }, "enderio:infinity_rod", "#forge:rods/dark_steel")
+
     // coordinate selector
     event.remove({ id: "enderio:coordinate_selector" })
     event.shaped("enderio:coordinate_selector", [
@@ -554,4 +551,21 @@ ServerEvents.recipes(event => {
         B: "enderio:dark_steel_bars",
         I: "gtceu:double_titanium_tungsten_carbide_plate"
     })
+
+    // Rock Breaker/Rock Cycle Simulator recipea or Grains of Infinity
+    event.recipes.gtceu.rock_breaker("kubejs:rock_breaker_grains_of_infinity")
+        .notConsumable("enderio:grains_of_infinity")
+        .itemOutputs("enderio:grains_of_infinity")
+        .duration(16)
+        .EUt(GTValues.VA[GTValues.MV])
+        .addData("fluidA", "minecraft:lava")
+        .addData("fluidB", "enderio:dew_of_the_void")
+        .posY(-64, -59)
+
+    event.recipes.gtceu.rock_cycle_simulator("kubejs:rock_cycle_simulator_grains_of_infinity")
+        .notConsumable("enderio:grains_of_infinity")
+        .itemOutputs("enderio:grains_of_infinity")
+        .duration(16)
+        .EUt(GTValues.VA[GTValues.MV])
+        .posY(-64, -59)
 })

@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
             .itemInputs("10x gtceu:naquadah_dust", "3x gtceu:naquadria_dust", `${fissile_element[1]}x gtceu:small_${fissile_element[0]}_dust`)
             .inputFluids("gtceu:piranha_solution 1000")
             .itemOutputsRanged("kubejs:naquadah_waste", 0, 3)
-            .outputFluids("gtceu:raw_naquadah_solution 10000")
+            .outputFluids("gtceu:raw_naquadah_solution 12000")
             .duration(400)
             .EUt(GTValues.VA[GTValues.IV])
             .blastFurnaceTemp(9600)
@@ -68,8 +68,8 @@ ServerEvents.recipes(event => {
     // Naquadah Distillation
     event.recipes.gtceu.distillation_tower("naquadah_isotope_distillation")
         .inputFluids("gtceu:active_naquadah_blend 800")
-        .chancedOutput("kubejs:naquadah_waste", 2000, 0)
-        .outputFluids("gtceu:naquadah_isotope_sludge 100", "gtceu:heavy_naquadah_isotope_fraction 200", "gtceu:medium_naquadah_isotope_fraction 400", "gtceu:light_naquadah_isotope_fraction 300")
+        .chancedOutput("kubejs:naquadah_waste", 2500, 0)
+        .outputFluids("gtceu:naquadah_isotope_sludge 100", "gtceu:heavy_naquadah_isotope_fraction 250", "gtceu:medium_naquadah_isotope_fraction 400", "gtceu:light_naquadah_isotope_fraction 300")
         .duration(200)
         .EUt(GTValues.VHA[GTValues.ZPM])
 
@@ -159,28 +159,28 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:lead_dust", 1000, 0)
         .outputFluids("gtceu:medium_naquadah_isotope_fraction 300", "gtceu:radon 250", "gtceu:quadium 200", "gtceu:helium_3 150", "gtceu:tritium 150")
         .duration(200)
-        .EUt(GTValues.VA[GTValues.ZPM])
+        .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.distillation_tower("medium_isotope_distillation")
         .inputFluids("gtceu:cracked_medium_naquadah_isotope_fraction")
         .chancedOutput("gtceu:cerium_dust", 2500, 0)
-        .outputFluids("gtceu:heavy_naquadah_isotope_fraction 250", "gtceu:americium 200", "gtceu:europium 300", "gtceu:lutetium 150", "gtceu:light_naquadah_isotope_fraction 150")
+        .outputFluids("gtceu:heavy_naquadah_isotope_fraction 250", "gtceu:americium 150", "gtceu:europium 300", "gtceu:lutetium 200", "gtceu:light_naquadah_isotope_fraction 150")
         .duration(200)
-        .EUt(GTValues.VA[GTValues.UV])
+        .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.distillation_tower("heavy_isotope_distillation")
         .inputFluids("gtceu:cracked_heavy_naquadah_isotope_fraction")
-        .chancedOutput("gtceu:trinium_dust", 3000, 0)
+        .chancedOutput("gtceu:trinium_dust", 3333, 0)
         .outputFluids("gtceu:naquadah_isotope_sludge 200", "gtceu:heavy_atomic_residue 300", "gtceu:tritanium 200", "gtceu:darmstadtium 200", "gtceu:medium_naquadah_isotope_fraction 100")
         .duration(200)
-        .EUt(GTValues.VA[GTValues.UHV])
+        .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.distillation_tower("sludge_distillation")
         .inputFluids("gtceu:cracked_naquadah_isotope_sludge")
         .chancedOutput("kubejs:naquadah_waste", 5000, 0)
-        .outputFluids("gtceu:superheavy_atomic_residue 450", "gtceu:neutronium 250", "gtceu:curium 150", "gtceu:heavy_naquadah_isotope_fraction 150")
+        .outputFluids("gtceu:superheavy_atomic_residue 400", "gtceu:neutronium 200", "gtceu:curium 250", "gtceu:heavy_naquadah_isotope_fraction 150")
         .duration(200)
-        .EUt(GTValues.VA[GTValues.UEV])
+        .EUt(GTValues.VA[GTValues.UHV])
 
     // Superheavy Chemical Processing
     if(doHarderProcessing) {
@@ -224,14 +224,14 @@ ServerEvents.recipes(event => {
     }
 
     event.recipes.gtceu.fusion_reactor("exotic_particle_activation")
-        .inputFluids("gtceu:purified_heavy_residue 50", "gtceu:americium 150")
+        .inputFluids("gtceu:purified_heavy_residue 50", "gtceu:americium 72")
         .outputFluids("gtceu:exotic_particle_solution 50")
         .duration(128)
         .EUt(GTValues.VA[GTValues.UV])
         .fusionStartEU(200000000)
 
     event.recipes.gtceu.fusion_reactor("hyperdegenerate_activation")
-        .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:californium 144")
+        .inputFluids("gtceu:purified_superheavy_residue 50", "gtceu:californium 72")
         .outputFluids("gtceu:hyperdegenerate_matter 25")
         .duration(128)
         .EUt(GTValues.VA[GTValues.UHV])
