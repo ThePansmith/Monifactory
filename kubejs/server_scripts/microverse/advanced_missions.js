@@ -105,8 +105,7 @@ ServerEvents.recipes(event => {
             .requiredMicroverse(1) // Normal
             .itemOutputs(
                 "64x gtceu:raw_oilsands_block",
-                "64x enderio:grains_of_infinity",
-                "64x enderio:grains_of_infinity",
+                "32x gtceu:raw_oilsands_block"
             )
             .damageRate(1)
     })

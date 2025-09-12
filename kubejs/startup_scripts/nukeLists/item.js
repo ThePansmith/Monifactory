@@ -76,6 +76,7 @@ global.itemNukeList = [
     "enderio:vibrant_alloy_grinding_ball",
     /^enderio:painted_/,
     /^enderio:powdered_/,
+    "enderio:infinity_rod",
 
     // Ender Storage
     // TODO: Need to add greggy recipes for these
