@@ -553,7 +553,10 @@ StartupEvents.registry("item", event => {
             layer1: "kubejs:item/circuits/null_infused_printed_circuit_board"
         })
     event.create("extradimensional_processing_unit")
-        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_processing_unit" })
+        .textureJson({
+            layer0: "kubejs:item/circuits/null_infused_circuit_board",
+            layer1: "kubejs:item/circuits/extradimensional_processing_unit"
+        })
     Circuit("extradimensional", "processor", "uv")
     Circuit("extradimensional", "processor_assembly", "uhv")
     Circuit("extradimensional", "processor_computer", "uev")
