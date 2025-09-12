@@ -253,23 +253,23 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.LuV])
         )
 
-    event.recipes.gtceu.circuit_assembler("extradimensional_circuit_board")
+    event.recipes.gtceu.circuit_assembler("null_infused_circuit_board")
         .itemInputs("16x kubejs:carbon_mesh_reinforced_circuit_board",
-            "2x gtceu:infinity_plate",
+            "8x gtceu:meta_null_foil",
             "8x gtceu:nano_cpu_chip",
             "#gtceu:circuits/zpm",
             "gtceu:luv_field_generator"
         )
         .inputFluids("gtceu:living_soldering_alloy 576")
-        .itemOutputs("16x kubejs:extradimensional_circuit_board")
+        .itemOutputs("16x kubejs:null_infused_circuit_board")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(1200)
         .EUt(GTValues.VA[GTValues.UV])
 
-    event.recipes.gtceu.large_chemical_reactor("extradimensional_printed_circuit_board")
-        .itemInputs("kubejs:extradimensional_circuit_board", "8x gtceu:fine_necrosiderite_wire", "16x gtceu:naquadah_alloy_foil")
+    event.recipes.gtceu.large_chemical_reactor("null_infused_printed_circuit_board")
+        .itemInputs("kubejs:null_infused_circuit_board", "8x gtceu:fine_necrosiderite_wire", "16x gtceu:naquadah_alloy_foil")
         .inputFluids("gtceu:iron_iii_chloride 5000")
-        .itemOutputs("kubejs:extradimensional_printed_circuit_board")
+        .itemOutputs("kubejs:null_infused_printed_circuit_board")
         .cleanroom(CleanroomType.CLEANROOM)
         .duration(100)
         .EUt(600000)
@@ -277,7 +277,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.microverse("extradimensional_processing_unit")
         .itemInputs(
             "kubejs:microminer_t11",
-            "kubejs:extradimensional_printed_circuit_board",
+            "kubejs:null_infused_printed_circuit_board",
             "4x gtceu:meta_null_bolt",
             "8x gtceu:hyperdegenerate_darconite_foil",
             "2x kubejs:hyperdynamic_ram_chip",
@@ -299,7 +299,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 576")
         .itemOutputs("64x kubejs:microverse_containment_unit")
         .duration(300)
-        .EUt(16380)
+        .EUt(GTValues.VHA[GTValues.LuV])
 
     event.recipes.gtceu.microverse("extradimensional_quantum_cpu_core")
         .itemInputs(
@@ -331,7 +331,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 288")
         .itemOutputs("4x kubejs:extradimensional_processor")
         .duration(200)
-        .EUt(600000)
+        .EUt(GTValues.VHA[GTValues.UHV])
         .stationResearch(b => b
             .researchStack("kubejs:extradimensional_quantum_cpu_core")
             .CWUt(16)
@@ -370,7 +370,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:living_soldering_alloy 1152")
         .itemOutputs("2x kubejs:extradimensional_processor_assembly")
         .duration(20 * 20)
-        .EUt(600000)
+        .EUt(GTValues.VHA[GTValues.UHV])
         .stationResearch(b => b
             .researchStack("kubejs:extradimensional_processor")
             .CWUt(96)
@@ -413,7 +413,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("1x kubejs:extradimensional_processor_computer")
         .duration(20 * 20)
-        .EUt(600000)
+        .EUt(GTValues.VHA[GTValues.UHV])
         .stationResearch(b => b
             .researchStack("kubejs:extradimensional_processor_assembly")
             .CWUt(128)

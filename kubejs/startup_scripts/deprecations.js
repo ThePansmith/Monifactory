@@ -43,8 +43,8 @@ deprecateItem("kubejs:matter_processor_computer", "kubejs:optical_processor_comp
 deprecateItem("kubejs:matter_processor_mainframe", "kubejs:optical_processor_mainframe", "Matter Processor Mainframe")
 
 // Matter Circuits
-deprecateItem("kubejs:monic_circuit_board", "kubejs:extradimensional_circuit_board", "Extradimensional Circuit Board")
-deprecateItem("kubejs:monic_processing_unit", "kubejs:extradimensional_printed_circuit_board", "Extradimensional Printed Circuit Board")
+deprecateItem("kubejs:monic_circuit_board", "kubejs:null_infused_circuit_board", "Extradimensional Circuit Board")
+deprecateItem("kubejs:monic_processing_unit", "kubejs:null_infused_printed_circuit_board", "Extradimensional Printed Circuit Board")
 deprecateItem("kubejs:monic_processor", "kubejs:extradimensional_processor", "Extradimensional Processor")
 deprecateItem("kubejs:monic_processor_assembly", "kubejs:extradimensional_processor_assembly", "Extradimensional Processor Assembly")
 deprecateItem("kubejs:monic_processor_computer", "kubejs:extradimensional_processor_computer", "Extradimensional Processor Computer")

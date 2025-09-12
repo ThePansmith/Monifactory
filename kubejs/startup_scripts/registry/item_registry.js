@@ -545,10 +545,13 @@ StartupEvents.registry("item", event => {
     Circuit("optical", "processor_computer", "uhv")
     Mainframe("optical", "uev")
 
-    event.create("extradimensional_circuit_board")
-        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_circuit_board" })
-    event.create("extradimensional_printed_circuit_board")
-        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_printed_circuit_board" })
+    event.create("null_infused_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/null_infused_circuit_board" })
+    event.create("null_infused_printed_circuit_board")
+        .textureJson({
+            layer0: "kubejs:item/circuits/null_infused_circuit_board",
+            layer1: "kubejs:item/circuits/null_infused_printed_circuit_board"
+        })
     event.create("extradimensional_processing_unit")
         .textureJson({ layer0: "kubejs:item/circuits/extradimensional_processing_unit" })
     Circuit("extradimensional", "processor", "uv")

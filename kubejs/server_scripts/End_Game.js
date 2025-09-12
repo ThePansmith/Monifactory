@@ -381,19 +381,19 @@ ServerEvents.recipes(event => {
     // Creative Chest
     event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
         "BMMMMMMMMMB",
-        "MEWwmkmwYEM",
-        "MEGCCoCCGEp",
+        "MEWwmfmwYEM",
+        "MEGCCcCCGEp",
         "MePFIIIFPsp",
         "hbRIDQDIRgp",
         "hbqSGHGSZgp",
         "hbRIDQDIRgp",
         "MtPFIIIFPdp",
-        "MEGCCfCCGEp",
-        "MEXwmcmwVEM",
+        "MEGCCoCCGEp",
+        "MEXwmkmwVEM",
         "BMMMMMMMMMB"
     ], {
         B: "gtceu:monium_block",
-        C: "kubejs:monic_processor_mainframe",
+        C: "kubejs:extradimensional_processor_mainframe",
         D: "monilabs:double_eltz_plate",
         E: "monilabs:eltz_frame",
         F: "gtceu:uev_field_generator",
