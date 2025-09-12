@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:helical_fusion_reactor")
         .duration(6000)
-        .EUt(7864320)
+        .EUt(GTValues.VA[GTValues.UEV])
         .stationResearch(b => b
             .researchStack("gtceu:uv_fusion_reactor")
             .CWUt(160, 1024000)
