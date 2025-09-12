@@ -85,7 +85,6 @@ Instead:
     `shaderpacks` (if you have any)
     `emi.json`
     `options.txt`
-    `pack-mode-switcher` (If your modpack was not in Normal Mode)
 3. Adjust the pack mode of the new instance, if needed (Instructions above)
 
 **Q. How do I add optional compat mods?**
@@ -148,7 +147,7 @@ Thermal Expansion Dynamos will only output energy while producing it.
 
 In your server directory delete config-overrides, config, defaultconfig, kubejs, and mods. Then from the new Monifactory server zip copy over those same directories to replace the ones you removed. Enjoy!
 
-<!--- Essential PSA, I've commented this out for now. Feel free to edit/uncomment 
+<!--- Essential PSA, I've commented this out for now. Feel free to edit/uncomment
 
 **Q. Does Monifactory support Essential world hosting?**
 
