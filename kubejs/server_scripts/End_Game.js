@@ -103,11 +103,11 @@ ServerEvents.recipes(event => {
 
     // Helical Fusion Reactor
     event.recipes.gtceu.assembly_line("gtceu:helical_fusion_reactor")
-        .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:multidimensional_cpu_chip", "64x kubejs:multidimensional_cpu_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_single_wire")
+        .itemInputs("gtceu:uv_fusion_reactor", "4x #gtceu:circuits/uev", "16x gtceu:gravi_star", "2x gtceu:double_activated_netherite_plate", "4x gtceu:uhv_field_generator", "64x kubejs:multidimensional_cpu_chip", "64x kubejs:multidimensional_cpu_chip", "64x gtceu:ruthenium_trinium_americium_neutronate_double_wire")
         .inputFluids("gtceu:advanced_soldering_alloy 11520", "gtceu:omnium 5760", "gtceu:polyethyl_cyanoacrylate 3456")
         .itemOutputs("gtceu:helical_fusion_reactor")
         .duration(6000)
-        .EUt(13920000)
+        .EUt(7864320)
         .stationResearch(b => b
             .researchStack("gtceu:uv_fusion_reactor")
             .CWUt(160, 1024000)
