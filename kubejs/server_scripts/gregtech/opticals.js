@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         .duration(800)
         .EUt(GTValues.VA[GTValues.UV])
         .inputFluids("gtceu:dielectric_mirror_solution 576")
-        .itemInputs("4x kubejs:carbon_mesh_reinforced_printed_circuit_board", "gtceu:luv_emitter", "8x gtceu:normal_optical_pipe", "12x gtceu:lumium_foil", "16x gtceu:duranium_bolt")
+        .itemInputs("4x kubejs:carbon_mesh_reinforced_printed_circuit_board", "gtceu:zpm_emitter", "8x gtceu:normal_optical_pipe", "12x gtceu:lumium_foil", "16x gtceu:duranium_bolt")
         .itemOutputs("4x kubejs:optical_processing_unit")
 
     // Non-PrismaC PSoC Steps
