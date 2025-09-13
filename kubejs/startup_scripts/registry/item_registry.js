@@ -208,11 +208,6 @@ StartupEvents.registry("item", event => {
     event.create("quasi_stable_neutron_star").displayName("Quasi-Stable Neutron Star")
 
 
-    // Singularities
-    event.create("singularity_containment_unit")
-    event.create("contained_singularity")
-
-
     // Infinity Tools
     event.create("infinity_file").rarity("epic").maxStackSize(1)
     event.create("infinity_hammer").rarity("epic").maxStackSize(1)
@@ -497,9 +492,6 @@ StartupEvents.registry("item", event => {
     event.create("hyperdynamic_ram_wafer").texture("kubejs:item/hyperdynamicram/hyperdynamic_ram_wafer").displayName("Hyperdynamic RAM Wafer")
     event.create("hyperdynamic_ram_chip_base").texture("kubejs:item/hyperdynamicram/hyperdynamic_ram_chip").displayName("Hyperdynamic RAM Chip Base")
     event.create("hyperdynamic_ram_chip").texture("kubejs:item/hyperdynamicram/activated_hyperdynamic_ram_chip").displayName("Hyperdynamic RAM Chip")
-    event.create("quantum_soc_wafer").texture("kubejs:item/quantumsoc/quantum_soc_wafer").displayName("Quantum SoC Wafer")
-    event.create("quantum_soc_chip_base").texture("kubejs:item/quantumsoc/quantum_soc_chip_base").displayName("Quantum SoC Chip Base")
-    event.create("quantum_soc_chip").texture("kubejs:item/quantumsoc/quantum_soc_chip").displayName("Quantum SoC Chip")
 
 
     // Complex SMDs
@@ -515,6 +507,23 @@ StartupEvents.registry("item", event => {
         event.create(`complex_smd_${name}`)
     }
 
+    // Extradim Circuit Intermediates
+    event.create("miniature_microverse_container")
+        .textureJson({ layer0: "kubejs:item/circuits/miniature_microverse_container" })
+    event.create("microverse_containment_unit")
+        .textureJson({ layer0: "kubejs:item/circuits/microverse_containment_unit"})
+    event.create("extradimensional_quantum_cpu_core")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_quantum_cpu_core"})
+    event.create("extradimensional_crystal_cpu_core")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_crystal_cpu_core"})
+    event.create("extradimensional_wetware_cpu_core")
+        .textureJson({ layer0: "kubejs:item/circuits/extradimensional_wetware_cpu_core"})
+    event.create("extradimensional_optical_cpu_core")
+        .textureJson({ layer0: "kubejs:item/circuits/microverse_containment_unit",
+            layer1: "kubejs:item/circuits/extradimensional_optical_cpu_red",
+            layer2: "kubejs:item/circuits/extradimensional_optical_cpu_green",
+            layer3: "kubejs:item/circuits/extradimensional_optical_cpu_blue"
+        })
 
     // Post-tank circuits, circuit boards, processing units
     function Circuit(theme, type, volt) {
@@ -536,14 +545,22 @@ StartupEvents.registry("item", event => {
     Circuit("optical", "processor_computer", "uhv")
     Mainframe("optical", "uev")
 
-    event.create("monic_processing_unit")
-        .textureJson({ layer0: "kubejs:item/circuits/monic_processing_unit" })
-    event.create("monic_circuit_board")
-        .textureJson({ layer0: "kubejs:item/circuits/monic_circuit_board" })
-    Circuit("monic", "processor", "uv")
-    Circuit("monic", "processor_assembly", "uhv")
-    Circuit("monic", "processor_computer", "uev")
-    Mainframe("monic", "max")
+    event.create("null_infused_circuit_board")
+        .textureJson({ layer0: "kubejs:item/circuits/null_infused_circuit_board" })
+    event.create("null_infused_printed_circuit_board")
+        .textureJson({
+            layer0: "kubejs:item/circuits/null_infused_circuit_board",
+            layer1: "kubejs:item/circuits/null_infused_printed_circuit_board"
+        })
+    event.create("extradimensional_processing_unit")
+        .textureJson({
+            layer0: "kubejs:item/circuits/null_infused_circuit_board",
+            layer1: "kubejs:item/circuits/extradimensional_processing_unit"
+        })
+    Circuit("extradimensional", "processor", "uv")
+    Circuit("extradimensional", "processor_assembly", "uhv")
+    Circuit("extradimensional", "processor_computer", "uev")
+    Mainframe("extradimensional", "max")
 
     // Smores
     const smoreHunger = [

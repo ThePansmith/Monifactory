@@ -388,19 +388,19 @@ ServerEvents.recipes(event => {
     // Creative Chest
     event.recipes.extendedcrafting.shaped_table("2x gtceu:creative_chest", [
         "BMMMMMMMMMB",
-        "MEWwmkmwYEM",
-        "MEGCCoCCGEp",
+        "MEWwmfmwYEM",
+        "MEGCCcCCGEp",
         "MePFIIIFPsp",
         "hbRIDQDIRgp",
         "hbqSGHGSZgp",
         "hbRIDQDIRgp",
         "MtPFIIIFPdp",
-        "MEGCCfCCGEp",
-        "MEXwmcmwVEM",
+        "MEGCCoCCGEp",
+        "MEXwmkmwVEM",
         "BMMMMMMMMMB"
     ], {
         B: "gtceu:monium_block",
-        C: "kubejs:monic_processor_mainframe",
+        C: "kubejs:extradimensional_processor_mainframe",
         D: "monilabs:double_eltz_plate",
         E: "monilabs:eltz_frame",
         F: "gtceu:uev_field_generator",
@@ -433,12 +433,6 @@ ServerEvents.recipes(event => {
         p: "kubejs:prism_pane",
         w: "gtceu:monium_quadruple_wire",
     })
-
-    event.recipes.gtceu.canner("contained_singularity")
-        .itemInputs("kubejs:singularity_containment_unit", "ae2:singularity")
-        .itemOutputs("kubejs:contained_singularity")
-        .duration(20)
-        .EUt(GTValues.VA[GTValues.UEV])
 
     // Knowledge Transmission Array
     event.recipes.gtceu.assembly_line("knowledge_transmission_array")
@@ -491,12 +485,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x monilabs:bioalloy_fusion_casing")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
-
-    event.recipes.gtceu.assembler("singularity_containment_unit")
-        .itemInputs("4x gtceu:monium_plate", "4x gtceu:neutron_reflector", "1x gtceu:uev_sensor", "2x gtceu:uhv_sensor", "gtceu:uev_field_generator")
-        .itemOutputs("64x kubejs:singularity_containment_unit")
-        .duration(300)
-        .EUt(16380)
 
     event.recipes.gtceu.assembler("fieldstabilizedcompound")
         .itemInputs("gtceu:uev_field_generator", "gtceu:uhv_field_generator", "kubejs:supercritical_prismatic_core", "10x kubejs:quasi_stable_neutron_star", "kubejs:dimensionally_stabilized_infinity_heavy_plating")
