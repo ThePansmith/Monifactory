@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 
     // Recipes used to run the creative multiblocks
     event.recipes.gtceu.creative_energy_multi("kubejs:superfuel_infinite_power")
-        .inputFluids("gtceu:naquadah_superfuel 500")
+        .inputFluids("gtceu:naquadah_superfuel 325")
         .duration(20)
 
     if (doQuantumCoolant) {
