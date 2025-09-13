@@ -78,11 +78,12 @@ async function packMod(group: string) {
     // fs.copyFileSync('pack-mode-switcher.bat', `dist/${group}/overrides/pack-mode-switcher.bat`)
     // fs.copyFileSync('pack-mode-switcher.sh', `dist/${group}/overrides/pack-mode-switcher.sh`)
 
+    const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}` // to account for server build not being in overrides
+
     try {
         if (process.platform === "win32") {
             // Switch build to NM if mode is unset
             if (!fs.existsSync("config/packmode.json")) {
-                const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}` // to account for server build not being in overrides
                 await Juke.exec("cmd.exe", ["/c", resolve("pack-mode-switcher.bat"), "-r", "-s", "n"], {
                     cwd: packSwitchPath
                 })
@@ -98,13 +99,12 @@ async function packMod(group: string) {
 
         // Switch build to NM if mode is unset
         if (!fs.existsSync("config/packmode.json")) {
-            const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}` // to account for server build not being in overrides
             await Juke.exec("./pack-mode-switcher.sh", ["-r", "-s", "n"], {
                 cwd: packSwitchPath
             })
         }
 
-        fs.writeFileSync("dist/client/overrides/config/fancymenu/assets/pack-version.txt", readManifest().version)
+        fs.writeFileSync(`${packSwitchPath}/config/fancymenu/assets/pack-version.txt`, readManifest().version)
 
         let hasZipCmd = false
         try {
