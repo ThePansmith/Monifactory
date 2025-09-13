@@ -6,7 +6,7 @@
 GTCEuStartupEvents.craftingComponents(event => {
 
     event.setItems("better_circuit", {
-        UEV: "kubejs:monic_processor_mainframe"
+        UEV: "kubejs:extradimensional_processor_mainframe"
     })
 
     // Make LuV+ electrolyzer wires not osmium for funsies :)

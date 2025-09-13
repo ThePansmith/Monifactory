@@ -248,7 +248,7 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.UV])
         .stationResearch(b => b
-            .researchStack("gtceu:basic_microverse_projector")
+            .researchStack("monilabs:basic_microverse_projector")
             .CWUt(16)
             .EUt(GTValues.VA[GTValues.LuV])
         )
