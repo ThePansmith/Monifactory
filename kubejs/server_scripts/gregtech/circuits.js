@@ -205,8 +205,7 @@ ServerEvents.recipes(event => {
             "12x gtceu:advanced_smd_inductor",
             "24x gtceu:advanced_smd_capacitor",
             "16x gtceu:advanced_smd_diode",
-            "32x gtceu:ram_chip",
-            "16x kubejs:multidimensional_cpu_chip",
+            "16x kubejs:hyperdynamic_ram_chip",
             "8x kubejs:uxpic_chip",
             "12x gtceu:ruthenium_trinium_americium_neutronate_double_wire",
             "12x monilabs:crystal_matrix_plate"
