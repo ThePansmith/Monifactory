@@ -462,7 +462,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             )
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("kubejs:block/soularium/casing",
+        .workableCasingModel("kubejs:block/casing/soularium/casing",
             "gtceu:block/multiblock/implosion_compressor")
 
     // Discharger
@@ -682,7 +682,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .where(" ", Predicates.air())
             .where("#", Predicates.any())
             .build())
-        .workableCasingModel("kubejs:block/netherite/casing",
+        .workableCasingModel("kubejs:block/casing/netherite/casing",
             "gtceu:block/multiblock/assembly_line")
 
     // MABS
